@@ -109,11 +109,12 @@ document.addEventListener('DOMContentLoaded', async function() {
         playerCollection.clear();
         gachaHistory = [];
         pityState = { totalPulls: 0, pullsSinceLastHR: 0 };
-        playerDeck = [];
         playerState = { 
             ...playerInitialState,
             exp: 0,
             viewingQueue: Array(window.GAME_CONFIG.gameplay.viewingQueue.slots).fill(null),
+            decks: { '默认卡组': [] },
+            activeDeckName: '默认卡组',
         };
         renderAll();
     }
@@ -167,9 +168,10 @@ document.addEventListener('DOMContentLoaded', async function() {
                     ...playerInitialState,
                     exp: 0,
                     viewingQueue: Array(window.GAME_CONFIG.gameplay.viewingQueue.slots).fill(null),
+                    decks: { '默认卡组': [] },
+                    activeDeckName: '默认卡组',
                 };
                 gachaHistory = [];
-                playerDeck = [];
             } else {
                 // Existing user, load data from server
                 const savedCollection = data.collection || [];
@@ -209,9 +211,14 @@ document.addEventListener('DOMContentLoaded', async function() {
             // Reset to default state on error
             playerCollection.clear();
             pityState = { totalPulls: 0, pullsSinceLastHR: 0 };
-            playerState = { ...playerInitialState };
+            playerState = {
+                ...playerInitialState,
+                exp: 0,
+                viewingQueue: Array(window.GAME_CONFIG.gameplay.viewingQueue.slots).fill(null),
+                decks: { '默认卡组': [] },
+                activeDeckName: '默认卡组',
+            };
             gachaHistory = [];
-            playerDeck = [];
         }
     }
     
@@ -549,12 +556,45 @@ document.addEventListener('DOMContentLoaded', async function() {
         const rarityColor = rarityConfig[card.rarity]?.c || 'bg-gray-500';
         const element = document.createElement('div');
         element.className = 'card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer group relative';
-        element.innerHTML = `<div class="relative"><img src="${card.image_path}" class="w-full h-28 object-cover" onerror="this.src='https://placehold.co/120x168/e2e8f0/334155?text=图片丢失';"><div class="absolute top-1 right-1 px-2 py-0.5 text-xs font-bold text-white ${rarityColor.includes('from') ? 'bg-gradient-to-r' : ''} ${rarityColor} rounded-bl-lg rounded-tr-lg">${card.rarity}</div>${(context === 'collection' || context === 'deckbuilder-collection') && count > 1 ? `<div class="absolute bottom-1 right-1 bg-indigo-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">x${count}</div>` : ''}${(context === 'deckbuilder-collection' && playerDeck.some(c=>c.id===card.id)) ? '<div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center"><span class="text-white font-bold text-lg">已在卡组</span></div>':''}</div><p class="text-xs text-center font-bold p-1 truncate" title="${card.name}">${card.name}</p>`;
+
+        const activeDeck = playerState.decks[playerState.activeDeckName] || [];
+        const isInDeck = activeDeck.includes(card.id);
+
+        let overlay = '';
+        if (context === 'deck-collection' && isInDeck) {
+            overlay = '<div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center"><span class="text-white font-bold text-lg">已在卡组</span></div>';
+        }
+
+        let countBadge = '';
+        if ((context === 'deck-collection') && count > 1) {
+            countBadge = `<div class="absolute bottom-1 right-1 bg-indigo-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">x${count}</div>`;
+        }
+
+        element.innerHTML = `
+            <div class="relative">
+                <img src="${card.image_path}" class="w-full h-28 object-cover" onerror="this.src='https://placehold.co/120x168/e2e8f0/334155?text=图片丢失';">
+                <div class="absolute top-1 right-1 px-2 py-0.5 text-xs font-bold text-white ${rarityColor.includes('from') ? 'bg-gradient-to-r' : ''} ${rarityColor} rounded-bl-lg rounded-tr-lg">${card.rarity}</div>
+                ${countBadge}
+                ${overlay}
+            </div>
+            <p class="text-xs text-center font-bold p-1 truncate" title="${card.name}">${card.name}</p>`;
+
         if (options.isDuplicate && context === 'gacha-result') {
-                    element.firstElementChild.innerHTML += `<div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-center p-1"><span class="text-white font-bold text-2xl">+1</span></div>`;
-                }
-        if (context === 'collection') element.addEventListener('click', () => showCardDetail(cardData));
-        else if (context === 'deckbuilder-collection') element.addEventListener('click', () => toggleCardInDeck(card.id));
+            element.firstElementChild.innerHTML += `<div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-center p-1"><span class="text-white font-bold text-2xl">+1</span></div>`;
+        }
+
+        // Click handlers based on context
+        if (context === 'deck-collection' && !isInDeck) {
+            element.addEventListener('click', () => addCardToDeck(card.id));
+        } else if (context === 'deck-list') {
+            element.addEventListener('click', () => removeCardFromDeck(card.id));
+        } else if (context === 'viewing-queue-selection') {
+            // This context is handled where it's called
+        } else {
+            // Default behavior: show details (e.g., from gacha results)
+            element.addEventListener('click', () => showCardDetail(cardData));
+        }
+
         return element;
     }
     function showCardDetail(cardData) {
@@ -864,7 +904,17 @@ document.addEventListener('DOMContentLoaded', async function() {
             historyContainer.appendChild(historyItem);
         });
     }
-    function renderAll() { renderPlayerState(); renderCollection(); renderDeckBuilder(); renderUpBanner(); renderShop(); }
+        function renderAll() {
+        renderPlayerState();
+        renderUpBanner();
+        renderShop();
+        renderViewingQueue();
+        // Only render the deck view if it's currently visible
+        const deckSection = document.getElementById('deck-and-collection');
+        if (deckSection && !deckSection.classList.contains('hidden')) {
+            renderDeckAndCollection();
+        }
+    }
 
     function switchGachaTab(tabName) {
         Object.keys(ui.gacha.tabs).forEach(key => {
