@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', async function() {
             filterName: document.getElementById('collection-filter-name'),
             filterRarity: document.getElementById('collection-filter-rarity'),
             filterTag: document.getElementById('collection-filter-tag'),
+            dismantleAllBtn: document.getElementById('dismantle-all-btn-new'),
         },
         battle: {
             setup: document.getElementById('battle-setup'),
@@ -122,6 +123,15 @@ document.addEventListener('DOMContentLoaded', async function() {
     async function saveState(showAlert = false) {
         if (!currentUser) return;
 
+        // --- Deck Validation ---
+        const activeDeck = playerState.decks[playerState.activeDeckName] || [];
+        const hasDuplicates = new Set(activeDeck).size !== activeDeck.length;
+        if (hasDuplicates) {
+            alert(`错误：卡组 “${playerState.activeDeckName}” 中包含重复的同名卡，无法保存！`);
+            return; // Stop saving
+        }
+        // --- End Validation ---
+
         const payload = {
             collection: Array.from(playerCollection.entries()).map(([id, data]) => [id, data.count]),
             pity: pityState,
@@ -172,6 +182,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                     activeDeckName: '默认卡组',
                 };
                 gachaHistory = [];
+                gachaHistory = [];
             } else {
                 // Existing user, load data from server
                 const savedCollection = data.collection || [];
@@ -196,10 +207,6 @@ document.addEventListener('DOMContentLoaded', async function() {
                 if (data.state && data.state.decks) {
                     playerState.decks = data.state.decks;
                     playerState.activeDeckName = data.state.activeDeckName || Object.keys(data.state.decks)[0] || '默认卡组';
-                } else if (data.deck) {
-                    // Compatibility for very old saves with a single deck
-                    playerState.decks = { '默认卡组': data.deck };
-                    playerState.activeDeckName = '默认卡组';
                 } else {
                     playerState.decks = { '默认卡组': [] };
                     playerState.activeDeckName = '默认卡组';
@@ -390,6 +397,8 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     function addCardToDeck(cardId) {
         const deck = playerState.decks[playerState.activeDeckName];
+        if (deck.includes(cardId)) return; // Silently prevent duplicates
+
         if (deck.length >= deckBuilding.maxCards) {
             alert(`卡组已满（最多${deckBuilding.maxCards}张）`);
             return;
@@ -566,7 +575,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         }
 
         let countBadge = '';
-        if ((context === 'deck-collection') && count > 1) {
+        if ((context === 'deck-collection' || context === 'collection') && count > 1) {
             countBadge = `<div class="absolute bottom-1 right-1 bg-indigo-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">x${count}</div>`;
         }
 
@@ -584,16 +593,19 @@ document.addEventListener('DOMContentLoaded', async function() {
         }
 
         // Click handlers based on context
-        if (context === 'deck-collection' && !isInDeck) {
-            element.addEventListener('click', () => addCardToDeck(card.id));
-        } else if (context === 'deck-list') {
-            element.addEventListener('click', () => removeCardFromDeck(card.id));
-        } else if (context === 'viewing-queue-selection') {
-            // This context is handled where it's called
-        } else {
-            // Default behavior: show details (e.g., from gacha results)
-            element.addEventListener('click', () => showCardDetail(cardData));
-        }
+        element.addEventListener('click', (event) => {
+            event.preventDefault();
+            if (context === 'deck-collection') {
+                addCardToDeck(card.id);
+            } else if (context === 'deck-list') {
+                removeCardFromDeck(card.id);
+            }
+        });
+
+        element.addEventListener('contextmenu', (event) => {
+            event.preventDefault();
+            showCardDetail(cardData);
+        });
 
         return element;
     }
@@ -1040,6 +1052,7 @@ document.addEventListener('DOMContentLoaded', async function() {
             ui.deckAndCollection.filterName.addEventListener('input', renderDeckAndCollection);
             ui.deckAndCollection.filterRarity.addEventListener('change', renderDeckAndCollection);
             ui.deckAndCollection.filterTag.addEventListener('change', renderDeckAndCollection);
+            ui.deckAndCollection.dismantleAllBtn.addEventListener('click', dismantleAllDuplicates);
 
             ui.battle.startBtn.addEventListener('click', startBattle);
             ui.gacha.tabs.pool.addEventListener('click', (e) => { e.preventDefault(); switchGachaTab('pool'); });
