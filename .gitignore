@@ -1,0 +1,11 @@
+# Python scripts and cache
+*.py
+__pycache__/
+
+# Source data, docs, and individual card jsons
+frontend/data/
+
+# IDE / OS files
+.idea/
+.vscode/
+.DS_Store

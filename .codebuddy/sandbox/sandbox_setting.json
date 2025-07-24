@@ -1,0 +1,20 @@
+{
+  "path": "/Users/lilithgames/Downloads/lilith/bangumi",
+  "desc": "一个基于Bangumi数据的抽卡和卡牌收藏网页游戏。",
+  "id": "e4a58c99e63044ee88ecd93776127552",
+  "data": {
+    "spaceKey": "e4a58c99e63044ee88ecd93776127552",
+    "connections": {
+      "webIDE": "https://e4a58c99e63044ee88ecd93776127552.ap-singapore.cloudstudio.club",
+      "preview": "https://e4a58c99e63044ee88ecd93776127552--{port}.ap-singapore.cloudstudio.club",
+      "api": "https://e4a58c99e63044ee88ecd93776127552--api.ap-singapore.cloudstudio.club",
+      "pty": "https://e4a58c99e63044ee88ecd93776127552--pty.ap-singapore.cloudstudio.club"
+    }
+  },
+  "config": {
+    "api": "https://e4a58c99e63044ee88ecd93776127552--api.ap-singapore.cloudstudio.club",
+    "pty": "https://e4a58c99e63044ee88ecd93776127552--pty.ap-singapore.cloudstudio.club",
+    "region": "ap-shanghai",
+    "spaceKey": "e4a58c99e63044ee88ecd93776127552"
+  }
+}
