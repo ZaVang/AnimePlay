@@ -69,9 +69,10 @@ document.addEventListener('DOMContentLoaded', async function() {
             dismantleAllBtn: document.getElementById('dismantle-all-btn-new'),
         },
         battle: {
-            setup: document.getElementById('battle-setup'),
-            arena: document.getElementById('battle-arena'),
-            startBtn: document.getElementById('start-battle-btn'),
+            setup: document.getElementById('battle-setup-new'),
+            arenaContainer: document.getElementById('battle-arena-container'),
+            deckSelector: document.getElementById('battle-deck-selector'),
+            startBtn: document.getElementById('start-battle-btn-new'),
             resultModal: document.getElementById('battle-result-modal'),
         },
         detailModal: {
@@ -502,64 +503,402 @@ document.addEventListener('DOMContentLoaded', async function() {
         }
     }
 
-    // --- Battle Logic ---
-    function startBattle() {
-        const activeDeckIds = playerState.decks[playerState.activeDeckName] || [];
-        if (activeDeckIds.length < deckBuilding.minCardsForBattle) { 
-            alert(`卡组 “${playerState.activeDeckName}” 至少需要${deckBuilding.minCardsForBattle}张卡才能战斗！`); 
-            return; 
-        }
-        location.hash = '#battle';
-        ui.battle.setup.classList.add('hidden');
-        ui.battle.arena.classList.remove('hidden');
-        
-        const aiDeck = aiOpponent.deck.map(id => allCards.find(c => c.id === id)).filter(Boolean);
-        let playerHand = activeDeckIds.map(id => allCards.find(c => c.id === id));
-        let aiHand = [...aiDeck], playerScore = 0, aiScore = 0, round = 1;
-        ui.battle.arena.innerHTML = `<div class="text-center mb-4"><h2 class="text-2xl font-bold">第 <span id="round-counter">1</span> 回合</h2></div><div class="grid grid-cols-3 items-center"><div class="text-center"><h3 class="font-bold text-xl">${currentUser}</h3><p id="player-score" class="text-2xl font-bold text-blue-600">0</p></div><div id="battlefield" class="flex justify-center items-center gap-8 min-h-[200px]"></div><div class="text-center"><h3 class="font-bold text-xl">${aiOpponent.name}</h3><p id="ai-score" class="text-2xl font-bold text-red-600">0</p></div></div><div class="mt-8 text-center"><h3 class="font-bold mb-2">你的手牌</h3><div id="player-hand" class="flex justify-center gap-2 flex-wrap"></div></div><div id="battle-log" class="mt-4 p-2 bg-gray-800 text-white rounded-lg h-24 overflow-y-auto text-sm"></div>`;
-        const battleLog = document.getElementById('battle-log');
-        
-        function playRound() {
-            if (playerHand.length === 0 || aiHand.length === 0 || round > battle.maxRounds) { endBattle(); return; }
-            document.getElementById('round-counter').textContent = round;
-            const playerHandContainer = document.getElementById('player-hand');
-            playerHandContainer.innerHTML = '';
-            playerHand.forEach(card => {
-                const cardEl = createCardElement({ card, count: 1 }, 'player-hand');
-                cardEl.addEventListener('click', () => playerAction(card));
-                playerHandContainer.appendChild(cardEl);
-            });
-        }
-
-        function playerAction(playedCard) {
-            playerHand = playerHand.filter(c => c.id !== playedCard.id);
-            const aiCard = aiHand.splice(Math.floor(Math.random() * aiHand.length), 1)[0];
-            document.getElementById('battlefield').innerHTML = createCardElement({card: playedCard, count: 1}, 'battle-card player').outerHTML + createCardElement({card: aiCard, count: 1}, 'battle-card opponent').outerHTML;
-            let roundWinner = '平局';
-            if (playedCard.points > aiCard.points) { playerScore++; roundWinner = currentUser; }
-            else if (aiCard.points > playedCard.points) { aiScore++; roundWinner = aiOpponent.name; }
-            battleLog.innerHTML += `<div>第${round}回合: ${currentUser} (${playedCard.points}) vs ${aiOpponent.name} (${aiCard.points}). ${roundWinner} 胜利!</div>`;
-            battleLog.scrollTop = battleLog.scrollHeight;
-            document.getElementById('player-score').textContent = playerScore;
-            document.getElementById('ai-score').textContent = aiScore;
-            round++;
-            setTimeout(playRound, 2000);
-        }
-
-        function endBattle() {
-            let resultText = playerScore > aiScore ? '你胜利了！' : (aiScore > playerScore ? '你失败了...' : '平局！');
-            ui.battle.resultModal.innerHTML = `<div class="bg-white p-8 rounded-lg shadow-xl text-center"><h2 class="text-3xl font-bold mb-4">${resultText}</h2><button id="close-battle-result" class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg">返回</button></div>`;
-            ui.battle.resultModal.classList.remove('hidden');
-            document.getElementById('close-battle-result').addEventListener('click', () => {
-                ui.battle.resultModal.classList.add('hidden');
-                ui.battle.setup.classList.remove('hidden');
-                ui.battle.arena.classList.add('hidden');
-            });
-        }
-        playRound();
+    function renderBattleSetup() {
+        ui.battle.deckSelector.innerHTML = '';
+        Object.keys(playerState.decks).forEach(name => {
+            const option = document.createElement('option');
+            option.value = name;
+            option.textContent = `${name} (${playerState.decks[name].length} / ${deckBuilding.maxCards} cards)`;
+            ui.battle.deckSelector.appendChild(option);
+        });
+        ui.battle.startBtn.onclick = startBattle; // Assign event listener here
     }
 
-    // --- Rendering ---
+    // --- Battle Logic 2.0 ---
+    let battleState = {}; // To hold all current battle data
+
+    function startBattle() {
+        const selectedDeckName = ui.battle.deckSelector.value;
+        const activeDeckIds = playerState.decks[selectedDeckName] || [];
+
+        if (activeDeckIds.length === 0) {
+            alert(`卡组 “${selectedDeckName}” 是空的！`); 
+            return; 
+        }
+        
+        // Hide setup and prepare arena container
+        ui.battle.setup.classList.add('hidden');
+        ui.battle.arenaContainer.innerHTML = ''; // Clear previous battle
+        ui.battle.arenaContainer.classList.remove('hidden');
+
+        // --- Initialize Battle State ---
+        battleState = {
+            player: {
+                hp: window.GAME_CONFIG.battle.initialHP,
+                tp: window.GAME_CONFIG.battle.initialTP,
+                hand: [],
+                deck: [...activeDeckIds].map(id => JSON.parse(JSON.stringify(allCards.find(c => c.id === id)))), // Deep copy
+                lanes: [[], [], []] // Top, Middle, Bottom
+            },
+            ai: {
+                hp: window.GAME_CONFIG.battle.initialHP,
+                tp: window.GAME_CONFIG.battle.initialTP,
+                hand: [],
+                deck: [...aiOpponent.deck].map(id => JSON.parse(JSON.stringify(allCards.find(c => c.id === id)))), // Deep copy
+                lanes: [[], [], []]
+            },
+            round: 1,
+            phase: 'preparation', // preparation or combat
+            log: [],
+            combatCombo: 0 // For the 'Combat' synergy
+        };
+
+        // --- Apply Deck-Based Synergies ---
+        SYNERGY_RULES.applyDeckSynergies(battleState);
+
+        // --- Initial Draw ---
+        for (let i = 0; i < window.GAME_CONFIG.battle.initialHandSize; i++) {
+            drawCard('player');
+            drawCard('ai');
+        }
+
+        startPreparationPhase();
+    }
+
+    function drawCard(who) {
+        if (battleState[who].deck.length > 0) {
+            const card = battleState[who].deck.splice(Math.floor(Math.random() * battleState[who].deck.length), 1)[0];
+            battleState[who].hand.push(card);
+        }
+    }
+
+    function startPreparationPhase() {
+        battleState.phase = 'preparation';
+        renderBattleUI();
+    }
+
+    function endTurnAndStartCombat() {
+        if (battleState.phase !== 'preparation') return;
+        battleState.phase = 'combat';
+        
+        aiPlayTurn();
+        renderBattleUI(); // Show AI's move
+        
+        setTimeout(resolveCombat, 1500);
+    }
+
+    function aiPlayTurn() {
+        // Simplified AI: play one card to a random lane if possible
+        if (battleState.ai.hand.length > 0) {
+            const cardToPlay = battleState.ai.hand[0];
+            if (battleState.ai.tp >= (cardToPlay.currentCost ?? cardToPlay.cost)) {
+                const availableLanes = [0, 1, 2].filter(i => battleState.ai.lanes[i].length < window.GAME_CONFIG.battle.laneSize);
+                if (availableLanes.length > 0) {
+                    const laneIndex = availableLanes[Math.floor(Math.random() * availableLanes.length)];
+                    battleState.ai.tp -= (cardToPlay.currentCost ?? cardToPlay.cost);
+                    battleState.ai.lanes[laneIndex].push(cardToPlay);
+                    battleState.ai.hand.splice(0, 1);
+                }
+            }
+        }
+    }
+
+    function resolveCombat() {
+        let playerDamage = 0;
+        let aiDamage = 0;
+        battleState.bonuses = SYNERGY_RULES.calculateFieldBonuses(battleState.player.lanes, battleState.ai.lanes);
+
+        for (let i = 0; i < 3; i++) {
+            const playerLanePower = battleState.player.lanes[i].reduce((sum, card) => sum + (card.currentPoints || card.points) + (battleState.bonuses[card.id]?.totalBonus || 0), 0);
+            const aiLanePower = battleState.ai.lanes[i].reduce((sum, card) => sum + (card.currentPoints || card.points), 0); // AI doesn't get synergy for now
+
+            if (playerLanePower > aiLanePower) {
+                aiDamage += (playerLanePower - aiLanePower);
+            } else if (aiLanePower > playerLanePower) {
+                playerDamage += (aiLanePower - playerLanePower);
+            }
+        }
+
+        battleState.player.hp -= playerDamage;
+        battleState.ai.hp -= aiDamage;
+
+        battleState.log.push(`回合 ${battleState.round} 结算: 玩家受到 ${playerDamage} 伤害, AI 受到 ${aiDamage} 伤害。`);
+
+        if (battleState.player.hp <= 0 || battleState.ai.hp <= 0) {
+            setTimeout(endBattle, 1000);
+        } else {
+            battleState.round++;
+            battleState.player.tp += (battleState.round -1 + window.GAME_CONFIG.battle.tpPerTurn);
+            battleState.ai.tp += (battleState.round -1 + window.GAME_CONFIG.battle.tpPerTurn);
+            drawCard('player');
+            drawCard('ai');
+            setTimeout(startPreparationPhase, 1000);
+        }
+    }
+
+    function endBattle() {
+        let resultText = battleState.player.hp > battleState.ai.hp ? '你胜利了！' : '你失败了...';
+        if (battleState.player.hp <= 0 && battleState.ai.hp <= 0) resultText = '平局！';
+
+        ui.battle.resultModal.innerHTML = `<div class="bg-white p-8 rounded-lg shadow-xl text-center"><h2 class="text-3xl font-bold mb-4">${resultText}</h2><p>玩家剩余HP: ${Math.max(0, battleState.player.hp)}</p><p>AI剩余HP: ${Math.max(0, battleState.ai.hp)}</p><button id="close-battle-result" class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg mt-4">返回</button></div>`;
+        ui.battle.resultModal.classList.remove('hidden');
+        document.getElementById('close-battle-result').addEventListener('click', () => {
+            ui.battle.resultModal.classList.add('hidden');
+            ui.battle.arenaContainer.innerHTML = ''; // Clear the arena
+            ui.battle.setup.classList.remove('hidden'); // Show the setup screen again
+        });
+    }
+
+    function renderBattleUI() {
+        const { player, ai, round, phase, log } = battleState;
+        const arenaContainer = ui.battle.arenaContainer;
+        const bonuses = SYNERGY_RULES.calculateFieldBonuses(player.lanes, ai.lanes);
+
+        const battleHTML = `
+            <div class="w-full max-w-7xl mx-auto p-4 bg-gray-800 text-white rounded-lg shadow-2xl">
+                <!-- AI Status -->
+                <div class="grid grid-cols-3 items-center mb-4">
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/64x64/ef4444/ffffff?text=AI" class="rounded-full border-2 border-red-500">
+                        <div class="ml-4">
+                            <p class="font-bold text-lg">${aiOpponent.name}</p>
+                            <div class="w-48 bg-red-900 rounded-full h-5"><div class="bg-red-500 h-5 rounded-full" style="width: ${ (ai.hp / window.GAME_CONFIG.battle.initialHP) * 100 }%"></div></div>
+                            <p class="text-sm text-center font-mono">${ai.hp} / ${window.GAME_CONFIG.battle.initialHP}</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h2 class="text-3xl font-bold">第 <span>${round}</span> 回合</h2>
+                        <p class="text-lg text-yellow-400">${phase === 'preparation' ? '准备阶段' : '战斗阶段'}</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-2xl font-bold">TP: <span>${ai.tp}</span></p>
+                    </div>
+                </div>
+
+                <!-- Battlefield -->
+                <div class="space-y-3 bg-black bg-opacity-20 p-4 rounded-lg">
+                    ${[0, 1, 2].map(i => `
+                        <div id="lane-${i}" class="h-40 bg-gray-700 rounded-lg flex justify-between items-center p-2">
+                            <div class="flex-1 flex justify-start gap-2 ai-lane">
+                                ${ai.lanes[i].map(card => createBattleCard(card, 'ai', -1, bonuses)).join('')}
+                            </div>
+                            <div class="flex-1 flex justify-end gap-2 player-lane" data-lane-index="${i}">
+                                ${player.lanes[i].map(card => createBattleCard(card, 'player', -1, bonuses)).join('')}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+
+                <!-- Player Status -->
+                <div class="grid grid-cols-3 items-center mt-4">
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/64x64/3b82f6/ffffff?text=P" class="rounded-full border-2 border-blue-500">
+                        <div class="ml-4">
+                            <p class="font-bold text-lg">${currentUser}</p>
+                            <div class="w-48 bg-blue-900 rounded-full h-5"><div class="bg-blue-500 h-5 rounded-full" style="width: ${(player.hp / window.GAME_CONFIG.battle.initialHP) * 100}%"></div></div>
+                            <p class="text-sm text-center font-mono">${player.hp} / ${window.GAME_CONFIG.battle.initialHP}</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button id="end-turn-btn" class="bg-green-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-green-700 text-lg ${phase !== 'preparation' ? 'opacity-50 cursor-not-allowed' : ''}" ${phase !== 'preparation' ? 'disabled' : ''}>结束回合</button>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-2xl font-bold">TP: <span>${player.tp}</span></p>
+                    </div>
+                </div>
+
+                <!-- Player Hand -->
+                <div id="player-hand-area" class="mt-4 h-40 bg-gray-900 p-2 rounded-lg flex justify-center items-center gap-2">
+                    ${player.hand.map((card, index) => createBattleCard(card, 'player-hand', index, bonuses)).join('')}
+                </div>
+            </div>
+            <div id="battle-log-new" class="w-full max-w-7xl mx-auto mt-2 p-2 bg-gray-800 text-white rounded-lg h-24 overflow-y-auto text-sm">${log.map(l => `<div>${l}</div>`).join('')}</div>
+        `;
+        arenaContainer.innerHTML = battleHTML;
+
+        // Add event listeners after rendering
+        document.getElementById('end-turn-btn').addEventListener('click', endTurnAndStartCombat);
+        initSortable();
+    }
+
+    function createBattleCard(card, owner, handIndex = -1, bonuses = {}) {
+        const ownerColor = owner === 'player' || owner === 'player-hand' ? 'blue' : 'red';
+        const isHandCard = owner === 'player-hand';
+        const cost = card.currentCost ?? card.cost;
+        const canPlay = isHandCard && battleState.phase === 'preparation' && battleState.player.tp >= cost;
+        
+        const bonus = bonuses[card.id]?.totalBonus || 0;
+        let finalPoints = (card.currentPoints || card.points) + bonus;
+        let pointsColor = `text-${ownerColor}-400`;
+        if (bonus > 0) pointsColor = 'text-green-400';
+        if (card.isBuffed) pointsColor = 'text-green-400';
+        if (card.isDebuffed) pointsColor = 'text-red-400';
+
+        let cardHTML;
+        if (owner === 'ai' && card.isRevealed) {
+            // Render revealed AI card face up
+            cardHTML = `
+                <div class="p-1 flex flex-col justify-between h-full bg-gray-900">
+                    <p class="text-xs font-bold truncate">${card.name}</p>
+                    <p class="text-3xl font-bold text-center ${pointsColor}">${finalPoints}</p>
+                    <p class="text-xs text-right">Cost: ${cost}</p>
+                </div>
+            `;
+        } else if (owner === 'ai') {
+            // Render normal AI card face down
+            cardHTML = `<div class="w-full h-full bg-red-900 rounded-md flex items-center justify-center"><p class="text-white font-bold">?</p></div>`;
+        } else {
+            // Render player card
+            cardHTML = `
+                <div class="p-1 flex flex-col justify-between h-full">
+                    <p class="text-xs font-bold truncate">${card.name}</p>
+                    <p class="text-3xl font-bold text-center ${pointsColor}">${finalPoints}</p>
+                    <p class="text-xs text-right">Cost: ${cost}</p>
+                </div>
+            `;
+        }
+
+        const element = document.createElement('div');
+        element.className = `w-24 h-36 bg-gray-800 border-2 ${canPlay ? 'border-yellow-400 cursor-grab' : `border-${ownerColor}-500`} rounded-lg p-1 flex flex-col justify-between shadow-lg ${!canPlay && isHandCard ? 'opacity-50' : ''}`;
+        element.dataset.cardId = card.id;
+        if(isHandCard) element.dataset.handIndex = handIndex;
+        element.innerHTML = cardHTML;
+        
+        return element;
+    }
+
+    function initSortable() {
+        const handContainer = document.getElementById('player-hand-area');
+        const laneElements = [0, 1, 2].map(i => document.querySelector(`#lane-${i} .player-lane`));
+
+        new Sortable(handContainer, {
+            group: 'battle',
+            animation: 150,
+            onEnd: (evt) => handleCardMove(evt)
+        });
+
+        laneElements.forEach((laneEl, index) => {
+            if(laneEl) {
+                new Sortable(laneEl, {
+                    group: 'battle',
+                    animation: 150,
+                    onAdd: (evt) => handleCardMove(evt, index)
+                });
+            }
+        });
+    }
+
+    function handleCardMove(evt, toLaneIndex) {
+        const cardId = parseInt(evt.item.dataset.cardId);
+        const fromHand = evt.from.id === 'player-hand-area';
+
+        if (fromHand && toLaneIndex !== undefined) {
+            const handIndex = battleState.player.hand.findIndex(c => c.id === cardId);
+            if (handIndex > -1) {
+                handlePlayCard(battleState.player.hand[handIndex], handIndex, toLaneIndex);
+            }
+        } 
+        // Note: Moving cards back to hand or between lanes is not implemented in this version
+        // to prevent complex bugs. We can add it later if needed.
+        renderBattleUI(); // Re-render to correct any visual glitches from invalid moves
+    }
+
+    function handlePlayCard(card, handIndex, laneIndex) {
+        // --- Synergy Handling ---
+        // Reset combat combo if necessary
+        SYNERGY_RULES.rules.combatChain.reset(card, battleState);
+
+        // Check for 'play' synergies that require confirmation
+        const romanceRule = SYNERGY_RULES.rules.romanceAndYuri;
+        if (romanceRule.condition(card, battleState.player.hand)) {
+            const otherCards = battleState.player.hand.filter(c => c.id !== card.id && ((c.synergy_tags || []).includes('恋爱') || (c.synergy_tags || []).includes('百合')));
+            
+            showConfirmation(
+                `触发羁绊：${romanceRule.description}`,
+                `你是否愿意弃掉一张手牌来触发效果？`,
+                (selectedCardId) => { // YES
+                    const handIndexOfDiscard = battleState.player.hand.findIndex(c => c.id === selectedCardId);
+                    if(handIndexOfDiscard > -1) battleState.player.hand.splice(handIndexOfDiscard, 1);
+                    
+                    const bonus = Math.floor(card.points * romanceRule.effect().bonus_multiplier);
+                    card.currentPoints = (card.currentPoints || card.points) + bonus;
+                    battleState.log.push(`羁绊触发：${card.name} 点数 +${bonus}!`);
+                    deployCard(card, handIndex, laneIndex);
+                },
+                () => { // NO
+                    deployCard(card, handIndex, laneIndex);
+                },
+                otherCards // Pass discardable cards to the modal
+            );
+            return; // Stop further execution until user makes a choice
+        }
+        
+        // Apply non-interactive 'play' synergies like combat chain
+        if (SYNERGY_RULES.rules.combatChain.condition(card)) {
+            SYNERGY_RULES.rules.combatChain.effect(card, battleState);
+        }
+
+        deployCard(card, handIndex, laneIndex);
+    }
+
+    function deployCard(card, handIndex, laneIndex) {
+        const cost = card.currentCost ?? card.cost;
+        battleState.player.tp -= cost;
+        battleState.player.hand.splice(handIndex, 1);
+        battleState.player.lanes[laneIndex].push(card);
+        renderBattleUI();
+    }
+
+    function showConfirmation(title, text, onYes, onNo, cardChoices = null) {
+        document.getElementById('confirmation-title').textContent = title;
+        document.getElementById('confirmation-text').textContent = text;
+
+        const modal = document.getElementById('confirmation-modal');
+        const yesBtn = document.getElementById('confirm-btn-yes');
+        const noBtn = document.getElementById('confirm-btn-no');
+        const choiceContainer = document.createElement('div');
+        choiceContainer.className = 'my-4 max-h-48 overflow-y-auto';
+
+        if (cardChoices && cardChoices.length > 0) {
+            cardChoices.forEach(card => {
+                const choiceEl = document.createElement('div');
+                choiceEl.className = 'p-2 border rounded mb-2 cursor-pointer hover:bg-gray-200';
+                choiceEl.textContent = card.name;
+                choiceEl.addEventListener('click', () => {
+                    // Visually select the card
+                    Array.from(choiceContainer.children).forEach(el => el.classList.remove('bg-green-200'));
+                    choiceEl.classList.add('bg-green-200');
+                    yesBtn.dataset.selectedCardId = card.id;
+                    yesBtn.disabled = false;
+                });
+                choiceContainer.appendChild(choiceEl);
+            });
+            yesBtn.disabled = true; // Disable until a choice is made
+            document.getElementById('confirmation-text').after(choiceContainer);
+        }
+
+        const yesHandler = () => {
+            const selectedCardId = parseInt(yesBtn.dataset.selectedCardId);
+            onYes(selectedCardId);
+            cleanup(); 
+        };
+        const noHandler = () => { onNo(); cleanup(); };
+
+        function cleanup() {
+            modal.classList.add('hidden');
+            if (choiceContainer.parentNode) {
+                choiceContainer.parentNode.removeChild(choiceContainer);
+            }
+            yesBtn.removeEventListener('click', yesHandler);
+            noBtn.removeEventListener('click', noHandler);
+            delete yesBtn.dataset.selectedCardId;
+        }
+
+        yesBtn.addEventListener('click', yesHandler);
+        noBtn.addEventListener('click', noHandler);
+
+        modal.classList.remove('hidden');
+    }
     function createCardElement(cardData, context, options = {}) {
         const { card, count } = cardData;
         const rarityColor = rarityConfig[card.rarity]?.c || 'bg-gray-500';
@@ -1054,7 +1393,8 @@ document.addEventListener('DOMContentLoaded', async function() {
             ui.deckAndCollection.filterTag.addEventListener('change', renderDeckAndCollection);
             ui.deckAndCollection.dismantleAllBtn.addEventListener('click', dismantleAllDuplicates);
 
-            ui.battle.startBtn.addEventListener('click', startBattle);
+            // The start battle button is now part of the battle setup, not the main UI
+            // ui.battle.startBtn.addEventListener('click', startBattle);
             ui.gacha.tabs.pool.addEventListener('click', (e) => { e.preventDefault(); switchGachaTab('pool'); });
             ui.gacha.tabs.history.addEventListener('click', (e) => { e.preventDefault(); switchGachaTab('history'); });
             ui.gacha.tabs.shop.addEventListener('click', (e) => { e.preventDefault(); switchGachaTab('shop'); });
@@ -1068,7 +1408,13 @@ document.addEventListener('DOMContentLoaded', async function() {
                 let hash = window.location.hash || '#home';
                 ui.mainSections.forEach(s => s.classList.toggle('hidden', `#${s.id}` !== hash));
                 ui.navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === hash));
-                if (hash === '#deck-and-collection') renderDeckAndCollection();
+                if (hash === '#deck-and-collection') {
+                    renderDeckAndCollection();
+                } else if (hash === '#battle') {
+                    renderBattleSetup();
+                    ui.battle.setup.classList.remove('hidden');
+                    ui.battle.arenaContainer.innerHTML = ''; // Clear any previous battle
+                }
             });
             location.hash = '#home';
             window.dispatchEvent(new HashChangeEvent('hashchange'));

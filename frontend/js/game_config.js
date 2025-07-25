@@ -38,7 +38,13 @@ window.GAME_CONFIG = {
     },
     // 战斗设置
     battle: {
-        maxRounds: 10,
+        initialHP: 100,
+        initialTP: 3,
+        tpPerTurn: 1,
+        initialHandSize: 5,
+        laneSize: 3,
+        removeCardCost: 2,
+        maxRounds: 20, // Max rounds before a draw
     },
     // 商店配置
     shop: {
