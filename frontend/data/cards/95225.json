@@ -1,0 +1,23 @@
+{
+    "id": 95225,
+    "name": "Fate/stay night [Unlimited Blade Works]",
+    "image_path": "frontend/data/images/95225.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "舞台は海と山に囲まれた都市・冬木市。\r\nそこで行われる、ある一つの儀式。\r\n\r\n手にした者の願いを叶えるという聖杯を実現させる為、聖杯に選ばれた七人の魔術師に、聖杯が選んだ七騎の使い魔を与える。\r\n\r\n騎士 \"セイバー\"\r\n槍兵 \"ランサー\"\r\n弓兵 \"アーチャー\"\r\n騎兵 \"ライダー\"\r\n魔術師 \"キャスター\"\r\n暗殺者 \"アサシン\"\r\n狂戦士 \"バーサーカー\"\r\n\r\nマスターは七つの役割を被った使い魔一人と契約し、七組は、聖杯を求め、最後の一組となるまで殺し合いを繰り広げる。\r\n\r\nその名は「聖杯戦争」。\r\n\r\n\r\n2014年 秋、開戦 ――。 ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "战斗",
+        "游戏改"
+    ],
+    "date": "2014-10-04",
+    "rating_rank": 846,
+    "rating_score": 7.5,
+    "rating_total": 16943
+}

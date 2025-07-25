@@ -1,0 +1,22 @@
+{
+    "id": 475354,
+    "name": "物语系列 外传季&怪物季",
+    "image_path": "frontend/data/images/475354.jpg",
+    "points": 8.2,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "高中毕业后，阿良良木历的故事结束了。\r\n\r\n这次真的结束了。\r\n\r\n但是在历的帮助下，她们的故事还没有结束。\r\n\r\n这是在青春中挣扎的她们的前日谭，亦或是后日谈。",
+    "type": 2,
+    "platform": "WEB",
+    "episodes_for_hangup": 15,
+    "synergy_tags": [
+        "日本",
+        "奇幻",
+        "小说改",
+        "WEB"
+    ],
+    "date": "2024-07-06",
+    "rating_rank": 111,
+    "rating_score": 8.2,
+    "rating_total": 4755
+}

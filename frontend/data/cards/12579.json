@@ -1,0 +1,23 @@
+{
+    "id": 12579,
+    "name": "凡尔赛玫瑰",
+    "image_path": "frontend/data/images/12579.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "18世紀のフランスで、男として育てられた14歳の貴族オスカルは新たに皇太子妃となるマリー・アントワネットを護衛する近衛隊長に任じられた。心優しい彼女を守って数々の修羅場を戦い抜くオスカルだが、贅沢三昧の王侯貴族と貧しい庶民の溝は日々深まっていき、やがて血で血を洗うフランス革命が勃発する…。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 40,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改",
+        "历史"
+    ],
+    "date": "1979-10-10",
+    "rating_rank": 479,
+    "rating_score": 7.8,
+    "rating_total": 437
+}

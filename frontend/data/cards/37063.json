@@ -1,0 +1,22 @@
+{
+    "id": 37063,
+    "name": "百变之星 不死鸟传说 ～蕾拉・汉密尔顿物语～",
+    "image_path": "frontend/data/images/37063.jpg",
+    "points": 8.1,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "内容相当于TV版第53话，主角为蕾拉，描写蕾拉面对自我的心路历程。",
+    "type": 2,
+    "platform": "OVA",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "百合",
+        "日本",
+        "OVA",
+        "原创"
+    ],
+    "date": "2006-01-27",
+    "rating_rank": 236,
+    "rating_score": 8.1,
+    "rating_total": 547
+}

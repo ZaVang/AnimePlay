@@ -1,0 +1,21 @@
+{
+    "id": 1894,
+    "name": "勇者王GaoGaiGar",
+    "image_path": "frontend/data/images/1894.jpg",
+    "points": 7.8,
+    "cost": 1,
+    "rarity": "N",
+    "description": "故事讲述2003年，一架神秘的机械生命体“EI-01”出现，把当时是太空人的狮子王凯的太空船击落，然后在地球上消失了。同一时间，一架神秘的机械狮子Galeon出现并救起狮子王凯。\r\n这架机械狮子Galeon带来了名为G-Stone的动力源和无限情报集体回路。除了把狮子王凯救活并改造成机器人外，也带来了一系列超越地球的科技和有关机械生命体易情报。而日本政府为了对抗机械生命体，成立了地球防卫勇者队3G，Gutsy Geoid Guard。\r\n两年后机械生命体正式开始进攻，而地球的未来就依靠地球防卫勇者队3G的队员，故事也由于展开。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 49,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "1997-02-01",
+    "rating_rank": 548,
+    "rating_score": 7.8,
+    "rating_total": 534
+}

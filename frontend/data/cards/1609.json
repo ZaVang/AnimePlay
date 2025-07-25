@@ -1,0 +1,24 @@
+{
+    "id": 1609,
+    "name": "游戏王5D's",
+    "image_path": "frontend/data/images/1609.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "以武藤游戏所在时代数十年后的童实野市为舞台。那时的童实野市被称为“新童实野市”，是一个根据身份高低分为上层地带和下层地带的阶级社会，流行着使用被称为“D轮（D Wheel）”的摩托车型决斗盘决斗的“骑乘决斗（Riding Duel）”。\r\n不动游星在新童实野市的下层地带“卫星（Satellite）”中与同伴们一起生活着。因被对手——骑乘决斗的KING“杰克·阿特拉斯”抢走了自己最重要的卡“星尘龙（Stardust Dragon）”，为了把它夺回，游星逃出了卫星。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 154,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "奇幻",
+        "原创",
+        "少年向"
+    ],
+    "date": "2008-04-02",
+    "rating_rank": 297,
+    "rating_score": 7.9,
+    "rating_total": 2019
+}

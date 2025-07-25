@@ -1,0 +1,22 @@
+{
+    "id": 47685,
+    "name": "南家三姐妹 我回来了",
+    "image_path": "frontend/data/images/47685.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "讲述了南家三姐妹，春香、夏奈和千秋三人在家和校园里的日常生活以及周围人们故事。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2013-01-05",
+    "rating_rank": 616,
+    "rating_score": 7.7,
+    "rating_total": 4033
+}

@@ -1,0 +1,22 @@
+{
+    "id": 103906,
+    "name": "心理测量者 新编集版",
+    "image_path": "frontend/data/images/103906.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "2014年7月よりフジテレビ“ノイタミナ”ほかにて放送と発表されていたTVアニメ『PSYCHO-PASS サイコパス 新编集版』が、2014年7月10日（木）より放送开始となることが决まった。2012年10月～2013年3月に放送された第1期シリーズ全22话の第1期を1时间番组の全11话に再编集し、新规カットも追加される。そして2014年10月からは、続编である新作『PSYCHO-PASS サイコパス 2』がスタート。今冬には『剧场版 PSYCHO-PASS サイコパス』の公开も予定されている。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 11,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2014-07-10",
+    "rating_rank": 509,
+    "rating_score": 7.7,
+    "rating_total": 2344
+}

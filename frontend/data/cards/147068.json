@@ -1,0 +1,22 @@
+{
+    "id": 147068,
+    "name": "3月的狮子",
+    "image_path": "frontend/data/images/147068.jpg",
+    "points": 8.3,
+    "cost": 4,
+    "rarity": "SSR",
+    "description": "独自居住在东京旧市街的17岁职业将棋棋士——桐山零。\r\n他是个幼时就因为意外失去家人，怀抱着深沉孤独的少年。\r\n出现在这样的他面前的，是明里、日向、桃三姐妹。\r\n与她们的相处后，零开始发生些许改变——。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 22,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2016-10-08",
+    "rating_rank": 84,
+    "rating_score": 8.3,
+    "rating_total": 9759
+}

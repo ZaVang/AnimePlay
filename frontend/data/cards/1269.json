@@ -1,0 +1,23 @@
+{
+    "id": 1269,
+    "name": "水星领航员 第二季",
+    "image_path": "frontend/data/images/1269.jpg",
+    "points": 8.3,
+    "cost": 3,
+    "rarity": "SR",
+    "description": " 水の星AQUA（アクア）の観光都市ネオ・ヴェネツィアを舞台に、\r\nウンディーネを夢見る少女、水無灯里。\r\n\r\nそんな彼女の柔らかな日常を情感豊かに描いた未来形ヒーリングアニメーション。\r\n「ARIA The ANIMATION」。\r\n\r\nそのセカンド・シーズンである「ARIA The NATURAL」は、佐藤順一監督をはじめとするスタッフ＆キャストはそのままに、さらにナチュラルで優しい世界へ視聴者を誘います。\r\n\r\n今シリーズのテーマは“出会い”。\r\n\r\n出会いを見守る街としてのネオ・ヴェネツィアの『素敵』を描いていきます。\r\n\r\n主人公に優しくてちょっぴり切ない物語が広がります。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2006-04-03",
+    "rating_rank": 110,
+    "rating_score": 8.3,
+    "rating_total": 2418
+}

@@ -1,0 +1,23 @@
+{
+    "id": 278569,
+    "name": "高分少女 第二季",
+    "image_path": "frontend/data/images/278569.jpg",
+    "points": 8.1,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "喜欢游戏的少年，因为游戏与少女相遇。\r\n\r\n对胜利的渴望，对技术的追求，对自尊的维护，在游戏中心孕育的友情与爱慕。依靠着来自朋友、家庭和游戏角色对内心的支撑，少年少女们也在不断的成长，只要继续坚持就能无限续关？\r\n\r\n春雄、晶、小春挑战最终关卡的结果究竟是？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 9,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2019-10-25",
+    "rating_rank": 163,
+    "rating_score": 8.1,
+    "rating_total": 4537
+}

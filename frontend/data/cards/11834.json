@@ -1,0 +1,22 @@
+{
+    "id": 11834,
+    "name": "银魂'",
+    "image_path": "frontend/data/images/11834.jpg",
+    "points": 8.7,
+    "cost": 5,
+    "rarity": "HR",
+    "description": "在2011年4月进行电视动画的第二期播放，集数承接第一期，从第202话开始。第二期动画标题做了小改动。以《银魂'》做为新标题，即在原标题的魂字右上角加了一点。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 51,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2011-04-04",
+    "rating_rank": 21,
+    "rating_score": 8.7,
+    "rating_total": 12565
+}

@@ -1,0 +1,23 @@
+{
+    "id": 22759,
+    "name": "花开伊吕波",
+    "image_path": "frontend/data/images/22759.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "16岁少女松前緒花，平凡的日常生活在某天迎来了戏剧化的改变。\r\n生于东京的她离开熟悉的环境，来到祖母所经营的拥有大正浪漫氛围的山间温泉旅馆——喜翠庄打工，展开了崭新的生活。\r\n如同阳光下盛开的鲜花一般，相信梦想终有一天一定会开花……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "日常",
+        "职场"
+    ],
+    "date": "2011-04-03",
+    "rating_rank": 891,
+    "rating_score": 7.5,
+    "rating_total": 11665
+}

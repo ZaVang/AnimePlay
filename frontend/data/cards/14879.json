@@ -1,0 +1,21 @@
+{
+    "id": 14879,
+    "name": "小魔女DoReMi 童年秘密篇",
+    "image_path": "frontend/data/images/14879.jpg",
+    "points": 8.2,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "在故事完结篇后所推出来的OVA。以Mo~tto! 小魔女DoReMi为蓝本，讲述穿插于第三部中的轶事。故事主要围绕在DoReMi、羽月、小爱、音符、小桃子、以及其他同学、家人和朋友的小故事。",
+    "type": 2,
+    "platform": "OVA",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "日本",
+        "OVA",
+        "原创"
+    ],
+    "date": "2004-06-26",
+    "rating_rank": 202,
+    "rating_score": 8.2,
+    "rating_total": 294
+}

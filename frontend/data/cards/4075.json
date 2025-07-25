@@ -1,0 +1,23 @@
+{
+    "id": 4075,
+    "name": "此时此刻的我",
+    "image_path": "frontend/data/images/4075.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "热血而耿直的少年修在放学路上遇见沉默的少女。在突如其来的变故中，为了保护向他呼救的少女，修被卷入了陌生的时空。在荒芜的世界里，生命将何去何从……\r\n",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创",
+        "穿越"
+    ],
+    "date": "1999-10-14",
+    "rating_rank": 833,
+    "rating_score": 7.5,
+    "rating_total": 1442
+}

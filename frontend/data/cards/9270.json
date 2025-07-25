@@ -1,0 +1,21 @@
+{
+    "id": 9270,
+    "name": "樱桃小丸子",
+    "image_path": "frontend/data/images/9270.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "『ちびまる子ちゃん』（ちびまるこちゃん）は、さくらももこによる日本の漫画作品やそれを元にしたアニメ作品、またはその主人公のあだ名。作者の子供時代の思い出を軸に、普通の小学生の生活を綴るコメディ。また、ドラマでまる子を演じた森迫永依・伊藤綺夏も「ちびまる子ちゃん」と呼ばれることがある。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 0,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1995-01-08",
+    "rating_rank": 774,
+    "rating_score": 7.6,
+    "rating_total": 1312
+}

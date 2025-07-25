@@ -1,0 +1,22 @@
+{
+    "id": 88473,
+    "name": "虫师 特別篇 蚀日之翳",
+    "image_path": "frontend/data/images/88473.jpg",
+    "points": 8.2,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "日食发生之时，虫子最易活跃且容易发生状况，主人公银古守护的村子就出现了奇异的虫子遮天蔽日，人们最熟悉的太阳光芒即将消失。在苦苦寻找根源的时候，银古发现了一对身体奇特的姐妹，进而找到了虫子的“根”，与村民合力把根送到太阳照到的地方，解除了阳光被遮挡的危机。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改"
+    ],
+    "date": "2014-01-04",
+    "rating_rank": 118,
+    "rating_score": 8.2,
+    "rating_total": 2856
+}

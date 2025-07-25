@@ -1,0 +1,22 @@
+{
+    "id": 7408,
+    "name": "青兰圆舞曲",
+    "image_path": "frontend/data/images/7408.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "御苑生奈奈子进入名校青兰女子学园开始了她的高中生涯，在那里她遇到了学校的风云人物折原熏和朝霞丽并与之成为好友。不知为何，全校少女向往进入的“女青社”社长一之宫露子对奈奈子多加照顾，盛邀她成为“女青社”的一员，这同时也激起了众人的嫉妒。丽的痛楚、熏的苦笑还有露子那捉摸不定的态度，一切都源于奈奈子给哥哥的信。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 39,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1991-07-14",
+    "rating_rank": 734,
+    "rating_score": 7.7,
+    "rating_total": 222
+}

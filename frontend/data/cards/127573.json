@@ -1,0 +1,23 @@
+{
+    "id": 127573,
+    "name": "摇曳百合 3☆High!",
+    "image_path": "frontend/data/images/127573.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2015-10-05",
+    "rating_rank": 683,
+    "rating_score": 7.6,
+    "rating_total": 4029
+}

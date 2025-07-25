@@ -1,0 +1,21 @@
+{
+    "id": 10385,
+    "name": "TIGER & BUNNY",
+    "image_path": "frontend/data/images/10385.jpg",
+    "points": 7.7,
+    "cost": 2,
+    "rarity": "R",
+    "description": "日升社新作原创动画，由知名漫画家桂正和负责角色原案，而监督是曾执导过《鸦-KARAS-》的佐藤敬一。\r\n故事以架空的高度现代化都市Stern Bild为舞台，聚集了各方种族的这里，也有被称为“NEXT”的超能力者。而这些人中，有人便以“超级英雄”作为正式职业，身着印着赞助厂商Logo的战斗服，守护着城市中的和平。\r\n在这样的世界中，也有以报导这些超级英雄为主题的高人气节目《HERO TV》，并会在每年依照他们的活跃度进行所谓的“英雄排名榜”，第一名将获得“KING OF HERO”的称号。\r\n身为超级英雄之一的Wild Tiger（镝木・T・虎彻），曾是站在业界顶端的老手，我行我素的他在不知不觉间有了“正义的破坏王”之称号。而他突然被要求与新人巴纳比（Barnaby Brooks Jr.）组队活动。工作与私生活都地处绝地的两个人将携手向恶势力进攻。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 25,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2011-04-02",
+    "rating_rank": 486,
+    "rating_score": 7.7,
+    "rating_total": 2869
+}

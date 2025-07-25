@@ -1,0 +1,22 @@
+{
+    "id": 10375,
+    "name": "传说巨神伊迪安",
+    "image_path": "frontend/data/images/10375.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "日本Sunrise公司制作的机器人动画，TV版于1980年5月8日至1981年1月30日播放。由著名动画监督富野由悠季（当时还叫富野喜幸）监督，原定播出43话，由于收视率低迷的关系，被砍成了39话。但是1年后的1982年7月10日，又公映了2部剧场版——接触篇和发动篇。接触篇算是TV版前半部分的总集编，但有很多情节和TV版不同；发动篇是结局部分，对TV版未播出的真正结尾进行了补充和扩展。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 39,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "1980-05-08",
+    "rating_rank": 789,
+    "rating_score": 7.6,
+    "rating_total": 634
+}

@@ -1,0 +1,21 @@
+{
+    "id": 4237,
+    "name": "兽爪",
+    "image_path": "frontend/data/images/4237.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "那个男人爱着的女人，竟然是最恐怖的怪物。她所爱的男人， 则是最强的怪物猎人。一边属于敌对的对手，一边又被爱情纽带给相连。这两人之间的爱情将会是怎样的结果呢？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2006-08-05",
+    "rating_rank": 709,
+    "rating_score": 7.6,
+    "rating_total": 1072
+}

@@ -1,0 +1,21 @@
+{
+    "id": 995,
+    "name": "欢迎加入NHK！",
+    "image_path": "frontend/data/images/995.jpg",
+    "points": 8.2,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "大学退学第二年的春天，主角家里蹲废材佐藤达广在一事无成下，妄想认为自己的退学跟无职是NHK的全国性阴谋，就在这个时候在他面前出现了之前遇到过叫做中原岬的神秘美少女，并坚持达广一定要加入计划治好只会窝在家里的毛病……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "小说改"
+    ],
+    "date": "2006-07-09",
+    "rating_rank": 139,
+    "rating_score": 8.2,
+    "rating_total": 7610
+}

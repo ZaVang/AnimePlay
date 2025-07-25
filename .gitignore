@@ -3,7 +3,6 @@
 __pycache__/
 
 # Source data, docs, and individual card jsons
-frontend/data/
 
 # IDE / OS files
 .idea/

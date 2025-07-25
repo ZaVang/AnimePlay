@@ -1,0 +1,23 @@
+{
+    "id": 1966,
+    "name": "交响情人梦 巴黎篇",
+    "image_path": "frontend/data/images/1966.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "内容改编自原作漫画第10集开始，描写千秋真一和野田惠在巴黎的故事。\r\n",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 11,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "音乐",
+        "少女向"
+    ],
+    "date": "2008-10-09",
+    "rating_rank": 563,
+    "rating_score": 7.7,
+    "rating_total": 1668
+}

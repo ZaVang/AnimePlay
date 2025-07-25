@@ -1,0 +1,21 @@
+{
+    "id": 10391,
+    "name": "城市猎人",
+    "image_path": "frontend/data/images/10391.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "《城市猎人》（シティーハンター，City Hunter）是日本漫画家北条司的漫画代表作之一，中国大陆曾以《侠探寒羽良》为名出版未授权删节本。\r\n\r\n因为该作品的火爆，除了漫画外被改变成动画、动画电影、小说以及真人电影。\r\n\r\n漫画《天使心》则是《城市猎人》的平行世界作品，只延用《城市猎人》故事人物，而非其续集",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 51,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1987-04-06",
+    "rating_rank": 670,
+    "rating_score": 7.7,
+    "rating_total": 679
+}

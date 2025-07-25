@@ -1,0 +1,23 @@
+{
+    "id": 82233,
+    "name": "向阳素描 沙英・寻 毕业篇",
+    "image_path": "frontend/data/images/82233.jpg",
+    "points": 8.0,
+    "cost": 2,
+    "rarity": "R",
+    "description": "私立やまぶき高校美術科の変わり者が集うアパート「ひだまり荘」で繰り広げられる物語を描いた人気アニメのOVA。最終学年の沙英とヒロは進路について悩み始める。そして、たくさんの思い出を胸にそれぞれの旅立ちを迎える。",
+    "type": 2,
+    "platform": "OVA",
+    "episodes_for_hangup": 2,
+    "synergy_tags": [
+        "百合",
+        "日本",
+        "OVA",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2013-11-27",
+    "rating_rank": 288,
+    "rating_score": 8.0,
+    "rating_total": 770
+}

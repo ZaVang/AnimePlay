@@ -1,0 +1,21 @@
+{
+    "id": 53925,
+    "name": "城市猎人 第二季",
+    "image_path": "frontend/data/images/53925.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "大都会、多くの人々がすれ違う新宿には、様々なトラブル、犯罪、陰謀が人々を呑みこもうと身構えている。しかし、苦境に立ったら、東口の伝言板に「XYZ」と書けばいい。それは「もう後がない」という合図。トラブルスイーパー、シティーハンター冴羽 獠への依頼だ。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 63,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1988-04-02",
+    "rating_rank": 889,
+    "rating_score": 7.6,
+    "rating_total": 172
+}

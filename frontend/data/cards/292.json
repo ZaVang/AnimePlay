@@ -1,0 +1,23 @@
+{
+    "id": 292,
+    "name": "DARKER THAN BLACK -黑之契约者-",
+    "image_path": "frontend/data/images/292.jpg",
+    "points": 8.0,
+    "cost": 2,
+    "rarity": "R",
+    "description": "BONES的原创TV动画《Darker than BLACK－黑之契约者》，于2007年初春重磅登场。动画剧情围绕着超能力和间谍活动展开，故事的舞台定于喧嚣繁华的都市——东京。某日东京突然出现了异现象——不能解析的领域“地狱门”。在那里，有着人们从未遇见过并持有着超能力的来访者。人们称这些来放者为“契约者”，他们有的失去心智，有时甚至会残酷地杀害人类，“契约者”来到东京到底意欲何为……？\r\n",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "原创",
+        "战斗"
+    ],
+    "date": "2007-04-05",
+    "rating_rank": 263,
+    "rating_score": 8.0,
+    "rating_total": 9238
+}

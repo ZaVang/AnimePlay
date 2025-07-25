@@ -1,0 +1,23 @@
+{
+    "id": 240386,
+    "name": "冰海战记",
+    "image_path": "frontend/data/images/240386.jpg",
+    "points": 8.3,
+    "cost": 4,
+    "rarity": "SSR",
+    "description": "公元10世纪末期，以战争掠夺为生的最强民族·维京人席卷世界。\r\n被讴歌为最强战士的儿子·托尔芬，自小便生活在战场上，并向往着梦幻大陆“文兰（VINLAND）”——\r\n这是一个发生在激荡时代的，真正的战士物语。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗",
+        "历史"
+    ],
+    "date": "2019-07-07",
+    "rating_rank": 81,
+    "rating_score": 8.3,
+    "rating_total": 11263
+}

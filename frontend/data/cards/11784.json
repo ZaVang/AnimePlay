@@ -1,0 +1,23 @@
+{
+    "id": 11784,
+    "name": "On Your Mark",
+    "image_path": "frontend/data/images/11784.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "“ON YOUR MARK Ghibli实验剧场”（On Your Mark ジブリ実験劇場），简称\"ON YOUR MARK\"，是由宫崎骏在1995年为日本双人组合乐队恰克與飛鳥的同名歌曲制作的音乐短片。整个影片全长约6分40秒，除了音乐原声以外没有进行任何配音，于1995年07月15日与吉卜力工作室的另一作品《侧耳倾听》在日本当地合併上映。\r\n\r\nvia http://zh.wikipedia.org/zh/On_Your_Mark",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "科幻",
+        "剧场版",
+        "日本",
+        "原创",
+        "音乐"
+    ],
+    "date": "1995-07-15",
+    "rating_rank": 978,
+    "rating_score": 7.5,
+    "rating_total": 1027
+}

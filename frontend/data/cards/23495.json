@@ -1,0 +1,22 @@
+{
+    "id": 23495,
+    "name": "夏目友人帐 肆",
+    "image_path": "frontend/data/images/23495.jpg",
+    "points": 8.0,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "小さい頃から妖怪を見ることができた少年・夏目貴志。\r\n彼は、祖母レイコが妖怪を子分とする証にその名を書かせた「友人帳」を継ぎ、\r\n自称用心棒の妖怪・ニャンコ先生と共に、妖怪達にその名を返す日々。\r\nようやく手に入れた大切な場所で、友人達との深まる絆を感じながら、\r\n夏目は妖怪達との出会いや別れを繰り返していく…。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改"
+    ],
+    "date": "2012-01-02",
+    "rating_rank": 239,
+    "rating_score": 8.0,
+    "rating_total": 6093
+}

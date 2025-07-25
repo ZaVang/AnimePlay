@@ -1,0 +1,23 @@
+{
+    "id": 8474,
+    "name": "放浪男孩",
+    "image_path": "frontend/data/images/8474.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "想变成女生的男孩二鸟修一，在新转校的小学遇到帅气的女生高槻佳乃。最初修一一直压抑着想成为女生的心情，之后发现佳乃经常穿着男生学生服到远方城镇。彼此共享秘密的两人，修一穿着水手服、佳乃穿着男生学生服，一起到远方的城镇冒险。然而当二人升入中学后，新的人际关系以及青春期的烦恼给他们带来了新的问题。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2011-01-13",
+    "rating_rank": 512,
+    "rating_score": 7.7,
+    "rating_total": 2930
+}

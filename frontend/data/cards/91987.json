@@ -1,0 +1,23 @@
+{
+    "id": 91987,
+    "name": "摸索吧！部活剧 再来一个",
+    "image_path": "frontend/data/images/91987.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "原创",
+        "日常"
+    ],
+    "date": "2014-01-11",
+    "rating_rank": 848,
+    "rating_score": 7.5,
+    "rating_total": 936
+}

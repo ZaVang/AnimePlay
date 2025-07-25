@@ -1,0 +1,23 @@
+{
+    "id": 215618,
+    "name": "剧场版 悠哉日常大王 Vacation",
+    "image_path": "frontend/data/images/215618.jpg",
+    "points": 8.0,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "“旭丘分校”的学生只有5人。即使学年和性格都各不相同，也总是在四季变换中一同享受着乡村生活。某天，旭丘分校的众人在百货店的抽奖中抽到了特等奖冲绳旅行券。于是，大家利用暑假时间前往冲绳……",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "百合",
+        "剧场版",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2018-08-25",
+    "rating_rank": 233,
+    "rating_score": 8.0,
+    "rating_total": 3760
+}

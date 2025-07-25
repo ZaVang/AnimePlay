@@ -1,0 +1,21 @@
+{
+    "id": 78798,
+    "name": "第一神拳 Rising",
+    "image_path": "frontend/data/images/78798.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 25,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2013-10-05",
+    "rating_rank": 751,
+    "rating_score": 7.7,
+    "rating_total": 229
+}

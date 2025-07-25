@@ -1,0 +1,23 @@
+{
+    "id": 266301,
+    "name": "异兽魔都",
+    "image_path": "frontend/data/images/266301.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "欢迎光临，混沌。\r\n被魔法作用下头部变成了蜥蜴同时也完全丧失了记忆的男子·开曼。\r\n开曼为了变回人脸和找回记忆，和搭档的二阶堂一起在寻找着给自己下了这个魔法的魔法师。\r\n自己到底是谁……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2020-01-12",
+    "rating_rank": 703,
+    "rating_score": 7.6,
+    "rating_total": 3687
+}

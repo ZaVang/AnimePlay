@@ -1,0 +1,22 @@
+{
+    "id": 980,
+    "name": "黑礁 The Second Barrage",
+    "image_path": "frontend/data/images/980.jpg",
+    "points": 8.0,
+    "cost": 2,
+    "rarity": "R",
+    "description": "日本の商社マン岡島緑郎は、東南アジアへ出張中に、海賊まがいの運び屋「ブラックラグーン」のメンバーに誘拐される。しかし商社は機密保持の為、傭兵を使って人質の岡島ごと全てを殲滅しようとする！ 信頼をしていた会社にあっさり見捨てられた岡島は、その名も立場も捨て、ブラックラグーンの“ロック”として、紺碧の海を駆けることを決意する。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2006-10-02",
+    "rating_rank": 267,
+    "rating_score": 8.0,
+    "rating_total": 4667
+}

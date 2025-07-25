@@ -1,0 +1,22 @@
+{
+    "id": 4212,
+    "name": "机动武斗传G高达",
+    "image_path": "frontend/data/images/4212.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "未来世紀（FutureCentury, F.C.）60年、各国コロニー間の覇権をかけてガンダムファイト第13回大会が始まった。主人公 ドモン・カッシュもその1人として、地球をリングにして他の選手たちと闘う。\r\n\r\nしかし彼の真の目的は、祖国であるネオ・ジャパンを裏切り、アルティメットガンダム（デビルガンダム）を奪って失跡した兄、キョウジ・カッシュを探すということであった。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 49,
+    "synergy_tags": [
+        "机战",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "1994-04-01",
+    "rating_rank": 865,
+    "rating_score": 7.5,
+    "rating_total": 1061
+}

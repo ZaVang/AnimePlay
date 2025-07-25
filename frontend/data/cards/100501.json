@@ -1,0 +1,22 @@
+{
+    "id": 100501,
+    "name": "太空丹迪 第二季",
+    "image_path": "frontend/data/images/100501.jpg",
+    "points": 8.2,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2014-07-06",
+    "rating_rank": 136,
+    "rating_score": 8.2,
+    "rating_total": 3401
+}

@@ -1,0 +1,23 @@
+{
+    "id": 105255,
+    "name": "希德尼娅的骑士 第九惑星战役",
+    "image_path": "frontend/data/images/105255.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "　　奇居子に破壊された太陽系。人類の一部は、巨大なる宇宙船・シドニアで宇宙を旅する道を選んで約千年後。少年・谷風長道が、祖父の死を機に街へ出る。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "科幻",
+        "机战",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2015-04-10",
+    "rating_rank": 414,
+    "rating_score": 7.8,
+    "rating_total": 4020
+}

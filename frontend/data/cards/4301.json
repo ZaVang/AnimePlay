@@ -1,0 +1,22 @@
+{
+    "id": 4301,
+    "name": "星界的纹章",
+    "image_path": "frontend/data/images/4301.jpg",
+    "points": 7.8,
+    "cost": 1,
+    "rarity": "N",
+    "description": "自马汀（亚维语为马尔地纽，其官方语言——马汀语是由英文演化而来）行星出身的少年杰特，因缘际会下成为亚维贵族，在前往翔士修技馆就学以进入星界军服役的路上，认识了帝国王女拉斐尔，同时亚维人类帝国遭到了四国联合的挑战，在这场即将成为人类历史上最大也是最后的战争的开端，两人携手展开了一场孤立无援的小小战斗。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "小说改"
+    ],
+    "date": "1999-01-12",
+    "rating_rank": 520,
+    "rating_score": 7.8,
+    "rating_total": 630
+}

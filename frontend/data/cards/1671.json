@@ -1,0 +1,22 @@
+{
+    "id": 1671,
+    "name": "化物语",
+    "image_path": "frontend/data/images/1671.jpg",
+    "points": 8.4,
+    "cost": 4,
+    "rarity": "SSR",
+    "description": "所谓怪异——是因为世界上没有那种东西的存在。\r\n与生物有所不同——但与世界紧紧相连。\r\n故事主人公阿良良木历，因为知道了同班同学战场原的某个“秘密”，从此被卷入一连串的怪异事件中……。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 15,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "小说改"
+    ],
+    "date": "2009-07-03",
+    "rating_rank": 66,
+    "rating_score": 8.4,
+    "rating_total": 21886
+}

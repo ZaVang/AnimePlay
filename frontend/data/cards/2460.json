@@ -1,0 +1,21 @@
+{
+    "id": 2460,
+    "name": "搞笑漫画日和2",
+    "image_path": "frontend/data/images/2460.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "少年JUMP连载同名漫画改编动画第二季，首话，名侦探兔美的故事。\r\n大地监督作品，同作品首季被选为05年度日本文化厅媒体艺术节评审委员会推荐作品，大地监督曰，此片舍我其谁。\r\n",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2006-08-05",
+    "rating_rank": 532,
+    "rating_score": 7.7,
+    "rating_total": 3111
+}

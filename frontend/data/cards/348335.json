@@ -1,0 +1,22 @@
+{
+    "id": 348335,
+    "name": "平家物语",
+    "image_path": "frontend/data/images/348335.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "“祇园精舍钟声响，世间诸行总无常。沙罗双树花说法，盛极必衰是沧桑” \r\n平安末期。眼看平家一族将在权力、武力、财力等各方面极尽荣华。\r\n拥有看见亡者之眼的男人·平重盛，遇见了拥有看见未来之眼的少女·琵琶。少女预言道：“你们不久便要灭亡”\r\n由贵族社会转为武家社会——日本实现历史性变化的、动荡的15年拉开了序幕。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 11,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "历史",
+        "小说改"
+    ],
+    "date": "2022-01-12",
+    "rating_rank": 747,
+    "rating_score": 7.6,
+    "rating_total": 4210
+}

@@ -1,0 +1,22 @@
+{
+    "id": 9005,
+    "name": "龙珠Z",
+    "image_path": "frontend/data/images/9005.jpg",
+    "points": 8.2,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "龙珠Z（日文：ドラゴンボールZ，英文：DRAGON BALL Z）是指日本漫画家鸟山明的漫画《七龙珠》第195篇-第519篇，因为这期间鸟山明的漫画风格转为超激战，而且故事也和前194篇风格没有太大变化，因此由东映动画公司改编成为独立的动画片。题目中的\"Z\"代表着ZENKAI(日文\"全开\")之意。龙珠Z故事发生于《龙珠》后五年的世界，讲述孙悟空和同伴保卫地球的故事。 ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 291,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "1989-04-26",
+    "rating_rank": 144,
+    "rating_score": 8.2,
+    "rating_total": 3489
+}

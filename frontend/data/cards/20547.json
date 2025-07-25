@@ -1,0 +1,23 @@
+{
+    "id": 20547,
+    "name": "迷糊餐厅 第二季",
+    "image_path": "frontend/data/images/20547.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "wagnaria，2011年10月，再开业！\r\n官网地址：http://www.wagnaria.com/",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2011-10-01",
+    "rating_rank": 716,
+    "rating_score": 7.6,
+    "rating_total": 5444
+}

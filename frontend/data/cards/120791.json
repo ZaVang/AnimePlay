@@ -1,0 +1,21 @@
+{
+    "id": 120791,
+    "name": "银魂°",
+    "image_path": "frontend/data/images/120791.jpg",
+    "points": 8.2,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 51,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2015-04-08",
+    "rating_rank": 134,
+    "rating_score": 8.2,
+    "rating_total": 4193
+}

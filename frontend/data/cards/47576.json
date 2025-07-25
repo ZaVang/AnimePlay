@@ -1,0 +1,21 @@
+{
+    "id": 47576,
+    "name": "银魂' 延长战",
+    "image_path": "frontend/data/images/47576.jpg",
+    "points": 8.3,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "内容是冷饭“よりぬき銀魂さん”精选集重播加新作动画。\r\n",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2012-10-04",
+    "rating_rank": 103,
+    "rating_score": 8.3,
+    "rating_total": 4219
+}

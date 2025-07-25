@@ -1,0 +1,23 @@
+{
+    "id": 165738,
+    "name": "悠哉日常大王 Repeat OAD",
+    "image_path": "frontend/data/images/165738.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "单行本第10卷同捆OAD。",
+    "type": 2,
+    "platform": "OVA",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "百合",
+        "日本",
+        "OVA",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2016-09-23",
+    "rating_rank": 519,
+    "rating_score": 7.7,
+    "rating_total": 2195
+}

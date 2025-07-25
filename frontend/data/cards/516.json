@@ -1,0 +1,22 @@
+{
+    "id": 516,
+    "name": "机动战舰抚子号 暗黑王子",
+    "image_path": "frontend/data/images/516.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "地球和木连结盟后，宇宙总算恢复和平。天河明人和御统由利加终于结婚了，但是在新婚旅行中，他们因乘坐的飞机失事爆炸而遇难……然后，三年过去了。八号殖民地「白雪公主」被人袭击了，以星野琉璃为舰长的Nadesico B被委派作出调查。但是琉璃与Nadesico 一行如何应付名为「火星的继任者」标榜著新的秩序的对手吗？",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "剧场版",
+        "原创",
+        "日本",
+        "科幻"
+    ],
+    "date": "1998-08-08",
+    "rating_rank": 337,
+    "rating_score": 7.9,
+    "rating_total": 1225
+}

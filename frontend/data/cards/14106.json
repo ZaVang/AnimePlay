@@ -1,0 +1,21 @@
+{
+    "id": 14106,
+    "name": "苍穹之法芙娜 RIGHT OF LEFT",
+    "image_path": "frontend/data/images/14106.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "故事发生在『苍穹之法芙娜』的一年前，不断隐匿自己从而躲避人类军和Festum追击的龙宫岛，即将遇上被Festum发现的危机。\r\n尚未做好战斗准备的龙宫岛，为了回避被Festum发现的危机决定实施「L计划」。那是将岛的一部分、亚尔维斯的左翼部分作为L舰分离并开展为期2个月的远航，让敌人误以为这是龙宫岛，从而保护本岛。\r\n就这样，将陵僚与生驹祐未等8名少年少女，乘上L舰，并驾驶着对Festum兵器FAFNER「Titan-model」投身于与Festum的残酷战斗中……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2005-12-29",
+    "rating_rank": 500,
+    "rating_score": 7.8,
+    "rating_total": 1150
+}

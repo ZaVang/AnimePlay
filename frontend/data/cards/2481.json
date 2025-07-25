@@ -1,0 +1,23 @@
+{
+    "id": 2481,
+    "name": "宇宙骑士BLADE",
+    "image_path": "frontend/data/images/2481.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "        联合地球历192年，神秘宇宙生命体侵略地球。外宇宙开发基地意外的搭救了一个从天而降的奇怪人类，而他居然可以变身为身着坚硬盔甲的战士和怪兽进行抗衡。濒临灭亡的人类还是抓住了这根救命稻草，天外来客以D-boy（Dangerous boy）的身份在外宇宙开发基地留了下来，经历多次拯救地球的战斗后，人类把他称为宇宙骑士。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 49,
+    "synergy_tags": [
+        "科幻",
+        "机战",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "1992-02-18",
+    "rating_rank": 323,
+    "rating_score": 7.9,
+    "rating_total": 774
+}

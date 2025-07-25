@@ -1,0 +1,23 @@
+{
+  "functions": {
+    "api/index.py": {
+      "runtime": "python3.10"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/frontend/$1"
+    }
+  ],
+  "build": {
+    "env": {
+      "PYTHONPATH": "/var/task"
+    }
+  }
+}
+  

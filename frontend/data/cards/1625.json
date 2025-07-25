@@ -1,0 +1,22 @@
+{
+    "id": 1625,
+    "name": "海马",
+    "image_path": "frontend/data/images/1625.jpg",
+    "points": 8.0,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "由于记忆可以被储存，肉体的死亡不再具有意义。由于记忆可以在不同身体中转移，发生许多社会现象，像是记忆的买卖、违法的记忆改造、偷取他人的记忆。社会混乱，进步停滞。丧失自己记忆的主角凯巴在这样的社会里寻找自己原来的记忆。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2008-04-10",
+    "rating_rank": 237,
+    "rating_score": 8.0,
+    "rating_total": 2160
+}

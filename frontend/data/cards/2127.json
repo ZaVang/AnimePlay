@@ -1,0 +1,21 @@
+{
+    "id": 2127,
+    "name": "AIR 夏季篇",
+    "image_path": "frontend/data/images/2127.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "在电视动画系列准备播放最后动画结束的第十三话时，京都动画另外要求原本系列动画制作人员以及角色配音人员另外推出特别篇“AIR in Summer”，在《山路～mountain path～》（やまみち～mountain path～）与《天地～universe～》（あめつち～universe～）。其中尽管在《AIR》的电视动画版本中已经有提到“Summer篇”的剧情，但是实际上动画的故事内容仍然比游戏的故事内容删减许多。因此这2话的内容中便是直接从原先动画第八话开始，扩充原本于第九话和第十话的“SUMMER篇”角色故事部分。内容则是以柳也作为主要观看事件的人物，描述在与神奈以及里叶出发去寻找八百比丘尼的旅途中所发生的故事。特别篇的动画在经过更加精细的制作后，于2005年8月28日和9月4日同样于在BS-i上首次播出。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 2,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "游戏改"
+    ],
+    "date": "2005-08-28",
+    "rating_rank": 446,
+    "rating_score": 7.8,
+    "rating_total": 4099
+}

@@ -1,0 +1,22 @@
+{
+    "id": 75533,
+    "name": "剧场版 空之境界",
+    "image_path": "frontend/data/images/75533.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "    TV动画《剧场版 空之境界》是剧场动画《剧场版 空之境界》的再构成版本，将剧场动画全7章中，以两仪式和黑桐干也为中心的故事提炼出来，将原本倒叙、插叙的章节调整为正叙后，用TV动画的形式播出。 ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "小说改"
+    ],
+    "date": "2013-07-05",
+    "rating_rank": 591,
+    "rating_score": 7.7,
+    "rating_total": 3475
+}

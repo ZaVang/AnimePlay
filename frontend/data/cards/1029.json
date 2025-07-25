@@ -1,0 +1,22 @@
+{
+    "id": 1029,
+    "name": "悠久之翼2",
+    "image_path": "frontend/data/images/1029.jpg",
+    "points": 8.1,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "ef2动画将以「ef - the latter tale.」为主线陈述，\r\n平行描写两个苦涩的恋爱故事，\r\n饱富抒情性，相互融合的两个恋爱故事。\r\n\r\n能听到吗？\r\n——那真实的旋律……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "游戏改"
+    ],
+    "date": "2008-10-06",
+    "rating_rank": 179,
+    "rating_score": 8.1,
+    "rating_total": 5428
+}

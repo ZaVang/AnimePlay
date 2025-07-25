@@ -1,0 +1,21 @@
+{
+    "id": 4019,
+    "name": "四叠半神话大系",
+    "image_path": "frontend/data/images/4019.jpg",
+    "points": 8.6,
+    "cost": 5,
+    "rarity": "HR",
+    "description": "身为大三学生的“我”，梦想着多采多姿的校园生活却过了两年毫无意义的生活。虽然入学时在众多社团中选择了网球社，但是因为无法与人对话而失去容身之处。这时，他遇上有同样际遇的小津，两人组成了在社团内外四处妨碍人恋爱、恶名昭彰的“黑色丘比特”。没有遇到小津的话肯定能与黑发少女过着缤纷的人生！如果那时候选了其他社团……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 11,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "小说改"
+    ],
+    "date": "2010-04-22",
+    "rating_rank": 33,
+    "rating_score": 8.6,
+    "rating_total": 13479
+}

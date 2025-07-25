@@ -1,0 +1,22 @@
+{
+    "id": 73083,
+    "name": "钻石王牌",
+    "image_path": "frontend/data/images/73083.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "        国中时期最后的大赛，率领即将被废止的赤城中学参赛，却在第一回战中投出暴投而输掉比赛的投手泽村荣纯，本来决定要与国中时期的朋友一同考入故乡的高中，却被东京的棒球名校青道高中挖角，并在那里遇见了天才捕手御幸一也，他的人生就此改变…",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 75,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "运动",
+        "漫画改"
+    ],
+    "date": "2013-10-06",
+    "rating_rank": 741,
+    "rating_score": 7.6,
+    "rating_total": 1206
+}

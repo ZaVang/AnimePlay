@@ -1,0 +1,22 @@
+{
+    "id": 99748,
+    "name": "美妙天堂",
+    "image_path": "frontend/data/images/99748.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "某一天，一封招待信送到了一群妙龄少女的手中。这个招待信可不一般，那是融合了时尚、舞蹈、音乐等女孩子梦想的“PuRiPaRa”世界入场券。在那儿，每天都可以参加唱歌、跳舞、时尚比拼的竞赛， 而比赛实况也将通过电视和网络向全世界播出。如今顶级的偶像都是从“PuRiPaRa”当中诞生的。\r\n\r\n主人公·啦啦和她的朋友们也对于“PuRiPaRa”的世界充满兴趣。不过啦啦的学校却禁止小学生参加这些活动……然而，因为一次奇妙的契机，啦啦第一次走进这个传说中的世界，结果还登上了比赛的舞台。那么啦啦的“PuRiPaRa”出道演出究竟会如何呢！？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 38,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "子供向"
+    ],
+    "date": "2014-07-05",
+    "rating_rank": 725,
+    "rating_score": 7.6,
+    "rating_total": 354
+}

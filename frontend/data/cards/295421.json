@@ -1,0 +1,22 @@
+{
+    "id": 295421,
+    "name": "排球少年 TO THE TOP 第二期",
+    "image_path": "frontend/data/images/295421.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "运动",
+        "漫画改"
+    ],
+    "date": "2020-10-02",
+    "rating_rank": 588,
+    "rating_score": 7.7,
+    "rating_total": 2705
+}

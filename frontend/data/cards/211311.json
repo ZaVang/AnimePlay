@@ -1,0 +1,22 @@
+{
+    "id": 211311,
+    "name": "恶魔人 crybaby",
+    "image_path": "frontend/data/images/211311.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "随着恶魔觉醒，人类世界陷入混乱。性格温柔的男孩与恶魔合体，在神秘好友飞鸟了的指引下，卷入一场残酷、堕落的对抗邪恶之战。",
+    "type": 2,
+    "platform": "WEB",
+    "episodes_for_hangup": 10,
+    "synergy_tags": [
+        "日本",
+        "漫画改",
+        "战斗",
+        "WEB"
+    ],
+    "date": "2018-01-05",
+    "rating_rank": 382,
+    "rating_score": 7.8,
+    "rating_total": 10641
+}

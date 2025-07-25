@@ -1,0 +1,23 @@
+{
+    "id": 315574,
+    "name": "赛马娘 Pretty Derby 第二季",
+    "image_path": "frontend/data/images/315574.jpg",
+    "points": 8.4,
+    "cost": 4,
+    "rarity": "SSR",
+    "description": "“我要和你一起实现梦想！”\r\n这是从异世界传承着光辉姓名与竞跑能力的“赛马娘”们，长久以来和人类共存的世界的故事。\r\n马娘目白麦昆背负起名门的声誉，向“天皇赏”连霸发起挑战。马娘东海帝皇憧憬着赛马史上首屈一指的马娘鲁铎象征，剑指“皋月赏”、“日本德比”、“菊花赏”三连冠。二人既是对手，也是伙伴。她们一同怀抱着梦想，向着“闪光系列赛”的优胜，全力奔跑！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "运动",
+        "游戏改"
+    ],
+    "date": "2021-01-04",
+    "rating_rank": 72,
+    "rating_score": 8.4,
+    "rating_total": 15314
+}

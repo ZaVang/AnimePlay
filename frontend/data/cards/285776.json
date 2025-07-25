@@ -1,0 +1,23 @@
+{
+    "id": 285776,
+    "name": "异度侵入",
+    "image_path": "frontend/data/images/285776.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "利用检测杀意的系统“罔象女”搜查犯罪事件的组织，通称“仓”。\r\n然后，神探·酒井户身为“罔象女”的驾驶员进入犯人的深层心理“杀意世界（井）”，对事件进行推理。\r\n他不断追寻着频繁发生、谜团重重的凶恶事件，以及在其中若隐若现的连续杀人鬼制造者“约翰·沃克”的影子。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "悬疑",
+        "TV",
+        "日本",
+        "原创",
+        "推理"
+    ],
+    "date": "2020-01-05",
+    "rating_rank": 937,
+    "rating_score": 7.5,
+    "rating_total": 13629
+}

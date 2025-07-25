@@ -1,0 +1,23 @@
+{
+    "id": 187276,
+    "name": "游戏人生 零",
+    "image_path": "frontend/data/images/187276.jpg",
+    "points": 8.1,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "那是个战争和暴力皆被神所禁止，由“游戏”决定一切的「盘上世界」。\r\n战无不胜的兄妹玩家，空和白降临这个世界的六千余年前，有着诞生悠久大战，开天杀星的少年和少女。\r\n这是影响至今的最古老的神话。\r\n那不曾被人传颂的故事，现在拉开帷幕……。",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "剧场版",
+        "日本",
+        "奇幻",
+        "战斗",
+        "小说改"
+    ],
+    "date": "2017-07-15",
+    "rating_rank": 168,
+    "rating_score": 8.1,
+    "rating_total": 16209
+}

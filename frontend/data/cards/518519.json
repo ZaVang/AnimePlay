@@ -1,0 +1,21 @@
+{
+    "id": 518519,
+    "name": "航海王：粉丝来信",
+    "image_path": "frontend/data/images/518519.jpg",
+    "points": 8.5,
+    "cost": 5,
+    "rarity": "HR",
+    "description": "故事讲述了顶上战争两年后的香波迪群岛上，娜美的小迷妹展开的一场小小冒险…… 本作改编自航海王官方外传小说《航海王 novel 草帽故事集》，小说描述了以一般人的角度来看待草帽海贼团成员们的短篇故事。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "小说改"
+    ],
+    "date": "2024-10-20",
+    "rating_rank": 42,
+    "rating_score": 8.5,
+    "rating_total": 3285
+}
