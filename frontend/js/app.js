@@ -833,7 +833,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                 <div class="flex justify-between p-2 bg-blue-900 rounded">${playerStatus}</div>
                 
                 <!-- Player Hand -->
-                <div class="mt-4 p-2 bg-gray-900 rounded min-h-[10rem]">
+                <div class="mt-4 p-2 bg-gray-900 rounded min-h-[11rem]">
                     <div id="player-hand-cards" class="flex gap-2 justify-center mt-2">
                         ${player.hand.map((c, i) => createBattleCard(c, 'player-hand', i)).join('')}
                     </div>
@@ -869,10 +869,14 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     function createBattleCard(card, owner, handIndex = -1) {
         const isSelected = handIndex === selectedHandCardIndex;
-        const element = document.createElement('div');
-        element.className = `battle-card w-24 h-32 bg-indigo-800 p-2 rounded text-xs ${isSelected ? 'border-4 border-yellow-400' : ''}`;
-        element.innerHTML = card.name;
-        return element;
+        return `
+            <div class="battle-card w-24 h-36 relative group ${isSelected ? 'border-4 border-yellow-400' : ''}">
+                <img src="${card.image_path}" class="w-full h-full object-cover rounded-lg" onerror="this.src='https://placehold.co/96x144/e2e8f0/334155?text=图片丢失';">
+                <div class="absolute top-1 left-1 bg-black bg-opacity-70 text-white text-base font-bold w-7 h-7 flex items-center justify-center rounded-full">${card.cost}</div>
+                <div class="absolute top-1 right-1 bg-black bg-opacity-70 text-white text-base font-bold w-7 h-7 flex items-center justify-center rounded-full">${card.points}</div>
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white text-center text-xs font-bold p-1 truncate">${card.name}</div>
+            </div>
+        `;
     }
     function createCardElement(cardData, context, options = {}) {
         const { card, count } = cardData;
