@@ -1,3 +1,13 @@
+function getCardMatchType(card1, card2) {
+    if (!card1 || !card2) return "different";
+    if (card1.id === card2.id) return "sameCard";
+    const tags1 = new Set(card1.synergy_tags || []);
+    const tags2 = new Set(card2.synergy_tags || []);
+    for (const tag of tags1) {
+        if (tags2.has(tag)) return "sameTag";
+    }
+    return "different";
+}
 
 document.addEventListener('DOMContentLoaded', async function() {
     // --- Use config from game_config.js ---
@@ -123,14 +133,6 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     async function saveState(showAlert = false) {
         if (!currentUser) return;
-
-        // --- Deck Validation ---
-        const activeDeck = playerState.decks[playerState.activeDeckName] || [];
-        if (activeDeck.length !== 20) {
-            alert(`错误：卡组 “${playerState.activeDeckName}” 必须正好有20张卡，当前为 ${activeDeck.length} 张。`);
-            return;
-        }
-        // --- End Validation ---
 
         const payload = {
             collection: Array.from(playerCollection.entries()).map(([id, data]) => [id, data.count]),
@@ -389,7 +391,9 @@ document.addEventListener('DOMContentLoaded', async function() {
         Object.keys(playerState.decks).forEach(name => {
             const option = document.createElement('option');
             option.value = name;
-            option.textContent = name;
+            const deckSize = playerState.decks[name].length;
+            const isValidSize = deckSize === 20;
+            option.textContent = `${name} (${deckSize}/20)${isValidSize ? ' ✓' : ''}`;
             if (name === playerState.activeDeckName) option.selected = true;
             deckSelector.appendChild(option);
         });
@@ -452,7 +456,7 @@ document.addEventListener('DOMContentLoaded', async function() {
             alert("不能删除唯一的卡组！");
             return;
         }
-        if (confirm(`确定要删除卡组 “${deckName}” 吗？`)) {
+        if (confirm(`确定要删除卡组 " ${deckName} " 吗？`)) {
             delete playerState.decks[deckName];
             playerState.activeDeckName = Object.keys(playerState.decks)[0];
             renderDeckAndCollection();
@@ -504,12 +508,30 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     function renderBattleSetup() {
         ui.battle.deckSelector.innerHTML = '';
+        let hasValidDeck = false;
+        
         Object.keys(playerState.decks).forEach(name => {
-            const option = document.createElement('option');
-            option.value = name;
-            option.textContent = `${name} (${playerState.decks[name].length} / ${deckBuilding.maxCards} cards)`;
-            ui.battle.deckSelector.appendChild(option);
+            const deckSize = playerState.decks[name].length;
+            if (deckSize === 20) {
+                hasValidDeck = true;
+                const option = document.createElement('option');
+                option.value = name;
+                option.textContent = `${name} (20 cards)`;
+                ui.battle.deckSelector.appendChild(option);
+            }
         });
+        
+        if (!hasValidDeck) {
+            ui.battle.deckSelector.innerHTML = '<option value="" disabled selected>没有合法的卡组（需要正好20张卡）</option>';
+            ui.battle.startBtn.disabled = true;
+            ui.battle.startBtn.classList.add('opacity-50', 'cursor-not-allowed');
+        } else {
+            ui.battle.startBtn.disabled = false;
+            ui.battle.startBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+        }
+        
+        // Correctly assign the event listener here, where the button is guaranteed to exist.
+        ui.battle.startBtn.onclick = startBattle;
     }
 
     // --- Battle Logic V4.0 ---
@@ -520,8 +542,8 @@ document.addEventListener('DOMContentLoaded', async function() {
         const selectedDeckName = ui.battle.deckSelector.value;
         const activeDeckIds = playerState.decks[selectedDeckName] || [];
 
-        if (activeDeckIds.length < 10) { // Example validation
-            alert(`卡组 “${selectedDeckName}” 至少需要10张卡！`); 
+        if (activeDeckIds.length !== 20) {
+            alert(`卡组 " ${selectedDeckName} " 必须正好有20张卡！`); 
             return; 
         }
         
@@ -533,7 +555,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         battleState = {
             turn: 1,
             phase: 'player_attack', // player_attack, player_defend, ai_attack, ai_defend
-            log: ["战斗开始！"],
+            log: [],
             attacker: 'player',
             defender: 'ai',
             combo: { count: 0, fatigue: 0 },
@@ -543,6 +565,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                 tpLimit: window.GAME_CONFIG.battle.initialTP,
                 hand: [],
                 deck: [...activeDeckIds].map(id => ({ ...allCards.find(c => c.id === id) })),
+                discard: [], // 添加弃牌堆
                 states: []
             },
             ai: {
@@ -550,10 +573,12 @@ document.addEventListener('DOMContentLoaded', async function() {
                 tp: window.GAME_CONFIG.battle.initialTP,
                 tpLimit: window.GAME_CONFIG.battle.initialTP,
                 hand: [],
-                deck: [...aiOpponent.deck].map(id => ({ ...allCards.find(c => c.id === id) })),
+                deck: AI_DECK_GENERATOR.generateDeck(allCards).map(id => ({ ...allCards.find(c => c.id === id) })),
+                discard: [], // 添加弃牌堆
                 states: []
             },
-            currentAttack: null // To hold info about the ongoing attack
+            currentAttack: null, // To hold info about the ongoing attack
+            lastDefense: null // 添加最后防守信息
         };
 
         // --- Initial Draw ---
@@ -562,7 +587,71 @@ document.addEventListener('DOMContentLoaded', async function() {
             drawCard('ai');
         }
 
+        // 添加初始日志
+        addBattleLog("=== 战斗开始 ===", 'system');
+        addBattleLog("你的回合开始", 'turn');
+
         renderBattleUI();
+    }
+
+    function addBattleLog(message, type = 'info') {
+        const logEntry = {
+            message,
+            type,
+            timestamp: new Date()
+        };
+        battleState.log.push(logEntry);
+        
+        // 保持日志数量在合理范围内
+        if (battleState.log.length > 100) {
+            battleState.log.shift();
+        }
+    }
+
+    function formatBattleLog(logEntry) {
+        if (typeof logEntry === 'string') {
+            // 兼容旧的字符串格式
+            return `<div class="text-gray-300 py-1">${logEntry}</div>`;
+        }
+        
+        const { message, type } = logEntry;
+        let colorClass = 'text-gray-300';
+        let prefix = '';
+        
+        switch(type) {
+            case 'attack':
+                colorClass = 'text-yellow-400';
+                prefix = '⚔️ ';
+                break;
+            case 'defend':
+                colorClass = 'text-blue-400';
+                prefix = '🛡️ ';
+                break;
+            case 'damage':
+                colorClass = 'text-red-400';
+                prefix = '💥 ';
+                break;
+            case 'heal':
+                colorClass = 'text-green-400';
+                prefix = '💚 ';
+                break;
+            case 'turn':
+                colorClass = 'text-purple-400 font-bold';
+                prefix = '🔄 ';
+                break;
+            case 'result':
+                colorClass = 'text-orange-400 font-bold';
+                prefix = '📊 ';
+                break;
+            case 'system':
+                colorClass = 'text-gray-500 italic';
+                prefix = 'ℹ️ ';
+                break;
+            default:
+                colorClass = 'text-gray-300';
+        }
+        
+        return `<div class="${colorClass} py-1 border-b border-gray-800">${prefix}${message}</div>`;
     }
 
     function drawCard(who) {
@@ -574,6 +663,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     }
 
     function getCardMatchType(card1, card2) {
+        if (!card1 || !card2) return "different";
         if (card1.id === card2.id) return "sameCard";
         const tags1 = new Set(card1.synergy_tags || []);
         const tags2 = new Set(card2.synergy_tags || []);
@@ -592,7 +682,9 @@ document.addEventListener('DOMContentLoaded', async function() {
         const player = battleState.player;
         const card = player.hand[selectedHandCardIndex];
         const action = window.GAME_CONFIG.battle.actions[type];
-        const totalCost = card.cost + action.cost;
+        
+        // 防守回合只消耗行动cost，不消耗卡牌基础cost
+        const totalCost = battleState.phase === 'player_defend' ? action.cost : card.cost + action.cost;
 
         if (player.tp < totalCost) {
             alert("TP不足！");
@@ -610,7 +702,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                 attackType: action.name
             };
             battleState.phase = 'ai_defend';
-            battleState.log.push(`你使用 [${playedCard.name}] 发动了 [${action.name}]！`);
+            addBattleLog(`你使用 [${playedCard.name}] 发动了 [${action.name}]！`, 'attack');
             setTimeout(aiDefenseAction, 1000);
         } else if (battleState.phase === 'player_defend') {
             const defense = {
@@ -618,61 +710,100 @@ document.addEventListener('DOMContentLoaded', async function() {
                 defendCard: playedCard,
                 defendType: action.name
             };
+            // 将防守卡加入弃牌堆
+            battleState.player.discard.push(playedCard);
             resolveBattle(battleState.currentAttack, defense);
         }
     }
 
     function aiAttackAction() {
-        // Simplified AI attack logic
+        const decision = AI_PLAYER.makeDecision(battleState);
         const ai = battleState.ai;
-        if (ai.hand.length === 0) {
+
+        if (decision.action === 'end_turn') {
             endAiTurn();
             return;
         }
-        const card = ai.hand[0];
-        const action = window.GAME_CONFIG.battle.actions.friendly; // AI always uses friendly for now
-        if (ai.tp >= card.cost + action.cost) {
-            ai.tp -= (card.cost + action.cost);
-            battleState.currentAttack = {
-                attacker: 'ai',
-                attackCard: card,
-                attackType: action.name
-            };
-            ai.hand.splice(0, 1);
-            battleState.phase = 'player_defend';
-            battleState.log.push(`AI 使用 [${card.name}] 发动了 [${action.name}]！`);
-            renderBattleUI();
-        } else {
-            endAiTurn();
-        }
+
+        const action = window.GAME_CONFIG.battle.actions[decision.action];
+        const card = decision.card;
+        
+        ai.tp -= (card.cost + action.cost);
+        battleState.currentAttack = {
+            attacker: 'ai',
+            attackCard: card,
+            attackType: action.name
+        };
+        
+        const handIndex = ai.hand.findIndex(c => c.id === card.id);
+        if(handIndex > -1) ai.hand.splice(handIndex, 1);
+
+        battleState.phase = 'player_defend';
+        addBattleLog(`AI 使用 [${card.name}] 发动了 [${action.name}]！`, 'attack');
+        renderBattleUI();
     }
 
     function aiDefenseAction() {
-        // Simplified AI defense logic
+        const decision = AI_PLAYER.makeDefenseDecision(battleState);
         const ai = battleState.ai;
-        if (ai.hand.length === 0) {
-            // No cards to defend with, must agree
-            resolveBattle(battleState.currentAttack, { defender: 'ai', defendCard: null, defendType: '赞同' });
-            return;
+        const action = window.GAME_CONFIG.battle.actions[decision.action];
+        const card = decision.card;
+
+        if (card) {
+            // 防守回合只消耗行动cost，不消耗卡牌基础cost
+            ai.tp -= action.cost;
+            const handIndex = ai.hand.findIndex(c => c.id === card.id);
+            if(handIndex > -1) ai.hand.splice(handIndex, 1);
         }
-        const card = ai.hand[0];
-        const action = window.GAME_CONFIG.battle.actions.agree; // AI always agrees for now
-        if (ai.tp >= card.cost + action.cost) {
-            ai.tp -= (card.cost + action.cost);
-            const defense = {
-                defender: 'ai',
-                defendCard: card,
-                defendType: action.name
-            };
-            ai.hand.splice(0, 1);
-            resolveBattle(battleState.currentAttack, defense);
+
+        const defense = {
+            defender: 'ai',
+            defendCard: card,
+            defendType: action.name
+        };
+        
+        // 保存防守信息用于显示
+        battleState.lastDefense = defense;
+        
+        // 添加防守日志
+        if (card) {
+            addBattleLog(`AI 使用 [${card.name}] 进行 [${action.name}]！`, 'defend');
+            // 将防守卡加入弃牌堆
+            battleState.ai.discard.push(card);
         } else {
-            resolveBattle(battleState.currentAttack, { defender: 'ai', defendCard: null, defendType: '赞同' });
+            addBattleLog(`AI 选择了 [${action.name}]（没有出牌）`, 'defend');
         }
+        
+        // 更新UI显示AI的防守卡
+        renderBattleUI();
+        
+        // 延迟后进行结算
+        setTimeout(() => resolveBattle(battleState.currentAttack, defense), 1000);
+    }
+
+    function showBattleResultBubble(message, duration = 3000) {
+        const battlefield = document.querySelector('#battle-arena-container .bg-black');
+        if (!battlefield) return;
+        
+        // 创建气泡元素
+        const bubble = document.createElement('div');
+        bubble.className = 'absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-yellow-400 text-black font-bold px-6 py-3 rounded-full shadow-lg z-50 animate-bounce';
+        bubble.innerHTML = `
+            <div class="text-lg">${message}</div>
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-yellow-400"></div>
+        `;
+        
+        battlefield.style.position = 'relative';
+        battlefield.appendChild(bubble);
+        
+        // 自动移除
+        setTimeout(() => {
+            bubble.remove();
+        }, duration);
     }
 
     function resolveBattle(attack, defense) {
-        const matchType = defense.defendCard ? getCardMatchType(attack.attackCard, defense.defendCard) : 'different';
+        const matchType = getCardMatchType(attack.attackCard, defense.defendCard);
         const attackTypeKey = attack.attackType === '友好安利' ? 'friendly' : 'harsh';
         const defenseTypeKey = defense.defendType === '赞同' ? 'agree' : 'disagree';
 
@@ -681,29 +812,60 @@ document.addEventListener('DOMContentLoaded', async function() {
         const attacker = battleState[attack.attacker];
         const defender = battleState[defense.defender];
 
-        attacker.prestige += result.prestige[0];
-        defender.prestige += result.prestige[1];
-        attacker.tp += result.tp[0];
-        defender.tp += result.tp[1];
-        for(let i=0; i<result.draw[0]; i++) drawCard(attack.attacker);
-        for(let i=0; i<result.draw[1]; i++) drawCard(defense.defender);
-
-        battleState.log.push(result.log);
-        battleState.log.push(`> ${attack.attacker === 'player' ? '你' : 'AI'} 声望 ${result.prestige[0] >= 0 ? '+' : ''}${result.prestige[0]}, ${defense.defender === 'player' ? '你' : 'AI'} 声望 ${result.prestige[1] >= 0 ? '+' : ''}${result.prestige[1]}`);
-        battleState.currentAttack = null;
-
-        if (attacker.prestige <= 0 || defender.prestige <= 0 || attacker.prestige >= window.GAME_CONFIG.battle.victoryPrestige || defender.prestige >= window.GAME_CONFIG.battle.victoryPrestige) {
-            endBattle();
-        } else {
-            // Continue turn or switch
-            if (battleState.attacker === 'player') {
-                battleState.phase = 'player_attack';
+        // 显示结果气泡
+        showBattleResultBubble(result.log);
+        
+        // 慢速结算动画
+        let delay = 1000; // 等待气泡显示
+        
+        // 声望变化
+        setTimeout(() => {
+            attacker.prestige += result.prestige[0];
+            defender.prestige += result.prestige[1];
+            addBattleLog(result.log, 'result');
+            renderBattleUI();
+        }, delay);
+        
+        delay += 500;
+        
+        // TP变化
+        setTimeout(() => {
+            attacker.tp += result.tp[0];
+            defender.tp += result.tp[1];
+            addBattleLog(`${attack.attacker === 'player' ? '你' : 'AI'} 声望 ${result.prestige[0] >= 0 ? '+' : ''}${result.prestige[0]}, ${defense.defender === 'player' ? '你' : 'AI'} 声望 ${result.prestige[1] >= 0 ? '+' : ''}${result.prestige[1]}`, 'damage');
+            renderBattleUI();
+        }, delay);
+        
+        delay += 500;
+        
+        // 抽牌
+        setTimeout(() => {
+            for(let i=0; i<result.draw[0]; i++) drawCard(attack.attacker);
+            for(let i=0; i<result.draw[1]; i++) drawCard(defense.defender);
+            
+            // 将攻击卡加入弃牌堆
+            battleState[attack.attacker].discard.push(attack.attackCard);
+            
+            battleState.currentAttack = null;
+            battleState.lastDefense = null;
+            renderBattleUI();
+        }, delay);
+        
+        delay += 500;
+        
+        // 结算完成后的处理
+        setTimeout(() => {
+            if (attacker.prestige <= 0 || defender.prestige <= 0 || attacker.prestige >= window.GAME_CONFIG.battle.victoryPrestige || defender.prestige >= window.GAME_CONFIG.battle.victoryPrestige) {
+                endBattle();
             } else {
-                // AI has finished its attack, now it's player's turn
-                endAiTurn();
+                if (battleState.attacker === 'player') {
+                    battleState.phase = 'player_attack';
+                } else {
+                    endAiTurn();
+                }
             }
-        }
-        renderBattleUI();
+            renderBattleUI();
+        }, delay);
     }
 
     function endPlayerTurn() {
@@ -718,65 +880,51 @@ document.addEventListener('DOMContentLoaded', async function() {
         drawCard('player');
         drawCard('ai');
 
-        battleState.log.push(`你的回合结束，轮到AI行动...`);
+        addBattleLog(`回合 ${battleState.turn}：AI的回合开始`, 'turn');
         setTimeout(aiAttackAction, 1000);
-    }
-
-    function aiAttackAction() {
-        // Simplified AI attack logic
-        const ai = battleState.ai;
-        if (ai.hand.length === 0) {
-            endAiTurn();
-            return;
-        }
-        const card = ai.hand[0];
-        const action = window.GAME_CONFIG.battle.actions.friendly; // AI always uses friendly for now
-        if (ai.tp >= card.cost + action.cost) {
-            ai.tp -= (card.cost + action.cost);
-            battleState.currentAttack = {
-                attacker: 'ai',
-                attackCard: card,
-                attackType: action.name
-            };
-            ai.hand.splice(0, 1);
-            battleState.phase = 'player_defend';
-            battleState.log.push(`AI 使用 [${card.name}] 发动了 [${action.name}]！`);
-            renderBattleUI();
-        } else {
-            endAiTurn();
-        }
-    }
-
-    function aiDefenseAction() {
-        // Simplified AI defense logic
-        const ai = battleState.ai;
-        if (ai.hand.length === 0) {
-            // No cards to defend with, must agree
-            resolveBattle(battleState.currentAttack, { defender: 'ai', defendCard: null, defendType: '赞同' });
-            return;
-        }
-        const card = ai.hand[0];
-        const action = window.GAME_CONFIG.battle.actions.agree; // AI always agrees for now
-        if (ai.tp >= card.cost + action.cost) {
-            ai.tp -= (card.cost + action.cost);
-            const defense = {
-                defender: 'ai',
-                defendCard: card,
-                defendType: action.name
-            };
-            ai.hand.splice(0, 1);
-            resolveBattle(battleState.currentAttack, defense);
-        } else {
-            resolveBattle(battleState.currentAttack, { defender: 'ai', defendCard: null, defendType: '赞同' });
-        }
     }
 
     function endAiTurn() {
         battleState.attacker = 'player';
         battleState.defender = 'ai';
-        battleState.log.push("AI回合结束，轮到你行动...");
+        addBattleLog("你的回合开始", 'turn');
         battleState.phase = 'player_attack';
         renderBattleUI();
+    }
+
+    function endBattle() {
+        let resultText = battleState.player.prestige > battleState.ai.prestige ? '你胜利了！' : '你失败了...';
+        if (battleState.player.prestige <= 0) resultText = '你失败了...';
+        if (battleState.ai.prestige <= 0) resultText = '你胜利了！';
+        if (battleState.player.prestige >= window.GAME_CONFIG.battle.victoryPrestige) resultText = '你胜利了！';
+        if (battleState.ai.prestige >= window.GAME_CONFIG.battle.victoryPrestige) resultText = '你失败了...';
+
+        ui.battle.resultModal.innerHTML = `<div class="bg-white p-8 rounded-lg shadow-xl text-center"><h2 class="text-3xl font-bold mb-4">${resultText}</h2><p>玩家剩余声望: ${battleState.player.prestige}</p><p>AI剩余声望: ${battleState.ai.prestige}</p><button id="close-battle-result" class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg mt-4">返回</button></div>`;
+        ui.battle.resultModal.classList.remove('hidden');
+        document.getElementById('close-battle-result').addEventListener('click', () => {
+            ui.battle.resultModal.classList.add('hidden');
+            ui.battle.arenaContainer.innerHTML = ''; // Clear the arena
+            ui.battle.setup.classList.remove('hidden'); // Show the setup screen again
+        });
+    }
+
+    function createBattleCard(card, context, index = -1) {
+        if (!card) return '';
+        
+        const rarityColor = rarityConfig[card.rarity]?.c || 'bg-gray-500';
+        const isSelected = context === 'player-hand' && index === selectedHandCardIndex;
+        
+        return `
+            <div class="battle-card ${context} bg-white rounded-lg shadow-md overflow-hidden cursor-pointer ${isSelected ? 'ring-4 ring-yellow-400 transform scale-110' : ''}" style="width: 5rem;">
+                <div class="relative">
+                    <img src="${card.image_path}" class="w-full h-20 object-cover" onerror="this.src='https://placehold.co/80x112/e2e8f0/334155?text=图片丢失';">
+                    <div class="absolute top-0 right-0 px-1 py-0.5 text-xs font-bold text-white ${rarityColor.includes('from') ? 'bg-gradient-to-r' : ''} ${rarityColor} rounded-bl">${card.rarity}</div>
+                    <div class="absolute top-0 left-0 bg-black bg-opacity-75 text-white text-xs px-1 py-0.5 rounded-br">Cost: ${card.cost}</div>
+                </div>
+                <p class="text-xs text-center font-bold p-1 truncate" title="${card.name}">${card.name}</p>
+                <p class="text-xs text-center text-gray-600 pb-1">点数: ${card.points}</p>
+            </div>
+        `;
     }
 
     function renderBattleUI() {
@@ -787,12 +935,42 @@ document.addEventListener('DOMContentLoaded', async function() {
         let playerStatus = `<span>玩家: ${player.prestige} 声望 | ${player.tp}/${player.tpLimit} TP | ${player.hand.length} 手牌</span>`;
         let aiStatus = `<span>AI: ${ai.prestige} 声望 | ${ai.tp}/${ai.tpLimit} TP | ${ai.hand.length} 手牌</span>`;
 
+        // 添加牌组信息显示
+        let playerDeckInfo = `<div class="text-xs text-gray-400">卡组: ${player.deck.length} | 弃牌: ${player.discard.length} <button id="view-player-discard" class="ml-2 text-blue-300 hover:underline">查看弃牌</button></div>`;
+        let aiDeckInfo = `<div class="text-xs text-gray-400">卡组: ${ai.deck.length} | 弃牌: ${ai.discard.length}</div>`;
+
         let battlefieldHTML = '';
         if (phase === 'player_defend' && currentAttack) {
+            // AI攻击，玩家防守
             battlefieldHTML = `
-                <div class="flex flex-col items-center">
-                    <p class="mb-2">AI 使用 [${currentAttack.attackCard.name}] 发动了 [${currentAttack.attackType}]!</p>
-                    ${createBattleCard(currentAttack.attackCard, 'ai')}
+                <div class="flex justify-between items-center w-full">
+                    <div class="flex flex-col items-center">
+                        <p class="mb-2 text-blue-400">等待你的应对...</p>
+                        <div class="w-20 h-28 border-2 border-dashed border-gray-600 rounded-lg flex items-center justify-center">
+                            <span class="text-gray-500">?</span>
+                        </div>
+                    </div>
+                    <div class="text-2xl">🆚</div>
+                    <div class="flex flex-col items-center">
+                        <p class="mb-2 text-yellow-400">AI 攻击</p>
+                        ${createBattleCard(currentAttack.attackCard, 'ai')}
+                    </div>
+                </div>
+            `;
+        } else if (currentAttack && battleState.attacker === 'player') {
+            // 玩家攻击，AI防守
+            const defenseCard = battleState.lastDefense?.defendCard;
+            battlefieldHTML = `
+                <div class="flex justify-between items-center w-full">
+                    <div class="flex flex-col items-center">
+                        <p class="mb-2 text-yellow-400">你的攻击</p>
+                        ${createBattleCard(currentAttack.attackCard, 'player')}
+                    </div>
+                    <div class="text-2xl">🆚</div>
+                    <div class="flex flex-col items-center">
+                        <p class="mb-2 text-blue-400">AI 防守</p>
+                        ${defenseCard ? createBattleCard(defenseCard, 'ai') : '<div class="w-20 h-28 border-2 border-dashed border-gray-600 rounded-lg flex items-center justify-center"><span class="text-gray-500">等待中...</span></div>'}
+                    </div>
                 </div>
             `;
         }
@@ -821,11 +999,14 @@ document.addEventListener('DOMContentLoaded', async function() {
             <div class="p-4 bg-gray-800 text-white rounded-lg">
                 <h2 class="text-center font-bold text-xl mb-4">宅理论战 V4.0 - 回合 ${turn}</h2>
                 <!-- AI Info -->
-                <div class="flex justify-between p-2 bg-red-900 rounded">
-                    ${aiStatus}
-                    <div class="flex gap-1">
-                        ${Array(ai.hand.length).fill('<div class="w-10 h-14 bg-red-800 rounded"></div>').join('')}
+                <div class="p-2 bg-red-900 rounded">
+                    <div class="flex justify-between items-center">
+                        ${aiStatus}
+                        <div class="flex gap-1">
+                            ${Array(ai.hand.length).fill('<div class="w-10 h-14 bg-red-800 rounded"></div>').join('')}
+                        </div>
                     </div>
+                    ${aiDeckInfo}
                 </div>
                 
                 <!-- Battlefield -->
@@ -834,10 +1015,13 @@ document.addEventListener('DOMContentLoaded', async function() {
                 </div>
 
                 <!-- Player Info -->
-                <div class="flex justify-between p-2 bg-blue-900 rounded">${playerStatus}</div>
+                <div class="p-2 bg-blue-900 rounded">
+                    <div class="flex justify-between items-center">${playerStatus}</div>
+                    ${playerDeckInfo}
+                </div>
 
                 <!-- Log -->
-                <div id="battle-log-new" class="my-2 p-2 bg-black h-24 overflow-y-auto text-sm">${log.slice().reverse().map(l => `<div>${l}</div>`).join('')}</div>
+                <div id="battle-log-new" class="my-2 p-2 bg-black h-40 overflow-y-auto text-sm rounded">${log.slice().reverse().map(l => formatBattleLog(l)).join('')}</div>
 
                 <!-- Player Hand -->
                 <div class="mt-4 p-2 bg-gray-900 rounded min-h-[11rem]">
@@ -849,6 +1033,40 @@ document.addEventListener('DOMContentLoaded', async function() {
                 <!-- Player Actions -->
                 <div id="player-actions" class="mt-4 p-2 bg-gray-900 rounded">
                     ${playerActionsHTML}
+                </div>
+                
+                <!-- Rules Summary -->
+                <div class="mt-4 p-3 bg-gray-900 rounded text-xs text-gray-400">
+                    <details>
+                        <summary class="cursor-pointer font-bold text-gray-300 hover:text-white">📖 战斗规则说明（点击展开）</summary>
+                        <div class="mt-2 space-y-2">
+                            <p class="font-bold text-yellow-400">攻击阶段：</p>
+                            <ul class="ml-4 space-y-1">
+                                <li>• 友好安利（0 TP）：温和地推荐作品</li>
+                                <li>• 辛辣点评（1 TP）：激烈地批评作品</li>
+                            </ul>
+                            
+                            <p class="font-bold text-blue-400 mt-2">防守阶段：</p>
+                            <ul class="ml-4 space-y-1">
+                                <li>• 赞同（0 TP）：认同对方观点</li>
+                                <li>• 反驳（1 TP）：反对对方观点</li>
+                                <li>• 防守时只消耗行动TP，不消耗卡牌Cost</li>
+                            </ul>
+                            
+                            <p class="font-bold text-orange-400 mt-2">卡牌配对效果：</p>
+                            <ul class="ml-4 space-y-1">
+                                <li>• <span class="text-green-400">相同卡牌</span>：效果最强，产生共鸣或激烈争执</li>
+                                <li>• <span class="text-blue-300">相同标签</span>：中等效果，有相似话题</li>
+                                <li>• <span class="text-gray-300">不同类型</span>：基础效果，跨界交流</li>
+                            </ul>
+                            
+                            <p class="font-bold text-purple-400 mt-2">胜利条件：</p>
+                            <ul class="ml-4 space-y-1">
+                                <li>• 将对方声望降至0或以下</li>
+                                <li>• 将自己声望提升至20或以上</li>
+                            </ul>
+                        </div>
+                    </details>
                 </div>
             </div>
         `;
@@ -862,7 +1080,13 @@ document.addEventListener('DOMContentLoaded', async function() {
         });
 
         const logContainer = document.getElementById('battle-log-new');
-        if(logContainer) logContainer.scrollTop = logContainer.scrollHeight;
+        if(logContainer) logContainer.scrollTop = 0;
+
+        // 弃牌堆查看按钮
+        const viewDiscardBtn = document.getElementById('view-player-discard');
+        if(viewDiscardBtn) {
+            viewDiscardBtn.addEventListener('click', () => showDiscardPile('player'));
+        }
 
         if (phase === 'player_attack') {
             document.getElementById('action-friendly').addEventListener('click', () => playerAction('friendly'));
@@ -874,17 +1098,43 @@ document.addEventListener('DOMContentLoaded', async function() {
         }
     }
 
-    function createBattleCard(card, owner, handIndex = -1) {
-        const isSelected = handIndex === selectedHandCardIndex;
-        return `
-            <div class="battle-card w-24 h-36 relative group ${isSelected ? 'border-4 border-yellow-400' : ''}">
-                <img src="${card.image_path}" class="w-full h-full object-cover rounded-lg" onerror="this.src='https://placehold.co/96x144/e2e8f0/334155?text=图片丢失';">
-                <div class="absolute top-1 left-1 bg-black bg-opacity-70 text-white text-base font-bold w-7 h-7 flex items-center justify-center rounded-full">${card.cost}</div>
-                <div class="absolute top-1 right-1 bg-black bg-opacity-70 text-white text-base font-bold w-7 h-7 flex items-center justify-center rounded-full">${card.points}</div>
-                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white text-center text-xs font-bold p-1 truncate">${card.name}</div>
+    function showDiscardPile(who) {
+        const discardPile = battleState[who].discard;
+        if (discardPile.length === 0) {
+            alert("弃牌堆是空的。");
+            return;
+        }
+        
+        // 创建弃牌堆模态框
+        const modal = document.createElement('div');
+        modal.className = 'fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4';
+        modal.innerHTML = `
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl max-w-4xl w-full max-h-[80vh] overflow-auto">
+                <h2 class="text-2xl font-bold mb-4 text-white">弃牌堆 (${discardPile.length}张)</h2>
+                <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
+                    ${discardPile.map(card => createBattleCard(card, 'discard')).join('')}
+                </div>
+                <div class="text-center mt-6">
+                    <button id="close-discard-modal" class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg">关闭</button>
+                </div>
             </div>
         `;
+        
+        document.body.appendChild(modal);
+        
+        // 关闭按钮
+        document.getElementById('close-discard-modal').addEventListener('click', () => {
+            modal.remove();
+        });
+        
+        // 点击背景关闭
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.remove();
+            }
+        });
     }
+
     function createCardElement(cardData, context, options = {}) {
         const { card, count } = cardData;
         const rarityColor = rarityConfig[card.rarity]?.c || 'bg-gray-500';
@@ -1346,7 +1596,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         console.log("Initializing application...");
         try {
             console.log("Attempting to fetch all_cards.json...");
-            const response = await fetch('/data/all_cards.json?t=' + new Date().getTime());
+            const response = await fetch('data/all_cards.json?t=' + new Date().getTime());
             console.log("Fetch response received:", response);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -1379,8 +1629,7 @@ document.addEventListener('DOMContentLoaded', async function() {
             ui.deckAndCollection.filterTag.addEventListener('change', renderDeckAndCollection);
             ui.deckAndCollection.dismantleAllBtn.addEventListener('click', dismantleAllDuplicates);
 
-            // The start battle button is now part of the battle setup, not the main UI
-            ui.battle.startBtn.addEventListener('click', startBattle);
+            // The start battle button is now correctly handled in renderBattleSetup
             ui.gacha.tabs.pool.addEventListener('click', (e) => { e.preventDefault(); switchGachaTab('pool'); });
             ui.gacha.tabs.history.addEventListener('click', (e) => { e.preventDefault(); switchGachaTab('history'); });
             ui.gacha.tabs.shop.addEventListener('click', (e) => { e.preventDefault(); switchGachaTab('shop'); });

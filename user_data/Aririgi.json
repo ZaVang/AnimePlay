@@ -3028,22 +3028,22 @@
                 770
             ]
         },
-        "exp": 1010,
-        "gachaTickets": 70,
-        "knowledgePoints": 6498,
-        "level": 8,
+        "exp": 3310,
+        "gachaTickets": 90,
+        "knowledgePoints": 9538,
+        "level": 9,
         "viewingQueue": [
             {
-                "cardId": 116370,
-                "startTime": "2025-07-25T08:58:42.386Z"
-            },
-            {
-                "cardId": 253,
-                "startTime": "2025-07-25T06:26:29.971Z"
+                "cardId": 4028,
+                "startTime": "2025-07-25T10:35:32.337Z"
             },
             {
                 "cardId": 347887,
-                "startTime": "2025-07-25T08:58:39.973Z"
+                "startTime": "2025-07-25T10:35:30.538Z"
+            },
+            {
+                "cardId": 21032,
+                "startTime": "2025-07-25T10:35:28.448Z"
             }
         ]
     }
