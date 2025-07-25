@@ -126,10 +126,9 @@ document.addEventListener('DOMContentLoaded', async function() {
 
         // --- Deck Validation ---
         const activeDeck = playerState.decks[playerState.activeDeckName] || [];
-        const hasDuplicates = new Set(activeDeck).size !== activeDeck.length;
-        if (hasDuplicates) {
-            alert(`错误：卡组 “${playerState.activeDeckName}” 中包含重复的同名卡，无法保存！`);
-            return; // Stop saving
+        if (activeDeck.length !== 20) {
+            alert(`错误：卡组 “${playerState.activeDeckName}” 必须正好有20张卡，当前为 ${activeDeck.length} 张。`);
+            return;
         }
         // --- End Validation ---
 
@@ -693,8 +692,8 @@ document.addEventListener('DOMContentLoaded', async function() {
         battleState.log.push(`> ${attack.attacker === 'player' ? '你' : 'AI'} 声望 ${result.prestige[0] >= 0 ? '+' : ''}${result.prestige[0]}, ${defense.defender === 'player' ? '你' : 'AI'} 声望 ${result.prestige[1] >= 0 ? '+' : ''}${result.prestige[1]}`);
         battleState.currentAttack = null;
 
-        if (attacker.prestige <= 0 || defender.prestige <= 0) {
-            // end game
+        if (attacker.prestige <= 0 || defender.prestige <= 0 || attacker.prestige >= window.GAME_CONFIG.battle.victoryPrestige || defender.prestige >= window.GAME_CONFIG.battle.victoryPrestige) {
+            endBattle();
         } else {
             // Continue turn or switch
             if (battleState.attacker === 'player') {
@@ -822,7 +821,12 @@ document.addEventListener('DOMContentLoaded', async function() {
             <div class="p-4 bg-gray-800 text-white rounded-lg">
                 <h2 class="text-center font-bold text-xl mb-4">宅理论战 V4.0 - 回合 ${turn}</h2>
                 <!-- AI Info -->
-                <div class="flex justify-between p-2 bg-red-900 rounded">${aiStatus}</div>
+                <div class="flex justify-between p-2 bg-red-900 rounded">
+                    ${aiStatus}
+                    <div class="flex gap-1">
+                        ${Array(ai.hand.length).fill('<div class="w-10 h-14 bg-red-800 rounded"></div>').join('')}
+                    </div>
+                </div>
                 
                 <!-- Battlefield -->
                 <div class="my-4 p-4 bg-black min-h-[12rem] flex items-center justify-center">
@@ -831,7 +835,10 @@ document.addEventListener('DOMContentLoaded', async function() {
 
                 <!-- Player Info -->
                 <div class="flex justify-between p-2 bg-blue-900 rounded">${playerStatus}</div>
-                
+
+                <!-- Log -->
+                <div id="battle-log-new" class="my-2 p-2 bg-black h-24 overflow-y-auto text-sm">${log.slice().reverse().map(l => `<div>${l}</div>`).join('')}</div>
+
                 <!-- Player Hand -->
                 <div class="mt-4 p-2 bg-gray-900 rounded min-h-[11rem]">
                     <div id="player-hand-cards" class="flex gap-2 justify-center mt-2">
@@ -843,9 +850,6 @@ document.addEventListener('DOMContentLoaded', async function() {
                 <div id="player-actions" class="mt-4 p-2 bg-gray-900 rounded">
                     ${playerActionsHTML}
                 </div>
-
-                <!-- Log -->
-                <div class="mt-4 p-2 bg-black h-32 overflow-y-auto">${log.map(l => `<div>${l}</div>`).join('')}</div>
             </div>
         `;
 
@@ -856,6 +860,9 @@ document.addEventListener('DOMContentLoaded', async function() {
                 renderBattleUI(); // Re-render to show selection
             });
         });
+
+        const logContainer = document.getElementById('battle-log-new');
+        if(logContainer) logContainer.scrollTop = logContainer.scrollHeight;
 
         if (phase === 'player_attack') {
             document.getElementById('action-friendly').addEventListener('click', () => playerAction('friendly'));

@@ -38,7 +38,8 @@ window.GAME_CONFIG = {
     },
     // 战斗设置
     battle: {
-        initialPrestige: 30,
+        initialPrestige: 10,
+        victoryPrestige: 20,
         initialTP: 2,
         tpPerTurn: 1, // TP gain is currentTurn + tpPerTurn
         initialHandSize: 5,
