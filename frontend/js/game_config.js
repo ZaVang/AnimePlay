@@ -38,13 +38,52 @@ window.GAME_CONFIG = {
     },
     // 战斗设置
     battle: {
-        initialHP: 100,
-        initialTP: 3,
-        tpPerTurn: 1,
+        initialPrestige: 30,
+        initialTP: 2,
+        tpPerTurn: 1, // TP gain is currentTurn + tpPerTurn
         initialHandSize: 5,
-        laneSize: 3,
-        removeCardCost: 2,
-        maxRounds: 20, // Max rounds before a draw
+        maxHandSize: 10,
+        maxCombos: 4, // Max attacks per turn
+        fatigueCost: 1, // Extra TP cost for each attack after the first
+        actions: {
+            friendly: { cost: 0, name: '友好安利' },
+            harsh: { cost: 1, name: '辛辣点评' },
+            agree: { cost: 0, name: '赞同' },
+            disagree: { cost: 1, name: '反驳' }
+        },
+        // The core battle result table
+        resultTable: {
+            // Attacker uses FRIENDLY (+0 TP)
+            friendly: {
+                sameCard: {
+                    agree:    { prestige: [ 3,  1], tp: [0, 0], draw: [0, 1], log: '太有共鸣了！' },
+                    disagree: { prestige: [ 1,  2], tp: [1, 0], draw: [0, 0], log: '我觉得有些过誉了' }
+                },
+                sameTag: {
+                    agree:    { prestige: [ 2,  0], tp: [1, 0], draw: [0, 1], log: '类似的我也看过' },
+                    disagree: { prestige: [ 0,  1], tp: [1, 0], draw: [0, 1], log: '我看的那个更好' }
+                },
+                different: {
+                    agree:    { prestige: [ 4, -1], tp: [0, 0], draw: [0, 2], log: '跨界安利成功！' },
+                    disagree: { prestige: [ 1,  0], tp: [1, 0], draw: [0, 1], log: '我更喜欢XX类型' }
+                }
+            },
+            // Attacker uses HARSH (+1 TP)
+            harsh: {
+                sameCard: {
+                    agree:    { prestige: [ 2, -1], tp: [0, 0], draw: [0, 2], log: '确实，我想多了' },
+                    disagree: { prestige: [-2,  4], tp: [0, 0], draw: [1, 0], log: '你这是恶意黑！' }
+                },
+                sameTag: {
+                    agree:    { prestige: [ 3, -2], tp: [0, 0], draw: [0, 2], log: '你说得对，惭愧' },
+                    disagree: { prestige: [-1,  3], tp: [0, 1], draw: [1, 0], log: 'XX才是真正的神作' }
+                },
+                different: {
+                    agree:    { prestige: [ 4, -3], tp: [0, 0], draw: [0, 3], log: '降维打击！' },
+                    disagree: { prestige: [ 0,  2], tp: [0, 1], draw: [1, 0], log: '但是XX更符合我口味' }
+                }
+            }
+        }
     },
     // 商店配置
     shop: {
