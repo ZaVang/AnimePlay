@@ -1,5 +1,4 @@
 # Python scripts and cache
-*.py
 __pycache__/
 
 # Source data, docs, and individual card jsons
@@ -8,3 +7,5 @@ __pycache__/
 .idea/
 .vscode/
 .DS_Store
+*.ipynb
+data/
