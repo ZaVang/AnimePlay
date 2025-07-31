@@ -58,6 +58,73 @@ def serve_data_files(path):
     """Serves files from the root /data directory."""
     return send_from_directory(DATA_ROOT, path)
 
+# --- Character API Routes ---
+@app.route('/api/characters', methods=['GET'])
+def get_characters():
+    """Get a list of character IDs or filtered characters."""
+    try:
+        characters_dir = os.path.join(DATA_ROOT, 'characters')
+        if not os.path.exists(characters_dir):
+            return jsonify({'error': 'Characters directory not found'}), 404
+        
+        # Get query parameters
+        limit = request.args.get('limit', type=int, default=50)
+        offset = request.args.get('offset', type=int, default=0)
+        
+        # Get all character files
+        character_files = [f for f in os.listdir(characters_dir) if f.endswith('.json')]
+        character_ids = [int(f.replace('.json', '')) for f in character_files if f.replace('.json', '').isdigit()]
+        character_ids.sort()
+        
+        # Apply pagination
+        paginated_ids = character_ids[offset:offset + limit]
+        
+        return jsonify({
+            'character_ids': paginated_ids,
+            'total': len(character_ids),
+            'limit': limit,
+            'offset': offset
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/characters/<int:character_id>', methods=['GET'])
+def get_character(character_id):
+    """Get specific character data by ID."""
+    try:
+        character_file = os.path.join(DATA_ROOT, 'characters', f'{character_id}.json')
+        if not os.path.exists(character_file):
+            return jsonify({'error': 'Character not found'}), 404
+        
+        with open(character_file, 'r', encoding='utf-8') as f:
+            character_data = json.load(f)
+        
+        return jsonify(character_data)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/characters/batch', methods=['POST'])
+def get_characters_batch():
+    """Get multiple characters by IDs."""
+    try:
+        data = request.get_json()
+        character_ids = data.get('ids', [])
+        
+        if not character_ids:
+            return jsonify({'error': 'No character IDs provided'}), 400
+        
+        characters = []
+        for char_id in character_ids:
+            character_file = os.path.join(DATA_ROOT, 'characters', f'{char_id}.json')
+            if os.path.exists(character_file):
+                with open(character_file, 'r', encoding='utf-8') as f:
+                    character_data = json.load(f)
+                    characters.append(character_data)
+        
+        return jsonify({'characters': characters})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 # --- Serve Frontend ---
 @app.route('/')
 def serve_index():

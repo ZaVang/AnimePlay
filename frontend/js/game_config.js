@@ -5,6 +5,7 @@ window.GAME_CONFIG = {
         level: 1,
         knowledgePoints: 0,
         gachaTickets: 100,
+        characterTickets: 10, // 初始角色卡券
     },
     // AI 对手配置
     aiOpponent: {
@@ -94,26 +95,61 @@ window.GAME_CONFIG = {
         ]
     },
 
+    // --- Character Card System ---
+    characterSystem: {
+        // Character rarity configuration (unified with anime cards)
+        rarityConfig: {
+            'UR': { p: 0.5, c: 'from-amber-400 to-red-500', dismantleValue: 1000, color: 'text-red-500', effect: 'legendary-glow' },
+            'HR': { p: 1.5, c: 'from-red-500 to-purple-600', dismantleValue: 400, color: 'text-purple-600', effect: 'masterpiece-shine' },
+            'SSR': { p: 3, c: 'from-yellow-300 to-amber-400', dismantleValue: 100, color: 'text-amber-400', effect: 'popular-sparkle' },
+            'SR': { p: 10, c: 'bg-purple-500', dismantleValue: 20, color: 'text-purple-500', effect: 'quality-glow' },
+            'R': { p: 25, c: 'bg-blue-500', dismantleValue: 5, color: 'text-blue-500', effect: 'none' },
+            'N': { p: 60, c: 'bg-gray-500', dismantleValue: 1, color: 'text-gray-500', effect: 'none' }
+        },
+        // Character UP pool configuration (unified with anime system)
+        characterRateUp: {
+            ids: [1, 2], // UP character IDs - example characters for testing
+            hrChance: 0.66, // HR rarity时，获得UP角色的概率
+            pityPulls: 70, // 必定获得UP角色的保底抽数
+        },
+        // Character gacha settings (unified with anime system)
+        gacha: {
+            ticketCost: { single: 1, multi: 10 },
+            guaranteedSR_Pulls: 10, // 10-pull guarantees at least SR (unified with anime)
+        },
+        // Sample character pool (will be loaded from backend)
+        sampleCharacters: [
+            { id: 1, name: "鲁路修·兰佩路基", rarity: "UR", anime_ids: [793, 8], gender: "male" },
+            { id: 2, name: "C.C.", rarity: "HR", anime_ids: [793, 8], gender: "female" },
+            { id: 3, name: "朱雀", rarity: "SSR", anime_ids: [793, 8], gender: "male" }
+        ]
+    },
+
     // --- Gameplay Settings ---
     gameplay: {
         // EXP required for each level (index 0 is for level 1)
         levelXP: [0, 100, 250, 500, 800, 1200, 1800, 2500, 3500, 5000], // Up to level 10
         // Rewards for leveling up
         levelUpRewards: {
-            2: { tickets: 5, knowledge: 100 },
-            3: { tickets: 5, knowledge: 200 },
-            4: { tickets: 10, knowledge: 300 },
-            5: { tickets: 10, knowledge: 500 },
-            6: { tickets: 15, knowledge: 800 },
-            7: { tickets: 15, knowledge: 1000 },
-            8: { tickets: 20, knowledge: 1500 },
-            9: { tickets: 20, knowledge: 2000 },
-            10: { tickets: 50, knowledge: 5000 },
+            2: { tickets: 5, knowledge: 100, characterTickets: 3 },
+            3: { tickets: 5, knowledge: 200, characterTickets: 3 },
+            4: { tickets: 10, knowledge: 300, characterTickets: 5 },
+            5: { tickets: 10, knowledge: 500, characterTickets: 5 },
+            6: { tickets: 15, knowledge: 800, characterTickets: 8 },
+            7: { tickets: 15, knowledge: 1000, characterTickets: 8 },
+            8: { tickets: 20, knowledge: 1500, characterTickets: 10 },
+            9: { tickets: 20, knowledge: 2000, characterTickets: 10 },
+            10: { tickets: 50, knowledge: 5000, characterTickets: 20 },
         },
         // EXP gained from drawing cards
         gachaEXP: {
             single: 10,
             multi: 110
+        },
+        // Character gacha EXP
+        characterGachaEXP: {
+            single: 15,
+            multi: 160
         },
         // Viewing queue settings
         viewingQueue: {

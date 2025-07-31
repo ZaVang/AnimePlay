@@ -172,14 +172,8 @@ Game.Gacha = (function() {
     }
 
     function _switchGachaTab(tabName) {
-        const { tabs, contents } = Game.UI.elements.gacha;
-        Object.keys(tabs).forEach(key => {
-            tabs[key].classList.toggle('active', key === tabName);
-            contents[key].classList.toggle('hidden', key !== tabName);
-        });
-        if (tabName === 'history') {
-            Game.UI.renderGachaHistory();
-        }
+        // Use the unified tab switching in UI module
+        Game.UI.switchGachaTab(tabName);
     }
 
     return {

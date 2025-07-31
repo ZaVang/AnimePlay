@@ -17,6 +17,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         Game.UI.init();
         Game.UI.populateFilters(); // Populate filters now that cards are loaded
         Game.Gacha.init();
+        
+        // Initialize character system modules
+        if (Game.CharacterGacha) {
+            await Game.CharacterGacha.init();
+        }
+        if (Game.CharacterCollection) {
+            Game.CharacterCollection.init();
+        }
+        
         Game.Deck.init();
         Game.Battle.init();
         

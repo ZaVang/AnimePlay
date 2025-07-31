@@ -11,6 +11,14 @@ Game.Player = (function() {
     let _gachaHistory = [];
     let _pityState = { totalPulls: 0, pullsSinceLastHR: 0 };
     
+    // Character system state (unified with anime system)
+    let _characterCollection = new Map();
+    let _characterGachaHistory = [];
+    let _characterPityState = { 
+        totalPulls: 0, 
+        pullsSinceLastHR: 0  // Unified with anime system
+    };
+    
     let _playerState = {
         ...window.GAME_CONFIG.playerInitialState,
         exp: 0,
@@ -27,6 +35,9 @@ Game.Player = (function() {
             collection: Array.from(_playerCollection.entries()).map(([id, data]) => [id, data.count]),
             pity: _pityState,
             history: _gachaHistory,
+            characterCollection: Array.from(_characterCollection.entries()).map(([id, data]) => [id, data.count]),
+            characterPity: _characterPityState,
+            characterHistory: _characterGachaHistory,
             state: _playerState
         };
 
@@ -53,8 +64,11 @@ Game.Player = (function() {
 
             if (data.isNewUser) {
                 _playerCollection.clear();
+                _characterCollection.clear();
                 _pityState = { totalPulls: 0, pullsSinceLastHR: 0 };
+                _characterPityState = { totalPulls: 0, pullsSinceLastHR: 0 };
                 _gachaHistory = [];
+                _characterGachaHistory = [];
                 _playerState = {
                     ...window.GAME_CONFIG.playerInitialState,
                     exp: 0,
@@ -71,8 +85,18 @@ Game.Player = (function() {
                 });
 
                 _pityState = data.pity || { totalPulls: 0, pullsSinceLastHR: 0 };
+                _characterPityState = data.characterPity || { totalPulls: 0, pullsSinceLastHR: 0 };
                 _playerState = data.state || { ...window.GAME_CONFIG.playerInitialState };
                 _gachaHistory = data.history || [];
+                _characterGachaHistory = data.characterHistory || [];
+                
+                // Load character collection (characters won't exist in _allCards, handled separately)  
+                const savedCharacterCollection = data.characterCollection || [];
+                _characterCollection.clear();
+                savedCharacterCollection.forEach(([id, count]) => {
+                    // Characters will be loaded by CharacterGacha module, just store the structure for now
+                    _characterCollection.set(id, { character: { id, name: 'Loading...' }, count });
+                });
                 
                 // --- FIX: Make viewing queue length compatible with current config ---
                 const configuredSlots = window.GAME_CONFIG.gameplay.viewingQueue.slots;
@@ -96,8 +120,11 @@ Game.Player = (function() {
             alert("加载存档失败，将使用初始设置。");
             // Reset to default state on error
              _playerCollection.clear();
+            _characterCollection.clear();
             _pityState = { totalPulls: 0, pullsSinceLastHR: 0 };
+            _characterPityState = { totalPulls: 0, pullsSinceLastLegendary: 0, pullsSinceLastMasterpiece: 0 };
             _gachaHistory = [];
+            _characterGachaHistory = [];
             _playerState = {
                 ...window.GAME_CONFIG.playerInitialState,
                 exp: 0,
@@ -124,8 +151,11 @@ Game.Player = (function() {
         await _saveState(false);
         _currentUser = '';
         _playerCollection.clear();
+        _characterCollection.clear();
         _gachaHistory = [];
+        _characterGachaHistory = [];
         _pityState = { totalPulls: 0, pullsSinceLastHR: 0 };
+        _characterPityState = { totalPulls: 0, pullsSinceLastLegendary: 0, pullsSinceLastMasterpiece: 0 };
         _playerState = {
             ...window.GAME_CONFIG.playerInitialState,
             exp: 0,
@@ -155,8 +185,9 @@ Game.Player = (function() {
             const rewards = levelUpRewards[_playerState.level];
             if (rewards) {
                 if (rewards.tickets) _playerState.gachaTickets += rewards.tickets;
+                if (rewards.characterTickets) _playerState.characterTickets += rewards.characterTickets;
                 if (rewards.knowledge) _playerState.knowledgePoints += rewards.knowledge;
-                Game.UI.logMessage(`等级提升至 ${_playerState.level}！获得邂逅券x${rewards.tickets || 0}，知识点x${rewards.knowledge || 0}。`, 'level-up');
+                Game.UI.logMessage(`等级提升至 ${_playerState.level}！获得动画券x${rewards.tickets || 0}，角色券x${rewards.characterTickets || 0}，知识点x${rewards.knowledge || 0}。`, 'level-up');
            }
             currentLevel = _playerState.level;
             requiredExp = levelXP[currentLevel] || Infinity;
@@ -194,6 +225,11 @@ Game.Player = (function() {
         getGachaHistory: () => _gachaHistory,
         getPityState: () => _pityState,
         getState: () => _playerState,
+        
+        // Character system getters
+        getCharacterCollection: () => _characterCollection,
+        getCharacterGachaHistory: () => _characterGachaHistory,
+        getCharacterPityState: () => _characterPityState,
         
         // Setters for controlled mutation
         setState: (newState) => { _playerState = newState; },

@@ -15,14 +15,82 @@
         body { font-family: 'Noto Sans SC', sans-serif; background-color: #f0f2f5; }
         .nav-link.active { border-bottom-color: #4f46e5; color: #4f46e5; font-weight: 600; }
         .gacha-tab.active { color: #4f46e5; border-color: #4f46e5; }
+        .character-gacha-tab.active { color: #ec4899; border-color: #ec4899; }
+        .gacha-type-btn.active { opacity: 1; }
+        .gacha-type-btn:not(.active) { opacity: 0.6; }
         .card { transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; }
         .card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
         .modal-content { max-height: 90vh; }
         .deck-card.selected { border: 2px solid #4f46e5; box-shadow: 0 0 10px #4f46e5; }
         .battle-card.player { animation: slide-in-player 0.5s forwards; }
         .battle-card.opponent { animation: slide-in-opponent 0.5s forwards; }
+        
+        /* Character Card Special Effects */
+        .character-card { position: relative; overflow: hidden; }
+        .character-card.legendary-glow::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #fbbf24, #f59e0b, #fbbf24, #f59e0b);
+            background-size: 400% 400%;
+            border-radius: inherit;
+            z-index: -1;
+            animation: legendary-shine 2s infinite;
+        }
+        .character-card.masterpiece-shine::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            right: -1px;
+            bottom: -1px;
+            background: linear-gradient(45deg, #a855f7, #ec4899, #a855f7, #ec4899);
+            background-size: 400% 400%;
+            border-radius: inherit;
+            z-index: -1;
+            animation: masterpiece-pulse 1.5s infinite;
+        }
+        .character-card.popular-sparkle::after {
+            content: '✨';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            font-size: 12px;
+            animation: sparkle 2s infinite;
+        }
+        .character-card.quality-glow {
+            box-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
+        }
+        
+        @keyframes legendary-shine {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        @keyframes masterpiece-pulse {
+            0%, 100% { background-position: 0% 50%; opacity: 0.8; }
+            50% { background-position: 100% 50%; opacity: 1; }
+        }
+        @keyframes sparkle {
+            0%, 100% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
         @keyframes slide-in-player { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
         @keyframes slide-in-opponent { from { transform: translateY(-100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        
+        /* Character card hover effects */
+        .character-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .character-card.legendary-glow:hover::before {
+            animation-duration: 0.5s;
+        }
+        .character-card.masterpiece-shine:hover::before {
+            animation-duration: 0.3s;
+        }
     </style>
 </head>
 <body class="text-gray-800">
@@ -43,11 +111,12 @@
         </header>
 
         <nav class="bg-white rounded-lg shadow-sm mb-8 sticky top-4 z-40">
-            <ul class="flex justify-center items-center p-2 space-x-2 md:space-x-8">
-                <li><a href="#home" class="nav-link active px-3 py-2 text-sm md:text-base">主页</a></li>
-                <li><a href="#gacha" class="nav-link px-3 py-2 text-sm md:text-base">邂逅</a></li>
-                <li><a href="#deck-and-collection" class="nav-link px-3 py-2 text-sm md:text-base">卡组与收藏</a></li>
-                <li><a href="#battle" class="nav-link px-3 py-2 text-sm md:text-base">宅理论战</a></li>
+            <ul class="flex justify-center items-center p-2 space-x-1 md:space-x-4">
+                <li><a href="#home" class="nav-link active px-2 py-2 text-xs md:text-base">主页</a></li>
+                <li><a href="#gacha" class="nav-link px-2 py-2 text-xs md:text-base">邂逅系统</a></li>
+                <li><a href="#character-collection" class="nav-link px-2 py-2 text-xs md:text-base">角色图鉴</a></li>
+                <li><a href="#deck-and-collection" class="nav-link px-2 py-2 text-xs md:text-base">卡组收藏</a></li>
+                <li><a href="#battle" class="nav-link px-2 py-2 text-xs md:text-base">宅理论战</a></li>
             </ul>
         </nav>
 
@@ -56,21 +125,26 @@
                 <!-- Player Status -->
                 <div class="bg-white p-6 rounded-lg shadow-sm">
                     <h2 class="text-2xl font-bold mb-4">玩家状态</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                         <!-- Level -->
                         <div class="bg-indigo-50 p-4 rounded-lg text-center">
-                            <h3 class="font-bold text-lg">宅等级</h3>
-                            <p id="player-level" class="text-3xl font-bold text-indigo-600 my-2">1</p>
+                            <h3 class="font-bold text-sm md:text-lg">宅等级</h3>
+                            <p id="player-level" class="text-2xl md:text-3xl font-bold text-indigo-600 my-2">1</p>
                         </div>
                         <!-- Gacha Tickets -->
                         <div class="bg-amber-50 p-4 rounded-lg text-center">
-                            <h3 class="font-bold text-lg">邂逅券</h3>
-                            <p id="gacha-tickets" class="text-3xl font-bold text-amber-600 my-2">10</p>
+                            <h3 class="font-bold text-sm md:text-lg">动画券</h3>
+                            <p id="gacha-tickets" class="text-2xl md:text-3xl font-bold text-amber-600 my-2">10</p>
+                        </div>
+                        <!-- Character Tickets -->
+                        <div class="bg-pink-50 p-4 rounded-lg text-center">
+                            <h3 class="font-bold text-sm md:text-lg">角色券</h3>
+                            <p id="character-tickets" class="text-2xl md:text-3xl font-bold text-pink-600 my-2">10</p>
                         </div>
                         <!-- Knowledge Points -->
                         <div class="bg-emerald-50 p-4 rounded-lg text-center">
-                            <h3 class="font-bold text-lg">知识点</h3>
-                            <p id="knowledge-points" class="text-3xl font-bold text-emerald-600 my-2">0</p>
+                            <h3 class="font-bold text-sm md:text-lg">知识点</h3>
+                            <p id="knowledge-points" class="text-2xl md:text-3xl font-bold text-emerald-600 my-2">0</p>
                         </div>
                     </div>
                     <!-- EXP Bar -->
@@ -99,6 +173,16 @@
             </section>
 
             <section id="gacha" class="hidden space-y-8">
+                <!-- Gacha Type Selector -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-bold mb-4 text-center">邂逅系统</h2>
+                    <div class="flex justify-center gap-4 mb-6">
+                        <button id="gacha-type-anime" class="gacha-type-btn active bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-indigo-700">动画邂逅</button>
+                        <button id="gacha-type-character" class="gacha-type-btn bg-pink-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-pink-700">角色邂逅</button>
+                    </div>
+                </div>
+
+                <!-- Tab Navigation -->
                 <div class="border-b border-gray-200">
                     <nav class="-mb-px flex space-x-8" aria-label="Tabs">
                         <a href="#" id="tab-gacha-pool" class="gacha-tab active whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">邂逅卡池</a>
@@ -106,32 +190,91 @@
                         <a href="#" id="tab-gacha-shop" class="gacha-tab whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">兑换商店</a>
                     </nav>
                 </div>
-                <div id="gacha-pool-content">
-                    <div id="up-banner" class="bg-white p-6 rounded-lg shadow-sm mb-8"></div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
-                        <h2 class="text-2xl font-bold mb-4">开始邂逅</h2>
-                        <div class="text-center">
-                            <button id="gacha-btn-single" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-indigo-700">单次邂逅</button>
-                            <button id="gacha-btn-multi" class="bg-amber-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-amber-600 ml-4">十次邂逅</button>
+
+                <!-- Anime Gacha Content -->
+                <div id="anime-gacha-content">
+                    <div id="gacha-pool-content">
+                        <div id="up-banner" class="bg-white p-6 rounded-lg shadow-sm mb-8"></div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <div class="flex justify-between items-center mb-4">
+                                <h2 class="text-2xl font-bold">动画邂逅</h2>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-sm text-gray-600">消耗：</span>
+                                    <span class="bg-amber-100 text-amber-800 px-2 py-1 rounded-full text-sm font-bold">动画券</span>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button id="gacha-btn-single" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-indigo-700">单次邂逅</button>
+                                <button id="gacha-btn-multi" class="bg-amber-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-amber-600 ml-4">十次邂逅</button>
+                            </div>
+                            <div class="text-center mt-4">
+                                <a href="#" id="show-gacha-rates" class="text-sm text-gray-500 hover:underline">概率一览</a>
+                            </div>
                         </div>
-                        <div class="text-center mt-4">
-                            <a href="#" id="show-gacha-rates" class="text-sm text-gray-500 hover:underline">概率一览</a>
+                    </div>
+                    <div id="gacha-history-content" class="hidden">
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <h2 class="text-2xl font-bold mb-4">动画邂逅历史统计</h2>
+                            <div class="chart-container mb-8" style="height: 400px;"><canvas id="gachaHistoryChart"></canvas></div>
+                            <h2 class="text-2xl font-bold mb-4">动画邂逅历史记录</h2>
+                            <div id="gacha-history-list" class="space-y-2 max-h-96 overflow-y-auto p-4 bg-gray-50 rounded-lg"></div>
+                        </div>
+                    </div>
+                    <div id="gacha-shop-content" class="hidden">
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <h2 class="text-2xl font-bold mb-4">动画兑换商店</h2>
+                            <div id="shop-items" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
                         </div>
                     </div>
                 </div>
-                <div id="gacha-history-content" class="hidden">
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
-                        <h2 class="text-2xl font-bold mb-4">邂逅历史统计</h2>
-                        <div class="chart-container mb-8" style="height: 400px;"><canvas id="gachaHistoryChart"></canvas></div>
-                        <h2 class="text-2xl font-bold mb-4">邂逅历史记录</h2>
-                        <div id="gacha-history-list" class="space-y-2 max-h-96 overflow-y-auto p-4 bg-gray-50 rounded-lg"></div>
+
+                <!-- Character Gacha Content -->
+                <div id="character-gacha-content" class="hidden">
+                    <div id="character-gacha-pool-content">
+                        <div id="character-up-banner" class="bg-white p-6 rounded-lg shadow-sm mb-8"></div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <div class="flex justify-between items-center mb-4">
+                                <h2 class="text-2xl font-bold">角色邂逅</h2>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-sm text-gray-600">消耗：</span>
+                                    <span class="bg-pink-100 text-pink-800 px-2 py-1 rounded-full text-sm font-bold">角色券</span>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button id="character-gacha-btn-single" class="bg-pink-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-pink-700">单次邂逅</button>
+                                <button id="character-gacha-btn-multi" class="bg-purple-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-purple-600 ml-4">十次邂逅</button>
+                            </div>
+                            <div class="text-center mt-4">
+                                <a href="#" id="show-character-gacha-rates" class="text-sm text-gray-500 hover:underline">概率一览</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="character-gacha-history-content" class="hidden">
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <h2 class="text-2xl font-bold mb-4">角色邂逅历史统计</h2>
+                            <div class="chart-container mb-8" style="height: 400px;"><canvas id="characterGachaHistoryChart"></canvas></div>
+                            <h2 class="text-2xl font-bold mb-4">角色邂逅历史记录</h2>
+                            <div id="character-gacha-history-list" class="space-y-2 max-h-96 overflow-y-auto p-4 bg-gray-50 rounded-lg"></div>
+                        </div>
                     </div>
                 </div>
-                <div id="gacha-shop-content" class="hidden">
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
-                        <h2 class="text-2xl font-bold mb-4">兑换商店</h2>
-                        <div id="shop-items" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+            </section>
+
+
+            <section id="character-collection" class="hidden">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-bold mb-4">角色图鉴</h2>
+                    <div class="flex flex-wrap gap-4 mb-6 items-center">
+                        <input type="text" id="character-filter-name" placeholder="按角色名称搜索..." class="p-2 border rounded-lg flex-grow">
+                        <select id="character-filter-rarity" class="p-2 border rounded-lg">
+                            <option value="">所有稀有度</option>
+                        </select>
+                        <select id="character-filter-gender" class="p-2 border rounded-lg">
+                            <option value="">所有性别</option>
+                        </select>
+                        <button id="character-dismantle-all-btn" class="bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700">一键分解重复</button>
                     </div>
+                    <div id="character-collection-view" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 max-h-[70vh] overflow-y-auto p-2 bg-gray-50 rounded"></div>
                 </div>
             </section>
 
@@ -213,6 +356,34 @@
         </div>
     </div>
 
+    <!-- Character Gacha Result Modal -->
+    <div id="character-gacha-result-modal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+        <div class="bg-white p-6 rounded-lg shadow-xl max-w-4xl w-full modal-content overflow-y-auto">
+            <h2 class="text-2xl font-bold mb-4 text-center">角色邂逅结果</h2>
+            <div id="character-gacha-result-cards" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4"></div>
+            <div class="text-center mt-6"><button id="close-character-gacha-modal" class="bg-pink-600 text-white font-bold py-2 px-6 rounded-lg">确认</button></div>
+        </div>
+    </div>
+
+    <!-- Character Detail Modal -->
+    <div id="character-detail-modal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+        <div class="bg-white p-6 rounded-lg shadow-xl max-w-4xl w-full modal-content overflow-y-auto">
+            <div id="character-detail-content"></div>
+            <div class="text-center mt-6"><button id="close-character-detail-modal" class="bg-pink-600 text-white font-bold py-2 px-6 rounded-lg">关闭</button></div>
+        </div>
+    </div>
+
+    <!-- Character Gacha Rates Modal -->
+    <div id="character-gacha-rates-modal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+        <div class="bg-white p-6 rounded-lg shadow-xl max-w-sm w-full">
+            <h2 class="text-2xl font-bold mb-4 text-center">角色邂逅概率</h2>
+            <div id="character-gacha-rates-content" class="space-y-2"></div>
+            <div class="text-center mt-6">
+                <button id="close-character-gacha-rates-modal" class="bg-pink-600 text-white font-bold py-2 px-6 rounded-lg">关闭</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Generic Confirmation Modal -->
     <div id="confirmation-modal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
         <div class="bg-white p-6 rounded-lg shadow-xl max-w-sm w-full text-gray-800">
@@ -245,6 +416,8 @@
     <script src="js/ui.js"></script> <!-- UI must be loaded first as other modules depend on it -->
     <script src="js/player.js"></script>
     <script src="js/gacha.js"></script>
+    <script src="js/character_gacha.js"></script> <!-- Character gacha system -->
+    <script src="js/character_collection.js"></script> <!-- Character collection system -->
     <script src="js/deck.js"></script>
     <script src="js/battle.js"></script>
     
