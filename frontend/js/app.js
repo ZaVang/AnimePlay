@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             await Game.CharacterGacha.init();
         }
         
-        // Initialize unified collection module
+        // Initialize unified collection module only
         if (Game.UnifiedCollection) {
             Game.UnifiedCollection.init();
         }

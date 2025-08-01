@@ -12,8 +12,8 @@ Game.UI = (function() {
         mainSections: document.querySelectorAll('main section'),
         home: {
             level: document.getElementById('player-level'),
-            tickets: document.getElementById('gacha-tickets'),
-            characterTickets: document.getElementById('character-tickets'),
+            animeTickets: document.getElementById('anime-gacha-tickets'),
+            characterTickets: document.getElementById('character-gacha-tickets'),
             knowledge: document.getElementById('knowledge-points'),
             expBar: document.getElementById('player-exp-bar'),
             expText: document.getElementById('player-exp-text'),
@@ -26,71 +26,42 @@ Game.UI = (function() {
             typeCharacterBtn: document.getElementById('gacha-type-character'),
             animeContent: document.getElementById('anime-gacha-content'),
             characterContent: document.getElementById('character-gacha-content'),
-            
-            // Tab navigation
-            tabs: { pool: document.getElementById('tab-gacha-pool'), history: document.getElementById('tab-gacha-history'), shop: document.getElementById('tab-gacha-shop') },
-            contents: { pool: document.getElementById('gacha-pool-content'), history: document.getElementById('gacha-history-content'), shop: document.getElementById('gacha-shop-content') },
-            
-            // Anime gacha elements
-            upBanner: document.getElementById('up-banner'),
-            singleBtn: document.getElementById('gacha-btn-single'),
-            multiBtn: document.getElementById('gacha-btn-multi'),
-            resultModal: document.getElementById('gacha-result-modal'),
-            resultContainer: document.getElementById('gacha-result-cards'),
-            closeResultBtn: document.getElementById('close-gacha-modal'),
-            historyChartCanvas: document.getElementById('gachaHistoryChart'),
-            historyList: document.getElementById('gacha-history-list'),
-            ratesModal: document.getElementById('gacha-rates-modal'),
-            ratesContent: document.getElementById('gacha-rates-content'),
-            showRatesBtn: document.getElementById('show-gacha-rates'),
-            closeRatesBtn: document.getElementById('close-gacha-rates-modal'),
-            shopItems: document.getElementById('shop-items'),
         },
-        deck: {
-            container: document.getElementById('deck-and-collection'),
-            selector: document.getElementById('deck-selector'),
-            newBtn: document.getElementById('new-deck-btn'),
-            renameBtn: document.getElementById('rename-deck-btn'),
-            deleteBtn: document.getElementById('delete-deck-btn'),
-            saveBtn: document.getElementById('save-deck-btn-new'),
-            costDisplay: document.getElementById('deck-cost-display'),
-            countDisplay: document.getElementById('deck-count-display'),
-            list: document.getElementById('current-deck-list'),
-        },
-        collection: {
-            container: document.getElementById('collection-view'),
-            filterName: document.getElementById('collection-filter-name'),
-            filterRarity: document.getElementById('collection-filter-rarity'),
-            filterTag: document.getElementById('collection-filter-tag'),
-            dismantleAllBtn: document.getElementById('dismantle-all-btn-new'),
-        },
-        battle: {
-            container: document.getElementById('battle'),
-            setup: document.getElementById('battle-setup-new'),
-            arenaContainer: document.getElementById('battle-arena-container'),
-            deckSelector: document.getElementById('battle-deck-selector'),
-            startBtn: document.getElementById('start-battle-btn-new'),
-            resultModal: document.getElementById('battle-result-modal'),
-            log: document.getElementById('battle-log-new'),
-        },
-        detailModal: {
-            modal: document.getElementById('card-detail-modal'),
-            content: document.getElementById('card-detail-content'),
-            closeBtn: document.getElementById('close-detail-modal'),
-        },
-        viewingQueueModal: {
-            modal: document.getElementById('viewing-queue-modal'),
-            collection: document.getElementById('viewing-queue-collection'),
-            closeBtn: document.getElementById('close-viewing-queue-modal'),
+        animeGacha: {
+            tabs: { 
+                pool: document.getElementById('tab-gacha-pool'), 
+                history: document.getElementById('tab-gacha-history'), 
+                shop: document.getElementById('tab-gacha-shop') 
+            },
+            contents: { 
+                pool: document.getElementById('anime-gacha-pool-content'), 
+                history: document.getElementById('anime-gacha-history-content'), 
+                shop: document.getElementById('anime-gacha-shop-content') 
+            },
+            upBanner: document.getElementById('anime-up-banner'),
+            singleBtn: document.getElementById('anime-gacha-btn-single'),
+            multiBtn: document.getElementById('anime-gacha-btn-multi'),
+            resultModal: document.getElementById('anime-gacha-result-modal'),
+            resultContainer: document.getElementById('anime-gacha-result-cards'),
+            closeResultBtn: document.getElementById('close-anime-gacha-modal'),
+            historyChartCanvas: document.getElementById('anime-gacha-history-chart'),
+            historyList: document.getElementById('anime-gacha-history-list'),
+            ratesModal: document.getElementById('anime-gacha-rates-modal'),
+            ratesContent: document.getElementById('anime-gacha-rates-content'),
+            showRatesBtn: document.getElementById('show-anime-gacha-rates'),
+            closeRatesBtn: document.getElementById('close-anime-gacha-rates-modal'),
+            shopItems: document.getElementById('anime-shop-items'),
         },
         characterGacha: {
             tabs: { 
-                pool: document.getElementById('tab-character-gacha-pool'), 
-                history: document.getElementById('tab-character-gacha-history') 
+                pool: document.getElementById('tab-gacha-pool'), 
+                history: document.getElementById('tab-gacha-history'), 
+                shop: document.getElementById('tab-gacha-shop') 
             },
             contents: { 
                 pool: document.getElementById('character-gacha-pool-content'), 
-                history: document.getElementById('character-gacha-history-content') 
+                history: document.getElementById('character-gacha-history-content'),
+                shop: document.getElementById('character-gacha-shop-content') 
             },
             characterUpBanner: document.getElementById('character-up-banner'),
             singleBtn: document.getElementById('character-gacha-btn-single'),
@@ -104,6 +75,28 @@ Game.UI = (function() {
             characterRatesContent: document.getElementById('character-gacha-rates-content'),
             showRatesBtn: document.getElementById('show-character-gacha-rates'),
             closeRatesBtn: document.getElementById('close-character-gacha-rates-modal'),
+            shopItems: document.getElementById('character-shop-items'),
+        },
+        deck: {
+            container: document.getElementById('deck-and-collection'),
+            selector: document.getElementById('deck-selector'),
+            newBtn: document.getElementById('new-deck-btn'),
+            renameBtn: document.getElementById('rename-deck-btn'),
+            deleteBtn: document.getElementById('delete-deck-btn'),
+            saveBtn: document.getElementById('save-deck-btn-new'),
+            costDisplay: document.getElementById('deck-cost-display'),
+            countDisplay: document.getElementById('deck-count-display'),
+            list: document.getElementById('current-deck-list'),
+        },
+        animeCollection: {
+            animeCollectionContainer: document.getElementById('anime-collection-view'),
+            animeFilterName: document.getElementById('anime-filter-name'),
+            animeFilterRarity: document.getElementById('anime-filter-rarity'),
+            animeFilterTag: document.getElementById('anime-filter-tag'),
+            dismantleAllBtn: document.getElementById('anime-dismantle-all-btn'),
+            animeDetailModal: document.getElementById('anime-detail-modal'),
+            animeDetailContent: document.getElementById('anime-detail-content'),
+            closeDetailBtn: document.getElementById('close-anime-detail-modal'),
         },
         characterCollection: {
             characterCollectionContainer: document.getElementById('character-collection-view'),
@@ -114,144 +107,102 @@ Game.UI = (function() {
             characterDetailModal: document.getElementById('character-detail-modal'),
             characterDetailContent: document.getElementById('character-detail-content'),
             closeDetailBtn: document.getElementById('close-character-detail-modal'),
+        },
+        battle: {
+            container: document.getElementById('battle'),
+            setup: document.getElementById('battle-setup-new'),
+            arenaContainer: document.getElementById('battle-arena-container'),
+            deckSelector: document.getElementById('battle-deck-selector'),
+            startBtn: document.getElementById('start-battle-btn-new'),
+            resultModal: document.getElementById('battle-result-modal'),
+            log: document.getElementById('battle-log-new'),
+        },
+        viewingQueueModal: {
+            modal: document.getElementById('viewing-queue-modal'),
+            collection: document.getElementById('viewing-queue-collection'),
+            closeBtn: document.getElementById('close-viewing-queue-modal'),
         }
     };
 
     let gachaHistoryChartInstance = null;
     let characterHistoryChartInstance = null;
 
-    function _createCardElement(cardData, context, options = {}) {
-        const { card, count } = cardData;
-        const { rarityConfig } = window.GAME_CONFIG;
-        const rarityColor = rarityConfig[card.rarity]?.c || 'bg-gray-500';
+    function _createUnifiedCardElement(itemData, itemSystem, context, options = {}) {
+        const { count } = itemData;
+        // Handle different data structures: {card: ..., count: ...} for anime, {character: ..., count: ...} for characters
+        const item = itemSystem.itemType === '角色' ? itemData.character : itemData.card;
+        
+        if (!item) {
+            const element = document.createElement('div');
+            element.className = 'card bg-white rounded-lg shadow-md overflow-hidden flex items-center justify-center';
+            element.style.height = '240px';
+            const itemId = itemData.id || (itemData.character && itemData.character.id) || (itemData.card && itemData.card.id) || 'unknown';
+            element.innerHTML = `<div class="text-center p-2"><p class="font-bold text-gray-500">加载中...</p><p class="text-xs text-gray-400">ID: ${itemId}</p></div>`;
+            return element;
+        }
+
+        const { rarityConfig } = itemSystem;
+        const rarityData = rarityConfig[item.rarity] || {};
+        const rarityColor = rarityData.c || 'bg-gray-500';
+        const effectClass = rarityData.effect && rarityData.effect !== 'none' ? rarityData.effect : '';
+        
         const element = document.createElement('div');
-        element.className = 'card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer group relative';
+        element.className = `card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer group relative ${effectClass}`;
 
-        const activeDeck = Game.Deck.getActiveDeck();
-        const isInDeck = activeDeck.includes(card.id);
-
+        let countBadge = '';
+        if (context.includes('collection') && count > 1) {
+            const badgeColor = itemSystem.itemType === '角色' ? 'bg-pink-600' : 'bg-indigo-600';
+            countBadge = `<div class="absolute bottom-1 right-1 ${badgeColor} text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">x${count}</div>`;
+        }
+        
         let overlay = '';
-        if (context === 'deck-collection' && isInDeck) {
+        if (context === 'deck-collection' && itemSystem.itemType === '动画' && Game.Deck.getActiveDeck().includes(item.id)) {
             overlay = '<div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center"><span class="text-white font-bold text-lg">已在卡组</span></div>';
         }
 
-        let countBadge = '';
-        if ((context === 'deck-collection' || context === 'collection') && count > 1) {
-            countBadge = `<div class="absolute bottom-1 right-1 bg-indigo-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">x${count}</div>`;
-        }
+        const image_placeholder = itemSystem.itemType === '角色' ? '角色头像' : '图片丢失';
         
+        let cardBottom = '';
+        if (itemSystem.itemType === '角色') {
+            cardBottom = `
+                <div class="p-2">
+                    <p class="text-xs text-center font-bold truncate" title="${item.name}">${item.name}</p>
+                    ${item.anime_count > 0 ? `<p class="text-xs text-center text-gray-500 mt-1">${item.anime_count}部作品</p>` : ''}
+                </div>`;
+        } else {
+            cardBottom = `<p class="text-xs text-center font-bold p-1 truncate" title="${item.name}">${item.name}</p>`;
+        }
+
         element.innerHTML = `
             <div class="relative">
-                <img src="${card.image_path}" class="w-full aspect-[2/3] object-cover" onerror="this.src='https://placehold.co/240x360/e2e8f0/334155?text=图片丢失';">
-                <div class="absolute top-1 right-1 px-2 py-0.5 text-xs font-bold text-white ${rarityColor.includes('from') ? 'bg-gradient-to-r' : ''} ${rarityColor} rounded-bl-lg rounded-tr-lg">${card.rarity}</div>
+                <img src="${item.image_path}" class="w-full aspect-[2/3] object-contain" onerror="this.src='https://placehold.co/240x360/e2e8f0/334155?text=${image_placeholder}';">
+                <div class="absolute top-1 right-1 px-2 py-0.5 text-xs font-bold text-white ${rarityColor.includes('from') ? 'bg-gradient-to-r' : ''} ${rarityColor} rounded-bl-lg rounded-tr-lg">${item.rarity}</div>
                 ${countBadge}
                 ${overlay}
             </div>
-            <p class="text-xs text-center font-bold p-1 truncate" title="${card.name}">${card.name}</p>`;
+            ${cardBottom}`;
 
         if (options.isDuplicate) {
              element.firstElementChild.innerHTML += `<div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-center p-1"><span class="text-white font-bold text-2xl">+1</span></div>`;
         }
-
-        element.dataset.cardId = card.id;
-
-        // Click handlers are now managed in their respective modules (Deck, Battle, etc.)
-        element.addEventListener('contextmenu', (event) => {
-            event.preventDefault();
-            _showCardDetail(cardData);
-        });
-
-        return element;
-    }
-
-    // Create character card element
-    function _createCharacterCardElement(characterData, context, options = {}) {
-        const { character, count } = characterData;
-        const { rarityConfig } = window.GAME_CONFIG.characterSystem;
-        const rarityConfig_data = rarityConfig[character.rarity] || {};
-        const rarityColor = rarityConfig_data.c || 'bg-gray-500';
-        const effectClass = rarityConfig_data.effect !== 'none' ? rarityConfig_data.effect : '';
-        
-        const element = document.createElement('div');
-        element.className = `character-card card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer group relative ${effectClass}`;
-
-        let countBadge = '';
-        if (context === 'character-collection' && count > 1) {
-            countBadge = `<div class="absolute bottom-1 right-1 bg-pink-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">x${count}</div>`;
-        }
-        
-        element.innerHTML = `
-            <div class="relative">
-                <img src="${character.image_path}" class="w-full aspect-[2/3] object-cover" onerror="this.src='https://placehold.co/240x360/e2e8f0/334155?text=角色头像';">
-                <div class="absolute top-1 right-1 px-2 py-0.5 text-xs font-bold text-white ${rarityColor.includes('from') ? 'bg-gradient-to-r' : ''} ${rarityColor} rounded-bl-lg rounded-tr-lg">${character.rarity}</div>
-                ${countBadge}
-            </div>
-            <div class="p-2">
-                <p class="text-xs text-center font-bold truncate" title="${character.name}">${character.name}</p>
-                ${character.anime_count > 0 ? `<p class="text-xs text-center text-gray-500 mt-1">${character.anime_count}部作品</p>` : ''}
-            </div>`;
-
-        if (options.isDuplicate) {
-            element.firstElementChild.innerHTML += `<div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-center p-1"><span class="text-white font-bold text-2xl">+1</span></div>`;
-        }
-
         if (options.isNew) {
             element.firstElementChild.innerHTML += `<div class="absolute top-1 left-1 bg-green-500 text-white text-xs font-bold px-1 rounded">NEW</div>`;
         }
 
-        element.dataset.characterId = character.id;
+        element.dataset.itemId = item.id;
+        element.dataset.itemType = itemSystem.itemType;
 
+        // Events will be handled by specific collection modules
+        
         return element;
     }
 
-    function _showCardDetail(cardData) {
-        const { card, count } = cardData;
-        const { rarityConfig } = window.GAME_CONFIG;
-        const rarityColor = rarityConfig[card.rarity]?.c || 'bg-gray-500';
-        
-        let detailHtml = `
-            <div class="flex flex-col md:flex-row gap-6">
-                <div class="md:w-1/3 flex-shrink-0">
-                    <img src="${card.image_path}" class="w-full aspect-[3/2] object-cover rounded-lg shadow-lg" onerror="this.src='https://placehold.co/300x200/e2e8f0/334155?text=图片丢失';">
-                </div>
-                <div class="md:w-2/3">
-                    <h2 class="text-3xl font-bold">${card.name}</h2>
-                    <div class="my-2 flex items-center gap-4">
-                        <span class="px-3 py-1 text-sm font-bold text-white ${rarityColor.includes('from') ? 'bg-gradient-to-r' : ''} ${rarityColor} rounded-full">${card.rarity}</span>
-                        <span class="text-lg font-semibold text-gray-700">拥有数量: <span class="font-bold text-indigo-600">${count}</span></span>
-                    </div>
-                    <p class="text-lg font-semibold text-indigo-600">点数: ${card.points} / Cost: ${card.cost}</p>
-                    <div class="mt-4 p-3 bg-gray-100 rounded-lg">
-                        <h3 class="font-bold text-gray-800">Bangumi 数据</h3>
-                        <div class="grid grid-cols-3 gap-2 text-center mt-2 text-sm">
-                            <div><p class="font-semibold text-gray-600">评分</p><p class="font-bold text-xl text-amber-600">${card.rating_score || 'N/A'}</p></div>
-                            <div><p class="font-semibold text-gray-600">排名</p><p class="font-bold text-xl text-amber-600">#${card.rating_rank || 'N/A'}</p></div>
-                            <div><p class="font-semibold text-gray-600">评价人数</p><p class="font-bold text-xl text-amber-600">${(card.rating_total || 0).toLocaleString()}</p></div>
-                        </div>
-                    </div>
-                    <p class="mt-4 text-gray-600">${card.description}</p>
-                    <h3 class="font-bold mt-4">羁绊标签:</h3>
-                    <div class="flex flex-wrap gap-2 mt-2">${(card.synergy_tags || []).map(tag => `<span class="bg-gray-200 text-gray-800 px-2 py-1 text-xs rounded-full">${tag}</span>`).join('') || '<span class="text-gray-500 text-sm">无</span>'}</div>
-                    <div id="dismantle-section" class="mt-6"></div>
-                </div>
-            </div>`;
+    function _createAnimeCardElement(cardData, context, options = {}) {
+        return _createUnifiedCardElement(cardData, window.GAME_CONFIG.animeSystem, context, options);
+    }
 
-        elements.detailModal.content.innerHTML = detailHtml;
-
-        if (count > 1) {
-            const dismantleValue = Game.AnimeGacha.getDismantleValue(card.rarity);
-            const dismantleSection = elements.detailModal.content.querySelector('#dismantle-section');
-            dismantleSection.innerHTML = `
-                <h3 class="font-bold">分解卡牌</h3>
-                <p class="text-sm text-gray-600">分解一张多余的卡牌可获得 <span class="font-bold text-emerald-600">${dismantleValue}</span> 知识点。</p>
-                <button id="dismantle-btn" class="mt-2 bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700">分解一张</button>
-            `;
-            dismantleSection.querySelector('#dismantle-btn').addEventListener('click', () => {
-                Game.Deck.dismantleCard(card.id);
-                elements.detailModal.modal.classList.add('hidden');
-            });
-        }
-        elements.detailModal.modal.classList.remove('hidden');
+    function _createCharacterCardElement(characterData, context, options = {}) {
+        return _createUnifiedCardElement(characterData, window.GAME_CONFIG.characterSystem, context, options);
     }
 
     function _logMessage(message, type = 'info') {
@@ -282,12 +233,18 @@ Game.UI = (function() {
 
     function _renderAll() {
         _renderPlayerState();
-        Game.AnimeGacha.renderUI(); // Delegate to Anime Gacha module
+        Game.AnimeGacha.renderUI();
         if (Game.CharacterGacha && Game.CharacterGacha.isInitialized()) {
-            Game.CharacterGacha.renderUI(); // Delegate to Character Gacha module
+            Game.CharacterGacha.renderUI();
         }
-        Game.Deck.renderUI();  // Delegate to Deck module
-        _renderViewingQueue(); // Add this line
+        
+        // Render unified collection system
+        if (Game.UnifiedCollection) {
+            Game.UnifiedCollection.renderUI();
+        }
+        
+        Game.Deck.renderUI();
+        _renderViewingQueue();
     }
     
     function _populateFilters() {
@@ -322,7 +279,7 @@ Game.UI = (function() {
             collectionContainer.innerHTML = '<p class="text-gray-500 col-span-full text-center">没有可添加的卡牌了。</p>';
         } else {
             availableCards.forEach(cardData => {
-                const cardEl = _createCardElement(cardData, 'viewing-queue-selection');
+                const cardEl = _createAnimeCardElement(cardData, 'viewing-queue-selection');
                 cardEl.addEventListener('click', () => Game.Player.addToViewingQueue(cardData.card.id, slotIndex));
                 collectionContainer.appendChild(cardEl);
             });
@@ -343,18 +300,16 @@ Game.UI = (function() {
 
             if (slot) {
                 const card = allCards.find(c => c.id === slot.cardId);
-                if (!card) return; // Card might not be found if allCards is not ready
+                if (!card) return;
                 
                 const rewards = window.GAME_CONFIG.gameplay.viewingQueue.rewards[card.rarity];
                 
-                // --- FIX: Add a guard against misconfiguration ---
                 if (!rewards) {
                     console.error(`观看队列错误: 稀有度 '${card.rarity}' (卡牌: ${card.name}) 没有在 game_config.js 中配置奖励。`);
                     slotElement.innerHTML = `<div class="text-center p-2"><p class="font-bold text-red-500">配置错误</p><p class="text-xs text-gray-500 truncate" title="${card.name}">${card.name}</p></div>`;
                     queueContainer.appendChild(slotElement);
-                    return; // Skips to the next item in the loop
+                    return;
                 }
-                // --- END FIX ---
 
                 const endTime = new Date(slot.startTime).getTime() + rewards.time * 60 * 1000;
                 const now = Date.now();
@@ -391,7 +346,6 @@ Game.UI = (function() {
         });
     }
 
-    // Switch between anime and character gacha
     function _switchGachaType(type) {
         const { typeAnimeBtn, typeCharacterBtn, animeContent, characterContent } = elements.gacha;
         
@@ -401,7 +355,6 @@ Game.UI = (function() {
             animeContent.classList.remove('hidden');
             characterContent.classList.add('hidden');
             
-            // Update tab content based on anime gacha
             _updateGachaTabsForAnime();
         } else {
             typeCharacterBtn.classList.add('active');
@@ -409,31 +362,24 @@ Game.UI = (function() {
             characterContent.classList.remove('hidden');
             animeContent.classList.add('hidden');
             
-            // Update tab content based on character gacha
             _updateGachaTabsForCharacter();
         }
     }
 
-    // Update gacha tabs for anime type
     function _updateGachaTabsForAnime() {
         const { tabs } = elements.gacha;
-        // Show shop tab for anime gacha
         if (tabs.shop) tabs.shop.style.display = 'block';
     }
 
-    // Update gacha tabs for character type
     function _updateGachaTabsForCharacter() {
         const { tabs } = elements.gacha;
-        // Hide shop tab for character gacha (no character shop yet)
         if (tabs.shop) tabs.shop.style.display = 'none';
         
-        // Switch to pool tab if currently on shop tab
         if (tabs.shop && tabs.shop.classList.contains('active')) {
             _switchGachaTab('pool');
         }
     }
 
-    // Switch gacha tabs (shared between anime and character)
     function _switchGachaTab(tabName) {
         const { tabs, contents } = elements.gacha;
         const isCharacterMode = elements.gacha.characterContent && !elements.gacha.characterContent.classList.contains('hidden');
@@ -445,7 +391,6 @@ Game.UI = (function() {
         });
 
         if (isCharacterMode) {
-            // Character gacha tab switching
             const characterContents = {
                 pool: document.getElementById('character-gacha-pool-content'),
                 history: document.getElementById('character-gacha-history-content')
@@ -461,7 +406,6 @@ Game.UI = (function() {
                 Game.UI.renderCharacterGachaHistory();
             }
         } else {
-            // Anime gacha tab switching
             Object.keys(contents).forEach(key => {
                 if (contents[key]) {
                     contents[key].classList.toggle('hidden', key !== tabName);
@@ -476,14 +420,12 @@ Game.UI = (function() {
 
     return {
         init: function() {
-            // Navigation
             window.addEventListener('hashchange', () => {
                 let hash = window.location.hash || '#home';
                 elements.mainSections.forEach(s => s.classList.toggle('hidden', `#${s.id}` !== hash));
                 elements.navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === hash));
                 if (hash === '#deck-and-collection') Game.Deck.renderUI();
                 if (hash === '#gacha') {
-                    // Initialize unified gacha interface
                     Game.AnimeGacha.renderUI();
                     if (Game.CharacterGacha && Game.CharacterGacha.isInitialized()) Game.CharacterGacha.renderUI();
                 }
@@ -491,17 +433,15 @@ Game.UI = (function() {
                 if (hash === '#battle') Game.Battle.renderSetup();
             });
             
-             // Set initial state
             location.hash = '#home';
             window.dispatchEvent(new HashChangeEvent('hashchange'));
 
-            // Modal close buttons
             elements.gacha.closeResultBtn.addEventListener('click', () => elements.gacha.resultModal.classList.add('hidden'));
-            elements.detailModal.closeBtn.addEventListener('click', () => elements.detailModal.modal.classList.add('hidden'));
+            elements.animeCollection.closeDetailBtn.addEventListener('click', () => elements.animeCollection.animeDetailModal.classList.add('hidden'));
+            elements.characterCollection.closeDetailBtn.addEventListener('click', () => elements.characterCollection.characterDetailModal.classList.add('hidden'));
             elements.viewingQueueModal.closeBtn.addEventListener('click', () => elements.viewingQueueModal.modal.classList.add('hidden'));
             elements.gacha.closeRatesBtn.addEventListener('click', () => elements.gacha.ratesModal.classList.add('hidden'));
             
-            // Unified collection modal close buttons
             const animeDetailCloseBtn = document.getElementById('close-anime-detail-modal');
             if (animeDetailCloseBtn) {
                 animeDetailCloseBtn.addEventListener('click', () => {
@@ -509,13 +449,11 @@ Game.UI = (function() {
                 });
             }
             
-            // Unified gacha interface type switching
             if (elements.gacha.typeAnimeBtn && elements.gacha.typeCharacterBtn) {
                 elements.gacha.typeAnimeBtn.addEventListener('click', () => _switchGachaType('anime'));
                 elements.gacha.typeCharacterBtn.addEventListener('click', () => _switchGachaType('character'));
             }
 
-            // Character system modal close buttons
             if (elements.characterGacha.closeResultBtn) {
                 elements.characterGacha.closeResultBtn.addEventListener('click', () => elements.characterGacha.characterResultModal.classList.add('hidden'));
             }
@@ -531,8 +469,8 @@ Game.UI = (function() {
             console.log("UI module initialized.");
         },
         elements: elements,
-        createCardElement: _createCardElement,
-        showCardDetail: _showCardDetail,
+        createAnimeCardElement: _createAnimeCardElement,
+        createCharacterCardElement: _createCharacterCardElement,
         logMessage: _logMessage,
         renderPlayerState: _renderPlayerState,
         renderAll: _renderAll,
@@ -547,10 +485,9 @@ Game.UI = (function() {
         showLoginModal: () => elements.loginModal.classList.remove('hidden'),
 
         renderGachaHistory() {
-            const history = Game.Player.getGachaHistory();
-            const { rarityConfig } = window.GAME_CONFIG;
+            const history = Game.Player.getAnimeGachaHistory();
+            const { rarityConfig } = window.GAME_CONFIG.animeSystem;
 
-            // Render chart
             const rarityCounts = Object.keys(rarityConfig).reduce((acc, r) => ({...acc, [r]: 0}), {});
             history.forEach(card => { if (rarityCounts[card.rarity] !== undefined) rarityCounts[card.rarity]++; });
             if (gachaHistoryChartInstance) gachaHistoryChartInstance.destroy();
@@ -560,7 +497,6 @@ Game.UI = (function() {
                 options: { responsive: true, maintainAspectRatio: false, scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } }, plugins: { legend: { display: false } } }
             });
 
-            // Render list
             elements.gacha.historyList.innerHTML = '';
             if (history.length === 0) {
                 elements.gacha.historyList.innerHTML = '<p class="text-gray-500 text-center">暂无邂逅历史。</p>';
@@ -588,7 +524,6 @@ Game.UI = (function() {
             const history = Game.Player.getCharacterGachaHistory();
             const { rarityConfig } = window.GAME_CONFIG.characterSystem;
 
-            // Render chart
             const rarityCounts = Object.keys(rarityConfig).reduce((acc, r) => ({...acc, [r]: 0}), {});
             history.forEach(character => { if (rarityCounts[character.rarity] !== undefined) rarityCounts[character.rarity]++; });
             if (characterHistoryChartInstance) characterHistoryChartInstance.destroy();
@@ -613,7 +548,6 @@ Game.UI = (function() {
                 });
             }
 
-            // Render list
             if (elements.characterGacha.characterHistoryList) {
                 elements.characterGacha.characterHistoryList.innerHTML = '';
                 if (history.length === 0) {
@@ -637,7 +571,5 @@ Game.UI = (function() {
                 });
             }
         },
-
-        createCharacterCardElement: _createCharacterCardElement,
     };
 })();

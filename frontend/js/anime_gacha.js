@@ -7,9 +7,9 @@ Game.AnimeGacha = (function() {
     const animeGachaConfig = {
         itemType: '动画',
         itemKey: 'card',
-        rarityConfig: window.GAME_CONFIG.rarityConfig,
-        gacha: window.GAME_CONFIG.gacha,
-        rateUp: window.GAME_CONFIG.rateUp
+        rarityConfig: window.GAME_CONFIG.animeSystem.rarityConfig,
+        gacha: window.GAME_CONFIG.animeSystem.gacha,
+        rateUp: window.GAME_CONFIG.animeSystem.rateUp
     };
 
     function _handleDraw(count) {
@@ -28,7 +28,7 @@ Game.AnimeGacha = (function() {
     }
     
     function getDismantleValue(rarity) {
-        return Game.BaseGacha.getDismantleValue(rarity, window.GAME_CONFIG.rarityConfig);
+        return Game.BaseGacha.getDismantleValue(rarity, window.GAME_CONFIG.animeSystem.rarityConfig);
     }
 
     function _renderGachaResult(drawnCards) {
@@ -40,7 +40,7 @@ Game.AnimeGacha = (function() {
         resultContainer.innerHTML = '';
         drawnCards.forEach(card => {
             const cardData = Game.Player.getPlayerCollection().get(card.id) || { card, count: 1 };
-            const cardEl = Game.UI.createCardElement(cardData, 'gacha-result', { isDuplicate: card.isDuplicate });
+            const cardEl = Game.UI.createAnimeCardElement(cardData, 'gacha-result', { isDuplicate: card.isDuplicate });
             resultContainer.appendChild(cardEl);
         });
         
@@ -63,7 +63,7 @@ Game.AnimeGacha = (function() {
             if (!card) return;
 
             const isOwned = playerCollection.has(card.id);
-            const { c: rarityColor } = window.GAME_CONFIG.rarityConfig[card.rarity] || {};
+            const { c: rarityColor } = window.GAME_CONFIG.animeSystem.rarityConfig[card.rarity] || {};
             
             const shopItem = document.createElement('div');
             shopItem.className = 'bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center';
@@ -126,7 +126,7 @@ Game.AnimeGacha = (function() {
             const { upBanner } = Game.UI.elements.gacha;
             if (rateUpCards.length === 0) return;
             let cardHtml = rateUpCards.map(card => `<div class="w-24 flex-shrink-0"><img src="${card.image_path}" class="w-full h-auto rounded-md shadow-lg"><p class="text-center text-xs font-bold truncate mt-1">${card.name}</p></div>`).join('');
-            upBanner.innerHTML = `<h3 class="text-xl font-bold mb-4 text-center text-purple-600">当前UP卡池</h3><div class="flex items-center justify-center gap-6 flex-wrap">${cardHtml}<div class="text-gray-600 text-sm"><p>・HR邂逅时，有<span class="font-bold text-indigo-600">${window.GAME_CONFIG.rateUp.hrChance * 100}%</span>概率为UP！</p><p>・累计<span class="font-bold text-indigo-600">${window.GAME_CONFIG.rateUp.pityPulls}</span>次邂逅必定获得UP之一！</p><p>・十连邂逅必定获得<span class="font-bold text-indigo-600">SR</span>及以上卡片！</p></div></div>`;
+            upBanner.innerHTML = `<h3 class="text-xl font-bold mb-4 text-center text-purple-600">当前UP卡池</h3><div class="flex items-center justify-center gap-6 flex-wrap">${cardHtml}<div class="text-gray-600 text-sm"><p>・HR邂逅时，有<span class="font-bold text-indigo-600">${window.GAME_CONFIG.animeSystem.rateUp.hrChance * 100}%</span>概率为UP！</p><p>・累计<span class="font-bold text-indigo-600">${window.GAME_CONFIG.animeSystem.rateUp.pityPulls}</span>次邂逅必定获得UP之一！</p><p>・十连邂逅必定获得<span class="font-bold text-indigo-600">SR</span>及以上卡片！</p></div></div>`;
             _renderShop();
         },
         getDismantleValue: getDismantleValue,

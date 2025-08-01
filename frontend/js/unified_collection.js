@@ -77,7 +77,7 @@ Game.UnifiedCollection = (function() {
             `;
         } else {
             filteredAnimes.forEach(animeData => {
-                const animeElement = Game.UI.createCardElement(animeData, 'anime-collection');
+                const animeElement = Game.UI.createAnimeCardElement(animeData, 'anime-collection');
                 animeElement.addEventListener('click', () => _showAnimeDetail(animeData));
                 collectionView.appendChild(animeElement);
             });
@@ -379,7 +379,38 @@ Game.UnifiedCollection = (function() {
                             <p class="text-lg font-semibold text-gray-800">${character.anime_count || 0}部</p>
                         </div>
                     </div>
-                    ${character.description ? `<p class="text-gray-600 mb-4">${character.description}</p>` : ''}
+
+                    ${character.anime_names && character.anime_names.length > 0 ? `
+                    <div class="mb-4">
+                        <h4 class="font-bold text-gray-800 mb-2">出演作品 (${character.anime_count}部)</h4>
+                        <div class="flex flex-wrap gap-2">
+                            ${character.anime_names.map(name => `
+                                <span class="bg-purple-100 text-purple-800 px-2 py-1 text-xs rounded-full">
+                                    ${name}
+                                </span>
+                            `).join('')}
+                        </div>
+                    </div>
+                    ` : (character.anime_ids && character.anime_ids.length > 0 ? `
+                    <div class="mb-4">
+                        <h4 class="font-bold text-gray-800 mb-2">出演作品</h4>
+                        <div class="flex flex-wrap gap-2">
+                            ${character.anime_ids.map(id => `
+                                <span class="bg-purple-100 text-purple-800 px-2 py-1 text-xs rounded-full">
+                                    作品ID: ${id}
+                                </span>
+                            `).join('')}
+                        </div>
+                    </div>
+                    ` : '')}
+
+                    ${character.description ? `
+                    <div class="mb-4">
+                        <h4 class="font-bold text-gray-800 mb-2">角色简介</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">${character.description}</p>
+                    </div>
+                    ` : ''}
+                    
                     <div id="character-dismantle-section" class="mt-6"></div>
                 </div>
             </div>

@@ -7,9 +7,14 @@ Game.Player = (function() {
     let _currentUser = '';
     let _allCards = [];
     let _rateUpCards = [];
-    let _playerCollection = new Map();
-    let _gachaHistory = [];
-    let _pityState = { totalPulls: 0, pullsSinceLastHR: 0 };
+
+    // Anime system state
+    let _animeCollection = new Map();
+    let _animeGachaHistory = [];
+    let _animePityState = { 
+        totalPulls: 0, 
+        pullsSinceLastHR: 0 
+    };
     
     // Character system state (unified with anime system)
     let _characterCollection = new Map();
@@ -32,9 +37,9 @@ Game.Player = (function() {
         if (!_currentUser) return;
 
         const payload = {
-            collection: Array.from(_playerCollection.entries()).map(([id, data]) => [id, data.count]),
-            pity: _pityState,
-            history: _gachaHistory,
+            animeCollection: Array.from(_animeCollection.entries()).map(([id, data]) => [id, data.count]),
+            animePity: _animePityState,
+            animeHistory: _animeGachaHistory,
             characterCollection: Array.from(_characterCollection.entries()).map(([id, data]) => [id, data.count]),
             characterPity: _characterPityState,
             characterHistory: _characterGachaHistory,
@@ -63,11 +68,11 @@ Game.Player = (function() {
             const data = await response.json();
 
             if (data.isNewUser) {
-                _playerCollection.clear();
+                _animeCollection.clear();
                 _characterCollection.clear();
-                _pityState = { totalPulls: 0, pullsSinceLastHR: 0 };
+                _animePityState = { totalPulls: 0, pullsSinceLastHR: 0 };
                 _characterPityState = { totalPulls: 0, pullsSinceLastHR: 0 };
-                _gachaHistory = [];
+                _animeGachaHistory = [];
                 _characterGachaHistory = [];
                 _playerState = {
                     ...window.GAME_CONFIG.playerInitialState,
@@ -77,17 +82,17 @@ Game.Player = (function() {
                     activeDeckName: '默认卡组',
                 };
             } else {
-                const savedCollection = data.collection || [];
-                _playerCollection.clear();
+                const savedCollection = data.animeCollection || [];
+                _animeCollection.clear();
                 savedCollection.forEach(([id, count]) => {
                     const card = _allCards.find(c => c.id === id);
-                    if (card) _playerCollection.set(id, { card, count });
+                    if (card) _animeCollection.set(id, { card, count });
                 });
 
-                _pityState = data.pity || { totalPulls: 0, pullsSinceLastHR: 0 };
+                _animePityState = data.animePity || { totalPulls: 0, pullsSinceLastHR: 0 };
                 _characterPityState = data.characterPity || { totalPulls: 0, pullsSinceLastHR: 0 };
                 _playerState = data.state || { ...window.GAME_CONFIG.playerInitialState };
-                _gachaHistory = data.history || [];
+                _animeGachaHistory = data.animeHistory || [];
                 _characterGachaHistory = data.characterHistory || [];
                 
                 // Load character collection (characters won't exist in _allCards, handled separately)  
@@ -119,11 +124,11 @@ Game.Player = (function() {
             console.error("加载存档失败:", error);
             alert("加载存档失败，将使用初始设置。");
             // Reset to default state on error
-             _playerCollection.clear();
+            _animeCollection.clear();
             _characterCollection.clear();
-            _pityState = { totalPulls: 0, pullsSinceLastHR: 0 };
+            _animePityState = { totalPulls: 0, pullsSinceLastHR: 0 };
             _characterPityState = { totalPulls: 0, pullsSinceLastLegendary: 0, pullsSinceLastMasterpiece: 0 };
-            _gachaHistory = [];
+            _animeGachaHistory = [];
             _characterGachaHistory = [];
             _playerState = {
                 ...window.GAME_CONFIG.playerInitialState,
@@ -144,17 +149,24 @@ Game.Player = (function() {
         Game.UI.showLoggedInUser(_currentUser);
         Game.UI.hideLoginModal();
         await _loadState();
+        
+        // Trigger character data update if character system is ready
+        if (Game.CharacterGacha && Game.CharacterGacha.isInitialized()) {
+            // Force update character collection with proper data
+            document.dispatchEvent(new CustomEvent('playerLoggedIn'));
+        }
+        
         Game.UI.renderAll();
     }
     
     async function _logout() {
         await _saveState(false);
         _currentUser = '';
-        _playerCollection.clear();
+        _animeCollection.clear();
         _characterCollection.clear();
-        _gachaHistory = [];
+        _animeGachaHistory = [];
         _characterGachaHistory = [];
-        _pityState = { totalPulls: 0, pullsSinceLastHR: 0 };
+        _animePityState = { totalPulls: 0, pullsSinceLastHR: 0 };
         _characterPityState = { totalPulls: 0, pullsSinceLastLegendary: 0, pullsSinceLastMasterpiece: 0 };
         _playerState = {
             ...window.GAME_CONFIG.playerInitialState,
@@ -184,8 +196,8 @@ Game.Player = (function() {
             _playerState.exp -= requiredExp;
             const rewards = levelUpRewards[_playerState.level];
             if (rewards) {
-                if (rewards.tickets) _playerState.gachaTickets += rewards.tickets;
-                if (rewards.characterTickets) _playerState.characterTickets += rewards.characterTickets;
+                if (rewards.animeTickets) _playerState.animeGachaTickets += rewards.animeTickets;
+                if (rewards.characterTickets) _playerState.characterGachaTickets += rewards.characterTickets;
                 if (rewards.knowledge) _playerState.knowledgePoints += rewards.knowledge;
                 Game.UI.logMessage(`等级提升至 ${_playerState.level}！获得动画券x${rewards.tickets || 0}，角色券x${rewards.characterTickets || 0}，知识点x${rewards.knowledge || 0}。`, 'level-up');
            }
@@ -206,7 +218,7 @@ Game.Player = (function() {
                 _allCards = await response.json();
                 console.log("Player module: Cards loaded:", _allCards.length);
 
-                const { rateUp } = window.GAME_CONFIG;
+                const { rateUp } = window.GAME_CONFIG.animeSystem;
                 _rateUpCards = rateUp.ids.map(id => _allCards.find(c => c.id === id)).filter(Boolean);
                 
                 Game.UI.elements.loginBtn.addEventListener('click', () => _login(Game.UI.elements.loginInput.value.trim()));
@@ -221,10 +233,12 @@ Game.Player = (function() {
         getCurrentUser: () => _currentUser,
         getAllCards: () => _allCards,
         getRateUpCards: () => _rateUpCards,
-        getPlayerCollection: () => _playerCollection,
-        getGachaHistory: () => _gachaHistory,
-        getPityState: () => _pityState,
         getState: () => _playerState,
+
+        // Anime system getters
+        getAnimeCollection: () => _animeCollection,
+        getAnimeGachaHistory: () => _animeGachaHistory,
+        getAnimePityState: () => _animePityState,
         
         // Character system getters
         getCharacterCollection: () => _characterCollection,
@@ -233,9 +247,9 @@ Game.Player = (function() {
         
         // Setters for controlled mutation
         setState: (newState) => { _playerState = newState; },
-        setPlayerCollection: (newCollection) => { _playerCollection = newCollection; },
-        setGachaHistory: (newHistory) => { _gachaHistory = newHistory; },
-        setPityState: (newPity) => { _pityState = newPity; },
+        setAnimeCollection: (newCollection) => { _animeCollection = newCollection; },
+        setAnimeGachaHistory: (newHistory) => { _animeGachaHistory = newHistory; },
+        setAnimePityState: (newPity) => { _animePityState = newPity; },
         
         // Actions
         saveState: _saveState,

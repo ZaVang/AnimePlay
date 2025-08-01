@@ -1,41 +1,21 @@
-
 window.GAME_CONFIG = {
     // 玩家初始状态
     playerInitialState: {
         level: 1,
         knowledgePoints: 0,
-        gachaTickets: 100,
-        characterTickets: 10, // 初始角色卡券
+        animeGachaTickets: 100,
+        characterGachaTickets: 100, // 初始角色卡券
     },
     // AI 对手配置
     aiOpponent: {
         name: "路人AI",
         deck: [2, 12, 29, 34, 43, 97, 100, 258, 265, 2166],
     },
-    // 卡牌稀有度配置
-    rarityConfig: {
-        'UR': { p: 0.5, c: 'from-amber-400 to-red-500', dismantleValue: 1000, color: 'text-red-500' },
-        'HR': { p: 1.5, c: 'from-red-500 to-purple-600', dismantleValue: 400, color: 'text-purple-600' },
-        'SSR': { p: 3, c: 'from-yellow-300 to-amber-400', dismantleValue: 100, color: 'text-amber-400' },
-        'SR': { p: 10, c: 'bg-purple-500', dismantleValue: 20, color: 'text-purple-500' },
-        'R': { p: 25, c: 'bg-blue-500', dismantleValue: 5, color: 'text-blue-500' },
-        'N': { p: 60, c: 'bg-gray-500', dismantleValue: 1, color: 'text-gray-500' }
-    },
-    // UP卡池配置
-    rateUp: {
-        ids: [1428, 253], // UP卡牌的ID
-        hrChance: 0.66,   // HR稀有度时，获得UP卡牌的概率
-        pityPulls: 70,    // 必定获得UP卡牌的保底抽数
-    },
     // 卡组构筑限制
     deckBuilding: {
         maxCost: 150,
         maxCards: 20, // Increased from 10
         minCardsForBattle: 3,
-    },
-    // 抽卡设置
-    gacha: {
-        guaranteedSR_Pulls: 10, // 十连抽保底SR
     },
     // 战斗设置
     battle: {
@@ -87,17 +67,38 @@ window.GAME_CONFIG = {
             }
         }
     },
-    // 商店配置
-    shop: {
-        items: [
-            { cardId: 1428, cost: 10000 }, // UR card
-            { cardId: 253, cost: 10000 }, // UR card
-        ]
+    
+    // --- Anime System ---
+    animeSystem: {
+        itemType: '动画',
+        rarityConfig: {
+            'UR': { p: 0.5, c: 'from-amber-400 to-red-500', dismantleValue: 1000, color: 'text-red-500' },
+            'HR': { p: 1.5, c: 'from-red-500 to-purple-600', dismantleValue: 400, color: 'text-purple-600' },
+            'SSR': { p: 3, c: 'from-yellow-300 to-amber-400', dismantleValue: 100, color: 'text-amber-400' },
+            'SR': { p: 10, c: 'bg-purple-500', dismantleValue: 20, color: 'text-purple-500' },
+            'R': { p: 25, c: 'bg-blue-500', dismantleValue: 5, color: 'text-blue-500' },
+            'N': { p: 60, c: 'bg-gray-500', dismantleValue: 1, color: 'text-gray-500' }
+        },
+        rateUp: {
+            ids: [1428, 253], // UP卡牌的ID
+            hrChance: 0.66,   // HR稀有度时，获得UP卡牌的概率
+            pityPulls: 70,    // 必定获得UP卡牌的保底抽数
+        },
+        gacha: {
+            guaranteedSR_Pulls: 10, // 十连抽保底SR
+        },
+        // 商店配置
+        shop: {
+            items: [
+                { animeCardId: 1428, cost: 10000 }, // UR card
+                { animeCardId: 253, cost: 10000 }, // UR card
+            ]
+        },
     },
 
-    // --- Character System with Unified Configuration ---
+    // --- Character System ---
     characterSystem: {
-        // Character rarity configuration (now identical to anime config)
+        itemType: '角色',
         rarityConfig: {
             'UR': { p: 0.5, c: 'from-amber-400 to-red-500', dismantleValue: 1000, color: 'text-red-500', effect: 'legendary-glow' },
             'HR': { p: 1.5, c: 'from-red-500 to-purple-600', dismantleValue: 400, color: 'text-purple-600', effect: 'masterpiece-shine' },
@@ -116,12 +117,13 @@ window.GAME_CONFIG = {
         gacha: {
             guaranteedSR_Pulls: 10, // 10-pull guarantees at least SR (identical to anime)
         },
-        // Sample character pool (will be loaded from backend)
-        sampleCharacters: [
-            { id: 1, name: "鲁路修·兰佩路基", rarity: "UR", anime_ids: [793, 8], gender: "male" },
-            { id: 2, name: "C.C.", rarity: "HR", anime_ids: [793, 8], gender: "female" },
-            { id: 3, name: "朱雀", rarity: "SSR", anime_ids: [793, 8], gender: "male" }
-        ]
+        // 商店配置
+        shop: {
+            items: [
+                { characterCardId: 1, cost: 10000 }, // UR character
+                { characterCardId: 2, cost: 10000 }, // HR character
+            ]
+        },
     },
 
     // --- Gameplay Settings ---
@@ -130,18 +132,18 @@ window.GAME_CONFIG = {
         levelXP: [0, 100, 250, 500, 800, 1200, 1800, 2500, 3500, 5000], // Up to level 10
         // Rewards for leveling up
         levelUpRewards: {
-            2: { tickets: 5, knowledge: 100, characterTickets: 3 },
-            3: { tickets: 5, knowledge: 200, characterTickets: 3 },
-            4: { tickets: 10, knowledge: 300, characterTickets: 5 },
-            5: { tickets: 10, knowledge: 500, characterTickets: 5 },
-            6: { tickets: 15, knowledge: 800, characterTickets: 8 },
-            7: { tickets: 15, knowledge: 1000, characterTickets: 8 },
-            8: { tickets: 20, knowledge: 1500, characterTickets: 10 },
-            9: { tickets: 20, knowledge: 2000, characterTickets: 10 },
-            10: { tickets: 50, knowledge: 5000, characterTickets: 20 },
+            2: { animeTickets: 5, knowledge: 100, characterTickets: 3 },
+            3: { animeTickets: 5, knowledge: 200, characterTickets: 3 },
+            4: { animeTickets: 10, knowledge: 300, characterTickets: 5 },
+            5: { animeTickets: 10, knowledge: 500, characterTickets: 5 },
+            6: { animeTickets: 15, knowledge: 800, characterTickets: 8 },
+            7: { animeTickets: 15, knowledge: 1000, characterTickets: 8 },
+            8: { animeTickets: 20, knowledge: 1500, characterTickets: 10 },
+            9: { animeTickets: 20, knowledge: 2000, characterTickets: 10 },
+            10: { animeTickets: 50, knowledge: 5000, characterTickets: 20 },
         },
-        // EXP gained from drawing cards
-        gachaEXP: {
+        // Anime gacha EXP
+        animeGachaEXP: {
             single: 10,
             multi: 110
         },

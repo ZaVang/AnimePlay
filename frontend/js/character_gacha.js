@@ -51,12 +51,22 @@ Game.CharacterGacha = (function() {
     // Update player character collection with proper character data
     function _updatePlayerCharacterCollection() {
         const playerCharacterCollection = Game.Player.getCharacterCollection();
+        let updatedCount = 0;
+        
         playerCharacterCollection.forEach((characterData, characterId) => {
             const actualCharacter = allCharacters.find(c => c.id == characterId);
             if (actualCharacter) {
                 characterData.character = actualCharacter;
+                updatedCount++;
+            } else {
+                console.warn(`Character not found for ID: ${characterId}`);
             }
         });
+        
+        console.log(`Updated ${updatedCount} characters in player collection`);
+        
+        // Notify other modules that character data is ready
+        document.dispatchEvent(new CustomEvent('characterDataReady'));
     }
 
     // Get UP characters from the current UP pool
@@ -154,6 +164,13 @@ Game.CharacterGacha = (function() {
             }
             
             isInitialized = true;
+            
+            // Listen for player login events to update character collection
+            document.addEventListener('playerLoggedIn', () => {
+                console.log('Player logged in, updating character collection...');
+                _updatePlayerCharacterCollection();
+            });
+            
             console.log("Character Gacha system initialized successfully.");
         },
         
