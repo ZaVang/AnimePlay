@@ -142,7 +142,7 @@ Game.UI = (function() {
         
         element.innerHTML = `
             <div class="relative">
-                <img src="${card.image_path}" class="w-full aspect-[3/2] object-cover" onerror="this.src='https://placehold.co/300x200/e2e8f0/334155?text=图片丢失';">
+                <img src="${card.image_path}" class="w-full aspect-[2/3] object-cover" onerror="this.src='https://placehold.co/240x360/e2e8f0/334155?text=图片丢失';">
                 <div class="absolute top-1 right-1 px-2 py-0.5 text-xs font-bold text-white ${rarityColor.includes('from') ? 'bg-gradient-to-r' : ''} ${rarityColor} rounded-bl-lg rounded-tr-lg">${card.rarity}</div>
                 ${countBadge}
                 ${overlay}
@@ -182,7 +182,7 @@ Game.UI = (function() {
         
         element.innerHTML = `
             <div class="relative">
-                <img src="${character.image_path}" class="w-full aspect-[3/2] object-cover" onerror="this.src='https://placehold.co/300x200/e2e8f0/334155?text=角色头像';">
+                <img src="${character.image_path}" class="w-full aspect-[2/3] object-cover" onerror="this.src='https://placehold.co/240x360/e2e8f0/334155?text=角色头像';">
                 <div class="absolute top-1 right-1 px-2 py-0.5 text-xs font-bold text-white ${rarityColor.includes('from') ? 'bg-gradient-to-r' : ''} ${rarityColor} rounded-bl-lg rounded-tr-lg">${character.rarity}</div>
                 ${countBadge}
             </div>
@@ -239,7 +239,7 @@ Game.UI = (function() {
         elements.detailModal.content.innerHTML = detailHtml;
 
         if (count > 1) {
-            const dismantleValue = Game.Gacha.getDismantleValue(card.rarity);
+            const dismantleValue = Game.AnimeGacha.getDismantleValue(card.rarity);
             const dismantleSection = elements.detailModal.content.querySelector('#dismantle-section');
             dismantleSection.innerHTML = `
                 <h3 class="font-bold">分解卡牌</h3>
@@ -282,12 +282,9 @@ Game.UI = (function() {
 
     function _renderAll() {
         _renderPlayerState();
-        Game.Gacha.renderUI(); // Delegate to Gacha module
+        Game.AnimeGacha.renderUI(); // Delegate to Anime Gacha module
         if (Game.CharacterGacha && Game.CharacterGacha.isInitialized()) {
             Game.CharacterGacha.renderUI(); // Delegate to Character Gacha module
-        }
-        if (Game.CharacterCollection) {
-            Game.CharacterCollection.renderUI(); // Delegate to Character Collection module
         }
         Game.Deck.renderUI();  // Delegate to Deck module
         _renderViewingQueue(); // Add this line
@@ -487,10 +484,10 @@ Game.UI = (function() {
                 if (hash === '#deck-and-collection') Game.Deck.renderUI();
                 if (hash === '#gacha') {
                     // Initialize unified gacha interface
-                    Game.Gacha.renderUI();
+                    Game.AnimeGacha.renderUI();
                     if (Game.CharacterGacha && Game.CharacterGacha.isInitialized()) Game.CharacterGacha.renderUI();
                 }
-                if (hash === '#character-collection' && Game.CharacterCollection) Game.CharacterCollection.renderUI();
+                if (hash === '#collection' && Game.UnifiedCollection) Game.UnifiedCollection.renderUI();
                 if (hash === '#battle') Game.Battle.renderSetup();
             });
             
@@ -503,6 +500,14 @@ Game.UI = (function() {
             elements.detailModal.closeBtn.addEventListener('click', () => elements.detailModal.modal.classList.add('hidden'));
             elements.viewingQueueModal.closeBtn.addEventListener('click', () => elements.viewingQueueModal.modal.classList.add('hidden'));
             elements.gacha.closeRatesBtn.addEventListener('click', () => elements.gacha.ratesModal.classList.add('hidden'));
+            
+            // Unified collection modal close buttons
+            const animeDetailCloseBtn = document.getElementById('close-anime-detail-modal');
+            if (animeDetailCloseBtn) {
+                animeDetailCloseBtn.addEventListener('click', () => {
+                    document.getElementById('anime-detail-modal').classList.add('hidden');
+                });
+            }
             
             // Unified gacha interface type switching
             if (elements.gacha.typeAnimeBtn && elements.gacha.typeCharacterBtn) {

@@ -3,6 +3,8 @@ window.Game = window.Game || {};
 
 Game.Deck = (function() {
 
+    let currentDeckView = 'anime'; // 'anime', 'character', 'mixed'
+
     function _addCardToDeck(cardId) {
         const playerState = Game.Player.getState();
         const deck = playerState.decks[playerState.activeDeckName];
@@ -85,7 +87,7 @@ Game.Deck = (function() {
         const cardData = playerCollection.get(cardId);
         if (cardData.count > 1) {
             cardData.count--;
-            const dismantleValue = Game.Gacha.getDismantleValue(cardData.card.rarity);
+            const dismantleValue = Game.AnimeGacha.getDismantleValue(cardData.card.rarity);
             playerState.knowledgePoints += dismantleValue;
             Game.UI.logMessage(`分解了 ${cardData.card.name}, 获得 ${dismantleValue} 知识点。`, 'reward');
             Game.UI.renderPlayerState();
@@ -101,7 +103,7 @@ Game.Deck = (function() {
         let totalKnowledgeGained = 0;
         for (const [cardId, cardData] of playerCollection.entries()) {
             if (cardData.count > 1) {
-                const dismantleValue = Game.Gacha.getDismantleValue(cardData.card.rarity);
+                const dismantleValue = Game.AnimeGacha.getDismantleValue(cardData.card.rarity);
                 const duplicatesToDismantle = cardData.count - 1;
                 const knowledgeGained = duplicatesToDismantle * dismantleValue;
                 totalKnowledgeGained += knowledgeGained;
@@ -120,23 +122,47 @@ Game.Deck = (function() {
         }
     }
 
-    function _renderUI() {
-        if (Game.UI.elements.deck.container.classList.contains('hidden')) return;
+    // 切换卡组视图
+    function _switchDeckView(viewType) {
+        currentDeckView = viewType;
+        
+        // 更新按钮状态
+        document.querySelectorAll('.deck-view-btn').forEach(btn => btn.classList.remove('active'));
+        document.getElementById(`deck-view-${viewType}`).classList.add('active');
+        
+        // 切换视图
+        document.getElementById('deck-anime-collection').classList.toggle('hidden', viewType !== 'anime');
+        document.getElementById('deck-character-collection').classList.toggle('hidden', viewType !== 'character');
+        document.getElementById('deck-mixed-collection').classList.toggle('hidden', viewType !== 'mixed');
+        
+        _renderCollectionView();
+    }
 
-        const playerState = Game.Player.getState();
+    // 渲染收藏视图
+    function _renderCollectionView() {
+        switch (currentDeckView) {
+            case 'anime':
+                _renderAnimeCollection();
+                break;
+            case 'character':
+                _renderCharacterCollection();
+                break;
+            case 'mixed':
+                _renderMixedCollection();
+                break;
+        }
+    }
+
+    // 渲染动画收藏
+    function _renderAnimeCollection() {
         const playerCollection = Game.Player.getPlayerCollection();
-        const allCards = Game.Player.getAllCards();
-        const { deck: deckUI, collection: collectionUI } = Game.UI.elements;
-        const { deckBuilding } = window.GAME_CONFIG;
-
-        const deck = playerState.decks[playerState.activeDeckName] || [];
-
-        // Render Collection
-        collectionUI.container.innerHTML = '';
-        const nameFilter = collectionUI.filterName.value.toLowerCase();
-        const rarityFilter = collectionUI.filterRarity.value;
-        const tagFilter = collectionUI.filterTag.value;
-        const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
+        const collectionView = document.getElementById('collection-view');
+        const nameFilter = document.getElementById('collection-filter-name').value.toLowerCase();
+        const rarityFilter = document.getElementById('collection-filter-rarity').value;
+        const tagFilter = document.getElementById('collection-filter-tag').value;
+        
+        collectionView.innerHTML = '';
+        
         const filteredCards = Array.from(playerCollection.values()).filter(data => {
             const card = data.card;
             const nameMatch = card.name.toLowerCase().includes(nameFilter);
@@ -145,6 +171,7 @@ Game.Deck = (function() {
             return nameMatch && rarityMatch && tagMatch;
         });
 
+        const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
         filteredCards.sort((a, b) => {
             const rarityA = rarityOrder.indexOf(a.card.rarity);
             const rarityB = rarityOrder.indexOf(b.card.rarity);
@@ -152,13 +179,138 @@ Game.Deck = (function() {
             return b.card.points - a.card.points;
         }).forEach(cardData => {
             const cardEl = Game.UI.createCardElement(cardData, 'deck-collection');
+            const playerState = Game.Player.getState();
+            const deck = playerState.decks[playerState.activeDeckName] || [];
+            
             if (deck.includes(cardData.card.id)) {
                 cardEl.classList.add('opacity-50', 'cursor-not-allowed');
             } else {
                 cardEl.addEventListener('click', () => _addCardToDeck(cardData.card.id));
             }
-            collectionUI.container.appendChild(cardEl);
+            collectionView.appendChild(cardEl);
         });
+    }
+
+    // 渲染角色收藏
+    function _renderCharacterCollection() {
+        const playerCharacterCollection = Game.Player.getCharacterCollection();
+        const collectionView = document.getElementById('deck-character-collection-view');
+        const nameFilter = document.getElementById('deck-character-filter-name').value.toLowerCase();
+        const rarityFilter = document.getElementById('deck-character-filter-rarity').value;
+        const genderFilter = document.getElementById('deck-character-filter-gender').value;
+        
+        collectionView.innerHTML = '';
+        
+        const filteredCharacters = Array.from(playerCharacterCollection.values()).filter(data => {
+            const character = data.character;
+            const nameMatch = character.name.toLowerCase().includes(nameFilter);
+            const rarityMatch = rarityFilter ? character.rarity === rarityFilter : true;
+            const genderMatch = genderFilter ? character.gender === genderFilter : true;
+            return nameMatch && rarityMatch && genderMatch;
+        });
+
+        const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
+        filteredCharacters.sort((a, b) => {
+            const rarityA = rarityOrder.indexOf(a.character.rarity);
+            const rarityB = rarityOrder.indexOf(b.character.rarity);
+            if (rarityA !== rarityB) return rarityA - rarityB;
+            return a.character.name.localeCompare(b.character.name);
+        }).forEach(characterData => {
+            const characterEl = Game.UI.createCharacterCardElement(characterData, 'deck-character-collection');
+            // 注意：目前角色卡不能添加到卡组，这里只是展示
+            collectionView.appendChild(characterEl);
+        });
+    }
+
+    // 渲染混合收藏
+    function _renderMixedCollection() {
+        const playerCollection = Game.Player.getPlayerCollection();
+        const playerCharacterCollection = Game.Player.getCharacterCollection();
+        const collectionView = document.getElementById('deck-mixed-collection-view');
+        const nameFilter = document.getElementById('deck-mixed-filter-name').value.toLowerCase();
+        const typeFilter = document.getElementById('deck-mixed-filter-type').value;
+        const rarityFilter = document.getElementById('deck-mixed-filter-rarity').value;
+        
+        collectionView.innerHTML = '';
+        
+        let allItems = [];
+        
+        // 添加动画卡
+        if (!typeFilter || typeFilter === 'anime') {
+            Array.from(playerCollection.values()).forEach(data => {
+                allItems.push({ type: 'anime', data: data });
+            });
+        }
+        
+        // 添加角色卡
+        if (!typeFilter || typeFilter === 'character') {
+            Array.from(playerCharacterCollection.values()).forEach(data => {
+                allItems.push({ type: 'character', data: data });
+            });
+        }
+        
+        // 应用筛选
+        const filteredItems = allItems.filter(item => {
+            const itemData = item.type === 'anime' ? item.data.card : item.data.character;
+            const nameMatch = itemData.name.toLowerCase().includes(nameFilter);
+            const rarityMatch = rarityFilter ? itemData.rarity === rarityFilter : true;
+            return nameMatch && rarityMatch;
+        });
+        
+        // 排序
+        const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
+        filteredItems.sort((a, b) => {
+            const itemA = a.type === 'anime' ? a.data.card : a.data.character;
+            const itemB = b.type === 'anime' ? b.data.card : b.data.character;
+            const rarityA = rarityOrder.indexOf(itemA.rarity);
+            const rarityB = rarityOrder.indexOf(itemB.rarity);
+            if (rarityA !== rarityB) return rarityA - rarityB;
+            return itemA.name.localeCompare(itemB.name);
+        });
+        
+        // 渲染
+        filteredItems.forEach(item => {
+            let element;
+            if (item.type === 'anime') {
+                element = Game.UI.createCardElement(item.data, 'deck-mixed-collection');
+                const playerState = Game.Player.getState();
+                const deck = playerState.decks[playerState.activeDeckName] || [];
+                
+                if (deck.includes(item.data.card.id)) {
+                    element.classList.add('opacity-50', 'cursor-not-allowed');
+                } else {
+                    element.addEventListener('click', () => _addCardToDeck(item.data.card.id));
+                }
+            } else {
+                element = Game.UI.createCharacterCardElement(item.data, 'deck-mixed-collection');
+                // 角色卡暂时不能加入卡组
+                element.classList.add('opacity-75');
+            }
+            
+            // 添加类型标识
+            const typeIndicator = document.createElement('div');
+            typeIndicator.className = `absolute top-1 left-1 px-1 py-0.5 text-xs font-bold rounded ${
+                item.type === 'anime' ? 'bg-indigo-500 text-white' : 'bg-pink-500 text-white'
+            }`;
+            typeIndicator.textContent = item.type === 'anime' ? '动' : '角';
+            element.querySelector('.relative').appendChild(typeIndicator);
+            
+            collectionView.appendChild(element);
+        });
+    }
+
+    function _renderUI() {
+        if (Game.UI.elements.deck.container.classList.contains('hidden')) return;
+
+        const playerState = Game.Player.getState();
+        const playerCollection = Game.Player.getPlayerCollection();
+        const { deck: deckUI } = Game.UI.elements;
+        const { deckBuilding } = window.GAME_CONFIG;
+
+        const deck = playerState.decks[playerState.activeDeckName] || [];
+
+        // Render Collection based on current view
+        _renderCollectionView();
 
         // Render Deck
         deckUI.list.innerHTML = '';
@@ -203,6 +355,37 @@ Game.Deck = (function() {
             collectionUI.filterRarity.addEventListener('change', _renderUI);
             collectionUI.filterTag.addEventListener('change', _renderUI);
             collectionUI.dismantleAllBtn.addEventListener('click', _dismantleAllDuplicates);
+
+            // 视图切换按钮
+            document.getElementById('deck-view-anime').addEventListener('click', () => _switchDeckView('anime'));
+            document.getElementById('deck-view-character').addEventListener('click', () => _switchDeckView('character'));
+            document.getElementById('deck-view-mixed').addEventListener('click', () => _switchDeckView('mixed'));
+
+            // 角色收藏筛选器
+            const characterNameFilter = document.getElementById('deck-character-filter-name');
+            const characterRarityFilter = document.getElementById('deck-character-filter-rarity');
+            const characterGenderFilter = document.getElementById('deck-character-filter-gender');
+            const characterDismantleBtn = document.getElementById('deck-character-dismantle-all-btn');
+
+            if (characterNameFilter) characterNameFilter.addEventListener('input', _renderUI);
+            if (characterRarityFilter) characterRarityFilter.addEventListener('change', _renderUI);
+            if (characterGenderFilter) characterGenderFilter.addEventListener('change', _renderUI);
+            if (characterDismantleBtn) {
+                characterDismantleBtn.addEventListener('click', () => {
+                    if (Game.UnifiedCollection && Game.UnifiedCollection.dismantleAllCharacters) {
+                        Game.UnifiedCollection.dismantleAllCharacters();
+                    }
+                });
+            }
+
+            // 混合视图筛选器
+            const mixedNameFilter = document.getElementById('deck-mixed-filter-name');
+            const mixedTypeFilter = document.getElementById('deck-mixed-filter-type');
+            const mixedRarityFilter = document.getElementById('deck-mixed-filter-rarity');
+
+            if (mixedNameFilter) mixedNameFilter.addEventListener('input', _renderUI);
+            if (mixedTypeFilter) mixedTypeFilter.addEventListener('change', _renderUI);
+            if (mixedRarityFilter) mixedRarityFilter.addEventListener('change', _renderUI);
 
             console.log("Deck module initialized.");
         },

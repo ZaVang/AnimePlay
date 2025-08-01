@@ -6,6 +6,15 @@ Game.CharacterGacha = (function() {
     let allCharacters = [];
     let isInitialized = false;
 
+    // 角色抽卡配置 (统一结构)
+    const characterGachaConfig = {
+        itemType: '角色',
+        itemKey: 'character',
+        rarityConfig: window.GAME_CONFIG.characterSystem.rarityConfig,
+        gacha: window.GAME_CONFIG.characterSystem.gacha,
+        rateUp: window.GAME_CONFIG.characterSystem.rateUp
+    };
+
     // Load character data from backend
     async function _loadCharacterData() {
         try {
@@ -52,133 +61,36 @@ Game.CharacterGacha = (function() {
 
     // Get UP characters from the current UP pool
     function _getUpCharacters() {
-        const { characterRateUp } = window.GAME_CONFIG.characterSystem;
-        if (!characterRateUp.ids || characterRateUp.ids.length === 0) {
+        const { rateUp } = window.GAME_CONFIG.characterSystem;
+        if (!rateUp.ids || rateUp.ids.length === 0) {
             return [];
         }
-        return allCharacters.filter(c => characterRateUp.ids.includes(c.id));
+        return allCharacters.filter(c => rateUp.ids.includes(c.id));
     }
 
     // Set UP characters for the character gacha
     function _setUpCharacters(characterIds) {
-        window.GAME_CONFIG.characterSystem.characterRateUp.ids = characterIds || [];
+        window.GAME_CONFIG.characterSystem.rateUp.ids = characterIds || [];
         console.log('Character UP pool updated:', characterIds);
     }
 
 
     // Handle character gacha draw
     function _handleCharacterDraw(count) {
-        if (!Game.Player.getCurrentUser()) {
-            alert("请先登录！");
-            return;
-        }
-
-        const playerState = Game.Player.getState();
-        console.log(`[DEBUG] Character tickets: ${playerState.characterTickets}, Need: ${count}`);
-        
-        // Ensure characterTickets is a number and not undefined
-        const currentTickets = playerState.characterTickets || 0;
-        if (currentTickets < count) {
-            alert(`角色邂逅券不足！当前拥有：${currentTickets}，需要：${count}`);
-            return;
-        }
-
-        // Deduct tickets and add EXP
-        playerState.characterTickets = currentTickets - count;
-        const expGained = count === 1 ? 
-            window.GAME_CONFIG.gameplay.characterGachaEXP.single : 
-            window.GAME_CONFIG.gameplay.characterGachaEXP.multi;
-        Game.Player.addExp(expGained);
-
-        // Perform gacha
-        const drawnCharacters = _performCharacterGacha(count);
-        
-        // Update collection
-        const playerCharacterCollection = Game.Player.getCharacterCollection();
-        
-        drawnCharacters.forEach(character => {
-            if (playerCharacterCollection.has(character.id)) {
-                const existing = playerCharacterCollection.get(character.id);
-                existing.count++;
-                character.isDuplicate = true;
-            } else {
-                playerCharacterCollection.set(character.id, { character: character, count: 1 });
-                character.isNew = true;
-            }
-        });
-
-        // Save to gacha history
-        const characterHistory = Game.Player.getCharacterGachaHistory();
-        characterHistory.push(...drawnCharacters);
-        
-        Game.Player.saveState(false);
-        _renderCharacterGachaResult(drawnCharacters);
-        Game.UI.renderPlayerState();
+        Game.BaseGacha.performGacha(
+            characterGachaConfig,
+            count,
+            'characterTickets',
+            window.GAME_CONFIG.gameplay.characterGachaEXP,
+            () => allCharacters,
+            _getUpCharacters,
+            Game.Player.getCharacterPityState,
+            Game.Player.getCharacterCollection,
+            Game.Player.getCharacterGachaHistory,
+            _renderCharacterGachaResult
+        );
     }
 
-    // Perform character gacha logic (unified with anime gacha system)
-    function _performCharacterGacha(count) {
-        const { rarityConfig, gacha, characterRateUp } = window.GAME_CONFIG.characterSystem;
-        const pityState = Game.Player.getCharacterPityState();
-        const upCharacters = _getUpCharacters();
-        const drawnCharacters = [];
-
-        for (let i = 0; i < count; i++) {
-            pityState.totalPulls++;
-            pityState.pullsSinceLastHR++;
-            
-            let drawnCharacter;
-            
-            // Check UP pity system (unified with anime system)
-            if (pityState.pullsSinceLastHR >= characterRateUp.pityPulls && upCharacters.length > 0) {
-                pityState.pullsSinceLastHR = 0;
-                drawnCharacter = upCharacters[Math.floor(Math.random() * upCharacters.length)];
-            } else {
-                // Normal probability (unified with anime system)
-                const rand = Math.random() * 100;
-                let cumulativeProb = 0;
-                let drawnRarity = 'N';
-                
-                for (const rarity in rarityConfig) {
-                    cumulativeProb += rarityConfig[rarity].p;
-                    if (rand < cumulativeProb) { 
-                        drawnRarity = rarity; 
-                        break; 
-                    }
-                }
-                
-                // Check for UP character chance on HR rarity (unified with anime system)
-                if (drawnRarity === 'HR' && upCharacters.length > 0 && Math.random() < characterRateUp.hrChance) {
-                    pityState.pullsSinceLastHR = 0;
-                    drawnCharacter = upCharacters[Math.floor(Math.random() * upCharacters.length)];
-                } else {
-                    // Select from normal pool
-                    const pool = allCharacters.filter(c => c.rarity === drawnRarity);
-                    drawnCharacter = pool.length > 0 ? pool[Math.floor(Math.random() * pool.length)] : 
-                                   allCharacters.find(c => c.rarity === 'N');
-                    
-                    // Reset HR pity counter if we got HR from normal pool
-                    if (drawnRarity === 'HR') pityState.pullsSinceLastHR = 0;
-                }
-            }
-
-            drawnCharacters.push({ ...drawnCharacter, timestamp: Date.now() });
-        }
-
-        // Guarantee mechanism for multi-pull (unified with anime system)
-        if (count >= gacha.guaranteedSR_Pulls && !drawnCharacters.some(c => ['SR', 'SSR', 'HR', 'UR'].includes(c.rarity))) {
-            const pool = allCharacters.filter(c => c.rarity === 'SR');
-            const indexToReplace = drawnCharacters.findIndex(c => c.rarity === 'N') ?? 0;
-            if (pool.length > 0) {
-                drawnCharacters[indexToReplace] = { 
-                    ...pool[Math.floor(Math.random() * pool.length)], 
-                    timestamp: Date.now() 
-                };
-            }
-        }
-
-        return drawnCharacters;
-    }
 
     // Render character gacha result
     function _renderCharacterGachaResult(drawnCharacters) {
@@ -200,34 +112,7 @@ Game.CharacterGacha = (function() {
     // Show character gacha rates (unified with anime system)
     function _showCharacterGachaRates() {
         const { characterRatesContent, characterRatesModal } = Game.UI.elements.characterGacha;
-        const { rarityConfig, characterRateUp } = window.GAME_CONFIG.characterSystem;
-        
-        characterRatesContent.innerHTML = '';
-        const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
-        
-        rarityOrder.forEach(rarity => {
-            const config = rarityConfig[rarity];
-            const rateElement = document.createElement('div');
-            rateElement.className = 'flex justify-between items-center p-2 bg-gray-100 rounded mb-2';
-            rateElement.innerHTML = `
-                <span class="font-bold ${config.color}">${rarity}</span>
-                <span>${config.p}%</span>
-            `;
-            characterRatesContent.appendChild(rateElement);
-        });
-
-        // Add pity information (unified with anime system)
-        const pityInfo = document.createElement('div');
-        pityInfo.className = 'mt-4 p-3 bg-blue-50 rounded-lg text-sm';
-        pityInfo.innerHTML = `
-            <h4 class="font-bold text-blue-800 mb-2">保底机制</h4>
-            <p class="text-blue-700">• HR邂逅时，有<span class="font-bold">${characterRateUp.hrChance * 100}%</span>概率获得UP角色</p>
-            <p class="text-blue-700">• 累计<span class="font-bold">${characterRateUp.pityPulls}</span>次邂逅必定获得UP角色之一</p>
-            <p class="text-blue-700">• 十连邂逅必定获得<span class="font-bold">SR</span>及以上角色</p>
-        `;
-        characterRatesContent.appendChild(pityInfo);
-        
-        characterRatesModal.classList.remove('hidden');
+        Game.BaseGacha.showRates(characterGachaConfig, characterRatesContent, characterRatesModal);
     }
 
     // Switch character gacha tabs
@@ -290,7 +175,7 @@ Game.CharacterGacha = (function() {
                         </div>
                     `;
                 } else {
-                    const { characterRateUp } = window.GAME_CONFIG.characterSystem;
+                    const { rateUp } = window.GAME_CONFIG.characterSystem;
                     let characterHtml = upCharacters.map(character => `
                         <div class="w-24 flex-shrink-0">
                             <img src="${character.image_path}" class="w-full h-auto rounded-md shadow-lg" onerror="this.src='https://placehold.co/96x144/e2e8f0/334155?text=角色头像';">
@@ -303,8 +188,8 @@ Game.CharacterGacha = (function() {
                         <div class="flex items-center justify-center gap-6 flex-wrap">
                             ${characterHtml}
                             <div class="text-gray-600 text-sm">
-                                <p>• HR邂逅时，有<span class="font-bold text-pink-600">${characterRateUp.hrChance * 100}%</span>概率为UP！</p>
-                                <p>• 累计<span class="font-bold text-pink-600">${characterRateUp.pityPulls}</span>次邂逅必定获得UP之一！</p>
+                                <p>• HR邂逅时，有<span class="font-bold text-pink-600">${rateUp.hrChance * 100}%</span>概率为UP！</p>
+                                <p>• 累计<span class="font-bold text-pink-600">${rateUp.pityPulls}</span>次邂逅必定获得UP之一！</p>
                                 <p>• 十连邂逅必定获得<span class="font-bold text-pink-600">SR</span>及以上角色！</p>
                             </div>
                         </div>
@@ -314,7 +199,7 @@ Game.CharacterGacha = (function() {
         },
 
         getAllCharacters: () => allCharacters,
-        getDismantleValue: (rarity) => window.GAME_CONFIG.characterSystem.rarityConfig[rarity]?.dismantleValue || 0,
+        getDismantleValue: (rarity) => Game.BaseGacha.getDismantleValue(rarity, window.GAME_CONFIG.characterSystem.rarityConfig),
         isInitialized: () => isInitialized,
         setUpCharacters: _setUpCharacters,
         getUpCharacters: _getUpCharacters

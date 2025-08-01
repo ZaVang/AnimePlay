@@ -16,14 +16,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Now that player data (like allCards) is loaded, init other modules.
         Game.UI.init();
         Game.UI.populateFilters(); // Populate filters now that cards are loaded
-        Game.Gacha.init();
+        Game.AnimeGacha.init();
         
         // Initialize character system modules
         if (Game.CharacterGacha) {
             await Game.CharacterGacha.init();
         }
-        if (Game.CharacterCollection) {
-            Game.CharacterCollection.init();
+        
+        // Initialize unified collection module
+        if (Game.UnifiedCollection) {
+            Game.UnifiedCollection.init();
         }
         
         Game.Deck.init();

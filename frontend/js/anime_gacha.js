@@ -1,90 +1,34 @@
 // frontend/js/gacha.js
 window.Game = window.Game || {};
 
-Game.Gacha = (function() {
+Game.AnimeGacha = (function() {
+
+    // 动画抽卡配置
+    const animeGachaConfig = {
+        itemType: '动画',
+        itemKey: 'card',
+        rarityConfig: window.GAME_CONFIG.rarityConfig,
+        gacha: window.GAME_CONFIG.gacha,
+        rateUp: window.GAME_CONFIG.rateUp
+    };
 
     function _handleDraw(count) {
-        const playerState = Game.Player.getState();
-        if (!Game.Player.getCurrentUser()) {
-            alert("请先登录！");
-            return;
-        }
-        if (playerState.gachaTickets < count) {
-            alert("邂逅券不足！");
-            return;
-        }
-
-        playerState.gachaTickets -= count;
-        const expGained = count === 1 ? window.GAME_CONFIG.gameplay.gachaEXP.single : window.GAME_CONFIG.gameplay.gachaEXP.multi;
-        Game.Player.addExp(expGained);
-
-        const drawnCards = _performGacha(count);
-        
-        const playerCollection = Game.Player.getPlayerCollection();
-        
-        drawnCards.forEach(card => {
-            if (playerCollection.has(card.id)) {
-                const existing = playerCollection.get(card.id);
-                existing.count++;
-                card.isDuplicate = true;
-            } else {
-                playerCollection.set(card.id, { card: card, count: 1 });
-                card.isNew = true;
-            }
-        });
-
-        Game.Player.getGachaHistory().push(...drawnCards);
-        Game.Player.saveState(false);
-
-        _renderGachaResult(drawnCards);
-        Game.UI.renderPlayerState();
-    }
-
-    function _performGacha(count) {
-        const { rarityConfig, gacha, rateUp } = window.GAME_CONFIG;
-        const pityState = Game.Player.getPityState();
-        const rateUpCards = Game.Player.getRateUpCards();
-        const allCards = Game.Player.getAllCards();
-        let drawnCards = [];
-
-        for (let i = 0; i < count; i++) {
-            pityState.totalPulls++;
-            pityState.pullsSinceLastHR++;
-            let drawnCard;
-            if (pityState.pullsSinceLastHR >= rateUp.pityPulls && rateUpCards.length > 0) {
-                pityState.pullsSinceLastHR = 0;
-                drawnCard = rateUpCards[Math.floor(Math.random() * rateUpCards.length)];
-            } else {
-                const rand = Math.random() * 100;
-                let cumulativeProb = 0;
-                let drawnRarity = 'N';
-                for (const rarity in rarityConfig) {
-                    cumulativeProb += rarityConfig[rarity].p;
-                    if (rand < cumulativeProb) { drawnRarity = rarity; break; }
-                }
-                if (drawnRarity === 'HR' && rateUpCards.length > 0 && Math.random() < rateUp.hrChance) {
-                    pityState.pullsSinceLastHR = 0;
-                    drawnCard = rateUpCards[Math.floor(Math.random() * rateUpCards.length)];
-                } else {
-                    const pool = allCards.filter(c => c.rarity === drawnRarity);
-                    drawnCard = pool.length > 0 ? pool[Math.floor(Math.random() * pool.length)] : allCards.find(c => c.rarity === 'N');
-                }
-            }
-            drawnCards.push({ ...drawnCard, timestamp: Date.now() });
-        }
-
-        if (count >= gacha.guaranteedSR_Pulls && !drawnCards.some(c => ['SR', 'SSR', 'HR', 'UR'].includes(c.rarity))) {
-            const pool = allCards.filter(c => c.rarity === 'SR');
-            const indexToReplace = drawnCards.findIndex(c => c.rarity === 'N') ?? 0;
-            if (pool.length > 0) {
-                drawnCards[indexToReplace] = { ...pool[Math.floor(Math.random() * pool.length)], timestamp: Date.now() };
-            }
-        }
-        return drawnCards;
+        Game.BaseGacha.performGacha(
+            animeGachaConfig,
+            count,
+            'gachaTickets',
+            window.GAME_CONFIG.gameplay.gachaEXP,
+            Game.Player.getAllCards,
+            Game.Player.getRateUpCards,
+            Game.Player.getPityState,
+            Game.Player.getPlayerCollection,
+            Game.Player.getGachaHistory,
+            _renderGachaResult
+        );
     }
     
     function getDismantleValue(rarity) {
-        return window.GAME_CONFIG.rarityConfig[rarity]?.dismantleValue || 0;
+        return Game.BaseGacha.getDismantleValue(rarity, window.GAME_CONFIG.rarityConfig);
     }
 
     function _renderGachaResult(drawnCards) {
@@ -105,18 +49,7 @@ Game.Gacha = (function() {
 
     function _showGachaRates() {
         const { ratesContent, ratesModal } = Game.UI.elements.gacha;
-        const { rarityConfig } = window.GAME_CONFIG;
-        ratesContent.innerHTML = '';
-        const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
-        rarityOrder.forEach(rarity => {
-            const rate = rarityConfig[rarity].p;
-            const colorClass = rarityConfig[rarity].color || 'text-gray-800';
-            const rateElement = document.createElement('div');
-            rateElement.className = 'flex justify-between items-center p-2 bg-gray-100 rounded';
-            rateElement.innerHTML = `<span class="font-bold ${colorClass}">${rarity}</span><span>${rate}%</span>`;
-            ratesContent.appendChild(rateElement);
-        });
-        ratesModal.classList.remove('hidden');
+        Game.BaseGacha.showRates(animeGachaConfig, ratesContent, ratesModal);
     }
     
     function _renderShop() {
@@ -186,7 +119,7 @@ Game.Gacha = (function() {
             gacha.tabs.pool.addEventListener('click', (e) => { e.preventDefault(); _switchGachaTab('pool'); });
             gacha.tabs.history.addEventListener('click', (e) => { e.preventDefault(); _switchGachaTab('history'); });
             gacha.tabs.shop.addEventListener('click', (e) => { e.preventDefault(); _switchGachaTab('shop'); });
-            console.log("Gacha module initialized.");
+            console.log("Anime Gacha module initialized.");
         },
         renderUI: function() {
             const rateUpCards = Game.Player.getRateUpCards();

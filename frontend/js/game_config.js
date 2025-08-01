@@ -95,9 +95,9 @@ window.GAME_CONFIG = {
         ]
     },
 
-    // --- Character Card System ---
+    // --- Character System with Unified Configuration ---
     characterSystem: {
-        // Character rarity configuration (unified with anime cards)
+        // Character rarity configuration (now identical to anime config)
         rarityConfig: {
             'UR': { p: 0.5, c: 'from-amber-400 to-red-500', dismantleValue: 1000, color: 'text-red-500', effect: 'legendary-glow' },
             'HR': { p: 1.5, c: 'from-red-500 to-purple-600', dismantleValue: 400, color: 'text-purple-600', effect: 'masterpiece-shine' },
@@ -106,16 +106,15 @@ window.GAME_CONFIG = {
             'R': { p: 25, c: 'bg-blue-500', dismantleValue: 5, color: 'text-blue-500', effect: 'none' },
             'N': { p: 60, c: 'bg-gray-500', dismantleValue: 1, color: 'text-gray-500', effect: 'none' }
         },
-        // Character UP pool configuration (unified with anime system)
-        characterRateUp: {
+        // Character UP pool configuration (identical to anime system)
+        rateUp: {
             ids: [1, 2], // UP character IDs - example characters for testing
             hrChance: 0.66, // HR rarity时，获得UP角色的概率
             pityPulls: 70, // 必定获得UP角色的保底抽数
         },
-        // Character gacha settings (unified with anime system)
+        // Character gacha settings (identical to anime system)
         gacha: {
-            ticketCost: { single: 1, multi: 10 },
-            guaranteedSR_Pulls: 10, // 10-pull guarantees at least SR (unified with anime)
+            guaranteedSR_Pulls: 10, // 10-pull guarantees at least SR (identical to anime)
         },
         // Sample character pool (will be loaded from backend)
         sampleCharacters: [

@@ -18,6 +18,10 @@
         .character-gacha-tab.active { color: #ec4899; border-color: #ec4899; }
         .gacha-type-btn.active { opacity: 1; }
         .gacha-type-btn:not(.active) { opacity: 0.6; }
+        .deck-view-btn.active { opacity: 1; }
+        .deck-view-btn:not(.active) { opacity: 0.6; }
+        .collection-tab.active { color: #4f46e5; border-color: #4f46e5; }
+        .collection-tab:not(.active) { color: #6b7280; border-color: transparent; }
         .card { transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; }
         .card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
         .modal-content { max-height: 90vh; }
@@ -114,7 +118,7 @@
             <ul class="flex justify-center items-center p-2 space-x-1 md:space-x-4">
                 <li><a href="#home" class="nav-link active px-2 py-2 text-xs md:text-base">主页</a></li>
                 <li><a href="#gacha" class="nav-link px-2 py-2 text-xs md:text-base">邂逅系统</a></li>
-                <li><a href="#character-collection" class="nav-link px-2 py-2 text-xs md:text-base">角色图鉴</a></li>
+                <li><a href="#collection" class="nav-link px-2 py-2 text-xs md:text-base">我的收藏</a></li>
                 <li><a href="#deck-and-collection" class="nav-link px-2 py-2 text-xs md:text-base">卡组收藏</a></li>
                 <li><a href="#battle" class="nav-link px-2 py-2 text-xs md:text-base">宅理论战</a></li>
             </ul>
@@ -172,109 +176,141 @@
                 </div>
             </section>
 
-            <section id="gacha" class="hidden space-y-8">
-                <!-- Gacha Type Selector -->
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h2 class="text-2xl font-bold mb-4 text-center">邂逅系统</h2>
-                    <div class="flex justify-center gap-4 mb-6">
-                        <button id="gacha-type-anime" class="gacha-type-btn active bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-indigo-700">动画邂逅</button>
-                        <button id="gacha-type-character" class="gacha-type-btn bg-pink-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-pink-700">角色邂逅</button>
+            <section id="gacha" class="hidden space-y-6">
+                <!-- Header with integrated tabs -->
+                <div class="bg-white rounded-lg shadow-sm">
+                    <!-- Top Navigation - Gacha Type + Tab Navigation -->
+                    <div class="border-b border-gray-200">
+                        <div class="px-6 pt-4 pb-2">
+                            <h2 class="text-xl font-bold text-center mb-3">邂逅系统</h2>
+                            <!-- Compact Gacha Type Selector -->
+                            <div class="flex justify-center gap-2 mb-4">
+                                <button id="gacha-type-anime" class="gacha-type-btn active bg-indigo-600 text-white font-semibold py-2 px-4 rounded-md text-sm hover:bg-indigo-700">动画邂逅</button>
+                                <button id="gacha-type-character" class="gacha-type-btn bg-pink-600 text-white font-semibold py-2 px-4 rounded-md text-sm hover:bg-pink-700">角色邂逅</button>
+                            </div>
+                        </div>
+                        <!-- Compact Tab Navigation -->
+                        <nav class="-mb-px flex justify-center space-x-6 px-6" aria-label="Tabs">
+                            <a href="#" id="tab-gacha-pool" class="gacha-tab active whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm">卡池</a>
+                            <a href="#" id="tab-gacha-history" class="gacha-tab whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm">历史</a>
+                            <a href="#" id="tab-gacha-shop" class="gacha-tab whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm">商店</a>
+                        </nav>
                     </div>
-                </div>
 
-                <!-- Tab Navigation -->
-                <div class="border-b border-gray-200">
-                    <nav class="-mb-px flex space-x-8" aria-label="Tabs">
-                        <a href="#" id="tab-gacha-pool" class="gacha-tab active whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">邂逅卡池</a>
-                        <a href="#" id="tab-gacha-history" class="gacha-tab whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">邂逅历史</a>
-                        <a href="#" id="tab-gacha-shop" class="gacha-tab whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">兑换商店</a>
-                    </nav>
-                </div>
-
-                <!-- Anime Gacha Content -->
-                <div id="anime-gacha-content">
-                    <div id="gacha-pool-content">
-                        <div id="up-banner" class="bg-white p-6 rounded-lg shadow-sm mb-8"></div>
-                        <div class="bg-white p-6 rounded-lg shadow-sm">
-                            <div class="flex justify-between items-center mb-4">
-                                <h2 class="text-2xl font-bold">动画邂逅</h2>
-                                <div class="flex items-center gap-2">
-                                    <span class="text-sm text-gray-600">消耗：</span>
-                                    <span class="bg-amber-100 text-amber-800 px-2 py-1 rounded-full text-sm font-bold">动画券</span>
+                    <!-- Content Area -->
+                    <div class="p-6">
+                        <!-- Anime Gacha Content -->
+                        <div id="anime-gacha-content">
+                            <div id="gacha-pool-content">
+                                <div id="up-banner" class="mb-6"></div>
+                                <div class="flex justify-between items-center mb-4">
+                                    <h3 class="text-lg font-semibold">动画邂逅</h3>
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-sm text-gray-600">消耗：</span>
+                                        <span class="bg-amber-100 text-amber-800 px-2 py-1 rounded-full text-xs font-semibold">动画券</span>
+                                    </div>
+                                </div>
+                                <div class="text-center mb-4">
+                                    <button id="gacha-btn-single" class="bg-indigo-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-indigo-700 text-sm">单次邂逅</button>
+                                    <button id="gacha-btn-multi" class="bg-amber-500 text-white font-semibold py-2 px-6 rounded-lg hover:bg-amber-600 ml-3 text-sm">十次邂逅</button>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" id="show-gacha-rates" class="text-xs text-gray-500 hover:underline">概率一览</a>
                                 </div>
                             </div>
-                            <div class="text-center">
-                                <button id="gacha-btn-single" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-indigo-700">单次邂逅</button>
-                                <button id="gacha-btn-multi" class="bg-amber-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-amber-600 ml-4">十次邂逅</button>
+                            <div id="gacha-history-content" class="hidden">
+                                <h3 class="text-lg font-semibold mb-4">动画邂逅历史统计</h3>
+                                <div class="chart-container mb-6" style="height: 300px;"><canvas id="gachaHistoryChart"></canvas></div>
+                                <h3 class="text-lg font-semibold mb-4">邂逅记录</h3>
+                                <div id="gacha-history-list" class="space-y-2 max-h-80 overflow-y-auto p-3 bg-gray-50 rounded-lg"></div>
                             </div>
-                            <div class="text-center mt-4">
-                                <a href="#" id="show-gacha-rates" class="text-sm text-gray-500 hover:underline">概率一览</a>
+                            <div id="gacha-shop-content" class="hidden">
+                                <h3 class="text-lg font-semibold mb-4">兑换商店</h3>
+                                <div id="shop-items" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
                             </div>
                         </div>
-                    </div>
-                    <div id="gacha-history-content" class="hidden">
-                        <div class="bg-white p-6 rounded-lg shadow-sm">
-                            <h2 class="text-2xl font-bold mb-4">动画邂逅历史统计</h2>
-                            <div class="chart-container mb-8" style="height: 400px;"><canvas id="gachaHistoryChart"></canvas></div>
-                            <h2 class="text-2xl font-bold mb-4">动画邂逅历史记录</h2>
-                            <div id="gacha-history-list" class="space-y-2 max-h-96 overflow-y-auto p-4 bg-gray-50 rounded-lg"></div>
-                        </div>
-                    </div>
-                    <div id="gacha-shop-content" class="hidden">
-                        <div class="bg-white p-6 rounded-lg shadow-sm">
-                            <h2 class="text-2xl font-bold mb-4">动画兑换商店</h2>
-                            <div id="shop-items" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Character Gacha Content -->
-                <div id="character-gacha-content" class="hidden">
-                    <div id="character-gacha-pool-content">
-                        <div id="character-up-banner" class="bg-white p-6 rounded-lg shadow-sm mb-8"></div>
-                        <div class="bg-white p-6 rounded-lg shadow-sm">
-                            <div class="flex justify-between items-center mb-4">
-                                <h2 class="text-2xl font-bold">角色邂逅</h2>
-                                <div class="flex items-center gap-2">
-                                    <span class="text-sm text-gray-600">消耗：</span>
-                                    <span class="bg-pink-100 text-pink-800 px-2 py-1 rounded-full text-sm font-bold">角色券</span>
+                        <!-- Character Gacha Content -->
+                        <div id="character-gacha-content" class="hidden">
+                            <div id="character-gacha-pool-content">
+                                <div id="character-up-banner" class="mb-6"></div>
+                                <div class="flex justify-between items-center mb-4">
+                                    <h3 class="text-lg font-semibold">角色邂逅</h3>
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-sm text-gray-600">消耗：</span>
+                                        <span class="bg-pink-100 text-pink-800 px-2 py-1 rounded-full text-xs font-semibold">角色券</span>
+                                    </div>
+                                </div>
+                                <div class="text-center mb-4">
+                                    <button id="character-gacha-btn-single" class="bg-pink-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-pink-700 text-sm">单次邂逅</button>
+                                    <button id="character-gacha-btn-multi" class="bg-purple-500 text-white font-semibold py-2 px-6 rounded-lg hover:bg-purple-600 ml-3 text-sm">十次邂逅</button>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" id="show-character-gacha-rates" class="text-xs text-gray-500 hover:underline">概率一览</a>
                                 </div>
                             </div>
-                            <div class="text-center">
-                                <button id="character-gacha-btn-single" class="bg-pink-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-pink-700">单次邂逅</button>
-                                <button id="character-gacha-btn-multi" class="bg-purple-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-purple-600 ml-4">十次邂逅</button>
+                            <div id="character-gacha-history-content" class="hidden">
+                                <h3 class="text-lg font-semibold mb-4">角色邂逅历史统计</h3>
+                                <div class="chart-container mb-6" style="height: 300px;"><canvas id="characterGachaHistoryChart"></canvas></div>
+                                <h3 class="text-lg font-semibold mb-4">邂逅记录</h3>
+                                <div id="character-gacha-history-list" class="space-y-2 max-h-80 overflow-y-auto p-3 bg-gray-50 rounded-lg"></div>
                             </div>
-                            <div class="text-center mt-4">
-                                <a href="#" id="show-character-gacha-rates" class="text-sm text-gray-500 hover:underline">概率一览</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="character-gacha-history-content" class="hidden">
-                        <div class="bg-white p-6 rounded-lg shadow-sm">
-                            <h2 class="text-2xl font-bold mb-4">角色邂逅历史统计</h2>
-                            <div class="chart-container mb-8" style="height: 400px;"><canvas id="characterGachaHistoryChart"></canvas></div>
-                            <h2 class="text-2xl font-bold mb-4">角色邂逅历史记录</h2>
-                            <div id="character-gacha-history-list" class="space-y-2 max-h-96 overflow-y-auto p-4 bg-gray-50 rounded-lg"></div>
                         </div>
                     </div>
                 </div>
             </section>
 
 
-            <section id="character-collection" class="hidden">
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h2 class="text-2xl font-bold mb-4">角色图鉴</h2>
-                    <div class="flex flex-wrap gap-4 mb-6 items-center">
-                        <input type="text" id="character-filter-name" placeholder="按角色名称搜索..." class="p-2 border rounded-lg flex-grow">
-                        <select id="character-filter-rarity" class="p-2 border rounded-lg">
-                            <option value="">所有稀有度</option>
-                        </select>
-                        <select id="character-filter-gender" class="p-2 border rounded-lg">
-                            <option value="">所有性别</option>
-                        </select>
-                        <button id="character-dismantle-all-btn" class="bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700">一键分解重复</button>
+            <section id="collection" class="hidden space-y-6">
+                <!-- Header with integrated tabs -->
+                <div class="bg-white rounded-lg shadow-sm">
+                    <!-- Top Navigation - Collection Type + Statistics -->
+                    <div class="border-b border-gray-200">
+                        <div class="px-6 pt-4 pb-2">
+                            <h2 class="text-xl font-bold text-center mb-3">我的收藏</h2>
+                        </div>
+                        <!-- Compact Tab Navigation -->
+                        <nav class="-mb-px flex justify-center space-x-6 px-6" aria-label="Tabs">
+                            <a href="#" id="tab-collection-anime" class="collection-tab active whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm">动画收藏</a>
+                            <a href="#" id="tab-collection-character" class="collection-tab whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm">角色收藏</a>
+                        </nav>
                     </div>
-                    <div id="character-collection-view" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 max-h-[70vh] overflow-y-auto p-2 bg-gray-50 rounded"></div>
+
+                    <!-- Content Area -->
+                    <div class="p-6">
+                        <!-- Statistics Area -->
+                        <div id="collection-stats" class="mb-6"></div>
+                        
+                        <!-- Anime Collection Content -->
+                        <div id="anime-collection-content">
+                            <div class="flex flex-wrap gap-4 mb-6 items-center">
+                                <input type="text" id="anime-filter-name" placeholder="按动画名称搜索..." class="p-2 border rounded-lg flex-grow">
+                                <select id="anime-filter-rarity" class="p-2 border rounded-lg">
+                                    <option value="">所有稀有度</option>
+                                </select>
+                                <select id="anime-filter-tag" class="p-2 border rounded-lg">
+                                    <option value="">所有标签</option>
+                                </select>
+                                <button id="anime-dismantle-all-btn" class="bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700">一键分解重复</button>
+                            </div>
+                            <div id="anime-collection-view" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 max-h-[70vh] overflow-y-auto p-2 bg-gray-50 rounded"></div>
+                        </div>
+                        
+                        <!-- Character Collection Content -->
+                        <div id="character-collection-content" class="hidden">
+                            <div class="flex flex-wrap gap-4 mb-6 items-center">
+                                <input type="text" id="character-filter-name" placeholder="按角色名称搜索..." class="p-2 border rounded-lg flex-grow">
+                                <select id="character-filter-rarity" class="p-2 border rounded-lg">
+                                    <option value="">所有稀有度</option>
+                                </select>
+                                <select id="character-filter-gender" class="p-2 border rounded-lg">
+                                    <option value="">所有性别</option>
+                                </select>
+                                <button id="character-dismantle-all-btn" class="bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700">一键分解重复</button>
+                            </div>
+                            <div id="character-collection-view" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 max-h-[70vh] overflow-y-auto p-2 bg-gray-50 rounded"></div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -302,14 +338,51 @@
                     <!-- Right Column: Card Collection -->
                     <div class="lg:col-span-2">
                         <div class="bg-white p-6 rounded-lg shadow-sm">
-                            <h2 class="text-2xl font-bold mb-4">我的收藏</h2>
-                            <div class="flex flex-wrap gap-4 mb-6 items-center">
-                                <input type="text" id="collection-filter-name" placeholder="按名称搜索..." class="p-2 border rounded-lg flex-grow">
-                                <select id="collection-filter-rarity" class="p-2 border rounded-lg"><option value="">所有稀有度</option></select>
-                                <select id="collection-filter-tag" class="p-2 border rounded-lg"><option value="">所有标签</option></select>
-                                <button id="dismantle-all-btn-new" class="bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700">一键分解重复</button>
+                            <div class="flex justify-between items-center mb-4">
+                                <h2 class="text-2xl font-bold">我的收藏</h2>
+                                <!-- Card Type Selector -->
+                                <div class="flex gap-2">
+                                    <button id="deck-view-anime" class="deck-view-btn active bg-indigo-600 text-white font-semibold py-2 px-4 rounded-md text-sm hover:bg-indigo-700">动画卡</button>
+                                    <button id="deck-view-character" class="deck-view-btn bg-pink-600 text-white font-semibold py-2 px-4 rounded-md text-sm hover:bg-pink-700">角色卡</button>
+                                    <button id="deck-view-mixed" class="deck-view-btn bg-gray-600 text-white font-semibold py-2 px-4 rounded-md text-sm hover:bg-gray-700">混合</button>
+                                </div>
                             </div>
-                            <div id="collection-view" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 max-h-[70vh] overflow-y-auto p-2 bg-gray-50 rounded"></div>
+                            
+                            <!-- Anime Collection View -->
+                            <div id="deck-anime-collection">
+                                <div class="flex flex-wrap gap-4 mb-6 items-center">
+                                    <input type="text" id="collection-filter-name" placeholder="按动画名称搜索..." class="p-2 border rounded-lg flex-grow">
+                                    <select id="collection-filter-rarity" class="p-2 border rounded-lg"><option value="">所有稀有度</option></select>
+                                    <select id="collection-filter-tag" class="p-2 border rounded-lg"><option value="">所有标签</option></select>
+                                    <button id="dismantle-all-btn-new" class="bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700">一键分解重复</button>
+                                </div>
+                                <div id="collection-view" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 max-h-[70vh] overflow-y-auto p-2 bg-gray-50 rounded"></div>
+                            </div>
+                            
+                            <!-- Character Collection View -->
+                            <div id="deck-character-collection" class="hidden">
+                                <div class="flex flex-wrap gap-4 mb-6 items-center">
+                                    <input type="text" id="deck-character-filter-name" placeholder="按角色名称搜索..." class="p-2 border rounded-lg flex-grow">
+                                    <select id="deck-character-filter-rarity" class="p-2 border rounded-lg"><option value="">所有稀有度</option></select>
+                                    <select id="deck-character-filter-gender" class="p-2 border rounded-lg"><option value="">所有性别</option></select>
+                                    <button id="deck-character-dismantle-all-btn" class="bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700">一键分解重复</button>
+                                </div>
+                                <div id="deck-character-collection-view" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 max-h-[70vh] overflow-y-auto p-2 bg-gray-50 rounded"></div>
+                            </div>
+                            
+                            <!-- Mixed Collection View -->
+                            <div id="deck-mixed-collection" class="hidden">
+                                <div class="flex flex-wrap gap-4 mb-6 items-center">
+                                    <input type="text" id="deck-mixed-filter-name" placeholder="按名称搜索..." class="p-2 border rounded-lg flex-grow">
+                                    <select id="deck-mixed-filter-type" class="p-2 border rounded-lg">
+                                        <option value="">所有类型</option>
+                                        <option value="anime">动画卡</option>
+                                        <option value="character">角色卡</option>
+                                    </select>
+                                    <select id="deck-mixed-filter-rarity" class="p-2 border rounded-lg"><option value="">所有稀有度</option></select>
+                                </div>
+                                <div id="deck-mixed-collection-view" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 max-h-[70vh] overflow-y-auto p-2 bg-gray-50 rounded"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -373,6 +446,14 @@
         </div>
     </div>
 
+    <!-- Anime Detail Modal -->
+    <div id="anime-detail-modal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+        <div class="bg-white p-6 rounded-lg shadow-xl max-w-4xl w-full modal-content overflow-y-auto">
+            <div id="anime-detail-content"></div>
+            <div class="text-center mt-6"><button id="close-anime-detail-modal" class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg">关闭</button></div>
+        </div>
+    </div>
+
     <!-- Character Gacha Rates Modal -->
     <div id="character-gacha-rates-modal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
         <div class="bg-white p-6 rounded-lg shadow-xl max-w-sm w-full">
@@ -415,9 +496,10 @@
     <!-- Refactored Modules (Load order is important!) -->
     <script src="js/ui.js"></script> <!-- UI must be loaded first as other modules depend on it -->
     <script src="js/player.js"></script>
-    <script src="js/gacha.js"></script>
+    <script src="js/base_gacha.js"></script> <!-- Base gacha system must be loaded before specific gacha modules -->
+    <script src="js/anime_gacha.js"></script>
     <script src="js/character_gacha.js"></script> <!-- Character gacha system -->
-    <script src="js/character_collection.js"></script> <!-- Character collection system -->
+    <script src="js/unified_collection.js"></script> <!-- Unified collection system -->
     <script src="js/deck.js"></script>
     <script src="js/battle.js"></script>
     
