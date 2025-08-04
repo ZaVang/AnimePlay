@@ -27,7 +27,7 @@ Game.Deck = (function() {
             cardElementCreator: Game.UI.createAnimeCardElement,
             detailModalHandler: _showAnimeDetail,
             colors: { primary: 'indigo', secondary: 'blue' },
-            maxDeckSize: 20,
+            maxDeckSize: 25,
             filterFields: ['name', 'rarity', 'tag']
         });
 
@@ -58,9 +58,19 @@ Game.Deck = (function() {
     function _switchViewType(type) {
         currentViewType = type;
         
-        // 更新按钮状态
-        document.querySelectorAll('.deck-view-btn').forEach(btn => btn.classList.remove('active'));
-        document.getElementById(`deck-view-${type}`).classList.add('active');
+        // 更新tab状态
+        document.querySelectorAll('.deck-view-tab').forEach(tab => {
+            tab.classList.remove('active');
+            tab.classList.add('text-gray-500', 'border-transparent');
+            tab.classList.remove('text-indigo-600', 'border-indigo-500');
+        });
+        
+        const activeTab = document.getElementById(`deck-view-${type}`);
+        if (activeTab) {
+            activeTab.classList.add('active');
+            activeTab.classList.remove('text-gray-500', 'border-transparent');
+            activeTab.classList.add('text-indigo-600', 'border-indigo-500');
+        }
         
         // 切换筛选器显示
         document.getElementById('anime-deck-filters').classList.toggle('hidden', type !== 'anime');
@@ -192,15 +202,15 @@ Game.Deck = (function() {
         const deckCards = currentDeck[type];
         const maxSize = type === 'anime' ? 25 : 5;
         
-        // 检查数量限制
-        if (deckCards.length >= maxSize) {
-            alert(`${type === 'anime' ? '动画' : '角色'}卡片已达上限（${maxSize}张）！`);
-            return;
-        }
-        
         // 检查是否已存在
         const itemKey = type === 'anime' ? 'anime' : 'character';
         if (deckCards.some(card => card[itemKey].id === cardData[itemKey].id)) {
+            return;
+        }
+        
+        // 检查数量限制（只有超出上限才提醒）
+        if (deckCards.length + 1 > maxSize) {
+            alert(`${type === 'anime' ? '动画' : '角色'}卡片已达上限（${maxSize}张）！`);
             return;
         }
         
@@ -519,12 +529,24 @@ Game.Deck = (function() {
             _renderCollection();
             
             // 绑定UI事件
-            document.getElementById('deck-view-anime')?.addEventListener('click', () => _switchViewType('anime'));
-            document.getElementById('deck-view-character')?.addEventListener('click', () => _switchViewType('character'));
+            document.getElementById('deck-view-anime')?.addEventListener('click', (e) => {
+                e.preventDefault();
+                _switchViewType('anime');
+            });
+            document.getElementById('deck-view-character')?.addEventListener('click', (e) => {
+                e.preventDefault();
+                _switchViewType('character');
+            });
             
             document.getElementById('new-deck-btn')?.addEventListener('click', _newDeck);
             document.getElementById('save-deck-btn')?.addEventListener('click', _saveDeck);
-            document.getElementById('load-deck-btn')?.addEventListener('click', _loadDeck);
+            
+            // 卡组选择器自动加载
+            document.getElementById('deck-selector')?.addEventListener('change', (e) => {
+                if (e.target.value) {
+                    _loadDeck();
+                }
+            });
             
             // 筛选器事件
             // 动画筛选器
