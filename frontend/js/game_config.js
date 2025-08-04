@@ -90,8 +90,8 @@ window.GAME_CONFIG = {
         // 商店配置
         shop: {
             items: [
-                { animeCardId: 1428, cost: 10000 }, // UR card
-                { animeCardId: 253, cost: 10000 }, // UR card
+                { Id: 1428, cost: 10000 }, // UR card
+                { Id: 253, cost: 10000 }, // UR card
             ]
         },
     },
@@ -120,8 +120,8 @@ window.GAME_CONFIG = {
         // 商店配置
         shop: {
             items: [
-                { characterCardId: 1, cost: 10000 }, // UR character
-                { characterCardId: 2, cost: 10000 }, // HR character
+                { Id: 1, cost: 10000 }, // UR character
+                { Id: 2, cost: 10000 }, // HR character
             ]
         },
     },

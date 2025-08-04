@@ -15,13 +15,13 @@ Game.Deck = (function() {
             alert(`卡组已满（最多${deckBuilding.maxCards}张）`);
             return;
         }
-        const card = Game.Player.getAllCards().find(c => c.id === cardId);
-        const totalCost = deck.reduce((sum, id) => sum + Game.Player.getAllCards().find(c=>c.id===id).cost, 0);
-        if (totalCost + card.cost > deckBuilding.maxCost) {
+        const anime = Game.Player.getAllAnimes().find(c => c.id === cardId);
+        const totalCost = deck.reduce((sum, id) => sum + Game.Player.getAllAnimes().find(c=>c.id===id).cost, 0);
+        if (totalCost + anime.cost > deckBuilding.maxCost) {
             alert("卡组Cost已达上限！");
             return;
         }
-        deck.push(cardId);
+        deck.push(anime.id);
         _renderUI();
     }
 
@@ -161,6 +161,7 @@ Game.Deck = (function() {
         const rarityFilter = document.getElementById('collection-filter-rarity').value;
         const tagFilter = document.getElementById('collection-filter-tag').value;
         
+        if (!collectionView) return;
         collectionView.innerHTML = '';
         
         const filteredCards = Array.from(playerCollection.values()).filter(data => {
@@ -178,7 +179,7 @@ Game.Deck = (function() {
             if (rarityA !== rarityB) return rarityA - rarityB;
             return b.card.points - a.card.points;
         }).forEach(cardData => {
-            const cardEl = Game.UI.createCardElement(cardData, 'deck-collection');
+            const cardEl = Game.UI.createAnimeCardElement(cardData, 'deck-collection');
             const playerState = Game.Player.getState();
             const deck = playerState.decks[playerState.activeDeckName] || [];
             
@@ -199,6 +200,7 @@ Game.Deck = (function() {
         const rarityFilter = document.getElementById('deck-character-filter-rarity').value;
         const genderFilter = document.getElementById('deck-character-filter-gender').value;
         
+        if (!collectionView) return;
         collectionView.innerHTML = '';
         
         const filteredCharacters = Array.from(playerCharacterCollection.values()).filter(data => {
@@ -231,6 +233,7 @@ Game.Deck = (function() {
         const typeFilter = document.getElementById('deck-mixed-filter-type').value;
         const rarityFilter = document.getElementById('deck-mixed-filter-rarity').value;
         
+        if (!collectionView) return;
         collectionView.innerHTML = '';
         
         let allItems = [];
@@ -272,7 +275,7 @@ Game.Deck = (function() {
         filteredItems.forEach(item => {
             let element;
             if (item.type === 'anime') {
-                element = Game.UI.createCardElement(item.data, 'deck-mixed-collection');
+                element = Game.UI.createAnimeCardElement(item.data, 'deck-mixed-collection');
                 const playerState = Game.Player.getState();
                 const deck = playerState.decks[playerState.activeDeckName] || [];
                 
@@ -318,7 +321,7 @@ Game.Deck = (function() {
         deck.forEach(cardId => {
             const cardData = playerCollection.get(cardId);
             if(cardData){
-                 const cardEl = Game.UI.createCardElement(cardData, 'deck-list');
+                 const cardEl = Game.UI.createAnimeCardElement(cardData, 'deck-list');
                  cardEl.addEventListener('click', () => _removeCardFromDeck(cardId));
                  deckUI.list.appendChild(cardEl);
                  totalCost += cardData.card.cost;
@@ -344,17 +347,25 @@ Game.Deck = (function() {
 
     return {
         init: function() {
-            const { deck: deckUI, collection: collectionUI } = Game.UI.elements;
+            const { deck: deckUI } = Game.UI.elements;
+
+            const animeCollectionUI = {
+                filterName: document.getElementById('collection-filter-name'),
+                filterRarity: document.getElementById('collection-filter-rarity'),
+                filterTag: document.getElementById('collection-filter-tag'),
+                dismantleAllBtn: document.getElementById('collection-dismantle-all-btn')
+            };
+
             deckUI.selector.addEventListener('change', _switchDeck);
             deckUI.newBtn.addEventListener('click', _newDeck);
             deckUI.renameBtn.addEventListener('click', _renameDeck);
             deckUI.deleteBtn.addEventListener('click', _deleteDeck);
             deckUI.saveBtn.addEventListener('click', () => Game.Player.saveState(true));
 
-            collectionUI.filterName.addEventListener('input', _renderUI);
-            collectionUI.filterRarity.addEventListener('change', _renderUI);
-            collectionUI.filterTag.addEventListener('change', _renderUI);
-            collectionUI.dismantleAllBtn.addEventListener('click', _dismantleAllDuplicates);
+            if (animeCollectionUI.filterName) animeCollectionUI.filterName.addEventListener('input', _renderUI);
+            if (animeCollectionUI.filterRarity) animeCollectionUI.filterRarity.addEventListener('change', _renderUI);
+            if (animeCollectionUI.filterTag) animeCollectionUI.filterTag.addEventListener('change', _renderUI);
+            if (animeCollectionUI.dismantleAllBtn) animeCollectionUI.dismantleAllBtn.addEventListener('click', _dismantleAllDuplicates);
 
             // 视图切换按钮
             document.getElementById('deck-view-anime').addEventListener('click', () => _switchDeckView('anime'));

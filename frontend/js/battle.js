@@ -20,7 +20,7 @@ Game.Battle = (function() {
     function _startBattle() {
         const selectedDeckName = Game.UI.elements.battle.deckSelector.value;
         const playerState = Game.Player.getState();
-        const allCards = Game.Player.getAllCards();
+        const allCards = Game.Player.getAllAnimes();
         const activeDeckIds = playerState.decks[selectedDeckName] || [];
 
         if (activeDeckIds.length !== 20) {

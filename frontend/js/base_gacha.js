@@ -32,15 +32,18 @@ Game.BaseGacha = (function() {
         // 检查券数量
         const currentTickets = playerState[ticketType] || 0;
         if (currentTickets < count) {
-            const ticketName = ticketType === 'gachaTickets' ? '邂逅券' : '角色邂逅券';
+            const ticketName = ticketType === 'animeGachaTickets' ? '番剧邂逅券' : '角色邂逅券';
             alert(`${ticketName}不足！当前拥有：${currentTickets}，需要：${count}`);
             return;
         }
 
         // 消耗券并增加经验
         playerState[ticketType] = currentTickets - count;
-        const expGained = count === 1 ? expConfig.single : expConfig.multi;
-        Game.Player.addExp(expGained);
+        if (expConfig) {
+            const expGained = count === 1 ? expConfig.single : expConfig.multi;
+            Game.Player.addExp(expGained);
+        }
+
 
         // 执行抽卡
         const drawnItems = _performGachaLogic(config, count, getItems, getRateUpItems, getPityState);
@@ -84,7 +87,7 @@ Game.BaseGacha = (function() {
             let drawnItem;
             
             // 检查UP保底机制
-            if (pityState.pullsSinceLastHR >= rateUp.pityPulls && rateUpItems.length > 0) {
+            if (rateUp.pityPulls > 0 && pityState.pullsSinceLastHR >= rateUp.pityPulls && rateUpItems.length > 0) {
                 pityState.pullsSinceLastHR = 0;
                 drawnItem = rateUpItems[Math.floor(Math.random() * rateUpItems.length)];
             } else {
@@ -109,9 +112,8 @@ Game.BaseGacha = (function() {
                     // 从普通池中选择
                     const pool = allItems.filter(item => item.rarity === drawnRarity);
                     drawnItem = pool.length > 0 ? pool[Math.floor(Math.random() * pool.length)] : 
-                              allItems.find(item => item.rarity === 'N');
+                              allItems.find(item => item.rarity === 'N'); // Fallback
                     
-                    // 如果抽到HR，重置保底计数
                     if (drawnRarity === 'HR') pityState.pullsSinceLastHR = 0;
                 }
             }
@@ -138,7 +140,7 @@ Game.BaseGacha = (function() {
      * 通用的概率显示函数
      */
     function showRates(config, ratesContent, ratesModal) {
-        const { rarityConfig, rateUp } = config;
+        const { rarityConfig, rateUp, itemType } = config;
         ratesContent.innerHTML = '';
         const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
         
@@ -155,14 +157,13 @@ Game.BaseGacha = (function() {
             ratesContent.appendChild(rateElement);
         });
 
-        // 添加保底信息
         const pityInfo = document.createElement('div');
         pityInfo.className = 'mt-4 p-3 bg-blue-50 rounded-lg text-sm';
         pityInfo.innerHTML = `
             <h4 class="font-bold text-blue-800 mb-2">保底机制</h4>
-            <p class="text-blue-700">• HR邂逅时，有<span class="font-bold">${rateUp.hrChance * 100}%</span>概率获得UP${config.itemType}</p>
-            <p class="text-blue-700">• 累计<span class="font-bold">${rateUp.pityPulls}</span>次邂逅必定获得UP${config.itemType}之一</p>
-            <p class="text-blue-700">• 十连邂逅必定获得<span class="font-bold">SR</span>及以上${config.itemType}</p>
+            <p class="text-blue-700">• HR邂逅时，有<span class="font-bold">${rateUp.hrChance * 100}%</span>概率获得UP${itemType}</p>
+            <p class="text-blue-700">• 累计<span class="font-bold">${rateUp.pityPulls}</span>次邂逅必定获得UP${itemType}之一</p>
+            <p class="text-blue-700">• 十连邂逅必定获得<span class="font-bold">SR</span>及以上${itemType}</p>
         `;
         ratesContent.appendChild(pityInfo);
         
@@ -172,15 +173,17 @@ Game.BaseGacha = (function() {
     /**
      * 通用的历史记录渲染函数
      */
-    function renderHistory(history, rarityConfig, historyList, historyChartCanvas, chartInstance, itemType = '卡片') {
-        // 渲染图表
+    function renderHistory(history, rarityConfig, historyList, historyChartCanvas, existingChart, itemType = '卡片') {
         const rarityCounts = Object.keys(rarityConfig).reduce((acc, r) => ({...acc, [r]: 0}), {});
         history.forEach(item => { if (rarityCounts[item.rarity] !== undefined) rarityCounts[item.rarity]++; });
         
-        if (chartInstance.current) chartInstance.current.destroy();
+        if (existingChart) {
+            existingChart.destroy();
+        }
         
+        let newChart = null;
         if (historyChartCanvas) {
-            chartInstance.current = new Chart(historyChartCanvas.getContext('2d'), {
+            newChart = new Chart(historyChartCanvas.getContext('2d'), {
                 type: 'bar',
                 data: { 
                     labels: Object.keys(rarityCounts), 
@@ -199,29 +202,29 @@ Game.BaseGacha = (function() {
             });
         }
 
-        // 渲染列表
         if (historyList) {
             historyList.innerHTML = '';
             if (history.length === 0) {
                 historyList.innerHTML = `<p class="text-gray-500 text-center">暂无${itemType}邂逅历史。</p>`;
-                return;
+            } else {
+                 [...history].reverse().forEach((item, index) => {
+                    const rarityData = rarityConfig[item.rarity];
+                    const textColorClass = rarityData?.color || 'text-gray-800';
+                    const historyItem = document.createElement('div');
+                    historyItem.className = 'p-2 bg-white rounded shadow-sm flex justify-between items-center';
+                    historyItem.innerHTML = `
+                        <div>
+                            <span class="font-bold text-gray-500 mr-2">#${history.length - index}</span>
+                            <span class="font-bold ${textColorClass}">[${item.rarity}]</span>
+                            <span>${item.name}</span>
+                        </div>
+                        <span class="text-sm text-gray-400">${new Date(item.timestamp || Date.now()).toLocaleString()}</span>
+                    `;
+                    historyList.appendChild(historyItem);
+                });
             }
-            [...history].reverse().forEach((item, index) => {
-                const rarityData = rarityConfig[item.rarity];
-                const textColorClass = rarityData?.color || 'text-gray-800';
-                const historyItem = document.createElement('div');
-                historyItem.className = 'p-2 bg-white rounded shadow-sm flex justify-between items-center';
-                historyItem.innerHTML = `
-                    <div>
-                        <span class="font-bold text-gray-500 mr-2">#${history.length - index}</span>
-                        <span class="font-bold ${textColorClass}">[${item.rarity}]</span>
-                        <span>${item.name}</span>
-                    </div>
-                    <span class="text-sm text-gray-400">${new Date(item.timestamp || Date.now()).toLocaleString()}</span>
-                `;
-                historyList.appendChild(historyItem);
-            });
         }
+        return newChart;
     }
 
     /**

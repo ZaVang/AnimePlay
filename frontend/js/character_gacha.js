@@ -18,32 +18,18 @@ Game.CharacterGacha = (function() {
     // Load character data from backend
     async function _loadCharacterData() {
         try {
-            // Load from processed all_cards.json file
             const response = await fetch('/data/characters/all_cards.json');
             if (response.ok) {
-                const characters = await response.json();
-                // Limit to first 200 characters for performance while maintaining variety
-                // allCharacters = characters.slice(0, 200);
-                allCharacters = characters;
-                
+                allCharacters = await response.json();
                 console.log(`Loaded ${allCharacters.length} characters for gacha system`);
-                console.log('Rarity distribution:', allCharacters.reduce((acc, char) => {
-                    acc[char.rarity] = (acc[char.rarity] || 0) + 1;
-                    return acc;
-                }, {}));
-                
-                // Update saved character collection with proper character data
                 _updatePlayerCharacterCollection();
-                
                 return true;
             } else {
                 throw new Error('Failed to fetch character data');
             }
         } catch (error) {
             console.error('Failed to load character data:', error);
-            // Fallback to sample data
-            allCharacters = window.GAME_CONFIG.characterSystem.sampleCharacters;
-            console.log('Using fallback sample characters');
+            allCharacters = [];
             return false;
         }
     }
@@ -53,19 +39,17 @@ Game.CharacterGacha = (function() {
         const playerCharacterCollection = Game.Player.getCharacterCollection();
         let updatedCount = 0;
         
-        playerCharacterCollection.forEach((characterData, characterId) => {
-            const actualCharacter = allCharacters.find(c => c.id == characterId);
+        playerCharacterCollection.forEach((characterData, Id) => {
+            const actualCharacter = allCharacters.find(c => c.id == Id);
             if (actualCharacter) {
                 characterData.character = actualCharacter;
                 updatedCount++;
             } else {
-                console.warn(`Character not found for ID: ${characterId}`);
+                console.warn(`Character not found for ID: ${Id}`);
             }
         });
         
         console.log(`Updated ${updatedCount} characters in player collection`);
-        
-        // Notify other modules that character data is ready
         document.dispatchEvent(new CustomEvent('characterDataReady'));
     }
 
@@ -79,9 +63,9 @@ Game.CharacterGacha = (function() {
     }
 
     // Set UP characters for the character gacha
-    function _setUpCharacters(characterIds) {
-        window.GAME_CONFIG.characterSystem.rateUp.ids = characterIds || [];
-        console.log('Character UP pool updated:', characterIds);
+    function _setUpCharacters(Ids) {
+        window.GAME_CONFIG.characterSystem.rateUp.ids = Ids || [];
+        console.log('Character UP pool updated:', Ids);
     }
 
 
@@ -90,7 +74,7 @@ Game.CharacterGacha = (function() {
         Game.BaseGacha.performGacha(
             characterGachaConfig,
             count,
-            'characterTickets',
+            'characterGachaTickets',
             window.GAME_CONFIG.gameplay.characterGachaEXP,
             () => allCharacters,
             _getUpCharacters,
@@ -101,89 +85,128 @@ Game.CharacterGacha = (function() {
         );
     }
 
+    function getDismantleValue(rarity) {
+        return Game.BaseGacha.getDismantleValue(rarity, window.GAME_CONFIG.characterSystem.rarityConfig);
+    }
 
     // Render character gacha result
     function _renderCharacterGachaResult(drawnCharacters) {
-        const { characterResultContainer, characterResultModal } = Game.UI.elements.characterGacha;
+        const { ResultContainer, ResultModal } = Game.UI.elements.characterGacha;
         
-        characterResultContainer.innerHTML = '';
+        ResultContainer.innerHTML = '';
         drawnCharacters.forEach(character => {
             const characterData = Game.Player.getCharacterCollection().get(character.id) || { character, count: 1 };
             const characterEl = Game.UI.createCharacterCardElement(characterData, 'character-gacha-result', { 
                 isDuplicate: character.isDuplicate,
                 isNew: character.isNew 
             });
-            characterResultContainer.appendChild(characterEl);
+            ResultContainer.appendChild(characterEl);
         });
         
-        characterResultModal.classList.remove('hidden');
+        ResultModal.classList.remove('hidden');
     }
 
-    // Show character gacha rates (unified with anime system)
+    // Show character gacha rates
     function _showCharacterGachaRates() {
-        const { characterRatesContent, characterRatesModal } = Game.UI.elements.characterGacha;
-        Game.BaseGacha.showRates(characterGachaConfig, characterRatesContent, characterRatesModal);
+        const { RatesContent, RatesModal } = Game.UI.elements.characterGacha;
+        Game.BaseGacha.showRates(characterGachaConfig, RatesContent, RatesModal);
+    }
+    
+    function _renderShop() {
+        const { shopItems } = Game.UI.elements.characterGacha;
+        if (!shopItems) return;
+
+        const playerCollection = Game.Player.getCharacterCollection();
+        shopItems.innerHTML = '';
+
+        window.GAME_CONFIG.characterSystem.shop.items.forEach(item => {
+            const character = allCharacters.find(c => c.id === item.Id);
+            if (!character) return;
+
+            const isOwned = playerCollection.has(character.id);
+            const { c: rarityColor } = window.GAME_CONFIG.characterSystem.rarityConfig[character.rarity] || {};
+            
+            const shopItem = document.createElement('div');
+            shopItem.className = 'bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center';
+            shopItem.innerHTML = `
+                <img src="${character.image_path}" class="w-24 h-36 object-cover rounded-md mb-2" onerror="this.src='https://placehold.co/96x144/e2e8f0/334155?text=图片丢失';">
+                <p class="font-bold text-center">${character.name}</p>
+                <p class="text-sm ${rarityColor} text-white px-2 py-0.5 rounded-full my-1">${character.rarity}</p>
+                <p class="font-bold text-lg text-emerald-600">${item.cost.toLocaleString()} 知识点</p>
+                <button class="buy-btn mt-2 w-full bg-pink-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-pink-700 disabled:bg-gray-400" ${isOwned ? 'disabled' : ''}>
+                    ${isOwned ? '已拥有' : '兑换'}
+                </button>
+            `;
+            if (!isOwned) {
+                shopItem.querySelector('.buy-btn').addEventListener('click', () => _buyFromShop(item, character));
+            }
+            shopItems.appendChild(shopItem);
+        });
+    }
+
+    function _buyFromShop(item, character) {
+        const playerState = Game.Player.getState();
+        if (playerState.knowledgePoints < item.cost) {
+            alert("知识点不足！");
+            return;
+        }
+        if (Game.Player.getCharacterCollection().has(character.id)) {
+            alert("你已经拥有该角色了！");
+            return;
+        }
+
+        if (confirm(`确定要花费 ${item.cost} 知识点兑换 ${character.name} 吗？`)) {
+            playerState.knowledgePoints -= item.cost;
+            Game.Player.getCharacterCollection().set(character.id, { character, count: 1 });
+            alert("兑换成功！");
+            Game.UI.renderPlayerState();
+            _renderShop();
+            Game.Player.saveState();
+        }
     }
 
     // Switch character gacha tabs
-    function _switchCharacterGachaTab(tabName) {
-        const { tabs, contents } = Game.UI.elements.characterGacha;
-        Object.keys(tabs).forEach(key => {
-            tabs[key].classList.toggle('active', key === tabName);
-            contents[key].classList.toggle('hidden', key !== tabName);
-        });
-        
-        if (tabName === 'history') {
-            Game.UI.renderCharacterGachaHistory();
-        }
+    function _switchCharacterGachaTab(tabName, type = "character") {
+        Game.UI.switchGachaTab(tabName, type);
     }
 
     return {
         init: async function() {
             console.log("Initializing Character Gacha system...");
             
-            // Load character data
             await _loadCharacterData();
             
-            // Set up event listeners
             const { characterGacha } = Game.UI.elements;
             if (characterGacha) {
                 characterGacha.singleBtn?.addEventListener('click', () => _handleCharacterDraw(1));
                 characterGacha.multiBtn?.addEventListener('click', () => _handleCharacterDraw(10));
                 characterGacha.showRatesBtn?.addEventListener('click', _showCharacterGachaRates);
                 
-                // Tab switching
-                characterGacha.tabs?.pool?.addEventListener('click', (e) => { 
-                    e.preventDefault(); 
-                    _switchCharacterGachaTab('pool'); 
-                });
-                characterGacha.tabs?.history?.addEventListener('click', (e) => { 
-                    e.preventDefault(); 
-                    _switchCharacterGachaTab('history'); 
-                });
+                characterGacha.tabs?.pool?.addEventListener('click', (e) => { e.preventDefault(); _switchCharacterGachaTab('pool', 'character'); });
+                characterGacha.tabs?.history?.addEventListener('click', (e) => { e.preventDefault(); _switchCharacterGachaTab('history', 'character'); });
+                characterGacha.tabs?.shop?.addEventListener('click', (e) => { e.preventDefault(); _switchCharacterGachaTab('shop', 'character'); });
+                
+                characterGacha.closeResultBtn?.addEventListener('click', () => characterGacha.ResultModal.classList.add('hidden'));
+                characterGacha.closeRatesBtn?.addEventListener('click', () => characterGacha.RatesModal.classList.add('hidden'));
+                characterGacha.closeDetailBtn?.addEventListener('click', () => characterGacha.DetailModal.classList.add('hidden'));
             }
             
-            isInitialized = true;
-            
-            // Listen for player login events to update character collection
             document.addEventListener('playerLoggedIn', () => {
                 console.log('Player logged in, updating character collection...');
                 _updatePlayerCharacterCollection();
             });
             
+            isInitialized = true;
             console.log("Character Gacha system initialized successfully.");
         },
         
         renderUI: function() {
-            if (!isInitialized) return;
-            
-            // Update UI elements specific to character gacha
             const upCharacters = _getUpCharacters();
-            const { characterUpBanner } = Game.UI.elements.characterGacha || {};
+            const { UpBanner } = Game.UI.elements.characterGacha || {};
             
-            if (characterUpBanner) {
+            if (UpBanner) {
                 if (upCharacters.length === 0) {
-                    characterUpBanner.innerHTML = `
+                    UpBanner.innerHTML = `
                         <h3 class="text-xl font-bold mb-4 text-center text-pink-600">角色邂逅</h3>
                         <div class="text-center">
                             <p class="text-gray-600 mb-2">与你喜爱的动画角色邂逅！</p>
@@ -200,7 +223,7 @@ Game.CharacterGacha = (function() {
                         </div>
                     `).join('');
                     
-                    characterUpBanner.innerHTML = `
+                    UpBanner.innerHTML = `
                         <h3 class="text-xl font-bold mb-4 text-center text-pink-600">当前UP角色池</h3>
                         <div class="flex items-center justify-center gap-6 flex-wrap">
                             ${characterHtml}
@@ -213,13 +236,12 @@ Game.CharacterGacha = (function() {
                     `;
                 }
             }
+            _renderShop();
         },
-
         getAllCharacters: () => allCharacters,
-        getDismantleValue: (rarity) => Game.BaseGacha.getDismantleValue(rarity, window.GAME_CONFIG.characterSystem.rarityConfig),
+        getDismantleValue: getDismantleValue,
         isInitialized: () => isInitialized,
         setUpCharacters: _setUpCharacters,
         getUpCharacters: _getUpCharacters
     };
-
 })();

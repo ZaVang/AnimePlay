@@ -5,8 +5,6 @@ Game.Player = (function() {
 
     // --- Private State ---
     let _currentUser = '';
-    let _allCards = [];
-    let _rateUpCards = [];
 
     // Anime system state
     let _animeCollection = new Map();
@@ -16,12 +14,12 @@ Game.Player = (function() {
         pullsSinceLastHR: 0 
     };
     
-    // Character system state (unified with anime system)
+    // Character system state
     let _characterCollection = new Map();
     let _characterGachaHistory = [];
     let _characterPityState = { 
         totalPulls: 0, 
-        pullsSinceLastHR: 0  // Unified with anime system
+        pullsSinceLastHR: 0
     };
     
     let _playerState = {
@@ -82,11 +80,11 @@ Game.Player = (function() {
                     activeDeckName: '默认卡组',
                 };
             } else {
-                const savedCollection = data.animeCollection || [];
+                // Load anime collection (just IDs and counts)
+                const savedAnimeCollection = data.animeCollection || [];
                 _animeCollection.clear();
-                savedCollection.forEach(([id, count]) => {
-                    const card = _allCards.find(c => c.id === id);
-                    if (card) _animeCollection.set(id, { card, count });
+                savedAnimeCollection.forEach(([id, count]) => {
+                    _animeCollection.set(id, { anime: { id, name: 'Loading...' }, count });
                 });
 
                 _animePityState = data.animePity || { totalPulls: 0, pullsSinceLastHR: 0 };
@@ -95,11 +93,10 @@ Game.Player = (function() {
                 _animeGachaHistory = data.animeHistory || [];
                 _characterGachaHistory = data.characterHistory || [];
                 
-                // Load character collection (characters won't exist in _allCards, handled separately)  
+                // Load character collection (just IDs and counts)
                 const savedCharacterCollection = data.characterCollection || [];
                 _characterCollection.clear();
                 savedCharacterCollection.forEach(([id, count]) => {
-                    // Characters will be loaded by CharacterGacha module, just store the structure for now
                     _characterCollection.set(id, { character: { id, name: 'Loading...' }, count });
                 });
                 
@@ -108,10 +105,8 @@ Game.Player = (function() {
                 let loadedQueue = _playerState.viewingQueue || []; 
 
                 if (loadedQueue.length < configuredSlots) {
-                    // Pad the array with nulls if the save file has fewer slots than the current config
                     loadedQueue = loadedQueue.concat(Array(configuredSlots - loadedQueue.length).fill(null));
                 } else if (loadedQueue.length > configuredSlots) {
-                    // Truncate the array if the config has fewer slots (less common)
                     loadedQueue = loadedQueue.slice(0, configuredSlots);
                 }
                 _playerState.viewingQueue = loadedQueue;
@@ -127,7 +122,7 @@ Game.Player = (function() {
             _animeCollection.clear();
             _characterCollection.clear();
             _animePityState = { totalPulls: 0, pullsSinceLastHR: 0 };
-            _characterPityState = { totalPulls: 0, pullsSinceLastLegendary: 0, pullsSinceLastMasterpiece: 0 };
+            _characterPityState = { totalPulls: 0, pullsSinceLastHR: 0 };
             _animeGachaHistory = [];
             _characterGachaHistory = [];
             _playerState = {
@@ -150,11 +145,8 @@ Game.Player = (function() {
         Game.UI.hideLoginModal();
         await _loadState();
         
-        // Trigger character data update if character system is ready
-        if (Game.CharacterGacha && Game.CharacterGacha.isInitialized()) {
-            // Force update character collection with proper data
-            document.dispatchEvent(new CustomEvent('playerLoggedIn'));
-        }
+        // Notify other modules that player has logged in
+        document.dispatchEvent(new CustomEvent('playerLoggedIn'));
         
         Game.UI.renderAll();
     }
@@ -167,7 +159,7 @@ Game.Player = (function() {
         _animeGachaHistory = [];
         _characterGachaHistory = [];
         _animePityState = { totalPulls: 0, pullsSinceLastHR: 0 };
-        _characterPityState = { totalPulls: 0, pullsSinceLastLegendary: 0, pullsSinceLastMasterpiece: 0 };
+        _characterPityState = { totalPulls: 0, pullsSinceLastHR: 0 };
         _playerState = {
             ...window.GAME_CONFIG.playerInitialState,
             exp: 0,
@@ -199,40 +191,21 @@ Game.Player = (function() {
                 if (rewards.animeTickets) _playerState.animeGachaTickets += rewards.animeTickets;
                 if (rewards.characterTickets) _playerState.characterGachaTickets += rewards.characterTickets;
                 if (rewards.knowledge) _playerState.knowledgePoints += rewards.knowledge;
-                Game.UI.logMessage(`等级提升至 ${_playerState.level}！获得动画券x${rewards.tickets || 0}，角色券x${rewards.characterTickets || 0}，知识点x${rewards.knowledge || 0}。`, 'level-up');
+                Game.UI.logMessage(`等级提升至 ${_playerState.level}！获得动画券x${rewards.animeTickets || 0}，角色券x${rewards.characterTickets || 0}，知识点x${rewards.knowledge || 0}。`, 'level-up');
            }
             currentLevel = _playerState.level;
             requiredExp = levelXP[currentLevel] || Infinity;
         }
     }
 
-
     // --- Public API ---
     return {
         init: async function() {
-            try {
-                console.log("Player module: fetching all_cards.json...");
-                const response = await fetch('../data/anime/all_cards.json?t=' + new Date().getTime());
-                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-                
-                _allCards = await response.json();
-                console.log("Player module: Cards loaded:", _allCards.length);
-
-                const { rateUp } = window.GAME_CONFIG.animeSystem;
-                _rateUpCards = rateUp.ids.map(id => _allCards.find(c => c.id === id)).filter(Boolean);
-                
-                Game.UI.elements.loginBtn.addEventListener('click', () => _login(Game.UI.elements.loginInput.value.trim()));
-                
-            } catch (error) {
-                console.error("Critical initialization failed:", error);
-                alert(`加载核心数据时发生严重错误: ${error.message}`);
-            }
+            // Login button event listener is now in UI.init
         },
         
         // Getters to expose state safely
         getCurrentUser: () => _currentUser,
-        getAllCards: () => _allCards,
-        getRateUpCards: () => _rateUpCards,
         getState: () => _playerState,
 
         // Anime system getters
@@ -245,19 +218,14 @@ Game.Player = (function() {
         getCharacterGachaHistory: () => _characterGachaHistory,
         getCharacterPityState: () => _characterPityState,
         
-        // Setters for controlled mutation
-        setState: (newState) => { _playerState = newState; },
-        setAnimeCollection: (newCollection) => { _animeCollection = newCollection; },
-        setAnimeGachaHistory: (newHistory) => { _animeGachaHistory = newHistory; },
-        setAnimePityState: (newPity) => { _animePityState = newPity; },
-        
         // Actions
         saveState: _saveState,
+        login: _login,
         logout: _logout,
         addExp: _addExp,
         
-        addToViewingQueue: function(cardId, slotIndex) {
-            _playerState.viewingQueue[slotIndex] = { cardId, startTime: new Date().toISOString() };
+        addToViewingQueue: function(Id, slotIndex) {
+            _playerState.viewingQueue[slotIndex] = { Id, startTime: new Date().toISOString() };
             Game.UI.elements.viewingQueueModal.modal.classList.add('hidden');
             Game.UI.renderViewingQueue();
             _saveState();
@@ -266,13 +234,21 @@ Game.Player = (function() {
         collectFromViewingQueue: function(slotIndex) {
             const slot = _playerState.viewingQueue[slotIndex];
             if (!slot) return;
+            
+            // Get card data from the AnimeGacha module
+            const allAnimes = Game.AnimeGacha.getAllAnimes();
+            const anime = allAnimes.find(c => c.id === slot.Id);
 
-            const card = _allCards.find(c => c.id === slot.cardId);
-            const rewards = window.GAME_CONFIG.gameplay.viewingQueue.rewards[card.rarity];
+            if (!anime) {
+                console.error(`番剧 with id ${slot.Id} not found in AnimeGacha`);
+                return;
+            }
+
+            const rewards = window.GAME_CONFIG.gameplay.viewingQueue.rewards[anime.rarity];
             
             _addExp(rewards.exp);
             _playerState.knowledgePoints += rewards.knowledge;
-            Game.UI.logMessage(`《${card.name}》观看完毕！获得经验x${rewards.exp}，知识点x${rewards.knowledge}。`, 'reward');
+            Game.UI.logMessage(`《${anime.name}》观看完毕！获得经验x${rewards.exp}，知识点x${rewards.knowledge}。`, 'reward');
 
             _playerState.viewingQueue[slotIndex] = null;
             Game.UI.renderViewingQueue();

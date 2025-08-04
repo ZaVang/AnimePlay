@@ -189,18 +189,18 @@
                                 <button id="gacha-type-character" class="gacha-type-btn bg-pink-600 text-white font-semibold py-2 px-4 rounded-md text-sm hover:bg-pink-700">角色邂逅</button>
                             </div>
                         </div>
-                        <!-- Compact Tab Navigation -->
-                        <nav class="-mb-px flex justify-center space-x-6 px-6" aria-label="Tabs">
-                            <a href="#" id="tab-gacha-pool" class="gacha-tab active whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm">卡池</a>
-                            <a href="#" id="tab-gacha-history" class="gacha-tab whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm">历史</a>
-                            <a href="#" id="tab-gacha-shop" class="gacha-tab whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm">商店</a>
-                        </nav>
                     </div>
 
                     <!-- Content Area -->
                     <div class="p-6">
                         <!-- Anime Gacha Content -->
                         <div id="anime-gacha-content">
+                            <!-- Anime Tab Navigation -->
+                            <nav class="-mb-px flex justify-center space-x-6 px-6 mb-4" aria-label="Anime Tabs">
+                                <a href="#" id="tab-anime-pool" class="gacha-tab active whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm">卡池</a>
+                                <a href="#" id="tab-anime-history" class="gacha-tab whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm">历史</a>
+                                <a href="#" id="tab-anime-shop" class="gacha-tab whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm">商店</a>
+                            </nav>
                             <div id="anime-gacha-pool-content">
                                 <div id="anime-up-banner" class="mb-6"></div>
                                 <div class="flex justify-between items-center mb-4">
@@ -218,7 +218,7 @@
                                     <a href="#" id="show-anime-gacha-rates" class="text-xs text-gray-500 hover:underline">概率一览</a>
                                 </div>
                             </div>
-                            <div id="gacha-history-content" class="hidden">
+                            <div id="anime-gacha-history-content" class="hidden">
                                 <h3 class="text-lg font-semibold mb-4">动画邂逅历史统计</h3>
                                 <div class="chart-container mb-6" style="height: 300px;"><canvas id="anime-gacha-history-chart"></canvas></div>
                                 <h3 class="text-lg font-semibold mb-4">邂逅记录</h3>
@@ -232,6 +232,12 @@
 
                         <!-- Character Gacha Content -->
                         <div id="character-gacha-content" class="hidden">
+                            <!-- Character Tab Navigation -->
+                            <nav class="-mb-px flex justify-center space-x-6 px-6 mb-4" aria-label="Character Tabs">
+                                <a href="#" id="tab-character-pool" class="character-gacha-tab active whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm">卡池</a>
+                                <a href="#" id="tab-character-history" class="character-gacha-tab whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm">历史</a>
+                                <a href="#" id="tab-character-shop" class="character-gacha-tab whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm">商店</a>
+                            </nav>
                             <div id="character-gacha-pool-content">
                                 <div id="character-up-banner" class="mb-6"></div>
                                 <div class="flex justify-between items-center mb-4">
@@ -411,7 +417,7 @@
         <div class="bg-white p-6 rounded-lg shadow-xl max-w-4xl w-full modal-content overflow-y-auto">
             <h2 class="text-2xl font-bold mb-4 text-center">邂逅结果</h2>
             <div id="anime-gacha-result-cards" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4"></div>
-            <div class="text-center mt-6"><button id="close-gacha-modal" class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg">确认</button></div>
+            <div class="text-center mt-6"><button id="close-anime-gacha-result-modal" class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg">确认</button></div>
         </div>
     </div>
 
@@ -442,7 +448,7 @@
         <div class="bg-white p-6 rounded-lg shadow-xl max-w-4xl w-full modal-content overflow-y-auto">
             <h2 class="text-2xl font-bold mb-4 text-center">角色邂逅结果</h2>
             <div id="character-gacha-result-cards" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4"></div>
-            <div class="text-center mt-6"><button id="close-character-gacha-modal" class="bg-pink-600 text-white font-bold py-2 px-6 rounded-lg">确认</button></div>
+            <div class="text-center mt-6"><button id="close-character-gacha-result-modal" class="bg-pink-600 text-white font-bold py-2 px-6 rounded-lg">确认</button></div>
         </div>
     </div>
 
@@ -466,13 +472,24 @@
         </div>
     </div>
 
-    <!-- Gacha Rates Modal -->
-    <div id="gacha-rates-modal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+    <!-- Anime Gacha Rates Modal -->
+    <div id="anime-gacha-rates-modal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
         <div class="bg-white p-6 rounded-lg shadow-xl max-w-sm w-full">
             <h2 class="text-2xl font-bold mb-4 text-center">邂逅概率</h2>
-            <div id="gacha-rates-content" class="space-y-2"></div>
+            <div id="anime-gacha-rates-content" class="space-y-2"></div>
             <div class="text-center mt-6">
-                <button id="close-gacha-rates-modal" class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg">关闭</button>
+                <button id="close-anime-gacha-rates-modal" class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg">关闭</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Character Gacha Rates Modal -->
+    <div id="character-gacha-rates-modal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+        <div class="bg-white p-6 rounded-lg shadow-xl max-w-sm w-full">
+            <h2 class="text-2xl font-bold mb-4 text-center">邂逅概率</h2>
+            <div id="character-gacha-rates-content" class="space-y-2"></div>
+            <div class="text-center mt-6">
+                <button id="close-character-gacha-rates-modal" class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg">关闭</button>
             </div>
         </div>
     </div>

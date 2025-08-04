@@ -39,13 +39,14 @@ Game.UnifiedCollection = (function() {
 
     // 渲染动画收藏
     function _renderAnimeCollection() {
-        const playerCollection = Game.Player.getPlayerCollection();
-        const collectionView = document.getElementById('anime-collection-view');
+        const playerCollection = Game.Player.getAnimeCollection();
+        const { animeCollectionContainer: collectionView } = Game.UI.elements.animeCollection;
         
         if (!collectionView) return;
         
         const filteredAnimes = Array.from(playerCollection.values()).filter(data => {
-            const anime = data.card;
+            const anime = data.anime;
+            if (!anime || !anime.name) return false;
             const nameMatch = anime.name.toLowerCase().includes(animeFilters.name.toLowerCase());
             const rarityMatch = animeFilters.rarity ? anime.rarity === animeFilters.rarity : true;
             const tagMatch = animeFilters.tag ? (anime.synergy_tags || []).includes(animeFilters.tag) : true;
@@ -55,10 +56,10 @@ Game.UnifiedCollection = (function() {
         // 排序
         const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
         filteredAnimes.sort((a, b) => {
-            const rarityA = rarityOrder.indexOf(a.card.rarity);
-            const rarityB = rarityOrder.indexOf(b.card.rarity);
+            const rarityA = rarityOrder.indexOf(a.anime.rarity);
+            const rarityB = rarityOrder.indexOf(b.anime.rarity);
             if (rarityA !== rarityB) return rarityA - rarityB;
-            return a.card.name.localeCompare(b.card.name);
+            return a.anime.name.localeCompare(b.anime.name);
         });
 
         // 渲染
@@ -87,12 +88,13 @@ Game.UnifiedCollection = (function() {
     // 渲染角色收藏
     function _renderCharacterCollection() {
         const playerCharacterCollection = Game.Player.getCharacterCollection();
-        const collectionView = document.getElementById('character-collection-view');
+        const { characterCollectionContainer: collectionView } = Game.UI.elements.characterCollection;
         
         if (!collectionView) return;
         
         const filteredCharacters = Array.from(playerCharacterCollection.values()).filter(data => {
             const character = data.character;
+             if (!character || !character.name) return false;
             const nameMatch = character.name.toLowerCase().includes(characterFilters.name.toLowerCase());
             const rarityMatch = characterFilters.rarity ? character.rarity === characterFilters.rarity : true;
             const genderMatch = characterFilters.gender ? character.gender === characterFilters.gender : true;
@@ -145,23 +147,23 @@ Game.UnifiedCollection = (function() {
 
     // 渲染动画统计
     function _renderAnimeStats(container) {
-        const playerCollection = Game.Player.getPlayerCollection();
-        const allAnimes = Array.from(playerCollection.values());
+        const playerCollection = Game.Player.getAnimeCollection();
+        const allAnimes = Array.from(playerCollection.values()).filter(d => d.anime && d.anime.name !== 'Loading...');
         const totalAnimes = allAnimes.length;
         const totalCount = allAnimes.reduce((sum, data) => sum + data.count, 0);
-        const allPossibleAnimes = Game.Player.getAllCards();
+        const allPossibleAnimes = Game.AnimeGacha.getAllAnimes();
 
         // 稀有度统计
         const rarityStats = {};
         allAnimes.forEach(data => {
-            const rarity = data.card.rarity;
+            const rarity = data.anime.rarity;
             rarityStats[rarity] = (rarityStats[rarity] || 0) + 1;
         });
 
         const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
         const rarityStatsHtml = rarityOrder.map(rarity => {
             const count = rarityStats[rarity] || 0;
-            const rarityConfig = window.GAME_CONFIG.rarityConfig[rarity];
+            const rarityConfig = window.GAME_CONFIG.animeSystem.rarityConfig[rarity];
             const colorClass = rarityConfig?.color || 'text-gray-500';
             return `<span class="${colorClass} font-bold">${rarity}: ${count}</span>`;
         }).join(' | ');
@@ -199,11 +201,10 @@ Game.UnifiedCollection = (function() {
     // 渲染角色统计
     function _renderCharacterStats(container) {
         const playerCharacterCollection = Game.Player.getCharacterCollection();
-        const allCharacters = Array.from(playerCharacterCollection.values());
+        const allCharacters = Array.from(playerCharacterCollection.values()).filter(d => d.character && d.character.name !== 'Loading...');
         const totalCharacters = allCharacters.length;
         const totalCount = allCharacters.reduce((sum, data) => sum + data.count, 0);
         
-        // 获取所有可能的角色数量 (这里假设有一个getAllCharacters方法)
         const allPossibleCharacters = Game.CharacterGacha?.getAllCharacters() || [];
 
         // 稀有度统计
@@ -266,34 +267,33 @@ Game.UnifiedCollection = (function() {
 
     // 显示动画详情
     function _showAnimeDetail(animeData) {
-        const { card, count } = animeData;
-        const modal = document.getElementById('anime-detail-modal');
-        const content = document.getElementById('anime-detail-content');
+        const { anime, count } = animeData;
+        const { animeDetailModal: modal, animeDetailContent: content } = Game.UI.elements.animeCollection;
         
-        if (!modal || !content) return;
+        if (!modal || !content || !anime) return;
 
-        const { rarityConfig } = window.GAME_CONFIG;
-        const rarityColor = rarityConfig[card.rarity]?.c || 'bg-gray-500';
+        const { rarityConfig } = window.GAME_CONFIG.animeSystem;
+        const rarityColor = rarityConfig[anime.rarity]?.c || 'bg-gray-500';
         
         const detailHtml = `
             <div class="flex flex-col md:flex-row gap-6">
                 <div class="md:w-1/3 flex-shrink-0">
-                    <img src="${card.image_path}" class="w-full aspect-[3/2] object-cover rounded-lg shadow-lg" onerror="this.src='https://placehold.co/300x200/e2e8f0/334155?text=图片丢失';">
+                    <img src="${anime.image_path}" class="w-full aspect-[3/2] object-cover rounded-lg shadow-lg" onerror="this.src='https://placehold.co/300x200/e2e8f0/334155?text=图片丢失';">
                 </div>
                 <div class="md:w-2/3">
-                    <h2 class="text-3xl font-bold mb-3">${card.name}</h2>
+                    <h2 class="text-3xl font-bold mb-3">${anime.name}</h2>
                     <div class="flex items-center gap-4 mb-4">
-                        <span class="px-3 py-1 text-sm font-bold text-white ${rarityColor.includes('from') ? 'bg-gradient-to-r' : ''} ${rarityColor} rounded-full">${card.rarity}</span>
+                        <span class="px-3 py-1 text-sm font-bold text-white ${rarityColor.includes('from') ? 'bg-gradient-to-r' : ''} ${rarityColor} rounded-full">${anime.rarity}</span>
                         <span class="text-lg font-semibold text-gray-700">拥有数量: <span class="font-bold text-indigo-600">${count}</span></span>
                     </div>
                     <div class="grid grid-cols-2 gap-4 mb-4">
                         <div>
                             <p class="text-sm text-gray-600">点数</p>
-                            <p class="text-xl font-bold text-indigo-600">${card.points}</p>
+                            <p class="text-xl font-bold text-indigo-600">${anime.points}</p>
                         </div>
                         <div>
                             <p class="text-sm text-gray-600">Cost</p>
-                            <p class="text-xl font-bold text-indigo-600">${card.cost}</p>
+                            <p class="text-xl font-bold text-indigo-600">${anime.cost}</p>
                         </div>
                     </div>
                     <div class="bg-gray-100 rounded-lg p-4 mb-4">
@@ -301,23 +301,23 @@ Game.UnifiedCollection = (function() {
                         <div class="grid grid-cols-3 gap-4 text-center text-sm">
                             <div>
                                 <p class="font-semibold text-gray-600">评分</p>
-                                <p class="font-bold text-xl text-amber-600">${card.rating_score || 'N/A'}</p>
+                                <p class="font-bold text-xl text-amber-600">${anime.rating_score || 'N/A'}</p>
                             </div>
                             <div>
                                 <p class="font-semibold text-gray-600">排名</p>
-                                <p class="font-bold text-xl text-amber-600">#${card.rating_rank || 'N/A'}</p>
+                                <p class="font-bold text-xl text-amber-600">#${anime.rating_rank || 'N/A'}</p>
                             </div>
                             <div>
                                 <p class="font-semibold text-gray-600">评价人数</p>
-                                <p class="font-bold text-xl text-amber-600">${(card.rating_total || 0).toLocaleString()}</p>
+                                <p class="font-bold text-xl text-amber-600">${(anime.rating_total || 0).toLocaleString()}</p>
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-600 mb-4">${card.description}</p>
+                    <p class="text-gray-600 mb-4">${anime.description}</p>
                     <div class="mb-4">
                         <h3 class="font-bold mb-2">羁绊标签:</h3>
                         <div class="flex flex-wrap gap-2">
-                            ${(card.synergy_tags || []).map(tag => `<span class="bg-gray-200 text-gray-800 px-2 py-1 text-xs rounded-full">${tag}</span>`).join('') || '<span class="text-gray-500 text-sm">无</span>'}
+                            ${(anime.synergy_tags || []).map(tag => `<span class="bg-gray-200 text-gray-800 px-2 py-1 text-xs rounded-full">${tag}</span>`).join('') || '<span class="text-gray-500 text-sm">无</span>'}
                         </div>
                     </div>
                     <div id="anime-dismantle-section" class="mt-6"></div>
@@ -329,7 +329,7 @@ Game.UnifiedCollection = (function() {
 
         // 添加分解功能（如果有多张）
         if (count > 1) {
-            const dismantleValue = Game.AnimeGacha.getDismantleValue(card.rarity);
+            const dismantleValue = Game.AnimeGacha.getDismantleValue(anime.rarity);
             const dismantleSection = content.querySelector('#anime-dismantle-section');
             dismantleSection.innerHTML = `
                 <div class="border-t pt-4">
@@ -339,7 +339,7 @@ Game.UnifiedCollection = (function() {
                 </div>
             `;
             dismantleSection.querySelector('#anime-dismantle-btn').addEventListener('click', () => {
-                _dismantleAnime(card.id);
+                _dismantleAnime(anime.id);
                 modal.classList.add('hidden');
             });
         }
@@ -350,10 +350,9 @@ Game.UnifiedCollection = (function() {
     // 显示角色详情
     function _showCharacterDetail(characterData) {
         const { character, count } = characterData;
-        const modal = document.getElementById('character-detail-modal');
-        const content = document.getElementById('character-detail-content');
+        const { characterDetailModal: modal, characterDetailContent: content } = Game.UI.elements.characterCollection;
         
-        if (!modal || !content) return;
+        if (!modal || !content || !character) return;
 
         const { rarityConfig } = window.GAME_CONFIG.characterSystem;
         const rarityColor = rarityConfig[character.rarity]?.c || 'bg-gray-500';
@@ -440,7 +439,7 @@ Game.UnifiedCollection = (function() {
 
     // 分解动画卡
     function _dismantleAnime(cardId) {
-        const playerCollection = Game.Player.getPlayerCollection();
+        const playerCollection = Game.Player.getAnimeCollection();
         const playerState = Game.Player.getState();
         
         if (!playerCollection.has(cardId)) return;
@@ -448,10 +447,10 @@ Game.UnifiedCollection = (function() {
         const cardData = playerCollection.get(cardId);
         if (cardData.count > 1) {
             cardData.count--;
-            const dismantleValue = Game.AnimeGacha.getDismantleValue(cardData.card.rarity);
+            const dismantleValue = Game.AnimeGacha.getDismantleValue(cardData.anime.rarity);
             playerState.knowledgePoints += dismantleValue;
             
-            Game.UI.logMessage(`分解了 ${cardData.card.name}，获得 ${dismantleValue} 知识点。`, 'reward');
+            Game.UI.logMessage(`分解了 ${cardData.anime.name}，获得 ${dismantleValue} 知识点。`, 'reward');
             Game.Player.saveState();
             Game.UI.renderPlayerState();
             _renderCurrentCollection();
@@ -482,15 +481,15 @@ Game.UnifiedCollection = (function() {
 
     // 一键分解所有动画重复卡
     function _dismantleAllAnimes() {
-        const playerCollection = Game.Player.getPlayerCollection();
+        const playerCollection = Game.Player.getAnimeCollection();
         const playerState = Game.Player.getState();
         let totalValue = 0;
         let dismantledCount = 0;
 
         playerCollection.forEach((cardData, cardId) => {
-            if (cardData.count > 1) {
+            if (cardData.count > 1 && cardData.anime) {
                 const duplicates = cardData.count - 1;
-                const dismantleValue = Game.AnimeGacha.getDismantleValue(cardData.card.rarity) * duplicates;
+                const dismantleValue = Game.AnimeGacha.getDismantleValue(cardData.anime.rarity) * duplicates;
                 totalValue += dismantleValue;
                 dismantledCount += duplicates;
                 cardData.count = 1;
@@ -515,7 +514,7 @@ Game.UnifiedCollection = (function() {
         let dismantledCount = 0;
 
         playerCharacterCollection.forEach((characterData, characterId) => {
-            if (characterData.count > 1) {
+            if (characterData.count > 1 && characterData.character) {
                 const duplicates = characterData.count - 1;
                 const dismantleValue = Game.CharacterGacha.getDismantleValue(characterData.character.rarity) * duplicates;
                 totalValue += dismantleValue;
@@ -536,6 +535,8 @@ Game.UnifiedCollection = (function() {
 
     return {
         init: function() {
+            const { animeCollection, characterCollection } = Game.UI.elements;
+
             // 标签切换事件
             document.getElementById('tab-collection-anime').addEventListener('click', (e) => {
                 e.preventDefault();
@@ -548,80 +549,48 @@ Game.UnifiedCollection = (function() {
             });
 
             // 动画筛选器事件
-            const animeNameFilter = document.getElementById('anime-filter-name');
-            const animeRarityFilter = document.getElementById('anime-filter-rarity');
-            const animeTagFilter = document.getElementById('anime-filter-tag');
-            const animeDismantleBtn = document.getElementById('anime-dismantle-all-btn');
-
-            if (animeNameFilter) {
-                animeNameFilter.addEventListener('input', (e) => {
-                    animeFilters.name = e.target.value;
-                    if (currentCollectionType === 'anime') _renderCurrentCollection();
-                });
-            }
-            
-            if (animeRarityFilter) {
-                animeRarityFilter.addEventListener('change', (e) => {
-                    animeFilters.rarity = e.target.value;
-                    if (currentCollectionType === 'anime') _renderCurrentCollection();
-                });
-            }
-            
-            if (animeTagFilter) {
-                animeTagFilter.addEventListener('change', (e) => {
-                    animeFilters.tag = e.target.value;
-                    if (currentCollectionType === 'anime') _renderCurrentCollection();
-                });
-            }
-
-            if (animeDismantleBtn) {
-                animeDismantleBtn.addEventListener('click', () => {
-                    _dismantleAllAnimes();
-                    _renderCurrentCollection();
-                    _renderCollectionStats();
-                });
-            }
+            animeCollection.animeFilterName?.addEventListener('input', (e) => {
+                animeFilters.name = e.target.value;
+                if (currentCollectionType === 'anime') _renderCurrentCollection();
+            });
+            animeCollection.animeFilterRarity?.addEventListener('change', (e) => {
+                animeFilters.rarity = e.target.value;
+                if (currentCollectionType === 'anime') _renderCurrentCollection();
+            });
+            animeCollection.animeFilterTag?.addEventListener('change', (e) => {
+                animeFilters.tag = e.target.value;
+                if (currentCollectionType === 'anime') _renderCurrentCollection();
+            });
+            animeCollection.dismantleAllBtn?.addEventListener('click', () => {
+                _dismantleAllAnimes();
+                _renderCurrentCollection();
+                _renderCollectionStats();
+            });
 
             // 角色筛选器事件
-            const characterNameFilter = document.getElementById('character-filter-name');
-            const characterRarityFilter = document.getElementById('character-filter-rarity');
-            const characterGenderFilter = document.getElementById('character-filter-gender');
-            const characterDismantleBtn = document.getElementById('character-dismantle-all-btn');
-
-            if (characterNameFilter) {
-                characterNameFilter.addEventListener('input', (e) => {
-                    characterFilters.name = e.target.value;
-                    if (currentCollectionType === 'character') _renderCurrentCollection();
-                });
-            }
+            characterCollection.characterFilterName?.addEventListener('input', (e) => {
+                characterFilters.name = e.target.value;
+                if (currentCollectionType === 'character') _renderCurrentCollection();
+            });
+            characterCollection.characterFilterRarity?.addEventListener('change', (e) => {
+                characterFilters.rarity = e.target.value;
+                if (currentCollectionType === 'character') _renderCurrentCollection();
+            });
+            characterCollection.characterFilterGender?.addEventListener('change', (e) => {
+                characterFilters.gender = e.target.value;
+                if (currentCollectionType === 'character') _renderCurrentCollection();
+            });
+            characterCollection.dismantleAllBtn?.addEventListener('click', () => {
+                _dismantleAllCharacters();
+                _renderCurrentCollection();
+                _renderCollectionStats();
+            });
             
-            if (characterRarityFilter) {
-                characterRarityFilter.addEventListener('change', (e) => {
-                    characterFilters.rarity = e.target.value;
-                    if (currentCollectionType === 'character') _renderCurrentCollection();
-                });
-            }
-            
-            if (characterGenderFilter) {
-                characterGenderFilter.addEventListener('change', (e) => {
-                    characterFilters.gender = e.target.value;
-                    if (currentCollectionType === 'character') _renderCurrentCollection();
-                });
-            }
-
-            if (characterDismantleBtn) {
-                characterDismantleBtn.addEventListener('click', () => {
-                    _dismantleAllCharacters();
-                    _renderCurrentCollection();
-                    _renderCollectionStats();
-                });
-            }
-
+            _populateFilters();
             console.log("Unified Collection system initialized.");
         },
 
         renderUI: function() {
-            _populateFilters();
             _renderCurrentCollection();
             _renderCollectionStats();
         },
@@ -632,56 +601,52 @@ Game.UnifiedCollection = (function() {
 
     // 填充筛选器选项
     function _populateFilters() {
-        // 动画筛选器
-        const animeRarityFilter = document.getElementById('anime-filter-rarity');
-        const animeTagFilter = document.getElementById('anime-filter-tag');
+        const { animeCollection, characterCollection } = Game.UI.elements;
 
-        if (animeRarityFilter) {
+        // 动画筛选器
+        if (animeCollection.animeFilterRarity) {
             const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
-            animeRarityFilter.innerHTML = '<option value="">所有稀有度</option>';
+            animeCollection.animeFilterRarity.innerHTML = '<option value="">所有稀有度</option>';
             rarityOrder.forEach(rarity => {
                 const option = document.createElement('option');
                 option.value = rarity;
                 option.textContent = rarity;
-                animeRarityFilter.appendChild(option);
+                animeCollection.animeFilterRarity.appendChild(option);
             });
         }
 
-        if (animeTagFilter) {
-            const allCards = Game.Player.getAllCards();
+        if (animeCollection.animeFilterTag) {
+            const allAnimes = Game.AnimeGacha.getAllAnimes();
             const allTags = new Set();
-            allCards.forEach(card => {
-                if (card.synergy_tags) {
-                    card.synergy_tags.forEach(tag => allTags.add(tag));
+            allAnimes.forEach(anime => {
+                if (anime.synergy_tags) {
+                    anime.synergy_tags.forEach(tag => allTags.add(tag));
                 }
             });
             
-            animeTagFilter.innerHTML = '<option value="">所有标签</option>';
+            animeCollection.animeFilterTag.innerHTML = '<option value="">所有标签</option>';
             Array.from(allTags).sort().forEach(tag => {
                 const option = document.createElement('option');
                 option.value = tag;
                 option.textContent = tag;
-                animeTagFilter.appendChild(option);
+                animeCollection.animeFilterTag.appendChild(option);
             });
         }
 
         // 角色筛选器
-        const characterRarityFilter = document.getElementById('character-filter-rarity');
-        const characterGenderFilter = document.getElementById('character-filter-gender');
-
-        if (characterRarityFilter) {
+        if (characterCollection.characterFilterRarity) {
             const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
-            characterRarityFilter.innerHTML = '<option value="">所有稀有度</option>';
+            characterCollection.characterFilterRarity.innerHTML = '<option value="">所有稀有度</option>';
             rarityOrder.forEach(rarity => {
                 const option = document.createElement('option');
                 option.value = rarity;
                 option.textContent = rarity;
-                characterRarityFilter.appendChild(option);
+                characterCollection.characterFilterRarity.appendChild(option);
             });
         }
 
-        if (characterGenderFilter) {
-            characterGenderFilter.innerHTML = `
+        if (characterCollection.characterFilterGender) {
+            characterCollection.characterFilterGender.innerHTML = `
                 <option value="">所有性别</option>
                 <option value="male">男性</option>
                 <option value="female">女性</option>

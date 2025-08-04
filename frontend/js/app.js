@@ -9,30 +9,27 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.log("Application starting...");
 
     try {
-        // Player.init is async and fetches core data. 
-        // It must complete before other modules can safely initialize.
+        // Player.init must be first, but it no longer loads card data.
         await Game.Player.init();
-
-        // Now that player data (like allCards) is loaded, init other modules.
-        Game.UI.init();
-        Game.UI.populateFilters(); // Populate filters now that cards are loaded
-        Game.AnimeGacha.init();
         
-        // Initialize character system modules
+        // Gacha systems load their own data and must complete before UI/Deck.
+        await Game.AnimeGacha.init();
         if (Game.CharacterGacha) {
             await Game.CharacterGacha.init();
         }
+
+        // Now that all data is loaded, initialize UI and other dependent modules.
+        Game.UI.init();
+        Game.Deck.init();
         
-        // Initialize unified collection module only
         if (Game.UnifiedCollection) {
-            Game.UnifiedCollection.init();
+            Game.UnifiedCollection.init(); // This will populate filters
         }
         
-        Game.Deck.init();
         Game.Battle.init();
         
         // Show login modal after everything is ready.
-        Game.UI.elements.loginModal.classList.remove('hidden');
+        Game.UI.showLoginModal();
 
         console.log("All modules initialized.");
 
@@ -40,4 +37,4 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error("A critical error occurred during initialization:", error);
         alert("应用初始化失败，请刷新页面重试。");
     }
-}); 
+});

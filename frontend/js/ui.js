@@ -12,8 +12,8 @@ Game.UI = (function() {
         mainSections: document.querySelectorAll('main section'),
         home: {
             level: document.getElementById('player-level'),
-            animeTickets: document.getElementById('anime-gacha-tickets'),
-            characterTickets: document.getElementById('character-gacha-tickets'),
+            animeGachaTickets: document.getElementById('anime-gacha-tickets'),
+            characterGachaTickets: document.getElementById('character-gacha-tickets'),
             knowledge: document.getElementById('knowledge-points'),
             expBar: document.getElementById('player-exp-bar'),
             expText: document.getElementById('player-exp-text'),
@@ -21,7 +21,6 @@ Game.UI = (function() {
             logArea: document.getElementById('log-area'),
         },
         gacha: {
-            // Unified gacha interface
             typeAnimeBtn: document.getElementById('gacha-type-anime'),
             typeCharacterBtn: document.getElementById('gacha-type-character'),
             animeContent: document.getElementById('anime-gacha-content'),
@@ -29,50 +28,50 @@ Game.UI = (function() {
         },
         animeGacha: {
             tabs: { 
-                pool: document.getElementById('tab-gacha-pool'), 
-                history: document.getElementById('tab-gacha-history'), 
-                shop: document.getElementById('tab-gacha-shop') 
+                pool: document.getElementById('tab-anime-pool'), 
+                history: document.getElementById('tab-anime-history'), 
+                shop: document.getElementById('tab-anime-shop') 
             },
             contents: { 
                 pool: document.getElementById('anime-gacha-pool-content'), 
                 history: document.getElementById('anime-gacha-history-content'), 
                 shop: document.getElementById('anime-gacha-shop-content') 
             },
-            upBanner: document.getElementById('anime-up-banner'),
+            UpBanner: document.getElementById('anime-up-banner'),
             singleBtn: document.getElementById('anime-gacha-btn-single'),
             multiBtn: document.getElementById('anime-gacha-btn-multi'),
-            resultModal: document.getElementById('anime-gacha-result-modal'),
-            resultContainer: document.getElementById('anime-gacha-result-cards'),
-            closeResultBtn: document.getElementById('close-anime-gacha-modal'),
-            historyChartCanvas: document.getElementById('anime-gacha-history-chart'),
-            historyList: document.getElementById('anime-gacha-history-list'),
-            ratesModal: document.getElementById('anime-gacha-rates-modal'),
-            ratesContent: document.getElementById('anime-gacha-rates-content'),
+            ResultModal: document.getElementById('anime-gacha-result-modal'),
+            ResultContainer: document.getElementById('anime-gacha-result-cards'),
+            closeResultBtn: document.getElementById('close-anime-gacha-result-modal'),
+            HistoryChartCanvas: document.getElementById('anime-gacha-history-chart'),
+            HistoryList: document.getElementById('anime-gacha-history-list'),
+            RatesModal: document.getElementById('anime-gacha-rates-modal'),
+            RatesContent: document.getElementById('anime-gacha-rates-content'),
             showRatesBtn: document.getElementById('show-anime-gacha-rates'),
             closeRatesBtn: document.getElementById('close-anime-gacha-rates-modal'),
             shopItems: document.getElementById('anime-shop-items'),
         },
         characterGacha: {
             tabs: { 
-                pool: document.getElementById('tab-gacha-pool'), 
-                history: document.getElementById('tab-gacha-history'), 
-                shop: document.getElementById('tab-gacha-shop') 
+                pool: document.getElementById('tab-character-pool'), 
+                history: document.getElementById('tab-character-history'), 
+                shop: document.getElementById('tab-character-shop') 
             },
             contents: { 
                 pool: document.getElementById('character-gacha-pool-content'), 
                 history: document.getElementById('character-gacha-history-content'),
                 shop: document.getElementById('character-gacha-shop-content') 
             },
-            characterUpBanner: document.getElementById('character-up-banner'),
+            UpBanner: document.getElementById('character-up-banner'),
             singleBtn: document.getElementById('character-gacha-btn-single'),
             multiBtn: document.getElementById('character-gacha-btn-multi'),
-            characterResultModal: document.getElementById('character-gacha-result-modal'),
-            characterResultContainer: document.getElementById('character-gacha-result-cards'),
-            closeResultBtn: document.getElementById('close-character-gacha-modal'),
-            characterHistoryChartCanvas: document.getElementById('characterGachaHistoryChart'),
-            characterHistoryList: document.getElementById('character-gacha-history-list'),
-            characterRatesModal: document.getElementById('character-gacha-rates-modal'),
-            characterRatesContent: document.getElementById('character-gacha-rates-content'),
+            ResultModal: document.getElementById('character-gacha-result-modal'),
+            ResultContainer: document.getElementById('character-gacha-result-cards'),
+            closeResultBtn: document.getElementById('close-character-gacha-result-modal'),
+            HistoryChartCanvas: document.getElementById('character-gacha-history-chart'),
+            HistoryList: document.getElementById('character-gacha-history-list'),
+            RatesModal: document.getElementById('character-gacha-rates-modal'),
+            RatesContent: document.getElementById('character-gacha-rates-content'),
             showRatesBtn: document.getElementById('show-character-gacha-rates'),
             closeRatesBtn: document.getElementById('close-character-gacha-rates-modal'),
             shopItems: document.getElementById('character-shop-items'),
@@ -89,23 +88,23 @@ Game.UI = (function() {
             list: document.getElementById('current-deck-list'),
         },
         animeCollection: {
-            animeCollectionContainer: document.getElementById('anime-collection-view'),
-            animeFilterName: document.getElementById('anime-filter-name'),
-            animeFilterRarity: document.getElementById('anime-filter-rarity'),
-            animeFilterTag: document.getElementById('anime-filter-tag'),
-            dismantleAllBtn: document.getElementById('anime-dismantle-all-btn'),
-            animeDetailModal: document.getElementById('anime-detail-modal'),
-            animeDetailContent: document.getElementById('anime-detail-content'),
+            CollectionContainer: document.getElementById('anime-collection-view'),
+            FilterName: document.getElementById('anime-filter-name'),
+            FilterRarity: document.getElementById('anime-filter-rarity'),
+            FilterTag: document.getElementById('anime-filter-tag'),
+            DismantleAllBtn: document.getElementById('anime-dismantle-all-btn'),
+            DetailModal: document.getElementById('anime-detail-modal'),
+            DetailContent: document.getElementById('anime-detail-content'),
             closeDetailBtn: document.getElementById('close-anime-detail-modal'),
         },
         characterCollection: {
-            characterCollectionContainer: document.getElementById('character-collection-view'),
-            characterFilterName: document.getElementById('character-filter-name'),
-            characterFilterRarity: document.getElementById('character-filter-rarity'),
-            characterFilterGender: document.getElementById('character-filter-gender'),
-            dismantleAllBtn: document.getElementById('character-dismantle-all-btn'),
-            characterDetailModal: document.getElementById('character-detail-modal'),
-            characterDetailContent: document.getElementById('character-detail-content'),
+            CollectionContainer: document.getElementById('character-collection-view'),
+            FilterName: document.getElementById('character-filter-name'),
+            FilterRarity: document.getElementById('character-filter-rarity'),
+            FilterGender: document.getElementById('character-filter-gender'),
+            DismantleAllBtn: document.getElementById('character-dismantle-all-btn'),
+            DetailModal: document.getElementById('character-detail-modal'),
+            DetailContent: document.getElementById('character-detail-content'),
             closeDetailBtn: document.getElementById('close-character-detail-modal'),
         },
         battle: {
@@ -124,24 +123,25 @@ Game.UI = (function() {
         }
     };
 
-    let gachaHistoryChartInstance = null;
-    let characterHistoryChartInstance = null;
+    const chartInstances = {
+        anime: null,
+        character: null
+    };
 
-    function _createUnifiedCardElement(itemData, itemSystem, context, options = {}) {
+    function _createUnifiedCardElement(itemData, itemConfig, context, options = {}) {
         const { count } = itemData;
-        // Handle different data structures: {card: ..., count: ...} for anime, {character: ..., count: ...} for characters
-        const item = itemSystem.itemType === '角色' ? itemData.character : itemData.card;
+        const item = itemData[itemConfig.itemKey];
         
         if (!item) {
             const element = document.createElement('div');
             element.className = 'card bg-white rounded-lg shadow-md overflow-hidden flex items-center justify-center';
             element.style.height = '240px';
-            const itemId = itemData.id || (itemData.character && itemData.character.id) || (itemData.card && itemData.card.id) || 'unknown';
+            const itemId = itemData.id || 'unknown';
             element.innerHTML = `<div class="text-center p-2"><p class="font-bold text-gray-500">加载中...</p><p class="text-xs text-gray-400">ID: ${itemId}</p></div>`;
             return element;
         }
 
-        const { rarityConfig } = itemSystem;
+        const { rarityConfig } = itemConfig;
         const rarityData = rarityConfig[item.rarity] || {};
         const rarityColor = rarityData.c || 'bg-gray-500';
         const effectClass = rarityData.effect && rarityData.effect !== 'none' ? rarityData.effect : '';
@@ -151,19 +151,19 @@ Game.UI = (function() {
 
         let countBadge = '';
         if (context.includes('collection') && count > 1) {
-            const badgeColor = itemSystem.itemType === '角色' ? 'bg-pink-600' : 'bg-indigo-600';
+            const badgeColor = itemConfig.itemType === '角色' ? 'bg-pink-600' : 'bg-indigo-600';
             countBadge = `<div class="absolute bottom-1 right-1 ${badgeColor} text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">x${count}</div>`;
         }
         
         let overlay = '';
-        if (context === 'deck-collection' && itemSystem.itemType === '动画' && Game.Deck.getActiveDeck().includes(item.id)) {
+        if (context === 'deck-collection' && itemConfig.itemType === '动画' && Game.Deck.getActiveDeck().includes(item.id)) {
             overlay = '<div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center"><span class="text-white font-bold text-lg">已在卡组</span></div>';
         }
 
-        const image_placeholder = itemSystem.itemType === '角色' ? '角色头像' : '图片丢失';
+        const image_placeholder = itemConfig.itemType === '角色' ? '角色头像' : '图片丢失';
         
         let cardBottom = '';
-        if (itemSystem.itemType === '角色') {
+        if (itemConfig.itemType === '角色') {
             cardBottom = `
                 <div class="p-2">
                     <p class="text-xs text-center font-bold truncate" title="${item.name}">${item.name}</p>
@@ -183,26 +183,34 @@ Game.UI = (function() {
             ${cardBottom}`;
 
         if (options.isDuplicate) {
-             element.firstElementChild.innerHTML += `<div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-center p-1"><span class="text-white font-bold text-2xl">+1</span></div>`;
+             element.firstElementChild.insertAdjacentHTML('beforeend', `<div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-center p-1"><span class="text-white font-bold text-2xl">+1</span></div>`);
         }
         if (options.isNew) {
-            element.firstElementChild.innerHTML += `<div class="absolute top-1 left-1 bg-green-500 text-white text-xs font-bold px-1 rounded">NEW</div>`;
+            element.firstElementChild.insertAdjacentHTML('beforeend', `<div class="absolute top-1 left-1 bg-green-500 text-white text-xs font-bold px-1 rounded">NEW</div>`);
         }
 
         element.dataset.itemId = item.id;
-        element.dataset.itemType = itemSystem.itemType;
-
-        // Events will be handled by specific collection modules
+        element.dataset.itemType = itemConfig.itemType;
         
         return element;
     }
 
-    function _createAnimeCardElement(cardData, context, options = {}) {
-        return _createUnifiedCardElement(cardData, window.GAME_CONFIG.animeSystem, context, options);
+    function _createAnimeCardElement(animeData, context, options = {}) {
+        const config = {
+            itemType: '动画',
+            itemKey: 'anime',
+            rarityConfig: window.GAME_CONFIG.animeSystem.rarityConfig
+        };
+        return _createUnifiedCardElement(animeData, config, context, options);
     }
 
     function _createCharacterCardElement(characterData, context, options = {}) {
-        return _createUnifiedCardElement(characterData, window.GAME_CONFIG.characterSystem, context, options);
+        const config = {
+            itemType: '角色',
+            itemKey: 'character',
+            rarityConfig: window.GAME_CONFIG.characterSystem.rarityConfig
+        };
+        return _createUnifiedCardElement(characterData, config, context, options);
     }
 
     function _logMessage(message, type = 'info') {
@@ -221,8 +229,8 @@ Game.UI = (function() {
         const playerState = Game.Player.getState();
         const { levelXP } = window.GAME_CONFIG.gameplay;
         elements.home.level.textContent = playerState.level;
-        elements.home.tickets.textContent = playerState.gachaTickets;
-        elements.home.characterTickets.textContent = playerState.characterTickets || 0;
+        elements.home.animeGachaTickets.textContent = playerState.animeGachaTickets;
+        elements.home.characterGachaTickets.textContent = playerState.characterGachaTickets || 0;
         elements.home.knowledge.textContent = playerState.knowledgePoints.toLocaleString();
 
         const requiredExp = levelXP[playerState.level] || Infinity;
@@ -233,55 +241,27 @@ Game.UI = (function() {
 
     function _renderAll() {
         _renderPlayerState();
-        Game.AnimeGacha.renderUI();
-        if (Game.CharacterGacha && Game.CharacterGacha.isInitialized()) {
-            Game.CharacterGacha.renderUI();
-        }
-        
-        // Render unified collection system
-        if (Game.UnifiedCollection) {
-            Game.UnifiedCollection.renderUI();
-        }
-        
+        if (Game.AnimeGacha && Game.AnimeGacha.isInitialized()) Game.AnimeGacha.renderUI();
+        if (Game.CharacterGacha && Game.CharacterGacha.isInitialized()) Game.CharacterGacha.renderUI();
+        if (Game.UnifiedCollection) Game.UnifiedCollection.renderUI();
         Game.Deck.renderUI();
         _renderViewingQueue();
-    }
-    
-    function _populateFilters() {
-        const allCards = Game.Player.getAllCards();
-        const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
-        elements.collection.filterRarity.innerHTML = '<option value="">所有稀有度</option>';
-        rarityOrder.forEach(rarity => {
-            const option = document.createElement('option');
-            option.value = rarity;
-            option.textContent = rarity;
-            elements.collection.filterRarity.appendChild(option);
-        });
-
-        const allTags = new Set();
-        allCards.forEach(card => (card.synergy_tags || []).forEach(tag => allTags.add(tag)));
-        elements.collection.filterTag.innerHTML = '<option value="">所有标签</option>';
-        Array.from(allTags).sort().forEach(tag => {
-            const option = document.createElement('option');
-            option.value = tag;
-            option.textContent = tag;
-            elements.collection.filterTag.appendChild(option);
-        });
     }
 
     function _openViewingQueueModal(slotIndex) {
         const collectionContainer = elements.viewingQueueModal.collection;
         collectionContainer.innerHTML = '';
-        const cardsInQueue = Game.Player.getState().viewingQueue.filter(s => s).map(s => s.cardId);
-        const availableCards = Array.from(Game.Player.getPlayerCollection().values()).filter(data => !cardsInQueue.includes(data.card.id));
+        const cardsInQueue = Game.Player.getState().viewingQueue.filter(s => s).map(s => s.Id);
+        const availableCards = Array.from(Game.Player.getAnimeCollection().values())
+                                    .filter(data => data.anime && !cardsInQueue.includes(data.anime.id));
 
         if (availableCards.length === 0) {
             collectionContainer.innerHTML = '<p class="text-gray-500 col-span-full text-center">没有可添加的卡牌了。</p>';
         } else {
-            availableCards.forEach(cardData => {
-                const cardEl = _createAnimeCardElement(cardData, 'viewing-queue-selection');
-                cardEl.addEventListener('click', () => Game.Player.addToViewingQueue(cardData.card.id, slotIndex));
-                collectionContainer.appendChild(cardEl);
+            availableCards.forEach(animeData => {
+                const animeEl = _createAnimeCardElement(animeData, 'viewing-queue-selection');
+                animeEl.addEventListener('click', () => Game.Player.addToViewingQueue(animeData.anime.id, slotIndex));
+                collectionContainer.appendChild(animeEl);
             });
         }
         elements.viewingQueueModal.modal.classList.remove('hidden');
@@ -290,8 +270,8 @@ Game.UI = (function() {
     function _renderViewingQueue() {
         const queueContainer = elements.home.viewingQueue;
         const playerState = Game.Player.getState();
-        const allCards = Game.Player.getAllCards();
-        if (!queueContainer || !playerState || !allCards) return;
+        const allAnimes = Game.AnimeGacha.getAllAnimes(); 
+        if (!queueContainer || !playerState || !allAnimes || allAnimes.length === 0) return;
 
         queueContainer.innerHTML = '';
         playerState.viewingQueue.forEach((slot, index) => {
@@ -299,14 +279,14 @@ Game.UI = (function() {
             slotElement.className = 'h-48 flex items-center justify-center bg-gray-100 rounded-lg border-2 border-dashed border-gray-300';
 
             if (slot) {
-                const card = allCards.find(c => c.id === slot.cardId);
-                if (!card) return;
+                const anime = allAnimes.find(c => c.id === slot.Id);
+                if (!anime) return; 
                 
-                const rewards = window.GAME_CONFIG.gameplay.viewingQueue.rewards[card.rarity];
+                const rewards = window.GAME_CONFIG.gameplay.viewingQueue.rewards[anime.rarity];
                 
                 if (!rewards) {
-                    console.error(`观看队列错误: 稀有度 '${card.rarity}' (卡牌: ${card.name}) 没有在 game_config.js 中配置奖励。`);
-                    slotElement.innerHTML = `<div class="text-center p-2"><p class="font-bold text-red-500">配置错误</p><p class="text-xs text-gray-500 truncate" title="${card.name}">${card.name}</p></div>`;
+                    console.error(`观看队列错误: 稀有度 '${anime.rarity}' (番剧: ${anime.name}) 没有在 game_config.js 中配置奖励。`);
+                    slotElement.innerHTML = `<div class="text-center p-2"><p class="font-bold text-red-500">配置错误</p><p class="text-xs text-gray-500 truncate" title="${anime.name}">${anime.name}</p></div>`;
                     queueContainer.appendChild(slotElement);
                     return;
                 }
@@ -317,8 +297,8 @@ Game.UI = (function() {
                 if (now >= endTime) {
                     slotElement.innerHTML = `
                         <div class="text-center cursor-pointer" data-slot-index="${index}">
-                            <img src="${card.image_path}" class="w-20 aspect-[3/2] object-cover rounded-md mx-auto mb-2" onerror="this.src='https://placehold.co/120x80/e2e8f0/334155?text=图片丢失';">
-                            <p class="font-bold">${card.name}</p>
+                            <img src="${anime.image_path}" class="w-20 aspect-[3/2] object-cover rounded-md mx-auto mb-2" onerror="this.src='https://placehold.co/120x80/e2e8f0/334155?text=图片丢失';">
+                            <p class="font-bold">${anime.name}</p>
                             <button class="collect-btn mt-2 bg-green-500 text-white font-bold py-1 px-3 rounded-lg">收获</button>
                         </div>`;
                     slotElement.querySelector('.collect-btn').addEventListener('click', () => Game.Player.collectFromViewingQueue(index));
@@ -329,8 +309,8 @@ Game.UI = (function() {
                     const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
                     slotElement.innerHTML = `
                         <div class="text-center">
-                            <img src="${card.image_path}" class="w-20 aspect-[3/2] object-cover rounded-md mx-auto mb-2" onerror="this.src='https://placehold.co/120x80/e2e8f0/334155?text=图片丢失';">
-                            <p class="font-bold">${card.name}</p>
+                            <img src="${anime.image_path}" class="w-20 aspect-[3/2] object-cover rounded-md mx-auto mb-2" onerror="this.src='https://placehold.co/120x80/e2e8f0/334155?text=图片丢失';">
+                            <p class="font-bold">${anime.name}</p>
                             <p class="text-sm text-gray-600">剩余: ${hours}h ${minutes}m ${seconds}s</p>
                         </div>`;
                 }
@@ -348,86 +328,76 @@ Game.UI = (function() {
 
     function _switchGachaType(type) {
         const { typeAnimeBtn, typeCharacterBtn, animeContent, characterContent } = elements.gacha;
-        
-        if (type === 'anime') {
-            typeAnimeBtn.classList.add('active');
-            typeCharacterBtn.classList.remove('active');
-            animeContent.classList.remove('hidden');
-            characterContent.classList.add('hidden');
-            
-            _updateGachaTabsForAnime();
-        } else {
-            typeCharacterBtn.classList.add('active');
-            typeAnimeBtn.classList.remove('active');
-            characterContent.classList.remove('hidden');
-            animeContent.classList.add('hidden');
-            
-            _updateGachaTabsForCharacter();
-        }
+        typeAnimeBtn.classList.toggle('active', type === 'anime');
+        typeCharacterBtn.classList.toggle('active', type === 'character');
+        animeContent.classList.toggle('hidden', type === 'character');
+        characterContent.classList.toggle('hidden', type === 'anime');
     }
 
-    function _updateGachaTabsForAnime() {
-        const { tabs } = elements.gacha;
-        if (tabs.shop) tabs.shop.style.display = 'block';
-    }
+    function _switchGachaTab(tabName, type) {
+        const config = type === 'character' ? elements.characterGacha : elements.animeGacha;
 
-    function _updateGachaTabsForCharacter() {
-        const { tabs } = elements.gacha;
-        if (tabs.shop) tabs.shop.style.display = 'none';
-        
-        if (tabs.shop && tabs.shop.classList.contains('active')) {
-            _switchGachaTab('pool');
-        }
-    }
-
-    function _switchGachaTab(tabName) {
-        const { tabs, contents } = elements.gacha;
-        const isCharacterMode = elements.gacha.characterContent && !elements.gacha.characterContent.classList.contains('hidden');
-        
-        Object.keys(tabs).forEach(key => {
-            if (tabs[key]) {
-                tabs[key].classList.toggle('active', key === tabName);
+        Object.keys(config.tabs).forEach(key => {
+            if (config.tabs[key]) {
+                config.tabs[key].classList.toggle('active', key === tabName);
             }
         });
 
-        if (isCharacterMode) {
-            const characterContents = {
-                pool: document.getElementById('character-gacha-pool-content'),
-                history: document.getElementById('character-gacha-history-content')
-            };
-            
-            Object.keys(characterContents).forEach(key => {
-                if (characterContents[key]) {
-                    characterContents[key].classList.toggle('hidden', key !== tabName);
-                }
-            });
-            
-            if (tabName === 'history' && Game.UI.renderCharacterGachaHistory) {
-                Game.UI.renderCharacterGachaHistory();
+        Object.keys(config.contents).forEach(key => {
+            if (config.contents[key]) {
+                config.contents[key].classList.toggle('hidden', key !== tabName);
             }
-        } else {
-            Object.keys(contents).forEach(key => {
-                if (contents[key]) {
-                    contents[key].classList.toggle('hidden', key !== tabName);
-                }
-            });
-            
-            if (tabName === 'history' && Game.UI.renderGachaHistory) {
-                Game.UI.renderGachaHistory();
+        });
+        
+        if (tabName === 'history') {
+            renderGachaHistory(type);
+        } else if (tabName === 'shop') {
+            // 渲染商店内容
+            if (type === 'character' && Game.CharacterGacha && Game.CharacterGacha.isInitialized()) {
+                // 调用角色抽卡的renderUI来更新商店
+                Game.CharacterGacha.renderUI();
+            } else if (type === 'anime' && Game.AnimeGacha && Game.AnimeGacha.isInitialized()) {
+                // 调用动画抽卡的renderUI来更新商店
+                Game.AnimeGacha.renderUI();
             }
         }
+    }
+
+    function renderGachaHistory(type) {
+        chartInstances[type] = Game.BaseGacha.renderHistory(
+            type === 'character' ? Game.Player.getCharacterGachaHistory() : Game.Player.getAnimeGachaHistory(),
+            window.GAME_CONFIG[type + 'System'].rarityConfig,
+            elements[type + 'Gacha'].HistoryList,
+            elements[type + 'Gacha'].HistoryChartCanvas,
+            chartInstances[type],
+            type === "character" ? "角色" : "番剧"
+        );
     }
 
     return {
         init: function() {
+            elements.loginBtn?.addEventListener('click', async () => {
+                const username = elements.loginInput.value.trim();
+                if (username) {
+                    await Game.Player.login(username);
+                }
+            });
+             elements.loginInput?.addEventListener('keyup', async (event) => {
+                if (event.key === 'Enter') {
+                    const username = elements.loginInput.value.trim();
+                    if (username) {
+                        await Game.Player.login(username);
+                    }
+                }
+            });
             window.addEventListener('hashchange', () => {
                 let hash = window.location.hash || '#home';
                 elements.mainSections.forEach(s => s.classList.toggle('hidden', `#${s.id}` !== hash));
                 elements.navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === hash));
                 if (hash === '#deck-and-collection') Game.Deck.renderUI();
                 if (hash === '#gacha') {
-                    Game.AnimeGacha.renderUI();
-                    if (Game.CharacterGacha && Game.CharacterGacha.isInitialized()) Game.CharacterGacha.renderUI();
+                    if(Game.AnimeGacha.isInitialized()) Game.AnimeGacha.renderUI();
+                    if(Game.CharacterGacha.isInitialized()) Game.CharacterGacha.renderUI();
                 }
                 if (hash === '#collection' && Game.UnifiedCollection) Game.UnifiedCollection.renderUI();
                 if (hash === '#battle') Game.Battle.renderSetup();
@@ -436,33 +406,9 @@ Game.UI = (function() {
             location.hash = '#home';
             window.dispatchEvent(new HashChangeEvent('hashchange'));
 
-            elements.gacha.closeResultBtn.addEventListener('click', () => elements.gacha.resultModal.classList.add('hidden'));
-            elements.animeCollection.closeDetailBtn.addEventListener('click', () => elements.animeCollection.animeDetailModal.classList.add('hidden'));
-            elements.characterCollection.closeDetailBtn.addEventListener('click', () => elements.characterCollection.characterDetailModal.classList.add('hidden'));
-            elements.viewingQueueModal.closeBtn.addEventListener('click', () => elements.viewingQueueModal.modal.classList.add('hidden'));
-            elements.gacha.closeRatesBtn.addEventListener('click', () => elements.gacha.ratesModal.classList.add('hidden'));
-            
-            const animeDetailCloseBtn = document.getElementById('close-anime-detail-modal');
-            if (animeDetailCloseBtn) {
-                animeDetailCloseBtn.addEventListener('click', () => {
-                    document.getElementById('anime-detail-modal').classList.add('hidden');
-                });
-            }
-            
-            if (elements.gacha.typeAnimeBtn && elements.gacha.typeCharacterBtn) {
-                elements.gacha.typeAnimeBtn.addEventListener('click', () => _switchGachaType('anime'));
-                elements.gacha.typeCharacterBtn.addEventListener('click', () => _switchGachaType('character'));
-            }
-
-            if (elements.characterGacha.closeResultBtn) {
-                elements.characterGacha.closeResultBtn.addEventListener('click', () => elements.characterGacha.characterResultModal.classList.add('hidden'));
-            }
-            if (elements.characterGacha.closeRatesBtn) {
-                elements.characterGacha.closeRatesBtn.addEventListener('click', () => elements.characterGacha.characterRatesModal.classList.add('hidden'));
-            }
-            if (elements.characterCollection.closeDetailBtn) {
-                elements.characterCollection.closeDetailBtn.addEventListener('click', () => elements.characterCollection.characterDetailModal.classList.add('hidden'));
-            }
+            elements.viewingQueueModal.closeBtn?.addEventListener('click', () => elements.viewingQueueModal.modal.classList.add('hidden'));
+            elements.gacha.typeAnimeBtn?.addEventListener('click', () => _switchGachaType('anime'));
+            elements.gacha.typeCharacterBtn?.addEventListener('click', () => _switchGachaType('character'));
 
             setInterval(_renderViewingQueue, 1000);
 
@@ -474,7 +420,6 @@ Game.UI = (function() {
         logMessage: _logMessage,
         renderPlayerState: _renderPlayerState,
         renderAll: _renderAll,
-        populateFilters: _populateFilters,
         switchGachaTab: _switchGachaTab,
         switchGachaType: _switchGachaType,
         showLoggedInUser: function(username) {
@@ -483,93 +428,6 @@ Game.UI = (function() {
         },
         hideLoginModal: () => elements.loginModal.classList.add('hidden'),
         showLoginModal: () => elements.loginModal.classList.remove('hidden'),
-
-        renderGachaHistory() {
-            const history = Game.Player.getAnimeGachaHistory();
-            const { rarityConfig } = window.GAME_CONFIG.animeSystem;
-
-            const rarityCounts = Object.keys(rarityConfig).reduce((acc, r) => ({...acc, [r]: 0}), {});
-            history.forEach(card => { if (rarityCounts[card.rarity] !== undefined) rarityCounts[card.rarity]++; });
-            if (gachaHistoryChartInstance) gachaHistoryChartInstance.destroy();
-            gachaHistoryChartInstance = new Chart(elements.gacha.historyChartCanvas.getContext('2d'), {
-                type: 'bar',
-                data: { labels: Object.keys(rarityCounts), datasets: [{ label: '邂逅数量', data: Object.values(rarityCounts), backgroundColor: '#4f46e5' }] },
-                options: { responsive: true, maintainAspectRatio: false, scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } }, plugins: { legend: { display: false } } }
-            });
-
-            elements.gacha.historyList.innerHTML = '';
-            if (history.length === 0) {
-                elements.gacha.historyList.innerHTML = '<p class="text-gray-500 text-center">暂无邂逅历史。</p>';
-                return;
-            }
-             [...history].reverse().forEach((card, index) => {
-                const rarityData = rarityConfig[card.rarity];
-                const textColorClass = rarityData?.color || 'text-gray-800';
-                const historyItem = document.createElement('div');
-                historyItem.className = 'p-2 bg-white rounded shadow-sm flex justify-between items-center';
-                historyItem.innerHTML = `
-                    <div>
-                        <span class="font-bold text-gray-500 mr-2">#${history.length - index}</span>
-                        <span class="font-bold ${textColorClass}">[${card.rarity}]</span>
-                        <span>${card.name}</span>
-                    </div>
-                    <span class="text-sm text-gray-400">${new Date(card.timestamp || Date.now()).toLocaleString()}</span>
-                `;
-                elements.gacha.historyList.appendChild(historyItem);
-            });
-        },
         renderViewingQueue: _renderViewingQueue,
-
-        renderCharacterGachaHistory() {
-            const history = Game.Player.getCharacterGachaHistory();
-            const { rarityConfig } = window.GAME_CONFIG.characterSystem;
-
-            const rarityCounts = Object.keys(rarityConfig).reduce((acc, r) => ({...acc, [r]: 0}), {});
-            history.forEach(character => { if (rarityCounts[character.rarity] !== undefined) rarityCounts[character.rarity]++; });
-            if (characterHistoryChartInstance) characterHistoryChartInstance.destroy();
-            
-            if (elements.characterGacha.characterHistoryChartCanvas) {
-                characterHistoryChartInstance = new Chart(elements.characterGacha.characterHistoryChartCanvas.getContext('2d'), {
-                    type: 'bar',
-                    data: { 
-                        labels: Object.keys(rarityCounts), 
-                        datasets: [{ 
-                            label: '角色邂逅数量', 
-                            data: Object.values(rarityCounts), 
-                            backgroundColor: '#ec4899' 
-                        }] 
-                    },
-                    options: { 
-                        responsive: true, 
-                        maintainAspectRatio: false, 
-                        scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } }, 
-                        plugins: { legend: { display: false } } 
-                    }
-                });
-            }
-
-            if (elements.characterGacha.characterHistoryList) {
-                elements.characterGacha.characterHistoryList.innerHTML = '';
-                if (history.length === 0) {
-                    elements.characterGacha.characterHistoryList.innerHTML = '<p class="text-gray-500 text-center">暂无角色邂逅历史。</p>';
-                    return;
-                }
-                [...history].reverse().forEach((character, index) => {
-                    const rarityData = rarityConfig[character.rarity];
-                    const textColorClass = rarityData?.color || 'text-gray-800';
-                    const historyItem = document.createElement('div');
-                    historyItem.className = 'p-2 bg-white rounded shadow-sm flex justify-between items-center';
-                    historyItem.innerHTML = `
-                        <div>
-                            <span class="font-bold text-gray-500 mr-2">#${history.length - index}</span>
-                            <span class="font-bold ${textColorClass}">[${character.rarity}]</span>
-                            <span>${character.name}</span>
-                        </div>
-                        <span class="text-sm text-gray-400">${new Date(character.timestamp || Date.now()).toLocaleString()}</span>
-                    `;
-                    elements.characterGacha.characterHistoryList.appendChild(historyItem);
-                });
-            }
-        },
     };
 })();
