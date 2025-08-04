@@ -494,20 +494,20 @@
         </div>
     </div>
 
-    <script src="js/game_config.js"></script>
-    <script src="js/synergy_rules.js"></script>
-    <script src="js/ai_deck_generator.js"></script>
-    <script src="js/ai_player.js"></script>
+    <script src="js/utils/game_config.js"></script>
+    <script src="js/utils/synergy_rules.js"></script>
+    <script src="js/battle/ai_deck_generator.js"></script>
+    <script src="js/battle/ai_player.js"></script>
     
     <!-- Refactored Modules (Load order is important!) -->
-    <script src="js/ui.js"></script> <!-- UI must be loaded first as other modules depend on it -->
+    <script src="js/utils/ui.js"></script> <!-- UI must be loaded first as other modules depend on it -->
     <script src="js/player.js"></script>
-    <script src="js/base_gacha.js"></script> <!-- Base gacha system must be loaded before specific gacha modules -->
-    <script src="js/anime_gacha.js"></script>
-    <script src="js/character_gacha.js"></script> <!-- Character gacha system -->
-    <script src="js/unified_collection.js"></script> <!-- Unified collection system -->
-    <script src="js/deck.js"></script>
-    <script src="js/battle.js"></script>
+    <script src="js/gacha/base_gacha.js"></script> <!-- Base gacha system must be loaded before specific gacha modules -->
+    <script src="js/gacha/anime_gacha.js"></script>
+    <script src="js/gacha/character_gacha.js"></script> <!-- Character gacha system -->
+    <script src="js/collections/unified_collection.js"></script> <!-- Unified collection system -->
+    <script src="js/collections/deck.js"></script>
+    <script src="js/battle/battle.js"></script>
     
     <!-- Main App Entry Point -->
     <script src="js/app.js"></script>
