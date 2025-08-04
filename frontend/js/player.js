@@ -5,6 +5,8 @@ Game.Player = (function() {
 
     // --- Private State ---
     let _currentUser = '';
+    let _pendingHistoryRestore = false; // 标记是否需要延迟恢复抽卡历史
+    let _rawHistoryData = null; // 存储原始历史数据，等待恢复
 
     // Anime system state
     let _animeCollection = new Map();
@@ -30,16 +32,80 @@ Game.Player = (function() {
     };
 
     // --- Private Methods ---
+    // 优化抽卡历史存储格式（只保存必要信息）
+    function _optimizeGachaHistoryForStorage(history, type) {
+        if (!history || !Array.isArray(history)) {
+            return [];
+        }
+
+        return history.map(item => {
+            // 如果已经是优化格式，直接返回
+            if (item && !item.name && item.id) {
+                return item;
+            }
+            
+            // 从完整格式转换为优化格式
+            return {
+                id: item.id,
+                rarity: item.rarity,
+                timestamp: item.timestamp || Date.now(),
+                isDuplicate: item.isDuplicate || false,
+                isNew: item.isNew || false,
+                type: type // 添加类型标识
+            };
+        });
+    }
+
+    // 从存储格式恢复完整的抽卡历史
+    function _restoreGachaHistoryFromStorage(historyData, type) {
+        if (!historyData || !Array.isArray(historyData)) {
+            return [];
+        }
+
+        return historyData.map(item => {
+            // 如果已经是完整格式，直接返回（兼容旧格式）
+            if (item && item.name) {
+                return item;
+            }
+            
+            // 从优化格式恢复为完整格式
+            if (item && item.id && Game.CardResolver) {
+                const cardData = Game.CardResolver.getCardById(item.id, type);
+                if (cardData) {
+                    return {
+                        ...cardData,
+                        timestamp: item.timestamp,
+                        isDuplicate: item.isDuplicate,
+                        isNew: item.isNew,
+                        type: item.type || type
+                    };
+                }
+            }
+            
+            // 如果无法恢复，返回一个占位符
+            console.warn(`Unable to restore gacha history item:`, item);
+            return {
+                id: item.id || 'unknown',
+                name: '未知' + (type === 'anime' ? '动画' : '角色'),
+                rarity: item.rarity || 'N',
+                timestamp: item.timestamp || Date.now(),
+                isDuplicate: item.isDuplicate || false,
+                isNew: item.isNew || false,
+                type: item.type || type
+            };
+        });
+    }
+
     async function _saveState(showAlert = false) {
         if (!_currentUser) return;
 
         const payload = {
             animeCollection: Array.from(_animeCollection.entries()).map(([id, data]) => [id, data.count]),
             animePity: _animePityState,
-            animeHistory: _animeGachaHistory,
+            animeHistory: _optimizeGachaHistoryForStorage(_animeGachaHistory, 'anime'),
             characterCollection: Array.from(_characterCollection.entries()).map(([id, data]) => [id, data.count]),
             characterPity: _characterPityState,
-            characterHistory: _characterGachaHistory,
+            characterHistory: _optimizeGachaHistoryForStorage(_characterGachaHistory, 'character'),
             state: _playerState
         };
 
@@ -88,8 +154,22 @@ Game.Player = (function() {
                 _animePityState = data.animePity || { totalPulls: 0, pullsSinceLastHR: 0 };
                 _characterPityState = data.characterPity || { totalPulls: 0, pullsSinceLastHR: 0 };
                 _playerState = data.state || { ...window.GAME_CONFIG.playerInitialState };
-                _animeGachaHistory = data.animeHistory || [];
-                _characterGachaHistory = data.characterHistory || [];
+                
+                // 延迟恢复抽卡历史，等待CardResolver可用
+                if (Game.CardResolver) {
+                    _animeGachaHistory = _restoreGachaHistoryFromStorage(data.animeHistory || [], 'anime');
+                    _characterGachaHistory = _restoreGachaHistoryFromStorage(data.characterHistory || [], 'character');
+                    _pendingHistoryRestore = false;
+                } else {
+                    // 如果CardResolver还未准备好，暂时存储原始数据
+                    _rawHistoryData = {
+                        anime: data.animeHistory || [],
+                        character: data.characterHistory || []
+                    };
+                    _animeGachaHistory = [];
+                    _characterGachaHistory = [];
+                    _pendingHistoryRestore = true;
+                }
                 
                 // Load character collection (just IDs and counts)
                 const savedCharacterCollection = data.characterCollection || [];
@@ -143,6 +223,15 @@ Game.Player = (function() {
         
         // Notify other modules that player has logged in
         document.dispatchEvent(new CustomEvent('playerLoggedIn'));
+        
+        // 如果CardResolver现在可用且有待恢复的历史，立即恢复
+        if (Game.CardResolver && _pendingHistoryRestore && _rawHistoryData) {
+            console.log('Restoring gacha history after login...');
+            _animeGachaHistory = _restoreGachaHistoryFromStorage(_rawHistoryData.anime, 'anime');
+            _characterGachaHistory = _restoreGachaHistoryFromStorage(_rawHistoryData.character, 'character');
+            _pendingHistoryRestore = false;
+            _rawHistoryData = null;
+        }
         
         Game.UI.renderAll();
     }
@@ -271,6 +360,20 @@ Game.Player = (function() {
                 delete _playerState.savedDecks[deckName];
                 _saveState();
                 console.log(`卡组 "${deckName}" 已从服务器删除`);
+                return true;
+            }
+            return false;
+        },
+
+        // 处理延迟恢复的抽卡历史（当CardResolver准备好后调用）
+        restorePendingGachaHistory: function() {
+            if (_pendingHistoryRestore && _rawHistoryData && Game.CardResolver) {
+                console.log('Restoring pending gacha history...');
+                _animeGachaHistory = _restoreGachaHistoryFromStorage(_rawHistoryData.anime, 'anime');
+                _characterGachaHistory = _restoreGachaHistoryFromStorage(_rawHistoryData.character, 'character');
+                _pendingHistoryRestore = false;
+                _rawHistoryData = null;
+                console.log('Gacha history restored successfully');
                 return true;
             }
             return false;

@@ -95,6 +95,101 @@
         .character-card.masterpiece-shine:hover::before {
             animation-duration: 0.3s;
         }
+        
+        /* Deck List Styles */
+        .deck-list-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+        .deck-list-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        .deck-list-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+            z-index: 1;
+        }
+        .deck-list-card .deck-cover-img {
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .deck-list-card:hover .deck-cover-img {
+            transform: scale(1.1);
+        }
+        .deck-list-card .deck-info {
+            position: relative;
+            z-index: 2;
+        }
+        .deck-name-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        .deck-stats-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 8px;
+        }
+        .deck-card-count {
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            padding: 4px 8px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: white;
+            font-weight: 600;
+        }
+        .deck-actions {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            display: flex;
+            gap: 4px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 3;
+        }
+        .deck-list-card:hover .deck-actions {
+            opacity: 1;
+        }
+        .deck-action-btn {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255,255,255,0.9);
+            color: #374151;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            font-size: 12px;
+        }
+        .deck-action-btn:hover {
+            background: white;
+            transform: scale(1.1);
+        }
+        .deck-action-btn.delete:hover {
+            background: #ef4444;
+            color: white;
+        }
     </style>
 </head>
 <body class="text-gray-800">
@@ -270,117 +365,216 @@
             </section>
 
             <section id="collections" class="hidden space-y-6">
-                <!-- Main Content -->
-                <div class="grid grid-cols-12 gap-6 h-[75vh]">
-                    <!-- Left: Card Collection -->
-                    <div class="col-span-8 bg-white rounded-lg shadow-sm border-2 border-gray-200">
-                        <!-- Collection Header -->
-                        <div class="border-b border-gray-200 px-6 pt-4 pb-2">
-                            <h3 class="text-xl font-bold text-gray-800 mb-3">卡牌收藏</h3>
-                            <!-- Collection Type Tabs -->
-                            <nav class="-mb-px flex space-x-6" aria-label="Collection Tabs">
-                                <a href="#" id="deck-view-anime" class="deck-view-tab active whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm border-indigo-500 text-indigo-600">动画收藏</a>
-                                <a href="#" id="deck-view-character" class="deck-view-tab whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">角色收藏</a>
-                            </nav>
-                        </div>
-                        
-                        <!-- Collection Content -->
-                        <div class="p-6 h-[calc(100%-120px)] flex flex-col">
-                            <!-- Statistics -->
-                            <div id="deck-collection-stats" class="mb-4"></div>
-                            
-                            <!-- Filters -->
-                            <div class="mb-4">
-                                <!-- Anime Filters -->
-                                <div id="anime-deck-filters">
-                                    <div class="flex flex-wrap gap-3 items-center">
-                                        <input type="text" id="deck-anime-filter-name" placeholder="按动画名称搜索..." class="p-2 border rounded-lg flex-grow min-w-0">
-                                        <select id="deck-anime-filter-rarity" class="p-2 border rounded-lg">
-                                            <option value="">所有稀有度</option>
-                                        </select>
-                                        <select id="deck-anime-filter-tag" class="p-2 border rounded-lg">
-                                            <option value="">所有标签</option>
-                                        </select>
-                                        <button id="deck-anime-dismantle-all-btn" class="bg-red-600 text-white font-bold py-2 px-3 rounded-lg hover:bg-red-700 text-sm whitespace-nowrap">一键分解</button>
-                                    </div>
-                                </div>
-                                <!-- Character Filters -->
-                                <div id="character-deck-filters" class="hidden">
-                                    <div class="flex flex-wrap gap-3 items-center">
-                                        <input type="text" id="deck-character-filter-name" placeholder="按角色名称搜索..." class="p-2 border rounded-lg flex-grow min-w-0">
-                                        <select id="deck-character-filter-rarity" class="p-2 border rounded-lg">
-                                            <option value="">所有稀有度</option>
-                                        </select>
-                                        <select id="deck-character-filter-gender" class="p-2 border rounded-lg">
-                                            <option value="">所有性别</option>
-                                        </select>
-                                        <button id="deck-character-dismantle-all-btn" class="bg-red-600 text-white font-bold py-2 px-3 rounded-lg hover:bg-red-700 text-sm whitespace-nowrap">一键分解</button>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Collection Grid -->
-                            <div id="deck-collection-view" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 h-[600px] overflow-y-auto p-3 bg-gray-50 rounded-lg border" style="grid-auto-rows: max-content;"></div>
+                <!-- Deck List View (Hearthstone-style) -->
+                <div id="deck-list-view" class="bg-white rounded-lg shadow-sm border-2 border-gray-200">
+                    <!-- Header -->
+                    <div class="border-b border-gray-200 px-6 pt-6 pb-4">
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-3xl font-bold text-gray-800">我的卡组</h2>
+                            <button id="new-deck-btn-list" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg">
+                                <svg class="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                                </svg>
+                                新建卡组
+                            </button>
                         </div>
                     </div>
+                    
+                    <!-- Deck Grid -->
+                    <div class="p-6">
+                        <div id="deck-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                            <!-- Deck cards will be rendered here -->
+                        </div>
+                        
+                        <!-- Empty State -->
+                        <div id="empty-deck-state" class="text-center py-16 hidden">
+                            <svg class="w-16 h-16 mx-auto text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                            </svg>
+                            <h3 class="text-xl font-semibold text-gray-600 mb-2">还没有任何卡组</h3>
+                            <p class="text-gray-500 mb-6">创建你的第一个卡组，开始组建强力的战斗阵容！</p>
+                            <button id="new-deck-btn-empty" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg">
+                                创建卡组
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-                    <!-- Right: Deck Details -->
-                    <div class="col-span-4 bg-white rounded-lg shadow-sm border-2 border-gray-200">
-                        <!-- Deck Header -->
-                        <div class="border-b border-gray-200 px-6 pt-4 pb-4">
-                            <h3 class="text-xl font-bold text-gray-800">卡组详情</h3>
-                            <div class="flex gap-2">
-                                <select id="deck-selector" class="p-2 border rounded-lg text-sm"></select>
-                                <button id="new-deck-btn" class="bg-blue-500 text-white px-3 py-2 rounded-lg text-sm hover:bg-blue-600">新建</button>
-                                <!-- <button id="load-deck-btn" class="bg-green-500 text-white px-3 py-2 rounded-lg text-sm hover:bg-green-600">加载</button> -->
-                                <button id="save-deck-btn" class="bg-emerald-500 text-white px-3 py-2 rounded-lg text-sm hover:bg-emerald-600">保存</button>
+                <!-- Card Collection Display in List View -->
+                <div id="list-collection-container" class="bg-white rounded-lg shadow-sm border-2 border-gray-200 mt-6">
+                    <!-- Collection Header -->
+                    <div class="border-b border-gray-200 px-6 pt-4 pb-2">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">我的收藏</h3>
+                        <!-- Collection Type Tabs -->
+                        <nav class="-mb-px flex space-x-6" aria-label="Collection Tabs">
+                            <a href="#" id="list-view-anime" class="collection-tab active whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm border-indigo-500 text-indigo-600">动画收藏</a>
+                            <a href="#" id="list-view-character" class="collection-tab whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">角色收藏</a>
+                        </nav>
+                    </div>
+                    
+                    <!-- Collection Content -->
+                    <div class="p-6">
+                        <!-- Statistics -->
+                        <div id="list-collection-stats" class="mb-4"></div>
+                        
+                        <!-- Filters -->
+                        <div class="mb-4">
+                            <!-- Anime Filters -->
+                            <div id="list-anime-filters">
+                                <div class="flex flex-wrap gap-3 items-center">
+                                    <input type="text" id="list-anime-filter-name" placeholder="按动画名称搜索..." class="p-2 border rounded-lg flex-grow min-w-0">
+                                    <select id="list-anime-filter-rarity" class="p-2 border rounded-lg">
+                                        <option value="">所有稀有度</option>
+                                    </select>
+                                    <select id="list-anime-filter-tag" class="p-2 border rounded-lg">
+                                        <option value="">所有标签</option>
+                                    </select>
+                                    <button id="list-anime-dismantle-all-btn" class="bg-red-600 text-white font-bold py-2 px-3 rounded-lg hover:bg-red-700 text-sm whitespace-nowrap">一键分解</button>
+                                </div>
+                            </div>
+                            <!-- Character Filters -->
+                            <div id="list-character-filters" class="hidden">
+                                <div class="flex flex-wrap gap-3 items-center">
+                                    <input type="text" id="list-character-filter-name" placeholder="按角色名称搜索..." class="p-2 border rounded-lg flex-grow min-w-0">
+                                    <select id="list-character-filter-rarity" class="p-2 border rounded-lg">
+                                        <option value="">所有稀有度</option>
+                                    </select>
+                                    <select id="list-character-filter-gender" class="p-2 border rounded-lg">
+                                        <option value="">所有性别</option>
+                                    </select>
+                                    <button id="list-character-dismantle-all-btn" class="bg-red-600 text-white font-bold py-2 px-3 rounded-lg hover:bg-red-700 text-sm whitespace-nowrap">一键分解</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Collection Grid -->
+                        <div id="list-collection-view" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-4 h-[500px] overflow-y-auto p-3 bg-gray-50 rounded-lg border" style="grid-auto-rows: max-content;"></div>
+                    </div>
+                </div>
+
+                <!-- Deck Editor View (Hidden by default) -->
+                <div id="deck-editor-view" class="hidden">
+                    <!-- Back Button -->
+                    <div class="mb-4">
+                        <button id="back-to-deck-list" class="flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                            返回卡组列表
+                        </button>
+                    </div>
+                    
+                    <!-- Main Content -->
+                    <div class="grid grid-cols-12 gap-6 h-[75vh]">
+                        <!-- Left: Card Collection -->
+                        <div class="col-span-8 bg-white rounded-lg shadow-sm border-2 border-gray-200">
+                            <!-- Collection Header -->
+                            <div class="border-b border-gray-200 px-6 pt-4 pb-2">
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">卡牌收藏</h3>
+                                <!-- Collection Type Tabs -->
+                                <nav class="-mb-px flex space-x-6" aria-label="Collection Tabs">
+                                    <a href="#" id="deck-view-anime" class="deck-view-tab active whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm border-indigo-500 text-indigo-600">动画收藏</a>
+                                    <a href="#" id="deck-view-character" class="deck-view-tab whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">角色收藏</a>
+                                </nav>
+                            </div>
+                            
+                            <!-- Collection Content -->
+                            <div class="p-6 h-[calc(100%-120px)] flex flex-col">
+                                <!-- Statistics -->
+                                <div id="deck-collection-stats" class="mb-4"></div>
+                                
+                                <!-- Filters -->
+                                <div class="mb-4">
+                                    <!-- Anime Filters -->
+                                    <div id="anime-deck-filters">
+                                        <div class="flex flex-wrap gap-3 items-center">
+                                            <input type="text" id="deck-anime-filter-name" placeholder="按动画名称搜索..." class="p-2 border rounded-lg flex-grow min-w-0">
+                                            <select id="deck-anime-filter-rarity" class="p-2 border rounded-lg">
+                                                <option value="">所有稀有度</option>
+                                            </select>
+                                            <select id="deck-anime-filter-tag" class="p-2 border rounded-lg">
+                                                <option value="">所有标签</option>
+                                            </select>
+                                            <button id="deck-anime-dismantle-all-btn" class="bg-red-600 text-white font-bold py-2 px-3 rounded-lg hover:bg-red-700 text-sm whitespace-nowrap">一键分解</button>
+                                        </div>
+                                    </div>
+                                    <!-- Character Filters -->
+                                    <div id="character-deck-filters" class="hidden">
+                                        <div class="flex flex-wrap gap-3 items-center">
+                                            <input type="text" id="deck-character-filter-name" placeholder="按角色名称搜索..." class="p-2 border rounded-lg flex-grow min-w-0">
+                                            <select id="deck-character-filter-rarity" class="p-2 border rounded-lg">
+                                                <option value="">所有稀有度</option>
+                                            </select>
+                                            <select id="deck-character-filter-gender" class="p-2 border rounded-lg">
+                                                <option value="">所有性别</option>
+                                            </select>
+                                            <button id="deck-character-dismantle-all-btn" class="bg-red-600 text-white font-bold py-2 px-3 rounded-lg hover:bg-red-700 text-sm whitespace-nowrap">一键分解</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Collection Grid -->
+                                <div id="deck-collection-view" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 h-[600px] overflow-y-auto p-3 bg-gray-50 rounded-lg border" style="grid-auto-rows: max-content;"></div>
                             </div>
                         </div>
 
-                        <!-- Deck Content -->
-                        <div class="p-6 h-[calc(100%-80px)] flex flex-col">
-                            <!-- Deck Cover -->
-                            <div class="mb-6">
-                                <div id="deck-cover" class="w-32 h-48 mx-auto bg-gray-200 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-                                    <div class="text-center text-gray-500">
-                                        <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                                        </svg>
-                                        <p class="text-xs">卡组封面</p>
-                                    </div>
-                                </div>
-                                <div class="text-center mt-2">
-                                    <input type="text" id="deck-name-input" placeholder="卡组名称" class="text-center font-bold border-b border-gray-300 bg-transparent text-sm focus:border-blue-500 focus:outline-none w-full">
+                        <!-- Right: Deck Details -->
+                        <div class="col-span-4 bg-white rounded-lg shadow-sm border-2 border-gray-200">
+                            <!-- Deck Header -->
+                            <div class="border-b border-gray-200 px-6 pt-4 pb-4">
+                                <h3 class="text-xl font-bold text-gray-800">卡组详情</h3>
+                                <div class="flex gap-2">
+                                    <select id="deck-selector" class="p-2 border rounded-lg text-sm"></select>
+                                    <button id="new-deck-btn" class="bg-blue-500 text-white px-3 py-2 rounded-lg text-sm hover:bg-blue-600">新建</button>
+                                    <button id="save-deck-btn" class="bg-emerald-500 text-white px-3 py-2 rounded-lg text-sm hover:bg-emerald-600">保存</button>
                                 </div>
                             </div>
 
-                            <!-- Deck Stats -->
-                            <div class="mb-4 text-center">
-                                <div class="grid grid-cols-2 gap-4 text-sm">
-                                    <div>
-                                        <p class="text-gray-600">动画卡</p>
-                                        <p id="anime-deck-count" class="text-lg font-bold text-indigo-600">0/20</p>
+                            <!-- Deck Content -->
+                            <div class="p-6 h-[calc(100%-80px)] flex flex-col">
+                                <!-- Deck Cover -->
+                                <div class="mb-6">
+                                    <div id="deck-cover" class="w-32 h-48 mx-auto bg-gray-200 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
+                                        <div class="text-center text-gray-500">
+                                            <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                            </svg>
+                                            <p class="text-xs">卡组封面</p>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <p class="text-gray-600">角色卡</p>
-                                        <p id="character-deck-count" class="text-lg font-bold text-pink-600">0/5</p>
+                                    <div class="text-center mt-2">
+                                        <input type="text" id="deck-name-input" placeholder="卡组名称" class="text-center font-bold border-b border-gray-300 bg-transparent text-sm focus:border-blue-500 focus:outline-none w-full">
                                     </div>
                                 </div>
-                            </div>
 
-                            <!-- Deck Cards -->
-                            <div class="border-t pt-4 flex-1 overflow-hidden">
-                                <h3 class="font-bold text-sm mb-3 text-gray-700">卡组内容</h3>
-                                <div class="flex-1 overflow-y-auto">
-                                    <!-- Anime Deck -->
-                                    <div id="anime-deck-area" class="mb-4">
-                                        <h4 class="text-xs font-semibold text-indigo-600 mb-2">动画卡 (0/20)</h4>
-                                        <div id="anime-deck-list" class="space-y-1 max-h-80 overflow-y-auto"></div>
+                                <!-- Deck Stats -->
+                                <div class="mb-4 text-center">
+                                    <div class="grid grid-cols-2 gap-4 text-sm">
+                                        <div>
+                                            <p class="text-gray-600">动画卡</p>
+                                            <p id="anime-deck-count" class="text-lg font-bold text-indigo-600">0/25</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-gray-600">角色卡</p>
+                                            <p id="character-deck-count" class="text-lg font-bold text-pink-600">0/5</p>
+                                        </div>
                                     </div>
-                                    <!-- Character Deck -->
-                                    <div id="character-deck-area">
-                                        <h4 class="text-xs font-semibold text-pink-600 mb-2">角色卡 (0/5)</h4>
-                                        <div id="character-deck-list" class="space-y-1 max-h-50 overflow-y-auto"></div>
+                                </div>
+
+                                <!-- Deck Cards -->
+                                <div class="border-t pt-4 flex-1 overflow-hidden">
+                                    <h3 class="font-bold text-sm mb-3 text-gray-700">卡组内容</h3>
+                                    <div class="flex-1 overflow-y-auto">
+                                        <!-- Anime Deck -->
+                                        <div id="anime-deck-area" class="mb-4">
+                                            <h4 class="text-xs font-semibold text-indigo-600 mb-2">动画卡 (0/25)</h4>
+                                            <div id="anime-deck-list" class="space-y-1 max-h-80 overflow-y-auto"></div>
+                                        </div>
+                                        <!-- Character Deck -->
+                                        <div id="character-deck-area">
+                                            <h4 class="text-xs font-semibold text-pink-600 mb-2">角色卡 (0/5)</h4>
+                                            <div id="character-deck-list" class="space-y-1 max-h-50 overflow-y-auto"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -487,6 +681,7 @@
 
     <script src="js/utils/game_config.js"></script>
     <script src="js/utils/synergy_rules.js"></script>
+    <script src="js/utils/card_resolver.js"></script> <!-- Card resolver utility for optimized storage -->
     <script src="js/battle/ai_deck_generator.js"></script>
     <script src="js/battle/ai_player.js"></script>
     

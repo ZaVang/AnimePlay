@@ -61,9 +61,17 @@ Game.BaseGacha = (function() {
             }
         });
 
-        // 保存历史记录
+        // 保存历史记录（使用优化格式）
         const history = getHistory();
-        history.push(...drawnItems);
+        const optimizedHistoryItems = drawnItems.map(item => ({
+            id: item.id,
+            rarity: item.rarity,
+            timestamp: Date.now(),
+            isDuplicate: item.isDuplicate || false,
+            isNew: item.isNew || false,
+            type: config.itemKey // 添加类型标识
+        }));
+        history.push(...optimizedHistoryItems);
         
         Game.Player.saveState(false);
         renderResult(drawnItems);
@@ -210,16 +218,27 @@ Game.BaseGacha = (function() {
                  [...history].reverse().forEach((item, index) => {
                     const rarityData = rarityConfig[item.rarity];
                     const textColorClass = rarityData?.color || 'text-gray-800';
+                    
+                    // 获取卡片名称 - 兼容新旧格式
+                    let itemName = item.name;
+                    if (!itemName && item.id && item.type && Game.CardResolver) {
+                        const cardData = Game.CardResolver.getCardById(item.id, item.type);
+                        itemName = cardData ? cardData.name : `未知${item.type === 'anime' ? '动画' : '角色'}`;
+                    } else if (!itemName) {
+                        itemName = `未知${itemType}`;
+                    }
+                    
                     const historyItem = document.createElement('div');
                     historyItem.className = 'p-2 bg-white rounded shadow-sm flex justify-between items-center';
                     historyItem.innerHTML = `
                         <div>
                             <span class="font-bold text-gray-500 mr-2">#${history.length - index}</span>
                             <span class="font-bold ${textColorClass}">[${item.rarity}]</span>
-                            <span>${item.name}</span>
+                            <span>${itemName}</span>
                         </div>
                         <span class="text-sm text-gray-400">${new Date(item.timestamp || Date.now()).toLocaleString()}</span>
                     `;
+                    historyItem.dataset.itemId = item.id; // 添加数据属性，便于调试
                     historyList.appendChild(historyItem);
                 });
             }

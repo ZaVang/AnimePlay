@@ -7,9 +7,14 @@ Game.Deck = (function() {
     let currentDeck = { anime: [], character: [] };
     let currentDeckName = '新卡组';
     let savedDecks = {}; // 保存的卡组库
+    let currentInterface = 'list'; // 'list' | 'editor'
 
-    // Collection modules for anime and character
+    // Collection modules for anime and character (for editor)
     let animeCollection, characterCollection;
+    
+    // Collection modules for list view
+    let listAnimeCollection, listCharacterCollection;
+    let listViewType = 'anime'; // 列表界面的当前视图类型
 
     // 初始化收藏模块
     function _initCollectionModules() {
@@ -52,6 +57,190 @@ Game.Deck = (function() {
         // 设置为组卡模式
         animeCollection.setDeckMode(true);
         characterCollection.setDeckMode(true);
+        
+        // 列表界面的动画收藏模块
+        listAnimeCollection = Game.CollectionModule({
+            type: 'anime',
+            itemType: '动画',
+            itemKey: 'anime',
+            configKey: 'animeSystem',
+            playerMethods: {
+                getCollection: () => Game.Player.getAnimeCollection(),
+                getPityState: () => Game.Player.getAnimePityState(),
+                getGachaHistory: () => Game.Player.getAnimeGachaHistory()
+            },
+            cardElementCreator: Game.UI.createAnimeCardElement,
+            detailModalHandler: _showAnimeDetail,
+            colors: { primary: 'indigo', secondary: 'blue' },
+            maxDeckSize: 25,
+            filterFields: ['name', 'rarity', 'tag']
+        });
+
+        // 列表界面的角色收藏模块
+        listCharacterCollection = Game.CollectionModule({
+            type: 'character',
+            itemType: '角色',
+            itemKey: 'character',
+            configKey: 'characterSystem',
+            playerMethods: {
+                getCollection: () => Game.Player.getCharacterCollection(),
+                getPityState: () => Game.Player.getCharacterPityState(),
+                getGachaHistory: () => Game.Player.getCharacterGachaHistory()
+            },
+            cardElementCreator: Game.UI.createCharacterCardElement,
+            detailModalHandler: _showCharacterDetail,
+            colors: { primary: 'pink', secondary: 'purple' },
+            maxDeckSize: 5,
+            filterFields: ['name', 'rarity', 'gender']
+        });
+        
+        // 列表界面的收藏模块设置为浏览模式（非组卡模式）
+        listAnimeCollection.setDeckMode(false);
+        listCharacterCollection.setDeckMode(false);
+    }
+
+    // 切换界面（列表 <-> 编辑器）
+    function _switchInterface(interfaceType) {
+        currentInterface = interfaceType;
+        
+        const listView = document.getElementById('deck-list-view');
+        const editorView = document.getElementById('deck-editor-view');
+        
+        if (interfaceType === 'list') {
+            listView.classList.remove('hidden');
+            editorView.classList.add('hidden');
+            _renderDeckList();
+            // 显示列表界面的收藏模块
+            _showListCollection();
+            // 延迟渲染收藏模块，确保DOM完全准备好并且数据已加载
+            setTimeout(() => _renderListCollection(0), 200);
+        } else if (interfaceType === 'editor') {
+            listView.classList.add('hidden');
+            editorView.classList.remove('hidden');
+            _renderDeck();
+            // 隐藏列表界面的收藏模块
+            _hideListCollection();
+        }
+    }
+
+    // 切换列表界面的视图类型
+    function _switchListViewType(type) {
+        listViewType = type;
+        
+        // 更新tab状态
+        document.querySelectorAll('.collection-tab').forEach(tab => {
+            tab.classList.remove('active');
+            tab.classList.add('text-gray-500', 'border-transparent');
+            tab.classList.remove('text-indigo-600', 'border-indigo-500');
+        });
+        
+        const activeTab = document.getElementById(`list-view-${type}`);
+        if (activeTab) {
+            activeTab.classList.add('active');
+            activeTab.classList.remove('text-gray-500', 'border-transparent');
+            activeTab.classList.add('text-indigo-600', 'border-indigo-500');
+        }
+        
+        // 切换筛选器显示
+        document.getElementById('list-anime-filters').classList.toggle('hidden', type !== 'anime');
+        document.getElementById('list-character-filters').classList.toggle('hidden', type !== 'character');
+        
+        // 渲染对应的收藏，延迟确保DOM更新完成
+        setTimeout(() => _renderListCollection(0), 10);
+    }
+
+    // 显示列表界面的收藏模块
+    function _showListCollection() {
+        const collectionSection = document.getElementById('list-collection-container');
+        if (collectionSection) {
+            collectionSection.classList.remove('hidden');
+        }
+    }
+
+    // 隐藏列表界面的收藏模块
+    function _hideListCollection() {
+        const collectionSection = document.getElementById('list-collection-container');
+        if (collectionSection) {
+            collectionSection.classList.add('hidden');
+        }
+    }
+
+    // 检查数据是否真正准备好
+    function _isDataReady() {
+        // 检查玩家模块是否存在
+        if (!Game.Player) {
+            return false;
+        }
+        
+        // 检查收藏数据是否加载（不只是占位符）
+        const animeCollection = Game.Player.getAnimeCollection();
+        if (animeCollection && animeCollection.size > 0) {
+            // 检查第一个条目是否还是 Loading... 状态
+            const firstEntry = animeCollection.values().next().value;
+            if (firstEntry && firstEntry.anime && firstEntry.anime.name === 'Loading...') {
+                return false;
+            }
+        }
+        
+        return true;
+    }
+
+    // 渲染列表界面的收藏区域
+    function _renderListCollection(retryCount = 0) {
+        const collectionView = document.getElementById('list-collection-view');
+        const statsContainer = document.getElementById('list-collection-stats');
+        
+        if (!collectionView) {
+            console.warn('List collection view not found');
+            return;
+        }
+
+        // 确保收藏模块已初始化
+        if (!listAnimeCollection || !listCharacterCollection) {
+            if (retryCount < 5) {
+                console.warn('List collection modules not initialized, reinitializing...', retryCount);
+                // 如果模块未初始化，重新初始化
+                _initCollectionModules();
+                // 延迟重试渲染
+                setTimeout(() => _renderListCollection(retryCount + 1), 100);
+            } else {
+                console.error('Failed to initialize list collection modules after 5 retries');
+            }
+            return;
+        }
+
+        // 检查数据是否真正准备好
+        if (!_isDataReady()) {
+            if (retryCount < 10) {
+                console.warn('Data not ready yet, retrying in 100ms...', retryCount);
+                setTimeout(() => _renderListCollection(retryCount + 1), 100);
+            } else {
+                console.error('Data still not ready after 10 retries, giving up');
+            }
+            return;
+        }
+
+        try {
+            if (listViewType === 'anime') {
+                listAnimeCollection.renderCollection(collectionView);
+                if (statsContainer) {
+                    listAnimeCollection.renderStats(statsContainer);
+                }
+            } else {
+                listCharacterCollection.renderCollection(collectionView);
+                if (statsContainer) {
+                    listCharacterCollection.renderStats(statsContainer);
+                }
+            }
+        } catch (error) {
+            console.error('Error rendering list collection:', error);
+            // 如果渲染失败，延迟重试（但有限制）
+            if (retryCount < 3) {
+                setTimeout(() => _renderListCollection(retryCount + 1), 200);
+            } else {
+                console.error('Failed to render list collection after 3 retries');
+            }
+        }
     }
 
     // 切换视图类型
@@ -154,6 +343,73 @@ Game.Deck = (function() {
         if (characterAreaTitle) {
             characterAreaTitle.textContent = `角色卡 (${currentDeck.character.length}/5)`;
         }
+    }
+
+    // 渲染卡组主列表
+    function _renderDeckList() {
+        const deckGrid = document.getElementById('deck-grid');
+        const emptyState = document.getElementById('empty-deck-state');
+        
+        if (!deckGrid) return;
+
+        const deckCount = Object.keys(savedDecks).length;
+        
+        if (deckCount === 0) {
+            deckGrid.classList.add('hidden');
+            emptyState.classList.remove('hidden');
+            return;
+        }
+        
+        deckGrid.classList.remove('hidden');
+        emptyState.classList.add('hidden');
+        
+        deckGrid.innerHTML = '';
+        
+        Object.keys(savedDecks).forEach(deckName => {
+            const deck = savedDecks[deckName];
+            const totalCards = deck.anime.length + deck.character.length;
+            
+            // 处理新旧封面格式
+            let coverImage = 'https://placehold.co/300x180/e2e8f0/334155?text=卡组封面';
+            
+            if (deck.cover) {
+                if (deck.cover.anime && deck.cover.anime.image_path) {
+                    // 旧格式
+                    coverImage = deck.cover.anime.image_path;
+                } else if (deck.cover.id && deck.cover.type) {
+                    // 新格式：通过ID获取封面
+                    const coverCard = Game.CardResolver.getCardById(deck.cover.id, deck.cover.type);
+                    if (coverCard && coverCard.image_path) {
+                        coverImage = coverCard.image_path;
+                    }
+                }
+            }
+            
+            const deckCard = document.createElement('div');
+            deckCard.className = 'deck-list-card';
+            deckCard.innerHTML = `
+                <div class="deck-actions">
+                    <button class="deck-action-btn delete" onclick="Game.Deck.deleteDeck('${deckName}'); event.stopPropagation();" title="删除卡组">
+                        🗑️
+                    </button>
+                </div>
+                <div class="overflow-hidden">
+                    <img src="${coverImage}" class="deck-cover-img w-full" onerror="this.src='https://placehold.co/300x180/e2e8f0/334155?text=卡组封面'">
+                </div>
+                <div class="deck-info p-4">
+                    <h3 class="deck-name-title">${deckName}</h3>
+                    <div class="deck-stats-row">
+                        <div class="deck-card-count">${totalCards}张卡牌</div>
+                        <div class="text-white text-xs opacity-75">
+                            ${deck.anime.length}动画 | ${deck.character.length}角色
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            deckCard.addEventListener('click', () => _editDeck(deckName));
+            deckGrid.appendChild(deckCard);
+        });
     }
 
     // 渲染卡组列表
@@ -325,12 +581,51 @@ Game.Deck = (function() {
         modal.classList.remove('hidden');
     }
 
+    // 编辑卡组
+    function _editDeck(deckName) {
+        if (savedDecks[deckName]) {
+            const deck = savedDecks[deckName];
+            
+            // 使用CardResolver解析卡组数据
+            currentDeck = {
+                anime: _resolveDeckCards(deck.anime, 'anime'),
+                character: _resolveDeckCards(deck.character, 'character')
+            };
+            
+            currentDeckName = deck.name;
+            document.getElementById('deck-name-input').value = currentDeckName;
+            _switchInterface('editor');
+        }
+    }
+
+    // 删除卡组
+    function _deleteDeck(deckName) {
+        if (confirm(`确定要删除卡组 "${deckName}" 吗？此操作不可撤销。`)) {
+            delete savedDecks[deckName];
+            
+            // 更新本地存储
+            localStorage.setItem('savedDecks', JSON.stringify(savedDecks));
+            
+            // 同时从服务器删除
+            if (Game.Player && Game.Player.deleteDeckFromServer) {
+                Game.Player.deleteDeckFromServer(deckName);
+            }
+            
+            _renderDeckList();
+        }
+    }
+
     // 新建卡组
     function _newDeck() {
         currentDeck = { anime: [], character: [] };
         currentDeckName = '新卡组';
         document.getElementById('deck-name-input').value = currentDeckName;
-        _renderDeck();
+        _switchInterface('editor');
+    }
+
+    // 从列表界面新建卡组
+    function _newDeckFromList() {
+        _newDeck();
     }
 
     // 保存卡组
@@ -343,30 +638,35 @@ Game.Deck = (function() {
             return;
         }
         
-        // 保存到本地存储（作为备份）
-        savedDecks[deckName] = {
+        // 使用CardResolver转换为优化的存储格式（只存储ID）
+        const optimizedDeck = {
             name: deckName,
-            anime: currentDeck.anime.slice(), // 创建副本
-            character: currentDeck.character.slice(),
-            cover: currentDeck.anime[0] || null,
-            createdAt: new Date().toISOString()
+            anime: Game.CardResolver.animeToStorage(currentDeck.anime),
+            character: Game.CardResolver.characterToStorage(currentDeck.character),
+            cover: currentDeck.anime[0] ? {
+                id: currentDeck.anime[0].anime.id,
+                type: 'anime'
+            } : null,
+            createdAt: new Date().toISOString(),
+            version: 2 // 标记为新版本格式
         };
         
+        // 保存到本地存储（作为备份）
+        savedDecks[deckName] = optimizedDeck;
         localStorage.setItem('savedDecks', JSON.stringify(savedDecks));
         
         // 同时保存到服务器端用户数据
         if (Game.Player && Game.Player.saveDeckToServer) {
-            Game.Player.saveDeckToServer(deckName, {
-                name: deckName,
-                anime: currentDeck.anime.slice(),
-                character: currentDeck.character.slice(),
-                cover: currentDeck.anime[0] || null,
-                createdAt: new Date().toISOString()
-            });
+            Game.Player.saveDeckToServer(deckName, optimizedDeck);
         }
         
         alert(`卡组 "${deckName}" 保存成功！`);
         _updateDeckSelector();
+        
+        // 保存后返回列表界面
+        setTimeout(() => {
+            _switchInterface('list');
+        }, 100);
     }
 
     // 加载卡组
@@ -376,10 +676,13 @@ Game.Deck = (function() {
         
         if (selectedDeck && savedDecks[selectedDeck]) {
             const deck = savedDecks[selectedDeck];
+            
+            // 使用CardResolver解析卡组数据
             currentDeck = {
-                anime: deck.anime.slice(),
-                character: deck.character.slice()
+                anime: _resolveDeckCards(deck.anime, 'anime'),
+                character: _resolveDeckCards(deck.character, 'character')
             };
+            
             currentDeckName = deck.name;
             document.getElementById('deck-name-input').value = currentDeckName;
             _renderDeck();
@@ -400,6 +703,49 @@ Game.Deck = (function() {
             option.textContent = `${deckName} (${deck.anime.length + deck.character.length}张)`;
             selector.appendChild(option);
         });
+    }
+
+    // 解析卡组卡片数据（兼容新旧格式）
+    function _resolveDeckCards(deckCards, type) {
+        if (!deckCards || !Array.isArray(deckCards)) {
+            return [];
+        }
+
+        // 检查是否是新格式（只有ID）
+        const isNewFormat = deckCards.length > 0 && deckCards[0] && typeof deckCards[0].id !== 'undefined' && !deckCards[0][type];
+        
+        if (isNewFormat) {
+            // 新格式：使用CardResolver解析
+            console.log(`Loading ${type} deck cards from optimized format`);
+            return Game.CardResolver.resolveCards(deckCards, type);
+        } else {
+            // 旧格式：直接使用（但同时迁移到新格式）
+            console.log(`Loading ${type} deck cards from legacy format`);
+            return deckCards.slice(); // 创建副本
+        }
+    }
+
+    // 迁移旧格式卡组到新格式
+    function _migrateDeckToNewFormat(deck) {
+        if (!deck || deck.version === 2) {
+            return deck; // 已经是新格式
+        }
+
+        console.log('Migrating deck to new format:', deck.name);
+        
+        const migratedDeck = {
+            name: deck.name,
+            anime: Game.CardResolver.migrateOldFormat(deck.anime, 'anime'),
+            character: Game.CardResolver.migrateOldFormat(deck.character, 'character'),
+            cover: deck.cover && deck.cover.anime ? {
+                id: deck.cover.anime.id,
+                type: 'anime'
+            } : null,
+            createdAt: deck.createdAt || new Date().toISOString(),
+            version: 2
+        };
+
+        return migratedDeck;
     }
 
     // 监听卡组更新事件
@@ -423,11 +769,32 @@ Game.Deck = (function() {
                 }
             }
         });
+
+        // 监听用户登录事件，重新渲染收藏
+        document.addEventListener('playerLoggedIn', () => {
+            console.log('Player logged in, refreshing collections...');
+            // 延迟一点时间确保所有数据都已加载
+            setTimeout(() => {
+                if (currentInterface === 'list') {
+                    _renderListCollection(0);
+                }
+            }, 500);
+        });
+
+        // 监听 UI 渲染完成事件（如果存在）
+        document.addEventListener('uiRenderComplete', () => {
+            console.log('UI render complete, refreshing collections...');
+            setTimeout(() => {
+                if (currentInterface === 'list') {
+                    _renderListCollection(0);
+                }
+            }, 100);
+        });
     }
 
     // 填充筛选器选项
     function _populateFilterOptions() {
-        // 填充动画稀有度筛选器
+        // 填充编辑界面的动画稀有度筛选器
         const animeRaritySelect = document.getElementById('deck-anime-filter-rarity');
         if (animeRaritySelect) {
             const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
@@ -440,7 +807,7 @@ Game.Deck = (function() {
             });
         }
 
-        // 填充动画标签筛选器
+        // 填充编辑界面的动画标签筛选器
         const animeTagSelect = document.getElementById('deck-anime-filter-tag');
         if (animeTagSelect && Game.AnimeGacha) {
             try {
@@ -464,7 +831,7 @@ Game.Deck = (function() {
             }
         }
 
-        // 填充角色稀有度筛选器
+        // 填充编辑界面的角色稀有度筛选器
         const characterRaritySelect = document.getElementById('deck-character-filter-rarity');
         if (characterRaritySelect) {
             const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
@@ -477,7 +844,7 @@ Game.Deck = (function() {
             });
         }
 
-        // 填充角色性别筛选器
+        // 填充编辑界面的角色性别筛选器
         const characterGenderSelect = document.getElementById('deck-character-filter-gender');
         if (characterGenderSelect) {
             const genders = ['男', '女', '未知'];
@@ -487,6 +854,69 @@ Game.Deck = (function() {
                 option.value = gender;
                 option.textContent = gender;
                 characterGenderSelect.appendChild(option);
+            });
+        }
+
+        // 填充列表界面的动画稀有度筛选器
+        const listAnimeRaritySelect = document.getElementById('list-anime-filter-rarity');
+        if (listAnimeRaritySelect) {
+            const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
+            listAnimeRaritySelect.innerHTML = '<option value="">所有稀有度</option>';
+            rarityOrder.forEach(rarity => {
+                const option = document.createElement('option');
+                option.value = rarity;
+                option.textContent = rarity;
+                listAnimeRaritySelect.appendChild(option);
+            });
+        }
+
+        // 填充列表界面的动画标签筛选器
+        const listAnimeTagSelect = document.getElementById('list-anime-filter-tag');
+        if (listAnimeTagSelect && Game.AnimeGacha) {
+            try {
+                const allAnimes = Game.AnimeGacha.getAllAnimes();
+                const allTags = new Set();
+                allAnimes.forEach(anime => {
+                    if (anime.synergy_tags && Array.isArray(anime.synergy_tags)) {
+                        anime.synergy_tags.forEach(tag => allTags.add(tag));
+                    }
+                });
+                
+                listAnimeTagSelect.innerHTML = '<option value="">所有标签</option>';
+                Array.from(allTags).sort().forEach(tag => {
+                    const option = document.createElement('option');
+                    option.value = tag;
+                    option.textContent = tag;
+                    listAnimeTagSelect.appendChild(option);
+                });
+            } catch (error) {
+                console.warn('Failed to populate list anime tags:', error);
+            }
+        }
+
+        // 填充列表界面的角色稀有度筛选器
+        const listCharacterRaritySelect = document.getElementById('list-character-filter-rarity');
+        if (listCharacterRaritySelect) {
+            const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
+            listCharacterRaritySelect.innerHTML = '<option value="">所有稀有度</option>';
+            rarityOrder.forEach(rarity => {
+                const option = document.createElement('option');
+                option.value = rarity;
+                option.textContent = rarity;
+                listCharacterRaritySelect.appendChild(option);
+            });
+        }
+
+        // 填充列表界面的角色性别筛选器
+        const listCharacterGenderSelect = document.getElementById('list-character-filter-gender');
+        if (listCharacterGenderSelect) {
+            const genders = ['男', '女', '未知'];
+            listCharacterGenderSelect.innerHTML = '<option value="">所有性别</option>';
+            genders.forEach(gender => {
+                const option = document.createElement('option');
+                option.value = gender;
+                option.textContent = gender;
+                listCharacterGenderSelect.appendChild(option);
             });
         }
     }
@@ -503,7 +933,10 @@ Game.Deck = (function() {
             if (Game.Player && Game.Player.getServerDecks) {
                 const serverDecks = Game.Player.getServerDecks();
                 if (serverDecks && Object.keys(serverDecks).length > 0) {
-                    savedDecks = { ...serverDecks };
+                    // 迁移服务器卡组到新格式
+                    Object.keys(serverDecks).forEach(deckName => {
+                        savedDecks[deckName] = _migrateDeckToNewFormat(serverDecks[deckName]);
+                    });
                 }
             }
             
@@ -512,8 +945,15 @@ Game.Deck = (function() {
             if (saved) {
                 try {
                     const localDecks = JSON.parse(saved);
-                    // 合并本地和服务器的卡组，服务器优先
-                    savedDecks = { ...localDecks, ...savedDecks };
+                    // 迁移本地卡组到新格式并合并，服务器优先
+                    Object.keys(localDecks).forEach(deckName => {
+                        if (!savedDecks[deckName]) { // 只有服务器没有的才从本地加载
+                            savedDecks[deckName] = _migrateDeckToNewFormat(localDecks[deckName]);
+                        }
+                    });
+                    
+                    // 重新保存迁移后的数据到本地存储
+                    localStorage.setItem('savedDecks', JSON.stringify(savedDecks));
                 } catch (e) {
                     console.error('Failed to load saved decks:', e);
                 }
@@ -525,8 +965,11 @@ Game.Deck = (function() {
             // 填充筛选器选项
             _populateFilterOptions();
             
-            // 初始渲染
-            _renderCollection();
+            // 初始渲染 - 默认显示列表界面
+            // 使用更长的延迟确保所有数据都已加载
+            setTimeout(() => {
+                _switchInterface('list');
+            }, 300);
             
             // 绑定UI事件
             document.getElementById('deck-view-anime')?.addEventListener('click', (e) => {
@@ -538,6 +981,22 @@ Game.Deck = (function() {
                 _switchViewType('character');
             });
             
+            // 列表界面tab切换事件
+            document.getElementById('list-view-anime')?.addEventListener('click', (e) => {
+                e.preventDefault();
+                _switchListViewType('anime');
+            });
+            document.getElementById('list-view-character')?.addEventListener('click', (e) => {
+                e.preventDefault();
+                _switchListViewType('character');
+            });
+            
+            // 卡组列表界面事件
+            document.getElementById('new-deck-btn-list')?.addEventListener('click', _newDeckFromList);
+            document.getElementById('new-deck-btn-empty')?.addEventListener('click', _newDeckFromList);
+            document.getElementById('back-to-deck-list')?.addEventListener('click', () => _switchInterface('list'));
+            
+            // 卡组编辑界面事件
             document.getElementById('new-deck-btn')?.addEventListener('click', _newDeck);
             document.getElementById('save-deck-btn')?.addEventListener('click', _saveDeck);
             
@@ -571,7 +1030,30 @@ Game.Deck = (function() {
                 characterCollection.handleFilterChange('gender', e.target.value);
             });
             
-            // 一键分解按钮事件
+            // 列表界面筛选器事件
+            // 动画筛选器
+            document.getElementById('list-anime-filter-name')?.addEventListener('input', (e) => {
+                listAnimeCollection.handleFilterChange('name', e.target.value);
+            });
+            document.getElementById('list-anime-filter-rarity')?.addEventListener('change', (e) => {
+                listAnimeCollection.handleFilterChange('rarity', e.target.value);
+            });
+            document.getElementById('list-anime-filter-tag')?.addEventListener('change', (e) => {
+                listAnimeCollection.handleFilterChange('tag', e.target.value);
+            });
+            
+            // 角色筛选器
+            document.getElementById('list-character-filter-name')?.addEventListener('input', (e) => {
+                listCharacterCollection.handleFilterChange('name', e.target.value);
+            });
+            document.getElementById('list-character-filter-rarity')?.addEventListener('change', (e) => {
+                listCharacterCollection.handleFilterChange('rarity', e.target.value);
+            });
+            document.getElementById('list-character-filter-gender')?.addEventListener('change', (e) => {
+                listCharacterCollection.handleFilterChange('gender', e.target.value);
+            });
+            
+            // 编辑界面一键分解按钮事件
             document.getElementById('deck-anime-dismantle-all-btn')?.addEventListener('click', () => {
                 animeCollection.dismantleAllDuplicates();
                 // 更新统计信息
@@ -587,6 +1069,25 @@ Game.Deck = (function() {
                 const statsContainer = document.getElementById('deck-collection-stats');
                 if (statsContainer) {
                     characterCollection.renderStats(statsContainer);
+                }
+            });
+            
+            // 列表界面一键分解按钮事件
+            document.getElementById('list-anime-dismantle-all-btn')?.addEventListener('click', () => {
+                listAnimeCollection.dismantleAllDuplicates();
+                // 更新统计信息
+                const statsContainer = document.getElementById('list-collection-stats');
+                if (statsContainer) {
+                    listAnimeCollection.renderStats(statsContainer);
+                }
+            });
+            
+            document.getElementById('list-character-dismantle-all-btn')?.addEventListener('click', () => {
+                listCharacterCollection.dismantleAllDuplicates();
+                // 更新统计信息
+                const statsContainer = document.getElementById('list-collection-stats');
+                if (statsContainer) {
+                    listCharacterCollection.renderStats(statsContainer);
                 }
             });
             
@@ -611,6 +1112,7 @@ Game.Deck = (function() {
         },
         
         addToDeck: _addToDeck,
-        removeFromDeck: _removeFromDeck
+        removeFromDeck: _removeFromDeck,
+        deleteDeck: _deleteDeck
     };
 })();

@@ -334,18 +334,7 @@ Game.CollectionModule = function(config) {
                     <div>
                         <p class="text-gray-600">完成率</p>
                         <p class="text-2xl font-bold text-${colors.secondary}-600">${completionRate}%</p>
-                    </div>
-                    ${type === 'character' ? `
-                    <div>
-                        <p class="text-gray-600">平均拥有数</p>
-                        <p class="text-2xl font-bold text-${colors.secondary}-600">${totalItems > 0 ? (totalCount / totalItems).toFixed(1) : '0.0'}</p>
-                    </div>
-                    ` : `
-                    <div>
-                        <p class="text-gray-600">平均拥有数</p>
-                        <p class="text-2xl font-bold text-${colors.secondary}-600">${totalItems > 0 ? (totalCount / totalItems).toFixed(1) : '0.0'}</p>
-                    </div>
-                    `}
+                    </div>                
                 </div>
                 <div class="mt-4 text-center text-sm space-y-2">
                     <p class="text-gray-600">稀有度分布: ${rarityStatsHtml}</p>
