@@ -26,8 +26,7 @@ Game.Player = (function() {
         ...window.GAME_CONFIG.playerInitialState,
         exp: 0,
         viewingQueue: Array(window.GAME_CONFIG.gameplay.viewingQueue.slots).fill(null),
-        decks: { '默认卡组': [] },
-        activeDeckName: '默认卡组',
+        savedDecks: {} // 新的炉石风格卡组编辑器数据
     };
 
     // --- Private Methods ---
@@ -76,8 +75,7 @@ Game.Player = (function() {
                     ...window.GAME_CONFIG.playerInitialState,
                     exp: 0,
                     viewingQueue: Array(window.GAME_CONFIG.gameplay.viewingQueue.slots).fill(null),
-                    decks: { '默认卡组': [] },
-                    activeDeckName: '默认卡组',
+                    savedDecks: {} // 新用户初始化空的savedDecks
                 };
             } else {
                 // Load anime collection (just IDs and counts)
@@ -112,8 +110,7 @@ Game.Player = (function() {
                 _playerState.viewingQueue = loadedQueue;
                 // --- END FIX ---
 
-                _playerState.decks = _playerState.decks && Object.keys(_playerState.decks).length > 0 ? _playerState.decks : { '默认卡组': [] };
-                _playerState.activeDeckName = _playerState.activeDeckName || Object.keys(_playerState.decks)[0];
+                _playerState.savedDecks = _playerState.savedDecks || {}; // 确保savedDecks字段存在
             }
         } catch (error) {
             console.error("加载存档失败:", error);
@@ -129,8 +126,7 @@ Game.Player = (function() {
                 ...window.GAME_CONFIG.playerInitialState,
                 exp: 0,
                 viewingQueue: Array(window.GAME_CONFIG.gameplay.viewingQueue.slots).fill(null),
-                decks: { '默认卡组': [] },
-                activeDeckName: '默认卡组',
+                savedDecks: {}
             };
         }
     }
@@ -254,6 +250,30 @@ Game.Player = (function() {
             Game.UI.renderViewingQueue();
             Game.UI.renderPlayerState();
             _saveState();
+        },
+
+        // 卡组编辑器相关方法
+        saveDeckToServer: function(deckName, deckData) {
+            if (!_playerState.savedDecks) {
+                _playerState.savedDecks = {};
+            }
+            _playerState.savedDecks[deckName] = deckData;
+            _saveState();
+            console.log(`卡组 "${deckName}" 已保存到服务器`);
+        },
+
+        getServerDecks: function() {
+            return _playerState.savedDecks || {};
+        },
+
+        deleteDeckFromServer: function(deckName) {
+            if (_playerState.savedDecks && _playerState.savedDecks[deckName]) {
+                delete _playerState.savedDecks[deckName];
+                _saveState();
+                console.log(`卡组 "${deckName}" 已从服务器删除`);
+                return true;
+            }
+            return false;
         }
     };
 })();
