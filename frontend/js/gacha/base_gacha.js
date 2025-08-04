@@ -32,7 +32,7 @@ Game.BaseGacha = (function() {
         // 检查券数量
         const currentTickets = playerState[ticketType] || 0;
         if (currentTickets < count) {
-            const ticketName = ticketType === 'animeGachaTickets' ? '番剧邂逅券' : '角色邂逅券';
+            const ticketName = ticketType === 'animeGachaTickets' ? '番剧抽卡券' : '角色抽卡券';
             alert(`${ticketName}不足！当前拥有：${currentTickets}，需要：${count}`);
             return;
         }
@@ -161,9 +161,9 @@ Game.BaseGacha = (function() {
         pityInfo.className = 'mt-4 p-3 bg-blue-50 rounded-lg text-sm';
         pityInfo.innerHTML = `
             <h4 class="font-bold text-blue-800 mb-2">保底机制</h4>
-            <p class="text-blue-700">• HR邂逅时，有<span class="font-bold">${rateUp.hrChance * 100}%</span>概率获得UP${itemType}</p>
-            <p class="text-blue-700">• 累计<span class="font-bold">${rateUp.pityPulls}</span>次邂逅必定获得UP${itemType}之一</p>
-            <p class="text-blue-700">• 十连邂逅必定获得<span class="font-bold">SR</span>及以上${itemType}</p>
+            <p class="text-blue-700">• HR抽卡时，有<span class="font-bold">${rateUp.hrChance * 100}%</span>概率获得UP${itemType}</p>
+            <p class="text-blue-700">• 累计<span class="font-bold">${rateUp.pityPulls}</span>次抽卡必定获得UP${itemType}之一</p>
+            <p class="text-blue-700">• 十连抽卡必定获得<span class="font-bold">SR</span>及以上${itemType}</p>
         `;
         ratesContent.appendChild(pityInfo);
         
@@ -188,7 +188,7 @@ Game.BaseGacha = (function() {
                 data: { 
                     labels: Object.keys(rarityCounts), 
                     datasets: [{ 
-                        label: `${itemType}邂逅数量`, 
+                        label: `${itemType}抽卡数量`, 
                         data: Object.values(rarityCounts), 
                         backgroundColor: itemType === '角色' ? '#ec4899' : '#4f46e5'
                     }] 
@@ -205,7 +205,7 @@ Game.BaseGacha = (function() {
         if (historyList) {
             historyList.innerHTML = '';
             if (history.length === 0) {
-                historyList.innerHTML = `<p class="text-gray-500 text-center">暂无${itemType}邂逅历史。</p>`;
+                historyList.innerHTML = `<p class="text-gray-500 text-center">暂无${itemType}抽卡历史。</p>`;
             } else {
                  [...history].reverse().forEach((item, index) => {
                     const rarityData = rarityConfig[item.rarity];

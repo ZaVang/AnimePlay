@@ -198,9 +198,9 @@ Game.GachaModule = function(config) {
         if (UpBanner) {
             if (upItems.length === 0) {
                 UpBanner.innerHTML = `
-                    <h3 class="text-xl font-bold mb-4 text-center text-${colors.secondary}-600">${itemType}邂逅</h3>
+                    <h3 class="text-xl font-bold mb-4 text-center text-${colors.secondary}-600">${itemType}抽卡</h3>
                     <div class="text-center">
-                        <p class="text-gray-600 mb-2">与你喜爱的${itemType}邂逅！</p>
+                        <p class="text-gray-600 mb-2">与你喜爱的${itemType}抽卡！</p>
                         <p class="text-sm text-gray-500">• 高稀有度${itemType}拥有特殊光效</p>
                         <p class="text-sm text-gray-500">• 十连必出SR级以上${itemType}</p>
                     </div>
@@ -219,9 +219,9 @@ Game.GachaModule = function(config) {
                     <div class="flex items-center justify-center gap-6 flex-wrap">
                         ${itemsHtml}
                         <div class="text-gray-600 text-sm">
-                            <p>• HR邂逅时，有<span class="font-bold text-${colors.secondary}-600">${rateUp.hrChance * 100}%</span>概率为UP！</p>
-                            <p>• 累计<span class="font-bold text-${colors.secondary}-600">${rateUp.pityPulls}</span>次邂逅必定获得UP之一！</p>
-                            <p>• 十连邂逅必定获得<span class="font-bold text-${colors.secondary}-600">SR</span>及以上${itemType}！</p>
+                            <p>• HR抽卡时，有<span class="font-bold text-${colors.secondary}-600">${rateUp.hrChance * 100}%</span>概率为UP！</p>
+                            <p>• 累计<span class="font-bold text-${colors.secondary}-600">${rateUp.pityPulls}</span>次抽卡必定获得UP之一！</p>
+                            <p>• 十连抽卡必定获得<span class="font-bold text-${colors.secondary}-600">SR</span>及以上${itemType}！</p>
                         </div>
                     </div>
                 `;
