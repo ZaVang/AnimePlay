@@ -1,11 +1,50 @@
+# IDE / OS files
+.DS_Store
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
 # Python scripts and cache
 __pycache__/
+*.py[cod]
+*$py.class
 
-# Source data, docs, and individual card jsons
+# Dependencies / Lockfiles
+# These should be checked in for consistent installs
+# node_modules/
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
 
-# IDE / OS files
-.idea/
-.vscode/
-.DS_Store
+# Dependencies (MUST be ignored)
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+*.local
+
+# Vue/Vite specific
+.vite/
+coverage/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+# These files can contain sensitive information
+.env
+.env.*
+!.env.example
+
+# Source data - Already ignored by a higher-level rule
+# We keep this here for clarity if this .gitignore is moved
+# data/
+
 *.ipynb
 data/
