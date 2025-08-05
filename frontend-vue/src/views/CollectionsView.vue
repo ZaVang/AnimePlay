@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { useUserStore } from '@/stores/userStore';
-import { useGameDataStore, type Card } from '@/stores/gameDataStore';
+import { useGameDataStore, type Card, type Rarity } from '@/stores/gameDataStore';
 import CharacterCard from '@/components/CharacterCard.vue';
 import AnimeCard from '@/components/AnimeCard.vue';
 import CardDetailModal from '@/components/CardDetailModal.vue';
@@ -12,10 +12,13 @@ const gameDataStore = useGameDataStore();
 
 // --- STATE for UI ---
 const activeTab = ref<'anime' | 'character' | 'decks'>('anime');
-const animeFilterName = ref('');
-const characterFilterName = ref('');
 const selectedCard = ref<Card | null>(null);
 const selectedCardType = ref<'anime' | 'character'>('anime');
+const rarityOrder: Rarity[] = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
+
+// Filters
+const animeFilters = ref({ name: '', rarity: '', tag: '' });
+const characterFilters = ref({ name: '', rarity: '' });
 
 
 // --- Event Handlers ---
@@ -28,7 +31,38 @@ function closeDetail() {
     selectedCard.value = null;
 }
 
-// --- COMPUTED for Filtered Lists ---
+function handleDismantleAll(type: 'anime' | 'character') {
+    const typeText = type === 'anime' ? '动画' : '角色';
+    if (confirm(`确定要分解所有重复的${typeText}卡吗？`)) {
+        userStore.dismantleAllDuplicates(type);
+    }
+}
+
+// --- COMPUTED Properties ---
+const hasDuplicateAnime = computed(() => {
+    return Array.from(userStore.animeCollection.values()).some(c => c.count > 1);
+});
+const hasDuplicateCharacters = computed(() => {
+    return Array.from(userStore.characterCollection.values()).some(c => c.count > 1);
+});
+
+const allAnimeTags = computed(() => {
+    const tags = new Set<string>();
+    gameDataStore.allAnimeCards.forEach(card => {
+        card.synergy_tags?.forEach(tag => tags.add(tag));
+    });
+    return Array.from(tags).sort();
+});
+
+const sortCards = (cards: (Card & { count: number })[]) => {
+    return cards.sort((a, b) => {
+        const rarityA = rarityOrder.indexOf(a.rarity);
+        const rarityB = rarityOrder.indexOf(b.rarity);
+        if (rarityA !== rarityB) return rarityA - rarityB;
+        return a.name.localeCompare(b.name, 'zh-Hans-CN');
+    });
+};
+
 const filteredAnimeCards = computed(() => {
   if (!userStore.isLoggedIn || gameDataStore.allAnimeCards.length === 0) return [];
   
@@ -40,11 +74,17 @@ const filteredAnimeCards = computed(() => {
     }
   }
 
-  if (animeFilterName.value) {
-      cards = cards.filter(card => card.name.toLowerCase().includes(animeFilterName.value.toLowerCase()));
+  if (animeFilters.value.name) {
+      cards = cards.filter(card => card.name.toLowerCase().includes(animeFilters.value.name.toLowerCase()));
+  }
+  if (animeFilters.value.rarity) {
+      cards = cards.filter(card => card.rarity === animeFilters.value.rarity);
+  }
+  if (animeFilters.value.tag) {
+      cards = cards.filter(card => card.synergy_tags?.includes(animeFilters.value.tag));
   }
   
-  return cards;
+  return sortCards(cards);
 });
 
 const filteredCharacterCards = computed(() => {
@@ -58,11 +98,14 @@ const filteredCharacterCards = computed(() => {
     }
   }
 
-  if (characterFilterName.value) {
-      cards = cards.filter(card => card.name.toLowerCase().includes(characterFilterName.value.toLowerCase()));
+  if (characterFilters.value.name) {
+      cards = cards.filter(card => card.name.toLowerCase().includes(characterFilters.value.name.toLowerCase()));
+  }
+  if (characterFilters.value.rarity) {
+      cards = cards.filter(card => card.rarity === characterFilters.value.rarity);
   }
 
-  return cards;
+  return sortCards(cards);
 });
 </script>
 
@@ -82,13 +125,31 @@ const filteredCharacterCards = computed(() => {
       <!-- Filters Section for Collections -->
       <div v-if="activeTab !== 'decks'" class="p-6 border-b border-gray-200">
         <div v-if="activeTab === 'anime'">
-            <div class="flex flex-wrap gap-3 items-center">
-                <input type="text" v-model="animeFilterName" placeholder="按动画名称搜索..." class="p-2 border rounded-lg flex-grow min-w-0 text-gray-800">
+            <div class="flex flex-wrap gap-4 items-center">
+                <input type="text" v-model="animeFilters.name" placeholder="按动画名称搜索..." class="p-2 border rounded-lg flex-grow min-w-0 text-gray-800">
+                <select v-model="animeFilters.rarity" class="p-2 border rounded-lg text-gray-800 bg-white">
+                    <option value="">所有稀有度</option>
+                    <option v-for="r in rarityOrder" :key="r" :value="r">{{ r }}</option>
+                </select>
+                <select v-model="animeFilters.tag" class="p-2 border rounded-lg text-gray-800 bg-white">
+                    <option value="">所有标签</option>
+                    <option v-for="tag in allAnimeTags" :key="tag" :value="tag">{{ tag }}</option>
+                </select>
+                <button @click="handleDismantleAll('anime')" :disabled="!hasDuplicateAnime" class="p-2 border rounded-lg bg-red-600 text-white disabled:bg-gray-400">
+                    一键分解重复卡
+                </button>
             </div>
         </div>
         <div v-if="activeTab === 'character'">
-            <div class="flex flex-wrap gap-3 items-center">
-                <input type="text" v-model="characterFilterName" placeholder="按角色名称搜索..." class="p-2 border rounded-lg flex-grow min-w-0 text-gray-800">
+            <div class="flex flex-wrap gap-4 items-center">
+                <input type="text" v-model="characterFilters.name" placeholder="按角色名称搜索..." class="p-2 border rounded-lg flex-grow min-w-0 text-gray-800">
+                 <select v-model="characterFilters.rarity" class="p-2 border rounded-lg text-gray-800 bg-white">
+                    <option value="">所有稀有度</option>
+                    <option v-for="r in rarityOrder" :key="r" :value="r">{{ r }}</option>
+                </select>
+                <button @click="handleDismantleAll('character')" :disabled="!hasDuplicateCharacters" class="p-2 border rounded-lg bg-red-600 text-white disabled:bg-gray-400">
+                    一键分解重复卡
+                </button>
             </div>
         </div>
       </div>
@@ -128,7 +189,13 @@ const filteredCharacterCards = computed(() => {
     </div>
 
     <!-- Card Detail Modal -->
-    <CardDetailModal :card="selectedCard" :card-type="selectedCardType" @close="closeDetail" />
+    <CardDetailModal 
+        v-if="selectedCard"
+        :card="selectedCard" 
+        :card-type="selectedCardType" 
+        :count="selectedCardType === 'anime' ? userStore.getAnimeCardCount(selectedCard.id) : userStore.getCharacterCardCount(selectedCard.id)"
+        @close="closeDetail" 
+    />
   </div>
 </template>
 

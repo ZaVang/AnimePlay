@@ -11,19 +11,19 @@ import WatchQueue from '@/components/WatchQueue.vue';
     <!-- Player Status Section -->
     <PlayerStatus />
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-      
-      <!-- Left Column: Watch Queue and Logs -->
-      <div class="lg:col-span-2 space-y-8 flex flex-col">
-        <!-- Watch Queue -->
-        <WatchQueue />
+    <!-- Watch Queue (独占一行) -->
+    <WatchQueue />
 
-        <!-- Activity Log -->
+    <!-- Bottom Row: Activity Log & Collection Preview (1:1比例) -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      
+      <!-- Left: Activity Log -->
+      <div class="flex flex-col">
         <ActivityLog class="flex-1" />
       </div>
 
-      <!-- Right Column: Collection Preview -->
-      <div class="lg:col-span-1 space-y-8 flex flex-col">
+      <!-- Right: Collection Preview -->
+      <div class="flex flex-col">
         <CollectionPreview class="flex-1" />
       </div>
 

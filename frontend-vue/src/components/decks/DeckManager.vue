@@ -28,8 +28,7 @@ function backToList() {
     <div v-if="mode === 'list'">
       <DeckList @newDeck="handleNewDeck" @editDeck="handleEditDeck" />
     </div>
-
-    <div v-if="mode === 'editor'">
+    <div v-else>
       <DeckEditor :deckName="deckToEdit" @back="backToList" />
     </div>
   </div>

@@ -2,43 +2,7 @@ import { defineStore } from 'pinia';
 import { ref } from 'vue';
 import { useUserStore } from './userStore';
 import { useGameDataStore, type Card, type Rarity } from './gameDataStore';
-
-// 从旧的 game_config.js 迁移过来的配置
-// TODO: 后续可以考虑将这些配置也通过 API 从后端获取
-const GACHA_CONFIG = {
-    anime: {
-        rarityConfig: {
-            'UR': { p: 0.5, dismantleValue: 500 },
-            'HR': { p: 2.5, dismantleValue: 100 },
-            'SSR': { p: 7, dismantleValue: 50 },
-            'SR': { p: 20, dismantleValue: 10 },
-            'R': { p: 30, dismantleValue: 2 },
-            'N': { p: 40, dismantleValue: 1 } // N卡通常不直接抽出
-        },
-        rateUp: {
-            ids: [],
-            hrChance: 0.5,
-            pityPulls: 80
-        },
-        guaranteedSR_Pulls: 10
-    },
-    character: {
-        rarityConfig: {
-            'UR': { p: 0.5, dismantleValue: 1000 },
-            'HR': { p: 2.5, dismantleValue: 200 },
-            'SSR': { p: 7, dismantleValue: 100 },
-            'SR': { p: 20, dismantleValue: 20 },
-            'R': { p: 30, dismantleValue: 4 },
-            'N': { p: 40, dismantleValue: 2 }
-        },
-        rateUp: {
-            ids: [],
-            hrChance: 0.5,
-            pityPulls: 80
-        },
-        guaranteedSR_Pulls: 10
-    }
-};
+import { GAME_CONFIG } from '@/config/gameConfig';
 
 export interface DrawnCard extends Card {
     isNew?: boolean;
@@ -55,7 +19,7 @@ export const useGachaStore = defineStore('gacha', () => {
         const userStore = useUserStore();
         const gameDataStore = useGameDataStore();
         
-        const config = GACHA_CONFIG[gachaType];
+        const config = gachaType === 'anime' ? GAME_CONFIG.animeSystem : GAME_CONFIG.characterSystem;
         const pityState = gachaType === 'anime' ? userStore.animePityState : userStore.characterPityState;
         const allCards = gachaType === 'anime' ? gameDataStore.allAnimeCards : gameDataStore.allCharacterCards;
         const rateUpCards = allCards.filter(c => config.rateUp.ids.includes(c.id));
@@ -109,7 +73,7 @@ export const useGachaStore = defineStore('gacha', () => {
         }
         
         const highRarities: Rarity[] = ['SR', 'SSR', 'HR', 'UR'];
-        if (count >= config.guaranteedSR_Pulls && !drawnCards.some(card => highRarities.includes(card.rarity))) {
+        if (count >= config.gacha.guaranteedSR_Pulls && !drawnCards.some(card => highRarities.includes(card.rarity))) {
             const srPool = allCards.filter(c => c.rarity === 'SR');
             const indexToReplace = drawnCards.findIndex(c => c.rarity === 'N' || c.rarity === 'R') ?? 0;
             if (srPool.length > 0 && indexToReplace !== -1) {

@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    @keyframes pulse-strong {
+        0%, 100% {  /* ✅ 去掉引号 */
+            box-shadow: 0 0 15px var(--tw-shadow-color);
+            opacity: 1;
+        }
+        50% {       /* ✅ 去掉引号 */
+            box-shadow: 0 0 25px var(--tw-shadow-color);
+            opacity: 0.8;
+        }
+    }
+    
+    @keyframes pulse-extra-strong {
+        0%, 100% {  /* ✅ 去掉引号 */
+            box-shadow: 0 0 20px var(--tw-shadow-color);
+            opacity: 1;
+        }
+        50% {       /* ✅ 去掉引号 */
+            box-shadow: 0 0 35px var(--tw-shadow-color);
+            opacity: 0.85;
+        }
+    }
+
+    .animate-pulse-strong {
+        animation: pulse-strong 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    
+    .animate-pulse-extra-strong {
+        animation: pulse-extra-strong 1.8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+}

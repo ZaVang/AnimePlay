@@ -9,7 +9,9 @@ const getCoverImage = (deck) => {
   if (!deck.cover) {
     return `https://placehold.co/300x180/e2e8f0/334155?text=无封面`;
   }
-  const card = gameDataStore.getCardById(deck.cover.id, deck.cover.type);
+  const card = deck.cover.type === 'anime'
+    ? gameDataStore.getAnimeCardById(deck.cover.id)
+    : gameDataStore.getCharacterCardById(deck.cover.id);
   return card ? card.image_path : `https://placehold.co/300x180/e2e8f0/334155?text=封面加载失败`;
 };
 
@@ -38,10 +40,10 @@ const handleDeleteDeck = (deckName: string) => {
       </button>
     </div>
 
-    <div v-else class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div v-else class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6">
       <div v-for="deck in userStore.savedDecks" :key="deck.name" class="bg-white rounded-lg shadow-md overflow-hidden group cursor-pointer" @click="$emit('editDeck', deck.name)">
-        <div class="relative">
-          <img :src="getCoverImage(deck)" class="w-full h-40 object-cover" :alt="`${deck.name} cover`">
+        <div class="relative aspect-w-1 aspect-h-2">
+          <img :src="getCoverImage(deck)" class="w-full h-full object-cover" :alt="`${deck.name} cover`">
           <div class="absolute top-0 right-0 p-2 opacity-0 group-hover:opacity-100 transition-opacity">
             <button @click.stop="handleDeleteDeck(deck.name)" class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-red-600">
               🗑️
