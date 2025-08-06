@@ -15,7 +15,7 @@ DATA_DIR = project_root / 'data' / 'anime'
 INPUT_ANIME_FILE = DATA_DIR / 'top_anime_japan.json'
 OUTPUT_CARDS_DIR = DATA_DIR / 'cards'
 ALL_CARDS_FILE = DATA_DIR / 'all_cards.json'
-CHARACTERS_DIR = DATA_DIR / 'characters'
+CHARACTERS_DIR = DATA_DIR / 'character'
 
 
 def setup_directories():

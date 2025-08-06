@@ -18,9 +18,9 @@ from backend.bangumi_asset.models import (
 # --- Constants ---
 DATA_DIR = project_root / "data"
 ANIME_DIR = DATA_DIR / "anime"
-CHAR_DIR = DATA_DIR / "characters"
+CHAR_DIR = DATA_DIR / "character"
 IMG_ANIME_DIR = DATA_DIR / "images" / "anime"
-IMG_CHAR_DIR = DATA_DIR / "images" / "characters"
+IMG_CHAR_DIR = DATA_DIR / "images" / "character"
 
 def download_image(url: str, path: Path):
     """Downloads an image from a URL, checking for existence first."""

@@ -50,7 +50,7 @@ interface LevelUpReward {
     characterTickets: number;
 }
 
-interface ViewingQueueReward {
+export interface ViewingQueueReward {
     time: number;
     exp: number;
     knowledge: number;

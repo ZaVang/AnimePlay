@@ -40,8 +40,8 @@ export const useGameDataStore = defineStore('gameData', () => {
     try {
       // 使用 Promise.all 并行获取数据，速度更快
       const [animeResponse, characterResponse] = await Promise.all([
-        fetch('/data/anime/all_cards.json'),
-        fetch('/api/characters?limit=1000') // 使用已有的角色 API
+        fetch('/api/all_animes?limit=1000'),
+        fetch('/api/all_characters?limit=1000') // 使用已有的角色 API
       ]);
 
       if (!animeResponse.ok) throw new Error('Failed to fetch anime cards');
@@ -50,20 +50,20 @@ export const useGameDataStore = defineStore('gameData', () => {
       const animeData = await animeResponse.json();
       const characterData = await characterResponse.json();
 
-      const processCardImagePath = (card: Card) => {
-        if (card.image_path && (card.image_path.startsWith('http://') || card.image_path.startsWith('https://'))) {
-            return { ...card }; // 已经是完整 URL，直接返回
-        }
+      const processCardImagePath = (card: Card, type: 'anime' | 'character'): Card => {
+        // 根据卡片ID和类型构建图片路径
+        const imagePath = `/data/images/${type}/${card.id}.jpg`;
         return {
             ...card,
-            image_path: card.image_path ? `/${card.image_path}` : ''
+            image_path: imagePath,
+            rarity: (card as any).rarity || 'N' // 默认稀有度
         };
       };
 
-      allAnimeCards.value = animeData.map(processCardImagePath);
+      allAnimeCards.value = animeData.map((card: Card) => processCardImagePath(card, 'anime'));
 
       if (characterData.characters) {
-          allCharacterCards.value = characterData.characters.map(processCardImagePath);
+          allCharacterCards.value = characterData.characters.map((card: Card) => processCardImagePath(card, 'character'));
       } else {
           allCharacterCards.value = [];
       }

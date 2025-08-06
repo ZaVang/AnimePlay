@@ -85,7 +85,7 @@ if __name__ == '__main__':
     parser.add_argument(
         "-i", "--input_dir", 
         type=str, 
-        default=str(project_root / 'data' / 'anime' / 'characters'),
+        default=str(project_root / 'data' / 'anime' / 'character'),
         help="包含角色JSON文件的目录。"
     )
     parser.add_argument(

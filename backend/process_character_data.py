@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 角色数据处理脚本
-处理人物数据，生成all_cards.json文件，包含人物等级、作品数、中文名等数据
+处理人物数据，生成all_cards.json文件，包含人物等级、作品数、中文名、战斗属性等数据
 """
 
 import json
@@ -9,6 +9,7 @@ import os
 import glob
 from collections import defaultdict
 import logging
+import random
 
 # 配置日志
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -34,7 +35,7 @@ def load_anime_data():
 def calculate_character_rarity(character):
     """基于角色人气数据计算稀有度等级"""
     if not character.get('stat'):
-        return 'INTERESTING'
+        return 'N'  # 默认最低稀有度
     
     collects = character['stat'].get('collects', 0)
     comments = character['stat'].get('comments', 0)
@@ -74,7 +75,6 @@ def extract_birthday(character):
     if birth_mon and birth_day:
         return f"{birth_mon}月{birth_day}日"
     
-    # 尝试从infobox获取生日信息
     if character.get('infobox'):
         for item in character['infobox']:
             if item.get('key') == '生日':
@@ -84,15 +84,40 @@ def extract_birthday(character):
     
     return '未知'
 
+def assign_battle_stats(rarity, popularity_score):
+    """根据稀有度和人气，为角色生成战斗属性"""
+    base_stats = {
+        'UR':  {'hp': 1200, 'atk': 120, 'def': 120, 'sp': 120, 'spd': 120},
+        'HR':  {'hp': 1000, 'atk': 100, 'def': 100, 'sp': 100, 'spd': 100},
+        'SSR': {'hp': 850,  'atk': 90,  'def': 80,  'sp': 95,  'spd': 85},
+        'SR':  {'hp': 600,  'atk': 70,  'def': 65,  'sp': 75,  'spd': 60},
+        'R':   {'hp': 400,  'atk': 50,  'def': 45,  'sp': 55,  'spd': 50},
+        'N':   {'hp': 250,  'atk': 30,  'def': 30,  'sp': 30,  'spd': 30}
+    }
+    
+    stats = base_stats.get(rarity, base_stats['N'])
+    
+    # 根据人气分数增加随机浮动 (0% to 10%)
+    normalized_popularity = min(popularity_score / 2000.0, 1.0)
+    bonus_multiplier = 1 + (random.uniform(0, 0.1) * normalized_popularity)
+    
+    final_stats = {
+        'hp':  int(stats['hp'] * bonus_multiplier),
+        'atk': int(stats['atk'] * bonus_multiplier),
+        'def': int(stats['def'] * bonus_multiplier),
+        'sp':  int(stats['sp'] * bonus_multiplier),
+        'spd': int(stats['spd'] * bonus_multiplier)
+    }
+    
+    return final_stats
+
 def process_character_files():
     """处理所有角色文件"""
-    characters_dir = 'data/characters/raw_cards'
+    characters_dir = 'data/character/raw_cards'
     processed_characters = []
     
-    # 加载动漫数据映射
     anime_mapping = load_anime_data()
     
-    # 获取所有角色文件
     character_files = glob.glob(os.path.join(characters_dir, '*.json'))
     logging.info(f"找到 {len(character_files)} 个角色文件")
     
@@ -101,42 +126,37 @@ def process_character_files():
             with open(file_path, 'r', encoding='utf-8') as f:
                 character = json.load(f)
             
-            # 提取中文名
             chinese_name = extract_chinese_name(character)
-            
-            # 计算稀有度
             rarity = calculate_character_rarity(character)
             
-            # 获取作品信息
             anime_ids = character.get('anime_ids', [])
-            anime_names = []
-            for anime_id in anime_ids:
-                if anime_id in anime_mapping:
-                    anime_names.append(anime_mapping[anime_id])
+            anime_names = [anime_mapping[anime_id] for anime_id in anime_ids if anime_id in anime_mapping]
             
-            # 提取生日
             birthday = extract_birthday(character)
             
-            # 构建处理后的角色数据
+            popularity_score = (character.get('stat', {}).get('collects', 0) + 
+                                character.get('stat', {}).get('comments', 0) * 2)
+
+            battle_stats = assign_battle_stats(rarity, popularity_score)
+
             processed_character = {
                 'id': character['id'],
-                'name': chinese_name,  # 中文名作为主要显示名称
-                'original_name': character.get('name', ''),  # 保留原始日文名
+                'name': chinese_name,
+                'original_name': character.get('name', ''),
                 'rarity': rarity,
-                'image_path': character['images'].get('large', '') if character.get('images') else '',
+                'image_path': character.get('images', {}).get('large', ''),
                 'anime_ids': anime_ids,
-                'anime_names': anime_names,  # 添加作品名称列表
-                'anime_count': len(anime_ids),  # 作品数
+                'anime_names': anime_names,
+                'anime_count': len(anime_ids),
                 'gender': character.get('gender', 'unknown'),
                 'birthday': birthday,
                 'description': character.get('summary', '神秘的角色')[:200] + ('...' if len(character.get('summary', '')) > 200 else ''),
                 'stats': character.get('stat', {'comments': 0, 'collects': 0}),
                 'type': 'character',
-                # 添加额外信息
-                'blood_type': None,  # 暂时不处理血型信息
-                'height': None,      # 暂时不处理身高信息
-                'popularity_score': (character.get('stat', {}).get('collects', 0) + 
-                                   character.get('stat', {}).get('comments', 0) * 2)
+                'popularity_score': popularity_score,
+                'battle_stats': battle_stats, # 新增战斗属性
+                'blood_type': None,
+                'height': None,
             }
             
             processed_characters.append(processed_character)
@@ -145,32 +165,28 @@ def process_character_files():
             logging.error(f"处理文件 {file_path} 时出错: {e}")
             continue
     
-    # 按稀有度和人气排序
-    rarity_order = {'LEGENDARY': 0, 'MASTERPIECE': 1, 'POPULAR': 2, 'QUALITY': 3, 'INTERESTING': 4}
-    processed_characters.sort(key=lambda x: (rarity_order.get(x['rarity'], 5), -x['popularity_score']))
+    rarity_order = {'UR': 0, 'HR': 1, 'SSR': 2, 'SR': 3, 'R': 4, 'N': 5}
+    processed_characters.sort(key=lambda x: (rarity_order.get(x['rarity'], 6), -x.get('popularity_score', 0)))
     
     logging.info(f"成功处理了 {len(processed_characters)} 个角色")
     
-    # 统计稀有度分布
     rarity_stats = defaultdict(int)
     for char in processed_characters:
         rarity_stats[char['rarity']] += 1
     
     logging.info("稀有度分布:")
-    for rarity, count in rarity_stats.items():
+    for rarity, count in sorted(rarity_stats.items(), key=lambda item: rarity_order.get(item[0], 6)):
         logging.info(f"  {rarity}: {count} 个角色")
     
     return processed_characters
 
 def save_processed_data(characters):
     """保存处理后的数据到characters文件夹下的all_cards.json"""
-    output_file = 'data/characters/all_cards.json'
+    output_file = 'data/character/all_cards.json'
     
     try:
-        # 确保目录存在
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         
-        # 保存数据
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(characters, f, ensure_ascii=False, indent=2)
         
@@ -184,24 +200,21 @@ def main():
     """主函数"""
     logging.info("开始处理角色数据...")
     
-    # 检查必要的目录是否存在
-    if not os.path.exists('data/characters/'):
-        logging.error("角色数据目录不存在: data/characters/")
+    if not os.path.exists('data/character/raw_cards'):
+        logging.error("原始角色数据目录不存在: data/character/raw_cards/")
         return
     
     if not os.path.exists('data/anime/all_cards.json'):
         logging.error("动漫数据文件不存在: data/anime/all_cards.json")
         return
     
-    # 处理角色数据
     processed_characters = process_character_files()
     
     if processed_characters:
-        # 保存处理后的数据
         save_processed_data(processed_characters)
         logging.info("角色数据处理完成！")
     else:
-        logging.error("没有处理任何角色数据")
+        logging.warning("没有处理任何角色数据，请检查原始数据目录。")
 
 if __name__ == '__main__':
     main()
