@@ -12,7 +12,7 @@ const gameStore = useGameStore();
 const settingsStore = useSettingsStore();
 
 // 获取当前选择的主题
-const currentTheme = computed(() => settingsStore.biasBarTheme || 'cyber');
+const currentTheme = computed(() => settingsStore.biasBarTheme || 'gradient');
 
 // 主题组件映射
 const themeComponents = {
@@ -49,7 +49,7 @@ const CurrentBiasBar = computed(() => themeComponents[currentTheme.value]);
 
 <style scoped>
 .bias-bar-container {
-  @apply relative h-full;
+  @apply relative;
 }
 
 .theme-switch-btn {

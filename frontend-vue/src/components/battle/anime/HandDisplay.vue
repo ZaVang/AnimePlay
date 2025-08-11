@@ -77,13 +77,13 @@ function handlePlayCard(style: '友好安利' | '辛辣点评' | '赞同' | '反
 
 <style scoped>
 .hand-display-container {
-  @apply h-full w-full flex justify-center items-center gap-4;
+  @apply h-full w-full flex justify-center items-center gap-4 pb-4;
 }
 .card-container {
-  @apply w-36 h-auto cursor-pointer transform hover:-translate-y-4 transition-transform duration-300;
+  @apply w-32 h-48 cursor-pointer transform hover:-translate-y-4 transition-transform duration-300;
 }
 .card-back {
-  @apply w-full h-52 bg-blue-900 border-2 border-blue-400 rounded-lg;
+  @apply w-full h-full bg-blue-900 border-2 border-blue-400 rounded-lg;
   background-image: repeating-linear-gradient(45deg, #1e3a8a, #1e3a8a 10px, #1d4ed8 10px, #1d4ed8 20px);
 }
 </style>

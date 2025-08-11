@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
+import { usePlayerStore } from '@/stores/battle';
 
 // 接收props
 interface Props {
@@ -7,11 +8,17 @@ interface Props {
 }
 
 const props = defineProps<Props>();
+const playerStore = usePlayerStore();
 
-// 计算偏向百分比（用于定位指示器）
+const isPlayerA = playerStore.playerId === 'playerA';
+
+const playerLabel = computed(() => (isPlayerA ? '我方领域' : '对手领域'));
+const opponentLabel = computed(() => (isPlayerA ? '对手领域' : '我方领域'));
+
+// 计算偏向百分比
 const biasPercentage = computed(() => {
-  // 将 -10 到 +10 映射到 0% 到 100%
-  return (props.topicBias + 10) * 5;
+  const bias = isPlayerA ? props.topicBias : -props.topicBias;
+  return (bias + 10) * 5;
 });
 
 // 计算数值显示的样式类
@@ -61,131 +68,139 @@ function handleClick() {
 </script>
 
 <template>
-    <div class="topic-bias-container-cyber">
-      <!-- 顶部装饰 -->
-      <div class="cyber-cap top">
-        <div class="energy-ring"></div>
-        <span class="faction-label">正方领域</span>
-      </div>
-      
-      <!-- 主体条 -->
-      <div class="bias-core">
-        <!-- 能量流动效果 -->
-        <div class="energy-flow" :style="{ height: `${biasPercentage}%` }"></div>
-        
-        <!-- 数值网格 -->
-        <svg class="grid-overlay" viewBox="0 0 60 200">
-          <defs>
-            <pattern id="grid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-              <rect width="20" height="20" fill="none" stroke="#ffffff10" stroke-width="0.5"/>
-            </pattern>
-          </defs>
-          <rect width="60" height="200" fill="url(#grid)" />
-        </svg>
-        
-        <!-- 指示器 -->
-        <div class="bias-pointer" :style="{ bottom: `${biasPercentage}%` }">
-          <div class="pointer-core">
-            <span>{{ Math.abs(props.topicBias) }}</span>
-          </div>
-          <div class="pointer-wings"></div>
-        </div>
-        
-        <!-- 边缘光效 -->
-        <div class="edge-glow"></div>
-      </div>
-      
-      <!-- 底部装饰 -->
-      <div class="cyber-cap bottom">
-        <div class="energy-ring"></div>
-        <span class="faction-label">反方领域</span>
-      </div>
-      
-      <!-- 警告状态 -->
-      <div v-if="Math.abs(props.topicBias) >= 8" class="warning-state">
-        <span>⚠️ 临界状态</span>
-      </div>
+  <div class="topic-bias-container-cyber-horizontal">
+    <!-- 左侧装饰 -->
+    <div class="cyber-cap-horizontal left">
+      <div class="energy-ring"></div>
+      <span class="faction-label">{{ opponentLabel }}</span>
     </div>
-  </template>
-  
-  <style scoped>
-  .topic-bias-container-cyber {
-    @apply w-28 h-full flex flex-col items-center;
-    @apply bg-black rounded-lg relative;
-    @apply border border-cyan-500/30;
-    box-shadow: 
-      inset 0 0 20px #06b6d410,
-      0 0 30px #06b6d420;
-  }
-  
-  .cyber-cap {
-    @apply relative z-10 py-2 px-3 w-full text-center;
-  }
-  
-  .energy-ring {
-    @apply absolute inset-0 rounded-full;
-    @apply border-2 border-cyan-400;
-    @apply animate-spin-slow opacity-30;
-  }
-  
-  .faction-label {
-    @apply text-xs font-mono uppercase tracking-wider;
-    @apply text-cyan-300;
-    text-shadow: 0 0 10px currentColor;
-  }
-  
-  .bias-core {
-    @apply flex-1 w-16 mx-auto relative;
-    @apply bg-gradient-to-b from-cyan-900/20 to-purple-900/20;
-    @apply border-x border-cyan-500/20;
-    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
-  }
-  
-  .energy-flow {
-    @apply absolute bottom-0 left-0 right-0;
-    @apply bg-gradient-to-t from-purple-500 via-blue-500 to-cyan-400;
-    @apply transition-all duration-500;
-    filter: brightness(1.5);
-    animation: energy-pulse 2s ease-in-out infinite;
-  }
-  
-  @keyframes energy-pulse {
-    0%, 100% { opacity: 0.8; }
-    50% { opacity: 1; }
-  }
-  
-  .bias-pointer {
-    @apply absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2;
-    @apply transition-all duration-300;
-  }
-  
-  .pointer-core {
-    @apply w-12 h-12 rounded-full;
-    @apply bg-gradient-to-br from-cyan-400 to-purple-500;
-    @apply flex items-center justify-center;
-    @apply text-white font-bold text-lg;
-    @apply shadow-lg;
-    box-shadow: 0 0 30px #06b6d4;
-  }
-  
-  .pointer-wings {
-    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
-    @apply w-20 h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent;
-  }
-  
-  .warning-state {
-    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
-    @apply bg-red-500/90 px-2 py-1 rounded;
-    @apply text-xs font-bold animate-pulse;
-    @apply whitespace-nowrap;
-  }
-  @keyframes spin-slow {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    
+    <!-- 主体条 -->
+    <div class="bias-core-horizontal">
+      <!-- 能量流动效果 -->
+      <div class="energy-flow-horizontal" :style="{ width: `${biasPercentage}%` }"></div>
+      
+      <!-- 数值网格 -->
+      <svg class="grid-overlay-horizontal" viewBox="0 0 200 60">
+        <defs>
+          <pattern id="grid-h" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <rect width="20" height="20" fill="none" stroke="#ffffff10" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid-h)" />
+      </svg>
+      
+      <!-- 指示器 -->
+      <div class="bias-pointer-horizontal" :style="{ left: `${biasPercentage}%` }">
+        <div class="pointer-core">
+          <span>{{ Math.abs(props.topicBias) }}</span>
+        </div>
+        <div class="pointer-wings-horizontal"></div>
+      </div>
+      
+      <!-- 边缘光效 -->
+      <div class="edge-glow-horizontal"></div>
+    </div>
+    
+    <!-- 右侧装饰 -->
+    <div class="cyber-cap-horizontal right">
+      <div class="energy-ring"></div>
+      <span class="faction-label">{{ playerLabel }}</span>
+    </div>
+    
+    <!-- 警告状态 -->
+    <div v-if="Math.abs(props.topicBias) >= 8" class="warning-state-horizontal">
+      <span>⚠️ 临界状态</span>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.topic-bias-container-cyber-horizontal {
+  @apply w-full h-28 flex items-center;
+  @apply bg-black rounded-lg relative;
+  @apply border border-cyan-500/30;
+  box-shadow: 
+    inset 0 0 20px #06b6d410,
+    0 0 30px #06b6d420;
+}
+
+.cyber-cap-horizontal {
+  @apply relative z-10 p-2 h-full text-center flex items-center;
+  flex-basis: 120px;
+}
+.cyber-cap-horizontal.left {
+  justify-content: flex-start;
+}
+.cyber-cap-horizontal.right {
+  justify-content: flex-end;
+}
+
+.energy-ring {
+  @apply absolute inset-0 rounded-full;
+  @apply border-2 border-cyan-400;
+  @apply animate-spin-slow opacity-30;
+}
+
+.faction-label {
+  @apply text-xs font-mono uppercase tracking-wider;
+  @apply text-cyan-300;
+  text-shadow: 0 0 10px currentColor;
+}
+
+.bias-core-horizontal {
+  @apply flex-1 h-16 mx-auto relative;
+  @apply bg-gradient-to-r from-cyan-900/20 to-purple-900/20;
+  @apply border-y border-cyan-500/20;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+}
+
+.energy-flow-horizontal {
+  @apply absolute top-0 left-0 bottom-0;
+  @apply bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-400;
+  @apply transition-all duration-500;
+  filter: brightness(1.5);
+  animation: energy-pulse 2s ease-in-out infinite;
+}
+
+@keyframes energy-pulse {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+.grid-overlay-horizontal {
+  @apply absolute inset-0 w-full h-full;
+}
+
+.bias-pointer-horizontal {
+  @apply absolute top-1/2 transform -translate-y-1/2 -translate-x-1/2;
+  @apply transition-all duration-300;
+}
+
+.pointer-core {
+  @apply w-12 h-12 rounded-full;
+  @apply bg-gradient-to-br from-cyan-400 to-purple-500;
+  @apply flex items-center justify-center;
+  @apply text-white font-bold text-lg;
+  @apply shadow-lg;
+  box-shadow: 0 0 30px #06b6d4;
+}
+
+.pointer-wings-horizontal {
+  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  @apply h-20 w-1 bg-gradient-to-b from-transparent via-cyan-400 to-transparent;
+}
+
+.warning-state-horizontal {
+  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  @apply bg-red-500/90 px-2 py-1 rounded;
+  @apply text-xs font-bold animate-pulse;
+  @apply whitespace-nowrap;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .animate-spin-slow {

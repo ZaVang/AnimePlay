@@ -134,8 +134,16 @@ export const TurnManager = {
     
     historyStore.addLog(`--- 第 ${gameStore.turn} 回合：${gameStore.activePlayer === 'playerA' ? '我方' : '对方'}回合 ---`, 'event');
 
-    // 1. Restore TP
-    playerStore.restoreTpForNewTurn(gameStore.activePlayer, gameStore.turn);
+    // 1. Sync both players' max TP based on current turn and restore TP to max for active player
+    // Max TP starts at 2 and increases by 1 every turn for both players, so both always equal.
+    const syncedMaxTp = 2 + (gameStore.turn - 1);
+    playerStore.syncBothPlayersMaxTp(syncedMaxTp);
+    playerStore.restoreTpToMax(gameStore.activePlayer);
+    // For non-active player, TP = max(TP+ syncedMaxTP//2, syncedMaxTP)
+    const nonActivePlayer = gameStore.activePlayer === 'playerA' ? 'playerB' : 'playerA';
+    const currentTp = playerStore[nonActivePlayer].tp;
+    const newTp = Math.min(currentTp + Math.ceil(syncedMaxTp / 2), syncedMaxTp);
+    playerStore.changeTp(nonActivePlayer, newTp - currentTp);
 
     // 2. Draw a card
     playerStore.drawCards(gameStore.activePlayer, 1);

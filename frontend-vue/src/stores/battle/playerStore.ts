@@ -76,6 +76,26 @@ export const usePlayerStore = defineStore('players', {
       }
     },
 
+    // Set max TP for a specific player and clamp current TP if necessary
+    setMaxTp(playerId: 'playerA' | 'playerB', value: number) {
+      const player = this[playerId];
+      player.maxTp = value;
+      if (player.tp > value) {
+        player.tp = value;
+      }
+    },
+
+    // Sync both players' max TP to the same value
+    syncBothPlayersMaxTp(newMax: number) {
+      this.setMaxTp('playerA', newMax);
+      this.setMaxTp('playerB', newMax);
+    },
+
+    // Restore TP to max for a specific player
+    restoreTpToMax(playerId: 'playerA' | 'playerB') {
+      this[playerId].tp = this[playerId].maxTp;
+    },
+
     // Restore TP at the start of a new turn
     restoreTpForNewTurn(playerId: 'playerA' | 'playerB', turn: number) {
       const player = this[playerId];

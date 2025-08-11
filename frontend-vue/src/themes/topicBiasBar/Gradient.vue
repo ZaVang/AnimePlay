@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
+import { usePlayerStore } from '@/stores/battle';
 
 // 接收props
 interface Props {
@@ -7,11 +8,23 @@ interface Props {
 }
 
 const props = defineProps<Props>();
+const playerStore = usePlayerStore();
+
+// -10 (反方/B) to +10 (正方/A)
+const isPlayerA = playerStore.playerId === 'playerA';
+
+const playerLabel = computed(() => (isPlayerA ? '我方' : '对手'));
+const opponentLabel = computed(() => (isPlayerA ? '对手' : '我方'));
+
+const playerColor = computed(() => (isPlayerA ? 'text-green-400' : 'text-red-400'));
+const opponentColor = computed(() => (isPlayerA ? 'text-red-400' : 'text-green-400'));
 
 // 计算偏向百分比（用于定位指示器）
 const biasPercentage = computed(() => {
-  // 将 -10 到 +10 映射到 0% 到 100%
-  return (props.topicBias + 10) * 5;
+  // 将 -10 到 +10 (B -> A) 映射到 0% 到 100%
+  // 如果是A，+10是100%。如果是B，-10是100%
+  const bias = isPlayerA ? props.topicBias : -props.topicBias;
+  return (bias + 10) * 5;
 });
 
 // 计算数值显示的样式类
@@ -60,9 +73,18 @@ const indicatorColor = computed(() => {
   return '#ef4444';                   // 劣势红
 });
 
+const playerIndicatorColor = computed(() => {
+  const bias = isPlayerA ? props.topicBias : -props.topicBias;
+  if (bias >= 7) return '#10b981';
+  if (bias > 0) return '#60a5fa';
+  if (bias === 0) return '#fbbf24';
+  if (bias < 0 && bias > -7) return '#fb923c';
+  return '#ef4444';
+});
+
 // 发射事件（如果需要与父组件交互）
 const emit = defineEmits<{
-  click: [value: number];
+  (e: 'click', value: number): void;
 }>();
 
 function handleClick() {
@@ -71,71 +93,67 @@ function handleClick() {
 </script>
 
 <template>
-  <div class="topic-bias-container">
-    <!-- 顶部标签 -->
-    <div class="bias-header">
-      <span class="text-green-400">正方</span>
-      <span class="text-xs text-gray-400">议题偏向</span>
+  <div class="topic-bias-container-horizontal">
+    <!-- 左侧标签 -->
+    <div class="bias-label left">
+      <span :class="opponentColor">{{ opponentLabel }}</span>
     </div>
     
     <!-- 主偏向条 -->
-    <div class="bias-track">
+    <div class="bias-track-horizontal">
       <!-- 背景渐变 -->
-      <div class="bias-gradient"></div>
+      <div class="bias-gradient-horizontal"></div>
       
       <!-- 刻度线 -->
-      <div class="scale-marks">
-        <div v-for="i in 5" :key="i" class="mark" :class="{ 'mark-major': i === 3 }"></div>
+      <div class="scale-marks-horizontal">
+        <div v-for="i in 5" :key="i" class="mark-horizontal" :class="{ 'mark-major-horizontal': i === 3 }"></div>
       </div>
       
       <!-- 危险区域标记 -->
-      <div class="danger-zone top"></div>
-      <div class="danger-zone bottom"></div>
+      <div class="danger-zone-horizontal left"></div>
+      <div class="danger-zone-horizontal right"></div>
       
       <!-- 指示器 -->
       <div 
-        class="bias-indicator"
+        class="bias-indicator-horizontal"
         :style="{ 
-          bottom: `calc(${biasPercentage}% - 12px)`,
-          backgroundColor: indicatorColor,
-          boxShadow: `0 0 20px ${indicatorColor}`
+          left: `calc(${biasPercentage}% - 12px)`,
+          backgroundColor: playerIndicatorColor,
+          boxShadow: `0 0 20px ${playerIndicatorColor}`
         }"
       >
         <span class="indicator-value">{{ props.topicBias > 0 ? '+' : '' }}{{ props.topicBias }}</span>
       </div>
     </div>
     
-    <!-- 底部标签 -->
-    <div class="bias-footer">
-      <span class="text-red-400">反方</span>
-      <span class="status-text" :style="{ color: indicatorColor }">
-        {{ statusText }}
-      </span>
+    <!-- 右侧标签 -->
+    <div class="bias-label right">
+      <span :class="playerColor">{{ playerLabel }}</span>
     </div>
   </div>
 </template>
 
 <style scoped>
-.topic-bias-container {
-  @apply w-24 h-full flex flex-col items-center justify-between;
+.topic-bias-container-horizontal {
+  @apply w-full h-24 flex items-center justify-between;
   @apply bg-gray-900/80 backdrop-blur-sm rounded-xl border border-gray-700;
-  @apply p-3 relative shadow-2xl;
+  @apply p-4 relative shadow-2xl;
 }
 
-.bias-header, .bias-footer {
-  @apply flex flex-col items-center gap-1;
+.bias-label {
+  @apply flex flex-col items-center gap-1 font-bold;
+  flex-basis: 60px;
 }
 
-.bias-track {
-  @apply relative flex-1 w-12 my-3;
+.bias-track-horizontal {
+  @apply relative flex-1 h-12 mx-3;
   @apply bg-gray-800 rounded-full;
   @apply border border-gray-600;
-  min-height: 200px;
 }
 
-.bias-gradient {
+.bias-gradient-horizontal {
   @apply absolute inset-0 rounded-full overflow-hidden;
-  background: linear-gradient(to top,
+  background: linear-gradient(to right,
     #ef4444 0%,
     #fb923c 25%,
     #fbbf24 50%,
@@ -145,35 +163,35 @@ function handleClick() {
   opacity: 0.2;
 }
 
-.scale-marks {
-  @apply absolute inset-0 flex flex-col justify-between py-4;
+.scale-marks-horizontal {
+  @apply absolute inset-0 flex justify-between px-4;
 }
 
-.mark {
-  @apply w-full h-px bg-gray-600;
+.mark-horizontal {
+  @apply h-full w-px bg-gray-600;
 }
 
-.mark-major {
-  @apply bg-yellow-500 h-0.5;
+.mark-major-horizontal {
+  @apply bg-yellow-500 w-0.5;
 }
 
-.danger-zone {
-  @apply absolute w-full h-8 left-0;
-  @apply bg-gradient-to-b from-transparent;
+.danger-zone-horizontal {
+  @apply absolute h-full w-8 top-0;
+  @apply bg-gradient-to-r from-transparent;
 }
 
-.danger-zone.top {
-  @apply top-0 rounded-t-full;
-  @apply to-green-500/30;
-}
-
-.danger-zone.bottom {
-  @apply bottom-0 rounded-b-full rotate-180;
+.danger-zone-horizontal.left {
+  @apply left-0 rounded-l-full;
   @apply to-red-500/30;
 }
 
-.bias-indicator {
-  @apply absolute left-1/2 transform -translate-x-1/2;
+.danger-zone-horizontal.right {
+  @apply right-0 rounded-r-full rotate-180;
+  @apply to-green-500/30;
+}
+
+.bias-indicator-horizontal {
+  @apply absolute top-1/2 transform -translate-y-1/2;
   @apply w-16 h-6 rounded-full;
   @apply flex items-center justify-center;
   @apply font-bold text-white text-sm;
@@ -196,12 +214,12 @@ function handleClick() {
   50% { opacity: 0.5; }
 }
 
-.bias-indicator {
-  animation: float 3s ease-in-out infinite;
+.bias-indicator-horizontal {
+  animation: float-y 3s ease-in-out infinite;
 }
 
-@keyframes float {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(-2px); }
+@keyframes float-y {
+  0%, 100% { transform: translateY(-50%) translateX(0); }
+  50% { transform: translateY(-50%) translateX(-2px); }
 }
 </style>

@@ -14,53 +14,66 @@ const player = computed(() => playerStore[props.playerId]);
 </script>
 
 <template>
-  <div class="player-field-layout" :class="{ 'opponent-layout': isOpponent }">
-    <!-- Character Lineup -->
-    <div class="character-lineup-wrapper">
-      <CharacterLineup :playerId="playerId" />
+  <div class="player-field-layout-horizontal" :class="{ 'opponent-layout': isOpponent }">
+    <!-- Left Side: Character Lineup and Player Info -->
+    <div class="character-and-status-container">
+      <div class="player-info-wrapper">
+        <h3 class="text-xl font-bold truncate">{{ player.name }}</h3>
+        <div class="info-stats">
+          <p>声望: <span class="font-bold text-green-400">{{ player.reputation }}</span></p>
+          <p>TP: <span class="font-bold text-blue-400">{{ player.tp }}/{{ player.maxTp }}</span></p>
+          <p>牌库: <span class="font-bold text-gray-300">{{ player.deck.length }}</span></p>
+          <p>弃牌堆: <span class="font-bold text-gray-300">{{ player.discardPile.length }}</span></p>
+        </div>
+      </div>
+      <div class="character-lineup-wrapper">
+        <CharacterLineup :playerId="playerId" />
+      </div>
     </div>
 
-    <!-- Hand Display -->
+    <!-- Right Side: Hand Display -->
     <div class="hand-display-wrapper">
       <HandDisplay :playerId="playerId" :isOpponent="isOpponent" />
-    </div>
-
-    <!-- Player Info -->
-    <div class="player-info-wrapper">
-      <h3 class="text-xl font-bold truncate">{{ player.name }}</h3>
-      <div class="info-stats">
-        <p>声望: <span class="font-bold text-green-400">{{ player.reputation }}</span></p>
-        <p>TP: <span class="font-bold text-blue-400">{{ player.tp }}/{{ player.maxTp }}</span></p>
-        <p>牌库: <span class="font-bold text-gray-300">{{ player.deck.length }}</span></p>
-        <p>弃牌堆: <span class="font-bold text-gray-300">{{ player.discardPile.length }}</span></p>
-      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-.player-field-layout {
-  @apply h-full w-full flex flex-col p-2 gap-2;
+.player-field-layout-horizontal {
+  @apply h-full w-full flex p-4 gap-4;
 }
+
 .opponent-layout {
-  @apply flex-col-reverse;
+  /* ... */
 }
-.character-lineup-wrapper, .hand-display-wrapper, .player-info-wrapper {
-  @apply border-2 border-gray-700/50 rounded-lg;
+
+/* --- MODIFIED --- */
+/* 1. 把这个容器变成一个带边框的视觉单元 */
+.character-and-status-container {
+  @apply flex flex-col border-2 border-gray-700/50 rounded-lg bg-black/30 p-2; /* 移动边框/背景到这里，移除 gap，添加内边距 */
+  flex: 1 1 30%; /* 左侧占据30% */
 }
-.character-lineup-wrapper {
-  @apply h-28 flex-shrink-0 p-2;
-}
+
+/* --- MODIFIED --- */
+/* 2. 右侧保持不变，它已经是我们想要的样子了 */
 .hand-display-wrapper {
-  @apply flex-grow relative;
+  @apply relative border-2 border-gray-700/50 rounded-lg;
+  flex: 1 1 70%; /* 右侧占据70% */
 }
+
+/* --- MODIFIED --- */
+/* 3. 移除内部元素的边框和背景，它们现在只是内容块 */
 .player-info-wrapper {
-  @apply h-16 flex-shrink-0 bg-black/30 flex items-center justify-between px-8;
+  @apply flex items-center justify-between px-2; /* 移除边框/背景，调整padding */
 }
-.opponent-layout .player-info-wrapper {
-  @apply rounded-t-xl rounded-b-lg;
+
+/* --- MODIFIED --- */
+/* 4. 移除角色阵容的边框，但保留 flex-grow 来填充剩余空间 */
+.character-lineup-wrapper {
+  @apply flex-grow mt-2; /* 移除边框和padding，用 margin-top 创造一点间距 */
 }
+
 .info-stats {
-  @apply flex gap-6 text-lg;
+  @apply flex gap-4 text-base;
 }
 </style>

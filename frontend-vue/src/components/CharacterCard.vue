@@ -53,7 +53,7 @@ function toggleFavorite(event: MouseEvent) {
     <div class="relative">
       <img
         :src="character.image_path"
-        class="w-full aspect-[2/3] object-contain"
+        class="w-full aspect-[2/3] object-cover object-top"
         @error="onImageError"
       />
       

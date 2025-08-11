@@ -39,7 +39,7 @@ const logTypeClasses = {
 
 <style scoped>
 .battle-log-wrapper {
-  @apply bg-black bg-opacity-50 p-2 rounded-lg h-full w-64 text-xs;
+  @apply absolute inset-0 bg-black bg-opacity-50 p-2 rounded-lg text-xs;
 }
 .log-container {
   @apply h-full overflow-y-auto pr-2;

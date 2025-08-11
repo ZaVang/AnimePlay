@@ -58,19 +58,30 @@ function handleSkipTurn() {
       </div>
 
       <!-- Center Area -->
-      <div class="center-area">
-        <BattleLog />
-        <TopicBiasBar />
-        <ClashZone class="flex-grow" />
-        <div class="flex flex-col space-y-2">
-          <EndTurnButton />
-          <button
-            v-if="gameStore.phase === 'defense' && gameStore.activePlayer === 'playerB'"
-            @click="handleSkipTurn"
-            class="px-4 py-2 rounded-lg bg-yellow-600 hover:bg-yellow-700 transition-colors"
-          >
-            跳过防御
-          </button>
+      <div class="center-area-reordered">
+        <!-- Left: Battle Log -->
+        <div class="log-container">
+            <BattleLog />
+        </div>
+
+        <!-- Center: Main Content (Topic Bar + Clash Zone) -->
+        <div class="center-content-wrapper">
+            <TopicBiasBar class="topic-bias-bar-horizontal-container" />
+            <div class="clash-zone-container">
+                <ClashZone />
+            </div>
+        </div>
+
+        <!-- Right: Action Buttons -->
+        <div class="action-buttons">
+            <EndTurnButton />
+            <button
+                v-if="gameStore.phase === 'defense' && gameStore.activePlayer === 'playerB'"
+                @click="handleSkipTurn"
+                class="px-4 py-2 rounded-lg bg-yellow-600 hover:bg-yellow-700 transition-colors"
+            >
+                跳过防御
+            </button>
         </div>
       </div>
 
@@ -94,10 +105,35 @@ function handleSkipTurn() {
 }
 .field-opponent, .field-player {
   @apply flex-1;
+  min-height: 250px; /* 确保玩家区域有最小高度 */
 }
-.center-area {
-  @apply h-80 flex items-center justify-center p-4 gap-4;
-  flex-grow: 0;
-  flex-shrink: 0;
+
+/* Reordered Center Area Layout */
+.center-area-reordered {
+  @apply w-full flex-grow flex items-stretch justify-between p-4 gap-4;
+}
+
+.log-container {
+    @apply h-full bg-gray-800/50 rounded-lg p-2 overflow-hidden border border-gray-700 relative; /* Add relative positioning */
+    flex: 0 1 250px; /* Do not grow, shrink if needed, initial width 250px */
+    min-height: 0; /* Important fix for flex-child scrolling */
+}
+
+.center-content-wrapper {
+    @apply flex-grow flex flex-col gap-4;
+}
+
+.topic-bias-bar-horizontal-container {
+    @apply w-full;
+}
+
+.clash-zone-container {
+    @apply h-full min-h-[18rem] bg-gray-800/50 rounded-lg p-2 overflow-hidden border border-gray-700;
+    flex: 1 1 auto; /* Grow to fill available space */
+}
+
+.action-buttons {
+    @apply flex flex-col space-y-2 justify-center items-center;
+    flex: 0 1 250px; /* Do not grow, shrink if needed, initial width 250px */
 }
 </style>

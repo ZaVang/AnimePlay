@@ -39,16 +39,19 @@ const clashInfo = computed(() => gameStore.clashInfo);
 
 <style scoped>
 .clash-zone {
-  @apply w-full h-full flex items-center justify-center bg-gray-800/50 rounded-lg border-2 border-purple-500 p-4;
+  @apply w-full h-full;
 }
+
 .placeholder {
-  @apply text-gray-400 text-2xl font-bold;
+  @apply w-full h-full flex items-center justify-center text-gray-400 text-2xl font-bold;
 }
+
 .clash-display {
-  @apply flex items-center justify-around w-full;
+  @apply w-full h-full flex items-center justify-around;
 }
+
 .card-slot {
-  @apply relative w-40;
+  @apply relative w-40 h-56;
 }
 .empty-slot {
   @apply w-40 h-56 border-2 border-dashed border-gray-600 rounded-lg flex items-center justify-center text-gray-500;
