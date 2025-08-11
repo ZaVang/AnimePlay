@@ -12,9 +12,12 @@ export const ResourceManager = {
    * @returns The new TP amount.
    */
   restoreTpForNewTurn(player: PlayerState, turn: number): { newTp: number, newMaxTp: number } {
-    const newMaxTp = turn + 1;
-    // According to the rules, TP is restored to the new max TP at the start of the turn.
-    const newTp = Math.min(player.tp + newMaxTp, newMaxTp);
+    // On turn 1, use the initial maxTp. For subsequent turns, increment it.
+    const newMaxTp = turn > 1 ? player.maxTp + 1 : player.maxTp;
+    
+    // At the start of the turn, TP is fully restored to the new max TP.
+    const newTp = newMaxTp;
+    
     return { newTp, newMaxTp };
   },
 
@@ -78,9 +81,19 @@ export const ResourceManager = {
    * @returns The updated player state.
    */
   discardCard(player: PlayerState, cardId: string): PlayerState {
-    const hand = player.hand.filter(c => c.id !== cardId);
-    const discardedCard = player.hand.find(c => c.id === cardId);
+    const numericCardId = parseInt(cardId, 10);
+    if (isNaN(numericCardId)) {
+      console.error("Invalid cardId provided for discard:", cardId);
+      return player;
+    }
+
+    const hand = player.hand.filter(c => c.id !== numericCardId);
+    const discardedCard = player.hand.find(c => c.id === numericCardId);
     const discardPile = discardedCard ? [...player.discardPile, discardedCard] : [...player.discardPile];
+
+    if (!discardedCard) {
+      console.warn(`Card with ID ${cardId} not found in hand of player ${player.id}`);
+    }
 
     return { ...player, hand, discardPile };
   },

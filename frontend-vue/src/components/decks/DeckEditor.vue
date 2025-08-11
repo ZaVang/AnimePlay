@@ -246,6 +246,7 @@ async function handleSaveDeck() {
               <div v-if="collectionTab === 'anime'" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
             <AnimeCard v-for="card in ownedAnimeCards" :key="card.id" :anime="card" :count="card.count"
                 :is-in-deck="animeIdInDeck.has(card.id)"
+                :show-cost="true"
                 @click="addToDeck(card, 'anime')"
                 @contextmenu.prevent="showCardDetails(card, 'anime')"
             />

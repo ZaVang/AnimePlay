@@ -1,20 +1,22 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useGameStore } from '@/stores/battle';
-import { BattleController } from '@/core/battle/BattleController';
-import AnimeItem from '@/components/battle/anime/AnimeItem.vue';
+import AnimeCard from '@/components/AnimeCard.vue'; // Use the standard AnimeCard
+import type { AnimeCard as AnimeCardType } from '@/types/card';
 
 const gameStore = useGameStore();
 
-const clashInfo = computed(() => (window as any).currentClash || null);
+// A more robust way to get clash info, assuming it's in the game store
+const clashInfo = computed(() => gameStore.clashInfo);
+
 </script>
 
 <template>
   <div class="clash-zone">
-    <div v-if="clashInfo && clashInfo.attackingAnime" class="clash-display">
+    <div v-if="clashInfo && clashInfo.attackingCard" class="clash-display">
       <!-- Attacker's Card -->
       <div class="card-slot attacker">
-        <AnimeItem :card="clashInfo.attackingAnime" />
+        <AnimeCard :anime="clashInfo.attackingCard" :show-cost="true" />
         <div class="style-tag">{{ clashInfo.attackStyle }}</div>
       </div>
 
@@ -22,8 +24,8 @@ const clashInfo = computed(() => (window as any).currentClash || null);
 
       <!-- Defender's Card -->
       <div class="card-slot defender">
-        <template v-if="clashInfo.defendingAnime">
-          <AnimeItem :card="clashInfo.defendingAnime" />
+        <template v-if="clashInfo.defendingCard">
+          <AnimeCard :anime="clashInfo.defendingCard" :show-cost="true" />
           <div class="style-tag">{{ clashInfo.defenseStyle }}</div>
         </template>
         <div v-else class="empty-slot">等待响应...</div>
@@ -46,7 +48,7 @@ const clashInfo = computed(() => (window as any).currentClash || null);
   @apply flex items-center justify-around w-full;
 }
 .card-slot {
-  @apply relative w-40 h-56;
+  @apply relative w-40;
 }
 .empty-slot {
   @apply w-40 h-56 border-2 border-dashed border-gray-600 rounded-lg flex items-center justify-center text-gray-500;

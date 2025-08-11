@@ -1,195 +1,156 @@
-import { useGameStore, usePlayerStore } from '@/stores/battle';
-import type { Card } from '@/types';
+import { useGameStore, useHistoryStore } from '@/stores/battle';
 import { BattleEngine } from '../calculation/BattleEngine';
 import { TurnManager } from './TurnManager';
-
-// This will be expanded to include defense info later
-export interface ClashInfo {
-  attackerId: 'playerA' | 'playerB';
-  attackingAnime: Card;
-  attackStyle: '友好安利' | '辛辣点评';
-  defenderId?: 'playerA' | 'playerB';
-  defendingAnime?: Card;
-  defenseStyle?: '赞同' | '反驳';
-}
+import type { ClashInfo } from '@/types/battle';
+import { usePlayerStore } from '@/stores/battle';
 
 export const BattleController = {
-  /**
-   * Initiates a clash (an attack).
-   * @param animeId - The ID of the anime card being used.
-   * @param style - The style of the attack.
-   */
   initiateClash(animeId: number, style: '友好安利' | '辛辣点评') {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
+    const historyStore = useHistoryStore();
     const attackerId = gameStore.activePlayer;
     const attacker = playerStore[attackerId];
 
-    // 1. Find the anime card in hand
-    const attackingAnime = attacker.hand.find(a => a.id === animeId);
-    if (!attackingAnime) {
-      console.error(`Anime with ID ${animeId} not found in ${attackerId}'s hand.`);
-      return;
-    }
+    const attackingCard = attacker.hand.find(a => a.id === animeId);
+    if (!attackingCard) return;
 
-    // 2. Check for TP cost
     const styleCost = style === '辛辣点评' ? 1 : 0;
-    const totalCost = (attackingAnime.cost || 1) + styleCost;
+    const totalCost = (attackingCard.cost || 0) + styleCost;
     
     if (attacker.tp < totalCost) {
       gameStore.addNotification('TP不足，无法出牌！', 'warning');
       return;
     }
 
-    // 3. Spend TP and discard the card
     playerStore.changeTp(attackerId, -totalCost);
     playerStore.discardCardFromHand(attackerId, animeId.toString());
 
-    // 4. Set game phase to defense and wait for opponent
-    gameStore.setPhase('defense');
-    
-    // Store clash info globally for the UI to pick up
-    const clashInfo: ClashInfo = {
+    const clash: ClashInfo = {
       attackerId,
-      attackingAnime,
+      attackingCard,
       attackStyle: style,
     };
-    (window as any).currentClash = clashInfo;
+    gameStore.setClash(clash);
+    gameStore.setPhase('defense');
 
-    console.log(`Clash initiated by ${attackerId}. Waiting for defense.`);
+    const playerName = attackerId === 'playerA' ? '你' : 'AI';
+    historyStore.addLog(`${playerName} 以 [${style}] 的方式打出了 [${attackingCard.name}]。`, 'clash');
 
-    // --- AI Auto-response ---
-    if (gameStore.activePlayer === 'playerA') {
-      setTimeout(() => {
-        this.aiRespondToClash();
-      }, 1500); // Wait 1.5 seconds to simulate AI "thinking"
+    // If the player is the attacker, trigger AI response.
+    // If AI is the attacker, the UI will wait for player's input.
+    if (attackerId === 'playerA') {
+      setTimeout(() => this.aiRespondToClash(), 1500);
     }
   },
 
-  /**
-   * AI automatically selects a card and defense style to respond to a clash.
-   * This is a simplified logic.
-   */
+  skipTurn() {
+    const gameStore = useGameStore();
+    if (gameStore.phase === 'action' && gameStore.activePlayer === 'playerA') {
+       this.endTurn();
+    } else if (gameStore.phase === 'defense' && gameStore.activePlayer === 'playerB') {
+      // This is the case where player skips defense
+      this.passDefense();
+    }
+  },
+
   aiRespondToClash() {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
+    const historyStore = useHistoryStore();
     const defenderId = gameStore.opponentId;
     const defender = playerStore[defenderId];
 
     if (gameStore.phase !== 'defense') return;
 
-    // AI Logic: Find the best card to defend with.
-    // Simple logic: find the highest strength card the AI can afford.
     const affordableCards = defender.hand
-      .filter(card => (card.cost || 1) <= defender.tp)
-      .sort((a, b) => (b.points || 1) - (a.points || 1));
+      .filter(card => (card.cost || 0) <= defender.tp)
+      .sort((a, b) => (a.cost || 0) - (b.cost || 0)); // Prefer cheaper cards
 
     if (affordableCards.length > 0) {
-      const bestCard = affordableCards[0];
-      // Simple logic: always choose '反驳' if possible
-      const defenseStyle = (bestCard.cost || 1) + 1 <= defender.tp ? '反驳' : '赞同';
-      this.respondToClash(bestCard.id, defenseStyle);
+      const cardToPlay = affordableCards[0];
+      const canAffordRebuttal = (cardToPlay.cost || 0) + 1 <= defender.tp;
+      const defenseStyle = canAffordRebuttal ? '反驳' : '赞同';
+      historyStore.addLog(`AI 使用 [${cardToPlay.name}] 进行 [${defenseStyle}]。`, 'clash');
+      this.respondToClash(cardToPlay.id, defenseStyle);
     } else {
-      // AI has no affordable cards, must pass
-      console.log("AI has no valid card to play and will pass defense.");
+      historyStore.addLog('AI 无法响应，选择跳过。', 'info');
       this.passDefense();
     }
   },
 
-  /**
-   * Allows the defending player to pass their turn without playing a card.
-   */
   passDefense() {
     const gameStore = useGameStore();
-    const playerStore = usePlayerStore();
-    const clashInfo = (window as any).currentClash as ClashInfo;
-    if (!clashInfo) {
-      console.error("No active clash to pass defense on.");
-      return;
-    }
+    if (!gameStore.clashInfo) return;
 
-    // Step 2: Resolve the clash using the pure BattleEngine
-    const clashResult = BattleEngine.resolveClash(clashInfo);
-
-    // Step 3: Apply results to the stores
-    const { rewards, attackerStrength, defenderStrength } = clashResult;
-    playerStore.changeReputation(clashInfo.attackerId, rewards.attackerReputationChange);
-    if (clashInfo.defenderId) {
-      playerStore.changeReputation(clashInfo.defenderId, rewards.defenderReputationChange);
-    }
-    gameStore.updateTopicBias(rewards.topicBiasChange);
-
-    // For UI display purposes, update the clash info with final strengths
-    (window as any).currentClash = {
-      ...clashInfo,
-      attackerStrength,
-      defenderStrength,
-    };
-
-    // Step 4: Check for victory conditions
-    TurnManager.checkVictoryConditions();
+    this.resolveClash(gameStore.clashInfo);
   },
 
-  /**
-   * Responds to an ongoing clash.
-   * @param defendingAnimeId - The ID of the anime card used for defense.
-   * @param defenseStyle - The style of the defense.
-   */
   respondToClash(defendingAnimeId: number, defenseStyle: '赞同' | '反驳') {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
+    if (!gameStore.clashInfo) return;
 
-    const clashInfo = (window as any).currentClash as ClashInfo;
-    if (!clashInfo) {
-      console.error("No active clash to respond to.");
-      return;
-    }
-
-    const defenderId = clashInfo.attackerId === 'playerA' ? 'playerB' : 'playerA';
+    const defenderId = gameStore.opponentId;
     const defender = playerStore[defenderId];
+    const defendingCard = defender.hand.find(a => a.id === defendingAnimeId);
+    if (!defendingCard) return;
 
-    const defendingAnime = defender.hand.find(a => a.id === defendingAnimeId);
-    if (!defendingAnime) {
-      console.error(`Anime with ID ${defendingAnimeId} not found in ${defenderId}'s hand.`);
-      return;
-    }
-
-    // TP Cost for defense
     const styleCost = defenseStyle === '反驳' ? 1 : 0;
-    const totalCost = (defendingAnime.cost || 1) + styleCost;
+    const totalCost = (defendingCard.cost || 0) + styleCost;
     if (defender.tp < totalCost) {
-      gameStore.addNotification('TP不足，无法响应！', 'warning');
+      gameStore.addNotification('TP不足！', 'warning');
       return;
     }
     
     playerStore.changeTp(defenderId, -totalCost);
     playerStore.discardCardFromHand(defenderId, defendingAnimeId.toString());
 
-    // Update clash info
-    clashInfo.defenderId = defenderId;
-    clashInfo.defendingAnime = defendingAnime;
-    clashInfo.defenseStyle = defenseStyle;
-
-    // Resolve the clash
-    const clashResult = BattleEngine.resolveClash(clashInfo);
-
-    // Apply results
-    const { rewards, attackerStrength, defenderStrength } = clashResult;
-    playerStore.changeReputation(clashInfo.attackerId, rewards.attackerReputationChange);
-    playerStore.changeReputation(clashInfo.defenderId, rewards.defenderReputationChange);
-    gameStore.updateTopicBias(rewards.topicBiasChange);
-    
-    // For UI display purposes, update the clash info with final strengths
-    (window as any).currentClash = {
-      ...clashInfo,
-      attackerStrength,
-      defenderStrength,
+    const finalClashInfo: ClashInfo = {
+      ...gameStore.clashInfo,
+      defenderId,
+      defendingCard,
+      defenseStyle,
     };
 
-    // Clear the clash after a delay
+    this.resolveClash(finalClashInfo);
+  },
+
+  resolveClash(clashInfo: ClashInfo) {
+    const gameStore = useGameStore();
+    const playerStore = usePlayerStore();
+    const historyStore = useHistoryStore();
+
+    const clashResult = BattleEngine.resolveClash(clashInfo);
+    const { rewards } = clashResult;
+
+    playerStore.changeReputation(clashInfo.attackerId, rewards.attackerReputationChange);
+    if (clashInfo.defenderId) {
+      playerStore.changeReputation(clashInfo.defenderId, rewards.defenderReputationChange);
+    }
+    gameStore.updateTopicBias(rewards.topicBiasChange);
+
+    historyStore.addLog(`声望变化: 你 ${rewards.attackerReputationChange}, AI ${rewards.defenderReputationChange}。`, 'damage');
+    historyStore.addLog(`议题偏向变化: ${rewards.topicBiasChange > 0 ? '+' : ''}${rewards.topicBiasChange}。`, 'info');
+
+    gameStore.setClash({ ...clashInfo, ...clashResult });
+
     setTimeout(() => {
-      (window as any).currentClash = null;
+      gameStore.clearClash();
+      gameStore.setPhase('action');
       TurnManager.checkVictoryConditions();
-    }, 2000); // Show clash result for 2 seconds
-  }
+
+      // If the AI was the attacker, its turn is now over.
+      if (clashInfo.attackerId === 'playerB' && !gameStore.isGameOver) {
+        this.endTurn();
+      }
+    }, 3000);
+  },
+
+  endTurn() {
+    const gameStore = useGameStore();
+    if (!gameStore.isGameOver) {
+      TurnManager.endTurn();
+    }
+  },
 };

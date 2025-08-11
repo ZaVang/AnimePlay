@@ -1,22 +1,17 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import type { Rarity } from '@/stores/gameDataStore';
+import type { Rarity } from '@/types/card';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { useUserStore } from '@/stores/userStore';
+import type { AnimeCard } from '@/types/card';
 
-// 定义组件接收的 props
 const props = defineProps<{
-  anime: {
-    id: number;
-    name: string;
-    rarity: Rarity;
-    image_path: string;
-    // ... 其他未来可能用到的属性
-  };
-  count?: number; // 卡片数量，可选
-  isNew?: boolean; // 是否是新卡片，可选
-  isDuplicate?: boolean; // 是否是重复卡片，可选
-  isInDeck?: boolean; // 是否已在卡组中，可选
+  anime: AnimeCard;
+  count?: number;
+  isNew?: boolean;
+  isDuplicate?: boolean;
+  isInDeck?: boolean;
+  showCost?: boolean; // New prop to control cost visibility
 }>();
 
 const userStore = useUserStore();
@@ -33,7 +28,7 @@ function onImageError(event: Event) {
 }
 
 function toggleFavorite(event: MouseEvent) {
-  event.stopPropagation(); // 阻止事件冒泡到父元素
+  event.stopPropagation();
   userStore.toggleFavorite(props.anime.id, 'anime');
 }
 </script>
@@ -48,6 +43,11 @@ function toggleFavorite(event: MouseEvent) {
     :data-item-id="anime.id"
     data-item-type="动画"
   >
+    <!-- Cost Gem: Now with conditional rendering -->
+    <div v-if="anime.cost > 0 && showCost" class="cost-gem">
+      {{ anime.cost }}
+    </div>
+
     <div class="relative">
       <img
         :src="anime.image_path"
@@ -99,3 +99,29 @@ function toggleFavorite(event: MouseEvent) {
     </div>
   </div>
 </template>
+
+<style scoped>
+.card {
+  position: relative;
+}
+
+.cost-gem {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 40px;
+  height: 40px;
+  background-color: #0d6efd;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 3px solid white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+}
+</style>

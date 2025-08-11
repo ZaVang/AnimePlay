@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import type { PlayerState, Anime, Character } from '@/types';
+import type { PlayerState, AnimeCard, CharacterCard, Card } from '@/types';
 import { ResourceManager } from '@/core/systems/ResourceManager';
 
 // Helper function to create a default player state
@@ -7,8 +7,8 @@ const createDefaultPlayer = (id: 'playerA' | 'playerB', name: string): PlayerSta
   id,
   name,
   reputation: 30,
-  tp: 0,
-  maxTp: 2,
+  tp: 2,      // Start with 2 TP on turn 1
+  maxTp: 2,   // Start with 2 max TP on turn 1
   hand: [],
   deck: [], // Should be populated at game start
   discardPile: [],
@@ -26,8 +26,8 @@ export const usePlayerStore = defineStore('players', {
   actions: {
     // Setup players with their decks and characters
     setupPlayers(
-      playerA_deck: Card[], playerA_chars: Card[],
-      playerB_deck: Card[], playerB_chars: Card[]
+      playerA_deck: AnimeCard[], playerA_chars: CharacterCard[],
+      playerB_deck: AnimeCard[], playerB_chars: CharacterCard[]
     ) {
       this.playerA.deck = [...playerA_deck];
       this.playerA.characters = [...playerA_chars];
@@ -80,8 +80,11 @@ export const usePlayerStore = defineStore('players', {
     restoreTpForNewTurn(playerId: 'playerA' | 'playerB', turn: number) {
       const player = this[playerId];
       const { newTp, newMaxTp } = ResourceManager.restoreTpForNewTurn(player, turn);
-      player.tp = newTp;
-      player.maxTp = newMaxTp;
+      
+      this.$patch(state => {
+        state[playerId].tp = newTp;
+        state[playerId].maxTp = newMaxTp;
+      });
     },
 
     // Set the active character for a player

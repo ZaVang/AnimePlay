@@ -27,11 +27,17 @@ export const StrengthCalculator = {
   /**
    * Calculates the final strength of an anime card in a clash.
    * This now includes passive aura effects.
+   * It safely handles cases where no card is played (e.g., a pass).
    */
-  calculateFinalStrength(anime: Card, playerId: 'playerA' | 'playerB'): number {
+  calculateFinalStrength(card: Card | undefined, playerId: 'playerA' | 'playerB'): number {
+    // If no card is provided, strength is 0
+    if (!card) {
+      return 0;
+    }
+
     const gameStore = useGameStore();
 
-    let finalStrength = anime.points || 0;
+    let finalStrength = card.points || 0;
 
     // 1. Add base topic bias
     const bias = gameStore.topicBias;
@@ -45,7 +51,7 @@ export const StrengthCalculator = {
     const auras = getActiveAuras();
     for (const aura of auras) {
       // Example: Konata's aura
-      if (aura.id === 'KONATA_LUCKY' && anime.synergy_tags?.includes('日常')) {
+      if (aura.id === 'KONATA_LUCKY' && card.synergy_tags?.includes('日常')) {
         // This is a simple implementation. We might need a more robust effect system later.
         finalStrength += 1;
       }

@@ -1,4 +1,4 @@
-import type { ClashInfo } from '@/core/battle/BattleController';
+import type { ClashInfo } from '@/types/battle';
 import { StrengthCalculator } from './StrengthCalculator';
 import { RewardCalculator, type RewardResult } from './RewardCalculator';
 
@@ -16,26 +16,22 @@ export const BattleEngine = {
    * @returns An object containing the full results of the clash.
    */
   resolveClash(clash: ClashInfo): ClashResult {
-    const { attackingAnime, defendingAnime, attackerId, defenderId } = clash;
+    const { attackingCard, defendingCard, attackerId, defenderId } = clash;
 
     // Calculate final strength for both sides
-    const attackerStrength = StrengthCalculator.calculateFinalStrength(attackingAnime, attackerId);
-    
-    let defenderStrength = 0;
-    if (defendingAnime && defenderId) {
-      defenderStrength = StrengthCalculator.calculateFinalStrength(defendingAnime, defenderId);
-    }
+    const attackerStrength = StrengthCalculator.calculateFinalStrength(attackingCard, attackerId);
+    const defenderStrength = StrengthCalculator.calculateFinalStrength(defendingCard, defenderId);
 
     const strengthDifference = attackerStrength - defenderStrength;
 
     // Create a temporary clash info with final strengths for the calculator
     const finalClashInfo: ClashInfo = {
       ...clash,
-      attackingAnime: { ...clash.attackingAnime, points: attackerStrength },
-      defendingAnime: clash.defendingAnime ? { ...clash.defendingAnime, points: defenderStrength } : undefined,
+      attackerStrength,
+      defenderStrength,
     };
     
-    console.log(`Clash resolved: Attacker (${attackerStrength}) vs Defender (${defenderStrength}). Diff: ${attackerStrength - defenderStrength}`);
+    console.log(`Clash resolved: Attacker (${attackerStrength}) vs Defender (${defenderStrength}). Diff: ${strengthDifference}`);
 
     // 2. Calculate rewards using the final strengths
     const rewards = RewardCalculator.calculateRewards(finalClashInfo);

@@ -1,43 +1,78 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useGameStore } from '@/stores/battle';
+import { useSettingsStore } from '@/stores/settings';
+
+// 导入不同风格的子组件
+import BiasBarGradient from '@/themes/topicBiasBar/Gradient.vue';
+import BiasBarCyber from '@/themes/topicBiasBar/Cyber.vue';
+import BiasBarElegant from '@/themes/topicBiasBar/Elegant.vue';
 
 const gameStore = useGameStore();
+const settingsStore = useSettingsStore();
 
-// Calculate the percentage for the slider position.
-// 0 bias -> 50%, 10 bias -> 100%, -10 bias -> 0%
-const biasPercentage = computed(() => {
-  // Convert bias from -10 to 10 scale to 0 to 100 scale
-  return (gameStore.topicBias + 10) * 5;
-});
+// 获取当前选择的主题
+const currentTheme = computed(() => settingsStore.biasBarTheme || 'cyber');
+
+// 主题组件映射
+const themeComponents = {
+  gradient: BiasBarGradient,
+  cyber: BiasBarCyber,
+  elegant: BiasBarElegant
+};
+
+const CurrentBiasBar = computed(() => themeComponents[currentTheme.value]);
 </script>
 
 <template>
-  <div class="topic-bias-container">
-    <div class="bias-label top">有利</div>
-    <div class="bias-bar-vertical">
-      <div class="bias-indicator" :style="{ bottom: `calc(${biasPercentage}% - 8px)` }"></div>
-    </div>
-    <div class="bias-label bottom">不利</div>
-    <div class="bias-value">{{ gameStore.topicBias }}</div>
+  <div class="bias-bar-container">
+    <!-- 动态组件切换 -->
+    <Transition name="theme-switch" mode="out-in">
+      <component 
+        :is="CurrentBiasBar" 
+        :key="currentTheme"
+        :topic-bias="gameStore.topicBias"
+      />
+    </Transition>
+    
+    <!-- 快速切换按钮（可选，用于演示） -->
+    <button 
+      v-if="settingsStore.showThemeSwitcher"
+      @click="settingsStore.cycleBarTheme()"
+      class="theme-switch-btn"
+      :title="`当前主题: ${currentTheme}`"
+    >
+      🎨
+    </button>
   </div>
 </template>
 
 <style scoped>
-.topic-bias-container {
-  @apply w-20 h-full flex flex-col items-center justify-center bg-gray-800/50 rounded-lg border-2 border-purple-500 p-2 relative;
+.bias-bar-container {
+  @apply relative h-full;
 }
-.bias-bar-vertical {
-  @apply w-4 h-full bg-gray-900 rounded-full relative overflow-hidden my-2;
+
+.theme-switch-btn {
+  @apply absolute top-2 right-2 w-8 h-8 rounded-full;
+  @apply bg-gray-700/50 hover:bg-gray-600/50;
+  @apply flex items-center justify-center text-sm;
+  @apply transition-all duration-200;
+  @apply z-20;
 }
-.bias-indicator {
-  @apply w-full h-4 bg-purple-500 rounded-full absolute;
-  box-shadow: 0 0 8px #a855f7;
+
+/* 主题切换动画 */
+.theme-switch-enter-active,
+.theme-switch-leave-active {
+  transition: all 0.3s ease;
 }
-.bias-label {
-  @apply text-sm font-bold text-purple-300;
+
+.theme-switch-enter-from {
+  opacity: 0;
+  transform: scale(0.9);
 }
-.bias-value {
-  @apply absolute bottom-2 text-lg font-bold;
+
+.theme-switch-leave-to {
+  opacity: 0;
+  transform: scale(1.1);
 }
 </style>

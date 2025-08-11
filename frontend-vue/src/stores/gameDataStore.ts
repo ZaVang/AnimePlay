@@ -1,17 +1,19 @@
 import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
-import type { Card } from '@/types/card';
+import type { Card, AnimeCard, CharacterCard } from '@/types/card';
+import type { Skill } from '@/types/skill';
+import { skillLibrary } from '@/skills'; // Corrected import path
 
 export const useGameDataStore = defineStore('gameData', () => {
   // --- STATE ---
-  const allAnimeCards = ref<Card[]>([]);
-  const allCharacterCards = ref<Card[]>([]);
+  const allAnimeCards = ref<AnimeCard[]>([]);
+  const allCharacterCards = ref<CharacterCard[]>([]);
+  const allSkills = ref<Skill[]>(skillLibrary); // Load skills into state
   const isLoading = ref<boolean>(false);
   const error = ref<string | null>(null);
 
   // --- GETTERS ---
   const getAnimeCardById = computed(() => {
-    // 创建一个 Map 以便快速查找，这比每次都用 find() 高效得多
     const map = new Map(allAnimeCards.value.map(card => [card.id, card]));
     return (id: number) => map.get(id);
   });
@@ -21,17 +23,22 @@ export const useGameDataStore = defineStore('gameData', () => {
     return (id: number) => map.get(id);
   });
 
+  // Getter for skills
+  const getSkillById = computed(() => {
+    const map = new Map(allSkills.value.map(skill => [skill.id, skill]));
+    return (id: string) => map.get(id);
+  });
+
   // --- ACTIONS ---
   async function fetchGameData() {
-    if (isLoading.value) return; // 防止重复加载
+    if (isLoading.value) return;
     isLoading.value = true;
     error.value = null;
 
     try {
-      // 使用 Promise.all 并行获取数据，速度更快
       const [animeResponse, characterResponse] = await Promise.all([
         fetch('/api/all_animes?limit=1000'),
-        fetch('/api/all_characters?limit=1000') // 使用已有的角色 API
+        fetch('/api/all_characters?limit=1000')
       ]);
 
       if (!animeResponse.ok) throw new Error('Failed to fetch anime cards');
@@ -40,24 +47,22 @@ export const useGameDataStore = defineStore('gameData', () => {
       const animeData = await animeResponse.json();
       const characterData = await characterResponse.json();
 
-      const processCardImagePath = (card: Card, type: 'anime' | 'character'): Card => {
-        // 根据卡片ID和类型构建图片路径
+      const processCardImagePath = (card: any, type: 'anime' | 'character') => {
         const imagePath = `/data/images/${type}/${card.id}.jpg`;
         return {
             ...card,
             image_path: imagePath,
-            rarity: (card as any).rarity || 'N' // 默认稀有度
+            rarity: card.rarity || 'N'
         };
       };
 
-      allAnimeCards.value = animeData.map((card: Card) => processCardImagePath(card, 'anime'));
+      allAnimeCards.value = animeData.map((card: any) => processCardImagePath(card, 'anime'));
 
       if (characterData.characters) {
-          allCharacterCards.value = characterData.characters.map((card: Card) => processCardImagePath(card, 'character'));
+          allCharacterCards.value = characterData.characters.map((card: any) => processCardImagePath(card, 'character'));
       } else {
           allCharacterCards.value = [];
       }
-
 
       console.log(`Loaded ${allAnimeCards.value.length} anime cards.`);
       console.log(`Loaded ${allCharacterCards.value.length} character cards.`);
@@ -74,11 +79,13 @@ export const useGameDataStore = defineStore('gameData', () => {
     // State
     allAnimeCards,
     allCharacterCards,
+    allSkills,
     isLoading,
     error,
     // Getters
     getAnimeCardById,
     getCharacterCardById,
+    getSkillById, // Expose the new getter
     // Actions
     fetchGameData,
   };

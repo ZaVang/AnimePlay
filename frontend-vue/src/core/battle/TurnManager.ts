@@ -1,28 +1,32 @@
 import { useGameStore } from '@/stores/battle';
 import { usePlayerStore } from '@/stores/battle';
+import { useHistoryStore } from '@/stores/battle';
 import { useGameDataStore } from '@/stores/gameDataStore';
-import type { Card, Skill } from '@/types';
+import type { AnimeCard, CharacterCard, Card, Skill } from '@/types';
 import type { Deck } from '@/stores/userStore';
-import { getSkillById } from '@/skills/SkillLibrary';
 
 // Maps character IDs to an array of skill IDs
 const CharacterSkillMap: Record<number, string[]> = {
-  1007: ['KYON_TSUKKOMI'], // 阿虚
-  49: ['HARUHI_SOS'],    // 凉宫春日
-  265: ['KONATA_LUCKY'],  // 泉此方
+  1007: ['KYON_TSUKKOMI', 'PASSIVE_PLACEHOLDER'], // 阿虚
+  49: ['ACTIVE_PLACEHOLDER', 'HARUHI_AURA'],    // 凉宫春日
+  265: ['ACTIVE_PLACEHOLDER', 'PASSIVE_PLACEHOLDER'],  // 泉此方
   // Lower rarity characters can get template skills
-  72355: ['TPL_DRAW_1'], // 随便一个R角色
+  72355: ['TPL_DRAW_1', 'AURA_GENRE_EXPERT'], // 随便一个R角色
 };
 
 // Helper function to inject skills into a character card
-function injectSkills(character: Card): Card {
+function injectSkills(character: CharacterCard): CharacterCard {
+  const gameDataStore = useGameDataStore();
   const skillIds = CharacterSkillMap[character.id] || [];
+  
   const skills: Skill[] = skillIds
-    .map(id => getSkillById(id))
-    .filter((s): s is Skill => s !== null);
+    .map(id => gameDataStore.getSkillById(id)) // Use the store's getter
+    .filter((s): s is Skill => s !== undefined);
 
   return { ...character, skills };
 }
+
+import { AIController } from '@/core/ai/AIController';
 
 /**
  * Manages the game's turn flow and phases.
@@ -37,20 +41,24 @@ export const TurnManager = {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
     const gameDataStore = useGameDataStore();
+    const historyStore = useHistoryStore();
 
     if (!gameDataStore.allAnimeCards.length || !gameDataStore.allCharacterCards.length) {
       console.error("Game data is not loaded. Cannot start the game.");
       return;
     }
 
+    historyStore.clearLog();
+    historyStore.addLog('游戏开始！正在构筑卡组...', 'event');
+
     // Player A uses the selected deck
     const playerA_deck = playerADeck.anime
       .map(id => gameDataStore.getAnimeCardById(id))
-      .filter((c): c is Card => c !== undefined);
+      .filter((c): c is AnimeCard => c !== undefined);
       
     const playerA_chars = playerADeck.character
       .map(id => gameDataStore.getCharacterCardById(id))
-      .filter((c): c is Card => c !== undefined)
+      .filter((c): c is CharacterCard => c !== undefined)
       .map(injectSkills);
 
     // Player B (AI) gets a random deck
@@ -65,6 +73,11 @@ export const TurnManager = {
 
     playerStore.shuffleDeck('playerA');
     playerStore.shuffleDeck('playerB');
+
+    // Draw initial hands for both players
+    playerStore.drawCards('playerA', 5);
+    playerStore.drawCards('playerB', 5);
+
     this.startTurn();
   },
 
@@ -75,11 +88,15 @@ export const TurnManager = {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
     const gameDataStore = useGameDataStore();
+    const historyStore = useHistoryStore();
 
     if (!gameDataStore.allAnimeCards.length || !gameDataStore.allCharacterCards.length) {
       console.error("Game data is not loaded. Cannot start the game.");
       return;
     }
+
+    historyStore.clearLog();
+    historyStore.addLog('游戏开始！正在随机化卡组...', 'event');
 
     // Get random decks and characters directly from the store
     const playerA_deck = [...gameDataStore.allAnimeCards].sort(() => 0.5 - Math.random()).slice(0, 30);
@@ -113,7 +130,10 @@ export const TurnManager = {
   startTurn() {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
+    const historyStore = useHistoryStore();
     
+    historyStore.addLog(`--- 第 ${gameStore.turn} 回合：${gameStore.activePlayer === 'playerA' ? '我方' : '对方'}回合 ---`, 'event');
+
     // 1. Restore TP
     playerStore.restoreTpForNewTurn(gameStore.activePlayer, gameStore.turn);
 
@@ -134,7 +154,10 @@ export const TurnManager = {
     // 5. Set phase to action
     gameStore.setPhase('action');
 
-    console.log(`Turn ${gameStore.turn} started for ${gameStore.activePlayer}.`);
+    // 6. If it's the AI's turn, trigger its action
+    if (gameStore.activePlayer === 'playerB') {
+      AIController.takeTurn();
+    }
   },
 
   /**

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import { useGameStore, usePlayerStore } from '@/stores/battle';
 import { TurnManager } from '@/core/battle/TurnManager';
 import type { Deck } from '@/stores/userStore';
@@ -10,12 +10,22 @@ import ClashZone from '@/components/battle/arena/ClashZone.vue';
 import TopicBiasBar from '@/components/battle/arena/TopicBiasBar.vue';
 import EndTurnButton from '@/components/battle/ui/EndTurnButton.vue';
 import NotificationDisplay from '@/components/battle/ui/NotificationDisplay.vue';
+import BattleLog from '@/components/battle/ui/BattleLog.vue';
+import { BattleController } from '@/core/battle/BattleController';
 
 type BattlePhase = 'deckSelection' | 'battle';
 
 const gameStore = useGameStore();
 const playerStore = usePlayerStore();
 const battlePhase = ref<BattlePhase>('deckSelection');
+
+// Check game state when component is mounted
+onMounted(() => {
+  // If a game is in progress (i.e., not in setup or game over phase), go directly to the battle screen.
+  if (gameStore.phase !== 'setup' && gameStore.phase !== 'game_over') {
+    battlePhase.value = 'battle';
+  }
+});
 
 function handleDeckSelected(deck: Deck) {
   TurnManager.initializeGameWithDeck(deck);
@@ -25,6 +35,10 @@ function handleDeckSelected(deck: Deck) {
 function handleRandomDeck() {
   TurnManager.initializeRandomGame();
   battlePhase.value = 'battle';
+}
+
+function handleSkipTurn() {
+  BattleController.skipTurn();
 }
 </script>
 
@@ -45,9 +59,19 @@ function handleRandomDeck() {
 
       <!-- Center Area -->
       <div class="center-area">
+        <BattleLog />
         <TopicBiasBar />
         <ClashZone class="flex-grow" />
-        <EndTurnButton />
+        <div class="flex flex-col space-y-2">
+          <EndTurnButton />
+          <button
+            v-if="gameStore.phase === 'defense' && gameStore.activePlayer === 'playerB'"
+            @click="handleSkipTurn"
+            class="px-4 py-2 rounded-lg bg-yellow-600 hover:bg-yellow-700 transition-colors"
+          >
+            跳过防御
+          </button>
+        </div>
       </div>
 
       <!-- Player's Field -->

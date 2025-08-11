@@ -1,4 +1,4 @@
-import type { ClashInfo } from '../battle/BattleController';
+import type { ClashInfo } from '@/types/battle';
 
 type StrengthCategory = 'attacker_crush' | 'attacker_advantage' | 'draw' | 'defender_advantage' | 'defender_crush' | 'perfect_parry';
 
@@ -24,16 +24,16 @@ export const RewardCalculator = {
   calculateRewards(clash: ClashInfo): RewardResult {
 
     // Handle undefended clash
-    if (!clash.defendingAnime || !clash.defenseStyle || !clash.defenderId) {
-      const baseReputationChange = Math.ceil((clash.attackingAnime.points || 1) / 2);
+    if (!clash.defendingCard || !clash.defenseStyle || !clash.defenderId) {
+      const baseReputationChange = Math.ceil((clash.attackingCard.points || 1) / 2);
       if (clash.attackStyle === '辛辣点评') {
         return { attackerReputationChange: baseReputationChange, defenderReputationChange: -baseReputationChange, topicBiasChange: 2 };
       }
       return { attackerReputationChange: baseReputationChange, defenderReputationChange: -baseReputationChange, topicBiasChange: 1 };
     }
 
-    const strengthDiff = (clash.attackingAnime.points || 1) - (clash.defendingAnime.points || 1);
-    const category = getStrengthCategory(strengthDiff);
+    const strengthDifference = (clash.attackingCard.points || 1) - (clash.defendingCard.points || 1);
+    const category = getStrengthCategory(strengthDifference);
     
     let result: RewardResult = { attackerReputationChange: 0, defenderReputationChange: 0, topicBiasChange: 0 };
     const biasDirection = clash.attackerId === 'playerA' ? 1 : -1;
@@ -61,7 +61,7 @@ export const RewardCalculator = {
     // --- Defender chose: 反驳 ---
     else if (clash.defenseStyle === '反驳') {
       // Handle Perfect Parry as a special case
-      if (strengthDiff <= -5) {
+      if (strengthDifference <= -5) {
         if (clash.attackStyle === '友好安利') {
           result = { attackerReputationChange: -3, defenderReputationChange: 4, topicBiasChange: -2 * biasDirection };
         } else { // 辛辣点评

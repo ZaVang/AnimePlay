@@ -1,34 +1,55 @@
 <script setup lang="ts">
-import type { Card } from '@/types';
-import AnimeItem from '@/components/battle/anime/AnimeItem.vue';
+import type { AnimeCard as AnimeCardType } from '@/types/card';
+import AnimeCard from '@/components/AnimeCard.vue'; // Use the standard AnimeCard
+import { useGameStore } from '@/stores/battle';
+import { computed } from 'vue';
 
 const props = defineProps<{
-  card: Card;
+  card: AnimeCardType;
   isVisible: boolean;
 }>();
 
 const emit = defineEmits<{
   (e: 'close'): void;
-  (e: 'play', style: '友好安利' | '辛辣点评'): void;
+  (e: 'play', style: '友好安利' | '辛辣点评' | '赞同' | '反驳'): void;
 }>();
+
+const gameStore = useGameStore();
+const isDefensePhase = computed(() => gameStore.phase === 'defense');
 </script>
 
 <template>
   <div v-if="isVisible" class="modal-overlay" @click.self="emit('close')">
     <div class="modal-content">
-      <h3 class="text-xl font-bold mb-4 text-center">要如何出牌？</h3>
+      <h3 class="text-xl font-bold mb-4 text-center">
+        {{ isDefensePhase ? '要如何回应？' : '要如何出牌？' }}
+      </h3>
       <div class="card-display mb-6">
-        <AnimeItem :card="card" />
+        <AnimeCard :anime="card" :show-cost="true" />
       </div>
       <div class="action-buttons">
-        <button @click="emit('play', '友好安利')" class="btn-primary">
-          <p class="font-bold">友好安利</p>
-          <p class="text-xs">花费 {{ card.cost || 1 }} TP</p>
-        </button>
-        <button @click="emit('play', '辛辣点评')" class="btn-secondary">
-          <p class="font-bold">辛辣点评</p>
-          <p class="text-xs">花费 {{ (card.cost || 1) + 1 }} TP</p>
-        </button>
+        <!-- Defense Phase Buttons -->
+        <template v-if="isDefensePhase">
+          <button @click="emit('play', '赞同')" class="btn-primary">
+            <p class="font-bold">赞同</p>
+            <p class="text-xs">花费 {{ card.cost || 0 }} TP</p>
+          </button>
+          <button @click="emit('play', '反驳')" class="btn-secondary">
+            <p class="font-bold">反驳</p>
+            <p class="text-xs">花费 {{ (card.cost || 0) + 1 }} TP</p>
+          </button>
+        </template>
+        <!-- Action Phase Buttons -->
+        <template v-else>
+          <button @click="emit('play', '友好安利')" class="btn-primary">
+            <p class="font-bold">友好安利</p>
+            <p class="text-xs">花费 {{ card.cost || 0 }} TP</p>
+          </button>
+          <button @click="emit('play', '辛辣点评')" class="btn-secondary">
+            <p class="font-bold">辛辣点评</p>
+            <p class="text-xs">花费 {{ (card.cost || 0) + 1 }} TP</p>
+          </button>
+        </template>
       </div>
       <button @click="emit('close')" class="absolute top-2 right-2 text-gray-400 hover:text-white">✕</button>
     </div>
@@ -58,7 +79,6 @@ const emit = defineEmits<{
 }
 .card-display {
   width: 200px;
-  height: 280px;
   margin: 0 auto;
 }
 .action-buttons {

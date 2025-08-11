@@ -3,7 +3,8 @@ import { computed } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
-import type { Card } from '@/stores/gameDataStore';
+import type { Card, AnimeCard, CharacterCard } from '@/types/card';
+import type { Skill } from '@/types/skill';
 
 const props = defineProps<{
   card: Card | null;
@@ -21,14 +22,35 @@ const cardRarityConfig = computed(() => {
     return config.rarityConfig[props.card.rarity] || {};
 });
 
+// FIXED: Added `const` back
 const dismantleValue = computed(() => {
     return cardRarityConfig.value.dismantleValue || 0;
 });
 
+// --- NEW: Computed properties for skills ---
+const activeSkill = computed<Skill | undefined>(() => {
+  if (props.cardType === 'character' && props.card) {
+    const charCard = props.card as CharacterCard;
+    // Assumes a getter in your store, which you may need to implement
+    return gameDataStore.getSkillById(charCard.activeSkillId);
+  }
+  return undefined;
+});
+
+const passiveSkill = computed<Skill | undefined>(() => {
+  if (props.cardType === 'character' && props.card) {
+    const charCard = props.card as CharacterCard;
+    // Assumes a getter in your store
+    return gameDataStore.getSkillById(charCard.passiveSkillId);
+  }
+  return undefined;
+});
+// --- END NEW ---
+
 const processedAnimeNames = computed(() => {
-    if (!props.card || !props.card.anime_names) return [];
+    if (props.cardType !== 'character' || !props.card || !(props.card as CharacterCard).anime_names) return [];
     
-    return props.card.anime_names.map(name => {
+    return (props.card as CharacterCard).anime_names.map(name => {
         const animeCard = gameDataStore.allAnimeCards.find(c => c.name === name);
         const isOwned = animeCard ? userStore.animeCollection.has(animeCard.id) : false;
         return { name, isOwned };
@@ -71,7 +93,7 @@ function handleDismantle() {
             <img :src="card.image_path" class="w-full rounded-md shadow-lg" :alt="card.name">
             <div class="mt-4 text-center">
                 <span 
-                    class="font-bold px-3 py-1 rounded-full text-white" 
+                    class="font-bold px-3 py-1 rounded-full text-white"
                     :class="cardRarityConfig.c?.includes('from') ? `bg-gradient-to-r ${cardRarityConfig.c}` : cardRarityConfig.c || 'bg-gray-400'"
                 >
                     {{ card.rarity }}
@@ -88,13 +110,40 @@ function handleDismantle() {
               <h3 class="font-bold text-lg mb-2">简介</h3>
               <p class="text-sm whitespace-pre-wrap">{{ card.description }}</p>
             </div>
+
+            <!-- NEW: Battle Information Section -->
+            <div class="mt-4 border-t pt-4">
+              <h3 class="font-bold text-lg mb-2">战斗信息</h3>
+              <!-- Anime Card Battle Info -->
+              <div v-if="cardType === 'anime'" class="text-sm space-y-2">
+                <div><strong>TP 消耗:</strong> <span class="font-semibold text-blue-600">{{ (card as AnimeCard).cost }}</span></div>
+                <div v-if="(card as AnimeCard).effectDescription"><strong>效果:</strong> <span class="italic">{{ (card as AnimeCard).effectDescription }}</span></div>
+              </div>
+              <!-- Character Card Battle Info -->
+              <div v-if="cardType === 'character'" class="space-y-4">
+                <div v-if="activeSkill" class="p-3 bg-red-50 rounded-lg">
+                  <h4 class="font-bold text-red-800">主动技能: {{ activeSkill.name }}</h4>
+                  <p class="text-xs text-gray-600 mt-1">[消耗: {{ activeSkill.cost || 0 }} TP] [冷却: {{ activeSkill.cooldown || 0 }} 回合]</p>
+                  <p class="text-sm mt-2">{{ activeSkill.description }}</p>
+                </div>
+                <div v-if="passiveSkill" class="p-3 bg-indigo-50 rounded-lg">
+                  <h4 class="font-bold text-indigo-800">被动光环: {{ passiveSkill.name }}</h4>
+                  <p class="text-sm mt-2">{{ passiveSkill.description }}</p>
+                </div>
+              </div>
+            </div>
+            <!-- END NEW -->
             
-            <div v-if="cardType === 'character' && card.gender" class="mt-4">
-                <h3 class="font-bold text-lg mb-2">基本信息</h3>
-                <p class="text-sm">性别: {{ card.gender }}</p>
+            <div v-if="card.synergy_tags && card.synergy_tags.length" class="mt-4 border-t pt-4">
+                <h3 class="font-bold text-lg mb-2">标签</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span v-for="tag in card.synergy_tags" :key="tag" class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
+                        {{ tag }}
+                    </span>
+                </div>
             </div>
 
-            <div v-if="card.anime_names && card.anime_names.length" class="mt-4">
+            <div v-if="cardType === 'character' && (card as CharacterCard).anime_names && (card as CharacterCard).anime_names.length" class="mt-4 border-t pt-4">
               <h3 class="font-bold text-lg mb-2">登场作品</h3>
               <div class="flex flex-wrap gap-2">
                 <span v-for="anime in processedAnimeNames" :key="anime.name"
@@ -104,23 +153,6 @@ function handleDismantle() {
                   {{ anime.name }}
                 </span>
               </div>
-            </div>
-            
-            <div v-if="card.synergy_tags && card.synergy_tags.length" class="mt-4">
-                <h3 class="font-bold text-lg mb-2">标签</h3>
-                <div class="flex flex-wrap gap-2">
-                    <span v-for="tag in card.synergy_tags" :key="tag" class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
-                        {{ tag }}
-                    </span>
-                </div>
-            </div>
-
-             <div v-if="card.stats" class="mt-4">
-                <h3 class="font-bold text-lg mb-2">Bangumi 数据</h3>
-                <div class="flex gap-4 text-sm">
-                    <span>评论: {{ card.stats.comments }}</span>
-                    <span>收藏: {{ card.stats.collects }}</span>
-                </div>
             </div>
           </div>
         </div>
