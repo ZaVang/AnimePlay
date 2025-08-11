@@ -107,6 +107,9 @@ export const usePlayerStore = defineStore('players', {
         }
       }
       player.skillCooldowns = newCooldowns;
+    },
+    setSkillCooldown(playerId: 'playerA' | 'playerB', skillId: string, duration: number) {
+      this[playerId].skillCooldowns[skillId] = duration;
     }
   },
   getters: {
@@ -118,6 +121,9 @@ export const usePlayerStore = defineStore('players', {
     getActiveCharacter: (state) => (id: 'playerA' | 'playerB'): Card | null => {
       const player = state[id];
       return player.characters[player.activeCharacterIndex] || null;
+    },
+    getSkillCooldown: (state) => (playerId: 'playerA' | 'playerB', skillId: string): number => {
+      return state[playerId].skillCooldowns[skillId] || 0;
     }
   }
 });

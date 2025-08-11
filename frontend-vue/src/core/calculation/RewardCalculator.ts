@@ -22,11 +22,17 @@ function getStrengthCategory(diff: number): StrengthCategory {
 
 export const RewardCalculator = {
   calculateRewards(clash: ClashInfo): RewardResult {
+
+    // Handle undefended clash
     if (!clash.defendingAnime || !clash.defenseStyle || !clash.defenderId) {
-      throw new Error("Cannot calculate rewards for an incomplete clash.");
+      const baseReputationChange = Math.ceil((clash.attackingAnime.points || 1) / 2);
+      if (clash.attackStyle === '辛辣点评') {
+        return { attackerReputationChange: baseReputationChange, defenderReputationChange: -baseReputationChange, topicBiasChange: 2 };
+      }
+      return { attackerReputationChange: baseReputationChange, defenderReputationChange: -baseReputationChange, topicBiasChange: 1 };
     }
 
-    const strengthDiff = (clash.attackingAnime.points || 1) - (clash.defendingAnime.points || 1); // Using base strength for now
+    const strengthDiff = (clash.attackingAnime.points || 1) - (clash.defendingAnime.points || 1);
     const category = getStrengthCategory(strengthDiff);
     
     let result: RewardResult = { attackerReputationChange: 0, defenderReputationChange: 0, topicBiasChange: 0 };

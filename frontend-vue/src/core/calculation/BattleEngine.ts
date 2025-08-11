@@ -1,34 +1,38 @@
-import { usePlayerStore } from '@/stores/battle';
-import type { ClashInfo } from '../battle/BattleController';
+import type { ClashInfo } from '@/core/battle/BattleController';
 import { StrengthCalculator } from './StrengthCalculator';
-import { RewardCalculator } from './RewardCalculator';
+import { RewardCalculator, type RewardResult } from './RewardCalculator';
+
+export interface ClashResult {
+  rewards: RewardResult;
+  attackerStrength: number;
+  defenderStrength: number;
+}
 
 export const BattleEngine = {
   /**
    * Resolves a clash after both players have acted.
    * This is now a pure function that returns the result without side effects.
    * @param clashInfo - The complete information about the clash.
-   * @returns The changes to be applied to the stores.
+   * @returns An object containing the full results of the clash.
    */
-  resolveClash(clashInfo: ClashInfo): { reputationChange: { attacker: number, defender: number }, topicBiasChange: number } {
-    const playerStore = usePlayerStore();
+  resolveClash(clash: ClashInfo): ClashResult {
+    const { attackingAnime, defendingAnime, attackerId, defenderId } = clash;
 
-    if (!clashInfo.defenderId || !clashInfo.defendingAnime || !clashInfo.defenseStyle) {
-      throw new Error("Cannot resolve incomplete clash.");
+    // Calculate final strength for both sides
+    const attackerStrength = StrengthCalculator.calculateFinalStrength(attackingAnime, attackerId);
+    
+    let defenderStrength = 0;
+    if (defendingAnime && defenderId) {
+      defenderStrength = StrengthCalculator.calculateFinalStrength(defendingAnime, defenderId);
     }
 
-    const attacker = playerStore[clashInfo.attackerId];
-    const defender = playerStore[clashInfo.defenderId];
+    const strengthDifference = attackerStrength - defenderStrength;
 
-    // 1. Calculate final strength for both players
-    const attackerStrength = StrengthCalculator.calculateFinalStrength(attacker, clashInfo.attackingAnime);
-    const defenderStrength = StrengthCalculator.calculateFinalStrength(defender, clashInfo.defendingAnime);
-    
     // Create a temporary clash info with final strengths for the calculator
     const finalClashInfo: ClashInfo = {
-      ...clashInfo,
-      attackingAnime: { ...clashInfo.attackingAnime, points: attackerStrength },
-      defendingAnime: { ...clashInfo.defendingAnime, points: defenderStrength },
+      ...clash,
+      attackingAnime: { ...clash.attackingAnime, points: attackerStrength },
+      defendingAnime: clash.defendingAnime ? { ...clash.defendingAnime, points: defenderStrength } : undefined,
     };
     
     console.log(`Clash resolved: Attacker (${attackerStrength}) vs Defender (${defenderStrength}). Diff: ${attackerStrength - defenderStrength}`);
@@ -37,11 +41,9 @@ export const BattleEngine = {
     const rewards = RewardCalculator.calculateRewards(finalClashInfo);
 
     return {
-      reputationChange: {
-        attacker: rewards.attackerReputationChange,
-        defender: rewards.defenderReputationChange,
-      },
-      topicBiasChange: rewards.topicBiasChange,
+      rewards,
+      attackerStrength,
+      defenderStrength,
     };
   },
 };

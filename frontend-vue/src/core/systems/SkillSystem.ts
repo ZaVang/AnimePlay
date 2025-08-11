@@ -1,62 +1,74 @@
-import { usePlayerStore } from '@/stores/battle';
-import type { PlayerState, Skill } from '@/types';
+import { useGameStore, usePlayerStore } from '@/stores/battle';
+import type { Card, Skill } from '@/types';
 
 export const SkillSystem = {
   /**
-   * Checks if a skill can be used by a player.
-   * @param player - The player state.
-   * @param skill - The skill to check.
-   * @returns True if the skill can be used, false otherwise.
+   * Checks if a skill can be used by the player.
    */
-  canUseSkill(player: PlayerState, skill: Skill): boolean {
-    // 1. Check if it's an active skill
-    if (skill.type !== '主动技能') {
-      console.log(`Skill [${skill.name}] is not an active skill.`);
-      return false;
-    }
+  canUseSkill(playerId: 'playerA' | 'playerB', skill: Skill): boolean {
+    const playerStore = usePlayerStore();
+    const player = playerStore[playerId];
 
-    // 2. Check for TP cost
     if (skill.cost && player.tp < skill.cost) {
-      console.log(`Not enough TP for skill [${skill.name}].`);
-      return false;
+      return false; // Not enough TP
     }
 
-    // 3. Check for cooldown
     if (player.skillCooldowns[skill.id] > 0) {
-      console.log(`Skill [${skill.name}] is on cooldown.`);
-      return false;
+      return false; // Skill on cooldown
     }
+
+    // TODO: Add other conditions like game phase, character status, etc.
 
     return true;
   },
 
   /**
-   * Use a skill for a player.
-   * This function assumes validation (canUseSkill) has already been passed.
-   * @param playerId - The ID of the player using the skill.
-   * @param skill - The skill being used.
+   * Executes a skill's effect.
    */
   useSkill(playerId: 'playerA' | 'playerB', skill: Skill) {
+    const gameStore = useGameStore();
     const playerStore = usePlayerStore();
-    const player = playerStore[playerId];
 
-    console.log(`${playerId} used skill: ${skill.name}`);
+    if (!this.canUseSkill(playerId, skill)) {
+      gameStore.addNotification('无法使用该技能！', 'warning');
+      return;
+    }
 
-    // 1. Spend TP
+    // Pay TP cost
     if (skill.cost) {
       playerStore.changeTp(playerId, -skill.cost);
     }
 
-    // 2. Set cooldown
+    // Set cooldown
     if (skill.cooldown) {
-      player.skillCooldowns[skill.id] = skill.cooldown;
+      playerStore.setSkillCooldown(playerId, skill.id, skill.cooldown);
     }
+    
+    gameStore.addNotification(`使用了技能: ${skill.name}`);
 
-    // 3. Flag for rotation
-    playerStore.flagForRotation(playerId);
+    // --- Execute skill effect ---
+    // This is where the magic happens. We'll add effects case by case.
+    switch (skill.id) {
+      case 'TPL_DRAW_1':
+        playerStore.drawCards(playerId, 1);
+        break;
+      
+      case 'TPL_GAIN_TP_2':
+        playerStore.gainTp(playerId, 2);
+        break;
 
-    // 4. TODO: Execute the actual skill effect
-    // This will be handled by a separate effect system later.
-    console.log(`Executing effect for skill [${skill.name}]...`);
+      case 'KYON_TSUKKOMI':
+        const opponentId = playerId === 'playerA' ? 'playerB' : 'playerA';
+        const opponentBias = gameStore.topicBias * (opponentId === 'playerA' ? 1 : -1);
+        if (opponentBias > 0) {
+          const biasReduction = Math.floor(opponentBias / 2);
+          gameStore.updateTopicBias(biasReduction * (opponentId === 'playerA' ? -1 : 1));
+        }
+        break;
+      
+      // Other skill effects will be added here.
+      default:
+        console.warn(`Skill effect for "${skill.id}" not implemented yet.`);
+    }
   },
 };

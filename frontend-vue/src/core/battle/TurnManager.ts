@@ -1,8 +1,28 @@
 import { useGameStore } from '@/stores/battle';
 import { usePlayerStore } from '@/stores/battle';
 import { useGameDataStore } from '@/stores/gameDataStore';
-import type { Card } from '@/types';
+import type { Card, Skill } from '@/types';
 import type { Deck } from '@/stores/userStore';
+import { getSkillById } from '@/skills/SkillLibrary';
+
+// Maps character IDs to an array of skill IDs
+const CharacterSkillMap: Record<number, string[]> = {
+  1007: ['KYON_TSUKKOMI'], // 阿虚
+  49: ['HARUHI_SOS'],    // 凉宫春日
+  265: ['KONATA_LUCKY'],  // 泉此方
+  // Lower rarity characters can get template skills
+  72355: ['TPL_DRAW_1'], // 随便一个R角色
+};
+
+// Helper function to inject skills into a character card
+function injectSkills(character: Card): Card {
+  const skillIds = CharacterSkillMap[character.id] || [];
+  const skills: Skill[] = skillIds
+    .map(id => getSkillById(id))
+    .filter((s): s is Skill => s !== null);
+
+  return { ...character, skills };
+}
 
 /**
  * Manages the game's turn flow and phases.
@@ -30,11 +50,15 @@ export const TurnManager = {
       
     const playerA_chars = playerADeck.character
       .map(id => gameDataStore.getCharacterCardById(id))
-      .filter((c): c is Card => c !== undefined);
+      .filter((c): c is Card => c !== undefined)
+      .map(injectSkills);
 
     // Player B (AI) gets a random deck
     const playerB_deck = [...gameDataStore.allAnimeCards].sort(() => 0.5 - Math.random()).slice(0, 30);
-    const playerB_chars = [...gameDataStore.allCharacterCards].sort(() => 0.5 - Math.random()).slice(0, 4);
+    const playerB_chars = [...gameDataStore.allCharacterCards]
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 4)
+      .map(injectSkills);
     
     gameStore.startGame();
     playerStore.setupPlayers(playerA_deck, playerA_chars, playerB_deck, playerB_chars);
@@ -59,9 +83,15 @@ export const TurnManager = {
 
     // Get random decks and characters directly from the store
     const playerA_deck = [...gameDataStore.allAnimeCards].sort(() => 0.5 - Math.random()).slice(0, 30);
-    const playerA_chars = [...gameDataStore.allCharacterCards].sort(() => 0.5 - Math.random()).slice(0, 4);
+    const playerA_chars = [...gameDataStore.allCharacterCards]
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 4)
+      .map(injectSkills);
     const playerB_deck = [...gameDataStore.allAnimeCards].sort(() => 0.5 - Math.random()).slice(0, 30);
-    const playerB_chars = [...gameDataStore.allCharacterCards].sort(() => 0.5 - Math.random()).slice(0, 4);
+    const playerB_chars = [...gameDataStore.allCharacterCards]
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 4)
+      .map(injectSkills);
 
     gameStore.startGame();
     playerStore.setupPlayers(playerA_deck, playerA_chars, playerB_deck, playerB_chars);

@@ -37,16 +37,25 @@ export const BattleController = {
     const totalCost = (attackingAnime.cost || 1) + styleCost;
     
     if (attacker.tp < totalCost) {
-      console.error(`Not enough TP for this action.`);
+      gameStore.addNotification('TP不足，无法出牌！', 'warning');
       return;
     }
 
     // 3. Spend TP and discard the card
     playerStore.changeTp(attackerId, -totalCost);
-    playerStore.discardCardFromHand(attackerId, animeId);
+    playerStore.discardCardFromHand(attackerId, animeId.toString());
 
     // 4. Set game phase to defense and wait for opponent
     gameStore.setPhase('defense');
+    
+    // Store clash info globally for the UI to pick up
+    const clashInfo: ClashInfo = {
+      attackerId,
+      attackingAnime,
+      attackStyle: style,
+    };
+    (window as any).currentClash = clashInfo;
+
     console.log(`Clash initiated by ${attackerId}. Waiting for defense.`);
 
     // --- AI Auto-response ---
@@ -81,12 +90,44 @@ export const BattleController = {
       const defenseStyle = (bestCard.cost || 1) + 1 <= defender.tp ? '反驳' : '赞同';
       this.respondToClash(bestCard.id, defenseStyle);
     } else {
-      // AI has no affordable cards, must pass (logic to be implemented)
-      console.log("AI has no valid card to play and passes.");
-      // For now, let's assume the turn ends if AI can't respond.
-      // This part needs to be connected to a "pass" or "no defense" flow.
-      TurnManager.endTurn();
+      // AI has no affordable cards, must pass
+      console.log("AI has no valid card to play and will pass defense.");
+      this.passDefense();
     }
+  },
+
+  /**
+   * Allows the defending player to pass their turn without playing a card.
+   */
+  passDefense() {
+    const gameStore = useGameStore();
+    const playerStore = usePlayerStore();
+    const clashInfo = (window as any).currentClash as ClashInfo;
+    if (!clashInfo) {
+      console.error("No active clash to pass defense on.");
+      return;
+    }
+
+    // Step 2: Resolve the clash using the pure BattleEngine
+    const clashResult = BattleEngine.resolveClash(clashInfo);
+
+    // Step 3: Apply results to the stores
+    const { rewards, attackerStrength, defenderStrength } = clashResult;
+    playerStore.changeReputation(clashInfo.attackerId, rewards.attackerReputationChange);
+    if (clashInfo.defenderId) {
+      playerStore.changeReputation(clashInfo.defenderId, rewards.defenderReputationChange);
+    }
+    gameStore.updateTopicBias(rewards.topicBiasChange);
+
+    // For UI display purposes, update the clash info with final strengths
+    (window as any).currentClash = {
+      ...clashInfo,
+      attackerStrength,
+      defenderStrength,
+    };
+
+    // Step 4: Check for victory conditions
+    TurnManager.checkVictoryConditions();
   },
 
   /**
@@ -98,7 +139,7 @@ export const BattleController = {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
 
-    const clashInfo: ClashInfo = (window as any).currentClash;
+    const clashInfo = (window as any).currentClash as ClashInfo;
     if (!clashInfo) {
       console.error("No active clash to respond to.");
       return;
@@ -117,12 +158,12 @@ export const BattleController = {
     const styleCost = defenseStyle === '反驳' ? 1 : 0;
     const totalCost = (defendingAnime.cost || 1) + styleCost;
     if (defender.tp < totalCost) {
-      console.error(`Not enough TP for this defense.`);
+      gameStore.addNotification('TP不足，无法响应！', 'warning');
       return;
     }
     
     playerStore.changeTp(defenderId, -totalCost);
-    playerStore.discardCardFromHand(defenderId, defendingAnimeId);
+    playerStore.discardCardFromHand(defenderId, defendingAnimeId.toString());
 
     // Update clash info
     clashInfo.defenderId = defenderId;
@@ -130,21 +171,25 @@ export const BattleController = {
     clashInfo.defenseStyle = defenseStyle;
 
     // Resolve the clash
-    const results = BattleEngine.resolveClash(clashInfo);
+    const clashResult = BattleEngine.resolveClash(clashInfo);
 
     // Apply results
-    playerStore.changeReputation(clashInfo.attackerId, results.reputationChange.attacker);
-    playerStore.changeReputation(clashInfo.defenderId, results.reputationChange.defender);
-    gameStore.updateTopicBias(results.topicBiasChange);
+    const { rewards, attackerStrength, defenderStrength } = clashResult;
+    playerStore.changeReputation(clashInfo.attackerId, rewards.attackerReputationChange);
+    playerStore.changeReputation(clashInfo.defenderId, rewards.defenderReputationChange);
+    gameStore.updateTopicBias(rewards.topicBiasChange);
+    
+    // For UI display purposes, update the clash info with final strengths
+    (window as any).currentClash = {
+      ...clashInfo,
+      attackerStrength,
+      defenderStrength,
+    };
 
-    // Check for victory
-    TurnManager.checkVictoryConditions();
-
-    // Reset for next action
-    if (!gameStore.isGameOver) {
-      gameStore.setPhase('action');
-    }
-    (window as any).currentClash = null;
-    console.log(`${defenderId} has responded. The clash is resolved.`);
+    // Clear the clash after a delay
+    setTimeout(() => {
+      (window as any).currentClash = null;
+      TurnManager.checkVictoryConditions();
+    }, 2000); // Show clash result for 2 seconds
   }
 };

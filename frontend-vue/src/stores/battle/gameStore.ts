@@ -2,13 +2,25 @@ import { defineStore } from 'pinia';
 import type { GameState } from '@/types';
 
 export const useGameStore = defineStore('game', {
-  state: (): GameState => ({
+  state: (): GameState & { notifications: Notification[] } => ({
     turn: 1,
-    activePlayer: 'playerA',
-    phase: 'setup',
-    topicBias: 0,
+    activePlayer: 'playerA', // 'playerA' or 'playerB'
+    phase: 'setup', // 'setup', 'draw', 'action', 'defense', 'end_turn', 'game_over'
+    topicBias: 0, // Range from -10 to 10
+    winner: null, // 'playerA', 'playerB', 'draw', or null
+    notifications: [],
   }),
   actions: {
+    addNotification(message: string, type: 'info' | 'warning' = 'info') {
+      const id = Date.now();
+      this.notifications.push({ id, message, type });
+      setTimeout(() => {
+        this.removeNotification(id);
+      }, 3000);
+    },
+    removeNotification(id: number) {
+      this.notifications = this.notifications.filter(n => n.id !== id);
+    },
     // Example action to start the game
     startGame() {
       this.turn = 1;
@@ -34,9 +46,15 @@ export const useGameStore = defineStore('game', {
       const newBias = this.topicBias + change;
       this.topicBias = Math.max(-10, Math.min(10, newBias)); // Clamp between -10 and 10
     },
+    setWinner(winner: 'playerA' | 'playerB' | 'draw' | null) {
+      this.winner = winner;
+    }
   },
   getters: {
     isGameOver: (state) => state.phase === 'game_over',
+    opponentId: (state): 'playerA' | 'playerB' => {
+      return state.activePlayer === 'playerA' ? 'playerB' : 'playerA';
+    },
     // Getter to check if it's the setup phase
     isSetupPhase: (state) => state.phase === 'setup',
   },

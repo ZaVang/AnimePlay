@@ -1,3 +1,5 @@
+import type { Skill } from './skill';
+
 export type Rarity = 'N' | 'R' | 'SR' | 'SSR' | 'HR' | 'UR';
 
 // A generic Card interface that covers both Anime and Characters
@@ -14,6 +16,7 @@ export interface Card {
   
   // Fields for Character cards
   anime_names?: string[];
+  skills?: Skill[];
 
   [key: string]: any; // Allow other properties
 }
