@@ -5,12 +5,8 @@ from models import SearchSubjectsRequest, SearchSubjectsFilter, SubjectType
 from bangumi_api import search_subjects
 import argparse
 
-def get_top_popular_anime(
-        total_limit=500,
-        tag="日本",
-        rank_start=1,
-        rank_end=500
-    ):
+
+def get_top_popular_anime(total_limit=500, tag="日本", rank_start=1, rank_end=500):
     """
     获取指定数量的、按人气排序的日本动画
 
@@ -29,8 +25,8 @@ def get_top_popular_anime(
         filter=SearchSubjectsFilter(
             type=[2],
             meta_tags=tag.split(","),
-            rank=[f">={rank_start}", f"<={rank_end}"]
-        )
+            rank=[f">={rank_start}", f"<={rank_end}"],
+        ),
     )
     print(f"开始获取热度排名前 {total_limit}，{tag} 的动画...")
 
@@ -54,7 +50,7 @@ def get_top_popular_anime(
             if len(page_data) < current_limit:
                 print("已获取所有符合条件的动画。")
                 break
-            
+
             # 更新 offset 以获取下一页
             offset += page_limit
 
@@ -67,23 +63,39 @@ def get_top_popular_anime(
         except KeyboardInterrupt:
             print("用户中断了请求。")
             break
-            
+
     return all_results
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-t", "--tag", type=str, required=True, help="标签，多个标签用逗号分隔")
+    parser.add_argument(
+        "-t", "--tag", type=str, required=True, help="标签，多个标签用逗号分隔"
+    )
     parser.add_argument("-r", "--rank_start", type=int, required=True, help="排名开始")
     parser.add_argument("-e", "--rank_end", type=int, required=True, help="排名结束")
     parser.add_argument("-l", "--limit", type=int, required=True, help="获取数量")
     args = parser.parse_args()
 
     # 获取历史所有热度排名在500以内的TV动画
-    top_anime = get_top_popular_anime(total_limit=args.limit, tag=args.tag, rank_start=args.rank_start, rank_end=args.rank_end)
-    
+    top_anime = get_top_popular_anime(
+        total_limit=args.limit,
+        tag=args.tag,
+        rank_start=args.rank_start,
+        rank_end=args.rank_end,
+    )
+
     if top_anime:
         print(f"\n--- 共获取到 {len(top_anime)} 部热度最高的TV动画 ---")
         print("存储到json中...")
         with open("data/top_anime_japan.json", "w") as f:
-            json.dump([x.model_dump(mode="json", by_alias=True, exclude_none=True) for x in top_anime], f, ensure_ascii=False, indent=4)
+            json.dump(
+                [
+                    x.model_dump(mode="json", by_alias=True, exclude_none=True)
+                    for x in top_anime
+                ],
+                f,
+                ensure_ascii=False,
+                indent=4,
+            )
         print("存储完成")

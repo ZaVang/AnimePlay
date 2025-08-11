@@ -1,16 +1,6 @@
 import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
-
-export type Rarity = 'N' | 'R' | 'SR' | 'SSR' | 'HR' | 'UR';
-
-// 定义卡牌的数据结构 (可以根据 all_cards.json 补充更详细的字段)
-export interface Card {
-  id: number;
-  name: string;
-  rarity: Rarity;
-  image_path: string;
-  [key: string]: any; // 其他可能的属性
-}
+import type { Card } from '@/types/card';
 
 export const useGameDataStore = defineStore('gameData', () => {
   // --- STATE ---

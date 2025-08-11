@@ -68,9 +68,8 @@ export interface GameConfig {
         deck: number[];
     };
     deckBuilding: {
-        maxCost: number;
-        maxCards: number;
-        minCardsForBattle: number;
+        AnimeMaxNum: number;
+        CharacterMaxNum: number;
     };
     battle: {
         initialPrestige: number;
@@ -135,9 +134,8 @@ export const GAME_CONFIG: GameConfig = {
     },
     // 卡组构筑限制
     deckBuilding: {
-        maxCost: 150,
-        maxCards: 20, // Increased from 10
-        minCardsForBattle: 3,
+        AnimeMaxNum: 30,
+        CharacterMaxNum: 4,
     },
     // 战斗设置
     battle: {

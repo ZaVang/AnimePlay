@@ -22,6 +22,10 @@ export default defineConfig({
         target: 'http://localhost:5001', // 你的 Python 后端地址
         changeOrigin: true, // 必须设置为 true
       },
-    }
+    },
+    fs: {
+      // Allow serving files from one level up to the project root
+      allow: ['..'],
+    },
   },
 })

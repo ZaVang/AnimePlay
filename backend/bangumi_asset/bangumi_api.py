@@ -2,19 +2,19 @@ import requests
 from typing import Optional, List, Union
 from .config import get_default_headers
 from .models import (
-    Subject, 
-    PagedSubject, 
-    RelatedPerson, 
-    RelatedCharacter, 
+    Subject,
+    PagedSubject,
+    RelatedPerson,
+    RelatedCharacter,
     SubjectRelation,
-    SearchSubjectsRequest, 
-    SubjectType, 
-    ImageType, 
-    SearchCharactersRequest, 
+    SearchSubjectsRequest,
+    SubjectType,
+    ImageType,
+    SearchCharactersRequest,
     PagedCharacter,
-    Character, 
-    V0RelatedSubject, 
-    CharacterPerson
+    Character,
+    V0RelatedSubject,
+    CharacterPerson,
 )
 
 
@@ -49,7 +49,7 @@ def get_subject_by_id(subject_id: int, access_token: Optional[str] = None) -> Su
         ...     print(f"发生错误: {e}")
     """
     api_url = f"https://api.bgm.tv/v0/subjects/{subject_id}"
-    
+
     headers = get_default_headers()
 
     if access_token:
@@ -67,7 +67,7 @@ def search_subjects(
     request_body: SearchSubjectsRequest,
     limit: Optional[int] = None,
     offset: Optional[int] = None,
-    access_token: Optional[str] = None
+    access_token: Optional[str] = None,
 ) -> PagedSubject:
     """
     条目搜索。
@@ -91,7 +91,7 @@ def search_subjects(
         params["limit"] = limit
     if offset is not None:
         params["offset"] = offset
-    
+
     proxies = {"http": None, "https": None}
 
     response = requests.post(
@@ -100,7 +100,7 @@ def search_subjects(
         params=params,
         json=request_body.model_dump(mode="json", by_alias=True, exclude_none=True),
         timeout=30,
-        proxies=proxies
+        proxies=proxies,
     )
     response.raise_for_status()
     return PagedSubject.model_validate(response.json())
@@ -116,7 +116,7 @@ def get_subjects(
     month: Optional[int] = None,
     limit: Optional[int] = None,
     offset: Optional[int] = None,
-    access_token: Optional[str] = None
+    access_token: Optional[str] = None,
 ) -> PagedSubject:
     """
     浏览条目。
@@ -161,15 +161,15 @@ def get_subjects(
 
     proxies = {"http": None, "https": None}
 
-    response = requests.get(api_url, headers=headers, params=params, timeout=10, proxies=proxies)
+    response = requests.get(
+        api_url, headers=headers, params=params, timeout=10, proxies=proxies
+    )
     response.raise_for_status()
     return PagedSubject.model_validate(response.json())
 
 
 def get_subject_image(
-    subject_id: int,
-    image_type: ImageType,
-    access_token: Optional[str] = None
+    subject_id: int, image_type: ImageType, access_token: Optional[str] = None
 ) -> str:
     """
     获取条目封面。
@@ -196,7 +196,7 @@ def get_subject_image(
         params=params,
         timeout=10,
         proxies=proxies,
-        allow_redirects=False
+        allow_redirects=False,
     )
     response.raise_for_status()
     if response.status_code == 302:
@@ -204,7 +204,9 @@ def get_subject_image(
     return ""
 
 
-def get_related_persons(subject_id: int, access_token: Optional[str] = None) -> List[RelatedPerson]:
+def get_related_persons(
+    subject_id: int, access_token: Optional[str] = None
+) -> List[RelatedPerson]:
     """
     获取条目关联人物。
 
@@ -219,17 +221,19 @@ def get_related_persons(subject_id: int, access_token: Optional[str] = None) -> 
     headers = get_default_headers()
     if access_token:
         headers["Authorization"] = f"Bearer {access_token}"
-    
+
     proxies = {"http": None, "https": None}
 
     response = requests.get(api_url, headers=headers, timeout=10, proxies=proxies)
     response.raise_for_status()
-    
+
     data = response.json()
     return [RelatedPerson.model_validate(item) for item in data]
 
 
-def get_related_characters(subject_id: int, access_token: Optional[str] = None) -> List[RelatedCharacter]:
+def get_related_characters(
+    subject_id: int, access_token: Optional[str] = None
+) -> List[RelatedCharacter]:
     """
     获取条目关联角色。
 
@@ -244,17 +248,19 @@ def get_related_characters(subject_id: int, access_token: Optional[str] = None) 
     headers = get_default_headers()
     if access_token:
         headers["Authorization"] = f"Bearer {access_token}"
-    
+
     proxies = {"http": None, "https": None}
 
     response = requests.get(api_url, headers=headers, timeout=10, proxies=proxies)
     response.raise_for_status()
-    
+
     data = response.json()
     return [RelatedCharacter.model_validate(item) for item in data]
 
 
-def get_related_subjects(subject_id: int, access_token: Optional[str] = None) -> List[SubjectRelation]:
+def get_related_subjects(
+    subject_id: int, access_token: Optional[str] = None
+) -> List[SubjectRelation]:
     """
     获取条目关联条目。
 
@@ -269,12 +275,12 @@ def get_related_subjects(subject_id: int, access_token: Optional[str] = None) ->
     headers = get_default_headers()
     if access_token:
         headers["Authorization"] = f"Bearer {access_token}"
-    
+
     proxies = {"http": None, "https": None}
 
     response = requests.get(api_url, headers=headers, timeout=10, proxies=proxies)
     response.raise_for_status()
-    
+
     data = response.json()
     return [SubjectRelation.model_validate(item) for item in data]
 

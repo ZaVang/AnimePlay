@@ -3,14 +3,17 @@ from typing import Optional, List, Any, Dict, TypeVar, Generic, Union
 from pydantic import BaseModel, Field
 from enum import Enum
 
-T = TypeVar('T')
+T = TypeVar("T")
+
 
 class Page(BaseModel, Generic[T]):
     """分页数据"""
+
     total: int
     limit: int
     offset: int
     data: List[T]
+
 
 class SubjectType(Enum):
     """条目类型
@@ -20,65 +23,82 @@ class SubjectType(Enum):
     - `4` 为 游戏
     - `6` 为 三次元
     """
+
     BOOK = 1
     ANIME = 2
     MUSIC = 3
     GAME = 4
     REAL = 6
 
+
 class Images(BaseModel):
     """图片信息"""
+
     large: str
     common: str
     medium: str
     small: str
     grid: str
 
+
 class RatingCount(BaseModel):
     """评分分布"""
-    one: int = Field(..., alias='1')
-    two: int = Field(..., alias='2')
-    three: int = Field(..., alias='3')
-    four: int = Field(..., alias='4')
-    five: int = Field(..., alias='5')
-    six: int = Field(..., alias='6')
-    seven: int = Field(..., alias='7')
-    eight: int = Field(..., alias='8')
-    nine: int = Field(..., alias='9')
-    ten: int = Field(..., alias='10')
+
+    one: int = Field(..., alias="1")
+    two: int = Field(..., alias="2")
+    three: int = Field(..., alias="3")
+    four: int = Field(..., alias="4")
+    five: int = Field(..., alias="5")
+    six: int = Field(..., alias="6")
+    seven: int = Field(..., alias="7")
+    eight: int = Field(..., alias="8")
+    nine: int = Field(..., alias="9")
+    ten: int = Field(..., alias="10")
+
 
 class Rating(BaseModel):
     """评分"""
+
     rank: int
     total: int
     count: RatingCount
     score: float
 
+
 class Collection(BaseModel):
     """收藏统计"""
+
     wish: int
     collect: int
     doing: int
     on_hold: int
     dropped: int
 
+
 class Tag(BaseModel):
     """标签"""
+
     name: str
     count: int
 
+
 class WikiInfoValueItem(BaseModel):
     """Infobox 值项目"""
+
     v: str
     k: Optional[str] = None
 
+
 class WikiInfo(BaseModel):
     """Infobox 项目"""
+
     key: str
     value: Union[str, List[WikiInfoValueItem]]
 
+
 class Subject(BaseModel):
     """条目信息"""
+
     id: int
     type: SubjectType
     name: str
@@ -99,35 +119,45 @@ class Subject(BaseModel):
     meta_tags: Optional[List[str]] = None
     series: bool
 
+
 class PagedSubject(Page[Subject]):
     """分页条目数据"""
+
     pass
+
 
 class PersonImages(BaseModel):
     """人物图片"""
+
     large: str
     medium: str
     small: str
     grid: str
 
+
 class PersonType(Enum):
     """人物类型"""
+
     INDIVIDUAL = 1
     CORPORATION = 2
     ASSOCIATION = 3
 
+
 class PersonCareer(str, Enum):
     """职业"""
-    PRODUCER = 'producer'
-    MANGAKA = 'mangaka'
-    ARTIST = 'artist'
-    SEIYU = 'seiyu'
-    WRITER = 'writer'
-    ILLUSTRATOR = 'illustrator'
-    ACTOR = 'actor'
+
+    PRODUCER = "producer"
+    MANGAKA = "mangaka"
+    ARTIST = "artist"
+    SEIYU = "seiyu"
+    WRITER = "writer"
+    ILLUSTRATOR = "illustrator"
+    ACTOR = "actor"
+
 
 class RelatedPerson(BaseModel):
     """关联人物"""
+
     id: int
     name: str
     type: PersonType
@@ -139,13 +169,16 @@ class RelatedPerson(BaseModel):
 
 class CharacterType(Enum):
     """角色类型"""
+
     CHARACTER = 1
     MECHANIC = 2
     SHIP = 3
     ORGANIZATION = 4
 
+
 class Person(BaseModel):
     """人物基本信息"""
+
     id: int
     name: str
     type: PersonType
@@ -154,8 +187,10 @@ class Person(BaseModel):
     short_summary: str
     locked: bool
 
+
 class RelatedCharacter(BaseModel):
     """关联角色"""
+
     id: int
     name: str
     type: CharacterType
@@ -163,8 +198,10 @@ class RelatedCharacter(BaseModel):
     relation: str
     actors: Optional[List[Person]] = None
 
+
 class SubjectRelation(BaseModel):
     """关联条目"""
+
     id: int
     type: int
     name: str
@@ -172,10 +209,14 @@ class SubjectRelation(BaseModel):
     images: Optional[Images] = None
     relation: str
 
+
 class SearchSubjectsFilter(BaseModel):
     """条目搜索过滤器"""
+
     type: Optional[List[SubjectType]] = None
-    meta_tags: Optional[List[str]] = Field(None, description="公共标签。可以用 `-` 排除标签。")
+    meta_tags: Optional[List[str]] = Field(
+        None, description="公共标签。可以用 `-` 排除标签。"
+    )
     tag: Optional[List[str]] = None
     air_date: Optional[List[str]] = None
     rating: Optional[List[str]] = None
@@ -185,8 +226,9 @@ class SearchSubjectsFilter(BaseModel):
 
 class SearchSubjectsRequest(BaseModel):
     """条目搜索请求体"""
+
     keyword: str
-    sort: Optional[str] = 'match'
+    sort: Optional[str] = "match"
     filter: Optional[SearchSubjectsFilter] = None
 
 
@@ -220,10 +262,10 @@ class Character(BaseModel):
     locked: bool
     infobox: Optional[List[Dict[str, Any]]] = None
     gender: Optional[str] = None
-    blood_type: Optional[BloodType] = Field(None, alias='blood_type')
-    birth_year: Optional[int] = Field(None, alias='birth_year')
-    birth_mon: Optional[int] = Field(None, alias='birth_mon')
-    birth_day: Optional[int] = Field(None, alias='birth_day')
+    blood_type: Optional[BloodType] = Field(None, alias="blood_type")
+    birth_year: Optional[int] = Field(None, alias="birth_year")
+    birth_mon: Optional[int] = Field(None, alias="birth_mon")
+    birth_day: Optional[int] = Field(None, alias="birth_day")
     stat: Stat
 
 
@@ -239,12 +281,13 @@ class V0RelatedSubject(BaseModel):
     type: SubjectType
     staff: str
     name: str
-    name_cn: str = Field(..., alias='name_cn')
+    name_cn: str = Field(..., alias="name_cn")
     image: Optional[str] = None
 
 
 class ImageType(str, Enum):
     """图片类型"""
+
     SMALL = "small"
     GRID = "grid"
     LARGE = "large"
@@ -257,8 +300,8 @@ class CharacterPerson(BaseModel):
     name: str
     type: CharacterType
     images: Optional[PersonImages] = None
-    subject_id: int = Field(..., alias='subject_id')
-    subject_type: SubjectType = Field(..., alias='subject_type')
-    subject_name: str = Field(..., alias='subject_name')
-    subject_name_cn: str = Field(..., alias='subject_name_cn')
+    subject_id: int = Field(..., alias="subject_id")
+    subject_type: SubjectType = Field(..., alias="subject_type")
+    subject_name: str = Field(..., alias="subject_name")
+    subject_name_cn: str = Field(..., alias="subject_name_cn")
     staff: Optional[str] = None

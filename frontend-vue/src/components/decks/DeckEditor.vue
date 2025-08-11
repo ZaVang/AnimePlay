@@ -5,6 +5,7 @@ import { useGameDataStore, type Card, type Rarity } from '@/stores/gameDataStore
 import AnimeCard from '@/components/AnimeCard.vue';
 import CharacterCard from '@/components/CharacterCard.vue';
 import CardDetailModal from '@/components/CardDetailModal.vue';
+import { GAME_CONFIG } from '@/config/gameConfig';
 
 const props = defineProps<{
   deckName: string | null;
@@ -118,7 +119,7 @@ const characterIdInDeck = computed(() => new Set(currentDeck.value.character));
 // --- ACTIONS ---
 function addToDeck(card: Card, type: 'anime' | 'character') {
   const deckCards = currentDeck.value[type];
-  const maxSize = type === 'anime' ? 25 : 5;
+  const maxSize = type === 'anime' ? GAME_CONFIG.deckBuilding.AnimeMaxNum : GAME_CONFIG.deckBuilding.CharacterMaxNum;
   if (deckCards.includes(card.id)) return;
   if (deckCards.length >= maxSize) {
     alert(`${type === 'anime' ? '动画' : '角色'}卡已达上限！`);
@@ -269,11 +270,11 @@ async function handleSaveDeck() {
             </div>
           </div>
           <div class="deck-stats">
-             <p>动画: {{ currentDeck.anime.length }} / 25</p>
-             <p>角色: {{ currentDeck.character.length }} / 5</p>
+             <p>动画: {{ currentDeck.anime.length }} / {{ GAME_CONFIG.deckBuilding.AnimeMaxNum }}</p>
+             <p>角色: {{ currentDeck.character.length }} / {{ GAME_CONFIG.deckBuilding.CharacterMaxNum }}</p>
           </div>
           <div class="deck-content">
-        <h4 class="font-bold mb-2">动画卡 ({{ animeInDeck.length }}/25)</h4>
+        <h4 class="font-bold mb-2">动画卡 ({{ animeInDeck.length }}/{{ GAME_CONFIG.deckBuilding.AnimeMaxNum }})</h4>
         <div class="deck-card-list">
           <div v-for="card in animeInDeck" :key="card.id" @click="removeFromDeck(card.id, 'anime')"
                class="flex items-center p-1 rounded hover:bg-red-100 cursor-pointer text-sm gap-2">
@@ -283,7 +284,7 @@ async function handleSaveDeck() {
           </div>
            <p v-if="animeInDeck.length === 0" class="text-xs text-gray-400 py-4 text-center">从左侧点击添加</p>
         </div>
-        <h4 class="font-bold mt-4 mb-2">角色卡 ({{ characterInDeck.length }}/5)</h4>
+        <h4 class="font-bold mt-4 mb-2">角色卡 ({{ characterInDeck.length }}/{{ GAME_CONFIG.deckBuilding.CharacterMaxNum }})</h4>
         <div class="deck-card-list">
            <div v-for="card in characterInDeck" :key="card.id" @click="removeFromDeck(card.id, 'character')"
                class="flex items-center p-1 rounded hover:bg-red-100 cursor-pointer text-sm gap-2">
