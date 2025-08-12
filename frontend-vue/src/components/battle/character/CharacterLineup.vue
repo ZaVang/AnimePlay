@@ -5,6 +5,8 @@ import { SkillSystem } from '@/core/systems/SkillSystem';
 import CharacterItem from './CharacterItem.vue';
 import CharacterActionModal from './CharacterActionModal.vue';
 import type { Card, Skill } from '@/types';
+import CardDetailModal from '@/components/CardDetailModal.vue';
+import { useUserStore } from '@/stores/userStore';
 
 const props = defineProps<{
   playerId: 'playerA' | 'playerB';
@@ -12,16 +14,22 @@ const props = defineProps<{
 
 const playerStore = usePlayerStore();
 const gameStore = useGameStore();
+const userStore = useUserStore();
 const player = computed(() => playerStore[props.playerId]);
 
 const selectedCharacter = ref<Card | null>(null);
 const selectedCharacterIndex = ref(-1);
+const detailCharacter = ref<Card | null>(null);
 
-function handleRightClick(character: Card, index: number) {
+function handleLeftClick(character: Card, index: number) {
   if (props.playerId === gameStore.activePlayer) {
     selectedCharacter.value = character;
     selectedCharacterIndex.value = index;
   }
+}
+
+function handleRightClick(character: Card) {
+  detailCharacter.value = character;
 }
 
 function handleUseSkill(skill: Skill) {
@@ -39,6 +47,10 @@ function closeModal() {
   selectedCharacter.value = null;
   selectedCharacterIndex.value = -1;
 }
+
+function closeDetailModal() {
+  detailCharacter.value = null;
+}
 </script>
 
 <template>
@@ -47,7 +59,8 @@ function closeModal() {
       v-for="(character, index) in player.characters"
       :key="character.id"
       class="cursor-pointer"
-      @contextmenu.prevent="handleRightClick(character, index)"
+      @click="handleLeftClick(character, index)"
+      @contextmenu.prevent="handleRightClick(character)"
     >
       <CharacterItem
         :character="character"
@@ -64,6 +77,14 @@ function closeModal() {
       @close="closeModal"
       @useSkill="handleUseSkill"
       @rotate="handleRotate"
+    />
+
+    <CardDetailModal
+      v-if="detailCharacter"
+      :card="detailCharacter"
+      card-type="character"
+      :count="userStore.getCharacterCardCount(detailCharacter.id)"
+      @close="closeDetailModal"
     />
   </div>
 </template>
