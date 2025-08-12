@@ -1,19 +1,20 @@
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
 import { useUserStore } from './userStore';
-import { useGameDataStore, type Card, type Rarity } from './gameDataStore';
+import { useGameDataStore } from './gameDataStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
+import { type Card, type Rarity } from '@/types/card';
 
-export interface DrawnCard extends Card {
+export type DrawnCard = Card & {
     isNew?: boolean;
     isDuplicate?: boolean;
-}
+};
 
 export const useGachaStore = defineStore('gacha', () => {
     const lastResult = ref<DrawnCard[]>([]);
 
     function performGachaLogic(
-        gachaType: 'anime' | 'character',
+        gachaType: 'anime' | 'character',   
         count: number
     ): DrawnCard[] {
         const userStore = useUserStore();
@@ -26,6 +27,17 @@ export const useGachaStore = defineStore('gacha', () => {
 
         const drawnCards: DrawnCard[] = [];
 
+        const effectiveRarityEntries = Object.entries(config.rarityConfig).filter(
+            ([, rarityData]) => rarityData.p > 0
+        );
+        if (effectiveRarityEntries.length === 0) {
+            return [];
+        }
+        const totalEffectiveProbability = effectiveRarityEntries.reduce(
+            (sum, [, rarityData]) => sum + rarityData.p,
+            0
+        );
+
         for (let i = 0; i < count; i++) {
             pityState.totalPulls++;
             pityState.pullsSinceLastHR++;
@@ -36,7 +48,7 @@ export const useGachaStore = defineStore('gacha', () => {
                 pityState.pullsSinceLastHR = 0;
                 drawnCard = rateUpCards[Math.floor(Math.random() * rateUpCards.length)];
             } else {
-                const rand = Math.random() * 100;
+                const rand = Math.random() * totalEffectiveProbability;
                 let cumulativeProb = 0;
                 let drawnRarity: Rarity = 'N';
 
@@ -72,12 +84,12 @@ export const useGachaStore = defineStore('gacha', () => {
             }
         }
         
-        const highRarities: Rarity[] = ['SR', 'SSR', 'HR', 'UR'];
-        if (count >= config.gacha.guaranteedSR_Pulls && !drawnCards.some(card => highRarities.includes(card.rarity))) {
-            const srPool = allCards.filter(c => c.rarity === 'SR');
-            const indexToReplace = drawnCards.findIndex(c => c.rarity === 'N' || c.rarity === 'R') ?? 0;
-            if (srPool.length > 0 && indexToReplace !== -1) {
-                drawnCards[indexToReplace] = { ...srPool[Math.floor(Math.random() * srPool.length)] };
+        const highRarities: Rarity[] = ['SSR', 'HR', 'UR'];
+        if (count >= config.gacha.guaranteedSSR_Pulls && !drawnCards.some(card => highRarities.includes(card.rarity))) {
+            const ssrPool = allCards.filter(c => c.rarity === 'SSR');
+            const indexToReplace = drawnCards.findIndex(c => c.rarity === 'N' || c.rarity === 'R' || c.rarity === 'SR') ?? 0;
+            if (ssrPool.length > 0 && indexToReplace !== -1) {
+                drawnCards[indexToReplace] = { ...ssrPool[Math.floor(Math.random() * ssrPool.length)] };
             }
         }
 

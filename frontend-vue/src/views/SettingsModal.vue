@@ -56,6 +56,37 @@ const mockBias = ref(4);
         </div>
       </div>
       
+      <!-- 战斗速度 -->
+      <div class="setting-group">
+        <h3>战斗速度</h3>
+        <div class="style-options">
+          <label class="style-option">
+            <input type="radio" value="normal" v-model="settingsStore.battleSpeed" @change="settingsStore.saveSettings()" />
+            <span class="option-content">
+              <span class="option-icon">⏱️</span>
+              <span class="option-name">正常</span>
+              <span class="option-desc">AI思考2s / 防御1.5s / 结算3s</span>
+            </span>
+          </label>
+          <label class="style-option">
+            <input type="radio" value="fast" v-model="settingsStore.battleSpeed" @change="settingsStore.saveSettings()" />
+            <span class="option-content">
+              <span class="option-icon">⚡</span>
+              <span class="option-name">快速</span>
+              <span class="option-desc">AI思考0.6s / 防御0.3s / 结算0.8s</span>
+            </span>
+          </label>
+          <label class="style-option">
+            <input type="radio" value="instant" v-model="settingsStore.battleSpeed" @change="settingsStore.saveSettings()" />
+            <span class="option-content">
+              <span class="option-icon">🚀</span>
+              <span class="option-name">瞬间</span>
+              <span class="option-desc">无动画等待，立即推进</span>
+            </span>
+          </label>
+        </div>
+      </div>
+
       <!-- 议题偏向条样式 -->
       <div class="setting-group">
         <h3>议题偏向条样式</h3>

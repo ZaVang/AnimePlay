@@ -1,8 +1,9 @@
 import { defineStore } from 'pinia';
 import { computed, ref } from 'vue';
 import { useGachaStore, type DrawnCard } from './gachaStore';
-import { useGameDataStore, type Card, type Rarity } from './gameDataStore';
+import { useGameDataStore } from './gameDataStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
+import { type Card, type Rarity } from '@/types/card';
 
 // --- Type Definitions ---
 
@@ -252,7 +253,7 @@ export const useUserStore = defineStore('user', () => {
     const expToAdd = count > 1 ? expConfig.multi : expConfig.single;
 
     const collection = gachaType === 'anime' ? animeCollection.value : characterCollection.value;
-    drawnCards.forEach(card => {
+    drawnCards.forEach((card: DrawnCard) => {
         const cardData = gachaType === 'anime'
             ? gameDataStore.getAnimeCardById(card.id)
             : gameDataStore.getCharacterCardById(card.id);

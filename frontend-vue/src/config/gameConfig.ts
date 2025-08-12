@@ -19,7 +19,7 @@ interface RateUpConfig {
 }
 
 interface GachaConfig {
-    guaranteedSR_Pulls: number;
+    guaranteedSSR_Pulls: number;
 }
 
 interface ShopItem {
@@ -233,7 +233,7 @@ export const GAME_CONFIG: GameConfig = {
                 effect: 'border-2 border-green-500 shadow-green-500/50 shadow-[0_0_8px_var(--tw-shadow-color)]'
             },
             'N': { 
-                p: 40, 
+                p: 0, 
                 c: 'from-gray-400 to-gray-600',  // 灰色渐变
                 dismantleValue: 1, 
                 color: 'text-gray-600', 
@@ -247,7 +247,7 @@ export const GAME_CONFIG: GameConfig = {
             pityPulls: 70,    // 必定获得UP卡牌的保底抽数
         },
         gacha: {
-            guaranteedSR_Pulls: 10, // 十连抽保底SR
+            guaranteedSSR_Pulls: 10, // 十连抽保底SSR
         },
         // 商店配置
         shop: {
@@ -303,7 +303,7 @@ export const GAME_CONFIG: GameConfig = {
                 effect: 'border-2 border-green-500 shadow-green-500/50 shadow-[0_0_8px_var(--tw-shadow-color)]'
             },
             'N': { 
-                p: 40, 
+                p: 0, 
                 c: 'from-gray-400 to-gray-600',  // 灰色渐变
                 dismantleValue: 1, 
                 color: 'text-gray-600', 
@@ -319,7 +319,7 @@ export const GAME_CONFIG: GameConfig = {
         },
         // Character gacha settings (identical to anime system)
         gacha: {
-            guaranteedSR_Pulls: 10, // 10-pull guarantees at least SR (identical to anime)
+            guaranteedSSR_Pulls: 10, // 10-pull guarantees at least SSR (identical to anime)
         },
         // 商店配置
         shop: {

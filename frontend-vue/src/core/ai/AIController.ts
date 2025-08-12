@@ -1,5 +1,6 @@
 import { useGameStore, usePlayerStore, useHistoryStore } from '@/stores/battle';
 import { BattleController } from '../battle/BattleController';
+import { useSettingsStore } from '@/stores/settings';
 
 export const AIController = {
   /**
@@ -9,11 +10,12 @@ export const AIController = {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
+    const settingsStore = useSettingsStore();
     const aiPlayer = playerStore.playerB;
 
     historyStore.addLog('AI 正在思考...', 'info');
 
-    // Wait a bit to simulate thinking
+    const delay = settingsStore.getBattleDelay('aiThink');
     setTimeout(() => {
       // AI finds all cards it can afford to play
       const playableCards = aiPlayer.hand.filter(card => (card.cost || 0) <= aiPlayer.tp);
@@ -31,6 +33,6 @@ export const AIController = {
         historyStore.addLog('AI 选择结束回合。', 'event');
         BattleController.endTurn();
       }
-    }, 2000); // 2-second delay
+    }, delay);
   },
 };

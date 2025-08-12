@@ -16,6 +16,8 @@ export default defineConfig({
     },
   },
   server: {
+    host: '0.0.0.0',
+    port: 5173,
     proxy: {
       // 代理所有以 /api 或 /data 开头的请求
       '^/api|/data': {

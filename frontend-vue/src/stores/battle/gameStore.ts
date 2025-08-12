@@ -18,7 +18,7 @@ export const useGameStore = defineStore('game', {
       this.notifications.push({ id, message, type });
       setTimeout(() => {
         this.removeNotification(id);
-      }, 3000);
+      }, 1000);
     },
     removeNotification(id: number) {
       this.notifications = this.notifications.filter(n => n.id !== id);

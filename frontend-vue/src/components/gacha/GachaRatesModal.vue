@@ -24,10 +24,20 @@ const rateUpConfig = computed(() =>
 const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
 
 const rates = computed(() => {
-  return rarityOrder.map(rarity => ({
+  const effectiveRarityEntries = Object.entries(rarityConfig.value).filter(
+    ([, rarityData]) => rarityData.p > 0
+  );
+  if (effectiveRarityEntries.length === 0) {
+    return [];
+  }
+  const totalEffectiveProbability = effectiveRarityEntries.reduce(
+    (sum, [, rarityData]) => sum + rarityData.p,
+    0
+  );
+  return effectiveRarityEntries.map(([rarity, rarityData]) => ({
     rarity,
-    ...rarityConfig.value[rarity],
-    probability: `${(rarityConfig.value[rarity].p).toFixed(2)}%`,
+    ...rarityData,
+    probability: `${((rarityData.p / totalEffectiveProbability) * 100).toFixed(2)}%`,
   }));
 });
 
@@ -71,7 +81,7 @@ const rates = computed(() => {
             <h3 class="font-semibold text-gray-700 mb-2">卡池机制</h3>
             <ul class="list-disc list-inside space-y-2 text-sm text-gray-600">
               <li>
-                <strong>十连保底:</strong> 每进行 <span class="font-bold text-indigo-600">10</span> 次召唤，必定获得至少 <span class="font-bold text-purple-600">1</span> 张SR或更高级别的卡牌。
+                <strong>十连保底:</strong> 每进行 <span class="font-bold text-indigo-600">10</span> 次召唤，必定获得至少 <span class="font-bold text-purple-600">1</span> 张SSR或更高级别的卡牌。
               </li>
               <li v-if="rateUpConfig && rateUpConfig.ids.length > 0">
                 <strong>UP卡牌:</strong> 当您抽到 <span class="font-bold text-red-600">HR</span> 稀有度的卡牌时，有 <span class="font-bold text-indigo-600">{{ rateUpConfig.hrChance * 100 }}%</span> 的概率为当期UP卡牌之一。

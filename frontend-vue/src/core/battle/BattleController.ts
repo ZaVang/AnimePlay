@@ -3,12 +3,14 @@ import { BattleEngine } from '../calculation/BattleEngine';
 import { TurnManager } from './TurnManager';
 import type { ClashInfo } from '@/types/battle';
 import { usePlayerStore } from '@/stores/battle';
+import { useSettingsStore } from '@/stores/settings';
 
 export const BattleController = {
   initiateClash(animeId: number, style: '友好安利' | '辛辣点评') {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
+    const settingsStore = useSettingsStore();
     const attackerId = gameStore.activePlayer;
     const attacker = playerStore[attackerId];
 
@@ -40,7 +42,8 @@ export const BattleController = {
     // If the player is the attacker, trigger AI response.
     // If AI is the attacker, the UI will wait for player's input.
     if (attackerId === 'playerA') {
-      setTimeout(() => this.aiRespondToClash(), 1500);
+      const delay = settingsStore.getBattleDelay('aiDefense');
+      setTimeout(() => this.aiRespondToClash(), delay);
     }
   },
 
@@ -120,6 +123,7 @@ export const BattleController = {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
+     const settingsStore = useSettingsStore();
 
     const clashResult = BattleEngine.resolveClash(clashInfo);
     const { rewards } = clashResult;
@@ -135,6 +139,7 @@ export const BattleController = {
 
     gameStore.setClash({ ...clashInfo, ...clashResult });
 
+    const delay = settingsStore.getBattleDelay('settle');
     setTimeout(() => {
       gameStore.clearClash();
       gameStore.setPhase('action');
@@ -144,7 +149,7 @@ export const BattleController = {
       if (clashInfo.attackerId === 'playerB' && !gameStore.isGameOver) {
         this.endTurn();
       }
-    }, 3000);
+    }, delay);
   },
 
   endTurn() {

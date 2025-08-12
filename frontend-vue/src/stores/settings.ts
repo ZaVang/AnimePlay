@@ -3,6 +3,21 @@ import { defineStore } from 'pinia';
 import { ref, watch } from 'vue';
 
 export const useSettingsStore = defineStore('settings', () => {
+  // 战斗速度设置
+  type BattleSpeed = 'normal' | 'fast' | 'instant';
+  type DelayKey = 'aiThink' | 'aiDefense' | 'settle';
+  const battleSpeed = ref<BattleSpeed>('normal');
+
+  const speedPresets: Record<BattleSpeed, Record<DelayKey, number>> = {
+    normal: { aiThink: 2000, aiDefense: 1500, settle: 3000 },
+    fast: { aiThink: 600, aiDefense: 300, settle: 800 },
+    instant: { aiThink: 0, aiDefense: 0, settle: 0 },
+  };
+
+  function getBattleDelay(key: DelayKey): number {
+    return speedPresets[battleSpeed.value][key];
+  }
+
   // 议题偏向条主题
   const biasBarTheme = ref<'gradient' | 'cyber' | 'elegant'>('gradient');
   
@@ -61,6 +76,7 @@ export const useSettingsStore = defineStore('settings', () => {
   // 保存设置到本地存储
   function saveSettings() {
     localStorage.setItem('ui-settings', JSON.stringify({
+      battleSpeed: battleSpeed.value,
       biasBarTheme: biasBarTheme.value,
       uiTheme: uiTheme.value,
       showThemeSwitcher: showThemeSwitcher.value
@@ -72,6 +88,7 @@ export const useSettingsStore = defineStore('settings', () => {
     const saved = localStorage.getItem('ui-settings');
     if (saved) {
       const settings = JSON.parse(saved);
+      battleSpeed.value = settings.battleSpeed || 'normal';
       biasBarTheme.value = settings.biasBarTheme || 'gradient';
       uiTheme.value = settings.uiTheme || themePresets.classic;
       showThemeSwitcher.value = settings.showThemeSwitcher || false;
@@ -82,6 +99,8 @@ export const useSettingsStore = defineStore('settings', () => {
   loadSettings();
   
   return {
+    battleSpeed,
+    getBattleDelay,
     biasBarTheme,
     showThemeSwitcher,
     uiTheme,

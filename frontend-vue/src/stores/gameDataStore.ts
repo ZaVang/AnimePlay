@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
-import type { Card, AnimeCard, CharacterCard } from '@/types/card';
+import type { AnimeCard, CharacterCard } from '@/types/card';
 import type { Skill } from '@/types/skill';
 import { skillLibrary } from '@/skills'; // Corrected import path
 
