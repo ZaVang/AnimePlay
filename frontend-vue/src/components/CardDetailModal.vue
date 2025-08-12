@@ -5,6 +5,7 @@ import { useGameDataStore } from '@/stores/gameDataStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import type { Card, AnimeCard, CharacterCard } from '@/types/card';
 import type { Skill } from '@/types/skill';
+import { getEffectText, getTriggerText } from '@/skills/effects/descriptions';
 
 const props = defineProps<{
   card: Card | null;
@@ -46,6 +47,17 @@ const passiveSkill = computed<Skill | undefined>(() => {
   return undefined;
 });
 // --- END NEW ---
+
+// --- NEW: Anime effects descriptions ---
+const animeEffectsDescriptions = computed(() => {
+  if (props.cardType !== 'anime' || !props.card) return [] as string[];
+  const anime = props.card as AnimeCard;
+  return (anime.effects || []).map(e => {
+    const t = getTriggerText(e.trigger);
+    const desc = getEffectText(e.effectId);
+    return `${t}：${desc}`;
+  });
+});
 
 const processedAnimeNames = computed(() => {
     if (props.cardType !== 'character' || !props.card || !(props.card as CharacterCard).anime_names) return [];
@@ -118,6 +130,22 @@ function handleDismantle() {
               <div v-if="cardType === 'anime'" class="text-sm space-y-2">
                 <div><strong>TP 消耗:</strong> <span class="font-semibold text-blue-600">{{ (card as AnimeCard).cost }}</span></div>
                 <div v-if="(card as AnimeCard).effectDescription"><strong>效果:</strong> <span class="italic">{{ (card as AnimeCard).effectDescription }}</span></div>
+                <div v-if="animeEffectsDescriptions.length" class="mt-2">
+                  <strong>卡面效果:</strong>
+                  <ul class="mt-2 space-y-2">
+                    <li v-for="line in animeEffectsDescriptions" :key="line"
+                        class="px-3 py-2 rounded-md border text-sm"
+                        :class="[
+                          'bg-gradient-to-r from-indigo-600/10 to-blue-600/10',
+                          'border-indigo-400/50',
+                          'text-indigo-900'
+                        ]"
+                    >
+                      <span class="inline-block mr-2 px-2 py-0.5 rounded bg-indigo-500 text-white text-xs">效果</span>
+                      <span class="font-medium">{{ line }}</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <!-- Character Card Battle Info -->
               <div v-if="cardType === 'character'" class="space-y-4">
@@ -125,10 +153,38 @@ function handleDismantle() {
                   <h4 class="font-bold text-red-800">主动技能: {{ activeSkill.name }}</h4>
                   <p class="text-xs text-gray-600 mt-1">[消耗: {{ activeSkill.cost || 0 }} TP] [冷却: {{ activeSkill.cooldown || 0 }} 回合]</p>
                   <p class="text-sm mt-2">{{ activeSkill.description }}</p>
+                  <div v-if="activeSkill.effectId" class="mt-2">
+                    <ul class="mt-1">
+                      <li class="px-3 py-2 rounded-md border text-sm"
+                          :class="[
+                            'bg-gradient-to-r from-rose-600/10 to-orange-600/10',
+                            'border-rose-400/50',
+                            'text-rose-900'
+                          ]"
+                      >
+                        <span class="inline-block mr-2 px-2 py-0.5 rounded bg-rose-500 text-white text-xs">技能</span>
+                        <span class="font-medium">{{ getEffectText(activeSkill.effectId) }}</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
                 <div v-if="passiveSkill" class="p-3 bg-indigo-50 rounded-lg">
                   <h4 class="font-bold text-indigo-800">被动光环: {{ passiveSkill.name }}</h4>
                   <p class="text-sm mt-2">{{ passiveSkill.description }}</p>
+                  <div v-if="passiveSkill.effectId" class="mt-2">
+                    <ul class="mt-1">
+                      <li class="px-3 py-2 rounded-md border text-sm"
+                          :class="[
+                            'bg-gradient-to-r from-indigo-600/10 to-blue-600/10',
+                            'border-indigo-400/50',
+                            'text-indigo-900'
+                          ]"
+                      >
+                        <span class="inline-block mr-2 px-2 py-0.5 rounded bg-indigo-500 text-white text-xs">光环</span>
+                        <span class="font-medium">{{ getEffectText(passiveSkill.effectId) }}</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

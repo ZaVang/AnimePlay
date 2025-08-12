@@ -17,6 +17,11 @@ export interface BaseCard {
 export interface AnimeCard extends BaseCard {
   cost: number; // TP cost to play the card
   effectDescription?: string; // Special effect text
+  effects?: Array<{
+    trigger: 'onPlay' | 'beforeResolve' | 'afterResolve';
+    effectId: string;
+    params?: Record<string, any>;
+  }>;
 }
 
 // Interface for Character cards with their skills

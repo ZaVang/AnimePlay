@@ -242,7 +242,7 @@ export const GAME_CONFIG: GameConfig = {
             }
         },
         rateUp: {
-            ids: [1428, 253], // UP卡牌的ID
+            ids: [326, 876], // UP卡牌的ID
             hrChance: 0.66,   // HR稀有度时，获得UP卡牌的概率
             pityPulls: 70,    // 必定获得UP卡牌的保底抽数
         },
@@ -252,8 +252,8 @@ export const GAME_CONFIG: GameConfig = {
         // 商店配置
         shop: {
             items: [
-                { Id: 1428, cost: 10000 }, // UR card
-                { Id: 253, cost: 10000 }, // UR card
+                { Id: 326, cost: 10000 }, // UR card
+                { Id: 876, cost: 10000 }, // UR card
             ]
         },
     },
@@ -313,7 +313,7 @@ export const GAME_CONFIG: GameConfig = {
         },
         // Character UP pool configuration (identical to anime system)
         rateUp: {
-            ids: [1, 2], // UP character IDs - example characters for testing
+            ids: [12393, 304], // UP character IDs - example characters for testing
             hrChance: 0.66, // HR rarity时，获得UP角色的概率
             pityPulls: 70, // 必定获得UP角色的保底抽数
         },
@@ -324,8 +324,8 @@ export const GAME_CONFIG: GameConfig = {
         // 商店配置
         shop: {
             items: [
-                { Id: 1, cost: 10000 }, // UR character
-                { Id: 2, cost: 10000 }, // HR character
+                { Id: 12393, cost: 10000 }, // UR character
+                { Id: 304, cost: 10000 }, // HR character
             ]
         },
     },

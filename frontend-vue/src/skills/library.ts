@@ -10,6 +10,7 @@ export const skillLibrary: Skill[] = [
     cost: 2,
     cooldown: 1,
     initialCooldown: 0,
+    effectId: 'DRAW_1',
   },
   {
     id: 'TPL_GAIN_TP_2',
@@ -19,6 +20,7 @@ export const skillLibrary: Skill[] = [
     cost: 0,
     cooldown: 3,
     initialCooldown: 1,
+    effectId: 'GAIN_TP_2',
   },
 
   // --- Character-Specific Active Skills ---
@@ -30,6 +32,7 @@ export const skillLibrary: Skill[] = [
     cost: 3,
     cooldown: 2,
     initialCooldown: 1,
+    effectId: 'BIAS_HALVE_OPP',
   },
 
   // --- Template Passive Auras ---
@@ -38,6 +41,7 @@ export const skillLibrary: Skill[] = [
     name: '类型专家',
     type: '被动光环',
     description: '己方打出同类型动画卡时，额外获得1点强度。',
+    effectId: 'AURA_GENRE_EXPERT',
   },
 
   // --- Character-Specific Passive Auras ---

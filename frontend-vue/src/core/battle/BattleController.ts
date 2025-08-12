@@ -4,6 +4,7 @@ import { TurnManager } from './TurnManager';
 import type { ClashInfo } from '@/types/battle';
 import { usePlayerStore } from '@/stores/battle';
 import { useSettingsStore } from '@/stores/settings';
+import { SkillSystem } from '@/core/systems/SkillSystem';
 
 export const BattleController = {
   initiateClash(animeId: number, style: '友好安利' | '辛辣点评') {
@@ -35,6 +36,9 @@ export const BattleController = {
     };
     gameStore.setClash(clash);
     gameStore.setPhase('defense');
+
+    // Trigger onPlay effects for attacker (minimal demo)
+    SkillSystem.onCardPlayed(attackerId, attackingCard);
 
     const playerName = attackerId === 'playerA' ? '你' : 'AI';
     historyStore.addLog(`${playerName} 以 [${style}] 的方式打出了 [${attackingCard.name}]。`, 'clash');
@@ -116,6 +120,9 @@ export const BattleController = {
       defenseStyle,
     };
 
+    // Trigger onPlay effects for defender (minimal demo)
+    SkillSystem.onCardPlayed(defenderId, defendingCard);
+
     this.resolveClash(finalClashInfo);
   },
 
@@ -125,7 +132,16 @@ export const BattleController = {
     const historyStore = useHistoryStore();
      const settingsStore = useSettingsStore();
 
+    // beforeResolve: allow effects to inject temp bonuses
+    let extraAttacker = 0;
+    let extraDefender = 0;
+    SkillSystem.emitBeforeResolve(clashInfo, (side, amount) => {
+      if (side === 'attacker') extraAttacker += amount; else extraDefender += amount;
+    });
+
     const clashResult = BattleEngine.resolveClash(clashInfo);
+    clashResult.attackerStrength += extraAttacker;
+    clashResult.defenderStrength += extraDefender;
     const { rewards } = clashResult;
 
     playerStore.changeReputation(clashInfo.attackerId, rewards.attackerReputationChange);
@@ -138,6 +154,9 @@ export const BattleController = {
     historyStore.addLog(`议题偏向变化: ${rewards.topicBiasChange > 0 ? '+' : ''}${rewards.topicBiasChange}。`, 'info');
 
     gameStore.setClash({ ...clashInfo, ...clashResult });
+
+    // afterResolve effects
+    SkillSystem.emitAfterResolve({ ...clashInfo, ...clashResult });
 
     const delay = settingsStore.getBattleDelay('settle');
     setTimeout(() => {

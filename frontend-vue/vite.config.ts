@@ -19,10 +19,14 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5173,
     proxy: {
-      // 代理所有以 /api 或 /data 开头的请求
-      '^/api|/data': {
-        target: 'http://localhost:5001', // 你的 Python 后端地址
-        changeOrigin: true, // 必须设置为 true
+      // 仅代理以 /api 或 /data 开头的请求，避免错误匹配 /src/data/**
+      '/api': {
+        target: 'http://127.0.0.1:5001',
+        changeOrigin: true,
+      },
+      '/data': {
+        target: 'http://127.0.0.1:5001',
+        changeOrigin: true,
       },
     },
     fs: {

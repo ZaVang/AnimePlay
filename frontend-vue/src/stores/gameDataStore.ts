@@ -3,6 +3,10 @@ import { ref, computed } from 'vue';
 import type { AnimeCard, CharacterCard } from '@/types/card';
 import type { Skill } from '@/types/skill';
 import { skillLibrary } from '@/skills'; // Corrected import path
+import { animeEffectsMap } from '@/data/animeEffectsMap';
+import { animeDefaultEffects } from '@/data/animeDefaultEffects';
+import { characterDefaultSkills } from '@/data/characterDefaultSkills';
+import { characterSkillsMap } from '@/data/characterSkillsMap';
 
 export const useGameDataStore = defineStore('gameData', () => {
   // --- STATE ---
@@ -56,10 +60,26 @@ export const useGameDataStore = defineStore('gameData', () => {
         };
       };
 
-      allAnimeCards.value = animeData.map((card: any) => processCardImagePath(card, 'anime'));
+      allAnimeCards.value = animeData.map((card: any) => {
+        const processed = processCardImagePath(card, 'anime');
+        const mappedEffects = animeEffectsMap[processed.id];
+        if (mappedEffects) return { ...processed, effects: mappedEffects };
+        // fallback to default effects by rarity if card has no explicit effects
+        const defaults = animeDefaultEffects[processed.rarity as keyof typeof animeDefaultEffects];
+        return defaults ? { ...processed, effects: defaults } : processed;
+      });
 
       if (characterData.characters) {
-          allCharacterCards.value = characterData.characters.map((card: any) => processCardImagePath(card, 'character'));
+          allCharacterCards.value = characterData.characters.map((card: any) => {
+            const processed = processCardImagePath(card, 'character');
+            const binding = characterSkillsMap[processed.id];
+            if (binding) {
+              return { ...processed, ...binding };
+            }
+            // fallback to default character skills by rarity if no binding exists
+            const defaults = characterDefaultSkills[processed.rarity as keyof typeof characterDefaultSkills];
+            return defaults ? { ...processed, ...defaults } : processed;
+          });
       } else {
           allCharacterCards.value = [];
       }

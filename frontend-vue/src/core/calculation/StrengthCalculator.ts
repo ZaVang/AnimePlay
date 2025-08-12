@@ -1,27 +1,9 @@
-import { useGameStore, usePlayerStore } from '@/stores/battle';
+import { useGameStore } from '@/stores/battle';
 import type { Card } from '@/types';
+import { SkillSystem } from '@/core/systems/SkillSystem';
 
 // A simple function to get all active passive skills from both players
-function getActiveAuras(): Card['skills'] {
-  const playerStore = usePlayerStore();
-  const allAuras = [];
-
-  const playerA = playerStore.playerA;
-  const playerB = playerStore.playerB;
-
-  // Get auras from all characters on the field for both players
-  for (const char of [...playerA.characters, ...playerB.characters]) {
-    if (char.skills) {
-      for (const skill of char.skills) {
-        if (skill.type === '被动光环') {
-          allAuras.push(skill);
-        }
-      }
-    }
-  }
-
-  return allAuras;
-}
+// Removed direct aura scan; delegated to SkillSystem
 
 export const StrengthCalculator = {
   /**
@@ -47,16 +29,15 @@ export const StrengthCalculator = {
       finalStrength += Math.abs(bias);
     }
 
-    // 2. Apply passive aura effects
-    const auras = getActiveAuras();
-    for (const aura of auras) {
-      // Example: Konata's aura
-      if (aura.id === 'KONATA_LUCKY' && card.synergy_tags?.includes('日常')) {
-        // This is a simple implementation. We might need a more robust effect system later.
-        finalStrength += 1;
-      }
-      // Add other auras here
+    // 2. Treat as any type if status consumed (simple heuristic: grants +1 if card有任意标签可触发的被动)
+    // 已通过 SkillSystem.onCardPlayed 设置了临时标记 __treatedAsAnyType
+    // 具体的“任何类型匹配策略”可在此扩展，这里仅让被动聚合阶段感知。
+    if ((card as any).__treatedAsAnyType) {
+      // 在 getAuraStrengthBonus 中会检查卡的标签，这里不修改标签，仅保留标记影响逻辑（如后续实现）
     }
+
+    // 3. Apply passive aura effects via SkillSystem
+    finalStrength += SkillSystem.getAuraStrengthBonus(card, playerId);
 
     return finalStrength;
   }

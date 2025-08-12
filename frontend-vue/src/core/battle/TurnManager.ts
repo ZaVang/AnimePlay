@@ -3,6 +3,7 @@ import { usePlayerStore } from '@/stores/battle';
 import { useHistoryStore } from '@/stores/battle';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import type { AnimeCard, CharacterCard, Card, Skill } from '@/types';
+import type { Rarity } from '@/types/card';
 import type { Deck } from '@/stores/userStore';
 
 // Maps character IDs to an array of skill IDs
@@ -14,13 +15,42 @@ const CharacterSkillMap: Record<number, string[]> = {
   72355: ['TPL_DRAW_1', 'AURA_GENRE_EXPERT'], // 随便一个R角色
 };
 
+// Default skill templates by rarity (fallback when a character has no bound skills)
+const DefaultActiveByRarity: Partial<Record<Rarity, string>> = {
+  N: 'TPL_DRAW_1',
+  R: 'TPL_GAIN_TP_2',
+  SR: 'TPL_DRAW_1',
+};
+const DefaultPassiveByRarity: Partial<Record<Rarity, string>> = {
+  N: 'AURA_GENRE_EXPERT', // 简单被动示例
+  R: 'AURA_GENRE_EXPERT',
+  SR: 'AURA_GENRE_EXPERT',
+};
+
 // Helper function to inject skills into a character card
 function injectSkills(character: CharacterCard): CharacterCard {
   const gameDataStore = useGameDataStore();
-  const skillIds = CharacterSkillMap[character.id] || [];
-  
+  // Preferred source: character.activeSkillId / passiveSkillId from data layer mapping
+  const preferredIds: string[] = [];
+  if (character.activeSkillId) preferredIds.push(character.activeSkillId);
+  if (character.passiveSkillId) preferredIds.push(character.passiveSkillId);
+
+  // Fallback to legacy map if not provided
+  const fallbackIds = CharacterSkillMap[character.id] || [];
+  let skillIds = preferredIds.length > 0 ? preferredIds : fallbackIds;
+
+  // If still empty, apply default templates by rarity
+  if (skillIds.length === 0) {
+    const activeDefault = DefaultActiveByRarity[character.rarity];
+    const passiveDefault = DefaultPassiveByRarity[character.rarity];
+    const defaults = [activeDefault, passiveDefault].filter((s): s is string => !!s);
+    if (defaults.length) {
+      skillIds = defaults;
+    }
+  }
+
   const skills: Skill[] = skillIds
-    .map(id => gameDataStore.getSkillById(id)) // Use the store's getter
+    .map(id => gameDataStore.getSkillById(id))
     .filter((s): s is Skill => s !== undefined);
 
   return { ...character, skills };
