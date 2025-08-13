@@ -13,7 +13,7 @@ export const AIController = {
     const settingsStore = useSettingsStore();
     const aiPlayer = playerStore.playerB;
 
-    historyStore.addLog('AI 正在思考...', 'info');
+    historyStore.addLog(`${aiPlayer.name} 正在思考...`, 'info');
 
     const delay = settingsStore.getBattleDelay('aiThink');
     setTimeout(() => {
@@ -26,11 +26,11 @@ export const AIController = {
         
         // Simple choice: always use the cheaper '友好安利' style for now
         const style = '友好安利';
-        historyStore.addLog(`AI 打出了 [${cardToPlay.name}]。`, 'clash');
+        historyStore.addLog(`${aiPlayer.name} 打出了 [${cardToPlay.name}]。`, 'clash');
         BattleController.initiateClash(cardToPlay.id, style);
       } else {
         // If no card can be played, end the turn
-        historyStore.addLog('AI 选择结束回合。', 'event');
+        historyStore.addLog(`${aiPlayer.name} 选择结束回合。`, 'event');
         BattleController.endTurn();
       }
     }, delay);

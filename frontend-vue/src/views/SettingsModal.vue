@@ -1,13 +1,21 @@
 <!-- SettingsModal.vue -->
 <script setup lang="ts">
 import { useSettingsStore } from '@/stores/settings';
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
+import { listAIProfiles } from '@/core/ai/aiProfiles';
 
 const settingsStore = useSettingsStore();
 const activeTab = ref('display');
 
 // 主题预览数据
 const mockBias = ref(4);
+
+// AI 对手选择（设置持久化）
+const aiProfiles = listAIProfiles();
+const selectedAIId = computed({
+  get: () => settingsStore.selectedAIProfileId,
+  set: (v: string) => { settingsStore.selectedAIProfileId = v; settingsStore.saveSettings(); },
+});
 </script>
 
 <template>
@@ -82,6 +90,22 @@ const mockBias = ref(4);
               <span class="option-icon">🚀</span>
               <span class="option-name">瞬间</span>
               <span class="option-desc">无动画等待，立即推进</span>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <!-- AI 对手 -->
+      <div class="setting-group">
+        <h3>AI 对手</h3>
+        <div class="style-options">
+          <label class="style-option">
+            <span class="option-content">
+              <span class="option-icon">🧠</span>
+              <span class="option-name">AI 档案</span>
+              <select v-model="selectedAIId" class="ml-auto bg-gray-700 text-white rounded px-3 py-1 border border-gray-600">
+                <option v-for="p in aiProfiles" :key="p.id" :value="p.id">{{ p.name }}</option>
+              </select>
             </span>
           </label>
         </div>

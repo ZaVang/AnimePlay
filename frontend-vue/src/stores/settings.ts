@@ -7,6 +7,7 @@ export const useSettingsStore = defineStore('settings', () => {
   type BattleSpeed = 'normal' | 'fast' | 'instant';
   type DelayKey = 'aiThink' | 'aiDefense' | 'settle';
   const battleSpeed = ref<BattleSpeed>('normal');
+  const selectedAIProfileId = ref<string>('config-ai');
 
   const speedPresets: Record<BattleSpeed, Record<DelayKey, number>> = {
     normal: { aiThink: 2000, aiDefense: 1500, settle: 3000 },
@@ -77,6 +78,7 @@ export const useSettingsStore = defineStore('settings', () => {
   function saveSettings() {
     localStorage.setItem('ui-settings', JSON.stringify({
       battleSpeed: battleSpeed.value,
+      selectedAIProfileId: selectedAIProfileId.value,
       biasBarTheme: biasBarTheme.value,
       uiTheme: uiTheme.value,
       showThemeSwitcher: showThemeSwitcher.value
@@ -89,6 +91,7 @@ export const useSettingsStore = defineStore('settings', () => {
     if (saved) {
       const settings = JSON.parse(saved);
       battleSpeed.value = settings.battleSpeed || 'normal';
+      selectedAIProfileId.value = settings.selectedAIProfileId || 'config-ai';
       biasBarTheme.value = settings.biasBarTheme || 'gradient';
       uiTheme.value = settings.uiTheme || themePresets.classic;
       showThemeSwitcher.value = settings.showThemeSwitcher || false;
@@ -101,6 +104,7 @@ export const useSettingsStore = defineStore('settings', () => {
   return {
     battleSpeed,
     getBattleDelay,
+    selectedAIProfileId,
     biasBarTheme,
     showThemeSwitcher,
     uiTheme,

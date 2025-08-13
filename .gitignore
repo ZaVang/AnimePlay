@@ -48,4 +48,4 @@ pnpm-debug.log*
 
 *.ipynb
 data/
-!src/data/
+!frontend-vue/src/data/

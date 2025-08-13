@@ -19,7 +19,8 @@ export const SkillSystem = {
     const isAnime = (card as any).cost !== undefined;
     if (isAnime && card.synergy_tags?.includes('日常')) {
       playerStore.drawCards(playerId, 1);
-      historyStore.addLog(`${playerId === 'playerA' ? '你' : 'AI'} 触发卡面效果：日常系抽1张。`, 'info');
+      const name = playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
+      historyStore.addLog(`${name} 触发卡面效果：日常系抽1张。`, 'info');
       gameStore.addNotification('日常系：抽1张', 'info');
     }
 
@@ -144,7 +145,8 @@ export const SkillSystem = {
     }
     
     gameStore.addNotification(`使用了技能: ${skill.name}`);
-    historyStore.addLog(`${playerId === 'playerA' ? '你' : 'AI'} 使用了技能 [${skill.name}]。`, 'event');
+    const name2 = playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
+    historyStore.addLog(`${name2} 使用了技能 [${skill.name}]。`, 'event');
 
     // --- Execute skill effect via effectId (preferred path) ---
     if (skill.effectId) {

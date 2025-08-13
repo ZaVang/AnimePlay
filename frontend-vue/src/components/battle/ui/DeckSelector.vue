@@ -1,9 +1,32 @@
 <script setup lang="ts">
 import { useUserStore, type Deck } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
+import { ref, computed, onMounted } from 'vue';
+import { listAIProfiles, type AIProfile } from '@/core/ai/aiProfiles';
+import { useSettingsStore } from '@/stores/settings';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
+const settingsStore = useSettingsStore();
+
+// AI 档案选择：与设置联动
+const aiProfiles = listAIProfiles();
+const selectedAIId = computed<string>({
+  get: () => settingsStore.selectedAIProfileId,
+  set: (v: string) => { settingsStore.selectedAIProfileId = v; settingsStore.saveSettings(); },
+});
+const selectedAI = computed<AIProfile | undefined>(() => aiProfiles.find(p => p.id === selectedAIId.value));
+
+onMounted(() => {
+  // 若设置中的AI ID无效，则初始化为第一个可用档案
+  if (!aiProfiles.find(p => p.id === selectedAIId.value)) {
+    const fallback = aiProfiles[0]?.id;
+    if (fallback) {
+      settingsStore.selectedAIProfileId = fallback;
+      settingsStore.saveSettings();
+    }
+  }
+});
 
 const getCoverImage = (deck: Deck) => {
   if (!deck.cover) {
@@ -16,24 +39,30 @@ const getCoverImage = (deck: Deck) => {
 };
 
 const emit = defineEmits<{
-  (e: 'deckSelected', deck: Deck): void;
-  (e: 'randomDeck'): void;
+  (e: 'deckSelected', deck: Deck, aiProfileId?: string): void;
+  (e: 'randomDeck', aiProfileId?: string): void;
 }>();
 </script>
 
 <template>
   <div class="deck-selector-container">
     <h2 class="text-3xl font-bold text-center text-white mb-8">请选择您的出战卡组</h2>
+    <div class="flex items-center justify-center gap-3 mb-6">
+      <label class="text-white">AI 对手：</label>
+      <select v-model="selectedAIId" class="p-2 rounded bg-gray-800 text-white border border-gray-600">
+        <option v-for="p in aiProfiles" :key="p.id" :value="p.id">{{ p.name }}</option>
+      </select>
+    </div>
     <div v-if="Object.keys(userStore.savedDecks).length === 0" class="text-center">
       <p class="text-gray-400">没有找到已保存的卡组。</p>
-      <button @click="emit('randomDeck')" class="btn-primary mt-4">使用随机卡组开始</button>
+      <button @click="emit('randomDeck', selectedAIId)" class="btn-primary mt-4">使用随机卡组开始</button>
     </div>
     <div v-else class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
       <div
         v-for="deck in userStore.savedDecks"
         :key="deck.name"
         class="bg-gray-800 rounded-lg shadow-lg overflow-hidden group cursor-pointer border-2 border-transparent hover:border-yellow-400 transition-all"
-        @click="emit('deckSelected', deck)"
+        @click="emit('deckSelected', deck, selectedAIId)"
       >
         <div class="relative aspect-w-10 aspect-h-12 bg-gray-700">
           <img :src="getCoverImage(deck)" class="w-full h-full object-cover" :alt="`${deck.name} cover`" />
@@ -45,7 +74,7 @@ const emit = defineEmits<{
       </div>
     </div>
     <div class="text-center mt-8">
-      <button @click="emit('randomDeck')" class="btn-secondary">或使用随机卡组开始</button>
+      <button @click="emit('randomDeck', selectedAIId)" class="btn-secondary">或使用随机卡组开始</button>
     </div>
   </div>
 </template>

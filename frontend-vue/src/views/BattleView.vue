@@ -27,13 +27,13 @@ onMounted(() => {
   }
 });
 
-function handleDeckSelected(deck: Deck) {
-  TurnManager.initializeGameWithDeck(deck);
+function handleDeckSelected(deck: Deck, aiProfileId?: string) {
+  TurnManager.initializeGameWithDeck(deck, aiProfileId);
   battlePhase.value = 'battle';
 }
 
-function handleRandomDeck() {
-  TurnManager.initializeRandomGame();
+function handleRandomDeck(aiProfileId?: string) {
+  TurnManager.initializeRandomGame(aiProfileId);
   battlePhase.value = 'battle';
 }
 

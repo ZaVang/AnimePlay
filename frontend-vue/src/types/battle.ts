@@ -37,7 +37,7 @@ export interface ClashInfo {
   attackerId: 'playerA' | 'playerB';
   attackingCard: AnimeCard;
   attackStyle: '友好安利' | '辛辣点评';
-  defenderId?: 'playerA' | 'playerB';
+  defenderId: 'playerA' | 'playerB';
   defendingCard?: AnimeCard;
   defenseStyle?: '赞同' | '反驳';
   // Optional fields for after the clash is resolved

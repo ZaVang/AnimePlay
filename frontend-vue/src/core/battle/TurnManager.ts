@@ -2,9 +2,11 @@ import { useGameStore } from '@/stores/battle';
 import { usePlayerStore } from '@/stores/battle';
 import { useHistoryStore } from '@/stores/battle';
 import { useGameDataStore } from '@/stores/gameDataStore';
+import { useUserStore, type Deck } from '@/stores/userStore';
+import { getAIProfileById, pickDefaultAIProfile, type AIProfile } from '@/core/ai/aiProfiles';
 import type { AnimeCard, CharacterCard, Card, Skill } from '@/types';
 import type { Rarity } from '@/types/card';
-import type { Deck } from '@/stores/userStore';
+// removed duplicate Deck import
 
 // Maps character IDs to an array of skill IDs
 const CharacterSkillMap: Record<number, string[]> = {
@@ -67,11 +69,12 @@ export const TurnManager = {
    * Initializes a game with a specific deck for Player A.
    * @param playerADeck - The deck selected by Player A.
    */
-  initializeGameWithDeck(playerADeck: Deck) {
+  initializeGameWithDeck(playerADeck: Deck, aiProfileId?: string) {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
     const gameDataStore = useGameDataStore();
     const historyStore = useHistoryStore();
+    const userStore = useUserStore();
 
     if (!gameDataStore.allAnimeCards.length || !gameDataStore.allCharacterCards.length) {
       console.error("Game data is not loaded. Cannot start the game.");
@@ -91,15 +94,24 @@ export const TurnManager = {
       .filter((c): c is CharacterCard => c !== undefined)
       .map(injectSkills);
 
-    // Player B (AI) gets a random deck
-    const playerB_deck = [...gameDataStore.allAnimeCards].sort(() => 0.5 - Math.random()).slice(0, 30);
-    const playerB_chars = [...gameDataStore.allCharacterCards]
-      .sort(() => 0.5 - Math.random())
-      .slice(0, 4)
-      .map(injectSkills);
+    // Player B (AI) uses configured profile or random fallback
+    const aiProfile: AIProfile = aiProfileId ? (getAIProfileById(aiProfileId) || pickDefaultAIProfile()) : pickDefaultAIProfile();
+    const playerB_deck = (aiProfile.anime.length
+      ? aiProfile.anime.map(id => gameDataStore.getAnimeCardById(id)).filter((c): c is AnimeCard => c !== undefined)
+      : [...gameDataStore.allAnimeCards].sort(() => 0.5 - Math.random()).slice(0, 30));
+    const playerB_chars = (aiProfile.character.length
+      ? aiProfile.character.map(id => gameDataStore.getCharacterCardById(id)).filter((c): c is CharacterCard => c !== undefined).map(injectSkills)
+      : [...gameDataStore.allCharacterCards]
+          .sort(() => 0.5 - Math.random())
+          .slice(0, 4)
+          .map(injectSkills));
     
     gameStore.startGame();
     playerStore.setupPlayers(playerA_deck, playerA_chars, playerB_deck, playerB_chars);
+
+    // Set player names: logged-in user vs AI profile name
+    playerStore.playerA.name = userStore.currentUser || '你';
+    playerStore.playerB.name = aiProfile.name;
 
     playerStore.shuffleDeck('playerA');
     playerStore.shuffleDeck('playerB');
@@ -114,11 +126,12 @@ export const TurnManager = {
   /**
    * Initializes a game with random decks for both players.
    */
-  initializeRandomGame() {
+  initializeRandomGame(aiProfileId?: string) {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
     const gameDataStore = useGameDataStore();
     const historyStore = useHistoryStore();
+    const userStore = useUserStore();
 
     if (!gameDataStore.allAnimeCards.length || !gameDataStore.allCharacterCards.length) {
       console.error("Game data is not loaded. Cannot start the game.");
@@ -128,22 +141,32 @@ export const TurnManager = {
     historyStore.clearLog();
     historyStore.addLog('游戏开始！正在随机化卡组...', 'event');
 
-    // Get random decks and characters directly from the store
+    // Get random decks for Player A; AI uses configured profile or random fallback
     const playerA_deck = [...gameDataStore.allAnimeCards].sort(() => 0.5 - Math.random()).slice(0, 30);
     const playerA_chars = [...gameDataStore.allCharacterCards]
       .sort(() => 0.5 - Math.random())
       .slice(0, 4)
       .map(injectSkills);
-    const playerB_deck = [...gameDataStore.allAnimeCards].sort(() => 0.5 - Math.random()).slice(0, 30);
-    const playerB_chars = [...gameDataStore.allCharacterCards]
-      .sort(() => 0.5 - Math.random())
-      .slice(0, 4)
-      .map(injectSkills);
+
+    const aiProfile: AIProfile = aiProfileId ? (getAIProfileById(aiProfileId) || pickDefaultAIProfile()) : pickDefaultAIProfile();
+    const playerB_deck = (aiProfile.anime.length
+      ? aiProfile.anime.map(id => gameDataStore.getAnimeCardById(id)).filter((c): c is AnimeCard => c !== undefined)
+      : [...gameDataStore.allAnimeCards].sort(() => 0.5 - Math.random()).slice(0, 30));
+    const playerB_chars = (aiProfile.character.length
+      ? aiProfile.character.map(id => gameDataStore.getCharacterCardById(id)).filter((c): c is CharacterCard => c !== undefined).map(injectSkills)
+      : [...gameDataStore.allCharacterCards]
+          .sort(() => 0.5 - Math.random())
+          .slice(0, 4)
+          .map(injectSkills));
 
     gameStore.startGame();
     playerStore.setupPlayers(playerA_deck, playerA_chars, playerB_deck, playerB_chars);
 
     // Shuffle decks at the start of the game
+    // Set player names: logged-in user vs AI profile name
+    playerStore.playerA.name = userStore.currentUser || '你';
+    playerStore.playerB.name = aiProfile.name;
+
     playerStore.shuffleDeck('playerA');
     playerStore.shuffleDeck('playerB');
 

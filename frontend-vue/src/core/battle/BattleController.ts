@@ -14,6 +14,8 @@ export const BattleController = {
     const settingsStore = useSettingsStore();
     const attackerId = gameStore.activePlayer;
     const attacker = playerStore[attackerId];
+    const defenderId = gameStore.opponentId;
+    const defender = playerStore[defenderId];
 
     const attackingCard = attacker.hand.find(a => a.id === animeId);
     if (!attackingCard) return;
@@ -33,6 +35,7 @@ export const BattleController = {
       attackerId,
       attackingCard,
       attackStyle: style,
+      defenderId,
     };
     gameStore.setClash(clash);
     gameStore.setPhase('defense');
@@ -40,8 +43,8 @@ export const BattleController = {
     // Trigger onPlay effects for attacker (minimal demo)
     SkillSystem.onCardPlayed(attackerId, attackingCard);
 
-    const playerName = attackerId === 'playerA' ? '你' : 'AI';
-    historyStore.addLog(`${playerName} 以 [${style}] 的方式打出了 [${attackingCard.name}]。`, 'clash');
+    const attackerName = attackerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
+    historyStore.addLog(`${attackerName} 以 [${style}] 的方式打出了 [${attackingCard.name}]。`, 'clash');
 
     // If the player is the attacker, trigger AI response.
     // If AI is the attacker, the UI will wait for player's input.
@@ -78,10 +81,12 @@ export const BattleController = {
       const cardToPlay = affordableCards[0];
       const canAffordRebuttal = (cardToPlay.cost || 0) + 1 <= defender.tp;
       const defenseStyle = canAffordRebuttal ? '反驳' : '赞同';
-      historyStore.addLog(`AI 使用 [${cardToPlay.name}] 进行 [${defenseStyle}]。`, 'clash');
+      const defenderName = defenderId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
+      historyStore.addLog(`${defenderName} 使用 [${cardToPlay.name}] 进行 [${defenseStyle}]。`, 'clash');
       this.respondToClash(cardToPlay.id, defenseStyle);
     } else {
-      historyStore.addLog('AI 无法响应，选择跳过。', 'info');
+      const defenderName = defenderId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
+      historyStore.addLog(`${defenderName} 无法响应，选择跳过。`, 'info');
       this.passDefense();
     }
   },
@@ -130,7 +135,7 @@ export const BattleController = {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
-     const settingsStore = useSettingsStore();
+    const settingsStore = useSettingsStore();
 
     // beforeResolve: allow effects to inject temp bonuses
     let extraAttacker = 0;
@@ -150,7 +155,11 @@ export const BattleController = {
     }
     gameStore.updateTopicBias(rewards.topicBiasChange);
 
-    historyStore.addLog(`声望变化: 你 ${rewards.attackerReputationChange}, AI ${rewards.defenderReputationChange}。`, 'damage');
+    const nameA = playerStore.playerA.name;
+    const nameB = playerStore.playerB.name;
+    const attackerName2 = clashInfo.attackerId === 'playerA' ? nameA : nameB;
+    const defenderName2 = clashInfo.defenderId === 'playerA' ? nameA : nameB;
+    historyStore.addLog(`声望变化: ${attackerName2} ${rewards.attackerReputationChange}, ${defenderName2} ${rewards.defenderReputationChange}。`, 'damage');
     historyStore.addLog(`议题偏向变化: ${rewards.topicBiasChange > 0 ? '+' : ''}${rewards.topicBiasChange}。`, 'info');
 
     gameStore.setClash({ ...clashInfo, ...clashResult });

@@ -22,12 +22,12 @@ export const StrengthCalculator = {
     let finalStrength = card.points || 0;
 
     // 1. Add base topic bias
-    const bias = gameStore.topicBias;
-    if (playerId === 'playerA' && bias > 0) {
-      finalStrength += bias;
-    } else if (playerId === 'playerB' && bias < 0) {
-      finalStrength += Math.abs(bias);
-    }
+    // const bias = gameStore.topicBias;
+    // if (playerId === 'playerA' && bias > 0) {
+    //   finalStrength += bias;
+    // } else if (playerId === 'playerB' && bias < 0) {
+    //   finalStrength += Math.abs(bias);
+    // }
 
     // 2. Treat as any type if status consumed (simple heuristic: grants +1 if card有任意标签可触发的被动)
     // 已通过 SkillSystem.onCardPlayed 设置了临时标记 __treatedAsAnyType

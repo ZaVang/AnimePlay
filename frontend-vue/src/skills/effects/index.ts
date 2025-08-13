@@ -25,7 +25,8 @@ const handlers: Record<string, EffectHandler> = {
     const historyStore = useHistoryStore();
     const gameStore = useGameStore();
     playerStore.drawCards(ctx.playerId, 1);
-    historyStore.addLog(`${ctx.playerId === 'playerA' ? '你' : 'AI'} 触发效果：抽1张牌。`, 'info');
+    const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
+    historyStore.addLog(`${name} 触发效果：抽1张牌。`, 'info');
     gameStore.addNotification('效果：抽1张', 'info');
   },
 
@@ -34,7 +35,8 @@ const handlers: Record<string, EffectHandler> = {
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
     playerStore.changeTp(ctx.playerId, 2);
-    historyStore.addLog(`${ctx.playerId === 'playerA' ? '你' : 'AI'} 恢复2点TP。`, 'info');
+    const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
+    historyStore.addLog(`${name} 恢复2点TP。`, 'info');
   },
 
   // Gain 1 TP
@@ -42,7 +44,8 @@ const handlers: Record<string, EffectHandler> = {
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
     playerStore.changeTp(ctx.playerId, 1);
-    historyStore.addLog(`${ctx.playerId === 'playerA' ? '你' : 'AI'} 恢复1点TP。`, 'info');
+    const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
+    historyStore.addLog(`${name} 恢复1点TP。`, 'info');
   },
 
   // Add +2 strength to the side determined by ctx.role (applies in beforeResolve)
@@ -56,8 +59,10 @@ const handlers: Record<string, EffectHandler> = {
   // Placeholder: Make next played card count as any type (requires status system)
   NEXT_CARD_ANY_TYPE: (ctx) => {
     const historyStore = useHistoryStore();
+    const playerStore = usePlayerStore();
     StatusEffectSystem.grantNextCardAnyType(ctx.playerId);
-    historyStore.addLog(`${ctx.playerId === 'playerA' ? '你' : 'AI'} 获得效果：下一张卡视为任意类型。`, 'info');
+    const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
+    historyStore.addLog(`${name} 获得效果：下一张卡视为任意类型。`, 'info');
   },
 
   // Halve opponent bias towards their favor (placeholder demo)

@@ -2,7 +2,6 @@
 import { computed } from 'vue';
 import { useGameStore } from '@/stores/battle';
 import AnimeCard from '@/components/AnimeCard.vue'; // Use the standard AnimeCard
-import type { AnimeCard as AnimeCardType } from '@/types/card';
 
 const gameStore = useGameStore();
 
