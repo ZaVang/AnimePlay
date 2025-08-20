@@ -10,39 +10,32 @@ export interface RewardResult {
 }
 
 function getStrengthCategory(diff: number): StrengthCategory {
-  if (diff >= 4) return 'attacker_crush';
+  if (diff >= 5) return 'attacker_crush';
   if (diff >= 1) return 'attacker_advantage';
   if (diff === 0) return 'draw';
-  if (diff >= -3) return 'defender_advantage';
-  if (diff <= -4) return 'defender_crush';
-  // Note: Perfect Parry (diff <= -5) is handled as a special case of defender_crush
+  if (diff >= -4) return 'defender_advantage';
+  if (diff <= -5) return 'defender_crush';
+  // Note: Perfect Parry (diff <= -6) is handled as a special case of defender_crush
   // because its rewards are a superset of the defender_crush rewards.
   return 'draw'; // Should be unreachable
 }
 
 export const RewardCalculator = {
   calculateRewards(clash: ClashInfo): RewardResult {
-
-    // Handle undefended clash
-    if (!clash.defendingCard || !clash.defenseStyle || !clash.defenderId) {
-      const baseReputationChange = Math.ceil((clash.attackingCard.points || 1) / 2);
-      if (clash.attackStyle === '辛辣点评') {
-        return { attackerReputationChange: baseReputationChange, defenderReputationChange: -baseReputationChange, topicBiasChange: 2 };
-      }
-      return { attackerReputationChange: baseReputationChange, defenderReputationChange: -baseReputationChange, topicBiasChange: 1 };
-    }
-
-    const strengthDifference = (clash.attackingCard.points || 1) - (clash.defendingCard.points || 1);
+    // 统一按最终强度计算（若未出卡，defenderStrength 为 0）
+    const attackerStrength = clash.attackerStrength ?? (clash.attackingCard.points || 0);
+    const defenderStrength = clash.defenderStrength ?? (clash.defendingCard?.points || 0);
+    const strengthDifference = attackerStrength - defenderStrength;
     const category = getStrengthCategory(strengthDifference);
     
     let result: RewardResult = { attackerReputationChange: 0, defenderReputationChange: 0, topicBiasChange: 0 };
     const biasDirection = clash.attackerId === 'playerA' ? 1 : -1;
 
     // --- Defender chose: 赞同 ---
-    if (clash.defenseStyle === '赞同') {
+    if (clash.defenseStyle === '赞同' || !clash.defenseStyle) {
       if (clash.attackStyle === '友好安利') {
         switch (category) {
-          case 'attacker_crush':   result = { attackerReputationChange: 4, defenderReputationChange: -1, topicBiasChange: 1 * biasDirection }; break;
+          case 'attacker_crush':   result = { attackerReputationChange: 4, defenderReputationChange: -1, topicBiasChange: 2 * biasDirection }; break;
           case 'attacker_advantage': result = { attackerReputationChange: 3, defenderReputationChange: 0, topicBiasChange: 1 * biasDirection }; break;
           case 'draw':             result = { attackerReputationChange: 2, defenderReputationChange: 1, topicBiasChange: 0 }; break;
           case 'defender_advantage': result = { attackerReputationChange: 1, defenderReputationChange: 1, topicBiasChange: 0 }; break;

@@ -95,7 +95,14 @@ export const BattleController = {
     const gameStore = useGameStore();
     if (!gameStore.clashInfo) return;
 
-    this.resolveClash(gameStore.clashInfo);
+    // 默认以“赞同”方式防守，且不出卡（强度为0）
+    const finalClashInfo: ClashInfo = {
+      ...gameStore.clashInfo,
+      defenseStyle: '赞同',
+      defendingCard: undefined,
+    };
+
+    this.resolveClash(finalClashInfo);
   },
 
   respondToClash(defendingAnimeId: number, defenseStyle: '赞同' | '反驳') {
