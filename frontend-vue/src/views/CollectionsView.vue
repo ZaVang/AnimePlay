@@ -2,16 +2,18 @@
 import { ref, computed } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
-import type { AnimeCard, CharacterCard, Rarity } from '@/types/card';
+import type { AnimeCard as AnimeCardType, CharacterCard as CharacterCardType, Rarity } from '@/types/card';
 import CardDetailModal from '@/components/CardDetailModal.vue';
 import DeckManager from '@/components/decks/DeckManager.vue';
+import AnimeCard from '@/components/AnimeCard.vue';
+import CharacterCard from '@/components/CharacterCard.vue';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
 
 // --- STATE for UI ---
 const activeTab = ref<'anime' | 'character' | 'decks'>('anime');
-const selectedCard = ref<AnimeCard | CharacterCard | null>(null);
+const selectedCard = ref<AnimeCardType | CharacterCardType | null>(null);
 const selectedCardType = ref<'anime' | 'character'>('anime');
 const rarityOrder: Rarity[] = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
 
@@ -21,7 +23,7 @@ const characterFilters = ref({ name: '', rarity: '' });
 
 
 // --- Event Handlers ---
-function openDetail(card: AnimeCard | CharacterCard, type: 'anime' | 'character') {
+function openDetail(card: AnimeCardType | CharacterCardType, type: 'anime' | 'character') {
     selectedCard.value = card;
     selectedCardType.value = type;
 }
@@ -53,7 +55,7 @@ const allAnimeTags = computed(() => {
     return Array.from(tags).sort();
 });
 
-const sortCards = (cards: (AnimeCard | CharacterCard & { count: number })[]) => {
+const sortCards = (cards: ((AnimeCardType & { count: number }) | (CharacterCardType & { count: number }))[]) => {
     return cards.sort((a, b) => {
         const rarityA = rarityOrder.indexOf(a.rarity);
         const rarityB = rarityOrder.indexOf(b.rarity);
@@ -65,7 +67,7 @@ const sortCards = (cards: (AnimeCard | CharacterCard & { count: number })[]) => 
 const filteredAnimeCards = computed(() => {
   if (!userStore.isLoggedIn || gameDataStore.allAnimeCards.length === 0) return [];
   
-  let cards: (AnimeCard & { count: number })[] = [];
+  let cards: (AnimeCardType & { count: number })[] = [];
   for (const [id, collectionData] of userStore.animeCollection.entries()) {
     const cardDetails = gameDataStore.getAnimeCardById(id);
     if (cardDetails) {
@@ -89,7 +91,7 @@ const filteredAnimeCards = computed(() => {
 const filteredCharacterCards = computed(() => {
   if (!userStore.isLoggedIn || gameDataStore.allCharacterCards.length === 0) return [];
 
-  let cards: (CharacterCard & { count: number })[] = [];
+  let cards: (CharacterCardType & { count: number })[] = [];
   for (const [id, collectionData] of userStore.characterCollection.entries()) {
     const cardDetails = gameDataStore.getCharacterCardById(id);
     if (cardDetails) {
