@@ -55,7 +55,7 @@ const allAnimeTags = computed(() => {
     return Array.from(tags).sort();
 });
 
-const sortCards = (cards: ((AnimeCardType & { count: number }) | (CharacterCardType & { count: number }))[]) => {
+const sortCards = <T extends AnimeCardType | CharacterCardType>(cards: (T & { count: number })[]) => {
     return cards.sort((a, b) => {
         const rarityA = rarityOrder.indexOf(a.rarity);
         const rarityB = rarityOrder.indexOf(b.rarity);
