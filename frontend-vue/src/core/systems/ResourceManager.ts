@@ -99,17 +99,29 @@ export const ResourceManager = {
   },
 
   /**
-   * Shuffles the player's deck.
+   * Shuffles the player's deck using improved Fisher-Yates algorithm.
    * @param player - The player state.
    * @returns The updated player state with a shuffled deck.
    */
   shuffleDeck(player: PlayerState): PlayerState {
     const deck = [...player.deck];
-    // Fisher-Yates shuffle algorithm
+    
+    // Enhanced Fisher-Yates shuffle with better randomness
     for (let i = deck.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
+      // Use crypto.getRandomValues for better randomness if available
+      let randomValue;
+      if (typeof window !== 'undefined' && window.crypto && window.crypto.getRandomValues) {
+        const randomArray = new Uint32Array(1);
+        window.crypto.getRandomValues(randomArray);
+        randomValue = randomArray[0] / (0xFFFFFFFF + 1); // Convert to 0-1 range
+      } else {
+        randomValue = Math.random();
+      }
+      
+      const j = Math.floor(randomValue * (i + 1));
       [deck[i], deck[j]] = [deck[j], deck[i]];
     }
+    
     return { ...player, deck };
   },
 };

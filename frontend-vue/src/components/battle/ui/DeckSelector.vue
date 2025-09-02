@@ -47,11 +47,24 @@ const emit = defineEmits<{
 <template>
   <div class="deck-selector-container">
     <h2 class="text-3xl font-bold text-center text-white mb-8">请选择您的出战卡组</h2>
-    <div class="flex items-center justify-center gap-3 mb-6">
-      <label class="text-white">AI 对手：</label>
-      <select v-model="selectedAIId" class="p-2 rounded bg-gray-800 text-white border border-gray-600">
-        <option v-for="p in aiProfiles" :key="p.id" :value="p.id">{{ p.name }}</option>
-      </select>
+    <div class="ai-selection-section mb-8">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <label class="text-white text-lg font-semibold">AI 对手：</label>
+        <select v-model="selectedAIId" class="p-3 rounded-lg bg-gray-800 text-white border border-gray-600 min-w-48">
+          <option v-for="p in aiProfiles" :key="p.id" :value="p.id">{{ p.name }}</option>
+        </select>
+      </div>
+      <div v-if="selectedAI" class="ai-info bg-gray-800/50 rounded-lg p-4 max-w-md mx-auto">
+        <p class="text-gray-300 text-center mb-2">{{ selectedAI.description }}</p>
+        <div class="flex justify-center gap-4 text-sm">
+          <span class="text-blue-400">
+            🎴 卡组: {{ selectedAI.anime.length > 0 ? '固定' : '随机' }}
+          </span>
+          <span class="text-purple-400">
+            👤 角色: {{ selectedAI.character.length > 0 ? '固定' : '随机' }}
+          </span>
+        </div>
+      </div>
     </div>
     <div v-if="Object.keys(userStore.savedDecks).length === 0" class="text-center">
       <p class="text-gray-400">没有找到已保存的卡组。</p>

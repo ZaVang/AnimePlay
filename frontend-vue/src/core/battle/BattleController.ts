@@ -2,6 +2,7 @@ import { useGameStore, useHistoryStore } from '@/stores/battle';
 import { BattleEngine } from '../calculation/BattleEngine';
 import { TurnManager } from './TurnManager';
 import type { ClashInfo } from '@/types/battle';
+import type { AnimeCard, PlayerState } from '@/types';
 import { usePlayerStore } from '@/stores/battle';
 import { useSettingsStore } from '@/stores/settings';
 import { SkillSystem } from '@/core/systems/SkillSystem';
@@ -72,23 +73,59 @@ export const BattleController = {
     const defender = playerStore[defenderId];
 
     if (gameStore.phase !== 'defense') return;
+    if (!gameStore.clashInfo) return;
 
-    const affordableCards = defender.hand
-      .filter(card => (card.cost || 0) <= defender.tp)
-      .sort((a, b) => (a.cost || 0) - (b.cost || 0)); // Prefer cheaper cards
-
-    if (affordableCards.length > 0) {
-      const cardToPlay = affordableCards[0];
-      const canAffordRebuttal = (cardToPlay.cost || 0) + 1 <= defender.tp;
-      const defenseStyle = canAffordRebuttal ? '反驳' : '赞同';
+    // 使用智能防御策略
+    const decision = this.makeDefenseDecision(defender, gameStore.clashInfo);
+    
+    if (decision.shouldDefend && decision.card) {
       const defenderName = defenderId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-      historyStore.addLog(`${defenderName} 使用 [${cardToPlay.name}] 进行 [${defenseStyle}]。`, 'clash');
-      this.respondToClash(cardToPlay.id, defenseStyle);
+      historyStore.addLog(`${defenderName} 使用 [${decision.card.name}] 进行 [${decision.style}]。`, 'clash');
+      this.respondToClash(decision.card.id, decision.style);
     } else {
       const defenderName = defenderId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-      historyStore.addLog(`${defenderName} 无法响应，选择跳过。`, 'info');
+      historyStore.addLog(`${defenderName} 选择不响应，跳过防御。`, 'info');
       this.passDefense();
     }
+  },
+
+  /**
+   * AI智能防御决策
+   */
+  makeDefenseDecision(defender: PlayerState, clashInfo: ClashInfo) {
+    const affordableCards = defender.hand.filter((card: AnimeCard) => (card.cost || 0) <= defender.tp);
+    
+    if (affordableCards.length === 0) {
+      return { shouldDefend: false };
+    }
+
+    // 计算攻击者的强度
+    const attackerStrength = clashInfo.attackingCard?.points || 0;
+    
+    // 选择最佳防御卡牌：优先考虑强度vs费用比
+    const bestDefenseCard = affordableCards.reduce((best: AnimeCard, card: AnimeCard) => {
+      const cardValue = (card.points || 1) / Math.max(card.cost || 1, 1);
+      const bestValue = (best.points || 1) / Math.max(best.cost || 1, 1);
+      return cardValue > bestValue ? card : best;
+    });
+
+    // 决定防御风格：如果有足够TP且对手攻击力强，倾向于反驳
+    const canAffordRebuttal = (bestDefenseCard.cost || 0) + 1 <= defender.tp;
+    const shouldRebuttal = canAffordRebuttal && attackerStrength >= 3;
+    const defenseStyle = shouldRebuttal && Math.random() < 0.7 ? '反驳' : '赞同';
+
+    // 决定是否防御：如果手牌很少或者卡牌价值不高，可能选择跳过
+    const handSize = defender.hand.length;
+    const cardStrength = bestDefenseCard.points || 0;
+    
+    // 如果手牌少于3张且卡牌强度低于2，30%概率跳过防御
+    const shouldSkip = handSize <= 2 && cardStrength < 2 && Math.random() < 0.3;
+    
+    return {
+      shouldDefend: !shouldSkip,
+      card: bestDefenseCard,
+      style: defenseStyle as '赞同' | '反驳'
+    };
   },
 
   async passDefense() {

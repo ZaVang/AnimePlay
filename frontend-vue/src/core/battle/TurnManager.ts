@@ -4,12 +4,32 @@ import { useHistoryStore } from '@/stores/battle';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { useUserStore, type Deck } from '@/stores/userStore';
 import { getAIProfileById, pickDefaultAIProfile, type AIProfile } from '@/core/ai/aiProfiles';
-import type { AnimeCard, CharacterCard, Card, Skill } from '@/types';
+import type { AnimeCard, CharacterCard, Skill } from '@/types';
 import type { Rarity } from '@/types/card';
 // removed duplicate Deck import
 
 import { urCharacterSkillMap } from '@/data/urCharacterSkills';
 import { PersistentEffectSystem } from '../systems/PersistentEffectSystem';
+
+// 辅助函数：正确的数组洗牌
+function shuffleArray<T>(array: T[]): T[] {
+  const result = [...array];
+  for (let i = result.length - 1; i > 0; i--) {
+    // Use crypto.getRandomValues for better randomness if available
+    let randomValue;
+    if (typeof window !== 'undefined' && window.crypto && window.crypto.getRandomValues) {
+      const randomArray = new Uint32Array(1);
+      window.crypto.getRandomValues(randomArray);
+      randomValue = randomArray[0] / (0xFFFFFFFF + 1);
+    } else {
+      randomValue = Math.random();
+    }
+    
+    const j = Math.floor(randomValue * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+}
 
 // Maps character IDs to an array of skill IDs
 const CharacterSkillMap: Record<number, string[]> = {
@@ -101,18 +121,40 @@ export const TurnManager = {
 
     // Player B (AI) uses configured profile or random fallback
     const aiProfile: AIProfile = aiProfileId ? (getAIProfileById(aiProfileId) || pickDefaultAIProfile()) : pickDefaultAIProfile();
+    
     const playerB_deck = (aiProfile.anime.length
       ? aiProfile.anime.map(id => gameDataStore.getAnimeCardById(id)).filter((c): c is AnimeCard => c !== undefined)
-      : [...gameDataStore.allAnimeCards].sort(() => 0.5 - Math.random()).slice(0, 30));
+      : shuffleArray([...gameDataStore.allAnimeCards]).slice(0, 30));
     const playerB_chars = (aiProfile.character.length
       ? aiProfile.character.map(id => gameDataStore.getCharacterCardById(id)).filter((c): c is CharacterCard => c !== undefined).map(injectSkills)
-      : [...gameDataStore.allCharacterCards]
-          .sort(() => 0.5 - Math.random())
+      : shuffleArray([...gameDataStore.allCharacterCards])
           .slice(0, 4)
           .map(injectSkills));
     
+    // Debug: Check AI deck generation and available cards
+    console.log('🤖 AI卡组生成调试:', {
+      profileName: aiProfile.name,
+      profileAnimeCount: aiProfile.anime.length,
+      generatedDeckSize: playerB_deck.length,
+      generatedCharCount: playerB_chars.length,
+      totalAvailableAnime: gameDataStore.allAnimeCards.length,
+      totalAvailableChar: gameDataStore.allCharacterCards.length,
+      sampleDeckCards: playerB_deck.slice(0, 3).map(c => c.name),
+      // 显示前20个可用的动画卡牌ID，用于配置AI卡组
+      availableAnimeIds: gameDataStore.allAnimeCards.slice(0, 20).map(c => `${c.id}(${c.name})`),
+      availableCharIds: gameDataStore.allCharacterCards.slice(0, 10).map(c => `${c.id}(${c.name})`)
+    });
+    
     gameStore.startGame();
     playerStore.setupPlayers(playerA_deck, playerA_chars, playerB_deck, playerB_chars);
+
+    // Debug: Check after setupPlayers
+    console.log('📋 setupPlayers后状态:', {
+      playerA_deckSize: playerStore.playerA.deck.length,
+      playerA_handSize: playerStore.playerA.hand.length,
+      playerB_deckSize: playerStore.playerB.deck.length,  
+      playerB_handSize: playerStore.playerB.hand.length
+    });
 
     // Set player names: logged-in user vs AI profile name
     playerStore.playerA.name = userStore.currentUser || '你';
@@ -121,9 +163,23 @@ export const TurnManager = {
     playerStore.shuffleDeck('playerA');
     playerStore.shuffleDeck('playerB');
 
+    // Debug: Check after shuffling
+    console.log('🔀 洗牌后状态:', {
+      playerA_deckSize: playerStore.playerA.deck.length,
+      playerB_deckSize: playerStore.playerB.deck.length
+    });
+
     // Draw initial hands for both players
     playerStore.drawCards('playerA', 5);
     playerStore.drawCards('playerB', 5);
+
+    // Debug: Check after drawing initial hands
+    console.log('🃏 初始抽牌后状态:', {
+      playerA_hand: playerStore.playerA.hand.length,
+      playerA_deck: playerStore.playerA.deck.length,
+      playerB_hand: playerStore.playerB.hand.length,
+      playerB_deck: playerStore.playerB.deck.length
+    });
 
     this.startTurn();
   },
@@ -156,11 +212,10 @@ export const TurnManager = {
     const aiProfile: AIProfile = aiProfileId ? (getAIProfileById(aiProfileId) || pickDefaultAIProfile()) : pickDefaultAIProfile();
     const playerB_deck = (aiProfile.anime.length
       ? aiProfile.anime.map(id => gameDataStore.getAnimeCardById(id)).filter((c): c is AnimeCard => c !== undefined)
-      : [...gameDataStore.allAnimeCards].sort(() => 0.5 - Math.random()).slice(0, 30));
+      : shuffleArray([...gameDataStore.allAnimeCards]).slice(0, 30));
     const playerB_chars = (aiProfile.character.length
       ? aiProfile.character.map(id => gameDataStore.getCharacterCardById(id)).filter((c): c is CharacterCard => c !== undefined).map(injectSkills)
-      : [...gameDataStore.allCharacterCards]
-          .sort(() => 0.5 - Math.random())
+      : shuffleArray([...gameDataStore.allCharacterCards])
           .slice(0, 4)
           .map(injectSkills));
 
@@ -198,13 +253,19 @@ export const TurnManager = {
     playerStore.syncBothPlayersMaxTp(syncedMaxTp);
     playerStore.restoreTpToMax(gameStore.activePlayer);
     // For non-active player, TP = max(TP+ syncedMaxTP//2, syncedMaxTP)
+    // 双方都恢复至最大TP
     const nonActivePlayer = gameStore.activePlayer === 'playerA' ? 'playerB' : 'playerA';
-    const currentTp = playerStore[nonActivePlayer].tp;
-    const newTp = Math.min(currentTp + Math.ceil(syncedMaxTp / 2), syncedMaxTp);
-    playerStore.changeTp(nonActivePlayer, newTp - currentTp);
+    playerStore.restoreTpToMax(nonActivePlayer);
 
-    // 2. Draw a card
+    // 2. Draw a card for the active player (at the start of their turn)
     playerStore.drawCards(gameStore.activePlayer, 1);
+    
+    // Debug: Check hand sizes after drawing
+    console.log(`回合 ${gameStore.turn} 开始后手牌状态:`, {
+      playerA: playerStore.playerA.hand.length,
+      playerB: playerStore.playerB.hand.length,
+      activePlayer: gameStore.activePlayer
+    });
 
     // 3. Process persistent effects at start of turn
     PersistentEffectSystem.getInstance().onTurnStart(gameStore.activePlayer);

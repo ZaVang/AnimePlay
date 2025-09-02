@@ -1,0 +1,29 @@
+{
+    "state": {
+        "level": 1,
+        "knowledgePoints": 0,
+        "animeGachaTickets": 100,
+        "characterGachaTickets": 100,
+        "exp": 0,
+        "savedDecks": {},
+        "viewingQueue": [
+            null,
+            null,
+            null
+        ]
+    },
+    "animeCollection": [],
+    "characterCollection": [],
+    "animePity": {
+        "totalPulls": 0,
+        "pullsSinceLastHR": 0
+    },
+    "characterPity": {
+        "totalPulls": 0,
+        "pullsSinceLastHR": 0
+    },
+    "animeHistory": [],
+    "characterHistory": [],
+    "favoriteAnime": [],
+    "favoriteCharacters": []
+}
