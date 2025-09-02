@@ -25,6 +25,11 @@ const router = createRouter({
       component: () => import('../views/BattleView.vue')
     },
     {
+      path: '/nurture',
+      name: 'nurture',
+      component: () => import('../views/NurtureView.vue')
+    },
+    {
       path: '/settings',
       name: 'settings',
       component: () => import('../views/SettingsView.vue')

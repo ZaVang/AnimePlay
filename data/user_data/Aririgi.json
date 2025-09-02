@@ -2,23 +2,43 @@
     "state": {
         "viewingQueue": [
             {
-                "animeId": 876,
-                "startTime": 1756727040755
+                "animeId": 326,
+                "startTime": 1756815600831
             },
             {
-                "animeId": 254,
-                "startTime": 1756727046544
+                "animeId": 298477,
+                "startTime": 1756815602579
             },
             {
-                "animeId": 127563,
-                "startTime": 1756727050235
+                "animeId": 120236,
+                "startTime": 1756815604332
             }
         ],
+        "watchedAnime": [
+            876,
+            254,
+            127563
+        ],
+        "viewingStats": {
+            "consecutiveDays": 1,
+            "genreProgress": {
+                "TV": 3,
+                "原创": 1,
+                "恋爱": 1,
+                "战斗": 2,
+                "日常": 1,
+                "日本": 3,
+                "游戏改": 1,
+                "漫画改": 1
+            },
+            "lastWatchDate": "2025-09-02T12:19:57.547Z",
+            "totalWatchTime": 600
+        },
         "level": 10,
-        "knowledgePoints": 13710,
+        "knowledgePoints": 14284,
         "animeGachaTickets": 120,
         "characterGachaTickets": 32,
-        "exp": 1170,
+        "exp": 12170,
         "savedDecks": {
             "test": {
                 "anime": [
@@ -2601,6 +2621,3108 @@
             "timestamp": 1756727057112
         }
     ],
-    "favoriteAnime": [],
-    "favoriteCharacters": []
+    "favoriteAnime": [
+        326,
+        254,
+        876
+    ],
+    "favoriteCharacters": [
+        27235,
+        12394,
+        12393,
+        304
+    ],
+    "characterNurtureData": [
+        [
+            21596,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            5152,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            36494,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            997,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            36497,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            72805,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            12520,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            96815,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            17601,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            953,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            23651,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            23424,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            172766,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            73337,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            36180,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            64720,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            22820,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            31640,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            23648,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            5236,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            20013,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            26002,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            73336,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            7155,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            26004,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            26569,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            17414,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            36498,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            295,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            51211,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            17647,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            3499,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            72139,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            22816,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            504,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            8322,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            17237,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            35468,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            102485,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            57673,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            65982,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            24095,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            952,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            46462,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            21369,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            69198,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            6,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            14966,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            304,
+            {
+                "affection": 63,
+                "attributes": {
+                    "charm": 57,
+                    "intelligence": 62,
+                    "mood": 100,
+                    "strength": 59
+                },
+                "dialogueHistory": [
+                    "hobby",
+                    "weather",
+                    "anime"
+                ],
+                "gifts": [
+                    {
+                        "itemId": "flower",
+                        "timestamp": 1756816196073
+                    },
+                    {
+                        "itemId": "book",
+                        "timestamp": 1756816198557
+                    }
+                ],
+                "intimacy": 0,
+                "lastInteraction": "2025-09-02T12:29:58.561Z",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 8
+            }
+        ],
+        [
+            74057,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            7152,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            17240,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            57221,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            49600,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            57306,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            60801,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            65981,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            503,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            72804,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            88132,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            46581,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            60666,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            88129,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            27235,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            10694,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            10678,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            35669,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            3186,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            58445,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            8320,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            114156,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            36178,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            21662,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            29283,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            12393,
+            {
+                "affection": 1000,
+                "attributes": {
+                    "charm": 73,
+                    "intelligence": 78,
+                    "mood": 100,
+                    "strength": 77
+                },
+                "dialogueHistory": [
+                    "anime",
+                    "greeting",
+                    "how_are_you",
+                    "weather",
+                    "anime",
+                    "park",
+                    "cafe"
+                ],
+                "gifts": [
+                    {
+                        "itemId": "candy",
+                        "timestamp": 1756816643898
+                    },
+                    {
+                        "itemId": "music_cd",
+                        "timestamp": 1756816646369
+                    },
+                    {
+                        "itemId": "music_cd",
+                        "timestamp": 1756816646738
+                    },
+                    {
+                        "itemId": "candy",
+                        "timestamp": 1756816646942
+                    },
+                    {
+                        "itemId": "flower",
+                        "timestamp": 1756816647151
+                    },
+                    {
+                        "itemId": "flower",
+                        "timestamp": 1756816647330
+                    },
+                    {
+                        "itemId": "book",
+                        "timestamp": 1756816647527
+                    },
+                    {
+                        "itemId": "candy",
+                        "timestamp": 1756816647855
+                    },
+                    {
+                        "itemId": "music_cd",
+                        "timestamp": 1756816648060
+                    },
+                    {
+                        "itemId": "music_cd",
+                        "timestamp": 1756816648245
+                    },
+                    {
+                        "itemId": "music_cd",
+                        "timestamp": 1756816648443
+                    },
+                    {
+                        "itemId": "book",
+                        "timestamp": 1756816648692
+                    },
+                    {
+                        "itemId": "candy",
+                        "timestamp": 1756816666517
+                    },
+                    {
+                        "itemId": "candy",
+                        "timestamp": 1756816687263
+                    },
+                    {
+                        "itemId": "candy",
+                        "timestamp": 1756816687449
+                    },
+                    {
+                        "itemId": "candy",
+                        "timestamp": 1756816687661
+                    },
+                    {
+                        "itemId": "candy",
+                        "timestamp": 1756816687847
+                    },
+                    {
+                        "itemId": "music_cd",
+                        "timestamp": 1756816688043
+                    },
+                    {
+                        "itemId": "flower",
+                        "timestamp": 1756816688216
+                    },
+                    {
+                        "itemId": "book",
+                        "timestamp": 1756816688409
+                    },
+                    {
+                        "itemId": "candy",
+                        "timestamp": 1756816688605
+                    },
+                    {
+                        "itemId": "music_cd",
+                        "timestamp": 1756816689204
+                    },
+                    {
+                        "itemId": "music_cd",
+                        "timestamp": 1756816689415
+                    },
+                    {
+                        "itemId": "flower",
+                        "timestamp": 1756816689601
+                    },
+                    {
+                        "itemId": "book",
+                        "timestamp": 1756816690299
+                    },
+                    {
+                        "itemId": "music_cd",
+                        "timestamp": 1756816690501
+                    },
+                    {
+                        "itemId": "candy",
+                        "timestamp": 1756816690696
+                    },
+                    {
+                        "itemId": "book",
+                        "timestamp": 1756816690885
+                    },
+                    {
+                        "itemId": "flower",
+                        "timestamp": 1756816691096
+                    },
+                    {
+                        "itemId": "flower",
+                        "timestamp": 1756816691289
+                    },
+                    {
+                        "itemId": "book",
+                        "timestamp": 1756816691485
+                    },
+                    {
+                        "itemId": "candy",
+                        "timestamp": 1756816691679
+                    },
+                    {
+                        "itemId": "music_cd",
+                        "timestamp": 1756816691971
+                    },
+                    {
+                        "itemId": "flower",
+                        "timestamp": 1756816692177
+                    },
+                    {
+                        "itemId": "flower",
+                        "timestamp": 1756816692370
+                    },
+                    {
+                        "itemId": "music_cd",
+                        "timestamp": 1756816692579
+                    },
+                    {
+                        "itemId": "flower",
+                        "timestamp": 1756816692767
+                    },
+                    {
+                        "itemId": "flower",
+                        "timestamp": 1756816692962
+                    },
+                    {
+                        "itemId": "candy",
+                        "timestamp": 1756816693166
+                    },
+                    {
+                        "itemId": "book",
+                        "timestamp": 1756816693367
+                    },
+                    {
+                        "itemId": "candy",
+                        "timestamp": 1756816693584
+                    },
+                    {
+                        "itemId": "candy",
+                        "timestamp": 1756816693772
+                    },
+                    {
+                        "itemId": "music_cd",
+                        "timestamp": 1756816693982
+                    },
+                    {
+                        "itemId": "flower",
+                        "timestamp": 1756816694193
+                    },
+                    {
+                        "itemId": "music_cd",
+                        "timestamp": 1756816694395
+                    },
+                    {
+                        "itemId": "book",
+                        "timestamp": 1756816694593
+                    },
+                    {
+                        "itemId": "music_cd",
+                        "timestamp": 1756816694793
+                    },
+                    {
+                        "itemId": "flower",
+                        "timestamp": 1756816694995
+                    },
+                    {
+                        "itemId": "music_cd",
+                        "timestamp": 1756816695198
+                    },
+                    {
+                        "itemId": "candy",
+                        "timestamp": 1756816695392
+                    },
+                    {
+                        "itemId": "candy",
+                        "timestamp": 1756816695603
+                    },
+                    {
+                        "itemId": "music_cd",
+                        "timestamp": 1756816695820
+                    },
+                    {
+                        "itemId": "music_cd",
+                        "timestamp": 1756816696033
+                    }
+                ],
+                "intimacy": 0,
+                "lastInteraction": "2025-09-02T12:50:41.613Z",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [
+                    "special_event_1756816699350",
+                    "special_event_1756816700054",
+                    "special_event_1756816894873",
+                    "date_amusement_park_1756817436827"
+                ],
+                "totalInteractions": 73
+            }
+        ],
+        [
+            65,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            31632,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            17363,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            20308,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            61551,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            104095,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            69821,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            21599,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            6527,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            21664,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            70123,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            11561,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            16424,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            13770,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            16651,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            172765,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            43540,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            88133,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            21277,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            37335,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            12394,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            31645,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            14556,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            66727,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            95934,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            18561,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            10456,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            87,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            95937,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            611,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            20316,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            57716,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            121062,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            47659,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            70504,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            100856,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            36406,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            23649,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            16237,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            11778,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            35667,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            57378,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            21580,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            13395,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            21600,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            11847,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            121067,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            19917,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ],
+        [
+            17369,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "dialogueHistory": [],
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalInteractions": 0
+            }
+        ]
+    ]
 }

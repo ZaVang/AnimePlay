@@ -3,6 +3,7 @@ import PlayerStatus from '@/components/PlayerStatus.vue';
 import ActivityLog from '@/components/ActivityLog.vue';
 import CollectionPreview from '@/components/CollectionPreview.vue';
 import WatchQueue from '@/components/WatchQueue.vue';
+import ViewingStats from '@/components/ViewingStats.vue';
 </script>
 
 <template>
@@ -14,17 +15,22 @@ import WatchQueue from '@/components/WatchQueue.vue';
     <!-- Watch Queue (独占一行) -->
     <WatchQueue />
 
-    <!-- Bottom Row: Activity Log & Collection Preview (1:1比例) -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <!-- Bottom Grid: Activity Log, Collection Preview & Viewing Stats -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
       
       <!-- Left: Activity Log -->
       <div class="flex flex-col">
         <ActivityLog class="flex-1" />
       </div>
 
-      <!-- Right: Collection Preview -->
+      <!-- Center: Collection Preview -->
       <div class="flex flex-col">
         <CollectionPreview class="flex-1" />
+      </div>
+
+      <!-- Right: Viewing Stats -->
+      <div class="flex flex-col">
+        <ViewingStats class="flex-1" />
       </div>
 
     </div>

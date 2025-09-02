@@ -32,6 +32,13 @@ interface PlayerState {
   knowledgePoints: number;
   savedDecks: Record<string, Deck>;
   viewingQueue: (ViewingQueueSlot | null)[];
+  watchedAnime: Set<number>; // 已观看过的动画ID列表
+  viewingStats: {
+    totalWatchTime: number; // 总观看时间（分钟）
+    genreProgress: Record<string, number>; // 各类型观看数量
+    consecutiveDays: number; // 连续观看天数
+    lastWatchDate: string; // 最后观看日期
+  };
 }
 
 interface PityState {
@@ -45,6 +52,36 @@ export interface LogEntry {
   timestamp: number;
 }
 
+// 角色养成数据接口
+export interface CharacterNurtureData {
+  affection: number; // 好感度 (0-1000)
+  intimacy: number; // 亲密度 (0-100)
+  lastInteraction: string; // 最后互动时间
+  totalInteractions: number; // 总互动次数
+  dialogueHistory: string[]; // 对话历史ID
+  gifts: { itemId: string; timestamp: number }[]; // 收到的礼物
+  specialEvents: string[]; // 已解锁的特殊事件
+  attributes: {
+    charm: number; // 魅力值
+    intelligence: number; // 智力值
+    strength: number; // 体力值
+    mood: number; // 心情值 (0-100)
+  };
+  // 战斗属性增强 (基于原始battle_stats的百分比加成)
+  battleEnhancements: {
+    hp: number; // HP加成 (0-100%)
+    atk: number; // 攻击力加成 (0-100%)
+    def: number; // 防御力加成 (0-100%)
+    sp: number; // SP加成 (0-100%)
+    spd: number; // 速度加成 (0-100%)
+  };
+  preferences: {
+    favoriteTopics: string[]; // 喜欢的话题
+    dislikedTopics: string[]; // 不喜欢的话题
+    favoriteGifts: string[]; // 喜欢的礼物
+  };
+}
+
 export const useUserStore = defineStore('user', () => {
   // --- STATE ---
   const currentUser = ref<string>('');
@@ -53,6 +90,13 @@ export const useUserStore = defineStore('user', () => {
     exp: 0,
     savedDecks: {},
     viewingQueue: Array(GAME_CONFIG.gameplay.viewingQueue.slots).fill(null),
+    watchedAnime: new Set<number>(),
+    viewingStats: {
+      totalWatchTime: 0,
+      genreProgress: {},
+      consecutiveDays: 0,
+      lastWatchDate: '',
+    },
   });
   const logs = ref<LogEntry[]>([]);
   const animeCollection = ref<Map<number, { count: number }>>(new Map());
@@ -63,6 +107,9 @@ export const useUserStore = defineStore('user', () => {
   const characterGachaHistory = ref<any[]>([]);
   const animePityState = ref<PityState>({ totalPulls: 0, pullsSinceLastHR: 0 });
   const characterPityState = ref<PityState>({ totalPulls: 0, pullsSinceLastHR: 0 });
+  
+  // 角色养成数据
+  const characterNurtureData = ref<Map<number, CharacterNurtureData>>(new Map());
 
   // --- GETTERS ---
   const isLoggedIn = computed(() => !!currentUser.value);
@@ -96,12 +143,20 @@ export const useUserStore = defineStore('user', () => {
         exp: 0,
         savedDecks: {},
         viewingQueue: Array(GAME_CONFIG.gameplay.viewingQueue.slots).fill(null),
+        watchedAnime: new Set<number>(),
+        viewingStats: {
+          totalWatchTime: 0,
+          genreProgress: {},
+          consecutiveDays: 0,
+          lastWatchDate: '',
+        },
     };
     logs.value = [];
     animeCollection.value.clear();
     characterCollection.value.clear();
     favoriteAnime.value.clear();
     favoriteCharacters.value.clear();
+    characterNurtureData.value.clear();
     animeGachaHistory.value = [];
     characterGachaHistory.value = [];
     animePityState.value = { totalPulls: 0, pullsSinceLastHR: 0 };
@@ -119,8 +174,23 @@ export const useUserStore = defineStore('user', () => {
         addLog('欢迎新玩家！已为您初始化默认存档。', 'success');
       } else {
         const payload = data;
-        const initialState = { viewingQueue: Array(GAME_CONFIG.gameplay.viewingQueue.slots).fill(null) };
-        playerState.value = { ...initialState, ...playerState.value, ...payload.state };
+        const initialState = { 
+          viewingQueue: Array(GAME_CONFIG.gameplay.viewingQueue.slots).fill(null),
+          watchedAnime: new Set<number>(),
+          viewingStats: {
+            totalWatchTime: 0,
+            genreProgress: {},
+            consecutiveDays: 0,
+            lastWatchDate: '',
+          },
+        };
+        
+        // 反序列化playerState，处理Set类型和新字段
+        const loadedState = { ...initialState, ...playerState.value, ...payload.state };
+        if (payload.state?.watchedAnime && Array.isArray(payload.state.watchedAnime)) {
+          loadedState.watchedAnime = new Set(payload.state.watchedAnime);
+        }
+        playerState.value = loadedState;
 
         animePityState.value = payload.animePity || animePityState.value;
         characterPityState.value = payload.characterPity || characterPityState.value;
@@ -134,6 +204,11 @@ export const useUserStore = defineStore('user', () => {
         characterGachaHistory.value = payload.characterHistory || [];
         favoriteAnime.value = new Set(payload.favoriteAnime || []);
         favoriteCharacters.value = new Set(payload.favoriteCharacters || []);
+        
+        // 加载角色养成数据
+        const savedNurtureData = payload.characterNurtureData || [];
+        characterNurtureData.value = new Map(savedNurtureData);
+        
         addLog('成功从服务器加载存档。', 'info');
       }
     } catch (error) {
@@ -145,8 +220,15 @@ export const useUserStore = defineStore('user', () => {
 
   async function saveStateToServer(showAlert = false) {
     if (!currentUser.value) return;
+    
+    // 序列化playerState，处理Set类型
+    const serializedState = {
+      ...playerState.value,
+      watchedAnime: Array.from(playerState.value.watchedAnime),
+    };
+    
     const payload = {
-        state: playerState.value,
+        state: serializedState,
         animeCollection: Array.from(animeCollection.value.entries()),
         characterCollection: Array.from(characterCollection.value.entries()),
         animePity: animePityState.value,
@@ -155,6 +237,7 @@ export const useUserStore = defineStore('user', () => {
         characterHistory: characterGachaHistory.value,
         favoriteAnime: Array.from(favoriteAnime.value),
         favoriteCharacters: Array.from(favoriteCharacters.value),
+        characterNurtureData: Array.from(characterNurtureData.value.entries()),
     };
     try {
         const response = await fetch('/api/user/data', {
@@ -322,8 +405,48 @@ export const useUserStore = defineStore('user', () => {
     if (Date.now() >= endTime) {
       addExp(rewards.exp);
       playerState.value.knowledgePoints += rewards.knowledge;
-      addLog(`看完了 ${anime.name}！获得了 ${rewards.exp} 经验和 ${rewards.knowledge} 知识点。`, 'success');
+      
+      // 添加到已观看历史
+      playerState.value.watchedAnime.add(slot.animeId);
+      
+      // 更新观看统计
+      const stats = playerState.value.viewingStats;
+      stats.totalWatchTime += rewards.time;
+      
+      // 更新类型观看进度
+      if (anime.synergy_tags) {
+        anime.synergy_tags.forEach(genre => {
+          stats.genreProgress[genre] = (stats.genreProgress[genre] || 0) + 1;
+        });
+      }
+      
+      // 更新连续观看天数
+      const today = new Date().toDateString();
+      const lastDate = new Date(stats.lastWatchDate).toDateString();
+      const yesterday = new Date(Date.now() - 24 * 60 * 60 * 1000).toDateString();
+      
+      if (stats.lastWatchDate === '') {
+        // 首次观看
+        stats.consecutiveDays = 1;
+      } else if (lastDate === yesterday) {
+        // 连续观看
+        stats.consecutiveDays += 1;
+      } else if (lastDate !== today) {
+        // 断链，重新开始
+        stats.consecutiveDays = 1;
+      }
+      // 如果是同一天，不改变连续天数
+      
+      stats.lastWatchDate = new Date().toISOString();
+      
+      // 连续观看奖励
+      if (stats.consecutiveDays >= 7 && stats.consecutiveDays % 7 === 0) {
+        const bonusTickets = Math.min(5, Math.floor(stats.consecutiveDays / 7));
+        playerState.value.animeGachaTickets += bonusTickets;
+        addLog(`🎉 连续观看${stats.consecutiveDays}天！获得额外${bonusTickets}张动画券！`, 'success');
+      }
 
+      addLog(`看完了 ${anime.name}！获得了 ${rewards.exp} 经验和 ${rewards.knowledge} 知识点。`, 'success');
       playerState.value.viewingQueue[slotIndex] = null;
       saveStateToServer();
     } else {
@@ -442,6 +565,172 @@ export const useUserStore = defineStore('user', () => {
     saveStateToServer();
   }
 
+  // --- 角色养成系统方法 ---
+  
+  // 获取角色养成数据，如果不存在则创建默认数据
+  function getNurtureData(characterId: number): CharacterNurtureData {
+    if (!characterNurtureData.value.has(characterId)) {
+      const defaultData: CharacterNurtureData = {
+        affection: 0,
+        intimacy: 0,
+        lastInteraction: '',
+        totalInteractions: 0,
+        dialogueHistory: [],
+        gifts: [],
+        specialEvents: [],
+        attributes: {
+          charm: 50,
+          intelligence: 50,
+          strength: 50,
+          mood: 80
+        },
+        battleEnhancements: {
+          hp: 0,
+          atk: 0,
+          def: 0,
+          sp: 0,
+          spd: 0
+        },
+        preferences: {
+          favoriteTopics: [],
+          dislikedTopics: [],
+          favoriteGifts: []
+        }
+      };
+      characterNurtureData.value.set(characterId, defaultData);
+    }
+    return characterNurtureData.value.get(characterId)!;
+  }
+
+  // 增加好感度
+  function increaseAffection(characterId: number, amount: number) {
+    if (!isLoggedIn.value) return;
+    
+    const nurtureData = getNurtureData(characterId);
+    const oldAffection = nurtureData.affection;
+    nurtureData.affection = Math.min(1000, nurtureData.affection + amount);
+    nurtureData.lastInteraction = new Date().toISOString();
+    nurtureData.totalInteractions++;
+
+    const gameDataStore = useGameDataStore();
+    const character = gameDataStore.getCharacterCardById(characterId);
+    
+    if (character) {
+      addLog(`与 ${character.name} 的好感度增加了 ${amount} 点！`, 'success');
+      
+      // 检查是否达到了新的好感度等级
+      // TODO: 实现等级提升奖励和事件解锁
+    }
+    
+    saveStateToServer();
+  }
+
+  // 进行对话互动
+  function interactWithCharacter(characterId: number, dialogueId: string) {
+    if (!isLoggedIn.value) return;
+    
+    const nurtureData = getNurtureData(characterId);
+    nurtureData.dialogueHistory.push(dialogueId);
+    nurtureData.lastInteraction = new Date().toISOString();
+    nurtureData.totalInteractions++;
+    
+    // TODO: 根据对话内容调整好感度和心情
+    // TODO: 解锁新的对话选项
+    
+    saveStateToServer();
+  }
+
+  // 送礼物
+  function giveGift(characterId: number, giftId: string) {
+    if (!isLoggedIn.value) return;
+    
+    const nurtureData = getNurtureData(characterId);
+    nurtureData.gifts.push({
+      itemId: giftId,
+      timestamp: Date.now()
+    });
+    
+    // TODO: 根据角色偏好计算礼物效果
+    // TODO: 实现礼物系统和效果计算
+    
+    const gameDataStore = useGameDataStore();
+    const character = gameDataStore.getCharacterCardById(characterId);
+    
+    if (character) {
+      addLog(`向 ${character.name} 送出了礼物！`, 'success');
+    }
+    
+    saveStateToServer();
+  }
+
+  // 提升角色属性
+  function enhanceAttribute(characterId: number, attribute: keyof CharacterNurtureData['attributes'], amount: number) {
+    if (!isLoggedIn.value) return;
+    
+    const nurtureData = getNurtureData(characterId);
+    const oldValue = nurtureData.attributes[attribute];
+    nurtureData.attributes[attribute] = Math.min(100, oldValue + amount);
+    
+    const gameDataStore = useGameDataStore();
+    const character = gameDataStore.getCharacterCardById(characterId);
+    
+    if (character) {
+      const attrName = {
+        charm: '魅力',
+        intelligence: '智力',
+        strength: '体力',
+        mood: '心情'
+      }[attribute] || attribute;
+      addLog(`${character.name} 的${attrName}提升了 ${amount} 点！`, 'success');
+    }
+    
+    saveStateToServer();
+  }
+
+  // 提升角色战斗属性
+  function enhanceBattleStat(characterId: number, stat: keyof CharacterNurtureData['battleEnhancements'], amount: number) {
+    if (!isLoggedIn.value) return;
+    
+    const nurtureData = getNurtureData(characterId);
+    const oldValue = nurtureData.battleEnhancements[stat];
+    nurtureData.battleEnhancements[stat] = Math.min(100, oldValue + amount);
+    
+    const gameDataStore = useGameDataStore();
+    const character = gameDataStore.getCharacterCardById(characterId);
+    
+    if (character) {
+      const statName = {
+        hp: '生命值',
+        atk: '攻击力',
+        def: '防御力',
+        sp: 'SP值',
+        spd: '速度'
+      }[stat] || stat;
+      addLog(`${character.name} 的${statName}加成提升了 ${amount}%！`, 'success');
+    }
+    
+    saveStateToServer();
+  }
+
+  // 获取角色最终战斗属性 (原始属性 + 百分比加成)
+  function getEnhancedBattleStats(characterId: number) {
+    const gameDataStore = useGameDataStore();
+    const character = gameDataStore.getCharacterCardById(characterId);
+    if (!character?.battle_stats) return null;
+
+    const nurtureData = getNurtureData(characterId);
+    const baseStats = character.battle_stats;
+    const enhancements = nurtureData.battleEnhancements;
+
+    return {
+      hp: Math.floor(baseStats.hp * (1 + enhancements.hp / 100)),
+      atk: Math.floor(baseStats.atk * (1 + enhancements.atk / 100)),
+      def: Math.floor(baseStats.def * (1 + enhancements.def / 100)),
+      sp: Math.floor(baseStats.sp * (1 + enhancements.sp / 100)),
+      spd: Math.floor(baseStats.spd * (1 + enhancements.spd / 100))
+    };
+  }
+
   return {
     currentUser,
     playerState,
@@ -475,5 +764,14 @@ export const useUserStore = defineStore('user', () => {
     dismantleCard,
     dismantleAllDuplicates,
     toggleFavorite,
+    // 养成系统
+    characterNurtureData,
+    getNurtureData,
+    increaseAffection,
+    interactWithCharacter,
+    giveGift,
+    enhanceAttribute,
+    enhanceBattleStat,
+    getEnhancedBattleStats,
   };
 });
