@@ -1,0 +1,64 @@
+{
+    "id": 7981,
+    "name": "万城目ふみ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7f/21/7981_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/21/7981_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/21/7981_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7f/21/7981_crt_anidb.jpg"
+    },
+    "summary": "長身の美少女で、眼鏡をかけている。性格はおとなしく、泣き虫で悩みがちである。\r\n高校入学を機にかつて住んでいた鎌倉に戻ってきたところ、幼馴染のあーちゃんと再会する。肉体関係まで持っていた従姉の千津がふみを裏切るようにして結婚してしまい、落ち込んでいた。高校の先輩である杉本恭己と付き合い始めるも数ヶ月で破局。\r\nその際に自身の初恋の相手が幼馴染のあーちゃんであったことを思い出し、あーちゃんを好きという想いが募るようになる。\r\nもともとは文芸部に所属していたが、のちに部員不足に悩む演劇部に移籍する。ただし人前で芝居などは間違ってもできない性格のため、あくまでも部員数確保のための人員であると自覚している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "万城目富美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "まんじょうめ ふみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Manjoume Fumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月21日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "171cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 21,
+    "stat": {
+        "comments": 4,
+        "collects": 25
+    },
+    "anime_ids": [
+        1758
+    ]
+}

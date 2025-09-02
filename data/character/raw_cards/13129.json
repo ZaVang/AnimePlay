@@ -1,0 +1,52 @@
+{
+    "id": 13129,
+    "name": "ファンタム・レディ（フィアナ）",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/62/7b/13129_crt_37Eh8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/7b/13129_crt_37Eh8.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/7b/13129_crt_37Eh8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/62/7b/13129_crt_37Eh8.jpg"
+    },
+    "summary": "吉路加美什军创造的“完美士兵”（PS）之一，年龄不明的神秘女性。军方称其为“原型一号”（Proto One）或“素体”，TV版中段开始基里科称其为“菲娅娜”，此名源于“火焰”（Fire），与主题歌“炎之命运”相照应。\r\n由于在刚刚制造出来时的“未教育”状态与基里科相遇，而被刷入了基里科存在的意识，对其产生了爱慕之情。作为不应该有感情的PS，会产生爱情说明还是残次品。在库门篇中，由于对其进行秘密监视的人员塞尔吉·波罗死亡，此后一直与基里科一同行动。\r\nPS有着异于常人的反射神经，在战场上效果显著。而其生命则需要一种稀有金属“鸡鸡合金”（ヂヂリウム Tidirium）的放射线来维持，而指挥官为了控制PS的心理状态，往往对此进行隐瞒。\r\nTV版中没有明确，但是后续作品中追加了“PS寿命只有2年”这一设定。从TV版第一话到最后一幕基本上时间差就是2年，菲娅娜的寿命也差不多到了尽头。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "菲娅娜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "幻影女士"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Phantom Lady"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fantamu Redi (Fiana)"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 5
+    },
+    "anime_ids": [
+        10379
+    ]
+}

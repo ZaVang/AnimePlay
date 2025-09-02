@@ -1,0 +1,120 @@
+{
+    "id": 4264,
+    "name": "忍者乱太郎 1期",
+    "image_path": "data/images/anime/4264.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "時は戦国乱世。先祖代々ヒラ忍者の血筋である乱太郎は、父の勧めで忍術学園に入学し、一流のエリート忍者になるべく勉強する。しかし、友達のしんべヱ・きり丸と共に、常に成績は落第点。追試、補習授業は当たり前。頑張っても空回りする3人組に先生達も振り回されるが、そんな彼らには常に事件が降り注ぐ。3人組は足りない知恵を出し合って、いつのまにやら大活躍。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 47,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1993-04-10",
+    "rating_rank": 983,
+    "rating_score": 7.5,
+    "rating_total": 500,
+    "main_character_ids": [
+        178303,
+        178304,
+        178305
+    ],
+    "main_characters": [
+        {
+            "id": 178303,
+            "name": "猪名寺乱太郎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9f/71/178303_crt_uTpL2.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/71/178303_crt_uTpL2.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/71/178303_crt_uTpL2.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9f/71/178303_crt_uTpL2.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3933,
+                    "name": "高山みなみ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/29/8f/3933_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/8f/3933_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/8f/3933_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/29/8f/3933_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "中学时代加入向日葵剧团。高中毕业后，曾经是一个普通的OL，22岁时立志成为声优。与日本歌手永野椎菜合组歌唱组合TWO-MIX。\r\n2005年5月5日，与青山刚昌结婚。 \r\n根据日本《朝日新闻》2005年6月2日报道，《名侦探柯南》之父、41岁的青山刚昌当天在接受日本著名杂志《女性名流》的采访中承认，将迎娶在《名侦探柯南》动画片中为柯南配音的日本著名声优、当时41岁的高山南，而两人已于高山南的生日，也就是5月5日，正式办理了登记结婚手续。\r\n2007年12月9日，与青山刚昌离婚。 \r\n自从两人05年5月结婚以来，青山先生在漫画制作的截稿期之前都会在工作场所埋头苦干，而著名声优高山南工作也非常繁忙。在经常擦肩而过的生活持续之下，两人在甚少的沟通和关照之下，感情也渐渐变淡。最后，两人在两年后的12月9日决定离婚，至于青山先生对于传媒的采访态度为“无可奉告”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 178304,
+            "name": "摂津のきり丸",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/28/4d/178304_crt_3Djn2.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/4d/178304_crt_3Djn2.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/4d/178304_crt_3Djn2.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/28/4d/178304_crt_3Djn2.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3830,
+                    "name": "田中真弓",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0b/54/3830_prsn_npPoO.jpg?r=1671507509",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/54/3830_prsn_npPoO.jpg?r=1671507509",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/54/3830_prsn_npPoO.jpg?r=1671507509",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0b/54/3830_prsn_npPoO.jpg?r=1671507509"
+                    },
+                    "short_summary": "日本の声優、女優、ナレーターである。本名、阿部 真弓（あべ まゆみ）。東京都出身。青二プロダクション所属。日本芸術専門学校特別講師。\r\n\r\n青山学院女子短期大学卒業。幼少期から目立ちたがりで、学生時代からは演劇にも打ち込み、学芸祭のクラス公演などで演劇をしていたのをきっかけとして、舞台女優として身を立てる決意を固める。\r\n\r\n女優としての活動の場を求めて、文学座、青年座などに応募するも全て不採用だった。その中で「あなたは背が低いし、小顔で、全てが小作りで舞台栄えしない。妖精や子供など、役柄が限られてしまうから」と言われ、田中は非常に落ち込んだとのこと。フジテレビのアナウンサー試験にも応募し、最後の5人まで残ったものの内定には至らなかった。作曲家の鈴木邦彦の下で歌の勉強をしていたこともあった。ある日、東京・渋谷のあるバーの前で歌手募集の広告を見つけ、そのバーで歌うことになる。たまたまその店に来たテアトル・エコーの音響に「うちの劇団なんか合っているんじゃないかな、チビばっかりですよ」と勧められ、その付属養成所の試験を受けて合格、短大卒業後はテアトル・エコーに所属することとなった。\r\n\r\n声優として駆け出しの頃だった1978年には、田宮二郎の遺作となった『白い巨塔』の第2回に、財前五郎の講義を受ける医学生役と里見医院の看護婦役で出演している。\r\n\r\n以前はNPSテアトル、アーツビジョン、大橋巨泉事務所（現：オーケープロダクション）に所属していた。\r\n\r\n1978年に『激走!ルーベンカイザー』（高木涼子）で声優デビュー。同年には人気刑事ドラマ『Gメン'75』の「香港ロケ編」で、事件解決に協力する香港の難民少年役をアテレコで演じた。\r\n\r\n1980年代には、島津冴子とラジオ番組『アニメトピア』に2代目パーソナリティーとして出演、少し後に『さすがの猿飛』に揃って出演した。1983年から長期にわたり、『うる星やつら』で女性でありながら格好も言葉遣いも少年の姿の藤波竜之介役を演じたことで大きく知名度を上げた。\r\n\r\n2006年には、CD企画『外道女王』（原作伊豆一彦・脚本伊藤良徳）にて主役を担当した。\r\n\r\n2011年に第5回声優アワード「高橋和枝賞」を受賞。\r\n\r\n2012年に伊倉一恵、竹田えり、高乃麗と共に演劇ユニット「コーネンキーズ」を結成。\r\n\r\n2013年に第7回声優アワード「キッズ・ファミリー賞」を受賞。\r\n\r\n2017年1月9日、テレビ朝日にて放映された『人気声優200人が本気で選んだ!声優総選挙!3時間SP』で第6位に入選。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 178305,
+            "name": "福富しんべヱ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f1/3c/178305_crt_Rr4m8.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/3c/178305_crt_Rr4m8.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/3c/178305_crt_Rr4m8.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f1/3c/178305_crt_Rr4m8.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5454,
+                    "name": "一龍斎貞友",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/10/70/5454_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/10/70/5454_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/10/70/5454_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/10/70/5454_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

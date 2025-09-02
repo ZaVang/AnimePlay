@@ -1,0 +1,56 @@
+{
+    "id": 10409,
+    "name": "小红帽恰恰",
+    "image_path": "data/images/anime/10409.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　恰恰是一個戴著小紅帽的見習小魔女，與魔法師傅聖洛威住在摩奇摩奇山上。當恰恰與好朋友阿力和希尼一起用魔法飾物，恰恰就能變身成魔法公主。\r\n\r\n　　恰恰其實是國王及王后的女兒，大魔王在恰恰幼年時攻擊城堡，把國王和王后變成石像，恰恰則被塞拉維救走了。大魔王亦被恰恰的爺爺的魔法所困，不能離開城堡，只能派手下追尋恰恰下落，但那些手下每次都被魔法公主打敗。最後恰恰和朋友們進入城堡打敗大魔王，國王和王后回復為人。後來恰恰和朋友們為了保護世界，以三件魔法飾物封印「黑暗之門」，從此恰恰不能再變成魔法公主，但仍可以用另一些魔法物品施行魔法。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 74,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1994-01-07",
+    "rating_rank": 1144,
+    "rating_score": 7.5,
+    "rating_total": 159,
+    "main_character_ids": [
+        8177
+    ],
+    "main_characters": [
+        {
+            "id": 8177,
+            "name": "セラヴィー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/74/e1/8177_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/74/e1/8177_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/74/e1/8177_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/74/e1/8177_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5398,
+                    "name": "泉類亨",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "",
+                        "medium": "",
+                        "small": "",
+                        "grid": ""
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

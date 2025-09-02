@@ -1,0 +1,122 @@
+{
+    "id": 175198,
+    "name": "91天",
+    "image_path": "data/images/anime/175198.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "禁酒法时代——。法律失去力量，街道被黑手党所支配。\r\n舞台是，暗中有着密造酒的交易，表面显露出繁华的街市·罗雷斯。经过一段时日后来到这一街市的，阿维里奥。他是，曾经于在这块土地上与黑手党的抗争中，家人被杀的男人。\r\n某天，阿维里奥收到了神秘人物的一封来信。以这封信为契机，他的复仇之火被点燃，并重返罗雷斯。之后，他侵入仇家瓦内蒂一家，为了完成复仇而接近唐·瓦内蒂的儿子尼禄。\r\n杀戮带来杀戮，复仇连锁向新的复仇。被悲哀命运引导的男人们，在这91日内的故事的结局会是……？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2016-07-08",
+    "rating_rank": 1882,
+    "rating_score": 7.2,
+    "rating_total": 1841,
+    "main_character_ids": [
+        41866,
+        41867
+    ],
+    "main_characters": [
+        {
+            "id": 41866,
+            "name": "アヴィリオ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b2/fc/41866_crt_1n8Bs.jpg?r=1463649961",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/fc/41866_crt_1n8Bs.jpg?r=1463649961",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/fc/41866_crt_1n8Bs.jpg?r=1463649961",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b2/fc/41866_crt_1n8Bs.jpg?r=1463649961"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4265,
+                    "name": "近藤隆",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4e/8e/4265_prsn_6DRwU.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/8e/4265_prsn_6DRwU.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/8e/4265_prsn_6DRwU.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4e/8e/4265_prsn_6DRwU.jpg"
+                    },
+                    "short_summary": "近藤 隆（こんどう たかし、1979年5月12日 - ）は、日本の男性声優、ナレーター、歌手である。紅屋25時、ビーボを経て、AMBERnote所属となった。愛知県岡崎市出身。\r\n\r\nアミューズメントメディア総合学院卒業。アニメ初主演である『BLACK CAT』のトレイン＝ハートネット役で知名度を上げる。それ以降、アニメへの出演が多い。\r\n\r\n2007年からは歌手活動もするようになり、音楽CDの発売が増えた。『家庭教師ヒットマンREBORN!』のキャラクター「雲雀恭弥VS六道骸」名義で発売したキャラクターソング兼、番組EDテーマ「Sakura addiction」（2種）がオリコンシングル週間ランキングでは2枚の合算集計ながら初登場7位、11月期月間ランキングでは11位と、男性声優によるキャラクターソングとしては異例のロングヒットを記録した。\r\n\r\nトレイン＝ハートネット役や雲雀恭弥役をはじめ、二枚目役やクールな役が多いが、『奏光のストレイン』のラルフ＝ウィーレックのような悪役も演じることがある。また、吹き替えの仕事でも多く活躍している。\r\n\r\n『BLACK CAT』での共演以来、福圓美里とは共演する機会が非常に多く、本人たちによれば、くされ縁化しているとのこと。『RADIO BLACK CAT』で共にパーソナリティをやっていたこともある。",
+                    "locked": false
+                },
+                {
+                    "id": 16264,
+                    "name": "朝井彩加",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2c/01/16264_prsn_eDeSy.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/01/16264_prsn_eDeSy.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/01/16264_prsn_eDeSy.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2c/01/16264_prsn_eDeSy.jpg"
+                    },
+                    "short_summary": "日本の声優、女優。\r\n2013年1月1日より青年座映画放送に所属。同年、アミューズメントメディア総合学院東京校を卒業、および声優活動を開始し、『私がモテないのはどう考えてもお前らが悪い!』で初のレギュラー出演。\r\n2015年、『新妹魔王の契約者』の成瀬澪役で初のヒロイン役を務める。\r\n2017年5月に青年座映画放送を退所し、その後はフリーで活動。10月より東映撮影所に所属。\r\n2020年8月にインテンションへの移籍を報告した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 41867,
+            "name": "ネロ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/90/48/41867_crt_6f6r7.jpg?r=1463649997",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/48/41867_crt_6f6r7.jpg?r=1463649997",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/48/41867_crt_6f6r7.jpg?r=1463649997",
+                "grid": "https://lain.bgm.tv/pic/crt/g/90/48/41867_crt_6f6r7.jpg?r=1463649997"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5872,
+                    "name": "江口拓也",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f6/f1/5872_prsn_d0uhD.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/f1/5872_prsn_d0uhD.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/f1/5872_prsn_d0uhD.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f6/f1/5872_prsn_d0uhD.jpg"
+                    },
+                    "short_summary": "江口拓也（1987年5月22日－），日本男性配音演员，出身于茨城县。目前隶属于81 Produce。\r\n\r\n毕业自日本工学院専门学校。第1回81竞试合格者。\r\n2012年获得第6届新人男声优奖。\r\n和木村良平、代永翼组成团体“Trignal”（隶属于Kiramune）共同主持广播“Trignalのキラキラ☆ビートＲ”。\r\n2011年8月和小野友树组成团体“Teamゆーたく”。\r\n对咖哩饭有异常的热爱，曾经有一周吃五次咖哩的经验，也常在推特上PO有关咖哩的推文。\r\n认为自己是M，但被杉田智和评论为“披着M皮的S”。\r\n不管是在广播还是见面会都很容易被前辈捉弄，就连跟同辈的声优也被照样捉弄。",
+                    "locked": false
+                },
+                {
+                    "id": 14781,
+                    "name": "青木瑠璃子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d9/c4/14781_prsn_gI799.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/c4/14781_prsn_gI799.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/c4/14781_prsn_gI799.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d9/c4/14781_prsn_gI799.jpg"
+                    },
+                    "short_summary": "青木瑠璃子（1990年3月24日－）是日本的女性声优，Atomic Monkey所属。埼玉县出身。血型O型。法政大学社会学部媒体社会学科毕业。\r\n\r\n趣味・特技：剣道、水泳、ゲーム",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

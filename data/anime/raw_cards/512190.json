@@ -1,0 +1,388 @@
+{
+    "id": 512190,
+    "type": 2,
+    "name": "瑠璃の宝石",
+    "name_cn": "琉璃的宝石",
+    "summary": "最喜欢闪亮亮事物的女高中生──谷川瑠璃，有天听说「可以靠自己采到水晶！」而为了寻找水晶前往山中。她在山里遇见专攻矿物学的女研究生──荒砥凪，于是两人决定一同采集矿物。有时为了寻找水晶走在山中的道路，有时为了捡拾石榴石浸在溪水中，有时又为了寻找未知的矿物而窥望显微镜──瑠璃在凪的引导下，一头栽进了矿物采集的世界。\r\n「就算是我应该也能采得到才对！」\r\n这正是任谁都曾有过的梦想。正宗科学冒险故事就要开始了！",
+    "nsfw": false,
+    "locked": false,
+    "date": "2025-07-06",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/27/d7/512190_3FtCT.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/27/d7/512190_3FtCT.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/27/d7/512190_3FtCT.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/27/d7/512190_3FtCT.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/27/d7/512190_3FtCT.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "琉璃的宝石"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Ruri no Houseki",
+                    "k": null
+                },
+                {
+                    "v": "Introduction to Mineralogy",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2025年7月6日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://rurinohouseki.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX"
+        },
+        {
+            "key": "其他电视台",
+            "value": "BS11 / ABCテレビ / テレビ愛知 / AT-X"
+        },
+        {
+            "key": "导演",
+            "value": "藤井慎吾"
+        },
+        {
+            "key": "音乐",
+            "value": "阿知波大輔、柳川和樹"
+        },
+        {
+            "key": "Copyright",
+            "value": "©2025 渋谷圭一郎/KADOKAWA/「瑠璃の宝石」製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "渋谷圭一郎（HARTA COMIX/KADOKAWA 刊）"
+        },
+        {
+            "key": "人物设定",
+            "value": "藤井茉由"
+        },
+        {
+            "key": "设定",
+            "value": "矿物设定：CLUSELLER"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "玉井健二、南田健吾 / 宅見将典"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "大濱健悟 / 宅見将典"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "安田レイ / 矢野水音"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "安田レイ / Hana Hope"
+        },
+        {
+            "key": "製作",
+            "value": "「瑠璃の宝石」製作委員会（Aniplex、KADOKAWA、TOKYO MX、日本BS放送、AT-X、フリュー、ムービック 、ビットグルーヴプロモーション、EGG FIRM）"
+        },
+        {
+            "key": "企画",
+            "value": "岩上敦宏、工藤大丈、佐藤真紀、羽川寛、佐野圭介、津曲隆行、髙橋竜、福井詔雄、大澤信博"
+        },
+        {
+            "key": "总制片人",
+            "value": "中山信宏、大澤信博"
+        },
+        {
+            "key": "制片人",
+            "value": "藤本紀子、石脇剛、長嶺利江子、大和田智之、西前朱加、綾野佳菜子、三浦史、中村暢、畠山拓郎"
+        },
+        {
+            "key": "动画制片人",
+            "value": "大友寿也"
+        },
+        {
+            "key": "主动画师",
+            "value": "关键动画师：中井杏、内山玄基、二宮歩路、Rui2"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "山内真治"
+        },
+        {
+            "key": "作画监督",
+            "value": "CLUSELLER（矿物作画监督）、藤井茉由"
+        },
+        {
+            "key": "色彩指定",
+            "value": "土居真紀子"
+        },
+        {
+            "key": "特效",
+            "value": "矿物特效：CLUSELLER；渡辺祥生"
+        },
+        {
+            "key": "摄影监督",
+            "value": "尾形拓哉；辅佐：小田来夢"
+        },
+        {
+            "key": "摄影",
+            "value": "渡辺祥生、加賀美帆"
+        },
+        {
+            "key": "剪辑",
+            "value": "岡祐司；剪辑工作室：Imagica EMS"
+        },
+        {
+            "key": "录音",
+            "value": "藤田直美；录音工作室：ONSEN STUDIO"
+        },
+        {
+            "key": "录音助理",
+            "value": "槇洋介"
+        },
+        {
+            "key": "音响",
+            "value": "ビットグルーヴプロモーション；音响制作担当：吉澤美由希"
+        }
+    ],
+    "volumes": 0,
+    "eps": 13,
+    "total_episodes": 13,
+    "rating": {
+        "rank": 644,
+        "total": 1573,
+        "count": {
+            "one": 2,
+            "two": 2,
+            "three": 4,
+            "four": 5,
+            "five": 12,
+            "six": 98,
+            "seven": 467,
+            "eight": 811,
+            "nine": 124,
+            "ten": 48
+        },
+        "score": 7.7
+    },
+    "collection": {
+        "wish": 1580,
+        "collect": 168,
+        "doing": 6775,
+        "on_hold": 81,
+        "dropped": 93
+    },
+    "tags": [
+        {
+            "name": "2025年7月",
+            "count": 702
+        },
+        {
+            "name": "StudioBind",
+            "count": 700
+        },
+        {
+            "name": "漫画改",
+            "count": 629
+        },
+        {
+            "name": "TV",
+            "count": 514
+        },
+        {
+            "name": "日常",
+            "count": 496
+        },
+        {
+            "name": "科普",
+            "count": 350
+        },
+        {
+            "name": "2025",
+            "count": 307
+        },
+        {
+            "name": "矿物",
+            "count": 299
+        },
+        {
+            "name": "藤井慎吾",
+            "count": 286
+        },
+        {
+            "name": "漫改",
+            "count": 239
+        },
+        {
+            "name": "日本",
+            "count": 235
+        },
+        {
+            "name": "百合",
+            "count": 209
+        },
+        {
+            "name": "轻百合",
+            "count": 183
+        },
+        {
+            "name": "横手美智子",
+            "count": 108
+        },
+        {
+            "name": "2025年",
+            "count": 15
+        },
+        {
+            "name": "TVA",
+            "count": 12
+        },
+        {
+            "name": "7月",
+            "count": 7
+        },
+        {
+            "name": "萌",
+            "count": 6
+        },
+        {
+            "name": "20年代",
+            "count": 5
+        },
+        {
+            "name": "治愈",
+            "count": 5
+        },
+        {
+            "name": "2025夏",
+            "count": 5
+        },
+        {
+            "name": "地质",
+            "count": 4
+        },
+        {
+            "name": "轻百",
+            "count": 4
+        },
+        {
+            "name": "琉璃的宝石",
+            "count": 3
+        },
+        {
+            "name": "2025.7",
+            "count": 3
+        },
+        {
+            "name": "新作",
+            "count": 3
+        },
+        {
+            "name": "スタジオバインド",
+            "count": 3
+        },
+        {
+            "name": "萌豚饲料",
+            "count": 3
+        },
+        {
+            "name": "瀬戸麻沙美",
+            "count": 2
+        },
+        {
+            "name": "表",
+            "count": 2
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "series": false,
+    "main_character_ids": [
+        164315,
+        164316
+    ],
+    "main_characters": [
+        {
+            "id": 164315,
+            "name": "谷川瑠璃",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8f/bd/164315_crt_IcX1D.jpg?r=1742743413",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/bd/164315_crt_IcX1D.jpg?r=1742743413",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/bd/164315_crt_IcX1D.jpg?r=1742743413",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8f/bd/164315_crt_IcX1D.jpg?r=1742743413"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 39801,
+                    "name": "根本京里",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a3/6d/39801_prsn_aY46b.jpg?r=1695006712",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a3/6d/39801_prsn_aY46b.jpg?r=1695006712",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a3/6d/39801_prsn_aY46b.jpg?r=1695006712",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a3/6d/39801_prsn_aY46b.jpg?r=1695006712"
+                    },
+                    "short_summary": "日本の女性声優。茨城県出身。青二プロダクション所属。\r\n\r\n声優になろうと思ったきっかけは、子供の頃からアニメが好きだったことから。\r\n\r\n東北新社映像テクノアカデミア声優科出身。\r\n\r\n文化放送 超!A&G+ラジオ番組「本気!アニラブ」第15期火曜パーソナリティを担当してきた。2019年12月より「本気！アニラブ」第15期のパーソナリティによるユニット「koikan@」のメンバーとなる。\r\n\r\n資格・免許：柔道初段\r\n趣味：ランニング、ネイルアート\r\n特技：エレキベース、スキー",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 164316,
+            "name": "荒砥凪",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fb/ad/164316_crt_U00U3.jpg?r=1742743551",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/ad/164316_crt_U00U3.jpg?r=1742743551",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/ad/164316_crt_U00U3.jpg?r=1742743551",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fb/ad/164316_crt_U00U3.jpg?r=1742743551"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5766,
+                    "name": "瀬戸麻沙美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/b7/5766_prsn_6q644.jpg"
+                    },
+                    "short_summary": "中学生2年生の時、偶然視聴したアニメ『D.Gray-man』の主人公、アレン・ウォーカー（声：小林沙苗）に魅せられ、キャラクターだけでなく演者の声優にも興味が湧き、声優を志す。高校在学中の2009年に声優事務所のオーディションを受験、翌2010年より声優活動を開始する。\r\n2010年、初めて受けたオーディションでテレビアニメ『放浪息子』（2011年）の準主人公 \"高槻よしの\" 役に抜擢される。彼女にとって初仕事の収録だったが、演技などに関して事前の指示はほとんど必要としなかったと監督のあおきえいは述べている。\r\n2011年、日本テレビ系テレビアニメ『ちはやふる』で主演（ \"綾瀬千早\" 役）とエンディング主題歌の歌唱を担当。同局系列のテレビアニメ『HUNTER×HUNTER』の \"クラピカ\" 役オーディションに参加していた瀬戸の演技が『ちはやふる』番組関係者の目に留まり、改めて \"綾瀬千早\" 役のオーディションを行ったところ満場一致で瀬戸の起用が決定した。\r\n2015年4月1日付けで、シグマ・セブンeからシグマ・セブンへ移動。\r\n2021年11月1日よりStarCrewへ移籍。あわせて公式Twitterアカウントを開設した。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 20731,
+    "name": "奴良リクオ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c8/75/20731_crt_e3T3B.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/75/20731_crt_e3T3B.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/75/20731_crt_e3T3B.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c8/75/20731_crt_e3T3B.jpg"
+    },
+    "summary": "奴良组第三代总大将，人类与妖怪的混血少年，拥有四分之一的妖怪血统。\r\n小时候与百鬼们打成一片，梦想成为滑头鬼的他，在目睹妖怪们的“真面目”后放弃了这个梦想，转而换之想成为一个了不起的人类。拥有四分之一的妖怪血统，使得陆生在白天是人类，夜是妖怪。父亲早逝，母亲和祖母都是人类，奴良组的妖怪皆以“少主”来称呼他。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "奴良陆生"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "奴良リクオ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ぬら リクオ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nura rikuo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "9月23日"
+        },
+        {
+            "key": "身高",
+            "value": "148cm（人类） / 175cm（妖怪）"
+        },
+        {
+            "key": "体重",
+            "value": "48kg（人类） / 66kg（妖怪）"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 23,
+    "stat": {
+        "comments": 7,
+        "collects": 19
+    },
+    "anime_ids": [
+        12192
+    ]
+}

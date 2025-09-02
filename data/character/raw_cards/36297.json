@@ -1,0 +1,72 @@
+{
+    "id": 36297,
+    "name": "福田のり子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/01/22/36297_crt_mjjxz.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/22/36297_crt_mjjxz.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/22/36297_crt_mjjxz.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/01/22/36297_crt_mjjxz.jpg"
+    },
+    "summary": "《偶像大师 百万LIVE!》登场的偶像。Dance属性。 \r\n\r\n一个热爱格斗技，性格直率，开朗的18岁女孩。 \r\n\r\n虽然法子有着一个十分放荡的爱好，但是却想成为一个更加受大家喜爱的少女偶像。 \r\n\r\n不过由于法子不太擅长做这些女孩子家家的事情，对于她来说挑战无处不在。 \r\n\r\n就如她在爱好栏写的一样，法子十分热爱搏击类运动，尤其是职业摔跤。 \r\n\r\n她时常对制作人使用眼镜蛇缠身固定，同时非常擅长麦克风表演就真的如一名职业选手般。 \r\n\r\n她的T恤衫上写着「TEKKEN」这样的字眼，同时还画着一个铁拳系列中熟知的木人。或许她也很喜欢玩格斗游戏吧。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "福田法子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Fukuda Noriko"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ふくだ のりこ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月30日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "164cm"
+        },
+        {
+            "key": "体重",
+            "value": "48kg"
+        },
+        {
+            "key": "BWH",
+            "value": "87-58-87"
+        },
+        {
+            "key": "年龄",
+            "value": "18岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 30,
+    "stat": {
+        "comments": 8,
+        "collects": 5
+    },
+    "anime_ids": [
+        309807
+    ]
+}

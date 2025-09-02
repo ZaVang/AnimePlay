@@ -1,0 +1,55 @@
+{
+    "id": 213,
+    "name": "一輝",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/97/9d/213_72a84804b9f647bc185a877a8b5_aG4WP.jpg?r=1427918854",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/97/9d/213_72a84804b9f647bc185a877a8b5_aG4WP.jpg?r=1427918854",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/97/9d/213_72a84804b9f647bc185a877a8b5_aG4WP.jpg?r=1427918854",
+        "grid": "https://lain.bgm.tv/pic/crt/g/97/9d/213_72a84804b9f647bc185a877a8b5_aG4WP.jpg?r=1427918854"
+    },
+    "summary": "星矢最可靠的伙伴，每次都协助星矢渡过难关，性格与弟弟瞬截然相反喜欢独来独往，总在关键时刻出现，挽救弟弟的生命。师傅是迷一样的圣斗士，在地狱岛修炼。凤凰星座，人称不死鸟。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "一辉"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "8月15日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        },
+        {
+            "key": "体重",
+            "value": "62kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 15,
+    "stat": {
+        "comments": 3,
+        "collects": 13
+    },
+    "anime_ids": [
+        4843
+    ]
+}

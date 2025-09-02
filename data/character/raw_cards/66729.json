@@ -1,0 +1,56 @@
+{
+    "id": 66729,
+    "name": "星野ひなた",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/86/d1/66729_crt_hM5qW.jpg?r=1547826040",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/d1/66729_crt_hM5qW.jpg?r=1547826040",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/d1/66729_crt_hM5qW.jpg?r=1547826040",
+        "grid": "https://lain.bgm.tv/pic/crt/g/86/d1/66729_crt_hM5qW.jpg?r=1547826040"
+    },
+    "summary": "みやこの妹で花の親友。お姉ちゃん大好きな元気っ子。とにかく姉であるみやこが大好きですべてにおいてみやこの事が優先される。誰とでも仲良くなれて、思ったことは誰が相手でもズバッと言う裏表のない性格。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "星野日向"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ほしの ひなた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hoshino Hinata"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月10日"
+        },
+        {
+            "key": "身高",
+            "value": "140.7cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 10,
+    "stat": {
+        "comments": 84,
+        "collects": 378
+    },
+    "anime_ids": [
+        249637
+    ]
+}

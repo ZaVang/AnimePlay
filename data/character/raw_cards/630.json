@@ -1,0 +1,56 @@
+{
+    "id": 630,
+    "name": "森宮蒼乃",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9c/c1/630_UcG11.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/c1/630_UcG11.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/c1/630_UcG11.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9c/c1/630_UcG11.jpg"
+    },
+    "summary": "女主角其二，依人的亲姊，喜欢折纸。依人对她来说十分重要。性格冷静而不多说话，看上去表情不多，实际上是外冷内热。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "森宫苍乃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "森宮 蒼乃"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "もりみや あおの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Morimiya Aono"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 22,
+        "collects": 132
+    },
+    "anime_ids": [
+        798
+    ]
+}

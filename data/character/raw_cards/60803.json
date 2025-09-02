@@ -1,0 +1,44 @@
+{
+    "id": 60803,
+    "name": "サチオ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/28/ad/60803_crt_PECli.jpg?r=1621608902",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/ad/60803_crt_PECli.jpg?r=1621608902",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/ad/60803_crt_PECli.jpg?r=1621608902",
+        "grid": "https://lain.bgm.tv/pic/crt/g/28/ad/60803_crt_PECli.jpg?r=1621608902"
+    },
+    "summary": "在非认可地区与其他少年一起生活着的流浪儿童。\r\n对机器和计算机很精通。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "幸夫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Sachio"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 8,
+        "collects": 5
+    },
+    "anime_ids": [
+        227718
+    ]
+}

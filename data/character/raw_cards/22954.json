@@ -1,0 +1,64 @@
+{
+    "id": 22954,
+    "name": "オスカル・フランソワ・ド・ジャルジェ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/23/e4/22954_crt_p7b6m.jpg?r=1738603044",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/23/e4/22954_crt_p7b6m.jpg?r=1738603044",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/23/e4/22954_crt_p7b6m.jpg?r=1738603044",
+        "grid": "https://lain.bgm.tv/pic/crt/g/23/e4/22954_crt_p7b6m.jpg?r=1738603044"
+    },
+    "summary": "由緒ある貴族で将軍家の末娘でありながら、跡取り“息子”として育てられた、男装の麗人。\r\n\r\n若くしてフランス近衛連隊長としてマリー・アントワネットの護衛を務める。乳母の孫であるアンドレとは幼なじみ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "奥斯卡·法兰索瓦·德·杰尔吉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "欧思嘉·法兰索瓦"
+                },
+                {
+                    "k": "法文名",
+                    "v": "Oscar François de Jarjayes"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Osukaru Furansowa do Jaruje"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "178cm"
+        },
+        {
+            "key": "体重",
+            "value": "58kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B87・W63・H90"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 12,
+        "collects": 35
+    },
+    "anime_ids": [
+        12579
+    ]
+}

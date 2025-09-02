@@ -1,0 +1,36 @@
+{
+    "id": 75049,
+    "name": "ルチーナ・プレシェット",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bf/14/75049_crt_8Y5cu.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/14/75049_crt_8Y5cu.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/14/75049_crt_8Y5cu.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bf/14/75049_crt_8Y5cu.jpg"
+    },
+    "summary": "4歳。女子。ベルウィック星出身。血液型はB型。2話での登場時、乗船名簿に登録する際「5歳」とサバを読んでしまうほど、遊びたい盛りのちょっぴりおませな女の子[注釈 9]。家が隣同士だった同い年のマルロとは仲も良いが、どちらかと言えば「お姉さん」気取り。将来の夢は、マルロのお嫁さんになること。余談だが、デザインと色彩がミンキーモモ（空モモの幼少時）に酷似しており、セルフパロディとして月刊OUT2011年8月号に掲載された「フェナリナーサから、モモのコスチュームとペンダントを贈られて不思議がるルチーナ」のオフィシャルイラストも存在した。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "ROUTINE PRESSETTE"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        37295
+    ]
+}

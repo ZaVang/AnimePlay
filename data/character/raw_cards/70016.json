@@ -1,0 +1,52 @@
+{
+    "id": 70016,
+    "name": "ユンファ・ルー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/39/fa/70016_crt_eXTR2.jpg?r=1557494133",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/fa/70016_crt_eXTR2.jpg?r=1557494133",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/fa/70016_crt_eXTR2.jpg?r=1557494133",
+        "grid": "https://lain.bgm.tv/pic/crt/g/39/fa/70016_crt_eXTR2.jpg?r=1557494133"
+    },
+    "summary": "黒髪と眼鏡が特徴の女子。\r\n積極的に人前に出たり、自分を表に出したりできないタイプ。\r\n個性豊かなメンバーに劣等感を抱き、目立たないように振る舞っている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Yun-Hua Lu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月25日"
+        },
+        {
+            "key": "身高",
+            "value": "179cm"
+        },
+        {
+            "key": "体重",
+            "value": "67kg"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 25,
+    "stat": {
+        "comments": 6,
+        "collects": 10
+    },
+    "anime_ids": [
+        273877
+    ]
+}

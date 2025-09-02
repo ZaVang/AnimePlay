@@ -1,0 +1,52 @@
+{
+    "id": 9786,
+    "name": "小泉チカ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b4/d8/9786_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/d8/9786_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/d8/9786_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b4/d8/9786_crt_anidb.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小泉千佳"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小泉チカ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Koizumi Chika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 21
+    },
+    "anime_ids": [
+        3413
+    ]
+}

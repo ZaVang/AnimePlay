@@ -1,0 +1,52 @@
+{
+    "id": 21594,
+    "name": "先島光",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a6/2c/21594_crt_4GZZd.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/2c/21594_crt_4GZZd.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/2c/21594_crt_4GZZd.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a6/2c/21594_crt_4GZZd.jpg"
+    },
+    "summary": "有点毒舌但基本心地纯良，很会照料别人的中学生。\r\n和爱花是青梅竹马。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "先岛光"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "先島 光"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さきしま ひかり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakishima Hikari"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 20,
+        "collects": 49
+    },
+    "anime_ids": [
+        47889
+    ]
+}

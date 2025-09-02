@@ -1,0 +1,72 @@
+{
+    "id": 358,
+    "name": "神北小毬",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ac/ef/358_crt_375d8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/ef/358_crt_375d8.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/ef/358_crt_375d8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ac/ef/358_crt_375d8.jpg"
+    },
+    "summary": "CV：まきいづみ\r\n天真、招人喜爱的童话少女\r\n最喜欢画册和童话、点心的少女\r\n由于糊涂&冒失作茧自缚而哭鼻子的少女\r\n总是寻找着『美丽的事物』及『获得幸福的方法』生活着\r\n有着那样莽撞冒失、呆呆的性格",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "神北小毬"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Komari Kamikita"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かみきた こまり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kamikita Komari"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月5日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "体重",
+            "value": "45kg"
+        },
+        {
+            "key": "BWH",
+            "value": "83/57/84"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 5,
+    "stat": {
+        "comments": 76,
+        "collects": 180
+    },
+    "anime_ids": [
+        363880
+    ]
+}

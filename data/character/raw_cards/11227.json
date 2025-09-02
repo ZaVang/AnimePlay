@@ -1,0 +1,64 @@
+{
+    "id": 11227,
+    "name": "青山美生",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b6/c5/11227_crt_v52dn.jpg?r=1378924178",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/c5/11227_crt_v52dn.jpg?r=1378924178",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/c5/11227_crt_v52dn.jpg?r=1378924178",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b6/c5/11227_crt_v52dn.jpg?r=1378924178"
+    },
+    "summary": "社长的女儿。将桂马和其他同学称作「平民」。\r\n1年前父亲死後，公司落入别人手中，现在过著贫穷的生活。一直无法忘记父亲的教诲「不要忘记作为社长女儿的骄傲」。\r\n桂马说「像猫的眼睛、光泽鲜亮的双马尾、身材娇小，典型的傲娇角色。」\r\n攻略过後，改变了想法而开始在面包店打工。\r\n在结篇桂马利用结的身份确认其没有女神寄宿。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "青山美生"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あおやま みお"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月2日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "149cm"
+        },
+        {
+            "key": "体重",
+            "value": "38kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B74/W54/H77"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 2,
+    "stat": {
+        "comments": 9,
+        "collects": 30
+    },
+    "anime_ids": [
+        5976
+    ]
+}

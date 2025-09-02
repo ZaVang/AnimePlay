@@ -1,0 +1,88 @@
+{
+    "id": 2103,
+    "name": "龙珠改",
+    "image_path": "data/images/anime/2103.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "本系列于2009年4月5日开始同系列播出，开播20年为早期作品《七龙珠Z》的再编辑版。除了部分画面、角色和人物造型作出修改外，制作组亦把有关故事浓缩，让剧情发展更流畅。而本作命名为“改”（日语假名：かい）则是代表更新与修改之意。\r\n\r\n2009年4月5日起，逢周日于日本富士电视台播放《七龙珠改》。把原本自1989年至1996年播放的《七龙珠Z》，从‘赛亚人篇’开始，为了尽量贴近鸟山明原著漫画的情节，会把原来电视用作“充撑”（动画进度追贴漫画时，因不愿暂停播放而加插的剧情，或故意拉长情节）的加插内容大幅删掉，剧情更加流畅明快。另外，动画会以高解析规格播放，配音和配乐部份会重新制作，尽量邀请原任声优重新配音演绎。\r\n\r\n本作只至‘人造人·沙鲁篇’后便停播。直到2014年2月21日官方终于宣布：“将从4月开始播出‘魔人布欧篇’。”并从4月6日开始，每周日早上9点至9点半在日本播出。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 98,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2009-04-05",
+    "rating_rank": 695,
+    "rating_score": 7.6,
+    "rating_total": 1415,
+    "main_character_ids": [
+        3345,
+        8199
+    ],
+    "main_characters": [
+        {
+            "id": 3345,
+            "name": "孫悟空",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/38/a7/3345_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/a7/3345_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/a7/3345_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/38/a7/3345_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3954,
+                    "name": "野沢雅子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/ee/3954_prsn_mTEmk.jpg"
+                    },
+                    "short_summary": "日本の声優、女優、歌手、ナレーター。本名：塚田 雅子（つかだ まさこ、旧姓：野沢）。所属事務所は青二プロダクション。劇団ムーンライト主宰。\r\n\r\n東京都日暮里出身。身長157cm、血液型はO型。役者仲間からの愛称はマコさん。夫は同じく声優の塚田正昭。\r\n\r\n声優としての代表作に『ゲゲゲの鬼太郎』（鬼太郎）、『いなかっぺ大将』（風 大左衛門）、『ど根性ガエル』（ひろし）、『銀河鉄道999』（星野鉄郎）、『ドラゴンボール』シリーズ（孫悟空、孫悟飯、孫悟天）など。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 8199,
+            "name": "孫悟飯",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/65/3c/8199_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/3c/8199_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/3c/8199_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/65/3c/8199_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3954,
+                    "name": "野沢雅子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/ee/3954_prsn_mTEmk.jpg"
+                    },
+                    "short_summary": "日本の声優、女優、歌手、ナレーター。本名：塚田 雅子（つかだ まさこ、旧姓：野沢）。所属事務所は青二プロダクション。劇団ムーンライト主宰。\r\n\r\n東京都日暮里出身。身長157cm、血液型はO型。役者仲間からの愛称はマコさん。夫は同じく声優の塚田正昭。\r\n\r\n声優としての代表作に『ゲゲゲの鬼太郎』（鬼太郎）、『いなかっぺ大将』（風 大左衛門）、『ど根性ガエル』（ひろし）、『銀河鉄道999』（星野鉄郎）、『ドラゴンボール』シリーズ（孫悟空、孫悟飯、孫悟天）など。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

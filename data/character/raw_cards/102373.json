@@ -1,0 +1,26 @@
+{
+    "id": 102373,
+    "name": "キング",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ec/66/102373_crt_rIkap.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ec/66/102373_crt_rIkap.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ec/66/102373_crt_rIkap.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ec/66/102373_crt_rIkap.jpg"
+    },
+    "summary": "ナディアが連れているオスの白ライオン（実際は白っぽい灰色）の子供。マリーの登場後は彼女と行動することが多い。\r\n人語をある程度解し、簡単な算数もできる。コメディパートでは二足歩行を披露し、島編に入ると釣り竿を持って魚釣りもするなど、徐々に動物離れした人間に近い行動を取るようになった。周囲からは頻繁にネコと間違えられており、実際に鳴き声もネコのようである。希少種らしく、ゴンザレスに拉致された。\r\n最終話 (A.D.1902) で成長した姿を見せ、立派なたてがみと2匹の子供を披露した[注 10]。\r\nなお、監督の樋口によると当初は「実は宇宙人であり、最終回には着ぐるみを脱いで正体を現す予定」だったが、周囲の反対で没になった[10]。",
+    "locked": false,
+    "infobox": [],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 3
+    },
+    "anime_ids": [
+        1981
+    ]
+}

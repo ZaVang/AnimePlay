@@ -1,0 +1,56 @@
+{
+    "id": 33618,
+    "name": "鯨木かさね",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/56/da/33618_crt_9xFbc.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/da/33618_crt_9xFbc.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/da/33618_crt_9xFbc.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/56/da/33618_crt_9xFbc.jpg"
+    },
+    "summary": "澱切陣内の秘書。常に冷静で無表情。\r\n\r\n淀切阵内的秘书。常时冷静且无表情。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鲸木重"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "鯨木 かさね"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くじらぎ かさね"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kujiragi Kasane"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "www.durarara.com/character/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 20
+    },
+    "anime_ids": [
+        114968
+    ]
+}

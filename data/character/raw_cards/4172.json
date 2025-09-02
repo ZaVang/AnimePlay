@@ -1,0 +1,60 @@
+{
+    "id": 4172,
+    "name": "七海アオ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/68/a9/4172_crt_4Oayq.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/a9/4172_crt_4Oayq.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/a9/4172_crt_4Oayq.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/68/a9/4172_crt_4Oayq.jpg"
+    },
+    "summary": "15岁的女孩子，有着淡蓝色的头发与眼睛，是所有成员中年纪最小的，所以无论是对谁说话都用尊敬语。心地温柔，拥有广域读心（能够在一瞬间大范围地读取人类与动物的心理）和精神干涉（只对附身后的哥哥使用过一次），害怕狗（第三集）。不过她如果过度使用能力的话，会急剧消耗能量，并因为肚饿而晕倒。在头顶长着小猫的耳朵，平时拿帽子或者耳机遮住它们。跑步速度非常快，能够用10秒跑完一百米。有一位哥哥叫银。\r\n萌点分析：兽耳，尖耳帽，敬语，瞳色。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "七海苍"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "七海 アオ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ななみ あお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nanami Ao"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "148cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 20,
+        "collects": 55
+    },
+    "anime_ids": [
+        71955
+    ]
+}

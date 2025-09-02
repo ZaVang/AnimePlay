@@ -1,0 +1,64 @@
+{
+    "id": 393,
+    "name": "蒼乃美希／キュアベリー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a4/97/393_crt_GqFx4.jpg?r=1462634126",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/97/393_crt_GqFx4.jpg?r=1462634126",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/97/393_crt_GqFx4.jpg?r=1462634126",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a4/97/393_crt_GqFx4.jpg?r=1462634126"
+    },
+    "summary": "14岁，艺能学校、私立鸟越学园中等部的2年生。\r\n体育万能、对时尚敏感的女孩子。\r\n经常为如何能展现自己最美的一面而费心。\r\n梦想是成为时尚模特，为此她严格履行着自己的人生设计。\r\n家里经营发廊＆美甲沙龙，和母亲两个人生活。\r\n被小爱邀请，同时也是为了保持自己的体型而加入舞团。\r\n因为“希望”的力量觉醒了而变身为Cure Berry。\r\n口癖是...“完美的我！”",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "苍乃美希／莓天使"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Cure Berry"
+                },
+                {
+                    "k": "日文名",
+                    "v": "蒼乃 美希"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あおの みき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aono Miki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "喜多村英梨"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 11
+    },
+    "anime_ids": [
+        1109
+    ]
+}

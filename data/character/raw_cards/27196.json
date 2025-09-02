@@ -1,0 +1,48 @@
+{
+    "id": 27196,
+    "name": "カイザル・リドファルド",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0d/f5/27196_crt_rznaQ.jpg?r=1413907979",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/f5/27196_crt_rznaQ.jpg?r=1413907979",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/f5/27196_crt_rznaQ.jpg?r=1413907979",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0d/f5/27196_crt_rznaQ.jpg?r=1413907979"
+    },
+    "summary": "元は騎士の家系だが、今は没落して賞金稼ぎに身をやつしている。\r\n没落した原因である、ファバロへの復讐を剣に誓う。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "凯撒·利德法尔德"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "KAISAR"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://shingekinobahamut-genesis.jp/character/character_02.php"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 19,
+        "collects": 9
+    },
+    "anime_ids": [
+        91986
+    ]
+}

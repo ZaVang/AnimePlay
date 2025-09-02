@@ -1,0 +1,48 @@
+{
+    "id": 962,
+    "name": "マージョリー・ドー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5c/93/962_z39Q3.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/93/962_z39Q3.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/93/962_z39Q3.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5c/93/962_z39Q3.jpg"
+    },
+    "summary": "通称为“悼文吟诵人（又译悼词朗诵者）”的火雾战士，签约的红世魔王是“蹂躏的爪牙”马可西亚斯。\r\n　　来自英国，身穿紫色套装、栗色长发扎马尾、碧眼、戴平光眼镜，身材姣好如超级名模一般的成熟美女。好战份子，只要有对象就针对目标一口气扫荡的性格，不分青红皂白的追杀拉弥。喜欢喝酒，酒品极差，宿醉时丑态百出，但还是一有机会就牛饮。对于调侃她的马可西亚斯会施以拳击，醉时则更施以酷刑——百回转。\r\n　　她在作战时所念的咒语统称为“屠杀之即兴诗”。并且有个不为人知的凄惨过去，一心要找出“银”达成报复。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "玛琼琳·朵"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Margery Daw"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 25
+    },
+    "anime_ids": [
+        490
+    ]
+}

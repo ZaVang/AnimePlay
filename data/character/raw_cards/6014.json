@@ -1,0 +1,60 @@
+{
+    "id": 6014,
+    "name": "小此木優子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4c/55/6014_crt_ny2zE.jpg?r=1611431430",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/55/6014_crt_ny2zE.jpg?r=1611431430",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/55/6014_crt_ny2zE.jpg?r=1611431430",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4c/55/6014_crt_ny2zE.jpg?r=1611431430"
+    },
+    "summary": "线圈电脑侦探局编号八号。\r\n故事的主角，2014年10月12日出生。\r\n所谓“ヤサコ”，是提取名字中“优”这个字的日文训读音而成。\r\n因为父亲职务调动的关系，从金泽市搬家至大黑市。入读大黑市立第三小学六年三班。生物部成员。\r\n眼镜婆婆的孙女，不过知道非法电脑道具的时日方短，关于电脑空间的知识和经验皆尚未足够。\r\n小时候参加祖父的葬礼曾到访过大黑市，迷路期间似乎发生过些事情。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小此木优子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小此木 優子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おこのぎ ゆうこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Okonogi Yuuko"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ヤサコ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2014年10月12日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 2014,
+    "birth_mon": 10,
+    "birth_day": 12,
+    "stat": {
+        "comments": 20,
+        "collects": 24
+    },
+    "anime_ids": [
+        794
+    ]
+}

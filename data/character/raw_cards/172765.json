@@ -1,0 +1,64 @@
+{
+    "id": 172765,
+    "name": "古館くれあ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/cd/9f/172765_crt_4Nc7r.jpg?r=1741836621",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/9f/172765_crt_4Nc7r.jpg?r=1741836621",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/9f/172765_crt_4Nc7r.jpg?r=1741836621",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cd/9f/172765_crt_4Nc7r.jpg?r=1741836621"
+    },
+    "summary": "しっかり者で、実家の食堂の手伝いもしている。\r\nマイペースなサークルのメンバーを引っ張る姉御肌だが、\r\n強がりな一面もある。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "古馆九礼亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "古館 くれあ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ふるたち くれあ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Furutachi Kurea"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2005年11月29日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "星座",
+            "value": "射手座"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": 2005,
+    "birth_mon": 11,
+    "birth_day": 29,
+    "stat": {
+        "comments": 142,
+        "collects": 319
+    },
+    "anime_ids": [
+        531159
+    ]
+}

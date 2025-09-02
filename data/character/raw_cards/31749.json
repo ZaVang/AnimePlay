@@ -1,0 +1,54 @@
+{
+    "id": 31749,
+    "name": "日高秋亜人",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8c/0b/31749_crt_vuuIV.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/0b/31749_crt_vuuIV.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/0b/31749_crt_vuuIV.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8c/0b/31749_crt_vuuIV.jpg"
+    },
+    "summary": "〔神甲胄〕狮\r\n〔武器〕三钴杵\r\n〔属性〕光\r\n〔技〕修罗魔破拳、修罗金刚魔破拳（合体技用）、修罗光破拳（OVA）\r\n本作的主角，性格单纯，跟凯是一起长大而且非常要好的朋友。身为八部众的修罗王，他在一万年前的阿修罗神军动乱中丧生，后来转世至人间，被毗湿奴招回天空界。并再次卷入了一连串的天空动乱中。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "日高秋亚人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "修罗王一平"
+                },
+                {
+                    "v": "修罗王秋亚人"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "日高一平"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひだか しゅらと"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 3
+    },
+    "anime_ids": [
+        4653
+    ]
+}

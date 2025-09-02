@@ -1,0 +1,184 @@
+{
+    "id": 212278,
+    "name": "Just Because!",
+    "image_path": "data/images/anime/212278.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "       高中三年级的冬天、剩下没多久的高中生活，大家都认为会在毫无变化的情况下迎来毕业之日……但在某一天，他突然回来了，在中学时搬到遥远城镇的同学，变成不合时节的转学生再次相会，伴随着某种不确定的感情、转变开始的信号微弱的发出了声响……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "原创"
+    ],
+    "date": "2017-10-05",
+    "rating_rank": 1303,
+    "rating_score": 7.3,
+    "rating_total": 6184,
+    "main_character_ids": [
+        53058,
+        53059,
+        53060,
+        53061,
+        53062
+    ],
+    "main_characters": [
+        {
+            "id": 53058,
+            "name": "泉瑛太",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/15/8b/53058_crt_Oh4Nq.jpg?r=1507291903",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/8b/53058_crt_Oh4Nq.jpg?r=1507291903",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/8b/53058_crt_Oh4Nq.jpg?r=1507291903",
+                "grid": "https://lain.bgm.tv/pic/crt/g/15/8b/53058_crt_Oh4Nq.jpg?r=1507291903"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 30942,
+                    "name": "市川蒼",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/04/06/30942_prsn_zletU.jpg?r=1521911400",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/06/30942_prsn_zletU.jpg?r=1521911400",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/06/30942_prsn_zletU.jpg?r=1521911400",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/04/06/30942_prsn_zletU.jpg?r=1521911400"
+                    },
+                    "short_summary": "大沢事務所　所属",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 53059,
+            "name": "相馬陽斗",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7e/f2/53059_crt_s133z.jpg?r=1507291934",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/f2/53059_crt_s133z.jpg?r=1507291934",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/f2/53059_crt_s133z.jpg?r=1507291934",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7e/f2/53059_crt_s133z.jpg?r=1507291934"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13320,
+                    "name": "村田太志",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/66/21/13320_prsn_4TaZ6.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/21/13320_prsn_4TaZ6.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/21/13320_prsn_4TaZ6.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/66/21/13320_prsn_4TaZ6.jpg"
+                    },
+                    "short_summary": "村田 太志（むらた たいし、1982年5月13日 - ）は、日本の男性声優。高知県出身。アクロス エンタテインメント所属。大阪アニメーター学院出身。\r\n\r\nデビュー間もない頃、前に出られない性格だったため、所属事務所社長に「バンジーでも飛んで度胸を付けて糧にし、声優道を歩んでいけ」と言われ、バンジージャンプを飛びに行った。また、バンジージャンプを飛ぶまでの過程をおさめた動画も投稿され、結果、『遊☆戯☆王ZEXAL』で初メインキャラを演じるに至った。\r\nL'Arc〜en〜CielのKenが歌う「T.P.I.T.P.」のPVにバックダンサーとして出演している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 53060,
+            "name": "夏目美緒",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ce/c7/53060_crt_E5ioU.jpg?r=1513576455",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/c7/53060_crt_E5ioU.jpg?r=1513576455",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/c7/53060_crt_E5ioU.jpg?r=1513576455",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ce/c7/53060_crt_E5ioU.jpg?r=1513576455"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 20438,
+                    "name": "礒部花凜",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1e/54/20438_prsn_OGlKo.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/54/20438_prsn_OGlKo.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/54/20438_prsn_OGlKo.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1e/54/20438_prsn_OGlKo.jpg"
+                    },
+                    "short_summary": "礒部 花凛（いそべ かりん、1994年5月26日 - ）は、日本の女優、歌手、声優。奈良県出身。\r\n\r\n身長157cm。血液型はA型。アミューズ所属。大阪芸術大学舞台芸術学科ミュージカルコース卒業。\r\n\r\n2014年、ミス・ユニバース・ジャパン奈良代表に選ばれた。\r\n2015年2月1日からテレビ朝日系列で放送開始されるテレビアニメ『Go!プリンセスプリキュア』のオープニング主題歌「Miracle Go!プリンセスプリキュア」のボーカルを担当する。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 53061,
+            "name": "森川葉月",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/40/7a/53061_crt_YYeWf.jpg?r=1507288804",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/7a/53061_crt_YYeWf.jpg?r=1507288804",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/7a/53061_crt_YYeWf.jpg?r=1507288804",
+                "grid": "https://lain.bgm.tv/pic/crt/g/40/7a/53061_crt_YYeWf.jpg?r=1507288804"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19497,
+                    "name": "芳野由奈",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/86/3e/19497_prsn_A1S0i.jpg?r=1443118293",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/3e/19497_prsn_A1S0i.jpg?r=1443118293",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/3e/19497_prsn_A1S0i.jpg?r=1443118293",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/86/3e/19497_prsn_A1S0i.jpg?r=1443118293"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 53062,
+            "name": "小宮恵那",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d2/78/53062_crt_QqCs1.jpg?r=1510507906",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/78/53062_crt_QqCs1.jpg?r=1510507906",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/78/53062_crt_QqCs1.jpg?r=1510507906",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d2/78/53062_crt_QqCs1.jpg?r=1510507906"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 15497,
+                    "name": "Lynn",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/76/43/15497_prsn_b9qz3.jpg?r=1709906632"
+                    },
+                    "short_summary": "日本的女性声优。アーツビジョン所属。成长于新潟县（出生地为神奈川县）。\r\n兴趣：看电影、照相、乒乓球\r\n由声优事务所ARTSVISION附属的声优养成所日本播音演技研究所，所毕业。\r\n喜欢猫科动物，最喜欢的歌手绚香，最喜欢食物拉面。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

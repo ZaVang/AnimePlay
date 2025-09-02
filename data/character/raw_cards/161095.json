@@ -1,0 +1,60 @@
+{
+    "id": 161095,
+    "name": "ぷにる",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b4/d4/161095_crt_ib33b.jpg?r=1731674352",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/d4/161095_crt_ib33b.jpg?r=1731674352",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/d4/161095_crt_ib33b.jpg?r=1731674352",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b4/d4/161095_crt_ib33b.jpg?r=1731674352"
+    },
+    "summary": "河合井コタローが幼少期に偶然作ったスライム生命体。\r\n自身を最高にかわいいスライムと思っており、夢は“kawaii”の代名詞になること。最近はコタローにかわいいと言われなくなり、認めてもらうべく日々様々な“かわいい”姿を追い求めている…！？",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "噗妮露"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "噗尼露"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Puniru"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Puniru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "无"
+        },
+        {
+            "key": "生日",
+            "value": "2月29日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://ja.wikipedia.org/wiki/ぷにるはかわいいスライム"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 29,
+    "stat": {
+        "comments": 89,
+        "collects": 208
+    },
+    "anime_ids": [
+        530115
+    ]
+}

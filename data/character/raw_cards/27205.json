@@ -1,0 +1,44 @@
+{
+    "id": 27205,
+    "name": "リタ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a4/55/27205_crt_Z779M.jpg?r=1413908516",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/55/27205_crt_Z779M.jpg?r=1413908516",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/55/27205_crt_Z779M.jpg?r=1413908516",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a4/55/27205_crt_Z779M.jpg?r=1413908516"
+    },
+    "summary": "ネブルビルで暮らす町医者の娘。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莉塔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "RITA"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "http://shingekinobahamut-genesis.jp/character/character_11.php"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 24,
+        "collects": 64
+    },
+    "anime_ids": [
+        91986
+    ]
+}

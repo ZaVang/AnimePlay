@@ -1,0 +1,89 @@
+{
+    "id": 221726,
+    "name": "妖精森林的小不点",
+    "image_path": "data/images/anime/221726.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "哈库梅伊与蜜珂析。\r\n住在绿意盎然的森林中的，两位小小的女孩子。\r\n在树洞里建造家、把树叶当做伞、坐在昆虫或鸟的背上……\r\n身高9厘米的话，这种事情也是能做得到的。\r\n不去悄悄地偷看一下吗？\r\n她们那安详而愉快，十分可爱的生活。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2018-01-12",
+    "rating_rank": 324,
+    "rating_score": 7.9,
+    "rating_total": 3281,
+    "main_character_ids": [
+        58850,
+        58851
+    ],
+    "main_characters": [
+        {
+            "id": 58850,
+            "name": "ミコチ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/63/5d/58850_crt_3hwB0.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/5d/58850_crt_3hwB0.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/5d/58850_crt_3hwB0.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/63/5d/58850_crt_3hwB0.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 14554,
+                    "name": "下地紫野",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/83/4a/14554_prsn_xALii.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/4a/14554_prsn_xALii.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/4a/14554_prsn_xALii.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/83/4a/14554_prsn_xALii.jpg"
+                    },
+                    "short_summary": "下地 紫野（しもじ しの、1993年6月4日 - ）は、日本の女性声優。沖縄県出身。血液型はA型。青二塾東京校33期卒業。青二プロダクション所属。\r\n\r\n沖縄県立首里高等学校出身。\r\n高校生の時に地元沖縄が舞台の『島んちゅMiRiKa』の声優オーディションに合格。レッスンやアフレコを経験して演じることの楽しさを知り、高校卒業後に東京の養成所を受けて事務所に所属した。\r\n「RADIO TOMO!」の隔週のWebラジオ番組「SAPPHIRYS（サファイリーズ）」前半部分に出演。同じ青二プロダクション所属の奥谷楓とトークを繰り広げていた。\r\n2016年にソロアーティストとしてデビュー。\r\n\r\n『ハリー・ポッターシリーズ』の映画が公開された頃に母親に勧められた原作を読んでシリーズが好きになった。\r\n好物は、カレーパンである。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 58851,
+            "name": "ハクメイ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9a/53/58851_crt_wNlLQ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/53/58851_crt_wNlLQ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/53/58851_crt_wNlLQ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9a/53/58851_crt_wNlLQ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 18732,
+                    "name": "松田利冴",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/85/33/18732_prsn_v7uJF.jpg?r=1608450825",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/33/18732_prsn_v7uJF.jpg?r=1608450825",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/33/18732_prsn_v7uJF.jpg?r=1608450825",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/85/33/18732_prsn_v7uJF.jpg?r=1608450825"
+                    },
+                    "short_summary": "アイムエンタープライズ所属\r\n\r\n出身地：大阪府\r\n方言：大阪弁\r\n趣味・スポーツ：\r\n特撮鑑賞　筋トレ　\r\nダンス　ソフトテニス\r\n特技：\r\n歌のハモリ　和太鼓\r\n資格：書道(特待生)\r\n芸歴：\r\n　日本ナレーション演技研究所　\r\n　2010年 第4回全日本アニソングランプリ大阪大会優勝\r\n　2011年 第5回全日本アニソングランプリ大阪大会優勝",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

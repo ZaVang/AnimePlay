@@ -1,0 +1,63 @@
+{
+    "id": 46447,
+    "name": "藤原はづき",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a5/6c/46447_crt_8PQRe.jpg?r=1474246310",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/6c/46447_crt_8PQRe.jpg?r=1474246310",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/6c/46447_crt_8PQRe.jpg?r=1474246310",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a5/6c/46447_crt_8PQRe.jpg?r=1474246310"
+    },
+    "summary": "魔法堂中唯一的眼镜娘，在系列作中鲜少出现过没戴眼镜的样子。\r\n家境优渥，文静温柔，稳重大方，功课很好的千金小姐。\r\n由于发现DoReMi使用魔法而揭穿了她的身份，因此也成为见习魔女。\r\n不满妈妈的溺爱、凡事替她决定又不敢拒绝，希望借由学习魔法得到向妈妈说“不”的勇气。\r\n梦想是成为一名小提琴家。\r\n和矢田优是青梅竹马，喜欢矢田。高中时两人已经开始交往（小说中提到）\r\n未来在法国巴黎成为音乐家(小说版结局)。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藤原初贵"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "藤原羽月"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ふじわら はづき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fujiwara Hazuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1991年2月14日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": 1991,
+    "birth_mon": 2,
+    "birth_day": 14,
+    "stat": {
+        "comments": 10,
+        "collects": 29
+    },
+    "anime_ids": [
+        14878,
+        14877,
+        14876,
+        14652
+    ]
+}

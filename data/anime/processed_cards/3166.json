@@ -1,0 +1,121 @@
+{
+    "id": 3166,
+    "name": "超时空要塞",
+    "image_path": "data/images/anime/3166.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "西历1999年，一颗巨大陨石坠落在南太平洋亚塔利亚岛。经过调查之后发现，这颗“陨石”原来是一艘拥有超越地球人类科技的巨型宇宙战舰。明白告诉了地球人类，在地球以外还有其他高智慧的生物存在，而且更有可能是一些比起地球人类身高高五倍，以战争为生之巨人。于是各国政府抛开国家之间的利害关系，成立整合世界现有国家的单一人类政府，并开始重建这艘代号为ASS-1（Alien Star Ship-1）的外星太空船。\r\n\r\n重建的10年期间，虽然决定组成地球统合宇宙军，但地球各地亦发生了很多为利害冲突而展开的激烈战争。在战争期间重建的工作仍然继续进行，直至战争结束，地球恢复平静，这艘ASS-1终于重建完成，并且改名SDF-1 马克罗斯。就在纪念马克罗斯重建完成纪念当天，马克罗斯突然失控自动发射主炮……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 36,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创",
+        "音乐"
+    ],
+    "date": "1982-10-03",
+    "rating_rank": 439,
+    "rating_score": 7.8,
+    "rating_total": 1565,
+    "main_character_ids": [
+        6654,
+        6801,
+        6803
+    ],
+    "main_characters": [
+        {
+            "id": 6654,
+            "name": "リン・ミンメイ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0c/83/6654_crt_e9Pxm.jpg?r=1406412826",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0c/83/6654_crt_e9Pxm.jpg?r=1406412826",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0c/83/6654_crt_e9Pxm.jpg?r=1406412826",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0c/83/6654_crt_e9Pxm.jpg?r=1406412826"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4005,
+                    "name": "飯島真理",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/db/e1/4005_prsn_phJ87.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/e1/4005_prsn_phJ87.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/e1/4005_prsn_phJ87.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/db/e1/4005_prsn_phJ87.jpg"
+                    },
+                    "short_summary": "日本の歌手・シンガーソングライター・ラジオDJ・音楽プロデューサー・声優・女優。血液型O型。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6801,
+            "name": "早瀬未沙",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1f/b3/6801_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1f/b3/6801_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1f/b3/6801_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1f/b3/6801_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4008,
+                    "name": "土井美加",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/21/b5/4008_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/b5/4008_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/b5/4008_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/21/b5/4008_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の女優、声優、ナレーター。宮城県仙台市出身。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6803,
+            "name": "一条輝",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/af/55/6803_crt_ivUg4.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/55/6803_crt_ivUg4.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/55/6803_crt_ivUg4.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/af/55/6803_crt_ivUg4.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4004,
+                    "name": "長谷有洋",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f8/eb/4004_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/eb/4004_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/eb/4004_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f8/eb/4004_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "声優、俳優。シグマクラブ所属で、当初はプロダクション・エムスリーに所属していた。東京都出身。\r\n\r\n俳優、声優であるはせさん治の長男。父の影響で俳優を志し、劇団こまどりに入団。声優オーディションを受け、高校2年生のときに『キャプテン』の小山役、次いで『超時空要塞マクロス』の一条輝役に抜擢された（注：放送は『マクロス』の方が先）。\r\n\r\n一時は不振に陥り、ほとんど声優の仕事がない時期もあった。しかし、1990年代に入ってからは実力も向上し、端役ながら声優・俳優として徐々に仕事を増やしていた。\r\n\r\n1996年7月30日、実家のマンションの7階から転落し死亡しているのを午前4時頃に弟が発見。はせさん治は、『コミック・フィギュア王』のインタビューで自殺だったと語っている。31歳没。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

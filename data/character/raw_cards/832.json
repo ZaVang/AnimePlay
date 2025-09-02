@@ -1,0 +1,68 @@
+{
+    "id": 832,
+    "name": "アズマリア・ヘンドリック",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/72/50/832_sinqi.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/50/832_sinqi.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/50/832_sinqi.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/72/50/832_sinqi.jpg"
+    },
+    "summary": "神的七个“地上代行人”之一，代表着“博爱”（善施）的美德，歌声有治疗的能力，是个开朗善良但怯懦的女孩，自从遇见Rosette后开始变得坚强",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾斯马利亚·汉得林格"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Azmaria Hendric"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1912年3月12日"
+        },
+        {
+            "key": "身高",
+            "value": "141cm"
+        },
+        {
+            "key": "体重",
+            "value": "37kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B/68 W/49 H/69"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "千叶纱子"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1912,
+    "birth_mon": 3,
+    "birth_day": 12,
+    "stat": {
+        "comments": 7,
+        "collects": 16
+    },
+    "anime_ids": [
+        1926
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 46581,
+    "name": "春埼美空",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/42/77/46581_crt_bG5uw.jpg?r=1491142147",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/77/46581_crt_bG5uw.jpg?r=1491142147",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/77/46581_crt_bG5uw.jpg?r=1491142147",
+        "grid": "https://lain.bgm.tv/pic/crt/g/42/77/46581_crt_bG5uw.jpg?r=1491142147"
+    },
+    "summary": "可使用“重置”能力使世界恢复三天前的样子，但是“重置”前的记忆消失，所属“服务俱乐部”，芦原桥高一学生。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "春埼美空"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "春埼 美空"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はるき みそら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Haruki Misora"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月22日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 22,
+    "stat": {
+        "comments": 44,
+        "collects": 153
+    },
+    "anime_ids": [
+        193378
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": 76689,
+    "name": "今井ことこ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f0/9a/76689_crt_Q6vUF.jpg?r=1595823556",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/9a/76689_crt_Q6vUF.jpg?r=1595823556",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/9a/76689_crt_Q6vUF.jpg?r=1595823556",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f0/9a/76689_crt_Q6vUF.jpg?r=1595823556"
+    },
+    "summary": "初中三年级生，小梦的学姐。成绩排全校第一，担任电脑社的社长。很会照顾人，是小梦和舞良姐姐般的存在。小舒的搭档。\r\n\r\n中学3年生で、ゆめの先輩。成績は学園1位で、パソコン部の部長。面倒見が良くて、ゆめとまいらの姉役。すうのパートナー。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "今井琴子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "今井 ことこ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月12日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 12,
+    "stat": {
+        "comments": 4,
+        "collects": 9
+    },
+    "anime_ids": [
+        289829
+    ]
+}

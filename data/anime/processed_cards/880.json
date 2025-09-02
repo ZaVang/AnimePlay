@@ -1,0 +1,173 @@
+{
+    "id": 880,
+    "name": "水果篮子",
+    "image_path": "data/images/anime/880.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "积极开朗又有些“脱线”的高中女生本田透由于相依为命的妈妈意外车祸离世，被好心的爷爷收养。但是由于姑姑也要到爷爷家住，爷爷家的房子要改建，小透只好以到朋友家住的名义暂时在森林里搭起了帐篷住了下来，就是在这片草摩家的森林里，小透重新结识了班里的英俊“王子”草摩由希，也接触到了草摩家的秘密。由于被诅咒的命运，草摩家的人过着痛苦的生活，每个人都有伤心的往事，积极又乐观的小透的出现给草摩家带来了笑容和希望。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "漫画改",
+        "少女向"
+    ],
+    "date": "2001-07-05",
+    "rating_rank": 964,
+    "rating_score": 7.5,
+    "rating_total": 2369,
+    "main_character_ids": [
+        205,
+        276,
+        277,
+        278
+    ],
+    "main_characters": [
+        {
+            "id": 205,
+            "name": "草摩紫呉",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/08/a0/205_crt_PMfj2.jpg?r=1547825507",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/a0/205_crt_PMfj2.jpg?r=1547825507",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/a0/205_crt_PMfj2.jpg?r=1547825507",
+                "grid": "https://lain.bgm.tv/pic/crt/g/08/a0/205_crt_PMfj2.jpg?r=1547825507"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3976,
+                    "name": "置鮎龍太郎",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c5/cf/3976_prsn_4eb60.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/cf/3976_prsn_4eb60.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/cf/3976_prsn_4eb60.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c5/cf/3976_prsn_4eb60.jpg"
+                    },
+                    "short_summary": "日本の男性声優、ナレーターである。青二プロダクション所属。血液型はO型。\r\n\r\n妻は声優の前田愛。置鮎は再婚となる。前妻は声優の永澤菜教。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 276,
+            "name": "本田透",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f7/46/276_crt_n631N.jpg?r=1552757291",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/46/276_crt_n631N.jpg?r=1552757291",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/46/276_crt_n631N.jpg?r=1552757291",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f7/46/276_crt_n631N.jpg?r=1552757291"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3970,
+                    "name": "堀江由衣",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/92/3d/3970_prsn_zP3bs.jpg?r=1740190531",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/3d/3970_prsn_zP3bs.jpg?r=1740190531",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/3d/3970_prsn_zP3bs.jpg?r=1740190531",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/92/3d/3970_prsn_zP3bs.jpg?r=1740190531"
+                    },
+                    "short_summary": "日本女性声优。日本著名声优、歌手，1997年正式以声优身份出道，被称为“声优御三家”之一。\r\n\r\n小时候就喜欢动画的堀江在看了《ダーティペア（搞怪拍档）》中ユリ（由里）的演出（CV：岛津冴子）之后，立志作为一名声优。但是，当时还是二年级的堀江还不知道如何成为一名声优，只是对这个职业有憧憬而已。\r\n在自称为“黑暗时代“的中学时代，堀江参加了排球部，也担任过学生会的职务。在高中毕业后，出于家长的希望，喜欢读书的堀江进入短期大学的文学系学习。\r\n在进入短期大学一年之后，堀江在声优杂志《ボイスアニメージュ》的创刊号上见到了ARTSVISION招募声优的消息。结果，成功从三千多名考生中脱颖而出，成为5名合格者之一。\r\n1997年正式以声优身份出道，其后于1998年推出首张单曲唱片“my best friend”。\r\n2000年与声优田村ゆかり结成组合“やまとなでしこ”。\r\n2001年参加汉语兴趣班，并以口语成绩E(不及格），笔试成绩C结束培训。\r\n2002年举办First Live Tour, 个人电台“堀江由衣の天使のたまご”于同年开始播放。\r\n2005年与浅野真澄、神田朱未、高桥智秋、木村圆组成“Aice5”组合, 堀江为此组合的发起人和队长。\r\n2006年举办Second Live Tour 堀江由衣をめぐる冒険。2006年，加入17岁教。同年，与广播剧\"天使のたまご\"里的工作人员一同创建“黑蔷薇保存会”，这是经由听众的来信募集而诞生的视觉系乐团。\r\n2007年，6月，从Arts Vision 退社，9月，组合“Aice5”宣布解散。11月加入现所属公司VIMS。\r\n2009年2月8日，宣布黑蔷薇保存会活动休止。2009年，9月19、20日在日本武道馆准备进行演唱会。是继椎名へきる、水树奈々、田村ゆかり后第4个登上这个地方的声优。\r\n2010年3月6日，与井上喜久子共同获得第四届声优奖助演女声优奖。2010年7月，参加Anime Expo。\r\n2015年7月，所属的组合Aice5活动再开。11月21日，发售专辑《Aice5 ALL SONGS COLLECTION》。\r\n\r\n个人生活\r\n家中的独生女。视力并不好需要戴眼镜（左眼1.0，右眼0.1），自曝于2013年黄金周期间接受了激光视力矫正手术。身高155cm。\r\n自从出演‘光子’以后、工作方面多了很多接触面、主要开始拉スタチャ（一种美少女类型作品）流派相关作品的出演。所以、美少女动画片和萌系游戏作品比较多、黄金时段和早上面向儿童的作品，一般向的作品的出演机会就比较少。但是、最近增加了在洋画风类型的作品的配音工作、比如在大地丙太郎（‘幻影天使’、‘反斗小王子’、‘十兵卫2’）、庵野秀明（‘甜心战士OVA’）、富野由悠季（麟光之翼）里都得到出演、开始获得了出名监督作品的出演机会。不仅仅作为偶像声优获得关注、演技方面也渐渐得到高度的评价。\r\n刚出道的时候、几乎全是男性风作品。在出演了原作中女性角色人气很高的 ‘幻影天使’和‘鬼眼狂刀’后、女性风的作品也开始变多。\r\n非常讨厌飞机，在各地间移动多半是坐火车。\r\n曾说过喜欢的歌手是GLAY，有次看过他们的演唱会DVD后就着迷了。其他还有举出B'z、Tommy february6、ケツメイシ、彩虹乐团等。另外她也喜欢杰尼斯事务所旗下的男偶像。\r\n最喜欢的季节是冬天。在冷飕飕的空气中跑出去，觉得皮肤绷紧，评价说特别的喜欢。\r\n与中原麻衣大概是因为角色性质近似的缘故，较少同台演出的机会。一起工作的作品只有《推理之绊》、《暮蝉悲鸣时 解》、《魔侦探洛基》、《吸血鬼骑士》、《半妖少女绮丽谭》、《妖精的尾巴》等。\r\n因为喜欢《爱丽丝梦游仙境》里的爱丽丝，在第2及第5张专辑名也用“アリス”（即爱丽丝）标示。\r\n家里东西摆设零乱的事情很出名。以前在‘天使のたまご’的介绍网站主页上以打上马赛克的形式进行公开。像是家里的冷气设备坏掉了，因为家里一直很凌乱，不好意思找人修理。大扫除后、当天是不会进行最后的清理的。在“Aice5”官方网站‘QandA’被问关于室内装饰问题的时候，就以“这是室内装饰以前的问题”来回答，几句话就带过。\r\n经常出演赤松健原作的动画。在‘纯情房东俏房客’里出演以东大为目标的女主角成濑川奈留时，参加被称为东大的学园祭的活动。而且在那个时候有进行小提琴的表演（曲目是きらきら星）（这把小提琴是拍专辑‘水たまりに映るセカイ’的第1曲目‘桜’的PV时使用过的小道具）。\r\n于东京巨蛋里进行的职业棒球比赛的时候，由于动画《六门天外》的关系，作为サエキトモ的声优，担任开球嘉宾。那个时候堀江穿着背号67的球衣出场，背号67号取自于自身所配角色－柊六奈中的‘六奈’（ろくな）。另外，堀江由衣本身是读卖巨人队的球迷。\r\n相当怕生，以人气声优而言，可以说是客气过头。从交友关系来看首先要提到声优的田村由香里，其他据说关系良好的声优有桑谷夏子、田中理惠、浅野真澄、神田朱未、水树奈奈等人，还有隶属同唱片公司的angela等。另外由于她喜欢杰尼斯偶像，她曾与野川樱一同去看泷与翼的演唱会。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 277,
+            "name": "草摩由希",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/71/53/277_crt_Y5Vfv.jpg?r=1552757331",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/53/277_crt_Y5Vfv.jpg?r=1552757331",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/53/277_crt_Y5Vfv.jpg?r=1552757331",
+                "grid": "https://lain.bgm.tv/pic/crt/g/71/53/277_crt_Y5Vfv.jpg?r=1552757331"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3875,
+                    "name": "久川綾",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a4/31/3875_prsn_8XW7x.jpg?r=1696399080",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/31/3875_prsn_8XW7x.jpg?r=1696399080",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/31/3875_prsn_8XW7x.jpg?r=1696399080",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a4/31/3875_prsn_8XW7x.jpg?r=1696399080"
+                    },
+                    "short_summary": "日本女性配音员、歌手。出身于大阪府贝冢市。身高160cm。血型A型。星座天蝎座。\r\n\r\n隶属于青二Production，青二塾东京校8期出身。\r\n为人熟悉的代表配音作品有动画《Heartcatch 光之美少女！》的月影百合／月光天使、《十二国记》的中嶋阳子、《百变小樱》的可鲁贝洛斯〈伪装形态〉、《我的女神》的诗寇蒂、《美少女战士》系列的水野亚美／水手水星、《魔物猎人妖子》主角真野妖子、《勇者斗恶龙 达伊大冒险》的莉安娜、《翼神世音》的紫东遥、《苍天之拳》的潘玉玲、《天上天下》的枣真夜、《新圣魔大战》的普琪·奥霖公主、《冒险王比特》的奇斯、《BLEACH》的卯之花烈、《仙境传说 THE ANIMATION》的塔姬乌丝、《大运动会》的柳田一乃[4]、《橘子酱男孩》的铃木亚梨実；游戏和改编动画《AIR》的神尾晴子、《To Heart》的保科智子、《卒业 ～Graduation～》的中本静等。\r\n兴趣有与狗陪伴进行温泉之旅、参加狗猫领养的义工活动。特长有与饲主交谈、道德劝说等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 278,
+            "name": "草摩夾",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/07/64/278_crt_OkTt5.jpg?r=1547825498",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/64/278_crt_OkTt5.jpg?r=1547825498",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/64/278_crt_OkTt5.jpg?r=1547825498",
+                "grid": "https://lain.bgm.tv/pic/crt/g/07/64/278_crt_OkTt5.jpg?r=1547825498"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3868,
+                    "name": "関智一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/40/94/3868_prsn_24eU6.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/94/3868_prsn_24eU6.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/94/3868_prsn_24eU6.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/40/94/3868_prsn_24eU6.jpg"
+                    },
+                    "short_summary": "日本男性配音员。东京俳优生活协同组合→Atomic Monkey所属。东京都江东区深川出身。以热血激昂的声线闻名，昵称为“チイチ”（ChiIChi, 智一的音读）。\r\n\r\n在机动武斗传G高达的主角选角时，自己参加试音的路上因积雪滑了一跤，心想“这下肯定落选了”结果反而在两天后宣布中选。\r\n非常爱开黄腔，也因此冒犯许多不好此道的女声优，曾因尺度太大被电台高层警告。",
+                    "locked": false
+                },
+                {
+                    "id": 20474,
+                    "name": "池田恭祐",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c1/b2/20474_prsn_KPnA5.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/b2/20474_prsn_KPnA5.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/b2/20474_prsn_KPnA5.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c1/b2/20474_prsn_KPnA5.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

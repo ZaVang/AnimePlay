@@ -1,0 +1,58 @@
+{
+    "id": 1038,
+    "name": "超智游戏",
+    "image_path": "data/images/anime/1038.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "“埼京彩珠豺狼”队的儿岛弘道，虽然具备实力，但却一次优胜也没有得到过，因此被称为“不走运的天才击球手”。\r\n不能得到估胜，应该是哪里尚有不足之处。为了找出那个缺点而自己来到了冲绳进行私下特训。在那里，他遇到了一个叫渡久地东亚的男人——称为“ONE OUTS”的赌博棒球中不败的传说。\r\n在第二次的比赛中，最后儿岛以力气取胜。为了利卡恩兹的光明未来，他向东亚发出了邀请的。\r\n随着东亚的入团，万年B级队的弱小球队“埼京彩珠利卡恩兹”的命运迎来了巨大的转变。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 25,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "运动",
+        "漫画改"
+    ],
+    "date": "2008-10-07",
+    "rating_rank": 429,
+    "rating_score": 7.8,
+    "rating_total": 1758,
+    "main_character_ids": [
+        12653
+    ],
+    "main_characters": [
+        {
+            "id": 12653,
+            "name": "渡久地東亜",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b5/62/12653_crt_ZFeue.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/62/12653_crt_ZFeue.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/62/12653_crt_ZFeue.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b5/62/12653_crt_ZFeue.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4955,
+                    "name": "萩原聖人",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/60/ce/4955_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/ce/4955_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/ce/4955_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/60/ce/4955_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本的演员、声优，出生于神奈川县茅崎市。他于1995年11月与曾在《夏子的酒》共同演出的和久井映见结婚，1999年10月生下了一名男孩。2003年7月因萩原圣人与和久井映见离婚，和久井映见获得孩子的监护权。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

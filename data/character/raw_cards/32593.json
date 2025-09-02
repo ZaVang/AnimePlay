@@ -1,0 +1,52 @@
+{
+    "id": 32593,
+    "name": "ブラック",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/92/50/32593_crt_5l0zF.jpg?r=1480961519",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/50/32593_crt_5l0zF.jpg?r=1480961519",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/50/32593_crt_5l0zF.jpg?r=1480961519",
+        "grid": "https://lain.bgm.tv/pic/crt/g/92/50/32593_crt_5l0zF.jpg?r=1480961519"
+    },
+    "summary": "ホワイトの双子の兄。金髪に碧眼をもち、穏やかに笑う。レオが地下鉄で出会った少年によく似ているが……。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "威廉·麦克白"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "小黑"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Black"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://kekkaisensen.com/character/charaview.html#20"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 14,
+        "collects": 19
+    },
+    "anime_ids": [
+        105075
+    ]
+}

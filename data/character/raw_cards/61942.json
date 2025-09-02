@@ -1,0 +1,61 @@
+{
+    "id": 61942,
+    "name": "日高小春",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/db/c4/61942_crt_pxZYN.jpg?r=1535557767",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/c4/61942_crt_pxZYN.jpg?r=1535557767",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/c4/61942_crt_pxZYN.jpg?r=1535557767",
+        "grid": "https://lain.bgm.tv/pic/crt/g/db/c4/61942_crt_pxZYN.jpg?r=1535557767"
+    },
+    "summary": "大人しい女の子。商店を営む自宅に、ゲームの筺体が設置されているものの、全くの初心者。\r\n中学でハルオのクラスメイトになる少女。控え目すぎる性格から自由奔放なハルオの姿に憧れを抱く。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "日高小春"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "日高 小春"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひだか こはる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hidaka Koharu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1979年4月4日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": 1979,
+    "birth_mon": 4,
+    "birth_day": 4,
+    "stat": {
+        "comments": 92,
+        "collects": 269
+    },
+    "anime_ids": [
+        278569,
+        91205
+    ]
+}

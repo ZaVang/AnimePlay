@@ -1,0 +1,68 @@
+{
+    "id": 12074,
+    "name": "中津静流",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/af/dd/12074_crt_GH9Gc.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/dd/12074_crt_GH9Gc.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/dd/12074_crt_GH9Gc.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/af/dd/12074_crt_GH9Gc.jpg"
+    },
+    "summary": "主人公的后辈、风纪委员会所属。无口但很直率。\r\n虽然不怎么说话但会通过行动来表达、感情表现很丰富的少女。\r\n几乎没像样地做过风纪委员的工作、为了让瑚太朗注意自己而对他进行监管。\r\n为了隐瞒自己的虹彩异色症而戴着眼罩、只有在亲近的人面前才会拿下。\r\n非常喜欢吃秋刀鱼。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "中津静流"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "なかつ しずる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nakatsu Shizuru"
+                },
+                {
+                    "k": "罗马字2",
+                    "v": "Nakatsu Sizuru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月18日"
+        },
+        {
+            "key": "身高",
+            "value": "149cm"
+        },
+        {
+            "key": "体重",
+            "value": "39kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B75/ W52/ H73"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 18,
+    "stat": {
+        "comments": 65,
+        "collects": 263
+    },
+    "anime_ids": [
+        363880
+    ]
+}

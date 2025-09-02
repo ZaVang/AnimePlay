@@ -1,0 +1,81 @@
+{
+    "id": 7638,
+    "name": "城之内克也",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/77/02/7638_crt_9uHF7.jpg?r=1751790022",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/02/7638_crt_9uHF7.jpg?r=1751790022",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/02/7638_crt_9uHF7.jpg?r=1751790022",
+        "grid": "https://lain.bgm.tv/pic/crt/g/77/02/7638_crt_9uHF7.jpg?r=1751790022"
+    },
+    "summary": "主人公・武藤遊戯の親友。当初は不良として登場。ケンカはとても強く男気に溢れ、親友である遊戯らや実妹の川井静香のためなら、どんな危険も恐れない。一方で頭はあまり良くない。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "城之内克也"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Joey Wheeler"
+                },
+                {
+                    "k": "日文名",
+                    "v": "城之内 克也"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "じょうのうち かつや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Jōnouchi Katsuya"
+                },
+                {
+                    "k": "昵称",
+                    "v": "凡骨"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1月25日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "178cm"
+        },
+        {
+            "key": "体重",
+            "value": "62kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 25,
+    "stat": {
+        "comments": 16,
+        "collects": 57
+    },
+    "anime_ids": [
+        6390,
+        12344
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": 23567,
+    "name": "御苑生奈々子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/13/82/23567_crt_V4rLL.jpg?r=1428975505",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/82/23567_crt_V4rLL.jpg?r=1428975505",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/82/23567_crt_V4rLL.jpg?r=1428975505",
+        "grid": "https://lain.bgm.tv/pic/crt/g/13/82/23567_crt_V4rLL.jpg?r=1428975505"
+    },
+    "summary": "本作の主人公にして語り手。青蘭学園高等部1年。高校から青蘭学園に通うこととなった。武彦を「おにいさま」と呼び、文通している。父親は大学教授。\r\n    お菓子作りが趣味の平凡な少女だったが、生徒会長の蕗子に目をかけられて、ソロリティに入会したことが原因で、嫉妬した生徒たちからの嫌がらせを受け、れい、露子、武彦との複雑な関係に巻き込まれていくが、そのことが彼女を大きく成長させる。れいを慕っている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "御苑生奈奈子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "御苑生 奈々子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みそのお ななこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Misonoo Nanako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 12
+    },
+    "anime_ids": [
+        7408
+    ]
+}

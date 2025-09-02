@@ -1,0 +1,52 @@
+{
+    "id": 111627,
+    "name": "中見丸太",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b5/f7/111627_crt_CEfB3.jpg?r=1675666609",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/f7/111627_crt_CEfB3.jpg?r=1675666609",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/f7/111627_crt_CEfB3.jpg?r=1675666609",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b5/f7/111627_crt_CEfB3.jpg?r=1675666609"
+    },
+    "summary": "能登の高校一年生。長期にわたる不眠によるイライラや不調のため誤解されがちだが、素直で真面目。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "中见丸太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "中見 丸太"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なかみ がんた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nakami Ganta"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 14,
+        "collects": 14
+    },
+    "anime_ids": [
+        365437
+    ]
+}

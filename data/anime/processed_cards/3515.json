@@ -1,0 +1,89 @@
+{
+    "id": 3515,
+    "name": "火球",
+    "image_path": "data/images/anime/3515.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "在遥远的未来，一颗普通的行星上——\r\n由于人类的抵抗，机器人的贵族政治正走向灭亡。\r\n在与世隔绝的住宅中，两位机器人——Flügel公爵的女儿Drossel，及其管家Gedächtnis，展开了琐碎的“日常”对话。 ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2008-04-07",
+    "rating_rank": 1787,
+    "rating_score": 7.2,
+    "rating_total": 538,
+    "main_character_ids": [
+        6009,
+        12456
+    ],
+    "main_characters": [
+        {
+            "id": 6009,
+            "name": "ゲデヒトニス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/37/d7/6009_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/d7/6009_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/d7/6009_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/37/d7/6009_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4131,
+                    "name": "大川透",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6e/a7/4131_prsn_BLrCD.jpg?r=1492370968",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/a7/4131_prsn_BLrCD.jpg?r=1492370968",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/a7/4131_prsn_BLrCD.jpg?r=1492370968",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6e/a7/4131_prsn_BLrCD.jpg?r=1492370968"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 12456,
+            "name": "ドロッセル・フォン・フリューゲル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a8/c1/12456_crt_UJsjY.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a8/c1/12456_crt_UJsjY.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a8/c1/12456_crt_UJsjY.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a8/c1/12456_crt_UJsjY.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5077,
+                    "name": "川庄美雪",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2e/85/5077_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/85/5077_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/85/5077_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2e/85/5077_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

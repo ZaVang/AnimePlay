@@ -1,0 +1,84 @@
+{
+    "id": 28578,
+    "name": "三村かな子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/42/fb/28578_crt_OrkDc.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/fb/28578_crt_OrkDc.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/fb/28578_crt_OrkDc.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/42/fb/28578_crt_OrkDc.jpg"
+    },
+    "summary": "三村加奈子是手机社群游戏《偶像大师 灰姑娘女孩》系列的吃货偶像。\r\n看起来温和可爱。刚开始加奈子由于自己的体重而有些自卑，尽管她只是比其它女孩胖一点。\r\n爱好是制作糖果和甜点，但是自己又经常会把这些吃掉。\r\n似乎有着「带来了工作人员和参演者全员都吃不掉的大量点心，然后消灭了全部」的传说。\r\n此外加奈子还十分喜欢头饰，尤其是那种带有特殊花样式的头饰。\r\n初登场时早期就可获得的卡片，虽然能力不出众，但是作为早期攻击性卡片人气比较高。\r\n初期卡的特训后服装设计为共同的「粉点气球」，和持田亚里沙、绪方智绘里、柳濑美由纪属同类设计。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "三村加奈子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みむら かなこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mimura Kanako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月6日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "153cm"
+        },
+        {
+            "key": "体重",
+            "value": "52kg(→51kg)"
+        },
+        {
+            "key": "BWH",
+            "value": "90/65(→63)/89"
+        },
+        {
+            "key": "引用来源",
+            "value": "萌娘百科"
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        },
+        {
+            "key": "出身地",
+            "value": "東京都"
+        },
+        {
+            "key": "兴趣",
+            "value": "制作糕点"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 6,
+    "stat": {
+        "comments": 12,
+        "collects": 22
+    },
+    "anime_ids": [
+        130231
+    ]
+}

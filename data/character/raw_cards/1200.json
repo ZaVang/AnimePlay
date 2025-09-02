@@ -1,0 +1,60 @@
+{
+    "id": 1200,
+    "name": "野田ミキ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fe/2d/1200_6dr6R.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/2d/1200_6dr6R.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/2d/1200_6dr6R.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fe/2d/1200_6dr6R.jpg"
+    },
+    "summary": "GA一年级女学生。官方介绍时通称“野田美希（ノダミキ）”，周围的人称呼她“野田（ノダ）”或“公主（姫）”。给人的印象色彩为亮色系，特别是黄色。\r\n\r\n喜欢热闹，总是保持在兴奋状态，常做出多余发言。个性像小孩一样，喜欢恶作剧。在团体中负责带动气氛。和如月相反类型，有天才等级的才能，但都看心情做事，上美术课有一半是在玩。\r\n\r\n有就读普通科的姐姐（声：名冢雅絵）。家里有养猫。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "野田美希"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "野田 ミキ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "のだ ミキ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Noda Miki"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ノダ、姫"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "141cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 23
+    },
+    "anime_ids": [
+        1729
+    ]
+}

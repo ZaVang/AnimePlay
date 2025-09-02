@@ -1,0 +1,64 @@
+{
+    "id": 15092,
+    "name": "三國藤吉",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/db/22/15092_crt_r7ABC.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/22/15092_crt_r7ABC.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/22/15092_crt_r7ABC.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/db/22/15092_crt_r7ABC.jpg"
+    },
+    "summary": "三国コンツェルンの御曹子。サルのきぐるみがお気に入りの小技を多様する技巧派レーサー。豪や二郎丸とは性格が似ているためか、しばしば衝突することもあるが基本的には裏表のない、いい奴である。ＳＧＪＣでは鷹羽リョウと同ポイントで3位に入り、その実力をみせた。大きなピンクの蝶ネクタイと扇子がトレードマーク。\r\n\r\nWGP\r\n「おぼっちゃまにも五分の魂」が口癖のビクトリーズの業師。豪や二郎丸とはケンカ仲間で、よく3人でかけあいをしている。普段の生活のゆえか、野外での生活は苦手らしく93話では二郎丸にトイレットペーパーを投げられてパニックを起こしたことも。おぼっちゃまらしく嫌みな部分もあるが根はいい奴。100話の「レースよりも大切なことがあるでゲスよ。レースで勝つより大切なことが！」は彼の性格を伺い知れる名セリフ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "三国藤吉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みくに とうきち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mikuni Toukichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月3日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "118cm→128cm"
+        },
+        {
+            "key": "体重",
+            "value": "28kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 3,
+    "stat": {
+        "comments": 3,
+        "collects": 1
+    },
+    "anime_ids": [
+        47759
+    ]
+}

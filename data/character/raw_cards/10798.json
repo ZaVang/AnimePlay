@@ -1,0 +1,52 @@
+{
+    "id": 10798,
+    "name": "鯉淵藏之介",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b2/ba/10798_crt_n3WI2.jpg?r=1523886374",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/ba/10798_crt_n3WI2.jpg?r=1523886374",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/ba/10798_crt_n3WI2.jpg?r=1523886374",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b2/ba/10798_crt_n3WI2.jpg?r=1523886374"
+    },
+    "summary": "本作男主角。某天在男扮女装下，在一间水族商店里帮助月海救下了名为“水水”（月海起的名字）的珍珠水母。回到尼姑庵之后女主月海才发现原来女王气质的 “公主殿下”其实是货真价实的帅哥。由于平时家人事务繁忙，所以很喜欢天水馆和宅女们一起吃火锅。为了继续以女人的身份和尼姑们一起，自称“藏子”。臧之介出身名门，是某大政治家的儿子，但是讨厌从政，为了不继承父亲的职业所以扮成了伪娘。小时候在妈妈的衣橱里看到各种华丽的衣服，一直希望还能再看到妈妈的衣橱，总是到父亲和哥哥的房间找关于母亲的信息。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鲤渊藏之介"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "こいぶち くらのすけ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Koibuchi Kuranosuke"
+                },
+                {
+                    "k": "昵称",
+                    "v": "藏子"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 24
+    },
+    "anime_ids": [
+        6811
+    ]
+}

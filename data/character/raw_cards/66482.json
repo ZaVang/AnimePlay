@@ -1,0 +1,54 @@
+{
+    "id": 66482,
+    "name": "メイザ・エンダスト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ce/d8/66482_crt_17J5r.jpg?r=1611791922",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/d8/66482_crt_17J5r.jpg?r=1611791922",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/d8/66482_crt_17J5r.jpg?r=1611791922",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ce/d8/66482_crt_17J5r.jpg?r=1611791922"
+    },
+    "summary": "物静かな魔法使い。\r\n基本的に無表情だが、その裏では渾身のオヤジギャグなど、頭の悪いことを真剣に考えていたりする。その一方で家庭的な女の子らしさも。\r\n超が付くほどカルタードが大好きなヲタクで、カルタ―ドのことになると驚くほど熱く語りだす。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "梅瑟·恩达斯特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "メイ"
+                },
+                {
+                    "v": "Mei"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Mather Enderstto"
+                },
+                {
+                    "k": "昵称",
+                    "v": "梅"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 35,
+        "collects": 90
+    },
+    "anime_ids": [
+        254895
+    ]
+}

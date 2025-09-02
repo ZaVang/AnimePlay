@@ -1,0 +1,405 @@
+{
+    "id": 8621,
+    "type": 2,
+    "name": "バトルスピリッツ ブレイヴ",
+    "name_cn": "战斗之魂Brave",
+    "summary": "Battle Spirits系列是SUNRISE改編自萬代與魔法風雲會製作組共同出品的CARDDAS系列30周年紀念的卡片遊戲動畫作品。\r\n從08年9月開始播放，如今已經進入第三年，維持著每年一部的速度。\r\n第一部《Battle Spirits 少年突破馬神》\r\n第二部《Battle Spirits 少年激霸彈》\r\n第三部《Battle Spirits Brave》\r\n\r\n第一部和第二部在世界觀上有所傳承，而劇情是分別獨立的。第三部是第二部的延續，也可以稱為少年激霸彈的二季。雖然這麼說，不過其實除了主角相同還有部分的舊角色登場之外，和少年激霸彈的劇情關係並不是密切，所以分開來看也是完全沒有問題的。\r\n\r\n再來介紹一下Brave的世界觀\r\n\r\n時間設定在上一部完結的兩年後，打敗了異界王（一季的BOSS）的馬神彈成為了眾人的憧憬，然而他卻不能忘懷那段堵上生死進行戰鬥的時候，於是紫乃宮麻衣（上季中的薇歐蕾魔）來到他的面前，告訴他未來需要他的力量，於是兩人穿越到了未來的地球。（第一集就穿越與異世界的設定是BS的傳統XD）\r\n未來的地球，因為彈打敗了異界王而使未來發生了改變，異世界和人類世界分離了，然後異世界人中確有一部分留在了地球並伺機擴大了自己的勢力，那就是“魔族”，人類稱之為“異界魔族”的存在。\r\n未來的地球，處於人類被異界魔族統治的狀況，並且因為異界魔族人為地創造出第八大陸“北斗”，使自然陷入RESET倒計時。\r\n而彈要做的就是，成為救世主，在這個一年之內拯救這個地球。\r\n\r\n==================================\r\n\r\n前作『バトルスピリッツ 少年激覇ダン』の後継番組として制作された「バトルスピリッツシリーズ」第三弾。前作の純粋な続編作品である。 前作とは打って変わって連続ストーリーとなり、SF色が強く描かれている。\r\n\r\nあの激闘から2年。激突王・馬神弾は、ヴィオレ魔ゐ改め紫乃宮まゐに『バトルが出来る時代に来てほしい』と頼まれ、二人は未来の世界へ飛び込む。\r\n未来の地球は、異界魔族に侵食されていた。ダンは人類軍の最高司令官となったカザンと再会し、人類を救ってほしいと未来を託される。\r\n時は西暦2650年8月30日。今、ダンの新たなる戦いが幕を開け！",
+    "nsfw": false,
+    "locked": false,
+    "date": "2010-09-12",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/64/51/8621_MPPls.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/64/51/8621_MPPls.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/64/51/8621_MPPls.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/64/51/8621_MPPls.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/64/51/8621_MPPls.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "战斗之魂Brave"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Battle Spirits Brave",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "50"
+        },
+        {
+            "key": "放送开始",
+            "value": "2010年9月12日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.sunrise-inc.co.jp/battlespirits3"
+        },
+        {
+            "key": "播放电视台",
+            "value": "メ〜テレ（现：名古屋テレビ放送）・テレビ朝日系列"
+        },
+        {
+            "key": "播放结束",
+            "value": "2011年9月11日"
+        },
+        {
+            "key": "导演",
+            "value": "西森章"
+        },
+        {
+            "key": "音乐",
+            "value": "瀬川英史"
+        },
+        {
+            "key": "Copyright",
+            "value": "©2010 SUNRISE INC."
+        },
+        {
+            "key": "原作",
+            "value": "矢立肇"
+        },
+        {
+            "key": "系列构成",
+            "value": "冨岡淳広"
+        },
+        {
+            "key": "人物设定",
+            "value": "湯本佳典、石川てつや"
+        },
+        {
+            "key": "美术监督",
+            "value": "中村典史、鈴木武志"
+        },
+        {
+            "key": "摄影监督",
+            "value": "貞松寿幸"
+        },
+        {
+            "key": "设定",
+            "value": "战魂设计:石垣純哉、今石進、丸山浩、ヒラタリョウ"
+        },
+        {
+            "key": "制片人",
+            "value": "川本謙一（メ～テレ）、古澤文邦（サンライズ）"
+        },
+        {
+            "key": "制作",
+            "value": "メ〜テレ(名古屋テレビ)、サンライズ、ADK(アサツー ディ・ケイ)"
+        },
+        {
+            "key": "协力",
+            "value": "オーアールジー、バンダイ"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "眞野昇（サンライズ音楽出版）、井上俊次（ランティス）"
+        },
+        {
+            "key": "音乐制作",
+            "value": "サンライズ音楽出版(サンライズミュージック)、ランティス；音乐制作协力：名古屋テレビ映像"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "カラス（OP） / 小野大輔（ED）"
+        }
+    ],
+    "volumes": 0,
+    "eps": 50,
+    "total_episodes": 52,
+    "rating": {
+        "rank": 149,
+        "total": 222,
+        "count": {
+            "one": 1,
+            "two": 1,
+            "three": 0,
+            "four": 2,
+            "five": 3,
+            "six": 10,
+            "seven": 29,
+            "eight": 55,
+            "nine": 74,
+            "ten": 47
+        },
+        "score": 8.4
+    },
+    "collection": {
+        "wish": 511,
+        "collect": 308,
+        "doing": 57,
+        "on_hold": 55,
+        "dropped": 57
+    },
+    "tags": [
+        {
+            "name": "SUNRISE",
+            "count": 99
+        },
+        {
+            "name": "TV",
+            "count": 80
+        },
+        {
+            "name": "2010",
+            "count": 77
+        },
+        {
+            "name": "原创",
+            "count": 70
+        },
+        {
+            "name": "卡牌",
+            "count": 61
+        },
+        {
+            "name": "BattleSpirits",
+            "count": 42
+        },
+        {
+            "name": "子供向",
+            "count": 37
+        },
+        {
+            "name": "西森章",
+            "count": 29
+        },
+        {
+            "name": "打牌救世界",
+            "count": 25
+        },
+        {
+            "name": "神作",
+            "count": 16
+        },
+        {
+            "name": "合体王",
+            "count": 12
+        },
+        {
+            "name": "冨岡淳広",
+            "count": 10
+        },
+        {
+            "name": "年番",
+            "count": 5
+        },
+        {
+            "name": "结婚王",
+            "count": 5
+        },
+        {
+            "name": "主角死亡结局",
+            "count": 5
+        },
+        {
+            "name": "2010年9月",
+            "count": 5
+        },
+        {
+            "name": "サンライズ",
+            "count": 5
+        },
+        {
+            "name": "富冈淳广",
+            "count": 4
+        },
+        {
+            "name": "2010s",
+            "count": 4
+        },
+        {
+            "name": "バトルスピリッツ",
+            "count": 3
+        },
+        {
+            "name": "TVA",
+            "count": 3
+        },
+        {
+            "name": "2010年10月",
+            "count": 3
+        },
+        {
+            "name": "日本动画",
+            "count": 2
+        },
+        {
+            "name": "战斗之魂",
+            "count": 2
+        },
+        {
+            "name": "激♂突♂王",
+            "count": 2
+        },
+        {
+            "name": "抖M王",
+            "count": 2
+        },
+        {
+            "name": "日本",
+            "count": 2
+        },
+        {
+            "name": "长篇",
+            "count": 2
+        },
+        {
+            "name": "打牌",
+            "count": 2
+        },
+        {
+            "name": "欲求不满王",
+            "count": 2
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "子供向"
+    ],
+    "series": false,
+    "main_character_ids": [
+        11646,
+        11647,
+        11654,
+        12295
+    ],
+    "main_characters": [
+        {
+            "id": 11646,
+            "name": "馬神弾",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/dd/ff/11646_crt_Ny0RA.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/ff/11646_crt_Ny0RA.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/ff/11646_crt_Ny0RA.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/dd/ff/11646_crt_Ny0RA.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4495,
+                    "name": "緒乃冬華",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d8/42/4495_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/42/4495_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/42/4495_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d8/42/4495_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "緒乃 冬華（おの ふゆか、1978年1月13日 - ）は、日本の女性声優。アクロス エンタテインメント所属。北海道札幌市出身。既婚。旧名は大浦 冬華（おおうら ふゆか）\r\n\r\n2009年4月まで東京俳優生活協同組合に所属していた。同年6月よりアクロス エンタテインメント所属。また、俳協所属以前は劇団アルターエゴにも所属していた。\r\n2011年7月25日付のブログで結婚したことを発表した。2013年8月6日に女児を出産。\r\n川澄綾子とは猫好き仲間であり、一緒に食事したり旅行もする。\r\n看護師・保健師資格を持つ。また、心屋仁之助に傾倒しており、心屋塾の心屋リセットカウンセリングマスターの資格も持ち、ブログでその内容に言及することも多い。\r\n2016年3月より、旧姓（本名）だった「大浦冬華」から「緒乃冬華」へと改名した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 11647,
+            "name": "紫乃宮まゐ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/19/03/11647_crt_4XAxg.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/03/11647_crt_4XAxg.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/03/11647_crt_4XAxg.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/19/03/11647_crt_4XAxg.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 740,
+                    "name": "川澄綾子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/05/d0/740_prsn_TqQ7W.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/d0/740_prsn_TqQ7W.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/d0/740_prsn_TqQ7W.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/05/d0/740_prsn_TqQ7W.jpg"
+                    },
+                    "short_summary": "日本女性声优。生于东京，亦有兼任歌唱工作。東邦音楽短期大学毕业。\r\n\r\n在低出生体重儿的危险状况下被生下来，曾说过自己的父母已有了万一的觉悟急急忙忙以“あ”为开头作为名字。出生预定日为5月3日。被亲戚笑“比牛奶球还小”。\r\n在1996年的SME声优大赛中得到代代木动画学院奖。\r\n在《逮捕令》中以妇警D一角初次以动画声优登场，之前已以广告旁白出道。\r\n以《头文字D》中的茂木夏树一角和动画《To Heart》的神岸明一角开始活跃。\r\n在《星界战旗》的拉斐尔选角时从一百名候选人被选拔，配音时发烧发到摄氏40度仍然去配音，结果被音响监督叫她回家去，说“从来没见到这么拼命的声优”。\r\n说“是（はい）”的口音独特。\r\n为少女、幼女、美女、恶女、严肃、搞笑、纯情、傲娇等等各式各样的类型的角色配过音。部分作品中会演唱主题曲或角色曲。\r\n在动画的配音中，比起黄金档、低龄向作品、一般向作品，以深夜动画、萌系动画和美少女动画居多。\r\n被剧本家会川升称为“オーディション荒らし”。\r\n曾以“あやちー（小绫）”这个爱称在fans间流传，但是在业界内现在还用这个爱称称呼的只有过去认识的朋友。其他的还有“绫ちゃん（小绫）”、“あやすみ（绫澄）”、“あやねえ（绫姐）”等。\r\n一般不戴眼镜，极偶尔会在杂志和网络上出现她戴眼镜的照片。但在《PONY CANYON STYLE まるなび!?》的BSQR489版中则有很多她戴眼镜的照片。\r\n因为憧憬岩田光央而进入大泽事务所。\r\n喜欢的很大只的猫。\r\n学生时代曾经是《JoJo的奇妙冒险》的粉丝，后在2012年7月在东京举办的JoJo连载25周年纪念“JoJo展”中与饰演乔纳森・乔斯达的兴津和幸、担任旁白的大川透共同到场。\r\n座右铭是“人間万事塞翁が馬”。\r\n\r\n从3岁起学习钢琴，拥有绝对音感；但因认为平时弹钢琴没有什么意义，几乎只在为まるなび！？HOT TUNE作曲时才会接触钢琴。\r\n兴趣是看棒球比赛，为东京养乐多燕子的球迷。特别是经常将代跑城友博（1999年移籍至阪神虎）的成绩整理在笔记本里。\r\n于PONY CANYON STYLE まるなび！？的第139回（2007年5月22日）中提及自己取得了汽车驾驶执照。\r\n非常喜爱猫，东京父母的家中养有数只。\r\n得意料理是千层面、绫子锅（生天目仁美命名），其中绫子锅在棉花糖会（ましまろ会）中大受好评。\r\n相当害怕昆虫。据说家族旅行时，要去露天温泉的途中看到虫，而发出哀嚎吓到母亲。另外，与能登麻美子一起去旅行的时候，也曾因见到虫而吓得从露天温泉里逃出来。\r\n自认非常喜欢说话，是个健谈的女孩子。\r\n据说即使长时间乘坐电车，也不会在里头睡着。\r\n关于配音，曾提到：“现在想起来，第一次的拍后录音是最紧张的时候。因为紧张，有的时候甚至会说不出话来（笑）。现在总算是已经适应了这种气氛了，而且使我兴奋的是最近挑战的几个全新的角色，也许大家从中能够看到另外一个我呢。能够出演这样一些角色我自己也非常高兴，我希望在30岁、不，40岁以后大家还是象现在一样喜欢我塑造的角色。\r\n\r\n被同事务所的晚辈能登麻美子称呼为“小绫”（绫ちゃん）、而且还私下2人一起去过温泉旅行。\r\n在演出《草莓棉花糖》后，与同剧的声优千叶纱子、折笠富美子及能登麻美子关系良好，因此组成了“棉花糖会（ましまろ会）”，偶尔会相约一起出外活动。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 11654,
+            "name": "月光のバローネ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ac/db/11654_crt_5NS00.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/db/11654_crt_5NS00.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/db/11654_crt_5NS00.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ac/db/11654_crt_5NS00.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4254,
+                    "name": "浪川大輔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/70/c3/4254_prsn_99K43.jpg?r=1631019573"
+                    },
+                    "short_summary": "浪川 大輔（なみかわ だいすけ、1976年4月2日 - ） は、日本の声優、俳優、歌手、ナレーター。ステイラック代表取締役。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 12295,
+            "name": "クラッキー・レイ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f3/c8/12295_crt_fI4ld.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/c8/12295_crt_fI4ld.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/c8/12295_crt_fI4ld.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f3/c8/12295_crt_fI4ld.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4456,
+                    "name": "小野大輔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c4/8e/4456_prsn_HEQe3.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/8e/4456_prsn_HEQe3.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/8e/4456_prsn_HEQe3.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c4/8e/4456_prsn_HEQe3.jpg"
+                    },
+                    "short_summary": "在日本大学艺术学部放送学科就读时，主要是专攻电视节目制作。但因为当时提出的企划作品被教授评价的很差，所以转而改以演出者方式参与，并在参与过程中感受到演戏的有趣，因此决定以成为声优为目标。\r\n　　 出道当时，以动画节目的准常态出演（担任非固定角色名的小角色配音）为主。\r\n　　 第一部担任主角的动画作品是「AIR」TV动画版的男主角国崎往人。\r\n　　 在2006年放送的动画《凉宫春日的忧郁》以古泉一树这个角色获得广大知名度，其後也陆续获得许多要角演出。从帅气知性的青年到有点脱线的搞笑角色，演出的类型范围十分广泛。\r\n　　 2008年以《南家三姐妹》保坂这个角色获得第二回声优奖男优部门配角赏。　\r\n　　据来自2010年6月14日，IT世界网的咨询《Voice NewType投票，新一代声优崭露头角》中报道：男性榜单这边倒几乎都是老面孔，不过占据首位的再也不是福山润和神谷浩史等人，今次终于也轮到了小野大辅。长期以来如同劳模一般辛苦工作的小野大辅，如今终于名利双收，不但摘得上届声优大赏最佳男主角赏，如今人气投票又问鼎冠军，实在可喜可贺。\r\n　　 2010年1月31日その执事、狂騒～赤いヴァレンタイン声优见面会中被主持人吉田尚记称为声优界的谷原章介。\r\n　　 2010年3月以《黑执事》塞巴斯蒂安这个角色获得第四回声优奖主演男优赏。\r\n　　 2010年4月新番《迷糊餐馆working》中担任佐藤润的声优。\r\n　　 2010年4月新番《无法逃离的背叛》中担任莲城焰椎真的声优\r\n　　 2010年7月新番《传说中的勇者传说》中担任西昂·阿斯塔尔的声优。《黑执事2》中继续担任塞巴斯蒂安的声优。\r\n　　在《背叛》中的热血少年，《传说中的勇者传说》的拥有伟大理想又腹黑的西昂使小野大辅的声线变化发挥地更为淋漓尽致。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

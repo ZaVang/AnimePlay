@@ -1,0 +1,72 @@
+{
+    "id": 58954,
+    "name": "玉木マリ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/92/6e/58954_crt_CU8Eu.jpg?r=1510135123",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/6e/58954_crt_CU8Eu.jpg?r=1510135123",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/6e/58954_crt_CU8Eu.jpg?r=1510135123",
+        "grid": "https://lain.bgm.tv/pic/crt/g/92/6e/58954_crt_CU8Eu.jpg?r=1510135123"
+    },
+    "summary": "绰号小决，就读多多良西高校的高二女生。想在上了高中后做些什么，却总是却步。因在车站捡到一百万圆而与报濑结识，被报濑邀请同赴南极。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "玉木真理"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "玉木 マリ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たまき まり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tamaki Mari"
+                },
+                {
+                    "k": "昵称",
+                    "v": "キマリ (小决, Kimari)"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2002年3月18日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://yorimoi.com/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 2002,
+    "birth_mon": 3,
+    "birth_day": 18,
+    "stat": {
+        "comments": 15,
+        "collects": 79
+    },
+    "anime_ids": [
+        218708
+    ]
+}

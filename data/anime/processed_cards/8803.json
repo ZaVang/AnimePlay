@@ -1,0 +1,170 @@
+{
+    "id": 8803,
+    "name": "幽游白书",
+    "image_path": "data/images/anime/8803.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "一个十四岁的不良少年，浦饭幽助为了救一名小孩而被汽车撞死了，由于灵界并没有预计到他的死亡，并没有他的容身之所，所以他得到了一个重生的机会。经过了灵界的考验，幽助终于重回自己的身体，并成为灵界侦探。 　　在一次任务中，幽助结识了藏马和飞影，他们三个加上桑原（幽助的死党）一起替灵界解决了不少的案子。接着在“暗黑武术大会”中击败实力强劲的对手们，他们的实力和友谊与日俱增。 　　为阻止前任灵界侦探-仙水忍打开魔界到人间界的通道，幽助他们进入了魔界，幽助更被仙水“杀”了，但原来幽助本来是魔族的后代，因此幽助又复活了。在老爸的帮助下，幽助终于打败了仙水，众人亦回到了人间界。 　　幽助他们和仙水的打斗惊动了魔界里的妖怪，其中势力最大的三组集团--黄泉、雷禅和躯各自向幽助，飞影和藏马发出邀请，希望他们成为自己的助手。幽助因为不满雷禅在他和仙水打斗的时候“帮”了他，要去找他“算帐”，而飞影为了给自己多些的住战机会和经验，亦接受了躯的邀请，藏马则因多年前的一些恩怨，不得不接受黄泉的要求，他们三人都又再到了魔界，更于不到一年就成为了各国的次强者。 　　一年后，雷禅死了，幽助成为了该国的国君，并提出了要举行一场魔界统一战，胜利者可以成为魔界的统治者，反之，落败者便要听从胜利者的命令。第一次魔界统一战的胜利者是雷禅以前的朋友--烟鬼，他订立了“不准干扰人间界”的规定，并希望每三年便再举行一次同样的比赛。赛后，幽助和藏马回到了人间界，而飞影则打算继续留在魔界。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 112,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1992-10-10",
+    "rating_rank": 517,
+    "rating_score": 7.7,
+    "rating_total": 1863,
+    "main_character_ids": [
+        6516,
+        6517,
+        6520,
+        11302
+    ],
+    "main_characters": [
+        {
+            "id": 6516,
+            "name": "浦飯幽助",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/03/5f/6516_crt_q46HE.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/5f/6516_crt_q46HE.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/5f/6516_crt_q46HE.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/03/5f/6516_crt_q46HE.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4188,
+                    "name": "佐々木望",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6a/1b/4188_prsn_aMya2.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/1b/4188_prsn_aMya2.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/1b/4188_prsn_aMya2.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6a/1b/4188_prsn_aMya2.jpg"
+                    },
+                    "short_summary": "※另有同名音乐人。非同一人物。\r\n\r\n佐佐木望（日语：佐々木望，1967年1月25日－）是日本男性声优、歌手。广岛县出身。近年因为声线与过去大大不同，而有喉咙因病开刀的谣言。其本人曾表示“并没有动过手术，也没任何疾病”。\r\n声优代表作有《幽游白书》（浦饭幽助）、《网球王子系列》（亚久津仁）。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6517,
+            "name": "桑原和真",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c6/46/6517_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c6/46/6517_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c6/46/6517_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c6/46/6517_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4110,
+                    "name": "千葉繁",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/18/9c/4110_prsn_uhHLF.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/9c/4110_prsn_uhHLF.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/9c/4110_prsn_uhHLF.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/18/9c/4110_prsn_uhHLF.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーター、音響監督。本名：前田 正治（まえだ まさはる）。\r\n熊本県菊池市出身。劇団フジ、劇団東芸、エム・スリーを経て81プロデュースに所属。C&Oアクターズスタジオ所長。\r\n\r\n中学卒業後、集団就職で熊本から上京して日立横浜工場で働き始める。働きながら勉強する苦学の日々を送る中、友人と参加した劇団フジのオーディションに合格、役者業に転向する。若い時は身体的な能力を生かして日活などの作品にスタントマンとして参加していたことで知られている。にっかつロマンポルノに俳優として出演したこともある。本人によれば、ぐりぐり眼鏡の学生で、コトに及んで「僕知ってるよぉ!」などと叫んでいるようなキャラクターだった。また中学時代は体操部のキャプテンであり、運動神経はバッチリだという。劇団東芸移籍後もテレビドラマなどに出演。大河ドラマや1978年版『白い巨塔』に出演したこともある。お笑い芸人・役者のチャーリーカンパニーとはこの頃からの旧友で、現在も親交がある。\r\n声優業を開始したのは1976年『ドカベン』からで、次第に声優としてのキャリアを積んでいく。1984年に始まった『北斗の拳』ではジョーカーなど悪役の主にやられ役要員として出演していたが、後に予告ナレーションも担当した。1985年に『ハイスクール!奇面組』で初めてアニメの主人公を演じ、同年に若手声優を集めて劇団バーストマンを旗揚げして活動していたが、後に解散。1989年には、押井守監督のOVA『御先祖様万々歳!』で初の音響監督を経験して以降、音響制作業での活動が増えている。俳優養成所のC&Oアクターズスタジオで所長を務めるなど、後進の育成に力を注いでいる。また、声優としての名を確立した現在でも、映画や特撮ドラマに顔出し出演することがある。\r\nアニメ監督の押井守とは、1980年のテレビアニメ『ニルスのふしぎな旅』以来の付き合いであり、『うる星やつら』は原作ではチョイ役だったメガネというキャラクターを押井監督とともにふくらませ、千葉の名を印象付ける出世作となった。このメガネの延長で「千葉繁のプロモーション映像を作ろう」という企画が発展して制作された1987年の実写映画『紅い眼鏡』では主演を務めた。その他『ケルベロス-地獄の番犬』、『トーキング・ヘッド』等押井守の実写映画にも出演。『獣電戦隊キョウリュウジャー』のドクター・ウルシェード役で年長ヒーローを演じ、更に押井の代表作『機動警察パトレイバー』の実写映画版『THE NEXT GENERATION -パトレイバー-』（総監督を押井が担当）にアニメと同じシバシゲオ役で顔出し出演もしている。\r\n2017年1月9日、テレビ朝日にて放映された『人気声優200人が本気で選んだ!声優総選挙!3時間SP』で第20位に選ばれる。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6520,
+            "name": "飛影",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/80/fe/6520_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/fe/6520_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/fe/6520_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/80/fe/6520_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4105,
+                    "name": "檜山修之",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d8/c2/4105_prsn_6dzrY.jpg?r=1732374320",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/c2/4105_prsn_6dzrY.jpg?r=1732374320",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/c2/4105_prsn_6dzrY.jpg?r=1732374320",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d8/c2/4105_prsn_6dzrY.jpg?r=1732374320"
+                    },
+                    "short_summary": "檜山 修之（ひやま のぶゆき、1967年8月25日- ）は、日本の男性声優、ナレーターである。アーツビジョン所属。広島県廿日市市出身。身長166cm、体重74kg。血液型はA型。星座はおとめ座。干支は羊。\r\n\r\n仕事をする時に気をつけていることは「その時やってる役にとにかく専念すること」。\r\n\r\nデビューして約5年間、バイトをしながら生活していた。その中の一つである警備員のバイトをしていた頃、道路工事の現場がアフレコスタジオの前だった時があり、同僚にばれないように顔を隠していたという。\r\n\r\n自分が声を演じた役の中でヒーロー役の集大成は前述の獅子王凱、悪役の集大成は『機動戦士ガンダムSEED』のムルタ・アズラエル。特に凱を含め『ガオガイガー』には思い入れが強く、『スーパーロボット大戦シリーズ』公式サイト内のインタビューにて、「ガオガイガーが入らずに何が入るんだっていう気もあった」と語っている。\r\n\r\n森川智之と仲が良く、森川とは前述の『おまえら〜』のイベントのほか、ラジオ番組を何度か共演している。この2人は主に美形キャラを演じる場合が多い。\r\n\r\n大の広島東洋カープファンで知られている。\r\n\r\n『スーパーロボット大戦Z』では自身が声を演じた参戦作品の主人公すら出ないにもかかわらず、敵一般兵役で声を演じている。寺田貴信プロデューサーによれば、これは本人から希望したという。また自身もハーケン・ブロウニング役で出演している『無限のフロンティアEXCEED』公式サイトで「声優界で緑川光の次にスパロボ作品をやりこんでいる」とコメントしている。\r\n\r\n仕事をする傍らで声優の専門学校や養成所などで、自らが講師として後進の育成も手掛けている。\r\n\r\n声優グランプリmobileで既婚であることを公表している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 11302,
+            "name": "蔵馬",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0a/6f/11302_crt_pOpP1.jpg?r=1577971969",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/6f/11302_crt_pOpP1.jpg?r=1577971969",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/6f/11302_crt_pOpP1.jpg?r=1577971969",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0a/6f/11302_crt_pOpP1.jpg?r=1577971969"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4054,
+                    "name": "緒方恵美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/37/ce/4054_prsn_wWwqj.jpg?r=1702781847",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/ce/4054_prsn_wWwqj.jpg?r=1702781847",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/ce/4054_prsn_wWwqj.jpg?r=1702781847",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/37/ce/4054_prsn_wWwqj.jpg?r=1702781847"
+                    },
+                    "short_summary": "绪方惠美是日本东京都出生的女配音兼歌手（当歌手时的艺名为‘em:óu’），B型双子座。桐朋女子中学、高中毕业；东海大学海洋学系肄业。东京声专音乐学校（现在为昭和音乐艺术学院）歌剧科及同研究科毕业。\r\n主要以低沉沙哑的音质，替少年角色配音的她，其他也多半是替美型青年或男性化的女性等中性化角色配音为主。本人也曾经自己承认，或许是因为自己也是男性化的性格，所以也被称为「男八段」（这个绰号是广播节目《绪方惠美的向银河呐喊中》与听众一边交谈，一边所喝的酒的名字）。\r\n代表作有《幽游白书》（藏马／南野秀一）、《美少女战士Sailor Moon S》（天王遥／水手天王星）、《新世纪福音战士》（碇真嗣）等。",
+                    "locked": false
+                },
+                {
+                    "id": 4361,
+                    "name": "中原茂",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9c/72/4361_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/72/4361_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/72/4361_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9c/72/4361_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

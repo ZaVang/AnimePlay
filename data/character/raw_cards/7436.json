@@ -1,0 +1,52 @@
+{
+    "id": 7436,
+    "name": "バルサ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/23/69/7436_crt_BrBmz.jpg?r=1476503113",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/23/69/7436_crt_BrBmz.jpg?r=1476503113",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/23/69/7436_crt_BrBmz.jpg?r=1476503113",
+        "grid": "https://lain.bgm.tv/pic/crt/g/23/69/7436_crt_BrBmz.jpg?r=1476503113"
+    },
+    "summary": "“守护者系列”的主角，故事开始时为30岁。使用短枪的女保镖，随着旅行商队的警卫工作而在各国到处旅行。出生于北方国家冈巴鲁。虽为女性，却因使用精湛的短枪武艺而以“短枪使巴尔莎”为闻名。孩提时期时，母亲在巴尔莎五岁时死亡，父亲卡鲁那·伊翁萨是王的主治医生，却因为卷入政权问题而被谋杀，当巴尔莎也因为封口而在被杀前，父亲的友人吉古罗·穆萨（ジグロ·ムサ）帮助巴尔莎逃往国外。在各国逃亡的途中看出她有武术的才能而教导她短枪武艺。吉古罗因病去逝后，她因活用短枪而开始以保镖为业。在吉古罗共事的陀珞烗家中与汤达成为青梅竹马，只要受伤就会请他治疗。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "巴尔莎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Balsa"
+                },
+                {
+                    "k": "日文名",
+                    "v": "バルサ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 13,
+        "collects": 62
+    },
+    "anime_ids": [
+        1976
+    ]
+}

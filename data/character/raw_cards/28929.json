@@ -1,0 +1,48 @@
+{
+    "id": 28929,
+    "name": "響逢衣",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5c/70/28929_crt_4IIqd.jpg?r=1422267120",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/70/28929_crt_4IIqd.jpg?r=1422267120",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/70/28929_crt_4IIqd.jpg?r=1422267120",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5c/70/28929_crt_4IIqd.jpg?r=1422267120"
+    },
+    "summary": "望未らと共に旅にする元気な少女。一本気でおおらかだが、楽な方へと流されがちである。とにかく強くなりたい。\r\n好物は肉（ハンバーグ、焼肉等）。\r\n血液型 - O型、星座 - 獅子座",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "响逢衣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ひびき あい"
+                }
+            ]
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        }
+    ],
+    "gender": null,
+    "blood_type": 4,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 8,
+        "collects": 24
+    },
+    "anime_ids": [
+        110600
+    ]
+}

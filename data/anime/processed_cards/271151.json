@@ -1,0 +1,90 @@
+{
+    "id": 271151,
+    "name": "擅长捉弄的高木同学 第二季",
+    "image_path": "data/images/anime/271151.jpg",
+    "points": 7.7,
+    "cost": 2,
+    "rarity": "R",
+    "description": "某所初中学校，男生西片总是被邻座的女生高木同学捉弄。他为了对此反击而用尽计策，却总是被高木同学看透。\r\n季节轮回，西片升入2年级，这一次他是否能够顺利反击高木同学呢……？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2019-07-07",
+    "rating_rank": 485,
+    "rating_score": 7.7,
+    "rating_total": 7746,
+    "main_character_ids": [
+        41849,
+        41850
+    ],
+    "main_characters": [
+        {
+            "id": 41849,
+            "name": "高木さん",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c8/7c/41849_crt_14M60.jpg?r=1645970420",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/7c/41849_crt_14M60.jpg?r=1645970420",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/7c/41849_crt_14M60.jpg?r=1645970420",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c8/7c/41849_crt_14M60.jpg?r=1645970420"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 17491,
+                    "name": "高橋李依",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bd/56/17491_prsn_1PkIP.jpg?r=1642506690",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/56/17491_prsn_1PkIP.jpg?r=1642506690",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/56/17491_prsn_1PkIP.jpg?r=1642506690",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bd/56/17491_prsn_1PkIP.jpg?r=1642506690"
+                    },
+                    "short_summary": "埼玉县立越谷南高等学校出身。2年级时曾获得动画甲子园2010-2011声音表演部门优秀赏。\r\n\r\n2012年3月，高中毕业的同时加入演员养成所81ACTOR'S STUDIO。研究生时期曾经以新人声优团体“Anisoni∀”的成员身份开始进行活动。\r\n\r\n2013年3月从81ACTOR'S STUDIO毕业，4月起加入81 Produce。\r\n\r\n2016年，获得第10回声优奖的新人女优赏。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 41850,
+            "name": "西片くん",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2e/73/41850_crt_i9SqS.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/73/41850_crt_i9SqS.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/73/41850_crt_i9SqS.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2e/73/41850_crt_i9SqS.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5209,
+                    "name": "梶裕貴",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/51/73/5209_prsn_bD3dr.jpg?r=1478379077"
+                    },
+                    "short_summary": "ARTSVISION第17期免费新人培育选拔会合格，并且加入了事务所ARTSVISION。\r\n2009年获得第3届声优奖—新人男声优赏，且开始了“G.Addict”的活动。\r\n2012年2月22日以本人的名义开始歌手的活动，发售第一张单曲《sense of wonder》。2012年9月5日发售第二张单曲《Hello！》。\r\n2013年获得第7届声优奖—主演男声优赏。\r\n2013年10月1日，由原来的事务所ARTSVISION转入VIMS。\r\n2014年获得第8届声优奖—主演男声优赏。\r\n\r\n拥有中性的声音，能演出从少年到青年、动物等各式各样的角色。\r\n担任剧团“妄想中毒”的pretty团长。\r\n中小学时代担任过学生会长，有体育或美术被表扬等表现，是个非常有才能的小孩。\r\n声优伙伴或支持者称呼他为“王子”。\r\n和代永翼组成团体“BRAVE WING”。\r\n与寺岛拓笃、堀江一真和阿部敦等四人组成团体“G.Addict”。\r\n性格极其纯良，待人有礼温善。虽然人前很活泼开朗，但其实是个喜欢宁静安逸的人，只有与亲近的人在一起时才会放松的流露真实自我。\r\n不只声音，外型也很中性，现在也还会被误认成女生。本人对此表示否定，表示“内在意外地很有男子气概”。\r\n虽然年轻，但是性格相当认真。寺岛拓笃评价他“面对工作上的态度很严谨”，大亲友下野纮也说：“他真的很可靠，很会待人处世，作为声优也相当优秀。”\r\n\r\n代表作品有《进击的巨人》艾伦·耶格尔、《夜樱四重奏》比泉秋名、《未来都市NO.6》紫苑、《罪恶王冠》樱满集、《七大罪》梅利奥达斯、《加速世界》有田春雪、《魔笛MAGI》阿里巴巴·沙尔贾等。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "id": 35980,
+    "name": "桜島麻衣",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7d/1c/35980_crt_J56iZ.jpg?r=1538834837",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/1c/35980_crt_J56iZ.jpg?r=1538834837",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/1c/35980_crt_J56iZ.jpg?r=1538834837",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7d/1c/35980_crt_J56iZ.jpg?r=1538834837"
+    },
+    "summary": "ちょっぴりSなバニーガール先輩\r\n\r\n峰ヶ原高校に通う3年生。\r\n国民的な人気タレントだったが、現在は芸能活動を休止している。\r\n 芸能活動を中心とした生活を送ってきたため学校では孤立している。\r\n真面目で礼儀正しいが、気が強い。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "樱岛麻衣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "さくらじま まい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakurajima Mai"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月2日"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "学年",
+            "value": "高校3年生"
+        },
+        {
+            "key": "特技",
+            "value": "料理"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 2,
+    "stat": {
+        "comments": 108,
+        "collects": 1076
+    },
+    "anime_ids": [
+        240038,
+        467930
+    ]
+}

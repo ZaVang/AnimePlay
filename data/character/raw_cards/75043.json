@@ -1,0 +1,36 @@
+{
+    "id": 75043,
+    "name": "フレッド・シャッフル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/dc/f2/75043_crt_vRgkG.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/f2/75043_crt_vRgkG.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/f2/75043_crt_vRgkG.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dc/f2/75043_crt_vRgkG.jpg"
+    },
+    "summary": "11歳[注釈 4]。男子。ベルウィック星出身。血液型はA型。ロディの弟で、兄とは対照的に引っ込み思案で内向的、泣き虫で怖がりな少年。ロディを頼りにしている一方、危険を顧みない兄の行動をいつも心配している（一方のロディもその引っ込み思案と臆病さに振り回される事がある）。頭の回転が速く、手先も器用でコンピュータの扱いは子供達の中では一番上手い。子供達の戦闘に重要な役割を果たした「高ゲタ」は、彼のアイデアによるものである。戦闘にはほとんど参加せず、主にコンピュータ処理を担当するが、ロディのピンチの際にはRVに乗り込んで戦闘に参加することもあった。ペンチのことは、クレアドに彼女が来たときから気にかけている。なお、ロディと兄弟という設定は、キャラデザイン時にたまたま顔が似ていたということがきっかけであることが、各ムックのインタビューでたびたび言及されている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "FRED SHUFFLE"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 1
+    },
+    "anime_ids": [
+        37295
+    ]
+}

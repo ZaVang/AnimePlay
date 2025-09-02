@@ -1,0 +1,92 @@
+{
+    "id": 25520,
+    "name": "渋谷凛",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/88/fd/25520_crt_PZPS9.jpg?r=1551990471",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/fd/25520_crt_PZPS9.jpg?r=1551990471",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/fd/25520_crt_PZPS9.jpg?r=1551990471",
+        "grid": "https://lain.bgm.tv/pic/crt/g/88/fd/25520_crt_PZPS9.jpg?r=1551990471"
+    },
+    "summary": "《偶像大師 灰姑娘女孩》作品中人物。\r\n是一名15岁的高中一年生，爱称是しぶりん，家里是开花店的。养着一条爱犬“花子”，喜欢带着它散步。\r\n作品中屈指可数的“正常人”，与岛村卯月、本田未央并称为“New Generation”。角色歌《Never say never》。 第一回总选举19名,第二回总选举第5名，第三回总选举第1名。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "涩谷凛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しぶや りん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shibuya Rin"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月10日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "44kg"
+        },
+        {
+            "key": "BWH",
+            "value": "80/56/81"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁"
+        },
+        {
+            "key": "兴趣",
+            "value": "携犬散步"
+        },
+        {
+            "key": "利手",
+            "value": "右手"
+        },
+        {
+            "key": "星座",
+            "value": "狮子座"
+        },
+        {
+            "key": "出生地",
+            "value": "东京"
+        },
+        {
+            "key": "卡牌类型",
+            "value": "Cool"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 10,
+    "stat": {
+        "comments": 70,
+        "collects": 311
+    },
+    "anime_ids": [
+        130231
+    ]
+}

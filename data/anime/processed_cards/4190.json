@@ -1,0 +1,218 @@
+{
+    "id": 4190,
+    "name": "通灵王",
+    "image_path": "data/images/anime/4190.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "“通灵王大赛”每500年举行一次，胜出者可得到代表一切的伟大精神（精灵王），而主角麻仓叶虽然没有意愿参加，但基于他是麻仓家子孙而去参赛，以阻止其双胞胎兄长，同时亦是他祖先麻仓叶王得到伟大精神G.S（精灵王），原因是麻仓叶王要创造一个只有通灵者的世界。当中麻仓叶认识了来自中国的通灵人道莲、来自北海道的轰隆轰隆、英国的瑞瑟格、美国的巧克力爱情等，共同向通灵王的目标进发。\r\n动画中期之后进行与漫画不同。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 64,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2001-07-04",
+    "rating_rank": 1477,
+    "rating_score": 7.3,
+    "rating_total": 1448,
+    "main_character_ids": [
+        8384,
+        9052,
+        9054,
+        93917,
+        93919,
+        93920
+    ],
+    "main_characters": [
+        {
+            "id": 8384,
+            "name": "恐山アンナ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/44/09/8384_crt_d9bA2.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/09/8384_crt_d9bA2.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/09/8384_crt_d9bA2.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/44/09/8384_crt_d9bA2.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3919,
+                    "name": "林原めぐみ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490"
+                    },
+                    "short_summary": "日本的声优、歌手、DJ、作词家（化名为MEGUMI）、作家。出生于日本东京都北区。\r\n歌迷与动漫迷常以“小惠”（めぐさん）、“惠姐”（めぐ姉）及“阁下”（声优平松晶子命名）等方式称呼她。\r\n林原惠演过多部著名作品的主要女角及担任部分片头、片尾曲演唱，包含《新世纪福音战士》的绫波丽、《乱马1/2》的女乱马、《秀逗魔导士》的莉娜·因巴斯、《口袋妖怪》的武藏、《名侦探柯南》的灰原哀、《通灵王》的恐山安娜等，为日本公认的“声优女王”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9052,
+            "name": "麻倉葉",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0e/27/9052_crt_5098Z.jpg?r=1608741974",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/27/9052_crt_5098Z.jpg?r=1608741974",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/27/9052_crt_5098Z.jpg?r=1608741974",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0e/27/9052_crt_5098Z.jpg?r=1608741974"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4029,
+                    "name": "佐藤ゆうこ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/01/5e/4029_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/5e/4029_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/5e/4029_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/01/5e/4029_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9054,
+            "name": "道蓮",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d2/e3/9054_crt_anidb.jpg?r=1408629235",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/e3/9054_crt_anidb.jpg?r=1408629235",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/e3/9054_crt_anidb.jpg?r=1408629235",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d2/e3/9054_crt_anidb.jpg?r=1408629235"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4027,
+                    "name": "朴璐美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/57/a7/4027_prsn_EemLU.jpg?r=1518234742",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/57/a7/4027_prsn_EemLU.jpg?r=1518234742",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/57/a7/4027_prsn_EemLU.jpg?r=1518234742",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/57/a7/4027_prsn_EemLU.jpg?r=1518234742"
+                    },
+                    "short_summary": "主业是舞台剧演员，东京都出身，日本国籍（2015年12月取得）。\r\n桐朋学园艺术短期大学戏剧科毕业。曾在韩国延世大学语学院留学。隶属于演剧集团圆（圆企画）。\r\n\r\n父亲是在日的韩国人第二代、母亲是居留日本的韩国人第三代。\r\n家中有1姊1弟，表弟是NHK的导演。\r\n至2005年宠物是猫（母）（コギト君）（已去世），新宠物是超迷你腊肠犬（カニンヘンダックス）（其名在韩国语中为爱或恋爱的意思）。\r\n专长有游泳、钢琴、少林拳法、韩语、泡茶。\r\n20岁时，为了与过去的恋情诀别，经由友人介绍踏入了戏剧的世界。\r\n被来看舞台剧的富野由悠季相中，于是得以在电视动画《机动神脑》中配音正式出道。不止在动画方面，西片配音也在配希拉蕊史旺与蜜拉乔娃维琪的声音上很活跃。其他尚有担任广播节目主持人、本业的舞台剧演员等。\r\n配音演员伊藤健太郎是其大学学弟、和川上伦子是大学同年生。\r\n演出从热血到冷酷等多数的少年角色、在近年的女性配音演员中，极为罕见地很受女性欢迎。虽是美人，但在比男人还要男人的一面上为其魅力。\r\n2004年获得“第2回东京国际动画片展奖”的声优赏。\r\n2007年获得第一届日本声优赏“主演女声优奖”（NANA、大崎娜娜）\r\n另外，朴璐美的运气总是很衰，可谓是“喝凉水都塞牙”。每当接到重要任务之前总会有些不测。比如说，录《高达倒A》前几天就遭遇了一场车祸，肿着脸满身绷带坚持去录音，结果被工作人员训斥：“不是让你不要来吗？快回去！”弄得她委屈的大叫：“我的声音完全没问题！”\r\n\r\n2020年1月22日，宣布与山路和弘结婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 93917,
+            "name": "ホロホロ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a0/02/93917_crt_2GD0K.jpg?r=1617447815",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a0/02/93917_crt_2GD0K.jpg?r=1617447815",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a0/02/93917_crt_2GD0K.jpg?r=1617447815",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a0/02/93917_crt_2GD0K.jpg?r=1617447815"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4657,
+                    "name": "うえだゆうじ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c7/93/4657_prsn_MSooY.jpg?r=1657805481",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/93/4657_prsn_MSooY.jpg?r=1657805481",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/93/4657_prsn_MSooY.jpg?r=1657805481",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c7/93/4657_prsn_MSooY.jpg?r=1657805481"
+                    },
+                    "short_summary": "福岡縣出身。原本隸屬於ARTSVISION經紀公司，2004年7月1日起離開該公司，不能再以本名「上田祐司」做為藝名，因此就用其姓名發音的平假名「うえだゆうじ」作為現在的藝名，之後從2005年4月1日至2012年2月加入大澤事務所。現在為自由身。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 93919,
+            "name": "リゼルグ・ダイゼル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/cd/0d/93919_crt_Dumwf.jpg?r=1617448264",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/0d/93919_crt_Dumwf.jpg?r=1617448264",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/0d/93919_crt_Dumwf.jpg?r=1617448264",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cd/0d/93919_crt_Dumwf.jpg?r=1617448264"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4174,
+                    "name": "沢海陽子",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e0/b2/4174_prsn_bEaF0.jpg?r=1618428435",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/b2/4174_prsn_bEaF0.jpg?r=1618428435",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/b2/4174_prsn_bEaF0.jpg?r=1618428435",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e0/b2/4174_prsn_bEaF0.jpg?r=1618428435"
+                    },
+                    "short_summary": "新潟县出身。血型O型。在2005年2月11日与配音员大塚明夫结婚，于2008年2月离婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 93920,
+            "name": "チョコラブ・マクダネル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/da/f1/93920_crt_8PJj2.jpg?r=1617448544",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/f1/93920_crt_8PJj2.jpg?r=1617448544",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/f1/93920_crt_8PJj2.jpg?r=1617448544",
+                "grid": "https://lain.bgm.tv/pic/crt/g/da/f1/93920_crt_8PJj2.jpg?r=1617448544"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4056,
+                    "name": "くまいもとこ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/95/29/4056_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/29/4056_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/29/4056_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/95/29/4056_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "熊井统子，日本女性声优。其一直使用日语假名くまい もとこ作为艺名而被误译作“熊井素子”。\r\n\r\n出生于日本东京都。山崎学园富士见高等学校毕业。持有大型重型机车驾照、英语教师执照。\r\n\r\n和田中真弓、竹内顺子、高山南并列为少年角色的正统代表，饰演的大多为少年角色。也有极少数的机会演出少女角色（《钢之炼金术师》的エリサ、《Chobits》的すもも、《今日大魔王!》的古蕾塔等），有着令人感到意外的可爱声音。因为“头发剪短的话就没有像女性的部分了”之理由而留长发。\r\n\r\n音乐的兴趣类型是死金属。以这件事和山咲トオル广播节目里嬉闹，似乎关系很好。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

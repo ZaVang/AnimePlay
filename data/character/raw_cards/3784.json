@@ -1,0 +1,76 @@
+{
+    "id": 3784,
+    "name": "張五飛",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a5/9b/3784_crt_b1uP8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/9b/3784_crt_b1uP8.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/9b/3784_crt_b1uP8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a5/9b/3784_crt_b1uP8.jpg"
+    },
+    "summary": "老師Oの指示で「悪」であるOZ壊滅のため行動していた少年。\"強さこそが正義\"という信念のもと、戦士として育てられた。古代中国の戦士の血を受け継ぎ、邪悪な考えをもつ者を本能的に見極めることができる。五飛の戦いは純粋に「正義」のためのものであり「悪」を決して許さない。誇り高く、群れることを嫌い、参戦に際しては、正義がどちらにあるのか判断してから攻撃を加える。そのため、時としてまわりに誤解を生む言動をすることもあった。トレーズに敗れ、一時は自信を失うが、サリィとの出会いや平和の為に戦う兵士たちの姿に自分の進むべき道を見出し、再起する。ZEROシステムにより真の敵を知ったあとは他のガンダムパイロットたちと行動を共にした。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "张五飞"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "張五飛"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Chang Wufei"
+                },
+                {
+                    "k": "昵称",
+                    "v": "张正义"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "体重",
+            "value": "46kg"
+        },
+        {
+            "key": "出身",
+            "value": "L5コロニー群"
+        },
+        {
+            "key": "身分・所属",
+            "value": "MSシェンロンガンダムパイロット"
+        },
+        {
+            "key": "搭乗機",
+            "value": "MSシェンロンガンダム、MSアルトロンガンダム"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 13
+    },
+    "anime_ids": [
+        2774
+    ]
+}

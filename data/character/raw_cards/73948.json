@@ -1,0 +1,44 @@
+{
+    "id": 73948,
+    "name": "金森まりあ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/74/14/73948_crt_YYUdw.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/74/14/73948_crt_YYUdw.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/74/14/73948_crt_YYUdw.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/74/14/73948_crt_YYUdw.jpg"
+    },
+    "summary": "都会で人気のショップ『ディアクラウン』に所属するプリ☆チャンアイドル。世界を「かわいい」で平和にしたいと思っており、あらゆる物事に「かわいい」を見つけるのが特技。かわいいと認めた物や人に「かわいいシール」をやたらと貼りまくる。「まりあのかわいい向上委員会」という番組を配信している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "金森玛利亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "麻里爱"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 5
+    },
+    "anime_ids": [
+        269023
+    ]
+}

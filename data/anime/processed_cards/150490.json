@@ -1,0 +1,156 @@
+{
+    "id": 150490,
+    "name": "JOJO的奇妙冒险 不灭钻石",
+    "image_path": "data/images/anime/150490.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "在埃及与宿敌DIO的死斗之后过了11年。1999年，空条承太郎为了与祖父乔瑟夫·乔斯达的私生子东方仗助见面，而来到了日本M县S市杜王町。但，仗助却持有与承太郎相同的特殊能力“替身”。之后，以承太郎的来访为开端，仿佛被吸引一般，新的“替身使”们开始行动。“这座城镇存在着什么……”为了守护养育了自己的杜王町，仗助挺身而出——。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 39,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2016-04-01",
+    "rating_rank": 379,
+    "rating_score": 7.8,
+    "rating_total": 12964,
+    "main_character_ids": [
+        880,
+        18569,
+        19935
+    ],
+    "main_characters": [
+        {
+            "id": 880,
+            "name": "東方仗助",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fa/c9/880_crt_4Pj75.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/c9/880_crt_4Pj75.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/c9/880_crt_4Pj75.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fa/c9/880_crt_4Pj75.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4976,
+                    "name": "小野友樹",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/45/60/4976_prsn_0NcNx.jpg?r=1731251053",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/60/4976_prsn_0NcNx.jpg?r=1731251053",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/60/4976_prsn_0NcNx.jpg?r=1731251053",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/45/60/4976_prsn_0NcNx.jpg?r=1731251053"
+                    },
+                    "short_summary": "小野 友樹（おの ゆうき、1984年6月22日 - ）は、日本の男性声優、歌手。\r\n静岡県出身。フリー。静岡県立静岡高等学校を経て、早稲田大学スポーツ科学部卒業。\r\n\r\n高校時代はプロサッカー選手を目指しており、清水エスパルスのスカウトにまで声をかけられていたが、3年生のときに剥離骨折になり断念する。\r\n早稲田大学在学中はアナウンス研究会に所属し、声優としての道を志すようになった。\r\n2010年5月、主宰する若手声優集団「おしゃ缶」による自主企画Webラジオの制作を開始。\r\n2011年8月、江口拓也との声優ユニット「Teamゆーたく」を結成し、Webラジオ『ゆーたくのドラつく!』の配信を開始。ドラマCD制作やイベントも手がけている。\r\n2013年1月、「Teamゆーたく」の活動は継続しながら、並行して「ゆーたくII」として新たにメジャーデビューが決定。その活動の第1弾となる文化放送『Super a-hour』内の『どうする？どうなる！？ゆーたくII』は1月4日より放送をスタートさせた。\r\n2013年3月、第7回声優アワードにて、助演男優賞を受賞。\r\n2014年11月、「1st LIVE〜三十路へのプレリュード〜」にて2015年LantisよりCDデビューを発表。\r\n2017年10月、アトミックモンキーを退所してフリーに転向。同時に7年前に一般女性と結婚していたことを発表した。\r\n\r\n特技はサッカー、ハイパーヨーヨー。サッカーは全国大会出場経験があり、ハイパーヨーヨーはプロライセンスを保有している。テレビアニメ『Saint October』では、打ち入りでヨーヨーを披露したことがきっかけで、演じるキャラクターであるヨシュアの武器にヨーヨーが採用された。またトレーディングカードゲームの遊☆戯☆王では、アニメで自身が演じるキャラクターの鬼柳京介が使用していたデッキを用いて、大会で優勝してしまうほどの実力の持ち主である。\r\nコールセンターと家庭教師のアルバイト経験があり、家庭教師では全教科に加えサッカーも時折教えていたという。\r\nお菓子などの甘いものが好きで、ブログやツイッターでは頻繁にそれらを掲載している。ゆるキャラ好きでもあり、全国のゆるキャラが集まる「ゆるキャラサミット」に赴く。\r\n大学のときに友人に録画を頼まれていた『君が望む永遠』と、同アニメのラジオで谷山紀章の歌を視聴したことが、声優を志すきっかけとなった。また同アニメのイベントの喫煙所で偶然にも谷山と会って話をしたことにより「この人と同じ仕事に就きたい！」と思ったことが、声優を目指した最大の理由であるという。実際に2013年4月に横浜アリーナで開催された、谷山がボーカルを担当しているGRANRODEOのライブ、GRANRODEO LIVE 2013 G8 ROCK☆SHOWで場内アナウンスを担当している。\r\n仲の良い声優は江口拓也、岡本信彦、柿原徹也、内山昂輝、小野賢章など。江口とは声優ユニット「ゆーたくII」を結成している。",
+                    "locked": false
+                },
+                {
+                    "id": 10869,
+                    "name": "大地葉",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f0/96/10869_prsn_nWIUY.jpg"
+                    },
+                    "short_summary": "日本女性声优，埼玉县出生。日本播音演技研究所出身，隶属于VIMS。名字“大地叶”（たいち よう／Taichi You）是艺名，由来是学生时期的绰号たいちょー（“队长”，日语读音：Taichō）。\r\n\r\n趣味・特技：インド映画鑑賞、ピアノ弾き語り、曲のコピー（譜面をおこせる）\r\n芸歴：日本ナレーション演技研究所",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 18569,
+            "name": "虹村億泰",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/24/5f/18569_crt_rfged.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/5f/18569_crt_rfged.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/5f/18569_crt_rfged.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/24/5f/18569_crt_rfged.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3986,
+                    "name": "高木渉",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2b/f2/3986_prsn_ZAA2q.jpg?r=1469971214",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/f2/3986_prsn_ZAA2q.jpg?r=1469971214",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/f2/3986_prsn_ZAA2q.jpg?r=1469971214",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2b/f2/3986_prsn_ZAA2q.jpg?r=1469971214"
+                    },
+                    "short_summary": "出身于千叶县的日本男性声优、舞台演员。所属事务所是ARTSVISION。\r\n\r\n胜田声优学院第5期毕业。1987年以《妙手小厨师》声优出道。\r\n担任剧团“あかぺら倶楽部”的代表，亦常以舞台演员的身份活动。2002年和山口胜平、关智一合组名为“三人帮（さんにんのかい）”的三人戏剧团体。\r\n2005年接任《哆啦A梦》的老师角色、2007年接《鬼太郎》的鼠男，在重制动画当中继承大梁位置。\r\n\r\n在动画、外语配音等多方面活跃，主要演出少年、青年、上至中年、老人角色，其他像小坏蛋、丑角、坏小孩、傲慢男、俊俏帅哥、动物、甚至肆无忌惮口出秽言的残酷恶徒或滑稽角色等都经历过。\r\n有名的迟到大王。在配《鲁莽天使》的时候，曾经因为迟到让许多同僚等候，而被林原惠训斥。",
+                    "locked": false
+                },
+                {
+                    "id": 33383,
+                    "name": "齋藤小浪",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/73/7a/33383_prsn_866ZI.jpg?r=1537627336",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/7a/33383_prsn_866ZI.jpg?r=1537627336",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/7a/33383_prsn_866ZI.jpg?r=1537627336",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/73/7a/33383_prsn_866ZI.jpg?r=1537627336"
+                    },
+                    "short_summary": "齋藤 小浪（さいとう こなみ、7月18日 - ）は、日本の女性声優。マウスプロモーション所属。群馬県出身。\r\n\r\n2013年\r\n日本工学院八王子専門学校を卒業し、マウスプロモーション付属俳優養成所に入所する。\r\n2015年\r\nマウスプロモーションの所属となる。\r\n2016年\r\n5月よりSHIROBACOカフェにて、タマ5三期生として活動する事になる。\r\n2017年\r\n4月より女子ゲーム実況集団『電脳◯乙女団』のメンバーとして活動している。\r\n\r\n上州弁を話せる。\r\n趣味・特技はドラム、ゲーム、どこでもどんな体勢でも寝られること、ゾンビ映画を観ることである。\r\n農耕神クロノスという名前のデグーを飼っている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19935,
+            "name": "広瀬康一",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e2/8c/19935_crt_61G2A.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/8c/19935_crt_61G2A.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/8c/19935_crt_61G2A.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e2/8c/19935_crt_61G2A.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5209,
+                    "name": "梶裕貴",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/51/73/5209_prsn_bD3dr.jpg?r=1478379077"
+                    },
+                    "short_summary": "ARTSVISION第17期免费新人培育选拔会合格，并且加入了事务所ARTSVISION。\r\n2009年获得第3届声优奖—新人男声优赏，且开始了“G.Addict”的活动。\r\n2012年2月22日以本人的名义开始歌手的活动，发售第一张单曲《sense of wonder》。2012年9月5日发售第二张单曲《Hello！》。\r\n2013年获得第7届声优奖—主演男声优赏。\r\n2013年10月1日，由原来的事务所ARTSVISION转入VIMS。\r\n2014年获得第8届声优奖—主演男声优赏。\r\n\r\n拥有中性的声音，能演出从少年到青年、动物等各式各样的角色。\r\n担任剧团“妄想中毒”的pretty团长。\r\n中小学时代担任过学生会长，有体育或美术被表扬等表现，是个非常有才能的小孩。\r\n声优伙伴或支持者称呼他为“王子”。\r\n和代永翼组成团体“BRAVE WING”。\r\n与寺岛拓笃、堀江一真和阿部敦等四人组成团体“G.Addict”。\r\n性格极其纯良，待人有礼温善。虽然人前很活泼开朗，但其实是个喜欢宁静安逸的人，只有与亲近的人在一起时才会放松的流露真实自我。\r\n不只声音，外型也很中性，现在也还会被误认成女生。本人对此表示否定，表示“内在意外地很有男子气概”。\r\n虽然年轻，但是性格相当认真。寺岛拓笃评价他“面对工作上的态度很严谨”，大亲友下野纮也说：“他真的很可靠，很会待人处世，作为声优也相当优秀。”\r\n\r\n代表作品有《进击的巨人》艾伦·耶格尔、《夜樱四重奏》比泉秋名、《未来都市NO.6》紫苑、《罪恶王冠》樱满集、《七大罪》梅利奥达斯、《加速世界》有田春雪、《魔笛MAGI》阿里巴巴·沙尔贾等。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

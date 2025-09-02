@@ -1,0 +1,48 @@
+{
+    "id": 95257,
+    "name": "力石徹",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0b/4a/95257_crt_wAwaa.jpg?r=1656928456",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/4a/95257_crt_wAwaa.jpg?r=1656928456",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/4a/95257_crt_wAwaa.jpg?r=1656928456",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0b/4a/95257_crt_wAwaa.jpg?r=1656928456"
+    },
+    "summary": "ジョーの永遠のライバル「若き殺し屋」の異名を取った男で、その豪腕から繰り出されるパンチの破壊力はすさまじいの一言。\r\nその類希なるセンスと闘志はジョーとの名勝負を生み出した。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "力石彻"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "りきいし とうる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Rikiishi Touru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 9,
+        "collects": 32
+    },
+    "anime_ids": [
+        10404
+    ]
+}

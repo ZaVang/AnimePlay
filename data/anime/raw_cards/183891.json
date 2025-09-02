@@ -1,0 +1,391 @@
+{
+    "id": 183891,
+    "type": 2,
+    "name": "カードキャプターさくら クリアカード編",
+    "name_cn": "魔卡少女樱 透明牌篇",
+    "summary": "被梦的钥匙与透明的卡片所引导，小樱的全新故事开始！\r\n收集会为世界带来灾难的“库洛牌”，并在使用魔法之力将其变为自己的卡片后，小樱在樱花绽放的四月升入初中一年级。她与此前曾回到香港的小狼重逢，两人由于能够一起上学而感到高兴，但就在此时，某个夜晚，收集起来的卡片产生了异变……！不止如此，不可思议的事件接连在友枝町发生，小樱在梦中见到的“钥匙”的引导之下，再次开始收集卡片。与此同时，班上转来了一位女孩子…… ",
+    "nsfw": false,
+    "locked": false,
+    "date": "2018-01-07",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/b2/bd/183891_rvGXW.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/b2/bd/183891_rvGXW.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/b2/bd/183891_rvGXW.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/b2/bd/183891_rvGXW.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/b2/bd/183891_rvGXW.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "魔卡少女樱 透明牌篇"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Cardcaptor Sakura: Clear Card Hen",
+                    "k": null
+                },
+                {
+                    "v": "Cardcaptor Sakura: Clear Card",
+                    "k": null
+                },
+                {
+                    "v": "魔卡少女樱 透明卡篇",
+                    "k": null
+                },
+                {
+                    "v": "库洛魔法使 透明牌篇",
+                    "k": null
+                },
+                {
+                    "v": "魔卡少女樱 CLEAR CARD篇",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "22"
+        },
+        {
+            "key": "放送开始",
+            "value": "2018年1月7日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://ccsakura-official.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "NHK"
+        },
+        {
+            "key": "播放结束",
+            "value": "2018年6月10日"
+        },
+        {
+            "key": "导演",
+            "value": "浅香守生"
+        },
+        {
+            "key": "Copyright",
+            "value": "© CLAMP・ST／講談社・NEP・NHK"
+        },
+        {
+            "key": "原作",
+            "value": "CLAMP「カードキャプターさくら クリアカード編」"
+        },
+        {
+            "key": "制作协力",
+            "value": "Nexus（14）"
+        }
+    ],
+    "volumes": 0,
+    "eps": 22,
+    "total_episodes": 23,
+    "rating": {
+        "rank": 1756,
+        "total": 3592,
+        "count": {
+            "one": 5,
+            "two": 5,
+            "three": 11,
+            "four": 41,
+            "five": 163,
+            "six": 657,
+            "seven": 1357,
+            "eight": 914,
+            "nine": 283,
+            "ten": 156
+        },
+        "score": 7.2
+    },
+    "collection": {
+        "wish": 901,
+        "collect": 4859,
+        "doing": 874,
+        "on_hold": 940,
+        "dropped": 508
+    },
+    "tags": [
+        {
+            "name": "2018年1月",
+            "count": 809
+        },
+        {
+            "name": "MADHouse",
+            "count": 740
+        },
+        {
+            "name": "魔卡少女樱",
+            "count": 688
+        },
+        {
+            "name": "CLAMP",
+            "count": 655
+        },
+        {
+            "name": "初代萌王",
+            "count": 448
+        },
+        {
+            "name": "TV",
+            "count": 424
+        },
+        {
+            "name": "漫画改",
+            "count": 412
+        },
+        {
+            "name": "续作",
+            "count": 322
+        },
+        {
+            "name": "魔法少女",
+            "count": 256
+        },
+        {
+            "name": "2018",
+            "count": 251
+        },
+        {
+            "name": "治愈",
+            "count": 215
+        },
+        {
+            "name": "漫改",
+            "count": 180
+        },
+        {
+            "name": "校园",
+            "count": 177
+        },
+        {
+            "name": "浅香守生",
+            "count": 152
+        },
+        {
+            "name": "萌",
+            "count": 112
+        },
+        {
+            "name": "恋爱",
+            "count": 71
+        },
+        {
+            "name": "奇幻",
+            "count": 60
+        },
+        {
+            "name": "日本",
+            "count": 45
+        },
+        {
+            "name": "战斗",
+            "count": 34
+        },
+        {
+            "name": "童年",
+            "count": 32
+        },
+        {
+            "name": "日常",
+            "count": 22
+        },
+        {
+            "name": "魔法",
+            "count": 16
+        },
+        {
+            "name": "2018年",
+            "count": 14
+        },
+        {
+            "name": "半年番",
+            "count": 11
+        },
+        {
+            "name": "日本动画",
+            "count": 11
+        },
+        {
+            "name": "百合",
+            "count": 10
+        },
+        {
+            "name": "情怀",
+            "count": 10
+        },
+        {
+            "name": "小樱",
+            "count": 9
+        },
+        {
+            "name": "大川七瀬",
+            "count": 7
+        },
+        {
+            "name": "动画",
+            "count": 7
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        2765,
+        6527,
+        6528,
+        7998
+    ],
+    "main_characters": [
+        {
+            "id": 2765,
+            "name": "木之本桜",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f1/9b/2765_crt_ac6Sy.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/9b/2765_crt_ac6Sy.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/9b/2765_crt_ac6Sy.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f1/9b/2765_crt_ac6Sy.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4055,
+                    "name": "丹下桜",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/26/d0/4055_prsn_WK6ES.jpg?r=1723974688",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/26/d0/4055_prsn_WK6ES.jpg?r=1723974688",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/26/d0/4055_prsn_WK6ES.jpg?r=1723974688",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/26/d0/4055_prsn_WK6ES.jpg?r=1723974688"
+                    },
+                    "short_summary": "　　丹下樱有着极为可爱的小女孩声线，这一点在她所饰演的《魔卡少女樱》中的木之本樱身上得到了最高的体现，因为名字的关系“小樱配小樱”更成为声优界的一段佳话。其温柔可爱、单纯天真的声音轻易地令观众为之倾倒。在木之本樱身上那充满阳光气息的表演，以及对《ＭＡＺＥ☆爆热时空》中纯洁无邪的米路出色的塑造，都使她所饰演的角色深入人心。总的来说，是非常幼齿的可爱声线。\r\n　　在声优工作之余，丹下樱还发行了不少歌曲专辑，并在1998年举办了一个小型演唱会，得到了热烈的欢迎。当她在现场演唱时，有许多男性歌迷即兴高呼：“小樱！”把全场的气氛推向了高潮。此外，也还在电台担任主持工作，在节目中表现出了完全不同的另一面，是一个有多方面才能的优秀演员。\r\n　　2000年因个人因素退出声优业，2004年起从事音乐工作，\r\n　　LOLI天王于2009年复归，已在声优界停修九年。并且参与了《动物侦探》的配音，用的仍然是她的萝莉音",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6527,
+            "name": "李小狼",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/08/02/6527_crt_tZMv9.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/02/6527_crt_tZMv9.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/02/6527_crt_tZMv9.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/08/02/6527_crt_tZMv9.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4056,
+                    "name": "くまいもとこ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/95/29/4056_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/29/4056_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/29/4056_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/95/29/4056_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "熊井统子，日本女性声优。其一直使用日语假名くまい もとこ作为艺名而被误译作“熊井素子”。\r\n\r\n出生于日本东京都。山崎学园富士见高等学校毕业。持有大型重型机车驾照、英语教师执照。\r\n\r\n和田中真弓、竹内顺子、高山南并列为少年角色的正统代表，饰演的大多为少年角色。也有极少数的机会演出少女角色（《钢之炼金术师》的エリサ、《Chobits》的すもも、《今日大魔王!》的古蕾塔等），有着令人感到意外的可爱声音。因为“头发剪短的话就没有像女性的部分了”之理由而留长发。\r\n\r\n音乐的兴趣类型是死金属。以这件事和山咲トオル广播节目里嬉闹，似乎关系很好。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6528,
+            "name": "ケルベロス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4c/89/6528_crt_Fo07N.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/89/6528_crt_Fo07N.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/89/6528_crt_Fo07N.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4c/89/6528_crt_Fo07N.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3875,
+                    "name": "久川綾",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a4/31/3875_prsn_8XW7x.jpg?r=1696399080",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/31/3875_prsn_8XW7x.jpg?r=1696399080",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/31/3875_prsn_8XW7x.jpg?r=1696399080",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a4/31/3875_prsn_8XW7x.jpg?r=1696399080"
+                    },
+                    "short_summary": "日本女性配音员、歌手。出身于大阪府贝冢市。身高160cm。血型A型。星座天蝎座。\r\n\r\n隶属于青二Production，青二塾东京校8期出身。\r\n为人熟悉的代表配音作品有动画《Heartcatch 光之美少女！》的月影百合／月光天使、《十二国记》的中嶋阳子、《百变小樱》的可鲁贝洛斯〈伪装形态〉、《我的女神》的诗寇蒂、《美少女战士》系列的水野亚美／水手水星、《魔物猎人妖子》主角真野妖子、《勇者斗恶龙 达伊大冒险》的莉安娜、《翼神世音》的紫东遥、《苍天之拳》的潘玉玲、《天上天下》的枣真夜、《新圣魔大战》的普琪·奥霖公主、《冒险王比特》的奇斯、《BLEACH》的卯之花烈、《仙境传说 THE ANIMATION》的塔姬乌丝、《大运动会》的柳田一乃[4]、《橘子酱男孩》的铃木亚梨実；游戏和改编动画《AIR》的神尾晴子、《To Heart》的保科智子、《卒业 ～Graduation～》的中本静等。\r\n兴趣有与狗陪伴进行温泉之旅、参加狗猫领养的义工活动。特长有与饲主交谈、道德劝说等。",
+                    "locked": false
+                },
+                {
+                    "id": 3978,
+                    "name": "小野坂昌也",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d9/ff/3978_prsn_E29Ny.jpg?r=1492894413",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/ff/3978_prsn_E29Ny.jpg?r=1492894413",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/ff/3978_prsn_E29Ny.jpg?r=1492894413",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d9/ff/3978_prsn_E29Ny.jpg?r=1492894413"
+                    },
+                    "short_summary": "小野坂昌也（1964年10月13日－）是大阪府大阪市住吉区出身的日本男性声优。血型是O型。身高170cm，体重62kg。 青二Production所属。青二私塾大阪校第1期毕业。代表作是《网球王子》（桃城武），《真三国无双系列》 （赵云、诸葛亮）。此外他是一位料理达人。喜欢讲黄色笑话出了名。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7998,
+            "name": "大道寺知世",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/13/a0/7998_crt_NaQfH.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/a0/7998_crt_NaQfH.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/a0/7998_crt_NaQfH.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/13/a0/7998_crt_NaQfH.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3916,
+                    "name": "岩男潤子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2b/64/3916_prsn_AJ57r.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/64/3916_prsn_AJ57r.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/64/3916_prsn_AJ57r.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2b/64/3916_prsn_AJ57r.jpg"
+                    },
+                    "short_summary": "岩男 潤子（いわお じゅんこ、1970年2月18日 - ）は、日本の女性声優、歌手、アイドル。大分県別府市出身。岩男潤子オフィス所属。\r\n初期の頃は、「いわお潤」や「潤」名義で活動していた時期もある。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

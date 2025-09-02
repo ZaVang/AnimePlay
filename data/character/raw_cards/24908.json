@@ -1,0 +1,48 @@
+{
+    "id": 24908,
+    "name": "市村鉄之助",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5b/0c/24908_crt_5fWA5.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/0c/24908_crt_5fWA5.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/0c/24908_crt_5fWA5.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5b/0c/24908_crt_5fWA5.jpg"
+    },
+    "summary": "为本作主人公。为了替双亲报仇而进入新选组，为副长土方岁三的小性，莽撞的个性是其致命伤。\r\n有一哥哥——市村辰之助。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "市村铁之助"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いちむら てつのすけ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ichimura Tetsunosuke"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        1930
+    ]
+}

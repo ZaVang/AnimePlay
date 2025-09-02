@@ -1,0 +1,43 @@
+{
+    "id": 41972,
+    "name": "ヒヨリ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/12/c4/41972_crt_sNKh6.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/c4/41972_crt_sNKh6.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/c4/41972_crt_sNKh6.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/12/c4/41972_crt_sNKh6.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "日和"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "CV",
+            "value": "渡辺優奈"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 2
+    },
+    "anime_ids": [
+        88473
+    ]
+}

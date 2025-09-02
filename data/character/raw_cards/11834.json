@@ -1,0 +1,64 @@
+{
+    "id": 11834,
+    "name": "鶴来民子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/35/18/11834_crt_s5R9F.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/35/18/11834_crt_s5R9F.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/35/18/11834_crt_s5R9F.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/35/18/11834_crt_s5R9F.jpg"
+    },
+    "summary": "为了追求厨艺秘诀而离家出走（？），在喜翠庄寄宿打工，绪花的室友。暗恋作为师傅的宫岸徹。原先的口头禅是“西奈”，应绪花的要求更改为“毛蛋”（ホビロン）。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鹤来民子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "つるぎ みんこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tsurugi Minko"
+                },
+                {
+                    "k": "昵称",
+                    "v": "みんち"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1994年4月5日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1994,
+    "birth_mon": 4,
+    "birth_day": 5,
+    "stat": {
+        "comments": 61,
+        "collects": 129
+    },
+    "anime_ids": [
+        22759
+    ]
+}

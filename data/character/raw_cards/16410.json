@@ -1,0 +1,44 @@
+{
+    "id": 16410,
+    "name": "防波亭手寅",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a7/c1/16410_crt_xT9yW.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/c1/16410_crt_xT9yW.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/c1/16410_crt_xT9yW.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a7/c1/16410_crt_xT9yW.jpg"
+    },
+    "summary": "女子落語家。高座名の由来は「防波堤」と「テトラポッド」。\r\n久米田康治曰く、この漫画の主人公。\r\n髪型は茶髪のポニーテールで前髪には二本の髪留めをしている。髪と瞳の色は茶色であり、イメージカラーは茶色。\r\nノリがよい性格で、周囲に気配りしつつボケもツッコミも両方こなす。名の通りに皆の暴走を抑えたり、作品全体を通じて会話の繋ぎや転換役になることが多い。一方でいかなる危機もさりげなく回避する強運（危険回避体質）を持つゆえか、かなり呑気でマイペースな面もある。\r\nもしも3億円があったら真犯人（何の事件かは不明）を見つけ出すとのこと。\r\n大食しても太らない体質。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "防波亭手寅"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ぼうはてい てとら"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 11,
+        "collects": 34
+    },
+    "anime_ids": [
+        37897
+    ]
+}

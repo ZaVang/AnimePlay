@@ -1,0 +1,52 @@
+{
+    "id": 24241,
+    "name": "松田啓人",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/df/97/24241_crt_zggiF.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/97/24241_crt_zggiF.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/97/24241_crt_zggiF.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/df/97/24241_crt_zggiF.jpg"
+    },
+    "summary": "国小五年级学生，是家中的独生子。虽和前两代的主角都有一个护目镜，但并不喜欢踢足球，相反的，是个很喜欢画画的人，相对于前两季的主角，显得格外内向。家里经营着小型面包店，非常喜欢和朋友在新宿公园里玩数码宝贝卡片，上学前、放学后都会跟朋友玩卡片游戏，一直梦想着并创造了属于自己的数码宝贝——基尔兽。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "松田启人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "松田タカト"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まつだ　たかと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Matsuda Takato"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 16
+    },
+    "anime_ids": [
+        3130
+    ]
+}

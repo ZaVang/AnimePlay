@@ -1,0 +1,64 @@
+{
+    "id": 175,
+    "name": "切江洋介",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/82/16/175_242827b703e6acf9c726942a1e4_DPWqy.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/16/175_242827b703e6acf9c726942a1e4_DPWqy.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/16/175_242827b703e6acf9c726942a1e4_DPWqy.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/82/16/175_242827b703e6acf9c726942a1e4_DPWqy.jpg"
+    },
+    "summary": "切江洋介\r\n(きりえ ようすけ)\r\n通称：キリエ\r\n(声：浅沼晋太郎)\r\n中学１年",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "切江洋介"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きりえ ようすけ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kirie Yousuke"
+                },
+                {
+                    "k": "昵称",
+                    "v": "キリエ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "140"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 1
+    },
+    "anime_ids": [
+        467
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "id": 16684,
+    "name": "L",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fc/07/16684_crt_3Vfi9.jpg?r=1720108018",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/07/16684_crt_3Vfi9.jpg?r=1720108018",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/07/16684_crt_3Vfi9.jpg?r=1720108018",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fc/07/16684_crt_3Vfi9.jpg?r=1720108018"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "L"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "流河旱树"
+                },
+                {
+                    "v": "龙崎"
+                },
+                {
+                    "v": "艾尔·罗莱特"
+                },
+                {
+                    "k": "英文名",
+                    "v": "L Lawliet"
+                },
+                {
+                    "k": "日文名",
+                    "v": "エル・ローライト"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "erurouraito"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1979年10月31日（漫画）;1982年10月31日（动画）"
+        },
+        {
+            "key": "身高",
+            "value": "173"
+        },
+        {
+            "key": "体重",
+            "value": "50kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "忌日（漫画）",
+            "value": "2004年11月5日"
+        },
+        {
+            "key": "忌日（动画）",
+            "value": "2007年11月5日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1979,
+    "birth_mon": 10,
+    "birth_day": 31,
+    "stat": {
+        "comments": 96,
+        "collects": 503
+    },
+    "anime_ids": [
+        1773
+    ]
+}

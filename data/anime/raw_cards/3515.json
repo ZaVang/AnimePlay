@@ -1,0 +1,296 @@
+{
+    "id": 3515,
+    "type": 2,
+    "name": "ファイアボール",
+    "name_cn": "火球",
+    "summary": "在遥远的未来，一颗普通的行星上——\r\n由于人类的抵抗，机器人的贵族政治正走向灭亡。\r\n在与世隔绝的住宅中，两位机器人——Flügel公爵的女儿Drossel，及其管家Gedächtnis，展开了琐碎的“日常”对话。 ",
+    "nsfw": false,
+    "locked": false,
+    "date": "2008-04-07",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/5f/ef/3515_BzB05.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/5f/ef/3515_BzB05.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/5f/ef/3515_BzB05.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/5f/ef/3515_BzB05.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/5f/ef/3515_BzB05.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "火球"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Fireball",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2008年4月7日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期一"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.disneychannel.jp/fireball/index.php"
+        },
+        {
+            "key": "播放结束",
+            "value": "2008年6月30日"
+        },
+        {
+            "key": "导演",
+            "value": "荒川航"
+        },
+        {
+            "key": "脚本",
+            "value": "荒川航"
+        },
+        {
+            "key": "人物设定",
+            "value": "福地仁"
+        },
+        {
+            "key": "动画制作",
+            "value": "Walt Disney Studios Motion Pictures International"
+        },
+        {
+            "key": "制作",
+            "value": "荒川航"
+        }
+    ],
+    "volumes": 0,
+    "eps": 13,
+    "total_episodes": 15,
+    "rating": {
+        "rank": 1787,
+        "total": 538,
+        "count": {
+            "one": 3,
+            "two": 2,
+            "three": 5,
+            "four": 5,
+            "five": 20,
+            "six": 93,
+            "seven": 194,
+            "eight": 149,
+            "nine": 43,
+            "ten": 24
+        },
+        "score": 7.2
+    },
+    "collection": {
+        "wish": 232,
+        "collect": 793,
+        "doing": 17,
+        "on_hold": 36,
+        "dropped": 29
+    },
+    "tags": [
+        {
+            "name": "泡面番",
+            "count": 115
+        },
+        {
+            "name": "吐槽",
+            "count": 93
+        },
+        {
+            "name": "大小姐",
+            "count": 93
+        },
+        {
+            "name": "科幻",
+            "count": 84
+        },
+        {
+            "name": "TV",
+            "count": 73
+        },
+        {
+            "name": "3D",
+            "count": 70
+        },
+        {
+            "name": "2008",
+            "count": 59
+        },
+        {
+            "name": "双马尾",
+            "count": 45
+        },
+        {
+            "name": "电波",
+            "count": 44
+        },
+        {
+            "name": "迪斯尼",
+            "count": 38
+        },
+        {
+            "name": "Disney",
+            "count": 38
+        },
+        {
+            "name": "原创",
+            "count": 24
+        },
+        {
+            "name": "漫才",
+            "count": 24
+        },
+        {
+            "name": "2008年4月",
+            "count": 22
+        },
+        {
+            "name": "火球",
+            "count": 20
+        },
+        {
+            "name": "搞笑",
+            "count": 8
+        },
+        {
+            "name": "补旧番",
+            "count": 6
+        },
+        {
+            "name": "日本",
+            "count": 6
+        },
+        {
+            "name": "荒川航",
+            "count": 6
+        },
+        {
+            "name": "泡面",
+            "count": 6
+        },
+        {
+            "name": "2008年",
+            "count": 5
+        },
+        {
+            "name": "超合金",
+            "count": 4
+        },
+        {
+            "name": "萝卜",
+            "count": 4
+        },
+        {
+            "name": "迪士尼",
+            "count": 4
+        },
+        {
+            "name": "短片",
+            "count": 3
+        },
+        {
+            "name": "neta",
+            "count": 2
+        },
+        {
+            "name": "2008年7月",
+            "count": 2
+        },
+        {
+            "name": "动画",
+            "count": 2
+        },
+        {
+            "name": "年4月",
+            "count": 2
+        },
+        {
+            "name": "SF",
+            "count": 2
+        }
+    ],
+    "meta_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "series": false,
+    "main_character_ids": [
+        6009,
+        12456
+    ],
+    "main_characters": [
+        {
+            "id": 6009,
+            "name": "ゲデヒトニス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/37/d7/6009_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/d7/6009_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/d7/6009_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/37/d7/6009_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4131,
+                    "name": "大川透",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6e/a7/4131_prsn_BLrCD.jpg?r=1492370968",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/a7/4131_prsn_BLrCD.jpg?r=1492370968",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/a7/4131_prsn_BLrCD.jpg?r=1492370968",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6e/a7/4131_prsn_BLrCD.jpg?r=1492370968"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 12456,
+            "name": "ドロッセル・フォン・フリューゲル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a8/c1/12456_crt_UJsjY.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a8/c1/12456_crt_UJsjY.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a8/c1/12456_crt_UJsjY.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a8/c1/12456_crt_UJsjY.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5077,
+                    "name": "川庄美雪",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2e/85/5077_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/85/5077_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/85/5077_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2e/85/5077_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

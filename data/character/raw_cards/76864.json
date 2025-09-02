@@ -1,0 +1,68 @@
+{
+    "id": 76864,
+    "name": "沢弥生",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/57/95/76864_crt_wexeI.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/57/95/76864_crt_wexeI.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/57/95/76864_crt_wexeI.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/57/95/76864_crt_wexeI.jpg"
+    },
+    "summary": "攻守バランス抜群のクールビューティー \r\n横浜リトル出身で、攻守ともにセンスが光る。野球に対してクールなようで、仲間思いの一面も。リトル時代からのチームメイトである太鳳とは行動を共にすることが多い。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "泽弥生"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "沢　弥生"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さわ　やよい"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "174cm（初中）"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        },
+        {
+            "key": "背号",
+            "value": "4"
+        },
+        {
+            "key": "守备位置",
+            "value": "二垒手"
+        },
+        {
+            "key": "投打",
+            "value": "右投右打"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 7
+    },
+    "anime_ids": [
+        292219
+    ]
+}

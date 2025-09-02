@@ -1,0 +1,56 @@
+{
+    "id": 3290,
+    "name": "サウザンドサニー号",
+    "type": 3,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ef/58/3290_crt_pWPnA.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ef/58/3290_crt_pWPnA.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ef/58/3290_crt_pWPnA.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ef/58/3290_crt_pWPnA.jpg"
+    },
+    "summary": "是草帽海贼团继黄金梅利号之后的一艘新船，船头是雄伟的狮子，是草帽海贼团必不可少的伙伴，它会继承梅利号的精魂。主角草帽海贼团一行人的第二艘航海船。名称意义取自于“要像太阳一样，从容快乐的，穿越残酷的万里大海”，取名者为冰山，设计者为弗兰奇，制造者为弗兰奇、冰山、鲁鲁、巴里、泰尔斯通、横纲。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "千里阳光号"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "桑尼号"
+                },
+                {
+                    "k": "日文名",
+                    "v": "サウザンドサニー号"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Thousand Sunny-gou"
+                }
+            ]
+        },
+        {
+            "key": "生日",
+            "value": "3月25日"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 25,
+    "stat": {
+        "comments": 3,
+        "collects": 11
+    },
+    "anime_ids": [
+        975
+    ]
+}

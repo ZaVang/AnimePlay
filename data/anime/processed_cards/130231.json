@@ -1,0 +1,497 @@
+{
+    "id": 130231,
+    "name": "偶像大师 灰姑娘女孩 第二季",
+    "image_path": "data/images/anime/130231.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "音乐",
+        "游戏改"
+    ],
+    "date": "2015-07-17",
+    "rating_rank": 1726,
+    "rating_score": 7.2,
+    "rating_total": 2195,
+    "main_character_ids": [
+        20391,
+        25520,
+        28193,
+        28194,
+        28439,
+        28574,
+        28575,
+        28576,
+        28577,
+        28578,
+        28579,
+        28580,
+        28581,
+        28582,
+        28892
+    ],
+    "main_characters": [
+        {
+            "id": 20391,
+            "name": "双葉杏",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b1/1d/20391_crt_H8wZj.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/1d/20391_crt_H8wZj.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/1d/20391_crt_H8wZj.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b1/1d/20391_crt_H8wZj.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5208,
+                    "name": "五十嵐裕美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c9/64/5208_prsn_ZHjr1.jpg?r=1687590568",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/64/5208_prsn_ZHjr1.jpg?r=1687590568",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/64/5208_prsn_ZHjr1.jpg?r=1687590568",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c9/64/5208_prsn_ZHjr1.jpg?r=1687590568"
+                    },
+                    "short_summary": "日本の女性声優。マウスプロモーション所属。\r\n代表作は、アニメ『アイドルマスター シンデレラガールズ』（双葉杏）、『パパのいうことを聞きなさい!』（小鳥遊ひな）、『奇異太郎少年の妖怪絵日記』（奇異太郎）、『AMNESIA』（オリオン）、『ブレイブウィッチーズ』（エディータ・ロスマン）、ラジオ『ゆきんこ・りえしょんのいちごまみれだよ〜』など。\r\n\r\nTVアニメ「デ・ジ・キャラット」で沢城みゆきを知ったことが一番のきっかけとなり、声優を目指し始めた。中学生の頃には堀江由衣のファンクラブ「黒ネコ同盟」に入会、声優雑誌を購入するなどのオタク活動に精を出しており、その様子を見ていた母に「そんなに好きなら目指してみれば？」と声優を勧められた。 高校では放送部に入っていたが、人前で話すことは苦手であったため、クラス委員を始めたり、総会議長をやってみたりと、できるだけ人前で話すきっかけを作って慣れるように努力を重ねた。\r\n2007年から開催された、『ぷちこ声優オーディション』の最終選考候補者に選ばれ、大学と並行して週1の養成所に通い、その後マウスプロモーション附属俳優養成所（第22期生）に入所した。\r\n2008年テレビアニメ『AYAKASHI』子供役、ゲーム『タツノコ VS. CAPCOM CROSS GENERATION OF HEROES』ロール役でデビューする。2009年よりマウスプロモーションに正式に所属。\r\n\r\n愛称について\r\nデビューしたての2008年、TVアニメ『狂乱家族日記』の現場で喜多村英梨から名付けられた。「色白いね。北海道出身なの？じゃあ、ゆきんこだね。」という喜多村からの言葉が由来である。人見知りであまり共演者と話せず萎縮していた五十嵐であったが、このように気さくに話しかけられたことをきっかけに喜多村と大の仲良しになった。\r\n\r\n声優活動\r\nゲーム『GUILTY GEAR Xrd -REVELATOR-』では、声色や口調がめまぐるしく変わるジャック・オーを担当。脚注のリンク先で聞けるように、文節とは無関係な位置で、幼い少女ボイスから大人の女性ボイスへと徐々に変化するという演技も難なくこなしている。（例：「断片化され\"た\"記憶と性格の情報が不安定ね。」→\"た\"を境に変化）\r\n多数のラジオやニコ生出演、スマートフォン「Galaxy S6/S6 edge」の広告ポスターやCM、ゲーム『グリモア〜私立グリモワール魔法学園〜』のCMなどの顔出し出演、すーぱーそに子やニコニコ動画の歌い手である花たんの楽曲でのコーラス参加など、マルチな活動を行っている。\r\n徳島県で開かれる「マチ★アソビ」には2009年のVol.1から出演しており、Vol.19（2017年10月現在）まで皆勤し続けている唯一の声優。Vol.15の際、皆勤を祝う酒の席が用意されたが、五十嵐自身はお酒が呑めない。2013年10月開催のVol.11にて、声優ユニット「つきねこ」のメンバーとして徳島観光大使にも就任した。\r\n\r\n人柄\r\n遠藤ゆりかが自身の冠番組『遠藤ゆりかの今夜もユリーカ！2016』の第7回内で、「第一印象はクールだった」と言ったように、多くの人が見た目からはクールビューティーな印象を受けている。しかし、「サバサバしたお姉さんに見えるけど、実は寂しがり屋なところが可愛い」とも語っている。\r\n事務所を問わず後輩からとても慕われている。戸田めぐみがアイドルマスター ミリオンライブ!の2ndライブに出演する際、五十嵐から「あいつを歌って踊れる子だと思わないで、レッスンを見に行ってやってください」と頼まれた元アイドルマスターシリーズ総合ディレクター 石原章弘が、戸田の個人レッスンに来たことがあった。五十嵐自身も仕事から駆けつけでライブ会場に行き、戸田のソロ曲では立ってコンサートライトを振りながら応援。「あれ、うちの戸田ですよ！」と周りに自慢していた、という話を聞いた戸田は「裕美さんは本当に良い先輩であり、私にとって家族的な存在であり、大好きな人」とブログ内で語っている。\r\n高野麻里佳は、特に影響を受けた人物として事務所の先輩である五十嵐を挙げている。以前に五十嵐が出演していた番組の後任を任された高野は、番組や先輩のことを研究して臨んだものの、五十嵐とは性格も違うため上手くいかなかった。その時に五十嵐から、「そんなに背伸びしなくていいよ。頑張ろうと思って今は空回っているから、（背伸びしない方法を）教えてあげるよ」というアドバイスを受けた高野は、「本当に素敵な先輩が出来た瞬間でした。裏表のない自然な人だから、信頼して五十嵐さんの言葉を素直に受け止められますし、だから大好きなんだなと思います。」と語っている。\r\n\r\n交友関係\r\n同業者だけでなく、様々な人と交流している様子がTwitterなどで見られる。特に仲の良い声優は、喜多村英梨、戸田めぐみ、相坂優歌、湯浅かえで、遠藤ゆりか、原紗友里、高森奈津美、松嵜麗、村川梨衣などがいる。\r\n湯浅かえでとは彼女が声優になる前から仲が良く、自身の誕生日の時期には、毎年のように戸田めぐみ、相坂優歌らと共に集まっている。\r\n高森奈津美とは同い年で、TVアニメ『アイドルマスター シンデレラガールズ』、OVA『Another』での双子役など共演も多い。プライベートでも仲が良く、「二人で老人ホームを作って老後をハッピーに暮らす」という計画を各所でよく話している。\r\n原紗友里に関しては、「マチ★アソビ」の『アイドルマスター シンデレラガールズ』ステージにて「すごい好きなんです。お持ち帰りしたいぐらい好きなんです。家に置いといて彼女がシミュレーションゲームやってる横にくっついていたいぐらい好きなんです」と語るほど溺愛しており、二人きりで大阪へ小旅行しに行く仲でもある。\r\n\r\n趣味\r\n小学生の頃から数多くのギャルゲーを嗜んできた。好きなタイトルは『同級生2』、『ダブルキャスト』、『季節を抱きしめて』、『ネクストキング 恋の千年王国』、『こみっくパーティー』、Key作品など。中でも『ときめきメモリアル』の虹野沙希とは結婚して2人の子供がいる設定があり、嫁と呼ぶほど好いている。\r\n前後のスケジュールなどに余裕がある休日には、ロードバイクに乗って湯河原温泉や、横浜の中華街などを観光している。スペシャライズドのRuby Sport（2013年モデル）を使用している。グルメや観光を目的とした趣味の一環でサイクリングを楽しんでいたが、後に自転車がテーマである『ろんぐらいだぁす!』に新垣葵役で出演が決まり、番組の企画で三浦半島を舞台にロングライドをするなど、実益も兼ねた趣味となった。\r\n休日に映画館に行って、3本見るほど映画好きである。今敏監督の作品に衝撃を受け、特に『PERFECT BLUE』は子供の頃から何度も見返している。\r\nサスペンス、ミステリー好きであり、子供の頃から2時間サスペンスなどを見ていた。『探偵 神宮寺三郎シリーズ』、『逆転裁判』や『ゴシップライター』などのゲームも好んで遊ぶ。\r\n小説も母の影響で子供の頃からアガサ・クリスティ、『ダ・ヴィンチ・コード』などのミステリーを中心に読んできた。好きな本は綾辻行人の『Another』、『館シリーズ』、『殺人鬼シリーズ』など。\r\n好きな食べ物はかき氷、カニ味噌などのおつまみ類（お酒は飲めない）、和菓子など。\r\n好きなアーティストは堀江由衣、三森すずこ、相坂優歌、小松未可子、村川梨衣など。その他、アニソンやゲーム関連曲、アイドルソング、洋邦ロックも好きで、特にBiSH、Fall Out Boy、Yellowcard、Good Charlotte、CIVILIAN（旧名 Lyu:Lyu）、ウソツキなどを好んで聴く。\r\n「@JAM 2013」 アニソンdayのソロステージがきっかけで三森に心を奪われる。後に「みもりんフレンズ」として、アルバム発売記念ニコ生や誕生日イベントに呼ばれている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 25520,
+            "name": "渋谷凛",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/88/fd/25520_crt_PZPS9.jpg?r=1551990471",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/fd/25520_crt_PZPS9.jpg?r=1551990471",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/fd/25520_crt_PZPS9.jpg?r=1551990471",
+                "grid": "https://lain.bgm.tv/pic/crt/g/88/fd/25520_crt_PZPS9.jpg?r=1551990471"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 14780,
+                    "name": "福原綾香",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c9/34/14780_prsn_Xr4d5.jpg?r=1711463903",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/34/14780_prsn_Xr4d5.jpg?r=1711463903",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/34/14780_prsn_Xr4d5.jpg?r=1711463903",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c9/34/14780_prsn_Xr4d5.jpg?r=1711463903"
+                    },
+                    "short_summary": "日本女性声优，ACROSS ENTERTAINMENT所属。\r\n鹿儿岛县出身。曾就读日本播音演技研究所。\r\n\r\n幼少時は獣医になりたかったが、『HUNTER×HUNTER R』の視聴を機に声優を目指すことを決意した。そのため中学生の時から声優の通信講座でトレーニングをしていた。15歳の時には放送部、美術部、合唱部に掛け持ちで所属し、その後は管理栄養士の資格を取るために大学に進学。\r\n学生時代はあがり症のため、合唱部に入部したり弁論大会に参加したりなど文系的な趣向が強かった。\r\nオーディションの話を最初に聞いた時点では合格を諦めかけていたが、合格してからは眠れないくらいに落ち着かなかったという。ちなみに、オーディションでは坂本真綾の「紅茶」を歌い、審査員の目に止まった。\r\n\r\n趣味、特技は、一人アニメ名場面コント、料理（アニメ・漫画に出てきた料理の再現も好む）、歌、エアバルーンアート。得意料理は苺パフェ。\r\n性格はマイペース。\r\nAKB48の峯岸みなみの大ファンで、安藤裕子や水樹奈々の楽曲も好む。また、父親からは「楽な道は選ぶな。」という言いつけをされている。\r\n上京して初めて会った声優は羽多野渉。街中でのことで、「絶対この仕事に就きたい」と一層強く思うようになった。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28193,
+            "name": "島村卯月",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a9/58/28193_crt_99Aam.jpg?r=1551990373",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/58/28193_crt_99Aam.jpg?r=1551990373",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/58/28193_crt_99Aam.jpg?r=1551990373",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a9/58/28193_crt_99Aam.jpg?r=1551990373"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7609,
+                    "name": "大橋彩香",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/72/57/7609_prsn_sR2YK.jpg?r=1717043731",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/57/7609_prsn_sR2YK.jpg?r=1717043731",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/57/7609_prsn_sR2YK.jpg?r=1717043731",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/72/57/7609_prsn_sR2YK.jpg?r=1717043731"
+                    },
+                    "short_summary": "2011年，Horipro「タレントスカウトキャラバン」次世代配音員演出者試聽的格蘭披治選出，殘餘決賽。其後，屬Horipro。\r\n\r\n2012年，電視動畫「聖誕之吻ss+plus」的第10話的實行委員演出、配音員和各項初出演。並於同年春天播映的電視動畫、「交響詩篇AO」中，初次飾演主角芙蕾雅・布蘭。\r\n\r\n在官方介紹頁中，興趣是卡拉OK、動畫鑑賞、網路、遊戲、音樂鑑賞、打鼓、讀書（輕小說）、特技是打鼓、運動。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28194,
+            "name": "神崎蘭子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ad/90/28194_crt_bglvd.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/90/28194_crt_bglvd.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/90/28194_crt_bglvd.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ad/90/28194_crt_bglvd.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6724,
+                    "name": "内田真礼",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4c/23/6724_prsn_DIyje.jpg?r=1738653463"
+                    },
+                    "short_summary": "内田 真礼（うちだ まあや、1989年12月27日 - ）は、日本の声優、歌手、女優、タレント。\r\nアイムエンタープライズ（事務所）、ポニーキャニオン（レコード会社）に所属。愛称は主にまややん、まれいたそ。東京都出身。血液型はA型。本名同じ。声優の内田雄馬は実弟。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28439,
+            "name": "本田未央",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/66/01/28439_crt_Ma271.jpg?r=1551990552",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/01/28439_crt_Ma271.jpg?r=1551990552",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/01/28439_crt_Ma271.jpg?r=1551990552",
+                "grid": "https://lain.bgm.tv/pic/crt/g/66/01/28439_crt_Ma271.jpg?r=1551990552"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5192,
+                    "name": "原紗友里",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b5/91/5192_prsn_Y6vwF.jpg?r=1595854480",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/91/5192_prsn_Y6vwF.jpg?r=1595854480",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/91/5192_prsn_Y6vwF.jpg?r=1595854480",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b5/91/5192_prsn_Y6vwF.jpg?r=1595854480"
+                    },
+                    "short_summary": "参加第2回的81竞试，获得优秀奖。2009年10月开始加入81 Produce。\r\n    2010年7月30日与同事务所的阿澄佳奈、片冈梓组成声优团体“LISP”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28574,
+            "name": "諸星きらり",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b2/a7/28574_crt_lL16h.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/a7/28574_crt_lL16h.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/a7/28574_crt_lL16h.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b2/a7/28574_crt_lL16h.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7359,
+                    "name": "松嵜麗",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/29/e1/7359_prsn_wzP1z.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/e1/7359_prsn_wzP1z.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/e1/7359_prsn_wzP1z.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/29/e1/7359_prsn_wzP1z.jpg"
+                    },
+                    "short_summary": "松嵜 麗（まつざき れい、1985年5月31日 - ）は、日本の女性声優。マウスプロモーション所属。\r\n福岡県出身。血液型はB型。身長155cm。日本ナレーション演技研究所卒業。福岡女学院中学校・高等学校卒業[2]。東京理科大学理学部第二部数学科中退。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28575,
+            "name": "緒方智絵里",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f2/6a/28575_crt_KsbnN.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/6a/28575_crt_KsbnN.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/6a/28575_crt_KsbnN.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f2/6a/28575_crt_KsbnN.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10878,
+                    "name": "大空直美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2b/15/10878_prsn_0F1Km.jpg?r=1542263067",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/15/10878_prsn_0F1Km.jpg?r=1542263067",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/15/10878_prsn_0F1Km.jpg?r=1542263067",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2b/15/10878_prsn_0F1Km.jpg?r=1542263067"
+                    },
+                    "short_summary": "日本女性声优。隶属于青二Production，大阪府出身。身高153cm、血型为A型。立命馆大学映像学部毕业。青二塾大阪校第28期毕业。\r\n\r\n小学3年生の頃、『ドラゴンボール』にのめり込み、ヒーローと一緒に世界を冒険するようなアニメの虜になった。\r\n中学・高校時代も友人と作品の批評を楽しみ、「関係する仕事をしたい」と立命館大学映像学部に入学。\r\n3年で映像作品のナレーターを務めた時、場面ごとに声の表情を考える自分と大好きなアニメの声優の姿が重なり、くすぶっていた気持ちに火が付き、家電量販店のアルバイトで授業料50万円を貯め、4年生だった2010年4月、青二プロダクションが運営する養成所・青二塾大阪校に入塾。\r\n大学卒業から1年後、青二プロダクションの所属試験に合格する。\r\n2012年6月、『聖闘士星矢Ω』の子供役で声優デビュー。\r\n2013年7月、『げんしけん二代目』のスザンナ・ホプキンス役で初レギュラーを獲得。\r\n2014年1月、『いなり、こんこん、恋いろは。』の伏見いなり役で初主演を務める。\r\n\r\n英検準2級、日本漢字能力検定3級を所持している。\r\n趣味はイラスト、似顔絵、ピアノ、ケーナで、特技は歌唱、ダンス、美味しいたこ焼きを焼くことである。\r\n好きな言葉は「為せば成る」。\r\n\r\n幼い頃から『ドラゴンボール』や『キン肉マン』などの東映アニメが好きで、エンドロールの『青二プロダクション』のクレジットを見て、「声優と言えばここだ！」と考えていたため、青二プロダクションへの所属を目指し、青二塾大阪校に通うことを決めた。\r\n日本テレビ系『幸せ!ボンビーガール』にて「声優の卵」として出演。100円ショップでアルバイトし、特別な日には高級焼肉店のタレでパンの耳を食べてレッスンに励む姿が紹介されたことがある。\r\n英語を得意としており、初期の仕事では顔出しで英語教室で英語を教わる生徒役で出演していた。\r\n『アイドルマスター シンデレラガールズ』では緒方智絵里役を好演。CDデビューの他、テレビアニメでもメインキャストとして出演している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28576,
+            "name": "多田李衣菜",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0c/b3/28576_crt_8cqe2.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0c/b3/28576_crt_8cqe2.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0c/b3/28576_crt_8cqe2.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0c/b3/28576_crt_8cqe2.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 14781,
+                    "name": "青木瑠璃子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d9/c4/14781_prsn_gI799.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/c4/14781_prsn_gI799.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/c4/14781_prsn_gI799.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d9/c4/14781_prsn_gI799.jpg"
+                    },
+                    "short_summary": "青木瑠璃子（1990年3月24日－）是日本的女性声优，Atomic Monkey所属。埼玉县出身。血型O型。法政大学社会学部媒体社会学科毕业。\r\n\r\n趣味・特技：剣道、水泳、ゲーム",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28577,
+            "name": "城ヶ崎莉嘉",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0a/e3/28577_crt_X2Zll.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/e3/28577_crt_X2Zll.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/e3/28577_crt_X2Zll.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0a/e3/28577_crt_X2Zll.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7147,
+                    "name": "山本希望",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f1/84/7147_prsn_G6Zb1.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/84/7147_prsn_G6Zb1.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/84/7147_prsn_G6Zb1.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f1/84/7147_prsn_G6Zb1.jpg"
+                    },
+                    "short_summary": "VIMS所属声优. 2011年出道\r\n\r\n老家是青森農家，是5人姊弟的長女。對於80年代的JUMP漫畫非常熟悉，反而是對於時下的流行作不熟，因此經常鬧笑話。\r\n\r\n自認是個認真而心地善良的宅女，但是從廣播當中的行為表現也有腹黑女一說。\r\n\r\n宣稱喜歡的男性類型是「能夠戰勝猩猩的人」，如果要跟她告白的話得先去動物園一趟，打贏了再回來她才肯點頭。因為太喜歡大猩猩而被稱為ゴリラ声優，她本人的說法是「不是作為動物，而是作為異性而最喜歡大猩猩了」。\r\n\r\n以前假日都會在家滾來滾去一整天，最近開始走outdoor路線，在内田真礼的推坑下開始看美國超級英雄電影。而且能夠一次游泳15m了！(...) 另外也正在磨練自己的料理手藝並刊登在推特上，還在家裡種豆苗、番茄、藍莓和香草，深夜還忙著健身等等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28578,
+            "name": "三村かな子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/42/fb/28578_crt_OrkDc.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/fb/28578_crt_OrkDc.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/fb/28578_crt_OrkDc.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/42/fb/28578_crt_OrkDc.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6706,
+                    "name": "大坪由佳",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/55/4b/6706_prsn_55NH1.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/4b/6706_prsn_55NH1.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/4b/6706_prsn_55NH1.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/55/4b/6706_prsn_55NH1.jpg"
+                    },
+                    "short_summary": "大坪 由佳（おおつぼ ゆか、1993年6月11日 - ）は日本の女性声優。千葉県出身。EARLY WING所属。\r\n2020年10月31日，宣布与一般男性(29岁)结婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28579,
+            "name": "アナスタシア",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a2/e0/28579_crt_BdObb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/e0/28579_crt_BdObb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/e0/28579_crt_BdObb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a2/e0/28579_crt_BdObb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7307,
+                    "name": "上坂すみれ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d3/30/7307_prsn_R3GWz.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/30/7307_prsn_R3GWz.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/30/7307_prsn_R3GWz.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d3/30/7307_prsn_R3GWz.jpg"
+                    },
+                    "short_summary": "日本的女性声优、艺人、歌手。\r\n神奈川县出身。上智大学外国语学院俄语系毕业。\r\n\r\n2012年，在《要听爸爸的话！》中首次出演女主角小鸟游空，亦同时出演该系列作品的CD、游戏、广播。\r\n2012年5月26日，受日本海上自卫队的邀请，造访了千叶县船桥基地，担当日本海上自卫队“山雪”号的一日舰长。\r\n2012年12月，在卡塔尔召开的第23届多哈图书展上，代表日本参展队伍的嘉宾出席。这也是上坂首次参与文化外交活动。\r\n2013年2月，宣布演唱电视动画《人鱼又上钩》的片头曲“七つの海よりキミの海”，经由STARCHILD歌手出道。\r\n2014年3月，自上智大学外国语学部俄语学科毕业。同年10月，应开拓动漫祭邀请前往台湾出席“Petit Fancy 21”。\r\n其他代表作品有《中二病也要谈恋爱！》凸守早苗、《舰队收藏》吹雪 、《偶像大师灰姑娘女孩》安娜史塔西亚、《CHAOS;CHILD》尾上世莉架等。\r\n2016年3月，第十届声优大赏中荣获新人女声优奖。\r\n2020年8月31日，宣布退出SPACE CRAFT。\r\n2021年3月1日，宣布加入Voice Kit事务所。\r\n\r\n上坂堇可以说是日本声优圈内的特例，原因在于她有着浓厚的苏俄情结，再加上在大学主修俄语，更让她和其他声优相比显得与众不同，对于俄罗斯的评价是：那是一个在文学、历史、绘画、音乐等方面都让人感觉很有个性且展现出不可思议魅力的国度。\r\n与俄罗斯产生情结的契机是高中一年级的时候听到了苏联国歌，歌词深深地感染了自己。她自己的愿望是能成为”日俄之间动画桥梁般的存在“的角色，她在博客里写文章经常使用西里尔字母的词汇，例如「Здравствуйте（你好）」、「До свидания（再见 ）」、「Спасибо（谢谢）」、「Хорошо（好）」、「Ура（万岁）」等。而在她的推特里，自我介绍一栏更是直言不讳，直接写上Я люблю Россию!!（我爱俄罗斯！！），在广播节目中喜欢称她的听众为“同志诸君”，也因此她的粉丝喜欢称她为“连长”“师团长“”军团长“。更是由于在人气动画《少女与战车》中农娜这一酷似政委的副队长角色，而在广大粉丝中有了“政委”的昵称。\r\n她本人也是个军武宅，爱好军歌和战时歌谣，喜欢的坦克是苏制BT-5轻型坦克，她在大学参加的社团也是关于苏联红军早期发展方面的研究，在钟情于俄罗斯之前，她也曾对第三帝国产生浓厚兴趣。\r\n因为参与了文化外交活动，上坂本人也与前日本文化外交大使樱井孝昌先生关系密切。在自己的推特、博客中也对樱井给予高度评价。在樱井先生不幸离世后，在博客中发表了真诚的悼念文章。\r\n成为声优的契机是受到《魔法护士小麦》中桃井晴子的演技所感动，并表示桃井晴子是她尊敬的声优。\r\n\r\n喜欢的食物是羊排和”きのこの山“ ，非常喜欢lolita服饰（Lolita Fashion），在她的博客中经常出现她洋装打扮的照片。是Lolita品牌Baby The Stars Shine Bright的模特。喜欢的音乐类型除了之前提到的军乐以及战时歌谣外，还包括King-Show（一种上世纪80年代至90年代流行于日本的音乐类型，又称”筋肉少女帯“），游戏音乐和重金属。\r\n爱犬的名字叫做“苹果”。这只蝴蝶犬出生于2001年6月23日，被上坂称作“家中的最高权力者”。2015年12月22日亡故。\r\n中学时代极为崇拜尼采、弗洛伊德与荣格。并且经常沉迷于他们的著作之中。\r\n被中川翔子戏称为“残念系亚文化美少女”。\r\n\r\n2016年3月，由于不堪忍受网络上的性骚扰，宣布Twitter账号停止更新，官方LINE账号继续更新；同年11月，Twitter账号恢复更新。2017年7月，由于网上再次出现性骚扰的情况，删除个人Twitter及Instagram账号。\r\n2017年11月，开设公式推特。2019年，重新开设Instagram账号。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28580,
+            "name": "赤城みりあ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/44/d8/28580_crt_V4522.jpg?r=1682438140",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/d8/28580_crt_V4522.jpg?r=1682438140",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/d8/28580_crt_V4522.jpg?r=1682438140",
+                "grid": "https://lain.bgm.tv/pic/crt/g/44/d8/28580_crt_V4522.jpg?r=1682438140"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9560,
+                    "name": "黒沢ともよ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964"
+                    },
+                    "short_summary": "黒沢 ともよ（くろさわ ともよ、1996年4月10日 - ）は、日本の女性女優、声優、歌手。マウスプロモーション所属。埼玉県秩父市出身。\r\n\r\n3歳頃から演技の勉強を始め、2003年頃から子役としてテレビドラマ、CM、舞台へ出演。\r\n2008年よりSound Horizonのサポートメンバーとして参加。6th Story CD『Moira』のPV「冥王 -Θανατος-」、及びコンサート「Sound Horizon 6th Story Concert Moira 〜其れでも、お征きなさい仔等よ〜」に幼少期アルテミシア役で出演。いずれも発声無しの子役（モーションアクター）としての出演であったが、2010年の7th Story CD『Märchen』ではボーカル・ボイスアクターなども務めている。\r\n2010年、劇場アニメ『宇宙ショーへようこそ』の小山夏紀役にて声優デビュー。その後、テレビアニメ等、活躍の幅を広げている。\r\n東京児童劇団を退団後、2012年よりマウスプロモーションに所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28581,
+            "name": "前川みく",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/cd/40/28581_crt_j1awG.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/40/28581_crt_j1awG.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/40/28581_crt_j1awG.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cd/40/28581_crt_j1awG.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7302,
+                    "name": "高森奈津美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/01/4a/7302_prsn_V44Vn.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/4a/7302_prsn_V44Vn.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/4a/7302_prsn_V44Vn.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/01/4a/7302_prsn_V44Vn.jpg"
+                    },
+                    "short_summary": "高森奈津美（たかもり なつみ、1987年2月14日），日本女声优。出身于山梨县，血型是A型。\r\n\r\nPro Fit声优养成所第10期生出身。2009年10月毕业。\r\n高中时加入羽毛球部，并有参加校际间运动会的经历。\r\n兴趣爱好是逛咖啡馆和插画。\r\n特技是握力“40”以上和随便到哪里都能睡着。\r\n持有全商情报处理检定2级、汉字检定3级别、全经计算器检定3级以及秘书实务检定3级。\r\n因山梨县出身的，使用方言为关东方言的甲州弁，曾出任山梨县富士吉田市“樱织”旅游宣传大使。\r\n稍微下垂的黑色双目是她的典型特征，本人自嘲为“エロ目”。\r\n同事务所的茅野爱衣曾对高森给出“胸部好大”的第一印象。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28582,
+            "name": "新田美波",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0c/01/28582_crt_r3MEb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0c/01/28582_crt_r3MEb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0c/01/28582_crt_r3MEb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0c/01/28582_crt_r3MEb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 8403,
+                    "name": "洲崎綾",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/37/de/8403_prsn_w98m9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/de/8403_prsn_w98m9.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/de/8403_prsn_w98m9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/37/de/8403_prsn_w98m9.jpg"
+                    },
+                    "short_summary": "洲崎绫，出生于日本石川县，日本女性声优。隶属于I'm Enterprise。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28892,
+            "name": "プロデューサー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fa/86/28892_crt_XgxDB.jpg?r=1420910432",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/86/28892_crt_XgxDB.jpg?r=1420910432",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/86/28892_crt_XgxDB.jpg?r=1420910432",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fa/86/28892_crt_XgxDB.jpg?r=1420910432"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 16361,
+                    "name": "武内駿輔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b9/41/16361_prsn_6vPo1.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/41/16361_prsn_6vPo1.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/41/16361_prsn_6vPo1.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b9/41/16361_prsn_6vPo1.jpg"
+                    },
+                    "short_summary": "武内 駿輔（たけうち しゅんすけ、1997年9月12日 - ）是日本的男性声优。81produce所属。\r\n\r\n兴趣是DTM、飞镖、台球、扑克等。IM@S中喜欢的偶像是高槻やよい。\r\n\r\n10歳の時、映画『ダークナイト』の敵役・ジョーカーを演じるヒース・レジャーに感動し、俳優になりたいという夢を持つ。俳優を研究するため多数のハリウッド映画を見るうち、吹き替えを行う声優を意識するようになる。\r\n中学では陸上部だったが、両親を説得、3年生の頃に養成所に入所。中学卒業後81プロデュースの養成所から声がかかり、週1回のレッスンに通う。\r\n17歳で『アイドルマスター シンデレラガールズ』のプロデューサー役に大抜擢され、注目を浴びる。オーディションを受けた時、まず「アイドルのプロデューサーはどんな仕事なのか」というところから調べ、さらに「長身」「無口で不器用」という設定から、アニメやドラマ、映画などから同じ共通点をもつキャラを探して、それを演じている役者の演技を研究したという。\r\n2016年には、第10回声優アワードで新人男優賞を受賞した。\r\n\r\n一人っ子である。「高校生とは思えないダンディすぎる声」と評される低い声質で、主に青年役を演じている。\r\n好きな教科は英語で、声優の仕事に活きるように発音を特に勉強している。\r\n好きな芸能人はGACKT。GACKTについては自身が声優としてデビューした時に、その生き様や歌に励まされたためと語っている。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "id": 15835,
+    "name": "ヨナ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bf/53/15835_crt_D9c0j.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/53/15835_crt_D9c0j.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/53/15835_crt_D9c0j.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bf/53/15835_crt_D9c0j.jpg"
+    },
+    "summary": "本名强纳森·迈尔（Jonathan Marr），前山岳部队少年兵，一头银发，沉默寡言。父母在战争中被敌人的新型战斗机炸死，从小就过著在战场上杀人与求生的黑暗生活，因此对武器、军火十分厌恶。然而，他对杀戮和战斗以外的生活无法适应，由于照顾他跟孤儿们的部队司令被副司令和卡士柏的部下击杀，因此愤而将整个基地毁灭，后来被卡士柏的部队俘虏，以照顾其他孤儿为条件成为蔻蔻的保镖。\r\n常用的武器有FN FNC和FN Model Hi Power Mk3。\r\n臀部有颗过去作战时留下的子弹，过海关时常被拦下来，但因为怕打针迟迟没有开刀，第十集才取出，对蔻蔻做事的风格感兴趣。\r\n在得知蔻蔻的计划时将造成的牺牲人数时，一度企图刺杀蔻蔻并脱离队伍，脱离后加入卡士柏的部队，两年后才回归。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "乔那"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Jonah"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ジョナサン・マル"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 36
+    },
+    "anime_ids": [
+        29073,
+        42339
+    ]
+}

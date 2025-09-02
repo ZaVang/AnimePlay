@@ -1,0 +1,107 @@
+{
+    "id": 43812,
+    "name": "スイレン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3d/53/43812_crt_9McWC.jpg?r=1499624369",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/53/43812_crt_9McWC.jpg?r=1499624369",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/53/43812_crt_9McWC.jpg?r=1499624369",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3d/53/43812_crt_9McWC.jpg?r=1499624369"
+    },
+    "summary": "游戏中\r\n水莲初登场于《精灵宝可梦 太阳／月亮》，精通水属性的队长。\r\n水莲是个十分重视家庭的海洋居民、照顾着妹妹们的可靠姐姐。\r\n\r\n动画中\r\n在《精灵宝可梦太阳&月亮》中，水莲作为小智的同学登场。\r\n水莲喜爱水属性宝可梦，平时温顺，但实际上很活跃。身为渔夫的长女，她照顾著两位妹妹。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "水莲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Lana"
+                },
+                {
+                    "k": "法文名",
+                    "v": "Néphie"
+                },
+                {
+                    "k": "德文名",
+                    "v": "Tracy"
+                },
+                {
+                    "k": "意大利文名",
+                    "v": "Suiren"
+                },
+                {
+                    "k": "西班牙文名",
+                    "v": "Nereida"
+                },
+                {
+                    "k": "韩文名",
+                    "v": "수련"
+                },
+                {
+                    "k": "俄文名",
+                    "v": "Лана"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Suiren"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "眼睛颜色",
+            "value": "蓝色"
+        },
+        {
+            "key": "头发颜色",
+            "value": "蓝色"
+        },
+        {
+            "key": "训练家类型",
+            "value": "队长"
+        },
+        {
+            "key": "职业",
+            "value": "钓客"
+        },
+        {
+            "key": "擅长属性",
+            "value": "水"
+        },
+        {
+            "key": "家乡所在地",
+            "value": "阿罗拉地区"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "https://wiki.52poke.com/wiki/水莲"
+                },
+                {
+                    "v": "https://wiki.52poke.com/wiki/水莲（动画）"
+                }
+            ]
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 16,
+        "collects": 50
+    },
+    "anime_ids": [
+        192680
+    ]
+}

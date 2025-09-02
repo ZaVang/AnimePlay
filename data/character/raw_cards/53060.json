@@ -1,0 +1,48 @@
+{
+    "id": 53060,
+    "name": "夏目美緒",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ce/c7/53060_crt_E5ioU.jpg?r=1513576455",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/c7/53060_crt_E5ioU.jpg?r=1513576455",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/c7/53060_crt_E5ioU.jpg?r=1513576455",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ce/c7/53060_crt_E5ioU.jpg?r=1513576455"
+    },
+    "summary": "瑛太、陽斗とは中学時代のクラスメイトだった。\r\n現在は、大学進学を目指して勉強をがんばっている受験生。\r\n中学の頃からの片想いを、今も引きずっている。\r\n\r\n初中时和瑛太、阳斗是同班同学。\r\n现在则是为了准备升入大学而努力学习的应考生。\r\n初中时开始的单相思，直到现在也没能舍弃。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "夏目美绪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "なつめ みお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Natsume Mio"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 55,
+        "collects": 193
+    },
+    "anime_ids": [
+        212278
+    ]
+}

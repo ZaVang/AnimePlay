@@ -1,0 +1,73 @@
+{
+    "id": 29282,
+    "name": "黄前久美子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/48/cc/29282_crt_VJ77t.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/cc/29282_crt_VJ77t.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/cc/29282_crt_VJ77t.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/48/cc/29282_crt_VJ77t.jpg"
+    },
+    "summary": "一年级生，使用的乐器是上低音号。\r\n因为憧憬水手服和希望人际关系有新的开始，选择进入北宇治高中就读。\r\n初中时曾是管乐团的成员，进入高中后本不愿加入管乐团，在周围人怂恿下终于还是选择加入。\r\n较为没有主见，有着想说什么就说什么的习惯。\r\n♪好きな色\r\n白、黄\r\n♪趣味\r\n音楽を聞くこと、家でダラダラすること\r\n♪特技\r\n缶に入ったコーンスープを飲むときに、ひと粒も残さず飲むことができる\r\n♪好きなもの\r\n卵料理、洋菓子。大好物はオムライスとショートケーキ\r\n♪嫌いなもの\r\n虫！　とくにトビケラ！",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黄前久美子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "黄前 久美子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おうまえ くみこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Oumae Kumiko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月21日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://tv.anime-eupho.com/character/#/kumiko"
+        },
+        {
+            "key": "乐器",
+            "value": "上低音号"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 21,
+    "stat": {
+        "comments": 557,
+        "collects": 1748
+    },
+    "anime_ids": [
+        152091,
+        115908
+    ]
+}

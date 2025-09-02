@@ -1,0 +1,451 @@
+{
+    "id": 1454,
+    "type": 2,
+    "name": "夏のあらし!",
+    "name_cn": "夏之岚!",
+    "summary": "利用暑假机会来乡下祖父家住的八坂一，在偶然进入一家咖啡店纳凉时，对那里的店员岚一见钟情。在某个契机下，岚碰到八坂一的瞬间，两人之间仿佛产生了雷电般的强烈冲击。岚惊呼“连通了！”，然后带着震惊的八坂一跑到外面。两人一起跑过后山，映入眼帘的却是一片看起来不像现代日本的景象……\r\n\r\n夏休みを利用して田舎の祖父の家に泊まりに来た八坂一。彼はたまたま涼みに入った喫茶店の従業員・あらしに一目惚れをしてしまう。とあるきっかけであらしが一に触れた瞬間、2人の間に雷のような衝撃が走る。あらしは「通じた!」と声を漏らすと、驚いた一を外へ連れ出す。そのまま2人で裏山を駆け抜けると、目の前には現代の日本だとは思えない風景が広がっていた……。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2009-04-05",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/3b/bf/1454_47lsn.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/3b/bf/1454_47lsn.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/3b/bf/1454_47lsn.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/3b/bf/1454_47lsn.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/3b/bf/1454_47lsn.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "夏之岚!"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "夏日风暴",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2009年4月5日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": [
+                {
+                    "v": "http://king-cr.jp/special/natsunoarashi1/",
+                    "k": null
+                },
+                {
+                    "v": "http://www.tv-tokyo.co.jp/anime/natsunoarashi/",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "播放结束",
+            "value": "2009年6月28日"
+        },
+        {
+            "key": "导演",
+            "value": "新房昭之"
+        },
+        {
+            "key": "音乐",
+            "value": "ken sato"
+        },
+        {
+            "key": "原作",
+            "value": "小林尽"
+        },
+        {
+            "key": "系列构成",
+            "value": "高山カツヒコ"
+        },
+        {
+            "key": "系列监督",
+            "value": "大沼心"
+        },
+        {
+            "key": "人物设定",
+            "value": "大田和寛"
+        },
+        {
+            "key": "总作画监督",
+            "value": "大田和寛、伊藤良明"
+        },
+        {
+            "key": "美术监督",
+            "value": "東厚治"
+        },
+        {
+            "key": "设定",
+            "value": "武内宣之"
+        },
+        {
+            "key": "色彩设计",
+            "value": "日比野仁"
+        },
+        {
+            "key": "摄影监督",
+            "value": "内村祥平"
+        },
+        {
+            "key": "特效",
+            "value": "酒井基"
+        },
+        {
+            "key": "剪辑",
+            "value": "関一彦"
+        },
+        {
+            "key": "音响监督",
+            "value": "鶴岡陽太"
+        },
+        {
+            "key": "音乐制作",
+            "value": "STAR CHILD"
+        },
+        {
+            "key": "企画",
+            "value": "田口浩司、森山敦"
+        },
+        {
+            "key": "制片人",
+            "value": "宮本純乃介"
+        },
+        {
+            "key": "动画制片人",
+            "value": "久保田光俊"
+        },
+        {
+            "key": "动画制作",
+            "value": "SHAFT"
+        },
+        {
+            "key": "制作协力",
+            "value": "ガンジス"
+        },
+        {
+            "key": "製作",
+            "value": "夏のあらし!製作委員会"
+        },
+        {
+            "key": "脚本",
+            "value": "高山カツヒコ(1-5,8,9,12,13)、赤尾でこ [ 三重野瞳 ] (6,7,10,11)"
+        },
+        {
+            "key": "分镜",
+            "value": "島津裕行(1,7)、宮崎修治(2,5,9)、森義博(3,10,11)、石倉賢一(4,8)、飯村正之(6)、中澤勇一(12)、大沼心(13)"
+        },
+        {
+            "key": "演出",
+            "value": "大沼心(1,2,7,9,13)、森義博(3,11)、石倉賢一(4,8)、宮崎修治(5)、飯村正之(6,12)、岩本保雄(10)"
+        },
+        {
+            "key": "作画监督",
+            "value": "潮月一也、岩崎たいすけ、中山初絵、梶浦紳一郎、田中穣、高野晃久、牛島希、小島彰、伊藤良明、大森英敏、実原登、山縣亜紀、相坂ナオキ、大田和寛"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "大沼心"
+        }
+    ],
+    "volumes": 0,
+    "eps": 13,
+    "total_episodes": 13,
+    "rating": {
+        "rank": 1628,
+        "total": 1002,
+        "count": {
+            "one": 4,
+            "two": 3,
+            "three": 5,
+            "four": 11,
+            "five": 40,
+            "six": 153,
+            "seven": 364,
+            "eight": 308,
+            "nine": 80,
+            "ten": 34
+        },
+        "score": 7.2
+    },
+    "collection": {
+        "wish": 1181,
+        "collect": 1414,
+        "doing": 121,
+        "on_hold": 173,
+        "dropped": 90
+    },
+    "tags": [
+        {
+            "name": "新房昭之",
+            "count": 458
+        },
+        {
+            "name": "夏之岚",
+            "count": 217
+        },
+        {
+            "name": "SHAFT",
+            "count": 200
+        },
+        {
+            "name": "小林尽",
+            "count": 181
+        },
+        {
+            "name": "TV",
+            "count": 165
+        },
+        {
+            "name": "2009",
+            "count": 139
+        },
+        {
+            "name": "时间跳跃",
+            "count": 127
+        },
+        {
+            "name": "2009年4月",
+            "count": 102
+        },
+        {
+            "name": "漫画改",
+            "count": 79
+        },
+        {
+            "name": "恶搞",
+            "count": 60
+        },
+        {
+            "name": "白石凉子",
+            "count": 58
+        },
+        {
+            "name": "科幻",
+            "count": 52
+        },
+        {
+            "name": "野中蓝",
+            "count": 48
+        },
+        {
+            "name": "名塚佳織",
+            "count": 33
+        },
+        {
+            "name": "搞笑",
+            "count": 33
+        },
+        {
+            "name": "杉田智和",
+            "count": 30
+        },
+        {
+            "name": "漫改",
+            "count": 22
+        },
+        {
+            "name": "新房",
+            "count": 13
+        },
+        {
+            "name": "大沼心",
+            "count": 11
+        },
+        {
+            "name": "日常",
+            "count": 11
+        },
+        {
+            "name": "日本",
+            "count": 9
+        },
+        {
+            "name": "夏日的回忆",
+            "count": 5
+        },
+        {
+            "name": "小见川千明",
+            "count": 5
+        },
+        {
+            "name": "沙发套",
+            "count": 4
+        },
+        {
+            "name": "动画",
+            "count": 4
+        },
+        {
+            "name": "奇幻",
+            "count": 4
+        },
+        {
+            "name": "高山カツヒコ",
+            "count": 3
+        },
+        {
+            "name": "日本动画",
+            "count": 3
+        },
+        {
+            "name": "青春",
+            "count": 3
+        },
+        {
+            "name": "治愈",
+            "count": 3
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        1861,
+        1862,
+        1863,
+        1864
+    ],
+    "main_characters": [
+        {
+            "id": 1861,
+            "name": "嵐山小夜子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f9/d1/1861_75O0o.jpg?r=1509016741",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/d1/1861_75O0o.jpg?r=1509016741",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/d1/1861_75O0o.jpg?r=1509016741",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f9/d1/1861_75O0o.jpg?r=1509016741"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4730,
+                    "name": "白石涼子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a9/06/4730_prsn_2T1tH.jpg?r=1605439183",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/06/4730_prsn_2T1tH.jpg?r=1605439183",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/06/4730_prsn_2T1tH.jpg?r=1605439183",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a9/06/4730_prsn_2T1tH.jpg?r=1605439183"
+                    },
+                    "short_summary": "白石 涼子（しらいし りょうこ、1982年9月7日 - ）は、日本の女性声優、歌手。青二プロダクション（事務所）、スターチャイルドレコード（レコードレーベル）所属。\r\n奈良県北葛城郡香芝町（現：香芝市）出身。青二塾大阪校18期生卒業。\r\n\r\n愛称は「うりょっち」（由来については後述）。\r\n『まほらば Heartful Days』の白鳥隆士役で初めて主役を演じ、その後はアニメ・ゲーム・ドラマCDと活動。また、『魔法先生ネギま!』の長瀬楓役や『ハヤテのごとく!』の綾崎ハヤテ役で人気を高めていき、近年では主要な役柄を演じることが多くなった。\r\n2007年春に喉の手術を行った。同年5月28日配信分のインターネットラジオ『R-24hr』によると、喉を約半年前から痛めており、薬を飲みながら通院していたが、症状が改善せず手術に踏み切った。その影響は『ハヤテのごとく!』に出ており、同作第10話はオリジナルの話で、ハヤテのセリフは一切無く、キャラクターソング「僕はキミのモノ」がBGMで流れたのみだった。また、同作品のネットラジオも2回欠席した。同年6月3日開催の『RONDO ROBE 2007』にて再び公の場に姿を現した。\r\n2012年9月6日、会社員の一般男性と入籍したことを発表。2013年7月3日、婚姻期間10ヶ月足らずのスピード離婚したことを発表。\r\nAKATSUKI projectに所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 1862,
+            "name": "八坂一",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4e/87/1862_47Z7J.jpg?r=1509016713",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/87/1862_47Z7J.jpg?r=1509016713",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/87/1862_47Z7J.jpg?r=1509016713",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4e/87/1862_47Z7J.jpg?r=1509016713"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4667,
+                    "name": "三瓶由布子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e1/88/4667_prsn_4UMcj.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/88/4667_prsn_4UMcj.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/88/4667_prsn_4UMcj.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e1/88/4667_prsn_4UMcj.jpg"
+                    },
+                    "short_summary": "经常出演少年角色。\r\n还是初中生时，初次担任配音的工作，角色是‘Da!Da!Da!’的主角西远寺彷徨。和为另外一个主角光月未梦配音的名冢佳织相识。巧合的是，二人在交响诗篇中再一次同时担任主角。\r\n虽然和‘交响诗篇’的合作者名冢佳织打交道时态度很友好，对同样是合作者的小清水亚美，则是经常说“恶心!”、“滚!”等等显得两人关系不佳的话。实际上这是三瓶和从“剧団若草”时代就是好友的小清水的关系好的表现。在2007年1月13日，作为嘉宾出演アニスパ时，三瓶出演新郎，小清水出演新娘，举行了婚宴。这时名冢佳织发来了“和我只是玩玩的吗？只是为了我的身体吗？”的贺（？）电。\r\n和小清水亚美都是2人姐妹的姐姐，并且双亲和姊妹的干支完全相同，经常被人们作为谈论的话题。\r\n《童话枪手小红帽》中，因为为铃风草太配音的熊井统子生病需要休养，从2006年12月23日放送部分开始顶替她出演。\r\n在2007年5月，从剧团若草退団。经过一段自由身时期，从2007年11月1日开始，加入了Production baobab。好友小清水亚美也从11月15日开始加入了baobab。\r\n2008年3月大学毕业。\r\n2011年9月与小清水亚美、折笠爱共同从Production baobab事务所辞退，2011年10月加入AXL ONE。\r\n2013年2月28日生日当天宣布结婚，丈夫为圈外人。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 1863,
+            "name": "上賀茂潤",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/09/fb/1863_7MDId.jpg?r=1509016755",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/fb/1863_7MDId.jpg?r=1509016755",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/fb/1863_7MDId.jpg?r=1509016755",
+                "grid": "https://lain.bgm.tv/pic/crt/g/09/fb/1863_7MDId.jpg?r=1509016755"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4969,
+                    "name": "小見川千明",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/93/58/4969_prsn_zI0C7.jpg?r=1549851897",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/58/4969_prsn_zI0C7.jpg?r=1549851897",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/58/4969_prsn_zI0C7.jpg?r=1549851897",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/93/58/4969_prsn_zI0C7.jpg?r=1549851897"
+                    },
+                    "short_summary": "4岁加入剧団，开始舞台活动。\r\n毕业与日本艺术高等学校。\r\n2008年首次担当电视动画《SOUL EATER》的女主角玛嘉·亚尔邦。\r\n分喜欢宫沢贤治。\r\n作为动画声优，声音非常独特突兀，常有破音，但也属于萌点之一。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 1864,
+            "name": "カヤ・バーグマン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d0/72/1864_xvp6t.jpg?r=1509016772",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/72/1864_xvp6t.jpg?r=1509016772",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/72/1864_xvp6t.jpg?r=1509016772",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d0/72/1864_xvp6t.jpg?r=1509016772"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3922,
+                    "name": "名塚佳織",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0b/59/3922_prsn_rSvg6.jpg?r=1518234694",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/59/3922_prsn_rSvg6.jpg?r=1518234694",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/59/3922_prsn_rSvg6.jpg?r=1518234694",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0b/59/3922_prsn_rSvg6.jpg?r=1518234694"
+                    },
+                    "short_summary": "日本东京都出身的女性声优。\r\n\r\n从小学生开始就以童星之姿在舞台上演出。也有如音乐剧‘トラップ一家物语’等，担任多个角色连续演出多场的作品。\r\n在1998年的音乐剧《フラワー》中，除饰演サイヤ以外，也担任女主角メズーラ的代班演员。前来观赏同台演出的斋藤彩夏的动画导演大地丙太郎因此留下了印象。在导演的另一部作品反斗小王子中客串演出子石的角色，是为声优出道作。\r\n2006年3月从桐朋学园艺术短期大学演剧学科毕业。\r\n\r\n没加入过任何事务所，以前由母亲担任经纪人，现在则全部自己一手包办。\r\n家庭成员有爸爸、妈妈、姊姊和一只猫（MOKO）。\r\n有“就算连续三天喝到天亮也没事”的好酒量。\r\n喜欢的音乐是以J-POP为主\r\n曾学过七年的小提琴，是一项才艺。\r\n虽然本人似乎没有注意到，在广播节目中常用“てなわけで”、“そんなわけで”。\r\n昵称的“かもさん”是由于就读幼稚园时，NHK教育台播放“鸭子的桥”这首歌的时候会跟着一起唱唱跳跳，因此被父亲叫做“かもさん”。\r\n\r\n2011年2月21日, 在个人官方部落格上公开结婚消息。\r\n2012年1月1日，在官方博客上宣布，自己在稍早前的时候已经当上了妈妈，在2011年底顺利产下一名体重近6斤的健康女婴，在此对支持她的家人及粉丝表示感谢。\r\n2021年7月2日，在个人SNS上公布再度怀孕的消息。\r\n2021年12月4日，在个人SNS上公布次子平安生产的消息。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

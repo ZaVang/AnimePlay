@@ -1,0 +1,230 @@
+{
+    "id": 18252,
+    "type": 2,
+    "name": "家なき子",
+    "name_cn": "咪咪流浪记",
+    "summary": "《咪咪流浪记》（原题：家なき子）是东京电影新社制作的电视动画，共51集，改编自法国作家耶克特·马洛（Hector Malot）原著小说《苦儿流浪记》（Sans famille）。",
+    "nsfw": false,
+    "locked": false,
+    "date": "1977-10-02",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/9b/4f/18252_h5Ick.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/9b/4f/18252_h5Ick.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/9b/4f/18252_h5Ick.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/9b/4f/18252_h5Ick.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/9b/4f/18252_h5Ick.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "咪咪流浪记"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "星仔走天涯",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "51"
+        },
+        {
+            "key": "放送开始",
+            "value": "1977年10月2日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://www.tms-e.co.jp/alltitles/1970s/025101.html"
+        },
+        {
+            "key": "播放电视台",
+            "value": "日本テレビ"
+        },
+        {
+            "key": "播放结束",
+            "value": "1978年10月1日"
+        },
+        {
+            "key": "Copyright",
+            "value": "©︎TMS"
+        },
+        {
+            "key": "原作",
+            "value": "耶克特·马洛"
+        },
+        {
+            "key": "作画监督",
+            "value": "杉野昭夫、(作監輔佐)大橋学"
+        },
+        {
+            "key": "制片人",
+            "value": "武井英彦、山崎敬之"
+        }
+    ],
+    "volumes": 0,
+    "eps": 51,
+    "total_episodes": 51,
+    "rating": {
+        "rank": 1448,
+        "total": 60,
+        "count": {
+            "one": 0,
+            "two": 0,
+            "three": 0,
+            "four": 1,
+            "five": 5,
+            "six": 5,
+            "seven": 16,
+            "eight": 23,
+            "nine": 7,
+            "ten": 3
+        },
+        "score": 7.5
+    },
+    "collection": {
+        "wish": 110,
+        "collect": 93,
+        "doing": 17,
+        "on_hold": 13,
+        "dropped": 18
+    },
+    "tags": [
+        {
+            "name": "TV",
+            "count": 30
+        },
+        {
+            "name": "1977",
+            "count": 18
+        },
+        {
+            "name": "出崎统",
+            "count": 18
+        },
+        {
+            "name": "童年",
+            "count": 16
+        },
+        {
+            "name": "小说改",
+            "count": 10
+        },
+        {
+            "name": "我要我要找我爸爸",
+            "count": 7
+        },
+        {
+            "name": "世界名著改编",
+            "count": 7
+        },
+        {
+            "name": "小林七郎",
+            "count": 7
+        },
+        {
+            "name": "治愈",
+            "count": 4
+        },
+        {
+            "name": "东京movie",
+            "count": 3
+        },
+        {
+            "name": "治愈类",
+            "count": 3
+        },
+        {
+            "name": "出崎統",
+            "count": 3
+        },
+        {
+            "name": "出﨑統",
+            "count": 3
+        },
+        {
+            "name": "日本动画",
+            "count": 2
+        },
+        {
+            "name": "日本",
+            "count": 2
+        },
+        {
+            "name": "动画",
+            "count": 2
+        },
+        {
+            "name": "70年代",
+            "count": 2
+        },
+        {
+            "name": "70s",
+            "count": 2
+        },
+        {
+            "name": "4クール",
+            "count": 1
+        },
+        {
+            "name": "近藤洋介",
+            "count": 1
+        },
+        {
+            "name": "東恒久",
+            "count": 1
+        },
+        {
+            "name": "东京电影新社",
+            "count": 1
+        },
+        {
+            "name": "远古",
+            "count": 1
+        },
+        {
+            "name": "可能会看",
+            "count": 1
+        },
+        {
+            "name": "咪咪流浪记",
+            "count": 1
+        },
+        {
+            "name": "經典向",
+            "count": 1
+        },
+        {
+            "name": "密着マルチ",
+            "count": 1
+        },
+        {
+            "name": "名作剧场",
+            "count": 1
+        },
+        {
+            "name": "1970.80",
+            "count": 1
+        },
+        {
+            "name": "YL",
+            "count": 1
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "小说改"
+    ],
+    "series": false,
+    "main_character_ids": [],
+    "main_characters": []
+}

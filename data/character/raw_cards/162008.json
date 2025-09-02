@@ -1,0 +1,76 @@
+{
+    "id": 162008,
+    "name": "敷島桜子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/be/08/162008_crt_bbSPB.jpg?r=1745805594",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/08/162008_crt_bbSPB.jpg?r=1745805594",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/08/162008_crt_bbSPB.jpg?r=1745805594",
+        "grid": "https://lain.bgm.tv/pic/crt/g/be/08/162008_crt_bbSPB.jpg?r=1745805594"
+    },
+    "summary": "高校２年生のシネフォト部員。\r\n元映画研究部の部長で、さつきとアンの誘いをあっさり承諾し一緒にシネフォト部を立ち上げた。\r\n一見無表情でつかみどころがないが、意外にもノリが良くアクティブ！？\r\n時々飛び出す不思議発言にはさつきとアンが置いてけぼりになる事も……。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "敷岛樱子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "敷島 桜子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しきしま さくらこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shikishima Sakurako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月"
+        },
+        {
+            "key": "身高",
+            "value": "145cm"
+        },
+        {
+            "key": "好きな食べ物",
+            "value": "カツ丼"
+        },
+        {
+            "key": "趣味",
+            "value": "美味しいごはんを食べること"
+        },
+        {
+            "key": "使用カメラ",
+            "value": "スマホ"
+        },
+        {
+            "key": "行きたいところ",
+            "value": "廃墟"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 124,
+        "collects": 318
+    },
+    "anime_ids": [
+        485936
+    ]
+}

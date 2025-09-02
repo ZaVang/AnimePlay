@@ -1,0 +1,91 @@
+{
+    "id": 3815,
+    "name": "天使特警",
+    "image_path": "data/images/anime/3815.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　在未来世界，人类移民宇宙并成立了「宇宙行星联合」。为监察星球间的贸易和关税，以及打击相关犯罪，特别设立「银河商业关税组织」（Galactic Organization of Trade and Tariffs，简称GOTT）。\r\n　　ES Member是「Encounter of Shadow work Member」的简称。拥有各种特殊能力的干员，通常由两人一组执行勤务，其特殊能力强弱依序分G、S、C等级。本作的两位主角，艾克莱尔和琉米艾尔就是从属于GOTT的ES Member。\r\n　　失去部分记忆的主人公・艾克莱尔和拍档・琉米艾尔，在GOTT局长・艾克莉普丝的命令下，为守护银河住民的应有财产与权利而执行着特殊任务。随着故事的推进，艾克莱尔逐渐将记忆取回，同时，这也预示着一个将全银河都卷入的大事件的到来……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "科幻",
+        "百合",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2002-10-08",
+    "rating_rank": 1767,
+    "rating_score": 7.2,
+    "rating_total": 305,
+    "main_character_ids": [
+        2729,
+        2730
+    ],
+    "main_characters": [
+        {
+            "id": 2729,
+            "name": "エクレール",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b7/f1/2729_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/f1/2729_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/f1/2729_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b7/f1/2729_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4512,
+                    "name": "永田亮子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/63/c4/4512_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/c4/4512_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/c4/4512_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/63/c4/4512_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "主に外国ドラマや洋画の吹き替え、ドキュメンタリー番組や情報番組などのナレーションを中心に活動。アニメでは、勝気な少女・清純な少女・母親役・先生役などを演じるが、脇役や端役での出演も多い。\r\n\r\n声優業の傍ら、BS日テレの『Kidsビーンズ』に顔出し出演したり、全国各地で朗読を行ったりしている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 2730,
+            "name": "リュミエール",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/42/1b/2730_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/1b/2730_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/1b/2730_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/42/1b/2730_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4158,
+                    "name": "平野綾",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/03/2e/4158_prsn_3p33N.jpg?r=1565883479",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/2e/4158_prsn_3p33N.jpg?r=1565883479",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/2e/4158_prsn_3p33N.jpg?r=1565883479",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/03/2e/4158_prsn_3p33N.jpg?r=1565883479"
+                    },
+                    "short_summary": "日本爱知县出身的女性声优、舞台女优、歌手。爱好是读书和银装饰品收集。年幼时候在美国生活。\r\n1998年，加入东京儿童剧团，开始参与电视广告等活动。\r\n2006年3月8日，以歌手身份推出第一首单曲《Breakthrough》。\r\n2006年，初次担任动画《凉宫春日的忧郁》主演，其片头曲《冒険でしょでしょ?》、片尾曲《ハレ晴レユカイ》、剧中歌集单曲《涼宮ハルヒの詰合》与个人第三张单曲《明日のプリズム》都创下不错的纪录。2007年担任主演的《幸运☆星》的片头曲《拿去吧！水手服》带起一阵狂热。\r\n2007年获得第一回声优奖新人女优赏，东京国际动画博览会第六回的声优赏。2008年获得声优奖主演女优赏和歌唱赏。\r\n其他代表角色有《死亡笔记》弥海砂、《NANA》芹泽蕾拉、《妖精的尾巴》露西·哈特菲利亚、《白色相簿》森川由绮、《银魂》今井信女、《寄生兽》小右等。\r\n2011年8月12日，宣布将于8月20日退出Space Craft Entertainment和关闭官方fan club“平野塾”。8月21日移籍Grick。\r\n2012年2月13日，在usteam的会员限定节目宣布已签署环球唱片公司。\r\n2011年至今主要发展方向转为音乐剧，出演角色包括《悲惨世界》艾潘妮，《lady bess》伊丽莎白女王等。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

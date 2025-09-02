@@ -1,0 +1,76 @@
+{
+    "id": 35277,
+    "name": "櫻井桃華",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1e/a9/35277_crt_V6yKj.jpg?r=1688968900",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/a9/35277_crt_V6yKj.jpg?r=1688968900",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/a9/35277_crt_V6yKj.jpg?r=1688968900",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1e/a9/35277_crt_V6yKj.jpg?r=1688968900"
+    },
+    "summary": "幼女大小姐偶像，于圣诞节活动登场，神户（该游戏第一个以市行政单位为出身地的偶像）出身。\r\n装扮多和大小姐一样，也喜欢使用大小姐语气说话，比如「贵安！(ごきげんようですわ！)」。没准就是大小姐？\r\n性格充满自信，工作积极，有关于工作方面的对话多以感叹号结尾。但也有希望依靠制作人的幼小任性一面。\r\n金发是染发还是天生，目前不得而知，有可能是混血儿。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "樱井桃华"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "櫻井 桃華"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さくらい ももか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakurai Momoka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月8日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "145cm"
+        },
+        {
+            "key": "体重",
+            "value": "39kg"
+        },
+        {
+            "key": "BWH",
+            "value": "72/53/75"
+        },
+        {
+            "key": "年龄",
+            "value": "12岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 8,
+    "stat": {
+        "comments": 117,
+        "collects": 418
+    },
+    "anime_ids": [
+        376703
+    ]
+}

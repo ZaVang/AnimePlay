@@ -1,0 +1,47 @@
+{
+    "id": 67266,
+    "name": "リムル・ルフト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a7/db/67266_crt_ZF3Nd.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/db/67266_crt_ZF3Nd.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/db/67266_crt_ZF3Nd.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a7/db/67266_crt_ZF3Nd.jpg"
+    },
+    "summary": "　杜雷库·鲁夫的女儿。暗中与基文家长子尼·基文相爱。虽然对父亲的所作所为并不赞同，并帮助尼一起对抗父亲，但是内心还是十分爱戴父亲的，所以个人一直生活在矛盾之中。不过对于母亲露萨却非常厌恶。\r\n\r\n　　几次从拉斯·威恩出逃，不过每次都被父亲派人抓回了拉斯·威恩。虽然贵为公主，但也学习操纵了奥拉战士进行作战。\r\n\r\n　　太平洋决战时独自来到比索托的旗舰基亚·格里号上刺杀背叛父亲杜雷库的母亲露萨，不料却反被露萨用手枪杀害。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "利姆露·鲁夫特"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        },
+        {
+            "key": "种族",
+            "value": "古门"
+        },
+        {
+            "key": "故乡",
+            "value": "拜斯顿·威尔 亚之国 拉斯·威恩城"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 1
+    },
+    "anime_ids": [
+        10402
+    ]
+}

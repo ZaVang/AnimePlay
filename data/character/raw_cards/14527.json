@@ -1,0 +1,48 @@
+{
+    "id": 14527,
+    "name": "クラウス・ヴァルカ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/92/4e/14527_crt_FC6fc.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/4e/14527_crt_FC6fc.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/4e/14527_crt_FC6fc.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/92/4e/14527_crt_FC6fc.jpg"
+    },
+    "summary": "本作品的主角，诺齐亚先锋艇组织的成员，拥有不输大人的飞行记录。因擅长英麦曼回旋（Immelmann turn）与剪式跳跃而被迪奥称做英麦曼。\r\n每天一边工作一边梦想着总有一天要穿越父亲们无法突破的大风暴区，却在将艾儿交付给银之战舰后被卷入世界的大洪流中。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "克劳士·沃卡"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Claus Valca"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://zh.wikipedia.org/wiki/%E6%9C%80%E5%BE%8C%E6%B5%81%E4%BA%A1"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 14
+    },
+    "anime_ids": [
+        921
+    ]
+}

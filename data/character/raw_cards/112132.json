@@ -1,0 +1,56 @@
+{
+    "id": 112132,
+    "name": "円城寺仁",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ed/f4/112132_crt_PDRjl.jpg?r=1719241685",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/f4/112132_crt_PDRjl.jpg?r=1719241685",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/f4/112132_crt_PDRjl.jpg?r=1719241685",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ed/f4/112132_crt_PDRjl.jpg?r=1719241685"
+    },
+    "summary": "モモの幼馴染で初恋相手。イケメンで背が高いが、発言・行動がチャラい。引っ越し先での怪異のため、星子を頼ってやってきた。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "圆城寺仁"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "円城寺 仁"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "えんじょうじ じん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Enjōji Jin"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ジジ、吉吉"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 19,
+        "collects": 23
+    },
+    "anime_ids": [
+        467461
+    ]
+}

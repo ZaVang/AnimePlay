@@ -1,0 +1,107 @@
+{
+    "id": 2162,
+    "name": "うずまきナルト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/91/f5/2162_crt_sSWfn.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/f5/2162_crt_sSWfn.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/f5/2162_crt_sSWfn.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/91/f5/2162_crt_sSWfn.jpg"
+    },
+    "summary": "第一部開始時点で12歳。第二部開始時点で16歳。\r\n\r\n\r\n火の国の隠れ里「木ノ葉隠れ」で暮らし、「火影」になる事を夢見る忍者の少年。\r\n\r\nイタズラ好きの問題児の上、アカデミーでは万年落ちこぼれ。さらには九尾の化け狐を身体に封印されているため里の者達からは忌み嫌われていたが、持ち前の明るさとド根性で実力を伸ばし、次第に里や国を超えて認められていき忍世界を変える存在へと成長する。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "漩涡鸣人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "鳴門"
+                },
+                {
+                    "v": "渦卷鳴門"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "漩涡鸣门"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Naruto Uzumaki"
+                },
+                {
+                    "k": "日文名",
+                    "v": "うずまきナルト"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "うずまき なると"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Uzumaki Naruto"
+                },
+                {
+                    "k": "昵称",
+                    "v": "鳴門"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "10月10日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "145.3cm(12歳)→147.5cm(13歳)→166cm(15～17歳)→180cm(19歳)"
+        },
+        {
+            "key": "体重",
+            "value": "40.1kg(12歳)→40.6kg(13歳)→50.9kg(15～17歳)→？kg(19歳)"
+        },
+        {
+            "key": "忍者登録番号",
+            "value": "012607"
+        },
+        {
+            "key": "好きな食べ物",
+            "value": "一楽のラーメン、おしるこ"
+        },
+        {
+            "key": "嫌いな食べ物",
+            "value": "生野菜"
+        },
+        {
+            "key": "趣味",
+            "value": "イタズラ、花の水やり"
+        },
+        {
+            "key": "引用来源",
+            "value": "dic.pixiv.net/a/うずまきナルト"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 10,
+    "stat": {
+        "comments": 43,
+        "collects": 191
+    },
+    "anime_ids": [
+        2782,
+        3425
+    ]
+}

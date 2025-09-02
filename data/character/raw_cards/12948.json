@@ -1,0 +1,56 @@
+{
+    "id": 12948,
+    "name": "木佐翔太",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fc/66/12948_crt_Dhw9m.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/66/12948_crt_Dhw9m.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/66/12948_crt_Dhw9m.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fc/66/12948_crt_Dhw9m.jpg"
+    },
+    "summary": "30歳、エメラルドの編集者。木原ナツ、森本カナ、水嶋陽子などの担当。小野寺律とは席が隣同士。\r\n高野政宗より年上の童顔。横澤隆史が苦手。男しか好きになったことがなく、そのうえ面食い。\r\n雪名と付き合うまでは、行きずり関係を繰り返していた。雪名とは恋人関係。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "木佐翔太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "きさ しょうた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "kisa syouta"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月14日"
+        },
+        {
+            "key": "身高",
+            "value": "169cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 14,
+    "stat": {
+        "comments": 3,
+        "collects": 23
+    },
+    "anime_ids": [
+        20813
+    ]
+}

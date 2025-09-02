@@ -1,0 +1,48 @@
+{
+    "id": 18158,
+    "name": "ガッツ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/01/b9/18158_crt_8ZE4B.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/b9/18158_crt_8ZE4B.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/b9/18158_crt_8ZE4B.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/01/b9/18158_crt_8ZE4B.jpg"
+    },
+    "summary": "本作の主人公。「黒い剣士」の異名を持つ、右目と左腕を失った全身傷だらけの剣士。黒髪黒眼。首筋に「生贄の烙印」を刻まれたことによって悪霊・妖魔に命を狙われ続けながらも、ゴッドハンドと使徒への復讐のために各地を放浪している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "格斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "噶子"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Guts"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 47,
+        "collects": 222
+    },
+    "anime_ids": [
+        696,
+        388981
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "id": 13100,
+    "name": "五位堂結",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b7/ec/13100_crt_51Zt5.jpg?r=1378924581",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/ec/13100_crt_51Zt5.jpg?r=1378924581",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/ec/13100_crt_51Zt5.jpg?r=1378924581",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b7/ec/13100_crt_51Zt5.jpg?r=1378924581"
+    },
+    "summary": "初出场时是叛逆的大小姐\r\n\r\n2段变身是男装丽人",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "五位堂结"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ごいどう ゆい"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月10日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "50kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B85 W59 H87"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 10,
+    "stat": {
+        "comments": 7,
+        "collects": 25
+    },
+    "anime_ids": [
+        56112
+    ]
+}

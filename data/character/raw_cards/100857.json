@@ -1,0 +1,52 @@
+{
+    "id": 100857,
+    "name": "雪平一果",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c3/9d/100857_crt_vaJNj.jpg?r=1649882222",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c3/9d/100857_crt_vaJNj.jpg?r=1649882222",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c3/9d/100857_crt_vaJNj.jpg?r=1649882222",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c3/9d/100857_crt_vaJNj.jpg?r=1649882222"
+    },
+    "summary": "納野家に居候をする、緑松の看板娘。\r\n仕事ぶりから、和の父より正式な跡継ぎとして認められているほど。\r\n突如、戻ってきた和のことをライバル視する。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雪平一果"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ゆきひら いつか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yukihira Itsuka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月26日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 26,
+    "stat": {
+        "comments": 107,
+        "collects": 471
+    },
+    "anime_ids": [
+        333664
+    ]
+}

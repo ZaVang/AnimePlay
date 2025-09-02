@@ -1,0 +1,72 @@
+{
+    "id": 5561,
+    "name": "バーディー・シフォン・アルティラ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/12/58/5561_crt_aEPUi.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/58/5561_crt_aEPUi.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/58/5561_crt_aEPUi.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/12/58/5561_crt_aEPUi.jpg"
+    },
+    "summary": "联邦调查员，出生于联邦行星西冯。她为了追捕恐怖分子克莉丝提·雷碧而前往地球，有狂战士杀手（狂戦士（バーサーカー）殺し）的称呼。\r\n\r\n芭蒂·西冯属于调整型的阿尔塔人，战斗力非常优秀。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "巴迪·西冯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "芭蒂·西冯"
+                },
+                {
+                    "k": "日文名",
+                    "v": "バーディー・シフォン・アルティラ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Birdy Cephon Altera"
+                },
+                {
+                    "k": "昵称",
+                    "v": "巴迪"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "170cm (旧版)"
+        },
+        {
+            "key": "体重",
+            "value": "52kg (旧版)"
+        },
+        {
+            "key": "BWH",
+            "value": "B88/W60/H86 (旧版)"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 20
+    },
+    "anime_ids": [
+        1194
+    ]
+}

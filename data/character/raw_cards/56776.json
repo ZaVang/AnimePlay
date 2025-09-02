@@ -1,0 +1,62 @@
+{
+    "id": 56776,
+    "name": "志摩リン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/05/38/56776_crt_o44o6.jpg?r=1717694307",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/38/56776_crt_o44o6.jpg?r=1717694307",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/38/56776_crt_o44o6.jpg?r=1717694307",
+        "grid": "https://lain.bgm.tv/pic/crt/g/05/38/56776_crt_o44o6.jpg?r=1717694307"
+    },
+    "summary": "お爺ちゃんの影響でキャンプを始めたソロキャンパー。\r\nなでしこと出会って初めて、誰かとのキャンプを経験する。\r\n野クルには所属していないが、\r\nなでしこのことはちょっと気にかけている。\r\n\r\n\r\n名古屋の出版社で編集者として働く。\r\n営業を経て最近編集部に異動し、タウン情報誌を作っているが自分の企画はまだ通せていない。\r\n休日はバイクでツーリングに行くのが息抜き。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "志摩凛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "志摩 リン"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しま リン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shima Rin"
+                },
+                {
+                    "k": "昵称",
+                    "v": "芝麻凛"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月1日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 1,
+    "stat": {
+        "comments": 195,
+        "collects": 1024
+    },
+    "anime_ids": [
+        262897,
+        207195,
+        266070
+    ]
+}

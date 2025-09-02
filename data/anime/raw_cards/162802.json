@@ -1,0 +1,561 @@
+{
+    "id": 162802,
+    "type": 2,
+    "name": "プリパラ 3rd season",
+    "name_cn": "美妙天堂 第三期",
+    "summary": "一个神秘的名叫朱露露的婴儿突然出现在少女偶像们的身边，最先发现她的真中啦啦因为各种原因自然而然地成为了她的母亲，暂时照顾她，升级为“妈妈”。此外，新系列还将出现神秘的三人偶像组合，更有位超酷新角色登场！啦啦的偶像之路能否一帆风顺呢？",
+    "nsfw": false,
+    "locked": false,
+    "date": "2016-04-05",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/f2/f0/162802_Szbx1.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/f2/f0/162802_Szbx1.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/f2/f0/162802_Szbx1.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/f2/f0/162802_Szbx1.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/f2/f0/162802_Szbx1.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "美妙天堂 第三期"
+        },
+        {
+            "key": "话数",
+            "value": "51"
+        },
+        {
+            "key": "放送开始",
+            "value": "2016年4月5日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期二"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.tv-tokyo.co.jp/anime/pripara/index2.html"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京"
+        },
+        {
+            "key": "其他电视台",
+            "value": "BSジャパン / テレビ北海道 / テレビ愛知 / テレビ大阪 / テレビせとうち / 九州放送 / ニコニコ生放送"
+        },
+        {
+            "key": "播放结束",
+            "value": "2017年3月28日"
+        },
+        {
+            "key": "导演",
+            "value": "森脇真琴"
+        },
+        {
+            "key": "音乐",
+            "value": "斉藤恒芳、石塚玲依"
+        },
+        {
+            "key": "Copyright",
+            "value": "© T-ARTS / syn Sophia / テレビ東京 / PP3製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "タカラトミーアーツ／シンソフィア"
+        },
+        {
+            "key": "动画制作",
+            "value": "タツノコプロ・DONGWOO A&E"
+        },
+        {
+            "key": "企画",
+            "value": "押田裕一、（～第102話）、廣部琢之（第103話～第140話）、森岡俊広、Kim Young Doo；協力：依田健"
+        },
+        {
+            "key": "系列构成",
+            "value": "土屋理敬、森脇真琴"
+        },
+        {
+            "key": "人物设定",
+            "value": "原将治、Cha Sang Hoon"
+        },
+        {
+            "key": "道具设计",
+            "value": "宮川知子、斉藤里枝、仲田美歩、Kim Young Beom"
+        },
+        {
+            "key": "色彩设计",
+            "value": "赤間三佐子"
+        },
+        {
+            "key": "美术设计",
+            "value": "比留間崇、Lee Hoi Young"
+        },
+        {
+            "key": "背景美术",
+            "value": "猿谷勝己、桃内ツトム、齋藤緋沙子"
+        },
+        {
+            "key": "美术监督",
+            "value": "背景監督：Lee Hoi Young"
+        },
+        {
+            "key": "摄影监督",
+            "value": "Huh Tae Hee"
+        },
+        {
+            "key": "剪辑",
+            "value": "坂本雅紀；編集助手：一岡晴美（第103話～第140話）；映像編集：Lee Young Min"
+        },
+        {
+            "key": "音响监督",
+            "value": "長崎行男"
+        },
+        {
+            "key": "音乐制作",
+            "value": "avex pictures"
+        },
+        {
+            "key": "音乐助理",
+            "value": "音楽協力：テレビ東京ミュージック"
+        },
+        {
+            "key": "动画制片人",
+            "value": "後藤広光、Kang Seok Woo"
+        },
+        {
+            "key": "助理制片人",
+            "value": "大庭晋一郎、吉田雄哉、矢橋清志、今村愛子"
+        },
+        {
+            "key": "制片人",
+            "value": "高林庸介、鈴木祐治、実松照晃、Lee Se Eun"
+        },
+        {
+            "key": "系列监督",
+            "value": "チーフディレクター：An Jai Ho"
+        },
+        {
+            "key": "製作",
+            "value": "テレビ東京、プリパラ製作委員会（久保弥、柳澤かえ（～第115話）、駒嵐麻亜沙（第116話～第128話）、中嶋俊介（第129話～）、勝股英夫、番泰之、山下亜佐子、佐川祐子、Kim Young Doo、細川祐司）"
+        },
+        {
+            "key": "演出",
+            "value": "小林浩輔、京極尚彦、黒瀬大輔、今中菜々、野木森達哉、渡辺健一郎、佐藤昌文、伊藤史夫、室谷靖、江島泰男、川村ひろし；プリパラライブ演出：菱田正和、今中菜々、安藤尚也、河野亜矢子、佐藤昌文、國行由里江、渡辺葉；アニメーション演出：Choi Hun Cheol、Jeon Byung Cheol、Park Chi Man、Nam Sung Min、Na Ki Chual"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "川島理沙"
+        },
+        {
+            "key": "音效",
+            "value": "八十正太"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "大久保政雄"
+        },
+        {
+            "key": "分镜",
+            "value": "藤澤俊幸、金﨑貴臣、江島泰男、坂田純一、政木伸一、葛谷直行、山本三輪子、池端隆史、柊陽菜、岡田水樹、佐藤昌文、今中菜々、渡辺健一郎、森脇真琴、京極尚彦、稲垣隆行、米田光宏、川口敬一郎、誌村宏明；ストーリーボード：Choi Hun Cheol、Na Ki Chual、Jeon Byung Cheol、Nam Sung Min、Park Chi Man、An Jai Ho"
+        },
+        {
+            "key": "原画",
+            "value": "岩崎たいすけ、宮川知子、島田さとし、川島尚、袖山麻美、松山正彦、小松達彦、高井理沙、諏訪壮大、國行由里江、渡辺明夫、武田晋一郎、斉藤里枝、前田綾、原西りえ、榎本花子、黒岩園加、前田亜紀"
+        },
+        {
+            "key": "摄影",
+            "value": "柏木健太郎"
+        },
+        {
+            "key": "动画检查",
+            "value": "中野江美"
+        },
+        {
+            "key": "色彩指定",
+            "value": "近藤直登、赤間三佐子"
+        },
+        {
+            "key": "制作进行",
+            "value": "正岡遥、矢野慎太郎、徳野雄士、白恵盡、北本勝、高澤彩奈、林奈美、比後千紘"
+        },
+        {
+            "key": "作画监督",
+            "value": "原将治（OP）；作画監修：斉藤里枝、本多恵美、柚山麻美、川島尚、戸田さやか、加藤照代、榎本花子、小松達彦；作画監督：Song Seung Taik、Song Hyun Ju、Lee Mi Young、Kang Boo Young"
+        },
+        {
+            "key": "构图",
+            "value": "Park Chi Man、Nam Sung Min、Choi Hun Cheol、Na Ki Chual、Jeon Byung Cheol、Kwak Soo Hyun、Lee Se Jong、Jo Jae Hyun、An Jai Ho、Kim Myung Sim、Choi Nak Jin"
+        },
+        {
+            "key": "插入歌演出",
+            "value": "真中らぁら（茜屋日海夏）、南みれぃ（芹澤優）、北条そふぃ（久保田未夢）、東堂シオン（山北早紀）、ドロシー・ウェスト（澁谷梓希）、レオナ・ウェスト（若井友希）、真中のん（田中美海）、月川ちり（大森日雅）、太陽ペッパー（山下七海）、紫京院ひびき（斎賀みつき）、ファルル（赤﨑千夏）、緑風ふわり（佐藤あずさ）、黒須あろま（牧野由依）、白玉みかん（渡部優衣）、ガァルル（真田アサミ）、黄木あじみ（上田麗奈）、北条コスモ（山本希望）、ちゃん子（赤﨑千夏）、ジュリィ（上田麗奈、ジャニス（豊崎愛生）"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "i☆Ris、真中らぁら（茜屋日海夏）、南みれぃ（芹澤優）、北条そふぃ（久保田未夢）、ガァルル（真田アサミ）、のん（田中美海）"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "平朋崇、fu_mou、丸山真由子、森月キャス、片桐周太郎、松井洋平"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "光増ハジメ、fu_mou、丸山真由子、片桐周太郎、桑原聖"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "EFFY、fu_mou、清水武仁、片桐周太郎、酒井拓也"
+        }
+    ],
+    "volumes": 0,
+    "eps": 51,
+    "total_episodes": 51,
+    "rating": {
+        "rank": 1434,
+        "total": 167,
+        "count": {
+            "one": 0,
+            "two": 1,
+            "three": 0,
+            "four": 4,
+            "five": 6,
+            "six": 25,
+            "seven": 53,
+            "eight": 53,
+            "nine": 14,
+            "ten": 11
+        },
+        "score": 7.4
+    },
+    "collection": {
+        "wish": 82,
+        "collect": 280,
+        "doing": 28,
+        "on_hold": 31,
+        "dropped": 35
+    },
+    "tags": [
+        {
+            "name": "偶像",
+            "count": 51
+        },
+        {
+            "name": "TV",
+            "count": 42
+        },
+        {
+            "name": "龙之子",
+            "count": 41
+        },
+        {
+            "name": "2016",
+            "count": 33
+        },
+        {
+            "name": "2016年4月",
+            "count": 29
+        },
+        {
+            "name": "原创",
+            "count": 24
+        },
+        {
+            "name": "幼女向",
+            "count": 24
+        },
+        {
+            "name": "美妙天堂",
+            "count": 22
+        },
+        {
+            "name": "茜屋日海夏",
+            "count": 9
+        },
+        {
+            "name": "子供向",
+            "count": 6
+        },
+        {
+            "name": "百合",
+            "count": 5
+        },
+        {
+            "name": "第三期",
+            "count": 5
+        },
+        {
+            "name": "续作",
+            "count": 5
+        },
+        {
+            "name": "搞笑",
+            "count": 4
+        },
+        {
+            "name": "2016年",
+            "count": 4
+        },
+        {
+            "name": "田中美海",
+            "count": 4
+        },
+        {
+            "name": "续期",
+            "count": 4
+        },
+        {
+            "name": "芹泽优",
+            "count": 3
+        },
+        {
+            "name": "土屋理敬",
+            "count": 3
+        },
+        {
+            "name": "森脇真琴",
+            "count": 3
+        },
+        {
+            "name": "美妙系列",
+            "count": 3
+        },
+        {
+            "name": "タツノコプロ",
+            "count": 3
+        },
+        {
+            "name": "日本",
+            "count": 3
+        },
+        {
+            "name": "Pretty系列",
+            "count": 2
+        },
+        {
+            "name": "安藤尚也",
+            "count": 2
+        },
+        {
+            "name": "已下载",
+            "count": 2
+        },
+        {
+            "name": "2010s",
+            "count": 2
+        },
+        {
+            "name": "森胁真琴",
+            "count": 2
+        },
+        {
+            "name": "TVA",
+            "count": 2
+        },
+        {
+            "name": "补标",
+            "count": 1
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "series": false,
+    "main_character_ids": [
+        27397,
+        27398,
+        27399,
+        27400,
+        27401,
+        27402
+    ],
+    "main_characters": [
+        {
+            "id": 27397,
+            "name": "真中らぁら",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/79/41/27397_crt_XPL33.jpg?r=1620830531",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/79/41/27397_crt_XPL33.jpg?r=1620830531",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/79/41/27397_crt_XPL33.jpg?r=1620830531",
+                "grid": "https://lain.bgm.tv/pic/crt/g/79/41/27397_crt_XPL33.jpg?r=1620830531"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 18076,
+                    "name": "茜屋日海夏",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0f/e5/18076_prsn_deqh2.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/e5/18076_prsn_deqh2.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/e5/18076_prsn_deqh2.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0f/e5/18076_prsn_deqh2.jpg"
+                    },
+                    "short_summary": "日本の女性声優、歌手。\r\n大手レコード会社エイベックスと、声優事務所81プロデュースがタッグを組んで開催した「アニソン・ヴォーカルオーディション」の合格者6名にて結成されたユニット、i☆Risのメンバーとしても活動している。ユニット内でのイメージカラーはパープル。\r\n特技はイラスト描きで、好きなアニメソングは坂本真綾の「ループ」。 スーパー戦隊シリーズが好きで、一番好きな戦隊は「救急戦隊ゴーゴーファイブ」。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27398,
+            "name": "南みれぃ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/73/d9/27398_crt_Mr80m.jpg?r=1620831050",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/d9/27398_crt_Mr80m.jpg?r=1620831050",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/d9/27398_crt_Mr80m.jpg?r=1620831050",
+                "grid": "https://lain.bgm.tv/pic/crt/g/73/d9/27398_crt_Mr80m.jpg?r=1620831050"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10035,
+                    "name": "芹澤優",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/73/98/10035_prsn_czi9z.jpg?r=1688802903",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/98/10035_prsn_czi9z.jpg?r=1688802903",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/98/10035_prsn_czi9z.jpg?r=1688802903",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/73/98/10035_prsn_czi9z.jpg?r=1688802903"
+                    },
+                    "short_summary": "ニックネーム：ゆう\r\nイメージカラー：ブルー\r\n特技：早口言葉\r\n趣味：料理\r\n好きなアニソン：「ガーネット」／奥華子さん\r\n将来の夢：声優・芹澤優として世界中で歌と\r\nセリフを入れ混ぜた 最高のLIVEをすることです。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27399,
+            "name": "北条そふぃ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/30/0b/27399_crt_9QAa9.jpg?r=1620832535",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/0b/27399_crt_9QAa9.jpg?r=1620832535",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/0b/27399_crt_9QAa9.jpg?r=1620832535",
+                "grid": "https://lain.bgm.tv/pic/crt/g/30/0b/27399_crt_9QAa9.jpg?r=1620832535"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 18430,
+                    "name": "久保田未夢",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7f/37/18430_prsn_45P6R.jpg?r=1727538610",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/37/18430_prsn_45P6R.jpg?r=1727538610",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/37/18430_prsn_45P6R.jpg?r=1727538610",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7f/37/18430_prsn_45P6R.jpg?r=1727538610"
+                    },
+                    "short_summary": "大手レコード会社エイベックスと声優事務所81プロデュースがタッグを組んで開催した、「アニソン・ヴォーカルオーディション」の合格者6名にて結成されたユニット「i☆Ris」のメンバーとしても活動している。ユニット内でのイメージカラーはオレンジ。挨拶は「わんわんおー（U＾ω＾）」。\r\n\r\n趣味はアニメ鑑賞[1]。好きなキャラクターは『デュラララ!!』の平和島静雄。\r\n\r\n犬が大好きで挨拶の由来にもなっている。飼いたい犬はドーベルマン。\r\n\r\n工業高校出身で、フォークリフトとアーク溶接の免許を所持している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27400,
+            "name": "東堂シオン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fe/b0/27400_crt_HyT2t.jpg?r=1620835174",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/b0/27400_crt_HyT2t.jpg?r=1620835174",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/b0/27400_crt_HyT2t.jpg?r=1620835174",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fe/b0/27400_crt_HyT2t.jpg?r=1620835174"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 26086,
+                    "name": "山北早紀",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/da/6a/26086_prsn_obPae.jpg?r=1708181801",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/6a/26086_prsn_obPae.jpg?r=1708181801",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/6a/26086_prsn_obPae.jpg?r=1708181801",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/da/6a/26086_prsn_obPae.jpg?r=1708181801"
+                    },
+                    "short_summary": "山北 早紀（やまきた さき、1991年2月28日 - ）は、日本の女性声優、歌手、アイドル。81プロデュース所属。\r\n北海道札幌市出身。身長163cm、血液型はA型。\r\n総合学園ヒューマンアカデミー札幌校パフォーミングアーツカレッジ第5期卒業。大手レコード会社エイベックスと、声優事務所81プロデュースがタッグを組んで開催した「アニソン・ヴォーカルオーディション」の合格者6名にて結成されたユニット、i☆Risのリーダーとしても活動している。ユニット内でのイメージカラーはグリーン。\r\n趣味は一人旅で、松本梨香の「めざせポケモンマスター」を好んでいるという。特技はお菓子作り。\r\n2016年、第10回声優アワードにて、i☆Risの一員として歌唱賞を受賞。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27401,
+            "name": "ドロシー・ウェスト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7b/15/27401_crt_eVK6p.jpg?r=1622131111",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/15/27401_crt_eVK6p.jpg?r=1622131111",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/15/27401_crt_eVK6p.jpg?r=1622131111",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7b/15/27401_crt_eVK6p.jpg?r=1622131111"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 25529,
+                    "name": "澁谷梓希",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b6/8d/25529_prsn_WtsAI.jpg?r=1476497298",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/8d/25529_prsn_WtsAI.jpg?r=1476497298",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/8d/25529_prsn_WtsAI.jpg?r=1476497298",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b6/8d/25529_prsn_WtsAI.jpg?r=1476497298"
+                    },
+                    "short_summary": "日本女性声优、歌手。埼玉县出身。81 PRODUCE所属。\r\n参与艾回唱片公司和81Produce联合举办的「动漫歌曲演唱选拔」，并通过选拔，与其他合格的芹泽优、茜屋日海夏、若井友希、久保田未梦、山北早纪组成组合《i☆Ris》。\r\n2016年，在第10回声优奖中以i☆Ris之名义获得歌唱奖。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27402,
+            "name": "レオナ・ウェスト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2c/a0/27402_crt_xM67M.jpg?r=1622132472",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/a0/27402_crt_xM67M.jpg?r=1622132472",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/a0/27402_crt_xM67M.jpg?r=1622132472",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2c/a0/27402_crt_xM67M.jpg?r=1622132472"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 20215,
+                    "name": "若井友希",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/68/46/20215_prsn_5ibVu.jpg?r=1708184137",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/46/20215_prsn_5ibVu.jpg?r=1708184137",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/46/20215_prsn_5ibVu.jpg?r=1708184137",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/68/46/20215_prsn_5ibVu.jpg?r=1708184137"
+                    },
+                    "short_summary": "日本的女性声优、歌手，岐阜县出身，所属事务所为81 PRODUCE。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

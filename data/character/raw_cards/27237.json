@@ -1,0 +1,56 @@
+{
+    "id": 27237,
+    "name": "藤堂美沙",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/43/c8/27237_crt_N22q2.jpg?r=1675248517",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/43/c8/27237_crt_N22q2.jpg?r=1675248517",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/43/c8/27237_crt_N22q2.jpg?r=1675248517",
+        "grid": "https://lain.bgm.tv/pic/crt/g/43/c8/27237_crt_N22q2.jpg?r=1675248517"
+    },
+    "summary": "CG制作会社スーパーメディア・クリエイションズ勤務。\r\nあおいとは学生時代に一緒にアニメを作っていた仲間で、\r\n一学年後輩。２Dアニメーションに対し重要な役割を占め始めているCGに将来性を感じて入社。社内にて試行錯誤を繰り返している。あおい、絵麻、しずかからは「みーちゃん」、\r\nみどりからは「みー先輩」と呼ばれる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藤堂美沙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "藤堂 美沙"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "とうどう みさ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "職業",
+            "value": "3DCG"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 13,
+        "collects": 117
+    },
+    "anime_ids": [
+        110467
+    ]
+}

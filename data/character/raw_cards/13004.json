@@ -1,0 +1,71 @@
+{
+    "id": 13004,
+    "name": "赤座あかり",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/19/44/13004_crt_gjnmH.jpg?r=1728871300",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/44/13004_crt_gjnmH.jpg?r=1728871300",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/44/13004_crt_gjnmH.jpg?r=1728871300",
+        "grid": "https://lain.bgm.tv/pic/crt/g/19/44/13004_crt_gjnmH.jpg?r=1728871300"
+    },
+    "summary": "因为是个好孩子所以被赐予主人公的宝座，其存在感经常如薄雾般被忽略（流泪）。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "赤座灯里"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Akkariin、Akkarin、Akarin"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あかざ あかり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Akaza Akari"
+                },
+                {
+                    "k": "昵称",
+                    "v": "阿卡林/アッカリ〜ン"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月24日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "153cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 24,
+    "stat": {
+        "comments": 230,
+        "collects": 647
+    },
+    "anime_ids": [
+        28900,
+        14588,
+        127573,
+        136311
+    ]
+}

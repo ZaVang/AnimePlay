@@ -1,0 +1,88 @@
+{
+    "id": 1267,
+    "name": "王牌投手 振臂高挥",
+    "image_path": "data/images/anime/1267.jpg",
+    "points": 8.1,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "　主人公三桥廉，喜爱棒球，初中时依靠爷爷的关系进入校队成为主力投手。毕业后，三桥搬家到其他地方，并进入当地的西浦高中读书。因为初中的阴影，三桥只是旁观着高中棒球部的种种活动。但这个高中的棒球部是个新成立的社团，因此他立即收到队内捕手阿部的邀请。阿部对他的投球赞赏有加，认为他具有超群的控球能力。然而比起这一点，阿部更欣赏三桥与投手这一位置相配的性格。随着其他角色球员的加入，西浦高中棒球部全员集结，开始前进。\r\n",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "运动",
+        "漫画改"
+    ],
+    "date": "2007-04-12",
+    "rating_rank": 196,
+    "rating_score": 8.1,
+    "rating_total": 2022,
+    "main_character_ids": [
+        9026,
+        10832
+    ],
+    "main_characters": [
+        {
+            "id": 9026,
+            "name": "三橋廉",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f9/29/9026_crt_Lqqq0.jpg?r=1398188556",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/29/9026_crt_Lqqq0.jpg?r=1398188556",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/29/9026_crt_Lqqq0.jpg?r=1398188556",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f9/29/9026_crt_Lqqq0.jpg?r=1398188556"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4874,
+                    "name": "代永翼",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f9/f8/4874_prsn_oOgBw.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/f8/4874_prsn_oOgBw.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/f8/4874_prsn_oOgBw.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f9/f8/4874_prsn_oOgBw.jpg"
+                    },
+                    "short_summary": "代永 翼（よなが つばさ、1984年1月15日 - ）は、日本の男性声優。賢プロダクション所属。神奈川県生まれ、茨城県牛久市育ち。妻は同じく声優の西墻由香。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10832,
+            "name": "阿部隆也",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/78/a9/10832_crt_fwnNI.jpg?r=1398188532",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/a9/10832_crt_fwnNI.jpg?r=1398188532",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/a9/10832_crt_fwnNI.jpg?r=1398188532",
+                "grid": "https://lain.bgm.tv/pic/crt/g/78/a9/10832_crt_fwnNI.jpg?r=1398188532"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4724,
+                    "name": "中村悠一",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/78/4724_prsn_7TvWV.jpg"
+                    },
+                    "short_summary": "爱称是ゆうきゃん，由铃村健一命名。英文标记法为‘yuu-kyan’\r\n与声优的杉田智和的私交良好，是在声优界著名的好友。\r\n兴趣是玩游戏、看电影等。\r\n不喜欢吃拉面。喜欢的食物是肉、奶酪、甜食。\r\n2020年10月1日，宣布从Sigma Seven移籍至INTENTION。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

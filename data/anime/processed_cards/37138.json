@@ -1,0 +1,501 @@
+{
+    "id": 37138,
+    "name": "超译百人一首 歌之恋",
+    "image_path": "data/images/anime/37138.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "原作是在NicoNico动画知名的杉田圭（cdm）的漫画出道作。是以百人一首和歌为题材，将紫式部、在原业平、藤原定家等歌人的作品，在平安时代的背景下加入现代流行语和外来语搞笑新译成爱情故事。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2012-07-02",
+    "rating_rank": 1096,
+    "rating_score": 7.4,
+    "rating_total": 989,
+    "main_character_ids": [
+        16571,
+        16572,
+        16573,
+        16574,
+        16575,
+        16576,
+        16577,
+        16578,
+        16579,
+        16580,
+        16581,
+        16582,
+        16583,
+        16585,
+        66853
+    ],
+    "main_characters": [
+        {
+            "id": 16571,
+            "name": "藤原定家",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b3/d2/16571_crt_0wp7N.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/d2/16571_crt_0wp7N.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/d2/16571_crt_0wp7N.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b3/d2/16571_crt_0wp7N.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5209,
+                    "name": "梶裕貴",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/51/73/5209_prsn_bD3dr.jpg?r=1478379077"
+                    },
+                    "short_summary": "ARTSVISION第17期免费新人培育选拔会合格，并且加入了事务所ARTSVISION。\r\n2009年获得第3届声优奖—新人男声优赏，且开始了“G.Addict”的活动。\r\n2012年2月22日以本人的名义开始歌手的活动，发售第一张单曲《sense of wonder》。2012年9月5日发售第二张单曲《Hello！》。\r\n2013年获得第7届声优奖—主演男声优赏。\r\n2013年10月1日，由原来的事务所ARTSVISION转入VIMS。\r\n2014年获得第8届声优奖—主演男声优赏。\r\n\r\n拥有中性的声音，能演出从少年到青年、动物等各式各样的角色。\r\n担任剧团“妄想中毒”的pretty团长。\r\n中小学时代担任过学生会长，有体育或美术被表扬等表现，是个非常有才能的小孩。\r\n声优伙伴或支持者称呼他为“王子”。\r\n和代永翼组成团体“BRAVE WING”。\r\n与寺岛拓笃、堀江一真和阿部敦等四人组成团体“G.Addict”。\r\n性格极其纯良，待人有礼温善。虽然人前很活泼开朗，但其实是个喜欢宁静安逸的人，只有与亲近的人在一起时才会放松的流露真实自我。\r\n不只声音，外型也很中性，现在也还会被误认成女生。本人对此表示否定，表示“内在意外地很有男子气概”。\r\n虽然年轻，但是性格相当认真。寺岛拓笃评价他“面对工作上的态度很严谨”，大亲友下野纮也说：“他真的很可靠，很会待人处世，作为声优也相当优秀。”\r\n\r\n代表作品有《进击的巨人》艾伦·耶格尔、《夜樱四重奏》比泉秋名、《未来都市NO.6》紫苑、《罪恶王冠》樱满集、《七大罪》梅利奥达斯、《加速世界》有田春雪、《魔笛MAGI》阿里巴巴·沙尔贾等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16572,
+            "name": "在原業平",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d2/55/16572_crt_TnJRr.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/55/16572_crt_TnJRr.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/55/16572_crt_TnJRr.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d2/55/16572_crt_TnJRr.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3864,
+                    "name": "諏訪部順一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884"
+                    },
+                    "short_summary": "日本の男性声優、ナレーター、歌手。東京俳優生活協同組合所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16573,
+            "name": "藤原高子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/71/7f/16573_crt_e666I.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/7f/16573_crt_e666I.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/7f/16573_crt_e666I.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/71/7f/16573_crt_e666I.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4895,
+                    "name": "早見沙織",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522"
+                    },
+                    "short_summary": "幼儿园、小学、初中、高中就读于白百合学园，高中时转入都内高中就读。早稻田大学毕业。\r\n在小学4年级的时候知道了“声优”这职业，决心成为声优。\r\n2004年4月，中学1年级时进入日本播音演技研究所少年声优班学习。\r\n在少年声优班第二年的2006年3月，通过I'm Enterprise的选拔考试。第一次工作是《机械女仆》的Drama CD。之后在2007年透过《桃华月惮》动画出道。\r\n清脆的声音是其特征。演技幅度很广的实力派，从幼女到花样年华的少女、文静的角色到活泼的角色、而且还能演出少年角色动物角色。演出的不同角色之间的差别很大。此外歌唱力也有公认的评价。\r\n2008年4月起，因学业缘故，每周只到日本播音演技研究所上一次课。2008年10月3日，首次主持广播节目《ラジオどっとあい 早见沙织のぽじてぃ部〜Sweetsな放课後》。\r\n2015年4月21日，以TV动画《赤发白雪姬》的片头主题歌《やさしい希望》歌手出道。\r\n2016年，在第10回声优奖中获得助演女优奖。\r\n\r\n家庭构成是父亲、母亲。还饲养着兔子。喜欢看警察题材的电视剧，在广播中透露出是电视剧《相棒》系列的FANS。\r\n从4岁开始学弹钢琴，此外还学过绘画、游泳、网球等众多东西，不过唯一持续下来的是弹钢琴，体育类的基本都持续不久。在绘画方面，据说曾在小学生时参加亚洲大赛并获得金奖。\r\n小时候开始就很喜欢唱歌，据说和母亲一起坐车的时候总是跟着车上的播放机大声地唱歌，然后母亲经常会指导她说“刚才走调了”之类的。在爵士乐歌手的母亲的推荐下在中学时就开始学习唱爵士乐。\r\n性格非常稳健，待人很有礼貌。而且在演技上具有很高的意识和才能，在声优前辈和动画制作人员中也有很高的评价。据说同事务所的间岛淳司在收录现场看到刚出道没多久时候的早见时说“看来我们事务所将来也很安泰啊”。\r\n也有天然的一面，曾把洗面奶错当牙膏拿来刷牙，还曾在收录时背后的拉链没拉上就来到录音棚。\r\n与同事务所的山本麻里安一样，因为就读的学校禁止艺术类活动而转校，在声优与学业两付重担艰难前行。\r\n与悠木碧和东山奈央公私关系良好，交往密切。日高里菜曾表示过“超喜欢早见沙织”，两人私交甚密。\r\n在广播节目中有时会模仿黑柳彻子、安东尼奥·猪木、儿玉清等。在《鹡鸰女神》的广播节目《セキレイらじお》中模仿黑柳彻子的段子，并在《鹡鸰女神》DVD第6卷的OVA里被用来作恶搞。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16574,
+            "name": "小野小町",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b5/5a/16574_crt_ILM5m.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/5a/16574_crt_ILM5m.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/5a/16574_crt_ILM5m.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b5/5a/16574_crt_ILM5m.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4893,
+                    "name": "遠藤綾",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d7/68/4893_prsn_mmFDO.jpg?r=1739368057",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/68/4893_prsn_mmFDO.jpg?r=1739368057",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/68/4893_prsn_mmFDO.jpg?r=1739368057",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d7/68/4893_prsn_mmFDO.jpg?r=1739368057"
+                    },
+                    "short_summary": "遠藤 綾（えんどう あや、1980年2月17日 - ）は、日本の女性声優、ナレーター。オフィスPAC所属。\r\n山形県出身。身長160cm、血液型はO型。\r\n\r\n高校卒業後に声優を目指し上京。野沢那智が主宰する現事務所の養成所パフォーミング・アート・センターに入学し、留年を経て卒業。養成所を決めた理由は、親が野沢のことを知っていたため安心だと思ったからと語っている。\r\n初期の出演作としては2002年の『ワンだー・エディ』（第28話）、『魔王ダンテ』（第4話以降）などがある。2005年の『おくさまは女子高生』の堀口かすみ役が最初のレギュラー役出演、2007年の『らき☆すた』の高良みゆき役で知名度を上げて以来、2008年には『マクロスF』のシェリル・ノーム役、『ネオ アンジェリーク』のアンジェリーク役やOVA『舞-乙HiME 0〜S.ifr〜』のレナ・セイヤーズ役などを担当した。\r\nインターネットラジオ番組『Plume物語』内では、水野愛日、河原木志穂と共に声優ユニット・Plume（プリュム）を結成していたが、現在は活動休止中である。\r\nテレビアニメ『らき☆すた』オープニングテーマ『もってけ!セーラーふく』が第12回アニメーション神戸で主題歌賞（ラジオ関西賞）を受賞、2008年、第2回声優アワードにて平野綾、加藤英美里、福原香織と共に歌唱賞を受賞、2009年、第3回声優アワードにて助演女優賞を受賞。\r\n2013年8月8日、自身のブログで結婚を報告した。\r\n養成所時代の頃は演劇が苦手であり、師匠的存在の野沢那智によれば「演劇が嫌だ」と言っていたこともあるという。本人は「芝居はやりたいが、ラブシーンを演じるのが嫌」で、それが原因で卒業させてもらえなかったという逸話もある。野沢はそれに関して「よしじゃあ、ラブシーンのない芝居を作ろう」と語ったこともある。また、本人は元々声優がやりたかったので「声優の前に俳優であれ」という校長の言葉に周囲が重くなり、クラスの中と学校で「声優になりたい人」と言われたときに遠藤だけが手を上げていたという。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16575,
+            "name": "良岑宗貞",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9e/f2/16575_crt_0070R.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/f2/16575_crt_0070R.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/f2/16575_crt_0070R.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9e/f2/16575_crt_0070R.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4977,
+                    "name": "内田夕夜",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/72/22/4977_prsn_dBXz5.jpg?r=1514373819",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/22/4977_prsn_dBXz5.jpg?r=1514373819",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/22/4977_prsn_dBXz5.jpg?r=1514373819",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/72/22/4977_prsn_dBXz5.jpg?r=1514373819"
+                    },
+                    "short_summary": "日本の声優、俳優。劇団俳優座所属。\r\n埼玉県北葛飾郡三郷町（現:三郷市）出身。桐朋学園大学短期大学部演劇科卒。\r\n\r\n起初动画配音比较少参与，在《二十面相少女》为二十面相角色作配音，从而有更多机会参与动画的配音。\r\n主要是海外吹替剧集和电影为主，从泰坦尼克号开始为莱昂纳多·迪卡普里奥出演的角色吹替而所知的声优，同时也是多次声演赖恩·高斯宁的出演作品。\r\n在自己博客公布结婚2008年1月13日结婚，同年8月27日诞下第一个孩子，2011年4月1日发表了第二个孩子出生。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16576,
+            "name": "文屋康秀",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6c/ab/16576_crt_ZNYn4.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/ab/16576_crt_ZNYn4.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/ab/16576_crt_ZNYn4.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6c/ab/16576_crt_ZNYn4.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3837,
+                    "name": "千葉進歩",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/51/cd/3837_prsn_oAC0S.jpg?r=1605806978",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/cd/3837_prsn_oAC0S.jpg?r=1605806978",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/cd/3837_prsn_oAC0S.jpg?r=1605806978",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/51/cd/3837_prsn_oAC0S.jpg?r=1605806978"
+                    },
+                    "short_summary": "千葉 進歩（ちば すすむ、1970年9月13日 - ）は、日本の男性声優。大沢事務所所属。神奈川県出身。血液型はB型。代表作に『キューティーハニーF』（早見青児）、『神風怪盗ジャンヌ』（名古屋稚空/怪盗シンドバット）、『ヒカルの碁』（藤原佐為）、『きらりん☆レボリューション』（村西社長）、『銀魂』（近藤勲）、『彩雲国物語』（柴彰）、『二十面相の娘』（ハンス）、『ヴァンパイア騎士』（一条拓麻）、『戦場のヴァルキュリア』（ウェルキン・ギュンター）、『ダンボール戦機』などがある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16577,
+            "name": "宇都宮頼綱",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f6/37/16577_crt_IR2MR.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/37/16577_crt_IR2MR.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/37/16577_crt_IR2MR.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f6/37/16577_crt_IR2MR.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4262,
+                    "name": "下野紘",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/62/4262_prsn_tbC5r.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/62/4262_prsn_tbC5r.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/62/4262_prsn_tbC5r.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/62/4262_prsn_tbC5r.jpg"
+                    },
+                    "short_summary": "下野 紘は、日本の男性声優。アイムエンタープライズ所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16578,
+            "name": "綏子内親王",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/42/1e/16578_crt_I0XX7.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/1e/16578_crt_I0XX7.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/1e/16578_crt_I0XX7.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/42/1e/16578_crt_I0XX7.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7870,
+                    "name": "宝木久美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f9/c5/7870_prsn_Ks2JX.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/c5/7870_prsn_Ks2JX.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/c5/7870_prsn_Ks2JX.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f9/c5/7870_prsn_Ks2JX.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16579,
+            "name": "在原行平",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b9/c6/16579_crt_Wo4gO.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/c6/16579_crt_Wo4gO.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/c6/16579_crt_Wo4gO.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b9/c6/16579_crt_Wo4gO.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5057,
+                    "name": "遠藤大智",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/79/a3/5057_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/79/a3/5057_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/79/a3/5057_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/79/a3/5057_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16580,
+            "name": "式子内親王",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/46/16580_crt_1BKvg.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/46/16580_crt_1BKvg.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/46/16580_crt_1BKvg.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/46/16580_crt_1BKvg.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3890,
+                    "name": "大原さやか",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/cf/63/3890_prsn_Luylq.jpg?r=1595875512",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/63/3890_prsn_Luylq.jpg?r=1595875512",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/63/3890_prsn_Luylq.jpg?r=1595875512",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/cf/63/3890_prsn_Luylq.jpg?r=1595875512"
+                    },
+                    "short_summary": "声优、播音员、DJ（广播节目主持）\r\n演出从温柔的御姐（《ARIA》艾莉西亚・弗罗伦斯）到妖艳风趣的女性（《XXXHOLiC》壹原侑子）、冷酷好胜的女性（《万花筒之星》蕾拉、《豆芽小文》长谷川遥）等，声线的幅度很大。主要是出演成人女性角色，也经常演母亲角色。此外还演出脱力系（《蜂蜜幸运草》原田理花）以及少年（《Sketchbook ～full color's～》梶原青）、猫等，甚至是夸张的反派角色，演技的幅度也很广。据说是以在心中想好角色设定和性格后自然发出的声音进行表演。\r\n据说一点小事也会去在意，因此容易累积压力。另外会怕生人，想和人交好时总是不能很好的表达，本人为此很烦恼。而且还容易哭。\r\n很不擅长做菜，在广播节目《ぽぽらじ》中さや咖哩・《すごラジ》中蕾拉汁等，做菜的品味广为所知。\r\n另外也不擅长地理。曾说过“日本的都道府县是52个”（《すごラジ》#39），还曾把爱知县弄错说成是名古屋县。结果在《すごラジ》中经常被广桥凉以及听众把这些话题搬出来逗她。之后在《すごラジ》#48时听众送来《傻瓜日本地図》（ISBN 4774121258），然后在《すごラジ》#51时说看了那个地图，引起了相当的反响，使该书在AMAZON的销售排行榜上的顺位上升了。\r\n在《ぽぽラジ》中桃井晴子说在死海中游泳过时透露说不会游泳。因此泳装也停留在学校泳衣，结果从此被拿来当笑话。\r\n很不灵巧，家政课缝东西的作业最多只会缝抹布（因为只会直线的缝）。据说小学时在家政课上曾经弄坏过5台缝纫机（让线缠在一起，把针折断，还有把螺丝弄脱落等）。本人说“自己也不懂为什么会这样不灵巧”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16581,
+            "name": "弘子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/54/5f/16581_crt_zaAAQ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/54/5f/16581_crt_zaAAQ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/54/5f/16581_crt_zaAAQ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/54/5f/16581_crt_zaAAQ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4428,
+                    "name": "小林沙苗",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/07/54/4428_prsn_9cDQ7.jpg?r=1515082891",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/54/4428_prsn_9cDQ7.jpg?r=1515082891",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/54/4428_prsn_9cDQ7.jpg?r=1515082891",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/07/54/4428_prsn_9cDQ7.jpg?r=1515082891"
+                    },
+                    "short_summary": "小林沙苗（1980年1月26日－）为日本女性声优。出生于静冈县滨松市滨北区。2015年6月1日隶属公司从Production baobab移至Sigma Seven。\r\n\r\n简介\r\n最初的梦想是成为演员，高中时为地区音乐剧团“ステージ97”所属团员，在该剧团东京公演时，被前来观戏的声优立壁和也赏识其演技力并网罗至声优界。\r\n刚出道时因为仍在该地区大学就读的关系，以新干线来往东京通勤工作。\r\n主要工作是外国片、动画、游戏、以及广播剧配音，近期以幼教片、外国片日文配音居多。\r\n声线范围广泛，是少数拥有“七色之声”美名的声优之一，属于高演技力的实力派，从少年到少女、年长的女性到冷艳气质的大姐、角色的人格分裂都能完美诠释。\r\n第一次配音的作品是外国片的一名小配角，台词只有结尾的一段话，因而等候录音等到睡着。在那之后，她多次为有赛琳娜·戈麦斯、美莎·芭顿、河智苑出演的外国片进行日语配音。\r\n有潜水员执照、剑道初段，但为了保护声带而放弃需要用力呐喊的剑道。\r\n在戏剧之外的兴趣是绘画，曾在访谈中提到若没成为声优就会想走美术系。\r\n曾与永野椎菜的企划“ShiinaTactix”合作，录制‘ShiinaTactix-Sana.K’专辑，但随后则婉拒第二张专辑合作计划。\r\n\r\n交友关系\r\n和铃村健一、樱井孝宏在工作上有多次合作因此成为好友。\r\n与松来未祐交情深厚，曾在生日时一同前往东京迪斯尼乐园庆祝。在出演《D.Gray-man》之后，也与饰演利娜莉一角的伊藤静相互结识。\r\n与丰口惠、水树奈奈、能登麻美子因在《草莓100%》中共演而深交，成为所谓的“草莓聚会（いちご会）”。\r\n\r\n角色佚话\r\n在《草莓100%》中，小林饰演北大路皋月一角，但最初小林所试镜的角色是西野司，反而现在饰演西野司的丰口惠最初试镜的角色是北大路皋月。\r\n在《魔法少女奈叶A's》中，小林为暗之书／Reinforce一角献声，但最初试镜的角色是守护骑士的席格娜，反之现在饰演席格娜的清水香里最初则试镜的角色是暗之书／Reinforce。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16582,
+            "name": "陽成院",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a6/c1/16582_crt_KLCqT.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/c1/16582_crt_KLCqT.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/c1/16582_crt_KLCqT.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a6/c1/16582_crt_KLCqT.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4166,
+                    "name": "森久保祥太郎",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/21/ba/4166_prsn_pi1o3.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/ba/4166_prsn_pi1o3.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/ba/4166_prsn_pi1o3.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/21/ba/4166_prsn_pi1o3.jpg"
+                    },
+                    "short_summary": "日本的男性声优、演员、歌手。东京都八王子市出生，血型B型，现隶属于VIMS。\r\n带一点鼻音听起来有点“洋腔”的语调使他的声音辨识度极高，轻浮慢悠的口气很有贵族气息，也常接到一些外表看似花花公子实则非常专情的角色。\r\n在音乐方面十分活跃。与声优的石川英郎共组了乐团AN's ALL STARS。也常为友人的剧团担任音乐创作。\r\n演戏剧团“おにぎりスキッパーズ”的成员。\r\n与鸟海浩辅关系不错，两人在2008～2009的跨年夜曾整整两天都待在一起。\r\n2007年2月22日与浅川悠结婚。\r\n2009年1月14日离婚。\r\n2014年7月4日发表再婚消息，对方为一般女性。\r\n\r\n1992年、日本大学第三高等学校卒業、多摩美術大学中退。本格的に声優を始める前はタレント事務所に所属し、小学生の頃在籍したラボ・パーティの先輩達と立ち上げた劇団『おにぎりスキッパーズ』の公演を見た声優業界関係者のスカウトでオーディションを受け、『爆走兄弟レッツ&ゴー!!』のミニ四ファイターで1996年に声優デビュー。1年で最終話を迎えるはずが想像を遥かに超える人気作品に。よってシリーズが長引いてしまい、役者時代世話になった事務所から新たな声優事務所に移籍。以後、アニメ、ゲーム、ラジオパーソナリティ、音楽活動、舞台等様々な分野で活躍している。\r\nシグマ・セブンに在籍の後、現在のアーツビジョン系列事務所『ヴィムス』に移籍。\r\n1998年、声優の石川英郎と共に『あんず』(森久保が唯一食べられた果物)というユニット名で音楽活動を始める。\r\n1999年、バンドメンバーを加えバンド『AN's ALL STARS』結成。同年8月、バンド『Mosquito Milk』結成。\r\n2001年、カプコン セルピュータレーベルよりソロデビュー。\r\n2008年、Lantisより再デビュー。毎年末に開催される「Original Entertainment Paradise“おれパラ”」ではホストの一人としてライブを披露している。\r\n2010年、ソロプロジェクトとして『Buzzy→Bee（バジービー）』結成。\r\n2015年1月、bayfm長寿番組『KEIYOGINKO POWER COUNTDOWN JAPAN HOT 30』の2代目DJとして就任。(初代はバッキー木場。25年で引退。)\r\n2016年、第10回声優アワードで富山敬賞を受賞。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16583,
+            "name": "紀貫之",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/59/86/16583_crt_xS65V.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/86/16583_crt_xS65V.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/86/16583_crt_xS65V.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/59/86/16583_crt_xS65V.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4874,
+                    "name": "代永翼",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f9/f8/4874_prsn_oOgBw.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/f8/4874_prsn_oOgBw.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/f8/4874_prsn_oOgBw.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f9/f8/4874_prsn_oOgBw.jpg"
+                    },
+                    "short_summary": "代永 翼（よなが つばさ、1984年1月15日 - ）は、日本の男性声優。賢プロダクション所属。神奈川県生まれ、茨城県牛久市育ち。妻は同じく声優の西墻由香。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16585,
+            "name": "藤原義孝",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7d/83/16585_crt_ZazN0.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/83/16585_crt_ZazN0.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/83/16585_crt_ZazN0.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7d/83/16585_crt_ZazN0.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3927,
+                    "name": "石田彰",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/75/f0/3927_prsn_PPbE7.jpg?r=1632126400",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/f0/3927_prsn_PPbE7.jpg?r=1632126400",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/f0/3927_prsn_PPbE7.jpg?r=1632126400",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/75/f0/3927_prsn_PPbE7.jpg?r=1632126400"
+                    },
+                    "short_summary": "石田彰，是日本人气一线声优，近几年来在日本各地稳居声优榜前列，在男女老少间都很受欢迎。出道已经近二十年了，声音宜男宜女，是业界少见的可以配女性角色还不易被人察觉的男声优。2009年3月前效力于Mausu Promotion，4月开始是自由身，2012年3月开始他进入了新的事务所ピアレスガーベラ。主要作品：桂小太郎《银魂》、我爱罗《火影忍者》、阿斯兰·萨拉《高达SEED》、渚熏《EVA》、猪八戒《最游记》等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 66853,
+            "name": "むらさきしきぶ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/68/c9/66853_crt_00oWz.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/c9/66853_crt_00oWz.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/c9/66853_crt_00oWz.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/68/c9/66853_crt_00oWz.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4398,
+                    "name": "小林ゆう",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1b/c3/4398_prsn_XMW01.jpg?r=1730732992",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/c3/4398_prsn_XMW01.jpg?r=1730732992",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/c3/4398_prsn_XMW01.jpg?r=1730732992",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1b/c3/4398_prsn_XMW01.jpg?r=1730732992"
+                    },
+                    "short_summary": "配音范围，从少年至美少女，亦或是活力充沛的角色，都没有问题。\r\n当声优以前是个十分活跃的杂志模特，这是一个与众不同的经历。可能因为这样，身高在女声优界中是很高的168cm，只是比170cm以上的本田贵子、汤屋敦子、葛城七穗矮一点。\r\n母亲是插花师傅。亦可能因为这样，对任何事也十分谦虚有礼，众所周知她很平易近人。\r\n对同年、甚至比自己年轻的同事经常也会在名字后加“～さん(先生/小姐)”，虽然如此，但却把比自己大一年的中原麻衣唤做“まいたん”\r\n在广播中，几乎每次也会把手或头碰到麦克风，每次也很热衷于节目中的游戏，无意识地发出喘气声。\r\n喜欢料理。自己有糠床(由米糠和盐混制而成，是做 糠渍け 的主要原料)，用来做糠渍け(一种用米糠拌盐腌的和式小菜)。\r\n为了练习配音和唱歌的技巧，经常独自一人在卡啦ok流连，连卡啦ok的店员们也认得出她的样貌。某日和声优朋友一起唱卡啦ok时，还被店员说了“今天和朋友们一起来真是太好了”。\r\n在决定“魔法老师”将会有演出时开始学习剑道，但现在好像已经放弃了。\r\n因广播节目中游戏的惩罚，曾穿着“魔法老师”中麻帆良学园的校服在新宿站坐地下铁，沿湘南新宿线坐到高崎线深谷站，并在深谷站前唱了“聖なる空の下で”。\r\n看了“魔法老师”漫画第114话“みんながいるからボクがいる”涅吉和刹那对战后，好像有点悲伤地向作者赤松健说“请让刹那胜利吧…”。\r\n2006年5月8日的网上广播“麻帆良学園中等部2-A・ヒミツの放課後 Part2”，为了取材而和佐藤利奈一起来到录音室的赤松健，给小林优体验了一下当助手的感觉而让她在“魔法先生ネギま！”第136话“チーム・ネギ坊主”(单行本第15卷的109页，中日单行本相同)的第1页第7格写下了“もぞもぞ…”和“うじうじ”。\r\n2006年6月20日，名为“White Wing”的fans club成立了。\r\n喜欢的动物是兔子，而且曾经饲养，名叫Nono（ノノ）。另外似乎很满意看到自己配音的刹那在漫画中戴上兔耳cosplay。\r\n2007年2月4日，Saint October的op“Wheel of fortune”pv拍摄完毕后，2月5日凌晨0:00，一众工作人员以及一起拍摄的片冈あづさ，福井裕佳梨为她庆祝生日，给了她一个惊喜。就在把蜡烛吹熄后，一如以往为表感谢而鞠躬的她，碰到了工作人员手拿的蛋糕，把头上戴着的帽子弄脏了，惹得大家都笑了。\r\n2008年获得声优奖女优部门新人赏。\r\n2009年在Animelo Summer Live 2009 与其他“绝望少女达”（野中蓝、新谷良子、小林优、泽城美雪）人员及大槻ケンヂ一起演出动画“绝望老师”的相关曲“人として轴がぶれている”、“空想ルンバ”和“林檎もぎれビーム! ”。其中小林优与泽城美雪在表演时同时进入“疯狂状态”，十分卖力地演出。事后根据小林本人说，唱完三首歌回到了后台之后就晕倒了，其后发现颈亦受伤了，以致9月份的个人首唱会都不能作强烈的颈部运动。\r\n同年冬天与RYO组成2人乐团“Crush Tears”，出现第一首曲“闪光の瞬き”。于2010年2月17日发表此曲。\r\n2010年Crush Tears组合增加2人，现变成四人乐团，新曲为动画“爆丸”相关曲“Communication Breakdown”此曲发售日期为7月7日。\r\n绘画十分的不济，画什么也会变成自己独创的东西，因而被称为“画伯”（大画家）。\r\n2006年6月9日发布在网上广播所画的画（魔法先生ネギま！的登场人物源静奈）时，还因为画作有某方面的危险而被工作人员修正了。\r\n赤松健的日记中对其他声优会在名字后加“さん”（先生/小姐），而小林却是“画伯”。\r\n\r\n2017年12月29日，在个人Twitter上宣布结婚消息。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

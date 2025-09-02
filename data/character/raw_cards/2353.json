@@ -1,0 +1,52 @@
+{
+    "id": 2353,
+    "name": "シモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/31/b0/2353_crt_79DVQ.jpg?r=1621577397",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/31/b0/2353_crt_79DVQ.jpg?r=1621577397",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/31/b0/2353_crt_79DVQ.jpg?r=1621577397",
+        "grid": "https://lain.bgm.tv/pic/crt/g/31/b0/2353_crt_79DVQ.jpg?r=1621577397"
+    },
+    "summary": "この物語の主人公。無口で職人気質なため変わり者扱いされているが、穴掘りの達人としてジーハ村の住人達からは一目置かれている。表に出ることは苦手で、兄貴と慕うカミナの背後に控えている方が性に合う。\r\n穴掘りの最中に小さなドリルを見つけたことが、彼の運命を大きく変えていく…。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "西蒙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "simon"
+                },
+                {
+                    "k": "日文名",
+                    "v": "シモン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Simon"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 37,
+        "collects": 267
+    },
+    "anime_ids": [
+        770
+    ]
+}

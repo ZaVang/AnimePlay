@@ -1,0 +1,68 @@
+{
+    "id": 103,
+    "name": "早乙女アルト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/69/74/103_e5ac660610b44d9b9fed0ff9548_HvIs2.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/74/103_e5ac660610b44d9b9fed0ff9548_HvIs2.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/74/103_e5ac660610b44d9b9fed0ff9548_HvIs2.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/69/74/103_e5ac660610b44d9b9fed0ff9548_HvIs2.jpg"
+    },
+    "summary": "美星学园高校飞行员养成生。美丽的容貌以及长发使他经常被误认为女子。拥有着无比蹭得累的性格。歌舞伎名门出身，因对天空的憧憬，所以背离了父亲的期望，踏上成为飞行员的道路。抱着对Frontier的感情与守护的希望，他加入了SMS小队，乘坐着最新的VF-25与Vajra战斗着。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "早乙女有人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Alto Saotome"
+                },
+                {
+                    "k": "日文名",
+                    "v": "早乙女 有人"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さおとめ アルト"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Saotome Aruto"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2042-07-27"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        },
+        {
+            "key": "声优",
+            "value": "中村悠一"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 2042,
+    "birth_mon": 7,
+    "birth_day": 27,
+    "stat": {
+        "comments": 17,
+        "collects": 40
+    },
+    "anime_ids": [
+        236
+    ]
+}

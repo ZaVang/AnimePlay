@@ -1,0 +1,92 @@
+{
+    "id": 28575,
+    "name": "緒方智絵里",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f2/6a/28575_crt_KsbnN.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/6a/28575_crt_KsbnN.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/6a/28575_crt_KsbnN.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f2/6a/28575_crt_KsbnN.jpg"
+    },
+    "summary": "于横滨区域首次出场，束著双马尾的红发少女。\r\n体型单薄。性格内向，十分害羞。\r\n被选上加入“CINDERELLA PROJECT”的14位偶像候补生之一，与双叶杏、三村加奈子组成3人的偶像组合“CANDY ISLAND”出道发行 CD，主打单曲“Happy x2 Days”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "绪方智绘里"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "おがた ちえり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ogata Chieri"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月11日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "153cm"
+        },
+        {
+            "key": "体重",
+            "value": "42kg"
+        },
+        {
+            "key": "BWH",
+            "value": "79/57/80"
+        },
+        {
+            "key": "年龄",
+            "value": "16岁"
+        },
+        {
+            "key": "兴趣",
+            "value": "收集四叶草"
+        },
+        {
+            "key": "利手",
+            "value": "右手"
+        },
+        {
+            "key": "星座",
+            "value": "双子座"
+        },
+        {
+            "key": "出生地",
+            "value": "三重"
+        },
+        {
+            "key": "卡牌类型",
+            "value": "Cute"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 11,
+    "stat": {
+        "comments": 34,
+        "collects": 74
+    },
+    "anime_ids": [
+        130231
+    ]
+}

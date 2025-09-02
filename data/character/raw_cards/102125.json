@@ -1,0 +1,70 @@
+{
+    "id": 102125,
+    "name": "星野愛久愛海",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c5/3a/102125_crt_I1eZN.jpg?r=1674520069",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/3a/102125_crt_I1eZN.jpg?r=1674520069",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/3a/102125_crt_I1eZN.jpg?r=1674520069",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c5/3a/102125_crt_I1eZN.jpg?r=1674520069"
+    },
+    "summary": "本作的主人公。[mask]转生前是宫崎县乡下的一名名为五郎的妇产科医生。在深交的已经去世的住院少女沙利奈的影响下，成为了偶像团体“B小町”成员之一的星野爱的粉丝。\r\n之后在医院偶然碰到了怀孕的爱来看诊，决定守护她怀孕直到分娩，但在分娩前被歹徒袭击而死亡，转生成为爱的孩子。[/mask]\r\n母亲给予的本名是星野爱久爱海，艺名阿库亚。[mask]因为拥有前世的记忆，在幼儿时期就能进行对话。用成人的思想看护着爱，但成长到一定程度就在母亲的事务所中出道成为童星，利用前世的知识展现出了特殊的才能。[/mask]从母亲那里遗传了右眼的星星。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "星野爱久爱海"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "五郎"
+                },
+                {
+                    "v": "ゴロー"
+                },
+                {
+                    "v": "アクア"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "阿库亚"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ほしの あくあまりん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aqua"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "172cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 105,
+        "collects": 125
+    },
+    "anime_ids": [
+        386809,
+        443428
+    ]
+}

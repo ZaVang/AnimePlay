@@ -1,0 +1,250 @@
+{
+    "id": 799,
+    "name": "悠久之翼",
+    "image_path": "data/images/anime/799.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "这是曾经因遭受地震和大火侵袭，而一度坍塌的街道——音羽。\r\n而这条街现在，犹如从欧洲的童话中飞出来一般，作为非常美丽的街景复苏了。\r\n就像是，将那不吉祥的灾难的记忆掩盖起来一般……。\r\n在这片重生的土地上，一个童话般的恋爱物语开始了…",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "游戏改"
+    ],
+    "date": "2007-10-06",
+    "rating_rank": 275,
+    "rating_score": 7.9,
+    "rating_total": 6327,
+    "main_character_ids": [
+        609,
+        610,
+        611,
+        612,
+        613,
+        614
+    ],
+    "main_characters": [
+        {
+            "id": 609,
+            "name": "新藤千尋",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ab/3f/609_crt_222BX.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/3f/609_crt_222BX.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/3f/609_crt_222BX.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ab/3f/609_crt_222BX.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4714,
+                    "name": "やなせなつみ",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/33/35/4714_prsn_uI533.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/35/4714_prsn_uI533.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/35/4714_prsn_uI533.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/33/35/4714_prsn_uI533.jpg"
+                    },
+                    "short_summary": "やなせ なつみ（1971年5月10日 - ）は、日本の女性声優。旧芸名・柳瀬 洋美（やなせ ひろみ）、柳瀬 なつみ。東京都出身。\r\n関東国際高等学校を経て産業能率短期大学卒業。\r\n東京宝映→青二塾日曜生11期卒業→青二塾本科13期卒業→青二プロダクション→フリー→81プロデュースを経て、2005年8月よりフリー。\r\n少女の役が圧倒的に多いが、その少女たちのキャラクターは様々である。\r\n別名義でシナリオライター、作詞、ディレクション等も行う。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 610,
+            "name": "麻生蓮治",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/18/6f/610_crt_x2rqF.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/6f/610_crt_x2rqF.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/6f/610_crt_x2rqF.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/18/6f/610_crt_x2rqF.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4679,
+                    "name": "高城元気",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/97/78/4679_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/97/78/4679_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/97/78/4679_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/97/78/4679_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "高城 元気（たかぎ もとき、1980年10月4日 - ）は、日本の声優、舞台俳優。アイムエンタープライズ所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 611,
+            "name": "広野紘",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/56/d3/611_crt_jQ3x2.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/d3/611_crt_jQ3x2.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/d3/611_crt_jQ3x2.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/56/d3/611_crt_jQ3x2.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4262,
+                    "name": "下野紘",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/62/4262_prsn_tbC5r.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/62/4262_prsn_tbC5r.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/62/4262_prsn_tbC5r.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/62/4262_prsn_tbC5r.jpg"
+                    },
+                    "short_summary": "下野 紘は、日本の男性声優。アイムエンタープライズ所属。",
+                    "locked": false
+                },
+                {
+                    "id": 4809,
+                    "name": "後藤麻衣",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/62/91/4809_prsn_6JuXu.jpg?r=1515334753",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/91/4809_prsn_6JuXu.jpg?r=1515334753",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/91/4809_prsn_6JuXu.jpg?r=1515334753",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/62/91/4809_prsn_6JuXu.jpg?r=1515334753"
+                    },
+                    "short_summary": "後藤 麻衣（ごとう まい、1982年8月22 - ）は、日本の女性声優。賢プロダクション所属。北海道出身。\r\n2009年3月に、トリトリオフィスから賢プロダクションに移籍し、2012年現在も賢プロダクションに所属している。\r\n\r\n安玖深 音（あぐみ おと）は、日本の女性声優。主にアダルトゲームに声をあてている。\r\n\r\n2006年7月28日に出演作が6本同時発売[注 1]されたという記録を持つ。成瀬未亜とともに非公式ユニット「コロボックルズ」を結成している。愛称はおとちゃん、音ちん、アグミオンなど。\r\n\r\n兄弟はおらず、一人っ子。\r\n愛称は「ごまちゃん」。偽まるにより命名された「GTO」、彼の『時事放談』での発言により広まった「ぷに」や、『乃木坂美夏の麻衣ふぇあれいでぃお!』で投稿メールを発端にプロデューサー陣に広まった「ごっさん」などもある。なお、同番組内のコーナー「あのな、『ふたつ名』言ってみな!」にてふたつ名を募集したところ、「十勝の最小兵器」がふたつ名として認定された。\r\n漢字検定準二級、秘書検定2級を所持している。\r\n好きな食べ物は、鶏肉と卵。\r\n嫌いな食べ物は、メロンと蟹、ホタテ貝。本人曰く「北海道出身だが、北海道の特産物は嫌い」\r\nよく本を読むせいか国語は得意だが数学が苦手。本人曰く「足し算は難しいね。引き算も難しい」。\r\n本人曰くカナヅチ。\r\n自他共に認めるオタクである。\r\n覇王大系リューナイトのファンクラブに所属していたことがある。\r\nLOFT PLUS ONEで行われた大地丙太郎のトークイベントに客として参加していたことがある。\r\n小学5年生の時、大好きだった作品『ここはグリーン・ウッド』のラジオ番組『ここはグリーンウッド放送局』を聞いたのが声優という仕事に興味を持ったきっかけ。\r\nイラストが得意で、アニメ『乃木坂春香の秘密』では次回予告のイラストを、アニメ『乃木坂春香の秘密 ぴゅあれっつぁ♪』では第4話・第9話のイラストを担当した。さらに、『乃木坂美夏の麻衣ふぇあれいでぃお! ねくすとっ!!』のコミックマーケット76で販売したCDのパッケージのイラストも担当している。また、同作品の発祥の声優ユニット「N's」、派生自主活動ユニット「N±」のメンバーでもある。\r\nWebラジオ『麻衣と茉莉也のらじ×ばと！』において、川田紳司によって魂の名前＝後藤 国士無双が名付けられた。\r\n\r\n漢字検定準2級、秘書検定2級を所持している[2]。\r\n\r\n自他共に認めるオタクである。例えば、作品の性質上、他作品のパロディネタが多いテレビアニメ『乃木坂春香の秘密』では、共演者にパロディの元ネタを教えることがあった。また、イラストが得意で、テレビアニメ『乃木坂春香の秘密』では次回予告のイラストを、アニメ『乃木坂春香の秘密 ぴゅあれっつぁ♪』では第4話・第9話のイラストを担当した。さらに、『乃木坂美夏の麻衣ふぇあれいでぃお! ねくすとっ!!』のコミックマーケット76で販売したCDのパッケージのイラストも担当している。なお、同作品の発祥の声優ユニット「N's」、派生自主活動ユニット「N±」のメンバーでもある。\r\n\r\n好きな食べ物は、鶏肉と卵。嫌いな食べ物は、メロンと牡蠣、ホタテ貝。本人曰く「北海道出身だが、北海道の特産物は嫌い」とのこと。\r\n\r\nまた、覇王大系リューナイトのファンクラブに所属していたことがある[3]。\r\n\r\nまた、岩田光央の大ファンで、岩田の握手会に参加した際に自分が声優を目指している事を伝えると、「がんばってくださいね」と励まされたという[4]。\r\n\r\n2008年から2009年の年越しを文化放送で過ごした。2008年12月31日の22時台に『緊急生放送!「ケメコマニアックス!」改めチュー途半端に年越さないぞスペシャル2008』に呼びだされて出演し、途中、自身がパーソナリティーを務める『乃木坂美夏の麻衣ふぇあれいでぃお!』となった。その後、番組の放送終了とともに帰る予定だったが、そのまま次の番組の『超A&G+年越しスペシャル 4時間生でモゥ大変!2009』にも年越し直前から明けて午前3時まで出演した。合計4時間ほどの出演で、どちらも最も長い時間出演していたゲストであった。また、この番組にて憧れの声優である岩田と共演しファンであることを本人に告げている。\r\n\r\n同姓同名のグラビアアイドルが2009年東京都議会議員選挙に出馬した際、両者を混同され、「都議選頑張って」というメッセージをもらったり、所属事務所に取材依頼が来たと自身のブログで明かしている[5][6]。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 612,
+            "name": "宮村みやこ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/42/84/612_crt_M4qCG.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/84/612_crt_M4qCG.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/84/612_crt_M4qCG.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/42/84/612_crt_M4qCG.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5020,
+                    "name": "田口宏子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8c/3a/5020_prsn_tP7Ll.jpg?r=1636505739",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/3a/5020_prsn_tP7Ll.jpg?r=1636505739",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/3a/5020_prsn_tP7Ll.jpg?r=1636505739",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8c/3a/5020_prsn_tP7Ll.jpg?r=1636505739"
+                    },
+                    "short_summary": "田口 宏子（たぐち ひろこ、1974年3月29日 - ）は、日本の女性声優。東京俳優生活協同組合所属。俳協ボイスアクターズスタジオ第8期生（同期に諏訪部順一）。神奈川県出身。おひつじ座。\r\n\r\n夏野 こおり（なつの こおり）は、日本の女性声優。主にアダルトゲームで活動している。\r\n\r\n芸名の由来は、名字は「夏が好き」、名前は「他の人が付けなさそうなのにしたかった」とのこと。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 613,
+            "name": "堤京介",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a7/b2/613_crt_d1fFQ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/b2/613_crt_d1fFQ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/b2/613_crt_d1fFQ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a7/b2/613_crt_d1fFQ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4327,
+                    "name": "泰勇気",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ce/01/4327_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/01/4327_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/01/4327_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ce/01/4327_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                },
+                {
+                    "id": 5636,
+                    "name": "田村睦心",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/39/84/5636_prsn_p449k.jpg?r=1665351736"
+                    },
+                    "short_summary": "日本东京都出身的女性声优，现时隶属 I'm Enterprise。\r\n\r\n日本解说表演研究所毕业。2007年，在电视动画《悠久之翼》中以声优身份出道。2008年，在《Battle Spirits 少年突破马神》中首次担任主演。\r\n嗓音沙哑，多出演动画男主角的少年时期形象的角色。\r\n2014年8月，因为喉咙问题切除了息肉而暂时休息。9月1日在博客上记载康复，9月8日在广播节目中说明情况。\r\n\r\n官方说法上爱好是书法和长笛。从小学1年级开始练习书法，擅长草书和行书。实际上私下里喜欢一个人望着墙壁发呆。\r\n喜欢吃东西和睡觉。喜欢的食物是意大利面、梅干一类的下酒菜。也喜欢喝酒。\r\n喜欢布娃娃。\r\n家中有一个比自己小1岁的弟弟。\r\n昵称是“田村少年”，但是这个名字和自己担任少年役居多没有直接关系。\r\n与共同出演过《Battle Spirits 少年突破马神》、《爱杀宝贝》的赤崎千夏有深交。\r\n把bl游戏藏在书柜的最下层。“其实我根本就没有藏，只是放在那里而已。”",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 614,
+            "name": "新藤景",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/90/eb/614_crt_ZTa2p.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/eb/614_crt_ZTa2p.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/eb/614_crt_ZTa2p.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/90/eb/614_crt_ZTa2p.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4947,
+                    "name": "岡田純子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ea/3b/4947_prsn_26isz.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/3b/4947_prsn_26isz.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/3b/4947_prsn_26isz.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ea/3b/4947_prsn_26isz.jpg"
+                    },
+                    "short_summary": "岡田 純子（おかだ じゅんこ、本名：酒井 純子（さかい じゅんこ、旧姓・岡田）、1973年5月23日 - ）は日本の女性声優。愛知県海部郡蟹江町出身。\r\n\r\n一時期、朶峙 純（たおか じゅん）名義で声優活動をしていた時期がある。\r\n\r\n\r\n1997年1月19日、『センチメンタルグラフティ』の最終オーディション選考会にて安達妙子役に選ばれる。「うさぎ組」と呼ばれる同作の後期採用組6人のうち唯一の、完全な一般公募から選ばれた採用者である。他の出演作に「Wind -a breath of heart-」（藤宮望 役）など。舞台活動などもこなす。\r\n高校を卒業したばかりの当初は劇団21世紀FOXに所属していた。ただし、プロとしての所属というよりも、他の声優養成所での塾生に相当する「研修生」としての所属に近い。その後、マーカスに所属。岡田の場合、一般的にはマーカス以降の所属がプロ活動として認識されている。その後、アクセント→元氣プロジェクトと移り、2009年8月で元氣プロジェクトを退社、9月よりオフィス ワタナベの所属となる。2012年3月でオフィス ワタナベを退社、4月よりKAMプロモーションの所属となり同年内に退所。現在はフリーで活動中。フリー時期の2012年には代々木アニメーション学院の講師にもなっている。\r\n結婚を機に『センチメンタルグラフティ』の安達妙子役（初代・三代目）を有島もゆ（現・有島モユ）に託して降板、一旦休業する。結婚生活が落ち着いてきたころ、それまで演劇一筋の生活で学歴が高卒であることに引け目を感じていたが、大学進学を目指し、見事に合格。当初は短大に入学したが、卒業後に大学に編入し、念願の大学卒業を果たした。なお、出身校は短大・大学共に本人の意向によって非公開となっており、本人ブログにも高校は千葉県、大学は東京と地方名だけ書かれている。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

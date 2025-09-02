@@ -1,0 +1,56 @@
+{
+    "id": 36462,
+    "name": "シルヴィ・アルテ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/69/2e/36462_crt_SKXI7.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/2e/36462_crt_SKXI7.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/2e/36462_crt_SKXI7.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/69/2e/36462_crt_SKXI7.jpg"
+    },
+    "summary": "ナージャにとっては頼れるお姉さん的存在で良き相談相手。一座の歌姫で吟遊詩人のラファエルに悲しい恋をしている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "希薇·亚缇"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Sylvie Arte"
+                },
+                {
+                    "k": "日文名",
+                    "v": "シルヴィ・アルテ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shiruvī Arute"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.toei-anim.co.jp/tv/nadja/frame_chara.html"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        9564
+    ]
+}

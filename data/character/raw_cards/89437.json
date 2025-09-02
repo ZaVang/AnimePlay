@@ -1,0 +1,52 @@
+{
+    "id": 89437,
+    "name": "夏海まなつ／キュアサマー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/25/92/89437_crt_Q6Z7K.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/92/89437_crt_Q6Z7K.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/92/89437_crt_Q6Z7K.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/25/92/89437_crt_Q6Z7K.jpg"
+    },
+    "summary": "本作主角，来自南乃岛的少女，如同常夏的太阳般明亮，各种事都干劲满满的中学一年级生。任何时候都考虑先做当下最重要的事，行动快于思考，是个典型的行动派。为了上中学而从故乡搬到蓝天市，在搬家的那一天遇到了人鱼萝拉，后来与萝拉成为朋友。非常珍惜妈妈送给她的口红。变身亮点是口红。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "夏海真夏／夏日天使"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Natsumi Manatsu／Cure Summer"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月1日"
+        },
+        {
+            "key": "引用来源",
+            "value": "中文维基"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 1,
+    "stat": {
+        "comments": 5,
+        "collects": 16
+    },
+    "anime_ids": [
+        320857
+    ]
+}

@@ -1,0 +1,194 @@
+{
+    "id": 325178,
+    "name": "PUI PUI 天竺鼠车车",
+    "image_path": "data/images/anime/325178.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "舞台はモルモットが車になった世界。\r\n癒し系の車“モルカー”。くりっくりな目と大きな丸いお尻、トコトコ走る短い手足。常にとぼけた顔で走り回るモルカー。渋滞しても、前のモルモットのお尻を眺めているだけで癒されるし、ちょっとしたトラブルがあってもモフモフして可愛いから許せてしまう？！\r\nクルマならではの様々なシチュエーションを中心に、癒しあり、友情あり、冒険あり、ハチャメチャアクションもありのモルだくさんアニメーション！\r\n（于2021年1月5日起逢星期二在东京电视台系列儿童节目《幼儿电视台》（きんだーてれび）内播映。）",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2021-01-05",
+    "rating_rank": 1253,
+    "rating_score": 7.4,
+    "rating_total": 1322,
+    "main_character_ids": [
+        90497,
+        90498,
+        90499,
+        90500,
+        90501,
+        114716
+    ],
+    "main_characters": [
+        {
+            "id": 90497,
+            "name": "ポテト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a3/ef/90497_crt_7IZoz.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a3/ef/90497_crt_7IZoz.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a3/ef/90497_crt_7IZoz.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a3/ef/90497_crt_7IZoz.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 40786,
+                    "name": "モルモット",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e3/ef/40786_prsn_635Z6.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/ef/40786_prsn_635Z6.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/ef/40786_prsn_635Z6.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e3/ef/40786_prsn_635Z6.jpg"
+                    },
+                    "short_summary": "豚鼠（学名：Cavia porcellus），又名天竺鼠、葵鼠、荷兰猪，在动物学的分类是哺乳纲啮齿目豚鼠科豚鼠属。\r\n2021年日本电视定格动画《PUI PUI 天竺鼠车车》的主角「天竺鼠车车」是以天竺鼠为原型，「声优」则是导演自家养的天竺鼠つむぎ（2023年8月因肺炎病故）。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 90498,
+            "name": "シロモ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a1/84/90498_crt_ciC1c.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/84/90498_crt_ciC1c.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/84/90498_crt_ciC1c.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a1/84/90498_crt_ciC1c.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 40786,
+                    "name": "モルモット",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e3/ef/40786_prsn_635Z6.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/ef/40786_prsn_635Z6.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/ef/40786_prsn_635Z6.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e3/ef/40786_prsn_635Z6.jpg"
+                    },
+                    "short_summary": "豚鼠（学名：Cavia porcellus），又名天竺鼠、葵鼠、荷兰猪，在动物学的分类是哺乳纲啮齿目豚鼠科豚鼠属。\r\n2021年日本电视定格动画《PUI PUI 天竺鼠车车》的主角「天竺鼠车车」是以天竺鼠为原型，「声优」则是导演自家养的天竺鼠つむぎ（2023年8月因肺炎病故）。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 90499,
+            "name": "アビー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a4/a0/90499_crt_x8C2w.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/a0/90499_crt_x8C2w.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/a0/90499_crt_x8C2w.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a4/a0/90499_crt_x8C2w.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 40786,
+                    "name": "モルモット",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e3/ef/40786_prsn_635Z6.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/ef/40786_prsn_635Z6.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/ef/40786_prsn_635Z6.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e3/ef/40786_prsn_635Z6.jpg"
+                    },
+                    "short_summary": "豚鼠（学名：Cavia porcellus），又名天竺鼠、葵鼠、荷兰猪，在动物学的分类是哺乳纲啮齿目豚鼠科豚鼠属。\r\n2021年日本电视定格动画《PUI PUI 天竺鼠车车》的主角「天竺鼠车车」是以天竺鼠为原型，「声优」则是导演自家养的天竺鼠つむぎ（2023年8月因肺炎病故）。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 90500,
+            "name": "チョコ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/80/c0/90500_crt_PzCCT.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/c0/90500_crt_PzCCT.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/c0/90500_crt_PzCCT.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/80/c0/90500_crt_PzCCT.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 40786,
+                    "name": "モルモット",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e3/ef/40786_prsn_635Z6.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/ef/40786_prsn_635Z6.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/ef/40786_prsn_635Z6.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e3/ef/40786_prsn_635Z6.jpg"
+                    },
+                    "short_summary": "豚鼠（学名：Cavia porcellus），又名天竺鼠、葵鼠、荷兰猪，在动物学的分类是哺乳纲啮齿目豚鼠科豚鼠属。\r\n2021年日本电视定格动画《PUI PUI 天竺鼠车车》的主角「天竺鼠车车」是以天竺鼠为原型，「声优」则是导演自家养的天竺鼠つむぎ（2023年8月因肺炎病故）。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 90501,
+            "name": "テディ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6d/d9/90501_crt_dUlRO.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6d/d9/90501_crt_dUlRO.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6d/d9/90501_crt_dUlRO.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6d/d9/90501_crt_dUlRO.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 40786,
+                    "name": "モルモット",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e3/ef/40786_prsn_635Z6.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/ef/40786_prsn_635Z6.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/ef/40786_prsn_635Z6.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e3/ef/40786_prsn_635Z6.jpg"
+                    },
+                    "short_summary": "豚鼠（学名：Cavia porcellus），又名天竺鼠、葵鼠、荷兰猪，在动物学的分类是哺乳纲啮齿目豚鼠科豚鼠属。\r\n2021年日本电视定格动画《PUI PUI 天竺鼠车车》的主角「天竺鼠车车」是以天竺鼠为原型，「声优」则是导演自家养的天竺鼠つむぎ（2023年8月因肺炎病故）。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 114716,
+            "name": "ローズ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/50/87/114716_crt_hOOZ9.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/50/87/114716_crt_hOOZ9.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/50/87/114716_crt_hOOZ9.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/50/87/114716_crt_hOOZ9.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

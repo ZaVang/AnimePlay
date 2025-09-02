@@ -1,0 +1,72 @@
+{
+    "id": 36293,
+    "name": "島原エレナ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/55/ee/36293_crt_9qZQS.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/ee/36293_crt_9qZQS.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/ee/36293_crt_9qZQS.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/55/ee/36293_crt_9qZQS.jpg"
+    },
+    "summary": "《偶像大师 百万LIVE!》登场的偶像。Dance属性。\r\n\r\n操着磕磕巴巴的日语，热情奔放的17岁。 \r\n\r\n从小生长在巴西的里约热内卢，直到6岁才去了日本，但是不会讲巴西语（确切地说是巴西·葡萄牙语）。 \r\n\r\n似乎不擅长认汉字，在偶像学院天国中的活动中曾拜托过制作人给汉字标假名。 \r\n\r\n在打招呼方面总被制作人操心，在组合里也总在意想不到的时候犒劳大家，以及不知为何会不顾後果地握住制作人的手，总而言之就是各种各样的随心所欲。 \r\n\r\n做什麽事都是毫无讲究，会说出各种各样的令人担心的话，比如在营业时说：「收到了工作人员发来的邮件。像是要和我做朋友的样子，是不是不能不回信啊？（スタッフの人にメアド渡されちゃったヨー。友达になりたいらしいし丶返信しないとダメかナ？）」 \r\n\r\n因为在巴西生长，十分热爱足球，曾在剧场中提出要举办五人足球赛，对颠球很有自信。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "岛原埃琳娜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Shimabara Elena"
+                },
+                {
+                    "k": "日文名",
+                    "v": "しまばら エレナ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月26日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "47kg"
+        },
+        {
+            "key": "BWH",
+            "value": "85-58-86"
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 26,
+    "stat": {
+        "comments": 13,
+        "collects": 18
+    },
+    "anime_ids": [
+        309807
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "id": 4322,
+    "name": "ポポ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ff/2f/4322_crt_wbyB0.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ff/2f/4322_crt_wbyB0.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ff/2f/4322_crt_wbyB0.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ff/2f/4322_crt_wbyB0.jpg"
+    },
+    "summary": "“一想团”的干部。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "波波"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Popo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 0
+    },
+    "anime_ids": [
+        1625
+    ]
+}

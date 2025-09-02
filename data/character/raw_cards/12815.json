@@ -1,0 +1,44 @@
+{
+    "id": 12815,
+    "name": "ハルカ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/02/f3/12815_crt_zXUlV.jpg?r=1402295247",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/f3/12815_crt_zXUlV.jpg?r=1402295247",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/f3/12815_crt_zXUlV.jpg?r=1402295247",
+        "grid": "https://lain.bgm.tv/pic/crt/g/02/f3/12815_crt_zXUlV.jpg?r=1402295247"
+    },
+    "summary": "小遥（英文：May，日文：ハルカ）是一个在动漫口袋妖怪里出现的虚拟角色，同时亦是《口袋妖怪超世代》的女主角。梦想是成为世界上最伟大的口袋妖怪协调训练家。并拥有火焰鸡、妙蛙花及卡咪龟等众多不同的小精灵。\r\n《口袋妖怪超世代》的女主角，年龄约10岁。橙华市道馆馆主的女儿，是个个性活泼、热情的少女，目标是成为口袋妖怪协调训练家。冒险开始时与火稚鸡成为伙伴，有“丰缘舞姬”之称。每当遇到关于食物的事情时，整个人都会变得很兴奋。造型范本为GBA红、蓝宝石版的女主角，在《口袋妖怪钻石珍珠》登场时换上了电玩绿宝石版的服装。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小遥"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "May"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Haruka"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 47
+    },
+    "anime_ids": [
+        3020
+    ]
+}

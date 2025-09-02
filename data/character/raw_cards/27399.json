@@ -1,0 +1,66 @@
+{
+    "id": 27399,
+    "name": "北条そふぃ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/30/0b/27399_crt_9QAa9.jpg?r=1620832535",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/0b/27399_crt_9QAa9.jpg?r=1620832535",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/0b/27399_crt_9QAa9.jpg?r=1620832535",
+        "grid": "https://lain.bgm.tv/pic/crt/g/30/0b/27399_crt_9QAa9.jpg?r=1620832535"
+    },
+    "summary": "本作女主角。有着玫红色长直发的少女。从8岁开始就担任偶像职务活跃于“Pripara”中。拥有颇高的人气与知名度是学校里同学们的崇拜对象。事实上在没有最爱的「Red Flash」的时候，会变得颓废没干劲，头发也很凌乱不堪，体力极差，能吸引动物。在“Fancy”状态时口头禅是「噗咻~」。此事在支持者面前是最高机密。是个看一遍，就能把乐谱和舞蹈动作就能完全记住的天才。大多生活作息需要姐姐和亲卫队协助，也是名超级路痴。在和啦啦、米蕾组成组合SoLaMi Smile组成组合后，产生了“什么都想自己做一做”的想法。并且逐渐熟悉了要做的事，也参加了歌舞的练习。没有「Red Flash」便会变得「Fancy Mode」的情况持续不变。不过，改变的是：不再过份依赖「Red Flash」而是靠自己力量努力向前的姿态。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "北条苏菲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "北条索菲"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ほくじょうそふぃ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月30日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁"
+        },
+        {
+            "key": "星座",
+            "value": "狮子座"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 30,
+    "stat": {
+        "comments": 9,
+        "collects": 19
+    },
+    "anime_ids": [
+        99748,
+        120186,
+        162802
+    ]
+}

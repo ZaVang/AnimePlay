@@ -1,0 +1,47 @@
+{
+    "id": 67258,
+    "name": "ショウ・ザマ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3c/dc/67258_crt_pR2AJ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/dc/67258_crt_pR2AJ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/dc/67258_crt_pR2AJ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3c/dc/67258_crt_pR2AJ.jpg"
+    },
+    "summary": "故事主人公。从小在富裕的家庭里长大，父亲是著名作家，母亲是教育评论家。但是由于从小缺乏父母的关爱，因此性格十分叛逆，经常半夜驾驶摩托在公路上飞驰。\r\n　　偶然间被召唤到大海与陆地间的异世界拜斯顿·威尔。起初在阿国拉斯·威恩城领主杜雷库手下接受驾驶奥拉战士的训练，但在与基文家的地上女骑士马比露·弗露兹相遇后了解到了事情的真相，决定帮助基文家打败杜雷库。于是逃出了拉斯·威恩城，加入了尼·基文的捷拉纳号部队与杜雷库作战。在战火中与战友马比露相爱。个人持有很强的奥拉力，被称为圣战士。\r\n\r\n　　最后在太平洋上的决战中与夙敌巴恩·巴令斯同归于尽。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "座间翔"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "年龄",
+            "value": "18岁"
+        },
+        {
+            "key": "国籍",
+            "value": "日本"
+        },
+        {
+            "key": "故乡",
+            "value": "日本东京都武藏野市吉祥寺"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 7
+    },
+    "anime_ids": [
+        10402
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "id": 5236,
+    "name": "テイルモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e4/bb/5236_crt_4LLlZ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/bb/5236_crt_4LLlZ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/bb/5236_crt_4LLlZ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e4/bb/5236_crt_4LLlZ.jpg"
+    },
+    "summary": "好奇心非常旺盛且喜欢恶作剧。虽然体型娇小，但却是很贵重的神圣系数码宝贝，拥有与其外表不相称的实力。尾巴上系有作为神圣系证明的神圣环，但若卸下这个神圣环，力量就会降低，导致无法发挥原本的实力。为了保护自己，它装备了复制黄金剑狮兽的资料而得来的长爪。必杀技有驱使长爪来攻击对手的『猫猫拳』，以及用锐利目光操控敌人的『猫眼』。中了这道目光的话就会自己攻击自己。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "迪路兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Tailmon"
+                },
+                {
+                    "k": "韩文名",
+                    "v": "가트몬"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Teirumon"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference/detail.php?directory_name=tailmon"
+        },
+        {
+            "key": "等级",
+            "value": "成熟期"
+        },
+        {
+            "key": "类型",
+            "value": "圣兽型"
+        },
+        {
+            "key": "属性",
+            "value": "疫苗"
+        },
+        {
+            "key": "必杀技",
+            "value": [
+                {
+                    "v": "猫猫拳"
+                },
+                {
+                    "v": "猫眼"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 26
+    },
+    "anime_ids": [
+        3128
+    ]
+}

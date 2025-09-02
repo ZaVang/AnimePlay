@@ -1,0 +1,59 @@
+{
+    "id": 3589,
+    "name": "メーテル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a8/06/3589_crt_LwKRJ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a8/06/3589_crt_LwKRJ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a8/06/3589_crt_LwKRJ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a8/06/3589_crt_LwKRJ.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "梅德尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "梅蒂尔"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "美蒂尔"
+                },
+                {
+                    "k": "日文名",
+                    "v": "メーテル"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Maetel"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 22,
+        "collects": 84
+    },
+    "anime_ids": [
+        10392
+    ]
+}

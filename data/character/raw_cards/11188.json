@@ -1,0 +1,84 @@
+{
+    "id": 11188,
+    "name": "諫山黄泉",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/97/3a/11188_crt_APC9A.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/97/3a/11188_crt_APC9A.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/97/3a/11188_crt_APC9A.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/97/3a/11188_crt_APC9A.jpg"
+    },
+    "summary": "17岁，身高165cm，超灾害对策室所属成员之一。年幼时双亲被恶灵所杀害，谏山奈落收养了黄泉。\r\n    在剑道方面极有天份，同时也有法术才能的天才，被称作神童。\r\n    养父奈落将谏山代代相传的宝刀狮子王交予黄泉，并打算让黄泉继任谏山家家主之位。\r\n    黄泉对处境与自己相似的神乐细心呵护，并教导她法术与剑术，两人情同姊妹。\r\n    对神乐的影响极大，嗜食Pocky、喜欢电玩、对料理拿手也是受她影响。\r\n\r\n环境省自然环境局超自然灾害对策室（通称“超灾对策室”）所属的代理。高中2年级，17岁。 谏山家当家谏山奈落的养女。\r\n被称为神童的用剑高手，宝剑“狮子王”，寄宿着灵兽鵺“乱红莲”。饭纲纪之的未婚妻。将神乐视为最重要的人。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "谏山黄泉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "諫山 黄泉"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いさやま よみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Isayama Yomi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "黄泉姐姐"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月17日"
+        },
+        {
+            "key": "血型",
+            "value": "Rh+AB型"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "BWH",
+            "value": "82/59/86"
+        },
+        {
+            "key": "引用来源",
+            "value": "zh.wikipedia.org"
+        },
+        {
+            "key": "爱好",
+            "value": "Pocky、电玩、料理"
+        },
+        {
+            "key": "武器",
+            "value": "日本刀(狮子王)"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 17,
+    "stat": {
+        "comments": 35,
+        "collects": 246
+    },
+    "anime_ids": [
+        885
+    ]
+}

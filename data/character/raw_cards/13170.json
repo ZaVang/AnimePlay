@@ -1,0 +1,52 @@
+{
+    "id": 13170,
+    "name": "高倉晶馬",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/24/be/13170_crt_LAhiS.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/be/13170_crt_LAhiS.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/be/13170_crt_LAhiS.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/24/be/13170_crt_LAhiS.jpg"
+    },
+    "summary": "高仓家的次男，与哥哥是双胞胎，溺爱妹妹。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高仓晶马"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たかくら しょうま"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takakura Shouma"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1995年3月20日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1995,
+    "birth_mon": 3,
+    "birth_day": 20,
+    "stat": {
+        "comments": 11,
+        "collects": 114
+    },
+    "anime_ids": [
+        18624
+    ]
+}

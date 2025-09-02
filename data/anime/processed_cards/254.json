@@ -1,0 +1,120 @@
+{
+    "id": 254,
+    "name": "混沌武士",
+    "image_path": "data/images/anime/254.jpg",
+    "points": 8.5,
+    "cost": 5,
+    "rarity": "HR",
+    "description": "　　茶居屋里、代官的儿子和随从正在欺负客人，这时候进来一位全身充满野兽气息的流浪武士。在茶居屋工作的风被故意拌倒、茶泼到随从的身上，代官儿子正要砍掉风的手指的时候被无幻救下。另一方面、仁看不惯代官恶意欺压乡民，教训了代官一顿。其后仁在茶居屋碰到正在教训代官儿子的无幻，被无幻当作代官的手下高手而对打了起来。在一阵激烈的打斗后两人不分上下，这时茶居屋被人放火、无幻和仁在火中继续打斗直到失去意识。\r\n　　两人醒来的时候、已经被代官抓住，两人被施加酷刑并定在次日被斩首。晚上风想办法去救他们，但是由於钥匙被不小心弄断了而失败。第二天行刑时、无幻和仁挣脱捆绑杀了代官，但是在重重包围下渐渐体力不支。风适时的利用烟火成功帮助两人逃脱。\r\n　　刚逃出重围的无幻和仁准备分个高低但被风阻止。在投硬币后无幻和仁不得不陪风去寻找“有向日葵味道的武士”，三人的旅程至此开始。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "战斗"
+    ],
+    "date": "2004-05-19",
+    "rating_rank": 39,
+    "rating_score": 8.5,
+    "rating_total": 9707,
+    "main_character_ids": [
+        5019,
+        5020,
+        11558
+    ],
+    "main_characters": [
+        {
+            "id": 5019,
+            "name": "フウ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/53/fd/5019_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/fd/5019_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/fd/5019_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/53/fd/5019_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 740,
+                    "name": "川澄綾子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/05/d0/740_prsn_TqQ7W.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/d0/740_prsn_TqQ7W.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/d0/740_prsn_TqQ7W.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/05/d0/740_prsn_TqQ7W.jpg"
+                    },
+                    "short_summary": "日本女性声优。生于东京，亦有兼任歌唱工作。東邦音楽短期大学毕业。\r\n\r\n在低出生体重儿的危险状况下被生下来，曾说过自己的父母已有了万一的觉悟急急忙忙以“あ”为开头作为名字。出生预定日为5月3日。被亲戚笑“比牛奶球还小”。\r\n在1996年的SME声优大赛中得到代代木动画学院奖。\r\n在《逮捕令》中以妇警D一角初次以动画声优登场，之前已以广告旁白出道。\r\n以《头文字D》中的茂木夏树一角和动画《To Heart》的神岸明一角开始活跃。\r\n在《星界战旗》的拉斐尔选角时从一百名候选人被选拔，配音时发烧发到摄氏40度仍然去配音，结果被音响监督叫她回家去，说“从来没见到这么拼命的声优”。\r\n说“是（はい）”的口音独特。\r\n为少女、幼女、美女、恶女、严肃、搞笑、纯情、傲娇等等各式各样的类型的角色配过音。部分作品中会演唱主题曲或角色曲。\r\n在动画的配音中，比起黄金档、低龄向作品、一般向作品，以深夜动画、萌系动画和美少女动画居多。\r\n被剧本家会川升称为“オーディション荒らし”。\r\n曾以“あやちー（小绫）”这个爱称在fans间流传，但是在业界内现在还用这个爱称称呼的只有过去认识的朋友。其他的还有“绫ちゃん（小绫）”、“あやすみ（绫澄）”、“あやねえ（绫姐）”等。\r\n一般不戴眼镜，极偶尔会在杂志和网络上出现她戴眼镜的照片。但在《PONY CANYON STYLE まるなび!?》的BSQR489版中则有很多她戴眼镜的照片。\r\n因为憧憬岩田光央而进入大泽事务所。\r\n喜欢的很大只的猫。\r\n学生时代曾经是《JoJo的奇妙冒险》的粉丝，后在2012年7月在东京举办的JoJo连载25周年纪念“JoJo展”中与饰演乔纳森・乔斯达的兴津和幸、担任旁白的大川透共同到场。\r\n座右铭是“人間万事塞翁が馬”。\r\n\r\n从3岁起学习钢琴，拥有绝对音感；但因认为平时弹钢琴没有什么意义，几乎只在为まるなび！？HOT TUNE作曲时才会接触钢琴。\r\n兴趣是看棒球比赛，为东京养乐多燕子的球迷。特别是经常将代跑城友博（1999年移籍至阪神虎）的成绩整理在笔记本里。\r\n于PONY CANYON STYLE まるなび！？的第139回（2007年5月22日）中提及自己取得了汽车驾驶执照。\r\n非常喜爱猫，东京父母的家中养有数只。\r\n得意料理是千层面、绫子锅（生天目仁美命名），其中绫子锅在棉花糖会（ましまろ会）中大受好评。\r\n相当害怕昆虫。据说家族旅行时，要去露天温泉的途中看到虫，而发出哀嚎吓到母亲。另外，与能登麻美子一起去旅行的时候，也曾因见到虫而吓得从露天温泉里逃出来。\r\n自认非常喜欢说话，是个健谈的女孩子。\r\n据说即使长时间乘坐电车，也不会在里头睡着。\r\n关于配音，曾提到：“现在想起来，第一次的拍后录音是最紧张的时候。因为紧张，有的时候甚至会说不出话来（笑）。现在总算是已经适应了这种气氛了，而且使我兴奋的是最近挑战的几个全新的角色，也许大家从中能够看到另外一个我呢。能够出演这样一些角色我自己也非常高兴，我希望在30岁、不，40岁以后大家还是象现在一样喜欢我塑造的角色。\r\n\r\n被同事务所的晚辈能登麻美子称呼为“小绫”（绫ちゃん）、而且还私下2人一起去过温泉旅行。\r\n在演出《草莓棉花糖》后，与同剧的声优千叶纱子、折笠富美子及能登麻美子关系良好，因此组成了“棉花糖会（ましまろ会）”，偶尔会相约一起出外活动。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 5020,
+            "name": "ムゲン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b2/8d/5020_crt_anidb.jpg?r=1520567844",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/8d/5020_crt_anidb.jpg?r=1520567844",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/8d/5020_crt_anidb.jpg?r=1520567844",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b2/8d/5020_crt_anidb.jpg?r=1520567844"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4424,
+                    "name": "中井和哉",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/83/45/4424_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/45/4424_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/45/4424_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/83/45/4424_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の男性声優、ナレーター。兵庫県神戸市出身。青二プロダクション所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 11558,
+            "name": "ジン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/59/9d/11558_crt_sGSS5.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/9d/11558_crt_sGSS5.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/9d/11558_crt_sGSS5.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/59/9d/11558_crt_sGSS5.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6230,
+                    "name": "佐藤銀平",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b4/78/6230_prsn_1c4d1.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/78/6230_prsn_1c4d1.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/78/6230_prsn_1c4d1.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b4/78/6230_prsn_1c4d1.jpg"
+                    },
+                    "short_summary": "東京都出身の俳優、声優\r\n演劇集団 円所属。サスペンデッズという劇団の旗揚げメンバーでもある。\r\n\r\n父は同じく俳優の佐藤B作、父の再婚相手であるあめくみちこは継母である。また、『独創者列伝』などを著した佐藤銀平は同姓同名の別人である。\r\n\r\n2008年4月に子供が生まれたが、父・B作が胃ガンの手術を受ける数日前だったという（B作が出演した2008年7月17日放送のTBS系「はなまるマーケット」にて）。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

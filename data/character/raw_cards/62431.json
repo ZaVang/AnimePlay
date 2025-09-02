@@ -1,0 +1,48 @@
+{
+    "id": 62431,
+    "name": "勇利",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/89/ce/62431_crt_Jj9j5.jpg?r=1621608941",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/89/ce/62431_crt_Jj9j5.jpg?r=1621608941",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/89/ce/62431_crt_Jj9j5.jpg?r=1621608941",
+        "grid": "https://lain.bgm.tv/pic/crt/g/89/ce/62431_crt_Jj9j5.jpg?r=1621608941"
+    },
+    "summary": "通称“King of Kings”。MEGALOBOX的绝对王者。\r\n装备着白都企业开发的身体一体型的最新型装甲。\r\n为了回应经营主白都有希子对自己的信任，将自己的一切都投在了MEGALOBOX上。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "勇利"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Yuri"
+                },
+                {
+                    "k": "昵称",
+                    "v": "キング・オブ・キングス(King of Kings)"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 9,
+        "collects": 28
+    },
+    "anime_ids": [
+        227718
+    ]
+}

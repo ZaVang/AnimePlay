@@ -1,0 +1,48 @@
+{
+    "id": 51211,
+    "name": "水野茜",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/09/99/51211_crt_265oI.jpg?r=1492931449",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/99/51211_crt_265oI.jpg?r=1492931449",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/99/51211_crt_265oI.jpg?r=1492931449",
+        "grid": "https://lain.bgm.tv/pic/crt/g/09/99/51211_crt_265oI.jpg?r=1492931449"
+    },
+    "summary": "子どもの頃から走るのが好きで、中学から陸上部に所属。短距離走専門。\r\n転勤族の父親のもと、小５のときに川越に転校してきた。マンション住まい。\r\nひょうきんな父と朗らかな母、２歳上の姉に囲まれて、暢気に育つ。\r\n根がマジメなので勉強はコツコツやっており、学業成績は良好。\r\n一方で内弁慶なところもあり、学校などでは周囲の空気を読むことに必死な面も。\r\n「緊張しい」で、今はイモのゆるキャラのマスコットを緊張ほぐしの\r\nおまじないに使っている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "水野茜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みずの あかね"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mizuno Akane"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 29,
+        "collects": 268
+    },
+    "anime_ids": [
+        207573
+    ]
+}

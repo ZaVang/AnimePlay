@@ -1,0 +1,68 @@
+{
+    "id": 22190,
+    "name": "松本くるみ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e2/ef/22190_crt_6uc5Z.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/ef/22190_crt_6uc5Z.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/ef/22190_crt_6uc5Z.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e2/ef/22190_crt_6uc5Z.jpg"
+    },
+    "summary": "海邦高校2年生。人気漫画家でもある。短期間の間、同居することとなった少年から、自分の漫画が現実から遊離した内容であることを指摘される。漫画のネタを探すために、ちなみの後を追っているうちに彼女と「付き合う」羽目になる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "松本久留美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "松本くるみ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まつもと くるみ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月4日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "１５８釐米"
+        },
+        {
+            "key": "体重",
+            "value": "４８千克"
+        },
+        {
+            "key": "BWH",
+            "value": "85/63/90"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 4,
+    "stat": {
+        "comments": 0,
+        "collects": 5
+    },
+    "anime_ids": [
+        32164
+    ]
+}

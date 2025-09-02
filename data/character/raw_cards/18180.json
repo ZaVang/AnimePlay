@@ -1,0 +1,82 @@
+{
+    "id": 18180,
+    "name": "斎藤楓",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1d/b2/18180_crt_66T1B.jpg?r=1531931893",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/b2/18180_crt_66T1B.jpg?r=1531931893",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/b2/18180_crt_66T1B.jpg?r=1531931893",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1d/b2/18180_crt_66T1B.jpg?r=1531931893"
+    },
+    "summary": "1月16日生，16岁。AB型。于第5话登场，因与葵在登山用品店相遇而认识，跟葵与日向为同高校的女学生。年龄与学年为不明。配戴眼镜及拥有一头乌黑及腰的长直发，葵形容枫为“身材高挑真是好、很潇洒”的女性。因在葵的帮助下确定了自己想购买的睡袋后，与两人就交换了电邮地址，枫亦为葵在日向以外的第一个朋友。拥有纵走等较葵与日向丰富的登山经验，在第5话葵亦与枫商量登哪一座山较好的话题。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "斋藤枫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "齐藤枫"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Maple"
+                },
+                {
+                    "k": "日文名",
+                    "v": "斎藤 楓"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さいとう かえで"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Saitō Kaede"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1997年1月16日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "164cm"
+        },
+        {
+            "key": "体重",
+            "value": "53kg"
+        },
+        {
+            "key": "罩杯",
+            "value": "G→H（动画里为F→G）"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1997,
+    "birth_mon": 1,
+    "birth_day": 16,
+    "stat": {
+        "comments": 9,
+        "collects": 52
+    },
+    "anime_ids": [
+        290980,
+        216310,
+        86670
+    ]
+}

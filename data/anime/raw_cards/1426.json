@@ -1,0 +1,297 @@
+{
+    "id": 1426,
+    "type": 2,
+    "name": "Phantom -Requiem for the Phantom-",
+    "name_cn": "幻灵镇魂曲",
+    "summary": "吾妻玲二是一名普通的日本少年，在来美国洛杉矶的初中毕业旅游期间无意中卷入了一起黑社会的暗杀事件。幸运的是，由于被发现拥有杀手的天赋，他没有被杀人灭口，而是被消去记忆，并由组织中最强的少女杀手Ein训练、成为了超乎常人的杀人机器Zwei。出道后，他的杀手生涯似乎很顺利，但很快他就被卷入了黑社会内部的血腥斗争之中。此后为了自己和所爱之人的未来，Zwei必须做出种种抉择。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2009-04-02",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/29/9f/1426_2E03Q.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/29/9f/1426_2E03Q.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/29/9f/1426_2E03Q.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/29/9f/1426_2E03Q.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/29/9f/1426_2E03Q.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "幻灵镇魂曲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ファントム",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "26"
+        },
+        {
+            "key": "放送开始",
+            "value": "2009年4月2日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期四"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.phantom-r.jp/"
+        },
+        {
+            "key": "播放结束",
+            "value": "2009年9月24日"
+        },
+        {
+            "key": "导演",
+            "value": "真下耕一"
+        },
+        {
+            "key": "原作",
+            "value": "Nitro+；原作剧本：虚淵玄"
+        },
+        {
+            "key": "製作",
+            "value": "Project Phantom"
+        },
+        {
+            "key": "官方网址备份",
+            "value": "https://web.archive.org/web/20120430054238/http://www.phantom-r.jp/index.html"
+        },
+        {
+            "key": "人物设定",
+            "value": "山下喜光、佐々木睦美、菊地洋子、芝美奈子、津幡佳明；ゲスト：天﨑まなむ、門智昭"
+        }
+    ],
+    "volumes": 0,
+    "eps": 26,
+    "total_episodes": 38,
+    "rating": {
+        "rank": 1392,
+        "total": 2463,
+        "count": {
+            "one": 12,
+            "two": 4,
+            "three": 16,
+            "four": 41,
+            "five": 114,
+            "six": 352,
+            "seven": 776,
+            "eight": 779,
+            "nine": 260,
+            "ten": 109
+        },
+        "score": 7.3
+    },
+    "collection": {
+        "wish": 1505,
+        "collect": 3327,
+        "doing": 209,
+        "on_hold": 297,
+        "dropped": 141
+    },
+    "tags": [
+        {
+            "name": "虚渊玄",
+            "count": 806
+        },
+        {
+            "name": "Phantom",
+            "count": 532
+        },
+        {
+            "name": "Nitro+",
+            "count": 405
+        },
+        {
+            "name": "TV",
+            "count": 290
+        },
+        {
+            "name": "杀手",
+            "count": 267
+        },
+        {
+            "name": "2009年4月",
+            "count": 216
+        },
+        {
+            "name": "GAL改",
+            "count": 212
+        },
+        {
+            "name": "2009",
+            "count": 172
+        },
+        {
+            "name": "真下耕一",
+            "count": 152
+        },
+        {
+            "name": "黑田洋介",
+            "count": 113
+        },
+        {
+            "name": "沢城みゆき",
+            "count": 99
+        },
+        {
+            "name": "游戏改",
+            "count": 94
+        },
+        {
+            "name": "BEETRAIN",
+            "count": 84
+        },
+        {
+            "name": "狗血",
+            "count": 81
+        },
+        {
+            "name": "绝望",
+            "count": 72
+        },
+        {
+            "name": "入野自由",
+            "count": 51
+        },
+        {
+            "name": "Ein",
+            "count": 46
+        },
+        {
+            "name": "战斗",
+            "count": 33
+        },
+        {
+            "name": "致郁",
+            "count": 29
+        },
+        {
+            "name": "09年4月",
+            "count": 21
+        },
+        {
+            "name": "黑帮",
+            "count": 17
+        },
+        {
+            "name": "黑暗",
+            "count": 15
+        },
+        {
+            "name": "n+",
+            "count": 15
+        },
+        {
+            "name": "2009年",
+            "count": 13
+        },
+        {
+            "name": "枪战",
+            "count": 10
+        },
+        {
+            "name": "黒田洋介",
+            "count": 10
+        },
+        {
+            "name": "虚淵玄",
+            "count": 10
+        },
+        {
+            "name": "日本",
+            "count": 9
+        },
+        {
+            "name": "动画",
+            "count": 8
+        },
+        {
+            "name": "高垣彩阳",
+            "count": 8
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "游戏改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        1164,
+        1165
+    ],
+    "main_characters": [
+        {
+            "id": 1164,
+            "name": "Ein",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/94/39/1164_crt_s99as.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/94/39/1164_crt_s99as.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/94/39/1164_crt_s99as.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/94/39/1164_crt_s99as.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4757,
+                    "name": "高垣彩陽",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bd/da/4757_prsn_4OzGs.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/da/4757_prsn_4OzGs.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/da/4757_prsn_4OzGs.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bd/da/4757_prsn_4OzGs.jpg"
+                    },
+                    "short_summary": "高垣 彩陽（たかがき あやひ、1985年10月25日 - ）は、日本の声優、歌手、舞台女優。\r\n東京都出身。ミュージックレイン所属。愛称はあやひー、あやひちゃんなど。家族構成では、弟と妹が1人ずついる。\r\n代表作に『戦姫絶唱シンフォギアG』（雪音クリス）、『ガンダム Gのレコンギスタ』（マニィ・アンバサダ）、『ジュエルペット マジカルチェンジ』（ラリマー）などがある。\r\n\r\n2019年8月23日、舞台出演時にスタッフだった男性と結婚したことを発表。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 1165,
+            "name": "Zwei",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/02/ad/1165_crt_GtSoE.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/ad/1165_crt_GtSoE.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/ad/1165_crt_GtSoE.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/02/ad/1165_crt_GtSoE.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4258,
+                    "name": "入野自由",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/49/47/4258_prsn_99973.jpg?r=1552624013",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/47/4258_prsn_99973.jpg?r=1552624013",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/47/4258_prsn_99973.jpg?r=1552624013",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/49/47/4258_prsn_99973.jpg?r=1552624013"
+                    },
+                    "short_summary": "日本の男性声優、俳優、歌手。ジャンクション所属。既婚。\r\n\r\n両親と観に行った劇団四季の舞台に興味を持ったことがきっかけで、4歳の時劇団ひまわりに入団し、その2年後に歴史ドラマ『コルチャック先生』（原題：Korczak）の幼い少年役を演じ俳優デビュー。同劇団には2006年3月まで所属し、ジャンクションへ移籍。\r\n\r\n声優デビュー作は『逮捕しちゃうぞ』のショウ役で、楽しかったことを覚えているという。2001年に公開された『千と千尋の神隠し』（日本歴代興行収入第2位）でメインキャラクターのハク役のオーディションに合格する。同年『パラッパラッパー』のパラッパ（初代）役でテレビアニメ初主演を果たし、2002年の『キングダム ハーツ』で主役のソラを演じ知名度を広げた。2012年時点で芸歴20年を重ねており、2011年頃のインタビューでは「昔は年上ばっかりだったが、最近は自分と同年代の人と共演することが増えた」と語っている。\r\n\r\n2009年6月24日、Kiramuneレーベルから歌手デビュー。\r\n\r\n2010年、明治学院大学経済学部経営学科卒業。同年5月11日、Kiramuneレーベル内新ユニットとして、神谷浩史と「KAmiYU」を結成し、11月6日にデビュー。\r\n\r\n2016年11月30日、翌年1月のソロライブを最後に海外留学のため、活動を一時休業することをブログで発表。\r\n\r\n2021年9月3日、所属事務所ジャンクションの公式サイトにて結婚を報告した。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

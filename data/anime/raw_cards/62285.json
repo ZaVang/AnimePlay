@@ -1,0 +1,539 @@
+{
+    "id": 62285,
+    "type": 2,
+    "name": "プリティーリズム・レインボーライブ",
+    "name_cn": "美妙旋律 Rainbow Live",
+    "summary": "主角彩濑奈露是个只要听音乐就能感受到声音的颜色，想像力丰富的中学二年级女孩，擅长装饰各式小物，梦想是希望能够开一间如“Dear Crown”那样引领时尚潮流的店。\r\n一天，她得知了即将开设的新店铺，将募集会跳绫镜舞蹈的女中学生作店长。奈露也参加了甄选，并在众多参加者中脱颖而出，一路来到了最终面试。只是当奈露正准备跳舞时，眼前却突然展开一片未曾见过的舞台景象，在这里，她遇见了谜一般的少女铃音。\r\n“\t看得见吗？彩虹音樂……\t”\r\n这群能够感知音乐的少女，将掀起一阵《美妙旋律》系列的新旋风！\r\n",
+    "nsfw": false,
+    "locked": false,
+    "date": "2013-04-06",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/da/39/62285_zcb5F.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/da/39/62285_zcb5F.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/da/39/62285_zcb5F.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/da/39/62285_zcb5F.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/da/39/62285_zcb5F.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "美妙旋律 Rainbow Live"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "美妙旋律：彩虹演奏会",
+                    "k": null
+                },
+                {
+                    "v": "星光少女：彩虹舞台",
+                    "k": null
+                },
+                {
+                    "v": "Pretty Rhythm: Rainbow Live",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "51"
+        },
+        {
+            "key": "放送开始",
+            "value": "2013年4月6日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.tv-tokyo.co.jp/anime/prettyrhythm2013/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京系6局、BSジャパン"
+        },
+        {
+            "key": "播放结束",
+            "value": "2014年3月29日"
+        },
+        {
+            "key": "导演",
+            "value": "菱田正和"
+        },
+        {
+            "key": "音乐",
+            "value": "長岡成貢"
+        },
+        {
+            "key": "Copyright",
+            "value": "©T-ARTS / syn Sophia / テレビ東京 / PRR製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "タカラトミーアーツ／シンソフィア"
+        },
+        {
+            "key": "副导演",
+            "value": "小林浩輔（第40话 - 第51话）"
+        },
+        {
+            "key": "主演出",
+            "value": "京極尚彦（プリズムショー演出）"
+        },
+        {
+            "key": "チーフディレクター",
+            "value": "An Jai Ho"
+        },
+        {
+            "key": "系列构成",
+            "value": "井内秀治、坪田文（第40话 - 第51话）"
+        },
+        {
+            "key": "副系列构成",
+            "value": "坪田文（第1话 - 第39话）"
+        },
+        {
+            "key": "人物原案",
+            "value": "OKAMA"
+        },
+        {
+            "key": "人物设定",
+            "value": "松浦麻衣、Cha Sang Hoon"
+        },
+        {
+            "key": "道具设计",
+            "value": "斉藤里枝、中山初絵、小川浩、Kim Young Beom"
+        },
+        {
+            "key": "色彩设计",
+            "value": "赤間三佐子、Yang Min A"
+        },
+        {
+            "key": "美术设计",
+            "value": "比留間崇、Lee Hoi Young"
+        },
+        {
+            "key": "CG 导演",
+            "value": "乙部善弘"
+        },
+        {
+            "key": "摄影监督",
+            "value": "Huh Tae Hee"
+        },
+        {
+            "key": "剪辑",
+            "value": "関一彦"
+        },
+        {
+            "key": "音响监督",
+            "value": "長崎行男"
+        },
+        {
+            "key": "音乐制作",
+            "value": "avex entertainment"
+        },
+        {
+            "key": "动画制片人",
+            "value": "吉田昇一、Na Jin Yong"
+        },
+        {
+            "key": "制片人",
+            "value": "高林庸介、高橋知子（第1話 - 第34話）→三浦直樹（第35話 - 第51話）、久保弥、Ha Hae Ran"
+        },
+        {
+            "key": "动画制作",
+            "value": "タツノコプロ・DONGWOO A&E"
+        },
+        {
+            "key": "製作",
+            "value": "テレビ東京、プリティーリズム・レインボーライブ製作委員会"
+        }
+    ],
+    "volumes": 0,
+    "eps": 51,
+    "total_episodes": 51,
+    "rating": {
+        "rank": 344,
+        "total": 245,
+        "count": {
+            "one": 2,
+            "two": 1,
+            "three": 0,
+            "four": 0,
+            "five": 8,
+            "six": 24,
+            "seven": 45,
+            "eight": 73,
+            "nine": 48,
+            "ten": 44
+        },
+        "score": 8.0
+    },
+    "collection": {
+        "wish": 328,
+        "collect": 386,
+        "doing": 37,
+        "on_hold": 48,
+        "dropped": 50
+    },
+    "tags": [
+        {
+            "name": "TV",
+            "count": 95
+        },
+        {
+            "name": "美妙旋律",
+            "count": 68
+        },
+        {
+            "name": "偶像",
+            "count": 66
+        },
+        {
+            "name": "龙之子",
+            "count": 61
+        },
+        {
+            "name": "2013",
+            "count": 59
+        },
+        {
+            "name": "原创",
+            "count": 51
+        },
+        {
+            "name": "2013年4月",
+            "count": 43
+        },
+        {
+            "name": "幼女向",
+            "count": 32
+        },
+        {
+            "name": "星光少女",
+            "count": 19
+        },
+        {
+            "name": "音乐",
+            "count": 18
+        },
+        {
+            "name": "菱田正和",
+            "count": 16
+        },
+        {
+            "name": "加藤英美里",
+            "count": 15
+        },
+        {
+            "name": "佐仓绫音",
+            "count": 9
+        },
+        {
+            "name": "Naru",
+            "count": 8
+        },
+        {
+            "name": "子供向",
+            "count": 8
+        },
+        {
+            "name": "龙之子Production",
+            "count": 7
+        },
+        {
+            "name": "タツノコプロ",
+            "count": 6
+        },
+        {
+            "name": "日本",
+            "count": 6
+        },
+        {
+            "name": "童年",
+            "count": 4
+        },
+        {
+            "name": "轻百合",
+            "count": 4
+        },
+        {
+            "name": "子供",
+            "count": 3
+        },
+        {
+            "name": "番组",
+            "count": 3
+        },
+        {
+            "name": "美妙系列",
+            "count": 3
+        },
+        {
+            "name": "坪田文",
+            "count": 3
+        },
+        {
+            "name": "2010s",
+            "count": 3
+        },
+        {
+            "name": "前野智昭",
+            "count": 3
+        },
+        {
+            "name": "百合",
+            "count": 3
+        },
+        {
+            "name": "Pretty系列",
+            "count": 2
+        },
+        {
+            "name": "已下载",
+            "count": 2
+        },
+        {
+            "name": "神作",
+            "count": 2
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "series": false,
+    "main_character_ids": [
+        29830,
+        29831,
+        29832,
+        29833,
+        29834,
+        29835,
+        29836
+    ],
+    "main_characters": [
+        {
+            "id": 29830,
+            "name": "彩瀬なる",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5a/03/29830_crt_D7bOO.jpg?r=1593983696",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5a/03/29830_crt_D7bOO.jpg?r=1593983696",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5a/03/29830_crt_D7bOO.jpg?r=1593983696",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5a/03/29830_crt_D7bOO.jpg?r=1593983696"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4850,
+                    "name": "加藤英美里",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/75/4850_prsn_rCSe4.jpg?r=1576158306",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/75/4850_prsn_rCSe4.jpg?r=1576158306",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/75/4850_prsn_rCSe4.jpg?r=1576158306",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/75/4850_prsn_rCSe4.jpg?r=1576158306"
+                    },
+                    "short_summary": "日本女性声优、歌手。东京都福生市出身。81 Produce事务所所属。\r\n\r\n与同事务所的三宅华也并称女性配音员的潜力股。\r\n与青二Production事务所所属的鹿野优以是从高中时代到专门学校认识的好友。\r\n喜欢玩游戏，高中就读美术设计相关科系，原本打算进入游戏公司活用所学，但是最后进入了配音界。\r\n高中三年级时的朋友（不是鹿野优以）从专门学校体验回来后，便邀请鹿野优以和英美里参加配音学校的训练，因而进入了配音员这个工作圈。也因为这样，所以登上了专门学校的宣传手册上。\r\n有近视，有时会在工作的时候戴眼镜。\r\n爱好摄影。\r\n2008年获得第2回声优奖最佳新人女声优奖，歌唱奖。\r\n2008年12月17日发表第一片个人专辑“vivid”。\r\n2012年获得第6回声优奖最佳助演女声优奖。\r\n\r\n个人生活\r\n高校時代は委員会活動がなく、軽音楽部にてドラムを担当していた。\r\nゲームが好きで、ゲーム紹介番組『A&G GAME MASTER GT-R』、『ヴァナTVラジオ』のパーソナリティも務めている。特に『ファイナルファンタジーXI』のファンであり、初めてプレイしたゲームは『エキサイトバイク』であり、いまでも『面白いから』の理由でやり続けている。\r\nお笑い芸人ではさまぁ〜ずのファンである。\r\n幼女から大人の女性まで様々なキャラクターを演じており、時として少年役を担当することもある。2010年の『バカとテストと召喚獣』では中性的な少年の木下秀吉を担当し、同時に秀吉の姉である木下優子も兼任。この二人は双子だが、性格・性別の違うそれぞれを一人で演じ分けた。『ソウルイーター』では、ブレア役で初めてお色気キャラを演じた。また演じる際のコツとしては「息多めに喋る事」とのこと。\r\n近眼のため、アフレコやテレビ出演の時は眼鏡をかける場合がある。\r\n趣味・特技は描画。\r\n\r\n趣事\r\n『今日からマ王!』のドリア役がデビュー作となったが、まだ新人声優だった当時は周囲の人気声優たちの中で萎縮し、その上収録中も緊張のあまり何度もNGを出してしまい、結局居残って収録する羽目になった経験がある。本人はこの経験からプロの声優のすごさを実感したことを語っている。\r\n『ARIA The NATURAL ドラマCD I』のテーマトークキャストクレジットで、小さな頃の夢は「アニメのキャラになること」、具体的には「空を飛んで電撃を放つ女の子」だったと語っている。\r\n『魔法少女まどか☆マギカ』でマスコットキャラクター・キュゥべえ役を演じたが、制作スタッフから一切番組の内容が伝えられず、「ただ可愛く演じてほしい」との要求のまま演じる事になった。しかし、第3話で徐々に腹黒い一面が表に出てくるようになり、「あれ、おかしいぞ」と思うようになった。スタッフに真意を問いただしてからは、真のキュゥべえの心で演じる様になったという。魔法少女もののマスコットキャラ役と悪役は以前からやってみたいと思っていたが、その2つのポジションを兼ね揃えたキュゥべえの役は一石二鳥だった。ただ、正体をわかってからは悪役とは考えず、キュゥべえなりの使命を果たすつもりで演じようと思ったという。\r\n\r\nYouTube频道（经常不定时直播游戏）：\r\nhttps://www.youtube.com/channel/UCerVsOmbT9SukRJ7Tzdc6KA",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 29831,
+            "name": "福原あん",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a1/26/29831_crt_2y9x5.jpg?r=1593984419",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/26/29831_crt_2y9x5.jpg?r=1593984419",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/26/29831_crt_2y9x5.jpg?r=1593984419",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a1/26/29831_crt_2y9x5.jpg?r=1593984419"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10035,
+                    "name": "芹澤優",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/73/98/10035_prsn_czi9z.jpg?r=1688802903",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/98/10035_prsn_czi9z.jpg?r=1688802903",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/98/10035_prsn_czi9z.jpg?r=1688802903",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/73/98/10035_prsn_czi9z.jpg?r=1688802903"
+                    },
+                    "short_summary": "ニックネーム：ゆう\r\nイメージカラー：ブルー\r\n特技：早口言葉\r\n趣味：料理\r\n好きなアニソン：「ガーネット」／奥華子さん\r\n将来の夢：声優・芹澤優として世界中で歌と\r\nセリフを入れ混ぜた 最高のLIVEをすることです。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 29832,
+            "name": "涼野いと",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7f/f3/29832_crt_4n41V.jpg?r=1593983759",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/f3/29832_crt_4n41V.jpg?r=1593983759",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/f3/29832_crt_4n41V.jpg?r=1593983759",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7f/f3/29832_crt_4n41V.jpg?r=1593983759"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7498,
+                    "name": "小松未可子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/47/be/7498_prsn_fq3rD.jpg?r=1740107067",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/be/7498_prsn_fq3rD.jpg?r=1740107067",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/be/7498_prsn_fq3rD.jpg?r=1740107067",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/47/be/7498_prsn_fq3rD.jpg?r=1740107067"
+                    },
+                    "short_summary": "小松未可子，1988年11月11日出生，日本女演员、声优、歌手，三重县桑名市出身。所属事务所Hirata Office，偶像团体いもうと前成员之一。\r\n\r\n个人爱好看电影，听歌曲，5岁起开始学习马林巴琴演奏。\r\n从小受《名侦探柯南》很大的影响，成为了仓木麻衣的粉丝，因为憧憬仓木麻衣而加入艺能界。一个人去唱卡拉ok时会命名为仓木祭。家中贴著几张仓木麻衣的海报。而在看了《樱兰高校男公关部》中斋藤彩夏的表演后，意识到自己希望从事声优工作。\r\n\r\n代表作品有《暴力宇宙海贼》的加藤茉莉香，《来自凪之明日》的潮留美海。\r\n\r\n2003年加入偶像团体いもうと，成为其成员之一。\r\n2007年9月，退出いもうと。\r\n2009年11月，移籍到Hirata Office，开始了演员的职业生涯。\r\n2010年4月，首次在TV动画《HEROMAN》中出演乔瑟夫·卡达·乔伊·琼斯一角，正式开始了声优的职业生涯。\r\n2012年4月25日，个人首支单曲《Black Holy》发售，作为歌手出道。\r\n2012年11月7日，个人第二支单曲《冷たい部屋、一人/夏至の果実》发售。\r\n2013年7月24日，第三张单曲《终わらないメロディーを歌いだしました。》发售。\r\n2013年12月25日，第四张单曲《虹の約束》发售。\r\n2014年2月22日，第五张单曲《Sail away》发售。\r\n\r\n2020年5月12日，宣布与同为声优的前野智昭结婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 29833,
+            "name": "荊りんね",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/37/24/29833_crt_9hFd5.jpg?r=1599169419",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/24/29833_crt_9hFd5.jpg?r=1599169419",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/24/29833_crt_9hFd5.jpg?r=1599169419",
+                "grid": "https://lain.bgm.tv/pic/crt/g/37/24/29833_crt_9hFd5.jpg?r=1599169419"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5745,
+                    "name": "佐倉綾音",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929"
+                    },
+                    "short_summary": "佐仓绫音（さくら あやね）是日本的女性声优，1994年1月29日出生及成长于东京都；曾为[url=www.imenterprise.jp]I'm Enterprise[/url]旗下声优，2022年2月1日移籍至[url=www.aoni.co.jp]青二Production[/url]。\r\n\r\n[b]经历[/b]\r\n中学时所属剧团东俳，[url=https://nichinare.com/]日本播音演技研究所[/url]出身。《Dottoai广播》第45代主持人。2011年，在TV动画《[url=https://bgm.tv/subject/8990]食梦者玛利[/url]》出演[url=https://bgm.tv/character/10571]玛利·梦魔[/url]，首次出演主角。同年在剧场版动画《[url=https://bgm.tv/subject/12544]萤火之森[/url]》中出演[url=https://bgm.tv/character/15896]竹川萤[/url]，首次担当主役。\r\n其他代表作品有《[url=https://bgm.tv/subject/88287]请问您今天要来点兔子吗？[/url]》[url=https://bgm.tv/character/23647]保登心爱[/url]、《[url=https://bgm.tv/subject/78405]悠哉日常大王[/url]》[url=https://bgm.tv/character/21370]越谷夏海[/url]、《[url=https://bgm.tv/subject/37685]心理测量者[/url]》[url=https://bgm.tv/character/18476]霜月美佳[/url]、《[url=https://bgm.tv/subject/54433]我的青春恋爱物语果然有问题[/url]》[url=https://bgm.tv/character/26090]一色彩羽[/url]、《[url=https://bgm.tv/subject/120925]夏洛特[/url]》[url=https://bgm.tv/character/29511]友利奈绪[/url]、《[url=https://bgm.tv/subject/100444]四月是你的谎言[/url]》[url=https://bgm.tv/character/26004]泽部椿[/url]等。\r\n\r\n[b]其他[/b]\r\n昵称“あやねる（ayaneru）”是由[url=https://bgm.tv/person/4950]冈本信彦[/url]（《[url=https://bgm.tv/subject/8990]食梦者玛利[/url]》的合演者）给予的。关于昵称（本人说）“没什么特别的”。“あやねる”只是“绫音”和“睡觉（寝る）”的组合。\r\n完全的百合脑、百合控，非常喜欢[url=https://bgm.tv/person/4765]花泽香菜[/url]。\r\n爱好读书，特技是插图。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 29834,
+            "name": "蓮城寺べる",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/06/15/29834_crt_5bWPi.jpg?r=1593985526",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/15/29834_crt_5bWPi.jpg?r=1593985526",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/15/29834_crt_5bWPi.jpg?r=1593985526",
+                "grid": "https://lain.bgm.tv/pic/crt/g/06/15/29834_crt_5bWPi.jpg?r=1593985526"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4856,
+                    "name": "戸松遥",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7e/b2/4856_prsn_TEvPG.jpg?r=1590322711",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/b2/4856_prsn_TEvPG.jpg?r=1590322711",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/b2/4856_prsn_TEvPG.jpg?r=1590322711",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7e/b2/4856_prsn_TEvPG.jpg?r=1590322711"
+                    },
+                    "short_summary": "日本的女性声优、演员、歌手。Music Ray'n所属。\r\n\r\n拥有极为优秀的变换声线能力，能娴熟地配好绝大多数类型的角色，并且不同类型的角色之间的声线差异很大，经常给人不是同一声优配音的感觉，在《神薙》，《出包王女》，《刀剑神域》等多部作品中都有其声线千变万化的具体表现，也在一些作品中一人演绎多名角色。\r\n擅长语速较快的女性角色，符合这个范围的角色如活泼明朗的少女角色，成熟的角色，神秘的角色，纯情的角色，天然呆，以及傲娇等各种角色都能熟练演绎，也能配无口角色（如丸井一叶）或沉默寡言的角色，并且配的大多数都是主要角色。\r\n唱功出众，在很多作品中都有献唱，唱OP和ED的作品也不少。如《神薙》OP&ED、《夏色奇迹》OP（以sphere组合出现）、《花开物语》ED1（以sphere组合出现）、《刀剑神域》ED1、《邻座的怪同学》OP。据本人说工作时不去考虑太多，凭直觉来给角色配音，且习惯将剧本与台词背熟，工作时很少看剧本。\r\n除了以“Sphere”的名义进行团体音乐活动之外，个人名义的演出与唱片也陆续地在进行。像是自己本身就在参与演出的“神薙”中担任片头曲与片尾曲的演唱，而片头曲的‘motto☆派手にね!’在发售之时还达成过当周排行榜第10名，获得了更大的注目。\r\n会依据音乐曲风的不同决定用什么样的嗓音唱歌，对她本人来说这有一种接近演戏时的感觉。\r\n\r\n2005年-2006年，在举行的Music Ray'n超级声优选拔中合格，开始作为声优活动。\r\n2006年1月份，在第六届的“东宝シンデレラ（东宝灰姑娘选拔）”中，从3万7443人里脱颖而出，是能进入最终选拔中15人的其中一人。\r\n2007年，在动画《神曲奏界》出演女主角克缇卡露蒂·阿巴·拉格兰杰丝后获得各界注目，参加动画演出的机会也由此增加。\r\n2007年11月16日，在日本PLAYLOG上开设个人博客以记录生活点滴，2010年4月28日发表博客搬家的通告，在ameblo上建立了新的博客，并将PLAYLOG时的内容转移到新博客内。\r\n2008年高中毕业后只身前往东京开始一人生活，一边就读大学的同时一边继续声优事业 。\r\n2008年4月开始通过出演《绝对可怜Children》（三宫紫穂）、《出包王女》（拉拉·萨塔琳·戴比路克）和《神薙》（薙）知名度开始上升。\r\n2008年9月3日，在电视剧《梦回绿园 ～青春男子寮日志～》出演新田美惠子，同时以个人名义发表出道单曲也是该剧片尾曲《naissance》借此宣布将进军歌坛。\r\n2009年2月15日，在“Music Rya'n 女孩们的春天巧克力祭典”活动中与同样属于Music Ray'n的寿美菜子、高垣彩阳、丰崎爱生三人组成组合“Sphere”进行音乐活动（隶属于Glory Heaven）。\r\n2009年3月7日，获得第3回声优奖新人女声优奖。\r\n2009年10月9日，发售个人第一本写真集《HARUKAs》。\r\n2010年2月24日，个人首张专辑《Rainbow Road》发售。同年4月开始给电视节目担当旁白的工作。\r\n2011年7月17日、23日及8月7日，分别在神户、名古屋、横滨三地举行首次独唱演唱会《オレンジ☆ロード》。\r\n2012年9月，连载于杂志《声优Animedia》的户松遥专栏“ハルカモード”宣布书籍化，并于2012年12月25日出版，这是户松遥将把2009-2012年三年来拍摄到照片汇集而成的一本时尚写真集。\r\n2013年1月13日、20日、2月2日、10日分别在大阪、宇都宫、名古屋、东京举行了个人演唱会《sunny side stage》。\r\n2013年3月1日，获得第7回声优奖助演女声优奖。\r\n2013年8月18日，出演《魔王勇者》的朗读剧《まおゆう魔王勇者　人间宣言　～名もなき少女が　魂の解放を叫ぶ～》。\r\n2018年4月8日，友情出演《光之美少女》系列动画的联动电视剧《声优女孩！》播出，在剧中户松遥以自己本人的形象登场，并与福原遥共同演唱该电视剧的片尾曲《It's Show Time!!》。\r\n2019年1月11日宣布结婚，对象是一般人士。\r\n2021年2月10日，在个人博客宣布生下一个女孩。\r\n\r\n个人生活\r\n主要的昵称是「とまっちゃん」、「はるちゃん」，另外还有「はるにゃん」、「ハルカス」等。\r\n有一个姐姐。\r\n高中毕业前因仍就读爱知县一宫市当地的学校，所以每周末必须来回穿梭于东京及名古屋来经营她的声优事业。录音的前一天都会住在东京都内之事已经习以为常。\r\n想当上声优的契机是在国中三年级时，对演戏颇具兴趣，还曾想过说要替吉卜力工作室的动画作品配音。但是对于这条人生道路，心情一直含糊不定，最后接受了朋友的建议前去参加试镜。兴趣是图画创作，不过只是平时在台本上涂鸦的程度。\r\n自称サメマニア（Shark Mania，鲨鱼迷），但并非是喜欢鲨鱼，而是为了避免来自鲨鱼的危机而对它们的习性比较了解 。\r\n因为有“要不要来学点乐器”这样的念头，于2009年1月买了电贝斯，已拥有两把。\r\n尊敬同样是演员兼声优的户田惠子，喜欢苍井优。\r\n在作为声优组合Sphere活动的同时，个人名义的音乐活动也在进行中。为主演的动画《神薙》担当OP和ED。这两张单曲在Oricon周榜单上进入了10位以内。\r\n根据乐曲的氛围使用不同的声线，据本人说唱歌和配音的感觉很相似。另外，因为歌曲而改变声线的情况也有。\r\n在参加试镜表现自我魅力与能力时，一字不漏地背出“千与千寻”的台词，重点还是一人分饰五角。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 29835,
+            "name": "小鳥遊おとは",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/30/fd/29835_crt_UkF2y.jpg?r=1595351626",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/fd/29835_crt_UkF2y.jpg?r=1595351626",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/fd/29835_crt_UkF2y.jpg?r=1595351626",
+                "grid": "https://lain.bgm.tv/pic/crt/g/30/fd/29835_crt_UkF2y.jpg?r=1595351626"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4772,
+                    "name": "後藤沙緒里",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0b/b0/4772_prsn_cu0h1.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/b0/4772_prsn_cu0h1.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/b0/4772_prsn_cu0h1.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0b/b0/4772_prsn_cu0h1.jpg"
+                    },
+                    "short_summary": "家中排行第二，各有一个哥哥、妹妹、弟弟，爱称“さおりん”比较经常使用。曾经共同出演过动画的新谷良子和田村由加莉则经常使用“さっちゃん”称呼她。\r\n插画的技巧不错，经常会在各种活动的签名板上绘画，不过自2006年以后就渐渐不画了。\r\n养了三只狗，曾觉得“有来生的话想成为猫或树木”。\r\n\r\n2002年，G.G.F.的第2期试音合格，G.G.F.在籍期间，与井口裕香结成组合「airyth」。\r\n2003年，被选拔为《银河天使》新登场角色乌丸千岁的声优而开始引人注目。\r\n2005年1月，因生病入院造成缺席了『バレンタインコンサート2005』和『GAミュージカル』两个节目。\r\n同年5月，G.G.F.毕业，毕业后加入了新成立的事务所g-stella。\r\n2008年1月8日移籍至81 PRODUCE。\r\n2010年4月16日，开设了官方博客，但次年11月15日关闭了该博客。\r\n2013年2月18日，再次开设了官方博客。\r\n2014年10月31日退出81 PRODUCE，成为自由身。\r\n2020年8月1日加入TOY'S FACTORY。\r\n2022年8月31日退出TOY'S FACTORY，成为自由身。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 29836,
+            "name": "森園わかな",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a4/8d/29836_crt_RZ88A.jpg?r=1601998248",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/8d/29836_crt_RZ88A.jpg?r=1601998248",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/8d/29836_crt_RZ88A.jpg?r=1601998248",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a4/8d/29836_crt_RZ88A.jpg?r=1601998248"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6724,
+                    "name": "内田真礼",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4c/23/6724_prsn_DIyje.jpg?r=1738653463"
+                    },
+                    "short_summary": "内田 真礼（うちだ まあや、1989年12月27日 - ）は、日本の声優、歌手、女優、タレント。\r\nアイムエンタープライズ（事務所）、ポニーキャニオン（レコード会社）に所属。愛称は主にまややん、まれいたそ。東京都出身。血液型はA型。本名同じ。声優の内田雄馬は実弟。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "id": 4075,
+    "name": "此时此刻的我",
+    "image_path": "data/images/anime/4075.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "热血而耿直的少年修在放学路上遇见沉默的少女。在突如其来的变故中，为了保护向他呼救的少女，修被卷入了陌生的时空。在荒芜的世界里，生命将何去何从……\r\n",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创",
+        "穿越"
+    ],
+    "date": "1999-10-14",
+    "rating_rank": 837,
+    "rating_score": 7.5,
+    "rating_total": 1446,
+    "main_character_ids": [
+        13296,
+        13297
+    ],
+    "main_characters": [
+        {
+            "id": 13296,
+            "name": "松谷修造",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c0/54/13296_crt_aavK4.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/54/13296_crt_aavK4.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/54/13296_crt_aavK4.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c0/54/13296_crt_aavK4.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4170,
+                    "name": "岡村明美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b1/96/4170_prsn_1rA7b.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/96/4170_prsn_1rA7b.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/96/4170_prsn_1rA7b.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b1/96/4170_prsn_1rA7b.jpg"
+                    },
+                    "short_summary": "岡村 明美（おかむら あけみ、1969年3月12日 - ）は、日本の女性声優。マウスプロモーション所属。東京都出身。血液型はO型。\r\n代表作に『紅の豚』（フィオ・ピッコロ）、『ONE PIECE』（ナミ）、『カサンドラ〜愛と運命の果てに』（カサンドラ）、『ラブ★コン』（小泉リサ）などがある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13297,
+            "name": "ララ・ルゥ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c2/84/13297_crt_cao9e.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/84/13297_crt_cao9e.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/84/13297_crt_cao9e.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c2/84/13297_crt_cao9e.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3922,
+                    "name": "名塚佳織",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0b/59/3922_prsn_rSvg6.jpg?r=1518234694",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/59/3922_prsn_rSvg6.jpg?r=1518234694",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/59/3922_prsn_rSvg6.jpg?r=1518234694",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0b/59/3922_prsn_rSvg6.jpg?r=1518234694"
+                    },
+                    "short_summary": "日本东京都出身的女性声优。\r\n\r\n从小学生开始就以童星之姿在舞台上演出。也有如音乐剧‘トラップ一家物语’等，担任多个角色连续演出多场的作品。\r\n在1998年的音乐剧《フラワー》中，除饰演サイヤ以外，也担任女主角メズーラ的代班演员。前来观赏同台演出的斋藤彩夏的动画导演大地丙太郎因此留下了印象。在导演的另一部作品反斗小王子中客串演出子石的角色，是为声优出道作。\r\n2006年3月从桐朋学园艺术短期大学演剧学科毕业。\r\n\r\n没加入过任何事务所，以前由母亲担任经纪人，现在则全部自己一手包办。\r\n家庭成员有爸爸、妈妈、姊姊和一只猫（MOKO）。\r\n有“就算连续三天喝到天亮也没事”的好酒量。\r\n喜欢的音乐是以J-POP为主\r\n曾学过七年的小提琴，是一项才艺。\r\n虽然本人似乎没有注意到，在广播节目中常用“てなわけで”、“そんなわけで”。\r\n昵称的“かもさん”是由于就读幼稚园时，NHK教育台播放“鸭子的桥”这首歌的时候会跟着一起唱唱跳跳，因此被父亲叫做“かもさん”。\r\n\r\n2011年2月21日, 在个人官方部落格上公开结婚消息。\r\n2012年1月1日，在官方博客上宣布，自己在稍早前的时候已经当上了妈妈，在2011年底顺利产下一名体重近6斤的健康女婴，在此对支持她的家人及粉丝表示感谢。\r\n2021年7月2日，在个人SNS上公布再度怀孕的消息。\r\n2021年12月4日，在个人SNS上公布次子平安生产的消息。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

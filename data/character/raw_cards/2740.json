@@ -1,0 +1,62 @@
+{
+    "id": 2740,
+    "name": "南夏奈",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/96/f2/2740_crt_anidb.jpg?r=1563984404",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/f2/2740_crt_anidb.jpg?r=1563984404",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/f2/2740_crt_anidb.jpg?r=1563984404",
+        "grid": "https://lain.bgm.tv/pic/crt/g/96/f2/2740_crt_anidb.jpg?r=1563984404"
+    },
+    "summary": "南家二女，初中二年级。\r\n南家的麻烦制造者，如果发生了什么背后却没有她的情况是少之又少，被妹妹千秋称作“笨蛋SB日本代表”。\r\n性格乐观开朗，经常会考虑如何让“有趣的事情”发生，因此会巧妙的设计一些恶作剧。\r\n考试成绩一般在65分左右，自称是“能够体会人世间酸甜苦辣的牛B分数”，从同学那里得到考试范围的情况下也得过两次99分。\r\n将千秋的同学诚带入了崭新的世界（伪娘的世界），自豪的称之为自己的“作品”。\r\n恋爱方面和姐姐春香一样非常大条，被藤冈多次间接告白却没有意识到，然而对别人的恋爱故事却非常热心。\r\n必杀技是回旋踢、高位踢、打岔。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "南夏奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "南二"
+                },
+                {
+                    "k": "日文名",
+                    "v": "みなみ かな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Minami Kana"
+                },
+                {
+                    "k": "昵称",
+                    "v": "カナ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 32,
+        "collects": 225
+    },
+    "anime_ids": [
+        47685,
+        283,
+        889
+    ]
+}

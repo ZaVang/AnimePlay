@@ -1,0 +1,62 @@
+{
+    "id": 14848,
+    "name": "千利休",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/cd/0a/14848_crt_3359j.jpg?r=1408353866",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/0a/14848_crt_3359j.jpg?r=1408353866",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/0a/14848_crt_3359j.jpg?r=1408353866",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cd/0a/14848_crt_3359j.jpg?r=1408353866"
+    },
+    "summary": "　　人生七十力囲希咄\r\n\r\n　　吾这宝剣祖佛共杀\r\n\r\n　　堤る我得具足の一太刀\r\n\r\n　　今此时ぞ天に抛",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "苦逼王"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "田中与四郎"
+                },
+                {
+                    "v": "田中與四郎"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "千宗易"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "せんのりきゅう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sen no Rikyu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "大永二年"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 6
+    },
+    "anime_ids": [
+        10436
+    ]
+}

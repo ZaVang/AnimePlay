@@ -1,0 +1,48 @@
+{
+    "id": 57672,
+    "name": "チト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/06/66/57672_crt_8cPpZ.jpg?r=1504755658",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/66/57672_crt_8cPpZ.jpg?r=1504755658",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/66/57672_crt_8cPpZ.jpg?r=1504755658",
+        "grid": "https://lain.bgm.tv/pic/crt/g/06/66/57672_crt_8cPpZ.jpg?r=1504755658"
+    },
+    "summary": "娇小的黑发少女，性格冷静沉着。手指灵巧、擅长机械，借由阅读文献获得过去的知识。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "千户"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "千都"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "Chito"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 29,
+        "collects": 287
+    },
+    "anime_ids": [
+        218707
+    ]
+}

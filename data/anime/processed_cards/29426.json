@@ -1,0 +1,202 @@
+{
+    "id": 29426,
+    "name": "坂道上的阿波罗",
+    "image_path": "data/images/anime/29426.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　原作为小玉ユキ于2007年到2012年初在小学館《月刊flowers》所连载的漫画，在2009年度“这本漫画真厉害·女性篇”中获得第一位。\r\n　　故事发生在1966年初夏，高中一年生西见薰因父亲工作调动而独自一人从横须贺市搬到亲戚所在的九州。自闭的优等生薰在与同班同学川渕千太郎相遇之后逐渐发生了改变。薰通过千太郎了解到了爵士乐的魅力，并初次交到了“朋友”，享受与同伴一起演奏音乐的乐趣。其他还有与千太郎青梅竹马的律子、神秘学姐百合香、崇拜的淳兄……这是一出在受美国文化所影响的海边城镇展开的以友情、恋爱、音乐为主题的青春群像剧。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "漫画改",
+        "音乐"
+    ],
+    "date": "2012-04-12",
+    "rating_rank": 919,
+    "rating_score": 7.5,
+    "rating_total": 3114,
+    "main_character_ids": [
+        14950,
+        14951,
+        14952,
+        14953,
+        14954
+    ],
+    "main_characters": [
+        {
+            "id": 14950,
+            "name": "西見薫",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1f/d3/14950_crt_J5G6Z.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1f/d3/14950_crt_J5G6Z.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1f/d3/14950_crt_J5G6Z.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1f/d3/14950_crt_J5G6Z.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4994,
+                    "name": "木村良平",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d5/46/4994_prsn_RJG93.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/46/4994_prsn_RJG93.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/46/4994_prsn_RJG93.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d5/46/4994_prsn_RJG93.jpg"
+                    },
+                    "short_summary": "3岁时加入向日葵剧团，中学就读不需要穿制服，甚至没有特定讲课内容和课本的私立学校\r\n\r\n2009年在电视动画《东之伊甸》中首次担当男主角泷泽朗[s]为今后Noitamina小王子拉开序幕[/s]\r\n\r\n2011年与一同主持广播节目「Kiramune Presents 江口拓也と木村良平と代永翼の キラキラ☆ビート」的江口拓也、代永翼组成音乐团体Trignal（Kiramune所属）。首张迷你专辑“Party”于2012年12月12日发行。\r\n\r\n2012年，荣获第六回声优奖男声优配角赏\r\n\r\n吸血鬼役相当多，曾在推特自称是吸血鬼声优（在和小信的电击GS里角色设定为‘好想喝酒，虽然其实是想吸血’）「BLOOD LAD」布拉德·D·布莱斯、「Servamp」Lawless、「DIABOLIK LOVERS」无神皓、DramaCD 吸血ダーリン、酔い愛、天顶游戏、明治吸血奇譚、RUNLIMIT）\r\nNoitamina[s]小王子[/s]\r\n东之伊甸 泷泽朗，坡道上的阿波罗 西见薰，ROBOTICS；NOTES 八汐海翔角色，银之匙 八轩勇吾，PSYCHO-PASS 鹿矛围桐斗，野球少年 瑞垣俊二\r\n\r\n界内界外交际广泛，经常招待朋友去家中聚会\r\n自称很怕生害羞，被日笠阳子称为「攻めシャイ」\r\n看似很随意，但其实最会看气氛（丰永）在聚会时能关注到每个人（白石凉子）\r\n恐高\r\n喜欢猫和狗推特头像是老家的猫\r\nkaji病和香菜病患者（和佐仓互称为情敌←虽然最近都被贤章打败了）",
+                    "locked": false
+                },
+                {
+                    "id": 15327,
+                    "name": "古木のぞみ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/73/30/15327_prsn_r7f2z.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/30/15327_prsn_r7f2z.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/30/15327_prsn_r7f2z.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/73/30/15327_prsn_r7f2z.jpg"
+                    },
+                    "short_summary": "古木 のぞみ（ふるき のぞみ、1月12日 - ）は、日本の女性声優。マウスプロモーション所属。\r\n長崎県五島列島出身。血液型はB型。\r\n\r\n専門学校ESPエンタテインメント卒業後、マウスプロモーション附属養成所に入所、2011年8月、『声優バラエティー SAY!YOU!SAY!ME!』内のコーナー「声優アイドルユニット企画」で新人声優ユニットのメンバーとして抜擢され、『ワンリルキス』のメンバーとしての活動を開始。\r\n2012年4月よりマウスプロモーション所属となった。\r\n2017年1月12日、自身の誕生日にオフィシャルブログにて入籍したことを発表した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 14951,
+            "name": "川渕千太郎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e0/70/14951_crt_j2JD2.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/70/14951_crt_j2JD2.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/70/14951_crt_j2JD2.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e0/70/14951_crt_j2JD2.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4982,
+                    "name": "細谷佳正",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/40/4e/4982_prsn_XOxkm.jpg"
+                    },
+                    "short_summary": "高中时代参加的社团是戏剧社和剑道社。后来只专注於戏剧社。\r\n专门学校时期和友人一起组成街头艺人，由于是新人加上良好的歌声和歌曲，被同一个事务所的前辈大须贺纯所称赞。与其搭档的友人是吉他老师。名字倾向本身的创作风格，用了‘不协和音’来命名。歌曲由两人共同创作。其中‘雪’这首曲子几乎是一个人完成的。而在当时的演出地点是在京王线府中站。\r\n在网球王子的试镜会中也参与了平古场凛的角色。\r\n以网球王子白石藏之介名义连续两个月发行角色专辑，为网球王子角色歌曲首例，2010年04月14日发行的首张专辑《Medicine or...?》在Oricon Style拿下首日第七名，首周第十名。2010年05月19日发行的第二张专辑《POISON》登上Oricon Style首日第三名，首周第六名。其中，《Medicine or...?》中的＜I.ng＞及《POISON》中的＜エピローグ＞皆由细谷本人亲自做词。\r\n\r\n兴趣是射击运动和吉他。\r\n喜欢的艺人以男性居多，像是藤原龙也和洼冢洋介。\r\n无关年龄，喜欢思想较为成熟的女性。\r\n讨厌的食物是牡蛎，连碰都不能碰。喜欢红酒。\r\n喜欢Ne-Yo的音乐。\r\n喜欢猫，会和流浪猫玩在一起，所以身上容易残留猫毛。有一次到电台参与‘电波系彼女’的录制，后来才知道小林ゆう对猫过敏，并且向她道歉。\r\n电台‘テニスの王子様 オン・ザ・レイディオ’中被认定了是欺负的一群，常被前辈声优欺负。\r\n身材较为纤细修长，非常容易出汗。\r\n经常有电波系的恐怖经验。\r\n被小林ゆう称赞其说话技巧很好。\r\n对电脑等电子装置很不熟悉的缘故，家中并没有电脑。工作上请附近的香烟店帮忙传真。\r\n对于星座很了解，不过否定自己的水瓶座B型是个“怪人”的见解。\r\n为了演出不良少年柔沢ジュウ的感觉，在自家的厕所里一边冲水一边大叫磨损喉咙。\r\n在过去的事件中，曾比喻自己“声音像没特色的茶泡饭”。\r\n\r\n2014年荣获第八届日本声优大赏“助演男优赏”。\r\n\r\n曾属Mausu Promotion。2014年在广播『天才軍師』2014年7月13日放送回中，宣布自2014年7月1日恢复为自由身。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 14952,
+            "name": "迎律子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d6/42/14952_crt_oBeD7.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/42/14952_crt_oBeD7.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/42/14952_crt_oBeD7.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d6/42/14952_crt_oBeD7.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4356,
+                    "name": "南里侑香",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/36/ad/4356_prsn_sh22K.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/ad/4356_prsn_sh22K.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/ad/4356_prsn_sh22K.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/36/ad/4356_prsn_sh22K.jpg"
+                    },
+                    "short_summary": "南里 侑香（なんり ゆうか、1984年3月13日 - ）は、日本の女優、声優、歌手。長崎県佐世保市出身。所属事務所はスペースクラフト・エンタテインメント。所属レーベルはFlyingDog。身長157cm。血液型はA型。FictionJunction YUUKAのボーカル・YUUKAとしても活動している。\r\n\r\n1984年、長崎県佐世保市に生まれる。5歳の時、家族の転居に伴い東京に移住。通っていた学校の合唱発表の際に口パクだったことを心配した母親の勧めにより、小学2年で地域の合唱団に入団、周囲に感化され歌うことの楽しさに目覚める。8歳、合唱団の知人らと家族ぐるみで芝居を観劇するようになり、その時観たファミリーミュージカルに衝撃を受け自らも舞台に立ちたいと願うようになる。家族を説得し10歳でオーディションを受け東京児童劇団に所属、子役としてCMやNHK教育テレビ『うたってオドロンパ』等に出演していた。\r\n1996年、ミュージカル『THE GOODBYE GIRL』ルーシー・マクフェダン役で12歳にして念願の初舞台を踏む。1997年、南青山少女歌劇団に7期生として入団。2000年以降頭角を現し、2001年の卒団までに主演3作、劇団の中心メンバーとして活躍した。2001年、スペースクラフトに緒方恵美と堀尾裕樹が移籍してきたことにより声優部門が開拓される。この時南里は舞台経験者でキャストが固められた『パワーパフガールズ』日本語吹き替え版の主役の一人の座を射止め、声優としての第一歩を踏み出す。2003年、以前から南里の声に注目していたという梶浦由記によって、アニメ『機動戦士ガンダムSEED』挿入歌「暁の車」のボーカリストに抜擢される。FictionJunction YUUKA名義でのデビューとなったこの楽曲は公称20万枚のヒット作となり、南里のプロ歌手活動のきっかけとなっている。梶浦との最初の出会いは1998年とされ、当時は南青山少女歌劇団の音楽制作・歌唱指導者と劇団員の一人という関係であった。梶浦は南里の初主演作品で組んだ際「なんて悲しい声なんだろう！」という印象を持ったといい、更に後年には「真ん中にある芯に、ギューっと音が集まっていく、日本語を乗せるための細かく刻むメロディーが歌える声」と評した。\r\nまた、時を同じくして2003年に千葉紗子との歌手ユニットtiarawayの活動が始まる。シングル3枚アルバム1枚をリリースするも、2005年3月の1stコンサートにおいて電撃的に解散を発表、以降一切の活動を休止した。解散の理由は明言されていないが、関連する事実としてサイトロン・デジタルコンテンツのtiaraway担当プロデューサー志倉千代丸と担当ディレクター斎藤滋が直後に同社を退社していることが挙げられる。志倉はtiarawayに関し、「正直、心の底から解散したくなかった」と後年になり語っている。一方、声優としては第59回毎日映画コンクールアニメーション映画賞を受賞した2004年公開作品『雲のむこう、約束の場所』でヒロインの沢渡佐由理役を演じている。作品を手掛けた監督の新海誠は、デモテープを多数聞いた中から第一希望で南里に出演依頼を出しており、その理由について「手の届かない、初恋の象徴のようなイメージにぴったりだった」と語っている。また、「サユリは南里さんに演じてもらうことを前提に、本編のキャラクターをつくった」とも述べている。2009年、ソロシンガーとしての継続的活動を開始。2010年、当時スペースクラフトに所属していた結城アイラと歌手ユニットFairy Storyを結成しアルバム2枚をリリース。2014年、自身のブログで入籍を発表、その後も芸能活動を継続している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 14953,
+            "name": "深堀百合香",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7b/64/14953_crt_Mzztt.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/64/14953_crt_Mzztt.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/64/14953_crt_Mzztt.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7b/64/14953_crt_Mzztt.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4893,
+                    "name": "遠藤綾",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d7/68/4893_prsn_mmFDO.jpg?r=1739368057",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/68/4893_prsn_mmFDO.jpg?r=1739368057",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/68/4893_prsn_mmFDO.jpg?r=1739368057",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d7/68/4893_prsn_mmFDO.jpg?r=1739368057"
+                    },
+                    "short_summary": "遠藤 綾（えんどう あや、1980年2月17日 - ）は、日本の女性声優、ナレーター。オフィスPAC所属。\r\n山形県出身。身長160cm、血液型はO型。\r\n\r\n高校卒業後に声優を目指し上京。野沢那智が主宰する現事務所の養成所パフォーミング・アート・センターに入学し、留年を経て卒業。養成所を決めた理由は、親が野沢のことを知っていたため安心だと思ったからと語っている。\r\n初期の出演作としては2002年の『ワンだー・エディ』（第28話）、『魔王ダンテ』（第4話以降）などがある。2005年の『おくさまは女子高生』の堀口かすみ役が最初のレギュラー役出演、2007年の『らき☆すた』の高良みゆき役で知名度を上げて以来、2008年には『マクロスF』のシェリル・ノーム役、『ネオ アンジェリーク』のアンジェリーク役やOVA『舞-乙HiME 0〜S.ifr〜』のレナ・セイヤーズ役などを担当した。\r\nインターネットラジオ番組『Plume物語』内では、水野愛日、河原木志穂と共に声優ユニット・Plume（プリュム）を結成していたが、現在は活動休止中である。\r\nテレビアニメ『らき☆すた』オープニングテーマ『もってけ!セーラーふく』が第12回アニメーション神戸で主題歌賞（ラジオ関西賞）を受賞、2008年、第2回声優アワードにて平野綾、加藤英美里、福原香織と共に歌唱賞を受賞、2009年、第3回声優アワードにて助演女優賞を受賞。\r\n2013年8月8日、自身のブログで結婚を報告した。\r\n養成所時代の頃は演劇が苦手であり、師匠的存在の野沢那智によれば「演劇が嫌だ」と言っていたこともあるという。本人は「芝居はやりたいが、ラブシーンを演じるのが嫌」で、それが原因で卒業させてもらえなかったという逸話もある。野沢はそれに関して「よしじゃあ、ラブシーンのない芝居を作ろう」と語ったこともある。また、本人は元々声優がやりたかったので「声優の前に俳優であれ」という校長の言葉に周囲が重くなり、クラスの中と学校で「声優になりたい人」と言われたときに遠藤だけが手を上げていたという。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 14954,
+            "name": "桂木淳一",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/aa/21/14954_crt_a3ADY.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/21/14954_crt_a3ADY.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/21/14954_crt_a3ADY.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/aa/21/14954_crt_a3ADY.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3864,
+                    "name": "諏訪部順一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884"
+                    },
+                    "short_summary": "日本の男性声優、ナレーター、歌手。東京俳優生活協同組合所属。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

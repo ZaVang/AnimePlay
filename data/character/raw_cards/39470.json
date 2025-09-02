@@ -1,0 +1,92 @@
+{
+    "id": 39470,
+    "name": "御手洗翔太",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/78/b9/39470_crt_SQ5u5.jpg?r=1530316353",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/b9/39470_crt_SQ5u5.jpg?r=1530316353",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/b9/39470_crt_SQ5u5.jpg?r=1530316353",
+        "grid": "https://lain.bgm.tv/pic/crt/g/78/b9/39470_crt_SQ5u5.jpg?r=1530316353"
+    },
+    "summary": "14岁／属性：Mental型／生日：4月20日（金牛座）\r\n身高：163cm／体重：49kg／鞋码：24.5cm\r\n血型：AB型／惯用手：左手／出身：东京\r\n兴趣：睡眠、孝敬父母♪／特技：后空翻\r\n前历：961Pro所属偶像／三围：77-60-79／所属组合：Jupiter\r\nCV：松岡禎丞\r\n\r\n原961Pro所属的偶像。天真烂漫好恶作剧。虽然体育神经很好（常常考虑着新的编舞），但是是个旱鸭子。为了不那么地显眼，在学校会把头发放下来。有3位姐姐。\r\n在游戏「THE iDOL M@STER 2」的组合最终对决失败后，坦率地接受了自己的失败，与冬马、北斗共同退出了961Pro。后移籍加入了315Pro。（⇒SideM）",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "御手洗翔太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "御手洗 翔太"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みたらい しょうた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mitarai Shouta"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月20日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        },
+        {
+            "key": "体重",
+            "value": "49kg"
+        },
+        {
+            "key": "BWH",
+            "value": "77/60/79"
+        },
+        {
+            "key": "年龄",
+            "value": "14岁"
+        },
+        {
+            "key": "靴のサイズ",
+            "value": "24.5cm"
+        },
+        {
+            "key": "兴趣",
+            "value": "睡眠、孝敬父母♪"
+        },
+        {
+            "key": "特技",
+            "value": "后空翻"
+        },
+        {
+            "key": "属性",
+            "value": "メンタル"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 20,
+    "stat": {
+        "comments": 3,
+        "collects": 9
+    },
+    "anime_ids": [
+        223268
+    ]
+}

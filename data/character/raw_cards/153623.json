@@ -1,0 +1,52 @@
+{
+    "id": 153623,
+    "name": "苺子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/86/7e/153623_crt_K76Xk.jpg?r=1717333779",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/7e/153623_crt_K76Xk.jpg?r=1717333779",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/7e/153623_crt_K76Xk.jpg?r=1717333779",
+        "grid": "https://lain.bgm.tv/pic/crt/g/86/7e/153623_crt_K76Xk.jpg?r=1717333779"
+    },
+    "summary": "「真夜中ぱんチ」のメンバー。\r\n子どもっぽい発言、行動が多いが、自分の事はしっかり者のお姉さんと思っている。\r\nかわいいものと「りぶ様」が大好き。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莓子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "苺子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いちこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ichiko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 32,
+        "collects": 62
+    },
+    "anime_ids": [
+        477207
+    ]
+}

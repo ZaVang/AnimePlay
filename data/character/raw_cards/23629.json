@@ -1,0 +1,45 @@
+{
+    "id": 23629,
+    "name": "忍野扇",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/dd/f8/23629_crt_Pr175.jpg?r=1611093159",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/f8/23629_crt_Pr175.jpg?r=1611093159",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/f8/23629_crt_Pr175.jpg?r=1611093159",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dd/f8/23629_crt_Pr175.jpg?r=1611093159"
+    },
+    "summary": "倾物语中出场，秋季刚转入直江津高中的一年级转校生，经由神原骏河介绍给阿良良木历认识。\r\n自称是忍野咩咩的侄女，有着神秘的身份和来历，知晓怪异。\r\n在阿良良木历叙述的故事中经常冷不丁地打断叙述，与阿良良木对谈。\r\n每次询问阿良良木有关怪异的本该保密的敏感问题，阿良良木几乎都会不自觉地毫无保留地给予回答。每次说出她本不该知晓的情报，都能糊弄过去并被阿良良木所接受。\r\n似乎很喜欢侦探游戏。\r\n口头禅是“我什么都不知道哦，只是阿良良木学长你自己知道而已。”\r\n\r\n[mask]在花物语中变为男生在直江津高校活动。[/mask]",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "忍野扇"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "おしの おうぎ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Oshino Ougi"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 60,
+        "collects": 183
+    },
+    "anime_ids": [
+        175596,
+        138829
+    ]
+}

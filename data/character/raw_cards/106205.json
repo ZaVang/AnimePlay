@@ -1,0 +1,83 @@
+{
+    "id": 106205,
+    "name": "ベルグモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/63/8c/106205_crt_rmegO.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/8c/106205_crt_rmegO.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/8c/106205_crt_rmegO.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/63/8c/106205_crt_rmegO.jpg"
+    },
+    "summary": "蕴含传说中十斗士之力，拥有与黑暗相关的能力的数码宝贝。长相如同超巨大怪鸟。由于外貌诡异、个性古怪，因此被称为「吞噬亡者之物」。暗黑兽化为微粒，再变为大片黑雾笼罩天空之后，黑鹰兽便会从中飞来。由于黑鹰兽外表丑陋且缺乏理性，因此高傲的暗黑兽厌恶变成黑鹰兽。除非必要，否则不会轻易展现黑鹰兽的外貌。在一般的战斗中，主要武器是能够使敌人失明的爪子，还有连金属都能咬碎的利牙。必杀技是用全力拍动翅膀，将敌人连带着空间吹向异空间的「区域封灭」，还有把敌人转为黑暗性质，并且随心所欲操纵对方的「暗黑领主」。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黑鹰兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "瓦尔格兽"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Velgrmon"
+                },
+                {
+                    "k": "韩文名",
+                    "v": "베르그몬"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Berugumon"
+                },
+                {
+                    "k": "称号",
+                    "v": "暗之破损兽型斗士，吞噬亡者之物"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference_zh-CHT/detail.php?directory_name=velgrmon"
+        },
+        {
+            "key": "等级",
+            "value": "混合体"
+        },
+        {
+            "key": "类型",
+            "value": "巨鸟型"
+        },
+        {
+            "key": "属性",
+            "value": "可变"
+        },
+        {
+            "key": "必杀技",
+            "value": [
+                {
+                    "v": "区域封灭"
+                },
+                {
+                    "v": "暗黑领主"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        3131
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": 150624,
+    "name": "小佐内ゆき",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1a/22/150624_crt_suCuN.jpg?r=1724765521",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/22/150624_crt_suCuN.jpg?r=1724765521",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/22/150624_crt_suCuN.jpg?r=1724765521",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1a/22/150624_crt_suCuN.jpg?r=1724765521"
+    },
+    "summary": "船戸高校１年。\r\n鋭い洞察力と行動力がありつつも、過去の失敗から小鳩くんと同じように小市民であることを目指している。\r\n甘いものに目がなく、放課後はしばしば街のスイーツショップに繰り出している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小佐内由纪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小佐内 ゆき"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おさない ゆき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Osanai Yuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 209,
+        "collects": 452
+    },
+    "anime_ids": [
+        513018
+    ]
+}

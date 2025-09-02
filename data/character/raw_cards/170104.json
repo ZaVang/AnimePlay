@@ -1,0 +1,43 @@
+{
+    "id": 170104,
+    "name": "ヤチヨ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a2/82/170104_crt_3Za2o.jpg?r=1737696277",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/82/170104_crt_3Za2o.jpg?r=1737696277",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/82/170104_crt_3Za2o.jpg?r=1737696277",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a2/82/170104_crt_3Za2o.jpg?r=1737696277"
+    },
+    "summary": "ホテル『銀河楼』で働くホテリエロボット。\r\n人類がいなくなった地球で、オーナーの帰りと、再び人類をお客様として迎える時を待っている。\r\n真面目かつ頑張り屋で、現在の立場は支配人代理の代理。\r\n長い月日の中で停止してゆく仲間たちを見送りながら、オーナーとの約束を守るため、今日もホテルの維持に努めている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "八千代"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "夜千世"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 127,
+        "collects": 348
+    },
+    "anime_ids": [
+        509986
+    ]
+}

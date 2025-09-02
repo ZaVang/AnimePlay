@@ -1,0 +1,68 @@
+{
+    "id": 106216,
+    "name": "フレイモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7c/9c/106216_crt_eGq1o.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/9c/106216_crt_eGq1o.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/9c/106216_crt_eGq1o.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7c/9c/106216_crt_eGq1o.jpg"
+    },
+    "summary": "火神兽失去力量，外貌变成半兽半人的数码宝贝。缺少了数码宝贝原本拥有的「战斗本能」，因此失去了力量。不过，野火兽继承了无穷强大的十斗士的精神，因此即使野火兽失去了力量，成熟期等级的普通数码宝贝也无法与其相抗衡。真要说起来，野火兽拥有不像数码宝贝的温柔，也具备有如成长期数码宝贝的顽皮一面。必杀技是击出火焰气场的「小型火龙」。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "野火兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Flamon"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fureimon"
+                },
+                {
+                    "k": "称号",
+                    "v": "炎童"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference_zh-CHT/detail.php?directory_name=flamon"
+        },
+        {
+            "key": "等级",
+            "value": "混合体"
+        },
+        {
+            "key": "类型",
+            "value": "魔人型"
+        },
+        {
+            "key": "属性",
+            "value": "可变"
+        },
+        {
+            "key": "必杀技",
+            "value": "小型火龙"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        3131
+    ]
+}

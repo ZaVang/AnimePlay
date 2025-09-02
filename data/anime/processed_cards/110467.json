@@ -1,0 +1,183 @@
+{
+    "id": 110467,
+    "name": "白箱",
+    "image_path": "data/images/anime/110467.jpg",
+    "points": 8.7,
+    "cost": 6,
+    "rarity": "UR",
+    "description": "本作的故事主要围绕追逐梦想的五名女生——宫森葵、安原绘麻、坂木静香、藤堂美沙、今井绿展开，是一部描写以白箱的完成为目标而奋斗的她们，每天遇到的麻烦以及策划工作时碰到的纠葛与挫折，还有制作组在制作作品时的团结和冲突的动画业界的日常的群像剧作品。 ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "原创",
+        "职场"
+    ],
+    "date": "2014-10-09",
+    "rating_rank": 16,
+    "rating_score": 8.7,
+    "rating_total": 20687,
+    "main_character_ids": [
+        27234,
+        27235,
+        27236,
+        27237,
+        27238
+    ],
+    "main_characters": [
+        {
+            "id": 27234,
+            "name": "宮森あおい",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/44/b7/27234_crt_0jV1l.jpg?r=1675248575",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/b7/27234_crt_0jV1l.jpg?r=1675248575",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/b7/27234_crt_0jV1l.jpg?r=1675248575",
+                "grid": "https://lain.bgm.tv/pic/crt/g/44/b7/27234_crt_0jV1l.jpg?r=1675248575"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 15805,
+                    "name": "木村珠莉",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8d/7c/15805_prsn_HMR55.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/7c/15805_prsn_HMR55.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/7c/15805_prsn_HMR55.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8d/7c/15805_prsn_HMR55.jpg"
+                    },
+                    "short_summary": "日本的女性声优，福冈县出身，所属事务所为东京俳优生活协同组合。\r\n\r\n音域：女低音\r\n资格：日本汉字能力检定准2级、实用英语检定准2级、色彩检定3级\r\n兴趣：佛像鉴赏、音乐鉴赏、读书\r\n2010年加入俳协声优工作室（第38期生），2011年开始隶属于俳协。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27235,
+            "name": "安原絵麻",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f2/eb/27235_crt_Xr4iR.jpg?r=1675248497",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/eb/27235_crt_Xr4iR.jpg?r=1675248497",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/eb/27235_crt_Xr4iR.jpg?r=1675248497",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f2/eb/27235_crt_Xr4iR.jpg?r=1675248497"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13199,
+                    "name": "佳村はるか",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/12/f1/13199_prsn_i1Bqi.jpg?r=1556676800",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/f1/13199_prsn_i1Bqi.jpg?r=1556676800",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/f1/13199_prsn_i1Bqi.jpg?r=1556676800",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/12/f1/13199_prsn_i1Bqi.jpg?r=1556676800"
+                    },
+                    "short_summary": "佳村 はるか（よしむら はるか、2月14日 - ）は、日本の女性声優。アイムエンタープライズ所属。大阪府出身。\r\n代表作に、『アイドルマスター シンデレラガールズ』の城ヶ崎美嘉、『SHIROBAKO』の安原絵麻などがある。\r\n\r\n日本ナレーション演技研究所出身で、『アニメTV』にリポーターとして出演していた。2009年4月1日よりアイムエンタープライズに所属。\r\n2012年8月8日、ソーシャルゲーム『アイドルマスター シンデレラガールズ』で登場人物の1人である「城ヶ崎美嘉」として、CDシングル「THE IDOLM@STER CINDERELLA MASTER 009 城ヶ崎美嘉」を日本コロムビアよりリリース。2012年8月20日付のオリコン週間ランキングで最高13位を記録した。\r\n以降はラジオ番組『デレラジ』においてもパーソナリティとしてレギュラー出演を果たす。2013年3月には日本ナレーション演技研究所の養成所を卒業した。\r\n\r\n梅味の飴が好物。他にフライドポテトも好物にあげている。\r\n金田朋子の大ファンで、『金朋声優ラボ』の#30（この放送はDVD版のvol.5に収録されている）で共演した際に本人の前で発言している。また、そのときに『サインのデザインを変えたいので、金田さんに一緒に考えてほしい』とお願いし、金田が考案したデザインを採用して現在も使い続けている。左端に『舌を出しながら微笑む、両側をリボンのように捻っている包みに入った飴』のイラストが添えられたサインである。\r\n趣味は野球観戦と料理。また、ももいろクローバーZのファンと公言している。\r\n2017年、アイドルマスターシリーズがパ・リーグとコラボした際、自身の演じる城ヶ崎美嘉が、埼玉西武ライオンズの応援アイドルとなった。これがきっかけとなり、埼玉西武ライオンズのファンとなり球場に通うようになった。また、埼玉西武ライオンズのみならず、プロ野球全般に興味を持ったようで、松嵜麗と東京ヤクルトスワローズの試合や、杜野まことアジアプロ野球チャンピオンシップ2017の試合の観戦に出かけている。2018年3月には、文化放送のライオンズ特番「ライオンズ女子拡大計画」に出演、4月からは不定期のライオンズ応援番組「Lプロ!」に出演し、同じく同番組に出演する優木かなとともに「ライオンズ女子」声優としての地位を着実に固めている。\r\n養成所時代にはヴィムス所属の東内マリ子と親しい間柄であった。沼倉愛美とは同じクラスに所属。洲崎綾とも養成所からの知り合いで仲が良い。『アイドルマスター シンデレラガールズ』で妹役を演じた山本希望にはプライベートでも「お姉ちゃん」と呼ばれ交友を深めている。\r\n幼少期より歌うことに苦手意識を持っており、自身初のCD発売後も不安を感じていたが、ファンからの応援や『デレラジ』の出演を経て、歌を歌うことに幸せを感じられるようになったという。\r\n昭和生まれである事は公表しているが、実年齢は公表していない。『東京スポーツ』に『天体のメソッド』の記事が掲載された際、冗談で言った「21歳くらい（笑）」が記事に採用されていた。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27236,
+            "name": "坂木しずか",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fe/ea/27236_crt_NI6I3.jpg?r=1675248476",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/ea/27236_crt_NI6I3.jpg?r=1675248476",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/ea/27236_crt_NI6I3.jpg?r=1675248476",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fe/ea/27236_crt_NI6I3.jpg?r=1675248476"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9356,
+                    "name": "千菅春香",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a4/15/9356_prsn_75v6E.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/15/9356_prsn_75v6E.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/15/9356_prsn_75v6E.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a4/15/9356_prsn_75v6E.jpg"
+                    },
+                    "short_summary": "日本岩手县出身的女性歌手、声优，dandelion所属。\r\n\r\n喜欢的食物：马铃薯、咖喱\r\n兴趣：散步\r\n特技：钢琴、瞬间入睡、椀子荞麦（最高111碗）\r\n\r\n幼年时期即开始学习钢琴，从小在音乐环境中成长。\r\n小学、初中时代，一直担任学生会干部，经常出席辩论会等活动。这个时期，因为憧憬成为播音员，每天都收听收音机。\r\n高中生时代，因为偶然看到动漫歌手的LIVE而受到了强烈的冲击，梦想成为歌手和声优。\r\n2012年9月7日，在超过4000人参加的“Miss Macross 30”选考中，被选为Singer Wing优胜，成为Macross 30周年新歌姬。\r\n高中时候深受“Macross F”的影响，正好又遇到“Miss Macross 30”的应募，于是寻思着“Macross，说不定我也能参与其中！”。因为很喜欢雪露的“妖精”，所以在最终选考的时候选了这首歌。因为之前完全没想到会胜出，所以在最终结果出来的时候，自己都感到很吃惊。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27237,
+            "name": "藤堂美沙",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/43/c8/27237_crt_N22q2.jpg?r=1675248517",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/43/c8/27237_crt_N22q2.jpg?r=1675248517",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/43/c8/27237_crt_N22q2.jpg?r=1675248517",
+                "grid": "https://lain.bgm.tv/pic/crt/g/43/c8/27237_crt_N22q2.jpg?r=1675248517"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 16233,
+                    "name": "髙野麻美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5c/27/16233_prsn_A243a.jpg?r=1608449724",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/27/16233_prsn_A243a.jpg?r=1608449724",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/27/16233_prsn_A243a.jpg?r=1608449724",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5c/27/16233_prsn_A243a.jpg?r=1608449724"
+                    },
+                    "short_summary": "アイムエンタープライズ所属\r\n\r\n出身地：東京都\r\n趣味・スポーツ：\r\n　ライブ観戦・散歩\r\n　弓道・水泳\r\n特技：弓道\r\n資格：弓道初段\r\n芸歴：日本ナレーション演技研究所",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27238,
+            "name": "今井みどり",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b6/32/27238_crt_vP3BS.jpg?r=1566224479",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/32/27238_crt_vP3BS.jpg?r=1566224479",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/32/27238_crt_vP3BS.jpg?r=1566224479",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b6/32/27238_crt_vP3BS.jpg?r=1566224479"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 15988,
+                    "name": "大和田仁美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/06/35/15988_prsn_Ca3d6.jpg?r=1517759361",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/35/15988_prsn_Ca3d6.jpg?r=1517759361",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/35/15988_prsn_Ca3d6.jpg?r=1517759361",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/06/35/15988_prsn_Ca3d6.jpg?r=1517759361"
+                    },
+                    "short_summary": "大和田 仁美（おおわだ ひとみ、3月23日 - ）は、日本の女性声優。 青二プロダクション所属。神奈川県出身。 日本大学芸術学部音楽学科、総合学園ヒューマンアカデミー卒業。\r\n\r\n大学での専攻はサクソフォーンで、テナー・アルト・バリトン・ソプラノの4種類すべてを演奏したが、最も長く慣れ親しみ得意なのはアルト・サックスである。\r\nその後、音楽ばかりの人生以外の道を考えた際に、自身が続けていきたいと思っていた\"表現する事\"ができる声優という職業に行き当たることとなる。\r\n大学卒業後は就職し、同時に総合学園ヒューマンアカデミーの夜間・週末講座を受講。1年後に青二プロダクション（ジュニア）所属となる。\r\n2013年秋に行われた『SHIROBAKO』の主要キャラクター、宮森あおい・安原絵麻・坂木しずか役のオーディションに挑戦するも、この時点では受からなかった。1年後に同作の「同級生役が決まった」との連絡を受け、最初は参加できることがただうれしかったが、台本で今井みどり役が5番目に掲載されていることと最初にPVの収録を行った現場で「これは主要キャラクターなんだ」との確信を持ったと語っている。\r\n自分を構成している要素は、ゲーム音楽・新たな土地や知らない場所に行く事・ラーメンと語っている。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

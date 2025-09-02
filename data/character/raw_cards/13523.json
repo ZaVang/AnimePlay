@@ -1,0 +1,49 @@
+{
+    "id": 13523,
+    "name": "橘千鶴",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d8/af/13523_crt_ovOVN.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/af/13523_crt_ovOVN.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/af/13523_crt_ovOVN.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d8/af/13523_crt_ovOVN.jpg"
+    },
+    "summary": "穗稀高中三年级生，德日混血儿，个性活泼外向，喜欢美女，魅力是眼角的泪痣（自称）。要一直叫他笨猴子或小野猴。常捉弄茉咲，而且喜欢茉咲，并在单行本第六集告白。功课非常差。小时候和祐希一起玩过。刚转学过来时，曾把春误认成为女生。在学校总是穿着连帽T家制服外套，头发用发胶梳起，前额留下的两撮浏海常被说成触角，但把刘海放下时却非常清爽帅气，不过因差别太大，就连祐希他们看到也都非常惊讶。非常在意自己的身高。在校庆中扮演花子的角色（附带卫生纸）。常常把要说成有恋母情结的孩子，结果总是被追着打。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "橘千鹤"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "橘 千鶴"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たちばな ちづる"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 61
+    },
+    "anime_ids": [
+        29421,
+        14220
+    ]
+}

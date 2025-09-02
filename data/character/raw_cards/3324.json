@@ -1,0 +1,80 @@
+{
+    "id": 3324,
+    "name": "佐藤寿也",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3c/e6/3324_crt_anidb.jpg?r=1605921779",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/e6/3324_crt_anidb.jpg?r=1605921779",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/e6/3324_crt_anidb.jpg?r=1605921779",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3c/e6/3324_crt_anidb.jpg?r=1605921779"
+    },
+    "summary": "ＭＡＪＯＲ（メジャー）：\r\n佐藤寿也（吾郎と一緒に海堂高校野球部に入部した天才捕手。通称トシ）\r\n光の父。大吾の父・吾郎に誘われて野球と出会い、強肩強打のキャッチャーとしてプロ野球で活躍。その後メジャーリーグに進み、吾郎とバッテリーを組む。現在は引退し野球解説者を務めている。\r\n\r\nゲーム「実況パワフルプロ野球」：\r\n所属チーム ：海堂学園高校\r\n強肩強打の天才捕手。冷静沈着で頭脳明晰。吾郎とは幼なじみ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "佐藤寿也"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さとう としや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Satou Toshiya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "????-09-09"
+        },
+        {
+            "key": "身高",
+            "value": "175 cm"
+        },
+        {
+            "key": "体重",
+            "value": "64 kg"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "anidb.net"
+                },
+                {
+                    "k": "原作漫画1nd",
+                    "v": "https://shogakukan-comic.jp/book?isbn=9784091255105"
+                },
+                {
+                    "k": "原作漫画2nd",
+                    "v": "https://websunday.net/work/722/"
+                },
+                {
+                    "k": "客串游戏",
+                    "v": "https://www.konami.com/pawa/app/success_08.html"
+                }
+            ]
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 9,
+    "stat": {
+        "comments": 4,
+        "collects": 7
+    },
+    "anime_ids": [
+        4293
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "id": 22189,
+    "name": "凛堂あやか",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6a/ad/22189_crt_xN0n9.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/ad/22189_crt_xN0n9.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/ad/22189_crt_xN0n9.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6a/ad/22189_crt_xN0n9.jpg"
+    },
+    "summary": "聖祥学院中等部3年生。大富豪の娘で、召使たちと「アクロポリス国際救助隊」を結成している。気まぐれに付き合わされている召使たちも面白がっており、召使たちには結構慕われている。村雨姉妹とはあまり仲が良くない。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "凛堂绚香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "凛堂あやか"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "りんどう あやか"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月19日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "１４８釐米"
+        },
+        {
+            "key": "体重",
+            "value": "３６千克"
+        },
+        {
+            "key": "BWH",
+            "value": "75/53/77"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 2,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 19,
+    "stat": {
+        "comments": 0,
+        "collects": 5
+    },
+    "anime_ids": [
+        32164
+    ]
+}

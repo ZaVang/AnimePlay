@@ -1,0 +1,44 @@
+{
+    "id": 73947,
+    "name": "だいあ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/01/c3/73947_crt_aa9NX.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/c3/73947_crt_aa9NX.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/c3/73947_crt_aa9NX.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/01/c3/73947_crt_aa9NX.jpg"
+    },
+    "summary": "虹ノ咲だいあの持つデザインパレットから現れたバーチャルプリ☆チャンアイドルで、『ジュエルオーディション』の司会者。単なるナビキャラ以上の存在で、虹ノ咲とは友達のように接している。虹ノ咲の歌声とバーチャルだいあの姿をあわせ持ったプリ☆チャンアイドルとしてデビューを果たす。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "戴雅"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "黛雅"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 10
+    },
+    "anime_ids": [
+        269023
+    ]
+}

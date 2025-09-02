@@ -1,0 +1,73 @@
+{
+    "id": 4046,
+    "name": "危险调查员",
+    "image_path": "data/images/anime/4046.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "身为劳合社保险公司旗下之保险调查员的平贺·奇顿·太一，自牛津大学毕业成为考古学者的同时，也成为Special Air Service（SAS）英国空降部队之野外求生术的教官。在福克兰群岛战争中和伊拉克国境内美国大使成为人质的世界中以SAS队员的身份表现活跃。奇顿的父亲是日本人，且为动物学学者，但母亲却是个英国人。他在牛津大学时代和日本籍女友结婚并生下一女。但因为种种原因两人异离，离婚之后的前妻在大学教授数学，奇顿本人想往考古学的道路继续前进，但本行仍非如此。为了筹措考古学的探索费用继续当着保险调查员，从过去形形色色的委托，使得他数次遭逢绝境，但也培养出他面对事情的思考力及判断力。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 39,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "青年向"
+    ],
+    "date": "1998-10-05",
+    "rating_rank": 732,
+    "rating_score": 7.7,
+    "rating_total": 272,
+    "main_character_ids": [
+        16906
+    ],
+    "main_characters": [
+        {
+            "id": 16906,
+            "name": "平賀＝キートン・太一",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a9/80/16906_crt_vOvEA.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/80/16906_crt_vOvEA.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/80/16906_crt_vOvEA.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a9/80/16906_crt_vOvEA.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3871,
+                    "name": "宮田幸季",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/55/1c/3871_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/1c/3871_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/1c/3871_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/55/1c/3871_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の男性声優。81プロデュース所属。神奈川県横浜市出身",
+                    "locked": false
+                },
+                {
+                    "id": 4822,
+                    "name": "井上倫宏",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/af/8d/4822_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/8d/4822_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/8d/4822_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/af/8d/4822_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の俳優、声優。本名：井上 則弘。神奈川県出身。円企画所属。声域はハイバリトン。\r\n法政大学卒業。1982年に円演劇研究所に入所。1985年に演劇集団 円の団員に昇格。舞台、テレビドラマ出演のほか、洋画の吹き替え、テレビアニメへの出演など、声優としても活躍している。\r\n2022年2月28日、食道がんのため死去した。63歳没。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

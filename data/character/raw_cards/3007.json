@@ -1,0 +1,68 @@
+{
+    "id": 3007,
+    "name": "橋本文恵",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f6/67/3007_crt_F33cI.jpg?r=1611436947",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/67/3007_crt_F33cI.jpg?r=1611436947",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/67/3007_crt_F33cI.jpg?r=1611436947",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f6/67/3007_crt_F33cI.jpg?r=1611436947"
+    },
+    "summary": "线圈电脑侦探局编号七号。\r\n就读大黑市立第三小学六年三班。生物部副部长。\r\n在寻找电脑宠物的途中与优子相遇，告诉优子许多关于大黑市的事情。\r\n擅长使用骇客技术和违法的电脑道具，与大智反复斗气。\r\n因老鼠型电脑宠物曾遭到消除而对沙奇怀抱着强烈敌意，更决定再也不养电脑宠物，不认为电脑宠物“老头子”是‘宠物’，而当作‘仆人’。\r\n性格刚强而热情，对恋爱相当迟钝。难对付的事物是鬼怪和庞大的生物。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "桥本文恵"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "橋本 文恵"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はしもと ふみえ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hashimoto Fumie"
+                },
+                {
+                    "k": "昵称",
+                    "v": "フミエ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "120cm"
+        },
+        {
+            "key": "体重",
+            "value": "27kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 8,
+        "collects": 9
+    },
+    "anime_ids": [
+        794
+    ]
+}

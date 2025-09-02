@@ -1,0 +1,52 @@
+{
+    "id": 60323,
+    "name": "清洲リュウジ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/01/be/60323_crt_6qoSv.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/be/60323_crt_6qoSv.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/be/60323_crt_6qoSv.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/01/be/60323_crt_6qoSv.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "清洲龙司"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "きよす リュウジ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kiyosu Ryuuji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2月8日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 8,
+    "stat": {
+        "comments": 1,
+        "collects": 4
+    },
+    "anime_ids": [
+        227240
+    ]
+}

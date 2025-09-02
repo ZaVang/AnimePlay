@@ -1,0 +1,44 @@
+{
+    "id": 31751,
+    "name": "吉祥天ラクシュ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3a/37/31751_crt_4ACN5.jpg?r=1428446215",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/37/31751_crt_4ACN5.jpg?r=1428446215",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/37/31751_crt_4ACN5.jpg?r=1428446215",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3a/37/31751_crt_4ACN5.jpg?r=1428446215"
+    },
+    "summary": "调合之神的继承人，活泼可爱，帮助修罗王他们对抗破坏神。\r\n\r\n原型是印度教中的女神拉克什米，意译为吉祥天女、大功德天或宝藏天女，婆罗门教-印度教的幸福与财富女神，传统上被认为是毗湿奴的妻子。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "吉祥天"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "蓬莱山のラクシュ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 7
+    },
+    "anime_ids": [
+        4653
+    ]
+}

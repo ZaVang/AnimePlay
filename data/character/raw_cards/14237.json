@@ -1,0 +1,48 @@
+{
+    "id": 14237,
+    "name": "相沢千鶴",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a5/c8/14237_crt_37kbl.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/c8/14237_crt_37kbl.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/c8/14237_crt_37kbl.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a5/c8/14237_crt_37kbl.jpg"
+    },
+    "summary": "海边餐厅“海之家柠檬”的经营者，主要负责厨房。\r\n总是咪咪笑的表情看上去似乎是治愈系的角色，其实却是超级腹黑，生气的时候异常恐怖。\r\n乌贼娘最害怕的人类。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "相泽千鹤"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あいざわ ちづる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aizawa Chizuru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 13,
+        "collects": 34
+    },
+    "anime_ids": [
+        18004
+    ]
+}

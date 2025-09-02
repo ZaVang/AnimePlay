@@ -1,0 +1,417 @@
+{
+    "id": 2083,
+    "type": 2,
+    "name": "シュヴァリエ 〜Le Chevalier D'Eon〜",
+    "name_cn": "双面骑士",
+    "summary": "路易十五统治时期的巴黎，大革命的前夜，骑士迪昂·德·鲍蒙作为秘密警察的一员，正在追查淑女连续失踪案件的真相。就在这时，国王的下臣莉亚也惨遭不幸。成为该事件的牺牲者。莉亚的尸体被人在河中发现，而她正是迪昂的姐姐。\r\n在莉亚的棺盖上，刻有一串神秘的字母“PSALMS（诗篇）”。迪昂背负着与姐姐莉亚的羁绊，渐渐被引向迷雾重重的禁忌世界中……",
+    "nsfw": false,
+    "locked": false,
+    "date": "2006-08-19",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/3e/9e/2083_U7L07.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/3e/9e/2083_U7L07.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/3e/9e/2083_U7L07.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/3e/9e/2083_U7L07.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/3e/9e/2083_U7L07.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "双面骑士"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "シュヴァリエ ル・シュヴァリエ・デオン",
+                    "k": null
+                },
+                {
+                    "v": "迪恩骑士",
+                    "k": null
+                },
+                {
+                    "v": "Chevalier",
+                    "k": null
+                },
+                {
+                    "v": "女装骑士",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "24"
+        },
+        {
+            "key": "放送开始",
+            "value": "2006年8月19日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://www.production-ig.co.jp/works/chevalier/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "日本WOWOW"
+        },
+        {
+            "key": "播放结束",
+            "value": "2007年2月24日"
+        },
+        {
+            "key": "导演",
+            "value": "古橋一浩"
+        },
+        {
+            "key": "音乐",
+            "value": "大島ミチル"
+        },
+        {
+            "key": "Copyright",
+            "value": "©冲方丁・Production I.G／「シュヴァリエ」製作委員会2006"
+        },
+        {
+            "key": "原作",
+            "value": "冲方丁/Production I.G"
+        },
+        {
+            "key": "人物设定",
+            "value": "尾崎智美"
+        },
+        {
+            "key": "美术监督",
+            "value": "大野広司"
+        },
+        {
+            "key": "摄影监督",
+            "value": "谷内潤"
+        },
+        {
+            "key": "音响监督",
+            "value": "郷田ほづみ"
+        },
+        {
+            "key": "动画制作",
+            "value": "Production I.G"
+        },
+        {
+            "key": "製作",
+            "value": "「シュヴァリエ」製作委員会（松竹、WOWOW、Production I.G）、吉田剛、北浦宏之、石川みちる"
+        },
+        {
+            "key": "特别鸣谢",
+            "value": "マガジンZ編集部（山本憲一、西村孝法）、日経キャラクターズ!編集部（小川仁志、渡辺一正）、堀内麻紀、佐藤憲夫"
+        },
+        {
+            "key": "宣传",
+            "value": "和田達也（WOWOW）、遠藤裕（WOWOW）、古木美雪（T.O Entertainment）、岩瀬幸恵（Production I.G）"
+        },
+        {
+            "key": "企画",
+            "value": "関一郎、峯崎順朗（WOWOW）、石川光久"
+        },
+        {
+            "key": "制片人",
+            "value": "飯塚寿雄、瀬戸麻理子、片桐大輔（WOWOW）、森下勝司"
+        },
+        {
+            "key": "动画制片人",
+            "value": "现场制片人：中武哲也"
+        },
+        {
+            "key": "色彩设计",
+            "value": "広瀬いづみ；辅佐：土井和"
+        },
+        {
+            "key": "美术设计",
+            "value": "大野広司；辅佐：toi8、桑名郁朗"
+        },
+        {
+            "key": "剪辑",
+            "value": "植松淳一、濱宇津妙子、奥野英俊　"
+        },
+        {
+            "key": "音响",
+            "value": "小泉紀介（神南スタジオ）"
+        },
+        {
+            "key": "音效",
+            "value": "山谷尚人（サウンドボックス）"
+        },
+        {
+            "key": "录音",
+            "value": "住谷真；录音工作室：東京テレビセンター"
+        },
+        {
+            "key": "录音助理",
+            "value": "東原永嘉、今泉武、水谷睦"
+        },
+        {
+            "key": "助理制片人",
+            "value": "和田丈嗣（Production I.G）"
+        },
+        {
+            "key": "3DCG",
+            "value": "遠藤誠、高柳陽、横山勧"
+        },
+        {
+            "key": "3DCG 导演",
+            "value": "遠藤誠"
+        },
+        {
+            "key": "背景美术",
+            "value": "スタジオ風雅"
+        },
+        {
+            "key": "色彩指定",
+            "value": "広瀬いづみ"
+        }
+    ],
+    "volumes": 0,
+    "eps": 24,
+    "total_episodes": 24,
+    "rating": {
+        "rank": 1082,
+        "total": 515,
+        "count": {
+            "one": 0,
+            "two": 1,
+            "three": 2,
+            "four": 2,
+            "five": 10,
+            "six": 74,
+            "seven": 162,
+            "eight": 203,
+            "nine": 43,
+            "ten": 18
+        },
+        "score": 7.4
+    },
+    "collection": {
+        "wish": 919,
+        "collect": 698,
+        "doing": 117,
+        "on_hold": 157,
+        "dropped": 56
+    },
+    "tags": [
+        {
+            "name": "冲方丁",
+            "count": 196
+        },
+        {
+            "name": "ProductionI.G",
+            "count": 156
+        },
+        {
+            "name": "TV",
+            "count": 139
+        },
+        {
+            "name": "2006",
+            "count": 128
+        },
+        {
+            "name": "法国大革命",
+            "count": 109
+        },
+        {
+            "name": "伪娘",
+            "count": 96
+        },
+        {
+            "name": "Production.I.G",
+            "count": 68
+        },
+        {
+            "name": "CHEVALIER",
+            "count": 66
+        },
+        {
+            "name": "女装骑士",
+            "count": 55
+        },
+        {
+            "name": "法国",
+            "count": 52
+        },
+        {
+            "name": "I.G",
+            "count": 42
+        },
+        {
+            "name": "宫廷",
+            "count": 40
+        },
+        {
+            "name": "原创",
+            "count": 37
+        },
+        {
+            "name": "神秘学",
+            "count": 33
+        },
+        {
+            "name": "神配乐",
+            "count": 26
+        },
+        {
+            "name": "古桥一浩",
+            "count": 24
+        },
+        {
+            "name": "历史",
+            "count": 20
+        },
+        {
+            "name": "古橋一浩",
+            "count": 16
+        },
+        {
+            "name": "奇幻",
+            "count": 12
+        },
+        {
+            "name": "2006年8月",
+            "count": 12
+        },
+        {
+            "name": "漫画改",
+            "count": 8
+        },
+        {
+            "name": "补番",
+            "count": 7
+        },
+        {
+            "name": "2006年",
+            "count": 7
+        },
+        {
+            "name": "Production_I.G",
+            "count": 6
+        },
+        {
+            "name": "日本",
+            "count": 5
+        },
+        {
+            "name": "2006年7月",
+            "count": 5
+        },
+        {
+            "name": "大島ミチル",
+            "count": 4
+        },
+        {
+            "name": "Production",
+            "count": 3
+        },
+        {
+            "name": "大岛满",
+            "count": 3
+        },
+        {
+            "name": "动画",
+            "count": 3
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "原创",
+        "历史"
+    ],
+    "series": false,
+    "main_character_ids": [
+        13148,
+        38384
+    ],
+    "main_characters": [
+        {
+            "id": 13148,
+            "name": "D'eon de Beaumont",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/20/93/13148_crt_PcC8W.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/20/93/13148_crt_PcC8W.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/20/93/13148_crt_PcC8W.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/20/93/13148_crt_PcC8W.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4327,
+                    "name": "泰勇気",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ce/01/4327_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/01/4327_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/01/4327_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ce/01/4327_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                },
+                {
+                    "id": 4348,
+                    "name": "野島昭生",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/47/5d/4348_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/5d/4348_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/5d/4348_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/47/5d/4348_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーター。東京都杉並区、西東京市出身。シグマ・セブン所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 38384,
+            "name": "Lia de Beaumont",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b0/16/38384_crt_dr336.jpg?r=1453646747",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/16/38384_crt_dr336.jpg?r=1453646747",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/16/38384_crt_dr336.jpg?r=1453646747",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b0/16/38384_crt_dr336.jpg?r=1453646747"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4441,
+                    "name": "水野理紗",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b5/d6/4441_prsn_GTQnR.jpg?r=1427107991",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/d6/4441_prsn_GTQnR.jpg?r=1427107991",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/d6/4441_prsn_GTQnR.jpg?r=1427107991",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b5/d6/4441_prsn_GTQnR.jpg?r=1427107991"
+                    },
+                    "short_summary": "水野 理紗（みずの りさ、1978年11月3日 - ）は、日本の女性声優。尾木プロ THE NEXT/湘南テアトロ☆デラルテ所属。神奈川県出身。上智大学文学部英文学科卒業。血液型はA型。\r\n劇団『湘南テアトロ☆デラルテ』公演のヒロインを多く務めるなど、劇団主宰の郷田ほづみの秘蔵っ子である。\r\nまた、水月秋名義で書き物をしている。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

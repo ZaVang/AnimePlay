@@ -1,0 +1,56 @@
+{
+    "id": 62432,
+    "name": "友希あいね",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/32/42/62432_crt_9qqc2.jpg?r=1523018574",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/42/62432_crt_9qqc2.jpg?r=1523018574",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/42/62432_crt_9qqc2.jpg?r=1523018574",
+        "grid": "https://lain.bgm.tv/pic/crt/g/32/42/62432_crt_9qqc2.jpg?r=1523018574"
+    },
+    "summary": "7月20日出生，巨蟹座，血型O型。\r\n    動畫故事的故事主角。\r\n    使用服裝品牌為Sugar Melody。\r\n    第一季時就讀中學二年級，星和學園普通科的學生。\r\n    她與學校裡最受歡迎的偶像湊澪成為朋友，並組成雙人組合。口頭禪是「交朋友一百萬人」。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "友希爱音"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ゆうき あいね"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yuuki Aine"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月20日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 4,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 20,
+    "stat": {
+        "comments": 6,
+        "collects": 8
+    },
+    "anime_ids": [
+        234413
+    ]
+}

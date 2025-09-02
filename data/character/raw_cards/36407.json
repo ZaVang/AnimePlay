@@ -1,0 +1,52 @@
+{
+    "id": 36407,
+    "name": "新田義史",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/63/1f/36407_crt_s8nYn.jpg?r=1518235852",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/1f/36407_crt_s8nYn.jpg?r=1518235852",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/1f/36407_crt_s8nYn.jpg?r=1518235852",
+        "grid": "https://lain.bgm.tv/pic/crt/g/63/1f/36407_crt_s8nYn.jpg?r=1518235852"
+    },
+    "summary": "芦川组的年轻组员。\r\n经营着多家企业的智谋担当。\r\n深受身边人的信任。之前他过着非常惬意的单身生活，雏出现后他就陷入了带着拖油瓶的困境。\r\n是个老好人，所以很容易被卷进麻烦的事情里。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "新田义史"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "にった よしふみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nitta Yoshifumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 15,
+        "collects": 28
+    },
+    "anime_ids": [
+        225631
+    ]
+}

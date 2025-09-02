@@ -1,0 +1,56 @@
+{
+    "id": 2730,
+    "name": "リュミエール",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/42/1b/2730_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/1b/2730_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/1b/2730_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/42/1b/2730_crt_anidb.jpg"
+    },
+    "summary": "“真是太浪费了……”\r\n“机器人三大定律也只是个程式而已。”\r\n\r\n平时是GOTT的接待员，非常优秀，追求优雅的少女。但是，真实身份“ES MEMBER”的一员。搭档是艾克蕾尔。 特技是看得到的机器就可以获得其系统完全的主导权，经常随身带着装满葡萄汁的瓶子，并经常饮用，还能当武器使用。也是G级的ES成员，很久以前开始就和艾克蕾尔是搭档。在第18集中以另外一个身体出现（被dverger盗版）。\r\n\r\n特殊能力：C级「Puppet」（傀儡，假能力），只要能接近目标，就可以控制任何电子产品。G级『Particle』（粒子），可以控制任何粒子，对身体负担很大，“长大后”的状态被认为是威力全开。\r\n\r\n喜欢水果、奶酪类的食物，葡萄汁是她的最爱（每次喝完都会出现红晕，被吐槽有酒精？这个葡萄汁也有是葡萄酒的可能）对于食物和机器，会很介意浪费，浪费也几乎成为了口头禅。口僻是对艾克蕾尔是“女孩子要优雅一些”，对其他人的口头禅是“继续？”\r\n\r\n度过休日的方法是欣赏歌剧，打扮的时候还会叫机器人帮忙，甚至会用自己的能力和他们聊天。\r\n和tweedledee关系很好，被tweedledee认可为天才黑客，就是过载的时候tweedledee也在担心她。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "琉美艾尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Lumiere"
+                },
+                {
+                    "k": "日文名",
+                    "v": "リュミエール"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ryumieeru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 15
+    },
+    "anime_ids": [
+        3815
+    ]
+}

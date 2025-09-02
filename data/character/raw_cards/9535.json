@@ -1,0 +1,53 @@
+{
+    "id": 9535,
+    "name": "弥勒",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c1/aa/9535_crt_puxp1.jpg?r=1605585592",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/aa/9535_crt_puxp1.jpg?r=1605585592",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/aa/9535_crt_puxp1.jpg?r=1605585592",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c1/aa/9535_crt_puxp1.jpg?r=1605585592"
+    },
+    "summary": "年齡18歲，自稱是正義的法師，但是非常好色、而且是個花心大蘿蔔，在遇見犬夜叉及阿籬前，常以驅邪法事騙錢為生。經常摸珊瑚屁股，且總是被賞一巴掌。武器是錫杖及各式的符咒，由貪酒的夢心大師照顧長大，還有一隻狸貓-阿八為他的隨從。\r\n    在他的右手有名為風穴的洞。可以將任何物質吸入。彌勒的父親及爺爺都因敵不過風穴日久漸強的力量而被反噬。原因在於奈落的詛咒，唯有殺了奈落，才能破除詛咒，所以當彌勒遇到漂亮女孩時，一定會要求對方為他生孩子，目的是為了在被風穴反噬前延續下一代。\r\n\r\n    最後奈落被打敗詛咒解除，與珊瑚結婚，育有兩女（雙胞胎）、一子。\r\n\r\n    漫画特别篇中，阿籬回到战国时代后不久，弥勒参与了消灭树妖根首的战斗，由于失去了风穴使得战斗力严重下降，最后在险些丧命的时候被珊瑚解救，从而生还。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "弥勒"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みろく"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Miroku"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 12,
+        "collects": 24
+    },
+    "anime_ids": [
+        2784,
+        2785
+    ]
+}

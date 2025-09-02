@@ -1,0 +1,64 @@
+{
+    "id": 8918,
+    "name": "杏",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bb/46/8918_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/46/8918_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/46/8918_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bb/46/8918_crt_anidb.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "杏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "杏"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あんず"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Anzu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月10日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 10,
+    "stat": {
+        "comments": 6,
+        "collects": 38
+    },
+    "anime_ids": [
+        3848
+    ]
+}

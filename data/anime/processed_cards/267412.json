@@ -1,0 +1,53 @@
+{
+    "id": 267412,
+    "name": "机动战士高达 THE ORIGIN 前夜 红色彗星",
+    "image_path": "data/images/anime/267412.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "“赤い彗星”と呼ばれるジオン公国軍のエースパイロット『シャア・アズナブル』と、彼の妹『セイラ・マス』の運命を決定づけた悲劇の始まりと過去〜２人の兄妹の流転の物語〜を背景に、サイド３の実権を掌握しジオン公国を統率するザビ家、ランバ・ラルや黒い三連星など「一年戦争」で活躍した数々のジオン軍の名高きエースパイロットたちの若き日の勇姿、戦況を劇的に変えることとなった人型機動兵器「モビルスーツ」の開発秘話、地球連邦軍との軋轢や開戦への道程など、「一年戦争」以前の過去の物語が、映像として初めて描かれていきます。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2019-04-28",
+    "rating_rank": 870,
+    "rating_score": 7.5,
+    "rating_total": 604,
+    "main_character_ids": [
+        7694,
+        13245
+    ],
+    "main_characters": [
+        {
+            "id": 7694,
+            "name": "セイラ・マス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b9/fb/7694_crt_Yifem.jpg?r=1428257571",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/fb/7694_crt_Yifem.jpg?r=1428257571",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/fb/7694_crt_Yifem.jpg?r=1428257571",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b9/fb/7694_crt_Yifem.jpg?r=1428257571"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 13245,
+            "name": "シャア・アズナブル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9c/47/13245_crt_Ag8BX.jpg?r=1416820329",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/47/13245_crt_Ag8BX.jpg?r=1416820329",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/47/13245_crt_Ag8BX.jpg?r=1416820329",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9c/47/13245_crt_Ag8BX.jpg?r=1416820329"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

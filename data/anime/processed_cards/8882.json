@@ -1,0 +1,58 @@
+{
+    "id": 8882,
+    "name": "梦幻拉拉",
+    "image_path": "data/images/anime/8882.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "9岁小学女生筱原美穗偶然遇到两个“时间记忆精灵”皮古和摩古，它们送了魔法笔和魔法画簿给美穗，让她可以使用魔法把画像变成实体。美穗用魔法把自己变成15岁的拉拉，偶然之下在街上被邀请担任替工模特，从此打开进入演艺界之路。\r\n",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "少女向"
+    ],
+    "date": "1998-04-05",
+    "rating_rank": 1822,
+    "rating_score": 7.3,
+    "rating_total": 83,
+    "main_character_ids": [
+        8163
+    ],
+    "main_characters": [
+        {
+            "id": 8163,
+            "name": "篠原みほ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/95/cc/8163_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/cc/8163_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/cc/8163_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/95/cc/8163_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4154,
+                    "name": "大森玲子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d1/d2/4154_prsn_0xWT4.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d1/d2/4154_prsn_0xWT4.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d1/d2/4154_prsn_0xWT4.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d1/d2/4154_prsn_0xWT4.jpg"
+                    },
+                    "short_summary": "大森 玲子（おおもり れいこ、1984年3月21日 - ）は、日本のタレント、歌手である。当初は本名の「大森玲子」で活動していた。Eldie Media Worksに事務所移籍した際に「相原玲」（あいはられい）に改名したが、2013年現在は元の大森玲子に戻している。\r\n北海道函館市出身、一時期東京暮らしを経て千葉県船橋市育ち。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

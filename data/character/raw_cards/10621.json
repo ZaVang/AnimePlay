@@ -1,0 +1,52 @@
+{
+    "id": 10621,
+    "name": "日向秀树",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/47/b5/10621_crt_leqQR.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/b5/10621_crt_leqQR.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/b5/10621_crt_leqQR.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/47/b5/10621_crt_leqQR.jpg"
+    },
+    "summary": "战线的气氛制造者\r\n“这样子终于可以称为同伴了哪”\r\n战线创始人之一，有着老资历的成员，战线的气氛制造者。对于新人音无采取善意的态度，如同好友一般地对待他。虽然本人好像很有人望的样子，实际上并没达到那种程度。不过即使如此也由于那种不会遭人厌恶的性格而处在成员的中心位置。游戏版中是音无的室友。\r\n\r\n动画：战线的气氛营造者\r\n性格开朗、随和，是战线的氛围营造者的存在。\r\n对新参加者音无也有着好意，讲了许多战线和死后世界的事情，是可以称呼为挚友的存在。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "日向秀树"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ひなた ひでき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hinada Hideki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://key.visualarts.gr.jp/angelbeats/character.html"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 12,
+        "collects": 48
+    },
+    "anime_ids": [
+        363880
+    ]
+}

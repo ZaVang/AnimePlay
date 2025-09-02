@@ -1,0 +1,52 @@
+{
+    "id": 3776,
+    "name": "榎木津礼二郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/dd/13/3776_crt_yqDoy.jpg?r=1437490559",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/13/3776_crt_yqDoy.jpg?r=1437490559",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/13/3776_crt_yqDoy.jpg?r=1437490559",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dd/13/3776_crt_yqDoy.jpg?r=1437490559"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "榎木津礼二郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "榎木津 礼二郎"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Enokizu Reijiro"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 11
+    },
+    "anime_ids": [
+        916
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "id": 253,
+    "name": "桂小太郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/eb/28/253_crt_4I5Hd.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/28/253_crt_4I5Hd.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/28/253_crt_4I5Hd.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/eb/28/253_crt_4I5Hd.jpg"
+    },
+    "summary": "银时以前的盟友，攘夷志士中的幸存者。\r\n企划讨伐天人及幕府，重整腐败的国家, 建立武士之国。 \r\n以前常进行过激的攘夷活动，喜欢使用圆形的小炸弹，所以他被认为是恐怖份子，亦因此有“狂乱贵公子”之称。 \r\n表面上是个十分COOL的美男子，但大多数时间都很白痴。因为空知(作者)认为严肃的他最好搞笑 \r\n通称“假发”（ヅラ）。当有叫他“假发”时便一定会说 : \"不是假发，是桂\"（ヅラじゃない、桂だ）。而他亦经常以 \"不是○○，是××\"（○○じゃない、××だ）的句式说话。 \r\n最喜欢吃荞麦面。 \r\n称呼神乐为“队长”（リーダ)。 \r\n名字是参照幕末“维新三杰”之一的长州藩士“桂小五郎（木戸孝允）”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "桂小太郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "桂小太郎"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かつら　こたろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Katsura Kotarou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "6月26日"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        },
+        {
+            "key": "体重",
+            "value": "56kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "石田彰"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 26,
+    "stat": {
+        "comments": 41,
+        "collects": 318
+    },
+    "anime_ids": [
+        232884
+    ]
+}

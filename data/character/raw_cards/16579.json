@@ -1,0 +1,35 @@
+{
+    "id": 16579,
+    "name": "在原行平",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b9/c6/16579_crt_Wo4gO.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/c6/16579_crt_Wo4gO.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/c6/16579_crt_Wo4gO.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b9/c6/16579_crt_Wo4gO.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        37138
+    ]
+}

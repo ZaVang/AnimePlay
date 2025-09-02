@@ -1,0 +1,48 @@
+{
+    "id": 1165,
+    "name": "Zwei",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/02/ad/1165_crt_GtSoE.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/ad/1165_crt_GtSoE.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/ad/1165_crt_GtSoE.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/02/ad/1165_crt_GtSoE.jpg"
+    },
+    "summary": "本作男主角，日本人，原名吾妻玲二。故事一开始因为初中毕业到美国旅行，撞见Ein的暗杀过程，而被列入排除名单。因为在生命遭遇危机时所爆发出的潜能，所以被Inferno带走并消除记忆从而训练成杀手。Zwei的意思为德文的数字2，被Ein喻为另一个自己。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "吾妻玲二"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "吾妻玲二"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ツヴァイ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 11,
+        "collects": 39
+    },
+    "anime_ids": [
+        1426
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "id": 258,
+    "name": "西連寺春菜",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/99/7a/258_crt_Xuoxp.jpg?r=1497892695",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/7a/258_crt_Xuoxp.jpg?r=1497892695",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/7a/258_crt_Xuoxp.jpg?r=1497892695",
+        "grid": "https://lain.bgm.tv/pic/crt/g/99/7a/258_crt_Xuoxp.jpg?r=1497892695"
+    },
+    "summary": "高中二年级学生。梨斗以及菈菈等人的同学。留有紫色短发，谦虚，性格稳重冷静的美少女。2-A班的班长，网球部的成员之一。 \r\n她是梨斗暗恋的对象，也因为看到照顾植物的梨斗所以从中学生时期就对他抱有好感，所以实际上双方是相思相爱的关系。\r\n当害怕到达极限的时候会开始出现捣乱的行为。弱点是害怕妖怪和幽灵，而且常被好朋友里纱和未央从后方袭胸。 \r\n和姊姊秋穗住在一起，养了一只名为马隆的波士顿犬。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "西连寺春菜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Haruna Sairenji"
+                },
+                {
+                    "k": "日文名",
+                    "v": "西連寺 春菜"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さいれんじ はるな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sairenji Haruna"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月6日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "50kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B79-W56-H82"
+        },
+        {
+            "key": "专长",
+            "value": "网球"
+        },
+        {
+            "key": "喜欢",
+            "value": "马隆（狗）、苹果、红茶"
+        },
+        {
+            "key": "不擅长",
+            "value": "鬼怪、暗处"
+        },
+        {
+            "key": "收到会开心的物品",
+            "value": "海豚饰品"
+        },
+        {
+            "key": "喜欢的游玩地点",
+            "value": "水族馆"
+        },
+        {
+            "key": "喜欢的电影类型",
+            "value": "浪漫爱情片"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 6,
+    "stat": {
+        "comments": 35,
+        "collects": 139
+    },
+    "anime_ids": [
+        8546
+    ]
+}

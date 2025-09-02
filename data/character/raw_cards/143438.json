@@ -1,0 +1,56 @@
+{
+    "id": 143438,
+    "name": "美杉美々美",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bf/18/143438_crt_qudJ4.jpg?r=1717851119",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/18/143438_crt_qudJ4.jpg?r=1717851119",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/18/143438_crt_qudJ4.jpg?r=1717851119",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bf/18/143438_crt_qudJ4.jpg?r=1717851119"
+    },
+    "summary": "恋太郎の彼女の一人。\r\n常に煌びやかな美しすぎる高校２年生。自己愛が強く、褒められると心底嬉しそうな反応を見せる。美へのこだわりと探求心が凄まじく、日々美しくあるための研鑽を怠らない努力家でもある。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "美杉美美美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "美杉 美々美"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "うつくしすぎ みみみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Utsukushisugi Mimimi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月3日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 3,
+    "stat": {
+        "comments": 15,
+        "collects": 32
+    },
+    "anime_ids": [
+        471793
+    ]
+}

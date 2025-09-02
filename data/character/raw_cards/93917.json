@@ -1,0 +1,60 @@
+{
+    "id": 93917,
+    "name": "ホロホロ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a0/02/93917_crt_2GD0K.jpg?r=1617447815",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a0/02/93917_crt_2GD0K.jpg?r=1617447815",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a0/02/93917_crt_2GD0K.jpg?r=1617447815",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a0/02/93917_crt_2GD0K.jpg?r=1617447815"
+    },
+    "summary": "北海道からシャーマンファイトのために上京してきたシャーマン。常に額にヘアバンドやタオルを巻いているのが特徴で、どんな時でも明るい熱血タイプ。とある夢を叶えるためにシャーマンキングを目指している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "霍洛霍洛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "碓氷ホロケウ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Horohoro"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1985年11月27日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://shamanking-project.com/character/horohoro"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1985,
+    "birth_mon": 11,
+    "birth_day": 27,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        4190
+    ]
+}

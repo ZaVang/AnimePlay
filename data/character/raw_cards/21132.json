@@ -1,0 +1,56 @@
+{
+    "id": 21132,
+    "name": "R・ドロシー・ウェインライト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/56/5d/21132_crt_tIgEG.jpg?r=1745947180",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/5d/21132_crt_tIgEG.jpg?r=1745947180",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/5d/21132_crt_tIgEG.jpg?r=1745947180",
+        "grid": "https://lain.bgm.tv/pic/crt/g/56/5d/21132_crt_tIgEG.jpg?r=1745947180"
+    },
+    "summary": "ウェインライト博士が自分の娘に似せて作ったアンドロイド。ソルダーノ重工令嬢誘拐事件に端を発する一連の事件をきっかけに、報酬の肩代わりの名目でロジャーの屋敷にいついてしまった。\r\n一見伏目がちで物静かな美少女だが、シニカルな言動、傍若無人な態度はロジャーを困惑させることもしばし。それらは、普段はあまり表面に出さない、彼女自身の感情やメモリーが反映されているのだろう。\r\nロジャーの気持ちはお構い無しでの、毎朝のピアノ演奏が趣味。特別な攻撃力はないが、その見かけとは裏腹の自重にも関わらず活動は俊敏。\r\n額のカチューシャ部分が、メモリードライブとなっており、発光機能も備えている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "R·多洛茜·薇恩莱特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "R. Dorothy Wayneright"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "130kg"
+        },
+        {
+            "key": "年齢",
+            "value": "１８歳相当"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 29,
+        "collects": 107
+    },
+    "anime_ids": [
+        697
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "id": 102913,
+    "name": "グランゾート",
+    "type": 2,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/44/81/102913_crt_qJ5nR.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/81/102913_crt_qJ5nR.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/81/102913_crt_qJ5nR.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/44/81/102913_crt_qJ5nR.jpg"
+    },
+    "summary": "炎と大地を司る魔動王。使用する魔法には炎と大地のパワーが宿っており、魔動王随一の破壊力とパワーを備えている。召還方法は、大地が魔動銃から魔法陣プレートを撃ち出し、地面に巨大な魔法陣を描くこと。グランゾートはその魔法陣を出現口として、大地から湧き上がるようにして出現するため、魔法陣が描けるだけの地面がないと呼び出せない。グランゾートに乗り込むには100メートルを５秒で走る必要があるが、大地は自作のジェットボードを使用して乗り込む。グランゾートは３体の魔動王の中で、唯一、言葉によるコミュニケーションをとることが可能。剣の使い手",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "地动王"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "地隐侠"
+                },
+                {
+                    "v": "火动王"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "光能使者"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Granzort"
+                },
+                {
+                    "k": "昵称",
+                    "v": "地神号"
+                }
+            ]
+        },
+        {
+            "key": "主",
+            "value": "遥　大地"
+        },
+        {
+            "key": "召還キーワード",
+            "value": "マジカルシュート！　ドーマ・キサ・ラムーン、光り出よ、汝グランゾート！"
+        },
+        {
+            "key": "魔動具",
+            "value": "魔動銃"
+        },
+        {
+            "key": "武器",
+            "value": "エルディカイザー"
+        },
+        {
+            "key": "必殺技",
+            "value": "一刀両断エルディカイザー"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.granzort.net/mechanic/"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 2
+    },
+    "anime_ids": [
+        5467
+    ]
+}

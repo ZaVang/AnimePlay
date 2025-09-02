@@ -1,0 +1,185 @@
+{
+    "id": 285813,
+    "name": "大欺诈师",
+    "image_path": "data/images/anime/285813.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "在东京以欺诈为生的狡猾年轻人枝村真人，某日遇上了法国人罗兰。被罗兰不骗不相识的真人，决定和罗兰前往洛杉矶做一单大的。两人的目标是好莱坞制作人兼帮派头目埃迪·卡萨诺，在罗兰的计划里，美少女阿比，性感美女辛西娅，老奸巨猾的席翁先后加入，一场最大的欺诈游戏即将开始。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 23,
+    "synergy_tags": [
+        "悬疑",
+        "TV",
+        "日本",
+        "原创",
+        "剧情"
+    ],
+    "date": "2020-07-08",
+    "rating_rank": 1799,
+    "rating_score": 7.2,
+    "rating_total": 3992,
+    "main_character_ids": [
+        74912,
+        74913,
+        74914,
+        74915
+    ],
+    "main_characters": [
+        {
+            "id": 74912,
+            "name": "枝村真人",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4e/b2/74912_crt_21TxR.jpg?r=1579840417",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/b2/74912_crt_21TxR.jpg?r=1579840417",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/b2/74912_crt_21TxR.jpg?r=1579840417",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4e/b2/74912_crt_21TxR.jpg?r=1579840417"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 32265,
+                    "name": "小林千晃",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/72/32265_prsn_BtQ9g.jpg?r=1631019139",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/72/32265_prsn_BtQ9g.jpg?r=1631019139",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/72/32265_prsn_BtQ9g.jpg?r=1631019139",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/72/32265_prsn_BtQ9g.jpg?r=1631019139"
+                    },
+                    "short_summary": "小林 千晃（こばやし ちあき、1994年6月4日 - ）は、日本の男性声優。神奈川県出身。大沢事務所所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 74913,
+            "name": "ローラン・ティエリー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d9/f3/74913_crt_WZN0w.jpg?r=1579840479",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/f3/74913_crt_WZN0w.jpg?r=1579840479",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/f3/74913_crt_WZN0w.jpg?r=1579840479",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d9/f3/74913_crt_WZN0w.jpg?r=1579840479"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3864,
+                    "name": "諏訪部順一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884"
+                    },
+                    "short_summary": "日本の男性声優、ナレーター、歌手。東京俳優生活協同組合所属。",
+                    "locked": false
+                },
+                {
+                    "id": 25470,
+                    "name": "内藤有海",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5e/77/25470_prsn_v41CQ.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/77/25470_prsn_v41CQ.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/77/25470_prsn_v41CQ.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5e/77/25470_prsn_v41CQ.jpg"
+                    },
+                    "short_summary": "日本の女性声優。北海道出身。\r\n総合学園ヒューマンアカデミー卒業。賢プロダクション所属。",
+                    "locked": false
+                },
+                {
+                    "id": 40276,
+                    "name": "张恩泽",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c4/37/40276_prsn_J3z6w.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/37/40276_prsn_J3z6w.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/37/40276_prsn_J3z6w.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c4/37/40276_prsn_J3z6w.jpg"
+                    },
+                    "short_summary": "中国大陆的男性配音演员。北斗企鹅工作室所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 74914,
+            "name": "アビゲイル・ジョーンズ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/cb/02/74914_crt_ytuYY.jpg?r=1579840559",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cb/02/74914_crt_ytuYY.jpg?r=1579840559",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cb/02/74914_crt_ytuYY.jpg?r=1579840559",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cb/02/74914_crt_ytuYY.jpg?r=1579840559"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 22712,
+                    "name": "藤原夏海",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5d/16/22712_prsn_8UvLE.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5d/16/22712_prsn_8UvLE.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5d/16/22712_prsn_8UvLE.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5d/16/22712_prsn_8UvLE.jpg"
+                    },
+                    "short_summary": "日本の女性声優。静岡県浜松市出身。アーツビジョン所属。\r\n\r\n趣味・特技：歌唱、キャッチボール、鉄棒、けん玉",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 74915,
+            "name": "シンシア・ムーア",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ce/ea/74915_crt_4J32Z.jpg?r=1605894175",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/ea/74915_crt_4J32Z.jpg?r=1605894175",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/ea/74915_crt_4J32Z.jpg?r=1605894175",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ce/ea/74915_crt_4J32Z.jpg?r=1605894175"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3943,
+                    "name": "園崎未恵",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/da/21/3943_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/21/3943_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/21/3943_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/da/21/3943_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、女優、ナレーター、歌手。リマックス所属。愛称は、みけ、おそのさん。\r\n\r\n東京都出身。身長155.5cm、血液型はA型。以前の芸名はそのざきみえ。\r\n\r\n在芭蕾舞教师母亲的教导下，小学入学时开始学习古典芭蕾舞剧。高中（女子学校）戏剧部所属。专科毕业后，俳协演剧研究所入所。老师是手冢敏夫。1994年3月同所毕业。毕业后从事舞台音响相关的工作，有电视剧临时演员和模特的经验。此后正式开始解说的工作。\r\n1996年，移籍至TAB Production。开始了声优的道路。\r\n1997年，以“そのざきみえ”为艺名作为声优出道。\r\n1999年1月，退出TAB Production。同年4月加入Remax。\r\n2002年4月1日，艺名表记改为汉字的“园崎未惠”。\r\n2008年11月8日，宣布结婚。\r\n2013年12月30日，经过4年半的婚姻生活后离婚。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 19328,
+    "name": "宮沢雪野",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/80/33/19328_crt_Lxxul.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/33/19328_crt_Lxxul.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/33/19328_crt_Lxxul.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/80/33/19328_crt_Lxxul.jpg"
+    },
+    "summary": "故事的女主角，初登场15岁，就读于神奈川县立北荣高中一年A班，是家里三姐妹的老大。在外人眼中雪野是个开朗聪明、多才多艺，既漂亮又温柔的可爱女孩，其实在厚重的面具下，雪野是一个尽心竭力要摄取他人赞美和崇拜的超级爱面子的家伙。直到遇见生平第一强敌有马总一郎，雪野才决心彻底改变做回真实的自己。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宫泽雪野"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "宮沢雪野"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みやざわ ゆきの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Miyazawa Yukino"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ゆきのん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 11,
+        "collects": 71
+    },
+    "anime_ids": [
+        2049
+    ]
+}

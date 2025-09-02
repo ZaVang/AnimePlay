@@ -1,0 +1,52 @@
+{
+    "id": 19239,
+    "name": "羽山秋人",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ed/64/19239_crt_a5T2v.jpg?r=1651219743",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/64/19239_crt_a5T2v.jpg?r=1651219743",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/64/19239_crt_a5T2v.jpg?r=1651219743",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ed/64/19239_crt_a5T2v.jpg?r=1651219743"
+    },
+    "summary": "紗南のクラスメイト→彼氏。（アニメ版では最後まで正式には付き合っていない）。1982年10月12日（※アニメでは1984年）生まれ。天秤座。B型。母親の顔を覚えていない。紗南との出会いによって徐々に心を開き、後に恋心を抱く。母親の死をきっかけに父や姉と不仲だったが紗南の協力で家族仲は改善される。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "羽山秋人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "はやま あきと"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "10月12日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 12,
+    "stat": {
+        "comments": 1,
+        "collects": 12
+    },
+    "anime_ids": [
+        1515
+    ]
+}

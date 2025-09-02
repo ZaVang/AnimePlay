@@ -1,0 +1,35 @@
+{
+    "id": 34892,
+    "name": "櫟士（いちせ）",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0a/a4/34892_crt_4iJbu.jpg?r=1439038597",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/a4/34892_crt_4iJbu.jpg?r=1439038597",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/a4/34892_crt_4iJbu.jpg?r=1439038597",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0a/a4/34892_crt_4iJbu.jpg?r=1439038597"
+    },
+    "summary": "本作の主人公。元賭けボクサー。19歳。オルガノに対立して右腕と左足を切り落とされ、ドクにテクノライズを受けることになる。幼少時、父親が処刑され、後に母親とも死別して天涯孤独の身となる。訳あって父親を憎悪している。寡黙だが、生きることへの執着心が強い。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 11
+    },
+    "anime_ids": [
+        10416
+    ]
+}

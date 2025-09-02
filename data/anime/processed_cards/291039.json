@@ -1,0 +1,183 @@
+{
+    "id": 291039,
+    "name": "水果篮子 第二季",
+    "image_path": "data/images/anime/291039.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "透が紫呉の家に住み始めてから一年が経とうとしていた。由希と夾だけでなく草摩家の皆とも交流を深めてきたが、今も気になるのは忌まわしき『呪い』の正体。\r\n進むべき道、決められた宿命、終わりなき――十二支の――宴を前にして由希は、夾は、そして透は何を想い、何を決意するのだろうか……。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 25,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2020-04-06",
+    "rating_rank": 1893,
+    "rating_score": 7.2,
+    "rating_total": 843,
+    "main_character_ids": [
+        205,
+        276,
+        277,
+        278
+    ],
+    "main_characters": [
+        {
+            "id": 205,
+            "name": "草摩紫呉",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/08/a0/205_crt_PMfj2.jpg?r=1547825507",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/a0/205_crt_PMfj2.jpg?r=1547825507",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/a0/205_crt_PMfj2.jpg?r=1547825507",
+                "grid": "https://lain.bgm.tv/pic/crt/g/08/a0/205_crt_PMfj2.jpg?r=1547825507"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4724,
+                    "name": "中村悠一",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/78/4724_prsn_7TvWV.jpg"
+                    },
+                    "short_summary": "爱称是ゆうきゃん，由铃村健一命名。英文标记法为‘yuu-kyan’\r\n与声优的杉田智和的私交良好，是在声优界著名的好友。\r\n兴趣是玩游戏、看电影等。\r\n不喜欢吃拉面。喜欢的食物是肉、奶酪、甜食。\r\n2020年10月1日，宣布从Sigma Seven移籍至INTENTION。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 276,
+            "name": "本田透",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f7/46/276_crt_n631N.jpg?r=1552757291",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/46/276_crt_n631N.jpg?r=1552757291",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/46/276_crt_n631N.jpg?r=1552757291",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f7/46/276_crt_n631N.jpg?r=1552757291"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 27559,
+                    "name": "石見舞菜香",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710"
+                    },
+                    "short_summary": "日本女性声优。出生于埼玉县。所属事务所为Raccoon Dog（ラクーンドッグ）。\r\n毕业于Pro Fit声优培训学校。\r\n\r\n初中时期观看《我们仍未知道那天所看见的花的名字。》（あの日見た花の名前を僕達はまだ知らない。）时，被茅野爱衣的演技深深打动，萌生了\"想用声音感动人心\"的愿望，从此立志成为声优。而让她初识声优职业的契机是《无头骑士异闻录》（デュラララ!!）。\r\n\r\n因自觉发音不够清晰，石见认为必须比他人更早开始专业训练才能成为职业声优。为此她向父亲立下\"若不同意自己就读声优培训学校就拒绝升学高中\"的宣言，最终成功说服家人。\r\n\r\n2016年，在《未闻花名》编剧冈田麿里首部执导作品《朝花夕誓——于离别之朝束起约定之花》（さよならの朝に約束の花をかざろう）中，石见被选拔担任女主角玛奇亚的配音。该作中更实现了与饰演玛奇亚挚友蕾莉亚的茅野爱衣同台演出。\r\n\r\n兴趣爱好是散步、读书，特长是演奏大号（チューバ）和动耳神功。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 277,
+            "name": "草摩由希",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/71/53/277_crt_Y5Vfv.jpg?r=1552757331",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/53/277_crt_Y5Vfv.jpg?r=1552757331",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/53/277_crt_Y5Vfv.jpg?r=1552757331",
+                "grid": "https://lain.bgm.tv/pic/crt/g/71/53/277_crt_Y5Vfv.jpg?r=1552757331"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7392,
+                    "name": "島﨑信長",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/65/0b/7392_prsn_85bDV.jpg"
+                    },
+                    "short_summary": "岛﨑信长（1988年12月6日－），日本男性配音演员。隶属于青二Production。出身于宫城县。",
+                    "locked": false
+                },
+                {
+                    "id": 31512,
+                    "name": "島袋美由利",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4c/b9/31512_prsn_Z57Xv.jpg?r=1551440055",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/b9/31512_prsn_Z57Xv.jpg?r=1551440055",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/b9/31512_prsn_Z57Xv.jpg?r=1551440055",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4c/b9/31512_prsn_Z57Xv.jpg?r=1551440055"
+                    },
+                    "short_summary": "『ゆらぎ荘の幽奈さん』の湯ノ花幽奈役で初のメインキャラクターを担当。\r\n\r\n日本的女性声优，冲绳县出身。大泽事务所所属。\r\n\r\n2017年、『キラキラ☆プリキュアアラモード』でデビュー。2020年、第14回声優アワードで新人女優賞を受賞。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 278,
+            "name": "草摩夾",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/07/64/278_crt_OkTt5.jpg?r=1547825498",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/64/278_crt_OkTt5.jpg?r=1547825498",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/64/278_crt_OkTt5.jpg?r=1547825498",
+                "grid": "https://lain.bgm.tv/pic/crt/g/07/64/278_crt_OkTt5.jpg?r=1547825498"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 15390,
+                    "name": "内田雄馬",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/38/47/15390_prsn_iW2u5.jpg?r=1647787440",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/47/15390_prsn_iW2u5.jpg?r=1647787440",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/47/15390_prsn_iW2u5.jpg?r=1647787440",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/38/47/15390_prsn_iW2u5.jpg?r=1647787440"
+                    },
+                    "short_summary": "日本の男性声優。\r\n東京都出身。インテンション所属。実姉は、同じく声優の内田真礼。\r\n\r\n趣味は音楽、散歩、森林浴、山登り。特技は作曲、モノマネ、焼肉を焼く、ジャケットプレイ。\r\n好きな言葉は、『為せば成る、為さねば成らぬ何事も』だという。\r\n衝撃を受けた声優には、関智一を挙げている。\r\n将来的には、どの世代でも主役をこなせていける声優になりたいとしている。\r\n声優仲間である石川界人と仲が良い。\r\n\r\n一家揃ってのゲーム好きだった影響で、13歳の時に『サクラ大戦』がきっかけで声優業に関心を持ち、進路を考える17歳の時に声優への志望を強め、日本ナレーション演技研究所に入学。\r\n同養成所在籍中の2012年に、『Holy Knight』のアニメ版のアフレコで声優デビューを果たした後、養成所を卒業し、2013年4月1日付けで現事務所所属となる。\r\n声優としてはまだ無名だった2013年に、杉田智和に誘われてパシフィコ横浜で開催された「A＆Gオールスター2013」に、女装姿で飛び入り出演した。\r\n2017年1月より、パーソナリティを務める一人しゃべりラジオ番組『内田雄馬 君の話を焼かせて』の放送を開始。\r\n2017年、第11回声優アワードで新人男優賞を受賞。\r\n同年秋、コーエーテクモゲームスからNintendo Switch向けに発売されるファイアーエムブレムと無双シリーズとのコラボ作品『ファイアーエムブレム無双』で、姉・真礼とダブル主演を果たす。\r\n2018年、KING AMUSEMNET CREATIVEよりアーティストデビュー。\r\n2019年3月9日、第13回声優アワード主演男優賞を受賞。\r\n2022年12月31日、10年在籍したアイムエンタープライズを退所。翌2023年1月1日よりインテンションに所属。",
+                    "locked": false
+                },
+                {
+                    "id": 23379,
+                    "name": "泊明日菜",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e0/92/23379_prsn_TK2S1.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/92/23379_prsn_TK2S1.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/92/23379_prsn_TK2S1.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e0/92/23379_prsn_TK2S1.jpg"
+                    },
+                    "short_summary": "日本的女性声优，茨城县出身，Zynchro所属。\r\n\r\n趣味・特技：寺社参詣、散歩、躰道、クラシックバレエ\r\n資格：秘書検定3級、漢字検定準2級、躰道初段、普通運転免許(AT限定)\r\n芸歴：日本ナレーション演技研究所",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

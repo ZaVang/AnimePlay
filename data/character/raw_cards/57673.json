@@ -1,0 +1,48 @@
+{
+    "id": 57673,
+    "name": "ユーリ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d8/0b/57673_crt_s7XFl.jpg?r=1513661592",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/0b/57673_crt_s7XFl.jpg?r=1513661592",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/0b/57673_crt_s7XFl.jpg?r=1513661592",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d8/0b/57673_crt_s7XFl.jpg?r=1513661592"
+    },
+    "summary": "个子较高的棕发少女，性格悠闲自在。喜欢吃东西，说话不假思索。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "尤莉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "优梨"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yūri"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 57,
+        "collects": 266
+    },
+    "anime_ids": [
+        218707
+    ]
+}

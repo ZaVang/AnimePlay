@@ -1,0 +1,79 @@
+{
+    "id": 98940,
+    "name": "ヴリトラモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/38/d7/98940_crt_6tkrX.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/d7/98940_crt_6tkrX.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/d7/98940_crt_6tkrX.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/38/d7/98940_crt_6tkrX.jpg"
+    },
+    "summary": "寄宿着传说中的十斗士力量，拥有火属性能力的数码宝贝。拥有可以承受高温的表皮，在熔岩之中也能活动，能够用瞬间爆发的火焰来抵消火焰的火焰战士。据说它是从研究活火山的资料中产生，内含无法测量的未知能源。它的名字源于印度神话中雷神因陀罗视为仇敌的火龙，此名也呈现出了它勇猛的性格。战斗方式相当豪迈，对手越强越能激起它的斗志。但也有着在战况不利时不懂得退却的鲁莽一面。必杀技是从双臂的超兵器“楼陀罗宝镜”发射威力相当于太阳热度的雷射光的『日冕冲击波』，以及使全身起火，振翅放出高温龙卷风的『烈焰风暴』。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "炎龙兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "布利陀罗兽"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Vritramon"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Vuritoramon"
+                },
+                {
+                    "k": "称号",
+                    "v": "火之兽型斗士"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference/detail.php?directory_name=vritramon"
+        },
+        {
+            "key": "等级",
+            "value": "混合体"
+        },
+        {
+            "key": "类型",
+            "value": "魔龙型"
+        },
+        {
+            "key": "属性",
+            "value": "可变"
+        },
+        {
+            "key": "必杀技",
+            "value": [
+                {
+                    "v": "日冕冲击波"
+                },
+                {
+                    "v": "烈焰风暴"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        3131
+    ]
+}

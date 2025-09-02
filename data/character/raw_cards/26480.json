@@ -1,0 +1,72 @@
+{
+    "id": 26480,
+    "name": "エリザベス・リオネス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4c/03/26480_crt_DXuAZ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/03/26480_crt_DXuAZ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/03/26480_crt_DXuAZ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4c/03/26480_crt_DXuAZ.jpg"
+    },
+    "summary": "リオネス王国第3王女。聖騎士のクーデターを憂い、王都奪還の助力を七つの大罪に乞うためにメリオダスと同行する。七つの大罪と同行しているため、彼ら共々指名手配にされている。\r\n\r\n本作女主角。银发蓝眸，端庄的美人，刘海挡住右眼。\r\n里昂妮丝王国第三公主。为拯救因圣骑士的暴行而民不聊生的王国而独自出逃寻找七大罪。穿着巨大的生锈盔甲来到猪帽子亭，被称为『生锈骑士』，以真诚之心打动了团长梅利奥达斯，一起踏上寻找团员之旅。\r\n被任命为猪帽子亭的招牌女郎，平日都在酒馆工作，和霍克感情很好。后也被登上了王国的通缉令。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊丽莎白·里昂尼丝"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Elizabeth Liones"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月12日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "体重",
+            "value": "不明"
+        },
+        {
+            "key": "種族",
+            "value": "人間（元女神族）"
+        },
+        {
+            "key": "年齢",
+            "value": "16歳"
+        },
+        {
+            "key": "闘級",
+            "value": "1925（魔力1700/武力5/気力220)"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 12,
+    "stat": {
+        "comments": 10,
+        "collects": 60
+    },
+    "anime_ids": [
+        101820
+    ]
+}

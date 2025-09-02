@@ -1,0 +1,72 @@
+{
+    "id": 36302,
+    "name": "伊吹翼",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a2/5b/36302_crt_xci68.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/5b/36302_crt_xci68.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/5b/36302_crt_xci68.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a2/5b/36302_crt_xci68.jpg"
+    },
+    "summary": "偶像大师 MILLION LIVE!》中登场的偶像。Visual属性。左撇子。 \r\n\r\n位置与本家的星井美希和灰姑娘的本田未央相同。 \r\n\r\n有着以大大的呆毛和两边翘起睡乱的发型为独特标志的14岁少女。 \r\n\r\n成为偶像的原因是觉得当偶像很有趣。十分仰慕美希。 \r\n\r\n姓氏「伊吹」符合偶像大师早期以军舰名作为姓氏的规律。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊吹翼"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Ibuki Tsubasa"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いぶき つばさ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月30日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "体重",
+            "value": "43kg"
+        },
+        {
+            "key": "BWH",
+            "value": "85-52-82"
+        },
+        {
+            "key": "年龄",
+            "value": "14岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 30,
+    "stat": {
+        "comments": 24,
+        "collects": 51
+    },
+    "anime_ids": [
+        309807
+    ]
+}

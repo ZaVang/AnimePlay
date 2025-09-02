@@ -1,0 +1,72 @@
+{
+    "id": 68266,
+    "name": "ロック / 朝日六花",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b5/15/68266_crt_8SNi8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/15/68266_crt_8SNi8.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/15/68266_crt_8SNi8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b5/15/68266_crt_8SNi8.jpg"
+    },
+    "summary": "羽丘女子学園に通う高校1年生。なにかとツイてない苦労人だが、何事にも一生懸命な頑張り屋さん。商店街の一角にあるライブハウス『Galaxy』でアルバイトをしながら、自分もいつかバンドを組みたいと強く思っている。Poppin'Partyの大ファン。岐阜県出身。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "LOCK / 朝日六花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あさひ ろっか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Asahi Rokka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月17日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁"
+        },
+        {
+            "key": "所属",
+            "value": "RAISE A SUILEN"
+        },
+        {
+            "key": "担当",
+            "value": "吉他手"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 17,
+    "stat": {
+        "comments": 29,
+        "collects": 92
+    },
+    "anime_ids": [
+        246430
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "id": 97671,
+    "name": "清峰葉流火",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9f/15/97671_crt_TT87R.jpg?r=1702796152",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/15/97671_crt_TT87R.jpg?r=1702796152",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/15/97671_crt_TT87R.jpg?r=1702796152",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9f/15/97671_crt_TT87R.jpg?r=1702796152"
+    },
+    "summary": "都立小手指高校一年。\r\n中学時代に完全無欠と評された、圧倒的なフィジカルから繰り出す140キロオーバーの直球が武器の剛腕投手。打撃のセンスも抜群の天才肌だが口数少なくコミュニケーション能力に難あり。幼馴染の圭とバッテリーを組んで野球をすることにこだわっている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "清峰叶流火"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "きよみね はるか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kiyomine Haruka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "12月10日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "185cm"
+        },
+        {
+            "key": "位置",
+            "value": "投手"
+        },
+        {
+            "key": "投打",
+            "value": "右投右打"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 10,
+    "stat": {
+        "comments": 21,
+        "collects": 13
+    },
+    "anime_ids": [
+        448478
+    ]
+}

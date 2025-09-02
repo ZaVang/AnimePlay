@@ -1,0 +1,53 @@
+{
+    "id": 58864,
+    "name": "监狱兔 第二季",
+    "image_path": "data/images/anime/58864.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "在普京出狱当天，基廉列克在球鞋杂志里发现了限量版的帆布鞋即将发售，因而决定要逃狱，普京也在逃狱行动中被误认为同党而被迫跟了上去。故事讲述了他们于山坡道间驾车时发生的事情。这一集中也出现了两名警察兔，因为和基廉列克结下梁子而展开了追捕行动。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2007-10-08",
+    "rating_rank": 1103,
+    "rating_score": 7.4,
+    "rating_total": 1506,
+    "main_character_ids": [
+        2505,
+        10501
+    ],
+    "main_characters": [
+        {
+            "id": 2505,
+            "name": "プーチン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ba/ba/2505_crt_eKONl.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/ba/2505_crt_eKONl.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/ba/2505_crt_eKONl.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ba/ba/2505_crt_eKONl.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 10501,
+            "name": "キレネンコ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bd/6f/10501_crt_04bH3.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/6f/10501_crt_04bH3.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/6f/10501_crt_04bH3.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bd/6f/10501_crt_04bH3.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

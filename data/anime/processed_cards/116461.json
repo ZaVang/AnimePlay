@@ -1,0 +1,120 @@
+{
+    "id": 116461,
+    "name": "食戟之灵",
+    "image_path": "data/images/anime/116461.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "《食戟之灵》描述男主角幸平创真梦想在国中毕业後能够继承父亲经营的幸平餐馆，却在父亲指示下来到东京都内的料理名校远月学园中就读。料理技术高超的创真，却在插班考试中被拥有神之舌的少女薙切绘里奈评为不及格!?在学园长帮助下，创真依然成功入学，并立誓要让绘里奈认同他所作的料理。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "后宫",
+        "TV",
+        "日本",
+        "漫画改",
+        "美食"
+    ],
+    "date": "2015-04-03",
+    "rating_rank": 1849,
+    "rating_score": 7.2,
+    "rating_total": 8181,
+    "main_character_ids": [
+        19452,
+        19453,
+        19454
+    ],
+    "main_characters": [
+        {
+            "id": 19452,
+            "name": "幸平創真",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ff/80/19452_crt_WB2bz.jpg?r=1748161613",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ff/80/19452_crt_WB2bz.jpg?r=1748161613",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ff/80/19452_crt_WB2bz.jpg?r=1748161613",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ff/80/19452_crt_WB2bz.jpg?r=1748161613"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5764,
+                    "name": "松岡禎丞",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/91/77/5764_prsn_njsm3.jpg?r=1447773082",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/77/5764_prsn_njsm3.jpg?r=1447773082",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/77/5764_prsn_njsm3.jpg?r=1447773082",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/91/77/5764_prsn_njsm3.jpg?r=1447773082"
+                    },
+                    "short_summary": "15歳の頃に友人の勧めで見た『新世紀エヴァンゲリオン』の渚カヲルと『テイルズ オブ エターニア』のリッド・ハーシェルの双方を演じた石田彰の演技の違いに驚愕し、声優の仕事の存在を知る。高校三年の秋まで自動車の整備士を志していたが、声優も気にするようになり、道内の声優学校を捜すが、「東京に出ないと厳しい」との助言を受け単身上京。その後、新聞奨学生の仕事をしながら、日本ナレーション演技研究所に通うようになる。2009年、22歳の頃、「今年がダメなら北海道に帰ろう」と思っていた矢先にオーディションの話が入り、これを機にアイムエンタープライズの正所属となった。\r\n\r\n2012年、第6回声優アワード新人男優賞受賞。\r\n\r\n\r\n尊敬する先輩は松風雅也。事務所の先輩でもある間島淳司とは親交が深い[2]。また事務所は違うが島﨑信長と親交がありブログでもちょくちょく語っている。\r\n\r\n女性が大の苦手。\r\n\r\n現場で頑張り過ぎて、腕や肩に痛みを感じたり、叫び過ぎて、鼻血を出したり、服の着方を間違えたりと、お茶目な部分がある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19453,
+            "name": "薙切えりな",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b6/40/19453_crt_nPOPy.jpg?r=1748161675",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/40/19453_crt_nPOPy.jpg?r=1748161675",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/40/19453_crt_nPOPy.jpg?r=1748161675",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b6/40/19453_crt_nPOPy.jpg?r=1748161675"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 8138,
+                    "name": "種田梨沙",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/07/06/8138_prsn_azY4i.jpg?r=1581916191",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/06/8138_prsn_azY4i.jpg?r=1581916191",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/06/8138_prsn_azY4i.jpg?r=1581916191",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/07/06/8138_prsn_azY4i.jpg?r=1581916191"
+                    },
+                    "short_summary": "初中一年级的时候打算成为一名声优是因为《哈利·波特》的影响，想做有关系的工作。但中学、高中的时候禁止一切艺能活动，通过自学学习了表演的经验技术。\r\n2007年，产生许多人气声优的‘智一・美树的广播大爆炸’一般应募进入，成为第9代的助理。与三上枝织同期。\r\n2012年9月出演《来自新世界》，为首部配演主役的动画。\r\n美术大学毕业，也取得高等学校美术教师资格。\r\n2016年9月1日，种田梨沙所属大泽事务所发布公告称，种田梨沙将因病暂停活动。有网友猜测，种田梨沙的病情可能与喉咙有关。\r\n2017年8月4日，大泽事务所发布公告，种田梨沙将重新开始进行声优活动。\r\n\r\n随着活动的暂停，原本由种田梨沙担任的角色改由以下声优代演或接任：\r\n水树奈奈：《WWW.WORKING!!》近藤妃\r\n真田麻美：《CHAOS;CHILD》久野里澪\r\n高桥李依：《Fate/Grand Order》玛修·基列莱特\r\n石原夏织：《Break Out》旁白\r\n金元寿子：《食戟之灵》薙切绘理奈\r\n川澄绫子：《剑姬神圣谭》里维莉亚·利欧斯·阿尔弗、《幻影纹章》巴尔蒙克、青龙偃月刀\r\n水濑祈：《英雄传说 闪之轨迹III》艾尔缇娜·奥莱恩\r\n加隈亚衣：《如果有妹妹就好了。》白川京\r\n此外，预定在2016年9月1日（即宣布休养）以后演出的活动和LIVE目前也全部取消出席。\r\n根据《偶像大师 百万人演唱会！》CD系列「THE IDOLM@STER THE@TER ACTIVITIES 03」的声优投票结果，原本预定登场的田中琴叶（声：种田梨沙）亦出于上述理由，决定改由第二名的矢吹可奈（声：木户衣吹）代为登场。决定取消出席的还有2017年3月12日在日本武道馆举办的《THE IDOLM@STER MILLION LIVE! 4thLIVE TH@NK YOU for SMILE!! DAY3 Starlight Theater》。\r\n《噬血狂袭Ⅱ》并未更换声优，而预定在2016年11月发售的姬柊雪菜（声：种田梨沙）的角色歌专辑也按照原定的日程发售。《黄金拼图 Pretty Days》由于已在活动暂停前录制完成，故预定在11月上映的电影亦按照原定的日程进行。\r\n\r\nBlog：sp.rhodanthe-rsc.jp\r\n注：付费粉丝Blog。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19454,
+            "name": "田所恵",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a3/5d/19454_crt_jyrO0.jpg?r=1748161792",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a3/5d/19454_crt_jyrO0.jpg?r=1748161792",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a3/5d/19454_crt_jyrO0.jpg?r=1748161792",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a3/5d/19454_crt_jyrO0.jpg?r=1748161792"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10757,
+                    "name": "髙橋ミナミ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e5/5f/10757_prsn_blW8L.jpg?r=1558165979",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/5f/10757_prsn_blW8L.jpg?r=1558165979",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/5f/10757_prsn_blW8L.jpg?r=1558165979",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e5/5f/10757_prsn_blW8L.jpg?r=1558165979"
+                    },
+                    "short_summary": "俳協所属\r\n\r\n出身地：神奈川県\r\n声：メゾソプラノ\r\n特技：英語、ドイツ語（日常会話程度）\r\n免許・資格：英語検定準2級\r\n趣味・スポーツ：新体操\r\n\r\n自2020年12月20日起艺名由高橋未奈美更改为髙橋ミナミ。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

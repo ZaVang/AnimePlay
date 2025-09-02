@@ -1,0 +1,137 @@
+{
+    "id": 236,
+    "name": "超时空要塞Frontier",
+    "image_path": "data/images/anime/236.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "A.D.2009，在经历了和巨大异星人Zentraedi(ゼントラーディ)的那场近乎导致人类灭亡的星间戦争之后，幸存下来的人类和Zentraedi彼此融合，开始了以种族延续为目的的银河播种计画。\r\nA.D.2059，人类为寻求可居住的惑星，不断在银河系中探寻新天地。\r\n载有千万人的超长距离移民船团Macross Frontier(25番)，航行于银河系中心附近。\r\n与Frontier临近的21番移民船团Macross Galaxy(マクロス·ギャラクシー)上在住之现役偶像歌手Sheryl Nome(シェリル·ノーム)为举行Live来到Frontier。Ranka Lee(ランカ·リー)在去Live途中邂逅作为飞行员养成生的Alto(早乙女アルト)，三人的不期而遇，彼此的命运从此相互牵系！\r\n而此时，Frontier遭遇不明敌人的强力攻击，移民船团上的人们又将何去何从？新的Macross物语即将展开！！！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 25,
+    "synergy_tags": [
+        "科幻",
+        "机战",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2008-04-03",
+    "rating_rank": 1101,
+    "rating_score": 7.4,
+    "rating_total": 3776,
+    "main_character_ids": [
+        54,
+        100,
+        103
+    ],
+    "main_characters": [
+        {
+            "id": 54,
+            "name": "ランカ・リー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c7/34/54_crt_PTt1P.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/34/54_crt_PTt1P.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/34/54_crt_PTt1P.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c7/34/54_crt_PTt1P.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4953,
+                    "name": "中島愛",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6c/3e/4953_prsn_7p2Va.jpg?r=1571039881",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/3e/4953_prsn_7p2Va.jpg?r=1571039881",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/3e/4953_prsn_7p2Va.jpg?r=1571039881",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6c/3e/4953_prsn_7p2Va.jpg?r=1571039881"
+                    },
+                    "short_summary": "中岛爱（1989年6月5日 - ），日本茨城县出身的女性声优、歌手。\r\ne-stone music所属，血型A型，出道作品为Macross Frontier的女主角兰花·李。\r\n日菲混血，父亲是日本人，母亲是菲律宾人。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 100,
+            "name": "シェリル・ノーム",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c9/34/100_crt_RRAjr.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/34/100_crt_RRAjr.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/34/100_crt_RRAjr.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c9/34/100_crt_RRAjr.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4893,
+                    "name": "遠藤綾",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d7/68/4893_prsn_mmFDO.jpg?r=1739368057",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/68/4893_prsn_mmFDO.jpg?r=1739368057",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/68/4893_prsn_mmFDO.jpg?r=1739368057",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d7/68/4893_prsn_mmFDO.jpg?r=1739368057"
+                    },
+                    "short_summary": "遠藤 綾（えんどう あや、1980年2月17日 - ）は、日本の女性声優、ナレーター。オフィスPAC所属。\r\n山形県出身。身長160cm、血液型はO型。\r\n\r\n高校卒業後に声優を目指し上京。野沢那智が主宰する現事務所の養成所パフォーミング・アート・センターに入学し、留年を経て卒業。養成所を決めた理由は、親が野沢のことを知っていたため安心だと思ったからと語っている。\r\n初期の出演作としては2002年の『ワンだー・エディ』（第28話）、『魔王ダンテ』（第4話以降）などがある。2005年の『おくさまは女子高生』の堀口かすみ役が最初のレギュラー役出演、2007年の『らき☆すた』の高良みゆき役で知名度を上げて以来、2008年には『マクロスF』のシェリル・ノーム役、『ネオ アンジェリーク』のアンジェリーク役やOVA『舞-乙HiME 0〜S.ifr〜』のレナ・セイヤーズ役などを担当した。\r\nインターネットラジオ番組『Plume物語』内では、水野愛日、河原木志穂と共に声優ユニット・Plume（プリュム）を結成していたが、現在は活動休止中である。\r\nテレビアニメ『らき☆すた』オープニングテーマ『もってけ!セーラーふく』が第12回アニメーション神戸で主題歌賞（ラジオ関西賞）を受賞、2008年、第2回声優アワードにて平野綾、加藤英美里、福原香織と共に歌唱賞を受賞、2009年、第3回声優アワードにて助演女優賞を受賞。\r\n2013年8月8日、自身のブログで結婚を報告した。\r\n養成所時代の頃は演劇が苦手であり、師匠的存在の野沢那智によれば「演劇が嫌だ」と言っていたこともあるという。本人は「芝居はやりたいが、ラブシーンを演じるのが嫌」で、それが原因で卒業させてもらえなかったという逸話もある。野沢はそれに関して「よしじゃあ、ラブシーンのない芝居を作ろう」と語ったこともある。また、本人は元々声優がやりたかったので「声優の前に俳優であれ」という校長の言葉に周囲が重くなり、クラスの中と学校で「声優になりたい人」と言われたときに遠藤だけが手を上げていたという。",
+                    "locked": false
+                },
+                {
+                    "id": 6086,
+                    "name": "May'n",
+                    "type": 1,
+                    "career": [
+                        "artist"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/08/3b/6086_prsn_ZkC9L.jpg?r=1707471179",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/3b/6086_prsn_ZkC9L.jpg?r=1707471179",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/3b/6086_prsn_ZkC9L.jpg?r=1707471179",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/08/3b/6086_prsn_ZkC9L.jpg?r=1707471179"
+                    },
+                    "short_summary": "　　本名/旧艺名中林芽依。名古屋出身的日本女歌手。在2003年由Horipro举办的第28回新人选拔赛中，从3万5千人中脱颖而出的实力派歌手。2008年1月宣布将艺名变更为May'n（メイン）。血液O型。\r\n　　在电视动画超时空要塞 Frontier中，担任片中角色，银河歌姫雪露·诺姆的幕后歌曲代唱工作。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 103,
+            "name": "早乙女アルト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/69/74/103_e5ac660610b44d9b9fed0ff9548_HvIs2.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/74/103_e5ac660610b44d9b9fed0ff9548_HvIs2.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/74/103_e5ac660610b44d9b9fed0ff9548_HvIs2.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/69/74/103_e5ac660610b44d9b9fed0ff9548_HvIs2.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4724,
+                    "name": "中村悠一",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/78/4724_prsn_7TvWV.jpg"
+                    },
+                    "short_summary": "爱称是ゆうきゃん，由铃村健一命名。英文标记法为‘yuu-kyan’\r\n与声优的杉田智和的私交良好，是在声优界著名的好友。\r\n兴趣是玩游戏、看电影等。\r\n不喜欢吃拉面。喜欢的食物是肉、奶酪、甜食。\r\n2020年10月1日，宣布从Sigma Seven移籍至INTENTION。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

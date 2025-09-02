@@ -1,0 +1,77 @@
+{
+    "id": 354,
+    "name": "ロックオン・ストラトス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f7/22/354_crt_ygUl9.jpg?r=1504037711",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/22/354_crt_ygUl9.jpg?r=1504037711",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/22/354_crt_ygUl9.jpg?r=1504037711",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f7/22/354_crt_ygUl9.jpg?r=1504037711"
+    },
+    "summary": "前作洛克昂（尼尔·狄兰第）之孪生弟弟，本为反联合组织Katharon成员，第2话被刹那邀到天人接替驾驶员一位。\r\n射击型MS“智天使高达（GN-006 Cherudim Gundam）”之驾驶员。\r\n中学时期由于不愿被与较优秀的兄长比较而进入寄宿学校。\r\n拥有极高战斗潜能但原因暂时不明，尽管完全没有操作MS的经验仍能狙击敌机，虽然命中率仍然不及哥哥尼尔·狄兰迪。不过，根据其战绩和机体的运用来说，他偏好于中、近距离的射击战。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "洛克昂·斯特拉托斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "莱尔·狄兰第"
+                },
+                {
+                    "v": "Lyle Dylandy"
+                },
+                {
+                    "v": "ライル・ディランディ"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Lockon Stratos"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2283-03-03"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "186cm"
+        },
+        {
+            "key": "体重",
+            "value": "68kg"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "anidb.net"
+                }
+            ]
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 3,
+    "stat": {
+        "comments": 3,
+        "collects": 26
+    },
+    "anime_ids": [
+        1010
+    ]
+}

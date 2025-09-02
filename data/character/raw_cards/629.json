@@ -1,0 +1,52 @@
+{
+    "id": 629,
+    "name": "森宮依人",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/05/1e/629_6EnmE.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/1e/629_6EnmE.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/1e/629_6EnmE.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/05/1e/629_6EnmE.jpg"
+    },
+    "summary": "本作男主角，开朗的高校生，就读御池高校，喜欢拍摄天空，15岁。双亲逝世后和亲姊苍乃生活，和石月真名等人是同校友人。当姊姊苍乃入院时，每天放学也会去探望，还会每天买一只外表奇怪的布偶（只有茉莉觉得可爱）送给苍乃。另外在一次偶然机会下，在准备拍摄黎明的天空时和茉莉邂逅。在同居相处的情况下，茉莉已成为对依人十分重要的人。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "森宫依人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "森宮 依人"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "もりみや よりと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Morimiya Yorito"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 7
+    },
+    "anime_ids": [
+        798
+    ]
+}

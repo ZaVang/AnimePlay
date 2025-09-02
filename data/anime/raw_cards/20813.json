@@ -1,0 +1,418 @@
+{
+    "id": 20813,
+    "type": 2,
+    "name": "世界一初恋2",
+    "name_cn": "世界第一初恋2",
+    "summary": "　　主人公小野寺律在高中时一直暗恋着嵯峨前辈，然而由于一件小诗使双方都误会了对方。十年过去了，小野寺被分配到丸川书店少女漫画部当编辑，而且上班第一天就被上司高野先生训斥。其实高野先生就是小野寺高中时一直暗恋的嵯峨前辈。他在高三的时候因为父母离异而改了姓氏，而小野寺律却没有认出他来……小野寺因为初恋的失败而不再相信初恋会有结果这种神话，高野政宗却自信满满地说出：“我会让你再次喜欢上我的！觉悟吧！”自信到自恋程度的蛮横主编X好强新人的爱情战争，就此展开！\r\n 　　《世界第一的初恋》目前分为《小野寺律的场合》、《吉野千秋的场合》和《木佐翔太的场合》三个系列。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2011-10-07",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/07/23/20813_Pypxs.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/07/23/20813_Pypxs.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/07/23/20813_Pypxs.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/07/23/20813_Pypxs.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/07/23/20813_Pypxs.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "世界第一初恋2"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "世界一初恋 2期",
+                    "k": null
+                },
+                {
+                    "v": "世界第一的初恋2",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2011年10月7日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期五"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://sekai-ichi.jp/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ埼玉"
+        },
+        {
+            "key": "播放结束",
+            "value": "2011年12月23日"
+        },
+        {
+            "key": "原作",
+            "value": "中村春菊"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 12,
+    "rating": {
+        "rank": 902,
+        "total": 1817,
+        "count": {
+            "one": 11,
+            "two": 6,
+            "three": 5,
+            "four": 19,
+            "five": 68,
+            "six": 244,
+            "seven": 512,
+            "eight": 594,
+            "nine": 195,
+            "ten": 163
+        },
+        "score": 7.5
+    },
+    "collection": {
+        "wish": 262,
+        "collect": 2708,
+        "doing": 246,
+        "on_hold": 87,
+        "dropped": 135
+    },
+    "tags": [
+        {
+            "name": "BL",
+            "count": 528
+        },
+        {
+            "name": "耽美",
+            "count": 434
+        },
+        {
+            "name": "中村春菊",
+            "count": 424
+        },
+        {
+            "name": "腐",
+            "count": 246
+        },
+        {
+            "name": "2011年10月",
+            "count": 220
+        },
+        {
+            "name": "现在觉得在整个十月番里这是最不基的",
+            "count": 111
+        },
+        {
+            "name": "TV",
+            "count": 107
+        },
+        {
+            "name": "小西克幸",
+            "count": 100
+        },
+        {
+            "name": "2011",
+            "count": 83
+        },
+        {
+            "name": "studiodeen",
+            "count": 61
+        },
+        {
+            "name": "一初恋",
+            "count": 57
+        },
+        {
+            "name": "漫画改",
+            "count": 44
+        },
+        {
+            "name": "超神作",
+            "count": 33
+        },
+        {
+            "name": "神谷浩史",
+            "count": 29
+        },
+        {
+            "name": "中村悠一",
+            "count": 27
+        },
+        {
+            "name": "大愛",
+            "count": 25
+        },
+        {
+            "name": "近藤隆",
+            "count": 25
+        },
+        {
+            "name": "漫改",
+            "count": 25
+        },
+        {
+            "name": "今千秋",
+            "count": 22
+        },
+        {
+            "name": "恋爱",
+            "count": 17
+        },
+        {
+            "name": "立花慎之介",
+            "count": 14
+        },
+        {
+            "name": "基",
+            "count": 14
+        },
+        {
+            "name": "2011年10月番",
+            "count": 13
+        },
+        {
+            "name": "世界第一初恋",
+            "count": 12
+        },
+        {
+            "name": "アニメ",
+            "count": 10
+        },
+        {
+            "name": "冈本信彦",
+            "count": 10
+        },
+        {
+            "name": "神作",
+            "count": 10
+        },
+        {
+            "name": "前野智昭",
+            "count": 9
+        },
+        {
+            "name": "2011年",
+            "count": 9
+        },
+        {
+            "name": "世界一初恋",
+            "count": 8
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "BL",
+        "耽美",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        12944,
+        12945,
+        12946,
+        12947,
+        12948,
+        12949
+    ],
+    "main_characters": [
+        {
+            "id": 12944,
+            "name": "小野寺律",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/ab/12944_crt_8ddY8.jpg?r=1489513145",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/ab/12944_crt_8ddY8.jpg?r=1489513145",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/ab/12944_crt_8ddY8.jpg?r=1489513145",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/ab/12944_crt_8ddY8.jpg?r=1489513145"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4265,
+                    "name": "近藤隆",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4e/8e/4265_prsn_6DRwU.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/8e/4265_prsn_6DRwU.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/8e/4265_prsn_6DRwU.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4e/8e/4265_prsn_6DRwU.jpg"
+                    },
+                    "short_summary": "近藤 隆（こんどう たかし、1979年5月12日 - ）は、日本の男性声優、ナレーター、歌手である。紅屋25時、ビーボを経て、AMBERnote所属となった。愛知県岡崎市出身。\r\n\r\nアミューズメントメディア総合学院卒業。アニメ初主演である『BLACK CAT』のトレイン＝ハートネット役で知名度を上げる。それ以降、アニメへの出演が多い。\r\n\r\n2007年からは歌手活動もするようになり、音楽CDの発売が増えた。『家庭教師ヒットマンREBORN!』のキャラクター「雲雀恭弥VS六道骸」名義で発売したキャラクターソング兼、番組EDテーマ「Sakura addiction」（2種）がオリコンシングル週間ランキングでは2枚の合算集計ながら初登場7位、11月期月間ランキングでは11位と、男性声優によるキャラクターソングとしては異例のロングヒットを記録した。\r\n\r\nトレイン＝ハートネット役や雲雀恭弥役をはじめ、二枚目役やクールな役が多いが、『奏光のストレイン』のラルフ＝ウィーレックのような悪役も演じることがある。また、吹き替えの仕事でも多く活躍している。\r\n\r\n『BLACK CAT』での共演以来、福圓美里とは共演する機会が非常に多く、本人たちによれば、くされ縁化しているとのこと。『RADIO BLACK CAT』で共にパーソナリティをやっていたこともある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 12945,
+            "name": "高野政宗",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8c/e9/12945_crt_XhI99.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/e9/12945_crt_XhI99.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/e9/12945_crt_XhI99.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8c/e9/12945_crt_XhI99.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3861,
+                    "name": "小西克幸",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d9/dc/3861_prsn_eizt1.jpg?r=1661391127",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/dc/3861_prsn_eizt1.jpg?r=1661391127",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/dc/3861_prsn_eizt1.jpg?r=1661391127",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d9/dc/3861_prsn_eizt1.jpg?r=1661391127"
+                    },
+                    "short_summary": "日本の声優、ナレーター、舞台俳優。和歌山県和歌山市出身。賢プロダクション所属。関智一が座長を務めていることで知られる劇団「ヘロヘロQカムパニー」の副座長も務める。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 12946,
+            "name": "羽鳥芳雪",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c1/37/12946_crt_7C96B.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/37/12946_crt_7C96B.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/37/12946_crt_7C96B.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c1/37/12946_crt_7C96B.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4724,
+                    "name": "中村悠一",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/78/4724_prsn_7TvWV.jpg"
+                    },
+                    "short_summary": "爱称是ゆうきゃん，由铃村健一命名。英文标记法为‘yuu-kyan’\r\n与声优的杉田智和的私交良好，是在声优界著名的好友。\r\n兴趣是玩游戏、看电影等。\r\n不喜欢吃拉面。喜欢的食物是肉、奶酪、甜食。\r\n2020年10月1日，宣布从Sigma Seven移籍至INTENTION。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 12947,
+            "name": "吉野千秋",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6c/c8/12947_crt_KZZlZ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/c8/12947_crt_KZZlZ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/c8/12947_crt_KZZlZ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6c/c8/12947_crt_KZZlZ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4645,
+                    "name": "立花慎之介",
+                    "type": 1,
+                    "career": [
+                        "writer",
+                        "artist",
+                        "seiyu",
+                        "writer"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bc/f9/4645_prsn_h3TZT.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/f9/4645_prsn_h3TZT.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/f9/4645_prsn_h3TZT.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bc/f9/4645_prsn_h3TZT.jpg"
+                    },
+                    "short_summary": "日本男性声优，出身于岐阜县。过去曾隶属于Production baobab，2011年6月1日移籍于AXL ONE，并于2018年3月31日离开，移籍到与福山润一同创立的BLACK SHIP。\r\n\r\n“立花慎之介”为艺名，本姓是与“立花”同音的“橘”（第40弹おまえらのためだろ!），原名是“橘秀宣”（たちばなひでのり）。\r\n儿时看动画幸运女神，而立志成为声优。\r\n声音透明且清爽，常常负责少年与青年角色的配音。\r\n与成濑诚组成音乐团体Lux-age；其后与日野聪组成ELEKITER ROUND φ。\r\n在进入配音行业之前从事了4年左右的默剧与日本舞踊（深水流）演出。\r\n与福山润、菅沼久义、日野聪、小野大辅、间岛淳司以及近藤孝行同年出生，并组成DABA。\r\n喜爱城堡，在熊本城修复之际因捐款之由名字被记在了天守阁。\r\n喜爱玩Battle Spirits，还经常在其日志谈及游戏相关的话题。\r\n家里养了一只叫Lily的挪威森林猫。\r\n2013年以漫画原作家身份出道，出道作是“箱庭の令嬢探侦”，于杂志YOUNG ACE连载，其后更亲自编写了小说版。\r\n2017年1月5日宣布已于1月1日跟声优高梁碧结婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 12948,
+            "name": "木佐翔太",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fc/66/12948_crt_Dhw9m.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/66/12948_crt_Dhw9m.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/66/12948_crt_Dhw9m.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fc/66/12948_crt_Dhw9m.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4950,
+                    "name": "岡本信彦",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a7/31/4950_prsn_VuEVV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/31/4950_prsn_VuEVV.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/31/4950_prsn_VuEVV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a7/31/4950_prsn_VuEVV.jpg"
+                    },
+                    "short_summary": "日本の男性声優、歌手。ラクーンドッグ所属。\r\n\r\n『SLAM DUNK』、『DRAGON QUEST -ダイの大冒険-』などのアニメが好きだったことや、母親が朗読のボランティアをしていたことから声優という仕事に興味を持ち、志すようになる。その後、大学受験を控えた頃にプロ・フィット声優養成所に入所（第3期生）。セブンイレブン、警備員、マクドナルド、郵便局などでアルバイトをしながら、養成所の学費を払っていた。\r\nBLCD『追憶のキスを君は奪う』にて声優デビュー。テレビアニメデビューは『N・H・Kにようこそ!』の男子生徒A役である。好青年タイプのキャラクターやクールな役を演じることが多いが、『紅』の九鳳院竜士のような冷酷非道な悪役、『とある魔術の禁書目録』のアクセラレータ、『僕のヒーローアカデミア』の爆豪勝己のように狂気に満ちたキャラクター、『しゅごキャラ!』のムサシや『明日のよいち!』の烏丸与一など古風なキャラクターも演じている。\r\n2009年第3回声優アワードにて新人男優賞を受賞。同年、大学を卒業。\r\n2011年第5回声優アワードにて助演男優賞を受賞。\r\n2012年5月23日、Kiramuneから1stミニアルバム『Palette』で個人名義での歌手活動を開始。\r\n\r\n厳格な家庭で育ち、ゲームは1週間1時間までという制限が設けられていた。\r\n反抗期はほぼ無かったに等しく、母親にも「あんた無かった」と言われるほど。テストで0点を取った際、過去一度だけ母親に反抗したことがあったが、力で敵わず「もう二度としない」と心に決めた。\r\nクラバー・パリピ系、いわゆるリア充が苦手。押しの強い女性には引いてしまう。\r\n昔から父親の影響で将棋をやっており、所有段位はアマチュア三段。小学校時代はプロ棋士が夢で、将棋会館道場に中学3年まで通い、プロ棋士を目指す少年たちとも切磋琢磨していたが、声優への道を選んだ。ニコニコ超会議のイベントではプロ棋士の橋本崇載と対局し、飛車落ちの持ち時間ハンデありではあったものの勝利した。第二回将棋電王戦では「天の声」やゲストとして出演している。ニコニコ超会議2015では糸谷哲郎竜王と飛車落ちで対局し敗れるが、聞き手を務めていた香川愛生女流王将とのエキシビジョン対局では角落ちではあったものの勝利した。\r\n将棋以外のボードゲームにも造詣が深く、仲間内でテーブルトークRPG『ダブルクロス』を遊んだことが発行元の富士見書房を通じて同作品デザイナーの矢野俊策に伝わり、『ダブルクロス・リプレイ・デイズ』への参加につながった。\r\n『ポケットモンスター』シリーズの大ファンで、努力値（ゲーム内の隠しパラメータ）などを知る「ポケモン廃人」であることでも知られ、雑誌『電撃Nintendo』2013年12月号ではシリーズプロデューサーである増田順一との対談が実現した。\r\n甘いものが好きで、過去やっていたブログでもたびたびお菓子等の写真が掲載されている。特にブラックサンダーは常に箱買いでストックしておくほどの大好物であり、かつては1日の朝と晩に10本ずつ食べるほどだったが、現在は事務所から正式に摂取制限を言い渡され、1日1本で我慢している。\r\n自分で自分のことを中二病と言っており、またかつては自身を風を操ることができる「風使い」だと思っていた。その過去が明らかになったことをきっかけに『RADIO 4Gamer』のエンディングコーナーに、「風使い（ウィンドブレーカー）しこりん」というものが設けられていた。\r\nなお、kiramuneレーベルのライブでは、ライブを「儀式」、自身を「風使い」、ファンを「妖精さん」と呼び、開き直っている。\r\n中二病の高2の時、好きなキャラクターを真似して左耳にピアスを開けた。今まであまりピアスを付けていなかったが、『のぶちゃんねる』最終回で「30になったからピアスを解禁する!」と発言していた。ちなみに、よく付けている星型のものは2015年に木村良平、江口拓也から誕生日にプレゼントされたもので、大変気に入っており頻繁に使用している（宣材写真でも着用している）。また、岡本にとってピアスはネックレスと同じ感覚で使用しており、ネックレスとピアス共にQ-pot.のチョコレート風のものを愛用している。そして透明なお化けのお腹の中にストライプキャンディが入ったネックレスもよく着用している。\r\n声優の佐倉綾音に『あやねる』という愛称をつけたのは彼である。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 12949,
+            "name": "雪名皇",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5b/ef/12949_crt_CafO9.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/ef/12949_crt_CafO9.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/ef/12949_crt_CafO9.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5b/ef/12949_crt_CafO9.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5121,
+                    "name": "前野智昭",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8d/35/5121_prsn_D4ko5.jpg?r=1740110132",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/35/5121_prsn_D4ko5.jpg?r=1740110132",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/35/5121_prsn_D4ko5.jpg?r=1740110132",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8d/35/5121_prsn_D4ko5.jpg?r=1740110132"
+                    },
+                    "short_summary": "日本の男性声優。アーツビジョン所属。アミューズメントメディア総合学院声優学科卒業。\r\n\r\n芸歴：アミューズメントメディア総合学院、日本ナレーション演技研究所\r\n趣味・特技：スポーツ観戦、ドライブ \r\n\r\n小时候与姐姐一起看龙珠使两人都立志成为声优。姐姐先报读了某声优专门学校，他自己随后也报读AMUSEMENT MEDIA综合学院 ，并于2003年毕业。之后经过日本播音演技研究所进入ARTSVISION。姐姐跟父母提出想成为声优，打算前往专门学校就读时，遭到父母极力反对，使前野本人早就立下决心，自己找兼职来储钱，以便将来自己交学费（本人说这是说服父母的杀手锏。）\r\n在AMUSEMENT MEDIA综合学院与柿原彻也同期，而在日本播音演技研究所则与铃木达央、植田佳奈、神原大地、中村绘里子同班。从综合学院毕业之后不久便以助手为兼职。\r\n以前多为外国电影电视配音，之后因为想为动画配音而跟经理人商讨。第一个获得的试音机会便是图书馆战争，当场获得原作者有川浩及其他评审一致赞同而录取。\r\n喜欢音乐团体包括ZONE及BUMP OF CHICKEN。\r\n2009年第四回声优奖中拿到新人赏男优部门奖项。\r\n\r\n本人说过“想成为像森川智之、浪川大辅那样在各个领域都活跃的艺人。”演出不少冷酷系角色，例如八犬传－东方八犬异闻－的犬饲现八、VitaminZ的不破千圣；也有不少外冷内热的角色，例如图书馆战争的堂上笃、BROTHERS CONFLICT的朝日奈枣、高校星歌剧的空闲愁。\r\n多数演出动画，也有为外国影片或电视剧配音还有担任旁白。对堂上笃一角感想很深，当有川浩参加访谈节目Top Runner的时候，前野也以配音员身份在该节目亮相，既有一面下楼梯一面朗读图书馆战争的内容，也有谈及对堂上的感受。亦从2009年四月到2011年三月担任该节目的旁白。\r\n说过VitaminZ的不破千圣之所以说土佐腔，是跟高知县出身的轻小说作家商谈的结果。\r\n\r\n非常喜欢龙珠，对内容了如指掌，平时说话的举例也用到龙珠的世界和角色。\r\n也喜欢哆啦A梦，将全部叮当的电影版都看完了。\r\n喜欢游戏，尤其是模拟游戏。\r\n嗜辣，爱吃鱿鱼，也爱喝酒；不喜欢生焦糖的味道。\r\n非常喜爱三文治专门店subway，直想终有一天能自己拥有一间subway的专利店。在“前野智昭·增田俊树のMission WM”扮演subway的店员时对答如流，吓倒了同为主持的增田俊树。\r\n是信长之野望Online的重度玩家。\r\n喜欢日本女子乐团Zone，尤其是长濑实夕。\r\n在动画杂志Animedia一年出版一次的附录“人气声优 直笔 DATA FILE”里。提到心跳回忆的虹野沙希和心跳回忆2的八重花樱梨是理想对象。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

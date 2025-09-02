@@ -1,0 +1,84 @@
+{
+    "id": 52825,
+    "name": "宇田川あこ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e1/45/52825_crt_Bn3Mq.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/45/52825_crt_Bn3Mq.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/45/52825_crt_Bn3Mq.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e1/45/52825_crt_Bn3Mq.jpg"
+    },
+    "summary": "因为对姐姐很憧憬很喜欢所以自己也想变得很帅所以开始敲鼓。\r\n一直在寻找“帅气”。奇怪的说话方式正是那样做的副产物。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宇田川亚子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "うだがわ あこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Udagawa Ako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月3日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "148cm"
+        },
+        {
+            "key": "担当",
+            "value": "鼓手"
+        },
+        {
+            "key": "星座",
+            "value": "巨蟹座"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "薯片、软糖豆"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "海参、青椒"
+        },
+        {
+            "key": "兴趣",
+            "value": "帅气的研究"
+        },
+        {
+            "key": "所属",
+            "value": "Roselia"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 3,
+    "stat": {
+        "comments": 18,
+        "collects": 62
+    },
+    "anime_ids": [
+        246431
+    ]
+}

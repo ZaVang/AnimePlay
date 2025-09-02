@@ -1,0 +1,48 @@
+{
+    "id": 23981,
+    "name": "ミレニアム・フェリア・ノクターン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/09/72/23981_crt_339r9.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/72/23981_crt_339r9.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/72/23981_crt_339r9.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/09/72/23981_crt_339r9.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ミレニアム・フェリア・ノクターン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Millennium Feria Nocturne"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 9
+    },
+    "anime_ids": [
+        4400
+    ]
+}

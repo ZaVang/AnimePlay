@@ -1,0 +1,532 @@
+{
+    "id": 101442,
+    "type": 2,
+    "name": "のんのんびより  りぴーと",
+    "name_cn": "悠哉日常大王 Repeat",
+    "summary": "「旭丘分校」只有5名学生。\r\n虽然年纪和性格都不相同，一起赏花，一起在河边玩耍，一起挖白薯，一起挖雪洞……\r\n一起度过春夏秋冬，享受着田间生活。\r\n虽然在平淡的生活中可能并未察觉，不知不觉中，一起欢笑，一起流泪，心中变得温暖起来。\r\n这样悠哉游哉的时光再次到来。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2015-07-06",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/8b/6b/101442_EM1Vg.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/8b/6b/101442_EM1Vg.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/8b/6b/101442_EM1Vg.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/8b/6b/101442_EM1Vg.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/8b/6b/101442_EM1Vg.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "悠哉日常大王 Repeat"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "悠哉日常大王 第二季",
+                    "k": null
+                },
+                {
+                    "v": "悠悠哉哉少女日和 Repeat",
+                    "k": null
+                },
+                {
+                    "v": "Non Non Biyori Repeat",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2015年7月6日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期一"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://nonnontv.com/tvanime/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京"
+        },
+        {
+            "key": "其他电视台",
+            "value": "テレビ大阪 / テレビ愛知 / AT-X"
+        },
+        {
+            "key": "播放结束",
+            "value": "2015年9月21日"
+        },
+        {
+            "key": "导演",
+            "value": "川面真也"
+        },
+        {
+            "key": "音乐",
+            "value": "水谷広実"
+        },
+        {
+            "key": "Copyright",
+            "value": "©2015 あっと・KADOKAWA刊/旭丘分校管理組合二期"
+        },
+        {
+            "key": "原作",
+            "value": "あっと（月刊コミックアライブ連載/KADOKAWA刊）"
+        },
+        {
+            "key": "系列构成",
+            "value": "吉田玲子"
+        },
+        {
+            "key": "人物设定",
+            "value": "大塚舞"
+        },
+        {
+            "key": "脚本",
+            "value": "吉田玲子(1-2,4,6-8,10,12)、志茂文彦(3,5,9)、山田由香(11)"
+        },
+        {
+            "key": "分镜",
+            "value": "川面真也(1,4,12)、二瓶勇一(2,8)、金﨑貴臣(3,11)、黒澤雅之(5,9)、澤井幸次(6,10)、錦織博(7)"
+        },
+        {
+            "key": "演出",
+            "value": "川面真也(1)、福多潤(2,4,7,12)、平田豊(3,5)、澤井幸次(6,10)、阿部達也(8)、池端隆史(9)、高村雄太(11)"
+        },
+        {
+            "key": "道具设计",
+            "value": "古川英樹"
+        },
+        {
+            "key": "美术监督",
+            "value": "日下部夏月（草薙）"
+        },
+        {
+            "key": "色彩设计",
+            "value": "重冨英里"
+        },
+        {
+            "key": "摄影监督",
+            "value": "佐藤敦（スタジオシャムロック）"
+        },
+        {
+            "key": "3DCG 导演",
+            "value": "濱村敏郎（スタジオシャムロック）"
+        },
+        {
+            "key": "音响监督",
+            "value": "亀山俊樹（grooove）"
+        },
+        {
+            "key": "剪辑",
+            "value": "坪根健太郎（REAL-T）、編集助手：瀧川三智、オフライン編集：REAL-T、オンライン編集：キュー・テック　木村勝宏、酒井美波(1-8,10-12)、武田昌也(9)、HD編集担当：片田悠介"
+        },
+        {
+            "key": "总作画监督",
+            "value": "大塚舞(1,4,12)、井本由紀(2,4,6,8,10)、古川英樹(3,5,7,9,11)"
+        },
+        {
+            "key": "作画监督",
+            "value": "大塚舞(OP,ED,9)、井本由紀(1,12)、古川英樹(1,12)、本田辰雄(2,6-7,9,12)、竹森由加(2,6-7,12)、堤谷典子(3)、冨田康弘(4)、北川和樹(4)、塚本歩(4,10)、吉田和香子(4,7,10)、佐々木睦美(5)、木下ゆうき(6,9)、八代きみこ(7,9)、橋口隼人(7,12)、橋本純一(8)、しまだひであき(8)、横山紗弓(8)、吉田巧介(8)、保村成(10)、CHA MYOUNG JUN(11)"
+        },
+        {
+            "key": "设定",
+            "value": "ファッションデザイン：井本由紀、佐藤香織、2DCGデザイン：柏原進、新谷優子"
+        },
+        {
+            "key": "美术设计",
+            "value": "綱頭瑛子（草薙）"
+        },
+        {
+            "key": "录音",
+            "value": "録音調整：内田誠、録音スタジオ：Studio2010:"
+        },
+        {
+            "key": "录音助理",
+            "value": "砂庭舞"
+        },
+        {
+            "key": "音效",
+            "value": "小山恭正"
+        },
+        {
+            "key": "音响",
+            "value": "グルーヴ、音響制作担当：中谷希美"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "櫻井優香"
+        },
+        {
+            "key": "音乐制作",
+            "value": "ランティス、音楽制作協力：アイウィル、ROCKMAN、テレビ東京ミュージック"
+        },
+        {
+            "key": "サブタイトル",
+            "value": "澤入祐樹"
+        },
+        {
+            "key": "フォント協力",
+            "value": "白舟、フォントワークス"
+        },
+        {
+            "key": "プラグイン協力",
+            "value": "ピー・ソフトハウス"
+        },
+        {
+            "key": "ロゴデザイン",
+            "value": "杉本智行（株式会社uni-co）"
+        },
+        {
+            "key": "公式サイト制作",
+            "value": "株式会社blue"
+        },
+        {
+            "key": "宣传",
+            "value": "中筋あかね、宣伝協力：間篠尚史、番組宣伝：大関明彦（テレビ東京）"
+        },
+        {
+            "key": "プログラムマネージャー",
+            "value": "石本順也（テレビ東京）、飯田将太（テレビ東京）"
+        },
+        {
+            "key": "MDライセンス担当",
+            "value": "阿良綾子"
+        },
+        {
+            "key": "セールスプロモーション",
+            "value": "中山卓也、木村綾子、宮内彬起"
+        },
+        {
+            "key": "协力",
+            "value": "東京アニメーター学院、熊本県果実農業協同組合連合会(3)、共親製菓株式会社(10)"
+        },
+        {
+            "key": "特别鸣谢",
+            "value": "吉沼忍"
+        },
+        {
+            "key": "企画",
+            "value": "堀内大示、土方隆、押田裕一（テレビ東京）、山田昇、伊藤善之、樫村勉、金子逸人、亀山俊樹、企画協力：月刊コミックアライブ編集部"
+        },
+        {
+            "key": "制片人",
+            "value": "山下愼平、村沢功、紅谷佳和（テレビ東京）、横田真吾、新井恵介、郷文裕貴"
+        },
+        {
+            "key": "动画制片人",
+            "value": "中川二郎、ラインプロデューサー：鬼塚康介"
+        },
+        {
+            "key": "制作管理",
+            "value": "制作デスク：鬼塚康介、背景管理：平田浩章（草薙）"
+        },
+        {
+            "key": "設定制作",
+            "value": "高橋友香"
+        },
+        {
+            "key": "动画制作",
+            "value": "SILVER LINK."
+        },
+        {
+            "key": "製作",
+            "value": "旭丘分校管理組合二期（KADOKAWA、テレビ東京、AT-X、ランティス、ソニー・ミュージックソリューションズ、SILVER LINK.、グルーヴ）"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 12,
+    "rating": {
+        "rank": 214,
+        "total": 6707,
+        "count": {
+            "one": 2,
+            "two": 2,
+            "three": 2,
+            "four": 10,
+            "five": 46,
+            "six": 266,
+            "seven": 1319,
+            "eight": 3293,
+            "nine": 1223,
+            "ten": 544
+        },
+        "score": 8.0
+    },
+    "collection": {
+        "wish": 2507,
+        "collect": 10652,
+        "doing": 638,
+        "on_hold": 503,
+        "dropped": 129
+    },
+    "tags": [
+        {
+            "name": "日常",
+            "count": 1959
+        },
+        {
+            "name": "治愈",
+            "count": 1694
+        },
+        {
+            "name": "喵帕斯",
+            "count": 1186
+        },
+        {
+            "name": "SILVERLINK.",
+            "count": 906
+        },
+        {
+            "name": "2015年7月",
+            "count": 874
+        },
+        {
+            "name": "TV",
+            "count": 733
+        },
+        {
+            "name": "漫画改",
+            "count": 704
+        },
+        {
+            "name": "悠哉日常大王",
+            "count": 577
+        },
+        {
+            "name": "百合",
+            "count": 514
+        },
+        {
+            "name": "萌",
+            "count": 478
+        },
+        {
+            "name": "2015",
+            "count": 442
+        },
+        {
+            "name": "漫改",
+            "count": 277
+        },
+        {
+            "name": "川面真也",
+            "count": 166
+        },
+        {
+            "name": "第二季",
+            "count": 128
+        },
+        {
+            "name": "吉田玲子",
+            "count": 100
+        },
+        {
+            "name": "搞笑",
+            "count": 67
+        },
+        {
+            "name": "日本",
+            "count": 44
+        },
+        {
+            "name": "续作",
+            "count": 40
+        },
+        {
+            "name": "萝莉",
+            "count": 34
+        },
+        {
+            "name": "轻百合",
+            "count": 32
+        },
+        {
+            "name": "乡村",
+            "count": 26
+        },
+        {
+            "name": "2015年",
+            "count": 24
+        },
+        {
+            "name": "阿澄佳奈",
+            "count": 21
+        },
+        {
+            "name": "校园",
+            "count": 17
+        },
+        {
+            "name": "SILVERLINK",
+            "count": 14
+        },
+        {
+            "name": "萌系",
+            "count": 14
+        },
+        {
+            "name": "SILVER_LINK.",
+            "count": 13
+        },
+        {
+            "name": "志茂文彦",
+            "count": 12
+        },
+        {
+            "name": "佐仓绫音",
+            "count": 12
+        },
+        {
+            "name": "村川梨衣",
+            "count": 12
+        }
+    ],
+    "meta_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "series": false,
+    "main_character_ids": [
+        21368,
+        21369,
+        21370,
+        21371
+    ],
+    "main_characters": [
+        {
+            "id": 21368,
+            "name": "宮内れんげ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ce/64/21368_crt_oKN2k.jpg?r=1436302815",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/64/21368_crt_oKN2k.jpg?r=1436302815",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/64/21368_crt_oKN2k.jpg?r=1436302815",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ce/64/21368_crt_oKN2k.jpg?r=1436302815"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7837,
+                    "name": "小岩井ことり",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ba/4c/7837_prsn_8CF0g.jpg?r=1750315712",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/4c/7837_prsn_8CF0g.jpg?r=1750315712",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/4c/7837_prsn_8CF0g.jpg?r=1750315712",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ba/4c/7837_prsn_8CF0g.jpg?r=1750315712"
+                    },
+                    "short_summary": "日本女性声优、旁白。本名非公开。门萨俱乐部成员。\r\n高中时代曾担任过旁白，以此为契机，才有志于声优一职。在那之后，为了抓住一切能够成为声优的机会，在例如关西的电视活动、CM活动等等之类的各种活动里面担任旁白解说一职。\r\n一直是自由活动，直到2012年左右才加入现所属事务所ピアレスガーベラ。\r\n2009年12月25日起，在Ameba开设个人博客。\r\n2011年在《青之驱魔师》出演吉国作为声优出道。\r\n2012年在《女子落语》出演波浪浮亭木胡桃首次担任主要角色。\r\n2013年在《裁断分离之罪恶剪刀》出演武者小路祝首次担任女主角。\r\n喜欢作词作曲，曾为田中理惠提供了乐曲，为金田朋子的「天才！金朋ラボ」提供作词作曲。\r\n\r\n自认的魅力点是有一头过膝没有染过的黑发，缘由是因为父亲说过长发的女孩很可爱，母亲教育过染发是不好的。　休息日是在写歌词和作曲。因为可以喝酒，所以应该超过二十岁。\r\n基本是室内体质，不过也有休息日外出钓鱼的室外体质的一面。\r\n因为动画《神奇宝贝》的皮卡丘的声优所配的鸣叫声所感动而产生对声优的憧憬。\r\n自己说“非常喜欢声优这个工作，即使到了100岁也要继续这个工作是我的梦想（声优という仕事が大好きで100歳になっても続けることが梦）”，因家庭环境的缘故，会说京都弁、大阪弁、广岛弁三种方言。\r\n几乎没有自己一个人去过快餐店，要么是自己订购要么是和工作人员一起去的。\r\n不擅长挑选衣服，所以基本上衣服是经理挑选的。就连彩票中奖也是父母和经理安排给的。\r\n对自己个子高有自卑感。养的兔子的名字叫“ten酱”。\r\n有独自去乘公共汽车去户外钓鱼的爱好。\r\n\r\nYouTube：https://www.youtube.com/channel/UClDfVHJxrsGTq61MJp55s3Q",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 21369,
+            "name": "一条蛍",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/35/1a/21369_crt_19I3g.jpg?r=1610998517",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/35/1a/21369_crt_19I3g.jpg?r=1610998517",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/35/1a/21369_crt_19I3g.jpg?r=1610998517",
+                "grid": "https://lain.bgm.tv/pic/crt/g/35/1a/21369_crt_19I3g.jpg?r=1610998517"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9096,
+                    "name": "村川梨衣",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/45/2e/9096_prsn_9Qrr3.jpg?r=1740108890",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/2e/9096_prsn_9Qrr3.jpg?r=1740108890",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/2e/9096_prsn_9Qrr3.jpg?r=1740108890",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/45/2e/9096_prsn_9Qrr3.jpg?r=1740108890"
+                    },
+                    "short_summary": "村川 梨衣（むらかわ りえ、6月1日 - ）は、日本の女性声優、ナレーター、ラジオパーソナリティ。東京俳優生活協同組合所属。\r\n\r\n声優を目指したきっかけは、小学校5年生頃にアニメ『HUNTER×HUNTER (1999年のアニメ)』を観た際による。主人公ゴン＝フリークスをとても魅力的に感じ、どうしたらゴンになれるのかを考えた結果、「声優になればいいんだ！」という考えにたどり着いた。その時、声優という職業が頭の中にパッと出てきた事が奇跡的だったと語っている。\r\n\r\nフロンティアワークス主催の「フロンティアチャレンジ2010」にて声優部門優秀賞受賞。 総合学園ヒューマンアカデミーを2011年3月に卒業後、東京俳優生活協同組合に所属。\r\n\r\n愛称の「りえしょん」は、広橋涼が名付けた。「しょん」には「パッション」「リアクション」「ハイテンション」の意が込められているという。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 21370,
+            "name": "越谷夏海",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d8/6e/21370_crt_Vrjlx.jpg?r=1437603053",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/6e/21370_crt_Vrjlx.jpg?r=1437603053",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/6e/21370_crt_Vrjlx.jpg?r=1437603053",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d8/6e/21370_crt_Vrjlx.jpg?r=1437603053"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5745,
+                    "name": "佐倉綾音",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929"
+                    },
+                    "short_summary": "佐仓绫音（さくら あやね）是日本的女性声优，1994年1月29日出生及成长于东京都；曾为[url=www.imenterprise.jp]I'm Enterprise[/url]旗下声优，2022年2月1日移籍至[url=www.aoni.co.jp]青二Production[/url]。\r\n\r\n[b]经历[/b]\r\n中学时所属剧团东俳，[url=https://nichinare.com/]日本播音演技研究所[/url]出身。《Dottoai广播》第45代主持人。2011年，在TV动画《[url=https://bgm.tv/subject/8990]食梦者玛利[/url]》出演[url=https://bgm.tv/character/10571]玛利·梦魔[/url]，首次出演主角。同年在剧场版动画《[url=https://bgm.tv/subject/12544]萤火之森[/url]》中出演[url=https://bgm.tv/character/15896]竹川萤[/url]，首次担当主役。\r\n其他代表作品有《[url=https://bgm.tv/subject/88287]请问您今天要来点兔子吗？[/url]》[url=https://bgm.tv/character/23647]保登心爱[/url]、《[url=https://bgm.tv/subject/78405]悠哉日常大王[/url]》[url=https://bgm.tv/character/21370]越谷夏海[/url]、《[url=https://bgm.tv/subject/37685]心理测量者[/url]》[url=https://bgm.tv/character/18476]霜月美佳[/url]、《[url=https://bgm.tv/subject/54433]我的青春恋爱物语果然有问题[/url]》[url=https://bgm.tv/character/26090]一色彩羽[/url]、《[url=https://bgm.tv/subject/120925]夏洛特[/url]》[url=https://bgm.tv/character/29511]友利奈绪[/url]、《[url=https://bgm.tv/subject/100444]四月是你的谎言[/url]》[url=https://bgm.tv/character/26004]泽部椿[/url]等。\r\n\r\n[b]其他[/b]\r\n昵称“あやねる（ayaneru）”是由[url=https://bgm.tv/person/4950]冈本信彦[/url]（《[url=https://bgm.tv/subject/8990]食梦者玛利[/url]》的合演者）给予的。关于昵称（本人说）“没什么特别的”。“あやねる”只是“绫音”和“睡觉（寝る）”的组合。\r\n完全的百合脑、百合控，非常喜欢[url=https://bgm.tv/person/4765]花泽香菜[/url]。\r\n爱好读书，特技是插图。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 21371,
+            "name": "越谷小鞠",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7a/3b/21371_crt_3cFQw.jpg?r=1438207786",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/3b/21371_crt_3cFQw.jpg?r=1438207786",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/3b/21371_crt_3cFQw.jpg?r=1438207786",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7a/3b/21371_crt_3cFQw.jpg?r=1438207786"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4868,
+                    "name": "阿澄佳奈",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9a/0a/4868_prsn_bV8bG.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/0a/4868_prsn_bV8bG.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/0a/4868_prsn_bV8bG.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9a/0a/4868_prsn_bV8bG.jpg"
+                    },
+                    "short_summary": "有一个大自己1岁的姐姐，具有幼稚园老师二种执照和保育士资格。兴趣是唱歌和写真摄影（本人说拍的人物比风景多）。\r\n持有NDS、PS2、PS3、PSP等多款游戏机，是《偶像大师》的粉丝，特别喜欢高槻弥生。\r\n初中时和姐姐同样加入剑道社。理由是“社团一样的话很多方面会很轻松吧”、“希望变得像姐姐那样（擅长运动）”。虽然喜欢运动但并不擅长。\r\n高中时加入放松部，并作了学校运动会的现场转播，获得学校的好评。\r\n与井口裕香非常要好，并多次在『井口裕香の超ラジ!Girls』里被提及并多次成为谈话主题中心。\r\n主持过很多广播，大受粉丝喜爱。在广播节目中有说话被强行切掉的事情，被说「ぶった切り」、「やさぐれ」。作为嘉宾出演的时候她的行为经常被问「你喝醉了吧喂？！！」\r\n在录音现场的时候就很老实，所以跟她一起录音过的人第一次跟她一起录制广播的时候都会被吓到。子安武人就说过：广播和录音现场的印象完全不一样。本人也说：做匆忙决定的工作、动画、不习惯的事的时候就会做过头。\r\n声线特征为高亢的幼女声，被称为“医治心灵的声音”，适合扮演声音偏高的角色，元气（如《圣诞之吻》的橘美也、《潜行吧！奈亚子》的奈亚子）和天然（如《向阳素描》的由乃、《迷糊餐厅》的种岛白杨）两相宜。\r\n\r\n2001年4月，加入『小梅伍』成为第4代成员，以原田佳奈的名义进行各种活动。\r\n高中毕业后，进入东京都内的短期大学念书。取得幼儿园二种执照和保育士资格，有接近一年的工作经验。之后，为了成为声优而辞职。\r\n2004年10月，为了避免和同名同姓的偶像原田佳奈混淆，改艺名为“阿澄佳奈”。\r\n2006年4月1日，加入Voice & Heart事务所。\r\n2007年1月，出演《向阳素描》的由乃，首次出演动画主角。\r\n2008年1月7日，移籍至81Produce事务所。\r\n2009年3月7日，获得第3回声优奖新人女声优奖。\r\n2010年7月27日，与同事务所的片冈梓、原纱友里一起结成声优组合『LISP』，10月27日出道。\r\n2011年6月17日，81事务所30周年纪念声优组合『LISP』，将在7月31日于涉谷AX举行的纪念结成一周年Live后，活动休止。\r\n2013年3月1日，获得第7回声优奖主演女声优赏、与松来未佑、大坪由佳结成的声优组合『後ろから这いより队G』获得歌唱赏。\r\n每周日上午10点（北京时间）在 超！A&G | 文化放（www.agqr.jp）主持广播节目《A&Gリクエストアワー　阿澄佳奈のキミまち！》\r\n2014年1月15日，在博客上宣布了结婚的消息。\r\n2021年12月31日，发推表示自己已经于3年前与之前的配偶离婚，今年再婚且已经怀孕，正在为出产做准备。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

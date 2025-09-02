@@ -1,0 +1,74 @@
+{
+    "id": 37115,
+    "name": "霊幻新隆",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7c/c7/37115_crt_yB5EM.jpg?r=1465897094",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/c7/37115_crt_yB5EM.jpg?r=1465897094",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/c7/37115_crt_yB5EM.jpg?r=1465897094",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7c/c7/37115_crt_yB5EM.jpg?r=1465897094"
+    },
+    "summary": "龙套的师父，28岁。以灵能力者自称，经营著灵能相谈所的独立灵能执业者。收费相对同行十分便宜。一直以来生计都十分勉强，在架设了相谈所官网后客人有渐多的趋势。擅长各种诈欺手法，话术亦十分高竿。自称少林拳法绿带，体术颇佳，但体能似乎有待加强。相当害怕蟑螂。喜欢狗。会用各种技能解决委托人的问题，若解决不了，则会叫龙套来处理。虽然是诈欺师一名，但对龙套的内心问题会认真解惑，也会主动察觉龙套的心结，可说是龙套的人生导师。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "灵幻新隆"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "霊幻 新隆"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "れいげん あらたか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Reigen Arataka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "10月10日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "179cm"
+        },
+        {
+            "key": "体重",
+            "value": "66.1kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 10,
+    "stat": {
+        "comments": 55,
+        "collects": 301
+    },
+    "anime_ids": [
+        353605,
+        240760,
+        158316
+    ]
+}

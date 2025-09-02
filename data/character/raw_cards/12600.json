@@ -1,0 +1,49 @@
+{
+    "id": 12600,
+    "name": "佐隈りん子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c6/e5/12600_crt_83U00.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c6/e5/12600_crt_83U00.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c6/e5/12600_crt_83U00.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c6/e5/12600_crt_83U00.jpg"
+    },
+    "summary": "在芥边侦探事务所打工的女大学生。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "佐隈玲子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "さくま りんこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakuma Rinko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 10,
+        "collects": 43
+    },
+    "anime_ids": [
+        10742,
+        53984
+    ]
+}

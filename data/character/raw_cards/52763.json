@@ -1,0 +1,44 @@
+{
+    "id": 52763,
+    "name": "アンジェ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0f/56/52763_crt_Hz58v.jpg?r=1490326392",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/56/52763_crt_Hz58v.jpg?r=1490326392",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/56/52763_crt_Hz58v.jpg?r=1490326392",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0f/56/52763_crt_Hz58v.jpg?r=1490326392"
+    },
+    "summary": "芸術的な手腕をもつ天才スパイ。無口で無愛想な性格で、よく突拍子もない嘘をついては、周囲を困惑させている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "安洁"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Ange"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 35,
+        "collects": 205
+    },
+    "anime_ids": [
+        211936
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": 14048,
+    "name": "モンテ・クリスト伯爵",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/59/42/14048_crt_P7dq8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/42/14048_crt_P7dq8.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/42/14048_crt_P7dq8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/59/42/14048_crt_P7dq8.jpg"
+    },
+    "summary": "自称：東方宇宙の田舎貴族。莫大な富と途方もない権力の持ち主。その博識と優雅な立ち振る舞いにより、一躍パリ社交界の花形となる。かつて無実の罪で投獄されたことがあり、その復讐の手始めにアルベールに接近した。「巌窟王」 (Gankutsuou) の異名を持つ。\r\n    原作では長い俘囚生活で伸びた髪と髭を刈り込んでいるが、本作においては長髪で通している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "基督山伯爵"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "法文",
+                    "v": "Le Comte de Monte-Cristo"
+                },
+                {
+                    "k": "本名",
+                    "v": "Edmond Dantès"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 11
+    },
+    "anime_ids": [
+        2903
+    ]
+}

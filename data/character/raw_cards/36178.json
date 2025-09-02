@@ -1,0 +1,44 @@
+{
+    "id": 36178,
+    "name": "ハルヒロ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ca/47/36178_crt_kyUOA.jpg?r=1473063874",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/47/36178_crt_kyUOA.jpg?r=1473063874",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/47/36178_crt_kyUOA.jpg?r=1473063874",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ca/47/36178_crt_kyUOA.jpg?r=1473063874"
+    },
+    "summary": "本作主人公。クラスは盗賊。\r\n眠そうな目をしている。そのせいでギルドの師匠によって盗賊界の通り名が年寄り猫（オールドキャット）にされてしまう。基本的に及び腰な性格。草食系。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "哈尔希洛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Haruhiro"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 10,
+        "collects": 40
+    },
+    "anime_ids": [
+        148726
+    ]
+}

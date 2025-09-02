@@ -1,0 +1,44 @@
+{
+    "id": 17199,
+    "name": "ラヴァ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/63/54/17199_crt_yIAjj.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/54/17199_crt_yIAjj.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/54/17199_crt_yIAjj.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/63/54/17199_crt_yIAjj.jpg"
+    },
+    "summary": "美夕の忠実なしもべである西洋神魔。黒いマントで体を覆い、素顔は仮面で隠されている。武器は鋭い爪。監視者として目覚める前の美夕を始末するため日本にやってくるが、美夕に血を吸われ、罰として言葉と顔を奪われる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "拉法"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "拉瓦"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 9
+    },
+    "anime_ids": [
+        4466
+    ]
+}

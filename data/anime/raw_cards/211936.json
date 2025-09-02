@@ -1,0 +1,488 @@
+{
+    "id": 211936,
+    "type": 2,
+    "name": "プリンセス・プリンシパル",
+    "name_cn": "Princess Principal",
+    "summary": "在东西分裂的伦敦所展开的，少女们的谍战动作剧！\r\n舞台是19世纪末，被巨大的墙壁东西分断的阿尔比恩王国的首都伦敦。\r\n在传统与礼仪的名门梅菲尔女王校，有5位少女在此就学。\r\n她们以女高中生为伪装，展开间谍活动。\r\n化装、谍报、潜入、驱车追逐……。\r\n少女们活用各自的能力，在影之世界来回飞奔。\r\n“我们是什么？”\r\n“间谍。是满口谎言的生物”",
+    "nsfw": false,
+    "locked": false,
+    "date": "2017-07-09",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/22/a5/211936_7I7vb.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/22/a5/211936_7I7vb.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/22/a5/211936_7I7vb.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/22/a5/211936_7I7vb.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/22/a5/211936_7I7vb.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "Princess Principal"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "PriPri",
+                    "k": null
+                },
+                {
+                    "v": "prpr",
+                    "k": null
+                },
+                {
+                    "v": "公主委托人",
+                    "k": "直译"
+                },
+                {
+                    "v": "公主代理人",
+                    "k": "改译"
+                },
+                {
+                    "v": "公主准则",
+                    "k": "错译"
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2017年7月9日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://pripri-anime.jp/tv"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX"
+        },
+        {
+            "key": "其他电视台",
+            "value": "KBS京都 / サンテレビ / BS11 / AT-X"
+        },
+        {
+            "key": "播放结束",
+            "value": "2017年9月24日"
+        },
+        {
+            "key": "导演",
+            "value": "橘正紀"
+        },
+        {
+            "key": "Copyright",
+            "value": "© Princess Principal Project"
+        },
+        {
+            "key": "人物设定",
+            "value": "秋谷有紀恵"
+        },
+        {
+            "key": "製作",
+            "value": "Princess Principal Project（バンダイビジュアル、博報堂DYミュージック&ピクチャーズ、ランティス、ムービック、TOKYO MX、キュー・テック、メディコス・エンタテインメント）"
+        },
+        {
+            "key": "动画制作",
+            "value": "Studio 3Hz × アクタス"
+        },
+        {
+            "key": "制片人",
+            "value": "有澤亮哉、西川和良、上治知世、金子広孝、石垣毅、伊藤拓己"
+        },
+        {
+            "key": "总制片人",
+            "value": "湯川淳、小岐須泰世、斎藤滋、金庭こず恵、古神子広一、林俊安"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 18,
+    "rating": {
+        "rank": 1173,
+        "total": 5221,
+        "count": {
+            "one": 5,
+            "two": 5,
+            "three": 7,
+            "four": 30,
+            "five": 125,
+            "six": 617,
+            "seven": 1957,
+            "eight": 2026,
+            "nine": 348,
+            "ten": 101
+        },
+        "score": 7.4
+    },
+    "collection": {
+        "wish": 2432,
+        "collect": 7346,
+        "doing": 577,
+        "on_hold": 492,
+        "dropped": 249
+    },
+    "tags": [
+        {
+            "name": "大河内一楼",
+            "count": 1387
+        },
+        {
+            "name": "原创",
+            "count": 1379
+        },
+        {
+            "name": "百合",
+            "count": 1228
+        },
+        {
+            "name": "2017年7月",
+            "count": 954
+        },
+        {
+            "name": "TV",
+            "count": 684
+        },
+        {
+            "name": "Studio3Hz",
+            "count": 681
+        },
+        {
+            "name": "梶浦由記",
+            "count": 523
+        },
+        {
+            "name": "谍战",
+            "count": 417
+        },
+        {
+            "name": "2017",
+            "count": 415
+        },
+        {
+            "name": "橘正纪",
+            "count": 261
+        },
+        {
+            "name": "黒星紅白",
+            "count": 209
+        },
+        {
+            "name": "Actas",
+            "count": 192
+        },
+        {
+            "name": "战斗",
+            "count": 163
+        },
+        {
+            "name": "梶浦由记",
+            "count": 106
+        },
+        {
+            "name": "Studio_3Hz",
+            "count": 84
+        },
+        {
+            "name": "蒸汽朋克",
+            "count": 46
+        },
+        {
+            "name": "悬疑",
+            "count": 40
+        },
+        {
+            "name": "科幻",
+            "count": 30
+        },
+        {
+            "name": "日本",
+            "count": 29
+        },
+        {
+            "name": "轻百合",
+            "count": 26
+        },
+        {
+            "name": "间谍",
+            "count": 24
+        },
+        {
+            "name": "Princess",
+            "count": 24
+        },
+        {
+            "name": "奇幻",
+            "count": 23
+        },
+        {
+            "name": "单元剧",
+            "count": 22
+        },
+        {
+            "name": "2017年",
+            "count": 20
+        },
+        {
+            "name": "橘正紀",
+            "count": 18
+        },
+        {
+            "name": "アクタス",
+            "count": 13
+        },
+        {
+            "name": "剧情",
+            "count": 13
+        },
+        {
+            "name": "PrincessPrincipal",
+            "count": 11
+        },
+        {
+            "name": "TVA",
+            "count": 9
+        }
+    ],
+    "meta_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "原创",
+        "战斗"
+    ],
+    "series": false,
+    "main_character_ids": [
+        52763,
+        52764,
+        52765,
+        52766,
+        52767
+    ],
+    "main_characters": [
+        {
+            "id": 52763,
+            "name": "アンジェ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0f/56/52763_crt_Hz58v.jpg?r=1490326392",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/56/52763_crt_Hz58v.jpg?r=1490326392",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/56/52763_crt_Hz58v.jpg?r=1490326392",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0f/56/52763_crt_Hz58v.jpg?r=1490326392"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 16348,
+                    "name": "今村彩夏",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/67/32/16348_prsn_2t62r.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/32/16348_prsn_2t62r.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/32/16348_prsn_2t62r.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/67/32/16348_prsn_2t62r.jpg"
+                    },
+                    "short_summary": "日本的女性声优，隶属于WITH LINE。大阪府出身。身高161cm，血型AB型。\r\n兴趣是读书（主要是宫部美幸、东野圭吾等推理小说家）、散步、飞镖、保龄球、逛杂货店、赛马等多种活动。\r\n特技是游泳和桌球。游泳是从2岁到小学2年级开始到游泳教室练习，中学开始正式参加活动，拿手种类为仰泳。桌球为小学到高中参加的社团，本人自称是超攻击型的选手。\r\n2014年7月获得主持广播节目《今村彩夏 STAY GOLD》的机会。\r\n2018年6月29日因身体不适宣布从声优界引退，与此同时其个人Twitter账号也被注销。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 52764,
+            "name": "プリンセス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2a/bf/52764_crt_XfB5F.jpg?r=1490326492",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/bf/52764_crt_XfB5F.jpg?r=1490326492",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/bf/52764_crt_XfB5F.jpg?r=1490326492",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2a/bf/52764_crt_XfB5F.jpg?r=1490326492"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 17172,
+                    "name": "関根明良",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/87/17172_prsn_tG8Jd.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/87/17172_prsn_tG8Jd.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/87/17172_prsn_tG8Jd.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/87/17172_prsn_tG8Jd.jpg"
+                    },
+                    "short_summary": "関根 明良（せきね あきら、12月16日 - ）は、日本の女性声優。アプトプロ所属。東京都出身。\r\n\r\n日本工学院専門学校 声優・演劇科35期生。アプトプロ付属養成所3期生。\r\n最初に出演したアニメ作品は『ニセコイ』。\r\n\r\n父親が名前を付ける時に候補として「みやび」があったが、「明るくしていれば良いことがある」という意味を込めて「明良」になった。名前を見てよく男性と間違えられる。\r\n現場で呼ばれるあだ名が無かったが、『プリンセス・プリンシパル』の共演者と共に「あきらりん」「あきらん」というあだ名を決めた。\r\n特技・趣味は戦国時代の武将や城、寺を巡り知識を得ることや、オーボエ演奏。楽器は4種類吹ける。\r\n着物、刀や鎧、抹茶など和風のものが好きで京都に行くことも多い。\r\nTwitterではたまたま当日の天気についてつぶやいた際、フォロワーから反応があったことがきっかけで天気予報を毎日している。\r\nセキセイインコを飼っており、川上千尋とは『アイカツ!』で共演したことを機にインコを通じての交流が深い。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 52765,
+            "name": "ドロシー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f4/4d/52765_crt_b9LEL.jpg?r=1490326581",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/4d/52765_crt_b9LEL.jpg?r=1490326581",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/4d/52765_crt_b9LEL.jpg?r=1490326581",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f4/4d/52765_crt_b9LEL.jpg?r=1490326581"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10869,
+                    "name": "大地葉",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f0/96/10869_prsn_nWIUY.jpg"
+                    },
+                    "short_summary": "日本女性声优，埼玉县出生。日本播音演技研究所出身，隶属于VIMS。名字“大地叶”（たいち よう／Taichi You）是艺名，由来是学生时期的绰号たいちょー（“队长”，日语读音：Taichō）。\r\n\r\n趣味・特技：インド映画鑑賞、ピアノ弾き語り、曲のコピー（譜面をおこせる）\r\n芸歴：日本ナレーション演技研究所",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 52766,
+            "name": "ベアトリス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0d/89/52766_crt_6hHZE.jpg?r=1490326713",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/89/52766_crt_6hHZE.jpg?r=1490326713",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/89/52766_crt_6hHZE.jpg?r=1490326713",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0d/89/52766_crt_6hHZE.jpg?r=1490326713"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3855,
+                    "name": "玄田哲章",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/ae/3855_prsn_mIa3J.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/ae/3855_prsn_mIa3J.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/ae/3855_prsn_mIa3J.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/ae/3855_prsn_mIa3J.jpg"
+                    },
+                    "short_summary": "1948年5月20日[3]に、岡山県で生まれた。中学・高校時代は芝居と縁がなかったが、受験に際して芝居の道に進みたいという気持ちが強くなり、相談した高校の先生の知人である東映映画のプロデュースを行っていた人物からの紹介で東宝芸能アカデミーに入学。卒業後、新劇の道に進もうと文学座と劇団雲のオーディションを受けたが、両方とも落選。悩んでたところに、野沢那智主宰の劇団薔薇座の募集を目にしに1970年に入団した。当初は1年だけのつもりが、17年間在籍した。\r\n\r\n1972年24歳の時に野沢から、「そろそろお前もやらないか?」と紹介され声優業を始める。テレビアニメ『科学忍者隊ガッチャマン』のアフレコ現場を見学。同作で多数の端役を担当し、以降、声優として様々な作品をこなすようになった。声優業を始めた当時を「当日に台本を渡され台本の見方も分からないままスタジオに入れられ、喋り出しても画面に合わなくて悔しい思いをした」と振り返っている。\r\n\r\n2010年に第4回声優アワード功労賞を受賞した。",
+                    "locked": false
+                },
+                {
+                    "id": 3915,
+                    "name": "清川元夢",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ba/0b/3915_prsn_VEHZY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/0b/3915_prsn_VEHZY.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/0b/3915_prsn_VEHZY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ba/0b/3915_prsn_VEHZY.jpg"
+                    },
+                    "short_summary": "清川 元夢（きよかわ もとむ、1935年4月9日 - 2022年8月17日）は、日本の俳優、声優である。東京俳優生活協同組合所属。神奈川県出身。\r\n声優業を中心に活動しており、アニメでの主な出演作品は『機動戦士ガンダム』（テム・レイ役）、『ふしぎの海のナディア』（ガーゴイル役）、『新世紀エヴァンゲリオン』（冬月コウゾウ役）、『ご注文はうさぎですか?』（ティッピー役）。\r\n\r\n1957年、俳優座養成所に入所（6期生）。同年、劇団仲間に入り、1962年に劇団演劇座、劇団劇舎を結成する。俳優企画を経て、1968年、東京俳優生活協同組合に所属。\r\n舞台俳優が本業だが、『コンバット!』の兵士役で声優デビューし、以降吹き替え、特撮、アニメなど、さまざまな作品に出演している。自身は声優業をやる理由について「稼ぐため」と述べている。\r\n劇舎設立に協力した山田礼子とともに「劇舎声優塾D.D.」において講師を務めている。\r\n2022年8月17日、肺炎のため死去。\r\n\r\n声域はバリトン。\r\nアニメの声優としては庵野秀明監督作品の常連であり、1990年の『ふしぎの海のナディア』のガーゴイル役以降、たびたび出演している。\r\n声優としては腺病質な人物役で知られる。特撮作品では怪人役の声を多く担当しており、上述の庵野が清川に出演を依頼するようになったきっかけは『秘密戦隊ゴレンジャー』で清川が声を当てた青すじ仮面役を気に入ったことである。怪人以外にも『ウルトラマンレオ』以降、「ウルトラシリーズ」の複数の作品でウルトラマンキング役を演じている。\r\n悪役を多く演じているが、清川は自身の声について「音として柔らかい」と分析しており、「どうしてもほんとのワルになりきれない」と述べている。それゆえに『ふしぎの海のナディア』で敵役のガーゴイルを演じることになった際、ガーゴイルの生い立ちについて述べた上で「だったら、どちらがワルかはっきりしない、そういうのでやらない?」と監督の庵野に提案し、庵野は最初からそうしようと思っていたとしてこの提案を取り入れた(なお、作中では味方役であるノーチラス号の乗組員の役も演じている他、第2話から23話までは冒頭部の粗筋解説も行っていた)。また『機動武闘伝Gガンダム』においてミカムラ博士を演じた際、清川の声を聞いた監督の今川泰宏は「どうしても、悪人に出来ない」として、本来は悪人として設定されていたミカムラ博士を最終的には善人に変更したという。\r\n死去した宮部昭夫や田中和実、石森達幸、永井一郎から持ち役の一部を引き継いでいる。\r\n特技は柔道、フェンシング。\r\n\r\n上述のように本人はあくまで舞台志向であり、「僕マンガ大嫌いなんですよね（笑）。仕事場から逃げ出したいくらいなんです」、「『マンガは嫌い』だとか、仕事をホサれるようなことばっかり言ってるんですよ」と自身がアニメの声優をやることに対して抵抗感がある旨の発言をしている。また収録スタジオではアフレコ前に漫画を読んでいた若手声優を叱ったり、体調管理についても苦言を呈するなど、若手に注意を促している。作品の制作スタッフに対しては敬意を払う一方で、声優については、役者を育てる機関が日本になくスタッフの求めるだけの演技ができないことや、プロ意識の欠けた者が多くなっていることを憂う発言をしている。\r\n歌を歌うことについても、自分の柄ではないと否定的である。『ふしぎの海のナディア』のCDアルバム『Bye Bye Blue Water』で歌う企画の打診に対して（歌いたくなかったため）「演歌ならいいですよ」と答えたところ、演歌調の歌である「本命盤 恨み舟」が作られ、清川が歌った数少ない歌となっている。清川のこの歌に対して、共演していた日髙のり子は、「『ナディア』って始まった頃から結構歌とかの仕事も多くて、キャラクターとして歌うことも多かったんですけど、清川さんの『恨み舟』を聞いた時は「やっぱり違うなあ」って思いました。間のセリフとかもテレビと同じく淡々と喋っているのに、聞いているこっちはたまらなくおかしかったです。で、やっぱりガーゴイルなんですよねえ。私がジャンで歌っても、やっぱり日高が見え隠れするところってあるじゃないですか。でもこの歌の中にいるのは清川さんじゃなくてガーゴイルなんですよ。それがやっぱりすごいと思いました。」と述べている。\r\n『新世紀エヴァンゲリオン』で演じた冬月コウゾウの容姿のモデルは、アニメ制作当時の清川本人である。",
+                    "locked": false
+                },
+                {
+                    "id": 4349,
+                    "name": "石丸博也",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a6/d5/4349_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/d5/4349_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/d5/4349_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a6/d5/4349_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                },
+                {
+                    "id": 18601,
+                    "name": "影山灯",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ad/74/18601_prsn_U6IzT.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/74/18601_prsn_U6IzT.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/74/18601_prsn_U6IzT.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ad/74/18601_prsn_U6IzT.jpg"
+                    },
+                    "short_summary": "資 格 \r\nTOEIC680 点、英語検定 2 級 \r\n声優検定 3 級、漢字検定 2 級、 \r\n書道 7 段、普通自動車運転免許 \r\n\r\n特 技 \r\nモノマネ、絵を描く \r\n\r\n趣 味 \r\nビリヤード、カラオケ",
+                    "locked": false
+                },
+                {
+                    "id": 20135,
+                    "name": "落合福嗣",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/f6/20135_prsn_CT455.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/f6/20135_prsn_CT455.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/f6/20135_prsn_CT455.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/f6/20135_prsn_CT455.jpg"
+                    },
+                    "short_summary": "落合 福嗣（おちあい ふくし、1987年8月20日 - ）は、日本の男性声優、タレント、ナレーター。\r\n愛知県名古屋市出身。落合博満・信子夫妻の長男。元プロレスラーのジャイアント落合は従兄。\r\n身長186cm。愛称は「フクシくん」。国士舘大学21世紀アジア学部卒業。アミューズメントメディア総合学院東京校声優タレント学科卒業。青二プロダクション（ジュニア）所属。\r\n\r\n父・博満が中日ドラゴンズの選手として在籍中に名古屋市で生まれる。国士舘中学時代、軟式野球チーム「世田谷ウイングス」の大型内野手として活躍するも、国士舘高校在学中に野球を断念。その後は父親の知名度を活かして各種メディアに出演している。得意教科は英語で、「私立中学校英語レシテーション（暗唱）大会」では優秀賞の受賞歴がある。2010年10月18日にSkypeで知り合った山口県出身の一般人女性と4ヶ月の交際の後結婚。2014年1月20日には長女が誕生した。\r\n2015年4月より青二プロダクションのジュニア所属（新人研修生で3年後に再びオーディションし合格すればプロダクションに正式所属となる）となった。母・信子は「周囲から認められるようレベルに達しないと大きなチャンスは巡って来ない」と厳しくもエールを送っている。\r\n2016年6月、自身のTwitterにて第2子誕生を公表。\r\n\r\n虚実混交したエピソードが「落合福嗣伝説」として流布されている。著書のタイトルもそれを意識している。福嗣本人によれば、現役プロ野球選手だった父・博満とふれあう機会が少なかった幼少期に、父のたまの休日に一緒に外出してもスポーツ紙の番記者やファンに追いかけられてしまうため、番記者やファンにいたずらを繰り返していたものが「“悪童”伝説」とされたもので、誇張されて流布されたものは少ないという。\r\n2004年に当時父・博満が監督を務め、リーグ優勝を果たした中日ドラゴンズの優勝祝賀会に登場し、母・信子に誘われてビールかけに参加したが当時17歳、国士舘高校野球部の部員であったことに加え、このシーンが全国にテレビ中継されていたため、後に高野連から親子ともども厳重注意を受けた（厳密にはビールかけについてではなく学生野球憲章で野球部員のプロ選手との写真撮影やテレビ出演などを禁じていたため）。\r\n2009年3月、KINYA、演歌歌手の広野ゆき、秋葉系アイドルのまいみんらとKINYA&ALphaというユニットを結成。CDアルバム「摩天楼ブルース」をリリース。\r\n2010年11月13日夜にインターネットの動画サイト「Ustream」のライブ中継で結婚したことを発表した。\r\nMMORPG『ファイナルファンタジーXIV 新生エオルゼア』の熱心なプレイヤーである。\r\n2015年6月20日のTBS系列で放送された『新・情報7days ニュースキャスター』でナレーションを行った際、顔出しを今後しばらくの間行わないことを明らかにしている。\r\n先述したように高校時代は野球部に在籍していたが、卒業して以来は一切バットを握っていなかった。しかし2015年に父博満と共に野球のトレーニングに打ち込んだとのこと。\r\n父親共々大の『機動戦士ガンダム』シリーズのファンとして知られる。自身が初めて見たガンダムシリーズのアニメは『機動戦士ガンダム 第08MS小隊』。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 52767,
+            "name": "ちせ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/10/47/52767_crt_ddeN0.jpg?r=1490326830",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/10/47/52767_crt_ddeN0.jpg?r=1490326830",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/10/47/52767_crt_ddeN0.jpg?r=1490326830",
+                "grid": "https://lain.bgm.tv/pic/crt/g/10/47/52767_crt_ddeN0.jpg?r=1490326830"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 15327,
+                    "name": "古木のぞみ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/73/30/15327_prsn_r7f2z.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/30/15327_prsn_r7f2z.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/30/15327_prsn_r7f2z.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/73/30/15327_prsn_r7f2z.jpg"
+                    },
+                    "short_summary": "古木 のぞみ（ふるき のぞみ、1月12日 - ）は、日本の女性声優。マウスプロモーション所属。\r\n長崎県五島列島出身。血液型はB型。\r\n\r\n専門学校ESPエンタテインメント卒業後、マウスプロモーション附属養成所に入所、2011年8月、『声優バラエティー SAY!YOU!SAY!ME!』内のコーナー「声優アイドルユニット企画」で新人声優ユニットのメンバーとして抜擢され、『ワンリルキス』のメンバーとしての活動を開始。\r\n2012年4月よりマウスプロモーション所属となった。\r\n2017年1月12日、自身の誕生日にオフィシャルブログにて入籍したことを発表した。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

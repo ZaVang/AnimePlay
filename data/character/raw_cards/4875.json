@@ -1,0 +1,60 @@
+{
+    "id": 4875,
+    "name": "今井蛍",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/cf/04/4875_crt_anidb.jpg?r=1678471520",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/04/4875_crt_anidb.jpg?r=1678471520",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/04/4875_crt_anidb.jpg?r=1678471520",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cf/04/4875_crt_anidb.jpg?r=1678471520"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "今井萤"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "今井蛍"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Imai Hotaru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月25日"
+        },
+        {
+            "key": "身高",
+            "value": "139cm"
+        },
+        {
+            "key": "体重",
+            "value": "33kg"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 25,
+    "stat": {
+        "comments": 6,
+        "collects": 29
+    },
+    "anime_ids": [
+        2257
+    ]
+}

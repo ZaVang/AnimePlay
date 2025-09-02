@@ -1,0 +1,48 @@
+{
+    "id": 24909,
+    "name": "沖田総司",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f8/a9/24909_crt_w9mF7.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/a9/24909_crt_w9mF7.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/a9/24909_crt_w9mF7.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f8/a9/24909_crt_w9mF7.jpg"
+    },
+    "summary": "新撰组第一队队长。剑术可谓队内第一把好手。非常理解铁之助。\r\n平时总是身穿浴袍的柔弱美少年，性格阳光温柔而开朗爱笑，而且心很细，总是在默默地照顾著别人。爱和小孩子玩，对待任何人都很温柔，因此被很多少女倾心。宠物是小猪西藏【有多种翻译】。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "冲田总司"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "おきた そうじ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Okita Souji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 7
+    },
+    "anime_ids": [
+        1930
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "id": 57305,
+    "name": "竈門炭治郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bd/1e/57305_crt_9ZG90.jpg?r=1610926902",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/1e/57305_crt_9ZG90.jpg?r=1610926902",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/1e/57305_crt_9ZG90.jpg?r=1610926902",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bd/1e/57305_crt_9ZG90.jpg?r=1610926902"
+    },
+    "summary": "本作主人公。初登场13岁，现年15岁。鬼杀队剑士，癸级。\r\n善良温柔的少年，重视家人、个性认真顽固有担当的长男。\r\n以拯救变成鬼的妹妹祢豆子、为家族报仇为目标，在富冈的引荐下成为鳞泷的弟子，经过2年的艰苦训练，通过最终选拔成为鬼杀队剑士。\r\n背负着妹妹藏身的箱子行动，重视妹妹甚于自己的生命。\r\n有着独特的敏锐嗅觉，能从气味分辨人的情感，亦能分辨人与鬼，因这能力追踪到了仇人鬼舞辻。训练后能在战斗时辨别出对手弱点的气味”隙之线“。\r\n全力砍杀害人的鬼，但对曾是人类的鬼的空虚与悲哀有着理解与怜悯。\r\n因从已故的父亲处继承的耳饰引起了鬼舞辻的注意，被其派出鬼追杀。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "灶门炭治郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "竈門 炭治郎"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かまど たんじろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kamado Tanjirou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "7月14日"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "61kg"
+        },
+        {
+            "key": "剑术流派",
+            "value": "水之呼吸"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 14,
+    "stat": {
+        "comments": 43,
+        "collects": 126
+    },
+    "anime_ids": [
+        350764
+    ]
+}

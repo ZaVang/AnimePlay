@@ -1,0 +1,56 @@
+{
+    "id": 18431,
+    "name": "アルバ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d2/39/18431_crt_LFp15.jpg?r=1364444051",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/39/18431_crt_LFp15.jpg?r=1364444051",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/39/18431_crt_LFp15.jpg?r=1364444051",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d2/39/18431_crt_LFp15.jpg?r=1364444051"
+    },
+    "summary": "非常阳光开朗勇于直接指出错误的少年。是国王召集来讨伐魔王的“传说中勇者的子孙”中的一员，初出茅庐的新人勇者。得意技是吐槽——虽然本人不想承认。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿鲁巴·弗流林戈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "垃圾山"
+                },
+                {
+                    "v": "厕所侠"
+                },
+                {
+                    "v": "肋骨侠"
+                },
+                {
+                    "v": "囚人公"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月6日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 6,
+    "stat": {
+        "comments": 5,
+        "collects": 35
+    },
+    "anime_ids": [
+        48669
+    ]
+}

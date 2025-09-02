@@ -1,0 +1,93 @@
+{
+    "id": 65989,
+    "name": "山田たえ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9f/8c/65989_crt_VvL6k.jpg?r=1536564713",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/8c/65989_crt_VvL6k.jpg?r=1536564713",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/8c/65989_crt_VvL6k.jpg?r=1536564713",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9f/8c/65989_crt_VvL6k.jpg?r=1536564713"
+    },
+    "summary": "黑色长发的僵尸0号。\r\n7人之中唯一一个没有恢复意识的僵尸，总是在咬着什么，最像僵尸的僵尸。基本上只会呻吟，成员们所说的话可以理解一定的程度，但由于无法克制本能而会去咬旁边的纯子。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "山田多惠"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "山田妙"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やまだ たえ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yamada Tae"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "？"
+        },
+        {
+            "key": "血型",
+            "value": "？"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "体重",
+            "value": "50kg"
+        },
+        {
+            "key": "BWH",
+            "value": "91：59：89(F)"
+        },
+        {
+            "key": "去世日期",
+            "value": "？"
+        },
+        {
+            "key": "兴趣",
+            "value": "巡游旅行社"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "鳕鱼子、墨鱼"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "章鱼、芥末"
+        },
+        {
+            "key": "喜欢的颜色",
+            "value": "紫色"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 51,
+        "collects": 75
+    },
+    "anime_ids": [
+        252655,
+        287488
+    ]
+}

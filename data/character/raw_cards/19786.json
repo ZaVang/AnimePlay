@@ -1,0 +1,52 @@
+{
+    "id": 19786,
+    "name": "常盤恵次",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d8/5d/19786_crt_08P90.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/5d/19786_crt_08P90.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/5d/19786_crt_08P90.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d8/5d/19786_crt_08P90.jpg"
+    },
+    "summary": "有着“三白眼”，将长发在脑后结成一条马尾辫的少年。\r\n中札内南中学的毕业生。他作为家中的长男，以继承家里经营的养鸡场为己任，因而以推荐入学升入了虾夷农高。实习分组时与八轩同组。社团为空手道社。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "常盘惠次"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "常盤 恵次"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ときわ けいじ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tokiwa Keiji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 3
+    },
+    "anime_ids": [
+        59664
+    ]
+}

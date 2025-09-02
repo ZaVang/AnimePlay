@@ -1,0 +1,73 @@
+{
+    "id": 7253,
+    "name": "峰不二子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/78/0b/7253_crt_V6dHh.jpg?r=1446819708",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/0b/7253_crt_V6dHh.jpg?r=1446819708",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/0b/7253_crt_V6dHh.jpg?r=1446819708",
+        "grid": "https://lain.bgm.tv/pic/crt/g/78/0b/7253_crt_V6dHh.jpg?r=1446819708"
+    },
+    "summary": "搞不清楚她到底是间谍、小偷或者是杀手，是个谜一般的女人。基本上算是鲁邦的同伙，不过随时都会背叛鲁邦。\r\n不二子最常做的就是提供情报给鲁邦、煽动鲁邦去偷东西，然后又设陷阱，将东西独吞、占为己有。虽然次元和五右卫门都很讨厌她，不过鲁邦却对她着迷得不得了。\r\n最爱的就是钱，为了钱她什么都做。\r\n虽然她的恶名应该已经传遍全世界，不过还是有很多的富商名流受她的魅力所诱。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "峰不二子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "峰不二子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みね ふじこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mine Fujiko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "167"
+        },
+        {
+            "key": "体重",
+            "value": "50"
+        },
+        {
+            "key": "BWH",
+            "value": "99/55/88"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 37,
+        "collects": 262
+    },
+    "anime_ids": [
+        115661,
+        36359,
+        36355,
+        24274,
+        219164,
+        84991
+    ]
+}

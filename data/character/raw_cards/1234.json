@@ -1,0 +1,76 @@
+{
+    "id": 1234,
+    "name": "小鳥桃葉",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/20/e5/1234_crt_3dBKs.jpg?r=1397739958",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/20/e5/1234_crt_3dBKs.jpg?r=1397739958",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/20/e5/1234_crt_3dBKs.jpg?r=1397739958",
+        "grid": "https://lain.bgm.tv/pic/crt/g/20/e5/1234_crt_3dBKs.jpg?r=1397739958"
+    },
+    "summary": "无论哪里都能睡觉的、自我主义的女生.实际上是有钱人家的大小姐,有个很厉害的妹妹.感觉上憨憨的,喜欢有趣的事物,竟对学美有兴趣.",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小鸟桃叶"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "おどり ももは"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Odori Momoha"
+                },
+                {
+                    "k": "昵称",
+                    "v": "もも"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2019年3月3日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "父",
+            "value": "小鳥桃太郎"
+        },
+        {
+            "key": "母",
+            "value": "小鳥桜子"
+        },
+        {
+            "key": "妹",
+            "value": "小鳥桜華"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 2019,
+    "birth_mon": 3,
+    "birth_day": 3,
+    "stat": {
+        "comments": 5,
+        "collects": 18
+    },
+    "anime_ids": [
+        2470
+    ]
+}

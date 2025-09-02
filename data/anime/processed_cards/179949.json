@@ -1,0 +1,121 @@
+{
+    "id": 179949,
+    "name": "小林家的龙女仆",
+    "image_path": "data/images/anime/179949.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "在单身的辛苦OL小林身边突然出现的女仆装束的美少女托尔。\r\n长着角和尾巴的她的身姿正是所谓的龙娘。\r\n在醉酒的小林邀请下说要到家里去的托尔，鬼使神差地开始以小林家女仆的身份工作……！？\r\n“女仆”+“龙”=“女仆龙”有着笨手笨脚的可爱之处！\r\n龙娘与人类之间基本上很温暖、偶尔有些黑暗的异种族间交流喜剧！！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 14,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改",
+        "萌系",
+        "日常"
+    ],
+    "date": "2017-01-11",
+    "rating_rank": 1086,
+    "rating_score": 7.4,
+    "rating_total": 19386,
+    "main_character_ids": [
+        47658,
+        47659,
+        47695
+    ],
+    "main_characters": [
+        {
+            "id": 47658,
+            "name": "小林さん",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f1/f2/47658_crt_8111x.jpg?r=1484250105",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/f2/47658_crt_8111x.jpg?r=1484250105",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/f2/47658_crt_8111x.jpg?r=1484250105",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f1/f2/47658_crt_8111x.jpg?r=1484250105"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5636,
+                    "name": "田村睦心",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/39/84/5636_prsn_p449k.jpg?r=1665351736"
+                    },
+                    "short_summary": "日本东京都出身的女性声优，现时隶属 I'm Enterprise。\r\n\r\n日本解说表演研究所毕业。2007年，在电视动画《悠久之翼》中以声优身份出道。2008年，在《Battle Spirits 少年突破马神》中首次担任主演。\r\n嗓音沙哑，多出演动画男主角的少年时期形象的角色。\r\n2014年8月，因为喉咙问题切除了息肉而暂时休息。9月1日在博客上记载康复，9月8日在广播节目中说明情况。\r\n\r\n官方说法上爱好是书法和长笛。从小学1年级开始练习书法，擅长草书和行书。实际上私下里喜欢一个人望着墙壁发呆。\r\n喜欢吃东西和睡觉。喜欢的食物是意大利面、梅干一类的下酒菜。也喜欢喝酒。\r\n喜欢布娃娃。\r\n家中有一个比自己小1岁的弟弟。\r\n昵称是“田村少年”，但是这个名字和自己担任少年役居多没有直接关系。\r\n与共同出演过《Battle Spirits 少年突破马神》、《爱杀宝贝》的赤崎千夏有深交。\r\n把bl游戏藏在书柜的最下层。“其实我根本就没有藏，只是放在那里而已。”",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 47659,
+            "name": "トール",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5b/17/47659_crt_FptD2.jpg?r=1484780174",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/17/47659_crt_FptD2.jpg?r=1484780174",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/17/47659_crt_FptD2.jpg?r=1484780174",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5b/17/47659_crt_FptD2.jpg?r=1484780174"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 15292,
+                    "name": "桑原由気",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/42/0c/15292_prsn_ouHHb.jpg?r=1687710275",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/0c/15292_prsn_ouHHb.jpg?r=1687710275",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/0c/15292_prsn_ouHHb.jpg?r=1687710275",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/42/0c/15292_prsn_ouHHb.jpg?r=1687710275"
+                    },
+                    "short_summary": "日本の女性声優。マウスプロモーション所属。\r\n旭プロダクションプロデュースによる声優ユニット「あいまいみーまいん」のメンバー。\r\n\r\nTVアニメ『フリージング ヴァイブレーション』が初レギュラー作品である。\r\n趣味・特技は茶道・お笑い。お笑いにおいては高校時代にお笑いライブにてコントをやった経験があり、芸人のサインを集める手帳を作ったり、芸人が店主を務めるラーメン屋に行くほどの趣味としている。\r\n『NARUTO -ナルト-』などの週刊少年ジャンプ作品好き。また、恋に落ちたキャラに『NARUTO -ナルト-』のうちはサスケをあげている。\r\n憧れの声優には、沢城みゆきを挙げている。\r\n自分を一言で表すと、『小さいおじさん』だと語っている。\r\n今までにいなかった、そしてこれからも現れないような声優を目指したいとしている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 47695,
+            "name": "カンナカムイ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/82/d4/47695_crt_aQs9c.jpg?r=1629273717",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/d4/47695_crt_aQs9c.jpg?r=1629273717",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/d4/47695_crt_aQs9c.jpg?r=1629273717",
+                "grid": "https://lain.bgm.tv/pic/crt/g/82/d4/47695_crt_aQs9c.jpg?r=1629273717"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 14918,
+                    "name": "長縄まりあ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5b/8c/14918_prsn_1V1dU.jpg?r=1676109778",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/8c/14918_prsn_1V1dU.jpg?r=1676109778",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/8c/14918_prsn_1V1dU.jpg?r=1676109778",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5b/8c/14918_prsn_1V1dU.jpg?r=1676109778"
+                    },
+                    "short_summary": "日本的女性声优，爱知县出身。I'm Enterprise所属。\r\n\r\n成为声优的契机是在国中时代参与呼吁禁烟运动的时候，曾被路上的人称赞 “你的声音很棒”，同时在学校也常被同学模仿，因此知道自己的声音并不普通。\r\n就读日本播音演技研究所的基本科时，在进级审查中的试镜中合格，并加入I'm Enterprise。\r\n\r\n憧憬的声优为大谷育江与钉宫理惠。\r\n喜欢的食物是煎饼、零食。有在寿司店打工的经验。\r\n特别喜欢少年系的动画。\r\n2016年的访谈中提到今后想以演出吉祥物角色为目标。\r\n\r\n与同期出身的声优小泽亚李交情很好。同时与在《三坪房间的侵略者！？》演出的大森日雅、铃木绘理、田泽茉纯亦有深交。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

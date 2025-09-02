@@ -1,0 +1,64 @@
+{
+    "id": 12737,
+    "name": "松雪集",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/74/20/12737_crt_W5aH5.jpg?r=1624118937",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/74/20/12737_crt_W5aH5.jpg?r=1624118937",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/74/20/12737_crt_W5aH5.jpg?r=1624118937",
+        "grid": "https://lain.bgm.tv/pic/crt/g/74/20/12737_crt_W5aH5.jpg?r=1624118937"
+    },
+    "summary": "原“超和平Busters”队员，似乎暗恋间芽。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "松雪集"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "松雪 集"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まつゆき あつむ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Matsuyuki Atsumu"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ゆきあつ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "181cm"
+        },
+        {
+            "key": "体重",
+            "value": "68kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 22,
+        "collects": 51
+    },
+    "anime_ids": [
+        10440
+    ]
+}

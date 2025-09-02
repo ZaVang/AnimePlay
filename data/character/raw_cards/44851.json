@@ -1,0 +1,52 @@
+{
+    "id": 44851,
+    "name": "イワン・ウイスキー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/64/01/44851_crt_q0lAT.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/64/01/44851_crt_q0lAT.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/64/01/44851_crt_q0lAT.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/64/01/44851_crt_q0lAT.jpg"
+    },
+    "summary": "生後まもなく父親による頭脳改造手術を受けた事で、\r\nテレパシー、サイコキネシス、瞬間移動といった超能力を使用出来る。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Ivan Whisky"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "编号",
+            "value": "001"
+        },
+        {
+            "key": "出身",
+            "value": "俄罗斯"
+        },
+        {
+            "key": "能力",
+            "value": "超能力"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 6
+    },
+    "anime_ids": [
+        13607
+    ]
+}

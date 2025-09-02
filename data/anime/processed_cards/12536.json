@@ -1,0 +1,108 @@
+{
+    "id": 12536,
+    "name": "夏目友人帐 叁",
+    "image_path": "data/images/anime/12536.jpg",
+    "points": 8.2,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "小さい頃から妖怪を見ることができた少年・夏目貴志。\r\n彼は、祖母レイコが妖怪を子分とする証にその名を書かせた「友人帳」を継いで以来、妖怪達に追われる日々。\r\n自称用心棒の妖怪・ニャンコ先生と共に、妖怪達にその名を返すことを決めた夏目は、さまざまな妖怪と出会い、その心を知っていくのだった。\r\n妖との出会いや別れ、そして、心優しい人達の想い―――。\r\n夏目はいつしかたくさんの大切なものを手にしていた・・・。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2011-07-04",
+    "rating_rank": 153,
+    "rating_score": 8.2,
+    "rating_total": 8447,
+    "main_character_ids": [
+        74,
+        75
+    ],
+    "main_characters": [
+        {
+            "id": 74,
+            "name": "夏目貴志",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/62/dd/74_crt_Zt22s.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/dd/74_crt_Zt22s.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/dd/74_crt_Zt22s.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/62/dd/74_crt_Zt22s.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4232,
+                    "name": "神谷浩史",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/fa/4232_prsn_bBAP2.jpg?r=1675677585"
+                    },
+                    "short_summary": "高中时期是理科生，加入青二塾以前只是一般地看着动画，没有想要成为声优的念头。高三时，于7月份加入同年级朋友组建的演剧团，在9月份的地区演剧大赛中意外获得“个人演技奖”，自此开始对演剧事业产生兴趣。想考艺术类大学所以在高三理转文，并不成功，高考落榜。\r\n另寻出路的时候在杂志上看到了青二塾的广告，征得父母同意考上其东京校第14期。当时不了解其实这里培养的是声优而不是演员，起初产生了“别干了”的消极情绪，但之后仍在青二塾坚持学习了下去，不过是“不良墅生”，同学和老师之后都笑称当时他“很狂妄”，并不参加到同学间的自主练习中。1994年，19岁的神谷从青二塾毕业，顺利加入青二事务所。\r\n出道的头几年，相比于同期甚至后期的声优们很快的大放异彩，神谷则是全部出演酱油的路人角色。2006年8月7日，因为遭逢交通事故而住院治疗。虽然经纪公司并不愿透漏事故的原因，但从关系人口中得知似乎是骑乘机车时发生的。车祸似乎是神谷事业的一个拐点。2007年因担任《再见!绝望先生》、《高达00》等作品主角的CV而受到瞩目，之后在《夏目友人帐》、《化物语》等作品中为主角配音获得极高人气，目前则是因为饰演《进击的巨人》中的里维兵长而再度爆红。\r\n\r\n2025年1月1日，宣布与女演员、模特逢泽莉娜结婚。1月4日，在广播节目中透露自己于8年前起单身，后因此节目而与逢泽莉娜结缘，大约2年前开始交往。",
+                    "locked": false
+                },
+                {
+                    "id": 4783,
+                    "name": "藤村歩",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f5/c7/4783_prsn_Jp5jV.jpg?r=1515334929",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/c7/4783_prsn_Jp5jV.jpg?r=1515334929",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/c7/4783_prsn_Jp5jV.jpg?r=1515334929",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f5/c7/4783_prsn_Jp5jV.jpg?r=1515334929"
+                    },
+                    "short_summary": "日本女性声优，隶属于贤Production。\r\n代表作品有《风之圣痕》神凪绫乃、《会长是女仆大人》鲇泽美咲、《圣痕炼金士》织部真冬、《机动战士高达UC》米妮瓦·拉欧·扎比（奥黛丽·伯恩）、《空之境界》黑桐鲜花等。\r\n\r\n2019年4月1日由事务所宣布无限期停止声优活动。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 75,
+            "name": "ニャンコ先生/斑",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/67/23/75_crt_Z7GLo.jpg?r=1716320474",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/23/75_crt_Z7GLo.jpg?r=1716320474",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/23/75_crt_Z7GLo.jpg?r=1716320474",
+                "grid": "https://lain.bgm.tv/pic/crt/g/67/23/75_crt_Z7GLo.jpg?r=1716320474"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 1582,
+                    "name": "井上和彦",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/59/f9/1582_prsn_N4nun.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/f9/1582_prsn_N4nun.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/f9/1582_prsn_N4nun.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/59/f9/1582_prsn_N4nun.jpg"
+                    },
+                    "short_summary": "日本声优、解说、舞台演员、音响监督。神奈川县横滨市出身。B-Box所属。横浜市立横浜商業高等学校卒業。\r\n曾数度结婚、离婚。首任妻子为《小甜甜》的漫画家五十岚优美子(いがらしゆみこ)，之后又曾与声优荒川美奈子、女演员越智静香结婚，但最终均离婚。长子为漫画家兼女装模特五十岚奈波(いがらし奈波)，本名五十岚庆一(五十嵐慶一)。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

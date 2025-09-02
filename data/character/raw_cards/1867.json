@@ -1,0 +1,60 @@
+{
+    "id": 1867,
+    "name": "山崎加奈子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a1/9a/1867_hOONt.jpg?r=1509016797",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/9a/1867_hOONt.jpg?r=1509016797",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/9a/1867_hOONt.jpg?r=1509016797",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a1/9a/1867_hOONt.jpg?r=1509016797"
+    },
+    "summary": "矢夜的朋友。空袭中成为幽灵，与矢夜一起度过60年的夏天。曾为了存活下去而攻击岚，后来在伏见康复和劝介下变得温驯。与其相通的是村田英雄，并因此雇用他为家庭佣工。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "山崎加奈子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "山崎 加奈子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やまざき かなこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yamazaki Kanako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "堀江由衣"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 2
+    },
+    "anime_ids": [
+        2604
+    ]
+}

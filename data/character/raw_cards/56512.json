@@ -1,0 +1,71 @@
+{
+    "id": 56512,
+    "name": "アシㇼパ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/05/ea/56512_crt_94z4T.jpg?r=1569906263",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/ea/56512_crt_94z4T.jpg?r=1569906263",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/ea/56512_crt_94z4T.jpg?r=1569906263",
+        "grid": "https://lain.bgm.tv/pic/crt/g/05/ea/56512_crt_94z4T.jpg?r=1569906263"
+    },
+    "summary": "阿伊努人的猎人，原名欸卡西欧噗咚伊，名字的意思是“祖父的屁眼”。约12至13岁的天真无邪少女，能说流利的日语，出身于小樽附近的“寇坦”（爱努语“部落”之意）。告诉杉元各种关于北海道的动植物、料理、阿伊努族风俗文化习惯等知识。对编织、刺绣等传统阿伊努人女性工作毫无兴趣，擅长使用弓箭的高手、制作陷阱打猎及野外求生。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿席莉帕"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小蝶边 明日子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こちょうべ あすこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kochoube Asuko"
+                },
+                {
+                    "k": "昵称",
+                    "v": "エカシオトンプイ / 祖父的屁眼"
+                },
+                {
+                    "k": "阿伊努语",
+                    "v": "Asirpa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月1日"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 1,
+    "stat": {
+        "comments": 43,
+        "collects": 138
+    },
+    "anime_ids": [
+        285901,
+        251547,
+        361095,
+        221127
+    ]
+}

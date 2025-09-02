@@ -1,0 +1,53 @@
+{
+    "id": 58865,
+    "name": "监狱兔 第三季",
+    "image_path": "data/images/anime/58865.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "依照其帆布鞋发行的日期，发生在1961年9月21日以后。讲述基廉列克等人到达一座城市里，进入一所商店打算购买限量版帆布鞋，然而该商店的老板觊觎基廉列克的金钱而打算除之为快，而基廉列克为了得到被收走的帆布鞋而逐层向上突破的故事。此集出现了由普京制造、后期拥有吃重演出的机器兔机械列克。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2008-10-13",
+    "rating_rank": 1178,
+    "rating_score": 7.4,
+    "rating_total": 1349,
+    "main_character_ids": [
+        2505,
+        10501
+    ],
+    "main_characters": [
+        {
+            "id": 2505,
+            "name": "プーチン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ba/ba/2505_crt_eKONl.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/ba/2505_crt_eKONl.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/ba/2505_crt_eKONl.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ba/ba/2505_crt_eKONl.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 10501,
+            "name": "キレネンコ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bd/6f/10501_crt_04bH3.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/6f/10501_crt_04bH3.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/6f/10501_crt_04bH3.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bd/6f/10501_crt_04bH3.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

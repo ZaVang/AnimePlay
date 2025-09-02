@@ -1,0 +1,64 @@
+{
+    "id": 102291,
+    "name": "橘総一朗",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/04/a7/102291_crt_BKSHw.jpg?r=1635866724",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/a7/102291_crt_BKSHw.jpg?r=1635866724",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/a7/102291_crt_BKSHw.jpg?r=1635866724",
+        "grid": "https://lain.bgm.tv/pic/crt/g/04/a7/102291_crt_BKSHw.jpg?r=1635866724"
+    },
+    "summary": "アシト、大友と同じセレクション組。強豪「横山武蔵野蹴球団ジュニアユース」に所属していたが、何年も前から自身の成長が止まっていると感じ、駄目になっていく自分を踏みとどまらせるためエスペリオンユースへの入団を志す。ときには空気の読めない熱い発言をして周囲を引かせるが、責任感の強い真面目な性格の持ち主。ポジションはフォワード。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "橘总一朗"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たちばな そういちろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tachibana Souichirou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "6月11日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "173cm"
+        },
+        {
+            "key": "体重",
+            "value": "65kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 11,
+    "stat": {
+        "comments": 4,
+        "collects": 3
+    },
+    "anime_ids": [
+        337459
+    ]
+}

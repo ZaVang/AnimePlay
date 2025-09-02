@@ -1,0 +1,68 @@
+{
+    "id": 62966,
+    "name": "古見硝子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a9/12/62966_crt_eoESE.jpg?r=1638343110",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/12/62966_crt_eoESE.jpg?r=1638343110",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/12/62966_crt_eoESE.jpg?r=1638343110",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a9/12/62966_crt_eoESE.jpg?r=1638343110"
+    },
+    "summary": "私立伊旦高校1年1班，超级美少女，但因有交流障碍症而不敢与人说话，第一次与只野仁人沟通是写在黑板上，之后与人沟通都是写在纸上，但是可以透过移动电话跟人说话。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "古见硝子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "古見 硝子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こみ しょうこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Komi Shoko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月25日"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        },
+        {
+            "key": "体重",
+            "value": "48kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 25,
+    "stat": {
+        "comments": 47,
+        "collects": 174
+    },
+    "anime_ids": [
+        363242
+    ]
+}

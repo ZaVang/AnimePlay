@@ -1,0 +1,138 @@
+{
+    "id": 121187,
+    "name": "灰色的迷宫",
+    "image_path": "data/images/anime/121187.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "风见雄二，救赎了美滨学园的五个少女的心灵。\r\n但他的内心，依然阴云密布，难以解脱。\r\n \r\n当雄二回顾自己一路走来的日子时，\r\n是什么养育了自己，塑造了自己？\r\n在与种种事物的邂逅之中，得到了什么，又失去了什么？\r\n \r\n当度过这段无比黑暗，却又无可替代的时间之后，\r\n雄二终将面对内心深处暗藏的，黑暗的真面目。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "后宫",
+        "TV",
+        "恋爱",
+        "日本",
+        "游戏改"
+    ],
+    "date": "2015-04-12",
+    "rating_rank": 1779,
+    "rating_score": 7.2,
+    "rating_total": 3811,
+    "main_character_ids": [
+        10974,
+        11856,
+        15027
+    ],
+    "main_characters": [
+        {
+            "id": 10974,
+            "name": "風見雄二",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4e/0a/10974_crt_7153e.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/0a/10974_crt_7153e.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/0a/10974_crt_7153e.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4e/0a/10974_crt_7153e.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4015,
+                    "name": "櫻井孝宏",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/06/29/4015_prsn_4TZox.jpg?r=1638448222"
+                    },
+                    "short_summary": "爱知县冈崎市老家的本业是米店，店名为“樱井米谷店”，在当地小有名气。\r\n初中时的一个冬天，怕冷的他擅自把酒精灯里的液体倒在理科实验室的桌子上，点起火取暖，引响了火灾报警器，被赶来的老师狠狠教训了一顿。于是在老师的国语课上捣乱报复，夸张地朗读课文，实在听不过去的老师求他：“拜托，别念得跟声优似的好不好！”——这话对那时的樱井冲击很大，给他留下了声优不过是连小孩子都做得来的简单工作的印象。所以高中毕业后，乐得找轻松的樱井选择进入东京的声优专科学校。待迈入这一行，他才吐血地发现，且不说成为佼佼者，就是普通从业者也得掌握高超的专业技巧。\r\n2005年8月《最终幻想VII：降临之子》于第62届威尼斯影展参展。樱井以担任主角配音的身份，成为继山寺宏一后第2位踏上星光大道的日本籍声优。\r\n虽然戴着眼镜，可是樱井二眼视力皆为2.0，植田佳奈笑称那是“骗人眼镜”。那付眼镜的意义是“梦想与希望与对声迷们的爱”。\r\n最初的错误是BL DRAMA制作社Inter communications（inter桑）的一张drama的BK上打成了樱井考宏，之后《无法逃离的背叛》某个活动的官方网站上亦把樱井孝宏的名字写成“樱井考宏”，所以有昵称考哥，而并非是他的名字中的“孝”字与“考”字很像才有此外号。\r\n桜井(sakurai)，桜井さん（sakurai san），sakura i san，樱13",
+                    "locked": false
+                },
+                {
+                    "id": 11247,
+                    "name": "諏訪彩花",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/58/6d/11247_prsn_LEard.jpg?r=1740112080",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/6d/11247_prsn_LEard.jpg?r=1740112080",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/6d/11247_prsn_LEard.jpg?r=1740112080",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/58/6d/11247_prsn_LEard.jpg?r=1740112080"
+                    },
+                    "short_summary": "諏訪 彩花（すわ あやか、1988年5月27日 - ）は、日本の女性声優。アーツビジョン所属。愛知県日進市出身（出生地は名古屋市）。血液型はA型。\r\n\r\n幼少期からアニメを見るのが好きで、小学生の頃にやっていたミュージカルで演技の楽しさを実感。声優業を初めて知ったのは、中学生時代に『テニスの王子様』の越前リョーマに恋をしたのがきっかけ。 声優という仕事の幅広さに魅力を感じ、高校、大学で演劇に携わって、周りの友人の後押しもあり、声優を目指すことを決めた。\r\n出身地である名古屋には声優の養成所や専門学校があまりなかったため、名古屋校があった日本ナレーション演技研究所に入所。大学に通いながら週1回のレッスンを受けた。日本ナレーション演技研究所を経て現事務所に所属。\r\n2011年『グラール騎士団 Evoked THE Beginning white』の下級生、女子生徒役で声優デビュー。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 11856,
+            "name": "風見一姫",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e9/f4/11856_crt_0XzmQ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/f4/11856_crt_0XzmQ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/f4/11856_crt_0XzmQ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e9/f4/11856_crt_0XzmQ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4432,
+                    "name": "友永朱音",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bc/d6/4432_prsn_oJ0OM.jpg?r=1562835135",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/d6/4432_prsn_oJ0OM.jpg?r=1562835135",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/d6/4432_prsn_oJ0OM.jpg?r=1562835135",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bc/d6/4432_prsn_oJ0OM.jpg?r=1562835135"
+                    },
+                    "short_summary": "友永 朱音（ともなが あかね、12月2日 - ）は、日本の女性声優、ナレーター。血液型はA型。身長157.5cm。東京都出身。アクセルワン所属。過去にぷろだくしょんバオバブなどに所属していた。\r\n\r\n同じ事務所の後藤邑子とは親友関係。また、漫画家のトビナトウヤは従姉妹。\r\n趣味はゲーム、舞台鑑賞。宝塚歌劇のファンでもある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 15027,
+            "name": "日下部麻子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ef/65/15027_crt_ZJG2v.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ef/65/15027_crt_ZJG2v.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ef/65/15027_crt_ZJG2v.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ef/65/15027_crt_ZJG2v.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5741,
+                    "name": "瑞沢渓",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9a/04/5741_prsn_zqUaD.jpg?r=1622122185",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/04/5741_prsn_zqUaD.jpg?r=1622122185",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/04/5741_prsn_zqUaD.jpg?r=1622122185",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9a/04/5741_prsn_zqUaD.jpg?r=1622122185"
+                    },
+                    "short_summary": "瑞沢 渓（みずさわ けい、1975年9月14日）は、日本の声優、ナレーター。イエローテイル所属。長崎県出身。\r\n映像テクノアカデミア卒業。旧芸名は堀池 円。俳優の堀池直毅は実弟。\r\n趣味は芝居鑑賞・イラストなど。\r\n\r\nかわしま りのは日本の女性声優。主にアダルトゲームに声をあてている。\r\n声優になる夢を両親に反対されたくなかったため、多くのアルバイトをして養成所や一人暮らしの費用を貯金し、その通帳を見せて直訴したという。\r\n尊敬する役者として榊原良子を挙げている。\r\n名前（かわしまりの）の由来は、好きなまんがの主人公の名と主人公に影響を与える登場人物の姓を取り、かなで表記したもの。 苗字と名前の切り方を間違えられ（あるいは面白がってわざと）「まりのさん」（酷いときは「しまりのさん」）と呼ばれることもあるが、「かわしま」が苗字である。\r\n声質は鼻にかかった中低音からロリな高音まで幅広くこなし、声の演技の幅も非常に広く年下から人妻役までこなす。趣味は一人鍋。\r\n小学校高学年の頃から声優業を目指していた。その夢を実現させるため、養成所の費用から一人暮らしの費用まで、多くのアルバイトをして自ら稼いだという。\r\nビール党でバナナが嫌い。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 294,
+    "name": "猫",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/68/83/294_y2TtW.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/83/294_y2TtW.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/83/294_y2TtW.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/68/83/294_y2TtW.jpg"
+    },
+    "summary": "形态为黑猫的契约者，在黑的小队中负责行动支援。能力为身体转换（但除本体外只能与动物转换），后来因某事件，失去了自己本来的身体，在失去身体的同时，使用能力的代价也全部支付完了。\r\n性格幽默，喜欢吐槽，但作为契约者的自觉很深。在监督的设想中，猫还是人类的时候是一名四十多岁的大学教授。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "猫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "\\",
+                    "v": "猫"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mao"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "泽木郁也"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 32
+    },
+    "anime_ids": [
+        292
+    ]
+}

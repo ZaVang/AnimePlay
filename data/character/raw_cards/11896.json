@@ -1,0 +1,40 @@
+{
+    "id": 11896,
+    "name": "朝比奈あるみ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7f/10/11896_crt_o7Hmw.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/10/11896_crt_o7Hmw.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/10/11896_crt_o7Hmw.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7f/10/11896_crt_o7Hmw.jpg"
+    },
+    "summary": "勝気な女の子。サッシに対してキツイ突っ込みをいれる。怒りや恥ずかしさで暴走すると手がつけられなくなる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "朝比奈由美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "朝比奈あるみ"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 18
+    },
+    "anime_ids": [
+        6937
+    ]
+}

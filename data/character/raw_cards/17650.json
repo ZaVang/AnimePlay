@@ -1,0 +1,75 @@
+{
+    "id": 17650,
+    "name": "美遊・エーデルフェルト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/90/64/17650_crt_pldL7.jpg?r=1535689182",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/64/17650_crt_pldL7.jpg?r=1535689182",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/64/17650_crt_pldL7.jpg?r=1535689182",
+        "grid": "https://lain.bgm.tv/pic/crt/g/90/64/17650_crt_pldL7.jpg?r=1535689182"
+    },
+    "summary": "全能少女。\r\n学力、体力ともに他の追随を許さないところがあり、クールな性格で他人との関わりをなるべく避ける少女。マジカルサファイヤ、そしてルヴィアと出会ったことで、イリヤと同じく魔法少女になってしまう。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "美游·艾德费尔特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "朔月美游"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "美游"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Miyu Edelfelt"
+                },
+                {
+                    "k": "日文名",
+                    "v": "美遊・エーデルフェルト"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みゆ エーデルフェルト"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Miyu Ēderuferuto"
+                },
+                {
+                    "k": "昵称",
+                    "v": "みゆきち"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月20日"
+        },
+        {
+            "key": "引用来源",
+            "value": "中文维基／anime.prisma-illya.jp/character/#miyu"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 20,
+    "stat": {
+        "comments": 43,
+        "collects": 211
+    },
+    "anime_ids": [
+        113134
+    ]
+}

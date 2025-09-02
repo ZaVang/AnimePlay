@@ -1,0 +1,425 @@
+{
+    "id": 2696,
+    "type": 2,
+    "name": "だめっこどうぶつ",
+    "name_cn": "笨笨森林日志",
+    "summary": "一直流浪的笨笨狼宇留野来到了笨笨森林，因为对可爱的笨笨印度豹豹子一见钟情决定在笨笨森林定居。他还认识了凶暴的兔子兔原、森林之珠独角兽独彦、独彦的双胞胎弟弟黑天马天之助和近视的老鹰鹰彦等一帮朋友。突然有一天，宇留野的迷糊病治好了，他认为自己离开笨笨森林的时间来到了...",
+    "nsfw": false,
+    "locked": false,
+    "date": "2005-01-17",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/dc/2b/2696_3lIUX.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/dc/2b/2696_3lIUX.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/dc/2b/2696_3lIUX.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/dc/2b/2696_3lIUX.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/dc/2b/2696_3lIUX.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "笨笨森林日志"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "笨笨森林日记",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "26"
+        },
+        {
+            "key": "放送开始",
+            "value": "2005年1月17日"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.kids-station.com/minisite/damekko/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "キッズステーション"
+        },
+        {
+            "key": "播放结束",
+            "value": "2005年2月21日"
+        },
+        {
+            "key": "导演",
+            "value": "四分一節子"
+        },
+        {
+            "key": "原作",
+            "value": "桑田乃梨子"
+        },
+        {
+            "key": "系列构成",
+            "value": "末永光代"
+        },
+        {
+            "key": "人物设定",
+            "value": "小林ゆかり"
+        },
+        {
+            "key": "动画制作",
+            "value": "マジックバス"
+        },
+        {
+            "key": "制作",
+            "value": "だめっこどうぶつ製作委員会"
+        }
+    ],
+    "volumes": 0,
+    "eps": 26,
+    "total_episodes": 26,
+    "rating": {
+        "rank": 1765,
+        "total": 88,
+        "count": {
+            "one": 0,
+            "two": 0,
+            "three": 1,
+            "four": 1,
+            "five": 6,
+            "six": 16,
+            "seven": 22,
+            "eight": 30,
+            "nine": 7,
+            "ten": 5
+        },
+        "score": 7.3
+    },
+    "collection": {
+        "wish": 78,
+        "collect": 129,
+        "doing": 8,
+        "on_hold": 12,
+        "dropped": 28
+    },
+    "tags": [
+        {
+            "name": "搞笑",
+            "count": 22
+        },
+        {
+            "name": "泡面番",
+            "count": 22
+        },
+        {
+            "name": "萌",
+            "count": 18
+        },
+        {
+            "name": "2005",
+            "count": 13
+        },
+        {
+            "name": "低幼",
+            "count": 11
+        },
+        {
+            "name": "5分钟",
+            "count": 11
+        },
+        {
+            "name": "TV",
+            "count": 9
+        },
+        {
+            "name": "吐槽",
+            "count": 8
+        },
+        {
+            "name": "2005年1月",
+            "count": 6
+        },
+        {
+            "name": "萌！",
+            "count": 4
+        },
+        {
+            "name": "泡面",
+            "count": 4
+        },
+        {
+            "name": "补旧番",
+            "count": 2
+        },
+        {
+            "name": "子供向",
+            "count": 2
+        },
+        {
+            "name": "漫画改",
+            "count": 2
+        },
+        {
+            "name": "日本",
+            "count": 2
+        },
+        {
+            "name": "2013",
+            "count": 1
+        },
+        {
+            "name": "笑わせる",
+            "count": 1
+        },
+        {
+            "name": "轻耽",
+            "count": 1
+        },
+        {
+            "name": "强气兔子",
+            "count": 1
+        },
+        {
+            "name": "可独立观赏",
+            "count": 1
+        },
+        {
+            "name": "笨笨狼",
+            "count": 1
+        },
+        {
+            "name": "マジックバス",
+            "count": 1
+        },
+        {
+            "name": "笨笨森林日志，",
+            "count": 1
+        },
+        {
+            "name": "正",
+            "count": 1
+        },
+        {
+            "name": "日常",
+            "count": 1
+        },
+        {
+            "name": "anime",
+            "count": 1
+        },
+        {
+            "name": "奇幻",
+            "count": 1
+        },
+        {
+            "name": "神谷浩史",
+            "count": 1
+        },
+        {
+            "name": "动画",
+            "count": 1
+        },
+        {
+            "name": "日本动画",
+            "count": 1
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        103077,
+        103078,
+        103079,
+        103082,
+        103084,
+        103089
+    ],
+    "main_characters": [
+        {
+            "id": 103077,
+            "name": "うる野",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b2/88/103077_crt_g8i65.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/88/103077_crt_g8i65.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/88/103077_crt_g8i65.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b2/88/103077_crt_g8i65.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4679,
+                    "name": "高城元気",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/97/78/4679_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/97/78/4679_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/97/78/4679_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/97/78/4679_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "高城 元気（たかぎ もとき、1980年10月4日 - ）は、日本の声優、舞台俳優。アイムエンタープライズ所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 103078,
+            "name": "うさ原",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0c/0a/103078_crt_yn8hd.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0c/0a/103078_crt_yn8hd.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0c/0a/103078_crt_yn8hd.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0c/0a/103078_crt_yn8hd.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4578,
+                    "name": "杉山紀彰",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/37/bd/4578_prsn_NKnxc.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/bd/4578_prsn_NKnxc.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/bd/4578_prsn_NKnxc.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/37/bd/4578_prsn_NKnxc.jpg"
+                    },
+                    "short_summary": "杉山 紀彰（すぎやま のりあき、3月9日 - ）は、日本の男性声優、ナレーター。東京都出身。血液型A型。身長168cm。\r\n\r\n2011年5月までぷろだくしょんバオバブに所属。同年6月よりアクセルワン所属であったが、2015年11月よりフリーとなった。\r\n\r\n2016年2月より、浪川大輔が代表を務めるステイラックに所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 103079,
+            "name": "ゆに彦",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bb/3d/103079_crt_8OmsC.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/3d/103079_crt_8OmsC.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/3d/103079_crt_8OmsC.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bb/3d/103079_crt_8OmsC.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3822,
+                    "name": "森川智之",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e1/d8/3822_prsn_HDeX6.jpg?r=1632668462",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/d8/3822_prsn_HDeX6.jpg?r=1632668462",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/d8/3822_prsn_HDeX6.jpg?r=1632668462",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e1/d8/3822_prsn_HDeX6.jpg?r=1632668462"
+                    },
+                    "short_summary": "森川 智之は、日本の声優、ナレーター、歌手。アクセルワン代表取締役。\r\n\r\nアニメ・ゲーム作品では主にクールな二枚目を担当することが多いが、その他にも幅広い芸風を持ち、様々な役をこなす。強い音圧のある声量を誇り、主役デビューとなる『宇宙の騎士テッカマンブレード』のアフレコ中にマイクを2本破壊した程。　このエピソードから、ファンに「マイククラッシャー」と呼ばれることも。その為、ピンマイクをつける時にはかなり低い位置につけるとのこと。\r\n\r\n洋画の吹き替えではキアヌ・リーブス、ブラッド・ピット、トム・クルーズ、ユアン・マクレガーなどを担当する。\r\n\r\n声優活動と併せて音楽活動も行っている。『アンジェリーク』シリーズにて立木文彦とデュエットしたことが縁で、後に同氏と音楽ユニット「2HEARTS」を結成した。\r\n\r\n好きな食べ物は生肉。一部の声優からは「生肉先輩」と呼ばれている。また肉の焼き方にもうるさい。愛称は「もりもり」、（BL界の）「帝王」。ちなみに帝王と呼ばれていることは本人も自負しているとか。\r\n2006年頃から肉体改造を開始し、半年で10kgも痩せるほどの変貌を遂げている。\r\n愛犬家。アクセルという名のレトリーバーを飼っていたが2009年10月に永眠。\r\n\r\nゲームへの出演も数多いが、初めてゲームをプレイしたのは2007年のこと。プレイしたのは『Devil May Cry』。後に主人公であるダンテの日本語版声優を担当する事になる。ちなみにPS2を購入するまでメモリーカードの存在を知らなかった。\r\n\r\n2011年4月1日に声優プロダクション「アクセルワン」を設立。独立し、代表取締役社長となった。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 103082,
+            "name": "ちー子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/43/bd/103082_crt_891UZ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/43/bd/103082_crt_891UZ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/43/bd/103082_crt_891UZ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/43/bd/103082_crt_891UZ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4861,
+                    "name": "成田紗矢香",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/93/36/4861_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/36/4861_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/36/4861_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/93/36/4861_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の女性声優。81プロデュース所属。千葉県出身。\r\n\r\nマダラプロジェクト（大塚英志事務所 / 物語環境開発）制作のラジオ番組『夢さめ戦隊 S-nery』にて、脚本の元・漫画家白倉由美による「リーディングストーリーを読んでくれる女の子募集」に応じて採用。1997年（平成9年）3月、同番組の第24回にてラジオデビューする。その後同シリーズパーソナリティとなり、『夢さめ戦隊 また西へ』以降は1999年（平成11年）半ばまで同シリーズの中心的役割を演じることになる（一時、物語環境開発に所属しながら東放学園声優科に通っていた時期がある）。\r\n1998年（平成10年）3月28日には「ロリータ℃」としてライブも行われた（ライブ開催当時、収支状況によっては定期開催すると大塚英志が豪語したが、結局1回のみの開催となった）。\r\n同じ声優の千葉千恵巳、脚本家の金巻兼一らとともにバンド（アル・ルカン、ゆら）を組み、ライブなどの活動もしていた。\r\n大塚英志関係の仕事を辞めてからしばらくの間フリーで活動していたが、2003年（平成15年）より81プロデュースの預かりとなり、2004年（平成16年）よりジュニアに昇格。\r\n2009年（平成21年）4月から2010年（平成22年）12月まで『東京アニメセンターRADIOw』の公開録音を毎週行い、様々な顔を出した。\r\n2016年（平成28年）11月4日公式ブログにて声優の逢坂力との入籍を公表。\r\n趣味・特技はスケート、絵画、イラスト。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 103084,
+            "name": "タカ岡",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/33/47/103084_crt_FFjtX.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/47/103084_crt_FFjtX.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/47/103084_crt_FFjtX.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/33/47/103084_crt_FFjtX.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 20667,
+                    "name": "青木誠",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0b/fb/20667_prsn_BvbvC.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/fb/20667_prsn_BvbvC.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/fb/20667_prsn_BvbvC.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0b/fb/20667_prsn_BvbvC.jpg"
+                    },
+                    "short_summary": "日本の男性声優。ケンユウオフィス所属。東京都出身。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 103089,
+            "name": "ぺが之助",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/86/6d/103089_crt_3jXQc.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/6d/103089_crt_3jXQc.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/6d/103089_crt_3jXQc.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/86/6d/103089_crt_3jXQc.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4232,
+                    "name": "神谷浩史",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/fa/4232_prsn_bBAP2.jpg?r=1675677585"
+                    },
+                    "short_summary": "高中时期是理科生，加入青二塾以前只是一般地看着动画，没有想要成为声优的念头。高三时，于7月份加入同年级朋友组建的演剧团，在9月份的地区演剧大赛中意外获得“个人演技奖”，自此开始对演剧事业产生兴趣。想考艺术类大学所以在高三理转文，并不成功，高考落榜。\r\n另寻出路的时候在杂志上看到了青二塾的广告，征得父母同意考上其东京校第14期。当时不了解其实这里培养的是声优而不是演员，起初产生了“别干了”的消极情绪，但之后仍在青二塾坚持学习了下去，不过是“不良墅生”，同学和老师之后都笑称当时他“很狂妄”，并不参加到同学间的自主练习中。1994年，19岁的神谷从青二塾毕业，顺利加入青二事务所。\r\n出道的头几年，相比于同期甚至后期的声优们很快的大放异彩，神谷则是全部出演酱油的路人角色。2006年8月7日，因为遭逢交通事故而住院治疗。虽然经纪公司并不愿透漏事故的原因，但从关系人口中得知似乎是骑乘机车时发生的。车祸似乎是神谷事业的一个拐点。2007年因担任《再见!绝望先生》、《高达00》等作品主角的CV而受到瞩目，之后在《夏目友人帐》、《化物语》等作品中为主角配音获得极高人气，目前则是因为饰演《进击的巨人》中的里维兵长而再度爆红。\r\n\r\n2025年1月1日，宣布与女演员、模特逢泽莉娜结婚。1月4日，在广播节目中透露自己于8年前起单身，后因此节目而与逢泽莉娜结缘，大约2年前开始交往。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

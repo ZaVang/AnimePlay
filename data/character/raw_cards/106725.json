@@ -1,0 +1,44 @@
+{
+    "id": 106725,
+    "name": "竜崎一矢",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/aa/73/106725_crt_Bq7tE.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/73/106725_crt_Bq7tE.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/73/106725_crt_Bq7tE.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/aa/73/106725_crt_Bq7tE.jpg"
+    },
+    "summary": "新エネルギー「ダイモライト」を地球に持ち帰った後、父の遺言にしたがってダイモスのパイロットとなった元宇宙飛行士。空手の達人でもあり、バーム地球攻略軍と戦う際には、その技の数々を駆使している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "龙崎一矢"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "りゅうざき かずや"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 4
+    },
+    "anime_ids": [
+        37180
+    ]
+}

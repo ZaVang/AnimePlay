@@ -1,0 +1,371 @@
+{
+    "id": 46036,
+    "type": 2,
+    "name": "ブラック・ジャック",
+    "name_cn": "怪医黑杰克",
+    "summary": "《怪医黑杰克》于1992年首次改编为OVA，共十集。1996年播映剧场版，2004年起改编为电视动画，2006年再度播映剧场版。也多次拍成电视剧。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2004-10-11",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/25/46/46036_50zyF.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/25/46/46036_50zyF.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/25/46/46036_50zyF.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/25/46/46036_50zyF.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/25/46/46036_50zyF.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "怪医黑杰克"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Black Jack",
+                    "k": null
+                },
+                {
+                    "v": "怪医秦博士",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "63"
+        },
+        {
+            "key": "放送开始",
+            "value": "2004年10月11日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期一"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://tezukaosamu.net/jp/anime/123.html"
+        },
+        {
+            "key": "播放电视台",
+            "value": "読売テレビ / 日本テレビ系列"
+        },
+        {
+            "key": "其他电视台",
+            "value": "台视、Animax、翡翠台"
+        },
+        {
+            "key": "播放结束",
+            "value": "2006年3月6日"
+        },
+        {
+            "key": "导演",
+            "value": "手塚眞"
+        },
+        {
+            "key": "音乐",
+            "value": "松本晃彦"
+        },
+        {
+            "key": "Copyright",
+            "value": "©手塚プロダクション・読売テレビ"
+        },
+        {
+            "key": "原作",
+            "value": "手塚治虫（秋田書店刊より）"
+        },
+        {
+            "key": "制作统括",
+            "value": "松谷孝征、小石川伸哉"
+        },
+        {
+            "key": "企画",
+            "value": "清水義裕、諏訪道彦"
+        },
+        {
+            "key": "美术监督",
+            "value": "斉藤雅巳、柴田正人"
+        },
+        {
+            "key": "摄影监督",
+            "value": "木村俊也、高橋智弘"
+        },
+        {
+            "key": "剪辑",
+            "value": "森田清次、田村ゆり"
+        },
+        {
+            "key": "医学顾问",
+            "value": "竹下俊隆"
+        },
+        {
+            "key": "音响监督",
+            "value": "井澤基"
+        },
+        {
+            "key": "制片人",
+            "value": "斎藤朋之、宇田川純男"
+        },
+        {
+            "key": "总制片人",
+            "value": "諏訪道彦、久保田稔"
+        },
+        {
+            "key": "製作",
+            "value": "よみうりテレビ（読売テレビ）、手塚プロダクション；协力：秋田書店"
+        },
+        {
+            "key": "音乐制作",
+            "value": "avex mode；音乐协力：読売テレビエンタープライズ"
+        },
+        {
+            "key": "音响",
+            "value": "AUDIO PLANNING U；音响制作デスク：加藤知美（Karte：00～43）、佐々木愛"
+        },
+        {
+            "key": "录音",
+            "value": "大城久典"
+        },
+        {
+            "key": "录音助理",
+            "value": "田口信孝、村越直"
+        },
+        {
+            "key": "音效",
+            "value": "庄司雅弘"
+        },
+        {
+            "key": "道具设计",
+            "value": "中川航、斉藤圭太"
+        },
+        {
+            "key": "助理制片人",
+            "value": "北田修一"
+        },
+        {
+            "key": "动画制片人",
+            "value": "大石光明、大澤宏志"
+        },
+        {
+            "key": "人物设定",
+            "value": "神村幸子（主人设）、瀬谷新二、内田裕、杉野昭夫、西田正義"
+        },
+        {
+            "key": "色彩设计",
+            "value": "川添恵、油谷ゆみ、吉田めぐみ"
+        },
+        {
+            "key": "色彩指定",
+            "value": "川添恵、油谷ゆみ、大塚奈津子、田辺みどり、こばやしみよこ、吉田めぐみ、小林みよこ、山本さち"
+        },
+        {
+            "key": "摄影",
+            "value": "高橋智弘、設楽希、金珍煕、金相潤"
+        },
+        {
+            "key": "制作进行",
+            "value": "橋本信太郎、正木大督、藤ノ木麻弓、古谷大輔、武藤貴彦、杉村良子"
+        },
+        {
+            "key": "特效",
+            "value": "遠藤剛彦、平野孝治"
+        },
+        {
+            "key": "构图",
+            "value": "吉村昌輝、斉藤圭太、篠原隆"
+        }
+    ],
+    "volumes": 0,
+    "eps": 63,
+    "total_episodes": 63,
+    "rating": {
+        "rank": 1026,
+        "total": 579,
+        "count": {
+            "one": 1,
+            "two": 2,
+            "three": 0,
+            "four": 2,
+            "five": 18,
+            "six": 59,
+            "seven": 201,
+            "eight": 221,
+            "nine": 54,
+            "ten": 21
+        },
+        "score": 7.5
+    },
+    "collection": {
+        "wish": 598,
+        "collect": 978,
+        "doing": 112,
+        "on_hold": 165,
+        "dropped": 57
+    },
+    "tags": [
+        {
+            "name": "手冢治虫",
+            "count": 167
+        },
+        {
+            "name": "TV",
+            "count": 131
+        },
+        {
+            "name": "漫画改",
+            "count": 113
+        },
+        {
+            "name": "2004",
+            "count": 94
+        },
+        {
+            "name": "童年",
+            "count": 79
+        },
+        {
+            "name": "2004年10月",
+            "count": 59
+        },
+        {
+            "name": "黑杰克",
+            "count": 52
+        },
+        {
+            "name": "手塚PRODUCTION",
+            "count": 42
+        },
+        {
+            "name": "漫改",
+            "count": 30
+        },
+        {
+            "name": "补旧番",
+            "count": 26
+        },
+        {
+            "name": "燃",
+            "count": 20
+        },
+        {
+            "name": "日本",
+            "count": 15
+        },
+        {
+            "name": "TVB",
+            "count": 13
+        },
+        {
+            "name": "ブラック・ジャック",
+            "count": 11
+        },
+        {
+            "name": "奇幻",
+            "count": 8
+        },
+        {
+            "name": "手塚眞",
+            "count": 7
+        },
+        {
+            "name": "2004年",
+            "count": 7
+        },
+        {
+            "name": "科幻",
+            "count": 6
+        },
+        {
+            "name": "怪医黑杰克",
+            "count": 5
+        },
+        {
+            "name": "手塚プロダクション",
+            "count": 5
+        },
+        {
+            "name": "沒看全",
+            "count": 4
+        },
+        {
+            "name": "医生",
+            "count": 4
+        },
+        {
+            "name": "剧情",
+            "count": 3
+        },
+        {
+            "name": "治愈",
+            "count": 3
+        },
+        {
+            "name": "吉村元希",
+            "count": 3
+        },
+        {
+            "name": "草尾毅",
+            "count": 3
+        },
+        {
+            "name": "医学",
+            "count": 3
+        },
+        {
+            "name": "动画",
+            "count": 3
+        },
+        {
+            "name": "非常好的番",
+            "count": 3
+        },
+        {
+            "name": "手塚治虫",
+            "count": 3
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        20651
+    ],
+    "main_characters": [
+        {
+            "id": 20651,
+            "name": "ブラック・ジャック",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/56/46/20651_crt_77elT.jpg?r=1374267545",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/46/20651_crt_77elT.jpg?r=1374267545",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/46/20651_crt_77elT.jpg?r=1374267545",
+                "grid": "https://lain.bgm.tv/pic/crt/g/56/46/20651_crt_77elT.jpg?r=1374267545"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3832,
+                    "name": "大塚明夫",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/18/8c/3832_prsn_O1E5c.jpg?r=1545044333"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーター。マウスプロモーション所属。\r\n父は同じく俳優・声優の大塚周夫、元妻は声優の沢海陽子。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

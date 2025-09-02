@@ -1,0 +1,52 @@
+{
+    "id": 14557,
+    "name": "阿良々木月火",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f8/86/14557_crt_uz7Z1.jpg?r=1724598649",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/86/14557_crt_uz7Z1.jpg?r=1724598649",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/86/14557_crt_uz7Z1.jpg?r=1724598649",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f8/86/14557_crt_uz7Z1.jpg?r=1724598649"
+    },
+    "summary": "阿良良木历的小妹，在火焰姐妹中担当参谋，自称「我就是正义」。\r\n跟姐姐火伶不同，是个居家派。\r\n看上去很文静，是个喜欢穿和服的中学二年生。\r\n但是性格上比火伶更具攻击性，容易发怒。\r\n发型随着心情和时间的变化而不断变化，相同发型最多持续三个月。\r\n常与火怜联手叫历起床。\r\n初吻在昏睡时被哥哥历夺走，但本人似乎并不排斥。\r\n跟历一起为火怜示范了正确的洗澡方法。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿良良木月火"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あららぎ つきひ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Araragi Tsukihi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 50,
+        "collects": 561
+    },
+    "anime_ids": [
+        23161
+    ]
+}

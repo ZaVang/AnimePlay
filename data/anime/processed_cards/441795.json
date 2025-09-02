@@ -1,0 +1,89 @@
+{
+    "id": 441795,
+    "name": "我心里危险的东西 第二季",
+    "image_path": "data/images/anime/441795.jpg",
+    "points": 8.3,
+    "cost": 4,
+    "rarity": "SSR",
+    "description": "重度の中二病で陰キャの市川京太郎と、\r\nクラスで人気者の山田杏奈。\r\n \r\n美少女らしからぬ行動を繰り出す山田に、\r\n市川は目を離せずにいた。\r\n \r\nそんな市川の恋心を知ってか知らずか、\r\n山田は天真爛漫に近づいて来る!!\r\n \r\n全く違う世界にいたはずの2人。\r\nしかしその距離は、徐々に近づいていき……。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2024-01-06",
+    "rating_rank": 92,
+    "rating_score": 8.3,
+    "rating_total": 10991,
+    "main_character_ids": [
+        90574,
+        123909
+    ],
+    "main_characters": [
+        {
+            "id": 90574,
+            "name": "山田杏奈",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/59/cc/90574_crt_B10QC.jpg?r=1682860011",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/cc/90574_crt_B10QC.jpg?r=1682860011",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/cc/90574_crt_B10QC.jpg?r=1682860011",
+                "grid": "https://lain.bgm.tv/pic/crt/g/59/cc/90574_crt_B10QC.jpg?r=1682860011"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 40794,
+                    "name": "羊宮妃那",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f3/83/40794_prsn_4cu5z.jpg?r=1731846554",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/83/40794_prsn_4cu5z.jpg?r=1731846554",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/83/40794_prsn_4cu5z.jpg?r=1731846554",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f3/83/40794_prsn_4cu5z.jpg?r=1731846554"
+                    },
+                    "short_summary": "資格・免許：剣道初段\r\n趣味：描画、読書、映画鑑賞、音楽鑑賞、アコースティックギター弾き語り\r\n特技：ダンス\r\n方言：関西弁",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 123909,
+            "name": "市川京太郎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/69/9b/123909_crt_UouUd.jpg?r=1675669301",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/9b/123909_crt_UouUd.jpg?r=1675669301",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/9b/123909_crt_UouUd.jpg?r=1675669301",
+                "grid": "https://lain.bgm.tv/pic/crt/g/69/9b/123909_crt_UouUd.jpg?r=1675669301"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 22514,
+                    "name": "堀江瞬",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a6/e9/22514_prsn_cU3mc.jpg?r=1606031697",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/e9/22514_prsn_cU3mc.jpg?r=1606031697",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/e9/22514_prsn_cU3mc.jpg?r=1606031697",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a6/e9/22514_prsn_cU3mc.jpg?r=1606031697"
+                    },
+                    "short_summary": "堀江 瞬（ほりえ しゅん、1993年5月25日 - ）は、日本の男性声優。大阪府出身。ラクーンドッグ所属。\r\n\r\n2013年10月、プロ・フィット声優養成所入所。\r\n2014年10月、同養成所を卒業し、プロ・フィット預かり。2016年3月、大学卒業。2017年4月、プロ・フィット準所属。\r\n2017年、『ナナマル サンバツ』越山識役でテレビアニメ初主演。\r\n2018年、第12回声優アワードにて新人男優賞を受賞。\r\n\r\n漢字検定準2級、英語検定準2級。\r\n大阪府出身だが、中学生以降は愛媛県で育った。\r\n同じ作品内で大人役と子供役を演じ分ける高木渉を知り、声優に憧れを抱くようになった。\r\n事務所の同期には鬼頭明里、津田拓也、高柳知葉がいる。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

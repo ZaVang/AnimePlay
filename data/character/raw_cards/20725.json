@@ -1,0 +1,68 @@
+{
+    "id": 20725,
+    "name": "及川氷麗",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a7/ff/20725_crt_s8IVy.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/ff/20725_crt_s8IVy.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/ff/20725_crt_s8IVy.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a7/ff/20725_crt_s8IVy.jpg"
+    },
+    "summary": "雪女雪丽的女儿，是可以操控冰雪的妖怪。在陆生很小的时候就一直守护在他身边，四年前陆生觉醒时就一直跟在陆生的身边上下学 。为了保护陆生，冰丽和青田坊跟着陆生一起去学校上学，为了不让自己的妖怪身分曝光，以及川冰丽的身份在陆生隔壁班上学，并且跟着陆生加入清十字怪奇侦探团。陆生后来以“冰丽”称呼着她。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "及川冰丽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "冰丽"
+                },
+                {
+                    "k": "日文名",
+                    "v": "氷麗"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おいかわ つらら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Oikawa Tsurara"
+                },
+                {
+                    "k": "昵称",
+                    "v": "雪女"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月11日"
+        },
+        {
+            "key": "身高",
+            "value": "150cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 11,
+    "stat": {
+        "comments": 20,
+        "collects": 93
+    },
+    "anime_ids": [
+        12192
+    ]
+}

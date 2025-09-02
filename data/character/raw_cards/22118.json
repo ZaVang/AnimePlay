@@ -1,0 +1,60 @@
+{
+    "id": 22118,
+    "name": "牧野留姫",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2d/b9/22118_crt_7nc4J.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/b9/22118_crt_7nc4J.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/b9/22118_crt_7nc4J.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2d/b9/22118_crt_7nc4J.jpg"
+    },
+    "summary": "一个不怎么笑又有点冷冷的少女，就读于私立女子小学五年级。在秋山辽失踪的那年的卡片大赛中获得冠军，被称为“数码暴龙皇后”。她很强，也很好强，在没有遇见启人和健良时，坚信战斗才是数码宝贝的宿命，但其实冷酷的外表下掩藏着一颗脆弱的心。自尊心很强的她，虽然看上去很冷漠，但实际上她很关心朋友。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "牧野留姬"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Rika Nonaka"
+                },
+                {
+                    "k": "日文名",
+                    "v": "牧野 留姫"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まきの るき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Makino Ruki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1990年"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 19,
+    "birth_day": null,
+    "stat": {
+        "comments": 8,
+        "collects": 35
+    },
+    "anime_ids": [
+        3130
+    ]
+}

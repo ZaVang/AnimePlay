@@ -1,0 +1,73 @@
+{
+    "id": 215,
+    "name": "進藤ヒカル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b9/6b/215_crt_YZ59e.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/6b/215_crt_YZ59e.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/6b/215_crt_YZ59e.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b9/6b/215_crt_YZ59e.jpg"
+    },
+    "summary": "小六时在爷爷家的仓库里发现古老的围棋棋盘，而後被古代棋士藤原佐为附身，受佐为指导学习围棋。时常利用佐为做学校功课和考试，视塔矢亮为目标。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "进藤光"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "真人版名",
+                    "v": "时光"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Hikaru Shindo"
+                },
+                {
+                    "k": "日文名",
+                    "v": "進藤 ヒカル"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しんどう ヒカル"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shindō Hikaru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1986年9月20日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "155cm（职业棋士合格时）"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1986,
+    "birth_mon": 9,
+    "birth_day": 20,
+    "stat": {
+        "comments": 12,
+        "collects": 93
+    },
+    "anime_ids": [
+        605,
+        36271
+    ]
+}

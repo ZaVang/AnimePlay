@@ -1,0 +1,103 @@
+{
+    "id": 43165,
+    "name": "牛込りみ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/68/01/43165_crt_icRNN.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/01/43165_crt_icRNN.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/01/43165_crt_icRNN.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/68/01/43165_crt_icRNN.jpg"
+    },
+    "summary": "胆小怯懦不过在寻求改变。\r\n为自己不能顺利行动而苦恼。\r\n最喜欢的东西是巧克力。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "牛込里美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "牛込梨美"
+                },
+                {
+                    "v": "牛迂里美"
+                },
+                {
+                    "v": "牛迂梨美"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "うしごめ りみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ushigome Rimi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "りみりん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月23日"
+        },
+        {
+            "key": "身高",
+            "value": "150cm"
+        },
+        {
+            "key": "担当",
+            "value": "贝斯手"
+        },
+        {
+            "key": "乐器",
+            "value": "红色贝斯，ESP VP-B"
+        },
+        {
+            "key": "星座",
+            "value": "牡羊座"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "巧克力、肉、鲜奶油"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "薄荷味巧克力"
+        },
+        {
+            "key": "兴趣",
+            "value": "游戏、读书"
+        },
+        {
+            "key": "代表色",
+            "value": "粉色"
+        },
+        {
+            "key": "所属",
+            "value": "Poppin'Party"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 23,
+    "stat": {
+        "comments": 18,
+        "collects": 75
+    },
+    "anime_ids": [
+        246431,
+        246430,
+        246429
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "id": 103093,
+    "name": "スサノオモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9d/43/103093_crt_eypy2.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9d/43/103093_crt_eypy2.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9d/43/103093_crt_eypy2.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9d/43/103093_crt_eypy2.jpg"
+    },
+    "summary": "东方传说中最强的破坏神，也是掌管再生的神祇。传说它会在网络系统异常时降临，将既有的系统化为虚无，再创造出全新的系统。必杀技是用零式武装：大蛇击出的光之剑，将天下一切全数斩断刺穿的『天羽羽斩』，和朝天空（用零式武装：大蛇）击出的光之剑化为破坏之雷灌注大地的究极招式『八雷神』。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "金刚武神兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "须佐之男兽"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Susanoomon"
+                },
+                {
+                    "k": "称号",
+                    "v": "究极武神"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference/detail.php?directory_name=susanoomon"
+        },
+        {
+            "key": "等级",
+            "value": "究极体"
+        },
+        {
+            "key": "类型",
+            "value": "神人型"
+        },
+        {
+            "key": "属性",
+            "value": "疫苗"
+        },
+        {
+            "key": "必杀技",
+            "value": [
+                {
+                    "v": "天羽羽斩"
+                },
+                {
+                    "v": "八雷神"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        3131
+    ]
+}

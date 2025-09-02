@@ -1,0 +1,31 @@
+{
+    "id": 12401,
+    "name": "HERO TV",
+    "type": 4,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b7/a3/12401_crt_aEz40.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/a3/12401_crt_aEz40.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/a3/12401_crt_aEz40.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b7/a3/12401_crt_aEz40.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": []
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 25
+    },
+    "anime_ids": [
+        10385
+    ]
+}

@@ -1,0 +1,589 @@
+{
+    "id": 235128,
+    "type": 2,
+    "name": "ジョジョの奇妙な冒険 黄金の風",
+    "name_cn": "JOJO的奇妙冒险 黄金之风",
+    "summary": "居住在意大利那不勒斯的青年乔鲁诺·乔巴拿，是继承了乔斯达家宿敌·DIO之血脉的儿子。\r\n幼年时遭受迫害而自暴自弃的他，由于拯救了一名黑帮男子，而学到了“相信他人”。不忘恩义、带着敬意对待自己的黑帮，让他的心变得率直。就这样，乔鲁诺开始对“黑帮明星”怀有憧憬。\r\n15岁的乔鲁诺，与统领意大利黑社会的黑帮组织“热情”一同引发事端，并成为被盯上的目标……",
+    "nsfw": false,
+    "locked": false,
+    "date": "2018-10-05",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/42/29/235128_RYOcp.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/42/29/235128_RYOcp.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/42/29/235128_RYOcp.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/42/29/235128_RYOcp.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/42/29/235128_RYOcp.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "JOJO的奇妙冒险 黄金之风"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "JoJo no Kimyou na Bouken: Ougon no Kaze",
+                    "k": null
+                },
+                {
+                    "v": "JoJo`s Bizarre Adventure: Golden Wind",
+                    "k": null
+                },
+                {
+                    "v": "JOJO5",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "39"
+        },
+        {
+            "key": "放送开始",
+            "value": "2018年10月5日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期五"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://jojo-animation.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX"
+        },
+        {
+            "key": "其他电视台",
+            "value": "毎日放送 / BS11 / Abema TV"
+        },
+        {
+            "key": "播放结束",
+            "value": "2019年7月28日"
+        },
+        {
+            "key": "导演",
+            "value": "木村泰大、髙橋秀弥"
+        },
+        {
+            "key": "Copyright",
+            "value": "© LUCKY LAND COMMUNICATIONS/集英社・ジョジョの奇妙な冒険GW製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "荒木飛呂彦（集英社ジャンプ コミックス刊）"
+        },
+        {
+            "key": "总导演",
+            "value": "津田尚克"
+        },
+        {
+            "key": "人物设定",
+            "value": "岸田隆宏、[副人物设定]石本峻一、松尾優"
+        },
+        {
+            "key": "总作画监督",
+            "value": "石本峻一"
+        },
+        {
+            "key": "动作作画监督",
+            "value": "片山貴仁、岩崎安利、鈴木勘太；动作导演：片山貴仁、岩崎安利、鈴木勘太、高橋賢、津田尚克、久々宮ぎん"
+        },
+        {
+            "key": "美术设计",
+            "value": "滝れーき、長澤順子、青木薫"
+        },
+        {
+            "key": "企画",
+            "value": "川村明廣、阿相道広、武智恒雄、林ちどり"
+        },
+        {
+            "key": "制片人",
+            "value": "大森啓幸、末吉孝充、宮城惣次、林俊安"
+        },
+        {
+            "key": "设定",
+            "value": "[替身设计]片山貴仁"
+        },
+        {
+            "key": "美术监督",
+            "value": "吉原俊一郎、桐本裕美子、加藤恵、Rufus、渡辺佳人"
+        },
+        {
+            "key": "剪辑",
+            "value": "廣瀬清志、山田聖実（助手）"
+        },
+        {
+            "key": "製作",
+            "value": "ジョジョの奇妙な冒険GW製作委員会（ワーナー ブラザース ジャパン、集英社、クロックワークス、メディコス・エンタテインメント）"
+        },
+        {
+            "key": "助理制片人",
+            "value": "土肥範子、高野貴志、古賀郁美、河江優子"
+        },
+        {
+            "key": "协力",
+            "value": "久田和子、林良樹、大谷装子、小澤文啓、石川功（クオラス）、GIVENCHY、渡邉聡史、株式会社ngc（中村征一郎）；企画协力：ウルトラジャンプ編集部（井藤涼、西村新平、横井秀和）；OP动画建模协力：株式会社バンダイナムコエンターテインメント、株式会社サイバーコネクトツー"
+        },
+        {
+            "key": "脚本",
+            "value": "小林靖子、ヤスカワショウゴ、ふでやすかずゆき（筆安一幸）、猪爪慎一、堀内全"
+        },
+        {
+            "key": "分镜",
+            "value": "津田尚克、髙橋秀弥、木村泰大、鈴木恭兵、尾根真砂子、南川達馬、藤本ジ朗、三上喜子、たかはしひでや、川畑喬、瀬木弘正、なかの陽、吉田泰三、亀井隆広、久保雄介、大原実、加藤敏幸"
+        },
+        {
+            "key": "演出",
+            "value": "津田尚克、髙橋秀弥、木村泰大、鈴木恭兵、亀井隆広、三上喜子、長田伸二、南川達馬、藤本ジ朗、江島泰男、高橋雅和、宮島善博、村田光、江福仁美、青柳宏宜、久保雄介、左藤洋二、まつきけいいち、高橋謙仁、菅原尚、岩崎安利"
+        },
+        {
+            "key": "作画监督",
+            "value": "石本峻一、片山貴仁、小林亮、横山謙次、千葉山夏恵、SHIN HYUNG WOO、木下千恵、中野圭哉、森藤希子、重本和佳子、髙阪雅基、藤本真由、真島ジロウ、姉崎早也花、宝谷幸稔（枪械作监）、木下由衣、小林理、長田伸二、津曲大介、岩崎安利、森田莉奈、上竹哲郎、田中春香、糸井恵、角田春美、刘云留、鈴木勘太、豊田暁子、芦谷耕平、胡陽樹、田中宏紀、CHA MYOUNG JUN、石橋大輔、柴田和紀、石山正修、鄧佳湄、小島えり"
+        },
+        {
+            "key": "演出助理",
+            "value": "鈴木恭兵"
+        },
+        {
+            "key": "作画监督助理",
+            "value": "石本峻一、姉崎早也花、豊田暁子、千葉山夏恵、芦谷耕平、石山正修、宝谷幸稔、千装直樹、岩崎安利、森藤希子、髙阪雅基、滝れーき"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "Coda[小田和奏]（OP1）、ハセガワダイスケ（OP2）、Jodeci（ED1）、Enigma（ED2）"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "及川眠子（OP1）、藤林聖子（OP2）"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "大森俊之（OP1）、菅野祐悟（OP2）、Michael Cretu・Carl Orff（ED2）"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "大森俊之（OP1）、菅野祐悟（OP2）、Michael Cretu・Carl Orff（ED2）"
+        }
+    ],
+    "volumes": 0,
+    "eps": 39,
+    "total_episodes": 42,
+    "rating": {
+        "rank": 244,
+        "total": 13119,
+        "count": {
+            "one": 19,
+            "two": 3,
+            "three": 9,
+            "four": 28,
+            "five": 85,
+            "six": 517,
+            "seven": 2710,
+            "eight": 6508,
+            "nine": 2405,
+            "ten": 835
+        },
+        "score": 8.0
+    },
+    "collection": {
+        "wish": 1278,
+        "collect": 22080,
+        "doing": 1287,
+        "on_hold": 519,
+        "dropped": 175
+    },
+    "tags": [
+        {
+            "name": "JOJO",
+            "count": 2625
+        },
+        {
+            "name": "荒木飞吕彦",
+            "count": 1861
+        },
+        {
+            "name": "热血",
+            "count": 1676
+        },
+        {
+            "name": "战斗",
+            "count": 1533
+        },
+        {
+            "name": "漫画改",
+            "count": 1504
+        },
+        {
+            "name": "2018年10月",
+            "count": 1368
+        },
+        {
+            "name": "TV",
+            "count": 1120
+        },
+        {
+            "name": "JOJO的奇妙冒险",
+            "count": 1005
+        },
+        {
+            "name": "davidproduction",
+            "count": 840
+        },
+        {
+            "name": "2018",
+            "count": 604
+        },
+        {
+            "name": "漫改",
+            "count": 555
+        },
+        {
+            "name": "奇幻",
+            "count": 367
+        },
+        {
+            "name": "智斗",
+            "count": 205
+        },
+        {
+            "name": "ジョジョの奇妙な冒険",
+            "count": 99
+        },
+        {
+            "name": "日本",
+            "count": 87
+        },
+        {
+            "name": "木村泰大",
+            "count": 55
+        },
+        {
+            "name": "david_production",
+            "count": 48
+        },
+        {
+            "name": "david.production",
+            "count": 44
+        },
+        {
+            "name": "小林靖子",
+            "count": 32
+        },
+        {
+            "name": "津田尚克",
+            "count": 30
+        },
+        {
+            "name": "冒险",
+            "count": 30
+        },
+        {
+            "name": "大卫社",
+            "count": 26
+        },
+        {
+            "name": "2018年",
+            "count": 25
+        },
+        {
+            "name": "燃",
+            "count": 22
+        },
+        {
+            "name": "搞笑",
+            "count": 22
+        },
+        {
+            "name": "JUMP",
+            "count": 20
+        },
+        {
+            "name": "高桥秀弥",
+            "count": 19
+        },
+        {
+            "name": "中村悠一",
+            "count": 19
+        },
+        {
+            "name": "续作",
+            "count": 18
+        },
+        {
+            "name": "神作",
+            "count": 16
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "series": false,
+    "main_character_ids": [
+        18567,
+        18568,
+        18581,
+        18583,
+        18587,
+        18588,
+        18600
+    ],
+    "main_characters": [
+        {
+            "id": 18567,
+            "name": "ジョルノ・ジョバァーナ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0a/e6/18567_crt_1Y44Q.jpg?r=1369930244",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/e6/18567_crt_1Y44Q.jpg?r=1369930244",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/e6/18567_crt_1Y44Q.jpg?r=1369930244",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0a/e6/18567_crt_1Y44Q.jpg?r=1369930244"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4965,
+                    "name": "小野賢章",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/22/85/4965_prsn_7w6iz.jpg?r=1709906610",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/85/4965_prsn_7w6iz.jpg?r=1709906610",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/85/4965_prsn_7w6iz.jpg?r=1709906610",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/22/85/4965_prsn_7w6iz.jpg?r=1709906610"
+                    },
+                    "short_summary": "小野賢章（1989年10月5日－）是日本的男性演員、聲優。福岡縣出生、東京都出身。\r\n以前是劇團向日葵系列的砂岡事務所所屬。2012年9月30日退出約14年所屬的砂岡事務所。目前的事务所为Animo Produce。\r\n2013年12月，宣布将在2014年2月以黑子的篮球 第二季的片尾曲“FANTASTIC TUNE”为个人名义歌手身份出道。\r\n\r\n以哈利波特日语吹替版作为契机而成为声优。本人说过“声优只能以声音来传达事物，不过演员能用表情跟肢体动作表达出来，虽然两边都有困难的地方，不过能作为演员用身体表演也很快乐。”所以并没有特别把声优跟演员的工作区别开来，今后也不会拘泥于声音的工作，会挑战更多共种各样的工作。2014年动过声带息肉切除手术。\r\n从12岁开始的10年间，一直在为哈利波特日语版中的主角哈利·波特配音。当时本人并没有读过哈利波特原作。是因为母亲是哈利波特的大粉丝，所以被母亲劝诱去参加征选会。当确定要饰演主角时，身为哈利波特粉丝的双亲比他还高兴。名字的由来是来自于设计家安部兼章。由于当时还是小学6年级生，不太懂得要怎么表演，所以都是照着导演的指示来配音的，后期渐渐的开始能自己理解该怎么演。在配第三作“哈利波特─阿兹卡班的逃犯”时，因为正处于变声期，所以当中战斗场面的嘶吼声配得非常辛苦。一直拼命努力演出的他，也以变声期作为契机开始会思考更多关于演技的事情。\r\n\r\n2017年2月19日，有相关报道证实与同是声优的花泽香菜是恋人关系，并同居于东京港区某公寓。本人亦于2017年2月22日在个人部落格承认交往。\r\n2020年7月8日，宣布与花泽香菜结婚。",
+                    "locked": false
+                },
+                {
+                    "id": 22712,
+                    "name": "藤原夏海",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5d/16/22712_prsn_8UvLE.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5d/16/22712_prsn_8UvLE.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5d/16/22712_prsn_8UvLE.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5d/16/22712_prsn_8UvLE.jpg"
+                    },
+                    "short_summary": "日本の女性声優。静岡県浜松市出身。アーツビジョン所属。\r\n\r\n趣味・特技：歌唱、キャッチボール、鉄棒、けん玉",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 18568,
+            "name": "グイード・ミスタ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7b/a2/18568_crt_W4VS4.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/a2/18568_crt_W4VS4.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/a2/18568_crt_W4VS4.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7b/a2/18568_crt_W4VS4.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4147,
+                    "name": "鳥海浩輔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/56/8b/4147_prsn_0WlpT.jpg?r=1570978631",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/8b/4147_prsn_0WlpT.jpg?r=1570978631",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/8b/4147_prsn_0WlpT.jpg?r=1570978631",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/56/8b/4147_prsn_0WlpT.jpg?r=1570978631"
+                    },
+                    "short_summary": "日本男性声优，神奈川县茅崎市出生，现隶属于ARTSVISION Inc.。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 18581,
+            "name": "ブローノ・ブチャラティ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b5/48/18581_crt_TZ0vX.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/48/18581_crt_TZ0vX.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/48/18581_crt_TZ0vX.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b5/48/18581_crt_TZ0vX.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4724,
+                    "name": "中村悠一",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/78/4724_prsn_7TvWV.jpg"
+                    },
+                    "short_summary": "爱称是ゆうきゃん，由铃村健一命名。英文标记法为‘yuu-kyan’\r\n与声优的杉田智和的私交良好，是在声优界著名的好友。\r\n兴趣是玩游戏、看电影等。\r\n不喜欢吃拉面。喜欢的食物是肉、奶酪、甜食。\r\n2020年10月1日，宣布从Sigma Seven移籍至INTENTION。",
+                    "locked": false
+                },
+                {
+                    "id": 14414,
+                    "name": "石上静香",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/04/f5/14414_prsn_7nPYh.jpg?r=1735460841",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/f5/14414_prsn_7nPYh.jpg?r=1735460841",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/f5/14414_prsn_7nPYh.jpg?r=1735460841",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/04/f5/14414_prsn_7nPYh.jpg?r=1735460841"
+                    },
+                    "short_summary": "日本的女性声优，东京都出身，所属大泽事务所。\r\n\r\n東京メディアアカデミーの声優ボーカル科（現：東京声優アカデミーの声優養成科）を卒業。81プロデュース所属後、プロフィット養成所を経て2014年2月よりプロ・フィット所属となる。\r\n名前付きの初めての役は、『凪のあすから』の潮留晃。\r\nオーディションをして初めて受かった役は『健全ロボ ダイミダラー』の喜友名霧子。\r\n2022年1月1日、プロ・フィットが同年3月末で閉鎖することに伴い、大沢事務所へ移籍。\r\n\r\n2025年6月30日发表与[url=https://bgm.tv/person/41419]柳晃平[/url]结婚",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 18583,
+            "name": "レオーネ・アバッキオ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/47/74/18583_crt_zz11s.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/74/18583_crt_zz11s.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/74/18583_crt_zz11s.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/47/74/18583_crt_zz11s.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3864,
+                    "name": "諏訪部順一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884"
+                    },
+                    "short_summary": "日本の男性声優、ナレーター、歌手。東京俳優生活協同組合所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 18587,
+            "name": "ナランチャ・ギルガ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/35/c3/18587_crt_taGTb.jpg?r=1370864981",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/35/c3/18587_crt_taGTb.jpg?r=1370864981",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/35/c3/18587_crt_taGTb.jpg?r=1370864981",
+                "grid": "https://lain.bgm.tv/pic/crt/g/35/c3/18587_crt_taGTb.jpg?r=1370864981"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10256,
+                    "name": "山下大輝",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b0/56/10256_prsn_p2A8G.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/56/10256_prsn_p2A8G.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/56/10256_prsn_p2A8G.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b0/56/10256_prsn_p2A8G.jpg"
+                    },
+                    "short_summary": "日本の男性声優。アーツビジョン所属。静岡県浜松市出身。\r\n\r\n芸歴：日本ナレーション演技研究所\r\n趣味・特技：写真、サッカー、歌唱、テニス \r\n\r\nディズニー映画『アラジン』にてジーニー役の日本語版吹き替えを担当した山寺宏一は憧れであり、それがきっかけで声の仕事があることを知る。最初はミュージカルが好きで歌の勉強がしたかったため、高校卒業後は東京の音楽専門学校ミューズ音楽院のボーカル専攻科に2年間通った。音楽の勉強をやる内に「やっぱりお芝居がやりたい」と思うようになり、進路指導の先生が日本ナレーション演技研究所の卒業生だったことから声優学校に興味を持ち、ミューズ音楽院卒業と同時に日本ナレーション演技研究所に入所。\r\n2011年～2012年、当時バンダイナムコゲームスが運営していたコミュニケーションサイト『バナフェス!タウン』において洲崎綾などと共に声優の卵として配信コンテンツに出演していた。アシスタントを務めていたたかはし智秋の番組内においてダイキングというニックネームを命名され以降Twitterのアカウント名にも使用している。\r\n2012年にアーツビジョン預かりとなり、同年12月テレビアニメ『リトルバスターズ!』の生徒B役で声優デビューする。山下は「ちゃんとデビューしたのは2013年というほうが正しい」としている。\r\n初めてオーディションで勝ち取った役は、山下の初主演作でもある『ガイストクラッシャー』の白銀レッカ役で、200人以上の大規模オーディションから役を射止めた。初めて名前のある役は『ガイストクラッシャー』よりオンエアや収録が先だった『アラタカンガタリ〜革神語〜』の西島優役となる。『弱虫ペダル』の小野田坂道役でも主演を務め、2014年には第八回声優アワード新人男優賞を受賞する。\r\n尊敬する声優は山口勝平。理由は「いつまでも少年心を忘れない、そしてすごく優しくて温かい人だから」とのこと。また将来は「勝平さんみたいないつまでも少年心を忘れない声優になりたい」と語っている。\r\n父がテニスコーチであったことから、物心つく前からテニスをやっていた。ジュニア選手になったときには、東京遠征で松岡修造から指導を受けたこともある。プロを目指さなかった理由としては、趣味としては楽しいが、もともとプロになるつもりはなく歌や芝居が好きだったためである。ミューズ音楽院に通うことは母には賛成されたが、父にはあまり伝えず逃げるように上京した。声優養成所に入った時も母親には事後報告で伝えたが、父には何も言わなかった。父とは連絡をとっていなかったが現在は、父から「サインを送れよ」と連絡があり認めてもらっている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 18588,
+            "name": "パンナコッタ・フーゴ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/b7/18588_crt_N0eIU.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/b7/18588_crt_N0eIU.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/b7/18588_crt_N0eIU.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/b7/18588_crt_N0eIU.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 16353,
+                    "name": "榎木淳弥",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/70/16353_prsn_O8uZj.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/70/16353_prsn_O8uZj.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/70/16353_prsn_O8uZj.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/70/16353_prsn_O8uZj.jpg"
+                    },
+                    "short_summary": "大学時代に周囲の影響でアニメを見始めるようになり、『天元突破グレンラガン』に感動したことがきっかけで声優を目指す。アトミックモンキー 声優・演技研究所に3期生として入所、卒業後に事務所所属となる。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 18600,
+            "name": "トリッシュ・ウナ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/92/a6/18600_crt_RPR7R.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/a6/18600_crt_RPR7R.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/a6/18600_crt_RPR7R.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/92/a6/18600_crt_RPR7R.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10838,
+                    "name": "千本木彩花",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/56/7f/10838_prsn_vhSS9.jpg?r=1740109911",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/7f/10838_prsn_vhSS9.jpg?r=1740109911",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/7f/10838_prsn_vhSS9.jpg?r=1740109911",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/56/7f/10838_prsn_vhSS9.jpg?r=1740109911"
+                    },
+                    "short_summary": "日本の女性声優。 埼玉県出身。アイムエンタープライズ所属。\r\n\r\n日本ナレーション演技研究所で演技を学ぶ。同研究所卒業前の、高校生時にテレビアニメ『帰宅部活動記録』で九重クレア役としてデビュー。\r\n2015年にアイムエンタープライズへの所属が発表された。9月より「講談社ラノベ文庫チャンネル」のMCをつとめる。2016年4月に『甲鉄城のカバネリ』の無名役で初のメインヒロインを演じ、同年10月に『ガーリッシュナンバー』で、初主役となる烏丸千歳役を演じる。\r\n2017年、第11回声優アワードで新人女優賞を受賞。\r\n\r\n高校では部活動でベーム式B♭クラリネットを演奏。コンクールに出場していた。\r\n『甲鉄城のカバネリ』で共演した内田真礼は「1話ですでに（無名の）キャラクターが出来上がっていてすごい」と絶賛している。\r\n『ガーリッシュ ナンバー』の烏丸千歳役は100人以上の候補の中からオーディションを経てスタッフの満場一致で選ばれたのだが、実は千本木がオーディションを受けた役は八重役であった。監督の井畑翔太と原作者の渡航は千本木の演技だけが方向性がいい意味で異質であり、ほとんどの声優が空気を読んで適度にブレーキをかける中、千本木だけはアクセルをベタ踏み状態であったと述べている。また、本来千本木のキャリアよりもう1つ、2つ、上の世代がやっていてもおかしくない難しいことを求められている中で、こちらの要望によく応えてくれたともコメントしている。\r\n\r\n2019年12月29日、アニメ『甲鉄城のカバネリ』で共演した声優、畠中祐との結婚を発表。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

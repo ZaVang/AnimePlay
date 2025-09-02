@@ -1,0 +1,73 @@
+{
+    "id": 328,
+    "name": "森川由綺",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/46/16/328_crt_vbz8P.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/46/16/328_crt_vbz8P.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/46/16/328_crt_vbz8P.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/46/16/328_crt_vbz8P.jpg"
+    },
+    "summary": "一年前にデビューした新進気鋭の人気歌手。\r\n主人公とは高校時代からの恋人同士で、\r\n現在でも同じ大学に通う。\r\nしかし彼女の人気は主人公に災いし、\r\n二人を引き離す。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "森川由绮"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "森川由綺"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "もりかわ　ゆき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Morikawa Yuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月24日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "BWH",
+            "value": "80/56/77"
+        },
+        {
+            "key": "声优",
+            "value": "平野綾"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 24,
+    "stat": {
+        "comments": 49,
+        "collects": 155
+    },
+    "anime_ids": [
+        993,
+        2586
+    ]
+}

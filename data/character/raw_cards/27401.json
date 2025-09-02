@@ -1,0 +1,58 @@
+{
+    "id": 27401,
+    "name": "ドロシー・ウェスト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7b/15/27401_crt_eVK6p.jpg?r=1622131111",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/15/27401_crt_eVK6p.jpg?r=1622131111",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/15/27401_crt_eVK6p.jpg?r=1622131111",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7b/15/27401_crt_eVK6p.jpg?r=1622131111"
+    },
+    "summary": "初登场与第十一话。有父亲加拿大血统与母亲日本血统的混血双胞胎。特征是蓝色短发与蓝眼睛。性格明亮、精神饱满；处事毫不犹豫、充满魅力。尽管看似是天生的明星相、但却有像小恶魔的一面。第一人称「我」（ボク）。要求莉安娜一直喜欢自己，不能喜欢别人。初登场时应征米蕾的偶队伍的缺额，曾因为希望莉安娜一起加入的要求被拒绝，与诗音合作誓言打败「SoLaMi♡SMILE」，后来成为了好朋友。只有在Dressing Pafé及Solami Smile的交流之中，才会看到坦率又可爱的一面。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "特萝茜·韦斯特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "桃乐丝"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月5日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "年龄",
+            "value": "14岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 5,
+    "stat": {
+        "comments": 9,
+        "collects": 7
+    },
+    "anime_ids": [
+        99748,
+        120186,
+        162802
+    ]
+}

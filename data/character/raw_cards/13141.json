@@ -1,0 +1,54 @@
+{
+    "id": 13141,
+    "name": "小梅",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5a/c4/13141_crt_x88wP.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5a/c4/13141_crt_x88wP.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5a/c4/13141_crt_x88wP.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5a/c4/13141_crt_x88wP.jpg"
+    },
+    "summary": "さくら組の幼稚園児。初対面の人や好きな人の前で話すことが苦手だけど、\r\nうちとけるとステキな笑顔をみせる。\r\n人の言うことを素直に聞く、ピュアなハートの持ち主。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小梅"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "こうめ"
+                },
+                {
+                    "v": "Koume"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月3日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 3,
+    "stat": {
+        "comments": 2,
+        "collects": 22
+    },
+    "anime_ids": [
+        3848
+    ]
+}

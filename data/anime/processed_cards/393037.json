@@ -1,0 +1,107 @@
+{
+    "id": 393037,
+    "name": "义妹生活",
+    "image_path": "data/images/anime/393037.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "高中生浅村悠太因父亲太一再婚，将与同龄少女绫濑沙季及其母亲亚季子在同一屋檐下生活。\r\n\r\n由于双方都经历过父母不和与离婚，\r\n对男女关系都很谨慎，他们约定以义兄妹的身份保持适当的距离。\r\n\r\n我对你没有任何期待，\r\n也请你不要对我抱有任何期待。\r\n\r\n悠太和沙季通过彼此交流想法、反复磨合，逐渐互相了解。\r\n\r\n正当两人开始感受到新生活的舒适时，\r\n他们的关系也慢慢地，但也确实地开始发生了变化……\r\n",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "日常",
+        "小说改"
+    ],
+    "date": "2024-07-04",
+    "rating_rank": 1265,
+    "rating_score": 7.3,
+    "rating_total": 8899,
+    "main_character_ids": [
+        114126,
+        114156
+    ],
+    "main_characters": [
+        {
+            "id": 114126,
+            "name": "浅村悠太",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ed/17/114126_crt_IdNep.jpg?r=1711375043",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/17/114126_crt_IdNep.jpg?r=1711375043",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/17/114126_crt_IdNep.jpg?r=1711375043",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ed/17/114126_crt_IdNep.jpg?r=1711375043"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7605,
+                    "name": "天﨑滉平",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d1/99/7605_prsn_mUHC1.jpg?r=1723389647",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d1/99/7605_prsn_mUHC1.jpg?r=1723389647",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d1/99/7605_prsn_mUHC1.jpg?r=1723389647",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d1/99/7605_prsn_mUHC1.jpg?r=1723389647"
+                    },
+                    "short_summary": "日本の男性声優。大阪府摂津市出身。\r\n日本ナレーション演技研究所を経て、2013年4月にアイムエンタープライズに所属。\r\n\r\n2018年10月より放送のTVアニメ『DOUBLE DECKER! ダグ&キリル』にてキリル・ヴルーベリ役でアニメ初主演を務める。\r\n2018年7月から放送開始のTVアニメ『ハイスコアガール』に主人公の矢口春雄役で出演、放送順としてはこちらが先の主演作品となった。\r\nゲームでは『テイルズ オブ クレストリア』にてカナタ・ヒューガ役で主演を務める。\r\n\r\n趣味は写真撮影で、雑誌のコラムや出演した番組などで披露している。\r\n甘いものが好きで、スイーツを出すカフェでバイト経験がある。\r\n事務所の同期に、内田雄馬、小澤亜李、長縄まりあがいる。",
+                    "locked": false
+                },
+                {
+                    "id": 14414,
+                    "name": "石上静香",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/04/f5/14414_prsn_7nPYh.jpg?r=1735460841",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/f5/14414_prsn_7nPYh.jpg?r=1735460841",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/f5/14414_prsn_7nPYh.jpg?r=1735460841",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/04/f5/14414_prsn_7nPYh.jpg?r=1735460841"
+                    },
+                    "short_summary": "日本的女性声优，东京都出身，所属大泽事务所。\r\n\r\n東京メディアアカデミーの声優ボーカル科（現：東京声優アカデミーの声優養成科）を卒業。81プロデュース所属後、プロフィット養成所を経て2014年2月よりプロ・フィット所属となる。\r\n名前付きの初めての役は、『凪のあすから』の潮留晃。\r\nオーディションをして初めて受かった役は『健全ロボ ダイミダラー』の喜友名霧子。\r\n2022年1月1日、プロ・フィットが同年3月末で閉鎖することに伴い、大沢事務所へ移籍。\r\n\r\n2025年6月30日发表与[url=https://bgm.tv/person/41419]柳晃平[/url]结婚",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 114156,
+            "name": "綾瀬沙季",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8d/6e/114156_crt_f87eP.jpg?r=1711375074",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/6e/114156_crt_f87eP.jpg?r=1711375074",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/6e/114156_crt_f87eP.jpg?r=1711375074",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8d/6e/114156_crt_f87eP.jpg?r=1711375074"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19356,
+                    "name": "中島由貴",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0a/4c/19356_prsn_l8Cdj.jpg?r=1749713329",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/4c/19356_prsn_l8Cdj.jpg?r=1749713329",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/4c/19356_prsn_l8Cdj.jpg?r=1749713329",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0a/4c/19356_prsn_l8Cdj.jpg?r=1749713329"
+                    },
+                    "short_summary": "中島 由貴（なかしま ゆき、1997年9月12日 - ）は日本の女性声優、モデル、女優、アース・スター ドリームのメンバーである。愛称はゆっきー。ユニットでのイメージカラーは白。\r\n和歌山県出身、東京都在住。アース・スター エンターテイメント所属。身長159cm。血液型はB型。 代表作は『てーきゅう』の田中きなこ。\r\n\r\n小中学生時代、雑誌JSガールの専属モデルで活躍し、阪急百貨店シュガープリンセスモデル、雑誌ニコ☆プチでカリスマ読者モデル、雑誌mariaで表紙を飾りキッズファッションRONIでカタログモデルなど多数活躍。プロダクションアミューズに所属し子役としてCMドラマと活躍。その後、2014年にアース・スター エンターテイメントが開催した国民的声優グランプリにて3000名応募の中、グランプリを受賞。アース・スター ドリームのメンバーとしてデビューするとともに、アース・スター エンターテイメントに所属した。\r\n\r\n『てーきゅう』アニメ4期の大喜利の司会者役で声優デビューし、同作品5期の田中きなこ役で初めて名前のある役を演じる。また、アニメに先行し、舞台版においてもきなこを演じ、舞台デビューも果たしている。日本きものシステム協同組合 第4期ドリームエンジェルとしても活動している。\r\n2016年3月に日出高等学校を卒業してからは、仕事に専念している。\r\n2016年9月よりORICON GAMEの公式プレイヤーとして活動している。\r\n\r\nボーカロイド、アニメソング、ハロープロジェクトの楽曲を聴き、歌い踊るのが趣味である。好きなアニメは『うたの☆プリンスさまっ♪』、『ひぐらしのなく頃に』など。\r\n軽音部に入っていたこともあり、ベースを特技としている。\r\nゲームも趣味であり、好きなゲームは『スペースチャンネル5』、『jubeat』、『ドラゴンクエスト』、『無双シリーズ』、『テイルズ オブ シリーズ』、『CoD:BO2』、『どうぶつの森シリーズ』など幅広い。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

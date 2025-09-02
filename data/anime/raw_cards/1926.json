@@ -1,0 +1,396 @@
+{
+    "id": 1926,
+    "type": 2,
+    "name": "クロノクルセイド",
+    "name_cn": "圣枪修女",
+    "summary": "她叫罗塞特修女，玛克达拉修道院的除魔师。\r\n公元1928年，美国纽约。依旧是夜晚被黑暗妆点的时候。第一次世界大战结束后不久，美国经济开始了前所未有的发展。但是过于急速的发展吸引了一些不速之客。人眼看不到的怪异，在黑暗中蠢蠢欲动。专司除魔的玛克达拉修道院的修女罗塞特，和她的助手少年克罗诺正是被称为“除魔师”的专家。\r\n本领高强的两人阻止依附在各种物品上侵入合众国的恶魔，展开了无数冒险。只不过偶尔在解决恶魔的同时也令周围遭受更大的损失。罗塞特一直在寻找小时候因恶魔引发的时间而失散的弟弟尤休亚。\r\n为此进入修道院，接受除魔师的训练。不过她合克罗诺之间尤一个重大的秘密：克罗诺的真实身份是和罗塞特定下“怀表契约”的恶魔。情况紧急时，罗赛特解开封印，让克罗诺发挥他强大的力量。但是，代价就是罗赛特必须消耗自己的“灵魂”，也就意味着罗赛特的寿命会缩短。人类和恶魔之间建立了绝对的信赖关系。不过，罗赛特的生命能够维持到和弟弟尤休亚相见么？",
+    "nsfw": false,
+    "locked": false,
+    "date": "2003-11-24",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/51/03/1926_2BxBU.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/51/03/1926_2BxBU.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/51/03/1926_2BxBU.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/51/03/1926_2BxBU.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/51/03/1926_2BxBU.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "圣枪修女"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "CHRNO CRUSADE",
+                    "k": null
+                },
+                {
+                    "v": "CHRONO CRUSADE",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "24"
+        },
+        {
+            "key": "放送开始",
+            "value": "2003年11月24日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期一、星期三（19话起）"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.fujitv.co.jp/b_hp/chrono/index.html"
+        },
+        {
+            "key": "播放电视台",
+            "value": "フジテレビ"
+        },
+        {
+            "key": "播放结束",
+            "value": "2004年6月9日"
+        },
+        {
+            "key": "导演",
+            "value": "紅優（森川滋）"
+        },
+        {
+            "key": "音乐",
+            "value": "七瀬光（伊藤真澄）"
+        },
+        {
+            "key": "Copyright",
+            "value": "©福音弾"
+        },
+        {
+            "key": "原作",
+            "value": "森山大輔"
+        },
+        {
+            "key": "企画",
+            "value": "安田猛、小川洋、鈴木径男、酒匂暢彦、石川真一郎"
+        },
+        {
+            "key": "系列构成",
+            "value": "冨岡淳広"
+        },
+        {
+            "key": "脚本",
+            "value": "冨岡淳広、吉村清子、高橋ナツコ、ほそのゆうじ"
+        },
+        {
+            "key": "分镜",
+            "value": "紅優（森川滋）、神戸洋行、加藤敏幸、阿部達也、川瀬敏文、中山勝一、佐山聖子、石踊宏、鵜飼ゆうき、井硲清高、もりたけし"
+        },
+        {
+            "key": "演出",
+            "value": "紅優（森川滋）、神戸洋行、加藤敏幸、秋田谷典昭、清水一伸、中山勝一、佐山聖子、石踊宏、木村哲、鵜飼ゆうき、阿部達也"
+        },
+        {
+            "key": "人物设定",
+            "value": "黒田和也"
+        },
+        {
+            "key": "作画监督",
+            "value": "黒田和也、神戸洋行、吉田隆彦、田畑壽之、清丸悟、LEE SIM IN、米本リョウ、熊谷哲矢、飯田清貴、市川敬三、斉藤和也、本村晃一、朝来昭子、野崎真一、江上夏樹、香川久"
+        },
+        {
+            "key": "机械设定",
+            "value": "川原智弘"
+        },
+        {
+            "key": "美术监督",
+            "value": "野崎俊郎"
+        },
+        {
+            "key": "色彩设计",
+            "value": "鈴木依里"
+        },
+        {
+            "key": "摄影监督",
+            "value": "鎌田克明"
+        },
+        {
+            "key": "音响监督",
+            "value": "鶴岡陽太"
+        },
+        {
+            "key": "音乐制作",
+            "value": "ランティス"
+        },
+        {
+            "key": "动画制作",
+            "value": "GONZO DIGIMATION"
+        },
+        {
+            "key": "製作",
+            "value": "フジテレビ・福音弾【角川書店、ハピネット、クロックワークス、GDH】"
+        },
+        {
+            "key": "制片人",
+            "value": "高瀬敦也、若松剛、冨岡重明、武智恒雄"
+        }
+    ],
+    "volumes": 0,
+    "eps": 24,
+    "total_episodes": 24,
+    "rating": {
+        "rank": 1134,
+        "total": 1134,
+        "count": {
+            "one": 3,
+            "two": 1,
+            "three": 2,
+            "four": 12,
+            "five": 41,
+            "six": 178,
+            "seven": 353,
+            "eight": 350,
+            "nine": 144,
+            "ten": 50
+        },
+        "score": 7.4
+    },
+    "collection": {
+        "wish": 1275,
+        "collect": 1593,
+        "doing": 120,
+        "on_hold": 200,
+        "dropped": 70
+    },
+    "tags": [
+        {
+            "name": "GONZO",
+            "count": 312
+        },
+        {
+            "name": "圣枪修女",
+            "count": 280
+        },
+        {
+            "name": "2003",
+            "count": 172
+        },
+        {
+            "name": "TV",
+            "count": 166
+        },
+        {
+            "name": "主角不灭反定律",
+            "count": 124
+        },
+        {
+            "name": "神结局",
+            "count": 117
+        },
+        {
+            "name": "石田彰",
+            "count": 92
+        },
+        {
+            "name": "漫画改",
+            "count": 80
+        },
+        {
+            "name": "宿命感",
+            "count": 76
+        },
+        {
+            "name": "治愈",
+            "count": 67
+        },
+        {
+            "name": "契约",
+            "count": 61
+        },
+        {
+            "name": "漫改",
+            "count": 37
+        },
+        {
+            "name": "BE",
+            "count": 33
+        },
+        {
+            "name": "圣职",
+            "count": 28
+        },
+        {
+            "name": "永生",
+            "count": 21
+        },
+        {
+            "name": "奇幻",
+            "count": 20
+        },
+        {
+            "name": "クロノクルセイド",
+            "count": 15
+        },
+        {
+            "name": "战斗",
+            "count": 15
+        },
+        {
+            "name": "2003年11月",
+            "count": 14
+        },
+        {
+            "name": "日本",
+            "count": 14
+        },
+        {
+            "name": "紅優",
+            "count": 12
+        },
+        {
+            "name": "2003年",
+            "count": 10
+        },
+        {
+            "name": "森山大輔",
+            "count": 8
+        },
+        {
+            "name": "动画",
+            "count": 6
+        },
+        {
+            "name": "积极",
+            "count": 6
+        },
+        {
+            "name": "川上とも子",
+            "count": 6
+        },
+        {
+            "name": "2003年10月",
+            "count": 5
+        },
+        {
+            "name": "听说挺好",
+            "count": 5
+        },
+        {
+            "name": "千葉紗子",
+            "count": 5
+        },
+        {
+            "name": "催泪",
+            "count": 5
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "series": false,
+    "main_character_ids": [
+        830,
+        831,
+        832
+    ],
+    "main_characters": [
+        {
+            "id": 830,
+            "name": "ロゼット・クリストファ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9b/b5/830_crt_1FsP7.jpg?r=1500082027",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9b/b5/830_crt_1FsP7.jpg?r=1500082027",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9b/b5/830_crt_1FsP7.jpg?r=1500082027",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9b/b5/830_crt_1FsP7.jpg?r=1500082027"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3880,
+                    "name": "川上とも子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/da/05/3880_prsn_NX58v.jpg?r=1678190819",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/05/3880_prsn_NX58v.jpg?r=1678190819",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/05/3880_prsn_NX58v.jpg?r=1678190819",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/da/05/3880_prsn_NX58v.jpg?r=1678190819"
+                    },
+                    "short_summary": "川上伦子（艺名：川上 とも子，1970年4月25日－2011年6月9日）是一名日本女性声优。血型O型。东京都出身。隶属于Production baobab事务所。自2008年8月16日因病住院而暂停其声优事业，Keroro军曹的日向冬树和BLEACH的砕蜂这2个角色暂时由另一位声优桑岛法子代役。自手术过后于2008年10月开始进入长期休养的状态，2009后半年出院后复出，2011年6月9日过世，享年41岁。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 831,
+            "name": "クロノ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e0/ec/831_G8LIJ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/ec/831_G8LIJ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/ec/831_G8LIJ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e0/ec/831_G8LIJ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3927,
+                    "name": "石田彰",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/75/f0/3927_prsn_PPbE7.jpg?r=1632126400",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/f0/3927_prsn_PPbE7.jpg?r=1632126400",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/f0/3927_prsn_PPbE7.jpg?r=1632126400",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/75/f0/3927_prsn_PPbE7.jpg?r=1632126400"
+                    },
+                    "short_summary": "石田彰，是日本人气一线声优，近几年来在日本各地稳居声优榜前列，在男女老少间都很受欢迎。出道已经近二十年了，声音宜男宜女，是业界少见的可以配女性角色还不易被人察觉的男声优。2009年3月前效力于Mausu Promotion，4月开始是自由身，2012年3月开始他进入了新的事务所ピアレスガーベラ。主要作品：桂小太郎《银魂》、我爱罗《火影忍者》、阿斯兰·萨拉《高达SEED》、渚熏《EVA》、猪八戒《最游记》等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 832,
+            "name": "アズマリア・ヘンドリック",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/72/50/832_sinqi.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/50/832_sinqi.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/50/832_sinqi.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/72/50/832_sinqi.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4129,
+                    "name": "千葉紗子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/6a/4129_seiyu_anidb.jpg?r=1400776553",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/6a/4129_seiyu_anidb.jpg?r=1400776553",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/6a/4129_seiyu_anidb.jpg?r=1400776553",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/6a/4129_seiyu_anidb.jpg?r=1400776553"
+                    },
+                    "short_summary": "千葉 紗子（ちば さえこ、1977年8月26日 - ）は、日本の女性声優。東京都出身。血液型はA型。スペースクラフトに所属していた。\r\n\r\n2007年，8月27日、30歳を迎えると同時にブログで結婚を発表。翌年以降、アニメ『ストライクウィッチーズ』の坂本美緒役を降板するなど、声優としての活動を一時休業した時期もあったが、現在も声優として活動を続けている。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

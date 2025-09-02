@@ -1,0 +1,61 @@
+{
+    "id": 308,
+    "name": "笹原完士",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a8/c8/308_OdT4P.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a8/c8/308_OdT4P.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a8/c8/308_OdT4P.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a8/c8/308_OdT4P.jpg"
+    },
+    "summary": "本作品的主角，但完全沒有主角的感覺。現視研的第三代會長，有一個會令妹控夢想幻滅的妹妹，被其妹叫做猴子。很普通的御宅族，喜歡成人遊戲但沒有勇氣買，一般都是在高坂家中玩的。在任內的主要政績是以創作社團名義參加同人誌即賣會。[mask]與荻上千佳交往。[/mask]",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "笹原完士"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Sasahara Kanji"
+                },
+                {
+                    "k": "日文名",
+                    "v": "笹原完士"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1984年1月13日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 2,
+    "birth_year": 1984,
+    "birth_mon": 1,
+    "birth_day": 13,
+    "stat": {
+        "comments": 8,
+        "collects": 10
+    },
+    "anime_ids": [
+        1219,
+        928
+    ]
+}

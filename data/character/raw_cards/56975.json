@@ -1,0 +1,52 @@
+{
+    "id": 56975,
+    "name": "櫻",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6b/a2/56975_crt_ScZ3V.jpg?r=1536951282",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/a2/56975_crt_ScZ3V.jpg?r=1536951282",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/a2/56975_crt_ScZ3V.jpg?r=1536951282",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6b/a2/56975_crt_ScZ3V.jpg?r=1536951282"
+    },
+    "summary": "髪色長髪でサイドでリボンを結んでいる。\r\n無口で寡黙だが好奇心旺盛でいたずら好き。柚よりもさらに幼い子狐。飯綱を使役して掃除や洗濯などの雑務をこなしている。\r\n幼い頃、母である八重に連れられて此花亭に来た際に新人時代の桐と出会った。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "樱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "さくら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakura"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 31
+    },
+    "anime_ids": [
+        211934
+    ]
+}

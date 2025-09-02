@@ -1,0 +1,65 @@
+{
+    "id": 70612,
+    "name": "陽夏木ミカン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fd/63/70612_crt_hB8Ld.jpg?r=1566723330",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/63/70612_crt_hB8Ld.jpg?r=1566723330",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/63/70612_crt_hB8Ld.jpg?r=1566723330",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fd/63/70612_crt_hB8Ld.jpg?r=1566723330"
+    },
+    "summary": "魔法少女としての力が弱まった桃の助っ人として多魔市にやってきた魔法少女。高校1年生。容姿はオレンジ色のお団子ヘアー。元々は他の町を守る穏健派の魔法少女だったが、事情を知ったことでシャミ子を護衛するため彼女の通う桜ヶ丘高等学校に転校することを決めた。当初はシャミ子のことを「優子」と呼んでいたが、親しくなった際にシャミ子の側からあだ名（活動名）で呼ぶことを許すようになった。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阳夏木蜜柑"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "陽夏木 ミカン"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひなつき ミカン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hinatsuki Mikan"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月3日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wikipedia"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 3,
+    "stat": {
+        "comments": 20,
+        "collects": 108
+    },
+    "anime_ids": [
+        313852,
+        272510
+    ]
+}

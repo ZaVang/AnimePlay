@@ -1,0 +1,77 @@
+{
+    "id": 36488,
+    "name": "涼風青葉",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2c/07/36488_crt_ne5nM.jpg?r=1694619961",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/07/36488_crt_ne5nM.jpg?r=1694619961",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/07/36488_crt_ne5nM.jpg?r=1694619961",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2c/07/36488_crt_ne5nM.jpg?r=1694619961"
+    },
+    "summary": "飞鹰跃动的新进员工。职务：角色设计、角色建模。\r\n\r\n小学时期非常喜欢一款名为《妖精故事》（Fairies Story）的游戏，同时也非常憧憬担任该游戏角色设计的光，梦想亦是成为角色设计师，高中毕业后放弃了美术大学的录取资格，选择就职制作该游戏的公司“飞鹰跃动”。进公司后被分配在光的小组成为了她的部下，两人关系也犹如师徒般。\r\n\r\n性格认真、社交能力高，能和同事、上司毫无隔阂的相处，即使毫无3D经验，也会积极的学习。将来备受前辈的期待，但也有少根筋的一面。\r\n\r\n身材娇小，双马尾发型又有着娃娃脸，经常被误认成小孩子。穿着职场套装，因穿法错误让光误以为是学生制服。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "凉风青叶"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "涼風 青葉"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "すずかぜ あおば"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Suzukaze Aoba"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "年龄",
+            "value": "18"
+        },
+        {
+            "key": "生日",
+            "value": "2月2日"
+        },
+        {
+            "key": "星座",
+            "value": "水瓶座"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "149cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 2,
+    "stat": {
+        "comments": 64,
+        "collects": 323
+    },
+    "anime_ids": [
+        208908,
+        150775
+    ]
+}

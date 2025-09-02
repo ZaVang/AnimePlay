@@ -1,0 +1,56 @@
+{
+    "id": 22804,
+    "name": "武藤里伽子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/19/6c/22804_crt_8mj58.jpg?r=1557050023",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/6c/22804_crt_8mj58.jpg?r=1557050023",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/6c/22804_crt_8mj58.jpg?r=1557050023",
+        "grid": "https://lain.bgm.tv/pic/crt/g/19/6c/22804_crt_8mj58.jpg?r=1557050023"
+    },
+    "summary": "両親の家庭問題で、5年生（高校2年生）の8月に東京から母親の実家のある高知に引っ越してくる。容姿端麗で学業成績ならびにスポーツも優秀だが、人付き合いは苦手。転校生でありながら高知弁をあからさまにバカにしたり、クラス活動にも参加しないため、友人は小浜裕実一人のみ。松野が想いを寄せる。高校卒業後、地元の高知大学を受験し合格したが、実は密かに東京の女子大を受験し進学していた。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "武藤里伽子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Muto Rikako"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "むとう りかこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mutou Rikako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 35,
+        "collects": 109
+    },
+    "anime_ids": [
+        513
+    ]
+}

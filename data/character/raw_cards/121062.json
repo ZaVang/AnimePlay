@@ -1,0 +1,48 @@
+{
+    "id": 121062,
+    "name": "マル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/80/34/121062_crt_Nz3ZG.jpg?r=1716563239",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/34/121062_crt_Nz3ZG.jpg?r=1716563239",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/34/121062_crt_Nz3ZG.jpg?r=1716563239",
+        "grid": "https://lain.bgm.tv/pic/crt/g/80/34/121062_crt_Nz3ZG.jpg?r=1716563239"
+    },
+    "summary": "「天国」を目指す少年。自身の出自についての記憶が無い。\r\nキルコ曰く“ちょっといないくらいの美少年”。抜群の身体能力と、“人食い”を殺すことのできる特殊な力を持つ。キルコのことを「おねえちゃん」と呼び、恋心を抱いている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "真流"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "小丸"
+                },
+                {
+                    "k": "第三中文名",
+                    "v": "阿圆"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 29,
+        "collects": 67
+    },
+    "anime_ids": [
+        404804
+    ]
+}

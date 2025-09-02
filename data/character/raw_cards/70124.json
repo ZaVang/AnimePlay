@@ -1,0 +1,66 @@
+{
+    "id": 70124,
+    "name": "クロム",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c3/7b/70124_crt_4T4te.jpg?r=1566020330",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c3/7b/70124_crt_4T4te.jpg?r=1566020330",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c3/7b/70124_crt_4T4te.jpg?r=1566020330",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c3/7b/70124_crt_4T4te.jpg?r=1566020330"
+    },
+    "summary": "16岁，村中的“妖术使”，喜欢搜集各种材料的热血少年，靠着自己的实验而懂得许多科学知识，让千空十分惊讶。对科学充满热忱，因此与千空结为挚友。喜欢琉璃，与琉璃是青梅竹马，曾发誓过要治好琉璃的病。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "克罗姆"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Chrome"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kuromu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2月4日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "体重",
+            "value": "63kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 4,
+    "stat": {
+        "comments": 11,
+        "collects": 18
+    },
+    "anime_ids": [
+        424372,
+        266794,
+        363101
+    ]
+}

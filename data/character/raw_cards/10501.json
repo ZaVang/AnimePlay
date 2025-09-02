@@ -1,0 +1,56 @@
+{
+    "id": 10501,
+    "name": "キレネンコ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bd/6f/10501_crt_04bH3.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/6f/10501_crt_04bH3.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/6f/10501_crt_04bH3.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bd/6f/10501_crt_04bH3.jpg"
+    },
+    "summary": "穿着红白间纹囚犯衣服的兔子，左耳穿着别针，囚犯编号04，前黑手党的首领。平时相当安静，有洁癖，爱帆布鞋成痴，目中无人，被激怒发飙时会变成十分危险的凶兔，如果被激怒得更恐怖，就会变成狂暴形态，攻击力大幅飙升，能以单手将一栋高楼大厦逐层拆除。\r\n有一个双胞胎兄弟基鲁列克（Кируненко）。两兄弟遭到手下兹鲁宗洛夫背叛用导弹炸烂后，各自被接上对方的左边头颅，因而造成基廉列克的双重个性。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "基里连科"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "俄文名",
+                    "v": "Кирененко"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "基廉列克"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Kirenenko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 12,
+        "collects": 50
+    },
+    "anime_ids": [
+        1373,
+        10553,
+        58864,
+        58865,
+        58345
+    ]
+}

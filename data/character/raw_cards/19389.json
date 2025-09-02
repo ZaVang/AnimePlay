@@ -1,0 +1,57 @@
+{
+    "id": 19389,
+    "name": "下鴨桃仙",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d6/72/19389_crt_Ly87t.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/72/19389_crt_Ly87t.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/72/19389_crt_Ly87t.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d6/72/19389_crt_Ly87t.jpg"
+    },
+    "summary": "狸四兄弟の母。宝塚歌劇に心酔し、「美青年には優雅な玉突きがふさわしい」という独自の観念から、タカラヅカ風美青年に変じてはビリヤード場に通う。通り名は「黒服の王子」。息子たちが立派な狸であると信じて疑わない。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "下鸭桃仙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Tōsen Shimogamo"
+                },
+                {
+                    "k": "日文名",
+                    "v": "下鴨 桃仙"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しもがも　とせん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shimogamo Tōsen"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 17,
+        "collects": 30
+    },
+    "anime_ids": [
+        68035,
+        193042
+    ]
+}

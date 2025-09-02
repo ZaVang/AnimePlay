@@ -1,0 +1,153 @@
+{
+    "id": 80442,
+    "name": "摸索吧！部活剧",
+    "image_path": "data/images/anime/80442.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　部活をテーマにしたCGアニメ「てさぐれ！部活もの」が10月から日本テレビで放送されることが5日明らかになった。キャラクターなどは明かされていないものの、公式サイトには「MMDダウンロード」という項目が準備されており、CGソフトの「MikuMikuDance（MMD）」を活用したアニメになるとみられる。\r\n\r\n　「MMD」は、08年に登場した3DCGアニメ作成ソフト。歌声合成ソフトから生まれた人気キャラクター「初音ミク」のCGモデルを動かすことを目的に制作されたフリーソフトだったが、「直球表題ロボットアニメ」、「gdgd妖精s」など同ソフトを活用したテレビアニメも制作されている。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "原创",
+        "日常"
+    ],
+    "date": "2013-10-05",
+    "rating_rank": 1666,
+    "rating_score": 7.2,
+    "rating_total": 1102,
+    "main_character_ids": [
+        22255,
+        22256,
+        22257,
+        22258
+    ],
+    "main_characters": [
+        {
+            "id": 22255,
+            "name": "鈴木結愛",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c1/dc/22255_crt_77x1P.jpg?r=1428847477",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/dc/22255_crt_77x1P.jpg?r=1428847477",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/dc/22255_crt_77x1P.jpg?r=1428847477",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c1/dc/22255_crt_77x1P.jpg?r=1428847477"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 8001,
+                    "name": "西明日香",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ff/2f/8001_prsn_7H00k.jpg?r=1515402791",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ff/2f/8001_prsn_7H00k.jpg?r=1515402791",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ff/2f/8001_prsn_7H00k.jpg?r=1515402791",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ff/2f/8001_prsn_7H00k.jpg?r=1515402791"
+                    },
+                    "short_summary": "中学、高中都在吹奏社，负责长笛部分，并担任社长。\r\n2007年，专门学校在学时，参加了第2回Sigma Seven e公开选拔，与大龟明日香、田丸笃志、渕上舞合格。\r\n2008年，于专门学校毕业，并加入Sigma Seven e。\r\n2009年，电视动画《K-ON!》为初次演出的动画。\r\n2015年4月从Sigma Seven e移籍至Sigma Seven。\r\n2016年2月2日，因为长年爱用且推广日本传统内裤‘裈’有功，而荣获《2015 日本裈名人大赏》肯定，成为女性声优史上第一人。\r\n2016年4月27日宣布个人歌手出道。\r\n\r\n趣味：犬と遊ぶこと \r\n資格：硬筆5段・毛筆2段 \r\n特技：フルート演奏・水泳\r\n経歴：第2回シグマ・セブンオーディション合格者",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 22256,
+            "name": "佐藤陽菜",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d6/00/22256_crt_I5gga.jpg?r=1430547586",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/00/22256_crt_I5gga.jpg?r=1430547586",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/00/22256_crt_I5gga.jpg?r=1430547586",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d6/00/22256_crt_I5gga.jpg?r=1430547586"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4698,
+                    "name": "明坂聡美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/44/ff/4698_prsn_K78E4.jpg?r=1503560197",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/ff/4698_prsn_K78E4.jpg?r=1503560197",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/ff/4698_prsn_K78E4.jpg?r=1503560197",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/44/ff/4698_prsn_K78E4.jpg?r=1503560197"
+                    },
+                    "short_summary": "明明是个贫乳，却经常接演巨乳角色，本人也多次吐槽。\r\n声优以外舞台女演员也在进行，活动也广泛。同时，常常把声音用作花茎甘蓝关联的作品。\r\n有绝对音感。\r\n爱好是猫，特技是一千米跑（15岁时），喜欢玩柏青哥，网络游戏和画画，喜欢东京事变（椎名林檎）的歌，喜欢吃梅干。\r\n经常被人以“贫乳”，“嫁不出去”来开玩笑，自己也自暴自弃地接受了如上设定（现在主持着名为明坂聡美のよめいり！（明坂聪美的新娘修行）的放送节目），目标是找个有钱的帅哥（或者只要有钱就好）嫁了。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 22257,
+            "name": "高橋葵",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/12/8c/22257_crt_yBYvD.jpg?r=1430323923",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/8c/22257_crt_yBYvD.jpg?r=1430323923",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/8c/22257_crt_yBYvD.jpg?r=1430323923",
+                "grid": "https://lain.bgm.tv/pic/crt/g/12/8c/22257_crt_yBYvD.jpg?r=1430323923"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13159,
+                    "name": "荻野可鈴",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8e/95/13159_prsn_83V2R.jpg?r=1544715416",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/95/13159_prsn_83V2R.jpg?r=1544715416",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/95/13159_prsn_83V2R.jpg?r=1544715416",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8e/95/13159_prsn_83V2R.jpg?r=1544715416"
+                    },
+                    "short_summary": "2008年左右出道的女性歌手、声优，并出演过特摄和舞台剧等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 22258,
+            "name": "田中心春",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d3/9d/22258_crt_kkJAB.jpg?r=1430547610",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/9d/22258_crt_kkJAB.jpg?r=1430547610",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/9d/22258_crt_kkJAB.jpg?r=1430547610",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d3/9d/22258_crt_kkJAB.jpg?r=1430547610"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7609,
+                    "name": "大橋彩香",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/72/57/7609_prsn_sR2YK.jpg?r=1717043731",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/57/7609_prsn_sR2YK.jpg?r=1717043731",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/57/7609_prsn_sR2YK.jpg?r=1717043731",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/72/57/7609_prsn_sR2YK.jpg?r=1717043731"
+                    },
+                    "short_summary": "2011年，Horipro「タレントスカウトキャラバン」次世代配音員演出者試聽的格蘭披治選出，殘餘決賽。其後，屬Horipro。\r\n\r\n2012年，電視動畫「聖誕之吻ss+plus」的第10話的實行委員演出、配音員和各項初出演。並於同年春天播映的電視動畫、「交響詩篇AO」中，初次飾演主角芙蕾雅・布蘭。\r\n\r\n在官方介紹頁中，興趣是卡拉OK、動畫鑑賞、網路、遊戲、音樂鑑賞、打鼓、讀書（輕小說）、特技是打鼓、運動。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

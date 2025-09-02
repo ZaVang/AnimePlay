@@ -1,0 +1,49 @@
+{
+    "id": 15834,
+    "name": "ココ・ヘクマティアル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6c/56/15834_crt_0P0r8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/56/15834_crt_0P0r8.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/56/15834_crt_0P0r8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6c/56/15834_crt_0P0r8.jpg"
+    },
+    "summary": "军火集团Hecmatial的核心人物之一，是个20多岁的白人银发女子。为人性格奔放大胆，也非常有计谋，经常做出惊人决策使整个队伍脱险。其父是世界著名的海运巨人之一，因此拥有自己的渠道在世界各国运输、贩售武器。她也因此同时担当大型军火组织HCLI在非洲和欧洲的运输负责人。蔻蔻自称“贩卖军火是为了世界和平”[1]，以平衡各国军备实力的理念来避免战争，而非以利润为单纯目标的商人。\r\n酒品很差，喝醉之后会使出‘无差别格斗技’（接下来会脱掉衣服）。\r\n策画世界蛇计划，以控制全球物流的方式强行使世界和平。负责在对所有人（包括其部队及HCLI总社）保密的情况下提供资金、设备与人脉供使天田南博士研发量子电脑。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蔻蔻 海克玛提亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Koko Hekmatyar"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "koko hekumatiaru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 10,
+        "collects": 119
+    },
+    "anime_ids": [
+        29073,
+        42339
+    ]
+}

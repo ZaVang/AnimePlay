@@ -1,0 +1,219 @@
+{
+    "id": 260467,
+    "name": "荒野的寿飞行队",
+    "image_path": "data/images/anime/260467.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "在一片荒野的广阔世界，突然从天空掉落下各种各样的物品。\r\n它们急剧地改变了人们的生活，尤其是飞机带来的影响最大。\r\n那之后，世界的潮流转移到了天空。\r\n时光流逝——\r\n被人们雇佣的保镖部队“寿飞行队”， 与严厉的美貌女社长、不靠谱的现场指挥官、富有工匠气质的整备班长等充满个性的同伴们一起，为了守护客户的重要货物，今天也要同隼号战斗机翱翔长空。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "科幻",
+        "百合",
+        "TV",
+        "日本",
+        "原创",
+        "战斗"
+    ],
+    "date": "2019-01-13",
+    "rating_rank": 1952,
+    "rating_score": 7.2,
+    "rating_total": 1449,
+    "main_character_ids": [
+        66041,
+        66042,
+        66043,
+        66044,
+        66045,
+        66046
+    ],
+    "main_characters": [
+        {
+            "id": 66041,
+            "name": "キリエ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8b/1e/66041_crt_do2re.jpg?r=1548219478",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8b/1e/66041_crt_do2re.jpg?r=1548219478",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8b/1e/66041_crt_do2re.jpg?r=1548219478",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8b/1e/66041_crt_do2re.jpg?r=1548219478"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 32687,
+                    "name": "鈴代紗弓",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8a/42/32687_prsn_GF9g5.jpg?r=1688106625"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 66042,
+            "name": "ケイト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4a/52/66042_crt_1129Y.jpg?r=1548219515",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4a/52/66042_crt_1129Y.jpg?r=1548219515",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4a/52/66042_crt_1129Y.jpg?r=1548219515",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4a/52/66042_crt_1129Y.jpg?r=1548219515"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13813,
+                    "name": "仲谷明香",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/73/e6/13813_prsn_ceq7i.jpg?r=1537628078",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/e6/13813_prsn_ceq7i.jpg?r=1537628078",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/e6/13813_prsn_ceq7i.jpg?r=1537628078",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/73/e6/13813_prsn_ceq7i.jpg?r=1537628078"
+                    },
+                    "short_summary": "仲谷 明香（なかや さやか、1991年10月15日 - ）は、日本の声優、タレントであり、女性アイドルグループAKB48の元メンバーである。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 66043,
+            "name": "エンマ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1e/51/66043_crt_N2CaW.jpg?r=1549675943",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/51/66043_crt_N2CaW.jpg?r=1549675943",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/51/66043_crt_N2CaW.jpg?r=1549675943",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1e/51/66043_crt_N2CaW.jpg?r=1549675943"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 33324,
+                    "name": "幸村恵理",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e8/9d/33324_prsn_Y0BBj.jpg?r=1749320155",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/9d/33324_prsn_Y0BBj.jpg?r=1749320155",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/9d/33324_prsn_Y0BBj.jpg?r=1749320155",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e8/9d/33324_prsn_Y0BBj.jpg?r=1749320155"
+                    },
+                    "short_summary": "幸村 恵理（ゆきむら えり、1998年12月6日 - ）は、日本の女性声優。埼玉県出身。ヴィムス所属。\r\n\r\n趣味・特技は、カラオケ、ギター、バスケットボール。比較的若い時期から声優を目指す。小学生の時に歳のはなれた姉2人を追いかけるようテレビアニメやイベントDVDを観始め、声優へのあこがれを持つ。特に、テイルズ オブ フェスティバルのDVDを観て、出演した声優たちがキャラクターを維持しつつイベントを楽しんでいる姿を観た影響が大きかったと言う。中学生の時には親に声優養成所への入所を止められていたため、15歳の時に日本ナレーション演技研究所に入所、在籍時に株式会社VIMSに所属する。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 66044,
+            "name": "ザラ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/51/f3/66044_crt_BoRJ2.jpg?r=1550242909",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/f3/66044_crt_BoRJ2.jpg?r=1550242909",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/f3/66044_crt_BoRJ2.jpg?r=1550242909",
+                "grid": "https://lain.bgm.tv/pic/crt/g/51/f3/66044_crt_BoRJ2.jpg?r=1550242909"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 12569,
+                    "name": "山村響",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/df/ce/12569_prsn_EVTkz.jpg?r=1687679505",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/ce/12569_prsn_EVTkz.jpg?r=1687679505",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/ce/12569_prsn_EVTkz.jpg?r=1687679505",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/df/ce/12569_prsn_EVTkz.jpg?r=1687679505"
+                    },
+                    "short_summary": "福岡県出身。血液型はO型。声優・キャラクターソング等の名義は山村響、アーティストとしてはhibiku（ひびく）名義で音楽活動をしていたが、2019年3月発売のミニアルバムからは音楽活動も山村響名義に統一する。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 66045,
+            "name": "レオナ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/23/9d/66045_crt_9iKU1.jpg?r=1550765873",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/23/9d/66045_crt_9iKU1.jpg?r=1550765873",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/23/9d/66045_crt_9iKU1.jpg?r=1550765873",
+                "grid": "https://lain.bgm.tv/pic/crt/g/23/9d/66045_crt_9iKU1.jpg?r=1550765873"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5766,
+                    "name": "瀬戸麻沙美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/b7/5766_prsn_6q644.jpg"
+                    },
+                    "short_summary": "中学生2年生の時、偶然視聴したアニメ『D.Gray-man』の主人公、アレン・ウォーカー（声：小林沙苗）に魅せられ、キャラクターだけでなく演者の声優にも興味が湧き、声優を志す。高校在学中の2009年に声優事務所のオーディションを受験、翌2010年より声優活動を開始する。\r\n2010年、初めて受けたオーディションでテレビアニメ『放浪息子』（2011年）の準主人公 \"高槻よしの\" 役に抜擢される。彼女にとって初仕事の収録だったが、演技などに関して事前の指示はほとんど必要としなかったと監督のあおきえいは述べている。\r\n2011年、日本テレビ系テレビアニメ『ちはやふる』で主演（ \"綾瀬千早\" 役）とエンディング主題歌の歌唱を担当。同局系列のテレビアニメ『HUNTER×HUNTER』の \"クラピカ\" 役オーディションに参加していた瀬戸の演技が『ちはやふる』番組関係者の目に留まり、改めて \"綾瀬千早\" 役のオーディションを行ったところ満場一致で瀬戸の起用が決定した。\r\n2015年4月1日付けで、シグマ・セブンeからシグマ・セブンへ移動。\r\n2021年11月1日よりStarCrewへ移籍。あわせて公式Twitterアカウントを開設した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 66046,
+            "name": "チカ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/de/a5/66046_crt_YXqY4.jpg?r=1551279266",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/a5/66046_crt_YXqY4.jpg?r=1551279266",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/a5/66046_crt_YXqY4.jpg?r=1551279266",
+                "grid": "https://lain.bgm.tv/pic/crt/g/de/a5/66046_crt_YXqY4.jpg?r=1551279266"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 20701,
+                    "name": "富田美憂",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023"
+                    },
+                    "short_summary": "富田 美憂（とみた みゆ、1999年11月15日 - ）は、日本の女性声優。アミューズ所属。埼玉県出身。\r\n\r\n小学生の時にテレビアニメ『ヴァンパイア騎士』を見て、声優業に興味を持った。その際にこの作品に出演していた宮野真守にも憧れを持ったと語っている。\r\n第一回「アニ☆たん!」ではファイナリストとなり6社にスカウトされ、同時期に開催された「2014声優アーティスト育成プログラム・セレクション」でグランプリを獲得した。\r\nデビュー作は2015年のテレビアニメ『干物妹！うまるちゃん』のタイヘイ（幼少期）役である。2016年、『アイカツスターズ！』の虹野ゆめ役で初主演。\r\n2018年、声優ユニットを中心としたメディアミックス企画『Kleissis』の林堂アキラ役に選ばれる。\r\n\r\n高校では漫画研究部に所属していた。好きな教科は英語と美術だと語っている。\r\n趣味・特技はイラストを描くこと、ゲーム、空手。空手では上段回し蹴りが得意であり、ゲームでは、『うたの☆プリンスさまっ♪』『薄桜鬼』などの乙女ゲームが好きである。\r\n歌うこと、踊ること、ディズニーが好きである。\r\n好きな食べ物は、りんご、栗。\r\n狼、犬、ホワイトタイガーなど虫以外の動物全般を好きだと語っており、チャップという名前の犬を飼っている。\r\n「自分を一言で言うと…」の質問に「挙動不審」だと答えている。また、好きな言葉には「考えるよりチャレンジ！」をあげている。\r\n原作のある作品の場合は原作を読み込んで、キャラクターの考え方や行動を理解してからオーディションに臨んでいると語っている。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

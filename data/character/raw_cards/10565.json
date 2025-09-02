@@ -1,0 +1,44 @@
+{
+    "id": 10565,
+    "name": "久城一弥",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/52/dc/10565_crt_xtBFj.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/dc/10565_crt_xtBFj.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/dc/10565_crt_xtBFj.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/52/dc/10565_crt_xtBFj.jpg"
+    },
+    "summary": "来自东方岛国的留学生。性格温柔诚实，非常爱管闲事。总是担心维多利亚。而且维多利亚大多数的事件也是因为一弥才解释的，被布洛瓦警官称为‘所得到的恩惠，就像是从卑鄙的高利贷业者那里，毫无代价、不断取得大笔金钱一样，真是太奇怪又太不可思议了’，感情上有时很迟钝，总是不知道女孩子在想什么。虽然总是被维多利加贬低，但是也是很珍视维多利加的。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "久城一弥"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "くじょう かずや"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 23,
+        "collects": 29
+    },
+    "anime_ids": [
+        9781
+    ]
+}

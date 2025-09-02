@@ -1,0 +1,67 @@
+{
+    "id": 56511,
+    "name": "杉元佐一",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/68/28/56511_crt_LrYrl.jpg?r=1569906281",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/28/56511_crt_LrYrl.jpg?r=1569906281",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/28/56511_crt_LrYrl.jpg?r=1569906281",
+        "grid": "https://lain.bgm.tv/pic/crt/g/68/28/56511_crt_LrYrl.jpg?r=1569906281"
+    },
+    "summary": "前大日本帝国陆军一等兵，原隶属第1师团。带着军帽且围着围巾，其特征是面容带有撕裂伤痕的约20多岁青年。拥有惊人的战斗力和恢复力及能在死地中寻见活路的超凡胆量，被称为“不死身杉元”（不死身の杉元），战斗起来如同鬼神一样可怕，即使受了濒死的重伤、第二天也能跑动。但其实内心纤细，对于战争的残酷，以及因此泯灭人性的自己其实无法接受。喜欢的食物是柿饼。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "杉元佐一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "杉元 佐一"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "すぎもと さいち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sugimoto Saichi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "不死身の杉元 / 不死身杉元"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月1日"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 1,
+    "stat": {
+        "comments": 26,
+        "collects": 75
+    },
+    "anime_ids": [
+        285901,
+        251547,
+        361095,
+        221127
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": 162211,
+    "name": "鮎川ハナ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/05/4b/162211_crt_Pwxee.jpg?r=1722327266",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/4b/162211_crt_Pwxee.jpg?r=1722327266",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/4b/162211_crt_Pwxee.jpg?r=1722327266",
+        "grid": "https://lain.bgm.tv/pic/crt/g/05/4b/162211_crt_Pwxee.jpg?r=1722327266"
+    },
+    "summary": "エブリマートで働く高校3年生。釣り好きたちが集まるコンビニの中でも、きっての天才アングラー。誰にでも好かれる明るい性格の一方で、大の負けず嫌い。お店に勝手に釣り具コーナーを作るなど破天荒な一面も。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鲇川花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "鮎川 ハナ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あゆかわ ハナ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 30,
+        "collects": 53
+    },
+    "anime_ids": [
+        505895
+    ]
+}

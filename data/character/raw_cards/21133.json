@@ -1,0 +1,52 @@
+{
+    "id": 21133,
+    "name": "ノーマン・バーグ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8f/50/21133_crt_drD6q.jpg?r=1745946711",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/50/21133_crt_drD6q.jpg?r=1745946711",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/50/21133_crt_drD6q.jpg?r=1745946711",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8f/50/21133_crt_drD6q.jpg?r=1745946711"
+    },
+    "summary": "ロジャーの執事（バトラー）。ロジャーと出会う以前からそのメモリーに従ってビッグオーを整備しながら、それを駆る主が現れることを待ち続けていた。　家事一般から、ビッグオーやグリフォンの整備まで、ロジャーの屋敷の全てを預かっている。なお、大掛かりまたは短時間でのビッグオーの修理・調整作業は、シティに住む老人たちを束ねて行っている。\r\n　何事が起きても動じない飄々とした人物だが、銃火器の扱いなど戦闘能力のプロでもある。サイドカー付き大型バイクを愛用している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "诺曼·博格"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Norman Burg"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "195cm"
+        },
+        {
+            "key": "年齢",
+            "value": "５４歳"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 3
+    },
+    "anime_ids": [
+        697
+    ]
+}

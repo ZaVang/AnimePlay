@@ -1,0 +1,91 @@
+{
+    "id": 484623,
+    "name": "彻夜之歌 第二季",
+    "image_path": "data/images/anime/484623.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "夜晚尚未终结！\r\n\r\n跨越了是否要成为吸血鬼的困扰之后，夜守光下定决心要喜欢上七草荠，荠则决定要让光喜欢上自己。尚未知晓「恋爱」为何物，两人的夜晚依旧持续加速。\r\n企图猎杀吸血鬼的侦探莺馅子已经逼近到身旁了。虽然想尽早把「充满人类时期眷恋的东西」这项吸血鬼的弱点给处理掉，没想到荠却完全没有人类时期的记忆。荠隐藏的过去是？馅子为什么会想杀吸血鬼呢？\r\n然后，交错于荠与馅子之间的「秘密」又是──？\r\n\r\n光、荠、馅子……\r\n快乐的「熬夜」不会止步于此，崭新的「夜晚」要开始了！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "少年向"
+    ],
+    "date": "2025-07-04",
+    "rating_rank": 670,
+    "rating_score": 7.6,
+    "rating_total": 940,
+    "main_character_ids": [
+        102485,
+        102486
+    ],
+    "main_characters": [
+        {
+            "id": 102485,
+            "name": "夜守コウ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bc/09/102485_crt_Wwr4n.jpg?r=1636569749",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/09/102485_crt_Wwr4n.jpg?r=1636569749",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/09/102485_crt_Wwr4n.jpg?r=1636569749",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bc/09/102485_crt_Wwr4n.jpg?r=1636569749"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 33386,
+                    "name": "佐藤元",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113"
+                    },
+                    "short_summary": "佐藤 元（さとう げん、1997年3月22日 - ）は、日本の男性声優。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 102486,
+            "name": "七草ナズナ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9c/97/102486_crt_2HhlI.jpg?r=1657792111",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/97/102486_crt_2HhlI.jpg?r=1657792111",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/97/102486_crt_2HhlI.jpg?r=1657792111",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9c/97/102486_crt_2HhlI.jpg?r=1657792111"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 12568,
+                    "name": "雨宮天",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a2/62/12568_prsn_jLLz4.jpg?r=1693248727"
+                    },
+                    "short_summary": "雨宫天（あまみや そら）是日本的女性声优、歌手，1993年8月28日出生于日本东京都。\r\n\r\n[b]经历[/b]\r\n1993年8月28日出生于日本东京都；因憧憬声优[url=https://bgm.tv/person/4244]泽城美雪[/url]而向往成为一名声优。\r\n在2011年举办的第2回MusicRay'n超级声优试镜中合格，2012年声优活动开始，2014年在TV动画《[url=https://bgm.tv/subject/88493]一周的朋友。[/url]》担任[url=https://bgm.tv/character/23104]藤宫香织[/url]CV,为初主役角色。\r\n2014年12月21日，与同事务所的[url=https://bgm.tv/person/13565]麻仓桃[/url]、[url=https://bgm.tv/person/13581]夏川椎菜[/url]组成声优组合“[url=https://bgm.tv/person/18492]TrySail[/url]”，并于2015年·正式开始活动。\r\n2015年第9回声优奖中获得新人女声优奖。\r\n2015年10月2日，发行自己的第一部写真集《ソライロ～青と旅する～》。\r\n2020年4月17日，开通绘画日记企划期间限定Twitter账号(现已转为永久账号)",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

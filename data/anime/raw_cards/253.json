@@ -1,0 +1,667 @@
+{
+    "id": 253,
+    "type": 2,
+    "name": "カウボーイビバップ",
+    "name_cn": "星际牛仔",
+    "summary": "       2021年，随着超光速航行技术的实现，人类得以在太阳系范围内方便的自由移动，但是由于设计上的失误，这种技术引发了月球的爆炸，无数的月球碎片被吸引向地球，造成了空前绝后的大灾难。存活下来的人类逃离地球，并开始在太阳系各地建立家园。由于这次灾难，国家、政府等权利机构都极为不稳定、治安问题也成为了一个难题。为了在人力资源不足的情况下抓捕罪犯，有些组织开始允许个人抓捕通缉的罪犯并换取奖金，“赏金猎人”这个职业也就由此诞生了。\r\n       史派克（Spike）和杰特（Jet）是驾驶飞船Bebop号在宇宙中以捉拿逃犯获取奖金为生的赏金猎人。两人在星际间的旅程中，结识了身负巨债、嗜财如命的美女菲（Faye）和电脑神童艾德（Ed），并收养了拥有高智商的数据狗爱因（Ein）。从此，四人一狗游荡在广阔之宇宙之中，在自己与他人的生活中经历著种种悲欢离合，也寻找著各自的过去。",
+    "nsfw": false,
+    "locked": false,
+    "date": "1998-10-23",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/c2/4c/253_jJJj9.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/c2/4c/253_jJJj9.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/c2/4c/253_jJJj9.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/c2/4c/253_jJJj9.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/c2/4c/253_jJJj9.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "星际牛仔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Cowboy Bebop",
+                    "k": null
+                },
+                {
+                    "v": "宇宙牛仔",
+                    "k": null
+                },
+                {
+                    "v": "赏金猎人",
+                    "k": null
+                },
+                {
+                    "v": "太空牛仔",
+                    "k": null
+                },
+                {
+                    "v": "恶男杰特",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "26"
+        },
+        {
+            "key": "放送开始",
+            "value": "1998年10月23日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期五"
+        },
+        {
+            "key": "官方网站",
+            "value": [
+                {
+                    "v": "http://www.cowboybebop.org/",
+                    "k": null
+                },
+                {
+                    "v": "http://www.cowboy-bebop.net/index.html",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "播放电视台",
+            "value": "WOWOW、テレビ東京"
+        },
+        {
+            "key": "播放结束",
+            "value": "1999年4月23日"
+        },
+        {
+            "key": "导演",
+            "value": "渡辺信一郎"
+        },
+        {
+            "key": "音乐",
+            "value": "菅野よう子"
+        },
+        {
+            "key": "企画",
+            "value": "サンライズ"
+        },
+        {
+            "key": "原作",
+            "value": "矢立肇"
+        },
+        {
+            "key": "系列构成",
+            "value": "信本敬子"
+        },
+        {
+            "key": "人物设定",
+            "value": "川元利浩"
+        },
+        {
+            "key": "机械设定",
+            "value": "山根公利"
+        },
+        {
+            "key": "设定",
+            "value": "セットデザイン：今掛勇、舞台設定協力：河森正治、佐藤大"
+        },
+        {
+            "key": "3DCG",
+            "value": "モニターCG：佐山善則"
+        },
+        {
+            "key": "メイン・タイトル",
+            "value": "マツモト･デザインセンター"
+        },
+        {
+            "key": "美术监督",
+            "value": "東潤一"
+        },
+        {
+            "key": "色彩设计",
+            "value": "中山しほ子"
+        },
+        {
+            "key": "摄影监督",
+            "value": "大神洋一"
+        },
+        {
+            "key": "剪辑",
+            "value": "鶴渕友彰、ビデオ編集：キュー・テック、今塚誠、菅原慎一"
+        },
+        {
+            "key": "コンピュータ処理",
+            "value": "レアトリック、チャッピィ"
+        },
+        {
+            "key": "現像",
+            "value": "東京現像所"
+        },
+        {
+            "key": "音响监督",
+            "value": "小林克良"
+        },
+        {
+            "key": "音效",
+            "value": "倉橋静男（サウンドボックス）"
+        },
+        {
+            "key": "录音",
+            "value": "APUスタジオ、整音：田中章喜、内山敬章"
+        },
+        {
+            "key": "录音助理",
+            "value": "整音助手：田口信孝"
+        },
+        {
+            "key": "音响",
+            "value": "音響制作：AUDIO PLANNING U、担当：飯草良花、小澤恵"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "菅野よう子"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "菅野よう子"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "岩里祐穂、Tim Jensen"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "シートベルツ（THE SEATBELTS）、山根麻以"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "太田敏明、音楽ディレクター：佐々木史朗、井上裕香子"
+        },
+        {
+            "key": "音乐制作",
+            "value": "ビクターエンタテインメント"
+        },
+        {
+            "key": "宣传",
+            "value": "番宣：佐伯真美 (テレビ東京)（テレビ東京放送版でクレジット）"
+        },
+        {
+            "key": "連載",
+            "value": "｢ファンタジーDX｣ (角川書店)"
+        },
+        {
+            "key": "制片人",
+            "value": "南雅彦、池口和彦、担当：小林教子 (テレビ東京)（テレビ東京放送版でクレジット）、山崎立士（テレビ東京放送版でクレジット）"
+        },
+        {
+            "key": "助理制片人",
+            "value": "小池経利、梅澤勝路"
+        },
+        {
+            "key": "制作管理",
+            "value": "制作デスク：松村圭一"
+        },
+        {
+            "key": "设定制作",
+            "value": "文芸･設定制作：鳥羽聡"
+        },
+        {
+            "key": "制作进行",
+            "value": "村田央（進行チーフ）"
+        },
+        {
+            "key": "制作进行协力",
+            "value": "制作助手：喜多幡咲子"
+        },
+        {
+            "key": "配給",
+            "value": "旭通信社（テレビ東京放送版でクレジット）"
+        },
+        {
+            "key": "製作",
+            "value": "サンライズ、バンダイビジュアル"
+        },
+        {
+            "key": "脚本",
+            "value": "信本敬子(1,3,6,12,13,15,22,25,26)、横手美智子(2,5,7,8,11,16,17,24)、山口亮太(3)、村井さだゆき(4,20,21)、佐藤大(9,14,23)、稲荷昭彦(10,18,19)、渡辺信一郎(17,21)；脚本协力：河森正治(18)、吉永亜矢(18)、山根公利(19)"
+        },
+        {
+            "key": "分镜",
+            "value": "渡辺信一郎(1,2,5,9,17,25,26)、赤根和樹(3)、武井良幸(4,8,20,23)、岡村天斎(6,7,12,13,15,22,24)、山口祐司(10)、森邦宏(11)、都留稔幸(14)、山内重保(16)、佐藤順一(18)、飯田馬之介(19)、本郷みつる(21)"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "渡辺信一郎(OP,ED)"
+        },
+        {
+            "key": "演出",
+            "value": "武井良幸(1,4,8,12,18,20,23,26)、佐藤育郎(2,6,9,13,16,21,25)、森邦宏(3,7,11,15,17,22)、渡邊哲哉(5)、山田弘和(10,14,19,24)"
+        },
+        {
+            "key": "总作画监督",
+            "value": "川元利浩(25)"
+        },
+        {
+            "key": "作画监督",
+            "value": "川元利浩(1,5,12,22,26,OP,ED)、竹内浩志(2,6,16,21,23)、本橋秀之(3,7)、しんぼたくろう(4,8,11,14,17)、小森高博(9,13,20,25)、逢坂浩司(10,15,19)、中田栄治(17)、菅野宏紀(18,24)、後藤雅巳(OP,ED)"
+        },
+        {
+            "key": "机械作画监督",
+            "value": "佐野浩敏(1)、後藤雅巳(3-26)"
+        },
+        {
+            "key": "构图",
+            "value": "入江泰浩"
+        },
+        {
+            "key": "原画",
+            "value": "逢坂浩司、中田栄治、後藤雅巳、小森高博、杉浦幸次、中村豊、伊藤嘉之、斎藤恒徳、鴨川浩、伊藤岳史、横山彰利、星和伸、大塚健、宮田忠明、吉田徹、川元利浩、菅野宏紀、橋本誠一、富岡隆司、井上英紀、岡真里子、津野田勝敏、入江泰浩、佐藤千春、高橋しんや、伊東伸高、高山朋浩、吉田大輔、オープニング原画：そえたかずひろ、小森高博、後藤雅巳、今掛勇、エンディング原画：逢坂浩司"
+        },
+        {
+            "key": "特效",
+            "value": "長谷川敏生"
+        },
+        {
+            "key": "动画制作",
+            "value": "サンライズ"
+        },
+        {
+            "key": "テレビ東京版",
+            "value": "1998年4月3日 - 1998年6月26日（全12话+总集篇）"
+        }
+    ],
+    "volumes": 0,
+    "eps": 26,
+    "total_episodes": 31,
+    "rating": {
+        "rank": 4,
+        "total": 17519,
+        "count": {
+            "one": 59,
+            "two": 11,
+            "three": 16,
+            "four": 23,
+            "five": 96,
+            "six": 256,
+            "seven": 798,
+            "eight": 2570,
+            "nine": 5577,
+            "ten": 8113
+        },
+        "score": 9.1
+    },
+    "collection": {
+        "wish": 9897,
+        "collect": 23421,
+        "doing": 3344,
+        "on_hold": 1553,
+        "dropped": 314
+    },
+    "tags": [
+        {
+            "name": "渡边信一郎",
+            "count": 5242
+        },
+        {
+            "name": "菅野洋子",
+            "count": 4226
+        },
+        {
+            "name": "星际牛仔",
+            "count": 3780
+        },
+        {
+            "name": "科幻",
+            "count": 3328
+        },
+        {
+            "name": "经典",
+            "count": 3069
+        },
+        {
+            "name": "SUNRISE",
+            "count": 2285
+        },
+        {
+            "name": "神作",
+            "count": 2221
+        },
+        {
+            "name": "神配乐",
+            "count": 1877
+        },
+        {
+            "name": "TV",
+            "count": 1689
+        },
+        {
+            "name": "1998",
+            "count": 1505
+        },
+        {
+            "name": "原创",
+            "count": 1373
+        },
+        {
+            "name": "CowboyBebop",
+            "count": 1054
+        },
+        {
+            "name": "林原惠",
+            "count": 593
+        },
+        {
+            "name": "cowboy",
+            "count": 579
+        },
+        {
+            "name": "山寺宏一",
+            "count": 233
+        },
+        {
+            "name": "公路片",
+            "count": 188
+        },
+        {
+            "name": "日本",
+            "count": 157
+        },
+        {
+            "name": "1998年10月",
+            "count": 137
+        },
+        {
+            "name": "浪漫",
+            "count": 106
+        },
+        {
+            "name": "渡辺信一郎",
+            "count": 75
+        },
+        {
+            "name": "BONES",
+            "count": 65
+        },
+        {
+            "name": "战斗",
+            "count": 60
+        },
+        {
+            "name": "信本敬子",
+            "count": 49
+        },
+        {
+            "name": "菅野よう子",
+            "count": 43
+        },
+        {
+            "name": "1998年",
+            "count": 39
+        },
+        {
+            "name": "音乐",
+            "count": 39
+        },
+        {
+            "name": "单元剧",
+            "count": 37
+        },
+        {
+            "name": "90年代",
+            "count": 35
+        },
+        {
+            "name": "川元利浩",
+            "count": 33
+        },
+        {
+            "name": "神",
+            "count": 32
+        }
+    ],
+    "meta_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "series": false,
+    "main_character_ids": [
+        77,
+        78,
+        79,
+        80,
+        81,
+        8376
+    ],
+    "main_characters": [
+        {
+            "id": 77,
+            "name": "スパイク・スピーゲル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1a/e3/77_crt_r11wF.jpg?r=1489157445",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/e3/77_crt_r11wF.jpg?r=1489157445",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/e3/77_crt_r11wF.jpg?r=1489157445",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1a/e3/77_crt_r11wF.jpg?r=1489157445"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3914,
+                    "name": "山寺宏一",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/36/d6/3914_prsn_pX74x.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/d6/3914_prsn_pX74x.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/d6/3914_prsn_pX74x.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/36/d6/3914_prsn_pX74x.jpg"
+                    },
+                    "short_summary": "日本男性聲優，1961年6月17日生\r\n少數由聲優轉型成演員、主持的成功例子，\r\n大學畢業後進入俳協養成所，1986年畢業，之後雖然演過不少角色但始終打不起名堂，直到《亂馬1/2》才以響良牙一角成名。\r\n擁有多變聲音聞名，被稱為「擁有七色聲音的男人」，由於什麼角色都能配，所以業界有個笑話說「配角想不到找誰來配的話就山寺宏一吧！」。\r\n由於這種萬能型特質所以雖然主角役很少，但卻是無數作品的必然配角，尤以洋畫系更明顯。\r\n富山敬離世後，山寺是其中一個接手富山角色的聲優。\r\n另一個以洋畫系為主舞台的聲優，多位荷里活紅星如愛迪．墨菲都是由他所配。\r\n和山口勝平，林原惠，戶田惠子，大塚明夫，富永美奈，田中敦子交好。\r\n因為洋畫配音被名編劇三谷幸喜發掘成為演員。\r\n不過也和他的聲優工作一樣，演的都是大配角以至小配角。\r\n1993年与声优金井美香结婚。2006年离婚。\r\n2012年6月17日在推特发表与声优田中理惠结婚。2018年8月3日，二人在各自的推特上宣布已离婚。\r\n2021年6月14日在推特发表与演员冈田罗宾翔子结婚。",
+                    "locked": false
+                },
+                {
+                    "id": 28677,
+                    "name": "Steven Blum",
+                    "type": 1,
+                    "career": [
+                        "writer",
+                        "seiyu",
+                        "writer",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/86/c5/28677_prsn_M3L3M.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/c5/28677_prsn_M3L3M.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/c5/28677_prsn_M3L3M.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/86/c5/28677_prsn_M3L3M.jpg"
+                    },
+                    "short_summary": "Blumvox社社長。Steven Jay Blum (/bluːm/; born on April 29, 1960) is an American voice actor of anime, animation and video games known for his distinctive deep voice. He provides the voice of TOM, the host of Cartoon Network and Adult Swim's Toonami programming block. Some of his major roles in anime include Spike Spiegel in Cowboy Bebop, Mugen in Samurai Champloo, Eikichi Onizuka in Great Teacher Onizuka, both Guilmon and Mitsuo Yamaki in Digimon Tamers, and Orochimaru and Zabuza Momochi in Naruto. In animation, he provides the voices for Starscream in Transformers: Prime, Vilgax, Heatblast and Ghostfreak in Ben 10, Amon in The Legend of Korra, Wolverine in Wolverine and the X-Men, and Zeb Orrelios in Star Wars Rebels. He was awarded the Guinness World Record for being the most prolific video game voice actor in 2012, with roles in franchises such as God of War, Call of Duty, Tom Clancy's Ghost Recon, Naruto, X-Men and Transformers. In 2014, he voiced Shoe and Sparky in the stop-motion animated film The Boxtrolls. In 2015, he participated in The Incredible True Story, a hip hop album/motion picture by Logic.",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 78,
+            "name": "ジェット・ブラック",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d4/e6/78_crt_VV28f.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/e6/78_crt_VV28f.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/e6/78_crt_VV28f.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d4/e6/78_crt_VV28f.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4045,
+                    "name": "石塚運昇",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9c/08/4045_prsn_msnzf.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/08/4045_prsn_msnzf.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/08/4045_prsn_msnzf.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9c/08/4045_prsn_msnzf.jpg"
+                    },
+                    "short_summary": "日本男性配音员、演员、旁白。原Aksent所属（2010年1月离所），最终所属于青二Production。出身于福井县胜山市。A型血。\r\n本名与艺名相同，不一样的是将日文发音“いしづか ゆきのり”变更为“いしづか うんしょう”。\r\n石冢以《精灵宝可梦》系列的大木博士为人所知，此外经常演出像《头文字D》的藤原文太等成熟男性角色。\r\n2018年8月17日，由青二Production发表石冢因食道癌药物治疗无效，已于2018年8月13日逝世，享寿67岁。\r\n\r\n高中时代首次在别人面前演戏，激起了演员的热情。\r\n由于家里经营机车行，从年轻时期即开始骑乘，年过30岁仍然乐于其中。\r\n成为演员之前在剧团四季与剧团青年座之间做荞麦面的摊贩生意。\r\n演艺事业从剧团蔷薇座→シェイクスピアシアター开始。石冢自身描述：刚开始配音工作的当时，曾在与舞台工作之间烦恼许久，但仍然陆续增加配音的工作，后来在《精灵宝可梦》时，才第一次意识到在映像管（电视机）前的观众（小孩）。在这之前似乎对被称为“声优”这件事有抵抗心理。\r\n年轻时常饰演美男角色“ヴイヴイ”イわしていた。（共演者谈）\r\n高中时代曾加入登山社，并参加过日本全国高中体育比赛。\r\n主办以朗读指导为主的“石冢运昇 Reading Company（石塚運昇 リーディングカンパニー）”，举行由参加者演出的朗读剧，以自身对舞台演员、声优的经验做演出、演技指导。\r\n在儿童节目时以像大木博士一般的温厚声音演出，但依照角色性格会骤变为激烈的讲话方式，声音更加地老气好像完全变成另一个人。\r\n\r\n当以大木博士身份参加《精灵宝可梦》活动，被现场的小孩问到“超梦和喷火龙谁比较强？”的问题时，石冢的回答是“不晓得。”。\r\n为了替精灵宝可梦电影做宣传，以大木博士身份在‘おはスタ’节目中作为特别来宾露脸。亦曾在同节目的单元内配合森巴的节奏跳舞。\r\n曾配合《精灵宝可梦》的特别节目一同出国，有过穿着阿啰哈衬衫搭配短裤、凉鞋打扮登场的画面。\r\n由于经常喝得一身酒臭味出现在录音现场，一部分的共演者以蕴含敬意和亲切感的“醉汉老爹（酔っぱらい親父）”称之。\r\n在《MAZE☆爆热时空》的影带访谈中，关于女性同士的互动，表达“（因为都是女的）看到觉得自己赚到了”。\r\n其人似乎是容易落泪的个性，于《星际牛仔》第18话收录当中，受到剧中女主角菲（配音：林原惠）说出“加油！加油！我自己！（フレーフレーアタシ）”的台词场景感动而泣。",
+                    "locked": false
+                },
+                {
+                    "id": 44047,
+                    "name": "김기현",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bc/fa/44047_prsn_19I9E.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/fa/44047_prsn_19I9E.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/fa/44047_prsn_19I9E.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bc/fa/44047_prsn_19I9E.jpg"
+                    },
+                    "short_summary": "韩国演员 / 配音。以出演《铁雨》、《第五共和国》等影视知名。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 79,
+            "name": "フェイ・ヴァレンタイン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6e/2a/79_crt_ZIF2u.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/2a/79_crt_ZIF2u.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/2a/79_crt_ZIF2u.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6e/2a/79_crt_ZIF2u.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3919,
+                    "name": "林原めぐみ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490"
+                    },
+                    "short_summary": "日本的声优、歌手、DJ、作词家（化名为MEGUMI）、作家。出生于日本东京都北区。\r\n歌迷与动漫迷常以“小惠”（めぐさん）、“惠姐”（めぐ姉）及“阁下”（声优平松晶子命名）等方式称呼她。\r\n林原惠演过多部著名作品的主要女角及担任部分片头、片尾曲演唱，包含《新世纪福音战士》的绫波丽、《乱马1/2》的女乱马、《秀逗魔导士》的莉娜·因巴斯、《口袋妖怪》的武藏、《名侦探柯南》的灰原哀、《通灵王》的恐山安娜等，为日本公认的“声优女王”。",
+                    "locked": false
+                },
+                {
+                    "id": 35445,
+                    "name": "Wendee Lee",
+                    "type": 1,
+                    "career": [
+                        "writer",
+                        "producer",
+                        "seiyu",
+                        "writer",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/37/93/35445_prsn_zh7nH.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/93/35445_prsn_zh7nH.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/93/35445_prsn_zh7nH.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/37/93/35445_prsn_zh7nH.jpg"
+                    },
+                    "short_summary": "Wendee Lee is an American voice actress and director.\r\n\r\nShe is mostly known for voicing Faye Valentine in Cowboy Bebop and Scorpina in Mighty Morphin Power Rangers, as well as voicing Myōjin Yahiko in the Bang Zoom! dub of Rurouni Kenshin, Haruhi Suzumiya in The Melancholy of Haruhi Suzumiya, Nastasya Vasilievna Obertas in Ace Combat 5: The Unsung War, Clover Field from Zero Escape series, and Blanc from Hyperdimension Neptunia series.",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 80,
+            "name": "エドワード・ウォン・ハウ・ペペル・チブルスキー4世",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a7/6e/80_crt_T8DMp.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/6e/80_crt_T8DMp.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/6e/80_crt_T8DMp.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a7/6e/80_crt_T8DMp.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3921,
+                    "name": "多田葵",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/ba/3921_prsn_758v4.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/ba/3921_prsn_758v4.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/ba/3921_prsn_758v4.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/ba/3921_prsn_758v4.jpg"
+                    },
+                    "short_summary": "多田葵（ただ あおい、1981年7月3日 - ）は、日本の女性シンガーソングライター。元子役、声優、舞台女優。 東京都出身、横浜市在住。血液型はO型。かに座。エスエスピー所属。早稲田大学第二文学部卒業。\r\n\r\n[うまれ]　1981年7月3日0時0分　東京都\r\n[せいざ]　かに座\r\n[けつえきがた]　Ｏ型\r\n[しんちょう]　160cm\r\n[くつ]　24.5cm\r\n[そだち]　横浜\r\n[とくちょう]　左手の甲の青いホクロ・歯並びがよい・身体がやわらかい\r\n[とくぎ]　うた（あたりまえだけど）、ダンス、タップダンス、バレエ、ものまね、マット運動、ネイルアート\r\n[すきなおと]　ポップでメロディアスでハッピーな音、楽しい気持ちになる歌、渋谷系な音楽。猫の鳴き声、鈴虫の鳴き声、友達の笑い声、水の流れる音\r\n[すきなアーティスト]　LINDBERG、aiko、NONA REEVES、ピチカートファイヴ、ジャクソン５、スティービー・ワンダー、タカハシタク☆、小西康陽etc.....\r\n[すきなスポーツ]　フットサル（やる方！）／ラグビー／サッカー／バレーボールF1（見る方！）\r\n[すきなたべもの]　１位：ネギトロ丼　２位：グミ　３位：プリン \r\n[すきなのみもの]　お茶全般、カフェラテ、ビール\r\n[すきなばしょ]　家のコタツ、渋谷の電力館の隣のスタバ、新宿のFlags、地元の川沿いの道、高校のスタンド\r\n[すきなふうけい]　夏の入道雲、花火の上がった空、冬の透き通った空、犬の散歩をしている老夫婦 \r\n[すきなにおい]　季節の変わり目のにおい、花火が終わった後のにおい、本屋さんのにおい、猫を洗った後のにおい\r\n[じゃくてん]　パクチー、救急車の音、日に焼けること、水泳、経済関係、ハイテク文化\r\n[はじめてかったCD]　LINDBERG『LINDBERG VI』Dreams Come True『The swinging star』（当時11歳）\r\n[はじめていったLIVE]　LINDBERGの１９９４年のツアー＠日本武道館（当時13歳）“歌で生きていくことに決めた記念日”\r\n\r\n元劇団ひまわり所属。かつては子役として『家なき子』等に出演。また舞台でも『アニー』（1991年度版）のアニー役を務めている。\r\n2003年高橋英樹とP505iの活動にキーボーディストとして参加。\r\n2005年3月以降はmoon-bunny entertainmentに所属を移し、シンガーソングライターとしての活動を開始、現在までに計3枚のオリジナル・アルバムを発表している。また、Veil ∞ Aoi名義でボーカル・グループVeilにも参加し、オムニバスWho’s next? Vol.3など、主にテレビアニメやPCゲームの主題歌を担当している。 励まし系シンガーソングライターを自称し、人気アニメやゲームなのエンディングを歌唱している為別名”エンディングの女王”の名前が付いている。 2013年4月エスエスピー所属となる。\r\n\r\n2010年度　Billboard Japan Music Awards\r\n“Independent of the year”受賞や\r\nグラミー賞受賞作にもヴォーカリストとして\r\n参加するなど、近年多方面に活動の幅を広げている。\r\n\r\n【代表作】\r\nアニメ「Angel Beats!」ED　♪Brave Song\r\nゲーム「君と彼女と彼女の恋」ED　♪星のメリーゴーランド\r\nゲーム「Rewrite」ED　♪渡りの詩/CANOE\r\nゲーム「Rewrite Harvest Festa!」OP　♪Harvest\r\nアニメ「リコーダーとランドセル ド♪」ED主題歌　♪Glitter\r\nアニメ「FORTUNE ARTERIAL～赤い約束～」ED　♪I miss you\r\nアニメ「GUNSLINGER　GIRL－IL TEATRINO－」ED　♪doll",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 81,
+            "name": "アイン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e2/7d/81_crt_nIRs9.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/7d/81_crt_nIRs9.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/7d/81_crt_nIRs9.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e2/7d/81_crt_nIRs9.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3914,
+                    "name": "山寺宏一",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/36/d6/3914_prsn_pX74x.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/d6/3914_prsn_pX74x.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/d6/3914_prsn_pX74x.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/36/d6/3914_prsn_pX74x.jpg"
+                    },
+                    "short_summary": "日本男性聲優，1961年6月17日生\r\n少數由聲優轉型成演員、主持的成功例子，\r\n大學畢業後進入俳協養成所，1986年畢業，之後雖然演過不少角色但始終打不起名堂，直到《亂馬1/2》才以響良牙一角成名。\r\n擁有多變聲音聞名，被稱為「擁有七色聲音的男人」，由於什麼角色都能配，所以業界有個笑話說「配角想不到找誰來配的話就山寺宏一吧！」。\r\n由於這種萬能型特質所以雖然主角役很少，但卻是無數作品的必然配角，尤以洋畫系更明顯。\r\n富山敬離世後，山寺是其中一個接手富山角色的聲優。\r\n另一個以洋畫系為主舞台的聲優，多位荷里活紅星如愛迪．墨菲都是由他所配。\r\n和山口勝平，林原惠，戶田惠子，大塚明夫，富永美奈，田中敦子交好。\r\n因為洋畫配音被名編劇三谷幸喜發掘成為演員。\r\n不過也和他的聲優工作一樣，演的都是大配角以至小配角。\r\n1993年与声优金井美香结婚。2006年离婚。\r\n2012年6月17日在推特发表与声优田中理惠结婚。2018年8月3日，二人在各自的推特上宣布已离婚。\r\n2021年6月14日在推特发表与演员冈田罗宾翔子结婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 8376,
+            "name": "Bebop Crew",
+            "type": 4,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c1/1c/8376_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/1c/8376_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/1c/8376_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c1/1c/8376_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

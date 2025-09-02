@@ -1,0 +1,64 @@
+{
+    "id": 69405,
+    "name": "大木大樹",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/13/f1/69405_crt_5eGLm.jpg?r=1562250103",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/f1/69405_crt_5eGLm.jpg?r=1562250103",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/f1/69405_crt_5eGLm.jpg?r=1562250103",
+        "grid": "https://lain.bgm.tv/pic/crt/g/13/f1/69405_crt_5eGLm.jpg?r=1562250103"
+    },
+    "summary": "千空的朋友，暗恋着杠。\r\n被千空称作体力笨蛋，性格温柔，绝不会攻击他人。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "大木大树"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "おおき たいじゅ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ōki Taiju"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月2日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "189cm"
+        },
+        {
+            "key": "体重",
+            "value": "95kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 2,
+    "stat": {
+        "comments": 13,
+        "collects": 9
+    },
+    "anime_ids": [
+        266794
+    ]
+}

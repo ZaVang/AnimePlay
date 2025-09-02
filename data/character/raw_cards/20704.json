@@ -1,0 +1,46 @@
+{
+    "id": 20704,
+    "name": "バッボ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d4/9e/20704_crt_jss7H.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/9e/20704_crt_jss7H.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/9e/20704_crt_jss7H.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d4/9e/20704_crt_jss7H.jpg"
+    },
+    "summary": "外形像剑玉的拥有独立人格并能利用魔石创造特殊能力的稀罕ARM。由魔法之国卡鲁帝亚创造，8年前被戴安娜偷走。原为Chess兵队领队－魅影所持有，在第1次MÄR Heaven战争结束后被艾伦所封印，之后封印被银太解开，并被银太所持有。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "巴波"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "百宝"
+                },
+                {
+                    "v": "巴布"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "バッボ"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 2
+    },
+    "anime_ids": [
+        9397
+    ]
+}

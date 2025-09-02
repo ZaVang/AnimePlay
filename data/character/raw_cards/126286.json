@@ -1,0 +1,48 @@
+{
+    "id": 126286,
+    "name": "リコ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f8/20/126286_crt_5M9e9.jpg?r=1744469164",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/20/126286_crt_5M9e9.jpg?r=1744469164",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/20/126286_crt_5M9e9.jpg?r=1744469164",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f8/20/126286_crt_5M9e9.jpg?r=1744469164"
+    },
+    "summary": "パルデア地方出身の少女。\r\n祖母から貰った「不思議なペンダント」がきっかけで冒険に旅立つことになる。\r\n\r\n来自帕底亚地区的少女，\r\n因为从祖母那里得到了一枚“神秘吊坠”，而开始了一段冒险之旅。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莉可"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Liko"
+                },
+                {
+                    "k": "泰文名",
+                    "v": "ลิโกะ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 74,
+        "collects": 78
+    },
+    "anime_ids": [
+        411247
+    ]
+}

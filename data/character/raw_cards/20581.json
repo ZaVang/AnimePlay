@@ -1,0 +1,69 @@
+{
+    "id": 20581,
+    "name": "枇々木丈",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/97/6f/20581_crt_oGEoo.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/97/6f/20581_crt_oGEoo.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/97/6f/20581_crt_oGEoo.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/97/6f/20581_crt_oGEoo.jpg"
+    },
+    "summary": "编号G-89\r\n著名大学毕业的优秀公务员，29岁。但却并非干部候补。\r\n太过于优秀，工作都能很迅速解决，以至于上午就把工作全都做完，每天都定时回家。\r\n将如此认真严谨的公务员的一面，与无比喜爱烟草和飞镖的夜生活的另一面严格区分，成熟的男人。\r\nNOTE能力：「爆炎的NOTE」\r\n能自由操纵火焰的能力。\r\nG装甲特征：头顶上经常喷出火焰，偶尔会从身体中喷散出用语冷却的水蒸气。\r\n使用火羽手里剑以及双手连射的火球等等火系的攻击来战斗。\r\n另外还能从手脚喷出火焰，利用反作用力让自身飞行。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "枇枇木丈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Joe Hibiki"
+                },
+                {
+                    "k": "日文名",
+                    "v": "枇々木 丈"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひびき じょう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hibiki Jō"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月29日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "187cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 29,
+    "stat": {
+        "comments": 2,
+        "collects": 9
+    },
+    "anime_ids": [
+        69494,
+        86721
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "id": 35510,
+    "name": "松野おそ松",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/70/8a/35510_crt_iahc4.jpg?r=1491285987",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/8a/35510_crt_iahc4.jpg?r=1491285987",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/8a/35510_crt_iahc4.jpg?r=1491285987",
+        "grid": "https://lain.bgm.tv/pic/crt/g/70/8a/35510_crt_iahc4.jpg?r=1491285987"
+    },
+    "summary": "声 - 加藤みどり（第1作）、井上瑤（第2作）、庄子裕衣（CR、以下兄弟も同様）、櫻井孝宏（第3作）\r\n長男。リーダー格でケンカも一番強く、がめつい六つ子の中でも特にがめつくてセコい。初期話では他の兄弟を出し抜いて一人で行動することも多く、失敗をやらかして他の兄弟からの信用を失う話も多々ある。血液型はA型でピーマンが嫌い。\r\n「三十年後のおそ松くん」では、髪型は変わらないが、鼻からヒゲが生えている。\r\n『大人になったおそ松くん』では、平社員のサラリーマンで独身。1人で両親の面倒を見ているため、髪の毛がバーコードになっている。\r\n名前の由来は「お粗末」から。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "松野小松"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "松野阿松／松野粗松"
+                },
+                {
+                    "k": "日文名",
+                    "v": "松野 おそ松"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まつの おそまつ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Matsuno Osomatsu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月24日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 24,
+    "stat": {
+        "comments": 9,
+        "collects": 21
+    },
+    "anime_ids": [
+        139408
+    ]
+}

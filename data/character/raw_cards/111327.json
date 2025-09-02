@@ -1,0 +1,68 @@
+{
+    "id": 111327,
+    "name": "温水和彦",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b4/ee/111327_crt_4RiER.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/ee/111327_crt_4RiER.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/ee/111327_crt_4RiER.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b4/ee/111327_crt_4RiER.jpg"
+    },
+    "summary": "高校1年生。ライトノベルを愛読しており、新刊のチェックは欠かさない。友達は一人もいないがそれを憂うこともない、達観系のぼっち。趣味は水道水の味の違いを楽しむこと。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "温水和彦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "温水 和彦"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ぬくみず かずひこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nukumizu Kazuhiko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "12月25日"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "体重",
+            "value": "52kg（第5卷）"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://makeine-anime.com/character/"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 25,
+    "stat": {
+        "comments": 152,
+        "collects": 221
+    },
+    "anime_ids": [
+        464376
+    ]
+}

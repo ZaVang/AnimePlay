@@ -1,0 +1,88 @@
+{
+    "id": 14180,
+    "name": "鳴上悠",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/64/40/14180_crt_k6k7l.jpg?r=1608020454",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/64/40/14180_crt_k6k7l.jpg?r=1608020454",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/64/40/14180_crt_k6k7l.jpg?r=1608020454",
+        "grid": "https://lain.bgm.tv/pic/crt/g/64/40/14180_crt_k6k7l.jpg?r=1608020454"
+    },
+    "summary": "由于双亲出国工作，独自一人离开东京来到稻羽市的八十稻羽镇，投靠当地的舅舅家。之后被卷入连续杀人事件，于是与几名同学组成“特别搜查队”，对此事件进行调查。\r\n\r\n注：游戏版中由玩家输入主人公姓名，无默认设定。\r\n\r\n※动画(P4A/P4GA)、游戏(P4U/P4U2/PQ)中名为鳴上悠。漫画中名为瀬多総司。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鸣上悠"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "濑多总司"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Yu Narukami"
+                },
+                {
+                    "k": "日文名",
+                    "v": "鳴上 悠"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なるかみ ゆう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Narukami Yuu"
+                },
+                {
+                    "k": "昵称",
+                    "v": "番长 / 番長"
+                },
+                {
+                    "k": "漫画版姓名",
+                    "v": "瀬多総司"
+                },
+                {
+                    "k": "动画版纯假名",
+                    "v": "なるかみ ゆう"
+                },
+                {
+                    "k": "漫画版纯假名",
+                    "v": "せた そうじ"
+                },
+                {
+                    "k": "动画版罗马字",
+                    "v": "Narukami Yū"
+                },
+                {
+                    "k": "漫画版罗马字",
+                    "v": "Seta Souji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "180cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 33,
+        "collects": 140
+    },
+    "anime_ids": [
+        15489
+    ]
+}

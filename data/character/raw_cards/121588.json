@@ -1,0 +1,48 @@
+{
+    "id": 121588,
+    "name": "美東美織",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/df/ee/121588_crt_zn769.jpg?r=1752965146",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/ee/121588_crt_zn769.jpg?r=1752965146",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/ee/121588_crt_zn769.jpg?r=1752965146",
+        "grid": "https://lain.bgm.tv/pic/crt/g/df/ee/121588_crt_zn769.jpg?r=1752965146"
+    },
+    "summary": "国际商学系一年级生，和咲太选修相同的通识课程。身上不携带智慧型手机的漂亮女大学生，个性天不怕地不怕，自称咲太的朋友候补。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "美东美织"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みとう みおり"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "青春ブタ野郎はナイチンゲールの夢を見ない 插图"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 10
+    },
+    "anime_ids": [
+        467930
+    ]
+}

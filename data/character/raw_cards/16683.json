@@ -1,0 +1,81 @@
+{
+    "id": 16683,
+    "name": "八神はやて",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ea/38/16683_crt_4kJy9.jpg?r=1575438538",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/38/16683_crt_4kJy9.jpg?r=1575438538",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/38/16683_crt_4kJy9.jpg?r=1575438538",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ea/38/16683_crt_4kJy9.jpg?r=1575438538"
+    },
+    "summary": "関西出身で、柔らかな関西弁を話す。\r\n幼い頃から患っている脚の麻痺のために通院治療中。\r\n物心つく前に両親を亡くし、一人で暮らす不幸な身の上だが、 歪むこともなく、優しくまっすぐに育った。\r\nちょっとおっとりしているが明るく優しく、世話好きな性格で、趣味は読書と料理。\r\n料理はとても上手で、車椅子でも調理ができるようキッチンを工夫して、日々料理にいそしんでいる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "八神疾风"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "やがみ はやて"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yagami Hayate"
+                },
+                {
+                    "k": "昵称",
+                    "v": "夜天之主，夜天的袭胸王，夜天布景王，哈雅貼"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "0056年6月4日"
+        },
+        {
+            "key": "身高",
+            "value": "132cm(A's)/156cm(StrikerS)"
+        },
+        {
+            "key": "A's",
+            "value": "9岁"
+        },
+        {
+            "key": "StrikerS",
+            "value": "19岁"
+        },
+        {
+            "key": "ViVid",
+            "value": "23岁"
+        },
+        {
+            "key": "Force",
+            "value": "25岁"
+        },
+        {
+            "key": "学校",
+            "value": "私立聖祥大附属小学校"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 2056,
+    "birth_mon": 6,
+    "birth_day": 4,
+    "stat": {
+        "comments": 23,
+        "collects": 121
+    },
+    "anime_ids": [
+        1263,
+        1264
+    ]
+}

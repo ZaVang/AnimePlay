@@ -1,0 +1,85 @@
+{
+    "id": 10754,
+    "name": "四条貴音",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/04/a9/10754_crt_7vZ5J.jpg?r=1507527205",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/a9/10754_crt_7vZ5J.jpg?r=1507527205",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/a9/10754_crt_7vZ5J.jpg?r=1507527205",
+        "grid": "https://lain.bgm.tv/pic/crt/g/04/a9/10754_crt_7vZ5J.jpg?r=1507527205"
+    },
+    "summary": "　　偶像大师SP新增的人物，Wondering Star的对手角色，同为961旗下『Project Fairly』的一员，Vocal系的偶像。气质高贵，性格温和，坦诚，温柔有礼却也有些古怪，兴趣是天文观测和舞台剧欣赏。她是有着『银色王女』的称号的超人气新人偶像，在Fan和记者看来她相当的冷艳孤傲。其实这都是黑井社长一手包装的结果，贵音其实并没有那么坚强，却要顶着巨大的压力扮演一个高傲的女王一般的偶像角色。因此会在月下痛哭，被765的制作人碰到。贵音是很有主见和正义感的人，对于961社长灌输的关于765的那一套，她并没有偏听偏信，而是用自己的所见所闻去判断，不过尽管发现黑井社长满嘴胡言行事卑劣，毕竟也对她有恩，所以直到最后在IU输给765才离开961。曾经搭救过被无良粉丝纠缠的雪步。贵音的身世是个谜，背后的四条家实力雄厚，她自己从小没了父母，被四条家的爷爷抚养长大。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "四条贵音"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Takane Shijou"
+                },
+                {
+                    "k": "日文名",
+                    "v": "四条 貴音"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しじょう たかね"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shijou Takane"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月21日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "169cm"
+        },
+        {
+            "key": "体重",
+            "value": "49kg"
+        },
+        {
+            "key": "BWH",
+            "value": "90/62/92"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://baike.baidu.com/view/2410776.htm"
+        },
+        {
+            "key": "年龄",
+            "value": "17→18岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 21,
+    "stat": {
+        "comments": 53,
+        "collects": 192
+    },
+    "anime_ids": [
+        11577,
+        309807
+    ]
+}

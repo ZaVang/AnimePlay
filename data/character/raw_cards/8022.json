@@ -1,0 +1,66 @@
+{
+    "id": 8022,
+    "name": "リコ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/05/86/8022_crt_Vj8Vu.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/86/8022_crt_Vj8Vu.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/86/8022_crt_Vj8Vu.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/05/86/8022_crt_Vj8Vu.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黎可"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "黎各"
+                },
+                {
+                    "v": "黎戈"
+                },
+                {
+                    "k": "\\",
+                    "v": "Рико"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "莉可"
+                },
+                {
+                    "k": "日文名",
+                    "v": "リコ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Rico"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 9,
+        "collects": 44
+    },
+    "anime_ids": [
+        3304
+    ]
+}

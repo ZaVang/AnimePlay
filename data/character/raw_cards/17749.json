@@ -1,0 +1,61 @@
+{
+    "id": 17749,
+    "name": "則巻アラレ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/01/35/17749_crt_WW9Wd.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/35/17749_crt_WW9Wd.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/35/17749_crt_WW9Wd.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/01/35/17749_crt_WW9Wd.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "则卷阿拉蕾"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "阿拉蕾"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "のりまき アラレ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Norimaki Arale"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1980年5月3日（1980年トビウオ3日）"
+        },
+        {
+            "key": "动画版生日",
+            "value": "1967年とびうお31日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1980,
+    "birth_mon": 5,
+    "birth_day": 3,
+    "stat": {
+        "comments": 3,
+        "collects": 20
+    },
+    "anime_ids": [
+        4025,
+        47243
+    ]
+}

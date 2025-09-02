@@ -1,0 +1,61 @@
+{
+    "id": 312,
+    "name": "田中総市郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/95/0a/312_VzScI.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/0a/312_VzScI.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/0a/312_VzScI.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/95/0a/312_VzScI.jpg"
+    },
+    "summary": "模型跟cosplay服裝的天才製作者，在講到這類話題時滔滔不絕的御宅族。跟大野是天生一對，是現視研聲優訪談中最理想的交往對象（最惡劣是高坂）。可以光以目測判斷女性的身材，曾因做其他女社員的衣服而與大野有些不愉快。在第六集中畢業。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "田中总市郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "田中総市郎"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tanaka Souichirou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1982年12月22日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 3,
+    "birth_year": 1982,
+    "birth_mon": 12,
+    "birth_day": 22,
+    "stat": {
+        "comments": 5,
+        "collects": 8
+    },
+    "anime_ids": [
+        1219,
+        928
+    ]
+}

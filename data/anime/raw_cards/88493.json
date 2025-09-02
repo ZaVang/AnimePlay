@@ -1,0 +1,317 @@
+{
+    "id": 88493,
+    "type": 2,
+    "name": "一週間フレンズ。",
+    "name_cn": "一周的朋友。",
+    "summary": "「但是，我…关于朋友的记忆，一周就会消失呢—」一直都是一个人的同班同学藤宫香织所述的事实。主人公长谷祐树，即使是这样也想和香织成为朋友。一周的记忆开始又结束，两个人不断成为朋友。一次又一次—。对于你，我永远都是你的朋友。然后，总有一天能告诉你，我是你的朋友。 ",
+    "nsfw": false,
+    "locked": false,
+    "date": "2014-04-06",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/98/a3/88493_tKAht.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/98/a3/88493_tKAht.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/98/a3/88493_tKAht.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/98/a3/88493_tKAht.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/98/a3/88493_tKAht.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "一周的朋友。"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Isshuukan Friends.",
+                    "k": null
+                },
+                {
+                    "v": "One Week Friends",
+                    "k": null
+                },
+                {
+                    "v": "一周的朋友",
+                    "k": null
+                },
+                {
+                    "v": "いっしゅうかんフレンズ。",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2014年4月6日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://oneweekfriends.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX"
+        },
+        {
+            "key": "播放结束",
+            "value": "2014年6月22日"
+        },
+        {
+            "key": "导演",
+            "value": "岩崎太郎"
+        },
+        {
+            "key": "Copyright",
+            "value": "©葉月抹茶／スクウェアエニックス・「一週間フレンズ。」製作委員会"
+        },
+        {
+            "key": "人物设定",
+            "value": "山崎絵里"
+        },
+        {
+            "key": "原作",
+            "value": "葉月抹茶"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "三上政高"
+        },
+        {
+            "key": "音乐监督",
+            "value": "小林健樹"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 24,
+    "rating": {
+        "rank": 1934,
+        "total": 5589,
+        "count": {
+            "one": 7,
+            "two": 8,
+            "three": 12,
+            "four": 40,
+            "five": 201,
+            "six": 940,
+            "seven": 2410,
+            "eight": 1613,
+            "nine": 234,
+            "ten": 124
+        },
+        "score": 7.2
+    },
+    "collection": {
+        "wish": 2352,
+        "collect": 8505,
+        "doing": 677,
+        "on_hold": 795,
+        "dropped": 424
+    },
+    "tags": [
+        {
+            "name": "治愈",
+            "count": 1481
+        },
+        {
+            "name": "2014年4月",
+            "count": 1037
+        },
+        {
+            "name": "漫画改",
+            "count": 945
+        },
+        {
+            "name": "恋爱",
+            "count": 935
+        },
+        {
+            "name": "校园",
+            "count": 845
+        },
+        {
+            "name": "TV",
+            "count": 659
+        },
+        {
+            "name": "一周的朋友",
+            "count": 648
+        },
+        {
+            "name": "BrainsBase",
+            "count": 627
+        },
+        {
+            "name": "日常",
+            "count": 561
+        },
+        {
+            "name": "雨宮天",
+            "count": 428
+        },
+        {
+            "name": "2014",
+            "count": 369
+        },
+        {
+            "name": "致郁",
+            "count": 247
+        },
+        {
+            "name": "漫改",
+            "count": 204
+        },
+        {
+            "name": "虐男主",
+            "count": 118
+        },
+        {
+            "name": "細谷佳正",
+            "count": 78
+        },
+        {
+            "name": "岩崎太郎",
+            "count": 73
+        },
+        {
+            "name": "青春",
+            "count": 46
+        },
+        {
+            "name": "日本",
+            "count": 24
+        },
+        {
+            "name": "2014年",
+            "count": 24
+        },
+        {
+            "name": "催泪",
+            "count": 23
+        },
+        {
+            "name": "菅正太郎",
+            "count": 23
+        },
+        {
+            "name": "纯爱",
+            "count": 22
+        },
+        {
+            "name": "雨宫天",
+            "count": 18
+        },
+        {
+            "name": "失忆",
+            "count": 12
+        },
+        {
+            "name": "Brains･Base",
+            "count": 11
+        },
+        {
+            "name": "小清新",
+            "count": 10
+        },
+        {
+            "name": "治愈系",
+            "count": 9
+        },
+        {
+            "name": "季番",
+            "count": 9
+        },
+        {
+            "name": "Brain",
+            "count": 9
+        },
+        {
+            "name": "中原麻衣",
+            "count": 8
+        }
+    ],
+    "meta_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        23103,
+        23104
+    ],
+    "main_characters": [
+        {
+            "id": 23103,
+            "name": "長谷祐樹",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3e/b3/23103_crt_sU5p5.jpg?r=1396926847",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/b3/23103_crt_sU5p5.jpg?r=1396926847",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/b3/23103_crt_sU5p5.jpg?r=1396926847",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3e/b3/23103_crt_sU5p5.jpg?r=1396926847"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13744,
+                    "name": "山谷祥生",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d3/3e/13744_prsn_1XrSS.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/3e/13744_prsn_1XrSS.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/3e/13744_prsn_1XrSS.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d3/3e/13744_prsn_1XrSS.jpg"
+                    },
+                    "short_summary": "日本男性声优。隶属于WITH LINE，前SPACE CRAFT成员。出身于宫城县。\r\n以声优为梦想，便从大学中途退学。于东京动画学院声优演员科毕业。2013年在电视动画《闪乱神乐》出道。2014年在《一周的朋友》中首次饰演主角。\r\n憧憬的声优是福山润。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 23104,
+            "name": "藤宮香織",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1e/90/23104_crt_meZBn.jpg?r=1396926816",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/90/23104_crt_meZBn.jpg?r=1396926816",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/90/23104_crt_meZBn.jpg?r=1396926816",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1e/90/23104_crt_meZBn.jpg?r=1396926816"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 12568,
+                    "name": "雨宮天",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a2/62/12568_prsn_jLLz4.jpg?r=1693248727"
+                    },
+                    "short_summary": "雨宫天（あまみや そら）是日本的女性声优、歌手，1993年8月28日出生于日本东京都。\r\n\r\n[b]经历[/b]\r\n1993年8月28日出生于日本东京都；因憧憬声优[url=https://bgm.tv/person/4244]泽城美雪[/url]而向往成为一名声优。\r\n在2011年举办的第2回MusicRay'n超级声优试镜中合格，2012年声优活动开始，2014年在TV动画《[url=https://bgm.tv/subject/88493]一周的朋友。[/url]》担任[url=https://bgm.tv/character/23104]藤宫香织[/url]CV,为初主役角色。\r\n2014年12月21日，与同事务所的[url=https://bgm.tv/person/13565]麻仓桃[/url]、[url=https://bgm.tv/person/13581]夏川椎菜[/url]组成声优组合“[url=https://bgm.tv/person/18492]TrySail[/url]”，并于2015年·正式开始活动。\r\n2015年第9回声优奖中获得新人女声优奖。\r\n2015年10月2日，发行自己的第一部写真集《ソライロ～青と旅する～》。\r\n2020年4月17日，开通绘画日记企划期间限定Twitter账号(现已转为永久账号)",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

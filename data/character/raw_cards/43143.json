@@ -1,0 +1,43 @@
+{
+    "id": 43143,
+    "name": "スオウ・ラケルス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a8/60/43143_crt_6PF2z.jpg?r=1467807503",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a8/60/43143_crt_6PF2z.jpg?r=1467807503",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a8/60/43143_crt_6PF2z.jpg?r=1467807503",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a8/60/43143_crt_6PF2z.jpg?r=1467807503"
+    },
+    "summary": "謎の逃亡者。その出生の秘密から、生まれ変わるための旅をする中で、ツルギに出会う。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "苏芳"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.sunrise-inc.co.jp/battlespirits5/character/06.html"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 2
+    },
+    "anime_ids": [
+        45337
+    ]
+}

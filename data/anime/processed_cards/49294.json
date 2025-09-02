@@ -1,0 +1,317 @@
+{
+    "id": 49294,
+    "name": "Love Live!",
+    "image_path": "data/images/anime/49294.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "位于东京都千代田区的传统高校“音乃木阪学院”，因为入读的学生人数骤减，所以正面临着废校的危机。其中九位少女为了保护她们喜爱的学校而决定成为偶像，因为只要她们成为偶像，学校的名气便会増加，而入读学生的人数也会随之上升。就这样，九位个性鲜明的少女开始朝着她们的偶像之路而努力迈进了！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "音乐"
+    ],
+    "date": "2013-01-06",
+    "rating_rank": 1862,
+    "rating_score": 7.2,
+    "rating_total": 9166,
+    "main_character_ids": [
+        14958,
+        14959,
+        14960,
+        14961,
+        14962,
+        14963,
+        14964,
+        14965,
+        14966
+    ],
+    "main_characters": [
+        {
+            "id": 14958,
+            "name": "高坂穂乃果",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a7/b7/14958_crt_NYCEb.jpg?r=1459814911",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/b7/14958_crt_NYCEb.jpg?r=1459814911",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/b7/14958_crt_NYCEb.jpg?r=1459814911",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a7/b7/14958_crt_NYCEb.jpg?r=1459814911"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7095,
+                    "name": "新田恵海",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c8/59/7095_prsn_1oJ33.jpg?r=1422254819",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/59/7095_prsn_1oJ33.jpg?r=1422254819",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/59/7095_prsn_1oJ33.jpg?r=1422254819",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c8/59/7095_prsn_1oJ33.jpg?r=1422254819"
+                    },
+                    "short_summary": "新田 恵海（にった えみ、1985年12月10日 - ）は、日本の女性声優、歌手。\r\n長野県長野市出身。血液型はB型。ディファレンス（事務所）、ブシロードミュージック（レコード会社）に所属。\r\n愛称はえみつん（レーベル名の「emitsun」も、自身の愛称から採られている）。μ'sのメンバーでもある。公式ファンクラブは、「EmiRing◎」。ファンの呼称は「恵海人（えみんちゅ）」。\r\n\r\n長野県篠ノ井高等学校卒業後、洗足学園音楽大学に入学、声楽コース卒業。高校時代に友人と音楽ユニットを結成し、音楽活動を行っていた。大学時代は学生ミュージカルに夢中になり、ミュージカル仲間と始めたボランティア活動では童謡や唱歌、歌謡曲なども歌っていた。\r\n2009年3月、株式会社S 新人アーティストオーディションにてグランプリを受賞した。グランプリを受賞した瞬間に、「ああ、私やっぱり一生歌を歌っていこう」と決意。2010年4月、株式会社Sに入所した。ゲーム・OVA『T.P.さくら 〜タイムパラディンさくら〜』の白河ことり役で声優デビュー。元々は歌手活動を目的にオーディションに参加したが、佐藤ひろ美からの誘いがきっかけで声優活動を開始した。\r\n2012年1月、PSPゲーム『リトル・ウィッチ パルフェ 黒猫魔法店物語』のオープニングテーマ「HEARTFUL WISH」にて歌手デビュー。同年、μ'sの一員としてAnimelo Summer Liveに初出演、2015年にはソロでも出演した。\r\n2014年9月、「笑顔と笑顔で始まるよ!」でソロシンガーとしてメジャーデビュー。\r\n2015年2月、声帯結節が発見されたため、短期間の休養を発表した。前年から喉の違和感を感じていた。同年、第9回声優アワードにて、μ'sの一員として歌唱賞を受賞。\r\n2015年7月、『アニソンCLUB!-i』で共演している大橋彩香と共に声優ユニット「つん♡へご」を結成。\r\n2015年10月16日、自身の公式HPを開設。同時に、公式ファンクラブ「EmiRing◎」を発足させた。「EmiRing◎」という名称には、「えみつんの〝わ〟」及び「えみりんご」という意味が込められている。\r\n2015年10月21日、1stアルバム『EMUSIC』をリリースした。タイトルの「EMUSIC」（エミュージック）は「恵海の音楽」、「良い音楽」、「笑み（笑顔）の音楽」を意味する言葉であり、新田恵海の音楽の総称を表す言葉でもある。\r\n2015年11月8日、自身初のワンマンライブ「EMUSIC〜始まりの場所〜」をTOKYO DOME CITY HALLにて開催した。\r\n2015年12月31日、μ'sの一員として第66回NHK紅白歌合戦に初出場した。\r\n2017年8月9日、8月末をもって株式会社Sを退所、翌9月1日付けで株式会社ディファレンスへ移籍。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 14959,
+            "name": "絢瀬絵里",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c1/f3/14959_crt_jFiNF.jpg?r=1467877324",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/f3/14959_crt_jFiNF.jpg?r=1467877324",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/f3/14959_crt_jFiNF.jpg?r=1467877324",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c1/f3/14959_crt_jFiNF.jpg?r=1467877324"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4792,
+                    "name": "南條愛乃",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/af/26/4792_prsn_b7B1A.jpg?r=1740112337",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/26/4792_prsn_b7B1A.jpg?r=1740112337",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/26/4792_prsn_b7B1A.jpg?r=1740112337",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/af/26/4792_prsn_b7B1A.jpg?r=1740112337"
+                    },
+                    "short_summary": "日本女性声优、歌手。音乐组合fripSide的第二代主唱，《LoveLive!》中组合μ’s成员之一。所属事务所为VOICE KIT，唱片公司为NBC环球娱乐。\r\n代代木动画学院、RAMS Professional Education毕业。\r\n2007年10月1日退出RAMS，11月1日加入Dwango Artist Production。\r\n2006年开始进行声优活动。2009年，顶替nao成为fripSide主唱进行歌手活动；同年以fripSide身份为动画《科学超电磁炮》献唱OP《only my railgun》，并在Oricon周榜排行第三位。2010年加入共同企划《Love Live! 》，出演绚濑绘里一角，并以声优偶像团体“μ's”的名义开始活动。\r\n2012年发售首张个人迷你专辑《カタルモア》，并以个人名义歌手出道。2013年，以fripSide身份发售的单曲《sister's noise》获得Oricon周单曲销售排行第一位，并发行首张个人名义单曲《君が笑む夕暮れ》。\r\n2015年，在第9回声优奖以μ's的成员获得声优歌唱奖。2019年，在第13回声优奖中获得影响力赏。\r\n\r\n配音经历\r\n2010年，加入《Love Live!》，出演绚濑绘里一角，以声优偶像团体“μ's”的名义开始活动；同年，为动画《侦探歌剧：少女福尔摩斯》系列角色明智小衣配音。\r\n2011年4月1日，转入同属MAGES.旗下的声优事务所Amuleto。\r\n2012年，在游戏与动画作品《机器人笔记》中为女主角濑乃宫秋穗配音。\r\n2013年，为动画《战姬绝唱Symphogear》系列角色月读调配音。\r\n2015年3月2日，自原所属的事务所Amuleto移籍至office EN-JIN；在第9回声优奖中获得歌唱奖（μ's名义）；4月开始，因膝内障恶化，原定出场的各种现场活动（包括fripSide及μ's等的活动）部分取消；4月29日，个人官方粉丝俱乐部“ごきんじょるの 友の会”（Gokinjolno 友之会）成立。\r\n2016年的红白歌会，原本可以以μ’s组合的形式登上舞台，但因为膝伤的原因十分遗憾缺席。\r\n2017年，为动画《时钟机关之星》主人公见浦直人配音。\r\n2019年1月1日，移籍至由fripSide所属的THREE NINE ENTERTAINMENT事务所的董事长安部芳敏新设立的N3 ENTERTAINMENT事务所；3月9日，在第13回声优奖中获得影响力赏。\r\n\r\n音乐经历\r\n2009年8月7日，成为乐队fripSide的第二代主唱，并为动画《科学超电磁炮》献唱OP《only my railgun》，同名单曲CD于2009年11月4日发售。\r\n2010年8月28日，以fripSide的身份登上“Animelo Summer Live 2010 -EVOLUTION- ”的舞台。\r\n2011年8月27日，以fripSide的身份登上“Animelo Summer Live 2011 -rainbow-”的舞台。\r\n2012年8月26日，以μ's的身份登上“Animelo Summer Live 2012 -infinity∞-”的舞台；11月10日，以fripSide身份出席“新加坡ANIME FESTIVAL ASIA 2012”演出。2012年12月12日，发售首张个人迷你专辑《カタルモア》，并以个人名义歌手出道。\r\n2013年5月14日，以fripSide身份发售的单曲《sister's noise》获得了日本Billboard周单曲销售排行第1位；8月23-24日，分别以μ's、fripSide的身份登上“Animelo Summer Live 2013 -FLAG NINE-”的舞台；11月23日，以fripSide和个人的身份参加“ANIMAX MUSIX 2013”的演出；11月27日，以个人名义发售首张个人单曲《君が笑む夕暮れ》。\r\n2014年1月18日，以fripSide身份前往台湾出席“ANIMAX MUSIX TAIWAN 2013”的演出；8月29-31日，分别以个人、fripSide、μ's的身份登上“Animelo Summer Live 2014 -ONENESS-”的舞台。11月22日，以个人身份参加ANIMAX MUSIX 2014 YOKOHAMA的演出。\r\n2015年2月28日，以fripside的身份参加ANIMAX MUSIX 2015 OSAKA的演出。2015年7月12日，举办了“南条爱乃 Birthday Live Event 2015”生日演唱会；7月22日，首张个人专辑《东京1/3650》发售；9月4日和9月13日，在大阪和东京举办了名为“Yoshino Nanjo 1st LIVE TOKYO 1/3650 ミンナとつながる365日×???”的首次个人演唱会。\r\n2016年3月31日-4月1日，参加了μ's的“μ's Final LoveLive!〜μ’sic Forever♪♪♪♪♪♪♪♪♪〜”。由于膝伤的原因，缺席了部分曲目的演出。2016年7月12日，举办了“南条爱乃 Birthday Acoustic Live 2016”生日演唱会。2016年7月13日，第二张个人专辑《Nのハコ》发售。\r\n2016年9月4、10、11、19、24日，分别在爱知、福冈、大阪、神奈川、宫城举办了“南条爱乃 LIVE TOUR 2016 \"N\"”二专巡回演唱会。这是南条的首次个人巡回演唱会。2016年10月29日-2017年3月5日，以fripSide身份参加在千叶、北海道、神奈川、长野、大阪、广岛、岩手、宫城、福冈、爱知、冈山、福岛、新潟、石川14大城市举办的四专巡回演唱会。\r\n在2017年日本NHK电视台举办的“动画百年·最佳动画歌曲BEST100”投票的前100位中，个人solo歌曲《ゼロイチキセキ》排名第29位，fripSide（二期）歌曲《only my railgun》排名第6位。2017年3月18日，参加了fripSide在SSA举办的“fripSide LIVE TOUR 2016-2017 FINAL in Saitama Super Arena -Run for the 15th Anniversary-supported by animelo mix”演唱会。这是fripSide有史以来最大的专场演唱会，有着纪念fripSide成立15周年的特殊意义。5月17日，个人第6张第7张solo单曲《光のはじまり》和《一切は物语》发售。2017年7月2日，举办了“南条爱乃 Birthday Acoustic Live 2017”生日演唱会。2017年7月12日，第三张个人专辑《サントロワ∴》发售。2017年9月16日-11月5日，将在静冈、大阪、福冈、宫城、爱知、东京（俩场）举办三专巡回演唱会。2017年11月-2018年1月，参加fripSide的巡回演唱会。2017年12月25日，举办了“南条爱乃 5th Anniversary Live -catalmoa-”演唱会。这是南条个人歌手出道五周年的纪念演唱会。\r\n2018年4月21日，以fripSide身份参加了“ANIMAX MUSIX 2018 Guangzhou”演唱会。这是南条首次来到中国大陆演出。2018年7月8日，举办了“南条爱乃 Birthday Acoustic Live 2018”生日演唱会。2018年7月18日，精选专辑《THE MEMORIES APARTMENT -Anime-》、《THE MEMORIES APARTMENT -Original-》发售。2018年9月22日-10月14日，举办了“南条爱乃 LIVE TOUR 2018”精选专巡回演唱会。2018年12月24日-2019年3月9日，参加了“fripSide Concert Tour 2018-2019 -infinite synthesis 4-”五专巡回演唱会。\r\n2019年5月4日-6月30日，举办了“南条爱乃 Acoustic Live Tour Vol.1 17/47〜わたしから会いにいきます！〜”不插电巡回演唱会；7月7日，举办了“南条爱乃 Birthday Acoustic Live 2019”生日演唱会；7月21日，以fripSide名义参加了在中国举办的“Bilibili Macro Link Star Phase 2019”演唱会；7月24日，第四张个人专辑《LIVE A LIFE》发售；11月4日-2020年2月23日，参加了“fripSide Phase 2: 10th Anniversary Tour 2019-2020 -infinite synthesis 5-”六专巡回演唱会。\r\n\r\n个人生活\r\n家里有个弟弟，个人喜好摄影、绘画、午睡以及逛咖啡店。喜欢狗和猫，家里养了两只猫，名字叫做むぎ和ちび。喜欢的食物是南瓜和面条，学生时期最得意的科目是美术，最弱的科目是体育。\r\n非常喜欢《最终幻想XIV》。因此被官方邀请去做游戏的广播《凝聚来自艾欧泽亚的爱》，并且在接下来将亲自承担《最终幻想XIV 苍天之伊修加德》中，拉拉菲尔族新角色可露儿的配音。\r\n制作了粉丝向节目《南条一间》和《入门道场》。\r\n患有花粉症和哮喘，因而在Live上补水的频率较高。患有先天性的膝盖骨半脱臼，加上长时间练舞最终导致了半月板受伤。\r\n自认为“出演的角色中，和自己性格最像的角色”是《GATE 奇幻自卫队》中的葵梨纱，曾在看角色表时就吐槽说“这不就是我么？”\r\n最有名的爱称“ナンジョルノ”（nanjolno）是由事务所前辈‘春夏ひとみ’命名，而“お嬢”这个昵称是由浅沼晋太郎命名，被在LoveLive!里共演的饭田里穂、楠田亜衣奈、以及在fripSide共同活动八木沼悟志叫做なんちゃん（南酱）.\r\n与久保由利香、楠田亚衣奈、饭田里穂感情非常好，曾为饭田里穂的《まだ言えないけど、○○○》作词、饭田里穂也为《Dear..》 所作词。相熟声优还有茅野爱衣、三森铃子、pile、德井青空、原田瞳、樱井孝宏、丰永利行等。\r\n非常想去参观巴黎圣母院，从第一眼在旅游节目上看到开始，就认为自己总有一天一定要去看看。三专《サントロワ∴》标题中之所以用法语的“三”trois（トロワ），也是因为巴黎圣母院坐落于法国。\r\n曾在工作后的晚上，本来打算看完粉丝来信后就休息，结果一看就是四个小时，一直看到了凌晨。\r\n待人谦厚，做事稳重，控场能力强，什么时候都很认真和很会读空气，很受后辈和工作人员信赖。关心后辈，没有架子，不喜欢被叫做前辈。从LoveLive!初期开始，就特别照顾没有演艺经验的楠田亚衣奈和久保由利香等人。在战姬绝唱G的演唱会上，也一直留意第一次参加大型演唱会的茅野爱衣。\r\n造型非常多变。喜欢使用各种假发，在平时喜欢戴眼镜和各种颜色的毛线帽。\r\n为了声优的梦想，孤身一人来到东京打拼。起初生活十分艰难，曾因为买不起便当而在便利店里哭出来。当时做过很多的兼职。因为不知道什么时候会接到声优的工作，不能顺利轮班，所以到处换过很多的打工活。\r\n但当时从未考虑过放弃声优的工作另谋他路，因为“别说放弃了，我想不到其它我能做的事，而且我觉得，自己大概连放弃的勇气都没有”。\r\nfripSide的制作人八木沼悟志在挑选二期主唱时，从500余人的候选中选择了歌声非常有透明感的南条，认为南条的声音是“天使的声音”，而且非常适合他的音乐。\r\n\r\n[url=https://www.youtube.com/channel/UCFJORT2GGeNsKKLCf3BqSEQ]YouTube频道[/url]",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 14960,
+            "name": "南ことり",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/05/0a/14960_crt_am5VS.jpg?r=1459814962",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/0a/14960_crt_am5VS.jpg?r=1459814962",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/0a/14960_crt_am5VS.jpg?r=1459814962",
+                "grid": "https://lain.bgm.tv/pic/crt/g/05/0a/14960_crt_am5VS.jpg?r=1459814962"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5136,
+                    "name": "内田彩",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e7/49/5136_prsn_c7tBB.jpg?r=1631019739",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/49/5136_prsn_c7tBB.jpg?r=1631019739",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/49/5136_prsn_c7tBB.jpg?r=1631019739",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e7/49/5136_prsn_c7tBB.jpg?r=1631019739"
+                    },
+                    "short_summary": "内田 彩（うちだ あや、1986年7月23日 - ）は、日本の女性声優、歌手。\r\n群馬県太田市出身。血液型はO型。アクロス エンタテインメント（事務所）、ZERO-A及び日本コロムビア（レコード会社）に所属。\r\n愛称はうっちー。μ'sのメンバーでもある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 14961,
+            "name": "園田海未",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/47/60/14961_crt_B5FN5.jpg?r=1458160045",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/60/14961_crt_B5FN5.jpg?r=1458160045",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/60/14961_crt_B5FN5.jpg?r=1458160045",
+                "grid": "https://lain.bgm.tv/pic/crt/g/47/60/14961_crt_B5FN5.jpg?r=1458160045"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6707,
+                    "name": "三森すずこ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ed/4c/6707_prsn_n2FZD.jpg?r=1687241857",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/4c/6707_prsn_n2FZD.jpg?r=1687241857",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/4c/6707_prsn_n2FZD.jpg?r=1687241857",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ed/4c/6707_prsn_n2FZD.jpg?r=1687241857"
+                    },
+                    "short_summary": "三森铃子（三森 すずこ／みもり すずこ / Mimori Suzuko），本名黑川铃子（黒川 鈴子／くろかわ すずこ / Kurokawa Suzuko），是日本女演员、声优、歌手，目前隶属于“响”；日本企业家黑川文雄是其堂兄。\r\n\r\n日本东京都出身。成为声优之前，以“黑川铃子”本名在音乐剧和舞台剧活动。有次在舞台表演时，被武士道社长木谷先生问到:“要不要试试当声优？”，此后便转向声优界活动。\r\n曾经以少女偶像团体Cutie Pai的团员“スージー”的身份在2009年7月至10月间活动。\r\n因为参加《侦探歌剧 少女福尔摩斯》的配音工作，与另外三位也担任主角的声优德井青空、佐佐木未来、橘田泉共组声优团体“Milky Holmes”。\r\n2012年12月31日宣布以个人名义歌手出道。\r\n2018年1月13日，《东京体育》报道称三森与日本职业摔角运动员冈田和睦交往，此消息获得本人确认。2019年4月12日，二人公布婚讯。\r\n\r\n在《侦探歌剧 少女福尔摩斯》一起共事的新谷良子，是三森主演的东京迪士尼海洋音乐剧《Mickey's Dream Company（米奇梦想剧团）》的剧迷，因此向三森索求签名。\r\n黑川铃子时期，时任武士道副社长的企业家黑川文雄以堂兄身份大力推荐。\r\n《SEIGURA》杂志上，以“有名插图画家——Okuzushi. M. Romi——オクズシ・ロミ”名义开设专栏，公布读者的来信和自绘插图。“Okuzushi. M. Romi”，其实就是本身艺名罗马拼音“Mimori Suzuko”倒过来念。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 14962,
+            "name": "星空凛",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/54/e5/14962_crt_0SVAE.jpg?r=1464871311",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/54/e5/14962_crt_0SVAE.jpg?r=1464871311",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/54/e5/14962_crt_0SVAE.jpg?r=1464871311",
+                "grid": "https://lain.bgm.tv/pic/crt/g/54/e5/14962_crt_0SVAE.jpg?r=1464871311"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9387,
+                    "name": "飯田里穂",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/23/13/9387_prsn_UUeUz.jpg?r=1488980677",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/23/13/9387_prsn_UUeUz.jpg?r=1488980677",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/23/13/9387_prsn_UUeUz.jpg?r=1488980677",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/23/13/9387_prsn_UUeUz.jpg?r=1488980677"
+                    },
+                    "short_summary": "飯田 里穂（いいだ りほ、1991年10月26日 - ）は、日本の声優、女優、歌手、タレント。埼玉県富士見市出身。放映新社（事務所）、NBCユニバーサル・エンターテイメントジャパン（レコード会社）に所属。\r\n愛称はりっぴー。μ'sのメンバーでもある。公式ファンクラブは「Rippi-ohana」。\r\n\r\n小学校2年生の時に子役として活動開始。2000年、テレビドラマ『百年の物語』にて女優デビュー。2002年度から4年間、『天才てれびくん』等に出演。2010年6月、映画『星砂の島のちいさな天使 〜マーメイドスマイル〜』で主演を果たす。\r\n2010年よりスタートしたプロジェクト「ラブライブ! School idol project」に星空凛役で参加し、同プロジェクトの声優ユニットμ'sとしても活動を開始。2013年、テレビアニメ『ラブライブ!』の星空凛役で声優デビュー。\r\n2014年3月28日、公式ファンクラブ「Rippi-ohana」を設立。同年10月、自身初の誕生日イベント「りっぴーBirthday Party」をホテル椿山荘東京にて開催。\r\n2015年、第九回声優アワードにて、μ'sの一員として歌唱賞を受賞。12月31日、μ'sの一員として第66回NHK紅白歌合戦に初出場した。2016年3月31日から4月1日まで東京ドームで開催されたμ’s最後のワンマンライブとなる「μ's Final LoveLive！〜μ'sic Forever♪♪♪♪♪♪♪♪♪」にμ'sの一員として出演。\r\nソロ歌手としては、2007年から2010年頃までインディーズレーベルのpurple hills recordおよびグッズトレイン/DREAMSTARにてシングル2作品、アルバム2作品、配信限定で1作品を発表した。2015年7月29日、徳間ジャパンコミュニケーションズよりアルバム『rippi-rippi』でメジャーデビュー。同年11月15日には新宿ReNYにて、ソロ歌手としての初めてのワンマンライブを開催。2016年1月13日、メジャーデビュー以降での初シングル『KISS! KISS! KISS!』を発表する。同年4月9日から16日まで自身のソロ歌手としての初のワンマンライブツアー「tour of KISS³」を開催。2018年2月3日、NBCユニバーサル・エンターテイメントジャパンへのレコード会社移籍を発表。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 14963,
+            "name": "西木野真姫",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/53/9e/14963_crt_O3VWX.jpg?r=1465996341",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/9e/14963_crt_O3VWX.jpg?r=1465996341",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/9e/14963_crt_O3VWX.jpg?r=1465996341",
+                "grid": "https://lain.bgm.tv/pic/crt/g/53/9e/14963_crt_O3VWX.jpg?r=1465996341"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9384,
+                    "name": "Pile",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/75/97/9384_prsn_8VzU3.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/97/9384_prsn_8VzU3.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/97/9384_prsn_8VzU3.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/75/97/9384_prsn_8VzU3.jpg"
+                    },
+                    "short_summary": "Pile（パイル、1988年5月2日 - ）は、日本の女性歌手、声優。\r\n東京都出身。SPACEY MUSIC ENTERTAINMENT（事務所）、Colourful Records（レコードレーベル）に所属。品川女子学院卒業。身長158cm、血液型はO型。\r\n愛称は主にPile様、ぱいちゃん。μ's、Please&Secret、4to6のメンバーでもある。本名は堀 絵梨子（ほり えりこ）。俳優業は本名で活動しており、オフィシャルブログの末尾には「erico.」と書かれている。\r\n\r\n2006年、全国アジアンドールズオーディションで、700名の応募総数の中から選ばれた。2007年、「Your is All...」で歌手デビュー。\r\n2010年、『ラブライブ!』の西木野真姫役で声優デビュー。\r\n2013年、『ラブライブ!』で共演する東條希役の楠田亜衣奈とPlease & Secretを結成。\r\n2014年、同じく『ラブライブ!』で共演する星空凛役の飯田里穂と4to6を結成。また、1stシングル「伝説のFLARE」でソロシンガーとしてメジャーデビュー。\r\n2015年、第九回声優アワードにて、μ'sの一員として歌唱賞を受賞。\r\n2015年12月31日、μ'sの一員として第66回NHK紅白歌合戦に初出場した。\r\n\r\n日本人の父と韓国人の母を持つハーフであり、日本語と韓国語の他、英語にも精通している。芸名は「暖かく包み込むような誰からも愛されるアーティストに」という意味を込め、タオル生地として使われるパイルより付けられた。\r\n自身を帆船に例え、ファンは自身を進ませてくれる追い風である、ということから、自身のファンを「追い風さん」と呼んでおり、3rdアルバム『Tailwind(s)』の由来にもなっている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 14964,
+            "name": "東條希",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7a/bd/14964_crt_IbsXs.jpg?r=1468191282",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/bd/14964_crt_IbsXs.jpg?r=1468191282",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/bd/14964_crt_IbsXs.jpg?r=1468191282",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7a/bd/14964_crt_IbsXs.jpg?r=1468191282"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9386,
+                    "name": "楠田亜衣奈",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9d/b5/9386_prsn_RRkfV.jpg?r=1558631842",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9d/b5/9386_prsn_RRkfV.jpg?r=1558631842",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9d/b5/9386_prsn_RRkfV.jpg?r=1558631842",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9d/b5/9386_prsn_RRkfV.jpg?r=1558631842"
+                    },
+                    "short_summary": "楠田 亜衣奈（くすだ あいな、1989年2月1日 - ）は、日本の女性声優、歌手、舞台女優。\r\n千葉県出身。血液型はA型。ジャストプロ所属。バップ（レコード会社）に所属。\r\n愛称はくっすん。μ'sのメンバーでもある。\r\n\r\n中学の頃、神谷明の講演を見てその凄さに圧倒され、自分には声優は無理だと感じたとのことだが、高校進学後、竹内順子の舞台などを観に行くにつれて、無理でも頑張ってみようと改めて声優を目指すようになった。\r\n声優としてのデビュー作は『ラブライブ!』である。本人曰く、「事務所に入って間もなくで、入って1週間くらいで受けたオーディション」とのこと。また、作品（あるいは、演じた役である東條希）を通しての自身の変化として、「お芝居に対する姿勢だったり、役への思いだったりとか、変わってないことなんかないくらい変わりましたね。ひとつひとつがわたしにとって財産です」と述べている。また、「私にとって、ラブライブ！と東條希は、やっぱり、どうしても特別な存在で、あたりまえの存在。今まで、ずっと隣にいて。辛いこと、楽しいこと、悔しいこと全部、いろんな経験を一緒にしてきました」と述べている他、「『ラブライブ!』、及びμ'sとは、『愛と奇跡の物語』」とも述べている。\r\n声優をもともと目指していた一方で、歌手は、μ'sの一員になる当初は目指していた訳ではなかったのことだが、『ラブライブ!』が、歌うことの楽しさを知ったこと、及び、歌手活動を始めるきっかけになったと述べている。\r\n自身が目指す音楽性やライブについて、「曲は前向きな方が好きなんです。やっぱり音楽に励まされることって、私も多くて。そういう曲（聴いていてポジティブになれる曲）が歌えたらなって」「歌だけの表現というより、体も使って皆さんに（思いを）伝えたいなって」と述べている。また、自身の歌手活動における目標として、「とにかく楽しくマイペースに、頑張りすぎずにそのときの私を表現できるようなアーティストになれたらなって。それで自分の感じたこと、見たことをファンの皆さんと共有できたら幸せなのかなって思います」と述べている。\r\n影響を受けた人物としてYUIを、好きな人物としてE-girlsを、それぞれ挙げている。理由としては、YUIは、「まっすぐな想いを伝える歌がかっこいい」と感じることから、E-girlsは、「ダンスは激しいけど女の子らしくてかわいい」からと述べている。\r\nインタビューにおいて、ダンスが得意であること、及び、好きな音楽として、ダンス・ミュージックを挙げている発言をたびたび行っている。\r\nCDのリリースイベントでは、無料で観覧できるミニライブの後、CDを一枚買うと、特典として、ピコピコハンマーで「喝」を入れて「応援」してもらえるという『くっすんサポーター応援会』いわゆる「喝入れイベント」が恒例となっている。\r\n\r\n自身の性格について、「人見知り」であり、「根は暗い」と述べている。\r\n先述のように、ダンスが得意である。5歳の頃からジャズ、ヒップホップ、タップ、クラシックバレエなどダンスを一通り習っている。\r\n剣道初段。サッカー観戦が好きであるという。\r\n甲殻類アレルギーでカニやエビが食べられない。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 14965,
+            "name": "小泉花陽",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/93/52/14965_crt_MMJX2.jpg?r=1464871375",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/52/14965_crt_MMJX2.jpg?r=1464871375",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/52/14965_crt_MMJX2.jpg?r=1464871375",
+                "grid": "https://lain.bgm.tv/pic/crt/g/93/52/14965_crt_MMJX2.jpg?r=1464871375"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9270,
+                    "name": "久保ユリカ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/71/b4/9270_prsn_t0I7L.jpg?r=1731499108",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/b4/9270_prsn_t0I7L.jpg?r=1731499108",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/b4/9270_prsn_t0I7L.jpg?r=1731499108",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/71/b4/9270_prsn_t0I7L.jpg?r=1731499108"
+                    },
+                    "short_summary": "日本的女性声优、模特儿、歌手、艺人，2015年1月进入Clare Voice。2017年12月31日离开CLARE VOICE。2019年10月1日加入Stay Luck。奈良县出身。\r\n旧艺名包含“楢原ゆりか”、“久保由利香”（亦为本名），2014年9月27日发布的Instagram（https://www.instagram.com/p/tczvgbMPa7）正式以“久保百合花”作为官方中文译名。（我的中文名字是『久保百合花』。在不久的未來，應該會讓所有看到這篇文章的人，看到我以『久保百合花』的身份發佈令人驚豔的發表;) 然後…若也能叫我的綽號SHIKAKO『子鹿』的話，我也會很高興。謝謝大家一直在遙遠的一端支持我！很希望能盡快與大家見面。）",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 14966,
+            "name": "矢澤にこ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f2/04/14966_crt_WN3rY.jpg?r=1465996431",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/04/14966_crt_WN3rY.jpg?r=1465996431",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/04/14966_crt_WN3rY.jpg?r=1465996431",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f2/04/14966_crt_WN3rY.jpg?r=1465996431"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7278,
+                    "name": "徳井青空",
+                    "type": 1,
+                    "career": [
+                        "mangaka",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3b/1b/7278_prsn_77Rrt.jpg?r=1510051339",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/1b/7278_prsn_77Rrt.jpg?r=1510051339",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/1b/7278_prsn_77Rrt.jpg?r=1510051339",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3b/1b/7278_prsn_77Rrt.jpg?r=1510051339"
+                    },
+                    "short_summary": "徳井 青空（とくい そら、1989年12月26日 - ）は、日本の女性声優、漫画家、絵本作家、DJ。\r\n千葉県南房総市出身。身長160cm、血液型はO型。エイベックス・ピクチャーズ所属。\r\n愛称はそらまる。μ'sおよびミルキィホームズのメンバーでもある。2019年4月1日に設立のオフィシャルファンクラブ名はぐーもる荘。\r\n\r\nドワンゴクリエイティブスクール出身。羽田千尋と共に『鷲崎健のアニメロ新人オーディション』三期生として出演。\r\n2009年、『ヴァイス・サヴァイヴR』姫宮 役で声優デビュー。同年12月25日から翌年10月8日までミルキィホームズ 探偵学院放送室にレギュラー出演。\r\n2011年、メインイベント『みらくる青空ナイト〜青空、襲来〜』を開催。以後、断続的に開催されている。\r\n『オタポケ』誌上にて4コマ漫画『魔法少女★自宅ちゃん』を連載、漫画家デビューを果たす。\r\n2012年4月、出身地である南房総市の観光大使に任命される。\r\n2015年、第9回声優アワードにて、μ'sの一員として歌唱賞を受賞。\r\n12月31日、μ'sの一員として第66回NHK紅白歌合戦に初出場した。\r\n2017年2月、作画を手掛ける漫画『まけるな!!あくのぐんだん!』のアニメ化が発表され、2017年4月より6月までTOKYO MX他にて、5分枠の短編アニメとして放送された。\r\n2018年3月、響との契約満了に伴い、4月1日付けでエイベックス・ピクチャーズの所属になる。\r\n第4回アニラジアワードにおいて、『徳井青空のまぁるくなぁれ!』が「聴いていると色々勉強になるラジオ」を受賞。\r\n12月7日、『パンダの推しごと!』で絵本作家デビューを果たす。\r\n2019年4月1日、オフィシャルファンクラブ『ぐーもる荘』を設立。翌年、公式ファンクラブアプリ『ぐーもる荘』が配信。\r\n2020年3月21日、公式YouTubeサイト『そらまるのチャンネル』を開設。4月14日、「bilibili」にもチャンネルを開設。5月4日、実写短編映画『時々は、眠れない夜に』で映画監督デビュー。\r\n\r\n自他共に認めるオタクで、『新世紀エヴァンゲリオン』が大好きで、コスプレもこなす。自身がメインを務めるイベント『みらくる青空ナイト』では、毎回TV版のサブタイトルを捩ったサブタイトルをイベント名にしている。また、中川翔子を同趣味の先輩として尊敬しており、中川とはプライベートでも仲良しである。\r\n好きな食べ物はチャーハン、ペプシネックス、白米、サーモン、肉等。嫌いな食べ物はゆで卵、トマトジュースなど。\r\n両親は空手家で、弟がいる。\r\n好きな芸人は「シャカ」。\r\n幼少期、月刊コロコロコミックの愛読者で、中でもポケットモンスターにハマり、初恋の相手はリザードンである。その後、週刊少年ジャンプも愛読するようになり、初めて好きになった人間のキャラクターはONE PIECEに登場するサンジ。小学生の頃、等身大サンジをフェルトでつくるのにトライしたこともある。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

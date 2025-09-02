@@ -1,0 +1,60 @@
+{
+    "id": 1196,
+    "name": "山口如月",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9a/de/1196_QXCoe.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/de/1196_QXCoe.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/de/1196_QXCoe.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9a/de/1196_QXCoe.jpg"
+    },
+    "summary": "GA1年级女学生。官方介绍时通称“如月（キサラギ）”，作品中常用汉字表示。水渊叫她“小如（如ちゃん）”。\r\n    根据教授分析，给人的色彩印象为淡色系。现实生活中白色画材的消耗量很大。\r\n    虽然平凡又普通，但做事情都非常努力。特征是戴着很大的眼镜。有时候会表现出天然呆的一面。\r\n    喜欢猫，对可爱的东西没有抵抗力。擅长折纸鹤，不喜欢标本而不敢碰触。\r\n    物品的消耗量很大，而常出入画材店。喝碳酸饮料会醉。\r\n    和水渊是青梅竹马。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "山口如月"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "山口 如月"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やまぐち きさらぎ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yamaguchi Kisaragi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "如月"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 9
+    },
+    "anime_ids": [
+        1729
+    ]
+}

@@ -1,0 +1,504 @@
+{
+    "id": 61118,
+    "type": 2,
+    "name": "団地ともお",
+    "name_cn": "住宅区友夫",
+    "summary": "居住在枝岛小区29号楼的小学四年级生木下友夫，平时与做兼职的母亲和正在读初中的姐姐一起生活，他最喜欢的爸爸则独自在外地工作。\r\n家庭情况中流，在班里的人气也一般般，运动和学习也不太理想。尽管如此，友夫还是健康快乐地过着每一天。\r\n作品主要描述友夫在与个性丰富的同学以及与众不同的小区居民相处的同时，还用自己的方法掀起各种欢闹事件的日常生活。\r\n以住宅区为舞台的有笑有泪的家庭动画上演！",
+    "nsfw": false,
+    "locked": false,
+    "date": "2013-04-06",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/a5/3a/61118_L7LUT.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/a5/3a/61118_L7LUT.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/a5/3a/61118_L7LUT.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/a5/3a/61118_L7LUT.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/a5/3a/61118_L7LUT.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "住宅区友夫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "团地友夫",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "78"
+        },
+        {
+            "key": "放送开始",
+            "value": "2013年4月6日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www9.nhk.or.jp/anime/tomoo/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "NHK"
+        },
+        {
+            "key": "播放结束",
+            "value": "2015年2月7日"
+        },
+        {
+            "key": "原作",
+            "value": "小田扉"
+        }
+    ],
+    "volumes": 0,
+    "eps": 78,
+    "total_episodes": 79,
+    "rating": {
+        "rank": 1430,
+        "total": 65,
+        "count": {
+            "one": 0,
+            "two": 0,
+            "three": 1,
+            "four": 1,
+            "five": 7,
+            "six": 9,
+            "seven": 15,
+            "eight": 16,
+            "nine": 4,
+            "ten": 12
+        },
+        "score": 7.5
+    },
+    "collection": {
+        "wish": 67,
+        "collect": 61,
+        "doing": 35,
+        "on_hold": 36,
+        "dropped": 71
+    },
+    "tags": [
+        {
+            "name": "TV",
+            "count": 23
+        },
+        {
+            "name": "2013年4月",
+            "count": 20
+        },
+        {
+            "name": "漫画改",
+            "count": 17
+        },
+        {
+            "name": "团地友夫",
+            "count": 14
+        },
+        {
+            "name": "NHK",
+            "count": 14
+        },
+        {
+            "name": "2013",
+            "count": 10
+        },
+        {
+            "name": "渡边步",
+            "count": 10
+        },
+        {
+            "name": "治愈",
+            "count": 9
+        },
+        {
+            "name": "住宅區友夫",
+            "count": 7
+        },
+        {
+            "name": "三瓶由布子",
+            "count": 3
+        },
+        {
+            "name": "山田隆司",
+            "count": 3
+        },
+        {
+            "name": "土0930",
+            "count": 3
+        },
+        {
+            "name": "日本",
+            "count": 3
+        },
+        {
+            "name": "渡辺歩",
+            "count": 2
+        },
+        {
+            "name": "小学館ミュージック&デジタル_エンタテイメント",
+            "count": 2
+        },
+        {
+            "name": "神作",
+            "count": 2
+        },
+        {
+            "name": "日常",
+            "count": 2
+        },
+        {
+            "name": "SMDE",
+            "count": 2
+        },
+        {
+            "name": "イシグロキョウヘイ",
+            "count": 2
+        },
+        {
+            "name": "長谷川智樹",
+            "count": 1
+        },
+        {
+            "name": "田尻健一",
+            "count": 1
+        },
+        {
+            "name": "エンタテイメント",
+            "count": 1
+        },
+        {
+            "name": "デジタル",
+            "count": 1
+        },
+        {
+            "name": "小学館ミュージック&デジタルエンタテイメント",
+            "count": 1
+        },
+        {
+            "name": "小学馆音乐及数码娱乐",
+            "count": 1
+        },
+        {
+            "name": "小学館ミュージック",
+            "count": 1
+        },
+        {
+            "name": "7.3",
+            "count": 1
+        },
+        {
+            "name": "大长篇",
+            "count": 1
+        },
+        {
+            "name": "利根健太朗",
+            "count": 1
+        },
+        {
+            "name": "小日置知子",
+            "count": 1
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        19583,
+        19584,
+        19585,
+        19586,
+        19587,
+        19588,
+        19589,
+        19590,
+        19591
+    ],
+    "main_characters": [
+        {
+            "id": 19583,
+            "name": "ともお（木下ともお）",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/57/4a/19583_crt_FUxR5.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/57/4a/19583_crt_FUxR5.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/57/4a/19583_crt_FUxR5.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/57/4a/19583_crt_FUxR5.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4667,
+                    "name": "三瓶由布子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e1/88/4667_prsn_4UMcj.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/88/4667_prsn_4UMcj.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/88/4667_prsn_4UMcj.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e1/88/4667_prsn_4UMcj.jpg"
+                    },
+                    "short_summary": "经常出演少年角色。\r\n还是初中生时，初次担任配音的工作，角色是‘Da!Da!Da!’的主角西远寺彷徨。和为另外一个主角光月未梦配音的名冢佳织相识。巧合的是，二人在交响诗篇中再一次同时担任主角。\r\n虽然和‘交响诗篇’的合作者名冢佳织打交道时态度很友好，对同样是合作者的小清水亚美，则是经常说“恶心!”、“滚!”等等显得两人关系不佳的话。实际上这是三瓶和从“剧団若草”时代就是好友的小清水的关系好的表现。在2007年1月13日，作为嘉宾出演アニスパ时，三瓶出演新郎，小清水出演新娘，举行了婚宴。这时名冢佳织发来了“和我只是玩玩的吗？只是为了我的身体吗？”的贺（？）电。\r\n和小清水亚美都是2人姐妹的姐姐，并且双亲和姊妹的干支完全相同，经常被人们作为谈论的话题。\r\n《童话枪手小红帽》中，因为为铃风草太配音的熊井统子生病需要休养，从2006年12月23日放送部分开始顶替她出演。\r\n在2007年5月，从剧团若草退団。经过一段自由身时期，从2007年11月1日开始，加入了Production baobab。好友小清水亚美也从11月15日开始加入了baobab。\r\n2008年3月大学毕业。\r\n2011年9月与小清水亚美、折笠爱共同从Production baobab事务所辞退，2011年10月加入AXL ONE。\r\n2013年2月28日生日当天宣布结婚，丈夫为圈外人。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19584,
+            "name": "母さん（木下哲子）",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7c/0f/19584_crt_fH5qL.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/0f/19584_crt_fH5qL.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/0f/19584_crt_fH5qL.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7c/0f/19584_crt_fH5qL.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4092,
+                    "name": "坂本千夏",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7e/8d/4092_prsn_666bW.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/8d/4092_prsn_666bW.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/8d/4092_prsn_666bW.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7e/8d/4092_prsn_666bW.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19585,
+            "name": "父さん（木下鉄雄）",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bb/aa/19585_crt_25N5b.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/aa/19585_crt_25N5b.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/aa/19585_crt_25N5b.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bb/aa/19585_crt_25N5b.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4786,
+                    "name": "利根健太朗",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1d/3b/4786_seiyu_anidb.jpg?r=1495990760",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/3b/4786_seiyu_anidb.jpg?r=1495990760",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/3b/4786_seiyu_anidb.jpg?r=1495990760",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1d/3b/4786_seiyu_anidb.jpg?r=1495990760"
+                    },
+                    "short_summary": "利根 健太朗（とね けんたろう、1982年5月29日 - ）は、日本の男性声優。アイムエンタープライズ所属。広島県出身。血液型はA型。東京外国語大学卒業。愛称はトネケン、もじゃ。スリーサイズはB95 W93 H97。\r\n\r\n1982年5月29日、広島県生まれ。小学校3年生から5年生まで、父親の仕事の関係でアメリカに住んでいた。日本に帰国後、中学校と高校では放送部に所属。\r\n東京外国語大学に進学し、タガログ語を専攻。東京外国語大学では放送部がなかったため、演劇サークルに入る。その後、大学2年生のときに日本ナレーション演技研究所に通い始め、入所4年目（研修科2年目）でアイムエンタープライズへの所属が決まる。なお、大学の方は7年かけて卒業している。\r\n2006年、茨城県近代美術館の『真夜中の美術館』展示用コンテンツの仕事でデビュー。\r\n\r\nアフロヘアーと間違えられるほどの天然パーマがトレードマークで、愛称の1つ「もじゃ」もこの髪型に由来する。\r\n小学生のときにアメリカに住んでいたこともあり、英会話が得意。英検準1級の資格を持つ。\r\n音響機器が好きで、趣味に「効果音作り」、特技に「舞台音響」を挙げている。\r\n自身の性格については「根に人を楽しませたい、喜んでもらいたいという気持ちがある」と発言している。\r\n俳優の鈴木亮平とは大学の同期で、在学中は同じ演劇サークルに所属していた。また、藤田咲・丹沢晃之・成家義哉・中村公子・大西望は日本ナレーション演技研究所の研修科時代の同期。\r\nアイムエンタープライズの同期に日笠陽子・折戸マリ・早見沙織がいる。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19586,
+            "name": "姉さゃん（木下君子）",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/eb/c3/19586_crt_gNzbG.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/c3/19586_crt_gNzbG.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/c3/19586_crt_gNzbG.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/eb/c3/19586_crt_gNzbG.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4703,
+                    "name": "牧野由依",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f9/fb/4703_prsn_kwwgK.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/fb/4703_prsn_kwwgK.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/fb/4703_prsn_kwwgK.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f9/fb/4703_prsn_kwwgK.jpg"
+                    },
+                    "short_summary": "个人简介\r\n三岁开始艺能活动，最初师从叶加濑太郎学习小提琴，四岁左右改学钢琴，师从斉藤恒芳，加藤麗子，歳森今日子开始学习钢琴。\r\n喜欢古典音乐。小学二年级的时候停止练习了一段时间，而重新开始的契机是小学五年级的时候，在放学后听到了从音乐室传出了钢琴演奏的卡农的旋律。她很喜欢这首曲子，于是向演奏者要了乐谱开始弹奏，却发现因为很久不弹钢琴而弹不好。感到很后悔的她于是重新开始练习钢琴。\r\n1994年，8岁的牧野由依被岩井俊二发掘，在其导演的电影『情书』中演奏钢琴曲目。2001年，15岁时为电影『关于莉莉周的一切』录制钢琴伴奏，2003年，17岁时担任电影『花与爱丽丝』配乐部分的主钢琴师。\r\n2004年毕业于东京音乐大学附属高中钢琴科。\r\n2008年3月19日毕业于东京音乐大学钢琴学系。\r\n\r\n演艺经历\r\n2005年在CLAMP的改编动画『翼·年代记』中为小樱配音而声优出道。\r\n在2005年春天与菅野洋子合作，演唱动画『创圣的大天使』片尾曲《オムナ マグニ》。8月随着剧场版『翼·年代记 鸟笼国的公主』演唱的片尾歌《アムリタ》及其处女作单曲的发售而正式开始歌手的活动。\r\n2006年4月，为『水星领航员』第二季演唱主题曲《ユーフォリア》，7月，在动画『欢迎来到NHK』中配音出演中原岬，并演唱了片尾曲《もどかしい世界の上で》。12月6日，发行首张个人专辑《天球の音楽》。\r\n2007年4月，配音出演动画『地球防卫少年』中的往往爱子。7月，获选为中日文化交流事业活动的日本代表，受日本驻华大使馆邀请，作为贵宾与树海组合出席北京「J-Meeting Beijing 2007」。10月，在动画『素描本』中为鸟饲叶月配音，并演唱了片尾曲《スケッチブックを持ったまま》。11月21日，为『翼·年代记 东京默示录』演唱片头曲《synchronicity》。\r\n2008年1月，为电视动画『水星领航员』第三季演唱片头曲《スピラーレ》。3月23日，在东京府中森林艺术剧场举行首次个人音乐会「牧野由依 Premium Concert 2008」。3月26日，发行第二张专辑《マキノユイ。》。\r\n2009年1月，在『穿越宇宙的少女』中配音出演河合穗野香。1月18日，在东京吉祥寺STAR PINE'S CAFE举行「Yui Makino 23rd Birthday Party LIVE!!」音乐会。2月1日，由Sun Music出版移籍至新事务所BGB Company，正式开通个人博客，每天吸引大约40,000-70,000位读者浏览。5月4日，在东京TOKYO FM HALL举行So主题系列音乐会第一弹「So Fresh」音乐会。7月，受邀出席在巴黎举办的「Japan Expo 2009」作为参加日本流行文化展的第一位日本配音演员进行现场表演。8月5日，在东京品川教会グローリア・チャペル举行So主题系列音乐会第二弹「So Cool」音乐会。8月下旬，在上海音乐学院参与录制《音乐物语in Japan》节目。9月，受邀与富野由悠季一起作为贵宾出席在九月Jacob K. Javits会展中心举办的纽约动漫节。10月7日，发行为『素描本』演唱的另一首片尾曲《たんぽぽ水车》（单人版）。12月，在东京九段会馆举行So主题系列音乐会第三弹「So Bright」音乐会。12月26日，受邀出席新加坡举办的日本文化交流活动「EOY 2009:An Extraordinary Journey」。\r\n2010年1月6日，受邀出席韩国「2010JMIC新年行事」。3月3日，发行单曲《ふわふわ♪》，并由岩井俊二执导音乐录像。4月，为『Angel Beats!』中的游佐配音。6月，在隶属日本外务省的日本国际交流基金会的支持下，在罗马和巴黎分别举行欧洲巡回演出。8月28日，在东京日本青年馆举行So主题系列音乐会第四弹「So Sparkle」音乐会。11月10日，发行出道5周年纪念单曲《碧の香り》，作为电视动画『噬魂师』重播版的片尾曲。12月15日至12月16日，在东京品川教会グローリア・チャペル举办首个连续两天的个人演唱会「So Merry」「So Peace」。\r\n2011年4月，发行为资生堂的CM\"ELIXIR WHITE\"演唱的宣传曲《お愿いジュンブライト》。在电视动画『C 金钱掌控』中配音出演生田羽奈日，为『我们仍未知道那天所看见的花的名字。』中的亚纪配音。5月3日至5月4日，在东京日本桥三井会馆举行「So Happy」音乐会。7月6日，发行第三张专辑《ホログラフィー》。7月30日，在大阪心齐桥CLUB QUATTRO举行「Holography 大阪」音乐会。8月4日，在东京SHIBUYA-AX举行「Holography 东京」音乐会。9月30日，与Ceui一起在香港举行良音汇演香港演唱会。10月2日，受邀出席第五届广州穗港澳ACG动漫游戏展。10月5日在广州南方剧院举行良音汇演广州演唱会。10月29日，在东京国立代代木第二竞技场体育馆出演「东日本大震灾复兴祭2011」。11月17日至11月20日，作为钢琴家出席岩井俊二在上海，北京举办的电影音乐演奏会。11月26日，作为嘉宾出席日中两国政府合办的「Japan Anime Festival in Shanghai」日本动漫节in上海，并举行个人演唱会。11月28日，在『偶像大师灰姑娘』中配音出演佐久间真由。\r\n2012年1月1日，在横滨红砖仓库举行「New Year Concert 2012」音乐会。3月3日至4月8日，在东京、大阪、名古屋、福冈和札幌举行「ゆらり弾き语りの旅」弹唱巡演音乐会。5月1日，由BGB Company移籍至Amuse。7月4日至7月5日，在横滨红砖仓库举行「So Girlish」「So Boyish」音乐会。12月1日至2日，出席在莫斯科举办“J-FEST 2012”现代日本文化节，作为歌手举行特别演唱会。\r\n2013年1月，与田野麻美合作，为日语译制版的台湾电视剧『华丽的挑战』配音，出演了女主人公宫囍。1月19日，在涉谷duo MUSIC EXCHANGE举行「Yui Makino Birthday Live ～19860119～」音乐会。7月，在电视动画『斯特拉女子学院高等科C3部』中配音出演大和由良。并参与演唱片尾曲《弾けろ！しーきゅーぶ！》。12月，受邀出席「2013 Macau ACT Expo」澳门动漫博览会。\r\n2014年5月31日，在东京品川教会グローリア・チャペル举行「Re: あのぉ～、新曲はいつですか？」音乐会。7月，为电视动画『法兰雀丝卡』中的同名主人公配音。8月20日，发行了自己演唱的主题曲《嗫きは“Crescendo”》。10月5日，在涉谷duo MUSIC EXCHANGE举行「Yui Makino LIVE “Welcome to the Yuchhiyland～牧野的夢中空間～” 东京」音乐会。10月18日，在札幌cube garden举行「Yui Makino LIVE “Welcome to the Yuchhiyland～牧野的夢中空間～” 札幌」音乐会。\r\n2015年2月，发布出道10周年单曲《88秒フライト》。2月7日，受邀出席香港「C3 in HongKong 2015」日本动玩博览。3月，受日本驻越南大使馆邀请，出席在胡志明市举行的「Fes TOUCH Spring 2015 in HCMC」日越文化交流会。5月，受邀出席「Otafest in Canada」。6月，与作曲家かの香织再次合作，发行第13张单曲《きみの选ぶみち》。7月，受邀和藤田咲同台在第十届广州萤火虫动漫游戏嘉年华演出。同月下旬，受邀出席第十七届香港动漫电玩节「ACG Heartbeat 2015」青年音乐祭，并举行个人特别Live「Yui Makino Live Event 2015 in Hong Kong」。8月22日，在东京赤坂blitz举行十周年纪念演唱会「Yui Makino 10th Anniversary LIVE ～So Happy！！～」。10月7日，发行第四张个人专辑《タビノオト》。11月13日，担任东京麻布消防署的一日消防警员，进行火灾预防检查及防火宣传。11月23日，在东京恵比寿 ザ・ガーデンホール举行「Yui Makino Concert＊around the note＊」音乐会。\r\n2016年1月，配音出演『石膏boys』中的花屋敷米拉。3月27日，在东京恵比寿 ザ・ガーデンホール举行「Yui Makino 30 Selection」音乐会。4月，在电视动画『百武装战记』中配音出演艾莉卡·坎德尔。4月30日，受邀出席第十一届广州萤火虫动漫游戏嘉年华。6月，受邀出席台湾剑湖山世界痛漫祭。7月2日，受邀出席fun成都游戏动漫节，举行特别粉丝见面会。7月9日，受邀出席「C3 CharaExpo 2016 in Singapore」。8月，受邀出席「Otakon 2016 in USA」。8月10日，在东京恵比寿 ザ・ガーデンホール举行「Yui Makino Concert ～twilight melody～」音乐会。10月，担任动画电影『CYBORG009 CALL OF JUSTICE』中的主角“国联军加蒂安兹的卡特莉娜·卡奈提中尉”的配音演员。\r\n2017年1月22日，在东京恵比寿 ザ・ガーデンホール举行「Yui Makino Live - Thanx Beginning♪ -」音乐会。5月10日，公开为电视动画『重启咲良田』演唱的片头歌曲《Reset》。7月，在电视动画『恋爱禁止的世界』中担任女主角之一真田莉莉奈的配音。在7月16日AiiA 2.5 Theater Tokyo举行的「Yui Makino Live Reset＆Happiness」演唱会第2天，因积劳成疾，导致声带出血，被医生要求进行长时间治疗，此后休止了个人名义的艺人活动约半年。\r\n2018年1月22日，宣布复归。于2018年3月1日发售迷你专辑《WILL》，另外专辑发售当天还将同步发售个人写真集《ZINE》。4月，被任命为北海道上富良野町「かみふらのPR大使」。6月9日至6月10日，在东京AiiA 2.5 Theater Tokyo举行「ポッカサッポロ 富良野ラベンダーティー Presents YUI MAKINO LIVE CONCERT 『WILL you play with me?』」演唱会。\r\n2019年3月，发行首张双碟个人精选集《UP!!!》。6月1日至6月2日，在东京举行「ポッカサッポロ 富良野ラベンダーティー Presents YUI MAKINO LIVE CONCERT 『What's UP!!!!』」演唱会。\r\n\r\n个人生活\r\n爱好是游泳和料理。喜欢的颜色是粉色系、暖色系。\r\n喜欢吃的食物是素面（日本）和XO酱（中国）。讨厌吃的食物是纳豆。曾说过：“纳豆的话……但是那也不是绝对不会去碰的东西。我还是不怎么挑食的哦，特别讨厌的东西应该是没有的。”\r\n官方昵称是“ゆっち”，是在2008年的雅虎fan club“由依和愉快的朋友们”上，和粉丝们一起定的。\r\n最喜欢的动画是『交响情人梦』。\r\n对于本人来说重要的东西有自己家里的钢琴、水晶玉、从祖父那儿得到的1万日元纸币。\r\n在烦恼如何将钢琴家，声优，歌手的活动都继续下去的时候，岩井俊二导演给了她移籍Amuse事务所的建议。\r\n小时候的牧野由依最初只觉得岩井俊二监督是个给买饮料的温柔的大哥哥。\r\n牧野由依的签名有艺术家版和声优版两种。「ま」这个字在艺术家版中会像高音谱号。声优版本则会在签名下方画一个微笑的圆脸。圆脸有时候会随着角色调整。\r\n东京的三得利音乐厅于1986年开业，和由依的生日相同，曾说过“想有一天在这里举行音乐会”。\r\n在出道作『翼·年代记』的声优选拔中，被原作者CLAMP评价为“初恋的声音”。\r\n牧野由依的父亲牧野信博从事于音乐行业，曾先后和“KRYZLER & KOMPANY”乐队一起工作、作为伴奏乐队参加过堀川丽美的巡回演出。牧野由依的表妹石田绘里奈则是株式会社文化放送（及其前身茨城放送）的播音员。\r\n牧野由依曾提到初恋是中学三年级时一个同班男生。\r\n2020年6月12日，宣布与歌手三浦祐太朗（山口百惠、三浦友和长子）结婚。\r\n2021年10月13日，在个人SNS上公布已怀孕，预产期是2022年3月。\r\n2022年3月21日，母女平安，长女诞生。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19587,
+            "name": "よしもと（吉本雅人）",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/38/85/19587_crt_MMWNY.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/85/19587_crt_MMWNY.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/85/19587_crt_MMWNY.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/38/85/19587_crt_MMWNY.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5636,
+                    "name": "田村睦心",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/39/84/5636_prsn_p449k.jpg?r=1665351736"
+                    },
+                    "short_summary": "日本东京都出身的女性声优，现时隶属 I'm Enterprise。\r\n\r\n日本解说表演研究所毕业。2007年，在电视动画《悠久之翼》中以声优身份出道。2008年，在《Battle Spirits 少年突破马神》中首次担任主演。\r\n嗓音沙哑，多出演动画男主角的少年时期形象的角色。\r\n2014年8月，因为喉咙问题切除了息肉而暂时休息。9月1日在博客上记载康复，9月8日在广播节目中说明情况。\r\n\r\n官方说法上爱好是书法和长笛。从小学1年级开始练习书法，擅长草书和行书。实际上私下里喜欢一个人望着墙壁发呆。\r\n喜欢吃东西和睡觉。喜欢的食物是意大利面、梅干一类的下酒菜。也喜欢喝酒。\r\n喜欢布娃娃。\r\n家中有一个比自己小1岁的弟弟。\r\n昵称是“田村少年”，但是这个名字和自己担任少年役居多没有直接关系。\r\n与共同出演过《Battle Spirits 少年突破马神》、《爱杀宝贝》的赤崎千夏有深交。\r\n把bl游戏藏在书柜的最下层。“其实我根本就没有藏，只是放在那里而已。”",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19588,
+            "name": "よしのぶ（吉田由伸）",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/48/1f/19588_crt_jYq5M.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/1f/19588_crt_jYq5M.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/1f/19588_crt_jYq5M.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/48/1f/19588_crt_jYq5M.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4870,
+                    "name": "武田華",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3f/94/4870_prsn_BjzBw.jpg?r=1599167575",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/94/4870_prsn_BjzBw.jpg?r=1599167575",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/94/4870_prsn_BjzBw.jpg?r=1599167575",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3f/94/4870_prsn_BjzBw.jpg?r=1599167575"
+                    },
+                    "short_summary": "武田 華（たけだ はな、8月23日 - ）は、日本の女性声優。ケンユウオフィス所属。神奈川県大磯町出身。血液型はA型。身長は160cm。慶應義塾大学文学部卒業。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19589,
+            "name": "みつお（菊川みつお）",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e9/be/19589_crt_W5wiA.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/be/19589_crt_W5wiA.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/be/19589_crt_W5wiA.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e9/be/19589_crt_W5wiA.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4394,
+                    "name": "生天目仁美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/17/3e/4394_prsn_bQBtf.jpg?r=1506620584",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/3e/4394_prsn_bQBtf.jpg?r=1506620584",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/3e/4394_prsn_bQBtf.jpg?r=1506620584",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/17/3e/4394_prsn_bQBtf.jpg?r=1506620584"
+                    },
+                    "short_summary": "生天目 仁美（なばため ひとみ、1976年8月4日 - ）は、日本の声優、女優、歌手。\r\n神奈川県横浜市出身。出生地は新潟県佐渡市。血液型はB型、身長163cm。専門学校東京コンセルヴァトアール尚美（現在の尚美ミュージックカレッジ専門学校）卒業。現在は賢プロダクションに所属。また劇団東京乾電池所属時代に女優としてテレビドラマや舞台などに出演している。\r\n\r\n専門学校時代より、さまざまなオーディションに参加。ラジオ『SOMETHING DREAMS マルチメディアカウントダウン』内で、声優志望者によって結成された「ドリカンクラブ」の一員として、田村ゆかり・堀江由衣らと短期間活動していた。卒業後は、柄本明の芝居に感銘し、劇団東京乾電池に入団し、舞台俳優として活動する。退団後、賢プロダクション直属の声優養成所であるスクールデュオに入所する。\r\n2003年、養成所時代に、ゲーム『サムライスピリッツ零』のキャラクター“リムルル”役と、テレビアニメ『真月譚 月姫』のヒロイン“アルクェイド”役と、テレビアニメ『まぶらほ』のヒロイン“宮間夕菜”役に抜擢されて以降、声優としてブレイクしていった。\r\n2011年、演劇ユニット「なば缶」を立ち上げ、2014年までに3公演をプロデュースし、自らも出演した。現在は休止中。\r\n同じ事務所所属の伊藤静との声優ユニット「生天目仁美と伊藤静（ひとしずく）」としても活動した。\r\n\r\n好きな言葉は「冬は必ず春となる」。家族構成は両親と弟の4人。\r\n読売ジャイアンツのファンである。中学生時代はソフトボール部に所属し、高校生時代はバレーボール部に所属していた。生天目の母親は、時々まんまるまる姫というペンネームを使って自分の娘の番組に娘への苦情を投稿したり、娘の番組に乱入しては良く喋り良くボケる所から、今ではファンからも「まる姫」と呼ばれている。\r\n2014年8月4日、ブログにて入籍を報告した。\r\n\r\n主になばと呼ばれている。ほかに鷲崎健からはばたやん、安元洋貴からはバティー、鈴村健一からはナビィなどと呼ばれる。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19590,
+            "name": "ケリ子（鎌倉景子）",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e5/b6/19590_crt_Mk70f.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/b6/19590_crt_Mk70f.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/b6/19590_crt_Mk70f.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e5/b6/19590_crt_Mk70f.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4783,
+                    "name": "藤村歩",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f5/c7/4783_prsn_Jp5jV.jpg?r=1515334929",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/c7/4783_prsn_Jp5jV.jpg?r=1515334929",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/c7/4783_prsn_Jp5jV.jpg?r=1515334929",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f5/c7/4783_prsn_Jp5jV.jpg?r=1515334929"
+                    },
+                    "short_summary": "日本女性声优，隶属于贤Production。\r\n代表作品有《风之圣痕》神凪绫乃、《会长是女仆大人》鲇泽美咲、《圣痕炼金士》织部真冬、《机动战士高达UC》米妮瓦·拉欧·扎比（奥黛丽·伯恩）、《空之境界》黑桐鲜花等。\r\n\r\n2019年4月1日由事务所宣布无限期停止声优活动。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19591,
+            "name": "より子（葉山より子）",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/29/19591_crt_i675L.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/29/19591_crt_i675L.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/29/19591_crt_i675L.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/29/19591_crt_i675L.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9997,
+                    "name": "一杉佳澄",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/67/c2/9997_prsn_yRrv1.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/c2/9997_prsn_yRrv1.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/c2/9997_prsn_yRrv1.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/67/c2/9997_prsn_yRrv1.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

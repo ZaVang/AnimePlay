@@ -1,0 +1,35 @@
+{
+    "id": 12295,
+    "name": "クラッキー・レイ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f3/c8/12295_crt_fI4ld.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/c8/12295_crt_fI4ld.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/c8/12295_crt_fI4ld.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f3/c8/12295_crt_fI4ld.jpg"
+    },
+    "summary": "15岁的初三学生，核之光主之一，黄属性，通称“光之贵公子”。对于能够来到异世界进行实体化的卡片战斗感到欣喜若狂。战斗招式华丽至极，相当自恋的男公关做派的男生，但其实一旦真正陷入恋情的时候又无比笨拙，刻意摆出老成的样子念些超陈腐的台词。旅途中以弹的大哥自居。\r\n\r\n異界王事件後、大きな使命がないと熱くなれない…という喪失感に陥っていた。そんな矢先、未来からのＳＯＳを最初に受信。\r\n未来ではカザンの右腕として辣腕をふるう一方で、与えられた飛行艇に「麗しのソフィア号」と勝手に名付け、艦長として就任。クルー達の兄貴分として貫禄も出て来た。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "库拉奇·雷"
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 6
+    },
+    "anime_ids": [
+        8621
+    ]
+}

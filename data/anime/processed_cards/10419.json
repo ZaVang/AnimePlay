@@ -1,0 +1,91 @@
+{
+    "id": 10419,
+    "name": "第一神拳",
+    "image_path": "data/images/anime/10419.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "家中经营钓鱼船、总是被欺负的少年幕之内一歩，和後来成为世界冠军的鹰村守相遇，开启了拳击的人生。以描写进入鸭川会馆，逐渐成为代表日本的选手之过程为中心的作品。特色是仔细地描写了同伴与和对手间的战斗，成为长期连载作品，是平成时代代表『周刊少年Magazine』的看板漫画之一。各话以「Round.○○」的连续数字作区隔，在Fan Book也以「R109」之类的方式记载。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 76,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "运动",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2000-10-03",
+    "rating_rank": 375,
+    "rating_score": 7.9,
+    "rating_total": 373,
+    "main_character_ids": [
+        1958,
+        1971
+    ],
+    "main_characters": [
+        {
+            "id": 1958,
+            "name": "鷹村守",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a2/fd/1958_crt_882uk.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/fd/1958_crt_882uk.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/fd/1958_crt_882uk.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a2/fd/1958_crt_882uk.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4130,
+                    "name": "小山力也",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c9/29/4130_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/29/4130_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/29/4130_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c9/29/4130_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の男性俳優、声優、ナレーター。劇団俳優座所属。京都府京都市生まれ。愛称は「リッキー」「りきちゃん」「リキ」。\r\n立命館中学校・高等学校を経て1982年に立命館大学法学部入学。劇団立命芸術劇場に所属する。同期に現TBSアナウンサーの長峰由紀がおり、長峰を「トットちゃん」と呼んでいた[2]。当時は別役実、つかこうへい作品などを上演していた。1987年に大学卒業後、桐朋学園大学短期大学部芸術科演劇専攻に進む。部活動は水泳部に所属しており、水着になることには何の抵抗もないという。卒業後に劇団俳優座入団。\r\n\r\n『ER』が声優デビューとなるが、それが契機となりアニメなどで活躍する下地となった。また『うたわれるものらじお』をきっかけに、最近ではいろいろな女性声優とのラジオ、TV番組が急増。\r\n\r\n舞台俳優としても活躍し、2000年頃からはヨーロッパでの舞台公演（イギリス・フランス・オランダ・ルーマニア・イタリア・ロシア）に積極的に参加。2001年にアントーニオ役で出演した『ヴェニスの商人』は、第9回読売演劇大賞優秀作品賞を受賞。\r\n\r\n2009年には神谷明の降板により、『名探偵コナン』の二代目・毛利小五郎役に選ばれた。過去にもテレビシリーズ、映画『名探偵コナン 探偵たちの鎮魂歌』、テレビゲーム『名探偵コナン 追憶の幻想』のゲスト声優として何かとコナンには関わっている。\r\n\r\n2011年、第五回声優アワード「富山敬賞」を受",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 1971,
+            "name": "幕之内一歩",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/65/95/1971_crt_ulnp9.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/95/1971_crt_ulnp9.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/95/1971_crt_ulnp9.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/65/95/1971_crt_ulnp9.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4562,
+                    "name": "喜安浩平",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fd/32/4562_prsn_L0lFg.jpg?r=1718790295",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/32/4562_prsn_L0lFg.jpg?r=1718790295",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/32/4562_prsn_L0lFg.jpg?r=1718790295",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fd/32/4562_prsn_L0lFg.jpg?r=1718790295"
+                    },
+                    "short_summary": "【ナイロン100℃とブルドッキングヘッドロックの劇団員】\r\n演劇、映画、テレビの脚本。舞台演出。俳優。声優。芸術家志望。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

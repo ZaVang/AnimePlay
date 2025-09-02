@@ -1,0 +1,56 @@
+{
+    "id": 24259,
+    "name": "柴山純平",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/13/e7/24259_crt_lKdgo.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/e7/24259_crt_lKdgo.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/e7/24259_crt_lKdgo.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/13/e7/24259_crt_lKdgo.jpg"
+    },
+    "summary": "被选中的孩子中，年龄最大的一位。极具责任心，认为有些事如果没有把握做好还不如别做，一旦做了就必须做好，也算是有一定的领导能力。擅长变一些小魔术，十分喜欢巧克力。在数码世界里，明白了要相信人与人之间的友情，友情不是靠送礼物和小把戏可以换来得。在故事中十分喜欢小泉，还自称是小泉FANS俱乐部的第一号成员。\r\n另外，虽然动画中没有说明，但在设定中因为他是柴山电器株式会社社长的独生子，所以身边的同学们会下意识的和他保持距离。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "柴山纯平"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "柴山 純平"
+                },
+                {
+                    "k": "英文名",
+                    "v": "J.P. Shibayama"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しばやま じゅんぺい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shibayama Junpei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 2
+    },
+    "anime_ids": [
+        3131
+    ]
+}

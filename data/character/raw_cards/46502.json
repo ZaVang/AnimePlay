@@ -1,0 +1,39 @@
+{
+    "id": 46502,
+    "name": "ゲイン・ビジョウ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c6/7f/46502_crt_Y8WyZ.jpg?r=1474377153",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c6/7f/46502_crt_Y8WyZ.jpg?r=1474377153",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c6/7f/46502_crt_Y8WyZ.jpg?r=1474377153",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c6/7f/46502_crt_Y8WyZ.jpg?r=1474377153"
+    },
+    "summary": "28歳。\r\n『黒いサザンクロス』の異名をもつ狙撃の名手で、エクソダスの手助けを仕事とするエクソダス請負人。\r\n最初はゲイナーを一人前の男と見なしていなかったが、ともにヤーパンへの旅を続けていく内に、背中を預ける良き相棒と認めるようになる。\r\n粗野に見える外見に反して、理知的で女性に対しても紳士的。時折見せる高貴な振る舞いから出自の良さが窺える。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "该隐·比琼"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 2
+    },
+    "anime_ids": [
+        7931
+    ]
+}

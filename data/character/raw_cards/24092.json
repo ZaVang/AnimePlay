@@ -1,0 +1,61 @@
+{
+    "id": 24092,
+    "name": "霞ヶ丘詩羽",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/09/43/24092_crt_6YIW9.jpg?r=1674913319",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/43/24092_crt_6YIW9.jpg?r=1674913319",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/43/24092_crt_6YIW9.jpg?r=1674913319",
+        "grid": "https://lain.bgm.tv/pic/crt/g/09/43/24092_crt_6YIW9.jpg?r=1674913319"
+    },
+    "summary": "安艺伦也的学姐，就读同校3年C班。留一头黑色长发、戴着白色发箍，看起来文静的美少女，但时常有劲爆的发言。她以笔名“霞诗子”所写的轻小说《恋爱节拍器》（恋するメトロノーム）由不死川书店的Fantastic文库发行共五集，合计销售破50万册。同人游戏社团“Blessing software”，负责脚本创作。\r\n    对男主角的称呼为伦理同学，不过有时候，例如害羞的时候，也会称呼男主角伦也学弟。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "霞之丘诗羽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かすみがおか うたは"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kasumigaoka Utaha"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月31日"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        },
+        {
+            "key": "BWH",
+            "value": "89/61/88"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 31,
+    "stat": {
+        "comments": 132,
+        "collects": 835
+    },
+    "anime_ids": [
+        132734,
+        100403
+    ]
+}

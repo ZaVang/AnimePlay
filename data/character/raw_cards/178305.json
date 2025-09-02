@@ -1,0 +1,40 @@
+{
+    "id": 178305,
+    "name": "福富しんべヱ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f1/3c/178305_crt_Rr4m8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/3c/178305_crt_Rr4m8.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/3c/178305_crt_Rr4m8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f1/3c/178305_crt_Rr4m8.jpg"
+    },
+    "summary": "【一年は組】\r\n10歳／用具委員会所属\r\n堺の大貿易商「福富屋」の息子で、おっとり・のんびりした性格。\r\n大の食いしん坊で、遠くの食べ物のにおいも嗅ぎ分けることができる。\r\n走ることは苦手だが、硬い髪と石頭、粘着力のある鼻水で仲間のピンチを救うこともある。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ふくとみしんべえ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        4264
+    ]
+}

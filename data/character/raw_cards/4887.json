@@ -1,0 +1,64 @@
+{
+    "id": 4887,
+    "name": "ファ・ユイリィ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e3/c1/4887_crt_ihsk4.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/c1/4887_crt_ihsk4.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/c1/4887_crt_ihsk4.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e3/c1/4887_crt_ihsk4.jpg"
+    },
+    "summary": "本編のヒロイン。年齢は17歳。カミーユ・ビダンとは隣人かつ高校の同級生。両親が留守がちなカミーユの世話をよく焼いており、テレビ版冒頭では彼の爪を噛む癖を注意している。出身はサイド1の25バンチであり、一年戦争後にサイド7（グリーン・ノア）に移住してきた。\r\n宇宙世紀0070年10月9日生まれ。血液型はAB型。食べ物の好き嫌いはない。将来の夢は社会の役に立つ人になること。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "花园丽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "花 園麗"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ファ・ユイリィ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fa Yuiry"
+                },
+                {
+                    "k": "昵称",
+                    "v": "法妹"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月9日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 9,
+    "stat": {
+        "comments": 19,
+        "collects": 53
+    },
+    "anime_ids": [
+        9622
+    ]
+}

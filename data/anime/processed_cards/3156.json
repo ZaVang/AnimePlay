@@ -1,0 +1,91 @@
+{
+    "id": 3156,
+    "name": "结界师",
+    "image_path": "data/images/anime/3156.jpg",
+    "points": 7.1,
+    "cost": 1,
+    "rarity": "N",
+    "description": "墨村良守是一个虽然不情愿，却得继承代代相传的结界师这份工作的小学生。因为代表间流结界术正统继承人的方印出现在他的身上，爷爷为了让良守成为称职的继承人，从小就对他施行斯巴达教育。\r\n目前将守护乌森的工作交给良守，享受着退隐的生活。而年纪比时音大的青梅竹马雪村时音，同时也是另一个号称也拥有间流结界术正统继承资格的雪村家的新一代传人。\r\n但是就在某日，两人如往常到乌森进行他们结界师的工作时，时音为了保护良守而受了重伤，也因此让良守下定决心要变得更强。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 52,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗",
+        "少年向"
+    ],
+    "date": "2006-10-16",
+    "rating_rank": 1986,
+    "rating_score": 7.1,
+    "rating_total": 902,
+    "main_character_ids": [
+        3717,
+        34199
+    ],
+    "main_characters": [
+        {
+            "id": 3717,
+            "name": "墨村良守",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/91/af/3717_crt_gxzqX.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/af/3717_crt_gxzqX.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/af/3717_crt_gxzqX.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/91/af/3717_crt_gxzqX.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3955,
+                    "name": "吉野裕行",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153"
+                    },
+                    "short_summary": "日本の男性声優、歌手、ナレーターである。らえら所属。千葉県出身。身長163cm、血液型はB型。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 34199,
+            "name": "雪村時音",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/da/c3/34199_crt_SccB3.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/c3/34199_crt_SccB3.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/c3/34199_crt_SccB3.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/da/c3/34199_crt_SccB3.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4615,
+                    "name": "斉藤梨絵",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/80/11/4615_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/11/4615_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/11/4615_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/80/11/4615_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

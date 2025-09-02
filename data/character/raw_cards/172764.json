@@ -1,0 +1,64 @@
+{
+    "id": 172764,
+    "name": "河合まこ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1e/dc/172764_crt_vPv3R.jpg?r=1741836619",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/dc/172764_crt_vPv3R.jpg?r=1741836619",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/dc/172764_crt_vPv3R.jpg?r=1741836619",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1e/dc/172764_crt_vPv3R.jpg?r=1741836619"
+    },
+    "summary": "食べることが大好きな女の子。\r\n 特技は料理。\r\nちょっぴり内気で、人に声を掛けるのが苦手だが、\r\n食文化研究部に入って大学生活に変化が生まれる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "河合真子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "河合 まこ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かわい まこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kawai Mako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2006年4月23日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "星座",
+            "value": "金牛座"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 4,
+    "birth_year": 2006,
+    "birth_mon": 4,
+    "birth_day": 23,
+    "stat": {
+        "comments": 136,
+        "collects": 327
+    },
+    "anime_ids": [
+        531159
+    ]
+}

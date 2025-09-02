@@ -1,0 +1,48 @@
+{
+    "id": 36406,
+    "name": "ヒナ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/67/bc/36406_crt_x8kXZ.jpg?r=1518235870",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/bc/36406_crt_x8kXZ.jpg?r=1518235870",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/bc/36406_crt_x8kXZ.jpg?r=1518235870",
+        "grid": "https://lain.bgm.tv/pic/crt/g/67/bc/36406_crt_x8kXZ.jpg?r=1518235870"
+    },
+    "summary": "寄住在新田家里的神秘少女。\r\n能够用很强力的念动力移动物体。\r\n平时作为新田的女儿过着无拘无束的生活。\r\n虽然她总是没有表情，让人不知道她在想什么，但其实她只是不关心鲑鱼子之外的任何东西。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "新田雏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ヒナ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 19,
+        "collects": 63
+    },
+    "anime_ids": [
+        225631
+    ]
+}

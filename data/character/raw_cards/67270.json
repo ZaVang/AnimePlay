@@ -1,0 +1,47 @@
+{
+    "id": 67270,
+    "name": "エレ・ハンム",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ea/6c/67270_crt_2Pnca.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/6c/67270_crt_2Pnca.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/6c/67270_crt_2Pnca.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ea/6c/67270_crt_2Pnca.jpg"
+    },
+    "summary": "具有强大灵力的少女。米国国王比里卡恩·哈姆之女。父亲战死后与母亲一起逃到拉国，后与母亲帕多乌特·哈姆一起居住在山中修行。但是母亲却被杜雷库手下的地上人捷莉露带领的部队所杀，艾莉只得一人投奔祖父、拉国国王弗伊宗·哥奥。\r\n\r\n　　祖父弗伊宗战死后，艾莉成为了米国和拉国的继承人。搭乘祖父弗伊宗留下的奥拉战舰哥拉奥号继续对抗杜雷库。\r\n\r\n　　来到地上后，对地上人特鲁斯多鲁·切基雷科产生好感，但是由于他的死而失去了斗志，之后在朋友的鼓励下才重新站了起来。太平洋决战中，为了阻止黑骑士的超级化，艾莉将黑骑士所散发出的邪恶奥拉力全部吸入了自己体内，由于身体承受不住而暴死。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾莲·哈姆"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "年龄",
+            "value": "14岁"
+        },
+        {
+            "key": "种族",
+            "value": "古门"
+        },
+        {
+            "key": "故乡",
+            "value": "拜斯顿·威尔 密之国"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 2
+    },
+    "anime_ids": [
+        10402
+    ]
+}

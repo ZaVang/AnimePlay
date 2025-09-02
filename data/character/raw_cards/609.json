@@ -1,0 +1,76 @@
+{
+    "id": 609,
+    "name": "新藤千尋",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ab/3f/609_crt_222BX.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/3f/609_crt_222BX.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/3f/609_crt_222BX.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ab/3f/609_crt_222BX.jpg"
+    },
+    "summary": "新藤景的同卵双胞胎妹妹。与姐姐的格性相反，性格相当老实。年幼时左眼由于事故而失明并患上顺行性记忆障碍（只能拥有13小时的记忆），平常带着眼罩。第三章的女主角。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "新藤千寻"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "新藤 千尋"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しんどう ちひろ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shindou Chihiro"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月2日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "151cm"
+        },
+        {
+            "key": "体重",
+            "value": "38kg"
+        },
+        {
+            "key": "BWH",
+            "value": "77/53/78"
+        },
+        {
+            "key": "原作声优",
+            "value": "牧泉美"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 2,
+    "stat": {
+        "comments": 40,
+        "collects": 171
+    },
+    "anime_ids": [
+        799
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "id": 1755,
+    "name": "小泉リサ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d8/d3/1755_z6OtP.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/d3/1755_z6OtP.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/d3/1755_z6OtP.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d8/d3/1755_z6OtP.jpg"
+    },
+    "summary": "本作的主角，高一时身高170cm，高二时172cm，体重50kg，生日是8月3日，血型为O型，大谷通常叫他『女巨人』。读书成绩不济，但跟大谷一起时就如顶级的搞笑艺人，主要担演白痴。她是公认的游戏迷，跟大谷一样是『海坊主』的歌迷。最初喜欢铃木，但后来喜欢大谷。性格开朗好动，但亦会因传达不了自己的心意给大谷而失落，但是经好友信子鼓励后就会立刻回复精神，性情单纯乐观。高中毕业后进了专业学校，以成为形象指导为目标。跟大谷交往后，受双方父母承认关系。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小泉理沙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小泉 リサ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こいずみ りさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Koizumi Risa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月3日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "167cm→170cm→172cm"
+        },
+        {
+            "key": "体重",
+            "value": "50kg"
+        },
+        {
+            "key": "声优",
+            "value": "冈村明美"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 3,
+    "stat": {
+        "comments": 3,
+        "collects": 9
+    },
+    "anime_ids": [
+        2940
+    ]
+}

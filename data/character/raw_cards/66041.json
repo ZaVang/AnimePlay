@@ -1,0 +1,60 @@
+{
+    "id": 66041,
+    "name": "キリエ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8b/1e/66041_crt_do2re.jpg?r=1548219478",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8b/1e/66041_crt_do2re.jpg?r=1548219478",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8b/1e/66041_crt_do2re.jpg?r=1548219478",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8b/1e/66041_crt_do2re.jpg?r=1548219478"
+    },
+    "summary": "正確な操縦技術と空間把握能力に長けたパイロット。\r\nすぐ頭に血が上るタイプで、戦闘ではよく先走ってしまう。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "姬莉叶"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Kyile（伊基茨）、Kylie（英文）"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kirie"
+                },
+                {
+                    "k": "昵称",
+                    "v": "疾風迅雷のキリエ（疾风迅雷的姬莉叶）"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月12日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://kotobuki-anime.com/character/kirie"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 12,
+    "stat": {
+        "comments": 7,
+        "collects": 24
+    },
+    "anime_ids": [
+        260467
+    ]
+}

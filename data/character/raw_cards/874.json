@@ -1,0 +1,76 @@
+{
+    "id": 874,
+    "name": "山本武",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/be/a7/874_crt_8veR1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/a7/874_crt_8veR1.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/a7/874_crt_8veR1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/be/a7/874_crt_8veR1.jpg"
+    },
+    "summary": "家裡開壽司店的棒球少年，運動神經發達，在學校相當受大家歡迎。 \r\n本來只是普通的棒球隊王牌，跟阿綱成為朋友後被裡包恩私自收進彭哥列家族，不過本人似乎認為只是陪小孩玩黑手黨遊戲，是阿綱的雨之守護者。 \r\n一開始使用的武器是以300km/h以上揮動就會變成武士刀的「山本的球棒」（山本のバット）。 \r\n使用名為時雨蒼燕流（しぐれそうえんりゅう）的殺人劍術，由父親山本剛傳授時雨蒼燕流後繼承了日本刀「時雨金時」（しぐれきんとき）。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "山本武"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "山本武"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やまもと　たけし"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yamamoto Takeshi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月24日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "177cm"
+        },
+        {
+            "key": "体重",
+            "value": "63kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "井上優"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 24,
+    "stat": {
+        "comments": 10,
+        "collects": 59
+    },
+    "anime_ids": [
+        4562
+    ]
+}

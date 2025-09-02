@@ -1,0 +1,61 @@
+{
+    "id": 35649,
+    "name": "川本あかり",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/aa/cc/35649_crt_h9Kg5.jpg?r=1520788821",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/cc/35649_crt_h9Kg5.jpg?r=1520788821",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/cc/35649_crt_h9Kg5.jpg?r=1520788821",
+        "grid": "https://lain.bgm.tv/pic/crt/g/aa/cc/35649_crt_h9Kg5.jpg?r=1520788821"
+    },
+    "summary": "住在作品虚构的三月町的川本家三姊妹之长女。代替已故的母亲照顾两个妹妹、白天在祖父经营的日式点心店“三日月堂”帮忙，每周会有两天晚上在阿姨美咲经营的银座酒店“美咲”担任女公关工作。对与弱小的动物有种无法放着不管的同情心，在桐山某次被前辈棋士灌醉后将其带回家照顾。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "川本明里"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "川本 あかり"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かわもと あかり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kawamoto Akari"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "165cm（动画） / 170cm（原作）"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 24,
+        "collects": 162
+    },
+    "anime_ids": [
+        211567,
+        147068
+    ]
+}

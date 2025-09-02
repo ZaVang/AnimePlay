@@ -1,0 +1,60 @@
+{
+    "id": 57378,
+    "name": "レイ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/80/ec/57378_crt_d3jt7.jpg?r=1503814027",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/ec/57378_crt_d3jt7.jpg?r=1503814027",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/ec/57378_crt_d3jt7.jpg?r=1503814027",
+        "grid": "https://lain.bgm.tv/pic/crt/g/80/ec/57378_crt_d3jt7.jpg?r=1503814027"
+    },
+    "summary": "　　孤儿院最年长铁三角之一，生于2034年1月15日，11岁的男孩，身高150cm，脖子上的编号为81194。为人理性而固执，当下了决定之后便不轻易改变自己的意志。表面上冷静沉稳，但是心里其实十分重视艾玛和诺曼。读过相当多的书，有着诺曼和艾玛望尘莫及的的知识量。考试分数亦为300分级别。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雷"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Ray"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2034年1月15日"
+        },
+        {
+            "key": "身高",
+            "value": "150cm"
+        },
+        {
+            "key": "编号",
+            "value": "81194"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 2034,
+    "birth_mon": 1,
+    "birth_day": 15,
+    "stat": {
+        "comments": 7,
+        "collects": 44
+    },
+    "anime_ids": [
+        243916
+    ]
+}

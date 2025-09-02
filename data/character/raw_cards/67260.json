@@ -1,0 +1,47 @@
+{
+    "id": 67260,
+    "name": "マーベル・フローズン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7f/a5/67260_crt_6BV4Z.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/a5/67260_crt_6BV4Z.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/a5/67260_crt_6BV4Z.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7f/a5/67260_crt_6BV4Z.jpg"
+    },
+    "summary": "　美国国籍，从小在达拉斯郊外的牧场里长大，来到拜斯顿·威尔前就读于大学中。家庭关系十分融洽，与翔的家庭比起来，她的家庭要幸福的多。\r\n\r\n　　在翔之前被召唤到了拜斯顿·威尔。认识了基文家的长子尼·基文，被他的魅力所吸引。在了解到杜雷库危险的野心后，决定帮助尼与杜雷库作战。由于本身具有相当的奥拉力，因此成为了基文家第一个奥拉战士的操纵者。在战场上成功的说得了翔加入。之后与翔并肩作战，而自己与翔的心也渐渐贴近。\r\n\r\n　　在太平洋上的决战时座机登拜恩被黑骑士驾驶的卡拉巴击破。遗憾的是直到她死还没有真正听到翔对自己的表白。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "玛薇儿·弗露森"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "年龄",
+            "value": "19岁"
+        },
+        {
+            "key": "国籍",
+            "value": "美国"
+        },
+        {
+            "key": "故乡",
+            "value": "美国德克撒斯州达拉斯"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 7
+    },
+    "anime_ids": [
+        10402
+    ]
+}

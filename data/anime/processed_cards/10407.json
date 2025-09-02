@@ -1,0 +1,57 @@
+{
+    "id": 10407,
+    "name": "妙手小厨师",
+    "image_path": "data/images/anime/10407.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "主角味吉阳一继承了父亲留下来的大众食堂，在机缘巧合下认识了厨师协会的统帅，人称「味皇」的村田源二郎，更被味皇选中担任味皇料理某部门的主任……接受各人各项的美味比赛……最后阳一又能否胜任？「肚子饿的时候，什么也做不来，不能应战，也不能画漫画。不管是你，还是我，大家都喜欢吃，但既然要吃，还是要挑好吃的。因此，请大家好好享受一下阳一所设计出来的满分料理吧！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 99,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1987-10-08",
+    "rating_rank": 1620,
+    "rating_score": 7.4,
+    "rating_total": 51,
+    "main_character_ids": [
+        58778
+    ],
+    "main_characters": [
+        {
+            "id": 58778,
+            "name": "味吉阳一",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3e/ec/58778_crt_p24d3.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/ec/58778_crt_p24d3.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/ec/58778_crt_p24d3.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3e/ec/58778_crt_p24d3.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3933,
+                    "name": "高山みなみ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/29/8f/3933_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/8f/3933_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/8f/3933_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/29/8f/3933_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "中学时代加入向日葵剧团。高中毕业后，曾经是一个普通的OL，22岁时立志成为声优。与日本歌手永野椎菜合组歌唱组合TWO-MIX。\r\n2005年5月5日，与青山刚昌结婚。 \r\n根据日本《朝日新闻》2005年6月2日报道，《名侦探柯南》之父、41岁的青山刚昌当天在接受日本著名杂志《女性名流》的采访中承认，将迎娶在《名侦探柯南》动画片中为柯南配音的日本著名声优、当时41岁的高山南，而两人已于高山南的生日，也就是5月5日，正式办理了登记结婚手续。\r\n2007年12月9日，与青山刚昌离婚。 \r\n自从两人05年5月结婚以来，青山先生在漫画制作的截稿期之前都会在工作场所埋头苦干，而著名声优高山南工作也非常繁忙。在经常擦肩而过的生活持续之下，两人在甚少的沟通和关照之下，感情也渐渐变淡。最后，两人在两年后的12月9日决定离婚，至于青山先生对于传媒的采访态度为“无可奉告”。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

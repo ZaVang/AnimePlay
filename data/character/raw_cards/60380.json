@@ -1,0 +1,68 @@
+{
+    "id": 60380,
+    "name": "茂野大吾",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/cd/e1/60380_crt_hCZ4W.jpg?r=1587103922",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/e1/60380_crt_hCZ4W.jpg?r=1587103922",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/e1/60380_crt_hCZ4W.jpg?r=1587103922",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cd/e1/60380_crt_hCZ4W.jpg?r=1587103922"
+    },
+    "summary": "第1シリーズ\r\n今作の主人公。小学４年生のころ、地元の野球チーム「三船ドルフィンズ」に入団するが、才能のなさ＆二世のプレッシャーにぶつかり、一度は野球をはなれる。\r\n迎えた６年生の春、転校生の光に誘われ、ふたたびチームへ。父のような身体能力には恵まれていないが、親譲りの野球への情熱と冷静な観察力を秘めている。\r\n\r\n第２シリーズ\r\n風林中野球部を率いる熱血キャプテン \r\n小学生の頃は、三船ドルフィンズで佐藤光や睦子と共に活躍。光のケガに責任を感じ野球を辞めようとするが、光の励ましにより決意を新たにする。メジャーリーグでも活躍したプロ野球選手の父・吾郎のような身体能力に恵まれてはいないが、親譲りの野球への情熱と冷静な観察力で風林中野球部を率いる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "茂野大吾"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しげの だいご"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shigeno Daigo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "158cm(中学２年)"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        },
+        {
+            "key": "背号",
+            "value": "7"
+        },
+        {
+            "key": "守备位置",
+            "value": "捕手/外野手"
+        },
+        {
+            "key": "投打",
+            "value": "右投右打"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 8,
+        "collects": 7
+    },
+    "anime_ids": [
+        292219
+    ]
+}

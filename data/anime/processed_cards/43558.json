@@ -1,0 +1,153 @@
+{
+    "id": 43558,
+    "name": "JOJO的奇妙冒险",
+    "image_path": "data/images/anime/43558.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "在古代墨西哥繁盛一时的太阳的子民阿兹特克，他们流传着一枚奇妙的「石鬼面」。那是一枚奇迹的面具，能让人拥有一种力量，能获得永远的生命并成为真正的掌控者。然而从某个时候开始，就从历史中消失了踪影。\r\n\r\n时光飞逝，来到了19世纪末的英国。在这个人们的思想与生活产生激烈变化的时代，乔纳森·乔斯达与迪奥·布兰度相遇。二人一同渡过了少年时代到青年时代，最后因为「石鬼面」，而步上了奇特怪异的命运。\r\n\r\n以及在1938年的美国，乔纳森·乔斯达的孙子——乔瑟夫·乔斯达长大成人后的故事。为了守护他重视的人们，与苏醒的超级生物柱之男不停的战斗。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2012-10-05",
+    "rating_rank": 397,
+    "rating_score": 7.8,
+    "rating_total": 16036,
+    "main_character_ids": [
+        879,
+        3319,
+        17601,
+        18561
+    ],
+    "main_characters": [
+        {
+            "id": 879,
+            "name": "ジョセフ・ジョースター",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/32/fb/879_crt_8LVcM.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/fb/879_crt_8LVcM.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/fb/879_crt_8LVcM.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/32/fb/879_crt_8LVcM.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4513,
+                    "name": "杉田智和",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/72/98/4513_prsn_o6DbE.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/98/4513_prsn_o6DbE.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/98/4513_prsn_o6DbE.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/72/98/4513_prsn_o6DbE.jpg"
+                    },
+                    "short_summary": "在其代表作品中常出演擅长吐槽的男主角（特别是凉宫春日中的阿虚），号称“第一吐槽男”。\r\n专长是按摩、少林寺拳法初段。爱犬的名字为Naoji。\r\n著名的“超级机器人大战FAN”，其称为“老师”的绿川光是著名的“超级玩家”，并且同为系列死忠。\r\n在声优界亲近的友人有中村悠一、铃村健一、樱井孝宏、小野大辅、神谷浩史等人。\r\n经常对外宣称与中村悠一的亲密关系（广播节目、声优见面会以及自己的生日庆祝EVENT等），还说过“只要有中村和直司（Naoji，杉田家的狗）就够了，我是杉田智和。”两人关系好得经常被其他声优说“像在交往一样”。\r\n另外与同为声优的铃木达央、羽多野涉、寺岛拓笃、市来光弘等人关系友好，合称为“杉田组”，杉田智和是杉田组的组长。\r\n崇拜的业内人士有若本规夫（杉田喜欢模仿这位是出了名的）、速水奖（中学时代就常听他的radio节目） 、铃置洋孝、绿川光（机器人大战同好）、置鲇龙太郎。\r\nLOVEPLUS的重度中毒者之一，跟阪口大助同为攻略游戏中的高岭爱花，并有在杉田的广播节目互相交流“女友经”。\r\n学园传奇冒险游戏月英学园 -kou-的原作者，其饰演执事一角。\r\n与中村悠一多次使用过淫梦梗，被鉴定为淫梦民。\r\n\r\n2009年获得声优奖男优部门配角赏",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 3319,
+            "name": "ジョナサン・ジョースター",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/69/9a/3319_crt_2XP3w.jpg?r=1371547170",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/9a/3319_crt_2XP3w.jpg?r=1371547170",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/9a/3319_crt_2XP3w.jpg?r=1371547170",
+                "grid": "https://lain.bgm.tv/pic/crt/g/69/9a/3319_crt_2XP3w.jpg?r=1371547170"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5007,
+                    "name": "興津和幸",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9e/df/5007_prsn_LClCs.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/df/5007_prsn_LClCs.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/df/5007_prsn_LClCs.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9e/df/5007_prsn_LClCs.jpg"
+                    },
+                    "short_summary": "兵庫県立洲本高等学校、大阪芸術大学芸術学部放送学科卒。RME（ - 2006年10月）を経て、2007年5月よりケッケコーポレーションに所属。\r\n端役を多く演じているが、『屍鬼』や『れでぃ×ばと!』で主演としてのキャリアを積み、2012年にテレビアニメ化が実現した『ジョジョの奇妙な冒険』で主人公のジョナサン・ジョースター役に抜擢される。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 17601,
+            "name": "ディオ・ブランドー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/42/ae/17601_crt_9eQRN.jpg?r=1387219981",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/ae/17601_crt_9eQRN.jpg?r=1387219981",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/ae/17601_crt_9eQRN.jpg?r=1387219981",
+                "grid": "https://lain.bgm.tv/pic/crt/g/42/ae/17601_crt_9eQRN.jpg?r=1387219981"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 1096,
+                    "name": "子安武人",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4f/e5/1096_prsn_84WcO.jpg?r=1509920084",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/e5/1096_prsn_84WcO.jpg?r=1509920084",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/e5/1096_prsn_84WcO.jpg?r=1509920084",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4f/e5/1096_prsn_84WcO.jpg?r=1509920084"
+                    },
+                    "short_summary": "子安武人, 名字之所以會叫「武人」是因為他的生日是日本的兒童節。\r\n他和三木真一郎、關智一、结城比吕组成声优团体Weiß，主要的作品是《白色猎人》。 \r\n有一小點的巧合是他演出的角色為金髮男子居多，其角色個性很廣泛，不論是搞笑型的，或是嚴肅型的角色皆為其拿手範圍內，另一方面一些其貌不揚或性情古怪的角色也非常擅長。\r\n本人称自己也不能算做很喜欢饰演变态或搞笑角色，只是有这么的工作就接了，结果却慢慢得越来越多。\r\n\r\n1988-1998年隶属于事务所Production Baobab，此后成立自己的会社T's Factory。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 18561,
+            "name": "シーザー・アントニオ・ツェペリ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f4/14/18561_crt_lfyrz.jpg?r=1540732764",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/14/18561_crt_lfyrz.jpg?r=1540732764",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/14/18561_crt_lfyrz.jpg?r=1540732764",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f4/14/18561_crt_lfyrz.jpg?r=1540732764"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5151,
+                    "name": "佐藤拓也",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4f/15/5151_prsn_v0nK0.jpg?r=1681413352",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/15/5151_prsn_v0nK0.jpg?r=1681413352",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/15/5151_prsn_v0nK0.jpg?r=1681413352",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4f/15/5151_prsn_v0nK0.jpg?r=1681413352"
+                    },
+                    "short_summary": "佐藤 拓也（さとう たくや、1984年5月19日 - ）は日本の男性声優、歌手。\r\n賢プロダクション所属。宮城県出身。\r\n\r\n専門学校東京メディアアカデミーの声優ボーカル科（現：東京声優アカデミーの声優養成科）を卒業後、賢プロダクション付属の声優養成所スクールデュオに7期生として入所。\r\n主に少年役や青年役を演じる。海外ドラマの吹き替えでの出演が多い。\r\nデビュー以降、アニメでの目立った活躍は少なかったが、2011年に『カードファイト!! ヴァンガード』の櫂トシキ役に抜擢されたことをきっかけに、多くのメディアへ出演している。同作品のラジオ番組『立ち上がれ! 僕らのヴァンガード』では、初のラジオパーソナリティを務めている。\r\n『カードファイト!!ヴァンガード』などで共演している代永翼とは、専門学校からの先輩後輩の関係であること、同じ事務所に所属していることなどから仲が良い。\r\n2013年1月末、自身のブログにて既婚者であることを公表した。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

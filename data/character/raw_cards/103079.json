@@ -1,0 +1,48 @@
+{
+    "id": 103079,
+    "name": "ゆに彦",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bb/3d/103079_crt_8OmsC.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/3d/103079_crt_8OmsC.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/3d/103079_crt_8OmsC.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bb/3d/103079_crt_8OmsC.jpg"
+    },
+    "summary": "森林里的独角兽，号称是守护神，喜欢作弄别人，不时流露出腹黑的一面，经常和兔原在一起喝酒\r\n\r\n带着玩世不恭的表情说着“厌倦了轻浮的女人所以来到了森林”的独角彦在后来以和兔原一起整宇留野为乐，经常对其进行打击的同时又不时给予鼓励，实施鞭子与蜜结合的双重政策。这样的性格，实在和人们常识中优雅稳重的天马有些不符……\r\n\r\n俗物ユニコーン。森の一番奥に住んでいる自称「森のぬし」。はすっぱな女が好み。うる野を騙したりしていじめている。うさ原とダベっていることも多い。酒好き。うる野に厳しい現実を突きつけることも多いが、ほとんどが的を射ている。\r\n幻獣という理由で適当に流すことが多く、ついには相手の（ツッコミをいれる）やる気すら奪ってしまった。白黒友の会メンバー。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "独角彦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Yunihiko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "动物属性",
+            "value": "独角兽 (ユニコーン)"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        2696
+    ]
+}

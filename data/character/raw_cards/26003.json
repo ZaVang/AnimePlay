@@ -1,0 +1,56 @@
+{
+    "id": 26003,
+    "name": "宮園かをり",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/63/77/26003_crt_jv644.jpg?r=1420760358",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/77/26003_crt_jv644.jpg?r=1420760358",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/77/26003_crt_jv644.jpg?r=1420760358",
+        "grid": "https://lain.bgm.tv/pic/crt/g/63/77/26003_crt_jv644.jpg?r=1420760358"
+    },
+    "summary": "公生と同じ中学三年生。天真爛漫、奇想天外、時には喧嘩上等。ジェットコースターのような性格の持ち主。\r\nコンクールに出場するヴァイオリニストであり、その演奏スタイルは個性的、楽譜を自分なりに解釈して演奏をするため、審査員からは酷評されることも多いが、\r\nそも情熱的な演奏は多くの聴衆者をとりこにする。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宫园薰"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "宫园香织"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みやぞの かをり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Miyazono Kaori"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月4日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 4,
+    "stat": {
+        "comments": 140,
+        "collects": 743
+    },
+    "anime_ids": [
+        100444
+    ]
+}

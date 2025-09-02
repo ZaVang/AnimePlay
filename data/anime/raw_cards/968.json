@@ -1,0 +1,331 @@
+{
+    "id": 968,
+    "type": 2,
+    "name": "天体戦士サンレッド",
+    "name_cn": "天体战士",
+    "summary": "《天体战士》，一部很适合拍特摄片的漫画，一个很白、很无聊、很猥琐、很脑残的故事……但是，依然有人很喜欢这个故事，于是也就当然有人敢毅然决定，要拍成动画片来非礼观众的眼球，荼毒读者的大脑了。 \r\n故事发生在神奈川县川崎市，企图征服世界的恶之怪人军团弗罗夏姆，和正义的朋友桑雷德之间的战斗开始了……主人公看似桑雷德，但实质上是弗罗夏德的川崎市支部干部班普将军——坏蛋一方的怪人。 ",
+    "nsfw": false,
+    "locked": false,
+    "date": "2008-10-03",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/8f/46/968_k8lyP.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/8f/46/968_k8lyP.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/8f/46/968_k8lyP.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/8f/46/968_k8lyP.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/8f/46/968_k8lyP.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "天体战士"
+        },
+        {
+            "key": "话数",
+            "value": "26"
+        },
+        {
+            "key": "放送开始",
+            "value": "2008年10月3日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期五"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.sunred.jp/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "tvk"
+        },
+        {
+            "key": "播放结束",
+            "value": "2009年3月27日"
+        },
+        {
+            "key": "导演",
+            "value": "岸誠二"
+        },
+        {
+            "key": "音乐",
+            "value": "柿島伸次"
+        },
+        {
+            "key": "原作",
+            "value": "くぼたまこと"
+        },
+        {
+            "key": "系列构成",
+            "value": "上江洲誠"
+        },
+        {
+            "key": "人物设定",
+            "value": "森田和明"
+        },
+        {
+            "key": "音响监督",
+            "value": "飯田里樹"
+        },
+        {
+            "key": "英雄队长",
+            "value": "まさひろ山根"
+        },
+        {
+            "key": "特效",
+            "value": "津田涼介"
+        },
+        {
+            "key": "录音",
+            "value": "立花康夫"
+        },
+        {
+            "key": "音响制作",
+            "value": "ダックスプロダクション"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "野崎圭一"
+        },
+        {
+            "key": "音乐指导",
+            "value": "佐藤正和"
+        },
+        {
+            "key": "制片人",
+            "value": "小松茂明、南健"
+        },
+        {
+            "key": "动画制片人",
+            "value": "黄樹弐悠"
+        },
+        {
+            "key": "製作",
+            "value": "JVCエンタテインメント→flying DOG（14话以后）"
+        }
+    ],
+    "volumes": 0,
+    "eps": 26,
+    "total_episodes": 34,
+    "rating": {
+        "rank": 345,
+        "total": 1290,
+        "count": {
+            "one": 7,
+            "two": 1,
+            "three": 4,
+            "four": 12,
+            "five": 19,
+            "six": 89,
+            "seven": 280,
+            "eight": 515,
+            "nine": 248,
+            "ten": 115
+        },
+        "score": 7.9
+    },
+    "collection": {
+        "wish": 801,
+        "collect": 1658,
+        "doing": 118,
+        "on_hold": 161,
+        "dropped": 119
+    },
+    "tags": [
+        {
+            "name": "天体战士",
+            "count": 285
+        },
+        {
+            "name": "羞恥心",
+            "count": 183
+        },
+        {
+            "name": "岸诚二",
+            "count": 146
+        },
+        {
+            "name": "TV",
+            "count": 130
+        },
+        {
+            "name": "2008",
+            "count": 120
+        },
+        {
+            "name": "桑雷德",
+            "count": 115
+        },
+        {
+            "name": "恶搞",
+            "count": 110
+        },
+        {
+            "name": "流氓穿上制服还是流氓",
+            "count": 100
+        },
+        {
+            "name": "AIC",
+            "count": 99
+        },
+        {
+            "name": "喜剧",
+            "count": 78
+        },
+        {
+            "name": "搞笑",
+            "count": 69
+        },
+        {
+            "name": "kuso",
+            "count": 59
+        },
+        {
+            "name": "特摄",
+            "count": 49
+        },
+        {
+            "name": "料理番组",
+            "count": 43
+        },
+        {
+            "name": "正义",
+            "count": 42
+        },
+        {
+            "name": "漫画改",
+            "count": 38
+        },
+        {
+            "name": "颠覆",
+            "count": 37
+        },
+        {
+            "name": "2008年10月",
+            "count": 28
+        },
+        {
+            "name": "漫改",
+            "count": 17
+        },
+        {
+            "name": "治愈",
+            "count": 16
+        },
+        {
+            "name": "日常",
+            "count": 14
+        },
+        {
+            "name": "sunred",
+            "count": 14
+        },
+        {
+            "name": "欢乐",
+            "count": 12
+        },
+        {
+            "name": "日本",
+            "count": 10
+        },
+        {
+            "name": "泡面番",
+            "count": 9
+        },
+        {
+            "name": "动画",
+            "count": 8
+        },
+        {
+            "name": "岸誠二",
+            "count": 8
+        },
+        {
+            "name": "ヒーロー",
+            "count": 8
+        },
+        {
+            "name": "上江洲誠",
+            "count": 4
+        },
+        {
+            "name": "TVA",
+            "count": 4
+        }
+    ],
+    "meta_tags": [
+        "喜剧",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        6169,
+        6172
+    ],
+    "main_characters": [
+        {
+            "id": 6169,
+            "name": "サンレッド",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2a/da/6169_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/da/6169_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/da/6169_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2a/da/6169_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4477,
+                    "name": "髙木俊",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0d/ac/4477_prsn_05fNn.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/ac/4477_prsn_05fNn.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/ac/4477_prsn_05fNn.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0d/ac/4477_prsn_05fNn.jpg"
+                    },
+                    "short_summary": "日本の男性俳優、声優。石川県出身。フリー。\r\n血液型はA型。身長179cm。体重62kg。靴のサイズ26.5cm。\r\n\r\n代々木アニメーション学院卒業後、劇団アルターエゴ、ブリングアップに所属していた。現在はフリー。舞台、声優など幅広く活動していて、最近はMCの仕事が増えている。\r\n2005年7月より、劇団ひまわり所属の宮野真守とユニット「SMILY☆SPIKY」を結成。\r\n2歳までアメリカ合衆国のシカゴで育つも英語が苦手とラジオで語っている。\r\nまた、近年では不定期（おおよそ年に1 - 2回のペース）で自らの一人芝居「オレイロ」シリーズを公演している。\r\nお笑い芸人さまぁ〜ずのファンであり、DVD集めに励んでいる。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6172,
+            "name": "ヴァンプ将軍",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c5/ef/6172_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/ef/6172_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/ef/6172_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c5/ef/6172_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 28473,
+                    "name": "山田ルイ53世",
+                    "type": 1,
+                    "career": [
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1c/5d/28473_prsn_nIPK7.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/5d/28473_prsn_nIPK7.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/5d/28473_prsn_nIPK7.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1c/5d/28473_prsn_nIPK7.jpg"
+                    },
+                    "short_summary": "本名：山田 順三（やまだ じゅんぞう）\r\n主にツッコミ担当。\r\n男爵キャラとしてはパリ・シャンゼリゼ通り出身、\r\nソルボンヌ大学卒業を自称。\r\n実際は兵庫県三木市出身で、六甲中学校に進学するが、\r\n中学2年生の夏頃から引きこもりになり、中途退学。\r\n\r\n引きこもりは20歳まで続く。\r\n大学入学資格検定を経て愛媛大学法文学部の夜間主コースに入学。大学時代に友人と漫才コンビを組むも解散、\r\n大学2年の途中で退学し上京、東京NSC3期生となる。\r\nNSC時代の相方ははいじぃ。\r\n\r\n旧芸名は「ピュアぞー」である。\r\n単独で『R-1ぐらんぷり』にも出場している。\r\n\r\n2011年8月8日、一般女性と結婚。\r\n結婚日は8月8日が「髭の日」だったことから、\r\n夫人からの提案で決まった。\r\n翌年7月4日に長女が誕生。\r\n\r\n2014年夏より女性アイドルグループ\r\n「まどもあ54世」のプロデュースを手がける。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

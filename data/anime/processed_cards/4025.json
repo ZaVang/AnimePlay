@@ -1,0 +1,70 @@
+{
+    "id": 4025,
+    "name": "阿拉蕾",
+    "image_path": "data/images/anime/4025.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "1997年重制版\r\n作者在作品虚构“企鹅村”的远离城市的偏僻村庄。村中有一名自以为是天才的则卷千兵卫博士。他想制造一个和真人一样的机器人，所以制造了则卷阿拉蕾。一系列荒诞不稽的故事从此展开。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 74,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1997-11-26",
+    "rating_rank": 992,
+    "rating_score": 7.5,
+    "rating_total": 611,
+    "main_character_ids": [
+        17749,
+        27111
+    ],
+    "main_characters": [
+        {
+            "id": 17749,
+            "name": "則巻アラレ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/01/35/17749_crt_WW9Wd.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/35/17749_crt_WW9Wd.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/35/17749_crt_WW9Wd.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/01/35/17749_crt_WW9Wd.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3843,
+                    "name": "川田妙子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9c/1d/3843_prsn_6gOo8.jpg?r=1617909311",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/1d/3843_prsn_6gOo8.jpg?r=1617909311",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/1d/3843_prsn_6gOo8.jpg?r=1617909311",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9c/1d/3843_prsn_6gOo8.jpg?r=1617909311"
+                    },
+                    "short_summary": "1986年に『こんなこいるかな』のミャー役でデビュー。\r\n\r\n『ソニックシリーズ』のエミーなどの動物、『うちの3姉妹』のチーなどの幼子、『ドクター・スランプ』のアラレちゃんなどの少女を演じることが多い。海外ドラマの吹き替えでは、『フルハウス』のミシェル役では赤ん坊の頃から少女時代までを吹き替えた。また、ミシェルを演じたオルセン姉妹が出演する『ふたりはふたご』でも、双子の姉アシュレー役を吹き替える。\r\n\r\n2000年末から2001年にかけて出産のために休業。このため、『ニャニがニャンだー ニャンダーかめん』のミーコ役をかないみかに引き継がせ降板、『いないいないばあっ!』のくぅ役とソニックシリーズ（『ソニックシャッフル』）のエミー役は本井えみが、（『ざわざわ森のがんこちゃん』）のチョビくん役を望月久代がそれぞれ代役をした。\r\n\r\n田中敦子とユニット「Windy's murmur」（ウィンディーズマーマー）を組んでいる。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27111,
+            "name": "則巻ガジラ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c5/34/27111_crt_tv3eT.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/34/27111_crt_tv3eT.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/34/27111_crt_tv3eT.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c5/34/27111_crt_tv3eT.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

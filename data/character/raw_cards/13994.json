@@ -1,0 +1,43 @@
+{
+    "id": 13994,
+    "name": "安藤みなわ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ef/d4/13994_crt_byBp2.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ef/d4/13994_crt_byBp2.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ef/d4/13994_crt_byBp2.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ef/d4/13994_crt_byBp2.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "安藤美奈和"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月22日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 22,
+    "stat": {
+        "comments": 3,
+        "collects": 12
+    },
+    "anime_ids": [
+        2142
+    ]
+}

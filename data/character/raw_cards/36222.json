@@ -1,0 +1,84 @@
+{
+    "id": 36222,
+    "name": "龍崎薫",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/81/0e/36222_crt_mYjJt.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/0e/36222_crt_mYjJt.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/0e/36222_crt_mYjJt.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/81/0e/36222_crt_mYjJt.jpg"
+    },
+    "summary": "手机社群游戏《偶像大师 灰姑娘女孩》系列的偶像。\r\n\r\n为《偶像大师 灰姑娘女孩》中登场年纪最小的女孩之一。是一名喜欢料理的元气女孩。对制作人称呼「老师(せんせぇ)」，还会制作饭团。在出身地似乎有过电视出演的经历。\r\n独特的外貌特征和爱好使其在Loli组也不失一道亮丽的风景。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "龙崎薰"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "龍崎 薫"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "りゅうざき かおる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ryūzaki Kaoru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月20日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "132cm"
+        },
+        {
+            "key": "体重",
+            "value": "32kg"
+        },
+        {
+            "key": "BWH",
+            "value": "65/51/70"
+        },
+        {
+            "key": "年龄",
+            "value": "9岁"
+        },
+        {
+            "key": "出身地",
+            "value": "爱媛"
+        },
+        {
+            "key": "兴趣",
+            "value": "料理"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 20,
+    "stat": {
+        "comments": 21,
+        "collects": 44
+    },
+    "anime_ids": [
+        376703
+    ]
+}

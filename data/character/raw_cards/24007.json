@@ -1,0 +1,52 @@
+{
+    "id": 24007,
+    "name": "栗原万里",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/59/9a/24007_crt_RGLWJ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/9a/24007_crt_RGLWJ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/9a/24007_crt_RGLWJ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/59/9a/24007_crt_RGLWJ.jpg"
+    },
+    "summary": "裏生徒会会長[15]。理事長の娘であり[24]、千代の姉[25]。芽衣子とは小学校以来の仲[26]。カラスを操り[24]、学園を影から統べるカリスマ[15][27]。ポーカーフェイスで、口癖は「男はクズ」（的な発言）[15]。父との確執と潔癖な性格から男そのものを嫌悪するあまり[27][28]、DTO（男子退学オペレーション）を発動し、男子全員を退学させようと画策するが[25][29]、その悪事が明らかにされ、裏生徒会ともども逆に懲罰房へ入れられてしまう[30]。\r\n入獄後は、芽衣子ともども小学校時代から因縁のあるケイトに執拗な嫌がらせを受けており裏生徒会解散を画策するケイトに対抗するため、キヨシと手を組んで脱獄を決意する。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "栗原万里"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "栗原 万里"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くりはら まり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kurihara Mari"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 18,
+        "collects": 77
+    },
+    "anime_ids": [
+        110048
+    ]
+}

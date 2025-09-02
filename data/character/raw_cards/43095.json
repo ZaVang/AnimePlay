@@ -1,0 +1,43 @@
+{
+    "id": 43095,
+    "name": "ツルギ・タテワキ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c0/54/43095_crt_6ascQ.jpg?r=1738428823",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/54/43095_crt_6ascQ.jpg?r=1738428823",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/54/43095_crt_6ascQ.jpg?r=1738428823",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c0/54/43095_crt_6ascQ.jpg?r=1738428823"
+    },
+    "summary": "光のソードアイズ (ソードブレイヴを扱う事の出来る選ばれし人間)。自分がアトランティアの王子という事を知り、母を助ける為に冒険の旅に出る。バトスピは初心者。正義感が強く、スケートボードが好きな熱血少年。「やるべし！」の言葉で気合いを入れる。光の赤デッキの使い手。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "剑・立胁"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.sunrise-inc.co.jp/battlespirits5/character/01.html"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 6
+    },
+    "anime_ids": [
+        45337
+    ]
+}

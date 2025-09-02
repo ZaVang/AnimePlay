@@ -1,0 +1,48 @@
+{
+    "id": 50850,
+    "name": "乾信司",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b1/0e/50850_crt_pAaw7.jpg?r=1485942268",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/0e/50850_crt_pAaw7.jpg?r=1485942268",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/0e/50850_crt_pAaw7.jpg?r=1485942268",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b1/0e/50850_crt_pAaw7.jpg?r=1485942268"
+    },
+    "summary": "搭乗車種…AE86 スプリンタートレノ GT-APEX 2door（後期型）\r\nSide Winder里最年轻的天才车手，和拓海开同款不同型的AE86。父亲曾是职业车手，但在信司还小的时候就已经去世，留下他们母子俩和那辆Sprinter Trueno，为了养家，信司的母亲乾静香每天都早出晚归工作，而工作地点和家又隔一座山，因此静香每天要辛苦的开车上下班。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "乾信司"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いぬい しんじ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Inui Shinji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 1
+    },
+    "anime_ids": [
+        104569
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": 39699,
+    "name": "ダークニンジャ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/87/c9/39699_crt_RZMpB.jpg?r=1458783939",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/c9/39699_crt_RZMpB.jpg?r=1458783939",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/c9/39699_crt_RZMpB.jpg?r=1458783939",
+        "grid": "https://lain.bgm.tv/pic/crt/g/87/c9/39699_crt_RZMpB.jpg?r=1458783939"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黑暗忍者"
+        },
+        {
+            "key": "别名",
+            "value": []
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 5
+    },
+    "anime_ids": [
+        175137
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "id": 31770,
+    "name": "毛利伸",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b9/60/31770_crt_85dyb.jpg?r=1428453035",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/60/31770_crt_85dyb.jpg?r=1428453035",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/60/31770_crt_85dyb.jpg?r=1428453035",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b9/60/31770_crt_85dyb.jpg?r=1428453035"
+    },
+    "summary": "毛利元就的后裔",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "毛利伸"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "水神"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "伸"
+                },
+                {
+                    "k": "日文名",
+                    "v": "水滸のシン"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "もうり しん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1973年3月14日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1973,
+    "birth_mon": 3,
+    "birth_day": 14,
+    "stat": {
+        "comments": 1,
+        "collects": 3
+    },
+    "anime_ids": [
+        3621
+    ]
+}

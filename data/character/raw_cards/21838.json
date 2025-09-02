@@ -1,0 +1,53 @@
+{
+    "id": 21838,
+    "name": "レイジ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/71/ef/21838_crt_xqMHr.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/ef/21838_crt_xqMHr.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/ef/21838_crt_xqMHr.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/71/ef/21838_crt_xqMHr.jpg"
+    },
+    "summary": "伊织诚在街上遇到的神秘少年。蛮横、任性、脾气暴躁、几乎没有一般人应有的常识。 在诚为其解决一单误会后，给了他一颗宝石，并扬言只要诚向宝石祈祷，自己就会现身替他解决问题。\r\n在诚的祈祷下参加了和佐佐木之间的模型对战，即使是初次接触，却展现了其卓越的操纵技术，其技术更和诚的父亲非常相似。\r\n操作模型：创制突击高达",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "岭司"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "アリーア・フォン・レイジ・アスナ"
+                },
+                {
+                    "v": "Ariane Von Reiji Asuna"
+                },
+                {
+                    "v": "阿利亚·冯·岭司·阿舒拿"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Reiji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 21
+    },
+    "anime_ids": [
+        77171
+    ]
+}

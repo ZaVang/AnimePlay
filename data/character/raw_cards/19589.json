@@ -1,0 +1,44 @@
+{
+    "id": 19589,
+    "name": "みつお（菊川みつお）",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e9/be/19589_crt_W5wiA.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/be/19589_crt_W5wiA.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/be/19589_crt_W5wiA.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e9/be/19589_crt_W5wiA.jpg"
+    },
+    "summary": "メガネがトレードマークの優等生。読書と天体観測が好きで、何でもメモにとるマメな性格。隣のクラスの根津とは親友。多少ファンシー系の趣味がある。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "光雄（菊川光雄）"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "きくかわ みつお"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        61118
+    ]
+}

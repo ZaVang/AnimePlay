@@ -1,0 +1,66 @@
+{
+    "id": 35683,
+    "name": "ダクネス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/62/ba/35683_crt_z6ZKg.jpg?r=1486083433",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/ba/35683_crt_z6ZKg.jpg?r=1486083433",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/ba/35683_crt_z6ZKg.jpg?r=1486083433",
+        "grid": "https://lain.bgm.tv/pic/crt/g/62/ba/35683_crt_z6ZKg.jpg?r=1486083433"
+    },
+    "summary": "外表是个金发碧眼，身材丰满的冰山美人，但真正的本性是有重度受虐癖和妄想癖的大抖M，年龄18岁，职业是防御力最高的“十字骑士”。（而选择这个职业是因为遭受怪物攻击对她而言是种快感，并将之当成一种SM玩法并乐在其中）力气很大，但因为没有习得攻击类技能所以攻击命中率超低。是贵族家的千金，所以对平民生活不是很了解。似乎对和真抱有异性的感情？",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "达克妮斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "达斯堤尼斯·福特·拉拉蒂娜"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Raratina Dustiness Ford"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ダスティネス・フォード・ララティーナ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Dukunesu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月6日"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 6,
+    "stat": {
+        "comments": 55,
+        "collects": 337
+    },
+    "anime_ids": [
+        174043,
+        135275,
+        342667
+    ]
+}

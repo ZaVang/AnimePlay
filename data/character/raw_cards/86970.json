@@ -1,0 +1,52 @@
+{
+    "id": 86970,
+    "name": "赤城郁実",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d3/a0/86970_crt_Z9iHY.jpg?r=1752965374",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/a0/86970_crt_Z9iHY.jpg?r=1752965374",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/a0/86970_crt_Z9iHY.jpg?r=1752965374",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d3/a0/86970_crt_Z9iHY.jpg?r=1752965374"
+    },
+    "summary": "医学部看護学科の1年生。初登場は9巻。咲太とは中学3年生の時に同じクラスで、大学の入学式で再会を果たすものの、それ以来会話はしていない。堅物で異性に潔癖な性格。\r\n9巻で咲太が違う世界を体験しているときは、彼女も峰ヶ原高校の生徒になっていた。そこでは咲太に普通に話しかける数少ない人物のうちのひとりで、咲太を意識しているような様子を見せていた。\r\n10巻では学生ボランティアの勧誘を行っていた。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "赤城郁实"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あかぎ いくみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Akagi Ikumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 17
+    },
+    "anime_ids": [
+        467930
+    ]
+}

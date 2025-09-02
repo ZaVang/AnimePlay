@@ -1,0 +1,56 @@
+{
+    "id": 54943,
+    "name": "ナナチ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/98/d8/54943_crt_qsJ9Q.jpg?r=1680347832",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/d8/54943_crt_qsJ9Q.jpg?r=1680347832",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/d8/54943_crt_qsJ9Q.jpg?r=1680347832",
+        "grid": "https://lain.bgm.tv/pic/crt/g/98/d8/54943_crt_qsJ9Q.jpg?r=1680347832"
+    },
+    "summary": "登场于第19话。居住于深界四层的半人半兔的生骸。\r\n\r\n有着兔子外形的「生骸」、知识丰富。与好友米蒂一同居住在深渊四层。\r\n\r\n性别未公布。使用男性化第一人称「俺、咱（オイラ）」。口癖是「嗯呐（んなぁ〜）」。\r\n\r\n被雷格触碰时会感到害羞。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "娜娜奇"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "奈奈祈"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Nanachi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "不明"
+        },
+        {
+            "key": "发色",
+            "value": "白发"
+        },
+        {
+            "key": "瞳色",
+            "value": "金瞳"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 135,
+        "collects": 602
+    },
+    "anime_ids": [
+        298477
+    ]
+}

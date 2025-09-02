@@ -1,0 +1,86 @@
+{
+    "id": 10446,
+    "name": "キュゥべえ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f9/83/10446_crt_88Ws1.jpg?r=1619420777",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/83/10446_crt_88Ws1.jpg?r=1619420777",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/83/10446_crt_88Ws1.jpg?r=1619420777",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f9/83/10446_crt_88Ws1.jpg?r=1619420777"
+    },
+    "summary": "「僕と契約して、魔法少女になってほしいんだ」\r\n少女の願い事をひとつだけ叶えてくれる魔法の使者。\r\n\r\n〴( ◕‿‿◕ )〵",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "丘比"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "久兵衛（时女一族称）"
+                },
+                {
+                    "v": "淫兽"
+                },
+                {
+                    "v": "安利始祖"
+                },
+                {
+                    "v": "QB"
+                },
+                {
+                    "v": "Q币"
+                },
+                {
+                    "v": "Q贝"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "〴( ◕‿‿◕ )〵"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Kyubey/Incubator"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "キュゥべえ/インキュベーター"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kyuubee/Inkyubeta"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "人类这种还要不同性别才能繁殖的生物真是麻烦啊"
+        },
+        {
+            "key": "引用来源",
+            "value": "www.madoka-magica.com/tv/character"
+        },
+        {
+            "key": "职业",
+            "value": "Top Sales"
+        },
+        {
+            "key": "人设",
+            "value": "苍树梅"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 396,
+        "collects": 638
+    },
+    "anime_ids": [
+        9717
+    ]
+}

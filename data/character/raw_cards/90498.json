@@ -1,0 +1,35 @@
+{
+    "id": 90498,
+    "name": "シロモ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a1/84/90498_crt_ciC1c.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/84/90498_crt_ciC1c.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/84/90498_crt_ciC1c.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a1/84/90498_crt_ciC1c.jpg"
+    },
+    "summary": "基本的に臆病なモルカーのなかでも特に臆病な性格を持つ。心優しい運転手に甘えたりもするが、いろいろなトラブルに巻き込まれがち。テディを姉御のように慕う。レタスが好き。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "引用来源",
+            "value": "https://molcar-anime.com/"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 3
+    },
+    "anime_ids": [
+        325178
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "id": 68756,
+    "name": "トルフィン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/44/0a/68756_crt_28cJI.jpg?r=1549518734",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/0a/68756_crt_28cJI.jpg?r=1549518734",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/0a/68756_crt_28cJI.jpg?r=1549518734",
+        "grid": "https://lain.bgm.tv/pic/crt/g/44/0a/68756_crt_28cJI.jpg?r=1549518734"
+    },
+    "summary": "アイスランドで暮らす、冒険を夢見る好奇心旺盛で負けず嫌いな少年。父・トールズや冒険者レイフ・エイリクソンから聞かされていた新大陸「ヴィンランド」に憧れ、その地に足を踏み入れてみたいと思っている。戦士として父の船に乗る為に、武器を手にしようとするが......。\r\n\r\n非常に優れた戦士だった父・トールズの血を色濃く継いでおり、小回りのきく小柄な体型を活かしたスピードに長けた戦い方をする。しかし、短気な性格で頭に血がのぼりやすく、そのせいで戦闘が不利になることもしばしば。 幼い頃聞いた「ヴィンランド」という土地の名をずっと覚えており、心の拠り所としている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "托尔芬"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Thorfinn Thordarson"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 54,
+        "collects": 102
+    },
+    "anime_ids": [
+        240386,
+        296739
+    ]
+}

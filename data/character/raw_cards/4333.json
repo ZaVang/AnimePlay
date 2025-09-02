@@ -1,0 +1,65 @@
+{
+    "id": 4333,
+    "name": "ブライト・ノア",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6c/83/4333_crt_JKbzH.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/83/4333_crt_JKbzH.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/83/4333_crt_JKbzH.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6c/83/4333_crt_JKbzH.jpg"
+    },
+    "summary": "《机动战士高达》宇宙世纪系列动画中出场作品数最多的，贯穿U.C.一世纪末吉恩独立战争到二世纪初马赫迪叛乱其间近30年历史的人物。\r\n最终军衔为大佐。从U.C.0079年在Side7被卷入战斗之后，历任白色木马级两栖攻击舰“白色基地号”、小型穿梭舰“诱惑号”、阿伽马级攻击巡洋舰“阿伽马号”、拟阿伽马级两栖攻击舰“拟阿伽马号”、萨拉米斯改级宇宙巡洋舰、拉·凯拉姆级机动战舰“拉·凯拉姆号”之舰长，身经百战。\r\nP.S.声优铃置洋孝于2006年去世后，一直没有选择新的声优，此后便很少在各种作品中出现。在SD高达系列全语音的作品中，采用了一部分以前录制的声音，新出现的台词则采用无声纯文字显示的处理方式。\r\nP.S.2 独角兽第四话出场时由新任声优成田剑出演。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "布莱德·诺亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "林有德"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Bright Noah"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ブライト・ノア"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Buraito Noa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "175"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 24,
+        "collects": 110
+    },
+    "anime_ids": [
+        9622,
+        50
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 49031,
+    "name": "ヤマト・命",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ae/3c/49031_crt_6Jq1R.jpg?r=1732295872",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ae/3c/49031_crt_6Jq1R.jpg?r=1732295872",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ae/3c/49031_crt_6Jq1R.jpg?r=1732295872",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ae/3c/49031_crt_6Jq1R.jpg?r=1732295872"
+    },
+    "summary": "极东出身的女冒险者。原“建御雷眷族”成员。\r\n曾与“建御雷眷族”其他5名成员在攻略中层时遭遇强大魔物，迫不得已向贝尔的小队使用了“怪物奉送”。为此一直觉得对不起贝尔他们。\r\n由于愧疚，在“赫斯缇雅眷族”与“阿波罗眷族”进行战争游戏时，以一年时间为限，改宗进入“赫斯缇雅眷族”进行支援。\r\n自幼父母离她而去，由建御雷照顾，由年幼开始便对建御雷产生感情，成大后化为爱慕之情。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "倭·命"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "大和·命"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Mikoto Yamato"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ヤマト・みこと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yamato Mikoto"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 33
+    },
+    "anime_ids": [
+        463778
+    ]
+}

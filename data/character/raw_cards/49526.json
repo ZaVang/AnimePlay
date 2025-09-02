@@ -1,0 +1,49 @@
+{
+    "id": 49526,
+    "name": "天海護",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f5/3e/49526_crt_Rpglv.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/3e/49526_crt_Rpglv.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/3e/49526_crt_Rpglv.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f5/3e/49526_crt_Rpglv.jpg"
+    },
+    "summary": "拥有感应Zonder和净解Zonder化人类能力的小学生，因此得以成为GGG的特殊队员。真实身份是被Galeon护送到地球并托付给天还加的绿星领导者凯恩的儿子拉迪奥。因此在有危险时会受到Galeon的保护。感应到Zonder时头发会变成绿色，净解Zonder时全身发出绿光，并会生出三对精灵一样的翅膀。同时，他也拥有增强3G部队的G石能量的能力。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "天海护"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あまみ まもる"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 4
+    },
+    "anime_ids": [
+        2981,
+        1894
+    ]
+}

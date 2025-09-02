@@ -1,0 +1,65 @@
+{
+    "id": 2011,
+    "name": "播磨拳児",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c9/b3/2011_crt_w2CjP.jpg?r=1508769251",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/b3/2011_crt_w2CjP.jpg?r=1508769251",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/b3/2011_crt_w2CjP.jpg?r=1508769251",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c9/b3/2011_crt_w2CjP.jpg?r=1508769251"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "播磨拳儿"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "播磨拳児"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Harima Kenji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "12月1日"
+        },
+        {
+            "key": "身高",
+            "value": "180cm"
+        },
+        {
+            "key": "体重",
+            "value": "79kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 1,
+    "stat": {
+        "comments": 23,
+        "collects": 67
+    },
+    "anime_ids": [
+        440,
+        1878
+    ]
+}

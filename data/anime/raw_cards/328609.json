@@ -1,0 +1,530 @@
+{
+    "id": 328609,
+    "type": 2,
+    "name": "ぼっち・ざ・ろっく！",
+    "name_cn": "孤独摇滚！",
+    "summary": "作为网络吉他手“吉他英雄”而广受好评的后藤一里，在现实中却是个什么都不会的沟通障碍者。一里有着组建乐队的梦想，但因为不敢向人主动搭话而一直没有成功，直到一天在公园中被伊地知虹夏发现并邀请进入缺少吉他手的“结束乐队”。可是，完全没有和他人合作经历的一里，在人前完全发挥不出原本的实力。为了努力克服沟通障碍，一里与“结束乐队”的成员们一同开始努力……",
+    "nsfw": false,
+    "locked": false,
+    "date": "2022-10-08",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/e2/e7/328609_2EHLJ.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/e2/e7/328609_2EHLJ.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/e2/e7/328609_2EHLJ.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/e2/e7/328609_2EHLJ.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/e2/e7/328609_2EHLJ.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "孤独摇滚！"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "BTR",
+                    "k": null
+                },
+                {
+                    "v": "Bocchi the Rock!",
+                    "k": null
+                },
+                {
+                    "v": "Bocchi the \"Guitar Hero\" Rock Story",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2022年10月8日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://bocchi.rocks/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX / BS11 / 群馬テレビ / とちぎテレビ"
+        },
+        {
+            "key": "其他电视台",
+            "value": "MRT宮崎放送 / MBS / RKB毎日放送 / AT-X"
+        },
+        {
+            "key": "播放结束",
+            "value": "2022年12月24日"
+        },
+        {
+            "key": "导演",
+            "value": "斎藤圭一郎"
+        },
+        {
+            "key": "音乐",
+            "value": "菊谷知樹"
+        },
+        {
+            "key": "Copyright",
+            "value": "©はまじあき／芳文社・アニプレックス"
+        },
+        {
+            "key": "原作",
+            "value": "はまじあき（芳文社「まんがタイムきららMAX」連載中）"
+        },
+        {
+            "key": "系列构成",
+            "value": "吉田恵里香"
+        },
+        {
+            "key": "人物设定",
+            "value": "けろりら"
+        },
+        {
+            "key": "总作画监督",
+            "value": "けろりら"
+        },
+        {
+            "key": "副导演",
+            "value": "山本ゆうすけ"
+        },
+        {
+            "key": "道具设计",
+            "value": "永木歩実；人偶制作：佐藤利幸"
+        },
+        {
+            "key": "色彩设计",
+            "value": "横田明日香"
+        },
+        {
+            "key": "美术监督",
+            "value": "守安靖尚"
+        },
+        {
+            "key": "美术设计",
+            "value": "taracod"
+        },
+        {
+            "key": "摄影监督",
+            "value": "金森つばさ；摄影监督辅助：佐藤瑠里"
+        },
+        {
+            "key": "CG 导演",
+            "value": "宮地克明；Live CG导演：内田博明"
+        },
+        {
+            "key": "剪辑",
+            "value": "平木大輔"
+        },
+        {
+            "key": "音响监督",
+            "value": "藤田亜紀子"
+        },
+        {
+            "key": "音响",
+            "value": "HALF H・P STUDIO"
+        },
+        {
+            "key": "音效",
+            "value": "八十正太"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "三井律郎"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "音羽-otoha-（OP）、谷口鮪 (KANA-BOON)、中嶋イッキュウ、北澤ゆうほ（ED）"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "樋口愛（ヒグチアイ）（OP）、谷口鮪 (KANA-BOON)、中嶋イッキュウ、北澤ゆうほ（ED）"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "結束バンド (青山吉能、長谷川育美、水野朔、鈴代紗弓)"
+        },
+        {
+            "key": "插入歌演出",
+            "value": "結束バンド、SICK HACK"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "斎藤圭一郎（OP）、スズキハルカ（ED）"
+        },
+        {
+            "key": "动画制作",
+            "value": "CloverWorks"
+        },
+        {
+            "key": "制片人",
+            "value": "石川達也、小林宏之"
+        },
+        {
+            "key": "製作",
+            "value": "Aniplex、芳文社"
+        },
+        {
+            "key": "3DCG",
+            "value": "Boundary；LIVE 舞台CG：exsa"
+        },
+        {
+            "key": "企画",
+            "value": "岩上敦宏、孝壽尚志"
+        },
+        {
+            "key": "音乐制作",
+            "value": "Aniplex"
+        },
+        {
+            "key": "总制片人",
+            "value": "制作统筹：清水暁"
+        },
+        {
+            "key": "脚本",
+            "value": "吉田恵里香"
+        },
+        {
+            "key": "分镜",
+            "value": "斎藤圭一郎(1,2,8,12)、山本ゆうすけ(3,11)、刈谷暢秀(4)、川上雄介(5,10,Live)、藤原佳幸(6)、アマタジャンチキ[石井俊匡](7)、平峯義大(9)"
+        },
+        {
+            "key": "演出",
+            "value": "斎藤圭一郎(1,12)、藤原佳幸(2,6,10)、山本ゆうすけ(3,11)、刈谷暢秀(4)、川上雄介(5,10,Live)、篠原啓輔(7)、瀬尾健(8)、平峯義大(9)"
+        },
+        {
+            "key": "作画监督",
+            "value": "けろりら(OP,1,4,6-8,10,12)、助川裕彦(2,11)、中村颯(3)、Maring Song(4,10)、高橋沙妃(5,10)、冨田真理(6)、朴世英(7)、石田一将(7)、川妻智美(7)、Franziska van Wulfen(8)、TOMATO(8)、伊藤弘樹(9)、きーくん[杉本龍彦](10)、スズキハルカ(ED)"
+        },
+        {
+            "key": "主动画师",
+            "value": "LIVE动画师：伊藤優希"
+        },
+        {
+            "key": "作画监督助理",
+            "value": "森川侑紀、安野将人、山崎淳、中村颯、高橋沙妃、けろりら、冨田真理、刈谷暢秀、瀬尾健、平峯義大、伊藤弘樹"
+        },
+        {
+            "key": "演出助理",
+            "value": "山本ゆうすけ、篠原啓輔"
+        },
+        {
+            "key": "协力",
+            "value": "瀬古口拓也"
+        },
+        {
+            "key": "制作助理",
+            "value": "染野翔（Desk辅佐）"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 16,
+    "rating": {
+        "rank": 69,
+        "total": 33768,
+        "count": {
+            "one": 180,
+            "two": 56,
+            "three": 49,
+            "four": 98,
+            "five": 307,
+            "six": 1113,
+            "seven": 4208,
+            "eight": 11476,
+            "nine": 10497,
+            "ten": 5784
+        },
+        "score": 8.4
+    },
+    "collection": {
+        "wish": 3276,
+        "collect": 49683,
+        "doing": 4364,
+        "on_hold": 837,
+        "dropped": 524
+    },
+    "tags": [
+        {
+            "name": "芳文社",
+            "count": 9485
+        },
+        {
+            "name": "音乐",
+            "count": 7584
+        },
+        {
+            "name": "CloverWorks",
+            "count": 6295
+        },
+        {
+            "name": "轻百合",
+            "count": 6116
+        },
+        {
+            "name": "日常",
+            "count": 5587
+        },
+        {
+            "name": "2022年10月",
+            "count": 4010
+        },
+        {
+            "name": "乐队题材",
+            "count": 3870
+        },
+        {
+            "name": "漫画改",
+            "count": 3823
+        },
+        {
+            "name": "搞笑",
+            "count": 2661
+        },
+        {
+            "name": "TV",
+            "count": 2538
+        },
+        {
+            "name": "百合",
+            "count": 1859
+        },
+        {
+            "name": "2022",
+            "count": 1559
+        },
+        {
+            "name": "漫改",
+            "count": 1357
+        },
+        {
+            "name": "斎藤圭一郎",
+            "count": 1314
+        },
+        {
+            "name": "乐队",
+            "count": 488
+        },
+        {
+            "name": "梅原翔太",
+            "count": 478
+        },
+        {
+            "name": "日本",
+            "count": 359
+        },
+        {
+            "name": "校园",
+            "count": 209
+        },
+        {
+            "name": "斋藤圭一郎",
+            "count": 179
+        },
+        {
+            "name": "青春",
+            "count": 168
+        },
+        {
+            "name": "治愈",
+            "count": 133
+        },
+        {
+            "name": "萌",
+            "count": 85
+        },
+        {
+            "name": "神作",
+            "count": 77
+        },
+        {
+            "name": "社恐",
+            "count": 71
+        },
+        {
+            "name": "孤独摇滚",
+            "count": 69
+        },
+        {
+            "name": "摇滚",
+            "count": 55
+        },
+        {
+            "name": "少女乐队",
+            "count": 53
+        },
+        {
+            "name": "2022年",
+            "count": 50
+        },
+        {
+            "name": "轻百",
+            "count": 45
+        },
+        {
+            "name": "成长",
+            "count": 32
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "音乐",
+        "日常"
+    ],
+    "series": false,
+    "main_character_ids": [
+        87968,
+        87973,
+        87974,
+        87975,
+        125172
+    ],
+    "main_characters": [
+        {
+            "id": 87968,
+            "name": "後藤ひとり",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b1/9c/87968_crt_illf5.jpg?r=1668060514",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/9c/87968_crt_illf5.jpg?r=1668060514",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/9c/87968_crt_illf5.jpg?r=1668060514",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b1/9c/87968_crt_illf5.jpg?r=1668060514"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13684,
+                    "name": "青山吉能",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6c/00/13684_prsn_vEz31.jpg?r=1695817179",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/00/13684_prsn_vEz31.jpg?r=1695817179",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/00/13684_prsn_vEz31.jpg?r=1695817179",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6c/00/13684_prsn_vEz31.jpg?r=1695817179"
+                    },
+                    "short_summary": "青山 吉能（あおやま よしの、1996年5月15日 - ）は、日本の女性声優。81プロデュースとエイベックス・ピクチャーズに所属。熊本県出身。血液型はA型。\r\n\r\n2012年に開催された、avex×81produce「Wake Up, Girls! AUDITION」第2回アニソン・ヴォーカルオーディションに合格。\r\n2013年4月に「Wake Up, Girls!」が結成され、同年7月から主な活動を開始するが本人は上京せず、熊本から都内や地方へ行っていた。\r\n2014年 には「Wake Up, Girls!」のメンバーとして全国ツアー、Animelo Summer Liveへの出演、幕張メッセで約5000人もの観客を集めた単独ライブ等を成功させる。また、地元のFMラジオで初の個人の冠番組を担当した。\r\n2015年、第9回声優アワード特別賞をWake Up, Girls!として受賞。3月には大学に合格し上京することを発表した。\r\n2016年、小林竜之、澁谷梓希、若井友希、吉岡茉祐と「D-selections」を結成。2016年4月から放送する、テレビアニメ『ハンドレッド』のオープニングテーマ『BLOODRED』を歌唱する。\r\n2017年、テレビアニメ『恋愛暴君』におけるメインヒロインの一人、グリを演じる。\r\n\r\n中学一年生の時に自分の取柄は声しかないと思っていた青山吉能は、その声を活かして頑張ろうと第1回アニソン・ヴォーカルオーディションやエリーを探せ! ミルキィホームズ 声優オーディションなど数多くのオーディションを受ける。東日本大震災の発生後は東北地方のために熊本県で何か出来ないかと思いオーディション受けていた。「avex×81produce Wake Up, Girls! AUDITION」第2回アニソン・ヴォーカルオーディションで初めて最終選考まで残り、そのまま合格。以降はWake Up, Girls!として活動しながら声優を続けている。\r\n嫌いなものは苺。特技は合唱、書道、スキー。スキーにおいては、国体冬季大会にジャイアントスラロームで出場している。また、2度の「ソロでイベント、やらせてください!」ではピアノ弾き語りも披露した。自分の好きな声を皆さんに聞いてもらえることが幸せだと考えていて、声優であることに拘りがあり、監督の山本寛に対して「私たちは声優です」と発言したこともある。\r\n自他ともに認めるアニメオタクで、特にSAMURAI DEEPER KYO、PSYCHO-PASSについては何度もブログやラジオで語っている。また、他の声優も好きであり早見沙織を多く話題に取り挙げていて、ラジオのコーナー内で「私の好きな早見沙織さんベスト3」というテーマでトークをすることもあった。2014年に開催されたアニメJAMで念願の共演を果たした。ゲームに嵌りやすく、正月や自身の誕生日を白猫プロジェクトプレイ中にいつのまにか迎えていた程である。\r\n家族は兄が1人、姉が2人で四人兄妹の末っ子。吉能の「吉」は父から、「能」は伊能忠敬から名前に使われた。父は吉能のゲームボーイアドバンスを膝で割ったことがあるほどの厳格な性格で、吉能が上京する際に大学への進学を決意したのも、このままでは上京を許してもらえないと判断したためである。\r\n家族以外の交友関係では、Wake Up, Girls!のメンバーとは自宅に泊めあう仲である。しかし、吉岡茉祐とは一度衝突したことがあり、その顛末はアニメWake Up, Girls!8話の七瀬佳乃と島田真夢のストーリーに反映されている。島ゆいかとは小学校の同級生。Wake Up, Girls!の先輩にあたるi☆Risのファンであると同時にメンバーの一人である澁谷梓希と交流が深く、2015年の誕生日には洋服をプレゼントされ電話も貰っている。自身のラジオである青山吉能 聞いとっと!?よしのモン。・*・:≡(　ε:)のディレクターはラジオが終了した後も青山吉能によるツイッター企画に参加していたり、イベントに現れたりしている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 87973,
+            "name": "伊地知虹夏",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6c/af/87973_crt_IFxtz.jpg?r=1666321823",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/af/87973_crt_IFxtz.jpg?r=1666321823",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/af/87973_crt_IFxtz.jpg?r=1666321823",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6c/af/87973_crt_IFxtz.jpg?r=1666321823"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 32687,
+                    "name": "鈴代紗弓",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8a/42/32687_prsn_GF9g5.jpg?r=1688106625"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 87974,
+            "name": "山田リョウ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/63/6b/87974_crt_qkKzi.jpg?r=1668004949",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/6b/87974_crt_qkKzi.jpg?r=1668004949",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/6b/87974_crt_qkKzi.jpg?r=1668004949",
+                "grid": "https://lain.bgm.tv/pic/crt/g/63/6b/87974_crt_qkKzi.jpg?r=1668004949"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 41232,
+                    "name": "水野朔",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/05/88/41232_prsn_7U7C9.jpg?r=1692627982",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/88/41232_prsn_7U7C9.jpg?r=1692627982",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/88/41232_prsn_7U7C9.jpg?r=1692627982",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/05/88/41232_prsn_7U7C9.jpg?r=1692627982"
+                    },
+                    "short_summary": "水野です。声を使う事をお仕事にできるよう頑張ります。お芝居.歌.絵を描く事.アニメ.ゲーム.漫画.深海魚、海洋生物、動物が大好き。虫は大嫌い。 SMA Anistoteles CDC歌手部門 新人賞。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 87975,
+            "name": "喜多郁代",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d4/f4/87975_crt_WUMbD.jpg?r=1666830882",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/f4/87975_crt_WUMbD.jpg?r=1666830882",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/f4/87975_crt_WUMbD.jpg?r=1666830882",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d4/f4/87975_crt_WUMbD.jpg?r=1666830882"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 30858,
+                    "name": "長谷川育美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/85/45/30858_prsn_9nB7N.jpg?r=1705933451",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/45/30858_prsn_9nB7N.jpg?r=1705933451",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/45/30858_prsn_9nB7N.jpg?r=1705933451",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/85/45/30858_prsn_9nB7N.jpg?r=1705933451"
+                    },
+                    "short_summary": "日本女性声优。出生于栃木县。身高164cm，血型A型。所属事务所为Raccoon Dog（ラクーンドッグ）。\r\n\r\n就读两年制专科学校期间，同时在Pro Fit声优培训学校进修，并完成全部课程。\r\n\r\n2018年4月10日，宣布从Pro Fit事务所的预备成员晋升为准正式成员。2021年4月，正式升格为事务所签约声优。\r\n\r\n2021年首次担纲主演，为《86-不存在的战区-》女主角芙拉蒂蕾娜·米利杰献声，同时出演《弱势角色友崎君》主要角色七海美波。同年首次担任动画广播节目《86-不存在的战区-圣玛格诺利亚共和国第85.5区情报局》主持人。\r\n\r\n2022年4月1日，因原事务所Pro Fit于同年3月底终止经纪业务，正式转入Raccoon Dog。\r\n\r\n兴趣爱好是独自唱卡拉OK、长时间泡澡，特长为歌唱与Y字平衡动作。\r\n持有日本汉字能力检定准2级证书。\r\n公开表示憧憬的声优是入野自由与泽城美雪。\r\n立志成为声优的契机是初中一年级时沉迷《网球王子》等运动题材漫画。自述学业不佳，曾被班主任评价性格固执。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 125172,
+            "name": "結束バンド",
+            "type": 4,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/72/e5/125172_crt_lZs9i.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/e5/125172_crt_lZs9i.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/e5/125172_crt_lZs9i.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/72/e5/125172_crt_lZs9i.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

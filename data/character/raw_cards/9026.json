@@ -1,0 +1,81 @@
+{
+    "id": 9026,
+    "name": "三橋廉",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f9/29/9026_crt_Lqqq0.jpg?r=1398188556",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/29/9026_crt_Lqqq0.jpg?r=1398188556",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/29/9026_crt_Lqqq0.jpg?r=1398188556",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f9/29/9026_crt_Lqqq0.jpg?r=1398188556"
+    },
+    "summary": "西浦のエース。自分に自信がなくオドオドしがちだが、投げることへの熱意は人一倍。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "三桥廉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みはし れん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mihashi Ren"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月17日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "165cm→166.5cm"
+        },
+        {
+            "key": "体重",
+            "value": "52kg"
+        },
+        {
+            "key": "学校",
+            "value": "西浦高校 1年9组"
+        },
+        {
+            "key": "守备位置",
+            "value": "投手"
+        },
+        {
+            "key": "背番号",
+            "value": "1"
+        },
+        {
+            "key": "家族构成",
+            "value": "父·母"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 17,
+    "stat": {
+        "comments": 12,
+        "collects": 47
+    },
+    "anime_ids": [
+        4077,
+        1267
+    ]
+}

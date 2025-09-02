@@ -1,0 +1,458 @@
+{
+    "id": 296367,
+    "type": 2,
+    "name": "SSSS.DYNAZENON",
+    "name_cn": "SSSS.电光机王",
+    "summary": "不如归台高中一年生的麻中蓬，在某日回家的路上，与自称『怪兽操控者』的谜之男子失马相遇。\r\n突然出现的怪兽以及巨型机器人戴拿赛诺。\r\n在那里的南梦芽、山中历、飞鸟川千濑也共同被卷入战斗中。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2021-04-02",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/a1/11/296367_yPic1.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/a1/11/296367_yPic1.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/a1/11/296367_yPic1.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/a1/11/296367_yPic1.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/a1/11/296367_yPic1.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "SSSS.电光机王"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Scarred Souls Shine like Stars.DYNAZENON",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2021年4月2日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期五"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://dynazenon.net"
+        },
+        {
+            "key": "播放电视台",
+            "value": "MBS / BS11 / TOKYO MX"
+        },
+        {
+            "key": "播放结束",
+            "value": "2021年6月18日"
+        },
+        {
+            "key": "导演",
+            "value": "雨宮哲"
+        },
+        {
+            "key": "Copyright",
+            "value": "©円谷プロ　©2021 TRIGGER・雨宮哲／「DYNAZENON」製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "グリッドマン"
+        },
+        {
+            "key": "人物设定",
+            "value": "坂本勝；副人物：中村真由美"
+        },
+        {
+            "key": "主动画师",
+            "value": "牟田口裕基 [主英雄作画]"
+        },
+        {
+            "key": "CG 导演",
+            "value": "市川孝次（グラフィニカ）；总：宮風慎一（グラフィニカ）"
+        },
+        {
+            "key": "美术监督",
+            "value": "権瓶岳斗"
+        },
+        {
+            "key": "摄影监督",
+            "value": "志良堂勝規（グラフィニカ）"
+        },
+        {
+            "key": "音效",
+            "value": "森川永子（ちゅらサウンド）"
+        },
+        {
+            "key": "动画制片人",
+            "value": "宇佐義大、志太駿介"
+        },
+        {
+            "key": "机械作画监督",
+            "value": "浅野元 [机械镜头导演]、立花昭二"
+        },
+        {
+            "key": "原画",
+            "value": "横屋健太(合体DN原画)、小林冬至生(爆炸DN原画)、伊藤一樹(变形DN原画)"
+        },
+        {
+            "key": "机械设定",
+            "value": "野中剛 [电光机王设定]"
+        },
+        {
+            "key": "设定",
+            "value": "コヤマシゲト [设定顾问]、西川伸司、板野一郎、田口清隆、酉澤安施、丸山浩、岡本英郎、後藤正行 [怪兽设计]"
+        },
+        {
+            "key": "监修",
+            "value": "塚越隆行"
+        },
+        {
+            "key": "製作",
+            "value": "「DYNAZENON」製作委員会（ポニーキャニオン、円谷プロダクション、日本BS放送、ウルトラスーパーピクチャーズ、メモリーテック・ホールディングス、Good Smile Company、毎日放送）"
+        },
+        {
+            "key": "执行制片人",
+            "value": "笹木孝弘、中村伸一、青木竹彦、隠田雅浩"
+        },
+        {
+            "key": "企画",
+            "value": "古川陽子、黒澤桂、田﨑勝也、大塚雅彦、上田豊、宇佐義大、丸山博雄；协力：渋谷浩康"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "鎗水善史、田井モトヨシ"
+        },
+        {
+            "key": "音乐制作",
+            "value": "ポニーキャニオン；协力： ロードアンドスカイ・オーガニゼイション"
+        },
+        {
+            "key": "制片人",
+            "value": "小山直紀、大和田智之、池田一郎、田中ヒロ、亀井博司"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 27,
+    "rating": {
+        "rank": 960,
+        "total": 10826,
+        "count": {
+            "one": 9,
+            "two": 13,
+            "three": 27,
+            "four": 60,
+            "five": 237,
+            "six": 1035,
+            "seven": 3798,
+            "eight": 4592,
+            "nine": 744,
+            "ten": 311
+        },
+        "score": 7.5
+    },
+    "collection": {
+        "wish": 2545,
+        "collect": 16667,
+        "doing": 1193,
+        "on_hold": 666,
+        "dropped": 309
+    },
+    "tags": [
+        {
+            "name": "TRIGGER",
+            "count": 2833
+        },
+        {
+            "name": "原创",
+            "count": 2577
+        },
+        {
+            "name": "恋爱",
+            "count": 2044
+        },
+        {
+            "name": "特摄",
+            "count": 1989
+        },
+        {
+            "name": "2021年4月",
+            "count": 1525
+        },
+        {
+            "name": "TV",
+            "count": 1264
+        },
+        {
+            "name": "战斗",
+            "count": 1067
+        },
+        {
+            "name": "JK",
+            "count": 957
+        },
+        {
+            "name": "雨宮哲",
+            "count": 879
+        },
+        {
+            "name": "萝卜",
+            "count": 866
+        },
+        {
+            "name": "2021",
+            "count": 732
+        },
+        {
+            "name": "科幻",
+            "count": 593
+        },
+        {
+            "name": "机战",
+            "count": 559
+        },
+        {
+            "name": "雨宫哲",
+            "count": 432
+        },
+        {
+            "name": "長谷川圭一",
+            "count": 213
+        },
+        {
+            "name": "日本",
+            "count": 104
+        },
+        {
+            "name": "校园",
+            "count": 59
+        },
+        {
+            "name": "日本动画",
+            "count": 38
+        },
+        {
+            "name": "2021年",
+            "count": 37
+        },
+        {
+            "name": "青春",
+            "count": 37
+        },
+        {
+            "name": "特摄改",
+            "count": 35
+        },
+        {
+            "name": "热血",
+            "count": 33
+        },
+        {
+            "name": "DK",
+            "count": 30
+        },
+        {
+            "name": "奇幻",
+            "count": 29
+        },
+        {
+            "name": "纯爱",
+            "count": 17
+        },
+        {
+            "name": "扳机社",
+            "count": 14
+        },
+        {
+            "name": "ssss",
+            "count": 13
+        },
+        {
+            "name": "榎木淳弥",
+            "count": 11
+        },
+        {
+            "name": "SSSS.GRIDMAN",
+            "count": 11
+        },
+        {
+            "name": "日常",
+            "count": 9
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "原创",
+        "战斗"
+    ],
+    "series": false,
+    "main_character_ids": [
+        88129,
+        88130,
+        88132,
+        88133,
+        88134
+    ],
+    "main_characters": [
+        {
+            "id": 88129,
+            "name": "ガウマ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/37/71/88129_crt_eWVT9.jpg?r=1624171779",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/71/88129_crt_eWVT9.jpg?r=1624171779",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/71/88129_crt_eWVT9.jpg?r=1624171779",
+                "grid": "https://lain.bgm.tv/pic/crt/g/37/71/88129_crt_eWVT9.jpg?r=1624171779"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19515,
+                    "name": "濱野大輝",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/58/39/19515_prsn_7dGAg.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/39/19515_prsn_7dGAg.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/39/19515_prsn_7dGAg.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/58/39/19515_prsn_7dGAg.jpg"
+                    },
+                    "short_summary": "日本の男性声優。東京都出身。\r\n勝田声優学院、日本ナレーション演技研究所卒業。アーツビジョン所属。\r\n趣味・特技として英会話・スポーツ観戦・フットサル・映画鑑賞・音楽鑑賞を挙げている。\r\n中学時代にはラグビー部に所属し、ハーフバックとウィングを担当していた。\r\n尊敬する人物はエリック・クラプトン。先人をリスペクトしつつ、常に愛される作品を生み出す姿勢に憧れるとのこと。\r\n既婚者であり、2014年10月には第一子が誕生している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 88130,
+            "name": "南夢芽",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/55/1d/88130_crt_37H11.jpg?r=1617522223",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/1d/88130_crt_37H11.jpg?r=1617522223",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/1d/88130_crt_37H11.jpg?r=1617522223",
+                "grid": "https://lain.bgm.tv/pic/crt/g/55/1d/88130_crt_37H11.jpg?r=1617522223"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 34866,
+                    "name": "若山詩音",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/87/b9/34866_prsn_3xaEH.jpg?r=1728674708",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/b9/34866_prsn_3xaEH.jpg?r=1728674708",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/b9/34866_prsn_3xaEH.jpg?r=1728674708",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/87/b9/34866_prsn_3xaEH.jpg?r=1728674708"
+                    },
+                    "short_summary": "若山 詩音（わかやま しおん、1998年2月10日 - ）は、日本の女性声優、元子役。千葉県出身。劇団ひまわり所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 88132,
+            "name": "飛鳥川ちせ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/50/0f/88132_crt_xxXkB.jpg?r=1619859666",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/50/0f/88132_crt_xxXkB.jpg?r=1619859666",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/50/0f/88132_crt_xxXkB.jpg?r=1619859666",
+                "grid": "https://lain.bgm.tv/pic/crt/g/50/0f/88132_crt_xxXkB.jpg?r=1619859666"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 11485,
+                    "name": "安済知佳",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e9/02/11485_prsn_63BEE.jpg?r=1688702458",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/02/11485_prsn_63BEE.jpg?r=1688702458",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/02/11485_prsn_63BEE.jpg?r=1688702458",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e9/02/11485_prsn_63BEE.jpg?r=1688702458"
+                    },
+                    "short_summary": "所属事务所为Avex Planning & Development。\r\n\r\n小学5年级时开始知道声优这个职业，中学生时进入了Avex Artist Academy。当初因为交通费的关系，15岁时独自一人从福井县到东京，并过着一个月一次从东京回到福井县高中读书的生活。\r\n\r\n勉強を始めてから4年目の2009年、テレビアニメ『あにゃまる探偵 キルミンずぅ』のメインキャラクター、御子神ナギサ役でデビュー。\r\n2014年、テレビアニメ『棺姫のチャイカ』のチャイカ・トラバント役で初主演。\r\n\r\n2020年8月1日，在Instagram上公布结婚的消息。\r\n\r\nYTB频道：\r\nhttps://www.youtube.com/channel/UCdWglOsvq7Q_3-XM5XMxaqQ",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 88133,
+            "name": "麻中蓬",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e2/8f/88133_crt_1einY.jpg?r=1618104837",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/8f/88133_crt_1einY.jpg?r=1618104837",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/8f/88133_crt_1einY.jpg?r=1618104837",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e2/8f/88133_crt_1einY.jpg?r=1618104837"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 16353,
+                    "name": "榎木淳弥",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/70/16353_prsn_O8uZj.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/70/16353_prsn_O8uZj.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/70/16353_prsn_O8uZj.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/70/16353_prsn_O8uZj.jpg"
+                    },
+                    "short_summary": "大学時代に周囲の影響でアニメを見始めるようになり、『天元突破グレンラガン』に感動したことがきっかけで声優を目指す。アトミックモンキー 声優・演技研究所に3期生として入所、卒業後に事務所所属となる。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 88134,
+            "name": "山中暦",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/cb/50/88134_crt_Xp0MK.jpg?r=1624171853",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cb/50/88134_crt_Xp0MK.jpg?r=1624171853",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cb/50/88134_crt_Xp0MK.jpg?r=1624171853",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cb/50/88134_crt_Xp0MK.jpg?r=1624171853"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 15592,
+                    "name": "梅原裕一郎",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/66/57/15592_prsn_u1o76.jpg?r=1525922035",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/57/15592_prsn_u1o76.jpg?r=1525922035",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/57/15592_prsn_u1o76.jpg?r=1525922035",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/66/57/15592_prsn_u1o76.jpg?r=1525922035"
+                    },
+                    "short_summary": "梅原 裕一郎（うめはら ゆういちろう、1991年3月8日 - ）は、日本の男性声優。アーツビジョン所属。静岡県出身。\r\n\r\n声優という職業を知ったきっかけは中学1年の頃に『ロード・オブ・ザ・リング』でアラゴルン役を演じていた大塚芳忠の声に惹かれたことから。\r\nその後、大学受験の浪人中に息抜きとして見ていた洋画がきっかけで、声優という仕事の楽しさに興味を持ち目指すようになった。大学2年から日本ナレーション演技研究所に通い始め、1年後に現事務所に所属。同期に山下大輝がいる。\r\n2013年に声優デビューし、2014年の『オレん家のフロ事情』でテレビアニメ初レギュラーを果たした。放送は「オレん家のフロ事情」が先だったが、実際にアニメ作品で名前のある役がオーディションで決まったのは『美男高校地球防衛部LOVE!』の由布院煙役が初めてだった。2015年10月、『ヤングブラック・ジャック』の間黒男役で初主演。\r\n2016年、第10回声優アワードで新人男優賞を受賞。\r\n2017年10月、Newtype×マチ★アソビ アニメアワード2017において男性声優賞を受賞。\r\n2018年5月10日、所属事務所から急性散在性脳脊髄炎の治療のため休業することを発表。同年7月30日、体調を考慮しながら徐々に活動を再開することが発表された。\r\n\r\n先述の経験から憧れの声優は大塚芳忠であり、彼のように外画の悪役などで名を馳せる役者になることを目標としている。アニメでは新海誠の『言の葉の庭』に感銘を受けたことから、彼の監督作品に出演するのが夢だと語っている。\r\n趣味はクラシック音楽、映画、ドラマ鑑賞。その中でも、ロシアの作曲家イゴール・ストラヴィンスキーの曲を好んで聴いている。\r\n好きな食べ物は唐揚げやヨーグルトなどを挙げており、苦手な食べ物はかつて磯臭いものを挙げていたが、食べられるようになったと語っている。\r\nピアノを8年ほど、ギターを3年ほど弾いていた。小学校時代は器楽部所属、高校時代は軽音楽部に所属し、ボーカルとエレキギターを担当していた。\r\nカラオケの十八番は尾崎紀世彦の「また逢う日まで」。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

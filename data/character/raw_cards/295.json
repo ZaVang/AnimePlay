@@ -1,0 +1,64 @@
+{
+    "id": 295,
+    "name": "黄",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/49/18/295_0zm0T.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/18/295_0zm0T.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/18/295_0zm0T.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/49/18/295_0zm0T.jpg"
+    },
+    "summary": "本名久能洁。普通人类。黑的小队的负责人。\r\n　　酒量超凡，曾说自己是不会醉的体质。表面看上去非常讨厌契约者，只把契约者当成物件，实际并非如此，进入组织前是警察。\r\n兴趣是吸烟和看体育报纸。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黄"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "\\",
+                    "v": "黄"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "久能洁"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くの きよし"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Huang"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "池田胜"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 11
+    },
+    "anime_ids": [
+        292
+    ]
+}

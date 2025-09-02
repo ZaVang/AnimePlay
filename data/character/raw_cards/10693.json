@@ -1,0 +1,68 @@
+{
+    "id": 10693,
+    "name": "アストレア",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/47/7e/10693_crt_C6iIB.jpg?r=1389840704",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/7e/10693_crt_C6iIB.jpg?r=1389840704",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/7e/10693_crt_C6iIB.jpg?r=1389840704",
+        "grid": "https://lain.bgm.tv/pic/crt/g/47/7e/10693_crt_C6iIB.jpg?r=1389840704"
+    },
+    "summary": "局地战斗用万能天使，有压倒性的近战能力，\r\n但不能持久，同时也没有远程攻击手段。\r\n智树遇到的第三个万能天使，被主人命令攻击智树。\r\n虽然战斗和感情能力极为丰富，但电算能力差到认为1+1=50，\r\n所以攻击植树的时候总会摔倒，于是被称为笨蛋。\r\n后来在在执行命令过程中自行切断了与主人相连的锁链，\r\n在最后与第二代人造天使对战时才展现出了真正的能力。\r\n\r\n装备：\r\n振动光子刀\r\n单方位完美防御\r\n不可变形加速式羽翼",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿斯特雷亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Astraea"
+                },
+                {
+                    "k": "日文名",
+                    "v": "アストレア"
+                },
+                {
+                    "k": "昵称",
+                    "v": "笨蛋"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "体重",
+            "value": "48kg"
+        },
+        {
+            "key": "BWH",
+            "value": "91/56/86"
+        },
+        {
+            "key": "型号",
+            "value": "δ(Delta)"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 12,
+        "collects": 88
+    },
+    "anime_ids": [
+        7150
+    ]
+}

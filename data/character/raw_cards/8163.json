@@ -1,0 +1,56 @@
+{
+    "id": 8163,
+    "name": "篠原みほ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/95/cc/8163_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/cc/8163_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/cc/8163_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/95/cc/8163_crt_anidb.jpg"
+    },
+    "summary": "藤が丘小学校三年生。\r\n将来自分に何ができるのか、自信が持てずに毎日を送る自称「悩み多き」少女。\r\n打ち解けられる性分ではなく、少し対人恐怖症ぎみである。\r\nでも「漫画家になりたい」という夢もあるし、親しい友達に対しては、意外とひょうきんなところもある。\r\n学校の成績は普通。得意科目は図画工作。\r\n一人でいると大抵落書きをしており、不思議なこと（超常現象）には興味津々。\r\n偶然に魔法の力をもらい、１５歳の少女・ララに変身する能力を得る。\r\n決断力や外向性に乏しい普段の自分が好きではないみほは、この時とばかりに、ララでいる間だけは別人格になろうと努力する。\r\nかくして、あわてものの万能モデル・ファンシーララが誕生する。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "篠原美穗"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "篠原みほ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shinohara Miho"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://pierrot.jp/title/magicgirl/"
+        },
+        {
+            "key": "年龄",
+            "value": "9岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 5
+    },
+    "anime_ids": [
+        8882
+    ]
+}

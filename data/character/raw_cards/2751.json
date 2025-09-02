@@ -1,0 +1,64 @@
+{
+    "id": 2751,
+    "name": "ロック",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/03/0e/2751_crt_anidb.jpg?r=1426958547",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/0e/2751_crt_anidb.jpg?r=1426958547",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/0e/2751_crt_anidb.jpg?r=1426958547",
+        "grid": "https://lain.bgm.tv/pic/crt/g/03/0e/2751_crt_anidb.jpg?r=1426958547"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "洛克"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "冈岛绿郎"
+                },
+                {
+                    "k": "日文名",
+                    "v": "岡島綠郎"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "Okajima Rokuro"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Rock"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "8月21日"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 21,
+    "stat": {
+        "comments": 10,
+        "collects": 31
+    },
+    "anime_ids": [
+        980,
+        979
+    ]
+}

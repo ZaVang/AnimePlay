@@ -1,0 +1,48 @@
+{
+    "id": 16421,
+    "name": "永瀬伊織",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d9/e6/16421_crt_43YQ3.jpg?r=1427919447",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/e6/16421_crt_43YQ3.jpg?r=1427919447",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/e6/16421_crt_43YQ3.jpg?r=1427919447",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d9/e6/16421_crt_43YQ3.jpg?r=1427919447"
+    },
+    "summary": "一年三班学生，文研部部长。第一人称“わたし”。\r\n头发稍微及肩，束成低马尾，笑起来犹如春天来临一般。在开设文研部前因无法在众多社团中选择而在申请表写上“交给老师决定♥”，抱着这种破天荒的态度希望老师替其选择。结果在各种偶然跟条件重迭后成为文研部的一员。习惯称稻叶姬子为“稻叶儿（稲葉ん（いなばん））”。\r\n喜欢太一，与太一知道彼此互相喜欢的心情。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "永濑伊织"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ながせ いおり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nagase Iori"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 42,
+        "collects": 170
+    },
+    "anime_ids": [
+        37154
+    ]
+}

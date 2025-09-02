@@ -1,0 +1,415 @@
+{
+    "id": 2074,
+    "type": 2,
+    "name": "逮捕しちゃうぞ",
+    "name_cn": "逮捕令",
+    "summary": "故事是在叙述警视厅墨东警署交通科的二个女警员─小早川美幸和辻本夏实的故事，除了发生在她们身上的各个事件外，再加上她们和周遭朋友的关系所构成的轻松风格写实喜剧。",
+    "nsfw": false,
+    "locked": false,
+    "date": "1996-10-05",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/1f/4f/2074_d4HP9.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/1f/4f/2074_d4HP9.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/1f/4f/2074_d4HP9.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/1f/4f/2074_d4HP9.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/1f/4f/2074_d4HP9.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "逮捕令"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "You`re Under Arrest! (1996)",
+                    "k": null
+                },
+                {
+                    "v": "逮捕しちゃうぞ You`re Under Arrest (1996)",
+                    "k": null
+                },
+                {
+                    "v": "Taiho Shichau zo: You`re Under Arrest (1996)",
+                    "k": null
+                },
+                {
+                    "v": "皇家雙妹嘜",
+                    "k": null
+                },
+                {
+                    "v": "逮捕令 第一季",
+                    "k": null
+                },
+                {
+                    "v": "逮捕しちゃうぞ（1st season）",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "51"
+        },
+        {
+            "key": "放送开始",
+            "value": "1996年10月5日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://www.tbs.co.jp/anime/taiho/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TBS"
+        },
+        {
+            "key": "播放结束",
+            "value": "1997年9月27日"
+        },
+        {
+            "key": "导演",
+            "value": "わたなべひろし(～30話)、西村純二(31話～)"
+        },
+        {
+            "key": "音乐",
+            "value": "岩崎文紀、大谷幸"
+        },
+        {
+            "key": "其他",
+            "value": "1～4话为OVA剪辑版"
+        },
+        {
+            "key": "Copyright",
+            "value": "©藤島康介・講談社／墨東署交通課"
+        },
+        {
+            "key": "原作",
+            "value": "藤島康介（讲谈社刊“パーティーKC”所载）"
+        },
+        {
+            "key": "脚本",
+            "value": "横手美智子、面出明美、時村尚、隅沢克之、阪口和久、渡辺桂子、植田浩二、山口亮太、十川誠志"
+        },
+        {
+            "key": "分镜",
+            "value": "江上潔、もりたけし、日色如夏（ひいろゆきな）、横山広行、福本潔 、近藤信宏、則座誠、地井たけぞう、わたなべひろし（渡辺浩・渡辺ひろし）、垂永士、小華和ためお、渡辺純央、西村純二、清水明 、竹下健一、四阿蔵志、白旗伸朗（ボブ白旗）"
+        },
+        {
+            "key": "演出",
+            "value": "江上潔、則座誠、日色如夏（ひいろゆきな）、横山広行、うえだしげる 、竹下健一、杉島邦久、菱川直樹、守岡博、清水明、垂永士"
+        },
+        {
+            "key": "系列构成",
+            "value": "わたなべひろし(31話～)"
+        },
+        {
+            "key": "人物设定",
+            "value": "中嶋敦子"
+        },
+        {
+            "key": "作画监督",
+            "value": "佐々木一浩、徳田夢之介、村中博美、中谷誠一、かどともあき（門智昭） 、青木康浩、吉本拓二、江原仁、佐藤和己（佐藤和巳）、小島正士 、中嶋敦子、数井浩子、斉藤哲人、水口桂"
+        },
+        {
+            "key": "机械设定",
+            "value": "村田俊治"
+        },
+        {
+            "key": "美术监督",
+            "value": "中村光毅"
+        },
+        {
+            "key": "副人物设定",
+            "value": "松竹徳幸(26話～)"
+        },
+        {
+            "key": "美术设计",
+            "value": "三浦智(26話～)"
+        },
+        {
+            "key": "录音",
+            "value": "秦昌二"
+        },
+        {
+            "key": "音效",
+            "value": "山田稔、石川清、高塚友裕、川下祐佳"
+        },
+        {
+            "key": "文艺",
+            "value": "時村尚(31話～)"
+        },
+        {
+            "key": "设定制作",
+            "value": "鈴木芳成"
+        },
+        {
+            "key": "制片人",
+            "value": "源生哲雄、福本博之、野口和紀"
+        },
+        {
+            "key": "製作",
+            "value": "TBS、講談社"
+        }
+    ],
+    "volumes": 0,
+    "eps": 51,
+    "total_episodes": 51,
+    "rating": {
+        "rank": 817,
+        "total": 1126,
+        "count": {
+            "one": 1,
+            "two": 1,
+            "three": 3,
+            "four": 2,
+            "five": 22,
+            "six": 94,
+            "seven": 398,
+            "eight": 467,
+            "nine": 88,
+            "ten": 50
+        },
+        "score": 7.6
+    },
+    "collection": {
+        "wish": 1129,
+        "collect": 1576,
+        "doing": 228,
+        "on_hold": 230,
+        "dropped": 61
+    },
+    "tags": [
+        {
+            "name": "逮捕令",
+            "count": 239
+        },
+        {
+            "name": "藤岛康介",
+            "count": 194
+        },
+        {
+            "name": "TV",
+            "count": 187
+        },
+        {
+            "name": "童年",
+            "count": 148
+        },
+        {
+            "name": "1996",
+            "count": 141
+        },
+        {
+            "name": "studiodeen",
+            "count": 94
+        },
+        {
+            "name": "漫画改",
+            "count": 88
+        },
+        {
+            "name": "帅气女警",
+            "count": 79
+        },
+        {
+            "name": "女警快车逮捕你",
+            "count": 55
+        },
+        {
+            "name": "交警",
+            "count": 48
+        },
+        {
+            "name": "霹雳女警霸王花",
+            "count": 45
+        },
+        {
+            "name": "90年代",
+            "count": 45
+        },
+        {
+            "name": "日本",
+            "count": 44
+        },
+        {
+            "name": "搞笑",
+            "count": 43
+        },
+        {
+            "name": "漫改",
+            "count": 29
+        },
+        {
+            "name": "日常",
+            "count": 23
+        },
+        {
+            "name": "童年TvT",
+            "count": 19
+        },
+        {
+            "name": "西村纯二",
+            "count": 12
+        },
+        {
+            "name": "动画",
+            "count": 12
+        },
+        {
+            "name": "中嶋敦子",
+            "count": 11
+        },
+        {
+            "name": "1996年10月",
+            "count": 10
+        },
+        {
+            "name": "西村純二",
+            "count": 9
+        },
+        {
+            "name": "生活",
+            "count": 9
+        },
+        {
+            "name": "1996年",
+            "count": 8
+        },
+        {
+            "name": "TVB",
+            "count": 6
+        },
+        {
+            "name": "渡边浩",
+            "count": 6
+        },
+        {
+            "name": "わたなべひろし",
+            "count": 6
+        },
+        {
+            "name": "大谷幸",
+            "count": 5
+        },
+        {
+            "name": "横手美智子",
+            "count": 5
+        },
+        {
+            "name": "中岛敦子",
+            "count": 4
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        9311,
+        9347,
+        24088
+    ],
+    "main_characters": [
+        {
+            "id": 9311,
+            "name": "辻本夏実",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/72/4d/9311_crt_4jrQa.jpg?r=1625199465",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/4d/9311_crt_4jrQa.jpg?r=1625199465",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/4d/9311_crt_4jrQa.jpg?r=1625199465",
+                "grid": "https://lain.bgm.tv/pic/crt/g/72/4d/9311_crt_4jrQa.jpg?r=1625199465"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4171,
+                    "name": "玉川砂記子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1b/d3/4171_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/d3/4171_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/d3/4171_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1b/d3/4171_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "玉川砂记子，本名池田砂记子（旧姓：玉川）。是日本的女性声优。东京都出身。丈夫是为声优的池田秀一。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9347,
+            "name": "小早川美幸",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/21/cb/9347_crt_4Jg8G.jpg?r=1625912717",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/cb/9347_crt_4Jg8G.jpg?r=1625912717",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/cb/9347_crt_4Jg8G.jpg?r=1625912717",
+                "grid": "https://lain.bgm.tv/pic/crt/g/21/cb/9347_crt_4Jg8G.jpg?r=1625912717"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3931,
+                    "name": "平松晶子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ac/ff/3931_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/ff/3931_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/ff/3931_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ac/ff/3931_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本女性配音员。出身于东京都。原属81 Produce，现在是贤Production所属。东京动画养成所毕业。\r\n\r\n为人熟悉的代表配音作品有动画《Keroro军曹》日向家的妈妈〈日向秋〉、《逮捕令》系列的小早川美幸、《笑园漫画大王》的谷崎由佳里、《青出于蓝》的神乐崎雅、《机械女神》系列的红莓、《地球防卫企业》的桃井伊吹、《烈火之炎》的雾泽风子、《蜜柑绘日记》的草凪吐梦、《灌篮高手》的赤木晴子、《叮当猫》的木之叶美琪、《机甲战记威龙》的萝丝·帕提顿、《Genocyber 虚界之魔兽》的艾蕾因·里德／戴安娜·里德；美国动画《X战警》的欢欢等。\r\n平松在国中毕业时期很喜欢活动，后来受到漫画《気分はグルービー》的影响下，高中时期原本想组乐团，却因为成员不足而放弃。但是不久之后收看电视动画《银河铁道999》、《我是小甜甜》便得知有声优这项职业而产生兴趣，于是平松选择前往东京动画养成所进修。\r\n1986年，平松以电视动画《相聚一刻》（声演第27话帮路人角色〈洋子〉）她的声优出道作。1987年，平松为另一出电视动画《机甲战记威龙》登场角色萝丝·帕提顿配音是她首次声演主要角色的作品。\r\n平松在广播节目经常表明自己是列奥那多·狄卡皮欧的大影迷。还有，她也喜欢趴趴熊。\r\n\r\n与同期出道的林原惠、白鸟由里是同行好友。因此，平松曾经代替请产假的林原惠在电视动画《精灵宝可梦超世代》声演武藏。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 24088,
+            "name": "中嶋剣",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9a/c4/24088_crt_56lre.jpg?r=1625918581",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/c4/24088_crt_56lre.jpg?r=1625918581",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/c4/24088_crt_56lre.jpg?r=1625918581",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9a/c4/24088_crt_56lre.jpg?r=1625918581"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3960,
+                    "name": "島田敏",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ac/52/3960_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/52/3960_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/52/3960_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ac/52/3960_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーターである。青二プロダクション所属。新潟県新潟市出身。以前はテアトル・エコーに所属。現在、日本俳優連合常務理事。\r\n\r\n身長164cm、体重53kg。血液型はB型。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "id": 10736,
+    "name": "佐藤潤",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/92/9b/10736_crt_LQs39.jpg?r=1611759272",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/9b/10736_crt_LQs39.jpg?r=1611759272",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/9b/10736_crt_LQs39.jpg?r=1611759272",
+        "grid": "https://lain.bgm.tv/pic/crt/g/92/9b/10736_crt_LQs39.jpg?r=1611759272"
+    },
+    "summary": "看起来既不爱说话又不喜欢管事，但实际上又不并不是这么回事，别人遇上难题会主动帮忙，个性意外地温柔。 基本上会好好听别人所讲的话，至于为什么要用刘海把半张脸退住，他却顽固的不肯说出口。 纯情的程度是只要一见钟情就管单方面想着对方，对于甜食相当不擅长。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "佐藤润"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "さとうじゅん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sato Jun"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "6月6日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "180cm"
+        },
+        {
+            "key": "擅长科目",
+            "value": "体育"
+        },
+        {
+            "key": "兴趣",
+            "value": "无"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 6,
+    "stat": {
+        "comments": 16,
+        "collects": 63
+    },
+    "anime_ids": [
+        20547,
+        4255,
+        110648
+    ]
+}

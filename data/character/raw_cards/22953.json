@@ -1,0 +1,48 @@
+{
+    "id": 22953,
+    "name": "ルンルン・フラワー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2c/17/22953_crt_0F8xf.jpg?r=1389466869",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/17/22953_crt_0F8xf.jpg?r=1389466869",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/17/22953_crt_0F8xf.jpg?r=1389466869",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2c/17/22953_crt_0F8xf.jpg?r=1389466869"
+    },
+    "summary": "花の精の血をひく（花の子）、12歳の女の子。七色の花をさがす旅に出る。\r\n    明るく快活で、登場時は男の子と一緒に芝そりで遊ぶほどのおてんば。しかし、ドレスアップした時は華やいだ雰囲気を持つ美少女でもある。[3]\r\n    困った人を放っておけない性格で、自分のことよりまず他人の事を思いやる優しさと行動力を持つ。\r\n    花に対する愛情も人一倍強く、花言葉もすらすらといえるほど。\r\n    34話までは姫野美智がデザインした、肩に独特のフリルを付けた赤い[4]コスチュームを着用し、35話以降は進藤満尾がデザインした新コスチュームとなる。（37話までは橙色、38話以降は赤）",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伦伦·弗劳沃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "小蓓"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Runrun Furawaa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 4
+    },
+    "anime_ids": [
+        11683
+    ]
+}

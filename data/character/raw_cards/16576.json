@@ -1,0 +1,35 @@
+{
+    "id": 16576,
+    "name": "文屋康秀",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6c/ab/16576_crt_ZNYn4.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/ab/16576_crt_ZNYn4.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/ab/16576_crt_ZNYn4.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6c/ab/16576_crt_ZNYn4.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        37138
+    ]
+}

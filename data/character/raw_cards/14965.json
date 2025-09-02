@@ -1,0 +1,84 @@
+{
+    "id": 14965,
+    "name": "小泉花陽",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/93/52/14965_crt_MMJX2.jpg?r=1464871375",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/52/14965_crt_MMJX2.jpg?r=1464871375",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/52/14965_crt_MMJX2.jpg?r=1464871375",
+        "grid": "https://lain.bgm.tv/pic/crt/g/93/52/14965_crt_MMJX2.jpg?r=1464871375"
+    },
+    "summary": "あの――わ、わたし、小泉花陽、15歳、みんなからは、かよちんって呼ばれています。えっと――な、なんか緊張してきちゃった、ど、どうしよ――ご、ごめんなさい、ふぅ――ほら、深呼吸、深呼吸。花陽は、人の話を聞くのはとっても好きなんですけど、自分が話すのって、じつはあんまり慣れてなくて――。こんな花陽でもよかったら、あなたのために一生懸命歌いたいです。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小泉花阳"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小泉 花陽"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こいずみ はなよ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Koizumi Hanayo"
+                },
+                {
+                    "k": "昵称",
+                    "v": "花阳、花阳亲、花阳酱、かよち、かよちゃん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月17日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B82 W60 H83"
+        },
+        {
+            "key": "学级",
+            "value": "高中1年级"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁"
+        },
+        {
+            "key": "分组",
+            "value": "Printemps"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 17,
+    "stat": {
+        "comments": 22,
+        "collects": 125
+    },
+    "anime_ids": [
+        49294
+    ]
+}

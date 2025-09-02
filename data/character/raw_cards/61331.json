@@ -1,0 +1,53 @@
+{
+    "id": 61331,
+    "name": "壬氏",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ef/15/61331_crt_p75Xe.jpg?r=1692970256",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ef/15/61331_crt_p75Xe.jpg?r=1692970256",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ef/15/61331_crt_p75Xe.jpg?r=1692970256",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ef/15/61331_crt_p75Xe.jpg?r=1692970256"
+    },
+    "summary": "後宮で強い権力を持つ宦官。\r\nもし女性だったら傾国と言われるほどの美形。\r\nとある事件をきっかけに猫猫の「実力」に気づき、皇帝の寵妃の侍女に抜擢する。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "壬氏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ジンシ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Jinshi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://kusuriyanohitorigoto.jp/#chara"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 92,
+        "collects": 38
+    },
+    "anime_ids": [
+        486347,
+        420628
+    ]
+}

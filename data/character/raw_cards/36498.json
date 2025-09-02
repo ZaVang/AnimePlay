@@ -1,0 +1,72 @@
+{
+    "id": 36498,
+    "name": "遠山りん",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/48/65/36498_crt_GNRiS.jpg?r=1469386974",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/65/36498_crt_GNRiS.jpg?r=1469386974",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/65/36498_crt_GNRiS.jpg?r=1469386974",
+        "grid": "https://lain.bgm.tv/pic/crt/g/48/65/36498_crt_GNRiS.jpg?r=1469386974"
+    },
+    "summary": "　　役職：アートディレクター兼背景班リーダー\r\n　　25歳。コウと同期。そのコウとは、ともに初任給をつかって旅行に出かけたり、休日に彼女の家に出向き夕食を作ったりするほど親密な仲である。\r\n　　温和な性格で、初めてのディレクター業に内心は苦労しつつも、グラフィックチームの個性的な面々をまとめ上げている。うまく仕事が進まずに悩んでいた青葉の相談役も買ってでた。ただし、酒が入ると横暴な性格に変貌する。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "远山伦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "远山琳"
+                },
+                {
+                    "k": "日文名",
+                    "v": "遠山 りん"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "とおやま りん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tooyama Rin"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月3日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 3,
+    "stat": {
+        "comments": 14,
+        "collects": 77
+    },
+    "anime_ids": [
+        150775
+    ]
+}

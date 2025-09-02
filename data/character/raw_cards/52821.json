@@ -1,0 +1,84 @@
+{
+    "id": 52821,
+    "name": "若宮イヴ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5e/36/52821_crt_tOtiW.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/36/52821_crt_tOtiW.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/36/52821_crt_tOtiW.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5e/36/52821_crt_tOtiW.jpg"
+    },
+    "summary": "父亲是日本人，母亲是芬兰人。混血儿归国子女。性格率直对谁都很温柔。对于“武士道”文化抱有强烈的憧憬。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "若宫伊芙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "わかみや イヴ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Wakamiya Eve"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月27日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        },
+        {
+            "key": "担当",
+            "value": "键盘手"
+        },
+        {
+            "key": "星座",
+            "value": "巨蟹座"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "姜饼"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "米糠腌菜"
+        },
+        {
+            "key": "兴趣",
+            "value": "时代剧鉴赏"
+        },
+        {
+            "key": "所属",
+            "value": "Pastel∗Palettes"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 27,
+    "stat": {
+        "comments": 19,
+        "collects": 44
+    },
+    "anime_ids": [
+        246431
+    ]
+}

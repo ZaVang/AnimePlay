@@ -1,0 +1,68 @@
+{
+    "id": 36280,
+    "name": "ジュリア",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4a/8e/36280_crt_Yc3my.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4a/8e/36280_crt_Yc3my.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4a/8e/36280_crt_Yc3my.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4a/8e/36280_crt_Yc3my.jpg"
+    },
+    "summary": "《偶像大师 百万LIVE！》登场角色，Vocal阵营。左撇子。 \r\n\r\n兴趣栏竟然是「没有」，说话句尾加「だぜ」的女孩。第一人称是「あたし」。 \r\n\r\n误打误撞来了765pro，本来是想成为一名朋克系摇滚歌手的。但是，由于极度讨厌半途而废的性格，并且也希望更多的人听她的歌，使之不得不决定朝偶像事业发展。 \r\n\r\n因为曾当过朋克系摇滚歌手，便豪言道有需求的话什么流行、饶舌、动画歌，不论什么流派的歌都能唱好！想开演唱会的意向很强，不管怎么说是块好料。 \r\n\r\n即使是左撇子也坚持用着右撇子用的吉他，也真符合茱莉亚的办事风格啊！",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "茱莉亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Julia"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月26日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "体重",
+            "value": "43kg"
+        },
+        {
+            "key": "BWH",
+            "value": "79-54-80"
+        },
+        {
+            "key": "年龄",
+            "value": "16岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 26,
+    "stat": {
+        "comments": 17,
+        "collects": 29
+    },
+    "anime_ids": [
+        309807
+    ]
+}

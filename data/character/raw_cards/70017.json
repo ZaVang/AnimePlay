@@ -1,0 +1,52 @@
+{
+    "id": 70017,
+    "name": "シャルス・ラクロワ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1d/42/70017_crt_49LoL.jpg?r=1557494142",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/42/70017_crt_49LoL.jpg?r=1557494142",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/42/70017_crt_49LoL.jpg?r=1557494142",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1d/42/70017_crt_49LoL.jpg?r=1557494142"
+    },
+    "summary": "生物に関する知識が豊富で、惑星探査で力を発揮。\r\n生き物への愛情が強すぎるあまり、好奇心が高まると振る舞いが変態的になるという残念なイケメンでもある。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Charce Lacroix"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月28日"
+        },
+        {
+            "key": "身高",
+            "value": "176cm"
+        },
+        {
+            "key": "体重",
+            "value": "58kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 28,
+    "stat": {
+        "comments": 7,
+        "collects": 2
+    },
+    "anime_ids": [
+        273877
+    ]
+}

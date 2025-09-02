@@ -1,0 +1,166 @@
+{
+    "id": 37178,
+    "name": "超电磁侠波鲁吉斯V",
+    "image_path": "data/images/anime/37178.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　角の有無が階級を運命付けるボアザン星。ラ・ゴールは皇帝の甥（弟の長子）として皇位継承の資格を持ちながら、角が生まれつきなかった為失脚。妻・ロザリアとも引き裂かれて労奴に落とされるが、反乱を起こし、星から脱出。地球に落ち延びて科学者・剛光代に救われる。\r\n　　ラ・ゴールは光代と結婚して剛健太郎と名乗り、3児を儲け、浜口博士や岡・防衛長官と共にボルテスや基地ビッグファルコンの建設に着手。\r\n　　一方、ボアザンでラ・ゴールとロザリアとの間に生まれていた皇子ハイネルは、“裏切り者の子”と後ろ指を指され、皇帝ズ・ザンバジルへの忠誠を証明し実の父を倒すべく地球攻撃を決定した。\r\n　　かくてボルテスとボアザンの獣士との壮絶な死闘が始まる。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 40,
+    "synergy_tags": [
+        "机战",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "1977-06-04",
+    "rating_rank": 1969,
+    "rating_score": 7.2,
+    "rating_total": 68,
+    "main_character_ids": [
+        74569,
+        124912,
+        124913,
+        124914,
+        124915
+    ],
+    "main_characters": [
+        {
+            "id": 74569,
+            "name": "剛健一",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/57/eb/74569_crt_8LZ2z.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/57/eb/74569_crt_8LZ2z.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/57/eb/74569_crt_8LZ2z.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/57/eb/74569_crt_8LZ2z.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 124912,
+            "name": "峰一平",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e7/39/124912_crt_4Tky1.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/39/124912_crt_4Tky1.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/39/124912_crt_4Tky1.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e7/39/124912_crt_4Tky1.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5272,
+                    "name": "曽我部和恭",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/85/4a/5272_prsn_ZAp8b.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/4a/5272_prsn_ZAp8b.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/4a/5272_prsn_ZAp8b.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/85/4a/5272_prsn_ZAp8b.jpg"
+                    },
+                    "short_summary": "日本の男性声優、俳優、ミュージシャン。旧芸名及び本名は曽我部 和行（そがべ かずゆき）。血液型はA型。\r\n\r\nニックネームはガベさん。剣道二段。趣味はサングラス収集。好きなミュージシャンはザ・ベンチャーズ、ジミ・ヘンドリックス、ジェフ・ベック、寺内タケシ。好きな作家は半村良、平井和正、エラリー・クイーン、モーリス・ルブラン。\r\n千葉県船橋市で戦国武将・長宗我部氏の末裔の家系であるサラリーマンの家に出生。小学校6年生の頃東京都に転居し、千代田区立神田一橋中学校、東京都立一橋高等学校を経て、敬愛大学経済学部へ入学。中学2年からエレキギターで作曲するようになり、歌手を目指して大学を4年で中退して日本テレビタレント養成所へ入る。演技を学ぶうちに芝居への意欲が涌き、22歳でテアトル・エコーの養成所に加入。\r\n熊倉一雄や納谷悟朗の指導を受け、テアトル・エコーの舞台公演に出演するとともに、研究生時代からアニメ作品や洋画吹替の声優に端役として参加した。声優デビュー作は1972年公開のアニメ映画『パンダコパンダ』のおまわりさん役。1974年に『破裏拳ポリマー』でアニメ作品への初主演を果たした。『タイムボカンシリーズ』では『ゼンダマン』の主人公・鉄ちゃん / ゼンダマン1号に内定しており、主題歌のレコーディングにも台詞収録で参加していたが、番組初収録直前に体調不良となり降板した（後任は三ツ矢雄二。なお、第49話にコジロー役でゲスト出演している）。その2年後には同シリーズ続編の『ヤットデタマン』に時ワタル / ヤットデタマン役で主演を果たしている。\r\n1977年には野島昭生、神谷明と飲みに行った席で演奏したギターがあまりにも上手だったのがきっかけで、古谷徹、古川登志夫らを呼び込み声優バンド「スラップスティック」を発足。リードギターと作詞・作曲を担当していた。私生活では1980年6月に結婚。テアトル・エコーの正所属となり舞台の演出も手掛けていたが、1990年代に青二プロダクションへ移籍した。\r\nかつて神谷明、中尾隆聖、内田直哉らと共に演劇活動をしていたことがある（曽我部は演出を担当）。当時芝居の演出方法をめぐって口論になっても、最終的に養成所時代の先輩だった神谷には逆らえなかったと言う逸話がある。また、地元・千葉県の自治体主催のママさん劇団「陽気妃」の舞台演出家としても活動していた。\r\n自身の声に衰えを感じたとして2000年12月31日に引退した。持ち役は主に置鮎龍太郎、稲田徹らに引き継がれたが、2004年に発売された『絶対無敵ライジンオー』・『元気爆発ガンバルガー』DVD-BOX購入特典の新作ドラマCD『絶対爆発ライジンオー対ガンバルガー』に持ち役のヤミノリウスIII世役で出演。また、『元気爆発ガンバルガー』DVD-BOX発売の際にはヤミノリウスIII世として「テレビから離れて部屋を明るくして見るように」と注意する新録音声が各巻冒頭に収録されており、これらが最後の出演となった。『銀河旋風ブライガー』のドラマCD出演の依頼もあったそうだが断ったらしい。\r\n2005年に出版されたムック本『アマゾンから帰ってきた男 別冊』では『仮面ライダーアマゾン』に関してインタビューを受けている。本書の中では特撮とアニメのアフレコの違いや『仮面ライダーアマゾン』以外にも、一番印象に残っている洋画の吹き替え役などを語っている。本人は引退を否定し、将来に対する復帰への意欲を語っており、近影も掲載されていた。\r\n2006年9月17日午後8時頃、食道癌のため千葉県内の病院で死去した。58歳没。死の2ヶ月前に癌が見つかった時点では、既に進行した末期状態で手の施しようもない状態だったという。葬儀に参列した旧友たちは、スラップスティックなどの間でも「痩せすぎ」とネタにされていた曽我部のスマートな容貌がさらに痩せ細っているのを見て、思わず涙を零したという。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 124913,
+            "name": "剛大次郎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c0/b5/124913_crt_u3WH4.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/b5/124913_crt_u3WH4.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/b5/124913_crt_u3WH4.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c0/b5/124913_crt_u3WH4.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3855,
+                    "name": "玄田哲章",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/ae/3855_prsn_mIa3J.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/ae/3855_prsn_mIa3J.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/ae/3855_prsn_mIa3J.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/ae/3855_prsn_mIa3J.jpg"
+                    },
+                    "short_summary": "1948年5月20日[3]に、岡山県で生まれた。中学・高校時代は芝居と縁がなかったが、受験に際して芝居の道に進みたいという気持ちが強くなり、相談した高校の先生の知人である東映映画のプロデュースを行っていた人物からの紹介で東宝芸能アカデミーに入学。卒業後、新劇の道に進もうと文学座と劇団雲のオーディションを受けたが、両方とも落選。悩んでたところに、野沢那智主宰の劇団薔薇座の募集を目にしに1970年に入団した。当初は1年だけのつもりが、17年間在籍した。\r\n\r\n1972年24歳の時に野沢から、「そろそろお前もやらないか?」と紹介され声優業を始める。テレビアニメ『科学忍者隊ガッチャマン』のアフレコ現場を見学。同作で多数の端役を担当し、以降、声優として様々な作品をこなすようになった。声優業を始めた当時を「当日に台本を渡され台本の見方も分からないままスタジオに入れられ、喋り出しても画面に合わなくて悔しい思いをした」と振り返っている。\r\n\r\n2010年に第4回声優アワード功労賞を受賞した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 124914,
+            "name": "剛日吉",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e2/91/124914_crt_ipwqT.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/91/124914_crt_ipwqT.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/91/124914_crt_ipwqT.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e2/91/124914_crt_ipwqT.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4000,
+                    "name": "小原乃梨子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1b/d6/4000_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/d6/4000_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/d6/4000_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1b/d6/4000_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "東京府（現：東京都）出身の声優、女優、ナレーター、朗読家である。夫の戸部信一は演出家。息子はアニメーターの戸部敦夫。血液型はO型。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 124915,
+            "name": "岡めぐみ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7e/0d/124915_crt_5CCKH.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/0d/124915_crt_5CCKH.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/0d/124915_crt_5CCKH.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7e/0d/124915_crt_5CCKH.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 20931,
+                    "name": "上田みゆき",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7d/26/20931_prsn_aRbyH.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/26/20931_prsn_aRbyH.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/26/20931_prsn_aRbyH.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7d/26/20931_prsn_aRbyH.jpg"
+                    },
+                    "short_summary": "1954年、ニッポン放送のラジオ番組『ポッポちゃん』で子役としてデビューし、一世を風靡した。役名“ポッポちゃん”と呼ばれアイドルとして親しまれていた。その可憐な愛くるしさは、フジテレビの人気番組『少年探偵団』でも人気を博していた。\r\n\r\n劇団NLT時代は、その看板女優として活躍、フランス・ブールバール劇、邦題『マカロニ金融』ではかつての名優、森雅之と共演。\r\n\r\n1981年、ささきいさおと子連れで再婚。その時の苦労が、夫との共著『子連れ再婚の片道切符』（1986年出版）に書かれている。\r\n\r\nなお、同じく声優の森功至とは幼なじみ。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

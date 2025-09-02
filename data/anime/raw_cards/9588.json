@@ -1,0 +1,308 @@
+{
+    "id": 9588,
+    "type": 2,
+    "name": "金田一少年の事件簿",
+    "name_cn": "金田一少年事件簿",
+    "summary": "主人公金田一一是名侦探“金田一耕助”的孙子，功课不好，体育不行，有点好色，走到哪，哪就会发生命案，在推理时却像变了一个人似的，解开了一个又一个谜题，经典台词是：“我以我爷爷--金田一耕助的名义发誓……谜底已经解开了，凶手就在我们中间。” 。\r\n金田一的青梅竹马七濑美雪，是不动高中的资优生兼学生会会长，长得好看、身材好、功课也好，人缘更是好得没话说，可她就喜欢那个吊儿郎当的金田一。",
+    "nsfw": false,
+    "locked": false,
+    "date": "1997-04-07",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/0a/66/9588_9yYOL.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/0a/66/9588_9yYOL.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/0a/66/9588_9yYOL.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/0a/66/9588_9yYOL.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/0a/66/9588_9yYOL.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "金田一少年事件簿"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "金田一少年之事件簿",
+                    "k": null
+                },
+                {
+                    "v": "きんだいちしょうねんのじけんぼ",
+                    "k": null
+                },
+                {
+                    "v": "Kindaichi Shōnen no Jikenbo",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "148"
+        },
+        {
+            "key": "放送开始",
+            "value": "1997年4月7日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期一"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.toei-anim.co.jp/tv/kindaichi/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "日本电视台"
+        },
+        {
+            "key": "播放结束",
+            "value": "2000年9月11日"
+        },
+        {
+            "key": "音乐",
+            "value": "和田薫"
+        },
+        {
+            "key": "Copyright",
+            "value": "(C)天樹征丸・金成陽三郎・さとうふみや／講談社・読売テレビ･電通･東映アニメーション"
+        },
+        {
+            "key": "原作",
+            "value": "原案：天樹征丸（亜樹直）、原作：金成陽三郎、漫画：さとうふみや（講談社「週刊少年マガジン」連載）"
+        },
+        {
+            "key": "人物设定",
+            "value": "荒木伸吾、姫野美智、香川久（第13話 - 第23話、第28話 - 第31話）、窪秀巳（第24話 - 第27話、第32話 - 最終話）"
+        },
+        {
+            "key": "系列监督",
+            "value": "西尾大介"
+        }
+    ],
+    "volumes": 0,
+    "eps": 148,
+    "total_episodes": 172,
+    "rating": {
+        "rank": 513,
+        "total": 988,
+        "count": {
+            "one": 1,
+            "two": 3,
+            "three": 1,
+            "four": 6,
+            "five": 12,
+            "six": 76,
+            "seven": 254,
+            "eight": 442,
+            "nine": 132,
+            "ten": 61
+        },
+        "score": 7.8
+    },
+    "collection": {
+        "wish": 814,
+        "collect": 1373,
+        "doing": 278,
+        "on_hold": 275,
+        "dropped": 79
+    },
+    "tags": [
+        {
+            "name": "推理",
+            "count": 328
+        },
+        {
+            "name": "金田一",
+            "count": 225
+        },
+        {
+            "name": "TV",
+            "count": 178
+        },
+        {
+            "name": "1997",
+            "count": 151
+        },
+        {
+            "name": "漫画改",
+            "count": 128
+        },
+        {
+            "name": "补旧番",
+            "count": 84
+        },
+        {
+            "name": "东映",
+            "count": 83
+        },
+        {
+            "name": "侦探类",
+            "count": 69
+        },
+        {
+            "name": "死神中学生",
+            "count": 61
+        },
+        {
+            "name": "童年",
+            "count": 46
+        },
+        {
+            "name": "悬疑",
+            "count": 38
+        },
+        {
+            "name": "严谨",
+            "count": 36
+        },
+        {
+            "name": "漫改",
+            "count": 28
+        },
+        {
+            "name": "没看全",
+            "count": 26
+        },
+        {
+            "name": "绝妙推理",
+            "count": 20
+        },
+        {
+            "name": "死神学生",
+            "count": 16
+        },
+        {
+            "name": "日本",
+            "count": 13
+        },
+        {
+            "name": "東映アニメーション",
+            "count": 9
+        },
+        {
+            "name": "柯蓝什么的就是渣",
+            "count": 9
+        },
+        {
+            "name": "1997年4月",
+            "count": 8
+        },
+        {
+            "name": "经典",
+            "count": 8
+        },
+        {
+            "name": "西尾大介",
+            "count": 7
+        },
+        {
+            "name": "东映动画",
+            "count": 7
+        },
+        {
+            "name": "90年代",
+            "count": 5
+        },
+        {
+            "name": "TVA",
+            "count": 4
+        },
+        {
+            "name": "动画",
+            "count": 4
+        },
+        {
+            "name": "侦探",
+            "count": 4
+        },
+        {
+            "name": "校园",
+            "count": 3
+        },
+        {
+            "name": "草尾毅",
+            "count": 3
+        },
+        {
+            "name": "1997年",
+            "count": 3
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "推理",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        13003,
+        13009
+    ],
+    "main_characters": [
+        {
+            "id": 13003,
+            "name": "金田一一",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ce/85/13003_crt_rJGZo.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/85/13003_crt_rJGZo.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/85/13003_crt_rJGZo.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ce/85/13003_crt_rJGZo.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4643,
+                    "name": "松野太紀",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/77/c6/4643_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/c6/4643_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/c6/4643_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/77/c6/4643_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優、タレント。東京都品川区出身。本籍は山梨県。青二プロダクション最終所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13009,
+            "name": "七瀬美雪",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/02/82/13009_crt_oCFCF.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/82/13009_crt_oCFCF.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/82/13009_crt_oCFCF.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/02/82/13009_crt_oCFCF.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4325,
+                    "name": "中川亜紀子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2b/38/4325_prsn_fpZV3.jpg?r=1462634472",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/38/4325_prsn_fpZV3.jpg?r=1462634472",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/38/4325_prsn_fpZV3.jpg?r=1462634472",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2b/38/4325_prsn_fpZV3.jpg?r=1462634472"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,217 @@
+{
+    "id": 369304,
+    "name": "咒术回战 第二季",
+    "image_path": "data/images/anime/369304.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "这是最强的两人一去不复返的青春。 2018年6月，虎杖悠仁让两面宿傩寄宿于自身体内。 2017年12月，乙骨忧太解开祈本里香的诅咒。\r\n然后时光一路回溯至2006年─春天。高专时代的五条悟与夏油杰。身为表现活跃的咒术师并所向无敌的两人，接到来自拥有不死术式的咒术界关键──天元的委托。委托有两点。针对天元的适合者「星浆体」天内理子，担任那名少女「护卫」并且「抹消」。为了使咒术界永存，两人前往执行护卫任务，却在这时有一名自称伏黑的「术师杀手」介入，企图暗杀「星浆体」……然后成为最强咒术师与最凶恶咒诅师的五条与夏油，分道扬镳的两人的过去即将揭晓……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 23,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2023-07-06",
+    "rating_rank": 1922,
+    "rating_score": 7.2,
+    "rating_total": 7683,
+    "main_character_ids": [
+        73336,
+        73337,
+        73338,
+        74243,
+        85962
+    ],
+    "main_characters": [
+        {
+            "id": 73336,
+            "name": "虎杖悠仁",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/cd/73336_crt_XHJ7U.jpg?r=1608836932",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/cd/73336_crt_XHJ7U.jpg?r=1608836932",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/cd/73336_crt_XHJ7U.jpg?r=1608836932",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/cd/73336_crt_XHJ7U.jpg?r=1608836932"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 16353,
+                    "name": "榎木淳弥",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/70/16353_prsn_O8uZj.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/70/16353_prsn_O8uZj.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/70/16353_prsn_O8uZj.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/70/16353_prsn_O8uZj.jpg"
+                    },
+                    "short_summary": "大学時代に周囲の影響でアニメを見始めるようになり、『天元突破グレンラガン』に感動したことがきっかけで声優を目指す。アトミックモンキー 声優・演技研究所に3期生として入所、卒業後に事務所所属となる。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 73337,
+            "name": "伏黒恵",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8a/c3/73337_crt_DlZDY.jpg?r=1608837008",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/c3/73337_crt_DlZDY.jpg?r=1608837008",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/c3/73337_crt_DlZDY.jpg?r=1608837008",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8a/c3/73337_crt_DlZDY.jpg?r=1608837008"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 15390,
+                    "name": "内田雄馬",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/38/47/15390_prsn_iW2u5.jpg?r=1647787440",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/47/15390_prsn_iW2u5.jpg?r=1647787440",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/47/15390_prsn_iW2u5.jpg?r=1647787440",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/38/47/15390_prsn_iW2u5.jpg?r=1647787440"
+                    },
+                    "short_summary": "日本の男性声優。\r\n東京都出身。インテンション所属。実姉は、同じく声優の内田真礼。\r\n\r\n趣味は音楽、散歩、森林浴、山登り。特技は作曲、モノマネ、焼肉を焼く、ジャケットプレイ。\r\n好きな言葉は、『為せば成る、為さねば成らぬ何事も』だという。\r\n衝撃を受けた声優には、関智一を挙げている。\r\n将来的には、どの世代でも主役をこなせていける声優になりたいとしている。\r\n声優仲間である石川界人と仲が良い。\r\n\r\n一家揃ってのゲーム好きだった影響で、13歳の時に『サクラ大戦』がきっかけで声優業に関心を持ち、進路を考える17歳の時に声優への志望を強め、日本ナレーション演技研究所に入学。\r\n同養成所在籍中の2012年に、『Holy Knight』のアニメ版のアフレコで声優デビューを果たした後、養成所を卒業し、2013年4月1日付けで現事務所所属となる。\r\n声優としてはまだ無名だった2013年に、杉田智和に誘われてパシフィコ横浜で開催された「A＆Gオールスター2013」に、女装姿で飛び入り出演した。\r\n2017年1月より、パーソナリティを務める一人しゃべりラジオ番組『内田雄馬 君の話を焼かせて』の放送を開始。\r\n2017年、第11回声優アワードで新人男優賞を受賞。\r\n同年秋、コーエーテクモゲームスからNintendo Switch向けに発売されるファイアーエムブレムと無双シリーズとのコラボ作品『ファイアーエムブレム無双』で、姉・真礼とダブル主演を果たす。\r\n2018年、KING AMUSEMNET CREATIVEよりアーティストデビュー。\r\n2019年3月9日、第13回声優アワード主演男優賞を受賞。\r\n2022年12月31日、10年在籍したアイムエンタープライズを退所。翌2023年1月1日よりインテンションに所属。",
+                    "locked": false
+                },
+                {
+                    "id": 22712,
+                    "name": "藤原夏海",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5d/16/22712_prsn_8UvLE.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5d/16/22712_prsn_8UvLE.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5d/16/22712_prsn_8UvLE.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5d/16/22712_prsn_8UvLE.jpg"
+                    },
+                    "short_summary": "日本の女性声優。静岡県浜松市出身。アーツビジョン所属。\r\n\r\n趣味・特技：歌唱、キャッチボール、鉄棒、けん玉",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 73338,
+            "name": "釘崎野薔薇",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/61/fd/73338_crt_m212p.jpg?r=1608836839",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/fd/73338_crt_m212p.jpg?r=1608836839",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/fd/73338_crt_m212p.jpg?r=1608836839",
+                "grid": "https://lain.bgm.tv/pic/crt/g/61/fd/73338_crt_m212p.jpg?r=1608836839"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5766,
+                    "name": "瀬戸麻沙美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/b7/5766_prsn_6q644.jpg"
+                    },
+                    "short_summary": "中学生2年生の時、偶然視聴したアニメ『D.Gray-man』の主人公、アレン・ウォーカー（声：小林沙苗）に魅せられ、キャラクターだけでなく演者の声優にも興味が湧き、声優を志す。高校在学中の2009年に声優事務所のオーディションを受験、翌2010年より声優活動を開始する。\r\n2010年、初めて受けたオーディションでテレビアニメ『放浪息子』（2011年）の準主人公 \"高槻よしの\" 役に抜擢される。彼女にとって初仕事の収録だったが、演技などに関して事前の指示はほとんど必要としなかったと監督のあおきえいは述べている。\r\n2011年、日本テレビ系テレビアニメ『ちはやふる』で主演（ \"綾瀬千早\" 役）とエンディング主題歌の歌唱を担当。同局系列のテレビアニメ『HUNTER×HUNTER』の \"クラピカ\" 役オーディションに参加していた瀬戸の演技が『ちはやふる』番組関係者の目に留まり、改めて \"綾瀬千早\" 役のオーディションを行ったところ満場一致で瀬戸の起用が決定した。\r\n2015年4月1日付けで、シグマ・セブンeからシグマ・セブンへ移動。\r\n2021年11月1日よりStarCrewへ移籍。あわせて公式Twitterアカウントを開設した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 74243,
+            "name": "五条悟",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/12/12/74243_crt_c5h9t.jpg?r=1646562964",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/12/74243_crt_c5h9t.jpg?r=1646562964",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/12/74243_crt_c5h9t.jpg?r=1646562964",
+                "grid": "https://lain.bgm.tv/pic/crt/g/12/12/74243_crt_c5h9t.jpg?r=1646562964"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4724,
+                    "name": "中村悠一",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/78/4724_prsn_7TvWV.jpg"
+                    },
+                    "short_summary": "爱称是ゆうきゃん，由铃村健一命名。英文标记法为‘yuu-kyan’\r\n与声优的杉田智和的私交良好，是在声优界著名的好友。\r\n兴趣是玩游戏、看电影等。\r\n不喜欢吃拉面。喜欢的食物是肉、奶酪、甜食。\r\n2020年10月1日，宣布从Sigma Seven移籍至INTENTION。",
+                    "locked": false
+                },
+                {
+                    "id": 4769,
+                    "name": "伊瀬茉莉也",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320"
+                    },
+                    "short_summary": "小时候非常喜欢宫崎骏先生的作品，比如《风之谷》什么的，看了很多遍把录像带磨坏了。大约小学3年级左右，看了《幽灵公主》之后非常希望能够加入到里面，做出能让人感动的作品。那个时候光看这部动画就去了电影院8次，一开始是想当监督，后来偶然地有配音机会，便开始走上声优的道路。\r\n一开始父母强烈反对，后来茉莉也对他们描绘了心中的梦想，用“这是我必须去做的事”和“学费自己来付”说服了他们。那时拿出了从小学开始存的压岁钱【好心痛～（笑）】。一开始非常困难，一边要上学一边又要去2小时车程以外的培训中心，但是靠毅力坚持下来之后父母也开始变得支持了，后来嘛，就好了。\r\n第一次工作是在16岁那年，在动画片《愛してるぜベイベ★★》中饰演一个路人角色，台词也只有一两句，但那个时候紧张得不行，拿着剧本的手一直在发抖。后来在比较广为人知的《虫师》中配小孩子的声音，慢慢地工作就多了起来。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 85962,
+            "name": "夏油傑",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/45/73/85962_crt_4m4rO.jpg?r=1722418115",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/73/85962_crt_4m4rO.jpg?r=1722418115",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/73/85962_crt_4m4rO.jpg?r=1722418115",
+                "grid": "https://lain.bgm.tv/pic/crt/g/45/73/85962_crt_4m4rO.jpg?r=1722418115"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4015,
+                    "name": "櫻井孝宏",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/06/29/4015_prsn_4TZox.jpg?r=1638448222"
+                    },
+                    "short_summary": "爱知县冈崎市老家的本业是米店，店名为“樱井米谷店”，在当地小有名气。\r\n初中时的一个冬天，怕冷的他擅自把酒精灯里的液体倒在理科实验室的桌子上，点起火取暖，引响了火灾报警器，被赶来的老师狠狠教训了一顿。于是在老师的国语课上捣乱报复，夸张地朗读课文，实在听不过去的老师求他：“拜托，别念得跟声优似的好不好！”——这话对那时的樱井冲击很大，给他留下了声优不过是连小孩子都做得来的简单工作的印象。所以高中毕业后，乐得找轻松的樱井选择进入东京的声优专科学校。待迈入这一行，他才吐血地发现，且不说成为佼佼者，就是普通从业者也得掌握高超的专业技巧。\r\n2005年8月《最终幻想VII：降临之子》于第62届威尼斯影展参展。樱井以担任主角配音的身份，成为继山寺宏一后第2位踏上星光大道的日本籍声优。\r\n虽然戴着眼镜，可是樱井二眼视力皆为2.0，植田佳奈笑称那是“骗人眼镜”。那付眼镜的意义是“梦想与希望与对声迷们的爱”。\r\n最初的错误是BL DRAMA制作社Inter communications（inter桑）的一张drama的BK上打成了樱井考宏，之后《无法逃离的背叛》某个活动的官方网站上亦把樱井孝宏的名字写成“樱井考宏”，所以有昵称考哥，而并非是他的名字中的“孝”字与“考”字很像才有此外号。\r\n桜井(sakurai)，桜井さん（sakurai san），sakura i san，樱13",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

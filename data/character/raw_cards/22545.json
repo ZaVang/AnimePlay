@@ -1,0 +1,39 @@
+{
+    "id": 22545,
+    "name": "アイラ・ユルキアイネン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/04/34/22545_crt_O84DI.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/34/22545_crt_O84DI.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/34/22545_crt_O84DI.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/04/34/22545_crt_O84DI.jpg"
+    },
+    "summary": "来自芬兰的女选手，高达模型小队“复仇女神（Nemesis）”的首席斗士。出生于Flana机关，被称为人类中最强的斗士。没有制作高达模型的经验，也没有高达相关知识，然而却持有能够弥补这些欠缺的操纵技术。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾拉·尤姬艾涅"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 13,
+        "collects": 50
+    },
+    "anime_ids": [
+        77171
+    ]
+}

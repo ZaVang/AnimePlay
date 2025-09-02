@@ -1,0 +1,301 @@
+{
+    "id": 2281,
+    "type": 2,
+    "name": "バーテンダー",
+    "name_cn": "调酒师",
+    "summary": "酒吧不仅仅是一个喝酒的地方，在调酒师高超的技艺下，调出的不仅仅是美味的鸡尾酒，还有着百味的人生。本作可以说为奔忙于世的各种颜色的“领”们量身定做：那么，今晚想要怎样的一杯呢？在你说出口之前，已为你奉上最佳的一杯，这才是调酒师的风采。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2006-10-14",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/0f/46/2281_AbC2C.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/0f/46/2281_AbC2C.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/0f/46/2281_AbC2C.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/0f/46/2281_AbC2C.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/0f/46/2281_AbC2C.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "调酒师"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Bartender",
+                    "k": null
+                },
+                {
+                    "v": "王牌酒保",
+                    "k": null
+                },
+                {
+                    "v": "黄金酒保",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "11"
+        },
+        {
+            "key": "放送开始",
+            "value": "2006年10月14日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.bartender-tv.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "フジテレビ"
+        },
+        {
+            "key": "其他电视台",
+            "value": "BSフジ"
+        },
+        {
+            "key": "播放结束",
+            "value": "2006年12月30日"
+        },
+        {
+            "key": "导演",
+            "value": "渡辺正樹"
+        },
+        {
+            "key": "音乐",
+            "value": "大嶽香子"
+        },
+        {
+            "key": "Copyright",
+            "value": "©城アラキ・長友健篩／集英社・バーテンダー製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "城アラキ"
+        },
+        {
+            "key": "系列构成",
+            "value": "今川泰宏"
+        },
+        {
+            "key": "美术监督",
+            "value": "池田繁美"
+        },
+        {
+            "key": "色彩设计",
+            "value": "村上智美"
+        },
+        {
+            "key": "摄影监督",
+            "value": "松田範雄"
+        },
+        {
+            "key": "音响监督",
+            "value": "本山哲"
+        },
+        {
+            "key": "人物设定",
+            "value": "木下裕孝"
+        }
+    ],
+    "volumes": 0,
+    "eps": 11,
+    "total_episodes": 11,
+    "rating": {
+        "rank": 1361,
+        "total": 883,
+        "count": {
+            "one": 1,
+            "two": 2,
+            "three": 4,
+            "four": 9,
+            "five": 37,
+            "six": 122,
+            "seven": 295,
+            "eight": 312,
+            "nine": 70,
+            "ten": 31
+        },
+        "score": 7.3
+    },
+    "collection": {
+        "wish": 1145,
+        "collect": 1208,
+        "doing": 192,
+        "on_hold": 224,
+        "dropped": 83
+    },
+    "tags": [
+        {
+            "name": "治愈",
+            "count": 260
+        },
+        {
+            "name": "TV",
+            "count": 186
+        },
+        {
+            "name": "2006",
+            "count": 150
+        },
+        {
+            "name": "bartender",
+            "count": 120
+        },
+        {
+            "name": "2006年10月",
+            "count": 112
+        },
+        {
+            "name": "人生",
+            "count": 104
+        },
+        {
+            "name": "神之酒杯",
+            "count": 97
+        },
+        {
+            "name": "漫画改",
+            "count": 95
+        },
+        {
+            "name": "治愈系",
+            "count": 83
+        },
+        {
+            "name": "調酒師",
+            "count": 72
+        },
+        {
+            "name": "漫改",
+            "count": 51
+        },
+        {
+            "name": "水岛大宙",
+            "count": 34
+        },
+        {
+            "name": "补番",
+            "count": 27
+        },
+        {
+            "name": "パルム",
+            "count": 27
+        },
+        {
+            "name": "日常",
+            "count": 23
+        },
+        {
+            "name": "PALM",
+            "count": 15
+        },
+        {
+            "name": "单元剧",
+            "count": 15
+        },
+        {
+            "name": "藤村步",
+            "count": 15
+        },
+        {
+            "name": "日本",
+            "count": 14
+        },
+        {
+            "name": "今川泰宏",
+            "count": 11
+        },
+        {
+            "name": "职场",
+            "count": 11
+        },
+        {
+            "name": "渡辺正樹",
+            "count": 10
+        },
+        {
+            "name": "渡边正树",
+            "count": 6
+        },
+        {
+            "name": "季番",
+            "count": 5
+        },
+        {
+            "name": "调酒师",
+            "count": 5
+        },
+        {
+            "name": "日本动画",
+            "count": 4
+        },
+        {
+            "name": "鸡尾酒",
+            "count": 4
+        },
+        {
+            "name": "剧情",
+            "count": 4
+        },
+        {
+            "name": "职业",
+            "count": 3
+        },
+        {
+            "name": "科普",
+            "count": 3
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "series": false,
+    "main_character_ids": [
+        125291
+    ],
+    "main_characters": [
+        {
+            "id": 125291,
+            "name": "佐々倉溜",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/86/f5/125291_crt_l7DgJ.jpg?r=1709905480",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/f5/125291_crt_l7DgJ.jpg?r=1709905480",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/f5/125291_crt_l7DgJ.jpg?r=1709905480",
+                "grid": "https://lain.bgm.tv/pic/crt/g/86/f5/125291_crt_l7DgJ.jpg?r=1709905480"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4260,
+                    "name": "水島大宙",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c7/0a/4260_prsn_N7Q97.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/0a/4260_prsn_N7Q97.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/0a/4260_prsn_N7Q97.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c7/0a/4260_prsn_N7Q97.jpg"
+                    },
+                    "short_summary": "水島 大宙（みずしま だいちゅう、1976年6月14日 - ）は、日本の男性声優、歌手。神奈川県藤沢市出身。本名・旧芸名は水島 大宙（みずしま たかひろ）。\r\n2000年ごろにぷろだくしょんバオバブに所属。2011年5月末でぷろだくしょんバオバブを退所し、6月より「アクセルワン」所属になる。数ヶ月前より事前に両会社と打ち合わせを済ませていた。2012年からは、アクセルワン直属の養成所「アクセルゼロ」の講師も務める。\r\n2014年より、TAKA名義で音楽活動の開始が予告され、同年3月に1stミニアルバム『Reflection』にて歌手デビューを果たした。\r\n2022年4月1日、自身のTwitterで同年3月31日をもってアクセルワンを退所し、フリーで活動するとともに、活動名義の読みを本名の「みずしまたかひろ」から「みずしまだいちゅう」に変更することを発表した。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

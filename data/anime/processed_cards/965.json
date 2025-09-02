@@ -1,0 +1,154 @@
+{
+    "id": 965,
+    "name": "永生之酒",
+    "image_path": "data/images/anime/965.jpg",
+    "points": 8.2,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "　　1711年在大西洋上，背井离乡的炼金术师们从恶魔手中得到了一样东西——那便是永生之酒。为了独占永生之酒的配方，在秘密之船上的众人开始互相残杀。1930年代的纽约的黑道中，年少有为的菲洛、傻瓜盗贼夫妇、200年老不死的炼金术士和他的助手，以及菲洛从小的玩伴、豪门千金、恐怖组织成员、年轻的列车长……这一群原本毫不相干的人却因永生之酒的复苏让他们的命运开始复杂交错起来。\r\n　　以纽约作为目的地，从芝加哥出发穿越美洲大陆的列车上，命运之轮将所有人聚集到了一起。而在这辆列车上的不仅仅是“人类”而已。传说中的幽灵再次出现，车上的旅客从最后一节车厢开始一个一个接连消失……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 16,
+    "synergy_tags": [
+        "悬疑",
+        "TV",
+        "日本",
+        "奇幻",
+        "小说改"
+    ],
+    "date": "2007-07-26",
+    "rating_rank": 133,
+    "rating_score": 8.2,
+    "rating_total": 10695,
+    "main_character_ids": [
+        3133,
+        10739,
+        11765,
+        54474
+    ],
+    "main_characters": [
+        {
+            "id": 3133,
+            "name": "ミリア・ハーヴェント",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/72/21/3133_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/21/3133_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/21/3133_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/72/21/3133_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4869,
+                    "name": "あおきさやか",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/20/cf/4869_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/20/cf/4869_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/20/cf/4869_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/20/cf/4869_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10739,
+            "name": "アイザック・ディアン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fc/2e/10739_crt_sPssD.jpg?r=1418351788",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/2e/10739_crt_sPssD.jpg?r=1418351788",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/2e/10739_crt_sPssD.jpg?r=1418351788",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fc/2e/10739_crt_sPssD.jpg?r=1418351788"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3978,
+                    "name": "小野坂昌也",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d9/ff/3978_prsn_E29Ny.jpg?r=1492894413",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/ff/3978_prsn_E29Ny.jpg?r=1492894413",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/ff/3978_prsn_E29Ny.jpg?r=1492894413",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d9/ff/3978_prsn_E29Ny.jpg?r=1492894413"
+                    },
+                    "short_summary": "小野坂昌也（1964年10月13日－）是大阪府大阪市住吉区出身的日本男性声优。血型是O型。身高170cm，体重62kg。 青二Production所属。青二私塾大阪校第1期毕业。代表作是《网球王子》（桃城武），《真三国无双系列》 （赵云、诸葛亮）。此外他是一位料理达人。喜欢讲黄色笑话出了名。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 11765,
+            "name": "フィーロ・プロシェンツォ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/01/c0/11765_crt_3fO5V.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/c0/11765_crt_3fO5V.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/c0/11765_crt_3fO5V.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/01/c0/11765_crt_3fO5V.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3955,
+                    "name": "吉野裕行",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153"
+                    },
+                    "short_summary": "日本の男性声優、歌手、ナレーターである。らえら所属。千葉県出身。身長163cm、血液型はB型。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 54474,
+            "name": "クレア・スタンフィールド",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2e/43/54474_crt_C899R.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/43/54474_crt_C899R.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/43/54474_crt_C899R.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2e/43/54474_crt_C899R.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4716,
+                    "name": "森田成一",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/44/f6/4716_prsn_M5yir.jpg?r=1735749673",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/f6/4716_prsn_M5yir.jpg?r=1735749673",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/f6/4716_prsn_M5yir.jpg?r=1735749673",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/44/f6/4716_prsn_M5yir.jpg?r=1735749673"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーターである。血液型はA型。\r\n特技  剣道、空手\r\n趣味  写真撮影、クラシックカメラ収集、各種モノ作り\r\n\r\n芸歴\r\n2003年　青二プロダクション\r\n2021年　フリー\r\n2025年　ステイラック",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

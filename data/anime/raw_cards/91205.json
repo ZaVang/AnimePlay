@@ -1,0 +1,396 @@
+{
+    "id": 91205,
+    "type": 2,
+    "name": "ハイスコアガール",
+    "name_cn": "高分少女",
+    "summary": "去和比我更强的GIRL相见——。\r\n“多边形”？那是啥？能吃吗？就在这种曾是2D全盛期的古早格斗游戏热潮到来的1991年。\r\n在不良、阿宅、上班族蔓延的市郊游戏中心，她凛然地坐在那里——。\r\n通过主人公春雄描绘的“90年代街机恋爱喜剧”！",
+    "nsfw": false,
+    "locked": false,
+    "date": "2018-07-13",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/79/bb/91205_WzBkF.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/79/bb/91205_WzBkF.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/79/bb/91205_WzBkF.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/79/bb/91205_WzBkF.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/79/bb/91205_WzBkF.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "高分少女"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "High Score Girl",
+                    "k": null
+                },
+                {
+                    "v": "Hi Score Girl",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2018年7月13日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期五"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://hi-score-girl.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX"
+        },
+        {
+            "key": "其他电视台",
+            "value": "MBS / BS11"
+        },
+        {
+            "key": "播放结束",
+            "value": "2018年9月28日"
+        },
+        {
+            "key": "导演",
+            "value": "山川吉樹"
+        },
+        {
+            "key": "音乐",
+            "value": "下村陽子"
+        },
+        {
+            "key": "Copyright",
+            "value": "© 押切蓮介/SQUARE ENIX・ハイスコアガール製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "押切蓮介（掲載 月刊「ビッグガンガン」スクウェア・エニックス刊）"
+        },
+        {
+            "key": "系列构成",
+            "value": "浦畑達彦"
+        },
+        {
+            "key": "人物设定",
+            "value": "桑波田満（SMDE）"
+        },
+        {
+            "key": "CG 导演",
+            "value": "鈴木勇介（SMDE）"
+        },
+        {
+            "key": "角色模型导演",
+            "value": "関戸惠理（SMDE）"
+        },
+        {
+            "key": "美术监督",
+            "value": "鈴木朗"
+        },
+        {
+            "key": "色彩设计",
+            "value": "木村美保"
+        },
+        {
+            "key": "摄影监督",
+            "value": "福世晋吾"
+        },
+        {
+            "key": "剪辑",
+            "value": "坪根健太郎（REAL-T）"
+        },
+        {
+            "key": "音响监督",
+            "value": "明田川仁"
+        },
+        {
+            "key": "音响",
+            "value": "マジックカプセル"
+        },
+        {
+            "key": "CGI制片人",
+            "value": "榊原智康（SMDE）"
+        },
+        {
+            "key": "动画制作",
+            "value": "J.C.STAFF"
+        },
+        {
+            "key": "制作",
+            "value": "クロックワークス、スクウェア・エニックス、J.C.STAFF、Good Smile Company"
+        },
+        {
+            "key": "企画",
+            "value": "川村明廣、武智恒雄、松浦克義、宮田知行、安藝貴範、丸山博雄"
+        },
+        {
+            "key": "制片人",
+            "value": "鶴岡信哉、宮城悠次、木村康貴、阿部倫久、中島保裕、前田俊博、榊原智康（CGI制片人）"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 12,
+    "rating": {
+        "rank": 327,
+        "total": 5564,
+        "count": {
+            "one": 11,
+            "two": 4,
+            "three": 6,
+            "four": 25,
+            "five": 60,
+            "six": 293,
+            "seven": 1244,
+            "eight": 2704,
+            "nine": 892,
+            "ten": 325
+        },
+        "score": 7.9
+    },
+    "collection": {
+        "wish": 3292,
+        "collect": 8237,
+        "doing": 521,
+        "on_hold": 478,
+        "dropped": 268
+    },
+    "tags": [
+        {
+            "name": "恋爱",
+            "count": 1362
+        },
+        {
+            "name": "J.C.STAFF",
+            "count": 1289
+        },
+        {
+            "name": "2018年7月",
+            "count": 791
+        },
+        {
+            "name": "TV",
+            "count": 711
+        },
+        {
+            "name": "漫改",
+            "count": 701
+        },
+        {
+            "name": "街机游戏",
+            "count": 635
+        },
+        {
+            "name": "漫画改",
+            "count": 557
+        },
+        {
+            "name": "高分少女",
+            "count": 484
+        },
+        {
+            "name": "2018",
+            "count": 459
+        },
+        {
+            "name": "情怀",
+            "count": 389
+        },
+        {
+            "name": "游戏",
+            "count": 357
+        },
+        {
+            "name": "无口",
+            "count": 194
+        },
+        {
+            "name": "押切蓮介",
+            "count": 181
+        },
+        {
+            "name": "白学",
+            "count": 166
+        },
+        {
+            "name": "山川吉樹",
+            "count": 83
+        },
+        {
+            "name": "搞笑",
+            "count": 59
+        },
+        {
+            "name": "青春",
+            "count": 59
+        },
+        {
+            "name": "日本",
+            "count": 46
+        },
+        {
+            "name": "校园",
+            "count": 41
+        },
+        {
+            "name": "3D",
+            "count": 36
+        },
+        {
+            "name": "日常",
+            "count": 32
+        },
+        {
+            "name": "山川吉树",
+            "count": 30
+        },
+        {
+            "name": "2018年",
+            "count": 16
+        },
+        {
+            "name": "党争",
+            "count": 14
+        },
+        {
+            "name": "季番",
+            "count": 10
+        },
+        {
+            "name": "治愈",
+            "count": 10
+        },
+        {
+            "name": "日本动画",
+            "count": 9
+        },
+        {
+            "name": "狗粮",
+            "count": 8
+        },
+        {
+            "name": "浦畑達彦",
+            "count": 7
+        },
+        {
+            "name": "三角恋",
+            "count": 7
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        61920,
+        61921,
+        61942
+    ],
+    "main_characters": [
+        {
+            "id": 61920,
+            "name": "矢口春雄",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7b/3f/61920_crt_2G3K5.jpg?r=1534652658",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/3f/61920_crt_2G3K5.jpg?r=1534652658",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/3f/61920_crt_2G3K5.jpg?r=1534652658",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7b/3f/61920_crt_2G3K5.jpg?r=1534652658"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7605,
+                    "name": "天﨑滉平",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d1/99/7605_prsn_mUHC1.jpg?r=1723389647",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d1/99/7605_prsn_mUHC1.jpg?r=1723389647",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d1/99/7605_prsn_mUHC1.jpg?r=1723389647",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d1/99/7605_prsn_mUHC1.jpg?r=1723389647"
+                    },
+                    "short_summary": "日本の男性声優。大阪府摂津市出身。\r\n日本ナレーション演技研究所を経て、2013年4月にアイムエンタープライズに所属。\r\n\r\n2018年10月より放送のTVアニメ『DOUBLE DECKER! ダグ&キリル』にてキリル・ヴルーベリ役でアニメ初主演を務める。\r\n2018年7月から放送開始のTVアニメ『ハイスコアガール』に主人公の矢口春雄役で出演、放送順としてはこちらが先の主演作品となった。\r\nゲームでは『テイルズ オブ クレストリア』にてカナタ・ヒューガ役で主演を務める。\r\n\r\n趣味は写真撮影で、雑誌のコラムや出演した番組などで披露している。\r\n甘いものが好きで、スイーツを出すカフェでバイト経験がある。\r\n事務所の同期に、内田雄馬、小澤亜李、長縄まりあがいる。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 61921,
+            "name": "大野晶",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ce/09/61921_crt_3tP1o.jpg?r=1534652875",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/09/61921_crt_3tP1o.jpg?r=1534652875",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/09/61921_crt_3tP1o.jpg?r=1534652875",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ce/09/61921_crt_3tP1o.jpg?r=1534652875"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 32687,
+                    "name": "鈴代紗弓",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8a/42/32687_prsn_GF9g5.jpg?r=1688106625"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 61942,
+            "name": "日高小春",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/db/c4/61942_crt_pxZYN.jpg?r=1535557767",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/c4/61942_crt_pxZYN.jpg?r=1535557767",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/c4/61942_crt_pxZYN.jpg?r=1535557767",
+                "grid": "https://lain.bgm.tv/pic/crt/g/db/c4/61942_crt_pxZYN.jpg?r=1535557767"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 25406,
+                    "name": "広瀬ゆうき",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/98/d4/25406_prsn_GmA6C.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/d4/25406_prsn_GmA6C.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/d4/25406_prsn_GmA6C.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/98/d4/25406_prsn_GmA6C.jpg"
+                    },
+                    "short_summary": "広瀬 ゆうき（ひろせ ゆうき、1993年4月2日 - ）は、日本の声優、アイドル、歌手である。東京都出身。青二プロダクション所属。\r\n父は俳優の廣瀬昌亮、母は女優の志水季里子。 ガールズユニット「A応P」（アニメ“勝手に”応援プロジェクト）のメンバー。\r\n2016年、第10回声優アワードにて、A応Pの一員として特別賞を受賞。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

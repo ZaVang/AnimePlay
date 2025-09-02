@@ -1,0 +1,202 @@
+{
+    "id": 297396,
+    "name": "巴克·亚罗",
+    "image_path": "data/images/anime/297396.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "林伽林德——这片土地是被墙壁包围起来的世界。\r\n墙壁将这片土地覆盖、守护、哺育、培养。\r\n墙壁即是神——是这片大地，林伽林德的根基。\r\n\r\n某天，在林伽林德边境之地「艾泽村」出现了一位神秘男子「巴克·亚罗」。\r\n亚罗失去了记忆，却唯独知道自己是「从“墙壁外”来的」。\r\n亚罗为了取回记忆而以墙壁之外为目标，却逐渐被卷入围绕着自身的争斗当中——",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "机战",
+        "TV",
+        "日本",
+        "原创",
+        "战斗"
+    ],
+    "date": "2021-01-08",
+    "rating_rank": 721,
+    "rating_score": 7.6,
+    "rating_total": 4685,
+    "main_character_ids": [
+        88108,
+        88109,
+        88110,
+        88111,
+        88113
+    ],
+    "main_characters": [
+        {
+            "id": 88108,
+            "name": "バック・アロウ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/03/bc/88108_crt_QjFyc.jpg?r=1607183077",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/bc/88108_crt_QjFyc.jpg?r=1607183077",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/bc/88108_crt_QjFyc.jpg?r=1607183077",
+                "grid": "https://lain.bgm.tv/pic/crt/g/03/bc/88108_crt_QjFyc.jpg?r=1607183077"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5209,
+                    "name": "梶裕貴",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/51/73/5209_prsn_bD3dr.jpg?r=1478379077"
+                    },
+                    "short_summary": "ARTSVISION第17期免费新人培育选拔会合格，并且加入了事务所ARTSVISION。\r\n2009年获得第3届声优奖—新人男声优赏，且开始了“G.Addict”的活动。\r\n2012年2月22日以本人的名义开始歌手的活动，发售第一张单曲《sense of wonder》。2012年9月5日发售第二张单曲《Hello！》。\r\n2013年获得第7届声优奖—主演男声优赏。\r\n2013年10月1日，由原来的事务所ARTSVISION转入VIMS。\r\n2014年获得第8届声优奖—主演男声优赏。\r\n\r\n拥有中性的声音，能演出从少年到青年、动物等各式各样的角色。\r\n担任剧团“妄想中毒”的pretty团长。\r\n中小学时代担任过学生会长，有体育或美术被表扬等表现，是个非常有才能的小孩。\r\n声优伙伴或支持者称呼他为“王子”。\r\n和代永翼组成团体“BRAVE WING”。\r\n与寺岛拓笃、堀江一真和阿部敦等四人组成团体“G.Addict”。\r\n性格极其纯良，待人有礼温善。虽然人前很活泼开朗，但其实是个喜欢宁静安逸的人，只有与亲近的人在一起时才会放松的流露真实自我。\r\n不只声音，外型也很中性，现在也还会被误认成女生。本人对此表示否定，表示“内在意外地很有男子气概”。\r\n虽然年轻，但是性格相当认真。寺岛拓笃评价他“面对工作上的态度很严谨”，大亲友下野纮也说：“他真的很可靠，很会待人处世，作为声优也相当优秀。”\r\n\r\n代表作品有《进击的巨人》艾伦·耶格尔、《夜樱四重奏》比泉秋名、《未来都市NO.6》紫苑、《罪恶王冠》樱满集、《七大罪》梅利奥达斯、《加速世界》有田春雪、《魔笛MAGI》阿里巴巴·沙尔贾等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 88109,
+            "name": "アタリー・アリエル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d1/c9/88109_crt_s2ie5.jpg?r=1607183421",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d1/c9/88109_crt_s2ie5.jpg?r=1607183421",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d1/c9/88109_crt_s2ie5.jpg?r=1607183421",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d1/c9/88109_crt_s2ie5.jpg?r=1607183421"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 8403,
+                    "name": "洲崎綾",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/37/de/8403_prsn_w98m9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/de/8403_prsn_w98m9.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/de/8403_prsn_w98m9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/37/de/8403_prsn_w98m9.jpg"
+                    },
+                    "short_summary": "洲崎绫，出生于日本石川县，日本女性声优。隶属于I'm Enterprise。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 88110,
+            "name": "エルシャ・リーン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/b2/88110_crt_39n75.jpg?r=1607183619",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/b2/88110_crt_39n75.jpg?r=1607183619",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/b2/88110_crt_39n75.jpg?r=1607183619",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/b2/88110_crt_39n75.jpg?r=1607183619"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 15287,
+                    "name": "小澤亜李",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/db/ff/15287_prsn_W8h04.jpg?r=1689137730",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/ff/15287_prsn_W8h04.jpg?r=1689137730",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/ff/15287_prsn_W8h04.jpg?r=1689137730",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/db/ff/15287_prsn_W8h04.jpg?r=1689137730"
+                    },
+                    "short_summary": "日本女性声优。\r\n初中看了各种各样的动漫度过了初中的时间，初三的时候下定决心要以成为声优为目标。\r\n为了进声优养成所，高一在保育员的父母工作的保育院里打理伙食，做兼职来存学费。\r\n在高二入读日本播音演技研究所。高中毕业之后，考取了调理师资格证，在拿到资格之后便确定了事务所。\r\n\r\n2013年4月加入I'm Enterprise。出道作为2013年《我的妹妹哪有这么可爱！》中游戏的声音，台词为「クリスマスホーリーナイト！」（Christmas Holy Night）。\r\n2014年7月，在《月刊少女野崎君》出演女主角佐仓千代，并担任片尾曲《ウラオモテ・フォーチュン》的演唱者。\r\n2017年，获得第11回声优奖新人女声优奖。\r\n\r\n称自己是一个有些腼腆、略怕生的人。\r\n昵称有“亚李（あり)”，“亚李酱（ありちゃん）”，“亚李李(ありりん)”。\r\n养有一只母迷你腊肠犬，取名叫そら（天空)。\r\n愿望是成为坚强成熟的女性，自己的名字能够以声优的身份被人记住。\r\n擅长插图，喜欢运动。持有调理师证书，会做料理。\r\n初一加入过田径部，但不擅长球类运动，上篮球课的时候是专门捡球的。\r\n比起做菜更喜欢吃，常在博客里发表有关吃喝的图片文字，相对肉更喜欢吃蔬菜，和食派，最喜欢的是吃起来“刺溜刺溜”的美味乌冬，有乌冬就很幸福。\r\n如果想要吃一些美味的饭菜时，就会在制作的时候做上一大堆。\r\n初中时处于画画的巅峰期，使用一些画漫画原稿用的钢笔进行绘图，而且还用手绘板创作一些东西。\r\n初一的时候遇到了《魔法先生》这部作品，被有很多女孩子出场的动画吸引了，很憧憬可以像那样笑着生活的女孩子。\r\n《牧场物语》是最憧憬的作品之一，希望能以一个角色的身份加入那种小温暖的世界。\r\n初中生时放学后常和朋友玩广播游戏，用电脑录音再听，然后五六个女生一起读漫画配音。\r\n因为喜欢《女生爱女生》和《水果篮子》这两部作品，所以喜欢田村由香里前辈和堀江由衣前辈。\r\n非常欣赏同事物所的前辈中原麻衣，认为麻衣前辈很可靠，曾在博客上说“麻衣前辈赛高”。\r\n与新人声优田泽茉纯、雨宫夕夏、长绳麻理亚、大西沙织等关系很好。跟共同出演动画《THE ROLLING GIRLS》的花守由美里关系也很好。\r\n2020年8月10日，小泽亚李向粉丝报告了自己和歌手Hige Driver结婚的事情，并在博客中表示迎来了28岁生日，我为私事感到很抱歉，在此向您报告。我、小泽亚李和音乐人Hige Driver结婚了。我希望今后也能和对哭泣、欢笑、调皮的我微笑着交往的他一起，构筑一个温暖的家庭。”至今为止、今后，我对角色的爱、对工作的感谢之情都不会改变。虽然我还不成熟，但是无论是作为一个人还是作为一个演员，我都想要更加精进。今后也请多多关照”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 88111,
+            "name": "ビット・ナミタル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/14/c8/88111_crt_7ziN0.jpg?r=1607183816",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/14/c8/88111_crt_7ziN0.jpg?r=1607183816",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/14/c8/88111_crt_7ziN0.jpg?r=1607183816",
+                "grid": "https://lain.bgm.tv/pic/crt/g/14/c8/88111_crt_7ziN0.jpg?r=1607183816"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4965,
+                    "name": "小野賢章",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/22/85/4965_prsn_7w6iz.jpg?r=1709906610",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/85/4965_prsn_7w6iz.jpg?r=1709906610",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/85/4965_prsn_7w6iz.jpg?r=1709906610",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/22/85/4965_prsn_7w6iz.jpg?r=1709906610"
+                    },
+                    "short_summary": "小野賢章（1989年10月5日－）是日本的男性演員、聲優。福岡縣出生、東京都出身。\r\n以前是劇團向日葵系列的砂岡事務所所屬。2012年9月30日退出約14年所屬的砂岡事務所。目前的事务所为Animo Produce。\r\n2013年12月，宣布将在2014年2月以黑子的篮球 第二季的片尾曲“FANTASTIC TUNE”为个人名义歌手身份出道。\r\n\r\n以哈利波特日语吹替版作为契机而成为声优。本人说过“声优只能以声音来传达事物，不过演员能用表情跟肢体动作表达出来，虽然两边都有困难的地方，不过能作为演员用身体表演也很快乐。”所以并没有特别把声优跟演员的工作区别开来，今后也不会拘泥于声音的工作，会挑战更多共种各样的工作。2014年动过声带息肉切除手术。\r\n从12岁开始的10年间，一直在为哈利波特日语版中的主角哈利·波特配音。当时本人并没有读过哈利波特原作。是因为母亲是哈利波特的大粉丝，所以被母亲劝诱去参加征选会。当确定要饰演主角时，身为哈利波特粉丝的双亲比他还高兴。名字的由来是来自于设计家安部兼章。由于当时还是小学6年级生，不太懂得要怎么表演，所以都是照着导演的指示来配音的，后期渐渐的开始能自己理解该怎么演。在配第三作“哈利波特─阿兹卡班的逃犯”时，因为正处于变声期，所以当中战斗场面的嘶吼声配得非常辛苦。一直拼命努力演出的他，也以变声期作为契机开始会思考更多关于演技的事情。\r\n\r\n2017年2月19日，有相关报道证实与同是声优的花泽香菜是恋人关系，并同居于东京港区某公寓。本人亦于2017年2月22日在个人部落格承认交往。\r\n2020年7月8日，宣布与花泽香菜结婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 88113,
+            "name": "シュウ・ビ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/59/8e/88113_crt_oARol.jpg?r=1607184309",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/8e/88113_crt_oARol.jpg?r=1607184309",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/8e/88113_crt_oARol.jpg?r=1607184309",
+                "grid": "https://lain.bgm.tv/pic/crt/g/59/8e/88113_crt_oARol.jpg?r=1607184309"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4513,
+                    "name": "杉田智和",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/72/98/4513_prsn_o6DbE.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/98/4513_prsn_o6DbE.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/98/4513_prsn_o6DbE.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/72/98/4513_prsn_o6DbE.jpg"
+                    },
+                    "short_summary": "在其代表作品中常出演擅长吐槽的男主角（特别是凉宫春日中的阿虚），号称“第一吐槽男”。\r\n专长是按摩、少林寺拳法初段。爱犬的名字为Naoji。\r\n著名的“超级机器人大战FAN”，其称为“老师”的绿川光是著名的“超级玩家”，并且同为系列死忠。\r\n在声优界亲近的友人有中村悠一、铃村健一、樱井孝宏、小野大辅、神谷浩史等人。\r\n经常对外宣称与中村悠一的亲密关系（广播节目、声优见面会以及自己的生日庆祝EVENT等），还说过“只要有中村和直司（Naoji，杉田家的狗）就够了，我是杉田智和。”两人关系好得经常被其他声优说“像在交往一样”。\r\n另外与同为声优的铃木达央、羽多野涉、寺岛拓笃、市来光弘等人关系友好，合称为“杉田组”，杉田智和是杉田组的组长。\r\n崇拜的业内人士有若本规夫（杉田喜欢模仿这位是出了名的）、速水奖（中学时代就常听他的radio节目） 、铃置洋孝、绿川光（机器人大战同好）、置鲇龙太郎。\r\nLOVEPLUS的重度中毒者之一，跟阪口大助同为攻略游戏中的高岭爱花，并有在杉田的广播节目互相交流“女友经”。\r\n学园传奇冒险游戏月英学园 -kou-的原作者，其饰演执事一角。\r\n与中村悠一多次使用过淫梦梗，被鉴定为淫梦民。\r\n\r\n2009年获得声优奖男优部门配角赏",
+                    "locked": false
+                },
+                {
+                    "id": 13164,
+                    "name": "上田麗奈",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c5/14/13164_prsn_KWnmW.jpg?r=1752543801"
+                    },
+                    "short_summary": "日本的女性声优，富山县出身，所属事务所为81 Produce。\r\n初中时同属演剧部的女生有声优志向者，尊敬她的上田觉得“声优肯定是很美妙的职业”，又担心“自己的性格很奇怪”，本来以美术大学为志愿的她最终在声优试音报名结束前三天才报名。\r\n2011年，在第5回81 Audition中获得准优秀奖，之后加入81 Produce。\r\n获第九届声优奖新人女声优奖。\r\n是声优组合Anisonia的成员之一。\r\n在电视动画《摸索吧！部活剧》中，一人分饰18角。\r\n绘画力极强，《摸索吧！部活剧》的试音中因为绘画好而被选中，后来也在花舞少女广播中绘画并得到采用，还担任了《骇客娃娃》第五话的Endcard。\r\n不擅长运动。\r\n在各种场合被人说“凡骨”，自己的性格也很天然。\r\n自称只要对她好，就能喜欢上那个人。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

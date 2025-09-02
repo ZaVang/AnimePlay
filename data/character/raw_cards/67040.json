@@ -1,0 +1,44 @@
+{
+    "id": 67040,
+    "name": "国宝雪絵",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/88/97/67040_crt_fYYLN.jpg?r=1541252396",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/97/67040_crt_fYYLN.jpg?r=1541252396",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/97/67040_crt_fYYLN.jpg?r=1541252396",
+        "grid": "https://lain.bgm.tv/pic/crt/g/88/97/67040_crt_fYYLN.jpg?r=1541252396"
+    },
+    "summary": "宪一的妹妹，代替已逝的母亲料理家务的善良女孩。\r\n性格好而且很受同学的欢迎，N 多男生对她特有好感（其中就包括洛基、火堂跟不知火 3 人）。就读于是羽中学初中部。\r\n身高 150cm，生日：6月19日。\r\n经典台词：\r\n哥哥，你不要这样子啦",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "国宝雪绘​"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "瑜珈"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こくほう ゆきえ"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        5927
+    ]
+}

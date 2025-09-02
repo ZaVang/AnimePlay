@@ -1,0 +1,123 @@
+{
+    "id": 221127,
+    "name": "黄金神威",
+    "image_path": "data/images/anime/221127.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "为了实现日俄战争中死去好友寅次，临死之前「治好我妻子眼睛」的愿望，军人杉元为了筹集到金钱而从东京前往北海道，因为传说在北海道土著阿依努族中有大批金块存在，而在旅途中杉元结识了土著阿依努人女孩阿希莉。\r\n在阿希莉被熊袭击时，杉元及时出手救了女孩，杉元一方面感叹阿希莉所拥有的猎人技能和知识，但也知道阿希莉的父亲为了保护金块被人杀死。\r\n于是杉元向阿希莉提出自己只要能完成朋友遗愿的那部分金块，剩下的金块都给阿希莉作为替父亲报酬的资金，作为交换阿希莉要和自己一起去寻找金块，于是二人踏上寻找黄金的征途。\r\n另一方面，驻守在北海道第七师团也涉及到黄金寻宝当中蠢蠢欲动——",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗",
+        "冒险"
+    ],
+    "date": "2018-04-09",
+    "rating_rank": 913,
+    "rating_score": 7.5,
+    "rating_total": 3845,
+    "main_character_ids": [
+        56511,
+        56512,
+        60615
+    ],
+    "main_characters": [
+        {
+            "id": 56511,
+            "name": "杉元佐一",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/68/28/56511_crt_LrYrl.jpg?r=1569906281",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/28/56511_crt_LrYrl.jpg?r=1569906281",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/28/56511_crt_LrYrl.jpg?r=1569906281",
+                "grid": "https://lain.bgm.tv/pic/crt/g/68/28/56511_crt_LrYrl.jpg?r=1569906281"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 31823,
+                    "name": "小林親弘",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/25/7b/31823_prsn_00ZN3.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/7b/31823_prsn_00ZN3.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/7b/31823_prsn_00ZN3.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/25/7b/31823_prsn_00ZN3.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 56512,
+            "name": "アシㇼパ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/05/ea/56512_crt_94z4T.jpg?r=1569906263",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/ea/56512_crt_94z4T.jpg?r=1569906263",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/ea/56512_crt_94z4T.jpg?r=1569906263",
+                "grid": "https://lain.bgm.tv/pic/crt/g/05/ea/56512_crt_94z4T.jpg?r=1569906263"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 18600,
+                    "name": "白石晴香",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a9/6f/18600_prsn_LGgtC.jpg?r=1585323843",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/6f/18600_prsn_LGgtC.jpg?r=1585323843",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/6f/18600_prsn_LGgtC.jpg?r=1585323843",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a9/6f/18600_prsn_LGgtC.jpg?r=1585323843"
+                    },
+                    "short_summary": "日本の女優、声優。\r\n特长：爵士舞、芭蕾、花道、书法、舞蹈、足球。\r\n\r\n2007年より女優として活動し、舞台などに出演。2011年に『コクリコ坂から』の松崎空役で声優デビュー。\r\n2019年12月31日，退出ヒラタオフィス事务所\r\n2020年1月1日开始作为自由声优活动并开设了新的Twitter帐号（shiraharu48）。\r\n2020年6月1日开始进入TOY'S FACTORY(トイズファクトリー)事务所。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 60615,
+            "name": "白石由竹",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/de/9f/60615_crt_Eoe1E.jpg?r=1605921018",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/9f/60615_crt_Eoe1E.jpg?r=1605921018",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/9f/60615_crt_Eoe1E.jpg?r=1605921018",
+                "grid": "https://lain.bgm.tv/pic/crt/g/de/9f/60615_crt_Eoe1E.jpg?r=1605921018"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4391,
+                    "name": "伊藤健太郎",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/41/6e/4391_prsn_oLqlG.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/6e/4391_prsn_oLqlG.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/6e/4391_prsn_oLqlG.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/41/6e/4391_prsn_oLqlG.jpg"
+                    },
+                    "short_summary": "日本男性配音员、舞台演员、旁白。Mausu Promotion所属、剧团K-Show主宰。出身于东京都八王子市。\r\n\r\n伊藤早年从明治学院东村山高等学校毕业后，因为有朋友在剧团帮忙而得到这个机会，开始对“芝居的世界”产生兴趣。1993年，伊藤进入桐朋学园短期大学就读演剧科系。同年夏天，以《小妇人》成为他的第一次舞台公演。\r\n1995年，伊藤以职业芝居师的身份加入剧团21世纪FOX（声优肝付兼太率领），从此正式踏入声优业界。2001年，移籍至东京俳优生活协同组合（简称俳协）（2009年4月从俳协离所）。2009年5月加入Mediarte，但Mediarte不久之后解散，立即加入amuleto（旧名：ARKRAY）。2016年6月1日起加入现在所属的Mausu Promotion。\r\n2003年于俳协时期，成立现在主宰的剧团K-Show。同时在‘俳协 45th ANNIVERSARY’的问卷调查写着“现在这是一个很重要的剧团”，并写说将来的梦想是成立一间独立的剧团工作室。\r\n伊藤自从声优出道以来，配过少年、青年、发福男性以及英雄的角色。而为人熟悉的代表配音作品有动画《飙速宅男》的田所迅、《BLEACH》的阿散井恋次、《火影忍者》系列的秋道丁次、《超者莱汀》主角鹫崎飞翔／莱汀老鹰、《ONE PIECE》的夫卡波西、《丽佳★公主》的娃娃勇、《机动战舰抚子号》的葵纯、《哈姆太郎》系列的大老板／大将、《金色琴弦》系列（含游戏原作）的土浦梁太郎&八木泽雪广、《JoJo的奇妙冒险 星尘斗士》的恩多尔、《卡片斗争!! 先导者》系列的大文字刚毅、《忍者龟》新作动画的拉斐尔、《纯情罗曼史》的上条弘树、《东京喰种》的万丈数壹、《黄金神威》的白石由竹；游戏《幻想传奇》（之后在传奇系列的其它作品多次登场）的切斯塔·伯克艾特、《真·三国无双》系列的乐进等。\r\n此外，伊藤在《哈姆太郎》、《仰天人间》因为曾经一人饰演二角，因此对饰演发福型或英雄型的角色有深刻印象。\r\n伊藤会想成为演员的原因是因为演员有它有趣的地方，并说当演员能够出一些你在日常生活中不会遇到有趣的人事物。\r\n座右铭是“有言実行（中文译作“言出必行”）”。尊敬的人物是战国时代有名的丰臣秀吉（因此伊藤曾在游戏《决战III》声演羽柴秀吉）。\r\n昵称“イトケン”，而这也是他有名的昵称。因此与伊藤亲近的异性多以“健太郎”或者是“小健（健ちゃん）”称呼。此外还有“けんたろさん”，这是由斋贺光希等人取的。还有，从游戏《金色琴弦》开始跟伊藤关系不错的谷山纪章对他以“健兄（ケン兄）”称呼。\r\n川上伦子和朴璐美正是伊藤大学时期的学姐。还有，森久保祥太郎是跟伊藤同乡的亲友。不仅出身地、年龄、出生的医院相同，连生日都非常接近。\r\n此外，与《金色琴弦》或动画《BLEACH》多次合作过的森田成一关系良好。并在‘新罗曼史 LIVE 2006 Autumn’参演时期2人曾经一起私底下练习歌唱。\r\n已婚，与妻子是在剧团21世纪FOX时期认识。现在是1个儿子的父亲。\r\n\r\nYouTube频道：\r\nhttps://www.youtube.com/channel/UCaqInD4A1DBaVcP5ZlR-mGQ\r\n\r\n另有同名演员、模特伊藤健太郎（曾用艺名：健太郎）。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

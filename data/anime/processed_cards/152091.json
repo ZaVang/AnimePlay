@@ -1,0 +1,160 @@
+{
+    "id": 152091,
+    "name": "吹响！悠风号 第二季",
+    "image_path": "data/images/anime/152091.jpg",
+    "points": 8.5,
+    "cost": 4,
+    "rarity": "SSR",
+    "description": "吹奏乐竞赛京都府大赛。在那里漂亮地取得金奖的北宇治高中吹奏乐部，向着下一个舞台·强豪云集的关西大赛发起挑战！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "校园",
+        "校园",
+        "TV",
+        "TV",
+        "日本",
+        "日本",
+        "音乐",
+        "音乐",
+        "小说改",
+        "小说改"
+    ],
+    "date": "2016-10-05",
+    "rating_rank": 52,
+    "rating_score": 8.5,
+    "rating_total": 15645,
+    "main_character_ids": [
+        29282,
+        29283,
+        29284,
+        29285
+    ],
+    "main_characters": [
+        {
+            "id": 29282,
+            "name": "黄前久美子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/48/cc/29282_crt_VJ77t.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/cc/29282_crt_VJ77t.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/cc/29282_crt_VJ77t.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/48/cc/29282_crt_VJ77t.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9560,
+                    "name": "黒沢ともよ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964"
+                    },
+                    "short_summary": "黒沢 ともよ（くろさわ ともよ、1996年4月10日 - ）は、日本の女性女優、声優、歌手。マウスプロモーション所属。埼玉県秩父市出身。\r\n\r\n3歳頃から演技の勉強を始め、2003年頃から子役としてテレビドラマ、CM、舞台へ出演。\r\n2008年よりSound Horizonのサポートメンバーとして参加。6th Story CD『Moira』のPV「冥王 -Θανατος-」、及びコンサート「Sound Horizon 6th Story Concert Moira 〜其れでも、お征きなさい仔等よ〜」に幼少期アルテミシア役で出演。いずれも発声無しの子役（モーションアクター）としての出演であったが、2010年の7th Story CD『Märchen』ではボーカル・ボイスアクターなども務めている。\r\n2010年、劇場アニメ『宇宙ショーへようこそ』の小山夏紀役にて声優デビュー。その後、テレビアニメ等、活躍の幅を広げている。\r\n東京児童劇団を退団後、2012年よりマウスプロモーションに所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 29283,
+            "name": "加藤葉月",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bd/68/29283_crt_vL1H3.jpg?r=1559645553",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/68/29283_crt_vL1H3.jpg?r=1559645553",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/68/29283_crt_vL1H3.jpg?r=1559645553",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bd/68/29283_crt_vL1H3.jpg?r=1559645553"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 16264,
+                    "name": "朝井彩加",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2c/01/16264_prsn_eDeSy.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/01/16264_prsn_eDeSy.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/01/16264_prsn_eDeSy.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2c/01/16264_prsn_eDeSy.jpg"
+                    },
+                    "short_summary": "日本の声優、女優。\r\n2013年1月1日より青年座映画放送に所属。同年、アミューズメントメディア総合学院東京校を卒業、および声優活動を開始し、『私がモテないのはどう考えてもお前らが悪い!』で初のレギュラー出演。\r\n2015年、『新妹魔王の契約者』の成瀬澪役で初のヒロイン役を務める。\r\n2017年5月に青年座映画放送を退所し、その後はフリーで活動。10月より東映撮影所に所属。\r\n2020年8月にインテンションへの移籍を報告した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 29284,
+            "name": "川島緑輝",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1c/2f/29284_crt_2JDJs.jpg?r=1559645629",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/2f/29284_crt_2JDJs.jpg?r=1559645629",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/2f/29284_crt_2JDJs.jpg?r=1559645629",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1c/2f/29284_crt_2JDJs.jpg?r=1559645629"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13214,
+                    "name": "豊田萌絵",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/62/56/13214_prsn_85HbA.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/56/13214_prsn_85HbA.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/56/13214_prsn_85HbA.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/62/56/13214_prsn_85HbA.jpg"
+                    },
+                    "short_summary": "2013年起成为声优组合StylipS的成员。\r\n\r\n“声優になる前からリアルタイムで見ていた大好きな咲に関われる事が出来てとっても嬉しいです！　キャストが決まった時は泣いて喜びました。ちっちゃいけれどしっかりしている胡桃を精一杯演じ、胡桃と一緒に咲-Saki-全国編を盛り上げて行きたいと思います！　応援宜しくお願い致します。”",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 29285,
+            "name": "高坂麗奈",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/01/12/29285_crt_6GIhe.jpg?r=1559645698",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/12/29285_crt_6GIhe.jpg?r=1559645698",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/12/29285_crt_6GIhe.jpg?r=1559645698",
+                "grid": "https://lain.bgm.tv/pic/crt/g/01/12/29285_crt_6GIhe.jpg?r=1559645698"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 11485,
+                    "name": "安済知佳",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e9/02/11485_prsn_63BEE.jpg?r=1688702458",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/02/11485_prsn_63BEE.jpg?r=1688702458",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/02/11485_prsn_63BEE.jpg?r=1688702458",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e9/02/11485_prsn_63BEE.jpg?r=1688702458"
+                    },
+                    "short_summary": "所属事务所为Avex Planning & Development。\r\n\r\n小学5年级时开始知道声优这个职业，中学生时进入了Avex Artist Academy。当初因为交通费的关系，15岁时独自一人从福井县到东京，并过着一个月一次从东京回到福井县高中读书的生活。\r\n\r\n勉強を始めてから4年目の2009年、テレビアニメ『あにゃまる探偵 キルミンずぅ』のメインキャラクター、御子神ナギサ役でデビュー。\r\n2014年、テレビアニメ『棺姫のチャイカ』のチャイカ・トラバント役で初主演。\r\n\r\n2020年8月1日，在Instagram上公布结婚的消息。\r\n\r\nYTB频道：\r\nhttps://www.youtube.com/channel/UCdWglOsvq7Q_3-XM5XMxaqQ",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

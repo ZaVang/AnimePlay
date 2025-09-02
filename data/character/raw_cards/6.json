@@ -1,0 +1,73 @@
+{
+    "id": 6,
+    "name": "伊吹風子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0b/8f/6_crt_Nd532.jpg?r=1692105906",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/8f/6_crt_Nd532.jpg?r=1692105906",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/8f/6_crt_Nd532.jpg?r=1692105906",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0b/8f/6_crt_Nd532.jpg?r=1692105906"
+    },
+    "summary": "独自在旧校舍的空教室里不断地雕刻着木片做的海星的古怪的女孩。性情虽然十分孩子气，但却好像一直认为自己具备了“成人的风格”。她有一个比她年长不少的姐姐，在那木片之中，饱含了风子对她姐姐的深情。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊吹风子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いぶきふうこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ibuki Fuuko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月20日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "150cm"
+        },
+        {
+            "key": "体重",
+            "value": "41kg"
+        },
+        {
+            "key": "BWH",
+            "value": "78/54/79"
+        },
+        {
+            "key": "声优",
+            "value": "野中藍"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 2,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 20,
+    "stat": {
+        "comments": 81,
+        "collects": 517
+    },
+    "anime_ids": [
+        51,
+        363880
+    ]
+}

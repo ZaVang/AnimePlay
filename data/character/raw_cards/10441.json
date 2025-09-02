@@ -1,0 +1,80 @@
+{
+    "id": 10441,
+    "name": "巴マミ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/52/4b/10441_crt_Z31p5.jpg?r=1619409321",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/4b/10441_crt_Z31p5.jpg?r=1619409321",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/4b/10441_crt_Z31p5.jpg?r=1619409321",
+        "grid": "https://lain.bgm.tv/pic/crt/g/52/4b/10441_crt_Z31p5.jpg?r=1619409321"
+    },
+    "summary": "「――危なかったわね。でも、もう大丈夫」\r\nまどか達の通う中学校の3年生。面倒見の良いお姉さん的存在。キュゥべえと契約した現役の魔法少女。\r\n\r\n「もう何も怖くない」",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "巴麻美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "巴 マミ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ともえ マミ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tomoe Mami"
+                },
+                {
+                    "k": "昵称",
+                    "v": "学姐"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "156~159cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "www.madoka-magica.com/tv/character"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁（中3）"
+        },
+        {
+            "key": "出身",
+            "value": "见泷原市"
+        },
+        {
+            "key": "学校",
+            "value": "见泷原中学校"
+        },
+        {
+            "key": "人设",
+            "value": "苍树梅"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 67,
+        "collects": 435
+    },
+    "anime_ids": [
+        9717
+    ]
+}

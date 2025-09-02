@@ -1,0 +1,72 @@
+{
+    "id": 11192,
+    "name": "ミレーヌ・ジーナス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8b/d6/11192_crt_G5oLV.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8b/d6/11192_crt_G5oLV.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8b/d6/11192_crt_G5oLV.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8b/d6/11192_crt_G5oLV.jpg"
+    },
+    "summary": "マクロス 7女主角，担任贝斯手，也是乐团Fire Bomber的主唱之一。生于 2031 年，初登场时14岁，是地球人（麦克斯.吉纳斯）舰长与杰特拉帝人（米莉亚.法莉娜.吉纳斯）市长所生的第七个孩子；个性完全遗传至她的母亲米莉亚，常跟巴萨拉吵架，也似乎因为父母都是天才驾驶员对驾驶Valkyrie也很有一套。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "米莲·吉纳斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Mylene Flare Jenius"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ミレーヌ・F・ジーナス"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ミレーヌ・フレア・ジーナス"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mirēnu F. Jīnasu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2031年02月02日"
+        },
+        {
+            "key": "血型",
+            "value": "Bc型"
+        },
+        {
+            "key": "身高",
+            "value": "153.3cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B79 W52 H82"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 2031,
+    "birth_mon": 2,
+    "birth_day": 2,
+    "stat": {
+        "comments": 13,
+        "collects": 69
+    },
+    "anime_ids": [
+        3169
+    ]
+}

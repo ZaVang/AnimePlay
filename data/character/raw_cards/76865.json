@@ -1,0 +1,68 @@
+{
+    "id": 76865,
+    "name": "椛島アニータ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e4/7f/76865_crt_dSBs1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/7f/76865_crt_dSBs1.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/7f/76865_crt_dSBs1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e4/7f/76865_crt_dSBs1.jpg"
+    },
+    "summary": "猪突猛進関西弁キャッチャー \r\n横浜リトルではスタメンマスクでクリーンナップを任されていた。千里とは当時からのチームメイト。関西弁なのは関西出身の父親の影響だが、小学4年生の時にブラジルからやってきたハーフ。負けず嫌いな性格で野球には人一倍情熱を注ぐ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "椛岛阿妮塔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "椛島 アニータ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かばしま　アニータ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "176cm（初中）"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        },
+        {
+            "key": "背号",
+            "value": "2"
+        },
+        {
+            "key": "守备位置",
+            "value": "捕手／外野手"
+        },
+        {
+            "key": "投打",
+            "value": "右投右打"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 5
+    },
+    "anime_ids": [
+        292219
+    ]
+}

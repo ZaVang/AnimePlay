@@ -1,0 +1,47 @@
+{
+    "id": 18432,
+    "name": "ロス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/31/36/18432_crt_N7t96.jpg?r=1366089911",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/31/36/18432_crt_N7t96.jpg?r=1366089911",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/31/36/18432_crt_N7t96.jpg?r=1366089911",
+        "grid": "https://lain.bgm.tv/pic/crt/g/31/36/18432_crt_N7t96.jpg?r=1366089911"
+    },
+    "summary": "アルバの相棒となる王宮戦士。身の丈ほどの大きな剣を背中に担ぎ、左腕に謎の機械を装備している。\r\n 積極的に戦闘へ参加することがあまりなく、その力は未知数。\r\n 魔王討伐にもほぼやる気なし、アルバをいじめることに情熱をかけている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "罗斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "伝説のドS"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月4日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 4,
+    "stat": {
+        "comments": 5,
+        "collects": 52
+    },
+    "anime_ids": [
+        48669
+    ]
+}

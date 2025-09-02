@@ -1,0 +1,78 @@
+{
+    "id": 102918,
+    "name": "スーパーグランゾート",
+    "type": 2,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a7/a9/102918_crt_BzLGd.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/a9/102918_crt_BzLGd.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/a9/102918_crt_BzLGd.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a7/a9/102918_crt_BzLGd.jpg"
+    },
+    "summary": "月面の、かぐや姫のかんざし岩で発見したゾーラクラウンによって、グランゾートがパワーアップした姿。多少の空中浮遊能力を習得した。\r\nグランゾートの象徴石であるグランドストーンを額に戴き、両肩のキングストーン、胸のスーパーストーンで魔動力を制御する。額のツノは大地の息吹を感じることができ、第六の感覚として使用。両肩のアーマーを兼ねたスレッジアースでは大地の魔動力を、そして両腕の爪アトラスエッジでは炎の魔動力を制御する。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "超级地动王"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "超级地隐侠"
+                },
+                {
+                    "v": "超级火动王"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "超级光能使者"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Super Granzort"
+                },
+                {
+                    "k": "昵称",
+                    "v": "超级地神号"
+                }
+            ]
+        },
+        {
+            "key": "主",
+            "value": "遥　大地"
+        },
+        {
+            "key": "召還キーワード",
+            "value": "マジカルシュート！　ドーマ・キサ・ラムーン、光り出よ、汝グランゾート！"
+        },
+        {
+            "key": "魔動具",
+            "value": "魔動銃"
+        },
+        {
+            "key": "武器",
+            "value": "スーパーエルディカイザー"
+        },
+        {
+            "key": "必殺技",
+            "value": "一刀両断、スーパーエルディカイザー"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.granzort.net/mechanic"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 2
+    },
+    "anime_ids": [
+        5467
+    ]
+}

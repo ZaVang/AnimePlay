@@ -1,0 +1,460 @@
+{
+    "id": 404804,
+    "type": 2,
+    "name": "天国大魔境",
+    "name_cn": "天国大魔境",
+    "summary": "2024年，世界发生了史无前例的灾难，然后15年过去了。\r\n成为废墟的日本栖息着一种食人的怪物（蛭子），人们艰难地生存着。\r\n在东京·中野经营万事屋的的斩子接受了一个神秘女人的委托，“带这个孩子去天国”。\r\n这个被留下的名叫真流的孩子说“天国好像有人和我长得一模一样。”\r\n除此之外他什么都不知道。\r\n“天国”究竟在哪里？\r\n当你到达那里时会发生什么......？\r\n真流和斩子寻找天国的旅程现在开始了——！",
+    "nsfw": false,
+    "locked": false,
+    "date": "2023-04-01",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/ba/c9/404804_1sTp8.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/ba/c9/404804_1sTp8.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/ba/c9/404804_1sTp8.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/ba/c9/404804_1sTp8.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/ba/c9/404804_1sTp8.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "天国大魔境"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Tengoku Daimakyou",
+                    "k": null
+                },
+                {
+                    "v": "Heavenly Delusion",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2023年4月1日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://tdm-anime.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX"
+        },
+        {
+            "key": "其他电视台",
+            "value": "RKB毎日放送 / テレビ愛知 / 北海道テレビ / MBS / BS11 / AT-X / RKK熊本放送"
+        },
+        {
+            "key": "播放结束",
+            "value": "2023年6月24日"
+        },
+        {
+            "key": "导演",
+            "value": "森大貴"
+        },
+        {
+            "key": "音乐",
+            "value": "牛尾憲輔"
+        },
+        {
+            "key": "Copyright",
+            "value": "©石黒正数・講談社／天国大魔境製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "石黒正数「天国大魔境」（月刊アフタヌーン／講談社刊）"
+        },
+        {
+            "key": "系列构成",
+            "value": "深見真"
+        },
+        {
+            "key": "人物设定",
+            "value": "うつした(南方研究所)；副：吉田優子、渡辺愛"
+        },
+        {
+            "key": "设定",
+            "value": "[蛭子设计]古川良太、[枪械设计]髙田晃"
+        },
+        {
+            "key": "道具设计",
+            "value": "富坂真帆、澤田譲治"
+        },
+        {
+            "key": "机械设定",
+            "value": "常木志伸"
+        },
+        {
+            "key": "色彩设计",
+            "value": "広瀬いづみ"
+        },
+        {
+            "key": "美术监督",
+            "value": "金子雄司"
+        },
+        {
+            "key": "美术设计",
+            "value": "ブリュネ・スタニスラス / 伊井蔵、上田瑞香、平沢晃弘、高橋武之"
+        },
+        {
+            "key": "3DCG",
+            "value": "directrain、IG3D、5(five)"
+        },
+        {
+            "key": "Motion Graphics",
+            "value": "大城丈宗"
+        },
+        {
+            "key": "2DW",
+            "value": "CAPSULE、濱中亜希子"
+        },
+        {
+            "key": "摄影监督",
+            "value": "脇顯太朗"
+        },
+        {
+            "key": "剪辑",
+            "value": "坂本久美子"
+        },
+        {
+            "key": "音响监督",
+            "value": "木村絵理子"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "SCRAMBLES（OP） / 江口亮（ED）"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "松隈ケンタ（OP） / とくみくす（ED）"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "松隈ケンタ、JxSxK（OP） / りみー（ED）"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "BiSH（OP） / ASOBI同盟（ED）"
+        },
+        {
+            "key": "动画制作",
+            "value": "Production I.G"
+        },
+        {
+            "key": "製作",
+            "value": "天国大魔境製作委員会（NBCユニバーサル・エンターテイメント、avex pictures、講談社、网易游戏、Production I.G、毎日放送）"
+        },
+        {
+            "key": "脚本",
+            "value": "深見真(1,2,4,9,12)、窪山阿佐子(3,6,8,10)、野村イクミ(5,7,11)、森大貴(13)"
+        },
+        {
+            "key": "分镜",
+            "value": "森大貴(1)、土上いつき(2)、野村和也(3,9)、大塚隆史(4)、新井陽次郎(5)、古川良太(6)、増田惇人(6)、奥野治男(6,7)、藤田春香(8)、五十嵐海(10)、森山悠二郎(11)、石井俊匡(12)、伊藤智彦(13)【战斗场景分镜：竹内哲也(1)、鈴木明日香(4)】"
+        },
+        {
+            "key": "演出",
+            "value": "森大貴(1,13)、柴田海(2,13)、野村和也(3,9)、大塚隆史(4)、小村方宏治(5,13)、増田惇人(6)、斉藤秀二(6)、浜田将太(6)、阿部将光(7)、仲野良(8)、五十嵐海(10)、森山悠二郎(11)、篠原准[四ノ宮春](12)、竹内哲也(13)"
+        },
+        {
+            "key": "监修",
+            "value": "荒井和人[特效监修]"
+        },
+        {
+            "key": "企画",
+            "value": "許樹人、勝股英夫、高見洋平、葛仰骞、和田丈嗣"
+        },
+        {
+            "key": "制片人",
+            "value": "髙橋和彰、松村一人、米澤明、曹聡、森廣扶美、亀井博司"
+        },
+        {
+            "key": "动画制片人",
+            "value": "大平将史"
+        },
+        {
+            "key": "助理制片人",
+            "value": "宇田真奈美、木田和哉、坪井信人、遠藤亜美、武内萌華"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "Weilin Zhang（OP）、南方研究所（ED）"
+        },
+        {
+            "key": "作画监督",
+            "value": "吉田優子(1,2,12,13)、古川良太(1,6,13)、渡辺愛(1,5)、岩澤亨(2)、土上いつき(2)、奥野治男(2,6,7,11)、具志堅眞由(2,5,7,9,11,13)、柴田海(2,8,12)、榎本柊斗(3,12)、伊藤香奈(3,12)、鈴木明日香(4)、植田実(4)、藤卷廉(5)、福嵨沙映(6,13)、高乗陽子(6)、小林冴子(6,8)、小松真梨子(6,11)、河村明夫(6,11)、村松尚雄(6)、長谷川早紀(6,13)、片桐貴悠(7)、富坂真帆(8,13)、奥谷花奈(8,13)、澤田英彦(8,13)、廣江啓輔(8)、永野裕大(8)、ゼロ(8,12,13)、平岡恵実(9,12)、会津五月(9)、竹内哲也(10)、鈴木絵万(11)、森山悠二郎(11)、夕 一美(11)、黄瀬和哉(11)、新野量太(11)、窪田康高(11)、天﨑まなむ(12)、TOMATO(12)、小谷杏子(12)、石塚健(13)、Weilin Zhang(OP)、南方研究所(ED)"
+        },
+        {
+            "key": "特效监修",
+            "value": "西井正典"
+        }
+    ],
+    "volumes": 0,
+    "eps": 13,
+    "total_episodes": 13,
+    "rating": {
+        "rank": 470,
+        "total": 13382,
+        "count": {
+            "one": 72,
+            "two": 19,
+            "three": 24,
+            "four": 71,
+            "five": 222,
+            "six": 861,
+            "seven": 3172,
+            "eight": 6290,
+            "nine": 2135,
+            "ten": 516
+        },
+        "score": 7.7
+    },
+    "collection": {
+        "wish": 3842,
+        "collect": 18229,
+        "doing": 2729,
+        "on_hold": 1004,
+        "dropped": 551
+    },
+    "tags": [
+        {
+            "name": "Production.I.G",
+            "count": 2890
+        },
+        {
+            "name": "2023年4月",
+            "count": 2412
+        },
+        {
+            "name": "悬疑",
+            "count": 2407
+        },
+        {
+            "name": "漫画改",
+            "count": 2271
+        },
+        {
+            "name": "科幻",
+            "count": 2191
+        },
+        {
+            "name": "TV",
+            "count": 1500
+        },
+        {
+            "name": "战斗",
+            "count": 1322
+        },
+        {
+            "name": "石黒正数",
+            "count": 1286
+        },
+        {
+            "name": "漫改",
+            "count": 1093
+        },
+        {
+            "name": "末世",
+            "count": 1073
+        },
+        {
+            "name": "2023",
+            "count": 940
+        },
+        {
+            "name": "石黑正数",
+            "count": 377
+        },
+        {
+            "name": "森大貴",
+            "count": 271
+        },
+        {
+            "name": "ProductionI.G",
+            "count": 236
+        },
+        {
+            "name": "森大贵",
+            "count": 103
+        },
+        {
+            "name": "冒险",
+            "count": 98
+        },
+        {
+            "name": "公路片",
+            "count": 91
+        },
+        {
+            "name": "日本",
+            "count": 88
+        },
+        {
+            "name": "奇幻",
+            "count": 76
+        },
+        {
+            "name": "废土",
+            "count": 74
+        },
+        {
+            "name": "NTR",
+            "count": 69
+        },
+        {
+            "name": "牛尾宪辅",
+            "count": 48
+        },
+        {
+            "name": "牛尾憲輔",
+            "count": 42
+        },
+        {
+            "name": "性转",
+            "count": 34
+        },
+        {
+            "name": "2023年",
+            "count": 31
+        },
+        {
+            "name": "公路",
+            "count": 21
+        },
+        {
+            "name": "天国大魔境",
+            "count": 20
+        },
+        {
+            "name": "Production_I.G",
+            "count": 20
+        },
+        {
+            "name": "末日",
+            "count": 19
+        },
+        {
+            "name": "剧情",
+            "count": 18
+        }
+    ],
+    "meta_tags": [
+        "科幻",
+        "悬疑",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        121062,
+        121067,
+        125090
+    ],
+    "main_characters": [
+        {
+            "id": 121062,
+            "name": "マル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/80/34/121062_crt_Nz3ZG.jpg?r=1716563239",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/34/121062_crt_Nz3ZG.jpg?r=1716563239",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/34/121062_crt_Nz3ZG.jpg?r=1716563239",
+                "grid": "https://lain.bgm.tv/pic/crt/g/80/34/121062_crt_Nz3ZG.jpg?r=1716563239"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 33386,
+                    "name": "佐藤元",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113"
+                    },
+                    "short_summary": "佐藤 元（さとう げん、1997年3月22日 - ）は、日本の男性声優。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 121067,
+            "name": "キルコ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e8/f0/121067_crt_fzNyY.jpg?r=1681118714",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/f0/121067_crt_fzNyY.jpg?r=1681118714",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/f0/121067_crt_fzNyY.jpg?r=1681118714",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e8/f0/121067_crt_fzNyY.jpg?r=1681118714"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10838,
+                    "name": "千本木彩花",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/56/7f/10838_prsn_vhSS9.jpg?r=1740109911",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/7f/10838_prsn_vhSS9.jpg?r=1740109911",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/7f/10838_prsn_vhSS9.jpg?r=1740109911",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/56/7f/10838_prsn_vhSS9.jpg?r=1740109911"
+                    },
+                    "short_summary": "日本の女性声優。 埼玉県出身。アイムエンタープライズ所属。\r\n\r\n日本ナレーション演技研究所で演技を学ぶ。同研究所卒業前の、高校生時にテレビアニメ『帰宅部活動記録』で九重クレア役としてデビュー。\r\n2015年にアイムエンタープライズへの所属が発表された。9月より「講談社ラノベ文庫チャンネル」のMCをつとめる。2016年4月に『甲鉄城のカバネリ』の無名役で初のメインヒロインを演じ、同年10月に『ガーリッシュナンバー』で、初主役となる烏丸千歳役を演じる。\r\n2017年、第11回声優アワードで新人女優賞を受賞。\r\n\r\n高校では部活動でベーム式B♭クラリネットを演奏。コンクールに出場していた。\r\n『甲鉄城のカバネリ』で共演した内田真礼は「1話ですでに（無名の）キャラクターが出来上がっていてすごい」と絶賛している。\r\n『ガーリッシュ ナンバー』の烏丸千歳役は100人以上の候補の中からオーディションを経てスタッフの満場一致で選ばれたのだが、実は千本木がオーディションを受けた役は八重役であった。監督の井畑翔太と原作者の渡航は千本木の演技だけが方向性がいい意味で異質であり、ほとんどの声優が空気を読んで適度にブレーキをかける中、千本木だけはアクセルをベタ踏み状態であったと述べている。また、本来千本木のキャリアよりもう1つ、2つ、上の世代がやっていてもおかしくない難しいことを求められている中で、こちらの要望によく応えてくれたともコメントしている。\r\n\r\n2019年12月29日、アニメ『甲鉄城のカバネリ』で共演した声優、畠中祐との結婚を発表。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 125090,
+            "name": "トキオ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/42/48/125090_crt_0J1N2.jpg?r=1716563263",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/48/125090_crt_0J1N2.jpg?r=1716563263",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/48/125090_crt_0J1N2.jpg?r=1716563263",
+                "grid": "https://lain.bgm.tv/pic/crt/g/42/48/125090_crt_0J1N2.jpg?r=1716563263"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 12569,
+                    "name": "山村響",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/df/ce/12569_prsn_EVTkz.jpg?r=1687679505",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/ce/12569_prsn_EVTkz.jpg?r=1687679505",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/ce/12569_prsn_EVTkz.jpg?r=1687679505",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/df/ce/12569_prsn_EVTkz.jpg?r=1687679505"
+                    },
+                    "short_summary": "福岡県出身。血液型はO型。声優・キャラクターソング等の名義は山村響、アーティストとしてはhibiku（ひびく）名義で音楽活動をしていたが、2019年3月発売のミニアルバムからは音楽活動も山村響名義に統一する。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

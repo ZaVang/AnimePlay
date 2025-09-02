@@ -1,0 +1,75 @@
+{
+    "id": 608,
+    "name": "久瀬修一",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/97/0a/608_crt_8ek37.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/97/0a/608_crt_8ek37.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/97/0a/608_crt_8ek37.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/97/0a/608_crt_8ek37.jpg"
+    },
+    "summary": "职业级小提琴家。过去就读音羽学园，后来到德国留学。长大后成为世界级小提琴演奏家，第四章的男主角。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "久濑修一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "くぜ しゅういち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kuze Shuuichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2月15日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "177 cm"
+        },
+        {
+            "key": "体重",
+            "value": "61 kg"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "官方设定集"
+                },
+                {
+                    "v": "anidb.net"
+                }
+            ]
+        }
+    ],
+    "gender": "male",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 15,
+    "stat": {
+        "comments": 7,
+        "collects": 17
+    },
+    "anime_ids": [
+        1029
+    ]
+}

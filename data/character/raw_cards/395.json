@@ -1,0 +1,68 @@
+{
+    "id": 395,
+    "name": "イース／東せつな／キュアパッション",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/05/4d/395_crt_gZEgM.jpg?r=1462634423",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/4d/395_crt_gZEgM.jpg?r=1462634423",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/4d/395_crt_gZEgM.jpg?r=1462634423",
+        "grid": "https://lain.bgm.tv/pic/crt/g/05/4d/395_crt_gZEgM.jpg?r=1462634423"
+    },
+    "summary": "原Labyrinth的干部Eas，因为总统Mobius的原因一度失去生命，心中期望着幸福而被幸福的红色钥匙Akaron所引导复活成为了Cure Passion。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊丝／东刹那／百香果天使"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Eas / Cure Passion"
+                },
+                {
+                    "k": "日文名",
+                    "v": "東 せつな"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひがし せつな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Higashi Setsuna"
+                },
+                {
+                    "k": "昵称",
+                    "v": "小刹（せっちゃん）"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "小松由佳"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 14,
+        "collects": 30
+    },
+    "anime_ids": [
+        1109
+    ]
+}

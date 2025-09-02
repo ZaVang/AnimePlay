@@ -1,0 +1,35 @@
+{
+    "id": 64980,
+    "name": "ハックル・Ｇ・トンプソン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4b/63/64980_crt_rrz0R.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/63/64980_crt_rrz0R.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/63/64980_crt_rrz0R.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4b/63/64980_crt_rrz0R.jpg"
+    },
+    "summary": "もとは連邦軍補給隊に所属する整備兵。補給部隊を襲撃した太陽の牙の捕虜となるが、ガルシア隊の非道を目の当たりにしてクリンたちと行動を共にする。\r\nダグラムの整備を担当。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "哈克尔"
+        },
+        {
+            "key": "别名",
+            "value": []
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        37183
+    ]
+}

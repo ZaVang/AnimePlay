@@ -1,0 +1,73 @@
+{
+    "id": 3188,
+    "name": "北条沙都子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6e/26/3188_crt_3vvIg.jpg?r=1602214055",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/26/3188_crt_3vvIg.jpg?r=1602214055",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/26/3188_crt_3vvIg.jpg?r=1602214055",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6e/26/3188_crt_3vvIg.jpg?r=1602214055"
+    },
+    "summary": "圭一和礼奈他们的学妹。有着极高的灵敏度，还可以预测对手的行动后事先设下陷阱这种不得了的兴趣，自称“陷阱高手”，从恶作剧到认真程度都有，后山满满的都是她的陷阱领域，真是个了不得的鬼机灵。会用类似大小姐的说话语调，不过文法很多都错了，本人觉得是高格调，但旁人听来只觉得是挑衅。因为这种口头禅所以感觉是个乱七八糟的人，个性有些傲慢，讨厌输却又不会汲取教训。\r\n　　外表看不出来但其实运动细胞很好，棒球更是擅长。讨厌南瓜，每次都剩很多，而且分不出青花菜（broccoli，深色）和花椰菜（cauliflower，白色）。只要和遇到和圭一有关的事就会燃起一股对抗意识。虽然有时候骄傲自大，但由于哥哥失踪、双亲去世、受虐待等原因，内心变得很脆弱，有时也会被圭一和魅音捉弄到哭鼻子。不过似乎是因为哥哥的事，总是努力做得很坚强。哥哥“失踪”前很依赖哥哥，称哥哥为“兄兄”（nini）。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "北条沙都子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "北条 沙都子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ほうじょう さとこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Houjou Satoko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月24日（巨蟹座）"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "引用来源",
+            "value": "07th-expansion.net/hig_gensaku#character"
+        },
+        {
+            "key": "喜欢",
+            "value": "トラップ設置、にーにー、ねーねー"
+        },
+        {
+            "key": "讨厌",
+            "value": "かぼちゃ、カリフラワー"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 24,
+    "stat": {
+        "comments": 122,
+        "collects": 191
+    },
+    "anime_ids": [
+        288,
+        289
+    ]
+}

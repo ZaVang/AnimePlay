@@ -1,0 +1,91 @@
+{
+    "id": 509986,
+    "name": "末日后酒店",
+    "image_path": "data/images/anime/509986.jpg",
+    "points": 8.2,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "人类离开后，地球经历了漫长的岁月。\r\n位于日本首都东京银座的「银河楼」酒店，至今仍在营业中。\r\n工作人员是以酒店机器人八千代为中心，在各个部门工作的员工机器人们。\r\n它们一边等待老板的归来和再次迎接人类的时刻，一边在没有住客的酒店里专心致志地工作，这样的日子仿佛永无止境。\r\n而对于这样的八千代等人，现在，小小的奇迹即将发生——",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "奇幻",
+        "原创"
+    ],
+    "date": "2025-04-08",
+    "rating_rank": 125,
+    "rating_score": 8.2,
+    "rating_total": 9919,
+    "main_character_ids": [
+        170104,
+        173497
+    ],
+    "main_characters": [
+        {
+            "id": 170104,
+            "name": "ヤチヨ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a2/82/170104_crt_3Za2o.jpg?r=1737696277",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/82/170104_crt_3Za2o.jpg?r=1737696277",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/82/170104_crt_3Za2o.jpg?r=1737696277",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a2/82/170104_crt_3Za2o.jpg?r=1737696277"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 41420,
+                    "name": "白砂沙帆",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c9/9d/41420_prsn_xYXKO.jpg?r=1752123020",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/9d/41420_prsn_xYXKO.jpg?r=1752123020",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/9d/41420_prsn_xYXKO.jpg?r=1752123020",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c9/9d/41420_prsn_xYXKO.jpg?r=1752123020"
+                    },
+                    "short_summary": "2017年、『〜みんなでゲームをつくろう〜Project LayereD（プロジェクトレイヤード）』声優オーディション企画のグランプリに選ばれ、同企画から生まれた『レイヤードストーリーズ ゼロ』のヒロイン・イオン＝ミルナ役で声優デビュー[2]。\r\n\r\n2018年、マウスプロモーション附属俳優養成所に入所。\r\n\r\n2020年より、マウスプロモーション所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 173497,
+            "name": "ポン子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/be/60/173497_crt_5t5yt.jpg?r=1749655221",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/60/173497_crt_5t5yt.jpg?r=1749655221",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/60/173497_crt_5t5yt.jpg?r=1749655221",
+                "grid": "https://lain.bgm.tv/pic/crt/g/be/60/173497_crt_5t5yt.jpg?r=1749655221"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5107,
+                    "name": "諸星すみれ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/55/56/5107_prsn_HQ05E.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/56/5107_prsn_HQ05E.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/56/5107_prsn_HQ05E.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/55/56/5107_prsn_HQ05E.jpg"
+                    },
+                    "short_summary": "童星出身，是女性声优、演员、歌手。向日葵剧团所属。有一个妹妹。\r\n代表作品包括TBS『ほーむめーかー』朋実役；NHK『连続テレビ小说「天花」』诸川すみれ役；舞台『お月さま、笑った』速水花菜役。\r\n\r\n艺名就是本名。据说当初父母本想给她起名为「莉桜（りお）」而不是「すみれ」。可是，刚出生不久的诸星右半身得了麻痹症，就连吃母乳都很困难。如果一辈子都得麻痹症的话，可能连自己的名字都写不好，于是父母就将她的名字改成了书写起来较简单的平假名。不过，在产后数月之后，麻痹症就自动痊愈了。\r\n3岁的时候加入了向日葵剧团。入团的契机是来自《千与千寻》中的角色汤婆婆，告诉父母自己也“想成为汤婆婆”。\r\n最崇拜的声优是曾经看过的『Hannah Montana』中参加演出的白石凉子等。\r\n擅长唱歌，拥有英语检定2级资格。受其父亲有搞乐团的喜好影响，而在高中时买了吉他来玩。\r\n今后被期待着有更活跃的表现。\r\n\r\n2006年，在7岁时出演《血色花园》的凯莉，被共演的子安武人的声调转换演技所折服，从那个时候开始产生了专业的自觉。\r\n2009年，在9岁时以妮娜·塔克 Nina Tucker 这一角色参加了《钢之炼金术师FULLMENTAL ALCHEMIST》。以其稚嫩的音质和富含表现力的演技得到了其他声优与动画制作人员的一致好评。朴璐美曾经赞赏她“是一名充满感性的演员”“在现场为她的演技所震撼”等，钉宫理惠也同意了这一说法。她的超高演技让包括朴璐美在内的现场声优都萌生了不服输的念头。其中，据说内海贤二先生因为太在意诸星的演技，自己也燃起了斗志投入了角色的演出。\r\n2012年，在13岁时以《偶像活动!》中的星宫莓一角在电视动画中首次作为主角参演。\r\n2018年3月毕业于堀越高等学校，同年4月开始进入大学就读。\r\n2019年5月31日，宣布将于秋季歌手solo出道。\r\n2022年3月26日，青山学院大学毕业。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "id": 968,
+    "name": "天体战士",
+    "image_path": "data/images/anime/968.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "《天体战士》，一部很适合拍特摄片的漫画，一个很白、很无聊、很猥琐、很脑残的故事……但是，依然有人很喜欢这个故事，于是也就当然有人敢毅然决定，要拍成动画片来非礼观众的眼球，荼毒读者的大脑了。 \r\n故事发生在神奈川县川崎市，企图征服世界的恶之怪人军团弗罗夏姆，和正义的朋友桑雷德之间的战斗开始了……主人公看似桑雷德，但实质上是弗罗夏德的川崎市支部干部班普将军——坏蛋一方的怪人。 ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "喜剧",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2008-10-03",
+    "rating_rank": 345,
+    "rating_score": 7.9,
+    "rating_total": 1290,
+    "main_character_ids": [
+        6169,
+        6172
+    ],
+    "main_characters": [
+        {
+            "id": 6169,
+            "name": "サンレッド",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2a/da/6169_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/da/6169_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/da/6169_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2a/da/6169_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4477,
+                    "name": "髙木俊",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0d/ac/4477_prsn_05fNn.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/ac/4477_prsn_05fNn.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/ac/4477_prsn_05fNn.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0d/ac/4477_prsn_05fNn.jpg"
+                    },
+                    "short_summary": "日本の男性俳優、声優。石川県出身。フリー。\r\n血液型はA型。身長179cm。体重62kg。靴のサイズ26.5cm。\r\n\r\n代々木アニメーション学院卒業後、劇団アルターエゴ、ブリングアップに所属していた。現在はフリー。舞台、声優など幅広く活動していて、最近はMCの仕事が増えている。\r\n2005年7月より、劇団ひまわり所属の宮野真守とユニット「SMILY☆SPIKY」を結成。\r\n2歳までアメリカ合衆国のシカゴで育つも英語が苦手とラジオで語っている。\r\nまた、近年では不定期（おおよそ年に1 - 2回のペース）で自らの一人芝居「オレイロ」シリーズを公演している。\r\nお笑い芸人さまぁ〜ずのファンであり、DVD集めに励んでいる。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6172,
+            "name": "ヴァンプ将軍",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c5/ef/6172_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/ef/6172_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/ef/6172_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c5/ef/6172_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 28473,
+                    "name": "山田ルイ53世",
+                    "type": 1,
+                    "career": [
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1c/5d/28473_prsn_nIPK7.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/5d/28473_prsn_nIPK7.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/5d/28473_prsn_nIPK7.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1c/5d/28473_prsn_nIPK7.jpg"
+                    },
+                    "short_summary": "本名：山田 順三（やまだ じゅんぞう）\r\n主にツッコミ担当。\r\n男爵キャラとしてはパリ・シャンゼリゼ通り出身、\r\nソルボンヌ大学卒業を自称。\r\n実際は兵庫県三木市出身で、六甲中学校に進学するが、\r\n中学2年生の夏頃から引きこもりになり、中途退学。\r\n\r\n引きこもりは20歳まで続く。\r\n大学入学資格検定を経て愛媛大学法文学部の夜間主コースに入学。大学時代に友人と漫才コンビを組むも解散、\r\n大学2年の途中で退学し上京、東京NSC3期生となる。\r\nNSC時代の相方ははいじぃ。\r\n\r\n旧芸名は「ピュアぞー」である。\r\n単独で『R-1ぐらんぷり』にも出場している。\r\n\r\n2011年8月8日、一般女性と結婚。\r\n結婚日は8月8日が「髭の日」だったことから、\r\n夫人からの提案で決まった。\r\n翌年7月4日に長女が誕生。\r\n\r\n2014年夏より女性アイドルグループ\r\n「まどもあ54世」のプロデュースを手がける。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

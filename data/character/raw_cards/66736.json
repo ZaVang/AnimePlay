@@ -1,0 +1,56 @@
+{
+    "id": 66736,
+    "name": "白百合かぐや",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/92/8a/66736_crt_4UIp4.jpg?r=1539926453",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/8a/66736_crt_4UIp4.jpg?r=1539926453",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/8a/66736_crt_4UIp4.jpg?r=1539926453",
+        "grid": "https://lain.bgm.tv/pic/crt/g/92/8a/66736_crt_4UIp4.jpg?r=1539926453"
+    },
+    "summary": "6月9日出生，雙子座，血型AB型。\r\n    機台遊戲2018年第四彈登場玩家。\r\n    常用品牌：Moon Maiden。\r\n    第一季時就讀中學二年級，於動畫第19話登場，月夜乃學園的學生。\r\n    白百合咲夜的雙胞胎妹妹，以水晶球進行占卜。\r\n    表面上有些高傲，但心思細膩，對姐姐咲夜非常景仰，認為自己沒有與姐姐相當的才能。\r\n    第22話與咲夜組成其隊伍「Reflect Moon」。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "白百合辉夜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しらゆり かぐや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shirayuri Kaguya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月9日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 9,
+    "stat": {
+        "comments": 2,
+        "collects": 0
+    },
+    "anime_ids": [
+        234413
+    ]
+}

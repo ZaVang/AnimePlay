@@ -1,0 +1,151 @@
+{
+    "id": 9622,
+    "name": "机动战士Z高达",
+    "image_path": "data/images/anime/9622.jpg",
+    "points": 8.6,
+    "cost": 5,
+    "rarity": "HR",
+    "description": "　　0084年，吉翁残党迪拉兹之乱终告完结，然而，联邦政府的统治仍呈现极不稳定的局面，尤其当联邦议会发布维持地球圈现状的政策决议后，反对派呼声日益高涨。虽然在加米托夫准将领导的提坦斯之铁腕下，地球圈尚未发生大规模冲突，但空气中的紧张气息已接近临界点。\r\n　　同年，一年战争时代的风云人物“赤色慧星”夏亚，在阿克西斯经长期沉寂后又回到了地球圈。但几乎没有人知道这件事，因为他已化名柯特罗·巴吉纳，并通过非法途径巧妙地取得了联邦军的军籍，官拜大尉之职，在联邦军中投入反对提坦斯的暴力手段、希望为宇宙移民争取人权的布列克斯·弗拉准将的部下。\r\n　　时间到了0085年，提坦斯以暴制暴的作法为加米托夫准将在联邦军内争取到很高地位。然而，加米托夫并没有因此收手，反而变本加厉，进一步纵容提坦斯对所有心怀不满的人进行更为强硬——或称残暴镇压。终于，在7月31日，发生了30号卫星事件。\r\n　　事缘于SIDE2发生的民众集体抗议暴政活动，提坦斯指挥官巴斯克·奥姆大佐对此毫不犹豫地采取了极不人道的恐怖措施：向抗议活动最集中的30号殖民卫星注入剧毒的G3瓦斯。结果造成了数以百万计的民众全部死亡，在提坦斯的无数暴行中写下了最黑暗的一章。\r\n　　消息传出，震惊地球圈内外，布列克斯准将终于下定决心，召集同志，组成反地球联邦政府(简称A.E.U.G)，根据其缩写的连读，定名奥古。\r\n　　在日益激化的冲突中，旧吉翁势力亦再次崛起。经数年建设已具充分规模的小行星基地阿克西斯，在少女指挥者哈曼·卡恩的命令下，于0086年2月开始向地球圈进发。\r\n　　卡缪·比丹是一位普通的少年，除了双亲在军队任技术士官之外，与战争和MS并没有什么直接的关系，他也并不了解提坦斯丑恶的行径。然而0087年3月2日，在联邦军基地进行参观时发生的事情，改变了他的人生轨道。\r\n　　出于对提坦斯军官捷利特的仇恨，卡缪加入了奥古，并进而与柯特罗大尉（夏亚）相识。后来，他乘坐性能极高的可变形MS——MSZ-006“Z高达”与提坦斯军展开激战。0088年2月22日，奥古终于与阿克西斯及提坦斯展开三股势力的大决战......",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 50,
+    "synergy_tags": [
+        "科幻",
+        "机战",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "1985-03-02",
+    "rating_rank": 40,
+    "rating_score": 8.6,
+    "rating_total": 4477,
+    "main_character_ids": [
+        4333,
+        4546,
+        4887,
+        13245
+    ],
+    "main_characters": [
+        {
+            "id": 4333,
+            "name": "ブライト・ノア",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6c/83/4333_crt_JKbzH.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/83/4333_crt_JKbzH.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/83/4333_crt_JKbzH.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6c/83/4333_crt_JKbzH.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3989,
+                    "name": "鈴置洋孝",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/65/16/3989_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/16/3989_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/16/3989_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/65/16/3989_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーターであり、劇団プロデューサー。\r\n\r\n愛知県名古屋市出身、東京経済大学卒業。身長166 cm、体重59kg。血液型はA型。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 4546,
+            "name": "カミーユ・ビダン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/27/26/4546_crt_UvNzQ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/26/4546_crt_UvNzQ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/26/4546_crt_UvNzQ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/27/26/4546_crt_UvNzQ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4167,
+                    "name": "飛田展男",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fe/96/4167_prsn_iQprj.jpg?r=1514286894",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/96/4167_prsn_iQprj.jpg?r=1514286894",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/96/4167_prsn_iQprj.jpg?r=1514286894",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fe/96/4167_prsn_iQprj.jpg?r=1514286894"
+                    },
+                    "short_summary": "飛田 展男（とびた のぶお、1959年11月6日 - ）は、日本の声優、ナレーターであり、舞台俳優。アーツビジョン所属。\r\n茨城県水戸市出身。水戸市立三の丸小学校、茨城中学校・高等学校卒業。駒澤大学文学部歴史学科中退。体重55kg。血液型はAB型。愛称は「飛ちゃん」。\r\n\r\n飞田展男，可以说是日本男声优中的“变色龙”。他的角色反差极大，最为夸张的对比就是《安琪莉可》中的水之守护圣卢米埃和《烈火之炎》中的土门，一个美一个丑，一个柔弱一个健壮，一个温柔一个暴躁，一个优雅一个粗鲁，简直就是两个极端，令人怎么也无法相信这是同一位声优的演绎，但事实就是如此。飞田展男利用发音位置的变化控制声音效果，再辅以气声和力度，塑造出截然相反类型的人物。从控制发音变化的技巧来说，飞田展男是独一无二的。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 4887,
+            "name": "ファ・ユイリィ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e3/c1/4887_crt_ihsk4.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/c1/4887_crt_ihsk4.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/c1/4887_crt_ihsk4.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e3/c1/4887_crt_ihsk4.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4300,
+                    "name": "松岡ミユキ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8e/46/4300_prsn_2py6j.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/46/4300_prsn_2py6j.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/46/4300_prsn_2py6j.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8e/46/4300_prsn_2py6j.jpg"
+                    },
+                    "short_summary": "日本の女優、声優。劇団四季を経て、1982年に劇団青年座に入団。東京都立川市出身。以前は、松岡 美幸や松岡 みゆきの名前で活動していた。現在、声優業は引退している。\r\n初井言榮に付き、演劇の現場での基礎を学んだ。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13245,
+            "name": "シャア・アズナブル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9c/47/13245_crt_Ag8BX.jpg?r=1416820329",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/47/13245_crt_Ag8BX.jpg?r=1416820329",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/47/13245_crt_Ag8BX.jpg?r=1416820329",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9c/47/13245_crt_Ag8BX.jpg?r=1416820329"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3985,
+                    "name": "池田秀一",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/de/d0/3985_prsn_W0SE0.jpg?r=1435555362",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/d0/3985_prsn_W0SE0.jpg?r=1435555362",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/d0/3985_prsn_W0SE0.jpg?r=1435555362",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/de/d0/3985_prsn_W0SE0.jpg?r=1435555362"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーターである。東京俳優生活協同組合所属。\r\n\r\n東京都出身。身長162cm、体重60kg。血液型はO型。元妻は女優の戸田恵子。現在の妻は声優の玉川砂記子。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

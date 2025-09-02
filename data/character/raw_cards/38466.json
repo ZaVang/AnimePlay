@@ -1,0 +1,56 @@
+{
+    "id": 38466,
+    "name": "ヴィレム・クメシュ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/55/a5/38466_crt_U2WBK.jpg?r=1491971967",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/a5/38466_crt_U2WBK.jpg?r=1491971967",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/a5/38466_crt_U2WBK.jpg?r=1491971967",
+        "grid": "https://lain.bgm.tv/pic/crt/g/55/a5/38466_crt_U2WBK.jpg?r=1491971967"
+    },
+    "summary": "本作男主角。是这个世上唯一一名仍生存的人类，且是在浮游大陆群中唯一能调整丢失兵装的人。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "威廉·克梅修"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Willem-Kmetsch"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "年龄",
+            "value": "18"
+        },
+        {
+            "key": "种族",
+            "value": "人类 -emnetwiht-"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://sukasuka-anime.com/chara/willem.html"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 24,
+        "collects": 81
+    },
+    "anime_ids": [
+        185943
+    ]
+}

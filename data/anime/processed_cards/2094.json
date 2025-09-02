@@ -1,0 +1,88 @@
+{
+    "id": 2094,
+    "name": "秀逗魔导士",
+    "image_path": "data/images/anime/2094.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "很久很久以前……在原始的混沌之海中，从无边的黑暗中诞生了唯一一个纯真的意志……这个意志所产生的力量，让原本一片虛无的混沌之海发生变化。如造物主般分出了无数世界，这些世界是由无数石柱一般长杖支撑在混沌之海上。她，是这世间万物的母亲。因此，有了神、有了魔……也有了人类。神与魔不断地纷争，神为了保卫世界而战；魔为了争取长杖毀灭世界而战。造物主沉眠了……她被魔族奉为大王--金色魔王，也是帶來恶梦的魔王。在这个世界，赤眼魔王卢比埃和龙神史菲德为了各自的目的而战……龙神史菲德费劲心力将卢比埃击败，并将它分为七部份……但史菲德也累了，为了防范魔族的行动，他化为四个分身固守着四方。一千年前，魔王的一部份觉醒了。它率领着魔族们向史菲德的一個分身--水龙王挑战。魔王五个手下中的四个设下了结界，由它和魔龙王一起直接跟水龙王决斗。魔王的计划，宣告失败。卢比埃被打倒，魔龙王被封印。魔族的行动渐趋寂静……一千年后，一名天才美少女诞生了。她名叫莉娜·因巴斯（LinaInverse），和伙伴高里·布列夫（GourryGabriev）一起踏上旅程。但，魔族们仍不停止动作。它们期待着真正的王能回來，也就是--金色魔王，带来恶梦的魔王……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "小说改"
+    ],
+    "date": "1995-04-07",
+    "rating_rank": 542,
+    "rating_score": 7.7,
+    "rating_total": 1532,
+    "main_character_ids": [
+        104,
+        105
+    ],
+    "main_characters": [
+        {
+            "id": 104,
+            "name": "リナ・インバース",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7b/a6/104_crt_bHSVe.jpg?r=1611335397",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/a6/104_crt_bHSVe.jpg?r=1611335397",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/a6/104_crt_bHSVe.jpg?r=1611335397",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7b/a6/104_crt_bHSVe.jpg?r=1611335397"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3919,
+                    "name": "林原めぐみ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490"
+                    },
+                    "short_summary": "日本的声优、歌手、DJ、作词家（化名为MEGUMI）、作家。出生于日本东京都北区。\r\n歌迷与动漫迷常以“小惠”（めぐさん）、“惠姐”（めぐ姉）及“阁下”（声优平松晶子命名）等方式称呼她。\r\n林原惠演过多部著名作品的主要女角及担任部分片头、片尾曲演唱，包含《新世纪福音战士》的绫波丽、《乱马1/2》的女乱马、《秀逗魔导士》的莉娜·因巴斯、《口袋妖怪》的武藏、《名侦探柯南》的灰原哀、《通灵王》的恐山安娜等，为日本公认的“声优女王”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 105,
+            "name": "ガウリイ・ガブリエフ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f8/c0/105_crt_XSMdd.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/c0/105_crt_XSMdd.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/c0/105_crt_XSMdd.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f8/c0/105_crt_XSMdd.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3845,
+                    "name": "松本保典",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c6/d6/3845_seiyu_anidb.jpg?r=1575075897",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c6/d6/3845_seiyu_anidb.jpg?r=1575075897",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c6/d6/3845_seiyu_anidb.jpg?r=1575075897",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c6/d6/3845_seiyu_anidb.jpg?r=1575075897"
+                    },
+                    "short_summary": "大学卒業後、劇団がらくた工房（現・劇団すごろく）付属養成所に4期生として入所する。デビュー作は『マンガ日本経済入門』。現在は劇団すごろく副座長。サイト「劇団すごろく」のプロフィールには「2月7日生 19歳」と表記されている。\r\n\r\n1988年に『超音戦士ボーグマン』の響リョウ、『鎧伝サムライトルーパー』の闇魔将悪奴弥守やOVA『機甲猟兵メロウリンク』のメロウリンク・アリティと同年に放映された3つの作品で主要な役柄を演じてブレイク、その後は多くの分野で主役からサブキャラクターを演じるようになる。アニメだけに留まらず、吹き替え・ナレーションと幅広く活動している。\r\n\r\n『サザエさん』では「ノリスケ」、『ドラえもん』ではのび太のパパこと「野比のび助」と国民的2大アニメの重要な脇役を担っている。ちなみにのび助もノリスケも初代（加藤正之、村越伊知郎）が死去し、2代目（中庸助[3]、荒川太朗）が途中降板したため共に3代目である。また『サザエさん』では、2009年までレギュラー男性声優では最年少となっていた[4]（2009年10月からは中村浩太郎が最年少）。\r\n\r\n速水奨が企画した『Super Stylish Doctors Story(S.S.D.S)』のメンバーのひとり。イベントの歌コーナーで、ピンクのポンポンを持ってダンスも披露。可愛かったと評判だが、踊った後は「酔った勢いで脱いだ後、我に返って1人淋しく服を着る時の心境に近い」とコメント。また、トークでは速水奨への突っ込みが多いため、役（小児科医役）にちなみ「黒い小児科医」と称される時もある。\r\n\r\n学生時代は競輪部のキャプテンを務め、国体出場経験もある。しかし、腰を痛めたためにやめたという。『S.S.D.S』のイベント内で「学生時代にもっと（競輪を）頑張っていたら、ここにはいなかったかもしれない」と語っていた。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

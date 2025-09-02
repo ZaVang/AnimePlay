@@ -1,0 +1,335 @@
+{
+    "id": 9269,
+    "type": 2,
+    "name": "きんぎょ注意報!",
+    "name_cn": "娱乐金鱼眼",
+    "summary": "富家千金藤之宮千歲因父親突然過世而一無所有，被迫離開原本就讀的都會學園，帶着粉紅色神奇金魚小荳荳入讀一間連雞與牛都收為學生的田舍中學…\r\n\r\n正當田舍中學因經營不善而將要關閉時，千歲發現律師田中山試圖盜取遺產…\r\n\r\n奪回遺產後，千歲建立新田舍中學，並成為學校的理事長兼學生會長，為人生揭開新的一頁。 ",
+    "nsfw": false,
+    "locked": false,
+    "date": "1991-01-12",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/f8/c8/9269_2MJ88.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/f8/c8/9269_2MJ88.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/f8/c8/9269_2MJ88.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/f8/c8/9269_2MJ88.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/f8/c8/9269_2MJ88.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "娱乐金鱼眼"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "魔力小金鱼",
+                    "k": null
+                },
+                {
+                    "v": "金鱼注意报！",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "54"
+        },
+        {
+            "key": "放送开始",
+            "value": "1991年1月12日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://lineup.toei-anim.co.jp/ja/tv/kingyo/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ朝日"
+        },
+        {
+            "key": "播放结束",
+            "value": "1992年2月29日"
+        },
+        {
+            "key": "Copyright",
+            "value": "(C)猫部ねこ・講談社・東映アニメーション"
+        },
+        {
+            "key": "原作",
+            "value": "猫部ねこ（講談社『なかよしKC』刊）"
+        },
+        {
+            "key": "系列监督",
+            "value": "佐藤順一"
+        },
+        {
+            "key": "系列构成",
+            "value": "まるおけいこ"
+        },
+        {
+            "key": "人物设定",
+            "value": "入好さとる"
+        }
+    ],
+    "volumes": 0,
+    "eps": 54,
+    "total_episodes": 54,
+    "rating": {
+        "rank": 1717,
+        "total": 61,
+        "count": {
+            "one": 0,
+            "two": 0,
+            "three": 1,
+            "four": 0,
+            "five": 3,
+            "six": 6,
+            "seven": 25,
+            "eight": 19,
+            "nine": 4,
+            "ten": 3
+        },
+        "score": 7.3
+    },
+    "collection": {
+        "wish": 99,
+        "collect": 92,
+        "doing": 16,
+        "on_hold": 17,
+        "dropped": 19
+    },
+    "tags": [
+        {
+            "name": "童年",
+            "count": 21
+        },
+        {
+            "name": "TV",
+            "count": 21
+        },
+        {
+            "name": "搞笑",
+            "count": 19
+        },
+        {
+            "name": "1991",
+            "count": 15
+        },
+        {
+            "name": "佐藤顺一",
+            "count": 14
+        },
+        {
+            "name": "东映",
+            "count": 11
+        },
+        {
+            "name": "TVB",
+            "count": 10
+        },
+        {
+            "name": "校园",
+            "count": 9
+        },
+        {
+            "name": "漫画改",
+            "count": 8
+        },
+        {
+            "name": "東映アニメーション",
+            "count": 6
+        },
+        {
+            "name": "宫千岁",
+            "count": 5
+        },
+        {
+            "name": "几原邦彦",
+            "count": 5
+        },
+        {
+            "name": "日本",
+            "count": 5
+        },
+        {
+            "name": "佐藤順一",
+            "count": 4
+        },
+        {
+            "name": "1991年",
+            "count": 3
+        },
+        {
+            "name": "TVA",
+            "count": 2
+        },
+        {
+            "name": "まるおけいこ",
+            "count": 2
+        },
+        {
+            "name": "1991年1月",
+            "count": 2
+        },
+        {
+            "name": "魔力小金鱼",
+            "count": 2
+        },
+        {
+            "name": "不良牛",
+            "count": 2
+        },
+        {
+            "name": "五十岚卓哉",
+            "count": 2
+        },
+        {
+            "name": "动",
+            "count": 1
+        },
+        {
+            "name": "90s",
+            "count": 1
+        },
+        {
+            "name": "1990s",
+            "count": 1
+        },
+        {
+            "name": "高田由美",
+            "count": 1
+        },
+        {
+            "name": "3话",
+            "count": 1
+        },
+        {
+            "name": "4クール",
+            "count": 1
+        },
+        {
+            "name": "娱乐金鱼眼",
+            "count": 1
+        },
+        {
+            "name": "旧物",
+            "count": 1
+        },
+        {
+            "name": "优秀子供向",
+            "count": 1
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        9740,
+        9742,
+        86098
+    ],
+    "main_characters": [
+        {
+            "id": 9740,
+            "name": "藤ノ宮千歳",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/69/1d/9740_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/1d/9740_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/1d/9740_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/69/1d/9740_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3887,
+                    "name": "高田由美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/49/3887_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/49/3887_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/49/3887_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/49/3887_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "ミュージカル劇団「ミスタースリムカンパニー」で女優として活動後、声優へ転向。声優デビューは、1979年2月27日に放送されたTBSラジオ『林美雄のパックインミュージック』内の『瓜売小僧（うりうりぼうや）』（橋本治原作・桃尻娘のラジオドラマ）での蜜柑姫（みかんひめ）役。\r\n\r\n吹き替えでは、『幽幻道士』シリーズのテンテン役が知られており、シリーズ5作品中4作品と、『幽幻道士』の世界観・キャラクターを元に日本で再構成された『来来!キョンシーズ』でテンテンの声を担当。また『新桃太郎』でも、テンテン役のリュウ・ツーイーが演じたマーヤを吹き替えた。\r\n\r\n2009年10月ごろを境に、それまで演じていた『クレヨンしんちゃん』の吉永みどり役などのレギュラーを降板。2013年には、所属事務所のプロフィールから、それまで掲載されていた高田のサンプル音声が削除された。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9742,
+            "name": "葵",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/02/af/9742_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/af/9742_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/af/9742_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/02/af/9742_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4167,
+                    "name": "飛田展男",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fe/96/4167_prsn_iQprj.jpg?r=1514286894",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/96/4167_prsn_iQprj.jpg?r=1514286894",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/96/4167_prsn_iQprj.jpg?r=1514286894",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fe/96/4167_prsn_iQprj.jpg?r=1514286894"
+                    },
+                    "short_summary": "飛田 展男（とびた のぶお、1959年11月6日 - ）は、日本の声優、ナレーターであり、舞台俳優。アーツビジョン所属。\r\n茨城県水戸市出身。水戸市立三の丸小学校、茨城中学校・高等学校卒業。駒澤大学文学部歴史学科中退。体重55kg。血液型はAB型。愛称は「飛ちゃん」。\r\n\r\n飞田展男，可以说是日本男声优中的“变色龙”。他的角色反差极大，最为夸张的对比就是《安琪莉可》中的水之守护圣卢米埃和《烈火之炎》中的土门，一个美一个丑，一个柔弱一个健壮，一个温柔一个暴躁，一个优雅一个粗鲁，简直就是两个极端，令人怎么也无法相信这是同一位声优的演绎，但事实就是如此。飞田展男利用发音位置的变化控制声音效果，再辅以气声和力度，塑造出截然相反类型的人物。从控制发音变化的技巧来说，飞田展男是独一无二的。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 86098,
+            "name": "わぴこ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/91/28/86098_crt_rbgdA.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/28/86098_crt_rbgdA.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/28/86098_crt_rbgdA.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/91/28/86098_crt_rbgdA.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3896,
+                    "name": "かないみか",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fb/dd/3896_prsn_QQxj5.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/dd/3896_prsn_QQxj5.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/dd/3896_prsn_QQxj5.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fb/dd/3896_prsn_QQxj5.jpg"
+                    },
+                    "short_summary": "　　昵称是みかぴい。出生于父亲是在“剧团青年座”担任演出家的金井彰久，母亲是在“花のピュンピュン丸”以声优演出过的田上和枝的演剧一家。还是婴儿时演员的西田敏行曾帮她换过尿布。\r\n高中2年级时，曾到英国寄居家庭过。\r\n　　成为声优前，家族一起到烤肉店，向店员大声要求换冷水“すいませーん、お水おかわりくださーい!”后，东西却送到隔壁桌小孩的地方去。\r\n　　以幼女声音闻名。与声优的兴梠里美声音相近也相当有名。\r\n　　多饰演泼辣而年龄层较低的活泼少女，然而在《机动新世纪钢弹X》里像蒂法一般的无口系神秘少女，或《银河天使》里ノーマッド一般的毒舌角色也饰演过，因此展露出她演技的多样性。\r\n　　声优界第一的揉乳嗜好家，可说是每见到女性声优必定会揉乳。在广播《みか・もりしゃんのGamers Amusement Station》等处不时将おっぱい挂在嘴边。另在同节目的Web版结束的前几回里偷偷设立“おっぱい堂”专栏，曾发表个人自豪的战绩。其行为被隶属于賢プロダクション的后辈们（生天目仁美等人）继承了下来。\r\n　　也是2005年组成的男性声优团体“Revolver”的制作，成员有森训久、梯笃司、宫下荣治、泰勇气、胜杏里、增川洋一。\r\n　　前夫为声优的山寺宏一。两人于1994年结婚，在2006年离婚。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 99234,
+    "name": "川合麻依",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c3/72/99234_crt_n8scs.jpg?r=1627836037",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c3/72/99234_crt_n8scs.jpg?r=1627836037",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c3/72/99234_crt_n8scs.jpg?r=1627836037",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c3/72/99234_crt_n8scs.jpg?r=1627836037"
+    },
+    "summary": "町山交番に勤務する新人警察官。\r\n警察官としての展望や自負はなく、激務に嫌気がさして辞職を考えている。\r\n良くも悪くも純粋で素直な性格のため、被疑者や補導した少年少女の言動に翻弄されることも多い。\r\n藤の指導を受けていくうちに、警察官としての仕事に少しずつだが前向きになっていく。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "川合麻依"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かわい まい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mai Kawai"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://hakozume-anime.com/character.html"
+        },
+        {
+            "key": "职位",
+            "value": "巡査"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 18,
+        "collects": 22
+    },
+    "anime_ids": [
+        344422
+    ]
+}

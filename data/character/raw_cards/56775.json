@@ -1,0 +1,58 @@
+{
+    "id": 56775,
+    "name": "各務原なでしこ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a6/59/56775_crt_m3s6U.jpg?r=1717694057",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/59/56775_crt_m3s6U.jpg?r=1717694057",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/59/56775_crt_m3s6U.jpg?r=1717694057",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a6/59/56775_crt_m3s6U.jpg?r=1717694057"
+    },
+    "summary": "リンとの湖畔での出会いからキャンプに惹かれ、\r\n高校で野クルに入部する。\r\nいつも明るくて前向きで、楽しいことが大好き。\r\n美人のお姉さんがいる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "各务原抚子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "各務原 なでしこ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かがみはら なでしこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kagamihara Nadeshiko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月4日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 4,
+    "stat": {
+        "comments": 139,
+        "collects": 742
+    },
+    "anime_ids": [
+        262897,
+        207195,
+        266070
+    ]
+}

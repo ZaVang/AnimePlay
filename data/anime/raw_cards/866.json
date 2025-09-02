@@ -1,0 +1,554 @@
+{
+    "id": 866,
+    "type": 2,
+    "name": "SOUL EATER",
+    "name_cn": "噬魂师",
+    "summary": "　　死神武器职人专门学院，简称“死武专”，学院里的学生分为“工匠”和“武器”，他们的目的是收集“99个偏离人类轨道形成‘鬼神之卵’的灵魂”和“1个魔女的灵魂”，当“武器”吞噬这100个灵魂后就能升级成为死神专用武器 Death Scythe，而这一切都是为了防止“鬼神”的重新出现……",
+    "nsfw": false,
+    "locked": false,
+    "date": "2008-04-07",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/ca/81/866_5X5OW.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/ca/81/866_5X5OW.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/ca/81/866_5X5OW.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/ca/81/866_5X5OW.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/ca/81/866_5X5OW.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "噬魂师"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ソウルイーター",
+                    "k": null
+                },
+                {
+                    "v": "噬魂者",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "51"
+        },
+        {
+            "key": "放送开始",
+            "value": "2008年4月7日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期一"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://mediafactory.co.jp/anime/souleater/"
+        },
+        {
+            "key": "在线播放平台",
+            "value": "dアニメストア"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京系列（アニメ530枠）"
+        },
+        {
+            "key": "播放结束",
+            "value": "2009年3月30日"
+        },
+        {
+            "key": "导演",
+            "value": "五十嵐卓哉"
+        },
+        {
+            "key": "Copyright",
+            "value": "©Atsushi Ohkubo/SQUARE ENIX, TV TOKYO, MEDIA FACTORY, BONES, DENTSU 2008"
+        },
+        {
+            "key": "原作",
+            "value": "大久保篤 月刊「少年ガンガン」（スクウェア・エニックス刊）"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "入江泰浩(OP1)、岡村天斎(OP2)、鈴木典光(ED1~4) / 再放送：池添隆博(OP1/2)、柴田淳(ED1)、水島精二(ED2)"
+        },
+        {
+            "key": "人物设定",
+            "value": "伊藤嘉之"
+        },
+        {
+            "key": "企画",
+            "value": "田口浩司、永田勝治、南雅彦；企画協力：湯村宣昭、松崎武吏、東山敦"
+        },
+        {
+            "key": "制片人",
+            "value": "吉野文（テレビ東京）、山西太平、大薮芳広"
+        },
+        {
+            "key": "製作",
+            "value": "テレビ東京、電通、BONES"
+        },
+        {
+            "key": "美术监督",
+            "value": "中村典史；辅佐：都甲佳代子"
+        },
+        {
+            "key": "摄影监督",
+            "value": "宮原洋平（1話-24話）、神林剛（25話-50話）"
+        },
+        {
+            "key": "音响监督",
+            "value": "若林和弘；助手：原口昇"
+        },
+        {
+            "key": "音效",
+            "value": "倉橋静男；助手：渡邊雅文（サウンドボックス）"
+        },
+        {
+            "key": "音响",
+            "value": "フォニシア（制作担当：好永伸恵）"
+        },
+        {
+            "key": "剪辑",
+            "value": "西山茂；助手：坪根健太郎"
+        },
+        {
+            "key": "色彩设计",
+            "value": "中山しほ子；辅佐：後藤ゆかり"
+        },
+        {
+            "key": "音乐制作",
+            "value": "Aniplex；音乐协力：テレビ東京ミュージック"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "外村敬一、大山良、淀明子"
+        },
+        {
+            "key": "录音",
+            "value": "岩名路彦；录音工作室：東京テレビセンター"
+        },
+        {
+            "key": "录音助理",
+            "value": "石倉史絵"
+        },
+        {
+            "key": "美术设计",
+            "value": "中島美佳（1-4話）；美术担当：許彬；美术进行：鄒立"
+        },
+        {
+            "key": "宣传",
+            "value": "鶴岡信哉、柴田亜矢"
+        },
+        {
+            "key": "联合制片人",
+            "value": "倉重宣之、加藤正純"
+        },
+        {
+            "key": "设定制作",
+            "value": "前田友紀"
+        },
+        {
+            "key": "主动画师",
+            "value": "稲留和美；キーアニメーター：菅野宏紀（1話-27話）、小田嶋瞳（27話-50話）、甲斐泰之（40話-50話）、小平佳幸、柴田淳、竹内旭（27話-50話）、根岸宏行、長谷部敦志、村井孝司（15話-50話）"
+        },
+        {
+            "key": "道具设计",
+            "value": "星野猛（主道具设计）、小森かおり、矢崎優子"
+        },
+        {
+            "key": "色彩指定",
+            "value": "後藤ゆかり、岡宮志帆、高橋友子、溝口安枝、工藤麻里子、小山明子"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "T.M.Revolution（OP1）、Tommy heavenly6[川瀬智子]（OP2）/ STANCE PUNKS（ED1）、西野カナ（ED2）、Diggy-MO'（ED3）、abingdon boys school（ED4）"
+        }
+    ],
+    "volumes": 0,
+    "eps": 51,
+    "total_episodes": 51,
+    "rating": {
+        "rank": 1084,
+        "total": 3467,
+        "count": {
+            "one": 3,
+            "two": 3,
+            "three": 6,
+            "four": 23,
+            "five": 94,
+            "six": 435,
+            "seven": 1190,
+            "eight": 1337,
+            "nine": 265,
+            "ten": 111
+        },
+        "score": 7.4
+    },
+    "collection": {
+        "wish": 2515,
+        "collect": 4682,
+        "doing": 562,
+        "on_hold": 868,
+        "dropped": 236
+    },
+    "tags": [
+        {
+            "name": "BONES",
+            "count": 1035
+        },
+        {
+            "name": "噬魂师",
+            "count": 786
+        },
+        {
+            "name": "骨头社",
+            "count": 540
+        },
+        {
+            "name": "热血",
+            "count": 539
+        },
+        {
+            "name": "TV",
+            "count": 388
+        },
+        {
+            "name": "2008年4月",
+            "count": 319
+        },
+        {
+            "name": "2008",
+            "count": 269
+        },
+        {
+            "name": "漫画改",
+            "count": 225
+        },
+        {
+            "name": "souleater",
+            "count": 213
+        },
+        {
+            "name": "宫野真守",
+            "count": 182
+        },
+        {
+            "name": "战斗",
+            "count": 173
+        },
+        {
+            "name": "坂本真绫",
+            "count": 143
+        },
+        {
+            "name": "魔女",
+            "count": 129
+        },
+        {
+            "name": "死神",
+            "count": 115
+        },
+        {
+            "name": "Soul",
+            "count": 80
+        },
+        {
+            "name": "漫改",
+            "count": 75
+        },
+        {
+            "name": "神作",
+            "count": 51
+        },
+        {
+            "name": "五十岚卓哉",
+            "count": 45
+        },
+        {
+            "name": "奇幻",
+            "count": 36
+        },
+        {
+            "name": "Eater",
+            "count": 29
+        },
+        {
+            "name": "小见川千明",
+            "count": 26
+        },
+        {
+            "name": "桑岛法子",
+            "count": 25
+        },
+        {
+            "name": "五十嵐卓哉",
+            "count": 23
+        },
+        {
+            "name": "日本",
+            "count": 19
+        },
+        {
+            "name": "搞笑",
+            "count": 18
+        },
+        {
+            "name": "岩崎琢",
+            "count": 16
+        },
+        {
+            "name": "大和屋晓",
+            "count": 16
+        },
+        {
+            "name": "2008年",
+            "count": 15
+        },
+        {
+            "name": "内山昂辉",
+            "count": 14
+        },
+        {
+            "name": "烂尾",
+            "count": 12
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "series": false,
+    "main_character_ids": [
+        83,
+        161,
+        162,
+        163,
+        164,
+        169,
+        170
+    ],
+    "main_characters": [
+        {
+            "id": 83,
+            "name": "マカ=アルバーン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7d/5b/83_crt_dDtcD.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/5b/83_crt_dDtcD.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/5b/83_crt_dDtcD.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7d/5b/83_crt_dDtcD.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4969,
+                    "name": "小見川千明",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/93/58/4969_prsn_zI0C7.jpg?r=1549851897",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/58/4969_prsn_zI0C7.jpg?r=1549851897",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/58/4969_prsn_zI0C7.jpg?r=1549851897",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/93/58/4969_prsn_zI0C7.jpg?r=1549851897"
+                    },
+                    "short_summary": "4岁加入剧団，开始舞台活动。\r\n毕业与日本艺术高等学校。\r\n2008年首次担当电视动画《SOUL EATER》的女主角玛嘉·亚尔邦。\r\n分喜欢宫沢贤治。\r\n作为动画声优，声音非常独特突兀，常有破音，但也属于萌点之一。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 161,
+            "name": "ソウル=イーター",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/80/5e/161_crt_d9d39.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/5e/161_crt_d9d39.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/5e/161_crt_d9d39.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/80/5e/161_crt_d9d39.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5768,
+                    "name": "内山昂輝",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0f/d1/5768_prsn_35lt8.jpg?r=1637964101"
+                    },
+                    "short_summary": "内山 昂輝（うちやま こうき、1990年8月16日 - ）は、日本の声優、俳優。劇団ひまわり所属。\r\n早稲田大学卒業。 国際基督教大学高等学校出身。 1993年に劇団ひまわりに入団し、子役としてテレビドラマへの出演や少年役の吹き替えを主に行っていた。舞台経験はない。なお、声優として初めて参加した作品はA.I.である。\r\n2005年に発売された『キングダム ハーツII』のロクサス役で注目を浴び、その後は声優としての活動が多くなっている。内山本人も自身を「明朗快活なタイプではない」と語っているように、主にどこか影のある少年役を演じるが、明るい少年役を演じることも多くなっている。\r\n2011年、第5回声優アワードにて新人男優賞を受賞。2015年、東京アニメアワード2015で発表されたアニメ オブ ザ イヤーで声優賞を受賞。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 162,
+            "name": "ブラック☆スター",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/96/ac/162_crt_LN9FM.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/ac/162_crt_LN9FM.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/ac/162_crt_LN9FM.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/96/ac/162_crt_LN9FM.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3849,
+                    "name": "小林由美子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5f/f2/3849_prsn_NBHTx.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/f2/3849_prsn_NBHTx.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/f2/3849_prsn_NBHTx.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5f/f2/3849_prsn_NBHTx.jpg"
+                    },
+                    "short_summary": "日本の女性声優。フリー。千葉県出身。血液型はO型。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 163,
+            "name": "中務椿",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/af/3a/163_crt_80E4z.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/3a/163_crt_80E4z.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/3a/163_crt_80E4z.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/af/3a/163_crt_80E4z.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3922,
+                    "name": "名塚佳織",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0b/59/3922_prsn_rSvg6.jpg?r=1518234694",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/59/3922_prsn_rSvg6.jpg?r=1518234694",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/59/3922_prsn_rSvg6.jpg?r=1518234694",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0b/59/3922_prsn_rSvg6.jpg?r=1518234694"
+                    },
+                    "short_summary": "日本东京都出身的女性声优。\r\n\r\n从小学生开始就以童星之姿在舞台上演出。也有如音乐剧‘トラップ一家物语’等，担任多个角色连续演出多场的作品。\r\n在1998年的音乐剧《フラワー》中，除饰演サイヤ以外，也担任女主角メズーラ的代班演员。前来观赏同台演出的斋藤彩夏的动画导演大地丙太郎因此留下了印象。在导演的另一部作品反斗小王子中客串演出子石的角色，是为声优出道作。\r\n2006年3月从桐朋学园艺术短期大学演剧学科毕业。\r\n\r\n没加入过任何事务所，以前由母亲担任经纪人，现在则全部自己一手包办。\r\n家庭成员有爸爸、妈妈、姊姊和一只猫（MOKO）。\r\n有“就算连续三天喝到天亮也没事”的好酒量。\r\n喜欢的音乐是以J-POP为主\r\n曾学过七年的小提琴，是一项才艺。\r\n虽然本人似乎没有注意到，在广播节目中常用“てなわけで”、“そんなわけで”。\r\n昵称的“かもさん”是由于就读幼稚园时，NHK教育台播放“鸭子的桥”这首歌的时候会跟着一起唱唱跳跳，因此被父亲叫做“かもさん”。\r\n\r\n2011年2月21日, 在个人官方部落格上公开结婚消息。\r\n2012年1月1日，在官方博客上宣布，自己在稍早前的时候已经当上了妈妈，在2011年底顺利产下一名体重近6斤的健康女婴，在此对支持她的家人及粉丝表示感谢。\r\n2021年7月2日，在个人SNS上公布再度怀孕的消息。\r\n2021年12月4日，在个人SNS上公布次子平安生产的消息。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 164,
+            "name": "デス・ザ・キッド",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f9/8b/164_crt_cbsC1.jpg?r=1425454128",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/8b/164_crt_cbsC1.jpg?r=1425454128",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/8b/164_crt_cbsC1.jpg?r=1425454128",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f9/8b/164_crt_cbsC1.jpg?r=1425454128"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4697,
+                    "name": "宮野真守",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307"
+                    },
+                    "short_summary": "小学生時代から劇団ひまわりに所属し、主に舞台などで活動した。高校生時代に海外ドラマ『私はケイトリン』の吹替で声優デビューする。PS2用ゲーム『キングダム ハーツ』のリク役で注目を集め、その後は、『機動戦士ガンダム00』や『DEATH NOTE』の主役を務めるなど、数々の人気作品に出演している。\r\n第1回声優アワード主演男優賞および新人賞にノミネートされた（『DEATH NOTE』夜神月役）。 2008年の第2回声優アワード主演男優賞受賞。東京国際アニメフェア2008・第7回東京アニメアワード個人賞（声優部門）受賞（『DEATH NOTE』『機動戦士ガンダム00』）。 2008年12月1日、劇団ひまわりのHPで結婚と子供を授かったことを公表した。結婚相手や子供の性別は非公開。 2011年、ノン子とのび太のアニメスクランブルにて第21回アニメグランプリ最優秀男性声優賞受賞。 2012年、第6回声優アワードにて助演男優賞と歌唱賞（後者はST☆RISHとして）、日刊スポーツ第1回日刊アニメグランプリにてMIP男性声優賞、アニメージュ第34回アニメグランプリ声優部門においてグランプリを受賞。\r\n\r\n2025年6月8日宣布与向日葵剧团合约期满退团，次日宣布加入研音。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 169,
+            "name": "リズ（エリザベス）=トンプソン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2b/14/169_crt_Usd6k.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/14/169_crt_Usd6k.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/14/169_crt_Usd6k.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2b/14/169_crt_Usd6k.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4032,
+                    "name": "渡辺明乃",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a4/66/4032_prsn_A288v.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/66/4032_prsn_A288v.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/66/4032_prsn_A288v.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a4/66/4032_prsn_A288v.jpg"
+                    },
+                    "short_summary": "日本的女性声优，千叶县船桥市出身\r\n    代表作有《重生传奇》（毛）、《魔法老师》（络操茶茶丸）、《超级机器人大战系列》（爱比丝·道格拉斯）等\r\n    以童星起家的女性声优，童星时期属于剧团日本儿童，后因崇拜幽游白书中绪方惠美演出的藏马角色而转行。\r\n    有点沙哑的声音（husky voice）为其特征。像テイルズオブリバース的マオ、韦駄天翔的山登翔之类活泼少年、IGPX的リズ那样的强气娘、爆裂天使的ジョウ和魔法老师的络缲茶々丸那样的（阴沉）寡言的脚色等，不限定于特定性格，可以演出各种性格角色的声优。另外不知为什么，百合类的演出也不少。\r\n    第一人称“仆”，不过偶尔会用“俺”，在传颂之物广播第13回也曾说过，有时会根据年龄使用“あたし”自称。 （仆，ボク，Boku——ボク一般是男性专用的自称。俺，おれ，Ore——一般是男性用自称，详见仆少女。あたし为女性专用自称。另一种则为“私”一般念作“わたし”（Watashi），是两性通用自称，“わたくし”（watakushi）则为古语，不过仍有人在使用）\r\n    非常讨厌别人讲黄色笑话。在担任某电台节目的特别来宾演出时，对于小野坂昌也说著一连串黄色笑话的时候，也不管当时正在录音，就突然生气，彻底的将小野坂斥责一遍。现在随着和同性声优的共演作品较多，常常被生天目仁美和伊藤静等用“近似”性骚扰的行为捉弄，渐渐的多少对这种事有点抵抗力了。\r\n    声优界知名的巨乳。因此常遭声优界有名的“揉乳狂”生天目仁美的“毒手”。\r\n    生天目仁美与伊藤静曾说“（明乃）是我们身体的偶像！”；柚木凉香和三宅华也也曾在渡边本人不在时的电台节目中讨论“胸部很大”的话题。\r\n    本人曾说“就算谁说了什么，のとまみ（能登麻美子爱称之一）也是我的人。不可以。不让给任何人。まーたん（指能登，亦为能登爱称之一，亦有直译（音译）为麻炭）是我的。看，我们在交往啊。就算不是在交往也绝对不让给人。”（但却比不上生天目仁美和同公司前辈川澄绫子她们对能登麻美子的溺爱程度。）\r\n    很喜欢酒，和声优界公认的“酒女”伊藤静是酒友。\r\n    曾在涩谷喝酒喝到天亮，原本打算坐涩谷到品川方面的电车的，但醒来时已经到了原宿这样的喝酒失败谭。明明打算坐首班车的，醒来时已经到了中午了（根据あまえないでよっ!!声优SP）。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 170,
+            "name": "パティ（パトリシア）=トンプソン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ae/47/170_crt_4z2e5.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ae/47/170_crt_4z2e5.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ae/47/170_crt_4z2e5.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ae/47/170_crt_4z2e5.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5718,
+                    "name": "高平成美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/25/da/5718_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/da/5718_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/da/5718_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/25/da/5718_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

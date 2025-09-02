@@ -1,0 +1,122 @@
+{
+    "id": 25226,
+    "name": "gdgd妖精s",
+    "image_path": "data/images/anime/25226.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "搞笑短片动画《gdgd妖精s》描写的是皮克匹克、希露希露和库洛库洛三位妖精的日常搞笑故事，采用全CG技术制作，每话包括三位妖精的日常聊天、在“精神与时间小屋”使用魔法进行比赛，以及通过镜之湖来观察“另一边”的世界等几个环节。动画第一期曾于2011年秋在NICONICO动画网站和TOKYO MX电视台放送，虽然所使用的CG技术可以用“拙劣”来形容，但是凭借有趣的吐槽向情节在日本网络上有很高的人气。\r\n\r\n本作主要策划人为CGI制作出道的菅原状太，由其一手担当企划、影像监督及角色设计的工作。全部影像均用到日本当地MAD片和二次创作的制作技术，涉及的3D软件包括MikuMikuDance、Shade及六角大王等。而有别于2D动画，本作大部分的内容是配音工作完成以后才开始制作影像。而第1期官方网站就曾经公开承认，本作的制作预算相对紧拙，大部分的影像制作只能逼在播放前约一周内，几乎毫无休止的状况下完成。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2011-10-12",
+    "rating_rank": 1161,
+    "rating_score": 7.5,
+    "rating_total": 215,
+    "main_character_ids": [
+        19132,
+        19133,
+        19134
+    ],
+    "main_characters": [
+        {
+            "id": 19132,
+            "name": "ピクピク",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e2/28/19132_crt_sezHG.jpg?r=1392773210",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/28/19132_crt_sezHG.jpg?r=1392773210",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/28/19132_crt_sezHG.jpg?r=1392773210",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e2/28/19132_crt_sezHG.jpg?r=1392773210"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6707,
+                    "name": "三森すずこ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ed/4c/6707_prsn_n2FZD.jpg?r=1687241857",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/4c/6707_prsn_n2FZD.jpg?r=1687241857",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/4c/6707_prsn_n2FZD.jpg?r=1687241857",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ed/4c/6707_prsn_n2FZD.jpg?r=1687241857"
+                    },
+                    "short_summary": "三森铃子（三森 すずこ／みもり すずこ / Mimori Suzuko），本名黑川铃子（黒川 鈴子／くろかわ すずこ / Kurokawa Suzuko），是日本女演员、声优、歌手，目前隶属于“响”；日本企业家黑川文雄是其堂兄。\r\n\r\n日本东京都出身。成为声优之前，以“黑川铃子”本名在音乐剧和舞台剧活动。有次在舞台表演时，被武士道社长木谷先生问到:“要不要试试当声优？”，此后便转向声优界活动。\r\n曾经以少女偶像团体Cutie Pai的团员“スージー”的身份在2009年7月至10月间活动。\r\n因为参加《侦探歌剧 少女福尔摩斯》的配音工作，与另外三位也担任主角的声优德井青空、佐佐木未来、橘田泉共组声优团体“Milky Holmes”。\r\n2012年12月31日宣布以个人名义歌手出道。\r\n2018年1月13日，《东京体育》报道称三森与日本职业摔角运动员冈田和睦交往，此消息获得本人确认。2019年4月12日，二人公布婚讯。\r\n\r\n在《侦探歌剧 少女福尔摩斯》一起共事的新谷良子，是三森主演的东京迪士尼海洋音乐剧《Mickey's Dream Company（米奇梦想剧团）》的剧迷，因此向三森索求签名。\r\n黑川铃子时期，时任武士道副社长的企业家黑川文雄以堂兄身份大力推荐。\r\n《SEIGURA》杂志上，以“有名插图画家——Okuzushi. M. Romi——オクズシ・ロミ”名义开设专栏，公布读者的来信和自绘插图。“Okuzushi. M. Romi”，其实就是本身艺名罗马拼音“Mimori Suzuko”倒过来念。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19133,
+            "name": "シルシル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/78/9c/19133_crt_Ix0L0.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/9c/19133_crt_Ix0L0.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/9c/19133_crt_Ix0L0.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/78/9c/19133_crt_Ix0L0.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5763,
+                    "name": "水原薫",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/cf/15/5763_prsn_PCpCZ.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/15/5763_prsn_PCpCZ.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/15/5763_prsn_PCpCZ.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/cf/15/5763_prsn_PCpCZ.jpg"
+                    },
+                    "short_summary": "日本の女性声優。\r\nデパートの店内放送をしていた母親の影響で、喋る仕事に興味を持ち、放送業界関係者にスカウトを受け、声優業を始める。\r\n3人兄妹の末っ子。身長158cm。血液型はO型・Rh-。\r\n\r\n2010年6月26日、自身の誕生日と同時にtwitterデビュー。同年10月31日、デビューから所属していたメディアフォースを退所しフリーとなる。翌年5月1日、アクロス エンタテインメント所属となるが、2015年4月に退社。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19134,
+            "name": "コロコロ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/80/d5/19134_crt_oLxf6.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/d5/19134_crt_oLxf6.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/d5/19134_crt_oLxf6.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/80/d5/19134_crt_oLxf6.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4698,
+                    "name": "明坂聡美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/44/ff/4698_prsn_K78E4.jpg?r=1503560197",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/ff/4698_prsn_K78E4.jpg?r=1503560197",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/ff/4698_prsn_K78E4.jpg?r=1503560197",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/44/ff/4698_prsn_K78E4.jpg?r=1503560197"
+                    },
+                    "short_summary": "明明是个贫乳，却经常接演巨乳角色，本人也多次吐槽。\r\n声优以外舞台女演员也在进行，活动也广泛。同时，常常把声音用作花茎甘蓝关联的作品。\r\n有绝对音感。\r\n爱好是猫，特技是一千米跑（15岁时），喜欢玩柏青哥，网络游戏和画画，喜欢东京事变（椎名林檎）的歌，喜欢吃梅干。\r\n经常被人以“贫乳”，“嫁不出去”来开玩笑，自己也自暴自弃地接受了如上设定（现在主持着名为明坂聡美のよめいり！（明坂聪美的新娘修行）的放送节目），目标是找个有钱的帅哥（或者只要有钱就好）嫁了。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

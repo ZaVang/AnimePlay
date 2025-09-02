@@ -1,0 +1,56 @@
+{
+    "id": 143426,
+    "name": "原賀胡桃",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ad/24/143426_crt_QtOQW.jpg?r=1717850905",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/24/143426_crt_QtOQW.jpg?r=1717850905",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/24/143426_crt_QtOQW.jpg?r=1717850905",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ad/24/143426_crt_QtOQW.jpg?r=1717850905"
+    },
+    "summary": "恋太郎の彼女の一人。\r\nフードとヘッドホンがトレードマークの中学3年生。どんな言葉も食べ物に連想してしまう性格で、お腹が空くとすぐイライラしてしまう腹ペコ女子。しかし、空腹時の態度を顧みて落ち込んでしまう健気な一面も。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "原贺胡桃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "原賀 胡桃"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はらが くるみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Haraga Kurumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月3日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 3,
+    "stat": {
+        "comments": 25,
+        "collects": 55
+    },
+    "anime_ids": [
+        471793
+    ]
+}

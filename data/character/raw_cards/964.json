@@ -1,0 +1,60 @@
+{
+    "id": 964,
+    "name": "ヴィルヘルミナ・カルメル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/47/7e/964_crt_JDj62.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/7e/964_crt_JDj62.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/7e/964_crt_JDj62.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/47/7e/964_crt_JDj62.jpg"
+    },
+    "summary": "和红世魔王“梦幻冠带”契约，通称为“万条巧手”的火雾战士。为实现先代“炎发灼眼的杀手”的遗愿，于“天道宫”上培育夏娜成为现任“炎发灼眼的杀手”，为构成夏娜个性及回忆的要人之一，其角色地位相当于夏娜的母亲。\r\n　　口头禅为语末加上“～是也（～であります）”，总是作古式女仆装扮，为人古肃谨直，面无表情且待人冷淡，但暗地里却极易动情且对夏娜呵护备至。\r\n　　作战时放出缎带构成各种结构作攻防为其绝技，不擅长进攻，但活用战技及防御使其成为强大的火雾战士之一，因此也被称为“战技无双的舞踏姬”。战斗状态搭配狐脸面具型神器“佩尔苏娜”。对“虹之翼”梅利希姆抱有淡淡的爱情。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "身高",
+            "value": "166"
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ヴィルヘルミナ・カルメル"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Wilhelmina Carmel"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "简体中文名",
+            "value": "威尔艾米娜·卡梅尔"
+        },
+        {
+            "key": "声优",
+            "value": "伊藤静"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 49
+    },
+    "anime_ids": [
+        490
+    ]
+}

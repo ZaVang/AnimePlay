@@ -1,0 +1,60 @@
+{
+    "id": 15819,
+    "name": "十凍京",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d8/e0/15819_crt_ugfc4.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/e0/15819_crt_ugfc4.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/e0/15819_crt_ugfc4.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d8/e0/15819_crt_ugfc4.jpg"
+    },
+    "summary": "舞浜南高校の水泳部復活を目指している一年生。実は、舞浜市がサーバー内の仮想都市で、自分たちがデータ人格記憶体・幻体であることを知り、セレブラントとして戦いつづけている。新兵器ゼーガペインのガンナーとなる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "十冻京"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "十凍 京"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ソゴル・キョウ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sogoru Kyou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "176cm"
+        },
+        {
+            "key": "体重",
+            "value": "65kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 8
+    },
+    "anime_ids": [
+        1147
+    ]
+}

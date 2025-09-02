@@ -1,0 +1,48 @@
+{
+    "id": 21665,
+    "name": "にゃん太",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0f/de/21665_crt_v4Z46.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/de/21665_crt_v4Z46.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/de/21665_crt_v4Z46.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0f/de/21665_crt_v4Z46.jpg"
+    },
+    "summary": "猫人族，主职业为盗剑士，副职业为厨师。\r\n个性温文儒雅是个绅士，但是发怒时魄力惊人\r\n\"秋叶原革命\"的关键人物，第一位发现规格外合成法的人。是活化秋叶原经济的幕后推手之一\r\n\"浪荡者茶会\"和\"记录的地平线\"众人的咨询对象，年龄为30后半左右的岁数\r\n外号：\"隐者\"，\"老师\"，\"熏银\"，\"班长\"",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "喵太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "にゃんた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nyanta"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 25
+    },
+    "anime_ids": [
+        100517
+    ]
+}

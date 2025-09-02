@@ -1,0 +1,62 @@
+{
+    "id": 276,
+    "name": "本田透",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f7/46/276_crt_n631N.jpg?r=1552757291",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/46/276_crt_n631N.jpg?r=1552757291",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/46/276_crt_n631N.jpg?r=1552757291",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f7/46/276_crt_n631N.jpg?r=1552757291"
+    },
+    "summary": "都立海原高校に通う学生。父親は早くに他界、母親も交通事故で亡くしたことからテントで一人暮らしをしている。だが、家事の腕を買われて同級生の草摩由希、そして由希を敵視する草摩夾と一緒に生活することとなる。天然でズレているところもあるが、常にひたむきで心優しい性格。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "本田透"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ほんだ とおる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Honda Tōru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "156.7cm"
+        },
+        {
+            "key": "体重",
+            "value": "46kg"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 35,
+        "collects": 105
+    },
+    "anime_ids": [
+        880,
+        315516,
+        291039
+    ]
+}

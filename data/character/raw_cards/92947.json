@@ -1,0 +1,68 @@
+{
+    "id": 92947,
+    "name": "ジュリエット・クイーン・エリザベス8世",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/af/0e/92947_crt_2eF4Z.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/0e/92947_crt_2eF4Z.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/0e/92947_crt_2eF4Z.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/af/0e/92947_crt_2eF4Z.jpg"
+    },
+    "summary": "飛び級で高校生になった 12 歳の天才留学生。父親は有名なIT企業の社長であるが故に、最先端技術の知識も高い。非効率を嫌い、科学を信奉するあまり、古臭い手作業などを見下しているところがある。なんでも手に入る恵まれた環境にはあるが、人を寄せ付けない性格から寂しい思いもしている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "朱丽叶·奎恩·伊丽莎白8世"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "朱丽叶·皇后·伊丽莎白8世"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Juliet Queen Elizabeth VIII"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "じゅりえっと・くいーん・えりざべす8せい"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ジョブ子、Job子、朱布子"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月24日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://diy-anime.com/character/jobko.php"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 4,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 24,
+    "stat": {
+        "comments": 34,
+        "collects": 36
+    },
+    "anime_ids": [
+        331445
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 36013,
+    "name": "ブギーポップ／宮下藤花",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/43/65/36013_crt_5llc0.jpg?r=1554734251",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/43/65/36013_crt_5llc0.jpg?r=1554734251",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/43/65/36013_crt_5llc0.jpg?r=1554734251",
+        "grid": "https://lain.bgm.tv/pic/crt/g/43/65/36013_crt_5llc0.jpg?r=1554734251"
+    },
+    "summary": "世界の危機に関わる異変を察知した時に、自動的に現れる宮下藤花の別人格。一人称は「僕」。竹田啓司は「彼」を最初「変身ヒーロー」と連想していた。「ブギーポップ（不気味な泡）」という名前は、世界の危機をきっかけにして無意識下から自動的に現れるその性質を、水底から水面へ浮かび上がる泡に喩えた自称。また「死神」や「世界の敵の敵」などとも呼ばれる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "不吉波普／宫下藤花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Boogiepop"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みやした とうか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Miyashita Touka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://ja.wikipedia.org/wiki/ブギーポップシリーズの登場人物"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 29,
+        "collects": 160
+    },
+    "anime_ids": [
+        240039
+    ]
+}

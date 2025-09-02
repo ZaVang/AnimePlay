@@ -1,0 +1,60 @@
+{
+    "id": 5215,
+    "name": "八神ヒカリ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6e/7f/5215_crt_eMlaC.jpg?r=1430922953",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/7f/5215_crt_eMlaC.jpg?r=1430922953",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/7f/5215_crt_eMlaC.jpg?r=1430922953",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6e/7f/5215_crt_eMlaC.jpg?r=1430922953"
+    },
+    "summary": "被选召的孩子之一，拥有粉色的数码终端，搭档是迪路兽。坚强体贴，为人着想，憎恶黑暗，正如她持有的徽章一样，是个善良而又有爱心的小女孩，和哥哥一样，坚强乐观，甚至愿意为别人牺牲自己也毫无怨言，和高石岳十分要好。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Yagami Hikari"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "八神嘉儿"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Hikari &quot;Kari&quot; Kamiya"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やがみ ひかり"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "简体中文名",
+            "value": "八神光"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 19,
+        "collects": 83
+    },
+    "anime_ids": [
+        3128
+    ]
+}

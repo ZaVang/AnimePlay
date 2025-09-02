@@ -1,0 +1,61 @@
+{
+    "id": 35648,
+    "name": "桐山零",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/47/07/35648_crt_KGyw8.jpg?r=1520788762",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/07/35648_crt_KGyw8.jpg?r=1520788762",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/07/35648_crt_KGyw8.jpg?r=1520788762",
+        "grid": "https://lain.bgm.tv/pic/crt/g/47/07/35648_crt_KGyw8.jpg?r=1520788762"
+    },
+    "summary": "本作品的主角。将棋职业棋士，在作品开始时是17岁，C级1组，单行本第九卷后为B级第2组。居住在作品虚构的东京都六月町。父亲在长野经营医院，与亲戚并不常往来。在小学时，由于发生车祸导致双亲与妹妹去世，之后由父亲的好友幸田收为弟子并一起居住。在作品中是史上第五个于中学生时期就取得职业棋士的人。中学毕业后离开幸田家独自生活，在一年后才又进入私立驹桥高校就读。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "桐山零"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "桐山 零"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きりやま れい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kiriyama Rei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 34,
+        "collects": 280
+    },
+    "anime_ids": [
+        211567,
+        147068
+    ]
+}

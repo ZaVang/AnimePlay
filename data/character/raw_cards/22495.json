@@ -1,0 +1,44 @@
+{
+    "id": 22495,
+    "name": "椎名つばさ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/31/a7/22495_crt_33u0k.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/31/a7/22495_crt_33u0k.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/31/a7/22495_crt_33u0k.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/31/a7/22495_crt_33u0k.jpg"
+    },
+    "summary": "住在北海道的小学四年级女孩。她性格温柔但内向，容易对任何事情持悲观态度。她和父亲一起生活（母亲已经去世），但父亲忙于面包师傅的修行，所以她几乎总是一个人在家。可能是因为刚从东京转学过来，她在学校和班级里都难以融入，过着孤独的生活。此外，她无法说出自己想说的话，因此受到了飞鸟的注意，被萩原和美奈误解。由于偶然的情况，她开始和光和D·D一起生活。她对相泽翔抱有好感",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "椎名翼"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "椎名 つばさ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 9
+    },
+    "anime_ids": [
+        10376
+    ]
+}

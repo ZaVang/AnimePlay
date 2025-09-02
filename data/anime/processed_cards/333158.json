@@ -1,0 +1,108 @@
+{
+    "id": 333158,
+    "name": "更衣人偶坠入爱河",
+    "image_path": "data/images/anime/333158.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "制作着女儿节娃娃，以成为娃娃工匠为目标的男高中生五条新菜。\r\n他专心一志地制作女儿娃娃，却也因此疏离的同世代的流行，迟迟无法融入班级。\r\n对这样的新菜来说，总是身处班上团体的中心，大受欢迎的喜多川海梦就像是不同世界的人一样。\r\n但就在某天，以意想不到的事情为契机，与海梦拥有了共同的秘密。\r\n原以为两人绝对不会有交集的世界开始转动了起来。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改",
+        "青年向"
+    ],
+    "date": "2022-01-08",
+    "rating_rank": 1693,
+    "rating_score": 7.2,
+    "rating_total": 13772,
+    "main_character_ids": [
+        102090,
+        102091
+    ],
+    "main_characters": [
+        {
+            "id": 102090,
+            "name": "喜多川海夢",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a6/d9/102090_crt_QHm2U.jpg?r=1644823104",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/d9/102090_crt_QHm2U.jpg?r=1644823104",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/d9/102090_crt_QHm2U.jpg?r=1644823104",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a6/d9/102090_crt_QHm2U.jpg?r=1644823104"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 37185,
+                    "name": "直田姫奈",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/73/0d/37185_prsn_cZ0h3.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/0d/37185_prsn_cZ0h3.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/0d/37185_prsn_cZ0h3.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/73/0d/37185_prsn_cZ0h3.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 102091,
+            "name": "五条新菜",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ee/8c/102091_crt_Xpn32.jpg?r=1635174188",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/8c/102091_crt_Xpn32.jpg?r=1635174188",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/8c/102091_crt_Xpn32.jpg?r=1635174188",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ee/8c/102091_crt_Xpn32.jpg?r=1635174188"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 25978,
+                    "name": "高柳知葉",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/32/80/25978_prsn_1321f.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/80/25978_prsn_1321f.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/80/25978_prsn_1321f.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/32/80/25978_prsn_1321f.jpg"
+                    },
+                    "short_summary": "ラクーンドック所属\r\n\r\n出身地：千葉県\r\n方言：なし\r\n趣味：観劇、イラストを描く、女性アイドルのフリコピ\r\n特技：茶道、ヒップホップダンス、エレキベース\r\n資格：英語検定準２級、漢字検定準２級\r\n経歴：プロ・フィット声優養成所　卒",
+                    "locked": false
+                },
+                {
+                    "id": 28293,
+                    "name": "石毛翔弥",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5a/0d/28293_prsn_NY5kR.jpg?r=1492422834",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5a/0d/28293_prsn_NY5kR.jpg?r=1492422834",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5a/0d/28293_prsn_NY5kR.jpg?r=1492422834",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5a/0d/28293_prsn_NY5kR.jpg?r=1492422834"
+                    },
+                    "short_summary": "出身地：埼玉県\r\n趣味・特技：ミュージカル、クラシックバレエ、音楽鑑賞、DIY",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

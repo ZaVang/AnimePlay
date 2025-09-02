@@ -1,0 +1,213 @@
+{
+    "id": 531159,
+    "name": "时光流逝，饭菜依旧美味",
+    "image_path": "data/images/anime/531159.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "可爱×美味=最强美食\r\n五名刚刚成为大学生的女孩们共同演绎的日常故事。\r\n热爱美食，想和大家一起尽情玩耍，学习也要稍加努力，如此这般，尽情享受大学生活吧！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "日常",
+        "美食"
+    ],
+    "date": "2025-04-12",
+    "rating_rank": 530,
+    "rating_score": 7.7,
+    "rating_total": 7420,
+    "main_character_ids": [
+        172764,
+        172765,
+        172766,
+        172767,
+        172768,
+        172769
+    ],
+    "main_characters": [
+        {
+            "id": 172764,
+            "name": "河合まこ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1e/dc/172764_crt_vPv3R.jpg?r=1741836619",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/dc/172764_crt_vPv3R.jpg?r=1741836619",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/dc/172764_crt_vPv3R.jpg?r=1741836619",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1e/dc/172764_crt_vPv3R.jpg?r=1741836619"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 49252,
+                    "name": "嶋野花",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/fc/49252_prsn_gKgto.jpg?r=1745164141",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/fc/49252_prsn_gKgto.jpg?r=1745164141",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/fc/49252_prsn_gKgto.jpg?r=1745164141",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/fc/49252_prsn_gKgto.jpg?r=1745164141"
+                    },
+                    "short_summary": "日本の声優，アクセルワン所属。\r\n出身地：千葉県。資格：簿記3級、情報処理検定2級。趣味：食べること、神社仏閣巡り、柴犬グッズ集め。特技：トロンボーン。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 172765,
+            "name": "古館くれあ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/cd/9f/172765_crt_4Nc7r.jpg?r=1741836621",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/9f/172765_crt_4Nc7r.jpg?r=1741836621",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/9f/172765_crt_4Nc7r.jpg?r=1741836621",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cd/9f/172765_crt_4Nc7r.jpg?r=1741836621"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10806,
+                    "name": "加隈亜衣",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c4/8e/10806_prsn_kqVKK.jpg?r=1687829947",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/8e/10806_prsn_kqVKK.jpg?r=1687829947",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/8e/10806_prsn_kqVKK.jpg?r=1687829947",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c4/8e/10806_prsn_kqVKK.jpg?r=1687829947"
+                    },
+                    "short_summary": "日本女声优。MAUSU PROMOTION所属。福冈县出身。\r\n\r\n以不想麻烦家人为理由，高中毕业后作为OL工作了4年，但因无法舍弃成为声优的想法而来到东京，通过成为MAUSU PROMOTION附属养成所的第26期生，从2013年4月成为MAUSU PROMOTION的所属。\r\n从2011年秋天就开始在广播节目和游戏软件（里）演出。2012年4月26日发售的PS Vita游戏《静籁之空 ～献给失落之星的诗～》女主角依恩为其首度配音的角色。亦以2012年1月的动画《要听爸爸的话！》的姐姐角色正式动画出道。\r\n2013年10月至12月，与水濑祈结成期间限定组合“いのりっくま”，在德岛、福冈、东京举办了活动。\r\n\r\n出身于福冈县，会说博多方言。\r\n想要成为声优的契机是小学6年级时看过的动画《犬夜叉》，憧憬的前辈也是其中饰演女主角日暮戈薇的雪野五月。\r\n特长是游泳和乒乓球。此外，还擅长电脑打字。\r\n拥有驾照、日本汉字能力检定、台式电脑实务检定、簿记实务检定、文字处理机实务检定的资格。艺人简介“兴趣・特长”栏中的“河童捕获”实为在2012年11月岩手县原野市所取得（购入）了的《河童捕获许可证》。2015年5月4日，担当了在Machi★Asobi举办的事务所前辈市来光弘与朋友井上奈奈的公开结婚典礼的主持。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 172766,
+            "name": "小川しのん",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/67/95/172766_crt_bOdnt.jpg?r=1741836623",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/95/172766_crt_bOdnt.jpg?r=1741836623",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/95/172766_crt_bOdnt.jpg?r=1741836623",
+                "grid": "https://lain.bgm.tv/pic/crt/g/67/95/172766_crt_bOdnt.jpg?r=1741836623"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13684,
+                    "name": "青山吉能",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6c/00/13684_prsn_vEz31.jpg?r=1695817179",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/00/13684_prsn_vEz31.jpg?r=1695817179",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/00/13684_prsn_vEz31.jpg?r=1695817179",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6c/00/13684_prsn_vEz31.jpg?r=1695817179"
+                    },
+                    "short_summary": "青山 吉能（あおやま よしの、1996年5月15日 - ）は、日本の女性声優。81プロデュースとエイベックス・ピクチャーズに所属。熊本県出身。血液型はA型。\r\n\r\n2012年に開催された、avex×81produce「Wake Up, Girls! AUDITION」第2回アニソン・ヴォーカルオーディションに合格。\r\n2013年4月に「Wake Up, Girls!」が結成され、同年7月から主な活動を開始するが本人は上京せず、熊本から都内や地方へ行っていた。\r\n2014年 には「Wake Up, Girls!」のメンバーとして全国ツアー、Animelo Summer Liveへの出演、幕張メッセで約5000人もの観客を集めた単独ライブ等を成功させる。また、地元のFMラジオで初の個人の冠番組を担当した。\r\n2015年、第9回声優アワード特別賞をWake Up, Girls!として受賞。3月には大学に合格し上京することを発表した。\r\n2016年、小林竜之、澁谷梓希、若井友希、吉岡茉祐と「D-selections」を結成。2016年4月から放送する、テレビアニメ『ハンドレッド』のオープニングテーマ『BLOODRED』を歌唱する。\r\n2017年、テレビアニメ『恋愛暴君』におけるメインヒロインの一人、グリを演じる。\r\n\r\n中学一年生の時に自分の取柄は声しかないと思っていた青山吉能は、その声を活かして頑張ろうと第1回アニソン・ヴォーカルオーディションやエリーを探せ! ミルキィホームズ 声優オーディションなど数多くのオーディションを受ける。東日本大震災の発生後は東北地方のために熊本県で何か出来ないかと思いオーディション受けていた。「avex×81produce Wake Up, Girls! AUDITION」第2回アニソン・ヴォーカルオーディションで初めて最終選考まで残り、そのまま合格。以降はWake Up, Girls!として活動しながら声優を続けている。\r\n嫌いなものは苺。特技は合唱、書道、スキー。スキーにおいては、国体冬季大会にジャイアントスラロームで出場している。また、2度の「ソロでイベント、やらせてください!」ではピアノ弾き語りも披露した。自分の好きな声を皆さんに聞いてもらえることが幸せだと考えていて、声優であることに拘りがあり、監督の山本寛に対して「私たちは声優です」と発言したこともある。\r\n自他ともに認めるアニメオタクで、特にSAMURAI DEEPER KYO、PSYCHO-PASSについては何度もブログやラジオで語っている。また、他の声優も好きであり早見沙織を多く話題に取り挙げていて、ラジオのコーナー内で「私の好きな早見沙織さんベスト3」というテーマでトークをすることもあった。2014年に開催されたアニメJAMで念願の共演を果たした。ゲームに嵌りやすく、正月や自身の誕生日を白猫プロジェクトプレイ中にいつのまにか迎えていた程である。\r\n家族は兄が1人、姉が2人で四人兄妹の末っ子。吉能の「吉」は父から、「能」は伊能忠敬から名前に使われた。父は吉能のゲームボーイアドバンスを膝で割ったことがあるほどの厳格な性格で、吉能が上京する際に大学への進学を決意したのも、このままでは上京を許してもらえないと判断したためである。\r\n家族以外の交友関係では、Wake Up, Girls!のメンバーとは自宅に泊めあう仲である。しかし、吉岡茉祐とは一度衝突したことがあり、その顛末はアニメWake Up, Girls!8話の七瀬佳乃と島田真夢のストーリーに反映されている。島ゆいかとは小学校の同級生。Wake Up, Girls!の先輩にあたるi☆Risのファンであると同時にメンバーの一人である澁谷梓希と交流が深く、2015年の誕生日には洋服をプレゼントされ電話も貰っている。自身のラジオである青山吉能 聞いとっと!?よしのモン。・*・:≡(　ε:)のディレクターはラジオが終了した後も青山吉能によるツイッター企画に参加していたり、イベントに現れたりしている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 172767,
+            "name": "比嘉つつじ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ff/4c/172767_crt_2EErs.jpg?r=1741836625",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ff/4c/172767_crt_2EErs.jpg?r=1741836625",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ff/4c/172767_crt_2EErs.jpg?r=1741836625",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ff/4c/172767_crt_2EErs.jpg?r=1741836625"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 8665,
+                    "name": "乾夏寧",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7b/b4/8665_prsn_5kg4o.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/b4/8665_prsn_5kg4o.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/b4/8665_prsn_5kg4o.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7b/b4/8665_prsn_5kg4o.jpg"
+                    },
+                    "short_summary": "出身地：京都府 京都\r\n方言：関西弁 京都弁\r\n芸歴：日本ナレーション演技研究所\r\n趣味・特技：アニメ鑑賞、漫画を読む、マッサージ",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 172768,
+            "name": "星なな",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a7/1f/172768_crt_Kj1HH.jpg?r=1741836662",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/1f/172768_crt_Kj1HH.jpg?r=1741836662",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/1f/172768_crt_Kj1HH.jpg?r=1741836662",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a7/1f/172768_crt_Kj1HH.jpg?r=1741836662"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 30881,
+                    "name": "会沢紗弥",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/90/82/30881_prsn_AIJiD.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/82/30881_prsn_AIJiD.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/82/30881_prsn_AIJiD.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/90/82/30881_prsn_AIJiD.jpg"
+                    },
+                    "short_summary": "趣味：睡眠\r\n特技：ソフトクリームを巻くこと\r\n資格：情報処理検定2級，簿記実務検定2級，秘書技能検定2級，普通自動車免許",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 172769,
+            "name": "モコ太郎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/12/f5/172769_crt_1q78Q.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/f5/172769_crt_1q78Q.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/f5/172769_crt_1q78Q.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/12/f5/172769_crt_1q78Q.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 72241,
+                    "name": "もえのあずき",
+                    "type": 1,
+                    "career": [
+                        "artist"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/20/a5/72241_prsn_aL3X1.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/20/a5/72241_prsn_aL3X1.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/20/a5/72241_prsn_aL3X1.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/20/a5/72241_prsn_aL3X1.jpg"
+                    },
+                    "short_summary": "日本のアイドル。大食いタレント。女性アイドルグループ「エラバレシ」元メンバー、\r\n\r\n「元祖!大食い王決定戦」5代目爆食女王（三連覇）、ミスいちご2022、日本酒文化大使、2016台湾夏の美食大使、NEXCO東日本 SA・PAグルメアンバサダー、2017ベストカレーパニスト「アイドル部門」。大阪府出身。同志社大学経済学部卒業。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

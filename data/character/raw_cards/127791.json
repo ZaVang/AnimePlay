@@ -1,0 +1,93 @@
+{
+    "id": 127791,
+    "name": "千早愛音",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/87/3b/127791_crt_pOtpZ.jpg?r=1738746794",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/3b/127791_crt_pOtpZ.jpg?r=1738746794",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/3b/127791_crt_pOtpZ.jpg?r=1738746794",
+        "grid": "https://lain.bgm.tv/pic/crt/g/87/3b/127791_crt_pOtpZ.jpg?r=1738746794"
+    },
+    "summary": "羽丘女子学園の高校1年生。成績優秀でコミュ力と行動力があり、中学時代はクラスの人気者で、生徒会長も務めていた。ミーハーな性格で流行っているものに手を出しがち。\r\n\r\n昵称是爱音或者爱音酱。\r\n即使为了Live而进行的练习都很辛苦，爱音还是很努力去克服困难。\r\n觉得立希很唠叨。\r\n乐器：ESP ULTRATONE Anon Custom (See Thru Surf Green)\r\n\r\n[mask]MyGO!!!!! Gt.\r\n\r\n羽丘女子学園の高校1年生。燈とは同じクラス。MyGO!!!!!のギターだけでなく、衣装やSNSも担当している。コミュ力と行動力があり、友人のために動くことができる。ミーハーで流行りものが好き。[/mask]",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "千早爱音"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "千早 愛音"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ちはや あのん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Chihaya Anon"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月8日"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "官网（It's MyGO!!!!!）",
+                    "v": "https://anime.bang-dream.com/mygo/character/anon/"
+                },
+                {
+                    "k": "官网（Ave Mujica）",
+                    "v": "https://anime.bang-dream.com/avemujica/character/anon/"
+                },
+                {
+                    "k": "萌娘百科",
+                    "v": "https://zh.moegirl.org.cn/zh-hans/MyGO!!!!!"
+                }
+            ]
+        },
+        {
+            "key": "担当",
+            "value": "吉他手"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "熏三文鱼和水果三明治"
+        },
+        {
+            "key": "讨厌的东西",
+            "value": "梅干，和其他比较酸的东西"
+        },
+        {
+            "key": "兴趣",
+            "value": "看美容方面的视频，主要是想了解到现在流行的东西"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 8,
+    "stat": {
+        "comments": 734,
+        "collects": 1183
+    },
+    "anime_ids": [
+        428735
+    ]
+}

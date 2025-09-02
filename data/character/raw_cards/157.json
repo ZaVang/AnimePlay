@@ -1,0 +1,52 @@
+{
+    "id": 157,
+    "name": "ぬい",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/cc/4b/157_crt_KIkox.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/4b/157_crt_KIkox.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/4b/157_crt_KIkox.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cc/4b/157_crt_KIkox.jpg"
+    },
+    "summary": "银古小时候遇难后收留他的女虫师，教会他关于虫的基本知识。因为虫（银蛊）的光而白化，失去右眼，左眼变成绿色，头发变成白色，最终变成“常暗”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ぬい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nui"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "简体中文名",
+            "value": "奴伊"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 17
+    },
+    "anime_ids": [
+        340
+    ]
+}

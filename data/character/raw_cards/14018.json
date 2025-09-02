@@ -1,0 +1,48 @@
+{
+    "id": 14018,
+    "name": "キバ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/91/4b/14018_crt_HhmuM.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/4b/14018_crt_HhmuM.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/4b/14018_crt_HhmuM.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/91/4b/14018_crt_HhmuM.jpg"
+    },
+    "summary": "个性相当高傲，但也因为不知人间世故冷暖，所以性格纯真。他深信在世界上存在着“乐园”，并决定开始追寻的旅程。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "狼牙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "キバ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "KIBA"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 4
+    },
+    "anime_ids": [
+        1983
+    ]
+}

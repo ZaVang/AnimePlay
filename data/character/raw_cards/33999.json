@@ -1,0 +1,72 @@
+{
+    "id": 33999,
+    "name": "島村ジョー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/28/e5/33999_crt_VB0Vk.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/e5/33999_crt_VB0Vk.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/e5/33999_crt_VB0Vk.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/28/e5/33999_crt_VB0Vk.jpg"
+    },
+    "summary": "ゼロゼロナンバーサイボーグの開発で培われた技術を\r\n１体に集約させた万能型のサイボーグ戦士。\r\n正義感に溢れたゼロゼロナンバーサイボーグのリーダー的存在で、特殊能力である\r\n“加速装置”により音速で移動出来る。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "岛村乔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Shimamura Joe"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しまむら ジョー"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "05月16日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://ja.wikipedia.org/wiki/"
+        },
+        {
+            "key": "年龄",
+            "value": "18"
+        },
+        {
+            "key": "编号",
+            "value": "009"
+        },
+        {
+            "key": "出身",
+            "value": "日本"
+        },
+        {
+            "key": "能力",
+            "value": "加速装置"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 16,
+    "stat": {
+        "comments": 3,
+        "collects": 15
+    },
+    "anime_ids": [
+        13607
+    ]
+}

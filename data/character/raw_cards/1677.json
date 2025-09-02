@@ -1,0 +1,77 @@
+{
+    "id": 1677,
+    "name": "黒沼爽子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/61/10/1677_crt_C5ZZ3.jpg?r=1704007219",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/10/1677_crt_C5ZZ3.jpg?r=1704007219",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/10/1677_crt_C5ZZ3.jpg?r=1704007219",
+        "grid": "https://lain.bgm.tv/pic/crt/g/61/10/1677_crt_C5ZZ3.jpg?r=1704007219"
+    },
+    "summary": "阴气、超长黑发、在夏天也煞白的皮肤。和灵感少女以及令人恐惧的超阴气容貌正好相反。性格很开朗，即使是微笑的事情也会马上感动！（喜欢流泪）从风早那里得到勇气，开始一点点和班上的同学熟悉起来。\r\n\r\n人物特点：\r\n- 能一瞬间让对方凝固的笑容问好是每天的必修课\r\n- 绰号贞子，谣言很多 :\r\n- 具有很强的恐怖灵感\r\n- 和她对视三秒以上会被诅咒\r\n- 一天内和她对视三次就会有不幸降临\r\n- 坐在她的位子上就会被作祟\r\n- 见到她笑就会有好运降临\r\n- 装扮起来是超可爱美女\r\n- 学习、烹饪、手工艺都很棒",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黑沼爽子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "黒沼 爽子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くろぬま さわこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kuronuma Sawako"
+                },
+                {
+                    "k": "昵称",
+                    "v": "貞子、座敷童子"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月31日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "体重",
+            "value": "44kg"
+        },
+        {
+            "key": "座右铭",
+            "value": "日行一善"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 31,
+    "stat": {
+        "comments": 36,
+        "collects": 185
+    },
+    "anime_ids": [
+        9757,
+        2790
+    ]
+}

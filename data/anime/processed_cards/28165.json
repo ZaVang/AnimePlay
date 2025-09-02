@@ -1,0 +1,75 @@
+{
+    "id": 28165,
+    "name": "樱桃小丸子",
+    "image_path": "data/images/anime/28165.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "故事围绕着小丸子以及其家人和同学展开，有关于亲情、友谊等，或是一些生活小事，但当中有笑有泪，令人回想起童年的稚气。\r\n\r\n在1990年至1992年，《樱桃小丸子》第一次动画化，于富士电视台播出。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 142,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1990-01-07",
+    "rating_rank": 1309,
+    "rating_score": 7.3,
+    "rating_total": 845,
+    "main_character_ids": [
+        14491
+    ],
+    "main_characters": [
+        {
+            "id": 14491,
+            "name": "さくらももこ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1d/5f/14491_crt_5j15h.jpg?r=1474354496",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/5f/14491_crt_5j15h.jpg?r=1474354496",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/5f/14491_crt_5j15h.jpg?r=1474354496",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1d/5f/14491_crt_5j15h.jpg?r=1474354496"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4498,
+                    "name": "TARAKO",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9f/2f/4498_prsn_58Dz8.jpg?r=1451539257",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/2f/4498_prsn_58Dz8.jpg?r=1451539257",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/2f/4498_prsn_58Dz8.jpg?r=1451539257",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9f/2f/4498_prsn_58Dz8.jpg?r=1451539257"
+                    },
+                    "short_summary": "TARAKOは、日本の声優、ナレーター、女優、シンガーソングライター、脚本家、エッセイスト。群馬県太田市出身。トルバドール音楽事務所所属。",
+                    "locked": false
+                },
+                {
+                    "id": 7195,
+                    "name": "鄭麗麗",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/45/a8/7195_prsn_P9u0o.jpg?r=1489803746",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/a8/7195_prsn_P9u0o.jpg?r=1489803746",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/a8/7195_prsn_P9u0o.jpg?r=1489803746",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/45/a8/7195_prsn_P9u0o.jpg?r=1489803746"
+                    },
+                    "short_summary": "香港专业配音演员，于1992年入行。郑丽丽声线甜美，所配的角色多是可爱少女，如《滴骰孖妹》的数码子、咕噜咕噜魔法阵的歌莉、娱乐金鱼眼的华美子和樱桃小丸子的樱桃子等。但相反，她也为不少成熟女性配音，如日式面包王的苏菲·巴尔沙·雾崎等。\r\n\r\n代表作有：樱桃子（樱桃小丸子）、数码子（滴骰孖妹）、木本夏实（皇家双妹唛）、国分果林/宝妮（飞天少女猪事丁）、歌莉（咕噜咕噜魔法阵 ）等",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

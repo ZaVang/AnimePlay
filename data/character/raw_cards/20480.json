@@ -1,0 +1,76 @@
+{
+    "id": 20480,
+    "name": "大宮忍",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c9/ec/20480_crt_zJVKb.jpg?r=1428346169",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/ec/20480_crt_zJVKb.jpg?r=1428346169",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/ec/20480_crt_zJVKb.jpg?r=1428346169",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c9/ec/20480_crt_zJVKb.jpg?r=1428346169"
+    },
+    "summary": "艾莉丝在日本寄宿家庭的女儿。绰号“小忍”。国中时曾寄住在艾莉丝家。\r\n外表为黑发、黑色瞳孔的典型日本人，西装制服穿的很整齐。\r\n个性沉稳，不太受到外在事物影响。连和朋友说话都很客气。\r\n很喜欢外国文化，不过感受性相当奇怪。有很多洋装，自己很喜欢穿，也很喜欢让艾莉丝穿。未来的梦想是翻译人员，但是英文却很差，她的朋友和老师都很担心。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "大宫忍"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "忍叔"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おおみや しのぶ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Oomiya Shinobu"
+                },
+                {
+                    "k": "昵称",
+                    "v": "小忍"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月6日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁→17岁"
+        },
+        {
+            "key": "所属班级",
+            "value": "1年B班→2年A班→3年A班"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 6,
+    "stat": {
+        "comments": 23,
+        "collects": 77
+    },
+    "anime_ids": [
+        100405,
+        57978
+    ]
+}

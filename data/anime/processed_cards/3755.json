@@ -1,0 +1,89 @@
+{
+    "id": 3755,
+    "name": "西蒙",
+    "image_path": "data/images/anime/3755.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　舞台设定在了地球以外的其他星球。人们把自己所在的星球称为“大空陆”。在那里，人类一出生就必须以“女性”的身份生活。等到17岁的时候到“泉”那里，选择性别而成为大人的时刻。\r\n　　为了夺取主人公等所在的宫国所持有的珍贵引擎，邻国开始了日益激烈的侵略。为了迎击敌国，宫国被迫将仪式用复座式飞行艇“Simoun”改造成了战斗用战舰。还需要未性别化的“巫女”被派遣担任驾驶员，于是，她们成为了被称为“coru”的战斗小队成员。\r\n　　操纵“Simoun”的少数少女被称为了“Simoun·シヴュラ（西贝拉）”因为拥有着特殊能力，她们可以选择自己成为大人的时间。但是因为战争的爆发，她们的优秀才能不得不运用在“Simoun”的操作上，换句话说，她们被强迫保持在了“少女阶段”……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "科幻",
+        "百合",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2006-04-03",
+    "rating_rank": 697,
+    "rating_score": 7.6,
+    "rating_total": 609,
+    "main_character_ids": [
+        5142,
+        27015
+    ],
+    "main_characters": [
+        {
+            "id": 5142,
+            "name": "アーエル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/02/22/5142_crt_72OJI.jpg?r=1489258287",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/22/5142_crt_72OJI.jpg?r=1489258287",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/22/5142_crt_72OJI.jpg?r=1489258287",
+                "grid": "https://lain.bgm.tv/pic/crt/g/02/22/5142_crt_72OJI.jpg?r=1489258287"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4776,
+                    "name": "新野美知",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/04/c6/4776_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/c6/4776_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/c6/4776_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/04/c6/4776_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27015,
+            "name": "ネヴィリル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1e/20/27015_crt_kUxiO.jpg?r=1451671974",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/20/27015_crt_kUxiO.jpg?r=1451671974",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/20/27015_crt_kUxiO.jpg?r=1451671974",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1e/20/27015_crt_kUxiO.jpg?r=1451671974"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3974,
+                    "name": "高橋理恵子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9a/32/3974_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/32/3974_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/32/3974_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9a/32/3974_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、女優。演劇集団 円所属。\r\n\r\n埼玉県出身。血液型はA型。\r\n\r\n京華女子高等学校卒業。1989年に円・演劇研究所に入所し、1992年に演劇集団 円に入団[1]。声優の高橋美佳子と組んだラジオ番組『Simoun〜電波 DE リ・マージョン〜』で人気を博す。\r\n\r\nプロレスが好きで、長州力の大ファンである。 好きな花は鈴蘭。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

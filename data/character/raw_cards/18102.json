@@ -1,0 +1,71 @@
+{
+    "id": 18102,
+    "name": "ミカサ・アッカーマン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/21/40/18102_crt_nVMeD.jpg?r=1700166918",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/40/18102_crt_nVMeD.jpg?r=1700166918",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/40/18102_crt_nVMeD.jpg?r=1700166918",
+        "grid": "https://lain.bgm.tv/pic/crt/g/21/40/18102_crt_nVMeD.jpg?r=1700166918"
+    },
+    "summary": "本作的女主角。15岁（835年生）。由于身为艾连的青梅竹马之故，两人经常一起行动。沉默寡言、表情稀少的美少女，有腹肌。\r\n第104期训练兵团第1名毕业。拥有优秀的身体能力与战斗技术，一人的表现就足以与100名士兵匹敌。为了和艾连一起行动，希望加入调查兵团。\r\n在9岁时曾被绑匪绑票，双亲亦被绑匪杀害，后来被艾连救出，自此之后便一直寄居在艾连家中，并把艾连视为“最重要的亲人”。\r\n于第21话中最终选择加入调查军团。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "三笠·阿克曼"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "米卡莎・阿卡曼"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Mikasa Ackerman"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月10日"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "体重",
+            "value": "68kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "kyojinchu.tv/character"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 10,
+    "stat": {
+        "comments": 145,
+        "collects": 907
+    },
+    "anime_ids": [
+        263750,
+        217300,
+        55770,
+        118335,
+        285666,
+        376739,
+        331752,
+        415779
+    ]
+}

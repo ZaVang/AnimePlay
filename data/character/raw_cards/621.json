@@ -1,0 +1,52 @@
+{
+    "id": 621,
+    "name": "カイバ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4e/b5/621_crt_5gA6q.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/b5/621_crt_5gA6q.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/b5/621_crt_5gA6q.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4e/b5/621_crt_5gA6q.jpg"
+    },
+    "summary": "主人公。胸部有一个洞，腹部有以三个圆形为顶点构成的三角形花纹。\r\n经历了某场事故，醒来后已失忆，不知道自己是谁却被追杀，从而逃往了宇宙。转换不同的身体、行走于各种不同的星球间，在颠沛流离的过程中，逐渐找回了自己身世的秘密……",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "凯巴"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "海马"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kaiba"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 23
+    },
+    "anime_ids": [
+        1625
+    ]
+}

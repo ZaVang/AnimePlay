@@ -1,0 +1,84 @@
+{
+    "id": 52826,
+    "name": "白金燐子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d6/7a/52826_crt_pHy26.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/7a/52826_crt_pHy26.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/7a/52826_crt_pHy26.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d6/7a/52826_crt_pHy26.jpg"
+    },
+    "summary": "非常温顺，做事畏手畏脚的性格。虽然作为家里蹲做事很消极，\r\n但是决定了的话就会做到极致的类型。因此喜欢弹钢琴和打网游。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "白金燐子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しろかね りんこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shirokane Rinko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月17日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "担当",
+            "value": "键盘手"
+        },
+        {
+            "key": "星座",
+            "value": "天秤座"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "热牛奶"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "芹菜"
+        },
+        {
+            "key": "兴趣",
+            "value": "网游、填字游戏"
+        },
+        {
+            "key": "所属",
+            "value": "Roselia"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 17,
+    "stat": {
+        "comments": 24,
+        "collects": 101
+    },
+    "anime_ids": [
+        246431
+    ]
+}

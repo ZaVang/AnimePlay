@@ -1,0 +1,72 @@
+{
+    "id": 22185,
+    "name": "栗本雪菜",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/98/c2/22185_crt_HWmmm.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/c2/22185_crt_HWmmm.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/c2/22185_crt_HWmmm.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/98/c2/22185_crt_HWmmm.jpg"
+    },
+    "summary": "6月28日生まれ（かに座）のA型。身長158cm、体重44kg。 B 79 / W 54 / H80\r\n    光祥学園高等部3年生。子供のころから宇宙や生態についての専門書を読んでいた自称発明家。小学校高学年の頃から日夜研究に明け暮れるが、何の研究かは不明。真面目で内気ということもあり、行動的で明るい男性が好み。ただ、科学以外の話題だとあがってしまい上手く話せない。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "栗本雪菜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "栗本雪菜"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くりもと ゆきな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kurimoto Yukina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月28日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "158"
+        },
+        {
+            "key": "体重",
+            "value": "44"
+        },
+        {
+            "key": "BWH",
+            "value": "79/54/80"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 28,
+    "stat": {
+        "comments": 0,
+        "collects": 5
+    },
+    "anime_ids": [
+        32164
+    ]
+}

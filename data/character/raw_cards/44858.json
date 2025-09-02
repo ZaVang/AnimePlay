@@ -1,0 +1,52 @@
+{
+    "id": 44858,
+    "name": "ピュンマ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e9/27/44858_crt_cuFw4.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/27/44858_crt_cuFw4.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/27/44858_crt_cuFw4.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e9/27/44858_crt_cuFw4.jpg"
+    },
+    "summary": "水中での活動能力を強化されており、1万メートル以上の深海でも活動が出来る。\r\n知的な雰囲気の漂う、物静かな性格。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Pyunma"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "编号",
+            "value": "008"
+        },
+        {
+            "key": "出身",
+            "value": "肯尼亚"
+        },
+        {
+            "key": "能力",
+            "value": "水中活动能力"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 5
+    },
+    "anime_ids": [
+        13607
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "id": 2751,
+    "name": "钢铁神兵B'T-X",
+    "image_path": "data/images/anime/2751.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "这是一个关于少年跟他的伙伴一同成长、因羁绊与信念而一同追求梦想的故事。\r\n由机械皇帝建立的机械皇国，带着征服世界的野心，制造了一种集头脑(Brain)、血液(Blood)、艺术美(Beauty)、勇气(Bravery)于一体的具有独立思考能力的机械生命体——Battler Total (B'T)。它拥有不可思议的强大战斗力，却依靠人类的血液运行，并誓死效忠第一个赐予自己鲜血的主人。\r\n在21世纪初，皇国无数的战士驾驶着B'T，在各国边境发动战争，炮火下的城市村庄硝烟四起，土地家园转瞬化为焦土，人民流离失所，在悲伤和绝望的深渊里徘徊……\r\n然而更可怕的是，在皇国基地的主塔内，正秘密地培养着一只可以吞噬整个地球和万物生灵的可怕生物，终极B'T——拉法尔……\r\n五年前，机械皇国四灵将之一的华莲，最先发现了机械皇帝的[野心，拼死逃出了机械皇国。能打倒拉法尔的唯一希望是光，在寻找强大光源时，她遇到了身上散发着耀眼光芒的少年——高宫铁兵。\r\n\r\n五年后，机械皇国为了拉法尔的生长，绑架了机械学界的天才科学家高宫钢太郎，铁兵的哥哥。为了救出哥哥，铁兵只身前往皇国，并且遇到了华莲的B'T——传说中的B'T X，一场与机械皇国的轰轰烈烈战斗就这样开始了……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 25,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "1996-04-06",
+    "rating_rank": 1417,
+    "rating_score": 7.3,
+    "rating_total": 600,
+    "main_character_ids": [
+        93963,
+        164044
+    ],
+    "main_characters": [
+        {
+            "id": 93963,
+            "name": "高宮鉄兵",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c3/e5/93963_crt_j8x8X.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c3/e5/93963_crt_j8x8X.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c3/e5/93963_crt_j8x8X.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c3/e5/93963_crt_j8x8X.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4098,
+                    "name": "亀井芳子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/52/89/4098_prsn_NnBO7.jpg?r=1723550228",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/89/4098_prsn_NnBO7.jpg?r=1723550228",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/89/4098_prsn_NnBO7.jpg?r=1723550228",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/52/89/4098_prsn_NnBO7.jpg?r=1723550228"
+                    },
+                    "short_summary": "亀井 芳子（かめい よしこ、1967年5月25日 - ）は、日本の女性声優。マウスプロモーション所属。茨城県出身。\r\n\r\n1988年に江崎プロダクション付属養成所を経て、1991年にマウスプロモーションへ所属する。",
+                    "locked": false
+                },
+                {
+                    "id": 4105,
+                    "name": "檜山修之",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d8/c2/4105_prsn_6dzrY.jpg?r=1732374320",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/c2/4105_prsn_6dzrY.jpg?r=1732374320",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/c2/4105_prsn_6dzrY.jpg?r=1732374320",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d8/c2/4105_prsn_6dzrY.jpg?r=1732374320"
+                    },
+                    "short_summary": "檜山 修之（ひやま のぶゆき、1967年8月25日- ）は、日本の男性声優、ナレーターである。アーツビジョン所属。広島県廿日市市出身。身長166cm、体重74kg。血液型はA型。星座はおとめ座。干支は羊。\r\n\r\n仕事をする時に気をつけていることは「その時やってる役にとにかく専念すること」。\r\n\r\nデビューして約5年間、バイトをしながら生活していた。その中の一つである警備員のバイトをしていた頃、道路工事の現場がアフレコスタジオの前だった時があり、同僚にばれないように顔を隠していたという。\r\n\r\n自分が声を演じた役の中でヒーロー役の集大成は前述の獅子王凱、悪役の集大成は『機動戦士ガンダムSEED』のムルタ・アズラエル。特に凱を含め『ガオガイガー』には思い入れが強く、『スーパーロボット大戦シリーズ』公式サイト内のインタビューにて、「ガオガイガーが入らずに何が入るんだっていう気もあった」と語っている。\r\n\r\n森川智之と仲が良く、森川とは前述の『おまえら〜』のイベントのほか、ラジオ番組を何度か共演している。この2人は主に美形キャラを演じる場合が多い。\r\n\r\n大の広島東洋カープファンで知られている。\r\n\r\n『スーパーロボット大戦Z』では自身が声を演じた参戦作品の主人公すら出ないにもかかわらず、敵一般兵役で声を演じている。寺田貴信プロデューサーによれば、これは本人から希望したという。また自身もハーケン・ブロウニング役で出演している『無限のフロンティアEXCEED』公式サイトで「声優界で緑川光の次にスパロボ作品をやりこんでいる」とコメントしている。\r\n\r\n仕事をする傍らで声優の専門学校や養成所などで、自らが講師として後進の育成も手掛けている。\r\n\r\n声優グランプリmobileで既婚であることを公表している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 164044,
+            "name": "B't X",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e3/56/164044_crt_69N4U.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/56/164044_crt_69N4U.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/56/164044_crt_69N4U.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e3/56/164044_crt_69N4U.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5410,
+                    "name": "堀川仁",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8f/b7/5410_prsn_2EjtJ.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/b7/5410_prsn_2EjtJ.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/b7/5410_prsn_2EjtJ.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8f/b7/5410_prsn_2EjtJ.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

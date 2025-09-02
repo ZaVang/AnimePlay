@@ -1,0 +1,73 @@
+{
+    "id": 36496,
+    "name": "篠田はじめ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/db/cd/36496_crt_ZjcxF.jpg?r=1469341515",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/cd/36496_crt_ZjcxF.jpg?r=1469341515",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/cd/36496_crt_ZjcxF.jpg?r=1469341515",
+        "grid": "https://lain.bgm.tv/pic/crt/g/db/cd/36496_crt_ZjcxF.jpg?r=1469341515"
+    },
+    "summary": "　　役職：モーションデザイナー\r\n　　21歳。ゆんと同期。ボーイッシュな外見と服装をしている。主要人物の中では唯一のモーション班だが、モーション班の席が空いていないため青葉たちと同じキャラ班のブースに座っている。\r\n　　趣味と実益と兼ねて、自身のデスクに多数のフィギュアと模造剣を飾っている。また、青葉が初めての後輩らしく、彼女に良いところを見せようとして失敗するおっちょこちょいな一面もある。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "篠田初"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "篠田一夏"
+                },
+                {
+                    "k": "日文名",
+                    "v": "篠田 はじめ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しのだ はじめ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shinoda Hajime"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月1日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "167cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 1,
+    "stat": {
+        "comments": 9,
+        "collects": 55
+    },
+    "anime_ids": [
+        208908,
+        150775
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "id": 28582,
+    "name": "新田美波",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0c/01/28582_crt_r3MEb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0c/01/28582_crt_r3MEb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0c/01/28582_crt_r3MEb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0c/01/28582_crt_r3MEb.jpg"
+    },
+    "summary": "新田美波是《偶像大师 灰姑娘女孩》系列中的女神系偶像。\r\n\r\n初登场于2012年5月14日追加「神戸地区」偶像。\r\n是一位19岁的在校大学生，喜欢去尽可能尝试各种各样的事。从事偶像活动也是她所想尝试的事之一。\r\n最大的兴趣是袋棍球与资格取得。在大学里加入了袋棍球部，似乎体育很好的样子。\r\n有着参加选美比赛的经验；在高中里也担任学生会职务；可谓一个文武双全的优等生角色。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "新田美波"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "新田 美波"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "にった みなみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nitta Minami"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月27日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "45kg"
+        },
+        {
+            "key": "BWH",
+            "value": "82/55/85"
+        },
+        {
+            "key": "年龄",
+            "value": "19岁"
+        },
+        {
+            "key": "出身地",
+            "value": "广岛"
+        },
+        {
+            "key": "兴趣",
+            "value": "袋棍球、资格取得"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 27,
+    "stat": {
+        "comments": 46,
+        "collects": 80
+    },
+    "anime_ids": [
+        130231
+    ]
+}

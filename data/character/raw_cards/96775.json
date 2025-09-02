@@ -1,0 +1,43 @@
+{
+    "id": 96775,
+    "name": "リン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f0/53/96775_crt_mKuVn.jpg?r=1622748756",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/53/96775_crt_mKuVn.jpg?r=1622748756",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/53/96775_crt_mKuVn.jpg?r=1622748756",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f0/53/96775_crt_mKuVn.jpg?r=1622748756"
+    },
+    "summary": "魔族が封じられてから８００年間修業を続けている、\r\n地球最強の戦闘力を持つ”最凶”韋駄天。\r\n骨折・流血上等の激しすぎる修行はハヤト以外の韋駄天は全員耐えられなかったが、本人は我関せず。\r\n師匠としてひたすらハヤトをしごき続ける日々を送る。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "琳"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://idaten-anime.com/character/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 16,
+        "collects": 45
+    },
+    "anime_ids": [
+        312723
+    ]
+}

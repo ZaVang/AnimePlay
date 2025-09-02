@@ -1,0 +1,64 @@
+{
+    "id": 27236,
+    "name": "坂木しずか",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fe/ea/27236_crt_NI6I3.jpg?r=1675248476",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/ea/27236_crt_NI6I3.jpg?r=1675248476",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/ea/27236_crt_NI6I3.jpg?r=1675248476",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fe/ea/27236_crt_NI6I3.jpg?r=1675248476"
+    },
+    "summary": "声優志望。あおいと学生時代、共にアニメを作っていた仲間。\r\n\r\n運よく声優事務所の赤鬼プロダクションに所属できたものの、デビューには至っていない。そのため自主トレーニングに励みつつ、あおい達行きつけの居酒屋でアルバイトに励む日々が続く。\r\n\r\n絵麻としずかからは「ずかちゃん」・みどりと美沙からは「ずか先輩」と呼ばれる",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "坂木静香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "坂木 しずか"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さかき しずか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakaki Shizuka"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ずかちゃん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "职业",
+            "value": "新人声优"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 49,
+        "collects": 306
+    },
+    "anime_ids": [
+        110467
+    ]
+}

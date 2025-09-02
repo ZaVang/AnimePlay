@@ -1,0 +1,62 @@
+{
+    "id": 278,
+    "name": "草摩夾",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/07/64/278_crt_OkTt5.jpg?r=1547825498",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/64/278_crt_OkTt5.jpg?r=1547825498",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/64/278_crt_OkTt5.jpg?r=1547825498",
+        "grid": "https://lain.bgm.tv/pic/crt/g/07/64/278_crt_OkTt5.jpg?r=1547825498"
+    },
+    "summary": "地元で受かった高校へは行かず、山で修行をしていた。その理由は、ライバル視する由希を倒すため。だが、草摩家当主の言いつけで紫呉の家に居候することとなり、さらには透達と同じ海原高校に編入させられてしまう。短気だが、根は優しい。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "草摩夹"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "そうま きょう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sōma Kyō"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "174cm"
+        },
+        {
+            "key": "体重",
+            "value": "57.5kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 8,
+        "collects": 35
+    },
+    "anime_ids": [
+        880,
+        315516,
+        291039
+    ]
+}

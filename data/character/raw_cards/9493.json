@@ -1,0 +1,61 @@
+{
+    "id": 9493,
+    "name": "古代進",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/11/2e/9493_crt_85555.jpg?r=1605193467",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/11/2e/9493_crt_85555.jpg?r=1605193467",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/11/2e/9493_crt_85555.jpg?r=1605193467",
+        "grid": "https://lain.bgm.tv/pic/crt/g/11/2e/9493_crt_85555.jpg?r=1605193467"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "古代进"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Derek Wildstar"
+                },
+                {
+                    "k": "日文名",
+                    "v": "古代進"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kodai Susumu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "7月7日"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 7,
+    "stat": {
+        "comments": 2,
+        "collects": 18
+    },
+    "anime_ids": [
+        54552,
+        10393
+    ]
+}

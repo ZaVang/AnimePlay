@@ -1,0 +1,44 @@
+{
+    "id": 55419,
+    "name": "マリー・アントワネット",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/49/4f/55419_crt_M7hc4.jpg?r=1738603206",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/4f/55419_crt_M7hc4.jpg?r=1738603206",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/4f/55419_crt_M7hc4.jpg?r=1738603206",
+        "grid": "https://lain.bgm.tv/pic/crt/g/49/4f/55419_crt_M7hc4.jpg?r=1738603206"
+    },
+    "summary": "オーストリアの女帝マリア・テレジアの娘。14歳でルイ16世の妃になるため、フランスにやってきた。\r\n\r\n美しく誇り高く、人を惹き付ける天性の魅力を持つが、フランス宮廷の窮屈さや、周囲の重圧から逃れようと奔放で贅沢な生活を送る。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "玛丽·安托瓦内特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Marie Antoinette"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 6
+    },
+    "anime_ids": [
+        12579
+    ]
+}

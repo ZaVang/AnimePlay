@@ -1,0 +1,73 @@
+{
+    "id": 57,
+    "name": "霧島佳乃",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1c/dd/57_crt_shVhz.jpg?r=1488788993",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/dd/57_crt_shVhz.jpg?r=1488788993",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/dd/57_crt_shVhz.jpg?r=1488788993",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1c/dd/57_crt_shVhz.jpg?r=1488788993"
+    },
+    "summary": "国崎往人在桥上追赶“土豆”时遇到的第二位女孩。右手上系著黄色丝带的开朗少女，她相信这样长大后就能使用魔法了。从小父母双亡，与在镇上开诊所的姐姐雾岛 圣一起生活。性格很单纯，也很开朗，自称是“空闲空闲星人一号！”（所以初见面就命名往人为“空闲空闲星人二号！”）是个动物爱好者，在学校是饲养委员，不善长做料理，跟流浪狗“土豆”十分友好，听得懂它说的话，最喜欢抱着“土豆”一起去散步。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雾岛佳乃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "きりしま かの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kirishima Kano"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月12日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "体重",
+            "value": "45kg"
+        },
+        {
+            "key": "BWH",
+            "value": "82/53/80"
+        },
+        {
+            "key": "声优",
+            "value": "岡本麻見→武田彩良（2021）"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 12,
+    "stat": {
+        "comments": 12,
+        "collects": 60
+    },
+    "anime_ids": [
+        234,
+        363880
+    ]
+}

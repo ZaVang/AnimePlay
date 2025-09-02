@@ -1,0 +1,44 @@
+{
+    "id": 124913,
+    "name": "剛大次郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c0/b5/124913_crt_u3WH4.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/b5/124913_crt_u3WH4.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/b5/124913_crt_u3WH4.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c0/b5/124913_crt_u3WH4.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "刚大次郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ごう だいじろう"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        37178
+    ]
+}

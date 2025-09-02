@@ -1,0 +1,55 @@
+{
+    "id": 46465,
+    "name": "ロキシー・ミグルディア・グレイラット",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fe/d5/46465_crt_RNQeO.jpg?r=1613151588",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/d5/46465_crt_RNQeO.jpg?r=1613151588",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/d5/46465_crt_RNQeO.jpg?r=1613151588",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fe/d5/46465_crt_RNQeO.jpg?r=1613151588"
+    },
+    "summary": "魔族「ミグルド族」の水王級魔術師。\r\n長命なミグルド族で、見た目はジト目に青髪の美少女だが、成人。ルディの魔法の家庭教師としてグレイラット家に招かれ、ルーデウスの師匠となった。\r\nフィットア領転移事件を受けて、パウロと共にベガリット大陸でいまだ行方不明のゼニスの捜索を続けている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "洛琪希·米格路迪亚·格雷拉特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Roxy Migurdia Greyrat"
+                },
+                {
+                    "k": "称号",
+                    "v": "教育之神"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "甲龙历373年"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 3,
+    "stat": {
+        "comments": 283,
+        "collects": 1719
+    },
+    "anime_ids": [
+        325585,
+        277554,
+        501963,
+        444557
+    ]
+}

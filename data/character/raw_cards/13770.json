@@ -1,0 +1,66 @@
+{
+    "id": 13770,
+    "name": "轟八千代",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/99/f4/13770_crt_pNr9Q.jpg?r=1611759169",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/f4/13770_crt_pNr9Q.jpg?r=1611759169",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/f4/13770_crt_pNr9Q.jpg?r=1611759169",
+        "grid": "https://lain.bgm.tv/pic/crt/g/99/f4/13770_crt_pNr9Q.jpg?r=1611759169"
+    },
+    "summary": "作为大和抚子身段要软，平时一直都表现出沉着的微笑。 虽然不擅长运动及学习但在重要的人面前烹调技术非常厉害。 得意的料理为圣代。 至于为什么会带刀本人，却一点都不在意。 虽然在重要的人面前是曾尽一切所能的类型，但时常会看不清楚周遭是个缺点。 未来的梦想是成为「漂亮的新娘」。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "轰八千代"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Todorok Yachiyo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月30日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "擅长科目",
+            "value": "烹饪课"
+        },
+        {
+            "key": "兴趣",
+            "value": "做料理"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 30,
+    "stat": {
+        "comments": 11,
+        "collects": 73
+    },
+    "anime_ids": [
+        20547,
+        4255,
+        110648
+    ]
+}

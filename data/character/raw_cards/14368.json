@@ -1,0 +1,56 @@
+{
+    "id": 14368,
+    "name": "田中ヨシタケ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e1/5a/14368_crt_Jyp3t.jpg?r=1421389072",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/5a/14368_crt_Jyp3t.jpg?r=1421389072",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/5a/14368_crt_Jyp3t.jpg?r=1421389072",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e1/5a/14368_crt_Jyp3t.jpg?r=1421389072"
+    },
+    "summary": "金发笨蛋。\r\n真田北高校（男校）的男子高中生。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "田中吉竹"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "田中吉武"
+                },
+                {
+                    "k": "日文名",
+                    "v": "田中 ヨシタケ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たなか よしたけ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tanaka Yoshitake"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 83
+    },
+    "anime_ids": [
+        24790
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": 14789,
+    "name": "関口巽",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0f/ab/14789_crt_etFo8.jpg?r=1437639140",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/ab/14789_crt_etFo8.jpg?r=1437639140",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/ab/14789_crt_etFo8.jpg?r=1437639140",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0f/ab/14789_crt_etFo8.jpg?r=1437639140"
+    },
+    "summary": "小说家，从中学时代开始就和中禅寺秋彦及榎木津认识，学生时代曾经有忧郁症的困扰。除了小说家以外，同时也以“楚木逸己”的笔名替糟粨杂志撰写文章。常常被榎木津礼二郎戏称为“猴子”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "关口巽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "関口 巽"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "せきぐち たつみ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 5
+    },
+    "anime_ids": [
+        916
+    ]
+}

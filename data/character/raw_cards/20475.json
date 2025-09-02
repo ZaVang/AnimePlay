@@ -1,0 +1,64 @@
+{
+    "id": 20475,
+    "name": "倉橋莉子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b0/91/20475_crt_7z161.jpg?r=1605806833",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/91/20475_crt_7z161.jpg?r=1605806833",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/91/20475_crt_7z161.jpg?r=1605806833",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b0/91/20475_crt_7z161.jpg?r=1605806833"
+    },
+    "summary": "通称「莉子」。私立藤崎女子中学2年级生，学生会会长助理。比男孩子还好胜好强，只要的朋友的请求一定会全力以赴的热心肠。因此被学生们称为「狂野帝」。不过不知道其本人如果知道来了这个绰号会怎么想？",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "仓桥莉子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "くらはし りこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kurahashi Riko"
+                },
+                {
+                    "k": "昵称",
+                    "v": "李狗"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月3日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 3,
+    "stat": {
+        "comments": 24,
+        "collects": 93
+    },
+    "anime_ids": [
+        58850
+    ]
+}

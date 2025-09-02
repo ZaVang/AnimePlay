@@ -1,0 +1,90 @@
+{
+    "id": 10243,
+    "name": "世界第一初恋",
+    "image_path": "data/images/anime/10243.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　08年《纯情罗曼史》之后，中村春菊的另一部大人气作品《世界第一的初恋》应运动画化。\r\n　　主人公小野寺律在高中时一直暗恋着嵯峨前辈，虽然下定决心要把喜欢的心情隐藏起来，但在一次偶然的机会下，他还是不小心向嵯峨前辈表白了。由于一个小鬼遮羞的小动作，使双方都误会了对方。十年过去了，小野寺已经完全成长为一个糟糕的大人了，他被分配到丸川书店少女漫画部当编辑，但这份工作却并不合他的胃口，而且上班第一天就被上司高野先生训斥。其实高野先生就是小野寺高中时一直暗恋的嵯峨前辈。他在高三的时候因为父母离异而改了姓氏，而小野寺律却没有认出他来……小野寺因为初恋的失败而不再相信初恋会有结果这种神话，高野政宗却自信满满地说出：“我会让你再次喜欢上我的！觉悟吧！”自信到自恋程度的蛮横主编X好强新人的爱情战争，就此展开！\r\n　　《世界第一的初恋》目前分为《小野寺律的场合》、《吉野千秋的场合》和《木佐翔太的场合》三个系列。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "BL",
+        "耽美",
+        "漫画改"
+    ],
+    "date": "2011-04-08",
+    "rating_rank": 1188,
+    "rating_score": 7.4,
+    "rating_total": 2615,
+    "main_character_ids": [
+        12944,
+        12945
+    ],
+    "main_characters": [
+        {
+            "id": 12944,
+            "name": "小野寺律",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/ab/12944_crt_8ddY8.jpg?r=1489513145",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/ab/12944_crt_8ddY8.jpg?r=1489513145",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/ab/12944_crt_8ddY8.jpg?r=1489513145",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/ab/12944_crt_8ddY8.jpg?r=1489513145"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4265,
+                    "name": "近藤隆",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4e/8e/4265_prsn_6DRwU.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/8e/4265_prsn_6DRwU.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/8e/4265_prsn_6DRwU.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4e/8e/4265_prsn_6DRwU.jpg"
+                    },
+                    "short_summary": "近藤 隆（こんどう たかし、1979年5月12日 - ）は、日本の男性声優、ナレーター、歌手である。紅屋25時、ビーボを経て、AMBERnote所属となった。愛知県岡崎市出身。\r\n\r\nアミューズメントメディア総合学院卒業。アニメ初主演である『BLACK CAT』のトレイン＝ハートネット役で知名度を上げる。それ以降、アニメへの出演が多い。\r\n\r\n2007年からは歌手活動もするようになり、音楽CDの発売が増えた。『家庭教師ヒットマンREBORN!』のキャラクター「雲雀恭弥VS六道骸」名義で発売したキャラクターソング兼、番組EDテーマ「Sakura addiction」（2種）がオリコンシングル週間ランキングでは2枚の合算集計ながら初登場7位、11月期月間ランキングでは11位と、男性声優によるキャラクターソングとしては異例のロングヒットを記録した。\r\n\r\nトレイン＝ハートネット役や雲雀恭弥役をはじめ、二枚目役やクールな役が多いが、『奏光のストレイン』のラルフ＝ウィーレックのような悪役も演じることがある。また、吹き替えの仕事でも多く活躍している。\r\n\r\n『BLACK CAT』での共演以来、福圓美里とは共演する機会が非常に多く、本人たちによれば、くされ縁化しているとのこと。『RADIO BLACK CAT』で共にパーソナリティをやっていたこともある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 12945,
+            "name": "高野政宗",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8c/e9/12945_crt_XhI99.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/e9/12945_crt_XhI99.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/e9/12945_crt_XhI99.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8c/e9/12945_crt_XhI99.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3861,
+                    "name": "小西克幸",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d9/dc/3861_prsn_eizt1.jpg?r=1661391127",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/dc/3861_prsn_eizt1.jpg?r=1661391127",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/dc/3861_prsn_eizt1.jpg?r=1661391127",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d9/dc/3861_prsn_eizt1.jpg?r=1661391127"
+                    },
+                    "short_summary": "日本の声優、ナレーター、舞台俳優。和歌山県和歌山市出身。賢プロダクション所属。関智一が座長を務めていることで知られる劇団「ヘロヘロQカムパニー」の副座長も務める。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

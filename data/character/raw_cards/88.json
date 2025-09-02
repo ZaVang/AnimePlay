@@ -1,0 +1,45 @@
+{
+    "id": 88,
+    "name": "ウィンリィ・ロックベル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a4/fe/88_crt_Lz1IA.jpg?r=1378928455",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/fe/88_crt_Lz1IA.jpg?r=1378928455",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/fe/88_crt_Lz1IA.jpg?r=1378928455",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a4/fe/88_crt_Lz1IA.jpg?r=1378928455"
+    },
+    "summary": "机械铠装备师。大陆历1899年出生，故事中段年龄15-16岁，淡金色马尾的美少女。\r\n\r\n温莉是一名善良、乐观、真诚的女性，在漫画第九话中首次登场，与祖母比拿可修复爱德与“伤疤男”斯卡战斗而损坏的机械铠。出生在利塞布尔，童年时双亲在伊修巴尔战争中医治伤员时被杀，从此随祖母在利塞布尔生活。自幼便认识爱德和阿尔，是兄弟二人珍视的伙伴和家人。温莉十分热爱机械和工具，擅长制造和修理机械铠，和祖母兼著名机械铠技师比拿可在家经营一家小商店。在爱力克兄弟人体炼成母亲失败后，由她们制作并修理爱德右臂和左腿的机械铠。 为了保证它们处于最佳状态，温莉会在必要时外出提供修理。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "温莉·洛克贝尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Winry Rockbell"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 36,
+        "collects": 251
+    },
+    "anime_ids": [
+        1428,
+        315
+    ]
+}

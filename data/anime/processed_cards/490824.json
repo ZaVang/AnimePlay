@@ -1,0 +1,185 @@
+{
+    "id": 490824,
+    "name": "哎咕岛消失的舔甜歌姬",
+    "image_path": "data/images/anime/490824.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "“エンドオブザワールド”は誰の手に……！？\r\nとある海にぷっかりと浮かぶ『エグー島（とう）』。\r\nこの島の唯一の娯楽は歌姫“エンドオブザワールド”。\r\n村人たちは日々、彼女の歌声に酔いしれていた。\r\nしかし、そんなのどかな時間は一瞬で壊れる。\r\n\r\n－歌姫の失踪－\r\n\r\nこの事件以来、島は『怒り』『疑心』『不安』で溢れてしまう。\r\n\r\nそして、それぞれの思惑が動き始める……。\r\n\r\n“エンドオブザワールド”を巡る、ペロペロ大戦争！\r\nその運命を握るのは……、伝説の遺産『エグミレガシー』",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "悬疑",
+        "TV",
+        "日本",
+        "奇幻",
+        "原创"
+    ],
+    "date": "2024-07-09",
+    "rating_rank": 1859,
+    "rating_score": 7.2,
+    "rating_total": 3226,
+    "main_character_ids": [
+        160989,
+        160990,
+        160991,
+        160992,
+        160993
+    ],
+    "main_characters": [
+        {
+            "id": 160989,
+            "name": "レジェンダリー・ファイナル・クライマックス・ボム",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/39/86/160989_crt_hIKcC.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/86/160989_crt_hIKcC.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/86/160989_crt_hIKcC.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/39/86/160989_crt_hIKcC.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5872,
+                    "name": "江口拓也",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f6/f1/5872_prsn_d0uhD.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/f1/5872_prsn_d0uhD.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/f1/5872_prsn_d0uhD.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f6/f1/5872_prsn_d0uhD.jpg"
+                    },
+                    "short_summary": "江口拓也（1987年5月22日－），日本男性配音演员，出身于茨城县。目前隶属于81 Produce。\r\n\r\n毕业自日本工学院専门学校。第1回81竞试合格者。\r\n2012年获得第6届新人男声优奖。\r\n和木村良平、代永翼组成团体“Trignal”（隶属于Kiramune）共同主持广播“Trignalのキラキラ☆ビートＲ”。\r\n2011年8月和小野友树组成团体“Teamゆーたく”。\r\n对咖哩饭有异常的热爱，曾经有一周吃五次咖哩的经验，也常在推特上PO有关咖哩的推文。\r\n认为自己是M，但被杉田智和评论为“披着M皮的S”。\r\n不管是在广播还是见面会都很容易被前辈捉弄，就连跟同辈的声优也被照样捉弄。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 160990,
+            "name": "エンドオブザワールド",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4e/20/160990_crt_43z8j.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/20/160990_crt_43z8j.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/20/160990_crt_43z8j.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4e/20/160990_crt_43z8j.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13684,
+                    "name": "青山吉能",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6c/00/13684_prsn_vEz31.jpg?r=1695817179",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/00/13684_prsn_vEz31.jpg?r=1695817179",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/00/13684_prsn_vEz31.jpg?r=1695817179",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6c/00/13684_prsn_vEz31.jpg?r=1695817179"
+                    },
+                    "short_summary": "青山 吉能（あおやま よしの、1996年5月15日 - ）は、日本の女性声優。81プロデュースとエイベックス・ピクチャーズに所属。熊本県出身。血液型はA型。\r\n\r\n2012年に開催された、avex×81produce「Wake Up, Girls! AUDITION」第2回アニソン・ヴォーカルオーディションに合格。\r\n2013年4月に「Wake Up, Girls!」が結成され、同年7月から主な活動を開始するが本人は上京せず、熊本から都内や地方へ行っていた。\r\n2014年 には「Wake Up, Girls!」のメンバーとして全国ツアー、Animelo Summer Liveへの出演、幕張メッセで約5000人もの観客を集めた単独ライブ等を成功させる。また、地元のFMラジオで初の個人の冠番組を担当した。\r\n2015年、第9回声優アワード特別賞をWake Up, Girls!として受賞。3月には大学に合格し上京することを発表した。\r\n2016年、小林竜之、澁谷梓希、若井友希、吉岡茉祐と「D-selections」を結成。2016年4月から放送する、テレビアニメ『ハンドレッド』のオープニングテーマ『BLOODRED』を歌唱する。\r\n2017年、テレビアニメ『恋愛暴君』におけるメインヒロインの一人、グリを演じる。\r\n\r\n中学一年生の時に自分の取柄は声しかないと思っていた青山吉能は、その声を活かして頑張ろうと第1回アニソン・ヴォーカルオーディションやエリーを探せ! ミルキィホームズ 声優オーディションなど数多くのオーディションを受ける。東日本大震災の発生後は東北地方のために熊本県で何か出来ないかと思いオーディション受けていた。「avex×81produce Wake Up, Girls! AUDITION」第2回アニソン・ヴォーカルオーディションで初めて最終選考まで残り、そのまま合格。以降はWake Up, Girls!として活動しながら声優を続けている。\r\n嫌いなものは苺。特技は合唱、書道、スキー。スキーにおいては、国体冬季大会にジャイアントスラロームで出場している。また、2度の「ソロでイベント、やらせてください!」ではピアノ弾き語りも披露した。自分の好きな声を皆さんに聞いてもらえることが幸せだと考えていて、声優であることに拘りがあり、監督の山本寛に対して「私たちは声優です」と発言したこともある。\r\n自他ともに認めるアニメオタクで、特にSAMURAI DEEPER KYO、PSYCHO-PASSについては何度もブログやラジオで語っている。また、他の声優も好きであり早見沙織を多く話題に取り挙げていて、ラジオのコーナー内で「私の好きな早見沙織さんベスト3」というテーマでトークをすることもあった。2014年に開催されたアニメJAMで念願の共演を果たした。ゲームに嵌りやすく、正月や自身の誕生日を白猫プロジェクトプレイ中にいつのまにか迎えていた程である。\r\n家族は兄が1人、姉が2人で四人兄妹の末っ子。吉能の「吉」は父から、「能」は伊能忠敬から名前に使われた。父は吉能のゲームボーイアドバンスを膝で割ったことがあるほどの厳格な性格で、吉能が上京する際に大学への進学を決意したのも、このままでは上京を許してもらえないと判断したためである。\r\n家族以外の交友関係では、Wake Up, Girls!のメンバーとは自宅に泊めあう仲である。しかし、吉岡茉祐とは一度衝突したことがあり、その顛末はアニメWake Up, Girls!8話の七瀬佳乃と島田真夢のストーリーに反映されている。島ゆいかとは小学校の同級生。Wake Up, Girls!の先輩にあたるi☆Risのファンであると同時にメンバーの一人である澁谷梓希と交流が深く、2015年の誕生日には洋服をプレゼントされ電話も貰っている。自身のラジオである青山吉能 聞いとっと!?よしのモン。・*・:≡(　ε:)のディレクターはラジオが終了した後も青山吉能によるツイッター企画に参加していたり、イベントに現れたりしている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 160991,
+            "name": "うっかりハチベー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3f/27/160991_crt_0LRg0.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/27/160991_crt_0LRg0.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/27/160991_crt_0LRg0.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3f/27/160991_crt_0LRg0.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 14604,
+                    "name": "斉藤壮馬",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8c/e3/14604_prsn_kRPr7.jpg?r=1541497424",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/e3/14604_prsn_kRPr7.jpg?r=1541497424",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/e3/14604_prsn_kRPr7.jpg?r=1541497424",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8c/e3/14604_prsn_kRPr7.jpg?r=1541497424"
+                    },
+                    "short_summary": "高校生活に入って環境の変化に馴染めず、しばらく学校に行っていなかった時期があった。自宅で映画やアニメを見て過ごす時間の中で、『ぼくらの』の石田彰の演技をきっかけに、画面の「向こう側」への憧れを抱いていったという。\r\n2008年に第2回81オーディションに参加し、優秀賞を受賞。\r\n2009年に行われた第33回全国高等学校総合文化祭において、朗読部門にて審査員特別賞を受賞。\r\n高校卒業後、早稲田大学文学部に進学。大学生活に加え、声優の養成所に通っての練習、仕事、さらに慣れない一人暮らしなど、全てをバランス良く続けられなくなったと判断したため、一旦学業に専念し、大学3年の時養成所に通い直した。\r\n大学での勉強が一段落してきた大学4年の頃、声優の仕事を本格的に始めた。2014年春より放送されたテレビアニメ『ハイキュー!!』にて山口忠役を務め注目を集める。同年夏に放送された『アカメが斬る!』のタツミ役、『残響のテロル』のツエルブ（久見冬二）役で初主演を果たす。\r\n2015年、第9回声優アワード新人男優賞を受賞。\r\n2017年、ソロアーティストとしてSACRA MUSICよりデビュー。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 160992,
+            "name": "ゴールデンレトリーバー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d8/7c/160992_crt_3B3mq.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/7c/160992_crt_3B3mq.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/7c/160992_crt_3B3mq.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d8/7c/160992_crt_3B3mq.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10035,
+                    "name": "芹澤優",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/73/98/10035_prsn_czi9z.jpg?r=1688802903",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/98/10035_prsn_czi9z.jpg?r=1688802903",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/98/10035_prsn_czi9z.jpg?r=1688802903",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/73/98/10035_prsn_czi9z.jpg?r=1688802903"
+                    },
+                    "short_summary": "ニックネーム：ゆう\r\nイメージカラー：ブルー\r\n特技：早口言葉\r\n趣味：料理\r\n好きなアニソン：「ガーネット」／奥華子さん\r\n将来の夢：声優・芹澤優として世界中で歌と\r\nセリフを入れ混ぜた 最高のLIVEをすることです。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 160993,
+            "name": "招かれざる客",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2f/66/160993_crt_qgSzQ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2f/66/160993_crt_qgSzQ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2f/66/160993_crt_qgSzQ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2f/66/160993_crt_qgSzQ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 16334,
+                    "name": "西山宏太朗",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/39/3a/16334_prsn_4mmmJ.jpg?r=1651027528",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/3a/16334_prsn_4mmmJ.jpg?r=1651027528",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/3a/16334_prsn_4mmmJ.jpg?r=1651027528",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/39/3a/16334_prsn_4mmmJ.jpg?r=1651027528"
+                    },
+                    "short_summary": "西山 宏太朗（にしやま こうたろう、1991年10月11日 - ）は、日本の男性声優、歌手。神奈川県出身。81プロデュース所属。\r\n\r\n小学6年生の頃から「将来は声を使った仕事をしたい」と1番は声優、2番はアナウンサー、3番は漫画家になりたいと文集に書いた。中学生の頃、友人からも「声優になったら?」と勧められた。当時はまだ声変わり前で「特徴的な高い声」だったため、「自分でももしかしていけるかな」と思い、声優や演技が学べるクラーク記念国際高等学校クリエイティブコース（声優・放送専攻）に進学する。\r\n2009年、第3回81オーディションに参加、特別賞を受賞し、養成所に入る。2011年5月より81プロデュースに所属となった。\r\n2015年7月16日、入江玲於奈、谷口悠の3人からなるエンターテイメント集団「大井町クリームソーダ」を発足。西山は大井町クリームソーダ2号。\r\n2018年、第12回声優アワードにて新人男優賞を受賞。\r\n\r\n中学はバスケットボール部に所属。高校は部活に入らずアルバイトをした。最初は牛丼屋、その後にドラッグストア、コンビニ。それと並行して塾の事務作業をし、塾の講師が紙に書いた問題をWordやExcelを使ってデータ化処理作業をしていた。\r\n年の離れた姉と兄がいる。\r\n超!A&G+ A&G ARTIST ZONE 2h で一緒にアシスタント・パーソナリティーをしていた入江玲於奈とは仲が良く何でも話せる。また同じ声優の鈴木裕斗とも、こまめに連絡をとっており、近況報告やお互いの意見交換がすごく勉強になり、客観視した大人っぽい意見をくれるので、相談事をすることが多い。尊敬している先輩に柿原徹也を挙げており、『美男高校地球防衛部LOVE!』の鬼怒川熱史役が決まった時、激励をされ支えになったという。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

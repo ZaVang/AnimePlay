@@ -1,0 +1,49 @@
+{
+    "id": 39826,
+    "name": "織田信長",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/cc/c6/39826_crt_or1r3.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/c6/39826_crt_or1r3.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/c6/39826_crt_or1r3.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cc/c6/39826_crt_or1r3.jpg"
+    },
+    "summary": "戦国の時代に現れた風雲児。\r\n誰もが恐れる男。弱点は酒（すぐ酔う）、好物は甘い物。乱世のない日本を目指す。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "织田信长"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "おだ のぶなが"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Oda Nobunaga"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 7
+    },
+    "anime_ids": [
+        170242,
+        209839
+    ]
+}

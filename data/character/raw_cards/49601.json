@@ -1,0 +1,56 @@
+{
+    "id": 49601,
+    "name": "レグ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/36/dc/49601_crt_PfqEH.jpg?r=1515128242",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/dc/49601_crt_PfqEH.jpg?r=1515128242",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/dc/49601_crt_PfqEH.jpg?r=1515128242",
+        "grid": "https://lain.bgm.tv/pic/crt/g/36/dc/49601_crt_PfqEH.jpg?r=1515128242"
+    },
+    "summary": "登场于第2话。身份不明，自己也失去记忆的机器人，被莉可命名。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雷格"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "雷古"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Reg"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "发色",
+            "value": "黑发"
+        },
+        {
+            "key": "瞳色",
+            "value": "金瞳"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 56,
+        "collects": 154
+    },
+    "anime_ids": [
+        298477,
+        203526
+    ]
+}

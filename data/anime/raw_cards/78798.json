@@ -1,0 +1,277 @@
+{
+    "id": 78798,
+    "type": 2,
+    "name": "はじめの一歩 Rising",
+    "name_cn": "第一神拳 Rising",
+    "summary": "",
+    "nsfw": false,
+    "locked": false,
+    "date": "2013-10-05",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/0d/44/78798_oZhjv.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/0d/44/78798_oZhjv.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/0d/44/78798_oZhjv.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/0d/44/78798_oZhjv.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/0d/44/78798_oZhjv.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "第一神拳 Rising"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Hajime no Ippo: The Fighting! - Rising",
+                    "k": null
+                },
+                {
+                    "v": "hni s3, hni3",
+                    "k": null
+                },
+                {
+                    "v": "第一神拳 第三季",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "25"
+        },
+        {
+            "key": "放送开始",
+            "value": "2013年10月5日"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.ntv.co.jp/ippo"
+        },
+        {
+            "key": "播放结束",
+            "value": "2014年3月29日"
+        },
+        {
+            "key": "导演",
+            "value": "宍戸淳、西村聡"
+        },
+        {
+            "key": "原作",
+            "value": "森川ジョージ"
+        },
+        {
+            "key": "人物设定",
+            "value": "杉浦幸次"
+        }
+    ],
+    "volumes": 0,
+    "eps": 25,
+    "total_episodes": 25,
+    "rating": {
+        "rank": 752,
+        "total": 229,
+        "count": {
+            "one": 0,
+            "two": 0,
+            "three": 2,
+            "four": 2,
+            "five": 6,
+            "six": 22,
+            "seven": 58,
+            "eight": 93,
+            "nine": 29,
+            "ten": 17
+        },
+        "score": 7.7
+    },
+    "collection": {
+        "wish": 206,
+        "collect": 346,
+        "doing": 36,
+        "on_hold": 42,
+        "dropped": 49
+    },
+    "tags": [
+        {
+            "name": "MADHouse",
+            "count": 49
+        },
+        {
+            "name": "热血",
+            "count": 42
+        },
+        {
+            "name": "TV",
+            "count": 40
+        },
+        {
+            "name": "拳击",
+            "count": 33
+        },
+        {
+            "name": "体育",
+            "count": 31
+        },
+        {
+            "name": "2013",
+            "count": 28
+        },
+        {
+            "name": "2013年10月",
+            "count": 25
+        },
+        {
+            "name": "MAPPA",
+            "count": 21
+        },
+        {
+            "name": "格斗",
+            "count": 19
+        },
+        {
+            "name": "漫改",
+            "count": 15
+        },
+        {
+            "name": "漫画改",
+            "count": 9
+        },
+        {
+            "name": "搞笑",
+            "count": 7
+        },
+        {
+            "name": "第一神拳",
+            "count": 6
+        },
+        {
+            "name": "土2535",
+            "count": 4
+        },
+        {
+            "name": "一步神拳",
+            "count": 4
+        },
+        {
+            "name": "运动",
+            "count": 4
+        },
+        {
+            "name": "日本",
+            "count": 4
+        },
+        {
+            "name": "2013年",
+            "count": 3
+        },
+        {
+            "name": "喜安浩平",
+            "count": 2
+        },
+        {
+            "name": "西村聡",
+            "count": 2
+        },
+        {
+            "name": "半年番",
+            "count": 2
+        },
+        {
+            "name": "竞技",
+            "count": 2
+        },
+        {
+            "name": "宍戸淳",
+            "count": 2
+        },
+        {
+            "name": "2013fall",
+            "count": 1
+        },
+        {
+            "name": "大长篇",
+            "count": 1
+        },
+        {
+            "name": "rising",
+            "count": 1
+        },
+        {
+            "name": "竞技运动",
+            "count": 1
+        },
+        {
+            "name": "半年番組",
+            "count": 1
+        },
+        {
+            "name": "頂的",
+            "count": 1
+        },
+        {
+            "name": "TV（集数1-49）",
+            "count": 1
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        1971
+    ],
+    "main_characters": [
+        {
+            "id": 1971,
+            "name": "幕之内一歩",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/65/95/1971_crt_ulnp9.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/95/1971_crt_ulnp9.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/95/1971_crt_ulnp9.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/65/95/1971_crt_ulnp9.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4562,
+                    "name": "喜安浩平",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fd/32/4562_prsn_L0lFg.jpg?r=1718790295",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/32/4562_prsn_L0lFg.jpg?r=1718790295",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/32/4562_prsn_L0lFg.jpg?r=1718790295",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fd/32/4562_prsn_L0lFg.jpg?r=1718790295"
+                    },
+                    "short_summary": "【ナイロン100℃とブルドッキングヘッドロックの劇団員】\r\n演劇、映画、テレビの脚本。舞台演出。俳優。声優。芸術家志望。",
+                    "locked": false
+                },
+                {
+                    "id": 9237,
+                    "name": "國立幸",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/58/dd/9237_prsn_PapJ3.jpg?r=1489765944",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/dd/9237_prsn_PapJ3.jpg?r=1489765944",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/dd/9237_prsn_PapJ3.jpg?r=1489765944",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/58/dd/9237_prsn_PapJ3.jpg?r=1489765944"
+                    },
+                    "short_summary": "日本女性演员、声优，在2005年以声优主役身份出演《银牙WEED》主角Weed。主要作品《今天开始做魔王！》、《魔法咪路咪路》等。\r\n2004年出道。\r\n2005年以声优主役身份出演《银牙WEED》主角Weed。\r\n05年后一直客串一些动画里的小角色。\r\n2009年以声优身份出演《家庭教师》中弗兰一角，因其独特的声线和对角色精彩的演绎而受到了许多家教迷的关注，由此达到了自以声优身份出道以来第一次真正令人备受关注的成功。\r\n2011年以《战国少女~桃色Paradox~》和同作品内的明坂聪美，伊濑茉莉也，持月玲依组成天下取り队组合，并且在2011年5月18号发布第一张CD《阳炎-kagerou-》。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

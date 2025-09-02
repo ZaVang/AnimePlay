@@ -1,0 +1,92 @@
+{
+    "id": 130668,
+    "name": "海老塚智",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ca/26/130668_crt_G7Auy.jpg?r=1716195071",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/26/130668_crt_G7Auy.jpg?r=1716195071",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/26/130668_crt_G7Auy.jpg?r=1716195071",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ca/26/130668_crt_G7Auy.jpg?r=1716195071"
+    },
+    "summary": "元々は地元でも有名なお金持ち一家のお嬢様。今はルームシェアでアパートに暮らしている。冷たく世の中を斜めに見ている。ハリネズミのごとく警戒心バリバリであまり心を開かない。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "海老冢智"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "海老塚 智"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "えびづか とも"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "TOMO EBIZUKA"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月22日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "148cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://girls-band-cry.com/character/tomo/"
+        },
+        {
+            "key": "来自",
+            "value": "トゲナシトゲアリ"
+        },
+        {
+            "key": "擅长",
+            "value": "キーボード"
+        },
+        {
+            "key": "年龄",
+            "value": "16岁"
+        },
+        {
+            "key": "出身",
+            "value": "宮城県仙台市 出身"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "シュークリーム 白米 お茶漬け 梅干し"
+        },
+        {
+            "key": "爱好",
+            "value": "＃ヤモリ ＃爬虫類の飼育"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 22,
+    "stat": {
+        "comments": 109,
+        "collects": 340
+    },
+    "anime_ids": [
+        431767
+    ]
+}

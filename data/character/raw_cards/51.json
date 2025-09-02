@@ -1,0 +1,57 @@
+{
+    "id": 51,
+    "name": "古泉一樹",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/49/26/51_crt_6SsQy.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/26/51_crt_6SsQy.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/26/51_crt_6SsQy.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/49/26/51_crt_6SsQy.jpg"
+    },
+    "summary": "故事开始时为神秘的转学生，就读一年九班。容貌能称帅气。被春日拐到SOS团，并被春日任命为SOS团的副团长。在故事中是类似智囊、总是带着微笑的角色。根据当时心情的不同，古泉脸上的笑容会有很微妙的差别。而他脸上的“人畜无害”的笑容，亦是古泉一树最突出的人物特色。喜欢玩各式各样的桌上游戏，并经常带不同种类的桌上游戏到社团教室和阿虚玩，但技术都十分烂。喜欢对阿虚说哲学理论（多半和凉宫春日有关）。\r\n\r\n真实身份是超能力组织“机关（Agency）”的一员，是一个只能在闭锁空间中发挥超能力的超能力者，平时一样也是看不出任何特殊之处的普通人。由于工作与凉宫春日的精神不安定而做成的闭锁空间有关，所以对凉宫春日的精神状态尤其关心，并自称是研究凉宫春日精神状态的专家。在《凉宫春日的消失》中，古泉是唯一一个仍待在春日身边的SOS团团员，并喜欢上了春日。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "古泉一树"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "こいずみ いつき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Koizumi Itsuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月4日（游戏内设定）"
+        },
+        {
+            "key": "身高",
+            "value": "178cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 4,
+    "stat": {
+        "comments": 34,
+        "collects": 143
+    },
+    "anime_ids": [
+        485,
+        1606
+    ]
+}

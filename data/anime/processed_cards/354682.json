@@ -1,0 +1,91 @@
+{
+    "id": 354682,
+    "name": "小鸟之翼 高尔夫少女",
+    "image_path": "data/images/anime/354682.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "欧洲的某个国家，纳弗雷斯。\r\n拥有天才高尔夫球技的伊芙为了生活，每天都靠赌高尔夫赚钱。\r\n有一天，她和大企业的千金、高尔夫精英天鹫葵发生了命运般的邂逅。\r\n生活在完全不同世界的两个天才。\r\n仅仅一杆，就射穿了彼此的内心。\r\n彩虹色子弹“Rainbow·Bullet”伊芙，\r\n与压力无缘，纯粹享受高尔夫的“天真无邪的暴君”葵。\r\n二人互相吸引，互相影响，互相改变——\r\n才华与才华碰撞的高尔夫女孩的故事。\r\n世界上首个以女子高尔夫为主题的原创动画，开幕！\r\n——“展翅高飞，走向世界！”",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "原创",
+        "运动"
+    ],
+    "date": "2022-04-05",
+    "rating_rank": 1731,
+    "rating_score": 7.2,
+    "rating_total": 1429,
+    "main_character_ids": [
+        104613,
+        104614
+    ],
+    "main_characters": [
+        {
+            "id": 104613,
+            "name": "イブ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a8/f4/104613_crt_o6dRX.jpg?r=1649878339",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a8/f4/104613_crt_o6dRX.jpg?r=1649878339",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a8/f4/104613_crt_o6dRX.jpg?r=1649878339",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a8/f4/104613_crt_o6dRX.jpg?r=1649878339"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19339,
+                    "name": "鬼頭明里",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a1/78/19339_prsn_3Dg35.jpg?r=1694799715"
+                    },
+                    "short_summary": "鬼頭明里（きとう あかり）は、日本の女性声優である。ラクーンドッグ所属。\r\nあだ名は「あかりん」。\r\n\r\n10月16日生まれ、愛知県出身、血液型B型、153cm。プロ・フィット声優養成所を経て、現事務所に2015年4月から所属。\r\n趣味は絵を描くこと、歌うこと。特技は絵を描くこと、歌うこと、湯切り。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 104614,
+            "name": "天鷲葵",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5e/01/104614_crt_vH6H5.jpg?r=1642353789",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/01/104614_crt_vH6H5.jpg?r=1642353789",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/01/104614_crt_vH6H5.jpg?r=1642353789",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5e/01/104614_crt_vH6H5.jpg?r=1642353789"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5766,
+                    "name": "瀬戸麻沙美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/b7/5766_prsn_6q644.jpg"
+                    },
+                    "short_summary": "中学生2年生の時、偶然視聴したアニメ『D.Gray-man』の主人公、アレン・ウォーカー（声：小林沙苗）に魅せられ、キャラクターだけでなく演者の声優にも興味が湧き、声優を志す。高校在学中の2009年に声優事務所のオーディションを受験、翌2010年より声優活動を開始する。\r\n2010年、初めて受けたオーディションでテレビアニメ『放浪息子』（2011年）の準主人公 \"高槻よしの\" 役に抜擢される。彼女にとって初仕事の収録だったが、演技などに関して事前の指示はほとんど必要としなかったと監督のあおきえいは述べている。\r\n2011年、日本テレビ系テレビアニメ『ちはやふる』で主演（ \"綾瀬千早\" 役）とエンディング主題歌の歌唱を担当。同局系列のテレビアニメ『HUNTER×HUNTER』の \"クラピカ\" 役オーディションに参加していた瀬戸の演技が『ちはやふる』番組関係者の目に留まり、改めて \"綾瀬千早\" 役のオーディションを行ったところ満場一致で瀬戸の起用が決定した。\r\n2015年4月1日付けで、シグマ・セブンeからシグマ・セブンへ移動。\r\n2021年11月1日よりStarCrewへ移籍。あわせて公式Twitterアカウントを開設した。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

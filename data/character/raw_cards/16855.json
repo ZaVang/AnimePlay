@@ -1,0 +1,68 @@
+{
+    "id": 16855,
+    "name": "白鍾沙羅",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bd/e7/16855_crt_N3nWO.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/e7/16855_crt_N3nWO.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/e7/16855_crt_N3nWO.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bd/e7/16855_crt_N3nWO.jpg"
+    },
+    "summary": "脾气倔强,心地善良!典型的傲娇女，容易被误解成沙罗才应该是姐姐。对姐姐双树十分关心\r\n\r\n•原作\r\n（待补充）\r\n•双恋\r\n（待补充）\r\n•双恋Alternative\r\n　　年龄：15岁、生日：11月23日、血型：AB型\r\n　　性格开朗活泼，运动神经很好，可是做事不顾后果，任何事也希望自己独自解决。虽然身为妹妹，但由于双树身体较虚弱，因此决定要保护双树。自两年前来到双叶侦探事务所后，一直担任恋太郎的助手，并与恋太郎半处于同居状态。喜欢恋太郎。有着绿色的眼睛及一头小麦色长发。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "白钟沙罗"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しろがね さら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shirogane Sara"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "151cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://zh.wikipedia.org/wiki/%E9%9B%99%E6%88%802"
+        },
+        {
+            "key": "生日（原作）",
+            "value": "8月8日"
+        },
+        {
+            "key": "生日（オルタナティブ）",
+            "value": "11月23日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 37
+    },
+    "anime_ids": [
+        2643
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 73336,
+    "name": "虎杖悠仁",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b4/cd/73336_crt_XHJ7U.jpg?r=1608836932",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/cd/73336_crt_XHJ7U.jpg?r=1608836932",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/cd/73336_crt_XHJ7U.jpg?r=1608836932",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b4/cd/73336_crt_XHJ7U.jpg?r=1608836932"
+    },
+    "summary": "本作主人公，爱看电视，常做些微妙的模仿，拿手戏很多，体脂率极低，有极强的运动神经，同时有超乎常人的身体能力可以将铅球扔向运动场的另一端并把笼门框打坏。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "虎杖悠仁"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Yuji Itadori"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いたどり ゆうじ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Itadori Yūji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月20日"
+        },
+        {
+            "key": "身高",
+            "value": "173cm"
+        },
+        {
+            "key": "体重",
+            "value": "80kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 20,
+    "stat": {
+        "comments": 22,
+        "collects": 78
+    },
+    "anime_ids": [
+        369304
+    ]
+}

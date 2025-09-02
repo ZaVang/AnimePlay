@@ -1,0 +1,44 @@
+{
+    "id": 32976,
+    "name": "ヤモト・コキ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/48/37/32976_crt_3qY3Z.jpg?r=1676033357",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/37/32976_crt_3qY3Z.jpg?r=1676033357",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/37/32976_crt_3qY3Z.jpg?r=1676033357",
+        "grid": "https://lain.bgm.tv/pic/crt/g/48/37/32976_crt_3qY3Z.jpg?r=1676033357"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "矢本小季"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "yamoto koki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 36,
+        "collects": 148
+    },
+    "anime_ids": [
+        175137
+    ]
+}

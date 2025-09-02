@@ -1,0 +1,57 @@
+{
+    "id": 4043,
+    "name": "魁！！库洛马迪高校",
+    "image_path": "data/images/anime/4043.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "        周刊少年magazine上连载中的最凶搞笑漫画『魁！！クロマティ高校』决定动画化！在化不可能为可能的クロマティ高校里，无论从哪方面而言都是危险分子的家伙们正在无差别胡闹！真诚而正派（？）的主人公神山、白痴中的白痴林田、唯一的逗哏角色前田、不良机器人高中生麦加泽、打架厉害但乘坐交通工具却意外很不在行的竹之内、打算统治全日本高中的北斗、迷之大猩猩般的大叔弗雷迪……唯我独尊！已经不能阻挡他们了！？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2003-10-02",
+    "rating_rank": 1046,
+    "rating_score": 7.5,
+    "rating_total": 417,
+    "main_character_ids": [
+        18332
+    ],
+    "main_characters": [
+        {
+            "id": 18332,
+            "name": "神山高志",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fa/07/18332_crt_RZKjw.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/07/18332_crt_RZKjw.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/07/18332_crt_RZKjw.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fa/07/18332_crt_RZKjw.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4015,
+                    "name": "櫻井孝宏",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/06/29/4015_prsn_4TZox.jpg?r=1638448222"
+                    },
+                    "short_summary": "爱知县冈崎市老家的本业是米店，店名为“樱井米谷店”，在当地小有名气。\r\n初中时的一个冬天，怕冷的他擅自把酒精灯里的液体倒在理科实验室的桌子上，点起火取暖，引响了火灾报警器，被赶来的老师狠狠教训了一顿。于是在老师的国语课上捣乱报复，夸张地朗读课文，实在听不过去的老师求他：“拜托，别念得跟声优似的好不好！”——这话对那时的樱井冲击很大，给他留下了声优不过是连小孩子都做得来的简单工作的印象。所以高中毕业后，乐得找轻松的樱井选择进入东京的声优专科学校。待迈入这一行，他才吐血地发现，且不说成为佼佼者，就是普通从业者也得掌握高超的专业技巧。\r\n2005年8月《最终幻想VII：降临之子》于第62届威尼斯影展参展。樱井以担任主角配音的身份，成为继山寺宏一后第2位踏上星光大道的日本籍声优。\r\n虽然戴着眼镜，可是樱井二眼视力皆为2.0，植田佳奈笑称那是“骗人眼镜”。那付眼镜的意义是“梦想与希望与对声迷们的爱”。\r\n最初的错误是BL DRAMA制作社Inter communications（inter桑）的一张drama的BK上打成了樱井考宏，之后《无法逃离的背叛》某个活动的官方网站上亦把樱井孝宏的名字写成“樱井考宏”，所以有昵称考哥，而并非是他的名字中的“孝”字与“考”字很像才有此外号。\r\n桜井(sakurai)，桜井さん（sakurai san），sakura i san，樱13",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

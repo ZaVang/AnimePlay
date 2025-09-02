@@ -1,0 +1,52 @@
+{
+    "id": 23959,
+    "name": "ヴァルガーヴ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d8/2c/23959_crt_o0iRz.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/2c/23959_crt_o0iRz.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/2c/23959_crt_o0iRz.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d8/2c/23959_crt_o0iRz.jpg"
+    },
+    "summary": "TRY中登场的角色，古代龙族的仅存后裔，对毁灭古代龙族的黄金龙族感到极度憎恨，濒死之际被魔龙王加布所救，并且赐予魔族之力，从此效忠于加布之下。之后得知加布死讯后，瓦尔加布立誓要为加布大人报仇，而不断寻找莉娜一行人，却也遇上黄金龙族的女巫菲莉亚。最后与黑暗星一同被净化，回到幼龙的型态并成为菲利亚的养子。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "瓦尔加布"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Valgarv"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net zh.wikipedia.org"
+        },
+        {
+            "key": "CV",
+            "value": "高木涉／台湾：符爽"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 3
+    },
+    "anime_ids": [
+        2097
+    ]
+}

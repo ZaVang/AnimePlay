@@ -1,0 +1,64 @@
+{
+    "id": 167,
+    "name": "古茂田考美",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/58/78/167_7ab84fb43402106c575658472fa_It2S8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/78/167_7ab84fb43402106c575658472fa_It2S8.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/78/167_7ab84fb43402106c575658472fa_It2S8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/58/78/167_7ab84fb43402106c575658472fa_It2S8.jpg"
+    },
+    "summary": "古茂田考美\r\n(こもだ たかみ)\r\n通称：コモ\r\n(声：能登麻美子)\r\n中学１年",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "古茂田孝美"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こもだ たかみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Komoda Takami"
+                },
+                {
+                    "k": "昵称",
+                    "v": "コモ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "155"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 3
+    },
+    "anime_ids": [
+        467
+    ]
+}

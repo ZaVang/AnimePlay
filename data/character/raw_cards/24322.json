@@ -1,0 +1,64 @@
+{
+    "id": 24322,
+    "name": "日向翔陽",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/03/78/24322_crt_zuFs2.jpg?r=1411356315",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/78/24322_crt_zuFs2.jpg?r=1411356315",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/78/24322_crt_zuFs2.jpg?r=1411356315",
+        "grid": "https://lain.bgm.tv/pic/crt/g/03/78/24322_crt_zuFs2.jpg?r=1411356315"
+    },
+    "summary": "幼いころ見た“小さな巨人”の姿に憧れ、烏野高校の門を叩いた。 類稀な瞬発力、跳躍力、そしてどんな時でも諦めない強い心を持つ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "日向翔阳"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ひなた しょうよう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "hinata shouyou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "6月21日"
+        },
+        {
+            "key": "身高",
+            "value": "162.8cm→164.2cm→172.2cm"
+        },
+        {
+            "key": "体重",
+            "value": "51.9kg→70.1kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 21,
+    "stat": {
+        "comments": 39,
+        "collects": 168
+    },
+    "anime_ids": [
+        173849,
+        120236,
+        84171,
+        295421,
+        269918
+    ]
+}

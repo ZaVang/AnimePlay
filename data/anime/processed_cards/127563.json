@@ -1,0 +1,89 @@
+{
+    "id": 127563,
+    "name": "一拳超人",
+    "image_path": "data/images/anime/127563.jpg",
+    "points": 8.0,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "　　因为兴趣而开始当英雄的男人「埼玉」，在经过三年特训之後，得到了无敌的力量。\r\n　　然而，他实在是强过了头，所以无论多厉害的对手，都被他一拳解决。「绝对强势的力量，实在是很无聊。」在这种普通热血的最强英雄面前，今天也出现新的敌踪。今天可以让他拿出认真的态度吗！？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2015-10-04",
+    "rating_rank": 215,
+    "rating_score": 8.0,
+    "rating_total": 18658,
+    "main_character_ids": [
+        19243,
+        19671
+    ],
+    "main_characters": [
+        {
+            "id": 19243,
+            "name": "サイタマ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/62/e6/19243_crt_oBuev.jpg?r=1599062038",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/e6/19243_crt_oBuev.jpg?r=1599062038",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/e6/19243_crt_oBuev.jpg?r=1599062038",
+                "grid": "https://lain.bgm.tv/pic/crt/g/62/e6/19243_crt_oBuev.jpg?r=1599062038"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 12483,
+                    "name": "古川慎",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/15/71/12483_prsn_pXYzu.jpg"
+                    },
+                    "short_summary": "古川 慎（ふるかわ まこと、1989年9月29日 - ）は、日本の男性声優。トイズファクトリー所属。\r\n熊本県出身。福岡スクールオブミュージック専門学校卒業。\r\n\r\n5歳の時に見た『新機動戦記ガンダムW』のヒイロ・ユイを充てた緑川光の声に憧れたことで声優への興味を持つようになった。その後中学生時代にスカパーのアニメ専門チャンネルを見てアニメ好きになったという。\r\n高校生の時、友達からもらった専門学校のパンフレットに緑川光が特別講師としてくることを見て、挑戦してみようと思い専門学校に通い始めた。\r\n\r\n趣味は雑貨屋めぐり、神社や寺などのパワースポットを巡ること。\r\n一番好きな食べ物はお好み焼き。キュウリとカリフラワーが苦手。\r\n好きなアーティストはL'Arc〜en〜Ciel、Mr.Children、ゴスペラーズ、GRANRODEO、BUMP OF CHICKEN。\r\n\r\n2011年にWebアニメ「武装中学生」吉野サトシ役で声優デビュー。\r\n2012年にアルバイトでPS3専用ソフト「白騎士物語」のモーションアクターを演じた経験を持つ。\r\n2016年、7月より声優の小林裕介と共にパーソナリティを務めるラジオ『なんでもヒーロー！ ゆっけとまーぼー』の放送を開始。\r\n2017年10月に開催された、初バースデーイベント「古川慎　秋の収穫祭2017」にて、2018年アーティスト活動を開始することを発表。\r\n2018年7月、Lantisより歌手デビュー。同年8月31日、6年間所属していたスペースクラフト・エンタテインメントを退所し、フリーでの活動期間を経て同年12月1日、トイズファクトリーに所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19671,
+            "name": "ジェノス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/15/92/19671_crt_T5Iz2.jpg?r=1599062164",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/92/19671_crt_T5Iz2.jpg?r=1599062164",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/92/19671_crt_T5Iz2.jpg?r=1599062164",
+                "grid": "https://lain.bgm.tv/pic/crt/g/15/92/19671_crt_T5Iz2.jpg?r=1599062164"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9953,
+                    "name": "石川界人",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/af/c4/9953_prsn_O0Dsl.jpg"
+                    },
+                    "short_summary": "日本男性声优。隶属于Stay Luck，出生于东京都。\r\n\r\n趣味\t読書、一人劇\r\n特技\t水泳、ウィンタースポーツ\r\n経歴\tプロ・フィット声優養成所　卒\r\n2014年第八回声優アワードにて「新人男優賞」受賞。\r\n2020年第十四回声優アワードにて「助演男優賞」受賞。\r\n2022年2月1日、ステイラックへ移籍。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

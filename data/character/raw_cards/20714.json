@@ -1,0 +1,47 @@
+{
+    "id": 20714,
+    "name": "ドロシー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/df/f4/20714_crt_1fNbG.jpg?r=1375755235",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/f4/20714_crt_1fNbG.jpg?r=1375755235",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/f4/20714_crt_1fNbG.jpg?r=1375755235",
+        "grid": "https://lain.bgm.tv/pic/crt/g/df/f4/20714_crt_1fNbG.jpg?r=1375755235"
+    },
+    "summary": "魔法之国卡鲁帝亚出身，其地位相当于卡鲁帝亚的公主。MÄR Heaven恶名昭彰的魔女。Chess兵队皇后－戴安娜的妹妹。银太在MAR-HEVEN世界第一个遇见的人。\r\n在收集散落于MÄR Heaven各地的ARM时，遇见来自现实世界的银太。总是热情的表现出对银太的喜爱。根据卡鲁帝亚的法律，必须亲自杀掉自己的姊姊。之后加入了MAR队。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "桃乐丝"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "多洛西"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月21日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 21,
+    "stat": {
+        "comments": 11,
+        "collects": 47
+    },
+    "anime_ids": [
+        9397
+    ]
+}

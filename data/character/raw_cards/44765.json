@@ -1,0 +1,107 @@
+{
+    "id": 44765,
+    "name": "カキ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e1/16/44765_crt_63Zn3.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/16/44765_crt_63Zn3.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/16/44765_crt_63Zn3.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e1/16/44765_crt_63Zn3.jpg"
+    },
+    "summary": "游戏中\r\n卡奇是精通火属性的队长。\r\n沉默寡言的舞者的他正在和嘎啦嘎啦一起学习阿罗拉地区自古流传的舞蹈。\r\n\r\n动画中\r\n在精灵宝可梦太阳&月亮中，卡奇作为小智的同学登场。\r\n卡奇喜爱火属性宝可梦，为了经营家庭牧场，他在学校期间帮忙做事。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "卡奇"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Kiawe"
+                },
+                {
+                    "k": "法文名",
+                    "v": "Kiawe"
+                },
+                {
+                    "k": "德文名",
+                    "v": "Kiawe"
+                },
+                {
+                    "k": "意大利文名",
+                    "v": "Kawe"
+                },
+                {
+                    "k": "西班牙文名",
+                    "v": "Kiawe"
+                },
+                {
+                    "k": "韩文名",
+                    "v": "키아웨"
+                },
+                {
+                    "k": "俄文名",
+                    "v": "Киаве"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kaki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "眼睛颜色",
+            "value": "棕色"
+        },
+        {
+            "key": "头发颜色",
+            "value": "棕色配红色"
+        },
+        {
+            "key": "训练家类型",
+            "value": "队长"
+        },
+        {
+            "key": "职业",
+            "value": "舞者"
+        },
+        {
+            "key": "擅长属性",
+            "value": "火"
+        },
+        {
+            "key": "家乡所在地",
+            "value": "阿罗拉地区"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "https://wiki.52poke.com/wiki/卡奇"
+                },
+                {
+                    "v": "https://wiki.52poke.com/wiki/卡奇（动画）"
+                }
+            ]
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 3
+    },
+    "anime_ids": [
+        192680
+    ]
+}

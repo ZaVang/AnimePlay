@@ -1,0 +1,60 @@
+{
+    "id": 10865,
+    "name": "花咲つぼみ／キュアブロッサム",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/01/7f/10865_crt_Ff651.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/7f/10865_crt_Ff651.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/7f/10865_crt_Ff651.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/01/7f/10865_crt_Ff651.jpg"
+    },
+    "summary": "14岁，就读于明堂院初中部二年级，时尚部和花卉部成员。家庭成员是双亲和祖母的4人家庭，家里经营花店。喜欢花卉，梦想是成为植物学家，把全世界的沙漠变成花园。曾经只有植物才是朋友，但通过和绘里香的交流，蕾也渐渐地发生了变化。最初的外表是带着眼镜的不起眼造型。但通过绘里香的影响，摘下了眼镜改变了发型，超越了自己的自卑感。精灵搭档是希普蕾。\r\n\r\n因双亲原本的工作的繁忙而无法照顾蕾，这让一直被奶奶照顾的蕾感到寂寞痛苦，才让他们毅然决定辞去原本工作，搬家至奶奶所在的希望花镇一起自营花店增加相处时间。受到奶奶的影响，擅长花语、谚语和四字复合词。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "花咲蕾／花蕾天使"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Cure Blossom"
+                },
+                {
+                    "k": "日文名",
+                    "v": "花咲 つぼみ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はなさき つぼみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hanasaki Tsubomi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://baike.baidu.com/view/3059341.htm#3"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 11,
+        "collects": 51
+    },
+    "anime_ids": [
+        4124
+    ]
+}

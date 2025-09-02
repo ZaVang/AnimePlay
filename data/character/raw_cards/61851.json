@@ -1,0 +1,44 @@
+{
+    "id": 61851,
+    "name": "オリヴィア",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/83/ad/61851_crt_WqwWT.jpg?r=1533534947",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/ad/61851_crt_WqwWT.jpg?r=1533534947",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/ad/61851_crt_WqwWT.jpg?r=1533534947",
+        "grid": "https://lain.bgm.tv/pic/crt/g/83/ad/61851_crt_WqwWT.jpg?r=1533534947"
+    },
+    "summary": "華子たちの中学に転校してきた金髪碧眼の女の子。両親共に外国人で、一見すると英語が堪能なように見えるが、日本生まれの日本育ちのため、英語は不得意でほとんど喋ることができない。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "奥莉薇"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Olivia"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 80,
+        "collects": 182
+    },
+    "anime_ids": [
+        236020
+    ]
+}

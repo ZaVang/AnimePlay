@@ -1,0 +1,64 @@
+{
+    "id": 5168,
+    "name": "テントモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d8/d4/5168_crt_nQFNG.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/d4/5168_crt_nQFNG.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/d4/5168_crt_nQFNG.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d8/d4/5168_crt_nQFNG.jpg"
+    },
+    "summary": "拥有坚硬甲壳，但攻击性还很低的昆虫型数码宝贝之原始型。前肢有一根硬爪，中肢与后肢则是有四根硬爪，特别是中肢可以像人类的手一样灵活抓取物体。作为此数码宝贝进化型的其他昆虫型满心都是斗争，不过在这个时期还留有亲近自然的感情，会去闻花朵的香味或是在树荫底下睡午觉，展现出悠哉的生态。姑且拥有的必杀技是以翅膀增幅静电后击出的『小型闪电』。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "甲虫兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Tentomon"
+                },
+                {
+                    "k": "韩文名",
+                    "v": "텐토몬"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference/detail.php?directory_name=tentomon"
+        },
+        {
+            "key": "等级",
+            "value": "成长期"
+        },
+        {
+            "key": "类型",
+            "value": "昆虫型"
+        },
+        {
+            "key": "属性",
+            "value": "疫苗"
+        },
+        {
+            "key": "必杀技",
+            "value": "小型闪电"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 8,
+        "collects": 9
+    },
+    "anime_ids": [
+        3128
+    ]
+}

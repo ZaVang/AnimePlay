@@ -1,0 +1,48 @@
+{
+    "id": 100317,
+    "name": "平清盛",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/58/40/100317_crt_9U9fR.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/40/100317_crt_9U9fR.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/40/100317_crt_9U9fR.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/58/40/100317_crt_9U9fR.jpg"
+    },
+    "summary": "武力と財力で太政大臣にまで上りつめた豪傑。出家してからもその野心は留まることを知らない。口癖は「おもしろかろう？」",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "平清盛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たいら の きよもり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Taira no Kiyomori"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 2
+    },
+    "anime_ids": [
+        348335
+    ]
+}

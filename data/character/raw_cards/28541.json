@@ -1,0 +1,68 @@
+{
+    "id": 28541,
+    "name": "蔵前果林",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ed/0b/28541_crt_twMHH.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/0b/28541_crt_twMHH.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/0b/28541_crt_twMHH.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ed/0b/28541_crt_twMHH.jpg"
+    },
+    "summary": "僚和祐未的后辈，也是皆城家的养女，ROL时期担任测试驾驶员。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藏前果林"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "蔵前 果林"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くらまえ かりん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kuramae Karin"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2131年4月2日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "47kg"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": 2131,
+    "birth_mon": 4,
+    "birth_day": 2,
+    "stat": {
+        "comments": 1,
+        "collects": 1
+    },
+    "anime_ids": [
+        14106
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "id": 54297,
+    "name": "ファリン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/83/63/54297_crt_PFppF.jpg?r=1696424934",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/63/54297_crt_PFppF.jpg?r=1696424934",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/63/54297_crt_PFppF.jpg?r=1696424934",
+        "grid": "https://lain.bgm.tv/pic/crt/g/83/63/54297_crt_PFppF.jpg?r=1696424934"
+    },
+    "summary": "ライオスの実妹で魔術師。柔和で温厚な性格で、仲間内の諍いを仲裁し宥める役回りをしていた。物理的な戦闘は好まず、回復を主とする補助魔法の他、高度な術法を用いた除霊を行う。会得しているのは、ノーム系の魔術。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "法琳"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "法琳·图丁"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Farin"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月1日"
+        },
+        {
+            "key": "身高",
+            "value": "170cm左右"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wikipedia、公式书"
+        },
+        {
+            "key": "BMI",
+            "value": "24"
+        },
+        {
+            "key": "年龄",
+            "value": "23岁"
+        },
+        {
+            "key": "人种",
+            "value": "长身人"
+        },
+        {
+            "key": "出生地区",
+            "value": "北方大陆"
+        },
+        {
+            "key": "家族成员",
+            "value": "父亲、母亲、哥哥（莱欧斯）"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "水果、奶油"
+        },
+        {
+            "key": "不喜欢的食物",
+            "value": "无"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 1,
+    "stat": {
+        "comments": 41,
+        "collects": 140
+    },
+    "anime_ids": [
+        395378
+    ]
+}

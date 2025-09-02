@@ -1,0 +1,76 @@
+{
+    "id": 6664,
+    "name": "寺本たんぽぽ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/40/c6/6664_crt_1TULt.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/c6/6664_crt_1TULt.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/c6/6664_crt_1TULt.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/40/c6/6664_crt_1TULt.jpg"
+    },
+    "summary": "光祥学園中等部1年生。親衛隊が出来るほど人気の美少女だが、自分のぬいぐるみに名前をつけて話しかけている夢見がちな少女。そのため、友達に恋の相談をされても自分が何を相談されているのか分からず、相手を怒らせてしまう。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "寺本蒲公英"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "寺本たんぽぽ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "てらもと　たんぽぽ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Teramoto Tanpopo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1998年2月25日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "143cm"
+        },
+        {
+            "key": "体重",
+            "value": "32kg"
+        },
+        {
+            "key": "BWH",
+            "value": "73/49/73"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 4,
+    "birth_year": 1998,
+    "birth_mon": 2,
+    "birth_day": 25,
+    "stat": {
+        "comments": 1,
+        "collects": 10
+    },
+    "anime_ids": [
+        32164
+    ]
+}

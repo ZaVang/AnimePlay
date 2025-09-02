@@ -1,0 +1,52 @@
+{
+    "id": 25092,
+    "name": "天箕クラウ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/36/a6/25092_crt_q2MJR.jpg?r=1400184476",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/a6/25092_crt_q2MJR.jpg?r=1400184476",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/a6/25092_crt_q2MJR.jpg?r=1400184476",
+        "grid": "https://lain.bgm.tv/pic/crt/g/36/a6/25092_crt_q2MJR.jpg?r=1400184476"
+    },
+    "summary": "本作の主人公。ボーイッシュな外見が特徴。12歳の誕生日に父・天箕博士の研究所にいた際、突如発生したリナクスに触れたことでリナクス人間となる。それから10年後はエージェントとなり、業界では「危険な仕事を好む女」と評判になるが、リナクスのことは隠している。当初は、クールな性格だったが、クリスマスが生まれてからは、温かみが生まれ、危険な仕事は引き受けないことにした。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "天箕库拉乌"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "天箕クラウ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あまみ クラウ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Amami Kurau"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 3
+    },
+    "anime_ids": [
+        4140
+    ]
+}

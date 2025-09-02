@@ -1,0 +1,64 @@
+{
+    "id": 1958,
+    "name": "鷹村守",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a2/fd/1958_crt_882uk.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/fd/1958_crt_882uk.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/fd/1958_crt_882uk.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a2/fd/1958_crt_882uk.jpg"
+    },
+    "summary": "鴨川ボクシングジム所属のミドル級プロボクサー。\r\n天性の強打と無類のタフネスで、デビュー以来無敗の快進撃を続けている。\r\n鴨川ジムの良き兄貴分。だが、大人気ないイタズラを周囲に仕掛ける要注意人物でもある。\r\n初挑戦のWBC世界ジュニアミドル級タイトルマッチで、ブライアン・ホークに死闘の末勝利し、チャンピオンになる。\r\n世界タイトル６階級制覇を野望に、次は世界ミドル級タイトルを狙う。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鹰村守"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "鷹村守"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takamura Mamoru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1969年7月7日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "185cm"
+        },
+        {
+            "key": "体重",
+            "value": "72.5kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1969,
+    "birth_mon": 7,
+    "birth_day": 7,
+    "stat": {
+        "comments": 2,
+        "collects": 5
+    },
+    "anime_ids": [
+        10419
+    ]
+}

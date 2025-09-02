@@ -1,0 +1,60 @@
+{
+    "id": 57376,
+    "name": "エマ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b4/8c/57376_crt_g8Mmm.jpg?r=1503813993",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/8c/57376_crt_g8Mmm.jpg?r=1503813993",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/8c/57376_crt_g8Mmm.jpg?r=1503813993",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b4/8c/57376_crt_g8Mmm.jpg?r=1503813993"
+    },
+    "summary": "　　孤儿院最年长铁三角之一，生于2034年，11岁的女孩，身高145cm，脖子上的编号为63194。是个有着一头橘色头发的活泼女孩，秉性乐观而天真，喜欢妈妈和孤儿院的一切，将孤儿院的大伙视为自己的家人。考试分数为300分级别，拥有力压诺曼的体能与卓越的反射神经。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾玛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Emma"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2034年8月22日"
+        },
+        {
+            "key": "身高",
+            "value": "145cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        },
+        {
+            "key": "编号",
+            "value": "63194"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 2034,
+    "birth_mon": 8,
+    "birth_day": 22,
+    "stat": {
+        "comments": 34,
+        "collects": 72
+    },
+    "anime_ids": [
+        243916
+    ]
+}

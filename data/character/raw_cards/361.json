@@ -1,0 +1,100 @@
+{
+    "id": 361,
+    "name": "能美クドリャフカ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/03/ea/361_crt_u3kci.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/ea/361_crt_u3kci.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/ea/361_crt_u3kci.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/03/ea/361_crt_u3kci.jpg"
+    },
+    "summary": "CV：鈴田美夜子\r\n异国情调（自称）的吉祥物\r\n虽是归国女，但受祖父日本风的影响，十分像地道的日本人\r\n很在意这点而强行使用英语讲话\r\n实际上年龄很小。被周围人当作吉祥物般宠爱（玩弄）着\r\n爱称是『クド』",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "能美·库特莉亚芙卡"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "能美·库特列芙卡"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Noumi Kudryavka"
+                },
+                {
+                    "k": "日文名",
+                    "v": "能美 クドリャフカ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "のうみ くどりゃふか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nōmi Kudoryafuka"
+                },
+                {
+                    "k": "昵称",
+                    "v": "库公"
+                },
+                {
+                    "k": "其他中文名",
+                    "v": "能美·科多缭卡"
+                },
+                {
+                    "k": "俄译中文名",
+                    "v": "库特莉亚芙卡·亚娜特莉艾维娜·斯托盖茨卡亚"
+                },
+                {
+                    "k": "俄文(拉丁化)",
+                    "v": "Kudryavka Anatol‘yevna Strugatskaya"
+                },
+                {
+                    "k": "俄文",
+                    "v": "Кудрявка Анатольевна Стругацкая"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月12日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "145cm"
+        },
+        {
+            "key": "体重",
+            "value": "37kg"
+        },
+        {
+            "key": "BWH",
+            "value": "69/51/72"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 12,
+    "stat": {
+        "comments": 54,
+        "collects": 318
+    },
+    "anime_ids": [
+        363880
+    ]
+}

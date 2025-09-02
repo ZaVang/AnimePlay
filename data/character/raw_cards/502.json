@@ -1,0 +1,64 @@
+{
+    "id": 502,
+    "name": "桜野くりむ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3d/77/1336_CY3yC.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/77/1336_CY3yC.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/77/1336_CY3yC.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3d/77/1336_CY3yC.jpg"
+    },
+    "summary": "学生会长，高中3年级。知弦因其名“くりむ”联想到“真红（クリムゾン）”而称她为“小红（アカちゃん）”。（“小红（アカちゃん）”跟“婴儿（あかちゃん）”的日文是一样的。）\r\n\r\n特征是有的让人无法想像到她是高中三年级的年幼外表，言行举止看起来比实际年龄更合乎外貌。此外，很容易就被自己所看见、听见的名句等等给影响，常常指挥其他学生会成员。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "樱野栗梦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "さくらの くりむ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakurano Kurimu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月2日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "140cm（原作）/ 142cm（动画）/ 145cm（漫画）"
+        },
+        {
+            "key": "声优",
+            "value": "本多真梨子"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 2,
+    "stat": {
+        "comments": 32,
+        "collects": 168
+    },
+    "anime_ids": [
+        2567
+    ]
+}

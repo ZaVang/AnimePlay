@@ -1,4 +1,5 @@
 import type { Skill } from '@/types/skill';
+import { urCharacterSkills } from '@/data/urCharacterSkills';
 
 export const skillLibrary: Skill[] = [
   // --- Template Active Skills ---
@@ -65,4 +66,7 @@ export const skillLibrary: Skill[] = [
     cost: 1,
     cooldown: 1,
   },
+  
+  // --- UR Character Skills ---
+  ...urCharacterSkills,
 ];

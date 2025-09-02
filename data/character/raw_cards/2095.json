@@ -1,0 +1,81 @@
+{
+    "id": 2095,
+    "name": "サーニャ・V・リトヴャク",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c5/06/2095_crt_0h1IG.jpg?r=1528123073",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/06/2095_crt_0h1IG.jpg?r=1528123073",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/06/2095_crt_0h1IG.jpg?r=1528123073",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c5/06/2095_crt_0h1IG.jpg?r=1528123073"
+    },
+    "summary": "出身于欧拉西亚帝国，军衔中尉。\r\n飞行脚机型为MiG i-225，武器为Flieger Hummer，使魔是黑猫。\r\n固有魔法为全方位广域探查。\r\n原型：苏联空军女性飞行员，德军称为“斯大林格勒的白蔷薇”的莉迪亚·弗拉基米罗夫娜·利特维亚克（Лидия Владимировна Литвяк，Lydia Litvyak）（飞机上画有象征物白百合，被德军误认为蔷薇），是强袭魔女中唯一一个原型是女性的角色。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "萨妮娅·V·利特维亚克"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "亚历桑德拉·薇拉迪米洛瓦·利特维亚克"
+                },
+                {
+                    "v": "桑妮亚·V·利特维亚克"
+                },
+                {
+                    "v": "Sanya V. Litvyak"
+                },
+                {
+                    "v": "Александра Владимировна Литвяк"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Alexandra Vladimirovna Litvyak"
+                },
+                {
+                    "k": "日文名",
+                    "v": "アレクサンドラ・ウラジミーロヴナ・リトヴャク"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sānya V Ritovyaku"
+                },
+                {
+                    "k": "昵称",
+                    "v": "白百合/桑嬢（リーリヤ）"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1930年8月18日"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1930,
+    "birth_mon": 8,
+    "birth_day": 18,
+    "stat": {
+        "comments": 31,
+        "collects": 112
+    },
+    "anime_ids": [
+        253046,
+        5651
+    ]
+}

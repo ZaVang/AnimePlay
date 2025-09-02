@@ -1,0 +1,57 @@
+{
+    "id": 127906,
+    "name": "ドット",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/78/31/127906_crt_pj3U1.jpg?r=1744469186",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/31/127906_crt_pj3U1.jpg?r=1744469186",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/31/127906_crt_pj3U1.jpg?r=1744469186",
+        "grid": "https://lain.bgm.tv/pic/crt/g/78/31/127906_crt_pj3U1.jpg?r=1744469186"
+    },
+    "summary": "小点（日文︰ドット，英文︰Dot）是宝可梦 地平线的角色，她是飞升伏特攻击队的秘密成员，马德克的侄女，负责搜集情报和软体APP开发，平时以穿着可爱布偶装的人气直播主咕噜咪（日文︰ぐるみん，英文︰Nidothing）的身份进行直播。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小点"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Nidothing"
+                },
+                {
+                    "v": "ぐるみん"
+                },
+                {
+                    "v": "咕噜咪"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Dot"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://wiki.52poke.com/zh-hans/%E5%B0%8F%E7%82%B9"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 12,
+        "collects": 11
+    },
+    "anime_ids": [
+        411247
+    ]
+}

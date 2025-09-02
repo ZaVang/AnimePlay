@@ -1,0 +1,72 @@
+{
+    "id": 102530,
+    "name": "小舟澪",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fc/bd/102530_crt_PQ3YN.jpg?r=1636653385",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/bd/102530_crt_PQ3YN.jpg?r=1636653385",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/bd/102530_crt_PQ3YN.jpg?r=1636653385",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fc/bd/102530_crt_PQ3YN.jpg?r=1636653385"
+    },
+    "summary": "潮の実妹で、高校1年生。\r\n運動が得意で水泳部に所属しており、肌は日焼けしている。\r\n姉が亡くなったにも関わらず、帰ってきた慎平に対して明るく振る舞うなど、健気な一面を持つ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小舟澪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "こふね みお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "MIO KOFUNE"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月20日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "体重",
+            "value": "51kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://summertime-anime.com/"
+        },
+        {
+            "key": "年龄",
+            "value": "15"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 20,
+    "stat": {
+        "comments": 100,
+        "collects": 261
+    },
+    "anime_ids": [
+        326895
+    ]
+}

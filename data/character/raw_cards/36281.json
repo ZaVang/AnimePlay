@@ -1,0 +1,72 @@
+{
+    "id": 36281,
+    "name": "高山紗代子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f4/22/36281_crt_8k111.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/22/36281_crt_8k111.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/22/36281_crt_8k111.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f4/22/36281_crt_8k111.jpg"
+    },
+    "summary": "《偶像大师 百万LIVE！》登场角色，Vocal阵营。\r\n\r\n乍一看，纱代子就是一个典型的优等生。同时，她的身上还流淌着满腔热血。做事时总是全身心投入，不至最后一秒，决不言弃。 \r\n\r\n然而时常对自己的姿容和才能没有自信，认为自己不是个优秀的人。也因如此，她才有了想去相信努力定有回报的理由。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高山纱代子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Takayama Sayoko"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たかやま さよこ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月29日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "体重",
+            "value": "42kg"
+        },
+        {
+            "key": "BWH",
+            "value": "82-55-80"
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 29,
+    "stat": {
+        "comments": 20,
+        "collects": 17
+    },
+    "anime_ids": [
+        309807
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "id": 26571,
+    "name": "バン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bb/2c/26571_crt_CtmD3.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/2c/26571_crt_CtmD3.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/2c/26571_crt_CtmD3.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bb/2c/26571_crt_CtmD3.jpg"
+    },
+    "summary": "「強欲の罪（フォックス・シン）(Fox's Sin)のバン」。印となる獣は狐。刺青の位置は左の脇腹。\r\n\r\n纹身：狐（Fox）位置：腹部左侧\r\n银发赤眸，恶人脸青年，个性悠然自得，语尾常带『♪』。于『巴斯特监狱』归团，后被任命为猪帽子亭的厨师。相当擅长料理，喜欢喝酒却很易醉。以与团长互殴较量为乐，常欺负金，称呼霍克为『师傅』。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "班"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Fox's Sin of Greed"
+                },
+                {
+                    "v": "強欲の罪（フォックス・シン）"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Ban"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2月14日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "210cm"
+        },
+        {
+            "key": "体重",
+            "value": "77kg"
+        },
+        {
+            "key": "種族",
+            "value": "元人間"
+        },
+        {
+            "key": "年齢",
+            "value": "43歳（肉体年齢は23歳）"
+        },
+        {
+            "key": "闘級",
+            "value": "3220（魔力1380/武力930/気力910）"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 14,
+    "stat": {
+        "comments": 7,
+        "collects": 24
+    },
+    "anime_ids": [
+        101820
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "id": 1976,
+    "name": "精灵守护者",
+    "image_path": "data/images/anime/1976.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "在一个和人类社会并行存在的精灵世界，那里的水精灵一百年产一次卵，新孵化的卵化身为精灵继续庇护人类社会的繁衍生息。\r\n这一次第二皇子查克姆被选为水之精灵守护人，担负起精灵和人类的双重命运。然而由于人类社会的传史错误，查克姆被视为不祥之物的附身，遭到皇族的秘密追杀。女保镖巴鲁萨成为他的监护人，带着皇子在民间谋生，躲避杀害。\r\n离水之精灵的卵孵化的日子越来越近，皇子的命运也越来越危机重重。精灵世界的土精灵食卵者正四处寻找守护人，将他撕开吃掉。年仅十几岁的查克姆和巴鲁萨建立起深刻的感情，彼此视为亲人。他们该怎么面对命运的考验呢？背负起责任，勇敢向前！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "小说改"
+    ],
+    "date": "2007-04-07",
+    "rating_rank": 291,
+    "rating_score": 7.9,
+    "rating_total": 1730,
+    "main_character_ids": [
+        7436,
+        7437
+    ],
+    "main_characters": [
+        {
+            "id": 7436,
+            "name": "バルサ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/23/69/7436_crt_BrBmz.jpg?r=1476503113",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/23/69/7436_crt_BrBmz.jpg?r=1476503113",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/23/69/7436_crt_BrBmz.jpg?r=1476503113",
+                "grid": "https://lain.bgm.tv/pic/crt/g/23/69/7436_crt_BrBmz.jpg?r=1476503113"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4377,
+                    "name": "安藤麻吹",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8f/04/4377_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/04/4377_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/04/4377_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8f/04/4377_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本女性声优。福冈县出身。剧团俳优座所属。\r\n\r\n为西洋演员娜欧蜜·华兹的配音演员。担任许多国外电视系列剧的配音演出。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7437,
+            "name": "チャグム",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a4/a8/7437_crt_anidb.jpg?r=1449817785",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/a8/7437_crt_anidb.jpg?r=1449817785",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/a8/7437_crt_anidb.jpg?r=1449817785",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a4/a8/7437_crt_anidb.jpg?r=1449817785"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5496,
+                    "name": "安達直人",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d4/76/5496_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/76/5496_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/76/5496_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d4/76/5496_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

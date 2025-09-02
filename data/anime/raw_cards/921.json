@@ -1,0 +1,408 @@
+{
+    "id": 921,
+    "type": 2,
+    "name": "LAST EXILE",
+    "name_cn": "最终流放",
+    "summary": "浓厚产业革命时代气氛主角克劳士·沃卡，一位优秀的先锋艇驾驶员的儿子，驾驶着父亲去世之后留给他的先锋艇，梦想穿越名为“伟大风暴”的飓风区，亲眼看看“另一边”是什么样子。他的朋友拉薇·海德，自幼玩伴作为导航员和机械师，一起为实现梦想而努力。飞越父亲所没能飞越的巨大风暴古兰度斯托利姆。\r\n可是有一天，他们因为接受了将神秘的少女阿露薇丝·哈密鲁顿送去空中战舰西路维纳的委托，就开始被卷入了动荡世界的战争中。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2003-04-07",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/43/0c/921_QHfnb.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/43/0c/921_QHfnb.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/43/0c/921_QHfnb.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/43/0c/921_QHfnb.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/43/0c/921_QHfnb.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "最终流放"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ラストエグザイル",
+                    "k": null
+                },
+                {
+                    "v": "最終流放",
+                    "k": null
+                },
+                {
+                    "v": "最后流亡",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "26"
+        },
+        {
+            "key": "放送开始",
+            "value": "2003年4月7日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期一"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.jvcmusic.co.jp/m-serve/last-exile/ https://www.gonzo.co.jp/works/lastexile/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京"
+        },
+        {
+            "key": "播放结束",
+            "value": "2003年9月29日"
+        },
+        {
+            "key": "导演",
+            "value": "千明孝一"
+        },
+        {
+            "key": "Copyright",
+            "value": "©2003 GONZO／FlyingDog"
+        },
+        {
+            "key": "原作",
+            "value": "GONZO"
+        },
+        {
+            "key": "人物设定",
+            "value": "堀内修、ムラオミノル、田中雄一；副人设：小林冬至生（SNIPES)、戸倉紀元、しんごーやすし"
+        },
+        {
+            "key": "企画",
+            "value": "佐々木史朗、村濱章司"
+        },
+        {
+            "key": "数码特效动画",
+            "value": "鈴木雅也"
+        },
+        {
+            "key": "2D作品",
+            "value": "中山亜希子"
+        },
+        {
+            "key": "3D造型指导",
+            "value": "小林武人"
+        },
+        {
+            "key": "纹理设计",
+            "value": "イノイエシン"
+        },
+        {
+            "key": "剪辑",
+            "value": "重村建吾、肥田文；助手：後藤争司"
+        },
+        {
+            "key": "音效",
+            "value": "田中秀実、浦畑将"
+        },
+        {
+            "key": "录音",
+            "value": "矢野さとし"
+        },
+        {
+            "key": "录音助理",
+            "value": "五十嵐恵美"
+        },
+        {
+            "key": "文艺设定",
+            "value": "鈴木貴昭"
+        },
+        {
+            "key": "制片人",
+            "value": "尾留川宏之、今本尚志"
+        },
+        {
+            "key": "製作",
+            "value": "ビクターエンタテインメント、GDH"
+        },
+        {
+            "key": "音乐制作",
+            "value": "ビクターエンタテインメント；音乐协力：テレビ東京ミュージック"
+        },
+        {
+            "key": "音响",
+            "value": "楽音舎（杉山好美）"
+        },
+        {
+            "key": "设定",
+            "value": "村田蓮爾、片貝文洋、井家信、青木真理子、浦千春"
+        },
+        {
+            "key": "美术设计",
+            "value": "小倉宏昌、うえだひとし[植田均]、前田真宏、小林誠、青木智由紀（16話-）"
+        },
+        {
+            "key": "制作",
+            "value": "GONZO DIGIMATION"
+        },
+        {
+            "key": "道具设计",
+            "value": "前田真宏、小林誠"
+        }
+    ],
+    "volumes": 0,
+    "eps": 26,
+    "total_episodes": 26,
+    "rating": {
+        "rank": 523,
+        "total": 2214,
+        "count": {
+            "one": 3,
+            "two": 5,
+            "three": 7,
+            "four": 15,
+            "five": 43,
+            "six": 201,
+            "seven": 551,
+            "eight": 878,
+            "nine": 393,
+            "ten": 118
+        },
+        "score": 7.7
+    },
+    "collection": {
+        "wish": 2781,
+        "collect": 2931,
+        "doing": 297,
+        "on_hold": 395,
+        "dropped": 119
+    },
+    "tags": [
+        {
+            "name": "GONZO",
+            "count": 834
+        },
+        {
+            "name": "蒸汽朋克",
+            "count": 482
+        },
+        {
+            "name": "科幻",
+            "count": 393
+        },
+        {
+            "name": "村田莲尔",
+            "count": 369
+        },
+        {
+            "name": "2003",
+            "count": 354
+        },
+        {
+            "name": "TV",
+            "count": 330
+        },
+        {
+            "name": "原创",
+            "count": 241
+        },
+        {
+            "name": "Last_Exile",
+            "count": 225
+        },
+        {
+            "name": "黑石瞳",
+            "count": 166
+        },
+        {
+            "name": "神作",
+            "count": 108
+        },
+        {
+            "name": "千明孝一",
+            "count": 89
+        },
+        {
+            "name": "烂尾",
+            "count": 86
+        },
+        {
+            "name": "剧情",
+            "count": 74
+        },
+        {
+            "name": "2003年4月",
+            "count": 58
+        },
+        {
+            "name": "斎藤千和",
+            "count": 53
+        },
+        {
+            "name": "EXILE",
+            "count": 40
+        },
+        {
+            "name": "美人设",
+            "count": 24
+        },
+        {
+            "name": "最终流放",
+            "count": 20
+        },
+        {
+            "name": "2003年",
+            "count": 15
+        },
+        {
+            "name": "日本",
+            "count": 13
+        },
+        {
+            "name": "LAST",
+            "count": 10
+        },
+        {
+            "name": "补番",
+            "count": 9
+        },
+        {
+            "name": "前田真宏",
+            "count": 8
+        },
+        {
+            "name": "空战",
+            "count": 8
+        },
+        {
+            "name": "美上色",
+            "count": 7
+        },
+        {
+            "name": "斋藤千和",
+            "count": 6
+        },
+        {
+            "name": "喜多村英梨",
+            "count": 6
+        },
+        {
+            "name": "奇幻",
+            "count": 6
+        },
+        {
+            "name": "SF",
+            "count": 6
+        },
+        {
+            "name": "TVA",
+            "count": 6
+        }
+    ],
+    "meta_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创",
+        "剧情"
+    ],
+    "series": false,
+    "main_character_ids": [
+        4568,
+        14527,
+        14686
+    ],
+    "main_characters": [
+        {
+            "id": 4568,
+            "name": "ラヴィ・ヘッド",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/78/8c/4568_crt_6pM2d.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/8c/4568_crt_6pM2d.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/8c/4568_crt_6pM2d.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/78/8c/4568_crt_6pM2d.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4249,
+                    "name": "斎藤千和",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/01/33/4249_prsn_l0jSI.jpg?r=1725291268",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/33/4249_prsn_l0jSI.jpg?r=1725291268",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/33/4249_prsn_l0jSI.jpg?r=1725291268",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/01/33/4249_prsn_l0jSI.jpg?r=1725291268"
+                    },
+                    "short_summary": "高中三年级时的7月，日本播音演技研究所入学。次年1月加入I'm Enterprise旗下声优养成机构剧团ヴォアレーヴ。\r\n2001年，初次出演动画《可可露图书馆》的主人公可可露，表现优异，完全表现出主人公的可爱之处，但随后的一年半因学业问题，完全不接任何动画配音的工作。\r\n2002年，与植田佳奈、森永理科以中原麻衣结成声优组合“みっくすJUICE”，随后以组合名义参与CD发行和现场公演等音乐活动以及电视和电台广播节目的演出。\r\n2003年，日本播音演技研究所毕业。声优组合“みっくすJUICE”解散。\r\n2011年10月获得《Newtype×マチ★アソビ 动画奖2011》助演女声优赏，所出演角色晓美焰获女性角色赏。\r\n2013年7月29日，在事务所官方网站上宣布了结婚的消息 。\r\n2015年1月，第一个孩子（女儿）诞生。同年10月1日在事务所官网发布了这则消息。\r\n\r\n斋藤千和与声优结缘原因，拜托母亲出外购买看惯的时装杂志《ViVi》时，母亲不小心买错了陈列台上《ViVi》底下的一本声优杂志，令千和对声优开始产生兴趣，从此走上了声优之路。\r\n萌和腹黑（注：毒舌）萝莉系为代表角色，以深厚的配音实力、多变的声线，得到更多人关注。出道以来，为人十分低调，一直踏实的做好自己的本职工作。\r\n家中在家乡开蛋糕店，家族成员共五人，生活融洽，2006年后斋藤千和独自留京租屋工作，仍经常与母亲手机通讯。\r\n兴趣爱好的看电影以及打篮球。\r\n中学时隶属排球部，学业优秀，国语和英语曾在中学全国模拟时获得前10位（但是她说是瞎蒙的），选择高中时以某高中可爱的校服和其外国游学课程为由入学。\r\n高中修学旅行，与同学畅游西班牙途中，同伴的手袋遭劫匪抢走，斋藤千和旋即追上并击败歹徒 。\r\n千和与声优结缘可谓十分戏剧。话说一日，千和拜托母亲出外购买看惯的时装杂志「ViVi」时，母亲顺手买错了陈列台上「ViVi」底下的一本声优杂志，令千和对声优产生兴趣，从此便走上了声优之路。\r\n经常使用的昵称是“ちわ（千和）”，本人则不喜欢“こんにちわちわ”这个昵称。\r\n2002年与同事务所所属同年的声优森永理科、植田佳奈、中原麻衣结成声优团体《综合果汁（みっくすJUICE）》。该团体参与CD发行和live 公演等音乐活动、电视和电台广播节目的演出，而且，在动画《妄想科学美少女》亦有演出。团体于2003年解散。\r\n2003年，出演动画《最终流放》的女主角拉维·黑特，表示通过出演这个角色，使自己第一次深入思考，世界观有了很大的改变。同年的《妄想科学美少女》的秋茂菖蒲和《R.O.D -THE TV-》的阿妮塔·京确立了千和在萌系角色的地位。\r\n《月咏-MOON PHASE-》中的叶月和《不可思议的教室》的宫本蕾贝卡两个角色展现了其萌和腹黑这双重性格同时并存的高超演技以外，透过对白中微带抽泣声，带动了观众的感情，令千和成为当时年青高演技派女声优代表之一。\r\n首个电台广播是oice Crew，与桑谷夏子担任第九代（2001年10月7日 － 2002年9月29日）的共同主持。同时，两人结成组成组合“coopee”，在全国多个地方表演。为了回复FANS的来信，当时仍是学生的斋藤千和唯有乘学校午休时间在课室对每封信亲笔回覆。\r\n与歌手中野爱子感情亲密，斋藤千和在2011年其30岁生日前一天，由于发生东日本大地震造成交通堵塞无法回家，就跑到了中野家借宿了一晚。\r\n与新房昭之有过多次合作，《魔法少女小圆》、《月咏-MOON PHASE-》、《化物语》、《不可思议的教室》以及《吸血鬼同盟》的监督都是新房昭之，被粉丝们戏称“新房御用声优”。\r\n因为常常在录影现场吃香蕉，所以被其他人称作“香蕉人”。\r\n能登麻美子曾经对她说“如果到30岁都还是单身的话，就和我结婚让我照顾你吧。”曾以“想让能登幸福”为名，要把弟弟介绍给能登麻美子。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 14527,
+            "name": "クラウス・ヴァルカ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/92/4e/14527_crt_FC6fc.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/4e/14527_crt_FC6fc.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/4e/14527_crt_FC6fc.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/92/4e/14527_crt_FC6fc.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4081,
+                    "name": "浅野まゆみ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/48/6c/4081_seiyu_anidb.jpg?r=1501386622",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/6c/4081_seiyu_anidb.jpg?r=1501386622",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/6c/4081_seiyu_anidb.jpg?r=1501386622",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/48/6c/4081_seiyu_anidb.jpg?r=1501386622"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 14686,
+            "name": "アルヴィス・ハミルトン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/21/92/14686_crt_8hFxK.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/92/14686_crt_8hFxK.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/92/14686_crt_8hFxK.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/21/92/14686_crt_8hFxK.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7298,
+                    "name": "赤沼杏奈",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/11/33/7298_prsn_O9Cqp.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/11/33/7298_prsn_O9Cqp.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/11/33/7298_prsn_O9Cqp.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/11/33/7298_prsn_O9Cqp.jpg"
+                    },
+                    "short_summary": "赤沼 杏奈（あかぬま あんな、1990年6月19日 - ）は、日本の女性タレント、ニューボーンフォトグラファー。旧芸名で、白木 杏奈（しらき あんな）、がある。\r\n\r\n愛知県名古屋市出身。元ジールアソシエイツ所属。\r\n\r\n2001年 - 白木杏奈として舞夢プロに所属。\r\n2002年 - NHK教育『天才てれびくんシリーズ』にてれび戦士として3年間出演。\r\n2007年 - 音楽の勉強のため舞夢プロを退所。\r\n2014年4月 - T&E Corporation準採用作詞家となる[1]。\r\n2014年 - 赤沼杏奈としてジールアソシエイツに所属。\r\n2019年3月 - 2017年11月に結婚していたことを自身のTwitter,instagramで発表した。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,168 @@
+{
+    "id": 7159,
+    "name": "枪神",
+    "image_path": "data/images/anime/7159.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　故事发生在一个沙漠星球，背景有科幻色彩，情调景色与美国西部牛仔片相似，沙漠中每个市镇大街上有酒吧有旅店，不同的只是蓬车队换成了巨型陆上蒸汽船。\r\n　　主角 Vash the Stampede 是悬赏六百亿的头号通缉犯，他拥有神乎其技接近无敌的枪法。虽然前来捉拿他的赏金猎人络驿不绝﹐他总是可以逢凶化吉安然逃脱。Vash 平常总是嬉皮笑面一味胡闹﹐拿起枪要战斗时则变了另一个人。剧中两位女主角只是花瓶角色﹐跟着 Vash 四处凑热闹、为观众带来点欢乐笑声。第二男主角 Wolfwood 是枪法与 Vash 不分高下的人，偶然在沙漠上遇到 Vash 一行人，便加入了他们展开漫无目的冒险旅程。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1998-04-01",
+    "rating_rank": 1267,
+    "rating_score": 7.4,
+    "rating_total": 787,
+    "main_character_ids": [
+        8195,
+        8196,
+        13083,
+        90583
+    ],
+    "main_characters": [
+        {
+            "id": 8195,
+            "name": "メリル・ストライフ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/66/74/8195_crt_lclkz.jpg?r=1727874767",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/74/8195_crt_lclkz.jpg?r=1727874767",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/74/8195_crt_lclkz.jpg?r=1727874767",
+                "grid": "https://lain.bgm.tv/pic/crt/g/66/74/8195_crt_lclkz.jpg?r=1727874767"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3956,
+                    "name": "鶴ひろみ",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0f/3c/3956_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/3c/3956_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/3c/3956_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0f/3c/3956_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本的女性配音员、舞台演员、旁白。\r\n在北海道出生，成长和出身于神奈川县横滨市。血型O型。隶属于青二Production。血型O型。星座牡羊座。毕业于神奈川县立鹤见高等学校。知名的配音作品有佩琳物语的佩琳（小英）、龙珠的布玛、橙路的鲇川圆、乱马1/2的久远寺右京等。\r\n\r\n直爽的性格，声称在配美神令子时被潜移默化了。\r\n本来想当演员，之所以转变为声优，是因为“在儿童剧团时，曾被以前视为偶像的女演员所嫌弃”。\r\n与堀川亮，古谷彻搭档的角色，恋爱戏都相当地多，另外与古谷同是向日葵剧团出身，但是在剧团时代互不认识。\r\n原夫是同为声优的难波圭一。难波圭一就是《橙路》中小松整司的声优，不过后来他们离婚了。\r\n椎名高志自从看过ペリーヌ物語就是她的声迷，因此GS美神动画化时指名要她出演，并且在自己结婚时拜托她来担任司仪，结果最后连扮演横岛忠夫的堀川亮也一起拉来主持。\r\n与同世代的配音员松井菜樱子、富泽美智惠及川村万梨阿都以擅长强悍霸气的演技博得了很高的人气而为人熟悉。\r\n\r\n2017年11月16日，鹤弘美在首都高速公路上驾车过程中失去意识，人们将她送到医院，但已经确认死亡，现场没有事故痕迹。\r\n次日下午经纪公司公布死因是心脏主动脉剥离，震惊全国民众。她当时车子停在首都心环状线上，并打开警示灯，被送到医院时已经没有生命迹象，不少网友注意到，她其实在死前一直在强忍身体的病痛，直到停好车后才断气，避免了可能会发生的追撞车祸。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 8196,
+            "name": "ニコラス・D・ウルフウッド",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/cc/02/8196_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/02/8196_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/02/8196_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cc/02/8196_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3898,
+                    "name": "速水奨",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f8/ba/3898_prsn_BD5L7.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/ba/3898_prsn_BD5L7.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/ba/3898_prsn_BD5L7.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f8/ba/3898_prsn_BD5L7.jpg"
+                    },
+                    "short_summary": "日本の男性声優、俳優、歌手、ナレーター。\r\n本名は大濱 靖（おおはま やすし）。妻は声優の五十嵐麗。甥（現養子）に同じく声優の速水秀之がいる。以前はぷろだくしょんバオバブや青二プロダクションに所属していた。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13083,
+            "name": "ヴァッシュ・ザ・スタンピード",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7d/57/13083_crt_3LB3L.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/57/13083_crt_3LB3L.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/57/13083_crt_3LB3L.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7d/57/13083_crt_3LB3L.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3871,
+                    "name": "宮田幸季",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/55/1c/3871_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/1c/3871_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/1c/3871_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/55/1c/3871_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の男性声優。81プロデュース所属。神奈川県横浜市出身",
+                    "locked": false
+                },
+                {
+                    "id": 3978,
+                    "name": "小野坂昌也",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d9/ff/3978_prsn_E29Ny.jpg?r=1492894413",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/ff/3978_prsn_E29Ny.jpg?r=1492894413",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/ff/3978_prsn_E29Ny.jpg?r=1492894413",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d9/ff/3978_prsn_E29Ny.jpg?r=1492894413"
+                    },
+                    "short_summary": "小野坂昌也（1964年10月13日－）是大阪府大阪市住吉区出身的日本男性声优。血型是O型。身高170cm，体重62kg。 青二Production所属。青二私塾大阪校第1期毕业。代表作是《网球王子》（桃城武），《真三国无双系列》 （赵云、诸葛亮）。此外他是一位料理达人。喜欢讲黄色笑话出了名。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 90583,
+            "name": "ミリィ・トンプソン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/cd/1c/90583_crt_E7MT4.jpg?r=1611970678",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/1c/90583_crt_E7MT4.jpg?r=1611970678",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/1c/90583_crt_E7MT4.jpg?r=1611970678",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cd/1c/90583_crt_E7MT4.jpg?r=1611970678"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3821,
+                    "name": "ゆきのさつき",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a6/14/3821_prsn_96356.jpg?r=1671507307",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/14/3821_prsn_96356.jpg?r=1671507307",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/14/3821_prsn_96356.jpg?r=1671507307",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a6/14/3821_prsn_96356.jpg?r=1671507307"
+                    },
+                    "short_summary": "她在家里4个孩子中是最小的。出道之前，她上完小学、初中之后进入滋贺县立石山高中学习。在看过富士电视台于1986年开始播映的由高桥留美子原作的《相聚一刻》后，开始向往成为声优（14年后，她在公映的高桥作品《犬夜叉》中出演女主角·日暮篱）。高中毕业后，她说服强烈反对自己成为声优的父母，来到东京。\r\n\r\n来到东京后，她从专科学校——东京广播（announce）学院毕业。1992年，在NHK教育台播放的外国电影《很棒的日子》中出演少女C，由此出道。1996年在TBS系列播放的由布浦翼原作的《酷妹当家》中出演二之宫贵子，由此正式出道。尽管她是作为主角出道，但在当时还只是一个名不见经传的声优。而且，由于主人公二之宫贵子的台词很少，因此在节目中也较少听到她的声音。尽管现在已经很少看到了，但她确实曾经作为解说员为综艺节目做过旁白。之后，她出演众多作品，知名度逐渐上升。\r\n\r\n据说她本人性格认真，厌恶性格乖僻的人。比如在路上碰到乱扔空易开罐的人，她会提醒对方。甚至还抓到过流氓。也因此有些人觉得她很难相处、不懂得玩笑。她很容易投入角色，甚至在出演犬夜叉的过程中，看到山口胜平在和配桔梗的日高范子聊天就狠狠地瞪着对方。日高如是说：“（雪野）五月小姐很容易投入角色，因此当时她大概是以为犬夜叉被桔梗偷走了吧。不过，她那时的表情恐怖得非比寻常。”林原惠也证实，同样的轶事在《羔羊之歌》的收录现场也发生过。\r\n\r\n另外，她很讨厌下流的话题，1998年在东京系电视台播放的《在涩谷Chu！》节目中，她作为嘉宾出席，面对相声组合Jalism的捧哏（译注：在对口相声中，两名演员分别为逗哏和捧哏。逗哏主要叙述故事的发展，捧哏则对逗哏的叙述加以发挥补充，以增加喜剧气氛）、同为滋贺县出身的渡边锺接连放出的下流话题，她震怒了，令助手宫村优子小姐战栗不已（甚至令往常游刃有余地处理周围情况的宫村也慌张地为她打了圆场）。在节目最后，她毫不留情地给渡边评了低分，不过在2006年接演银魂后据说已经对下流的话题免疫了。不知何故，她接下的工作多为《犬夜叉》、《再做人009》、《植木的法则》等avex系列的动画。她喜欢的音乐家当属福山雅治。爱好则是旅游。顺便提一句，雪野还有许多其他因自己过于认真而导致与人交往困难的轶事，这些也为人熟知。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 36470,
+    "name": "ケンノスケ・ツルギ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a9/c6/36470_crt_LL41L.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/c6/36470_crt_LL41L.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/c6/36470_crt_LL41L.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a9/c6/36470_crt_LL41L.jpg"
+    },
+    "summary": "「世界が見たい！！」と密航して、一人でヨーロッパへやって来た明るく元気な日本の男の子。手作りの木刀で「サムライショー」をみせる。口癖は「ツルギ家家訓！！」",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "剑之助"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Kennosuke Tsurugi"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ケンノスケ・ツルギ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kennosuke Tsurugi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.toei-anim.co.jp/tv/nadja/frame_chara.html"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        9564
+    ]
+}

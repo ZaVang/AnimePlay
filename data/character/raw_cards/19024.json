@@ -1,0 +1,56 @@
+{
+    "id": 19024,
+    "name": "ナオ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/83/f2/19024_crt_3P7M2.jpg?r=1738004898",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/f2/19024_crt_3P7M2.jpg?r=1738004898",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/f2/19024_crt_3P7M2.jpg?r=1738004898",
+        "grid": "https://lain.bgm.tv/pic/crt/g/83/f2/19024_crt_3P7M2.jpg?r=1738004898"
+    },
+    "summary": "中学2年生。デジカメ部所属。やや天然。そのくせ「思いついたら即行動」な女の子。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "奈绪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "上岛奈绪"
+                },
+                {
+                    "k": "日文名",
+                    "v": "上島奈緒"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "うえしま なお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ueshima Nao"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 13
+    },
+    "anime_ids": [
+        2710
+    ]
+}

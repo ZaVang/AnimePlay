@@ -1,0 +1,56 @@
+{
+    "id": 35514,
+    "name": "松野十四松",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/48/16/35514_crt_P770T.jpg?r=1491286097",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/16/35514_crt_P770T.jpg?r=1491286097",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/16/35514_crt_P770T.jpg?r=1491286097",
+        "grid": "https://lain.bgm.tv/pic/crt/g/48/16/35514_crt_P770T.jpg?r=1491286097"
+    },
+    "summary": "声 - 東美江（第1作）、松井菜桜子（第2作）、小野大輔（第3作）\r\n五男。気が優しいが、その分気が弱い。六つ子の中で一番口うるさく、歌もうまい。｢自分が一番影が薄い｣と悩むエピソードもある。\r\n「三十年後のおそ松くん」では、髪型がボサボサになり、無精髭を生やしている。\r\n『大人になったおそ松くん』では、医者になっている。だが、倒れた松造を救うほどの腕はなかった。\r\n名前は鳥の「十姉妹」から。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "松野十四松"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "松野 十四松"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まつの じゅうしまつ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Matsuno Jūshimatsu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月24日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 24,
+    "stat": {
+        "comments": 22,
+        "collects": 39
+    },
+    "anime_ids": [
+        139408
+    ]
+}

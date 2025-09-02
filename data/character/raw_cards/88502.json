@@ -1,0 +1,52 @@
+{
+    "id": 88502,
+    "name": "伊良子清玄",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/05/94/88502_crt_8uUQB.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/94/88502_crt_8uUQB.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/94/88502_crt_8uUQB.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/05/94/88502_crt_8uUQB.jpg"
+    },
+    "summary": "是位非常有天赋的剑术师。在虎眼道场曾经破门而入。进入虎眼门下后，立刻显露出自己的才华。他即是一位美男子，也非常精于世事，并秘密地把成为虎眼道场继承人当成目标。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊良子清玄"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いらこ せいげん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Irako Seigen"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 6
+    },
+    "anime_ids": [
+        4010
+    ]
+}

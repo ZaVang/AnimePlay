@@ -1,0 +1,35 @@
+{
+    "id": 64977,
+    "name": "フェスタ・ブロンコ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/30/61/64977_crt_T3fIx.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/61/64977_crt_T3fIx.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/61/64977_crt_T3fIx.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/30/61/64977_crt_T3fIx.jpg"
+    },
+    "summary": "口が悪く感情の起伏も激しいが、根はいいヤツで、仲間を思う気持ちも強い。火薬の臭いが好きと、Eガンではなく自動小銃を好んで使用。\r\n軍用サイドカーが愛車。\r\n暴走族“デロイア７”からのメンバー。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "费斯塔·布朗科"
+        },
+        {
+            "key": "别名",
+            "value": []
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        37183
+    ]
+}

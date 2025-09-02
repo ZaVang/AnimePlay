@@ -1,0 +1,60 @@
+{
+    "id": 100,
+    "name": "シェリル・ノーム",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c9/34/100_crt_RRAjr.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/34/100_crt_RRAjr.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/34/100_crt_RRAjr.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c9/34/100_crt_RRAjr.jpg"
+    },
+    "summary": "Macross Galaxy(マクロス·ギャラクシー)移民船团在住之现役偶像歌手。为Galaxy Network排行榜前位的常客。被称为“银河の妖精”。在可爱的外表之下，有着高傲和直言不讳的坦率性格。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雪露·诺姆"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Sheryl Nome"
+                },
+                {
+                    "k": "日文名",
+                    "v": "シェリル・ノーム"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月23日"
+        },
+        {
+            "key": "身高",
+            "value": "169cm"
+        },
+        {
+            "key": "体重",
+            "value": "54kg"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 23,
+    "stat": {
+        "comments": 44,
+        "collects": 227
+    },
+    "anime_ids": [
+        236
+    ]
+}

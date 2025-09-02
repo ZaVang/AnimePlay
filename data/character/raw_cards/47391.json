@@ -1,0 +1,80 @@
+{
+    "id": 47391,
+    "name": "ロトム図鑑",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b0/27/47391_crt_7mAaR.jpg?r=1476499383",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/27/47391_crt_7mAaR.jpg?r=1476499383",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/27/47391_crt_7mAaR.jpg?r=1476499383",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b0/27/47391_crt_7mAaR.jpg?r=1476499383"
+    },
+    "summary": "游戏中\r\n为了在冒险中协助最近搬迁到阿罗拉地区的主角，库库伊博士特别赠送给主角的方便的道具——洛托姆图鉴。\r\n洛托姆图鉴是被拥有进入各式各样电子产品力量的宝可梦洛托姆潜入了的特殊物品，洛托姆图鉴不只会记录宝可梦的信息，还拥有自己的意志，会给予主角建议。在冒险中的各种情况下，成为主角的好帮手。\r\n洛托姆图鉴，是非常珍贵的仪器。即使是阿罗拉地区，拥有洛托姆图鉴的训练家也没有很多。\r\n\r\n动画中\r\n洛托姆图是由一只洛托姆进入到普通的图鉴中变成的。\r\n洛托姆图鉴了解所有有关于宝可梦的知识，会说人类语言的它支持着小智的冒险之旅。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "洛托姆图鉴"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Rotom Pokédex"
+                },
+                {
+                    "k": "法文名",
+                    "v": "Motisma-Dex"
+                },
+                {
+                    "k": "德文名",
+                    "v": "Rotom-Pokédex"
+                },
+                {
+                    "k": "意大利文名",
+                    "v": "Pokédex Rotom"
+                },
+                {
+                    "k": "西班牙文名",
+                    "v": "RotomDex"
+                },
+                {
+                    "k": "韩文名",
+                    "v": "로토무도감"
+                },
+                {
+                    "k": "俄文名",
+                    "v": "Покедекс-Ротом"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Rotom Zukan"
+                }
+            ]
+        },
+        {
+            "key": "属性",
+            "value": "草 / 飞行"
+        },
+        {
+            "key": "身高",
+            "value": "0.0m"
+        },
+        {
+            "key": "体重",
+            "value": "0.0kg"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 7
+    },
+    "anime_ids": [
+        192680
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "id": 5925,
+    "name": "水瀬伊織",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5d/33/5925_crt_yxyoO.jpg?r=1514883353",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5d/33/5925_crt_yxyoO.jpg?r=1514883353",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5d/33/5925_crt_yxyoO.jpg?r=1514883353",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5d/33/5925_crt_yxyoO.jpg?r=1514883353"
+    },
+    "summary": "和有气质的外表正好相反，相当任性，蛮横娇羞型。非常讨厌输给别人。因父亲和765 Production的社长是朋友而透过关系进入演艺界。对2位哥哥怀有强烈的自卑感与竞争心理。经常随身带着兔子的玩偶，口癖是“にひひ!”。\r\n基本能力值高且易于管理情绪，和律子同様是“好用强角色”。似乎因为如此有许多人会让律子和伊织组成双人团体来争取排名。另外在双人、三人的时候，若不慎选谈话的对手会大幅影响心情，需要特别注意。\r\n\r\n（在偶像大师 XENOGLOSSIA中）\r\n身高156cm、B77/W54/H79、16岁。\r\n和春香、雪步是同校生兼室友。宽额头就是其最大的特征。总是自信满满的样子，喜欢毫不保留地直接说出自己的想法，事实上非常努力。而且因为她那闪亮到可以反光的额头，所以有着“小凸”的绰号。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "水濑伊织"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "水瀬 伊織"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みなせ いおり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Minase Iori"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月5日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "150→153cm"
+        },
+        {
+            "key": "体重",
+            "value": "39→40kg"
+        },
+        {
+            "key": "BWH",
+            "value": "77/54/79"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "年龄",
+            "value": "14→15"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 5,
+    "stat": {
+        "comments": 65,
+        "collects": 179
+    },
+    "anime_ids": [
+        11577,
+        309807
+    ]
+}

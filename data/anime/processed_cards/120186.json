@@ -1,0 +1,215 @@
+{
+    "id": 120186,
+    "name": "美妙天堂 第二期",
+    "image_path": "data/images/anime/120186.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "时隔不久，「美妙天堂」的新地区开放了！\r\n在被取名为「梦幻剧场」的表演会场，魅力所引领命运的５人组合，献上最好的演唱会，并为最盛大规模的活动「美妙天堂梦幻巡游」拉开了序幕。「美妙天堂」的偶像们将会遇上兴趣盎然的新故事。被命运选中的５人将会是谁呢？哪个组合能在「梦幻剧场」展示最好的表演呢？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 51,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2015-04-04",
+    "rating_rank": 1285,
+    "rating_score": 7.4,
+    "rating_total": 202,
+    "main_character_ids": [
+        27397,
+        27398,
+        27399,
+        27400,
+        27401,
+        27402
+    ],
+    "main_characters": [
+        {
+            "id": 27397,
+            "name": "真中らぁら",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/79/41/27397_crt_XPL33.jpg?r=1620830531",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/79/41/27397_crt_XPL33.jpg?r=1620830531",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/79/41/27397_crt_XPL33.jpg?r=1620830531",
+                "grid": "https://lain.bgm.tv/pic/crt/g/79/41/27397_crt_XPL33.jpg?r=1620830531"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 18076,
+                    "name": "茜屋日海夏",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0f/e5/18076_prsn_deqh2.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/e5/18076_prsn_deqh2.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/e5/18076_prsn_deqh2.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0f/e5/18076_prsn_deqh2.jpg"
+                    },
+                    "short_summary": "日本の女性声優、歌手。\r\n大手レコード会社エイベックスと、声優事務所81プロデュースがタッグを組んで開催した「アニソン・ヴォーカルオーディション」の合格者6名にて結成されたユニット、i☆Risのメンバーとしても活動している。ユニット内でのイメージカラーはパープル。\r\n特技はイラスト描きで、好きなアニメソングは坂本真綾の「ループ」。 スーパー戦隊シリーズが好きで、一番好きな戦隊は「救急戦隊ゴーゴーファイブ」。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27398,
+            "name": "南みれぃ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/73/d9/27398_crt_Mr80m.jpg?r=1620831050",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/d9/27398_crt_Mr80m.jpg?r=1620831050",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/d9/27398_crt_Mr80m.jpg?r=1620831050",
+                "grid": "https://lain.bgm.tv/pic/crt/g/73/d9/27398_crt_Mr80m.jpg?r=1620831050"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10035,
+                    "name": "芹澤優",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/73/98/10035_prsn_czi9z.jpg?r=1688802903",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/98/10035_prsn_czi9z.jpg?r=1688802903",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/98/10035_prsn_czi9z.jpg?r=1688802903",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/73/98/10035_prsn_czi9z.jpg?r=1688802903"
+                    },
+                    "short_summary": "ニックネーム：ゆう\r\nイメージカラー：ブルー\r\n特技：早口言葉\r\n趣味：料理\r\n好きなアニソン：「ガーネット」／奥華子さん\r\n将来の夢：声優・芹澤優として世界中で歌と\r\nセリフを入れ混ぜた 最高のLIVEをすることです。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27399,
+            "name": "北条そふぃ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/30/0b/27399_crt_9QAa9.jpg?r=1620832535",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/0b/27399_crt_9QAa9.jpg?r=1620832535",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/0b/27399_crt_9QAa9.jpg?r=1620832535",
+                "grid": "https://lain.bgm.tv/pic/crt/g/30/0b/27399_crt_9QAa9.jpg?r=1620832535"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 18430,
+                    "name": "久保田未夢",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7f/37/18430_prsn_45P6R.jpg?r=1727538610",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/37/18430_prsn_45P6R.jpg?r=1727538610",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/37/18430_prsn_45P6R.jpg?r=1727538610",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7f/37/18430_prsn_45P6R.jpg?r=1727538610"
+                    },
+                    "short_summary": "大手レコード会社エイベックスと声優事務所81プロデュースがタッグを組んで開催した、「アニソン・ヴォーカルオーディション」の合格者6名にて結成されたユニット「i☆Ris」のメンバーとしても活動している。ユニット内でのイメージカラーはオレンジ。挨拶は「わんわんおー（U＾ω＾）」。\r\n\r\n趣味はアニメ鑑賞[1]。好きなキャラクターは『デュラララ!!』の平和島静雄。\r\n\r\n犬が大好きで挨拶の由来にもなっている。飼いたい犬はドーベルマン。\r\n\r\n工業高校出身で、フォークリフトとアーク溶接の免許を所持している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27400,
+            "name": "東堂シオン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fe/b0/27400_crt_HyT2t.jpg?r=1620835174",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/b0/27400_crt_HyT2t.jpg?r=1620835174",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/b0/27400_crt_HyT2t.jpg?r=1620835174",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fe/b0/27400_crt_HyT2t.jpg?r=1620835174"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 26086,
+                    "name": "山北早紀",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/da/6a/26086_prsn_obPae.jpg?r=1708181801",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/6a/26086_prsn_obPae.jpg?r=1708181801",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/6a/26086_prsn_obPae.jpg?r=1708181801",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/da/6a/26086_prsn_obPae.jpg?r=1708181801"
+                    },
+                    "short_summary": "山北 早紀（やまきた さき、1991年2月28日 - ）は、日本の女性声優、歌手、アイドル。81プロデュース所属。\r\n北海道札幌市出身。身長163cm、血液型はA型。\r\n総合学園ヒューマンアカデミー札幌校パフォーミングアーツカレッジ第5期卒業。大手レコード会社エイベックスと、声優事務所81プロデュースがタッグを組んで開催した「アニソン・ヴォーカルオーディション」の合格者6名にて結成されたユニット、i☆Risのリーダーとしても活動している。ユニット内でのイメージカラーはグリーン。\r\n趣味は一人旅で、松本梨香の「めざせポケモンマスター」を好んでいるという。特技はお菓子作り。\r\n2016年、第10回声優アワードにて、i☆Risの一員として歌唱賞を受賞。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27401,
+            "name": "ドロシー・ウェスト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7b/15/27401_crt_eVK6p.jpg?r=1622131111",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/15/27401_crt_eVK6p.jpg?r=1622131111",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/15/27401_crt_eVK6p.jpg?r=1622131111",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7b/15/27401_crt_eVK6p.jpg?r=1622131111"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 25529,
+                    "name": "澁谷梓希",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b6/8d/25529_prsn_WtsAI.jpg?r=1476497298",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/8d/25529_prsn_WtsAI.jpg?r=1476497298",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/8d/25529_prsn_WtsAI.jpg?r=1476497298",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b6/8d/25529_prsn_WtsAI.jpg?r=1476497298"
+                    },
+                    "short_summary": "日本女性声优、歌手。埼玉县出身。81 PRODUCE所属。\r\n参与艾回唱片公司和81Produce联合举办的「动漫歌曲演唱选拔」，并通过选拔，与其他合格的芹泽优、茜屋日海夏、若井友希、久保田未梦、山北早纪组成组合《i☆Ris》。\r\n2016年，在第10回声优奖中以i☆Ris之名义获得歌唱奖。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27402,
+            "name": "レオナ・ウェスト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2c/a0/27402_crt_xM67M.jpg?r=1622132472",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/a0/27402_crt_xM67M.jpg?r=1622132472",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/a0/27402_crt_xM67M.jpg?r=1622132472",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2c/a0/27402_crt_xM67M.jpg?r=1622132472"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 20215,
+                    "name": "若井友希",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/68/46/20215_prsn_5ibVu.jpg?r=1708184137",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/46/20215_prsn_5ibVu.jpg?r=1708184137",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/46/20215_prsn_5ibVu.jpg?r=1708184137",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/68/46/20215_prsn_5ibVu.jpg?r=1708184137"
+                    },
+                    "short_summary": "日本的女性声优、歌手，岐阜县出身，所属事务所为81 PRODUCE。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

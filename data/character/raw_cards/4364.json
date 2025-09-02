@@ -1,0 +1,91 @@
+{
+    "id": 4364,
+    "name": "井上織姫",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1d/23/4364_crt_RA1ya.jpg?r=1660568855",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/23/4364_crt_RA1ya.jpg?r=1660568855",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/23/4364_crt_RA1ya.jpg?r=1660568855",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1d/23/4364_crt_RA1ya.jpg?r=1660568855"
+    },
+    "summary": "本作のヒロイン。一護のクラスメイトで、彼に好意を寄せている。『盾舜六花』（しゅんしゅんりっか）を呼び出して盾などを創り、それを用いて自らの意思の力でさまざまな対象を拒絶する霊能力を持つ。\r\n---\r\n本作女主角，黑崎一护的好友，喜欢一护",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "井上织姬"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "井上 織姫"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いのうえ おりひめ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Inoue Orihime"
+                },
+                {
+                    "k": "别名",
+                    "v": "崩姫（プリンセッサ）"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月3日"
+        },
+        {
+            "key": "血型",
+            "value": "BO型"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "体重",
+            "value": "45kg→49kg"
+        },
+        {
+            "key": "职业",
+            "value": "高校生"
+        },
+        {
+            "key": "家族",
+            "value": "井上昊（兄・故人）"
+        },
+        {
+            "key": "主题曲",
+            "value": "T'en va pas&quot;/ELSA(「L'essentiel ELSA 1986～1993」収録"
+        },
+        {
+            "key": "完现术",
+            "value": "盾舜六花"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 3,
+    "stat": {
+        "comments": 35,
+        "collects": 85
+    },
+    "anime_ids": [
+        302286,
+        412916,
+        457326,
+        1600
+    ]
+}

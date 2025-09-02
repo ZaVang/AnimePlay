@@ -1,0 +1,281 @@
+{
+    "id": 37183,
+    "name": "太阳之牙达格拉姆",
+    "image_path": "data/images/anime/37183.jpg",
+    "points": 8.4,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "　　スタフェラス星系の惑星デロイア。150年におよぶ地球連邦政府の支配から解放をねがい、動乱の続く星である。人々は人民解放軍を組織し、若者はゲリラに身を投じて、自由と独立のための戦いをつづけていた。\r\n　　そのひとつ“太陽の牙”を名乗る若者たちは軍用列車を襲撃すべく待ち構えていたところを逆に連邦軍に襲われる。彼らは敵の罠にはまったのだ。新型コンバット・アーマー“ダグラム”を駆る17歳の少年クリン・カシムは、仲間との連携プレイによってこの危機を辛くも逃れる。\r\n　　だが作戦失敗のその報を受けたのは、連邦政府高官のドナン・カシム、クリンの父であった。地球の名家に生まれながら、父の陰謀を知ったクリンはすべてを捨てデロイア独立の戦いに自らの道を求めたのだ。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 75,
+    "synergy_tags": [
+        "机战",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "1981-10-23",
+    "rating_rank": 150,
+    "rating_score": 8.4,
+    "rating_total": 237,
+    "main_character_ids": [
+        64973,
+        64974,
+        64975,
+        64976,
+        64977,
+        64978,
+        64979,
+        64980
+    ],
+    "main_characters": [
+        {
+            "id": 64973,
+            "name": "クリン・カシム",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/61/e5/64973_crt_4B3EZ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/e5/64973_crt_4B3EZ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/e5/64973_crt_4B3EZ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/61/e5/64973_crt_4B3EZ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 1582,
+                    "name": "井上和彦",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/59/f9/1582_prsn_N4nun.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/f9/1582_prsn_N4nun.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/f9/1582_prsn_N4nun.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/59/f9/1582_prsn_N4nun.jpg"
+                    },
+                    "short_summary": "日本声优、解说、舞台演员、音响监督。神奈川县横滨市出身。B-Box所属。横浜市立横浜商業高等学校卒業。\r\n曾数度结婚、离婚。首任妻子为《小甜甜》的漫画家五十岚优美子(いがらしゆみこ)，之后又曾与声优荒川美奈子、女演员越智静香结婚，但最终均离婚。长子为漫画家兼女装模特五十岚奈波(いがらし奈波)，本名五十岚庆一(五十嵐慶一)。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 64974,
+            "name": "ロッキー・アンドル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/61/38/64974_crt_mzFH8.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/38/64974_crt_mzFH8.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/38/64974_crt_mzFH8.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/61/38/64974_crt_mzFH8.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5032,
+                    "name": "田中亮一",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a7/97/5032_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/97/5032_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/97/5032_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a7/97/5032_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 64975,
+            "name": "キャナリー・ドネット",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fa/25/64975_crt_K4mmM.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/25/64975_crt_K4mmM.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/25/64975_crt_K4mmM.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fa/25/64975_crt_K4mmM.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4363,
+                    "name": "山田栄子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/db/da/4363_prsn_jGQjc.jpg?r=1723550129",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/da/4363_prsn_jGQjc.jpg?r=1723550129",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/da/4363_prsn_jGQjc.jpg?r=1723550129",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/db/da/4363_prsn_jGQjc.jpg?r=1723550129"
+                    },
+                    "short_summary": "日本の声優、歌手、舞台女優。81プロデュース所属。神奈川県横浜市神奈川区子安出身。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 64976,
+            "name": "チコ・ビエンテ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bc/6e/64976_crt_AGi7g.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/6e/64976_crt_AGi7g.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/6e/64976_crt_AGi7g.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bc/6e/64976_crt_AGi7g.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4140,
+                    "name": "銀河万丈",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/04/43/4140_prsn_nV2Vx.jpg?r=1671518633",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/43/4140_prsn_nV2Vx.jpg?r=1671518633",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/43/4140_prsn_nV2Vx.jpg?r=1671518633",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/04/43/4140_prsn_nV2Vx.jpg?r=1671518633"
+                    },
+                    "short_summary": "銀河 万丈（ぎんが ばんじょう）は、日本の声優、俳優、ナレーターである。青二プロダクション所属。\r\n本名・旧芸名は田中 崇（たなか たかし）。妻は同じく声優の高島雅羅。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 64977,
+            "name": "フェスタ・ブロンコ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/30/61/64977_crt_T3fIx.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/61/64977_crt_T3fIx.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/61/64977_crt_T3fIx.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/30/61/64977_crt_T3fIx.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3842,
+                    "name": "鈴木清信",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7f/a2/3842_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/a2/3842_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/a2/3842_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7f/a2/3842_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の男性声優、舞台俳優。演出家。81プロデュース所属。新潟県出身。中央大学卒業。\r\n\r\n身長160cm。星座はさそり座。野沢那智主宰の劇団薔薇座出身。現在は、文化学院の講師でもある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 64978,
+            "name": "ビリー・ボール",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/21/9d/64978_crt_l71Iu.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/9d/64978_crt_l71Iu.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/9d/64978_crt_l71Iu.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/21/9d/64978_crt_l71Iu.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 27065,
+                    "name": "梨羽侑里",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/68/c7/27065_prsn_zOuZX.jpg?r=1738605708",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/c7/27065_prsn_zOuZX.jpg?r=1738605708",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/c7/27065_prsn_zOuZX.jpg?r=1738605708",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/68/c7/27065_prsn_zOuZX.jpg?r=1738605708"
+                    },
+                    "short_summary": "放送表現教育センター、青二プロダクションに所属していた。東京都出身。立教大学文学部卒業。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 64979,
+            "name": "ナナシ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/83/ec/64979_crt_5yDzs.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/ec/64979_crt_5yDzs.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/ec/64979_crt_5yDzs.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/83/ec/64979_crt_5yDzs.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4009,
+                    "name": "緒方賢一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f4/56/4009_prsn_rPp40.jpg?r=1678767820",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/56/4009_prsn_rPp40.jpg?r=1678767820",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/56/4009_prsn_rPp40.jpg?r=1678767820",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f4/56/4009_prsn_rPp40.jpg?r=1678767820"
+                    },
+                    "short_summary": "日本の声優、俳優。福岡県田川郡赤池町出身。オフィス海風所属。海風所属。代表的な出演作品としては『忍者ハットリくん』（獅子丸）、『はじめてのこくご ことばあ!』（おがちゃん）、『あたしンち』（父）などがある。\r\n\r\n次男坊として生まれる。\r\n\r\n幼少期から「ひょうきんな子」と言われて育つ。家が料亭を営んでおり、中学卒業と同時に板前の修業に入るが、非常に封建的な職場で友人をかばったことで自分まで制裁を受けたことに憤り、家を出て炭鉱で働く。しかし、怪我が原因で炭鉱での仕事が長く続かず、自分に何ができるか考え、元々人を楽しませることが好きだったことから喜劇役者を志し、先に東京へ出ていた兄弟を頼って上京した。\r\n\r\n上京後は劇団に入ろうとするが、本人曰く「中卒・小柄・特技もない」という理由から不採用が続き、とりあえず高校だけは行っておこうと2年遅れで定時制高校の商業科に補欠で合格。東京都立代々木高等学校（現：東京都立世田谷泉高等学校）卒業後も劇団の入団試験を受けるが、不採用続きの中、劇団東演を受けたところ演出家の下村正夫の夫人が同郷だったことが縁で2年間勉強のために通うことになる。児童劇団や新劇などジャンル問わず舞台出演していたところ、ある公演時にアテレコのディレクターが演出を担当。その人物からアテレコの仕事に誘われ、『輪廻』で声の初仕事を行う。後にスワラ・プロの社長となる効果音技師・音響監督の伊藤克己が高校の後輩だったため、その紹介で『強妻天国』に出演させてもらう中、「アテレコが割のいい仕事だな」と思うようになり、もっと声の仕事を増やそうと児童劇団で関係のあった大竹宏の紹介で青二プロダクションに入る。声優デビュー時点で30歳近かったが、劇団の下積みがあったためかすぐに声の仕事でレギュラーをもらえるようになった。\r\n\r\n1970年代の東映動画（現：東映アニメーション）作品の常連だった。\r\n\r\n1985年に設立された劇団すごろくの座長を務め、舞台俳優としても活動。『一休さん』の収録時に倒れて病院に担ぎ込まれたことがあり、以降健康に気をつけるようなったが、特にスポーツをやっているわけでもなく舞台の稽古がトレーニングになっているとのこと。2011年に血尿が出る状態に陥ったが、舞台を優先させ公演終了後に手術。腎盂癌だったため、左腎臓を摘出している。舞台だけは最後まで続けていきたいと語っていたが、2013年にすごろくを退団。『緒方賢一とシャレダース』というチームを結成し、以降後進の応援活動に精を出すとのことで、引退ではない。\r\n\r\nまた、2002年から2008年にかけてはNHK教育テレビの『はじめてのこくご ことばあ!』にも「おがちゃん」として顔出しで出演していた。\r\n\r\n声優・舞台役者以外では、東京声優アカデミーとヒューマンアカデミーで講師を務めている。大根役者本来の「食べても滅多に当らない→興行を打っても当らない」という意味ではなく、「大根」の素材としての調理方法の多様さや様々な色に染まる白さから、生徒に「大根役者になれ」と教えている。\r\n\r\n2016年1月、長年所属していたぷろだくしょんバオバブを退所、現在はオフィス海風所属。\r\n\r\n2019年、第十三回声優アワードにて、京田尚子とともに「功労賞」を受賞した。\r\n\r\n趣味：ゴルフ\r\n特技：九州弁\r\n声質：バリトン",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 64980,
+            "name": "ハックル・Ｇ・トンプソン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4b/63/64980_crt_rrz0R.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/63/64980_crt_rrz0R.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/63/64980_crt_rrz0R.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4b/63/64980_crt_rrz0R.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 71573,
+                    "name": "小宮山清",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "",
+                        "medium": "",
+                        "small": "",
+                        "grid": ""
+                    },
+                    "short_summary": "小宮山 清（こみやま きよし、1937年1月12日 - ）は、日本の男性声優、俳優。フリー。東京都出身。\r\n\r\n略歴\r\nもともと芝居に興味はなかったが、学芸会の芝居に出演したことがきっかけで、本人いわく「児童劇団にひっぱっていかれ」役者になったという。\r\n\r\n1945年、劇団テアトル・ピッコロ入団。1948年に劇団こまどりに移籍し、子役として活躍。NHKのラジオドラマなどで多く主演を務め、1950年にはぶどうの会による舞台『夕鶴』の初演に出演。\r\n\r\n1957年に劇団こまどりを退団後、1959年に東京俳優生活協同組合に所属。その後は同人舎プロダクションに所属していた。\r\n\r\n2010年代からは妻とともに台湾で生活をしており、声優業などの仕事については以降もフリーで請け負っている。\r\n\r\n特色・人物\r\n声種はテノール。高い声質を活かし、子供や少年の役を多く演じる。\r\n\r\n飾り気のない性格。仕事に関しては、いい意味で執着せず淡々とこなす姿勢だという。\r\n\r\n趣味・特技は登山、旅行。かつては飲食店を経営したことがあった。\r\n\r\n田の中勇とは親交があった。知人にはクリエイター・ラジオパーソナリティのNuiがおり、連絡を取り合う機会が多いという。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

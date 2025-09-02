@@ -1,0 +1,70 @@
+{
+    "id": 1975,
+    "name": "アブリアル・ネイ＝ドゥブレスク・パリューニュ・ベール・パリュン・ラフィール",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d1/f7/1975_crt_eEVIE.jpg?r=1743343387",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d1/f7/1975_crt_eEVIE.jpg?r=1743343387",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d1/f7/1975_crt_eEVIE.jpg?r=1743343387",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d1/f7/1975_crt_eEVIE.jpg?r=1743343387"
+    },
+    "summary": "クリューブ王家第一王女にして、アーヴ皇帝の孫娘。「傲慢にして無謀」といわれるアーヴの性質と、純真な心をあわせ持つ美少女。\r\n星界軍の翔士修技生として、ジントを迎えにあらわれる。16才。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "拉斐尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "昵称",
+                    "v": "ラフィール"
+                },
+                {
+                    "k": "日文名",
+                    "v": "アブリアル・ネイ＝ドゥブレスク・パリューニュ・ベール・パリュン・ラフィール"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Abriel Nei Debrusc Borl Paryun Lafiel"
+                },
+                {
+                    "k": "\\",
+                    "v": "Ablïarsec néïc Dubreuscr Bœrh Parhynr Lamhirh"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "163"
+        },
+        {
+            "key": "体重",
+            "value": "53"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 15,
+        "collects": 55
+    },
+    "anime_ids": [
+        4301,
+        9618,
+        9617
+    ]
+}

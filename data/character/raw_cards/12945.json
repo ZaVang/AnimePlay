@@ -1,0 +1,64 @@
+{
+    "id": 12945,
+    "name": "高野政宗",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8c/e9/12945_crt_XhI99.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/e9/12945_crt_XhI99.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/e9/12945_crt_XhI99.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8c/e9/12945_crt_XhI99.jpg"
+    },
+    "summary": "27歳。エメラルド編集部の編集長にして、一之瀬絵梨佳の担当。強引な性格ながらも仕事面では有能。\r\nガタガタだった同編集部をわずか1年で立て直し、周囲から「超できる編集者」と一目置かれている。\r\n高校時代に律と付き合うも、ある誤解が元で破局。その後はいっとき荒れた生活を送っていた。\r\n別れても尚10年間律を一途に想い続け、再会後は強引に迫り、改めて告白した。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高野政宗"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "嵯峨政宗（さがまさむね）"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たかの まさむね"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takano Masamune"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "12月24日"
+        },
+        {
+            "key": "身高",
+            "value": "180cm"
+        },
+        {
+            "key": "体重",
+            "value": "75kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 24,
+    "stat": {
+        "comments": 4,
+        "collects": 61
+    },
+    "anime_ids": [
+        20813,
+        10243
+    ]
+}

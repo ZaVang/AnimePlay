@@ -1,0 +1,39 @@
+{
+    "id": 18867,
+    "name": "水上真理雄",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d1/83/18867_crt_99MEy.jpg?r=1602846337",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d1/83/18867_crt_99MEy.jpg?r=1602846337",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d1/83/18867_crt_99MEy.jpg?r=1602846337",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d1/83/18867_crt_99MEy.jpg?r=1602846337"
+    },
+    "summary": "暴行罪 / 伤害罪 / 杀人未遂。 　\r\n性格跟樱哥最像的热血善良的男人。急性子。 　",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "水上真理雄"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 7
+    },
+    "anime_ids": [
+        4283
+    ]
+}

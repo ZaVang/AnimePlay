@@ -1,0 +1,211 @@
+{
+    "id": 2461,
+    "name": "搞笑漫画日和",
+    "image_path": "data/images/anime/2461.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "　　《搞笑漫画日和》是在《月刊少年JUMP》上连载的人气作品，由于该作的恶搞程度已经达到了某种无人能及的境界，因此受到日本众多动漫迷的追捧。\r\n　　此作的恶搞对象通常都是些社会知名人物，比如圣德太子、松尾芭蕉等等，看到这些不仅我们想起当年那款恶搞世界人的动画《南方公园》。\r\n　　《搞笑漫画日和》在众多搞笑漫画中十分出名。对于喜爱恶搞类作品的观众是决不能错过的作品。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2005-02-07",
+    "rating_rank": 351,
+    "rating_score": 7.8,
+    "rating_total": 6113,
+    "main_character_ids": [
+        10599,
+        10601,
+        10613,
+        10617,
+        171103,
+        171104
+    ],
+    "main_characters": [
+        {
+            "id": 10599,
+            "name": "クマ吉君",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/aa/c5/10599_crt_RFf0B.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/c5/10599_crt_RFf0B.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/c5/10599_crt_RFf0B.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/aa/c5/10599_crt_RFf0B.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4484,
+                    "name": "前田剛",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/80/3e/4484_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/3e/4484_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/3e/4484_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/80/3e/4484_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10601,
+            "name": "うさみちゃん",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/be/23/10601_crt_k6O8O.jpg?r=1438598857",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/23/10601_crt_k6O8O.jpg?r=1438598857",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/23/10601_crt_k6O8O.jpg?r=1438598857",
+                "grid": "https://lain.bgm.tv/pic/crt/g/be/23/10601_crt_k6O8O.jpg?r=1438598857"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5214,
+                    "name": "佐藤なる美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/74/17/5214_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/74/17/5214_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/74/17/5214_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/74/17/5214_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "出身地\t宮城県\r\n方言\t東北弁\r\n趣味・特技\t歌、剣道初段、珠算３級",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10613,
+            "name": "河合曽良",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/58/fa/10613_crt_8RhWs.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/fa/10613_crt_8RhWs.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/fa/10613_crt_8RhWs.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/58/fa/10613_crt_8RhWs.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4484,
+                    "name": "前田剛",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/80/3e/4484_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/3e/4484_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/3e/4484_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/80/3e/4484_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10617,
+            "name": "松尾芭蕉",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/93/f8/10617_crt_MG2Bv.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/f8/10617_crt_MG2Bv.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/f8/10617_crt_MG2Bv.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/93/f8/10617_crt_MG2Bv.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4728,
+                    "name": "内藤玲",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/71/f0/4728_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/f0/4728_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/f0/4728_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/71/f0/4728_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 171103,
+            "name": "聖徳太子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f5/78/171103_crt_Y29y4.jpg?r=1743863672",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/78/171103_crt_Y29y4.jpg?r=1743863672",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/78/171103_crt_Y29y4.jpg?r=1743863672",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f5/78/171103_crt_Y29y4.jpg?r=1743863672"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4484,
+                    "name": "前田剛",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/80/3e/4484_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/3e/4484_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/3e/4484_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/80/3e/4484_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 171104,
+            "name": "小野妹子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e9/17/171104_crt_9j43e.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/17/171104_crt_9j43e.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/17/171104_crt_9j43e.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e9/17/171104_crt_9j43e.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4276,
+                    "name": "竹本英史",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e6/47/4276_prsn_robsB.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/47/4276_prsn_robsB.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/47/4276_prsn_robsB.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e6/47/4276_prsn_robsB.jpg"
+                    },
+                    "short_summary": "日本の男性声優、ナレーターである。山口県徳山市（現・周南市）出身。青二プロダクション所属。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

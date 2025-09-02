@@ -1,0 +1,68 @@
+{
+    "id": 66554,
+    "name": "りな",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/99/a5/66554_crt_bkibY.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/a5/66554_crt_bkibY.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/a5/66554_crt_bkibY.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/99/a5/66554_crt_bkibY.jpg"
+    },
+    "summary": "メイド調の服に身を包む\r\n天真爛漫なムードメーカー",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鸣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "丽奈"
+                },
+                {
+                    "v": "丽奈亲"
+                },
+                {
+                    "v": "丽奈次"
+                },
+                {
+                    "v": "丽奈藏"
+                },
+                {
+                    "v": "丽奈佳"
+                },
+                {
+                    "v": "丽奈子"
+                },
+                {
+                    "v": "丽奈梦"
+                },
+                {
+                    "v": "丽奈奈"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Rina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 9,
+        "collects": 28
+    },
+    "anime_ids": [
+        237423
+    ]
+}

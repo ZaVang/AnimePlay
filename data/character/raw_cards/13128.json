@@ -1,0 +1,52 @@
+{
+    "id": 13128,
+    "name": "キリコ・キュービィー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/17/02/13128_crt_IMkaC.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/02/13128_crt_IMkaC.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/02/13128_crt_IMkaC.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/17/02/13128_crt_IMkaC.jpg"
+    },
+    "summary": "吉路加美什军士兵，配属“美鲁基亚”方面军，军衔为曹长（相当于上士）。曾配属于第24美鲁基亚方面軍战略机甲兵团特殊任务班X-1（通称“血色肩膀”，人称“吸血部队”）。没有10岁以前的清晰记忆，由于持续的激烈战斗，逐渐失去了作为人的情感。\r\nAT驾驶技术非常高超，能够与经过改造的“完美士兵”（PS）抗衡。\r\n始终穿着AT驾驶服。\r\n喜欢吃干肉，讨厌海鞘。在行星珊萨第一次喝酒，结果因为不喜欢酒的味道而吐掉。喜欢喝咖啡。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "基里科·丘比"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Kiriko Kyubi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "激励哥"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "7月7日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 7,
+    "stat": {
+        "comments": 8,
+        "collects": 43
+    },
+    "anime_ids": [
+        10379
+    ]
+}

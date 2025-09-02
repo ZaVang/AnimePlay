@@ -1,0 +1,56 @@
+{
+    "id": 9171,
+    "name": "猪熊柔",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9d/c6/9171_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9d/c6/9171_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9d/c6/9171_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9d/c6/9171_crt_anidb.jpg"
+    },
+    "summary": "1969年12月8日生。柔道天才少女，个性体贴、坚持理想（如寻常女子般谈恋爱、逛百货公司等），相貌酷似年轻时的奶奶。\r\n五岁时与父亲进行柔道练习，以巴投摔倒父亲而受祖父大力赞扬，而母亲则在一旁啜泣（根据阿柔回忆）。\r\n自此父亲外出进行长期柔道修业旅途，因父母的境遇，以及有别于一般同学的日常生活，让她逐渐认为家人的不幸起源于柔道，对柔道心生厌倦。\r\n但在爷爷的极力培训，以及记者松田耕作的采访关切下，无法完全割舍与柔道的缘份。\r\n\r\n先后就读毕业于武藏山高中及三叶女子短期大学；在完成与爷爷的约定（与法国塞纳大学进行女子柔道团体练习比赛获胜）后，就业于鹤龟旅行社。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "猪熊柔"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いのくま やわら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Inokuma Yawara"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1969-12-08"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wikipedia"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1969,
+    "birth_mon": 12,
+    "birth_day": 8,
+    "stat": {
+        "comments": 5,
+        "collects": 8
+    },
+    "anime_ids": [
+        62914
+    ]
+}

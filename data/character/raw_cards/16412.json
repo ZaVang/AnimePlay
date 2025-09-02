@@ -1,0 +1,44 @@
+{
+    "id": 16412,
+    "name": "暗落亭苦来",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/06/8e/16412_crt_0dV0w.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/8e/16412_crt_0dV0w.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/8e/16412_crt_0dV0w.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/06/8e/16412_crt_0dV0w.jpg"
+    },
+    "summary": "女子落語家。高座名の由来は「暗くて暗い」（「安楽死」と「（首を）括る」、「アンラッキー」と「暗い」という説もある）。\r\n髪型は黒髪の揃ったロングストレートだが、前髪だけ二本分かれている。瞳の色、メンタリティ、更には衣装と、イメージカラーは黒で統一されているが、他キャラとの比較からやや青みがかっている。\r\n性格は名の通りに暗めで情緒不安定気味（躁鬱の気がある）で、感情自体が基本的に低落気味。丸京とともに会話のダークサイド（こちらは自虐系）を主に担う。\r\n想像力が非常に長けており、五人の中で唯一想像妊娠を体現するほど。また絵画や彫刻などの創作もかなりの腕前。\r\n母親が行方不明。\r\n初期設定によると、魔梨威の対として像が固められたキャラ（赤と青の対比）。ただし、現行像に比較して、若干幼い印象がある。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "暗落亭苦来"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あんらくてい くくる"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 10,
+        "collects": 66
+    },
+    "anime_ids": [
+        37897
+    ]
+}

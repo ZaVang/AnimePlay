@@ -1,0 +1,56 @@
+{
+    "id": 69356,
+    "name": "カナタ・ホシジマ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/82/35/69356_crt_iu6FR.jpg?r=1553258524",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/35/69356_crt_iu6FR.jpg?r=1553258524",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/35/69356_crt_iu6FR.jpg?r=1553258524",
+        "grid": "https://lain.bgm.tv/pic/crt/g/82/35/69356_crt_iu6FR.jpg?r=1553258524"
+    },
+    "summary": "抜群の運動能力とサバイバル能力を持つ。\r\n山で遭難したことがあり、その経験からトレーニングを続けている。\r\n真っ直ぐで熱い男だが、空回りも多め。\r\n将来の夢は宇宙探検家。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "彼方·星岛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Kanata Hoshijima"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月5日"
+        },
+        {
+            "key": "身高",
+            "value": "181cm"
+        },
+        {
+            "key": "体重",
+            "value": "71kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 5,
+    "stat": {
+        "comments": 16,
+        "collects": 18
+    },
+    "anime_ids": [
+        273877
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 64717,
+    "name": "大場なな",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/50/bf/64717_crt_N8kbI.jpg?r=1534512781",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/50/bf/64717_crt_N8kbI.jpg?r=1534512781",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/50/bf/64717_crt_N8kbI.jpg?r=1534512781",
+        "grid": "https://lain.bgm.tv/pic/crt/g/50/bf/64717_crt_N8kbI.jpg?r=1534512781"
+    },
+    "summary": "聖翔音楽学園　99期　俳優育成科　出席番号15番\r\n大きな優しさでみんなを包み込む99期生の「お母さん」的舞台少女。ニックネームは「ばなな」。踊りや歌だけでなく舞台演出にも優れた才能を見せる。1年次にみんなで演じた『スタァライト』が今でもお気に入り。\r\n夢は「あの時の舞台が、また出来たらいいな」",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "大场奈奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "大場 なな"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "だいば なな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Daiba Nana"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ばなな，バナナ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7-12"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://revuestarlight.bushimo.jp/character/nana/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 12,
+    "stat": {
+        "comments": 174,
+        "collects": 418
+    },
+    "anime_ids": [
+        214265
+    ]
+}

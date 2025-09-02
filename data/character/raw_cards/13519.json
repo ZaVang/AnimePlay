@@ -1,0 +1,49 @@
+{
+    "id": 13519,
+    "name": "浅羽悠太",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/43/f9/13519_crt_vtl5V.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/43/f9/13519_crt_vtl5V.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/43/f9/13519_crt_vtl5V.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/43/f9/13519_crt_vtl5V.jpg"
+    },
+    "summary": "穗稀高中三年级生，浅羽兄弟之兄，身高174.8厘米，冷静成熟的个性，但有时也会陪着祐希起哄，是许多女生爱慕的对象。中学和春是剑道部成员，剑术精湛但挥剑却没任何表情，被千鹤夸做是平成最后的武士，而高中和春是茶道社的成员。曾和班上的高桥同学稍微交往过，但事实上只是配合她而已。漫画技巧也很好，是因为每天帮祐希收拾漫画的缘故。在单行本第三集时，和祐希一起帮春剪头发，和佑希自称是怪医黑杰克。在校庆中曾在摊位上扮演白雪公主的角色。在单行本第二集时，曾被千鹤误认成祐希。常常帮祐希做善后的工作，所以他的愿望是希望祐希吃饱饭时能自动将餐盒拿出来。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "浅羽悠太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あさば ゆうた"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "174.8cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 10,
+        "collects": 110
+    },
+    "anime_ids": [
+        29421,
+        14220
+    ]
+}

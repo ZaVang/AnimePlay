@@ -1,0 +1,216 @@
+{
+    "id": 227240,
+    "name": "新干线变形机器人",
+    "image_path": "data/images/anime/227240.jpg",
+    "points": 7.8,
+    "cost": 1,
+    "rarity": "N",
+    "description": "新干线超进化研究所为了从诞生于“漆黑新干线”的巨大怪物体手中守护日本的未来，\r\n人们开发了“新干线变形机器人SHINKALION”。\r\n具备与SHINKALION较高适合率的孩子们成为驾驶员，\r\n与研究所员齐心协力，面对强大的敌人！\r\n究竟“漆黑新干线”的目的是……。孩子们能否守护日本的未来……。\r\n变身！SHINKALION！ ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 76,
+    "synergy_tags": [
+        "机战",
+        "TV",
+        "日本",
+        "原创",
+        "子供向"
+    ],
+    "date": "2018-01-06",
+    "rating_rank": 748,
+    "rating_score": 7.8,
+    "rating_total": 128,
+    "main_character_ids": [
+        60319,
+        60320,
+        60321,
+        60322,
+        60323,
+        60324
+    ],
+    "main_characters": [
+        {
+            "id": 60319,
+            "name": "速杉ハヤト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f0/8d/60319_crt_2H2E2.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/8d/60319_crt_2H2E2.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/8d/60319_crt_2H2E2.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f0/8d/60319_crt_2H2E2.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5745,
+                    "name": "佐倉綾音",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929"
+                    },
+                    "short_summary": "佐仓绫音（さくら あやね）是日本的女性声优，1994年1月29日出生及成长于东京都；曾为[url=www.imenterprise.jp]I'm Enterprise[/url]旗下声优，2022年2月1日移籍至[url=www.aoni.co.jp]青二Production[/url]。\r\n\r\n[b]经历[/b]\r\n中学时所属剧团东俳，[url=https://nichinare.com/]日本播音演技研究所[/url]出身。《Dottoai广播》第45代主持人。2011年，在TV动画《[url=https://bgm.tv/subject/8990]食梦者玛利[/url]》出演[url=https://bgm.tv/character/10571]玛利·梦魔[/url]，首次出演主角。同年在剧场版动画《[url=https://bgm.tv/subject/12544]萤火之森[/url]》中出演[url=https://bgm.tv/character/15896]竹川萤[/url]，首次担当主役。\r\n其他代表作品有《[url=https://bgm.tv/subject/88287]请问您今天要来点兔子吗？[/url]》[url=https://bgm.tv/character/23647]保登心爱[/url]、《[url=https://bgm.tv/subject/78405]悠哉日常大王[/url]》[url=https://bgm.tv/character/21370]越谷夏海[/url]、《[url=https://bgm.tv/subject/37685]心理测量者[/url]》[url=https://bgm.tv/character/18476]霜月美佳[/url]、《[url=https://bgm.tv/subject/54433]我的青春恋爱物语果然有问题[/url]》[url=https://bgm.tv/character/26090]一色彩羽[/url]、《[url=https://bgm.tv/subject/120925]夏洛特[/url]》[url=https://bgm.tv/character/29511]友利奈绪[/url]、《[url=https://bgm.tv/subject/100444]四月是你的谎言[/url]》[url=https://bgm.tv/character/26004]泽部椿[/url]等。\r\n\r\n[b]其他[/b]\r\n昵称“あやねる（ayaneru）”是由[url=https://bgm.tv/person/4950]冈本信彦[/url]（《[url=https://bgm.tv/subject/8990]食梦者玛利[/url]》的合演者）给予的。关于昵称（本人说）“没什么特别的”。“あやねる”只是“绫音”和“睡觉（寝る）”的组合。\r\n完全的百合脑、百合控，非常喜欢[url=https://bgm.tv/person/4765]花泽香菜[/url]。\r\n爱好读书，特技是插图。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 60320,
+            "name": "男鹿アキタ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7d/c1/60320_crt_V779X.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/c1/60320_crt_V779X.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/c1/60320_crt_V779X.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7d/c1/60320_crt_V779X.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5824,
+                    "name": "沼倉愛美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/38/bf/5824_prsn_7eWbT.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/bf/5824_prsn_7eWbT.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/bf/5824_prsn_7eWbT.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/38/bf/5824_prsn_7eWbT.jpg"
+                    },
+                    "short_summary": "日本の女性声優、歌手。アーツビジョン所属。愛称は主にぬーさん。日本ナレーション演技研究所出身。\r\n\r\nバンダイナムコゲームスのシミュレーションゲーム『THE IDOLM@STER』シリーズの1つ『THE IDOLM@STER SP』に我那覇響役として抜擢され注目を集める。デビュー作である『THE IDOLM@STER SP』のオーディションでは「ETERNAL WIND〜ほほえみは光る風の中〜」を歌い合格。\r\nテレビアニメ初出演作は『銀魂』。\r\n2016年7月21日、フライングドッグレーベルより歌手デビューする事を発表。それに伴いオフィシャルサイトの開設や個人のブログの移設など一本化し、公式twitter「@numakura_manami 沼倉愛美（公式）」を開始した。\r\n2016年8月28日、タイアップとなるテレビアニメ『魔法少女育成計画』の放送とメジャーデビューに先行して、『Animelo Summer Live 2016 刻 -TOKI-』3日目に『魔法少女育成計画』のオープニングテーマ「叫べ」を披露。同年11月2日、デビューシングル「叫べ」をリリースした。\r\n2017年4月15日、自身の誕生日にファンクラブの開設、1stアルバム『My LIVE』の制作、1stライブツアーの開催を合わせて発表。4月17日、オフィシャルモバイルファンクラブ「AREA NU」をスタートした。\r\n2019年2月20日、2ndアルバム『アイ』を発売。また、同年4月6日より開催された2ndライブツアーでは、自身初の海外単独公演となる台湾を含む全4都市での公演を行った。\r\n2019年10月23日、同じく声優の逢坂良太と入籍したことを発表した。\r\n2019年11月25日、2020年2月にアーティスト活動を終了することを発表した。\r\n\r\n个人生活\r\n高校生のとき、アニメ好きの友人から、あるドラマCDを貸してもらってそれを初めて聴いたときに、「音しかない世界で、声だけで全てを表現する仕事を知り、そうした人にすごく憧れを持った」ことで、声優を志すようになった。また、『機動戦士ガンダムSEED』との出会いも、声優を目指した理由の一つとして挙げており、それをきっかけにガンダムシリーズのファンになったという。\r\n2016年11月、ソロ歌手としてのメジャーデビューを果たす。もともと、「THE IDOLM@STER」や「Trident」として活動していたときから、歌唱力は高く評価されており、「歌うことは好き」とのことだが、本人曰く、「自分自身を表現することが苦手なので、『自分自身の歌』として歌うことに対する自信を持てずにいた」ことから、歌手デビューになかなか踏み切れなかったという。しかし、ファンの温かい励ましもあり、「（自分が歌うことをファンがこれほどに待望してくれているならば、）自分で自分のことを歌うことに向いていないと勝手に思っているだけで、もしかしたら実はそうではないのかもと思えるようになった。『できる』と言ってもらえる自分を、信じてもいいのかなと思うようになった」ことや、「Trident」の活動を支えてくれたスタッフが、個人の音楽活動のスタッフとしても支えてくれることになったことなどから、ソロ歌手としての挑戦を決意したという。\r\nなお、メジャーデビューを待たずして、アニメソング最大の音楽フェス『Animelo Summer Live 2016 刻 -TOKI-』（3日目、8月28日）に異例の出場を果たしたが、自分の出番が来てスポットライトが当たった瞬間、「私だと気がついた人が名前を呼んでくれた声を、マイクが拾ってイヤモニ内に聞こえてきたおかげで安心できた」ことで、ソロとしてステージで歌う不安が消えてライブパフォーマンスができた、と述べている。\r\n2枚目のシングル「Climber's High」がリリースされた際のインタビューでは「ソロシンガーとしての確固たるスタイルはまだ模索中」と回答している。\r\n「765PRO ALLSTARS」キャストの中では最年少である。愛称は複数あり、「ぬーぬー」をはじめ、そこから派生した「ぬー」、竹達彩奈が呼んだ事で広まった「ぬーさん」、花澤香菜が命名した「アクターズスクール」などがある。\r\n好きな作品としては、先述のガンダムシリーズの他に、『攻殻機動隊』や『銀河英雄伝説』を挙げている。好みのタイプはナイトハルト・ミュラー。また、お気に入りの熊のぬいぐるみに「ラインハルト」と命名して、話しかけたり一緒に寝たりと溺愛している。なおラインハルトの姿は、彼女のブログの2010年4月15日（誕生日）の記事で確認できる。\r\n趣味は編み物。10歳のときから7年間ほど、「電子オルガンのテクニトーン」を習っていたという。\r\n2017年のインタビューによると、好物は日本酒、趣味は登山、個人で我慢大会を行うこともある。\r\n仲の良い声優に、今井麻美・下田麻美・浅倉杏美・原由実・赤﨑千夏・田所あずさ・佳村はるかの名前を挙げている。また、人生における大切な出会いとなった人物として、高校時代の担任、声優養成所の講師、「THE IDOLM@STER」の音響監督（菊田浩巳）の3人を挙げている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 60321,
+            "name": "大門山ツラヌキ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d3/20/60321_crt_73Jy7.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/20/60321_crt_73Jy7.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/20/60321_crt_73Jy7.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d3/20/60321_crt_73Jy7.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9096,
+                    "name": "村川梨衣",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/45/2e/9096_prsn_9Qrr3.jpg?r=1740108890",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/2e/9096_prsn_9Qrr3.jpg?r=1740108890",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/2e/9096_prsn_9Qrr3.jpg?r=1740108890",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/45/2e/9096_prsn_9Qrr3.jpg?r=1740108890"
+                    },
+                    "short_summary": "村川 梨衣（むらかわ りえ、6月1日 - ）は、日本の女性声優、ナレーター、ラジオパーソナリティ。東京俳優生活協同組合所属。\r\n\r\n声優を目指したきっかけは、小学校5年生頃にアニメ『HUNTER×HUNTER (1999年のアニメ)』を観た際による。主人公ゴン＝フリークスをとても魅力的に感じ、どうしたらゴンになれるのかを考えた結果、「声優になればいいんだ！」という考えにたどり着いた。その時、声優という職業が頭の中にパッと出てきた事が奇跡的だったと語っている。\r\n\r\nフロンティアワークス主催の「フロンティアチャレンジ2010」にて声優部門優秀賞受賞。 総合学園ヒューマンアカデミーを2011年3月に卒業後、東京俳優生活協同組合に所属。\r\n\r\n愛称の「りえしょん」は、広橋涼が名付けた。「しょん」には「パッション」「リアクション」「ハイテンション」の意が込められているという。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 60322,
+            "name": "月山シノブ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/56/9a/60322_crt_rw0VJ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/9a/60322_crt_rw0VJ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/9a/60322_crt_rw0VJ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/56/9a/60322_crt_rw0VJ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 49027,
+                    "name": "吉村那奈美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fc/08/49027_prsn_9EJmM.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/08/49027_prsn_9EJmM.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/08/49027_prsn_9EJmM.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fc/08/49027_prsn_9EJmM.jpg"
+                    },
+                    "short_summary": "吉村 那奈美（よしむら ななみ、1993年1月21日 - ）は、日本の女性声優、歌手。山形県出身。青二プロダクション所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 60323,
+            "name": "清洲リュウジ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/01/be/60323_crt_6qoSv.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/be/60323_crt_6qoSv.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/be/60323_crt_6qoSv.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/01/be/60323_crt_6qoSv.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7385,
+                    "name": "逢坂良太",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/81/c0/7385_prsn_3DfT0.jpg?r=1543641007",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/c0/7385_prsn_3DfT0.jpg?r=1543641007",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/c0/7385_prsn_3DfT0.jpg?r=1543641007",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/81/c0/7385_prsn_3DfT0.jpg?r=1543641007"
+                    },
+                    "short_summary": "日本男性声优，隶属日本EARLY WING公司。德岛县出身。\r\n\r\n原本只是很喜欢动画，并没有以成为声优为目标，但是在高中的入学式突然觉得“要成为声优”为目标。在家乡的工业高中毕业后，就和一起想要成为声优的朋友一起来到东京，在日本工学院八王子专门学校的舞台科花了两年学习舞台的基础，最后在专门学校毕业后就到了事务所参加考试，但是不幸落选了，在之后，参加了EARLY WING的追加面试中得到了正选。\r\n在2012年4月中，《钓球》的真田雪是成为声优后的第一次主役。\r\n在2015年的第9回声优奖获得新人男优赏。\r\n\r\n兴趣是散步和电玩，假日会花数个小时散步。\r\n喜欢的歌手是JAM Project。\r\n有一个姐姐和一个弟弟。\r\n喜欢玩Tales of Eternia，甚至列入喜欢的游戏前三名。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 60324,
+            "name": "シャショット",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/11/6a/60324_crt_V3NsY.jpg?r=1516386358",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/11/6a/60324_crt_V3NsY.jpg?r=1516386358",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/11/6a/60324_crt_V3NsY.jpg?r=1516386358",
+                "grid": "https://lain.bgm.tv/pic/crt/g/11/6a/60324_crt_V3NsY.jpg?r=1516386358"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4657,
+                    "name": "うえだゆうじ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c7/93/4657_prsn_MSooY.jpg?r=1657805481",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/93/4657_prsn_MSooY.jpg?r=1657805481",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/93/4657_prsn_MSooY.jpg?r=1657805481",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c7/93/4657_prsn_MSooY.jpg?r=1657805481"
+                    },
+                    "short_summary": "福岡縣出身。原本隸屬於ARTSVISION經紀公司，2004年7月1日起離開該公司，不能再以本名「上田祐司」做為藝名，因此就用其姓名發音的平假名「うえだゆうじ」作為現在的藝名，之後從2005年4月1日至2012年2月加入大澤事務所。現在為自由身。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,376 @@
+{
+    "id": 175137,
+    "type": 2,
+    "name": "ニンジャスレイヤー フロムアニメイシヨン （スペシャル・エディシヨン）",
+    "name_cn": "忍者杀手 特别编辑版",
+    "summary": "根据布拉德利、菲利普合著（由“翻译”本兌有和杉ライカ二人声称）的SF小说改编的动画作品，网络动画版于2015年4月开始在NICONICO动画等网站开播。话数进行过再编辑的TV版将于2016年4月播放。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2016-04-02",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/ec/7d/175137_78Wf1.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/ec/7d/175137_78Wf1.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/ec/7d/175137_78Wf1.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/ec/7d/175137_78Wf1.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/ec/7d/175137_78Wf1.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "忍者杀手 特别编辑版"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "忍者终结者SE",
+                    "k": null
+                },
+                {
+                    "v": "忍者杀手SE",
+                    "k": null
+                },
+                {
+                    "v": "NINJA SLAYER SPECIAL EDITION",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2016年4月2日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.ninjaslayer-animation.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX"
+        },
+        {
+            "key": "其他电视台",
+            "value": "BS11 / tvk / サンテレビ"
+        },
+        {
+            "key": "播放结束",
+            "value": "2016年6月25日"
+        },
+        {
+            "key": "Copyright",
+            "value": "© Ninj@ Entertainment/Ninj@ Conspiracy"
+        },
+        {
+            "key": "原作",
+            "value": "「ニンジャスレイヤー」（発行元：株式会社KADOKAWA）"
+        },
+        {
+            "key": "人物原案",
+            "value": "わらいなく"
+        },
+        {
+            "key": "人物设定",
+            "value": "稲戸せれれ、信じろ"
+        },
+        {
+            "key": "制作",
+            "value": "ニンジャ委員会"
+        }
+    ],
+    "volumes": 0,
+    "eps": 13,
+    "total_episodes": 13,
+    "rating": {
+        "rank": 717,
+        "total": 774,
+        "count": {
+            "one": 3,
+            "two": 0,
+            "three": 4,
+            "four": 1,
+            "five": 18,
+            "six": 69,
+            "seven": 227,
+            "eight": 326,
+            "nine": 87,
+            "ten": 39
+        },
+        "score": 7.6
+    },
+    "collection": {
+        "wish": 442,
+        "collect": 1216,
+        "doing": 78,
+        "on_hold": 82,
+        "dropped": 86
+    },
+    "tags": [
+        {
+            "name": "TRIGGER",
+            "count": 230
+        },
+        {
+            "name": "小说改",
+            "count": 123
+        },
+        {
+            "name": "2016年4月",
+            "count": 118
+        },
+        {
+            "name": "TV",
+            "count": 101
+        },
+        {
+            "name": "今石洋之",
+            "count": 101
+        },
+        {
+            "name": "雨宫哲",
+            "count": 85
+        },
+        {
+            "name": "忍者杀手",
+            "count": 71
+        },
+        {
+            "name": "吚呀~",
+            "count": 57
+        },
+        {
+            "name": "2016",
+            "count": 57
+        },
+        {
+            "name": "战斗",
+            "count": 49
+        },
+        {
+            "name": "有病",
+            "count": 31
+        },
+        {
+            "name": "纸片",
+            "count": 31
+        },
+        {
+            "name": "忍者杀手SE",
+            "count": 24
+        },
+        {
+            "name": "特别编辑版",
+            "count": 20
+        },
+        {
+            "name": "搞笑",
+            "count": 15
+        },
+        {
+            "name": "佐藤裕",
+            "count": 10
+        },
+        {
+            "name": "日本",
+            "count": 9
+        },
+        {
+            "name": "热血",
+            "count": 7
+        },
+        {
+            "name": "奇幻",
+            "count": 4
+        },
+        {
+            "name": "2016年",
+            "count": 4
+        },
+        {
+            "name": "漫画改",
+            "count": 3
+        },
+        {
+            "name": "雨宮哲",
+            "count": 3
+        },
+        {
+            "name": "轻小说改",
+            "count": 3
+        },
+        {
+            "name": "森川智之",
+            "count": 3
+        },
+        {
+            "name": "信じろ",
+            "count": 2
+        },
+        {
+            "name": "日本动画",
+            "count": 2
+        },
+        {
+            "name": "剧情",
+            "count": 2
+        },
+        {
+            "name": "喜剧",
+            "count": 2
+        },
+        {
+            "name": "轻改",
+            "count": 2
+        },
+        {
+            "name": "打斗",
+            "count": 2
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "小说改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        32285,
+        32976,
+        39696,
+        39699
+    ],
+    "main_characters": [
+        {
+            "id": 32285,
+            "name": "ニンジャスレイヤー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/65/af/32285_crt_Xxd55.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/af/32285_crt_Xxd55.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/af/32285_crt_Xxd55.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/65/af/32285_crt_Xxd55.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3822,
+                    "name": "森川智之",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e1/d8/3822_prsn_HDeX6.jpg?r=1632668462",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/d8/3822_prsn_HDeX6.jpg?r=1632668462",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/d8/3822_prsn_HDeX6.jpg?r=1632668462",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e1/d8/3822_prsn_HDeX6.jpg?r=1632668462"
+                    },
+                    "short_summary": "森川 智之は、日本の声優、ナレーター、歌手。アクセルワン代表取締役。\r\n\r\nアニメ・ゲーム作品では主にクールな二枚目を担当することが多いが、その他にも幅広い芸風を持ち、様々な役をこなす。強い音圧のある声量を誇り、主役デビューとなる『宇宙の騎士テッカマンブレード』のアフレコ中にマイクを2本破壊した程。　このエピソードから、ファンに「マイククラッシャー」と呼ばれることも。その為、ピンマイクをつける時にはかなり低い位置につけるとのこと。\r\n\r\n洋画の吹き替えではキアヌ・リーブス、ブラッド・ピット、トム・クルーズ、ユアン・マクレガーなどを担当する。\r\n\r\n声優活動と併せて音楽活動も行っている。『アンジェリーク』シリーズにて立木文彦とデュエットしたことが縁で、後に同氏と音楽ユニット「2HEARTS」を結成した。\r\n\r\n好きな食べ物は生肉。一部の声優からは「生肉先輩」と呼ばれている。また肉の焼き方にもうるさい。愛称は「もりもり」、（BL界の）「帝王」。ちなみに帝王と呼ばれていることは本人も自負しているとか。\r\n2006年頃から肉体改造を開始し、半年で10kgも痩せるほどの変貌を遂げている。\r\n愛犬家。アクセルという名のレトリーバーを飼っていたが2009年10月に永眠。\r\n\r\nゲームへの出演も数多いが、初めてゲームをプレイしたのは2007年のこと。プレイしたのは『Devil May Cry』。後に主人公であるダンテの日本語版声優を担当する事になる。ちなみにPS2を購入するまでメモリーカードの存在を知らなかった。\r\n\r\n2011年4月1日に声優プロダクション「アクセルワン」を設立。独立し、代表取締役社長となった。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 32976,
+            "name": "ヤモト・コキ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/48/37/32976_crt_3qY3Z.jpg?r=1676033357",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/37/32976_crt_3qY3Z.jpg?r=1676033357",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/37/32976_crt_3qY3Z.jpg?r=1676033357",
+                "grid": "https://lain.bgm.tv/pic/crt/g/48/37/32976_crt_3qY3Z.jpg?r=1676033357"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 12568,
+                    "name": "雨宮天",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a2/62/12568_prsn_jLLz4.jpg?r=1693248727"
+                    },
+                    "short_summary": "雨宫天（あまみや そら）是日本的女性声优、歌手，1993年8月28日出生于日本东京都。\r\n\r\n[b]经历[/b]\r\n1993年8月28日出生于日本东京都；因憧憬声优[url=https://bgm.tv/person/4244]泽城美雪[/url]而向往成为一名声优。\r\n在2011年举办的第2回MusicRay'n超级声优试镜中合格，2012年声优活动开始，2014年在TV动画《[url=https://bgm.tv/subject/88493]一周的朋友。[/url]》担任[url=https://bgm.tv/character/23104]藤宫香织[/url]CV,为初主役角色。\r\n2014年12月21日，与同事务所的[url=https://bgm.tv/person/13565]麻仓桃[/url]、[url=https://bgm.tv/person/13581]夏川椎菜[/url]组成声优组合“[url=https://bgm.tv/person/18492]TrySail[/url]”，并于2015年·正式开始活动。\r\n2015年第9回声优奖中获得新人女声优奖。\r\n2015年10月2日，发行自己的第一部写真集《ソライロ～青と旅する～》。\r\n2020年4月17日，开通绘画日记企划期间限定Twitter账号(现已转为永久账号)",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 39696,
+            "name": "ナンシー・リー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b8/76/39696_crt_92yQn.jpg?r=1676033387",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/76/39696_crt_92yQn.jpg?r=1676033387",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/76/39696_crt_92yQn.jpg?r=1676033387",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b8/76/39696_crt_92yQn.jpg?r=1676033387"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4249,
+                    "name": "斎藤千和",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/01/33/4249_prsn_l0jSI.jpg?r=1725291268",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/33/4249_prsn_l0jSI.jpg?r=1725291268",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/33/4249_prsn_l0jSI.jpg?r=1725291268",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/01/33/4249_prsn_l0jSI.jpg?r=1725291268"
+                    },
+                    "short_summary": "高中三年级时的7月，日本播音演技研究所入学。次年1月加入I'm Enterprise旗下声优养成机构剧团ヴォアレーヴ。\r\n2001年，初次出演动画《可可露图书馆》的主人公可可露，表现优异，完全表现出主人公的可爱之处，但随后的一年半因学业问题，完全不接任何动画配音的工作。\r\n2002年，与植田佳奈、森永理科以中原麻衣结成声优组合“みっくすJUICE”，随后以组合名义参与CD发行和现场公演等音乐活动以及电视和电台广播节目的演出。\r\n2003年，日本播音演技研究所毕业。声优组合“みっくすJUICE”解散。\r\n2011年10月获得《Newtype×マチ★アソビ 动画奖2011》助演女声优赏，所出演角色晓美焰获女性角色赏。\r\n2013年7月29日，在事务所官方网站上宣布了结婚的消息 。\r\n2015年1月，第一个孩子（女儿）诞生。同年10月1日在事务所官网发布了这则消息。\r\n\r\n斋藤千和与声优结缘原因，拜托母亲出外购买看惯的时装杂志《ViVi》时，母亲不小心买错了陈列台上《ViVi》底下的一本声优杂志，令千和对声优开始产生兴趣，从此走上了声优之路。\r\n萌和腹黑（注：毒舌）萝莉系为代表角色，以深厚的配音实力、多变的声线，得到更多人关注。出道以来，为人十分低调，一直踏实的做好自己的本职工作。\r\n家中在家乡开蛋糕店，家族成员共五人，生活融洽，2006年后斋藤千和独自留京租屋工作，仍经常与母亲手机通讯。\r\n兴趣爱好的看电影以及打篮球。\r\n中学时隶属排球部，学业优秀，国语和英语曾在中学全国模拟时获得前10位（但是她说是瞎蒙的），选择高中时以某高中可爱的校服和其外国游学课程为由入学。\r\n高中修学旅行，与同学畅游西班牙途中，同伴的手袋遭劫匪抢走，斋藤千和旋即追上并击败歹徒 。\r\n千和与声优结缘可谓十分戏剧。话说一日，千和拜托母亲出外购买看惯的时装杂志「ViVi」时，母亲顺手买错了陈列台上「ViVi」底下的一本声优杂志，令千和对声优产生兴趣，从此便走上了声优之路。\r\n经常使用的昵称是“ちわ（千和）”，本人则不喜欢“こんにちわちわ”这个昵称。\r\n2002年与同事务所所属同年的声优森永理科、植田佳奈、中原麻衣结成声优团体《综合果汁（みっくすJUICE）》。该团体参与CD发行和live 公演等音乐活动、电视和电台广播节目的演出，而且，在动画《妄想科学美少女》亦有演出。团体于2003年解散。\r\n2003年，出演动画《最终流放》的女主角拉维·黑特，表示通过出演这个角色，使自己第一次深入思考，世界观有了很大的改变。同年的《妄想科学美少女》的秋茂菖蒲和《R.O.D -THE TV-》的阿妮塔·京确立了千和在萌系角色的地位。\r\n《月咏-MOON PHASE-》中的叶月和《不可思议的教室》的宫本蕾贝卡两个角色展现了其萌和腹黑这双重性格同时并存的高超演技以外，透过对白中微带抽泣声，带动了观众的感情，令千和成为当时年青高演技派女声优代表之一。\r\n首个电台广播是oice Crew，与桑谷夏子担任第九代（2001年10月7日 － 2002年9月29日）的共同主持。同时，两人结成组成组合“coopee”，在全国多个地方表演。为了回复FANS的来信，当时仍是学生的斋藤千和唯有乘学校午休时间在课室对每封信亲笔回覆。\r\n与歌手中野爱子感情亲密，斋藤千和在2011年其30岁生日前一天，由于发生东日本大地震造成交通堵塞无法回家，就跑到了中野家借宿了一晚。\r\n与新房昭之有过多次合作，《魔法少女小圆》、《月咏-MOON PHASE-》、《化物语》、《不可思议的教室》以及《吸血鬼同盟》的监督都是新房昭之，被粉丝们戏称“新房御用声优”。\r\n因为常常在录影现场吃香蕉，所以被其他人称作“香蕉人”。\r\n能登麻美子曾经对她说“如果到30岁都还是单身的话，就和我结婚让我照顾你吧。”曾以“想让能登幸福”为名，要把弟弟介绍给能登麻美子。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 39699,
+            "name": "ダークニンジャ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/87/c9/39699_crt_RZMpB.jpg?r=1458783939",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/c9/39699_crt_RZMpB.jpg?r=1458783939",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/c9/39699_crt_RZMpB.jpg?r=1458783939",
+                "grid": "https://lain.bgm.tv/pic/crt/g/87/c9/39699_crt_RZMpB.jpg?r=1458783939"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3898,
+                    "name": "速水奨",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f8/ba/3898_prsn_BD5L7.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/ba/3898_prsn_BD5L7.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/ba/3898_prsn_BD5L7.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f8/ba/3898_prsn_BD5L7.jpg"
+                    },
+                    "short_summary": "日本の男性声優、俳優、歌手、ナレーター。\r\n本名は大濱 靖（おおはま やすし）。妻は声優の五十嵐麗。甥（現養子）に同じく声優の速水秀之がいる。以前はぷろだくしょんバオバブや青二プロダクションに所属していた。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

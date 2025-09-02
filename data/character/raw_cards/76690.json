@@ -1,0 +1,48 @@
+{
+    "id": 76690,
+    "name": "南川朝陽",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ec/80/76690_crt_6JfCL.jpg?r=1613762881",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ec/80/76690_crt_6JfCL.jpg?r=1613762881",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ec/80/76690_crt_6JfCL.jpg?r=1613762881",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ec/80/76690_crt_6JfCL.jpg?r=1613762881"
+    },
+    "summary": "初中一年级生，住在小梦隔壁的儿时玩伴。擅长运动，打算加入网球队。\r\n\r\n中学1年生で、ゆめの隣に住んでいる幼馴染。運動が得意で、テニス部に入部予定。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "南川朝阳"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "南川 朝陽"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "11月15日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 15,
+    "stat": {
+        "comments": 5,
+        "collects": 4
+    },
+    "anime_ids": [
+        289829
+    ]
+}

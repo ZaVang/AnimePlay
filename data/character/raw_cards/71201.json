@@ -1,0 +1,55 @@
+{
+    "id": 71201,
+    "name": "ジュノ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5e/5b/71201_crt_BWjR1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/5b/71201_crt_BWjR1.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/5b/71201_crt_BWjR1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5e/5b/71201_crt_BWjR1.jpg"
+    },
+    "summary": "雌性的大灰狼，16岁，2月16日出生，水瓶座。\r\n血型AB型。身高170公分，体重51公斤，毛色为朱红色。\r\n切里顿学院高中部一年级，戏剧社演员组组员。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "茱诺"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "♀"
+        },
+        {
+            "key": "生日",
+            "value": "2月16日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "体重",
+            "value": "51kg"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 16,
+    "stat": {
+        "comments": 19,
+        "collects": 35
+    },
+    "anime_ids": [
+        273843
+    ]
+}

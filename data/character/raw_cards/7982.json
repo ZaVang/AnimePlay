@@ -1,0 +1,68 @@
+{
+    "id": 7982,
+    "name": "奥平あきら",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4e/fa/7982_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/fa/7982_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/fa/7982_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4e/fa/7982_crt_anidb.jpg"
+    },
+    "summary": "藤が谷高等部には外部から入学した。ふみの幼馴染で親友。演劇部所属で、同じく演劇部所属の京子と親しい。幼少時はふみよりも少し背が高かったが、現在は同年代の女の子の中でも飛び抜けて小柄である。抜けているところもあるがわりとしっかり者で、落ち込みやすいふみの相談相手になっている。最初はふみと恭己の恋を応援していたが、二人の破局の後にふみに告白されて付き合うことになる。三年生に進級する前にふみと肉体関係を結ぶに至った。また、三年次に演劇部の部長に選出されている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "奥平明"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "奥平晶"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おくだいら あきら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Okudaira Akira"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月16日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 4,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 16,
+    "stat": {
+        "comments": 17,
+        "collects": 42
+    },
+    "anime_ids": [
+        1758
+    ]
+}

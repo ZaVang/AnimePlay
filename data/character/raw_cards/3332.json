@@ -1,0 +1,72 @@
+{
+    "id": 3332,
+    "name": "若林源三",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f5/1a/3332_crt_swa1t.jpg?r=1519007547",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/1a/3332_crt_swa1t.jpg?r=1519007547",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/1a/3332_crt_swa1t.jpg?r=1519007547",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f5/1a/3332_crt_swa1t.jpg?r=1519007547"
+    },
+    "summary": "若林源三（日语：若林源三，平假名：わかばやし げんぞう），日本动漫《足球小将》中的角色，是主角大空翼遇到的第一个对手。\r\n戴着运动帽、抬手微压帽檐，这是若林源三给人的最初印象，也是其标志性的动作。\r\n若林源三在担任守门员的过程中意识到，这个位置在球队中起著关键作用，即“只要门将不失球，球队就不会输。”\r\n大空翼转到了南葛小学，最早遇到的顶尖选手就是若林。从此两个人的友情和对手关系就被强烈的羁绊联系起来。两人位置不同却互相尊敬，同时认为对方都是必须超越的一道铜墙铁壁。大空翼进攻，若林防守——这幅图画是日本足球不断前进的原点。\r\n和大空翼众多的对手一样，若林也有队长经验，他用自己激励的话语将队友连接起来。\r\n让若林成为SGGK的是——“死守球门”的意志。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "若林源三"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "若林源三"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "わかばやし げんぞう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Wakabayashi Genzou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "12月7日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "183cm"
+        },
+        {
+            "key": "体重",
+            "value": "77kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 7,
+    "stat": {
+        "comments": 3,
+        "collects": 7
+    },
+    "anime_ids": [
+        5426
+    ]
+}

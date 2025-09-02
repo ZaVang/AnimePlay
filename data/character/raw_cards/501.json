@@ -1,0 +1,56 @@
+{
+    "id": 501,
+    "name": "杉崎鍵",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/80/94/501_crt_4j44p.jpg?r=1613649438",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/94/501_crt_4j44p.jpg?r=1613649438",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/94/501_crt_4j44p.jpg?r=1613649438",
+        "grid": "https://lain.bgm.tv/pic/crt/g/80/94/501_crt_4j44p.jpg?r=1613649438"
+    },
+    "summary": "本作的男主角，也是在故事里写这本小说的人。是私立碧阳学园学生会副会长，高中2年级。在期末考中拿到第一名，靠着要是成绩优秀的人愿意，也能加入学生会的“优良规定”，而当上现在的职位。知弦因其名而称他为“key”。\r\n\r\n是个罕见的十八禁游戏、Galgame迷，能不忌讳地公然说自己之外全都是美少女的学生会是“我的后宫”（当然其他成员是没人会承认的）。另一方面，即使只有一点点，为了能让学生会成员聊天的时间多一点而抱着学生会的杂务事全由自己一个人完成的觉悟。有时会说些性骚扰的话而被粗鲁的对待，但栗梦说：“在这所学校里没有一个人是真的讨厌他的”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "杉崎键"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "杉崎 鍵"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "すぎさき けん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sugisaki Ken"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 48,
+        "collects": 137
+    },
+    "anime_ids": [
+        2567
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "id": 75040,
+    "name": "クレア・バーブランド",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/74/2e/75040_crt_uHtYz.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/74/2e/75040_crt_uHtYz.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/74/2e/75040_crt_uHtYz.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/74/2e/75040_crt_uHtYz.jpg"
+    },
+    "summary": "14歳。女子。地球（アメリカ）出身。血液型はO型。高級将校の一人娘。戦闘にはほとんど参加せず、主にジェイナスの内政家事を担当する。世話好きで頭の回転も速いが、少々潔癖症。ストレスを内に溜め込むきらいがあり、マルロルチーナら幼い子供達の母親代わりも任せられてしまう状況に、時には感情を爆発させたこともある。スコットとはガールスカウト時代からの知り合いで、彼の良き理解者。終盤での両親の収容所解放作戦では重機関銃を撃ちまくり、さらにバズーカを拾って暴れまくる意外な一面を覗かせる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "CLARE BARBLAND"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        37295
+    ]
+}

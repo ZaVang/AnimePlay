@@ -1,0 +1,52 @@
+{
+    "id": 153652,
+    "name": "譜風",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/19/4d/153652_crt_T0mUY.jpg?r=1717333826",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/4d/153652_crt_T0mUY.jpg?r=1717333826",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/4d/153652_crt_T0mUY.jpg?r=1717333826",
+        "grid": "https://lain.bgm.tv/pic/crt/g/19/4d/153652_crt_T0mUY.jpg?r=1717333826"
+    },
+    "summary": "「真夜中ぱんチ」のメンバー。\r\n控えめで恥ずかしがり屋だが、メンバーの中ではもっとも常識人。\r\n普段は銭湯でアルバイトをしている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "谱风"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "譜風"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ふう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fū"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 33,
+        "collects": 73
+    },
+    "anime_ids": [
+        477207
+    ]
+}

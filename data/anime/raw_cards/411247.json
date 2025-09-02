@@ -1,0 +1,624 @@
+{
+    "id": 411247,
+    "type": 2,
+    "name": "ポケットモンスター",
+    "name_cn": "宝可梦 地平线",
+    "summary": "精灵宝可梦，简称宝可梦，\r\n这颗星球上非常非常不可思议的生物，\r\n在天空、大海、森林、街道之中到处都能看到它们的身影。\r\n\r\n持有不可思议吊坠的来自帕底亚的少女——莉可。\r\n持有神秘精灵球的来自关都的少年——罗伊。\r\n\r\n以广阔的宝可梦世界为舞台，\r\n莉可和罗伊的新冒险开始了！\r\n等待两人的相遇，还有命运是—！？\r\n\r\n这是一个通过冒险“找到”重要的东西的故事。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2023-04-14",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/12/1b/411247_2LZ39.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/12/1b/411247_2LZ39.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/12/1b/411247_2LZ39.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/12/1b/411247_2LZ39.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/12/1b/411247_2LZ39.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "宝可梦 地平线"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Pocket Monsters (2023)",
+                    "k": null
+                },
+                {
+                    "v": "宝可梦（2023）",
+                    "k": null
+                },
+                {
+                    "v": "Pokémon Horizons",
+                    "k": null
+                },
+                {
+                    "v": "Pocket Monsters",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "*"
+        },
+        {
+            "key": "放送开始",
+            "value": "2023年4月14日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期五"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://www.tv-tokyo.co.jp/anime/pocketmonster2023/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京系"
+        },
+        {
+            "key": "导演",
+            "value": "でんさおり(傳沙織)"
+        },
+        {
+            "key": "音乐",
+            "value": "コーニッシュ"
+        },
+        {
+            "key": "Copyright",
+            "value": "©Nintendo･Creatures･GAME FREAK･TV Tokyo･ShoPro･JR Kikaku ©Pokémon"
+        },
+        {
+            "key": "总导演",
+            "value": "冨安大貴（第46话起）"
+        },
+        {
+            "key": "副导演",
+            "value": "中田誠（第26话起）"
+        },
+        {
+            "key": "人物设定",
+            "value": "山崎玲愛、伊藤京子(副)"
+        },
+        {
+            "key": "人物原案",
+            "value": "ゲームフリーク（杉森建、金子智美、吉田宏信、安藤絵美、阿部杏子、橘髙文美恵、橋本美咲、山本裕輝、海野隆雄、黄資恩、勝田聡、大城聖未、里大樹、James Turner、前田咲子、伊藤博人、大城良輔、大村祐介、有賀ヒトシ、藤原基史、にしだあつこ、コザキユースケ、竹、網、水谷恵、市川春子、北風友裕、倉島一幸、島崎麻里）"
+        },
+        {
+            "key": "动画制作",
+            "value": "OLM TEAM KATO（第1-45话） / TEAM KUMEMURA（第45话起）"
+        },
+        {
+            "key": "动作作画监督",
+            "value": "矢嶋哲生（动作导演#1-45）；忍田雄介（OP2）"
+        },
+        {
+            "key": "原案",
+            "value": "田尻智"
+        },
+        {
+            "key": "监修",
+            "value": "石原恒和"
+        },
+        {
+            "key": "系列监督",
+            "value": "冨安大貴（创意导演#1-45）"
+        },
+        {
+            "key": "制片人",
+            "value": "關口彩香、工藤雄介（第1-45话）→梶原剛（第46话起）、根岸智也（第1话-第67话）→百瀬康平（第68话起）；创意制片人：加藤浩幸（第46起）"
+        },
+        {
+            "key": "副制片人",
+            "value": "藤原良尭（第1-89话）、的場昴樹（第90话起）、大日向俊（第1-9话）、古家嘉之（第10话-第67话）、石川洋生（第68-89话）、鈴木英里子（第90话起）"
+        },
+        {
+            "key": "美术监督",
+            "value": "武藤正敏"
+        },
+        {
+            "key": "色彩设计",
+            "value": "谷本千絵、吉野記通"
+        },
+        {
+            "key": "摄影监督",
+            "value": "鈴木大倫；石見優作（OP2）"
+        },
+        {
+            "key": "剪辑",
+            "value": "野川仁"
+        },
+        {
+            "key": "音响监督",
+            "value": "三間雅文（Techno Sound）"
+        },
+        {
+            "key": "音乐制作",
+            "value": "一部原曲·作曲: 一之瀬剛、足立美奈子、増田順一、Toby Fox"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "OP: asmi feat. Chinozo / yama×ぼっちぼろまる / IVE / ZEROBASEONE / ゆず；ED: リコ（鈴木みのり）、ロイ（寺崎裕香）/ 9Lana、つぐらなわかみょ、むト、缶缶 / 松田里奈&森田ひかる / ME:I"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "OP: Chinozo / yama、ぼっちぼろまる / YHEL、gratia、Sorato、Ryo Ito / Tomoki Tamatani、KUSHITA / 北川悠仁、岩沢厚治；ED: Fuma no KTR、松丸亮吾&藤本海右、ポケモンラップやってみ隊 / TOPHAMHAT-KYO / DECO*27 / Masami Kakinuma (Relic Lyric, Inc.)"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "OP: Chinozo / yama、ぼっちぼろまる、是︎ / YHEL、gratia、Sorato、Ryo Ito / Tomoki Tamatani、KUSHITA、Sora Tansho / 北川悠仁、TeddyLoid；ED: WAZGOGG、Fuma no KTR、Joe Ogawa / ギガP×TeddyLoid / Daisuke “D.I” Imai×MINTAKHA (Relic Lyric, Inc.)"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "OP: Chinozo / ぼっちぼろまる / Sorato / Sora Tansho / TeddyLoid、ゆず；ED: Joe Ogawa / ギガP×TeddyLoid / Daisuke “D.I” Imai (Relic Lyric, Inc.)"
+        },
+        {
+            "key": "主动画师",
+            "value": "忍田雄介"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "傳沙織(OP1&5)、冨安大貴(OP2)、京極尚彦(OP3)、忍田雄介(OP4) / 坂本鼓太郎(ED1&2)、冨安大貴(ED3)、森山愛弓(ED4)、新開彩絵(ED5)"
+        },
+        {
+            "key": "製作",
+            "value": "テレビ東京、テレビ東京メディアネット、小学館集英社プロダクション"
+        },
+        {
+            "key": "系列构成",
+            "value": "佐藤大；剧本协调：松澤くれは"
+        },
+        {
+            "key": "脚本",
+            "value": "佐藤大、永川成基、武田無我、松澤くれは、土屋理敬、赤尾でこ(三重野瞳)、福島直浩、うえのきみこ"
+        },
+        {
+            "key": "协力",
+            "value": "ジェイアール東日本企画；脚本协力：加川大地；原案协力：大森滋"
+        },
+        {
+            "key": "分镜",
+            "value": "傳沙織、矢嶋哲生、冨安大貴、浅田裕二、尼野浩正、野田泰宏、齋藤徳明、中田誠、清水聡、高木啓明、大賀まこと、西田章二、佐藤真人、森山愛弓、忍田雄介、毛利和昭、入好さとる、MISU山猫、悲田院みお、岩田義彦、小林一三、鈴、住山恭平、木下大悟；片尾剧场：枡大地、田坂東乃、植田千湖"
+        },
+        {
+            "key": "演出",
+            "value": "傳沙織、大賀まこと、森山愛弓、小柴純弥、浅田裕二、上野史博、野田泰宏、又野弘道、岩田義彦、中田誠、月野正志、オジング、高木啓明、嵯峨敏、奥野浩行、アベユーイチ、小島隆史、MISU山猫、小玉拳也、まつもとよしひさ、ハラダツルギ、新開彩絵、住山恭平、大井将経、植田千湖、徐恵眞、後藤康徳；片尾剧场：坂本鼓太郎、枡大地、田坂東乃、植田千湖"
+        },
+        {
+            "key": "演出助理",
+            "value": "大賀まこと、森山愛弓、家村あゆみ、青葉稜太郎、枡大地、植田千湖、Limthong Chidphong、紅月陽、住山恭平"
+        },
+        {
+            "key": "作画监督",
+            "value": "山崎玲愛、伊藤京子"
+        },
+        {
+            "key": "作画监督助理",
+            "value": "忍田雄介、田中修司、永留あい、朴そよん、重谷れもん、황미예、渡辺千尋、キム・ギョンミン、牧原加奈、沖見茉由子"
+        },
+        {
+            "key": "动画制片人",
+            "value": "加藤浩幸（第1-45话）、久米村誠（第46起）"
+        },
+        {
+            "key": "制作管理",
+            "value": "吉田昌平（第1-89话）、森永裕人（第90话起）；制作管理辅佐：Bryan Wang Yi Herng（第90话起）；现场制片人：久米村誠（第1-45话）"
+        },
+        {
+            "key": "设定",
+            "value": "动画宝可梦设定：一石小百合、松原徳弘、安田周平、山崎玲愛、柳原好貴、酒井裕未、海老沢咲希、辻早智子、吉野真一、伊藤京子；飞行艇设计：由利聡；客串设定：一石小百合、篠原隆、海老沢咲希、萩原慶汰、吉野真一、川合彩香、柳原好貴、酒井裕未、安田周平、田坂東乃、服部夏美、辻早智子、松本めぐみ、高星佑平、中矢利子、田中修司、花井柚都子；设定协力：ゲームフリーク、株式会社ポケモン"
+        },
+        {
+            "key": "副标题",
+            "value": "リコとロイの旅立ち(1话~25话)；テラパゴスのかがやき(26话~45话)；テラスタルデビュー(46话~67话)；レックウザ ライジング(68话~89话)；メガボルテージ(90话~)"
+        }
+    ],
+    "volumes": 0,
+    "eps": 0,
+    "total_episodes": 107,
+    "rating": {
+        "rank": 1053,
+        "total": 924,
+        "count": {
+            "one": 3,
+            "two": 5,
+            "three": 2,
+            "four": 3,
+            "five": 32,
+            "six": 104,
+            "seven": 321,
+            "eight": 325,
+            "nine": 73,
+            "ten": 56
+        },
+        "score": 7.4
+    },
+    "collection": {
+        "wish": 662,
+        "collect": 431,
+        "doing": 1733,
+        "on_hold": 356,
+        "dropped": 159
+    },
+    "tags": [
+        {
+            "name": "宝可梦",
+            "count": 392
+        },
+        {
+            "name": "TV",
+            "count": 234
+        },
+        {
+            "name": "2023年4月",
+            "count": 228
+        },
+        {
+            "name": "游戏改",
+            "count": 196
+        },
+        {
+            "name": "2023",
+            "count": 121
+        },
+        {
+            "name": "OLM",
+            "count": 115
+        },
+        {
+            "name": "pokemon",
+            "count": 106
+        },
+        {
+            "name": "精灵宝可梦",
+            "count": 99
+        },
+        {
+            "name": "奇幻",
+            "count": 92
+        },
+        {
+            "name": "原创",
+            "count": 82
+        },
+        {
+            "name": "日常",
+            "count": 78
+        },
+        {
+            "name": "战斗",
+            "count": 65
+        },
+        {
+            "name": "冒险",
+            "count": 49
+        },
+        {
+            "name": "子供向",
+            "count": 38
+        },
+        {
+            "name": "日本",
+            "count": 22
+        },
+        {
+            "name": "傳沙織",
+            "count": 19
+        },
+        {
+            "name": "日本动画",
+            "count": 19
+        },
+        {
+            "name": "佐藤大",
+            "count": 14
+        },
+        {
+            "name": "佳作",
+            "count": 6
+        },
+        {
+            "name": "2020s",
+            "count": 5
+        },
+        {
+            "name": "治愈",
+            "count": 4
+        },
+        {
+            "name": "续作",
+            "count": 4
+        },
+        {
+            "name": "2024年10月",
+            "count": 3
+        },
+        {
+            "name": "无法预测的命运之舞台",
+            "count": 3
+        },
+        {
+            "name": "萌",
+            "count": 3
+        },
+        {
+            "name": "公路片",
+            "count": 3
+        },
+        {
+            "name": "OLMTEAMOTA",
+            "count": 3
+        },
+        {
+            "name": "TVA",
+            "count": 3
+        },
+        {
+            "name": "长篇",
+            "count": 3
+        },
+        {
+            "name": "动画",
+            "count": 3
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "战斗",
+        "冒险",
+        "子供向",
+        "游戏改",
+        "日常"
+    ],
+    "series": false,
+    "main_character_ids": [
+        126286,
+        126287,
+        127906,
+        127907,
+        172876,
+        172877
+    ],
+    "main_characters": [
+        {
+            "id": 126286,
+            "name": "リコ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f8/20/126286_crt_5M9e9.jpg?r=1744469164",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/20/126286_crt_5M9e9.jpg?r=1744469164",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/20/126286_crt_5M9e9.jpg?r=1744469164",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f8/20/126286_crt_5M9e9.jpg?r=1744469164"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 20038,
+                    "name": "鈴木みのり",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/ec/20038_prsn_7pody.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/ec/20038_prsn_7pody.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/ec/20038_prsn_7pody.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/ec/20038_prsn_7pody.jpg"
+                    },
+                    "short_summary": "鈴木 みのり（すずき みのり、1997年10月1日 - ）は、日本の女性声優、歌手。\r\n愛知県出身。青二プロダクション所属。血液型はA型。\r\n\r\n子供の頃から「声」に関する仕事（歌手・ナレーション・芝居）に興味を持っていたが、小学校高学年の頃には深夜アニメを観るようになり、「声優になれば自分のやりたいことが全部できる」と憧れを抱くようになる。高校時代にはアルバイトで交通費を貯め、1年間週に1回、東京で演技のレッスンを受けていた。\r\n\r\n2014年末にはマクロスシリーズの新作テレビアニメの新歌姫・声優オーディションに応募し、応募者約8,000人の中から合格した。\r\n2016年4月、前述の新作テレビアニメ『マクロスΔ』のフレイア・ヴィオン役で芸能活動を開始し、作中のアイドルユニット「ワルキューレ」名義での音楽活動も行う。\r\n2018年1月24日、シングル「FEELING AROUND」をリリースしてソロデビュー。ゲーム『ときめきアイドル』の月島美奈都役で、声優デビュー後初めてオーディションに合格する。同年5月21日にオフィシャルファンクラブ「みのり隊」をオープン。",
+                    "locked": false
+                },
+                {
+                    "id": 39792,
+                    "name": "Vila",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a5/89/39792_prsn_xGUFd.jpg?r=1706285077",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/89/39792_prsn_xGUFd.jpg?r=1706285077",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/89/39792_prsn_xGUFd.jpg?r=1706285077",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a5/89/39792_prsn_xGUFd.jpg?r=1706285077"
+                    },
+                    "short_summary": "Vila，中国女性配音演员，音熊联萌配音工作室成员，毕业于四川传媒学院影视配音专业。2019年12月成为V17声优少女成员。2022年8月从V17声优少女毕业，进入音熊联萌。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 126287,
+            "name": "ロイ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/45/f7/126287_crt_cQK1t.jpg?r=1744469149",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/f7/126287_crt_cQK1t.jpg?r=1744469149",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/f7/126287_crt_cQK1t.jpg?r=1744469149",
+                "grid": "https://lain.bgm.tv/pic/crt/g/45/f7/126287_crt_cQK1t.jpg?r=1744469149"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4845,
+                    "name": "寺崎裕香",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2d/43/4845_prsn_dD99I.jpg?r=1429155853",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/43/4845_prsn_dD99I.jpg?r=1429155853",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/43/4845_prsn_dD99I.jpg?r=1429155853",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2d/43/4845_prsn_dD99I.jpg?r=1429155853"
+                    },
+                    "short_summary": "寺崎裕香原本的志愿是当歌手，读书的时候在当地事务所工作。之后，NHK福冈的广播剧里演了舞台剧，很有趣。并以此为目标，来到东京上学。当时以影像的工作为中心进行活动。当时事务所的社长说：“你的声音很有趣，声优有试过吗？”以后便投入到声优行业当中。",
+                    "locked": false
+                },
+                {
+                    "id": 40267,
+                    "name": "鬼月",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e6/cb/40267_prsn_S6gFO.jpg?r=1606599666",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/cb/40267_prsn_S6gFO.jpg?r=1606599666",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/cb/40267_prsn_S6gFO.jpg?r=1606599666",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e6/cb/40267_prsn_S6gFO.jpg?r=1606599666"
+                    },
+                    "short_summary": "音熊联萌所属女配音演员。\r\n声线多变，擅长演绎活泼元气的少女、英姿飒爽的御姐以及呆萌二货，同时又以真名祝俊在三次元配音圈中以新人配音演员及动漫歌手的身份展开活动。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 127906,
+            "name": "ドット",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/78/31/127906_crt_pj3U1.jpg?r=1744469186",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/31/127906_crt_pj3U1.jpg?r=1744469186",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/31/127906_crt_pj3U1.jpg?r=1744469186",
+                "grid": "https://lain.bgm.tv/pic/crt/g/78/31/127906_crt_pj3U1.jpg?r=1744469186"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13684,
+                    "name": "青山吉能",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6c/00/13684_prsn_vEz31.jpg?r=1695817179",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/00/13684_prsn_vEz31.jpg?r=1695817179",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/00/13684_prsn_vEz31.jpg?r=1695817179",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6c/00/13684_prsn_vEz31.jpg?r=1695817179"
+                    },
+                    "short_summary": "青山 吉能（あおやま よしの、1996年5月15日 - ）は、日本の女性声優。81プロデュースとエイベックス・ピクチャーズに所属。熊本県出身。血液型はA型。\r\n\r\n2012年に開催された、avex×81produce「Wake Up, Girls! AUDITION」第2回アニソン・ヴォーカルオーディションに合格。\r\n2013年4月に「Wake Up, Girls!」が結成され、同年7月から主な活動を開始するが本人は上京せず、熊本から都内や地方へ行っていた。\r\n2014年 には「Wake Up, Girls!」のメンバーとして全国ツアー、Animelo Summer Liveへの出演、幕張メッセで約5000人もの観客を集めた単独ライブ等を成功させる。また、地元のFMラジオで初の個人の冠番組を担当した。\r\n2015年、第9回声優アワード特別賞をWake Up, Girls!として受賞。3月には大学に合格し上京することを発表した。\r\n2016年、小林竜之、澁谷梓希、若井友希、吉岡茉祐と「D-selections」を結成。2016年4月から放送する、テレビアニメ『ハンドレッド』のオープニングテーマ『BLOODRED』を歌唱する。\r\n2017年、テレビアニメ『恋愛暴君』におけるメインヒロインの一人、グリを演じる。\r\n\r\n中学一年生の時に自分の取柄は声しかないと思っていた青山吉能は、その声を活かして頑張ろうと第1回アニソン・ヴォーカルオーディションやエリーを探せ! ミルキィホームズ 声優オーディションなど数多くのオーディションを受ける。東日本大震災の発生後は東北地方のために熊本県で何か出来ないかと思いオーディション受けていた。「avex×81produce Wake Up, Girls! AUDITION」第2回アニソン・ヴォーカルオーディションで初めて最終選考まで残り、そのまま合格。以降はWake Up, Girls!として活動しながら声優を続けている。\r\n嫌いなものは苺。特技は合唱、書道、スキー。スキーにおいては、国体冬季大会にジャイアントスラロームで出場している。また、2度の「ソロでイベント、やらせてください!」ではピアノ弾き語りも披露した。自分の好きな声を皆さんに聞いてもらえることが幸せだと考えていて、声優であることに拘りがあり、監督の山本寛に対して「私たちは声優です」と発言したこともある。\r\n自他ともに認めるアニメオタクで、特にSAMURAI DEEPER KYO、PSYCHO-PASSについては何度もブログやラジオで語っている。また、他の声優も好きであり早見沙織を多く話題に取り挙げていて、ラジオのコーナー内で「私の好きな早見沙織さんベスト3」というテーマでトークをすることもあった。2014年に開催されたアニメJAMで念願の共演を果たした。ゲームに嵌りやすく、正月や自身の誕生日を白猫プロジェクトプレイ中にいつのまにか迎えていた程である。\r\n家族は兄が1人、姉が2人で四人兄妹の末っ子。吉能の「吉」は父から、「能」は伊能忠敬から名前に使われた。父は吉能のゲームボーイアドバンスを膝で割ったことがあるほどの厳格な性格で、吉能が上京する際に大学への進学を決意したのも、このままでは上京を許してもらえないと判断したためである。\r\n家族以外の交友関係では、Wake Up, Girls!のメンバーとは自宅に泊めあう仲である。しかし、吉岡茉祐とは一度衝突したことがあり、その顛末はアニメWake Up, Girls!8話の七瀬佳乃と島田真夢のストーリーに反映されている。島ゆいかとは小学校の同級生。Wake Up, Girls!の先輩にあたるi☆Risのファンであると同時にメンバーの一人である澁谷梓希と交流が深く、2015年の誕生日には洋服をプレゼントされ電話も貰っている。自身のラジオである青山吉能 聞いとっと!?よしのモン。・*・:≡(　ε:)のディレクターはラジオが終了した後も青山吉能によるツイッター企画に参加していたり、イベントに現れたりしている。",
+                    "locked": false
+                },
+                {
+                    "id": 51485,
+                    "name": "翁媛",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b1/6c/51485_prsn_ajF11.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/6c/51485_prsn_ajF11.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/6c/51485_prsn_ajF11.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b1/6c/51485_prsn_ajF11.jpg"
+                    },
+                    "short_summary": "翁媛是中国内地的女性配音演员、配音导演。\r\n音熊联萌核心成员，代表作有游戏《守望先锋》雅典娜等。现居上海。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 127907,
+            "name": "マスカーニャ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/73/33/127907_crt_DdFry.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/33/127907_crt_DdFry.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/33/127907_crt_DdFry.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/73/33/127907_crt_DdFry.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3919,
+                    "name": "林原めぐみ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490"
+                    },
+                    "short_summary": "日本的声优、歌手、DJ、作词家（化名为MEGUMI）、作家。出生于日本东京都北区。\r\n歌迷与动漫迷常以“小惠”（めぐさん）、“惠姐”（めぐ姉）及“阁下”（声优平松晶子命名）等方式称呼她。\r\n林原惠演过多部著名作品的主要女角及担任部分片头、片尾曲演唱，包含《新世纪福音战士》的绫波丽、《乱马1/2》的女乱马、《秀逗魔导士》的莉娜·因巴斯、《口袋妖怪》的武藏、《名侦探柯南》的灰原哀、《通灵王》的恐山安娜等，为日本公认的“声优女王”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 172876,
+            "name": "パゴゴ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1c/02/172876_crt_aG3N8.jpg?r=1742095044",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/02/172876_crt_aG3N8.jpg?r=1742095044",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/02/172876_crt_aG3N8.jpg?r=1742095044",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1c/02/172876_crt_aG3N8.jpg?r=1742095044"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4845,
+                    "name": "寺崎裕香",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2d/43/4845_prsn_dD99I.jpg?r=1429155853",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/43/4845_prsn_dD99I.jpg?r=1429155853",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/43/4845_prsn_dD99I.jpg?r=1429155853",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2d/43/4845_prsn_dD99I.jpg?r=1429155853"
+                    },
+                    "short_summary": "寺崎裕香原本的志愿是当歌手，读书的时候在当地事务所工作。之后，NHK福冈的广播剧里演了舞台剧，很有趣。并以此为目标，来到东京上学。当时以影像的工作为中心进行活动。当时事务所的社长说：“你的声音很有趣，声优有试过吗？”以后便投入到声优行业当中。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 172877,
+            "name": "アチゲータ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/38/53/172877_crt_t6RMy.jpg?r=1742095033",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/53/172877_crt_t6RMy.jpg?r=1742095033",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/53/172877_crt_t6RMy.jpg?r=1742095033",
+                "grid": "https://lain.bgm.tv/pic/crt/g/38/53/172877_crt_t6RMy.jpg?r=1742095033"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10256,
+                    "name": "山下大輝",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b0/56/10256_prsn_p2A8G.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/56/10256_prsn_p2A8G.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/56/10256_prsn_p2A8G.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b0/56/10256_prsn_p2A8G.jpg"
+                    },
+                    "short_summary": "日本の男性声優。アーツビジョン所属。静岡県浜松市出身。\r\n\r\n芸歴：日本ナレーション演技研究所\r\n趣味・特技：写真、サッカー、歌唱、テニス \r\n\r\nディズニー映画『アラジン』にてジーニー役の日本語版吹き替えを担当した山寺宏一は憧れであり、それがきっかけで声の仕事があることを知る。最初はミュージカルが好きで歌の勉強がしたかったため、高校卒業後は東京の音楽専門学校ミューズ音楽院のボーカル専攻科に2年間通った。音楽の勉強をやる内に「やっぱりお芝居がやりたい」と思うようになり、進路指導の先生が日本ナレーション演技研究所の卒業生だったことから声優学校に興味を持ち、ミューズ音楽院卒業と同時に日本ナレーション演技研究所に入所。\r\n2011年～2012年、当時バンダイナムコゲームスが運営していたコミュニケーションサイト『バナフェス!タウン』において洲崎綾などと共に声優の卵として配信コンテンツに出演していた。アシスタントを務めていたたかはし智秋の番組内においてダイキングというニックネームを命名され以降Twitterのアカウント名にも使用している。\r\n2012年にアーツビジョン預かりとなり、同年12月テレビアニメ『リトルバスターズ!』の生徒B役で声優デビューする。山下は「ちゃんとデビューしたのは2013年というほうが正しい」としている。\r\n初めてオーディションで勝ち取った役は、山下の初主演作でもある『ガイストクラッシャー』の白銀レッカ役で、200人以上の大規模オーディションから役を射止めた。初めて名前のある役は『ガイストクラッシャー』よりオンエアや収録が先だった『アラタカンガタリ〜革神語〜』の西島優役となる。『弱虫ペダル』の小野田坂道役でも主演を務め、2014年には第八回声優アワード新人男優賞を受賞する。\r\n尊敬する声優は山口勝平。理由は「いつまでも少年心を忘れない、そしてすごく優しくて温かい人だから」とのこと。また将来は「勝平さんみたいないつまでも少年心を忘れない声優になりたい」と語っている。\r\n父がテニスコーチであったことから、物心つく前からテニスをやっていた。ジュニア選手になったときには、東京遠征で松岡修造から指導を受けたこともある。プロを目指さなかった理由としては、趣味としては楽しいが、もともとプロになるつもりはなく歌や芝居が好きだったためである。ミューズ音楽院に通うことは母には賛成されたが、父にはあまり伝えず逃げるように上京した。声優養成所に入った時も母親には事後報告で伝えたが、父には何も言わなかった。父とは連絡をとっていなかったが現在は、父から「サインを送れよ」と連絡があり認めてもらっている。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

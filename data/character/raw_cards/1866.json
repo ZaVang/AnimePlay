@@ -1,0 +1,60 @@
+{
+    "id": 1866,
+    "name": "伏見やよゐ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/19/de/1866_P7q7y.jpg?r=1509016785",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/de/1866_P7q7y.jpg?r=1509016785",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/de/1866_P7q7y.jpg?r=1509016785",
+        "grid": "https://lain.bgm.tv/pic/crt/g/19/de/1866_P7q7y.jpg?r=1509016785"
+    },
+    "summary": "岚60年前的学妹，曾一同进行文艺表演。空袭中成为幽灵，与加奈子一起度过60年的夏天。曾变得极度虚弱，后来因与八坂一的时间旅行而重拾自信。与其相通的是山代武士饲养的小狗。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伏见弥生"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "伏见矢夜"
+                },
+                {
+                    "k": "日文名",
+                    "v": "伏見 やよゐ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ふしみ やよゐ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fushimi Yayone"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "声优",
+            "value": "野中蓝"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 5
+    },
+    "anime_ids": [
+        2604
+    ]
+}

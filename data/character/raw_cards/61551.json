@@ -1,0 +1,64 @@
+{
+    "id": 61551,
+    "name": "双葉理央",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1b/7e/61551_crt_PPkmM.jpg?r=1537448213",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/7e/61551_crt_PPkmM.jpg?r=1537448213",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/7e/61551_crt_PPkmM.jpg?r=1537448213",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1b/7e/61551_crt_PPkmM.jpg?r=1537448213"
+    },
+    "summary": "冷静沈着な理系女子\r\n\r\n冷静沈着な咲太の同級生。\r\nたった一人の科学部の部員で校内では変人として知られている。\r\n咲太の数少ない友人の一人で思春期症候群についてもいろいろとアドバイスをしてくれる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "双叶理央"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "双葉 理央"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ふたば りお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Futaba Rio"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月23日"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "特技",
+            "value": "不思議な現象を全て、科学で説明できること"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 23,
+    "stat": {
+        "comments": 47,
+        "collects": 336
+    },
+    "anime_ids": [
+        240038
+    ]
+}

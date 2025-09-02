@@ -1,0 +1,217 @@
+{
+    "id": 139408,
+    "name": "阿松",
+    "image_path": "data/images/anime/139408.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "为纪念漫画作者赤冢不二夫80周年诞辰，以“即使长大了，依然是笨蛋”为标语，将故事时间轴转移到了六胞胎已经成年后的背景下，然而他们却一如既往地选择了家里蹲，每天过着无所事事的日子。作品在维持了原作风格的同时，大胆融入了各种NETA和现实要素。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 25,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2015-10-05",
+    "rating_rank": 1154,
+    "rating_score": 7.4,
+    "rating_total": 2628,
+    "main_character_ids": [
+        35510,
+        35511,
+        35512,
+        35513,
+        35514,
+        35515
+    ],
+    "main_characters": [
+        {
+            "id": 35510,
+            "name": "松野おそ松",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/70/8a/35510_crt_iahc4.jpg?r=1491285987",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/8a/35510_crt_iahc4.jpg?r=1491285987",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/8a/35510_crt_iahc4.jpg?r=1491285987",
+                "grid": "https://lain.bgm.tv/pic/crt/g/70/8a/35510_crt_iahc4.jpg?r=1491285987"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4015,
+                    "name": "櫻井孝宏",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/06/29/4015_prsn_4TZox.jpg?r=1638448222"
+                    },
+                    "short_summary": "爱知县冈崎市老家的本业是米店，店名为“樱井米谷店”，在当地小有名气。\r\n初中时的一个冬天，怕冷的他擅自把酒精灯里的液体倒在理科实验室的桌子上，点起火取暖，引响了火灾报警器，被赶来的老师狠狠教训了一顿。于是在老师的国语课上捣乱报复，夸张地朗读课文，实在听不过去的老师求他：“拜托，别念得跟声优似的好不好！”——这话对那时的樱井冲击很大，给他留下了声优不过是连小孩子都做得来的简单工作的印象。所以高中毕业后，乐得找轻松的樱井选择进入东京的声优专科学校。待迈入这一行，他才吐血地发现，且不说成为佼佼者，就是普通从业者也得掌握高超的专业技巧。\r\n2005年8月《最终幻想VII：降临之子》于第62届威尼斯影展参展。樱井以担任主角配音的身份，成为继山寺宏一后第2位踏上星光大道的日本籍声优。\r\n虽然戴着眼镜，可是樱井二眼视力皆为2.0，植田佳奈笑称那是“骗人眼镜”。那付眼镜的意义是“梦想与希望与对声迷们的爱”。\r\n最初的错误是BL DRAMA制作社Inter communications（inter桑）的一张drama的BK上打成了樱井考宏，之后《无法逃离的背叛》某个活动的官方网站上亦把樱井孝宏的名字写成“樱井考宏”，所以有昵称考哥，而并非是他的名字中的“孝”字与“考”字很像才有此外号。\r\n桜井(sakurai)，桜井さん（sakurai san），sakura i san，樱13",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 35511,
+            "name": "松野カラ松",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ae/71/35511_crt_3bqJ4.jpg?r=1491285885",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ae/71/35511_crt_3bqJ4.jpg?r=1491285885",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ae/71/35511_crt_3bqJ4.jpg?r=1491285885",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ae/71/35511_crt_3bqJ4.jpg?r=1491285885"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4724,
+                    "name": "中村悠一",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/78/4724_prsn_7TvWV.jpg"
+                    },
+                    "short_summary": "爱称是ゆうきゃん，由铃村健一命名。英文标记法为‘yuu-kyan’\r\n与声优的杉田智和的私交良好，是在声优界著名的好友。\r\n兴趣是玩游戏、看电影等。\r\n不喜欢吃拉面。喜欢的食物是肉、奶酪、甜食。\r\n2020年10月1日，宣布从Sigma Seven移籍至INTENTION。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 35512,
+            "name": "松野チョロ松",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fb/5e/35512_crt_224z4.jpg?r=1491285825",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/5e/35512_crt_224z4.jpg?r=1491285825",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/5e/35512_crt_224z4.jpg?r=1491285825",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fb/5e/35512_crt_224z4.jpg?r=1491285825"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4232,
+                    "name": "神谷浩史",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/fa/4232_prsn_bBAP2.jpg?r=1675677585"
+                    },
+                    "short_summary": "高中时期是理科生，加入青二塾以前只是一般地看着动画，没有想要成为声优的念头。高三时，于7月份加入同年级朋友组建的演剧团，在9月份的地区演剧大赛中意外获得“个人演技奖”，自此开始对演剧事业产生兴趣。想考艺术类大学所以在高三理转文，并不成功，高考落榜。\r\n另寻出路的时候在杂志上看到了青二塾的广告，征得父母同意考上其东京校第14期。当时不了解其实这里培养的是声优而不是演员，起初产生了“别干了”的消极情绪，但之后仍在青二塾坚持学习了下去，不过是“不良墅生”，同学和老师之后都笑称当时他“很狂妄”，并不参加到同学间的自主练习中。1994年，19岁的神谷从青二塾毕业，顺利加入青二事务所。\r\n出道的头几年，相比于同期甚至后期的声优们很快的大放异彩，神谷则是全部出演酱油的路人角色。2006年8月7日，因为遭逢交通事故而住院治疗。虽然经纪公司并不愿透漏事故的原因，但从关系人口中得知似乎是骑乘机车时发生的。车祸似乎是神谷事业的一个拐点。2007年因担任《再见!绝望先生》、《高达00》等作品主角的CV而受到瞩目，之后在《夏目友人帐》、《化物语》等作品中为主角配音获得极高人气，目前则是因为饰演《进击的巨人》中的里维兵长而再度爆红。\r\n\r\n2025年1月1日，宣布与女演员、模特逢泽莉娜结婚。1月4日，在广播节目中透露自己于8年前起单身，后因此节目而与逢泽莉娜结缘，大约2年前开始交往。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 35513,
+            "name": "松野一松",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4f/cf/35513_crt_YyUEL.jpg?r=1491286042",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/cf/35513_crt_YyUEL.jpg?r=1491286042",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/cf/35513_crt_YyUEL.jpg?r=1491286042",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4f/cf/35513_crt_YyUEL.jpg?r=1491286042"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3818,
+                    "name": "福山潤",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bf/00/3818_prsn_vlWlO.jpg?r=1669378022",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/00/3818_prsn_vlWlO.jpg?r=1669378022",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/00/3818_prsn_vlWlO.jpg?r=1669378022",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bf/00/3818_prsn_vlWlO.jpg?r=1669378022"
+                    },
+                    "short_summary": "福山润（1978年11月26日－）是一名日本男性声优。大阪府高槻市出身。2000年于21岁时加入PRODUCTION baobab，2011年退出和PRODUCTION baobab，并与森川智之共同设立AXL ONE事务所。2018年3月31日，与立花慎之介一起离开AXL ONE；同年4月1日，与立花合伙成立小型事务所“BLACK SHIP”。\r\n初试啼声的动画作品是1998年的《罗德斯岛战记》。初次担任主角的动画作品是2000年到2001年的《无敌王TRI-ZENON》，饰演神威章。此部作品同时也是无职身分的福山润再次以声优身分回归声优界的复归代表作。而令福山润真正登上事业上第一次颠峰的角色，则是《反叛的鲁路修》中的腹黑王子鲁路修，他就是凭着这个角色而获得了第一回声优悬赏奖的最佳男声优。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 35514,
+            "name": "松野十四松",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/48/16/35514_crt_P770T.jpg?r=1491286097",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/16/35514_crt_P770T.jpg?r=1491286097",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/16/35514_crt_P770T.jpg?r=1491286097",
+                "grid": "https://lain.bgm.tv/pic/crt/g/48/16/35514_crt_P770T.jpg?r=1491286097"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4456,
+                    "name": "小野大輔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c4/8e/4456_prsn_HEQe3.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/8e/4456_prsn_HEQe3.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/8e/4456_prsn_HEQe3.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c4/8e/4456_prsn_HEQe3.jpg"
+                    },
+                    "short_summary": "在日本大学艺术学部放送学科就读时，主要是专攻电视节目制作。但因为当时提出的企划作品被教授评价的很差，所以转而改以演出者方式参与，并在参与过程中感受到演戏的有趣，因此决定以成为声优为目标。\r\n　　 出道当时，以动画节目的准常态出演（担任非固定角色名的小角色配音）为主。\r\n　　 第一部担任主角的动画作品是「AIR」TV动画版的男主角国崎往人。\r\n　　 在2006年放送的动画《凉宫春日的忧郁》以古泉一树这个角色获得广大知名度，其後也陆续获得许多要角演出。从帅气知性的青年到有点脱线的搞笑角色，演出的类型范围十分广泛。\r\n　　 2008年以《南家三姐妹》保坂这个角色获得第二回声优奖男优部门配角赏。　\r\n　　据来自2010年6月14日，IT世界网的咨询《Voice NewType投票，新一代声优崭露头角》中报道：男性榜单这边倒几乎都是老面孔，不过占据首位的再也不是福山润和神谷浩史等人，今次终于也轮到了小野大辅。长期以来如同劳模一般辛苦工作的小野大辅，如今终于名利双收，不但摘得上届声优大赏最佳男主角赏，如今人气投票又问鼎冠军，实在可喜可贺。\r\n　　 2010年1月31日その执事、狂騒～赤いヴァレンタイン声优见面会中被主持人吉田尚记称为声优界的谷原章介。\r\n　　 2010年3月以《黑执事》塞巴斯蒂安这个角色获得第四回声优奖主演男优赏。\r\n　　 2010年4月新番《迷糊餐馆working》中担任佐藤润的声优。\r\n　　 2010年4月新番《无法逃离的背叛》中担任莲城焰椎真的声优\r\n　　 2010年7月新番《传说中的勇者传说》中担任西昂·阿斯塔尔的声优。《黑执事2》中继续担任塞巴斯蒂安的声优。\r\n　　在《背叛》中的热血少年，《传说中的勇者传说》的拥有伟大理想又腹黑的西昂使小野大辅的声线变化发挥地更为淋漓尽致。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 35515,
+            "name": "松野トド松",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3b/70/35515_crt_E8qPk.jpg?r=1491286169",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/70/35515_crt_E8qPk.jpg?r=1491286169",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/70/35515_crt_E8qPk.jpg?r=1491286169",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3b/70/35515_crt_E8qPk.jpg?r=1491286169"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4258,
+                    "name": "入野自由",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/49/47/4258_prsn_99973.jpg?r=1552624013",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/47/4258_prsn_99973.jpg?r=1552624013",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/47/4258_prsn_99973.jpg?r=1552624013",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/49/47/4258_prsn_99973.jpg?r=1552624013"
+                    },
+                    "short_summary": "日本の男性声優、俳優、歌手。ジャンクション所属。既婚。\r\n\r\n両親と観に行った劇団四季の舞台に興味を持ったことがきっかけで、4歳の時劇団ひまわりに入団し、その2年後に歴史ドラマ『コルチャック先生』（原題：Korczak）の幼い少年役を演じ俳優デビュー。同劇団には2006年3月まで所属し、ジャンクションへ移籍。\r\n\r\n声優デビュー作は『逮捕しちゃうぞ』のショウ役で、楽しかったことを覚えているという。2001年に公開された『千と千尋の神隠し』（日本歴代興行収入第2位）でメインキャラクターのハク役のオーディションに合格する。同年『パラッパラッパー』のパラッパ（初代）役でテレビアニメ初主演を果たし、2002年の『キングダム ハーツ』で主役のソラを演じ知名度を広げた。2012年時点で芸歴20年を重ねており、2011年頃のインタビューでは「昔は年上ばっかりだったが、最近は自分と同年代の人と共演することが増えた」と語っている。\r\n\r\n2009年6月24日、Kiramuneレーベルから歌手デビュー。\r\n\r\n2010年、明治学院大学経済学部経営学科卒業。同年5月11日、Kiramuneレーベル内新ユニットとして、神谷浩史と「KAmiYU」を結成し、11月6日にデビュー。\r\n\r\n2016年11月30日、翌年1月のソロライブを最後に海外留学のため、活動を一時休業することをブログで発表。\r\n\r\n2021年9月3日、所属事務所ジャンクションの公式サイトにて結婚を報告した。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

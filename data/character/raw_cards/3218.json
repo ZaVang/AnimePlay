@@ -1,0 +1,81 @@
+{
+    "id": 3218,
+    "name": "イリヤスフィール・フォン・アインツベルン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4b/c1/3218_crt_uuwa4.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/c1/3218_crt_uuwa4.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/c1/3218_crt_uuwa4.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4b/c1/3218_crt_uuwa4.jpg"
+    },
+    "summary": "サーヴァント・バーサーカーのマスターとして聖杯戦争に参加。\r\n銀色の髪と赤い瞳をした謎の少女。雪をイメージさせる容姿とは裏腹に、無邪気で人懐っこい性格をしている。\r\n物語の導入において、何も知らない主人公に接触するが────\r\n\r\n(另一个世界中，作为魔法少女)\r\n冬木市に住むごく普通の小学生。アニメの魔法少女に憧れるような夢見がちなところもある少女だが、ある日マジカルルビーと出会い、胡散臭い勧誘を受けて本当の魔法少女に仕立て上げられてしまう。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊莉雅斯菲尔·冯·爱因兹贝伦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "伊莉雅丝菲尔·冯·爱因兹贝伦"
+                },
+                {
+                    "v": "伊莉亚丝菲尔·冯·艾因兹贝伦"
+                },
+                {
+                    "v": "依莉雅苏菲尔·冯·爱因兹贝伦"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "伊莉雅"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Illyasviel von Einzbern"
+                },
+                {
+                    "k": "日文名",
+                    "v": "イリヤ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月20日(F/SN)  7月20日(F/KL)"
+        },
+        {
+            "key": "身高",
+            "value": "133cm"
+        },
+        {
+            "key": "体重",
+            "value": "34kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B61/W47/H62"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://anime.prisma-illya.jp/character/#illya"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 20,
+    "stat": {
+        "comments": 144,
+        "collects": 993
+    },
+    "anime_ids": [
+        113134
+    ]
+}

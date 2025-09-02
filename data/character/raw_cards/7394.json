@@ -1,0 +1,48 @@
+{
+    "id": 7394,
+    "name": "椎名ひかり",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6b/2e/7394_crt_CY5Qv.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/2e/7394_crt_CY5Qv.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/2e/7394_crt_CY5Qv.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6b/2e/7394_crt_CY5Qv.jpg"
+    },
+    "summary": "D.D随身携带的备份用\"Rebels\"请求官方正式名称[›](リベルズ)在不明原因之下意外与翼结合变身并因此诞生的少女。于诞生的同时继承翼原有的长相、记忆加以共享，拥有与翼相反的乐观开朗与具有正义感的正面性格。\r\n完结篇中于性命垂危的情况下，用尽了最后的力气与翼变身后消失。当英夫看到翼拿着的手套时，说出了如果当初母亲生第二个小孩就会取名为\"光\"的往事（另外该名字是当初本人诞生时自己取的）。\r\n在D.D的记忆操作之下，表面上光为翼的双胞胎妹妹。\r\n“光”的名字及性格设定取自于歌手宇多田光 。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "椎名光"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "椎名ヒカル"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shiina Hikaru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 6
+    },
+    "anime_ids": [
+        10376
+    ]
+}

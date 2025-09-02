@@ -1,0 +1,56 @@
+{
+    "id": 20374,
+    "name": "赤木しげる",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bb/1c/20374_crt_C0TZ0.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/1c/20374_crt_C0TZ0.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/1c/20374_crt_C0TZ0.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bb/1c/20374_crt_C0TZ0.jpg"
+    },
+    "summary": "银发少年。初次登场为1958年，当时13岁。有着过人的冷静和胆识。\r\n    因为夜间飙车造成车祸的嫌疑犯之一。在当南郷的代打前从未打过麻将，因为担任代打而让自身麻将的才能觉醒。\r\n    为福本伸行笔下最强的麻将士之一。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "赤木茂"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あかぎ しげる"
+                },
+                {
+                    "k": "昵称",
+                    "v": "アカギ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "忌日",
+            "value": "1999年9月26日"
+        },
+        {
+            "key": "年龄",
+            "value": "享年53岁"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 26,
+        "collects": 93
+    },
+    "anime_ids": [
+        2059
+    ]
+}

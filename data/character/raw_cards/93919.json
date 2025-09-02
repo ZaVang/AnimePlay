@@ -1,0 +1,56 @@
+{
+    "id": 93919,
+    "name": "リゼルグ・ダイゼル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/cd/0d/93919_crt_Dumwf.jpg?r=1617448264",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/0d/93919_crt_Dumwf.jpg?r=1617448264",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/0d/93919_crt_Dumwf.jpg?r=1617448264",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cd/0d/93919_crt_Dumwf.jpg?r=1617448264"
+    },
+    "summary": "イギリス・ロンドンのシャーマン。少女と間違われるほど整った容姿の美少年だが、ダウジング能力を使った正確無比な攻撃で確実に敵を追い詰める。彼のダウジングは父親から受け継いだもの。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "瑞瑟格·戴佐"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Lyserg Diethel"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1986年5月17日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://shamanking-project.com/character/lyserg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1986,
+    "birth_mon": 5,
+    "birth_day": 17,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        4190
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": 14952,
+    "name": "迎律子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d6/42/14952_crt_oBeD7.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/42/14952_crt_oBeD7.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/42/14952_crt_oBeD7.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d6/42/14952_crt_oBeD7.jpg"
+    },
+    "summary": "薫のクラスのクラス委員。そばかす顔の少女。純粋で優しい性格。クリスチャン。家はレコード店。千太郎の幼なじみで、面倒見がよく素朴な子。千太郎を好きだったが、薫の優しさに惹かれていき、薫と両想いに。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "迎律子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "むかえ りつこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mukae Ritsuko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://ja.wikipedia.org/wiki/坂道のアポロン"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 14
+    },
+    "anime_ids": [
+        29426
+    ]
+}

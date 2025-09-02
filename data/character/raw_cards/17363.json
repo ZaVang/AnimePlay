@@ -1,0 +1,76 @@
+{
+    "id": 17363,
+    "name": "富樫勇太",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/07/83/17363_crt_efqIF.jpg?r=1361630049",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/83/17363_crt_efqIF.jpg?r=1361630049",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/83/17363_crt_efqIF.jpg?r=1361630049",
+        "grid": "https://lain.bgm.tv/pic/crt/g/07/83/17363_crt_efqIF.jpg?r=1361630049"
+    },
+    "summary": "主人公。元中二病患者で高校生活を充実した物にするため中学卒業とともに猛勉強して中二病も卒業した。しかし、屋上で隠れて中二病的なセリフを叫んだり、学校に「闇」の文字が入ったTシャツを着てきたりするなどまだ完治はしていない。そこを六花に目撃され、契約する羽目になった。周囲に元中二病だったことを隠しているが、Tシャツなどの件はバレバレ。猛勉強したため成績は全般的に優秀。英語が比較的苦手の模様。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "富樫勇太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "富樫 勇太"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "とがし ゆうた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Togashi Yuuta"
+                },
+                {
+                    "k": "昵称",
+                    "v": "Dark Flame Master"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "7月7日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "体重",
+            "value": "60kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.anime-chu-2.com/character/yuta/"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 7,
+    "stat": {
+        "comments": 23,
+        "collects": 152
+    },
+    "anime_ids": [
+        29648
+    ]
+}

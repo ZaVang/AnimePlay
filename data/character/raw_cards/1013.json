@@ -1,0 +1,64 @@
+{
+    "id": 1013,
+    "name": "藤林椋",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7e/95/1013_crt_nrN1N.jpg?r=1692105737",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/95/1013_crt_nrN1N.jpg?r=1692105737",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/95/1013_crt_nrN1N.jpg?r=1692105737",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7e/95/1013_crt_nrN1N.jpg?r=1692105737"
+    },
+    "summary": "藤林杏的双胞胎妹妹，就读某高中3年D班，朋也班上的班长。和姊姊相反，个性稳重较内向，不太擅长料理。兴趣是进行占卜。最常使用的占卜用具是扑克牌，但她用扑克牌进行占卜结果却不知为何绝对和真正的结果相反，因此意外的成为了另一种准确的指标，每日都有人排队找她占卜。从游戏剧情展开前就暗恋朋也，这一点也是受姐姐杏的影响。志向是成为一名护士。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藤林椋"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ふじばやしりょう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fujibayashi Ryou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月9日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "体重",
+            "value": "47kg"
+        },
+        {
+            "key": "声优",
+            "value": "神田朱未"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 4,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 9,
+    "stat": {
+        "comments": 51,
+        "collects": 228
+    },
+    "anime_ids": [
+        363880
+    ]
+}

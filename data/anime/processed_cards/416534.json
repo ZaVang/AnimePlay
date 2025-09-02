@@ -1,0 +1,104 @@
+{
+    "id": 416534,
+    "name": "Overtake!",
+    "image_path": "data/images/anime/416534.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "「F4」、全称四级方程式。\r\n其为检验车手能否立足于顶尖赛事「F1」而设立的方程式赛车的入门赛事，为更高级的赛事源源不断地输送着优秀的新人车手，自设立以来，就承担着「汽车运动的甲子园」的作用。\r\n而一位男人，踏入了那赛道之上。\r\n真贺孝哉。\r\n作为摄影师而活动着的他，现在由于某个原因正处漩涡的低谷之中。\r\n因为采访需要，而在富士赛道上见识了高中生「F4」车手浅雏悠车技的孝哉。\r\n被那份愚直却又诚挚的热情所感动，自己内心久久未曾感觉到的激情也在心中苏醒……。\r\n以此为契机，他决定与弱小的车队「小牧Motors」一同支持悠实现他的梦想。\r\n不知不觉间，无论性格还是年龄全都大相径庭的悠与孝哉的人生，已相互交错——。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "运动"
+    ],
+    "date": "2023-10-01",
+    "rating_rank": 1920,
+    "rating_score": 7.2,
+    "rating_total": 1437,
+    "main_character_ids": [
+        124168,
+        124169
+    ],
+    "main_characters": [
+        {
+            "id": 124168,
+            "name": "浅雛悠",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fd/dc/124168_crt_Tt1l1.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/dc/124168_crt_Tt1l1.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/dc/124168_crt_Tt1l1.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fd/dc/124168_crt_Tt1l1.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 31136,
+                    "name": "市ノ瀬加那",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637"
+                    },
+                    "short_summary": "北海道帯広工業高等学校建築科出身。\r\n札幌スクールオブミュージック&ダンス専門学校出身。2016年4月に事務所に入所。\r\n\r\n2018年1月より放送のTVアニメ『ダーリン・イン・ザ・フランキス』のイチゴ役は市ノ瀬にとって、初のメインキャストとなった。\r\n2018年10月、超!A&G+とAG-ON Premiumで配信している「ラジオどっとあい」第76代目パーソナリティーに選ばれる。\r\n2019年4月7日、Twitterを始める。\r\n\r\n趣味は一人旅、スカイウォッチング、映画鑑賞。小・中学生時代にバスケットボールをやっており、現在も特技としている。\r\n\r\n危険物取扱者丙種、プレゼンテーション作成検定3級、日本語ワープロ検定3級、情報処理技能検定2級、パソコンスピード認定3級の資格を所持している。",
+                    "locked": false
+                },
+                {
+                    "id": 44660,
+                    "name": "古屋亜南",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3f/88/44660_prsn_kyO3s.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/88/44660_prsn_kyO3s.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/88/44660_prsn_kyO3s.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3f/88/44660_prsn_kyO3s.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 124169,
+            "name": "眞賀孝哉",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f1/02/124169_crt_1Sghh.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/02/124169_crt_1Sghh.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/02/124169_crt_1Sghh.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f1/02/124169_crt_1Sghh.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3861,
+                    "name": "小西克幸",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d9/dc/3861_prsn_eizt1.jpg?r=1661391127",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/dc/3861_prsn_eizt1.jpg?r=1661391127",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/dc/3861_prsn_eizt1.jpg?r=1661391127",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d9/dc/3861_prsn_eizt1.jpg?r=1661391127"
+                    },
+                    "short_summary": "日本の声優、ナレーター、舞台俳優。和歌山県和歌山市出身。賢プロダクション所属。関智一が座長を務めていることで知られる劇団「ヘロヘロQカムパニー」の副座長も務める。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "id": 126610,
+    "name": "愛城恋太郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/69/29/126610_crt_O2Zpv.jpg?r=1717851307",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/29/126610_crt_O2Zpv.jpg?r=1717851307",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/29/126610_crt_O2Zpv.jpg?r=1717851307",
+        "grid": "https://lain.bgm.tv/pic/crt/g/69/29/126610_crt_O2Zpv.jpg?r=1717851307"
+    },
+    "summary": "100人の“運命の人”との出会いを告げられた本作の主人公。中学まで女の子にフられ続ける人生を送ってきたが、高校では次々に現れる“運命の人”と付き合うことに。彼女たちを分け隔てなく全力で愛し、そのド級の誠実さから、彼女のために平然と命も懸けられる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "爱城恋太郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "愛城 恋太郎"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あいじょう れんたろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aijō Rentarō"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月1日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 1,
+    "stat": {
+        "comments": 81,
+        "collects": 76
+    },
+    "anime_ids": [
+        471793,
+        424379
+    ]
+}

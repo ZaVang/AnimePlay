@@ -1,0 +1,53 @@
+{
+    "id": 6533,
+    "name": "犬夜叉",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f8/00/6533_crt_9VEjS.jpg?r=1599936724",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/00/6533_crt_9VEjS.jpg?r=1599936724",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/00/6533_crt_9VEjS.jpg?r=1599936724",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f8/00/6533_crt_9VEjS.jpg?r=1599936724"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "犬夜叉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いぬやしゃ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Inuyasha"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "配音",
+            "value": "劉傑（台灣）"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 13,
+        "collects": 86
+    },
+    "anime_ids": [
+        2784,
+        2785
+    ]
+}

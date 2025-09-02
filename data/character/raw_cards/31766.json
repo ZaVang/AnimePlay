@@ -1,0 +1,58 @@
+{
+    "id": 31766,
+    "name": "真田遼",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bb/7b/31766_crt_RsOTv.jpg?r=1428452370",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/7b/31766_crt_RsOTv.jpg?r=1428452370",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/7b/31766_crt_RsOTv.jpg?r=1428452370",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bb/7b/31766_crt_RsOTv.jpg?r=1428452370"
+    },
+    "summary": "真田幸村之后。技能是双炎斩（双焰斩）。化身辉煌帝（光明皇帝）之后可使出闪煌斩",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "真田辽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "辉煌帝"
+                },
+                {
+                    "v": "光明皇帝"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "火焰神里奥"
+                },
+                {
+                    "k": "日文名",
+                    "v": "烈火のリョウ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さなだ りょう"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 7
+    },
+    "anime_ids": [
+        3621
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "id": 36179,
+    "name": "ユメ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/01/83/36179_crt_dkmJ7.jpg?r=1473064293",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/83/36179_crt_dkmJ7.jpg?r=1473064293",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/83/36179_crt_dkmJ7.jpg?r=1473064293",
+        "grid": "https://lain.bgm.tv/pic/crt/g/01/83/36179_crt_dkmJ7.jpg?r=1473064293"
+    },
+    "summary": "微妙な関西弁で喋る。クラスは狩人。\r\n所謂天然系。特に横文字が苦手。狩人のクラスだが弓が苦手で、主に剣鉈で戦う。\r\nよくランタと喧嘩になる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "梦儿"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Yume"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 59,
+        "collects": 169
+    },
+    "anime_ids": [
+        148726
+    ]
+}

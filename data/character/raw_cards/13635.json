@@ -1,0 +1,52 @@
+{
+    "id": 13635,
+    "name": "アリババ・サルージャ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7b/d9/13635_crt_ViFmR.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/d9/13635_crt_ViFmR.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/d9/13635_crt_ViFmR.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7b/d9/13635_crt_ViFmR.jpg"
+    },
+    "summary": "17岁，身高168cm，出生地:巴尔巴德，特技:王宫剑术，兴趣：买卖，弱点：容易发胖。\r\n初登场于乌丹前往七湘的路上，为运送葡萄酒的车夫。在搬运途中遭遇沙漠风信子袭击导致欠下大笔债务，为了还钱而与阿拉丁前往挑战迷宫。\r\n虽出身于贫民窟，但实为巴尔巴德第三王子(私生子)。\r\n十岁时被其父亲接入王宫接受语言学、剑术、经济学...等高等教育，希望阿里巴巴能成长为一位能辅佐其兄长的人才。王宫剑术以及董里语皆在这时期习得。\r\n与阿拉丁一同成功攻掠第七迷宫－亚蒙后失散，再次登场时已为雾之团的首领(第35夜)。\r\n一度与阿拉丁形成对立，在摩儿迦娜的帮助下顺利和解。\r\n巴尔巴德事件结束后寄居于辛德利亚王国，为辛巴达的食客，由迦尔鲁卡哈教导剑术。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿里巴巴·沙尔贾"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "阿里爸爸（港译）"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "zh.wikipedia.org"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 23,
+        "collects": 98
+    },
+    "anime_ids": [
+        77646
+    ]
+}

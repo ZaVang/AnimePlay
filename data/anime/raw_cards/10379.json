@@ -1,0 +1,350 @@
+{
+    "id": 10379,
+    "type": 2,
+    "name": "装甲騎兵ボトムズ",
+    "name_cn": "装甲骑兵VOTOMS",
+    "summary": "阿斯特拉基斯银河百年战争末期，美鲁基亚军士兵齐里古·丘比所转属的部队突然袭击了友军的秘密基地。不知情的齐里古在无意间看见了一名躺在特殊保存装置中的女性。但是齐里古却被同伴出卖，被美鲁基亚军逮捕。凭着自身的勇气和胆识，齐里古逃出了美鲁基亚军的监狱。之后漂泊在外的齐里古为了解开自己身世之谜，为了寻找出卖自己的幕后黑手和自己所爱的人展开了战斗……",
+    "nsfw": false,
+    "locked": false,
+    "date": "1983-04-01",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/c1/ba/10379_y3cGG.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/c1/ba/10379_y3cGG.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/c1/ba/10379_y3cGG.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/c1/ba/10379_y3cGG.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/c1/ba/10379_y3cGG.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "装甲骑兵VOTOMS"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Soukou Kihei Votoms",
+                    "k": null
+                },
+                {
+                    "v": "Armored Trooper Votoms",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "52"
+        },
+        {
+            "key": "放送开始",
+            "value": "1983年4月1日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期五"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.votoms.net/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京"
+        },
+        {
+            "key": "播放结束",
+            "value": "1984年3月23日"
+        },
+        {
+            "key": "导演",
+            "value": "高橋良輔"
+        },
+        {
+            "key": "音乐",
+            "value": "乾裕樹"
+        },
+        {
+            "key": "原作",
+            "value": "高橋良輔"
+        },
+        {
+            "key": "演出",
+            "value": "滝沢敏文（演出チーフ）"
+        },
+        {
+            "key": "人物设定",
+            "value": "塩山紀生"
+        },
+        {
+            "key": "作画监督",
+            "value": "塩山紀生"
+        },
+        {
+            "key": "音响监督",
+            "value": "浦上靖夫"
+        },
+        {
+            "key": "动画制作",
+            "value": "日本サンライズ"
+        },
+        {
+            "key": "制作",
+            "value": "日本サンライズ"
+        }
+    ],
+    "volumes": 0,
+    "eps": 52,
+    "total_episodes": 52,
+    "rating": {
+        "rank": 210,
+        "total": 550,
+        "count": {
+            "one": 2,
+            "two": 0,
+            "three": 0,
+            "four": 2,
+            "five": 11,
+            "six": 19,
+            "seven": 90,
+            "eight": 223,
+            "nine": 156,
+            "ten": 47
+        },
+        "score": 8.1
+    },
+    "collection": {
+        "wish": 847,
+        "collect": 717,
+        "doing": 127,
+        "on_hold": 119,
+        "dropped": 68
+    },
+    "tags": [
+        {
+            "name": "SUNRISE",
+            "count": 233
+        },
+        {
+            "name": "高桥良辅",
+            "count": 183
+        },
+        {
+            "name": "TV",
+            "count": 169
+        },
+        {
+            "name": "萝卜",
+            "count": 128
+        },
+        {
+            "name": "1983",
+            "count": 127
+        },
+        {
+            "name": "真实系",
+            "count": 103
+        },
+        {
+            "name": "原创",
+            "count": 93
+        },
+        {
+            "name": "装甲骑兵",
+            "count": 78
+        },
+        {
+            "name": "科幻",
+            "count": 77
+        },
+        {
+            "name": "激励哥",
+            "count": 52
+        },
+        {
+            "name": "机战",
+            "count": 37
+        },
+        {
+            "name": "高橋良輔",
+            "count": 35
+        },
+        {
+            "name": "80年代",
+            "count": 22
+        },
+        {
+            "name": "神作无误",
+            "count": 16
+        },
+        {
+            "name": "日本",
+            "count": 10
+        },
+        {
+            "name": "大河原邦男",
+            "count": 6
+        },
+        {
+            "name": "机器人",
+            "count": 6
+        },
+        {
+            "name": "经典",
+            "count": 5
+        },
+        {
+            "name": "TVA",
+            "count": 5
+        },
+        {
+            "name": "吉川惣司",
+            "count": 4
+        },
+        {
+            "name": "1983年4月",
+            "count": 4
+        },
+        {
+            "name": "战争",
+            "count": 4
+        },
+        {
+            "name": "1980s",
+            "count": 4
+        },
+        {
+            "name": "年番",
+            "count": 4
+        },
+        {
+            "name": "80s",
+            "count": 3
+        },
+        {
+            "name": "补旧番",
+            "count": 3
+        },
+        {
+            "name": "乾裕樹",
+            "count": 3
+        },
+        {
+            "name": "五武冬史",
+            "count": 3
+        },
+        {
+            "name": "塩山紀生",
+            "count": 3
+        },
+        {
+            "name": "robo",
+            "count": 3
+        }
+    ],
+    "meta_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "series": false,
+    "main_character_ids": [
+        13128,
+        13129,
+        13142
+    ],
+    "main_characters": [
+        {
+            "id": 13128,
+            "name": "キリコ・キュービィー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/17/02/13128_crt_IMkaC.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/02/13128_crt_IMkaC.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/02/13128_crt_IMkaC.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/17/02/13128_crt_IMkaC.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 1555,
+                    "name": "郷田ほづみ",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b5/02/1555_prsn_DDOJ3.jpg?r=1574056733",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/02/1555_prsn_DDOJ3.jpg?r=1574056733",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/02/1555_prsn_DDOJ3.jpg?r=1574056733",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b5/02/1555_prsn_DDOJ3.jpg?r=1574056733"
+                    },
+                    "short_summary": "日本の声優、俳優、音響監督。湘南アルファロメオクラブ会長。尾木プロ THE NEXT所属。\r\n\r\n東京都出身。神奈川県平塚市在住。身長176cm、体重60kg。血液型はAB型。神奈川県立小田原高等学校、玉川大学文学部芸術学科演劇学専攻卒業。\r\n\r\n1981年、富山敬に憧れて「第3回アマチュア声優・ドラマ・コンテスト」に応募して入賞する。主催社であるニッポン放送のドン上野に「君、やってみないか」と声をかけられ、『夜のドラマハウス』でデビューする。芸名「郷田ほづみ」はドン上野による命名。\r\n\r\n1983年に平光琢也、赤星昇一郎の3人で結成したお笑いトリオ「怪物ランド」で『お笑いスター誕生!!』に出場し、10週勝ち抜きチャンピオンとなる。\r\n\r\n同年、テレビアニメ『装甲騎兵ボトムズ』にキリコ・キュービィー役で出演する。その後、怪物ランドの仕事も多忙となり、徐々に声優の仕事から離れていくが、OVA『銀河英雄伝説』の外伝が制作されることとなった際、同作の登場人物であるヤン・ウェンリー役を1995年に死去した富山敬に代わって演じて以降、再び声優の仕事に戻る。\r\n\r\nその後も数々のアニメに出演するほか、テレビドラマなどにもしばしば出演している。\r\n\r\nアニメの音響監督も手がけつつ、1999年には「湘南アクターズスクール」を設立する。湘南テアトロ☆デラルテ（旧：湘南アクターズ）、ひらり、空中分解。、羽衣1011など、数々の劇団において芝居の演出も行なっている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13129,
+            "name": "ファンタム・レディ（フィアナ）",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/62/7b/13129_crt_37Eh8.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/7b/13129_crt_37Eh8.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/7b/13129_crt_37Eh8.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/62/7b/13129_crt_37Eh8.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 14191,
+                    "name": "弥永和子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f2/74/14191_prsn_YE1Ge.jpg?r=1393940434",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/74/14191_prsn_YE1Ge.jpg?r=1393940434",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/74/14191_prsn_YE1Ge.jpg?r=1393940434",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f2/74/14191_prsn_YE1Ge.jpg?r=1393940434"
+                    },
+                    "short_summary": "日本の女優・声優。福岡県出身。本名は大塚 和子（おおつか かずこ）、旧姓は弥永。血液型はO型。\r\n\r\n1963年の第11期東映ニューフェイスに合格し、東映へ入社。同期には堀田真三・島ひろ子がいる。テアトル・エコー、マウスプロモーションを経て、最終所属は81プロデュース。\r\n\r\n戸田恵子と並び、シガニー・ウィーバーとジェイミー・リー・カーティス両者の吹き替えを経験した数少ない声優の1人（シガニーは最多担当であり、実質持ち役だった）。スーザン・サランドンなどの吹き替えも担当した。\r\n\r\n夫は声優の大塚芳忠。『特捜刑事マイアミヴァイス』『フルハウス』には夫婦で声の出演をしている。\r\n\r\n2014年11月1日、敗血症のため死去。67歳没。",
+                    "locked": false
+                },
+                {
+                    "id": 27065,
+                    "name": "梨羽侑里",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/68/c7/27065_prsn_zOuZX.jpg?r=1738605708",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/c7/27065_prsn_zOuZX.jpg?r=1738605708",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/c7/27065_prsn_zOuZX.jpg?r=1738605708",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/68/c7/27065_prsn_zOuZX.jpg?r=1738605708"
+                    },
+                    "short_summary": "放送表現教育センター、青二プロダクションに所属していた。東京都出身。立教大学文学部卒業。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13142,
+            "name": "ATM-09-ST",
+            "type": 2,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/dc/24/13142_crt_4IT99.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/24/13142_crt_4IT99.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/24/13142_crt_4IT99.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/dc/24/13142_crt_4IT99.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

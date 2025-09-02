@@ -1,0 +1,52 @@
+{
+    "id": 62878,
+    "name": "蝶乃舞花",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b0/64/62878_crt_B4kUQ.jpg?r=1524814975",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/64/62878_crt_B4kUQ.jpg?r=1524814975",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/64/62878_crt_B4kUQ.jpg?r=1524814975",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b0/64/62878_crt_B4kUQ.jpg?r=1524814975"
+    },
+    "summary": "スターハーモニー学園のアイドル科に所属する中学2年生。見た目も大人っぽく凛としていて、ミステリアスなかっこいい女のコ。幼いころよりお祭り好きな一面があり、勝負ごとになると血が騒いで燃えるタイプ。日頃、地元のサッカーチームの応援に情熱を注いでいる。キレのあるダンスが武器で、アクションもこなせるほど運動神経が良く、頼りになるがなぜかオバケだけは苦手。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蝶乃舞花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ちょうの まいか"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月8日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 4,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 8,
+    "stat": {
+        "comments": 3,
+        "collects": 2
+    },
+    "anime_ids": [
+        234413
+    ]
+}

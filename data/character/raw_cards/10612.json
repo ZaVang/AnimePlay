@@ -1,0 +1,65 @@
+{
+    "id": 10612,
+    "name": "仲村ゆり",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/90/50/10612_crt_twtXP.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/50/10612_crt_twtXP.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/50/10612_crt_twtXP.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/90/50/10612_crt_twtXP.jpg"
+    },
+    "summary": "死后世界战线的领导者\r\n“虽然很唐突，但你不加入我们队伍吗？”\r\n统率着SSS（死后世界战线）的少女。\r\n爱称是“游离子”。作战时会戴上白色的贝雷帽。平时以手枪战斗，不过也很擅长使用刀具进行白刃战，有着能和天使一对一单挑的实力。性格强势、不服输，在故事的前半部分为了打倒天使，即使同伴有所损伤也并不介意。\r\n\r\n动画：持续与命运和神抗争的少女\r\n在死后的世界率领着“死后世界战线（SSS）”的少女。\r\n性格坚强好胜，是那种在说之前先去做的类型，即使如此也并不会惹人厌烦，是个受到大家喜爱的女孩子。\r\n本名是由理，不过战线的成员都亲切地称呼她“游离子（ゆりっぺ）”。\r\n顺带一提，腰间插着的手枪是她的武器。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "仲村由理"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "仲村百合"
+                },
+                {
+                    "k": "日文名",
+                    "v": "仲村 ゆり"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なかむら ゆり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nakamura Yuri"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ゆりっぺ、游离子、小百合、伪团长"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://key.visualarts.gr.jp/angelbeats/character.html"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 45,
+        "collects": 352
+    },
+    "anime_ids": [
+        1851,
+        363880
+    ]
+}

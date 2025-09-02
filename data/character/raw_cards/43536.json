@@ -1,0 +1,57 @@
+{
+    "id": 43536,
+    "name": "古手川千紗",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/70/22/43536_crt_HBtM0.jpg?r=1534513074",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/22/43536_crt_HBtM0.jpg?r=1534513074",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/22/43536_crt_HBtM0.jpg?r=1534513074",
+        "grid": "https://lain.bgm.tv/pic/crt/g/70/22/43536_crt_HBtM0.jpg?r=1534513074"
+    },
+    "summary": "　　本作におけるヒロイン。伊織の同い年の従姉妹。同じく伊豆大学機械工作科の1年生。\r\n　　ダイビング経験者。将来の夢はインストラクターで、水族館でたまに手伝いをしていたりする。男女比率140:3である学科での人気は高く、「伊豆春祭」でミスコンを獲ったことで学内での知名度も高くなってしまい、男除けのために伊織が彼氏だと偽ることで平穏を得た。伊織とバディになった際には、水の苦手な伊織に楽しんでもらえるよう真剣だった。\r\n　　伊織に対してはダイビングの魅力を伝えようと自分なりに画策する面倒見のいい一面を見せているが、伊織の下衆な言動に度々虫けらを見るような冷たい視線を送ることもある。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "古手川千纱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "古手川 千紗"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こてがわ ちさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kotegawa Chisa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 61,
+        "collects": 428
+    },
+    "anime_ids": [
+        235130,
+        515880
+    ]
+}

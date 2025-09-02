@@ -1,0 +1,53 @@
+{
+    "id": 21953,
+    "name": "シトロン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/25/a2/21953_crt_yIDu6.jpg?r=1471929475",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/a2/21953_crt_yIDu6.jpg?r=1471929475",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/a2/21953_crt_yIDu6.jpg?r=1471929475",
+        "grid": "https://lain.bgm.tv/pic/crt/g/25/a2/21953_crt_yIDu6.jpg?r=1471929475"
+    },
+    "summary": "《神奇宝贝XY》的主角，米亚雷市的道馆馆长。擅长发明，在背着的背包中装备着自豪的长尾怪手手臂。受到小智热爱神奇宝贝的心情而感动，决定带着妹妹尤莉卡和小智一起旅行，但起先没把馆主身分透露给他人知道。虽然有时后发明的东西可以帮助小智他们，但最后总是会爆炸或出问题。造型范本为3DS X、Y版米亚雷市的道馆馆长。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "希特隆"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "西特隆 / 史特隆 / 柠檬"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Clemont"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Citron"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 7
+    },
+    "anime_ids": [
+        78799,
+        146408
+    ]
+}

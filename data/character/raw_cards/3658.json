@@ -1,0 +1,88 @@
+{
+    "id": 3658,
+    "name": "コジロウ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2b/06/3658_crt_NvDsj.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/06/3658_crt_NvDsj.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/06/3658_crt_NvDsj.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2b/06/3658_crt_NvDsj.jpg"
+    },
+    "summary": "小次郎是火箭队的一员，他和他的同伙武藏、喵喵总是跟着小智一行人，企图抢走小智的皮卡丘，但从没成功过。在《宝可梦 太阳＆月亮》的阿罗拉联盟的宣传影片中，他被称为白洞士兵。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小次郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "James"
+                },
+                {
+                    "k": "法文名",
+                    "v": "James"
+                },
+                {
+                    "k": "德文名",
+                    "v": "James"
+                },
+                {
+                    "k": "意大利文名",
+                    "v": "James"
+                },
+                {
+                    "k": "西班牙文名",
+                    "v": "James"
+                },
+                {
+                    "k": "韩文名",
+                    "v": "로이"
+                },
+                {
+                    "k": "泰文名",
+                    "v": "โคจิโร่"
+                },
+                {
+                    "k": "印尼文名",
+                    "v": "Kojiro，James"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kojirō"
+                },
+                {
+                    "k": "昵称",
+                    "v": "白洞士兵"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "家乡所在地",
+            "value": "关都地区"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://wiki.52poke.com/wiki/小次郎"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 36
+    },
+    "anime_ids": [
+        3019
+    ]
+}

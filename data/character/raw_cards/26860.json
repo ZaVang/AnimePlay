@@ -1,0 +1,48 @@
+{
+    "id": 26860,
+    "name": "藤吉晃二",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3a/3e/26860_crt_hHZoS.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/3e/26860_crt_hHZoS.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/3e/26860_crt_hHZoS.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3a/3e/26860_crt_hHZoS.jpg"
+    },
+    "summary": "村井の悪友で、黒髪のロン毛が特徴。将棋部所属。5人兄弟の次男で、弟や妹の世話に汲々としている。\r\n    「鬼塚はいじめるより一緒に遊んでいるほうが楽しいから」という理由で、教師イジメを辞めた。雅に惚れており、クラスで孤立化しても親密に接し続けた。家が貧乏であるため、欲に負けて集金使い込み事件を起こすが、責任を感じて自らのアルバイトを行うなど、行動力もある。\r\n    アニメでのEDクレジットおよび原作初登場時では、「藤吉コージ」となっている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "俄文名",
+                    "v": "Кодзи Фудзиёси"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ふじよし こうじ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fujiyoshi Kouji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        2045
+    ]
+}

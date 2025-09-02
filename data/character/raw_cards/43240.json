@@ -1,0 +1,61 @@
+{
+    "id": 43240,
+    "name": "逢坂壮五",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a4/f1/43240_crt_i0Me2.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/f1/43240_crt_i0Me2.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/f1/43240_crt_i0Me2.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a4/f1/43240_crt_i0Me2.jpg"
+    },
+    "summary": "IDOLiSH7のメンバー。\r\n\r\n好きなもの：整理整頓\r\n嫌いなもの：弱い自分\r\nまじめで優しい好青年。責任感が強く何事も優秀にこなすが、悩みを1人で抱え込んでしまいがちで大和から密かに心配されている。普段は温厚な性格だが、タガが外れると手に負えなくなることも……。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "逢坂壮五"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "おうさかそうご"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Osaka Sogo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月28日"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        },
+        {
+            "key": "年龄",
+            "value": "20"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 28,
+    "stat": {
+        "comments": 7,
+        "collects": 20
+    },
+    "anime_ids": [
+        253042,
+        331751
+    ]
+}

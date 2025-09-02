@@ -1,0 +1,151 @@
+{
+    "id": 90792,
+    "name": "航海王：黄金梅利号之章 另一位伙伴的故事",
+    "image_path": "data/images/anime/90792.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "该2小时特别节目为《奈美之章》、《路飞之章》以原著的著名篇章所重新绘制的版本接续制作。为“周六PREMIUM”时段播出的《ONE PIECE》电视特别篇第三弹。\r\n\r\n至于本作挑选的原作著名篇章为“水之七岛”、“司法岛篇”重新绘制成这套特别篇，以草帽海贼团的另一位同伴前进梅利号的相遇与离别的故事，以它为中心描绘一个全新的友情故事。在剧情上与原作有一定区别，本作与电影版《ONE PIECE FILM Z》的特别短篇也有所关联。\r\n\r\n发售的BD/DVD光碟版将于2013年11月29日于日本地区发行。 \r\n\r\n故事开始从布鲁克问起迷你梅利二号的由来，撒谎布才想起，因为布鲁克当时还尚未入团，所以不知道梅利号的存在，所以就讲述了梅利号的故事。当年把梅利号送去水之七岛维修的时候，船匠们都断定梅利号已经破损到不能再航行，撒谎布和路飞还为此大打一架。后来为了救出被世界政府抓去的罗宾，大伙们赶去司法岛阻止罗宾走进艾尼爱斯大厅。可是却被斯潘达姆发动的“非常召集”令困住，就在无路可逃的时候，是他们的另一位伙伴梅利号来救了他们~~ ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2013-08-24",
+    "rating_rank": 1252,
+    "rating_score": 7.4,
+    "rating_total": 292,
+    "main_character_ids": [
+        2358,
+        2359,
+        2360,
+        2362,
+        2363,
+        2371,
+        2372,
+        2374,
+        2375
+    ],
+    "main_characters": [
+        {
+            "id": 2358,
+            "name": "モンキー・D・ルフィ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/12/c1/2358_crt_3ZoDo.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/c1/2358_crt_3ZoDo.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/c1/2358_crt_3ZoDo.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/12/c1/2358_crt_3ZoDo.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 2359,
+            "name": "ロロノア・ゾロ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2e/9a/2359_crt_DJdZ1.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/9a/2359_crt_DJdZ1.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/9a/2359_crt_DJdZ1.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2e/9a/2359_crt_DJdZ1.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 2360,
+            "name": "ナミ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d8/70/2360_crt_8PGg0.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/70/2360_crt_8PGg0.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/70/2360_crt_8PGg0.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d8/70/2360_crt_8PGg0.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 2362,
+            "name": "ウソップ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/de/60/2362_crt_JGX05.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/60/2362_crt_JGX05.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/60/2362_crt_JGX05.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/de/60/2362_crt_JGX05.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 2363,
+            "name": "ヴィンスモーク・サンジ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f4/91/2363_crt_YG9K7.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/91/2363_crt_YG9K7.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/91/2363_crt_YG9K7.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f4/91/2363_crt_YG9K7.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 2371,
+            "name": "トニートニー・チョッパー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/51/d7/2371_crt_ELSjx.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/d7/2371_crt_ELSjx.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/d7/2371_crt_ELSjx.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/51/d7/2371_crt_ELSjx.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 2372,
+            "name": "ニコ・ロビン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/94/ef/2372_crt_21hk2.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/94/ef/2372_crt_21hk2.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/94/ef/2372_crt_21hk2.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/94/ef/2372_crt_21hk2.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 2374,
+            "name": "フランキー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1b/7a/2374_crt_B235y.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/7a/2374_crt_B235y.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/7a/2374_crt_B235y.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1b/7a/2374_crt_B235y.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 2375,
+            "name": "ブルック",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/67/d2/2375_crt_87yF4.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/d2/2375_crt_87yF4.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/d2/2375_crt_87yF4.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/67/d2/2375_crt_87yF4.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "id": 13111,
+    "name": "篝",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/08/ed/13111_crt_TtFTy.jpg?r=1613866866",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/ed/13111_crt_TtFTy.jpg?r=1613866866",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/ed/13111_crt_TtFTy.jpg?r=1613866866",
+        "grid": "https://lain.bgm.tv/pic/crt/g/08/ed/13111_crt_TtFTy.jpg?r=1613866866"
+    },
+    "summary": "白と黒のヒナギクが埋め尽くす丘で佇む謎の少女。\r\n「鍵」と呼ばれ、大きな運命を背負っているが、その少女のことは「誰も知らない」",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "篝"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "键"
+                },
+                {
+                    "v": "鍵"
+                },
+                {
+                    "v": "未来来篝"
+                },
+                {
+                    "v": "miracle kagari"
+                },
+                {
+                    "v": "mirakuru kagari"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かがり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "kagari"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        },
+        {
+            "key": "体重",
+            "value": "42kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B77/ W54/ H74"
+        },
+        {
+            "key": "引用来源",
+            "value": "Official Site; VNDB"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 40,
+        "collects": 197
+    },
+    "anime_ids": [
+        363880
+    ]
+}

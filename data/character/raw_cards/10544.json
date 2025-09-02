@@ -1,0 +1,55 @@
+{
+    "id": 10544,
+    "name": "クラフト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5e/c7/10544_crt_IbbyA.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/c7/10544_crt_IbbyA.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/c7/10544_crt_IbbyA.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5e/c7/10544_crt_IbbyA.jpg"
+    },
+    "summary": "铎古拉星王家护卫军队长、护卫王子长达10年。老实的个性老是被王子耍著玩，总是认真的和王子做出諌言，也因此特别容易被王子搞到勃然大怒。被部下的2人评为“你是当不成坏人的”。名言“我要杀了那家伙”。名字来自小说家霍华德·菲利普·洛夫克拉夫特(H.P Lovecraft)。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "克拉夫特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "戈拉夫特"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "酷拉法特"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Kraft"
+                },
+                {
+                    "k": "昵称",
+                    "v": "队长"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 8,
+        "collects": 26
+    },
+    "anime_ids": [
+        9853
+    ]
+}

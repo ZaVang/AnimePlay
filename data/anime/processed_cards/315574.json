@@ -1,0 +1,90 @@
+{
+    "id": 315574,
+    "name": "赛马娘 Pretty Derby 第二季",
+    "image_path": "data/images/anime/315574.jpg",
+    "points": 8.4,
+    "cost": 4,
+    "rarity": "SSR",
+    "description": "“我要和你一起实现梦想！”\r\n这是从异世界传承着光辉姓名与竞跑能力的“赛马娘”们，长久以来和人类共存的世界的故事。\r\n马娘目白麦昆背负起名门的声誉，向“天皇赏”连霸发起挑战。马娘东海帝皇憧憬着赛马史上首屈一指的马娘鲁铎象征，剑指“皋月赏”、“日本德比”、“菊花赏”三连冠。二人既是对手，也是伙伴。她们一同怀抱着梦想，向着“闪光系列赛”的优胜，全力奔跑！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "运动",
+        "游戏改"
+    ],
+    "date": "2021-01-04",
+    "rating_rank": 72,
+    "rating_score": 8.4,
+    "rating_total": 15363,
+    "main_character_ids": [
+        50578,
+        50600
+    ],
+    "main_characters": [
+        {
+            "id": 50578,
+            "name": "トウカイテイオー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6a/83/50578_crt_Y9JG9.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/83/50578_crt_Y9JG9.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/83/50578_crt_Y9JG9.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6a/83/50578_crt_Y9JG9.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 15302,
+                    "name": "Machico",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4c/db/15302_prsn_a4HSr.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/db/15302_prsn_a4HSr.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/db/15302_prsn_a4HSr.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4c/db/15302_prsn_a4HSr.jpg"
+                    },
+                    "short_summary": "Machico（まちこ、1992年3月25日 - ）は、日本の女性歌手、声優。ホリプロ所属。広島県呉市出身。本名は齊藤 真知子（さいとう まちこ）。所属レーベルは日本コロムビア。\r\n\r\n2011年、ホリプロ主催の「第36回ホリプロタレントスカウトキャラバン 次世代声優アーティストオーディション」において、ファイナリストに残る。\r\n2012年にminoriのPCゲーム『すぴぱら - Alice the magical conductor.』のメインテーマソング『Magical Happy Show !』でメジャーデビュー。\r\n声優としては2013年に『THE IDOLM@STER MILLION LIVE!』の伊吹翼役でデビューした。また同年10月からは同期で「次世代声優アーティストオーディション」のグランプリ・田所あずさ、ファイナリストである大橋彩香、木戸衣吹、山崎エリイらとAKIBAカルチャーズ劇場でアニメソング、ゲームソングのカバーライブイベント「Anisong Ichiban!! presented by HoriPro」を開催している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 50600,
+            "name": "メジロマックイーン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5f/17/50600_crt_0CNk0.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/17/50600_crt_0CNk0.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/17/50600_crt_0CNk0.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5f/17/50600_crt_0CNk0.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 14320,
+                    "name": "大西沙織",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/67/e3/14320_prsn_NkyKy.jpg?r=1606880325",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/e3/14320_prsn_NkyKy.jpg?r=1606880325",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/e3/14320_prsn_NkyKy.jpg?r=1606880325",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/67/e3/14320_prsn_NkyKy.jpg?r=1606880325"
+                    },
+                    "short_summary": "大西 沙織（おおにし さおり、1992年8月6日 - ）は、日本の女性声優。千葉県出身。アイムエンタープライズ所属。\r\n\r\n小学校、中学校では吹奏楽部に所属し、サックスを吹いていた。高校時代は理系クラスで部活に入らず、養成学校に通っていた。\r\n声優を目指したきっかけは、小学4年生の頃テレビを観ていてアニメがおもしろいと思い、そのうち自然と「私は声優になるんだ」と考えるようになった。憧れの声優は坂本真綾と小林沙苗。\r\n事務所入所後の初仕事は2012年発売のドラマCD『ペンギンゑにし 第二譚 少女神隠し』。初めてオーディションで頂いた役は『ストライク・ザ・ブラッド』のラ・フォリア・リハヴァイン。\r\n『ラジオどっとあい』第60代目パーソナリティを2014年10月から同年12月まで務めた。\r\n特技はイラストを描くこと。\r\n趣味はアニメ・ドラマのサントラ鑑賞。\r\n2018年3月3日、第12回声優アワード助演女優賞・パーソナリティ賞受賞。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

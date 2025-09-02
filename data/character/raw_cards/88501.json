@@ -1,0 +1,52 @@
+{
+    "id": 88501,
+    "name": "藤木源之助",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8d/a4/88501_crt_hXibN.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/a4/88501_crt_hXibN.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/a4/88501_crt_hXibN.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8d/a4/88501_crt_hXibN.jpg"
+    },
+    "summary": "岩本虎眼道场的代理老师。对从幼时起就将百姓之子的自己捡回去的虎眼非常忠心。本来是以成为虎眼道场的接班人为目标的，可是这种情形在伊良子清玄出现后，他的命运也随之改变了。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藤木源之助"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ふじき げんのすけ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fujiki Gennosuke"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 4
+    },
+    "anime_ids": [
+        4010
+    ]
+}

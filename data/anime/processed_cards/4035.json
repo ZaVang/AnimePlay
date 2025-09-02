@@ -1,0 +1,90 @@
+{
+    "id": 4035,
+    "name": "摇滚新乐团",
+    "image_path": "data/images/anime/4035.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "故事开始于每天过着平凡的生活，并对未来感到不安的14岁少年田中幸雄，在某天遇到了一位谜样人物南龙介后就一脚踏入了音乐的世界。以田中幸雄、南龙介为中心并集结其他才华洋溢的成员所形成的乐团BECK，虽然历经许多失败与挫折，但成员们还是对自己的乐团抱持信心一步步缓缓前进。在作品中可看到小雄活用他天生的好歌喉和作曲能力为乐团做出许多贡献，但一方面也因吉他功力不足而有不少扯后腿的场面；在龙介的异父妹妹、同时也是恋人的真帆支持下，过着以乐团为中心并不同于一般高中生的生活。 ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "音乐"
+    ],
+    "date": "2004-10-06",
+    "rating_rank": 475,
+    "rating_score": 7.8,
+    "rating_total": 1264,
+    "main_character_ids": [
+        17244,
+        17245
+    ],
+    "main_characters": [
+        {
+            "id": 17244,
+            "name": "田中幸雄",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b2/a1/17244_crt_nhM8b.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/a1/17244_crt_nhM8b.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/a1/17244_crt_nhM8b.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b2/a1/17244_crt_nhM8b.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4254,
+                    "name": "浪川大輔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/70/c3/4254_prsn_99K43.jpg?r=1631019573"
+                    },
+                    "short_summary": "浪川 大輔（なみかわ だいすけ、1976年4月2日 - ） は、日本の声優、俳優、歌手、ナレーター。ステイラック代表取締役。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 17245,
+            "name": "南竜介",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/88/c6/17245_crt_wMdZQ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/c6/17245_crt_wMdZQ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/c6/17245_crt_wMdZQ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/88/c6/17245_crt_wMdZQ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 41217,
+                    "name": "上野裕馬",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "",
+                        "medium": "",
+                        "small": "",
+                        "grid": ""
+                    },
+                    "short_summary": "兵庫県出身の俳優、タレント。主な出演にテレビ「マルサ!!」「TOKYO2003」「トラベラーズTV」、映画『異形ノ恋』『HEAT灼熱』などがある。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

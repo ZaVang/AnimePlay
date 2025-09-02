@@ -1,0 +1,64 @@
+{
+    "id": 81,
+    "name": "アイン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e2/7d/81_crt_nIRs9.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/7d/81_crt_nIRs9.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/7d/81_crt_nIRs9.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e2/7d/81_crt_nIRs9.jpg"
+    },
+    "summary": "爱因表面上是一只雄性威尔士矮脚狗，然而实际上是一只被研究机关开发的，在狂热者(怎样的狂热者？)之间以天文价格交易的数据狗。因为本来是某实验机构的试验品（“Ein”在德语里是“一”的意思），而这里Ein的意思就是大科学家爱因斯坦的名字缩写，暗示该犬超级高智商，它比一般的狗拥有高出许多的智商，不但拥有资讯处理能力，也可以理解并在一定程度上与人类交流。但尽管拥有非常出众的智力，但是斯派克他们根本没察觉。其实没人看见的时候它甚至会去玩电脑…",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "爱因"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Ein"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "雄"
+        },
+        {
+            "key": "生日",
+            "value": "2069年"
+        },
+        {
+            "key": "体重",
+            "value": "9.8kg"
+        },
+        {
+            "key": "体长",
+            "value": "64cm"
+        },
+        {
+            "key": "体高",
+            "value": "29cm"
+        },
+        {
+            "key": "犬种",
+            "value": "威尔士矮脚狗"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 20,
+    "birth_day": 9,
+    "stat": {
+        "comments": 19,
+        "collects": 98
+    },
+    "anime_ids": [
+        253
+    ]
+}

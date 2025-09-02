@@ -1,0 +1,44 @@
+{
+    "id": 22782,
+    "name": "シュガー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/14/86/22782_crt_egQMx.jpg?r=1616053790",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/14/86/22782_crt_egQMx.jpg?r=1616053790",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/14/86/22782_crt_egQMx.jpg?r=1616053790",
+        "grid": "https://lain.bgm.tv/pic/crt/g/14/86/22782_crt_egQMx.jpg?r=1616053790"
+    },
+    "summary": "本作品的另一位女主角。糖糖是一位见习季节精灵，具体地说，是见习雪精灵。她使用魔法笛子制造雪花。相当于人类年龄的9岁。梦想是成为妈妈那样的独当一面的雪精灵。糖糖的性格和莎佳有计划的性格几乎是相反的。与莎佳住在一起，喜欢吃“格仔饼”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "糖糖"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Sugar"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shugaa"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 9
+    },
+    "anime_ids": [
+        2414
+    ]
+}

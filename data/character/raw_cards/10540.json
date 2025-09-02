@@ -1,0 +1,50 @@
+{
+    "id": 10540,
+    "name": "バカ=キ=エル・ドグラ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/17/d7/10540_crt_K751S.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/d7/10540_crt_K751S.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/d7/10540_crt_K751S.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/17/d7/10540_crt_K751S.jpg"
+    },
+    "summary": "多古拉星第一王子，同时拥有宇宙第一的天才头脑和宇宙第一的恶劣性格，凡事不考虑他人感受，以看到别人烦恼的样子为乐，总是利用非凡的才能将周围人卷入恶作剧中。\r\n在前往参加全宇宙规模会议途中偷跑到地球，由此展开故事。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "马鹿·基·艾尔·多古拉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "马鲁·奇·艾鲁·多古拉王子"
+                },
+                {
+                    "v": "马鹿王子"
+                },
+                {
+                    "k": "日文名",
+                    "v": "バカ=キ=エル・ドグラ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 12,
+        "collects": 79
+    },
+    "anime_ids": [
+        9853
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "id": 143429,
+    "name": "銘戸芽衣",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/59/d3/143429_crt_39wRV.jpg?r=1717851005",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/d3/143429_crt_39wRV.jpg?r=1717851005",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/d3/143429_crt_39wRV.jpg?r=1717851005",
+        "grid": "https://lain.bgm.tv/pic/crt/g/59/d3/143429_crt_39wRV.jpg?r=1717851005"
+    },
+    "summary": "花園家に仕える専属メイド。\r\n奥ゆかしい性格で、リミッターを外しがちな羽々里の世話も笑顔でこなす。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "铭户芽衣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "花園家のメイド"
+                },
+                {
+                    "k": "日文名",
+                    "v": "銘戸 芽衣"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "めいど めい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Meido Mei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月10日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 10,
+    "stat": {
+        "comments": 15,
+        "collects": 31
+    },
+    "anime_ids": [
+        471793
+    ]
+}

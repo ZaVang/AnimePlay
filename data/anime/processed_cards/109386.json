@@ -1,0 +1,155 @@
+{
+    "id": 109386,
+    "name": "Fate/stay night [Unlimited Blade Works] 第二季",
+    "image_path": "data/images/anime/109386.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "Fate/stay night [Unlimited Blade Works] 分割放送的第二期",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "战斗",
+        "游戏改"
+    ],
+    "date": "2015-04-04",
+    "rating_rank": 946,
+    "rating_score": 7.5,
+    "rating_total": 15930,
+    "main_character_ids": [
+        273,
+        3214,
+        3216,
+        10596
+    ],
+    "main_characters": [
+        {
+            "id": 273,
+            "name": "アルトリア・ペンドラゴン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7d/58/273_crt_N99A0.jpg?r=1629370055",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/58/273_crt_N99A0.jpg?r=1629370055",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/58/273_crt_N99A0.jpg?r=1629370055",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7d/58/273_crt_N99A0.jpg?r=1629370055"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 740,
+                    "name": "川澄綾子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/05/d0/740_prsn_TqQ7W.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/d0/740_prsn_TqQ7W.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/d0/740_prsn_TqQ7W.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/05/d0/740_prsn_TqQ7W.jpg"
+                    },
+                    "short_summary": "日本女性声优。生于东京，亦有兼任歌唱工作。東邦音楽短期大学毕业。\r\n\r\n在低出生体重儿的危险状况下被生下来，曾说过自己的父母已有了万一的觉悟急急忙忙以“あ”为开头作为名字。出生预定日为5月3日。被亲戚笑“比牛奶球还小”。\r\n在1996年的SME声优大赛中得到代代木动画学院奖。\r\n在《逮捕令》中以妇警D一角初次以动画声优登场，之前已以广告旁白出道。\r\n以《头文字D》中的茂木夏树一角和动画《To Heart》的神岸明一角开始活跃。\r\n在《星界战旗》的拉斐尔选角时从一百名候选人被选拔，配音时发烧发到摄氏40度仍然去配音，结果被音响监督叫她回家去，说“从来没见到这么拼命的声优”。\r\n说“是（はい）”的口音独特。\r\n为少女、幼女、美女、恶女、严肃、搞笑、纯情、傲娇等等各式各样的类型的角色配过音。部分作品中会演唱主题曲或角色曲。\r\n在动画的配音中，比起黄金档、低龄向作品、一般向作品，以深夜动画、萌系动画和美少女动画居多。\r\n被剧本家会川升称为“オーディション荒らし”。\r\n曾以“あやちー（小绫）”这个爱称在fans间流传，但是在业界内现在还用这个爱称称呼的只有过去认识的朋友。其他的还有“绫ちゃん（小绫）”、“あやすみ（绫澄）”、“あやねえ（绫姐）”等。\r\n一般不戴眼镜，极偶尔会在杂志和网络上出现她戴眼镜的照片。但在《PONY CANYON STYLE まるなび!?》的BSQR489版中则有很多她戴眼镜的照片。\r\n因为憧憬岩田光央而进入大泽事务所。\r\n喜欢的很大只的猫。\r\n学生时代曾经是《JoJo的奇妙冒险》的粉丝，后在2012年7月在东京举办的JoJo连载25周年纪念“JoJo展”中与饰演乔纳森・乔斯达的兴津和幸、担任旁白的大川透共同到场。\r\n座右铭是“人間万事塞翁が馬”。\r\n\r\n从3岁起学习钢琴，拥有绝对音感；但因认为平时弹钢琴没有什么意义，几乎只在为まるなび！？HOT TUNE作曲时才会接触钢琴。\r\n兴趣是看棒球比赛，为东京养乐多燕子的球迷。特别是经常将代跑城友博（1999年移籍至阪神虎）的成绩整理在笔记本里。\r\n于PONY CANYON STYLE まるなび！？的第139回（2007年5月22日）中提及自己取得了汽车驾驶执照。\r\n非常喜爱猫，东京父母的家中养有数只。\r\n得意料理是千层面、绫子锅（生天目仁美命名），其中绫子锅在棉花糖会（ましまろ会）中大受好评。\r\n相当害怕昆虫。据说家族旅行时，要去露天温泉的途中看到虫，而发出哀嚎吓到母亲。另外，与能登麻美子一起去旅行的时候，也曾因见到虫而吓得从露天温泉里逃出来。\r\n自认非常喜欢说话，是个健谈的女孩子。\r\n据说即使长时间乘坐电车，也不会在里头睡着。\r\n关于配音，曾提到：“现在想起来，第一次的拍后录音是最紧张的时候。因为紧张，有的时候甚至会说不出话来（笑）。现在总算是已经适应了这种气氛了，而且使我兴奋的是最近挑战的几个全新的角色，也许大家从中能够看到另外一个我呢。能够出演这样一些角色我自己也非常高兴，我希望在30岁、不，40岁以后大家还是象现在一样喜欢我塑造的角色。\r\n\r\n被同事务所的晚辈能登麻美子称呼为“小绫”（绫ちゃん）、而且还私下2人一起去过温泉旅行。\r\n在演出《草莓棉花糖》后，与同剧的声优千叶纱子、折笠富美子及能登麻美子关系良好，因此组成了“棉花糖会（ましまろ会）”，偶尔会相约一起出外活动。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 3214,
+            "name": "衛宮士郎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5a/ca/3214_crt_8GtBn.jpg?r=1492257195",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5a/ca/3214_crt_8GtBn.jpg?r=1492257195",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5a/ca/3214_crt_8GtBn.jpg?r=1492257195",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5a/ca/3214_crt_8GtBn.jpg?r=1492257195"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4578,
+                    "name": "杉山紀彰",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/37/bd/4578_prsn_NKnxc.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/bd/4578_prsn_NKnxc.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/bd/4578_prsn_NKnxc.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/37/bd/4578_prsn_NKnxc.jpg"
+                    },
+                    "short_summary": "杉山 紀彰（すぎやま のりあき、3月9日 - ）は、日本の男性声優、ナレーター。東京都出身。血液型A型。身長168cm。\r\n\r\n2011年5月までぷろだくしょんバオバブに所属。同年6月よりアクセルワン所属であったが、2015年11月よりフリーとなった。\r\n\r\n2016年2月より、浪川大輔が代表を務めるステイラックに所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 3216,
+            "name": "エミヤ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/12/a1/3216_crt_OMAL4.jpg?r=1492586676",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/a1/3216_crt_OMAL4.jpg?r=1492586676",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/a1/3216_crt_OMAL4.jpg?r=1492586676",
+                "grid": "https://lain.bgm.tv/pic/crt/g/12/a1/3216_crt_OMAL4.jpg?r=1492586676"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3864,
+                    "name": "諏訪部順一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884"
+                    },
+                    "short_summary": "日本の男性声優、ナレーター、歌手。東京俳優生活協同組合所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10596,
+            "name": "遠坂凛",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/79/f0/10596_crt_J4h2w.jpg?r=1675677254",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/79/f0/10596_crt_J4h2w.jpg?r=1675677254",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/79/f0/10596_crt_J4h2w.jpg?r=1675677254",
+                "grid": "https://lain.bgm.tv/pic/crt/g/79/f0/10596_crt_J4h2w.jpg?r=1675677254"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4263,
+                    "name": "植田佳奈",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/68/c8/4263_prsn_zcLyB.jpg?r=1460055841",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/c8/4263_prsn_zcLyB.jpg?r=1460055841",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/c8/4263_prsn_zcLyB.jpg?r=1460055841",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/68/c8/4263_prsn_zcLyB.jpg?r=1460055841"
+                    },
+                    "short_summary": "童年时在大阪府东大阪市渡过。因在关西出生，故经常为“关西腔”角色配音。\r\n由于替多个双马尾的角色配音，因此被部分粉丝称为双马尾声优。\r\n极爱玩网络游戏，和绿川光一样被称为“网络游戏废人”。另一兴趣是麻将，号称“植田雀庄庄主”。\r\n曾与声优中原麻衣、斎藤千和及森永理科结成组合“Mix JUICE”（みっくすJUICE），与同属同一事务所的森永理科和伊月唯关系良好。（两者现在均已退社）\r\n拥有业余无线电4级资格。 \r\n最新的个人日志中表示，现在是XBOX360的核心玩家，着迷于《最后一战3》，最近曾在8人联机对战比赛中连续奋战16小时，是有史以来头一次熬夜通宵游戏。目前属于陶山章央为核心的光晕战队。也在Halo 3: ODST和《使命召唤现代战争3》中配音。\r\n\r\nFacebook: https://www.facebook.com/%E6%A4%8D%E7%94%B0%E4%BD%B3%E5%A5%88Kana-Ueda-142283892502076/",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 15661,
+    "name": "結城蛍",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/76/a1/15661_crt_yU4Ym.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/76/a1/15661_crt_yU4Ym.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/76/a1/15661_crt_yU4Ym.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/76/a1/15661_crt_yU4Ym.jpg"
+    },
+    "summary": "直保的总角之交好友，农大农学部一年级生，是酿酒场老板的儿子，和火落菌（食果糖乳杆菌、Lactobacillus fructivorans）有着深仇大恨。\r\n喜欢青梅竹马的泽木君(>v <)~",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "结城萤"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ゆうき けい"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "体重",
+            "value": "54kg"
+        },
+        {
+            "key": "年龄",
+            "value": "18"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 8
+    },
+    "anime_ids": [
+        3012
+    ]
+}

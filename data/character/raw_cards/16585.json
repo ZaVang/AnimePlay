@@ -1,0 +1,35 @@
+{
+    "id": 16585,
+    "name": "藤原義孝",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7d/83/16585_crt_ZazN0.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/83/16585_crt_ZazN0.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/83/16585_crt_ZazN0.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7d/83/16585_crt_ZazN0.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 3
+    },
+    "anime_ids": [
+        37138
+    ]
+}

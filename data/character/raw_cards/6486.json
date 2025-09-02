@@ -1,0 +1,48 @@
+{
+    "id": 6486,
+    "name": "ハナ・モレーノス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6a/ff/6486_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/ff/6486_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/ff/6486_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6a/ff/6486_crt_anidb.jpg"
+    },
+    "summary": "道子恋慕的男人的女儿，本名“花儿(hana)·莫雷诺斯”。在伪善的神父家庭被当作牛马使唤的佣人少女，内心坚强。一直想着能从虐待养父母那里逃出来。期盼着能有一天能有一个人来接走她。道子突然出现在了她的面前，带给她了自由和冒险的生活。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "花儿·莫雷诺斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Hana Morenos"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 20
+    },
+    "anime_ids": [
+        919
+    ]
+}

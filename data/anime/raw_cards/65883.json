@@ -1,0 +1,280 @@
+{
+    "id": 65883,
+    "type": 2,
+    "name": "らんま1/2 熱闘編",
+    "name_cn": "乱马1/2 热斗篇",
+    "summary": "前作の終了から1ヵ月後に、放送時間枠を変更して開始された新シリーズ。およそ20話で終わった前作と異なり、結果的に本作は約3年のロングラン放映を成し遂げた。またアニメオリジナルの部分が濃い点も本作の特徴である。通学先の風林館高校や私生活で男と女をいったりきたりと乱馬の受難はあいかわらず。そんならんまの日常にはシャンプーに思慕を寄せる男ムースや、弦馬と早雲のドスケベな師匠・八宝斎たちお騒がせの面々も続々と出没する。",
+    "nsfw": false,
+    "locked": false,
+    "date": "1989-10-20",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/d7/f0/65883_T0ilB.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/d7/f0/65883_T0ilB.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/d7/f0/65883_T0ilB.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/d7/f0/65883_T0ilB.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/d7/f0/65883_T0ilB.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "乱马1/2 热斗篇"
+        },
+        {
+            "key": "话数",
+            "value": "143"
+        },
+        {
+            "key": "放送开始",
+            "value": "1989年10月20日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期五"
+        },
+        {
+            "key": "播放结束",
+            "value": "1992年9月25日"
+        }
+    ],
+    "volumes": 0,
+    "eps": 143,
+    "total_episodes": 143,
+    "rating": {
+        "rank": 1031,
+        "total": 511,
+        "count": {
+            "one": 0,
+            "two": 0,
+            "three": 0,
+            "four": 3,
+            "five": 13,
+            "six": 72,
+            "seven": 166,
+            "eight": 187,
+            "nine": 48,
+            "ten": 22
+        },
+        "score": 7.5
+    },
+    "collection": {
+        "wish": 219,
+        "collect": 768,
+        "doing": 172,
+        "on_hold": 117,
+        "dropped": 45
+    },
+    "tags": [
+        {
+            "name": "TV",
+            "count": 130
+        },
+        {
+            "name": "高桥留美子",
+            "count": 129
+        },
+        {
+            "name": "搞笑",
+            "count": 124
+        },
+        {
+            "name": "1989",
+            "count": 95
+        },
+        {
+            "name": "乱马",
+            "count": 84
+        },
+        {
+            "name": "漫画改",
+            "count": 78
+        },
+        {
+            "name": "恋爱",
+            "count": 60
+        },
+        {
+            "name": "童年",
+            "count": 53
+        },
+        {
+            "name": "studiodeen",
+            "count": 49
+        },
+        {
+            "name": "林原惠美",
+            "count": 40
+        },
+        {
+            "name": "漫改",
+            "count": 36
+        },
+        {
+            "name": "后宫",
+            "count": 22
+        },
+        {
+            "name": "战斗",
+            "count": 16
+        },
+        {
+            "name": "经典",
+            "count": 14
+        },
+        {
+            "name": "山口胜平",
+            "count": 14
+        },
+        {
+            "name": "性转",
+            "count": 13
+        },
+        {
+            "name": "日本",
+            "count": 11
+        },
+        {
+            "name": "1989年10月",
+            "count": 7
+        },
+        {
+            "name": "日常",
+            "count": 7
+        },
+        {
+            "name": "1989年",
+            "count": 5
+        },
+        {
+            "name": "日本动画",
+            "count": 5
+        },
+        {
+            "name": "奇幻",
+            "count": 4
+        },
+        {
+            "name": "芝山努",
+            "count": 4
+        },
+        {
+            "name": "校园",
+            "count": 4
+        },
+        {
+            "name": "川井宪次",
+            "count": 3
+        },
+        {
+            "name": "女装",
+            "count": 3
+        },
+        {
+            "name": "西村纯二",
+            "count": 3
+        },
+        {
+            "name": "西村純二",
+            "count": 3
+        },
+        {
+            "name": "续作",
+            "count": 2
+        },
+        {
+            "name": "长篇",
+            "count": 2
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        1638,
+        1639
+    ],
+    "main_characters": [
+        {
+            "id": 1638,
+            "name": "早乙女乱馬",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/25/bf/1638_crt_2Y12D.jpg?r=1728369697",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/bf/1638_crt_2Y12D.jpg?r=1728369697",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/bf/1638_crt_2Y12D.jpg?r=1728369697",
+                "grid": "https://lain.bgm.tv/pic/crt/g/25/bf/1638_crt_2Y12D.jpg?r=1728369697"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3900,
+                    "name": "山口勝平",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/46/c8/3900_prsn_9Z9tZ.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/46/c8/3900_prsn_9Z9tZ.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/46/c8/3900_prsn_9Z9tZ.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/46/c8/3900_prsn_9Z9tZ.jpg"
+                    },
+                    "short_summary": "日本の声優、劇団21世紀FOX所属舞台俳優、芸能プロダクション悟空代表。\r\n\r\n为人熟悉的代表配音作品有动画《乱马½》主角早乙女乱马〈男生〉、《犬夜叉》主角犬夜叉、《名侦探柯南》工藤新一、《魔术快斗》主角黑羽快斗／怪盗基德、《ONE PIECE》的骗人布、《死亡笔记本》的L、《我们这一家》的藤野等。\r\n兴趣和特长为画插图、弹吉他、杀阵。入读声优学校之前送过报纸。",
+                    "locked": false
+                },
+                {
+                    "id": 3919,
+                    "name": "林原めぐみ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490"
+                    },
+                    "short_summary": "日本的声优、歌手、DJ、作词家（化名为MEGUMI）、作家。出生于日本东京都北区。\r\n歌迷与动漫迷常以“小惠”（めぐさん）、“惠姐”（めぐ姉）及“阁下”（声优平松晶子命名）等方式称呼她。\r\n林原惠演过多部著名作品的主要女角及担任部分片头、片尾曲演唱，包含《新世纪福音战士》的绫波丽、《乱马1/2》的女乱马、《秀逗魔导士》的莉娜·因巴斯、《口袋妖怪》的武藏、《名侦探柯南》的灰原哀、《通灵王》的恐山安娜等，为日本公认的“声优女王”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 1639,
+            "name": "天道あかね",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0a/07/1639_crt_j9DDP.jpg?r=1619279114",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/07/1639_crt_j9DDP.jpg?r=1619279114",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/07/1639_crt_j9DDP.jpg?r=1619279114",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0a/07/1639_crt_j9DDP.jpg?r=1619279114"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4024,
+                    "name": "日髙のり子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5e/57/4024_prsn_bMBgq.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/57/4024_prsn_bMBgq.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/57/4024_prsn_bMBgq.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5e/57/4024_prsn_bMBgq.jpg"
+                    },
+                    "short_summary": "日髙 のり子（ひだか のりこ、1962年5月31日 - ）は、日本の声優、女優、ラジオパーソナリティ、ナレーターである。\r\n東京都千代田区九段出身。愛称は「ノン子（さん）」。本名の旧姓は伊東。名は範子。身長157cm。血液型はAB型。既婚。2009年1月19日に事務所「コンビネーション」を三ツ矢雄二と共に設立する。\r\n代表作に『タッチ』（浅倉南）、『となりのトトロ』（草壁サツキ）、『らんま1/2』（天道あかね）など。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

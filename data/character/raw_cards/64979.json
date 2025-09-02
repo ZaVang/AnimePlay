@@ -1,0 +1,40 @@
+{
+    "id": 64979,
+    "name": "ナナシ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/83/ec/64979_crt_5yDzs.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/ec/64979_crt_5yDzs.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/ec/64979_crt_5yDzs.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/83/ec/64979_crt_5yDzs.jpg"
+    },
+    "summary": "飄々とした風体で相手のリズムを狂わすが、思わぬところで活躍したりする。ロッキーたちとは暴走族“デロイア７”のころからの仲間だが、名前も年齢も知る者はいない。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "纳纳西"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "昵称",
+                    "v": "无名"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        37183
+    ]
+}

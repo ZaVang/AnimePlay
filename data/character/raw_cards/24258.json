@@ -1,0 +1,56 @@
+{
+    "id": 24258,
+    "name": "源輝二",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6c/d7/24258_crt_jA70g.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/d7/24258_crt_jA70g.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/d7/24258_crt_jA70g.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6c/d7/24258_crt_jA70g.jpg"
+    },
+    "summary": "与木村辉一是双胞胎，因为父母离婚而分开，自己和爸爸住而哥哥和妈妈住。他是一个冷酷、帅气的五年级男孩。父母的关系造就了他这样的性格，他不知道自己还有一个哥哥，一直以为其他人都是不需要的，甚至父母。但在数码宝贝世界经历过很多事情后，开始重视同伴和友情，并且找到了自己的哥哥。最终在众人的帮助下改变了想法，并且好像开朗了一点。进入数码世界后，得到光战魂，进化成传说野狼兽、银狼兽、战狼兽以及铠甲加鲁鲁兽。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "源辉二"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Koji Minamoto"
+                },
+                {
+                    "k": "日文名",
+                    "v": "源 輝二"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みなもと こうじ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Minanoto Kouji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 10
+    },
+    "anime_ids": [
+        3131
+    ]
+}

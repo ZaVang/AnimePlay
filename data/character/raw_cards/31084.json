@@ -1,0 +1,56 @@
+{
+    "id": 31084,
+    "name": "根津譲二",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5d/98/31084_crt_sfwU1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5d/98/31084_crt_sfwU1.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5d/98/31084_crt_sfwU1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5d/98/31084_crt_sfwU1.jpg"
+    },
+    "summary": "通称ジョー[15]。いつもフードを被っている物静かな男だが[23]、しばしばチクリと毒舌を吐く[20]。激しい労働をしてきた割に、身体はガリガリで病弱[16][23]。口内炎が酷く、咳き込むたびに血が出てしまう[15]。ペットのアリを溺愛しており[4]、しばしば散歩に連れ出している[21]。ヤケになって暴走すると手が付けられず[19]、アリが万里のカラスに襲われた際には憤激し、万里を襲撃しようとするが、キヨシが体を張って止めたことで未遂に終わった[16][18]。それ以来、キヨシには友情を感じている[16]。\r\nみつ子のBL癖に思い悩むガクトの相談役を務めている内に自身もみつ子と親しくなり、みつ子のBLマンガ作成を手伝うようになった。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "根津让二"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "根津 譲二"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ねづ じょうじ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nezu joji"
+                },
+                {
+                    "k": "昵称",
+                    "v": "让(ジョー)"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 9,
+        "collects": 8
+    },
+    "anime_ids": [
+        110048
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": 62879,
+    "name": "日向エマ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9f/a5/62879_crt_3c36C.jpg?r=1526184996",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/a5/62879_crt_3c36C.jpg?r=1526184996",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/a5/62879_crt_3c36C.jpg?r=1526184996",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9f/a5/62879_crt_3c36C.jpg?r=1526184996"
+    },
+    "summary": "スターハーモニー学園のアイドル科に所属する中学3年生。あいねたちより１学年先輩でもある、面倒見の良いお姉さん。アイドルでもありながらラクロス部にも所属している、とにかく元気でアクティブな女のコ。ラクロスの実力は、日本代表候補に選ばれるほどでもある。歌が上手でリズム感があり楽器の演奏もできるが、周囲の見えないところでは努力を惜しまない。さりげなく気配り上手で、空気を読むのが得意。口癖は「りょ！」",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "日向绘麻"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ひなた えま"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月21日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 2,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 21,
+    "stat": {
+        "comments": 4,
+        "collects": 0
+    },
+    "anime_ids": [
+        234413
+    ]
+}

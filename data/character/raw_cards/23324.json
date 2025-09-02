@@ -1,0 +1,60 @@
+{
+    "id": 23324,
+    "name": "榊",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/75/d9/23324_crt_h1BB2.jpg?r=1391244266",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/d9/23324_crt_h1BB2.jpg?r=1391244266",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/d9/23324_crt_h1BB2.jpg?r=1391244266",
+        "grid": "https://lain.bgm.tv/pic/crt/g/75/d9/23324_crt_h1BB2.jpg?r=1391244266"
+    },
+    "summary": "运动神经超强，善于跑步，身材高大，成绩很好，而且一副酷酷的模样，平常不太爱讲话，很少笑，实际上她的内心是十分和善温柔的。喜欢动物及可爱的东西喜欢到几近神经质。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "身高",
+            "value": "174cm"
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Sakaki"
+                },
+                {
+                    "k": "日文名",
+                    "v": "榊"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さかき"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "简体中文名",
+            "value": "榊"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 10,
+        "collects": 43
+    },
+    "anime_ids": [
+        977
+    ]
+}

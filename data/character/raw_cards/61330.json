@@ -1,0 +1,53 @@
+{
+    "id": 61330,
+    "name": "猫猫",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/63/84/61330_crt_GRcpk.jpg?r=1738768905",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/84/61330_crt_GRcpk.jpg?r=1738768905",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/84/61330_crt_GRcpk.jpg?r=1738768905",
+        "grid": "https://lain.bgm.tv/pic/crt/g/63/84/61330_crt_GRcpk.jpg?r=1738768905"
+    },
+    "summary": "花街で薬師をやっていたが、現在は後宮で下働きをしている。\r\n毒と薬に異常に執着を持つ。\r\n元来の好奇心と正義感から、とある事件に関わったことで運命が一変する。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "猫猫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "マオマオ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Maomao"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://kusuriyanohitorigoto.jp/#chara"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 161,
+        "collects": 472
+    },
+    "anime_ids": [
+        486347,
+        420628
+    ]
+}

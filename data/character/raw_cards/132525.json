@@ -1,0 +1,61 @@
+{
+    "id": 132525,
+    "name": "栄逢凪乃",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/82/40/132525_crt_ITw9e.jpg?r=1688127897",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/40/132525_crt_ITw9e.jpg?r=1688127897",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/40/132525_crt_ITw9e.jpg?r=1688127897",
+        "grid": "https://lain.bgm.tv/pic/crt/g/82/40/132525_crt_ITw9e.jpg?r=1688127897"
+    },
+    "summary": "恋太郎の彼女の一人。\r\n才色兼備で、テストの成績は全教科満点。何事にも効率を求める性格で、恋愛すら「時間の無駄」と切り捨ててしまうほど。あまり感情を顔に出さず、効率重視ゆえに大胆な行動に出ることも。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "荣逢凪乃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "栄逢 凪乃"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "えいあい なの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Eiai Nano"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月14日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://hyakkano.com/character/nano/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 14,
+    "stat": {
+        "comments": 31,
+        "collects": 123
+    },
+    "anime_ids": [
+        471793,
+        424379
+    ]
+}

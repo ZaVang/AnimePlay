@@ -1,0 +1,61 @@
+{
+    "id": 24095,
+    "name": "安芸倫也",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2e/f8/24095_crt_Htg4O.jpg?r=1674913372",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/f8/24095_crt_Htg4O.jpg?r=1674913372",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/f8/24095_crt_Htg4O.jpg?r=1674913372",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2e/f8/24095_crt_Htg4O.jpg?r=1674913372"
+    },
+    "summary": "本作的男主角，12月18日出生，是爱好ACG的御宅族，同人游戏社团“Blessing software”的制作人兼导演。就读丰之崎学园2年B班，在校成绩平平，但获学校准许打工。一年级时为了在校庆上播放动画而跑教师办公室与教务主任力争许可，还惊动校长，成为校内屈指可数的名人之一。\r\n    有很强的行动力。除了课业外，只要认定要做的事情就会全力以赴。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "安艺伦也"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あき ともや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aki Tomoya"
+                },
+                {
+                    "k": "昵称",
+                    "v": "伦理君"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "12月18日"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 18,
+    "stat": {
+        "comments": 73,
+        "collects": 61
+    },
+    "anime_ids": [
+        132734,
+        100403
+    ]
+}

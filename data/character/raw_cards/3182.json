@@ -1,0 +1,79 @@
+{
+    "id": 3182,
+    "name": "竜宮レナ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/46/c8/3182_crt_inI0Y.jpg?r=1604389880",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/46/c8/3182_crt_inI0Y.jpg?r=1604389880",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/46/c8/3182_crt_inI0Y.jpg?r=1604389880",
+        "grid": "https://lain.bgm.tv/pic/crt/g/46/c8/3182_crt_inI0Y.jpg?r=1604389880"
+    },
+    "summary": "本名是龙宫礼奈（れいな），但回到雏见泽后为了忘掉兴宫和离开的母亲自称蕾娜（レナ），别人也就这么称呼了。 和圭一同班（其实雏见泽的学校只有一个班级，所有年级都由一个老师教）。虽然也是在一年前由茨城搬进雏见泽的，但是小时候是居住雏见泽，后由于种种因素再次迁回。有害羞的一面，常被圭一和魅音当作开玩笑的对象。礼奈在“带回家”的状态下，会产生惊人的攻击力，梨花和沙都子经常利用这点，用礼奈帮她们报仇，攻击力大到可以秒杀一米外的人类的程度。某个角度来说和圭一的个性正好成对比。假如说圭一是猛烈燃烧的红色火焰，那么蕾娜便是静静燃烧的蓝色火焰。　",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "龙宫礼奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "龙宫蕾娜"
+                },
+                {
+                    "v": "龙宫怜奈"
+                },
+                {
+                    "k": "日文名",
+                    "v": "竜宮レナ/竜宮礼奈"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "りゅうぐう れな/りゅうぐう れいな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ryuuguu Rena/Ryuuguu Reina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月28日（狮子座）"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "引用来源",
+            "value": "07th-expansion.net/hig_gensaku#character"
+        },
+        {
+            "key": "喜欢",
+            "value": "可爱的东西（かぁいいもの）"
+        },
+        {
+            "key": "讨厌",
+            "value": "骗人（嘘）"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 28,
+    "stat": {
+        "comments": 134,
+        "collects": 563
+    },
+    "anime_ids": [
+        288,
+        289
+    ]
+}

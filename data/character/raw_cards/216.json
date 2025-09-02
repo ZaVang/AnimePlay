@@ -1,0 +1,56 @@
+{
+    "id": 216,
+    "name": "藤原佐為",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2d/35/216_crt_23fjh.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/35/216_crt_23fjh.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/35/216_crt_23fjh.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2d/35/216_crt_23fjh.jpg"
+    },
+    "summary": "平安时代天才棋士的灵魂。在争取对天皇下指导棋的对奕上看见对方作弊，却被反告，最後背负作弊罪名、含冤投水而死。因其愿望未了，结果灵魂附於棋盘，等候心愿达成。一百四十年前遇到本因坊秀策（虎次郎），但还未达成心愿，虎次郎却因病而死，而他仍无法转世，继续留在棋盘上等候。後被阿光发现，成了他的围棋老师，带领主角进入围棋世界。并透过网际网路化身为 sai，成为在网路围棋上谜样的棋士。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藤原佐为"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Fujiwara no Sai"
+                },
+                {
+                    "k": "日文名",
+                    "v": "藤原 佐為"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ふじわら の さい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fujiwara no Sai"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 17,
+        "collects": 184
+    },
+    "anime_ids": [
+        605
+    ]
+}

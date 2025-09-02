@@ -1,0 +1,48 @@
+{
+    "id": 7447,
+    "name": "サガ・ベルイマン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/46/0e/7447_crt_hmNt0.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/46/0e/7447_crt_hmNt0.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/46/0e/7447_crt_hmNt0.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/46/0e/7447_crt_hmNt0.jpg"
+    },
+    "summary": "突然シュガーと暮らすことになった女の子。\r\n\r\nしっかりモノで何でも計画を\r\n立てて実行しようとするが、\r\n最近はシュガーには振り回されっぱなし。\r\n\r\nピアノを弾くのが大好きで\r\n楽器店でピアノを\r\n弾かせてもらうのが楽しみ。\r\n\r\n11歳。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "サガ・ベルイマン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Saga Bergman"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 10
+    },
+    "anime_ids": [
+        2414
+    ]
+}

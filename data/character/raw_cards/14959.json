@@ -1,0 +1,90 @@
+{
+    "id": 14959,
+    "name": "絢瀬絵里",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c1/f3/14959_crt_jFiNF.jpg?r=1467877324",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/f3/14959_crt_jFiNF.jpg?r=1467877324",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/f3/14959_crt_jFiNF.jpg?r=1467877324",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c1/f3/14959_crt_jFiNF.jpg?r=1467877324"
+    },
+    "summary": "はぁい！　楽しい人生送ってる？　もし、少しでも退屈してるなら――私達と一緒に盛り上がろうよ　絢瀬エリー17歳。歌もダンスも習ったことはないけど、もともと器用なタイプだから、これからドンドンうまくなる――予定。期待してみていてよね？　今まであんまり――いろんな事に本気になれなかった私だけど、今度こそは――本気で。本当の本気になれるような気がするの。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "绚濑绘里"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "KKE"
+                },
+                {
+                    "v": "エリーチカ"
+                },
+                {
+                    "k": "日文名",
+                    "v": "あやせ えり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ayase Eri"
+                },
+                {
+                    "k": "昵称",
+                    "v": "绘里、绘里酱、绘里亲、エリー、エリチカ"
+                },
+                {
+                    "k": "俄文名",
+                    "v": "Эри Аясэ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月21日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B88/W60/H84"
+        },
+        {
+            "key": "学级",
+            "value": "高中3年级"
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        },
+        {
+            "key": "分组",
+            "value": "BiBi"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 21,
+    "stat": {
+        "comments": 49,
+        "collects": 183
+    },
+    "anime_ids": [
+        49294
+    ]
+}

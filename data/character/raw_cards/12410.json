@@ -1,0 +1,77 @@
+{
+    "id": 12410,
+    "name": "ミルフィーユ・桜葉",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0c/55/12410_crt_q8Jbt.jpg?r=1753360634",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0c/55/12410_crt_q8Jbt.jpg?r=1753360634",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0c/55/12410_crt_q8Jbt.jpg?r=1753360634",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0c/55/12410_crt_q8Jbt.jpg?r=1753360634"
+    },
+    "summary": "天使队的成员之一，有着粉红色的长发及灰色瞳孔，头上带着两朵花的饰品，个性善良是个十足的好人，脸上总是带着甜美的微笑，是个活泼又带点天然呆的女孩。\r\n据说在军中上级给予极高的评价。\r\n拥有宇宙里无人能抵的极端的好运及厄运。\r\n兴趣是制作料理，喜欢做甜点类的点心，天使队的成员对于梅尔优的料理几乎都是赞不绝口。\r\n与同期的兰花˙法兰波瓦兹从学生时代时就认识了，两人的感情从认识到现在从没变过，依然是非常要好的好朋友。\r\n梅尔优˙樱叶还有一个妹妹，艾普莉可˙樱叶。\r\n\r\n    梅尔菲.樱叶的Milfeulle是外来语法文，意思就是西式点心里的千层派；而樱叶Sakuraba则是日式点心和果子里最常出现的材料，樱树叶片再浸渍后通常会拿去包麻糬一类的点心。\r\n\r\n    主题曲为“YOU GET A CHANCE!” \r\n\r\nProject G.A. 的计划当初，声优是田村ゆかり",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "梅尔优·樱叶"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "梅尔菲·樱叶"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "美露菲悠·樱叶"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Milfeulle Sakuraba"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ミルフィーユ・桜葉"
+                },
+                {
+                    "k": "第四中文名",
+                    "v": "梅尔优˙樱叶"
+                },
+                {
+                    "k": "第三中文名",
+                    "v": "蜜尔妃.樱叶"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "年龄",
+            "value": "17 岁→ 18 岁 ( Eternal Lovers) → 21 岁 ( GA2)"
+        },
+        {
+            "key": "座机",
+            "value": "GA-001 Lucky Star（幸运之星）"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 15
+    },
+    "anime_ids": [
+        4635,
+        18082,
+        4634
+    ]
+}

@@ -1,0 +1,216 @@
+{
+    "id": 332261,
+    "name": "JOJO的奇妙冒险 石之海",
+    "image_path": "data/images/anime/332261.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "西历2011年，美国·佛罗里达州。\r\n在与恋人兜风途中遇到了交通事故的空条徐伦，因被陷害而获刑15年。\r\n收容设施是州立绿海豚街重警备监狱——别名「水族馆」。\r\n深陷绝望之中的徐伦，在手握父亲所托的吊坠时，她觉醒了不可思议的力量。\r\n\r\n“这个世界上存在着比死还恐怖的事情，而这一切都将在这所监狱中发生”\r\n\r\n徐伦面前出现的神秘少年所传达的信息，不断发生的不可思议的事件，前来探视的父亲·空条承太郎所说的令人恐惧的现实，以及名为DIO之人……空条徐伦究竟能否从这所「石之海」一般的监狱中重获自由？\r\n\r\n给持续百年之久的乔斯达一族与DIO之间的宿命画上终止符的一战，即将开始！！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2022-01-07",
+    "rating_rank": 1415,
+    "rating_score": 7.3,
+    "rating_total": 8381,
+    "main_character_ids": [
+        18565,
+        18566,
+        19140,
+        19141,
+        19188,
+        20310
+    ],
+    "main_characters": [
+        {
+            "id": 18565,
+            "name": "空条徐倫",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/18/43/18565_crt_1W9l4.jpg?r=1642336645",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/43/18565_crt_1W9l4.jpg?r=1642336645",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/43/18565_crt_1W9l4.jpg?r=1642336645",
+                "grid": "https://lain.bgm.tv/pic/crt/g/18/43/18565_crt_1W9l4.jpg?r=1642336645"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 34397,
+                    "name": "ファイルーズあい",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8e/ad/34397_prsn_Fif7I.jpg?r=1722000886",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/ad/34397_prsn_Fif7I.jpg?r=1722000886",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/ad/34397_prsn_Fif7I.jpg?r=1722000886",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8e/ad/34397_prsn_Fif7I.jpg?r=1722000886"
+                    },
+                    "short_summary": "（日语：ファイルーズ あい Fairūzu Ai；英语：Fairouz Ai；埃及阿拉伯语：عاي فيروز‎；1993年7月6日－）出身于日本东京都的女性配音员。Raccoon Dog所属，Pro-Fit声优养成所毕业。\r\n\r\n日本与埃及的混血儿，父亲为埃及人，母亲为日本人。\r\n\r\n菲鲁兹是她的第一个名字，昵称“ファイちゃん”，这也是她从小取的昵称。在广播剧CD《新娘特别班》演出当时使用全名“门田·菲鲁兹·蓝（門田ファイルーズあい）”，而现在艺名“菲鲁兹·蓝（ファイルーズあい）”则是只有名字。不过菲鲁兹的日文发音“ファイルーズ”和“ファブリーズ”两个都是一模一样的。\r\n\r\n小学5年级中途开始直到小学毕业都住在埃及开罗。上国中后回日本。国中时期喜欢上漫画《JoJo的奇妙冒险 石之海》，并参加过Skype举办的《JoJo》朗读会，从此之后把声优当作将来目标。\r\n\r\n由于双亲的反对，她在高中毕业后进入了平面设计专门学校，但最终还是希望进入声优养成所，在担任了1年的牙医助理后进入Pro-Fit声优养成所，毕业后正式成为Pro Fit所属。\r\n\r\n2019年，于电视动画《流汗吧！健身少女》初次主演。\r\n\r\n2020年，获得第14届声优Award新人女演员奖。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 18566,
+            "name": "エルメェス・コステロ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ef/ff/18566_crt_t6XdK.jpg?r=1642336723",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ef/ff/18566_crt_t6XdK.jpg?r=1642336723",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ef/ff/18566_crt_t6XdK.jpg?r=1642336723",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ef/ff/18566_crt_t6XdK.jpg?r=1642336723"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5636,
+                    "name": "田村睦心",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/39/84/5636_prsn_p449k.jpg?r=1665351736"
+                    },
+                    "short_summary": "日本东京都出身的女性声优，现时隶属 I'm Enterprise。\r\n\r\n日本解说表演研究所毕业。2007年，在电视动画《悠久之翼》中以声优身份出道。2008年，在《Battle Spirits 少年突破马神》中首次担任主演。\r\n嗓音沙哑，多出演动画男主角的少年时期形象的角色。\r\n2014年8月，因为喉咙问题切除了息肉而暂时休息。9月1日在博客上记载康复，9月8日在广播节目中说明情况。\r\n\r\n官方说法上爱好是书法和长笛。从小学1年级开始练习书法，擅长草书和行书。实际上私下里喜欢一个人望着墙壁发呆。\r\n喜欢吃东西和睡觉。喜欢的食物是意大利面、梅干一类的下酒菜。也喜欢喝酒。\r\n喜欢布娃娃。\r\n家中有一个比自己小1岁的弟弟。\r\n昵称是“田村少年”，但是这个名字和自己担任少年役居多没有直接关系。\r\n与共同出演过《Battle Spirits 少年突破马神》、《爱杀宝贝》的赤崎千夏有深交。\r\n把bl游戏藏在书柜的最下层。“其实我根本就没有藏，只是放在那里而已。”",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19140,
+            "name": "ウェザー・リポート",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ba/45/19140_crt_b2HZv.jpg?r=1642960629",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/45/19140_crt_b2HZv.jpg?r=1642960629",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/45/19140_crt_b2HZv.jpg?r=1642960629",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ba/45/19140_crt_b2HZv.jpg?r=1642960629"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 15592,
+                    "name": "梅原裕一郎",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/66/57/15592_prsn_u1o76.jpg?r=1525922035",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/57/15592_prsn_u1o76.jpg?r=1525922035",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/57/15592_prsn_u1o76.jpg?r=1525922035",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/66/57/15592_prsn_u1o76.jpg?r=1525922035"
+                    },
+                    "short_summary": "梅原 裕一郎（うめはら ゆういちろう、1991年3月8日 - ）は、日本の男性声優。アーツビジョン所属。静岡県出身。\r\n\r\n声優という職業を知ったきっかけは中学1年の頃に『ロード・オブ・ザ・リング』でアラゴルン役を演じていた大塚芳忠の声に惹かれたことから。\r\nその後、大学受験の浪人中に息抜きとして見ていた洋画がきっかけで、声優という仕事の楽しさに興味を持ち目指すようになった。大学2年から日本ナレーション演技研究所に通い始め、1年後に現事務所に所属。同期に山下大輝がいる。\r\n2013年に声優デビューし、2014年の『オレん家のフロ事情』でテレビアニメ初レギュラーを果たした。放送は「オレん家のフロ事情」が先だったが、実際にアニメ作品で名前のある役がオーディションで決まったのは『美男高校地球防衛部LOVE!』の由布院煙役が初めてだった。2015年10月、『ヤングブラック・ジャック』の間黒男役で初主演。\r\n2016年、第10回声優アワードで新人男優賞を受賞。\r\n2017年10月、Newtype×マチ★アソビ アニメアワード2017において男性声優賞を受賞。\r\n2018年5月10日、所属事務所から急性散在性脳脊髄炎の治療のため休業することを発表。同年7月30日、体調を考慮しながら徐々に活動を再開することが発表された。\r\n\r\n先述の経験から憧れの声優は大塚芳忠であり、彼のように外画の悪役などで名を馳せる役者になることを目標としている。アニメでは新海誠の『言の葉の庭』に感銘を受けたことから、彼の監督作品に出演するのが夢だと語っている。\r\n趣味はクラシック音楽、映画、ドラマ鑑賞。その中でも、ロシアの作曲家イゴール・ストラヴィンスキーの曲を好んで聴いている。\r\n好きな食べ物は唐揚げやヨーグルトなどを挙げており、苦手な食べ物はかつて磯臭いものを挙げていたが、食べられるようになったと語っている。\r\nピアノを8年ほど、ギターを3年ほど弾いていた。小学校時代は器楽部所属、高校時代は軽音楽部に所属し、ボーカルとエレキギターを担当していた。\r\nカラオケの十八番は尾崎紀世彦の「また逢う日まで」。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19141,
+            "name": "ナルシソ・アナスイ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/96/70/19141_crt_fh53v.jpg?r=1643593008",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/70/19141_crt_fh53v.jpg?r=1643593008",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/70/19141_crt_fh53v.jpg?r=1643593008",
+                "grid": "https://lain.bgm.tv/pic/crt/g/96/70/19141_crt_fh53v.jpg?r=1643593008"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4254,
+                    "name": "浪川大輔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/70/c3/4254_prsn_99K43.jpg?r=1631019573"
+                    },
+                    "short_summary": "浪川 大輔（なみかわ だいすけ、1976年4月2日 - ） は、日本の声優、俳優、歌手、ナレーター。ステイラック代表取締役。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19188,
+            "name": "フー・ファイターズ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d7/af/19188_crt_J7fBs.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/af/19188_crt_J7fBs.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/af/19188_crt_J7fBs.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d7/af/19188_crt_J7fBs.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4769,
+                    "name": "伊瀬茉莉也",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320"
+                    },
+                    "short_summary": "小时候非常喜欢宫崎骏先生的作品，比如《风之谷》什么的，看了很多遍把录像带磨坏了。大约小学3年级左右，看了《幽灵公主》之后非常希望能够加入到里面，做出能让人感动的作品。那个时候光看这部动画就去了电影院8次，一开始是想当监督，后来偶然地有配音机会，便开始走上声优的道路。\r\n一开始父母强烈反对，后来茉莉也对他们描绘了心中的梦想，用“这是我必须去做的事”和“学费自己来付”说服了他们。那时拿出了从小学开始存的压岁钱【好心痛～（笑）】。一开始非常困难，一边要上学一边又要去2小时车程以外的培训中心，但是靠毅力坚持下来之后父母也开始变得支持了，后来嘛，就好了。\r\n第一次工作是在16岁那年，在动画片《愛してるぜベイベ★★》中饰演一个路人角色，台词也只有一两句，但那个时候紧张得不行，拿着剧本的手一直在发抖。后来在比较广为人知的《虫师》中配小孩子的声音，慢慢地工作就多了起来。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 20310,
+            "name": "エンポリオ・アルニーニョ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/47/38/20310_crt_yM1Ly.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/38/20310_crt_yM1Ly.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/38/20310_crt_yM1Ly.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/47/38/20310_crt_yM1Ly.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7575,
+                    "name": "種﨑敦美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/a7/7575_prsn_8TJlL.jpg?r=1671262190",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/a7/7575_prsn_8TJlL.jpg?r=1671262190",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/a7/7575_prsn_8TJlL.jpg?r=1671262190",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/a7/7575_prsn_8TJlL.jpg?r=1671262190"
+                    },
+                    "short_summary": "種﨑 敦美（たねざき あつみ、9月27日 - ）は日本の女性声優。トリトリオフィス所属。大分県出身。\r\n\r\n声優を職業として認識したきっかけは『美少女戦士セーラームーン』である。同作品のテレビアニメ第45話「セーラー戦士死す!悲壮なる最終戦」を視聴したことから、その話の演技力に魅了されて声優になろうと決心する。その後、大分県から上京、高校を出てから養成所に入るため働いてためた資金で本格的に演技の勉強を始める。\r\n\r\n憧れの声優は、沢城みゆきと田中真弓。また子供の頃に同じ大分県出身の岩男潤子のコンサートへ行ったことがあり、彼女と話す機会に恵まれた際、「声優になりたいんです」と告げると「いつか共演できるといいね」と答えてもらっている。のちに現場で岩男と会ったときに当時の話をしたところ、「嬉しい」と喜んでもらえたという。\r\n\r\n2015年6月1日、トリトリオフィスを離れ、フリーになった事を発表した。同年10月1日、東京俳優生活協同組合に所属。\r\n\r\n姉と弟がおり、弟に対してブラザーコンプレックスを持っている。\r\n趣味は邦画鑑賞。\r\n動物好きであり、象や猿を見るとテンションがあがる。\r\nファッションの面では、Tシャツにジーンズなどラフなスタイルを好んでいる。\r\n好きな食べ物について、お子様ランチのメニューといった子供が好む物が好きだと語っている。\r\n仲の良い声優には深田愛衣がいる。\r\nインタビューにて、免許は持っていないがドライブが好きだと語っている。\r\n\r\n桐谷 華（きりたに はな）は、日本の女性声優。主にアダルトゲームに声をあてている。\r\n\r\n小学生の頃、クラスで演じた芝居で先生に演技をほめられ、それが嬉しくて芝居をやろうと考えた。ちょうどその頃見ていたアニメの『美少女戦士セーラームーン』から、声で芝居をする仕事を知り、声優を目指すことに決めた。家が貧乏だったため、上京する時も実家には全く頼らず、最初の4年間は普通のOLをして貯金して養成所に入った。\r\n\r\n芸名は、名字の「桐谷」は自身が好きな俳優の桐谷健太から名付けた。「華」は最初はひらがなにしようと思ったが、名字に合わせて漢字の方が綺麗だと思い、和風のイメージを出したかったこともあり漢字に決めた。\r\n\r\n控え目・おとなし目の役や、冷静に突っ込む委員長役などを演じることが多いが、自身が演じやすいのは天真爛漫な子どもっぽい役だという。\r\n\r\nエビ好きである。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

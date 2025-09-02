@@ -1,0 +1,152 @@
+{
+    "id": 272510,
+    "name": "街角魔族",
+    "image_path": "data/images/anime/272510.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "某日突然觉醒暗之力的女子高中生 吉田优子，为着解除施加在暗之一族身上的诅咒，为打倒魔法少女不懈努力。竟对曾经的救命恩人下手？！\r\n但是却完全没有胜算！\r\n废柴贫穷魔族与沉稳肌肉魔法少女之间的日常魔法喜剧，就此开幕！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2019-07-11",
+    "rating_rank": 1000,
+    "rating_score": 7.5,
+    "rating_total": 9872,
+    "main_character_ids": [
+        70609,
+        70610,
+        70611,
+        70612
+    ],
+    "main_characters": [
+        {
+            "id": 70609,
+            "name": "吉田優子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/48/cf/70609_crt_XhpLz.jpg?r=1566723140",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/cf/70609_crt_XhpLz.jpg?r=1566723140",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/cf/70609_crt_XhpLz.jpg?r=1566723140",
+                "grid": "https://lain.bgm.tv/pic/crt/g/48/cf/70609_crt_XhpLz.jpg?r=1566723140"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 27194,
+                    "name": "小原好美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844"
+                    },
+                    "short_summary": "日本女性配音员、演员。大泽事务所所属。\r\n\r\n国中时开始喜欢动画，并想要成为声优。高中毕业后进入Human Academy综合学园。2012年开始当了两年的演员，之后加入大泽事务所。\r\n\r\n2017年7月起3个月间在长寿电台节目《Radio Dottoai》就任第71代主持人。\r\n\r\n2017年4月至6月播出的《月色真美》中初次担任主演。同年7月播出《咕噜咕噜魔法阵 (2017年版)》中担演女主角而掀起话题，并与共同主演的石上静香主持同名动画的广播节目。同年11月10日Instagram开设。\r\n\r\n2019年于《Star☆Twinkle 光之美少女》中第一次出演光之美少女系列。同年4月，由文化放送“超！A&G+”制作的广播节目《小原好美のココロおきなく》开播，5月开设节目官方Twitter。2020年3月，该广播节目获得第6届Aniradi Award“BEST COMFORT RADIO 疗愈电台奖”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 70610,
+            "name": "千代田桃",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/01/ab/70610_crt_89c80.jpg?r=1566723200",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/ab/70610_crt_89c80.jpg?r=1566723200",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/ab/70610_crt_89c80.jpg?r=1566723200",
+                "grid": "https://lain.bgm.tv/pic/crt/g/01/ab/70610_crt_89c80.jpg?r=1566723200"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19339,
+                    "name": "鬼頭明里",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a1/78/19339_prsn_3Dg35.jpg?r=1694799715"
+                    },
+                    "short_summary": "鬼頭明里（きとう あかり）は、日本の女性声優である。ラクーンドッグ所属。\r\nあだ名は「あかりん」。\r\n\r\n10月16日生まれ、愛知県出身、血液型B型、153cm。プロ・フィット声優養成所を経て、現事務所に2015年4月から所属。\r\n趣味は絵を描くこと、歌うこと。特技は絵を描くこと、歌うこと、湯切り。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 70611,
+            "name": "リリス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/33/4d/70611_crt_lt3u4.jpg?r=1566723246",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/4d/70611_crt_lt3u4.jpg?r=1566723246",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/4d/70611_crt_lt3u4.jpg?r=1566723246",
+                "grid": "https://lain.bgm.tv/pic/crt/g/33/4d/70611_crt_lt3u4.jpg?r=1566723246"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10757,
+                    "name": "髙橋ミナミ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e5/5f/10757_prsn_blW8L.jpg?r=1558165979",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/5f/10757_prsn_blW8L.jpg?r=1558165979",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/5f/10757_prsn_blW8L.jpg?r=1558165979",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e5/5f/10757_prsn_blW8L.jpg?r=1558165979"
+                    },
+                    "short_summary": "俳協所属\r\n\r\n出身地：神奈川県\r\n声：メゾソプラノ\r\n特技：英語、ドイツ語（日常会話程度）\r\n免許・資格：英語検定準2級\r\n趣味・スポーツ：新体操\r\n\r\n自2020年12月20日起艺名由高橋未奈美更改为髙橋ミナミ。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 70612,
+            "name": "陽夏木ミカン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fd/63/70612_crt_hB8Ld.jpg?r=1566723330",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/63/70612_crt_hB8Ld.jpg?r=1566723330",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/63/70612_crt_hB8Ld.jpg?r=1566723330",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fd/63/70612_crt_hB8Ld.jpg?r=1566723330"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 25978,
+                    "name": "高柳知葉",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/32/80/25978_prsn_1321f.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/80/25978_prsn_1321f.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/80/25978_prsn_1321f.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/32/80/25978_prsn_1321f.jpg"
+                    },
+                    "short_summary": "ラクーンドック所属\r\n\r\n出身地：千葉県\r\n方言：なし\r\n趣味：観劇、イラストを描く、女性アイドルのフリコピ\r\n特技：茶道、ヒップホップダンス、エレキベース\r\n資格：英語検定準２級、漢字検定準２級\r\n経歴：プロ・フィット声優養成所　卒",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

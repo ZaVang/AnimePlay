@@ -1,0 +1,64 @@
+{
+    "id": 16351,
+    "name": "アナ・コッポラ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/45/8d/16351_crt_u91Un.jpg?r=1571892004",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/8d/16351_crt_u91Un.jpg?r=1571892004",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/8d/16351_crt_u91Un.jpg?r=1571892004",
+        "grid": "https://lain.bgm.tv/pic/crt/g/45/8d/16351_crt_u91Un.jpg?r=1571892004"
+    },
+    "summary": "跟茉莉同年的英國人，老家是在英國康威爾，6 月18日生，AB型。金色長髮藍眼像洋娃娃一 樣，除了外觀跟姓名外都很日本的英國小女孩，很不幸的名字跟日語眼窩洞（穴（あな））同音，所以很忌諱別人拿名字開玩笑，但是冒失的美羽從沒顧忌這點，（更曾因為這樣而弄得安娜大哭一頓）。儘管表面上嘗試像英國人一般地生活，卻無法掩飾自身對日本文化的了解與喜好。 日語流利，卻幾乎不會英文，處處依賴茉莉學習英語。家裡養著一隻大型犬福爾西安堤。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "安娜·柯普拉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "安娜·刻薄啦"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Ana Coppola"
+                },
+                {
+                    "k": "昵称",
+                    "v": "安娜"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "06-18"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 18,
+    "stat": {
+        "comments": 23,
+        "collects": 82
+    },
+    "anime_ids": [
+        284
+    ]
+}

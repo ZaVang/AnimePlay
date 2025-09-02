@@ -1,0 +1,71 @@
+{
+    "id": 98688,
+    "name": "ヴォルフモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/70/e3/98688_crt_TmHhU.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/e3/98688_crt_TmHhU.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/e3/98688_crt_TmHhU.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/70/e3/98688_crt_TmHhU.jpg"
+    },
+    "summary": "寄宿着传说中的十斗士力量，拥有光属性能力的数码宝贝。身体各部位的淡紫色零件是蕴藏神圣之光的圣紫水晶。在神圣之光的作用下，当持有者拥有正义之心时，水晶可维持极高硬度；而一旦持有者产生邪恶之心时，水晶就会变得十分脆弱。野狼兽拥有强烈的骑士精神，可以为了自己相信的事物赌上性命，痛恨残暴之人。本身沉默寡言，很少与别人扯上关系，所以常常给人冷漠的印象，但其实是个心地善良的战士。必杀技是使用光剑“光之胜利者”将对手一分为二的『圣光胜利者』；以及将两把相同的“光之胜利者”合为一体，一次斩杀众多敌人的『双重胜利者』。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "野狼兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Wolfmon"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Vorufumon"
+                },
+                {
+                    "k": "称号",
+                    "v": "光之人型斗士"
+                }
+            ]
+        },
+        {
+            "key": "等级",
+            "value": "混合体"
+        },
+        {
+            "key": "类型",
+            "value": "战士型"
+        },
+        {
+            "key": "属性",
+            "value": "可变"
+        },
+        {
+            "key": "必杀技",
+            "value": [
+                {
+                    "v": "圣光胜利者"
+                },
+                {
+                    "v": "双重胜利者"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        3131
+    ]
+}

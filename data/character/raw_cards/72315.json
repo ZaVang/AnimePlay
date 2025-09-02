@@ -1,0 +1,40 @@
+{
+    "id": 72315,
+    "name": "シロ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1b/96/72315_crt_4KZ1Z.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/96/72315_crt_4KZ1Z.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/96/72315_crt_4KZ1Z.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1b/96/72315_crt_4KZ1Z.jpg"
+    },
+    "summary": "野原一家的普通家犬。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小白"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Shiro"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 12
+    },
+    "anime_ids": [
+        24823
+    ]
+}

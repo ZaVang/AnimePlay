@@ -1,0 +1,118 @@
+{
+    "id": 985,
+    "name": "机动战士V高达",
+    "image_path": "data/images/anime/985.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "U.C.0153年，赞斯卡尔帝国大举进攻地球，并将反抗他们的人送上断头台公开处刑，这种残酷的手段激起公愤，神圣军事同盟的地下活动亦开始活发化。13岁的NEWTYPE少年胡索乃非法居住在地球上的众多居民之一，因为没有合法的居住权，所以他们往往在森林等隐蔽的地方居住。胡索与青梅竹马的夏克蒂以及其他一些孤儿在森林中安家，没有父母的他们一直过着平静的生活。然而，某一天赞斯卡尔帝国与神圣军事同盟在该森林中交战，胡索莫名其妙地被卷了进去，驾驶着V高达击退了敌人，自此这帮孩子的命运彻底地改变了。虽然不愿意，但已经无家可归的胡索他们加入了神圣军事同盟，与全部由女性组成的修克拉队共同行动，一次又一次击退了来犯的赞斯卡尔帝国军。取得地面上的胜利后，胡索他们又转战至宇宙，但是在一次交战中夏克蒂被敌人抓走了。原来夏克蒂乃玛莉娅女王的亲生女儿，荷塞想利用玛莉娅和夏克蒂的NEWTYPE能力，集合数万名超能力者的力量，通过天使之环的增幅器向地球发送超声波，令地球上所有的人类大脑死亡，从而达到他独霸地球圈的野心。最后，胡索驾驶着增强型的V2高达，开动光之翼并唤醒夏克蒂的力量，令天使之环分断开来，渐渐飞离地球回到各个卫星，赞斯卡尔帝国亦在光芒中崩溃殆尽……\r\n",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 51,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "1993-04-02",
+    "rating_rank": 1860,
+    "rating_score": 7.2,
+    "rating_total": 919,
+    "main_character_ids": [
+        28263,
+        36728,
+        78151
+    ],
+    "main_characters": [
+        {
+            "id": 28263,
+            "name": "カテジナ・ルース",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/72/ea/28263_crt_GAYPQ.jpg?r=1743084271",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/ea/28263_crt_GAYPQ.jpg?r=1743084271",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/ea/28263_crt_GAYPQ.jpg?r=1743084271",
+                "grid": "https://lain.bgm.tv/pic/crt/g/72/ea/28263_crt_GAYPQ.jpg?r=1743084271"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3819,
+                    "name": "渡辺久美子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3a/90/3819_prsn_1Bqbt.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/90/3819_prsn_1Bqbt.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/90/3819_prsn_1Bqbt.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3a/90/3819_prsn_1Bqbt.jpg"
+                    },
+                    "short_summary": "日本の女性声優、ナレーター。アーツビジョン所属。夫は同じく声優の辻谷耕史。千葉県出身。身長154cm、血液型はO型。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 36728,
+            "name": "ウッソ・エヴィン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f6/c3/36728_crt_7TsHl.jpg?r=1447151962",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/c3/36728_crt_7TsHl.jpg?r=1447151962",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/c3/36728_crt_7TsHl.jpg?r=1447151962",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f6/c3/36728_crt_7TsHl.jpg?r=1447151962"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4231,
+                    "name": "阪口大助",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/10/4231_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/10/4231_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/10/4231_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/10/4231_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 78151,
+            "name": "シャクティ・カリン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6b/e3/78151_crt_cURRW.jpg?r=1596339958",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/e3/78151_crt_cURRW.jpg?r=1596339958",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/e3/78151_crt_cURRW.jpg?r=1596339958",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6b/e3/78151_crt_cURRW.jpg?r=1596339958"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4089,
+                    "name": "市原由美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c9/0f/4089_prsn_7F40L.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/0f/4089_prsn_7F40L.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/0f/4089_prsn_7F40L.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c9/0f/4089_prsn_7F40L.jpg"
+                    },
+                    "short_summary": "市原 由美（いちはら ゆみ、1966年6月27日 - ）は、日本の女性声優。静岡県出身。本名は同じ。\r\n旧芸名：黒田 由美（くろだ ゆみ）→ 市原 由美→ いちはら ゆみ。東京俳優生活協同組合所属。\r\n代表作は『機動戦士Vガンダム』のシャクティ・カリン、『ココロ図書館』のあると。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

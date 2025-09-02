@@ -1,0 +1,52 @@
+{
+    "id": 7437,
+    "name": "チャグム",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a4/a8/7437_crt_anidb.jpg?r=1449817785",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/a8/7437_crt_anidb.jpg?r=1449817785",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/a8/7437_crt_anidb.jpg?r=1449817785",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a4/a8/7437_crt_anidb.jpg?r=1449817785"
+    },
+    "summary": "新龙勾皇国的第二皇子，年龄11岁。本来为见识浅薄、年纪轻轻的少年，却因各种怪奇的经验而使精神年龄急速上升，以名君的气势发言。\r\n因离宫接触庶民生活的关系，民生意识非常强。有异母的弟妹。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "查穆"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "チャグム"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Chagum"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 16
+    },
+    "anime_ids": [
+        1976
+    ]
+}

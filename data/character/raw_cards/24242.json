@@ -1,0 +1,60 @@
+{
+    "id": 24242,
+    "name": "李健良",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/09/35/24242_crt_PKtCC.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/35/24242_crt_PKtCC.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/35/24242_crt_PKtCC.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/09/35/24242_crt_PKtCC.jpg"
+    },
+    "summary": "李建良是新宿中央小学五年级一班的学生，是启人隔壁班的同学。很喜欢玩电脑游戏。有一次在游戏中遇到了大耳兽，便结成了伙伴关系，虽然有一段辛苦的过去，可是他成了大耳兽的驯兽师，但他不喜欢让大耳兽和别的数码宝贝战斗。 \r\n建良的爸爸（李镇宇）是野生研究小组的成员。建良是家中兄弟姐妹中最大的一个，由于家里兄弟姐妹多，所以他学会了独立，坚强，很会照顾人。建良是个混血儿，爸爸是香港人，妈妈是日本人。他与启人相处得很好，也曾经为他那不听话的妹妹李小春而头疼。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "李健良"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Lee Jianliang"
+                },
+                {
+                    "k": "日文名",
+                    "v": "李 健良"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "リー ジェンリャ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Lee Jenrya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1990年"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 19,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 12
+    },
+    "anime_ids": [
+        3130
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 517,
+    "name": "樹多村光",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9b/97/517_crt_gvQIi.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9b/97/517_crt_gvQIi.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9b/97/517_crt_gvQIi.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9b/97/517_crt_gvQIi.jpg"
+    },
+    "summary": "星秀学园高中部1年级（初登场时：小学5年生）。右投右打。投手。 \r\n主角。家中是经营体育用品店。 \r\n学历：区立千川北小学-星秀学园中学部-星秀学园高中部",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "树多村光"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "樹多村 光"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きたむら こう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kitamura Kou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "声优",
+            "value": "入野自由"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 36
+    },
+    "anime_ids": [
+        1443
+    ]
+}

@@ -1,0 +1,465 @@
+{
+    "id": 59825,
+    "type": 2,
+    "name": "ユリ熊嵐",
+    "name_cn": "百合熊风暴",
+    "summary": "有一天，小行星熊玛利亚星在宇宙的某处爆发，成就一群坠落地球的流星，使地球各处的熊发生异变。熊大举进食人类，人类再报以还击，结果造成没有战果和充满仇恨的恶性循环，直至两边不约而同筑起断绝之墙，期望以后互不侵犯……一天早上，呼啸山庄学园的学生——椿辉红羽和泉乃纯花，在学园的百合花坛里一同看见百合之花。二人于是成就“既为朋友，亦为恋人”的关系，并将花坛视为最重要的地方。就在此时，熊警报突然响起，揭示对方再度入侵人类世界，准备陷入混战。揭示这些熊的真实身份和目的之时，新谜题的出现带来新一波的怒涛，揭开背后华丽的每一幕……",
+    "nsfw": false,
+    "locked": false,
+    "date": "2015-01-05",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/71/4a/59825_uK55k.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/71/4a/59825_uK55k.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/71/4a/59825_uK55k.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/71/4a/59825_uK55k.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/71/4a/59825_uK55k.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "百合熊风暴"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "百合熊呼啸",
+                    "k": null
+                },
+                {
+                    "v": "百合熊岚",
+                    "k": null
+                },
+                {
+                    "v": "Yurikuma Arashi",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2015年1月5日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期一"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://yurikuma.jp/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "MBS"
+        },
+        {
+            "key": "播放结束",
+            "value": "2015年3月30日"
+        },
+        {
+            "key": "导演",
+            "value": "幾原邦彦"
+        },
+        {
+            "key": "音乐",
+            "value": "橋本由香利"
+        },
+        {
+            "key": "Copyright",
+            "value": "(C)2015 イクニゴマモナカ／ユリクマニクル"
+        },
+        {
+            "key": "原作",
+            "value": "イクニゴマモナカ"
+        },
+        {
+            "key": "副导演",
+            "value": "古川知宏"
+        },
+        {
+            "key": "系列构成",
+            "value": "幾原邦彦、伊神貴世"
+        },
+        {
+            "key": "人物原案",
+            "value": "森島明子"
+        },
+        {
+            "key": "人物设定",
+            "value": "住本悦子"
+        },
+        {
+            "key": "主动画师",
+            "value": "相澤伽月"
+        },
+        {
+            "key": "道具设计",
+            "value": "阿保孝雄"
+        },
+        {
+            "key": "美术监督",
+            "value": "中村千恵子"
+        },
+        {
+            "key": "色彩设计",
+            "value": "木村聡子"
+        },
+        {
+            "key": "摄影监督",
+            "value": "荻原猛夫；副：後藤晴香"
+        },
+        {
+            "key": "3DCG 导演",
+            "value": "神谷久泰"
+        },
+        {
+            "key": "剪辑",
+            "value": "西山茂(REAL-T)"
+        },
+        {
+            "key": "音响监督",
+            "value": "幾原邦彦、山田陽"
+        },
+        {
+            "key": "音效",
+            "value": "三井友和"
+        },
+        {
+            "key": "音乐制作",
+            "value": "KADOKAWA(メディアファクトリー)"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "若林豪"
+        },
+        {
+            "key": "制片人",
+            "value": "吉沼忍、深尾聡志、林洋平、前田俊博、岡本真理、金子逸人"
+        },
+        {
+            "key": "动画制片人",
+            "value": "松下富美"
+        },
+        {
+            "key": "动画制作",
+            "value": "SILVER LINK."
+        },
+        {
+            "key": "制作协力",
+            "value": "ラパントラック"
+        },
+        {
+            "key": "企画",
+            "value": "松本浩、丸山博雄、中村誠、伊藤嘉彦、金庭こず恵、金子逸人"
+        },
+        {
+            "key": "製作",
+            "value": "ユリクマニクル（KADOKAWA、フロンティアワークス、ムービック、毎日放送、幻冬舎コミックス、SILVER LINK.）"
+        },
+        {
+            "key": "脚本",
+            "value": "幾原邦彦、伊神貴世"
+        },
+        {
+            "key": "分镜",
+            "value": "幾原邦彦(1,2,7,12)、古川知宏(1,2,7,12)、酒井和男(3)、柴田勝紀(4)、高橋亨(5)、阿保孝雄(6)、金子伸吾(8)、山﨑みつえ(9)、澤井幸次(10)、黒澤雅之(11)、菊田幸一(12)"
+        },
+        {
+            "key": "演出",
+            "value": "阿保孝雄(1)、古谷田順久(2)、河野亜矢子(3)、山﨑みつえ(4,9)、高橋亨(5)、吉田りさこ(6)、三上喜子(7)、金子伸吾(8)、澤井幸次(10)、八瀬祐樹(11)、古川知宏(12,OP)"
+        },
+        {
+            "key": "作画监督",
+            "value": "住本悦子、相澤伽月、栗田聡美、斎藤美香、高野やよい、かおり、山吉一幸、平田和也、澤入祐樹、石川健朝、吉田和香子、瀧原美樹、中島裕里、佐々木睦美、工藤裕加、袖山麻美、佐藤香織、進藤優、遠藤大輔"
+        },
+        {
+            "key": "总作画监督",
+            "value": "住本悦子(1,2,5,6,8,10,12)、相澤伽月(3,4,7,9)、瀧原美樹(11)"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "相澤伽月 / 幾原邦彦"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "ボンジュール鈴木 / はいのことん"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "ボンジュール鈴木 / 八王子P(P*Light)"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "ボンジュール鈴木 / DJ'TEKINA//SOMETHING(ゆよゆっぺ)"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "ボンジュール鈴木 / 百合城銀子(CV.荒川美穂)、百合ヶ咲るる(CV.生田善子)、椿輝紅羽(CV.山根希美)"
+        },
+        {
+            "key": "スペシャルテクスチャー",
+            "value": "越阪部ワタル"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 13,
+    "rating": {
+        "rank": 1753,
+        "total": 2937,
+        "count": {
+            "one": 16,
+            "two": 4,
+            "three": 10,
+            "four": 39,
+            "five": 126,
+            "six": 472,
+            "seven": 1078,
+            "eight": 863,
+            "nine": 241,
+            "ten": 88
+        },
+        "score": 7.2
+    },
+    "collection": {
+        "wish": 2086,
+        "collect": 3998,
+        "doing": 517,
+        "on_hold": 555,
+        "dropped": 402
+    },
+    "tags": [
+        {
+            "name": "百合",
+            "count": 1055
+        },
+        {
+            "name": "几原邦彦",
+            "count": 1043
+        },
+        {
+            "name": "原创",
+            "count": 773
+        },
+        {
+            "name": "2015年1月",
+            "count": 597
+        },
+        {
+            "name": "SILVERLINK.",
+            "count": 574
+        },
+        {
+            "name": "TV",
+            "count": 507
+        },
+        {
+            "name": "2015",
+            "count": 341
+        },
+        {
+            "name": "幾原邦彦",
+            "count": 209
+        },
+        {
+            "name": "百合熊岚",
+            "count": 157
+        },
+        {
+            "name": "校园",
+            "count": 134
+        },
+        {
+            "name": "ユリ熊岚",
+            "count": 78
+        },
+        {
+            "name": "橋本由香利",
+            "count": 72
+        },
+        {
+            "name": "SILVERLINK",
+            "count": 62
+        },
+        {
+            "name": "奇幻",
+            "count": 49
+        },
+        {
+            "name": "日本",
+            "count": 30
+        },
+        {
+            "name": "古川知宏",
+            "count": 28
+        },
+        {
+            "name": "电波",
+            "count": 24
+        },
+        {
+            "name": "SILVER_LINK.",
+            "count": 20
+        },
+        {
+            "name": "桥本由香利",
+            "count": 19
+        },
+        {
+            "name": "2015年",
+            "count": 18
+        },
+        {
+            "name": "意识流",
+            "count": 16
+        },
+        {
+            "name": "萌",
+            "count": 11
+        },
+        {
+            "name": "治愈",
+            "count": 11
+        },
+        {
+            "name": "悠木碧",
+            "count": 11
+        },
+        {
+            "name": "幾原邦彥",
+            "count": 10
+        },
+        {
+            "name": "悬疑",
+            "count": 9
+        },
+        {
+            "name": "小仓唯",
+            "count": 9
+        },
+        {
+            "name": "伊神貴世",
+            "count": 9
+        },
+        {
+            "name": "季番",
+            "count": 9
+        },
+        {
+            "name": "TVA",
+            "count": 8
+        }
+    ],
+    "meta_tags": [
+        "百合",
+        "校园",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "series": false,
+    "main_character_ids": [
+        28092,
+        28093,
+        28094
+    ],
+    "main_characters": [
+        {
+            "id": 28092,
+            "name": "百合城銀子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/86/82/28092_crt_msc0v.jpg?r=1416751618",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/82/28092_crt_msc0v.jpg?r=1416751618",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/82/28092_crt_msc0v.jpg?r=1416751618",
+                "grid": "https://lain.bgm.tv/pic/crt/g/86/82/28092_crt_msc0v.jpg?r=1416751618"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6786,
+                    "name": "荒川美穂",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/26/63/6786_prsn_x8njP.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/26/63/6786_prsn_x8njP.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/26/63/6786_prsn_x8njP.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/26/63/6786_prsn_x8njP.jpg"
+                    },
+                    "short_summary": "荒川 美穂（あらかわ みほ、1987年12月4日 - ）は、日本の女性声優。東京俳優生活協同組合所属。\r\n宮城県仙台市出身。愛称は、みほりん、アース等。看護師資格を持ち、2011年現在看護師として病院勤務も兼ねる。左きき。\r\n\r\n2009年に俳協ボイスアクターズスタジオ第36期生になり、2010年より東京俳優生活協同組合所属となる。\r\n\r\n女子高に通っていた。特技は水泳。影響を受けた声優は林原めぐみで、ラジオも聴いていた。林原も看護師の資格を持っており、声優として活動できるかわからないという理由からも、看護師も目指した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28093,
+            "name": "百合ヶ咲るる",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bc/58/28093_crt_XQpu3.jpg?r=1416751955",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/58/28093_crt_XQpu3.jpg?r=1416751955",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/58/28093_crt_XQpu3.jpg?r=1416751955",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bc/58/28093_crt_XQpu3.jpg?r=1416751955"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13859,
+                    "name": "生田善子",
+                    "type": 1,
+                    "career": [
+                        "mangaka",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a7/23/13859_prsn_WuPZp.jpg?r=1538822966",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/23/13859_prsn_WuPZp.jpg?r=1538822966",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/23/13859_prsn_WuPZp.jpg?r=1538822966",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a7/23/13859_prsn_WuPZp.jpg?r=1538822966"
+                    },
+                    "short_summary": "生田 善子（いくた よしこ、1988年11月26日 - ）は、日本のタレント、女優、声優、漫画原作者。アプトプロ所属。岡山県津山市出身。血液型はA型桐朋学園芸術短期大学卒業。パフォーマンスユニット「StillAlive」のメンバー。\r\n\r\n後述するように演劇一筋の学生時代を送り、テレビ出演からグラビア・舞台などを中心に活動する。小劇場での舞台は主演のほか主催、演出、脚本も経験。事務所にきた声優オーディションに合格し、2010年に『閃光のナイトレイド』にて声優デビュー。このため近年では珍しく声優学校などに通ったことがない。\r\n嫌いな食べ物は、納豆などネバネバして臭いの強いもの。\r\n『フルハウス』が好きでブログにてしばしば話題にあげている。\r\n2010年にshock hearts!!という声優ユニットに参加、朗読劇やライブ活動を行っている。\r\n2010年までアイントに所属していた。\r\n2014年7月20日の「TCG『アンジュ・ヴィエルジュ』サマーカップ2014東京大会」で司会の1人を務めていたが、同イベント内にて、『アンジュ・ヴィエルジュ』の公式ユニット『L.I.N.K.s（リンクス）』のメンバーに加入することが発表された。\r\n『ぽにきゃんぜん部!』でリバ子というニックネームをつけられたが、本人は定着しないと言っており、公式的に呼ばれている「いくたん」か気軽に「よしこ」でいいという推奨発言をしていた。\r\n2017年12月27日、「電撃マオウ」2018年2月号より高校演劇を舞台にした漫画「暗転エピローグ」の原作者を担当。生田が大会に出ていたほどの演劇部出身だった経験を元にし、当時から脚本を書いていたことから編集部がオファーした。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28094,
+            "name": "椿輝紅羽",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bf/d7/28094_crt_8d06j.jpg?r=1416752089",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/d7/28094_crt_8d06j.jpg?r=1416752089",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/d7/28094_crt_8d06j.jpg?r=1416752089",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bf/d7/28094_crt_8d06j.jpg?r=1416752089"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 16066,
+                    "name": "山根希美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2c/ad/16066_prsn_JQoPN.jpg?r=1416753421",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/ad/16066_prsn_JQoPN.jpg?r=1416753421",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/ad/16066_prsn_JQoPN.jpg?r=1416753421",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2c/ad/16066_prsn_JQoPN.jpg?r=1416753421"
+                    },
+                    "short_summary": "声優。RME所属。6月23日岡山県出身。\r\n\r\n\r\n\r\n\r\n主な出演作品\r\n\r\nアニメ\r\n「ユリ熊嵐」　椿輝紅羽\r\n「熱血人面犬 LIFE IS MOVIE」　アナウンサー\r\n「ブラック・ブレット」　女生徒2\r\n「暗殺教室」　原寿美鈴\r\n外画\r\n「ヘルベンダーズ」　リズ\r\n「お気にめすまま HDマスター版」　ウエイトレス、受付女性\r\nゲーム\r\nオンラインゲーム「ドラゴンネスト」　メリエンデル、エルフ警備兵バシャー\r\n「OTOGEAR～オトギア～」　マッチ売りの少女",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "id": 13142,
+    "name": "ATM-09-ST",
+    "type": 2,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/dc/24/13142_crt_4IT99.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/24/13142_crt_4IT99.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/24/13142_crt_4IT99.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dc/24/13142_crt_4IT99.jpg"
+    },
+    "summary": "吉路加美什军开发的量产型AT。适应能力极高，上身背部可更换多种背包，适应各种不同的环境，包括宇宙降下用的“伞兵背包”(Parachute)，宇宙空间战斗用的“圆形移动背包”（Round Mover）以及长距离行军用的“任务背包”（Mission Pack）等多种。\r\n由于是出现在片头中的机体，在全篇并无“主角机”设定这一情况下，被当作了实际上的主角机体。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "装甲骑兵ATM-09-ST"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Armored Trooper ATM-09-ST Scopedog"
+                },
+                {
+                    "k": "日文名",
+                    "v": "アーマードトルーパー スコープドッグ"
+                }
+            ]
+        },
+        {
+            "key": "身高",
+            "value": "3804mm"
+        },
+        {
+            "key": "体重",
+            "value": "6387kg"
+        },
+        {
+            "key": "装甲厚度",
+            "value": "6～14mm"
+        },
+        {
+            "key": "巡航速度",
+            "value": "41.0km/h"
+        },
+        {
+            "key": "最高速度",
+            "value": "82.3km/h"
+        },
+        {
+            "key": "最大马力",
+            "value": "230hp"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 9,
+        "collects": 20
+    },
+    "anime_ids": [
+        10379
+    ]
+}

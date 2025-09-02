@@ -1,0 +1,60 @@
+{
+    "id": 59993,
+    "name": "ファプタ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/94/e1/59993_crt_Fqe77.jpg?r=1660145476",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/94/e1/59993_crt_Fqe77.jpg?r=1660145476",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/94/e1/59993_crt_Fqe77.jpg?r=1660145476",
+        "grid": "https://lain.bgm.tv/pic/crt/g/94/e1/59993_crt_Fqe77.jpg?r=1660145476"
+    },
+    "summary": "登场于漫画第40话。生骸的公主。\r\n\r\n莉可等人在深界六层遭遇的生骸，名字「ファプタ」意为“公主”，价值的化身，哪里都通行无阻，如何都不会毁灭，被生骸村的居民敬畏着。\r\n\r\n拥有四只手臂，褐色的皮肤，红色的爪子，头上长有三支红色的角，身体的大部分都覆盖有白色的皮毛。身边伴随着一个巨大的机器人。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "法普妲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "法普塔"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Faputa"
+                },
+                {
+                    "k": "昵称",
+                    "v": "成れ果ての姬"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "发色",
+            "value": "白发"
+        },
+        {
+            "key": "瞳色",
+            "value": "金瞳"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 59,
+        "collects": 128
+    },
+    "anime_ids": [
+        298477
+    ]
+}

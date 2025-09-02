@@ -1,0 +1,81 @@
+{
+    "id": 710,
+    "name": "千石撫子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/30/59/710_crt_h27en.jpg?r=1611093851",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/59/710_crt_h27en.jpg?r=1611093851",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/59/710_crt_h27en.jpg?r=1611093851",
+        "grid": "https://lain.bgm.tv/pic/crt/g/30/59/710_crt_h27en.jpg?r=1611093851"
+    },
+    "summary": "『なでこスネイク』的主要角色。被蛇围绕的少女。忍野メメ称之为“小害羞”\r\n月火小学时代的朋友。在历毕业的中学就读。称历为“历哥哥”。说话喜欢掺杂古旧的梗（如哆啦A梦等），每次都要历来解释吐槽的内容而让人发狂不已。\r\n非常的害羞，和别人视线相对时都会觉得害羞。因为这个原因，经常带着帽子，或者用前刘海把眼睛遮掉。\r\n对人有恐惧症，很少开口说话。\r\n梦想是成为漫画家。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "千石抚子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "千石 撫子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "せんごく なでこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sengoku Nadeko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月3日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "153cm"
+        },
+        {
+            "key": "体重",
+            "value": "38kg"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "anidb.net"
+                }
+            ]
+        },
+        {
+            "key": "学校",
+            "value": "公立七百一中学校"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 3,
+    "stat": {
+        "comments": 200,
+        "collects": 1011
+    },
+    "anime_ids": [
+        1671,
+        68812
+    ]
+}

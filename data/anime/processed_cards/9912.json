@@ -1,0 +1,216 @@
+{
+    "id": 9912,
+    "name": "日常",
+    "image_path": "data/images/anime/9912.jpg",
+    "points": 8.5,
+    "cost": 5,
+    "rarity": "HR",
+    "description": "故事的主角机器人——东云名乃，一直憧憬成为一名普通的女生，却因为背上的发条而感到自卑，在被自称为博士的8岁萝莉胡乱改造之后，每次都无可奈何地感到自己与“普通女生”的距离越来越远了。除了萝莉博士外，故事还出现了很多非日常角色，如年龄为20岁且戴上博士制作的项圈能说话的黑猫、活泼且天然呆的吐槽女、擅长绘画的腐女、黑发眼镜女、外表看似不良少年实质很乖巧的男生、热爱麻糬的爆炸头男、被枪或火箭炮打到都不会死的演剧社社长等等。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2011-04-02",
+    "rating_rank": 47,
+    "rating_score": 8.5,
+    "rating_total": 22586,
+    "main_character_ids": [
+        11905,
+        11906,
+        11907,
+        11908,
+        11909,
+        11910
+    ],
+    "main_characters": [
+        {
+            "id": 11905,
+            "name": "相生祐子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e7/81/11905_crt_01D9p.jpg?r=1538644343",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/81/11905_crt_01D9p.jpg?r=1538644343",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/81/11905_crt_01D9p.jpg?r=1538644343",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e7/81/11905_crt_01D9p.jpg?r=1538644343"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5203,
+                    "name": "本多真梨子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b4/c0/5203_prsn_K583j.jpg?r=1514214438",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/c0/5203_prsn_K583j.jpg?r=1514214438",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/c0/5203_prsn_K583j.jpg?r=1514214438",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b4/c0/5203_prsn_K583j.jpg?r=1514214438"
+                    },
+                    "short_summary": "本多 真梨子（ほんだ まりこ、1986年10月3日- ）は、日本の女性声優。アミュレート所属。神奈川県出身。\r\n\r\n以前はプロダクション・エースに所属していた。プロダクション・エース演技研究所出身。\r\n2013年5月10日付けでプロダクション・エースを離れ、フリーで活動。12月1日付けでアミュレートへ移籍した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 11906,
+            "name": "長野原みお",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c6/68/11906_crt_W4WD1.jpg?r=1538644408",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c6/68/11906_crt_W4WD1.jpg?r=1538644408",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c6/68/11906_crt_W4WD1.jpg?r=1538644408",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c6/68/11906_crt_W4WD1.jpg?r=1538644408"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5010,
+                    "name": "相沢舞",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6f/1f/5010_prsn_TBpfF.jpg?r=1501432419",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6f/1f/5010_prsn_TBpfF.jpg?r=1501432419",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6f/1f/5010_prsn_TBpfF.jpg?r=1501432419",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6f/1f/5010_prsn_TBpfF.jpg?r=1501432419"
+                    },
+                    "short_summary": "相泽 舞（あいざわ まい，1981年8月21日－）是日本女性声优、隶属于青二Production。东京都出身。青二塾东京校24期生。\r\n身高145公分，血型A型，星座是狮子座。\r\n\r\n就相泽本人的说法是「自己完全没有运动神经」。譬如到2006年为止还完全不会骑自行车。初中时期隶属於羽毛球社团双打时也曾经打到过前方队友的头。此捏她也在「日常」中完全使用了。\r\n\r\n身高145cm的贫乳萝莉体型，很在意这件事情，因而私底下总是穿著很高的鞋子和成熟的服装。只是在「魔法老师捏吉」里面，staff把麦克风set到比身高还高的高度，让她在意了很久...。\r\n\r\n原本是汽车用品连锁店的引擎油营业员，拿到过全国女性第2的业绩，但是最后公司还是倒闭了，因此进入青二成为声优。\r\n\r\n对於动画有广泛的喜爱和知识，热爱「绝対无敌ライジンオー」「マクロス7」「新世纪エヴァンゲリオン」。过去在广播裏还对於机械人动画不是那麼熟悉，但是在业界最强的超机人爱好者杉田影响下，近年已经成为称职的驾驶员（スーパーロボット大戦Z的メールビーター）了。\r\n\r\n在节目薰陶下拥有不亚於杉田智和的漫谈和毒舌能力，因而如今又称Freetime相泽（相对於Freetime杉田）。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 11907,
+            "name": "水上麻衣",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/aa/c2/11907_crt_w4Dh0.jpg?r=1421388502",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/c2/11907_crt_w4Dh0.jpg?r=1421388502",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/c2/11907_crt_w4Dh0.jpg?r=1421388502",
+                "grid": "https://lain.bgm.tv/pic/crt/g/aa/c2/11907_crt_w4Dh0.jpg?r=1421388502"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5182,
+                    "name": "富樫美鈴",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2d/90/5182_prsn_Cziny.jpg?r=1502113224",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/90/5182_prsn_Cziny.jpg?r=1502113224",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/90/5182_prsn_Cziny.jpg?r=1502113224",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2d/90/5182_prsn_Cziny.jpg?r=1502113224"
+                    },
+                    "short_summary": "日本女性配音演员、演员、歌手，出身于北海道，血型A型。原隶属于PRODUCTION ACE，目前已退出，现在为贤Production所属。\r\n\r\n2009年に『生徒会の一存』で声優としてデビューを果たす。デビュー作にていきなりメインヒロインに抜擢されての出演となった。Veilのヴォーカリストの1人「Veil ∞ Misuzu」としても活動している。\r\n2011年11月2日、テレビアニメ『マケン姫っ!』のOPテーマ「Fly Away」で、本人名義での歌手デビューを果たす。カップリング曲では作詞も担当している。また、声優ユニット「碧陽学園生徒会」の初代メンバーでもある。\r\n2012年、『うぽって!!』で共演した野水伊織、佐土原かおり、味里と共に声優ユニット「sweet ARMS」を結成。\r\n2013年1月11日にデビュー当時から所属していたプロダクション・エースを退所。フリーの期間を経て、同年8月よりスチール・ウッド・ガーデンに所属。\r\n2014年12月31日付けでスチール・ウッド・ガーデンを退所し、フリーを経て、2015年2月より賢プロダクションに所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 11908,
+            "name": "東雲なの",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/27/2f/11908_crt_4669K.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/2f/11908_crt_4669K.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/2f/11908_crt_4669K.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/27/2f/11908_crt_4669K.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6205,
+                    "name": "古谷静佳",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/32/ea/6205_prsn_YB15b.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/ea/6205_prsn_YB15b.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/ea/6205_prsn_YB15b.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/32/ea/6205_prsn_YB15b.jpg"
+                    },
+                    "short_summary": "古谷静佳（ふるや しずか、12月26日 - ）は、日本の女性声優。プロダクション・エース演劇研究所「研究科」所属。秋田県出身。\r\n\r\n趣味は散歩とネコとごろごろすること。とにかく勉強が嫌い。漢字に弱い。多くの野菜が食べれない。目を離すとすぐに寝る。気を抜くとおっさん化する。\r\n\r\n出身地である秋田県での仕事にやりがいのなさを感じていたとき、雑誌でプロダクション・エースのオーディションを知り、声優への道を志した。声優によるステージエンタテインメント「アニ☆ゆめ」のユニットCのメンバー。自身のキャッチフレーズは『天使の笑顔、古谷静佳です』『おパンティス古谷』『天使のおパンティス』『おパンティスの妖精』。愛称は『しーぽん』など。\r\n\r\n2011年にアニメ『日常』にて東雲なの役に抜擢された。『日常のラヂオ』では当初こそ引っ込みがちだったものの、トーク慣れによって次第にブッ壊れ覚醒。数々の名言を生み出し、白石稔から『古谷名人』という称号を与えられた。ラジオで当日履いていたパンツの色を暴露したことも。\r\n\r\n2015年3月12日、「日常」などで共演した本多真梨子MCの番組「猫ブース鬼パーセント芋！」に出演。好評につきその後レギュラー出演となる。\r\n\r\n11月末、4tトラックに撥ねられ頭を強く打ち入院。幾多の危機を乗り越え2ヶ月半後無事復帰。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 11909,
+            "name": "はかせ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/69/be/11909_crt_jf0Zy.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/be/11909_crt_jf0Zy.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/be/11909_crt_jf0Zy.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/69/be/11909_crt_jf0Zy.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4457,
+                    "name": "今野宏美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f1/c4/4457_prsn_cCHjh.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/c4/4457_prsn_cCHjh.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/c4/4457_prsn_cCHjh.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f1/c4/4457_prsn_cCHjh.jpg"
+                    },
+                    "short_summary": "札幌大学経済学部経済学科卒業。\r\n1997年、セガサターン用ゲーム『センチメンタルグラフティ』によりデビューした鈴木麗子・岡本麻見・牧島有希・西口有香・岡田純子との6人組を通称「うさぎ組」（所属事務所・マーカス）、既に決定していた青二プロダクション所属の鈴木麻里子・米本千珠・豊嶋真千子・小田美智子・前田愛・満仲由紀子の6名を加えた、12人からなるユニットを「SGガールズ」と呼ぶ。\r\n青二プロダクションへ所属後、2003年、ラジオ『スタチャ情報発信番組 ホレぼれ。』（文化放送）のパーソナリティ4名（今野他は加藤奈々絵・こやまきみこ・清水愛）と、オーディション合格した白石涼子、日永田麻衣・増山鈴乃音の3名で結成された声優ユニット「パステル」に参加。2004年にラジオの終了と合わせて解散したが、2016年1月に再結成。\r\n2007年、『ゲゲゲの鬼太郎（第5作）』の猫娘役と『らき☆すた』の小神あきら役で注目を集める。\r\n\r\n趣味はゴルフ、加圧トレーニング。方言は北海道弁。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 11910,
+            "name": "阪本さん",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3f/23/11910_crt_5WNno.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/23/11910_crt_5WNno.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/23/11910_crt_5WNno.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3f/23/11910_crt_5WNno.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4445,
+                    "name": "白石稔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/54/32/4445_prsn_wyauJ.jpg?r=1671330927",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/54/32/4445_prsn_wyauJ.jpg?r=1671330927",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/54/32/4445_prsn_wyauJ.jpg?r=1671330927",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/54/32/4445_prsn_wyauJ.jpg?r=1671330927"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

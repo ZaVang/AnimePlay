@@ -1,0 +1,52 @@
+{
+    "id": 70011,
+    "name": "ザック・ウォーカー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/58/d4/70011_crt_fj77U.jpg?r=1557494022",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/d4/70011_crt_fj77U.jpg?r=1557494022",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/d4/70011_crt_fj77U.jpg?r=1557494022",
+        "grid": "https://lain.bgm.tv/pic/crt/g/58/d4/70011_crt_fj77U.jpg?r=1557494022"
+    },
+    "summary": "宇宙科学を専攻するIQ200の天才。\r\n宇宙船の操縦免許を持ち、機械類の知識も豊富。\r\n冷静な判断で周囲を引っ張るが、人間関係においては鈍感なところも。\r\nキトリーとは幼馴染み。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Zack Walker"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "6月9日"
+        },
+        {
+            "key": "身高",
+            "value": "185cm"
+        },
+        {
+            "key": "体重",
+            "value": "76kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 9,
+    "stat": {
+        "comments": 1,
+        "collects": 4
+    },
+    "anime_ids": [
+        273877
+    ]
+}

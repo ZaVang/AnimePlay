@@ -1,0 +1,68 @@
+{
+    "id": 6646,
+    "name": "鮎川まどか",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5e/f7/6646_crt_8887M.jpg?r=1678203877",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/f7/6646_crt_8887M.jpg?r=1678203877",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/f7/6646_crt_8887M.jpg?r=1678203877",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5e/f7/6646_crt_8887M.jpg?r=1678203877"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鲇川圆"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "鲇川丸子"
+                },
+                {
+                    "k": "日文名",
+                    "v": "鮎川まどか"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あゆかわ　まどか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ayukawa Madoka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月25日"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        },
+        {
+            "key": "专长",
+            "value": "打架、唱歌、弹贝斯、萨克斯风、打网球、游泳、作曲、编织……"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 25,
+    "stat": {
+        "comments": 19,
+        "collects": 109
+    },
+    "anime_ids": [
+        2042
+    ]
+}

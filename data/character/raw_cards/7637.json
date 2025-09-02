@@ -1,0 +1,73 @@
+{
+    "id": 7637,
+    "name": "本田ヒロト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/61/77/7637_crt_3NNVc.jpg?r=1751867962",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/77/7637_crt_3NNVc.jpg?r=1751867962",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/77/7637_crt_3NNVc.jpg?r=1751867962",
+        "grid": "https://lain.bgm.tv/pic/crt/g/61/77/7637_crt_3NNVc.jpg?r=1751867962"
+    },
+    "summary": "武藤游戏的同班同学、是城之内的损友，在原作中、他是男性主要配角中唯一一位没有决斗过、也不是决斗者的人。\r\n他擅长打架，负责吐槽或制止城之内的胡闹，不过有时两人也会一起胡闹。在决斗者王国篇、战斗城市篇中经常替游戏及城之内加油。\r\n仪式之战的最后，哭著求亚图姆不要回去冥界，因为仪式之战的缘故，亚图姆拥有自己的身体，最后还是目送他离去。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "本田广人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "本田ヒロト"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ほんだ ヒロト"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Honda Hiroto"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月19日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "180cm"
+        },
+        {
+            "key": "体重",
+            "value": "65kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 19,
+    "stat": {
+        "comments": 2,
+        "collects": 5
+    },
+    "anime_ids": [
+        6390,
+        12344
+    ]
+}

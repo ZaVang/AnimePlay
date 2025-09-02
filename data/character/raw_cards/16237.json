@@ -1,0 +1,72 @@
+{
+    "id": 16237,
+    "name": "桜木花道",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/92/97/16237_crt_NbC37.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/97/16237_crt_NbC37.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/97/16237_crt_NbC37.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/92/97/16237_crt_NbC37.jpg"
+    },
+    "summary": "樱木花道是日本漫画及动画《灌篮高手》中的主角，湘北高中篮球队的球员，拥有惊人的体能特质，经常以天才自称。\r\n\r\n球技进步后取代木暮公延成为经常先发五人之一，在队中的位置是大前锋。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "樱木花道"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "桜木 花道"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さくらぎ はなみち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakuragi Hanamichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月1日"
+        },
+        {
+            "key": "身高",
+            "value": "188cm→189.2cm"
+        },
+        {
+            "key": "体重",
+            "value": "83kg"
+        },
+        {
+            "key": "位置",
+            "value": "大前锋/中锋"
+        },
+        {
+            "key": "球衣号码",
+            "value": "10"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 1,
+    "stat": {
+        "comments": 37,
+        "collects": 146
+    },
+    "anime_ids": [
+        1608
+    ]
+}

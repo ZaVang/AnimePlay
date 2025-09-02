@@ -1,0 +1,76 @@
+{
+    "id": 363,
+    "name": "西園美魚",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/99/3f/363_crt_vwwLR.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/3f/363_crt_vwwLR.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/3f/363_crt_vwwLR.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/99/3f/363_crt_vwwLR.jpg"
+    },
+    "summary": "CV：柚木かなめ \r\n撑着阳伞的文静天然系\r\n休息时间中一个人读书，有着文雅印象的女孩\r\n本性努力、用功，一旦下定决心却容易跑向奇怪的方向\r\n外出时总是打着一把阳伞",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "西园美鱼"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Mio Nishizono"
+                },
+                {
+                    "k": "日文名",
+                    "v": "西園 美魚"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "にしぞの みお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nishizono Mio"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月22日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "153cm"
+        },
+        {
+            "key": "体重",
+            "value": "41kg"
+        },
+        {
+            "key": "BWH",
+            "value": "75/55/79"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 22,
+    "stat": {
+        "comments": 28,
+        "collects": 157
+    },
+    "anime_ids": [
+        363880
+    ]
+}

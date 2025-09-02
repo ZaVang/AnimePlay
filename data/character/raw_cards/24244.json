@@ -1,0 +1,78 @@
+{
+    "id": 24244,
+    "name": "テリアモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/78/f6/24244_crt_GZDwI.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/f6/24244_crt_GZDwI.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/f6/24244_crt_GZDwI.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/78/f6/24244_crt_GZDwI.jpg"
+    },
+    "summary": "头部长有一支角，充满谜团的数码宝贝。从身体构造来看可以分类为兽系数码宝贝，但依然无从得知其经历过何种进化型态。另外也有传闻说偶尔会诞生出双胞胎。由于外表非常可爱，实在难以从其悠哉的行动感受到它是身为“战斗种族”的数码宝贝，但在战斗时却能发挥超乎外表的力量。擅长技能是如螺旋桨般转动双耳，借此引起小型龙卷风的『小型龙卷风』。必杀技是吐出高温热气弹的『炽烈爆炎』。另外，和据说是双胞胎的[url=https://bgm.tv/character/24245]黑大耳兽[/url]使出的合体技能『双重台风』也具有强大的威力。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "大耳兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "梗犬兽"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Terriermon"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Teriamon"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference/detail.php?directory_name=terriermon"
+        },
+        {
+            "key": "等级",
+            "value": "成长期"
+        },
+        {
+            "key": "类型",
+            "value": "兽型"
+        },
+        {
+            "key": "属性",
+            "value": "疫苗"
+        },
+        {
+            "key": "必杀技",
+            "value": [
+                {
+                    "v": "小型龙卷风"
+                },
+                {
+                    "v": "炽烈爆炎"
+                },
+                {
+                    "v": "双重台风"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 10,
+        "collects": 29
+    },
+    "anime_ids": [
+        3130
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "id": 273,
+    "name": "アルトリア・ペンドラゴン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7d/58/273_crt_N99A0.jpg?r=1629370055",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/58/273_crt_N99A0.jpg?r=1629370055",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/58/273_crt_N99A0.jpg?r=1629370055",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7d/58/273_crt_N99A0.jpg?r=1629370055"
+    },
+    "summary": "不列颠传说中的王。也被誉为骑士王。\r\n阿尔托莉雅是幼名，自从当上国王之后，\r\n就开始被称为亚瑟王了。\r\n在骑士道凋零的时代，手持圣剑，\r\n给不列颠带来了短暂的和平与最后的繁荣。\r\n史实上虽为男性，\r\n但在这个世界内却似乎是男装丽人。\r\n\r\nブリテンの伝説の王。騎士王とも。\r\nアルトリアは幼名であり、王として起ってからは\r\nアーサー王と呼ばれる事になった。\r\n騎士道が花と散った時代、聖剣を手にブリテンに\r\nつかの間の平和と最後の繁栄をもたらした。\r\n史実では男性だが、\r\nこの世界では男装の麗人であったようだ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿尔托莉雅·潘德拉贡"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Saber"
+                },
+                {
+                    "k": "昵称",
+                    "v": "呆毛王、吾王、青王、骑士王、棉被王、亚瑟王、蓝Saber、元祖Saber"
+                },
+                {
+                    "v": "Altria Pendragon"
+                },
+                {
+                    "k": "日文名",
+                    "v": "セイバー"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        },
+        {
+            "key": "体重",
+            "value": "42kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B73/W53/H76"
+        },
+        {
+            "key": "职介",
+            "value": "Saber、Rider"
+        },
+        {
+            "key": "属性",
+            "value": [
+                {
+                    "v": "秩序·善·地"
+                },
+                {
+                    "v": "秩序·恶、秩序·善（圣诞Alter）"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "fgo.wiki"
+        },
+        {
+            "key": "职阶",
+            "value": [
+                {
+                    "v": "Saber、Archer"
+                }
+            ]
+        },
+        {
+            "key": "画师",
+            "value": "武内崇"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "规矩精细的饮食，布娃娃（尤其是狮子的）"
+        },
+        {
+            "key": "讨厌的东西",
+            "value": "粗糙的饮食，过多装饰"
+        },
+        {
+            "key": "印象颜色",
+            "value": "蓝"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 159,
+        "collects": 1947
+    },
+    "anime_ids": [
+        10639,
+        95225,
+        109386
+    ]
+}

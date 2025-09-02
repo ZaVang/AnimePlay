@@ -1,0 +1,84 @@
+{
+    "id": 50586,
+    "name": "オグリキャップ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/63/95/50586_crt_Z1KIk.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/95/50586_crt_Z1KIk.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/95/50586_crt_Z1KIk.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/63/95/50586_crt_Z1KIk.jpg"
+    },
+    "summary": "有着从非首都地区爬到Twinkle系列的异例经历的马娘。\r\n全马娘之中有着屈指的人气的顶尖偶像，不过性格比较冰山故而有些难以接近。\r\n但那只是因为对赛跑的纯粹心而造成的。因为她那认真的性格，尊敬着她的后辈非常多。\r\n稍微有些天然的淳朴性格，不太熟悉当今的流行与同龄女孩子的时尚等。\r\n大胃王，每一餐盖浇饭的话能够吃10碗。\r\n***\r\n小栗队长（1985年3月27日~2010年7月3日）灰色\r\n公马\r\n出生地：日本（北海道三石町）",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小栗帽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "小栗隊長"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Oguri Cap"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月27日"
+        },
+        {
+            "key": "身高",
+            "value": "167cm"
+        },
+        {
+            "key": "体重",
+            "value": "微增（吃多了）"
+        },
+        {
+            "key": "BWH",
+            "value": "B82・W57・H82"
+        },
+        {
+            "key": "毛色",
+            "value": "芦毛"
+        },
+        {
+            "key": "现实马主",
+            "value": "小栗 孝一（初代） 佐橋 五十雄（2代目） 近藤 俊典（3代目）"
+        },
+        {
+            "key": "成績(勝率)",
+            "value": "32戦22勝（68.7%）"
+        },
+        {
+            "key": "獲得賞金",
+            "value": "8億8,830万円 （中央） 2,281万円（地方）"
+        },
+        {
+            "key": "固有二つ名",
+            "value": "アイドルウマ娘"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 27,
+    "stat": {
+        "comments": 59,
+        "collects": 307
+    },
+    "anime_ids": [
+        509297
+    ]
+}

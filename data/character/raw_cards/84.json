@@ -1,0 +1,78 @@
+{
+    "id": 84,
+    "name": "草薙素子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/11/7b/84_crt_xc45y.jpg?r=1587737580",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/11/7b/84_crt_xc45y.jpg?r=1587737580",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/11/7b/84_crt_xc45y.jpg?r=1587737580",
+        "grid": "https://lain.bgm.tv/pic/crt/g/11/7b/84_crt_xc45y.jpg?r=1587737580"
+    },
+    "summary": "自卫军出身,军衔三佐.\r\n极其擅长电子战,作战经验丰富,领导能力优秀.\r\n幼年6岁时,遭遇空难,除脑和脊髓部分全身义体化.\r\n外部记忆装置,义体大小调整前所佩带女式手表",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "草薙素子"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kusanagi Motoko"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くさなぎ もとこ"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "anidb.net"
+                }
+            ]
+        },
+        {
+            "key": "简体中文名",
+            "value": "草薙素子"
+        },
+        {
+            "key": "生日",
+            "value": "不详"
+        },
+        {
+            "key": "身高",
+            "value": "168"
+        },
+        {
+            "key": "体重",
+            "value": "不详"
+        },
+        {
+            "key": "BWH",
+            "value": "不详"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 107,
+        "collects": 728
+    },
+    "anime_ids": [
+        326,
+        324,
+        320
+    ]
+}

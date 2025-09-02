@@ -1,0 +1,63 @@
+{
+    "id": 66899,
+    "name": "四宮かぐや",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9e/72/66899_crt_kNOM3.jpg?r=1547389516",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/72/66899_crt_kNOM3.jpg?r=1547389516",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/72/66899_crt_kNOM3.jpg?r=1547389516",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9e/72/66899_crt_kNOM3.jpg?r=1547389516"
+    },
+    "summary": "本作的主角。秀知院学园高中部2年A班的女学生，担任学生会副会长。参加的社团是弓道部。\r\n四大财阀之一，四宫集团的千金。 \r\n万能型的天才，但是不谙世故，无意识中会瞧不起人。\r\n想告诉白银御行他和猫耳很般配。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "四宫辉夜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しのみや かぐや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shinomiya Kaguya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月1日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 1,
+    "stat": {
+        "comments": 85,
+        "collects": 740
+    },
+    "anime_ids": [
+        317613,
+        425211,
+        293049,
+        248175
+    ]
+}

@@ -32,8 +32,8 @@ function handleRightClick(character: Card) {
   detailCharacter.value = character;
 }
 
-function handleUseSkill(skill: Skill) {
-  SkillSystem.useSkill(props.playerId, skill);
+async function handleUseSkill(skill: Skill) {
+  await SkillSystem.useSkill(props.playerId, skill);
   closeModal();
 }
 

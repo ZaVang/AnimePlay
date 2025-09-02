@@ -1,0 +1,91 @@
+{
+    "id": 6581,
+    "name": "水野亜美",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/86/0f/6581_crt_NN64z.jpg?r=1465481343",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/0f/6581_crt_NN64z.jpg?r=1465481343",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/0f/6581_crt_NN64z.jpg?r=1465481343",
+        "grid": "https://lain.bgm.tv/pic/crt/g/86/0f/6581_crt_NN64z.jpg?r=1465481343"
+    },
+    "summary": "IQ300的天才少女。9月10日出生，全国成绩第一的中学生，可变身成水星仙子Sailor Mercury。父亲是日本画家，母亲是医生，住在高级住宅。她梦想是成为一个出色的医生。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "水野亚美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "セーラーマーキュリー"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "水兵水星"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Amy Anderson"
+                },
+                {
+                    "k": "日文名",
+                    "v": "水野亜美"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mizuno Ami"
+                },
+                {
+                    "k": "\\",
+                    "v": "Ami Mizuno"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "????-09-10"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "158"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "星座",
+            "value": "处女座"
+        },
+        {
+            "key": "年龄",
+            "value": "14"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 10,
+    "stat": {
+        "comments": 10,
+        "collects": 48
+    },
+    "anime_ids": [
+        5434,
+        5432,
+        1510,
+        5433,
+        5428
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": 63842,
+    "name": "青葉りんか",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/52/37/63842_crt_p27Pq.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/37/63842_crt_p27Pq.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/37/63842_crt_p27Pq.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/52/37/63842_crt_p27Pq.jpg"
+    },
+    "summary": "きらりヶ丘中学校の1年生。みらい、えもの同級生。クールでしっかり者。物静かな優等生タイプだが、なぜかプリ☆チャンのことに詳しく、プリ☆チャンデビューしたみらいとえものマネージャー役として二人をサポートする。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "青叶凛花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あおば　りんか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "aoba rinka"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.tv-tokyo.co.jp/anime/prichan/chara/"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 8
+    },
+    "anime_ids": [
+        269023
+    ]
+}

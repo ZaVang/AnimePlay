@@ -1,0 +1,52 @@
+{
+    "id": 18289,
+    "name": "ミップル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/24/63/18289_crt_VCVxz.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/63/18289_crt_VCVxz.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/63/18289_crt_VCVxz.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/24/63/18289_crt_VCVxz.jpg"
+    },
+    "summary": "光の園の「希望の姫君」。ジャアクキングとの戦いのあとカードコミューンの姿で眠っていたが、新しい姿　ハートフルコミューンとなって目覚めた。キュアホワイトのパートナー。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ミップル"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mipple"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "简体中文名",
+            "value": "米普露"
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 2
+    },
+    "anime_ids": [
+        4243
+    ]
+}

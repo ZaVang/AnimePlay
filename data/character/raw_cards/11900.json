@@ -1,0 +1,60 @@
+{
+    "id": 11900,
+    "name": "天沢勇子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/53/42/11900_crt_6Wcps.jpg?r=1611432831",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/42/11900_crt_6Wcps.jpg?r=1611432831",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/42/11900_crt_6Wcps.jpg?r=1611432831",
+        "grid": "https://lain.bgm.tv/pic/crt/g/53/42/11900_crt_6Wcps.jpg?r=1611432831"
+    },
+    "summary": "从金泽转来的转学生，在优子转学的隔日出现在学校，大黑市立第三小学六年三班所属。\r\n为了跟优子区别，被文惠由“勇”字的日文训读音取了绰号“イサコ”，不过本人讨厌这个通称。\r\n性格强悍，讨厌与他人群聚，说出“你对我是没有必要的东西”、“不需要信赖，只要服从”等等不打算交朋友的话语。\r\n不知何故不断尝试寻找伊利加尔。骇客能力极高，是电脑空间的魔术师“暗号师”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "天泽勇子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "天沢 勇子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あまさわ ゆうこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Amasawa Yuuko"
+                },
+                {
+                    "k": "昵称",
+                    "v": "イサコ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2014年4月4日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 2014,
+    "birth_mon": 4,
+    "birth_day": 4,
+    "stat": {
+        "comments": 20,
+        "collects": 41
+    },
+    "anime_ids": [
+        794
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "id": 173497,
+    "name": "ポン子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/be/60/173497_crt_5t5yt.jpg?r=1749655221",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/60/173497_crt_5t5yt.jpg?r=1749655221",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/60/173497_crt_5t5yt.jpg?r=1749655221",
+        "grid": "https://lain.bgm.tv/pic/crt/g/be/60/173497_crt_5t5yt.jpg?r=1749655221"
+    },
+    "summary": "家族と共に地球にきた『タヌキ星人』。好奇心旺盛で家族想い。驚くと気絶して仮死状態になってしまうが、ここ一番の時は勇気を奮ったりもする。壊れてしまった宇宙船を修理できるまでの間、『銀河楼』に滞在することになるのだが……。ちなみに『タヌキ星』というのは自分たちに似た地球の生物にちなんでつけた仮の名称。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "嘭子"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 54,
+        "collects": 92
+    },
+    "anime_ids": [
+        509986
+    ]
+}

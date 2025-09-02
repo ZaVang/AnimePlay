@@ -1,0 +1,44 @@
+{
+    "id": 31822,
+    "name": "宇佐美陽菜",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/31/cd/31822_crt_Pr7z7.jpg?r=1430547519",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/31/cd/31822_crt_Pr7z7.jpg?r=1430547519",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/31/cd/31822_crt_Pr7z7.jpg?r=1430547519",
+        "grid": "https://lain.bgm.tv/pic/crt/g/31/cd/31822_crt_Pr7z7.jpg?r=1430547519"
+    },
+    "summary": "代理女神之一。\r\n县立深绿学园高等学校1年生。和有栖川凛是自幼稚园起相识的青梅竹马，深思熟虑的知性美女。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宇佐美阳菜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "うさみ ひな"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 4
+    },
+    "anime_ids": [
+        112838
+    ]
+}

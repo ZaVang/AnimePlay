@@ -1,0 +1,61 @@
+{
+    "id": 70611,
+    "name": "リリス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/33/4d/70611_crt_lt3u4.jpg?r=1566723246",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/4d/70611_crt_lt3u4.jpg?r=1566723246",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/4d/70611_crt_lt3u4.jpg?r=1566723246",
+        "grid": "https://lain.bgm.tv/pic/crt/g/33/4d/70611_crt_lt3u4.jpg?r=1566723246"
+    },
+    "summary": "シャミ子のご先祖様。年齢は推定4、5000歳。メソポタミアの出身で褐色の肌をもち、容姿はウェーブがかかった長い金髪で右の角は折れている。シャミ子に闇の一族の力を与えた張本人であり、永劫の闇をつかさどる魔女。他人の夢に潜り夢を操る資質を持つ闇の一族の始祖でもあり、世界征服を目論んでいるが、数千年前に光の一族との苦戦の末に邪神像に魂を封印されていた。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莉莉丝"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Lilith"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ごせんぞ様"
+                },
+                {
+                    "k": "中文昵称",
+                    "v": "先祖大人"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wikipedia"
+        },
+        {
+            "key": "年龄",
+            "value": "4000-5000岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 18,
+        "collects": 51
+    },
+    "anime_ids": [
+        313852,
+        272510
+    ]
+}

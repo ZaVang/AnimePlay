@@ -1,0 +1,39 @@
+{
+    "id": 186,
+    "name": "阿野万記",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/98/72/186_d9fc22fc182d371c3e9ed316094_vRKtc.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/72/186_d9fc22fc182d371c3e9ed316094_vRKtc.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/72/186_d9fc22fc182d371c3e9ed316094_vRKtc.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/98/72/186_d9fc22fc182d371c3e9ed316094_vRKtc.jpg"
+    },
+    "summary": "阿野万記\r\n(あの まき)\r\n通称：マキ\r\n(声：比嘉久美子）\r\n中学１年",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "145"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 4,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 3
+    },
+    "anime_ids": [
+        467
+    ]
+}

@@ -1,0 +1,120 @@
+{
+    "id": 9269,
+    "name": "娱乐金鱼眼",
+    "image_path": "data/images/anime/9269.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "富家千金藤之宮千歲因父親突然過世而一無所有，被迫離開原本就讀的都會學園，帶着粉紅色神奇金魚小荳荳入讀一間連雞與牛都收為學生的田舍中學…\r\n\r\n正當田舍中學因經營不善而將要關閉時，千歲發現律師田中山試圖盜取遺產…\r\n\r\n奪回遺產後，千歲建立新田舍中學，並成為學校的理事長兼學生會長，為人生揭開新的一頁。 ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 54,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1991-01-12",
+    "rating_rank": 1717,
+    "rating_score": 7.3,
+    "rating_total": 61,
+    "main_character_ids": [
+        9740,
+        9742,
+        86098
+    ],
+    "main_characters": [
+        {
+            "id": 9740,
+            "name": "藤ノ宮千歳",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/69/1d/9740_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/1d/9740_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/1d/9740_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/69/1d/9740_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3887,
+                    "name": "高田由美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/49/3887_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/49/3887_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/49/3887_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/49/3887_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "ミュージカル劇団「ミスタースリムカンパニー」で女優として活動後、声優へ転向。声優デビューは、1979年2月27日に放送されたTBSラジオ『林美雄のパックインミュージック』内の『瓜売小僧（うりうりぼうや）』（橋本治原作・桃尻娘のラジオドラマ）での蜜柑姫（みかんひめ）役。\r\n\r\n吹き替えでは、『幽幻道士』シリーズのテンテン役が知られており、シリーズ5作品中4作品と、『幽幻道士』の世界観・キャラクターを元に日本で再構成された『来来!キョンシーズ』でテンテンの声を担当。また『新桃太郎』でも、テンテン役のリュウ・ツーイーが演じたマーヤを吹き替えた。\r\n\r\n2009年10月ごろを境に、それまで演じていた『クレヨンしんちゃん』の吉永みどり役などのレギュラーを降板。2013年には、所属事務所のプロフィールから、それまで掲載されていた高田のサンプル音声が削除された。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9742,
+            "name": "葵",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/02/af/9742_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/af/9742_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/af/9742_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/02/af/9742_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4167,
+                    "name": "飛田展男",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fe/96/4167_prsn_iQprj.jpg?r=1514286894",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/96/4167_prsn_iQprj.jpg?r=1514286894",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/96/4167_prsn_iQprj.jpg?r=1514286894",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fe/96/4167_prsn_iQprj.jpg?r=1514286894"
+                    },
+                    "short_summary": "飛田 展男（とびた のぶお、1959年11月6日 - ）は、日本の声優、ナレーターであり、舞台俳優。アーツビジョン所属。\r\n茨城県水戸市出身。水戸市立三の丸小学校、茨城中学校・高等学校卒業。駒澤大学文学部歴史学科中退。体重55kg。血液型はAB型。愛称は「飛ちゃん」。\r\n\r\n飞田展男，可以说是日本男声优中的“变色龙”。他的角色反差极大，最为夸张的对比就是《安琪莉可》中的水之守护圣卢米埃和《烈火之炎》中的土门，一个美一个丑，一个柔弱一个健壮，一个温柔一个暴躁，一个优雅一个粗鲁，简直就是两个极端，令人怎么也无法相信这是同一位声优的演绎，但事实就是如此。飞田展男利用发音位置的变化控制声音效果，再辅以气声和力度，塑造出截然相反类型的人物。从控制发音变化的技巧来说，飞田展男是独一无二的。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 86098,
+            "name": "わぴこ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/91/28/86098_crt_rbgdA.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/28/86098_crt_rbgdA.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/28/86098_crt_rbgdA.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/91/28/86098_crt_rbgdA.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3896,
+                    "name": "かないみか",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fb/dd/3896_prsn_QQxj5.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/dd/3896_prsn_QQxj5.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/dd/3896_prsn_QQxj5.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fb/dd/3896_prsn_QQxj5.jpg"
+                    },
+                    "short_summary": "　　昵称是みかぴい。出生于父亲是在“剧团青年座”担任演出家的金井彰久，母亲是在“花のピュンピュン丸”以声优演出过的田上和枝的演剧一家。还是婴儿时演员的西田敏行曾帮她换过尿布。\r\n高中2年级时，曾到英国寄居家庭过。\r\n　　成为声优前，家族一起到烤肉店，向店员大声要求换冷水“すいませーん、お水おかわりくださーい!”后，东西却送到隔壁桌小孩的地方去。\r\n　　以幼女声音闻名。与声优的兴梠里美声音相近也相当有名。\r\n　　多饰演泼辣而年龄层较低的活泼少女，然而在《机动新世纪钢弹X》里像蒂法一般的无口系神秘少女，或《银河天使》里ノーマッド一般的毒舌角色也饰演过，因此展露出她演技的多样性。\r\n　　声优界第一的揉乳嗜好家，可说是每见到女性声优必定会揉乳。在广播《みか・もりしゃんのGamers Amusement Station》等处不时将おっぱい挂在嘴边。另在同节目的Web版结束的前几回里偷偷设立“おっぱい堂”专栏，曾发表个人自豪的战绩。其行为被隶属于賢プロダクション的后辈们（生天目仁美等人）继承了下来。\r\n　　也是2005年组成的男性声优团体“Revolver”的制作，成员有森训久、梯笃司、宫下荣治、泰勇气、胜杏里、增川洋一。\r\n　　前夫为声优的山寺宏一。两人于1994年结婚，在2006年离婚。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

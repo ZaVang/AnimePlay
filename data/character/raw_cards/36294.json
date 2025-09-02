@@ -1,0 +1,72 @@
+{
+    "id": 36294,
+    "name": "永吉昴",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0a/9a/36294_crt_7w2Bb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/9a/36294_crt_7w2Bb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/9a/36294_crt_7w2Bb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0a/9a/36294_crt_7w2Bb.jpg"
+    },
+    "summary": "偶像大师百万LIVE登场偶像，Dance阵营。 \r\n\r\n第一人称是俺(オレ)的15岁女孩。有着十分具有特征的吊眼梢的眼睛。 \r\n\r\n不论爱好还是特长都是棒球的棒球少女。对于能投出滑行曲线球而感到自豪。 \r\n\r\n有着小学的时候就上投手土台而把对手惊呆了的英勇事迹，是个相当有实力的选手。制作人经常被她邀请去当捕手。 \r\n\r\n虽然当偶像并不是很差，但说话方式与举止行为完全就和男孩子一样。完全没有意识制作人是一个男性，对制作人毫无防备之心。但意外地声音非常的可爱。 \r\n\r\n对自己不修边幅的方面并不特别在意，不过还是想当一个像个女孩的可爱的偶像，为此对自己的措辞和衣装打扮等方面十分苦恼。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "永吉昴"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Nagayoshi Subaru"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ながよし すばる"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月20日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        },
+        {
+            "key": "体重",
+            "value": "41kg"
+        },
+        {
+            "key": "BWH",
+            "value": "79-59-78"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 20,
+    "stat": {
+        "comments": 11,
+        "collects": 18
+    },
+    "anime_ids": [
+        309807
+    ]
+}

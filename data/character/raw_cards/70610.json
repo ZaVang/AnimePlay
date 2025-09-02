@@ -1,0 +1,77 @@
+{
+    "id": 70610,
+    "name": "千代田桃",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/01/ab/70610_crt_89c80.jpg?r=1566723200",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/ab/70610_crt_89c80.jpg?r=1566723200",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/ab/70610_crt_89c80.jpg?r=1566723200",
+        "grid": "https://lain.bgm.tv/pic/crt/g/01/ab/70610_crt_89c80.jpg?r=1566723200"
+    },
+    "summary": "シャミ子と同じ桜ヶ丘高等学校に通う光の一族の巫女＝魔法少女。15歳の3月25日生まれでクラスは1年A組。容姿は桃色のショートヘアで、前髪にピン留めをしている。たまさくらちゃんというゆるキャラに特別な親しみを感じており、密かにグッズを買い集めている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "千代田桃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "千代田 桃"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ちよだ もも"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Chiyoda Momo"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ちよもも"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月25日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wikipedia"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 25,
+    "stat": {
+        "comments": 60,
+        "collects": 363
+    },
+    "anime_ids": [
+        313852,
+        272510
+    ]
+}

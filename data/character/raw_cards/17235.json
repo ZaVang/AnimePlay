@@ -1,0 +1,60 @@
+{
+    "id": 17235,
+    "name": "渡辺早季",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f8/6a/17235_crt_4TZv0.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/6a/17235_crt_4TZv0.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/6a/17235_crt_4TZv0.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f8/6a/17235_crt_4TZv0.jpg"
+    },
+    "summary": "本作の主人公であり、物語は早季の書いた手記という形で進行していく。\r\n町長の父と神栖66町では重要とされている図書館司書を務める母を持つ。\r\n性格は好奇心旺盛で肝も据わっている。瞬には物語開始以前から好意を抱いている。\r\nミノシロモドキの噂を確かめようとキャンプの際に覚、瞬、真里亞、守と共に捕獲を試みる。\r\nそしてミノシロモドキから町では禁忌とされる情報を引き出してしまい、平和だった日常からバケネズミたちの抗争や思いもしない災厄に巻き込まれてゆく。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "渡边早季"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Saki Watanabe"
+                },
+                {
+                    "k": "日文名",
+                    "v": "渡辺 早季"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "わたなべ さき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Watanabe Saki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月10日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 10,
+    "stat": {
+        "comments": 57,
+        "collects": 310
+    },
+    "anime_ids": [
+        37785
+    ]
+}

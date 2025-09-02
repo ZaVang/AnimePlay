@@ -1,0 +1,62 @@
+{
+    "id": 70123,
+    "name": "コハク",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/38/2f/70123_crt_pPv66.jpg?r=1566020380",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/2f/70123_crt_pPv66.jpg?r=1566020380",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/2f/70123_crt_pPv66.jpg?r=1566020380",
+        "grid": "https://lain.bgm.tv/pic/crt/g/38/2f/70123_crt_pPv66.jpg?r=1566020380"
+    },
+    "summary": "16岁，居住于石神村的少女，身手矫健、力量不输男性、视力11.0，会基本算术。琉璃的妹妹。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "琥珀"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Kohaku"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月8日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "52kg"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 8,
+    "stat": {
+        "comments": 14,
+        "collects": 82
+    },
+    "anime_ids": [
+        424372,
+        266794,
+        363101
+    ]
+}

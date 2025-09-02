@@ -1,0 +1,93 @@
+{
+    "id": 65982,
+    "name": "二階堂サキ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/42/32/65982_crt_czZTY.jpg?r=1544204008",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/32/65982_crt_czZTY.jpg?r=1544204008",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/32/65982_crt_czZTY.jpg?r=1544204008",
+        "grid": "https://lain.bgm.tv/pic/crt/g/42/32/65982_crt_czZTY.jpg?r=1544204008"
+    },
+    "summary": "金发马尾，闪着锐利眼神的僵尸2号。\r\n20世纪末，完成了九州制霸的传说暴走族集团“怒罗美”的特攻队长。“杀了你哦”是她的口癖，常找茬和威胁别人，自己和他人都承认是个不良，不过只要别人有骨气她就会视为死党。\r\n生前十分沉迷“拓麻歌子”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "二阶堂咲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "二阶堂笑"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "にかいどう さき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nikaido Saki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1979年5月15日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "153cm"
+        },
+        {
+            "key": "体重",
+            "value": "45kg"
+        },
+        {
+            "key": "BWH",
+            "value": "77：54：82(C)"
+        },
+        {
+            "key": "去世日期",
+            "value": "1997年8月30日（佛灭）"
+        },
+        {
+            "key": "兴趣",
+            "value": "游戏中心、拓麻歌子"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "鸡肉"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "甜食"
+        },
+        {
+            "key": "喜欢的颜色",
+            "value": "橙色"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1979,
+    "birth_mon": 5,
+    "birth_day": 15,
+    "stat": {
+        "comments": 42,
+        "collects": 135
+    },
+    "anime_ids": [
+        252655,
+        287488
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "id": 10553,
+    "name": "监狱兔 第四季",
+    "image_path": "data/images/anime/10553.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "故事围绕着两只在1961年的苏联时于监狱服刑的兔子普京(プーチン)和基里连科(キレネンコ)展开。\r\n接第三季结尾，普京和基里连科得到了兹鲁宗洛夫的财产，打算要安定下来。普京把损坏的机械列克修好，而基里连科还像往常一样沉迷于鞋类杂志。然而复活的机械列克不知为何多了一些古怪的功能……\r\n\r\nMTV Mobile： 1日と15日に新エピソード更新\r\nMTV JAPAN：3/26起隔周土曜23:55播送。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2011-03-01",
+    "rating_rank": 653,
+    "rating_score": 7.6,
+    "rating_total": 2018,
+    "main_character_ids": [
+        2505,
+        10501,
+        13470
+    ],
+    "main_characters": [
+        {
+            "id": 2505,
+            "name": "プーチン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ba/ba/2505_crt_eKONl.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/ba/2505_crt_eKONl.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/ba/2505_crt_eKONl.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ba/ba/2505_crt_eKONl.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 10501,
+            "name": "キレネンコ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bd/6f/10501_crt_04bH3.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/6f/10501_crt_04bH3.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/6f/10501_crt_04bH3.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bd/6f/10501_crt_04bH3.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 13470,
+            "name": "メカネンコ１号",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f4/2a/13470_crt_i58A9.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/2a/13470_crt_i58A9.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/2a/13470_crt_i58A9.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f4/2a/13470_crt_i58A9.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

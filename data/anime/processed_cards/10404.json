@@ -1,0 +1,89 @@
+{
+    "id": 10404,
+    "name": "明日之丈",
+    "image_path": "data/images/anime/10404.jpg",
+    "points": 8.2,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "东京，时为昭和40年代。矢吹丈本来过着漫无目的的生活，却被丹下段平发现了他的拳击天分，然而却因为某些问题被送进了监狱。在那里，命运让他遇上了专业拳击手力石彻。丈一边从段平的来信上学习着拳击，一边在狱中和力石比赛，各擅胜场。出狱之后，两人也在各自的专业分级中成长着。后来，力石希望在世界拳王赛前与丈再对战一次。他们的热诚感动了体育馆主白木叶子，于是实现了这场对决。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 79,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1970-04-01",
+    "rating_rank": 177,
+    "rating_score": 8.2,
+    "rating_total": 718,
+    "main_character_ids": [
+        7596,
+        95257
+    ],
+    "main_characters": [
+        {
+            "id": 7596,
+            "name": "矢吹丈",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/55/ff/7596_crt_0HBKM.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/ff/7596_crt_0HBKM.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/ff/7596_crt_0HBKM.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/55/ff/7596_crt_0HBKM.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5401,
+                    "name": "あおい輝彦",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e6/3c/5401_prsn_ZKa4e.jpg?r=1723552183",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/3c/5401_prsn_ZKa4e.jpg?r=1723552183",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/3c/5401_prsn_ZKa4e.jpg?r=1723552183",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e6/3c/5401_prsn_ZKa4e.jpg?r=1723552183"
+                    },
+                    "short_summary": "日本影视演员、声优，生于东京。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 95257,
+            "name": "力石徹",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0b/4a/95257_crt_wAwaa.jpg?r=1656928456",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/4a/95257_crt_wAwaa.jpg?r=1656928456",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/4a/95257_crt_wAwaa.jpg?r=1656928456",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0b/4a/95257_crt_wAwaa.jpg?r=1656928456"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4269,
+                    "name": "仲村秀生",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/be/dc/4269_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/dc/4269_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/dc/4269_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/be/dc/4269_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

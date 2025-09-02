@@ -1,0 +1,214 @@
+{
+    "id": 234413,
+    "name": "偶像活动Friends",
+    "image_path": "data/images/anime/234413.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "アイドル活動“アイカツ！”にはげむアイドルたちの\r\n努力と友情の成長物語『アイカツフレンズ！』\r\n\r\nスターハーモニー学園の普通科に通う「友希あいね」は、\r\n友達を作るのが大得意な女の子。\r\n\r\n学園のトップアイドル「湊みお」と友達になって、\r\n一緒に“アイカツ！”のステージに出ることに！？\r\n\r\n待っていたのは「蝶乃舞花」や「日向エマ」など、\r\n個性豊かなアイドルたちとの出会いや\r\n芸能界のお仕事、学園生活と大忙しの毎日！\r\n\r\n２人組の『フレンズ』を組んで、目指すのは\r\nトップアイドル、キラキラ輝く『ダイヤモンドフレンズ』！\r\n「神城カレン」「明日香ミライ」の２人がまとうドレスの輝きは、\r\nまさにダイヤモンド級！\r\n\r\n集めた数だけドラマがあるっ！\r\n『アイカツ！カード』でドレスアップ！\r\n\r\nファンも友達、カードも友達！\r\n友達いっぱい、夢いっぱい！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 50,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2018-04-05",
+    "rating_rank": 1865,
+    "rating_score": 7.2,
+    "rating_total": 164,
+    "main_character_ids": [
+        62432,
+        62580,
+        62878,
+        62879,
+        65485,
+        66736
+    ],
+    "main_characters": [
+        {
+            "id": 62432,
+            "name": "友希あいね",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/32/42/62432_crt_9qqc2.jpg?r=1523018574",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/42/62432_crt_9qqc2.jpg?r=1523018574",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/42/62432_crt_9qqc2.jpg?r=1523018574",
+                "grid": "https://lain.bgm.tv/pic/crt/g/32/42/62432_crt_9qqc2.jpg?r=1523018574"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 32390,
+                    "name": "松永あかね",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c9/eb/32390_prsn_8v3Q3.jpg?r=1717043849",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/eb/32390_prsn_8v3Q3.jpg?r=1717043849",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/eb/32390_prsn_8v3Q3.jpg?r=1717043849",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c9/eb/32390_prsn_8v3Q3.jpg?r=1717043849"
+                    },
+                    "short_summary": "2017年開催の｢次世代声優☆ミラクルオーディション｣で、見事グランプリを獲得。\r\n翌年4月より放送中の｢アイカツフレンズ！｣にてWヒロインの友希あいね役で声優デビューを果たす。\r\n\r\nCITY\r\n三重県\r\n\r\nHOBBY\r\n読書、音楽・アニメ鑑賞、ゲーム、美味しいものを探す\r\n\r\nSPECIALITY\r\n紙芝居、イラスト、書道、ネイルをキレイに塗ること",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 62580,
+            "name": "湊みお",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c7/e7/62580_crt_55tc6.jpg?r=1523631169",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/e7/62580_crt_55tc6.jpg?r=1523631169",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/e7/62580_crt_55tc6.jpg?r=1523631169",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c7/e7/62580_crt_55tc6.jpg?r=1523631169"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7734,
+                    "name": "木戸衣吹",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/20/a9/7734_prsn_A1CgH.jpg?r=1616506490",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/20/a9/7734_prsn_A1CgH.jpg?r=1616506490",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/20/a9/7734_prsn_A1CgH.jpg?r=1616506490",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/20/a9/7734_prsn_A1CgH.jpg?r=1616506490"
+                    },
+                    "short_summary": "声優。Horipro所属。1997年11月14日青森県出身。\r\n2011年，参加过日本知名艺能事务所Horipro与电视台合办的年度大型选秀活动“2011年第36届 Horipro Talent Scout Caravan”。\r\n在日本全国总计1万2745个“声优歌手部门”参赛者之中顺利晋级到最后十强。\r\nHoripro看好她的潜力而签约为旗下艺人。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 62878,
+            "name": "蝶乃舞花",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b0/64/62878_crt_B4kUQ.jpg?r=1524814975",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/64/62878_crt_B4kUQ.jpg?r=1524814975",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/64/62878_crt_B4kUQ.jpg?r=1524814975",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b0/64/62878_crt_B4kUQ.jpg?r=1524814975"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 21367,
+                    "name": "美山加恋",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c5/6d/21367_prsn_V979h.jpg?r=1556364748",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/6d/21367_prsn_V979h.jpg?r=1556364748",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/6d/21367_prsn_V979h.jpg?r=1556364748",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c5/6d/21367_prsn_V979h.jpg?r=1556364748"
+                    },
+                    "short_summary": "演员",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 62879,
+            "name": "日向エマ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9f/a5/62879_crt_3c36C.jpg?r=1526184996",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/a5/62879_crt_3c36C.jpg?r=1526184996",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/a5/62879_crt_3c36C.jpg?r=1526184996",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9f/a5/62879_crt_3c36C.jpg?r=1526184996"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 32495,
+                    "name": "二ノ宮ゆい",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fb/6c/32495_prsn_Kt9kI.jpg?r=1748180850",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/6c/32495_prsn_Kt9kI.jpg?r=1748180850",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/6c/32495_prsn_Kt9kI.jpg?r=1748180850",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fb/6c/32495_prsn_Kt9kI.jpg?r=1748180850"
+                    },
+                    "short_summary": "アニメ作品やアニメソングから影響を受け、声優の職業を志す。2017年の次世代声優ミラクルオーディションに応募し、グランプリ賞を受賞した松永あかねに次ぐ特別賞を受賞したのち、テレビアニメ『アイカツフレンズ!』の日向エマ役で声優デビューを果たした。同作品から派生したユニット・BEST FRIENDS!の一員として、歌手活動も行う。\r\n\r\n2020年1月15日、ランティスからニノミヤユイ名義でアーティストデビューした。\r\n\r\n2024年2月27日、体調不良のため静養に専念することとなり、活動休止を発表。同年8月31日から活動を再開した。\r\n\r\n2024年9月30日、ホリプロインターナショナルを退所した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 65485,
+            "name": "白百合さくや",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4f/0e/65485_crt_ZBiBR.jpg?r=1534159518",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/0e/65485_crt_ZBiBR.jpg?r=1534159518",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/0e/65485_crt_ZBiBR.jpg?r=1534159518",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4f/0e/65485_crt_ZBiBR.jpg?r=1534159518"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 31457,
+                    "name": "陶山恵実里",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/68/12/31457_prsn_jEqSa.jpg?r=1534159591",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/12/31457_prsn_jEqSa.jpg?r=1534159591",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/12/31457_prsn_jEqSa.jpg?r=1534159591",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/68/12/31457_prsn_jEqSa.jpg?r=1534159591"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 66736,
+            "name": "白百合かぐや",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/92/8a/66736_crt_4UIp4.jpg?r=1539926453",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/8a/66736_crt_4UIp4.jpg?r=1539926453",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/8a/66736_crt_4UIp4.jpg?r=1539926453",
+                "grid": "https://lain.bgm.tv/pic/crt/g/92/8a/66736_crt_4UIp4.jpg?r=1539926453"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 15292,
+                    "name": "桑原由気",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/42/0c/15292_prsn_ouHHb.jpg?r=1687710275",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/0c/15292_prsn_ouHHb.jpg?r=1687710275",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/0c/15292_prsn_ouHHb.jpg?r=1687710275",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/42/0c/15292_prsn_ouHHb.jpg?r=1687710275"
+                    },
+                    "short_summary": "日本の女性声優。マウスプロモーション所属。\r\n旭プロダクションプロデュースによる声優ユニット「あいまいみーまいん」のメンバー。\r\n\r\nTVアニメ『フリージング ヴァイブレーション』が初レギュラー作品である。\r\n趣味・特技は茶道・お笑い。お笑いにおいては高校時代にお笑いライブにてコントをやった経験があり、芸人のサインを集める手帳を作ったり、芸人が店主を務めるラーメン屋に行くほどの趣味としている。\r\n『NARUTO -ナルト-』などの週刊少年ジャンプ作品好き。また、恋に落ちたキャラに『NARUTO -ナルト-』のうちはサスケをあげている。\r\n憧れの声優には、沢城みゆきを挙げている。\r\n自分を一言で表すと、『小さいおじさん』だと語っている。\r\n今までにいなかった、そしてこれからも現れないような声優を目指したいとしている。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

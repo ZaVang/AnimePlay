@@ -1,0 +1,68 @@
+{
+    "id": 36499,
+    "name": "阿波根うみこ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b2/80/36499_crt_0JGg4.jpg?r=1469387098",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/80/36499_crt_0JGg4.jpg?r=1469387098",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/80/36499_crt_0JGg4.jpg?r=1469387098",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b2/80/36499_crt_0JGg4.jpg?r=1469387098"
+    },
+    "summary": "　　役職：プログラマー\r\n　　沖縄出身で日焼けした肌の持ち主。ミリタリーマニアで、自分のデスクには多くのモデルガンが飾ってある。名字で呼ばれることを嫌っている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿波根海子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "阿波根 うみこ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あはごん うみこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ahagon Umiko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月20日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 20,
+    "stat": {
+        "comments": 11,
+        "collects": 44
+    },
+    "anime_ids": [
+        208908
+    ]
+}

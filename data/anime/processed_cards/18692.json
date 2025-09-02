@@ -1,0 +1,201 @@
+{
+    "id": 18692,
+    "name": "哆啦A梦",
+    "image_path": "data/images/anime/18692.jpg",
+    "points": 8.5,
+    "cost": 5,
+    "rarity": "HR",
+    "description": "『ドラえもん』は、藤子・F・不二雄の同名の漫画を原作としたテレビアニメ。2005年（平成17年）からテレビ朝日系列にて放送されている。テレビ朝日・シンエイ動画・ADKエモーションズ制作。\r\n\r\n2005年から放送を開始した本シリーズ（以下、本作）は、テレビと映画が25周年を迎えたことを機に、1979年から放送されていた前シリーズ（以下、第2作第1期）を大幅にリニューアルする形で制作されたものである。それに伴い、ハイビジョン化、キャスト（声優陣）の総入れ替え、キャラクターデザインや設定の変更などを行った上で、サブタイトル場面、次回予告、本編BGMなどの音楽や効果音が大幅にリニューアルされた。それと同時に、第2作第1期で既にアニメ化されたエピソードの再アニメ化も開始されたため、本作はリメイク作品としての色合いも強い。加えて、本放送時原作収録本が絶版になっていた作品や本作で初めてアニメ化された作品も放送されるようになった。稀に原作の連続していない作品2話を1話に統合して放送する作品や、逆に1つの話を前編後編に分けて放送する作品もある。 2017年には再度、リニューアルが行われ、画質やキャラクターデザイン、背景、タイトル画面などが変わった。\r\n\r\nまた、地上デジタルテレビジョン放送への対応のため、ハイビジョン制作（アナログ放送では2010年6月25日まで14:9の画像サイズの放送、7月2日より16:9画像サイズの放送）へ移行した。ただし、移行時点でデジタルハイビジョン放送をしていたのはテレビ朝日・ABCテレビ・メ〜テレのみで、それ以外の局はデジタル放送開始と同時に対応するようになった。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 0,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2005-04-15",
+    "rating_rank": 50,
+    "rating_score": 8.5,
+    "rating_total": 5182,
+    "main_character_ids": [
+        7251,
+        7259,
+        7260,
+        7312,
+        7316
+    ],
+    "main_characters": [
+        {
+            "id": 7251,
+            "name": "ドラえもん",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/72/d1/7251_crt_eKXkB.jpg?r=1450325708",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/d1/7251_crt_eKXkB.jpg?r=1450325708",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/d1/7251_crt_eKXkB.jpg?r=1450325708",
+                "grid": "https://lain.bgm.tv/pic/crt/g/72/d1/7251_crt_eKXkB.jpg?r=1450325708"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4834,
+                    "name": "水田わさび",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/40/cb/4834_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/cb/4834_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/cb/4834_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/40/cb/4834_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "水田山葵（1974年8月4日－），本名未公开，日本的女性声优。贤Production所属。三重县伊贺市（旧：青山町）人。血型O型。\r\n2005年4月15日起，朝日电视台系列动画《哆啦A梦》中、接替大山羡代担任哆啦A梦的声优。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7259,
+            "name": "野比のび太",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d0/4c/7259_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/4c/7259_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/4c/7259_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d0/4c/7259_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 8081,
+                    "name": "大原めぐみ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e5/7b/8081_prsn_O4ogo.jpg?r=1492314254",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/7b/8081_prsn_O4ogo.jpg?r=1492314254",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/7b/8081_prsn_O4ogo.jpg?r=1492314254",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e5/7b/8081_prsn_O4ogo.jpg?r=1492314254"
+                    },
+                    "short_summary": "大原惠，日本的一位女性声优，（1975年4月16日－），从2005年起担任〈哆啦A梦〉主角大雄 的最新一代声优。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7260,
+            "name": "源静香",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c7/05/7260_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/05/7260_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/05/7260_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c7/05/7260_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4097,
+                    "name": "かかずゆみ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ba/ed/4097_prsn_XditB.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/ed/4097_prsn_XditB.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/ed/4097_prsn_XditB.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ba/ed/4097_prsn_XditB.jpg"
+                    },
+                    "short_summary": "本名与日文读音相同。2009年8月以前原属元气Project。经历过自由身一段时间之后，2011年10月1日起所属Atomic Monkey。2022年4月1日开始所属青二Production。\r\n在成为配音员前有2年的空白期，曾在旅行节目中担任记者。\r\n私生活方面，2004年6月1日结婚，丈夫为圈外人士，是学生时期的同班同学。2005年8月下旬生下长男，2008年次男出生。\r\n2013年6月在推特上透露，2009年10月8日，丈夫42歳时罹患脑出血亡故。2019年曾在推特上感慨次男对父亲没有印象。\r\n\r\n1996年4月，嘉数以《机动新世纪高达X》（声演角色名字为莎拉·塔伊莉鲁）成为她的声优出道作。出道以来，嘉数大多帮天真烂漫、纯情、沉默寡言等各种性格的女性角色配音，有时候也会声演少年。\r\n2005年3月，朝日电视台新版《哆啦A梦》声优阵容焕然一新之下，女主角源静香的配音从野村道子改成嘉数接任。\r\n同年8月，嘉数生下第一个男孩坐月子期间，她负责导览工作的电视节目《卫星动画剧场》曾请新名彩乃（当时艺名松本彩乃）代班。至于动画《哆啦A梦》有静香登场的集数大多只出场一小段、或者是直接让静香无台词登场。\r\n与嘉数同时期出道的川上伦子和松来未祐相继去世之后，嘉数继承部分的角色。\r\n\r\n嘉数还有和与大原沙耶香、折笠富美子、菊池志穗、丰口惠、浅野麻由美组成和服社；不论公私活动，出外都穿着和服。与美乡秋是交往10年之久的好友。与佐藤裕美也有交友关系。此外在2006年12月9日，嘉数曾和折笠、丰口3人共同组成演剧团体“R*L（日文读音：ラフラフ）”（R＝Rough，L＝Laugh）。\r\n\r\n出道时期，嘉数曾和ARTSVISION所属的同行手冢千春一起上TBS广播的公开录音电台节目《PakiPaki Paradise》组成双人搞笑团体“暴れ船”。并于TBS广播的另一出当红电台节目《赤坂搞笑D·O·J·O》举办的新人战与手冢2人一起通过预赛后，在节目中表演了一场幽默短剧。\r\n\r\n兴趣和特长有制作点心、穿和服。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7312,
+            "name": "剛田武",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c9/3e/7312_crt_F745q.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/3e/7312_crt_F745q.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/3e/7312_crt_F745q.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c9/3e/7312_crt_F745q.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6787,
+                    "name": "木村昴",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6a/25/6787_prsn_5I8fG.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/25/6787_prsn_5I8fG.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/25/6787_prsn_5I8fG.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6a/25/6787_prsn_5I8fG.jpg"
+                    },
+                    "short_summary": "木村 昴（きむら すばる、1990年6月29日 - ）は、日本の声優、俳優、タレント、ナレーター、モデル、歌手。アトミックモンキー所属。\r\nドイツ・ザクセン州ライプツィヒ出身。本名：昴・サミュエル・バーチュ（Subaru Samuel Bartsch）、日本名：木村 昴。日本語、ドイツ語、英語のトリリンガル。\r\n\r\n7歳までをドイツで過ごし、帰国後に劇団日本児童へ所属    。ミュージカル・『アニー』で俳優としてのキャリアをスタートさせた。都立晴海総合高校、亜細亜大学卒業。\r\n小学生のころに、日本テレビのものまね番組『まねキン』に羽賀研二に似ている小学生として出演、全出演者を驚愕させた。そのことがきっかけで日本テレビの『ものまねバトル』でリトル羽賀という名前で何度か出演している。\r\n2005年4月15日より、テレビ朝日系アニメ『ドラえもん』にて、たてかべ和也に代わってジャイアンの声を担当。引き継ぎ当初は現役中学生であった。たてかべは「ジャイアン役を継いでくれる人と酒を飲みたい」と考えていたため、後任の木村が中学生であることを知ってがっかりし、あと5年は長生きして一緒に飲みたいと語った。2010年6月29日に木村が20歳になった直後、一緒に飲みに行くことが実現した    。また、木村昴はたてかべの訃報を聞き、追悼メッセージをツイッターで流した。\r\n2009年に自ら旗揚げした劇団・天才劇団バカバッカの座長を務める。\r\n2010年4月には、ミュージカル『HONK!』みにくいアヒルの子役で2009年度岡山市民劇場賞新鋭賞を受賞。\r\n\r\n身長181cm、体重72kg。ドイツと日本のハーフ。父はドイツ人で、元オペラ歌手。母は日本人で、元声楽家である。幼少期をドイツで過ごしていたため、ドイツ語が堪能。妹・木村飛鳥も以前、兄と同じく児童劇団に所属していた。過去に『モグモグGOMBO』で一家揃って出演したこともある。\r\n特技はヴァイオリン、ギター、ドラム、空手、剣道。\r\n小学生の頃に母に買ってもらったラップアーティストEMINEMのCDを聴き、その後大きな衝撃を受け、以来ヒップホップにのめり込む。高校に在学中に、親友たちとヒップホップユニットを結成し、ダンスやラップバトルに出場したという。ヒューマンビートボックスが得意である。ラップを主体としたコンテンツ、ヒプノシスマイクでもMCを務める。\r\n無類のコーラ好きであり、世界各国のコーラを集めることが趣味。\r\n端正なルックスを活かし、ストリート誌でのモデル活動も行っている。モデル名はSAMMY：サミー。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7316,
+            "name": "骨川スネ夫",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5c/df/7316_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/df/7316_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/df/7316_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5c/df/7316_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3868,
+                    "name": "関智一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/40/94/3868_prsn_24eU6.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/94/3868_prsn_24eU6.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/94/3868_prsn_24eU6.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/40/94/3868_prsn_24eU6.jpg"
+                    },
+                    "short_summary": "日本男性配音员。东京俳优生活协同组合→Atomic Monkey所属。东京都江东区深川出身。以热血激昂的声线闻名，昵称为“チイチ”（ChiIChi, 智一的音读）。\r\n\r\n在机动武斗传G高达的主角选角时，自己参加试音的路上因积雪滑了一跤，心想“这下肯定落选了”结果反而在两天后宣布中选。\r\n非常爱开黄腔，也因此冒犯许多不好此道的女声优，曾因尺度太大被电台高层警告。",
+                    "locked": false
+                },
+                {
+                    "id": 7713,
+                    "name": "劉傑",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c8/e7/7713_prsn_Bb8xl.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/e7/7713_prsn_Bb8xl.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/e7/7713_prsn_Bb8xl.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c8/e7/7713_prsn_Bb8xl.jpg"
+                    },
+                    "short_summary": "或许你不知道他的名字，但你一定听过他的声音，他是《棒球英豪》里青涩散漫的笨哥哥“上杉达也”，《名侦探柯南》里自信专一的推理狂“工藤新一”，《犬夜叉》里的固执可爱的半妖“犬夜叉”《哆啦A梦》里的骄傲爱炫耀的牙擦仔“骨川小夫”。他就是中国首席声优刘杰，（1960年8月31日－）为台湾男性资深配音演员、广播节目主持人，本名刘鹏杰。出生于台北市。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

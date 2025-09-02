@@ -1,0 +1,48 @@
+{
+    "id": 67041,
+    "name": "火堂害",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/68/ed/67041_crt_jdeCg.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/ed/67041_crt_jdeCg.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/ed/67041_crt_jdeCg.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/68/ed/67041_crt_jdeCg.jpg"
+    },
+    "summary": "暴力团火堂组第2代组长之子，第3代少爷，表面看起来很穷凶极恶的样子，但实际上是个极其遵守“仁义之道”的黑社会少主。\r\n为人非常暴力，经常不上学，没有人知道他的真实年纪。N次留级，年龄不详。与宪一、雪绘同班。一心想保护自己暗恋的雪绘的人身安全。\r\n因自我本位性的性格与宪一成为死党。一年到头一直张着那带着獠牙的大嘴,背上有般若面的刺青。身高192cm，体重129kg。（初中生的时候）。\r\n经典台词：\r\n少爷，少爷！！叫你不要叫我少爷，我的名字是西多！！是，少爷！！！\r\n我不是说不要管我叫少爷的吗？",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "火堂害"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "西多"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひどう がい"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 0
+    },
+    "anime_ids": [
+        5927
+    ]
+}

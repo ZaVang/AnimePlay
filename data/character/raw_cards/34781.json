@@ -1,0 +1,59 @@
+{
+    "id": 34781,
+    "name": "みよ吉",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e6/b0/34781_crt_p5BLm.jpg?r=1446971128",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/b0/34781_crt_p5BLm.jpg?r=1446971128",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/b0/34781_crt_p5BLm.jpg?r=1446971128",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e6/b0/34781_crt_p5BLm.jpg?r=1446971128"
+    },
+    "summary": "小夏の母で元芸者。本名はユリエ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "美代吉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ユリエ"
+                },
+                {
+                    "k": "日文名",
+                    "v": "みよ吉"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みよきち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "miyokichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 20,
+        "collects": 41
+    },
+    "anime_ids": [
+        119394
+    ]
+}

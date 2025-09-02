@@ -1,0 +1,47 @@
+{
+    "id": 152068,
+    "name": "若宮",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/16/e4/152068_crt_vM97s.jpg?r=1708439423",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/16/e4/152068_crt_vM97s.jpg?r=1708439423",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/16/e4/152068_crt_vM97s.jpg?r=1708439423",
+        "grid": "https://lain.bgm.tv/pic/crt/g/16/e4/152068_crt_vM97s.jpg?r=1708439423"
+    },
+    "summary": "“真の金烏”とされる山内の皇太子。類まれなる美貌を持つが、その性格は…。長束とは腹違いの兄弟。名は「奈月彦」。お忍びのときは「墨丸」と名乗る。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "皇太子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "奈月彦"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "わかみや"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 4
+    },
+    "anime_ids": [
+        461338
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "id": 5170,
+    "name": "パタモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e7/e8/5170_crt_sIb5F.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/e8/5170_crt_sIb5F.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/e8/5170_crt_sIb5F.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e7/e8/5170_crt_sIb5F.jpg"
+    },
+    "summary": "特征是大耳朵的哺乳类型数码宝贝。可以运用这对大翅膀飞上天空，但时速只有1km的程度，步行还远比飞行快。不过拼命飞行的模样十分可爱，非常受欢迎（本人似乎不愿意接受这点）。个性纯朴，会乖乖遵守告诉它的事。另外，巴达兽即使身上没有戴着神圣环，也能够发挥隐藏的神圣力量，似乎是因为继承了古代种数码宝贝的遗传因子。必杀技是吸入空气后一口气吐出空气弹的『空气炮』，以及用两片大耳朵拍打敌人的『羽翼巴掌』。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "巴达兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Patamon"
+                },
+                {
+                    "k": "韩文名",
+                    "v": "파닥몬"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference/detail.php?directory_name=patamon"
+        },
+        {
+            "key": "等级",
+            "value": "成长期"
+        },
+        {
+            "key": "类型",
+            "value": "哺乳类型"
+        },
+        {
+            "key": "属性",
+            "value": "资料"
+        },
+        {
+            "key": "必杀技",
+            "value": [
+                {
+                    "v": "空气炮"
+                },
+                {
+                    "v": "羽翼巴掌"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 16
+    },
+    "anime_ids": [
+        3128
+    ]
+}

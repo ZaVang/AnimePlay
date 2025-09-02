@@ -1,0 +1,52 @@
+{
+    "id": 72112,
+    "name": "煙",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a3/f6/72112_crt_CPg16.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a3/f6/72112_crt_CPg16.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a3/f6/72112_crt_CPg16.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a3/f6/72112_crt_CPg16.jpg"
+    },
+    "summary": "煙ファミリーのボス。身長183cm。体重86kg。足のサイズ30cm。\r\n歯茎を剥き出しにしたようなデザインで、ケムリを吐くための開閉ギミックのあるマスクを着用する。この口元のデザインは煙ファミリーのシンボルでもあり、\r\nファミリーに属している者のマスクは同じ口元をしていることが多い。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "烟"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "えん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "183cm"
+        },
+        {
+            "key": "体重",
+            "value": "86kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 11
+    },
+    "anime_ids": [
+        266301
+    ]
+}

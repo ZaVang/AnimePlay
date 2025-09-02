@@ -1,0 +1,202 @@
+{
+    "id": 12579,
+    "name": "凡尔赛玫瑰",
+    "image_path": "data/images/anime/12579.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "18世紀のフランスで、男として育てられた14歳の貴族オスカルは新たに皇太子妃となるマリー・アントワネットを護衛する近衛隊長に任じられた。心優しい彼女を守って数々の修羅場を戦い抜くオスカルだが、贅沢三昧の王侯貴族と貧しい庶民の溝は日々深まっていき、やがて血で血を洗うフランス革命が勃発する…。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 40,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改",
+        "历史"
+    ],
+    "date": "1979-10-10",
+    "rating_rank": 490,
+    "rating_score": 7.8,
+    "rating_total": 439,
+    "main_character_ids": [
+        22954,
+        55418,
+        55419,
+        55420
+    ],
+    "main_characters": [
+        {
+            "id": 22954,
+            "name": "オスカル・フランソワ・ド・ジャルジェ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/23/e4/22954_crt_p7b6m.jpg?r=1738603044",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/23/e4/22954_crt_p7b6m.jpg?r=1738603044",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/23/e4/22954_crt_p7b6m.jpg?r=1738603044",
+                "grid": "https://lain.bgm.tv/pic/crt/g/23/e4/22954_crt_p7b6m.jpg?r=1738603044"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3932,
+                    "name": "鈴木れい子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c5/6a/3932_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/6a/3932_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/6a/3932_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c5/6a/3932_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の女性声優。アーツビジョン所属。東京都出身。\r\n\r\n身長156cm。血液型はO型。星座はしし座。",
+                    "locked": false
+                },
+                {
+                    "id": 13594,
+                    "name": "田島令子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7c/30/13594_prsn_7fJYy.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/30/13594_prsn_7fJYy.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/30/13594_prsn_7fJYy.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7c/30/13594_prsn_7fJYy.jpg"
+                    },
+                    "short_summary": "日本大学藝術学部演劇学科卒業。大学在学中に劇団雲の研究生として、俳優活動をスタート。劇団欅、劇団昴を経て、現事務所に所属。\r\n\r\n1971年の松竹映画『喜劇・頑張らなくっちゃ!』が映画デビュー作。以降も舞台、映画、テレビドラマなどで活躍している。2時間ドラマなどでのクセのある悪女役、学園ドラマでのインテリで嫌味な保護者役が持ち味である。\r\n\r\n1977年から放送のアメリカ合衆国製作のSFドラマ『地上最強の美女バイオニック・ジェミー』の主役を吹き替え以来、声優としても活動し、アニメ『ベルサイユのばら』のオスカル・フランソワ・ド・ジャルジェや松本零士作品のエメラルダスなど、強い女性のキャラクターが代表作である。なお、2009年のNHK金曜ドラマ『派遣のオスカル〜少女漫画に愛をこめて』においても、劇中でオスカルの声を担当している。\r\n\r\n『タケちゃんの思わず笑ってしまいました』、『踊る!さんま御殿!!』など、バラエティ番組への出演も多い。『世界一受けたい授業』では、天海祐希とのコンビで『魔王』の劇を演じた（かつて『ベルサイユのばら』において田島がアニメ版でオスカル、舞台版では天海がアンドレを演じていた）。\r\n\r\nちなみに、『バイオニック・ジェミー』が当時好評だったこともあって、『バイオニック・ジェミー』の日本版エンディング・テーマとして使用された『ジェミーの愛』という歌を吹きこんでおり、シングルレコードも発売された。\r\n\r\n1986年の映画『人間の約束』でただ一度のヌードシーンを演じている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 55418,
+            "name": "アンドレ・グランディエ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/73/cd/55418_crt_W4ffc.jpg?r=1738602964",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/cd/55418_crt_W4ffc.jpg?r=1738602964",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/cd/55418_crt_W4ffc.jpg?r=1738602964",
+                "grid": "https://lain.bgm.tv/pic/crt/g/73/cd/55418_crt_W4ffc.jpg?r=1738602964"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 71360,
+                    "name": "志垣太郎",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/92/b5/71360_prsn_0L70L.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/b5/71360_prsn_0L70L.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/b5/71360_prsn_0L70L.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/92/b5/71360_prsn_0L70L.jpg"
+                    },
+                    "short_summary": "志垣 太郎（しがき たろう、1951年〈昭和26年〉9月22日 - 2022年〈令和4年〉3月5日）は、日本の俳優、声優、タレント、司会者、デザイナー。妻は女優の白坂紀子。長男は俳優、タレントの匠。母方の祖父は生活綴方運動指導者としても活躍した編集者・評論家の志垣寛。母方の祖母は日本画家の志垣美多。母方の伯父は官僚のち実業家の志垣民郎。「志垣」は母方の姓からであり、「太郎」は名をシンプルにしようとする事から。",
+                    "locked": false
+                },
+                {
+                    "id": 71473,
+                    "name": "のざききいこ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/c1/71473_prsn_RPCC1.jpg?r=1738604660",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/c1/71473_prsn_RPCC1.jpg?r=1738604660",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/c1/71473_prsn_RPCC1.jpg?r=1738604660",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/c1/71473_prsn_RPCC1.jpg?r=1738604660"
+                    },
+                    "short_summary": "日本の女性声優、ナレーター、ディレクター、プロデューサー。株式会社サムスィング代表取締役。放送表現教育センター代表。声優学校Hyper Voice講師。\r\n\r\n東京都出身。一時期、野崎 貴美子（のざき きみこ）名義で活動していた。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 55419,
+            "name": "マリー・アントワネット",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/49/4f/55419_crt_M7hc4.jpg?r=1738603206",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/4f/55419_crt_M7hc4.jpg?r=1738603206",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/4f/55419_crt_M7hc4.jpg?r=1738603206",
+                "grid": "https://lain.bgm.tv/pic/crt/g/49/4f/55419_crt_M7hc4.jpg?r=1738603206"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 20931,
+                    "name": "上田みゆき",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7d/26/20931_prsn_aRbyH.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/26/20931_prsn_aRbyH.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/26/20931_prsn_aRbyH.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7d/26/20931_prsn_aRbyH.jpg"
+                    },
+                    "short_summary": "1954年、ニッポン放送のラジオ番組『ポッポちゃん』で子役としてデビューし、一世を風靡した。役名“ポッポちゃん”と呼ばれアイドルとして親しまれていた。その可憐な愛くるしさは、フジテレビの人気番組『少年探偵団』でも人気を博していた。\r\n\r\n劇団NLT時代は、その看板女優として活躍、フランス・ブールバール劇、邦題『マカロニ金融』ではかつての名優、森雅之と共演。\r\n\r\n1981年、ささきいさおと子連れで再婚。その時の苦労が、夫との共著『子連れ再婚の片道切符』（1986年出版）に書かれている。\r\n\r\nなお、同じく声優の森功至とは幼なじみ。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 55420,
+            "name": "ハンス・アクセル・フォン・フェルゼン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b5/05/55420_crt_mEZPl.jpg?r=1738603306",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/05/55420_crt_mEZPl.jpg?r=1738603306",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/05/55420_crt_mEZPl.jpg?r=1738603306",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b5/05/55420_crt_mEZPl.jpg?r=1738603306"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4261,
+                    "name": "堀勝之祐",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/13/38/4261_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/38/4261_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/38/4261_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/13/38/4261_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の俳優、声優、ナレーター。東京府（現東京都）出身。81プロデュース所属。一時期は堀 勝之助名義で活動していた。",
+                    "locked": false
+                },
+                {
+                    "id": 4848,
+                    "name": "野沢那智",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3e/9f/4848_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/9f/4848_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/9f/4848_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3e/9f/4848_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の舞台演出家、俳優、声優、ラジオパーソナリティ、実業家、馬主。\r\n\r\n東京府東京市日本橋区（現：東京都中央区日本橋浜町）出身。オフィスPAC元代表。父は作家の陸直次郎、母は小唄の師匠の堀小代清、妻は女優の成瀬麗子、長男は俳優の野沢聡、姪はタレントの野沢直子、甥はクリエイティブ・ディレクターの野澤直龍、大姪（直子の娘）は格闘家の真珠・野沢オークレアー。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

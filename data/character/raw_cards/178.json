@@ -1,0 +1,60 @@
+{
+    "id": 178,
+    "name": "宇白順",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8f/85/178_17967795eeef66c225f7883bdcb_8yu8Q.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/85/178_17967795eeef66c225f7883bdcb_8yu8Q.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/85/178_17967795eeef66c225f7883bdcb_8yu8Q.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8f/85/178_17967795eeef66c225f7883bdcb_8yu8Q.jpg"
+    },
+    "summary": "宇白順\r\n(うしろ じゅん)\r\n通称：ウシロ\r\n(声：皆川純子)\r\n中学１年",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宇白顺"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "うしろ じゅん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ushiro Jun"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ウシロ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "150"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 9,
+        "collects": 8
+    },
+    "anime_ids": [
+        467
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": 72138,
+    "name": "浅草みどり",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/81/4d/72138_crt_mi200.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/4d/72138_crt_mi200.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/4d/72138_crt_mi200.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/81/4d/72138_crt_mi200.jpg"
+    },
+    "summary": "本作品の主人公の一人。芝浜高校1年生で映像研のメンバー。黒髪に迷彩柄のハットを被り、軍用リュックを背負って行動する。アニメ制作では「設定が命」。自分の考えた「最強の世界」で大冒険するのが夢。好奇心が強く探検好き、面白いものを見て刺激を受けると猛烈な勢いでイメージボードに空想の世界を描き出す。芝浜高校に入学したらアニメ研に入ってアニメを作りたかったが一人では中々行動できなかった。水崎と出会い、金森に乗せられて映像研を創設する。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "浅草绿"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Asakusa Midori"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月3日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 3,
+    "stat": {
+        "comments": 24,
+        "collects": 76
+    },
+    "anime_ids": [
+        282433
+    ]
+}

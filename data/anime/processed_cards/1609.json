@@ -1,0 +1,218 @@
+{
+    "id": 1609,
+    "name": "游戏王5D's",
+    "image_path": "data/images/anime/1609.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "以武藤游戏所在时代数十年后的童实野市为舞台。那时的童实野市被称为“新童实野市”，是一个根据身份高低分为上层地带和下层地带的阶级社会，流行着使用被称为“D轮（D Wheel）”的摩托车型决斗盘决斗的“骑乘决斗（Riding Duel）”。\r\n不动游星在新童实野市的下层地带“卫星（Satellite）”中与同伴们一起生活着。因被对手——骑乘决斗的KING“杰克·阿特拉斯”抢走了自己最重要的卡“星尘龙（Stardust Dragon）”，为了把它夺回，游星逃出了卫星。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 154,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "奇幻",
+        "原创",
+        "少年向"
+    ],
+    "date": "2008-04-02",
+    "rating_rank": 296,
+    "rating_score": 7.9,
+    "rating_total": 2021,
+    "main_character_ids": [
+        790,
+        791,
+        792,
+        793,
+        794,
+        795
+    ],
+    "main_characters": [
+        {
+            "id": 790,
+            "name": "不動遊星",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/29/5f/790_crt_kfFA7.jpg?r=1749911975",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/5f/790_crt_kfFA7.jpg?r=1749911975",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/5f/790_crt_kfFA7.jpg?r=1749911975",
+                "grid": "https://lain.bgm.tv/pic/crt/g/29/5f/790_crt_kfFA7.jpg?r=1749911975"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7688,
+                    "name": "宮下雄也",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bb/76/7688_prsn_j23n2.jpg?r=1749901886",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/76/7688_prsn_j23n2.jpg?r=1749901886",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/76/7688_prsn_j23n2.jpg?r=1749901886",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bb/76/7688_prsn_j23n2.jpg?r=1749901886"
+                    },
+                    "short_summary": "宮下 雄也（みやした ゆうや、1985年9月3日 - ）は、日本の俳優、声優、タレントである。よしもとクリエイティブ・エージェンシー所属のRUN&GUNのメンバーである。血液型はA型。身長174cm、体重60kg。大阪府出身。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 791,
+            "name": "ジャック・アトラス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a6/14/791_crt_BSJWy.jpg?r=1749912007",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/14/791_crt_BSJWy.jpg?r=1749912007",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/14/791_crt_BSJWy.jpg?r=1749912007",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a6/14/791_crt_BSJWy.jpg?r=1749912007"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4636,
+                    "name": "星野貴紀",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/82/07/4636_prsn_gdJgs.jpg?r=1749902021",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/07/4636_prsn_gdJgs.jpg?r=1749902021",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/07/4636_prsn_gdJgs.jpg?r=1749902021",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/82/07/4636_prsn_gdJgs.jpg?r=1749902021"
+                    },
+                    "short_summary": "所属Office PAC事务所。出生于栃木县。\r\n\r\n代表作是‘闪灵二人组’的冬木士度、‘枪与剑’的梵安、‘光速蒙面侠21’的十文字一辉以及‘游戏王5D's’的杰克‧亚特拉斯。\r\n\r\n从‘学校へ行こう!’的企画“Voice系声优部”出身。当时的昵称为“ノッポ”（意指很高的家伙），这个昵称的初次亮相是来自于当时参加的作品（‘闪灵二人组’）的ED字幕。有着和昵称一样高的190cm身高（※ 也有194cm的说法），曾经从电车下来时不小心撞到了头，据说从小时候开始只要不注意就会发生这种事。实际上星野也曾在2005年秋天时在人行道跌倒过，下巴因此缝了五针。\r\n\r\n在‘枪与剑’播放时，曾在活动中亲自cosplay自己配音的角色梵安。那个又高又瘦的身材简直像极了梵安本人，因此在影迷之间得到了好评。另外从同节目所衍生的网络广播‘星野贵纪のおら! アミーゴス’，自报自己是家里种草莓的草莓王子，因此让人见识了他天然纯真的一面。\r\n\r\n由于帮‘光速蒙面侠21’中担任恶魔蝙蝠队的主要防守员十文字一辉配音的关系。因此为了要和角色有所连结还染了金发来展现他的服务精神。\r\n\r\n· 在小学高年级时就已经长到现在的身高了。\r\n· 在声优出身的学校“OfficePAC”所发表的戏剧作品中担任照明的工作。\r\n· 家里实际上是种草莓的。但是他却有对草莓花粉过敏的花粉症。\r\n· 笑点很低，也屡次发生到了相同的地方却发出“耶？是这里吗？”的疑问而引起哄堂大笑的事情。\r\n· 高中时属於戏剧部。\r\n· 自己不但主办“剧団四畳半”的活动还亲自写剧本，展现了他多方面的才能。\r\n· 在游戏王官方卡片游戏（游戏王OCG）的实力是‘游戏王5D's’出演者群中之顶点。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 792,
+            "name": "十六夜アキ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f2/31/792_crt_vWprA.jpg?r=1749912046",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/31/792_crt_vWprA.jpg?r=1749912046",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/31/792_crt_vWprA.jpg?r=1749912046",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f2/31/792_crt_vWprA.jpg?r=1749912046"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4981,
+                    "name": "木下あゆ美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7f/9a/4981_prsn_ESFSO.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/9a/4981_prsn_ESFSO.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/9a/4981_prsn_ESFSO.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7f/9a/4981_prsn_ESFSO.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 793,
+            "name": "龍亞",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ad/e7/793_crt_bbBYB.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/e7/793_crt_bbBYB.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/e7/793_crt_bbBYB.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ad/e7/793_crt_bbBYB.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5570,
+                    "name": "洞内愛",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/4f/5570_prsn_TD1uc.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/4f/5570_prsn_TD1uc.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/4f/5570_prsn_TD1uc.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/4f/5570_prsn_TD1uc.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 794,
+            "name": "龍可",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ce/c0/794_crt_1i1kl.jpg?r=1749912116",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/c0/794_crt_1i1kl.jpg?r=1749912116",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/c0/794_crt_1i1kl.jpg?r=1749912116",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ce/c0/794_crt_1i1kl.jpg?r=1749912116"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4845,
+                    "name": "寺崎裕香",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2d/43/4845_prsn_dD99I.jpg?r=1429155853",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/43/4845_prsn_dD99I.jpg?r=1429155853",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/43/4845_prsn_dD99I.jpg?r=1429155853",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2d/43/4845_prsn_dD99I.jpg?r=1429155853"
+                    },
+                    "short_summary": "寺崎裕香原本的志愿是当歌手，读书的时候在当地事务所工作。之后，NHK福冈的广播剧里演了舞台剧，很有趣。并以此为目标，来到东京上学。当时以影像的工作为中心进行活动。当时事务所的社长说：“你的声音很有趣，声优有试过吗？”以后便投入到声优行业当中。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 795,
+            "name": "クロウ・ホーガン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/db/f9/795_crt_wWFFn.jpg?r=1749912138",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/f9/795_crt_wWFFn.jpg?r=1749912138",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/f9/795_crt_wWFFn.jpg?r=1749912138",
+                "grid": "https://lain.bgm.tv/pic/crt/g/db/f9/795_crt_wWFFn.jpg?r=1749912138"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4779,
+                    "name": "浅沼晋太郎",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/01/b3/4779_prsn_R85b5.jpg?r=1740105927",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/b3/4779_prsn_R85b5.jpg?r=1740105927",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/b3/4779_prsn_R85b5.jpg?r=1740105927",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/01/b3/4779_prsn_R85b5.jpg?r=1740105927"
+                    },
+                    "short_summary": "浅沼 晋太郎（あさぬま しんたろう、1976年1月5日 - ）は、日本の脚本家、演出家、俳優、 声優、ナレーター、コピーライター、デザイナー。\r\n岩手県盛岡市出身。仙台育英学園高等学校特別進学コース卒業、多摩美術大学造形表現学部 映像演劇学科 卒業。血液型はO型。左利き。身長175cm。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

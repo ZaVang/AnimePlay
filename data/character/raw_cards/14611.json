@@ -1,0 +1,56 @@
+{
+    "id": 14611,
+    "name": "周梅麗",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e1/4a/14611_crt_GLLx1.jpg?r=1429193687",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/4a/14611_crt_GLLx1.jpg?r=1429193687",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/4a/14611_crt_GLLx1.jpg?r=1429193687",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e1/4a/14611_crt_GLLx1.jpg?r=1429193687"
+    },
+    "summary": "周瑜的女儿，在阳泉酒家里因为跟刘昴星年龄相近所以经常在一起，虽然不是厨师但对于中华的饮食历史研究颇深，可说是活的饮食字典，在许多地方都不断的支持并帮助阿昴，经常在关键时刻给予阿昴灵感，在阿昴踏上修行旅途时也跟着他一起旅行。渐渐的喜欢上阿昴。容貌与过世的母亲极为相似。与阿昴的关系为朋友以上恋人未满。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "周梅丽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "梅丽"
+                },
+                {
+                    "v": "赵梅丽"
+                },
+                {
+                    "v": "赵美莉"
+                },
+                {
+                    "v": "嘟嘟"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "チョウ・メイリィ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 13,
+        "collects": 17
+    },
+    "anime_ids": [
+        1934
+    ]
+}

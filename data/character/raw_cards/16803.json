@@ -1,0 +1,53 @@
+{
+    "id": 16803,
+    "name": "森田忍",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f9/ac/16803_crt_nPD4r.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/ac/16803_crt_nPD4r.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/ac/16803_crt_nPD4r.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f9/ac/16803_crt_nPD4r.jpg"
+    },
+    "summary": "彫刻科（8年在籍後卒業）→日本画科（3年として編入）。\r\n竹本和真山的學長。雕刻科學生，擁有極高的才華。和竹本、真山住在同一棟公寓。\r\n非常喜愛錢。性格常令人捉摸不定。\r\n他和竹本都對小育有好感，他自私的忽遠忽近的對待小育，使旁人看了不諒解他。但這也可見的他是勇敢追夢的人。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "森田忍"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "もりた しのぶ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Morita Shinobu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "年龄",
+            "value": "24歳（初登場時）"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 16,
+        "collects": 65
+    },
+    "anime_ids": [
+        848,
+        847
+    ]
+}

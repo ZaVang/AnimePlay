@@ -1,0 +1,76 @@
+{
+    "id": 36303,
+    "name": "北沢志保",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/89/ff/36303_crt_rK2uX.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/89/ff/36303_crt_rK2uX.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/89/ff/36303_crt_rK2uX.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/89/ff/36303_crt_rK2uX.jpg"
+    },
+    "summary": "偶像大师百万LIVE登场的偶像。Visual属性。 \r\n\r\n有着许多冷酷无情的发言的14岁少女。虽然有着与年龄不符的坚强，成熟的一面，但又有寻找自己感兴趣的连环画，喜欢动物玩偶的女孩子的一面。 \r\n\r\n以表演之道为志向的她，对于演技的学习以及角色的塑造能看到非同寻常的热情。 \r\n\r\n但另外在活动身体方面并不在行，像跳舞之类的事情明明脑袋里想这么做但身体却纹丝不动，笨得急死人的感觉。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "北泽志保"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "きたざわ しほ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kitazawa Shiho"
+                },
+                {
+                    "k": "昵称",
+                    "v": "條紋人、斑馬線"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月18日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "161cm"
+        },
+        {
+            "key": "体重",
+            "value": "46kg"
+        },
+        {
+            "key": "BWH",
+            "value": "83/56/84"
+        },
+        {
+            "key": "年龄",
+            "value": "14岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 18,
+    "stat": {
+        "comments": 20,
+        "collects": 43
+    },
+    "anime_ids": [
+        309807
+    ]
+}

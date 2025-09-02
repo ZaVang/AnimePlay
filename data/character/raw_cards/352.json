@@ -1,0 +1,82 @@
+{
+    "id": 352,
+    "name": "刹那・F・セイエイ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ef/52/352_crt_J92kE.jpg?r=1504037995",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ef/52/352_crt_J92kE.jpg?r=1504037995",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ef/52/352_crt_J92kE.jpg?r=1504037995",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ef/52/352_crt_J92kE.jpg?r=1504037995"
+    },
+    "summary": "第一季\r\n出身于中东小国库尔吉斯共和国，被教育为少年兵的少年。幼时曾目击到为试验性武力介入而驱动的0高达，被其救下性命。\r\n在被组织发掘后，刹那成为了能天使高达的正式高达使者。进行武力介入时的年龄为16岁。\r\n他想要改变持续着战斗的扭曲世界，但同时自己也只能置身于战斗中。\r\n\r\n第二季\r\n期盼着一个没有战争的世界，对地球联邦的独立部队A-Laws之做法抱有怀疑，4年间一直独自进行调查。\r\n近战型MS“00高达（GN-0000 00 Gundam）”的驾驶员。\r\n“俺がガンダムだ！”",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "刹那·F·清英"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ソラン・イブラヒム"
+                },
+                {
+                    "v": "刹那·F·塞尔"
+                },
+                {
+                    "v": "刹那·F·塞耶"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "せつな・エフ・セイエイ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Setsuna F Seiei"
+                },
+                {
+                    "k": "本名",
+                    "v": "索兰·易卜拉欣"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2291-04-07"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "162cm→175cm"
+        },
+        {
+            "key": "体重",
+            "value": "49kg→58kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 7,
+    "stat": {
+        "comments": 34,
+        "collects": 116
+    },
+    "anime_ids": [
+        286,
+        1010
+    ]
+}

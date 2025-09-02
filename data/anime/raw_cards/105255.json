@@ -1,0 +1,320 @@
+{
+    "id": 105255,
+    "type": 2,
+    "name": "シドニアの騎士 第九惑星戦役",
+    "name_cn": "希德尼娅的骑士 第九惑星战役",
+    "summary": "　　奇居子に破壊された太陽系。人類の一部は、巨大なる宇宙船・シドニアで宇宙を旅する道を選んで約千年後。少年・谷風長道が、祖父の死を機に街へ出る。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2015-04-10",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/e8/a6/105255_Ldl25.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/e8/a6/105255_Ldl25.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/e8/a6/105255_Ldl25.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/e8/a6/105255_Ldl25.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/e8/a6/105255_Ldl25.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "希德尼娅的骑士 第九惑星战役"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Knights of Sidonia: Battle for Planet Nine",
+                    "k": null
+                },
+                {
+                    "v": "希德尼娅的骑士 第九行星战役",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2015年4月10日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期五"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.knightsofsidonia.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TBS"
+        },
+        {
+            "key": "其他电视台",
+            "value": "MBS / CBC / BS-TBS"
+        },
+        {
+            "key": "播放结束",
+            "value": "2015年6月26日"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 13,
+    "rating": {
+        "rank": 410,
+        "total": 4023,
+        "count": {
+            "one": 6,
+            "two": 3,
+            "three": 3,
+            "four": 20,
+            "five": 44,
+            "six": 225,
+            "seven": 936,
+            "eight": 2071,
+            "nine": 553,
+            "ten": 162
+        },
+        "score": 7.8
+    },
+    "collection": {
+        "wish": 1328,
+        "collect": 5856,
+        "doing": 253,
+        "on_hold": 180,
+        "dropped": 82
+    },
+    "tags": [
+        {
+            "name": "科幻",
+            "count": 851
+        },
+        {
+            "name": "希德尼娅的骑士",
+            "count": 651
+        },
+        {
+            "name": "2015年4月",
+            "count": 571
+        },
+        {
+            "name": "萝卜",
+            "count": 497
+        },
+        {
+            "name": "TV",
+            "count": 484
+        },
+        {
+            "name": "漫画改",
+            "count": 467
+        },
+        {
+            "name": "PolygonPictures",
+            "count": 433
+        },
+        {
+            "name": "弐瓶勉",
+            "count": 412
+        },
+        {
+            "name": "2015",
+            "count": 267
+        },
+        {
+            "name": "机战",
+            "count": 263
+        },
+        {
+            "name": "3D",
+            "count": 202
+        },
+        {
+            "name": "漫改",
+            "count": 190
+        },
+        {
+            "name": "村井さだゆき",
+            "count": 51
+        },
+        {
+            "name": "逢坂良太",
+            "count": 38
+        },
+        {
+            "name": "瀬下寛之",
+            "count": 35
+        },
+        {
+            "name": "后宫",
+            "count": 29
+        },
+        {
+            "name": "战斗",
+            "count": 23
+        },
+        {
+            "name": "2015年",
+            "count": 18
+        },
+        {
+            "name": "日本",
+            "count": 15
+        },
+        {
+            "name": "续作",
+            "count": 15
+        },
+        {
+            "name": "2015年1月",
+            "count": 14
+        },
+        {
+            "name": "洲崎绫",
+            "count": 13
+        },
+        {
+            "name": "人外",
+            "count": 12
+        },
+        {
+            "name": "濑下宽之",
+            "count": 12
+        },
+        {
+            "name": "喜多村英梨",
+            "count": 11
+        },
+        {
+            "name": "机甲",
+            "count": 11
+        },
+        {
+            "name": "ポリゴン・ピクチュアズ",
+            "count": 10
+        },
+        {
+            "name": "丰崎爱生",
+            "count": 10
+        },
+        {
+            "name": "恋爱",
+            "count": 9
+        },
+        {
+            "name": "Polygon.Pictures",
+            "count": 8
+        }
+    ],
+    "meta_tags": [
+        "科幻",
+        "机战",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        23422,
+        24357,
+        25590
+    ],
+    "main_characters": [
+        {
+            "id": 23422,
+            "name": "谷風長道",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/15/5d/23422_crt_xI4l9.jpg?r=1408629318",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/5d/23422_crt_xI4l9.jpg?r=1408629318",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/5d/23422_crt_xI4l9.jpg?r=1408629318",
+                "grid": "https://lain.bgm.tv/pic/crt/g/15/5d/23422_crt_xI4l9.jpg?r=1408629318"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7385,
+                    "name": "逢坂良太",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/81/c0/7385_prsn_3DfT0.jpg?r=1543641007",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/c0/7385_prsn_3DfT0.jpg?r=1543641007",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/c0/7385_prsn_3DfT0.jpg?r=1543641007",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/81/c0/7385_prsn_3DfT0.jpg?r=1543641007"
+                    },
+                    "short_summary": "日本男性声优，隶属日本EARLY WING公司。德岛县出身。\r\n\r\n原本只是很喜欢动画，并没有以成为声优为目标，但是在高中的入学式突然觉得“要成为声优”为目标。在家乡的工业高中毕业后，就和一起想要成为声优的朋友一起来到东京，在日本工学院八王子专门学校的舞台科花了两年学习舞台的基础，最后在专门学校毕业后就到了事务所参加考试，但是不幸落选了，在之后，参加了EARLY WING的追加面试中得到了正选。\r\n在2012年4月中，《钓球》的真田雪是成为声优后的第一次主役。\r\n在2015年的第9回声优奖获得新人男优赏。\r\n\r\n兴趣是散步和电玩，假日会花数个小时散步。\r\n喜欢的歌手是JAM Project。\r\n有一个姐姐和一个弟弟。\r\n喜欢玩Tales of Eternia，甚至列入喜欢的游戏前三名。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 24357,
+            "name": "科戸瀬イザナ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c5/b6/24357_crt_n2J0J.jpg?r=1397217144",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/b6/24357_crt_n2J0J.jpg?r=1397217144",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/b6/24357_crt_n2J0J.jpg?r=1397217144",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c5/b6/24357_crt_n2J0J.jpg?r=1397217144"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5001,
+                    "name": "豊崎愛生",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/24/b3/5001_prsn_NfZND.jpg?r=1740107334",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/b3/5001_prsn_NfZND.jpg?r=1740107334",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/b3/5001_prsn_NfZND.jpg?r=1740107334",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/24/b3/5001_prsn_NfZND.jpg?r=1740107334"
+                    },
+                    "short_summary": "日本女性声优、歌手。Music Ray'n所属。\r\n\r\n高中时代曾在老家德岛的广播电台四国放送（JRT）的节目《土曜はナイショ!!》中演出，因为这个缘份后来接受了2008年6月12日播放的《530フォーカス徳島》节目访问。\r\n成为声优的契机是在节目《土曜はナイショ!!》中观众寄的信。感受到鼓励了自己（豊崎）厌恶的声音的观众的存在，认为要“从事声音的工作来报恩”。\r\n音质跟在成为声优之前相比有变化，不仅音域连真正的声音也变高。这件事在《530フォーカス徳島》节目接受采访时，豊崎和采访者以过去在《土曜はナイショ!!》节目登场的影像谈过这个话题。丰崎活用了其音质特色主要演出少女、成熟的女性以及少年。演绎的类型从冷静沉着到活泼开朗等范围很广。\r\n以本名参与声优活动，名字是父母祝愿她能够“被很多人爱护地生活”而取名的。代表性的爱称是名字“爱生”亲昵说法“爱生ちゃん（爱生酱、aki酱）”。但即使是日本人也有把“爱生（あき）”读成“あいなま”的，所以也有“あいなまちゃん”这样的称呼。\r\n特技是吉他，会料理，Sphere的其他成员都认可。视力不太好，看电影的时候要戴上眼镜。座右铭是“不忘感谢的心情”。\r\n以喜欢巨乳而闻名，谈到过为什么自己演的角色多是巨乳的事。\r\n有一个大她两岁的姐姐，说是“性格完全相反”、“很能干且优秀”、“长得完全不像”等等。非常尊敬姐姐，小时候起就是姐姐的“跟屁虫”，因此有了一个绰号叫“Follow丰崎”。姐姐做什么她都照着做，姐姐说什么她都深信不疑。\r\n说话方式常常表现得较有个人特色，给人傻傻的感觉，不熟悉的人可能有时会感到意义不明。谦虚而有礼貌，是个比较淡定的人，最明显的是轻音演唱会上，别人都哭得稀里哗啦，特别是日笠阳子哭得最厉害都成了泪人儿了，表现很激动，声音都呜咽了，她却不哭出声来，还会呵呵地傻笑，估计是性格使然。\r\n\r\n2009年以《空罐少女!》（天空寺奈染弥）女主角出道。\r\n2009年2月15日在事务所举办的“Music Ray'n girls 春之巧克力祭典”中，和同事务所的高垣彩阳、户松遥、寿美菜子一起组成声优团体“sphere”。\r\n2010年3月6日获得第4回声优奖之新人女优赏，同时亦于日本电视动画《K-ON!》剧中结成团体“放学后Tea Time”与日笠阳子、佐藤聪美、寿美菜子、竹达彩奈得到歌唱赏。\r\n2011年3月1日获得东京国际动画博览会第十回的声优赏。\r\n2011年3月5日获得第5回声优奖之主演女优赏、最佳主持赏。\r\n2017年10月26日，在广播节目おかえりらじお中宣布与一般男性结婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 25590,
+            "name": "白羽衣つむぎ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6c/d6/25590_crt_92q2q.jpg?r=1441722028",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/d6/25590_crt_92q2q.jpg?r=1441722028",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/d6/25590_crt_92q2q.jpg?r=1441722028",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6c/d6/25590_crt_92q2q.jpg?r=1441722028"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 8403,
+                    "name": "洲崎綾",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/37/de/8403_prsn_w98m9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/de/8403_prsn_w98m9.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/de/8403_prsn_w98m9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/37/de/8403_prsn_w98m9.jpg"
+                    },
+                    "short_summary": "洲崎绫，出生于日本石川县，日本女性声优。隶属于I'm Enterprise。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

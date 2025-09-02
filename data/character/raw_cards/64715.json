@@ -1,0 +1,60 @@
+{
+    "id": 64715,
+    "name": "星見純那",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e5/8f/64715_crt_Bv1Tx.jpg?r=1533455105",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/8f/64715_crt_Bv1Tx.jpg?r=1533455105",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/8f/64715_crt_Bv1Tx.jpg?r=1533455105",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e5/8f/64715_crt_Bv1Tx.jpg?r=1533455105"
+    },
+    "summary": "聖翔音楽学園　99期　俳優育成科　出席番号25番\r\n学年一の才女で学級委員も務める優等生。判断力、分析力に優れるがそれゆえ考えすぎることも。両親の反対を押し切って舞台の道を選んだが、天性の才能を持つ真矢達との差に悩みもがいている舞台少女。\r\n夢は「主役として、舞台の真ん中でスポットライトを浴びたい！」",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "星见纯那"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "星見 純那"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ほしみ じゅんな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Junna Hoshimi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10-1"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://revuestarlight.bushimo.jp/character/junna/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 1,
+    "stat": {
+        "comments": 26,
+        "collects": 111
+    },
+    "anime_ids": [
+        214265
+    ]
+}

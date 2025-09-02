@@ -1,0 +1,60 @@
+{
+    "id": 3252,
+    "name": "有馬総一郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1e/3b/3252_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/3b/3252_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/3b/3252_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1e/3b/3252_crt_anidb.jpg"
+    },
+    "summary": "宫泽雪野的同班同学，也和她同年。自从代表新生发言之后，就被雪野视为最大的劲敌。成绩优秀、热心助人，而且还是运动健将，是个近乎完美的男孩子。然而，他的心灵深处却有着无人能触及的伤痛，亲生父母在四处借债之后丢下他一走了之，虽然被善良的伯父伯母收养，却仍遭到其他亲戚的白眼与冷嘲热讽。为了要给养父母争一口气，有马拼命地努力，要做一个各方面都决定优秀的人——直到与雪野相遇。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "有马总一郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "有馬総一郎"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ありま そういちろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Arima Souichirou"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ありま"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 20
+    },
+    "anime_ids": [
+        2049
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "id": 1962,
+    "name": "ふぁきあ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3a/42/1962_crt_8EKUt.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/42/1962_crt_8EKUt.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/42/1962_crt_8EKUt.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3a/42/1962_crt_8EKUt.jpg"
+    },
+    "summary": "普段冷静だが、カッとなると激しい感情を見せる。\r\nバレエは上手いが、ぶっきらぼうなので近寄り難い雰囲気。\r\nみゅうとといつも一緒に居て、あれこれ命令（？）している。\r\nみゅうとの事を皆から遠ざけようとしているようだが…。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "法基亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "法奇亚"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "华亚"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Fakia"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ふぁきあ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "51kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 22
+    },
+    "anime_ids": [
+        5694
+    ]
+}

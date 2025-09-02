@@ -1,0 +1,73 @@
+{
+    "id": 10753,
+    "name": "星井美希",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/82/db/10753_crt_V9wc8.jpg?r=1507577421",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/db/10753_crt_V9wc8.jpg?r=1507577421",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/db/10753_crt_V9wc8.jpg?r=1507577421",
+        "grid": "https://lain.bgm.tv/pic/crt/g/82/db/10753_crt_V9wc8.jpg?r=1507577421"
+    },
+    "summary": "偶像大师系列游戏与动画三巨头之一，Visual阵营的队长。\r\n公务员家庭出身，有一个想要当教师的姐姐星井菜绪。\r\n镰刀型向上的呆毛，金色长发。虽然只是个初中生，却拥有着让人羡慕不已的成熟体型。\r\n据说拥有一天被31个男生告白的魅力，天赋异禀的少女偶像。然而非常懒散、嗜睡、贪食，酷爱饭团。认真起来会非常投入。自称肉食系，对感情却非常专一。由于年龄原因，有时过于天真，爱耍小脾气。说话直来直去、非常伤人，且经常无意间让人哑场。\r\n是XBOX版初代IM@S中唯一一个拥有双路线的角色，第二次选择会出现[觉醒美希]的事件，并且触发更多的与Producer的亲密事件（称制作人为HONEY）。续作和动画版直接继承了觉醒后的性格设定。\r\n成为偶像的目的：想要在舞台上闪闪发光。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "星井美希"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ほしい みき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hoshii Miki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月23日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "159→161cm"
+        },
+        {
+            "key": "体重",
+            "value": "44→45kg"
+        },
+        {
+            "key": "BWH",
+            "value": "84/55/82→86/55/83"
+        },
+        {
+            "key": "年龄",
+            "value": "14→15岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 23,
+    "stat": {
+        "comments": 135,
+        "collects": 503
+    },
+    "anime_ids": [
+        11577,
+        309807
+    ]
+}

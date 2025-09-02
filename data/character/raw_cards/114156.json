@@ -1,0 +1,56 @@
+{
+    "id": 114156,
+    "name": "綾瀬沙季",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8d/6e/114156_crt_f87eP.jpg?r=1711375074",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/6e/114156_crt_f87eP.jpg?r=1711375074",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/6e/114156_crt_f87eP.jpg?r=1711375074",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8d/6e/114156_crt_f87eP.jpg?r=1711375074"
+    },
+    "summary": "16歳。水星高校２年生。\r\n母の再婚で悠太・太一と暮らし始める。\r\n人一倍働く母親の姿を見て育ち、自分も早く自立したいと考えている。\r\n派手な見た目は、彼女にとっての「武装モード」。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "绫濑沙季"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "綾瀬 沙季"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あやせ さき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ayase Saki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月20日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 20,
+    "stat": {
+        "comments": 71,
+        "collects": 335
+    },
+    "anime_ids": [
+        393037
+    ]
+}

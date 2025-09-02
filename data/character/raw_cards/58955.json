@@ -1,0 +1,68 @@
+{
+    "id": 58955,
+    "name": "小淵沢報瀬",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/53/e4/58955_crt_355UT.jpg?r=1515837241",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/e4/58955_crt_355UT.jpg?r=1515837241",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/e4/58955_crt_355UT.jpg?r=1515837241",
+        "grid": "https://lain.bgm.tv/pic/crt/g/53/e4/58955_crt_355UT.jpg?r=1515837241"
+    },
+    "summary": "就读多多良西高校的高二女生，绰号“南极”。南极社社长(暂定)，因想寻找母亲小渊泽贵子而下定决心前往南极。因遗失打工赚来的一百万円而与真理结识，并邀请真理一同前往南极。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小渊泽报濑"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小淵沢 報瀬"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こぶちざわ しらせ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kobuchizawa Shirase"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2001年11月1日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://yorimoi.com/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 2001,
+    "birth_mon": 11,
+    "birth_day": 1,
+    "stat": {
+        "comments": 25,
+        "collects": 104
+    },
+    "anime_ids": [
+        218708
+    ]
+}

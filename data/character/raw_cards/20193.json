@@ -1,0 +1,68 @@
+{
+    "id": 20193,
+    "name": "スバル・ナカジマ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2c/be/20193_crt_fQKdG.jpg?r=1560086819",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/be/20193_crt_fQKdG.jpg?r=1560086819",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/be/20193_crt_fQKdG.jpg?r=1560086819",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2c/be/20193_crt_fQKdG.jpg?r=1560086819"
+    },
+    "summary": "拥有男性气质、精通于格斗技的魔法少女，曾隶属于机动六课，并在与战斗机人的战斗中大为活跃。\r\n机动六课解散后转入特别救助队，致力于灾害救济和生还者救援。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "昴·中岛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "中岛昴"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Subaru Nakajima"
+                },
+                {
+                    "k": "昵称",
+                    "v": "486"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "百度百科"
+        },
+        {
+            "key": "父亲",
+            "value": "原野·中岛（108部队三佐）"
+        },
+        {
+            "key": "母亲",
+            "value": "桂特·中岛"
+        },
+        {
+            "key": "姐姐",
+            "value": "银河·中岛"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 18
+    },
+    "anime_ids": [
+        1264
+    ]
+}

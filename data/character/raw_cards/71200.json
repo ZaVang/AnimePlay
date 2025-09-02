@@ -1,0 +1,55 @@
+{
+    "id": 71200,
+    "name": "ルイ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/29/69/71200_crt_2aRQg.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/69/71200_crt_2aRQg.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/69/71200_crt_2aRQg.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/29/69/71200_crt_2aRQg.jpg"
+    },
+    "summary": "雄性的红鹿，18岁，3月29日出生，白羊座。\r\n血型A型。身高172公分﹙不计角﹚，体重53公斤。\r\n切里顿学院高中部三年级，戏剧社副社长，也是演员组组长。饰演戏剧社年度大剧\"阿德勒\"的主角，是社团的重要支柱，也是校园的风云人物。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "路易"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "♂"
+        },
+        {
+            "key": "生日",
+            "value": "3月29日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "172cm"
+        },
+        {
+            "key": "体重",
+            "value": "53kg"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 29,
+    "stat": {
+        "comments": 14,
+        "collects": 37
+    },
+    "anime_ids": [
+        273843
+    ]
+}

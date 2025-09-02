@@ -1,0 +1,48 @@
+{
+    "id": 12814,
+    "name": "カスミ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e7/29/12814_crt_ARhGn.jpg?r=1582457732",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/29/12814_crt_ARhGn.jpg?r=1582457732",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/29/12814_crt_ARhGn.jpg?r=1582457732",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e7/29/12814_crt_ARhGn.jpg?r=1582457732"
+    },
+    "summary": "小霞（英文：Misty，日文：カスミ）是一个在动漫口袋妖怪里出现的虚拟角色，同时亦是《口袋妖怪》的女主角。她的梦想是成为世界上最伟大的口袋妖怪水系训练家。她拥有海星星、波克基古及太阳珊瑚等众多不同的小精灵。\r\n在动画里面，小霞是《口袋妖怪》的女主角。自称是世界级美少女、俏皮的美人鱼、华蓝美女四姊妹之一，现任华蓝市道馆馆主。喜欢水系口袋妖怪，立志成为水系口袋妖怪大师。讨厌虫系口袋妖怪（但不讨厌巴大蝴和芭瓢虫之类的可爱型口袋妖怪），而动画版全期亦视暴鲤龙为天敌（因为她小时候曾经把头钻入暴鲤龙口中，险些被吃掉）；最后在放送局中克服困难，收服了一只暴鲤龙。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小霞"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Misty"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kasumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 54
+    },
+    "anime_ids": [
+        3019
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 1651,
+    "name": "雷門太郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/be/3e/1651_8rVDM.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/3e/1651_8rVDM.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/3e/1651_8rVDM.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/be/3e/1651_8rVDM.jpg"
+    },
+    "summary": "原属棒球社，是队中的接球高手。虽然任何球都能接住，但除此以外的其他方面棒球能力完全不济，投球毫无准绳度，被棒球社编入毫不重要的三军。之后，受濑那的邀请和蛭魔的设计，作为泥门恶魔蝙蝠队的接球员，加入美式足球社。\r\n\r\n关东高校接球员四强之一，立志要成为全世界最强接球员。暗恋真守。因为濑那把他的名字读成“雷 门太郎”，经过一番误会，最后被称为“门太”。开始时很讨厌，但被蛭魔灌输“名字取自Joe Montana”的概念，现在连本人也喜欢这个名字。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雷门太郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "雷門 太郎"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Raimon Tarou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "8月31日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "体重",
+            "value": "51kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 2,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 31,
+    "stat": {
+        "comments": 3,
+        "collects": 2
+    },
+    "anime_ids": [
+        2776
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "id": 23426,
+    "name": "ステファニー・ドーラ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e7/f6/23426_crt_oSI6V.jpg?r=1391691128",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/f6/23426_crt_oSI6V.jpg?r=1391691128",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/f6/23426_crt_oSI6V.jpg?r=1391691128",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e7/f6/23426_crt_oSI6V.jpg?r=1391691128"
+    },
+    "summary": "人類種(イマニティ)の国であるエルキアのお姫様。負けず嫌いでプライドが高く、後先を考えずに行動することが多い。前国王である祖父の思いを継ぎ、滅亡寸前のエルキアを救いたいと願っている。お菓子作りが得意。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "史蒂芬妮·多拉"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 27,
+        "collects": 176
+    },
+    "anime_ids": [
+        79227
+    ]
+}

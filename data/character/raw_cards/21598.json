@@ -1,0 +1,52 @@
+{
+    "id": 21598,
+    "name": "木原紡",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2c/a9/21598_crt_eD0tR.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/a9/21598_crt_eD0tR.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/a9/21598_crt_eD0tR.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2c/a9/21598_crt_eD0tR.jpg"
+    },
+    "summary": "父亲从事渔夫工作，因此对于海的世界充满兴趣。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "木原纺"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "木原 紡"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きはら つむぐ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kihara Tsumugu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 31,
+        "collects": 53
+    },
+    "anime_ids": [
+        47889
+    ]
+}

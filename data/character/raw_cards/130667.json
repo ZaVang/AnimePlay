@@ -1,0 +1,88 @@
+{
+    "id": 130667,
+    "name": "ルパ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7c/4c/130667_crt_tU28p.jpg?r=1719567949",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/4c/130667_crt_tU28p.jpg?r=1719567949",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/4c/130667_crt_tU28p.jpg?r=1719567949",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7c/4c/130667_crt_tU28p.jpg?r=1719567949"
+    },
+    "summary": "南アジア人の父と日本人の母を持つ、やや褐色のオリエンタルな雰囲気を漂わせる少女。芸術センスに溢れ、頭脳明晰。いわゆる天才肌で、その穏やかな話し方と、控えめな態度からみんなに一目置かれている。大酒飲みなのと、肝が据わり過ぎているのが玉に瑕。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "卢帕"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ルパ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "rupa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "来自",
+            "value": "トゲナシトゲアリ"
+        },
+        {
+            "key": "擅长",
+            "value": "ベース"
+        },
+        {
+            "key": "年龄",
+            "value": "22岁"
+        },
+        {
+            "key": "生日",
+            "value": "6月28日"
+        },
+        {
+            "key": "身高",
+            "value": "169cm"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "出身",
+            "value": "南アジア 出身"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "パフェ プリンアラモード ハンバーグ"
+        },
+        {
+            "key": "爱好",
+            "value": "＃晩酌 ＃読書"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://girls-band-cry.com/character/rupa/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 28,
+    "stat": {
+        "comments": 84,
+        "collects": 198
+    },
+    "anime_ids": [
+        431767
+    ]
+}

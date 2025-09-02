@@ -1,0 +1,217 @@
+{
+    "id": 1972,
+    "name": "魔神英雄传",
+    "image_path": "data/images/anime/1972.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "战部渡是一个小学四年级的学生，有一天在上学路上途径龙神池时意外地拾到一串勾玉，并将它挂在黏土人偶上(即是龙神号的原型)。放学路上再经过此地时，突然被一条龙带到名为“创界山”的异世界。在那里他得知创界山被魔界之王道古达侵占，他自己则是肩负打倒魔界使命的救世主。于是，在魔神“龙神丸”的帮助下，渡与朋友们一起踏上了拯救创界山的旅程……\r\n\r\n创界山分为七层，分别由多恶达以及他手下的大将所支配，每一层各有不同的特式，例如第二界层是一个以怪异为背景的世界、第三界层是一个极炎热的世界、第四界层是一个极冰冷的世界、第五界层是一个高度污染的世界、第六界层是一个魔法世界。\r\n\r\n每个大将也有五个左右的部下（最少是第四界层，只有两个左右）。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 45,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "子供向"
+    ],
+    "date": "1988-04-15",
+    "rating_rank": 961,
+    "rating_score": 7.5,
+    "rating_total": 1947,
+    "main_character_ids": [
+        72282,
+        72334,
+        72335,
+        72336,
+        86181
+    ],
+    "main_characters": [
+        {
+            "id": 72282,
+            "name": "戦部ワタル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/36/e9/72282_crt_DKFfa.jpg?r=1660993274",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/e9/72282_crt_DKFfa.jpg?r=1660993274",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/e9/72282_crt_DKFfa.jpg?r=1660993274",
+                "grid": "https://lain.bgm.tv/pic/crt/g/36/e9/72282_crt_DKFfa.jpg?r=1660993274"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3830,
+                    "name": "田中真弓",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0b/54/3830_prsn_npPoO.jpg?r=1671507509",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/54/3830_prsn_npPoO.jpg?r=1671507509",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/54/3830_prsn_npPoO.jpg?r=1671507509",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0b/54/3830_prsn_npPoO.jpg?r=1671507509"
+                    },
+                    "short_summary": "日本の声優、女優、ナレーターである。本名、阿部 真弓（あべ まゆみ）。東京都出身。青二プロダクション所属。日本芸術専門学校特別講師。\r\n\r\n青山学院女子短期大学卒業。幼少期から目立ちたがりで、学生時代からは演劇にも打ち込み、学芸祭のクラス公演などで演劇をしていたのをきっかけとして、舞台女優として身を立てる決意を固める。\r\n\r\n女優としての活動の場を求めて、文学座、青年座などに応募するも全て不採用だった。その中で「あなたは背が低いし、小顔で、全てが小作りで舞台栄えしない。妖精や子供など、役柄が限られてしまうから」と言われ、田中は非常に落ち込んだとのこと。フジテレビのアナウンサー試験にも応募し、最後の5人まで残ったものの内定には至らなかった。作曲家の鈴木邦彦の下で歌の勉強をしていたこともあった。ある日、東京・渋谷のあるバーの前で歌手募集の広告を見つけ、そのバーで歌うことになる。たまたまその店に来たテアトル・エコーの音響に「うちの劇団なんか合っているんじゃないかな、チビばっかりですよ」と勧められ、その付属養成所の試験を受けて合格、短大卒業後はテアトル・エコーに所属することとなった。\r\n\r\n声優として駆け出しの頃だった1978年には、田宮二郎の遺作となった『白い巨塔』の第2回に、財前五郎の講義を受ける医学生役と里見医院の看護婦役で出演している。\r\n\r\n以前はNPSテアトル、アーツビジョン、大橋巨泉事務所（現：オーケープロダクション）に所属していた。\r\n\r\n1978年に『激走!ルーベンカイザー』（高木涼子）で声優デビュー。同年には人気刑事ドラマ『Gメン'75』の「香港ロケ編」で、事件解決に協力する香港の難民少年役をアテレコで演じた。\r\n\r\n1980年代には、島津冴子とラジオ番組『アニメトピア』に2代目パーソナリティーとして出演、少し後に『さすがの猿飛』に揃って出演した。1983年から長期にわたり、『うる星やつら』で女性でありながら格好も言葉遣いも少年の姿の藤波竜之介役を演じたことで大きく知名度を上げた。\r\n\r\n2006年には、CD企画『外道女王』（原作伊豆一彦・脚本伊藤良徳）にて主役を担当した。\r\n\r\n2011年に第5回声優アワード「高橋和枝賞」を受賞。\r\n\r\n2012年に伊倉一恵、竹田えり、高乃麗と共に演劇ユニット「コーネンキーズ」を結成。\r\n\r\n2013年に第7回声優アワード「キッズ・ファミリー賞」を受賞。\r\n\r\n2017年1月9日、テレビ朝日にて放映された『人気声優200人が本気で選んだ!声優総選挙!3時間SP』で第6位に入選。",
+                    "locked": false
+                },
+                {
+                    "id": 67947,
+                    "name": "刘艺",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8b/07/67947_prsn_FsSo9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8b/07/67947_prsn_FsSo9.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8b/07/67947_prsn_FsSo9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8b/07/67947_prsn_FsSo9.jpg"
+                    },
+                    "short_summary": "刘艺，1961年12月出生于中国吉林省吉林市，毕业于解放军艺术学院，配音演员。主要作品《魔神英雄传》（前2部）、《光能使者》、《龙珠》、《阿拉蕾》、《铁胆火车侠》、《小虎还乡》、《聪明的一休》（08版）等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 72334,
+            "name": "忍部ヒミコ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/84/9e/72334_crt_18P0S.jpg?r=1573104918",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/84/9e/72334_crt_18P0S.jpg?r=1573104918",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/84/9e/72334_crt_18P0S.jpg?r=1573104918",
+                "grid": "https://lain.bgm.tv/pic/crt/g/84/9e/72334_crt_18P0S.jpg?r=1573104918"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3919,
+                    "name": "林原めぐみ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490"
+                    },
+                    "short_summary": "日本的声优、歌手、DJ、作词家（化名为MEGUMI）、作家。出生于日本东京都北区。\r\n歌迷与动漫迷常以“小惠”（めぐさん）、“惠姐”（めぐ姉）及“阁下”（声优平松晶子命名）等方式称呼她。\r\n林原惠演过多部著名作品的主要女角及担任部分片头、片尾曲演唱，包含《新世纪福音战士》的绫波丽、《乱马1/2》的女乱马、《秀逗魔导士》的莉娜·因巴斯、《口袋妖怪》的武藏、《名侦探柯南》的灰原哀、《通灵王》的恐山安娜等，为日本公认的“声优女王”。",
+                    "locked": false
+                },
+                {
+                    "id": 67943,
+                    "name": "郝琳杰",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/41/c4/67943_prsn_d28Rs.jpg?r=1725993582",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/c4/67943_prsn_d28Rs.jpg?r=1725993582",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/c4/67943_prsn_d28Rs.jpg?r=1725993582",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/41/c4/67943_prsn_d28Rs.jpg?r=1725993582"
+                    },
+                    "short_summary": "国家二级演员\r\n郝琳杰，辽艺配音演员，国家二级演员。 配音作品有《聪明的一休》、《魔神英雄传》、《俏皮小花仙》、《美少女战士》等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 72335,
+            "name": "剣部シバラク",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4e/12/72335_crt_w4km5.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/12/72335_crt_w4km5.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/12/72335_crt_w4km5.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4e/12/72335_crt_w4km5.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3892,
+                    "name": "西村知道",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e6/8b/3892_prsn_scS8W.jpg?r=1725459120",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/8b/3892_prsn_scS8W.jpg?r=1725459120",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/8b/3892_prsn_scS8W.jpg?r=1725459120",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e6/8b/3892_prsn_scS8W.jpg?r=1725459120"
+                    },
+                    "short_summary": "西村 知道（にしむら ともみち、1946年6月2日 - ）は、日本の声優、俳優、ナレーターである。アーツビジョン所属。\r\n千葉県松戸市出身。身長169cm、血液型はA型。\r\n\r\n日本大学芸術学部映画学科卒業。非常に豊富なキャリアを持ち、温厚な役から老人の役までこなす。特技は殺陣と将棋。Macintoshのユーザーでもあったが、現在パソコン関係は一切止めている。\r\nアーツビジョン付属の日本ナレーション演技研究所で講師をしていたことがあり、その頃の生徒に鳥海浩輔がいる。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 72336,
+            "name": "龍神丸",
+            "type": 2,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/42/63/72336_crt_aXy50.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/63/72336_crt_aXy50.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/63/72336_crt_aXy50.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/42/63/72336_crt_aXy50.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3855,
+                    "name": "玄田哲章",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/ae/3855_prsn_mIa3J.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/ae/3855_prsn_mIa3J.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/ae/3855_prsn_mIa3J.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/ae/3855_prsn_mIa3J.jpg"
+                    },
+                    "short_summary": "1948年5月20日[3]に、岡山県で生まれた。中学・高校時代は芝居と縁がなかったが、受験に際して芝居の道に進みたいという気持ちが強くなり、相談した高校の先生の知人である東映映画のプロデュースを行っていた人物からの紹介で東宝芸能アカデミーに入学。卒業後、新劇の道に進もうと文学座と劇団雲のオーディションを受けたが、両方とも落選。悩んでたところに、野沢那智主宰の劇団薔薇座の募集を目にしに1970年に入団した。当初は1年だけのつもりが、17年間在籍した。\r\n\r\n1972年24歳の時に野沢から、「そろそろお前もやらないか?」と紹介され声優業を始める。テレビアニメ『科学忍者隊ガッチャマン』のアフレコ現場を見学。同作で多数の端役を担当し、以降、声優として様々な作品をこなすようになった。声優業を始めた当時を「当日に台本を渡され台本の見方も分からないままスタジオに入れられ、喋り出しても画面に合わなくて悔しい思いをした」と振り返っている。\r\n\r\n2010年に第4回声優アワード功労賞を受賞した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 86181,
+            "name": "虎王",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ca/f5/86181_crt_1VQUU.jpg?r=1601991547",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/f5/86181_crt_1VQUU.jpg?r=1601991547",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/f5/86181_crt_1VQUU.jpg?r=1601991547",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ca/f5/86181_crt_1VQUU.jpg?r=1601991547"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4043,
+                    "name": "伊倉一恵",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8f/b1/4043_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/b1/4043_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/b1/4043_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8f/b1/4043_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "伊倉一惠出生於长野县上田市。药科大学落榜后，接受母亲的建议，来到东京加入了俳协演剧研究所，為該研究所7期生。两年后加入东京俳优生活协同组合。第一份工作是日本放送的鬧劇广播节目《超動漫》（ウルトラアニメ）。1979年，在《漫画猿飞佐助》中，以女忍者一角之声优出道。\r\n\r\n在研究所的毕业公演之后，开始以舞台为志向。1980年加入手塚敏夫主创的剧团「-劇舎(SHIBAIYA)-燐」，最多一年参加过6场公演。当时，以舞台为中心，以较自由的声优工作为兼职。1981年在《漫画水户黄门》中，以琴这一角色出道。1985年从「-劇舎(SHIBAIYA)-燐」退团，在25岁左右时正式开始声优工作。1987年在《城市猎人》中演出槇村香，这一作品也成为了她的成名作。\r\n\r\n1988年开始在《魔神英雄传》中演出虎王，与田中真弓相识，和田中一起加入了渡边正行的艺能事务所なべや。受到田中的影响，再一次开始了舞台活动。1993年在《魔神英雄传》的监督井内秀治担任专属作家的剧团「アトリエいっぽんの木」复出。\r\n\r\n1989年与同为声优的神代知衣以及坂本千夏组成名为「GALLOP」的和声组合。1990年在7月放送的《罗宾汉大冒险》中，第一次演出了TV动画的主角罗伯特·杭丁顿。在同年10月的《三目童子》中继续演出了主角写乐保介。游戏方面，在1992年发售的RPG游戏《天外魔境卍MARU》中演出主角战国卍丸。\r\n\r\n1996年开始演出《樱花大战》系列中雷尼·米尔西修特拉瑟这一角色，并在《樱花大战歌谣秀》中担任一部分乐曲的和声以及无伴奏清唱的编曲。在编曲时也负责选曲和全声部录音。演奏过钢琴和原声吉他等乐器。作为钢琴家根岸弥生音乐会的制作人，以朗诵的形式进行共同演出。\r\n\r\n2011年「GALLOP」举行了时隔20年的复活Live。2012年与田中真弓、竹田えり、高乃麗组成演剧组合「コーネンキーズ」。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

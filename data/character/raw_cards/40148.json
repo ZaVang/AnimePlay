@@ -1,0 +1,56 @@
+{
+    "id": 40148,
+    "name": "虹野ゆめ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/73/4c/40148_crt_Mu3eE.jpg?r=1460068042",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/4c/40148_crt_Mu3eE.jpg?r=1460068042",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/4c/40148_crt_Mu3eE.jpg?r=1460068042",
+        "grid": "https://lain.bgm.tv/pic/crt/g/73/4c/40148_crt_Mu3eE.jpg?r=1460068042"
+    },
+    "summary": "四星学园新生。可爱的正统派偶像。虽然据声乐老师说唱功不咋样但上台表演过一次之后就立刻被当作是学校的明日之星了。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "虹野梦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いじの ゆめ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ijino Yume"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月3日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 4,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 3,
+    "stat": {
+        "comments": 19,
+        "collects": 23
+    },
+    "anime_ids": [
+        207491
+    ]
+}

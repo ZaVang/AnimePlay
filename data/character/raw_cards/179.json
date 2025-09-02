@@ -1,0 +1,60 @@
+{
+    "id": 179,
+    "name": "宇白可奈",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8f/53/179_95a73878494e9bc8dd6c3c7104f_JrXYp.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/53/179_95a73878494e9bc8dd6c3c7104f_JrXYp.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/53/179_95a73878494e9bc8dd6c3c7104f_JrXYp.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8f/53/179_95a73878494e9bc8dd6c3c7104f_JrXYp.jpg"
+    },
+    "summary": "宇白可奈\r\n(うしろ かな)\r\n通称：カナ\r\n(声：阿澄佳奈)\r\n小学４年",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宇白可奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "宇白 可奈"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ushiro Kana"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "130cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 11
+    },
+    "anime_ids": [
+        467
+    ]
+}

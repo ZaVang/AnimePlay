@@ -1,0 +1,72 @@
+{
+    "id": 91665,
+    "name": "小舟潮",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/dd/95/91665_crt_v81de.jpg?r=1650334893",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/95/91665_crt_v81de.jpg?r=1650334893",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/95/91665_crt_v81de.jpg?r=1650334893",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dd/95/91665_crt_v81de.jpg?r=1650334893"
+    },
+    "summary": "小舟家的长女，金发碧眼，是慎平的青梅竹马。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小舟潮"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小舟潮"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こふね うしお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "USHIO KOFUNE"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月25日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "体重",
+            "value": "53kg"
+        },
+        {
+            "key": "年龄",
+            "value": "17"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 25,
+    "stat": {
+        "comments": 101,
+        "collects": 428
+    },
+    "anime_ids": [
+        326895
+    ]
+}

@@ -1,0 +1,464 @@
+{
+    "id": 530115,
+    "type": 2,
+    "name": "ぷにるはかわいいスライム 第2期",
+    "name_cn": "噗妮露是可爱史莱姆 第二季",
+    "summary": "",
+    "nsfw": false,
+    "locked": false,
+    "date": "2025-07-06",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/14/f9/530115_8prir.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/14/f9/530115_8prir.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/14/f9/530115_8prir.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/14/f9/530115_8prir.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/14/f9/530115_8prir.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "噗妮露是可爱史莱姆 第二季"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "可爱史莱姆噗尼露 第二季",
+                    "k": null
+                },
+                {
+                    "v": "Puniru wa Kawaii Slime 2nd Season",
+                    "k": null
+                },
+                {
+                    "v": "Puniru is a Kawaii Slime Season 2",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2025年7月6日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://puniru-anime.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレ東系列6局"
+        },
+        {
+            "key": "其他电视台",
+            "value": "AT-X"
+        },
+        {
+            "key": "导演",
+            "value": "伊部勇志"
+        },
+        {
+            "key": "音乐",
+            "value": "森いづみ"
+        },
+        {
+            "key": "Copyright",
+            "value": "©まえだくん／小学館／ぷにる製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "まえだくん（小学館「週刊コロコロコミック」連載）"
+        },
+        {
+            "key": "人物设定",
+            "value": "田中彩"
+        },
+        {
+            "key": "系列构成",
+            "value": "横手美智子"
+        },
+        {
+            "key": "脚本",
+            "value": "横手美智子(13)、池田臨太郎(14)、平見瞠(15)、伊部勇志(16)"
+        },
+        {
+            "key": "美术监督",
+            "value": "宮本実生"
+        },
+        {
+            "key": "美术设计",
+            "value": "宮本実生、三原絵梨香、高薄亜実、泉寛"
+        },
+        {
+            "key": "色彩设计",
+            "value": "きつかわあさみ、髙田真有"
+        },
+        {
+            "key": "摄影监督",
+            "value": "後藤晴香；辅佐: ミヒャエラ パイル"
+        },
+        {
+            "key": "剪辑",
+            "value": "榎田美咲"
+        },
+        {
+            "key": "音响监督",
+            "value": "丹下雄二"
+        },
+        {
+            "key": "动画制作",
+            "value": "TOHO animation STUDIO"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "ぷにる (CV: 篠原侑)"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "森いづみ / 大森元貴"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "森いづみ / 大森元貴"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "森いづみ"
+        },
+        {
+            "key": "製作",
+            "value": "ぷにる製作委員会【東宝（齋藤雅哉、尾村明洋、高野のぞみ、佐野航、浜口響子）、テレビ東京（諏訪遼太朗、中西諒平）、小学館、小学館集英社プロダクション】；大田圭二、伊藤隆行、斎藤満、高澤邦仁"
+        },
+        {
+            "key": "执行制片人",
+            "value": "山中一孝"
+        },
+        {
+            "key": "总制片人",
+            "value": "高橋敦司、武井克弘、石井成臣、佐々木礼子、藤澤佑介"
+        },
+        {
+            "key": "制片人",
+            "value": "津村美玲、斎藤譲、濱田貴恵、伊藤悠公"
+        },
+        {
+            "key": "动画制片人",
+            "value": "稲垣敬文"
+        },
+        {
+            "key": "制作管理",
+            "value": "阿部海偉；デスク補佐：東城早友子、林仁哉"
+        },
+        {
+            "key": "助理制片人",
+            "value": "加藤椋大"
+        },
+        {
+            "key": "宣传",
+            "value": "前川亮、小野双葉、木立己百花"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "有馬由衣"
+        },
+        {
+            "key": "音乐助理",
+            "value": "早瀨晶望"
+        },
+        {
+            "key": "音乐监督",
+            "value": "井本光紀"
+        },
+        {
+            "key": "设定制作",
+            "value": "城葉月"
+        },
+        {
+            "key": "录音",
+            "value": "佐々木彰；录音工作室：オムニバス・ジャパン"
+        },
+        {
+            "key": "录音助理",
+            "value": "古川尚輝"
+        },
+        {
+            "key": "音响",
+            "value": "東北新社；音响制作担当：島田実里"
+        },
+        {
+            "key": "音乐制作",
+            "value": "東宝ミュージック、bransic；音乐协力：テレビ東京ミュージック"
+        },
+        {
+            "key": "分镜",
+            "value": "伊部勇志(13,16)、東田夏実(14)、本間みなみ(15)"
+        },
+        {
+            "key": "演出",
+            "value": "伊部勇志(13)、東田夏実(14)、布施木一喜(15)、佐藤友一(16)、間々田夏美(ED)"
+        },
+        {
+            "key": "演出助理",
+            "value": "間々田夏美(13)、陈宥群(15)"
+        },
+        {
+            "key": "总作画监督",
+            "value": "田中彩、松岡謙治"
+        },
+        {
+            "key": "作画监督",
+            "value": "篠原佑太、中島大智、三橋妙子、小菅和久、河原久美子、堀田れいか、何烨、董立則、全京禹、陈亮、林夏洲、沈陶裔(沈裔陶)、石原直也、酒井夏海、大河内忍、中山和子、郁慧云、劉琦琦、張倩茹、曹善东、lan、小堤悠香、畠山佳苗、杨烈骏、莫梓航、陈泊远、Moaang、ミャン、高橋こう平、李少雷"
+        },
+        {
+            "key": "作画监督助理",
+            "value": "董立则、粉鶴亀"
+        },
+        {
+            "key": "原画",
+            "value": "篠原佑太(变身BANK原画)；篠原佑太"
+        },
+        {
+            "key": "设定",
+            "value": "衣装设定协力：伊藤依織子(2)、松岡謙治(3)、斉藤茉利(3)"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "宮西哲也 / 山内愛弥"
+        },
+        {
+            "key": "制作协力",
+            "value": "X10(3)、上海炫舟文化传媒有限公司(3)"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 12,
+    "rating": {
+        "rank": 1199,
+        "total": 533,
+        "count": {
+            "one": 2,
+            "two": 1,
+            "three": 2,
+            "four": 2,
+            "five": 4,
+            "six": 42,
+            "seven": 230,
+            "eight": 217,
+            "nine": 25,
+            "ten": 8
+        },
+        "score": 7.4
+    },
+    "collection": {
+        "wish": 654,
+        "collect": 70,
+        "doing": 2578,
+        "on_hold": 34,
+        "dropped": 31
+    },
+    "tags": [
+        {
+            "name": "2025年7月",
+            "count": 307
+        },
+        {
+            "name": "漫画改",
+            "count": 270
+        },
+        {
+            "name": "搞笑",
+            "count": 232
+        },
+        {
+            "name": "TOHOanimationSTUDIO",
+            "count": 200
+        },
+        {
+            "name": "日常",
+            "count": 194
+        },
+        {
+            "name": "TV",
+            "count": 190
+        },
+        {
+            "name": "喜剧",
+            "count": 134
+        },
+        {
+            "name": "2025",
+            "count": 126
+        },
+        {
+            "name": "日本",
+            "count": 89
+        },
+        {
+            "name": "萌",
+            "count": 87
+        },
+        {
+            "name": "漫改",
+            "count": 69
+        },
+        {
+            "name": "续作",
+            "count": 67
+        },
+        {
+            "name": "电波",
+            "count": 52
+        },
+        {
+            "name": "奇幻",
+            "count": 32
+        },
+        {
+            "name": "伊部勇志",
+            "count": 23
+        },
+        {
+            "name": "横手美智子",
+            "count": 9
+        },
+        {
+            "name": "萝莉",
+            "count": 6
+        },
+        {
+            "name": "子供向",
+            "count": 5
+        },
+        {
+            "name": "梅田修一朗",
+            "count": 5
+        },
+        {
+            "name": "筱原侑",
+            "count": 4
+        },
+        {
+            "name": "东宝动画",
+            "count": 4
+        },
+        {
+            "name": "校园",
+            "count": 4
+        },
+        {
+            "name": "上坂堇",
+            "count": 4
+        },
+        {
+            "name": "2025年",
+            "count": 3
+        },
+        {
+            "name": "7月",
+            "count": 3
+        },
+        {
+            "name": "2025夏",
+            "count": 3
+        },
+        {
+            "name": "まえだくん",
+            "count": 2
+        },
+        {
+            "name": "20",
+            "count": 2
+        },
+        {
+            "name": "星期日",
+            "count": 2
+        },
+        {
+            "name": "TOHO_animation_STUDIO",
+            "count": 2
+        }
+    ],
+    "meta_tags": [
+        "喜剧",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "series": false,
+    "main_character_ids": [
+        161095,
+        161096
+    ],
+    "main_characters": [
+        {
+            "id": 161095,
+            "name": "ぷにる",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/d4/161095_crt_ib33b.jpg?r=1731674352",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/d4/161095_crt_ib33b.jpg?r=1731674352",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/d4/161095_crt_ib33b.jpg?r=1731674352",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/d4/161095_crt_ib33b.jpg?r=1731674352"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 33097,
+                    "name": "篠原侑",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/59/73/33097_prsn_WiF5W.jpg?r=1691249190",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/73/33097_prsn_WiF5W.jpg?r=1691249190",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/73/33097_prsn_WiF5W.jpg?r=1691249190",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/59/73/33097_prsn_WiF5W.jpg?r=1691249190"
+                    },
+                    "short_summary": "篠原侑（ささはら ゆう、4月30日 - ）は、日本の女性声優。熊本県出身。アイムエンタープライズ所属。\r\n\r\n小学生の頃に歌手になりたいと思っていたが、両親から「歌手の道は厳しいよ」と言われたという。中学時代に父がプリントアウトしたアニメーション映画の主人公のオーディションを見たことがあり、「声優なら歌も歌えるし、演技もできてテレビにも出られるかもしれないし、いいことがたくさんあるから目指してみたら？」と言われたことがきっかけで声優を目指したという。\r\n\r\n中学時代は吹奏楽部、高校時代は和太鼓部にそれぞれ所属していた。\r\n\r\nインターネットで声優になる方法を調べ、専門学校が良いと思って両親に相談したものの、母から反対された。高校時代、母に同じ話をした際、「大学に通いながらであれば、声優の勉強をしても構わない」と言われたことから、全日制の専門学校に通うことは無理であると考え、ダブルスクールで通うことが可能な日本ナレーション演技研究所（日ナレ）が自身の候補に上がったという。高校3年生の夏の頃に、母と熊本から上京して日ナレの入所審査を受けて覚悟が決まったという。\r\n\r\n日ナレに入所後、3年目の研修科修了後、2016年よりアイムエンタープライズに所属し、声優デビュー。\r\n\r\n『となりの吸血鬼さん』の天野灯役で初のメインキャラクターを務める。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 161096,
+            "name": "河合井コタロー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3a/7e/161096_crt_4XvU7.jpg?r=1721309997",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/7e/161096_crt_4XvU7.jpg?r=1721309997",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/7e/161096_crt_4XvU7.jpg?r=1721309997",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3a/7e/161096_crt_4XvU7.jpg?r=1721309997"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 41073,
+                    "name": "梅田修一朗",
+                    "type": 2,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/dc/41073_prsn_ol77n.jpg?r=1633081644"
+                    },
+                    "short_summary": "梅田 修一朗（うめだ しゅういちろう、10月11日）は、日本の男性声優。千葉県出身。賢プロダクション所属。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

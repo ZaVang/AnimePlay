@@ -1,0 +1,60 @@
+{
+    "id": 36461,
+    "name": "アンナ・ペトロワ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/88/7d/36461_crt_7Z7vJ.jpg?r=1493349576",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/7d/36461_crt_7Z7vJ.jpg?r=1493349576",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/7d/36461_crt_7Z7vJ.jpg?r=1493349576",
+        "grid": "https://lain.bgm.tv/pic/crt/g/88/7d/36461_crt_7Z7vJ.jpg?r=1493349576"
+    },
+    "summary": "いつもニコニコしている優しいおばあさん。手先が器用で、帽子やアクセサリーなど手芸品を売っている一座の母親的存在。霊感が強く、占いも出来、ナージャを見た時ただならぬ運命の持ち主だと予言。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "婆婆"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Anna Petrova"
+                },
+                {
+                    "k": "日文名",
+                    "v": "アンナ・ペトロワ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Anna Betorowa"
+                },
+                {
+                    "k": "昵称",
+                    "v": "おばば"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.toei-anim.co.jp/tv/nadja/frame_chara.html"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        9564
+    ]
+}

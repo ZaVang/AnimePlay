@@ -1,0 +1,47 @@
+{
+    "id": 89182,
+    "name": "シュタルク",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/de/de/89182_crt_55gBE.jpg?r=1692974577",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/de/89182_crt_55gBE.jpg?r=1692974577",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/de/89182_crt_55gBE.jpg?r=1692974577",
+        "grid": "https://lain.bgm.tv/pic/crt/g/de/de/89182_crt_55gBE.jpg?r=1692974577"
+    },
+    "summary": "フリーレンとフェルンと共に旅をすることになる戦士で、アイゼンの弟子。子どものような性格。臆病ながら高い戦闘力を持ち、前衛を務める。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "修塔尔克"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Stark"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://frieren-anime.jp/character/chara_group1/1-6/"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 47,
+        "collects": 136
+    },
+    "anime_ids": [
+        400602
+    ]
+}

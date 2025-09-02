@@ -1,0 +1,52 @@
+{
+    "id": 12947,
+    "name": "吉野千秋",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6c/c8/12947_crt_KZZlZ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/c8/12947_crt_KZZlZ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/c8/12947_crt_KZZlZ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6c/c8/12947_crt_KZZlZ.jpg"
+    },
+    "summary": "1000万部の売上を誇る、超売れっ子漫画家(少女漫画)。ペンネームは吉川千春。\r\n男であることを隠す為、サイン会などのイベント関係は全て断っている。デッド入稿の常習者で、\r\nその度にトリに怒られている。トリとは28年間ずっと一緒な幼馴染だったが、徐々に彼を意識し始める。\r\n「ゲテモノ料理人・ザ☆漢」の大ファン。妹(千夏)がいる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "吉野千秋"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "笔名",
+                    "v": "吉川千春（よしかわ ちはる）"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "よしの ちあき"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "10月12日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 12,
+    "stat": {
+        "comments": 3,
+        "collects": 21
+    },
+    "anime_ids": [
+        20813
+    ]
+}

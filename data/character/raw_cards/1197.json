@@ -1,0 +1,60 @@
+{
+    "id": 1197,
+    "name": "大道雅",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ae/5e/1197_ZefEl.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ae/5e/1197_ZefEl.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ae/5e/1197_ZefEl.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ae/5e/1197_ZefEl.jpg"
+    },
+    "summary": "GA一年级女学生。官方介绍时通称“教授（キョージュ）”，奈三子和她的母亲则称呼她“小雅（マサちゃん，发音不同）”。\r\n    给人的色彩印象为黑色，或是包含白色在内的单调色彩。现实生活中会大量购入黑色画材。\r\n    奈三子说她人不错，但性格上有点怪怪的。沉默寡言，神秘的优等生。\r\n    用武士的口气说话，称呼别人时会加上“殿”。拥有丰富知识。特征为黑色长发。看起来对别人的行动没兴趣，事实上却是充满兴趣。\r\n    拥有和动物沟通、看的见幽灵等特殊能力。似乎有没见过面的婚约者。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "大道雅"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "教授"
+                },
+                {
+                    "k": "日文名",
+                    "v": "大道 雅"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おおみち みやび"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Oomichi Miyabi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "キョージュ、マサ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 18
+    },
+    "anime_ids": [
+        1729
+    ]
+}

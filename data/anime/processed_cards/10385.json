@@ -1,0 +1,119 @@
+{
+    "id": 10385,
+    "name": "TIGER & BUNNY",
+    "image_path": "data/images/anime/10385.jpg",
+    "points": 7.7,
+    "cost": 2,
+    "rarity": "R",
+    "description": "日升社新作原创动画，由知名漫画家桂正和负责角色原案，而监督是曾执导过《鸦-KARAS-》的佐藤敬一。\r\n故事以架空的高度现代化都市Stern Bild为舞台，聚集了各方种族的这里，也有被称为“NEXT”的超能力者。而这些人中，有人便以“超级英雄”作为正式职业，身着印着赞助厂商Logo的战斗服，守护着城市中的和平。\r\n在这样的世界中，也有以报导这些超级英雄为主题的高人气节目《HERO TV》，并会在每年依照他们的活跃度进行所谓的“英雄排名榜”，第一名将获得“KING OF HERO”的称号。\r\n身为超级英雄之一的Wild Tiger（镝木・T・虎彻），曾是站在业界顶端的老手，我行我素的他在不知不觉间有了“正义的破坏王”之称号。而他突然被要求与新人巴纳比（Barnaby Brooks Jr.）组队活动。工作与私生活都地处绝地的两个人将携手向恶势力进攻。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 25,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2011-04-02",
+    "rating_rank": 487,
+    "rating_score": 7.7,
+    "rating_total": 2871,
+    "main_character_ids": [
+        10532,
+        10533,
+        12401
+    ],
+    "main_characters": [
+        {
+            "id": 10532,
+            "name": "鏑木・T・虎徹",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a9/c2/10532_crt_cf3hA.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/c2/10532_crt_cf3hA.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/c2/10532_crt_cf3hA.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a9/c2/10532_crt_cf3hA.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4184,
+                    "name": "平田広明",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3c/4c/4184_prsn_trDqk.jpg?r=1492863980",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/4c/4184_prsn_trDqk.jpg?r=1492863980",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/4c/4184_prsn_trDqk.jpg?r=1492863980",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3c/4c/4184_prsn_trDqk.jpg?r=1492863980"
+                    },
+                    "short_summary": "平田 広明（ひらた ひろあき、1963年8月7日 - ）は、日本の声優、俳優、ナレーターである。ひらたプロダクションジャパン所属。\r\n代表作に『ER緊急救命室』（ジョン・トルーマン・カーターの吹き替え）、『ONE PIECE』（サンジ）、『パイレーツ・オブ・カリビアン』（ジャック・スパロウの吹き替え）、『宇宙兄弟』（南波六太）。\r\n\r\n高校卒業後、昴演劇学校を経て劇団昴に所属する。初舞台は1986年『夏の夜の夢』。舞台俳優として活動していたころに、当時のマネージャーから「声優に興味があるか」と誘われ、オーディションを受けたのが声優業をはじめるきっかけとなった。以後、数多くの洋画の吹き替えやアニメなどで活動している。\r\n2011年にアニメ『TIGER & BUNNY』で主人公を演じ、第11回東京アニメアワード個人部門声優賞、第6回声優アワード主演男優賞 を受賞。同年、27年間在籍した劇団昴を離れ、新たにひらたプロダクションジャパンを立ち上げた。\r\n2017年1月9日、テレビ朝日にて放映された『人気声優200人が本気で選んだ!声優総選挙!3時間SP』で第25位に選ばれる。\r\n\r\nジョニー・デップをはじめ、マット・デイモンやジュード・ロウ、エドワード・ノートン、ノア・ワイリー、ユアン・マクレガーなどの海外俳優や数多くの洋画作品で吹き替えを担当している。平田自身は「自分だったらこう演じたい」と意思の乗せられる、セリフの少ない役者を吹替えるのが好きであると公言している。また、目標としている声優は小池朝雄で、彼の演じた『刑事コロンボ』が吹替を演じる上での目標であると語っている。2015年には、『チャーリー・モルデカイ 華麗なる名画の秘密』のPRの為に来日したジョニー・デップと共演を果たし、本人も公認するフィックス声優となった。また、ジャパンプレミアで共演した際、ジョニー・デップ自身は平田が花束を渡す際に「僕の方が彼に花束を渡すべきです。自分の声を20年も担当してくれたことが本当に光栄に思う」と語っている。\r\n森川智之と宮本充、堀内賢雄と並んでジョニー・デップとトム・クルーズ、キアヌ・リーブスとブラッド・ピット両者の吹き替えを経験している数少ない人物でもある。\r\nかつて声優業を行うことに抵抗のある者から「吹き替えなんかやるな、セリフがアテレコ調になる」と言われ、自分でもそう思ったこともあったが、自身が敬愛し、声優業を行っていた小池朝雄の演技を見て芸が荒れているとは到底思えず、「アテレコやってたおかげで芝居の幅が広がるということはあっても、それが舞台での芝居の足を引っ張ることは一切あり得ない」という確信を持つようになったという。",
+                    "locked": false
+                },
+                {
+                    "id": 5636,
+                    "name": "田村睦心",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/39/84/5636_prsn_p449k.jpg?r=1665351736"
+                    },
+                    "short_summary": "日本东京都出身的女性声优，现时隶属 I'm Enterprise。\r\n\r\n日本解说表演研究所毕业。2007年，在电视动画《悠久之翼》中以声优身份出道。2008年，在《Battle Spirits 少年突破马神》中首次担任主演。\r\n嗓音沙哑，多出演动画男主角的少年时期形象的角色。\r\n2014年8月，因为喉咙问题切除了息肉而暂时休息。9月1日在博客上记载康复，9月8日在广播节目中说明情况。\r\n\r\n官方说法上爱好是书法和长笛。从小学1年级开始练习书法，擅长草书和行书。实际上私下里喜欢一个人望着墙壁发呆。\r\n喜欢吃东西和睡觉。喜欢的食物是意大利面、梅干一类的下酒菜。也喜欢喝酒。\r\n喜欢布娃娃。\r\n家中有一个比自己小1岁的弟弟。\r\n昵称是“田村少年”，但是这个名字和自己担任少年役居多没有直接关系。\r\n与共同出演过《Battle Spirits 少年突破马神》、《爱杀宝贝》的赤崎千夏有深交。\r\n把bl游戏藏在书柜的最下层。“其实我根本就没有藏，只是放在那里而已。”",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10533,
+            "name": "Barnaby Brooks Jr.",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/be/24/10533_crt_5uUzO.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/24/10533_crt_5uUzO.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/24/10533_crt_5uUzO.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/be/24/10533_crt_5uUzO.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4716,
+                    "name": "森田成一",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/44/f6/4716_prsn_M5yir.jpg?r=1735749673",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/f6/4716_prsn_M5yir.jpg?r=1735749673",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/f6/4716_prsn_M5yir.jpg?r=1735749673",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/44/f6/4716_prsn_M5yir.jpg?r=1735749673"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーターである。血液型はA型。\r\n特技  剣道、空手\r\n趣味  写真撮影、クラシックカメラ収集、各種モノ作り\r\n\r\n芸歴\r\n2003年　青二プロダクション\r\n2021年　フリー\r\n2025年　ステイラック",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 12401,
+            "name": "HERO TV",
+            "type": 4,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b7/a3/12401_crt_aEz40.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/a3/12401_crt_aEz40.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/a3/12401_crt_aEz40.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b7/a3/12401_crt_aEz40.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

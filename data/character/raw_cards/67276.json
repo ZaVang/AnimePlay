@@ -1,0 +1,47 @@
+{
+    "id": 67276,
+    "name": "トッド・ギネス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/dd/c5/67276_crt_GuTtI.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/c5/67276_crt_GuTtI.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/c5/67276_crt_GuTtI.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dd/c5/67276_crt_GuTtI.jpg"
+    },
+    "summary": "　美国空军的预备飞行员，与翔一起被召唤到拜斯顿·威尔。性格十分随意、孤傲。与翔数次交战都以败北告终。之后在与翔的战斗中座机被击落，幸好得到隐居山中的菲拉里奥娜科露·比的照料而脱离了生命危险。\r\n\r\n　　伤愈后没有回到杜雷库军，而改投库国的比索托。来到地上后，为了能让住在波士顿母亲过上好日子而急于立功。比索托进攻伦敦时，驾驶拉尼克与翔的交战，由于对翔的仇恨而超级化。最后被翔击破而死。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "托特·吉尼斯"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "年龄",
+            "value": "23岁"
+        },
+        {
+            "key": "国籍",
+            "value": "美国"
+        },
+        {
+            "key": "故乡",
+            "value": "美国马萨诸塞州波士顿"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 2
+    },
+    "anime_ids": [
+        10402
+    ]
+}

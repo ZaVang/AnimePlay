@@ -1,0 +1,48 @@
+{
+    "id": 66853,
+    "name": "むらさきしきぶ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/68/c9/66853_crt_00oWz.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/c9/66853_crt_00oWz.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/c9/66853_crt_00oWz.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/68/c9/66853_crt_00oWz.jpg"
+    },
+    "summary": "藤原氏旁系出身，担任一条天皇中宫藤原彰子的女官时，写成《源氏物语》，以教导中宫。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "昵称",
+                    "v": "紫式部"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "约973"
+        },
+        {
+            "key": "去世",
+            "value": "约1014至1025"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 3,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        37138
+    ]
+}

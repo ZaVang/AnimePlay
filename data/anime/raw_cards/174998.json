@@ -1,0 +1,298 @@
+{
+    "id": 174998,
+    "type": 2,
+    "name": "ユーリ!!! on ICE",
+    "name_cn": "冰上的尤里",
+    "summary": "　　背负着全日本的期待而挑战的大奖赛——结局是惨败，就此回到了故乡九州的花样滑冰选手胜生勇利。\r\n　　「是现役续行还是退役…二选一…」怀着这样的思绪蜗居于老家的勇利，而突然前来拜访勇利的是那位世界选手权五连霸的维克多·尼基弗洛夫…\r\n　　日本的危崖选手胜生勇利与俄罗斯的下克上选手尤利·普利谢斯基。两位YURI与王者维克多·尼基弗洛夫发起挑战的前所未闻的大奖赛，现在，拉开了序幕！",
+    "nsfw": false,
+    "locked": false,
+    "date": "2016-10-05",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/e6/55/174998_4Zc3U.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/e6/55/174998_4Zc3U.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/e6/55/174998_4Zc3U.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/e6/55/174998_4Zc3U.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/e6/55/174998_4Zc3U.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "冰上的尤里"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Yuuri!!! on Ice",
+                    "k": null
+                },
+                {
+                    "v": "勇利!!! on ICE",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2016年10月5日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期三"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://yurionice.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ朝日"
+        },
+        {
+            "key": "其他电视台",
+            "value": "BS朝日"
+        },
+        {
+            "key": "播放结束",
+            "value": "2016年12月21日"
+        },
+        {
+            "key": "导演",
+            "value": "山本沙代"
+        },
+        {
+            "key": "音乐",
+            "value": "梅林太郎・松司馬拓"
+        },
+        {
+            "key": "Copyright",
+            "value": "©はせつ町民会／ユーリ!!! on ICE 製作委員会"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "冨永恵介（PIANO）"
+        },
+        {
+            "key": "花样滑冰编舞",
+            "value": "宮本賢二"
+        },
+        {
+            "key": "原案",
+            "value": "久保ミツロウ×山本沙代"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "DEAN FUJIOKA / YURI!!! on ICE feat. w.hatano（羽多野渉）"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "山本沙代 / 林祐一郎"
+        },
+        {
+            "key": "3DCG",
+            "value": "MAPPA"
+        },
+        {
+            "key": "主动画师",
+            "value": "朴性厚（OP）；立中順平"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 13,
+    "rating": {
+        "rank": 1742,
+        "total": 2981,
+        "count": {
+            "one": 25,
+            "two": 9,
+            "three": 10,
+            "four": 36,
+            "five": 120,
+            "six": 472,
+            "seven": 1066,
+            "eight": 916,
+            "nine": 213,
+            "ten": 114
+        },
+        "score": 7.2
+    },
+    "collection": {
+        "wish": 1414,
+        "collect": 4478,
+        "doing": 271,
+        "on_hold": 378,
+        "dropped": 346
+    },
+    "tags": [
+        {
+            "name": "MAPPA",
+            "count": 870
+        },
+        {
+            "name": "原创",
+            "count": 713
+        },
+        {
+            "name": "运动",
+            "count": 653
+        },
+        {
+            "name": "2016年10月",
+            "count": 563
+        },
+        {
+            "name": "花样滑冰",
+            "count": 465
+        },
+        {
+            "name": "TV",
+            "count": 450
+        },
+        {
+            "name": "2016",
+            "count": 306
+        },
+        {
+            "name": "基",
+            "count": 204
+        },
+        {
+            "name": "山本沙代",
+            "count": 203
+        },
+        {
+            "name": "BL",
+            "count": 189
+        },
+        {
+            "name": "竞技",
+            "count": 131
+        },
+        {
+            "name": "诹访部顺一",
+            "count": 101
+        },
+        {
+            "name": "内山昂辉",
+            "count": 78
+        },
+        {
+            "name": "平松禎史",
+            "count": 50
+        },
+        {
+            "name": "耽美",
+            "count": 48
+        },
+        {
+            "name": "原創動畫",
+            "count": 28
+        },
+        {
+            "name": "日本",
+            "count": 25
+        },
+        {
+            "name": "2016年",
+            "count": 17
+        },
+        {
+            "name": "体育",
+            "count": 16
+        },
+        {
+            "name": "丰永利行",
+            "count": 16
+        },
+        {
+            "name": "2016秋",
+            "count": 13
+        },
+        {
+            "name": "恋爱",
+            "count": 13
+        },
+        {
+            "name": "腐",
+            "count": 11
+        },
+        {
+            "name": "冰上的尤里",
+            "count": 10
+        },
+        {
+            "name": "运动番",
+            "count": 10
+        },
+        {
+            "name": "久保ミツロウ",
+            "count": 9
+        },
+        {
+            "name": "内山昂輝",
+            "count": 8
+        },
+        {
+            "name": "日本动画",
+            "count": 8
+        },
+        {
+            "name": "动画",
+            "count": 8
+        },
+        {
+            "name": "諏訪部順一",
+            "count": 7
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "运动"
+    ],
+    "series": false,
+    "main_character_ids": [
+        39819
+    ],
+    "main_characters": [
+        {
+            "id": 39819,
+            "name": "勝生勇利",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2c/b3/39819_crt_nYrNv.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/b3/39819_crt_nYrNv.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/b3/39819_crt_nYrNv.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2c/b3/39819_crt_nYrNv.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4729,
+                    "name": "豊永利行",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/77/6f/4729_prsn_Im77K.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/6f/4729_prsn_Im77K.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/6f/4729_prsn_Im77K.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/77/6f/4729_prsn_Im77K.jpg"
+                    },
+                    "short_summary": "豊永 利行（とよなが としゆき、1984年4月28日 - ）は、日本の声優、俳優、シンガーソングライター。（株）スーパーエキセントリックシアター所属。\r\n東京都八王子市出身。血液型はB型。身長162 cm。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

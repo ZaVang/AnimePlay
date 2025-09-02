@@ -1,0 +1,47 @@
+{
+    "id": 89184,
+    "name": "アイゼン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f3/f8/89184_crt_e6Jj7.jpg?r=1692974662",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/f8/89184_crt_e6Jj7.jpg?r=1692974662",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/f8/89184_crt_e6Jj7.jpg?r=1692974662",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f3/f8/89184_crt_e6Jj7.jpg?r=1692974662"
+    },
+    "summary": "魔王を倒した勇者パーティーの戦士。頑強なドワーフ族でパーティーの前衛を務める。寡黙だが、パーティーの中ではツッコミ役。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾森"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Eisen"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://frieren-anime.jp/character/chara_group1/1-4/"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 16,
+        "collects": 38
+    },
+    "anime_ids": [
+        400602
+    ]
+}

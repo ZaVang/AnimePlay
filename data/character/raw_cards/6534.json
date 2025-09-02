@@ -1,0 +1,60 @@
+{
+    "id": 6534,
+    "name": "日暮かごめ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0e/6c/6534_crt_u5wyX.jpg?r=1602347685",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/6c/6534_crt_u5wyX.jpg?r=1602347685",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/6c/6534_crt_u5wyX.jpg?r=1602347685",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0e/6c/6534_crt_u5wyX.jpg?r=1602347685"
+    },
+    "summary": "日暮戈薇是一个来自现代的初中三的学生，她也是战国时代桔梗的转世过来的巫女。在她疏忽之下将四魂之玉射成碎片，散落到每个世界的角落。为了不要让魍魉鬼怪得到四魂碎片，阿篱只好与其他相同命运的伙伴一起踏上收集四魂之玉碎片旅程。奈落被打到后，通往战国与现代的食骨之井就此失去效用三年。三年后再与犬夜叉相见，结婚后就决定留在战国定居下来。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "日暮戈薇"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "日暮笼目"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "日暮篱"
+                },
+                {
+                    "k": "日文名",
+                    "v": "日暮かごめ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひぐらし かごめ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Higurashi Kagome"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 21,
+        "collects": 110
+    },
+    "anime_ids": [
+        2784,
+        2785
+    ]
+}

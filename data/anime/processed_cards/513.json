@@ -1,0 +1,89 @@
+{
+    "id": 513,
+    "name": "听到涛声",
+    "image_path": "data/images/anime/513.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "　　考上东京私立大学的杜崎拓，在大学生活的第一个暑假，于月台上见到一名很像高中同学武藤里伽子的女孩。之后为了参加同学会，在回到故乡高知的路上，拓想起了高中时代的回忆。与转学生里伽子的相遇、夏威夷的毕业旅行、与里伽子两人的东京之旅、和友人争执因而闹翻的文化祭。随着这些略带苦涩的记忆，拓开始回顾起里伽子的存在。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "小说改"
+    ],
+    "date": "1993-05-05",
+    "rating_rank": 408,
+    "rating_score": 7.8,
+    "rating_total": 3084,
+    "main_character_ids": [
+        22804,
+        22805
+    ],
+    "main_characters": [
+        {
+            "id": 22804,
+            "name": "武藤里伽子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/19/6c/22804_crt_8mj58.jpg?r=1557050023",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/6c/22804_crt_8mj58.jpg?r=1557050023",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/6c/22804_crt_8mj58.jpg?r=1557050023",
+                "grid": "https://lain.bgm.tv/pic/crt/g/19/6c/22804_crt_8mj58.jpg?r=1557050023"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13490,
+                    "name": "坂本洋子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "",
+                        "medium": "",
+                        "small": "",
+                        "grid": ""
+                    },
+                    "short_summary": "资料一\r\nアニメ版「海がきこえる」で、里伽子役と、主题歌「海になれ    たら」のボーカルを担当している坂本洋子さんは、実は当时    声优だったわけではなく、主に舞台で活跃されていました。 \r\n（1983年から「剧団お伽座」に所属）主な出演作品に、ミヒャ    エル－エンデ作「モモ」、宫沢贤治作「银河鉄道の夜」など    があります。 \r\nちなみに、ご结婚后、活动は休止されているそうで、ファンと    してはすこし残念ですね。 \r\n\r\n资料二\r\n\r\n特に坂本洋子さんは80年代半ばからの舞台女优で、普段とは违う声优という仕事を前にしても「喜怒哀楽」を声だけで演じたすごい人です。结婚を机に事実上の引退をしてしまわれたのですが、いつまでも惜しまれる存在です",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 22805,
+            "name": "杜崎拓",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/52/34/22805_crt_5z3SZ.jpg?r=1557050468",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/34/22805_crt_5z3SZ.jpg?r=1557050468",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/34/22805_crt_5z3SZ.jpg?r=1557050468",
+                "grid": "https://lain.bgm.tv/pic/crt/g/52/34/22805_crt_5z3SZ.jpg?r=1557050468"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4167,
+                    "name": "飛田展男",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fe/96/4167_prsn_iQprj.jpg?r=1514286894",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/96/4167_prsn_iQprj.jpg?r=1514286894",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/96/4167_prsn_iQprj.jpg?r=1514286894",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fe/96/4167_prsn_iQprj.jpg?r=1514286894"
+                    },
+                    "short_summary": "飛田 展男（とびた のぶお、1959年11月6日 - ）は、日本の声優、ナレーターであり、舞台俳優。アーツビジョン所属。\r\n茨城県水戸市出身。水戸市立三の丸小学校、茨城中学校・高等学校卒業。駒澤大学文学部歴史学科中退。体重55kg。血液型はAB型。愛称は「飛ちゃん」。\r\n\r\n飞田展男，可以说是日本男声优中的“变色龙”。他的角色反差极大，最为夸张的对比就是《安琪莉可》中的水之守护圣卢米埃和《烈火之炎》中的土门，一个美一个丑，一个柔弱一个健壮，一个温柔一个暴躁，一个优雅一个粗鲁，简直就是两个极端，令人怎么也无法相信这是同一位声优的演绎，但事实就是如此。飞田展男利用发音位置的变化控制声音效果，再辅以气声和力度，塑造出截然相反类型的人物。从控制发音变化的技巧来说，飞田展男是独一无二的。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

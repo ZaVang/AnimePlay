@@ -1,0 +1,70 @@
+{
+    "id": 12415,
+    "name": "ヴァニラ・H",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b9/32/12415_crt_OW9oQ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/32/12415_crt_OW9oQ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/32/12415_crt_OW9oQ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b9/32/12415_crt_OW9oQ.jpg"
+    },
+    "summary": "天使队的成员之一，有着淡绿色的微卷长发及鲜红色瞳孔，头上带着发饰（？）身边总是带着像是松鼠的宠物-那诺。\r\n个性沉默寡言，几乎都是同一张脸鲜少看到其他表情，但是笑起来的时候非常可爱（天使队成员一致认同），是个不会把自我情绪表现出来的好女孩。\r\n\r\nヴァニラ「Vanilla」是香料中的香草的意思,「亚修」是H在法语中的发音，是烘焙甜点的手法，指细细切碎精致修饰。 \r\n\r\n    主题曲为“Like A Dolphin” \r\n\r\nProject G.A.的计划当初，声优预定为沢城みゆき。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "香草·亚修"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "范妮拉·H"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Vanilla˙H"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ヴァニラ・H"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ヴァニラ・アッシュ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "132cm→156cm(GA2)"
+        },
+        {
+            "key": "年龄",
+            "value": "13岁→14岁(Eternal Lovers)→16岁(GA2)"
+        },
+        {
+            "key": "座机",
+            "value": "GA-005 Havester（收获者）"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 14
+    },
+    "anime_ids": [
+        4635,
+        18082,
+        4634
+    ]
+}

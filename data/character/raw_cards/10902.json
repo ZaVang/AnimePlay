@@ -1,0 +1,60 @@
+{
+    "id": 10902,
+    "name": "黒桐幹也",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/da/e4/10902_crt_JH7LK.jpg?r=1646468675",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/e4/10902_crt_JH7LK.jpg?r=1646468675",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/e4/10902_crt_JH7LK.jpg?r=1646468675",
+        "grid": "https://lain.bgm.tv/pic/crt/g/da/e4/10902_crt_JH7LK.jpg?r=1646468675"
+    },
+    "summary": "《空之境界》男主角。看似没有任何特异能力以及潮流感的男人，除了人缘好之外似乎没有其他特点，然而却意外的有着连橙子也为之惊讶的资料搜查能力。\r\n与两仪式在高中同班而结识。\r\n在两仪式因事故昏迷期间从高中毕业进入大学，对大学生活感到无聊。\r\n在一次展览会上看到了苍崎橙子制作的人偶，因它与昏迷着的两仪式相似而受到感动，因此从大学退学，成为橙子的工房的打杂社员。\r\n因为拥有连橙子都惊讶的搜查资料能力，部分读者戏称其起源是“Google”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黑桐干也"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Mikiya Kokutō"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こくとう みきや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kokutō Mikiya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1978年12月20日（动画版为1980年4月19日）"
+        },
+        {
+            "key": "引用来源",
+            "value": "zh.wikipedia.org"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1978,
+    "birth_mon": 12,
+    "birth_day": 20,
+    "stat": {
+        "comments": 55,
+        "collects": 331
+    },
+    "anime_ids": [
+        75533
+    ]
+}

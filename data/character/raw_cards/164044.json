@@ -1,0 +1,44 @@
+{
+    "id": 164044,
+    "name": "B't X",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e3/56/164044_crt_69N4U.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/56/164044_crt_69N4U.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/56/164044_crt_69N4U.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e3/56/164044_crt_69N4U.jpg"
+    },
+    "summary": "机械皇国最强B't之一，是一只机械麒麟。X的第一任主人为华莲，第二任主人为高宫铁兵。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "B'Tエックス"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "雄"
+        },
+        {
+            "key": "CV",
+            "value": "（日）堀川仁"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        2751
+    ]
+}

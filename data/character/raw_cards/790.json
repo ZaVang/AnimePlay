@@ -1,0 +1,72 @@
+{
+    "id": 790,
+    "name": "不動遊星",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/29/5f/790_crt_kfFA7.jpg?r=1749911975",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/5f/790_crt_kfFA7.jpg?r=1749911975",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/5f/790_crt_kfFA7.jpg?r=1749911975",
+        "grid": "https://lain.bgm.tv/pic/crt/g/29/5f/790_crt_kfFA7.jpg?r=1749911975"
+    },
+    "summary": "沉默寡言的游星有着一颗炽热的心。作为被命运选中的龙印者，游星借助友谊的力量无数次拯救世界于危难。他的废品卡组主要以低等级怪兽构成，但他通过同步召唤充分发挥了这些怪兽的潜力。他的主力怪兽是龙印者的龙“星尘龙”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "不动游星"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Yusei Fudo"
+                },
+                {
+                    "k": "日文名",
+                    "v": "不動 遊星"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ふどう ゆうせい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fudo Yousei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "7月7日"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        },
+        {
+            "key": "体重",
+            "value": "58kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://www.yugioh.com/characters/yusei-fudo"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 7,
+    "stat": {
+        "comments": 11,
+        "collects": 59
+    },
+    "anime_ids": [
+        1609
+    ]
+}

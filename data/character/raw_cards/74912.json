@@ -1,0 +1,48 @@
+{
+    "id": 74912,
+    "name": "枝村真人",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4e/b2/74912_crt_21TxR.jpg?r=1579840417",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/b2/74912_crt_21TxR.jpg?r=1579840417",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/b2/74912_crt_21TxR.jpg?r=1579840417",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4e/b2/74912_crt_21TxR.jpg?r=1579840417"
+    },
+    "summary": "善良な老人や旅行客をカモに詐欺を働き生計を立てる、自称・日本一の天才詐欺師。元来の性格は、真面目でお人好し。趣味はカプセルトイのフィギュア集め。コーヒー好き。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "枝村真人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "えだむら まこと"
+                },
+                {
+                    "k": "昵称",
+                    "v": "エダマメ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 23,
+        "collects": 22
+    },
+    "anime_ids": [
+        285813
+    ]
+}

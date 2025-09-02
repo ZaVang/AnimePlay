@@ -1,0 +1,88 @@
+{
+    "id": 122864,
+    "name": "怪盗Joker2",
+    "image_path": "data/images/anime/122864.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "子供向"
+    ],
+    "date": "2015-04-06",
+    "rating_rank": 1935,
+    "rating_score": 7.2,
+    "rating_total": 178,
+    "main_character_ids": [
+        27171,
+        27172
+    ],
+    "main_characters": [
+        {
+            "id": 27171,
+            "name": "ジョーカー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0a/e5/27171_crt_o1M8E.jpg?r=1420415791",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/e5/27171_crt_o1M8E.jpg?r=1420415791",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/e5/27171_crt_o1M8E.jpg?r=1420415791",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0a/e5/27171_crt_o1M8E.jpg?r=1420415791"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 8253,
+                    "name": "村瀬歩",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ee/d9/8253_prsn_hnQG2.jpg?r=1543332484",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/d9/8253_prsn_hnQG2.jpg?r=1543332484",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/d9/8253_prsn_hnQG2.jpg?r=1543332484",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ee/d9/8253_prsn_hnQG2.jpg?r=1543332484"
+                    },
+                    "short_summary": "村瀬 歩（むらせ あゆむ、1988年12月14日 - ）は、日本の男性声優。アメリカ合衆国出身。ヴィムス所属。\r\n\r\nアメリカで生まれた後、高校時代まで愛知県で過ごし、京都府の大学に進学後上京。\r\n芝居を観るのが好きだったことから声優を目指し、日本ナレーション演技研究所へ入所。2012年、『Persona4 the ANIMATION』で声優デビュー。同年、『新世界より』の青沼瞬（14歳）役で初のメインキャラクターを演じた。2014年、『ハイキュー!!』の日向翔陽役で初主演を果たした。\r\n2016年に、第10回声優アワードで新人男優賞を受賞した。\r\n\r\n尊敬する声優は、自身が声優を目指すきっかけとなった大友龍三郎や、年齢が近く共演も多い松岡禎丞。\r\n中性的な音質を生かした役を演じることが多く、女性のガヤに加わったり、『チア男子!!』では佐久間龍造役と姉3名の役も兼ねるなど、女性キャラクターを演じることもある。またラジオなどでも村瀬歩（あゆみ）という女子の設定で話すことがある。一方で、『M3〜ソノ黒キ鋼〜』の伊削ヘイト役のように狂気じみた低音ボイスもこなせるほど声域が非常に広い。\r\n帰国子女のため英会話が堪能で、英語を必要とするモブキャラやガヤもこなし、洋画の吹き替えも増えている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27172,
+            "name": "ハチ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3d/23/27172_crt_Qzqvz.jpg?r=1420415817",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/23/27172_crt_Qzqvz.jpg?r=1420415817",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/23/27172_crt_Qzqvz.jpg?r=1420415817",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3d/23/27172_crt_Qzqvz.jpg?r=1420415817"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3849,
+                    "name": "小林由美子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5f/f2/3849_prsn_NBHTx.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/f2/3849_prsn_NBHTx.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/f2/3849_prsn_NBHTx.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5f/f2/3849_prsn_NBHTx.jpg"
+                    },
+                    "short_summary": "日本の女性声優。フリー。千葉県出身。血液型はO型。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

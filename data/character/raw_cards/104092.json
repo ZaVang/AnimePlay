@@ -1,0 +1,60 @@
+{
+    "id": 104092,
+    "name": "藤宮",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1d/5d/104092_crt_mauMO.jpg?r=1640502426",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/5d/104092_crt_mauMO.jpg?r=1640502426",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/5d/104092_crt_mauMO.jpg?r=1640502426",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1d/5d/104092_crt_mauMO.jpg?r=1640502426"
+    },
+    "summary": "たかふみの幼馴染みで、たかふみに好意を寄せている女子大生。\r\n偶然、おじさんの魔法の、たかふみとその秘密を共有することになる。\r\n常識人のため、たまに暴走するたかふみをたしなめることも。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藤宫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "藤宫澄夏"
+                },
+                {
+                    "k": "日文名",
+                    "v": "藤宮澄夏"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ふじみや すみか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fujimiya Sumika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月3日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 3,
+    "stat": {
+        "comments": 41,
+        "collects": 103
+    },
+    "anime_ids": [
+        339326
+    ]
+}

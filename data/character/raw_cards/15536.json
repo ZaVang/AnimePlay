@@ -1,0 +1,64 @@
+{
+    "id": 15536,
+    "name": "松実宥",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a2/5e/15536_crt_941d4.jpg?r=1603205821",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/5e/15536_crt_941d4.jpg?r=1603205821",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/5e/15536_crt_941d4.jpg?r=1603205821",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a2/5e/15536_crt_941d4.jpg?r=1603205821"
+    },
+    "summary": "阿知贺女子学院高中三年级，团体战次锋。\r\n松实玄的姐姐，非常的怕冷，即使是夏天也要穿着棉袄窝在暖炉桌里，因为错过参加儿童麻将教室的时期而对参加麻将教室感到羡慕，透过松实玄的介绍加入麻将社。\r\n特技是吸引所有红色牌。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "松实宥"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "松実 宥"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まつみ ゆう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Matsumi Yuu"
+                },
+                {
+                    "k": "昵称",
+                    "v": "暖姐"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月24日"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 24,
+    "stat": {
+        "comments": 8,
+        "collects": 33
+    },
+    "anime_ids": [
+        24165
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": 74569,
+    "name": "剛健一",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/57/eb/74569_crt_8LZ2z.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/57/eb/74569_crt_8LZ2z.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/57/eb/74569_crt_8LZ2z.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/57/eb/74569_crt_8LZ2z.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "刚健一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ごう けんいち"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "CV",
+            "value": "白石ゆきなが"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 2
+    },
+    "anime_ids": [
+        37178
+    ]
+}

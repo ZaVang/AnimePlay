@@ -1,0 +1,57 @@
+{
+    "id": 24088,
+    "name": "中嶋剣",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9a/c4/24088_crt_56lre.jpg?r=1625918581",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/c4/24088_crt_56lre.jpg?r=1625918581",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/c4/24088_crt_56lre.jpg?r=1625918581",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9a/c4/24088_crt_56lre.jpg?r=1625918581"
+    },
+    "summary": "墨东署交通课骑乘白色机车的警察（原作、动画版里是巡查／电视剧里是巡查部长）。带眼镜。自称是“电自行车王子”或“墨东警署的白鹰”。纯朴而身体刚健，但对恋爱外行，虽然是美幸的情人却迟迟不见进展。身长190cm的大汉。爱车是雅马哈V-MAX（动画版）。年龄在原作是26岁，电视剧里受演出者的影响改为36岁，警衔也提升为巡查部长。三重县出身，动画版中听到“胜浦”后不是到房总半岛的胜浦市，而是驾机车飞到纪伊半岛的那智胜浦去。漫画的最后一话78话，美幸有拜托他预定婚礼会场，作者似乎在暗示两位有情人将终成眷属。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "中岛剑"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "中嶋剑"
+                },
+                {
+                    "k": "日文名",
+                    "v": "中嶋 剣"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なかじま けん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "190cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 2
+    },
+    "anime_ids": [
+        2074,
+        2076
+    ]
+}

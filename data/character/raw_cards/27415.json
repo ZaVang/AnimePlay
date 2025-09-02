@@ -1,0 +1,75 @@
+{
+    "id": 27415,
+    "name": "東郷美森",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/39/be/27415_crt_QQPxl.jpg?r=1527848825",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/be/27415_crt_QQPxl.jpg?r=1527848825",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/be/27415_crt_QQPxl.jpg?r=1527848825",
+        "grid": "https://lain.bgm.tv/pic/crt/g/39/be/27415_crt_QQPxl.jpg?r=1527848825"
+    },
+    "summary": "友奈的同级生和好友，也是能理解她的人。\r\n和友奈是邻居，两人经常在一起行动。\r\n行为举止优雅稳重，不过也有着像电脑、制作点心等其他各方面的才能，这样多才多艺的一面也时常展现出来。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "东乡美森"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "鷲尾須美"
+                },
+                {
+                    "k": "日文名",
+                    "v": "東郷美森"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "とうごう みもり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tougou Mimori"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月8日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "兴趣",
+            "value": "做点心"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "乌冬"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 8,
+    "stat": {
+        "comments": 74,
+        "collects": 173
+    },
+    "anime_ids": [
+        195937
+    ]
+}

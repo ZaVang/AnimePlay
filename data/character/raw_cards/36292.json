@@ -1,0 +1,72 @@
+{
+    "id": 36292,
+    "name": "高坂海美",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/18/da/36292_crt_fkN6t.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/da/36292_crt_fkN6t.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/da/36292_crt_fkN6t.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/18/da/36292_crt_fkN6t.jpg"
+    },
+    "summary": "《偶像大师 Live》登场角色，属于Dance阵营。 \r\n\r\n情绪高昂精力充沛的十六岁少女。精力与体力都十分过剩，不管做什么事都会全力以赴。自然而然地享受着偶像的工作。 \r\n\r\n是个孩子气无忧无虑，健康开朗爽快，有魅力又有活力的女孩子。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高坂海美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Kousaka Umi"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こうさか うみ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月10日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "体重",
+            "value": "45kg"
+        },
+        {
+            "key": "BWH",
+            "value": "82-57-84"
+        },
+        {
+            "key": "年龄",
+            "value": "16岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 10,
+    "stat": {
+        "comments": 20,
+        "collects": 29
+    },
+    "anime_ids": [
+        309807
+    ]
+}

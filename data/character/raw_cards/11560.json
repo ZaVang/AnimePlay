@@ -1,0 +1,54 @@
+{
+    "id": 11560,
+    "name": "南千秋",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1e/76/11560_crt_bBttx.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/76/11560_crt_bBttx.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/76/11560_crt_bBttx.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1e/76/11560_crt_bBttx.jpg"
+    },
+    "summary": "南家的三妹，小学五年生，就读五年二班。高材生，却是个毒舌女，经常把显出单纯幼稚的人称呼作「愚蠢家伙／白痴低能」，而且不会认真看愚蠢家伙的脸。这性格使她几乎对每一位同学都显得不友善。眼睛呈半合状态，是为了不要看见不想看到的东西。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "南千秋"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "南千秋"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みなみ ちあき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Chiaki Minami"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 22,
+        "collects": 207
+    },
+    "anime_ids": [
+        47685,
+        283,
+        889
+    ]
+}

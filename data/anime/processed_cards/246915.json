@@ -1,0 +1,88 @@
+{
+    "id": 246915,
+    "name": "神推偶像登上武道馆我就死而无憾",
+    "image_path": "data/images/anime/246915.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "住在冈山县的绘里飘，是为了小型地下偶像“Cham Jam”的成员·舞菜而献上人生的狂热偶像宅。绘里飘身上穿的，是高中时代的红色运动衫。绘里飘所挥舞的，是鲑鱼粉色的荧光棒。绘里飘所推的，只有舞菜一人而已。将全部收入贡献给推，24小时想着推的事情，声嘶力竭呼喊着推的名字，这一姿态在偶像宅之间被称为传说，人人对此感到钦佩。“有朝一日舞菜站在武道馆的舞台上的话……我就死而无憾！”如此断言的传说中的女人·绘里飘的偶像宅活动，今天也在继续……！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2020-01-09",
+    "rating_rank": 1776,
+    "rating_score": 7.2,
+    "rating_total": 3024,
+    "main_character_ids": [
+        44223,
+        72150
+    ],
+    "main_characters": [
+        {
+            "id": 44223,
+            "name": "えりぴよ",
+            "type": 4,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b5/d7/44223_crt_o4ahX.jpg?r=1576464825",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/d7/44223_crt_o4ahX.jpg?r=1576464825",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/d7/44223_crt_o4ahX.jpg?r=1576464825",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b5/d7/44223_crt_o4ahX.jpg?r=1576464825"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 34397,
+                    "name": "ファイルーズあい",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8e/ad/34397_prsn_Fif7I.jpg?r=1722000886",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/ad/34397_prsn_Fif7I.jpg?r=1722000886",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/ad/34397_prsn_Fif7I.jpg?r=1722000886",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8e/ad/34397_prsn_Fif7I.jpg?r=1722000886"
+                    },
+                    "short_summary": "（日语：ファイルーズ あい Fairūzu Ai；英语：Fairouz Ai；埃及阿拉伯语：عاي فيروز‎；1993年7月6日－）出身于日本东京都的女性配音员。Raccoon Dog所属，Pro-Fit声优养成所毕业。\r\n\r\n日本与埃及的混血儿，父亲为埃及人，母亲为日本人。\r\n\r\n菲鲁兹是她的第一个名字，昵称“ファイちゃん”，这也是她从小取的昵称。在广播剧CD《新娘特别班》演出当时使用全名“门田·菲鲁兹·蓝（門田ファイルーズあい）”，而现在艺名“菲鲁兹·蓝（ファイルーズあい）”则是只有名字。不过菲鲁兹的日文发音“ファイルーズ”和“ファブリーズ”两个都是一模一样的。\r\n\r\n小学5年级中途开始直到小学毕业都住在埃及开罗。上国中后回日本。国中时期喜欢上漫画《JoJo的奇妙冒险 石之海》，并参加过Skype举办的《JoJo》朗读会，从此之后把声优当作将来目标。\r\n\r\n由于双亲的反对，她在高中毕业后进入了平面设计专门学校，但最终还是希望进入声优养成所，在担任了1年的牙医助理后进入Pro-Fit声优养成所，毕业后正式成为Pro Fit所属。\r\n\r\n2019年，于电视动画《流汗吧！健身少女》初次主演。\r\n\r\n2020年，获得第14届声优Award新人女演员奖。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 72150,
+            "name": "市井舞菜",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/94/bb/72150_crt_N4RGi.jpg?r=1570771196",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/94/bb/72150_crt_N4RGi.jpg?r=1570771196",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/94/bb/72150_crt_N4RGi.jpg?r=1570771196",
+                "grid": "https://lain.bgm.tv/pic/crt/g/94/bb/72150_crt_N4RGi.jpg?r=1570771196"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 34404,
+                    "name": "立花日菜",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/49/ab/34404_prsn_l4dCp.jpg?r=1564558147",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/ab/34404_prsn_l4dCp.jpg?r=1564558147",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/ab/34404_prsn_l4dCp.jpg?r=1564558147",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/49/ab/34404_prsn_l4dCp.jpg?r=1564558147"
+                    },
+                    "short_summary": "Arts Vision所属\r\n\r\n出身地：宮城県\r\n芸歴：日本ナレーション演技研究所\r\n趣味・特技：エレキギター、歌うこと",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

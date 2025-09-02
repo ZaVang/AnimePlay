@@ -133,6 +133,46 @@ export const usePlayerStore = defineStore('players', {
     },
     setSkillCooldown(playerId: 'playerA' | 'playerB', skillId: string, duration: number) {
       this[playerId].skillCooldowns[skillId] = duration;
+    },
+
+    // Hand manipulation methods for complex interactions
+    addCardToHand(playerId: 'playerA' | 'playerB', card: AnimeCard) {
+      this[playerId].hand.push(card);
+    },
+
+    removeCardFromHand(playerId: 'playerA' | 'playerB', card: AnimeCard) {
+      const hand = this[playerId].hand;
+      const index = hand.findIndex(c => c.id === card.id);
+      if (index !== -1) {
+        hand.splice(index, 1);
+      }
+    },
+
+    // Move card from deck top to specific position or hand
+    moveCardFromDeck(playerId: 'playerA' | 'playerB', fromIndex: number, toHand: boolean = true) {
+      const player = this[playerId];
+      if (fromIndex >= 0 && fromIndex < player.deck.length) {
+        const card = player.deck.splice(fromIndex, 1)[0];
+        if (toHand) {
+          player.hand.push(card);
+        }
+        return card;
+      }
+      return null;
+    },
+
+    // Reorder deck (for library manipulation effects)
+    reorderDeckTop(playerId: 'playerA' | 'playerB', newOrder: AnimeCard[]) {
+      const player = this[playerId];
+      // Remove the cards from their current positions
+      newOrder.forEach(card => {
+        const index = player.deck.findIndex(c => c.id === card.id);
+        if (index !== -1) {
+          player.deck.splice(index, 1);
+        }
+      });
+      // Add them back at the top in the specified order
+      player.deck.unshift(...newOrder);
     }
   },
   getters: {

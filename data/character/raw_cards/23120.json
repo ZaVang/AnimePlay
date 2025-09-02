@@ -1,0 +1,60 @@
+{
+    "id": 23120,
+    "name": "星野裕",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/de/28/23120_crt_Yey01.jpg?r=1390458298",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/28/23120_crt_Yey01.jpg?r=1390458298",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/28/23120_crt_Yey01.jpg?r=1390458298",
+        "grid": "https://lain.bgm.tv/pic/crt/g/de/28/23120_crt_Yey01.jpg?r=1390458298"
+    },
+    "summary": "右ペンホルダー 前陣速攻型\r\n\r\n主人公。卓球が得意で、小学校の頃から卓球にかけては右に出るものが殆どいなかった。卓球部の練習には真面目に参加せず、行きつけの「タムラ」で、素人相手から賭け卓球で金をせびるような日々を過ごしていた。高校一年生の県大会で、かつての卓球仲間である佐久間に敗れ、失意のまま堕落した生活を送るが、その佐久間から説得され、一念発起し再起を図り「タムラ卓球場」のオババから特訓を受ける。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "星野裕"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "阿扁"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ほしの ゆたか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hoshino Yutaka"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ペコ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 21,
+        "collects": 83
+    },
+    "anime_ids": [
+        93739
+    ]
+}

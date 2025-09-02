@@ -1,0 +1,57 @@
+{
+    "id": 11906,
+    "name": "長野原みお",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c6/68/11906_crt_W4WD1.jpg?r=1538644408",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c6/68/11906_crt_W4WD1.jpg?r=1538644408",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c6/68/11906_crt_W4WD1.jpg?r=1538644408",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c6/68/11906_crt_W4WD1.jpg?r=1538644408"
+    },
+    "summary": "1年Q班。普通的女高中生，有常識的正常人。個性和裕子很像，兩人的關係很好。喜歡幸治郎，對他的妄想十分激烈。頭髮為藍色，在兩旁綁成一束。擅長繪畫，在筆記上有BL系的塗鴉，也有實際的完稿。家裡具有畫圖用的畫材和設備，不過沒有電腦。目前沒有參加社團，但根據作者以前的設定是屬於演劇社。\r\n束头发的两个立方体可以用来召唤远古的神秘兵器。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "长野原美绪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ながのはら みお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Naganohara Mio"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月10日"
+        },
+        {
+            "key": "引用来源",
+            "value": "維基"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 10,
+    "stat": {
+        "comments": 44,
+        "collects": 412
+    },
+    "anime_ids": [
+        9912,
+        28205
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "id": 8385,
+    "name": "原田理花",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/37/2a/8385_crt_X7Der.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/2a/8385_crt_X7Der.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/2a/8385_crt_X7Der.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/37/2a/8385_crt_X7Der.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "原田理花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "江上理花"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はらだ りか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Harada Rika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "164cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 12,
+        "collects": 57
+    },
+    "anime_ids": [
+        848,
+        847
+    ]
+}

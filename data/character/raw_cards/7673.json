@@ -1,0 +1,52 @@
+{
+    "id": 7673,
+    "name": "メソウサ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/33/86/7673_crt_anidb.jpg?r=1579419547",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/86/7673_crt_anidb.jpg?r=1579419547",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/86/7673_crt_anidb.jpg?r=1579419547",
+        "grid": "https://lain.bgm.tv/pic/crt/g/33/86/7673_crt_anidb.jpg?r=1579419547"
+    },
+    "summary": "声：山崎バニラ（アニメ）/ ゆきじ（CD）\r\nベッキーが連れている二足歩行する謎の白ウサギ。ベッキーが授業をするときは、脚立を持ってくる係をしている。なお、ウサギは氷川漫画によく登場する動物の一種。本人いわく「雪ウサギ」。いつも不幸な目に遭い、泣き虫でいじけやすい。しばしばカツラを被せられ、くるみ2号にされる。宇宙人の力を持ってしてもその謎は解明できなかった。動物番付八連（ぱーれん）制覇以降、南条にもらった赤いマフラーを首に巻いている。姫子からは「メソちゃん」と呼ばれている。普通のウサギのように耳は頭部の上の方に伸びているのだが、普通の人間の耳の位置にヘッドホンを当てて音楽を聴いている場面があった。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "爱哭兔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "メソウサ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mesousa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "ぱにぽにの登場人物 - Wikipedia"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 11
+    },
+    "anime_ids": [
+        1617
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "id": 88473,
+    "name": "虫师 特別篇 蚀日之翳",
+    "image_path": "data/images/anime/88473.jpg",
+    "points": 8.2,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "日食发生之时，虫子最易活跃且容易发生状况，主人公银古守护的村子就出现了奇异的虫子遮天蔽日，人们最熟悉的太阳光芒即将消失。在苦苦寻找根源的时候，银古发现了一对身体奇特的姐妹，进而找到了虫子的“根”，与村民合力把根送到太阳照到的地方，解除了阳光被遮挡的危机。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改"
+    ],
+    "date": "2014-01-04",
+    "rating_rank": 118,
+    "rating_score": 8.2,
+    "rating_total": 2860,
+    "main_character_ids": [
+        156,
+        41972,
+        76543
+    ],
+    "main_characters": [
+        {
+            "id": 156,
+            "name": "ギンコ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d1/91/156_crt_SWfqY.jpg?r=1444714628",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d1/91/156_crt_SWfqY.jpg?r=1444714628",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d1/91/156_crt_SWfqY.jpg?r=1444714628",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d1/91/156_crt_SWfqY.jpg?r=1444714628"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4846,
+                    "name": "中野裕斗",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ce/6b/4846_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/6b/4846_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/6b/4846_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ce/6b/4846_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の男性俳優、声優。所属事務所はムーブマン。千葉県出身。身長174cm、体重68kg。血液型はO型。\r\n2005年秋、大地の弟子的存在である長濱博史が監督したアニメ『蟲師』では主人公ギンコを演じた。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 41972,
+            "name": "ヒヨリ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/12/c4/41972_crt_sNKh6.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/c4/41972_crt_sNKh6.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/c4/41972_crt_sNKh6.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/12/c4/41972_crt_sNKh6.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 76543,
+            "name": "ヒナタ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7d/c0/76543_crt_9Oi8M.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/c0/76543_crt_9Oi8M.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/c0/76543_crt_9Oi8M.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7d/c0/76543_crt_9Oi8M.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 17187,
+                    "name": "佐々木りお",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d5/54/17187_prsn_wL301.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/54/17187_prsn_wL301.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/54/17187_prsn_wL301.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d5/54/17187_prsn_wL301.jpg"
+                    },
+                    "short_summary": "佐々木 りお（ささき りお、2002年3月25日 - ）は、日本の子役。\r\n埼玉県出身。劇団ひまわり所属。\r\n\r\n■ニックネーム\r\nりおちゃん\r\n■趣味\r\nカラオケ\r\n■出身地\r\n埼玉県",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

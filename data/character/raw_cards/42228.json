@@ -1,0 +1,99 @@
+{
+    "id": 42228,
+    "name": "リーリエ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/26/69/42228_crt_3knoY.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/26/69/42228_crt_3knoY.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/26/69/42228_crt_3knoY.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/26/69/42228_crt_3knoY.jpg"
+    },
+    "summary": "游戏中\r\n因某些原因担当库库伊博士的助手，和主角年龄相近的女孩子。\r\n 好像不太喜欢让宝可梦(Pokémon)在对战中战斗。\r\n 喜欢阅读图书，会阅读大量的书籍。\r\n 是在《精灵宝可梦 太阳／月亮》中担当着重要角色的人物。\r\n\r\n动画中\r\n在精灵宝可梦太阳&月亮中，莉莉艾作为小智的同学登场。\r\n莉莉艾喜爱宝可梦，但由于某原因不敢触摸它们。她对宝可梦相关的知识是一级的。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莉莉艾"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Lillie"
+                },
+                {
+                    "k": "法文名",
+                    "v": "Lilie"
+                },
+                {
+                    "k": "德文名",
+                    "v": "Lilly"
+                },
+                {
+                    "k": "意大利文名",
+                    "v": "Lylia"
+                },
+                {
+                    "k": "西班牙文名",
+                    "v": "Lylia"
+                },
+                {
+                    "k": "韩文名",
+                    "v": "릴리에"
+                },
+                {
+                    "k": "葡萄牙文名",
+                    "v": "Lillie"
+                },
+                {
+                    "k": "俄文名",
+                    "v": "Лиллия"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "眼睛颜色",
+            "value": "浅绿色"
+        },
+        {
+            "key": "头发颜色",
+            "value": "金色"
+        },
+        {
+            "key": "职业",
+            "value": "库库伊博士的助手"
+        },
+        {
+            "key": "家乡所在地",
+            "value": "阿罗拉地区"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "https://wiki.52poke.com/wiki/莉莉艾"
+                },
+                {
+                    "v": "https://wiki.52poke.com/wiki/莉莉艾（动画）"
+                }
+            ]
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 28,
+        "collects": 121
+    },
+    "anime_ids": [
+        192680
+    ]
+}

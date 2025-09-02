@@ -1,0 +1,68 @@
+{
+    "id": 20682,
+    "name": "明堂院いつき／キュアサンシャイン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e4/05/20682_crt_05jcF.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/05/20682_crt_05jcF.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/05/20682_crt_05jcF.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e4/05/20682_crt_05jcF.jpg"
+    },
+    "summary": "14岁，就读于明堂院初中部二年级，担任学生会长，文武双全，精明能干，是全校女生的偶像（在知道树是女生的情况下）。其实是代替常年卧病的哥哥成为了名堂家的少当家，以男性打扮示人。很长一段时间都压抑自己喜欢可爱事物的想法，直到被邀请进时尚部通过和时尚部各位的相处后才有所改善，渐渐地能够坦白的说出心里面的想法。精灵搭档是波普莉。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "明堂院树／阳光天使"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Cure Sunshine"
+                },
+                {
+                    "k": "日文名",
+                    "v": "明堂院 いつき"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みょうどういん いつき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Myōdōin Itsuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月21日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://baike.baidu.com/view/5988496.htm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 21,
+    "stat": {
+        "comments": 11,
+        "collects": 35
+    },
+    "anime_ids": [
+        4124
+    ]
+}

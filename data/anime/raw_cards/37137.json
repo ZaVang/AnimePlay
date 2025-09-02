@@ -1,0 +1,389 @@
+{
+    "id": 37137,
+    "type": 2,
+    "name": "TARI TARI",
+    "name_cn": "",
+    "summary": "舞台设立在神奈川县的江之岛，进入了高中音乐系的坂井和奏却在半途因为母亲突然的去世在自责的情况下放弃了音乐的道路，之后便转入了普通系。在她升入高中三年级时，以与宫本来夏、冲田纱羽的相遇为契机组成了合唱部，藉由音乐的力量，在高中最后的暑假，追寻着属于她们的梦想，编织出细小而闪耀的故事。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2012-07-01",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/de/a5/37137_2F57F.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/de/a5/37137_2F57F.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/de/a5/37137_2F57F.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/de/a5/37137_2F57F.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/de/a5/37137_2F57F.jpg"
+    },
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "TARI TARI",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2012年7月1日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://taritari.jp/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ神奈川"
+        },
+        {
+            "key": "播放结束",
+            "value": "2012年9月23日"
+        },
+        {
+            "key": "导演",
+            "value": "橋本昌和"
+        },
+        {
+            "key": "原作",
+            "value": "EVERGREEN"
+        },
+        {
+            "key": "人物设定",
+            "value": "関口可奈味、副：鈴木美咲"
+        },
+        {
+            "key": "动画制作",
+            "value": "P.A.WORKS"
+        }
+    ],
+    "volumes": 0,
+    "eps": 13,
+    "total_episodes": 14,
+    "rating": {
+        "rank": 1463,
+        "total": 5910,
+        "count": {
+            "one": 7,
+            "two": 4,
+            "three": 17,
+            "four": 41,
+            "five": 209,
+            "six": 913,
+            "seven": 2180,
+            "eight": 1962,
+            "nine": 412,
+            "ten": 165
+        },
+        "score": 7.3
+    },
+    "collection": {
+        "wish": 3154,
+        "collect": 8413,
+        "doing": 750,
+        "on_hold": 671,
+        "dropped": 432
+    },
+    "tags": [
+        {
+            "name": "P.A.WORKS",
+            "count": 2143
+        },
+        {
+            "name": "青春",
+            "count": 1357
+        },
+        {
+            "name": "校园",
+            "count": 1260
+        },
+        {
+            "name": "2012年7月",
+            "count": 928
+        },
+        {
+            "name": "原创",
+            "count": 911
+        },
+        {
+            "name": "治愈",
+            "count": 843
+        },
+        {
+            "name": "音乐",
+            "count": 750
+        },
+        {
+            "name": "TV",
+            "count": 645
+        },
+        {
+            "name": "2012",
+            "count": 412
+        },
+        {
+            "name": "TARI_TARI",
+            "count": 393
+        },
+        {
+            "name": "信PA得画质",
+            "count": 345
+        },
+        {
+            "name": "早见沙织",
+            "count": 271
+        },
+        {
+            "name": "高垣彩阳",
+            "count": 154
+        },
+        {
+            "name": "日常",
+            "count": 84
+        },
+        {
+            "name": "橋本昌和",
+            "count": 48
+        },
+        {
+            "name": "励志",
+            "count": 40
+        },
+        {
+            "name": "桥本昌和",
+            "count": 37
+        },
+        {
+            "name": "日本",
+            "count": 34
+        },
+        {
+            "name": "2012夏",
+            "count": 33
+        },
+        {
+            "name": "関口可奈味",
+            "count": 29
+        },
+        {
+            "name": "2012年",
+            "count": 21
+        },
+        {
+            "name": "百合",
+            "count": 21
+        },
+        {
+            "name": "横手美智子",
+            "count": 20
+        },
+        {
+            "name": "浜口史郎",
+            "count": 15
+        },
+        {
+            "name": "早見沙織",
+            "count": 15
+        },
+        {
+            "name": "瀬戸麻沙美",
+            "count": 13
+        },
+        {
+            "name": "高垣彩陽",
+            "count": 13
+        },
+        {
+            "name": "TARI",
+            "count": 12
+        },
+        {
+            "name": "社团",
+            "count": 11
+        },
+        {
+            "name": "TVA",
+            "count": 11
+        }
+    ],
+    "meta_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "原创",
+        "音乐"
+    ],
+    "series": false,
+    "main_character_ids": [
+        16201,
+        16202,
+        16203,
+        16204,
+        16205
+    ],
+    "main_characters": [
+        {
+            "id": 16201,
+            "name": "坂井和奏",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/58/3a/16201_crt_9K6tz.jpg?r=1364087030",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/3a/16201_crt_9K6tz.jpg?r=1364087030",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/3a/16201_crt_9K6tz.jpg?r=1364087030",
+                "grid": "https://lain.bgm.tv/pic/crt/g/58/3a/16201_crt_9K6tz.jpg?r=1364087030"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4757,
+                    "name": "高垣彩陽",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bd/da/4757_prsn_4OzGs.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/da/4757_prsn_4OzGs.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/da/4757_prsn_4OzGs.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bd/da/4757_prsn_4OzGs.jpg"
+                    },
+                    "short_summary": "高垣 彩陽（たかがき あやひ、1985年10月25日 - ）は、日本の声優、歌手、舞台女優。\r\n東京都出身。ミュージックレイン所属。愛称はあやひー、あやひちゃんなど。家族構成では、弟と妹が1人ずついる。\r\n代表作に『戦姫絶唱シンフォギアG』（雪音クリス）、『ガンダム Gのレコンギスタ』（マニィ・アンバサダ）、『ジュエルペット マジカルチェンジ』（ラリマー）などがある。\r\n\r\n2019年8月23日、舞台出演時にスタッフだった男性と結婚したことを発表。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16202,
+            "name": "宮本来夏",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d2/53/16202_crt_KDU8k.jpg?r=1364087025",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/53/16202_crt_KDU8k.jpg?r=1364087025",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/53/16202_crt_KDU8k.jpg?r=1364087025",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d2/53/16202_crt_KDU8k.jpg?r=1364087025"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5766,
+                    "name": "瀬戸麻沙美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/b7/5766_prsn_6q644.jpg"
+                    },
+                    "short_summary": "中学生2年生の時、偶然視聴したアニメ『D.Gray-man』の主人公、アレン・ウォーカー（声：小林沙苗）に魅せられ、キャラクターだけでなく演者の声優にも興味が湧き、声優を志す。高校在学中の2009年に声優事務所のオーディションを受験、翌2010年より声優活動を開始する。\r\n2010年、初めて受けたオーディションでテレビアニメ『放浪息子』（2011年）の準主人公 \"高槻よしの\" 役に抜擢される。彼女にとって初仕事の収録だったが、演技などに関して事前の指示はほとんど必要としなかったと監督のあおきえいは述べている。\r\n2011年、日本テレビ系テレビアニメ『ちはやふる』で主演（ \"綾瀬千早\" 役）とエンディング主題歌の歌唱を担当。同局系列のテレビアニメ『HUNTER×HUNTER』の \"クラピカ\" 役オーディションに参加していた瀬戸の演技が『ちはやふる』番組関係者の目に留まり、改めて \"綾瀬千早\" 役のオーディションを行ったところ満場一致で瀬戸の起用が決定した。\r\n2015年4月1日付けで、シグマ・セブンeからシグマ・セブンへ移動。\r\n2021年11月1日よりStarCrewへ移籍。あわせて公式Twitterアカウントを開設した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16203,
+            "name": "沖田紗羽",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7c/fc/16203_crt_0ECZ7.jpg?r=1592101145",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/fc/16203_crt_0ECZ7.jpg?r=1592101145",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/fc/16203_crt_0ECZ7.jpg?r=1592101145",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7c/fc/16203_crt_0ECZ7.jpg?r=1592101145"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4895,
+                    "name": "早見沙織",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522"
+                    },
+                    "short_summary": "幼儿园、小学、初中、高中就读于白百合学园，高中时转入都内高中就读。早稻田大学毕业。\r\n在小学4年级的时候知道了“声优”这职业，决心成为声优。\r\n2004年4月，中学1年级时进入日本播音演技研究所少年声优班学习。\r\n在少年声优班第二年的2006年3月，通过I'm Enterprise的选拔考试。第一次工作是《机械女仆》的Drama CD。之后在2007年透过《桃华月惮》动画出道。\r\n清脆的声音是其特征。演技幅度很广的实力派，从幼女到花样年华的少女、文静的角色到活泼的角色、而且还能演出少年角色动物角色。演出的不同角色之间的差别很大。此外歌唱力也有公认的评价。\r\n2008年4月起，因学业缘故，每周只到日本播音演技研究所上一次课。2008年10月3日，首次主持广播节目《ラジオどっとあい 早见沙织のぽじてぃ部〜Sweetsな放课後》。\r\n2015年4月21日，以TV动画《赤发白雪姬》的片头主题歌《やさしい希望》歌手出道。\r\n2016年，在第10回声优奖中获得助演女优奖。\r\n\r\n家庭构成是父亲、母亲。还饲养着兔子。喜欢看警察题材的电视剧，在广播中透露出是电视剧《相棒》系列的FANS。\r\n从4岁开始学弹钢琴，此外还学过绘画、游泳、网球等众多东西，不过唯一持续下来的是弹钢琴，体育类的基本都持续不久。在绘画方面，据说曾在小学生时参加亚洲大赛并获得金奖。\r\n小时候开始就很喜欢唱歌，据说和母亲一起坐车的时候总是跟着车上的播放机大声地唱歌，然后母亲经常会指导她说“刚才走调了”之类的。在爵士乐歌手的母亲的推荐下在中学时就开始学习唱爵士乐。\r\n性格非常稳健，待人很有礼貌。而且在演技上具有很高的意识和才能，在声优前辈和动画制作人员中也有很高的评价。据说同事务所的间岛淳司在收录现场看到刚出道没多久时候的早见时说“看来我们事务所将来也很安泰啊”。\r\n也有天然的一面，曾把洗面奶错当牙膏拿来刷牙，还曾在收录时背后的拉链没拉上就来到录音棚。\r\n与同事务所的山本麻里安一样，因为就读的学校禁止艺术类活动而转校，在声优与学业两付重担艰难前行。\r\n与悠木碧和东山奈央公私关系良好，交往密切。日高里菜曾表示过“超喜欢早见沙织”，两人私交甚密。\r\n在广播节目中有时会模仿黑柳彻子、安东尼奥·猪木、儿玉清等。在《鹡鸰女神》的广播节目《セキレイらじお》中模仿黑柳彻子的段子，并在《鹡鸰女神》DVD第6卷的OVA里被用来作恶搞。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16204,
+            "name": "田中大智",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c7/e9/16204_crt_0Sx0s.jpg?r=1364086995",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/e9/16204_crt_0Sx0s.jpg?r=1364086995",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/e9/16204_crt_0Sx0s.jpg?r=1364086995",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c7/e9/16204_crt_0Sx0s.jpg?r=1364086995"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7392,
+                    "name": "島﨑信長",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/65/0b/7392_prsn_85bDV.jpg"
+                    },
+                    "short_summary": "岛﨑信长（1988年12月6日－），日本男性配音演员。隶属于青二Production。出身于宫城县。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16205,
+            "name": "ウィーン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0e/73/16205_crt_U7a4n.jpg?r=1427919243",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/73/16205_crt_U7a4n.jpg?r=1427919243",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/73/16205_crt_U7a4n.jpg?r=1427919243",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0e/73/16205_crt_U7a4n.jpg?r=1427919243"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7772,
+                    "name": "花江夏樹",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084"
+                    },
+                    "short_summary": "花江夏树是日本的男性声优，ACROSS ENTERTAINMENT所属。\r\n「花江」是艺名，「夏樹」为本名。本名姓氏为「武田」。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

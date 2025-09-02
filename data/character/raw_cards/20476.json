@@ -1,0 +1,64 @@
+{
+    "id": 20476,
+    "name": "真木夏緒",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/39/c8/20476_crt_0fyZv.jpg?r=1605806851",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/c8/20476_crt_0fyZv.jpg?r=1605806851",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/c8/20476_crt_0fyZv.jpg?r=1605806851",
+        "grid": "https://lain.bgm.tv/pic/crt/g/39/c8/20476_crt_0fyZv.jpg?r=1605806851"
+    },
+    "summary": "通称「真木」。私立藤崎女子中学2年级生，学生会会长。容姿端正，成绩优秀。是个被众人憧憬，暗地里被称为「藤姬大人」的存在。但实际上这位「藤姬大人」一个人在学生会室内日以继夜的进行着「恋爱研究」。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "真木夏绪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "真木 夏緒"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まき なつお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Maki Natsuo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月23日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 23,
+    "stat": {
+        "comments": 24,
+        "collects": 119
+    },
+    "anime_ids": [
+        58850
+    ]
+}

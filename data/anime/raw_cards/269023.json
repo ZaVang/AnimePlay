@@ -1,0 +1,503 @@
+{
+    "id": 269023,
+    "type": 2,
+    "name": "キラッとプリ☆チャン シーズン2",
+    "name_cn": "闪亮美妙☆频道 第二季",
+    "summary": "",
+    "nsfw": false,
+    "locked": false,
+    "date": "2019-04-07",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/5a/df/269023_0a1L6.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/5a/df/269023_0a1L6.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/5a/df/269023_0a1L6.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/5a/df/269023_0a1L6.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/5a/df/269023_0a1L6.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "闪亮美妙☆频道 第二季"
+        },
+        {
+            "key": "话数",
+            "value": "51"
+        },
+        {
+            "key": "放送开始",
+            "value": "2019年4月7日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.tv-tokyo.co.jp/anime/prichan/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京"
+        },
+        {
+            "key": "其他电视台",
+            "value": "テレビ北海道 / テレビ愛知 / テレビ大阪 / テレビせとうち / TVQ九州放送 / BSジャパン"
+        },
+        {
+            "key": "播放结束",
+            "value": "2020年3月29日"
+        },
+        {
+            "key": "动画制作",
+            "value": "タツノコプロ・DONGWOO A&E"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "Run Girls, Run!(林鼓子・森嶋優花・厚木那奈美)"
+        }
+    ],
+    "volumes": 0,
+    "eps": 51,
+    "total_episodes": 51,
+    "rating": {
+        "rank": 1844,
+        "total": 71,
+        "count": {
+            "one": 0,
+            "two": 0,
+            "three": 0,
+            "four": 2,
+            "five": 1,
+            "six": 16,
+            "seven": 27,
+            "eight": 15,
+            "nine": 3,
+            "ten": 7
+        },
+        "score": 7.3
+    },
+    "collection": {
+        "wish": 55,
+        "collect": 103,
+        "doing": 17,
+        "on_hold": 6,
+        "dropped": 19
+    },
+    "tags": [
+        {
+            "name": "TV",
+            "count": 31
+        },
+        {
+            "name": "原创",
+            "count": 26
+        },
+        {
+            "name": "2019",
+            "count": 23
+        },
+        {
+            "name": "幼女向",
+            "count": 20
+        },
+        {
+            "name": "龙之子",
+            "count": 19
+        },
+        {
+            "name": "偶像",
+            "count": 17
+        },
+        {
+            "name": "2019年4月",
+            "count": 13
+        },
+        {
+            "name": "百合",
+            "count": 11
+        },
+        {
+            "name": "タツノコプロ",
+            "count": 9
+        },
+        {
+            "name": "博史池畠",
+            "count": 7
+        },
+        {
+            "name": "年番",
+            "count": 5
+        },
+        {
+            "name": "日本",
+            "count": 5
+        },
+        {
+            "name": "兵頭一歩",
+            "count": 4
+        },
+        {
+            "name": "Pretty系列",
+            "count": 2
+        },
+        {
+            "name": "大友",
+            "count": 2
+        },
+        {
+            "name": "美妙系列",
+            "count": 2
+        },
+        {
+            "name": "キラッとプリ☆チャン",
+            "count": 2
+        },
+        {
+            "name": "満田一",
+            "count": 2
+        },
+        {
+            "name": "已下载",
+            "count": 2
+        },
+        {
+            "name": "2010s",
+            "count": 2
+        },
+        {
+            "name": "子供向",
+            "count": 2
+        },
+        {
+            "name": "音乐",
+            "count": 2
+        },
+        {
+            "name": "2019秋",
+            "count": 1
+        },
+        {
+            "name": "安藤尚也",
+            "count": 1
+        },
+        {
+            "name": "日本动画",
+            "count": 1
+        },
+        {
+            "name": "森嶋優花",
+            "count": 1
+        },
+        {
+            "name": "2019夏",
+            "count": 1
+        },
+        {
+            "name": "2019春",
+            "count": 1
+        },
+        {
+            "name": "2020冬",
+            "count": 1
+        },
+        {
+            "name": "林鼓子",
+            "count": 1
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "series": false,
+    "main_character_ids": [
+        62582,
+        62583,
+        63842,
+        63843,
+        63844,
+        66253,
+        73947,
+        73948,
+        73949
+    ],
+    "main_characters": [
+        {
+            "id": 62582,
+            "name": "桃山みらい",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8c/5b/62582_crt_eDvaX.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/5b/62582_crt_eDvaX.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/5b/62582_crt_eDvaX.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8c/5b/62582_crt_eDvaX.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 32434,
+                    "name": "林鼓子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d7/cf/32434_prsn_GcsNC.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/cf/32434_prsn_GcsNC.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/cf/32434_prsn_GcsNC.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d7/cf/32434_prsn_GcsNC.jpg"
+                    },
+                    "short_summary": "静岡県出身、81プロデュース、エイベックス・ピクチャーズ所属。avex×81produce Wake Up, Girls! AUDITION 第3回アニソン・ヴォーカルオーディション 合格。森嶋優花、厚木那奈美と共に3人組のユニットRun Girls, Run!を結成。『Wake Up, Girls! 新章』でアニメ初出演。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 62583,
+            "name": "萌黄えも",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/56/3f/62583_crt_3Ot88.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/3f/62583_crt_3Ot88.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/3f/62583_crt_3Ot88.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/56/3f/62583_crt_3Ot88.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 18430,
+                    "name": "久保田未夢",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7f/37/18430_prsn_45P6R.jpg?r=1727538610",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/37/18430_prsn_45P6R.jpg?r=1727538610",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/37/18430_prsn_45P6R.jpg?r=1727538610",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7f/37/18430_prsn_45P6R.jpg?r=1727538610"
+                    },
+                    "short_summary": "大手レコード会社エイベックスと声優事務所81プロデュースがタッグを組んで開催した、「アニソン・ヴォーカルオーディション」の合格者6名にて結成されたユニット「i☆Ris」のメンバーとしても活動している。ユニット内でのイメージカラーはオレンジ。挨拶は「わんわんおー（U＾ω＾）」。\r\n\r\n趣味はアニメ鑑賞[1]。好きなキャラクターは『デュラララ!!』の平和島静雄。\r\n\r\n犬が大好きで挨拶の由来にもなっている。飼いたい犬はドーベルマン。\r\n\r\n工業高校出身で、フォークリフトとアーク溶接の免許を所持している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 63842,
+            "name": "青葉りんか",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/52/37/63842_crt_p27Pq.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/37/63842_crt_p27Pq.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/37/63842_crt_p27Pq.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/52/37/63842_crt_p27Pq.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 33669,
+                    "name": "厚木那奈美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/22/89/33669_prsn_5he1u.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/89/33669_prsn_5he1u.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/89/33669_prsn_5he1u.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/22/89/33669_prsn_5he1u.jpg"
+                    },
+                    "short_summary": "厚木 那奈美は、日本の女性声優。長野県出身。81プロデュース、エイベックス・ピクチャーズ所属。\r\navex×81produce Wake Up, Girls! AUDITION 第3回アニソン・ヴォーカルオーディション 合格。林鼓子、森嶋優花と共に3人組のユニットRun Girls, Run!を結成。『Wake Up, Girls! 新章』でアニメ初出演。\r\n3歳頃から10年以上、クラシックバレエ教室に通っていた。\r\n読書好きであり、西尾維新などの作品を好んでいる。\r\n声優の峯田茉優とは中学生時代の同級生であり、峯田茉優がパーソナリティを務める本気!アニラブで共演を果たしている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 63843,
+            "name": "赤城あんな",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/49/1a/63843_crt_r8z6I.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/1a/63843_crt_r8z6I.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/1a/63843_crt_r8z6I.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/49/1a/63843_crt_r8z6I.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10035,
+                    "name": "芹澤優",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/73/98/10035_prsn_czi9z.jpg?r=1688802903",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/98/10035_prsn_czi9z.jpg?r=1688802903",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/98/10035_prsn_czi9z.jpg?r=1688802903",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/73/98/10035_prsn_czi9z.jpg?r=1688802903"
+                    },
+                    "short_summary": "ニックネーム：ゆう\r\nイメージカラー：ブルー\r\n特技：早口言葉\r\n趣味：料理\r\n好きなアニソン：「ガーネット」／奥華子さん\r\n将来の夢：声優・芹澤優として世界中で歌と\r\nセリフを入れ混ぜた 最高のLIVEをすることです。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 63844,
+            "name": "緑川さら",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/43/c3/63844_crt_UJAzp.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/43/c3/63844_crt_UJAzp.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/43/c3/63844_crt_UJAzp.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/43/c3/63844_crt_UJAzp.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 20215,
+                    "name": "若井友希",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/68/46/20215_prsn_5ibVu.jpg?r=1708184137",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/46/20215_prsn_5ibVu.jpg?r=1708184137",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/46/20215_prsn_5ibVu.jpg?r=1708184137",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/68/46/20215_prsn_5ibVu.jpg?r=1708184137"
+                    },
+                    "short_summary": "日本的女性声优、歌手，岐阜县出身，所属事务所为81 PRODUCE。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 66253,
+            "name": "紫藤める",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/91/c3/66253_crt_rZGS0.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/c3/66253_crt_rZGS0.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/c3/66253_crt_rZGS0.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/91/c3/66253_crt_rZGS0.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 32733,
+                    "name": "森嶋優花",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f7/c8/32733_prsn_NLhnp.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/c8/32733_prsn_NLhnp.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/c8/32733_prsn_NLhnp.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f7/c8/32733_prsn_NLhnp.jpg"
+                    },
+                    "short_summary": "森嶋 優花（もりしま ゆうか、1997年3月16日- ）は、日本の女性声優。京都府出身。81プロデュース、エイベックス・ピクチャーズ所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 73947,
+            "name": "だいあ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/01/c3/73947_crt_aa9NX.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/c3/73947_crt_aa9NX.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/c3/73947_crt_aa9NX.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/01/c3/73947_crt_aa9NX.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 22181,
+                    "name": "佐々木李子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/05/dc/22181_prsn_gjyRR.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/dc/22181_prsn_gjyRR.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/dc/22181_prsn_gjyRR.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/05/dc/22181_prsn_gjyRR.jpg"
+                    },
+                    "short_summary": "日本の女優、歌手。秋田県秋田市出身、仙台市在住。ハニカムエンタテインメント所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 73948,
+            "name": "金森まりあ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/74/14/73948_crt_YYUdw.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/74/14/73948_crt_YYUdw.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/74/14/73948_crt_YYUdw.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/74/14/73948_crt_YYUdw.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 18076,
+                    "name": "茜屋日海夏",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0f/e5/18076_prsn_deqh2.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/e5/18076_prsn_deqh2.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/e5/18076_prsn_deqh2.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0f/e5/18076_prsn_deqh2.jpg"
+                    },
+                    "short_summary": "日本の女性声優、歌手。\r\n大手レコード会社エイベックスと、声優事務所81プロデュースがタッグを組んで開催した「アニソン・ヴォーカルオーディション」の合格者6名にて結成されたユニット、i☆Risのメンバーとしても活動している。ユニット内でのイメージカラーはパープル。\r\n特技はイラスト描きで、好きなアニメソングは坂本真綾の「ループ」。 スーパー戦隊シリーズが好きで、一番好きな戦隊は「救急戦隊ゴーゴーファイブ」。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 73949,
+            "name": "黒川すず",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c2/31/73949_crt_197gD.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/31/73949_crt_197gD.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/31/73949_crt_197gD.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c2/31/73949_crt_197gD.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7278,
+                    "name": "徳井青空",
+                    "type": 1,
+                    "career": [
+                        "mangaka",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3b/1b/7278_prsn_77Rrt.jpg?r=1510051339",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/1b/7278_prsn_77Rrt.jpg?r=1510051339",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/1b/7278_prsn_77Rrt.jpg?r=1510051339",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3b/1b/7278_prsn_77Rrt.jpg?r=1510051339"
+                    },
+                    "short_summary": "徳井 青空（とくい そら、1989年12月26日 - ）は、日本の女性声優、漫画家、絵本作家、DJ。\r\n千葉県南房総市出身。身長160cm、血液型はO型。エイベックス・ピクチャーズ所属。\r\n愛称はそらまる。μ'sおよびミルキィホームズのメンバーでもある。2019年4月1日に設立のオフィシャルファンクラブ名はぐーもる荘。\r\n\r\nドワンゴクリエイティブスクール出身。羽田千尋と共に『鷲崎健のアニメロ新人オーディション』三期生として出演。\r\n2009年、『ヴァイス・サヴァイヴR』姫宮 役で声優デビュー。同年12月25日から翌年10月8日までミルキィホームズ 探偵学院放送室にレギュラー出演。\r\n2011年、メインイベント『みらくる青空ナイト〜青空、襲来〜』を開催。以後、断続的に開催されている。\r\n『オタポケ』誌上にて4コマ漫画『魔法少女★自宅ちゃん』を連載、漫画家デビューを果たす。\r\n2012年4月、出身地である南房総市の観光大使に任命される。\r\n2015年、第9回声優アワードにて、μ'sの一員として歌唱賞を受賞。\r\n12月31日、μ'sの一員として第66回NHK紅白歌合戦に初出場した。\r\n2017年2月、作画を手掛ける漫画『まけるな!!あくのぐんだん!』のアニメ化が発表され、2017年4月より6月までTOKYO MX他にて、5分枠の短編アニメとして放送された。\r\n2018年3月、響との契約満了に伴い、4月1日付けでエイベックス・ピクチャーズの所属になる。\r\n第4回アニラジアワードにおいて、『徳井青空のまぁるくなぁれ!』が「聴いていると色々勉強になるラジオ」を受賞。\r\n12月7日、『パンダの推しごと!』で絵本作家デビューを果たす。\r\n2019年4月1日、オフィシャルファンクラブ『ぐーもる荘』を設立。翌年、公式ファンクラブアプリ『ぐーもる荘』が配信。\r\n2020年3月21日、公式YouTubeサイト『そらまるのチャンネル』を開設。4月14日、「bilibili」にもチャンネルを開設。5月4日、実写短編映画『時々は、眠れない夜に』で映画監督デビュー。\r\n\r\n自他共に認めるオタクで、『新世紀エヴァンゲリオン』が大好きで、コスプレもこなす。自身がメインを務めるイベント『みらくる青空ナイト』では、毎回TV版のサブタイトルを捩ったサブタイトルをイベント名にしている。また、中川翔子を同趣味の先輩として尊敬しており、中川とはプライベートでも仲良しである。\r\n好きな食べ物はチャーハン、ペプシネックス、白米、サーモン、肉等。嫌いな食べ物はゆで卵、トマトジュースなど。\r\n両親は空手家で、弟がいる。\r\n好きな芸人は「シャカ」。\r\n幼少期、月刊コロコロコミックの愛読者で、中でもポケットモンスターにハマり、初恋の相手はリザードンである。その後、週刊少年ジャンプも愛読するようになり、初めて好きになった人間のキャラクターはONE PIECEに登場するサンジ。小学生の頃、等身大サンジをフェルトでつくるのにトライしたこともある。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

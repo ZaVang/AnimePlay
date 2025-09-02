@@ -1,0 +1,72 @@
+{
+    "id": 51006,
+    "name": "クトリ・ノタ・セニオリス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4f/db/51006_crt_jjz0y.jpg?r=1505275300",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/db/51006_crt_jjz0y.jpg?r=1505275300",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/db/51006_crt_jjz0y.jpg?r=1505275300",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4f/db/51006_crt_jjz0y.jpg?r=1505275300"
+    },
+    "summary": "妖精兵的少女。最强圣剑之一“瑟尼欧里斯”的适合者。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "珂朵莉·诺塔·瑟尼欧里斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Chtholly-Nota-Seniorious"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://sukasuka-anime.com/chara/chtholly.html"
+        },
+        {
+            "key": "年龄",
+            "value": "15"
+        },
+        {
+            "key": "种族",
+            "value": "黄金妖精 -leprechaun-"
+        },
+        {
+            "key": "Birth",
+            "value": "第94番浮遊島 [422/Jan]"
+        },
+        {
+            "key": "Hair",
+            "value": "蒼空"
+        },
+        {
+            "key": "Eye",
+            "value": "凪の海"
+        },
+        {
+            "key": "Position",
+            "value": "成体妖精兵（グレードＳ）"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 165,
+        "collects": 963
+    },
+    "anime_ids": [
+        185943
+    ]
+}

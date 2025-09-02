@@ -1,0 +1,72 @@
+{
+    "id": 36307,
+    "name": "徳川まつり",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f9/2a/36307_crt_9Vj9m.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/2a/36307_crt_9Vj9m.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/2a/36307_crt_9Vj9m.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f9/2a/36307_crt_9Vj9m.jpg"
+    },
+    "summary": "《偶像大师 百万LIVE!》登场的偶像。Visual属性。 \r\n\r\n头上戴着大大的发带，十分有洛丽塔风格的19岁公主偶像，外形酷似某厄神。 \r\n\r\n使用着独特的语调说话，第一人称是「茉莉（まつり）」、「公主（姫）」或「茉莉公主（まつり姫）」。 \r\n\r\n性格十分天然（？），一举一动不受四周的影响，真的就像一个开朗，天真的公主。把765剧场称成自己的城堡。 \r\n\r\n不知为何自报家门时从来不会说提起自己的姓氏，并且说那不重要。有人猜测她是德川幕府家族的后裔。 \r\n\r\n特技一栏写的是表演，又让人不禁怀疑她这个样子是不是在扮演一个角色。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "德川茉莉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Tokugawa Matsuri"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "とくがわ まつり"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月4日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        },
+        {
+            "key": "体重",
+            "value": "44kg"
+        },
+        {
+            "key": "BWH",
+            "value": "85-59-85"
+        },
+        {
+            "key": "年龄",
+            "value": "19岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 4,
+    "stat": {
+        "comments": 14,
+        "collects": 18
+    },
+    "anime_ids": [
+        309807
+    ]
+}

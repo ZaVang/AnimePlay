@@ -1,0 +1,57 @@
+{
+    "id": 67780,
+    "name": "魔法之星爱美",
+    "image_path": "data/images/anime/67780.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "香月 舞は小学5年生で11歳のマジシャンを夢見る少女。祖父が主宰するマジック劇団「マジカラット」の手伝いをしているが、生来の不器用さが災いし、なかなかマジシャンとはいかない感じ。こてまり台に引っ越してきた最中、偶然舞は鏡の妖精・トポと出会い、「願いの叶う魔法」をもらった。そして、魔法のブレスレットで天才マジシャン「マジカルエミ」に変身する。魔法で魅せるマジックで観客を魅了し、ステージは大成功する。そして、たまたま、このステージを見ていたテレビ局のプロデューサーにエミはテレビに出演させられることに。そのままアイドルデビューさせられてしまう。こうして、普通の小学生とアイドル「マジカルエミ」という忙しい生活が始まる。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 38,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "1985-06-07",
+    "rating_rank": 1648,
+    "rating_score": 7.3,
+    "rating_total": 66,
+    "main_character_ids": [
+        23141
+    ],
+    "main_characters": [
+        {
+            "id": 23141,
+            "name": "香月舞",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/87/1e/23141_crt_FiXNU.jpg?r=1390517598",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/1e/23141_crt_FiXNU.jpg?r=1390517598",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/1e/23141_crt_FiXNU.jpg?r=1390517598",
+                "grid": "https://lain.bgm.tv/pic/crt/g/87/1e/23141_crt_FiXNU.jpg?r=1390517598"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13763,
+                    "name": "小幡洋子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/23/62/13763_prsn_Zq0ig.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/23/62/13763_prsn_Zq0ig.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/23/62/13763_prsn_Zq0ig.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/23/62/13763_prsn_Zq0ig.jpg"
+                    },
+                    "short_summary": "1985年、｢不思議色ハピネス｣でデビュー。このデビュー曲「不思議色ハピネス」は、アニメ「魔法のスターマジカルエミ」の主題歌となり、また主人公でもある香月舞（=エミ）の声も担当した。また、同年冬にLP「パール・アイランド」を発表。\r\n\r\n翌1986年、アニメ映画「天空の城ラピュタ」のイメージソング「もしも空を飛べたら」を発売。 コンサートのラストでバケツの水を頭からかぶることから、「びしょぬれ洋子」のニックネームを持つ。 同世代へのメッセージソングをロックに託して歌う。\r\n\r\n1986年、須貝幸生、神長弘一とロックバンド「YOCO & LOOK OUT」を結成。後に「LOOK OUT」と改名。\r\n\r\n1989年、解散し、翌1990年東宏を加えて「ESSEX」として再出発。1991年3月シングル「100%熱くなれ」でデビュー。1992年アルバム「POPPES」をリリース。翌1993年に解散。\r\n\r\nその後も作詞活動を続けていたが、現在は引退（引退した年は不明）、アクセサリーデザイナーとして活動。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

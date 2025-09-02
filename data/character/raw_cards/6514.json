@@ -1,0 +1,68 @@
+{
+    "id": 6514,
+    "name": "ナディア・ラ・アルウォール",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/03/3c/6514_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/3c/6514_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/3c/6514_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/03/3c/6514_crt_anidb.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "娜蒂亚·拉·阿瓦尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ナディア・ラ・アルウォール"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nadia La Arwall"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1875-05-31"
+        },
+        {
+            "key": "身高",
+            "value": "155"
+        },
+        {
+            "key": "体重",
+            "value": "43"
+        },
+        {
+            "key": "BWH",
+            "value": "79/58/83"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 31,
+    "stat": {
+        "comments": 23,
+        "collects": 45
+    },
+    "anime_ids": [
+        1981
+    ]
+}

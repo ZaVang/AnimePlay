@@ -1,0 +1,40 @@
+{
+    "id": 160990,
+    "name": "エンドオブザワールド",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4e/20/160990_crt_43z8j.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/20/160990_crt_43z8j.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/20/160990_crt_43z8j.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4e/20/160990_crt_43z8j.jpg"
+    },
+    "summary": "﻿真っすぐな性格の快活ガール。好きな「歌」で島中を笑顔にしたいと思っている。\r\n村人達も彼女を唯一の希望「歌姫」として、拠り所にしている。\r\nしかし、そんな彼女の正体が村を混乱に導く…！\r\n\r\n性格开朗率直的女孩，希望能用自己喜欢的“歌”为岛上带来笑容，村民把她当作唯一的希望并称呼她为“歌姬”。\r\n然而、这位女孩的真实身分却让村子陷入混乱…！",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "世界末日"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "End of The World"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 27,
+        "collects": 24
+    },
+    "anime_ids": [
+        490824
+    ]
+}

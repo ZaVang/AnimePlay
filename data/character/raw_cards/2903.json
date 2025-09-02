@@ -1,0 +1,70 @@
+{
+    "id": 2903,
+    "name": "千鳥かなめ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/64/30/2903_crt_R9HCA.jpg?r=1528196673",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/64/30/2903_crt_R9HCA.jpg?r=1528196673",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/64/30/2903_crt_R9HCA.jpg?r=1528196673",
+        "grid": "https://lain.bgm.tv/pic/crt/g/64/30/2903_crt_R9HCA.jpg?r=1528196673"
+    },
+    "summary": "「阵代最不想成为恋人的No.1偶像」",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "千鸟要"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Kaname Chidori"
+                },
+                {
+                    "k": "日文名",
+                    "v": "千鳥かなめ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Chidori Kaname"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1984-12-24"
+        },
+        {
+            "key": "身高",
+            "value": "166"
+        },
+        {
+            "key": "体重",
+            "value": "50"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1984,
+    "birth_mon": 12,
+    "birth_day": 24,
+    "stat": {
+        "comments": 45,
+        "collects": 216
+    },
+    "anime_ids": [
+        338,
+        337,
+        334
+    ]
+}

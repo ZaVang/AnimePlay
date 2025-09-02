@@ -1,0 +1,72 @@
+{
+    "id": 94171,
+    "name": "小戸川宏",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3b/fc/94171_crt_FdpG0.jpg?r=1617684904",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/fc/94171_crt_FdpG0.jpg?r=1617684904",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/fc/94171_crt_FdpG0.jpg?r=1617684904",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3b/fc/94171_crt_FdpG0.jpg?r=1617684904"
+    },
+    "summary": "他人にあまり心を開かない、偏屈で無口な変わり者。\r\nまじめで情に厚い一面もある。\r\n趣味は寝る前に聞く落語と仕事中に聞くラジオ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小户川宏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小戸川 宏"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おどかわ ひろし"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Odokawa Hiroshi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月25日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://www.tv-tokyo.co.jp/anime/oddtaxi/chara/"
+        },
+        {
+            "key": "年龄",
+            "value": "41岁"
+        },
+        {
+            "key": "职业",
+            "value": "出租车司机"
+        },
+        {
+            "key": "动物形象",
+            "value": "海象"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 25,
+    "stat": {
+        "comments": 71,
+        "collects": 89
+    },
+    "anime_ids": [
+        325285
+    ]
+}

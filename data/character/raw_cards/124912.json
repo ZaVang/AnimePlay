@@ -1,0 +1,48 @@
+{
+    "id": 124912,
+    "name": "峰一平",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e7/39/124912_crt_4Tky1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/39/124912_crt_4Tky1.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/39/124912_crt_4Tky1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e7/39/124912_crt_4Tky1.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "峰一平"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みね いっぺい"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://appmedia.jp/srw30/27142843"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        37178
+    ]
+}

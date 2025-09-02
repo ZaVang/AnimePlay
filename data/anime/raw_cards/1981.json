@@ -1,0 +1,436 @@
+{
+    "id": 1981,
+    "type": 2,
+    "name": "ふしぎの海のナディア",
+    "name_cn": "蓝宝石之谜",
+    "summary": "叙述发生于1889年巴黎世界博览会，在埃菲尔铁塔上相遇的两人和一只─拥有神秘蓝宝石的马戏团少女娜迪亚、爱好飞机和发明的少年约翰以及娜迪亚的好友小狮子小狮王的故事。\r\n\r\n娜迪亚和约翰从觊觎她所持宝石的葛兰蒂斯一行人逃跑，并开始了寻找娜迪亚的故乡之旅。途中，他们巧遇邪恶组织“尼奥亚特兰帝国”（或译新亚特兰帝国）的总统卡格伊所占据的岛屿上幸存的少女玛莉。但是，娜迪亚、玛莉和小狮王被卡格伊拐走。为了拯救他们，约翰和葛兰蒂斯三人组联手，并且和万能潜水艇鹦鹉螺号及尼莫船长等人相遇，最终还被卷入了和卡格伊的战斗。\r\n\r\n本作品的主要构成是以传说中的拥有超古代文明的大陆帝国─亚特兰蒂斯帝国为主轴，第一部为鹦鹉螺号和尼奥亚特兰双方使用从前亚特兰蒂斯人所造之先进机械来进行海底及空中战争，但第二部 为无人岛悠闲生活的故事和在非洲发生的趣事，第三部仿佛宇宙战舰大和号般的新鹦鹉螺号和尼奥亚特兰的宇宙战争。",
+    "nsfw": false,
+    "locked": false,
+    "date": "1990-04-13",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/b3/b4/1981_UjOR0.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/b3/b4/1981_UjOR0.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/b3/b4/1981_UjOR0.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/b3/b4/1981_UjOR0.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/b3/b4/1981_UjOR0.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "蓝宝石之谜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Fushigi no Umi no Nadia",
+                    "k": null
+                },
+                {
+                    "v": "Nadia The Secret of Blue Wate",
+                    "k": null
+                },
+                {
+                    "v": "海底两万里",
+                    "k": null
+                },
+                {
+                    "v": "冒险少女娜汀亚",
+                    "k": null
+                },
+                {
+                    "v": "不可思议之海的娜汀亚",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "39"
+        },
+        {
+            "key": "放送开始",
+            "value": "1990年4月13日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期五"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://www.nhk-character.com/chara/nadia/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "NHK総合テレビ"
+        },
+        {
+            "key": "播放结束",
+            "value": "1991年3月29日"
+        },
+        {
+            "key": "导演",
+            "value": "樋口真嗣（第23 - 39話）"
+        },
+        {
+            "key": "其他",
+            "value": "GAINAX表记为“动画制作协力”，并非动画制作，注意不要混淆"
+        },
+        {
+            "key": "Copyright",
+            "value": "© NHK・NEP"
+        },
+        {
+            "key": "原案",
+            "value": "The Secret of Blue Water 作『海底二万マイル』（海底二万里）"
+        },
+        {
+            "key": "总导演",
+            "value": "庵野秀明"
+        },
+        {
+            "key": "美术监督",
+            "value": "菊地正典、佐々木洋（第1 - 33話）、小倉宏昌（第34 - 39話）"
+        },
+        {
+            "key": "机械作画监督",
+            "value": "増尾昭一"
+        },
+        {
+            "key": "剪辑",
+            "value": "古川雅士(～７・9話)、尾形治敏(8話)、薩川昭夫(10話～)"
+        },
+        {
+            "key": "音效",
+            "value": "野口透（アニメサウンドプロダクション）"
+        },
+        {
+            "key": "录音调整",
+            "value": "成清量、西澤規夫（第5 - 39話）"
+        },
+        {
+            "key": "录音助手",
+            "value": "武藤雅人"
+        },
+        {
+            "key": "录音室",
+            "value": "整音スタジオ"
+        },
+        {
+            "key": "录音制作",
+            "value": "ザックプロモーション"
+        },
+        {
+            "key": "后记作画",
+            "value": "本田雄（第39話）"
+        },
+        {
+            "key": "制作",
+            "value": "久保田弘、丸山健一（第1 - 22話）、吉田圭一郎（第23 - 39話）"
+        },
+        {
+            "key": "动画制作",
+            "value": "東宝、KORAD"
+        },
+        {
+            "key": "制作协力",
+            "value": "グループ・タック、GAINAX、世映動画（現：同友アニメーション）"
+        },
+        {
+            "key": "共同制作",
+            "value": "NHKエンタープライズ、総合ビジョン"
+        },
+        {
+            "key": "企画制作（第1 - 28話）→制作著作（第29 - 39話）",
+            "value": "NHK"
+        }
+    ],
+    "volumes": 0,
+    "eps": 39,
+    "total_episodes": 39,
+    "rating": {
+        "rank": 557,
+        "total": 1467,
+        "count": {
+            "one": 0,
+            "two": 6,
+            "three": 4,
+            "four": 13,
+            "five": 37,
+            "six": 122,
+            "seven": 385,
+            "eight": 559,
+            "nine": 251,
+            "ten": 90
+        },
+        "score": 7.7
+    },
+    "collection": {
+        "wish": 1644,
+        "collect": 1980,
+        "doing": 221,
+        "on_hold": 255,
+        "dropped": 72
+    },
+    "tags": [
+        {
+            "name": "GAINAX",
+            "count": 590
+        },
+        {
+            "name": "庵野秀明",
+            "count": 533
+        },
+        {
+            "name": "贞本义行",
+            "count": 277
+        },
+        {
+            "name": "TV",
+            "count": 266
+        },
+        {
+            "name": "1990",
+            "count": 228
+        },
+        {
+            "name": "蓝宝石之谜",
+            "count": 200
+        },
+        {
+            "name": "海底两万里",
+            "count": 180
+        },
+        {
+            "name": "科幻",
+            "count": 151
+        },
+        {
+            "name": "童年",
+            "count": 136
+        },
+        {
+            "name": "经典",
+            "count": 128
+        },
+        {
+            "name": "原创",
+            "count": 104
+        },
+        {
+            "name": "ふしぎの海のナディア",
+            "count": 78
+        },
+        {
+            "name": "小说改",
+            "count": 43
+        },
+        {
+            "name": "樋口真嗣",
+            "count": 35
+        },
+        {
+            "name": "1990年",
+            "count": 19
+        },
+        {
+            "name": "日本",
+            "count": 18
+        },
+        {
+            "name": "1990年4月",
+            "count": 12
+        },
+        {
+            "name": "冒险",
+            "count": 11
+        },
+        {
+            "name": "90年代",
+            "count": 11
+        },
+        {
+            "name": "東宝",
+            "count": 9
+        },
+        {
+            "name": "アニメ",
+            "count": 9
+        },
+        {
+            "name": "动画",
+            "count": 8
+        },
+        {
+            "name": "冈田斗司夫",
+            "count": 7
+        },
+        {
+            "name": "TVA",
+            "count": 6
+        },
+        {
+            "name": "日本动画",
+            "count": 6
+        },
+        {
+            "name": "KORAD",
+            "count": 5
+        },
+        {
+            "name": "1990s",
+            "count": 5
+        },
+        {
+            "name": "鷺巣詩郎",
+            "count": 5
+        },
+        {
+            "name": "SF",
+            "count": 4
+        },
+        {
+            "name": "补旧番",
+            "count": 4
+        }
+    ],
+    "meta_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "series": false,
+    "main_character_ids": [
+        6514,
+        24544,
+        24545,
+        102373
+    ],
+    "main_characters": [
+        {
+            "id": 6514,
+            "name": "ナディア・ラ・アルウォール",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/03/3c/6514_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/3c/6514_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/3c/6514_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/03/3c/6514_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4352,
+                    "name": "鷹森淑乃",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b3/d1/4352_prsn_Qxxag.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/d1/4352_prsn_Qxxag.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/d1/4352_prsn_Qxxag.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b3/d1/4352_prsn_Qxxag.jpg"
+                    },
+                    "short_summary": "勝田聲優學院第二期畢業。同期的人有白石文子，一期的前輩有伊藤美紀、岡本麻彌。\r\n    她的出道作為動畫『超力ロボ ガラット』的『パティ・パンプキン』。\r\n    1990年結婚。在日高範子（『冒險少女娜汀亞』裡一同演出）的『KBS京都はいぱぁナイト金曜』中與庵野秀明導演一起客串演出的時候，同席的丈夫(現在是牙科醫生)也進入演播室演出，成為一時的趣談。\r\n    之後，大部分時間專心在家庭主婦上，聲優的本業近乎停止，直到近年才繼續出演聲優的工作。\r\n    與日高範子到現在不僅像是親友般的至交，而且由於彼此家距離很近，因此也是常常在午餐時討論教育問題的好朋友。\r\n\r\n与牙科医生结婚。女儿松井晓波也是声优。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 24544,
+            "name": "ジャン・ロック・ラルティーグ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ad/50/24544_crt_q9443.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/50/24544_crt_q9443.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/50/24544_crt_q9443.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ad/50/24544_crt_q9443.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4024,
+                    "name": "日髙のり子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5e/57/4024_prsn_bMBgq.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/57/4024_prsn_bMBgq.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/57/4024_prsn_bMBgq.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5e/57/4024_prsn_bMBgq.jpg"
+                    },
+                    "short_summary": "日髙 のり子（ひだか のりこ、1962年5月31日 - ）は、日本の声優、女優、ラジオパーソナリティ、ナレーターである。\r\n東京都千代田区九段出身。愛称は「ノン子（さん）」。本名の旧姓は伊東。名は範子。身長157cm。血液型はAB型。既婚。2009年1月19日に事務所「コンビネーション」を三ツ矢雄二と共に設立する。\r\n代表作に『タッチ』（浅倉南）、『となりのトトロ』（草壁サツキ）、『らんま1/2』（天道あかね）など。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 24545,
+            "name": "マリー・エン・カールスバーグ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/23/9a/24545_crt_iQv8v.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/23/9a/24545_crt_iQv8v.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/23/9a/24545_crt_iQv8v.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/23/9a/24545_crt_iQv8v.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4644,
+                    "name": "水谷優子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e2/b2/4644_prsn_w2p2w.jpg?r=1491624056",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/b2/4644_prsn_w2p2w.jpg?r=1491624056",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/b2/4644_prsn_w2p2w.jpg?r=1491624056",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e2/b2/4644_prsn_w2p2w.jpg?r=1491624056"
+                    },
+                    "short_summary": "剧团青年座研究所出身。出道以来经历剧团青年座、Production baobab，最终所属青二Production。丈夫为动画导演西久保瑞穗。大阪府立岛本高等学校毕业。昵称“ケロリン”。\r\n\r\n她为人熟悉的代表配音作品有《樱桃小丸子》主角樱桃子的姐姐〈樱咲子〉、《怪医黑杰克》女主角皮诺可、《数码宝贝大冒险》女主角武之内空、《机器勇士》&外传作品《莉娜剑狼传说》女主角丽娜·斯托尔、《机动战士Z高达》莎拉·萨比亚洛夫、《天地无用！》的九罗密美星、《网球甜心2》主角冈浩美及《超级机器人大战OG》的艾克瑟莲·勃朗宁等。除了日本动画之外，还有1991年起至2016年逝去为止长达25年担任美国华特迪士尼作品（包含迪士尼乐园相关活动的广播）角色米妮的日语配音。\r\n\r\n出道是1985年播出的机器人题材电视动画《机动战士Z高达》（飞行场播报员）。出道之后，以相同作品登场的莎拉·萨比亚洛夫、《机器勇士》的丽娜·斯托尔及《星战英豪》的阿普尔等机器人动画的要角而获得拔擢，同时自身的知名度也开始上升。1988年，首次饰演女主角的作品是女子网球题材电视动画《网球甜心2》（冈浩美）。\r\n\r\n1990年，长寿电视动画《樱桃小丸子》开播，水谷演主角樱桃子的姐姐〈樱咲子〉，成为她的配音代表作。\r\n\r\n除了从事配音工作之外，另外曾经组成MIPPLE等其它声优组合参加相关的活动。\r\n\r\n1994年11月，水谷与动画导演西久保瑞穗结婚。在结婚之前，曾在西久保执导的电视动画《星战英豪》和《天空战记》中参演。\r\n\r\n2011年9月，水谷从Production baobab离所，经历自由身，2012年12月1日加入青二Production。\r\n\r\n2016年5月17日，水谷因乳癌在东京都的医院去世，享年51岁。而她在2年前就已经接受乳癌切除手术得治疗，但是在2016年4月22日完成《樱桃小丸子》录音工作（最后一次参加录音是在第1053～1054话）的一个礼拜后身体状况突然恶化必须住院。此外，其病名只有业界相关人士知情。讣报在《樱桃小丸子》的日本官方网站公告之后，原作者樱桃子也在自己的网志发表追思文，不只如此，以前和水谷认识合作的业界人士，及粉丝都陆续在Twitter发文追思悼念。\r\n同年5月28日，小说家赤堀悟宣布与水谷2人一起搭档主持超过10年的电台节目《一生ポリケロ》也在此划下句点。\r\n根据丈夫西久保的说法，妻子住院期间仍然带着台词本，表达她希望自己可以尽早出院继续参加配音工作。可是事与愿违，成为她的遗言。\r\n同年7月3日，于青山殡仪馆举办追思会‘状行会“见到你真好”’，约有700人参加，在这之中，有从以前开始经常跟她共演的同行关俊彦、井上和彦及TARAKO等人一起参加。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 102373,
+            "name": "キング",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ec/66/102373_crt_rIkap.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ec/66/102373_crt_rIkap.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ec/66/102373_crt_rIkap.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ec/66/102373_crt_rIkap.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3894,
+                    "name": "桜井敏治",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5c/8e/3894_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/8e/3894_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/8e/3894_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5c/8e/3894_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の男性声優。81プロデュース所属。東京都出身。身長175cm。血液型はB型。\r\n\r\n専門学校東京アナウンス学院放送声優科卒業。\r\n\r\nギャグキャラクターや小悪党役が多く、特に陽気な役・肥満体質な役は定番の役どころ。\r\n\r\n洋画ではアンソニー・アンダーソンやジョナ・ヒルのような、恰幅の良い俳優の吹き替えを担当する機会が多い。\r\n\r\n休業した安西正弘が演じていた『ザ・シンプソンズ』のネルソン・マンツ、オットー・マン、スネーク役や『しましまとらのしまじろう』のモグちゃん役を引き継がれた。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

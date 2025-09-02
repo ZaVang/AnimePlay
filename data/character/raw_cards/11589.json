@@ -1,0 +1,44 @@
+{
+    "id": 11589,
+    "name": "ナツ・ドラグニル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1e/a4/11589_crt_g3X80.jpg?r=1716564924",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/a4/11589_crt_g3X80.jpg?r=1716564924",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/a4/11589_crt_g3X80.jpg?r=1716564924",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1e/a4/11589_crt_g3X80.jpg?r=1716564924"
+    },
+    "summary": "自らの体質を竜に変える滅竜魔法（めつりゅうまほう）を使用する火の滅竜魔導士（ドラゴンスレイヤー）。\r\n子供の頃、炎竜王イグニールに育てられた。\r\n感情的に熱くなりがちだが、仲間を想う気持ちは誰よりも強い。\r\n黒魔導士ゼレフや黒竜アクノロギアとの激闘を経て、\r\n仲間と共に「100年クエスト」に挑む権利を得る。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "纳兹·多拉格尼尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Natsu Dragneel"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 12,
+        "collects": 66
+    },
+    "anime_ids": [
+        2609
+    ]
+}

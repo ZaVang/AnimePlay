@@ -1,0 +1,76 @@
+{
+    "id": 1756,
+    "name": "大谷敦士",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ce/fa/1756_TqnTm.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/fa/1756_TqnTm.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/fa/1756_TqnTm.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ce/fa/1756_TqnTm.jpg"
+    },
+    "summary": "本作的主角，高一时身高156cm，高二时156.2cm，体重45kg，生日是3月25日，血型为A型，跟理沙一样是『海坊主』的歌迷。跟理沙3年同班兼当了3年班长，主要担演吐槽角色。他是篮球队队员，虽然有著身高的障碍，但从高二开始便成为正式队员，后来更担任队长。对于恋爱的事情相当迟钝。当初对理沙的心意感到困惑犹豫，但MAITY（后述）登场后，心境明显出现变化。原本固执笨拙、阳光性格的他，意外地容易吃醋嫉妒。家人叫他『敦敦』，他似乎讨厌他们在人前这样称呼他。以小学教师为目标，谁都认为他无可能做到，但他猛温习，终于取得大学入学资格。跟理沙交往后，受双方父母承认关系。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "大谷敦士"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "大谷 敦士"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おおたに あつし"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ootani Atsushi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月25日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "143cm→156cm→156.2cm"
+        },
+        {
+            "key": "体重",
+            "value": "45kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "永田彬"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 25,
+    "stat": {
+        "comments": 6,
+        "collects": 9
+    },
+    "anime_ids": [
+        2940
+    ]
+}

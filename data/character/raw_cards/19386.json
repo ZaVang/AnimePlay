@@ -1,0 +1,44 @@
+{
+    "id": 19386,
+    "name": "下鴨矢一郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/23/f2/19386_crt_prX8I.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/23/f2/19386_crt_prX8I.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/23/f2/19386_crt_prX8I.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/23/f2/19386_crt_prX8I.jpg"
+    },
+    "summary": "下鴨家長男。長男としての自覚が強く、亡き父のような立派な狸になるべく努力してはいるが、融通が利かない上に、緊急時になると慌てふためいて混乱してしまう。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "下鸭矢一郎"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 14
+    },
+    "anime_ids": [
+        68035,
+        193042
+    ]
+}

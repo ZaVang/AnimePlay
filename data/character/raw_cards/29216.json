@@ -1,0 +1,52 @@
+{
+    "id": 29216,
+    "name": "真魚",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c5/b3/29216_crt_WLiOR.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/b3/29216_crt_WLiOR.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/b3/29216_crt_WLiOR.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c5/b3/29216_crt_WLiOR.jpg"
+    },
+    "summary": "本作的女主角。15岁。个性率直天真，长得亭亭玉立，不过却有少许小姐脾气。出现在故事的现代，在婴儿时已被拐至人鱼之乡，原作人鱼之乡是位于濑户内海区域，在15岁时因涌太的闯入而被解救，在之前一直销着脚镣，因为吃下人鱼肉，同样是长生不老。其实是人鱼之乡的人鱼想她长大后吃她的肉，从而变得年轻和拥有美丽的样貌。随着时间的推移爱上了涌太，但从她本人简单的感情中并不明白这是爱",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "真鱼"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Mana"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まな"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://zh.wikipedia.org/wiki/%E4%BA%BA%E9%AD%9A%E4%B9%8B%E6%A3%AE"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 12
+    },
+    "anime_ids": [
+        1947
+    ]
+}

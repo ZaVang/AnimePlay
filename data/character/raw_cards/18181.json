@@ -1,0 +1,80 @@
+{
+    "id": 18181,
+    "name": "青羽ここな",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e2/69/18181_crt_LLEzx.jpg?r=1532417569",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/69/18181_crt_LLEzx.jpg?r=1532417569",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/69/18181_crt_LLEzx.jpg?r=1532417569",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e2/69/18181_crt_LLEzx.jpg?r=1532417569"
+    },
+    "summary": "8月11日生，13岁。O型。在第9话与高尾山下山途中与葵相遇。发型为带点卷的茶色长髪，于前发的一部分为绑成三节编状。虽然葵对可可奈的第一个印象为森林系女孩，实际上可可奈于早上独自前来高尾山是为了看鼯鼠。她的性格是带有一点天然呆气息。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "青羽心夏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "青羽可可奈"
+                },
+                {
+                    "v": "青羽可可娜"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "青羽心奈"
+                },
+                {
+                    "k": "日文名",
+                    "v": "青羽 ここな"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あおば ここな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aoba Kokona"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1999年8月11日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "144cm"
+        },
+        {
+            "key": "体重",
+            "value": "36kg"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1999,
+    "birth_mon": 8,
+    "birth_day": 11,
+    "stat": {
+        "comments": 86,
+        "collects": 226
+    },
+    "anime_ids": [
+        290980,
+        216310,
+        86670
+    ]
+}

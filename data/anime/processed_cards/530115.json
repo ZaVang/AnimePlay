@@ -1,0 +1,89 @@
+{
+    "id": 530115,
+    "name": "噗妮露是可爱史莱姆 第二季",
+    "image_path": "data/images/anime/530115.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "喜剧",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2025-07-06",
+    "rating_rank": 1199,
+    "rating_score": 7.4,
+    "rating_total": 533,
+    "main_character_ids": [
+        161095,
+        161096
+    ],
+    "main_characters": [
+        {
+            "id": 161095,
+            "name": "ぷにる",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/d4/161095_crt_ib33b.jpg?r=1731674352",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/d4/161095_crt_ib33b.jpg?r=1731674352",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/d4/161095_crt_ib33b.jpg?r=1731674352",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/d4/161095_crt_ib33b.jpg?r=1731674352"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 33097,
+                    "name": "篠原侑",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/59/73/33097_prsn_WiF5W.jpg?r=1691249190",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/73/33097_prsn_WiF5W.jpg?r=1691249190",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/73/33097_prsn_WiF5W.jpg?r=1691249190",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/59/73/33097_prsn_WiF5W.jpg?r=1691249190"
+                    },
+                    "short_summary": "篠原侑（ささはら ゆう、4月30日 - ）は、日本の女性声優。熊本県出身。アイムエンタープライズ所属。\r\n\r\n小学生の頃に歌手になりたいと思っていたが、両親から「歌手の道は厳しいよ」と言われたという。中学時代に父がプリントアウトしたアニメーション映画の主人公のオーディションを見たことがあり、「声優なら歌も歌えるし、演技もできてテレビにも出られるかもしれないし、いいことがたくさんあるから目指してみたら？」と言われたことがきっかけで声優を目指したという。\r\n\r\n中学時代は吹奏楽部、高校時代は和太鼓部にそれぞれ所属していた。\r\n\r\nインターネットで声優になる方法を調べ、専門学校が良いと思って両親に相談したものの、母から反対された。高校時代、母に同じ話をした際、「大学に通いながらであれば、声優の勉強をしても構わない」と言われたことから、全日制の専門学校に通うことは無理であると考え、ダブルスクールで通うことが可能な日本ナレーション演技研究所（日ナレ）が自身の候補に上がったという。高校3年生の夏の頃に、母と熊本から上京して日ナレの入所審査を受けて覚悟が決まったという。\r\n\r\n日ナレに入所後、3年目の研修科修了後、2016年よりアイムエンタープライズに所属し、声優デビュー。\r\n\r\n『となりの吸血鬼さん』の天野灯役で初のメインキャラクターを務める。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 161096,
+            "name": "河合井コタロー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3a/7e/161096_crt_4XvU7.jpg?r=1721309997",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/7e/161096_crt_4XvU7.jpg?r=1721309997",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/7e/161096_crt_4XvU7.jpg?r=1721309997",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3a/7e/161096_crt_4XvU7.jpg?r=1721309997"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 41073,
+                    "name": "梅田修一朗",
+                    "type": 2,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/dc/41073_prsn_ol77n.jpg?r=1633081644"
+                    },
+                    "short_summary": "梅田 修一朗（うめだ しゅういちろう、10月11日）は、日本の男性声優。千葉県出身。賢プロダクション所属。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

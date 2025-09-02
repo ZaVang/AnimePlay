@@ -1,0 +1,92 @@
+{
+    "id": 28193,
+    "name": "島村卯月",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a9/58/28193_crt_99Aam.jpg?r=1551990373",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/58/28193_crt_99Aam.jpg?r=1551990373",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/58/28193_crt_99Aam.jpg?r=1551990373",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a9/58/28193_crt_99Aam.jpg?r=1551990373"
+    },
+    "summary": "女主角之一，从第一集开始出场。高中二年级生，在训练所不断练习跳舞，虽然在第一次“CINDERELLA PROJECT”的轮选中落败，最终能够通过补选，成为“CINDERELLA PROJECT”的一员。被制作人选上的原因是其笑容，这亦是她个人十分自信的一点。\r\n性格乐观，十分单纯。遇到挑战都会笑着说“努力”，被本田未央说是“天然呆”。\r\n因到涩谷家的花店买花而认识涩谷凛，后来一起加入346事务所的“CINDERELLA PROJECT”之后二人成为了好朋友。\r\n与涩谷凛、本田未央组成3人的偶像组合“new generations”，首次登上舞台演出是作舞蹈员替城崎美嘉伴舞，后来正式发行 CD 出道，主打单曲“できたてEvo! Revo! Generation!”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "岛村卯月"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しまむらうづき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shimamura Uzuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月24日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "体重",
+            "value": "45kg"
+        },
+        {
+            "key": "BWH",
+            "value": "83/59/87"
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        },
+        {
+            "key": "兴趣",
+            "value": "与朋友煲电话粥"
+        },
+        {
+            "key": "利手",
+            "value": "右手"
+        },
+        {
+            "key": "星座",
+            "value": "金牛座"
+        },
+        {
+            "key": "出生地",
+            "value": "东京"
+        },
+        {
+            "key": "卡牌类型",
+            "value": "Cute"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 24,
+    "stat": {
+        "comments": 63,
+        "collects": 217
+    },
+    "anime_ids": [
+        130231
+    ]
+}

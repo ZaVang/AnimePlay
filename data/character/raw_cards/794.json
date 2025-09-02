@@ -1,0 +1,76 @@
+{
+    "id": 794,
+    "name": "龍可",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ce/c0/794_crt_1i1kl.jpg?r=1749912116",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/c0/794_crt_1i1kl.jpg?r=1749912116",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/c0/794_crt_1i1kl.jpg?r=1749912116",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ce/c0/794_crt_1i1kl.jpg?r=1749912116"
+    },
+    "summary": "双子兄妹的妹妹。非常老实，但总会对轻率的龙亚做出激烈的吐槽。能感受到卡之精灵的话语。每次决斗后都会感到筋疲力尽。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "龙可"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Luna"
+                },
+                {
+                    "k": "日文名",
+                    "v": "龍可"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "るか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Luca"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月20日"
+        },
+        {
+            "key": "身高",
+            "value": "146cm"
+        },
+        {
+            "key": "体重",
+            "value": "35kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "寺崎裕香"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 20,
+    "stat": {
+        "comments": 4,
+        "collects": 12
+    },
+    "anime_ids": [
+        1609
+    ]
+}

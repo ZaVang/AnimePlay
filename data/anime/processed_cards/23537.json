@@ -1,0 +1,121 @@
+{
+    "id": 23537,
+    "name": "嘟嘟猫观察日记",
+    "image_path": "data/images/anime/23537.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "原作是《まんがライフ》（竹書房）上连载的四格漫画，以主人公圆嘟嘟的猫・佐藤ポヨ为中心，讲述饲主佐藤萌和周围人的故事。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 52,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2012-01-08",
+    "rating_rank": 980,
+    "rating_score": 7.5,
+    "rating_total": 736,
+    "main_character_ids": [
+        14372,
+        14687,
+        14689
+    ],
+    "main_characters": [
+        {
+            "id": 14372,
+            "name": "ポヨ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d5/5f/14372_crt_tkZ91.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/5f/14372_crt_tkZ91.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/5f/14372_crt_tkZ91.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d5/5f/14372_crt_tkZ91.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3906,
+                    "name": "大谷育江",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/27/b6/3906_prsn_xa7NA.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/b6/3906_prsn_xa7NA.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/b6/3906_prsn_xa7NA.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/27/b6/3906_prsn_xa7NA.jpg"
+                    },
+                    "short_summary": "优点是好奇心旺盛。\r\n    兴趣是泡香草浴、读书。\r\n    特技是英语的发音和日本舞蹈。\r\n    喜欢的颜色是白色、粉红色、黑色。\r\n\r\n主要是为少年、少女配音，在一个作品里配一个以上的角色也是有的。在《深渊传奇》中就分别配了伊恩(诚实)、新库(愤怒)、芙萝利安(纯洁)三种个性不同的角色。\r\n\r\n被说是演技声音广泛的其中一名声优。\r\n\r\n由于皮卡丘的声音是全世界共通的，所以就算不知道“大谷育江”这个人名，只要一听到是“皮卡丘的声音”大家就知道了。\r\n\r\n不太记得起来人的名字。\r\n\r\n小学和国中的时候认为加入排球部可以长高吧，就入社了。\r\n\r\n第六届（2011年度）声优奖Kid's Family赏的得奖者（キッズ・ファミリー賞）。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 14687,
+            "name": "佐藤萌",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/64/42/14687_crt_SGtVS.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/64/42/14687_crt_SGtVS.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/64/42/14687_crt_SGtVS.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/64/42/14687_crt_SGtVS.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6707,
+                    "name": "三森すずこ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ed/4c/6707_prsn_n2FZD.jpg?r=1687241857",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/4c/6707_prsn_n2FZD.jpg?r=1687241857",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/4c/6707_prsn_n2FZD.jpg?r=1687241857",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ed/4c/6707_prsn_n2FZD.jpg?r=1687241857"
+                    },
+                    "short_summary": "三森铃子（三森 すずこ／みもり すずこ / Mimori Suzuko），本名黑川铃子（黒川 鈴子／くろかわ すずこ / Kurokawa Suzuko），是日本女演员、声优、歌手，目前隶属于“响”；日本企业家黑川文雄是其堂兄。\r\n\r\n日本东京都出身。成为声优之前，以“黑川铃子”本名在音乐剧和舞台剧活动。有次在舞台表演时，被武士道社长木谷先生问到:“要不要试试当声优？”，此后便转向声优界活动。\r\n曾经以少女偶像团体Cutie Pai的团员“スージー”的身份在2009年7月至10月间活动。\r\n因为参加《侦探歌剧 少女福尔摩斯》的配音工作，与另外三位也担任主角的声优德井青空、佐佐木未来、橘田泉共组声优团体“Milky Holmes”。\r\n2012年12月31日宣布以个人名义歌手出道。\r\n2018年1月13日，《东京体育》报道称三森与日本职业摔角运动员冈田和睦交往，此消息获得本人确认。2019年4月12日，二人公布婚讯。\r\n\r\n在《侦探歌剧 少女福尔摩斯》一起共事的新谷良子，是三森主演的东京迪士尼海洋音乐剧《Mickey's Dream Company（米奇梦想剧团）》的剧迷，因此向三森索求签名。\r\n黑川铃子时期，时任武士道副社长的企业家黑川文雄以堂兄身份大力推荐。\r\n《SEIGURA》杂志上，以“有名插图画家——Okuzushi. M. Romi——オクズシ・ロミ”名义开设专栏，公布读者的来信和自绘插图。“Okuzushi. M. Romi”，其实就是本身艺名罗马拼音“Mimori Suzuko”倒过来念。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 14689,
+            "name": "佐藤英",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/86/65/14689_crt_F5IzF.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/65/14689_crt_F5IzF.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/65/14689_crt_F5IzF.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/86/65/14689_crt_F5IzF.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9271,
+                    "name": "市瀬秀和",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fb/ad/9271_prsn_5zcDg.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/ad/9271_prsn_5zcDg.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/ad/9271_prsn_5zcDg.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fb/ad/9271_prsn_5zcDg.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

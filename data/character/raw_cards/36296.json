@@ -1,0 +1,72 @@
+{
+    "id": 36296,
+    "name": "馬場このみ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d0/41/36296_crt_OlGfB.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/41/36296_crt_OlGfB.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/41/36296_crt_OlGfB.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d0/41/36296_crt_OlGfB.jpg"
+    },
+    "summary": "偶像大师百万LIVE登场的偶像。Dance属性。 \r\n\r\n百万LIVE中年龄最大的偶像。但是身高只有143厘米，与10岁的中谷育和13岁的白坂小梅差不多。 \r\n\r\n本人拼命地介绍自己是个「性感」、「成熟」的大人，另外又背着小学生用的双肩书包，上了电车也够不到把手。 \r\n\r\n称自己为「木实姐姐」(このみお姉さん)。 \r\n\r\n被菊地真称作「木实师傅」(このみ師匠)。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "马场木实"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Baba Konomi"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ばば このみ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月12日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "143cm"
+        },
+        {
+            "key": "体重",
+            "value": "37kg"
+        },
+        {
+            "key": "BWH",
+            "value": "75-55-79"
+        },
+        {
+            "key": "年龄",
+            "value": "24岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 12,
+    "stat": {
+        "comments": 33,
+        "collects": 55
+    },
+    "anime_ids": [
+        309807
+    ]
+}

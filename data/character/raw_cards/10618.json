@@ -1,0 +1,60 @@
+{
+    "id": 10618,
+    "name": "直井文人",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ed/55/10618_crt_RNSu7.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/55/10618_crt_RNSu7.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/55/10618_crt_RNSu7.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ed/55/10618_crt_RNSu7.jpg"
+    },
+    "summary": "“我是神”\r\n学生会副会长。\r\n使用催眠术的不可思议的少年。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "直井文人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "直井 文人"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なおい あやと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Naoi Ayato"
+                },
+                {
+                    "k": "昵称",
+                    "v": "直井"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://key.visualarts.gr.jp/angelbeats/character.html"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 15,
+        "collects": 54
+    },
+    "anime_ids": [
+        363880
+    ]
+}

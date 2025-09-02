@@ -1,0 +1,61 @@
+{
+    "id": 50026,
+    "name": "かばん",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6b/db/50026_crt_aTGZ3.jpg?r=1545321973",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/db/50026_crt_aTGZ3.jpg?r=1545321973",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/db/50026_crt_aTGZ3.jpg?r=1545321973",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6b/db/50026_crt_aTGZ3.jpg?r=1545321973"
+    },
+    "summary": "アニメオリジナルキャラクター。記憶喪失の状態でジャパリパークのさばんなちほーに現れたところを、サーバルに発見される。大きなかばん（リュック）を持ってたことから、サーバルに「かばん」と名付けられた。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "包"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "小包"
+                },
+                {
+                    "v": "卡邦"
+                },
+                {
+                    "v": "背包"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "小鞄"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kaban"
+                },
+                {
+                    "k": "昵称",
+                    "v": "鞄"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 20,
+        "collects": 61
+    },
+    "anime_ids": [
+        176478
+    ]
+}

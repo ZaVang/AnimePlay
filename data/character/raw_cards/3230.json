@@ -1,0 +1,88 @@
+{
+    "id": 3230,
+    "name": "ムサシ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bb/fb/3230_crt_kMn2c.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/fb/3230_crt_kMn2c.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/fb/3230_crt_kMn2c.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bb/fb/3230_crt_kMn2c.jpg"
+    },
+    "summary": "武藏是火箭队的一员，她是三人组的领导者。她和她的同伙小次郎、喵喵总是跟着小智一行人，企图抢走小智的皮卡丘，但从没成功过。在《宝可梦 太阳＆月亮》的阿罗拉联盟的宣传影片中，她被称为战场的女演员。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "武藏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Jessie"
+                },
+                {
+                    "k": "法文名",
+                    "v": "Jessie"
+                },
+                {
+                    "k": "德文名",
+                    "v": "Jessie"
+                },
+                {
+                    "k": "意大利文名",
+                    "v": "Jessie"
+                },
+                {
+                    "k": "西班牙文名",
+                    "v": "Jessie"
+                },
+                {
+                    "k": "韩文名",
+                    "v": "로사"
+                },
+                {
+                    "k": "泰文名",
+                    "v": "มูซาชิ"
+                },
+                {
+                    "k": "印尼文名",
+                    "v": "Musashi，Jessie"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Musashi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "战场的女演员"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "家乡所在地",
+            "value": "关都地区"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://wiki.52poke.com/wiki/武藏"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 35
+    },
+    "anime_ids": [
+        3019
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 46580,
+    "name": "浅井ケイ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ff/e8/46580_crt_CZfw0.jpg?r=1491141673",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ff/e8/46580_crt_CZfw0.jpg?r=1491141673",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ff/e8/46580_crt_CZfw0.jpg?r=1491141673",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ff/e8/46580_crt_CZfw0.jpg?r=1491141673"
+    },
+    "summary": "故事的主人公，芦原桥高一学生，过去曾反叛过管理局。现在所属“服务俱乐部”，能力是不会忘记任何事情。\r\n\r\n芦原橋高校1年生の少年。奉仕クラブに所属している。\r\n見たこと聞いたことを完全に思い出すことができる「記憶保持」の能力の持ち主。\r\n頭の回転が早く、知略を巡らすことに長けている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "浅井惠"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "浅井 惠"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あさい ケイ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Asai Kei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "10月12日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 12,
+    "stat": {
+        "comments": 46,
+        "collects": 133
+    },
+    "anime_ids": [
+        193378
+    ]
+}

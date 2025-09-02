@@ -1,0 +1,60 @@
+{
+    "id": 17245,
+    "name": "南竜介",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/88/c6/17245_crt_wMdZQ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/c6/17245_crt_wMdZQ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/c6/17245_crt_wMdZQ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/88/c6/17245_crt_wMdZQ.jpg"
+    },
+    "summary": "BECK吉他手。登场时16岁，原本住在NY的归国子女，和继父有些争执而离家出走住在钓鱼池过活。平常虽然都做些向人借钱或让女人哭泣等一些废物行径，但只要扯上音乐就毫不妥协，因某些过去而让乐团卷入不少问题；主要吉他是Gibson Les Paul（露西露），左手也能弹奏吉他；对艾迪等外国人而言因龙介的名字发音较难就昵称他为“Ray”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "南龙介"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Ray Minami"
+                },
+                {
+                    "k": "日文名",
+                    "v": "南竜介"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みなみ　りゅうすけ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "minami ryuusuke"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 8
+    },
+    "anime_ids": [
+        4035
+    ]
+}

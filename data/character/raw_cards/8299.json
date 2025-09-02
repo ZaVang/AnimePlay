@@ -1,0 +1,48 @@
+{
+    "id": 8299,
+    "name": "浅葱マリア",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ac/ef/8299_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/ef/8299_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/ef/8299_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ac/ef/8299_crt_anidb.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Asagi Maria"
+                },
+                {
+                    "k": "日文名",
+                    "v": "浅葱マリア"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 2
+    },
+    "anime_ids": [
+        1805
+    ]
+}

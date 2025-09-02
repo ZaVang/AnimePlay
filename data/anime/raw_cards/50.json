@@ -1,0 +1,441 @@
+{
+    "id": 50,
+    "type": 2,
+    "name": "機動戦士ガンダム",
+    "name_cn": "机动战士高达",
+    "summary": "U.C.（宇宙世纪）0079年，人类向宇宙发展并建立了多个巨大的卫星，让人类能够居住在宇宙中。卫星的居民们不堪忍受地球联邦政府对其剥削和压迫，遂宣布独立，更组建军队与地球联邦政府决一雌雄。在战争中双方先后开发了机动战士并投入战场。NEWTYPE少年阿姆罗·雷无意中驾驶上联邦军新开发的机动战士高达，卷入后来被称为“一年战争”中，并与其宿敌夏亚·阿兹纳布尔相遇。",
+    "nsfw": false,
+    "locked": false,
+    "date": "1979-04-07",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/c0/c7/50_8rPUO.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/c0/c7/50_8rPUO.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/c0/c7/50_8rPUO.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/c0/c7/50_8rPUO.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/c0/c7/50_8rPUO.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "机动战士高达"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "机动战士高达0079",
+                    "k": null
+                },
+                {
+                    "v": "Mobile Suit Gundam",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "43"
+        },
+        {
+            "key": "放送开始",
+            "value": "1979年4月7日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.gundam.jp/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "名古屋电视台"
+        },
+        {
+            "key": "播放结束",
+            "value": "1980年1月26日"
+        },
+        {
+            "key": "音乐",
+            "value": "渡辺岳夫、松山祐士"
+        },
+        {
+            "key": "原作",
+            "value": "矢立肇、富野喜幸(富野由悠季)"
+        },
+        {
+            "key": "企画",
+            "value": "日本サンライズ"
+        },
+        {
+            "key": "总导演",
+            "value": "富野喜幸（富野由悠季）"
+        },
+        {
+            "key": "人物设定",
+            "value": "安彦良和"
+        },
+        {
+            "key": "总作画监督",
+            "value": "安彦良和（アニメーションディレクター）"
+        },
+        {
+            "key": "机械设定",
+            "value": "大河原邦男"
+        },
+        {
+            "key": "美术设计",
+            "value": "中村光毅"
+        },
+        {
+            "key": "剪辑",
+            "value": "鶴渕友彰、小谷地文男（第1-10话）"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "井荻麟(富野由悠季)"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "渡辺岳夫"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "松山祐士"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "池田鴻"
+        },
+        {
+            "key": "音响监督",
+            "value": "松浦典良"
+        },
+        {
+            "key": "制片人",
+            "value": "関岡渉（名古屋テレビ）、大熊伸行（創通エージェンシー）、渋江靖夫（日本サンライズ）"
+        },
+        {
+            "key": "制作",
+            "value": "名古屋テレビ、創通エージェンシー、日本サンライズ"
+        },
+        {
+            "key": "脚本",
+            "value": "星山博之、松崎健一、荒木芳久、山本優、富野喜幸(富野由悠季)"
+        },
+        {
+            "key": "分镜",
+            "value": "斧谷稔(富野由悠季)、貞光紳也、やまざきかずお、藤原良二、久野弘(又野弘道)"
+        },
+        {
+            "key": "演出",
+            "value": "貞光紳也、藤原良二、小鹿英吉、横山裕一郎(神田武幸)、斧谷稔(富野由悠季)、行田進、関田修、久野弘(又野弘道)"
+        },
+        {
+            "key": "作画监督",
+            "value": "安彦良和、富沢和雄（大泉学）、青鉢芳信、やまざきかずお、中村一夫、鈴木一行、铃村一行"
+        }
+    ],
+    "volumes": 0,
+    "eps": 43,
+    "total_episodes": 43,
+    "rating": {
+        "rank": 428,
+        "total": 4448,
+        "count": {
+            "one": 8,
+            "two": 5,
+            "three": 7,
+            "four": 23,
+            "five": 49,
+            "six": 301,
+            "seven": 1205,
+            "eight": 1899,
+            "nine": 682,
+            "ten": 269
+        },
+        "score": 7.8
+    },
+    "collection": {
+        "wish": 1334,
+        "collect": 6281,
+        "doing": 976,
+        "on_hold": 478,
+        "dropped": 130
+    },
+    "tags": [
+        {
+            "name": "高达",
+            "count": 1356
+        },
+        {
+            "name": "SUNRISE",
+            "count": 868
+        },
+        {
+            "name": "富野悠由季",
+            "count": 677
+        },
+        {
+            "name": "TV",
+            "count": 657
+        },
+        {
+            "name": "0079",
+            "count": 640
+        },
+        {
+            "name": "原创",
+            "count": 545
+        },
+        {
+            "name": "元祖高达",
+            "count": 449
+        },
+        {
+            "name": "科幻",
+            "count": 426
+        },
+        {
+            "name": "1979",
+            "count": 423
+        },
+        {
+            "name": "GUNDAM",
+            "count": 373
+        },
+        {
+            "name": "阿姆罗",
+            "count": 337
+        },
+        {
+            "name": "萝卜",
+            "count": 320
+        },
+        {
+            "name": "富野由悠季",
+            "count": 255
+        },
+        {
+            "name": "机战",
+            "count": 255
+        },
+        {
+            "name": "战争",
+            "count": 188
+        },
+        {
+            "name": "夏亚",
+            "count": 174
+        },
+        {
+            "name": "日本",
+            "count": 91
+        },
+        {
+            "name": "RX-78-2",
+            "count": 40
+        },
+        {
+            "name": "1979年4月",
+            "count": 37
+        },
+        {
+            "name": "安彦良和",
+            "count": 24
+        },
+        {
+            "name": "鋼彈",
+            "count": 24
+        },
+        {
+            "name": "70年代",
+            "count": 18
+        },
+        {
+            "name": "1979年",
+            "count": 17
+        },
+        {
+            "name": "战斗",
+            "count": 14
+        },
+        {
+            "name": "经典",
+            "count": 14
+        },
+        {
+            "name": "1970s",
+            "count": 14
+        },
+        {
+            "name": "大河原邦男",
+            "count": 11
+        },
+        {
+            "name": "Mobile_Suit_Gundam",
+            "count": 10
+        },
+        {
+            "name": "年番",
+            "count": 10
+        },
+        {
+            "name": "TVA",
+            "count": 9
+        }
+    ],
+    "meta_tags": [
+        "科幻",
+        "机战",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "series": false,
+    "main_character_ids": [
+        4333,
+        4545,
+        7694,
+        13245,
+        37202
+    ],
+    "main_characters": [
+        {
+            "id": 4333,
+            "name": "ブライト・ノア",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6c/83/4333_crt_JKbzH.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/83/4333_crt_JKbzH.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/83/4333_crt_JKbzH.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6c/83/4333_crt_JKbzH.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3989,
+                    "name": "鈴置洋孝",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/65/16/3989_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/16/3989_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/16/3989_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/65/16/3989_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーターであり、劇団プロデューサー。\r\n\r\n愛知県名古屋市出身、東京経済大学卒業。身長166 cm、体重59kg。血液型はA型。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 4545,
+            "name": "アムロ・レイ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ca/a2/4545_crt_mbMsJ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/a2/4545_crt_mbMsJ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/a2/4545_crt_mbMsJ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ca/a2/4545_crt_mbMsJ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4095,
+                    "name": "古谷徹",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a9/07/4095_prsn_tHK86.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/07/4095_prsn_tHK86.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/07/4095_prsn_tHK86.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a9/07/4095_prsn_tHK86.jpg"
+                    },
+                    "short_summary": "日本动画界的知名声优与口述员。隶属于青二Production事务所。\r\n\r\n古谷彻出生于神奈川县横滨市，在少年时代就加入“向日葵剧团”进行演出活动，1967年在加山雄三主演的电影“続・何処へ”等电影当中演出，1968年担任动画巨人之星的主角星飞雄马。虽然一般常以为这是古谷彻的声优出道作品，但实际上他第一部配音作品是“航海王子”（小学六年级时），演出巨人之星时升上国中的关系，在巨人之星结束后暂停声优活动，直到从关东学院六浦高校毕业，进入明治学院大学商学系之后才重新开始配音，复出后首部作品为钢铁杰克。\r\n1979年演出机动战士高达的阿姆罗·雷，当初的各种名台词现在仍然是爱好者间的话题，古谷彻清澈的音色也在广泛的观众层当中享有高度的人气。其他的代表作还有圣斗士星矢当中的星矢，龙珠当中的乐平（ヤムチャ）等。\r\n在此之后与声优同伴们结成乐团“スラップスティック”并与声优小山茉美（初代高达琪西莉亚·萨比，08小队卡莲·约书亚，SEED DESTINY妲莉雅·古拉迪斯）结婚，但后来离婚（却还是维持友好关系）。现在与前声优间嶋里美再婚并育有一女。\r\n古谷彻从20岁时代就对汽车有相当的爱好，自1986年起担任“カーグラフィックTV”节目主述旁白至今将近20年，爱车为BMW525i双凸轮轴。他同时也是电脑的强者，家中的网页维护与个人开发的数据库等等也是一手包办，在线上游戏高达 NETWORK OPERATION 2慕亚服务器联邦军阵营拥有一个角色。（于第六轮开始时引退）\r\n2007年10月15日，他在中国北京出席个人首次声优见面会。\r\n2008年获得声优奖富山敬赏（话题赏）。\r\n\r\n在高达 NETWORK OPERATION推出当时曾经加入吉翁军阵营，后来被联邦玩家以及NPC的自己（阿姆罗）碾到恼羞而转回联邦军（发表于日版高达 ACE人物小杂谈）并自嘲说“这大概是我在某公开场合应观众要求喊出SIEG ZEON的报应吧（笑）”\r\n古谷彻以前曾经说过“高达系列他只配阿姆罗·雷的声音”，但之后池田秀一去配高达 SEED DESTINY的杜兰朵议长之后，他自己也被高达00监督水岛精二邀请做00的旁白。\r\n由于“旁白”并不算角色，古谷就以此事而勉强答应以自己的名义参加新式（非宇宙世纪舞台的）高达作品高达00的演出做旁白。但在00计划中途按导演的恳求重新思考后而决定答应导演继续配新的正式高达角色，但因不能违上述那一番话，另一方面也为避免自己身为高达老资历的身价带给其他大多年轻的00声优阵与制作班底的过于敬畏、讨教、与压力影响演戏和作品的品质而选择改用化名苍月昇并以“新人声优”为名秘密的来替高达00的利邦兹·阿尔马克配音。古谷为了瞒班底自己的身份而天天带着大太阳眼镜遮大半脸上班，保持低调，并且从不拿下眼镜来示众，就连杂志媒体参加活动受访问时也样。所以制作期间配音阵容其实并不确信苍月就是古谷，而只是觉得这个新人苍月“音质跟古谷彻非常像”罢了。一直到两期正式播放完毕在G-Fes2009的高达00活动的最后才公开真实身份震撼了全体声优班底与大众。\r\n其苍月的名称来自于古谷在高达 NETWORK OPERATION线上游戏所属的小队名称，分别为“久远的苍月”，“久远苍月队”以及‘UniversalCentury.net 高达 ONLINE’的“BlueMoon”队。\r\n\r\n在2005年M.O.E制作动画“极限女孩”当中演出UFO男一角有许多黄色笑话与黄色的表演，令古谷彻长年爱好者多感到不可思议。不过对于听过他所主持的广播节目“アクションカメラ”的听众群则多认为这是表演能力的一部分，没什么值得奇怪的。\r\n在得知曾经与他同台演出，阿姆罗的香港配音员林保全的离世消息后，古谷彻在其Twitter发表悼词。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7694,
+            "name": "セイラ・マス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b9/fb/7694_crt_Yifem.jpg?r=1428257571",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/fb/7694_crt_Yifem.jpg?r=1428257571",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/fb/7694_crt_Yifem.jpg?r=1428257571",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b9/fb/7694_crt_Yifem.jpg?r=1428257571"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4200,
+                    "name": "井上瑤",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/86/db/4200_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/db/4200_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/db/4200_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/86/db/4200_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "1970年代から2000年代初めまで活躍。東京都立八潮高等学校、早稲田大学卒業。\r\n\r\n大学時代は劇研に所属し、卒業後は早稲田小劇場に進んだが、1年で退団。アルバイトで始めたTBSの朝のテレビ番組『ヤング720』を皮切りに放送タレントの道へ。クイズ番組『ベルトクイズQ&Q』の声、『モーニングジャンボ』などTBSのテレビ番組に出演。\r\n\r\n声優活動以外にも自分の出演番組の台本を書いていたことから、放送作家の仕事が舞い込むようになり、1980年代初めまで、『お笑い頭の体操』『相性診断ピッタンコ』などの構成台本や『クイズダービー』の問題作成の仕事を行なった。同時期には西田堯の下でモダンダンスを学び、国立劇場、日生劇場の舞台に立つ。また「レイ・ホシコ」という名の占い師という顔も持つなど、多才ぶりを発揮していた。\r\n\r\n2000年放映開始の『遊☆戯☆王デュエルモンスターズ』に獏良了役でキャスティングされていたが、体調不良のため41話までで降板。同役は松本梨香が最終回まで継いだ。\r\n\r\n2003年2月28日9時29分、都内の病院で肺水腫のため死去、56歳没。葬儀にはガンダムのキッカ・キタモトとハロ（どちらも井上の担当キャラクター）の人形が飾られた。最後の声優参加は、ニンテンドーゲームキューブ用ゲーム『機動戦士ガンダム 戦士達の軌跡』のセイラ・マスである。このゲームには、エンディングにスタッフからのメッセージが表示され、ゲーム発売前に亡くなった井上への追悼の言葉が含まれている。喪主は実弟が務めた。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13245,
+            "name": "シャア・アズナブル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9c/47/13245_crt_Ag8BX.jpg?r=1416820329",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/47/13245_crt_Ag8BX.jpg?r=1416820329",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/47/13245_crt_Ag8BX.jpg?r=1416820329",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9c/47/13245_crt_Ag8BX.jpg?r=1416820329"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3985,
+                    "name": "池田秀一",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/de/d0/3985_prsn_W0SE0.jpg?r=1435555362",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/d0/3985_prsn_W0SE0.jpg?r=1435555362",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/d0/3985_prsn_W0SE0.jpg?r=1435555362",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/de/d0/3985_prsn_W0SE0.jpg?r=1435555362"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーターである。東京俳優生活協同組合所属。\r\n\r\n東京都出身。身長162cm、体重60kg。血液型はO型。元妻は女優の戸田恵子。現在の妻は声優の玉川砂記子。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 37202,
+            "name": "RX-78-2 ガンダム",
+            "type": 2,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f5/97/37202_crt_rI727.jpg?r=1746018589",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/97/37202_crt_rI727.jpg?r=1746018589",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/97/37202_crt_rI727.jpg?r=1746018589",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f5/97/37202_crt_rI727.jpg?r=1746018589"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

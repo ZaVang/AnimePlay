@@ -1,0 +1,49 @@
+{
+    "id": 21955,
+    "name": "セレナ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/44/d2/21955_crt_9oQkF.jpg?r=1582456635",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/d2/21955_crt_9oQkF.jpg?r=1582456635",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/d2/21955_crt_9oQkF.jpg?r=1582456635",
+        "grid": "https://lain.bgm.tv/pic/crt/g/44/d2/21955_crt_9oQkF.jpg?r=1582456635"
+    },
+    "summary": "《神奇宝贝XY》的主角，来自卡洛斯地方、热衷于时尚的长发女孩，佩戴毛毡帽，中期随著剧情的发展将头发剪成了短发并换了套新的服装。自小被要求练习骑铁甲犀牛。\r\n幼年时期参加真新镇夏令营时迷路并擦伤右膝，而受小智救助。在家里的电视上看到小智出现在新闻直播后决定也跟著出门，并透过布拉塔诺博士在白檀市找到小智一行人并一起旅行。\r\n擅长制作甜点，经常替小智一行人制作马卡龙等甜点。原先没有决定旅行目标，后来决定朝向神奇宝贝表演家的道路迈进。对小智有明显好感，在动画中有明确表现。\r\n造型范本为3DS X、Y版的女主角。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莎莉娜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "賽莉娜，瑟蕾娜，塞蕾娜"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Serena"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 32,
+        "collects": 148
+    },
+    "anime_ids": [
+        78799,
+        146408
+    ]
+}

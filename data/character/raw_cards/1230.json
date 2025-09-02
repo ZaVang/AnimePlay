@@ -1,0 +1,80 @@
+{
+    "id": 1230,
+    "name": "天宮学美",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/56/2f/1230_crt_So9Nl.jpg?r=1396987266",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/2f/1230_crt_So9Nl.jpg?r=1396987266",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/2f/1230_crt_So9Nl.jpg?r=1396987266",
+        "grid": "https://lain.bgm.tv/pic/crt/g/56/2f/1230_crt_So9Nl.jpg?r=1396987266"
+    },
+    "summary": "圣樱学园第82届学生会会长，是个单纯、开朗、积极的女生。好奇心很强，无论是什么事总是喜欢抢在最前头，引起周围人的注意。有一个很可靠的哥哥。因为父母工作的关系时常搬家，令她特别珍惜校园生活与同学之间的友情。座右铭是“一直线Go!!（まっすぐGOー!!）”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "天宫学美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "天宮 学美"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あまみや まなみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Amamiya Manami"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2018年8月30日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "父",
+            "value": "天宫博文"
+        },
+        {
+            "key": "母",
+            "value": "天宫鞠子"
+        },
+        {
+            "key": "兄",
+            "value": "天宫武文"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 2018,
+    "birth_mon": 8,
+    "birth_day": 30,
+    "stat": {
+        "comments": 12,
+        "collects": 27
+    },
+    "anime_ids": [
+        2470
+    ]
+}

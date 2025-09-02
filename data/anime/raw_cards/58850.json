@@ -1,0 +1,457 @@
+{
+    "id": 58850,
+    "type": 2,
+    "name": "恋愛ラボ",
+    "name_cn": "恋爱研究所",
+    "summary": "　　原作是由漫画家宫原琉璃创作的轻松校园剧四格漫画，以著名的名门女子学校藤崎女子中学校（藤女）为舞台，描写爱上了“恋爱”的学生会成员们的恋爱研究及其实践。故事集中了运动娘、眼镜娘、腐女、傲娇大小姐等属性迥异的角色。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2013-07-04",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/80/69/58850_eZLEn.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/80/69/58850_eZLEn.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/80/69/58850_eZLEn.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/80/69/58850_eZLEn.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/80/69/58850_eZLEn.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "恋爱研究所"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "恋爱实验室",
+                    "k": null
+                },
+                {
+                    "v": "Love Lab",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2013年7月4日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期四"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.love-lab.tv/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "MBS"
+        },
+        {
+            "key": "其他电视台",
+            "value": "TBS, CBC, AT-X, BS-TBS, ニコニコ"
+        },
+        {
+            "key": "播放结束",
+            "value": "2013年9月26日"
+        },
+        {
+            "key": "导演",
+            "value": "太田雅彦"
+        },
+        {
+            "key": "Copyright",
+            "value": "©宮原るり／芳文社・藤女生徒会"
+        },
+        {
+            "key": "Twitter",
+            "value": "@LOVE_LAB_anime"
+        },
+        {
+            "key": "原作",
+            "value": "宮原るり（芳文社「まんがタイムスペシャル」連載）"
+        },
+        {
+            "key": "人物设定",
+            "value": "中島千明"
+        },
+        {
+            "key": "企画",
+            "value": "夏目公一朗、孝壽尚志、土橋哲也、遠藤正樹、太布尚弘、石黒竜"
+        },
+        {
+            "key": "制片人",
+            "value": "鳥羽洋典、桜井嗣治、南寛将、遠藤哲哉、金庭こず恵、鎌田肇、丸山博雄"
+        },
+        {
+            "key": "製作",
+            "value": "Aniplex、芳文社、アニメシアターX、電通、ムービック、動画工房、毎日放送"
+        },
+        {
+            "key": "主题歌制作",
+            "value": "山内真治"
+        },
+        {
+            "key": "原作助力",
+            "value": "盛田詩織（芳文社《Manga Time》编辑部）"
+        },
+        {
+            "key": "脚本",
+            "value": "あおしまたかし、子安秀明、杉原研二、鴻野貴光"
+        },
+        {
+            "key": "分镜",
+            "value": "太田雅彦、三原武憲、畑博之、矢花馨、誌村宏明、おざわかずひろ"
+        },
+        {
+            "key": "演出",
+            "value": "太田雅彦、矢野孝典、荒井省吾、矢花馨、藤原佳幸、高橋おさむ、越田知明、福本潔、守田芸成"
+        },
+        {
+            "key": "作画监督",
+            "value": "中島千明、高野綾、大田謙治、天﨑まなむ、菊永千里、吉田奏子、渡邉祐記、尾尻進矢、青山まさのり[青山正宣]、松尾真彦、本田敬一、Kim Hee-gang、狩野正志、辻智子、上竹哲郎、伊藤大翼、吉田尚人、市原圭子、立口徳孝"
+        },
+        {
+            "key": "总作画监督",
+            "value": "中島千明、尾尻進矢、高野綾"
+        },
+        {
+            "key": "道具设计",
+            "value": "高野綾、尾尻進矢、松本恵"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "y0c1e／千葉\"naotyu-\"直樹"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "y0c1e／千葉\"naotyu-\"直樹"
+        }
+    ],
+    "volumes": 0,
+    "eps": 13,
+    "total_episodes": 13,
+    "rating": {
+        "rank": 1768,
+        "total": 4019,
+        "count": {
+            "one": 4,
+            "two": 4,
+            "three": 12,
+            "four": 32,
+            "five": 127,
+            "six": 658,
+            "seven": 1605,
+            "eight": 1309,
+            "nine": 192,
+            "ten": 76
+        },
+        "score": 7.2
+    },
+    "collection": {
+        "wish": 1595,
+        "collect": 6080,
+        "doing": 459,
+        "on_hold": 461,
+        "dropped": 292
+    },
+    "tags": [
+        {
+            "name": "搞笑",
+            "count": 1090
+        },
+        {
+            "name": "百合",
+            "count": 1052
+        },
+        {
+            "name": "动画工房",
+            "count": 776
+        },
+        {
+            "name": "2013年7月",
+            "count": 686
+        },
+        {
+            "name": "校园",
+            "count": 475
+        },
+        {
+            "name": "TV",
+            "count": 463
+        },
+        {
+            "name": "漫画改",
+            "count": 458
+        },
+        {
+            "name": "日常",
+            "count": 430
+        },
+        {
+            "name": "恋爱研究所",
+            "count": 366
+        },
+        {
+            "name": "2013",
+            "count": 287
+        },
+        {
+            "name": "萌",
+            "count": 199
+        },
+        {
+            "name": "動画工房",
+            "count": 180
+        },
+        {
+            "name": "太田雅彦",
+            "count": 171
+        },
+        {
+            "name": "治愈",
+            "count": 157
+        },
+        {
+            "name": "漫改",
+            "count": 135
+        },
+        {
+            "name": "芳文社",
+            "count": 96
+        },
+        {
+            "name": "深藏功与名",
+            "count": 48
+        },
+        {
+            "name": "恋爱",
+            "count": 41
+        },
+        {
+            "name": "轻百合",
+            "count": 34
+        },
+        {
+            "name": "吐槽",
+            "count": 17
+        },
+        {
+            "name": "七月番",
+            "count": 17
+        },
+        {
+            "name": "佐仓绫音",
+            "count": 16
+        },
+        {
+            "name": "2013年",
+            "count": 15
+        },
+        {
+            "name": "赤崎千夏",
+            "count": 13
+        },
+        {
+            "name": "日本",
+            "count": 12
+        },
+        {
+            "name": "沼仓爱美",
+            "count": 10
+        },
+        {
+            "name": "佐倉綾音",
+            "count": 9
+        },
+        {
+            "name": "季番",
+            "count": 8
+        },
+        {
+            "name": "沼倉愛美",
+            "count": 8
+        },
+        {
+            "name": "TVA",
+            "count": 8
+        }
+    ],
+    "meta_tags": [
+        "百合",
+        "校园",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        20475,
+        20476,
+        20477,
+        20478,
+        20479
+    ],
+    "main_characters": [
+        {
+            "id": 20475,
+            "name": "倉橋莉子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b0/91/20475_crt_7z161.jpg?r=1605806833",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/91/20475_crt_7z161.jpg?r=1605806833",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/91/20475_crt_7z161.jpg?r=1605806833",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b0/91/20475_crt_7z161.jpg?r=1605806833"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5824,
+                    "name": "沼倉愛美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/38/bf/5824_prsn_7eWbT.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/bf/5824_prsn_7eWbT.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/bf/5824_prsn_7eWbT.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/38/bf/5824_prsn_7eWbT.jpg"
+                    },
+                    "short_summary": "日本の女性声優、歌手。アーツビジョン所属。愛称は主にぬーさん。日本ナレーション演技研究所出身。\r\n\r\nバンダイナムコゲームスのシミュレーションゲーム『THE IDOLM@STER』シリーズの1つ『THE IDOLM@STER SP』に我那覇響役として抜擢され注目を集める。デビュー作である『THE IDOLM@STER SP』のオーディションでは「ETERNAL WIND〜ほほえみは光る風の中〜」を歌い合格。\r\nテレビアニメ初出演作は『銀魂』。\r\n2016年7月21日、フライングドッグレーベルより歌手デビューする事を発表。それに伴いオフィシャルサイトの開設や個人のブログの移設など一本化し、公式twitter「@numakura_manami 沼倉愛美（公式）」を開始した。\r\n2016年8月28日、タイアップとなるテレビアニメ『魔法少女育成計画』の放送とメジャーデビューに先行して、『Animelo Summer Live 2016 刻 -TOKI-』3日目に『魔法少女育成計画』のオープニングテーマ「叫べ」を披露。同年11月2日、デビューシングル「叫べ」をリリースした。\r\n2017年4月15日、自身の誕生日にファンクラブの開設、1stアルバム『My LIVE』の制作、1stライブツアーの開催を合わせて発表。4月17日、オフィシャルモバイルファンクラブ「AREA NU」をスタートした。\r\n2019年2月20日、2ndアルバム『アイ』を発売。また、同年4月6日より開催された2ndライブツアーでは、自身初の海外単独公演となる台湾を含む全4都市での公演を行った。\r\n2019年10月23日、同じく声優の逢坂良太と入籍したことを発表した。\r\n2019年11月25日、2020年2月にアーティスト活動を終了することを発表した。\r\n\r\n个人生活\r\n高校生のとき、アニメ好きの友人から、あるドラマCDを貸してもらってそれを初めて聴いたときに、「音しかない世界で、声だけで全てを表現する仕事を知り、そうした人にすごく憧れを持った」ことで、声優を志すようになった。また、『機動戦士ガンダムSEED』との出会いも、声優を目指した理由の一つとして挙げており、それをきっかけにガンダムシリーズのファンになったという。\r\n2016年11月、ソロ歌手としてのメジャーデビューを果たす。もともと、「THE IDOLM@STER」や「Trident」として活動していたときから、歌唱力は高く評価されており、「歌うことは好き」とのことだが、本人曰く、「自分自身を表現することが苦手なので、『自分自身の歌』として歌うことに対する自信を持てずにいた」ことから、歌手デビューになかなか踏み切れなかったという。しかし、ファンの温かい励ましもあり、「（自分が歌うことをファンがこれほどに待望してくれているならば、）自分で自分のことを歌うことに向いていないと勝手に思っているだけで、もしかしたら実はそうではないのかもと思えるようになった。『できる』と言ってもらえる自分を、信じてもいいのかなと思うようになった」ことや、「Trident」の活動を支えてくれたスタッフが、個人の音楽活動のスタッフとしても支えてくれることになったことなどから、ソロ歌手としての挑戦を決意したという。\r\nなお、メジャーデビューを待たずして、アニメソング最大の音楽フェス『Animelo Summer Live 2016 刻 -TOKI-』（3日目、8月28日）に異例の出場を果たしたが、自分の出番が来てスポットライトが当たった瞬間、「私だと気がついた人が名前を呼んでくれた声を、マイクが拾ってイヤモニ内に聞こえてきたおかげで安心できた」ことで、ソロとしてステージで歌う不安が消えてライブパフォーマンスができた、と述べている。\r\n2枚目のシングル「Climber's High」がリリースされた際のインタビューでは「ソロシンガーとしての確固たるスタイルはまだ模索中」と回答している。\r\n「765PRO ALLSTARS」キャストの中では最年少である。愛称は複数あり、「ぬーぬー」をはじめ、そこから派生した「ぬー」、竹達彩奈が呼んだ事で広まった「ぬーさん」、花澤香菜が命名した「アクターズスクール」などがある。\r\n好きな作品としては、先述のガンダムシリーズの他に、『攻殻機動隊』や『銀河英雄伝説』を挙げている。好みのタイプはナイトハルト・ミュラー。また、お気に入りの熊のぬいぐるみに「ラインハルト」と命名して、話しかけたり一緒に寝たりと溺愛している。なおラインハルトの姿は、彼女のブログの2010年4月15日（誕生日）の記事で確認できる。\r\n趣味は編み物。10歳のときから7年間ほど、「電子オルガンのテクニトーン」を習っていたという。\r\n2017年のインタビューによると、好物は日本酒、趣味は登山、個人で我慢大会を行うこともある。\r\n仲の良い声優に、今井麻美・下田麻美・浅倉杏美・原由実・赤﨑千夏・田所あずさ・佳村はるかの名前を挙げている。また、人生における大切な出会いとなった人物として、高校時代の担任、声優養成所の講師、「THE IDOLM@STER」の音響監督（菊田浩巳）の3人を挙げている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 20476,
+            "name": "真木夏緒",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/39/c8/20476_crt_0fyZv.jpg?r=1605806851",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/c8/20476_crt_0fyZv.jpg?r=1605806851",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/c8/20476_crt_0fyZv.jpg?r=1605806851",
+                "grid": "https://lain.bgm.tv/pic/crt/g/39/c8/20476_crt_0fyZv.jpg?r=1605806851"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7297,
+                    "name": "赤﨑千夏",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/18/51/7297_prsn_9Dfe9.jpg?r=1496038723",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/51/7297_prsn_9Dfe9.jpg?r=1496038723",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/51/7297_prsn_9Dfe9.jpg?r=1496038723",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/18/51/7297_prsn_9Dfe9.jpg?r=1496038723"
+                    },
+                    "short_summary": "81プロデュース所属。鹿児島県出身。\r\n\r\n声優を志したのは小学5、6年生頃のこと。中学生時代はバスケットボール部と放送部に所属し、放送部では鹿児島県大会での受賞経歴がある。錦江湾高校在学中は同高校に演劇部がなかったため、地元の市民劇団「劇団いぶき」に所属した。\r\n\r\n家族に2歳上の姉がいる。目標にしている先輩として皆口裕子の名を挙げている。方言は鹿児島弁。趣味・特技は歌。\r\n\r\n東京学芸大学教育学部演劇専修（ゼロ免課程）卒業。大学では第2外国語としてイタリア語を履修。\r\nボイスニュータイプ・サマーオーディション2008で文化放送賞、81プロデュース賞、アルケミスト賞を受賞。81プロデュース賞の受賞特典として2008年10月から、81ACTOR'S STUDIO（81プロデュース付属俳優養成所）に通っていた。2009年10月に養成所を卒業、2010年4月に81プロデュース所属となった。\r\n\r\n2012年にテレビアニメ『キルミーベイベー』で折部やすな役で初めての主役級キャラクターに抜擢。その後の『モーレツ宇宙海賊』『中二病でも恋がしたい!』『恋愛ラボ』等でも主要キャラクターを演じ、2013年に放送された『俺の彼女と幼なじみが修羅場すぎる』では初の（主役ではない）メインヒロインを務めた。\r\n\r\n2018年8月10日、自身のTwitterで結婚を発表した。2020年8月10日、第1子男児の出産を報告。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 20477,
+            "name": "棚橋鈴音",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fe/89/20477_crt_8vJ00.jpg?r=1605807784",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/89/20477_crt_8vJ00.jpg?r=1605807784",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/89/20477_crt_8vJ00.jpg?r=1605807784",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fe/89/20477_crt_8vJ00.jpg?r=1605807784"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10868,
+                    "name": "水瀬いのり",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/87/b1/10868_prsn_LoxnW.jpg?r=1740115446",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/b1/10868_prsn_LoxnW.jpg?r=1740115446",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/b1/10868_prsn_LoxnW.jpg?r=1740115446",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/87/b1/10868_prsn_LoxnW.jpg?r=1740115446"
+                    },
+                    "short_summary": "日本的女性演员、声优，原Sony Music Artists所属，现AXL-ONE。东京都出身。\r\n\r\n兴趣为动画、游戏、NICONICO动画、上网。\r\n粉丝俱乐部叫“いのりまち”（祈町），自称是町长，粉丝则是町民。\r\n特技是在卡拉OK中用动画歌曲唱出二重唱、俄罗斯方块。「非常喜欢唱歌和表演。也十分喜欢声优的动画歌，对会唱歌的声优怀有憧憬。」\r\n小时候对于《美少女战士》的水手金星、《名侦探柯南》的毛利兰有所憧憬，从母亲那里得知声优的存在后决定以成为声优为目标，并因为受毛利兰影响而开始学空手道。\r\n初中时由于受到《网球王子》的影响而同时参加网球部和演剧部，但没多久就退出了网球部。\r\n国中三年级在《世纪末超自然学院》所配的冈本灯一角为出道作。\r\n小时候就很喜欢迪士尼的作品，甚至拥有年间护照。一年会去100次东京迪士尼乐园。理想男性为米老鼠爱好者。\r\n曾经在チャームキッズ（Charm Kids，一个专门培养少女偶像的机构）以偶像身份出道，2010年1月5日毕业。期间名义为【末永みお】。\r\n水树奈奈的粉丝，2015年9月24日宣布了将会在自己20岁生日当天（即2015年12月2日）以个人名义作为歌手出道，并发售第一张个人单曲，唱片公司为King Records。\r\n\r\n2013年，在NHK的晨间剧《海女》中饰演成田丽奈。由此在同年的NHK红白歌会的企划单元中决定和海女的主要演员一起出场，作为\"GMTスペシャルユニット feat.アメ横女学园芸能コース”的一员在舞台上披露了《暦の上ではディセンバー》。\r\n2015年12月12日在西武铁道（秩父线）担任了一日站长。\r\n2016年，获得了第10届声优奖的主演女声优赏，第25届日本影评人大奖的新人声优奖。2016年4月14日，被任命为京都国际动漫展的应援支持者。而且所绘画的『八桥舞妓酱』会展示在京都国际漫画博物馆。\r\n2016年11月19日，台湾一男子扬言要杀害水濑祈，虽然嫌犯立即被逮捕，但此事也导致原本预定于12月在台湾举办的现场活动、3单发售纪念活动以及此后的各项现场活动被取消。\r\n2017年7月3日，因合约到期，离开Sony Music Artists，事务所网站下的官方粉丝俱乐部也陆续关闭。\r\n2017年9月1日起加入AXL ONE。\r\n2017年12月2日在东京国际forum Hall A举行了第一次个人演唱会。\r\n2018年5月23日，发售第二张个人专辑《BLUE COMPASS》。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 20478,
+            "name": "榎本結子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/68/0c/20478_crt_KosE4.jpg?r=1605807827",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/0c/20478_crt_KosE4.jpg?r=1605807827",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/0c/20478_crt_KosE4.jpg?r=1605807827",
+                "grid": "https://lain.bgm.tv/pic/crt/g/68/0c/20478_crt_KosE4.jpg?r=1605807827"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5745,
+                    "name": "佐倉綾音",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929"
+                    },
+                    "short_summary": "佐仓绫音（さくら あやね）是日本的女性声优，1994年1月29日出生及成长于东京都；曾为[url=www.imenterprise.jp]I'm Enterprise[/url]旗下声优，2022年2月1日移籍至[url=www.aoni.co.jp]青二Production[/url]。\r\n\r\n[b]经历[/b]\r\n中学时所属剧团东俳，[url=https://nichinare.com/]日本播音演技研究所[/url]出身。《Dottoai广播》第45代主持人。2011年，在TV动画《[url=https://bgm.tv/subject/8990]食梦者玛利[/url]》出演[url=https://bgm.tv/character/10571]玛利·梦魔[/url]，首次出演主角。同年在剧场版动画《[url=https://bgm.tv/subject/12544]萤火之森[/url]》中出演[url=https://bgm.tv/character/15896]竹川萤[/url]，首次担当主役。\r\n其他代表作品有《[url=https://bgm.tv/subject/88287]请问您今天要来点兔子吗？[/url]》[url=https://bgm.tv/character/23647]保登心爱[/url]、《[url=https://bgm.tv/subject/78405]悠哉日常大王[/url]》[url=https://bgm.tv/character/21370]越谷夏海[/url]、《[url=https://bgm.tv/subject/37685]心理测量者[/url]》[url=https://bgm.tv/character/18476]霜月美佳[/url]、《[url=https://bgm.tv/subject/54433]我的青春恋爱物语果然有问题[/url]》[url=https://bgm.tv/character/26090]一色彩羽[/url]、《[url=https://bgm.tv/subject/120925]夏洛特[/url]》[url=https://bgm.tv/character/29511]友利奈绪[/url]、《[url=https://bgm.tv/subject/100444]四月是你的谎言[/url]》[url=https://bgm.tv/character/26004]泽部椿[/url]等。\r\n\r\n[b]其他[/b]\r\n昵称“あやねる（ayaneru）”是由[url=https://bgm.tv/person/4950]冈本信彦[/url]（《[url=https://bgm.tv/subject/8990]食梦者玛利[/url]》的合演者）给予的。关于昵称（本人说）“没什么特别的”。“あやねる”只是“绫音”和“睡觉（寝る）”的组合。\r\n完全的百合脑、百合控，非常喜欢[url=https://bgm.tv/person/4765]花泽香菜[/url]。\r\n爱好读书，特技是插图。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 20479,
+            "name": "水嶋沙依理",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/94/69/20479_crt_08x1N.jpg?r=1611153838",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/94/69/20479_crt_08x1N.jpg?r=1611153838",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/94/69/20479_crt_08x1N.jpg?r=1611153838",
+                "grid": "https://lain.bgm.tv/pic/crt/g/94/69/20479_crt_08x1N.jpg?r=1611153838"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10869,
+                    "name": "大地葉",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f0/96/10869_prsn_nWIUY.jpg"
+                    },
+                    "short_summary": "日本女性声优，埼玉县出生。日本播音演技研究所出身，隶属于VIMS。名字“大地叶”（たいち よう／Taichi You）是艺名，由来是学生时期的绰号たいちょー（“队长”，日语读音：Taichō）。\r\n\r\n趣味・特技：インド映画鑑賞、ピアノ弾き語り、曲のコピー（譜面をおこせる）\r\n芸歴：日本ナレーション演技研究所",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

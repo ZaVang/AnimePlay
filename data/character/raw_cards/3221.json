@@ -1,0 +1,80 @@
+{
+    "id": 3221,
+    "name": "衛宮切嗣",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/da/8e/3221_crt_Rz66r.jpg?r=1499148483",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/8e/3221_crt_Rz66r.jpg?r=1499148483",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/8e/3221_crt_Rz66r.jpg?r=1499148483",
+        "grid": "https://lain.bgm.tv/pic/crt/g/da/8e/3221_crt_Rz66r.jpg?r=1499148483"
+    },
+    "summary": "Fate/Zero 中Saber的Master。\r\n　　被外界称为“魔术师杀手”。觉得魔术与机械一样 ，只是一种达成目标的手段 。\r\n　　代表爱因斯柏一族出战，为了自身坚信的正义可变得冷酷无情，对目标贯彻到底不择手段，能使用“固有时制御”此高等魔术。经常因为自身理想和行动有所出入而气愤。具有火与土的双重属性。\r\n　　深爱著自己的妻子爱丽丝与自己女儿伊莉雅 。\r\n　　对于招出Saber感到不满，相比以骑士道自居的骑士，他更喜欢暗中行动的Caster或Assassin。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "卫宫切嗣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "衛宮切嗣"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "えみや きりつぐ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Emiya Kiritsugu"
+                },
+                {
+                    "k": "职阶",
+                    "v": "アサシン / Assassin"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "11月11日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        },
+        {
+            "key": "体重",
+            "value": "67kg"
+        },
+        {
+            "key": "属性",
+            "value": "混沌·恶"
+        },
+        {
+            "key": "画师",
+            "value": "AKIRA"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 11,
+    "stat": {
+        "comments": 108,
+        "collects": 529
+    },
+    "anime_ids": [
+        10639
+    ]
+}

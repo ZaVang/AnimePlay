@@ -1,0 +1,56 @@
+{
+    "id": 81372,
+    "name": "精灵宝可梦 起源",
+    "image_path": "data/images/anime/81372.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "『ポケットモンスター』シリーズ最新作『ポケットモンスター Ｘ・Ｙ』が10月12日（土）に発売されることを記念し、シリーズの原点となる最初の作品『ポケットモンスター 赤・緑』の世界を初めて描く、オリジナルアニメーション『ポケットモンスター ジ・オリジン』の放送が決定したよ！\r\n\r\n10月12日（土）の『ポケットモンスター Ｘ・Ｙ』の発売に先駆け、10月2日（水）に、テレビ東京系列で、19時から特別番組として放送！\r\n",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 4,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "游戏改"
+    ],
+    "date": "2013-10-02",
+    "rating_rank": 1227,
+    "rating_score": 7.4,
+    "rating_total": 1314,
+    "main_character_ids": [
+        26140
+    ],
+    "main_characters": [
+        {
+            "id": 26140,
+            "name": "レッド",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8a/e5/26140_crt_VVWh1.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/e5/26140_crt_VVWh1.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/e5/26140_crt_VVWh1.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8a/e5/26140_crt_VVWh1.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4084,
+                    "name": "竹内順子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a5/3c/4084_prsn_wQHsi.jpg"
+                    },
+                    "short_summary": "竹内顺子（1972年4月5日－），日本的女性声优、演员，现属剧团BQ MAP及尾木プロ THE NEXT事务所旗下。埼玉县出身，血型是B型。代表作有‘Hunter × Hunter’的（小杰·富力士）、‘メダロットシリーズ’的（メタビー）、‘火影忍者’的（漩涡鸣人）、‘Yes! 光之美少女5’的（夏木玲）等。\r\n\r\n\r\n竹内顺子在98年左右最成功的角色无疑是《Hunter X Hunter》的小杰了，小杰的天真、童稚、智慧、善良、倔强、快乐、忧愁、希望、失落，一切的一切都被竹内小姐以其稚气未脱、幼稚的语言所表现，竹内小姐的嗓鼻使用方面堪称高手，在激动和冷静时表现的气质是Q所喜爱并敬佩的，竹内小姐带动的小杰的气质是向高尚的气质发展的，可以感觉得到她对人物的理解是跨时代性的，是用发展的语言演绛成长的人物，这是其最大的优势和财富所在。这一点是田中小姐甚至许多女声优所不能比拟的。而田中小姐的语言感染力以及表现功力的自然和纯熟也是值得学习的。 　　后来竹内顺子又参与《火影忍者》中漩涡鸣人的配音，再一次大大提高了竹内的知名度，并且相当成功，与小杰有的一拼，这时候的她已经有12年的配音经验，可以说比98年的时候要成熟许多。虽然鸣人是男性，但是竹内顺子却能配的天衣无缝，不仅如此，还将鸣人的勇敢、毅力、倔强、不服输的精神以及偶尔显示的智慧表现的淋漓尽致。 　　竹内顺子的作品并不算特别多，但是人气漫画的主角倒占了不少。她也很会为男性人物配音，甚至有些比较难，比较不可思议的声音，都听不出来是出自于她。可见竹内的精炼。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

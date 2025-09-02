@@ -1,0 +1,90 @@
+{
+    "id": 77480,
+    "name": "银之匙 Silver Spoon 第二季",
+    "image_path": "data/images/anime/77480.jpg",
+    "points": 8.0,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "累計発行部数が第８巻で1000万部を記録した人気コミック『銀の匙 Silver Spoon』を原作とするテレビアニメシリーズの第２期。第１期のスタッフ・キャストが再結集しているが、監督は第１期で副監督を務めた出合小都美が起用された。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 11,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2014-01-09",
+    "rating_rank": 240,
+    "rating_score": 8.0,
+    "rating_total": 4033,
+    "main_character_ids": [
+        19783,
+        19784
+    ],
+    "main_characters": [
+        {
+            "id": 19783,
+            "name": "八軒勇吾",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/90/03/19783_crt_qRBBl.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/03/19783_crt_qRBBl.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/03/19783_crt_qRBBl.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/90/03/19783_crt_qRBBl.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4994,
+                    "name": "木村良平",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d5/46/4994_prsn_RJG93.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/46/4994_prsn_RJG93.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/46/4994_prsn_RJG93.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d5/46/4994_prsn_RJG93.jpg"
+                    },
+                    "short_summary": "3岁时加入向日葵剧团，中学就读不需要穿制服，甚至没有特定讲课内容和课本的私立学校\r\n\r\n2009年在电视动画《东之伊甸》中首次担当男主角泷泽朗[s]为今后Noitamina小王子拉开序幕[/s]\r\n\r\n2011年与一同主持广播节目「Kiramune Presents 江口拓也と木村良平と代永翼の キラキラ☆ビート」的江口拓也、代永翼组成音乐团体Trignal（Kiramune所属）。首张迷你专辑“Party”于2012年12月12日发行。\r\n\r\n2012年，荣获第六回声优奖男声优配角赏\r\n\r\n吸血鬼役相当多，曾在推特自称是吸血鬼声优（在和小信的电击GS里角色设定为‘好想喝酒，虽然其实是想吸血’）「BLOOD LAD」布拉德·D·布莱斯、「Servamp」Lawless、「DIABOLIK LOVERS」无神皓、DramaCD 吸血ダーリン、酔い愛、天顶游戏、明治吸血奇譚、RUNLIMIT）\r\nNoitamina[s]小王子[/s]\r\n东之伊甸 泷泽朗，坡道上的阿波罗 西见薰，ROBOTICS；NOTES 八汐海翔角色，银之匙 八轩勇吾，PSYCHO-PASS 鹿矛围桐斗，野球少年 瑞垣俊二\r\n\r\n界内界外交际广泛，经常招待朋友去家中聚会\r\n自称很怕生害羞，被日笠阳子称为「攻めシャイ」\r\n看似很随意，但其实最会看气氛（丰永）在聚会时能关注到每个人（白石凉子）\r\n恐高\r\n喜欢猫和狗推特头像是老家的猫\r\nkaji病和香菜病患者（和佐仓互称为情敌←虽然最近都被贤章打败了）",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19784,
+            "name": "御影アキ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a4/eb/19784_crt_ayRhR.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/eb/19784_crt_ayRhR.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/eb/19784_crt_ayRhR.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a4/eb/19784_crt_ayRhR.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6846,
+                    "name": "三宅麻理恵",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/28/0b/6846_prsn_94Y5o.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/0b/6846_prsn_94Y5o.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/0b/6846_prsn_94Y5o.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/28/0b/6846_prsn_94Y5o.jpg"
+                    },
+                    "short_summary": "ラクーンドッグ所属\r\n\r\n出身地：大阪府\r\n方言：関西弁\r\n趣味：読書、落語\r\n特技：中国語、素潜り\r\n資格：Microsoft Word エキスパート",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

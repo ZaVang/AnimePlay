@@ -1,0 +1,91 @@
+{
+    "id": 606,
+    "name": "雨宮優子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/08/34/606_crt_Zsbgu.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/34/606_crt_Zsbgu.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/34/606_crt_Zsbgu.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/08/34/606_crt_Zsbgu.jpg"
+    },
+    "summary": "在教会等待着某个人的神秘少女。常常在意想不到的时候出现，曾为音羽学生。她长年穿冬服，在烈日下也不会流汗。第二章曾暗示她会离开音羽。终章的女主角，同时也是ef系列实质意义的女主角。在ef - the first tale. 中扮演讲述者的角色，向夕说著一年前发生在音羽的往事。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雨宫优子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あまみや ゆうこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Amamiya Yuuko"
+                },
+                {
+                    "k": "昵称",
+                    "v": "柚子"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月21日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "体重",
+            "value": "42kg"
+        },
+        {
+            "key": "BWH",
+            "value": "82/56/83"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "官方设定集"
+                },
+                {
+                    "v": "anidb.net"
+                }
+            ]
+        },
+        {
+            "key": "忌日",
+            "value": "12月25日"
+        },
+        {
+            "key": "原作声优",
+            "value": "山田ゆな"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 4,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 21,
+    "stat": {
+        "comments": 146,
+        "collects": 580
+    },
+    "anime_ids": [
+        1029
+    ]
+}

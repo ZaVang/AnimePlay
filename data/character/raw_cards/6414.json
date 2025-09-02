@@ -1,0 +1,63 @@
+{
+    "id": 6414,
+    "name": "宮子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/af/2e/6414_crt_oOREc.jpg?r=1620763746",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/2e/6414_crt_oOREc.jpg?r=1620763746",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/2e/6414_crt_oOREc.jpg?r=1620763746",
+        "grid": "https://lain.bgm.tv/pic/crt/g/af/2e/6414_crt_oOREc.jpg?r=1620763746"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宫子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "宮子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みやこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Miyako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月10日"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 10,
+    "stat": {
+        "comments": 29,
+        "collects": 114
+    },
+    "anime_ids": [
+        37819,
+        330,
+        3622,
+        896
+    ]
+}

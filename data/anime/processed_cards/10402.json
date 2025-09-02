@@ -1,0 +1,348 @@
+{
+    "id": 10402,
+    "name": "圣战士登拜因",
+    "image_path": "data/images/anime/10402.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "《圣战士登拜因》宫武一贵作品，其中运用当时最先进技术创造出了“有机生态兵器”的前身。这次的“福音战士”从某种程度上也可以说是它的延续。圣战士：拜斯顿.威尔古传说中记载的拯救世界的战士。拜斯顿.威尔的古门人中流传着圣战士曾经显现奇迹，击败了企图统治拜斯顿.威尔的邪恶势力的传说。而来成为为了被召唤到拜斯顿.威尔，能驾驶奥拉机械，拥有比一般古门人更强“潜在能力”的地上人们的称号.....",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 49,
+    "synergy_tags": [
+        "科幻",
+        "机战",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "1983-02-05",
+    "rating_rank": 826,
+    "rating_score": 7.6,
+    "rating_total": 327,
+    "main_character_ids": [
+        67232,
+        67234,
+        67246,
+        67258,
+        67259,
+        67260,
+        67261,
+        67263,
+        67266,
+        67269,
+        67270,
+        67273,
+        67276
+    ],
+    "main_characters": [
+        {
+            "id": 67232,
+            "name": "ダンバイン",
+            "type": 2,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/79/ae/67232_crt_0018J.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/79/ae/67232_crt_0018J.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/79/ae/67232_crt_0018J.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/79/ae/67232_crt_0018J.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 67234,
+            "name": "ビルバイン",
+            "type": 2,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/aa/6d/67234_crt_Ap4yD.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/6d/67234_crt_Ap4yD.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/6d/67234_crt_Ap4yD.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/aa/6d/67234_crt_Ap4yD.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 67246,
+            "name": "ゼラーナ",
+            "type": 3,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9f/a9/67246_crt_29mzm.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/a9/67246_crt_29mzm.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/a9/67246_crt_29mzm.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9f/a9/67246_crt_29mzm.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 67258,
+            "name": "ショウ・ザマ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3c/dc/67258_crt_pR2AJ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/dc/67258_crt_pR2AJ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/dc/67258_crt_pR2AJ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3c/dc/67258_crt_pR2AJ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4361,
+                    "name": "中原茂",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9c/72/4361_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/72/4361_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/72/4361_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9c/72/4361_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 67259,
+            "name": "チャム・ファウ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/86/5f/67259_crt_TGYb6.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/5f/67259_crt_TGYb6.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/5f/67259_crt_TGYb6.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/86/5f/67259_crt_TGYb6.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4186,
+                    "name": "川村万梨阿",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a2/af/4186_prsn_SPGcY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/af/4186_prsn_SPGcY.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/af/4186_prsn_SPGcY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a2/af/4186_prsn_SPGcY.jpg"
+                    },
+                    "short_summary": "1980年高中毕业，成为东映的表演进修所的进修生。1983年初次亮相。\r\n    与漫画家永野护12年的交际。\r\n    1991年11月与永野护结婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 67260,
+            "name": "マーベル・フローズン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7f/a5/67260_crt_6BV4Z.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/a5/67260_crt_6BV4Z.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/a5/67260_crt_6BV4Z.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7f/a5/67260_crt_6BV4Z.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4008,
+                    "name": "土井美加",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/21/b5/4008_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/b5/4008_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/b5/4008_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/21/b5/4008_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の女優、声優、ナレーター。宮城県仙台市出身。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 67261,
+            "name": "ニー・ギブン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bb/9b/67261_crt_TDlpL.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/9b/67261_crt_TDlpL.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/9b/67261_crt_TDlpL.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bb/9b/67261_crt_TDlpL.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5375,
+                    "name": "安宅誠",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bf/76/5375_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/76/5375_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/76/5375_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bf/76/5375_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 67263,
+            "name": "キーン・キッス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/60/b0/67263_crt_14XfW.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/b0/67263_crt_14XfW.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/b0/67263_crt_14XfW.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/60/b0/67263_crt_14XfW.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3887,
+                    "name": "高田由美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/49/3887_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/49/3887_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/49/3887_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/49/3887_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "ミュージカル劇団「ミスタースリムカンパニー」で女優として活動後、声優へ転向。声優デビューは、1979年2月27日に放送されたTBSラジオ『林美雄のパックインミュージック』内の『瓜売小僧（うりうりぼうや）』（橋本治原作・桃尻娘のラジオドラマ）での蜜柑姫（みかんひめ）役。\r\n\r\n吹き替えでは、『幽幻道士』シリーズのテンテン役が知られており、シリーズ5作品中4作品と、『幽幻道士』の世界観・キャラクターを元に日本で再構成された『来来!キョンシーズ』でテンテンの声を担当。また『新桃太郎』でも、テンテン役のリュウ・ツーイーが演じたマーヤを吹き替えた。\r\n\r\n2009年10月ごろを境に、それまで演じていた『クレヨンしんちゃん』の吉永みどり役などのレギュラーを降板。2013年には、所属事務所のプロフィールから、それまで掲載されていた高田のサンプル音声が削除された。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 67266,
+            "name": "リムル・ルフト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a7/db/67266_crt_ZF3Nd.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/db/67266_crt_ZF3Nd.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/db/67266_crt_ZF3Nd.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a7/db/67266_crt_ZF3Nd.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 67269,
+            "name": "シーラ・ラパーナ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4a/13/67269_crt_DuDja.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4a/13/67269_crt_DuDja.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4a/13/67269_crt_DuDja.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4a/13/67269_crt_DuDja.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4137,
+                    "name": "高橋美紀",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/67/34/4137_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/34/4137_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/34/4137_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/67/34/4137_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 67270,
+            "name": "エレ・ハンム",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ea/6c/67270_crt_2Pnca.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/6c/67270_crt_2Pnca.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/6c/67270_crt_2Pnca.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ea/6c/67270_crt_2Pnca.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4003,
+                    "name": "佐々木るん",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3c/e8/4003_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/e8/4003_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/e8/4003_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3c/e8/4003_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "佐々木 るん（ささき るん、1956年3月21日 - ）は日本の女性声優。本名・旧芸名は佐々木由美子。\r\n\r\n福島県出身。法政大学英文科卒業。映画の記録係を経て東京俳優生活協同組合付属養成所に通いながら小劇団で舞台活動をした。1979年に第 1回ニッポン放送アマチュア声優コンテスト1位を獲得して、ラジオドラマに出演した。アニメでのデビュー作は『さるとび佐助』の雪乃姫役になる。芸名の名付け親は、当時ニッポン放送のプロデューサーだったドン上野こと上野修で、手塚治虫の漫画のタイトル『るんは風の中』からとられた。\r\nぷろだくしょんバオバブに所属し、大沢事務所へと移籍したが、のちにフリーランスで活動。\r\n現在はアメリカのシアトルに在住し、Team Dreamcatchersという声優養成所を運営している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 67273,
+            "name": "バーン・バニングス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/be/4b/67273_crt_01jv7.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/4b/67273_crt_01jv7.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/4b/67273_crt_01jv7.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/be/4b/67273_crt_01jv7.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3898,
+                    "name": "速水奨",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f8/ba/3898_prsn_BD5L7.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/ba/3898_prsn_BD5L7.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/ba/3898_prsn_BD5L7.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f8/ba/3898_prsn_BD5L7.jpg"
+                    },
+                    "short_summary": "日本の男性声優、俳優、歌手、ナレーター。\r\n本名は大濱 靖（おおはま やすし）。妻は声優の五十嵐麗。甥（現養子）に同じく声優の速水秀之がいる。以前はぷろだくしょんバオバブや青二プロダクションに所属していた。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 67276,
+            "name": "トッド・ギネス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/dd/c5/67276_crt_GuTtI.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/c5/67276_crt_GuTtI.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/c5/67276_crt_GuTtI.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/dd/c5/67276_crt_GuTtI.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

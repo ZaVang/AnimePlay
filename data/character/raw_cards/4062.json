@@ -1,0 +1,57 @@
+{
+    "id": 4062,
+    "name": "ウィリアム・ジョーンズ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a7/6d/4062_crt_anidb.jpg?r=1403825416",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/6d/4062_crt_anidb.jpg?r=1403825416",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/6d/4062_crt_anidb.jpg?r=1403825416",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a7/6d/4062_crt_anidb.jpg?r=1403825416"
+    },
+    "summary": "ジェントリであるジョーンズ家の長男。ジョーンズ家は4代前に勃興した家で、爵位こそないが現在は裕福な貿易商でありウィリアムは家督を継ぐ者として厳格に育てられた。\r\n    インドのマハラジャの王子から軍人の家系の家の子息まで交友は広く深く、人に信頼される紳士である。原作より、少なくとも弟・アーサーが在学しているイートン・カレッジを卒業していることは分かるが大学に進んだかどうかは不明。\r\n    父に言われ渋々訪ねた恩師・ケリー宅のメイドであるエマに一目惚れをする。\r\n    妹のグレイスからは「適当で面倒臭がりでボーッとしてて、優柔不断で自信なさそうで能天気」と評されており、基本的には良い所のお坊ちゃんである。何にでも真面目ではあるものの当初は今一つ目立った才覚が見られず少々頼りなく描かれているが、物語を通して理解力・判断力・行動力が開花していく事となる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "威廉·琼斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "William Jones"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ウィリアム・ジョーンズ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Wiriamu Joonzu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        1964,
+        1965
+    ]
+}

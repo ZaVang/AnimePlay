@@ -1,0 +1,79 @@
+{
+    "id": 102995,
+    "name": "マグナガルルモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/56/e4/102995_crt_dEbT9.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/e4/102995_crt_dEbT9.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/e4/102995_crt_dEbT9.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/56/e4/102995_crt_dEbT9.jpg"
+    },
+    "summary": "据说力量超越传说中的十斗士，拥有光属性能力的超越种数码宝贝。擅长以光速移动，装备飞行组件时能以亚光速在空中飞行。此外胸部装甲及右手的远距离射击装置「狙击幻影」、左手的中距离射击装置「强袭幻影」可以分离卸下，但火力也会随之降低。胸部的「雷射瞄准」可在空中盘旋时锁定空中和陆地上的所有目标，在高空盘旋并确认目标后，就立即全力发动攻击。可说是没有人能从铠甲加鲁鲁兽手下逃脱。必杀技是向被锁定的所有目标发动全弹齐射，再以高速猛攻破坏主要目标的『毁灭机关枪』；以及卸下胸部装甲，再加速到超越亚光速的超光速境界，将光带触及的一切全盘消灭的『超速星光』。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "铠甲加鲁鲁兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "玛格纳加鲁鲁兽"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Magna Garurumon"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Magunagarurumon"
+                },
+                {
+                    "k": "称号",
+                    "v": "苍钢的超越烈士"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference/detail.php?directory_name=magnagarurumon"
+        },
+        {
+            "key": "等级",
+            "value": "混合体"
+        },
+        {
+            "key": "类型",
+            "value": "改造型"
+        },
+        {
+            "key": "属性",
+            "value": "可变"
+        },
+        {
+            "key": "必杀技",
+            "value": [
+                {
+                    "v": "毁灭机关枪"
+                },
+                {
+                    "v": "超速星光"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        3131
+    ]
+}

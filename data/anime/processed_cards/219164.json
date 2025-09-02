@@ -1,0 +1,185 @@
+{
+    "id": 219164,
+    "name": "鲁邦三世 PART5",
+    "image_path": "data/images/anime/219164.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "鲁邦三世与次元大介身处法国。故事在某处乡间小镇的公寓一室开始。\r\n包括毒品枪械等非法物资在内，任何物品都能购买的地下网站，“马可波罗”。为了盗取虚拟货币，鲁邦等人侵入了戒备森严的巨大服务器设施。他们在那里遇到了神秘的天才黑客少女，阿米。\r\n鲁邦和阿米一起正面应对马可波罗的陷阱，但由于敌人设置的“鲁邦游戏”，而落得被全世界监视的下场……\r\n阿米身上接连揭晓的谜团，以及知晓鲁邦三世过去的男人出现——\r\n鲁邦正陷入前所未有的绝境！ ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2018-04-03",
+    "rating_rank": 1150,
+    "rating_score": 7.4,
+    "rating_total": 740,
+    "main_character_ids": [
+        6784,
+        6975,
+        7253,
+        7254,
+        7266
+    ],
+    "main_characters": [
+        {
+            "id": 6784,
+            "name": "ルパン三世",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/08/4e/6784_crt_bQQph.jpg?r=1446820910",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/4e/6784_crt_bQQph.jpg?r=1446820910",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/4e/6784_crt_bQQph.jpg?r=1446820910",
+                "grid": "https://lain.bgm.tv/pic/crt/g/08/4e/6784_crt_bQQph.jpg?r=1446820910"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4979,
+                    "name": "栗田貫一",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9f/96/4979_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/96/4979_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/96/4979_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9f/96/4979_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6975,
+            "name": "次元大介",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/33/f2/6975_crt_KwU3M.jpg?r=1446818861",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/f2/6975_crt_KwU3M.jpg?r=1446818861",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/f2/6975_crt_KwU3M.jpg?r=1446818861",
+                "grid": "https://lain.bgm.tv/pic/crt/g/33/f2/6975_crt_KwU3M.jpg?r=1446818861"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4219,
+                    "name": "小林清志",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d4/b4/4219_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/b4/4219_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/b4/4219_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d4/b4/4219_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーター。東京俳優生活協同組合の創立メンバーの一人であり、同組合に所属した。\r\n\r\n独特の渋い声を生かして、声優界の創生期から活躍した。アニメでの主な出演作は『ルパン三世』シリーズの次元大介や『妖怪人間ベム』（1968年）のベムなど。また、CMやテレビ番組などのナレーションも多く担当し、洋画ではジェームズ・コバーン、リー・マーヴィンらの吹き替えを務めていた。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7253,
+            "name": "峰不二子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/78/0b/7253_crt_V6dHh.jpg?r=1446819708",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/0b/7253_crt_V6dHh.jpg?r=1446819708",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/0b/7253_crt_V6dHh.jpg?r=1446819708",
+                "grid": "https://lain.bgm.tv/pic/crt/g/78/0b/7253_crt_V6dHh.jpg?r=1446819708"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4244,
+                    "name": "沢城みゆき",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/b0/4244_prsn_Igahi.jpg?r=1687791526",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/b0/4244_prsn_Igahi.jpg?r=1687791526",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/b0/4244_prsn_Igahi.jpg?r=1687791526",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/b0/4244_prsn_Igahi.jpg?r=1687791526"
+                    },
+                    "short_summary": "日本长野县出身的女性声优。昵称みゆきち(Miyukichi)，隶属青二Production事务所。\r\n\r\n1998年，Broccoli公司弄出一系列旗下精品店2D角色的策划，即猫耳女仆装萌LOLI角色商品的推广，并且在全国范围开展了还算有声势的“Di Gi Charat”角色声优遴选活动。那时候，初中二年级也是选手中年龄第二小的泽城美雪获得了评委特别奖，和得到冠军的真田麻美（真田アサミ）一起于“Di Gi Charat”声优出道。\r\n2001年，在动画《顽皮小白貂》中首次为主演角色配音。\r\n\r\n未进入过声优养成所的她经过同是D.U.P.成员的冰上恭子介绍，来到以外国影视吹替为特色的事务所Mausu Promotion，之后演技学习上得到了更好的指导，也获得了不少锻炼经验，可以明显地感觉她的声优本领技巧历精更始。\r\n2007年秋，成为Theatre剧团子的准剧团成员，开始了舞台剧的表演生涯。\r\n2009年，获得第三届声优奖助演女声优赏。获“以率真的表演为多部作品添色不少的实力派声优”的评价。\r\n2010年，获得第四届声优奖主演女声优赏。2010年全年，泽城的总演出电视动画集数是219话，即大约在每一季度，便有超过50话的动画都能听见她的声音。\r\n2011年，获得第五届声优奖海外人气赏。2011年，FAMI通2011年度大赏，最佳女主角奖。唯一在游戏界和动画界取得该成就的女性声优。\r\n2013年，NewType动画大赏2013 女性声优赏。\r\n2015年，获得第九届声优奖助演女声优赏，同年8月1日从Mausu Promotion移籍至青二事务所。\r\n\r\n为人沉着低调，甚至到了被以为是情绪低落的地步，即使是大合照亦少见笑容，也极少见出现于其他声优网志之中。做事认真，由于资历老实力好做事又一板一眼，所以往往在录音室甚至要指导其他声优的演出，因此被田中理惠封为『座长』。\r\n和坂本真绫一样，即使在大学时还是有参与工作，而且其工作的密度完全无法想像直到2008年四月之前还是大学生。 并没有受过正统声优学校训练，而被前辈冰上恭子以至事务所的吹替系前辈作演技指导，可说是边做边学。\r\n2008年3月大学毕业。学习勤奋刻苦的她以优异的成绩毕业，之前她仅两年内就拿到了100以上的高学分，大学四年间，她声优活动与兼顾学业做到两不耽误。\r\n自心之图书馆起便经常与斋藤千和共演，由于出道年份来说泽城很早就出道，所以往往出现明明年纪比她大的声优却要叫她前辈的有趣事。\r\n由于和真田麻美一起出道，因此二人公私之间的感情非常要好，也是低调的泽城少数私交较深的同行。和名冢佳织、小清水亚美、三瓶由布子因一同出演《强袭魔女》而交好。和同出身于东京都的下野纮有着类似于青梅竹马一样的关系。此外，和水树奈奈关系也不错，后者曾邀请泽城到新宿KOMA剧场参演舞台剧，以庆祝泽城大学毕业，两人还曾一同去屋久岛两日一夜游。\r\n\r\n家庭成员是父母和一个弟弟，弟弟是演员和声优泽城千春，喜欢西方古典乐，会在泡澡时看书。其实名字是叫做泽城幸，其原因是父亲是中岛美雪的歌迷，所以就按照「みゆき」（MIYUKI）这个读音给她取名字意为「幸」，因此她的名字应该汉字写作「泽城幸」。有趣的是，在父亲给她取名的时候，日本人由于有时候用汉字可以标记的假名太多，所以经常混淆。她的母亲曾经反驳父亲道，叫「幸」不是应该用「さち（SACHI）」的读音吗？\r\n\r\n2014年6月2日，在自己的博客宣告了与圈外男性结婚的喜讯。\r\n2018年6月28日，因要产前休养、以及产后育儿相关事情，宣布从夏天开始暂停声优工作，在同年的11月5日产后复出。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7254,
+            "name": "銭形幸一",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a7/07/7254_crt_CMERs.jpg?r=1744607981",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/07/7254_crt_CMERs.jpg?r=1744607981",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/07/7254_crt_CMERs.jpg?r=1744607981",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a7/07/7254_crt_CMERs.jpg?r=1744607981"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3914,
+                    "name": "山寺宏一",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/36/d6/3914_prsn_pX74x.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/d6/3914_prsn_pX74x.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/d6/3914_prsn_pX74x.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/36/d6/3914_prsn_pX74x.jpg"
+                    },
+                    "short_summary": "日本男性聲優，1961年6月17日生\r\n少數由聲優轉型成演員、主持的成功例子，\r\n大學畢業後進入俳協養成所，1986年畢業，之後雖然演過不少角色但始終打不起名堂，直到《亂馬1/2》才以響良牙一角成名。\r\n擁有多變聲音聞名，被稱為「擁有七色聲音的男人」，由於什麼角色都能配，所以業界有個笑話說「配角想不到找誰來配的話就山寺宏一吧！」。\r\n由於這種萬能型特質所以雖然主角役很少，但卻是無數作品的必然配角，尤以洋畫系更明顯。\r\n富山敬離世後，山寺是其中一個接手富山角色的聲優。\r\n另一個以洋畫系為主舞台的聲優，多位荷里活紅星如愛迪．墨菲都是由他所配。\r\n和山口勝平，林原惠，戶田惠子，大塚明夫，富永美奈，田中敦子交好。\r\n因為洋畫配音被名編劇三谷幸喜發掘成為演員。\r\n不過也和他的聲優工作一樣，演的都是大配角以至小配角。\r\n1993年与声优金井美香结婚。2006年离婚。\r\n2012年6月17日在推特发表与声优田中理惠结婚。2018年8月3日，二人在各自的推特上宣布已离婚。\r\n2021年6月14日在推特发表与演员冈田罗宾翔子结婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7266,
+            "name": "石川五ェ門",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/51/2c/7266_crt_hAex8.jpg?r=1446822000",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/2c/7266_crt_hAex8.jpg?r=1446822000",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/2c/7266_crt_hAex8.jpg?r=1446822000",
+                "grid": "https://lain.bgm.tv/pic/crt/g/51/2c/7266_crt_hAex8.jpg?r=1446822000"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4254,
+                    "name": "浪川大輔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/70/c3/4254_prsn_99K43.jpg?r=1631019573"
+                    },
+                    "short_summary": "浪川 大輔（なみかわ だいすけ、1976年4月2日 - ） は、日本の声優、俳優、歌手、ナレーター。ステイラック代表取締役。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

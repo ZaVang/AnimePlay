@@ -1,0 +1,39 @@
+{
+    "id": 46501,
+    "name": "ゲイナー・サンガ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/36/0c/46501_crt_8c3yZ.jpg?r=1474377074",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/0c/46501_crt_8c3yZ.jpg?r=1474377074",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/0c/46501_crt_8c3yZ.jpg?r=1474377074",
+        "grid": "https://lain.bgm.tv/pic/crt/g/36/0c/46501_crt_8c3yZ.jpg?r=1474377074"
+    },
+    "summary": "17歳。\r\nドームポリス・ウルグスクに住むゲーム好きの高校生。オーバーマンバトルゲームのチャンピオンで、キングの称号をもつ。\r\nゲインが請け負ったウルグスクのエクソダスに巻き込まれ、成り行きでオーバーマン、キングゲイナーのパイロットになる。\r\n両親がエクソダス主義者に殺されたためエクソダス嫌いで引きこもりがち。内気なわりに芯は強く、時に大胆な行動を取る。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "盖纳·桑加"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 5
+    },
+    "anime_ids": [
+        7931
+    ]
+}

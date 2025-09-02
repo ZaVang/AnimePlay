@@ -1,0 +1,202 @@
+{
+    "id": 83548,
+    "type": 2,
+    "name": "ルパン三世 ワルサーP38",
+    "name_cn": "鲁邦三世 沃尔特P38",
+    "summary": "　　又是一次猫鼠周旋，钱形警部眼看就要把鲁邦铐上，不料却从暗地里射来一颗子弹。钱形中枪倒下，鲁邦循着枪声望去，只看见一只有着毒蜘蛛纹身的手，正握着一支与自己的爱枪一样型号的沃尔特P38，转瞬隐没在了阴影中…\r\n　　本作为鲁邦三世TVsp第九弹，于1997年8月1日放送。",
+    "nsfw": false,
+    "locked": false,
+    "date": "1997-08-01",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/84/31/83548_68GSV.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/84/31/83548_68GSV.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/84/31/83548_68GSV.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/84/31/83548_68GSV.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/84/31/83548_68GSV.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "鲁邦三世 沃尔特P38"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "鲁邦三世 华瑟P38",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "1"
+        },
+        {
+            "key": "放送开始",
+            "value": "1997年8月1日"
+        },
+        {
+            "key": "片长",
+            "value": "92分"
+        }
+    ],
+    "volumes": 0,
+    "eps": 1,
+    "total_episodes": 1,
+    "rating": {
+        "rank": 1673,
+        "total": 127,
+        "count": {
+            "one": 0,
+            "two": 0,
+            "three": 0,
+            "four": 1,
+            "five": 3,
+            "six": 20,
+            "seven": 49,
+            "eight": 46,
+            "nine": 5,
+            "ten": 3
+        },
+        "score": 7.3
+    },
+    "collection": {
+        "wish": 77,
+        "collect": 216,
+        "doing": 7,
+        "on_hold": 13,
+        "dropped": 15
+    },
+    "tags": [
+        {
+            "name": "鲁邦三世",
+            "count": 50
+        },
+        {
+            "name": "1997",
+            "count": 29
+        },
+        {
+            "name": "OVA",
+            "count": 20
+        },
+        {
+            "name": "TVSP",
+            "count": 19
+        },
+        {
+            "name": "SP",
+            "count": 12
+        },
+        {
+            "name": "漫画改",
+            "count": 11
+        },
+        {
+            "name": "漫改",
+            "count": 10
+        },
+        {
+            "name": "搞笑",
+            "count": 9
+        },
+        {
+            "name": "TV",
+            "count": 8
+        },
+        {
+            "name": "日本",
+            "count": 8
+        },
+        {
+            "name": "矢野博之",
+            "count": 8
+        },
+        {
+            "name": "TMS",
+            "count": 7
+        },
+        {
+            "name": "动画",
+            "count": 4
+        },
+        {
+            "name": "战斗",
+            "count": 4
+        },
+        {
+            "name": "剧场版",
+            "count": 4
+        },
+        {
+            "name": "补旧番",
+            "count": 3
+        },
+        {
+            "name": "ルパン三世",
+            "count": 2
+        },
+        {
+            "name": "水岛精二",
+            "count": 2
+        },
+        {
+            "name": "冒险",
+            "count": 2
+        },
+        {
+            "name": "東京ムービー",
+            "count": 2
+        },
+        {
+            "name": "日本动画",
+            "count": 2
+        },
+        {
+            "name": "作画不喜",
+            "count": 1
+        },
+        {
+            "name": "栗田贯一",
+            "count": 1
+        },
+        {
+            "name": "小林清志",
+            "count": 1
+        },
+        {
+            "name": "栗田貫一",
+            "count": 1
+        },
+        {
+            "name": "大长篇",
+            "count": 1
+        },
+        {
+            "name": "井上真樹夫",
+            "count": 1
+        },
+        {
+            "name": "95-99",
+            "count": 1
+        },
+        {
+            "name": "怪盗",
+            "count": 1
+        },
+        {
+            "name": "东京电影新社",
+            "count": 1
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [],
+    "main_characters": []
+}

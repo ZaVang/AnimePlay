@@ -1,0 +1,84 @@
+{
+    "id": 52831,
+    "name": "松原花音",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f5/d7/52831_crt_dgo3o.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/d7/52831_crt_dgo3o.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/d7/52831_crt_dgo3o.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f5/d7/52831_crt_dgo3o.jpg"
+    },
+    "summary": "因为内向的关系整天提心吊胆，稍微有点笨拙。\r\n对于被拜托了的事不擅长拒绝，很容易被卷进麻烦里（乐队的事？）。\r\n喜欢甜点和可爱的东西，有些爱撒娇的孩子。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "松原花音"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "まつばら かのん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Matsubara Kanon"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月11日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "担当",
+            "value": "鼓手"
+        },
+        {
+            "key": "星座",
+            "value": "金牛座"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "好吃的点心，蛋糕，咖啡，红茶"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "蘑菇"
+        },
+        {
+            "key": "兴趣",
+            "value": "看水母、咖啡巡礼"
+        },
+        {
+            "key": "所属",
+            "value": "ハロー、ハッピーワールド！"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 11,
+    "stat": {
+        "comments": 23,
+        "collects": 65
+    },
+    "anime_ids": [
+        246431
+    ]
+}

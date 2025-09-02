@@ -1,0 +1,58 @@
+{
+    "id": 8748,
+    "name": "花田少年史",
+    "image_path": "data/images/anime/8748.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "花田一路，虽然只是一个小学三年级学生，却是村里远近闻名的小捣蛋鬼，性格属于天不怕地不怕，唯一弱点却是害怕幽灵，甚至不敢自己上厕所。一天，花田一路闯下大祸，把家里唯一的黑白电视机打坏了。为了躲避妈妈的追打，他骑着邻居的自行车逃跑，却在半路发生车祸。昏迷中，花田一路被幽灵吓醒，逃过了鬼门关，后脑勺上被缝了9针，而且还获得通灵的超能力。小雪是第一个请求花田一路帮忙的幽灵，在完成人世间的遗愿后，小雪得以顺利升天。之后幽灵们应接不暇地出现，用哀求、恐吓、威逼利诱等方式获得花田一路的帮助……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 25,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2002-10-01",
+    "rating_rank": 615,
+    "rating_score": 7.7,
+    "rating_total": 416,
+    "main_character_ids": [
+        176546
+    ],
+    "main_characters": [
+        {
+            "id": 176546,
+            "name": "花田一路",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3f/4e/176546_crt_0vg37.jpg?r=1748182204",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/4e/176546_crt_0vg37.jpg?r=1748182204",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/4e/176546_crt_0vg37.jpg?r=1748182204",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3f/4e/176546_crt_0vg37.jpg?r=1748182204"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4056,
+                    "name": "くまいもとこ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/95/29/4056_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/29/4056_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/29/4056_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/95/29/4056_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "熊井统子，日本女性声优。其一直使用日语假名くまい もとこ作为艺名而被误译作“熊井素子”。\r\n\r\n出生于日本东京都。山崎学园富士见高等学校毕业。持有大型重型机车驾照、英语教师执照。\r\n\r\n和田中真弓、竹内顺子、高山南并列为少年角色的正统代表，饰演的大多为少年角色。也有极少数的机会演出少女角色（《钢之炼金术师》的エリサ、《Chobits》的すもも、《今日大魔王!》的古蕾塔等），有着令人感到意外的可爱声音。因为“头发剪短的话就没有像女性的部分了”之理由而留长发。\r\n\r\n音乐的兴趣类型是死金属。以这件事和山咲トオル广播节目里嬉闹，似乎关系很好。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

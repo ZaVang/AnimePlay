@@ -1,0 +1,59 @@
+{
+    "id": 14823,
+    "name": "千反田える",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f7/73/14823_crt_vdV4A.jpg?r=1561831367",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/73/14823_crt_vdV4A.jpg?r=1561831367",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/73/14823_crt_vdV4A.jpg?r=1561831367",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f7/73/14823_crt_vdV4A.jpg?r=1561831367"
+    },
+    "summary": "神山高中一年级A班的女生。“豪农”千反田家的女儿。由于“个人原因”进入古典部并担任部长。性格认真，个子很高，披肩黑发，薄薄的嘴唇，外表清秀，说话全部都用敬语，一般来说都是像千金小姐，但是特征是与整体印象不相符的大大的眼睛。平时像千金小姐一样，但一旦有了自己感兴趣的事情或是自己不能理解的事情，都会说“我很在意”这句话，那双大大的眼睛就会闪闪发光成为好奇心的化身。因此多将身边的人牵扯进去（主要的牺牲者是折木），但是不会被别人的情绪左右，懂得适可而止。成绩在整个年级都名列前茅，也很擅长料理，在文化祭中显露了自己的身手。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "千反田爱瑠"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "吃蛋挞"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "千反田惠瑠"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ちたんだ える"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Chitanda Eru"
+                },
+                {
+                    "k": "昵称",
+                    "v": "L"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 140,
+        "collects": 1665
+    },
+    "anime_ids": [
+        27364
+    ]
+}

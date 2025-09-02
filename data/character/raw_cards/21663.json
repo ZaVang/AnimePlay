@@ -1,0 +1,53 @@
+{
+    "id": 21663,
+    "name": "直継／葉瀬川直継",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3f/09/21663_crt_D3fhp.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/09/21663_crt_D3fhp.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/09/21663_crt_D3fhp.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3f/09/21663_crt_D3fhp.jpg"
+    },
+    "summary": "人族，主职业为守护战士，副职业为边境巡视。现实世界中是社会人士。\r\n个性直爽，交际型人物.缺点是爱开黄腔(但是不习惯被人开黄腔)。跟老是以内裤当题材\r\n\"浪荡者茶会\"的开心果，维系牵绊的存在。因工作退出时，茶会实质等同解散\r\n强调\"真正的强并不是等级，而是等级以外的东西\"\r\n复归的头一天就遇上大灾难\r\n外号：\"内裤战士\"",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "直继／叶濑川直继"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "葉瀬川 直継"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はせがわ なおつぐ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hasegawa Naotsugu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 11
+    },
+    "anime_ids": [
+        64140,
+        100517
+    ]
+}

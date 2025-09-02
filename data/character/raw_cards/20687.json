@@ -1,0 +1,56 @@
+{
+    "id": 20687,
+    "name": "ティアナ・ランスター",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fd/14/20687_crt_241lx.jpg?r=1560086801",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/14/20687_crt_241lx.jpg?r=1560086801",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/14/20687_crt_241lx.jpg?r=1560086801",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fd/14/20687_crt_241lx.jpg?r=1560086801"
+    },
+    "summary": "变化型米德切尔达式魔导师，使用枪型带填弹系统的魔导器。最初是自制的魔导器“射锚枪”，SS第4集中首次新领的枪型智能型魔导器“交鸣幻境”。双手都惯用，可以同时操作2具魔导器。\r\n使用自己最擅长的中距离射击魔法和幻术魔法，即使独身一人也能战斗的射击型魔导师。\r\n机动六科先锋的指挥，比搭档昴·中岛大一岁，又叫“蒂娅”。性格冷静、一丝不苟，对待昴的问题却是毫不留情，最害怕昴会找麻烦弄得她无法原谅。但是每当蒂安娜一遇到困难或者自暴自弃时，都会想起昴。并在八神疾风的邀请下，加入了机动六科，成为机动六科先锋指挥和高町奈叶的学生。\r\n在机动六科毕业的第二年，又成功地通过了执行官考试。因为莎莉又担任菲特执行官辅佐，所以蒂安娜也作为菲特执行官辅佐，有不输给任何人的梦想，共同向着梦想勇往直前的执行官。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蒂安娜·兰斯达"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "蒂安娜·兰斯特"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Teana Lanster"
+                },
+                {
+                    "k": "昵称",
+                    "v": "蒂娅"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://baike.baidu.com/view/1498870.htm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 18
+    },
+    "anime_ids": [
+        1264
+    ]
+}

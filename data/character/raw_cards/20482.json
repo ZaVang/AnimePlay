@@ -1,0 +1,77 @@
+{
+    "id": 20482,
+    "name": "小路綾",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e8/ad/20482_crt_CC1gr.jpg?r=1431395830",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/ad/20482_crt_CC1gr.jpg?r=1431395830",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/ad/20482_crt_CC1gr.jpg?r=1431395830",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e8/ad/20482_crt_CC1gr.jpg?r=1431395830"
+    },
+    "summary": "忍的同班同学，发型绑成黑发双马尾。穿制服的时候会多加一件黑色毛衣。\r\n头脑很好、性格认真，常负责吐槽忍和艾莉丝，但后来越来越常突显她容易慌张的缺点。另一方面，拥有纯情少女的另一面，喜欢和恋爱有关的各种事物。\r\n国中时代转学时很怕生，阳子是她的第一个朋友，因此对她抱有特别的感情。\r\n胸部比阳子小很多，对此抱着自卑情结。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小路绫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小路 綾"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こみち あや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Komichi Aya"
+                },
+                {
+                    "k": "昵称",
+                    "v": "Ayaya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月15日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁→17岁"
+        },
+        {
+            "key": "所属班级",
+            "value": "1年B班→2年A班→3年A班"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 15,
+    "stat": {
+        "comments": 50,
+        "collects": 186
+    },
+    "anime_ids": [
+        100405,
+        57978
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "id": 26002,
+    "name": "有馬公生",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b1/0c/26002_crt_56rQg.jpg?r=1420760312",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/0c/26002_crt_56rQg.jpg?r=1420760312",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/0c/26002_crt_56rQg.jpg?r=1420760312",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b1/0c/26002_crt_56rQg.jpg?r=1420760312"
+    },
+    "summary": "中学3年生（14歳）。世界的なピアニストを夢見ていた母の早希に鍛えられ、天才的なピアニストに成長する。\r\nその正確無比な演奏は「機械仕かけ」「母親の操り人形」「コンクールだけのピアニスト」「譜面の奴隷」と揶揄されることも。\r\n幼くして数々のコンクールで優勝し、海外進出をかけたコンクールの直前に母が死去。\r\nそれ以来、自分の弾くピアノの音が突然聴こえなくなるトラウマを抱えている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "有马公生"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "有馬 公生"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ありま こうせい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "arima kousei"
+                },
+                {
+                    "k": "昵称",
+                    "v": "有马公主"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月28日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 28,
+    "stat": {
+        "comments": 49,
+        "collects": 132
+    },
+    "anime_ids": [
+        100444
+    ]
+}

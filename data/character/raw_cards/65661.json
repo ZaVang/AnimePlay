@@ -1,0 +1,52 @@
+{
+    "id": 65661,
+    "name": "ホッシー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3b/3a/65661_crt_33Oof.jpg?r=1534675732",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/3a/65661_crt_33Oof.jpg?r=1534675732",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/3a/65661_crt_33Oof.jpg?r=1534675732",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3b/3a/65661_crt_33Oof.jpg?r=1534675732"
+    },
+    "summary": "ナイルの神獣とよばれる謎の生物。古代遺跡にまつわるお宝の謎を解くカギを握っているらしい。\r\nネコが苦手なジョーカーは「ネコもどき」と呼んで、怖がっている。\r\n大好物はお宝。ジョーカーがコレクションしているお宝が食べられてしまう危険性がある！？",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小星"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "阿克鲁库斯"
+                },
+                {
+                    "k": "日文名",
+                    "v": "アクルックス"
+                }
+            ]
+        },
+        {
+            "key": "生日",
+            "value": "1月1日"
+        },
+        {
+            "key": "身高",
+            "value": "40cm"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 1,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        147085
+    ]
+}

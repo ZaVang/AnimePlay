@@ -1,0 +1,52 @@
+{
+    "id": 31750,
+    "name": "黒木凱",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a2/45/31750_crt_yl5ly.jpg?r=1428445968",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/45/31750_crt_yl5ly.jpg?r=1428445968",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/45/31750_crt_yl5ly.jpg?r=1428445968",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a2/45/31750_crt_yl5ly.jpg?r=1428445968"
+    },
+    "summary": "〔神甲胄〕狼\r\n〔武器〕剑\r\n〔属性〕风\r\n〔技〕疾风魔狼剑、夜叉金刚障\r\n与日高秋亚人互为彼此最要好的朋友。身为八部众的夜叉王，他在一万年前的阿修罗神军动乱中丧生，后来转世至人间，被毗湿奴招回天空界。他的性格原先相当善良与正直，非常受到周遭朋友的欢迎，成为夜叉王后性格转变为极度凶残，他的转变是秋亚人一直最在意的事情。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黑木凯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "夜叉王凯"
+                },
+                {
+                    "k": "日文名",
+                    "v": "夜叉王ガイ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くろき がい"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 3
+    },
+    "anime_ids": [
+        4653
+    ]
+}

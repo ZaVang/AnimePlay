@@ -1,0 +1,64 @@
+{
+    "id": 12220,
+    "name": "汐王寺茉莉花",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/61/22/12220_crt_bstuN.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/22/12220_crt_bstuN.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/22/12220_crt_bstuN.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/61/22/12220_crt_bstuN.jpg"
+    },
+    "summary": "高中一年級，儘管是學生卻不穿校服，而是穿女僕裝。\r\n服侍鞠也的雙馬尾女僕，有傲無嬌的毒舌娘，經常會吐槽身為主人的鞠也。\r\n不管对谁说话都毫不客气，但是对主人的命令还是遵从与基本的忠实，\r\n当然也有必要的演技在内。常常吐槽身为主人的鞠也。\r\n汐王寺家是祗堂家的分家．茉莉花还有个双胞胎哥哥．",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "汐王寺茉莉花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しのうじ まつりか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "shinouji matsurika"
+                },
+                {
+                    "k": "昵称",
+                    "v": "茉莉花"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月16日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 16,
+    "stat": {
+        "comments": 5,
+        "collects": 85
+    },
+    "anime_ids": [
+        894
+    ]
+}

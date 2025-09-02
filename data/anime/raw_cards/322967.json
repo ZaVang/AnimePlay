@@ -1,0 +1,366 @@
+{
+    "id": 322967,
+    "type": 2,
+    "name": "ワールドトリガー 3rdシーズン",
+    "name_cn": "境界触发者 第三季",
+    "summary": "",
+    "nsfw": false,
+    "locked": false,
+    "date": "2021-10-09",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/3b/92/322967_I7iiz.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/3b/92/322967_I7iiz.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/3b/92/322967_I7iiz.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/3b/92/322967_I7iiz.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/3b/92/322967_I7iiz.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "境界触发者 第三季"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "World Trigger 3rd Season",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "14"
+        },
+        {
+            "key": "放送开始",
+            "value": "2021年10月9日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.toei-anim.co.jp/tv/wt/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ朝日"
+        },
+        {
+            "key": "播放结束",
+            "value": "2022年1月22日"
+        },
+        {
+            "key": "Copyright",
+            "value": "©葦原大介／集英社・テレビ朝日・東映アニメーション"
+        },
+        {
+            "key": "原作",
+            "value": "葦原大介"
+        },
+        {
+            "key": "人物设定",
+            "value": "海谷敏久"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "神はサイコロを振らない、FantasticYouth"
+        },
+        {
+            "key": "音响监督",
+            "value": "選曲：佐藤恭野"
+        },
+        {
+            "key": "系列监督",
+            "value": "畑野森生"
+        }
+    ],
+    "volumes": 0,
+    "eps": 14,
+    "total_episodes": 14,
+    "rating": {
+        "rank": 314,
+        "total": 826,
+        "count": {
+            "one": 1,
+            "two": 0,
+            "three": 4,
+            "four": 3,
+            "five": 6,
+            "six": 45,
+            "seven": 173,
+            "eight": 389,
+            "nine": 148,
+            "ten": 57
+        },
+        "score": 7.9
+    },
+    "collection": {
+        "wish": 889,
+        "collect": 1268,
+        "doing": 110,
+        "on_hold": 87,
+        "dropped": 49
+    },
+    "tags": [
+        {
+            "name": "热血",
+            "count": 175
+        },
+        {
+            "name": "漫画改",
+            "count": 172
+        },
+        {
+            "name": "战斗",
+            "count": 166
+        },
+        {
+            "name": "2021年10月",
+            "count": 134
+        },
+        {
+            "name": "TV",
+            "count": 128
+        },
+        {
+            "name": "境界触发者",
+            "count": 97
+        },
+        {
+            "name": "東映アニメーション",
+            "count": 85
+        },
+        {
+            "name": "2021",
+            "count": 84
+        },
+        {
+            "name": "东映",
+            "count": 78
+        },
+        {
+            "name": "漫改",
+            "count": 66
+        },
+        {
+            "name": "JUMP",
+            "count": 26
+        },
+        {
+            "name": "科幻",
+            "count": 20
+        },
+        {
+            "name": "畑野森生",
+            "count": 19
+        },
+        {
+            "name": "奇幻",
+            "count": 12
+        },
+        {
+            "name": "吉野弘幸",
+            "count": 7
+        },
+        {
+            "name": "日本",
+            "count": 7
+        },
+        {
+            "name": "续作",
+            "count": 6
+        },
+        {
+            "name": "群像",
+            "count": 5
+        },
+        {
+            "name": "东映动画",
+            "count": 5
+        },
+        {
+            "name": "智斗",
+            "count": 4
+        },
+        {
+            "name": "日本动画",
+            "count": 4
+        },
+        {
+            "name": "钉宫理惠",
+            "count": 4
+        },
+        {
+            "name": "中村悠一",
+            "count": 3
+        },
+        {
+            "name": "2021年",
+            "count": 3
+        },
+        {
+            "name": "团战",
+            "count": 3
+        },
+        {
+            "name": "岛崎信长",
+            "count": 2
+        },
+        {
+            "name": "田村奈央",
+            "count": 2
+        },
+        {
+            "name": "动画",
+            "count": 2
+        },
+        {
+            "name": "川井宪次",
+            "count": 2
+        },
+        {
+            "name": "川井憲次",
+            "count": 2
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "series": false,
+    "main_character_ids": [
+        27210,
+        27211,
+        27212,
+        70036
+    ],
+    "main_characters": [
+        {
+            "id": 27210,
+            "name": "空閑遊真",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/25/fc/27210_crt_cM76Q.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/fc/27210_crt_cM76Q.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/fc/27210_crt_cM76Q.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/25/fc/27210_crt_cM76Q.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 16266,
+                    "name": "村中知",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/36/8c/16266_prsn_0hPeA.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/8c/16266_prsn_0hPeA.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/8c/16266_prsn_0hPeA.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/36/8c/16266_prsn_0hPeA.jpg"
+                    },
+                    "short_summary": "日本の女性声優、ナレーター。俳協ボイスアクターズスタジオ卒業。東京俳優生活協同組合所属。\r\n\r\n特技：マッサージ・ジャズダンス・社交ダンス水泳\r\n免許・資格：英語検定2級・漢字検定2級・硬筆6段\r\n趣味・スポーツ：旅行・音楽鑑賞・ラジオ視聴・乗馬映画鑑賞・水上スキー・歌う事・踊る事\r\n\r\n経歴\r\n\r\n2008　俳協ボイスアクターズスタジオ第34期生\r\n2009　俳協",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27211,
+            "name": "三雲修",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0b/00/27211_crt_TXfz5.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/00/27211_crt_TXfz5.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/00/27211_crt_TXfz5.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0b/00/27211_crt_TXfz5.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5209,
+                    "name": "梶裕貴",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/51/73/5209_prsn_bD3dr.jpg?r=1478379077"
+                    },
+                    "short_summary": "ARTSVISION第17期免费新人培育选拔会合格，并且加入了事务所ARTSVISION。\r\n2009年获得第3届声优奖—新人男声优赏，且开始了“G.Addict”的活动。\r\n2012年2月22日以本人的名义开始歌手的活动，发售第一张单曲《sense of wonder》。2012年9月5日发售第二张单曲《Hello！》。\r\n2013年获得第7届声优奖—主演男声优赏。\r\n2013年10月1日，由原来的事务所ARTSVISION转入VIMS。\r\n2014年获得第8届声优奖—主演男声优赏。\r\n\r\n拥有中性的声音，能演出从少年到青年、动物等各式各样的角色。\r\n担任剧团“妄想中毒”的pretty团长。\r\n中小学时代担任过学生会长，有体育或美术被表扬等表现，是个非常有才能的小孩。\r\n声优伙伴或支持者称呼他为“王子”。\r\n和代永翼组成团体“BRAVE WING”。\r\n与寺岛拓笃、堀江一真和阿部敦等四人组成团体“G.Addict”。\r\n性格极其纯良，待人有礼温善。虽然人前很活泼开朗，但其实是个喜欢宁静安逸的人，只有与亲近的人在一起时才会放松的流露真实自我。\r\n不只声音，外型也很中性，现在也还会被误认成女生。本人对此表示否定，表示“内在意外地很有男子气概”。\r\n虽然年轻，但是性格相当认真。寺岛拓笃评价他“面对工作上的态度很严谨”，大亲友下野纮也说：“他真的很可靠，很会待人处世，作为声优也相当优秀。”\r\n\r\n代表作品有《进击的巨人》艾伦·耶格尔、《夜樱四重奏》比泉秋名、《未来都市NO.6》紫苑、《罪恶王冠》樱满集、《七大罪》梅利奥达斯、《加速世界》有田春雪、《魔笛MAGI》阿里巴巴·沙尔贾等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27212,
+            "name": "雨取千佳",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bd/71/27212_crt_P32u9.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/71/27212_crt_P32u9.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/71/27212_crt_P32u9.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bd/71/27212_crt_P32u9.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9978,
+                    "name": "田村奈央",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/56/33/9978_prsn_f1E35.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/33/9978_prsn_f1E35.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/33/9978_prsn_f1E35.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/56/33/9978_prsn_f1E35.jpg"
+                    },
+                    "short_summary": "日本の女性声優。埼玉県出身。東京俳優生活協同組合所属。身長153cm、血液型はB型。\r\n\r\n大学時代に本格的に声優を目指し、演劇の勉強を始める。 ヒューマンアカデミー渋谷校受講修了後、2013年2月よりEARLY WING所属となる。2016年3月31日付けで同事務所を退所、2016年4月1日より東京俳優生活協同組合の所属となる。\r\n\r\n免許・資格：普通自動車、剣道初段、英検準2級\r\n趣味・スポーツ：のんびり散歩、音楽鑑賞、剣道",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 70036,
+            "name": "ヒュース",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6f/20/70036_crt_7ty0C.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6f/20/70036_crt_7ty0C.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6f/20/70036_crt_7ty0C.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6f/20/70036_crt_7ty0C.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7392,
+                    "name": "島﨑信長",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/65/0b/7392_prsn_85bDV.jpg"
+                    },
+                    "short_summary": "岛﨑信长（1988年12月6日－），日本男性配音演员。隶属于青二Production。出身于宫城县。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

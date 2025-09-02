@@ -1,0 +1,60 @@
+{
+    "id": 9054,
+    "name": "道蓮",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d2/e3/9054_crt_anidb.jpg?r=1408629235",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/e3/9054_crt_anidb.jpg?r=1408629235",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/e3/9054_crt_anidb.jpg?r=1408629235",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d2/e3/9054_crt_anidb.jpg?r=1408629235"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "道莲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "道蓮"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tao Ren"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1986-01-01"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 3,
+    "birth_year": 1986,
+    "birth_mon": 1,
+    "birth_day": 1,
+    "stat": {
+        "comments": 1,
+        "collects": 11
+    },
+    "anime_ids": [
+        4190
+    ]
+}

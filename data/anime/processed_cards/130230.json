@@ -1,0 +1,185 @@
+{
+    "id": 130230,
+    "name": "苍穹之法芙娜 EXODUS 第2部分",
+    "image_path": "data/images/anime/130230.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "科幻",
+        "机战",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2015-10-02",
+    "rating_rank": 385,
+    "rating_score": 7.8,
+    "rating_total": 1110,
+    "main_character_ids": [
+        1734,
+        1735,
+        1736,
+        28532,
+        30041
+    ],
+    "main_characters": [
+        {
+            "id": 1734,
+            "name": "真壁一騎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bf/83/1734_crt_s4a4X.jpg?r=1672722751",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/83/1734_crt_s4a4X.jpg?r=1672722751",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/83/1734_crt_s4a4X.jpg?r=1672722751",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bf/83/1734_crt_s4a4X.jpg?r=1672722751"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4967,
+                    "name": "石井真",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/98/15/4967_prsn_lbn62.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/15/4967_prsn_lbn62.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/15/4967_prsn_lbn62.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/98/15/4967_prsn_lbn62.jpg"
+                    },
+                    "short_summary": "石井真 ＝ 西島古都夫 ＝ 西嶋古都夫 = ふかひれマーボ = NISHIJIMA KOTOO 名義変更無しフリー？",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 1735,
+            "name": "皆城総士",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/75/22/1735_crt_VnNn3.jpg?r=1672722818",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/22/1735_crt_VnNn3.jpg?r=1672722818",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/22/1735_crt_VnNn3.jpg?r=1672722818",
+                "grid": "https://lain.bgm.tv/pic/crt/g/75/22/1735_crt_VnNn3.jpg?r=1672722818"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4562,
+                    "name": "喜安浩平",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fd/32/4562_prsn_L0lFg.jpg?r=1718790295",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/32/4562_prsn_L0lFg.jpg?r=1718790295",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/32/4562_prsn_L0lFg.jpg?r=1718790295",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fd/32/4562_prsn_L0lFg.jpg?r=1718790295"
+                    },
+                    "short_summary": "【ナイロン100℃とブルドッキングヘッドロックの劇団員】\r\n演劇、映画、テレビの脚本。舞台演出。俳優。声優。芸術家志望。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 1736,
+            "name": "遠見真矢",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ea/b6/1736_crt_4ZiL8.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/b6/1736_crt_4ZiL8.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/b6/1736_crt_4ZiL8.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ea/b6/1736_crt_4ZiL8.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4446,
+                    "name": "松本まりか",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0f/8c/4446_prsn_NWq1w.jpg?r=1605532855",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/8c/4446_prsn_NWq1w.jpg?r=1605532855",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/8c/4446_prsn_NWq1w.jpg?r=1605532855",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0f/8c/4446_prsn_NWq1w.jpg?r=1605532855"
+                    },
+                    "short_summary": "日本の女優、ナレーター、声優。A-team所属。東京都中野区出身。東京都立杉並高等学校卒。\r\n\r\n2000年に放送された『o-daiba.com』で共演した、栗山千明、須藤温子、ベッキー、宮崎あおいと仲が良い。誕生日には各々が互いのお祝いをしに行くほどである。宮崎あおいが結婚するにあたっても、仕事で都合がつかなかった栗山千明を除いて、他の三人が集まり、結婚を事前に打ち明けるほどの仲である。\r\n    2001年から2年間、ミニストップのキャラクター「ミニストップちゃん」として、妻夫木聡と共演した。\r\n    『FINAL FANTASY X』のリュックの声優としても知られる。また、DVDのインタビューにて「リュックと容姿がそっくりだと言われる」と答えている。\r\n    2005年11月12日、『A&G 超RADIO SHOW〜アニスパ!〜』内にて「アニスパ公認悪女クィーン」に輝く。\r\n    2010年6月から2011年2月までイギリスに留学した。\r\n    元イトーカンパニー所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28532,
+            "name": "カノン・メンフィス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4c/24/28532_crt_dzGM6.jpg?r=1421420524",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/24/28532_crt_dzGM6.jpg?r=1421420524",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/24/28532_crt_dzGM6.jpg?r=1421420524",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4c/24/28532_crt_dzGM6.jpg?r=1421420524"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4428,
+                    "name": "小林沙苗",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/07/54/4428_prsn_9cDQ7.jpg?r=1515082891",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/54/4428_prsn_9cDQ7.jpg?r=1515082891",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/54/4428_prsn_9cDQ7.jpg?r=1515082891",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/07/54/4428_prsn_9cDQ7.jpg?r=1515082891"
+                    },
+                    "short_summary": "小林沙苗（1980年1月26日－）为日本女性声优。出生于静冈县滨松市滨北区。2015年6月1日隶属公司从Production baobab移至Sigma Seven。\r\n\r\n简介\r\n最初的梦想是成为演员，高中时为地区音乐剧团“ステージ97”所属团员，在该剧团东京公演时，被前来观戏的声优立壁和也赏识其演技力并网罗至声优界。\r\n刚出道时因为仍在该地区大学就读的关系，以新干线来往东京通勤工作。\r\n主要工作是外国片、动画、游戏、以及广播剧配音，近期以幼教片、外国片日文配音居多。\r\n声线范围广泛，是少数拥有“七色之声”美名的声优之一，属于高演技力的实力派，从少年到少女、年长的女性到冷艳气质的大姐、角色的人格分裂都能完美诠释。\r\n第一次配音的作品是外国片的一名小配角，台词只有结尾的一段话，因而等候录音等到睡着。在那之后，她多次为有赛琳娜·戈麦斯、美莎·芭顿、河智苑出演的外国片进行日语配音。\r\n有潜水员执照、剑道初段，但为了保护声带而放弃需要用力呐喊的剑道。\r\n在戏剧之外的兴趣是绘画，曾在访谈中提到若没成为声优就会想走美术系。\r\n曾与永野椎菜的企划“ShiinaTactix”合作，录制‘ShiinaTactix-Sana.K’专辑，但随后则婉拒第二张专辑合作计划。\r\n\r\n交友关系\r\n和铃村健一、樱井孝宏在工作上有多次合作因此成为好友。\r\n与松来未祐交情深厚，曾在生日时一同前往东京迪斯尼乐园庆祝。在出演《D.Gray-man》之后，也与饰演利娜莉一角的伊藤静相互结识。\r\n与丰口惠、水树奈奈、能登麻美子因在《草莓100%》中共演而深交，成为所谓的“草莓聚会（いちご会）”。\r\n\r\n角色佚话\r\n在《草莓100%》中，小林饰演北大路皋月一角，但最初小林所试镜的角色是西野司，反而现在饰演西野司的丰口惠最初试镜的角色是北大路皋月。\r\n在《魔法少女奈叶A's》中，小林为暗之书／Reinforce一角献声，但最初试镜的角色是守护骑士的席格娜，反之现在饰演席格娜的清水香里最初则试镜的角色是暗之书／Reinforce。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 30041,
+            "name": "皆城織姫",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/47/52/30041_crt_1H3h3.jpg?r=1425388553",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/52/30041_crt_1H3h3.jpg?r=1425388553",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/52/30041_crt_1H3h3.jpg?r=1425388553",
+                "grid": "https://lain.bgm.tv/pic/crt/g/47/52/30041_crt_1H3h3.jpg?r=1425388553"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4383,
+                    "name": "仲西環",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/05/2e/4383_prsn_QR6NH.jpg?r=1584416618",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/2e/4383_prsn_QR6NH.jpg?r=1584416618",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/2e/4383_prsn_QR6NH.jpg?r=1584416618",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/05/2e/4383_prsn_QR6NH.jpg?r=1584416618"
+                    },
+                    "short_summary": "小松茜、大笹絵里とともに演劇ユニット「Carne」（カルネ）を結成、舞台活動にも力を入れていた。\r\n2001年の誕生日から、「永遠の19歳」を自称している。好きな色はピンク、赤。\r\n猫をこよなく愛する。\r\n以前から病気療養中だったが、2020年3月14日に死去したことが所属事務所から発表された。44歳没。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

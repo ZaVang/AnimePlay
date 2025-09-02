@@ -1,0 +1,77 @@
+{
+    "id": 29285,
+    "name": "高坂麗奈",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/01/12/29285_crt_6GIhe.jpg?r=1559645698",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/12/29285_crt_6GIhe.jpg?r=1559645698",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/12/29285_crt_6GIhe.jpg?r=1559645698",
+        "grid": "https://lain.bgm.tv/pic/crt/g/01/12/29285_crt_6GIhe.jpg?r=1559645698"
+    },
+    "summary": "曾与久美子同一就读于大吉山北中学，当时两人都加入了中学的吹奏部而互相认识。\r\n受到作为职业小号演奏家的父亲影响，很小的时候就开始学习吹奏小号，每天会练习很长时间。\r\n小号演奏水平很高，在加入北宇治吹奏部时，实力已经超越三年级的前辈。\r\n性格直率而认真，果敢独立。\r\n♪好きな色\r\n青、白\r\n♪趣味\r\n映画鑑賞（映画は1人で見に行く）\r\n演奏会には父とよく行く\r\n♪特技\r\nトランペット、ピアノ。ピアノは５歳から始めた\r\n♪好きなもの\r\nパスタ、柑橘系のジュース\r\n♪嫌いなもの\r\n納豆",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高坂丽奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "高坂 麗奈"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こうさか れいな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kousaka Reina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月15日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://tv.anime-eupho.com/character/#/reina"
+        },
+        {
+            "key": "乐器",
+            "value": "小号"
+        },
+        {
+            "key": "所属声部",
+            "value": "小号（Trumpet）"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 15,
+    "stat": {
+        "comments": 539,
+        "collects": 851
+    },
+    "anime_ids": [
+        152091,
+        115908
+    ]
+}

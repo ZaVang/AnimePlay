@@ -1,0 +1,31 @@
+{
+    "id": 14122,
+    "name": "若菜サンリ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/40/a1/14122_crt_wGB5v.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/a1/14122_crt_wGB5v.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/a1/14122_crt_wGB5v.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/40/a1/14122_crt_wGB5v.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": []
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        2282
+    ]
+}

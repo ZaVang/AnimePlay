@@ -1,0 +1,105 @@
+{
+    "id": 9731,
+    "name": "恋风",
+    "image_path": "data/images/anime/9731.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "在妹妹出生以后没多久，因为父母的离异使得兄妹二人在各自的父母身边长大……十多年过去以后，在结婚介绍所工作的哥哥『佐伯耕四郎』渐渐淡忘了自己曾有个妹妹而过着平凡的生活。\r\n\r\n可是就在这个夏天，因为妹妹『小日向七夏』考进了高中，兄妹二人再一次住在了同一个屋檐下……\r\n\r\n除了平时的不方便之外，耕四郎还有其他的烦恼。住在一起的时候没有考虑到妹妹的感受，在约会的最后，因为失恋的痛苦，情不自禁地流泪却被妹妹安慰时的失态……\r\n\r\n一个是想补偿分离开的时间，一个只是纯粹仰慕哥哥的妹妹，成天想着怎样才能成为像样的哥哥的耕四郎。实际上，七夏的可爱已经让他不得不意识到她是个女性……\r\n\r\n然而，不得不藏起来的感情在纯真的对待哥哥的七夏面前无处可藏，导致了一个又一个奇怪的冲突。耕四郎讨厌自己的日子开始了……  ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2004-04-01",
+    "rating_rank": 1614,
+    "rating_score": 7.3,
+    "rating_total": 554,
+    "main_character_ids": [
+        6981,
+        27649
+    ],
+    "main_characters": [
+        {
+            "id": 6981,
+            "name": "小日向七夏",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/af/e7/6981_crt_d2DZH.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/e7/6981_crt_d2DZH.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/e7/6981_crt_d2DZH.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/af/e7/6981_crt_d2DZH.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4353,
+                    "name": "松来未祐",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8a/dd/4353_prsn_16sj8.jpg?r=1505927143",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/dd/4353_prsn_16sj8.jpg?r=1505927143",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/dd/4353_prsn_16sj8.jpg?r=1505927143",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8a/dd/4353_prsn_16sj8.jpg?r=1505927143"
+                    },
+                    "short_summary": "双亲坚决反对松来未祐为了当声优而去东京学习，但是松来未祐以去东京上大学为条件得到了父母的允许，入学庆应义塾大学环境情报学部。边上大学边到日本演技研究所学习演技。\r\n1998年于PS游戏《御神楽少女探偵団》中声优出道，之后的一段时间内都以本名松木美愛子进行声优活动。之后以本名的笔画数不怎么好为理由将艺名改为松来未祐。\r\n2000年，在KSS的新人选秀“あっぷ² MY GIRL 2000”中合格，结成「あっぷ²（あっぷあっぷ）」团体，进行着各式各样的活动。\r\n2002年，在《七人之奈奈》（七人のナナ）中首次获得正式的动画配音工作。同年6月时从アクセント移籍到81 Produce。同年10月开始在广播节目“樱井工房”及其之后的“Cherry Bell”（樱井工房为Cherry Bell前身）中长期参与节目。\r\n2003到2004年之间陆续取得《D.C. ~Da Capo~》和《Divergence Eve》系列的动画角色，更于2004年1月的动画《超変身コス∞プレイヤー》中第一次担任主角。同年，与共同在收音机节目“RADIOデコピンないと”中担当主持的金田朋子组成声优组合「SD☆Children」，一起发行了cd并举办了各种活动。在不少其他的动画中有着演出，最忙的时候一个星期要参加四个广播节目。\r\n2004年是她演艺事业发展得最快的一年。\r\n2005年，常演出像《こいこい7》的山田五十铃、《键姬物语》的御咲纪纱、《Strawberry Panic》的此花光莉等有百合倾向的女性角色。\r\n2008年广泛的演出性格独特的教师角色。\r\n2010年组成自主活动声优组合「N±」。\r\n2013年3月1日，作为「後ろから這いより隊G」的一员于第七回声優アワード歌唱賞中获奖。\r\n2015年7月14日，“今年以来高烧降不下来，去医院检查了好几次，被确诊为急性肺炎后，知道了这是如果不早点治疗就会变得很糟糕的病。”写下这些之后，为治疗疾病而停止了声优活动。\r\n2015年10月27日，在入院的东京都内某医院中去世，满38岁。葬礼、告别式根据家族的要求由家人与亲属执行。自入院以来到去世，多次更新了与病魔战斗的生活、以及生日状况的博文，表示等病好后想恢复声优的工作，想结婚。松来未祐的讣报发出后，声优朋友们通过推特以及博客传达了哀悼。",
+                    "locked": false
+                },
+                {
+                    "id": 4436,
+                    "name": "中村有岐",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/5d/4436_prsn_wU49E.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/5d/4436_prsn_wU49E.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/5d/4436_prsn_wU49E.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/5d/4436_prsn_wU49E.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27649,
+            "name": "佐伯耕四郎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/85/65/27649_crt_hQssh.jpg?r=1478684996",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/65/27649_crt_hQssh.jpg?r=1478684996",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/65/27649_crt_hQssh.jpg?r=1478684996",
+                "grid": "https://lain.bgm.tv/pic/crt/g/85/65/27649_crt_hQssh.jpg?r=1478684996"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4227,
+                    "name": "三宅健太",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/cc/be/4227_prsn_53qZC.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/be/4227_prsn_53qZC.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/be/4227_prsn_53qZC.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/cc/be/4227_prsn_53qZC.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

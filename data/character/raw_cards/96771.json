@@ -1,0 +1,43 @@
+{
+    "id": 96771,
+    "name": "イースリイ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b1/4d/96771_crt_xDpXU.jpg?r=1622748638",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/4d/96771_crt_xDpXU.jpg?r=1622748638",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/4d/96771_crt_xDpXU.jpg?r=1622748638",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b1/4d/96771_crt_xDpXU.jpg?r=1622748638"
+    },
+    "summary": "読書と研究を何よりも好む頭脳派韋駄天。\r\nリンによる猛烈な修行に耐えられず、逃げ出した過去がある。\r\n落ち着いた笑顔でまともな雰囲気を漂わせているが、\r\n魔族との闘いにおいて徐々に二面性を見せ始める。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊斯理"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://idaten-anime.com/character/"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 24,
+        "collects": 24
+    },
+    "anime_ids": [
+        312723
+    ]
+}

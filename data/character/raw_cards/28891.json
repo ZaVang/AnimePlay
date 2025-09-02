@@ -1,0 +1,78 @@
+{
+    "id": 28891,
+    "name": "プロデューサー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ce/cb/28891_crt_Sl56C.jpg?r=1472833583",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/cb/28891_crt_Sl56C.jpg?r=1472833583",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/cb/28891_crt_Sl56C.jpg?r=1472833583",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ce/cb/28891_crt_Sl56C.jpg?r=1472833583"
+    },
+    "summary": "在原作游戏『THE IDOLM@STER』中「制作人」是作为玩家的分身的主人公角色。游戏内能以「〜〜〜P」的形式用自己的名字作为设定名，游戏内的角色们则是以“写作「〜〜〜P」、读作「制作人」(等)”来称呼玩家。\r\n\r\n动画『THE IDOLM@STER』沿袭了游戏这一设定，动画主人公之一的他不被周围以名字来称呼，ED的名单内角色名也是写为「制作人」。因在IM@S界有着「制作人」意味着游戏玩家=IM@S粉丝总称的共识，故为让动画版的P的他与其他P存在区别，所以称呼他为“赤羽根P”。名字来自其中之人(声优)的赤羽根健治。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "赤羽根P"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "制作人"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Producer"
+                },
+                {
+                    "v": "チーフプロデューサー"
+                },
+                {
+                    "v": "Chief Producer"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "?月?日（？座）"
+        },
+        {
+            "key": "血型",
+            "value": "?型"
+        },
+        {
+            "key": "身高",
+            "value": "174cm"
+        },
+        {
+            "key": "体重",
+            "value": "65kg"
+        },
+        {
+            "key": "BWH",
+            "value": "社内秘"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://dic.nicovideo.jp/a/赤羽根p"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 15,
+        "collects": 42
+    },
+    "anime_ids": [
+        11577
+    ]
+}

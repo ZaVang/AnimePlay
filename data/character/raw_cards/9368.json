@@ -1,0 +1,54 @@
+{
+    "id": 9368,
+    "name": "ブラック羽川",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1b/93/9368_crt_3UF2U.jpg?r=1610928571",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/93/9368_crt_3UF2U.jpg?r=1610928571",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/93/9368_crt_3UF2U.jpg?r=1610928571",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1b/93/9368_crt_3UF2U.jpg?r=1610928571"
+    },
+    "summary": "障猫与羽川翼所承受的精神压力相结合，产生的新种类的怪异，由忍野咩咩命名为“BLACK羽川”。\r\n可以说是羽川翼所受压力的具现化，羽川翼的里人格，另一个羽川翼。\r\n与通常的障猫怪异有着很大的区别，将羽川视为主人看待，以羽川的意愿为首要目标。本来作为低级怪异出现的障猫，在与羽川庞大的知识量相结合时，产生了意想不到的效果。孙子曰“知己知彼百战百胜”。忍野咩咩作为怪异专家的所有手段均被BLACK羽川知晓，无效化，从而陷入被动。\r\n作为怪异的障猫，BLACK羽川具有极强的运动能力，跳跃力，身体强度和耐受度，可以一击撕裂人体。身体带有被动的“Energy drain”能量吸收，对于普通人吸收其精力，对于怪异则吸收其怪异能量。\r\n因深夜仅仅穿着内衣在街道中袭击路人而成为都市传说。\r\n作为猫系角色，句尾以「にゃ」结尾，所有「な」全部发音为「にゃ」。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黑羽川"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ブラック羽川"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Black Hanekawa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net | wikipedia"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 12,
+        "collects": 142
+    },
+    "anime_ids": [
+        1671,
+        68812,
+        56117
+    ]
+}

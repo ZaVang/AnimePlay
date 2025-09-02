@@ -1,0 +1,64 @@
+{
+    "id": 102292,
+    "name": "冨樫慶司",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/55/7a/102292_crt_IgrRu.jpg?r=1635866865",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/7a/102292_crt_IgrRu.jpg?r=1635866865",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/7a/102292_crt_IgrRu.jpg?r=1635866865",
+        "grid": "https://lain.bgm.tv/pic/crt/g/55/7a/102292_crt_IgrRu.jpg?r=1635866865"
+    },
+    "summary": "アシト年代で唯一、福田がエスペリオンユースにスカウトしてきた逸材。元ヤンキーで義理人情に厚く情熱的。フィジカルを活かした豪快なプレースタイルの攻撃的ディフェンダーだが、高い基礎技術と戦術理解力を併せ持つ。過去の確執からジュニアユース昇格組である黒田と竹島を敵視している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "富樫庆司"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "とがし けいじ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Togashi Keiji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "9月9日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "187cm"
+        },
+        {
+            "key": "体重",
+            "value": "78kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 9,
+    "stat": {
+        "comments": 4,
+        "collects": 2
+    },
+    "anime_ids": [
+        337459
+    ]
+}

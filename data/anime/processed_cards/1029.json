@@ -1,0 +1,152 @@
+{
+    "id": 1029,
+    "name": "悠久之翼2",
+    "image_path": "data/images/anime/1029.jpg",
+    "points": 8.1,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "ef2动画将以「ef - the latter tale.」为主线陈述，\r\n平行描写两个苦涩的恋爱故事，\r\n饱富抒情性，相互融合的两个恋爱故事。\r\n\r\n能听到吗？\r\n——那真实的旋律……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "游戏改"
+    ],
+    "date": "2008-10-06",
+    "rating_rank": 179,
+    "rating_score": 8.1,
+    "rating_total": 5437,
+    "main_character_ids": [
+        605,
+        606,
+        607,
+        608
+    ],
+    "main_characters": [
+        {
+            "id": 605,
+            "name": "火村夕",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f8/d2/605_crt_dPa32.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/d2/605_crt_dPa32.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/d2/605_crt_dPa32.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f8/d2/605_crt_dPa32.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4071,
+                    "name": "遠近孝一",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a3/ff/4071_prsn_nOHYH.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a3/ff/4071_prsn_nOHYH.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a3/ff/4071_prsn_nOHYH.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a3/ff/4071_prsn_nOHYH.jpg"
+                    },
+                    "short_summary": "遠近 孝一（とおちか こういち、1971年10月20日 - ）は、日本の男性声優、ナレーター。東京俳優生活協同組合所属。大阪府生まれで山口県育ち。血液型はB型。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 606,
+            "name": "雨宮優子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/08/34/606_crt_Zsbgu.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/34/606_crt_Zsbgu.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/34/606_crt_Zsbgu.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/08/34/606_crt_Zsbgu.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5019,
+                    "name": "中島裕美子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/99/f9/5019_prsn_LLZy1.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/f9/5019_prsn_LLZy1.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/f9/5019_prsn_LLZy1.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/99/f9/5019_prsn_LLZy1.jpg"
+                    },
+                    "short_summary": "中島 裕美子 （なかじま ゆみこ、8月31日 - ）は、日本の女性声優。B-Box所属。千葉県出身。血液型O型。2009年8月まで元氣プロジェクトに所属していた。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 607,
+            "name": "羽山ミズキ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/41/b4/607_crt_tGw0P.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/b4/607_crt_tGw0P.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/b4/607_crt_tGw0P.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/41/b4/607_crt_tGw0P.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4809,
+                    "name": "後藤麻衣",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/62/91/4809_prsn_6JuXu.jpg?r=1515334753",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/91/4809_prsn_6JuXu.jpg?r=1515334753",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/91/4809_prsn_6JuXu.jpg?r=1515334753",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/62/91/4809_prsn_6JuXu.jpg?r=1515334753"
+                    },
+                    "short_summary": "後藤 麻衣（ごとう まい、1982年8月22 - ）は、日本の女性声優。賢プロダクション所属。北海道出身。\r\n2009年3月に、トリトリオフィスから賢プロダクションに移籍し、2012年現在も賢プロダクションに所属している。\r\n\r\n安玖深 音（あぐみ おと）は、日本の女性声優。主にアダルトゲームに声をあてている。\r\n\r\n2006年7月28日に出演作が6本同時発売[注 1]されたという記録を持つ。成瀬未亜とともに非公式ユニット「コロボックルズ」を結成している。愛称はおとちゃん、音ちん、アグミオンなど。\r\n\r\n兄弟はおらず、一人っ子。\r\n愛称は「ごまちゃん」。偽まるにより命名された「GTO」、彼の『時事放談』での発言により広まった「ぷに」や、『乃木坂美夏の麻衣ふぇあれいでぃお!』で投稿メールを発端にプロデューサー陣に広まった「ごっさん」などもある。なお、同番組内のコーナー「あのな、『ふたつ名』言ってみな!」にてふたつ名を募集したところ、「十勝の最小兵器」がふたつ名として認定された。\r\n漢字検定準二級、秘書検定2級を所持している。\r\n好きな食べ物は、鶏肉と卵。\r\n嫌いな食べ物は、メロンと蟹、ホタテ貝。本人曰く「北海道出身だが、北海道の特産物は嫌い」\r\nよく本を読むせいか国語は得意だが数学が苦手。本人曰く「足し算は難しいね。引き算も難しい」。\r\n本人曰くカナヅチ。\r\n自他共に認めるオタクである。\r\n覇王大系リューナイトのファンクラブに所属していたことがある。\r\nLOFT PLUS ONEで行われた大地丙太郎のトークイベントに客として参加していたことがある。\r\n小学5年生の時、大好きだった作品『ここはグリーン・ウッド』のラジオ番組『ここはグリーンウッド放送局』を聞いたのが声優という仕事に興味を持ったきっかけ。\r\nイラストが得意で、アニメ『乃木坂春香の秘密』では次回予告のイラストを、アニメ『乃木坂春香の秘密 ぴゅあれっつぁ♪』では第4話・第9話のイラストを担当した。さらに、『乃木坂美夏の麻衣ふぇあれいでぃお! ねくすとっ!!』のコミックマーケット76で販売したCDのパッケージのイラストも担当している。また、同作品の発祥の声優ユニット「N's」、派生自主活動ユニット「N±」のメンバーでもある。\r\nWebラジオ『麻衣と茉莉也のらじ×ばと！』において、川田紳司によって魂の名前＝後藤 国士無双が名付けられた。\r\n\r\n漢字検定準2級、秘書検定2級を所持している[2]。\r\n\r\n自他共に認めるオタクである。例えば、作品の性質上、他作品のパロディネタが多いテレビアニメ『乃木坂春香の秘密』では、共演者にパロディの元ネタを教えることがあった。また、イラストが得意で、テレビアニメ『乃木坂春香の秘密』では次回予告のイラストを、アニメ『乃木坂春香の秘密 ぴゅあれっつぁ♪』では第4話・第9話のイラストを担当した。さらに、『乃木坂美夏の麻衣ふぇあれいでぃお! ねくすとっ!!』のコミックマーケット76で販売したCDのパッケージのイラストも担当している。なお、同作品の発祥の声優ユニット「N's」、派生自主活動ユニット「N±」のメンバーでもある。\r\n\r\n好きな食べ物は、鶏肉と卵。嫌いな食べ物は、メロンと牡蠣、ホタテ貝。本人曰く「北海道出身だが、北海道の特産物は嫌い」とのこと。\r\n\r\nまた、覇王大系リューナイトのファンクラブに所属していたことがある[3]。\r\n\r\nまた、岩田光央の大ファンで、岩田の握手会に参加した際に自分が声優を目指している事を伝えると、「がんばってくださいね」と励まされたという[4]。\r\n\r\n2008年から2009年の年越しを文化放送で過ごした。2008年12月31日の22時台に『緊急生放送!「ケメコマニアックス!」改めチュー途半端に年越さないぞスペシャル2008』に呼びだされて出演し、途中、自身がパーソナリティーを務める『乃木坂美夏の麻衣ふぇあれいでぃお!』となった。その後、番組の放送終了とともに帰る予定だったが、そのまま次の番組の『超A&G+年越しスペシャル 4時間生でモゥ大変!2009』にも年越し直前から明けて午前3時まで出演した。合計4時間ほどの出演で、どちらも最も長い時間出演していたゲストであった。また、この番組にて憧れの声優である岩田と共演しファンであることを本人に告げている。\r\n\r\n同姓同名のグラビアアイドルが2009年東京都議会議員選挙に出馬した際、両者を混同され、「都議選頑張って」というメッセージをもらったり、所属事務所に取材依頼が来たと自身のブログで明かしている[5][6]。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 608,
+            "name": "久瀬修一",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/97/0a/608_crt_8ek37.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/97/0a/608_crt_8ek37.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/97/0a/608_crt_8ek37.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/97/0a/608_crt_8ek37.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4323,
+                    "name": "浜田賢二",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/99/60/4323_prsn_Zl7FA.jpg?r=1585989796",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/60/4323_prsn_Zl7FA.jpg?r=1585989796",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/60/4323_prsn_Zl7FA.jpg?r=1585989796",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/99/60/4323_prsn_Zl7FA.jpg?r=1585989796"
+                    },
+                    "short_summary": "日本男性声优，Mausu Promotion所属，福冈县出身。\r\n代表作品有Paradise Kiss的小泉让二、机动战士高达 00的帕特里克・克拉桑瓦、遥久时空3的平知盛、银及ef - a tale of melodies.的久瀬修一等。\r\n\r\n平成8年：江崎プロダクション附属養成所入所\r\n平成10年：マウスプロモーション（旧江崎プロダクション）所属",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

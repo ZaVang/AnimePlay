@@ -1,0 +1,56 @@
+{
+    "id": 831,
+    "name": "クロノ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e0/ec/831_G8LIJ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/ec/831_G8LIJ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/ec/831_G8LIJ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e0/ec/831_G8LIJ.jpg"
+    },
+    "summary": "男主角，为“罪人”（sinner，在本作品意指恶魔），又叫“爵位剥夺者”，和Rosette订下怀表契约，是为Rosette的助手，总是帮他做事，在真正有难时亦会全心全意协助Rosette。以前曾经在地狱杀害大量的同胞，后来因为和圣女Mary Magdalene相恋而背叛Aion的命令，因而被折断“尖角”，两人就此反目成仇",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "克罗诺"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "克罗诺、克劳诺、库挪、库罗诺"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Chrno"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "145cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 11
+    },
+    "anime_ids": [
+        1926
+    ]
+}

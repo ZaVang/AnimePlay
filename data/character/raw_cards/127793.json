@@ -1,0 +1,104 @@
+{
+    "id": 127793,
+    "name": "長崎そよ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/32/2d/127793_crt_ueDx9.jpg?r=1738746626",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/2d/127793_crt_ueDx9.jpg?r=1738746626",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/2d/127793_crt_ueDx9.jpg?r=1738746626",
+        "grid": "https://lain.bgm.tv/pic/crt/g/32/2d/127793_crt_ueDx9.jpg?r=1738746626"
+    },
+    "summary": "月ノ森女子学園の高校1年生。吹奏楽部でコントラバスを担当している。いつも穏やかな雰囲気のお姉さん的存在。誰にでも優しく、周りから頼られることが多い。考え事をしながら指先をいじる癖がある。\r\n\r\n和才刚刚开始组乐队还没多久的大家一起快乐的努力着。\r\n对于被灯说自己很温柔而感到很高兴。\r\n乐器：ESP GB Soyo Custom (3 Tone Sunburst)\r\n\r\n[mask]MyGO!!!!! Ba.\r\n\r\n月ノ森女子学園の高校1年生。睦とは同じクラス。MyGO!!!!!のベースを担当。吹奏楽部に所属しており、学校では部員のみならずクラスメイトにも頼られているお姉さん的存在。素性を知られているMyGO!!!!!のメンバーには、あまり気を遣わずに接している。[/mask]",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "长崎爽世"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "一ノ瀬 そよ"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "长崎素世"
+                },
+                {
+                    "k": "日文名",
+                    "v": "長崎 そよ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ながさき そよ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nagasaki Soyo"
+                },
+                {
+                    "k": "昵称",
+                    "v": "Soyorin"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月27日"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "官网（It's MyGO!!!!!）",
+                    "v": "https://anime.bang-dream.com/mygo/character/soyo/"
+                },
+                {
+                    "k": "官网（Ave Mujica）",
+                    "v": "https://anime.bang-dream.com/avemujica/character/soyo/"
+                },
+                {
+                    "k": "萌娘百科",
+                    "v": "https://zh.moegirl.org.cn/zh-hans/MyGO!!!!!"
+                }
+            ]
+        },
+        {
+            "key": "担当",
+            "value": "贝斯手"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "蔬菜通心粉汤，也经常喝红茶"
+        },
+        {
+            "key": "讨厌的东西",
+            "value": "内脏之类的东西，怎么说呢，不太喜欢那种口感"
+        },
+        {
+            "key": "兴趣",
+            "value": "aroma香薰，根据自己的心情来选，香味想要爽快舒畅一些的时候用柠檬香草，想安安稳稳的睡眠的时候就用香柠檬之类的"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 27,
+    "stat": {
+        "comments": 468,
+        "collects": 825
+    },
+    "anime_ids": [
+        428735
+    ]
+}

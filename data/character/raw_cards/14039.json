@@ -1,0 +1,72 @@
+{
+    "id": 14039,
+    "name": "春日楠",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e4/5b/14039_crt_t4Az1.jpg?r=1378924227",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/5b/14039_crt_t4Az1.jpg?r=1378924227",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/5b/14039_crt_t4Az1.jpg?r=1378924227",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e4/5b/14039_crt_t4Az1.jpg?r=1378924227"
+    },
+    "summary": "舞岛学园高中3年A组，古式武术春日流罗新活杀术的传承者。桂马在现实世界的第五个攻略对象。\r\n女子空手道部社长。楠成为部长后，全部的社员都退社了。嘴里说著“讨厌软弱的人”，但那只是作为春日流的头领抑制自己的感情。\r\n受到驱魂的影响，会在遇上“软弱”（其实全是些可爱或让人害羞的事）的物件或事情的时候，会出现另一个有着十分喜爱“软弱”的分身。\r\n在攻略桧篇中确认其没有女神寄宿。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "春日楠"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かすが くすのき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kasuga Kusunoki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月10日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        },
+        {
+            "key": "体重",
+            "value": "55kg"
+        },
+        {
+            "key": "BWH",
+            "value": "89/60/90"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wikipedia(zh)"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 10,
+    "stat": {
+        "comments": 8,
+        "collects": 33
+    },
+    "anime_ids": [
+        10739
+    ]
+}

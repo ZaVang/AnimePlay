@@ -1,0 +1,77 @@
+{
+    "id": 997,
+    "name": "月宮あゆ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/97/f5/997_crt_44ePF.jpg?r=1523160152",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/97/f5/997_crt_44ePF.jpg?r=1523160152",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/97/f5/997_crt_44ePF.jpg?r=1523160152",
+        "grid": "https://lain.bgm.tv/pic/crt/g/97/f5/997_crt_44ePF.jpg?r=1523160152"
+    },
+    "summary": "以“呜咕（うぐぅ）”为口头禅，在北国小镇相遇的少女。以前和祐一在镇上见过面，在他再次来到这个小镇时和七年不见的他重逢。就读和祐一不同的学校，以“仆（ボク）” 自称（日语中男性常用的第一人称）。长发披肩，戴着大红色的发箍，喜欢用有着翅膀的背包。最喜欢鲷鱼烧。常常跟摊贩点了鲷鱼烧之后没付钱就因故逃走，逃走时常常和祐一撞上。很害怕黑夜、幽灵、鬼之类的可怕东西。是有朝气、常笑、常跌倒、常哭又笨手笨脚的女孩子，因此常被祐一捉弄。总是在街上找东西，但是自己也不记得自己到底在找的是什么东西。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "月宫亚由"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "月宮 あゆ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "つきみや あゆ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tsukimiya Ayu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月7日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        },
+        {
+            "key": "体重",
+            "value": "41kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B80 W52 H79"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 7,
+    "stat": {
+        "comments": 48,
+        "collects": 194
+    },
+    "anime_ids": [
+        274,
+        363880
+    ]
+}

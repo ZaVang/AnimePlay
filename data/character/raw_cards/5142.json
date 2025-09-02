@@ -1,0 +1,64 @@
+{
+    "id": 5142,
+    "name": "アーエル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/02/22/5142_crt_72OJI.jpg?r=1489258287",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/22/5142_crt_72OJI.jpg?r=1489258287",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/22/5142_crt_72OJI.jpg?r=1489258287",
+        "grid": "https://lain.bgm.tv/pic/crt/g/02/22/5142_crt_72OJI.jpg?r=1489258287"
+    },
+    "summary": "17岁，身高150厘米。深受祖父影响，原来是无法成为西贝拉的南部农民出身的训练生。因为驾驶SIMOUN技术一流，后来配属进“暴风组”。渴望成为奈比利尔的伙伴。笑容开朗，手上总是拿着爷爷送的风琴。\r\n    和其它西贝拉视自己为“巫女”的态度不同，阿艾尔将自己看做“战士”，来到暴风组的目的就是为了战斗。\r\n    阿艾尔成为西贝拉还有一个理由：他一点也不想“定性”。他还没决定要成为什么性别，也不想被迫决定，如果可以的话，他甚至想一辈子保持未定性状态，这种想法让其他西贝拉难以接受。\r\n    “阿艾尔”这个字在岭国的语言里，其实是“荣耀归属神”的意思。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿艾尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "アーエル"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aaeru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "150cm"
+        },
+        {
+            "key": "BWH",
+            "value": "83/63/85"
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        },
+        {
+            "key": "足长",
+            "value": "22.5"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 9,
+        "collects": 29
+    },
+    "anime_ids": [
+        3755
+    ]
+}

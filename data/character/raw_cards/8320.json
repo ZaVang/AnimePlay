@@ -1,0 +1,77 @@
+{
+    "id": 8320,
+    "name": "イカロス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ad/fa/8320_crt_8dg6j.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/fa/8320_crt_8dg6j.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/fa/8320_crt_8dg6j.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ad/fa/8320_crt_8dg6j.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊卡洛斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Ikaros"
+                },
+                {
+                    "k": "日文名",
+                    "v": "イカロス"
+                },
+                {
+                    "k": "昵称",
+                    "v": "螺丝"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "162"
+        },
+        {
+            "key": "体重",
+            "value": "48"
+        },
+        {
+            "key": "BWH",
+            "value": "88/57/85"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "anidb.net"
+                }
+            ]
+        },
+        {
+            "key": "型号",
+            "value": "α(Alpha)"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 32,
+        "collects": 354
+    },
+    "anime_ids": [
+        7150,
+        2617
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 49454,
+    "name": "友永勇太",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f6/33/49454_crt_81j6j.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/33/49454_crt_81j6j.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/33/49454_crt_81j6j.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f6/33/49454_crt_81j6j.jpg"
+    },
+    "summary": "本作主角，是小学四年级，名字的意思是“拥有友谊、永恒而强大的勇气”。在郊外游玩时偶然接触正在开发中的迪卡度，在彼此交流期间，唤醒迪卡度的“心”，因缘际会下，成为世界上首位少年警官，隶属警视厅的“勇者警察队”成为主任。\r\n天生是一名爱哭鬼，害怕妖怪，但相当擅长绘画，习惯将包括内衣在内的所有衣物，都加上音符（♪）图案。\r\n曾经在牙岛处长的指示下，化身成女装(友永勇子)进行秘密调查。在最终决战时，控制机能停止的迪卡度作战。\r\n本作监督高松信司，后来亦在机动新世纪 高达 X担当同一职位，因此主角卡多洛的发型，蓝本亦来自友永勇太(服装则来自另一部作品“黄金勇者”的原岛拓矢)。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "友永勇太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Tomonaga Yuuta"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ともなが ゆうた"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "135cm"
+        },
+        {
+            "key": "体重",
+            "value": "30kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 3
+    },
+    "anime_ids": [
+        26453
+    ]
+}

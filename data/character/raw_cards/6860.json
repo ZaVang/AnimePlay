@@ -1,0 +1,56 @@
+{
+    "id": 6860,
+    "name": "上杉和也",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/31/a6/6860_crt_anidb.jpg?r=1610523284",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/31/a6/6860_crt_anidb.jpg?r=1610523284",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/31/a6/6860_crt_anidb.jpg?r=1610523284",
+        "grid": "https://lain.bgm.tv/pic/crt/g/31/a6/6860_crt_anidb.jpg?r=1610523284"
+    },
+    "summary": "アニメ - CV難波圭一 、幼少時代 - CV深見理佳 、映画 - CV斉藤慶太、ドラマ - CV岡本健一",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "上杉和也"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "うえき　かずや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Uesugi Kazuya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "????-06-16"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 16,
+    "stat": {
+        "comments": 7,
+        "collects": 12
+    },
+    "anime_ids": [
+        2741
+    ]
+}

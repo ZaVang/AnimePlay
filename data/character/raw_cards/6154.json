@@ -1,0 +1,123 @@
+{
+    "id": 6154,
+    "name": "サトシ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a5/b5/6154_crt_HWSVh.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/b5/6154_crt_HWSVh.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/b5/6154_crt_HWSVh.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a5/b5/6154_crt_HWSVh.jpg"
+    },
+    "summary": "小智是精灵宝可梦动画的主角。设计以神奇宝贝红绿蓝版、神奇宝贝皮卡丘版和神奇宝贝火红叶绿版的主角为蓝本。小智的名字来自于神奇宝贝的创始者田尻智。英文姓氏（Ketchum）源于神奇宝贝的英文原本的标语：“Gotta catch 'em all”。动画中小智的日配配音演员为松本梨香，国语（台湾）当前的配音为汪世玮。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小智"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Ash Ketchum"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Satoshi"
+                },
+                {
+                    "k": "法文名",
+                    "v": "Sacha Ketchum"
+                },
+                {
+                    "k": "韩文名",
+                    "v": "한지우"
+                },
+                {
+                    "k": "印尼名",
+                    "v": "Ali / Satoshi"
+                },
+                {
+                    "k": "泰文名",
+                    "v": "ซาโตชิ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "不明"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://wiki.52poke.com/wiki/小智（动画）"
+        },
+        {
+            "key": "年龄",
+            "value": "10岁（登场）"
+        },
+        {
+            "key": "家乡",
+            "value": "真新镇"
+        },
+        {
+            "key": "家乡所在地",
+            "value": "关都地区"
+        },
+        {
+            "key": "眼睛颜色",
+            "value": [
+                {
+                    "k": "无印-超时代",
+                    "v": "黑色（超级愿望之前）"
+                },
+                {
+                    "k": "超级愿望至今",
+                    "v": "黑色"
+                }
+            ]
+        },
+        {
+            "key": "头发颜色",
+            "value": "墨绿色"
+        },
+        {
+            "key": "训练家类型",
+            "value": [
+                {
+                    "v": "宝可梦训练家"
+                },
+                {
+                    "v": "名誉训练家（橘子联盟）"
+                },
+                {
+                    "v": "宝可梦协调训练家（神奥地区）"
+                },
+                {
+                    "v": "男爵（《精灵宝可梦XY》对战城堡）"
+                }
+            ]
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 54,
+        "collects": 107
+    },
+    "anime_ids": [
+        3019,
+        3021,
+        192680,
+        3020,
+        78799,
+        146408
+    ]
+}

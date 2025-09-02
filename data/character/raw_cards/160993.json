@@ -1,0 +1,35 @@
+{
+    "id": 160993,
+    "name": "招かれざる客",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2f/66/160993_crt_qgSzQ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2f/66/160993_crt_qgSzQ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2f/66/160993_crt_qgSzQ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2f/66/160993_crt_qgSzQ.jpg"
+    },
+    "summary": "﻿「自分は招かれているのか？」という不安を常に抱く、気弱な性格。\r\n着ている透明な服を脱ぐと、とても恥ずかしがる。\r\n透明なのに。\r\n透明な服を紛失した時は、酷く取り乱して暴れ回る。\r\n透明なのに。\r\n\r\n总是抱持着“我有被邀请来吧？”这样的不安，性格软弱，脱下透明的衣服时会很害羞，明明是透明的，透明的衣服不见时，会慌张地到处乱跑，明明衣服是透明的。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "不速之客"
+        },
+        {
+            "key": "别名",
+            "value": []
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 11,
+        "collects": 1
+    },
+    "anime_ids": [
+        490824
+    ]
+}

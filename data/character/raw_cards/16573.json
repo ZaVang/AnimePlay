@@ -1,0 +1,47 @@
+{
+    "id": 16573,
+    "name": "藤原高子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/71/7f/16573_crt_e666I.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/7f/16573_crt_e666I.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/7f/16573_crt_e666I.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/71/7f/16573_crt_e666I.jpg"
+    },
+    "summary": "藤原长良之女，866年入清和天皇宫，封女御，生阳成天皇。传说高子入宫前，曾与在原业平私奔失败。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藤原高子"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "842年"
+        },
+        {
+            "key": "卒日",
+            "value": "910年5月6日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 2,
+    "stat": {
+        "comments": 1,
+        "collects": 3
+    },
+    "anime_ids": [
+        37138
+    ]
+}

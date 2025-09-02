@@ -1,0 +1,64 @@
+{
+    "id": 35666,
+    "name": "藤沼悟",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c3/97/35666_crt_z3Zuf.jpg?r=1446564557",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c3/97/35666_crt_z3Zuf.jpg?r=1446564557",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c3/97/35666_crt_z3Zuf.jpg?r=1446564557",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c3/97/35666_crt_z3Zuf.jpg?r=1446564557"
+    },
+    "summary": "漫画家としてデビューするも、なかなか芽が出ず、ピザ屋のアルバイトで生計を立てている。\r\n人付き合いがあまり得意ではない。\r\nリバイバル(再上映)という現象に悩まされる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藤沼悟"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ふじぬま さとる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fujinuma Satoru"
+                },
+                {
+                    "k": "日文名",
+                    "v": "藤沼 悟"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1977年3月2日"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://bokumachi-anime.com/character/#satoru29"
+        },
+        {
+            "key": "年龄",
+            "value": "29岁"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1977,
+    "birth_mon": 3,
+    "birth_day": 2,
+    "stat": {
+        "comments": 20,
+        "collects": 45
+    },
+    "anime_ids": [
+        137722
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": 168462,
+    "name": "ひすい",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/69/98/168462_crt_I7B04.jpg?r=1734316006",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/98/168462_crt_I7B04.jpg?r=1734316006",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/98/168462_crt_I7B04.jpg?r=1734316006",
+        "grid": "https://lain.bgm.tv/pic/crt/g/69/98/168462_crt_I7B04.jpg?r=1734316006"
+    },
+    "summary": "みらいとリコの前に現れた不思議な少女。\r\n綺麗なひすい色の髪の毛をしているが…？",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "翡翠"
+        },
+        {
+            "key": "别名",
+            "value": []
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 0
+    },
+    "anime_ids": [
+        424454
+    ]
+}

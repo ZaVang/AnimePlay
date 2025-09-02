@@ -1,0 +1,76 @@
+{
+    "id": 871,
+    "name": "沢田綱吉",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1e/62/871_crt_9o4b1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/62/871_crt_9o4b1.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/62/871_crt_9o4b1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1e/62/871_crt_9o4b1.jpg"
+    },
+    "summary": "並盛中學的學生，也是彭哥列家族的下任首領（第10代首領），通稱「阿綱（ツナ（TSUNA））」（音同日語的鮪魚，阿綱房間的門牌及京子送的護身符上都有魚的圖樣）。父母家光和奈奈是道地的日本人。 \r\n因其無論是學習還是運動都不擅長，而被周圍的人稱呼為「廢材阿綱」（ダメツナ）。 \r\n義大利黑手黨「彭哥列家族」初代首領的後裔，被選為第10代首領的正統繼承人，為此里包恩作為他的家庭教師被派遣到日本。 \r\n繼承彭哥列家族首領不可缺少的「彭哥列的血統」，擁有「超直感」。 \r\n武器是與初代首領相同的手套，稱為「X手套」，在彭哥列戒指爭奪戰中取得勝利，正式成為彭哥列的繼承者。波動屬性為「天空」。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "泽田纲吉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "沢田綱吉"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さわだ つなよし"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sawada Tsunayoshi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "10月14日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "体重",
+            "value": "46.5kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "國分優香里"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 14,
+    "stat": {
+        "comments": 24,
+        "collects": 150
+    },
+    "anime_ids": [
+        4562
+    ]
+}

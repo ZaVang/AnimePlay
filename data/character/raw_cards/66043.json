@@ -1,0 +1,56 @@
+{
+    "id": 66043,
+    "name": "エンマ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1e/51/66043_crt_N2CaW.jpg?r=1549675943",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/51/66043_crt_N2CaW.jpg?r=1549675943",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/51/66043_crt_N2CaW.jpg?r=1549675943",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1e/51/66043_crt_N2CaW.jpg?r=1549675943"
+    },
+    "summary": "キリエの幼なじみ。\r\n洞察力と観察力に優れていて、戦闘では相手の飛行の癖を即座に見抜くことができる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾玛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Ennma"
+                },
+                {
+                    "k": "昵称",
+                    "v": "峻烈可憐のエンマ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月21日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://kotobuki-anime.com/character/ennma/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 21,
+    "stat": {
+        "comments": 1,
+        "collects": 15
+    },
+    "anime_ids": [
+        260467
+    ]
+}

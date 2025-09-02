@@ -1,0 +1,57 @@
+{
+    "id": 327,
+    "name": "藤井冬弥",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b8/3a/327_pANqK.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/3a/327_pANqK.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/3a/327_pANqK.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b8/3a/327_pANqK.jpg"
+    },
+    "summary": "本作的主人公，是平凡的大學生。對周圍的人守著秘密，與明星由綺交往。\r\n在日本位列galgame“三大废柴男主”(三大ヘタレ主人公)，在中国网络上被评为“四大人渣”之一。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藤井冬弥"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "藤井 冬弥"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ふじい とうや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fujii Touya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "声优",
+            "value": "前野智昭"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 41,
+        "collects": 20
+    },
+    "anime_ids": [
+        993,
+        2586
+    ]
+}

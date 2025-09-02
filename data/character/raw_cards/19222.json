@@ -1,0 +1,39 @@
+{
+    "id": 19222,
+    "name": "お嬢さん",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2e/7a/19222_crt_CKkY0.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/7a/19222_crt_CKkY0.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/7a/19222_crt_CKkY0.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2e/7a/19222_crt_CKkY0.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小姐"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 3
+    },
+    "anime_ids": [
+        2882
+    ]
+}

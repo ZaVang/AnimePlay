@@ -1,0 +1,52 @@
+{
+    "id": 37243,
+    "name": "結城中佐",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5b/5b/37243_crt_86rlq.jpg?r=1451839341",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/5b/37243_crt_86rlq.jpg?r=1451839341",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/5b/37243_crt_86rlq.jpg?r=1451839341",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5b/5b/37243_crt_86rlq.jpg?r=1451839341"
+    },
+    "summary": "帝国陸軍のスパイマスターであり、スパイ養成部門“Ｄ機関”の設立者。“魔王”の異名を取る、底知れぬ頭脳の持ち主。かつては自身も優秀なスパイとして活躍。トレードマークともいえる白手袋と杖は、敵国に潜入中、仲間の裏切りによって捕えられ、拷問を受けた結果とも噂されるが、詳細は不明。敵味方、様々な人間がその正体を探ろうとするが、その試みはいずれも挫折している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "结城中佐"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "結城"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ゆうき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yuuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 9
+    },
+    "anime_ids": [
+        142812
+    ]
+}

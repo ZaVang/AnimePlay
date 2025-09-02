@@ -1,0 +1,152 @@
+{
+    "id": 10393,
+    "name": "宇宙战舰大和号",
+    "image_path": "data/images/anime/10393.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "宇宙战舰大和号，堪称是日本动画的元祖级作品。原作是日本著名漫画家，松本零士。在日本国内，宇宙战舰大和号，与高达 EVA并称日本动画三大神作。其代表日本动画起步之作。毕竟是1974的TV动画，制作质量和画风都不尽如人意。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "1974-10-06",
+    "rating_rank": 1718,
+    "rating_score": 7.2,
+    "rating_total": 334,
+    "main_character_ids": [
+        9493,
+        9494,
+        9496,
+        20079
+    ],
+    "main_characters": [
+        {
+            "id": 9493,
+            "name": "古代進",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/11/2e/9493_crt_85555.jpg?r=1605193467",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/11/2e/9493_crt_85555.jpg?r=1605193467",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/11/2e/9493_crt_85555.jpg?r=1605193467",
+                "grid": "https://lain.bgm.tv/pic/crt/g/11/2e/9493_crt_85555.jpg?r=1605193467"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4271,
+                    "name": "富山敬",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b8/f4/4271_prsn_MvBV9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/f4/4271_prsn_MvBV9.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/f4/4271_prsn_MvBV9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b8/f4/4271_prsn_MvBV9.jpg"
+                    },
+                    "short_summary": "満洲国奉天省鞍山出身。弟が2人いたが、それぞれ事故、栄養失調で亡くしたという。終戦に伴い宮崎県へ引揚後、本籍地の東京都世田谷区で育つ。\r\n\r\n正則高等学校在学時、演劇部に所属し熱中。より高みを目指したことで、高校2年だった1955年に東宝児童劇団に飛び込む。約3年間の活動を経て、児童劇に限界を感じ退団した後は、日本大学芸術学部演劇科へ進学する。\r\n\r\nその後「学校の勉強と実際に芝居することは違う」と感じたため、劇団葦の研修生となったことを機に大学は2年で中退。だが、劇団葦は入団から約2年後に解散。しばらくは他の劇団の入団試験を受けながら、それまで以上に日銭が得られる仕事（バーテンダー、キャバレーのボーイに呼び込み、サンドイッチマンなど）を何でも行う生活を送ったという。\r\n\r\n声優の初仕事は、1957年に放送された東北放送のラジオドラマ『源九郎物語』へのレギュラー出演。当時、声優業は俳優たちの副業であり、富山自身も最初は芝居や生活の資金稼ぎのため行っていた。\r\n\r\n1965年、劇団葦時代の先輩であった千葉順二の誘いで河の会へ所属。当時の河の会が吹き替え出演などマスコミ関係の仕事が主体だったことで、富山も声優業を本格的に始めることとなった。所属後しばらくは端役を多くこなし、ひと月に30本出演したこともあったという。同年には『鉄人28号』にて、毎回役の違う脇役ではあるがセミレギュラーを獲得。\r\n\r\n1968年、オーディションで『佐武と市捕物控』の主人公・佐武の声に抜擢され初主演を飾る。以降は1969年に『タイガーマスク』で主人公・伊達直人を、『男一匹ガキ大将』の戸川万吉を演じるなどアニメーションでの主演が増え、富山自身の人気も高くなる。\r\n\r\n1974年、『宇宙戦艦ヤマト』にて主人公の古代進を演じる。同作のヒットも伴い、富山は多数の人気声優ランキングで上位を飾るなど人気を不動のものとした。\r\n\r\n1976年、青二プロダクションへ移籍。\r\n\r\n1979年、富田耕生らと青二プロダクションを退所し、ぷろだくしょんバオバブを立ち上げる。同時期には2枚のアルバムをリリースし、1980年にはバオバブ所属声優で結成した劇団がらくた工房（現：劇団すごろく）にて約10年ぶりに舞台活動も再開した。\r\n\r\n1980年代に入っても多くの作品に出演。『ゲゲゲの鬼太郎（第3作）』のねずみ男役や『それいけ!アンパンマン』のSLマンなど、主演だけでなく様々な役を担当した。1990年代には『ちびまる子ちゃん』で、主人公のまる子の祖父・さくら友蔵の声を担当したほか、SFアニメ『銀河英雄伝説』シリーズで主人公ヤン・ウェンリーを長期にわたり担当し、結果的に富山の晩年を代表するキャラクターとなった。\r\n\r\n1995年8月18日、『ちびまる子ちゃん 第2期』第37話「呪いの貸本」の巻（1995年9月17日放送）の収録後に「目の調子が悪い」と訴える。同年8月21日に突然倒れ、東京都新宿区の東京医科大学病院に入院。検査の結果、末期の膵臓癌と診断された。仕事を優先する姿勢と人気声優としての多忙が災いして癌の発見が遅れてしまい、既に手遅れの状態だったという。同年9月25日午前9時7分に死去。56歳没。翌年6月に公開された『APO APOワールド ジャイアント馬場90分一本勝負』の郵便配達人役が遺作となった。\r\n\r\n9月30日に告別式が行われ、声優仲間やファンら約1300人が出席した。\r\n\r\n2007年、第1回声優アワードにて特別功労賞を受賞。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9494,
+            "name": "森雪",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5a/15/9494_crt_zsYxu.jpg?r=1605193599",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5a/15/9494_crt_zsYxu.jpg?r=1605193599",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5a/15/9494_crt_zsYxu.jpg?r=1605193599",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5a/15/9494_crt_zsYxu.jpg?r=1605193599"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4270,
+                    "name": "麻上洋子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/39/b8/4270_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/b8/4270_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/b8/4270_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/39/b8/4270_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本女性配音员、讲谈师。北海道小樽市出生，成长于神奈川县藤泽市。\r\n隶属于Aksent。本名大久保洋子（おおくぼ ようこ），旧艺名麻上洋子（あさがみ ようこ）。神奈川县立镰仓高等学校毕业。\r\n为人熟悉的代表配音作品是长期电视动画系列《宇宙战舰大和号》的森雪和《城市猎人》的野上冴子。\r\n除了长期动画系列之外，有漫画家松本零士原作的《银河铁道物语》的雷娜·帝斯缔尼·修拉与《剧场版 银河铁道999》系列的克雷雅；《传说巨神伊甸王》的哈露露·阿吉巴与J9系列三部作《银河旋风突击队》的町子·巴伦西亚〈天使小町〉、《银河烈风》的莱拉·峰里〈不死蝶莱拉〉及《银河疾风》的芭蒂·萧〈反复无常的芭蒂〉（4部作品的角色后来也在《超级机器人大战》系列出场）；《名侦探福尔摩斯》的哈德逊夫人及《比利犬》的雨森辰夫等。\r\n2012年1月开始，将出道近四十年使用的艺名麻上洋子改成“一龙斋春水”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9496,
+            "name": "島大介",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/18/f5/9496_crt_51c45.jpg?r=1605194549",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/f5/9496_crt_51c45.jpg?r=1605194549",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/f5/9496_crt_51c45.jpg?r=1605194549",
+                "grid": "https://lain.bgm.tv/pic/crt/g/18/f5/9496_crt_51c45.jpg?r=1605194549"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4269,
+                    "name": "仲村秀生",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/be/dc/4269_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/dc/4269_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/dc/4269_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/be/dc/4269_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 20079,
+            "name": "沖田十三",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/dd/2a/20079_crt_9Y2Dd.jpg?r=1605193754",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/2a/20079_crt_9Y2Dd.jpg?r=1605193754",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/2a/20079_crt_9Y2Dd.jpg?r=1605193754",
+                "grid": "https://lain.bgm.tv/pic/crt/g/dd/2a/20079_crt_9Y2Dd.jpg?r=1605193754"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4218,
+                    "name": "納谷悟朗",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d2/78/4218_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/78/4218_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/78/4218_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d2/78/4218_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の俳優、声優、ナレーター、舞台演出家。テアトル・エコー所属。\r\n\r\n北海道函館市出身。立命館大学法学部中退。弟は俳優・声優の納谷六朗、妻は女優・声優の火野カチ子。代表作に『ルパン三世』シリーズ（銭形警部役）がある。洋画ではクラーク・ゲーブル、チャールトン・ヘストン、ジョン・ウェインの声の吹き替えを担当。\r\n\r\n2008年の舞台公演中に体調不良を訴え俳優業を引退し、2009年に都内から千葉市に転居。その後も声優業は続け、日曜洋画劇場で2012年5月28日に収録した『インセプション』の吹き替え収録後体調を崩し入退院を繰り返していたが、2013年3月5日、慢性呼吸不全のため千葉市内の自宅で死去。83歳没。通夜及び告別式は近親者のみで行われ、3月11日にマスコミに公表された。5月21日には恵比寿・エコー劇場でお別れの会が行われ、栗田貫一、小林清志、増山江威子、野沢雅子、山寺宏一ら声優仲間やファンおよそ300人が訪れた。また、神谷明や麻上洋子、井上真樹夫、松井菜桜子は納谷の訃報が発表された際、自身のブログで追悼のコメントを述べている。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

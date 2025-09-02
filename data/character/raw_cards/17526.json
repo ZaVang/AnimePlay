@@ -1,0 +1,52 @@
+{
+    "id": 17526,
+    "name": "来生瞳",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b8/1d/17526_crt_ZfczF.jpg?r=1629273402",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/1d/17526_crt_ZfczF.jpg?r=1629273402",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/1d/17526_crt_ZfczF.jpg?r=1629273402",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b8/1d/17526_crt_ZfczF.jpg?r=1629273402"
+    },
+    "summary": "来生三姐妹中的次女，是三姐妹之中身手最好的一位。在盗窃行动中一直处于主导地位。她与接手猫眼案子的内海俊夫自高校时代起就保持恋人关系，不过俊夫并不清楚瞳的真实身份。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "来生瞳"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "きすぎ ひとみ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "Kisugi Hitomi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "小瞳"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 36
+    },
+    "anime_ids": [
+        9304
+    ]
+}

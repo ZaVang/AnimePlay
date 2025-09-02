@@ -1,0 +1,64 @@
+{
+    "id": 5157,
+    "name": "城戸丈",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/18/d6/5157_crt_FfV3U.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/d6/5157_crt_FfV3U.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/d6/5157_crt_FfV3U.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/18/d6/5157_crt_FfV3U.jpg"
+    },
+    "summary": "八个被选召的孩子中年龄最大的，也因此认为自己应该担负起保护其他人的责任，会念佛经。正如他持有的徽章一样，是个诚实又靠得住的大哥，虽然一开始有些懦弱，但因为自己的年纪是最大而责任心非常重，热心助人。长大后成为首位医治数码兽的医生。搭档是哥玛兽。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "城户丈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "城户助"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Kido Joe"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きど じょう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kido Jyou"
+                },
+                {
+                    "k": "昵称",
+                    "v": "阿助"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 7
+    },
+    "anime_ids": [
+        3128
+    ]
+}

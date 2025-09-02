@@ -1,0 +1,68 @@
+{
+    "id": 181,
+    "name": "往住愛子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fc/22/181_309746013ac554571fbd180e1c8_FLphz.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/22/181_309746013ac554571fbd180e1c8_FLphz.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/22/181_309746013ac554571fbd180e1c8_FLphz.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fc/22/181_309746013ac554571fbd180e1c8_FLphz.jpg"
+    },
+    "summary": "往住愛子\r\n(とこすみ あいこ)\r\n通称：アンコ\r\n(声：牧野由依)\r\n中学１年",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "往住爱子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "往住愛子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "とこすみ あいこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tokosumi Aiko"
+                },
+                {
+                    "k": "昵称",
+                    "v": "アンコ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "150"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 2,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 4
+    },
+    "anime_ids": [
+        467
+    ]
+}

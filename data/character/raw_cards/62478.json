@@ -1,0 +1,72 @@
+{
+    "id": 62478,
+    "name": "佐倉睦子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c7/d1/62478_crt_eEBIG.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/d1/62478_crt_eEBIG.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/d1/62478_crt_eEBIG.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c7/d1/62478_crt_eEBIG.jpg"
+    },
+    "summary": "第1シリーズ\r\n大吾や光と同じ三船小６年生で、初恋の相手が大吾だった。兄がかつてドルフィンズに所属しており、実は野球が大好きなのだが、両親は睦子が野球をやることに難色を示している。\r\n\r\n第２シリーズ\r\n制球力バツグンのエースピッチャー \r\n大吾とは幼なじみ。初恋の相手が大吾だった。小学生の頃から野球が大好きで、大吾たちが所属する三船ドルフィンズに入団。攻守ともに優れた野球センスを発揮。中学生になり野球部副キャプテンでエースを担う。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "佐仓睦子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "佐倉 睦子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さくら むつこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakura Mutsuko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "165cm(中学２年)"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        },
+        {
+            "key": "背号",
+            "value": "1"
+        },
+        {
+            "key": "守备位置",
+            "value": "外野手(小学)、投手/外野手(初中)"
+        },
+        {
+            "key": "投打",
+            "value": "右投右打"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 15
+    },
+    "anime_ids": [
+        292219
+    ]
+}

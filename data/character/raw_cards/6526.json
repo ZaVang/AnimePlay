@@ -1,0 +1,56 @@
+{
+    "id": 6526,
+    "name": "田名部愛",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3f/e2/6526_crt_TIgl3.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/e2/6526_crt_TIgl3.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/e2/6526_crt_TIgl3.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3f/e2/6526_crt_TIgl3.jpg"
+    },
+    "summary": "本作女主人公，刚刚踏入社会的新人，被分配到回收科，同属于舱外活动的回收人员。\r\n　　性格开朗充满活力，对于爱与和平有着非常的执着。因为稍有些天真的理想主义，而常常做出有些出人意料的事情。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "田名部爱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Tanabe Ai"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2054年7月7日（20岁）"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 4,
+    "birth_year": 2054,
+    "birth_mon": 7,
+    "birth_day": 7,
+    "stat": {
+        "comments": 23,
+        "collects": 28
+    },
+    "anime_ids": [
+        2734
+    ]
+}

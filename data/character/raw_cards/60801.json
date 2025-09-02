@@ -1,0 +1,48 @@
+{
+    "id": 60801,
+    "name": "白都ゆき子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/85/65/60801_crt_229rB.jpg?r=1621609645",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/65/60801_crt_229rB.jpg?r=1621609645",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/65/60801_crt_229rB.jpg?r=1621609645",
+        "grid": "https://lain.bgm.tv/pic/crt/g/85/65/60801_crt_229rB.jpg?r=1621609645"
+    },
+    "summary": "白都企业的继任者。\r\nMEGALOBOX的淘汰赛”MEGALONIA“的创办者，最高负责人。\r\n同时拥有无比的美貌和壮大的野心。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "白都有希子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しらと ゆきこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shirato Yukiko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 19,
+        "collects": 36
+    },
+    "anime_ids": [
+        227718
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 11302,
+    "name": "蔵馬",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0a/6f/11302_crt_pOpP1.jpg?r=1577971969",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/6f/11302_crt_pOpP1.jpg?r=1577971969",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/6f/11302_crt_pOpP1.jpg?r=1577971969",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0a/6f/11302_crt_pOpP1.jpg?r=1577971969"
+    },
+    "summary": "红色中长发，深绿色双眼，外表俊朗的青年，本身是妖狐。\r\n曾经是魔界盗贼，因被灵界猎人追捕负伤，投到当时正在怀孕的妇女南野志保利胎里，而转生成为人类“南野秀一”。\r\n拥有自由控制植物或呼唤魔界植物的能力。\r\n后来因饮用“前世之种子”而回复成妖狐状态，此后慢慢能自由地转变成妖狐或人类的形态。头脑冷静，聪明机智；在人间学校中，学业成绩优秀，常常考第一。\r\n一直与幽助等人并肩作战；魔界统一篇时投靠黄泉，在武斗大会中击败时雨。\r\n最后返回人间界，在继父的公司上班。\r\n蔷薇棘鞭刃\r\n风华圆舞阵\r\n华严裂斩肢\r\n树灵妖斩拳\r\n空间旋风掌",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藏马"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "蔵馬"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kurama"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "南野秀一（Minamino Shuuichi）"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くらま"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 10,
+        "collects": 67
+    },
+    "anime_ids": [
+        8803
+    ]
+}

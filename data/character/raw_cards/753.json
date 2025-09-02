@@ -1,0 +1,48 @@
+{
+    "id": 753,
+    "name": "クレア",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a1/4d/753_crt_Nn379.jpg?r=1458216737",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/4d/753_crt_Nn379.jpg?r=1458216737",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/4d/753_crt_Nn379.jpg?r=1458216737",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a1/4d/753_crt_Nn379.jpg?r=1458216737"
+    },
+    "summary": "排名47，擅长右手，攻击型。\r\n故事的女主角，半人半妖的战士。幼年时曾被妖魔长期虐待，因而性格自我封闭，失去了语言、欢乐，直到遇上微笑的迪妮莎，便死跟着迪妮莎一同旅行。后来迪妮莎被杀，失去迪妮莎的克蕾雅拿着迪妮莎的首级，要求组织把迪妮莎血肉植入她体内，成为大剑，目的是想亲手杀死独角怪物──普莉西拉。\r\n虽然其妖力很弱，但极擅长感觉妖力，并能预知对方的攻向。后期因成为半觉醒者妖力得到提升。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "克蕾雅"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Clare"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 78
+    },
+    "anime_ids": [
+        982
+    ]
+}

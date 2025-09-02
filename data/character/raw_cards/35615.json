@@ -1,0 +1,61 @@
+{
+    "id": 35615,
+    "name": "レム",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b4/42/35615_crt_O7WVP.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/42/35615_crt_O7WVP.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/42/35615_crt_O7WVP.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b4/42/35615_crt_O7WVP.jpg"
+    },
+    "summary": "名誉の負傷をしたスバルが担ぎ込まれた屋敷で、雑務全般を一手に担う双子メイドの妹。慇懃無礼な毒舌担当。屋敷の機能が維持されているのは、彼女の有能さが全てといっていい。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蕾姆"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "雷姆"
+                },
+                {
+                    "k": "英文名",
+                    "v": "REM"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Remu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月2日"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 2,
+    "stat": {
+        "comments": 149,
+        "collects": 950
+    },
+    "anime_ids": [
+        296195,
+        140001
+    ]
+}

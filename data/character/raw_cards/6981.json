@@ -1,0 +1,52 @@
+{
+    "id": 6981,
+    "name": "小日向七夏",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/af/e7/6981_crt_d2DZH.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/e7/6981_crt_d2DZH.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/e7/6981_crt_d2DZH.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/af/e7/6981_crt_d2DZH.jpg"
+    },
+    "summary": "15歳。高校通学のため、耕四郎の家に同居した。兄を慕う行動が、猜疑心を持つ耕四郎には誤解され衝突しているが耕四郎の不器用な優しさや本当の自分を理解してくれる姿に惹かれてゆく。\r\n同級生からラブレターをもらった事をきっかけに兄への感情が恋であることを自覚する。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小日向七夏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小日向 七夏"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こひなた なのか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kohinata Nanoka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 30
+    },
+    "anime_ids": [
+        9731
+    ]
+}

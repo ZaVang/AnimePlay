@@ -1,0 +1,76 @@
+{
+    "id": 14181,
+    "name": "花村陽介",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9f/df/14181_crt_m42ms.jpg?r=1608020175",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/df/14181_crt_m42ms.jpg?r=1608020175",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/df/14181_crt_m42ms.jpg?r=1608020175",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9f/df/14181_crt_m42ms.jpg?r=1608020175"
+    },
+    "summary": "主人公的同班同学，家里经营连锁卖场“Junes”。和主人公一样生长在大都市，由于父亲的工作变动来到八十稻羽镇。\r\n充满正义感的乐观少年，跟谁都能自来熟，（单方面的）喜欢小西早纪。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "花村阳介"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Yosuke Hanamura"
+                },
+                {
+                    "k": "日文名",
+                    "v": "花村 陽介"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はなむら　ようすけ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hanamura Yōsuke"
+                },
+                {
+                    "k": "昵称",
+                    "v": "小花"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1994-06-22"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        },
+        {
+            "key": "体重",
+            "value": "58kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 1,
+    "birth_year": 1994,
+    "birth_mon": 6,
+    "birth_day": 22,
+    "stat": {
+        "comments": 38,
+        "collects": 90
+    },
+    "anime_ids": [
+        15489
+    ]
+}

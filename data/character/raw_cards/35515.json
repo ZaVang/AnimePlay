@@ -1,0 +1,60 @@
+{
+    "id": 35515,
+    "name": "松野トド松",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3b/70/35515_crt_E8qPk.jpg?r=1491286169",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/70/35515_crt_E8qPk.jpg?r=1491286169",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/70/35515_crt_E8qPk.jpg?r=1491286169",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3b/70/35515_crt_E8qPk.jpg?r=1491286169"
+    },
+    "summary": "声 - 北浜晴子（第1作）、林原めぐみ（第2作）、入野自由（第3作）\r\n六男。のんびり屋、風呂が大嫌い。\r\n「三十年後のおそ松くん」では、ややイガグリ頭っぽくなった。\r\n『大人になったおそ松くん』では、魚屋を営んでいる。店で売っていた魚の骨が松造のノドに刺さり、松造が倒れる。\r\n名前の由来は椴松と「とどのつまり」から。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "松野椴松"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "松野末松"
+                },
+                {
+                    "k": "日文名",
+                    "v": "松野 トド松"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まつの トドまつ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Matsuno Todomatsu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月24日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 24,
+    "stat": {
+        "comments": 6,
+        "collects": 20
+    },
+    "anime_ids": [
+        139408
+    ]
+}

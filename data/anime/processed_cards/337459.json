@@ -1,0 +1,168 @@
+{
+    "id": 337459,
+    "name": "青之芦苇",
+    "image_path": "data/images/anime/337459.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "「我会带你，走向世界。」\r\n住在爱媛县的初中生·青井苇人是一家实力弱小的足球部的王牌。在输掉了初中最后的大赛的那一天，苇人为了发泄心中的不甘而来到海边跑步，在那里他遇见了一个观看了他比赛的男人。这个男人——福田达也是J联赛屈指可数的俱乐部「东京City·Esperion FC」青年队的教练，专门负责培养高中生选手。福田在苇人身上看到了未经雕琢的特殊天赋，认为他前途无量，于是开始讲述他自己的野心。「我有一个野心。我想凭借自己打造的俱乐部，将世界纳入掌中。我要让我的俱乐部自身成为世界级，而不仅仅是供球员进军世界的跳板。而背负这一野心的基础，就是我培养的青年队。」苇人接受了福田的邀请，决定前往东京参加入队选拔——\r\n始终跑在足球漫画最前线的『青之芦苇』，终于将迎来盼望已久的TV动画化！挫折、成长、友情——青春的一切都在这里！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "运动",
+        "漫画改"
+    ],
+    "date": "2022-04-09",
+    "rating_rank": 1201,
+    "rating_score": 7.4,
+    "rating_total": 2498,
+    "main_character_ids": [
+        102289,
+        102290,
+        102291,
+        102292
+    ],
+    "main_characters": [
+        {
+            "id": 102289,
+            "name": "青井葦人",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/20/0b/102289_crt_8sHpg.jpg?r=1635866335",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/20/0b/102289_crt_8sHpg.jpg?r=1635866335",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/20/0b/102289_crt_8sHpg.jpg?r=1635866335",
+                "grid": "https://lain.bgm.tv/pic/crt/g/20/0b/102289_crt_8sHpg.jpg?r=1635866335"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 43120,
+                    "name": "大鈴功起",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9e/89/43120_prsn_aRr70.jpg?r=1635538681",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/89/43120_prsn_aRr70.jpg?r=1635538681",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/89/43120_prsn_aRr70.jpg?r=1635538681",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9e/89/43120_prsn_aRr70.jpg?r=1635538681"
+                    },
+                    "short_summary": "出身地\r\n東京都\r\n\r\n趣味・特技\r\n趣味：落語、ゲーム\r\n特技：バスケットボール\r\n\r\n芸歴\t\r\n日本ナレーション演技研究所",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 102290,
+            "name": "大友栄作",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d6/02/102290_crt_l4cxj.jpg?r=1635866531",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/02/102290_crt_l4cxj.jpg?r=1635866531",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/02/102290_crt_l4cxj.jpg?r=1635866531",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d6/02/102290_crt_l4cxj.jpg?r=1635866531"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 34406,
+                    "name": "橘龍丸",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3f/a7/34406_prsn_u8VZd.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/a7/34406_prsn_u8VZd.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/a7/34406_prsn_u8VZd.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3f/a7/34406_prsn_u8VZd.jpg"
+                    },
+                    "short_summary": "俳優。ステイラック所属。2010年「橘小竜丸劇団」の座長に昇格し、2015年まで活動。2014年芝居「今昔桃太郎」「新撰組斎藤一」「ムサシ」「銭形平次」「白虎隊」などの大衆演劇で活躍した後、2015年舞台「小林少年とピストル」、ミュージカル「仮面ティーチャー SILVER MASK」での活動を開始。2016年ミュージカル「ミュージカル『忍たま乱太郎』第7弾～水軍砦三つ巴の戦い！～」、ミュージカル「ふしぎ遊戯～朱ノ章～」、2018年舞台 「コントス!」 「イケメン戦国 THE STAGE-織田信長編-」上杉謙信役に出演。特技は殺陣、女形。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 102291,
+            "name": "橘総一朗",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/04/a7/102291_crt_BKSHw.jpg?r=1635866724",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/a7/102291_crt_BKSHw.jpg?r=1635866724",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/a7/102291_crt_BKSHw.jpg?r=1635866724",
+                "grid": "https://lain.bgm.tv/pic/crt/g/04/a7/102291_crt_BKSHw.jpg?r=1635866724"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 12143,
+                    "name": "山下誠一郎",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/67/99/12143_prsn_f8HZa.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/99/12143_prsn_f8HZa.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/99/12143_prsn_f8HZa.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/67/99/12143_prsn_f8HZa.jpg"
+                    },
+                    "short_summary": "山下 誠一郎（やました せいいちろう、1992年5月21日 - ）は、日本の男性声優。\r\n大沢事務所所属。広島県出身。アミューズメントメディア総合学院声優タレント学科卒業。\r\n\r\n高校卒業後、アミューズメントメディア総合学院へ入学。2012年に洋画『グッド・ドクター 禁断のカルテ』で声優デビューを果たした後、2013年1月から3月にかけて行われた「プロダクション所属学内オーディション」で大沢事務所に合格。同年10月にはテレビアニメ『ワルキューレ ロマンツェ』で主役デビューを果たした。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 102292,
+            "name": "冨樫慶司",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/55/7a/102292_crt_IgrRu.jpg?r=1635866865",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/7a/102292_crt_IgrRu.jpg?r=1635866865",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/7a/102292_crt_IgrRu.jpg?r=1635866865",
+                "grid": "https://lain.bgm.tv/pic/crt/g/55/7a/102292_crt_IgrRu.jpg?r=1635866865"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7498,
+                    "name": "小松未可子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/47/be/7498_prsn_fq3rD.jpg?r=1740107067",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/be/7498_prsn_fq3rD.jpg?r=1740107067",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/be/7498_prsn_fq3rD.jpg?r=1740107067",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/47/be/7498_prsn_fq3rD.jpg?r=1740107067"
+                    },
+                    "short_summary": "小松未可子，1988年11月11日出生，日本女演员、声优、歌手，三重县桑名市出身。所属事务所Hirata Office，偶像团体いもうと前成员之一。\r\n\r\n个人爱好看电影，听歌曲，5岁起开始学习马林巴琴演奏。\r\n从小受《名侦探柯南》很大的影响，成为了仓木麻衣的粉丝，因为憧憬仓木麻衣而加入艺能界。一个人去唱卡拉ok时会命名为仓木祭。家中贴著几张仓木麻衣的海报。而在看了《樱兰高校男公关部》中斋藤彩夏的表演后，意识到自己希望从事声优工作。\r\n\r\n代表作品有《暴力宇宙海贼》的加藤茉莉香，《来自凪之明日》的潮留美海。\r\n\r\n2003年加入偶像团体いもうと，成为其成员之一。\r\n2007年9月，退出いもうと。\r\n2009年11月，移籍到Hirata Office，开始了演员的职业生涯。\r\n2010年4月，首次在TV动画《HEROMAN》中出演乔瑟夫·卡达·乔伊·琼斯一角，正式开始了声优的职业生涯。\r\n2012年4月25日，个人首支单曲《Black Holy》发售，作为歌手出道。\r\n2012年11月7日，个人第二支单曲《冷たい部屋、一人/夏至の果実》发售。\r\n2013年7月24日，第三张单曲《终わらないメロディーを歌いだしました。》发售。\r\n2013年12月25日，第四张单曲《虹の約束》发售。\r\n2014年2月22日，第五张单曲《Sail away》发售。\r\n\r\n2020年5月12日，宣布与同为声优的前野智昭结婚。",
+                    "locked": false
+                },
+                {
+                    "id": 19713,
+                    "name": "八代拓",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c7/20/19713_prsn_7pP47.jpg?r=1529595047",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/20/19713_prsn_7pP47.jpg?r=1529595047",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/20/19713_prsn_7pP47.jpg?r=1529595047",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c7/20/19713_prsn_7pP47.jpg?r=1529595047"
+                    },
+                    "short_summary": "八代 拓（やしろ たく、1993年1月6日 - ）は日本の男性声優。\r\n岩手県出身。日本ナレーション演技研究所出身。ヴィムス所属。\r\n\r\n趣味・特技は野球観戦、ヨーロッパサッカー観戦、バドミントン、フットサル。\r\n野球は小学生時代に習い、バドミントンは中学・高校時代6年間通してやっていた。\r\n左利き。1日6食食べたことがあるほど、たくさん食べる方。\r\n雷が恐いという一面がある。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

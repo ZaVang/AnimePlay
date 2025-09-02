@@ -1,0 +1,122 @@
+{
+    "id": 4212,
+    "name": "机动武斗传G高达",
+    "image_path": "data/images/anime/4212.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "未来世紀（FutureCentury, F.C.）60年、各国コロニー間の覇権をかけてガンダムファイト第13回大会が始まった。主人公 ドモン・カッシュもその1人として、地球をリングにして他の選手たちと闘う。\r\n\r\nしかし彼の真の目的は、祖国であるネオ・ジャパンを裏切り、アルティメットガンダム（デビルガンダム）を奪って失跡した兄、キョウジ・カッシュを探すということであった。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 49,
+    "synergy_tags": [
+        "机战",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "1994-04-01",
+    "rating_rank": 865,
+    "rating_score": 7.5,
+    "rating_total": 1066,
+    "main_character_ids": [
+        6616,
+        9509,
+        15695
+    ],
+    "main_characters": [
+        {
+            "id": 6616,
+            "name": "レイン・ミカムラ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f0/46/6616_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/46/6616_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/46/6616_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f0/46/6616_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4124,
+                    "name": "天野由梨",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7d/c3/4124_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/c3/4124_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/c3/4124_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7d/c3/4124_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "1966年1月5日に京都府京都市伏見区で生まれ、愛知県で育つ。幼い頃は内気で気弱な性格であったが、小学生の時に芝居に興味を持ち、自己主張できるのがお芝居と気が付き、中学生のころに演劇部に入り、少しずつ開放的な性格になる。母親と共に見ていた宝塚の影響もあり、舞台女優志望であったが、『アルプスの少女ハイジ』の再放送を見て感動して以来、声優の仕事にも興味を持ち、声優養成所の無料レッスンに受かったこともあり、声優の道を進むが、ミュージカルのオーディションを受け続けていた。\r\n1985年に本名である吉川智子の名義で、テレビアニメ『昭和アホ草紙あかぬけ一番!』の女生徒A役で声優デビュー。1987年のテレビアニメ『マシンロボ ぶっちぎりバトルハッカーズ』で、パトリシア・ロングフェロー役でレギュラーを担当するも、声優としての仕事と並行してアルバイトも続けていたが、1990年に『私のあしながおじさん』のジュリア・ルートレッジ・ペンデルトンにてレギュラーを得て、ジュリアを演じていくうちに、「これは私にしか出来ない役、声の仕事が私の天職」と自信を持つようになる。以降、徐々に出演作が増え、特に1990年代に入ってからは、様々な作品に声をあてている。さらに、1997年には、自ら企画を立てたドラマCD『マダム・リリーの事件簿』を世に送り出した（『マダム・リリーの事件簿』の企画自体は前年放送していたラジオから立ち上がっていた）。\r\n2000年に声優業から一旦引退するも、2003年8月より復帰。その後、『マシュマロ通信』（ママ役）、『レジェンズ 甦る竜王伝説』（BB役）などに声をあて、現在も現役の声優として活動している。ただし、『それいけ!アンパンマン』のあかちゃんまん、『名探偵コナン』の沖野ヨーコなど、声優業を再開して以降も担当に復帰していないキャラクターもある。\r\n\r\n芸名は姓名判断で付けてもらった名前であり、つくべくしてついた本来の魂の名前とのこと。アイリッシュハープの演奏を特技としている。ハープを弾いていると頭の中の雑念が引いていくからとのこと。千葉耕市からは、「若手にして実力があるということの根源はそのへんにあるのかな」と評されていた。1993年頃に「ゆりっぺ」という愛称が使われていたが、これは林原めぐみによって名付けられたものである。後輩のゆかなを尊敬し、大事にしている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9509,
+            "name": "ドモン・カッシュ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2b/df/9509_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/df/9509_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/df/9509_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2b/df/9509_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3868,
+                    "name": "関智一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/40/94/3868_prsn_24eU6.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/94/3868_prsn_24eU6.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/94/3868_prsn_24eU6.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/40/94/3868_prsn_24eU6.jpg"
+                    },
+                    "short_summary": "日本男性配音员。东京俳优生活协同组合→Atomic Monkey所属。东京都江东区深川出身。以热血激昂的声线闻名，昵称为“チイチ”（ChiIChi, 智一的音读）。\r\n\r\n在机动武斗传G高达的主角选角时，自己参加试音的路上因积雪滑了一跤，心想“这下肯定落选了”结果反而在两天后宣布中选。\r\n非常爱开黄腔，也因此冒犯许多不好此道的女声优，曾因尺度太大被电台高层警告。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 15695,
+            "name": "東方不敗マスター・アジア",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f0/9c/15695_crt_XsIfj.jpg?r=1636629536",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/9c/15695_crt_XsIfj.jpg?r=1636629536",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/9c/15695_crt_XsIfj.jpg?r=1636629536",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f0/9c/15695_crt_XsIfj.jpg?r=1636629536"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4144,
+                    "name": "秋元羊介",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/60/5a/4144_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/5a/4144_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/5a/4144_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/60/5a/4144_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

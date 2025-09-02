@@ -1,0 +1,598 @@
+{
+    "id": 192680,
+    "type": 2,
+    "name": "ポケットモンスター サン＆ムーン",
+    "name_cn": "精灵宝可梦 太阳&月亮",
+    "summary": "小智与皮卡丘新的冒险开始了！新的冒险舞台是自然资源丰富的阿罗拉地区。在阿罗拉地区，这个四处都是蔚蓝的天空和蓝色的大海的地方，等待着小智和皮卡丘的是？新的精灵宝可梦，新的伙伴，以及新的经历……新的冒险旅程终于拉开了帷幕！去吧！全力！大冒险！",
+    "nsfw": false,
+    "locked": false,
+    "date": "2016-11-17",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/8c/a3/192680_uFsyD.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/8c/a3/192680_uFsyD.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/8c/a3/192680_uFsyD.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/8c/a3/192680_uFsyD.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/8c/a3/192680_uFsyD.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "精灵宝可梦 太阳&月亮"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "宠物小精灵 日/月",
+                    "k": null
+                },
+                {
+                    "v": "精灵宝可梦日月",
+                    "k": null
+                },
+                {
+                    "v": "精靈寶可夢 太陽與月亮",
+                    "k": null
+                },
+                {
+                    "v": "Pocket Monsters Sun & Moon",
+                    "k": null
+                },
+                {
+                    "v": "Poketto Monsutā San & mūn",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "146"
+        },
+        {
+            "key": "放送开始",
+            "value": "2016年11月17日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期四、星期日（91话起）"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.tv-tokyo.co.jp/anime/pokemon_sunmoon/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京"
+        },
+        {
+            "key": "其他电视台",
+            "value": "momo親子台"
+        },
+        {
+            "key": "播放结束",
+            "value": "2019年11月3日"
+        },
+        {
+            "key": "导演",
+            "value": "冨安大貴"
+        },
+        {
+            "key": "音乐",
+            "value": "宮崎慎二"
+        },
+        {
+            "key": "Copyright",
+            "value": "©Nintendo･Creatures･GAME FREAK･TV Tokyo･ShoPro･JR Kikaku ©Pokémon"
+        },
+        {
+            "key": "人物原案",
+            "value": "大村祐介、吉田宏信、海野隆雄、渕野大樹、李ヒョンジョン、井部真那、ジェイムスターナー、菜花健作、吉川麻由花、栃木遥、安藤絵美、前田咲子、山本裕輝、にしだあつこ、江尾可奈子、水谷恵、鶴田沙綾、市川春子、竹"
+        },
+        {
+            "key": "原案",
+            "value": "田尻智、増田順一、杉森建"
+        },
+        {
+            "key": "监修",
+            "value": "石原恒和"
+        },
+        {
+            "key": "制作助理",
+            "value": "折方崇志"
+        },
+        {
+            "key": "制作协调",
+            "value": "吉川兆二"
+        },
+        {
+            "key": "企画",
+            "value": "福永晋、浅井認(93-110)→岡本順哉"
+        },
+        {
+            "key": "总导演",
+            "value": "湯山邦彦"
+        },
+        {
+            "key": "副导演",
+            "value": "小平麻紀（第53话-）"
+        },
+        {
+            "key": "系列构成",
+            "value": "松井亜弥"
+        },
+        {
+            "key": "设定",
+            "value": "宝可梦设定：一石小百合、松原徳弘、毛利和昭、佐藤和巳、香月麻衣子、片山美和、田島瑞穂、堤舞 || 设定协力：ゲームフリーク、株式会社ポケモン"
+        },
+        {
+            "key": "人物设定",
+            "value": "中野悟史、安田周平"
+        },
+        {
+            "key": "总作画监督",
+            "value": "中野悟史"
+        },
+        {
+            "key": "美术监督",
+            "value": "武藤正敏"
+        },
+        {
+            "key": "色彩设计",
+            "value": "吉野記通"
+        },
+        {
+            "key": "摄影监督",
+            "value": "折笠裕子"
+        },
+        {
+            "key": "剪辑",
+            "value": "野川仁"
+        },
+        {
+            "key": "音响监督",
+            "value": "三間雅文"
+        },
+        {
+            "key": "制片人",
+            "value": "松山進(1-88)→細谷伸之(89-117)→關口彩香(118-146)、田中茂裕、村椿拓郎(1-19)→田口秀一(20-146)"
+        },
+        {
+            "key": "动画制片人",
+            "value": "加藤浩幸"
+        },
+        {
+            "key": "动画制作",
+            "value": "OLM TEAM KATO"
+        },
+        {
+            "key": "脚本",
+            "value": "松井亜弥、冨岡淳広、面出明美、関根アユミ、米村正二、藤咲淳一、宮田由佳、大久保昌弘、平出尚人"
+        },
+        {
+            "key": "分镜",
+            "value": "冨安大貴、樋口香里、牧野吉高、尼野浩正、浅田裕二、関野昌弘、飯島正勝、高橋知也、吉村文宏、神谷純、高橋ナオヒト、榎本守、小平麻紀、金﨑貴臣、下田正美、毛利和昭、傳沙織、中田誠、若林厚史、齋藤徳明、野田泰宏；宝可问答: 鈴木龍太郎、大和田淳、仲野良、川越一生、小柴純弥、松田真路"
+        },
+        {
+            "key": "演出",
+            "value": "高橋知也、牧野吉高、浅田裕二、仲野良、渡辺正彦、鴫野彰、関野昌弘、飯島正勝、中田誠、鈴木龍太郎、大和田淳、榎本守、小柴純弥、小平麻紀、宮原秀二、佐藤光敏、毛利和昭、傳沙織、上野史博、中村近世、たかたまさひろ、箕ノ口克己、飯村正之、野田泰宏、牧野友映、向山鶴美、黒田幸生、冨安大貴；宝可问答: 川越一生、平野宏樹、松田真路"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "冨安大貴（OP）、浅田裕二（ED）"
+        }
+    ],
+    "volumes": 0,
+    "eps": 146,
+    "total_episodes": 146,
+    "rating": {
+        "rank": 909,
+        "total": 1310,
+        "count": {
+            "one": 5,
+            "two": 0,
+            "three": 2,
+            "four": 13,
+            "five": 41,
+            "six": 125,
+            "seven": 413,
+            "eight": 535,
+            "nine": 115,
+            "ten": 61
+        },
+        "score": 7.5
+    },
+    "collection": {
+        "wish": 219,
+        "collect": 1894,
+        "doing": 340,
+        "on_hold": 219,
+        "dropped": 116
+    },
+    "tags": [
+        {
+            "name": "pokemon",
+            "count": 281
+        },
+        {
+            "name": "游戏改",
+            "count": 213
+        },
+        {
+            "name": "TV",
+            "count": 185
+        },
+        {
+            "name": "精灵宝可梦",
+            "count": 163
+        },
+        {
+            "name": "2016年10月",
+            "count": 162
+        },
+        {
+            "name": "2016",
+            "count": 113
+        },
+        {
+            "name": "OLM",
+            "count": 103
+        },
+        {
+            "name": "日月",
+            "count": 92
+        },
+        {
+            "name": "搞笑",
+            "count": 88
+        },
+        {
+            "name": "日常",
+            "count": 79
+        },
+        {
+            "name": "宝可梦",
+            "count": 55
+        },
+        {
+            "name": "神奇宝贝",
+            "count": 53
+        },
+        {
+            "name": "长篇",
+            "count": 45
+        },
+        {
+            "name": "口袋妖怪",
+            "count": 44
+        },
+        {
+            "name": "富安大贵",
+            "count": 25
+        },
+        {
+            "name": "日本",
+            "count": 18
+        },
+        {
+            "name": "战斗",
+            "count": 17
+        },
+        {
+            "name": "热血",
+            "count": 14
+        },
+        {
+            "name": "童年",
+            "count": 9
+        },
+        {
+            "name": "冒险",
+            "count": 8
+        },
+        {
+            "name": "汤山邦彦",
+            "count": 7
+        },
+        {
+            "name": "オー・エル・エム",
+            "count": 7
+        },
+        {
+            "name": "奇幻",
+            "count": 6
+        },
+        {
+            "name": "原创",
+            "count": 6
+        },
+        {
+            "name": "2016年11月",
+            "count": 5
+        },
+        {
+            "name": "子供向",
+            "count": 5
+        },
+        {
+            "name": "冨安大貴",
+            "count": 4
+        },
+        {
+            "name": "动画",
+            "count": 4
+        },
+        {
+            "name": "松井亜弥",
+            "count": 4
+        },
+        {
+            "name": "Pokémon",
+            "count": 4
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "游戏改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        2010,
+        6154,
+        42228,
+        43812,
+        43813,
+        44764,
+        44765,
+        47391
+    ],
+    "main_characters": [
+        {
+            "id": 2010,
+            "name": "サトシのピカチュウ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/02/94/2010_crt_7rr33.jpg?r=1720977703",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/94/2010_crt_7rr33.jpg?r=1720977703",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/94/2010_crt_7rr33.jpg?r=1720977703",
+                "grid": "https://lain.bgm.tv/pic/crt/g/02/94/2010_crt_7rr33.jpg?r=1720977703"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3906,
+                    "name": "大谷育江",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/27/b6/3906_prsn_xa7NA.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/b6/3906_prsn_xa7NA.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/b6/3906_prsn_xa7NA.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/27/b6/3906_prsn_xa7NA.jpg"
+                    },
+                    "short_summary": "优点是好奇心旺盛。\r\n    兴趣是泡香草浴、读书。\r\n    特技是英语的发音和日本舞蹈。\r\n    喜欢的颜色是白色、粉红色、黑色。\r\n\r\n主要是为少年、少女配音，在一个作品里配一个以上的角色也是有的。在《深渊传奇》中就分别配了伊恩(诚实)、新库(愤怒)、芙萝利安(纯洁)三种个性不同的角色。\r\n\r\n被说是演技声音广泛的其中一名声优。\r\n\r\n由于皮卡丘的声音是全世界共通的，所以就算不知道“大谷育江”这个人名，只要一听到是“皮卡丘的声音”大家就知道了。\r\n\r\n不太记得起来人的名字。\r\n\r\n小学和国中的时候认为加入排球部可以长高吧，就入社了。\r\n\r\n第六届（2011年度）声优奖Kid's Family赏的得奖者（キッズ・ファミリー賞）。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6154,
+            "name": "サトシ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a5/b5/6154_crt_HWSVh.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/b5/6154_crt_HWSVh.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/b5/6154_crt_HWSVh.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a5/b5/6154_crt_HWSVh.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4205,
+                    "name": "松本梨香",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/22/78/4205_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/78/4205_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/78/4205_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/22/78/4205_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本女性配音员、演员、歌手。出身于神奈川县横滨市。\r\n株式会社Matsurica社长、代代木动画学院声优艺人科特别讲师。\r\n\r\n经历\r\n松本梨香的父亲是大众戏剧团团长，因此从小她自己也以舞台演员为目标。但是由于哥哥的去世和自己本身有疾病缠身而无法登上舞台公演，最后因为担心而打消了念头。\r\n后来，松本受到前辈名古屋章的推荐下，参加1988年电视动画《小松君》的角色试音，结果成为她的配音出道作。之后更在1991年电视动画《绝对无敌雷神王》第一次得到主演的机会，从此她多为充满朝气活力的小男孩献声，而最为人熟知的配音作品即是《精灵宝可梦》系列主角小智。除了日本动画外，她还有为珊卓·布拉克、朱丽叶特·刘易斯、茱儿·芭莉摩、帕特里夏·阿奎特等美国现役女星进行日语配音。\r\n歌手活动方面，2000年7月起，她与水木一郎、影山浩宣、坂本英三、远藤正明共5人结成“JAM Project”。同时是首位为“超人力霸王”唱片尾曲和“假面骑士”系列唱主题曲的女歌手。另外与市川吉之、古道圭一组成“TRiCYCLE”，担任过乐团主唱。单曲“目标是精灵宝可梦大师”顺着精灵宝可梦的热潮，创下了发售185万张的纪录，这也是松本唯一破百万销量的声优音乐作品。\r\n2008年4月7日，暂时从JAM Project的活动中退出。\r\n2015年1月5日，宣布离开所属20年的Sunmusic Production，成为自由身。同年4月1日加入amuleto。\r\n2016年12月1日，再度宣布已于11月30日离开amuleto，又成为自由身。\r\n2018年5月16日（父亲去世的这一天），自行就任社长，成立个人事务所“株式会社Matsurica”专门进行演艺事业管理。\r\n2019年3月1日，松本演唱的歌曲‘目标是精灵宝可梦大师’从平成动画歌曲大赏作品赏（1989年 - 1999年）中选出。\r\n同年10月21日，受邀任命担任“日本酷大使（クールジャパン·アンバサダー）”。\r\n\r\n个人生活\r\n兴趣有旅行（温泉巡礼）。特长是日本舞、画图、掷标枪。拿手的运动有排球、手球、游泳、滑雪（2级）。爱车是BMW318Ci 1995cc。\r\n此外同样是神奈川县出身的白鸟由里对她以“おやび～ん”作昵称，相反的松本泽对白鸟以“こびん”称呼。\r\n井上瑶去世后，松本继承了一些配音的角色（有《游☆戏☆王 怪兽之决斗》的獏良了、〈高达系列〉的Haro等）。另外，松本在她自己的出道作《小松君》曾经与井上共演（松本演松野六胞胎中的三男轻松；井上演长男、作品主角松野小松）。\r\n2018年12月22日开始在《声优ってなんだっけ》进行对谈（初回嘉宾：三矢雄二）。其意旨在对配音员有抱负的志愿者传达演技和表达的重要性。\r\n山寺宏一发出唐老鸭的声音是她所教出来的。\r\n在自身主演的动画《勇者传说达钢》的录音室现场有三支麦克风，其中有一支专门为松本调低了麦克风的音量。还有，她是发出声音时全身就会出声音的类型，只要一动就会发出说话的声音。\r\n\r\n与《精灵宝可梦（宝可梦）》有关的事\r\n自演出主角小智以来，让她印象深刻的剧情是无印时期的“再见巴大蝴”和钻石&珍珠时期的“终结的宿敌对战！小智对真司！”。\r\n当初，松本本来是参加小智的对手小茂的录音（小茂的声音由小林优子担当），但是试镜会结束后，工作人员建议她也来演小智的声音，就这样成为了自身长年担任的配音代表作。但是导演汤山邦彦说，松本是从一开始就被提名为小智声音的人选，外界似乎以为她先演小茂的角色所以才会入选而被误解。\r\n她的喉结是长年担任小智的声音而突起的。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 42228,
+            "name": "リーリエ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/26/69/42228_crt_3knoY.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/26/69/42228_crt_3knoY.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/26/69/42228_crt_3knoY.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/26/69/42228_crt_3knoY.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4905,
+                    "name": "真堂圭",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c7/92/4905_prsn_JKrN3.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/92/4905_prsn_JKrN3.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/92/4905_prsn_JKrN3.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c7/92/4905_prsn_JKrN3.jpg"
+                    },
+                    "short_summary": "真堂圭(しんどう けい Shindou Kei，1984年9月10日-)，日本女性声优。AXL ONE所属。千叶县出生。 \r\n本名·旧艺名 斋藤圭(さいとう けい Saito Kei))。室女座，血型A型，身高151cm。\r\n初次亮相前\r\nTV动画『SPEED GRAPHER 速写者（极速摄杀）』的女主人公·天王州 神楽(てんのうず かぐら)角色大众公开招募试听会(应募总数2056人，包括声优・一般群众)，因年长三岁的姐姐推荐而参加应募。该声优出道之前为计算机系专门学生兼cosplay扮演者(艺名为涩谷翼，央登等)，落选立场讲是把此次试听当作作为学生的最后回忆，据说（落选后）打算做普通工作。仅在大众公开招募，没有从属于声优养成所及剧团的经验 而做了合格的声优例子极为罕见。 \r\n在试听会上自我介绍「做过网络声优？」,不过真伪不明(速写者特典DVD可以确认)。 \r\n初次亮相\r\n同试听，经第1次・第2次审査 选出了以斋藤为首的 仲井绘里香・池田沙耶香・藤田咲子（现：藤田咲）・宫崎羽衣・小滝いづみ・树元オリエ・齐藤智美・井口裕香・曽田光星 10名，发布在同作品官方网站上的公民投票的最终审査随之进行。以公民投票的得票数最后一名而累计为审査结果决定起用斋藤。 \r\n普通人因被主人公天王州神乐这样的角色而提拔的灰姑娘初次亮相 同期动画片作品「除了解救齐藤圭的速写者『快乐超人ユーフォリア』」也有担任个性配音。从2005年3月开始从属BaoBab Production旗下。 \r\n改名 \r\n试听会时所用是本名,不过，初次亮相时把名字「斋」简略化做斉藤 圭（さいとう けい）。大约半年后，2005年10月1日正式改名为真堂圭(しんどう けい)。并以此改名做了广播「元・斉藤圭のスピードグラファー『快楽超人ユーフォリア』皆様の不景気を救います!」和不放弃改名的理由,不过，「特别没有意义」不清楚。「スピグラ」DVD优惠映像事务所 被认为是因为地方的意向(防止印象降低),不过，也有为了避开与在动画·游戏？业界同音的齐藤K混淆？等原因。可是『いぬかみっ!』に新堂ケイ、『ef - a fairy tale of the two.』新藤景和同音的人物都有一同登场(有关演员前者为水树奈々、后者为冈田纯子)。 \r\n其他\r\n『SPEED GRAPHER』惊艳的初次亮相后、通过『ワンワンセレプー それゆけ!彻之进』里的犬山ルミ『梦使い』里的三岛燐子、『乙女はお姉さまに恋してる』里的小鸟游圭逐渐走向正规声优的道路\r\n「スピグラ」广播剧内的话题变成了グダグダ的番组进行。但是，グダグダ通过非常坦率的好感能拿的东西也有，抽出肩膀力量，跟听众近距离的讲话，获得的良好评价也很多。 \r\n以前开设的个人网站(「hisapachi」)，紧接初次亮相后关闭(在别的网站做角色扮演时的照片也保留着。顺便一说与井上麻里奈关系很好)。 \r\n如果重新投胎好象想成为瑞典人。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 43812,
+            "name": "スイレン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3d/53/43812_crt_9McWC.jpg?r=1499624369",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/53/43812_crt_9McWC.jpg?r=1499624369",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/53/43812_crt_9McWC.jpg?r=1499624369",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3d/53/43812_crt_9McWC.jpg?r=1499624369"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 21985,
+                    "name": "菊地瞳",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7c/e7/21985_prsn_9REts.jpg?r=1520258123",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/e7/21985_prsn_9REts.jpg?r=1520258123",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/e7/21985_prsn_9REts.jpg?r=1520258123",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7c/e7/21985_prsn_9REts.jpg?r=1520258123"
+                    },
+                    "short_summary": "【出身地】静岡県\r\n【出身校】立命館大学経営学部国際経営学科卒業\r\n【経　歴】アクセント附属養成所シャイン14期生\r\n【資　格】日商簿記2級\r\n【趣　味】読書、ジョギング\r\n【特　技】琴、バレーボール",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 43813,
+            "name": "マオ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/82/7a/43813_crt_FawSZ.jpg?r=1499624353",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/7a/43813_crt_FawSZ.jpg?r=1499624353",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/7a/43813_crt_FawSZ.jpg?r=1499624353",
+                "grid": "https://lain.bgm.tv/pic/crt/g/82/7a/43813_crt_FawSZ.jpg?r=1499624353"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13164,
+                    "name": "上田麗奈",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c5/14/13164_prsn_KWnmW.jpg?r=1752543801"
+                    },
+                    "short_summary": "日本的女性声优，富山县出身，所属事务所为81 Produce。\r\n初中时同属演剧部的女生有声优志向者，尊敬她的上田觉得“声优肯定是很美妙的职业”，又担心“自己的性格很奇怪”，本来以美术大学为志愿的她最终在声优试音报名结束前三天才报名。\r\n2011年，在第5回81 Audition中获得准优秀奖，之后加入81 Produce。\r\n获第九届声优奖新人女声优奖。\r\n是声优组合Anisonia的成员之一。\r\n在电视动画《摸索吧！部活剧》中，一人分饰18角。\r\n绘画力极强，《摸索吧！部活剧》的试音中因为绘画好而被选中，后来也在花舞少女广播中绘画并得到采用，还担任了《骇客娃娃》第五话的Endcard。\r\n不擅长运动。\r\n在各种场合被人说“凡骨”，自己的性格也很天然。\r\n自称只要对她好，就能喜欢上那个人。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 44764,
+            "name": "マーマネ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/67/0b/44764_crt_n5oXX.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/0b/44764_crt_n5oXX.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/0b/44764_crt_n5oXX.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/67/0b/44764_crt_n5oXX.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 25527,
+                    "name": "武隈史子",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/87/0d/25527_prsn_MmaeZ.jpg?r=1507641728",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/0d/25527_prsn_MmaeZ.jpg?r=1507641728",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/0d/25527_prsn_MmaeZ.jpg?r=1507641728",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/87/0d/25527_prsn_MmaeZ.jpg?r=1507641728"
+                    },
+                    "short_summary": "武隈史子出生于东京都，是日本女性演员和声优，隶属于ACT JP事务所。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 44765,
+            "name": "カキ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e1/16/44765_crt_63Zn3.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/16/44765_crt_63Zn3.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/16/44765_crt_63Zn3.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e1/16/44765_crt_63Zn3.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9953,
+                    "name": "石川界人",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/af/c4/9953_prsn_O0Dsl.jpg"
+                    },
+                    "short_summary": "日本男性声优。隶属于Stay Luck，出生于东京都。\r\n\r\n趣味\t読書、一人劇\r\n特技\t水泳、ウィンタースポーツ\r\n経歴\tプロ・フィット声優養成所　卒\r\n2014年第八回声優アワードにて「新人男優賞」受賞。\r\n2020年第十四回声優アワードにて「助演男優賞」受賞。\r\n2022年2月1日、ステイラックへ移籍。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 47391,
+            "name": "ロトム図鑑",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b0/27/47391_crt_7mAaR.jpg?r=1476499383",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/27/47391_crt_7mAaR.jpg?r=1476499383",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/27/47391_crt_7mAaR.jpg?r=1476499383",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b0/27/47391_crt_7mAaR.jpg?r=1476499383"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4254,
+                    "name": "浪川大輔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/70/c3/4254_prsn_99K43.jpg?r=1631019573"
+                    },
+                    "short_summary": "浪川 大輔（なみかわ だいすけ、1976年4月2日 - ） は、日本の声優、俳優、歌手、ナレーター。ステイラック代表取締役。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "id": 7774,
+    "name": "高橋啓介",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/61/db/7774_crt_9HT96.jpg?r=1485955747",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/db/7774_crt_9HT96.jpg?r=1485955747",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/db/7774_crt_9HT96.jpg?r=1485955747",
+        "grid": "https://lain.bgm.tv/pic/crt/g/61/db/7774_crt_9HT96.jpg?r=1485955747"
+    },
+    "summary": "高桥凉介的弟弟，与哥哥凉介两人被称为高桥兄弟闻名，常被汽车杂志报道。所属车队是RED SUNS（后期是Project D），并且是Red Suns车队的第二把交椅，Project D的上坡赛代表。主场是赤城山，座驾是Mazda Efini RX-7 Type-R(FD-3S)\r\n\r\n性格特点：专一、外向、没耐性、冲动（骂脏话、踹护拦）、执著和不服输",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高桥启介"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "高橋 啓介"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たかはし けいすけ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takahashi Keisuke"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "183cm"
+        },
+        {
+            "key": "体重",
+            "value": "62kg"
+        },
+        {
+            "key": "出生地",
+            "value": "群马县"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 7
+    },
+    "anime_ids": [
+        3816,
+        46312
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": 56974,
+    "name": "蓮",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/96/b0/56974_crt_I8xoC.jpg?r=1534657654",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/b0/56974_crt_I8xoC.jpg?r=1534657654",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/b0/56974_crt_I8xoC.jpg?r=1534657654",
+        "grid": "https://lain.bgm.tv/pic/crt/g/96/b0/56974_crt_I8xoC.jpg?r=1534657654"
+    },
+    "summary": "髪は薄いピンク色でやや巻毛。\r\nお洒落やファッションについて明るく、裁縫が得意。\r\n「優雅でいること」をモットーとしているが、表に出ない“心の声”では罵詈雑言を吐いている。\r\n幼い頃に男の子にいじめられた影響で今でも男が苦手。\r\n棗とは幼馴染で彼女ことは「なっちゃん」と呼び、彼女に恋心を抱いている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "れん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ren"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 31
+    },
+    "anime_ids": [
+        211934
+    ]
+}

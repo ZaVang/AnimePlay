@@ -1,0 +1,44 @@
+{
+    "id": 18861,
+    "name": "亜門",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/dc/b8/18861_crt_PBOji.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/b8/18861_crt_PBOji.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/b8/18861_crt_PBOji.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dc/b8/18861_crt_PBOji.jpg"
+    },
+    "summary": "男主角，25歲，羅冰的搭檔，是專家級的獵人，個性冷靜，為風羅的異母兄弟，也是真崎瞳子的前男友。由於母親為巫人，從小就失去了家族的溫暖。據說他曾毫不留情的捕獵了過去的搭檔，所以在STN-J的獵人中留下了陰影。同爲巫人血統的繼承者，他對應該如何對待羅冰也是非常的疑惑。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "亚门"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あもん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 3
+    },
+    "anime_ids": [
+        1951
+    ]
+}

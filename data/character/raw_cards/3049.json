@@ -1,0 +1,68 @@
+{
+    "id": 3049,
+    "name": "猿飛あやめ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ed/37/3049_crt_1tdtj.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/37/3049_crt_1tdtj.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/37/3049_crt_1tdtj.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ed/37/3049_crt_1tdtj.jpg"
+    },
+    "summary": "忍者，原御庭番众的精英，现在为自由雇用杀手，昵称“小猿”（港译“小幸”）。任务中偶然闯入万事屋，疯狂迷恋上坂田银时，其跟踪狂的程度不下于近藤。是个超级被虐狂（M）。喜欢纳豆。严重近视，没有眼镜就什么都看不见，甚至影响其他感官。与阿妙互为天敌，两人经常有恶言与肢体冲突。\r\n名字是参照“真田十勇士”之一的忍者“猿飞佐助”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "猿飞菖蒲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文昵称",
+                    "v": "さっちゃん"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さるとび あやめ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sarutobi Ayame"
+                },
+                {
+                    "k": "昵称",
+                    "v": "小猿"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月2日"
+        },
+        {
+            "key": "身高",
+            "value": "169cm"
+        },
+        {
+            "key": "体重",
+            "value": "52kg"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 2,
+    "stat": {
+        "comments": 6,
+        "collects": 60
+    },
+    "anime_ids": [
+        232884
+    ]
+}

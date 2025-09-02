@@ -1,0 +1,119 @@
+{
+    "id": 10379,
+    "name": "装甲骑兵VOTOMS",
+    "image_path": "data/images/anime/10379.jpg",
+    "points": 8.1,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "阿斯特拉基斯银河百年战争末期，美鲁基亚军士兵齐里古·丘比所转属的部队突然袭击了友军的秘密基地。不知情的齐里古在无意间看见了一名躺在特殊保存装置中的女性。但是齐里古却被同伴出卖，被美鲁基亚军逮捕。凭着自身的勇气和胆识，齐里古逃出了美鲁基亚军的监狱。之后漂泊在外的齐里古为了解开自己身世之谜，为了寻找出卖自己的幕后黑手和自己所爱的人展开了战斗……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 52,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "1983-04-01",
+    "rating_rank": 210,
+    "rating_score": 8.1,
+    "rating_total": 550,
+    "main_character_ids": [
+        13128,
+        13129,
+        13142
+    ],
+    "main_characters": [
+        {
+            "id": 13128,
+            "name": "キリコ・キュービィー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/17/02/13128_crt_IMkaC.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/02/13128_crt_IMkaC.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/02/13128_crt_IMkaC.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/17/02/13128_crt_IMkaC.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 1555,
+                    "name": "郷田ほづみ",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b5/02/1555_prsn_DDOJ3.jpg?r=1574056733",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/02/1555_prsn_DDOJ3.jpg?r=1574056733",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/02/1555_prsn_DDOJ3.jpg?r=1574056733",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b5/02/1555_prsn_DDOJ3.jpg?r=1574056733"
+                    },
+                    "short_summary": "日本の声優、俳優、音響監督。湘南アルファロメオクラブ会長。尾木プロ THE NEXT所属。\r\n\r\n東京都出身。神奈川県平塚市在住。身長176cm、体重60kg。血液型はAB型。神奈川県立小田原高等学校、玉川大学文学部芸術学科演劇学専攻卒業。\r\n\r\n1981年、富山敬に憧れて「第3回アマチュア声優・ドラマ・コンテスト」に応募して入賞する。主催社であるニッポン放送のドン上野に「君、やってみないか」と声をかけられ、『夜のドラマハウス』でデビューする。芸名「郷田ほづみ」はドン上野による命名。\r\n\r\n1983年に平光琢也、赤星昇一郎の3人で結成したお笑いトリオ「怪物ランド」で『お笑いスター誕生!!』に出場し、10週勝ち抜きチャンピオンとなる。\r\n\r\n同年、テレビアニメ『装甲騎兵ボトムズ』にキリコ・キュービィー役で出演する。その後、怪物ランドの仕事も多忙となり、徐々に声優の仕事から離れていくが、OVA『銀河英雄伝説』の外伝が制作されることとなった際、同作の登場人物であるヤン・ウェンリー役を1995年に死去した富山敬に代わって演じて以降、再び声優の仕事に戻る。\r\n\r\nその後も数々のアニメに出演するほか、テレビドラマなどにもしばしば出演している。\r\n\r\nアニメの音響監督も手がけつつ、1999年には「湘南アクターズスクール」を設立する。湘南テアトロ☆デラルテ（旧：湘南アクターズ）、ひらり、空中分解。、羽衣1011など、数々の劇団において芝居の演出も行なっている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13129,
+            "name": "ファンタム・レディ（フィアナ）",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/62/7b/13129_crt_37Eh8.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/7b/13129_crt_37Eh8.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/7b/13129_crt_37Eh8.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/62/7b/13129_crt_37Eh8.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 14191,
+                    "name": "弥永和子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f2/74/14191_prsn_YE1Ge.jpg?r=1393940434",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/74/14191_prsn_YE1Ge.jpg?r=1393940434",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/74/14191_prsn_YE1Ge.jpg?r=1393940434",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f2/74/14191_prsn_YE1Ge.jpg?r=1393940434"
+                    },
+                    "short_summary": "日本の女優・声優。福岡県出身。本名は大塚 和子（おおつか かずこ）、旧姓は弥永。血液型はO型。\r\n\r\n1963年の第11期東映ニューフェイスに合格し、東映へ入社。同期には堀田真三・島ひろ子がいる。テアトル・エコー、マウスプロモーションを経て、最終所属は81プロデュース。\r\n\r\n戸田恵子と並び、シガニー・ウィーバーとジェイミー・リー・カーティス両者の吹き替えを経験した数少ない声優の1人（シガニーは最多担当であり、実質持ち役だった）。スーザン・サランドンなどの吹き替えも担当した。\r\n\r\n夫は声優の大塚芳忠。『特捜刑事マイアミヴァイス』『フルハウス』には夫婦で声の出演をしている。\r\n\r\n2014年11月1日、敗血症のため死去。67歳没。",
+                    "locked": false
+                },
+                {
+                    "id": 27065,
+                    "name": "梨羽侑里",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/68/c7/27065_prsn_zOuZX.jpg?r=1738605708",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/c7/27065_prsn_zOuZX.jpg?r=1738605708",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/c7/27065_prsn_zOuZX.jpg?r=1738605708",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/68/c7/27065_prsn_zOuZX.jpg?r=1738605708"
+                    },
+                    "short_summary": "放送表現教育センター、青二プロダクションに所属していた。東京都出身。立教大学文学部卒業。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13142,
+            "name": "ATM-09-ST",
+            "type": 2,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/dc/24/13142_crt_4IT99.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/24/13142_crt_4IT99.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/24/13142_crt_4IT99.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/dc/24/13142_crt_4IT99.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

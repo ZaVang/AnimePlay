@@ -1,0 +1,73 @@
+{
+    "id": 28580,
+    "name": "赤城みりあ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/44/d8/28580_crt_V4522.jpg?r=1682438140",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/d8/28580_crt_V4522.jpg?r=1682438140",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/d8/28580_crt_V4522.jpg?r=1682438140",
+        "grid": "https://lain.bgm.tv/pic/crt/g/44/d8/28580_crt_V4522.jpg?r=1682438140"
+    },
+    "summary": "于池袋区域首次出场。黑色中短发，束著短短的双马尾小女孩。\r\n活泼爽朗，好奇心旺盛，喜欢与人聊天。\r\n喜欢与人聊天的她，能与不同人交流。是唯一能理解神崎兰子说话的人。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "赤城米莉亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あかぎ みりあ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Akagi Miria"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月14日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "140cm"
+        },
+        {
+            "key": "体重",
+            "value": "36kg"
+        },
+        {
+            "key": "BWH",
+            "value": "75/55/78"
+        },
+        {
+            "key": "年龄",
+            "value": "11岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 14,
+    "stat": {
+        "comments": 76,
+        "collects": 203
+    },
+    "anime_ids": [
+        376703,
+        130231
+    ]
+}

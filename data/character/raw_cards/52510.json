@@ -1,0 +1,84 @@
+{
+    "id": 52510,
+    "name": "羽沢つぐみ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ec/ff/52510_crt_D2tT3.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ec/ff/52510_crt_D2tT3.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ec/ff/52510_crt_D2tT3.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ec/ff/52510_crt_D2tT3.jpg"
+    },
+    "summary": "乐队中最最普通的女孩子，但是正因为普通的关系，是一个努力家，\r\n无论多小的事都不会放弃。是成员们的心灵支柱。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "羽泽鸫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "はざわ つぐみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hazawa Tsugumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月7日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "担当",
+            "value": "键盘手"
+        },
+        {
+            "key": "星座",
+            "value": "摩羯座"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "妈妈做的蛋糕"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "黑咖啡"
+        },
+        {
+            "key": "兴趣",
+            "value": "收集入浴剂"
+        },
+        {
+            "key": "所属",
+            "value": "Afterglow"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 7,
+    "stat": {
+        "comments": 16,
+        "collects": 47
+    },
+    "anime_ids": [
+        246431
+    ]
+}

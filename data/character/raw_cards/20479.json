@@ -1,0 +1,56 @@
+{
+    "id": 20479,
+    "name": "水嶋沙依理",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/94/69/20479_crt_08x1N.jpg?r=1611153838",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/94/69/20479_crt_08x1N.jpg?r=1611153838",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/94/69/20479_crt_08x1N.jpg?r=1611153838",
+        "grid": "https://lain.bgm.tv/pic/crt/g/94/69/20479_crt_08x1N.jpg?r=1611153838"
+    },
+    "summary": "通称「沙伊」。私立藤崎女子中学3年级生，学生会会计。超拜金。有些诸如因此爱财如命所以当了会计的传闻。对“研究”是否有兴趣则不得而知。冷淡腹黑型，在学生会负责吐槽和戏弄人。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "水嶋沙依理"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みずしま さより"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月4日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 4,
+    "stat": {
+        "comments": 7,
+        "collects": 11
+    },
+    "anime_ids": [
+        58850
+    ]
+}

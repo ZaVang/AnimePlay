@@ -1,0 +1,52 @@
+{
+    "id": 14953,
+    "name": "深堀百合香",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7b/64/14953_crt_Mzztt.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/64/14953_crt_Mzztt.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/64/14953_crt_Mzztt.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7b/64/14953_crt_Mzztt.jpg"
+    },
+    "summary": "薫達の上級生。ミステリアスな雰囲気を持つ美少女。薫・千太郎・律子が3人で遊びに行った時、不良に絡まれているところを千太郎に助けられる。淳一のことが好き。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "深堀百合香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ふかほり ゆりか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fukahori Yurika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://ja.wikipedia.org/wiki/%E5%9D%82%E9%81%93%E3%81%AE%E3%82%A2%E3%83%9D%E3%83%AD%E3%83%B3"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 13
+    },
+    "anime_ids": [
+        29426
+    ]
+}

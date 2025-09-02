@@ -1,0 +1,522 @@
+{
+    "id": 130234,
+    "type": 2,
+    "name": "グリザイアの楽園",
+    "name_cn": "灰色的乐园",
+    "summary": "风见雄二，救赎了美滨学园的五个少女的心灵。\r\n但他的内心，依然阴云密布，难以解脱。\r\n \r\n当雄二回顾自己一路走来的日子时，\r\n是什么养育了自己，塑造了自己？\r\n在与种种事物的邂逅之中，得到了什么，又失去了什么？\r\n \r\n当度过这段无比黑暗，却又无可替代的时间之后，\r\n雄二终将面对内心深处暗藏的，黑暗的真面目。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2015-04-19",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/59/29/130234_11gjt.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/59/29/130234_11gjt.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/59/29/130234_11gjt.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/59/29/130234_11gjt.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/59/29/130234_11gjt.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "灰色的乐园"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Grisaia no Rakuen",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "10"
+        },
+        {
+            "key": "放送开始",
+            "value": "2015年4月19日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.grisaia-anime.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX"
+        },
+        {
+            "key": "其他电视台",
+            "value": "BS11 / KBS京都 / サンテレビ / ニコニコ生放送"
+        },
+        {
+            "key": "播放结束",
+            "value": "2015年6月21日"
+        },
+        {
+            "key": "导演",
+            "value": "天衝"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "URA AC-Promenade（OP、ED2）、江畑諒真（ED1）"
+        },
+        {
+            "key": "原作",
+            "value": "Front Wing"
+        },
+        {
+            "key": "人物设定",
+            "value": "渡辺明夫"
+        }
+    ],
+    "volumes": 0,
+    "eps": 10,
+    "total_episodes": 15,
+    "rating": {
+        "rank": 1352,
+        "total": 4192,
+        "count": {
+            "one": 4,
+            "two": 6,
+            "three": 7,
+            "four": 30,
+            "five": 120,
+            "six": 559,
+            "seven": 1693,
+            "eight": 1366,
+            "nine": 266,
+            "ten": 141
+        },
+        "score": 7.3
+    },
+    "collection": {
+        "wish": 1703,
+        "collect": 7258,
+        "doing": 255,
+        "on_hold": 260,
+        "dropped": 107
+    },
+    "tags": [
+        {
+            "name": "GAL改",
+            "count": 1019
+        },
+        {
+            "name": "后宫",
+            "count": 873
+        },
+        {
+            "name": "2015年4月",
+            "count": 594
+        },
+        {
+            "name": "TV",
+            "count": 509
+        },
+        {
+            "name": "灰色的乐园",
+            "count": 448
+        },
+        {
+            "name": "游戏改",
+            "count": 385
+        },
+        {
+            "name": "灰色系列",
+            "count": 365
+        },
+        {
+            "name": "8-Bit",
+            "count": 349
+        },
+        {
+            "name": "2015",
+            "count": 326
+        },
+        {
+            "name": "恋爱",
+            "count": 322
+        },
+        {
+            "name": "灰色的果实",
+            "count": 139
+        },
+        {
+            "name": "8bit",
+            "count": 117
+        },
+        {
+            "name": "灰色的迷宫",
+            "count": 78
+        },
+        {
+            "name": "渡边明夫",
+            "count": 77
+        },
+        {
+            "name": "校园",
+            "count": 73
+        },
+        {
+            "name": "战斗",
+            "count": 69
+        },
+        {
+            "name": "天冲",
+            "count": 28
+        },
+        {
+            "name": "天衝",
+            "count": 27
+        },
+        {
+            "name": "日本",
+            "count": 26
+        },
+        {
+            "name": "樱井孝宏",
+            "count": 26
+        },
+        {
+            "name": "续作",
+            "count": 21
+        },
+        {
+            "name": "卖肉",
+            "count": 13
+        },
+        {
+            "name": "2015年",
+            "count": 12
+        },
+        {
+            "name": "渡辺明夫",
+            "count": 10
+        },
+        {
+            "name": "2015春",
+            "count": 9
+        },
+        {
+            "name": "倉田英之",
+            "count": 9
+        },
+        {
+            "name": "仓田英之",
+            "count": 9
+        },
+        {
+            "name": "灰色三部曲",
+            "count": 9
+        },
+        {
+            "name": "エイトビット",
+            "count": 8
+        },
+        {
+            "name": "剧情",
+            "count": 7
+        }
+    ],
+    "meta_tags": [
+        "后宫",
+        "TV",
+        "恋爱",
+        "日本",
+        "游戏改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        10969,
+        10970,
+        10971,
+        10972,
+        10973,
+        10974,
+        10976,
+        11856,
+        15027
+    ],
+    "main_characters": [
+        {
+            "id": 10969,
+            "name": "榊由美子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/74/1e/10969_crt_BZHun.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/74/1e/10969_crt_BZHun.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/74/1e/10969_crt_BZHun.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/74/1e/10969_crt_BZHun.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4832,
+                    "name": "田中涼子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0a/93/4832_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/93/4832_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/93/4832_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0a/93/4832_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "田中凉子（7月28日－）是一名日本女性声优。东京都出身。以前是ARTSVISION、Office森（预备）所属。日本播音演技研究所出身。\r\n\r\n辛いものとラッキョウが苦手。\r\n据本人说，萝莉系的角色很难应付，而豪爽的姐姐系的角色和她本性相似。 \r\n与樱井浩美关系亲近。\r\n父母拥有寿司店，小的时候好像用吃过咖喱醋饭。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10970,
+            "name": "周防天音",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b5/5c/10970_crt_lnq7l.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/5c/10970_crt_lnq7l.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/5c/10970_crt_lnq7l.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b5/5c/10970_crt_lnq7l.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5020,
+                    "name": "田口宏子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8c/3a/5020_prsn_tP7Ll.jpg?r=1636505739",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/3a/5020_prsn_tP7Ll.jpg?r=1636505739",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/3a/5020_prsn_tP7Ll.jpg?r=1636505739",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8c/3a/5020_prsn_tP7Ll.jpg?r=1636505739"
+                    },
+                    "short_summary": "田口 宏子（たぐち ひろこ、1974年3月29日 - ）は、日本の女性声優。東京俳優生活協同組合所属。俳協ボイスアクターズスタジオ第8期生（同期に諏訪部順一）。神奈川県出身。おひつじ座。\r\n\r\n夏野 こおり（なつの こおり）は、日本の女性声優。主にアダルトゲームで活動している。\r\n\r\n芸名の由来は、名字は「夏が好き」、名前は「他の人が付けなさそうなのにしたかった」とのこと。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10971,
+            "name": "松嶋みちる",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/81/3a/10971_crt_X16hh.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/3a/10971_crt_X16hh.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/3a/10971_crt_X16hh.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/81/3a/10971_crt_X16hh.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3851,
+                    "name": "水橋かおり",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d1/01/3851_prsn_V23VU.jpg?r=1500667711",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d1/01/3851_prsn_V23VU.jpg?r=1500667711",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d1/01/3851_prsn_V23VU.jpg?r=1500667711",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d1/01/3851_prsn_V23VU.jpg?r=1500667711"
+                    },
+                    "short_summary": "日本女性配音员。隶属于ARTSVISION。星座为处女座，有一个弟弟。\r\n\r\n从小开始就很喜欢朗读书籍，特别是台词的部分。在国文课上念课文中的台词时会念的特别认真。在中学时得知有声优这个职业，从此便以成为声优为志愿。\r\n1992年8月，在アニメディア・アニメV主办的以声优、动画歌手志愿者为主的比赛“DRACON'92”中获得了准优胜奖。\r\n1993年3月，在出身地的高中毕业后便独自一人前往东京。一边做着类似于在游戏中心中的广播员的工作，一边经过了俳协ボイスアクターズスタジオ、日本ナレーション演技研究所等养成所的培训后，加入了事务所ARTSVISION。\r\n出道作品为1996年3月25日发售的DramaCD“ワルキューレの伝说 外伝 ローザの冒険”。这时还是ARTSVISION的新人女性声优组合“フェアリーズ”的其中一人。而在同年PC-FX游戏“ファイアーウーマン缠组”的公开试镜中落选。从出道开始有一段时间一直是处于角色时有时无的状况。\r\n在2000年10月的机巧奇传ヒヲウ戦记中终于获得了动画中首次演出的固有角色“マチ”、在次年NHK动画的カスミン中则获得了第一次的主角“春野カスミ”，而后开始获得知名度。\r\n\r\n从进入2000年后开始就没在看电视。无法确切得知是从何时开始的，据猜测大约是在2000～2005年之间。情报源多来自于电车上。因此对于正在流行的话题、发生的事情都不太清楚。在听到后藤邑子愚人节时说的“2008年的奥林匹克好像要停止举行”的谎话后，并不是惊讶于“要中止吗”而是惊讶于“今年已经是奥林匹克了啊”。\r\n基本上被叫什么称呼都不会有太大的反感，但只有对于被叫“かおりちゃん”有着极大的厌恶感。不过也是有例外。例如在女友伴身边的广播节目中曾被丹下樱多次的称呼“かおりちゃん”却完全没表现出厌恶的感觉。而其原因则是因为本人是丹下樱的粉丝。在女友伴身边的广播节目中，只要有丹下樱当来宾就会变的十分沉默（为了能好好享受丹下樱的声音）、甚至还会做出发出奇怪的笑声、要求丹下樱做两次自我介绍等奇特的举动，粉丝们通常称呼这种状态的水桥为“デレハス”。\r\n有收集人偶的兴趣，收集的多为女孩子的人偶，就本人所说已经超过100个以上了。\r\n很在意自己的身高。多次在女友伴身边的广播节目中提起身高的话题时说过“在我想像中的自己是个180公分的帅哥”而被吐槽“那是完全不同的生物吧”，在问到“所以水桥的身高是多少”的时候则迅速的回答了“我不想说”。\r\n给水桥取“ミズハス”这个昵称的始祖是阿澄佳奈。\r\n极其容易害羞。在君吻的广播节目中被广桥凉说“我最近发现啊，每次一放这个BGM时，水桥就会跟着摇动身体呢”而害羞的发怒大喊“可恶的广桥！”并提起过，自己有在玩电视游戏时被父亲指出“你是会跟着游戏摇的类型啊”而和父亲吵起来的事情过。\r\n家中成员有双亲和一个弟弟，且有养一只灰白色的猫。不过在江ノ岛ベイビィ的广播节目中被问起猫的名字时则以“可能会被当成捏他叫”为理由而拒绝回答。\r\n阿澄佳奈在向阳素描的广播节目中，被チョー问起“对水桥的印象是什么”时回答了“ミズハス在我的心中是个萌系角色”\r\n十分受日本一ソフトウェア的重用。在魔界战记系列游戏中最多演出了6人的固有角色以及其他路人角色，其他相关作品也几乎都出演了主要角色，甚至在超次元战记 战机少女中饰演了日本一ソフトウェア的拟人化角色日本一ちゃん。\r\n属于对演出角色及作品深入考察理解的类型。因其出色的演技及多彩的声线而被许多人称为“困ったときの水桥”。\r\n十分擅长绘画。因为中学时没有漫画研究社类型的社团，为了想画插画而参加了美术部，也在君吻的广播节目中提到，自己曾在上课时偷画过三国志的漫画。更在现视研的特装版第九卷漫画中挑战了画附录漫画。\r\n在カスミン、向阳素描中有即兴作曲的经验。\r\n喜欢特摄。有教过阿澄佳奈太阳战队太阳火神的决定姿势。\r\n和父亲长的很像。在‘君のぞラジオPresents アカネマニアックスアニメ化记念ツアー 次女の奇妙な冒険’中的工作人员曾提到过有“看到父亲时还以为是水桥小姐就这么跑过去直接搭话了”的回忆。\r\n有写过君吻广播剧的脚本的经验。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10972,
+            "name": "入巣蒔菜",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5f/8f/10972_crt_iHE9K.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/8f/10972_crt_iHE9K.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/8f/10972_crt_iHE9K.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5f/8f/10972_crt_iHE9K.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5900,
+                    "name": "民安ともえ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/76/a5/5900_prsn_kbBbc.jpg?r=1559386103",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/76/a5/5900_prsn_kbBbc.jpg?r=1559386103",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/76/a5/5900_prsn_kbBbc.jpg?r=1559386103",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/76/a5/5900_prsn_kbBbc.jpg?r=1559386103"
+                    },
+                    "short_summary": "民安 ともえ（たみやす ともえ、1月3日 - ）は、日本の女性声優、歌手。広島県出身、東京都在住。血液型はO型。主にアダルトゲームに声をあてている。一般作品ではたみやす ともえの名義を用いている。中国語表記は民安 友絵（本人の新浪微博より）。\r\n\r\n女性ながらアダルトゲーム好きが高じて、アダルトゲームへよく声を当てる声優となった（最初に一番熱中してプレイしたゲームは『痕』のオリジナル版だったと語っている）。そのため、ラジオなどではユーザー視点で熱く語ったり、解説役になることも多い。アダルトゲームの声優としては数少ない顔出しができる声優で、ライブ活動やイベント出演も行っている。\r\n民安の由来はクラスメイトの名前を使わせてもらったという。\r\n一人称は「私」の他にも「民安」を使う傾向にある。『アキハバラ発!ぷらてぃあ放送局』で共演したまきいづみに「たみー」・「たみちゃん」と呼ばれ、『ナツメブラザーズ!』では緑川光ややなせなつみのことを「お兄ちゃん」「兄貴」・「お姉ちゃん」と呼び慕っている。他にも鈴田美夜子からは「おたみちゃん」と呼ばれている。\r\n本人曰く、「本気で照れてる時は広島弁が出ます」とのことで、照れている時や恥ずかしがっている時に方言が混ざる。その他、感情が高ぶっている時に一人称が「俺」に変わることがある。これは、故郷である広島の女性（主に年配の女性）が使う一人称で、お婆ちゃんと遊ぶことが多かった民安が影響を受けたとのことである。\r\n深海魚と『美味しんぼ』への造詣が深く、『美味しんぼ』に関しては、『セリフを聞いただけで、大体どのエピソードか分かる』とのこと。ただし、TVアニメで放送された範囲のエピソードに限る、とも発言している。\r\nアダルトゲームにおける女性キャラクターのスリーサイズについて、リアリズムを追及する考証を行なったことがある。例えば、バストサイズとブラのカップ数からアンダーバストを算出し、アンダーバストとウエストの差を考えると、バストサイズに対してカップ数が足りない（あるいは、ウエストが細すぎる）といった具合である。\r\n『ナツメブラザーズ!』にて中国の『民安隊少年團』が紹介されて以来、緑川光にファンたちのことを『民安隊』と呼ばれている。\r\n一般作とアダルトゲーム作品両方に民安ともえ名義で出演しており、区別が出来なかった事から、2011年度から一般作に限りたみやすともえとひらがなで表記することをブログで発表した。この件に対して、『18歳未満のファンの方が、アダルトゲームなどのR-18コンテンツを手に取らないようにする為、区別を付ける事が出来るようにする意味合いもある』という主旨の発言をしていた。ただし、『ナツメブラザーズ!』のように、民安ともえ名義で出演する全年齢向けの仕事もある為、その辺の線引きについて考えているという発言もしていた。\r\n2015年11月22日、ブログにて同業の中村圭佑と結婚したことを発表し、報じられた。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10973,
+            "name": "小嶺幸",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0f/16/10973_crt_mZ8Tt.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/16/10973_crt_mZ8Tt.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/16/10973_crt_mZ8Tt.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0f/16/10973_crt_mZ8Tt.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4064,
+                    "name": "清水愛",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4f/f7/4064_prsn_iIIrR.jpg?r=1619283480",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/f7/4064_prsn_iIIrR.jpg?r=1619283480",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/f7/4064_prsn_iIIrR.jpg?r=1619283480",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4f/f7/4064_prsn_iIIrR.jpg?r=1619283480"
+                    },
+                    "short_summary": "清水爱（1981年3月26日－），日本女性声优兼职业摔角选手，生于东京都。于2016年7月3日在Triangle ribbon获得第22届冠军。\r\n高中时就读关东国际高等学校所属的是外语专业的汉语课程，学习普通话及各种汉语方言，当中以北京方言尤为擅长，已通过汉语二级考试HSK2级水平，也就是现在HSK中级A水平。\r\n高中毕业后进入日本工学院专门学校演剧俳优科声优班学习。日本工学院在册时代与新谷良子和坂本美里一起组成“めえめえもお”。此后与新谷在各处也共同演出，结成“テディミルク”。\r\n喜欢猫，兴趣是汉语和器械体操。在个人博客上特技一栏写着“我认为是公主抱”。\r\n视力很低，所以经常佩戴隐形眼镜。声质为高音，所以能担当不同类型的女性角色的配音。\r\n喜欢哥德萝莉风格的衣服，经常这样穿着出席各种活动。\r\n虽然与中原麻衣不同事务所，但自妄想科学美少女和拜托了双子星起常与声优中原麻衣共演，两人公私关系都非常良好，常以“姐妹”的身份同时出席各种活动，在清水爱的日记中也常看到提及中原麻衣的事情。\r\n在魔力女管家、这丑陋又美丽的世界中与川澄绫子共演姊妹角色，因此她间中会称川澄绫子为姊姊。此外与笹岛薰感情也非常深厚。\r\n\r\n2001年开始声优活动，所属事务所红屋25时，不久后移籍至81 Produce。\r\n2003年与Warner Music （华纳唱片）签约成为旗下歌手，7月推出第一张个人音乐CD。\r\n2008年11月1日，退出81 Produce，12月1日加入东京俳优生活协同组合。\r\n2009年7月，受邀前往台湾担任同人即卖会FF14嘉宾（同场嘉宾：声优小清水亚美及画师七濑葵）。\r\n作为知名声优，清水爱在演唱、电台节目和现场活动中非常活跃，照片和访谈也经常出现在动画和声优杂志上，曾经创下一年中出席200多场见面会的纪录。\r\n2016年8月2日在本人推特上公开了与摔跤评论家井上マイク的婚讯。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10974,
+            "name": "風見雄二",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4e/0a/10974_crt_7153e.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/0a/10974_crt_7153e.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/0a/10974_crt_7153e.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4e/0a/10974_crt_7153e.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4015,
+                    "name": "櫻井孝宏",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/06/29/4015_prsn_4TZox.jpg?r=1638448222"
+                    },
+                    "short_summary": "爱知县冈崎市老家的本业是米店，店名为“樱井米谷店”，在当地小有名气。\r\n初中时的一个冬天，怕冷的他擅自把酒精灯里的液体倒在理科实验室的桌子上，点起火取暖，引响了火灾报警器，被赶来的老师狠狠教训了一顿。于是在老师的国语课上捣乱报复，夸张地朗读课文，实在听不过去的老师求他：“拜托，别念得跟声优似的好不好！”——这话对那时的樱井冲击很大，给他留下了声优不过是连小孩子都做得来的简单工作的印象。所以高中毕业后，乐得找轻松的樱井选择进入东京的声优专科学校。待迈入这一行，他才吐血地发现，且不说成为佼佼者，就是普通从业者也得掌握高超的专业技巧。\r\n2005年8月《最终幻想VII：降临之子》于第62届威尼斯影展参展。樱井以担任主角配音的身份，成为继山寺宏一后第2位踏上星光大道的日本籍声优。\r\n虽然戴着眼镜，可是樱井二眼视力皆为2.0，植田佳奈笑称那是“骗人眼镜”。那付眼镜的意义是“梦想与希望与对声迷们的爱”。\r\n最初的错误是BL DRAMA制作社Inter communications（inter桑）的一张drama的BK上打成了樱井考宏，之后《无法逃离的背叛》某个活动的官方网站上亦把樱井孝宏的名字写成“樱井考宏”，所以有昵称考哥，而并非是他的名字中的“孝”字与“考”字很像才有此外号。\r\n桜井(sakurai)，桜井さん（sakurai san），sakura i san，樱13",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10976,
+            "name": "春寺由梨亜",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7e/88/10976_crt_11JV5.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/88/10976_crt_11JV5.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/88/10976_crt_11JV5.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7e/88/10976_crt_11JV5.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4489,
+                    "name": "鳴海エリカ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/18/16/4489_prsn_U8lI8.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/16/4489_prsn_U8lI8.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/16/4489_prsn_U8lI8.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/18/16/4489_prsn_U8lI8.jpg"
+                    },
+                    "short_summary": "旧名：本田千秋。茨城県出身\r\n現在の所属はフリー。以前は81プロデュースやアズリードカンパニーに所属していた。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 11856,
+            "name": "風見一姫",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e9/f4/11856_crt_0XzmQ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/f4/11856_crt_0XzmQ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/f4/11856_crt_0XzmQ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e9/f4/11856_crt_0XzmQ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4432,
+                    "name": "友永朱音",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bc/d6/4432_prsn_oJ0OM.jpg?r=1562835135",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/d6/4432_prsn_oJ0OM.jpg?r=1562835135",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/d6/4432_prsn_oJ0OM.jpg?r=1562835135",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bc/d6/4432_prsn_oJ0OM.jpg?r=1562835135"
+                    },
+                    "short_summary": "友永 朱音（ともなが あかね、12月2日 - ）は、日本の女性声優、ナレーター。血液型はA型。身長157.5cm。東京都出身。アクセルワン所属。過去にぷろだくしょんバオバブなどに所属していた。\r\n\r\n同じ事務所の後藤邑子とは親友関係。また、漫画家のトビナトウヤは従姉妹。\r\n趣味はゲーム、舞台鑑賞。宝塚歌劇のファンでもある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 15027,
+            "name": "日下部麻子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ef/65/15027_crt_ZJG2v.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ef/65/15027_crt_ZJG2v.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ef/65/15027_crt_ZJG2v.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ef/65/15027_crt_ZJG2v.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5741,
+                    "name": "瑞沢渓",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9a/04/5741_prsn_zqUaD.jpg?r=1622122185",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/04/5741_prsn_zqUaD.jpg?r=1622122185",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/04/5741_prsn_zqUaD.jpg?r=1622122185",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9a/04/5741_prsn_zqUaD.jpg?r=1622122185"
+                    },
+                    "short_summary": "瑞沢 渓（みずさわ けい、1975年9月14日）は、日本の声優、ナレーター。イエローテイル所属。長崎県出身。\r\n映像テクノアカデミア卒業。旧芸名は堀池 円。俳優の堀池直毅は実弟。\r\n趣味は芝居鑑賞・イラストなど。\r\n\r\nかわしま りのは日本の女性声優。主にアダルトゲームに声をあてている。\r\n声優になる夢を両親に反対されたくなかったため、多くのアルバイトをして養成所や一人暮らしの費用を貯金し、その通帳を見せて直訴したという。\r\n尊敬する役者として榊原良子を挙げている。\r\n名前（かわしまりの）の由来は、好きなまんがの主人公の名と主人公に影響を与える登場人物の姓を取り、かなで表記したもの。 苗字と名前の切り方を間違えられ（あるいは面白がってわざと）「まりのさん」（酷いときは「しまりのさん」）と呼ばれることもあるが、「かわしま」が苗字である。\r\n声質は鼻にかかった中低音からロリな高音まで幅広くこなし、声の演技の幅も非常に広く年下から人妻役までこなす。趣味は一人鍋。\r\n小学校高学年の頃から声優業を目指していた。その夢を実現させるため、養成所の費用から一人暮らしの費用まで、多くのアルバイトをして自ら稼いだという。\r\nビール党でバナナが嫌い。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

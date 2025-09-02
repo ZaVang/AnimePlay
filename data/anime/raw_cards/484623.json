@@ -1,0 +1,386 @@
+{
+    "id": 484623,
+    "type": 2,
+    "name": "よふかしのうた Season 2",
+    "name_cn": "彻夜之歌 第二季",
+    "summary": "夜晚尚未终结！\r\n\r\n跨越了是否要成为吸血鬼的困扰之后，夜守光下定决心要喜欢上七草荠，荠则决定要让光喜欢上自己。尚未知晓「恋爱」为何物，两人的夜晚依旧持续加速。\r\n企图猎杀吸血鬼的侦探莺馅子已经逼近到身旁了。虽然想尽早把「充满人类时期眷恋的东西」这项吸血鬼的弱点给处理掉，没想到荠却完全没有人类时期的记忆。荠隐藏的过去是？馅子为什么会想杀吸血鬼呢？\r\n然后，交错于荠与馅子之间的「秘密」又是──？\r\n\r\n光、荠、馅子……\r\n快乐的「熬夜」不会止步于此，崭新的「夜晚」要开始了！",
+    "nsfw": false,
+    "locked": false,
+    "date": "2025-07-04",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/15/5f/484623_6EWej.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/15/5f/484623_6EWej.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/15/5f/484623_6EWej.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/15/5f/484623_6EWej.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/15/5f/484623_6EWej.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "彻夜之歌 第二季"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "徹夜之歌 第二季",
+                    "k": null
+                },
+                {
+                    "v": "夜曲 第二季",
+                    "k": null
+                },
+                {
+                    "v": "那徜徉在夜晚的歌声 第二季",
+                    "k": null
+                },
+                {
+                    "v": "Yofukashi no Uta Season 2",
+                    "k": null
+                },
+                {
+                    "v": "CALL OF THE NIGHT Season 2",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2025年7月4日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期五"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://yofukashi-no-uta.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "フジテレビ系“ノイタミナ”枠"
+        },
+        {
+            "key": "导演",
+            "value": "板村智幸"
+        },
+        {
+            "key": "Copyright",
+            "value": "©2025コトヤマ・小学館／「よふかしのうた」製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "コトヤマ （小学館「週刊少年サンデー」連載中）"
+        },
+        {
+            "key": "副导演",
+            "value": "滝沢いづみ、三好なお"
+        },
+        {
+            "key": "人物设定",
+            "value": "佐川遥；副人设：西尾淳之介"
+        },
+        {
+            "key": "色彩设计",
+            "value": "きつかわあさみ；辅佐：橋上彰"
+        },
+        {
+            "key": "製作",
+            "value": "「よふかしのうた」製作委員会（フジテレビ、Aniplex、小学館、小学館集英社プロダクション、ウルトラスーパーピクチャーズ、トーハン、アニマックスブロードキャスト・ジャパン、電通、フジクリエイティブコーポレーション）；松崎容子、岩上敦宏、斎藤満、高澤邦仁、國枝信吾、渡辺勝也、滝山正夫（滝山雅夫）、石渡弥、木村元一"
+        },
+        {
+            "key": "总制片人",
+            "value": "三宅将典；统括：高瀬透子"
+        },
+        {
+            "key": "制片人",
+            "value": "菅原花、足立和紀"
+        },
+        {
+            "key": "摄影监督",
+            "value": "土本優貴；辅佐：上久保莉菜"
+        },
+        {
+            "key": "3DCG 导演",
+            "value": "下崎由加里"
+        },
+        {
+            "key": "动画制片人",
+            "value": "荻巣佑也"
+        },
+        {
+            "key": "美术监督",
+            "value": "内藤健；辅佐：伊藤愛里"
+        },
+        {
+            "key": "美术设计",
+            "value": "滝口勝久、佐藤正浩"
+        },
+        {
+            "key": "音效",
+            "value": "宅間麻姫"
+        },
+        {
+            "key": "音响监督",
+            "value": "木村絵理子；选曲：丹下雄二"
+        },
+        {
+            "key": "录音",
+            "value": "小泉まい；录音工作室：クープ"
+        },
+        {
+            "key": "录音助理",
+            "value": "石井佑樹"
+        },
+        {
+            "key": "音响",
+            "value": "東北新社；音响制作担当：丹下雄二、島田実里"
+        },
+        {
+            "key": "分镜",
+            "value": "板村智幸(1-2,4)、吉岡忍(3)、migmi(4)"
+        },
+        {
+            "key": "演出",
+            "value": "三好なお(1)、武藤信宏(2)、吉岡忍(3)、大西景介(4)"
+        },
+        {
+            "key": "总作画监督",
+            "value": "佐川遥、原田飛鳥、西尾淳之介、松岡謙治"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "宮西哲也 / 板村智幸・土本優貴"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 12,
+    "rating": {
+        "rank": 670,
+        "total": 940,
+        "count": {
+            "one": 3,
+            "two": 2,
+            "three": 1,
+            "four": 2,
+            "five": 7,
+            "six": 62,
+            "seven": 302,
+            "eight": 447,
+            "nine": 70,
+            "ten": 44
+        },
+        "score": 7.6
+    },
+    "collection": {
+        "wish": 2034,
+        "collect": 165,
+        "doing": 5038,
+        "on_hold": 100,
+        "dropped": 31
+    },
+    "tags": [
+        {
+            "name": "2025年7月",
+            "count": 519
+        },
+        {
+            "name": "恋爱",
+            "count": 456
+        },
+        {
+            "name": "漫画改",
+            "count": 444
+        },
+        {
+            "name": "奇幻",
+            "count": 375
+        },
+        {
+            "name": "TV",
+            "count": 356
+        },
+        {
+            "name": "LIDENFILMS",
+            "count": 287
+        },
+        {
+            "name": "2025",
+            "count": 216
+        },
+        {
+            "name": "漫改",
+            "count": 183
+        },
+        {
+            "name": "日本",
+            "count": 146
+        },
+        {
+            "name": "彻夜之歌",
+            "count": 143
+        },
+        {
+            "name": "板村智幸",
+            "count": 127
+        },
+        {
+            "name": "续作",
+            "count": 121
+        },
+        {
+            "name": "日常",
+            "count": 101
+        },
+        {
+            "name": "吸血鬼",
+            "count": 72
+        },
+        {
+            "name": "少年向",
+            "count": 39
+        },
+        {
+            "name": "横手美智子",
+            "count": 12
+        },
+        {
+            "name": "2025年",
+            "count": 8
+        },
+        {
+            "name": "未定档",
+            "count": 8
+        },
+        {
+            "name": "待上映",
+            "count": 6
+        },
+        {
+            "name": "搞笑",
+            "count": 6
+        },
+        {
+            "name": "青春",
+            "count": 6
+        },
+        {
+            "name": "7月",
+            "count": 5
+        },
+        {
+            "name": "电波",
+            "count": 5
+        },
+        {
+            "name": "TVA",
+            "count": 4
+        },
+        {
+            "name": "雨宮天",
+            "count": 4
+        },
+        {
+            "name": "SHAFT",
+            "count": 3
+        },
+        {
+            "name": "佐藤元",
+            "count": 3
+        },
+        {
+            "name": "2025夏",
+            "count": 3
+        },
+        {
+            "name": "出羽良彰",
+            "count": 3
+        },
+        {
+            "name": "佐川遥",
+            "count": 2
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "少年向"
+    ],
+    "series": false,
+    "main_character_ids": [
+        102485,
+        102486
+    ],
+    "main_characters": [
+        {
+            "id": 102485,
+            "name": "夜守コウ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bc/09/102485_crt_Wwr4n.jpg?r=1636569749",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/09/102485_crt_Wwr4n.jpg?r=1636569749",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/09/102485_crt_Wwr4n.jpg?r=1636569749",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bc/09/102485_crt_Wwr4n.jpg?r=1636569749"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 33386,
+                    "name": "佐藤元",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113"
+                    },
+                    "short_summary": "佐藤 元（さとう げん、1997年3月22日 - ）は、日本の男性声優。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 102486,
+            "name": "七草ナズナ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9c/97/102486_crt_2HhlI.jpg?r=1657792111",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/97/102486_crt_2HhlI.jpg?r=1657792111",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/97/102486_crt_2HhlI.jpg?r=1657792111",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9c/97/102486_crt_2HhlI.jpg?r=1657792111"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 12568,
+                    "name": "雨宮天",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a2/62/12568_prsn_jLLz4.jpg?r=1693248727"
+                    },
+                    "short_summary": "雨宫天（あまみや そら）是日本的女性声优、歌手，1993年8月28日出生于日本东京都。\r\n\r\n[b]经历[/b]\r\n1993年8月28日出生于日本东京都；因憧憬声优[url=https://bgm.tv/person/4244]泽城美雪[/url]而向往成为一名声优。\r\n在2011年举办的第2回MusicRay'n超级声优试镜中合格，2012年声优活动开始，2014年在TV动画《[url=https://bgm.tv/subject/88493]一周的朋友。[/url]》担任[url=https://bgm.tv/character/23104]藤宫香织[/url]CV,为初主役角色。\r\n2014年12月21日，与同事务所的[url=https://bgm.tv/person/13565]麻仓桃[/url]、[url=https://bgm.tv/person/13581]夏川椎菜[/url]组成声优组合“[url=https://bgm.tv/person/18492]TrySail[/url]”，并于2015年·正式开始活动。\r\n2015年第9回声优奖中获得新人女声优奖。\r\n2015年10月2日，发行自己的第一部写真集《ソライロ～青と旅する～》。\r\n2020年4月17日，开通绘画日记企划期间限定Twitter账号(现已转为永久账号)",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

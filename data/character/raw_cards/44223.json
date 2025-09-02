@@ -1,0 +1,64 @@
+{
+    "id": 44223,
+    "name": "えりぴよ",
+    "type": 4,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b5/d7/44223_crt_o4ahX.jpg?r=1576464825",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/d7/44223_crt_o4ahX.jpg?r=1576464825",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/d7/44223_crt_o4ahX.jpg?r=1576464825",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b5/d7/44223_crt_o4ahX.jpg?r=1576464825"
+    },
+    "summary": "古参にして唯一の舞菜ヲタ。\r\n収入のすべてを舞菜に貢ぎ、\r\n自分は常に高校時代の赤ジャージ。\r\n舞菜への愛で鼻血ブーしてしまう……\r\n伝説の女。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "绘里飘"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Eripiyo"
+                },
+                {
+                    "k": "昵称",
+                    "v": "えり"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月1日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "出身地",
+            "value": "岡山県岡山市"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 1,
+    "stat": {
+        "comments": 21,
+        "collects": 49
+    },
+    "anime_ids": [
+        246915
+    ]
+}

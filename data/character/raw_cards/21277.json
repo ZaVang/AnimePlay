@@ -1,0 +1,56 @@
+{
+    "id": 21277,
+    "name": "鬼龍院皐月",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a4/2c/21277_crt_pM939.jpg?r=1704461020",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/2c/21277_crt_pM939.jpg?r=1704461020",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/2c/21277_crt_pM939.jpg?r=1704461020",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a4/2c/21277_crt_pM939.jpg?r=1704461020"
+    },
+    "summary": "流子が転校する本能字学園を、\r\n武力と恐怖で支配する生徒会長。\r\n愛刀[縛斬]を腰に下げる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鬼龙院皐月"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "鬼龍院 皐月"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きりゅういん さつき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kiryuuin Satsuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.kill-la-kill.jp/character/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 25,
+        "collects": 190
+    },
+    "anime_ids": [
+        72941
+    ]
+}

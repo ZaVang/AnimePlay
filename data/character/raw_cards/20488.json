@@ -1,0 +1,52 @@
+{
+    "id": 20488,
+    "name": "波戸賢二郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e2/3c/20488_crt_M4gm2.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/3c/20488_crt_M4gm2.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/3c/20488_crt_M4gm2.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e2/3c/20488_crt_M4gm2.jpg"
+    },
+    "summary": "小笹原四届的后辈，经济学部。伪娘打扮的小男生，入会时没人发觉是男生，喜爱BL。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "波户贤二郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ハト ケンジロウ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hato Kenjirou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "9月18日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 18,
+    "stat": {
+        "comments": 19,
+        "collects": 37
+    },
+    "anime_ids": [
+        71802
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 67234,
+    "name": "ビルバイン",
+    "type": 2,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/aa/6d/67234_crt_Ap4yD.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/6d/67234_crt_Ap4yD.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/6d/67234_crt_Ap4yD.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/aa/6d/67234_crt_Ap4yD.jpg"
+    },
+    "summary": "承认翔是圣战士后纳国女王西拉·拉帕纳交付给翔的最强奥拉战士。具有变形机能，可变形为翼型战机的飞行形态，与别的翼型战机一样可以搭载一台奥拉战士。背后安装有两门奥拉加农炮；另外还配有即可远战，又可变形为光束剑的奥拉光束来复枪，是一台白兵战、炮击战都非常优秀的机体。由于该机对操纵者奥拉力要求非常之高，因此翔还需要借助茶姆的奥拉力才能操纵该机。来到地上后，该机被涂装成了夜间迷彩的墨绿色。在太平洋上的决战中与巴恩（黑骑士）驾驶的卡拉巴同归于尽。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "比鲁拜因"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Billbine"
+                }
+            ]
+        },
+        {
+            "key": "身高",
+            "value": "8.8米"
+        },
+        {
+            "key": "体重",
+            "value": "8.6吨"
+        },
+        {
+            "key": "设计者",
+            "value": "西拉·拉帕纳"
+        },
+        {
+            "key": "制造国",
+            "value": "纳之国"
+        },
+        {
+            "key": "机师",
+            "value": "座间 翔"
+        },
+        {
+            "key": "武装",
+            "value": "索爪×4，奥拉剑×1,背部奥拉加农炮×2，奥拉光束来复枪/光束剑×1"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 5
+    },
+    "anime_ids": [
+        10402
+    ]
+}

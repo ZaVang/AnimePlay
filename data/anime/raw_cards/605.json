@@ -1,0 +1,351 @@
+{
+    "id": 605,
+    "type": 2,
+    "name": "ヒカルの碁",
+    "name_cn": "棋魂",
+    "summary": "       小学生进藤光在爷爷家的仓库玩耍时，邂逅了千年前的棋士藤原佐为的魂魄并被强行附体，对围棋原本毫无兴趣的他要如何与佐为相处？\r\n       在佐为的帮助下进藤光意外打败了棋坛明日之星塔矢亮，受到众人关注的他要如何面对自己的人生之路？ \r\n       一段联结千年时光的围棋物语就此徐徐展开......",
+    "nsfw": false,
+    "locked": false,
+    "date": "2001-10-10",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/c3/61/605_CZYx4.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/c3/61/605_CZYx4.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/c3/61/605_CZYx4.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/c3/61/605_CZYx4.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/c3/61/605_CZYx4.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "棋魂"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "棋灵王",
+                    "k": null
+                },
+                {
+                    "v": "光的围棋",
+                    "k": null
+                },
+                {
+                    "v": "光之棋",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "75"
+        },
+        {
+            "key": "放送开始",
+            "value": "2001年10月10日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期三"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://www.tv-tokyo.co.jp/anime/hikaru2001/ https://www.tv-tokyo.co.jp/anime/hikaru_selection/ https://pierrot.jp/archive/2000/tv00_07.html"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京"
+        },
+        {
+            "key": "播放结束",
+            "value": "2003年3月26日"
+        },
+        {
+            "key": "导演",
+            "value": "西澤晋（1～15）、神谷純（16～59）、えんどうてつや（57～75）"
+        },
+        {
+            "key": "音乐",
+            "value": "若草恵、古川順"
+        },
+        {
+            "key": "Copyright",
+            "value": "©ほったゆみ・HMC・小畑健・ノエル／集英社・テレビ東京・電通・ぴえろ"
+        },
+        {
+            "key": "原作",
+            "value": "ほったゆみ、小畑健(集英社「週刊少年ジャンプ」連載)"
+        },
+        {
+            "key": "人物设定",
+            "value": "本橋秀之、関口可奈味、上田美由紀、芝美奈子"
+        },
+        {
+            "key": "美术监督",
+            "value": "高木佐和子"
+        },
+        {
+            "key": "制片人",
+            "value": "崔鐘秀→小林教子 (テレビ東京) 、山西大平、三上孝一→萩野賢"
+        },
+        {
+            "key": "企画",
+            "value": "岩田圭介(テレビ東京) 、原田孝、布川ゆうじ"
+        }
+    ],
+    "volumes": 0,
+    "eps": 75,
+    "total_episodes": 77,
+    "rating": {
+        "rank": 99,
+        "total": 4559,
+        "count": {
+            "one": 3,
+            "two": 4,
+            "three": 6,
+            "four": 5,
+            "five": 46,
+            "six": 176,
+            "seven": 718,
+            "eight": 1648,
+            "nine": 1313,
+            "ten": 640
+        },
+        "score": 8.3
+    },
+    "collection": {
+        "wish": 1650,
+        "collect": 6512,
+        "doing": 283,
+        "on_hold": 556,
+        "dropped": 147
+    },
+    "tags": [
+        {
+            "name": "棋魂",
+            "count": 884
+        },
+        {
+            "name": "小畑健",
+            "count": 806
+        },
+        {
+            "name": "围棋",
+            "count": 701
+        },
+        {
+            "name": "2001",
+            "count": 445
+        },
+        {
+            "name": "TV",
+            "count": 422
+        },
+        {
+            "name": "成长",
+            "count": 416
+        },
+        {
+            "name": "经典动画",
+            "count": 321
+        },
+        {
+            "name": "藤原佐为",
+            "count": 311
+        },
+        {
+            "name": "近藤光",
+            "count": 264
+        },
+        {
+            "name": "集英社",
+            "count": 254
+        },
+        {
+            "name": "竞技",
+            "count": 248
+        },
+        {
+            "name": "漫画改",
+            "count": 215
+        },
+        {
+            "name": "少年",
+            "count": 183
+        },
+        {
+            "name": "塔矢亮",
+            "count": 158
+        },
+        {
+            "name": "StudioPierrot",
+            "count": 105
+        },
+        {
+            "name": "漫改",
+            "count": 83
+        },
+        {
+            "name": "童年",
+            "count": 68
+        },
+        {
+            "name": "热血",
+            "count": 60
+        },
+        {
+            "name": "2001年10月",
+            "count": 53
+        },
+        {
+            "name": "小田健",
+            "count": 41
+        },
+        {
+            "name": "JUMP",
+            "count": 40
+        },
+        {
+            "name": "腐向",
+            "count": 39
+        },
+        {
+            "name": "经典",
+            "count": 33
+        },
+        {
+            "name": "运动",
+            "count": 30
+        },
+        {
+            "name": "励志",
+            "count": 27
+        },
+        {
+            "name": "ぴえろ",
+            "count": 26
+        },
+        {
+            "name": "日本",
+            "count": 20
+        },
+        {
+            "name": "神作",
+            "count": 20
+        },
+        {
+            "name": "长篇",
+            "count": 18
+        },
+        {
+            "name": "燃",
+            "count": 15
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "运动",
+        "漫画改",
+        "少年向"
+    ],
+    "series": false,
+    "main_character_ids": [
+        215,
+        216,
+        217
+    ],
+    "main_characters": [
+        {
+            "id": 215,
+            "name": "進藤ヒカル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b9/6b/215_crt_YZ59e.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/6b/215_crt_YZ59e.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/6b/215_crt_YZ59e.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b9/6b/215_crt_YZ59e.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3880,
+                    "name": "川上とも子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/da/05/3880_prsn_NX58v.jpg?r=1678190819",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/05/3880_prsn_NX58v.jpg?r=1678190819",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/05/3880_prsn_NX58v.jpg?r=1678190819",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/da/05/3880_prsn_NX58v.jpg?r=1678190819"
+                    },
+                    "short_summary": "川上伦子（艺名：川上 とも子，1970年4月25日－2011年6月9日）是一名日本女性声优。血型O型。东京都出身。隶属于Production baobab事务所。自2008年8月16日因病住院而暂停其声优事业，Keroro军曹的日向冬树和BLEACH的砕蜂这2个角色暂时由另一位声优桑岛法子代役。自手术过后于2008年10月开始进入长期休养的状态，2009后半年出院后复出，2011年6月9日过世，享年41岁。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 216,
+            "name": "藤原佐為",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2d/35/216_crt_23fjh.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/35/216_crt_23fjh.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/35/216_crt_23fjh.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2d/35/216_crt_23fjh.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3837,
+                    "name": "千葉進歩",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/51/cd/3837_prsn_oAC0S.jpg?r=1605806978",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/cd/3837_prsn_oAC0S.jpg?r=1605806978",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/cd/3837_prsn_oAC0S.jpg?r=1605806978",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/51/cd/3837_prsn_oAC0S.jpg?r=1605806978"
+                    },
+                    "short_summary": "千葉 進歩（ちば すすむ、1970年9月13日 - ）は、日本の男性声優。大沢事務所所属。神奈川県出身。血液型はB型。代表作に『キューティーハニーF』（早見青児）、『神風怪盗ジャンヌ』（名古屋稚空/怪盗シンドバット）、『ヒカルの碁』（藤原佐為）、『きらりん☆レボリューション』（村西社長）、『銀魂』（近藤勲）、『彩雲国物語』（柴彰）、『二十面相の娘』（ハンス）、『ヴァンパイア騎士』（一条拓麻）、『戦場のヴァルキュリア』（ウェルキン・ギュンター）、『ダンボール戦機』などがある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 217,
+            "name": "塔矢アキラ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/04/62/217_crt_y7cMB.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/62/217_crt_y7cMB.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/62/217_crt_y7cMB.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/04/62/217_crt_y7cMB.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4428,
+                    "name": "小林沙苗",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/07/54/4428_prsn_9cDQ7.jpg?r=1515082891",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/54/4428_prsn_9cDQ7.jpg?r=1515082891",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/54/4428_prsn_9cDQ7.jpg?r=1515082891",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/07/54/4428_prsn_9cDQ7.jpg?r=1515082891"
+                    },
+                    "short_summary": "小林沙苗（1980年1月26日－）为日本女性声优。出生于静冈县滨松市滨北区。2015年6月1日隶属公司从Production baobab移至Sigma Seven。\r\n\r\n简介\r\n最初的梦想是成为演员，高中时为地区音乐剧团“ステージ97”所属团员，在该剧团东京公演时，被前来观戏的声优立壁和也赏识其演技力并网罗至声优界。\r\n刚出道时因为仍在该地区大学就读的关系，以新干线来往东京通勤工作。\r\n主要工作是外国片、动画、游戏、以及广播剧配音，近期以幼教片、外国片日文配音居多。\r\n声线范围广泛，是少数拥有“七色之声”美名的声优之一，属于高演技力的实力派，从少年到少女、年长的女性到冷艳气质的大姐、角色的人格分裂都能完美诠释。\r\n第一次配音的作品是外国片的一名小配角，台词只有结尾的一段话，因而等候录音等到睡着。在那之后，她多次为有赛琳娜·戈麦斯、美莎·芭顿、河智苑出演的外国片进行日语配音。\r\n有潜水员执照、剑道初段，但为了保护声带而放弃需要用力呐喊的剑道。\r\n在戏剧之外的兴趣是绘画，曾在访谈中提到若没成为声优就会想走美术系。\r\n曾与永野椎菜的企划“ShiinaTactix”合作，录制‘ShiinaTactix-Sana.K’专辑，但随后则婉拒第二张专辑合作计划。\r\n\r\n交友关系\r\n和铃村健一、樱井孝宏在工作上有多次合作因此成为好友。\r\n与松来未祐交情深厚，曾在生日时一同前往东京迪斯尼乐园庆祝。在出演《D.Gray-man》之后，也与饰演利娜莉一角的伊藤静相互结识。\r\n与丰口惠、水树奈奈、能登麻美子因在《草莓100%》中共演而深交，成为所谓的“草莓聚会（いちご会）”。\r\n\r\n角色佚话\r\n在《草莓100%》中，小林饰演北大路皋月一角，但最初小林所试镜的角色是西野司，反而现在饰演西野司的丰口惠最初试镜的角色是北大路皋月。\r\n在《魔法少女奈叶A's》中，小林为暗之书／Reinforce一角献声，但最初试镜的角色是守护骑士的席格娜，反之现在饰演席格娜的清水香里最初则试镜的角色是暗之书／Reinforce。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

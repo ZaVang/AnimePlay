@@ -1,0 +1,96 @@
+{
+    "id": 28574,
+    "name": "諸星きらり",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b2/a7/28574_crt_lL16h.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/a7/28574_crt_lL16h.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/a7/28574_crt_lL16h.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b2/a7/28574_crt_lL16h.jpg"
+    },
+    "summary": "《偶像大师 灰姑娘女孩》系列中的偶像。\r\n以巨大身躯和撒娇口吻而著名的偶像。爱称Kirarin。橙色波浪卷长发，经常穿着可爱的服装，说话也很嗲。怪力女，可以随意举起奇怪的东西。跟miku喵一样，琪拉莉也有口癖。她的句尾经常会加个Ni~\r\n\r\n*条目原来参照的初期R卡的数据：身高182cm，体重60kg，三围91-64-86",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "诸星琪拉莉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "诸星煌梨"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "もろぼし きらり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Moroboshi Kirari"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月1日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "186cm"
+        },
+        {
+            "key": "体重",
+            "value": "61.5kg"
+        },
+        {
+            "key": "BWH",
+            "value": "92/65/87"
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        },
+        {
+            "key": "兴趣",
+            "value": "收集可爱的物品"
+        },
+        {
+            "key": "利手",
+            "value": "右手"
+        },
+        {
+            "key": "星座",
+            "value": "处女座"
+        },
+        {
+            "key": "出生地",
+            "value": "东京"
+        },
+        {
+            "key": "卡牌类型",
+            "value": "Passion"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 1,
+    "stat": {
+        "comments": 44,
+        "collects": 26
+    },
+    "anime_ids": [
+        130231
+    ]
+}

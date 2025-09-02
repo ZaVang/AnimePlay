@@ -1,0 +1,120 @@
+{
+    "id": 1979,
+    "name": "十二生肖守护神",
+    "image_path": "data/images/anime/1979.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "梦原的诺贝尔柱，在庆祝国诞时，发生恐怖事件，邪灵怪兽化身侵入人类所写的故事，企图破坏诺贝尔世界毁灭梦原国，欧拉公主命令爆烈战士十二生肖，搭乘麒麟号穿越时空，进入故事拯救梦原。於是他们展开冒险之旅，抵达桃太郎故事，却发现已变科幻世界，他们要如何恢复原来的传说……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 39,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "1995-04-07",
+    "rating_rank": 1619,
+    "rating_score": 7.3,
+    "rating_total": 505,
+    "main_character_ids": [
+        33045,
+        33047,
+        33048
+    ],
+    "main_characters": [
+        {
+            "id": 33045,
+            "name": "バク丸",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d5/b9/33045_crt_t7IXI.jpg?r=1433031502",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/b9/33045_crt_t7IXI.jpg?r=1433031502",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/b9/33045_crt_t7IXI.jpg?r=1433031502",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d5/b9/33045_crt_t7IXI.jpg?r=1433031502"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4092,
+                    "name": "坂本千夏",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7e/8d/4092_prsn_666bW.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/8d/4092_prsn_666bW.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/8d/4092_prsn_666bW.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7e/8d/4092_prsn_666bW.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 33047,
+            "name": "ガオウ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bb/8b/33047_crt_8iDJx.jpg?r=1433031616",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/8b/33047_crt_8iDJx.jpg?r=1433031616",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/8b/33047_crt_8iDJx.jpg?r=1433031616",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bb/8b/33047_crt_8iDJx.jpg?r=1433031616"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4287,
+                    "name": "星野充昭",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/cc/b4/4287_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/b4/4287_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/b4/4287_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/cc/b4/4287_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 33048,
+            "name": "クリーム",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3b/2f/33048_crt_p255m.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/2f/33048_crt_p255m.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/2f/33048_crt_p255m.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3b/2f/33048_crt_p255m.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3859,
+                    "name": "氷上恭子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/71/71/3859_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/71/3859_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/71/3859_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/71/71/3859_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の女性声優。マウスプロモーション（Mausu Promotion）所属。\r\n高中时代搬到了同县神户市。初中生的时候，知道有声优这个职业，高中时代开始去培养所。高中毕业后想要正式成为声优，却受到父母的强烈反对。于是先到园田学园女子短期大学部幼儿教育学系就读，同时入住东映演员培养所的大阪校。毕业后说服父母后，移住到东京。之后从东京广播学院声优科毕业，江崎Promotion(现Mausu Promotion)附属演员培养所毕业，后江崎Promotion(现Mausu Promotion)所属。1992年声优出道。\r\n1997年与同事务所的小岛幸子、增田由纪组成声优组合Chiffons。\r\n2018年7月，与演员桥本祯之结婚。\r\n特长是演奏钢琴。\r\n高中时代加入合唱部。负责女中音声部。\r\n有普通的汽车执照和保育员、幼儿园教师执照。\r\n与雪野五月是东京广播学院时代的同期生。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

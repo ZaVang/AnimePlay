@@ -1,0 +1,109 @@
+{
+    "id": 6756,
+    "name": "来来猫 第二季",
+    "image_path": "data/images/anime/6756.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "讲述饲主与猫咪悠闲的日常生活的《くるねこ》将于2010年7月开始新一季动画，声优为中谷美紀一人役（第一季为小林聡美）。 \r\n中谷美紀（NAKATANI MIKI），1976年東京都出身，1993年以女演员的身份出道，主要作品包括电视剧《白洲次郎》、《JIN-仁-》，电影《嫌われ松子の一生》、《ゼロの焦点》、《スイートリトルライズ》等。 \r\n《くるねこ》动画版由関西テレビ（KTV）和東海テレビ（THK）共同制作，每话时长5分钟，第二季主题歌依然是台湾女歌手徐若瑄演唱的Beautiful Day。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 50,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2010-07-03",
+    "rating_rank": 656,
+    "rating_score": 7.7,
+    "rating_total": 229,
+    "main_character_ids": [
+        10875,
+        10876,
+        10877,
+        10878,
+        10879,
+        58303
+    ],
+    "main_characters": [
+        {
+            "id": 10875,
+            "name": "美輪のもんさん",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/51/5f/10875_crt_phzJA.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/5f/10875_crt_phzJA.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/5f/10875_crt_phzJA.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/51/5f/10875_crt_phzJA.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 10876,
+            "name": "ポ子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/15/5f/10876_crt_FGU4D.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/5f/10876_crt_FGU4D.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/5f/10876_crt_FGU4D.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/15/5f/10876_crt_FGU4D.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 10877,
+            "name": "カラスぼん",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5e/30/10877_crt_oTNd5.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/30/10877_crt_oTNd5.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/30/10877_crt_oTNd5.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5e/30/10877_crt_oTNd5.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 10878,
+            "name": "トメ吉",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/84/dc/10878_crt_8UFLS.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/84/dc/10878_crt_8UFLS.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/84/dc/10878_crt_8UFLS.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/84/dc/10878_crt_8UFLS.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 10879,
+            "name": "胡坊",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/df/0b/10879_crt_89Ypi.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/0b/10879_crt_89Ypi.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/0b/10879_crt_89Ypi.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/df/0b/10879_crt_89Ypi.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 58303,
+            "name": "くるさん",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9e/7c/58303_crt_AIFwN.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/7c/58303_crt_AIFwN.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/7c/58303_crt_AIFwN.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9e/7c/58303_crt_AIFwN.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "id": 39727,
+    "name": "花沢輝気",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c8/be/39727_crt_ausAp.jpg?r=1465897357",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/be/39727_crt_ausAp.jpg?r=1465897357",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/be/39727_crt_ausAp.jpg?r=1465897357",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c8/be/39727_crt_ausAp.jpg?r=1465897357"
+    },
+    "summary": "通称光辉。黑醋中学二年级生，14岁，天生的超能力者，也是黑醋中学的里番长。自视甚高，蔑视无超能力的“凡人”，习惯于日常生活随心所欲的中使用超能力，因此考试、体育无不在行，再加上帅气的长相，深受众人欢迎。认真战斗时有内八字站姿的习惯。被龙套打败后价值观深受影响，对超能力的认知也有所改变，待人变得较和气。与龙套打斗时因龙套手滑导致头顶秃了一大片，从此带上堪比长厨师帽的超夸张假发，直到被樱威削掉假发后才恢复正常发型。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "花泽辉气"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "花沢 輝気"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はなざわ てるき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hanazawa Teruki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月13日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "161.4cm"
+        },
+        {
+            "key": "体重",
+            "value": "47.7kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 13,
+    "stat": {
+        "comments": 15,
+        "collects": 50
+    },
+    "anime_ids": [
+        353605,
+        240760
+    ]
+}

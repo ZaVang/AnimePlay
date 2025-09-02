@@ -1,0 +1,52 @@
+{
+    "id": 226,
+    "name": "满潮永澄",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9c/fd/226_10e8fc047a44b08ed031e1f0ed1_ICXHL.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/fd/226_10e8fc047a44b08ed031e1f0ed1_ICXHL.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/fd/226_10e8fc047a44b08ed031e1f0ed1_ICXHL.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9c/fd/226_10e8fc047a44b08ed031e1f0ed1_ICXHL.jpg"
+    },
+    "summary": "本篇的主人公。居于琦玉的极平凡的中学生。在祖母居住的农村地方濑户游玩之际，在海中遇溺并为灿所拯救。该时，若人鱼被人类看见的话，其中一方便得死亡或是双方成为家人；他为此选项所迫。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "满潮永澄"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "满潮 永澄"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みちしお ながすみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Michishio Nagasumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 8
+    },
+    "anime_ids": [
+        805
+    ]
+}

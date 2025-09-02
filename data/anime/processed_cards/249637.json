@@ -1,0 +1,153 @@
+{
+    "id": 249637,
+    "name": "天使降临到了我身边！",
+    "image_path": "data/images/anime/249637.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "怕生的御宅族女大学生宫子，遇到了天使般的小学生！？\r\n在看到妹妹带来的新朋友小花的瞬间，宫子就无法抑制住心跳！！\r\n她为了和小花成为朋友而奋斗，但……\r\n“想要和超绝可爱的她做朋友”系小品喜剧，开幕♪",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2019-01-08",
+    "rating_rank": 1334,
+    "rating_score": 7.3,
+    "rating_total": 10321,
+    "main_character_ids": [
+        66727,
+        66728,
+        66729,
+        66730
+    ],
+    "main_characters": [
+        {
+            "id": 66727,
+            "name": "星野みやこ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/dd/e5/66727_crt_Ssj1v.jpg?r=1547649363",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/e5/66727_crt_Ssj1v.jpg?r=1547649363",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/e5/66727_crt_Ssj1v.jpg?r=1547649363",
+                "grid": "https://lain.bgm.tv/pic/crt/g/dd/e5/66727_crt_Ssj1v.jpg?r=1547649363"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13164,
+                    "name": "上田麗奈",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c5/14/13164_prsn_KWnmW.jpg?r=1752543801"
+                    },
+                    "short_summary": "日本的女性声优，富山县出身，所属事务所为81 Produce。\r\n初中时同属演剧部的女生有声优志向者，尊敬她的上田觉得“声优肯定是很美妙的职业”，又担心“自己的性格很奇怪”，本来以美术大学为志愿的她最终在声优试音报名结束前三天才报名。\r\n2011年，在第5回81 Audition中获得准优秀奖，之后加入81 Produce。\r\n获第九届声优奖新人女声优奖。\r\n是声优组合Anisonia的成员之一。\r\n在电视动画《摸索吧！部活剧》中，一人分饰18角。\r\n绘画力极强，《摸索吧！部活剧》的试音中因为绘画好而被选中，后来也在花舞少女广播中绘画并得到采用，还担任了《骇客娃娃》第五话的Endcard。\r\n不擅长运动。\r\n在各种场合被人说“凡骨”，自己的性格也很天然。\r\n自称只要对她好，就能喜欢上那个人。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 66728,
+            "name": "白咲花",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/02/31/66728_crt_UE3eu.jpg?r=1547649407",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/31/66728_crt_UE3eu.jpg?r=1547649407",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/31/66728_crt_UE3eu.jpg?r=1547649407",
+                "grid": "https://lain.bgm.tv/pic/crt/g/02/31/66728_crt_UE3eu.jpg?r=1547649407"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 30812,
+                    "name": "指出毬亜",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c0/51/30812_prsn_ZxZX7.jpg?r=1750598778",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/51/30812_prsn_ZxZX7.jpg?r=1750598778",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/51/30812_prsn_ZxZX7.jpg?r=1750598778",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c0/51/30812_prsn_ZxZX7.jpg?r=1750598778"
+                    },
+                    "short_summary": "指出 毬亜（さしで まりあ、1998年9月20日 - ）は、日本の女性声優。WITH LINE所属。埼玉県出身。身長163cm、血液型はAB型。\r\n\r\nアニメ好きな母親の影響で幼少期からアニメを観ており、その時から自然と声優についても意識していたと語っている。\r\n元々は舞台が好きで舞台女優を目指していたが、声が変わっていると言われたことをきっかけに声優を目指すようになった。\r\nA&Gアカデミーの卒業生で、2015年、高校在学中に「チェンクロキャラクターボイスオーディション」最終審査に進出。その後、A&Gアカデミーを経て、2016年4月から現在の事務所に所属となった。\r\n\r\n人物\r\n幼少期に好きだったアニメは、『ソウルイーター』、『天元突破グレンラガン』、『鋼の錬金術師』。\r\n趣味・長所に歌、声楽、ジャズダンス、タップダンス、ピアノを挙げている。姉がおり、姉の作ったオリジナルソングをよく歌うと語っている。その姉が指出を「うみちゃん」と呼んだことから家族には「うみちゃん」と呼ばれている。\r\n動物好きでもあり、家では猫を飼っている。リアルな猫の鳴き声が得意である。また、ヘビやトカゲといった爬虫類も平気だと語っている。\r\n得意料理はプリンである。\r\n人見知りが激しく、相手と毎日、顔を合わせて喋ることができるまでに2～3年かかるほどだと語っている。\r\n乃木坂46、欅坂46、ハロー!プロジェクトといったアイドルが好きである。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 66729,
+            "name": "星野ひなた",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/86/d1/66729_crt_hM5qW.jpg?r=1547826040",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/d1/66729_crt_hM5qW.jpg?r=1547826040",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/d1/66729_crt_hM5qW.jpg?r=1547826040",
+                "grid": "https://lain.bgm.tv/pic/crt/g/86/d1/66729_crt_hM5qW.jpg?r=1547826040"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 28045,
+                    "name": "長江里加",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/93/cb/28045_prsn_OqNoZ.jpg?r=1690867355",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/cb/28045_prsn_OqNoZ.jpg?r=1690867355",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/cb/28045_prsn_OqNoZ.jpg?r=1690867355",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/93/cb/28045_prsn_OqNoZ.jpg?r=1690867355"
+                    },
+                    "short_summary": "長江 里加（ながえ りか、9月28日 - ）は、日本の女性声優。埼玉県出身。青二プロダクションジュニア所属。\r\n\r\n幼少期からディズニー作品が好きで、自分の歌声がテレビから流れてきたらいいなと思い声優業に興味を持った。\r\n友達に「声優に向いているよ！」と言われ本格的に声優を目指し始めた。\r\nアミューズメントメディア総合学院に在籍していた。\r\n2015年に青二プロダクションジュニア所属となる。\r\n2017年『フレームアームズ・ガール』バーゼラルド役で初のメインキャラクターを演じた。\r\n\r\n専門学生時代からの同期に和多田美咲がいる。\r\n英検準2級を持っている。\r\n趣味は、お菓子作り、料理、ピアノ・ギター演奏、テレビ観賞である。ピアノは、5歳から習っており、音感やリズム感には自信があると自負しており、学生時代は吹奏楽部、軽音楽部（ボーカル担当）に所属していた。また、100円均一巡りも趣味にあげている。\r\n食べる事が好きで健康オタクである。特に、中華料理が好きであるがしょっぱい味は苦手だと語っている。また、虫と暗い所は嫌いである。\r\n特技は、中国語の発音、人の顔を覚えることである。\r\nテニス、卓球、バドミントンをやっていた。\r\n自分の性格は「無我夢中」「天真爛漫」であると語っている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 66730,
+            "name": "姫坂乃愛",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8d/9e/66730_crt_o4aoy.jpg?r=1549849338",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/9e/66730_crt_o4aoy.jpg?r=1549849338",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/9e/66730_crt_o4aoy.jpg?r=1549849338",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8d/9e/66730_crt_o4aoy.jpg?r=1549849338"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19339,
+                    "name": "鬼頭明里",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a1/78/19339_prsn_3Dg35.jpg?r=1694799715"
+                    },
+                    "short_summary": "鬼頭明里（きとう あかり）は、日本の女性声優である。ラクーンドッグ所属。\r\nあだ名は「あかりん」。\r\n\r\n10月16日生まれ、愛知県出身、血液型B型、153cm。プロ・フィット声優養成所を経て、現事務所に2015年4月から所属。\r\n趣味は絵を描くこと、歌うこと。特技は絵を描くこと、歌うこと、湯切り。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

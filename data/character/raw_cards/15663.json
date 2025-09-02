@@ -1,0 +1,44 @@
+{
+    "id": 15663,
+    "name": "長谷川遥",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/20/f3/15663_crt_o7C92.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/20/f3/15663_crt_o7C92.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/20/f3/15663_crt_o7C92.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/20/f3/15663_crt_o7C92.jpg"
+    },
+    "summary": "树庆藏老师的研究生，能力很强同时家里还非常有钱，个性也非常现实，给人一种高高在上难以相处的感觉，不过和直保他们相处下来已经慢慢开始改变。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "长谷川遥"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "はせがわ はるか"
+                },
+                {
+                    "k": "昵称",
+                    "v": "长谷川"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 5
+    },
+    "anime_ids": [
+        3012
+    ]
+}

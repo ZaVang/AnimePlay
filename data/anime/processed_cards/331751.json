@@ -1,0 +1,252 @@
+{
+    "id": 331751,
+    "name": "IDOLiSH7-偶像星愿- Third BEAT! 第2部分",
+    "image_path": "data/images/anime/331751.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "デビュー1周年を迎え、記念のライブツアー開催が決まったIDOLiSH7アイドリッシュセブン。\r\n先輩であり、良きライバルであるTRIGGERトリガー、Re:valeリヴァーレも\r\nそれぞれに華々しい活躍で注目を集めていた。\r\nそんな3グループの人気が高まる一方で、芸能界の“ノイズ”が彼らに近づく。\r\n噂、敵意、臆測、仕掛けられた駆け引き。\r\n夢や憧れだけでは生き残れない、華やかな世界の裏側。\r\n様々な思惑が絡み合うなか、\r\nアイドル業界を揺るがす“新勢力”も密かに動き出していた――。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 17,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "女性向",
+        "游戏改"
+    ],
+    "date": "2022-10-02",
+    "rating_rank": 1885,
+    "rating_score": 7.2,
+    "rating_total": 138,
+    "main_character_ids": [
+        43236,
+        43237,
+        43238,
+        43239,
+        43240,
+        43241,
+        43242
+    ],
+    "main_characters": [
+        {
+            "id": 43236,
+            "name": "和泉一織",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ee/12/43236_crt_QEiU9.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/12/43236_crt_QEiU9.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/12/43236_crt_QEiU9.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ee/12/43236_crt_QEiU9.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 8710,
+                    "name": "増田俊樹",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1a/90/8710_prsn_WB2UQ.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/90/8710_prsn_WB2UQ.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/90/8710_prsn_WB2UQ.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1a/90/8710_prsn_WB2UQ.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優。広島県出身。トイズファクトリー所属。\r\n\r\n2009年、東京アナウンス学院放送声優科に在学中、『ミュージカル・テニスの王子様』のオーディションに合格。幸村精市役で俳優デビュー。\r\n2010年9月、事務所の所属部門がメンズトラントセクションから声優部門に移動。10月よりラジオA&G ARTIST ZONE 2hのアシスタントパーソナリティとなり、声優として活動開始。\r\n2011年10月、文化放送「細谷佳正・増田俊樹の全力男子」のパーソナリティとなり、2012年2月に番組から誕生したユニット「Max Boys」としてCDをリリースした。\r\nアニメ、ゲーム、ラジオ、舞台を中心に活動中。\r\n2018年7月31日、スペースクラフト・エンタテインメントを退所し、フリーでの活動期間を経て同年11月1日、レコード会社であるトイズファクトリーに所属。同日には公式サイトが開設され、2019年春に初の自身名義のCDのリリースも発表された。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 43237,
+            "name": "二階堂大和",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/24/84/43237_crt_P0aZ6.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/84/43237_crt_P0aZ6.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/84/43237_crt_P0aZ6.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/24/84/43237_crt_P0aZ6.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 16335,
+                    "name": "白井悠介",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5f/01/16335_prsn_63K8k.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/01/16335_prsn_63K8k.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/01/16335_prsn_63K8k.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5f/01/16335_prsn_63K8k.jpg"
+                    },
+                    "short_summary": "白井 悠介（しらい ゆうすけ、1986年1月18日 - ）は、日本の男性声優。\r\n長野県出身。EARLY WING所属。アミューズメントメディア総合学院声優タレント学科卒業。\r\n\r\n趣味・特技はダーツ、サッカー、ボウリング、髭抜き、ハエダンス、階段を素早く下りる、ご飯を美味しそうに食べること、利きコーラ（炭酸がある場合に限る）。\r\n形態模写の能力が高く、レパートリーはハエ、ヌー、ハシビロコウ、ルイス・アルベルト・スアレス、雷鳥、アライグマ、芝刈り機、ネズミ、猫、タガメ、カルパッチョ、蝉（蚊）、けん玉、冷やし中華、芋虫、蛇、パセリ（幼少期）、リス、シロフクロウ、アンパイア、一反木綿、トナカイ、カマキリ、ウーパールーパー、除夜の鐘、クリスマスツリー、クレーンゲームのアーム、ビーフジャーキー、ビタミン、ふきのとう、ハンガー、カウボーイ、木、羊、ゴリラ、クジラ、喉仏、ゴキブリ、馬、ゼリー、エビ、ゾウ、炭酸、そば、フィッシュ＆チップスと幅が広い。\r\n好物は回鍋肉と天狗ビーフジャーキー。好きな飲み物はコカ・コーラ ゼロとアサヒファイバー7500。好きなアニメは、『プラネテス』や、『爆走兄弟レッツ&ゴー!!』。『美男高校地球防衛部LOVE!』で初のメインキャラクターを演じる。アニメ『リルリルフェアリル』では、2017年5月現在で一人十三役を演じる。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 43238,
+            "name": "和泉三月",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/82/07/43238_crt_BB625.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/07/43238_crt_BB625.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/07/43238_crt_BB625.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/82/07/43238_crt_BB625.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4874,
+                    "name": "代永翼",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f9/f8/4874_prsn_oOgBw.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/f8/4874_prsn_oOgBw.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/f8/4874_prsn_oOgBw.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f9/f8/4874_prsn_oOgBw.jpg"
+                    },
+                    "short_summary": "代永 翼（よなが つばさ、1984年1月15日 - ）は、日本の男性声優。賢プロダクション所属。神奈川県生まれ、茨城県牛久市育ち。妻は同じく声優の西墻由香。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 43239,
+            "name": "四葉環",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b6/4b/43239_crt_lhQEK.jpg?r=1586017951",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/4b/43239_crt_lhQEK.jpg?r=1586017951",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/4b/43239_crt_lhQEK.jpg?r=1586017951",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b6/4b/43239_crt_lhQEK.jpg?r=1586017951"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4662,
+                    "name": "KENN",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f6/4b/4662_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/4b/4662_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/4b/4662_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f6/4b/4662_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "KENN（ケン、本名：大橋賢一郎）（1982年3月24日－）是日本的男歌手、演员、声优。Zynchro所属。东京都出身。东京自由学园毕业。血型A型。身高172cm。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 43240,
+            "name": "逢坂壮五",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a4/f1/43240_crt_i0Me2.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/f1/43240_crt_i0Me2.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/f1/43240_crt_i0Me2.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a4/f1/43240_crt_i0Me2.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5015,
+                    "name": "阿部敦",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/36/ae/5015_prsn_2iZsa.jpg?r=1515335203",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/ae/5015_prsn_2iZsa.jpg?r=1515335203",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/ae/5015_prsn_2iZsa.jpg?r=1515335203",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/36/ae/5015_prsn_2iZsa.jpg?r=1515335203"
+                    },
+                    "short_summary": "阿部 敦（あべ あつし、1981年3月25日 - ）は、日本の声優、俳優、歌手。賢プロダクション所属。栃木県足利市出身。血液型はO型。身長161cm。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 43241,
+            "name": "六弥ナギ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/44/6d/43241_crt_kz4f6.jpg?r=1586443606",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/6d/43241_crt_kz4f6.jpg?r=1586443606",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/6d/43241_crt_kz4f6.jpg?r=1586443606",
+                "grid": "https://lain.bgm.tv/pic/crt/g/44/6d/43241_crt_kz4f6.jpg?r=1586443606"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5872,
+                    "name": "江口拓也",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f6/f1/5872_prsn_d0uhD.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/f1/5872_prsn_d0uhD.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/f1/5872_prsn_d0uhD.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f6/f1/5872_prsn_d0uhD.jpg"
+                    },
+                    "short_summary": "江口拓也（1987年5月22日－），日本男性配音演员，出身于茨城县。目前隶属于81 Produce。\r\n\r\n毕业自日本工学院専门学校。第1回81竞试合格者。\r\n2012年获得第6届新人男声优奖。\r\n和木村良平、代永翼组成团体“Trignal”（隶属于Kiramune）共同主持广播“Trignalのキラキラ☆ビートＲ”。\r\n2011年8月和小野友树组成团体“Teamゆーたく”。\r\n对咖哩饭有异常的热爱，曾经有一周吃五次咖哩的经验，也常在推特上PO有关咖哩的推文。\r\n认为自己是M，但被杉田智和评论为“披着M皮的S”。\r\n不管是在广播还是见面会都很容易被前辈捉弄，就连跟同辈的声优也被照样捉弄。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 43242,
+            "name": "七瀬陸",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/36/f6/43242_crt_T11st.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/f6/43242_crt_T11st.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/f6/43242_crt_T11st.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/36/f6/43242_crt_T11st.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4965,
+                    "name": "小野賢章",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/22/85/4965_prsn_7w6iz.jpg?r=1709906610",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/85/4965_prsn_7w6iz.jpg?r=1709906610",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/85/4965_prsn_7w6iz.jpg?r=1709906610",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/22/85/4965_prsn_7w6iz.jpg?r=1709906610"
+                    },
+                    "short_summary": "小野賢章（1989年10月5日－）是日本的男性演員、聲優。福岡縣出生、東京都出身。\r\n以前是劇團向日葵系列的砂岡事務所所屬。2012年9月30日退出約14年所屬的砂岡事務所。目前的事务所为Animo Produce。\r\n2013年12月，宣布将在2014年2月以黑子的篮球 第二季的片尾曲“FANTASTIC TUNE”为个人名义歌手身份出道。\r\n\r\n以哈利波特日语吹替版作为契机而成为声优。本人说过“声优只能以声音来传达事物，不过演员能用表情跟肢体动作表达出来，虽然两边都有困难的地方，不过能作为演员用身体表演也很快乐。”所以并没有特别把声优跟演员的工作区别开来，今后也不会拘泥于声音的工作，会挑战更多共种各样的工作。2014年动过声带息肉切除手术。\r\n从12岁开始的10年间，一直在为哈利波特日语版中的主角哈利·波特配音。当时本人并没有读过哈利波特原作。是因为母亲是哈利波特的大粉丝，所以被母亲劝诱去参加征选会。当确定要饰演主角时，身为哈利波特粉丝的双亲比他还高兴。名字的由来是来自于设计家安部兼章。由于当时还是小学6年级生，不太懂得要怎么表演，所以都是照着导演的指示来配音的，后期渐渐的开始能自己理解该怎么演。在配第三作“哈利波特─阿兹卡班的逃犯”时，因为正处于变声期，所以当中战斗场面的嘶吼声配得非常辛苦。一直拼命努力演出的他，也以变声期作为契机开始会思考更多关于演技的事情。\r\n\r\n2017年2月19日，有相关报道证实与同是声优的花泽香菜是恋人关系，并同居于东京港区某公寓。本人亦于2017年2月22日在个人部落格承认交往。\r\n2020年7月8日，宣布与花泽香菜结婚。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

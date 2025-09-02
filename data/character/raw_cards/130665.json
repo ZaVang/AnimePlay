@@ -1,0 +1,92 @@
+{
+    "id": 130665,
+    "name": "安和すばる",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6f/ea/130665_crt_CjaUT.jpg?r=1685333734",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6f/ea/130665_crt_CjaUT.jpg?r=1685333734",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6f/ea/130665_crt_CjaUT.jpg?r=1685333734",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6f/ea/130665_crt_CjaUT.jpg?r=1685333734"
+    },
+    "summary": "芸能スクールに通う女の子。有望株として CM に出たりしている。世渡り上手の美少女で愛想も良い。モデルと言われてもおかしくない美貌をほこっているが、中身は気が強く負けず嫌いなお嬢様。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "安和昴"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "安和 すばる"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あわ すばる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "SUBARU AWA"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "来自",
+            "value": "トゲナシトゲアリ"
+        },
+        {
+            "key": "擅长",
+            "value": "ドラム"
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        },
+        {
+            "key": "生日",
+            "value": "4月27日"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "出身",
+            "value": "兵庫県神戸市 出身"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "パクチー ピーマン レモン 酸っぱい系"
+        },
+        {
+            "key": "爱好",
+            "value": "＃インドア派 ＃ゲーム ＃ネット ＃レスバトル好き"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://girls-band-cry.com/character/subaru/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 27,
+    "stat": {
+        "comments": 299,
+        "collects": 947
+    },
+    "anime_ids": [
+        431767
+    ]
+}

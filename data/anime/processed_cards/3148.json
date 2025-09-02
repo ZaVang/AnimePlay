@@ -1,0 +1,87 @@
+{
+    "id": 3148,
+    "name": "咕噜咕噜魔法阵",
+    "image_path": "data/images/anime/3148.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　三百年前﹐魔法师纪力为了统治世界﹐于是召唤了很多妖怪﹐向人类发动战争。而当时哥达国的国王胡加三世召集了大批使用光魔法的人士展开对抗。可是战争十分激烈﹐双方死伤惨重。胡加三世就找了一个使用黑暗魔法但站在正义一边的神秘部族﹐那个部族使用一种神秘的魔法封印了纪力。这个部族﹐就是米古米古族。而这种魔法就是咕噜咕噜。\r\n　　三百年后，封印失效，纪力复活，于是哥达国的国王胡加十三世便贴出告示，找寻勇者和魔女。仁杰在其父亲巴杜的胁迫下，到了魔法婆婆的家，和米古米古族的遗裔歌莉踏上讨伐纪力之旅... ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 45,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1994-10-13",
+    "rating_rank": 1336,
+    "rating_score": 7.4,
+    "rating_total": 279,
+    "main_character_ids": [
+        1777,
+        1778
+    ],
+    "main_characters": [
+        {
+            "id": 1777,
+            "name": "ニケ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d0/d8/1777_crt_m3Hp2.jpg?r=1631424792",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/d8/1777_crt_m3Hp2.jpg?r=1631424792",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/d8/1777_crt_m3Hp2.jpg?r=1631424792",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d0/d8/1777_crt_m3Hp2.jpg?r=1631424792"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4070,
+                    "name": "瀧本富士子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/1e/4070_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/1e/4070_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/1e/4070_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/1e/4070_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の女性声優。アーツビジョン所属。大阪府出身。\r\n\r\n最初の仕事は声の仕事ではなく、エキストラだったと語っている。以前から芝居に興味があり、小学校では落語部、高校は演劇部に参加していた。また、アニメや特撮も好きで、特にヒーローものに憧れていたという。\r\n高校時代から勝田声優学院の通信教育を受けていたが、関西弁が抜けないと思ったことや、身体が弱いことを理由に親に安定した仕事を勧められたことから、一時期は一般職に就いていた。だが芝居の仕事をあきらめきれず、テレビ番組でのアニメの物まねで関西代表として受かったことや、アーツビジョン放送劇団に合格したことをきっかけに退職して上京。その後、東京で一般職をしながら、声優の仕事を始める。\r\n趣味はパソコン、カラオケ、パチスロ、ゲーム、イラストレーション、ダーツ。\r\n2014年2月4日、声優の荻原秀樹と入籍したことをブログで発表。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 1778,
+            "name": "ククリ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/63/9b/1778_crt_e76Ze.jpg?r=1631424834",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/9b/1778_crt_e76Ze.jpg?r=1631424834",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/9b/1778_crt_e76Ze.jpg?r=1631424834",
+                "grid": "https://lain.bgm.tv/pic/crt/g/63/9b/1778_crt_e76Ze.jpg?r=1631424834"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4220,
+                    "name": "吉田小南美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/35/d0/4220_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/35/d0/4220_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/35/d0/4220_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/35/d0/4220_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "古川登志夫主宰の劇団青杜入団後、日本ナレーション演技研究所を経てアーツビジョンに所属。1997年7月1日にフリーとなり、1998年7月1日には俳協に所属。2000年8月1日に独立して個人事務所であるアンジュドールの所属となり、2001年4月1日には現在の芸名である吉田小南美に改名することに。2005年3月1日に現在のプロダクション・タンクに所属。2006年4月、自らが講師となり声優を目指す人を直接指導するワークショップ「アンジュドール」を開設。\r\n\r\n荒木香衣とは劇団青杜、および日本ナレーション演技研究所時代の先輩にあたり、私生活でも仲がよいことで知られる。\r\n\r\n『金色のガッシュベル!!』のガッシュ・ベル役を担当していた大谷育江の休業の際に代役を務めたが、大谷が復帰しないまま最終回を迎えたため、実質上吉田が2代目扱いとなった。\r\n\r\n『青春ラジメニア』の企画で南かおりと共にユニットを組んでCDアルバムをリリースしたこともある。デビュー当時は決して上手ではなかったが、その出演アニメ作品の音楽担当をしていた田中公平から特訓を受けたという（『青春ラジメニア』で2人ゲスト出演時にコメント）。\r\n\r\nお酒が大の好物。趣味はアロマテラピー。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,371 @@
+{
+    "id": 199392,
+    "type": 2,
+    "name": "血界戦線 & BEYOND",
+    "name_cn": "血界战线 & BEYOND",
+    "summary": "曾经被称为纽约的城市，仅仅一晚便消失无踪。\r\n出现在那里的城市“赫尔沙雷姆兹·罗特”。在浓雾的另一侧展开，连结“异世界”与现世的这一地区，变化成了各怀心思的人们所跋扈的“地球上最危险的城市”。\r\n为了保护这座混沌之城的均衡，持续着不为人知的活动的人们。\r\n以使用布雷格利德流血斗术的强硬绅士克劳斯·V·莱因赫兹为首领，面带伤疤的克劳斯的左膀右臂史蒂芬，银发不良扎普·伦弗洛与半人半鱼的齐德，不可视的人狼钱·皇与独眼的淑女K·K。以及拥有“诸神的义眼”的青年雷欧……。\r\n当骚动发生之时，秘密结社·莱布拉必定会现身。\r\n响彻小巷子里的狂乱与邪恶的怪物们。深爱的深渊与不断重复的灾变。不会结束的家常便饭现在再次开幕。\r\n并且，去往更加遥远的Beyond……。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2017-10-07",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/98/77/199392_j2kAA.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/98/77/199392_j2kAA.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/98/77/199392_j2kAA.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/98/77/199392_j2kAA.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/98/77/199392_j2kAA.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "血界战线 & BEYOND"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Kekkai Sensen & Beyond",
+                    "k": null
+                },
+                {
+                    "v": "Blood Blockade Battlefront & Beyond",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2017年10月7日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://kekkaisensen.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "MBS"
+        },
+        {
+            "key": "其他电视台",
+            "value": "TOKYO MX / BS11"
+        },
+        {
+            "key": "播放结束",
+            "value": "2017年12月23日"
+        },
+        {
+            "key": "导演",
+            "value": "高柳滋仁"
+        },
+        {
+            "key": "Copyright",
+            "value": "©2017 内藤泰弘／集英社・血界戦線 & BEYOND製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "内藤泰弘(集英社 ジャンプ コミックス刊)"
+        },
+        {
+            "key": "人物设定",
+            "value": "川元利浩"
+        },
+        {
+            "key": "动画制作",
+            "value": "BONES"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 12,
+    "rating": {
+        "rank": 816,
+        "total": 6010,
+        "count": {
+            "one": 9,
+            "two": 4,
+            "three": 7,
+            "four": 39,
+            "five": 94,
+            "six": 529,
+            "seven": 1995,
+            "eight": 2661,
+            "nine": 495,
+            "ten": 177
+        },
+        "score": 7.5
+    },
+    "collection": {
+        "wish": 1452,
+        "collect": 10122,
+        "doing": 420,
+        "on_hold": 515,
+        "dropped": 177
+    },
+    "tags": [
+        {
+            "name": "BONES",
+            "count": 1531
+        },
+        {
+            "name": "战斗",
+            "count": 918
+        },
+        {
+            "name": "2017年10月",
+            "count": 837
+        },
+        {
+            "name": "奇幻",
+            "count": 799
+        },
+        {
+            "name": "漫画改",
+            "count": 762
+        },
+        {
+            "name": "TV",
+            "count": 731
+        },
+        {
+            "name": "血界战线",
+            "count": 627
+        },
+        {
+            "name": "热血",
+            "count": 539
+        },
+        {
+            "name": "漫改",
+            "count": 397
+        },
+        {
+            "name": "2017",
+            "count": 383
+        },
+        {
+            "name": "续作",
+            "count": 273
+        },
+        {
+            "name": "第二季",
+            "count": 166
+        },
+        {
+            "name": "搞笑",
+            "count": 146
+        },
+        {
+            "name": "高柳滋仁",
+            "count": 102
+        },
+        {
+            "name": "加茂靖子",
+            "count": 42
+        },
+        {
+            "name": "日本",
+            "count": 36
+        },
+        {
+            "name": "骨头社",
+            "count": 24
+        },
+        {
+            "name": "群像",
+            "count": 22
+        },
+        {
+            "name": "2017年",
+            "count": 21
+        },
+        {
+            "name": "日常",
+            "count": 16
+        },
+        {
+            "name": "单元剧",
+            "count": 15
+        },
+        {
+            "name": "内藤泰弘",
+            "count": 12
+        },
+        {
+            "name": "中井和哉",
+            "count": 10
+        },
+        {
+            "name": "石田彰",
+            "count": 9
+        },
+        {
+            "name": "日本动画",
+            "count": 8
+        },
+        {
+            "name": "燃",
+            "count": 7
+        },
+        {
+            "name": "季番",
+            "count": 7
+        },
+        {
+            "name": "川元利浩",
+            "count": 7
+        },
+        {
+            "name": "岩崎太整",
+            "count": 7
+        },
+        {
+            "name": "科幻",
+            "count": 6
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "series": false,
+    "main_character_ids": [
+        31630,
+        31632,
+        31633,
+        31640
+    ],
+    "main_characters": [
+        {
+            "id": 31630,
+            "name": "レオナルド・ウォッチ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4c/35/31630_crt_pGC2c.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/35/31630_crt_pGC2c.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/35/31630_crt_pGC2c.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4c/35/31630_crt_pGC2c.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4231,
+                    "name": "阪口大助",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/10/4231_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/10/4231_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/10/4231_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/10/4231_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 31632,
+            "name": "クラウス・V・ラインヘルツ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/52/9a/31632_crt_vxaVV.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/9a/31632_crt_vxaVV.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/9a/31632_crt_vxaVV.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/52/9a/31632_crt_vxaVV.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4130,
+                    "name": "小山力也",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c9/29/4130_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/29/4130_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/29/4130_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c9/29/4130_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の男性俳優、声優、ナレーター。劇団俳優座所属。京都府京都市生まれ。愛称は「リッキー」「りきちゃん」「リキ」。\r\n立命館中学校・高等学校を経て1982年に立命館大学法学部入学。劇団立命芸術劇場に所属する。同期に現TBSアナウンサーの長峰由紀がおり、長峰を「トットちゃん」と呼んでいた[2]。当時は別役実、つかこうへい作品などを上演していた。1987年に大学卒業後、桐朋学園大学短期大学部芸術科演劇専攻に進む。部活動は水泳部に所属しており、水着になることには何の抵抗もないという。卒業後に劇団俳優座入団。\r\n\r\n『ER』が声優デビューとなるが、それが契機となりアニメなどで活躍する下地となった。また『うたわれるものらじお』をきっかけに、最近ではいろいろな女性声優とのラジオ、TV番組が急増。\r\n\r\n舞台俳優としても活躍し、2000年頃からはヨーロッパでの舞台公演（イギリス・フランス・オランダ・ルーマニア・イタリア・ロシア）に積極的に参加。2001年にアントーニオ役で出演した『ヴェニスの商人』は、第9回読売演劇大賞優秀作品賞を受賞。\r\n\r\n2009年には神谷明の降板により、『名探偵コナン』の二代目・毛利小五郎役に選ばれた。過去にもテレビシリーズ、映画『名探偵コナン 探偵たちの鎮魂歌』、テレビゲーム『名探偵コナン 追憶の幻想』のゲスト声優として何かとコナンには関わっている。\r\n\r\n2011年、第五回声優アワード「富山敬賞」を受",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 31633,
+            "name": "ザップ・レンフロ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/99/e3/31633_crt_444T4.jpg?r=1480961922",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/e3/31633_crt_444T4.jpg?r=1480961922",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/e3/31633_crt_444T4.jpg?r=1480961922",
+                "grid": "https://lain.bgm.tv/pic/crt/g/99/e3/31633_crt_444T4.jpg?r=1480961922"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4424,
+                    "name": "中井和哉",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/83/45/4424_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/45/4424_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/45/4424_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/83/45/4424_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の男性声優、ナレーター。兵庫県神戸市出身。青二プロダクション所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 31640,
+            "name": "スティーブン・A・スターフェイズ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d6/43/31640_crt_zCFKK.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/43/31640_crt_zCFKK.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/43/31640_crt_zCFKK.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d6/43/31640_crt_zCFKK.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3872,
+                    "name": "宮本充",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e4/e0/3872_prsn_8C5sC.jpg?r=1501343362",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/e0/3872_prsn_8C5sC.jpg?r=1501343362",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/e0/3872_prsn_8C5sC.jpg?r=1501343362",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e4/e0/3872_prsn_8C5sC.jpg?r=1501343362"
+                    },
+                    "short_summary": "日本の男性俳優、声優、ナレーターである。本名同じ。劇団昴所属・理事。大阪府堺市出身。生まれは東京都。大阪府立泉陽高等学校、北海道大学工学部合成化学科卒業。血液型はA型。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

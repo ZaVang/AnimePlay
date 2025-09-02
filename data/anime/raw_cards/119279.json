@@ -1,0 +1,433 @@
+{
+    "id": 119279,
+    "type": 2,
+    "name": "Go! プリンセスプリキュア",
+    "name_cn": "Go! Princess 光之美少女",
+    "summary": "梦想是成为公主的春野遥，于新的学期正式成为寄宿学校贵族学园的初中一年级生，准备展开期待已久的新生活。就在此时，她目睹邪恶势力把人通往梦想的“门”紧密封闭，并染上浓厚的绝望。然后在机缘巧合之下，她集齐了希望王国彼方王子誓死守护的公主香水及装扮锁匙，变身成为光之美少女——花神天使，开始奋勇对抗敌人。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2015-02-01",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/f5/72/119279_5v8yG.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/f5/72/119279_5v8yG.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/f5/72/119279_5v8yG.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/f5/72/119279_5v8yG.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/f5/72/119279_5v8yG.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "Go! Princess 光之美少女"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "GO! 光之美少女公主",
+                    "k": null
+                },
+                {
+                    "v": "公主Q娃",
+                    "k": null
+                },
+                {
+                    "v": "Go! PRINCESS PRECURE",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "50"
+        },
+        {
+            "key": "放送开始",
+            "value": "2015年2月1日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.toei-anim.co.jp/tv/princess_precure"
+        },
+        {
+            "key": "播放电视台",
+            "value": "ABC・テレビ朝日系"
+        },
+        {
+            "key": "其他电视台",
+            "value": "朝日电视台"
+        },
+        {
+            "key": "播放结束",
+            "value": "2016年1月31日"
+        },
+        {
+            "key": "音乐",
+            "value": "高木洋"
+        },
+        {
+            "key": "Copyright",
+            "value": "©ABC・東映アニメーション"
+        },
+        {
+            "key": "原作",
+            "value": "東堂いづみ"
+        },
+        {
+            "key": "企画",
+            "value": "野下洋、西出将之（朝日放送）、波多野淳一（ADK）、清水慎治（第1 - 34話）、鷲尾天（東映アニメーション）"
+        },
+        {
+            "key": "制片人",
+            "value": "土肥繁葉樹（第1 - 20話） → 植月幹夫（朝日放送）、高橋知子（ADK）、柴田宏明（第1 - 23話）、神木優（東映アニメーション）"
+        },
+        {
+            "key": "系列构成",
+            "value": "田中仁"
+        },
+        {
+            "key": "制作管理",
+            "value": "制作担当：山崎尊宗"
+        },
+        {
+            "key": "美术设计",
+            "value": "増田竜太郎"
+        },
+        {
+            "key": "色彩设计",
+            "value": "佐久間ヨシ子"
+        },
+        {
+            "key": "3DCG 导演",
+            "value": "鎌田匡晃（第1 - 25話）、川崎健太郎（第2 - 14話）、小林真理（第16 - 49話）、宮本浩史（第26話 - ）"
+        },
+        {
+            "key": "人物设定",
+            "value": "中谷友紀子"
+        },
+        {
+            "key": "总作画监督",
+            "value": "中谷友紀子"
+        },
+        {
+            "key": "动画制作",
+            "value": "東映アニメーション"
+        },
+        {
+            "key": "制作",
+            "value": "朝日放送テレビ、アサツー ディ・ケイ、東映アニメーション"
+        },
+        {
+            "key": "脚本",
+            "value": "田中仁、高橋ナツコ、香村純子、伊藤睦美、成田良美"
+        },
+        {
+            "key": "分镜",
+            "value": "田中裕太、門由利子、田中孝行、座古明史、鎌谷悠、三塚雅人、中村亮太、芝田浩樹、村上貴之、黒田成美、佐々木憲世、暮田公平、鎌仲史陽、藤本義孝、入好さとる、大塚隆史"
+        },
+        {
+            "key": "演出",
+            "value": "田中裕太、門由利子、岩井隆央、座古明史、鎌谷悠、三塚雅人、中村亮太、芝田浩樹、鈴木裕介、村上貴之、藤本義孝、佐々木憲世、暮田公平、大塚隆史、平山美穂、畑野森生"
+        },
+        {
+            "key": "作画监督",
+            "value": "上野ケン、稲上晃、フランシス・カネダ、アリス・ナリオ、爲我井克美、赤田信人、河野宏之、松浦仁美、大田和寛、アリストテル・ナサリオ、中谷友紀子、青山充、飯飼一幸、五十内裕輔、渡邊巧大"
+        },
+        {
+            "key": "系列监督",
+            "value": "田中裕太"
+        }
+    ],
+    "volumes": 0,
+    "eps": 50,
+    "total_episodes": 50,
+    "rating": {
+        "rank": 472,
+        "total": 573,
+        "count": {
+            "one": 6,
+            "two": 1,
+            "three": 1,
+            "four": 4,
+            "five": 10,
+            "six": 40,
+            "seven": 125,
+            "eight": 240,
+            "nine": 103,
+            "ten": 43
+        },
+        "score": 7.8
+    },
+    "collection": {
+        "wish": 441,
+        "collect": 791,
+        "doing": 161,
+        "on_hold": 94,
+        "dropped": 67
+    },
+    "tags": [
+        {
+            "name": "光之美少女",
+            "count": 227
+        },
+        {
+            "name": "TV",
+            "count": 166
+        },
+        {
+            "name": "2015",
+            "count": 129
+        },
+        {
+            "name": "東映アニメーション",
+            "count": 117
+        },
+        {
+            "name": "原创",
+            "count": 110
+        },
+        {
+            "name": "东映",
+            "count": 93
+        },
+        {
+            "name": "公主Q娃",
+            "count": 70
+        },
+        {
+            "name": "プリキュア",
+            "count": 59
+        },
+        {
+            "name": "百合",
+            "count": 45
+        },
+        {
+            "name": "田中裕太",
+            "count": 40
+        },
+        {
+            "name": "2015年1月",
+            "count": 33
+        },
+        {
+            "name": "田中仁",
+            "count": 21
+        },
+        {
+            "name": "Q娃",
+            "count": 16
+        },
+        {
+            "name": "日本",
+            "count": 13
+        },
+        {
+            "name": "中谷友纪子",
+            "count": 9
+        },
+        {
+            "name": "2015年",
+            "count": 9
+        },
+        {
+            "name": "战斗",
+            "count": 8
+        },
+        {
+            "name": "魔法少女",
+            "count": 8
+        },
+        {
+            "name": "东映动画",
+            "count": 8
+        },
+        {
+            "name": "子供向",
+            "count": 7
+        },
+        {
+            "name": "2015年2月",
+            "count": 7
+        },
+        {
+            "name": "年番",
+            "count": 7
+        },
+        {
+            "name": "幼女向",
+            "count": 7
+        },
+        {
+            "name": "奇幻",
+            "count": 7
+        },
+        {
+            "name": "TVA",
+            "count": 6
+        },
+        {
+            "name": "嶋村侑",
+            "count": 5
+        },
+        {
+            "name": "浅野真澄",
+            "count": 4
+        },
+        {
+            "name": "2010s",
+            "count": 4
+        },
+        {
+            "name": "precure",
+            "count": 4
+        },
+        {
+            "name": "霹雳Q娃",
+            "count": 3
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "series": false,
+    "main_character_ids": [
+        28504,
+        28505,
+        28506,
+        37195
+    ],
+    "main_characters": [
+        {
+            "id": 28504,
+            "name": "春野はるか／キュアフローラ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2c/96/28504_crt_mNAKL.jpg?r=1693039193",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/96/28504_crt_mNAKL.jpg?r=1693039193",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/96/28504_crt_mNAKL.jpg?r=1693039193",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2c/96/28504_crt_mNAKL.jpg?r=1693039193"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4933,
+                    "name": "嶋村侑",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5c/4e/4933_prsn_yZzxs.jpg?r=1514984285",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/4e/4933_prsn_yZzxs.jpg?r=1514984285",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/4e/4933_prsn_yZzxs.jpg?r=1514984285",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5c/4e/4933_prsn_yZzxs.jpg?r=1514984285"
+                    },
+                    "short_summary": "2005年，在网络动画《圣光之翼》中出演女主角琉克丝·迫水，正式声优出道。2008年3月，退出原所属的Office薰，同年4月，移籍至贤Production。工作重心主要以电影电视剧吹替为主，2011年起，才逐渐在电视动画中出演主要角色。2013年，在电视动画《探险Driland-1000年的真宝-》出演雷蝶花绯铃，首次在电视动画中出演女主角。\r\n出演角色广泛，从少女到成年女性、少年甚至非人类的角色，涵盖了各种不同类型的角色。足球迷，喜欢的动物是刺猬。兴趣爱好是骑马和看电视剧，特技是游泳 。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28505,
+            "name": "海藤みなみ／キュアマーメイド",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a4/7f/28505_crt_JlpKz.jpg?r=1693039252",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/7f/28505_crt_JlpKz.jpg?r=1693039252",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/7f/28505_crt_JlpKz.jpg?r=1693039252",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a4/7f/28505_crt_JlpKz.jpg?r=1693039252"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3841,
+                    "name": "浅野真澄",
+                    "type": 1,
+                    "career": [
+                        "writer",
+                        "artist",
+                        "seiyu",
+                        "writer"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b6/6e/3841_prsn_wLZh5.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/6e/3841_prsn_wLZh5.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/6e/3841_prsn_wLZh5.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b6/6e/3841_prsn_wLZh5.jpg"
+                    },
+                    "short_summary": "2005年与堀江由衣等另外4名声优结成名为“Aice5”的声优团体。2008年4月30日，离开ARTSVISION，加入青二Production。\r\n\r\n秋田县能代市出身，10岁时搬到埼玉县三乡市。\r\n生长于非常严格的家庭，从小父母就对她看的漫画和电视节目有很大的限制，后来就算不被父母限制，也几乎不看电视。对动画和声优也不了解，参加声优选拔的理由是，选拔活动是合宿的形式，像是和朋友一起去旅行的感觉。父母在她小时候就开始叮咛“绝对不要走演戏这条路”。其实浅野父母在年轻时，以演戏为志愿，参加俳优养成所而成为相识的契机，进而结婚。因为父母自身体会过演戏这条路的艰辛，所以不希望女儿走这条路。浅野向父母表示想走声优这条路的时候，受到了强烈反对，不过现在父母也对她的工作给予支持。\r\n小学一年级到高中三年级，每年都获得读书心得奖。\r\n\r\n身高163cm，体重49kg。小学时就已经有160厘米。\r\n小时候头就很大，绰号是“脑袋”。长大之后，身体和头取得平衡，也仍然很介意这件事。浅野在广播里把这件事告诉大原沙耶香后，被大爆笑，之后大原告诉与浅野一起主持广播的斋藤桃子，被浅野欺负的时候就回骂“脑袋”来反击。\r\n被称赞胸部很大，皮肤很白皙。\r\n\r\n家里很穷，所以对于金钱很执著。\r\n因为付不出读大学的费用，所以从高中时就为了得到大学奖学金而努力，为了让奖学金申请书看起来很漂亮，高中时代都没有迟到、没有缺席、没有早退。大学时接受日本育英会的奖学金，从国学院大学毕业。目标在30岁以前还完奖学金，2007年8月的生日前还完了约日币500万元。\r\n理想的男性是有着知性与经济能力的人，不过也说了不能依靠对方的收入。\r\n第1回声优アワード ベストパーソナリティ赏得主。\r\n\r\n2018年2月12日，在个人推特上宣布与《旋风管家》作者畑健二郎结婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28506,
+            "name": "天ノ川きらら／キュアトゥインクル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a9/56/28506_crt_hZjyd.jpg?r=1702802099",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/56/28506_crt_hZjyd.jpg?r=1702802099",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/56/28506_crt_hZjyd.jpg?r=1702802099",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a9/56/28506_crt_hZjyd.jpg?r=1702802099"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 12569,
+                    "name": "山村響",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/df/ce/12569_prsn_EVTkz.jpg?r=1687679505",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/ce/12569_prsn_EVTkz.jpg?r=1687679505",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/ce/12569_prsn_EVTkz.jpg?r=1687679505",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/df/ce/12569_prsn_EVTkz.jpg?r=1687679505"
+                    },
+                    "short_summary": "福岡県出身。血液型はO型。声優・キャラクターソング等の名義は山村響、アーティストとしてはhibiku（ひびく）名義で音楽活動をしていたが、2019年3月発売のミニアルバムからは音楽活動も山村響名義に統一する。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 37195,
+            "name": "紅城トワ／トワイライト／キュアスカーレット",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2a/67/37195_crt_1G6b8.jpg?r=1702804520",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/67/37195_crt_1G6b8.jpg?r=1702804520",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/67/37195_crt_1G6b8.jpg?r=1702804520",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2a/67/37195_crt_1G6b8.jpg?r=1702804520"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4244,
+                    "name": "沢城みゆき",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/b0/4244_prsn_Igahi.jpg?r=1687791526",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/b0/4244_prsn_Igahi.jpg?r=1687791526",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/b0/4244_prsn_Igahi.jpg?r=1687791526",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/b0/4244_prsn_Igahi.jpg?r=1687791526"
+                    },
+                    "short_summary": "日本长野县出身的女性声优。昵称みゆきち(Miyukichi)，隶属青二Production事务所。\r\n\r\n1998年，Broccoli公司弄出一系列旗下精品店2D角色的策划，即猫耳女仆装萌LOLI角色商品的推广，并且在全国范围开展了还算有声势的“Di Gi Charat”角色声优遴选活动。那时候，初中二年级也是选手中年龄第二小的泽城美雪获得了评委特别奖，和得到冠军的真田麻美（真田アサミ）一起于“Di Gi Charat”声优出道。\r\n2001年，在动画《顽皮小白貂》中首次为主演角色配音。\r\n\r\n未进入过声优养成所的她经过同是D.U.P.成员的冰上恭子介绍，来到以外国影视吹替为特色的事务所Mausu Promotion，之后演技学习上得到了更好的指导，也获得了不少锻炼经验，可以明显地感觉她的声优本领技巧历精更始。\r\n2007年秋，成为Theatre剧团子的准剧团成员，开始了舞台剧的表演生涯。\r\n2009年，获得第三届声优奖助演女声优赏。获“以率真的表演为多部作品添色不少的实力派声优”的评价。\r\n2010年，获得第四届声优奖主演女声优赏。2010年全年，泽城的总演出电视动画集数是219话，即大约在每一季度，便有超过50话的动画都能听见她的声音。\r\n2011年，获得第五届声优奖海外人气赏。2011年，FAMI通2011年度大赏，最佳女主角奖。唯一在游戏界和动画界取得该成就的女性声优。\r\n2013年，NewType动画大赏2013 女性声优赏。\r\n2015年，获得第九届声优奖助演女声优赏，同年8月1日从Mausu Promotion移籍至青二事务所。\r\n\r\n为人沉着低调，甚至到了被以为是情绪低落的地步，即使是大合照亦少见笑容，也极少见出现于其他声优网志之中。做事认真，由于资历老实力好做事又一板一眼，所以往往在录音室甚至要指导其他声优的演出，因此被田中理惠封为『座长』。\r\n和坂本真绫一样，即使在大学时还是有参与工作，而且其工作的密度完全无法想像直到2008年四月之前还是大学生。 并没有受过正统声优学校训练，而被前辈冰上恭子以至事务所的吹替系前辈作演技指导，可说是边做边学。\r\n2008年3月大学毕业。学习勤奋刻苦的她以优异的成绩毕业，之前她仅两年内就拿到了100以上的高学分，大学四年间，她声优活动与兼顾学业做到两不耽误。\r\n自心之图书馆起便经常与斋藤千和共演，由于出道年份来说泽城很早就出道，所以往往出现明明年纪比她大的声优却要叫她前辈的有趣事。\r\n由于和真田麻美一起出道，因此二人公私之间的感情非常要好，也是低调的泽城少数私交较深的同行。和名冢佳织、小清水亚美、三瓶由布子因一同出演《强袭魔女》而交好。和同出身于东京都的下野纮有着类似于青梅竹马一样的关系。此外，和水树奈奈关系也不错，后者曾邀请泽城到新宿KOMA剧场参演舞台剧，以庆祝泽城大学毕业，两人还曾一同去屋久岛两日一夜游。\r\n\r\n家庭成员是父母和一个弟弟，弟弟是演员和声优泽城千春，喜欢西方古典乐，会在泡澡时看书。其实名字是叫做泽城幸，其原因是父亲是中岛美雪的歌迷，所以就按照「みゆき」（MIYUKI）这个读音给她取名字意为「幸」，因此她的名字应该汉字写作「泽城幸」。有趣的是，在父亲给她取名的时候，日本人由于有时候用汉字可以标记的假名太多，所以经常混淆。她的母亲曾经反驳父亲道，叫「幸」不是应该用「さち（SACHI）」的读音吗？\r\n\r\n2014年6月2日，在自己的博客宣告了与圈外男性结婚的喜讯。\r\n2018年6月28日，因要产前休养、以及产后育儿相关事情，宣布从夏天开始暂停声优工作，在同年的11月5日产后复出。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

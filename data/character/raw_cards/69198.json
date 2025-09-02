@@ -1,0 +1,70 @@
+{
+    "id": 69198,
+    "name": "伊井野ミコ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/02/5a/69198_crt_9chtt.jpg?r=1590778597",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/5a/69198_crt_9chtt.jpg?r=1590778597",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/5a/69198_crt_9chtt.jpg?r=1590778597",
+        "grid": "https://lain.bgm.tv/pic/crt/g/02/5a/69198_crt_9chtt.jpg?r=1590778597"
+    },
+    "summary": "本作の裏ヒロイン。 \r\n私立秀知院学園高等部1年B組で風紀委員と生徒会の会計監査を兼任している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊井野弥子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "伊井野御子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いいの みこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Iino Miko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月5日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "147cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "dic.pixiv.net/a/伊井野ミコ"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 5,
+    "stat": {
+        "comments": 53,
+        "collects": 330
+    },
+    "anime_ids": [
+        317613,
+        425211,
+        293049
+    ]
+}

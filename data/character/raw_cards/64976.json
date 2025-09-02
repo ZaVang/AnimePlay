@@ -1,0 +1,35 @@
+{
+    "id": 64976,
+    "name": "チコ・ビエンテ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bc/6e/64976_crt_AGi7g.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/6e/64976_crt_AGi7g.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/6e/64976_crt_AGi7g.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bc/6e/64976_crt_AGi7g.jpg"
+    },
+    "summary": "大柄な体を活かして大重量のビッグＥガンを軽々と扱う。\r\n強持ての容貌に似合わず陽気な性格である。\r\nロッキーとは暴走族“デロイア７”の時からの仲間。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "科奇·比安特"
+        },
+        {
+            "key": "别名",
+            "value": []
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 1
+    },
+    "anime_ids": [
+        37183
+    ]
+}

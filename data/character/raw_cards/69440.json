@@ -1,0 +1,48 @@
+{
+    "id": 69440,
+    "name": "コブラ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1d/27/69440_crt_5HvVo.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/27/69440_crt_5HvVo.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/27/69440_crt_5HvVo.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1d/27/69440_crt_5HvVo.jpg"
+    },
+    "summary": "垂れ目、丸い鼻、\r\n笑みを浮かべた口元にはいつも葉巻が。\r\n初めて彼を目にした者は『にやけた男だ』と\r\n口を揃えて云うだろう。\r\nだが彼の名を知らない者は、この世界に無きに等しい。\r\n\r\n『海賊コブラ』\r\n\r\n左腕に仕込んだ【サイコガン】、\r\nそして、美しき相棒アーマロイド・レディと共に\r\n愛機タートル号で宇宙を飛び回る\r\n\r\nコブラは宇宙一の賞金首だ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "哥普拉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "眼镜蛇"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Cobra"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 5
+    },
+    "anime_ids": [
+        67756
+    ]
+}

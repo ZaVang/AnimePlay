@@ -1,0 +1,52 @@
+{
+    "id": 5154,
+    "name": "泉光子郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/18/a4/5154_crt_anidb.jpg?r=1427918484",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/a4/5154_crt_anidb.jpg?r=1427918484",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/a4/5154_crt_anidb.jpg?r=1427918484",
+        "grid": "https://lain.bgm.tv/pic/crt/g/18/a4/5154_crt_anidb.jpg?r=1427918484"
+    },
+    "summary": "搭档是甲虫兽。背着一台仿APPLE的笔记型电脑到处跑的男孩，儿时双亲死於车祸，由父母的远房亲戚收养。和太一关系相当好，在可能遇到黑暗四天王的攻击危险之下，仍然与太一一起出去寻找感冒药。最早在档案岛的安杜路兽的工厂中，通过分析巨大「电池」内墙壁上的文字从而描绘出了档案岛的全貌。\r\n光子郎在2027年成为了一个负责研究数码世界的程式员。甲虫兽永远陪伴着他。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "泉光子郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いずみ こうしろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Izumi Koushiro"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 21
+    },
+    "anime_ids": [
+        3128
+    ]
+}

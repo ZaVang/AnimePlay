@@ -1,0 +1,266 @@
+{
+    "id": 29421,
+    "name": "少年同盟 2",
+    "image_path": "data/images/anime/29421.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "我想无论多少年我们都一定会这样笑着的。\r\n从幼儿园开始的青梅竹马，双胞胎兄弟，悠太、佑希和要、春。加上转校生橘千鹤，热闹的五人组形成了他们的校园生活。\r\n在循环的季节中，欢笑、吃惊、恋爱，新的相遇也一定在等待着。\r\n在无可替代的日常中，一点一点地成长的他们送上的青春涂鸦，第二幕开始！！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2012-04-02",
+    "rating_rank": 323,
+    "rating_score": 7.9,
+    "rating_total": 2068,
+    "main_character_ids": [
+        13519,
+        13520,
+        13521,
+        13522,
+        13523
+    ],
+    "main_characters": [
+        {
+            "id": 13519,
+            "name": "浅羽悠太",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/43/f9/13519_crt_vtl5V.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/43/f9/13519_crt_vtl5V.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/43/f9/13519_crt_vtl5V.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/43/f9/13519_crt_vtl5V.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5768,
+                    "name": "内山昂輝",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0f/d1/5768_prsn_35lt8.jpg?r=1637964101"
+                    },
+                    "short_summary": "内山 昂輝（うちやま こうき、1990年8月16日 - ）は、日本の声優、俳優。劇団ひまわり所属。\r\n早稲田大学卒業。 国際基督教大学高等学校出身。 1993年に劇団ひまわりに入団し、子役としてテレビドラマへの出演や少年役の吹き替えを主に行っていた。舞台経験はない。なお、声優として初めて参加した作品はA.I.である。\r\n2005年に発売された『キングダム ハーツII』のロクサス役で注目を浴び、その後は声優としての活動が多くなっている。内山本人も自身を「明朗快活なタイプではない」と語っているように、主にどこか影のある少年役を演じるが、明るい少年役を演じることも多くなっている。\r\n2011年、第5回声優アワードにて新人男優賞を受賞。2015年、東京アニメアワード2015で発表されたアニメ オブ ザ イヤーで声優賞を受賞。",
+                    "locked": false
+                },
+                {
+                    "id": 22385,
+                    "name": "森優子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7b/af/22385_prsn_mEYsy.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/af/22385_prsn_mEYsy.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/af/22385_prsn_mEYsy.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7b/af/22385_prsn_mEYsy.jpg"
+                    },
+                    "short_summary": "2007年、第1回81オーディション合格。\r\n2009年、第3回シグマ・セブンオーディションに合格し、シグマ・セブンe所属。\r\n2020年4月よりフリーで活動開始していたが、7月1日より81プロデュース所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13520,
+            "name": "浅羽祐希",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e7/07/13520_crt_428Ek.jpg?r=1560092528",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/07/13520_crt_428Ek.jpg?r=1560092528",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/07/13520_crt_428Ek.jpg?r=1560092528",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e7/07/13520_crt_428Ek.jpg?r=1560092528"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4404,
+                    "name": "大内茜",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/66/df/4404_prsn_Yipih.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/df/4404_prsn_Yipih.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/df/4404_prsn_Yipih.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/66/df/4404_prsn_Yipih.jpg"
+                    },
+                    "short_summary": "日本の女性声優。LEOPARD STEEL所属。神奈川県出身。旧名は上田 茜（うえだ あかね）。\r\n\r\n2016年5月31日をもってアーツビジョンを退所。2017年4月1日からLEOPARD STEELに所属。\r\n\r\n芸歴：日本ナレーション演技研究所\r\n趣味・特技：写真を撮ること、うさぎのグッズ集め",
+                    "locked": false
+                },
+                {
+                    "id": 4994,
+                    "name": "木村良平",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d5/46/4994_prsn_RJG93.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/46/4994_prsn_RJG93.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/46/4994_prsn_RJG93.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d5/46/4994_prsn_RJG93.jpg"
+                    },
+                    "short_summary": "3岁时加入向日葵剧团，中学就读不需要穿制服，甚至没有特定讲课内容和课本的私立学校\r\n\r\n2009年在电视动画《东之伊甸》中首次担当男主角泷泽朗[s]为今后Noitamina小王子拉开序幕[/s]\r\n\r\n2011年与一同主持广播节目「Kiramune Presents 江口拓也と木村良平と代永翼の キラキラ☆ビート」的江口拓也、代永翼组成音乐团体Trignal（Kiramune所属）。首张迷你专辑“Party”于2012年12月12日发行。\r\n\r\n2012年，荣获第六回声优奖男声优配角赏\r\n\r\n吸血鬼役相当多，曾在推特自称是吸血鬼声优（在和小信的电击GS里角色设定为‘好想喝酒，虽然其实是想吸血’）「BLOOD LAD」布拉德·D·布莱斯、「Servamp」Lawless、「DIABOLIK LOVERS」无神皓、DramaCD 吸血ダーリン、酔い愛、天顶游戏、明治吸血奇譚、RUNLIMIT）\r\nNoitamina[s]小王子[/s]\r\n东之伊甸 泷泽朗，坡道上的阿波罗 西见薰，ROBOTICS；NOTES 八汐海翔角色，银之匙 八轩勇吾，PSYCHO-PASS 鹿矛围桐斗，野球少年 瑞垣俊二\r\n\r\n界内界外交际广泛，经常招待朋友去家中聚会\r\n自称很怕生害羞，被日笠阳子称为「攻めシャイ」\r\n看似很随意，但其实最会看气氛（丰永）在聚会时能关注到每个人（白石凉子）\r\n恐高\r\n喜欢猫和狗推特头像是老家的猫\r\nkaji病和香菜病患者（和佐仓互称为情敌←虽然最近都被贤章打败了）",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13521,
+            "name": "塚原要",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3c/4b/13521_crt_W825b.jpg?r=1560092536",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/4b/13521_crt_W825b.jpg?r=1560092536",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/4b/13521_crt_W825b.jpg?r=1560092536",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3c/4b/13521_crt_W825b.jpg?r=1560092536"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4976,
+                    "name": "小野友樹",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/45/60/4976_prsn_0NcNx.jpg?r=1731251053",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/60/4976_prsn_0NcNx.jpg?r=1731251053",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/60/4976_prsn_0NcNx.jpg?r=1731251053",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/45/60/4976_prsn_0NcNx.jpg?r=1731251053"
+                    },
+                    "short_summary": "小野 友樹（おの ゆうき、1984年6月22日 - ）は、日本の男性声優、歌手。\r\n静岡県出身。フリー。静岡県立静岡高等学校を経て、早稲田大学スポーツ科学部卒業。\r\n\r\n高校時代はプロサッカー選手を目指しており、清水エスパルスのスカウトにまで声をかけられていたが、3年生のときに剥離骨折になり断念する。\r\n早稲田大学在学中はアナウンス研究会に所属し、声優としての道を志すようになった。\r\n2010年5月、主宰する若手声優集団「おしゃ缶」による自主企画Webラジオの制作を開始。\r\n2011年8月、江口拓也との声優ユニット「Teamゆーたく」を結成し、Webラジオ『ゆーたくのドラつく!』の配信を開始。ドラマCD制作やイベントも手がけている。\r\n2013年1月、「Teamゆーたく」の活動は継続しながら、並行して「ゆーたくII」として新たにメジャーデビューが決定。その活動の第1弾となる文化放送『Super a-hour』内の『どうする？どうなる！？ゆーたくII』は1月4日より放送をスタートさせた。\r\n2013年3月、第7回声優アワードにて、助演男優賞を受賞。\r\n2014年11月、「1st LIVE〜三十路へのプレリュード〜」にて2015年LantisよりCDデビューを発表。\r\n2017年10月、アトミックモンキーを退所してフリーに転向。同時に7年前に一般女性と結婚していたことを発表した。\r\n\r\n特技はサッカー、ハイパーヨーヨー。サッカーは全国大会出場経験があり、ハイパーヨーヨーはプロライセンスを保有している。テレビアニメ『Saint October』では、打ち入りでヨーヨーを披露したことがきっかけで、演じるキャラクターであるヨシュアの武器にヨーヨーが採用された。またトレーディングカードゲームの遊☆戯☆王では、アニメで自身が演じるキャラクターの鬼柳京介が使用していたデッキを用いて、大会で優勝してしまうほどの実力の持ち主である。\r\nコールセンターと家庭教師のアルバイト経験があり、家庭教師では全教科に加えサッカーも時折教えていたという。\r\nお菓子などの甘いものが好きで、ブログやツイッターでは頻繁にそれらを掲載している。ゆるキャラ好きでもあり、全国のゆるキャラが集まる「ゆるキャラサミット」に赴く。\r\n大学のときに友人に録画を頼まれていた『君が望む永遠』と、同アニメのラジオで谷山紀章の歌を視聴したことが、声優を志すきっかけとなった。また同アニメのイベントの喫煙所で偶然にも谷山と会って話をしたことにより「この人と同じ仕事に就きたい！」と思ったことが、声優を目指した最大の理由であるという。実際に2013年4月に横浜アリーナで開催された、谷山がボーカルを担当しているGRANRODEOのライブ、GRANRODEO LIVE 2013 G8 ROCK☆SHOWで場内アナウンスを担当している。\r\n仲の良い声優は江口拓也、岡本信彦、柿原徹也、内山昂輝、小野賢章など。江口とは声優ユニット「ゆーたくII」を結成している。",
+                    "locked": false
+                },
+                {
+                    "id": 6560,
+                    "name": "内山夕実",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/99/e6/6560_prsn_gZezL.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/e6/6560_prsn_gZezL.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/e6/6560_prsn_gZezL.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/99/e6/6560_prsn_gZezL.jpg"
+                    },
+                    "short_summary": "内山 夕実（うちやま ゆみ、1987年10月30日 - ）は、日本の女性声優。東京都出身。大沢事務所所属。音域はアルト。\r\n\r\n中高一貫学校の出身で、15歳で日本ナレーション演技研究所のジュニアクラスに入所。日ナレ時代は、ならはしみき指導の下でレッスンを受けている。声優になった理由として中学時代に放送劇部に入ったことを挙げている。\r\nアーツビジョンに所属し、2005年に別名義でデビューするが、家庭の事情により20歳の時に一旦引退して就職する。3年のブランクを経て、2010年に元の事務所に再所属し、BeeTVで配信された海外ドラマ『バンパイアに恋して』のアビー役の吹き替えで再デビュー。翌年『Aチャンネル』のナギ役で初のレギュラーを獲得。\r\n2017年4月、アーツビジョンから大沢事務所に移籍したことを報告した。\r\n趣味は写真撮影で、ブログには彼女が撮った写真が掲載されている。特技はカラオケで、いきものがかりの「ありがとう」をよく歌っている。\r\n\r\n2024年12月31日发表与小林裕介结婚",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13522,
+            "name": "松岡春",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/86/2f/13522_crt_UZy60.jpg?r=1560092453",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/2f/13522_crt_UZy60.jpg?r=1560092453",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/2f/13522_crt_UZy60.jpg?r=1560092453",
+                "grid": "https://lain.bgm.tv/pic/crt/g/86/2f/13522_crt_UZy60.jpg?r=1560092453"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4729,
+                    "name": "豊永利行",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/77/6f/4729_prsn_Im77K.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/6f/4729_prsn_Im77K.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/6f/4729_prsn_Im77K.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/77/6f/4729_prsn_Im77K.jpg"
+                    },
+                    "short_summary": "豊永 利行（とよなが としゆき、1984年4月28日 - ）は、日本の声優、俳優、シンガーソングライター。（株）スーパーエキセントリックシアター所属。\r\n東京都八王子市出身。血液型はB型。身長162 cm。",
+                    "locked": false
+                },
+                {
+                    "id": 16068,
+                    "name": "日野まり",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ac/1e/16068_prsn_tUzzW.jpg?r=1704783709",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/1e/16068_prsn_tUzzW.jpg?r=1704783709",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/1e/16068_prsn_tUzzW.jpg?r=1704783709",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ac/1e/16068_prsn_tUzzW.jpg?r=1704783709"
+                    },
+                    "short_summary": "日本の女性声優、ナレーター。シグマ・セブンe所属。\r\n\r\n趣味：乾燥機の中をながめること・カラオケ\r\n資格：英検準２級\r\n特技：ピアノ\r\n経歴：シグマ・セブン声優養成所\r\n        【（株）Doa The・声優塾 】",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13523,
+            "name": "橘千鶴",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d8/af/13523_crt_ovOVN.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/af/13523_crt_ovOVN.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/af/13523_crt_ovOVN.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d8/af/13523_crt_ovOVN.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4258,
+                    "name": "入野自由",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/49/47/4258_prsn_99973.jpg?r=1552624013",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/47/4258_prsn_99973.jpg?r=1552624013",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/47/4258_prsn_99973.jpg?r=1552624013",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/49/47/4258_prsn_99973.jpg?r=1552624013"
+                    },
+                    "short_summary": "日本の男性声優、俳優、歌手。ジャンクション所属。既婚。\r\n\r\n両親と観に行った劇団四季の舞台に興味を持ったことがきっかけで、4歳の時劇団ひまわりに入団し、その2年後に歴史ドラマ『コルチャック先生』（原題：Korczak）の幼い少年役を演じ俳優デビュー。同劇団には2006年3月まで所属し、ジャンクションへ移籍。\r\n\r\n声優デビュー作は『逮捕しちゃうぞ』のショウ役で、楽しかったことを覚えているという。2001年に公開された『千と千尋の神隠し』（日本歴代興行収入第2位）でメインキャラクターのハク役のオーディションに合格する。同年『パラッパラッパー』のパラッパ（初代）役でテレビアニメ初主演を果たし、2002年の『キングダム ハーツ』で主役のソラを演じ知名度を広げた。2012年時点で芸歴20年を重ねており、2011年頃のインタビューでは「昔は年上ばっかりだったが、最近は自分と同年代の人と共演することが増えた」と語っている。\r\n\r\n2009年6月24日、Kiramuneレーベルから歌手デビュー。\r\n\r\n2010年、明治学院大学経済学部経営学科卒業。同年5月11日、Kiramuneレーベル内新ユニットとして、神谷浩史と「KAmiYU」を結成し、11月6日にデビュー。\r\n\r\n2016年11月30日、翌年1月のソロライブを最後に海外留学のため、活動を一時休業することをブログで発表。\r\n\r\n2021年9月3日、所属事務所ジャンクションの公式サイトにて結婚を報告した。",
+                    "locked": false
+                },
+                {
+                    "id": 7543,
+                    "name": "平田真菜",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f1/b0/7543_prsn_dF0y9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/b0/7543_prsn_dF0y9.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/b0/7543_prsn_dF0y9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f1/b0/7543_prsn_dF0y9.jpg"
+                    },
+                    "short_summary": "日本女性配音員，出身於東京都, 目前隸屬於Production baobab",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

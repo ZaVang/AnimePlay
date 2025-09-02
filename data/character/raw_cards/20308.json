@@ -1,0 +1,60 @@
+{
+    "id": 20308,
+    "name": "栗原千代",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d8/d3/20308_crt_dsZe5.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/d3/20308_crt_dsZe5.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/d3/20308_crt_dsZe5.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d8/d3/20308_crt_dsZe5.jpg"
+    },
+    "summary": "入学時のキヨシのクラスメイトで相撲好きの女子。理事長の娘であり、万里の妹。囲碁部に所属している。キヨシが入学して初めて会話した相手であり、彼に思いを寄せられているが、キヨシに対して恋愛感情はない。正義感が強く、男子を退学に追い込もうとする姉が許せず対立し、男子に協力的な立場を取っている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "栗原千代"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "栗原 千代"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くりはら ちよ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kurihara Chiyo"
+                },
+                {
+                    "k": "昵称",
+                    "v": "小千代"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月7日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 7,
+    "stat": {
+        "comments": 24,
+        "collects": 62
+    },
+    "anime_ids": [
+        110048
+    ]
+}

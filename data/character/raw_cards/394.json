@@ -1,0 +1,68 @@
+{
+    "id": 394,
+    "name": "山吹祈里／キュアパイン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b9/ad/394_crt_GXnzL.jpg?r=1462634266",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/ad/394_crt_GXnzL.jpg?r=1462634266",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/ad/394_crt_GXnzL.jpg?r=1462634266",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b9/ad/394_crt_GXnzL.jpg?r=1462634266"
+    },
+    "summary": "14岁，教会学校私立白诘草女子学院中等部的2年生。\r\n她恬静温柔的性格的另一面，缺少对自己的自信。\r\n为了改变自己的缺点，她自愿决定参加小爱的舞团。\r\n属于虽然学习成绩好，却没有世间常识的类型。\r\n非常喜欢动物，继承家里的动物医院，成为出色的兽医是她的梦想。\r\n……但是不知为什么唯独讨厌鼬鼠。\r\n因为“祈祷”的力量觉醒了而变身为Cure Pine。\r\n口癖是...“我相信！”",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "山吹祈里/凤梨天使"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Cure Pine"
+                },
+                {
+                    "k": "日文名",
+                    "v": "山吹 祈里"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やまぶき いのり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yamabuki Inori"
+                },
+                {
+                    "k": "昵称",
+                    "v": "小吹（ブッキー）"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "中川亜紀子"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 13
+    },
+    "anime_ids": [
+        1109
+    ]
+}

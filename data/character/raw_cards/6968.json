@@ -1,0 +1,63 @@
+{
+    "id": 6968,
+    "name": "槇村香",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a1/e9/6968_crt_QHHsG.jpg?r=1729050426",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/e9/6968_crt_QHHsG.jpg?r=1729050426",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/e9/6968_crt_QHHsG.jpg?r=1729050426",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a1/e9/6968_crt_QHHsG.jpg?r=1729050426"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "槙村香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "槇村香"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まきむら かおり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Makimura Kaori"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月31日"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 31,
+    "stat": {
+        "comments": 3,
+        "collects": 14
+    },
+    "anime_ids": [
+        10391,
+        53925,
+        53926,
+        53937
+    ]
+}

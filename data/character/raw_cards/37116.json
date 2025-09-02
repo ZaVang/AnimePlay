@@ -1,0 +1,54 @@
+{
+    "id": 37116,
+    "name": "エクボ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6b/51/37116_crt_bRSOy.jpg?r=1465897250",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/51/37116_crt_bRSOy.jpg?r=1465897250",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/51/37116_crt_bRSOy.jpg?r=1465897250",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6b/51/37116_crt_bRSOy.jpg?r=1465897250"
+    },
+    "summary": "上级恶灵。以龙套搭档自称。特征是双颊的红晕。阴险狡诈。为了成为神受世人崇拜建立了宗教（笑）（括弧笑），后被龙套击溃，力量大不如前。认为强大的龙套是助自己成为神的绝佳跳板，目前为了利用龙套的力量而跟在其身边。能附身在他人身上，被附身者除了双颊多了红晕，身体的潜力还能被运用到极致，有着不能破坏宿主身体的坚持。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小酒窝"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "エクボ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ekubo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 15,
+        "collects": 74
+    },
+    "anime_ids": [
+        353605,
+        240760,
+        158316
+    ]
+}

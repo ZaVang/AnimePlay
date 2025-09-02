@@ -1,0 +1,72 @@
+{
+    "id": 6665,
+    "name": "村雨紫苑",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/cd/95/6665_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/95/6665_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/95/6665_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cd/95/6665_crt_anidb.jpg"
+    },
+    "summary": "聖祥学院高等部2年生。村雨桜の双子の姉。アクロポリス開発公社副総裁の父と実業家の母を持ち、自らも選ばれた者であると自認している。桜を深く愛している。自分の親族以外の人間を見下しているところがある。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "村雨紫苑"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "村雨紫苑"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Murasame Shion"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1993年9月19日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "１５７釐米"
+        },
+        {
+            "key": "体重",
+            "value": "４４千克"
+        },
+        {
+            "key": "BWH",
+            "value": "80/55/80"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 4,
+    "birth_year": 1993,
+    "birth_mon": 9,
+    "birth_day": 19,
+    "stat": {
+        "comments": 1,
+        "collects": 10
+    },
+    "anime_ids": [
+        32164
+    ]
+}

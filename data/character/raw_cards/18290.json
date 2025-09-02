@@ -1,0 +1,39 @@
+{
+    "id": 18290,
+    "name": "ポルン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/99/44/18290_crt_pMwmZ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/44/18290_crt_pMwmZ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/44/18290_crt_pMwmZ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/99/44/18290_crt_pMwmZ.jpg"
+    },
+    "summary": "光の園の「未来へ導く光の王子」。プリキュアに光のパワーを与えたり、特別な力を持っている。ジャアクキングとの戦いのあと眠りについていたが、目覚めた後にひかりと出会って新しい姿になる。シャイニールミナスのパートナー。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "颇仑"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 3
+    },
+    "anime_ids": [
+        4243
+    ]
+}

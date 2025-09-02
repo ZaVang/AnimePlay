@@ -1,0 +1,74 @@
+{
+    "id": 7312,
+    "name": "剛田武",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c9/3e/7312_crt_F745q.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/3e/7312_crt_F745q.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/3e/7312_crt_F745q.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c9/3e/7312_crt_F745q.jpg"
+    },
+    "summary": "大雄的同学。身强力壮。擅长运动。喜欢唱歌和烹饪，水平极差却不自觉。尢其是唱歌，没有人受得了。有严重自我中心，经常欺负人（尤其大雄），并袒护自己的妹妹。优点是勇敢、有正义感。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "刚田武"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "刚田武志、刚田胖虎"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Takeshi Goda"
+                },
+                {
+                    "k": "日文名",
+                    "v": "剛田 武"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ごうだ たけし"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Gouda Takeshi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ジャイアン／Giant／技安、胖虎、武胖虎、武技安、刚田技安、大熊、大雄"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1964年6月15日"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1964,
+    "birth_mon": 6,
+    "birth_day": 15,
+    "stat": {
+        "comments": 13,
+        "collects": 18
+    },
+    "anime_ids": [
+        37460,
+        18692,
+        36126
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "id": 34559,
+    "name": "佐藤",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/73/c9/34559_crt_CgqCW.jpg?r=1447318925",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/c9/34559_crt_CgqCW.jpg?r=1447318925",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/c9/34559_crt_CgqCW.jpg?r=1447318925",
+        "grid": "https://lain.bgm.tv/pic/crt/g/73/c9/34559_crt_CgqCW.jpg?r=1447318925"
+    },
+    "summary": "ハンチング帽をかぶった糸目の男。戸崎や研究機関からは「帽子」と呼ばれている。本名は不明。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "佐藤"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "帽子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さとう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Satou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 40,
+        "collects": 81
+    },
+    "anime_ids": [
+        146093
+    ]
+}

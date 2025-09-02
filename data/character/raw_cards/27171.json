@@ -1,0 +1,64 @@
+{
+    "id": 27171,
+    "name": "ジョーカー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0a/e5/27171_crt_o1M8E.jpg?r=1420415791",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/e5/27171_crt_o1M8E.jpg?r=1420415791",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/e5/27171_crt_o1M8E.jpg?r=1420415791",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0a/e5/27171_crt_o1M8E.jpg?r=1420415791"
+    },
+    "summary": "世界中のお宝を狙う《ミラクルメイカー》の異名を持つ怪盗。\r\n怪盗としてのプライドが高く、予告状を出すことや自分にとって価値あるものを狙うことにこだわりを持っている。プライベートは面倒くさがりやで、洗濯やかたづけは大嫌い。暇な時は、テレビをみてマンガを読んでゲームをやってゴロゴロしている。猫が苦手。\r\n\r\n○好きなゲーム：\r\nゲームはなんでも好きだが、特にアクションゲームにハマっている。\r\n\r\n○好きな食べ物：\r\nカレー、ラーメン、ハンバーグ、寿司、コーラ、ポテトチップスなど子供が好きな食べ物。特にカレーが大好物。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "杰克·琼斯"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "乔克"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Joker"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ジャック・ジョーンズ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "12月11日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 11,
+    "stat": {
+        "comments": 5,
+        "collects": 15
+    },
+    "anime_ids": [
+        122864,
+        147085
+    ]
+}

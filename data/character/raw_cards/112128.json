@@ -1,0 +1,63 @@
+{
+    "id": 112128,
+    "name": "高倉健",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7a/11/112128_crt_G4U22.jpg?r=1702704417",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/11/112128_crt_G4U22.jpg?r=1702704417",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/11/112128_crt_G4U22.jpg?r=1702704417",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7a/11/112128_crt_G4U22.jpg?r=1702704417"
+    },
+    "summary": "オカルトマニアの男子高生。幽霊は信じてないけど、宇宙人は信じている。ターボババアにかけられた呪いを解くべく追いかけっこをするはめに。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高仓健"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "オカルン"
+                },
+                {
+                    "k": "日文名",
+                    "v": "高倉 健"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たかくら けん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takakura Ken"
+                },
+                {
+                    "k": "昵称",
+                    "v": "オカルン、玄灵小子、玄学小子、厄卡伦、超然仔"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://anime-dandadan.com/"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 42,
+        "collects": 46
+    },
+    "anime_ids": [
+        467461
+    ]
+}

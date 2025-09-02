@@ -1,0 +1,414 @@
+{
+    "id": 85204,
+    "type": 2,
+    "name": "生徒会役員共*",
+    "name_cn": "妄想学生会＊",
+    "summary": "",
+    "nsfw": false,
+    "locked": false,
+    "date": "2014-01-04",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/93/55/85204_oK33O.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/93/55/85204_oK33O.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/93/55/85204_oK33O.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/93/55/85204_oK33O.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/93/55/85204_oK33O.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "妄想学生会＊"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Seitokai Yakuindomo S2",
+                    "k": null
+                },
+                {
+                    "v": "Seitokai Yakuindomo *",
+                    "k": null
+                },
+                {
+                    "v": "生徒会役員共＊",
+                    "k": null
+                },
+                {
+                    "v": "妄想学生会*",
+                    "k": null
+                },
+                {
+                    "v": "妄想学生会 第二季",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2014年1月4日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.starchild.co.jp/special/seitokai2/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "AT-X"
+        },
+        {
+            "key": "播放结束",
+            "value": "2014年3月29日"
+        },
+        {
+            "key": "导演",
+            "value": "金澤洪充"
+        },
+        {
+            "key": "原作",
+            "value": "氏家ト全（講談社 週刊少年マガジン連載）"
+        },
+        {
+            "key": "主要动画师",
+            "value": "内田孝行、大久保宏、鈴木信吾"
+        },
+        {
+            "key": "美术监督补佐",
+            "value": "加藤三朗、大吉麗奈"
+        },
+        {
+            "key": "摄影副监督",
+            "value": "高橋智弘"
+        },
+        {
+            "key": "CG导演",
+            "value": "長嶺義則"
+        },
+        {
+            "key": "CG主任",
+            "value": "菊地貴紀、谷岡洵"
+        },
+        {
+            "key": "特效",
+            "value": "天草紫"
+        },
+        {
+            "key": "录音调整",
+            "value": "太田泰明"
+        },
+        {
+            "key": "音效",
+            "value": "北方将実"
+        },
+        {
+            "key": "制片人",
+            "value": "須藤孝太郎、立石謙介"
+        },
+        {
+            "key": "动画制片人",
+            "value": "岸本鈴吾"
+        },
+        {
+            "key": "製作",
+            "value": "桜才学園生徒会新室"
+        }
+    ],
+    "volumes": 0,
+    "eps": 13,
+    "total_episodes": 13,
+    "rating": {
+        "rank": 680,
+        "total": 7371,
+        "count": {
+            "one": 4,
+            "two": 0,
+            "three": 9,
+            "four": 22,
+            "five": 135,
+            "six": 660,
+            "seven": 2337,
+            "eight": 3192,
+            "nine": 706,
+            "ten": 306
+        },
+        "score": 7.6
+    },
+    "collection": {
+        "wish": 1961,
+        "collect": 11939,
+        "doing": 632,
+        "on_hold": 510,
+        "dropped": 217
+    },
+    "tags": [
+        {
+            "name": "黄段子",
+            "count": 1584
+        },
+        {
+            "name": "搞笑",
+            "count": 1523
+        },
+        {
+            "name": "吐槽",
+            "count": 1090
+        },
+        {
+            "name": "2014年1月",
+            "count": 940
+        },
+        {
+            "name": "妄想学生会",
+            "count": 837
+        },
+        {
+            "name": "漫画改",
+            "count": 791
+        },
+        {
+            "name": "TV",
+            "count": 665
+        },
+        {
+            "name": "校园",
+            "count": 632
+        },
+        {
+            "name": "GoHands",
+            "count": 599
+        },
+        {
+            "name": "黄段子学生会",
+            "count": 449
+        },
+        {
+            "name": "2014",
+            "count": 359
+        },
+        {
+            "name": "下限",
+            "count": 321
+        },
+        {
+            "name": "糟糕",
+            "count": 274
+        },
+        {
+            "name": "后宫",
+            "count": 228
+        },
+        {
+            "name": "日笠阳子",
+            "count": 218
+        },
+        {
+            "name": "漫改",
+            "count": 153
+        },
+        {
+            "name": "日常",
+            "count": 111
+        },
+        {
+            "name": "日本",
+            "count": 48
+        },
+        {
+            "name": "金澤洪充",
+            "count": 24
+        },
+        {
+            "name": "续作",
+            "count": 22
+        },
+        {
+            "name": "2014年",
+            "count": 19
+        },
+        {
+            "name": "工口",
+            "count": 19
+        },
+        {
+            "name": "金泽洪充",
+            "count": 18
+        },
+        {
+            "name": "节操",
+            "count": 17
+        },
+        {
+            "name": "恋爱",
+            "count": 14
+        },
+        {
+            "name": "第二季",
+            "count": 12
+        },
+        {
+            "name": "动画",
+            "count": 11
+        },
+        {
+            "name": "季番",
+            "count": 9
+        },
+        {
+            "name": "喜剧",
+            "count": 9
+        },
+        {
+            "name": "syd",
+            "count": 9
+        }
+    ],
+    "meta_tags": [
+        "校园",
+        "后宫",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        10957,
+        10958,
+        10959,
+        10960
+    ],
+    "main_characters": [
+        {
+            "id": 10957,
+            "name": "津田タカトシ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e0/4e/10957_crt_BEo7Z.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/4e/10957_crt_BEo7Z.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/4e/10957_crt_BEo7Z.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e0/4e/10957_crt_BEo7Z.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4779,
+                    "name": "浅沼晋太郎",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/01/b3/4779_prsn_R85b5.jpg?r=1740105927",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/b3/4779_prsn_R85b5.jpg?r=1740105927",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/b3/4779_prsn_R85b5.jpg?r=1740105927",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/01/b3/4779_prsn_R85b5.jpg?r=1740105927"
+                    },
+                    "short_summary": "浅沼 晋太郎（あさぬま しんたろう、1976年1月5日 - ）は、日本の脚本家、演出家、俳優、 声優、ナレーター、コピーライター、デザイナー。\r\n岩手県盛岡市出身。仙台育英学園高等学校特別進学コース卒業、多摩美術大学造形表現学部 映像演劇学科 卒業。血液型はO型。左利き。身長175cm。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10958,
+            "name": "天草シノ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d2/4e/10958_crt_sQC2p.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/4e/10958_crt_sQC2p.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/4e/10958_crt_sQC2p.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d2/4e/10958_crt_sQC2p.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5119,
+                    "name": "日笠陽子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ad/0b/5119_prsn_cJJCQ.jpg?r=1673236110",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/0b/5119_prsn_cJJCQ.jpg?r=1673236110",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/0b/5119_prsn_cJJCQ.jpg?r=1673236110",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ad/0b/5119_prsn_cJJCQ.jpg?r=1673236110"
+                    },
+                    "short_summary": "因为憧憬在《美少女战士》和《新世纪福音战士》中演出了完全不同角色（月野兔和葛城美里）的三石琴乃，而想成为声优。高中毕业后，在服装系专修学校学习的同时，进了日本播音演技研究所（21期生）。本科生时通过“免费新人育成考试”成为特待生。\r\n\r\n2007年出演《Sketchbook～full color's～》的根岸水面电视动画出道。2009年出演《K-ON!》的秋山澪一角之后受到关注。之后出演了《最后大魔王》的服部绚子等，主要角色的出演增加了。然后在《世纪末超自然学院》首次主演担任神代玛雅一角。\r\n\r\n在2010年3月6日发表的第4回声优Awards上，以《K-ON!》剧中结成的团体“放学后Tea Time”的一员，与丰崎爱生、佐藤聪美、寿美菜子、竹达彩奈一起获得歌唱赏。\r\n\r\n2013年为电视动画《进击的巨人》演唱片尾曲，同时宣布将以歌手身份出道。 同年2月8日官网开通，首单《进击的巨人》片尾曲“美しき残酷な世界”，以及连续三个月的音乐作品发售时间。同年官网于4月14日更新消息，10月27日在新木场 STUDIO COAST举办首场个人演唱会。\r\n\r\n特色\r\n诸如上述的《世纪末超自然学院》的神代玛雅、《最后大魔王》的服部绚子、《K-ON!》的秋山澪等，经常出演强气的女性。虽然经常演性格像男生一般的角色以及早熟、大姐系的角色，不过也演过像《WORKING!!》的小鸟游泉这样阴气的角色。在动画以外，还有零星做外国片配音和播音类的工作。\r\n\r\n因在广播节目中经常很兴奋地进行各种模仿、表演各种才艺，而被听众和声优伙伴叫做搞笑艺人。另外在广播《A&G REQUEST デジスタ》中开始的用来欺负日笠的“日笠以前是不良少女”的玩笑也广泛传播开来，在《K-ON!》的网络广播《らじおん!》中也常被搬出来。\r\n\r\n在各个广播节目中经常使用独创的玩笑“てへぺろ(・ω<)”，共演者也经常会用。之后这个玩笑被SEIGURA web企划的“SEIGURA web选取的流行语2009”（第1回）选上，作为作者受到表彰。\r\n\r\n在《妄想学生会》的网络广播节目《アニメ「生徒会役員共」が全部わかるラジオ、略して全ラ！》中，被浅沼晋太郎取名代号“性の暴走機関車”。\r\n\r\n人物\r\n中学、高中六年都在垒球部，中学1年时是担任中外野手，之后一直担任游击手和投手，为右投左打。此外因为跑的快，还经常被选为接力赛跑最后一棒的选手。午休都在图书馆度过，也曾担任过图书委员。\r\n\r\n日笠本人推荐的昵称“ひよっち”是以前事务所同期的古川小百合帮忙想的。此外，在各个广播节目中经常使用“てへぺろ”这个自创的搞笑用语，也经常被共演者使用。\r\n\r\n特长是裁缝、模仿等。另外，拥有毛笔3段、硬笔3段、芳香疗法检定2级等资格。\r\n\r\n因在profile的特长里写了模仿而经常被人要求表演模仿，在广播中模仿过崖上的波妞、出川哲朗、织田裕二等。不过本人说其实模仿只是停留在兴趣范围。另外在广播《おどろき戦隊 モモノキファイブ》的节目版块中演出老人、小孩、时尚女生、魔王、怪人等角色。\r\n\r\n和在《A&G REQUEST デジスタ》中共演的大龟明日香、在《K-ON!》等作品中共演的佐藤聪美、事务所同期的折户真理等很要好，从BLOG中也能看出。\r\n\r\n相当爱玩游戏，经常和声优伙伴一起玩游戏。很喜欢《魔物猎人》，从《魔物猎人P2》开始一直有在玩。《魔物猎人3》也在发售后和Wii一起购入，经常在线和折户真理一起玩。此外还拥有PS3、Xbox 360、PSP、DS Lite等游戏主机。\r\n\r\n在《らじおん!》的企划中，和自己演出的角色一样实际进行乐团活动。日笠担当BASS，并且配合秋山澪的设定使用左撇子用BASS（日笠自身是惯用右手），同时还担任歌手。本人说虽然做起来很困难，但同时也很快乐。\r\n\r\n《机动战士高达 SEED》系列的FAN，喜欢的角色是迪亚哥·艾尔斯曼、尼可·阿玛菲。此外还把演出了系列主要角色的拉克丝·克莱因和米娅·坎贝尔的田中理惠视为憧憬的对象。拥有作品相关的全部CD。\r\n\r\n印象深刻的作品是电视动画出道作《Sketchbook～full color's～》（根岸水面），参加面试时以很活力的感觉进行了表演，监督说“就保持这个感觉来演”而被选上了。\r\n\r\n喜欢的歌手有angela、下川美娜、川嶋爱等。在angela和下川作为guest出演《A&G REQUEST デジスタ》时很积极地表示是她们的FANS。也曾于同一节目在川嶋爱作为guest出演之际，在本人面前因为过于感动而哭出来。\r\n\r\n憧憬水树奈奈，曾经与大龟明日香一齐到西武巨蛋看NANA MIZUKI LIVE DIAMOND 2009。因在《战姬绝唱SYMPHOGEAR G》与水树奈奈合唱角色歌，在NANA MIZUKI LIVE CIRCUS 2013获得水树奈奈的邀请在安可时候合唱“不死鳥のフランメ”\r\n\r\n2015年12月30日，于自身Blog宣布结婚消息。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10959,
+            "name": "七条アリア",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fa/ad/10959_crt_AJRzr.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/ad/10959_crt_AJRzr.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/ad/10959_crt_AJRzr.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fa/ad/10959_crt_AJRzr.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5003,
+                    "name": "佐藤聡美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d9/60/5003_prsn_D6ri6.jpg?r=1723985389",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/60/5003_prsn_D6ri6.jpg?r=1723985389",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/60/5003_prsn_D6ri6.jpg?r=1723985389",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d9/60/5003_prsn_D6ri6.jpg?r=1723985389"
+                    },
+                    "short_summary": "日本女性声优、歌手，隶属青二Production。。常盘木学园高等学校、东京广播学院毕业。有一个妹妹。\r\n\r\n高中时就读于常盘木学园高等学校，隶属放送部。曾参加NHK杯全国高校放送大赛并获得宫城县赛区最优秀赏 ，在全国大赛上也进入了半决赛，在朗读方面相当有实力。\r\n高中毕业后一人前往东京，进入东京广播学院学习。在东京广播学院就读时，成为广播“智一&美树のラジオビッグバン”的第七代助手（第5期BGP），同时结成声优组合“Kisty”。\r\n2007年以动画《小女神花铃》满的亲卫队之一的角色正式出道。2008年，第一次出演主角《地狱少女 三鼎》御景柚姬。2009年，出演《轻音少女》田井中律一角，知名度大升。\r\n在《K-ON! web radio らじおん!》的企划中，和自己演出的角色一样实际进行乐团活动，但因为本身完全没有爵士鼓的经验，一切从零开始。\r\n2010年3月6日获得第4回声优奖歌唱奖，是凭借日本电视动画《轻音少女》剧中结成的乐队“放学后Tea Time”与丰崎爱生、日笠阳子、寿美菜子、竹达彩奈共同获得的。\r\n2011年3月5日获得第5回声优奖新人女声优奖。\r\n2013年12月8日宣布作为歌手出道，唱片公司为StarChild。首张单曲《ミライナイト》（TV动画《妄想学生会*》ED）于2014年2月26日发售。\r\n2014年6月18日发售首张个人迷你专辑《☆》（读作“star”）。 \r\n2014年7月26日、7月27日和8月2日分别在名古屋、大阪和东京举行1st Tour『しゅがちゅん。～☆を集めにいくツアー2014～』，现场发售纪念EP《恋のメロンソーダ》。\r\n\r\n喜欢的动物是马、柴犬及羊驼，喜欢的颜色是水色、白色、淡粉色.\r\n和高本惠很要好经常一起出去玩，佐藤的BLOG上也经常提到高本。和在K-ON!等作品中共演的日笠阳子和竹达彩奈也很要好。另外和隶属青二Production（特别是Junior）的女性声优也有亲交。\r\n\r\n2017年7月6日凌晨，佐藤聪美在个人博客上发布了结婚的消息，对象为同为声优的寺岛拓笃。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10960,
+            "name": "萩村スズ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5c/8b/10960_crt_xgX7R.jpg?r=1612629928",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/8b/10960_crt_xgX7R.jpg?r=1612629928",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/8b/10960_crt_xgX7R.jpg?r=1612629928",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5c/8b/10960_crt_xgX7R.jpg?r=1612629928"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4902,
+                    "name": "矢作紗友里",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f7/7c/4902_prsn_Zvmq8.jpg?r=1544724235",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/7c/4902_prsn_Zvmq8.jpg?r=1544724235",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/7c/4902_prsn_Zvmq8.jpg?r=1544724235",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f7/7c/4902_prsn_Zvmq8.jpg?r=1544724235"
+                    },
+                    "short_summary": "1986年9月22日に東京都で生まれた。その後、一時期青森県八戸市に住んでいたこともあった。子供の頃は「アニメって絵がしゃべっていると思っていたんですよ。」と本人が語っており、友達が声優の話をするまでは声優について全く知らなかったという。それでも中学時代に、るーちゃんという友達から「アニメみたいな声だね」と言われたのをきっかけに声優を志す。ただ学校に演劇部が無かったため、学校での部活動は父親の勧めに従いソフトボール部に入部した。なおソフトボールでのポジションはピッチャーとショートであった。2005年にテレビアニメ『かりん』の主人公「真紅果林」役で、声優としてデビュー。2015年1月31日、所属事務所の公式サイトにて、一般男性と入籍したことを発表した",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

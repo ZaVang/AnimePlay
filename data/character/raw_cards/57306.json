@@ -1,0 +1,68 @@
+{
+    "id": 57306,
+    "name": "竈門禰豆子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/29/f6/57306_crt_EmNmM.jpg?r=1610926959",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/f6/57306_crt_EmNmM.jpg?r=1610926959",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/f6/57306_crt_EmNmM.jpg?r=1610926959",
+        "grid": "https://lain.bgm.tv/pic/crt/g/29/f6/57306_crt_EmNmM.jpg?r=1610926959"
+    },
+    "summary": "炭治郎的妹妹。初登场12岁，现年14岁。\r\n家人被鬼袭击后唯一的生还者，因鬼舞辻的血而变成了鬼。变成鬼后一度袭击哥哥炭治郎，被他唤醒了尚存的感情，压制吃人本能保护炭治郎，获得了富冈的认同。\r\n在鬼中是特别的存在，沉睡2年，以睡眠取代吃人的饥饿感。以自力摆脱了鬼舞辻的咒缚。因鳞泷的暗示，把人类视作自己已经死去的家人，绝不加害。跟随成为剑士的炭治郎同行，一起战斗。\r\n能自由操控身体变大变小。讨厌日光，白天都变小藏身箱子内。\r\n在柱会议上证明了自己不会袭击人类，被当主认可作为鬼杀队的一员。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "灶门祢豆子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "竈門 禰豆子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かまど ねずこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kamado Nezuko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月28日"
+        },
+        {
+            "key": "身高",
+            "value": "153cm"
+        },
+        {
+            "key": "体重",
+            "value": "45kg"
+        },
+        {
+            "key": "血鬼术",
+            "value": "爆血"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 28,
+    "stat": {
+        "comments": 49,
+        "collects": 283
+    },
+    "anime_ids": [
+        350764
+    ]
+}

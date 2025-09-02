@@ -1,0 +1,48 @@
+{
+    "id": 12563,
+    "name": "北村祐作",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ae/02/12563_crt_55SB8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ae/02/12563_crt_55SB8.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ae/02/12563_crt_55SB8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ae/02/12563_crt_55SB8.jpg"
+    },
+    "summary": "2年C組。クラス委員長で生徒会副会長で、男子ソフトボール部部長。眼鏡を掛けた容姿にきわめて真面目な生活態度、清々しい容姿ながらもちょっとズレた言動などが『ちびまる子ちゃん』の丸尾君にそっくりなことからクラスの女子から「まるお」とあだ名されて親しまれている。運動神経は高く、性格はやや楽観的。作中、人前で裸になる描写がたびたびあり、一部の男子からは裸族扱いされている。校則違反であるが自動二輪免許を所持している。兄がいる。\r\n竜児とは1年生の頃からの親友で、進級当初はその外見から恐れられている竜児の数少ない理解者だった。大河に告白したこともあるが玉砕。その後は狩野すみれに強い憧れを抱いて生徒会に入った。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "北村佑作"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "きたむら ゆうさく"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kitamura Yuusaku"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 9,
+        "collects": 24
+    },
+    "anime_ids": [
+        909
+    ]
+}

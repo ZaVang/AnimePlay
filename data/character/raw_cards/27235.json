@@ -1,0 +1,60 @@
+{
+    "id": 27235,
+    "name": "安原絵麻",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f2/eb/27235_crt_Xr4iR.jpg?r=1675248497",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/eb/27235_crt_Xr4iR.jpg?r=1675248497",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/eb/27235_crt_Xr4iR.jpg?r=1675248497",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f2/eb/27235_crt_Xr4iR.jpg?r=1675248497"
+    },
+    "summary": "武蔵野アニメーションの原画マン。\r\n学生時代、あおい達と共に同好会でアニメを作っていた。\r\n真面目だがおとなし目で引っ込み思案な面がある。\r\n\r\n動画から一年半という短期間で原画に上がれたものの、\r\n性格も相まって画のスタイルを決めきれず、悩み続けている。憧れのアニメーターは、日常芝居を得意とするなにわアニメーションの堀内さん。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "安原绘麻"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "安原 絵麻"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やすはら えま"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yasuhara Ema"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "职业",
+            "value": "動画、原画 → 作画监督"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 84,
+        "collects": 649
+    },
+    "anime_ids": [
+        110467
+    ]
+}

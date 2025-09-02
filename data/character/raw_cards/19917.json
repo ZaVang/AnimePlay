@@ -1,0 +1,44 @@
+{
+    "id": 19917,
+    "name": "小津",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b8/bc/19917_crt_kpgSK.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/bc/19917_crt_kpgSK.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/bc/19917_crt_kpgSK.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b8/bc/19917_crt_kpgSK.jpg"
+    },
+    "summary": "被主角唾弃的朋友。虽然就读京都大学电气电子工程学科，对电气、电子、工学都很讨厌。\r\n做坏事比吃饭还重要。外表诡异，好像是个妖怪。把自己的快乐建筑在别人的痛苦上。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小津"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "おづ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 9,
+        "collects": 78
+    },
+    "anime_ids": [
+        4019
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "id": 505,
+    "name": "椎名真冬",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d1/0e/1339_sjhGB.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d1/0e/1339_sjhGB.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d1/0e/1339_sjhGB.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d1/0e/1339_sjhGB.jpg"
+    },
+    "summary": "学生会的会计，也是唯一一位一年级，是深夏的妹妹。\r\n\r\n如幻般的外表而且有点不擅长和男性接触，用“真冬”自称自己。个性和姐姐刚好相反，柔弱而且温驯。但是她也有创作BL小说（键总是担任“受”的那方）的腐女子一面。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "椎名真冬"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "椎名真冬"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しいな まふゆ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shiina Mafuyu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月22日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "anidb.net"
+                }
+            ]
+        },
+        {
+            "key": "声优",
+            "value": "堀中优希"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 22,
+    "stat": {
+        "comments": 44,
+        "collects": 247
+    },
+    "anime_ids": [
+        2567
+    ]
+}

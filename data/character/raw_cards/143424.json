@@ -1,0 +1,61 @@
+{
+    "id": 143424,
+    "name": "花園羽々里",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/81/df/143424_crt_6kt3N.jpg?r=1701615434",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/df/143424_crt_6kt3N.jpg?r=1701615434",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/df/143424_crt_6kt3N.jpg?r=1701615434",
+        "grid": "https://lain.bgm.tv/pic/crt/g/81/df/143424_crt_6kt3N.jpg?r=1701615434"
+    },
+    "summary": "羽香里の母親。\r\n豪邸に住む資産家で、一人娘の羽香里を過保護と言えるほど溺愛している。恋太郎との交際を一切認めず、娘が一時の恋愛感情だけで人生を不幸にしないよう、強硬な手段で二人の関係を引き裂こうとする。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "花园羽羽里"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "花園 羽々里"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はなぞの ははり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hanazono Hahari"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月12日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://hyakkano.com/character/hahari/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 12,
+    "stat": {
+        "comments": 47,
+        "collects": 88
+    },
+    "anime_ids": [
+        471793,
+        424379
+    ]
+}

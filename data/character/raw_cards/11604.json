@@ -1,0 +1,56 @@
+{
+    "id": 11604,
+    "name": "ルーシィ・ハートフィリア",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ec/71/11604_crt_Dd4dd.jpg?r=1716564961",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ec/71/11604_crt_Dd4dd.jpg?r=1716564961",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ec/71/11604_crt_Dd4dd.jpg?r=1716564961",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ec/71/11604_crt_Dd4dd.jpg?r=1716564961"
+    },
+    "summary": "門（ゲート）の鍵を使って異界の星霊たちを召喚し、契約者しか使えない魔法を操る星霊魔導士。\r\n星霊を愛し、黄道十二門の鍵の多くを所有する中、一度は別れてしまったアクエリアスの鍵が再び世界のどこかに出現したと知り、探している。\r\n新人小説家でもある。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "露西·哈特菲利亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Lucy Heartfilia"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "48kg"
+        },
+        {
+            "key": "BWH",
+            "value": "88/59/88"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 25,
+        "collects": 129
+    },
+    "anime_ids": [
+        2609
+    ]
+}

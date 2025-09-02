@@ -1,0 +1,61 @@
+{
+    "id": 102091,
+    "name": "五条新菜",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ee/8c/102091_crt_Xpn32.jpg?r=1635174188",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/8c/102091_crt_Xpn32.jpg?r=1635174188",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/8c/102091_crt_Xpn32.jpg?r=1635174188",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ee/8c/102091_crt_Xpn32.jpg?r=1635174188"
+    },
+    "summary": "高校一年生。幼い頃祖父が作った雛人形に一目ぼれして以来、頭師を目指している。雛人形作りに一途で真面目な性格だが、子どもの頃のある出来事がきっかけで自分に自信が持てず、クラスにも馴染めずにいる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "五条新菜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ごじょう わかな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Gojo Wakana"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月21日"
+        },
+        {
+            "key": "身高",
+            "value": "180cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://bisquedoll-anime.com/"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 21,
+    "stat": {
+        "comments": 42,
+        "collects": 67
+    },
+    "anime_ids": [
+        398951,
+        333158
+    ]
+}

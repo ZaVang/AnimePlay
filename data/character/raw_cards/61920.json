@@ -1,0 +1,61 @@
+{
+    "id": 61920,
+    "name": "矢口春雄",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7b/3f/61920_crt_2G3K5.jpg?r=1534652658",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/3f/61920_crt_2G3K5.jpg?r=1534652658",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/3f/61920_crt_2G3K5.jpg?r=1534652658",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7b/3f/61920_crt_2G3K5.jpg?r=1534652658"
+    },
+    "summary": "勉強、運動まるでだめ。ゲームで食っていけたらと本気で思っている少年。\r\n自称「豪指のガイル使い」。勉強も運動も駄目だが、ゲームに対する情熱では誰にも負けない。毎日のようにゲームセンターへと通い、腕を磨いている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "矢口春雄"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "矢口 春雄"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やぐち はるお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yaguchi Haruo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1979年6月1日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 4,
+    "birth_year": 1979,
+    "birth_mon": 6,
+    "birth_day": 1,
+    "stat": {
+        "comments": 17,
+        "collects": 37
+    },
+    "anime_ids": [
+        278569,
+        91205
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": 76492,
+    "name": "エルチ・カーゴ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3f/61/76492_crt_47CW6.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/61/76492_crt_47CW6.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/61/76492_crt_47CW6.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3f/61/76492_crt_47CW6.jpg"
+    },
+    "summary": "イノセントの文化ににあこがれる元気な跳ね返り娘。文化と色男にめっぽう弱く、ビエルやエルなどにすぐ惚れ込んでしまう。父キャリングの死後、アイアンギアーの艦長となる。ティンプを追うジロンの行動に巻き込まれ、いつもいざこざの真っ直中に放り出される。\r\nやっと艦長にも慣れたところでイノセントにさらわれてしまう。カシムの人格を植え付けられ、ジロンと敵対することになる。だが、アーサーの犠牲で洗脳から解放され、Ｘポイントの攻防戦ではふたたびザブングルで戦った。しかし、ミサイルの爆発で失明、仲間に迷惑をかけまいとひとり出奔する。ところがジロンに連れ戻され、ともに生きていくことを決意する。なお、劇場版では失明を治療できる可能性が語られた。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾露琪·嘉戈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Elchi Cargo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://xabungle.net/character/detail.php?id=2"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 10
+    },
+    "anime_ids": [
+        34281
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "id": 35652,
+    "name": "川本モモ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a0/e1/35652_crt_c6zt9.jpg?r=1520788896",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a0/e1/35652_crt_c6zt9.jpg?r=1520788896",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a0/e1/35652_crt_c6zt9.jpg?r=1520788896",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a0/e1/35652_crt_c6zt9.jpg?r=1520788896"
+    },
+    "summary": "三姊妹之幺女。正在上幼儿园。正值天真无邪年纪与模样。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "川本桃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "川本 モモ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かわもと もも"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kawamoto Momo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "98cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 17,
+        "collects": 79
+    },
+    "anime_ids": [
+        211567,
+        147068
+    ]
+}

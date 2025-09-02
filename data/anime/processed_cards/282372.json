@@ -1,0 +1,94 @@
+{
+    "id": 282372,
+    "name": "安达与岛村",
+    "image_path": "data/images/anime/282372.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "我和安达是在体育馆的二楼偶然认识的逃课伙伴。\r\n偶尔一起打打乒乓这种程度的关系，\r\n对于基本上把与人交往视作麻烦的我来说，\r\n是刚好合适的距离。\r\n但是，最近安达的样子有点奇怪。\r\n就好比，明明是只对人没有兴趣的猫咪，\r\n变得越来越像条狗狗一样的感觉。\r\n我有对安达做了什么么……\r\n\r\n——这样的两人的关系稍许开始改变的故事。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "百合",
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "GL",
+        "日常",
+        "小说改"
+    ],
+    "date": "2020-10-08",
+    "rating_rank": 1454,
+    "rating_score": 7.3,
+    "rating_total": 5712,
+    "main_character_ids": [
+        21021,
+        21022
+    ],
+    "main_characters": [
+        {
+            "id": 21021,
+            "name": "安達桜",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f3/a1/21021_crt_avZXe.jpg?r=1603007626",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/a1/21021_crt_avZXe.jpg?r=1603007626",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/a1/21021_crt_avZXe.jpg?r=1603007626",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f3/a1/21021_crt_avZXe.jpg?r=1603007626"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19339,
+                    "name": "鬼頭明里",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a1/78/19339_prsn_3Dg35.jpg?r=1694799715"
+                    },
+                    "short_summary": "鬼頭明里（きとう あかり）は、日本の女性声優である。ラクーンドッグ所属。\r\nあだ名は「あかりん」。\r\n\r\n10月16日生まれ、愛知県出身、血液型B型、153cm。プロ・フィット声優養成所を経て、現事務所に2015年4月から所属。\r\n趣味は絵を描くこと、歌うこと。特技は絵を描くこと、歌うこと、湯切り。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 21022,
+            "name": "島村抱月",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/13/79/21022_crt_pQZVv.jpg?r=1603007735",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/79/21022_crt_pQZVv.jpg?r=1603007735",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/79/21022_crt_pQZVv.jpg?r=1603007735",
+                "grid": "https://lain.bgm.tv/pic/crt/g/13/79/21022_crt_pQZVv.jpg?r=1603007735"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10600,
+                    "name": "伊藤美来",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/72/5a/10600_prsn_kJI6n.jpg?r=1632653653",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/5a/10600_prsn_kJI6n.jpg?r=1632653653",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/5a/10600_prsn_kJI6n.jpg?r=1632653653",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/72/5a/10600_prsn_kJI6n.jpg?r=1632653653"
+                    },
+                    "short_summary": "伊藤 美来（いとう みく、1996年10月12日 - ）は、日本の女性声優。スタイルキューブ所属。\r\n東京都出身。\r\n\r\n2012年、第1回スタイルキューブ声優オーディションに合格。研修生として現事務所に所属。\r\n2013年、同じ研修生の豊田萌絵とともにStylipSへの加入が発表された。豊田と同時に研修生から本所属に切り替わった。\r\n\r\n趣味：観劇、仮面ライダー・戦隊ヒーロー鑑賞\r\n特技：けん玉",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "id": 25940,
+    "name": "お市",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5d/22/25940_crt_zL8Gv.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5d/22/25940_crt_zL8Gv.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5d/22/25940_crt_zL8Gv.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5d/22/25940_crt_zL8Gv.jpg"
+    },
+    "summary": "信長の妹。幼い頃からサブローによくなついている。容姿は皆が認めるほど美しいがお転婆で落ち着きがない。渋りつつも織田家のために浅井長政に嫁ぎ、茶々と初と江を産む。嫁ぎ先の浅井家が信長に滅ばされる際に、織田家に身柄を移された。夫の死後でも信長を慕う態度は変わらず、サブローを兄以上に思っている節が見られる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿市"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 0
+    },
+    "anime_ids": [
+        103671
+    ]
+}

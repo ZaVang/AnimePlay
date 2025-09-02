@@ -1,0 +1,23 @@
+{
+    "id": 18252,
+    "name": "咪咪流浪记",
+    "image_path": "data/images/anime/18252.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "《咪咪流浪记》（原题：家なき子）是东京电影新社制作的电视动画，共51集，改编自法国作家耶克特·马洛（Hector Malot）原著小说《苦儿流浪记》（Sans famille）。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 51,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "小说改"
+    ],
+    "date": "1977-10-02",
+    "rating_rank": 1448,
+    "rating_score": 7.5,
+    "rating_total": 60,
+    "main_character_ids": [],
+    "main_characters": []
+}

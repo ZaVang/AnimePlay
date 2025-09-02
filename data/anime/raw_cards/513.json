@@ -1,0 +1,304 @@
+{
+    "id": 513,
+    "type": 2,
+    "name": "海がきこえる",
+    "name_cn": "听到涛声",
+    "summary": "　　考上东京私立大学的杜崎拓，在大学生活的第一个暑假，于月台上见到一名很像高中同学武藤里伽子的女孩。之后为了参加同学会，在回到故乡高知的路上，拓想起了高中时代的回忆。与转学生里伽子的相遇、夏威夷的毕业旅行、与里伽子两人的东京之旅、和友人争执因而闹翻的文化祭。随着这些略带苦涩的记忆，拓开始回顾起里伽子的存在。",
+    "nsfw": false,
+    "locked": false,
+    "date": "1993-05-05",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/3d/c4/513_Any5s.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/3d/c4/513_Any5s.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/3d/c4/513_Any5s.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/3d/c4/513_Any5s.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/3d/c4/513_Any5s.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "听到涛声"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "听见涛声",
+                    "k": null
+                },
+                {
+                    "v": "海潮之聲",
+                    "k": null
+                },
+                {
+                    "v": "海潮之声",
+                    "k": null
+                },
+                {
+                    "v": "Ocean Waves",
+                    "k": null
+                },
+                {
+                    "v": "Umi ga Kikoeru",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "1"
+        },
+        {
+            "key": "放送开始",
+            "value": "1993年5月5日"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://www.ghibli.jp/works/umi/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "日本テレビ"
+        },
+        {
+            "key": "导演",
+            "value": "望月智充"
+        },
+        {
+            "key": "片长",
+            "value": "72分钟"
+        },
+        {
+            "key": "脚本",
+            "value": "丹羽圭子"
+        },
+        {
+            "key": "原作",
+            "value": "氷室冴子"
+        }
+    ],
+    "volumes": 0,
+    "eps": 1,
+    "total_episodes": 1,
+    "rating": {
+        "rank": 408,
+        "total": 3084,
+        "count": {
+            "one": 2,
+            "two": 5,
+            "three": 6,
+            "four": 25,
+            "five": 44,
+            "six": 241,
+            "seven": 724,
+            "eight": 1309,
+            "nine": 531,
+            "ten": 197
+        },
+        "score": 7.8
+    },
+    "collection": {
+        "wish": 1863,
+        "collect": 4199,
+        "doing": 78,
+        "on_hold": 98,
+        "dropped": 33
+    },
+    "tags": [
+        {
+            "name": "吉卜力",
+            "count": 1140
+        },
+        {
+            "name": "剧场版",
+            "count": 883
+        },
+        {
+            "name": "望月智充",
+            "count": 680
+        },
+        {
+            "name": "1993",
+            "count": 571
+        },
+        {
+            "name": "青春",
+            "count": 464
+        },
+        {
+            "name": "小说改",
+            "count": 342
+        },
+        {
+            "name": "校园",
+            "count": 306
+        },
+        {
+            "name": "爱情",
+            "count": 270
+        },
+        {
+            "name": "宫崎骏",
+            "count": 248
+        },
+        {
+            "name": "恋爱",
+            "count": 198
+        },
+        {
+            "name": "听到涛声",
+            "count": 192
+        },
+        {
+            "name": "TV",
+            "count": 90
+        },
+        {
+            "name": "动画电影",
+            "count": 85
+        },
+        {
+            "name": "GHIBLI",
+            "count": 66
+        },
+        {
+            "name": "听见涛声",
+            "count": 48
+        },
+        {
+            "name": "日本",
+            "count": 40
+        },
+        {
+            "name": "少男少女",
+            "count": 29
+        },
+        {
+            "name": "90年代",
+            "count": 26
+        },
+        {
+            "name": "轻小说改",
+            "count": 18
+        },
+        {
+            "name": "スタジオジブリ",
+            "count": 17
+        },
+        {
+            "name": "电影",
+            "count": 17
+        },
+        {
+            "name": "1993年",
+            "count": 17
+        },
+        {
+            "name": "丹羽圭子",
+            "count": 15
+        },
+        {
+            "name": "永田茂",
+            "count": 14
+        },
+        {
+            "name": "TVSP",
+            "count": 13
+        },
+        {
+            "name": "轻改",
+            "count": 11
+        },
+        {
+            "name": "近藤勝也",
+            "count": 11
+        },
+        {
+            "name": "1993年5月",
+            "count": 10
+        },
+        {
+            "name": "1990s",
+            "count": 9
+        },
+        {
+            "name": "氷室冴子",
+            "count": 9
+        }
+    ],
+    "meta_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "小说改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        22804,
+        22805
+    ],
+    "main_characters": [
+        {
+            "id": 22804,
+            "name": "武藤里伽子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/19/6c/22804_crt_8mj58.jpg?r=1557050023",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/6c/22804_crt_8mj58.jpg?r=1557050023",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/6c/22804_crt_8mj58.jpg?r=1557050023",
+                "grid": "https://lain.bgm.tv/pic/crt/g/19/6c/22804_crt_8mj58.jpg?r=1557050023"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13490,
+                    "name": "坂本洋子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "",
+                        "medium": "",
+                        "small": "",
+                        "grid": ""
+                    },
+                    "short_summary": "资料一\r\nアニメ版「海がきこえる」で、里伽子役と、主题歌「海になれ    たら」のボーカルを担当している坂本洋子さんは、実は当时    声优だったわけではなく、主に舞台で活跃されていました。 \r\n（1983年から「剧団お伽座」に所属）主な出演作品に、ミヒャ    エル－エンデ作「モモ」、宫沢贤治作「银河鉄道の夜」など    があります。 \r\nちなみに、ご结婚后、活动は休止されているそうで、ファンと    してはすこし残念ですね。 \r\n\r\n资料二\r\n\r\n特に坂本洋子さんは80年代半ばからの舞台女优で、普段とは违う声优という仕事を前にしても「喜怒哀楽」を声だけで演じたすごい人です。结婚を机に事実上の引退をしてしまわれたのですが、いつまでも惜しまれる存在です",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 22805,
+            "name": "杜崎拓",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/52/34/22805_crt_5z3SZ.jpg?r=1557050468",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/34/22805_crt_5z3SZ.jpg?r=1557050468",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/34/22805_crt_5z3SZ.jpg?r=1557050468",
+                "grid": "https://lain.bgm.tv/pic/crt/g/52/34/22805_crt_5z3SZ.jpg?r=1557050468"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4167,
+                    "name": "飛田展男",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fe/96/4167_prsn_iQprj.jpg?r=1514286894",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/96/4167_prsn_iQprj.jpg?r=1514286894",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/96/4167_prsn_iQprj.jpg?r=1514286894",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fe/96/4167_prsn_iQprj.jpg?r=1514286894"
+                    },
+                    "short_summary": "飛田 展男（とびた のぶお、1959年11月6日 - ）は、日本の声優、ナレーターであり、舞台俳優。アーツビジョン所属。\r\n茨城県水戸市出身。水戸市立三の丸小学校、茨城中学校・高等学校卒業。駒澤大学文学部歴史学科中退。体重55kg。血液型はAB型。愛称は「飛ちゃん」。\r\n\r\n飞田展男，可以说是日本男声优中的“变色龙”。他的角色反差极大，最为夸张的对比就是《安琪莉可》中的水之守护圣卢米埃和《烈火之炎》中的土门，一个美一个丑，一个柔弱一个健壮，一个温柔一个暴躁，一个优雅一个粗鲁，简直就是两个极端，令人怎么也无法相信这是同一位声优的演绎，但事实就是如此。飞田展男利用发音位置的变化控制声音效果，再辅以气声和力度，塑造出截然相反类型的人物。从控制发音变化的技巧来说，飞田展男是独一无二的。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

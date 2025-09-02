@@ -1,0 +1,52 @@
+{
+    "id": 14954,
+    "name": "桂木淳一",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/aa/21/14954_crt_a3ADY.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/21/14954_crt_a3ADY.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/21/14954_crt_a3ADY.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/aa/21/14954_crt_a3ADY.jpg"
+    },
+    "summary": "律子の隣人で、家は『しらゆり』というケーキ店。東京の大学に通っている。トランペット奏者。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "桂木淳一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かつらぎ じゅんいち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Katsuragi Junichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://ja.wikipedia.org/wiki/%E5%9D%82%E9%81%93%E3%81%AE%E3%82%A2%E3%83%9D%E3%83%AD%E3%83%B3"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 15
+    },
+    "anime_ids": [
+        29426
+    ]
+}

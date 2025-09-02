@@ -1,0 +1,64 @@
+{
+    "id": 20705,
+    "name": "スノウ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/da/c7/20705_crt_ymhG2.jpg?r=1375755217",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/c7/20705_crt_ymhG2.jpg?r=1375755217",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/c7/20705_crt_ymhG2.jpg?r=1375755217",
+        "grid": "https://lain.bgm.tv/pic/crt/g/da/c7/20705_crt_ymhG2.jpg?r=1375755217"
+    },
+    "summary": "14岁。\r\n现实世界中为小雪，银太的玩伴和同学。\r\nMAR Heaven中为白雪，MAR Heaven大国雷斯特瓦国公主。为逃出后母戴安娜的控制而离开雷斯塔瓦。在被Chess兵队追捕时用冰之ARM将自己封印在巴兹利加岛的一座古城堡中，被银太用火之ARM所救出。后加入MÄR队对抗Chess兵队。\r\n白雪与小雪拥有一模一样的相貌与性格，两人有着微妙连系。事实上白雪是戴安娜用魔石从小雪的灵魂中创造出来的。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "白雪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "小雪"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Snow"
+                },
+                {
+                    "k": "日文名",
+                    "v": "小雪"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こゆき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Koyuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 6
+    },
+    "anime_ids": [
+        9397
+    ]
+}

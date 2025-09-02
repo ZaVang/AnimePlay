@@ -1,0 +1,68 @@
+{
+    "id": 5796,
+    "name": "ジンベエ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4d/6a/5796_crt_CUrie.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4d/6a/5796_crt_CUrie.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4d/6a/5796_crt_CUrie.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4d/6a/5796_crt_CUrie.jpg"
+    },
+    "summary": "甚平为鲸鲨鱼人，特征是卷眉毛和鬓角，发型为丁髷风，下巴蓄著粗黑的短胡子，左眼眼角有着闪电纹路般的伤痕，身材宽大，下颚有两颗大牙齿，代表“太阳海贼团”的太阳标志位于胸口中，经常穿着绣有花纹的浴衣、日本木屐。血型为F型。拥有可以一击毁掉整个海贼团的怪力，擅长“鱼人空手道”和“鱼人柔术”，因为种族与成长环境影响，熟知海洋的动态，同时在海中可发挥最大力量。\r\n为人行侠仗义，有“海侠”之称，有着明智冷静的判断力。在海军本部对七武海的“强制召集”中，是唯一一位拒绝与白胡子海贼团对立的七武海。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "甚平"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ジンベエ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Jinbei"
+                },
+                {
+                    "k": "昵称",
+                    "v": "海侠"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月2日"
+        },
+        {
+            "key": "血型",
+            "value": "F型"
+        },
+        {
+            "key": "身高",
+            "value": "301cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 2,
+    "stat": {
+        "comments": 13,
+        "collects": 10
+    },
+    "anime_ids": [
+        975
+    ]
+}

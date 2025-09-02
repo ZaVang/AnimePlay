@@ -1,0 +1,736 @@
+{
+    "id": 37295,
+    "type": 2,
+    "name": "銀河漂流バイファム",
+    "name_cn": "银河漂流VIFAM",
+    "summary": "公元2058年，人类已经成功在距离太阳系43光年普萨隆星系进行了移民，但是外星人“库克多尼亚”却将地球人的大规模宇宙移民视为对自己的侵略，很快战争爆发了。\r\n某日，来到殖民星球克莱亚特的地球考察队在星球的密林里发现了神秘的石碑，于此同时，库克多尼亚军对克莱亚特星的地球军队基地发动袭击，难民们乘坐太空梭逃上位于太空的大型训练舰“杰纳斯”。\r\n在付出巨大的牺牲后，杰纳斯的幸存者们最终只剩下13名孩子，为了和被敌军抓走的父母相见，孩子们决定冒险前往关押父母的星球，一场属于13名小孩的“银河漂流”开始了。",
+    "nsfw": false,
+    "locked": false,
+    "date": "1983-10-21",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/bd/59/37295_400in.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/bd/59/37295_400in.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/bd/59/37295_400in.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/bd/59/37295_400in.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/bd/59/37295_400in.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "银河漂流VIFAM"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "银河漂流华尔芬",
+                    "k": null
+                },
+                {
+                    "v": "银河飘流华尔分",
+                    "k": null
+                },
+                {
+                    "v": "VIFAM",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "46"
+        },
+        {
+            "key": "放送开始",
+            "value": "1983年10月21日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期五"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://vifam.net/"
+        },
+        {
+            "key": "播放结束",
+            "value": "1984年9月8日"
+        },
+        {
+            "key": "导演",
+            "value": "神田武幸"
+        },
+        {
+            "key": "音乐",
+            "value": "渡辺俊幸"
+        },
+        {
+            "key": "Copyright",
+            "value": "©サンライズ"
+        },
+        {
+            "key": "企画",
+            "value": "日本サンライズ"
+        },
+        {
+            "key": "原案",
+            "value": "矢立肇、富野由悠季"
+        },
+        {
+            "key": "原作",
+            "value": "神田武幸、星山博之"
+        },
+        {
+            "key": "机械设定",
+            "value": "大河原邦男；辅：永野護（第1話～第16話）、市橋一美（第17話～第25話）、松岡伸（第17話～第25話）、佐藤正浩（第26話～第46話）"
+        },
+        {
+            "key": "制片人",
+            "value": "植田益朗（日本サンライズ）、丸谷嘉彦（毎日放送）"
+        },
+        {
+            "key": "製作",
+            "value": "毎日放送、日本サンライズ"
+        },
+        {
+            "key": "人物设定",
+            "value": "芦田豊雄"
+        },
+        {
+            "key": "剪辑",
+            "value": "鶴渕映画"
+        },
+        {
+            "key": "特效",
+            "value": "干場豊"
+        },
+        {
+            "key": "录音",
+            "value": "茶畑三男"
+        },
+        {
+            "key": "音响",
+            "value": "映広音響"
+        },
+        {
+            "key": "制作管理",
+            "value": "制作デスク：望月真人"
+        },
+        {
+            "key": "脚本",
+            "value": "星山博之、平野靖士、伊東恒久、並木敏"
+        },
+        {
+            "key": "分镜",
+            "value": "神田武幸、廣川集一、奥田誠治、西村純二、石崎すすむ、康村諒、やまざきかずお、アミノテツロー、寺田和男、三浦将則、鈴木行、藤原良二、谷田部勝義、知吹愛弓、\t滝沢敏文"
+        },
+        {
+            "key": "演出",
+            "value": "石崎すすむ、アミノテツロー、廣川集一、関田修、西村純二、三浦将則、康村諒、長谷川康雄、谷川史郎、藤原良二、殿勝秀樹、谷田部勝義、知吹愛弓、浜津守"
+        },
+        {
+            "key": "作画监督",
+            "value": "芦田豊雄、わたなべひろし、本橋秀之、富沢雄三、伊東誠、長岡康史、佐々門信芳、二宮常雄、村中博美、櫻井美知代"
+        },
+        {
+            "key": "补间动画",
+            "value": "高実子とみ子、吉村哲也、松本明子、戸倉紀元、山内則康、佐藤裕一、渡辺延子、吉川文代、釜田万理子、若穂囲泰子、福島竜郎、宮下力、西栄文子、横山泰和"
+        },
+        {
+            "key": "动画检查",
+            "value": "臼井孝二、門脇孝一、石井康雄、露木進、小林智子"
+        },
+        {
+            "key": "制作协力",
+            "value": "スタジオディーン"
+        },
+        {
+            "key": "演出助理",
+            "value": "パク・キョンスン"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "ジャネット・辻野"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "David Mann"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "TAO"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "TAO"
+        },
+        {
+            "key": "插入歌演出",
+            "value": "ムーヴ（白鳥座）、バイファムシンガーズ"
+        }
+    ],
+    "volumes": 0,
+    "eps": 46,
+    "total_episodes": 46,
+    "rating": {
+        "rank": 520,
+        "total": 74,
+        "count": {
+            "one": 0,
+            "two": 0,
+            "three": 0,
+            "four": 0,
+            "five": 1,
+            "six": 5,
+            "seven": 9,
+            "eight": 30,
+            "nine": 25,
+            "ten": 4
+        },
+        "score": 8.1
+    },
+    "collection": {
+        "wish": 316,
+        "collect": 92,
+        "doing": 37,
+        "on_hold": 22,
+        "dropped": 16
+    },
+    "tags": [
+        {
+            "name": "SUNRISE",
+            "count": 73
+        },
+        {
+            "name": "TV",
+            "count": 68
+        },
+        {
+            "name": "1983",
+            "count": 64
+        },
+        {
+            "name": "神田武幸",
+            "count": 55
+        },
+        {
+            "name": "原创",
+            "count": 45
+        },
+        {
+            "name": "萝卜",
+            "count": 44
+        },
+        {
+            "name": "星山博之",
+            "count": 25
+        },
+        {
+            "name": "机战",
+            "count": 17
+        },
+        {
+            "name": "80年代",
+            "count": 11
+        },
+        {
+            "name": "科幻",
+            "count": 10
+        },
+        {
+            "name": "日本动画",
+            "count": 9
+        },
+        {
+            "name": "伊東恒久",
+            "count": 8
+        },
+        {
+            "name": "日本",
+            "count": 7
+        },
+        {
+            "name": "80s",
+            "count": 5
+        },
+        {
+            "name": "神作",
+            "count": 3
+        },
+        {
+            "name": "サンライズ",
+            "count": 3
+        },
+        {
+            "name": "富野由悠季",
+            "count": 3
+        },
+        {
+            "name": "難波克弘",
+            "count": 2
+        },
+        {
+            "name": "人设赞",
+            "count": 2
+        },
+        {
+            "name": "大河原邦男",
+            "count": 2
+        },
+        {
+            "name": "1983年10月",
+            "count": 2
+        },
+        {
+            "name": "80",
+            "count": 2
+        },
+        {
+            "name": "芦田豊雄",
+            "count": 2
+        },
+        {
+            "name": "没字幕",
+            "count": 2
+        },
+        {
+            "name": "补",
+            "count": 2
+        },
+        {
+            "name": "长篇",
+            "count": 2
+        },
+        {
+            "name": "TVA",
+            "count": 2
+        },
+        {
+            "name": "机器人",
+            "count": 2
+        },
+        {
+            "name": "ロボットアニメ",
+            "count": 1
+        },
+        {
+            "name": "优先3",
+            "count": 1
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "series": false,
+    "main_character_ids": [
+        75037,
+        75038,
+        75039,
+        75040,
+        75041,
+        75042,
+        75043,
+        75044,
+        75045,
+        75046,
+        75047,
+        75048,
+        75049
+    ],
+    "main_characters": [
+        {
+            "id": 75037,
+            "name": "ロディ・シャッフル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/47/da/75037_crt_cWISi.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/da/75037_crt_cWISi.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/da/75037_crt_cWISi.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/47/da/75037_crt_cWISi.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 37349,
+                    "name": "難波克弘",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fb/b3/37349_prsn_pY52Z.jpg?r=1717492794",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/b3/37349_prsn_pY52Z.jpg?r=1717492794",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/b3/37349_prsn_pY52Z.jpg?r=1717492794",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fb/b3/37349_prsn_pY52Z.jpg?r=1717492794"
+                    },
+                    "short_summary": "日本の元俳優・子役、声優。\r\n東京都出身。小学生時にグループこまどりに入団し、子役時代を経て、変声期途中の高校生時に『銀河漂流バイファム』の主役に起用され有名となる。幼少の頃からマイコンに興味を持ち、小学生だった難波は東京都西新宿にあったタンディ・ラジオシャックにフロッピーディスクを持ち込み、店頭展示してあるTRS-80 Model I用のプログラムを書いていた[1]。役者業と並行し中学時代よりアスキーでアルバイトとして勤め、マイクロソフト製品を扱う部門にいたことから大学在学時にマイクロソフトの日本法人の設立に際してアルバイト先も移動、1989年卒業とともにマイクロソフト株式会社の正社員となり芸能界引退状態となる[2]。MSワード6.0の開発のためマイクロソフト米国本社への長期出張の末1993年に転籍しアメリカ・ワシントン州へ移住、MSワードなどのソフトウェアデベロッパーとして勤務していた。2009年4月に同社を依願退職し、フリーランスな生活を過ごしていることが公式サイト上のブログで綴られている。\r\n引退後は『銀河漂流バイファム』のロディ・シャッフル役を保志総一朗、『タッチ』の佐々木と『陽あたり良好!』の中岡役を石田彰が担当した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 75038,
+            "name": "バーツ・ライアン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/10/a9/75038_crt_Z0ZXB.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/10/a9/75038_crt_Z0ZXB.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/10/a9/75038_crt_Z0ZXB.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/10/a9/75038_crt_Z0ZXB.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4501,
+                    "name": "竹村拓",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1a/15/4501_seiyu_anidb.jpg?r=1679546318",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/15/4501_seiyu_anidb.jpg?r=1679546318",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/15/4501_seiyu_anidb.jpg?r=1679546318",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1a/15/4501_seiyu_anidb.jpg?r=1679546318"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 75039,
+            "name": "スコット・ヘイワード",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9c/78/75039_crt_8aNEj.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/78/75039_crt_8aNEj.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/78/75039_crt_8aNEj.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9c/78/75039_crt_8aNEj.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4995,
+                    "name": "鳥海勝美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6d/bb/4995_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6d/bb/4995_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6d/bb/4995_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6d/bb/4995_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 75040,
+            "name": "クレア・バーブランド",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/74/2e/75040_crt_uHtYz.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/74/2e/75040_crt_uHtYz.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/74/2e/75040_crt_uHtYz.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/74/2e/75040_crt_uHtYz.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4022,
+                    "name": "冨永みーな",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/36/6b/4022_prsn_NU8hh.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/6b/4022_prsn_NU8hh.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/6b/4022_prsn_NU8hh.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/36/6b/4022_prsn_NU8hh.jpg"
+                    },
+                    "short_summary": "富永美衣奈（1966年4月3日－）是日本女性声优。广岛县广岛市出身。5岁时首次参加电影演出，6岁时加入“剧団こまどり”；曾以“富永美子”之本名在《雷欧·奥特曼》等多部特摄片中扮演重要角色，就读于日本大学樱丘高等学校时期开始参与声优演出活动，日本大学艺术学部演剧学科在读期间作为声优的人气急剧上升，从而奠定了她日后于声优界立足发展的开始。曾先后效力于グループこまどり、プロジェクト‧レヴュー、大桥巨泉事务所等剧团及声优事务所。曾与同为著名声优的矢尾一树结婚，后离婚。2001年8月与演员增本庄一郎结婚，2002年1月产下长女，2005年又产下一子。代表作为“机动警察”的泉野明、“相聚一刻”的七尾梢、“浪客剑心”的明神弥彦、“地狱老师”的细川美树、“棒球英豪”的新田由加。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 75041,
+            "name": "マキ・ローウェル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e4/46/75041_crt_ZnNMp.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/46/75041_crt_ZnNMp.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/46/75041_crt_ZnNMp.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e4/46/75041_crt_ZnNMp.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 17481,
+                    "name": "手塚ちはる",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/85/b7/17481_prsn_IZiBd.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/b7/17481_prsn_IZiBd.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/b7/17481_prsn_IZiBd.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/85/b7/17481_prsn_IZiBd.jpg"
+                    },
+                    "short_summary": "手塚 ちはるは、日本の女性声優。アーツビジョン所属。東京都台東区出身。本名は君塚美さ子（きみづか みさこ）。\r\n\r\nアーツビジョン付属日本ナレーション演技研究所出身で、同じ在籍者だった椎名へきる、藤野かほる、矢沢ゆめるとアイドルグループクリスタル・A[メンバー 1]を結成していた。\r\n読売ジャイアンツのファン。\r\n趣味・特技はプロ野球観戦、料理。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 75042,
+            "name": "シャロン・パブリン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/eb/d0/75042_crt_UgGnN.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/d0/75042_crt_UgGnN.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/d0/75042_crt_UgGnN.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/eb/d0/75042_crt_UgGnN.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4094,
+                    "name": "原えりこ",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ed/d7/4094_prsn_iA8MD.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/d7/4094_prsn_iA8MD.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/d7/4094_prsn_iA8MD.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ed/d7/4094_prsn_iA8MD.jpg"
+                    },
+                    "short_summary": "出生于日本东京都的女性声优。以前隶属于青二Production、ARTSVISION。\r\n\r\n高校卒業後は、芸能界を目指していくつかのオーディションを受ける。TBSのお天気お姉さんや『ワンツージャンプ!』のオーディションはいずれも次点で不合格。しかしあるTBSのディレクターがそれを惜しみ、何回かイベントの仕事で起用されるようになる。その後、テレビ朝日の連続ドラマの新人出演者募集に応募したところ、合格してドラマデビューできることになったが、以前からお世話になってるTBSのディレクターに相談したところ「TBS以外からデビューしないでくれ、もうちょっと待て」と言われ止められたという[2]。その後、声優になるべく専門学校東京アナウンス学院の放送声優科に通い出し、番衆プロダクションに所属。\r\n1982年、『逆転イッパツマン』の放夢ラン役で声優デビュー。同年、『ときめきトゥナイト』の江藤蘭世役で初主演。以後、1990年代前半までを中心として活躍した。\r\n2007年6月、それまで所属していたアーツビジョンから離脱、フリーとなる。また、桐朋学園芸術短期大学や総合学園ヒューマンアカデミー渋谷校で講師となっている。アニメの仕事を完全に休止したわけではなく、『それいけ!アンパンマン』（ピョン吉役）には引き続き声をあてている。2010年8月、新白無垢の鬼などの演劇活動に励む傍ら、声優養成所「SVAA」「RAMS Professional Education」などの講師としても活動していた。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 75043,
+            "name": "フレッド・シャッフル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/dc/f2/75043_crt_vRgkG.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/f2/75043_crt_vRgkG.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/f2/75043_crt_vRgkG.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/dc/f2/75043_crt_vRgkG.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 37348,
+                    "name": "菊池英博",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0a/5f/37348_prsn_EQqfu.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/5f/37348_prsn_EQqfu.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/5f/37348_prsn_EQqfu.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0a/5f/37348_prsn_EQqfu.jpg"
+                    },
+                    "short_summary": "日本の男性声優。東京都出身。\r\n以前はグループこまどり、プロダクション東京ドラマハウスに所属していた。\r\n子役として幼少のころから活動している。『銀河漂流バイファム』にフレッド・シャッフル役で出演していた際は小学生で、収録期間中に変声期を迎え、前半と後半とでは声が違っている。さらに後に放送された『銀河漂流バイファム13』においても同じ役で出演しているが、この時は変声期も終わり大人の声になっている。\r\n現在は活動を休止しており途中降板した近藤孝行の後任で本田ヒロト役を担当していた『遊☆戯☆王 THE DARK SIDE OF DIMENSIONS』でも当初は出演キャストに名を連ねていたものの急遽降板し、初代声優の近藤がシリーズ復帰を果たして引き継いだ。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 75044,
+            "name": "ペンチ・イライザ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b3/05/75044_crt_UvC95.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/05/75044_crt_UvC95.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/05/75044_crt_UvC95.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b3/05/75044_crt_UvC95.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 37350,
+                    "name": "あきやまるな",
+                    "type": 1,
+                    "career": [],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b8/29/37350_prsn_2G3wM.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/29/37350_prsn_2G3wM.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/29/37350_prsn_2G3wM.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b8/29/37350_prsn_2G3wM.jpg"
+                    },
+                    "short_summary": "日本の女性声優。東京都生まれ。テレビタレントセンター20期生。最終所属は81プロデュース。かつてはぷろだくしょんバオバブに所属していた。一時はアクセントに所属していた時期もあった。\r\n姉が居る。1973年、桜美林高等学校卒業。女優に憧れて芝居の勉強をしていたが、東京アナウンス学院に入学したことがきっかけで、声優に進路を転換し、声優デビュー。\r\n2014年3月8日未明に虚血性心不全のため都内の自宅で死去。満59歳没。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 75045,
+            "name": "カチュア・ピアスン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a5/50/75045_crt_Z224B.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/50/75045_crt_Z224B.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/50/75045_crt_Z224B.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a5/50/75045_crt_Z224B.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3899,
+                    "name": "笠原弘子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fd/5a/3899_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/5a/3899_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/5a/3899_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fd/5a/3899_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "1970年2月19日，出生于东京都涩谷区内的医院。独生女。由于母亲出身自新潟县，因此笠原似乎本来也以为自己是新潟县出身的。\r\n\r\n5岁时，为了改变内向的个性，加入儿童剧团“剧团知更（劇団こまどり）”（后改名グループこまどり）。小学时代以童星身分活跃，并且在NHK教育频道的道德教育节目‘みんななかよし’中，有2年固定的演出。\r\n\r\n国中2年级时以动画《银河漂流》的カチュア・ピアスン一角正式声优出道。因为“可以不用露脸所以不会被学校发现”的理由，国中、高中时代以声优的工作为主。\r\n\r\n高中2年级在漫画《シャンペン・シャワー》的印象专辑当中演唱歌曲“告白 〜愛しのジョゼ”而以歌手身分出道。其后历经《究极超人》等作品，为日本华纳音乐的Image Capsule（イメージカプセル）系列的印象专辑演唱了许多歌曲。直到高中毕业，推出第一张个人单曲“Believe yourself Again”，同年年底更发行首张专辑“スローガラスの輝き”，往后活跃在声优与歌手领域。\r\n\r\n2003年，离开待了多年的グループこまどり，转移至ラブライブ（现在的Y・M・O）。2005年迎接出道30周年，举办了昼夜共2回纪念演唱会。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 75046,
+            "name": "ケンツ・ノートン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/52/52/75046_crt_7o7kU.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/52/75046_crt_7o7kU.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/52/75046_crt_7o7kU.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/52/52/75046_crt_7o7kU.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3954,
+                    "name": "野沢雅子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/ee/3954_prsn_mTEmk.jpg"
+                    },
+                    "short_summary": "日本の声優、女優、歌手、ナレーター。本名：塚田 雅子（つかだ まさこ、旧姓：野沢）。所属事務所は青二プロダクション。劇団ムーンライト主宰。\r\n\r\n東京都日暮里出身。身長157cm、血液型はO型。役者仲間からの愛称はマコさん。夫は同じく声優の塚田正昭。\r\n\r\n声優としての代表作に『ゲゲゲの鬼太郎』（鬼太郎）、『いなかっぺ大将』（風 大左衛門）、『ど根性ガエル』（ひろし）、『銀河鉄道999』（星野鉄郎）、『ドラゴンボール』シリーズ（孫悟空、孫悟飯、孫悟天）など。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 75047,
+            "name": "ジミー・エリル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/83/90/75047_crt_6Ev0g.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/90/75047_crt_6Ev0g.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/90/75047_crt_6Ev0g.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/83/90/75047_crt_6Ev0g.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 24458,
+                    "name": "千々松幸子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/88/a1/24458_prsn_xJkOP.jpg?r=1468682256",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/a1/24458_prsn_xJkOP.jpg?r=1468682256",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/a1/24458_prsn_xJkOP.jpg?r=1468682256",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/88/a1/24458_prsn_xJkOP.jpg?r=1468682256"
+                    },
+                    "short_summary": "日本の女性声優。福岡県出身。81プロデュース所属。東京アナウンスアカデミー卒。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 75048,
+            "name": "マルロ・Jr.・ボナー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3e/4d/75048_crt_xxBwY.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/4d/75048_crt_xxBwY.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/4d/75048_crt_xxBwY.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3e/4d/75048_crt_xxBwY.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4003,
+                    "name": "佐々木るん",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3c/e8/4003_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/e8/4003_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/e8/4003_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3c/e8/4003_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "佐々木 るん（ささき るん、1956年3月21日 - ）は日本の女性声優。本名・旧芸名は佐々木由美子。\r\n\r\n福島県出身。法政大学英文科卒業。映画の記録係を経て東京俳優生活協同組合付属養成所に通いながら小劇団で舞台活動をした。1979年に第 1回ニッポン放送アマチュア声優コンテスト1位を獲得して、ラジオドラマに出演した。アニメでのデビュー作は『さるとび佐助』の雪乃姫役になる。芸名の名付け親は、当時ニッポン放送のプロデューサーだったドン上野こと上野修で、手塚治虫の漫画のタイトル『るんは風の中』からとられた。\r\nぷろだくしょんバオバブに所属し、大沢事務所へと移籍したが、のちにフリーランスで活動。\r\n現在はアメリカのシアトルに在住し、Team Dreamcatchersという声優養成所を運営している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 75049,
+            "name": "ルチーナ・プレシェット",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bf/14/75049_crt_8Y5cu.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/14/75049_crt_8Y5cu.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/14/75049_crt_8Y5cu.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bf/14/75049_crt_8Y5cu.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5037,
+                    "name": "滝沢久美子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/97/af/5037_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/97/af/5037_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/97/af/5037_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/97/af/5037_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の女性声優。81プロデュース所属。東京都出身。\r\n\r\n芝居好きの両親のもと、3人兄妹の末っ子として育つ。滝沢自身も芝居が好きで、新国劇や松竹新喜劇が東京に来たときは、欠かさず見に行っていた。女優の宮城まり子が出演した舞台を観劇し、当時小学校低学年だったにもかかわらず、その演技の素晴らしさに感動して泣いた。\r\n性格は周囲に心配されるほどの引っ込み思案だったが、中学生の頃に「自分を変えたい」と演劇部に入部する。最初は道具作りの進行報告すらできなかったが、舞台で脇役を演じるようになり、高校ではシェークスピア劇などの出演を経て、「人前で堂々とスピーチをして、校内の評議会委員長に選出されてしまうほど」になったという。\r\n品川高等学校（現：品川女子学院高等部）を卒業後、専門学校に通っていたが東放学園の声優募集を見つけ、「演劇部の延長のような気持ち」で応募した。1年間学んだ後、先生の紹介で劇団ぐるーぷえいとに所属する。芝居をたたき込まれて、舞台に立つようになる。ぐるーぷえいとには7年近く在籍した。同時に声優業も行い、『風船少女テンプルちゃん』では主演を務めたが、その時点ではまだ声優になるつもりはなかった。しかし続けていくうちに、「声の仕事の奥深さ」に気づいたという。\r\nその後、ぷろだくしょんバオバブを経て、81プロデュース所属となった。\r\n2022年6月11日、心臓麻痺のため死去。\r\n\r\n声種はソプラノ。\r\n特技は料理、絵画。趣味は旅行、ガーデニング。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

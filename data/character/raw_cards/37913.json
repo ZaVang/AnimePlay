@@ -1,0 +1,67 @@
+{
+    "id": 37913,
+    "name": "十六夜リコ／キュアマジカル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/cb/4a/37913_crt_dz8E3.jpg?r=1452006200",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cb/4a/37913_crt_dz8E3.jpg?r=1452006200",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cb/4a/37913_crt_dz8E3.jpg?r=1452006200",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cb/4a/37913_crt_dz8E3.jpg?r=1452006200"
+    },
+    "summary": "「魔法学校」に通う女の子。みらいと同じ１３歳。\r\n勉強はよくできるけれども、魔法だけがちょっぴり苦手。でも、いつかは立派な魔法使いになるという目標を持っている。一緒に生活することになったみらいの、いつも明るくてまっすぐなところが気になる。強い力を秘めた宝石「リンクルストーン・エメラルド」を探しに、ナシマホウ界にやってきて、みらいと出会う。\r\n\r\n魔法界で暮らす19歳。\r\n意地っ張りで素直じゃないところもあるが、根は優しく友達思いで、真面目な努力家。\r\n子どもの頃は魔法の実技が苦手だったが、今は立派な魔法つかいになり魔法学校で教鞭を執っている。\r\n新たな敵の出現をきっかけに、再びキュアマジカルに変身。 \r\n伝説の魔法つかい『キュアマジカル』に変身。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "十六夜莉可／魔力天使"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "十六夜リコ"
+                },
+                {
+                    "v": "Cure Magical"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Liko"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いざよい リコ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Izayoi Riko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月12日"
+        },
+        {
+            "key": "引用来源",
+            "value": "www.toei-anim.co.jp/tv/mahotsukai_precure"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 12,
+    "stat": {
+        "comments": 18,
+        "collects": 47
+    },
+    "anime_ids": [
+        159826,
+        424454
+    ]
+}

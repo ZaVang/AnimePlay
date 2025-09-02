@@ -1,0 +1,84 @@
+{
+    "id": 52508,
+    "name": "青葉モカ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/65/30/52508_crt_4Bv4s.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/30/52508_crt_4Bv4s.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/30/52508_crt_4Bv4s.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/65/30/52508_crt_4Bv4s.jpg"
+    },
+    "summary": "对于没兴趣的东西完全不在乎，而为了喜欢的人就能拼尽全力的类型。\r\n喜欢对于一件事坚持到底，乐器便是其中之一。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "青叶摩卡"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あおば もか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aoba Moka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月3日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "担当",
+            "value": "主吉他手"
+        },
+        {
+            "key": "星座",
+            "value": "处女座"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "面包"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "辣的东西"
+        },
+        {
+            "key": "兴趣",
+            "value": "收集点卡、睡觉"
+        },
+        {
+            "key": "所属",
+            "value": "Afterglow"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 3,
+    "stat": {
+        "comments": 28,
+        "collects": 108
+    },
+    "anime_ids": [
+        246431
+    ]
+}

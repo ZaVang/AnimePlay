@@ -1,0 +1,48 @@
+{
+    "id": 50824,
+    "name": "サーバル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e1/48/50824_crt_wNv36.jpg?r=1545325052",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/48/50824_crt_wNv36.jpg?r=1545325052",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/48/50824_crt_wNv36.jpg?r=1545325052",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e1/48/50824_crt_wNv36.jpg?r=1545325052"
+    },
+    "summary": "足が速く、鼻も耳もいいが、おっちょこちょいで全部台無しになっている。木登りが得意。フォッサいわく、さばんなちほーのトラブルメーカー。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "薮猫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Serval"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sābaru"
+                },
+                {
+                    "k": "学名",
+                    "v": "Leptailurus serval"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 29,
+        "collects": 119
+    },
+    "anime_ids": [
+        176478
+    ]
+}

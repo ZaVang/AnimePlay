@@ -1,0 +1,88 @@
+{
+    "id": 205485,
+    "name": "咕噜咕噜魔法阵",
+    "image_path": "data/images/anime/205485.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "被勇者迷父母养育成长的少年尼克。某天，父母得知了哥达国国王为了讨伐魔王而募集勇者一事，于是尼克被勇者迷父母说着“到出发旅行的日子了！”而强行展开了旅程。尼克按照村子的惯例，在旅行前前往村子边缘的怪人魔法婆婆家里，并在那里遇见了使用名为“咕噜咕噜”的不可思议魔法的少女柯柯丽。略显轻率的尼克和不谙世事天真烂漫的柯柯丽，以及在这样的两人的旅途中加以点缀的独特而具魅力的同伴们。尽情欢笑，偶尔哭泣。令人心动不已，满溢勇气与感动的王道冒险幻想剧，现在开幕！ ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2017-07-11",
+    "rating_rank": 1234,
+    "rating_score": 7.4,
+    "rating_total": 492,
+    "main_character_ids": [
+        1777,
+        1778
+    ],
+    "main_characters": [
+        {
+            "id": 1777,
+            "name": "ニケ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d0/d8/1777_crt_m3Hp2.jpg?r=1631424792",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/d8/1777_crt_m3Hp2.jpg?r=1631424792",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/d8/1777_crt_m3Hp2.jpg?r=1631424792",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d0/d8/1777_crt_m3Hp2.jpg?r=1631424792"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 14414,
+                    "name": "石上静香",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/04/f5/14414_prsn_7nPYh.jpg?r=1735460841",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/f5/14414_prsn_7nPYh.jpg?r=1735460841",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/f5/14414_prsn_7nPYh.jpg?r=1735460841",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/04/f5/14414_prsn_7nPYh.jpg?r=1735460841"
+                    },
+                    "short_summary": "日本的女性声优，东京都出身，所属大泽事务所。\r\n\r\n東京メディアアカデミーの声優ボーカル科（現：東京声優アカデミーの声優養成科）を卒業。81プロデュース所属後、プロフィット養成所を経て2014年2月よりプロ・フィット所属となる。\r\n名前付きの初めての役は、『凪のあすから』の潮留晃。\r\nオーディションをして初めて受かった役は『健全ロボ ダイミダラー』の喜友名霧子。\r\n2022年1月1日、プロ・フィットが同年3月末で閉鎖することに伴い、大沢事務所へ移籍。\r\n\r\n2025年6月30日发表与[url=https://bgm.tv/person/41419]柳晃平[/url]结婚",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 1778,
+            "name": "ククリ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/63/9b/1778_crt_e76Ze.jpg?r=1631424834",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/9b/1778_crt_e76Ze.jpg?r=1631424834",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/9b/1778_crt_e76Ze.jpg?r=1631424834",
+                "grid": "https://lain.bgm.tv/pic/crt/g/63/9b/1778_crt_e76Ze.jpg?r=1631424834"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 27194,
+                    "name": "小原好美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844"
+                    },
+                    "short_summary": "日本女性配音员、演员。大泽事务所所属。\r\n\r\n国中时开始喜欢动画，并想要成为声优。高中毕业后进入Human Academy综合学园。2012年开始当了两年的演员，之后加入大泽事务所。\r\n\r\n2017年7月起3个月间在长寿电台节目《Radio Dottoai》就任第71代主持人。\r\n\r\n2017年4月至6月播出的《月色真美》中初次担任主演。同年7月播出《咕噜咕噜魔法阵 (2017年版)》中担演女主角而掀起话题，并与共同主演的石上静香主持同名动画的广播节目。同年11月10日Instagram开设。\r\n\r\n2019年于《Star☆Twinkle 光之美少女》中第一次出演光之美少女系列。同年4月，由文化放送“超！A&G+”制作的广播节目《小原好美のココロおきなく》开播，5月开设节目官方Twitter。2020年3月，该广播节目获得第6届Aniradi Award“BEST COMFORT RADIO 疗愈电台奖”。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

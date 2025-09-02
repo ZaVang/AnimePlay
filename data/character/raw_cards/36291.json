@@ -1,0 +1,76 @@
+{
+    "id": 36291,
+    "name": "北上麗花",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b0/f6/36291_crt_H1HRU.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/f6/36291_crt_H1HRU.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/f6/36291_crt_H1HRU.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b0/f6/36291_crt_H1HRU.jpg"
+    },
+    "summary": "偶像大师百万LIVE登场偶像，Dance阵营。 \r\n\r\n喜欢看人的笑脸，20岁的双马尾偶像。但是没有加入作为对手组登场的六辫组（六辫组分别为弥生，亚利沙和艾米莉三人。） \r\n\r\n有着独特的感受性，称制作人为「The 普通的人」。不太依赖於制作人，这样似乎能是自己更加安心。 \r\n\r\n性格和美也一样的天然，一比思考着自己写的歌，一边就忘记了活动用的教材。 \r\n\r\n由於不会阻止环的恶作剧，从而被琴叶生气地批评道：「你好歹是个大人啊，拜托你也去制止她！」 \r\n\r\n亲密度高了之後会有爆炸式的发言。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "北上丽花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "北上 麗花"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きたかみ れいか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kitakami Reika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月17日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "164cm"
+        },
+        {
+            "key": "体重",
+            "value": "47kg"
+        },
+        {
+            "key": "BWH",
+            "value": "84-58-84"
+        },
+        {
+            "key": "年齡",
+            "value": "20岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 17,
+    "stat": {
+        "comments": 13,
+        "collects": 20
+    },
+    "anime_ids": [
+        309807
+    ]
+}

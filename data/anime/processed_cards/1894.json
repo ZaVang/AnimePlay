@@ -1,0 +1,119 @@
+{
+    "id": 1894,
+    "name": "勇者王GaoGaiGar",
+    "image_path": "data/images/anime/1894.jpg",
+    "points": 7.8,
+    "cost": 1,
+    "rarity": "N",
+    "description": "故事讲述2003年，一架神秘的机械生命体“EI-01”出现，把当时是太空人的狮子王凯的太空船击落，然后在地球上消失了。同一时间，一架神秘的机械狮子Galeon出现并救起狮子王凯。\r\n这架机械狮子Galeon带来了名为G-Stone的动力源和无限情报集体回路。除了把狮子王凯救活并改造成机器人外，也带来了一系列超越地球的科技和有关机械生命体易情报。而日本政府为了对抗机械生命体，成立了地球防卫勇者队3G，Gutsy Geoid Guard。\r\n两年后机械生命体正式开始进攻，而地球的未来就依靠地球防卫勇者队3G的队员，故事也由于展开。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 49,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "1997-02-01",
+    "rating_rank": 545,
+    "rating_score": 7.8,
+    "rating_total": 534,
+    "main_character_ids": [
+        49524,
+        49525,
+        49526
+    ],
+    "main_characters": [
+        {
+            "id": 49524,
+            "name": "獅子王凱",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/47/84/49524_crt_2cymC.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/84/49524_crt_2cymC.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/84/49524_crt_2cymC.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/47/84/49524_crt_2cymC.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4105,
+                    "name": "檜山修之",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d8/c2/4105_prsn_6dzrY.jpg?r=1732374320",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/c2/4105_prsn_6dzrY.jpg?r=1732374320",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/c2/4105_prsn_6dzrY.jpg?r=1732374320",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d8/c2/4105_prsn_6dzrY.jpg?r=1732374320"
+                    },
+                    "short_summary": "檜山 修之（ひやま のぶゆき、1967年8月25日- ）は、日本の男性声優、ナレーターである。アーツビジョン所属。広島県廿日市市出身。身長166cm、体重74kg。血液型はA型。星座はおとめ座。干支は羊。\r\n\r\n仕事をする時に気をつけていることは「その時やってる役にとにかく専念すること」。\r\n\r\nデビューして約5年間、バイトをしながら生活していた。その中の一つである警備員のバイトをしていた頃、道路工事の現場がアフレコスタジオの前だった時があり、同僚にばれないように顔を隠していたという。\r\n\r\n自分が声を演じた役の中でヒーロー役の集大成は前述の獅子王凱、悪役の集大成は『機動戦士ガンダムSEED』のムルタ・アズラエル。特に凱を含め『ガオガイガー』には思い入れが強く、『スーパーロボット大戦シリーズ』公式サイト内のインタビューにて、「ガオガイガーが入らずに何が入るんだっていう気もあった」と語っている。\r\n\r\n森川智之と仲が良く、森川とは前述の『おまえら〜』のイベントのほか、ラジオ番組を何度か共演している。この2人は主に美形キャラを演じる場合が多い。\r\n\r\n大の広島東洋カープファンで知られている。\r\n\r\n『スーパーロボット大戦Z』では自身が声を演じた参戦作品の主人公すら出ないにもかかわらず、敵一般兵役で声を演じている。寺田貴信プロデューサーによれば、これは本人から希望したという。また自身もハーケン・ブロウニング役で出演している『無限のフロンティアEXCEED』公式サイトで「声優界で緑川光の次にスパロボ作品をやりこんでいる」とコメントしている。\r\n\r\n仕事をする傍らで声優の専門学校や養成所などで、自らが講師として後進の育成も手掛けている。\r\n\r\n声優グランプリmobileで既婚であることを公表している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 49525,
+            "name": "卯都木命",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/67/f0/49525_crt_8Ww41.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/f0/49525_crt_8Ww41.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/f0/49525_crt_8Ww41.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/67/f0/49525_crt_8Ww41.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4020,
+                    "name": "半場友恵",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/11/92/4020_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/11/92/4020_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/11/92/4020_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/11/92/4020_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "半場 友恵（はんば ともえ、1972年6月9日[1] - ）は、日本の女性声優。\r\n\r\n東京都出身。アーツビジョン所属。星座は双子座。血液型はO型。東京都出身。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 49526,
+            "name": "天海護",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f5/3e/49526_crt_Rpglv.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/3e/49526_crt_Rpglv.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/3e/49526_crt_Rpglv.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f5/3e/49526_crt_Rpglv.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6633,
+                    "name": "伊藤舞子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/71/d6/6633_prsn_ywC8I.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/d6/6633_prsn_ywC8I.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/d6/6633_prsn_ywC8I.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/71/d6/6633_prsn_ywC8I.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

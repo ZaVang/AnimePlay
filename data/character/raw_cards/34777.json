@@ -1,0 +1,73 @@
+{
+    "id": 34777,
+    "name": "三代目有楽亭助六",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5c/b3/34777_crt_pTtId.jpg?r=1488615304",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/b3/34777_crt_pTtId.jpg?r=1488615304",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/b3/34777_crt_pTtId.jpg?r=1488615304",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5c/b3/34777_crt_pTtId.jpg?r=1488615304"
+    },
+    "summary": "前座・二つ目時代は与太郎（よたろう）。通称「与太（ヨタ）」。真打昇進と同時に3代目助六を襲名。\r\n主人公の元チンピラ。本名は強次（きょうじ）。刑務所で服役中に聴いた8代目八雲の死神に感動し、「出所後の行くべき所」と決め8代目八雲に弟子入りを志願する。天涯孤独で、本来なら模範囚として仮出所も認められたはずだが、引取り人がいなかった為に刑期満了で出所した。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "三代目有乐亭助六"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "九代目有乐亭八云"
+                },
+                {
+                    "v": "九代目有楽亭八雲"
+                },
+                {
+                    "v": "強次"
+                },
+                {
+                    "v": "よたろう"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "与太郎"
+                },
+                {
+                    "k": "日文名",
+                    "v": "三代目有楽亭助六"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さんだいめ ゆうらくてい すけろく"
+                },
+                {
+                    "k": "昵称",
+                    "v": "与太"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 13,
+        "collects": 19
+    },
+    "anime_ids": [
+        176615,
+        119394
+    ]
+}

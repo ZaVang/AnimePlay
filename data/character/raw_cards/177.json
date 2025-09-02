@@ -1,0 +1,68 @@
+{
+    "id": 177,
+    "name": "門司邦彦",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/96/da/177_f590cd7246bbde0051047b0d6f7_1B2Wu.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/da/177_f590cd7246bbde0051047b0d6f7_1B2Wu.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/da/177_f590cd7246bbde0051047b0d6f7_1B2Wu.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/96/da/177_f590cd7246bbde0051047b0d6f7_1B2Wu.jpg"
+    },
+    "summary": "門司邦彦\r\n(もじ くにひこ)\r\n通称：モジ\r\n(声：宮田幸季)\r\n中学１年",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "门司邦彦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "門司邦彦"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "もじ くにひこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Moji Kunihiko"
+                },
+                {
+                    "k": "昵称",
+                    "v": "モジ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "150"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 4
+    },
+    "anime_ids": [
+        467
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "id": 10973,
+    "name": "小嶺幸",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0f/16/10973_crt_mZ8Tt.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/16/10973_crt_mZ8Tt.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/16/10973_crt_mZ8Tt.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0f/16/10973_crt_mZ8Tt.jpg"
+    },
+    "summary": "因为所穿服装的关系，肯定会被初次见面的人认识为“女仆”的女孩子。\r\n不过，实际上是货真价实的美浜学园学生，她的女仆服是在周围人的推荐下穿上的。\r\n\r\n性格也不辜负外貌给人的期待，兼具正经、温和、内敛这三大女仆气质，不过也有点开不起玩笑，被人要求「用肚脐煮茶」的话就会认真地思考用肚脐煮茶的方法；听人说「泡浴缸要数1万次再起身」的话在真数完之前绝不会叫苦。也有着如此倔强的一面。\r\n这些事例也从旁证明了她的一本正经与行动力之高，也成为了她以最年少之资历被委任为班长的理由。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小岭幸"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小嶺 幸"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こみね さち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Komine Sachi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月23日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "151cm"
+        },
+        {
+            "key": "BWH",
+            "value": "82(C)/56/83"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 23,
+    "stat": {
+        "comments": 41,
+        "collects": 155
+    },
+    "anime_ids": [
+        130234
+    ]
+}

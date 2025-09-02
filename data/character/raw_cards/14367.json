@@ -1,0 +1,52 @@
+{
+    "id": 14367,
+    "name": "田畑ヒデノリ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b9/31/14367_crt_91dd1.jpg?r=1421389050",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/31/14367_crt_91dd1.jpg?r=1421389050",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/31/14367_crt_91dd1.jpg?r=1421389050",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b9/31/14367_crt_91dd1.jpg?r=1421389050"
+    },
+    "summary": "颠覆了眼镜=优等生这一常识公式的笨蛋。\r\n真田北高校（男校）的男子高中生。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "田畑秀则"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "田畑 ヒデノリ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たばた ひでのり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tabata Hidenori"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 9,
+        "collects": 111
+    },
+    "anime_ids": [
+        24790
+    ]
+}

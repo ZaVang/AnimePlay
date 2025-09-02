@@ -1,0 +1,84 @@
+{
+    "id": 14962,
+    "name": "星空凛",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/54/e5/14962_crt_0SVAE.jpg?r=1464871311",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/54/e5/14962_crt_0SVAE.jpg?r=1464871311",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/54/e5/14962_crt_0SVAE.jpg?r=1464871311",
+        "grid": "https://lain.bgm.tv/pic/crt/g/54/e5/14962_crt_0SVAE.jpg?r=1464871311"
+    },
+    "summary": "かけっこと体力には自信がある、星空凛15歳です！　得意競技はハードルとサッカー、かにゃ？　背もちっちゃいし、全然美人とかじゃないけど、元気だけはいっぱいあまってます!!だから――この元気をみんなにわけてあげたい　いつも出遅れるし、ちょっぴり泣き虫凛だけど、そんな凛を――応援してくれると嬉しいですっ！　おかえしに、凛にできることならなんでもしちゃうから～☆",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "星空凛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "星空 凛"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ほしぞら りん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hoshizora Rin"
+                },
+                {
+                    "k": "昵称",
+                    "v": "凛、凛酱、凛ちゃん、凛喵"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月1日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B75/W59/H80"
+        },
+        {
+            "key": "学级",
+            "value": "高中1年级"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁"
+        },
+        {
+            "key": "分组",
+            "value": "lily white"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 1,
+    "stat": {
+        "comments": 19,
+        "collects": 135
+    },
+    "anime_ids": [
+        49294
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "id": 36283,
+    "name": "天空橋朋花",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d2/b9/36283_crt_yYc6c.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/b9/36283_crt_yYc6c.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/b9/36283_crt_yYc6c.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d2/b9/36283_crt_yYc6c.jpg"
+    },
+    "summary": "《偶像大师 MILLION LIVE!》登场的偶像。Vocal属性。 \r\n\r\n称粉丝们「小猪崽子」（子豚ちゃん），洋溢着浓厚的S气息的公主大人，女王系偶像。左撇子。其本人曰，比起「迷途羔羊」还是「小猪崽子」叫起来更可爱，于是便如此称呼自己的粉丝了。 \r\n\r\n说话语气十分柔和，但内容却很强硬。不只是对小猪崽子们这样，对制作人也如此。从「我家的礼拜堂」这样的台词，还有会选择说「迷途羔羊」，「渴望救赎的声音」之类的言语中，推测其为基督教世家。对于小猪崽子们来说她是信仰对象，可她自己是否信仰神？十分惹人在意。按偶像们所说她也有与年龄相符像小孩子一样的地方，评价她「很可爱」。 \r\n\r\n印象颜色还未明确，根据百合子的情况来推测应该是暗属性。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "天空桥朋花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Tenkuubashi Tomoka"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "てんくうばし ともか"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月11日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "体重",
+            "value": "41kg"
+        },
+        {
+            "key": "BWH",
+            "value": "80-56-79"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 11,
+    "stat": {
+        "comments": 11,
+        "collects": 25
+    },
+    "anime_ids": [
+        309807
+    ]
+}

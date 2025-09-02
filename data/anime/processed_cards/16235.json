@@ -1,0 +1,91 @@
+{
+    "id": 16235,
+    "name": "未来日记",
+    "image_path": "data/images/anime/16235.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "国中二年级学生天野雪辉习惯远离所有人，以一个旁观者的角度把亲眼所见的事记录在自己的手机中。一天，时空之神宙斯把未来日记植入他的手机中，这日记记录的是他未来90天发生的事，包括考试内容、遇到的危险等。但这个“日记”一旦被破坏，持有者的未来将会同时消失，也就是持有者会立刻消失。宙斯已选定十二位未来日记持有者，而最后生存的人将会成为宙斯的继承者，掌握支配时空的“神之座”。他跟同样拥有未来日记的其余11人，展开你死我活斗争的杀人游戏。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "悬疑",
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2011-10-09",
+    "rating_rank": 1755,
+    "rating_score": 7.2,
+    "rating_total": 13961,
+    "main_character_ids": [
+        670,
+        671
+    ],
+    "main_characters": [
+        {
+            "id": 670,
+            "name": "天野雪輝",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ce/9f/670_crt_wf1cU.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/9f/670_crt_wf1cU.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/9f/670_crt_wf1cU.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ce/9f/670_crt_wf1cU.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5182,
+                    "name": "富樫美鈴",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2d/90/5182_prsn_Cziny.jpg?r=1502113224",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/90/5182_prsn_Cziny.jpg?r=1502113224",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/90/5182_prsn_Cziny.jpg?r=1502113224",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2d/90/5182_prsn_Cziny.jpg?r=1502113224"
+                    },
+                    "short_summary": "日本女性配音演员、演员、歌手，出身于北海道，血型A型。原隶属于PRODUCTION ACE，目前已退出，现在为贤Production所属。\r\n\r\n2009年に『生徒会の一存』で声優としてデビューを果たす。デビュー作にていきなりメインヒロインに抜擢されての出演となった。Veilのヴォーカリストの1人「Veil ∞ Misuzu」としても活動している。\r\n2011年11月2日、テレビアニメ『マケン姫っ!』のOPテーマ「Fly Away」で、本人名義での歌手デビューを果たす。カップリング曲では作詞も担当している。また、声優ユニット「碧陽学園生徒会」の初代メンバーでもある。\r\n2012年、『うぽって!!』で共演した野水伊織、佐土原かおり、味里と共に声優ユニット「sweet ARMS」を結成。\r\n2013年1月11日にデビュー当時から所属していたプロダクション・エースを退所。フリーの期間を経て、同年8月よりスチール・ウッド・ガーデンに所属。\r\n2014年12月31日付けでスチール・ウッド・ガーデンを退所し、フリーを経て、2015年2月より賢プロダクションに所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 671,
+            "name": "我妻由乃",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/04/23/671_crt_HkmXG.jpg?r=1733333910",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/23/671_crt_HkmXG.jpg?r=1733333910",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/23/671_crt_HkmXG.jpg?r=1733333910",
+                "grid": "https://lain.bgm.tv/pic/crt/g/04/23/671_crt_HkmXG.jpg?r=1733333910"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5701,
+                    "name": "村田知沙",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b9/bb/5701_prsn_v7g2f.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/bb/5701_prsn_v7g2f.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/bb/5701_prsn_v7g2f.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b9/bb/5701_prsn_v7g2f.jpg"
+                    },
+                    "short_summary": "村田 知沙（むらた ともさ、2月5日-）は、日本の女性声優。北海道出身。血液型はO型。\r\n以前はメディアフォース、ディーカラーに所属していた。\r\n\r\n漫画をあまり読まない家庭で育ったが、友人宅で漫画『姫ちゃんのリボン』を見て一瞬で熱中し、同作のヒロインが演劇部に所属していることに憧れ、「私も彼女みたいにいろんな役を演じてみたい」と思うようになる。その後、アニメや声優が好きな友人ができて声優を知り、アニメや声優のラジオを聴くようになってから「私もこの人たちみたいに、声でたくさんの人たちに元気やパワーを与えていきたい」と思うようになり、声優を目指す。\r\n一卵性双生児の双子の姉がいる。\r\n『伝説の勇者の伝説』のネットラジオでは、自身の演じるイリス・エリスの報告書の絵も利き手ではない左手で担当している。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

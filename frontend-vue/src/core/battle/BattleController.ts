@@ -7,7 +7,7 @@ import { useSettingsStore } from '@/stores/settings';
 import { SkillSystem } from '@/core/systems/SkillSystem';
 
 export const BattleController = {
-  initiateClash(animeId: number, style: '友好安利' | '辛辣点评') {
+  async initiateClash(animeId: number, style: '友好安利' | '辛辣点评') {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
@@ -41,7 +41,7 @@ export const BattleController = {
     gameStore.setPhase('defense');
 
     // Trigger onPlay effects for attacker (minimal demo)
-    SkillSystem.onCardPlayed(attackerId, attackingCard);
+    await SkillSystem.onCardPlayed(attackerId, attackingCard);
 
     const attackerName = attackerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
     historyStore.addLog(`${attackerName} 以 [${style}] 的方式打出了 [${attackingCard.name}]。`, 'clash');
@@ -91,7 +91,7 @@ export const BattleController = {
     }
   },
 
-  passDefense() {
+  async passDefense() {
     const gameStore = useGameStore();
     if (!gameStore.clashInfo) return;
 
@@ -102,10 +102,10 @@ export const BattleController = {
       defendingCard: undefined,
     };
 
-    this.resolveClash(finalClashInfo);
+    await this.resolveClash(finalClashInfo);
   },
 
-  respondToClash(defendingAnimeId: number, defenseStyle: '赞同' | '反驳') {
+  async respondToClash(defendingAnimeId: number, defenseStyle: '赞同' | '反驳') {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
     if (!gameStore.clashInfo) return;
@@ -133,12 +133,12 @@ export const BattleController = {
     };
 
     // Trigger onPlay effects for defender (minimal demo)
-    SkillSystem.onCardPlayed(defenderId, defendingCard);
+    await SkillSystem.onCardPlayed(defenderId, defendingCard);
 
-    this.resolveClash(finalClashInfo);
+    await this.resolveClash(finalClashInfo);
   },
 
-  resolveClash(clashInfo: ClashInfo) {
+  async resolveClash(clashInfo: ClashInfo) {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
@@ -147,7 +147,7 @@ export const BattleController = {
     // beforeResolve: allow effects to inject temp bonuses
     let extraAttacker = 0;
     let extraDefender = 0;
-    SkillSystem.emitBeforeResolve(clashInfo, (side, amount) => {
+    await SkillSystem.emitBeforeResolve(clashInfo, (side, amount) => {
       if (side === 'attacker') extraAttacker += amount; else extraDefender += amount;
     });
 
@@ -172,7 +172,7 @@ export const BattleController = {
     gameStore.setClash({ ...clashInfo, ...clashResult });
 
     // afterResolve effects
-    SkillSystem.emitAfterResolve({ ...clashInfo, ...clashResult });
+    await SkillSystem.emitAfterResolve({ ...clashInfo, ...clashResult });
 
     const delay = settingsStore.getBattleDelay('settle');
     setTimeout(() => {

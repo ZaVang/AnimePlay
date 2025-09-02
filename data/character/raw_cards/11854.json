@@ -1,0 +1,68 @@
+{
+    "id": 11854,
+    "name": "宿海仁太",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/dd/f4/11854_crt_WuXfi.jpg?r=1624118941",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/f4/11854_crt_WuXfi.jpg?r=1624118941",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/f4/11854_crt_WuXfi.jpg?r=1624118941",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dd/f4/11854_crt_WuXfi.jpg?r=1624118941"
+    },
+    "summary": "原“超和平Busters”队长，由于某些事情而沉沦为宅，学业也荒废了。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宿海仁太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "やどみ じんた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yadomi Jinta"
+                },
+                {
+                    "k": "昵称",
+                    "v": "じんたん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月16日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "55kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 16,
+    "stat": {
+        "comments": 18,
+        "collects": 66
+    },
+    "anime_ids": [
+        10440
+    ]
+}

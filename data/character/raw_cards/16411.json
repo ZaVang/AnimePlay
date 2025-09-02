@@ -1,0 +1,44 @@
+{
+    "id": 16411,
+    "name": "空琉美遊亭丸京",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/35/08/16411_crt_tRPof.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/35/08/16411_crt_tRPof.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/35/08/16411_crt_tRPof.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/35/08/16411_crt_tRPof.jpg"
+    },
+    "summary": "女子落语演员。高座名的来源是“cool beauty”和“眼镜”的谐音。\r\n头发是绿色的半长发。眼睛是绿色，主题色也是绿色。常穿着冷色系的黑羽织。\r\n戴着四角眼镜，性格和名字一样相当的“cool”，和苦来一样会把聊天内容带入黑暗（愤世嫉俗型）。在五个人中最为冷静，但是生气的时候嘴上手上都不会留情，不过虽然打架很在行可是却有害怕虫子的弱点。\r\n欠了一屁股债。唱歌方面有一定的自信，三味线的技术也不错。\r\n和手寅从小就认识。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "空琉美游亭丸京"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "くうるびゆうてい がんきょう"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 27
+    },
+    "anime_ids": [
+        37897
+    ]
+}

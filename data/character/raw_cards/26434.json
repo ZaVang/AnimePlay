@@ -1,0 +1,48 @@
+{
+    "id": 26434,
+    "name": "ミギー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/12/38/26434_crt_XrK7K.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/38/26434_crt_XrK7K.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/38/26434_crt_XrK7K.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/12/38/26434_crt_XrK7K.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "米奇"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "右"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Migi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "小右"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 60,
+        "collects": 126
+    },
+    "anime_ids": [
+        88433
+    ]
+}

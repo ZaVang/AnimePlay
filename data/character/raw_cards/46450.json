@@ -1,0 +1,63 @@
+{
+    "id": 46450,
+    "name": "春風ぽっぷ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/65/be/46450_crt_AJAAr.jpg?r=1474248563",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/be/46450_crt_AJAAr.jpg?r=1474248563",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/be/46450_crt_AJAAr.jpg?r=1474248563",
+        "grid": "https://lain.bgm.tv/pic/crt/g/65/be/46450_crt_AJAAr.jpg?r=1474248563"
+    },
+    "summary": "DoReMi的妹妹，不过比DoReMi能干。\r\n有点早熟和任性的幼稚园学生，和迷糊的DoReMi一起长大，虽然是妹妹却比姐姐可靠许多。\r\n在学校中很受同学欢迎，她的同学更组织了宝宝亲卫队。\r\n曾把变成魔女青蛙的魔女莉卡当成玩偶并以一千圆买下，更自行替其取名为“ブニュちゃん”\r\n由于在魔法堂后院看见DoReMi三人使用魔法而揭穿了她们的身份，因此也成为见习魔女。\r\n习惯早睡，而且一旦睡着就很难叫醒，DoReMi等人曾经叫醒她参加见习魔女升级试也因此没有成功。\r\n第一部中因为一直爬不起来而无法参加晚上举行的升级考试，却在第二部中听到小花的哭声而使用魔法解救小花，因此获得考官肯定而一举跳级考过第六级晋级考试，在第三部中进入了美空小学就读一年级，最珍爱的乐器是一把小喇叭。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "春风泡泡"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "春风宝宝"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はるかぜ ぽっぷ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Harukaze Poppu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1994年9月9日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": 1994,
+    "birth_mon": 9,
+    "birth_day": 9,
+    "stat": {
+        "comments": 2,
+        "collects": 15
+    },
+    "anime_ids": [
+        14878,
+        14877,
+        14876,
+        14652
+    ]
+}

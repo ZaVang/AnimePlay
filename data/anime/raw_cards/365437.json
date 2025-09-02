@@ -1,0 +1,424 @@
+{
+    "id": 365437,
+    "type": 2,
+    "name": "君は放課後インソムニア",
+    "name_cn": "放学后失眠的你",
+    "summary": "“只要有小曲在，就对上学抱有期待，这是怎样的关系呢？”\r\n因失眠症而烦恼的高中生——中见丸太，在准备文化祭时偷摸跑到作为储物间的天文台，遇到了同样患有失眠症的曲伊咲。两人共享了这个秘密场所……？",
+    "nsfw": false,
+    "locked": false,
+    "date": "2023-04-10",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/0e/c3/365437_CCAFu.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/0e/c3/365437_CCAFu.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/0e/c3/365437_CCAFu.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/0e/c3/365437_CCAFu.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/0e/c3/365437_CCAFu.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "放学后失眠的你"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Insomniacs After School",
+                    "k": null
+                },
+                {
+                    "v": "Kimi wa Houkago Insomnia",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2023年4月10日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期一"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://kimisomu-anime.com"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京系6局ネット· BSテレビ東京"
+        },
+        {
+            "key": "其他电视台",
+            "value": "北陸放送"
+        },
+        {
+            "key": "播放结束",
+            "value": "2023年7月3日"
+        },
+        {
+            "key": "导演",
+            "value": "池田ユウキ"
+        },
+        {
+            "key": "音乐",
+            "value": "林ゆうき"
+        },
+        {
+            "key": "Copyright",
+            "value": "©オジロマコト・小学館／アニメ「君ソム」製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "オジロマコト 「君は放課後インソムニア」（小学館「週刊ビッグコミックスピリッツ」連載中）"
+        },
+        {
+            "key": "脚本",
+            "value": "池田臨太郎"
+        },
+        {
+            "key": "系列构成",
+            "value": "池田臨太郎"
+        },
+        {
+            "key": "人物设定",
+            "value": "福田裕樹"
+        },
+        {
+            "key": "2D工作",
+            "value": "中村倫子"
+        },
+        {
+            "key": "3D工作",
+            "value": "山崎嘉雅"
+        },
+        {
+            "key": "摄影监督",
+            "value": "姫野めぐみ"
+        },
+        {
+            "key": "剪辑",
+            "value": "長谷川舞（editz）"
+        },
+        {
+            "key": "动画制作",
+            "value": "ライデンフィルム"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "Homecomings（ED）"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "AIKO（OP） / 畳野彩加（ED）"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "AIKO（OP） / 福富優樹（ED）"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "aiko（OP） / Homecomings（ED）"
+        },
+        {
+            "key": "製作",
+            "value": "アニメ「君ソム」製作委員会（ポニーキャニオン、テレビ東京、小学館、ウルトラスーパーピクチャーズ、MAGNET、チョコレイト）"
+        },
+        {
+            "key": "企画",
+            "value": "大熊一成、丸茂礼、沢辺伸政、松浦裕暁、岩野貢、渡辺裕介"
+        },
+        {
+            "key": "执行制片人",
+            "value": "伊藤裕史、備前島幹人、里見哲朗、吉田健人"
+        },
+        {
+            "key": "制片人",
+            "value": "上田智輝、山田唯莉子、佐々木礼子、西川恭平、鹿志村絵美、永井千晴"
+        },
+        {
+            "key": "动画制片人",
+            "value": "佐々木悠祐"
+        },
+        {
+            "key": "助理制片人",
+            "value": "倉科俊汰、堀井美月；副制片人：寺田悠輔、松井和美"
+        },
+        {
+            "key": "音乐制作",
+            "value": "ポニーキャニオン"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "大塚涼大、上田智輝"
+        },
+        {
+            "key": "计划管理",
+            "value": "山川典夫、川村亮太"
+        },
+        {
+            "key": "分镜",
+            "value": "池田ユウキ(1,3,12)、秋山朋子(2,7,11)、セトウケンジ(瀬藤健嗣)(4,5)、福田道生(5)、伊東優一(5,9)、守泰祐(6)、清水聡(8)、横手颯太(10,12)、吉岡忍(13)"
+        },
+        {
+            "key": "演出",
+            "value": "池田ユウキ(1,13)、守泰祐(2,6)、松井郁洋(3)、荻原露光(4,9)、篠崎康行(5)、藤代和也(7)、半田大貴(8)、横手颯太(10)、荒木一成(11)、鳥羽聡(12)、山田加余仲(13)；新井宣圭(ED演出)"
+        },
+        {
+            "key": "演出助理",
+            "value": "三橋和弥(3)、駒田由貴（监督辅佐,9）"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "池田ユウキ（OP）、久保雄介（ED）"
+        },
+        {
+            "key": "制作协力",
+            "value": "4tune(4,9)"
+        }
+    ],
+    "volumes": 0,
+    "eps": 13,
+    "total_episodes": 15,
+    "rating": {
+        "rank": 1870,
+        "total": 4402,
+        "count": {
+            "one": 3,
+            "two": 6,
+            "three": 8,
+            "four": 40,
+            "five": 156,
+            "six": 708,
+            "seven": 1841,
+            "eight": 1367,
+            "nine": 190,
+            "ten": 83
+        },
+        "score": 7.2
+    },
+    "collection": {
+        "wish": 2053,
+        "collect": 5832,
+        "doing": 1231,
+        "on_hold": 687,
+        "dropped": 490
+    },
+    "tags": [
+        {
+            "name": "恋爱",
+            "count": 1488
+        },
+        {
+            "name": "校园",
+            "count": 1187
+        },
+        {
+            "name": "2023年4月",
+            "count": 1014
+        },
+        {
+            "name": "漫画改",
+            "count": 797
+        },
+        {
+            "name": "日常",
+            "count": 636
+        },
+        {
+            "name": "TV",
+            "count": 604
+        },
+        {
+            "name": "治愈",
+            "count": 476
+        },
+        {
+            "name": "LINDENFILMS",
+            "count": 460
+        },
+        {
+            "name": "2023",
+            "count": 443
+        },
+        {
+            "name": "青春",
+            "count": 405
+        },
+        {
+            "name": "漫改",
+            "count": 391
+        },
+        {
+            "name": "LIDENFILMS",
+            "count": 176
+        },
+        {
+            "name": "池田由纪",
+            "count": 82
+        },
+        {
+            "name": "池田ユウキ",
+            "count": 50
+        },
+        {
+            "name": "日本",
+            "count": 37
+        },
+        {
+            "name": "纯爱",
+            "count": 20
+        },
+        {
+            "name": "池田臨太郎",
+            "count": 18
+        },
+        {
+            "name": "2023年",
+            "count": 17
+        },
+        {
+            "name": "天文",
+            "count": 12
+        },
+        {
+            "name": "摄影",
+            "count": 11
+        },
+        {
+            "name": "社团",
+            "count": 10
+        },
+        {
+            "name": "池田裕贵",
+            "count": 10
+        },
+        {
+            "name": "ライデンフィルム",
+            "count": 7
+        },
+        {
+            "name": "放学后失眠的你",
+            "count": 7
+        },
+        {
+            "name": "季番",
+            "count": 7
+        },
+        {
+            "name": "TVA",
+            "count": 6
+        },
+        {
+            "name": "佐藤元",
+            "count": 6
+        },
+        {
+            "name": "林友树",
+            "count": 6
+        },
+        {
+            "name": "2023春",
+            "count": 6
+        },
+        {
+            "name": "オジロマコト",
+            "count": 5
+        }
+    ],
+    "meta_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        111627,
+        111628
+    ],
+    "main_characters": [
+        {
+            "id": 111627,
+            "name": "中見丸太",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b5/f7/111627_crt_CEfB3.jpg?r=1675666609",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/f7/111627_crt_CEfB3.jpg?r=1675666609",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/f7/111627_crt_CEfB3.jpg?r=1675666609",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b5/f7/111627_crt_CEfB3.jpg?r=1675666609"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 8403,
+                    "name": "洲崎綾",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/37/de/8403_prsn_w98m9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/de/8403_prsn_w98m9.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/de/8403_prsn_w98m9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/37/de/8403_prsn_w98m9.jpg"
+                    },
+                    "short_summary": "洲崎绫，出生于日本石川县，日本女性声优。隶属于I'm Enterprise。",
+                    "locked": false
+                },
+                {
+                    "id": 33386,
+                    "name": "佐藤元",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113"
+                    },
+                    "short_summary": "佐藤 元（さとう げん、1997年3月22日 - ）は、日本の男性声優。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 111628,
+            "name": "曲伊咲",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/cd/4b/111628_crt_I6ImM.jpg?r=1683139838",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/4b/111628_crt_I6ImM.jpg?r=1683139838",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/4b/111628_crt_I6ImM.jpg?r=1683139838",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cd/4b/111628_crt_I6ImM.jpg?r=1683139838"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 46488,
+                    "name": "田村好",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/25/1e/46488_prsn_vq2P1.jpg?r=1729515387",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/1e/46488_prsn_vq2P1.jpg?r=1729515387",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/1e/46488_prsn_vq2P1.jpg?r=1729515387",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/25/1e/46488_prsn_vq2P1.jpg?r=1729515387"
+                    },
+                    "short_summary": "マウスプロモーション所属",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 28094,
+    "name": "椿輝紅羽",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bf/d7/28094_crt_8d06j.jpg?r=1416752089",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/d7/28094_crt_8d06j.jpg?r=1416752089",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/d7/28094_crt_8d06j.jpg?r=1416752089",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bf/d7/28094_crt_8d06j.jpg?r=1416752089"
+    },
+    "summary": "嵐が丘学園に通う2年生の女の子。性格はクールで他人を寄せ付けないところがあるが、「友人」であり「恋人」である泉乃純花には心を開いている。\r\n子供のころに母親をクマに殺されており、クマを憎んでいる。特技は射撃。来たるべきクマとの戦いに備えて、自宅地下射撃場での訓練に余念がない。\r\n「私はクマを許さない。私はクマを破壊する！」",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "椿辉红羽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "椿輝 紅羽"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "つばき くれは"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tsubaki Kureha"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "yurikuma.jp/chara.html"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 10,
+        "collects": 33
+    },
+    "anime_ids": [
+        59825
+    ]
+}

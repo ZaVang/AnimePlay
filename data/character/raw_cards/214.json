@@ -1,0 +1,72 @@
+{
+    "id": 214,
+    "name": "城戸沙織",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/de/c7/214_crt_GmUE4.jpg?r=1587643741",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/c7/214_crt_GmUE4.jpg?r=1587643741",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/c7/214_crt_GmUE4.jpg?r=1587643741",
+        "grid": "https://lain.bgm.tv/pic/crt/g/de/c7/214_crt_GmUE4.jpg?r=1587643741"
+    },
+    "summary": "雅典娜的人间代言人，智慧和战争女神，带领圣斗士们为了正义与爱，与邪恶势力不断战斗，每次都陷入危险境地，但又用小宇宙帮助星矢他们取得胜利。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "城户沙织"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "雅典娜(アテナ)"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きど さおり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kido Saori"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月1日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "体重",
+            "value": "44kg"
+        },
+        {
+            "key": "年龄",
+            "value": "13"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 1,
+    "stat": {
+        "comments": 4,
+        "collects": 17
+    },
+    "anime_ids": [
+        4843
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "id": 2083,
+    "name": "双面骑士",
+    "image_path": "data/images/anime/2083.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "路易十五统治时期的巴黎，大革命的前夜，骑士迪昂·德·鲍蒙作为秘密警察的一员，正在追查淑女连续失踪案件的真相。就在这时，国王的下臣莉亚也惨遭不幸。成为该事件的牺牲者。莉亚的尸体被人在河中发现，而她正是迪昂的姐姐。\r\n在莉亚的棺盖上，刻有一串神秘的字母“PSALMS（诗篇）”。迪昂背负着与姐姐莉亚的羁绊，渐渐被引向迷雾重重的禁忌世界中……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "原创",
+        "历史"
+    ],
+    "date": "2006-08-19",
+    "rating_rank": 1082,
+    "rating_score": 7.4,
+    "rating_total": 515,
+    "main_character_ids": [
+        13148,
+        38384
+    ],
+    "main_characters": [
+        {
+            "id": 13148,
+            "name": "D'eon de Beaumont",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/20/93/13148_crt_PcC8W.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/20/93/13148_crt_PcC8W.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/20/93/13148_crt_PcC8W.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/20/93/13148_crt_PcC8W.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4327,
+                    "name": "泰勇気",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ce/01/4327_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/01/4327_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/01/4327_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ce/01/4327_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                },
+                {
+                    "id": 4348,
+                    "name": "野島昭生",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/47/5d/4348_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/5d/4348_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/5d/4348_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/47/5d/4348_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーター。東京都杉並区、西東京市出身。シグマ・セブン所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 38384,
+            "name": "Lia de Beaumont",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b0/16/38384_crt_dr336.jpg?r=1453646747",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/16/38384_crt_dr336.jpg?r=1453646747",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/16/38384_crt_dr336.jpg?r=1453646747",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b0/16/38384_crt_dr336.jpg?r=1453646747"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4441,
+                    "name": "水野理紗",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b5/d6/4441_prsn_GTQnR.jpg?r=1427107991",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/d6/4441_prsn_GTQnR.jpg?r=1427107991",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/d6/4441_prsn_GTQnR.jpg?r=1427107991",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b5/d6/4441_prsn_GTQnR.jpg?r=1427107991"
+                    },
+                    "short_summary": "水野 理紗（みずの りさ、1978年11月3日 - ）は、日本の女性声優。尾木プロ THE NEXT/湘南テアトロ☆デラルテ所属。神奈川県出身。上智大学文学部英文学科卒業。血液型はA型。\r\n劇団『湘南テアトロ☆デラルテ』公演のヒロインを多く務めるなど、劇団主宰の郷田ほづみの秘蔵っ子である。\r\nまた、水月秋名義で書き物をしている。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": 14857,
+    "name": "加藤茉莉香",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c0/a9/14857_crt_7acWZ.jpg?r=1613815637",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/a9/14857_crt_7acWZ.jpg?r=1613815637",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/a9/14857_crt_7acWZ.jpg?r=1613815637",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c0/a9/14857_crt_7acWZ.jpg?r=1613815637"
+    },
+    "summary": "前船长权左卫门‧加藤的女儿。天仓五海明星新奥滨市白凤女学院的高中女生，在咖啡店打工、参加社团“宇宙巡航部”的活动。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "加藤茉莉香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "加藤 茉莉香"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かとう まりか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Katou Marika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 11,
+        "collects": 56
+    },
+    "anime_ids": [
+        10462
+    ]
+}

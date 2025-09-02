@@ -1,0 +1,65 @@
+{
+    "id": 4455,
+    "name": "竹井久",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4d/c3/4455_crt_P2p59.jpg?r=1603942416",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4d/c3/4455_crt_P2p59.jpg?r=1603942416",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4d/c3/4455_crt_P2p59.jpg?r=1603942416",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4d/c3/4455_crt_P2p59.jpg?r=1603942416"
+    },
+    "summary": "清澄高中三年级。是清澄高中的学生会长，麻将部的部长。在团体战中担任指挥者和中坚。\r\n特技是偏听单张牌，称为地狱单骑。\r\n牌风很差。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "竹井久"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "竹井久 / 上埜久"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たけい ひさ / うえの ひさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takei Hisa / Ueno Hisa"
+                },
+                {
+                    "k": "昵称",
+                    "v": "久帝、渣久"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月13日"
+        },
+        {
+            "key": "身高",
+            "value": "164cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 13,
+    "stat": {
+        "comments": 26,
+        "collects": 124
+    },
+    "anime_ids": [
+        1444,
+        52606
+    ]
+}

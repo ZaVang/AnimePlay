@@ -1,0 +1,417 @@
+{
+    "id": 1805,
+    "type": 2,
+    "name": "ガングレイヴ",
+    "name_cn": "铳墓",
+    "summary": "使用迷之力量[席得]，把掌握着所有霸权的哈里·麦克维尔和他的组织送去黑暗的grave。给他和照顾他的少女带来的安稳的日子。但是，那仅只是短暂……。一个谜一样的老人。一个令人恐惧的孤傲杀手，一个被组织追杀的少女！对于两手携带着的枪“凯烙贝烙斯”，背起肩上装在巨大棺材里的重火力枪械，再次踏上旅途的“beyond the grave”。这次敌人的真面目是！？他的目的是！？必须破坏一切，响起枪击的交响曲。\r\n",
+    "nsfw": false,
+    "locked": false,
+    "date": "2003-10-06",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/7f/fd/1805_7wZPX.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/7f/fd/1805_7wZPX.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/7f/fd/1805_7wZPX.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/7f/fd/1805_7wZPX.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/7f/fd/1805_7wZPX.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "铳墓"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "枪墓",
+                    "k": null
+                },
+                {
+                    "v": "枪冢",
+                    "k": null
+                },
+                {
+                    "v": "GUNGRAVE",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "26"
+        },
+        {
+            "key": "放送开始",
+            "value": "2003年10月6日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期一"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.jvcmusic.co.jp/flyingdog/tv/gungrave/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京"
+        },
+        {
+            "key": "播放结束",
+            "value": "2004年3月29日"
+        },
+        {
+            "key": "导演",
+            "value": "都留稔幸"
+        },
+        {
+            "key": "原作",
+            "value": "内藤泰弘、レッド・エンタテインメント"
+        },
+        {
+            "key": "脚本",
+            "value": "黒田洋介"
+        },
+        {
+            "key": "机械设定",
+            "value": "木村雅広；机械设定原案：藤島康介"
+        },
+        {
+            "key": "特效",
+            "value": "榊原豊彦"
+        },
+        {
+            "key": "特殊摄影",
+            "value": "荒木宏文(2話～)"
+        },
+        {
+            "key": "音效",
+            "value": "長谷川卓也"
+        },
+        {
+            "key": "录音",
+            "value": "大石幸平"
+        },
+        {
+            "key": "录音助手",
+            "value": "加藤紀子"
+        },
+        {
+            "key": "制片人",
+            "value": "北山茂、久保亨、後藤秀樹、諸澤昌男"
+        },
+        {
+            "key": "製作",
+            "value": "PROJECT GUNGRAVE【ビクターエンタテインメント、レッド・エンタテインメント、Geneon Entertainment (USA)、MADHOUSE】"
+        },
+        {
+            "key": "协力",
+            "value": "少年画報社、講談社「月刊アフタヌーン」編集部、企画デザイン工房 戦船、海洋堂、大日本技研、宮下祐一"
+        }
+    ],
+    "volumes": 0,
+    "eps": 26,
+    "total_episodes": 26,
+    "rating": {
+        "rank": 498,
+        "total": 1099,
+        "count": {
+            "one": 2,
+            "two": 2,
+            "three": 4,
+            "four": 4,
+            "five": 31,
+            "six": 89,
+            "seven": 256,
+            "eight": 457,
+            "nine": 185,
+            "ten": 69
+        },
+        "score": 7.8
+    },
+    "collection": {
+        "wish": 2042,
+        "collect": 1508,
+        "doing": 172,
+        "on_hold": 232,
+        "dropped": 71
+    },
+    "tags": [
+        {
+            "name": "MADHouse",
+            "count": 381
+        },
+        {
+            "name": "黑田洋介",
+            "count": 269
+        },
+        {
+            "name": "TV",
+            "count": 255
+        },
+        {
+            "name": "黑帮",
+            "count": 234
+        },
+        {
+            "name": "2003",
+            "count": 197
+        },
+        {
+            "name": "游戏改",
+            "count": 154
+        },
+        {
+            "name": "男人",
+            "count": 131
+        },
+        {
+            "name": "燃",
+            "count": 122
+        },
+        {
+            "name": "铳墓",
+            "count": 100
+        },
+        {
+            "name": "GUNGRAVE",
+            "count": 92
+        },
+        {
+            "name": "热血",
+            "count": 72
+        },
+        {
+            "name": "老男人复仇记",
+            "count": 72
+        },
+        {
+            "name": "2003年10月",
+            "count": 66
+        },
+        {
+            "name": "神作",
+            "count": 44
+        },
+        {
+            "name": "战斗",
+            "count": 25
+        },
+        {
+            "name": "都留稔幸",
+            "count": 22
+        },
+        {
+            "name": "藤岛康介",
+            "count": 18
+        },
+        {
+            "name": "日本",
+            "count": 11
+        },
+        {
+            "name": "科幻",
+            "count": 9
+        },
+        {
+            "name": "2003年",
+            "count": 9
+        },
+        {
+            "name": "井上喜久子",
+            "count": 8
+        },
+        {
+            "name": "黒田洋介",
+            "count": 8
+        },
+        {
+            "name": "枪战",
+            "count": 8
+        },
+        {
+            "name": "内藤泰弘",
+            "count": 7
+        },
+        {
+            "name": "关智一",
+            "count": 7
+        },
+        {
+            "name": "2004年",
+            "count": 6
+        },
+        {
+            "name": "泣",
+            "count": 6
+        },
+        {
+            "name": "补番",
+            "count": 6
+        },
+        {
+            "name": "剧情",
+            "count": 5
+        },
+        {
+            "name": "TVA",
+            "count": 5
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "游戏改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        8297,
+        8298,
+        8299,
+        176437
+    ],
+    "main_characters": [
+        {
+            "id": 8297,
+            "name": "ハリー・マクドゥエル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a9/8a/8297_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/8a/8297_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/8a/8297_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a9/8a/8297_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4323,
+                    "name": "浜田賢二",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/99/60/4323_prsn_Zl7FA.jpg?r=1585989796",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/60/4323_prsn_Zl7FA.jpg?r=1585989796",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/60/4323_prsn_Zl7FA.jpg?r=1585989796",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/99/60/4323_prsn_Zl7FA.jpg?r=1585989796"
+                    },
+                    "short_summary": "日本男性声优，Mausu Promotion所属，福冈县出身。\r\n代表作品有Paradise Kiss的小泉让二、机动战士高达 00的帕特里克・克拉桑瓦、遥久时空3的平知盛、银及ef - a tale of melodies.的久瀬修一等。\r\n\r\n平成8年：江崎プロダクション附属養成所入所\r\n平成10年：マウスプロモーション（旧江崎プロダクション）所属",
+                    "locked": false
+                },
+                {
+                    "id": 4413,
+                    "name": "磯部勉",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/aa/36/4413_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/36/4413_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/36/4413_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/aa/36/4413_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 8298,
+            "name": "ブランドン・ヒート",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a4/27/8298_crt_kBEEQ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/27/8298_crt_kBEEQ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/27/8298_crt_kBEEQ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a4/27/8298_crt_kBEEQ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3868,
+                    "name": "関智一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/40/94/3868_prsn_24eU6.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/94/3868_prsn_24eU6.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/94/3868_prsn_24eU6.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/40/94/3868_prsn_24eU6.jpg"
+                    },
+                    "short_summary": "日本男性配音员。东京俳优生活协同组合→Atomic Monkey所属。东京都江东区深川出身。以热血激昂的声线闻名，昵称为“チイチ”（ChiIChi, 智一的音读）。\r\n\r\n在机动武斗传G高达的主角选角时，自己参加试音的路上因积雪滑了一跤，心想“这下肯定落选了”结果反而在两天后宣布中选。\r\n非常爱开黄腔，也因此冒犯许多不好此道的女声优，曾因尺度太大被电台高层警告。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 8299,
+            "name": "浅葱マリア",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ac/ef/8299_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/ef/8299_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/ef/8299_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ac/ef/8299_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3945,
+                    "name": "井上喜久子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4c/f5/3945_prsn_IusUk.jpg?r=1723974891",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/f5/3945_prsn_IusUk.jpg?r=1723974891",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/f5/3945_prsn_IusUk.jpg?r=1723974891",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4c/f5/3945_prsn_IusUk.jpg?r=1723974891"
+                    },
+                    "short_summary": "在1989年配《乱马1/2》中的天道霞（天道かすみ）而大受欢迎，且从为天道茜（天道あかね）配音的声优日高法子至工作人员都叫她“大姊”。而本身是妹妹的井上喜久子（姊姊是其经纪人），一直都很憧憬“大姊”的角色，fans们也延续这个昵称。\r\n之后1993年担任《幸运女神》OVA女主角蓓儿丹娣的配音，确立了她的温柔气质配音走向。\r\n1996年担任《机械女神》恶役潘塔的演出，其冷酷凶狠的表现彻底颠覆了以往温柔婉约的形象。类似的角色还有樱花大战３的罗贝莉亚。\r\n“17岁教”教祖，自称“井上喜久子17岁”。绰号是大姐（お姉ちゃん）。该声优著名介绍词为“井上喜久子，17岁（井上喜久子、17才）”，原自电台节目《かきくけ喜久子のさしすせSonata》里山本麻里安的介绍词“山本麻里安，16岁（山本麻里安、16才です）”，讲成“井上喜久子，16岁（井上喜久子、16才です）”。之后，山本麻里安17岁，而衍生“井上喜久子，17岁（井上喜久子、17才）”，也有一段时期变成18岁；不过，近期都以17岁自称。\r\n2008年2月16日，以来宾身分参加开拓动漫祭时被问到：“为什么不用15岁或20岁，而要用不上不下的17岁？”当时井上答：“因为15岁太年轻，还只是少女，而20岁就又算是大人了，所以介于其中的17岁最好。”\r\n当在现场活动作自我介绍时，观众则会在“井上喜久子，17岁（井上喜久子、17才）”之后喊著“喂!喂!（おいおい）”，外加手势手背敲击对方来呼应介绍词，而本人在节目或影片声优单独自我介绍时，自己也会喊著“喂!喂!（おいおい）”跟做手势动作。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 176437,
+            "name": "浅葱ミカ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/de/82/176437_crt_Vbe4Z.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/82/176437_crt_Vbe4Z.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/82/176437_crt_Vbe4Z.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/de/82/176437_crt_Vbe4Z.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4499,
+                    "name": "佐久間紅美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5e/51/4499_seiyu_anidb.jpg?r=1667841479",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/51/4499_seiyu_anidb.jpg?r=1667841479",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/51/4499_seiyu_anidb.jpg?r=1667841479",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5e/51/4499_seiyu_anidb.jpg?r=1667841479"
+                    },
+                    "short_summary": "日本の女性声優。アミュレート所属。千葉県出身。さそり座。\r\n\r\n勝田声優学院、日本ナレーション演技研究所を経て、アーツビジョン、ミディアルタに所属。1997年、『アニメがんばれゴエモン』でデビュー。イラストが得意なため、趣味・特技にこれを挙げている程である。\r\n2000年、『学校の怪談』の恋ヶ窪桃子役で初レギュラー。\r\n2002年、『東京ミュウミュウ』で当初碧川れたす（ミュウレタス）役で発表された浅田葉子が産休のため収録前に急遽降板、佐久間がれたす役を放送終了まで演じることとなった。\r\n2012年11月14日のブログで結婚と妊娠を報告し、2013年5月1日のブログで4月に女児を出産したことを報告した。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

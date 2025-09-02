@@ -1,0 +1,44 @@
+{
+    "id": 73306,
+    "name": "森ノ目榀子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/98/52/73306_crt_c9V9e.jpg?r=1574325466",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/52/73306_crt_c9V9e.jpg?r=1574325466",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/52/73306_crt_c9V9e.jpg?r=1574325466",
+        "grid": "https://lain.bgm.tv/pic/crt/g/98/52/73306_crt_c9V9e.jpg?r=1574325466"
+    },
+    "summary": "リクオの大学の同級生。卒業後は地元で非常勤講師をしていたが、東京に戻ってきた。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "森之目榀子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "もりのめ しなこ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 60,
+        "collects": 44
+    },
+    "anime_ids": [
+        280516
+    ]
+}

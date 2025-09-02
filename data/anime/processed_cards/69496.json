@@ -1,0 +1,124 @@
+{
+    "id": 69496,
+    "name": "白色相簿2",
+    "image_path": "data/images/anime/69496.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "故事发生在2007年秋季的东京都。峰城大附属3年级学生北原春希为了制造学生时代最后的回忆加入了轻音乐同好会，而乐队却因为感情的纠葛而崩溃。春希为了能够在学园祭上成功演出而开始召集成员，并成功劝诱了在屋顶唱歌的学院偶像小木曾雪菜。在发现了班级的问题儿童冬马和纱的天才般音乐才能之后，两人经过千辛万苦最终使她也加入了乐队。原本毫不相关的三个人经过全神贯注的、拼命的奋斗之后在学园祭上大获成功，三个人从心底结合了起来……虽然大家都是这样认为的，但从这以后各自的爱恋却走向了残酷的悲剧……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "游戏改"
+    ],
+    "date": "2013-10-05",
+    "rating_rank": 1393,
+    "rating_score": 7.3,
+    "rating_total": 8162,
+    "main_character_ids": [
+        13390,
+        13391,
+        20316
+    ],
+    "main_characters": [
+        {
+            "id": 13390,
+            "name": "小木曽雪菜",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c3/33/13390_crt_1OztX.jpg?r=1570948263",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c3/33/13390_crt_1OztX.jpg?r=1570948263",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c3/33/13390_crt_1OztX.jpg?r=1570948263",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c3/33/13390_crt_1OztX.jpg?r=1570948263"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5117,
+                    "name": "米澤円",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/13/26/5117_prsn_iTo6n.jpg?r=1465918205",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/26/5117_prsn_iTo6n.jpg?r=1465918205",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/26/5117_prsn_iTo6n.jpg?r=1465918205",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/13/26/5117_prsn_iTo6n.jpg?r=1465918205"
+                    },
+                    "short_summary": "日本女性声优。出身于大阪府。隶属于81 Produce事务所。毕业于娱乐传媒总合学院。\r\n\r\n三姐妹中的长女。\r\n2003年毕业于娱乐传媒总合学院大阪校。\r\n与伊东久美子组成团体“Prism”。\r\n非常喜欢鸟，家中饲养著和尚鹦鹉。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13391,
+            "name": "冬馬かずさ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f3/c8/13391_crt_OjC69.jpg?r=1642694348",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/c8/13391_crt_OjC69.jpg?r=1642694348",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/c8/13391_crt_OjC69.jpg?r=1642694348",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f3/c8/13391_crt_OjC69.jpg?r=1642694348"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4394,
+                    "name": "生天目仁美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/17/3e/4394_prsn_bQBtf.jpg?r=1506620584",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/3e/4394_prsn_bQBtf.jpg?r=1506620584",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/3e/4394_prsn_bQBtf.jpg?r=1506620584",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/17/3e/4394_prsn_bQBtf.jpg?r=1506620584"
+                    },
+                    "short_summary": "生天目 仁美（なばため ひとみ、1976年8月4日 - ）は、日本の声優、女優、歌手。\r\n神奈川県横浜市出身。出生地は新潟県佐渡市。血液型はB型、身長163cm。専門学校東京コンセルヴァトアール尚美（現在の尚美ミュージックカレッジ専門学校）卒業。現在は賢プロダクションに所属。また劇団東京乾電池所属時代に女優としてテレビドラマや舞台などに出演している。\r\n\r\n専門学校時代より、さまざまなオーディションに参加。ラジオ『SOMETHING DREAMS マルチメディアカウントダウン』内で、声優志望者によって結成された「ドリカンクラブ」の一員として、田村ゆかり・堀江由衣らと短期間活動していた。卒業後は、柄本明の芝居に感銘し、劇団東京乾電池に入団し、舞台俳優として活動する。退団後、賢プロダクション直属の声優養成所であるスクールデュオに入所する。\r\n2003年、養成所時代に、ゲーム『サムライスピリッツ零』のキャラクター“リムルル”役と、テレビアニメ『真月譚 月姫』のヒロイン“アルクェイド”役と、テレビアニメ『まぶらほ』のヒロイン“宮間夕菜”役に抜擢されて以降、声優としてブレイクしていった。\r\n2011年、演劇ユニット「なば缶」を立ち上げ、2014年までに3公演をプロデュースし、自らも出演した。現在は休止中。\r\n同じ事務所所属の伊藤静との声優ユニット「生天目仁美と伊藤静（ひとしずく）」としても活動した。\r\n\r\n好きな言葉は「冬は必ず春となる」。家族構成は両親と弟の4人。\r\n読売ジャイアンツのファンである。中学生時代はソフトボール部に所属し、高校生時代はバレーボール部に所属していた。生天目の母親は、時々まんまるまる姫というペンネームを使って自分の娘の番組に娘への苦情を投稿したり、娘の番組に乱入しては良く喋り良くボケる所から、今ではファンからも「まる姫」と呼ばれている。\r\n2014年8月4日、ブログにて入籍を報告した。\r\n\r\n主になばと呼ばれている。ほかに鷲崎健からはばたやん、安元洋貴からはバティー、鈴村健一からはナビィなどと呼ばれる。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 20316,
+            "name": "北原春希",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e2/29/20316_crt_YS7L7.jpg?r=1570948327",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/29/20316_crt_YS7L7.jpg?r=1570948327",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/29/20316_crt_YS7L7.jpg?r=1570948327",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e2/29/20316_crt_YS7L7.jpg?r=1570948327"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4260,
+                    "name": "水島大宙",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c7/0a/4260_prsn_N7Q97.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/0a/4260_prsn_N7Q97.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/0a/4260_prsn_N7Q97.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c7/0a/4260_prsn_N7Q97.jpg"
+                    },
+                    "short_summary": "水島 大宙（みずしま だいちゅう、1976年6月14日 - ）は、日本の男性声優、歌手。神奈川県藤沢市出身。本名・旧芸名は水島 大宙（みずしま たかひろ）。\r\n2000年ごろにぷろだくしょんバオバブに所属。2011年5月末でぷろだくしょんバオバブを退所し、6月より「アクセルワン」所属になる。数ヶ月前より事前に両会社と打ち合わせを済ませていた。2012年からは、アクセルワン直属の養成所「アクセルゼロ」の講師も務める。\r\n2014年より、TAKA名義で音楽活動の開始が予告され、同年3月に1stミニアルバム『Reflection』にて歌手デビューを果たした。\r\n2022年4月1日、自身のTwitterで同年3月31日をもってアクセルワンを退所し、フリーで活動するとともに、活動名義の読みを本名の「みずしまたかひろ」から「みずしまだいちゅう」に変更することを発表した。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,124 @@
+{
+    "id": 82572,
+    "name": "野良神",
+    "image_path": "data/images/anime/82572.jpg",
+    "points": 7.1,
+    "cost": 1,
+    "rarity": "N",
+    "description": "没有神社供奉、缺少香火的落魄神明夜斗，因为性格缺陷，导致手下的神器纷纷跳槽。怀抱“受万民景仰”这个伟大理想的他，只好只身在此岸与彼岸间徘徊，为五块钱的香油钱（五斗米）折腰，接受上至斩妖除魔，下至修东修西的各类委托……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2014-01-05",
+    "rating_rank": 1983,
+    "rating_score": 7.1,
+    "rating_total": 10956,
+    "main_character_ids": [
+        22789,
+        22790,
+        22816
+    ],
+    "main_characters": [
+        {
+            "id": 22789,
+            "name": "夜ト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5b/73/22789_crt_YV6yA.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/73/22789_crt_YV6yA.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/73/22789_crt_YV6yA.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5b/73/22789_crt_YV6yA.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4232,
+                    "name": "神谷浩史",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/fa/4232_prsn_bBAP2.jpg?r=1675677585"
+                    },
+                    "short_summary": "高中时期是理科生，加入青二塾以前只是一般地看着动画，没有想要成为声优的念头。高三时，于7月份加入同年级朋友组建的演剧团，在9月份的地区演剧大赛中意外获得“个人演技奖”，自此开始对演剧事业产生兴趣。想考艺术类大学所以在高三理转文，并不成功，高考落榜。\r\n另寻出路的时候在杂志上看到了青二塾的广告，征得父母同意考上其东京校第14期。当时不了解其实这里培养的是声优而不是演员，起初产生了“别干了”的消极情绪，但之后仍在青二塾坚持学习了下去，不过是“不良墅生”，同学和老师之后都笑称当时他“很狂妄”，并不参加到同学间的自主练习中。1994年，19岁的神谷从青二塾毕业，顺利加入青二事务所。\r\n出道的头几年，相比于同期甚至后期的声优们很快的大放异彩，神谷则是全部出演酱油的路人角色。2006年8月7日，因为遭逢交通事故而住院治疗。虽然经纪公司并不愿透漏事故的原因，但从关系人口中得知似乎是骑乘机车时发生的。车祸似乎是神谷事业的一个拐点。2007年因担任《再见!绝望先生》、《高达00》等作品主角的CV而受到瞩目，之后在《夏目友人帐》、《化物语》等作品中为主角配音获得极高人气，目前则是因为饰演《进击的巨人》中的里维兵长而再度爆红。\r\n\r\n2025年1月1日，宣布与女演员、模特逢泽莉娜结婚。1月4日，在广播节目中透露自己于8年前起单身，后因此节目而与逢泽莉娜结缘，大约2年前开始交往。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 22790,
+            "name": "壱岐ひより",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/02/46/22790_crt_O7DsZ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/46/22790_crt_O7DsZ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/46/22790_crt_O7DsZ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/02/46/22790_crt_O7DsZ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6724,
+                    "name": "内田真礼",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4c/23/6724_prsn_DIyje.jpg?r=1738653463"
+                    },
+                    "short_summary": "内田 真礼（うちだ まあや、1989年12月27日 - ）は、日本の声優、歌手、女優、タレント。\r\nアイムエンタープライズ（事務所）、ポニーキャニオン（レコード会社）に所属。愛称は主にまややん、まれいたそ。東京都出身。血液型はA型。本名同じ。声優の内田雄馬は実弟。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 22816,
+            "name": "雪音",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c3/96/22816_crt_5Yioo.jpg?r=1389082899",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c3/96/22816_crt_5Yioo.jpg?r=1389082899",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c3/96/22816_crt_5Yioo.jpg?r=1389082899",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c3/96/22816_crt_5Yioo.jpg?r=1389082899"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5209,
+                    "name": "梶裕貴",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/51/73/5209_prsn_bD3dr.jpg?r=1478379077"
+                    },
+                    "short_summary": "ARTSVISION第17期免费新人培育选拔会合格，并且加入了事务所ARTSVISION。\r\n2009年获得第3届声优奖—新人男声优赏，且开始了“G.Addict”的活动。\r\n2012年2月22日以本人的名义开始歌手的活动，发售第一张单曲《sense of wonder》。2012年9月5日发售第二张单曲《Hello！》。\r\n2013年获得第7届声优奖—主演男声优赏。\r\n2013年10月1日，由原来的事务所ARTSVISION转入VIMS。\r\n2014年获得第8届声优奖—主演男声优赏。\r\n\r\n拥有中性的声音，能演出从少年到青年、动物等各式各样的角色。\r\n担任剧团“妄想中毒”的pretty团长。\r\n中小学时代担任过学生会长，有体育或美术被表扬等表现，是个非常有才能的小孩。\r\n声优伙伴或支持者称呼他为“王子”。\r\n和代永翼组成团体“BRAVE WING”。\r\n与寺岛拓笃、堀江一真和阿部敦等四人组成团体“G.Addict”。\r\n性格极其纯良，待人有礼温善。虽然人前很活泼开朗，但其实是个喜欢宁静安逸的人，只有与亲近的人在一起时才会放松的流露真实自我。\r\n不只声音，外型也很中性，现在也还会被误认成女生。本人对此表示否定，表示“内在意外地很有男子气概”。\r\n虽然年轻，但是性格相当认真。寺岛拓笃评价他“面对工作上的态度很严谨”，大亲友下野纮也说：“他真的很可靠，很会待人处世，作为声优也相当优秀。”\r\n\r\n代表作品有《进击的巨人》艾伦·耶格尔、《夜樱四重奏》比泉秋名、《未来都市NO.6》紫苑、《罪恶王冠》樱满集、《七大罪》梅利奥达斯、《加速世界》有田春雪、《魔笛MAGI》阿里巴巴·沙尔贾等。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

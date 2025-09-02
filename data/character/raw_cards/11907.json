@@ -1,0 +1,57 @@
+{
+    "id": 11907,
+    "name": "水上麻衣",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/aa/c2/11907_crt_w4Dh0.jpg?r=1421388502",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/c2/11907_crt_w4Dh0.jpg?r=1421388502",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/c2/11907_crt_w4Dh0.jpg?r=1421388502",
+        "grid": "https://lain.bgm.tv/pic/crt/g/aa/c2/11907_crt_w4Dh0.jpg?r=1421388502"
+    },
+    "summary": "1年Q班。沉默的優等生。祐子的朋友，喜歡用猛烈的耍呆和無法理解的言行把祐子和美緒耍著玩。戴著眼鏡，留著黑色長髮，眼睛只睜開一半。喜歡從校長給的彌勒菩薩像，別人不同意時會不高興。家裡有養貓。\r\n特长是木雕以及可以躺在各种地方。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "水上麻衣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みなかみ まい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Minakami Mai"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月24日"
+        },
+        {
+            "key": "引用来源",
+            "value": "維基"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 24,
+    "stat": {
+        "comments": 33,
+        "collects": 221
+    },
+    "anime_ids": [
+        9912,
+        28205
+    ]
+}

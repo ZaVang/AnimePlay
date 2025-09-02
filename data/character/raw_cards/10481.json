@@ -1,0 +1,56 @@
+{
+    "id": 10481,
+    "name": "シンドウ・スガタ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ce/74/10481_crt_Sx7O0.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/74/10481_crt_Sx7O0.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/74/10481_crt_Sx7O0.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ce/74/10481_crt_Sx7O0.jpg"
+    },
+    "summary": "南十字岛的名门之后，因身负“王之柱”而无法离开岛。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "进藤·须方"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "新藤栖方"
+                },
+                {
+                    "k": "日文名",
+                    "v": "シンドウ・スガタ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shindou Sugata"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月25日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 25,
+    "stat": {
+        "comments": 2,
+        "collects": 22
+    },
+    "anime_ids": [
+        7348
+    ]
+}

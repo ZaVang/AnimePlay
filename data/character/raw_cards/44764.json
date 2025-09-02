@@ -1,0 +1,107 @@
+{
+    "id": 44764,
+    "name": "マーマネ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/67/0b/44764_crt_n5oXX.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/0b/44764_crt_n5oXX.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/0b/44764_crt_n5oXX.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/67/0b/44764_crt_n5oXX.jpg"
+    },
+    "summary": "游戏中\r\n马玛内是精通电属性的队长。腼腆的工程师的他擅长机械，进行著各式各样的机器发明。\r\n马玛内的衣服上的图案参考了GAME BOY，他的围巾则参考了皮卡丘的尾巴，另外他还有一个顽皮雷弹外形的饰品。\r\n\r\n动画中\r\n在精灵宝可梦太阳&月亮中，马玛内作为小智的同学登场。\r\n马玛内喜爱电属性宝可梦，身为喜爱科技的少年，他精通编程，会彻底地分析需要讲究的事件。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "马玛内"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Sophocles"
+                },
+                {
+                    "k": "法文名",
+                    "v": "Chrys"
+                },
+                {
+                    "k": "德文名",
+                    "v": "Chrys"
+                },
+                {
+                    "k": "意大利文名",
+                    "v": "Chrys"
+                },
+                {
+                    "k": "西班牙文名",
+                    "v": "Chris"
+                },
+                {
+                    "k": "韩文名",
+                    "v": "마마네"
+                },
+                {
+                    "k": "俄文名",
+                    "v": "Софоклис"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Māmane"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "眼睛颜色",
+            "value": "棕色"
+        },
+        {
+            "key": "头发颜色",
+            "value": "橘色"
+        },
+        {
+            "key": "训练家类型",
+            "value": "队长"
+        },
+        {
+            "key": "职业",
+            "value": "工程师"
+        },
+        {
+            "key": "擅长属性",
+            "value": "电"
+        },
+        {
+            "key": "家乡所在地",
+            "value": "阿罗拉地区"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "https://wiki.52poke.com/wiki/马玛内"
+                },
+                {
+                    "v": "https://wiki.52poke.com/wiki/马玛内（动画）"
+                }
+            ]
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 3
+    },
+    "anime_ids": [
+        192680
+    ]
+}

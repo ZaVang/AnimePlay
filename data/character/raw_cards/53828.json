@@ -1,0 +1,44 @@
+{
+    "id": 53828,
+    "name": "民谷伊右衛門",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b8/c4/53828_crt_8nWi8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/c4/53828_crt_8nWi8.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/c4/53828_crt_8nWi8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b8/c4/53828_crt_8nWi8.jpg"
+    },
+    "summary": "原来是个武士。因为赤穗家遭到抄家而成为浪人。和阿岩互相喜欢彼此，但受到阿岩的父亲－左门的怀疑而被迫分手。后来杀了左门，他也因此顺利和阿岩复合，但在阿岩生下孩子后而冷落了她，甚至最后抛弃她。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "民谷伊右卫门"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たみや いえもん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        976
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "id": 52802,
+    "name": "丸山彩",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ea/24/52802_crt_xQ3EW.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/24/52802_crt_xQ3EW.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/24/52802_crt_xQ3EW.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ea/24/52802_crt_xQ3EW.jpg"
+    },
+    "summary": "因为憧憬“偶像”而进入艺能界，但是由于怯场的关系对于现场的即兴发挥不是很拿手，偶像事业的发展似乎并不太顺利。\r\n对于“可爱的人正在努力的样子”没有抵抗力，一见到就会立刻（感动得？）哭起来。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "丸山彩"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "まるやま あや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Maruyama Aya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月27日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "担当",
+            "value": "主唱"
+        },
+        {
+            "key": "星座",
+            "value": "摩羯座"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "蛋包饭和汉堡肉"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "章鱼"
+        },
+        {
+            "key": "兴趣",
+            "value": "研究自拍"
+        },
+        {
+            "key": "所属",
+            "value": "Pastel∗Palettes"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 27,
+    "stat": {
+        "comments": 55,
+        "collects": 153
+    },
+    "anime_ids": [
+        246431
+    ]
+}

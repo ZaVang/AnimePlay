@@ -1,0 +1,84 @@
+{
+    "id": 39226,
+    "name": "結城晴",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c7/21/39226_crt_m4r3Q.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/21/39226_crt_m4r3Q.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/21/39226_crt_m4r3Q.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c7/21/39226_crt_m4r3Q.jpg"
+    },
+    "summary": "结城晴是BNEI手机社群游戏《偶像大师 灰姑娘女孩》系列的登场角色。\r\n2013年5月21日追加「爱媛地区」时作为BOSS初登场。\r\n\r\n第一人称使用「オレ」。外表、言行都非常男孩子气，本人说是因为家庭里除了她都是男的。\r\n被自己父亲随意应募偶像然后出道了，经常说出没有干劲的发言。不过亲密度高之后还是希望得到制作人的认可。\r\n非常喜欢足球，经常有和足球相关的话题。似乎拥有非常好的体力和运动神经。\r\n由于一直以来的男孩子气，晴并不喜欢可爱的衣服，每次穿上都显得十分害羞和不情愿。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "结城晴"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "結城 晴"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ゆうき はる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yūki Haru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月17日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "140cm"
+        },
+        {
+            "key": "体重",
+            "value": "37kg"
+        },
+        {
+            "key": "BWH",
+            "value": "74/55/78"
+        },
+        {
+            "key": "年龄",
+            "value": "12岁"
+        },
+        {
+            "key": "出身地",
+            "value": "爱媛"
+        },
+        {
+            "key": "兴趣",
+            "value": "足球"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 17,
+    "stat": {
+        "comments": 37,
+        "collects": 97
+    },
+    "anime_ids": [
+        376703
+    ]
+}

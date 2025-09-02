@@ -1,0 +1,501 @@
+{
+    "id": 3413,
+    "type": 2,
+    "name": "今日の5の2",
+    "name_cn": "今天的五年二班",
+    "summary": "青梅竹马的佐藤良太和小泉千佳，是同一所小学五年二班的学生。他们的同班同学，无论男生女生，个个都超有个性！他们引发了各种充满整蛊的意外，总是元气满满地大吵大闹。要不要稍微来窥探一下五年二班这群活泼学生们的日常呢！？\r\n\r\n幼なじみ同士の佐藤リョータと小泉チカは、同じ小学校に通う5年2組の生徒。2人のクラスメイトは、男子も女子もみんな個性的！ ドッキリ満載のハプニングを巻き起こし、元気に大騒ぎを繰り広げています。明るく楽しい5年2組の様子を、ちょっと覗いてみませんか!?\r\n",
+    "nsfw": false,
+    "locked": false,
+    "date": "2008-10-05",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/30/19/3413_FqfYQ.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/30/19/3413_FqfYQ.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/30/19/3413_FqfYQ.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/30/19/3413_FqfYQ.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/30/19/3413_FqfYQ.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "今天的五年二班"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "今天的5年2班",
+                    "k": null
+                },
+                {
+                    "v": "Kyou no Go no Ni",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2008年10月5日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://king-cr.jp/special/gononi"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京"
+        },
+        {
+            "key": "播放结束",
+            "value": "2008年12月28日"
+        },
+        {
+            "key": "导演",
+            "value": "長澤剛"
+        },
+        {
+            "key": "Copyright",
+            "value": "©桜場コハル・講談社/5年2組保護者会"
+        },
+        {
+            "key": "原作",
+            "value": "桜場コハル"
+        },
+        {
+            "key": "制片人",
+            "value": "中西豪"
+        },
+        {
+            "key": "製作",
+            "value": "5年2組保護者会"
+        },
+        {
+            "key": "人物设定",
+            "value": "近岡直"
+        }
+    ],
+    "volumes": 0,
+    "eps": 13,
+    "total_episodes": 13,
+    "rating": {
+        "rank": 1854,
+        "total": 1203,
+        "count": {
+            "one": 4,
+            "two": 3,
+            "three": 5,
+            "four": 16,
+            "five": 57,
+            "six": 172,
+            "seven": 456,
+            "eight": 398,
+            "nine": 60,
+            "ten": 32
+        },
+        "score": 7.2
+    },
+    "collection": {
+        "wish": 969,
+        "collect": 1818,
+        "doing": 112,
+        "on_hold": 140,
+        "dropped": 76
+    },
+    "tags": [
+        {
+            "name": "搞笑",
+            "count": 273
+        },
+        {
+            "name": "治愈",
+            "count": 214
+        },
+        {
+            "name": "TV",
+            "count": 168
+        },
+        {
+            "name": "今日の5の2",
+            "count": 144
+        },
+        {
+            "name": "2008",
+            "count": 138
+        },
+        {
+            "name": "XEBEC",
+            "count": 130
+        },
+        {
+            "name": "校园",
+            "count": 127
+        },
+        {
+            "name": "漫画改",
+            "count": 103
+        },
+        {
+            "name": "日常",
+            "count": 88
+        },
+        {
+            "name": "小学生被XE了",
+            "count": 87
+        },
+        {
+            "name": "校園",
+            "count": 77
+        },
+        {
+            "name": "2008年10月",
+            "count": 71
+        },
+        {
+            "name": "今日的5年2班",
+            "count": 58
+        },
+        {
+            "name": "邪惡",
+            "count": 43
+        },
+        {
+            "name": "漫改",
+            "count": 34
+        },
+        {
+            "name": "神作",
+            "count": 19
+        },
+        {
+            "name": "恋爱",
+            "count": 18
+        },
+        {
+            "name": "日本",
+            "count": 13
+        },
+        {
+            "name": "2009",
+            "count": 11
+        },
+        {
+            "name": "小学生",
+            "count": 7
+        },
+        {
+            "name": "长泽刚",
+            "count": 7
+        },
+        {
+            "name": "2008年",
+            "count": 6
+        },
+        {
+            "name": "長澤剛",
+            "count": 6
+        },
+        {
+            "name": "崩",
+            "count": 5
+        },
+        {
+            "name": "邪恶",
+            "count": 4
+        },
+        {
+            "name": "没啥米",
+            "count": 4
+        },
+        {
+            "name": "小林ゆう",
+            "count": 4
+        },
+        {
+            "name": "正太",
+            "count": 4
+        },
+        {
+            "name": "阿澄佳奈",
+            "count": 4
+        },
+        {
+            "name": "TVA",
+            "count": 4
+        }
+    ],
+    "meta_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "series": false,
+    "main_character_ids": [
+        9785,
+        9786,
+        9787,
+        9788,
+        9789,
+        9790,
+        9791,
+        9792
+    ],
+    "main_characters": [
+        {
+            "id": 9785,
+            "name": "佐藤リョータ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/85/13/9785_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/13/9785_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/13/9785_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/85/13/9785_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4398,
+                    "name": "小林ゆう",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1b/c3/4398_prsn_XMW01.jpg?r=1730732992",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/c3/4398_prsn_XMW01.jpg?r=1730732992",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/c3/4398_prsn_XMW01.jpg?r=1730732992",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1b/c3/4398_prsn_XMW01.jpg?r=1730732992"
+                    },
+                    "short_summary": "配音范围，从少年至美少女，亦或是活力充沛的角色，都没有问题。\r\n当声优以前是个十分活跃的杂志模特，这是一个与众不同的经历。可能因为这样，身高在女声优界中是很高的168cm，只是比170cm以上的本田贵子、汤屋敦子、葛城七穗矮一点。\r\n母亲是插花师傅。亦可能因为这样，对任何事也十分谦虚有礼，众所周知她很平易近人。\r\n对同年、甚至比自己年轻的同事经常也会在名字后加“～さん(先生/小姐)”，虽然如此，但却把比自己大一年的中原麻衣唤做“まいたん”\r\n在广播中，几乎每次也会把手或头碰到麦克风，每次也很热衷于节目中的游戏，无意识地发出喘气声。\r\n喜欢料理。自己有糠床(由米糠和盐混制而成，是做 糠渍け 的主要原料)，用来做糠渍け(一种用米糠拌盐腌的和式小菜)。\r\n为了练习配音和唱歌的技巧，经常独自一人在卡啦ok流连，连卡啦ok的店员们也认得出她的样貌。某日和声优朋友一起唱卡啦ok时，还被店员说了“今天和朋友们一起来真是太好了”。\r\n在决定“魔法老师”将会有演出时开始学习剑道，但现在好像已经放弃了。\r\n因广播节目中游戏的惩罚，曾穿着“魔法老师”中麻帆良学园的校服在新宿站坐地下铁，沿湘南新宿线坐到高崎线深谷站，并在深谷站前唱了“聖なる空の下で”。\r\n看了“魔法老师”漫画第114话“みんながいるからボクがいる”涅吉和刹那对战后，好像有点悲伤地向作者赤松健说“请让刹那胜利吧…”。\r\n2006年5月8日的网上广播“麻帆良学園中等部2-A・ヒミツの放課後 Part2”，为了取材而和佐藤利奈一起来到录音室的赤松健，给小林优体验了一下当助手的感觉而让她在“魔法先生ネギま！”第136话“チーム・ネギ坊主”(单行本第15卷的109页，中日单行本相同)的第1页第7格写下了“もぞもぞ…”和“うじうじ”。\r\n2006年6月20日，名为“White Wing”的fans club成立了。\r\n喜欢的动物是兔子，而且曾经饲养，名叫Nono（ノノ）。另外似乎很满意看到自己配音的刹那在漫画中戴上兔耳cosplay。\r\n2007年2月4日，Saint October的op“Wheel of fortune”pv拍摄完毕后，2月5日凌晨0:00，一众工作人员以及一起拍摄的片冈あづさ，福井裕佳梨为她庆祝生日，给了她一个惊喜。就在把蜡烛吹熄后，一如以往为表感谢而鞠躬的她，碰到了工作人员手拿的蛋糕，把头上戴着的帽子弄脏了，惹得大家都笑了。\r\n2008年获得声优奖女优部门新人赏。\r\n2009年在Animelo Summer Live 2009 与其他“绝望少女达”（野中蓝、新谷良子、小林优、泽城美雪）人员及大槻ケンヂ一起演出动画“绝望老师”的相关曲“人として轴がぶれている”、“空想ルンバ”和“林檎もぎれビーム! ”。其中小林优与泽城美雪在表演时同时进入“疯狂状态”，十分卖力地演出。事后根据小林本人说，唱完三首歌回到了后台之后就晕倒了，其后发现颈亦受伤了，以致9月份的个人首唱会都不能作强烈的颈部运动。\r\n同年冬天与RYO组成2人乐团“Crush Tears”，出现第一首曲“闪光の瞬き”。于2010年2月17日发表此曲。\r\n2010年Crush Tears组合增加2人，现变成四人乐团，新曲为动画“爆丸”相关曲“Communication Breakdown”此曲发售日期为7月7日。\r\n绘画十分的不济，画什么也会变成自己独创的东西，因而被称为“画伯”（大画家）。\r\n2006年6月9日发布在网上广播所画的画（魔法先生ネギま！的登场人物源静奈）时，还因为画作有某方面的危险而被工作人员修正了。\r\n赤松健的日记中对其他声优会在名字后加“さん”（先生/小姐），而小林却是“画伯”。\r\n\r\n2017年12月29日，在个人Twitter上宣布结婚消息。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9786,
+            "name": "小泉チカ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/d8/9786_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/d8/9786_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/d8/9786_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/d8/9786_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4990,
+                    "name": "下田麻美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/14/f3/4990_prsn_Amyu9.jpg?r=1514287244",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/14/f3/4990_prsn_Amyu9.jpg?r=1514287244",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/14/f3/4990_prsn_Amyu9.jpg?r=1514287244",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/14/f3/4990_prsn_Amyu9.jpg?r=1514287244"
+                    },
+                    "short_summary": "下田 麻美（しもだ あさみ、1986年1月30日 - ）は、日本の女性声優、舞台女優、歌手。アーツビジョン所属。鳥取県鳥取市出身。愛称は「あさぽん」など。 代表作に『IS 〈インフィニット・ストラトス〉』（凰鈴音）、『THE IDOLM@STER』（双海亜美・真美）、『VOCALOID2』（鏡音リン・レン）、『お兄ちゃんだけど愛さえあれば関係ないよねっ』（猿渡銀兵衛春臣）などがある。\r\n\r\n2006年まで年1回行われていた「アーツビジョン無料新人育成オーディション」に合格し、17期特待生として日本ナレーション演技研究所を経て、アーツビジョン所属となった。\r\n2005年に稼動した業務用ゲーム『THE IDOLM@STER』の双海亜美・双海真美役で本格的にデビュー（収録開始は2003年から）。\r\n2009年6月に本人名義としては初のソロアルバム『Prism』をリリース。それに連動してニコニコ動画に「下田麻美ちゃんねる」が2009年4月27日に開設された。\r\nユニット活動は、個人的な活動の「elements」（エレメンツ）が声優の狩野茉莉と2007年6月頃から2010年3月まで、2008年のテレビアニメ「今日の5の2」の出演声優によるユニットFriendsは番組終了後の2009年10月まで。\r\n2007年に発売されたVOCALOID2『鏡音リン・レン』の声データの提供者で、キャラクターとしての鏡音リン・レンの声の他、追加ライブラリのための音声収録に参加している。\r\n2013年7月13日、故郷である鳥取県から「とっとりふるさと大使」を委嘱された。\r\n\r\nニックネーム「あさぽん」はラジオ番組にゲストで出演した時に、リスナーの投稿で「あさぽん」と呼ばれたことをきっかけに本人が決めた。他の愛称に「アーサー」、「げったん」、「ぽんちゃん」など。\r\n高校生のときに声優養成所の特待生に合格し、高校在学中は住まいのある鳥取と東京を夜行バスなどで週1回往復する生活をした。この当時の様子をNHK鳥取放送局が取材しており、そのときの担当がアニメ好きとして知られる塩澤大輔アナウンサー（現・仙台局）だったことから、下田・塩澤の両者から当時のことについての言及が見られる。\r\n同じ所属事務所の声優狩野茉莉とユニットelementsを組んで自主活動でライブを行っていた。約3年間に春夏秋冬それぞれをテーマにした4回のライブを行い、2010年3月のライブをもって活動を終了した。\r\nゲーム『THE IDOLM@STER』に収録された「エージェント夜を往く」という曲で、彼女が歌うゲームバージョンは「溶かしつくして」という歌詞が「とかちつくちて」に聞こえることが2007年に動画サイト等で話題になる。\r\nサザンオールスターズや桑田佳祐のファンで、新宿タワーレコードのキャンペーンに行った姿が本人のブログだけでなく、サザンオールスターズの公式ツイッターでも一般人として紹介されている。また尾崎豊のファンでもある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9787,
+            "name": "浅野ユウキ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/24/ac/9787_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/ac/9787_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/ac/9787_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/24/ac/9787_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4698,
+                    "name": "明坂聡美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/44/ff/4698_prsn_K78E4.jpg?r=1503560197",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/ff/4698_prsn_K78E4.jpg?r=1503560197",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/ff/4698_prsn_K78E4.jpg?r=1503560197",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/44/ff/4698_prsn_K78E4.jpg?r=1503560197"
+                    },
+                    "short_summary": "明明是个贫乳，却经常接演巨乳角色，本人也多次吐槽。\r\n声优以外舞台女演员也在进行，活动也广泛。同时，常常把声音用作花茎甘蓝关联的作品。\r\n有绝对音感。\r\n爱好是猫，特技是一千米跑（15岁时），喜欢玩柏青哥，网络游戏和画画，喜欢东京事变（椎名林檎）的歌，喜欢吃梅干。\r\n经常被人以“贫乳”，“嫁不出去”来开玩笑，自己也自暴自弃地接受了如上设定（现在主持着名为明坂聡美のよめいり！（明坂聪美的新娘修行）的放送节目），目标是找个有钱的帅哥（或者只要有钱就好）嫁了。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9788,
+            "name": "相原カズミ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/42/8e/9788_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/8e/9788_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/8e/9788_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/42/8e/9788_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6768,
+                    "name": "MAKO",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/74/6768_prsn_WnT68.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/74/6768_prsn_WnT68.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/74/6768_prsn_WnT68.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/74/6768_prsn_WnT68.jpg"
+                    },
+                    "short_summary": "MAKO（1986年10月7日－）是东京都出身的女性歌手、声优。曾经所属于Space Craft事务所，2011年9月1日移籍至I'm Enterprise。\r\n是隶属同一事务所（Space Craft）的南里侑香的粉丝。\r\n2014年6月20日在博客上发表了结婚以及育有一女的报告。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9789,
+            "name": "平川ナツミ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0c/c9/9789_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0c/c9/9789_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0c/c9/9789_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0c/c9/9789_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4868,
+                    "name": "阿澄佳奈",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9a/0a/4868_prsn_bV8bG.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/0a/4868_prsn_bV8bG.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/0a/4868_prsn_bV8bG.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9a/0a/4868_prsn_bV8bG.jpg"
+                    },
+                    "short_summary": "有一个大自己1岁的姐姐，具有幼稚园老师二种执照和保育士资格。兴趣是唱歌和写真摄影（本人说拍的人物比风景多）。\r\n持有NDS、PS2、PS3、PSP等多款游戏机，是《偶像大师》的粉丝，特别喜欢高槻弥生。\r\n初中时和姐姐同样加入剑道社。理由是“社团一样的话很多方面会很轻松吧”、“希望变得像姐姐那样（擅长运动）”。虽然喜欢运动但并不擅长。\r\n高中时加入放松部，并作了学校运动会的现场转播，获得学校的好评。\r\n与井口裕香非常要好，并多次在『井口裕香の超ラジ!Girls』里被提及并多次成为谈话主题中心。\r\n主持过很多广播，大受粉丝喜爱。在广播节目中有说话被强行切掉的事情，被说「ぶった切り」、「やさぐれ」。作为嘉宾出演的时候她的行为经常被问「你喝醉了吧喂？！！」\r\n在录音现场的时候就很老实，所以跟她一起录音过的人第一次跟她一起录制广播的时候都会被吓到。子安武人就说过：广播和录音现场的印象完全不一样。本人也说：做匆忙决定的工作、动画、不习惯的事的时候就会做过头。\r\n声线特征为高亢的幼女声，被称为“医治心灵的声音”，适合扮演声音偏高的角色，元气（如《圣诞之吻》的橘美也、《潜行吧！奈亚子》的奈亚子）和天然（如《向阳素描》的由乃、《迷糊餐厅》的种岛白杨）两相宜。\r\n\r\n2001年4月，加入『小梅伍』成为第4代成员，以原田佳奈的名义进行各种活动。\r\n高中毕业后，进入东京都内的短期大学念书。取得幼儿园二种执照和保育士资格，有接近一年的工作经验。之后，为了成为声优而辞职。\r\n2004年10月，为了避免和同名同姓的偶像原田佳奈混淆，改艺名为“阿澄佳奈”。\r\n2006年4月1日，加入Voice & Heart事务所。\r\n2007年1月，出演《向阳素描》的由乃，首次出演动画主角。\r\n2008年1月7日，移籍至81Produce事务所。\r\n2009年3月7日，获得第3回声优奖新人女声优奖。\r\n2010年7月27日，与同事务所的片冈梓、原纱友里一起结成声优组合『LISP』，10月27日出道。\r\n2011年6月17日，81事务所30周年纪念声优组合『LISP』，将在7月31日于涉谷AX举行的纪念结成一周年Live后，活动休止。\r\n2013年3月1日，获得第7回声优奖主演女声优赏、与松来未佑、大坪由佳结成的声优组合『後ろから这いより队G』获得歌唱赏。\r\n每周日上午10点（北京时间）在 超！A&G | 文化放（www.agqr.jp）主持广播节目《A&Gリクエストアワー　阿澄佳奈のキミまち！》\r\n2014年1月15日，在博客上宣布了结婚的消息。\r\n2021年12月31日，发推表示自己已经于3年前与之前的配偶离婚，今年再婚且已经怀孕，正在为出产做准备。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9790,
+            "name": "今井コウジ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a4/30/9790_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/30/9790_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/30/9790_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a4/30/9790_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 45446,
+                    "name": "山戸めぐみ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0b/10/45446_prsn_xMrrz.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/10/45446_prsn_xMrrz.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/10/45446_prsn_xMrrz.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0b/10/45446_prsn_xMrrz.jpg"
+                    },
+                    "short_summary": "日本の女性声優。以前はマウスプロモーションに所属していた。茨城県出身。旧芸名は山戸 恵。\r\n2000年に専門学校東京アナウンス学院放送声優科に入学。2002年にマウスプロモーション付属俳優養成所に入所し、2004年にマウスプロモーション所属となった。2016年にマウスプロモーションを退所。\r\n趣味・特技：ピアノその他、楽器演奏/玉ねぎのスライス。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9791,
+            "name": "河合ツバサ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/44/08/9791_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/08/9791_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/08/9791_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/44/08/9791_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4757,
+                    "name": "高垣彩陽",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bd/da/4757_prsn_4OzGs.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/da/4757_prsn_4OzGs.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/da/4757_prsn_4OzGs.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bd/da/4757_prsn_4OzGs.jpg"
+                    },
+                    "short_summary": "高垣 彩陽（たかがき あやひ、1985年10月25日 - ）は、日本の声優、歌手、舞台女優。\r\n東京都出身。ミュージックレイン所属。愛称はあやひー、あやひちゃんなど。家族構成では、弟と妹が1人ずついる。\r\n代表作に『戦姫絶唱シンフォギアG』（雪音クリス）、『ガンダム Gのレコンギスタ』（マニィ・アンバサダ）、『ジュエルペット マジカルチェンジ』（ラリマー）などがある。\r\n\r\n2019年8月23日、舞台出演時にスタッフだった男性と結婚したことを発表。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9792,
+            "name": "日高メグミ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f6/4b/9792_crt_65Bdz.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/4b/9792_crt_65Bdz.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/4b/9792_crt_65Bdz.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f6/4b/9792_crt_65Bdz.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4903,
+                    "name": "本多陽子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/76/9c/4903_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/76/9c/4903_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/76/9c/4903_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/76/9c/4903_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "高城流依 ＝ 本多陽子 ＝ 高城琉依 アイム エンタープライズ",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

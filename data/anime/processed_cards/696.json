@@ -1,0 +1,179 @@
+{
+    "id": 696,
+    "name": "剑风传奇",
+    "image_path": "data/images/anime/696.jpg",
+    "points": 8.1,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "　　身の丈を超える長大な剣を自在に操り、「使徒」と呼ばれる人外の化け物を屠る「黒い剣士」ガッツを主人公とする大河ファンタジー。ガッツはある宿命に憑りつかれて狂戦士のごとく大剣を振るい、闇に蠢く化物と死闘を繰り広げる。その目的は無為に殺された仲間たちの復讐と大切なものを護るということ。二つの重荷を背負い、5人の守護天使ゴッドハンドを探し求めるガッツはその下に従う人外の存在「使徒」との闘いの中で、運命に翻弄されつつも必死にあがく。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 25,
+    "synergy_tags": [
+        "TV",
+        "TV",
+        "日本",
+        "日本",
+        "漫画改",
+        "漫画改",
+        "战斗",
+        "战斗"
+    ],
+    "date": "1997-10-07",
+    "rating_rank": 208,
+    "rating_score": 8.1,
+    "rating_total": 2294,
+    "main_character_ids": [
+        2458,
+        18158,
+        18159
+    ],
+    "main_characters": [
+        {
+            "id": 2458,
+            "name": "キャスカ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/54/b2/2458_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/54/b2/2458_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/54/b2/2458_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/54/b2/2458_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3972,
+                    "name": "宮村優子",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bc/55/3972_prsn_xO855.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/55/3972_prsn_xO855.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/55/3972_prsn_xO855.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bc/55/3972_prsn_xO855.jpg"
+                    },
+                    "short_summary": "日本の声優、女優、歌手。兵庫県神戸市出身。JAEプロモーション所属。一部の作品においては闇村悠ノ介とクレジットされることもあった。代表作に『新世紀エヴァンゲリオン 』（惣流・アスカ・ラングレー）、『名探偵コナン』（遠山和葉）などがある。\r\n\r\n中学時代はテニス部に所属していたという。中学3年生になると受験で部活が終わり、その時、図書室で、戯曲集を見つけて、戯曲集のセリフに惹かれて演劇を始める。舞台が好きだったため、高校時代に演劇部に所属し、高校卒業後、桐朋学園短期大学演劇科で演劇を勉強をしていた。卒業後は日本ナレーション演技研究所に入所。ゲーム『拳聖土竜』の春麗役で声優デビュー。\r\n\r\n声優を目指したのは大学の進路指導の講師が、きっかけで、大学の進路指導で、皆が「劇団入る」、「プロダクション入る」と言っており、担当の講師が劇団青年座の関係者だったという。\r\n\r\n劇団の役者だけでは食べていくことができず、劇団青年座は声優として活動している役者が多く、同じ短大の先輩だったかないみか、川上とも子が、舞台役者から声優に転身して活躍していたのを知っていたため、「自分も挑戦してみたいな」と並行して声の仕事を始める。\r\n\r\n入団したかった劇団の入団テストに落選したこともあり、舞台の仕事より声の仕事の割合が徐々に増えていったという。\r\n\r\nアーツビジョン所属を経て、ジャパンアクションエンタープライズ (JAE) の俳優部門「JAEプロモーション」と業務提携。\r\n\r\n1995年に『愛天使伝説ウェディングピーチ』の珠野ひなぎく（エンジェルデイジー）役、『新世紀エヴァンゲリオン』の惣流・アスカ・ラングレー役で有名になる。\r\n\r\n1999年に漫画家のナカタニD.と結婚したが、翌年に離婚。\r\n\r\n2004年に同じJAE所属の男性スタントマン・関隆行と再婚。2007年にオーストラリアへ移住している。\r\n\r\n2006年より大阪北堀江にある放送芸術学院の併設校「大阪アニメーションスクール」でアフレコの授業を担当した。\r\n\r\n2016年に関隆行と離婚。親権は宮村が持つこととなった。\r\n\r\n2018年に日本へ帰国し、再び国内に拠点を戻すとともに同年1月にインターナショナル・メディア学院の講師に就任した。\r\n\r\n『ヱヴァンゲリヲン新劇場版』の式波・アスカ・ラングレー役、『名探偵コナン』の遠山和葉役などで活動を継続している。\r\n\r\n2022年5月、公式ホームページを開設した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 18158,
+            "name": "ガッツ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/01/b9/18158_crt_8ZE4B.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/b9/18158_crt_8ZE4B.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/b9/18158_crt_8ZE4B.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/01/b9/18158_crt_8ZE4B.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4018,
+                    "name": "神奈延年",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4c/f0/4018_prsn_K8iMe.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/f0/4018_prsn_K8iMe.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/f0/4018_prsn_K8iMe.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4c/f0/4018_prsn_K8iMe.jpg"
+                    },
+                    "short_summary": "子役出身。日本児童、副多事務所を経て、劇団青杜から青二プロダクションへ所属。3歳のときに役者デビューしCMや映画に出演、中学生のときに学業に専念するため一旦休業。高校卒業後、舞台役者を経て、1991年にテレビアニメ『ドラゴンクエスト』のフランク王子役で声優デビューを果たす。\r\n\r\n2000年1月1日付で芸名を「神奈延年」に改める。意味は職人が使用する木を削る鉋（かんな）で削るが如く、演技や自分に磨きをかけるため＝神奈（かんな）とのこと。「神奈」は姓名鑑定で決めてもらった苗字で、他には「蔵門」（くらかど）等の苗字が候補に挙がっていた。\r\n\r\n2010年7月27日、神奈延年の知人である容疑者が不正アクセスをし、神奈延年のブログになりすましを行い書き込んだことが報道された。容疑者は約100回に渡り、意味不明なことを書き込んでいた。報道された当初、ブログは閉鎖されていたが現在ではブログは再開されている。",
+                    "locked": false
+                },
+                {
+                    "id": 23843,
+                    "name": "福島おりね",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4d/08/23843_prsn_5j6k5.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4d/08/23843_prsn_5j6k5.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4d/08/23843_prsn_5j6k5.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4d/08/23843_prsn_5j6k5.jpg"
+                    },
+                    "short_summary": "本名后藤 织子（ごとう おりね (旧姓：福岛)）。担任音响监督时别名福岛 央俐音（将名字姓氏后面的平假名转换成汉字）。\r\n\r\n早年以漫画家身份参加秋田书店举办的第1回Princess漫画奖（日语：月刊プリンセス）入围并正式出道，之后持续投稿NTTDoCoMo漫画小册子的创作。\r\n\r\n从事声优业时曾经是81 Produce所属。2004年自行就任企划制作，成立演艺事务所株式会社Water Orion（日语：ウォーターオリオン），目前任职Water Orion。",
+                    "locked": false
+                },
+                {
+                    "id": 24527,
+                    "name": "三浦智子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/70/4c/24527_prsn_6EU33.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/4c/24527_prsn_6EU33.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/4c/24527_prsn_6EU33.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/70/4c/24527_prsn_6EU33.jpg"
+                    },
+                    "short_summary": "日本の女性声優。神奈川県出身。ぷろだくしょんバオバブに所属していた。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 18159,
+            "name": "グリフィス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/cc/25/18159_crt_XPyMM.jpg?r=1724543399",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/25/18159_crt_XPyMM.jpg?r=1724543399",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/25/18159_crt_XPyMM.jpg?r=1724543399",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cc/25/18159_crt_XPyMM.jpg?r=1724543399"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3822,
+                    "name": "森川智之",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e1/d8/3822_prsn_HDeX6.jpg?r=1632668462",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/d8/3822_prsn_HDeX6.jpg?r=1632668462",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/d8/3822_prsn_HDeX6.jpg?r=1632668462",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e1/d8/3822_prsn_HDeX6.jpg?r=1632668462"
+                    },
+                    "short_summary": "森川 智之は、日本の声優、ナレーター、歌手。アクセルワン代表取締役。\r\n\r\nアニメ・ゲーム作品では主にクールな二枚目を担当することが多いが、その他にも幅広い芸風を持ち、様々な役をこなす。強い音圧のある声量を誇り、主役デビューとなる『宇宙の騎士テッカマンブレード』のアフレコ中にマイクを2本破壊した程。　このエピソードから、ファンに「マイククラッシャー」と呼ばれることも。その為、ピンマイクをつける時にはかなり低い位置につけるとのこと。\r\n\r\n洋画の吹き替えではキアヌ・リーブス、ブラッド・ピット、トム・クルーズ、ユアン・マクレガーなどを担当する。\r\n\r\n声優活動と併せて音楽活動も行っている。『アンジェリーク』シリーズにて立木文彦とデュエットしたことが縁で、後に同氏と音楽ユニット「2HEARTS」を結成した。\r\n\r\n好きな食べ物は生肉。一部の声優からは「生肉先輩」と呼ばれている。また肉の焼き方にもうるさい。愛称は「もりもり」、（BL界の）「帝王」。ちなみに帝王と呼ばれていることは本人も自負しているとか。\r\n2006年頃から肉体改造を開始し、半年で10kgも痩せるほどの変貌を遂げている。\r\n愛犬家。アクセルという名のレトリーバーを飼っていたが2009年10月に永眠。\r\n\r\nゲームへの出演も数多いが、初めてゲームをプレイしたのは2007年のこと。プレイしたのは『Devil May Cry』。後に主人公であるダンテの日本語版声優を担当する事になる。ちなみにPS2を購入するまでメモリーカードの存在を知らなかった。\r\n\r\n2011年4月1日に声優プロダクション「アクセルワン」を設立。独立し、代表取締役社長となった。",
+                    "locked": false
+                },
+                {
+                    "id": 3933,
+                    "name": "高山みなみ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/29/8f/3933_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/8f/3933_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/8f/3933_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/29/8f/3933_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "中学时代加入向日葵剧团。高中毕业后，曾经是一个普通的OL，22岁时立志成为声优。与日本歌手永野椎菜合组歌唱组合TWO-MIX。\r\n2005年5月5日，与青山刚昌结婚。 \r\n根据日本《朝日新闻》2005年6月2日报道，《名侦探柯南》之父、41岁的青山刚昌当天在接受日本著名杂志《女性名流》的采访中承认，将迎娶在《名侦探柯南》动画片中为柯南配音的日本著名声优、当时41岁的高山南，而两人已于高山南的生日，也就是5月5日，正式办理了登记结婚手续。\r\n2007年12月9日，与青山刚昌离婚。 \r\n自从两人05年5月结婚以来，青山先生在漫画制作的截稿期之前都会在工作场所埋头苦干，而著名声优高山南工作也非常繁忙。在经常擦肩而过的生活持续之下，两人在甚少的沟通和关照之下，感情也渐渐变淡。最后，两人在两年后的12月9日决定离婚，至于青山先生对于传媒的采访态度为“无可奉告”。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

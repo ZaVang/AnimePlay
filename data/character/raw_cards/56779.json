@@ -1,0 +1,58 @@
+{
+    "id": 56779,
+    "name": "斉藤恵那",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8f/f6/56779_crt_lrgJJ.jpg?r=1717693990",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/f6/56779_crt_lrgJJ.jpg?r=1717693990",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/f6/56779_crt_lrgJJ.jpg?r=1717693990",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8f/f6/56779_crt_lrgJJ.jpg?r=1717693990"
+    },
+    "summary": "リンの友達。マイペースな自由人。\r\n野クルの部員ではないが、野クルの活動にちょくちょく興味を示す。\r\n人づきあいが苦手なリンにさりげないアドバイスをすることも。\r\n飼い犬の名前は「ちくわ」。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "齐藤惠那"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "斉藤 恵那"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さいとう えな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Saitō Ena"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月1日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 1,
+    "stat": {
+        "comments": 34,
+        "collects": 156
+    },
+    "anime_ids": [
+        262897,
+        207195,
+        266070
+    ]
+}

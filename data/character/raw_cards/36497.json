@@ -1,0 +1,72 @@
+{
+    "id": 36497,
+    "name": "滝本ひふみ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ef/55/36497_crt_6h6oF.jpg?r=1505724380",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ef/55/36497_crt_6h6oF.jpg?r=1505724380",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ef/55/36497_crt_6h6oF.jpg?r=1505724380",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ef/55/36497_crt_6h6oF.jpg?r=1505724380"
+    },
+    "summary": "　　役職：キャラクターデザイナー\r\n　　人と喋るのが苦手で、社内での会話も主にメッセで行う。そのメッセでは打って変わってフランクな口調となり、顔文字も多用する。\r\n　　年齢は不明。家で宗次郎という名前のハリネズミを飼っており、小動物的なところが似ている青葉には妙な親近感を覚えている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "泷本一二三"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "泷本日富美"
+                },
+                {
+                    "k": "日文名",
+                    "v": "滝本 ひふみ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たきもと ひふみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takimoto Hifumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月23日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 23,
+    "stat": {
+        "comments": 74,
+        "collects": 354
+    },
+    "anime_ids": [
+        150775
+    ]
+}

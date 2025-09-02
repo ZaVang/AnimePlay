@@ -1,0 +1,90 @@
+{
+    "id": 492881,
+    "name": "真･武士传 剑勇传说",
+    "image_path": "data/images/anime/492881.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "真のサムライを目指し、ジャングルで修行に励んでいた鉄 刃(くろがね やいば)。\r\nひょんなことから日本に戻り、父・剣十郎と縁のある峰家に身を寄せることに。\r\n峰家の娘・さやかは破天荒な刃に戸惑いながらも暮らし始める。\r\nそんなある日、さやかの学校に訪れた刃は、\r\n剣道の実力者・鬼丸 猛(おにまる たけし)と運命的な出会いを果たす。\r\nその後、刃と鬼丸は衝突を繰り返し、\r\n強さを求めた 2人に呼応するかのように古の力が目覚める。\r\n「雷神剣」と「風神剣」——\r\n古来より天地を揺るがしてきた魔剣が今再び目覚め、真の物語が幕を開ける——",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2025-04-05",
+    "rating_rank": 1683,
+    "rating_score": 7.2,
+    "rating_total": 924,
+    "main_character_ids": [
+        89266,
+        89267
+    ],
+    "main_characters": [
+        {
+            "id": 89266,
+            "name": "鉄刃",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3e/a3/89266_crt_Umu3D.jpg?r=1738944385",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/a3/89266_crt_Umu3D.jpg?r=1738944385",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/a3/89266_crt_Umu3D.jpg?r=1738944385",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3e/a3/89266_crt_Umu3D.jpg?r=1738944385"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3933,
+                    "name": "高山みなみ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/29/8f/3933_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/8f/3933_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/8f/3933_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/29/8f/3933_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "中学时代加入向日葵剧团。高中毕业后，曾经是一个普通的OL，22岁时立志成为声优。与日本歌手永野椎菜合组歌唱组合TWO-MIX。\r\n2005年5月5日，与青山刚昌结婚。 \r\n根据日本《朝日新闻》2005年6月2日报道，《名侦探柯南》之父、41岁的青山刚昌当天在接受日本著名杂志《女性名流》的采访中承认，将迎娶在《名侦探柯南》动画片中为柯南配音的日本著名声优、当时41岁的高山南，而两人已于高山南的生日，也就是5月5日，正式办理了登记结婚手续。\r\n2007年12月9日，与青山刚昌离婚。 \r\n自从两人05年5月结婚以来，青山先生在漫画制作的截稿期之前都会在工作场所埋头苦干，而著名声优高山南工作也非常繁忙。在经常擦肩而过的生活持续之下，两人在甚少的沟通和关照之下，感情也渐渐变淡。最后，两人在两年后的12月9日决定离婚，至于青山先生对于传媒的采访态度为“无可奉告”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 89267,
+            "name": "峰さやか",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/95/c2/89267_crt_Fkx6n.jpg?r=1738944509",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/c2/89267_crt_Fkx6n.jpg?r=1738944509",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/c2/89267_crt_Fkx6n.jpg?r=1738944509",
+                "grid": "https://lain.bgm.tv/pic/crt/g/95/c2/89267_crt_Fkx6n.jpg?r=1738944509"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 27559,
+                    "name": "石見舞菜香",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710"
+                    },
+                    "short_summary": "日本女性声优。出生于埼玉县。所属事务所为Raccoon Dog（ラクーンドッグ）。\r\n毕业于Pro Fit声优培训学校。\r\n\r\n初中时期观看《我们仍未知道那天所看见的花的名字。》（あの日見た花の名前を僕達はまだ知らない。）时，被茅野爱衣的演技深深打动，萌生了\"想用声音感动人心\"的愿望，从此立志成为声优。而让她初识声优职业的契机是《无头骑士异闻录》（デュラララ!!）。\r\n\r\n因自觉发音不够清晰，石见认为必须比他人更早开始专业训练才能成为职业声优。为此她向父亲立下\"若不同意自己就读声优培训学校就拒绝升学高中\"的宣言，最终成功说服家人。\r\n\r\n2016年，在《未闻花名》编剧冈田麿里首部执导作品《朝花夕誓——于离别之朝束起约定之花》（さよならの朝に約束の花をかざろう）中，石见被选拔担任女主角玛奇亚的配音。该作中更实现了与饰演玛奇亚挚友蕾莉亚的茅野爱衣同台演出。\r\n\r\n兴趣爱好是散步、读书，特长是演奏大号（チューバ）和动耳神功。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

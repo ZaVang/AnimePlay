@@ -1,0 +1,68 @@
+{
+    "id": 14187,
+    "name": "白鐘直斗",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/07/7d/14187_crt_oXO71.jpg?r=1608019849",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/7d/14187_crt_oXO71.jpg?r=1608019849",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/7d/14187_crt_oXO71.jpg?r=1608019849",
+        "grid": "https://lain.bgm.tv/pic/crt/g/07/7d/14187_crt_oXO71.jpg?r=1608019849"
+    },
+    "summary": "侦探家族的第5代传人，人称“侦探王子”，实际是女扮男装的美人。\r\n因调查八十稻羽镇的连续杀人事件与主人公集团相遇。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "白钟直斗"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Naoto Shirogane"
+                },
+                {
+                    "k": "日文名",
+                    "v": "白鐘 直斗"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しろがね　なおと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shirogane Naoto"
+                }
+            ]
+        },
+        {
+            "key": "生日",
+            "value": "1995-04-27"
+        },
+        {
+            "key": "血型",
+            "value": "B（Rh阴）"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        },
+        {
+            "key": "体重",
+            "value": "保密"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": 1995,
+    "birth_mon": 4,
+    "birth_day": 27,
+    "stat": {
+        "comments": 26,
+        "collects": 81
+    },
+    "anime_ids": [
+        15489
+    ]
+}

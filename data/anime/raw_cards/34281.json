@@ -1,0 +1,379 @@
+{
+    "id": 34281,
+    "type": 2,
+    "name": "戦闘メカザブングル",
+    "name_cn": "战斗机甲萨芬格尔",
+    "summary": "　　惑星ゾラと呼ばれる地球。ここは盗んだ物も3日間守り通して逃げのびれば自分の物になる、という掟が通る無法の星。\r\n　　その大地を駆ける暴走族、サンドラット団は、ウォーカーマシンに襲われたところを、負傷した少年ジロンに助けられた。サンドラットの女リーダーのラグは、このジロンに興味津々。なにしろ手負いの身ながらたった一人で、ブルーストーンの運び屋キャリング・カーゴが開くバザーに乗り込み、ウォーカーマシンを分捕ろうというのだ。バザーにはキャリングの用心棒や、無法の星に似つかわしい荒くれ者ばかりが揃っている。そんな所に乗り込んで行こうと言うジロンが目指す獲物は、なんと！　キャリングの新鋭ウォーカーマシン「ザブングル」！！",
+    "nsfw": false,
+    "locked": false,
+    "date": "1982-02-06",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/85/ed/34281_kFyNN.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/85/ed/34281_kFyNN.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/85/ed/34281_kFyNN.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/85/ed/34281_kFyNN.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/85/ed/34281_kFyNN.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "战斗机甲萨芬格尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "戦闘 メカザブングル",
+                    "k": null
+                },
+                {
+                    "v": "Sentou Mecha Xabungle",
+                    "k": null
+                },
+                {
+                    "v": "Combat Mecha Xabungle",
+                    "k": null
+                },
+                {
+                    "v": "Blue Gale XABUNGLE",
+                    "k": null
+                },
+                {
+                    "v": "柴油机",
+                    "k": null
+                },
+                {
+                    "v": "Xabungle",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "50"
+        },
+        {
+            "key": "放送开始",
+            "value": "1982年2月6日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://xabungle.net/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "名古屋テレビ放送"
+        },
+        {
+            "key": "播放结束",
+            "value": "1983年1月29日"
+        },
+        {
+            "key": "企画",
+            "value": "日本サンライズ"
+        },
+        {
+            "key": "原作",
+            "value": "富野由悠季、鈴木良武"
+        },
+        {
+            "key": "制片人",
+            "value": "森山涇、普入弘、中川宏徳"
+        },
+        {
+            "key": "制作",
+            "value": "名古屋テレビ、創通エージェンシー、日本サンライズ"
+        },
+        {
+            "key": "剪辑",
+            "value": "井上和夫、布施由美子"
+        },
+        {
+            "key": "脚本",
+            "value": "鈴木良武、伊東恒久、荒木芳久、吉川惣司"
+        },
+        {
+            "key": "分镜",
+            "value": "富野由悠季、菊池一仁、鹿島典夫、加瀬充子、滝沢敏文、康村諒、やまざきかずお、鈴木行、小椋十三、高橋資祐、関田修、大地瞬、大貫信夫、今川泰宏"
+        },
+        {
+            "key": "演出",
+            "value": "鹿島典夫、藤原良二、菊池一仁、加瀬充子、関田修、鈴木行、滝沢敏文"
+        },
+        {
+            "key": "作画监督",
+            "value": "湖川友謙、佐々門信芳、金山明博、山田きさらか、篠田章、坂本三郎、遠藤栄一"
+        },
+        {
+            "key": "色彩指定",
+            "value": "吉野記通、徳永ミツ子、西川遊子、野崎絹代、松井望、吉井三恵子"
+        },
+        {
+            "key": "特效",
+            "value": "干場豊"
+        },
+        {
+            "key": "机械设定",
+            "value": "大河原邦男；ゲスト：出渕裕"
+        },
+        {
+            "key": "背景美术",
+            "value": "内田建彦、山下玲子、山崎かおり、矢島洋一、長尾仁、大城昌江、川名俊英、平田祐一、川越伊都子"
+        },
+        {
+            "key": "摄影监督",
+            "value": "斎藤秋男"
+        },
+        {
+            "key": "摄影",
+            "value": "旭プロダクション"
+        },
+        {
+            "key": "制作进行",
+            "value": "目崎一彦、冨永恒雄、中川一敏、飯島浩、八木岡正美、杉島邦久、渡辺努"
+        },
+        {
+            "key": "制作管理",
+            "value": "制作デスク：内田健二"
+        },
+        {
+            "key": "音效",
+            "value": "伊藤道広"
+        },
+        {
+            "key": "录音",
+            "value": "セントラル録音"
+        },
+        {
+            "key": "音响",
+            "value": "千田啓子"
+        }
+    ],
+    "volumes": 0,
+    "eps": 50,
+    "total_episodes": 50,
+    "rating": {
+        "rank": 1081,
+        "total": 119,
+        "count": {
+            "one": 2,
+            "two": 0,
+            "three": 0,
+            "four": 0,
+            "five": 4,
+            "six": 11,
+            "seven": 36,
+            "eight": 43,
+            "nine": 15,
+            "ten": 8
+        },
+        "score": 7.6
+    },
+    "collection": {
+        "wish": 219,
+        "collect": 159,
+        "doing": 23,
+        "on_hold": 19,
+        "dropped": 24
+    },
+    "tags": [
+        {
+            "name": "富野由悠季",
+            "count": 78
+        },
+        {
+            "name": "SUNRISE",
+            "count": 67
+        },
+        {
+            "name": "TV",
+            "count": 54
+        },
+        {
+            "name": "萝卜",
+            "count": 50
+        },
+        {
+            "name": "1982",
+            "count": 43
+        },
+        {
+            "name": "原创",
+            "count": 33
+        },
+        {
+            "name": "科幻",
+            "count": 23
+        },
+        {
+            "name": "机战",
+            "count": 20
+        },
+        {
+            "name": "搞笑",
+            "count": 15
+        },
+        {
+            "name": "五武冬史",
+            "count": 13
+        },
+        {
+            "name": "80年代",
+            "count": 10
+        },
+        {
+            "name": "湖川友謙",
+            "count": 8
+        },
+        {
+            "name": "日本",
+            "count": 4
+        },
+        {
+            "name": "80s",
+            "count": 4
+        },
+        {
+            "name": "サンライズ",
+            "count": 3
+        },
+        {
+            "name": "1980s",
+            "count": 3
+        },
+        {
+            "name": "1982年2月",
+            "count": 3
+        },
+        {
+            "name": "白富野",
+            "count": 3
+        },
+        {
+            "name": "日本动画",
+            "count": 2
+        },
+        {
+            "name": "长篇",
+            "count": 2
+        },
+        {
+            "name": "湖川友谦",
+            "count": 2
+        },
+        {
+            "name": "年番",
+            "count": 2
+        },
+        {
+            "name": "补旧番",
+            "count": 2
+        },
+        {
+            "name": "80",
+            "count": 2
+        },
+        {
+            "name": "动作",
+            "count": 2
+        },
+        {
+            "name": "robo",
+            "count": 2
+        },
+        {
+            "name": "馬飼野康二",
+            "count": 2
+        },
+        {
+            "name": "鈴木良武",
+            "count": 2
+        },
+        {
+            "name": "OP",
+            "count": 2
+        },
+        {
+            "name": "机器人",
+            "count": 2
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "series": false,
+    "main_character_ids": [
+        76492,
+        125107
+    ],
+    "main_characters": [
+        {
+            "id": 76492,
+            "name": "エルチ・カーゴ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3f/61/76492_crt_47CW6.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/61/76492_crt_47CW6.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/61/76492_crt_47CW6.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3f/61/76492_crt_47CW6.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4340,
+                    "name": "横尾まり",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ef/d4/4340_prsn_nWs7s.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ef/d4/4340_prsn_nWs7s.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ef/d4/4340_prsn_nWs7s.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ef/d4/4340_prsn_nWs7s.jpg"
+                    },
+                    "short_summary": "横尾 まりは、日本の女性声優・ナレーター。シグマ・セブン所属。かつてはぷろだくしょんバオバブに在籍していた（1997年4月からシグマ・セブン）。東京都出身。\r\n\r\n劇団テアトル・エコーの養成所卒業後、外国映画の吹き替えやアニメ作品に多数出演。2005年に一新されるまで『ドラえもん』のスネ夫のママ役（2代目）を13年間担当した。語りでは鎌田弥恵に師事。槇大輔主宰の語座に2002年から2011年まで参加。シグマ・セブン声優養成所、読売日本テレビ文化センター大森、新浦安カルチャーセンターで講師として後進の指導をしている。「小説の読み語り」をライフワークとして取り組み、読み語りの公演を続けている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 125107,
+            "name": "ジロン・アモス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/52/50/125107_crt_dz78i.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/50/125107_crt_dz78i.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/50/125107_crt_dz78i.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/52/50/125107_crt_dz78i.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5367,
+                    "name": "大滝進矢",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6e/20/5367_prsn_cB60o.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/20/5367_prsn_cB60o.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/20/5367_prsn_cB60o.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6e/20/5367_prsn_cB60o.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

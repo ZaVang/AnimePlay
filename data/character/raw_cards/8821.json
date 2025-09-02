@@ -1,0 +1,52 @@
+{
+    "id": 8821,
+    "name": "桔梗",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bc/ea/8821_crt_jwj4n.jpg?r=1605587331",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/ea/8821_crt_jwj4n.jpg?r=1605587331",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/ea/8821_crt_jwj4n.jpg?r=1605587331",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bc/ea/8821_crt_jwj4n.jpg?r=1605587331"
+    },
+    "summary": "弓矢の名手で破魔矢で敵を浄化する。作中の戦国時代にある村では巫女を務めていた。楓の姉であり、日暮かごめの前世。死人。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "桔梗"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ききょう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kikyou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 38,
+        "collects": 300
+    },
+    "anime_ids": [
+        2784
+    ]
+}

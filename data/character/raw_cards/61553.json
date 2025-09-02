@@ -1,0 +1,64 @@
+{
+    "id": 61553,
+    "name": "古賀朋絵",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/06/d5/61553_crt_vvNRq.jpg?r=1540741344",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/d5/61553_crt_vvNRq.jpg?r=1540741344",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/d5/61553_crt_vvNRq.jpg?r=1540741344",
+        "grid": "https://lain.bgm.tv/pic/crt/g/06/d5/61553_crt_vvNRq.jpg?r=1540741344"
+    },
+    "summary": "小悪魔な後輩\r\n\r\n峰ヶ原高校の1年生。\r\n空気の読めるイマドキ女子高生だが、少しそそっかしいところがある。\r\n周りの目を気にして博多弁訛りを隠しているが、慌てたり、気を抜いたときには博多弁がでる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "古贺朋绘"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "古賀 朋絵"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こが ともえ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Koga Tomoe"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月23日"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        },
+        {
+            "key": "特技",
+            "value": "スマホの早打ち"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 23,
+    "stat": {
+        "comments": 47,
+        "collects": 227
+    },
+    "anime_ids": [
+        240038
+    ]
+}

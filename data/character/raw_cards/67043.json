@@ -1,0 +1,44 @@
+{
+    "id": 67043,
+    "name": "国宝憲吉",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ba/55/67043_crt_ZzZv3.jpg?r=1541254156",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/55/67043_crt_ZzZv3.jpg?r=1541254156",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/55/67043_crt_ZzZv3.jpg?r=1541254156",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ba/55/67043_crt_ZzZv3.jpg?r=1541254156"
+    },
+    "summary": "宪一、雪绘和宪二的的老爸。\r\n秃顶，矮子（年轻时ms身高很高）脾气暴躁，任性\r\n国宝家的一家之主，从事着园丁的工作。\r\n相貌威严（表面上而已啦），性格上也有很多缺点，对金钱有着非常强的执念。是个喜欢赌博赛马买彩票等歪门邪道的差劲父亲。\r\n经常随意的卖掉宪一的游戏机，从雪绘的家用里拿钱去买香烟（= =|||||）。\r\n前世是一亿三千万年前的蟑螂......\r\n经典台词：\r\n流氓不在身边心情愉快~~~流氓不在身边心情很愉快~~~",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "国宝宪吉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "こくほう けんきち"
+                },
+                {
+                    "k": "昵称",
+                    "v": "​​爸爸"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 0
+    },
+    "anime_ids": [
+        5927
+    ]
+}

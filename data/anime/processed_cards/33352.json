@@ -1,0 +1,152 @@
+{
+    "id": 33352,
+    "name": "爆漫王。3",
+    "image_path": "data/images/anime/33352.jpg",
+    "points": 8.3,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "ついに「週刊少年ジャック」での新連載『PCP』で、悲願の読者アンケート１位を勝ち取った真城最高と高木秋人。 しかし「亜城木夢叶」として大きく成長を遂げつづける二人を、かつてない試練が襲う！\r\n新たなライバルの出現、コンビ分裂の危機という困難と立ち向かい、宿命のライバル・新妻エイジとの対決は最高潮に！\r\n\r\n果たして「一番人気のマンガ家になってアニメ化」そして「その作品のヒロインを演じる亜豆と最高の結婚」という夢は実現できるのか！？\r\nマンガにかける青春を圧倒的な熱量で描ききる、シリーズ完結編！！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 25,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2012-10-06",
+    "rating_rank": 107,
+    "rating_score": 8.3,
+    "rating_total": 4746,
+    "main_character_ids": [
+        10498,
+        10499,
+        10502,
+        10504
+    ],
+    "main_characters": [
+        {
+            "id": 10498,
+            "name": "真城最高",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fb/32/10498_crt_2iEeS.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/32/10498_crt_2iEeS.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/32/10498_crt_2iEeS.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fb/32/10498_crt_2iEeS.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5015,
+                    "name": "阿部敦",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/36/ae/5015_prsn_2iZsa.jpg?r=1515335203",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/ae/5015_prsn_2iZsa.jpg?r=1515335203",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/ae/5015_prsn_2iZsa.jpg?r=1515335203",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/36/ae/5015_prsn_2iZsa.jpg?r=1515335203"
+                    },
+                    "short_summary": "阿部 敦（あべ あつし、1981年3月25日 - ）は、日本の声優、俳優、歌手。賢プロダクション所属。栃木県足利市出身。血液型はO型。身長161cm。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10499,
+            "name": "高木秋人",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/48/2a/10499_crt_qgh55.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/2a/10499_crt_qgh55.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/2a/10499_crt_qgh55.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/48/2a/10499_crt_qgh55.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4256,
+                    "name": "日野聡",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/91/df/4256_prsn_n9LHH.jpg?r=1422972401",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/df/4256_prsn_n9LHH.jpg?r=1422972401",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/df/4256_prsn_n9LHH.jpg?r=1422972401",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/91/df/4256_prsn_n9LHH.jpg?r=1422972401"
+                    },
+                    "short_summary": "经常带着眼镜的日野聪，不抽烟，喜欢口香糖和FRISK。\r\n美国出生东京长大。5岁之前生活在旧金山，当时使用着英语会话，但因为年幼的关系并没有清楚记得这样的事情。\r\n十几岁开始从属于儿童剧团。\r\n刚出道时主要是以西洋电影及电视系列剧的配音为主，直到灼眼的夏娜（坂井悠二）后，在日本动画方面的配音才多了起来。经常为J.C.STAFF、Geneon Entertainment制作的TV动画献声。其他方面、出演Square Enix的关联作品也很多。\r\n\r\n2015年1月11日，在博客宣布自己与声优·中岛沙树结婚的消息，目前育有一子。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10502,
+            "name": "亜豆美保",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5f/e9/10502_crt_zS9yB.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/e9/10502_crt_zS9yB.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/e9/10502_crt_zS9yB.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5f/e9/10502_crt_zS9yB.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4895,
+                    "name": "早見沙織",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522"
+                    },
+                    "short_summary": "幼儿园、小学、初中、高中就读于白百合学园，高中时转入都内高中就读。早稻田大学毕业。\r\n在小学4年级的时候知道了“声优”这职业，决心成为声优。\r\n2004年4月，中学1年级时进入日本播音演技研究所少年声优班学习。\r\n在少年声优班第二年的2006年3月，通过I'm Enterprise的选拔考试。第一次工作是《机械女仆》的Drama CD。之后在2007年透过《桃华月惮》动画出道。\r\n清脆的声音是其特征。演技幅度很广的实力派，从幼女到花样年华的少女、文静的角色到活泼的角色、而且还能演出少年角色动物角色。演出的不同角色之间的差别很大。此外歌唱力也有公认的评价。\r\n2008年4月起，因学业缘故，每周只到日本播音演技研究所上一次课。2008年10月3日，首次主持广播节目《ラジオどっとあい 早见沙织のぽじてぃ部〜Sweetsな放课後》。\r\n2015年4月21日，以TV动画《赤发白雪姬》的片头主题歌《やさしい希望》歌手出道。\r\n2016年，在第10回声优奖中获得助演女优奖。\r\n\r\n家庭构成是父亲、母亲。还饲养着兔子。喜欢看警察题材的电视剧，在广播中透露出是电视剧《相棒》系列的FANS。\r\n从4岁开始学弹钢琴，此外还学过绘画、游泳、网球等众多东西，不过唯一持续下来的是弹钢琴，体育类的基本都持续不久。在绘画方面，据说曾在小学生时参加亚洲大赛并获得金奖。\r\n小时候开始就很喜欢唱歌，据说和母亲一起坐车的时候总是跟着车上的播放机大声地唱歌，然后母亲经常会指导她说“刚才走调了”之类的。在爵士乐歌手的母亲的推荐下在中学时就开始学习唱爵士乐。\r\n性格非常稳健，待人很有礼貌。而且在演技上具有很高的意识和才能，在声优前辈和动画制作人员中也有很高的评价。据说同事务所的间岛淳司在收录现场看到刚出道没多久时候的早见时说“看来我们事务所将来也很安泰啊”。\r\n也有天然的一面，曾把洗面奶错当牙膏拿来刷牙，还曾在收录时背后的拉链没拉上就来到录音棚。\r\n与同事务所的山本麻里安一样，因为就读的学校禁止艺术类活动而转校，在声优与学业两付重担艰难前行。\r\n与悠木碧和东山奈央公私关系良好，交往密切。日高里菜曾表示过“超喜欢早见沙织”，两人私交甚密。\r\n在广播节目中有时会模仿黑柳彻子、安东尼奥·猪木、儿玉清等。在《鹡鸰女神》的广播节目《セキレイらじお》中模仿黑柳彻子的段子，并在《鹡鸰女神》DVD第6卷的OVA里被用来作恶搞。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10504,
+            "name": "見吉香耶",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f5/a5/10504_crt_a0TTx.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/a5/10504_crt_a0TTx.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/a5/10504_crt_a0TTx.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f5/a5/10504_crt_a0TTx.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4902,
+                    "name": "矢作紗友里",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f7/7c/4902_prsn_Zvmq8.jpg?r=1544724235",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/7c/4902_prsn_Zvmq8.jpg?r=1544724235",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/7c/4902_prsn_Zvmq8.jpg?r=1544724235",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f7/7c/4902_prsn_Zvmq8.jpg?r=1544724235"
+                    },
+                    "short_summary": "1986年9月22日に東京都で生まれた。その後、一時期青森県八戸市に住んでいたこともあった。子供の頃は「アニメって絵がしゃべっていると思っていたんですよ。」と本人が語っており、友達が声優の話をするまでは声優について全く知らなかったという。それでも中学時代に、るーちゃんという友達から「アニメみたいな声だね」と言われたのをきっかけに声優を志す。ただ学校に演劇部が無かったため、学校での部活動は父親の勧めに従いソフトボール部に入部した。なおソフトボールでのポジションはピッチャーとショートであった。2005年にテレビアニメ『かりん』の主人公「真紅果林」役で、声優としてデビュー。2015年1月31日、所属事務所の公式サイトにて、一般男性と入籍したことを発表した",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

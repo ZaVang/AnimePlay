@@ -1,0 +1,39 @@
+{
+    "id": 63579,
+    "name": "メロスの妹",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c0/f2/63579_crt_9VSf0.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/f2/63579_crt_9VSf0.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/f2/63579_crt_9VSf0.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c0/f2/63579_crt_9VSf0.jpg"
+    },
+    "summary": "結婚式を控える、メロスの妹。メロスは彼女のために自分の延命を申し出た。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "梅洛斯的妹妹"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        2882
+    ]
+}

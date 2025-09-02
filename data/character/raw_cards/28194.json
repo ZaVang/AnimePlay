@@ -1,0 +1,84 @@
+{
+    "id": 28194,
+    "name": "神崎蘭子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ad/90/28194_crt_bglvd.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/90/28194_crt_bglvd.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/90/28194_crt_bglvd.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ad/90/28194_crt_bglvd.jpg"
+    },
+    "summary": "拥有红色眼睛，银灰色长发，束著两条卷曲的双马尾的少女。\r\n平常以一身的歌德萝莉装束示人。\r\n中二性格，除了装扮出众之外，言行也极为独特，使用过度比喻或引用诗歌、文学、古语、外语等来构筑成她说话的句子，使人无法明白难以理解。因此游戏中她的说话后面，会用括号加入翻译成一般人的用语后的解释。\r\n第二届的灰姑娘大选第一位得主。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "神崎兰子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Ranko Kanzaki"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かんざき らんこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kanzaki Ranko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月8日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "体重",
+            "value": "41kg"
+        },
+        {
+            "key": "BWH",
+            "value": "81/57/80"
+        },
+        {
+            "key": "引用来源",
+            "value": "ピクシブ百科事典"
+        },
+        {
+            "key": "出身",
+            "value": "熊本県"
+        },
+        {
+            "key": "年龄",
+            "value": "14岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 8,
+    "stat": {
+        "comments": 41,
+        "collects": 164
+    },
+    "anime_ids": [
+        130231
+    ]
+}

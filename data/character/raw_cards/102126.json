@@ -1,0 +1,70 @@
+{
+    "id": 102126,
+    "name": "星野瑠美衣",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/71/cc/102126_crt_aJfCA.jpg?r=1674520085",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/cc/102126_crt_aJfCA.jpg?r=1674520085",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/cc/102126_crt_aJfCA.jpg?r=1674520085",
+        "grid": "https://lain.bgm.tv/pic/crt/g/71/cc/102126_crt_aJfCA.jpg?r=1674520085"
+    },
+    "summary": "本作的主人公。[mask]雨宫工作的医院里的患者，敬爱着星野爱的偶像宅少女，因星形细胞瘤去世，享年12岁。之后转生为爱的孩子，阿库亚的孪生妹妹。[/mask]母亲爱给予的名字是星野瑠美衣，和哥哥相对左眼遗传了母亲的星星。和阿库亚一样，在母亲的事务所出道。\r\n[mask]在幼儿时期就很早熟，和转生前一样的阿宅性格甚至让哥哥阿库亚敬而远之。和阿库亚相互了解对方也是转生者，但并未发觉相互的身份。[/mask]",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "星野瑠美衣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "沙利奈"
+                },
+                {
+                    "v": "さりな"
+                },
+                {
+                    "v": "ルビー"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "露比"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ほしの るびい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ruby"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 94,
+        "collects": 372
+    },
+    "anime_ids": [
+        386809,
+        443428
+    ]
+}

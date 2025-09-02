@@ -1,0 +1,87 @@
+{
+    "id": 4366,
+    "name": "石田雨竜",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/97/5f/4366_crt_LtiT2.jpg?r=1660568804",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/97/5f/4366_crt_LtiT2.jpg?r=1660568804",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/97/5f/4366_crt_LtiT2.jpg?r=1660568804",
+        "grid": "https://lain.bgm.tv/pic/crt/g/97/5f/4366_crt_LtiT2.jpg?r=1660568804"
+    },
+    "summary": "絶滅したはずの対虚退魔眷属「滅却師」（クインシー）の生き残り。一護のクラスメイトで死神代行消失篇より生徒会長を務める。弓状の武器を用い、一護達と一緒に戦う。\r\n\r\n一護の同級生。滅却師の数少ない末裔で、\r\n亡き祖父・宗弦を師と仰ぐ一方、\r\n滅却師に否定的な父・竜弦とは折り合いが悪い。\r\n死神を憎んでおり一護とも敵対していたが、\r\n一護との共闘を経て戦友となった。\r\n---\r\n黑崎一护的好友，灭却师",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "石田雨龙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "石田 雨竜"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いしだ うりゅう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ishida Uryuu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "11月6日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "171cm→177cm"
+        },
+        {
+            "key": "体重",
+            "value": "55kg→57kg"
+        },
+        {
+            "key": "家族",
+            "value": "石田宗弦（祖父・故人） 石田竜弦（父） 片桐叶絵（母・故人）"
+        },
+        {
+            "key": "主题歌",
+            "value": "Idioteque&quot;/Radiohead(「Kid A」収録)"
+        },
+        {
+            "key": "所属",
+            "value": "灭却师"
+        },
+        {
+            "key": "圣文字",
+            "value": "Antithesis（完全反立）"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 6,
+    "stat": {
+        "comments": 11,
+        "collects": 23
+    },
+    "anime_ids": [
+        302286,
+        412916,
+        457326,
+        1600
+    ]
+}

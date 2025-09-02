@@ -1,0 +1,56 @@
+{
+    "id": 19027,
+    "name": "涼子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0e/31/19027_crt_6Wc34.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/31/19027_crt_6Wc34.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/31/19027_crt_6Wc34.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0e/31/19027_crt_6Wc34.jpg"
+    },
+    "summary": "ナオたちの同級生。引っ込み思案な性格。大気にあこがれている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "凉子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "吉野凉子"
+                },
+                {
+                    "k": "日文名",
+                    "v": "吉野涼子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "よしの りょうこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yoshino Ryouko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 1
+    },
+    "anime_ids": [
+        2710
+    ]
+}

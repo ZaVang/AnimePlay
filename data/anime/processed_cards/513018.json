@@ -1,0 +1,89 @@
+{
+    "id": 513018,
+    "name": "小市民系列 第二季",
+    "image_path": "data/images/anime/513018.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "我想知道，所谓的恋爱究竟是什么。\r\n\r\n解除了互相帮助的「互惠关系」后，高二的小鸠和小佐内各自展开了新的生活。\r\n小佐内开始和新闻社一年级的瓜野交往。瓜野为了留下在学的证明，并向小佐内展现自己的优点，努力地想在校园报纸上报导市内发生的纵火事件。\r\n另一方面，小鸠也开始和同班仲丸交往。在平静地度过每一天时，小鸠在河边遭遇了纵火现场……。小鸠和小佐内作为小市民的重新出发，究竟会如何发展呢？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "推理",
+        "日常",
+        "小说改"
+    ],
+    "date": "2025-04-05",
+    "rating_rank": 1431,
+    "rating_score": 7.3,
+    "rating_total": 3312,
+    "main_character_ids": [
+        150623,
+        150624
+    ],
+    "main_characters": [
+        {
+            "id": 150623,
+            "name": "小鳩常悟朗",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8f/16/150623_crt_7xiao.jpg?r=1724765519",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/16/150623_crt_7xiao.jpg?r=1724765519",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/16/150623_crt_7xiao.jpg?r=1724765519",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8f/16/150623_crt_7xiao.jpg?r=1724765519"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 41073,
+                    "name": "梅田修一朗",
+                    "type": 2,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/dc/41073_prsn_ol77n.jpg?r=1633081644"
+                    },
+                    "short_summary": "梅田 修一朗（うめだ しゅういちろう、10月11日）は、日本の男性声優。千葉県出身。賢プロダクション所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 150624,
+            "name": "小佐内ゆき",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1a/22/150624_crt_suCuN.jpg?r=1724765521",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/22/150624_crt_suCuN.jpg?r=1724765521",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/22/150624_crt_suCuN.jpg?r=1724765521",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1a/22/150624_crt_suCuN.jpg?r=1724765521"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 40794,
+                    "name": "羊宮妃那",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f3/83/40794_prsn_4cu5z.jpg?r=1731846554",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/83/40794_prsn_4cu5z.jpg?r=1731846554",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/83/40794_prsn_4cu5z.jpg?r=1731846554",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f3/83/40794_prsn_4cu5z.jpg?r=1731846554"
+                    },
+                    "short_summary": "資格・免許：剣道初段\r\n趣味：描画、読書、映画鑑賞、音楽鑑賞、アコースティックギター弾き語り\r\n特技：ダンス\r\n方言：関西弁",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

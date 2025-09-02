@@ -1,0 +1,39 @@
+{
+    "id": 19916,
+    "name": "わたし",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/45/4c/19916_crt_DkS5W.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/4c/19916_crt_DkS5W.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/4c/19916_crt_DkS5W.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/45/4c/19916_crt_DkS5W.jpg"
+    },
+    "summary": "本作主角。故事以主角的第一人称进行。京都大学三级学生。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "我"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 29,
+        "collects": 113
+    },
+    "anime_ids": [
+        4019
+    ]
+}

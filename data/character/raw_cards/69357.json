@@ -1,0 +1,56 @@
+{
+    "id": 69357,
+    "name": "アリエス・スプリング",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/88/80/69357_crt_N70LA.jpg?r=1553259132",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/80/69357_crt_N70LA.jpg?r=1553259132",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/80/69357_crt_N70LA.jpg?r=1553259132",
+        "grid": "https://lain.bgm.tv/pic/crt/g/88/80/69357_crt_N70LA.jpg?r=1553259132"
+    },
+    "summary": "一度見たものを完全に覚えられる映像記憶能力を持つ少女。\r\n生まれつきのオッドアイ。\r\n朗らかな天然娘で、何かと言い間違いが多い。\r\n食べること、笑うこと、寝ることが大好き。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "白羊·春"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Aries Spring"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月20日"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "体重",
+            "value": "52kg"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 20,
+    "stat": {
+        "comments": 24,
+        "collects": 28
+    },
+    "anime_ids": [
+        273877
+    ]
+}

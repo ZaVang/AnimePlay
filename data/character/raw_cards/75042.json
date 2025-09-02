@@ -1,0 +1,36 @@
+{
+    "id": 75042,
+    "name": "シャロン・パブリン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/eb/d0/75042_crt_UgGnN.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/d0/75042_crt_UgGnN.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/d0/75042_crt_UgGnN.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/eb/d0/75042_crt_UgGnN.jpg"
+    },
+    "summary": "11歳。女子。クレアド星出身。血液型はB型。赤毛。男の子のような風貌で、一人称は「オレ」。開けっぴろげでマイペース。協調性に欠ける上に人が困る事をしても悪びれず、窘められると逆に怒り出す。その為、当初は他の子供たちとトラブルを起こすこともままあったが、根が明るく憎めない性格のため、深刻な事態になることはほとんどない。ケンツにはいつもちょっかいを出してからかっているが、気配りも見せる。がさつな彼女を嫌っていたペンチとも、とある事件をきっかけに仲良くなる。イチゴ柄のパンティーを愛用。ジャンク品工作が得意で、手先の器用さを活かしたエピソードが多い。直接戦闘に絡むことは稀だが、砲手として敵ARVを撃墜したこともある。ククト星でケンツがガイの人質に取られた際、一番怒りを見せたのも彼女で、大岩を持ち上げたりバズーカでギブルを撃破している。なおシャロン曰く、母親（ミシェルパブリン）は「ちいっとは名のあるスペースダンサー（踊り娘）」らしい。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "SHALON PUBLIN"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        37295
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": 13297,
+    "name": "ララ・ルゥ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c2/84/13297_crt_cao9e.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/84/13297_crt_cao9e.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/84/13297_crt_cao9e.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c2/84/13297_crt_cao9e.jpg"
+    },
+    "summary": "外見は幼い少女だが、ペンダントを用いて水を操る、人間では無い何か伝説的な存在。普段は寡黙に徹している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "拉拉·露"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Lala Ru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 27,
+        "collects": 29
+    },
+    "anime_ids": [
+        4075
+    ]
+}

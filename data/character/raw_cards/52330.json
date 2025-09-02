@@ -1,0 +1,49 @@
+{
+    "id": 52330,
+    "name": "エルメス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/cd/7e/52330_crt_Z0T18.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/7e/52330_crt_Z0T18.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/7e/52330_crt_Z0T18.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cd/7e/52330_crt_Z0T18.jpg"
+    },
+    "summary": "声 - 相ヶ瀬龍史 / 斉藤壮馬 / 野田順子（ラジオドラマ）\r\n摩托车，是由当时经过大人之国的旅行者“奇诺”修理而成。会说话，知识渊博，但不能自己移动。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "汉密斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "艾鲁梅斯"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Hermes"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Erumesu"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 9,
+        "collects": 39
+    },
+    "anime_ids": [
+        1948,
+        211068
+    ]
+}

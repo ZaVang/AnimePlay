@@ -1,0 +1,31 @@
+{
+    "id": 188,
+    "name": "ココペリ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9d/cb/188_8e0137649590b755372b040afad_Rq2ea.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9d/cb/188_8e0137649590b755372b040afad_Rq2ea.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9d/cb/188_8e0137649590b755372b040afad_Rq2ea.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9d/cb/188_8e0137649590b755372b040afad_Rq2ea.jpg"
+    },
+    "summary": "ココペリ\r\nUNKNOWN\r\n(声：東地宏樹）",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 1
+    },
+    "anime_ids": [
+        467
+    ]
+}

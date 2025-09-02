@@ -1,0 +1,100 @@
+{
+    "id": 23104,
+    "name": "藤宮香織",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1e/90/23104_crt_meZBn.jpg?r=1396926816",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/90/23104_crt_meZBn.jpg?r=1396926816",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/90/23104_crt_meZBn.jpg?r=1396926816",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1e/90/23104_crt_meZBn.jpg?r=1396926816"
+    },
+    "summary": "本作女主角，高中二年级，与祐树同班。由于“亲近之人的记忆一周后就会消失”的原因，所以不敢结交朋友而逃避人群。擅长数学。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藤宫香织"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "藤宮 香織"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ふじみや かおり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fujimiya Kaori"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月1日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "161.4cm"
+        },
+        {
+            "key": "体重",
+            "value": "47kg"
+        },
+        {
+            "key": "足长",
+            "value": "20.0cm"
+        },
+        {
+            "key": "家庭构成",
+            "value": "父、母"
+        },
+        {
+            "key": "擅长的科目",
+            "value": "数学"
+        },
+        {
+            "key": "不擅长的科目",
+            "value": "世界史"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "朋友"
+        },
+        {
+            "key": "讨厌的东西",
+            "value": "虫"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "日式蒸蛋"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "无"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 1,
+    "stat": {
+        "comments": 18,
+        "collects": 141
+    },
+    "anime_ids": [
+        88493
+    ]
+}

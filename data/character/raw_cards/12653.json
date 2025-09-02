@@ -1,0 +1,52 @@
+{
+    "id": 12653,
+    "name": "渡久地東亜",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b5/62/12653_crt_ZFeue.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/62/12653_crt_ZFeue.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/62/12653_crt_ZFeue.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b5/62/12653_crt_ZFeue.jpg"
+    },
+    "summary": "　　《ONE OUTS~Nobody wins but I!（超智游戏）》的主角，赌徒，原埼京彩珠Lycaons队员，投手， 右投右打，背号77号。棒球场上鬼一般的男人。\r\n　　年龄：目测约20岁左右（队友曾说过：“不到20岁的小孩······”）。\r\n　　一头金发, 受到儿岛的邀请而加入不受看好的Lycaons队。球速平均时速约120KM（最快128km）, 只会投直球和低旋转球（高旋转球也会）（高见曾说“他会投所有种类的直球）, 但控球能力相当稳定, 他最强的武器是能看穿人心, 并使其动摇, 让场面转向对自己有利的局面。\r\n　　渡久地与球队老板彩川订下“One Outs”契约, 当他站上投手丘的时候, 每让一名对手出局, 就必需支付他500万日元的薪水, 相反的, 只要在他手上失去一分, 他就支付球队老板5000万日元。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "渡久地东亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "TOA TOKUCHI"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "7月7日"
+        },
+        {
+            "key": "声优",
+            "value": "萩原聖人"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 7,
+    "stat": {
+        "comments": 14,
+        "collects": 51
+    },
+    "anime_ids": [
+        1038
+    ]
+}

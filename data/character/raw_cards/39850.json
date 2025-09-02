@@ -1,0 +1,95 @@
+{
+    "id": 39850,
+    "name": "ライオス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/52/38/39850_crt_2z8Hh.jpg?r=1708671566",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/38/39850_crt_2z8Hh.jpg?r=1708671566",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/38/39850_crt_2z8Hh.jpg?r=1708671566",
+        "grid": "https://lain.bgm.tv/pic/crt/g/52/38/39850_crt_2z8Hh.jpg?r=1708671566"
+    },
+    "summary": "人类男性，身穿铠甲的战士，本作主角。为了拯救被炎龙吞食、尚未消化完毕的妹妹而重返迷宫。\r\n对于迷宫魔物的喜好从想知道其外观、生态甚至是它们吃起来的味道相当执著，有珍藏着一本“迷宫美食指南”。菜鸟时期被移动铠甲刺死，此后长时间对铠甲有阴影；现在则是对其执著到想把铠甲给吃了。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莱欧斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "莱欧斯·图丁"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Laius"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ライオス・トーデン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Laios Touden"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "11月26日"
+        },
+        {
+            "key": "身高",
+            "value": "185cm左右"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki、公式书"
+        },
+        {
+            "key": "BMI",
+            "value": "26"
+        },
+        {
+            "key": "年龄",
+            "value": "26岁"
+        },
+        {
+            "key": "人种",
+            "value": "长身人"
+        },
+        {
+            "key": "出生地区",
+            "value": "北方大陆"
+        },
+        {
+            "key": "家族成员",
+            "value": "父亲、母亲、妹妹（法琳）"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "牛奶制品"
+        },
+        {
+            "key": "不喜欢的食物",
+            "value": "头足类"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 26,
+    "stat": {
+        "comments": 64,
+        "collects": 94
+    },
+    "anime_ids": [
+        395378
+    ]
+}

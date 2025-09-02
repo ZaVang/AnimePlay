@@ -1,0 +1,35 @@
+{
+    "id": 16726,
+    "name": "マロミ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0e/78/16726_crt_LeY55.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/78/16726_crt_LeY55.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/78/16726_crt_LeY55.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0e/78/16726_crt_LeY55.jpg"
+    },
+    "summary": "月子が考案したキャラクター。物語の中で異常と言える程の人気を獲得する。月子が所有する人形は月子の前でのみ話を交わし、月子に様々な助言を与える。月子が昔飼っていた犬の名と同じ名前を持つ",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "麻洛美"
+        },
+        {
+            "key": "别名",
+            "value": []
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 8,
+        "collects": 8
+    },
+    "anime_ids": [
+        843
+    ]
+}

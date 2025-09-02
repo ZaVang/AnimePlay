@@ -1,0 +1,53 @@
+{
+    "id": 13207,
+    "name": "葵・トーリ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2a/e4/13207_crt_q3Ofy.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/e4/13207_crt_q3Ofy.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/e4/13207_crt_q3Ofy.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2a/e4/13207_crt_q3Ofy.jpg"
+    },
+    "summary": "男主角，总长兼学生会会长兼武藏副王，是葵·喜美的弟弟。\r\n具备独特的人望，无论在敌人还是朋友中都惹人注目。\r\n为支配各地将“教导院”进行政治军事替换所选出来的能力最低，“暂时”没啥能耐的人，被称为“不可能男”。上位契约后拥有“全能力任意对象传播术式”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "葵·托利"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Tori Aoi"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あおい・トーリ"
+                },
+                {
+                    "k": "昵称",
+                    "v": "“不可能男” / 「インポッシブル」"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 12,
+        "collects": 45
+    },
+    "anime_ids": [
+        29307,
+        12703
+    ]
+}

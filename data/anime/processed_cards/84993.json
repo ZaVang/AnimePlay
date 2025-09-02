@@ -1,0 +1,23 @@
+{
+    "id": 84993,
+    "name": "鲁邦三世 宝物返还大作战",
+    "image_path": "data/images/anime/84993.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "ルパンの旧友でライバルだった老泥棒マークの遺言に従い、マークが生前盗んだ6つのお宝を返却することになったルパンたち。期限は7日間。無事返却を終えれば、光を完全に吸収し内部で反射し続けるというアントニオ・ガウディにちなんだお宝\"トリックダイヤ\"を手に入れられるというが……。トリックダイヤをめぐるマフィアの首領・ラッツ一味との攻防、その結末とは？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2003-08-01",
+    "rating_rank": 1793,
+    "rating_score": 7.2,
+    "rating_total": 105,
+    "main_character_ids": [],
+    "main_characters": []
+}

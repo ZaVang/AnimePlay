@@ -1,0 +1,35 @@
+{
+    "id": 47560,
+    "name": "おまさ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/25/3b/47560_crt_63t6z.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/3b/47560_crt_63t6z.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/3b/47560_crt_63t6z.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/25/3b/47560_crt_63t6z.jpg"
+    },
+    "summary": "平蔵を慕う女密偵。かつて盗賊「狐火」の一味として盗みを働いていたが、ある時平蔵に助けられたことがあり、その恩義から今は密偵として平蔵に仕えている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 2
+    },
+    "anime_ids": [
+        191523
+    ]
+}

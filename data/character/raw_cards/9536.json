@@ -1,0 +1,53 @@
+{
+    "id": 9536,
+    "name": "珊瑚",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fd/ad/9536_crt_XeBVf.jpg?r=1605585635",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/ad/9536_crt_XeBVf.jpg?r=1605585635",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/ad/9536_crt_XeBVf.jpg?r=1605585635",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fd/ad/9536_crt_XeBVf.jpg?r=1605585635"
+    },
+    "summary": "年齡16歲，出身於一個驅魔師家族。衣服裡藏有各式的除妖武器及藥物，武器是一個用妖怪骨頭打製成的超大型迴力鏢飛來骨以及配戴的武士刀。\r\n    由於父親及同伴們因為任務中不慎因為奈落的詭計而被其受操縱的弟弟琥珀給殺害，琥珀自己亦中箭喪命，就連驅魔師村莊裡的村民也被奈落唆使的妖怪給殺害，因此成為驅魔師中唯一的倖存者。更被奈落用計誤以為犬夜叉是滅族仇人，在了解所有的實情後，為了找奈落報仇及拯救被操縱的弟弟琥珀，成為犬夜叉他們的同伴。在一路上收集四魂之玉的途中和彌勒之間互相發展出了情愫，為了壓制住他的花心費了很多苦工，最後與彌勒結婚，育有兩女（雙胞胎）、一子。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "珊瑚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "さんご"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sango"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 59
+    },
+    "anime_ids": [
+        2784,
+        2785
+    ]
+}

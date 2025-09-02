@@ -1,0 +1,35 @@
+{
+    "id": 90500,
+    "name": "チョコ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/80/c0/90500_crt_PzCCT.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/c0/90500_crt_PzCCT.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/c0/90500_crt_PzCCT.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/80/c0/90500_crt_PzCCT.jpg"
+    },
+    "summary": "爽やかでおしとやか、かと思いきや力強くて身体能力に特化した一面も。綺麗好きでオシャレにも気を遣っている。いつかNo１の高級モルカーになることが夢。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "引用来源",
+            "value": "https://molcar-anime.com/"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        325178
+    ]
+}

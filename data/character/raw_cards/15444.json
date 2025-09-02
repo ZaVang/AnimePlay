@@ -1,0 +1,35 @@
+{
+    "id": 15444,
+    "name": "シロクマ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/15/f4/15444_crt_5qM0V.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/f4/15444_crt_5qM0V.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/f4/15444_crt_5qM0V.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/15/f4/15444_crt_5qM0V.jpg"
+    },
+    "summary": "カフェのマスター。経営手腕に長け、店の経営を軌道に乗せている。会話の最中に駄洒落を連発して周囲を煙に巻いたり、作り話でパンダやグリズリーを担ぐなど、人を喰った性格が垣間見えることもしばしば。当人（熊）が語るところに拠れば、カナダのハドソン湾で三つ子の末っ子として生まれ、生後すぐに母親や兄弟と生き別れとなり、流氷に乗って漂流した末に食堂を営む人間の夫妻に育てられたというが、それが真実であるとすると、グリズリーと幼馴染であることの整合性が取れないこと、また、雑誌のインタビューで「建設会社を脱サラして開業した」と語っていることから、この経歴も上述の虚言癖の好例であることが窺える。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "白熊"
+        },
+        {
+            "key": "别名",
+            "value": []
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 10,
+        "collects": 60
+    },
+    "anime_ids": [
+        32318
+    ]
+}

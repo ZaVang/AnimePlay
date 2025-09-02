@@ -1,0 +1,48 @@
+{
+    "id": 86314,
+    "name": "ポップ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3e/af/86314_crt_SgX5x.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/af/86314_crt_SgX5x.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/af/86314_crt_SgX5x.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3e/af/86314_crt_SgX5x.jpg"
+    },
+    "summary": "アバンのもとで修業している魔法使いの少年。厳しい課題を与えられるとすぐに諦めてしまったり、強い敵を前にすると逃げ出そうとしたりと、臆病で情けないところがある。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "波普"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Popp"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://dq-dai.com/character"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 9
+    },
+    "anime_ids": [
+        296980
+    ]
+}

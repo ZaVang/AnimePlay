@@ -1,0 +1,89 @@
+{
+    "id": 8402,
+    "name": "吊带袜天使",
+    "image_path": "data/images/anime/8402.jpg",
+    "points": 8.0,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "在天堂和地狱的裂缝之间有一座城市—堕天城（Daten City），在那里人们一直饱受“恶灵（Ghost）”的袭击。\r\n腐蚀人心的黑暗，至今仍在悄悄地侵蚀这个城市，有人正试图以超自然力，消灭这些由欲望产生的恶灵，担负了这驱逐黑暗的使命。\r\n因行为不检而被踢出天堂的天使姐妹——Panty与Stocking，必须在Garterbelt的指示下歼灭恶灵，并得到代表功绩的天堂金币（Heaven Coins）作为回报，达成目标即可回到天堂。\r\n然而天使姐妹对在堕天使城的日常生活，显然有相当程度的病态兴趣……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "战斗"
+    ],
+    "date": "2010-10-01",
+    "rating_rank": 232,
+    "rating_score": 8.0,
+    "rating_total": 11455,
+    "main_character_ids": [
+        10486,
+        10488
+    ],
+    "main_characters": [
+        {
+            "id": 10486,
+            "name": "Panty",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/56/02/10486_crt_OdRcR.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/02/10486_crt_OdRcR.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/02/10486_crt_OdRcR.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/56/02/10486_crt_OdRcR.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4909,
+                    "name": "小笠原亜里沙",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c4/54/4909_prsn_Oet23.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/54/4909_prsn_Oet23.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/54/4909_prsn_Oet23.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c4/54/4909_prsn_Oet23.jpg"
+                    },
+                    "short_summary": "小笠原 亜里沙（おがさわら ありさ、1980年9月30日 - ）は、日本の女優、声優、ナレーター。\r\n東京都出身。劇団ひまわり青年部に所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10488,
+            "name": "Stocking",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c1/b0/10488_crt_jjXcu.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/b0/10488_crt_jjXcu.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/b0/10488_crt_jjXcu.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c1/b0/10488_crt_jjXcu.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4769,
+                    "name": "伊瀬茉莉也",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320"
+                    },
+                    "short_summary": "小时候非常喜欢宫崎骏先生的作品，比如《风之谷》什么的，看了很多遍把录像带磨坏了。大约小学3年级左右，看了《幽灵公主》之后非常希望能够加入到里面，做出能让人感动的作品。那个时候光看这部动画就去了电影院8次，一开始是想当监督，后来偶然地有配音机会，便开始走上声优的道路。\r\n一开始父母强烈反对，后来茉莉也对他们描绘了心中的梦想，用“这是我必须去做的事”和“学费自己来付”说服了他们。那时拿出了从小学开始存的压岁钱【好心痛～（笑）】。一开始非常困难，一边要上学一边又要去2小时车程以外的培训中心，但是靠毅力坚持下来之后父母也开始变得支持了，后来嘛，就好了。\r\n第一次工作是在16岁那年，在动画片《愛してるぜベイベ★★》中饰演一个路人角色，台词也只有一两句，但那个时候紧张得不行，拿着剧本的手一直在发抖。后来在比较广为人知的《虫师》中配小孩子的声音，慢慢地工作就多了起来。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

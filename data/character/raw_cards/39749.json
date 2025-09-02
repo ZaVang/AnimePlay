@@ -1,0 +1,48 @@
+{
+    "id": 39749,
+    "name": "ココナ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8d/cc/39749_crt_x0X82.jpg?r=1610523594",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/cc/39749_crt_x0X82.jpg?r=1610523594",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/cc/39749_crt_x0X82.jpg?r=1610523594",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8d/cc/39749_crt_x0X82.jpg?r=1610523594"
+    },
+    "summary": "与奶奶一起生活的国中二年级少女。成绩优秀，是班上的班长。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "可可娜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Kokona"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 14,
+        "collects": 130
+    },
+    "anime_ids": [
+        174584
+    ]
+}

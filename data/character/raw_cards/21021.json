@@ -1,0 +1,52 @@
+{
+    "id": 21021,
+    "name": "安達桜",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f3/a1/21021_crt_avZXe.jpg?r=1603007626",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/a1/21021_crt_avZXe.jpg?r=1603007626",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/a1/21021_crt_avZXe.jpg?r=1603007626",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f3/a1/21021_crt_avZXe.jpg?r=1603007626"
+    },
+    "summary": "经常逃课的高一学生，\r\n头发乌黑、身材苗条的美人。\r\n在中华料理屋打工。\r\n在体育馆的二楼与同样在逃课的岛村相遇，\r\n在接触中对岛村的感情开始变化。\r\n不太擅长应对父母以及与人交往。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "安达樱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あだち さくら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Adachi Sakura"
+                },
+                {
+                    "k": "昵称",
+                    "v": "安达"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 52,
+        "collects": 319
+    },
+    "anime_ids": [
+        282372
+    ]
+}

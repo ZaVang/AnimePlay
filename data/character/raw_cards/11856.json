@@ -1,0 +1,69 @@
+{
+    "id": 11856,
+    "name": "風見一姫",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e9/f4/11856_crt_0XzmQ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/f4/11856_crt_0XzmQ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/f4/11856_crt_0XzmQ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e9/f4/11856_crt_0XzmQ.jpg"
+    },
+    "summary": "風見雄二的姐姐。\r\n在学术和美术的领域里有着罕见的知识和才能，其毫无忌讳的言行让周围的人感到畏惧和避忌，温柔与严厉兼备的天才少女。\r\n经常一脸不高兴，再加上有点呆滞的眼神是她的特征，但其实是脑袋里容纳着永不间断思考的复数人格：胆小的一姫、攻击性的一姫、冷静的一姫、小孩子般的一姫、贪心的一姫、男生一样的一姫、好色的一姫、忧郁的一姫、爱吃醋的一姫。就是由这些幻想人格一起商量而决定自身的行动，才会在总体上形成这样一个“不耐烦的一姫”。\r\n\r\n有着强烈的看不起别人的倾向，不会以扭曲自己的意愿的方式来迎合别人，只会去选能够与自己这幅拼图相吻合的拼图碎块，但对于作为例外的弟弟風見雄二却会用超越常规的“甜”来对待他。\r\n在数年前发生的『滝園学園マイクロバス転落事故』中，被确认死亡。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "风见一姬"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "風見 一姫"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かざみ かずき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kazami Kazuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月22日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        },
+        {
+            "key": "BWH",
+            "value": "76(A)/57/78"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 22,
+    "stat": {
+        "comments": 86,
+        "collects": 565
+    },
+    "anime_ids": [
+        130234,
+        121187
+    ]
+}

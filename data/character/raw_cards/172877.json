@@ -1,0 +1,43 @@
+{
+    "id": 172877,
+    "name": "アチゲータ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/38/53/172877_crt_t6RMy.jpg?r=1742095033",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/53/172877_crt_t6RMy.jpg?r=1742095033",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/53/172877_crt_t6RMy.jpg?r=1742095033",
+        "grid": "https://lain.bgm.tv/pic/crt/g/38/53/172877_crt_t6RMy.jpg?r=1742095033"
+    },
+    "summary": "炙烫鳄是罗伊收服的第一只宝可梦。\r\n\r\n炙烫鳄在还是呆火鳄时就十分崇拜弗里德的喷火龙，经常呆在瞭望室等待喷火龙回来。起初来到英勇浅葱号也是为了能够和喷火龙在一起。\r\n\r\n在还是呆火鳄的时候，它非常喜欢唱歌。起初它唱歌时在被人发现后经常会害羞地跑开，但之后逐渐不再害怕。它在听到振奋的歌声时会精神抖擞、提升士气。\r\n\r\n比较贪吃，在进化后，它贪吃的个性依然没有变。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "罗伊的炙烫鳄"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "雄性"
+        },
+        {
+            "key": "特性",
+            "value": "猛火"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        411247
+    ]
+}

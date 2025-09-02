@@ -1,0 +1,45 @@
+{
+    "id": 69821,
+    "name": "クヌート",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/36/d7/69821_crt_RAIBu.jpg?r=1556102282",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/d7/69821_crt_RAIBu.jpg?r=1556102282",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/d7/69821_crt_RAIBu.jpg?r=1556102282",
+        "grid": "https://lain.bgm.tv/pic/crt/g/36/d7/69821_crt_RAIBu.jpg?r=1556102282"
+    },
+    "summary": "デンマーク王位継承権第二位の王子。\r\n政権争いの過酷な王家の中で育ってきたため大変憶病で、お付きのラグナル以外とは口をきかない。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "克努特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Canute"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 30,
+        "collects": 43
+    },
+    "anime_ids": [
+        240386,
+        296739
+    ]
+}

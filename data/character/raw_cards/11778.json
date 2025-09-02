@@ -1,0 +1,60 @@
+{
+    "id": 11778,
+    "name": "高須竜児",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/51/55/11778_crt_a1hG5.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/55/11778_crt_a1hG5.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/55/11778_crt_a1hG5.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/51/55/11778_crt_a1hG5.jpg"
+    },
+    "summary": "男主角。16岁，就读于2年C班。金牛座。由于遗传到爸爸的凶恶眼神，常常被误认为不良少年，因此本人十分讨厌自己的长相，而其个性则是一个普通的认真少年。得意的技能是料理，也十分擅长裁缝，但爱干净到神经质的程度，清扫时会一边碎碎念。暗恋同班同学栉枝实乃梨，但是也不吝惜照顾大河。饲养一只名为“小鹦”的鹦鹉，并与母亲高须泰子和逢坂大河生活。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高须龙儿"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "高須 竜児"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たかす りゅうじ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takasu Ryuji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia.org"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 18,
+        "collects": 141
+    },
+    "anime_ids": [
+        909
+    ]
+}

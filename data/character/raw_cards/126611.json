@@ -1,0 +1,61 @@
+{
+    "id": 126611,
+    "name": "院田唐音",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/cb/9e/126611_crt_084B0.jpg?r=1702801741",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cb/9e/126611_crt_084B0.jpg?r=1702801741",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cb/9e/126611_crt_084B0.jpg?r=1702801741",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cb/9e/126611_crt_084B0.jpg?r=1702801741"
+    },
+    "summary": "恋太郎の彼女の一人。「○○じゃないんだからね！」が口癖の全方位ツンデレ少女。強気で素直になれない性格だが、姉御肌で頼りがいがある。常識人枠でツッコミ担当にまわることが多いものの、意外と打たれ弱い一面も。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "院田唐音"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "院田 唐音"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いんだ からね"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Inda Karane"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月9日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://hyakkano.com/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 9,
+    "stat": {
+        "comments": 101,
+        "collects": 312
+    },
+    "anime_ids": [
+        471793,
+        424379
+    ]
+}

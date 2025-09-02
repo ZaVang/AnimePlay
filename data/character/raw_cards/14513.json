@@ -1,0 +1,44 @@
+{
+    "id": 14513,
+    "name": "小野沢悠貴",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/38/5c/14513_crt_LkxpO.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/5c/14513_crt_LkxpO.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/5c/14513_crt_LkxpO.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/38/5c/14513_crt_LkxpO.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小野泽悠贵"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Onozawa Yuuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 12
+    },
+    "anime_ids": [
+        1743
+    ]
+}

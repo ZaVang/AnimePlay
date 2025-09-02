@@ -1,0 +1,88 @@
+{
+    "id": 1965,
+    "name": "英国恋物语艾玛 第二幕",
+    "image_path": "data/images/anime/1965.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "艾玛独自坐上了往异乡的火车，企图逃避掉自己对威廉的感情。在新主人莫德尔斯家又遇到了新的麻烦……艾玛能否最终突破重重阻碍与威廉在一起呢？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2007-04-16",
+    "rating_rank": 1851,
+    "rating_score": 7.2,
+    "rating_total": 200,
+    "main_character_ids": [
+        4061,
+        4062
+    ],
+    "main_characters": [
+        {
+            "id": 4061,
+            "name": "エマ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f3/a3/4061_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/a3/4061_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/a3/4061_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f3/a3/4061_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3938,
+                    "name": "冬馬由美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4e/d0/3938_prsn_oHe1h.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/d0/3938_prsn_oHe1h.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/d0/3938_prsn_oHe1h.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4e/d0/3938_prsn_oHe1h.jpg"
+                    },
+                    "short_summary": "冬馬由美（1966年12月20日－），本名吉田由美（旧姓中川），是日本昭和末期至平成時期的声優。所屬事務所為青二Production。千葉縣出身。與小山茉美一樣擁有「七色之聲」的美稱。丈夫是東映製片人吉田龍也。\r\n       冬马高中2年级（约1984年）开始，从周日班进入经纪公司青二Production旗下声优养成学校青二塾。1986年，冬马她以青二塾东京校第6期学生的身份加入青二Production。\r\n　　1986年以电视动画《龙珠》（从第28话的天下第一武道会篇开始）帮小角色配音而出道。并从同年开始播出的另一部电视动画《圣斗士星矢》是冬马自身第一次给主要角色配音。\r\n       冬马由美从1988年电视动画《变形金刚之隐者战士》主角刚秀太开始，经常为少年角色配音。到了1990年发行的OVA《罗德斯岛战记》为作品女主角蒂德莉特配音时，成为她为女性角色配音的契机。在那之后，冬马由美为女主角和女性要角的配音机会增加。\r\n　　近年来冬马由美除了从事配音工作之外，另外还广泛展开原作者和作家的活动。在这之中她曾经为自己演的作品《我的女神》写过同名小说。\r\n　　2004年1月15日为筹备个人事务所ALLURE&Y的成立，冬马也开始投入小说的执笔等等配音事业以外的活动。2008年12月，离开长年所属的青二Prodoction。次年2009年1月起，正式成为有限公司ALLURE&Y 所属。\r\n       并同时启动声优部门。2012年7月1日，身为旁白的商业合作伙伴，开始与yamadax 合作。\r\n　　冬马由美当初出道于配音业界时，大多为不同个性的少年配音，不过她很想配演少年之外的角色，并表示自己能像野泽雅子和田中真弓那样将少年角色的演技能发挥到极致之下持续参加配音工作。直到为OVA《罗德斯岛战记》作品女主角蒂德莉特配音却成为转机，这也是她本身也意想不到的事。\r\n　　除此之外，她也曾经配过猫等等动物的叫声，如1995年电视动画《不可思议的游戏》的玉，及2002年短篇电影动画《皮卡皮卡的星空露营》的皮丘等等。而在录制《我的女神 歌唱指导座谈会CD》时，她在录音前曾直接当面喊“喵”一声。前面也提到，她表示自己相当喜欢声演动物的角色。\r\n　　除了参加动画或游戏配音之外，冬马由美还有参加许多海外电视剧或电影的日语配音。在电影方面，曾多次过担任韩国女演员金荷娜主演或参演作品。电视剧集方面，曾在长寿影集《圣女魔咒》为主角哈里威3姊妹中的二姐派普进行日语配音。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 4062,
+            "name": "ウィリアム・ジョーンズ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a7/6d/4062_crt_anidb.jpg?r=1403825416",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/6d/4062_crt_anidb.jpg?r=1403825416",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/6d/4062_crt_anidb.jpg?r=1403825416",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a7/6d/4062_crt_anidb.jpg?r=1403825416"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10577,
+                    "name": "川島得愛",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c8/86/10577_prsn_QWlcW.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/86/10577_prsn_QWlcW.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/86/10577_prsn_QWlcW.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c8/86/10577_prsn_QWlcW.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "id": 361095,
+    "name": "黄金神威 第四季",
+    "image_path": "data/images/anime/361095.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "杉元とアシㇼパの新たな旅が始まる!!\r\nアイヌから奪われた金塊を巡る生存競争サバイバル、新章開幕ッッ!!!\r\n極寒の地・樺太で「不死身の杉元」こと杉元佐一とアイヌの少女・アシㇼパが再会を果たした後、キロランケの死に直面したアシㇼパが金塊の謎を解く鍵を思い出し、杉元とアシㇼパの間で相棒の契約も更新されるに至った。だが、杉元が第七師団の支配下にある状況に変わりはない。アシㇼパ確保の報を受けた鶴見中尉との対峙が迫る中、共に過酷な旅を生き抜いた白石由竹、谷垣源次郎、月島軍曹、鯉登少尉は各々の目的や役目に従ってどのように動くのか？ 一方、第七師団と金塊の争奪戦を繰り広げる新撰組「鬼の副長」土方歳三の一味は、引き続き残った刺青人皮の捜索を継続。さらに、杉元らの前から姿を消した尾形百之助の存在も情勢に影響を及ぼす可能性を秘める。北の大地を舞台に再び加熱していく一攫千金サバイバルの行方から目が離せない！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗",
+        "冒险"
+    ],
+    "date": "2022-10-03",
+    "rating_rank": 609,
+    "rating_score": 7.7,
+    "rating_total": 1628,
+    "main_character_ids": [
+        56511,
+        56512
+    ],
+    "main_characters": [
+        {
+            "id": 56511,
+            "name": "杉元佐一",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/68/28/56511_crt_LrYrl.jpg?r=1569906281",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/28/56511_crt_LrYrl.jpg?r=1569906281",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/28/56511_crt_LrYrl.jpg?r=1569906281",
+                "grid": "https://lain.bgm.tv/pic/crt/g/68/28/56511_crt_LrYrl.jpg?r=1569906281"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 31823,
+                    "name": "小林親弘",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/25/7b/31823_prsn_00ZN3.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/7b/31823_prsn_00ZN3.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/7b/31823_prsn_00ZN3.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/25/7b/31823_prsn_00ZN3.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 56512,
+            "name": "アシㇼパ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/05/ea/56512_crt_94z4T.jpg?r=1569906263",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/ea/56512_crt_94z4T.jpg?r=1569906263",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/ea/56512_crt_94z4T.jpg?r=1569906263",
+                "grid": "https://lain.bgm.tv/pic/crt/g/05/ea/56512_crt_94z4T.jpg?r=1569906263"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 18600,
+                    "name": "白石晴香",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a9/6f/18600_prsn_LGgtC.jpg?r=1585323843",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/6f/18600_prsn_LGgtC.jpg?r=1585323843",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/6f/18600_prsn_LGgtC.jpg?r=1585323843",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a9/6f/18600_prsn_LGgtC.jpg?r=1585323843"
+                    },
+                    "short_summary": "日本の女優、声優。\r\n特长：爵士舞、芭蕾、花道、书法、舞蹈、足球。\r\n\r\n2007年より女優として活動し、舞台などに出演。2011年に『コクリコ坂から』の松崎空役で声優デビュー。\r\n2019年12月31日，退出ヒラタオフィス事务所\r\n2020年1月1日开始作为自由声优活动并开设了新的Twitter帐号（shiraharu48）。\r\n2020年6月1日开始进入TOY'S FACTORY(トイズファクトリー)事务所。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

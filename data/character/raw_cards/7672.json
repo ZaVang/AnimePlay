@@ -1,0 +1,66 @@
+{
+    "id": 7672,
+    "name": "諸星あたる",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bb/e5/7672_crt_la1b1.jpg?r=1664072433",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/e5/7672_crt_la1b1.jpg?r=1664072433",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/e5/7672_crt_la1b1.jpg?r=1664072433",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bb/e5/7672_crt_la1b1.jpg?r=1664072433"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "诸星当"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "\\",
+                    "v": "Ronnie"
+                },
+                {
+                    "k": "日文名",
+                    "v": "諸星あたる"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "もろぼし あたる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Moroboshi Ataru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月13日"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 13,
+    "stat": {
+        "comments": 23,
+        "collects": 25
+    },
+    "anime_ids": [
+        413635,
+        10388,
+        364468
+    ]
+}

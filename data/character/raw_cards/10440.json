@@ -1,0 +1,84 @@
+{
+    "id": 10440,
+    "name": "暁美ほむら",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b6/ba/10440_crt_7qd06.jpg?r=1630181644",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/ba/10440_crt_7qd06.jpg?r=1630181644",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/ba/10440_crt_7qd06.jpg?r=1630181644",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b6/ba/10440_crt_7qd06.jpg?r=1630181644"
+    },
+    "summary": "「あなたは、鹿目まどかのままでいればいい。今まで通りに、これからも」\r\nまどかの通う中学校に転校してきた少女。容姿端麗、成績優秀、スポーツ万能。クールな性格。魔法少女のようだが、その言動には謎が多い。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "晓美焰"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "晓美炎"
+                },
+                {
+                    "k": "日文名",
+                    "v": "暁美 ほむら"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あけみ ほむら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Akemi Homura"
+                },
+                {
+                    "k": "昵称",
+                    "v": "吼姆拉、吼姆辣酱、焰魔"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "155~158cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "www.madoka-magica.com/tv/character"
+        },
+        {
+            "key": "年龄",
+            "value": "14岁（中2）"
+        },
+        {
+            "key": "出身",
+            "value": "东京→见泷原市"
+        },
+        {
+            "key": "学校",
+            "value": "见泷原中学校"
+        },
+        {
+            "key": "人设",
+            "value": "苍树梅"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 114,
+        "collects": 1396
+    },
+    "anime_ids": [
+        9717
+    ]
+}

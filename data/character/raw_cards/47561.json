@@ -1,0 +1,39 @@
+{
+    "id": 47561,
+    "name": "長谷川辰蔵",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/dd/58/47561_crt_z1Xjy.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/58/47561_crt_z1Xjy.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/58/47561_crt_z1Xjy.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dd/58/47561_crt_z1Xjy.jpg"
+    },
+    "summary": "平蔵の息子。遊びたい盛りで、平蔵や久栄を困らせることも多々あるが、平蔵のことを尊敬している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "长谷川辰藏"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 0
+    },
+    "anime_ids": [
+        191523
+    ]
+}

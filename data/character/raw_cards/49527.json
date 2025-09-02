@@ -1,0 +1,48 @@
+{
+    "id": 49527,
+    "name": "戒道幾巳",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/79/00/49527_crt_3s6PY.jpg?r=1482301503",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/79/00/49527_crt_3s6PY.jpg?r=1482301503",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/79/00/49527_crt_3s6PY.jpg?r=1482301503",
+        "grid": "https://lain.bgm.tv/pic/crt/g/79/00/49527_crt_3s6PY.jpg?r=1482301503"
+    },
+    "summary": "红之星的生化人造人，仿制绿之星的G能量赋予了J能量，而基因是仿制红之星的领导者阿贝尔的基因，是红之星被机界化后被送到地球后被戒道夫人抚养，起初沉默寡言，在EI-01攻击东京时恢复了任务记忆，净化了被机界化的J战舰主控电脑和J战士。原名aram（拉丁文意思为武器）。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "戒道几巳"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かいどう いくみ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 3
+    },
+    "anime_ids": [
+        2981
+    ]
+}

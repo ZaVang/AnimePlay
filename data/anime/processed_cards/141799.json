@@ -1,0 +1,151 @@
+{
+    "id": 141799,
+    "name": "飞翔的魔女",
+    "image_path": "data/images/anime/141799.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "在青森开始做魔女！\r\n青森——在这片被丰饶的大自然围绕的土地上，有时会发生些不可思议的事情。\r\n木幡真琴15岁，魔女。和黑猫千户一同从横滨过来的她，开始在青森的亲戚家里修行。虽然现在还只是仅仅能飞上天空这种程度，但她仍然和表兄妹圭和千夏一起度过着充实的生活。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2016-04-09",
+    "rating_rank": 825,
+    "rating_score": 7.5,
+    "rating_total": 4532,
+    "main_character_ids": [
+        35388,
+        35390,
+        35391,
+        39269
+    ],
+    "main_characters": [
+        {
+            "id": 35388,
+            "name": "木幡真琴",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3b/73/35388_crt_6TwkR.jpg?r=1455675174",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/73/35388_crt_6TwkR.jpg?r=1455675174",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/73/35388_crt_6TwkR.jpg?r=1455675174",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3b/73/35388_crt_6TwkR.jpg?r=1455675174"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19908,
+                    "name": "篠田みなみ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8c/6f/19908_prsn_QDrSJ.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/6f/19908_prsn_QDrSJ.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/6f/19908_prsn_QDrSJ.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8c/6f/19908_prsn_QDrSJ.jpg"
+                    },
+                    "short_summary": "日本の女性声優。ヴィムス所属。千葉県出身。\r\n\r\n趣味・特技：ダンスコピー、ジャズダンス、韓国語\r\n資格：英語検定準2級、漢字検定3級、韓国語能力検定初級\r\n芸歴：日本ナレーション演技研究所\r\n\r\n元々はダンスに興味がありダンサーやミュージカル俳優を目指して幼少期からダンスを習って育ったが、身長が147cmということで制限されることが多かった。それ故に容姿に関係なく色々な表現ができる声優という職業に憧れを持ち声優を目指した。 日本ナレーション演技研究所に通いながら、篠田みなみと諏訪ななかと栗山りさの三人のラジオであるアニラブ！ガチャガチャで初めての仕事を獲得。アニラブ!ガチャガチャのオーディションは2、3次選考で諏訪ななかと共に合格した。アニラブ!ガチャガチャの放送終了後、のちにヴィムス所属となる。\r\n2014年2月19日、スマートフォン向けアプリケーションゲーム『Tokyo 7th シスターズ』がリリースされ（春日部ハル）役として初のメインキャラクターを演じた。2014年4月には『一週間フレンズ。』にて初のテレビアニメ出演を果たした。\r\n資格は英語検定準2級、漢字検定3級、韓国語能力検定初級を所持している。 また、筋肉やアメコミが大好きで、特にアベンジャーズに関しては本気!アニラブのコーナーのタイトルにするほど好んでいる。アベンジャーズでお気に入りのキャラクターはマイティ・ソーで、親しみを込めて「あにうえ」と呼んでいる。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 35390,
+            "name": "倉本圭",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c4/7e/35390_crt_85CC8.jpg?r=1455675290",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/7e/35390_crt_85CC8.jpg?r=1455675290",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/7e/35390_crt_85CC8.jpg?r=1455675290",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c4/7e/35390_crt_85CC8.jpg?r=1455675290"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 21530,
+                    "name": "菅原慎介",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bd/73/21530_prsn_UC202.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/73/21530_prsn_UC202.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/73/21530_prsn_UC202.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bd/73/21530_prsn_UC202.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 35391,
+            "name": "倉本千夏",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c7/d3/35391_crt_nXT04.jpg?r=1455675344",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/d3/35391_crt_nXT04.jpg?r=1455675344",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/d3/35391_crt_nXT04.jpg?r=1455675344",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c7/d3/35391_crt_nXT04.jpg?r=1455675344"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 14259,
+                    "name": "鈴木絵理",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6e/8a/14259_prsn_Hb4sa.jpg?r=1689739914",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/8a/14259_prsn_Hb4sa.jpg?r=1689739914",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/8a/14259_prsn_Hb4sa.jpg?r=1689739914",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6e/8a/14259_prsn_Hb4sa.jpg?r=1689739914"
+                    },
+                    "short_summary": "日本の女性声優。東京俳優生活協同組合所属。俳協ボイスアクターズスタジオ40期生。\r\n\r\n元々女優志望だったが初めて聴いたドラマCDに感銘を受け声優を志す。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 39269,
+            "name": "チト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/51/61/39269_crt_to1Ja.jpg?r=1457190642",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/61/39269_crt_to1Ja.jpg?r=1457190642",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/61/39269_crt_to1Ja.jpg?r=1457190642",
+                "grid": "https://lain.bgm.tv/pic/crt/g/51/61/39269_crt_to1Ja.jpg?r=1457190642"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5847,
+                    "name": "茅野愛衣",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8d/62/5847_prsn_G6LsO.jpg?r=1594216311",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/62/5847_prsn_G6LsO.jpg?r=1594216311",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/62/5847_prsn_G6LsO.jpg?r=1594216311",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8d/62/5847_prsn_G6LsO.jpg?r=1594216311"
+                    },
+                    "short_summary": "茅野爱衣曾经想做治愈他人的工作，因此在做声优之前是美容工作者。\r\n因为常工作到深夜，回家后看到动画《ARIA》后觉得“动画也有治愈人心的力量”，于是开始以声优为目标。\r\n一边坚持美容工作一边积攒学费去学习声优的课程。\r\n\r\n2010年3月，作为Pro·Fit声优养成所11期毕业生，成为正式声优。，2010年4月初次主役登台亮相。\r\n2012年3月，获得第六届声优奖新人女优赏，同年并获颁日刊体育第1回日刊动画最高赏MIP新人声优赏。\r\n2014年9月，退出Pro-Fit，成为自由身。2015年1月加入大泽事务所。\r\n2015年3月，于AnimeJapan举办的“第1回动画广播评选”上，以《NO RADIO NO LIFE 玩家兄妹似乎要搞广播》主持人身份拿下“最优秀广播奖”和“复活希望广播奖”。\r\n\r\n由于在主持『我们仍未知道那天所看见的花的名字』动画广播的第一回的时候有爱称，而在次回广播时对听众的邮件中的「かやのん」这个称呼最为喜欢，以后便成为了爱衣的爱称。杉田智和和樱井孝宏称呼他是[茅野君]。\r\n中学时代第一次知道声优这个工作，是因为同学对这个工作的内幕了解的很详细。那时候还没考虑过做这个工作，想做美容和咖啡店等工作，疗伤成为主题一样的工作。社团活动则是加入了美术部，因为常画水彩画，插画也很擅长。\r\n高中时代在一般女子高中就读的同时在专门的美容学校学习，取得美容师的资格。\r\n大学时代则是一边读书，一边从事着美容工作。 高中的时候还画过西洋画，觉得西洋画“怎样才能让动作景色表现出声音呢”，也开始对声优这个工作产生了兴趣。\r\n和声优赤崎千夏在成为声优前就已相互认识，曾有过同时在同一家咖啡厅打工的经历。\r\n家中的独女，从小就做事好强，不管是运动会还是各种比赛，都是练习最久，希望可以拿到最好的成绩。家中养着一只名叫「杏・杏」雌性约克夏犬，名字中「・」是由母亲特意而取。\r\n\r\n拥有高柔的音质，声线多变，从幼女、少女到成熟女性角色都能贴切演绎，从无口阴郁至活泼温柔的角色也都能完美驾驭，在三无角色（无口、无心、无表情）方面的演出也相当有代表性，在声优圈内有着“治愈系声音”的美称。又因爱衣性格温和、外表文静，曾从花泽香菜那里得到“外表也是治愈系”的评价。\r\n在『我女友与青梅竹马的惨烈修罗场』中饰演冬海爱衣一角，因冬海爱衣有一句经典台词为“爱衣酱大胜利”，又由同名的爱衣来演绎，便也成为爱衣的经典代表句，此后在爱衣角色取得优势的场合常能见到许多“爱衣酱大胜利”的留言。\r\n在声优圈内爱衣因其温和体贴却又时而抖S的性格，造就了相当不错的人缘。\r\n因爱衣酒量出名的好，并曾谈过自己喜欢日本酒，便得到了一份专门介绍日本酒的节目『毛衣品酒（かやのみ）』主持人的工作，2016年5月14日起播出第一集，以约莫两个礼拜一集的速度于animate Times的YouTube频道上更新至今。虽然在节目中总是从头喝到尾，但据工作人员表示即使喝的相当多也从来没看过爱衣醉过。\r\n\r\n2020年，在自己生日9月13日当天，开设了一系列官方网站。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

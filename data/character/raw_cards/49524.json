@@ -1,0 +1,57 @@
+{
+    "id": 49524,
+    "name": "獅子王凱",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/47/84/49524_crt_2cymC.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/84/49524_crt_2cymC.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/84/49524_crt_2cymC.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/47/84/49524_crt_2cymC.jpg"
+    },
+    "summary": "本作男主角，原为宇宙开发公社的宇航员，在进行Galeona彗星的太空研究时被EI-01的远航战舰撞毁飞船，被机械狮子加里安救回地球，但已濒临死亡，后由其父亲丽雄对加里安的机械结构进行反向工程，将其改造成基于G石能量改造人得以存活，GaoGaiGar的驾驶者，3G机动部队队长，非常信任勇气，因此能发挥G石的威力。在命变成机界新种后在护的净化下获得拥有G能量的肉身。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "狮子王凯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ししおう がい"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "200Cm"
+        },
+        {
+            "key": "体重",
+            "value": "200Kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 16
+    },
+    "anime_ids": [
+        2981,
+        1894
+    ]
+}

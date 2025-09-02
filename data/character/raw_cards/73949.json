@@ -1,0 +1,39 @@
+{
+    "id": 73949,
+    "name": "黒川すず",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c2/31/73949_crt_197gD.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/31/73949_crt_197gD.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/31/73949_crt_197gD.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c2/31/73949_crt_197gD.jpg"
+    },
+    "summary": "まりあと一緒に『ディアクラウン』に所属したプリ☆チャンアイドル。ボーイッシュでちょっと無口、ダンスに情熱をかけている。「かっこいい」を目指しているため、「かわいい」を求めているまりあが苦手だったが、お互いの良さを認め合い「リングマリィ」としてグループを結成した。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黑川铃"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        269023
+    ]
+}

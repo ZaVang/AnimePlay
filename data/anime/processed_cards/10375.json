@@ -1,0 +1,186 @@
+{
+    "id": 10375,
+    "name": "传说巨神伊迪安",
+    "image_path": "data/images/anime/10375.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "日本Sunrise公司制作的机器人动画，TV版于1980年5月8日至1981年1月30日播放。由著名动画监督富野由悠季（当时还叫富野喜幸）监督，原定播出43话，由于收视率低迷的关系，被砍成了39话。但是1年后的1982年7月10日，又公映了2部剧场版——接触篇和发动篇。接触篇算是TV版前半部分的总集编，但有很多情节和TV版不同；发动篇是结局部分，对TV版未播出的真正结尾进行了补充和扩展。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 39,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "1980-05-08",
+    "rating_rank": 785,
+    "rating_score": 7.6,
+    "rating_total": 634,
+    "main_character_ids": [
+        4624,
+        50905,
+        50906,
+        50907,
+        50908
+    ],
+    "main_characters": [
+        {
+            "id": 4624,
+            "name": "カララ・アジバ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/95/47/4624_crt_zK6z1.jpg?r=1486133716",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/47/4624_crt_zK6z1.jpg?r=1486133716",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/47/4624_crt_zK6z1.jpg?r=1486133716",
+                "grid": "https://lain.bgm.tv/pic/crt/g/95/47/4624_crt_zK6z1.jpg?r=1486133716"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4447,
+                    "name": "戸田恵子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6f/d6/4447_seiyu_anidb.jpg?r=1407469286",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6f/d6/4447_seiyu_anidb.jpg?r=1407469286",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6f/d6/4447_seiyu_anidb.jpg?r=1407469286",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6f/d6/4447_seiyu_anidb.jpg?r=1407469286"
+                    },
+                    "short_summary": "戸田 恵子（とだ けいこ、1957年9月12日- ）は、日本の女優、声優、ナレーター、歌手、タレント。旧芸名、あゆ 朱美（あゆ あけみ）。青二プロダクション、グランパパプロダクションを経てルックアップ所属。特技はダンス、茶道。\r\n\r\n愛知県名古屋市出身。駒沢学園女子高等学校卒業。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 50905,
+            "name": "ユウキ・コスモ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/33/6c/50905_crt_V1t1S.jpg?r=1486136842",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/6c/50905_crt_V1t1S.jpg?r=1486136842",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/6c/50905_crt_V1t1S.jpg?r=1486136842",
+                "grid": "https://lain.bgm.tv/pic/crt/g/33/6c/50905_crt_V1t1S.jpg?r=1486136842"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 1452,
+                    "name": "塩屋翼",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b0/e9/1452_prsn_8l82w.jpg?r=1723560181",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/e9/1452_prsn_8l82w.jpg?r=1723560181",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/e9/1452_prsn_8l82w.jpg?r=1723560181",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b0/e9/1452_prsn_8l82w.jpg?r=1723560181"
+                    },
+                    "short_summary": "8歳の時、子役としてデビュー。\r\n『劇団ひまわり』『青二プロダクション』を経て、14歳の頃より声優として活動。\r\n出演作品は3000本以上。\r\nその後、オムニバスプロモーションで音響監督として活躍、現在『サウンド・ウィング』所属の音響監督として数々の作品を手がけている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 50906,
+            "name": "ジョーダン・ベス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/cb/20/50906_crt_jJy56.jpg?r=1486136788",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cb/20/50906_crt_jJy56.jpg?r=1486136788",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cb/20/50906_crt_jJy56.jpg?r=1486136788",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cb/20/50906_crt_jJy56.jpg?r=1486136788"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 1057,
+                    "name": "田中秀幸",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ef/62/1057_prsn_JBNtI.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ef/62/1057_prsn_JBNtI.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ef/62/1057_prsn_JBNtI.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ef/62/1057_prsn_JBNtI.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーターである。青二プロダクション所属。\r\n\r\n東京都大田区出身。桐朋学園芸術短期大学演劇専攻卒業。身長172cm、血液型はB型。\r\n\r\n5歳の頃にラジオドラマ番組における主役の一般公募に合格し、以来小学校在学の6年間収録に参加した。以降役者を志し、高校卒業後、短大で4年間演劇を勉強。\r\n\r\nその後劇団青年座所属時代の1974年に『科学忍者隊ガッチャマン』のヘムラー役で声優デビュー。以来声の仕事を中心に携わるようになり、アニメ・洋画吹き替え・ナレーションなどで活躍を続ける。1975年に『ドカベン』の山田太郎役で初主演を果たす。\r\n\r\n1980年代から1990年代にかけては『キャプテン翼』（ロベルト本郷 役）、『CITY HUNTER』（槇村秀幸 役）、『キン肉マン』（テリーマン 役）、『タッチ』（柏葉英二郎 役）、『ハイスクール!奇面組』（事代作吾 役）、『魁!!男塾』（大豪院邪鬼 役）、『SLAM DUNK』（木暮公延 役）など多数の少年アニメに出演する。また、神谷明や堀秀行と同じ『週刊少年ジャンプ』の連載漫画のアニメ作品における常連の1人でもある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 50907,
+            "name": "イムホフ・カーシャ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ce/96/50907_crt_7d0ou.jpg?r=1486136826",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/96/50907_crt_7d0ou.jpg?r=1486136826",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/96/50907_crt_7d0ou.jpg?r=1486136826",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ce/96/50907_crt_7d0ou.jpg?r=1486136826"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4290,
+                    "name": "白石冬美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/27/58/4290_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/58/4290_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/58/4290_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/27/58/4290_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本配音、演员，生于中国北京。活跃于1960-2014年。2019年病逝于东京家中。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 50908,
+            "name": "フォルモッサ・シェリル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f7/ac/50908_crt_Qdgq4.jpg?r=1486136742",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/ac/50908_crt_Qdgq4.jpg?r=1486136742",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/ac/50908_crt_Qdgq4.jpg?r=1486136742",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f7/ac/50908_crt_Qdgq4.jpg?r=1486136742"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4200,
+                    "name": "井上瑤",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/86/db/4200_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/db/4200_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/db/4200_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/86/db/4200_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "1970年代から2000年代初めまで活躍。東京都立八潮高等学校、早稲田大学卒業。\r\n\r\n大学時代は劇研に所属し、卒業後は早稲田小劇場に進んだが、1年で退団。アルバイトで始めたTBSの朝のテレビ番組『ヤング720』を皮切りに放送タレントの道へ。クイズ番組『ベルトクイズQ&Q』の声、『モーニングジャンボ』などTBSのテレビ番組に出演。\r\n\r\n声優活動以外にも自分の出演番組の台本を書いていたことから、放送作家の仕事が舞い込むようになり、1980年代初めまで、『お笑い頭の体操』『相性診断ピッタンコ』などの構成台本や『クイズダービー』の問題作成の仕事を行なった。同時期には西田堯の下でモダンダンスを学び、国立劇場、日生劇場の舞台に立つ。また「レイ・ホシコ」という名の占い師という顔も持つなど、多才ぶりを発揮していた。\r\n\r\n2000年放映開始の『遊☆戯☆王デュエルモンスターズ』に獏良了役でキャスティングされていたが、体調不良のため41話までで降板。同役は松本梨香が最終回まで継いだ。\r\n\r\n2003年2月28日9時29分、都内の病院で肺水腫のため死去、56歳没。葬儀にはガンダムのキッカ・キタモトとハロ（どちらも井上の担当キャラクター）の人形が飾られた。最後の声優参加は、ニンテンドーゲームキューブ用ゲーム『機動戦士ガンダム 戦士達の軌跡』のセイラ・マスである。このゲームには、エンディングにスタッフからのメッセージが表示され、ゲーム発売前に亡くなった井上への追悼の言葉が含まれている。喪主は実弟が務めた。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

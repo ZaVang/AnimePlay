@@ -1,0 +1,124 @@
+{
+    "id": 243916,
+    "name": "约定的梦幻岛",
+    "image_path": "data/images/anime/243916.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "仰慕的母亲并非亲生母亲。一起生活的他们并非兄弟。\r\nGrace=Field House是没有父母的孩子们居住的地方。虽然没有血缘关系，但妈妈和38个兄弟都度过了幸福的每一天，这是不可替代的家。\r\n但是，他们的日常在某一天突然宣告结束……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "悬疑",
+        "TV",
+        "日本",
+        "漫画改",
+        "冒险"
+    ],
+    "date": "2019-01-10",
+    "rating_rank": 753,
+    "rating_score": 7.6,
+    "rating_total": 10775,
+    "main_character_ids": [
+        57376,
+        57377,
+        57378
+    ],
+    "main_characters": [
+        {
+            "id": 57376,
+            "name": "エマ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/8c/57376_crt_g8Mmm.jpg?r=1503813993",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/8c/57376_crt_g8Mmm.jpg?r=1503813993",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/8c/57376_crt_g8Mmm.jpg?r=1503813993",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/8c/57376_crt_g8Mmm.jpg?r=1503813993"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5107,
+                    "name": "諸星すみれ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/55/56/5107_prsn_HQ05E.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/56/5107_prsn_HQ05E.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/56/5107_prsn_HQ05E.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/55/56/5107_prsn_HQ05E.jpg"
+                    },
+                    "short_summary": "童星出身，是女性声优、演员、歌手。向日葵剧团所属。有一个妹妹。\r\n代表作品包括TBS『ほーむめーかー』朋実役；NHK『连続テレビ小说「天花」』诸川すみれ役；舞台『お月さま、笑った』速水花菜役。\r\n\r\n艺名就是本名。据说当初父母本想给她起名为「莉桜（りお）」而不是「すみれ」。可是，刚出生不久的诸星右半身得了麻痹症，就连吃母乳都很困难。如果一辈子都得麻痹症的话，可能连自己的名字都写不好，于是父母就将她的名字改成了书写起来较简单的平假名。不过，在产后数月之后，麻痹症就自动痊愈了。\r\n3岁的时候加入了向日葵剧团。入团的契机是来自《千与千寻》中的角色汤婆婆，告诉父母自己也“想成为汤婆婆”。\r\n最崇拜的声优是曾经看过的『Hannah Montana』中参加演出的白石凉子等。\r\n擅长唱歌，拥有英语检定2级资格。受其父亲有搞乐团的喜好影响，而在高中时买了吉他来玩。\r\n今后被期待着有更活跃的表现。\r\n\r\n2006年，在7岁时出演《血色花园》的凯莉，被共演的子安武人的声调转换演技所折服，从那个时候开始产生了专业的自觉。\r\n2009年，在9岁时以妮娜·塔克 Nina Tucker 这一角色参加了《钢之炼金术师FULLMENTAL ALCHEMIST》。以其稚嫩的音质和富含表现力的演技得到了其他声优与动画制作人员的一致好评。朴璐美曾经赞赏她“是一名充满感性的演员”“在现场为她的演技所震撼”等，钉宫理惠也同意了这一说法。她的超高演技让包括朴璐美在内的现场声优都萌生了不服输的念头。其中，据说内海贤二先生因为太在意诸星的演技，自己也燃起了斗志投入了角色的演出。\r\n2012年，在13岁时以《偶像活动!》中的星宫莓一角在电视动画中首次作为主角参演。\r\n2018年3月毕业于堀越高等学校，同年4月开始进入大学就读。\r\n2019年5月31日，宣布将于秋季歌手solo出道。\r\n2022年3月26日，青山学院大学毕业。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 57377,
+            "name": "ノーマン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/cb/de/57377_crt_H44FA.jpg?r=1503814011",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cb/de/57377_crt_H44FA.jpg?r=1503814011",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cb/de/57377_crt_H44FA.jpg?r=1503814011",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cb/de/57377_crt_H44FA.jpg?r=1503814011"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6724,
+                    "name": "内田真礼",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4c/23/6724_prsn_DIyje.jpg?r=1738653463"
+                    },
+                    "short_summary": "内田 真礼（うちだ まあや、1989年12月27日 - ）は、日本の声優、歌手、女優、タレント。\r\nアイムエンタープライズ（事務所）、ポニーキャニオン（レコード会社）に所属。愛称は主にまややん、まれいたそ。東京都出身。血液型はA型。本名同じ。声優の内田雄馬は実弟。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 57378,
+            "name": "レイ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/80/ec/57378_crt_d3jt7.jpg?r=1503814027",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/ec/57378_crt_d3jt7.jpg?r=1503814027",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/ec/57378_crt_d3jt7.jpg?r=1503814027",
+                "grid": "https://lain.bgm.tv/pic/crt/g/80/ec/57378_crt_d3jt7.jpg?r=1503814027"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4769,
+                    "name": "伊瀬茉莉也",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320"
+                    },
+                    "short_summary": "小时候非常喜欢宫崎骏先生的作品，比如《风之谷》什么的，看了很多遍把录像带磨坏了。大约小学3年级左右，看了《幽灵公主》之后非常希望能够加入到里面，做出能让人感动的作品。那个时候光看这部动画就去了电影院8次，一开始是想当监督，后来偶然地有配音机会，便开始走上声优的道路。\r\n一开始父母强烈反对，后来茉莉也对他们描绘了心中的梦想，用“这是我必须去做的事”和“学费自己来付”说服了他们。那时拿出了从小学开始存的压岁钱【好心痛～（笑）】。一开始非常困难，一边要上学一边又要去2小时车程以外的培训中心，但是靠毅力坚持下来之后父母也开始变得支持了，后来嘛，就好了。\r\n第一次工作是在16岁那年，在动画片《愛してるぜベイベ★★》中饰演一个路人角色，台词也只有一两句，但那个时候紧张得不行，拿着剧本的手一直在发抖。后来在比较广为人知的《虫师》中配小孩子的声音，慢慢地工作就多了起来。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

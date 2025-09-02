@@ -1,0 +1,52 @@
+{
+    "id": 12858,
+    "name": "ちせ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7a/3f/12858_crt_7aWdE.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/3f/12858_crt_7aWdE.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/3f/12858_crt_7aWdE.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7a/3f/12858_crt_7aWdE.jpg"
+    },
+    "summary": "住在北海道的女孩。样貌平平，学习普通，擅长的只有世界史。\r\n身体被政府改造，身后可以长出巨大机械翅膀，可以瞬间摧毁一座城市。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "千濑"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ちせ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Chise"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 32
+    },
+    "anime_ids": [
+        1931
+    ]
+}

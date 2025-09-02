@@ -1,0 +1,44 @@
+{
+    "id": 68757,
+    "name": "トールズ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d3/16/68757_crt_2N03m.jpg?r=1549518719",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/16/68757_crt_2N03m.jpg?r=1549518719",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/16/68757_crt_2N03m.jpg?r=1549518719",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d3/16/68757_crt_2N03m.jpg?r=1549518719"
+    },
+    "summary": "トルフィンの父。かつては北海最強といわれるヨーム戦士団大隊長の 1 人であり、 「ヨームの戦鬼(トロル)」と呼ばれ恐れられていた。 家族が出来たことで命の奪い合いに嫌気がさし、戦死を装い戦場から立ち去る。 今はアイスランドで村人たちから慕われ、平和に暮らしている。 戦士に憧れる息子・トルフィンを心配している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "托尔兹"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Toles"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 18,
+        "collects": 36
+    },
+    "anime_ids": [
+        240386
+    ]
+}

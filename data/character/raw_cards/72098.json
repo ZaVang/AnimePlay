@@ -1,0 +1,56 @@
+{
+    "id": 72098,
+    "name": "南波瑞穂",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/87/0d/72098_crt_I1FFs.jpg?r=1712671969",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/0d/72098_crt_I1FFs.jpg?r=1712671969",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/0d/72098_crt_I1FFs.jpg?r=1712671969",
+        "grid": "https://lain.bgm.tv/pic/crt/g/87/0d/72098_crt_I1FFs.jpg?r=1712671969"
+    },
+    "summary": "MRSのアシスタントディレクター。ラジオパーソナリティとして活動を開始したミナレを自室に居候させており、また彼女の番組作りにも協力している。\r\n高い女子力の持ち主だが、男女交際の経験はない。当人は構成作家の久連子克三に好意を寄せており、彼の想い人である茅代まどかに対抗心を抱いている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "南波瑞穂"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "南波 瑞穂"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なんば みずほ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "nanba mizuho"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wikipedia(ja)"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 11,
+        "collects": 27
+    },
+    "anime_ids": [
+        292359
+    ]
+}

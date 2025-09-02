@@ -1,0 +1,53 @@
+{
+    "id": 55754,
+    "name": "花本修司",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/44/7a/55754_crt_P2Ral.jpg?r=1587025344",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/7a/55754_crt_P2Ral.jpg?r=1587025344",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/7a/55754_crt_P2Ral.jpg?r=1587025344",
+        "grid": "https://lain.bgm.tv/pic/crt/g/44/7a/55754_crt_P2Ral.jpg?r=1587025344"
+    },
+    "summary": "滨田山美术大学温柔幽默，平易近人的美术史讲师，大烟枪，故事开始时29-31岁左右。女主角花本叶久美是他堂兄的女儿，比阿久大11,12岁。是他带着阿久从长野的乡下来到东京，来到美大并把她介绍给竹本等人。主角五人组朋友一样的老师，办公室也成为了五人组的温馨欢乐的聚会室，并且见证了四年中各式各样的离别与重聚~亲人一般大方的为主角们提供各类帮助，却很不幸没有女朋友的大叔~经常与真山相互吐槽。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "花本修司"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "花本修司"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はなもと しゅうじ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "hanamoto shuuji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 11,
+        "collects": 15
+    },
+    "anime_ids": [
+        848,
+        847
+    ]
+}

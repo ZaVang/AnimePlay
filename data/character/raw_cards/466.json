@@ -1,0 +1,85 @@
+{
+    "id": 466,
+    "name": "平沢唯",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/17/ad/466_crt_yeyF2.jpg?r=1733754897",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/ad/466_crt_yeyF2.jpg?r=1733754897",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/ad/466_crt_yeyF2.jpg?r=1733754897",
+        "grid": "https://lain.bgm.tv/pic/crt/g/17/ad/466_crt_yeyF2.jpg?r=1733754897"
+    },
+    "summary": "主人公。轻音部主唱，同时兼任吉他手，因误解而加入轻音部，刚入轻音部时是位连乐谱也看不懂的新人。\r\n　　天然呆，废柴，慢半拍，学习成绩又差。只能用心做一件事并且可以做到很好。\r\n　　轻音部吉他手，错以为轻音部是指轻松易学的音乐（如响板），结果误入轻音部，对乐器一窍不通的她如今正准备从吉他开始学习，不过走的完全是自我风格和直觉路线。能\"专注于一件事情\"并且做到非常好的地步,但也会因此忽略其他。音痴、天然呆。不过此人在拥有绝对乐感（可以达到不用调音器凭自己的感觉来调音的境界）。\r\n　　姓氏来源于平沢进。\r\n    身体并不能承受热和冷的天气（包括冷气），没有事的时候就在家中翻滚着，乘巴士时会晕车。\r\n    虽经常吃甜食，但是却无论怎样吃也不胖。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "平泽唯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Yui Hirasawa"
+                },
+                {
+                    "k": "日文名",
+                    "v": "平沢 唯"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひらさわゆい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hirasawa Yui"
+                },
+                {
+                    "k": "昵称",
+                    "v": "呆唯"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月27日"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "体重",
+            "value": "50kg"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "anidb.net"
+                }
+            ]
+        },
+        {
+            "key": "乐器",
+            "value": "Gibson Les Paul Standard Heritage Cherry Sunburst"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 27,
+    "stat": {
+        "comments": 176,
+        "collects": 1378
+    },
+    "anime_ids": [
+        3774,
+        1424
+    ]
+}

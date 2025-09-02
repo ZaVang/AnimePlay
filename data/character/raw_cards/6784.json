@@ -1,0 +1,73 @@
+{
+    "id": 6784,
+    "name": "ルパン三世",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/08/4e/6784_crt_bQQph.jpg?r=1446820910",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/4e/6784_crt_bQQph.jpg?r=1446820910",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/4e/6784_crt_bQQph.jpg?r=1446820910",
+        "grid": "https://lain.bgm.tv/pic/crt/g/08/4e/6784_crt_bQQph.jpg?r=1446820910"
+    },
+    "summary": "亚森·罗苹（法国作家莫理斯·卢布朗所创造的绅士怪盗，即鲁邦一世）之孙。\r\n射击、变装、武器、飞刀的操纵…等能力全是一流，且IQ高达300。经由他策划的行动几乎没有不成功的，所以基本上只要是他所想要的东西都可以到手。\r\n乍看之下好像是个完美无缺的能人，但贪求美色却是他最致命的死穴，这一点就和一般的臭男人没什么两样。\r\n小偷人人喊打，不过鲁邦三世却是其中的异类，很难引起人家的反感。他虽然是个小偷，却充满了正义感。\r\n和他一起的女人除了峰不二子，其他大多喜欢他，但他似乎只喜欢峰不二子。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鲁邦三世"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "\\",
+                    "v": "Arsène Lupin III"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Lupin Sansei"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ルパン三世"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "179"
+        },
+        {
+            "key": "体重",
+            "value": "63"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "国籍",
+            "value": "不明"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 20,
+        "collects": 116
+    },
+    "anime_ids": [
+        115661,
+        36359,
+        36355,
+        24274,
+        219164,
+        84991
+    ]
+}

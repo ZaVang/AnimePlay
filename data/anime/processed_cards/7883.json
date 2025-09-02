@@ -1,0 +1,58 @@
+{
+    "id": 7883,
+    "name": "女仆咖啡厅",
+    "image_path": "data/images/anime/7883.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "女高中生岚山步鸟，在丸子商店街的咖啡厅SEASIDE的做兼职服务生。有一天，店长宣告为了咖啡厅的繁盛要构想新策略。于是，最终敲定把咖啡厅改造成时下流行的女仆咖啡厅。但是，店里的相关人员没人了解女仆咖啡厅，最后就只让服务员换上女仆装就宣布重新开业了。步鸟学校的前辈双叶、单恋步鸟的同级生广章，围绕在步鸟身边发生的各种闹剧就此展开……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2010-10-07",
+    "rating_rank": 411,
+    "rating_score": 7.8,
+    "rating_total": 4950,
+    "main_character_ids": [
+        10538
+    ],
+    "main_characters": [
+        {
+            "id": 10538,
+            "name": "嵐山歩鳥",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7d/33/10538_crt_eb1k9.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/33/10538_crt_eb1k9.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/33/10538_crt_eb1k9.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7d/33/10538_crt_eb1k9.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4969,
+                    "name": "小見川千明",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/93/58/4969_prsn_zI0C7.jpg?r=1549851897",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/58/4969_prsn_zI0C7.jpg?r=1549851897",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/58/4969_prsn_zI0C7.jpg?r=1549851897",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/93/58/4969_prsn_zI0C7.jpg?r=1549851897"
+                    },
+                    "short_summary": "4岁加入剧団，开始舞台活动。\r\n毕业与日本艺术高等学校。\r\n2008年首次担当电视动画《SOUL EATER》的女主角玛嘉·亚尔邦。\r\n分喜欢宫沢贤治。\r\n作为动画声优，声音非常独特突兀，常有破音，但也属于萌点之一。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

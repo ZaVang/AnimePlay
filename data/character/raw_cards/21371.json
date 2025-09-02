@@ -1,0 +1,66 @@
+{
+    "id": 21371,
+    "name": "越谷小鞠",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7a/3b/21371_crt_3cFQw.jpg?r=1438207786",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/3b/21371_crt_3cFQw.jpg?r=1438207786",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/3b/21371_crt_3cFQw.jpg?r=1438207786",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7a/3b/21371_crt_3cFQw.jpg?r=1438207786"
+    },
+    "summary": "中学2年生。夏海の姉。血液型はAB型。9月14日生まれ。身長が140cmに満たないことを気にしている。大人に対する憧れが強く、何かにつけて大人ぶろうとするが、\r\n実際には怖いものが苦手であるなど幼い面が多い。あだ名はコマちゃん。由来は名前ではなく細いからである。みんなで海に行った時には、迷子の子供と間違われて連れて行かれてしまった。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "越谷小鞠"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "小小鞠"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こしがや こまり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Koshigaya Komari"
+                },
+                {
+                    "k": "昵称",
+                    "v": "コマちゃん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月14日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 14,
+    "stat": {
+        "comments": 57,
+        "collects": 362
+    },
+    "anime_ids": [
+        282684,
+        101442,
+        78405
+    ]
+}

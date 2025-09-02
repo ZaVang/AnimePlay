@@ -1,0 +1,54 @@
+{
+    "id": 708,
+    "name": "八九寺真宵",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/11/61/708_crt_ceedB.jpg?r=1400133233",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/11/61/708_crt_ceedB.jpg?r=1400133233",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/11/61/708_crt_ceedB.jpg?r=1400133233",
+        "grid": "https://lain.bgm.tv/pic/crt/g/11/61/708_crt_ceedB.jpg?r=1400133233"
+    },
+    "summary": "　　“疑惑满满”的性格。对蜗牛很着迷。被忍野メメ称为“迷子”\r\n　　梳着双马尾辫的小学生，5年级3班。背着一个巨大的背包。旧姓是“纲手”。在某个母亲节，在白浪公园和历相遇。不擅长电子产品。\r\n　　对熟悉的人说话时没有好气，非常的放肆。而且经常说错话，特别是叫历的时候，会把字吃掉。\r\n　　而且，有时会对历进行物理攻击，咬他。和历一起时，每次都要拌嘴，对历来说，是最有意思的说话对象。\r\n　　经常受到历的性骚扰，从背后被袭击时，会发出“呼厦~”般动物的叫声来威吓。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "八九寺真宵"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "はちくじ まよい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hachikuji Mayoi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 61,
+        "collects": 679
+    },
+    "anime_ids": [
+        1671,
+        68812,
+        175596
+    ]
+}

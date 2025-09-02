@@ -1,0 +1,64 @@
+{
+    "id": 11835,
+    "name": "押水菜子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bc/68/11835_crt_5dtlG.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/68/11835_crt_5dtlG.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/68/11835_crt_5dtlG.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bc/68/11835_crt_5dtlG.jpg"
+    },
+    "summary": "在喜翠庄打工的女孩，非常害羞，特长是游泳，不喜欢吃芋头。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "押水菜子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "おしみず なこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Oshimizu Nako"
+                },
+                {
+                    "k": "昵称",
+                    "v": "なこち"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1994年4月7日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1994,
+    "birth_mon": 4,
+    "birth_day": 7,
+    "stat": {
+        "comments": 35,
+        "collects": 192
+    },
+    "anime_ids": [
+        22759
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "id": 13208,
+    "name": "日向冬樹",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f7/71/13208_crt_XXPHA.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/71/13208_crt_XXPHA.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/71/13208_crt_XXPHA.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f7/71/13208_crt_XXPHA.jpg"
+    },
+    "summary": "Keroro所寓居之日向家中的长子，排行第二；母亲是日向秋，日向夏美则是他的姊姊，同时也是Keroro的最佳伙伴兼好友。\r\n漫画版中的出场为小学六年级生；动画版中出场时就读于私立吉祥中学一年B班，是社团活动中“超自然研究社”的社长（漫画版作漫画社），而西泽桃华则是该社唯一的成员。年龄约12岁，血型为A型。而且是个谈判能手，说话很有说服力（这能力在危急的情况下十分有用），被喻为“蓝星的外交官”。一旦难得生气起来，就连夏美也会害怕，所以有不少人认为他有很强大的潜在战斗力。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "日向冬树"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Fuyuki Hinata"
+                },
+                {
+                    "k": "日文名",
+                    "v": "日向 冬樹"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひなた ふゆき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hinata Fuyuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1992年"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "152.5cm（超剧场版中记载为144.2cm）"
+        },
+        {
+            "key": "体重",
+            "value": "45kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://zh.wikipedia.org/wiki/日向冬樹"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 19,
+    "birth_day": 2,
+    "stat": {
+        "comments": 2,
+        "collects": 8
+    },
+    "anime_ids": [
+        1849
+    ]
+}

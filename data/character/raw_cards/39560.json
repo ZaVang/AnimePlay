@@ -1,0 +1,64 @@
+{
+    "id": 39560,
+    "name": "アン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/68/00/39560_crt_XxnuC.jpg?r=1548150698",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/00/39560_crt_XxnuC.jpg?r=1548150698",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/00/39560_crt_XxnuC.jpg?r=1548150698",
+        "grid": "https://lain.bgm.tv/pic/crt/g/68/00/39560_crt_XxnuC.jpg?r=1548150698"
+    },
+    "summary": "玛娜利亚魔法学院的所在地——玛娜利亚王国的公主。有着压倒性的魔法才能，年纪轻轻就掌握了英灵召唤术。\r\n有着明朗且极有正义感的性格和遗传自父亲的人格魅力，吸引着周围的人。也有着不谙世事的天然一面。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "安"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Ann"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月1日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "体重",
+            "value": "55kg"
+        },
+        {
+            "key": "趣味",
+            "value": "读书"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 1,
+    "stat": {
+        "comments": 34,
+        "collects": 87
+    },
+    "anime_ids": [
+        145354
+    ]
+}

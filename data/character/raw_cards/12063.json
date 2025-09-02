@@ -1,0 +1,64 @@
+{
+    "id": 12063,
+    "name": "神戸小鳥",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/17/4e/12063_crt_v6rzv.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/4e/12063_crt_v6rzv.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/4e/12063_crt_v6rzv.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/17/4e/12063_crt_v6rzv.jpg"
+    },
+    "summary": "瑚太朗的好朋友。身材娇小但精力充沛、像小动物一样的女孩子。\r\n园艺方面很有才能并持有灵感。\r\n因为从以前开始就一直和瑚太朗在一起、所以没什么朋友。\r\n天性迷糊，总是和瑚太朗进行着像相声一样的迷糊对话。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "神户小鸟"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かんべ ことり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kanbe Kotori"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月26日"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "体重",
+            "value": "44kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B83/ W54/ H83"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 26,
+    "stat": {
+        "comments": 171,
+        "collects": 556
+    },
+    "anime_ids": [
+        363880
+    ]
+}

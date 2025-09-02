@@ -1,0 +1,69 @@
+{
+    "id": 364,
+    "name": "棗恭介",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/77/19/364_crt_sTXyb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/19/364_crt_sTXyb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/19/364_crt_sTXyb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/77/19/364_crt_sTXyb.jpg"
+    },
+    "summary": "CV：氷河流\r\n将一切日常化为使命的领军者\r\n10人里唯一的不同年级\r\n大家领袖般的存在\r\n某处散发着神秘气息的身影使得女学生中背后支持者很多，但也有喜欢少年漫画、爽快、顽皮的一面",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "枣恭介"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Kyousuke Natsume"
+                },
+                {
+                    "k": "日文名",
+                    "v": "棗 恭介"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なつめ きょうすけ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Natsume Kyōsuke"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月4日"
+        },
+        {
+            "key": "身高",
+            "value": "174cm"
+        },
+        {
+            "key": "体重",
+            "value": "60kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 4,
+    "stat": {
+        "comments": 65,
+        "collects": 225
+    },
+    "anime_ids": [
+        69484,
+        363880
+    ]
+}

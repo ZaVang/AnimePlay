@@ -1,0 +1,69 @@
+{
+    "id": 2039,
+    "name": "フランチェスカ・ルッキーニ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/cc/64/2039_crt_vwVDn.jpg?r=1609281225",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/64/2039_crt_vwVDn.jpg?r=1609281225",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/64/2039_crt_vwVDn.jpg?r=1609281225",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cc/64/2039_crt_vwVDn.jpg?r=1609281225"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "弗兰西斯卡·鲁奇尼"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "弗朗切斯卡·鲁基尼"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Francesca Lucchini"
+                },
+                {
+                    "k": "日文名",
+                    "v": "フランチェスカ・ルッキーニ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Furanchesuka Rukkīni"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1931年12月24日"
+        },
+        {
+            "key": "身高",
+            "value": "148cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1931,
+    "birth_mon": 12,
+    "birth_day": 24,
+    "stat": {
+        "comments": 7,
+        "collects": 31
+    },
+    "anime_ids": [
+        253046,
+        5651
+    ]
+}

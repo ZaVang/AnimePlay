@@ -1,0 +1,68 @@
+{
+    "id": 5171,
+    "name": "ゴマモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f2/88/5171_crt_10nsG.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/88/5171_crt_10nsG.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/88/5171_crt_10nsG.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f2/88/5171_crt_10nsG.jpg"
+    },
+    "summary": "身上覆盖着一层保温毛皮，可以在陆地上活动的海兽型数码宝贝。身上的白色短毛会随着成长而变长，据说更进一步成长时会变成褐色。个性调皮孩子气，会出手戏弄所有看到的东西。从头部一路长到背上的红毛会依据哥玛兽的情绪而有反应，生气的时候会竖起来。哥玛兽的爪子能够轻易粉碎坚硬的冰块，小看的话会吃大亏。必杀技是操纵属下小鱼的『鱼群大暴走』。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "哥玛兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Gomamon"
+                },
+                {
+                    "k": "韩文名",
+                    "v": "쉬라몬"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Gomamon"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference/detail.php?directory_name=gomamon"
+        },
+        {
+            "key": "等级",
+            "value": "成长期"
+        },
+        {
+            "key": "类型",
+            "value": "海兽型"
+        },
+        {
+            "key": "属性",
+            "value": "疫苗"
+        },
+        {
+            "key": "必杀技",
+            "value": "鱼群大暴走"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 14
+    },
+    "anime_ids": [
+        3128
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "id": 16582,
+    "name": "陽成院",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a6/c1/16582_crt_KLCqT.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/c1/16582_crt_KLCqT.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/c1/16582_crt_KLCqT.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a6/c1/16582_crt_KLCqT.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阳成院"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 2
+    },
+    "anime_ids": [
+        37138
+    ]
+}

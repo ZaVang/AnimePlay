@@ -1,0 +1,847 @@
+{
+    "id": 3131,
+    "name": "数码宝贝无限地带",
+    "image_path": "data/images/anime/3131.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　2002年，数码世界又一次面临灭亡的危机！\r\n　　数码宝贝世界本是由究极天使兽、基路比兽及神圣天女兽三大天使所管治的，然而其中一位天使——基路比兽却叛变，这使得数码世界的平衡受到破坏，并开始崩溃……\r\n　　古代曾经拯救数码宝贝世界的十斗士现在已不存在。就在这危急的关头，十斗士的斗士精神把新力量给予了另一个世界——现实世界的孩子……\r\n　　神原拓也、源辉二、织本泉、冰见友树、柴山纯平、木村辉一六位孩子受到神圣天女兽的召唤，进入数码宝贝世界，利用斗士精神进化成数码宝贝拯救了世界。\r\n　　主角拓也等人，将进入数码世界，变身成数码宝贝，投入这场冒险与战斗的旅程！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 50,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2002-04-07",
+    "rating_rank": 1374,
+    "rating_score": 7.3,
+    "rating_total": 1482,
+    "main_character_ids": [
+        11875,
+        22119,
+        22120,
+        24258,
+        24259,
+        24260,
+        24261,
+        98625,
+        98688,
+        98940,
+        99003,
+        102054,
+        102056,
+        102057,
+        102459,
+        102995,
+        103093,
+        104472,
+        104473,
+        106202,
+        106203,
+        106204,
+        106205,
+        106206,
+        106207,
+        106216
+    ],
+    "main_characters": [
+        {
+            "id": 11875,
+            "name": "神原拓也",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a6/9f/11875_crt_01fcK.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/9f/11875_crt_01fcK.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/9f/11875_crt_01fcK.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a6/9f/11875_crt_01fcK.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4084,
+                    "name": "竹内順子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a5/3c/4084_prsn_wQHsi.jpg"
+                    },
+                    "short_summary": "竹内顺子（1972年4月5日－），日本的女性声优、演员，现属剧团BQ MAP及尾木プロ THE NEXT事务所旗下。埼玉县出身，血型是B型。代表作有‘Hunter × Hunter’的（小杰·富力士）、‘メダロットシリーズ’的（メタビー）、‘火影忍者’的（漩涡鸣人）、‘Yes! 光之美少女5’的（夏木玲）等。\r\n\r\n\r\n竹内顺子在98年左右最成功的角色无疑是《Hunter X Hunter》的小杰了，小杰的天真、童稚、智慧、善良、倔强、快乐、忧愁、希望、失落，一切的一切都被竹内小姐以其稚气未脱、幼稚的语言所表现，竹内小姐的嗓鼻使用方面堪称高手，在激动和冷静时表现的气质是Q所喜爱并敬佩的，竹内小姐带动的小杰的气质是向高尚的气质发展的，可以感觉得到她对人物的理解是跨时代性的，是用发展的语言演绛成长的人物，这是其最大的优势和财富所在。这一点是田中小姐甚至许多女声优所不能比拟的。而田中小姐的语言感染力以及表现功力的自然和纯熟也是值得学习的。 　　后来竹内顺子又参与《火影忍者》中漩涡鸣人的配音，再一次大大提高了竹内的知名度，并且相当成功，与小杰有的一拼，这时候的她已经有12年的配音经验，可以说比98年的时候要成熟许多。虽然鸣人是男性，但是竹内顺子却能配的天衣无缝，不仅如此，还将鸣人的勇敢、毅力、倔强、不服输的精神以及偶尔显示的智慧表现的淋漓尽致。 　　竹内顺子的作品并不算特别多，但是人气漫画的主角倒占了不少。她也很会为男性人物配音，甚至有些比较难，比较不可思议的声音，都听不出来是出自于她。可见竹内的精炼。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 22119,
+            "name": "織本泉",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/17/ed/22119_crt_BMIGj.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/ed/22119_crt_BMIGj.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/ed/22119_crt_BMIGj.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/17/ed/22119_crt_BMIGj.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3848,
+                    "name": "石毛佐和",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/42/c8/3848_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/c8/3848_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/c8/3848_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/42/c8/3848_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の舞台女優、声優。血液型はA型。千葉県出身。愛称は佐和ちゃん、さわっち、いしげぇなど。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 22120,
+            "name": "フェアリモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c1/53/22120_crt_43nOi.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/53/22120_crt_43nOi.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/53/22120_crt_43nOi.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c1/53/22120_crt_43nOi.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3848,
+                    "name": "石毛佐和",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/42/c8/3848_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/c8/3848_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/c8/3848_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/42/c8/3848_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の舞台女優、声優。血液型はA型。千葉県出身。愛称は佐和ちゃん、さわっち、いしげぇなど。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 24258,
+            "name": "源輝二",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6c/d7/24258_crt_jA70g.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/d7/24258_crt_jA70g.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/d7/24258_crt_jA70g.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6c/d7/24258_crt_jA70g.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4232,
+                    "name": "神谷浩史",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/fa/4232_prsn_bBAP2.jpg?r=1675677585"
+                    },
+                    "short_summary": "高中时期是理科生，加入青二塾以前只是一般地看着动画，没有想要成为声优的念头。高三时，于7月份加入同年级朋友组建的演剧团，在9月份的地区演剧大赛中意外获得“个人演技奖”，自此开始对演剧事业产生兴趣。想考艺术类大学所以在高三理转文，并不成功，高考落榜。\r\n另寻出路的时候在杂志上看到了青二塾的广告，征得父母同意考上其东京校第14期。当时不了解其实这里培养的是声优而不是演员，起初产生了“别干了”的消极情绪，但之后仍在青二塾坚持学习了下去，不过是“不良墅生”，同学和老师之后都笑称当时他“很狂妄”，并不参加到同学间的自主练习中。1994年，19岁的神谷从青二塾毕业，顺利加入青二事务所。\r\n出道的头几年，相比于同期甚至后期的声优们很快的大放异彩，神谷则是全部出演酱油的路人角色。2006年8月7日，因为遭逢交通事故而住院治疗。虽然经纪公司并不愿透漏事故的原因，但从关系人口中得知似乎是骑乘机车时发生的。车祸似乎是神谷事业的一个拐点。2007年因担任《再见!绝望先生》、《高达00》等作品主角的CV而受到瞩目，之后在《夏目友人帐》、《化物语》等作品中为主角配音获得极高人气，目前则是因为饰演《进击的巨人》中的里维兵长而再度爆红。\r\n\r\n2025年1月1日，宣布与女演员、模特逢泽莉娜结婚。1月4日，在广播节目中透露自己于8年前起单身，后因此节目而与逢泽莉娜结缘，大约2年前开始交往。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 24259,
+            "name": "柴山純平",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/13/e7/24259_crt_lKdgo.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/e7/24259_crt_lKdgo.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/e7/24259_crt_lKdgo.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/13/e7/24259_crt_lKdgo.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4764,
+                    "name": "四反田マイケル",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c7/ad/4764_prsn_89738.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/ad/4764_prsn_89738.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/ad/4764_prsn_89738.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c7/ad/4764_prsn_89738.jpg"
+                    },
+                    "short_summary": "四反田 マイケル（したんだ まいける、本名同じ、1974年11月16日 - ）は、日本の男性声優、ナレーター、音響監督。神奈川県出身。旧芸名は「天田 真人（あまだ まさと）」。\r\n\r\n本人主催の声優養成機関Studio True Colorsで講師を務めるほか、声優養成所JTBエンタテインメントアカデミー、制作プロダクション スターライト･プロ主催のワークショップ等でも講師を務める。\r\n音声ドラマの演出・制作等も手掛けている。\r\n四反田マイケルは本名。アメリカ人と日本人のハーフである。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 24260,
+            "name": "氷見友樹",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/04/5f/24260_crt_NAfAf.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/5f/24260_crt_NAfAf.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/5f/24260_crt_NAfAf.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/04/5f/24260_crt_NAfAf.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3819,
+                    "name": "渡辺久美子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3a/90/3819_prsn_1Bqbt.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/90/3819_prsn_1Bqbt.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/90/3819_prsn_1Bqbt.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3a/90/3819_prsn_1Bqbt.jpg"
+                    },
+                    "short_summary": "日本の女性声優、ナレーター。アーツビジョン所属。夫は同じく声優の辻谷耕史。千葉県出身。身長154cm、血液型はO型。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 24261,
+            "name": "木村輝一",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e6/5e/24261_crt_kLOHl.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/5e/24261_crt_kLOHl.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/5e/24261_crt_kLOHl.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e6/5e/24261_crt_kLOHl.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4311,
+                    "name": "鈴村健一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f5/9d/4311_prsn_3bBmY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/9d/4311_prsn_3bBmY.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/9d/4311_prsn_3bBmY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f5/9d/4311_prsn_3bBmY.jpg"
+                    },
+                    "short_summary": "鈴村 健一（すずむら けんいち、1974年9月12日 - ）は、日本の男性声優、ナレーター、歌手。インテンション代表取締役、同社所属。妻は声優、歌手の坂本真綾。\r\n\r\n1993年3月に大阪府立少路高等学校卒業後、代々木アニメーション学院、日本ナレーション演技研究所等を経て、1994年にテレビアニメ『マクロス7』のモーリー役でデビュー。以後、現在に至るまでアニメ、ゲーム、ドラマCD、ラジオパーソナリティ、音楽活動など様々な分野で活躍する。\r\n2008年3月8日に開催された第2回声優アワードにて、ベストパーソナリティ賞・シナジー賞（『仮面ライダー電王』）をダブル受賞。同年10月8日、ランティスよりメジャーデビュー。\r\n2011年8月13日、ブログにて坂本真綾との結婚を報告。入籍日は8月8日。同年、第一回ミュージック・ジャケット大賞2011において準大賞を受賞（『CHRONICLE to the future』）。\r\n2012年3月2日に開催された第6回声優アワードにて、ST☆RISHとして歌唱賞を受賞。同年4月に長年所属していたアーツビジョンを離れ、翌月5月1日にアーツビジョン時代からのマネージャーである桑原敦と共に株式会社インテンションを立ち上げたことを報告。\r\n2016年3月12日に開催された第10回声優アワードでは助演男優賞とパーソナリティ賞をダブル受賞。同年5月12日に発表された第六回「ミュージック・ジャケット大賞2016」では特別賞を受賞した（『月と太陽のうた』）。\r\n\r\n愛称は「鈴（スズ）」、「スズケン」、「ムラケン（保志総一朗命名）」、「ピンピン（特定ラジオ内）」など。ただし、「ムラケン」と呼ぶのは命名者である保志のファンがほとんどで、実際のファンは「鈴（スズ）」と呼ぶことが多い。\r\nプロフィール上では大阪府出身（上京前に住んでいたのが大阪府）となっているが、生まれは新潟県。転勤が多い家庭で育ったことから、上記の新潟県、大阪府以外にも、岡山県岡山市、福岡県北九州市門司区などに住んでいたことがある。そのため「関西弁はあまり話せない」という一方で、素の喋りでは標準語イントネーションに近い関西弁訛りで話す場合が多い。\r\n幼い頃は喘息持ちで、呼吸法をマスターするため合気道を5年やっていた。かなりの偏食で、小学校中学年頃までは給食も満足に食べられなかったという。その反動からか大人になってからはグルメになったとのこと。\r\n大の犬好きで現在キャバリアとヨークシャー・テリアを飼っている。名前は「もも」と「アイビー」（ともにメス犬）といい、由来は花の名前から。洋服をネットで注文したりするなど溺愛している。その愛犬家ぶりをラジオなどで語り、リスナーから「犬の話はやめてください」との便りが届いたこともある。2016年4月1日放送の『鈴村健一のユニゾン!』にて愛犬アイビーが2016年1月に亡くなっていたことを明かした。\r\nアクション監督をしている4歳下の弟がいる、ラジオなどでも共演している。\r\n自他共に認める特撮ファンであり、特に『人造人間キカイダー』をこよなく愛している。特撮好きが高じて、『超人タイツ』という自身の番組内でオリジナルの特撮DVD・CDを制作するまでに至っている。初の特撮番組出演作『仮面ライダー電王』では、リュウタロス/仮面ライダー電王ガンフォームの声役に抜擢され、「仮面ライダーになりたいという夢が叶った」と喜んでいた。TVシリーズ、劇場版ともに敵怪人の声を兼任し、さらに主題歌も歌った。以後放送された仮面ライダーの劇場版等にも顔出しや声の出演で関わっている。\r\n必殺技は『肘からぷぅ』。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 98625,
+            "name": "アグニモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f9/34/98625_crt_SaaEx.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/34/98625_crt_SaaEx.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/34/98625_crt_SaaEx.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f9/34/98625_crt_SaaEx.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4084,
+                    "name": "竹内順子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a5/3c/4084_prsn_wQHsi.jpg"
+                    },
+                    "short_summary": "竹内顺子（1972年4月5日－），日本的女性声优、演员，现属剧团BQ MAP及尾木プロ THE NEXT事务所旗下。埼玉县出身，血型是B型。代表作有‘Hunter × Hunter’的（小杰·富力士）、‘メダロットシリーズ’的（メタビー）、‘火影忍者’的（漩涡鸣人）、‘Yes! 光之美少女5’的（夏木玲）等。\r\n\r\n\r\n竹内顺子在98年左右最成功的角色无疑是《Hunter X Hunter》的小杰了，小杰的天真、童稚、智慧、善良、倔强、快乐、忧愁、希望、失落，一切的一切都被竹内小姐以其稚气未脱、幼稚的语言所表现，竹内小姐的嗓鼻使用方面堪称高手，在激动和冷静时表现的气质是Q所喜爱并敬佩的，竹内小姐带动的小杰的气质是向高尚的气质发展的，可以感觉得到她对人物的理解是跨时代性的，是用发展的语言演绛成长的人物，这是其最大的优势和财富所在。这一点是田中小姐甚至许多女声优所不能比拟的。而田中小姐的语言感染力以及表现功力的自然和纯熟也是值得学习的。 　　后来竹内顺子又参与《火影忍者》中漩涡鸣人的配音，再一次大大提高了竹内的知名度，并且相当成功，与小杰有的一拼，这时候的她已经有12年的配音经验，可以说比98年的时候要成熟许多。虽然鸣人是男性，但是竹内顺子却能配的天衣无缝，不仅如此，还将鸣人的勇敢、毅力、倔强、不服输的精神以及偶尔显示的智慧表现的淋漓尽致。 　　竹内顺子的作品并不算特别多，但是人气漫画的主角倒占了不少。她也很会为男性人物配音，甚至有些比较难，比较不可思议的声音，都听不出来是出自于她。可见竹内的精炼。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 98688,
+            "name": "ヴォルフモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/70/e3/98688_crt_TmHhU.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/e3/98688_crt_TmHhU.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/e3/98688_crt_TmHhU.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/70/e3/98688_crt_TmHhU.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4232,
+                    "name": "神谷浩史",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/fa/4232_prsn_bBAP2.jpg?r=1675677585"
+                    },
+                    "short_summary": "高中时期是理科生，加入青二塾以前只是一般地看着动画，没有想要成为声优的念头。高三时，于7月份加入同年级朋友组建的演剧团，在9月份的地区演剧大赛中意外获得“个人演技奖”，自此开始对演剧事业产生兴趣。想考艺术类大学所以在高三理转文，并不成功，高考落榜。\r\n另寻出路的时候在杂志上看到了青二塾的广告，征得父母同意考上其东京校第14期。当时不了解其实这里培养的是声优而不是演员，起初产生了“别干了”的消极情绪，但之后仍在青二塾坚持学习了下去，不过是“不良墅生”，同学和老师之后都笑称当时他“很狂妄”，并不参加到同学间的自主练习中。1994年，19岁的神谷从青二塾毕业，顺利加入青二事务所。\r\n出道的头几年，相比于同期甚至后期的声优们很快的大放异彩，神谷则是全部出演酱油的路人角色。2006年8月7日，因为遭逢交通事故而住院治疗。虽然经纪公司并不愿透漏事故的原因，但从关系人口中得知似乎是骑乘机车时发生的。车祸似乎是神谷事业的一个拐点。2007年因担任《再见!绝望先生》、《高达00》等作品主角的CV而受到瞩目，之后在《夏目友人帐》、《化物语》等作品中为主角配音获得极高人气，目前则是因为饰演《进击的巨人》中的里维兵长而再度爆红。\r\n\r\n2025年1月1日，宣布与女演员、模特逢泽莉娜结婚。1月4日，在广播节目中透露自己于8年前起单身，后因此节目而与逢泽莉娜结缘，大约2年前开始交往。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 98940,
+            "name": "ヴリトラモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/38/d7/98940_crt_6tkrX.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/d7/98940_crt_6tkrX.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/d7/98940_crt_6tkrX.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/38/d7/98940_crt_6tkrX.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4084,
+                    "name": "竹内順子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a5/3c/4084_prsn_wQHsi.jpg"
+                    },
+                    "short_summary": "竹内顺子（1972年4月5日－），日本的女性声优、演员，现属剧团BQ MAP及尾木プロ THE NEXT事务所旗下。埼玉县出身，血型是B型。代表作有‘Hunter × Hunter’的（小杰·富力士）、‘メダロットシリーズ’的（メタビー）、‘火影忍者’的（漩涡鸣人）、‘Yes! 光之美少女5’的（夏木玲）等。\r\n\r\n\r\n竹内顺子在98年左右最成功的角色无疑是《Hunter X Hunter》的小杰了，小杰的天真、童稚、智慧、善良、倔强、快乐、忧愁、希望、失落，一切的一切都被竹内小姐以其稚气未脱、幼稚的语言所表现，竹内小姐的嗓鼻使用方面堪称高手，在激动和冷静时表现的气质是Q所喜爱并敬佩的，竹内小姐带动的小杰的气质是向高尚的气质发展的，可以感觉得到她对人物的理解是跨时代性的，是用发展的语言演绛成长的人物，这是其最大的优势和财富所在。这一点是田中小姐甚至许多女声优所不能比拟的。而田中小姐的语言感染力以及表现功力的自然和纯熟也是值得学习的。 　　后来竹内顺子又参与《火影忍者》中漩涡鸣人的配音，再一次大大提高了竹内的知名度，并且相当成功，与小杰有的一拼，这时候的她已经有12年的配音经验，可以说比98年的时候要成熟许多。虽然鸣人是男性，但是竹内顺子却能配的天衣无缝，不仅如此，还将鸣人的勇敢、毅力、倔强、不服输的精神以及偶尔显示的智慧表现的淋漓尽致。 　　竹内顺子的作品并不算特别多，但是人气漫画的主角倒占了不少。她也很会为男性人物配音，甚至有些比较难，比较不可思议的声音，都听不出来是出自于她。可见竹内的精炼。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 99003,
+            "name": "ガルムモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/65/5d/99003_crt_fJ88S.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/5d/99003_crt_fJ88S.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/5d/99003_crt_fJ88S.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/65/5d/99003_crt_fJ88S.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4232,
+                    "name": "神谷浩史",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/fa/4232_prsn_bBAP2.jpg?r=1675677585"
+                    },
+                    "short_summary": "高中时期是理科生，加入青二塾以前只是一般地看着动画，没有想要成为声优的念头。高三时，于7月份加入同年级朋友组建的演剧团，在9月份的地区演剧大赛中意外获得“个人演技奖”，自此开始对演剧事业产生兴趣。想考艺术类大学所以在高三理转文，并不成功，高考落榜。\r\n另寻出路的时候在杂志上看到了青二塾的广告，征得父母同意考上其东京校第14期。当时不了解其实这里培养的是声优而不是演员，起初产生了“别干了”的消极情绪，但之后仍在青二塾坚持学习了下去，不过是“不良墅生”，同学和老师之后都笑称当时他“很狂妄”，并不参加到同学间的自主练习中。1994年，19岁的神谷从青二塾毕业，顺利加入青二事务所。\r\n出道的头几年，相比于同期甚至后期的声优们很快的大放异彩，神谷则是全部出演酱油的路人角色。2006年8月7日，因为遭逢交通事故而住院治疗。虽然经纪公司并不愿透漏事故的原因，但从关系人口中得知似乎是骑乘机车时发生的。车祸似乎是神谷事业的一个拐点。2007年因担任《再见!绝望先生》、《高达00》等作品主角的CV而受到瞩目，之后在《夏目友人帐》、《化物语》等作品中为主角配音获得极高人气，目前则是因为饰演《进击的巨人》中的里维兵长而再度爆红。\r\n\r\n2025年1月1日，宣布与女演员、模特逢泽莉娜结婚。1月4日，在广播节目中透露自己于8年前起单身，后因此节目而与逢泽莉娜结缘，大约2年前开始交往。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 102054,
+            "name": "シューツモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ca/df/102054_crt_usVnV.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/df/102054_crt_usVnV.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/df/102054_crt_usVnV.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ca/df/102054_crt_usVnV.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3848,
+                    "name": "石毛佐和",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/42/c8/3848_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/c8/3848_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/c8/3848_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/42/c8/3848_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の舞台女優、声優。血液型はA型。千葉県出身。愛称は佐和ちゃん、さわっち、いしげぇなど。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 102056,
+            "name": "チャックモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/77/fa/102056_crt_WE9Kx.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/fa/102056_crt_WE9Kx.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/fa/102056_crt_WE9Kx.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/77/fa/102056_crt_WE9Kx.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3819,
+                    "name": "渡辺久美子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3a/90/3819_prsn_1Bqbt.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/90/3819_prsn_1Bqbt.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/90/3819_prsn_1Bqbt.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3a/90/3819_prsn_1Bqbt.jpg"
+                    },
+                    "short_summary": "日本の女性声優、ナレーター。アーツビジョン所属。夫は同じく声優の辻谷耕史。千葉県出身。身長154cm、血液型はO型。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 102057,
+            "name": "ブリザーモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/10/42/102057_crt_fxwX7.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/10/42/102057_crt_fxwX7.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/10/42/102057_crt_fxwX7.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/10/42/102057_crt_fxwX7.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3819,
+                    "name": "渡辺久美子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3a/90/3819_prsn_1Bqbt.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/90/3819_prsn_1Bqbt.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/90/3819_prsn_1Bqbt.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3a/90/3819_prsn_1Bqbt.jpg"
+                    },
+                    "short_summary": "日本の女性声優、ナレーター。アーツビジョン所属。夫は同じく声優の辻谷耕史。千葉県出身。身長154cm、血液型はO型。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 102459,
+            "name": "カイゼルグレイモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f3/cc/102459_crt_9qb34.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/cc/102459_crt_9qb34.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/cc/102459_crt_9qb34.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f3/cc/102459_crt_9qb34.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4084,
+                    "name": "竹内順子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a5/3c/4084_prsn_wQHsi.jpg"
+                    },
+                    "short_summary": "竹内顺子（1972年4月5日－），日本的女性声优、演员，现属剧团BQ MAP及尾木プロ THE NEXT事务所旗下。埼玉县出身，血型是B型。代表作有‘Hunter × Hunter’的（小杰·富力士）、‘メダロットシリーズ’的（メタビー）、‘火影忍者’的（漩涡鸣人）、‘Yes! 光之美少女5’的（夏木玲）等。\r\n\r\n\r\n竹内顺子在98年左右最成功的角色无疑是《Hunter X Hunter》的小杰了，小杰的天真、童稚、智慧、善良、倔强、快乐、忧愁、希望、失落，一切的一切都被竹内小姐以其稚气未脱、幼稚的语言所表现，竹内小姐的嗓鼻使用方面堪称高手，在激动和冷静时表现的气质是Q所喜爱并敬佩的，竹内小姐带动的小杰的气质是向高尚的气质发展的，可以感觉得到她对人物的理解是跨时代性的，是用发展的语言演绛成长的人物，这是其最大的优势和财富所在。这一点是田中小姐甚至许多女声优所不能比拟的。而田中小姐的语言感染力以及表现功力的自然和纯熟也是值得学习的。 　　后来竹内顺子又参与《火影忍者》中漩涡鸣人的配音，再一次大大提高了竹内的知名度，并且相当成功，与小杰有的一拼，这时候的她已经有12年的配音经验，可以说比98年的时候要成熟许多。虽然鸣人是男性，但是竹内顺子却能配的天衣无缝，不仅如此，还将鸣人的勇敢、毅力、倔强、不服输的精神以及偶尔显示的智慧表现的淋漓尽致。 　　竹内顺子的作品并不算特别多，但是人气漫画的主角倒占了不少。她也很会为男性人物配音，甚至有些比较难，比较不可思议的声音，都听不出来是出自于她。可见竹内的精炼。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 102995,
+            "name": "マグナガルルモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/56/e4/102995_crt_dEbT9.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/e4/102995_crt_dEbT9.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/e4/102995_crt_dEbT9.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/56/e4/102995_crt_dEbT9.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4232,
+                    "name": "神谷浩史",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/fa/4232_prsn_bBAP2.jpg?r=1675677585"
+                    },
+                    "short_summary": "高中时期是理科生，加入青二塾以前只是一般地看着动画，没有想要成为声优的念头。高三时，于7月份加入同年级朋友组建的演剧团，在9月份的地区演剧大赛中意外获得“个人演技奖”，自此开始对演剧事业产生兴趣。想考艺术类大学所以在高三理转文，并不成功，高考落榜。\r\n另寻出路的时候在杂志上看到了青二塾的广告，征得父母同意考上其东京校第14期。当时不了解其实这里培养的是声优而不是演员，起初产生了“别干了”的消极情绪，但之后仍在青二塾坚持学习了下去，不过是“不良墅生”，同学和老师之后都笑称当时他“很狂妄”，并不参加到同学间的自主练习中。1994年，19岁的神谷从青二塾毕业，顺利加入青二事务所。\r\n出道的头几年，相比于同期甚至后期的声优们很快的大放异彩，神谷则是全部出演酱油的路人角色。2006年8月7日，因为遭逢交通事故而住院治疗。虽然经纪公司并不愿透漏事故的原因，但从关系人口中得知似乎是骑乘机车时发生的。车祸似乎是神谷事业的一个拐点。2007年因担任《再见!绝望先生》、《高达00》等作品主角的CV而受到瞩目，之后在《夏目友人帐》、《化物语》等作品中为主角配音获得极高人气，目前则是因为饰演《进击的巨人》中的里维兵长而再度爆红。\r\n\r\n2025年1月1日，宣布与女演员、模特逢泽莉娜结婚。1月4日，在广播节目中透露自己于8年前起单身，后因此节目而与逢泽莉娜结缘，大约2年前开始交往。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 103093,
+            "name": "スサノオモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9d/43/103093_crt_eypy2.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9d/43/103093_crt_eypy2.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9d/43/103093_crt_eypy2.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9d/43/103093_crt_eypy2.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4084,
+                    "name": "竹内順子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a5/3c/4084_prsn_wQHsi.jpg"
+                    },
+                    "short_summary": "竹内顺子（1972年4月5日－），日本的女性声优、演员，现属剧团BQ MAP及尾木プロ THE NEXT事务所旗下。埼玉县出身，血型是B型。代表作有‘Hunter × Hunter’的（小杰·富力士）、‘メダロットシリーズ’的（メタビー）、‘火影忍者’的（漩涡鸣人）、‘Yes! 光之美少女5’的（夏木玲）等。\r\n\r\n\r\n竹内顺子在98年左右最成功的角色无疑是《Hunter X Hunter》的小杰了，小杰的天真、童稚、智慧、善良、倔强、快乐、忧愁、希望、失落，一切的一切都被竹内小姐以其稚气未脱、幼稚的语言所表现，竹内小姐的嗓鼻使用方面堪称高手，在激动和冷静时表现的气质是Q所喜爱并敬佩的，竹内小姐带动的小杰的气质是向高尚的气质发展的，可以感觉得到她对人物的理解是跨时代性的，是用发展的语言演绛成长的人物，这是其最大的优势和财富所在。这一点是田中小姐甚至许多女声优所不能比拟的。而田中小姐的语言感染力以及表现功力的自然和纯熟也是值得学习的。 　　后来竹内顺子又参与《火影忍者》中漩涡鸣人的配音，再一次大大提高了竹内的知名度，并且相当成功，与小杰有的一拼，这时候的她已经有12年的配音经验，可以说比98年的时候要成熟许多。虽然鸣人是男性，但是竹内顺子却能配的天衣无缝，不仅如此，还将鸣人的勇敢、毅力、倔强、不服输的精神以及偶尔显示的智慧表现的淋漓尽致。 　　竹内顺子的作品并不算特别多，但是人气漫画的主角倒占了不少。她也很会为男性人物配音，甚至有些比较难，比较不可思议的声音，都听不出来是出自于她。可见竹内的精炼。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 104472,
+            "name": "アルダモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5b/00/104472_crt_R0ok7.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/00/104472_crt_R0ok7.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/00/104472_crt_R0ok7.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5b/00/104472_crt_R0ok7.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4084,
+                    "name": "竹内順子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a5/3c/4084_prsn_wQHsi.jpg"
+                    },
+                    "short_summary": "竹内顺子（1972年4月5日－），日本的女性声优、演员，现属剧团BQ MAP及尾木プロ THE NEXT事务所旗下。埼玉县出身，血型是B型。代表作有‘Hunter × Hunter’的（小杰·富力士）、‘メダロットシリーズ’的（メタビー）、‘火影忍者’的（漩涡鸣人）、‘Yes! 光之美少女5’的（夏木玲）等。\r\n\r\n\r\n竹内顺子在98年左右最成功的角色无疑是《Hunter X Hunter》的小杰了，小杰的天真、童稚、智慧、善良、倔强、快乐、忧愁、希望、失落，一切的一切都被竹内小姐以其稚气未脱、幼稚的语言所表现，竹内小姐的嗓鼻使用方面堪称高手，在激动和冷静时表现的气质是Q所喜爱并敬佩的，竹内小姐带动的小杰的气质是向高尚的气质发展的，可以感觉得到她对人物的理解是跨时代性的，是用发展的语言演绛成长的人物，这是其最大的优势和财富所在。这一点是田中小姐甚至许多女声优所不能比拟的。而田中小姐的语言感染力以及表现功力的自然和纯熟也是值得学习的。 　　后来竹内顺子又参与《火影忍者》中漩涡鸣人的配音，再一次大大提高了竹内的知名度，并且相当成功，与小杰有的一拼，这时候的她已经有12年的配音经验，可以说比98年的时候要成熟许多。虽然鸣人是男性，但是竹内顺子却能配的天衣无缝，不仅如此，还将鸣人的勇敢、毅力、倔强、不服输的精神以及偶尔显示的智慧表现的淋漓尽致。 　　竹内顺子的作品并不算特别多，但是人气漫画的主角倒占了不少。她也很会为男性人物配音，甚至有些比较难，比较不可思议的声音，都听不出来是出自于她。可见竹内的精炼。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 104473,
+            "name": "ベオウルフモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a2/ce/104473_crt_AQRVt.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/ce/104473_crt_AQRVt.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/ce/104473_crt_AQRVt.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a2/ce/104473_crt_AQRVt.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4232,
+                    "name": "神谷浩史",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/fa/4232_prsn_bBAP2.jpg?r=1675677585"
+                    },
+                    "short_summary": "高中时期是理科生，加入青二塾以前只是一般地看着动画，没有想要成为声优的念头。高三时，于7月份加入同年级朋友组建的演剧团，在9月份的地区演剧大赛中意外获得“个人演技奖”，自此开始对演剧事业产生兴趣。想考艺术类大学所以在高三理转文，并不成功，高考落榜。\r\n另寻出路的时候在杂志上看到了青二塾的广告，征得父母同意考上其东京校第14期。当时不了解其实这里培养的是声优而不是演员，起初产生了“别干了”的消极情绪，但之后仍在青二塾坚持学习了下去，不过是“不良墅生”，同学和老师之后都笑称当时他“很狂妄”，并不参加到同学间的自主练习中。1994年，19岁的神谷从青二塾毕业，顺利加入青二事务所。\r\n出道的头几年，相比于同期甚至后期的声优们很快的大放异彩，神谷则是全部出演酱油的路人角色。2006年8月7日，因为遭逢交通事故而住院治疗。虽然经纪公司并不愿透漏事故的原因，但从关系人口中得知似乎是骑乘机车时发生的。车祸似乎是神谷事业的一个拐点。2007年因担任《再见!绝望先生》、《高达00》等作品主角的CV而受到瞩目，之后在《夏目友人帐》、《化物语》等作品中为主角配音获得极高人气，目前则是因为饰演《进击的巨人》中的里维兵长而再度爆红。\r\n\r\n2025年1月1日，宣布与女演员、模特逢泽莉娜结婚。1月4日，在广播节目中透露自己于8年前起单身，后因此节目而与逢泽莉娜结缘，大约2年前开始交往。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 106202,
+            "name": "ブリッツモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/77/bb/106202_crt_U4M4x.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/bb/106202_crt_U4M4x.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/bb/106202_crt_U4M4x.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/77/bb/106202_crt_U4M4x.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4764,
+                    "name": "四反田マイケル",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c7/ad/4764_prsn_89738.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/ad/4764_prsn_89738.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/ad/4764_prsn_89738.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c7/ad/4764_prsn_89738.jpg"
+                    },
+                    "short_summary": "四反田 マイケル（したんだ まいける、本名同じ、1974年11月16日 - ）は、日本の男性声優、ナレーター、音響監督。神奈川県出身。旧芸名は「天田 真人（あまだ まさと）」。\r\n\r\n本人主催の声優養成機関Studio True Colorsで講師を務めるほか、声優養成所JTBエンタテインメントアカデミー、制作プロダクション スターライト･プロ主催のワークショップ等でも講師を務める。\r\n音声ドラマの演出・制作等も手掛けている。\r\n四反田マイケルは本名。アメリカ人と日本人のハーフである。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 106203,
+            "name": "ボルグモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/61/99/106203_crt_06N5W.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/99/106203_crt_06N5W.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/99/106203_crt_06N5W.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/61/99/106203_crt_06N5W.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4764,
+                    "name": "四反田マイケル",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c7/ad/4764_prsn_89738.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/ad/4764_prsn_89738.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/ad/4764_prsn_89738.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c7/ad/4764_prsn_89738.jpg"
+                    },
+                    "short_summary": "四反田 マイケル（したんだ まいける、本名同じ、1974年11月16日 - ）は、日本の男性声優、ナレーター、音響監督。神奈川県出身。旧芸名は「天田 真人（あまだ まさと）」。\r\n\r\n本人主催の声優養成機関Studio True Colorsで講師を務めるほか、声優養成所JTBエンタテインメントアカデミー、制作プロダクション スターライト･プロ主催のワークショップ等でも講師を務める。\r\n音声ドラマの演出・制作等も手掛けている。\r\n四反田マイケルは本名。アメリカ人と日本人のハーフである。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 106204,
+            "name": "ダスクモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bf/a3/106204_crt_dNL2N.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/a3/106204_crt_dNL2N.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/a3/106204_crt_dNL2N.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bf/a3/106204_crt_dNL2N.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4311,
+                    "name": "鈴村健一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f5/9d/4311_prsn_3bBmY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/9d/4311_prsn_3bBmY.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/9d/4311_prsn_3bBmY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f5/9d/4311_prsn_3bBmY.jpg"
+                    },
+                    "short_summary": "鈴村 健一（すずむら けんいち、1974年9月12日 - ）は、日本の男性声優、ナレーター、歌手。インテンション代表取締役、同社所属。妻は声優、歌手の坂本真綾。\r\n\r\n1993年3月に大阪府立少路高等学校卒業後、代々木アニメーション学院、日本ナレーション演技研究所等を経て、1994年にテレビアニメ『マクロス7』のモーリー役でデビュー。以後、現在に至るまでアニメ、ゲーム、ドラマCD、ラジオパーソナリティ、音楽活動など様々な分野で活躍する。\r\n2008年3月8日に開催された第2回声優アワードにて、ベストパーソナリティ賞・シナジー賞（『仮面ライダー電王』）をダブル受賞。同年10月8日、ランティスよりメジャーデビュー。\r\n2011年8月13日、ブログにて坂本真綾との結婚を報告。入籍日は8月8日。同年、第一回ミュージック・ジャケット大賞2011において準大賞を受賞（『CHRONICLE to the future』）。\r\n2012年3月2日に開催された第6回声優アワードにて、ST☆RISHとして歌唱賞を受賞。同年4月に長年所属していたアーツビジョンを離れ、翌月5月1日にアーツビジョン時代からのマネージャーである桑原敦と共に株式会社インテンションを立ち上げたことを報告。\r\n2016年3月12日に開催された第10回声優アワードでは助演男優賞とパーソナリティ賞をダブル受賞。同年5月12日に発表された第六回「ミュージック・ジャケット大賞2016」では特別賞を受賞した（『月と太陽のうた』）。\r\n\r\n愛称は「鈴（スズ）」、「スズケン」、「ムラケン（保志総一朗命名）」、「ピンピン（特定ラジオ内）」など。ただし、「ムラケン」と呼ぶのは命名者である保志のファンがほとんどで、実際のファンは「鈴（スズ）」と呼ぶことが多い。\r\nプロフィール上では大阪府出身（上京前に住んでいたのが大阪府）となっているが、生まれは新潟県。転勤が多い家庭で育ったことから、上記の新潟県、大阪府以外にも、岡山県岡山市、福岡県北九州市門司区などに住んでいたことがある。そのため「関西弁はあまり話せない」という一方で、素の喋りでは標準語イントネーションに近い関西弁訛りで話す場合が多い。\r\n幼い頃は喘息持ちで、呼吸法をマスターするため合気道を5年やっていた。かなりの偏食で、小学校中学年頃までは給食も満足に食べられなかったという。その反動からか大人になってからはグルメになったとのこと。\r\n大の犬好きで現在キャバリアとヨークシャー・テリアを飼っている。名前は「もも」と「アイビー」（ともにメス犬）といい、由来は花の名前から。洋服をネットで注文したりするなど溺愛している。その愛犬家ぶりをラジオなどで語り、リスナーから「犬の話はやめてください」との便りが届いたこともある。2016年4月1日放送の『鈴村健一のユニゾン!』にて愛犬アイビーが2016年1月に亡くなっていたことを明かした。\r\nアクション監督をしている4歳下の弟がいる、ラジオなどでも共演している。\r\n自他共に認める特撮ファンであり、特に『人造人間キカイダー』をこよなく愛している。特撮好きが高じて、『超人タイツ』という自身の番組内でオリジナルの特撮DVD・CDを制作するまでに至っている。初の特撮番組出演作『仮面ライダー電王』では、リュウタロス/仮面ライダー電王ガンフォームの声役に抜擢され、「仮面ライダーになりたいという夢が叶った」と喜んでいた。TVシリーズ、劇場版ともに敵怪人の声を兼任し、さらに主題歌も歌った。以後放送された仮面ライダーの劇場版等にも顔出しや声の出演で関わっている。\r\n必殺技は『肘からぷぅ』。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 106205,
+            "name": "ベルグモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/63/8c/106205_crt_rmegO.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/8c/106205_crt_rmegO.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/8c/106205_crt_rmegO.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/63/8c/106205_crt_rmegO.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4311,
+                    "name": "鈴村健一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f5/9d/4311_prsn_3bBmY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/9d/4311_prsn_3bBmY.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/9d/4311_prsn_3bBmY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f5/9d/4311_prsn_3bBmY.jpg"
+                    },
+                    "short_summary": "鈴村 健一（すずむら けんいち、1974年9月12日 - ）は、日本の男性声優、ナレーター、歌手。インテンション代表取締役、同社所属。妻は声優、歌手の坂本真綾。\r\n\r\n1993年3月に大阪府立少路高等学校卒業後、代々木アニメーション学院、日本ナレーション演技研究所等を経て、1994年にテレビアニメ『マクロス7』のモーリー役でデビュー。以後、現在に至るまでアニメ、ゲーム、ドラマCD、ラジオパーソナリティ、音楽活動など様々な分野で活躍する。\r\n2008年3月8日に開催された第2回声優アワードにて、ベストパーソナリティ賞・シナジー賞（『仮面ライダー電王』）をダブル受賞。同年10月8日、ランティスよりメジャーデビュー。\r\n2011年8月13日、ブログにて坂本真綾との結婚を報告。入籍日は8月8日。同年、第一回ミュージック・ジャケット大賞2011において準大賞を受賞（『CHRONICLE to the future』）。\r\n2012年3月2日に開催された第6回声優アワードにて、ST☆RISHとして歌唱賞を受賞。同年4月に長年所属していたアーツビジョンを離れ、翌月5月1日にアーツビジョン時代からのマネージャーである桑原敦と共に株式会社インテンションを立ち上げたことを報告。\r\n2016年3月12日に開催された第10回声優アワードでは助演男優賞とパーソナリティ賞をダブル受賞。同年5月12日に発表された第六回「ミュージック・ジャケット大賞2016」では特別賞を受賞した（『月と太陽のうた』）。\r\n\r\n愛称は「鈴（スズ）」、「スズケン」、「ムラケン（保志総一朗命名）」、「ピンピン（特定ラジオ内）」など。ただし、「ムラケン」と呼ぶのは命名者である保志のファンがほとんどで、実際のファンは「鈴（スズ）」と呼ぶことが多い。\r\nプロフィール上では大阪府出身（上京前に住んでいたのが大阪府）となっているが、生まれは新潟県。転勤が多い家庭で育ったことから、上記の新潟県、大阪府以外にも、岡山県岡山市、福岡県北九州市門司区などに住んでいたことがある。そのため「関西弁はあまり話せない」という一方で、素の喋りでは標準語イントネーションに近い関西弁訛りで話す場合が多い。\r\n幼い頃は喘息持ちで、呼吸法をマスターするため合気道を5年やっていた。かなりの偏食で、小学校中学年頃までは給食も満足に食べられなかったという。その反動からか大人になってからはグルメになったとのこと。\r\n大の犬好きで現在キャバリアとヨークシャー・テリアを飼っている。名前は「もも」と「アイビー」（ともにメス犬）といい、由来は花の名前から。洋服をネットで注文したりするなど溺愛している。その愛犬家ぶりをラジオなどで語り、リスナーから「犬の話はやめてください」との便りが届いたこともある。2016年4月1日放送の『鈴村健一のユニゾン!』にて愛犬アイビーが2016年1月に亡くなっていたことを明かした。\r\nアクション監督をしている4歳下の弟がいる、ラジオなどでも共演している。\r\n自他共に認める特撮ファンであり、特に『人造人間キカイダー』をこよなく愛している。特撮好きが高じて、『超人タイツ』という自身の番組内でオリジナルの特撮DVD・CDを制作するまでに至っている。初の特撮番組出演作『仮面ライダー電王』では、リュウタロス/仮面ライダー電王ガンフォームの声役に抜擢され、「仮面ライダーになりたいという夢が叶った」と喜んでいた。TVシリーズ、劇場版ともに敵怪人の声を兼任し、さらに主題歌も歌った。以後放送された仮面ライダーの劇場版等にも顔出しや声の出演で関わっている。\r\n必殺技は『肘からぷぅ』。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 106206,
+            "name": "レーベモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/26/98/106206_crt_21mHP.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/26/98/106206_crt_21mHP.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/26/98/106206_crt_21mHP.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/26/98/106206_crt_21mHP.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4311,
+                    "name": "鈴村健一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f5/9d/4311_prsn_3bBmY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/9d/4311_prsn_3bBmY.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/9d/4311_prsn_3bBmY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f5/9d/4311_prsn_3bBmY.jpg"
+                    },
+                    "short_summary": "鈴村 健一（すずむら けんいち、1974年9月12日 - ）は、日本の男性声優、ナレーター、歌手。インテンション代表取締役、同社所属。妻は声優、歌手の坂本真綾。\r\n\r\n1993年3月に大阪府立少路高等学校卒業後、代々木アニメーション学院、日本ナレーション演技研究所等を経て、1994年にテレビアニメ『マクロス7』のモーリー役でデビュー。以後、現在に至るまでアニメ、ゲーム、ドラマCD、ラジオパーソナリティ、音楽活動など様々な分野で活躍する。\r\n2008年3月8日に開催された第2回声優アワードにて、ベストパーソナリティ賞・シナジー賞（『仮面ライダー電王』）をダブル受賞。同年10月8日、ランティスよりメジャーデビュー。\r\n2011年8月13日、ブログにて坂本真綾との結婚を報告。入籍日は8月8日。同年、第一回ミュージック・ジャケット大賞2011において準大賞を受賞（『CHRONICLE to the future』）。\r\n2012年3月2日に開催された第6回声優アワードにて、ST☆RISHとして歌唱賞を受賞。同年4月に長年所属していたアーツビジョンを離れ、翌月5月1日にアーツビジョン時代からのマネージャーである桑原敦と共に株式会社インテンションを立ち上げたことを報告。\r\n2016年3月12日に開催された第10回声優アワードでは助演男優賞とパーソナリティ賞をダブル受賞。同年5月12日に発表された第六回「ミュージック・ジャケット大賞2016」では特別賞を受賞した（『月と太陽のうた』）。\r\n\r\n愛称は「鈴（スズ）」、「スズケン」、「ムラケン（保志総一朗命名）」、「ピンピン（特定ラジオ内）」など。ただし、「ムラケン」と呼ぶのは命名者である保志のファンがほとんどで、実際のファンは「鈴（スズ）」と呼ぶことが多い。\r\nプロフィール上では大阪府出身（上京前に住んでいたのが大阪府）となっているが、生まれは新潟県。転勤が多い家庭で育ったことから、上記の新潟県、大阪府以外にも、岡山県岡山市、福岡県北九州市門司区などに住んでいたことがある。そのため「関西弁はあまり話せない」という一方で、素の喋りでは標準語イントネーションに近い関西弁訛りで話す場合が多い。\r\n幼い頃は喘息持ちで、呼吸法をマスターするため合気道を5年やっていた。かなりの偏食で、小学校中学年頃までは給食も満足に食べられなかったという。その反動からか大人になってからはグルメになったとのこと。\r\n大の犬好きで現在キャバリアとヨークシャー・テリアを飼っている。名前は「もも」と「アイビー」（ともにメス犬）といい、由来は花の名前から。洋服をネットで注文したりするなど溺愛している。その愛犬家ぶりをラジオなどで語り、リスナーから「犬の話はやめてください」との便りが届いたこともある。2016年4月1日放送の『鈴村健一のユニゾン!』にて愛犬アイビーが2016年1月に亡くなっていたことを明かした。\r\nアクション監督をしている4歳下の弟がいる、ラジオなどでも共演している。\r\n自他共に認める特撮ファンであり、特に『人造人間キカイダー』をこよなく愛している。特撮好きが高じて、『超人タイツ』という自身の番組内でオリジナルの特撮DVD・CDを制作するまでに至っている。初の特撮番組出演作『仮面ライダー電王』では、リュウタロス/仮面ライダー電王ガンフォームの声役に抜擢され、「仮面ライダーになりたいという夢が叶った」と喜んでいた。TVシリーズ、劇場版ともに敵怪人の声を兼任し、さらに主題歌も歌った。以後放送された仮面ライダーの劇場版等にも顔出しや声の出演で関わっている。\r\n必殺技は『肘からぷぅ』。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 106207,
+            "name": "カイザーレオモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b3/dd/106207_crt_BinFS.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/dd/106207_crt_BinFS.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/dd/106207_crt_BinFS.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b3/dd/106207_crt_BinFS.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4311,
+                    "name": "鈴村健一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f5/9d/4311_prsn_3bBmY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/9d/4311_prsn_3bBmY.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/9d/4311_prsn_3bBmY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f5/9d/4311_prsn_3bBmY.jpg"
+                    },
+                    "short_summary": "鈴村 健一（すずむら けんいち、1974年9月12日 - ）は、日本の男性声優、ナレーター、歌手。インテンション代表取締役、同社所属。妻は声優、歌手の坂本真綾。\r\n\r\n1993年3月に大阪府立少路高等学校卒業後、代々木アニメーション学院、日本ナレーション演技研究所等を経て、1994年にテレビアニメ『マクロス7』のモーリー役でデビュー。以後、現在に至るまでアニメ、ゲーム、ドラマCD、ラジオパーソナリティ、音楽活動など様々な分野で活躍する。\r\n2008年3月8日に開催された第2回声優アワードにて、ベストパーソナリティ賞・シナジー賞（『仮面ライダー電王』）をダブル受賞。同年10月8日、ランティスよりメジャーデビュー。\r\n2011年8月13日、ブログにて坂本真綾との結婚を報告。入籍日は8月8日。同年、第一回ミュージック・ジャケット大賞2011において準大賞を受賞（『CHRONICLE to the future』）。\r\n2012年3月2日に開催された第6回声優アワードにて、ST☆RISHとして歌唱賞を受賞。同年4月に長年所属していたアーツビジョンを離れ、翌月5月1日にアーツビジョン時代からのマネージャーである桑原敦と共に株式会社インテンションを立ち上げたことを報告。\r\n2016年3月12日に開催された第10回声優アワードでは助演男優賞とパーソナリティ賞をダブル受賞。同年5月12日に発表された第六回「ミュージック・ジャケット大賞2016」では特別賞を受賞した（『月と太陽のうた』）。\r\n\r\n愛称は「鈴（スズ）」、「スズケン」、「ムラケン（保志総一朗命名）」、「ピンピン（特定ラジオ内）」など。ただし、「ムラケン」と呼ぶのは命名者である保志のファンがほとんどで、実際のファンは「鈴（スズ）」と呼ぶことが多い。\r\nプロフィール上では大阪府出身（上京前に住んでいたのが大阪府）となっているが、生まれは新潟県。転勤が多い家庭で育ったことから、上記の新潟県、大阪府以外にも、岡山県岡山市、福岡県北九州市門司区などに住んでいたことがある。そのため「関西弁はあまり話せない」という一方で、素の喋りでは標準語イントネーションに近い関西弁訛りで話す場合が多い。\r\n幼い頃は喘息持ちで、呼吸法をマスターするため合気道を5年やっていた。かなりの偏食で、小学校中学年頃までは給食も満足に食べられなかったという。その反動からか大人になってからはグルメになったとのこと。\r\n大の犬好きで現在キャバリアとヨークシャー・テリアを飼っている。名前は「もも」と「アイビー」（ともにメス犬）といい、由来は花の名前から。洋服をネットで注文したりするなど溺愛している。その愛犬家ぶりをラジオなどで語り、リスナーから「犬の話はやめてください」との便りが届いたこともある。2016年4月1日放送の『鈴村健一のユニゾン!』にて愛犬アイビーが2016年1月に亡くなっていたことを明かした。\r\nアクション監督をしている4歳下の弟がいる、ラジオなどでも共演している。\r\n自他共に認める特撮ファンであり、特に『人造人間キカイダー』をこよなく愛している。特撮好きが高じて、『超人タイツ』という自身の番組内でオリジナルの特撮DVD・CDを制作するまでに至っている。初の特撮番組出演作『仮面ライダー電王』では、リュウタロス/仮面ライダー電王ガンフォームの声役に抜擢され、「仮面ライダーになりたいという夢が叶った」と喜んでいた。TVシリーズ、劇場版ともに敵怪人の声を兼任し、さらに主題歌も歌った。以後放送された仮面ライダーの劇場版等にも顔出しや声の出演で関わっている。\r\n必殺技は『肘からぷぅ』。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 106216,
+            "name": "フレイモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7c/9c/106216_crt_eGq1o.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/9c/106216_crt_eGq1o.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/9c/106216_crt_eGq1o.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7c/9c/106216_crt_eGq1o.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4084,
+                    "name": "竹内順子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a5/3c/4084_prsn_wQHsi.jpg"
+                    },
+                    "short_summary": "竹内顺子（1972年4月5日－），日本的女性声优、演员，现属剧团BQ MAP及尾木プロ THE NEXT事务所旗下。埼玉县出身，血型是B型。代表作有‘Hunter × Hunter’的（小杰·富力士）、‘メダロットシリーズ’的（メタビー）、‘火影忍者’的（漩涡鸣人）、‘Yes! 光之美少女5’的（夏木玲）等。\r\n\r\n\r\n竹内顺子在98年左右最成功的角色无疑是《Hunter X Hunter》的小杰了，小杰的天真、童稚、智慧、善良、倔强、快乐、忧愁、希望、失落，一切的一切都被竹内小姐以其稚气未脱、幼稚的语言所表现，竹内小姐的嗓鼻使用方面堪称高手，在激动和冷静时表现的气质是Q所喜爱并敬佩的，竹内小姐带动的小杰的气质是向高尚的气质发展的，可以感觉得到她对人物的理解是跨时代性的，是用发展的语言演绛成长的人物，这是其最大的优势和财富所在。这一点是田中小姐甚至许多女声优所不能比拟的。而田中小姐的语言感染力以及表现功力的自然和纯熟也是值得学习的。 　　后来竹内顺子又参与《火影忍者》中漩涡鸣人的配音，再一次大大提高了竹内的知名度，并且相当成功，与小杰有的一拼，这时候的她已经有12年的配音经验，可以说比98年的时候要成熟许多。虽然鸣人是男性，但是竹内顺子却能配的天衣无缝，不仅如此，还将鸣人的勇敢、毅力、倔强、不服输的精神以及偶尔显示的智慧表现的淋漓尽致。 　　竹内顺子的作品并不算特别多，但是人气漫画的主角倒占了不少。她也很会为男性人物配音，甚至有些比较难，比较不可思议的声音，都听不出来是出自于她。可见竹内的精炼。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "id": 9496,
+    "name": "島大介",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/18/f5/9496_crt_51c45.jpg?r=1605194549",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/f5/9496_crt_51c45.jpg?r=1605194549",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/f5/9496_crt_51c45.jpg?r=1605194549",
+        "grid": "https://lain.bgm.tv/pic/crt/g/18/f5/9496_crt_51c45.jpg?r=1605194549"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "岛大介"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Mark Venture"
+                },
+                {
+                    "k": "日文名",
+                    "v": "島大介"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shima Daisuke"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "8月15日"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 15,
+    "stat": {
+        "comments": 1,
+        "collects": 3
+    },
+    "anime_ids": [
+        54552,
+        10393
+    ]
+}

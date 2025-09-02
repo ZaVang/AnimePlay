@@ -1,0 +1,62 @@
+{
+    "id": 35675,
+    "name": "佐藤和真",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/08/1d/35675_crt_9UAbW.jpg?r=1486080586",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/1d/35675_crt_9UAbW.jpg?r=1486080586",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/1d/35675_crt_9UAbW.jpg?r=1486080586",
+        "grid": "https://lain.bgm.tv/pic/crt/g/08/1d/35675_crt_9UAbW.jpg?r=1486080586"
+    },
+    "summary": "本作的主人公，是个喜欢电玩、动画、漫画的茧居尼特高中生。某天偶尔外出时碰上交通意外而身亡（被车子吓死）之后，带着阿克娅一起转生到异世界去。\r\n身高约165上下，黑头发黑眼睛，是个随处可见的16岁青少年，职业是冒险者。自称是“真正的男女平等主义者”，就算对方是女性也会毫不留情的“对付”，也因为这样而被其他人取了“鬼畜和真”“变态的鬼畜男”等等的绰号。职业是冒险者，因为异常高的幸运值以及偷窃技能而意外的活跃。不喜欢惹事生非但却因为同伴们的关系而常被卷入各种事件内。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "佐藤和真"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "佐藤 和真"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "サトウ カズマ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Satou Kazuma"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "6月7日"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 7,
+    "stat": {
+        "comments": 62,
+        "collects": 233
+    },
+    "anime_ids": [
+        174043,
+        135275,
+        342667
+    ]
+}

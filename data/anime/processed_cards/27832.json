@@ -1,0 +1,169 @@
+{
+    "id": 27832,
+    "name": "机动战士高达SEED HD重制版",
+    "image_path": "data/images/anime/27832.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "重制版。\r\n当年播放的画面是4:3普屏，如今的HD重制版则是16:9宽屏，并且在对画面进行了高清画质处理的基础上，还增加了原版没有新画面，部分音乐也会重新混音处理。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 48,
+    "synergy_tags": [
+        "机战",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2012-01-01",
+    "rating_rank": 1120,
+    "rating_score": 7.4,
+    "rating_total": 2608,
+    "main_character_ids": [
+        1956,
+        2214,
+        2216,
+        2218
+    ],
+    "main_characters": [
+        {
+            "id": 1956,
+            "name": "キラ・ヤマト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/cd/58/1956_crt_eq333.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/58/1956_crt_eq333.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/58/1956_crt_eq333.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cd/58/1956_crt_eq333.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3884,
+                    "name": "保志総一朗",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7e/7d/3884_prsn_R7RZ7.jpg?r=1657125754",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/7d/3884_prsn_R7RZ7.jpg?r=1657125754",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/7d/3884_prsn_R7RZ7.jpg?r=1657125754",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7e/7d/3884_prsn_R7RZ7.jpg?r=1657125754"
+                    },
+                    "short_summary": "保志总一“郎”是印刷或打字时常常出现的错别字。\r\n称呼：総兄、総兄ちゃん、総一朗さん、ほっしー。\r\n嗜好：卡拉OK、驾驶、电脑、练习、喝酒、音乐鉴赏、映画鉴赏、格闘技観战、兜风、用手机玩游戏、网球。\r\n惯用手：右手\r\n喜欢的动物：オコジョ白貂、猫\r\n声优以外想做的工作：监督、酒店老板\r\n获得资格：情报技术检定2级、计算技术检定3级、普通自动车免许（拥有汽车）、英检4级\r\n高中毕业之后前往东京→学校法人东放学园·专门学校东京广播学院入学、毕业\r\n日本解说表演研究所（日本旁白演技研究所（与林原惠同一个学校）入所、第8届学生毕业。\r\n日本动画界男性主角级声优之一。\r\n习惯用“ぱっぴい”当打招呼的用语。\r\n喜欢的食物：咖喱\r\n喜欢的颜色：蓝色、白色、黑色\r\n口头禅：PAPPI（自创语，Happy的意思）",
+                    "locked": false
+                },
+                {
+                    "id": 31927,
+                    "name": "Max Mittelman",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c2/cd/31927_prsn_cgXP6.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/cd/31927_prsn_cgXP6.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/cd/31927_prsn_cgXP6.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c2/cd/31927_prsn_cgXP6.jpg"
+                    },
+                    "short_summary": "美国配音 / 演员。生于加利福尼亚州 / 洛杉矶。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 2214,
+            "name": "アスラン・ザラ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/44/ea/2214_crt_LK0Vm.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/ea/2214_crt_LK0Vm.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/ea/2214_crt_LK0Vm.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/44/ea/2214_crt_LK0Vm.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3927,
+                    "name": "石田彰",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/75/f0/3927_prsn_PPbE7.jpg?r=1632126400",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/f0/3927_prsn_PPbE7.jpg?r=1632126400",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/f0/3927_prsn_PPbE7.jpg?r=1632126400",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/75/f0/3927_prsn_PPbE7.jpg?r=1632126400"
+                    },
+                    "short_summary": "石田彰，是日本人气一线声优，近几年来在日本各地稳居声优榜前列，在男女老少间都很受欢迎。出道已经近二十年了，声音宜男宜女，是业界少见的可以配女性角色还不易被人察觉的男声优。2009年3月前效力于Mausu Promotion，4月开始是自由身，2012年3月开始他进入了新的事务所ピアレスガーベラ。主要作品：桂小太郎《银魂》、我爱罗《火影忍者》、阿斯兰·萨拉《高达SEED》、渚熏《EVA》、猪八戒《最游记》等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 2216,
+            "name": "ラクス・クライン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b0/3e/2216_crt_aAAdF.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/3e/2216_crt_aAAdF.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/3e/2216_crt_aAAdF.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b0/3e/2216_crt_aAAdF.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3862,
+                    "name": "田中理恵",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/59/da/3862_prsn_JVDU6.jpg?r=1725291681",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/da/3862_prsn_JVDU6.jpg?r=1725291681",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/da/3862_prsn_JVDU6.jpg?r=1725291681",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/59/da/3862_prsn_JVDU6.jpg?r=1725291681"
+                    },
+                    "short_summary": "田中理恵，歌手、声优。\r\n\r\n      理惠在家中是独生女，是个平凡的女孩子，本来喜欢读书跟画画，特别中意猪股睦美的画。但在听了从书店中看到猪股所画的『CD THEATER 勇者斗恶龙』而买下来的广播剧CD之後，而立志要当一个声优。\r\n\r\n　　高中毕业后进入代代木动画学院的声优科，在学中获了由MediaWorks与SCITRON合办的歌手试演会中的冠军，而在《悠久幻想曲》第二张专辑中唱了『永远的好朋友』。也因为如此，歌手部份比起声优还要早出道。\r\n\r\n　　出道动画作是《平行世界物语》。马上就担任了女主角真田三月的配音。这部动画是双女主角制的，与担任另一女主角罗螺观月配音的丰口惠共演的机会很多。 \r\n\r\n      所属的会社，当初是Sony Music Entertainment Visual WORKS（现在的Aniplex Inc.），2003年转属到Victor Entertainment Inc.（即JVC Music）。在当年秋天所释出的『Chara de Rie』之后，从同社所出的就只停留在《机动战士高达SEED》系列作相关的乐曲的程度。近年以来，少有除了以角色名义的歌曲或是特别活动之外的歌手活动的机会。\r\n\r\n　　近年在《热拳本色》之后，出演东映动画与Marvelous Entertainment Inc.（漫威娱乐）所制作的动画的机会很多。\r\n\r\n　　在电视动画《玻璃舰队》、《交响情人梦》、《sola》的STAFF列表中记载了同名同姓的音响监督，不过却是不一样的人。\r\n\r\n　　曾经在日本新力音乐所营运的宽频网站『MORRICH』中，担任Aniplax Inc.介绍节目的领航员。\r\n\r\n　　丈夫是同为声优的山寺宏一，山寺宏一于2012年6月17日在推特上公布二人的婚讯。2018年8月3日，二人在各自的推特上宣布离婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 2218,
+            "name": "カガリ・ユラ・アスハ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9f/0a/2218_crt_3t5p6.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/0a/2218_crt_3t5p6.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/0a/2218_crt_3t5p6.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9f/0a/2218_crt_3t5p6.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3935,
+                    "name": "進藤尚美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/13/e3/3935_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/e3/3935_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/e3/3935_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/13/e3/3935_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、舞台女優、ナレーターである。青二プロダクション所属。青二塾大阪校15期生。京都府出身。\r\n\r\n身長155cm。血液型はO型。星座はさそり座。愛称は「シンディー」。\r\n\r\n声優デビューは1999年の『Blue Gender（ブルージェンダー）』。第8話に役名なしでクレジットされている。メインキャストとしてのデビューは2000年、『GEAR戦士電童』の草薙北斗役。オーディションで主役に選ばれた。声優になる以前は、児童向け劇団に所属し、舞台役者として活躍していた。声優になった今でも「子供向けの作品に関わり続けたい」とコメントしている。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,80 @@
+{
+    "id": 613,
+    "name": "堤京介",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a7/b2/613_crt_d1fFQ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/b2/613_crt_d1fFQ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/b2/613_crt_d1fFQ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a7/b2/613_crt_d1fFQ.jpg"
+    },
+    "summary": "纮的朋友兼同班同学。映研的摄影师。第二章的男主角，三年级时与宫子同班，常常被她抓着以前的罪证要胁当下人。对景别眼相看，想找她当新电影的女主角。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "堤京介"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "堤 京介"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "つつみ きょうすけ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tsutsumi Kyousuke"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "11月29日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "171cm"
+        },
+        {
+            "key": "体重",
+            "value": "60kg"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "官方设定集"
+                }
+            ]
+        },
+        {
+            "key": "原作声优",
+            "value": "城树翔"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 29,
+    "stat": {
+        "comments": 15,
+        "collects": 7
+    },
+    "anime_ids": [
+        799
+    ]
+}

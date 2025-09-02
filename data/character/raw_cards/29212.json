@@ -1,0 +1,60 @@
+{
+    "id": 29212,
+    "name": "ヘスティア",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f1/72/29212_crt_09olY.jpg?r=1726581365",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/72/29212_crt_09olY.jpg?r=1726581365",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/72/29212_crt_09olY.jpg?r=1726581365",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f1/72/29212_crt_09olY.jpg?r=1726581365"
+    },
+    "summary": "本作女主角之一。降临自天界的神仙，是超越人类、亚人的高级人物，也是贝尔隶屣的【赫斯缇雅眷族】之领导者。容貌、体格一如“萝莉神”之名娇小稚嫩，不过却拥有着丰满的上围。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "赫斯缇雅"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Hestia"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hesutia"
+                },
+                {
+                    "k": "昵称",
+                    "v": "上神大人"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "140cm"
+        },
+        {
+            "key": "种族",
+            "value": "神"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 88,
+        "collects": 284
+    },
+    "anime_ids": [
+        463778
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": 23423,
+    "name": "星白閑",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4d/db/23423_crt_XXt7r.jpg?r=1397215699",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4d/db/23423_crt_XXt7r.jpg?r=1397215699",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4d/db/23423_crt_XXt7r.jpg?r=1397215699",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4d/db/23423_crt_XXt7r.jpg?r=1397215699"
+    },
+    "summary": "衛人操縦士第628期訓練生副代表。\r\n機体番号は「ＴＳ星―３３６」。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "星白闲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "星白 閑"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ほしじろ しずか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hoshijiro Shizuka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 65,
+        "collects": 184
+    },
+    "anime_ids": [
+        77476
+    ]
+}

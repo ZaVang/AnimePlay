@@ -1,0 +1,80 @@
+{
+    "id": 162009,
+    "name": "駒田華子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e9/06/162009_crt_9J3Co.jpg?r=1745805826",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/06/162009_crt_9J3Co.jpg?r=1745805826",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/06/162009_crt_9J3Co.jpg?r=1745805826",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e9/06/162009_crt_9J3Co.jpg?r=1745805826"
+    },
+    "summary": "春乃の高校の同級生。\r\n会社勤めに疲れた結果、バイクで走りながら風景や喋りを撮影した動画・モトブログをサイトに投稿するようになった。\r\n動画のネタに困らないからと、高校の同級生である春乃のところを頻繁に出入りするようになる。\r\n勢いで会社を辞めたり、思い付きで遠方へバイク旅行したりと思い切った行動をとることも多い超自由人。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "驹田华子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "駒田 華子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こまだ かこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Komada Kako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        },
+        {
+            "key": "好きな食べ物",
+            "value": "ソフトクリーム"
+        },
+        {
+            "key": "趣味",
+            "value": "バイク"
+        },
+        {
+            "key": "好きなお酒",
+            "value": "日本酒"
+        },
+        {
+            "key": "使用カメラ",
+            "value": "広角アクションカメラ"
+        },
+        {
+            "key": "行きたいところ",
+            "value": "ツーリングスポット"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 12,
+        "collects": 26
+    },
+    "anime_ids": [
+        485936
+    ]
+}

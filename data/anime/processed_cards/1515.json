@@ -1,0 +1,119 @@
+{
+    "id": 1515,
+    "name": "玩偶游戏",
+    "image_path": "data/images/anime/1515.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "以“小孩子”的角度去探讨学级崩坏、青少年犯罪、家庭关系破裂、父母离异等现代的社会问题。作品超越了一般的少女漫画，得到社会各年代的支持。主角是一名童星，在作品发表时童星是非常备受注目的。在漫画连载初期到动漫放映初期的1996年间，童星是社会的热门话题，但到有关热潮无论在演艺界和社会上都已退却的1998年时，漫画版也连载完毕。当时有传言至如果童星热潮不减的话将会有第2部作品，但最终都没有实现。\r\n\r\n结局中由于童星热的减却，主角仓田纱南的人气也大不如前，却也同时暗示了她内心的蜕变和成长。\r\n",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 102,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "少女向"
+    ],
+    "date": "1996-04-05",
+    "rating_rank": 1118,
+    "rating_score": 7.5,
+    "rating_total": 265,
+    "main_character_ids": [
+        7397,
+        19237,
+        19239
+    ],
+    "main_characters": [
+        {
+            "id": 7397,
+            "name": "倉田紗南",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/83/dc/7397_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/dc/7397_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/dc/7397_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/83/dc/7397_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5341,
+                    "name": "おだしずえ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f9/32/5341_prsn_L6zHR.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/32/5341_prsn_L6zHR.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/32/5341_prsn_L6zHR.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f9/32/5341_prsn_L6zHR.jpg"
+                    },
+                    "short_summary": "おだ しずえ（1964年2月5日 - ）は、日本のラジオパーソナリティ。出生名および旧芸名は小田 靜枝（読み同じ）。愛称はしーちゃん、おだC。\r\n広島県呉市出身。1980年代後半、広島拠点のローカルタレントとして活躍後、関西を経て、東京へ進出。主にFM局の番組でディスクジョッキーを担当していた。また、アニメ『こどものおもちゃ』の声優を担当したことでも知られる。\r\n2014年に帰郷し、10月からはRCCラジオの帯番組『おひるーな』（月曜～金曜12:00～14:55）の月曜から木曜のメインパーソナリティを担当している（金曜は伊藤文→伊藤産休時から吉田幸アナウンサーが担当）。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19237,
+            "name": "相模玲",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b2/63/19237_crt_44268.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/63/19237_crt_44268.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/63/19237_crt_44268.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b2/63/19237_crt_44268.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4728,
+                    "name": "内藤玲",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/71/f0/4728_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/f0/4728_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/f0/4728_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/71/f0/4728_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19239,
+            "name": "羽山秋人",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ed/64/19239_crt_a5T2v.jpg?r=1651219743",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/64/19239_crt_a5T2v.jpg?r=1651219743",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/64/19239_crt_a5T2v.jpg?r=1651219743",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ed/64/19239_crt_a5T2v.jpg?r=1651219743"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 56679,
+                    "name": "中崎達也",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/dc/59/56679_prsn_2BqQ6.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/59/56679_prsn_2BqQ6.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/59/56679_prsn_2BqQ6.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dc/59/56679_prsn_2BqQ6.jpg"
+                    },
+                    "short_summary": "广播剧声优、演员，主要作品有《十兵卫眼罩的秘密》。\r\n1996年，为《玩偶游戏、小孩子的玩具》配音。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

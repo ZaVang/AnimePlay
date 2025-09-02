@@ -1,0 +1,101 @@
+{
+    "id": 54178,
+    "name": "中須かすみ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0e/a0/54178_crt_EU8E8.jpg?r=1609281271",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/a0/54178_crt_EU8E8.jpg?r=1609281271",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/a0/54178_crt_EU8E8.jpg?r=1609281271",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0e/a0/54178_crt_EU8E8.jpg?r=1609281271"
+    },
+    "summary": "こーんにっちわー！　みんなのアイドルかすみんだよー！\r\n日本一のスクールアイドルを目指して、毎日、歌やダンスのレッスンをがんばってます！\r\nもちろん、もっともーっと可愛くなるための秘密の努力もしてますよー。\r\nあとはー、ライバルたちに送り付ける怪文書とかぁ、\r\nライバルの靴にこっそり入れるコッペパンとかの準備も滞りなく――\r\nって、わわ、これは内緒でしたっ！\r\nこ、こほん！　と、とにかく、かすみんのこと、みんな応援してね！\r\n\r\n中須かすみとはPDPのプロジェクトメンバー及びスクフェス発の新スクールアイドルのメンバーである。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "中须霞"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "中須 かすみ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なかすかすみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nakasu Kasumi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "かすみん、かすかす、ksks"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月23日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B76/W55/H79"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://lovelive-as.bushimo.jp/member/"
+        },
+        {
+            "key": "学年",
+            "value": "1年级"
+        },
+        {
+            "key": "学校",
+            "value": "虹ヶ咲学園"
+        },
+        {
+            "key": "代表色",
+            "value": "粉黄色"
+        },
+        {
+            "key": "印象标志",
+            "value": "王冠"
+        },
+        {
+            "key": "歌曲印象风格",
+            "value": "情热 / 混沌"
+        },
+        {
+            "key": "分组",
+            "value": "QU4RTZ"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 2,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 23,
+    "stat": {
+        "comments": 34,
+        "collects": 128
+    },
+    "anime_ids": [
+        296659,
+        335579
+    ]
+}

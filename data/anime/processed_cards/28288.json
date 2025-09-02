@@ -1,0 +1,74 @@
+{
+    "id": 28288,
+    "name": "铁臂阿童木",
+    "image_path": "data/images/anime/28288.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "富士电视台在2003年第三次重绘本剧，由手冢制作公司（手塚プロダクション）制作，命名为《自动机器人‧铁臂阿童木》（アストロボーイ‧鉄腕アトム），日本在2003年4月6日开播，至2004年3月28日止，第三版播出了50集。香港的无线电视翡翠台从2004年初开始播放第三版。中国中央电视台于2004年12月28日至2005年2月13日期间在其中国中央电视台少儿频道播出了49集。 ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 50,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2003-04-06",
+    "rating_rank": 1367,
+    "rating_score": 7.3,
+    "rating_total": 691,
+    "main_character_ids": [
+        14494
+    ],
+    "main_characters": [
+        {
+            "id": 14494,
+            "name": "アトム",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ea/68/14494_crt_b7H8w.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/68/14494_crt_b7H8w.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/68/14494_crt_b7H8w.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ea/68/14494_crt_b7H8w.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4017,
+                    "name": "津村まこと",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d5/99/4017_prsn_9WP1P.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/99/4017_prsn_9WP1P.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/99/4017_prsn_9WP1P.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d5/99/4017_prsn_9WP1P.jpg"
+                    },
+                    "short_summary": "日本女性声优。北海道出身。",
+                    "locked": false
+                },
+                {
+                    "id": 17506,
+                    "name": "刘纯燕",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d9/ab/17506_prsn_5y066.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/ab/17506_prsn_5y066.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/ab/17506_prsn_5y066.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d9/ab/17506_prsn_5y066.jpg"
+                    },
+                    "short_summary": "刘纯燕（1966年8月20日－），女，央视著名儿童节目主持人，主持名金龟子，曾用名“小角丫”。祖籍四川，生于北京。1986年毕业于北京广播学院播音系。\r\n\r\n刘纯燕曾担任过多部电视剧、卡通片和电影的配音。主持过的节目有少儿节目《大风车》、《聪明屋》，休闲节目《正大综艺》等；以《大风车》及其前身之一的《聪明屋》中的金龟子（但其扮相其实更接近背壳带星斑的瓢虫）形象最为著名。曾在1999年获第四届“金话筒”银奖，以及在1989年获第九届“飞天奖”优秀女配音演员奖。其也在中央电视台国际部担任过配音导演工作。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

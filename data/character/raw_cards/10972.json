@@ -1,0 +1,75 @@
+{
+    "id": 10972,
+    "name": "入巣蒔菜",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5f/8f/10972_crt_iHE9K.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/8f/10972_crt_iHE9K.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/8f/10972_crt_iHE9K.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5f/8f/10972_crt_iHE9K.jpg"
+    },
+    "summary": "天真烂漫自由奔放的女孩子……\r\n是个这类说明根本没法成为明确介绍的、无从捉摸的女孩子。\r\n一言以蔽之，倒也不是不能表现为“阿呆”，但用这个词语无法概括的言行异常之多，会让人产生深不见底的恐惧感。\r\n其特异性明显到了会让与她说话的大部分人在5分钟以内就直觉到「这孩子很不妙」的程度。\r\n\r\n这样的她在最初也对主人公有点怕生，不过以不经意的事件为契机开始称呼他为「哥哥」黏上了他。\r\n娘家貌似是从暗地里操控着日本的传说中的大财阀，不过知道真相的人很少，似乎是知道了就会遭遇不幸之类的很麻烦的家庭出身。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "入巢莳菜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "イリス・マキナ"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Iris"
+                },
+                {
+                    "k": "日文名",
+                    "v": "入巣 蒔菜"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いりす まきな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Irisu Makina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月13日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "144cm"
+        },
+        {
+            "key": "BWH",
+            "value": "71(AA)/57/78"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 13,
+    "stat": {
+        "comments": 31,
+        "collects": 128
+    },
+    "anime_ids": [
+        130234
+    ]
+}

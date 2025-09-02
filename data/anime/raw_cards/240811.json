@@ -1,0 +1,257 @@
+{
+    "id": 240811,
+    "type": 2,
+    "name": "銀魂. 銀ノ魂篇 第2クール",
+    "name_cn": "银魂. 银之魂篇 第二季",
+    "summary": "",
+    "nsfw": false,
+    "locked": false,
+    "date": "2018-07-08",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/26/3f/240811_DgqNd.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/26/3f/240811_DgqNd.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/26/3f/240811_DgqNd.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/26/3f/240811_DgqNd.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/26/3f/240811_DgqNd.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "银魂. 银之魂篇 第二季"
+        },
+        {
+            "key": "话数",
+            "value": "14"
+        },
+        {
+            "key": "放送开始",
+            "value": "2018年7月8日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.tv-tokyo.co.jp/anime/gintama/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京"
+        },
+        {
+            "key": "播放结束",
+            "value": "2018年10月7日"
+        },
+        {
+            "key": "Copyright",
+            "value": "© 空知英秋／集英社・テレビ東京・電通・BNP・アニプレックス"
+        },
+        {
+            "key": "原作",
+            "value": "空知英秋"
+        }
+    ],
+    "volumes": 0,
+    "eps": 14,
+    "total_episodes": 14,
+    "rating": {
+        "rank": 1656,
+        "total": 1120,
+        "count": {
+            "one": 7,
+            "two": 5,
+            "three": 8,
+            "four": 16,
+            "five": 50,
+            "six": 179,
+            "seven": 408,
+            "eight": 282,
+            "nine": 85,
+            "ten": 80
+        },
+        "score": 7.2
+    },
+    "collection": {
+        "wish": 429,
+        "collect": 2180,
+        "doing": 121,
+        "on_hold": 83,
+        "dropped": 56
+    },
+    "tags": [
+        {
+            "name": "搞笑",
+            "count": 197
+        },
+        {
+            "name": "银魂",
+            "count": 192
+        },
+        {
+            "name": "TV",
+            "count": 175
+        },
+        {
+            "name": "2018年7月",
+            "count": 151
+        },
+        {
+            "name": "漫画改",
+            "count": 131
+        },
+        {
+            "name": "2018",
+            "count": 95
+        },
+        {
+            "name": "BNPictures",
+            "count": 78
+        },
+        {
+            "name": "热血",
+            "count": 71
+        },
+        {
+            "name": "JUMP",
+            "count": 69
+        },
+        {
+            "name": "SUNRISE",
+            "count": 62
+        },
+        {
+            "name": "漫改",
+            "count": 60
+        },
+        {
+            "name": "战斗",
+            "count": 45
+        },
+        {
+            "name": "BN_Pictures",
+            "count": 24
+        },
+        {
+            "name": "银他妈",
+            "count": 21
+        },
+        {
+            "name": "宫胁千鹤",
+            "count": 17
+        },
+        {
+            "name": "日本",
+            "count": 12
+        },
+        {
+            "name": "吐槽",
+            "count": 11
+        },
+        {
+            "name": "续作",
+            "count": 9
+        },
+        {
+            "name": "日本动画",
+            "count": 9
+        },
+        {
+            "name": "恶搞",
+            "count": 8
+        },
+        {
+            "name": "日常",
+            "count": 7
+        },
+        {
+            "name": "宮脇千鶴",
+            "count": 6
+        },
+        {
+            "name": "杉田智和",
+            "count": 6
+        },
+        {
+            "name": "石田彰",
+            "count": 5
+        },
+        {
+            "name": "空知英秋",
+            "count": 4
+        },
+        {
+            "name": "奇幻",
+            "count": 4
+        },
+        {
+            "name": "动画",
+            "count": 4
+        },
+        {
+            "name": "长篇",
+            "count": 4
+        },
+        {
+            "name": "2018年",
+            "count": 4
+        },
+        {
+            "name": "钉宫理惠",
+            "count": 3
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        85,
+        229,
+        250
+    ],
+    "main_characters": [
+        {
+            "id": 85,
+            "name": "坂田銀時",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7d/95/85_crt_mnnRv.jpg?r=1532144893",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/95/85_crt_mnnRv.jpg?r=1532144893",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/95/85_crt_mnnRv.jpg?r=1532144893",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7d/95/85_crt_mnnRv.jpg?r=1532144893"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 229,
+            "name": "神楽",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/52/23/229_crt_I73MP.jpg?r=1532064353",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/23/229_crt_I73MP.jpg?r=1532064353",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/23/229_crt_I73MP.jpg?r=1532064353",
+                "grid": "https://lain.bgm.tv/pic/crt/g/52/23/229_crt_I73MP.jpg?r=1532064353"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 250,
+            "name": "志村新八",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d3/a9/250_crt_7Ifw5.jpg?r=1531611155",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/a9/250_crt_7Ifw5.jpg?r=1531611155",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/a9/250_crt_7Ifw5.jpg?r=1531611155",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d3/a9/250_crt_7Ifw5.jpg?r=1531611155"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "id": 5088,
+    "name": "葛城ミサト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/04/fc/5088_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/fc/5088_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/fc/5088_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/04/fc/5088_crt_anidb.jpg"
+    },
+    "summary": "葛城美里（日语：葛城 ミサト、英语：Katsuragi Misato）是日本动画《新世纪福音战士》当中人物。她是NERV的指挥官，军衔最初为大尉，TV动画第12话时晋升为少佐，在新剧场版中则为中佐。她在NERV的任务包括指挥及监视EVA驾驶员、构思及发布攻击策略，与赤木律子协调EVA技术支援及测试也是她的工作，她同时也是碇真嗣与惣流·明日香·兰格雷的监护人。\r\n\r\n在故事一开始时，美里将真嗣带入NERV，并说服他担任初号机的驾驶员。后来她要求真嗣跟她一同生活，后来明日香也与他们居住在同一栋公寓。随着故事进行，美里从旧情人加持良治那里得知人类补完计划的面貌及埋藏在NERV深处的秘密。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "葛城美里"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "葛城ミサト"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かつらぎ ミサト"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Katsuragi Misato"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1986-12-08"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        },
+        {
+            "key": "体重",
+            "value": "47kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B:88/W:59/H:82"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1986,
+    "birth_mon": 12,
+    "birth_day": 8,
+    "stat": {
+        "comments": 103,
+        "collects": 605
+    },
+    "anime_ids": [
+        265
+    ]
+}

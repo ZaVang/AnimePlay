@@ -1,0 +1,60 @@
+{
+    "id": 8784,
+    "name": "村雨純夏",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6a/6e/8784_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/6e/8784_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/6e/8784_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6a/6e/8784_crt_anidb.jpg"
+    },
+    "summary": "身長が175センチメートルと女子としては長身。成績優秀で運動神経も抜群。クラス委員長。「暴刀村雨」という異名もある。\r\n汐に想いを寄せているが、彼女の好みには当てはまらないと思い、打ち明けられずにいる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "村雨纯夏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "尊称",
+                    "v": "暴刀村雨"
+                },
+                {
+                    "k": "日文名",
+                    "v": "村雨純夏"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "むらさめ すみか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Murasame Sumika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 16
+    },
+    "anime_ids": [
+        2661
+    ]
+}

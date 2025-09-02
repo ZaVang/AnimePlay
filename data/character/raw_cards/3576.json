@@ -1,0 +1,66 @@
+{
+    "id": 3576,
+    "name": "白井黒子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/71/40/3576_crt_GBxMl.jpg?r=1643902567",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/40/3576_crt_GBxMl.jpg?r=1643902567",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/40/3576_crt_GBxMl.jpg?r=1643902567",
+        "grid": "https://lain.bgm.tv/pic/crt/g/71/40/3576_crt_GBxMl.jpg?r=1643902567"
+    },
+    "summary": "《魔法禁书目录》系列配角、外传《科学超电磁炮》主角，学园都市中名校常盘台女子中学的一年级生，御坂美琴的学妹兼室友，能力为Level 4的空间移动，双马尾茶色头发的少女。\r\n平常举止都很“淑女”，句尾有“~ですの（是哦）”的独特大小姐腔调。非常仰慕御坂美琴，甚至到近乎变态的程度，称呼美琴为“姐姐大人”。喜欢冲击力极强、布料很少的泳衣和内衣裤。第177活动支部所属风纪委员，具有很强的责任感和正义感。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "白井黑子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Teleport"
+                },
+                {
+                    "k": "日文名",
+                    "v": "白井 黒子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しらい くろこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shirai Kuroko"
+                },
+                {
+                    "k": "昵称",
+                    "v": "空间移动"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 78,
+        "collects": 787
+    },
+    "anime_ids": [
+        262940,
+        51928,
+        2585
+    ]
+}

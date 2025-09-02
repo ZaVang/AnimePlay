@@ -1,0 +1,77 @@
+{
+    "id": 998,
+    "name": "水瀬名雪",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e4/3f/998_crt_ZMdx0.jpg?r=1523159672",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/3f/998_crt_ZMdx0.jpg?r=1523159672",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/3f/998_crt_ZMdx0.jpg?r=1523159672",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e4/3f/998_crt_ZMdx0.jpg?r=1523159672"
+    },
+    "summary": "祐一的表妹，水濑秋子的女儿。由母亲一手带大。虽然个性从容大方悠闲自适，不过也有坚毅刚强的一面。说话常在语尾加上“だよ（表强调语气之语助词）”。早上很会赖床，用了几十个闹钟还是没办法自己起床。擅长做菜，以前曾经尝试带自己作的便当上学，但是早上实在起不来而不得不放弃。最喜欢妈妈作的手工草莓果酱和商店街的百花屋的草莓圣代。虽然很喜欢猫，却对猫重度过敏。另外还喜欢青蛙，十分爱惜青蛙花样的睡衣和取名为“けろぴー（Keropī）”的布偶。有着身为田径社社长这种令人意外的一面，擅长长距离跑步。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "水濑名雪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "水瀬 名雪"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みなせなゆき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Minase Nayuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月23日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "164cm"
+        },
+        {
+            "key": "体重",
+            "value": "47kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B83 W57 H82"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 2,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 23,
+    "stat": {
+        "comments": 53,
+        "collects": 244
+    },
+    "anime_ids": [
+        274,
+        363880
+    ]
+}

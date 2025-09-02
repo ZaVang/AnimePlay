@@ -1,0 +1,72 @@
+{
+    "id": 36278,
+    "name": "春日未来",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/58/57/36278_crt_yA0q8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/57/36278_crt_yA0q8.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/57/36278_crt_yA0q8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/58/57/36278_crt_yA0q8.jpg"
+    },
+    "summary": "《偶像大师 MILLION LIVE!》登场的偶像。Vocal属性。 \r\n\r\n位置与偶像大师本家的天海春香以及灰姑娘女孩的岛村卯月相同，是《偶像大师 MILLION LIVE!》系列的第一女主角，其三人在P站上被称为「普通的系谱」。但事实上性格与876pro的日高爱更为接近，是一个不折不扣的⑨。 \r\n\r\n在广播剧中也总是担任逗哏的角色，被众人戏耍的对象。 \r\n\r\n成为偶像的契机是因为未来的朋友让她去了一场偶像音乐会，给她留下了极其深刻的印象，从而决定成为偶像。（在漫画中，那位朋友不是别人，正是静香。音乐会也正是765pro剧场的巡演。） \r\n\r\n为了成为偶像而放弃了社团活动，一心一意朝着能够独当一面的偶像努力拼搏，是正统派偶像的典范。 \r\n\r\n形象颜色为红色。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "春日未来"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かすが みらい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kasuga Mirai"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月28日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "体重",
+            "value": "42kg"
+        },
+        {
+            "key": "BWH",
+            "value": "78-54-77"
+        },
+        {
+            "key": "年龄",
+            "value": "14岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 28,
+    "stat": {
+        "comments": 29,
+        "collects": 58
+    },
+    "anime_ids": [
+        309807
+    ]
+}

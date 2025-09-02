@@ -1,0 +1,73 @@
+{
+    "id": 5924,
+    "name": "三浦あずさ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bf/b1/5924_crt_7H7BM.jpg?r=1509628889",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/b1/5924_crt_7H7BM.jpg?r=1509628889",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/b1/5924_crt_7H7BM.jpg?r=1509628889",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bf/b1/5924_crt_7H7BM.jpg?r=1509628889"
+    },
+    "summary": "在所属偶像中最为年长，且胸部丰满。天然而沉着的治愈系大姐姐，不过是个严重的路痴。在设定上比制作人年长，制作人与爱好者都称她为“あずささん”。志愿偶像的理由是“为了和命运中人相遇”。\r\n\r\n（在偶像大师 XENOGLOSSIA中）\r\n身高168cm、B86/W57/H84、20岁。\r\n春香她们从属的Mondenkind iDOL Master课的iDOL小队的主任。原本也是iDOL Master的姐姐，对春香她们非常温柔，什么事情都可以找她相谈。性格冷静沉着，无论什么时候都能保持冷静。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "三浦梓"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みうら あずさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Miura Azusa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月19日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        },
+        {
+            "key": "体重",
+            "value": "48kg"
+        },
+        {
+            "key": "BWH",
+            "value": "91/59/86"
+        },
+        {
+            "key": "年龄",
+            "value": "20→21"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 19,
+    "stat": {
+        "comments": 42,
+        "collects": 144
+    },
+    "anime_ids": [
+        11577,
+        309807
+    ]
+}

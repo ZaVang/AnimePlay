@@ -1,0 +1,122 @@
+{
+    "id": 4019,
+    "name": "四叠半神话大系",
+    "image_path": "data/images/anime/4019.jpg",
+    "points": 8.6,
+    "cost": 5,
+    "rarity": "HR",
+    "description": "身为大三学生的“我”，梦想着多采多姿的校园生活却过了两年毫无意义的生活。虽然入学时在众多社团中选择了网球社，但是因为无法与人对话而失去容身之处。这时，他遇上有同样际遇的小津，两人组成了在社团内外四处妨碍人恋爱、恶名昭彰的“黑色丘比特”。没有遇到小津的话肯定能与黑发少女过着缤纷的人生！如果那时候选了其他社团……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 11,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "小说改"
+    ],
+    "date": "2010-04-22",
+    "rating_rank": 33,
+    "rating_score": 8.6,
+    "rating_total": 13513,
+    "main_character_ids": [
+        19915,
+        19916,
+        19917
+    ],
+    "main_characters": [
+        {
+            "id": 19915,
+            "name": "明石さん",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ba/4c/19915_crt_Iknb2.jpg?r=1605090949",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/4c/19915_crt_Iknb2.jpg?r=1605090949",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/4c/19915_crt_Iknb2.jpg?r=1605090949",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ba/4c/19915_crt_Iknb2.jpg?r=1605090949"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3877,
+                    "name": "坂本真綾",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d4/88/3877_prsn_VOY27.jpg?r=1574050572",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/88/3877_prsn_VOY27.jpg?r=1574050572",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/88/3877_prsn_VOY27.jpg?r=1574050572",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d4/88/3877_prsn_VOY27.jpg?r=1574050572"
+                    },
+                    "short_summary": "坂本真绫（さかもと まあや、1980年3月31日 - ），日本女声优、歌手、演员、电台主持。东京都板桥区出身，东京都立武蔵丘高等学校及东洋大学社会学部毕业，父亲是舞台照明家坂本义美。\r\n8岁进入儿童剧团，开始艺能活动，曾演唱广告歌、童谣，为外国电影剧集配音，出演电视节目等。15岁时，被音乐制作人菅野洋子发掘，真正地开始了音乐活动。16岁在歌坛出道。\r\n坂本真绫在音乐以外的领域也具有丰富的才能，广泛活跃在舞台表演、电台主持、电视节目主持、执笔等领域，被称为“才女”，她是现在日本乐坛少数的实力派之一。\r\n\r\n2011年8月13日，在网志上正式宣布和声优铃村健一在2011年8月8日结婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19916,
+            "name": "わたし",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/45/4c/19916_crt_DkS5W.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/4c/19916_crt_DkS5W.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/4c/19916_crt_DkS5W.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/45/4c/19916_crt_DkS5W.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4779,
+                    "name": "浅沼晋太郎",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/01/b3/4779_prsn_R85b5.jpg?r=1740105927",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/b3/4779_prsn_R85b5.jpg?r=1740105927",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/b3/4779_prsn_R85b5.jpg?r=1740105927",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/01/b3/4779_prsn_R85b5.jpg?r=1740105927"
+                    },
+                    "short_summary": "浅沼 晋太郎（あさぬま しんたろう、1976年1月5日 - ）は、日本の脚本家、演出家、俳優、 声優、ナレーター、コピーライター、デザイナー。\r\n岩手県盛岡市出身。仙台育英学園高等学校特別進学コース卒業、多摩美術大学造形表現学部 映像演劇学科 卒業。血液型はO型。左利き。身長175cm。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19917,
+            "name": "小津",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b8/bc/19917_crt_kpgSK.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/bc/19917_crt_kpgSK.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/bc/19917_crt_kpgSK.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b8/bc/19917_crt_kpgSK.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3955,
+                    "name": "吉野裕行",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153"
+                    },
+                    "short_summary": "日本の男性声優、歌手、ナレーターである。らえら所属。千葉県出身。身長163cm、血液型はB型。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

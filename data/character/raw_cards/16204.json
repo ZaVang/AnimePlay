@@ -1,0 +1,64 @@
+{
+    "id": 16204,
+    "name": "田中大智",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c7/e9/16204_crt_0Sx0s.jpg?r=1364086995",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/e9/16204_crt_0Sx0s.jpg?r=1364086995",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/e9/16204_crt_0Sx0s.jpg?r=1364086995",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c7/e9/16204_crt_0Sx0s.jpg?r=1364086995"
+    },
+    "summary": "年齢：高校3年生\r\n\r\n好きな食べ物：カレー、ハンバーグ。体づくりに必要なもの（牛乳などバランスを考えて）\r\n嫌いな食べ物：カレーパン、メロンパン\r\n趣味：自転車\r\n特技：バドミントン\r\n兄弟：姉（晴香・大学生）",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "田中大智"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たなか たいち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tanaka Taichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "11月29日（射手座）"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        },
+        {
+            "key": "体重",
+            "value": "60kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 2,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 29,
+    "stat": {
+        "comments": 0,
+        "collects": 9
+    },
+    "anime_ids": [
+        37137
+    ]
+}

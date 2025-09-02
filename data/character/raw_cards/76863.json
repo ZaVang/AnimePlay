@@ -1,0 +1,68 @@
+{
+    "id": 76863,
+    "name": "相楽太鳳",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b3/5c/76863_crt_bF1ZO.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/5c/76863_crt_bF1ZO.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/5c/76863_crt_bF1ZO.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b3/5c/76863_crt_bF1ZO.jpg"
+    },
+    "summary": "鉄壁の守備力を誇る俊足のショート \r\n横浜リトル出身。ポジションはショート一筋で、リトル時代からのチームメイト弥生と鉄壁の二遊間を誇る。自由奔放な態度の一方で「野球では女子が男子にたてついたって…」という現実的で冷めた一面も持つ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "相乐太凤"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "相楽 太鳳"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さがら　たお"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "160cm（初中）"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        },
+        {
+            "key": "背号",
+            "value": "6"
+        },
+        {
+            "key": "守备位置",
+            "value": "游击手"
+        },
+        {
+            "key": "投打",
+            "value": "右投两打"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 6
+    },
+    "anime_ids": [
+        292219
+    ]
+}

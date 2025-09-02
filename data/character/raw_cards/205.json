@@ -1,0 +1,50 @@
+{
+    "id": 205,
+    "name": "草摩紫呉",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/08/a0/205_crt_PMfj2.jpg?r=1547825507",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/a0/205_crt_PMfj2.jpg?r=1547825507",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/a0/205_crt_PMfj2.jpg?r=1547825507",
+        "grid": "https://lain.bgm.tv/pic/crt/g/08/a0/205_crt_PMfj2.jpg?r=1547825507"
+    },
+    "summary": "由希と夾の保護者がわり。物腰は柔らかいものの、掴みどころがないので本心がなかなか見えない。職業は小説家で、締切り前に行方をくらましては担当編集者を困らせている。普段着は着物。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "草摩紫吴"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "そうま しぐれ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sōma Shigure"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 17
+    },
+    "anime_ids": [
+        880,
+        315516,
+        291039
+    ]
+}

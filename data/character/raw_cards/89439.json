@@ -1,0 +1,52 @@
+{
+    "id": 89439,
+    "name": "一之瀬みのり／キュアパパイア",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e3/80/89439_crt_2sU85.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/80/89439_crt_2sU85.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/80/89439_crt_2sU85.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e3/80/89439_crt_2sU85.jpg"
+    },
+    "summary": "喜欢读书，知识渊博的中学二年级生，真夏和珊瑚的前辈，是个成绩顶尖的优等生，总是一副扑克脸，喜怒不形于色，坚持己见。小时候相当喜欢人鱼公主的故事，非常熟知所有关于人鱼的传说和故事。变身亮点是眼影。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "一之濑实／木瓜天使"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Ichinose Minori／Cure Papaya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月21日"
+        },
+        {
+            "key": "引用来源",
+            "value": "中文维基"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 21,
+    "stat": {
+        "comments": 5,
+        "collects": 9
+    },
+    "anime_ids": [
+        320857
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 19787,
+    "name": "稲田多摩子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/83/8a/19787_crt_l28lf.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/8a/19787_crt_l28lf.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/8a/19787_crt_l28lf.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/83/8a/19787_crt_l28lf.jpg"
+    },
+    "summary": "像是鸡蛋般的体形丰满的少女。\r\n毕业于带广西中学。其本人为了创造出能在全世界范围内都拥有竞争力的农业产业而进入农高学习农业经营。家里经营着一家共同经营型农场。实习分组时与八轩同组，并且也是A组中唯一的女生，隶属社团为柔道社。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "稻田多摩子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "稲田 多摩子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いなだ たまこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Inada Tamako"
+                },
+                {
+                    "k": "昵称",
+                    "v": "タマコ / 鸡蛋子"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 12,
+        "collects": 8
+    },
+    "anime_ids": [
+        59664
+    ]
+}

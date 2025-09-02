@@ -1,0 +1,339 @@
+{
+    "id": 81372,
+    "type": 2,
+    "name": "ポケットモンスター THE ORIGIN",
+    "name_cn": "精灵宝可梦 起源",
+    "summary": "『ポケットモンスター』シリーズ最新作『ポケットモンスター Ｘ・Ｙ』が10月12日（土）に発売されることを記念し、シリーズの原点となる最初の作品『ポケットモンスター 赤・緑』の世界を初めて描く、オリジナルアニメーション『ポケットモンスター ジ・オリジン』の放送が決定したよ！\r\n\r\n10月12日（土）の『ポケットモンスター Ｘ・Ｙ』の発売に先駆け、10月2日（水）に、テレビ東京系列で、19時から特別番組として放送！\r\n",
+    "nsfw": false,
+    "locked": false,
+    "date": "2013-10-02",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/c1/8a/81372_2Lrhr.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/c1/8a/81372_2Lrhr.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/c1/8a/81372_2Lrhr.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/c1/8a/81372_2Lrhr.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/c1/8a/81372_2Lrhr.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "精灵宝可梦 起源"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "神奇宝贝 起源",
+                    "k": null
+                },
+                {
+                    "v": "口袋妖怪 起源",
+                    "k": null
+                },
+                {
+                    "v": "ポケットモンスター ジ・オリジン",
+                    "k": null
+                },
+                {
+                    "v": "宠物小精灵 the origin",
+                    "k": null
+                },
+                {
+                    "v": "Pocket Monster THE ORIGIN",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "4"
+        },
+        {
+            "key": "放送开始",
+            "value": "2013年10月2日"
+        },
+        {
+            "key": "播放电视台",
+            "value": "东京电视台"
+        },
+        {
+            "key": "播放结束",
+            "value": "2013年10月2日"
+        },
+        {
+            "key": "导演",
+            "value": "川崎逸朗(1)、黒田幸生(2)、髙橋秀弥(3)、冨安大貴(4)"
+        },
+        {
+            "key": "音乐",
+            "value": "景山将太、葉山拓亮"
+        },
+        {
+            "key": "分镜",
+            "value": "川崎逸朗(1)、黒田幸生(2)、髙橋秀弥(3)、冨安大貴(4)"
+        },
+        {
+            "key": "原案",
+            "value": "田尻智、増田順一"
+        },
+        {
+            "key": "监修",
+            "value": "石原恒和"
+        },
+        {
+            "key": "动画制片人",
+            "value": "加藤浩幸(OLM)、黒木類(Production I.G)、西沢正智(XEBEC)"
+        },
+        {
+            "key": "总制片人",
+            "value": "神田修吉(制作統括)"
+        },
+        {
+            "key": "人物原案",
+            "value": "杉森建、森本茂樹、藤原基史、にしだあつこ、北風友裕"
+        },
+        {
+            "key": "人物设定",
+            "value": "加藤はつえ"
+        },
+        {
+            "key": "色彩设计",
+            "value": "手嶋明美"
+        },
+        {
+            "key": "美术设计",
+            "value": "高橋武之"
+        },
+        {
+            "key": "美术监督",
+            "value": "守安靖尚"
+        },
+        {
+            "key": "摄影监督",
+            "value": "松本幸子(1)、鎌田克明(2)、青木孝司(3)、柚木脇達己(4)"
+        },
+        {
+            "key": "剪辑",
+            "value": "濱宇津妙子(1)、松村正宏(2-3)、辺見俊夫(4)"
+        },
+        {
+            "key": "音响监督",
+            "value": "三間雅文"
+        },
+        {
+            "key": "动画制作",
+            "value": "OLM、Production I.G、XEBEC"
+        },
+        {
+            "key": "协力",
+            "value": "任天堂、テレビ東京、ジェイアール東日本企画"
+        },
+        {
+            "key": "製作",
+            "value": "株式会社ポケモン"
+        },
+        {
+            "key": "脚本",
+            "value": "広田光毅(1/3)、笠原邦暁(2/4)"
+        },
+        {
+            "key": "作画监督",
+            "value": "片桐貴悠、飯飼一幸、岩田芳美、鈴木裕輔、能條理行、板倉健、福島豊明、しんぼたくろう、谷口元浩、田島瑞穂"
+        },
+        {
+            "key": "动作作画监督",
+            "value": "中野悟史(4)"
+        }
+    ],
+    "volumes": 0,
+    "eps": 4,
+    "total_episodes": 5,
+    "rating": {
+        "rank": 1227,
+        "total": 1314,
+        "count": {
+            "one": 0,
+            "two": 4,
+            "three": 2,
+            "four": 5,
+            "five": 38,
+            "six": 167,
+            "seven": 500,
+            "eight": 468,
+            "nine": 93,
+            "ten": 37
+        },
+        "score": 7.4
+    },
+    "collection": {
+        "wish": 169,
+        "collect": 2182,
+        "doing": 41,
+        "on_hold": 38,
+        "dropped": 35
+    },
+    "tags": [
+        {
+            "name": "游戏改",
+            "count": 260
+        },
+        {
+            "name": "口袋妖怪",
+            "count": 228
+        },
+        {
+            "name": "2013年10月",
+            "count": 155
+        },
+        {
+            "name": "ProductionI.G",
+            "count": 147
+        },
+        {
+            "name": "TV",
+            "count": 146
+        },
+        {
+            "name": "童年",
+            "count": 109
+        },
+        {
+            "name": "2013",
+            "count": 107
+        },
+        {
+            "name": "pokemon",
+            "count": 72
+        },
+        {
+            "name": "宠物小精灵",
+            "count": 69
+        },
+        {
+            "name": "mega进化X",
+            "count": 51
+        },
+        {
+            "name": "Origin",
+            "count": 50
+        },
+        {
+            "name": "XEBEC",
+            "count": 49
+        },
+        {
+            "name": "OLM",
+            "count": 32
+        },
+        {
+            "name": "Production.I.G",
+            "count": 26
+        },
+        {
+            "name": "宝可梦",
+            "count": 23
+        },
+        {
+            "name": "OVA",
+            "count": 18
+        },
+        {
+            "name": "精灵宝可梦",
+            "count": 13
+        },
+        {
+            "name": "川崎逸朗",
+            "count": 9
+        },
+        {
+            "name": "战斗",
+            "count": 9
+        },
+        {
+            "name": "日本",
+            "count": 8
+        },
+        {
+            "name": "神奇宝贝",
+            "count": 8
+        },
+        {
+            "name": "奇幻",
+            "count": 8
+        },
+        {
+            "name": "热血",
+            "count": 8
+        },
+        {
+            "name": "冒险",
+            "count": 7
+        },
+        {
+            "name": "黒田幸生",
+            "count": 6
+        },
+        {
+            "name": "日本动画",
+            "count": 5
+        },
+        {
+            "name": "冨安大貴",
+            "count": 5
+        },
+        {
+            "name": "2013年",
+            "count": 4
+        },
+        {
+            "name": "オー・エル・エム",
+            "count": 4
+        },
+        {
+            "name": "续作",
+            "count": 3
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "游戏改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        26140
+    ],
+    "main_characters": [
+        {
+            "id": 26140,
+            "name": "レッド",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8a/e5/26140_crt_VVWh1.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/e5/26140_crt_VVWh1.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/e5/26140_crt_VVWh1.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8a/e5/26140_crt_VVWh1.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4084,
+                    "name": "竹内順子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a5/3c/4084_prsn_wQHsi.jpg"
+                    },
+                    "short_summary": "竹内顺子（1972年4月5日－），日本的女性声优、演员，现属剧团BQ MAP及尾木プロ THE NEXT事务所旗下。埼玉县出身，血型是B型。代表作有‘Hunter × Hunter’的（小杰·富力士）、‘メダロットシリーズ’的（メタビー）、‘火影忍者’的（漩涡鸣人）、‘Yes! 光之美少女5’的（夏木玲）等。\r\n\r\n\r\n竹内顺子在98年左右最成功的角色无疑是《Hunter X Hunter》的小杰了，小杰的天真、童稚、智慧、善良、倔强、快乐、忧愁、希望、失落，一切的一切都被竹内小姐以其稚气未脱、幼稚的语言所表现，竹内小姐的嗓鼻使用方面堪称高手，在激动和冷静时表现的气质是Q所喜爱并敬佩的，竹内小姐带动的小杰的气质是向高尚的气质发展的，可以感觉得到她对人物的理解是跨时代性的，是用发展的语言演绛成长的人物，这是其最大的优势和财富所在。这一点是田中小姐甚至许多女声优所不能比拟的。而田中小姐的语言感染力以及表现功力的自然和纯熟也是值得学习的。 　　后来竹内顺子又参与《火影忍者》中漩涡鸣人的配音，再一次大大提高了竹内的知名度，并且相当成功，与小杰有的一拼，这时候的她已经有12年的配音经验，可以说比98年的时候要成熟许多。虽然鸣人是男性，但是竹内顺子却能配的天衣无缝，不仅如此，还将鸣人的勇敢、毅力、倔强、不服输的精神以及偶尔显示的智慧表现的淋漓尽致。 　　竹内顺子的作品并不算特别多，但是人气漫画的主角倒占了不少。她也很会为男性人物配音，甚至有些比较难，比较不可思议的声音，都听不出来是出自于她。可见竹内的精炼。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

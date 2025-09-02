@@ -1,0 +1,44 @@
+{
+    "id": 16409,
+    "name": "波浪浮亭木胡桃",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/37/39/16409_crt_i3iWf.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/39/16409_crt_i3iWf.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/39/16409_crt_i3iWf.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/37/39/16409_crt_i3iWf.jpg"
+    },
+    "summary": "女子落語家。高座名の由来は「ハローキティ」と「着ぐるみ」。\r\n髪型はセミロングでアホ毛がある。髪の色はオレンジ色。瞳の色も含めてイメージカラーは黄色で一貫している。桃色の着物と相まって最も少女的な雰囲気を持っている。未成年。\r\n小柄な容姿と天真爛漫な物腰で、周囲からは「キグちゃん」の愛称で親しまれている。\r\n趣向においては可愛いもの好きだが、対外的な言動においては名の通りに猫をかぶっており、周りに期待されているときは可愛らしいことを言うが、実はすべて演技で、そのときに心の中で舌打ちをする黒い一面がある。\r\n犬を飼っている。\r\n（元）登校拒否児。\r\n五人の内では最も後輩にあたるらしく、丸京が廃業し再入門した際に最も露骨に先輩風を吹かせていた。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "波浪浮亭木胡桃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "はろうきてい きぐるみ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 8,
+        "collects": 38
+    },
+    "anime_ids": [
+        37897
+    ]
+}

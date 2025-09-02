@@ -1,0 +1,67 @@
+{
+    "id": 13064,
+    "name": "ゆの",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/16/7a/13064_crt_6aZs1.jpg?r=1620763730",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/16/7a/13064_crt_6aZs1.jpg?r=1620763730",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/16/7a/13064_crt_6aZs1.jpg?r=1620763730",
+        "grid": "https://lain.bgm.tv/pic/crt/g/16/7a/13064_crt_6aZs1.jpg?r=1620763730"
+    },
+    "summary": "向阳庄201号室。温柔坦诚。性格柔和，不管做什么都很努力。\r\n喜欢可爱的东西。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "由乃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ゆの"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ゆの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yuno"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ゆのっち"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月5日"
+        },
+        {
+            "key": "身高",
+            "value": "144cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 5,
+    "stat": {
+        "comments": 29,
+        "collects": 136
+    },
+    "anime_ids": [
+        37819,
+        330,
+        3622,
+        896
+    ]
+}

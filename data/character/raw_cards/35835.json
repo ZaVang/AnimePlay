@@ -1,0 +1,68 @@
+{
+    "id": 35835,
+    "name": "海崎新太",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/18/b6/35835_crt_az6U9.jpg?r=1484153389",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/b6/35835_crt_az6U9.jpg?r=1484153389",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/b6/35835_crt_az6U9.jpg?r=1484153389",
+        "grid": "https://lain.bgm.tv/pic/crt/g/18/b6/35835_crt_az6U9.jpg?r=1484153389"
+    },
+    "summary": "本作主人公，青叶高中3年3班4号，27岁，8月12日生，O型，身高176cm。\r\n老家为九州的渔村。重考两次才考上东京的大学，毕业前成功就业但只做了三个月就辞职，导致之后招工都被雇佣方以此刁难，没有女朋友，老家由于其长时间没找到工作准备不再提供生活费要求其回老家。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "海崎新太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "海崎 新太"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かいざき あらた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kaizaki Arata"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "8月12日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "176cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 12,
+    "stat": {
+        "comments": 15,
+        "collects": 49
+    },
+    "anime_ids": [
+        126173
+    ]
+}

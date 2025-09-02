@@ -1,0 +1,60 @@
+{
+    "id": 35667,
+    "name": "雛月加代",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/61/ab/35667_crt_zbt7G.jpg?r=1446564608",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/ab/35667_crt_zbt7G.jpg?r=1446564608",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/ab/35667_crt_zbt7G.jpg?r=1446564608",
+        "grid": "https://lain.bgm.tv/pic/crt/g/61/ab/35667_crt_zbt7G.jpg?r=1446564608"
+    },
+    "summary": "悟の小学生時代のクラスメイト。\r\n周囲とあまり関わりを持たず、\r\nクラスの中で“浮いた”存在。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雏月加代"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "雛月 加代"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひなづき かよ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hinazuki Kayo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1977年3月2日"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://bokumachi-anime.com/character/#character/3"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1977,
+    "birth_mon": 3,
+    "birth_day": 2,
+    "stat": {
+        "comments": 116,
+        "collects": 231
+    },
+    "anime_ids": [
+        137722
+    ]
+}

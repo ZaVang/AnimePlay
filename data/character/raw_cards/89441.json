@@ -1,0 +1,52 @@
+{
+    "id": 89441,
+    "name": "ローラ／キュアラメール",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/12/f2/89441_crt_n9p22.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/f2/89441_crt_n9p22.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/f2/89441_crt_n9p22.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/12/f2/89441_crt_n9p22.jpg"
+    },
+    "summary": "从人鱼之国·大海洋来的人鱼女生。和真夏珊瑚同岁，是个自信家，会坦率表达自己的想法。为了实现成为下任女王的梦想而去寻找传说中的光之美少女。为了在光之美少女进行战斗时予以辅助，所以选择一起在地面上生活。爱好是唱歌。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "萝拉／沧海天使"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Laura／Cure Lamer"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月30日"
+        },
+        {
+            "key": "引用来源",
+            "value": "中文维基"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 30,
+    "stat": {
+        "comments": 12,
+        "collects": 27
+    },
+    "anime_ids": [
+        320857
+    ]
+}

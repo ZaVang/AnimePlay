@@ -1,0 +1,76 @@
+{
+    "id": 35278,
+    "name": "橫山奈緒",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/72/df/35278_crt_V3IvI.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/df/35278_crt_V3IvI.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/df/35278_crt_V3IvI.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/72/df/35278_crt_V3IvI.jpg"
+    },
+    "summary": "偶像大师百万LIVE登场的偶像。Dance属性。\r\n大阪出身，操着一口关西方言，不是很擅长说关东话，讲关东话时会经常咬到舌头。\r\n侧马尾是呈螺旋状的纵卷发。\r\n和绝大多数的大阪人一样会随身带着点心，不过并不是很擅长吐槽的样子。\r\n另外与大部分的关西腔角色不同，奈绪的第一人称是「私」而不是「ウチ」。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "横山奈绪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "橫山 奈緒"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "よこやま なお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yokoyama Nao"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月12日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "体重",
+            "value": "46kg"
+        },
+        {
+            "key": "BWH",
+            "value": "84/57/83"
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 12,
+    "stat": {
+        "comments": 22,
+        "collects": 27
+    },
+    "anime_ids": [
+        309807
+    ]
+}

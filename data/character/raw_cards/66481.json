@@ -1,0 +1,54 @@
+{
+    "id": 66481,
+    "name": "ファイ・ファイ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ce/79/66481_crt_OYlsn.jpg?r=1611792140",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/79/66481_crt_OYlsn.jpg?r=1611792140",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/79/66481_crt_OYlsn.jpg?r=1611792140",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ce/79/66481_crt_OYlsn.jpg?r=1611792140"
+    },
+    "summary": "天真爛漫な元気っ子でご飯と友達が大好きな戦士。\r\n小さい頃から森で育ったこともあり、動物と心を通わせる。\r\n意外に常識的で理論派。\r\n空腹が限界を超えるとバーサーカーと化し、友達に襲いかかって甘噛みする癖がある。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "法伊·法伊"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ファイ"
+                },
+                {
+                    "v": "Fai"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Fai Fai"
+                },
+                {
+                    "k": "昵称",
+                    "v": "法伊"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 13,
+        "collects": 40
+    },
+    "anime_ids": [
+        254895
+    ]
+}

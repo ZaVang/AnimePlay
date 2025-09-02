@@ -1,0 +1,68 @@
+{
+    "id": 111328,
+    "name": "八奈見杏菜",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/87/fc/111328_crt_mW5Z8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/fc/111328_crt_mW5Z8.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/fc/111328_crt_mW5Z8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/87/fc/111328_crt_mW5Z8.jpg"
+    },
+    "summary": "和彦のクラスメイト。明るく愛嬌のあるクラスの人気者だが、ちょっと抜けている一面がある。天井知らずの食欲を持つ食いしん坊。幼なじみに長年の片想いをしているが……？",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "八奈见杏菜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "八奈見 杏菜"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やなみ あんな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yanami Anna"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月29日"
+        },
+        {
+            "key": "身高",
+            "value": "156cm（SSS短篇集）"
+        },
+        {
+            "key": "体重",
+            "value": "未知（SSS短篇集）/大于52kg（第5卷）"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://makeine-anime.com/character/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 29,
+    "stat": {
+        "comments": 503,
+        "collects": 1540
+    },
+    "anime_ids": [
+        464376
+    ]
+}

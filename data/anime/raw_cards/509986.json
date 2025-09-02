@@ -1,0 +1,350 @@
+{
+    "id": 509986,
+    "type": 2,
+    "name": "アポカリプスホテル",
+    "name_cn": "末日后酒店",
+    "summary": "人类离开后，地球经历了漫长的岁月。\r\n位于日本首都东京银座的「银河楼」酒店，至今仍在营业中。\r\n工作人员是以酒店机器人八千代为中心，在各个部门工作的员工机器人们。\r\n它们一边等待老板的归来和再次迎接人类的时刻，一边在没有住客的酒店里专心致志地工作，这样的日子仿佛永无止境。\r\n而对于这样的八千代等人，现在，小小的奇迹即将发生——",
+    "nsfw": false,
+    "locked": false,
+    "date": "2025-04-08",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/6e/1a/509986_99qsc.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/6e/1a/509986_99qsc.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/6e/1a/509986_99qsc.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/6e/1a/509986_99qsc.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/6e/1a/509986_99qsc.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "末日后酒店"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "启示录酒店",
+                    "k": null
+                },
+                {
+                    "v": "天启酒店",
+                    "k": null
+                },
+                {
+                    "v": "Apocalypse Hotel",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2025年4月8日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期二"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://apocalypse-hotel.jp/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "日本テレビ"
+        },
+        {
+            "key": "其他电视台",
+            "value": "AT-X"
+        },
+        {
+            "key": "播放结束",
+            "value": "2025年6月24日"
+        },
+        {
+            "key": "导演",
+            "value": "春藤佳奈"
+        },
+        {
+            "key": "Copyright",
+            "value": "©アポカリプスホテル製作委員会"
+        },
+        {
+            "key": "人物设定",
+            "value": "横山なつき；副人设：阿見圭之介、森藤希子、野田康行、小池智史"
+        },
+        {
+            "key": "制片人",
+            "value": "椛嶋麻菜美、蛯名涼、木村淳、佐野貢一、塩谷尚史"
+        },
+        {
+            "key": "执行制片人",
+            "value": "青村陽介、佐藤貴博、伊藤明博"
+        },
+        {
+            "key": "製作",
+            "value": "アポカリプスホテル製作委員会（CyberAgent、日本テレビ、竹書房、サミー、arma bianca）"
+        },
+        {
+            "key": "企画",
+            "value": "山内隆裕、桑原勇蔵、宮田純孝、星野歩、坂井智成"
+        },
+        {
+            "key": "音乐制作",
+            "value": "音乐制作协力：SCOOP MUSIC"
+        },
+        {
+            "key": "脚本",
+            "value": "村越繁(1-3,6,8-9,11-12)、和田崇太郎(4-5,7,10)"
+        },
+        {
+            "key": "分镜",
+            "value": "春藤佳奈(1,4,12)、諸冨直也(2)、鈴木行(3,10)、片岡史旭(5)、上村泰(6)、佐伯昭志(7)、藤原準(8)、金﨑貴臣(9)、廖程芝(11)"
+        },
+        {
+            "key": "演出",
+            "value": "廖程芝(1,11)、川部真也(2,10)、柴田彰久(3)、城戸康平(3,10-11)、徐傳峰(4)、片岡史旭(5,10)、migmi(6,9)、一居一平(7)、藤原準(8)、谷本頼洋(10-11)、西願宏子(11)、春藤佳奈(11-12)"
+        },
+        {
+            "key": "演出助理",
+            "value": "谷本頼洋(5)、橋本有加(11)"
+        },
+        {
+            "key": "总作画监督",
+            "value": "横山なつき(1,3-4,6,9-10)、小池智史(2,8,12)、阿見圭之介(3-4,10)、吉村萌(5,9)、野田康行(6-7,11)"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "春藤佳奈 / 片岡史旭"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 12,
+    "rating": {
+        "rank": 125,
+        "total": 9919,
+        "count": {
+            "one": 16,
+            "two": 10,
+            "three": 8,
+            "four": 24,
+            "five": 82,
+            "six": 365,
+            "seven": 1374,
+            "eight": 4054,
+            "nine": 3222,
+            "ten": 764
+        },
+        "score": 8.2
+    },
+    "collection": {
+        "wish": 3715,
+        "collect": 11578,
+        "doing": 6422,
+        "on_hold": 298,
+        "dropped": 210
+    },
+    "tags": [
+        {
+            "name": "原创",
+            "count": 3066
+        },
+        {
+            "name": "科幻",
+            "count": 2449
+        },
+        {
+            "name": "2025年4月",
+            "count": 1929
+        },
+        {
+            "name": "CygamesPictures",
+            "count": 1912
+        },
+        {
+            "name": "TV",
+            "count": 1584
+        },
+        {
+            "name": "治愈",
+            "count": 1511
+        },
+        {
+            "name": "末世",
+            "count": 1490
+        },
+        {
+            "name": "奇幻",
+            "count": 1426
+        },
+        {
+            "name": "日常",
+            "count": 1146
+        },
+        {
+            "name": "日本",
+            "count": 937
+        },
+        {
+            "name": "2025",
+            "count": 736
+        },
+        {
+            "name": "催泪",
+            "count": 394
+        },
+        {
+            "name": "搞笑",
+            "count": 331
+        },
+        {
+            "name": "春藤佳奈",
+            "count": 292
+        },
+        {
+            "name": "村越繁",
+            "count": 176
+        },
+        {
+            "name": "2025年",
+            "count": 83
+        },
+        {
+            "name": "无法预测的命运之舞台",
+            "count": 40
+        },
+        {
+            "name": "4月",
+            "count": 25
+        },
+        {
+            "name": "单元剧",
+            "count": 25
+        },
+        {
+            "name": "电波",
+            "count": 21
+        },
+        {
+            "name": "原创动画",
+            "count": 18
+        },
+        {
+            "name": "key",
+            "count": 17
+        },
+        {
+            "name": "机器人",
+            "count": 16
+        },
+        {
+            "name": "京阿尼",
+            "count": 16
+        },
+        {
+            "name": "Air",
+            "count": 16
+        },
+        {
+            "name": "游戏改",
+            "count": 16
+        },
+        {
+            "name": "喜剧",
+            "count": 15
+        },
+        {
+            "name": "神作",
+            "count": 9
+        },
+        {
+            "name": "追番",
+            "count": 9
+        },
+        {
+            "name": "末日后酒店",
+            "count": 9
+        }
+    ],
+    "meta_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "奇幻",
+        "原创"
+    ],
+    "series": false,
+    "main_character_ids": [
+        170104,
+        173497
+    ],
+    "main_characters": [
+        {
+            "id": 170104,
+            "name": "ヤチヨ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a2/82/170104_crt_3Za2o.jpg?r=1737696277",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/82/170104_crt_3Za2o.jpg?r=1737696277",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/82/170104_crt_3Za2o.jpg?r=1737696277",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a2/82/170104_crt_3Za2o.jpg?r=1737696277"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 41420,
+                    "name": "白砂沙帆",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c9/9d/41420_prsn_xYXKO.jpg?r=1752123020",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/9d/41420_prsn_xYXKO.jpg?r=1752123020",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/9d/41420_prsn_xYXKO.jpg?r=1752123020",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c9/9d/41420_prsn_xYXKO.jpg?r=1752123020"
+                    },
+                    "short_summary": "2017年、『〜みんなでゲームをつくろう〜Project LayereD（プロジェクトレイヤード）』声優オーディション企画のグランプリに選ばれ、同企画から生まれた『レイヤードストーリーズ ゼロ』のヒロイン・イオン＝ミルナ役で声優デビュー[2]。\r\n\r\n2018年、マウスプロモーション附属俳優養成所に入所。\r\n\r\n2020年より、マウスプロモーション所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 173497,
+            "name": "ポン子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/be/60/173497_crt_5t5yt.jpg?r=1749655221",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/60/173497_crt_5t5yt.jpg?r=1749655221",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/60/173497_crt_5t5yt.jpg?r=1749655221",
+                "grid": "https://lain.bgm.tv/pic/crt/g/be/60/173497_crt_5t5yt.jpg?r=1749655221"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5107,
+                    "name": "諸星すみれ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/55/56/5107_prsn_HQ05E.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/56/5107_prsn_HQ05E.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/56/5107_prsn_HQ05E.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/55/56/5107_prsn_HQ05E.jpg"
+                    },
+                    "short_summary": "童星出身，是女性声优、演员、歌手。向日葵剧团所属。有一个妹妹。\r\n代表作品包括TBS『ほーむめーかー』朋実役；NHK『连続テレビ小说「天花」』诸川すみれ役；舞台『お月さま、笑った』速水花菜役。\r\n\r\n艺名就是本名。据说当初父母本想给她起名为「莉桜（りお）」而不是「すみれ」。可是，刚出生不久的诸星右半身得了麻痹症，就连吃母乳都很困难。如果一辈子都得麻痹症的话，可能连自己的名字都写不好，于是父母就将她的名字改成了书写起来较简单的平假名。不过，在产后数月之后，麻痹症就自动痊愈了。\r\n3岁的时候加入了向日葵剧团。入团的契机是来自《千与千寻》中的角色汤婆婆，告诉父母自己也“想成为汤婆婆”。\r\n最崇拜的声优是曾经看过的『Hannah Montana』中参加演出的白石凉子等。\r\n擅长唱歌，拥有英语检定2级资格。受其父亲有搞乐团的喜好影响，而在高中时买了吉他来玩。\r\n今后被期待着有更活跃的表现。\r\n\r\n2006年，在7岁时出演《血色花园》的凯莉，被共演的子安武人的声调转换演技所折服，从那个时候开始产生了专业的自觉。\r\n2009年，在9岁时以妮娜·塔克 Nina Tucker 这一角色参加了《钢之炼金术师FULLMENTAL ALCHEMIST》。以其稚嫩的音质和富含表现力的演技得到了其他声优与动画制作人员的一致好评。朴璐美曾经赞赏她“是一名充满感性的演员”“在现场为她的演技所震撼”等，钉宫理惠也同意了这一说法。她的超高演技让包括朴璐美在内的现场声优都萌生了不服输的念头。其中，据说内海贤二先生因为太在意诸星的演技，自己也燃起了斗志投入了角色的演出。\r\n2012年，在13岁时以《偶像活动!》中的星宫莓一角在电视动画中首次作为主角参演。\r\n2018年3月毕业于堀越高等学校，同年4月开始进入大学就读。\r\n2019年5月31日，宣布将于秋季歌手solo出道。\r\n2022年3月26日，青山学院大学毕业。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

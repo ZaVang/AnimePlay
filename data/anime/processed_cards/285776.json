@@ -1,0 +1,155 @@
+{
+    "id": 285776,
+    "name": "异度侵入",
+    "image_path": "data/images/anime/285776.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "利用检测杀意的系统“罔象女”搜查犯罪事件的组织，通称“仓”。\r\n然后，神探·酒井户身为“罔象女”的驾驶员进入犯人的深层心理“杀意世界（井）”，对事件进行推理。\r\n他不断追寻着频繁发生、谜团重重的凶恶事件，以及在其中若隐若现的连续杀人鬼制造者“约翰·沃克”的影子。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "悬疑",
+        "TV",
+        "日本",
+        "原创",
+        "推理"
+    ],
+    "date": "2020-01-05",
+    "rating_rank": 934,
+    "rating_score": 7.5,
+    "rating_total": 13659,
+    "main_character_ids": [
+        74055,
+        74056,
+        74057,
+        74058
+    ],
+    "main_characters": [
+        {
+            "id": 74055,
+            "name": "名探偵酒井戸",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/5e/74055_crt_ay7B2.jpg?r=1576641063",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/5e/74055_crt_ay7B2.jpg?r=1576641063",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/5e/74055_crt_ay7B2.jpg?r=1576641063",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/5e/74055_crt_ay7B2.jpg?r=1576641063"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3977,
+                    "name": "津田健次郎",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/29/aa/3977_prsn_j4CoM.jpg?r=1692256394",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/aa/3977_prsn_j4CoM.jpg?r=1692256394",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/aa/3977_prsn_j4CoM.jpg?r=1692256394",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/29/aa/3977_prsn_j4CoM.jpg?r=1692256394"
+                    },
+                    "short_summary": "津田 健次郎（つだ けんじろう、1971年6月11日 - ）は、日本の声優、俳優。大阪府出身。芸能事務所はアンドステアに所属。\r\n\r\n幼少時代をジャカルタで過ごした経験をもつ。明治大学文学部文学科演劇学2年の時に、元々は映画を撮りたいと思っていた矢先に演じるほうにも興味を持ち、円・演劇研究所専攻科を受けて合格、休学して演劇活動に熱中する。その後、復学して卒業した。\r\n養成所卒業後は舞台系の事務所に所属していた。その際にオーディションの話があり、1995年のテレビアニメ『H2』で声優デビューする。以降は声優業を中心に、舞台やテレビドラマ、映画に出演、他にもテレビ番組やCMでのナレーションやラジオパーソナリティーなど多方面で活動している。\r\n映画は撮ることも観ることも好む。中学時代から映画館に通い始め、高校までは古い洋画を、大学入学後はアート系映画を中心に観ていたが、基本的にはノンジャンルとのことである。\r\n2017年より、病気療養中だった藤原啓治が演じていた幾つかの役（『宇宙戦艦ヤマト2202 愛の戦士たち』・榎本勇役、『進撃の巨人』・ハンネス役）を引き継いだ。\r\n2019年2月2日公開の「ドキュメンターテイメント AD-LIVE」で映画監督デビューした。\r\n\r\nゲーム『デス・ストランディング』の収録現場で、総監督を務めるゲームデザイナー小島秀夫やダイ・ハードマン役で共演する声優大塚明夫から「ケン坊」と呼ばれていることを自身のツイッターで明かしている。数日後、津田のツイートに返信する形で、同じゲームのデッドマン役で共演する声優石住昭彦も「ケン坊」と書いている。\r\n\r\n舞台役者として駆け出しの頃に出会った一般人女性と結婚しており、現在は2児の父親である。結婚を公表しない方が家族を安全を守れるという理由と、津田の好きな役者に私生活の見えない魅力があった人物が多く、自身もそういった表現者になりたいという思いから、結婚していることは公表していなかった。しかし、2020年7月、一部週刊誌で津田の結婚に関する記事が掲載されたことを受けて、自身のInstagramでこれらの事実を公表することとなった。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 74056,
+            "name": "百貴船太郎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/25/79/74056_crt_zN6Gz.jpg?r=1576641333",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/79/74056_crt_zN6Gz.jpg?r=1576641333",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/79/74056_crt_zN6Gz.jpg?r=1576641333",
+                "grid": "https://lain.bgm.tv/pic/crt/g/25/79/74056_crt_zN6Gz.jpg?r=1576641333"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4982,
+                    "name": "細谷佳正",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/40/4e/4982_prsn_XOxkm.jpg"
+                    },
+                    "short_summary": "高中时代参加的社团是戏剧社和剑道社。后来只专注於戏剧社。\r\n专门学校时期和友人一起组成街头艺人，由于是新人加上良好的歌声和歌曲，被同一个事务所的前辈大须贺纯所称赞。与其搭档的友人是吉他老师。名字倾向本身的创作风格，用了‘不协和音’来命名。歌曲由两人共同创作。其中‘雪’这首曲子几乎是一个人完成的。而在当时的演出地点是在京王线府中站。\r\n在网球王子的试镜会中也参与了平古场凛的角色。\r\n以网球王子白石藏之介名义连续两个月发行角色专辑，为网球王子角色歌曲首例，2010年04月14日发行的首张专辑《Medicine or...?》在Oricon Style拿下首日第七名，首周第十名。2010年05月19日发行的第二张专辑《POISON》登上Oricon Style首日第三名，首周第六名。其中，《Medicine or...?》中的＜I.ng＞及《POISON》中的＜エピローグ＞皆由细谷本人亲自做词。\r\n\r\n兴趣是射击运动和吉他。\r\n喜欢的艺人以男性居多，像是藤原龙也和洼冢洋介。\r\n无关年龄，喜欢思想较为成熟的女性。\r\n讨厌的食物是牡蛎，连碰都不能碰。喜欢红酒。\r\n喜欢Ne-Yo的音乐。\r\n喜欢猫，会和流浪猫玩在一起，所以身上容易残留猫毛。有一次到电台参与‘电波系彼女’的录制，后来才知道小林ゆう对猫过敏，并且向她道歉。\r\n电台‘テニスの王子様 オン・ザ・レイディオ’中被认定了是欺负的一群，常被前辈声优欺负。\r\n身材较为纤细修长，非常容易出汗。\r\n经常有电波系的恐怖经验。\r\n被小林ゆう称赞其说话技巧很好。\r\n对电脑等电子装置很不熟悉的缘故，家中并没有电脑。工作上请附近的香烟店帮忙传真。\r\n对于星座很了解，不过否定自己的水瓶座B型是个“怪人”的见解。\r\n为了演出不良少年柔沢ジュウ的感觉，在自家的厕所里一边冲水一边大叫磨损喉咙。\r\n在过去的事件中，曾比喻自己“声音像没特色的茶泡饭”。\r\n\r\n2014年荣获第八届日本声优大赏“助演男优赏”。\r\n\r\n曾属Mausu Promotion。2014年在广播『天才軍師』2014年7月13日放送回中，宣布自2014年7月1日恢复为自由身。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 74057,
+            "name": "富久田保津",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6a/7e/74057_crt_EwBmA.jpg?r=1576641557",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/7e/74057_crt_EwBmA.jpg?r=1576641557",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/7e/74057_crt_EwBmA.jpg?r=1576641557",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6a/7e/74057_crt_EwBmA.jpg?r=1576641557"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5211,
+                    "name": "竹内良太",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8c/d5/5211_prsn_56655.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/d5/5211_prsn_56655.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/d5/5211_prsn_56655.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8c/d5/5211_prsn_56655.jpg"
+                    },
+                    "short_summary": "竹内 良太（たけうち りょうた、1982年9月22日 - ）は、日本の男性声優。青二プロダクション所属。兵庫県神戸市出身。同じく声優の寺島愛は妻。大阪アニメーションスクール、日本ナレーション演技研究所付属養成所卒業。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 74058,
+            "name": "本堂町小春",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3f/05/74058_crt_t9CK4.jpg?r=1701883005",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/05/74058_crt_t9CK4.jpg?r=1701883005",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/05/74058_crt_t9CK4.jpg?r=1701883005",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3f/05/74058_crt_t9CK4.jpg?r=1701883005"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10887,
+                    "name": "M・A・O",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821"
+                    },
+                    "short_summary": "出生于日本大阪府，日本女演员、声优，前属大阪堀制作事务所所属女艺人，现为Yellow Cab NEXT旗下的女艺人。\r\n2006年10月，市道真央曾在大阪堀制作的HOP CLUB组合面试之中夺得大奖。2010年中，移居到东京。同年8月，在周刊少年JUMP的读者投稿角落《JUM魂G！》以职员身份登场。2011年2月，她在参演超级战队系列特摄作品《海贼战队豪快者》之中，饰演女主角之一“Luka Millfy／豪快黄”。2012年，以M·A·O的名义在电视动画《料理偶像》出演奇拉奇拉，正式开始声优活动。\r\n\r\n个人生活\r\n特色是关西腔。于2014年因出演《极黑的布伦希尔德》中的和美一角而出名。\r\n小的时候就很喜欢动画和漫画，不过，直接的契机是在特摄剧《海贼战队豪快者》中出演。由于对于这种化装后再配音的工作很感兴趣，所以希望有机会能从事与声音有关的工作。\r\n喜欢看书，但最喜欢的还是漫画，尤其是《周刊少年JUMP》。\r\n憧憬的角色不分身份、性别，只要能够锻炼演技都会广泛出演。希望尝试小男孩一类或者有着古怪变化的角色。\r\n在成为声优前亦有为《海贼战队豪快者》配音，因此拥有一定的基础，声线恬静柔和，无论是幼女还是青年女子都能够出演。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

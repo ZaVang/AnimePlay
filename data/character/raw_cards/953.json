@@ -1,0 +1,60 @@
+{
+    "id": 953,
+    "name": "吉田一美",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/92/32/953_KXw6L.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/32/953_KXw6L.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/32/953_KXw6L.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/92/32/953_KXw6L.jpg"
+    },
+    "summary": "御崎高中一年二班的学生，内向且可爱的女生，在受过悠二和夏娜的帮助之后对他产生了好感，本片第二个女主角。面对的是最具压迫感的情敌，固执起来也是很可怕。其身材在同学之间闻名（主要可见于动画第一季OVA）。曾帮助过“调音师”卡姆辛。她有饲养一只名叫“艾卡特利娜”的小狗；自己也有一个名叫“小健”的弟弟（以上情节有在漫画版、动画版第一季提及）。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "吉田一美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "吉田 一美"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yoshida Kazumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "158"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "川澄绫子"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 12,
+        "collects": 61
+    },
+    "anime_ids": [
+        490
+    ]
+}

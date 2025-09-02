@@ -1,0 +1,65 @@
+{
+    "id": 10694,
+    "name": "見月そはら",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/03/08/10694_crt_1ie41.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/08/10694_crt_1ie41.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/08/10694_crt_1ie41.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/03/08/10694_crt_1ie41.jpg"
+    },
+    "summary": "智树的邻居兼青梅竹马，喜欢智树，但不喜欢智树太色情。\r\n似乎常做跟智树的春梦，很在意智树和伊卡洛斯及风音日和的关系。\r\n面对智树的骚扰与好色行为会使用手刀加以制裁，\r\n所做的煎鸡蛋具有生化武器的恐怖程度。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "见月楚原"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "みつき そはら"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月15日"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "体重",
+            "value": "49kg"
+        },
+        {
+            "key": "BWH",
+            "value": "92/59/84"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://zh.wikipedia.org"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 15,
+    "stat": {
+        "comments": 12,
+        "collects": 67
+    },
+    "anime_ids": [
+        7150,
+        2617
+    ]
+}

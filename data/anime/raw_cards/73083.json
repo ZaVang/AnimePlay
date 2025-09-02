@@ -1,0 +1,431 @@
+{
+    "id": 73083,
+    "type": 2,
+    "name": "ダイヤのA",
+    "name_cn": "钻石王牌",
+    "summary": "        国中时期最后的大赛，率领即将被废止的赤城中学参赛，却在第一回战中投出暴投而输掉比赛的投手泽村荣纯，本来决定要与国中时期的朋友一同考入故乡的高中，却被东京的棒球名校青道高中挖角，并在那里遇见了天才捕手御幸一也，他的人生就此改变…",
+    "nsfw": false,
+    "locked": false,
+    "date": "2013-10-06",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/1d/27/73083_CEaaO.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/1d/27/73083_CEaaO.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/1d/27/73083_CEaaO.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/1d/27/73083_CEaaO.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/1d/27/73083_CEaaO.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "钻石王牌"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Ace of Diamond",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "75"
+        },
+        {
+            "key": "放送开始",
+            "value": "2013年10月6日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://diaace.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京"
+        },
+        {
+            "key": "其他电视台",
+            "value": "テレビ大阪、テレビ愛知、テレビ北海道、テレビせとうち、TVQ九州、AT-X"
+        },
+        {
+            "key": "播放结束",
+            "value": "2015年3月29日"
+        },
+        {
+            "key": "导演",
+            "value": "増原光幸"
+        },
+        {
+            "key": "音乐",
+            "value": "Frying-Pan（百石元、小森茂生、Tom-H@ck、yamazo、奈良悠樹、丘ナオキ、中山真斗）"
+        },
+        {
+            "key": "Copyright",
+            "value": "©寺嶋裕二・講談社／「ダイヤのA」製作委員会・テレビ東京"
+        },
+        {
+            "key": "音响监督",
+            "value": "髙桑一"
+        },
+        {
+            "key": "企画",
+            "value": "鈴木伸育、古川陽子、小竹讃久、旦悠輔、平岡利介（テレビ東京）、中村直樹、峯辰雄(1話-65話)→杉浦修(66話-75話)、青木建彦、岡田浩行(1話-36話)→高橋正弘(37話-75話)、宮内康行、石川光久"
+        },
+        {
+            "key": "执行制片人",
+            "value": "立石謙介、菊池貞和、堀容隆、柳村努、宮﨑武洋、難波秀行、吉田勇樹、新宿五郎、坂本直紀、森下勝司"
+        },
+        {
+            "key": "制片人",
+            "value": "佐々木亮(1話-25話)→山内未來(26話-75話)（テレビ東京）、渡邊愛美(1話-65話)"
+        },
+        {
+            "key": "联合制片人",
+            "value": "山谷奈久留、高畑裕一郎、文山拓也、宿輪浩介、山川典夫（テレビ東京）、岡村武真、服部優太、寺川英和(1話-25話)→佐藤香苗(26話-70話)→大瀬裕嗣(71話-75話)"
+        },
+        {
+            "key": "监修",
+            "value": "松下卓也、福場一義"
+        },
+        {
+            "key": "音响",
+            "value": "ダックスプロダクション（制作担当：西島浩志）；协力：ポニーキャニオンエンタープライズ"
+        },
+        {
+            "key": "音乐制作",
+            "value": "ポニーキャニオン；协力：テレビ東京ミュージック"
+        },
+        {
+            "key": "宣传",
+            "value": "井上裕子(1話-8話)→池永けい(9話-25話)→山室泰造(26話-41話)→高倉木綿子(42話-75話)（テレビ東京）、小山直紀；协力：北岡森生、上田径、河原井勇樹、相島豪太、坂本耕作(1話-51話)、間庭秀樹(26話-75話)、鐵智文(1話-51話)、池田悠(1話-51話)、甲子園歴史館、永井康晴、浅沼亮(52話-75話)"
+        },
+        {
+            "key": "製作",
+            "value": "テレビ東京、AT-X"
+        },
+        {
+            "key": "剪辑",
+            "value": "寺内聡；助手：河西直樹"
+        },
+        {
+            "key": "录音",
+            "value": "清水幸司"
+        },
+        {
+            "key": "录音助理",
+            "value": "菊地一之(1話-29話)→相馬唯志(30話-45話)→小泉まい(46話-75話)"
+        },
+        {
+            "key": "摄影监督",
+            "value": "畑中宏信(1話-41話)→奥村隆弘(42話-75話)"
+        },
+        {
+            "key": "3DCG",
+            "value": "MADBOX"
+        },
+        {
+            "key": "特效",
+            "value": "チーム・タニグチ、谷口久美子、荒畑歩美、小林香織、飯田彩佳；特效监修：谷口久美子(52話-)"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "浅香守生（OP1、OP2）、佐藤雄三（OP3、ED6）、平田敏夫（ED1、ED3）、芦野芳晴（ED2）、中川淳（ED4）、福島利規（ED5）"
+        },
+        {
+            "key": "原作",
+            "value": "寺嶋裕二（講談社「週刊少年マガジン」連載）"
+        }
+    ],
+    "volumes": 0,
+    "eps": 75,
+    "total_episodes": 75,
+    "rating": {
+        "rank": 740,
+        "total": 1207,
+        "count": {
+            "one": 3,
+            "two": 0,
+            "three": 5,
+            "four": 5,
+            "five": 22,
+            "six": 122,
+            "seven": 367,
+            "eight": 501,
+            "nine": 114,
+            "ten": 68
+        },
+        "score": 7.6
+    },
+    "collection": {
+        "wish": 636,
+        "collect": 1501,
+        "doing": 453,
+        "on_hold": 295,
+        "dropped": 144
+    },
+    "tags": [
+        {
+            "name": "2013年10月",
+            "count": 285
+        },
+        {
+            "name": "MADHouse",
+            "count": 260
+        },
+        {
+            "name": "热血",
+            "count": 223
+        },
+        {
+            "name": "钻石王牌",
+            "count": 192
+        },
+        {
+            "name": "野球",
+            "count": 175
+        },
+        {
+            "name": "漫画改",
+            "count": 168
+        },
+        {
+            "name": "Production.I.G",
+            "count": 154
+        },
+        {
+            "name": "TV",
+            "count": 151
+        },
+        {
+            "name": "运动",
+            "count": 146
+        },
+        {
+            "name": "2013",
+            "count": 100
+        },
+        {
+            "name": "漫改",
+            "count": 85
+        },
+        {
+            "name": "ProductionI.G",
+            "count": 82
+        },
+        {
+            "name": "棒球",
+            "count": 71
+        },
+        {
+            "name": "櫻井孝宏",
+            "count": 48
+        },
+        {
+            "name": "逢坂良太",
+            "count": 36
+        },
+        {
+            "name": "樱井孝宏",
+            "count": 19
+        },
+        {
+            "name": "竞技",
+            "count": 19
+        },
+        {
+            "name": "体育",
+            "count": 17
+        },
+        {
+            "name": "校园",
+            "count": 15
+        },
+        {
+            "name": "増原光幸",
+            "count": 13
+        },
+        {
+            "name": "运动番",
+            "count": 12
+        },
+        {
+            "name": "古怒田健志",
+            "count": 8
+        },
+        {
+            "name": "2013年",
+            "count": 7
+        },
+        {
+            "name": "增原光幸",
+            "count": 7
+        },
+        {
+            "name": "日本",
+            "count": 7
+        },
+        {
+            "name": "燃",
+            "count": 6
+        },
+        {
+            "name": "岛崎信长",
+            "count": 5
+        },
+        {
+            "name": "年番",
+            "count": 5
+        },
+        {
+            "name": "Production_I.G",
+            "count": 5
+        },
+        {
+            "name": "神谷浩史",
+            "count": 5
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "运动",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        21678,
+        21679,
+        21680,
+        21681
+    ],
+    "main_characters": [
+        {
+            "id": 21678,
+            "name": "沢村栄純",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3c/6e/21678_crt_j25z3.jpg?r=1397061220",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/6e/21678_crt_j25z3.jpg?r=1397061220",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/6e/21678_crt_j25z3.jpg?r=1397061220",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3c/6e/21678_crt_j25z3.jpg?r=1397061220"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7385,
+                    "name": "逢坂良太",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/81/c0/7385_prsn_3DfT0.jpg?r=1543641007",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/c0/7385_prsn_3DfT0.jpg?r=1543641007",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/c0/7385_prsn_3DfT0.jpg?r=1543641007",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/81/c0/7385_prsn_3DfT0.jpg?r=1543641007"
+                    },
+                    "short_summary": "日本男性声优，隶属日本EARLY WING公司。德岛县出身。\r\n\r\n原本只是很喜欢动画，并没有以成为声优为目标，但是在高中的入学式突然觉得“要成为声优”为目标。在家乡的工业高中毕业后，就和一起想要成为声优的朋友一起来到东京，在日本工学院八王子专门学校的舞台科花了两年学习舞台的基础，最后在专门学校毕业后就到了事务所参加考试，但是不幸落选了，在之后，参加了EARLY WING的追加面试中得到了正选。\r\n在2012年4月中，《钓球》的真田雪是成为声优后的第一次主役。\r\n在2015年的第9回声优奖获得新人男优赏。\r\n\r\n兴趣是散步和电玩，假日会花数个小时散步。\r\n喜欢的歌手是JAM Project。\r\n有一个姐姐和一个弟弟。\r\n喜欢玩Tales of Eternia，甚至列入喜欢的游戏前三名。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 21679,
+            "name": "御幸一也",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2f/7d/21679_crt_wAp2i.jpg?r=1397061430",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2f/7d/21679_crt_wAp2i.jpg?r=1397061430",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2f/7d/21679_crt_wAp2i.jpg?r=1397061430",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2f/7d/21679_crt_wAp2i.jpg?r=1397061430"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4015,
+                    "name": "櫻井孝宏",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/06/29/4015_prsn_4TZox.jpg?r=1638448222"
+                    },
+                    "short_summary": "爱知县冈崎市老家的本业是米店，店名为“樱井米谷店”，在当地小有名气。\r\n初中时的一个冬天，怕冷的他擅自把酒精灯里的液体倒在理科实验室的桌子上，点起火取暖，引响了火灾报警器，被赶来的老师狠狠教训了一顿。于是在老师的国语课上捣乱报复，夸张地朗读课文，实在听不过去的老师求他：“拜托，别念得跟声优似的好不好！”——这话对那时的樱井冲击很大，给他留下了声优不过是连小孩子都做得来的简单工作的印象。所以高中毕业后，乐得找轻松的樱井选择进入东京的声优专科学校。待迈入这一行，他才吐血地发现，且不说成为佼佼者，就是普通从业者也得掌握高超的专业技巧。\r\n2005年8月《最终幻想VII：降临之子》于第62届威尼斯影展参展。樱井以担任主角配音的身份，成为继山寺宏一后第2位踏上星光大道的日本籍声优。\r\n虽然戴着眼镜，可是樱井二眼视力皆为2.0，植田佳奈笑称那是“骗人眼镜”。那付眼镜的意义是“梦想与希望与对声迷们的爱”。\r\n最初的错误是BL DRAMA制作社Inter communications（inter桑）的一张drama的BK上打成了樱井考宏，之后《无法逃离的背叛》某个活动的官方网站上亦把樱井孝宏的名字写成“樱井考宏”，所以有昵称考哥，而并非是他的名字中的“孝”字与“考”字很像才有此外号。\r\n桜井(sakurai)，桜井さん（sakurai san），sakura i san，樱13",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 21680,
+            "name": "降谷暁",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/06/49/21680_crt_5dW5D.jpg?r=1397061628",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/49/21680_crt_5dW5D.jpg?r=1397061628",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/49/21680_crt_5dW5D.jpg?r=1397061628",
+                "grid": "https://lain.bgm.tv/pic/crt/g/06/49/21680_crt_5dW5D.jpg?r=1397061628"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7392,
+                    "name": "島﨑信長",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/65/0b/7392_prsn_85bDV.jpg"
+                    },
+                    "short_summary": "岛﨑信长（1988年12月6日－），日本男性配音演员。隶属于青二Production。出身于宫城县。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 21681,
+            "name": "小湊春市",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6d/aa/21681_crt_smTsS.jpg?r=1397061730",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6d/aa/21681_crt_smTsS.jpg?r=1397061730",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6d/aa/21681_crt_smTsS.jpg?r=1397061730",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6d/aa/21681_crt_smTsS.jpg?r=1397061730"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7772,
+                    "name": "花江夏樹",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084"
+                    },
+                    "short_summary": "花江夏树是日本的男性声优，ACROSS ENTERTAINMENT所属。\r\n「花江」是艺名，「夏樹」为本名。本名姓氏为「武田」。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": 72113,
+    "name": "心",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ff/12/72113_crt_yjZW2.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ff/12/72113_crt_yjZW2.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ff/12/72113_crt_yjZW2.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ff/12/72113_crt_yjZW2.jpg"
+    },
+    "summary": "煙の部下の掃除屋。身長196cm。体重116kg。足のサイズ33cm。\r\n心臓を模したマスクと継ぎ接ぎだらけの腕が特徴。普段はマスクを後ろ向きに被っている。マスクをしていない時はメガネを着用している。ブラックスーツにスニーカーを合わせた格好をしている。釘抜き付きのハンマーを武器として操り、何もかもをバラバラにする魔法を使う。人間、魔法使いは生きたままバラバラにできる。目の前で銃弾が連射されてからハンマーや魔法による防御が間に合ったり、遠距離からのライフルによる注射器の射撃をすべて叩き壊す等、生身の強さもカイマンの言うところの「魔法に頼ってばかりの弱っちィ奴ら」とは一線を画す。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "心"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "しん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "196cm"
+        },
+        {
+            "key": "体重",
+            "value": "116kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 19
+    },
+    "anime_ids": [
+        266301
+    ]
+}

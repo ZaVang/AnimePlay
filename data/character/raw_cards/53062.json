@@ -1,0 +1,48 @@
+{
+    "id": 53062,
+    "name": "小宮恵那",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d2/78/53062_crt_QqCs1.jpg?r=1510507906",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/78/53062_crt_QqCs1.jpg?r=1510507906",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/78/53062_crt_QqCs1.jpg?r=1510507906",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d2/78/53062_crt_QqCs1.jpg?r=1510507906"
+    },
+    "summary": "部員三名、廃部寸前の写真部に所属する二年生。\r\n写真部の存続をかけ、コンクールで一発逆転のベストショットを狙っていたところ、瑛太と陽斗の再会を偶然にも目撃する。\r\n\r\n部员三名、即将废部的摄影部所属的二年生。\r\n赌上摄影部的存续，以能在大赛上一发逆转的绝妙摄影为目标，\r\n就在此时，偶然目击了瑛太与阳斗的重逢。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小宫惠那"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "こみや えな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Komiya Ena"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 93,
+        "collects": 245
+    },
+    "anime_ids": [
+        212278
+    ]
+}

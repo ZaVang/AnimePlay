@@ -1,0 +1,36 @@
+{
+    "id": 63002,
+    "name": "ソルト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/27/49/63002_crt_X2tyg.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/49/63002_crt_X2tyg.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/49/63002_crt_X2tyg.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/27/49/63002_crt_X2tyg.jpg"
+    },
+    "summary": "見習い太陽使い。\r\nシュガーのお友達。\r\n\r\n太陽使いである父親に反発しながらも\r\n太陽使いを目指している。\r\n\r\n曲がったことが大嫌いで\r\n涙もろく、人情味にあつい。\r\n\r\n魔法のアイテムはトランペット。\r\n\r\n人間の年齢に換算すると9歳。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Salt"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 0
+    },
+    "anime_ids": [
+        2414
+    ]
+}

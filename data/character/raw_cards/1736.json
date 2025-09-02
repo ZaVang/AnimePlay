@@ -1,0 +1,74 @@
+{
+    "id": 1736,
+    "name": "遠見真矢",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ea/b6/1736_crt_4ZiL8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/b6/1736_crt_4ZiL8.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/b6/1736_crt_4ZiL8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ea/b6/1736_crt_4ZiL8.jpg"
+    },
+    "summary": "一骑的青梅竹马。与母亲、姐姐一同生活。\r\n兴趣是自由攀登，经常独自一人爬山。\r\n虽然母亲、姐姐都是医疗关系者，但真矢却手比较笨，包扎绷带也做不太好。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "远见真矢"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "遠見 真矢"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "とおみ まや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Toomi Maya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2131年11月11日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        },
+        {
+            "key": "体重",
+            "value": "48kg"
+        },
+        {
+            "key": "BWH",
+            "value": "79/57/81"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 2131,
+    "birth_mon": 11,
+    "birth_day": 11,
+    "stat": {
+        "comments": 31,
+        "collects": 67
+    },
+    "anime_ids": [
+        60901,
+        130230,
+        2936
+    ]
+}

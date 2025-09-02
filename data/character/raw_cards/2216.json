@@ -1,0 +1,81 @@
+{
+    "id": 2216,
+    "name": "ラクス・クライン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b0/3e/2216_crt_aAAdF.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/3e/2216_crt_aAAdF.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/3e/2216_crt_aAAdF.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b0/3e/2216_crt_aAAdF.jpg"
+    },
+    "summary": "16岁\r\n阿斯兰的未婚妻，非常喜欢阿斯兰送给她的哈罗\r\n\r\n雅金・杜威战后，退下政治舞台，和基拉一起住在马尔奇奥导师处，照顾孤儿，过着平静的日子，但被眼馋其吸引力的人盯上。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "拉克丝·克莱因"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Lacus Clyne"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ラクス・クライン"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "C.E.55年2月5日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "158cm→160cm"
+        },
+        {
+            "key": "体重",
+            "value": "53kg→46kg"
+        },
+        {
+            "key": "恋人",
+            "value": "基拉·大和"
+        },
+        {
+            "key": "好友",
+            "value": "卡嘉莉·尤拉·阿斯哈"
+        },
+        {
+            "key": "前未婚夫",
+            "value": "阿斯兰·萨拉"
+        },
+        {
+            "key": "父亲",
+            "value": "希格尔·克莱茵"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 55,
+    "birth_day": 2,
+    "stat": {
+        "comments": 48,
+        "collects": 257
+    },
+    "anime_ids": [
+        27832,
+        1860
+    ]
+}

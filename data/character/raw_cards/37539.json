@@ -1,0 +1,40 @@
+{
+    "id": 37539,
+    "name": "アスラーダ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/46/ea/37539_crt_XsAXB.jpg?r=1450591099",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/46/ea/37539_crt_XsAXB.jpg?r=1450591099",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/46/ea/37539_crt_XsAXB.jpg?r=1450591099",
+        "grid": "https://lain.bgm.tv/pic/crt/g/46/ea/37539_crt_XsAXB.jpg?r=1450591099"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿斯拉达"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Asurada"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 4
+    },
+    "anime_ids": [
+        1954
+    ]
+}

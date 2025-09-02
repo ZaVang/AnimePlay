@@ -1,0 +1,387 @@
+{
+    "id": 313852,
+    "type": 2,
+    "name": "まちカドまぞく 2丁目",
+    "name_cn": "街角魔族 2丁目",
+    "summary": "大人気ご町内日常ファンタジーが帰ってくる！\r\n魔族の力に目覚めて以来、闇の一族の封印を解くため\r\nポンコツながらも戦ってきた主人公・シャミ子。\r\nライバルだったはずの魔法少女・桃とは、なぜか協力関係になってしまい、\r\n町から姿を消した魔法少女の謎をともに追うことに･･･！？\r\nさらに町に潜む新たな魔族も登場し、シャミ子たちの行く末やいかに──。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2022-04-07",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/ef/d3/313852_550li.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/ef/d3/313852_550li.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/ef/d3/313852_550li.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/ef/d3/313852_550li.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/ef/d3/313852_550li.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "街角魔族 2丁目"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "街角魔族 2期",
+                    "k": null
+                },
+                {
+                    "v": "街角的魔族女孩 2期",
+                    "k": null
+                },
+                {
+                    "v": "小恶魔女在街角 2期",
+                    "k": null
+                },
+                {
+                    "v": "The Demon Girl Next Door 2",
+                    "k": null
+                },
+                {
+                    "v": "Machikado Mazoku 2Chome",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2022年4月7日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期四"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://www.tbs.co.jp/anime/machikado"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TBS"
+        },
+        {
+            "key": "其他电视台",
+            "value": "BS11"
+        },
+        {
+            "key": "播放结束",
+            "value": "2022年6月30日"
+        },
+        {
+            "key": "导演",
+            "value": "桜井弘明"
+        },
+        {
+            "key": "Copyright",
+            "value": "©伊藤いづも・芳文社／まちカドまぞく製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "伊藤いづも（芳文社「まんがタイムきららキャラット」連載）"
+        },
+        {
+            "key": "人物设定",
+            "value": "大塚舞"
+        },
+        {
+            "key": "协力",
+            "value": "土居航洋(责任编辑/芳文社)"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "shami momo（吉田優子・千代田桃）／CV：小原好美・鬼頭明里 / コーロまちカド（シャミ子・桃・リリス・ミカン）／CV：小原好美・鬼頭明里・髙橋ミナミ・高柳知葉"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 16,
+    "rating": {
+        "rank": 420,
+        "total": 7478,
+        "count": {
+            "one": 7,
+            "two": 3,
+            "three": 13,
+            "four": 23,
+            "five": 88,
+            "six": 475,
+            "seven": 1966,
+            "eight": 3465,
+            "nine": 1016,
+            "ten": 422
+        },
+        "score": 7.8
+    },
+    "collection": {
+        "wish": 2309,
+        "collect": 11424,
+        "doing": 1180,
+        "on_hold": 558,
+        "dropped": 189
+    },
+    "tags": [
+        {
+            "name": "芳文社",
+            "count": 2277
+        },
+        {
+            "name": "百合",
+            "count": 2090
+        },
+        {
+            "name": "J.C.STAFF",
+            "count": 1503
+        },
+        {
+            "name": "日常",
+            "count": 1458
+        },
+        {
+            "name": "搞笑",
+            "count": 1135
+        },
+        {
+            "name": "2022年4月",
+            "count": 1089
+        },
+        {
+            "name": "漫画改",
+            "count": 955
+        },
+        {
+            "name": "TV",
+            "count": 829
+        },
+        {
+            "name": "轻百合",
+            "count": 775
+        },
+        {
+            "name": "魔法少女",
+            "count": 684
+        },
+        {
+            "name": "2022",
+            "count": 514
+        },
+        {
+            "name": "漫改",
+            "count": 394
+        },
+        {
+            "name": "萌",
+            "count": 330
+        },
+        {
+            "name": "街角魔族",
+            "count": 326
+        },
+        {
+            "name": "樱井弘明",
+            "count": 130
+        },
+        {
+            "name": "奇幻",
+            "count": 62
+        },
+        {
+            "name": "日本",
+            "count": 51
+        },
+        {
+            "name": "治愈",
+            "count": 45
+        },
+        {
+            "name": "续作",
+            "count": 43
+        },
+        {
+            "name": "桜井弘明",
+            "count": 30
+        },
+        {
+            "name": "校园",
+            "count": 27
+        },
+        {
+            "name": "小原好美",
+            "count": 23
+        },
+        {
+            "name": "2022年",
+            "count": 18
+        },
+        {
+            "name": "轻百",
+            "count": 16
+        },
+        {
+            "name": "萌系",
+            "count": 15
+        },
+        {
+            "name": "废萌",
+            "count": 14
+        },
+        {
+            "name": "萌豚",
+            "count": 12
+        },
+        {
+            "name": "恋爱",
+            "count": 8
+        },
+        {
+            "name": "喜剧",
+            "count": 8
+        },
+        {
+            "name": "鬼头明里",
+            "count": 7
+        }
+    ],
+    "meta_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "series": false,
+    "main_character_ids": [
+        70609,
+        70610,
+        70611,
+        70612
+    ],
+    "main_characters": [
+        {
+            "id": 70609,
+            "name": "吉田優子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/48/cf/70609_crt_XhpLz.jpg?r=1566723140",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/cf/70609_crt_XhpLz.jpg?r=1566723140",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/cf/70609_crt_XhpLz.jpg?r=1566723140",
+                "grid": "https://lain.bgm.tv/pic/crt/g/48/cf/70609_crt_XhpLz.jpg?r=1566723140"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 27194,
+                    "name": "小原好美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844"
+                    },
+                    "short_summary": "日本女性配音员、演员。大泽事务所所属。\r\n\r\n国中时开始喜欢动画，并想要成为声优。高中毕业后进入Human Academy综合学园。2012年开始当了两年的演员，之后加入大泽事务所。\r\n\r\n2017年7月起3个月间在长寿电台节目《Radio Dottoai》就任第71代主持人。\r\n\r\n2017年4月至6月播出的《月色真美》中初次担任主演。同年7月播出《咕噜咕噜魔法阵 (2017年版)》中担演女主角而掀起话题，并与共同主演的石上静香主持同名动画的广播节目。同年11月10日Instagram开设。\r\n\r\n2019年于《Star☆Twinkle 光之美少女》中第一次出演光之美少女系列。同年4月，由文化放送“超！A&G+”制作的广播节目《小原好美のココロおきなく》开播，5月开设节目官方Twitter。2020年3月，该广播节目获得第6届Aniradi Award“BEST COMFORT RADIO 疗愈电台奖”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 70610,
+            "name": "千代田桃",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/01/ab/70610_crt_89c80.jpg?r=1566723200",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/ab/70610_crt_89c80.jpg?r=1566723200",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/ab/70610_crt_89c80.jpg?r=1566723200",
+                "grid": "https://lain.bgm.tv/pic/crt/g/01/ab/70610_crt_89c80.jpg?r=1566723200"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19339,
+                    "name": "鬼頭明里",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a1/78/19339_prsn_3Dg35.jpg?r=1694799715"
+                    },
+                    "short_summary": "鬼頭明里（きとう あかり）は、日本の女性声優である。ラクーンドッグ所属。\r\nあだ名は「あかりん」。\r\n\r\n10月16日生まれ、愛知県出身、血液型B型、153cm。プロ・フィット声優養成所を経て、現事務所に2015年4月から所属。\r\n趣味は絵を描くこと、歌うこと。特技は絵を描くこと、歌うこと、湯切り。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 70611,
+            "name": "リリス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/33/4d/70611_crt_lt3u4.jpg?r=1566723246",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/4d/70611_crt_lt3u4.jpg?r=1566723246",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/4d/70611_crt_lt3u4.jpg?r=1566723246",
+                "grid": "https://lain.bgm.tv/pic/crt/g/33/4d/70611_crt_lt3u4.jpg?r=1566723246"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10757,
+                    "name": "髙橋ミナミ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e5/5f/10757_prsn_blW8L.jpg?r=1558165979",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/5f/10757_prsn_blW8L.jpg?r=1558165979",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/5f/10757_prsn_blW8L.jpg?r=1558165979",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e5/5f/10757_prsn_blW8L.jpg?r=1558165979"
+                    },
+                    "short_summary": "俳協所属\r\n\r\n出身地：神奈川県\r\n声：メゾソプラノ\r\n特技：英語、ドイツ語（日常会話程度）\r\n免許・資格：英語検定準2級\r\n趣味・スポーツ：新体操\r\n\r\n自2020年12月20日起艺名由高橋未奈美更改为髙橋ミナミ。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 70612,
+            "name": "陽夏木ミカン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fd/63/70612_crt_hB8Ld.jpg?r=1566723330",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/63/70612_crt_hB8Ld.jpg?r=1566723330",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/63/70612_crt_hB8Ld.jpg?r=1566723330",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fd/63/70612_crt_hB8Ld.jpg?r=1566723330"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 25978,
+                    "name": "高柳知葉",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/32/80/25978_prsn_1321f.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/80/25978_prsn_1321f.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/80/25978_prsn_1321f.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/32/80/25978_prsn_1321f.jpg"
+                    },
+                    "short_summary": "ラクーンドック所属\r\n\r\n出身地：千葉県\r\n方言：なし\r\n趣味：観劇、イラストを描く、女性アイドルのフリコピ\r\n特技：茶道、ヒップホップダンス、エレキベース\r\n資格：英語検定準２級、漢字検定準２級\r\n経歴：プロ・フィット声優養成所　卒",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

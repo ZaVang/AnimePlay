@@ -1,0 +1,50 @@
+{
+    "id": 66675,
+    "name": "マオ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/83/89/66675_crt_93NNo.jpg?r=1539335359",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/89/66675_crt_93NNo.jpg?r=1539335359",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/89/66675_crt_93NNo.jpg?r=1539335359",
+        "grid": "https://lain.bgm.tv/pic/crt/g/83/89/66675_crt_93NNo.jpg?r=1539335359"
+    },
+    "summary": "ユーシャ達の通う冒険者学校で教鞭をとる新米教師。\r\n精神的には成熟しているものの、幼い容姿のせいで\r\n生徒からは可愛いマスコットのように扱われている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "玛欧"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Mao"
+                },
+                {
+                    "v": "魔王"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Demon Lord"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 21,
+        "collects": 58
+    },
+    "anime_ids": [
+        254895
+    ]
+}

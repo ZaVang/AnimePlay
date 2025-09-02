@@ -1,0 +1,77 @@
+{
+    "id": 7639,
+    "name": "真崎杏子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/33/2f/7639_crt_Mqo27.jpg?r=1751790097",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/2f/7639_crt_Mqo27.jpg?r=1751790097",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/2f/7639_crt_Mqo27.jpg?r=1751790097",
+        "grid": "https://lain.bgm.tv/pic/crt/g/33/2f/7639_crt_Mqo27.jpg?r=1751790097"
+    },
+    "summary": "杏子是游戏青梅竹马的伙伴，和同伴们一同见证了游戏两个人格的战斗，并沿途给了他们极大的支持和鼓励。\r\n她的梦想是成为一名职业舞蹈家。尽管她不认为自己是一位决斗者，然而面对任何决斗，她都勇于接受。\r\n高中毕业之后决定要出国留学。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "真崎杏子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Téa Gardner"
+                },
+                {
+                    "k": "日文名",
+                    "v": "真崎 杏子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まざき あんず"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mazaki Anzu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月18日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "47kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://www.yugioh.com/characters/tea-gardner"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 18,
+    "stat": {
+        "comments": 8,
+        "collects": 26
+    },
+    "anime_ids": [
+        6390,
+        12344
+    ]
+}

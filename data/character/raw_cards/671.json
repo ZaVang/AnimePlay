@@ -1,0 +1,103 @@
+{
+    "id": 671,
+    "name": "我妻由乃",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/04/23/671_crt_HkmXG.jpg?r=1733333910",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/23/671_crt_HkmXG.jpg?r=1733333910",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/23/671_crt_HkmXG.jpg?r=1733333910",
+        "grid": "https://lain.bgm.tv/pic/crt/g/04/23/671_crt_HkmXG.jpg?r=1733333910"
+    },
+    "summary": "名字来历：罗马神话中的天后朱诺（Juno）\r\n所持有的日记：手机记载的“雪辉日记”，日记以十分钟为单位，记载着雪辉（1st）的行动，内容被稍作“美化”，会反映出自己的情感，可以完全预知将会发生在雪辉（1st）身上的事情，故此跟雪辉（1st）的“无差别日记”联手可以达致“完全预知”的效果。\r\n但这亦存在双面刃的可能，因为“雪辉日记”的性质，也意味着天野雪辉（1st）最大的敌人正是由乃（2nd）（事实上，天野雪辉的事情并不会缺少她）。\r\n雪辉（1st）的同学，头脑清晰容姿端丽，是雪辉的超级跟踪狂，属性是罕见的病娇。由于雪辉在她快要崩溃时对她说要娶她，给了她希望，在一年前喜欢上雪辉（1st）。喜欢雪辉（1st）到达疯狂偏执的程度。轻视人命，发便当毫不犹豫，日记中有“7/28 阿雪和由乃结合了 Happy End”的预示。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "我妻由乃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Gasai Yuno"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "がさい ゆの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "gasai yuno"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "体重",
+            "value": "49kg"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "http://www.future-diary.tv/chara/2nd.html"
+                },
+                {
+                    "v": "myanimelist.net"
+                }
+            ]
+        },
+        {
+            "key": "惯用武器",
+            "value": [
+                {
+                    "v": "铁锤"
+                },
+                {
+                    "v": "军用匕首"
+                },
+                {
+                    "v": "美工刀"
+                },
+                {
+                    "v": "武士刀"
+                },
+                {
+                    "v": "菜刀"
+                },
+                {
+                    "v": "斧头"
+                },
+                {
+                    "v": "灭火器"
+                },
+                {
+                    "v": "冲锋枪"
+                },
+                {
+                    "v": "自动手枪"
+                }
+            ]
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 137,
+        "collects": 757
+    },
+    "anime_ids": [
+        16235
+    ]
+}

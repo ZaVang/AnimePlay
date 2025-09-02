@@ -1,0 +1,52 @@
+{
+    "id": 164316,
+    "name": "荒砥凪",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fb/ad/164316_crt_U00U3.jpg?r=1742743551",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/ad/164316_crt_U00U3.jpg?r=1742743551",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/ad/164316_crt_U00U3.jpg?r=1742743551",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fb/ad/164316_crt_U00U3.jpg?r=1742743551"
+    },
+    "summary": "鉱物学を専攻する大学院生。\r\n鉱物に対する豊富な知識と経験を持ち、ルリに鉱物採集の面白さを伝える。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "荒砥凪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "荒砥 凪"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あらと なぎ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Arato Nagi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 71,
+        "collects": 73
+    },
+    "anime_ids": [
+        512190
+    ]
+}

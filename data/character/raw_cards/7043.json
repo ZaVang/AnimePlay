@@ -1,0 +1,39 @@
+{
+    "id": 7043,
+    "name": "灰原哀",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ee/85/7043_crt_ieceu.jpg?r=1741598131",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/85/7043_crt_ieceu.jpg?r=1741598131",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/85/7043_crt_ieceu.jpg?r=1741598131",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ee/85/7043_crt_ieceu.jpg?r=1741598131"
+    },
+    "summary": "本作第二女主角。父亲是宫野厚司、母亲是宫野艾莲娜。灰原本名宫野志保，18岁（外表7岁），前黑暗组织成员，组织代号为“雪莉”，毒药“APTX4869”的开发者。由于姐姐宫野明美因内部纠纷被组织杀害，为了对抗组织而终止了APTX4869的开发。被组织囚禁后为了自杀吃下了自己开发的毒药，却导致身体缩小而逃脱，在逃跑路上被阿笠博士发现后带回家，隐姓埋名进入帝丹小学，同时在博士家秘密研究APTX4869的解药。是少数几个知道柯南真实身份的人。\r\n就读帝丹小学1年B班。喜欢柯南但表现不明显。\r\n命名来自于英国犯罪小说女作家P·D·詹姆斯笔下的女侦探寇黛丽亚·葛雷（Cordelia Gray，“gray”意译“灰”）和英国推理小说作家亚瑟·柯南·道尔笔下的著名推理小说系列作品《福尔摩斯探案》中的歌剧女演员艾琳·艾德勒（Irene Adler）的“I”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "灰原哀"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 117,
+        "collects": 761
+    },
+    "anime_ids": [
+        899
+    ]
+}

@@ -1,0 +1,231 @@
+{
+    "id": 78799,
+    "name": "精灵宝可梦XY",
+    "image_path": "data/images/anime/78799.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "カロス地方の中心にある都市ミアレシティにやってきたサトシとピカチュウ。そこにはみたことのないポケモンたちの姿と新たな仲間たちとの出会いが待っていた！！\r\nポケモンマスターになる事を夢見るサトシ＆ピカチュウのカロスリーグ挑戦へ向けた新たな冒険がいよいよ始まる！！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 92,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "游戏改"
+    ],
+    "date": "2013-10-17",
+    "rating_rank": 1093,
+    "rating_score": 7.4,
+    "rating_total": 1639,
+    "main_character_ids": [
+        2010,
+        6154,
+        21953,
+        21954,
+        21955,
+        30208
+    ],
+    "main_characters": [
+        {
+            "id": 2010,
+            "name": "サトシのピカチュウ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/02/94/2010_crt_7rr33.jpg?r=1720977703",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/94/2010_crt_7rr33.jpg?r=1720977703",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/94/2010_crt_7rr33.jpg?r=1720977703",
+                "grid": "https://lain.bgm.tv/pic/crt/g/02/94/2010_crt_7rr33.jpg?r=1720977703"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3906,
+                    "name": "大谷育江",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/27/b6/3906_prsn_xa7NA.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/b6/3906_prsn_xa7NA.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/b6/3906_prsn_xa7NA.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/27/b6/3906_prsn_xa7NA.jpg"
+                    },
+                    "short_summary": "优点是好奇心旺盛。\r\n    兴趣是泡香草浴、读书。\r\n    特技是英语的发音和日本舞蹈。\r\n    喜欢的颜色是白色、粉红色、黑色。\r\n\r\n主要是为少年、少女配音，在一个作品里配一个以上的角色也是有的。在《深渊传奇》中就分别配了伊恩(诚实)、新库(愤怒)、芙萝利安(纯洁)三种个性不同的角色。\r\n\r\n被说是演技声音广泛的其中一名声优。\r\n\r\n由于皮卡丘的声音是全世界共通的，所以就算不知道“大谷育江”这个人名，只要一听到是“皮卡丘的声音”大家就知道了。\r\n\r\n不太记得起来人的名字。\r\n\r\n小学和国中的时候认为加入排球部可以长高吧，就入社了。\r\n\r\n第六届（2011年度）声优奖Kid's Family赏的得奖者（キッズ・ファミリー賞）。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6154,
+            "name": "サトシ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a5/b5/6154_crt_HWSVh.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/b5/6154_crt_HWSVh.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/b5/6154_crt_HWSVh.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a5/b5/6154_crt_HWSVh.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4205,
+                    "name": "松本梨香",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/22/78/4205_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/78/4205_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/78/4205_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/22/78/4205_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本女性配音员、演员、歌手。出身于神奈川县横滨市。\r\n株式会社Matsurica社长、代代木动画学院声优艺人科特别讲师。\r\n\r\n经历\r\n松本梨香的父亲是大众戏剧团团长，因此从小她自己也以舞台演员为目标。但是由于哥哥的去世和自己本身有疾病缠身而无法登上舞台公演，最后因为担心而打消了念头。\r\n后来，松本受到前辈名古屋章的推荐下，参加1988年电视动画《小松君》的角色试音，结果成为她的配音出道作。之后更在1991年电视动画《绝对无敌雷神王》第一次得到主演的机会，从此她多为充满朝气活力的小男孩献声，而最为人熟知的配音作品即是《精灵宝可梦》系列主角小智。除了日本动画外，她还有为珊卓·布拉克、朱丽叶特·刘易斯、茱儿·芭莉摩、帕特里夏·阿奎特等美国现役女星进行日语配音。\r\n歌手活动方面，2000年7月起，她与水木一郎、影山浩宣、坂本英三、远藤正明共5人结成“JAM Project”。同时是首位为“超人力霸王”唱片尾曲和“假面骑士”系列唱主题曲的女歌手。另外与市川吉之、古道圭一组成“TRiCYCLE”，担任过乐团主唱。单曲“目标是精灵宝可梦大师”顺着精灵宝可梦的热潮，创下了发售185万张的纪录，这也是松本唯一破百万销量的声优音乐作品。\r\n2008年4月7日，暂时从JAM Project的活动中退出。\r\n2015年1月5日，宣布离开所属20年的Sunmusic Production，成为自由身。同年4月1日加入amuleto。\r\n2016年12月1日，再度宣布已于11月30日离开amuleto，又成为自由身。\r\n2018年5月16日（父亲去世的这一天），自行就任社长，成立个人事务所“株式会社Matsurica”专门进行演艺事业管理。\r\n2019年3月1日，松本演唱的歌曲‘目标是精灵宝可梦大师’从平成动画歌曲大赏作品赏（1989年 - 1999年）中选出。\r\n同年10月21日，受邀任命担任“日本酷大使（クールジャパン·アンバサダー）”。\r\n\r\n个人生活\r\n兴趣有旅行（温泉巡礼）。特长是日本舞、画图、掷标枪。拿手的运动有排球、手球、游泳、滑雪（2级）。爱车是BMW318Ci 1995cc。\r\n此外同样是神奈川县出身的白鸟由里对她以“おやび～ん”作昵称，相反的松本泽对白鸟以“こびん”称呼。\r\n井上瑶去世后，松本继承了一些配音的角色（有《游☆戏☆王 怪兽之决斗》的獏良了、〈高达系列〉的Haro等）。另外，松本在她自己的出道作《小松君》曾经与井上共演（松本演松野六胞胎中的三男轻松；井上演长男、作品主角松野小松）。\r\n2018年12月22日开始在《声优ってなんだっけ》进行对谈（初回嘉宾：三矢雄二）。其意旨在对配音员有抱负的志愿者传达演技和表达的重要性。\r\n山寺宏一发出唐老鸭的声音是她所教出来的。\r\n在自身主演的动画《勇者传说达钢》的录音室现场有三支麦克风，其中有一支专门为松本调低了麦克风的音量。还有，她是发出声音时全身就会出声音的类型，只要一动就会发出说话的声音。\r\n\r\n与《精灵宝可梦（宝可梦）》有关的事\r\n自演出主角小智以来，让她印象深刻的剧情是无印时期的“再见巴大蝴”和钻石&珍珠时期的“终结的宿敌对战！小智对真司！”。\r\n当初，松本本来是参加小智的对手小茂的录音（小茂的声音由小林优子担当），但是试镜会结束后，工作人员建议她也来演小智的声音，就这样成为了自身长年担任的配音代表作。但是导演汤山邦彦说，松本是从一开始就被提名为小智声音的人选，外界似乎以为她先演小茂的角色所以才会入选而被误解。\r\n她的喉结是长年担任小智的声音而突起的。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 21953,
+            "name": "シトロン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/25/a2/21953_crt_yIDu6.jpg?r=1471929475",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/a2/21953_crt_yIDu6.jpg?r=1471929475",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/a2/21953_crt_yIDu6.jpg?r=1471929475",
+                "grid": "https://lain.bgm.tv/pic/crt/g/25/a2/21953_crt_yIDu6.jpg?r=1471929475"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5209,
+                    "name": "梶裕貴",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/51/73/5209_prsn_bD3dr.jpg?r=1478379077"
+                    },
+                    "short_summary": "ARTSVISION第17期免费新人培育选拔会合格，并且加入了事务所ARTSVISION。\r\n2009年获得第3届声优奖—新人男声优赏，且开始了“G.Addict”的活动。\r\n2012年2月22日以本人的名义开始歌手的活动，发售第一张单曲《sense of wonder》。2012年9月5日发售第二张单曲《Hello！》。\r\n2013年获得第7届声优奖—主演男声优赏。\r\n2013年10月1日，由原来的事务所ARTSVISION转入VIMS。\r\n2014年获得第8届声优奖—主演男声优赏。\r\n\r\n拥有中性的声音，能演出从少年到青年、动物等各式各样的角色。\r\n担任剧团“妄想中毒”的pretty团长。\r\n中小学时代担任过学生会长，有体育或美术被表扬等表现，是个非常有才能的小孩。\r\n声优伙伴或支持者称呼他为“王子”。\r\n和代永翼组成团体“BRAVE WING”。\r\n与寺岛拓笃、堀江一真和阿部敦等四人组成团体“G.Addict”。\r\n性格极其纯良，待人有礼温善。虽然人前很活泼开朗，但其实是个喜欢宁静安逸的人，只有与亲近的人在一起时才会放松的流露真实自我。\r\n不只声音，外型也很中性，现在也还会被误认成女生。本人对此表示否定，表示“内在意外地很有男子气概”。\r\n虽然年轻，但是性格相当认真。寺岛拓笃评价他“面对工作上的态度很严谨”，大亲友下野纮也说：“他真的很可靠，很会待人处世，作为声优也相当优秀。”\r\n\r\n代表作品有《进击的巨人》艾伦·耶格尔、《夜樱四重奏》比泉秋名、《未来都市NO.6》紫苑、《罪恶王冠》樱满集、《七大罪》梅利奥达斯、《加速世界》有田春雪、《魔笛MAGI》阿里巴巴·沙尔贾等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 21954,
+            "name": "ユリーカ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3f/1d/21954_crt_x1S1O.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/1d/21954_crt_x1S1O.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/1d/21954_crt_x1S1O.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3f/1d/21954_crt_x1S1O.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3896,
+                    "name": "かないみか",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fb/dd/3896_prsn_QQxj5.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/dd/3896_prsn_QQxj5.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/dd/3896_prsn_QQxj5.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fb/dd/3896_prsn_QQxj5.jpg"
+                    },
+                    "short_summary": "　　昵称是みかぴい。出生于父亲是在“剧团青年座”担任演出家的金井彰久，母亲是在“花のピュンピュン丸”以声优演出过的田上和枝的演剧一家。还是婴儿时演员的西田敏行曾帮她换过尿布。\r\n高中2年级时，曾到英国寄居家庭过。\r\n　　成为声优前，家族一起到烤肉店，向店员大声要求换冷水“すいませーん、お水おかわりくださーい!”后，东西却送到隔壁桌小孩的地方去。\r\n　　以幼女声音闻名。与声优的兴梠里美声音相近也相当有名。\r\n　　多饰演泼辣而年龄层较低的活泼少女，然而在《机动新世纪钢弹X》里像蒂法一般的无口系神秘少女，或《银河天使》里ノーマッド一般的毒舌角色也饰演过，因此展露出她演技的多样性。\r\n　　声优界第一的揉乳嗜好家，可说是每见到女性声优必定会揉乳。在广播《みか・もりしゃんのGamers Amusement Station》等处不时将おっぱい挂在嘴边。另在同节目的Web版结束的前几回里偷偷设立“おっぱい堂”专栏，曾发表个人自豪的战绩。其行为被隶属于賢プロダクション的后辈们（生天目仁美等人）继承了下来。\r\n　　也是2005年组成的男性声优团体“Revolver”的制作，成员有森训久、梯笃司、宫下荣治、泰勇气、胜杏里、增川洋一。\r\n　　前夫为声优的山寺宏一。两人于1994年结婚，在2006年离婚。",
+                    "locked": false
+                },
+                {
+                    "id": 4769,
+                    "name": "伊瀬茉莉也",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320"
+                    },
+                    "short_summary": "小时候非常喜欢宫崎骏先生的作品，比如《风之谷》什么的，看了很多遍把录像带磨坏了。大约小学3年级左右，看了《幽灵公主》之后非常希望能够加入到里面，做出能让人感动的作品。那个时候光看这部动画就去了电影院8次，一开始是想当监督，后来偶然地有配音机会，便开始走上声优的道路。\r\n一开始父母强烈反对，后来茉莉也对他们描绘了心中的梦想，用“这是我必须去做的事”和“学费自己来付”说服了他们。那时拿出了从小学开始存的压岁钱【好心痛～（笑）】。一开始非常困难，一边要上学一边又要去2小时车程以外的培训中心，但是靠毅力坚持下来之后父母也开始变得支持了，后来嘛，就好了。\r\n第一次工作是在16岁那年，在动画片《愛してるぜベイベ★★》中饰演一个路人角色，台词也只有一两句，但那个时候紧张得不行，拿着剧本的手一直在发抖。后来在比较广为人知的《虫师》中配小孩子的声音，慢慢地工作就多了起来。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 21955,
+            "name": "セレナ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/44/d2/21955_crt_9oQkF.jpg?r=1582456635",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/d2/21955_crt_9oQkF.jpg?r=1582456635",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/d2/21955_crt_9oQkF.jpg?r=1582456635",
+                "grid": "https://lain.bgm.tv/pic/crt/g/44/d2/21955_crt_9oQkF.jpg?r=1582456635"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5169,
+                    "name": "牧口真幸",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/aa/b1/5169_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/b1/5169_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/b1/5169_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/aa/b1/5169_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 30208,
+            "name": "シトロンのデデンネ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/09/8c/30208_crt_4pqgT.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/8c/30208_crt_4pqgT.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/8c/30208_crt_4pqgT.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/09/8c/30208_crt_4pqgT.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 24274,
+                    "name": "佐藤恵",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/80/71/24274_prsn_nSJJ5.jpg?r=1466788285",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/71/24274_prsn_nSJJ5.jpg?r=1466788285",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/71/24274_prsn_nSJJ5.jpg?r=1466788285",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/80/71/24274_prsn_nSJJ5.jpg?r=1466788285"
+                    },
+                    "short_summary": "AIR AGENCY所属\r\n\r\n出身地：福岡県\r\n使える方言：博多弁\r\n趣味：散歩、コスプレ、ペットと戯れる\r\n特技：リフレクソロジー、お裁縫\r\n卒業養成機関：福岡スクールオブミュージック専門学校",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

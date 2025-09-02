@@ -1,0 +1,72 @@
+{
+    "id": 14185,
+    "name": "久慈川りせ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0c/e2/14185_crt_3slzZ.jpg?r=1608019729",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0c/e2/14185_crt_3slzZ.jpg?r=1608019729",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0c/e2/14185_crt_3slzZ.jpg?r=1608019729",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0c/e2/14185_crt_3slzZ.jpg?r=1608019729"
+    },
+    "summary": "人气急速飙升的偶像人物，但是突然就中止了活动，回到八十稻羽镇的祖母身边，帮助经营豆腐店。\r\n由于在娱乐圈见过世面，对社会上的事情有些冷漠。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "久慈川理世"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Rise Kujikawa"
+                },
+                {
+                    "k": "日文名",
+                    "v": "久慈川 りせ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くじかわ　りせ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kujikawa Rise"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1995-06-01"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "体重",
+            "value": "41kg"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": 1995,
+    "birth_mon": 6,
+    "birth_day": 1,
+    "stat": {
+        "comments": 44,
+        "collects": 177
+    },
+    "anime_ids": [
+        15489
+    ]
+}

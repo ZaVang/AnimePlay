@@ -1,0 +1,53 @@
+{
+    "id": 58345,
+    "name": "监狱兔 第五季",
+    "image_path": "data/images/anime/58345.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "在上一季结尾逃入森林的普京和基里连科迷了路，在一棵大树下暂时落脚，开始了全新的野外露营生活。\r\n在这里，他们遇到了打上基里连科胡萝卜主意的森林怪人，还有小鸡柯曼妮基一族以及青蛙列宁格勒的双亲。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2012-12-13",
+    "rating_rank": 1469,
+    "rating_score": 7.3,
+    "rating_total": 1101,
+    "main_character_ids": [
+        2505,
+        10501
+    ],
+    "main_characters": [
+        {
+            "id": 2505,
+            "name": "プーチン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ba/ba/2505_crt_eKONl.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/ba/2505_crt_eKONl.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/ba/2505_crt_eKONl.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ba/ba/2505_crt_eKONl.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 10501,
+            "name": "キレネンコ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bd/6f/10501_crt_04bH3.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/6f/10501_crt_04bH3.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/6f/10501_crt_04bH3.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bd/6f/10501_crt_04bH3.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 17527,
+    "name": "来生泪",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d2/21/17527_crt_JfQsj.jpg?r=1629273447",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/21/17527_crt_JfQsj.jpg?r=1629273447",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/21/17527_crt_JfQsj.jpg?r=1629273447",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d2/21/17527_crt_JfQsj.jpg?r=1629273447"
+    },
+    "summary": "来生三姐妹中的长女，性格冷静沉着，是三姐妹的领导者。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "来生泪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "来生泪"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きすぎ るい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kisugi Rui"
+                },
+                {
+                    "k": "昵称",
+                    "v": "大姐"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 34
+    },
+    "anime_ids": [
+        9304
+    ]
+}

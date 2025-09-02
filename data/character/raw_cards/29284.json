@@ -1,0 +1,76 @@
+{
+    "id": 29284,
+    "name": "川島緑輝",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1c/2f/29284_crt_2JDJs.jpg?r=1559645629",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/2f/29284_crt_2JDJs.jpg?r=1559645629",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/2f/29284_crt_2JDJs.jpg?r=1559645629",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1c/2f/29284_crt_2JDJs.jpg?r=1559645629"
+    },
+    "summary": "一年級生，使用的樂器是低音提琴。\r\n初中時代就讀專門訓練大小姐的學校。為了把帶給自己歡樂的樂器演奏延續下去，因此加入管樂團。\r\n對於自己的名字非常介意，總是用「綠（みどり）」自稱。\r\n名字 Sapphire 意为 蓝宝石\r\n♪好きな色\r\nピンク、パステルカラー\r\n♪趣味\r\nお菓子作り、ぬいぐるみ収集\r\n♪特技\r\n料理、裁縫が得意\r\n♪好きなもの\r\n甘いもの、可愛いもの全部。爬虫類が大好き。ペットはイグアナ（名前はマカロン）\r\n♪嫌いなもの\r\n苦いもの、可愛くないもの、パソコン（操作方法がわからないから）",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "川岛绿辉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "緑"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Sapphire Kawashima"
+                },
+                {
+                    "k": "日文名",
+                    "v": "川島緑輝"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かわしま さふぁいあ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kawashima Safaia"
+                },
+                {
+                    "k": "昵称",
+                    "v": "みどり"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月3日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "148cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 3,
+    "stat": {
+        "comments": 79,
+        "collects": 165
+    },
+    "anime_ids": [
+        152091,
+        115908
+    ]
+}

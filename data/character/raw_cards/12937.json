@@ -1,0 +1,64 @@
+{
+    "id": 12937,
+    "name": "星野八郎太",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a1/5b/12937_crt_7d9jW.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/5b/12937_crt_7d9jW.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/5b/12937_crt_7d9jW.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a1/5b/12937_crt_7d9jW.jpg"
+    },
+    "summary": "　　理想是拥有属于自己的飞船，并为之努力积攒资金。平时是一副慵懒的样子，实际上对于梦想非常执着。一度患上空间丧失症，但是凭借毅力克服，并且通过努力成为了木星往返船成员。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "星野八郎太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "星野 八郎太"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hoshino Hachirouta"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ハチ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2050年10月20日（25岁）"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 2,
+    "birth_year": 2050,
+    "birth_mon": 10,
+    "birth_day": 20,
+    "stat": {
+        "comments": 13,
+        "collects": 7
+    },
+    "anime_ids": [
+        2734
+    ]
+}

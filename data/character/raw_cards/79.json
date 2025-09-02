@@ -1,0 +1,72 @@
+{
+    "id": 79,
+    "name": "フェイ・ヴァレンタイン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6e/2a/79_crt_ZIF2u.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/2a/79_crt_ZIF2u.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/2a/79_crt_ZIF2u.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6e/2a/79_crt_ZIF2u.jpg"
+    },
+    "summary": "曾经被悬赏的赏金猎人，原来是一名以诈骗和偷窃为生的美艳女郎，在一次赌场的犯罪中卷入了Bebop号的成员而入伙。性格上是个嗜财如命、非常开放的女人，可以为了钱不择手段。爱机是拥有2个火力口的「红尾」，爱枪是Glock 30。因为好赌和长达54年的冷冻睡眠的医疗费用使得菲背负着天文数字的债务。也许因为这个原因，菲对金钱的执着是斯派克和杰特无法相比的。在赌博时总是耍老千，和斯派克初次相遇时谎称自己是吉普塞人(流浪者)。事实上，漫长的睡眠使得她失去了之前的一切记忆，连名字也是醒来之后取的。失忆的她脾气非常火爆，然而菲也一直为失忆前的自己深深的烦恼着。菲寻找自我的旅行也正是故事的主线之一。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "菲·瓦伦坦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "菲·瓦伦丁"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Faye·Valentine"
+                },
+                {
+                    "k": "昵称",
+                    "v": "菲"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1994-08-14"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        },
+        {
+            "key": "体重",
+            "value": "46kg"
+        },
+        {
+            "key": "年龄",
+            "value": "不明(外表23岁)"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1994,
+    "birth_mon": 8,
+    "birth_day": 14,
+    "stat": {
+        "comments": 74,
+        "collects": 635
+    },
+    "anime_ids": [
+        253
+    ]
+}

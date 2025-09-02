@@ -1,0 +1,391 @@
+{
+    "id": 443428,
+    "type": 2,
+    "name": "【推しの子】 第2期",
+    "name_cn": "【我推的孩子】 第二季",
+    "summary": "新的舞台开幕了...\r\n\r\n当红漫画《东京BLADE》的舞台剧开始排练了。\r\n被剧团LALALAI的众演员包围，让加奈的演技大爆发。\r\n一边认加奈实力，却同时激起猛烈竞争心的黑川茜。\r\n在一群才华洋溢又充满热情的演员中，阿库亚利用自身演技，来追查爱当年的丧命真相...。\r\n以及成为偶像后，不断追寻着母亲背影的露比...",
+    "nsfw": false,
+    "locked": false,
+    "date": "2024-07-03",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/d1/1c/443428_FIhFu.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/d1/1c/443428_FIhFu.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/d1/1c/443428_FIhFu.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/d1/1c/443428_FIhFu.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/d1/1c/443428_FIhFu.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "【我推的孩子】 第二季"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "【推しの子】 シーズン2",
+                    "k": null
+                },
+                {
+                    "v": "Oshi no Ko 2nd Season",
+                    "k": null
+                },
+                {
+                    "v": "\"Oshi no Ko\" 2",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2024年7月3日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期三"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://ichigoproduction.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX"
+        },
+        {
+            "key": "其他电视台",
+            "value": "BS日テレ / サンテレビ / KBS京都 / メ～テレ / HTB北海道テレビ / ＲＫＢ毎日放送 / テレビ新広島 / ミヤギテレビ / テレビ静岡 / 新潟放送 / テレビ山梨 / テレビユー福島 / あいテレビ / 長崎放送 / IBC岩手放送 / チューリップテレビ / 北陸放送 / 福井テレビ / テレビユー山形 / 琉球放送 / 日本海テレビ / 鹿児島放送 / AT-X"
+        },
+        {
+            "key": "播放结束",
+            "value": "2024年10月6日"
+        },
+        {
+            "key": "导演",
+            "value": "平牧大輔"
+        },
+        {
+            "key": "Copyright",
+            "value": "©赤坂アカ×横槍メンゴ／集英社・【推しの子】製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "赤坂アカ×横槍メンゴ（集英社「週刊ヤングジャンプ」連載）"
+        },
+        {
+            "key": "副导演",
+            "value": "猫富ちゃお(橘さおり)、仁科くにやす"
+        },
+        {
+            "key": "人物设定",
+            "value": "平山寛菜；副人设：澤井駿、渡部里美、横山穂乃花"
+        },
+        {
+            "key": "主动画师",
+            "value": "早川麻美、水野公彰、室賀彩花；动作动画师：あもーじー（武田駿）"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "竹下良平（OP）、中山直哉（ED）"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "Giga(ギガP)（OP） / 羊文学（ED）"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "Tatsuya Kitani(キタニタツヤ)（OP） / 塩塚モエカ（ED）"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "Tatsuya Kitani(キタニタツヤ)（OP） / 塩塚モエカ（ED）"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "GEMN（OP） / 羊文学（ED）"
+        },
+        {
+            "key": "製作",
+            "value": "【推しの子】製作委員会（KADOKAWA、集英社、動画工房、CyberAgent）"
+        },
+        {
+            "key": "企画",
+            "value": "菊池剛、工藤大丈、大好誠"
+        },
+        {
+            "key": "制片人",
+            "value": "吉岡拓也、山下愼平、岡川広樹、鎌田肇、青村陽介"
+        },
+        {
+            "key": "执行制片人",
+            "value": "田中翔、薄井勝太郎、石黒竜、椛嶋麻菜美"
+        },
+        {
+            "key": "原作协力",
+            "value": "増澤吉和、大沢太郎、酒井浩希"
+        },
+        {
+            "key": "协力",
+            "value": "根岸弦輝、笠原周造、清原誠巳、中山卓也、石澤紀子、尾形光広、井上智代、神原葉月"
+        },
+        {
+            "key": "音乐制作",
+            "value": "KADOKAWA"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "水鳥智栄子"
+        },
+        {
+            "key": "动作作画监督",
+            "value": "あもーじー（武田駿）"
+        },
+        {
+            "key": "摄影监督",
+            "value": "桒野貴文；摄影监督辅佐：工藤康史"
+        }
+    ],
+    "volumes": 0,
+    "eps": 13,
+    "total_episodes": 14,
+    "rating": {
+        "rank": 1723,
+        "total": 9782,
+        "count": {
+            "one": 26,
+            "two": 11,
+            "three": 23,
+            "four": 70,
+            "five": 289,
+            "six": 1286,
+            "seven": 4322,
+            "eight": 3191,
+            "nine": 398,
+            "ten": 166
+        },
+        "score": 7.2
+    },
+    "collection": {
+        "wish": 2161,
+        "collect": 13705,
+        "doing": 3115,
+        "on_hold": 679,
+        "dropped": 508
+    },
+    "tags": [
+        {
+            "name": "动画工房",
+            "count": 2454
+        },
+        {
+            "name": "2024年7月",
+            "count": 1919
+        },
+        {
+            "name": "漫画改",
+            "count": 1782
+        },
+        {
+            "name": "偶像",
+            "count": 1619
+        },
+        {
+            "name": "恋爱",
+            "count": 1363
+        },
+        {
+            "name": "TV",
+            "count": 1248
+        },
+        {
+            "name": "赤坂明",
+            "count": 1210
+        },
+        {
+            "name": "漫改",
+            "count": 784
+        },
+        {
+            "name": "悬疑",
+            "count": 761
+        },
+        {
+            "name": "2024",
+            "count": 715
+        },
+        {
+            "name": "我推的孩子",
+            "count": 607
+        },
+        {
+            "name": "续作",
+            "count": 392
+        },
+        {
+            "name": "复仇",
+            "count": 353
+        },
+        {
+            "name": "【我推的孩子】",
+            "count": 299
+        },
+        {
+            "name": "日本",
+            "count": 116
+        },
+        {
+            "name": "平牧大輔",
+            "count": 95
+        },
+        {
+            "name": "党争",
+            "count": 56
+        },
+        {
+            "name": "续集",
+            "count": 55
+        },
+        {
+            "name": "平牧大辅",
+            "count": 37
+        },
+        {
+            "name": "動画工房",
+            "count": 28
+        },
+        {
+            "name": "田中仁",
+            "count": 27
+        },
+        {
+            "name": "日常",
+            "count": 25
+        },
+        {
+            "name": "转生",
+            "count": 24
+        },
+        {
+            "name": "职场",
+            "count": 24
+        },
+        {
+            "name": "奇幻",
+            "count": 23
+        },
+        {
+            "name": "2024年",
+            "count": 20
+        },
+        {
+            "name": "搞笑",
+            "count": 18
+        },
+        {
+            "name": "未定档",
+            "count": 17
+        },
+        {
+            "name": "后宫",
+            "count": 15
+        },
+        {
+            "name": "舞台剧",
+            "count": 13
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        102125,
+        102126
+    ],
+    "main_characters": [
+        {
+            "id": 102125,
+            "name": "星野愛久愛海",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c5/3a/102125_crt_I1eZN.jpg?r=1674520069",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/3a/102125_crt_I1eZN.jpg?r=1674520069",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/3a/102125_crt_I1eZN.jpg?r=1674520069",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c5/3a/102125_crt_I1eZN.jpg?r=1674520069"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6560,
+                    "name": "内山夕実",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/99/e6/6560_prsn_gZezL.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/e6/6560_prsn_gZezL.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/e6/6560_prsn_gZezL.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/99/e6/6560_prsn_gZezL.jpg"
+                    },
+                    "short_summary": "内山 夕実（うちやま ゆみ、1987年10月30日 - ）は、日本の女性声優。東京都出身。大沢事務所所属。音域はアルト。\r\n\r\n中高一貫学校の出身で、15歳で日本ナレーション演技研究所のジュニアクラスに入所。日ナレ時代は、ならはしみき指導の下でレッスンを受けている。声優になった理由として中学時代に放送劇部に入ったことを挙げている。\r\nアーツビジョンに所属し、2005年に別名義でデビューするが、家庭の事情により20歳の時に一旦引退して就職する。3年のブランクを経て、2010年に元の事務所に再所属し、BeeTVで配信された海外ドラマ『バンパイアに恋して』のアビー役の吹き替えで再デビュー。翌年『Aチャンネル』のナギ役で初のレギュラーを獲得。\r\n2017年4月、アーツビジョンから大沢事務所に移籍したことを報告した。\r\n趣味は写真撮影で、ブログには彼女が撮った写真が掲載されている。特技はカラオケで、いきものがかりの「ありがとう」をよく歌っている。\r\n\r\n2024年12月31日发表与小林裕介结婚",
+                    "locked": false
+                },
+                {
+                    "id": 32681,
+                    "name": "大塚剛央",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fc/12/32681_prsn_0Sz5C.jpg?r=1734791596",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/12/32681_prsn_0Sz5C.jpg?r=1734791596",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/12/32681_prsn_0Sz5C.jpg?r=1734791596",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fc/12/32681_prsn_0Sz5C.jpg?r=1734791596"
+                    },
+                    "short_summary": "大塚 剛央（おおつか たけお、1992年10月19日 - ）は、日本の男性声優。東京都出身。\r\n\r\n日本ナレーション演技研究所を経て、アイムエンタープライズに所属。\r\n2018年8月公開の劇場版アニメ『詩季織々』の「上海恋」にてリモ役でアニメ初主演。\r\n2018年10月放送のテレビアニメ『風が強く吹いている』にて蔵原走役でテレビアニメ初主演を務める。\r\n\r\n交友関係としては、天﨑滉平とプライベートでも仲が良いとWEBラジオ「僕たちもう、フレンドですよね？」のアカウントで公言している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 102126,
+            "name": "星野瑠美衣",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/71/cc/102126_crt_aJfCA.jpg?r=1674520085",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/cc/102126_crt_aJfCA.jpg?r=1674520085",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/cc/102126_crt_aJfCA.jpg?r=1674520085",
+                "grid": "https://lain.bgm.tv/pic/crt/g/71/cc/102126_crt_aJfCA.jpg?r=1674520085"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 49689,
+                    "name": "伊駒ゆりえ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/52/a7/49689_prsn_04woF.jpg?r=1688572888",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/a7/49689_prsn_04woF.jpg?r=1688572888",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/a7/49689_prsn_04woF.jpg?r=1688572888",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/52/a7/49689_prsn_04woF.jpg?r=1688572888"
+                    },
+                    "short_summary": "81プロデュース所属の新人声優",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

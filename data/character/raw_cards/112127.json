@@ -1,0 +1,59 @@
+{
+    "id": 112127,
+    "name": "綾瀬桃",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/33/64/112127_crt_Zjpk6.jpg?r=1730807214",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/64/112127_crt_Zjpk6.jpg?r=1730807214",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/64/112127_crt_Zjpk6.jpg?r=1730807214",
+        "grid": "https://lain.bgm.tv/pic/crt/g/33/64/112127_crt_Zjpk6.jpg?r=1730807214"
+    },
+    "summary": "霊媒師の家系の女子高生。硬派な男性がタイプ。宇宙人は信じてないけど、幽霊は信じている。セルポ星人にさらわれ、秘めた超能力に目覚める。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "绫濑桃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "モモ"
+                },
+                {
+                    "k": "日文名",
+                    "v": "綾瀬 桃"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あやせ もも"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ayase Momo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://anime-dandadan.com/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 117,
+        "collects": 347
+    },
+    "anime_ids": [
+        467461
+    ]
+}

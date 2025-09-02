@@ -1,0 +1,54 @@
+{
+    "id": 66480,
+    "name": "エレノワール・セイラン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4e/52/66480_crt_rrg14.jpg?r=1611791801",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/52/66480_crt_rrg14.jpg?r=1611791801",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/52/66480_crt_rrg14.jpg?r=1611791801",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4e/52/66480_crt_rrg14.jpg?r=1611791801"
+    },
+    "summary": "生真面目なパーティ随一のツッコミ役。\r\nエルフの聖者で面倒見がよく、パーティの良心的存在。\r\n一番常識的であるものの、家事が苦手だったり忘れ物をしたりと、時々抜けている面を見せる。\r\n実は目が悪く、エルフなのにメガネをかけないと弓が使えない。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾蕾诺瓦尔·塞兰"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "セイラ"
+                },
+                {
+                    "v": "Seira"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Ellenoar Seiran"
+                },
+                {
+                    "k": "昵称",
+                    "v": "塞拉"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 9,
+        "collects": 42
+    },
+    "anime_ids": [
+        254895
+    ]
+}

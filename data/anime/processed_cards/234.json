@@ -1,0 +1,184 @@
+{
+    "id": 234,
+    "name": "AIR",
+    "image_path": "data/images/anime/234.jpg",
+    "points": 8.0,
+    "cost": 2,
+    "rarity": "R",
+    "description": "我的孩子，仔细听好\r\n接下来我说的，是一件非常重要的事\r\n已经忘了从何时开始\r\n由上代讲给下代，代代传下来的故事\r\n一个关于长久的旅程的故事……\r\n\r\n夏天，在靠近海边小小的街道上\r\n一位青年从公共汽车站下车了\r\n青年一直在旅行中\r\n这样的小镇他无心久留\r\n在赚足了路费后，他会去那些更繁华的地方\r\n他的旅伴，是母亲留给他的小小的人偶\r\n他不用手接触，人偶就能动起来\r\n从母亲那里继承了这种魔法\r\n靠着表演人偶维生，他的旅途才一直能继续着\r\n青年给孩子们表演着人偶戏\r\n然而，简陋的人偶无法吸引孩子们\r\n没有得到报酬的他\r\n无力地站在夏天的烈日下\r\n迷迷糊糊地睡着了……\r\n就在这条海边的街上，青年和命运中的少女相遇了…… ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "奇幻",
+        "游戏改"
+    ],
+    "date": "2005-01-06",
+    "rating_rank": 255,
+    "rating_score": 8.0,
+    "rating_total": 11938,
+    "main_character_ids": [
+        52,
+        53,
+        57,
+        58,
+        65
+    ],
+    "main_characters": [
+        {
+            "id": 52,
+            "name": "国崎往人",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9a/11/52_fYX72.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/11/52_fYX72.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/11/52_fYX72.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9a/11/52_fYX72.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4456,
+                    "name": "小野大輔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c4/8e/4456_prsn_HEQe3.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/8e/4456_prsn_HEQe3.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/8e/4456_prsn_HEQe3.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c4/8e/4456_prsn_HEQe3.jpg"
+                    },
+                    "short_summary": "在日本大学艺术学部放送学科就读时，主要是专攻电视节目制作。但因为当时提出的企划作品被教授评价的很差，所以转而改以演出者方式参与，并在参与过程中感受到演戏的有趣，因此决定以成为声优为目标。\r\n　　 出道当时，以动画节目的准常态出演（担任非固定角色名的小角色配音）为主。\r\n　　 第一部担任主角的动画作品是「AIR」TV动画版的男主角国崎往人。\r\n　　 在2006年放送的动画《凉宫春日的忧郁》以古泉一树这个角色获得广大知名度，其後也陆续获得许多要角演出。从帅气知性的青年到有点脱线的搞笑角色，演出的类型范围十分广泛。\r\n　　 2008年以《南家三姐妹》保坂这个角色获得第二回声优奖男优部门配角赏。　\r\n　　据来自2010年6月14日，IT世界网的咨询《Voice NewType投票，新一代声优崭露头角》中报道：男性榜单这边倒几乎都是老面孔，不过占据首位的再也不是福山润和神谷浩史等人，今次终于也轮到了小野大辅。长期以来如同劳模一般辛苦工作的小野大辅，如今终于名利双收，不但摘得上届声优大赏最佳男主角赏，如今人气投票又问鼎冠军，实在可喜可贺。\r\n　　 2010年1月31日その执事、狂騒～赤いヴァレンタイン声优见面会中被主持人吉田尚记称为声优界的谷原章介。\r\n　　 2010年3月以《黑执事》塞巴斯蒂安这个角色获得第四回声优奖主演男优赏。\r\n　　 2010年4月新番《迷糊餐馆working》中担任佐藤润的声优。\r\n　　 2010年4月新番《无法逃离的背叛》中担任莲城焰椎真的声优\r\n　　 2010年7月新番《传说中的勇者传说》中担任西昂·阿斯塔尔的声优。《黑执事2》中继续担任塞巴斯蒂安的声优。\r\n　　在《背叛》中的热血少年，《传说中的勇者传说》的拥有伟大理想又腹黑的西昂使小野大辅的声线变化发挥地更为淋漓尽致。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 53,
+            "name": "神尾観铃",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/77/89/53_crt_x0x0c.jpg?r=1488788739",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/89/53_crt_x0x0c.jpg?r=1488788739",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/89/53_crt_x0x0c.jpg?r=1488788739",
+                "grid": "https://lain.bgm.tv/pic/crt/g/77/89/53_crt_x0x0c.jpg?r=1488788739"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3880,
+                    "name": "川上とも子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/da/05/3880_prsn_NX58v.jpg?r=1678190819",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/05/3880_prsn_NX58v.jpg?r=1678190819",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/05/3880_prsn_NX58v.jpg?r=1678190819",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/da/05/3880_prsn_NX58v.jpg?r=1678190819"
+                    },
+                    "short_summary": "川上伦子（艺名：川上 とも子，1970年4月25日－2011年6月9日）是一名日本女性声优。血型O型。东京都出身。隶属于Production baobab事务所。自2008年8月16日因病住院而暂停其声优事业，Keroro军曹的日向冬树和BLEACH的砕蜂这2个角色暂时由另一位声优桑岛法子代役。自手术过后于2008年10月开始进入长期休养的状态，2009后半年出院后复出，2011年6月9日过世，享年41岁。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 57,
+            "name": "霧島佳乃",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1c/dd/57_crt_shVhz.jpg?r=1488788993",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/dd/57_crt_shVhz.jpg?r=1488788993",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/dd/57_crt_shVhz.jpg?r=1488788993",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1c/dd/57_crt_shVhz.jpg?r=1488788993"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4458,
+                    "name": "岡本麻見",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4e/2e/4458_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/2e/4458_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/2e/4458_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4e/2e/4458_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "東京都出身の元女性声優。独身。妹が1人いる。\r\nかつてはマーカス、青二プロダクション、トルバドール音楽事務所に所属していた。\r\n1992年にパソコン用ゲームとして発売されて以降、現在まで断続的にシリーズ作品が制作されている『卒業』シリーズの舞台である清華女子高等学校の女子生徒役を2役以上演じた唯一の声優である。\r\n小さい頃から唄うことが好きで、児童劇団に入っていた。児童劇団には声優デビューしてからしばらくするまで所属していた。\r\n大学（出身校は非公表）卒業直前の1997年1月19日、ゲーム『センチメンタルグラフティ』にて星野明日香役でデビュー。\r\n同作同期デビューの鈴木麗子・西口有香・牧島有希・今野宏美・岡田純子の6人組を通称「うさぎ組」（所属事務所・マーカス）と呼ぶ。\r\n仲の良い声優は牧島有希。デビュー当時からの親友であり、現在もプライベートで交流がある。デビューしたての頃には牧島と共同で動物を飼っていた事もある。\r\nトルバドール音楽事務所を退社して以降、声優活動の記録は知られていない。親友である牧島有希とは公私を通して交流があり、牧島の公式ブログで岡本について触れられることがあり、牧島の投稿によると元気に過ごしているとのことである。\r\n2016年10月、デビュー作である『センチメンタルグラフティ』が2018年1月に発売から20年が経過することから、同作で共演した豊嶋真千子・西口有香らを中心に嘗て参加していたユニット「SGガールズ」が再結成され、「センチ20thプロジェクト」と題したイベントを企画することになったが、岡本・牧島有希・小田美智子の3人は再結成には参加していない。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 58,
+            "name": "遠野美凪",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/16/4f/58_crt_N4uSv.jpg?r=1488788969",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/16/4f/58_crt_N4uSv.jpg?r=1488788969",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/16/4f/58_crt_N4uSv.jpg?r=1488788969",
+                "grid": "https://lain.bgm.tv/pic/crt/g/16/4f/58_crt_N4uSv.jpg?r=1488788969"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4007,
+                    "name": "柚木涼香",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4b/11/4007_prsn_Ns8ZS.jpg?r=1696686863",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/11/4007_prsn_Ns8ZS.jpg?r=1696686863",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/11/4007_prsn_Ns8ZS.jpg?r=1696686863",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4b/11/4007_prsn_Ns8ZS.jpg?r=1696686863"
+                    },
+                    "short_summary": "柚木凉香的旧艺名为角松かのり、永椎あゆみ，曾经历一段时间从事泳装模特、女优的工作。\r\n\r\n柚木凉香出道初期主要从事电影拍摄，露毛写真集和杂志封面女郎的工作，曾以永椎步美的艺名在电影樱の园（1990年）里扮演一位可爱的女高中生。柚木凉香的职业艺人生涯从中学时代就已经开始了。\r\n\r\n柚木凉香较那些近年来10多岁就出道的声优来说，她作为声优出道较晚。但由于其可演绎范围很广，从病弱的少女到强悍的女性，甚至是神秘的机械的声音都能应对自如，其作为声优的资质已经越来越被重视。\r\n\r\n柚木凉香的亲妹妹樱木佐由美是一名职业漫画家．柚木凉香在其妹画的现实系四格漫画里也经常登场，在其漫画中还有一位已婚女性出现，樱木さゆみ是刻画成3姐妹的，但是在画的时候并没有明确区分，所以令很多人都以为此二人是同一人物，其实柚木本人的婚姻状况并未公开，所以亦无从得知。\r\n\r\n据本人描绘，她会像漫画或动画中的情节一样，一旦遇到自己喜欢的人会兴奋的流鼻血……\r\n\r\n她也是日本版芭比的配音演员。\r\n\r\n柚木凉香和小山力也主持的《传颂之物网路广播》为其带来了意想不到的高人气。虽然是第一次正式主持网路广播，柚木凉香却表现的非常出色，她时常在节目中对另一位主持小山力也发起猛烈的爱情攻势，经常令小山力也不知如何应对，同时此二人的对话亦十分爆笑，网友们对此也乐此不疲。由于传颂之物的名气之高超乎想象，此网路广播的影响也异常之广，已经有从韩国收到邮件的先例。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 65,
+            "name": "神奈備命",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/95/b8/65_crt_uL7D7.jpg?r=1488788781",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/b8/65_crt_uL7D7.jpg?r=1488788781",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/b8/65_crt_uL7D7.jpg?r=1488788781",
+                "grid": "https://lain.bgm.tv/pic/crt/g/95/b8/65_crt_uL7D7.jpg?r=1488788781"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3840,
+                    "name": "西村ちなみ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/62/14/3840_prsn_6Isiw.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/14/3840_prsn_6Isiw.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/14/3840_prsn_6Isiw.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/62/14/3840_prsn_6Isiw.jpg"
+                    },
+                    "short_summary": "1994年に、『超くせになりそう』の主人公の白鳥なぎさ役でデビュー。その後も『ゲゲゲの鬼太郎（第4作）』の猫娘役、『爆走兄弟レッツ&ゴー!!』（2作目のWGP編まで）の佐上ジュン役、『ポケットモンスターシリーズ』のジュンサー役などで、知名度を上げていった。\r\n    公称では、身長157cm・体重（新人時代）40kg。中学校では帰宅部、高校では剣道部に入っていた。\r\n    高校野球とプロ野球が大好き。プロ野球は元々は読売ジャイアンツファンだったが、現在は福岡ソフトバンクホークスファン。\r\n    ハリウッド俳優のイーサン・ホークのファンだという。\r\n    『水曜どうでしょう』（HTB 北海道テレビ）が好きで、自ら「マニア」を自称している。2003年の来道時には真っ先にHTB本社を訪ねている（提供クレジット紹介で「シカでした」「 - の提供でお送りしま水曜どうでしょう」と発したことも）。\r\n    インターネットラジオ『ARIA The STATION Due』で共にパーソナリティーを務める葉月絵理乃と30代の集まりを結成、先述の『水曜どうでしょう』好きが高じてかチーム30[2]と名付けている。『ARIA』で共演した声優が次々と加入し、メイン6人+西村で現在未加入は20代の斎藤千和のみである。\r\n    2002年10月に結婚。芸名はその後も旧姓のままであり、また結婚後の苗字は一般公開されていない。2005年7月3日には男児（2520g）、2009年10月6日には2636gの女児を出産、二児の母親となった。\r\n    過去に舞台経験を積んでおり、「落ち着いたらまた舞台も演じてみたい」と自身のブログで語っている。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,219 @@
+{
+    "id": 448478,
+    "name": "失忆投捕",
+    "image_path": "data/images/anime/448478.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "在初中球界驰名的强投·清峰叶流火，与冷静捕手“智将”·要圭，这对投捕搭档。收到了来自全国各强校的热情邀约，但他们却选择进入在棒球界默默无名的学校、东京都立小手指高中就读。而且圭还因为失忆导致失去了对棒球的一切知识。\r\n就在这时，过去因被他们两人击败而放弃棒球的天才们，也在偶然间转来这所学校。\r\n因缘际会下，命运再次开始流动。他们的高中棒球故事就此展开。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "运动",
+        "漫画改"
+    ],
+    "date": "2024-04-09",
+    "rating_rank": 297,
+    "rating_score": 7.9,
+    "rating_total": 5570,
+    "main_character_ids": [
+        97671,
+        97672,
+        97673,
+        97674,
+        97675
+    ],
+    "main_characters": [
+        {
+            "id": 97671,
+            "name": "清峰葉流火",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9f/15/97671_crt_TT87R.jpg?r=1702796152",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/15/97671_crt_TT87R.jpg?r=1702796152",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/15/97671_crt_TT87R.jpg?r=1702796152",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9f/15/97671_crt_TT87R.jpg?r=1702796152"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 8710,
+                    "name": "増田俊樹",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1a/90/8710_prsn_WB2UQ.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/90/8710_prsn_WB2UQ.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/90/8710_prsn_WB2UQ.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1a/90/8710_prsn_WB2UQ.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優。広島県出身。トイズファクトリー所属。\r\n\r\n2009年、東京アナウンス学院放送声優科に在学中、『ミュージカル・テニスの王子様』のオーディションに合格。幸村精市役で俳優デビュー。\r\n2010年9月、事務所の所属部門がメンズトラントセクションから声優部門に移動。10月よりラジオA&G ARTIST ZONE 2hのアシスタントパーソナリティとなり、声優として活動開始。\r\n2011年10月、文化放送「細谷佳正・増田俊樹の全力男子」のパーソナリティとなり、2012年2月に番組から誕生したユニット「Max Boys」としてCDをリリースした。\r\nアニメ、ゲーム、ラジオ、舞台を中心に活動中。\r\n2018年7月31日、スペースクラフト・エンタテインメントを退所し、フリーでの活動期間を経て同年11月1日、レコード会社であるトイズファクトリーに所属。同日には公式サイトが開設され、2019年春に初の自身名義のCDのリリースも発表された。",
+                    "locked": false
+                },
+                {
+                    "id": 30834,
+                    "name": "いなせあおい",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/88/12/30834_prsn_oSr9R.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/12/30834_prsn_oSr9R.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/12/30834_prsn_oSr9R.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/88/12/30834_prsn_oSr9R.jpg"
+                    },
+                    "short_summary": "いなせ あおい（1994年1月30日 - ）は、日本の女性声優。BLACK SHIP所属。広島県出身。旧名は井上葵、稲瀬葵。\r\n\r\n2013年、アミューズメントメディア総合学院声優タレント学科2年時に『フェアリーフェンサー エフ』に出演する。\r\n2016年に「井上葵」から「稲瀬葵」に改名した。\r\n2019年10月1日より、芸名を「稲瀬葵」から「いなせ あおい」に改名して、尾木プロ THE NEXTを退所してフリーとなる。\r\n2021年9月1日よりBLACK SHIPに所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 97672,
+            "name": "要圭",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fd/57/97672_crt_6Lt62.jpg?r=1702796180",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/57/97672_crt_6Lt62.jpg?r=1702796180",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/57/97672_crt_6Lt62.jpg?r=1702796180",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fd/57/97672_crt_6Lt62.jpg?r=1702796180"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4697,
+                    "name": "宮野真守",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307"
+                    },
+                    "short_summary": "小学生時代から劇団ひまわりに所属し、主に舞台などで活動した。高校生時代に海外ドラマ『私はケイトリン』の吹替で声優デビューする。PS2用ゲーム『キングダム ハーツ』のリク役で注目を集め、その後は、『機動戦士ガンダム00』や『DEATH NOTE』の主役を務めるなど、数々の人気作品に出演している。\r\n第1回声優アワード主演男優賞および新人賞にノミネートされた（『DEATH NOTE』夜神月役）。 2008年の第2回声優アワード主演男優賞受賞。東京国際アニメフェア2008・第7回東京アニメアワード個人賞（声優部門）受賞（『DEATH NOTE』『機動戦士ガンダム00』）。 2008年12月1日、劇団ひまわりのHPで結婚と子供を授かったことを公表した。結婚相手や子供の性別は非公開。 2011年、ノン子とのび太のアニメスクランブルにて第21回アニメグランプリ最優秀男性声優賞受賞。 2012年、第6回声優アワードにて助演男優賞と歌唱賞（後者はST☆RISHとして）、日刊スポーツ第1回日刊アニメグランプリにてMIP男性声優賞、アニメージュ第34回アニメグランプリ声優部門においてグランプリを受賞。\r\n\r\n2025年6月8日宣布与向日葵剧团合约期满退团，次日宣布加入研音。",
+                    "locked": false
+                },
+                {
+                    "id": 41550,
+                    "name": "永瀬アンナ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ca/8f/41550_prsn_P57Z9.jpg?r=1701443383",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/8f/41550_prsn_P57Z9.jpg?r=1701443383",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/8f/41550_prsn_P57Z9.jpg?r=1701443383",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ca/8f/41550_prsn_P57Z9.jpg?r=1701443383"
+                    },
+                    "short_summary": "出身地\r\n東京都\r\n\r\n趣味・特技\r\n読書、演劇鑑賞、イラスト、漫画制作\r\nクラシックバレエ、ギター、トランペット、ピアノ、ダンス",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 97673,
+            "name": "藤堂葵",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/af/db/97673_crt_GwVe7.jpg?r=1702796190",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/db/97673_crt_GwVe7.jpg?r=1702796190",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/db/97673_crt_GwVe7.jpg?r=1702796190",
+                "grid": "https://lain.bgm.tv/pic/crt/g/af/db/97673_crt_GwVe7.jpg?r=1702796190"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 11166,
+                    "name": "阿座上洋平",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ab/7d/11166_prsn_zPNV2.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/7d/11166_prsn_zPNV2.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/7d/11166_prsn_zPNV2.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ab/7d/11166_prsn_zPNV2.jpg"
+                    },
+                    "short_summary": "阿座上洋平（1991年8月7日－），日本男性声优。出身于群马县。身高180cm。青二Production所属，青二塾东京校第31期毕业。2016年4月至9月播映的电视动画《黑骸》第一次配音主演。\r\n\r\n兴趣是电影鉴赏、打棒球。特长是打篮球。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 97674,
+            "name": "千早瞬平",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2e/46/97674_crt_LZ353.jpg?r=1702796209",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/46/97674_crt_LZ353.jpg?r=1702796209",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/46/97674_crt_LZ353.jpg?r=1702796209",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2e/46/97674_crt_LZ353.jpg?r=1702796209"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7392,
+                    "name": "島﨑信長",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/65/0b/7392_prsn_85bDV.jpg"
+                    },
+                    "short_summary": "岛﨑信长（1988年12月6日－），日本男性配音演员。隶属于青二Production。出身于宫城县。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 97675,
+            "name": "山田太郎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6b/9b/97675_crt_wMHhe.jpg?r=1702796217",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/9b/97675_crt_wMHhe.jpg?r=1702796217",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/9b/97675_crt_wMHhe.jpg?r=1702796217",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6b/9b/97675_crt_wMHhe.jpg?r=1702796217"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5209,
+                    "name": "梶裕貴",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/51/73/5209_prsn_bD3dr.jpg?r=1478379077"
+                    },
+                    "short_summary": "ARTSVISION第17期免费新人培育选拔会合格，并且加入了事务所ARTSVISION。\r\n2009年获得第3届声优奖—新人男声优赏，且开始了“G.Addict”的活动。\r\n2012年2月22日以本人的名义开始歌手的活动，发售第一张单曲《sense of wonder》。2012年9月5日发售第二张单曲《Hello！》。\r\n2013年获得第7届声优奖—主演男声优赏。\r\n2013年10月1日，由原来的事务所ARTSVISION转入VIMS。\r\n2014年获得第8届声优奖—主演男声优赏。\r\n\r\n拥有中性的声音，能演出从少年到青年、动物等各式各样的角色。\r\n担任剧团“妄想中毒”的pretty团长。\r\n中小学时代担任过学生会长，有体育或美术被表扬等表现，是个非常有才能的小孩。\r\n声优伙伴或支持者称呼他为“王子”。\r\n和代永翼组成团体“BRAVE WING”。\r\n与寺岛拓笃、堀江一真和阿部敦等四人组成团体“G.Addict”。\r\n性格极其纯良，待人有礼温善。虽然人前很活泼开朗，但其实是个喜欢宁静安逸的人，只有与亲近的人在一起时才会放松的流露真实自我。\r\n不只声音，外型也很中性，现在也还会被误认成女生。本人对此表示否定，表示“内在意外地很有男子气概”。\r\n虽然年轻，但是性格相当认真。寺岛拓笃评价他“面对工作上的态度很严谨”，大亲友下野纮也说：“他真的很可靠，很会待人处世，作为声优也相当优秀。”\r\n\r\n代表作品有《进击的巨人》艾伦·耶格尔、《夜樱四重奏》比泉秋名、《未来都市NO.6》紫苑、《罪恶王冠》樱满集、《七大罪》梅利奥达斯、《加速世界》有田春雪、《魔笛MAGI》阿里巴巴·沙尔贾等。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

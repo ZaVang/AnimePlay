@@ -1,0 +1,219 @@
+{
+    "id": 12344,
+    "name": "游戏王",
+    "image_path": "data/images/anime/12344.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "《游戏王》动画版，首先于1998年在日本的朝日电视台播放，共有27集，同漫画初期一样讲述“黑暗游戏（闇のゲーム）”的故事为主。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 27,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1998-04-04",
+    "rating_rank": 1386,
+    "rating_score": 7.3,
+    "rating_total": 1616,
+    "main_character_ids": [
+        7454,
+        7637,
+        7638,
+        7639,
+        18160,
+        54092
+    ],
+    "main_characters": [
+        {
+            "id": 7454,
+            "name": "闇遊戯 / アテム",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/62/c2/7454_crt_rb3qK.jpg?r=1751867929",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/c2/7454_crt_rb3qK.jpg?r=1751867929",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/c2/7454_crt_rb3qK.jpg?r=1751867929",
+                "grid": "https://lain.bgm.tv/pic/crt/g/62/c2/7454_crt_rb3qK.jpg?r=1751867929"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4054,
+                    "name": "緒方恵美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/37/ce/4054_prsn_wWwqj.jpg?r=1702781847",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/ce/4054_prsn_wWwqj.jpg?r=1702781847",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/ce/4054_prsn_wWwqj.jpg?r=1702781847",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/37/ce/4054_prsn_wWwqj.jpg?r=1702781847"
+                    },
+                    "short_summary": "绪方惠美是日本东京都出生的女配音兼歌手（当歌手时的艺名为‘em:óu’），B型双子座。桐朋女子中学、高中毕业；东海大学海洋学系肄业。东京声专音乐学校（现在为昭和音乐艺术学院）歌剧科及同研究科毕业。\r\n主要以低沉沙哑的音质，替少年角色配音的她，其他也多半是替美型青年或男性化的女性等中性化角色配音为主。本人也曾经自己承认，或许是因为自己也是男性化的性格，所以也被称为「男八段」（这个绰号是广播节目《绪方惠美的向银河呐喊中》与听众一边交谈，一边所喝的酒的名字）。\r\n代表作有《幽游白书》（藏马／南野秀一）、《美少女战士Sailor Moon S》（天王遥／水手天王星）、《新世纪福音战士》（碇真嗣）等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7637,
+            "name": "本田ヒロト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/61/77/7637_crt_3NNVc.jpg?r=1751867962",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/77/7637_crt_3NNVc.jpg?r=1751867962",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/77/7637_crt_3NNVc.jpg?r=1751867962",
+                "grid": "https://lain.bgm.tv/pic/crt/g/61/77/7637_crt_3NNVc.jpg?r=1751867962"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3976,
+                    "name": "置鮎龍太郎",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c5/cf/3976_prsn_4eb60.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/cf/3976_prsn_4eb60.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/cf/3976_prsn_4eb60.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c5/cf/3976_prsn_4eb60.jpg"
+                    },
+                    "short_summary": "日本の男性声優、ナレーターである。青二プロダクション所属。血液型はO型。\r\n\r\n妻は声優の前田愛。置鮎は再婚となる。前妻は声優の永澤菜教。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7638,
+            "name": "城之内克也",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/77/02/7638_crt_9uHF7.jpg?r=1751790022",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/02/7638_crt_9uHF7.jpg?r=1751790022",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/02/7638_crt_9uHF7.jpg?r=1751790022",
+                "grid": "https://lain.bgm.tv/pic/crt/g/77/02/7638_crt_9uHF7.jpg?r=1751790022"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3822,
+                    "name": "森川智之",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e1/d8/3822_prsn_HDeX6.jpg?r=1632668462",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/d8/3822_prsn_HDeX6.jpg?r=1632668462",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/d8/3822_prsn_HDeX6.jpg?r=1632668462",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e1/d8/3822_prsn_HDeX6.jpg?r=1632668462"
+                    },
+                    "short_summary": "森川 智之は、日本の声優、ナレーター、歌手。アクセルワン代表取締役。\r\n\r\nアニメ・ゲーム作品では主にクールな二枚目を担当することが多いが、その他にも幅広い芸風を持ち、様々な役をこなす。強い音圧のある声量を誇り、主役デビューとなる『宇宙の騎士テッカマンブレード』のアフレコ中にマイクを2本破壊した程。　このエピソードから、ファンに「マイククラッシャー」と呼ばれることも。その為、ピンマイクをつける時にはかなり低い位置につけるとのこと。\r\n\r\n洋画の吹き替えではキアヌ・リーブス、ブラッド・ピット、トム・クルーズ、ユアン・マクレガーなどを担当する。\r\n\r\n声優活動と併せて音楽活動も行っている。『アンジェリーク』シリーズにて立木文彦とデュエットしたことが縁で、後に同氏と音楽ユニット「2HEARTS」を結成した。\r\n\r\n好きな食べ物は生肉。一部の声優からは「生肉先輩」と呼ばれている。また肉の焼き方にもうるさい。愛称は「もりもり」、（BL界の）「帝王」。ちなみに帝王と呼ばれていることは本人も自負しているとか。\r\n2006年頃から肉体改造を開始し、半年で10kgも痩せるほどの変貌を遂げている。\r\n愛犬家。アクセルという名のレトリーバーを飼っていたが2009年10月に永眠。\r\n\r\nゲームへの出演も数多いが、初めてゲームをプレイしたのは2007年のこと。プレイしたのは『Devil May Cry』。後に主人公であるダンテの日本語版声優を担当する事になる。ちなみにPS2を購入するまでメモリーカードの存在を知らなかった。\r\n\r\n2011年4月1日に声優プロダクション「アクセルワン」を設立。独立し、代表取締役社長となった。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7639,
+            "name": "真崎杏子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/33/2f/7639_crt_Mqo27.jpg?r=1751790097",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/2f/7639_crt_Mqo27.jpg?r=1751790097",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/2f/7639_crt_Mqo27.jpg?r=1751790097",
+                "grid": "https://lain.bgm.tv/pic/crt/g/33/2f/7639_crt_Mqo27.jpg?r=1751790097"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4097,
+                    "name": "かかずゆみ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ba/ed/4097_prsn_XditB.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/ed/4097_prsn_XditB.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/ed/4097_prsn_XditB.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ba/ed/4097_prsn_XditB.jpg"
+                    },
+                    "short_summary": "本名与日文读音相同。2009年8月以前原属元气Project。经历过自由身一段时间之后，2011年10月1日起所属Atomic Monkey。2022年4月1日开始所属青二Production。\r\n在成为配音员前有2年的空白期，曾在旅行节目中担任记者。\r\n私生活方面，2004年6月1日结婚，丈夫为圈外人士，是学生时期的同班同学。2005年8月下旬生下长男，2008年次男出生。\r\n2013年6月在推特上透露，2009年10月8日，丈夫42歳时罹患脑出血亡故。2019年曾在推特上感慨次男对父亲没有印象。\r\n\r\n1996年4月，嘉数以《机动新世纪高达X》（声演角色名字为莎拉·塔伊莉鲁）成为她的声优出道作。出道以来，嘉数大多帮天真烂漫、纯情、沉默寡言等各种性格的女性角色配音，有时候也会声演少年。\r\n2005年3月，朝日电视台新版《哆啦A梦》声优阵容焕然一新之下，女主角源静香的配音从野村道子改成嘉数接任。\r\n同年8月，嘉数生下第一个男孩坐月子期间，她负责导览工作的电视节目《卫星动画剧场》曾请新名彩乃（当时艺名松本彩乃）代班。至于动画《哆啦A梦》有静香登场的集数大多只出场一小段、或者是直接让静香无台词登场。\r\n与嘉数同时期出道的川上伦子和松来未祐相继去世之后，嘉数继承部分的角色。\r\n\r\n嘉数还有和与大原沙耶香、折笠富美子、菊池志穗、丰口惠、浅野麻由美组成和服社；不论公私活动，出外都穿着和服。与美乡秋是交往10年之久的好友。与佐藤裕美也有交友关系。此外在2006年12月9日，嘉数曾和折笠、丰口3人共同组成演剧团体“R*L（日文读音：ラフラフ）”（R＝Rough，L＝Laugh）。\r\n\r\n出道时期，嘉数曾和ARTSVISION所属的同行手冢千春一起上TBS广播的公开录音电台节目《PakiPaki Paradise》组成双人搞笑团体“暴れ船”。并于TBS广播的另一出当红电台节目《赤坂搞笑D·O·J·O》举办的新人战与手冢2人一起通过预赛后，在节目中表演了一场幽默短剧。\r\n\r\n兴趣和特长有制作点心、穿和服。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 18160,
+            "name": "武藤遊戯",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6a/57/18160_crt_RdiyU.jpg?r=1751790128",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/57/18160_crt_RdiyU.jpg?r=1751790128",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/57/18160_crt_RdiyU.jpg?r=1751790128",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6a/57/18160_crt_RdiyU.jpg?r=1751790128"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4054,
+                    "name": "緒方恵美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/37/ce/4054_prsn_wWwqj.jpg?r=1702781847",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/ce/4054_prsn_wWwqj.jpg?r=1702781847",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/ce/4054_prsn_wWwqj.jpg?r=1702781847",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/37/ce/4054_prsn_wWwqj.jpg?r=1702781847"
+                    },
+                    "short_summary": "绪方惠美是日本东京都出生的女配音兼歌手（当歌手时的艺名为‘em:óu’），B型双子座。桐朋女子中学、高中毕业；东海大学海洋学系肄业。东京声专音乐学校（现在为昭和音乐艺术学院）歌剧科及同研究科毕业。\r\n主要以低沉沙哑的音质，替少年角色配音的她，其他也多半是替美型青年或男性化的女性等中性化角色配音为主。本人也曾经自己承认，或许是因为自己也是男性化的性格，所以也被称为「男八段」（这个绰号是广播节目《绪方惠美的向银河呐喊中》与听众一边交谈，一边所喝的酒的名字）。\r\n代表作有《幽游白书》（藏马／南野秀一）、《美少女战士Sailor Moon S》（天王遥／水手天王星）、《新世纪福音战士》（碇真嗣）等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 54092,
+            "name": "野坂ミホ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/84/cb/54092_crt_bZ860.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/84/cb/54092_crt_bZ860.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/84/cb/54092_crt_bZ860.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/84/cb/54092_crt_bZ860.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3824,
+                    "name": "ゆかな",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e6/9b/3824_prsn_12Hwy.jpg?r=1460304394",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/9b/3824_prsn_12Hwy.jpg?r=1460304394",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/9b/3824_prsn_12Hwy.jpg?r=1460304394",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e6/9b/3824_prsn_12Hwy.jpg?r=1460304394"
+                    },
+                    "short_summary": "小时候体弱多病，甚至被医生说“有可能活不过20岁”。特别是在十岁的时候经历病情恶化，被告知“可能就剩几个月的生命了”。这段经历对ゆかな的人生观产生了很大影响。还是小学生的她却时常在考虑“想留下自己曾经在世界上存在过的证明”。自己曾经在接受采访的时候坦言，这成了自己选择艺人道路的很大原因。\r\n现在的艺名 ゆかな是过去作为歌手时使用的，本名和过去的声优艺名都是 野上ゆかな 。出于「希望别人只叫后面的名字」的理由，因此省略野上而以ゆかな当作艺名。 \r\n小时候属于蜗居派，喜欢看广辞苑和六法全书什么的。甚至有一天在家对着电话簿看了一整天。后来描述说这是因为小时候体弱多病的缘故。 \r\n因为双亲均为合唱团的声部领唱，所以在很小的时候就开始接受古典音乐发声训练，5岁开始弹钢琴。升入中学后加入吹奏乐部开始演奏长笛。十分喜爱歌唱，在唱歌时会有一种“在音乐的海洋里畅游”的感觉。 \r\n1996年到1997年间，曾作为日本乐队组合W's中的“YUKA”为乐队的一周年限定活动而忙碌。在1998年，在音乐活动上与Absord Music Japan签订了专属协议，在此期间根据协议的内容，以“ゆかな”的名义进行音乐活动。这也成了以后将自己的活动名统一成“ゆかな”的契机。 \r\n配音的出道作是动画『MOLDIVER 』、一开始隶属于ARTSVISION Inc、转换了几家事务所之后才隶属于现在的事务所。 \r\n身材很好。有一个一岁就分开的妹妹。\r\n与同年龄的池泽春菜在事业初期就开始深交，在《银河少女警察》系列、《光之美少女》系列等作品中共同演出。并且于2006年结成“ゆかな*はるな”声优组合。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

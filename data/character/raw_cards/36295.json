@@ -1,0 +1,72 @@
+{
+    "id": 36295,
+    "name": "野々原茜",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4c/86/36295_crt_qfWiw.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/86/36295_crt_qfWiw.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/86/36295_crt_qfWiw.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4c/86/36295_crt_qfWiw.jpg"
+    },
+    "summary": "《偶像大师 百万LIVE!》登场的偶像。Dance属性。左撇子。 \r\n\r\n烦得可爱的16岁偶像。第一人称是小茜（茜ちゃん），称制作人为Pro酱（プロちゃん）。 \r\n\r\n在15岁以上的高中生组中身高最矮。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "野野原茜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Nonohara Akane"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ののはら あかね"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月3日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "150cm"
+        },
+        {
+            "key": "体重",
+            "value": "42kg"
+        },
+        {
+            "key": "BWH",
+            "value": "80-58-79"
+        },
+        {
+            "key": "年龄",
+            "value": "16岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 3,
+    "stat": {
+        "comments": 8,
+        "collects": 8
+    },
+    "anime_ids": [
+        309807
+    ]
+}

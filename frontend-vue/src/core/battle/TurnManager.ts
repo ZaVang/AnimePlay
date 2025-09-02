@@ -8,11 +8,16 @@ import type { AnimeCard, CharacterCard, Card, Skill } from '@/types';
 import type { Rarity } from '@/types/card';
 // removed duplicate Deck import
 
+import { urCharacterSkillMap } from '@/data/urCharacterSkills';
+import { PersistentEffectSystem } from '../systems/PersistentEffectSystem';
+
 // Maps character IDs to an array of skill IDs
 const CharacterSkillMap: Record<number, string[]> = {
-  1007: ['KYON_TSUKKOMI', 'PASSIVE_PLACEHOLDER'], // 阿虚
-  49: ['ACTIVE_PLACEHOLDER', 'HARUHI_AURA'],    // 凉宫春日
-  265: ['ACTIVE_PLACEHOLDER', 'PASSIVE_PLACEHOLDER'],  // 泉此方
+  // --- UR Character Skills (优先级最高) ---
+  ...urCharacterSkillMap,
+  
+  // --- Non-UR Character Skills ---
+  1007: ['KYON_TSUKKOMI', 'PASSIVE_PLACEHOLDER'], // 阿虚(非UR)
   // Lower rarity characters can get template skills
   72355: ['TPL_DRAW_1', 'AURA_GENRE_EXPERT'], // 随便一个R角色
 };
@@ -201,10 +206,13 @@ export const TurnManager = {
     // 2. Draw a card
     playerStore.drawCards(gameStore.activePlayer, 1);
 
-    // 3. Handle character skill cooldowns reduction
+    // 3. Process persistent effects at start of turn
+    PersistentEffectSystem.getInstance().onTurnStart(gameStore.activePlayer);
+    
+    // 4. Handle character skill cooldowns reduction
     playerStore.reduceSkillCooldowns(gameStore.activePlayer);
     
-    // 4. Handle character rotation if needed
+    // 5. Handle character rotation if needed
     if (playerStore[gameStore.activePlayer].needsRotation) {
       const player = playerStore[gameStore.activePlayer];
       const newIndex = (player.activeCharacterIndex + 1) % player.characters.length;
@@ -212,10 +220,10 @@ export const TurnManager = {
       player.needsRotation = false; // Reset the flag
     }
 
-    // 5. Set phase to action
+    // 6. Set phase to action
     gameStore.setPhase('action');
 
-    // 6. If it's the AI's turn, trigger its action
+    // 7. If it's the AI's turn, trigger its action
     if (gameStore.activePlayer === 'playerB') {
       AIController.takeTurn();
     }
@@ -226,6 +234,9 @@ export const TurnManager = {
    */
   endTurn() {
     const gameStore = useGameStore();
+    
+    // Process persistent effects at end of turn
+    PersistentEffectSystem.getInstance().onTurnEnd(gameStore.activePlayer);
     
     if (gameStore.turn >= 12) {
       this.judgeFinalWinner();

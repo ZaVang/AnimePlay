@@ -1,0 +1,68 @@
+{
+    "id": 71477,
+    "name": "ロイド・フォージャー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a9/0d/71477_crt_Gg8D9.jpg?r=1651051630",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/0d/71477_crt_Gg8D9.jpg?r=1651051630",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/0d/71477_crt_Gg8D9.jpg?r=1651051630",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a9/0d/71477_crt_Gg8D9.jpg?r=1651051630"
+    },
+    "summary": "本作の主人公。東国で諜報活動を行う西国のスパイ。「黄昏」はコードネームで、本名はスパイになった時に捨てた。今回の任務では「精神科医ロイド・フォージャー」の偽装身分を用いる。\r\n並外れた戦闘力・記憶力・情報処理能力を持ち、任務ごとに様々な顔と名前を使い分ける。かつては戦災孤児で、「（幼い頃の自分のような）子どもが泣かない世界」を作るためにスパイとなった。そのため普段は冷徹だが、本来は人間味溢れる性格で、偽りの家族であるヨルとアーニャへの気配りを見せる。\r\nオペレーション〈梟〉のため、正体を知らないままアーニャやヨルと偽装家族を形成し、毎回予想外の行動をとる彼女たちに振り回されながらも任務をこなしていく。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "劳埃德·福杰"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "黄昏"
+                },
+                {
+                    "v": "罗伊德·福杰"
+                },
+                {
+                    "v": "洛伊德·佛杰"
+                },
+                {
+                    "v": "Twilight / Loid Forger"
+                },
+                {
+                    "v": "たそがれ / ロイド・フォージャー"
+                },
+                {
+                    "v": "Tasogare / Roido Fōjā"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "187cm"
+        },
+        {
+            "key": "体重",
+            "value": "70-90kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 14,
+        "collects": 123
+    },
+    "anime_ids": [
+        373267,
+        411427,
+        329906
+    ]
+}

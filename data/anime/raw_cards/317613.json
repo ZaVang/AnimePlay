@@ -1,0 +1,455 @@
+{
+    "id": 317613,
+    "type": 2,
+    "name": "かぐや様は告らせたい-ウルトラロマンティック-",
+    "name_cn": "辉夜大小姐想让我告白-超级浪漫-",
+    "summary": "秀知院学园是秀才云集的菁英学校，在学生会中担任学生会副会长·四宫辉夜遇见了学生会长·白银御行。\r\n原以为这两个任谁都觉得很登对的天才应该很快就会在一起，但这两人却因为过高的自尊心导致他们终没能向对方告白。\r\n“该用什么办法才能让对方向自己告白呢？”在这场恋爱头脑战中用尽各种智慧谋略、身经百战的两人，各自在心中下了某个决心。\r\n在秀知院学园高中部的文化祭“奉心祭”的最终日到来前，两人的恋情将会出现巨大的进展。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2022-04-08",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/cf/9c/317613_bpGX4.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/cf/9c/317613_bpGX4.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/cf/9c/317613_bpGX4.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/cf/9c/317613_bpGX4.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/cf/9c/317613_bpGX4.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "辉夜大小姐想让我告白-超级浪漫-"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "かぐや様は告らせたい～天才たちの恋愛頭脳戦～ 第3期",
+                    "k": null
+                },
+                {
+                    "v": "辉夜大小姐想让我告白～天才们的恋爱头脑战～ 第三季",
+                    "k": null
+                },
+                {
+                    "v": "Kaguya-sama: Love is War Season 3",
+                    "k": null
+                },
+                {
+                    "v": "Kaguya-sama wa Kokurasetai: Ultra Romantic",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2022年4月8日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期五"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://kaguya.love"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX"
+        },
+        {
+            "key": "其他电视台",
+            "value": "BS11 / 群馬テレビ / とちぎテレビ / MBS"
+        },
+        {
+            "key": "播放结束",
+            "value": "2022年6月24日"
+        },
+        {
+            "key": "导演",
+            "value": "畠山守(小俣真一)"
+        },
+        {
+            "key": "Copyright",
+            "value": "©赤坂アカ／集英社・かぐや様は告らせたい製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "赤坂アカ（集英社「週刊ヤングジャンプ」連載）"
+        },
+        {
+            "key": "人物设定",
+            "value": "八尋裕子"
+        },
+        {
+            "key": "製作",
+            "value": "かぐや様は告らせたい製作委員会（Aniplex、集英社、ジェイアール東日本企画、毎日放送）"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "鈴木雅之 feat. すぅ、鈴木愛理"
+        },
+        {
+            "key": "企画",
+            "value": "岩上敦宏、瓶子吉久、弓矢政法、丸山博雄"
+        },
+        {
+            "key": "制片人",
+            "value": "石川達也、根岸弦輝、船越拓、前田俊博"
+        },
+        {
+            "key": "动画制片人",
+            "value": "菊池雄一郎"
+        },
+        {
+            "key": "总制片人",
+            "value": "制作统括：山田賢志郎"
+        },
+        {
+            "key": "脚本",
+            "value": "中西やすひろ(1,2,5,6,9,10,12,13)、菅原雪絵(3,4,7,8,11)"
+        },
+        {
+            "key": "分镜",
+            "value": "畠山守 [ 小俣真一 ] (1,3,5 live,7,9,12,13)、小原正和(2)、亀井幹太(4)、渡部穏寛(5)、川畑喬(6)、木村延景(8)、牛嶋新一郎(10)、愛敬亮太(11)"
+        },
+        {
+            "key": "演出",
+            "value": "畠山守 [ 小俣真一 ] (1)、菊池貴行(1,5,13)、小原正和(2)、池田愛彩(3)、飛田剛(4,12)、中西基樹(6,9)、渡辺有紀(7)、木村延景(8)、北村翔太郎(10)、愛敬亮太(11)"
+        },
+        {
+            "key": "总作画监督",
+            "value": "吉備団子14号 [ 戸沢東 ] (2,8)、矢向宏志(3,6,11)、川上哲也(4,9,12)、針場裕子(5)、田中紀衣(5,7)、晶貴孝二(10,13)、八尋裕子(13)"
+        },
+        {
+            "key": "作画监督",
+            "value": "太田慎之介、大久保洸太郎、石川洋一、矢向宏志、水谷雄一郎、横山穂乃花、野間聡司、橋口隼人、斉藤準一、世良コータ、山田俊太郎、木佐貫真矢、永野美春、加藤愛仁、井元一彰、山崎浩平、木藤貴之、川﨑玲奈"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "平山瑛子(OP导演)、畠山守 [ 小俣真一 ] (OP分镜协力) / 大野仁愛(ED)、Vercreek(ep.5独立ED制作)"
+        }
+    ],
+    "volumes": 0,
+    "eps": 13,
+    "total_episodes": 15,
+    "rating": {
+        "rank": 83,
+        "total": 19108,
+        "count": {
+            "one": 52,
+            "two": 19,
+            "three": 11,
+            "four": 30,
+            "five": 147,
+            "six": 592,
+            "seven": 2578,
+            "eight": 7341,
+            "nine": 5857,
+            "ten": 2481
+        },
+        "score": 8.3
+    },
+    "collection": {
+        "wish": 2648,
+        "collect": 30271,
+        "doing": 1638,
+        "on_hold": 616,
+        "dropped": 270
+    },
+    "tags": [
+        {
+            "name": "恋爱",
+            "count": 5959
+        },
+        {
+            "name": "搞笑",
+            "count": 4807
+        },
+        {
+            "name": "A-1Pictures",
+            "count": 3784
+        },
+        {
+            "name": "校园",
+            "count": 3758
+        },
+        {
+            "name": "2022年4月",
+            "count": 2298
+        },
+        {
+            "name": "漫画改",
+            "count": 2244
+        },
+        {
+            "name": "TV",
+            "count": 1565
+        },
+        {
+            "name": "日常",
+            "count": 1488
+        },
+        {
+            "name": "漫改",
+            "count": 1286
+        },
+        {
+            "name": "青春",
+            "count": 1195
+        },
+        {
+            "name": "2022",
+            "count": 1168
+        },
+        {
+            "name": "有望打破bangumi恋爱喜剧评分上限的动画",
+            "count": 610
+        },
+        {
+            "name": "日本",
+            "count": 153
+        },
+        {
+            "name": "畠山守",
+            "count": 119
+        },
+        {
+            "name": "小俣真一",
+            "count": 99
+        },
+        {
+            "name": "辉夜大小姐想让我告白",
+            "count": 80
+        },
+        {
+            "name": "续作",
+            "count": 68
+        },
+        {
+            "name": "神作",
+            "count": 55
+        },
+        {
+            "name": "喜剧",
+            "count": 47
+        },
+        {
+            "name": "赤坂明",
+            "count": 40
+        },
+        {
+            "name": "赤坂アカ",
+            "count": 36
+        },
+        {
+            "name": "2022年",
+            "count": 33
+        },
+        {
+            "name": "恋爱喜剧",
+            "count": 28
+        },
+        {
+            "name": "辉夜大小姐",
+            "count": 22
+        },
+        {
+            "name": "狗粮",
+            "count": 19
+        },
+        {
+            "name": "季番",
+            "count": 16
+        },
+        {
+            "name": "辉夜",
+            "count": 16
+        },
+        {
+            "name": "纯爱",
+            "count": 16
+        },
+        {
+            "name": "A-1_Pictures",
+            "count": 15
+        },
+        {
+            "name": "动画",
+            "count": 14
+        }
+    ],
+    "meta_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        66899,
+        66900,
+        67408,
+        67409,
+        69198
+    ],
+    "main_characters": [
+        {
+            "id": 66899,
+            "name": "四宮かぐや",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9e/72/66899_crt_kNOM3.jpg?r=1547389516",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/72/66899_crt_kNOM3.jpg?r=1547389516",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/72/66899_crt_kNOM3.jpg?r=1547389516",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9e/72/66899_crt_kNOM3.jpg?r=1547389516"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19606,
+                    "name": "古賀葵",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/39/93/19606_prsn_TEs83.jpg?r=1576158151",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/93/19606_prsn_TEs83.jpg?r=1576158151",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/93/19606_prsn_TEs83.jpg?r=1576158151",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/39/93/19606_prsn_TEs83.jpg?r=1576158151"
+                    },
+                    "short_summary": "日本の女性声優。佐賀県出身。\r\n2014年3月代々木アニメーション学院福岡校を卒業後、81プロデュース所属。\r\n\r\n9歳ごろ、アニメを見ていて、その番組後に声優のアフレコ現場を紹介するような番組から声優と職業を知り、声を使う仕事をやってみたいと思う。中学生ごろから、自分を表現することや意見をいうのが苦手であったことが嫌で、役を通じていろんな自分を表現することができるというきっかけで声優の道を目指した。高校卒業後、電車で佐賀から代々木アニメーション学院福岡校に通う。単身上京し、81ACTOR'S STUDIOに通い、81プロデュース所属。お金がなかった時期には、ご飯にポン酢をかけて食べてたこともある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 66900,
+            "name": "白銀御行",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ca/44/66900_crt_26nTL.jpg?r=1545567638",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/44/66900_crt_26nTL.jpg?r=1545567638",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/44/66900_crt_26nTL.jpg?r=1545567638",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ca/44/66900_crt_26nTL.jpg?r=1545567638"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 12483,
+                    "name": "古川慎",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/15/71/12483_prsn_pXYzu.jpg"
+                    },
+                    "short_summary": "古川 慎（ふるかわ まこと、1989年9月29日 - ）は、日本の男性声優。トイズファクトリー所属。\r\n熊本県出身。福岡スクールオブミュージック専門学校卒業。\r\n\r\n5歳の時に見た『新機動戦記ガンダムW』のヒイロ・ユイを充てた緑川光の声に憧れたことで声優への興味を持つようになった。その後中学生時代にスカパーのアニメ専門チャンネルを見てアニメ好きになったという。\r\n高校生の時、友達からもらった専門学校のパンフレットに緑川光が特別講師としてくることを見て、挑戦してみようと思い専門学校に通い始めた。\r\n\r\n趣味は雑貨屋めぐり、神社や寺などのパワースポットを巡ること。\r\n一番好きな食べ物はお好み焼き。キュウリとカリフラワーが苦手。\r\n好きなアーティストはL'Arc〜en〜Ciel、Mr.Children、ゴスペラーズ、GRANRODEO、BUMP OF CHICKEN。\r\n\r\n2011年にWebアニメ「武装中学生」吉野サトシ役で声優デビュー。\r\n2012年にアルバイトでPS3専用ソフト「白騎士物語」のモーションアクターを演じた経験を持つ。\r\n2016年、7月より声優の小林裕介と共にパーソナリティを務めるラジオ『なんでもヒーロー！ ゆっけとまーぼー』の放送を開始。\r\n2017年10月に開催された、初バースデーイベント「古川慎　秋の収穫祭2017」にて、2018年アーティスト活動を開始することを発表。\r\n2018年7月、Lantisより歌手デビュー。同年8月31日、6年間所属していたスペースクラフト・エンタテインメントを退所し、フリーでの活動期間を経て同年12月1日、トイズファクトリーに所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 67408,
+            "name": "藤原千花",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/38/34/67408_crt_ND0h8.jpg?r=1547508126",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/34/67408_crt_ND0h8.jpg?r=1547508126",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/34/67408_crt_ND0h8.jpg?r=1547508126",
+                "grid": "https://lain.bgm.tv/pic/crt/g/38/34/67408_crt_ND0h8.jpg?r=1547508126"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 27194,
+                    "name": "小原好美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844"
+                    },
+                    "short_summary": "日本女性配音员、演员。大泽事务所所属。\r\n\r\n国中时开始喜欢动画，并想要成为声优。高中毕业后进入Human Academy综合学园。2012年开始当了两年的演员，之后加入大泽事务所。\r\n\r\n2017年7月起3个月间在长寿电台节目《Radio Dottoai》就任第71代主持人。\r\n\r\n2017年4月至6月播出的《月色真美》中初次担任主演。同年7月播出《咕噜咕噜魔法阵 (2017年版)》中担演女主角而掀起话题，并与共同主演的石上静香主持同名动画的广播节目。同年11月10日Instagram开设。\r\n\r\n2019年于《Star☆Twinkle 光之美少女》中第一次出演光之美少女系列。同年4月，由文化放送“超！A&G+”制作的广播节目《小原好美のココロおきなく》开播，5月开设节目官方Twitter。2020年3月，该广播节目获得第6届Aniradi Award“BEST COMFORT RADIO 疗愈电台奖”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 67409,
+            "name": "石上優",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/17/ff/67409_crt_7MyY9.jpg?r=1545567685",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/ff/67409_crt_7MyY9.jpg?r=1545567685",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/ff/67409_crt_7MyY9.jpg?r=1545567685",
+                "grid": "https://lain.bgm.tv/pic/crt/g/17/ff/67409_crt_7MyY9.jpg?r=1545567685"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 30620,
+                    "name": "鈴木崚汰",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7f/7c/30620_prsn_037Bn.jpg?r=1723962282",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/7c/30620_prsn_037Bn.jpg?r=1723962282",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/7c/30620_prsn_037Bn.jpg?r=1723962282",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7f/7c/30620_prsn_037Bn.jpg?r=1723962282"
+                    },
+                    "short_summary": "日本の男性声優。愛知県出身。日本ナレーション演技研究所出身。ヴィムス所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 69198,
+            "name": "伊井野ミコ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/02/5a/69198_crt_9chtt.jpg?r=1590778597",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/5a/69198_crt_9chtt.jpg?r=1590778597",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/5a/69198_crt_9chtt.jpg?r=1590778597",
+                "grid": "https://lain.bgm.tv/pic/crt/g/02/5a/69198_crt_9chtt.jpg?r=1590778597"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 20701,
+                    "name": "富田美憂",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023"
+                    },
+                    "short_summary": "富田 美憂（とみた みゆ、1999年11月15日 - ）は、日本の女性声優。アミューズ所属。埼玉県出身。\r\n\r\n小学生の時にテレビアニメ『ヴァンパイア騎士』を見て、声優業に興味を持った。その際にこの作品に出演していた宮野真守にも憧れを持ったと語っている。\r\n第一回「アニ☆たん!」ではファイナリストとなり6社にスカウトされ、同時期に開催された「2014声優アーティスト育成プログラム・セレクション」でグランプリを獲得した。\r\nデビュー作は2015年のテレビアニメ『干物妹！うまるちゃん』のタイヘイ（幼少期）役である。2016年、『アイカツスターズ！』の虹野ゆめ役で初主演。\r\n2018年、声優ユニットを中心としたメディアミックス企画『Kleissis』の林堂アキラ役に選ばれる。\r\n\r\n高校では漫画研究部に所属していた。好きな教科は英語と美術だと語っている。\r\n趣味・特技はイラストを描くこと、ゲーム、空手。空手では上段回し蹴りが得意であり、ゲームでは、『うたの☆プリンスさまっ♪』『薄桜鬼』などの乙女ゲームが好きである。\r\n歌うこと、踊ること、ディズニーが好きである。\r\n好きな食べ物は、りんご、栗。\r\n狼、犬、ホワイトタイガーなど虫以外の動物全般を好きだと語っており、チャップという名前の犬を飼っている。\r\n「自分を一言で言うと…」の質問に「挙動不審」だと答えている。また、好きな言葉には「考えるよりチャレンジ！」をあげている。\r\n原作のある作品の場合は原作を読み込んで、キャラクターの考え方や行動を理解してからオーディションに臨んでいると語っている。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

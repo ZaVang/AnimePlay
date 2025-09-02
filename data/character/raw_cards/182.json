@@ -1,0 +1,56 @@
+{
+    "id": 182,
+    "name": "半井摩子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4c/5b/182_e74a8f110656874902f07378009_QlS44.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/5b/182_e74a8f110656874902f07378009_QlS44.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/5b/182_e74a8f110656874902f07378009_QlS44.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4c/5b/182_e74a8f110656874902f07378009_QlS44.jpg"
+    },
+    "summary": "半井摩子\r\n(なからい まこ)\r\n通称：ナカマ\r\n(声：井口裕香)\r\n中学１年",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "なからい まこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nakarai Mako"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ナカマ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "150"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 9
+    },
+    "anime_ids": [
+        467
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": 20487,
+    "name": "スザンナ・ホプキンス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/34/23/20487_crt_49bCX.jpg?r=1749438425",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/34/23/20487_crt_49bCX.jpg?r=1749438425",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/34/23/20487_crt_49bCX.jpg?r=1749438425",
+        "grid": "https://lain.bgm.tv/pic/crt/g/34/23/20487_crt_49bCX.jpg?r=1749438425"
+    },
+    "summary": "外国留学生，一般被社友称作「スー」或者「スージー」，是只金发萝莉。有一定的日语功底，喜欢日本AC，能灵活运用动漫出现的梗。喜欢亲近荻上。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "苏珊娜·霍普金斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "苏西"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Susanna Hopkins"
+                },
+                {
+                    "k": "昵称",
+                    "v": "スー / スージー/ 苏"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 27,
+        "collects": 108
+    },
+    "anime_ids": [
+        71802
+    ]
+}

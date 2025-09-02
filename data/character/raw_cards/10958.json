@@ -1,0 +1,53 @@
+{
+    "id": 10958,
+    "name": "天草シノ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d2/4e/10958_crt_sQC2p.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/4e/10958_crt_sQC2p.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/4e/10958_crt_sQC2p.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d2/4e/10958_crt_sQC2p.jpg"
+    },
+    "summary": "学生会会长。课业、运动、家务方面都很完美，不管什么事情都非常认真且照顾人，是个容貌秀丽、外貌得体的少女，在督导学生方面也不怠惰，有着孩子气的一面，非常喜欢可爱的小动物。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "天草筱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あまくさ しの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Amakusa Shino"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月12日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 12,
+    "stat": {
+        "comments": 21,
+        "collects": 234
+    },
+    "anime_ids": [
+        85204,
+        5649
+    ]
+}

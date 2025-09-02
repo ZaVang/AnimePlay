@@ -1,0 +1,44 @@
+{
+    "id": 21839,
+    "name": "コウサカ・チナ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9a/d7/21839_crt_7kzk9.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/d7/21839_crt_7kzk9.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/d7/21839_crt_7kzk9.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9a/d7/21839_crt_7kzk9.jpg"
+    },
+    "summary": "私立圣凤学园中等部1年级生，班长兼美术部会员。老家为“高坂”餐厅。 受到热衷于制作高达模型的伊织诚感染，逐渐对高达模型战斗产生兴趣。个性谨慎而理性。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高坂千奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Kosaka・Cina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 22
+    },
+    "anime_ids": [
+        77171
+    ]
+}

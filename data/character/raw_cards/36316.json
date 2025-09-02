@@ -1,0 +1,72 @@
+{
+    "id": 36316,
+    "name": "宮尾美也",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c5/96/36316_crt_7pazo.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/96/36316_crt_7pazo.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/96/36316_crt_7pazo.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c5/96/36316_crt_7pazo.jpg"
+    },
+    "summary": "不管怎么说那粗眉毛都是十分惹人注目的17岁～。被大家亲切地叫做「喵咪呀（みゃおみゃ）」～。 \r\n\r\n有着既不好也不坏的我行我素的性格，说话总是会在句尾加个「～」拖长调～。竟然能把制作人认成偶像也真是把天然呆发挥到极致了～。 \r\n\r\n还有着不论何时何地只要闭上眼睛，3秒以内就能睡着的，让野比大雄也甘拜下风的特技～！。即使是说话时也可以睡着！如果她出现在睡眠产品的广告中的话那肯定会有帮助～。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宫尾美也"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みやお みや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Miyao Miya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月24日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "体重",
+            "value": "46kg"
+        },
+        {
+            "key": "BWH",
+            "value": "84-58-83"
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 24,
+    "stat": {
+        "comments": 18,
+        "collects": 23
+    },
+    "anime_ids": [
+        309807
+    ]
+}

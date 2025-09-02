@@ -1,0 +1,90 @@
+{
+    "id": 10843,
+    "name": "白兔糖",
+    "image_path": "data/images/anime/10843.jpg",
+    "points": 8.0,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "30岁的单身男大吉在外公的葬礼上遇到了从未谋面的6岁小女孩凛。而这个孩子竟然是外公的私生子，知道这一事实后的大吉十分震惊。亲戚们表面上在讨论收养凛的事宜，实际上却在互相推卸责任，实在看不下去的大吉毅然做出了收养的决定。充满正义感却又冒冒失失的大吉，与虽然是个孩子却隐藏着坚强内心的小女孩凛。二个人开始了他们磕磕绊绊、同心协力的同居生活。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 11,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2011-07-07",
+    "rating_rank": 247,
+    "rating_score": 8.0,
+    "rating_total": 8040,
+    "main_character_ids": [
+        13396,
+        13397
+    ],
+    "main_characters": [
+        {
+            "id": 13396,
+            "name": "鹿賀りん",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0e/fe/13396_crt_MzV38.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/fe/13396_crt_MzV38.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/fe/13396_crt_MzV38.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0e/fe/13396_crt_MzV38.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7134,
+                    "name": "松浦愛弓",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1d/d9/7134_prsn_hvF6o.jpg?r=1686939827",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/d9/7134_prsn_hvF6o.jpg?r=1686939827",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/d9/7134_prsn_hvF6o.jpg?r=1686939827",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1d/d9/7134_prsn_hvF6o.jpg?r=1686939827"
+                    },
+                    "short_summary": "日本の女優、元子役、声優。神奈川県出身。ATプロダクション所属。\r\n\r\n2002年8月に1歳1か月でテアトルアカデミーに入学。\r\n2010年ころより声優としても活動開始。映画『くまのがっこう〜ジャッキーとケイティ〜』で主役ジャッキーの声を担当。\r\n2022年4月よりATプロダクション所属になる。\r\n特技はピアノ、水泳、ボルダリング。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13397,
+            "name": "河地大吉",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3f/d2/13397_crt_lcENB.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/d2/13397_crt_lcENB.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/d2/13397_crt_lcENB.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3f/d2/13397_crt_lcENB.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4855,
+                    "name": "土田大",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b8/a0/4855_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/a0/4855_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/a0/4855_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b8/a0/4855_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "土田 大（つちだ ひろし、1972年2月8日 - ）は、東京都出身の男性俳優、声優、ナレーターである。81プロデュース所属。\r\n\r\n1994年、スーパー戦隊シリーズ第18作・『忍者戦隊カクレンジャー』でサイゾウ / ニンジャブルー役でデビュー、多くの人に知られるようになる。舞台俳優、1990年代末から声優をメインに活動している。\r\n特技は殺陣と歌。\r\n吹き替えではジョセフ・ゴードン＝レヴィットを担当している。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

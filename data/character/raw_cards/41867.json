@@ -1,0 +1,44 @@
+{
+    "id": 41867,
+    "name": "ネロ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/90/48/41867_crt_6f6r7.jpg?r=1463649997",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/48/41867_crt_6f6r7.jpg?r=1463649997",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/48/41867_crt_6f6r7.jpg?r=1463649997",
+        "grid": "https://lain.bgm.tv/pic/crt/g/90/48/41867_crt_6f6r7.jpg?r=1463649997"
+    },
+    "summary": "瓦内蒂家族的首领·文森特的儿子。性格明朗阳光，比起什么都要看重家族。重情重义，对反叛者丝毫不留情。阿维利奥的复仇对象的其中一人。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "尼禄"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Nero"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 13
+    },
+    "anime_ids": [
+        175198
+    ]
+}

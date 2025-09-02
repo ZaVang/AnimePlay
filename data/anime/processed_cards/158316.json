@@ -1,0 +1,154 @@
+{
+    "id": 158316,
+    "name": "灵能百分百",
+    "image_path": "data/images/anime/158316.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "　　平凡的中学二年级少年影山茂夫，因其微弱的存在感与名字茂夫的谐音被周遭人称为龙套（モブ），但不起眼的他其实是强大的天生超能力者。历经每一次的成长，龙套开始认为自己的超能力是危险的存在，为了不让超能力失控，龙套无意识的压抑著情感。虽然只想平凡的度过每一天，但各种麻烦却接二连三找上他，随着被压抑的情感在内心一点点膨胀，龙套体内积累的力量似乎也正蠢蠢欲动......",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2016-07-11",
+    "rating_rank": 381,
+    "rating_score": 7.8,
+    "rating_total": 14673,
+    "main_character_ids": [
+        37114,
+        37115,
+        37116,
+        37117
+    ],
+    "main_characters": [
+        {
+            "id": 37114,
+            "name": "影山茂夫",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/89/67/37114_crt_i2CI5.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/89/67/37114_crt_i2CI5.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/89/67/37114_crt_i2CI5.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/89/67/37114_crt_i2CI5.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 21438,
+                    "name": "伊藤節生",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/03/a8/21438_prsn_h6ecH.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/a8/21438_prsn_h6ecH.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/a8/21438_prsn_h6ecH.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/03/a8/21438_prsn_h6ecH.jpg"
+                    },
+                    "short_summary": "AIR AGENCY所属声优。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 37115,
+            "name": "霊幻新隆",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7c/c7/37115_crt_yB5EM.jpg?r=1465897094",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/c7/37115_crt_yB5EM.jpg?r=1465897094",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/c7/37115_crt_yB5EM.jpg?r=1465897094",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7c/c7/37115_crt_yB5EM.jpg?r=1465897094"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4015,
+                    "name": "櫻井孝宏",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/06/29/4015_prsn_4TZox.jpg?r=1638448222"
+                    },
+                    "short_summary": "爱知县冈崎市老家的本业是米店，店名为“樱井米谷店”，在当地小有名气。\r\n初中时的一个冬天，怕冷的他擅自把酒精灯里的液体倒在理科实验室的桌子上，点起火取暖，引响了火灾报警器，被赶来的老师狠狠教训了一顿。于是在老师的国语课上捣乱报复，夸张地朗读课文，实在听不过去的老师求他：“拜托，别念得跟声优似的好不好！”——这话对那时的樱井冲击很大，给他留下了声优不过是连小孩子都做得来的简单工作的印象。所以高中毕业后，乐得找轻松的樱井选择进入东京的声优专科学校。待迈入这一行，他才吐血地发现，且不说成为佼佼者，就是普通从业者也得掌握高超的专业技巧。\r\n2005年8月《最终幻想VII：降临之子》于第62届威尼斯影展参展。樱井以担任主角配音的身份，成为继山寺宏一后第2位踏上星光大道的日本籍声优。\r\n虽然戴着眼镜，可是樱井二眼视力皆为2.0，植田佳奈笑称那是“骗人眼镜”。那付眼镜的意义是“梦想与希望与对声迷们的爱”。\r\n最初的错误是BL DRAMA制作社Inter communications（inter桑）的一张drama的BK上打成了樱井考宏，之后《无法逃离的背叛》某个活动的官方网站上亦把樱井孝宏的名字写成“樱井考宏”，所以有昵称考哥，而并非是他的名字中的“孝”字与“考”字很像才有此外号。\r\n桜井(sakurai)，桜井さん（sakurai san），sakura i san，樱13",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 37116,
+            "name": "エクボ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6b/51/37116_crt_bRSOy.jpg?r=1465897250",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/51/37116_crt_bRSOy.jpg?r=1465897250",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/51/37116_crt_bRSOy.jpg?r=1465897250",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6b/51/37116_crt_bRSOy.jpg?r=1465897250"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3832,
+                    "name": "大塚明夫",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/18/8c/3832_prsn_O1E5c.jpg?r=1545044333"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーター。マウスプロモーション所属。\r\n父は同じく俳優・声優の大塚周夫、元妻は声優の沢海陽子。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 37117,
+            "name": "影山律",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b5/06/37117_crt_2PiPd.jpg?r=1465897311",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/06/37117_crt_2PiPd.jpg?r=1465897311",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/06/37117_crt_2PiPd.jpg?r=1465897311",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b5/06/37117_crt_2PiPd.jpg?r=1465897311"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4258,
+                    "name": "入野自由",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/49/47/4258_prsn_99973.jpg?r=1552624013",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/47/4258_prsn_99973.jpg?r=1552624013",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/47/4258_prsn_99973.jpg?r=1552624013",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/49/47/4258_prsn_99973.jpg?r=1552624013"
+                    },
+                    "short_summary": "日本の男性声優、俳優、歌手。ジャンクション所属。既婚。\r\n\r\n両親と観に行った劇団四季の舞台に興味を持ったことがきっかけで、4歳の時劇団ひまわりに入団し、その2年後に歴史ドラマ『コルチャック先生』（原題：Korczak）の幼い少年役を演じ俳優デビュー。同劇団には2006年3月まで所属し、ジャンクションへ移籍。\r\n\r\n声優デビュー作は『逮捕しちゃうぞ』のショウ役で、楽しかったことを覚えているという。2001年に公開された『千と千尋の神隠し』（日本歴代興行収入第2位）でメインキャラクターのハク役のオーディションに合格する。同年『パラッパラッパー』のパラッパ（初代）役でテレビアニメ初主演を果たし、2002年の『キングダム ハーツ』で主役のソラを演じ知名度を広げた。2012年時点で芸歴20年を重ねており、2011年頃のインタビューでは「昔は年上ばっかりだったが、最近は自分と同年代の人と共演することが増えた」と語っている。\r\n\r\n2009年6月24日、Kiramuneレーベルから歌手デビュー。\r\n\r\n2010年、明治学院大学経済学部経営学科卒業。同年5月11日、Kiramuneレーベル内新ユニットとして、神谷浩史と「KAmiYU」を結成し、11月6日にデビュー。\r\n\r\n2016年11月30日、翌年1月のソロライブを最後に海外留学のため、活動を一時休業することをブログで発表。\r\n\r\n2021年9月3日、所属事務所ジャンクションの公式サイトにて結婚を報告した。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

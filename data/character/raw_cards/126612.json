@@ -1,0 +1,61 @@
+{
+    "id": 126612,
+    "name": "花園羽香里",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e6/c6/126612_crt_N87S4.jpg?r=1704905145",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/c6/126612_crt_N87S4.jpg?r=1704905145",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/c6/126612_crt_N87S4.jpg?r=1704905145",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e6/c6/126612_crt_N87S4.jpg?r=1704905145"
+    },
+    "summary": "恋太郎の彼女の一人。魅惑的なプロポーションながら品行方正。だが実際は計算高い策士で、時には頭の中がピンク過ぎて策に溺れることも。根は真面目で、恋太郎以外にも常に想いやりを絶やさない。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "花园羽香里"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "花園 羽香里"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はなぞの はかり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hanazono Hakari"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月22日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://hyakkano.com/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 22,
+    "stat": {
+        "comments": 69,
+        "collects": 199
+    },
+    "anime_ids": [
+        471793,
+        424379
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "id": 309,
+    "name": "高坂真琴",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ed/de/309_DfXHy.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/de/309_DfXHy.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/de/309_DfXHy.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ed/de/309_DfXHy.jpg"
+    },
+    "summary": "重度御宅族，有跟御宅族形象無關的帥氣長相，格鬥遊戲無人能敵，尤其喜歡聖騎士之戰，與青梅竹馬的春日部咲交往中，但是ACG還是其第一順位。有cosplay經歷（漫畫版cos不籤的橘泉美，而動畫版則是cos不籤二期的秋山時乃），甚至比真正的女孩還上相。缺點是從來不會考慮他人的感受以及不會手下留情，即使與女朋友春日部咲對打遊戲時亦然。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "生日",
+            "value": "1984年2月2日"
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Kousaka Makoto"
+                },
+                {
+                    "k": "日文名",
+                    "v": "高坂真琴"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "简体中文名",
+            "value": "高坂真琴"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 2,
+    "birth_year": 1984,
+    "birth_mon": 2,
+    "birth_day": 2,
+    "stat": {
+        "comments": 7,
+        "collects": 11
+    },
+    "anime_ids": [
+        1219,
+        928
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "id": 7254,
+    "name": "銭形幸一",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a7/07/7254_crt_CMERs.jpg?r=1744607981",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/07/7254_crt_CMERs.jpg?r=1744607981",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/07/7254_crt_CMERs.jpg?r=1744607981",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a7/07/7254_crt_CMERs.jpg?r=1744607981"
+    },
+    "summary": "东京警视厅的警察，警衔为警部，国际刑警组织鲁邦专任搜查官。碍于工作非得逮捕鲁邦不成，同时也将鲁邦视为对手，一心只想赢过鲁邦。\r\n据说他抱持单身主义，不过却总是拒绝不了女人。\r\n警署中一等一的高手，实力不容小觑，却总是抓不到鲁邦。虽然抓不到鲁邦，不过能一直掌握到鲁邦的行踪，追着他跑的人唯有钱形一人而已。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "钱形幸一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "钱形警部"
+                },
+                {
+                    "v": "銭形警部"
+                },
+                {
+                    "k": "日文名",
+                    "v": "銭形幸一"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ぜにがた こういち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Zenigata Kouichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1938年12月25日"
+        },
+        {
+            "key": "身高",
+            "value": "181cm"
+        },
+        {
+            "key": "体重",
+            "value": "73kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1938,
+    "birth_mon": 12,
+    "birth_day": 25,
+    "stat": {
+        "comments": 5,
+        "collects": 21
+    },
+    "anime_ids": [
+        115661,
+        36359,
+        219164,
+        84991
+    ]
+}

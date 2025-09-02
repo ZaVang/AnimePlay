@@ -1,0 +1,48 @@
+{
+    "id": 172769,
+    "name": "モコ太郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/12/f5/172769_crt_1q78Q.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/f5/172769_crt_1q78Q.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/f5/172769_crt_1q78Q.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/12/f5/172769_crt_1q78Q.jpg"
+    },
+    "summary": "グルメ系動画配信「モコ太郎飯をくらう」の人気キャラクター。\r\n美味しいものを食べるため、全国各地を飛び回っている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "摩诃太郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "モコ太郎"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "モコたろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mokotarō"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 15,
+        "collects": 2
+    },
+    "anime_ids": [
+        531159
+    ]
+}

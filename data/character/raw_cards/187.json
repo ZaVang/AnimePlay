@@ -1,0 +1,56 @@
+{
+    "id": 187,
+    "name": "矢村大一",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/31/fe/187_c0e570cb3860f2a6d4b38c6490d_13Y0h.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/31/fe/187_c0e570cb3860f2a6d4b38c6490d_13Y0h.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/31/fe/187_c0e570cb3860f2a6d4b38c6490d_13Y0h.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/31/fe/187_c0e570cb3860f2a6d4b38c6490d_13Y0h.jpg"
+    },
+    "summary": "矢村大一\r\n(やむら だいいち)\r\n通称：ダイチ\r\n(声：杉田智和）\r\n中学１年",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "身高",
+            "value": "150"
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Yamura Daiichi"
+                },
+                {
+                    "k": "日文名",
+                    "v": "矢村大一"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 2
+    },
+    "anime_ids": [
+        467
+    ]
+}

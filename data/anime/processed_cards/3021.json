@@ -1,0 +1,180 @@
+{
+    "id": 3021,
+    "name": "精灵宝可梦 钻石&珍珠",
+    "image_path": "data/images/anime/3021.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "小光是一个住在神奥地方的10岁女孩儿。今天是她以新人训练家的身份出去冒险旅行的值得纪念的日子。首先，为了得到最初的宝可梦，小光以隔壁城镇的宝可梦研究所为目标出发，然而却完全迷了路。\r\n正巧这个时候，研究所里新人用神奇宝贝草苗龟、小火焰猴、波加曼开始打架引起了大骚乱！而且，宝可梦们从研究所逃了出来，这下子事态更加严重了！历经风波的小光的启程，究竟会变成怎么样呢！？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 191,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "游戏改"
+    ],
+    "date": "2006-09-28",
+    "rating_rank": 607,
+    "rating_score": 7.7,
+    "rating_total": 1346,
+    "main_character_ids": [
+        2010,
+        6154,
+        12816,
+        14541,
+        14547,
+        126501
+    ],
+    "main_characters": [
+        {
+            "id": 2010,
+            "name": "サトシのピカチュウ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/02/94/2010_crt_7rr33.jpg?r=1720977703",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/94/2010_crt_7rr33.jpg?r=1720977703",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/94/2010_crt_7rr33.jpg?r=1720977703",
+                "grid": "https://lain.bgm.tv/pic/crt/g/02/94/2010_crt_7rr33.jpg?r=1720977703"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3906,
+                    "name": "大谷育江",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/27/b6/3906_prsn_xa7NA.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/b6/3906_prsn_xa7NA.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/b6/3906_prsn_xa7NA.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/27/b6/3906_prsn_xa7NA.jpg"
+                    },
+                    "short_summary": "优点是好奇心旺盛。\r\n    兴趣是泡香草浴、读书。\r\n    特技是英语的发音和日本舞蹈。\r\n    喜欢的颜色是白色、粉红色、黑色。\r\n\r\n主要是为少年、少女配音，在一个作品里配一个以上的角色也是有的。在《深渊传奇》中就分别配了伊恩(诚实)、新库(愤怒)、芙萝利安(纯洁)三种个性不同的角色。\r\n\r\n被说是演技声音广泛的其中一名声优。\r\n\r\n由于皮卡丘的声音是全世界共通的，所以就算不知道“大谷育江”这个人名，只要一听到是“皮卡丘的声音”大家就知道了。\r\n\r\n不太记得起来人的名字。\r\n\r\n小学和国中的时候认为加入排球部可以长高吧，就入社了。\r\n\r\n第六届（2011年度）声优奖Kid's Family赏的得奖者（キッズ・ファミリー賞）。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6154,
+            "name": "サトシ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a5/b5/6154_crt_HWSVh.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/b5/6154_crt_HWSVh.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/b5/6154_crt_HWSVh.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a5/b5/6154_crt_HWSVh.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4205,
+                    "name": "松本梨香",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/22/78/4205_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/78/4205_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/78/4205_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/22/78/4205_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本女性配音员、演员、歌手。出身于神奈川县横滨市。\r\n株式会社Matsurica社长、代代木动画学院声优艺人科特别讲师。\r\n\r\n经历\r\n松本梨香的父亲是大众戏剧团团长，因此从小她自己也以舞台演员为目标。但是由于哥哥的去世和自己本身有疾病缠身而无法登上舞台公演，最后因为担心而打消了念头。\r\n后来，松本受到前辈名古屋章的推荐下，参加1988年电视动画《小松君》的角色试音，结果成为她的配音出道作。之后更在1991年电视动画《绝对无敌雷神王》第一次得到主演的机会，从此她多为充满朝气活力的小男孩献声，而最为人熟知的配音作品即是《精灵宝可梦》系列主角小智。除了日本动画外，她还有为珊卓·布拉克、朱丽叶特·刘易斯、茱儿·芭莉摩、帕特里夏·阿奎特等美国现役女星进行日语配音。\r\n歌手活动方面，2000年7月起，她与水木一郎、影山浩宣、坂本英三、远藤正明共5人结成“JAM Project”。同时是首位为“超人力霸王”唱片尾曲和“假面骑士”系列唱主题曲的女歌手。另外与市川吉之、古道圭一组成“TRiCYCLE”，担任过乐团主唱。单曲“目标是精灵宝可梦大师”顺着精灵宝可梦的热潮，创下了发售185万张的纪录，这也是松本唯一破百万销量的声优音乐作品。\r\n2008年4月7日，暂时从JAM Project的活动中退出。\r\n2015年1月5日，宣布离开所属20年的Sunmusic Production，成为自由身。同年4月1日加入amuleto。\r\n2016年12月1日，再度宣布已于11月30日离开amuleto，又成为自由身。\r\n2018年5月16日（父亲去世的这一天），自行就任社长，成立个人事务所“株式会社Matsurica”专门进行演艺事业管理。\r\n2019年3月1日，松本演唱的歌曲‘目标是精灵宝可梦大师’从平成动画歌曲大赏作品赏（1989年 - 1999年）中选出。\r\n同年10月21日，受邀任命担任“日本酷大使（クールジャパン·アンバサダー）”。\r\n\r\n个人生活\r\n兴趣有旅行（温泉巡礼）。特长是日本舞、画图、掷标枪。拿手的运动有排球、手球、游泳、滑雪（2级）。爱车是BMW318Ci 1995cc。\r\n此外同样是神奈川县出身的白鸟由里对她以“おやび～ん”作昵称，相反的松本泽对白鸟以“こびん”称呼。\r\n井上瑶去世后，松本继承了一些配音的角色（有《游☆戏☆王 怪兽之决斗》的獏良了、〈高达系列〉的Haro等）。另外，松本在她自己的出道作《小松君》曾经与井上共演（松本演松野六胞胎中的三男轻松；井上演长男、作品主角松野小松）。\r\n2018年12月22日开始在《声优ってなんだっけ》进行对谈（初回嘉宾：三矢雄二）。其意旨在对配音员有抱负的志愿者传达演技和表达的重要性。\r\n山寺宏一发出唐老鸭的声音是她所教出来的。\r\n在自身主演的动画《勇者传说达钢》的录音室现场有三支麦克风，其中有一支专门为松本调低了麦克风的音量。还有，她是发出声音时全身就会出声音的类型，只要一动就会发出说话的声音。\r\n\r\n与《精灵宝可梦（宝可梦）》有关的事\r\n自演出主角小智以来，让她印象深刻的剧情是无印时期的“再见巴大蝴”和钻石&珍珠时期的“终结的宿敌对战！小智对真司！”。\r\n当初，松本本来是参加小智的对手小茂的录音（小茂的声音由小林优子担当），但是试镜会结束后，工作人员建议她也来演小智的声音，就这样成为了自身长年担任的配音代表作。但是导演汤山邦彦说，松本是从一开始就被提名为小智声音的人选，外界似乎以为她先演小茂的角色所以才会入选而被误解。\r\n她的喉结是长年担任小智的声音而突起的。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 12816,
+            "name": "ヒカリ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/93/fe/12816_crt_YpB1d.jpg?r=1638640310",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/fe/12816_crt_YpB1d.jpg?r=1638640310",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/fe/12816_crt_YpB1d.jpg?r=1638640310",
+                "grid": "https://lain.bgm.tv/pic/crt/g/93/fe/12816_crt_YpB1d.jpg?r=1638640310"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3866,
+                    "name": "豊口めぐみ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7e/e4/3866_prsn_DXf7T.jpg?r=1657030254",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/e4/3866_prsn_DXf7T.jpg?r=1657030254",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/e4/3866_prsn_DXf7T.jpg?r=1657030254",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7e/e4/3866_prsn_DXf7T.jpg?r=1657030254"
+                    },
+                    "short_summary": "豊口 めぐみ（とよぐち めぐみ、1978年1月2日 - ）は、日本の女性声優、ナレーター。81プロデュース所属。\r\n東京都町田市出身。愛称は「めぐぅ」など。\r\n\r\n町田市立町田第三中学校、東京都立忠生高等学校、日本工学院八王子専門学校音響芸術科卒業。\r\n小学校高学年の頃、知り合いに薦められたアニメ『ドラゴンボール』にハマり、同作品でヤムチャ役を演じていた古谷徹のファンになる。中学2年生の頃、古谷が出演していた『ドラゴンクエスト』を見て、登場人物の物真似をするうちに、声優という仕事に興味を持つようになった。\r\n中学卒業後は親に声優の専門学校入学を志願するが、高校に行くように言われる。高校卒業後、声優を目指して日本工学院の声優の学科での入学を目指していたが、家族に反対される。声優に少しでも関われる仕事に就きたいと考え、ラジオスタッフになるべく音響芸術科に変更する。ラジオ番組制作の実習では、主にパーソナリティを担当することで喋りの練習を積み、後のラジオトークに生かされた。\r\n同校在学時、文化放送のラジオ番組『広井王子のマルチ天国』の火星ガールオーディションに応募する。中学時代からこの当時まで、いくつものをオーディションを不合格になっていたため、今回で受験を最後にするつもりであった。だが、グランプリを獲得し、ラジオにレギュラー出演を果たした。その後、同ラジオで共演した千葉繁の紹介で81プロデュースへ所属することになった。同期に千葉千恵巳や柚木涼香がいる。\r\n2007年には『カンナさん大成功です!』の主人公カンナ役の吹き替えをこなすなど、仕事の幅を広げている。翌2008年、『演劇バトルロワイヤル「ガンまげ」』に、声優として唯一ゲスト出演し、初舞台を踏む。\r\n劇作家・演出家の野坂実と演劇ユニット『東京ジャンケン』を旗揚げ。2013年5月に初公演。その後も公演中。\r\n2016年9月30日、事務所公式サイトにおいて、数年前に結婚していたことと、現在妊娠し出産準備に入るためしばらく休業することを発表した。\r\n\r\n甲高い声と低い声、その2種類の声色を使い分けている。前者は『ポケットモンスターダイヤモンド&パール』のヒカリ、後者は『ブラックラグーン』のレヴィが代表的。\r\n『キングダム ハーツ バース バイ スリープ』のアクアでは「女性らしい強い女性」を演じ、「アクアの人気が出たのは豊口さんのおかげ」とディレクターに言われるほどの当たり役となった。スクウェア・エニックスのゲームでは他に『ファイナルファンタジーX-2』『キングダム ハーツII』でパインとしても出演している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 14541,
+            "name": "オーキド・グリーン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/17/e9/14541_crt_kUPKu.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/e9/14541_crt_kUPKu.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/e9/14541_crt_kUPKu.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/17/e9/14541_crt_kUPKu.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 14547,
+            "name": "タケシ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6f/b6/14547_crt_mRF3a.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6f/b6/14547_crt_mRF3a.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6f/b6/14547_crt_mRF3a.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6f/b6/14547_crt_mRF3a.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4657,
+                    "name": "うえだゆうじ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c7/93/4657_prsn_MSooY.jpg?r=1657805481",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/93/4657_prsn_MSooY.jpg?r=1657805481",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/93/4657_prsn_MSooY.jpg?r=1657805481",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c7/93/4657_prsn_MSooY.jpg?r=1657805481"
+                    },
+                    "short_summary": "福岡縣出身。原本隸屬於ARTSVISION經紀公司，2004年7月1日起離開該公司，不能再以本名「上田祐司」做為藝名，因此就用其姓名發音的平假名「うえだゆうじ」作為現在的藝名，之後從2005年4月1日至2012年2月加入大澤事務所。現在為自由身。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 126501,
+            "name": "シンジ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/18/f4/126501_crt_6CCjj.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/f4/126501_crt_6CCjj.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/f4/126501_crt_6CCjj.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/18/f4/126501_crt_6CCjj.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

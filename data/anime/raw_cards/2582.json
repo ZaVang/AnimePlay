@@ -1,0 +1,345 @@
+{
+    "id": 2582,
+    "type": 2,
+    "name": "Serial Experiments Lain",
+    "name_cn": "玲音",
+    "summary": "岩仓玲音的同学四方田千砂自杀了。没有任何前兆的自杀事件让同学们不知所措，一周后，玲音收到了千砂的短信。明明已死的千砂居然以手机短信和玲音开始了交流。回到家，玲音用爸爸给她的电脑开始与千砂联系。当谈及为何自杀时，千砂回答说“因为我已经不需要身体了，没有身体，我可以在wired网络之间继续活着。”不解的玲音继续调查千砂的事件，发现wired网络之中隐藏的巨大秘密，玲音自己的身世也出现了谜团。玲音面对网络世界中的真相，耳边不断响起千砂的话“我生存在wired中，因为神在那里。”",
+    "nsfw": false,
+    "locked": false,
+    "date": "1998-07-06",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/7e/83/2582_9JJ3u.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/7e/83/2582_9JJ3u.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/7e/83/2582_9JJ3u.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/7e/83/2582_9JJ3u.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/7e/83/2582_9JJ3u.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "玲音"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "铃音",
+                    "k": null
+                },
+                {
+                    "v": "シリアルエクスペリメンツレイン",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "1998年7月6日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期一"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://www.nbcuni.co.jp/rondorobe/anime/lain/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京系列"
+        },
+        {
+            "key": "播放结束",
+            "value": "1998年9月28日"
+        },
+        {
+            "key": "导演",
+            "value": "中村隆太郎"
+        },
+        {
+            "key": "音乐",
+            "value": "仲井戸麗市 supporterd by たつのすけ"
+        },
+        {
+            "key": "Copyright",
+            "value": "©1998 Triangle Staff／PIONEER LDC"
+        },
+        {
+            "key": "企画",
+            "value": "production 2nd.[上田耕行]"
+        },
+        {
+            "key": "系列构成",
+            "value": "小中千昭"
+        },
+        {
+            "key": "脚本",
+            "value": "小中千昭"
+        },
+        {
+            "key": "人物原案",
+            "value": "安倍吉俊"
+        },
+        {
+            "key": "人物设定",
+            "value": "岸田隆宏"
+        },
+        {
+            "key": "色彩设计",
+            "value": "西表美智代"
+        },
+        {
+            "key": "音响监督",
+            "value": "鶴岡陽太"
+        },
+        {
+            "key": "音乐制作",
+            "value": "7th Mother、伊藤恵美、光遊社、J-WORKS；音乐制作协力：東芝EMI[EMI Music Japan]、ポリスター、フジパシフィック音楽出版[フジパシフィックミュージック]、テレビ東京ミュージック"
+        },
+        {
+            "key": "动画制作",
+            "value": "トライアングルスタッフ"
+        },
+        {
+            "key": "製作",
+            "value": "PIONEER LDC[パイオニアLDC]；协力：ジェンコ"
+        },
+        {
+            "key": "剪辑",
+            "value": "瀬山武司；助手：水田経子、内田恵、斉藤かおる"
+        },
+        {
+            "key": "录音",
+            "value": "はたしょうじ；录音工作室：東京テレビセンター"
+        },
+        {
+            "key": "录音助理",
+            "value": "田中文章"
+        },
+        {
+            "key": "音响",
+            "value": "楽音舎"
+        },
+        {
+            "key": "特效",
+            "value": "前川孝"
+        },
+        {
+            "key": "助理制片人",
+            "value": "井出美恵"
+        },
+        {
+            "key": "设定制作",
+            "value": "佐藤和治"
+        },
+        {
+            "key": "执行制片人",
+            "value": "真木太郎、川村明廣"
+        },
+        {
+            "key": "制片人",
+            "value": "ueda yasuyuki[上田耕行]、安部正次郎"
+        },
+        {
+            "key": "原案",
+            "value": "production 2nd.[上田耕行]"
+        }
+    ],
+    "volumes": 0,
+    "eps": 13,
+    "total_episodes": 13,
+    "rating": {
+        "rank": 377,
+        "total": 5637,
+        "count": {
+            "one": 14,
+            "two": 12,
+            "three": 18,
+            "four": 49,
+            "five": 111,
+            "six": 477,
+            "seven": 1347,
+            "eight": 1973,
+            "nine": 1146,
+            "ten": 490
+        },
+        "score": 7.8
+    },
+    "collection": {
+        "wish": 4896,
+        "collect": 7964,
+        "doing": 1154,
+        "on_hold": 880,
+        "dropped": 198
+    },
+    "tags": [
+        {
+            "name": "意识流",
+            "count": 1873
+        },
+        {
+            "name": "实验动画",
+            "count": 1344
+        },
+        {
+            "name": "TV",
+            "count": 1074
+        },
+        {
+            "name": "1998",
+            "count": 999
+        },
+        {
+            "name": "科幻",
+            "count": 956
+        },
+        {
+            "name": "原创",
+            "count": 933
+        },
+        {
+            "name": "赛博朋克",
+            "count": 737
+        },
+        {
+            "name": "Lain",
+            "count": 692
+        },
+        {
+            "name": "安倍吉俊",
+            "count": 568
+        },
+        {
+            "name": "内涵",
+            "count": 393
+        },
+        {
+            "name": "中村隆太郎",
+            "count": 355
+        },
+        {
+            "name": "庵野秀明八成也看不懂",
+            "count": 308
+        },
+        {
+            "name": "玲音",
+            "count": 204
+        },
+        {
+            "name": "TriangleStaff",
+            "count": 166
+        },
+        {
+            "name": "百合",
+            "count": 159
+        },
+        {
+            "name": "1998年7月",
+            "count": 91
+        },
+        {
+            "name": "小中千昭",
+            "count": 79
+        },
+        {
+            "name": "日本",
+            "count": 78
+        },
+        {
+            "name": "内涵系",
+            "count": 61
+        },
+        {
+            "name": "90年代",
+            "count": 31
+        },
+        {
+            "name": "电波",
+            "count": 31
+        },
+        {
+            "name": "トライアングルスタッフ",
+            "count": 31
+        },
+        {
+            "name": "Triangle",
+            "count": 26
+        },
+        {
+            "name": "神作",
+            "count": 19
+        },
+        {
+            "name": "STAFF",
+            "count": 18
+        },
+        {
+            "name": "SF",
+            "count": 17
+        },
+        {
+            "name": "1998年",
+            "count": 16
+        },
+        {
+            "name": "内涵片",
+            "count": 16
+        },
+        {
+            "name": "Triangle_Staff",
+            "count": 13
+        },
+        {
+            "name": "TVA",
+            "count": 13
+        }
+    ],
+    "meta_tags": [
+        "科幻",
+        "百合",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "series": false,
+    "main_character_ids": [
+        3496
+    ],
+    "main_characters": [
+        {
+            "id": 3496,
+            "name": "岩倉玲音",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0d/cc/3496_crt_tTekN.jpg?r=1722920559",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/cc/3496_crt_tTekN.jpg?r=1722920559",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/cc/3496_crt_tTekN.jpg?r=1722920559",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0d/cc/3496_crt_tTekN.jpg?r=1722920559"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3838,
+                    "name": "清水香里",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f2/6d/3838_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/6d/3838_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/6d/3838_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f2/6d/3838_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "清水 香里（しみず かおり、1983年5月21日 - ）は、日本の女性声優、女優、元子役。東京都出身。元THREE TREE所属。\r\n6歳から子役活動をはじめ、1998年に声優デビューする。\r\n\r\n経歴\r\n小学1年生の時、ナガサキヤのドラえもんのお菓子でCMデビューする。CMやドラマなどの出演を経て、中学3年生時の1998年にテレビアニメ『serial experiments lain』の岩倉玲音役で声優デビューする。アフレコ収録は同作のゲームの方が先であり、ゲームボイスが初めての声の演技となった。\r\n\r\n特色\r\nデビュー作では物静かな主人公・岩倉玲音を演じたが、その後は一転して姉御肌で気の強いキャラや、クールで凛々しいキャラなどを担当することが多くなっていった。一方、近年は『スーパーロボット大戦シリーズ』のラミア・ラヴレスのような本人が「おかしい役」と形容するような、やや変わり者の役柄を演じることも多い。\r\nデビュー時から2003年まではピュアハーツに所属していたが、その後、フリーの時期を経て、2008年8月より有限会社THREE TREEに所属。\r\n\r\n芸歴関連\r\n自身も出演したテレビアニメ『乃木坂春香の秘密』の原作小説第9巻において、ヴォイストレーニングやエチュード、声優ならではのエピソードを原作者・五十嵐雄策に提供した。なお、その中で、清水香里自身もN'sとして原作に登場している。\r\n年齢と比較して長い芸歴から、主要キャラの担当声優のほとんどが新人だった『僕等がいた』の収録現場では、自分とあまり年齢の違わない後輩たちにアフレコのノウハウをレクチャーしていた。経歴に加え、イベントやラジオ番組での落ち着いた司会ぶりから受ける印象から、声のみを知るアニメファン等からは、実年齢以上の年長者と間違われることもある。N'sのメンバーの中でも最年少であるが、『乃木坂春香の秘密』の共演者である羽多野渉や後藤麻衣からは敬語で話されている。\r\n\r\n交流関係\r\n2008年は植田佳奈とほぼ1年を共にした。また、桑谷夏子ともプライベートを共にしており、桑谷、植田と3姉妹（自身は三女）と称するほど、親密である。この他に親交のある人物として、生天目仁美、能登麻美子、小清水亜美、後藤麻衣、鷲崎健、新堀和男、福沢博文、小中千昭などがいる。\r\n\r\nプライベート\r\n「体育会系」で身体を動かすのが好きということもあり、スポーツジムに通っている。アイスホッケー観戦が好きと語っている。\r\n下戸であり、コップ1杯で顔が赤くなるとのこと。周りからは料理が下手な扱いを受けているが、作ることはできる。\r\nMr.Children、ゆずの大ファンでライブにも行っている。中学生の頃、和月伸宏『るろうに剣心』を愛読していた。\r\nアイドル時代に発売した写真集『Pure』が、発売から8年が経った2008年5月に、Amazon.co.jpにおいてデイリー、ヒットセラーとなった。女優の上原美佐と交友関係があり、上原が出演したドラマ『CHANGE』の第5話を視聴したことがある。\r\n2017年11月29日、ブログにて結婚を発表した。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

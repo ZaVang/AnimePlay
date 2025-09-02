@@ -1,0 +1,60 @@
+{
+    "id": 12004,
+    "name": "千葉紀梨乃",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bc/2a/12004_crt_uF2pf.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/2a/12004_crt_uF2pf.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/2a/12004_crt_uF2pf.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bc/2a/12004_crt_uF2pf.jpg"
+    },
+    "summary": "剑道社社长，是故事一开始实质存在的唯一社员。通称“纪梨乃”。\r\n从中学起就练剑道，打从心底热爱社团活动。性格活泼开朗所以交友广泛朋友众多，是带动剑道社气氛的领导者，像是姊姊一样照顾著社员，也深受社员的信任。性格上有时天然呆，有时却又聪明的一面，校内成绩优秀是全学年第20名，但却也做出把竹刀写成竹内的蠢事。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "千叶纪梨乃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "千葉 紀梨乃"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ちば きりの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Chiba Kirino"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 34
+    },
+    "anime_ids": [
+        1272
+    ]
+}

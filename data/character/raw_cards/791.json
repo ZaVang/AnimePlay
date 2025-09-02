@@ -1,0 +1,64 @@
+{
+    "id": 791,
+    "name": "ジャック・アトラス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a6/14/791_crt_BSJWy.jpg?r=1749912007",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/14/791_crt_BSJWy.jpg?r=1749912007",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/14/791_crt_BSJWy.jpg?r=1749912007",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a6/14/791_crt_BSJWy.jpg?r=1749912007"
+    },
+    "summary": "杰克・亚特拉斯拥有许多称号：王者，速度之王，还有龙印者。他是游星的好友，也是他的劲敌。高傲的杰克在击败游星并重夺骑乘决斗桂冠之前，绝对不会停下脚步。他的决斗风格是使用压倒性的力量击垮对手。他的王牌怪兽是传奇龙印者的龙“暗红恶魔龙”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "杰克・亚特拉斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Jack Atlas"
+                },
+                {
+                    "k": "称号",
+                    "v": "王者，速度之王，龙印者"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1月11日"
+        },
+        {
+            "key": "身高",
+            "value": "191cm"
+        },
+        {
+            "key": "体重",
+            "value": "72kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://www.yugioh.com/characters/jack-atlas"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 11,
+    "stat": {
+        "comments": 11,
+        "collects": 10
+    },
+    "anime_ids": [
+        1609
+    ]
+}

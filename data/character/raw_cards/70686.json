@@ -1,0 +1,35 @@
+{
+    "id": 70686,
+    "name": "ファトマ・トゥレ・グットウ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/41/a7/70686_crt_P1W65.jpg?r=1706196042",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/a7/70686_crt_P1W65.jpg?r=1706196042",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/a7/70686_crt_P1W65.jpg?r=1706196042",
+        "grid": "https://lain.bgm.tv/pic/crt/g/41/a7/70686_crt_P1W65.jpg?r=1706196042"
+    },
+    "summary": "エチオピア人。元オリンピック女子マラソンの銀メダリストでアフリカ女性初の月面到達者。月面で事故に巻き込まれたところをロストマン率いる宇宙軍に救われ、やがて彼の右腕的存在となる。自らの命を救ったロストマンに心酔し、彼のためならばどんな犠牲も厭わない思い込みの激しさを見せる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        2732
+    ]
+}

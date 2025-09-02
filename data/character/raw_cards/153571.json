@@ -1,0 +1,52 @@
+{
+    "id": 153571,
+    "name": "りぶ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1d/b3/153571_crt_wazeX.jpg?r=1717333769",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/b3/153571_crt_wazeX.jpg?r=1717333769",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/b3/153571_crt_wazeX.jpg?r=1717333769",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1d/b3/153571_crt_wazeX.jpg?r=1717333769"
+    },
+    "summary": "「真夜中ぱんチ」のリーダー。\r\nなぜか真咲に運命を感じ、動画撮影に協力する。\r\n前向きであっけらかんとした性格。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莉布"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Live"
+                },
+                {
+                    "k": "日文名",
+                    "v": "りぶ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ribu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 28,
+        "collects": 42
+    },
+    "anime_ids": [
+        477207
+    ]
+}

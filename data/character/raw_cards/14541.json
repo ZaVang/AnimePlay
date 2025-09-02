@@ -1,0 +1,83 @@
+{
+    "id": 14541,
+    "name": "オーキド・グリーン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/17/e9/14541_crt_kUPKu.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/e9/14541_crt_kUPKu.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/e9/14541_crt_kUPKu.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/17/e9/14541_crt_kUPKu.jpg"
+    },
+    "summary": "小茂（日文︰オーキド・シゲル Okido Shigeru，英文︰Gary Oak）是和小智一起长大的朋友，也是小智的第一个劲敌。他是大木博士的孙子，曾是宝可梦训练家，现为研究员，在神奥地区进行化石宝可梦的相关研究，梦想是成为像他爷爷一样的宝可梦博士。\r\n\r\n起初，小茂总是以高姿态对待小智，喜欢嘲笑他总是落后一步。而且他不仅有啦啦队，甚至还有一辆跑车。他的目标是尽可能多地收服宝可梦，并且使用其中最强大的。和小智不同的是，小茂能够很快地认识到自己的缺点并改正。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小茂"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "오바람 O Baram"
+                },
+                {
+                    "v": "Régis Chen"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "大木茂"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Gary Oak"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ōkido Shigeru"
+                },
+                {
+                    "k": "昵称",
+                    "v": "绿"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "11月22日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "引用来源",
+            "value": "神奇宝贝百科"
+        },
+        {
+            "key": "职业",
+            "value": "宝可梦训练家 → 研究员"
+        },
+        {
+            "key": "宝可梦",
+            "value": "杰尼龟 → 卡咪龟 → 水箭龟、伊布 → 月亮伊布、电击魔兽"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 22,
+    "stat": {
+        "comments": 3,
+        "collects": 19
+    },
+    "anime_ids": [
+        3021,
+        3020
+    ]
+}

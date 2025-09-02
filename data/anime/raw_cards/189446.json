@@ -1,0 +1,395 @@
+{
+    "id": 189446,
+    "type": 2,
+    "name": "ID-0",
+    "name_cn": "",
+    "summary": "I-MACHINE——这是在极限环境之中进行作业的大型机器人的总称。\r\n联盟学院的学生·三栗麻耶在使用I-MACHINE时被卷入了一场事故，幸而被同样使用I-MACHINE来采掘“欧利哈尔特矿石”的一批人救下，并坐上了他们的宇宙船。\r\n就这样成为了实际上等同于宇宙海盗的埃斯卡维特公司的“职员”之一……。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2017-04-09",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/84/33/189446_xLEhG.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/84/33/189446_xLEhG.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/84/33/189446_xLEhG.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/84/33/189446_xLEhG.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/84/33/189446_xLEhG.jpg"
+    },
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "アイディー・ゼロ",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2017年4月9日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://id-zero.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX"
+        },
+        {
+            "key": "其他电视台",
+            "value": "KBS京都 / サンテレビ / BS11"
+        },
+        {
+            "key": "播放结束",
+            "value": "2017年6月25日"
+        },
+        {
+            "key": "导演",
+            "value": "谷口悟朗"
+        },
+        {
+            "key": "Copyright",
+            "value": "©ID-0 Project"
+        },
+        {
+            "key": "人物设定",
+            "value": "加藤裕美(动画人物设定) / 海老川兼武(机械人物设定)"
+        },
+        {
+            "key": "机械设定",
+            "value": "片貝文洋・高倉武史・柳瀬敬之"
+        },
+        {
+            "key": "设定考证",
+            "value": "白土晴一"
+        },
+        {
+            "key": "显示器设计",
+            "value": "影山慈郎"
+        },
+        {
+            "key": "美术设计",
+            "value": "平澤晃弘・岩熊茜"
+        },
+        {
+            "key": "色彩设计",
+            "value": "柴田亜紀子・北川順子"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "佐咲紗花 / 影山ヒロノブ"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "佐咲紗花 / 影山ヒロノブ・Serena Lee"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "AstroNoteS / 影山ヒロノブ・服部隆之"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "AstroNoteS / 服部隆之"
+        },
+        {
+            "key": "制作",
+            "value": "ID-0 Project (WCS / バンダイビジュアル / ランティス / ウルトラスーパーピクチャーズ)"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 12,
+    "rating": {
+        "rank": 1798,
+        "total": 1319,
+        "count": {
+            "one": 2,
+            "two": 0,
+            "three": 6,
+            "four": 18,
+            "five": 46,
+            "six": 181,
+            "seven": 537,
+            "eight": 451,
+            "nine": 62,
+            "ten": 16
+        },
+        "score": 7.2
+    },
+    "collection": {
+        "wish": 728,
+        "collect": 1730,
+        "doing": 181,
+        "on_hold": 161,
+        "dropped": 127
+    },
+    "tags": [
+        {
+            "name": "原创",
+            "count": 358
+        },
+        {
+            "name": "2017年4月",
+            "count": 281
+        },
+        {
+            "name": "科幻",
+            "count": 273
+        },
+        {
+            "name": "谷口悟朗",
+            "count": 261
+        },
+        {
+            "name": "TV",
+            "count": 244
+        },
+        {
+            "name": "萝卜",
+            "count": 217
+        },
+        {
+            "name": "2017",
+            "count": 140
+        },
+        {
+            "name": "黑田洋介",
+            "count": 134
+        },
+        {
+            "name": "3D",
+            "count": 129
+        },
+        {
+            "name": "サンジゲン",
+            "count": 74
+        },
+        {
+            "name": "三次元",
+            "count": 55
+        },
+        {
+            "name": "黒田洋介",
+            "count": 49
+        },
+        {
+            "name": "村田蓮爾",
+            "count": 38
+        },
+        {
+            "name": "ID-0",
+            "count": 30
+        },
+        {
+            "name": "服部隆之",
+            "count": 17
+        },
+        {
+            "name": "机战",
+            "count": 11
+        },
+        {
+            "name": "SANZIGEN",
+            "count": 9
+        },
+        {
+            "name": "宇宙",
+            "count": 7
+        },
+        {
+            "name": "興津和幸",
+            "count": 6
+        },
+        {
+            "name": "日本",
+            "count": 6
+        },
+        {
+            "name": "小澤亜李",
+            "count": 6
+        },
+        {
+            "name": "2017年",
+            "count": 5
+        },
+        {
+            "name": "SF",
+            "count": 5
+        },
+        {
+            "name": "TVA",
+            "count": 5
+        },
+        {
+            "name": "金元寿子",
+            "count": 4
+        },
+        {
+            "name": "村田莲尔",
+            "count": 4
+        },
+        {
+            "name": "剧情",
+            "count": 3
+        },
+        {
+            "name": "挖矿",
+            "count": 3
+        },
+        {
+            "name": "津田美波",
+            "count": 3
+        },
+        {
+            "name": "季番",
+            "count": 3
+        }
+    ],
+    "meta_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "series": false,
+    "main_character_ids": [
+        51573,
+        51574,
+        51575,
+        51576
+    ],
+    "main_characters": [
+        {
+            "id": 51573,
+            "name": "ミクリ・マヤ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e2/25/51573_crt_bI1l4.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/25/51573_crt_bI1l4.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/25/51573_crt_bI1l4.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e2/25/51573_crt_bI1l4.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5736,
+                    "name": "津田美波",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b8/b0/5736_prsn_6MaTt.jpg?r=1705471478",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/b0/5736_prsn_6MaTt.jpg?r=1705471478",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/b0/5736_prsn_6MaTt.jpg?r=1705471478",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b8/b0/5736_prsn_6MaTt.jpg?r=1705471478"
+                    },
+                    "short_summary": "津田美波是1989年出生于日本神奈川县，是一位日本的女性声优，所属于青二プロダクション。从2009年开始出道， 声线从幼女到青少年的少女。近来则出演过随和系，小大人系，娇蛮系，腹黑少女，纯情派等多种多样的配角色。在2011年的新番Fractale中首次主役。歌唱的不错在平时也很喜欢听歌",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 51574,
+            "name": "クレア・ホウジョウ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b1/d5/51574_crt_0z3oK.jpg?r=1492328616",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/d5/51574_crt_0z3oK.jpg?r=1492328616",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/d5/51574_crt_0z3oK.jpg?r=1492328616",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b1/d5/51574_crt_0z3oK.jpg?r=1492328616"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5941,
+                    "name": "金元寿子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4d/f9/5941_prsn_jrNMx.jpg?r=1725543512",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4d/f9/5941_prsn_jrNMx.jpg?r=1725543512",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4d/f9/5941_prsn_jrNMx.jpg?r=1725543512",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4d/f9/5941_prsn_jrNMx.jpg?r=1725543512"
+                    },
+                    "short_summary": "日本女声优，歌手。隶属Production Baobab。\r\n冈山县仓敷市出身。身高157cm，血型为B型。旧艺名：相川寿里（あいかわ じゅり）。\r\n\r\n冈山县立鸭方高等学校毕业后，进入专门学校艺术学院神户声优学科。\r\n2008年从专科学校毕业后移居东京，隶属Production Baobab的附属养成所“B・A・O”。\r\n2009年5月5日，在“DreamParty东京2009春”举行的《たのだん》公开甄选会上参加了一般应募，在观众投票中被选为主人公雪莉一角。在由Production Baobab托管之时，以相川寿里的艺名自称，但在2009年10月3～4日举办的“电击角色嘉年华2009”）的主要舞台上，宣布使用本名金元寿子。\r\n2010年，凭借在电视动画《空之音》中饰演主人公カナタ（空深彼方）正式出道，同年秋季播出的电视动画《侵略！乌贼娘》中被提拔为主人公乌贼娘一角。第二年，在第五届声优大奖中，获得“新人女优奖”。\r\n2014年9月10日，在Ameba Blog开设了官方博客。\r\n2018年5月26日，宣布因为到中国北京学习汉语，从同年夏天至2019年3月停止工作。\r\n\r\n兴趣是电影鉴赏、音乐鉴赏、制作塑料模型。特长有篮球、排球等。\r\n喜欢的游戏有《合金装备系列》与《天诛》。\r\n对在《棋魂》中饰演塔矢亮的小林沙苗的憧憬，是以成为声优为目标的契机之一。特别受到影响的喜欢的作品，列举了上述的《棋魂》，《∀高达》和《名侦探福尔摩斯》。\r\n和在许多作品中共同演出的赤崎千夏在公私上都有颇深的亲密交情，关系好到俩人一起出去旅行。此外，以在广播中共演的飒悠衣子为首，与内山夕实、田村睦心、茅野爱衣等同年代的女性声优也有交流。\r\n\r\n在2010年9月11日举办的《侵略！乌贼娘》的活动“侵略でゲソ祭”中表演乌贼娘的角色扮演。也曾经在《周刊少年Champion》2010年52号的乌贼娘的角色扮演写真中登场。\r\n在甄选中被选为乌贼娘的理由，正如导演水岛努说道“因为她是最自然地说出‘…ゲソ’的人”。乌贼娘的特征性腔调“〜イカ? 〜ゲソ”，获得2010年的网络流行语大奖（产经新闻主办）的铜奖。\r\n关于《Smile 光之美少女！》的和平天使每集进行猜拳（ピカピカぴかりん じゃんけんポン♪），前半集数是由导演大冢隆史决定使出哪种手势，后半集数则由金元自己决定使出哪种手势。此外，在光之美少女相关活动中，多次以“闪亮猜拳”与观众进行互动，成为惯例。\r\n在《美少女战士Crystal》的甄选中，与饰演月野兔的三石琴乃进行了实际上的演技对戏，但因太过紧张，踢了塑料瓶而让水洒了出来，让三石等人擦拭。也因为那个失误，说出“以为（甄选）落选了”。\r\n因为是冈山县出身，担当了“七叶院まゆせ（两备集团）”、“濑户町果音、果南（濑户农产品加工企业组合）”、“濑户葡萄（自卫队冈山地区合作总部）”、“はれのくにえ（冈山县公听宣传课）”等许多与冈山相关角色的配音。此外，作为声优的活跃也受到了认可，接受冈山县的任命就任“おかやま晴れの国大使”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 51575,
+            "name": "謎の少女",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/89/85/51575_crt_IFEV2.jpg?r=1492328790",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/89/85/51575_crt_IFEV2.jpg?r=1492328790",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/89/85/51575_crt_IFEV2.jpg?r=1492328790",
+                "grid": "https://lain.bgm.tv/pic/crt/g/89/85/51575_crt_IFEV2.jpg?r=1492328790"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13164,
+                    "name": "上田麗奈",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c5/14/13164_prsn_KWnmW.jpg?r=1752543801"
+                    },
+                    "short_summary": "日本的女性声优，富山县出身，所属事务所为81 Produce。\r\n初中时同属演剧部的女生有声优志向者，尊敬她的上田觉得“声优肯定是很美妙的职业”，又担心“自己的性格很奇怪”，本来以美术大学为志愿的她最终在声优试音报名结束前三天才报名。\r\n2011年，在第5回81 Audition中获得准优秀奖，之后加入81 Produce。\r\n获第九届声优奖新人女声优奖。\r\n是声优组合Anisonia的成员之一。\r\n在电视动画《摸索吧！部活剧》中，一人分饰18角。\r\n绘画力极强，《摸索吧！部活剧》的试音中因为绘画好而被选中，后来也在花舞少女广播中绘画并得到采用，还担任了《骇客娃娃》第五话的Endcard。\r\n不擅长运动。\r\n在各种场合被人说“凡骨”，自己的性格也很天然。\r\n自称只要对她好，就能喜欢上那个人。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 51576,
+            "name": "イド",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d7/99/51576_crt_ocae3.jpg?r=1492328244",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/99/51576_crt_ocae3.jpg?r=1492328244",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/99/51576_crt_ocae3.jpg?r=1492328244",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d7/99/51576_crt_ocae3.jpg?r=1492328244"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5007,
+                    "name": "興津和幸",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9e/df/5007_prsn_LClCs.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/df/5007_prsn_LClCs.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/df/5007_prsn_LClCs.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9e/df/5007_prsn_LClCs.jpg"
+                    },
+                    "short_summary": "兵庫県立洲本高等学校、大阪芸術大学芸術学部放送学科卒。RME（ - 2006年10月）を経て、2007年5月よりケッケコーポレーションに所属。\r\n端役を多く演じているが、『屍鬼』や『れでぃ×ばと!』で主演としてのキャリアを積み、2012年にテレビアニメ化が実現した『ジョジョの奇妙な冒険』で主人公のジョナサン・ジョースター役に抜擢される。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

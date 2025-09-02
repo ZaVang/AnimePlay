@@ -1,0 +1,59 @@
+{
+    "id": 331480,
+    "name": "明日同学的水手服",
+    "image_path": "data/images/anime/331480.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "舞台位于乡下的名门女子初级中学——私立蜡梅学园。\r\n有一位名叫明日小路的少女，梦想着能够穿上这所学园的水手服。\r\n因为某个契机，她实现了这一梦想，于是在紧张中迎来了开学典礼的日子——\r\n\r\n「我要穿水手服」\r\n\r\n怀抱着决心，少女梦想的初中生活就此展开♪\r\n同班同学、学校供餐、社团活动…\r\n小路拼尽全力，奔跑在充满“第一次”的每一天！\r\n这是少女们闪闪发光的青春日记。\r\n\r\n「我能交到很多朋友吗？」",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常",
+        "青年向"
+    ],
+    "date": "2022-01-08",
+    "rating_rank": 795,
+    "rating_score": 7.5,
+    "rating_total": 6412,
+    "main_character_ids": [
+        103564
+    ],
+    "main_characters": [
+        {
+            "id": 103564,
+            "name": "明日小路",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/11/f6/103564_crt_yI0uS.jpg?r=1638721509",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/11/f6/103564_crt_yI0uS.jpg?r=1638721509",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/11/f6/103564_crt_yI0uS.jpg?r=1638721509",
+                "grid": "https://lain.bgm.tv/pic/crt/g/11/f6/103564_crt_yI0uS.jpg?r=1638721509"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 41446,
+                    "name": "村上まなつ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7c/bc/41446_prsn_Mg2LJ.jpg?r=1617686564",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/bc/41446_prsn_Mg2LJ.jpg?r=1617686564",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/bc/41446_prsn_Mg2LJ.jpg?r=1617686564",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7c/bc/41446_prsn_Mg2LJ.jpg?r=1617686564"
+                    },
+                    "short_summary": "日本ナレーション演技研究所出身。2018年10月1日、同養成所の関連会社であるアライズプロジェクトへの所属が発表された。\r\n\r\n2019年より声優ユニット「DIALOGUE+」にメンバーとして参加する。\r\n\r\n特技には縦開脚と手の筋はずし、趣味にはダンスとクレープ作成動画の視聴をそれぞれ挙げている。\r\n\r\n声優になろうと思ったきっかけは『HUNTER×HUNTER（第2作）』と『ココロコネクト』で沢城みゆきがそれぞれ異なるキャラを同時期に演じていることに感動したことから。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

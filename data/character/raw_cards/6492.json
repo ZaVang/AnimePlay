@@ -1,0 +1,65 @@
+{
+    "id": 6492,
+    "name": "世界を大いに盛り上げるための涼宮ハルヒの団",
+    "type": 4,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e1/5f/6492_crt_Z4EQh.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/5f/6492_crt_Z4EQh.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/5f/6492_crt_Z4EQh.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e1/5f/6492_crt_Z4EQh.jpg"
+    },
+    "summary": "SOS团是动漫《凉宫春日的忧郁》中团长大人所建立的社团，SOS是指\"让世界变得更热闹的凉宫春日团\"，简称\"SOS团\"。团员由团长凉宫春日、副团长古泉一树、女仆兼吉祥物朝比奈实玖瑠以及团员阿虚、长门有希组成。\r\n\r\n宗旨：\r\n　　找出外星人，未来人，异世界人，以及超能力者，然后和他们一起玩！\r\n团员：\r\n　　团长：凉宫春日\r\n　　团员1号 打杂：阿虚\r\n　　团员2号 文艺社社长：长门有希\r\n　　团员3号 吉祥物、女仆、记录员、副副团长：朝比奈实玖瑠\r\n　　团员4号 副团长：古泉一树\r\n　　团员5号 渡桥泰水\r\n　　预备团员：鹤屋学姐（荣誉顾问）、虚妹、三味线、谷口、国木田\r\n　　后备团：电脑研究社",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "让世界变得更热闹的凉宫春日的团"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Spreading Excitement all Over the World with Haruhi Suzumiya Brigade"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "せかいをおおいにもりあげるためのすずみやはるひのだん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sekai wo Ooini Moriageru Tame no Suzumiya Haruhi no Dan"
+                },
+                {
+                    "k": "简称",
+                    "v": "SOS団"
+                },
+                {
+                    "k": "简称纯假名",
+                    "v": "エスオーエスだん"
+                },
+                {
+                    "k": "简称中文名",
+                    "v": "SOS团"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "www.haruhi.tv"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 41,
+        "collects": 288
+    },
+    "anime_ids": [
+        485,
+        1606
+    ]
+}

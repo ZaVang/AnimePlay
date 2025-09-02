@@ -1,0 +1,44 @@
+{
+    "id": 59905,
+    "name": "ユカ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/90/79/59905_crt_J2iK1.jpg?r=1514732315",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/79/59905_crt_J2iK1.jpg?r=1514732315",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/79/59905_crt_J2iK1.jpg?r=1514732315",
+        "grid": "https://lain.bgm.tv/pic/crt/g/90/79/59905_crt_J2iK1.jpg?r=1514732315"
+    },
+    "summary": "鎌倉出身。コウタのいとこで春から一緒の大学に通うことになっている。コウタがにゅうになにかエッチなことをしないかどうか見張る為という建前を得て、楓荘に一緒に住むことになる。成績は良い方だがコウタと一緒の大学に通いたい一心から偏差値の高い大学を蹴っている。それだけコウタのことが好きで、故に嫉妬深い一面もある。恥ずかしさを誤魔化すため等でコウタによく暴力を振るう。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "由香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Yuka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 8
+    },
+    "anime_ids": [
+        536
+    ]
+}

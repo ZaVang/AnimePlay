@@ -1,0 +1,39 @@
+{
+    "id": 25937,
+    "name": "織田信長",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/21/14/25937_crt_ZqMGG.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/14/25937_crt_ZqMGG.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/14/25937_crt_ZqMGG.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/21/14/25937_crt_ZqMGG.jpg"
+    },
+    "summary": "本来の織田信長。病弱だが聡明な人物。サブローからは「ミッチー」と呼ばれる。織田家を出奔する際に出会った自分そっくりのサブローに、織田信長として生きていくことを託して尾張を去ってしまう。各地を放浪する中、明智家の養子に迎えられ、明智光秀を名乗る。その後、信長の噂を聞き、力になるため光秀としてサブローの前に現れる。混乱を防ぐため、普段は覆面を付けており、必要に応じて影武者となる。4人の軍団長のひとりに選ばれる。延暦寺攻めで僧兵たちを斬殺した折り、その僧兵が信長に名付けた「第六天魔王」を自らの異名とした。サブローとは強い絆で結ばれており、松永久秀から偶然にサブローの正体を知ると、彼のためだけに生きると決意している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "织田信长"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 0
+    },
+    "anime_ids": [
+        103671
+    ]
+}

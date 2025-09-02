@@ -1,0 +1,73 @@
+{
+    "id": 16934,
+    "name": "常守朱",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2b/61/16934_crt_ZdKud.jpg?r=1573978996",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/61/16934_crt_ZdKud.jpg?r=1573978996",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/61/16934_crt_ZdKud.jpg?r=1573978996",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2b/61/16934_crt_ZdKud.jpg?r=1573978996"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "常守朱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Lemonade Candy"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "つねもり あかね"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tsunemori Akane"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2092年4月1日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        },
+        {
+            "key": "体重",
+            "value": "49kg"
+        },
+        {
+            "key": "出身",
+            "value": "千葉県"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 2092,
+    "birth_mon": 4,
+    "birth_day": 1,
+    "stat": {
+        "comments": 95,
+        "collects": 420
+    },
+    "anime_ids": [
+        37685,
+        103906
+    ]
+}

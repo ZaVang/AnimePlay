@@ -1,0 +1,52 @@
+{
+    "id": 20138,
+    "name": "椎名かがり",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/79/c4/20138_crt_LYSzs.jpg?r=1500879625",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/79/c4/20138_crt_LYSzs.jpg?r=1500879625",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/79/c4/20138_crt_LYSzs.jpg?r=1500879625",
+        "grid": "https://lain.bgm.tv/pic/crt/g/79/c4/20138_crt_LYSzs.jpg?r=1500879625"
+    },
+    "summary": "β世界線上の2028年に、まゆり（当時35歲）が働いていた児盾養護施設に預けられた女の島戦争で戶籍がはっきりせず、本当の氏名は不明。養護施設で成長していく過程で、まるで実の母のようにまゆりになつく。かがりと命名したのはまゆり。どんなに暗黑の世界線でも、みんなを照らす輝くかがり火のようであって欲しいという意味。2034年にまゆりの養女となる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "椎名篝"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しぃな かがり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shiina Kagari"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月7日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 7,
+    "stat": {
+        "comments": 21,
+        "collects": 50
+    },
+    "anime_ids": [
+        129807
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "id": 1000,
+    "name": "美坂栞",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4d/bc/1000_crt_0YkG5.jpg?r=1523159719",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4d/bc/1000_crt_0YkG5.jpg?r=1523159719",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4d/bc/1000_crt_0YkG5.jpg?r=1523159719",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4d/bc/1000_crt_0YkG5.jpg?r=1523159719"
+    },
+    "summary": "祐一的学妹，香里的妹妹。祐一和亚由跑到商店街外面时偶然相遇的少女。喜欢的食物是冰淇淋，就算是身处严冬的雪国还是能若无其事的吃香草冰淇淋。但是没办法吃咖哩，对辣的食物厌恶到称之为“人类的敌人”的地步。口头禅是“我讨厌说那种话的人”。从小身体孱弱，现在也是长期缺席没去上学。但是偶而会穿着便服溜进学校里。兴趣是素描，但是不擅长画人物画。另外，反应速度十分的慢，玩打地鼠之类的游戏时连一次也打不到(后来有所进步)。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "美坂栞"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "美坂汐里"
+                },
+                {
+                    "k": "日文名",
+                    "v": "美坂 栞"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みさか しおり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Misaka Shiori"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月1日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "体重",
+            "value": "43kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B79 W53 H80"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "CV",
+            "value": [
+                {
+                    "v": "小西寛子(DC、PS2、PC民间汉化版)"
+                },
+                {
+                    "v": "佐藤朱(TV、PSP、NS、Steam)"
+                }
+            ]
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 1,
+    "stat": {
+        "comments": 24,
+        "collects": 153
+    },
+    "anime_ids": [
+        274,
+        363880
+    ]
+}

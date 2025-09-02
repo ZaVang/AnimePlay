@@ -1,0 +1,48 @@
+{
+    "id": 86316,
+    "name": "レオナ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0f/9c/86316_crt_nIti0.jpg?r=1747320051",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/9c/86316_crt_nIti0.jpg?r=1747320051",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/9c/86316_crt_nIti0.jpg?r=1747320051",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0f/9c/86316_crt_nIti0.jpg?r=1747320051"
+    },
+    "summary": "パプニカ王国の美しき姫君。王族らしい気品と威厳を備える一方で、おてんばな一面も持つ。思ったことは包み隠さずに口にする性格。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蕾欧娜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Leona"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://dq-dai.com/character"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 4
+    },
+    "anime_ids": [
+        296980
+    ]
+}

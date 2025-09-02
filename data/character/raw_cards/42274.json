@@ -1,0 +1,52 @@
+{
+    "id": 42274,
+    "name": "早乙女あこ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2a/7c/42274_crt_jpO9W.jpg?r=1492271606",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/7c/42274_crt_jpO9W.jpg?r=1492271606",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/7c/42274_crt_jpO9W.jpg?r=1492271606",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2a/7c/42274_crt_jpO9W.jpg?r=1492271606"
+    },
+    "summary": "四星級學園一年級新生，就讀鳥之劇組。\r\n    名門出生的千金小姐，有傲嬌特質的女孩。\r\n    經常說出高傲的話，但就是難以令人討厭。\r\n    似乎喜歡M4的昂。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "早乙女亚子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "さおとめ あこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Saotome Ako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月25日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 25,
+    "stat": {
+        "comments": 6,
+        "collects": 10
+    },
+    "anime_ids": [
+        207491
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 31087,
+    "name": "諸葛岳人",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/94/7c/31087_crt_7Y8YY.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/94/7c/31087_crt_7Y8YY.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/94/7c/31087_crt_7Y8YY.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/94/7c/31087_crt_7Y8YY.jpg"
+    },
+    "summary": "通称ガクト。自称「練馬一の知将」であり、男子の司令塔的存在。語尾に「ゴザル」をつけるのが口癖。趣味は三国志研究で、歴史からITまで幅広い知識を持つ。限定版「関羽雲長&赤兎馬フィギュア」を入手するためにキヨシの脱獄計画に加担し、脱獄のためには脱糞や剃髪を厭わないなど、三国志への愛は深い。出獄後は、みつ子と親しくするために、表生徒会の仕事を手伝うようになる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "诸葛岳人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "諸葛 岳人"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "もろくず たけひと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Morokuzu Takehito"
+                },
+                {
+                    "k": "昵称",
+                    "v": "葛人(ガクト)"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 31,
+        "collects": 45
+    },
+    "anime_ids": [
+        110048
+    ]
+}

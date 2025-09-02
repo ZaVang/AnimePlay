@@ -1,0 +1,464 @@
+{
+    "id": 18624,
+    "type": 2,
+    "name": "輪るピングドラム",
+    "name_cn": "回转企鹅罐",
+    "summary": "幾原邦彦所监督的原创动画，以高仓家的三兄妹——双子兄弟高仓冠叶和高仓晶马，以及体弱多病的妹妹高仓阳毬为中心展开的故事。\r\n某天兄弟二人带着时日无多的妹妹去水族馆游玩，久未外出的阳毬在人群中忽然倒下气绝。之后在停尸间，在绝望的兄弟二人面前，死去的妹妹又突然戴着企鹅帽子站起来，大喊道“生存战略！”“妾身已为此女续命！”然而当企鹅帽子掉落时，阳毬又恢复成了平常的样子。\r\n靠着不可思议的企鹅帽子，阳毬的生命得以延续。当戴着企鹅帽的阳毬再次出现时，她对高仓兄弟下令道：“去拿到企鹅罐！”",
+    "nsfw": false,
+    "locked": false,
+    "date": "2011-07-07",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/92/f6/18624_ZFj5M.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/92/f6/18624_ZFj5M.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/92/f6/18624_ZFj5M.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/92/f6/18624_ZFj5M.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/92/f6/18624_ZFj5M.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "回转企鹅罐"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Mawaru Penguindrum",
+                    "k": null
+                },
+                {
+                    "v": "Penguindrum",
+                    "k": null
+                },
+                {
+                    "v": "转吧企鹅鼓",
+                    "k": null
+                },
+                {
+                    "v": "回转企鹅鼓",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "24"
+        },
+        {
+            "key": "放送开始",
+            "value": "2011年7月7日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期四"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://penguindrum.jp/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "MBS"
+        },
+        {
+            "key": "其他电视台",
+            "value": "TBS、AT-X"
+        },
+        {
+            "key": "播放结束",
+            "value": "2011年12月22日"
+        },
+        {
+            "key": "导演",
+            "value": "幾原邦彦"
+        },
+        {
+            "key": "音乐",
+            "value": "橋本由香利"
+        },
+        {
+            "key": "放送时间",
+            "value": "26:10"
+        },
+        {
+            "key": "原作",
+            "value": "イクニチャウダー"
+        },
+        {
+            "key": "系列监督",
+            "value": "首席监督：中村章子"
+        },
+        {
+            "key": "副导演",
+            "value": "助监督：山﨑みつえ"
+        },
+        {
+            "key": "人物原案",
+            "value": "星野リリィ"
+        },
+        {
+            "key": "系列构成",
+            "value": "幾原邦彦、伊神貴世"
+        },
+        {
+            "key": "人物设定",
+            "value": "西位輝実"
+        },
+        {
+            "key": "设定",
+            "value": "概念设计：中村章子、柴田勝紀 / 图标设计：越阪部ワタル"
+        },
+        {
+            "key": "色彩设计",
+            "value": "辻田邦夫"
+        },
+        {
+            "key": "美术监督",
+            "value": "美术：秋山健太郎、中村千恵子"
+        },
+        {
+            "key": "剪辑",
+            "value": "西山茂(REAL-T)"
+        },
+        {
+            "key": "音响监督",
+            "value": "幾原邦彦、山田陽"
+        },
+        {
+            "key": "音乐制作",
+            "value": "STAR CHILD"
+        },
+        {
+            "key": "制片人",
+            "value": "池田慎一、丸山博雄"
+        },
+        {
+            "key": "动画制片人",
+            "value": "常葉みどり"
+        },
+        {
+            "key": "企画",
+            "value": "森山敦"
+        },
+        {
+            "key": "动画制作",
+            "value": "Brain's Base"
+        },
+        {
+            "key": "製作",
+            "value": "ピングループ、毎日放送"
+        },
+        {
+            "key": "脚本",
+            "value": "幾原邦彦(1-24)、伊神貴世(1-24)、古川知宏(16)、金子伸吾(16)"
+        },
+        {
+            "key": "分镜",
+            "value": "幾原邦彦(1,5,11-17,21-24)、山﨑みつえ(2,6,11,14,21,22,24)、柴田勝紀(3,12,15,23)、金子伸吾(4,11,16)、松本淳(7)、中村章子(8,17,22-24)、武内宣之(9)、後藤圭二(10,19)、古川知宏(13,16,21-24)、相澤伽月(17,23)、山内重保(18)、林明美(20)"
+        },
+        {
+            "key": "演出",
+            "value": "中村章子(1,12,17,23,24)、山﨑みつえ(2,6,11,14,21,24)、柴田勝紀(3,12,15)、金子伸吾(4,16,23)、そ～とめこういちろう(5)、市村徹夫(7,13,22)、福島利規(8)、武内宣之(9)、後藤圭二(10,19)、相澤伽月(17,23)、山内重保(18)、林明美(20)、幾原邦彦(24)"
+        },
+        {
+            "key": "作画监督",
+            "value": "西位輝実(1,5,11,13,18,23,24)、加々美高浩(2,7,12,16,22)、蒲原遙(2)、中村深雪(3,11,14,21,22)、田村正文(4,8)、進藤優(4,8,15,21,24)、馬場充子(5,12,23)、石川智美(6,16,22)、薗部あい子(7)、武内宣之(9)、後藤圭二(10,19)、中村章子(12,17,22,24)、石井久美(14,19,23)、楠本祐子(15,20)、相澤伽月(17,23)、林明美(20)、桑名郁朗(20)"
+        },
+        {
+            "key": "特效作画监督",
+            "value": "柴田勝紀(23,24)、後藤圭二(24)"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "古川知宏(OP1&2)、幾原邦彦(OP1&2)、中村章子(OP2&ED)"
+        }
+    ],
+    "volumes": 0,
+    "eps": 24,
+    "total_episodes": 32,
+    "rating": {
+        "rank": 217,
+        "total": 10885,
+        "count": {
+            "one": 27,
+            "two": 10,
+            "three": 31,
+            "four": 85,
+            "five": 222,
+            "six": 716,
+            "seven": 2012,
+            "eight": 3815,
+            "nine": 2782,
+            "ten": 1185
+        },
+        "score": 8.0
+    },
+    "collection": {
+        "wish": 7517,
+        "collect": 13820,
+        "doing": 2351,
+        "on_hold": 1394,
+        "dropped": 441
+    },
+    "tags": [
+        {
+            "name": "几原邦彦",
+            "count": 2818
+        },
+        {
+            "name": "神展开",
+            "count": 2099
+        },
+        {
+            "name": "生存战略",
+            "count": 1796
+        },
+        {
+            "name": "原创",
+            "count": 1559
+        },
+        {
+            "name": "2011年7月",
+            "count": 1441
+        },
+        {
+            "name": "TV",
+            "count": 1252
+        },
+        {
+            "name": "BrainsBase",
+            "count": 949
+        },
+        {
+            "name": "2011",
+            "count": 805
+        },
+        {
+            "name": "死妹控",
+            "count": 622
+        },
+        {
+            "name": "超展开",
+            "count": 611
+        },
+        {
+            "name": "呆萌企鹅",
+            "count": 494
+        },
+        {
+            "name": "原创动画",
+            "count": 403
+        },
+        {
+            "name": "企鹅",
+            "count": 397
+        },
+        {
+            "name": "妹控",
+            "count": 377
+        },
+        {
+            "name": "奇幻",
+            "count": 326
+        },
+        {
+            "name": "腾讯",
+            "count": 105
+        },
+        {
+            "name": "幾原邦彦",
+            "count": 93
+        },
+        {
+            "name": "日本",
+            "count": 79
+        },
+        {
+            "name": "萌",
+            "count": 78
+        },
+        {
+            "name": "企鹅娘",
+            "count": 78
+        },
+        {
+            "name": "治愈",
+            "count": 70
+        },
+        {
+            "name": "黑马",
+            "count": 67
+        },
+        {
+            "name": "电波",
+            "count": 67
+        },
+        {
+            "name": "回转企鹅罐",
+            "count": 64
+        },
+        {
+            "name": "意识流",
+            "count": 62
+        },
+        {
+            "name": "神作",
+            "count": 50
+        },
+        {
+            "name": "Brain",
+            "count": 39
+        },
+        {
+            "name": "帝企鹅",
+            "count": 38
+        },
+        {
+            "name": "内涵",
+            "count": 33
+        },
+        {
+            "name": "木村良平",
+            "count": 33
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "原创"
+    ],
+    "series": false,
+    "main_character_ids": [
+        13169,
+        13170,
+        13171,
+        13198
+    ],
+    "main_characters": [
+        {
+            "id": 13169,
+            "name": "高倉冠葉",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b0/c5/13169_crt_11SL1.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/c5/13169_crt_11SL1.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/c5/13169_crt_11SL1.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b0/c5/13169_crt_11SL1.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6787,
+                    "name": "木村昴",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6a/25/6787_prsn_5I8fG.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/25/6787_prsn_5I8fG.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/25/6787_prsn_5I8fG.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6a/25/6787_prsn_5I8fG.jpg"
+                    },
+                    "short_summary": "木村 昴（きむら すばる、1990年6月29日 - ）は、日本の声優、俳優、タレント、ナレーター、モデル、歌手。アトミックモンキー所属。\r\nドイツ・ザクセン州ライプツィヒ出身。本名：昴・サミュエル・バーチュ（Subaru Samuel Bartsch）、日本名：木村 昴。日本語、ドイツ語、英語のトリリンガル。\r\n\r\n7歳までをドイツで過ごし、帰国後に劇団日本児童へ所属    。ミュージカル・『アニー』で俳優としてのキャリアをスタートさせた。都立晴海総合高校、亜細亜大学卒業。\r\n小学生のころに、日本テレビのものまね番組『まねキン』に羽賀研二に似ている小学生として出演、全出演者を驚愕させた。そのことがきっかけで日本テレビの『ものまねバトル』でリトル羽賀という名前で何度か出演している。\r\n2005年4月15日より、テレビ朝日系アニメ『ドラえもん』にて、たてかべ和也に代わってジャイアンの声を担当。引き継ぎ当初は現役中学生であった。たてかべは「ジャイアン役を継いでくれる人と酒を飲みたい」と考えていたため、後任の木村が中学生であることを知ってがっかりし、あと5年は長生きして一緒に飲みたいと語った。2010年6月29日に木村が20歳になった直後、一緒に飲みに行くことが実現した    。また、木村昴はたてかべの訃報を聞き、追悼メッセージをツイッターで流した。\r\n2009年に自ら旗揚げした劇団・天才劇団バカバッカの座長を務める。\r\n2010年4月には、ミュージカル『HONK!』みにくいアヒルの子役で2009年度岡山市民劇場賞新鋭賞を受賞。\r\n\r\n身長181cm、体重72kg。ドイツと日本のハーフ。父はドイツ人で、元オペラ歌手。母は日本人で、元声楽家である。幼少期をドイツで過ごしていたため、ドイツ語が堪能。妹・木村飛鳥も以前、兄と同じく児童劇団に所属していた。過去に『モグモグGOMBO』で一家揃って出演したこともある。\r\n特技はヴァイオリン、ギター、ドラム、空手、剣道。\r\n小学生の頃に母に買ってもらったラップアーティストEMINEMのCDを聴き、その後大きな衝撃を受け、以来ヒップホップにのめり込む。高校に在学中に、親友たちとヒップホップユニットを結成し、ダンスやラップバトルに出場したという。ヒューマンビートボックスが得意である。ラップを主体としたコンテンツ、ヒプノシスマイクでもMCを務める。\r\n無類のコーラ好きであり、世界各国のコーラを集めることが趣味。\r\n端正なルックスを活かし、ストリート誌でのモデル活動も行っている。モデル名はSAMMY：サミー。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13170,
+            "name": "高倉晶馬",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/24/be/13170_crt_LAhiS.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/be/13170_crt_LAhiS.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/be/13170_crt_LAhiS.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/24/be/13170_crt_LAhiS.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4994,
+                    "name": "木村良平",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d5/46/4994_prsn_RJG93.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/46/4994_prsn_RJG93.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/46/4994_prsn_RJG93.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d5/46/4994_prsn_RJG93.jpg"
+                    },
+                    "short_summary": "3岁时加入向日葵剧团，中学就读不需要穿制服，甚至没有特定讲课内容和课本的私立学校\r\n\r\n2009年在电视动画《东之伊甸》中首次担当男主角泷泽朗[s]为今后Noitamina小王子拉开序幕[/s]\r\n\r\n2011年与一同主持广播节目「Kiramune Presents 江口拓也と木村良平と代永翼の キラキラ☆ビート」的江口拓也、代永翼组成音乐团体Trignal（Kiramune所属）。首张迷你专辑“Party”于2012年12月12日发行。\r\n\r\n2012年，荣获第六回声优奖男声优配角赏\r\n\r\n吸血鬼役相当多，曾在推特自称是吸血鬼声优（在和小信的电击GS里角色设定为‘好想喝酒，虽然其实是想吸血’）「BLOOD LAD」布拉德·D·布莱斯、「Servamp」Lawless、「DIABOLIK LOVERS」无神皓、DramaCD 吸血ダーリン、酔い愛、天顶游戏、明治吸血奇譚、RUNLIMIT）\r\nNoitamina[s]小王子[/s]\r\n东之伊甸 泷泽朗，坡道上的阿波罗 西见薰，ROBOTICS；NOTES 八汐海翔角色，银之匙 八轩勇吾，PSYCHO-PASS 鹿矛围桐斗，野球少年 瑞垣俊二\r\n\r\n界内界外交际广泛，经常招待朋友去家中聚会\r\n自称很怕生害羞，被日笠阳子称为「攻めシャイ」\r\n看似很随意，但其实最会看气氛（丰永）在聚会时能关注到每个人（白石凉子）\r\n恐高\r\n喜欢猫和狗推特头像是老家的猫\r\nkaji病和香菜病患者（和佐仓互称为情敌←虽然最近都被贤章打败了）",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13171,
+            "name": "高倉陽毬",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/47/c1/13171_crt_m0EMk.jpg?r=1476691682",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/c1/13171_crt_m0EMk.jpg?r=1476691682",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/c1/13171_crt_m0EMk.jpg?r=1476691682",
+                "grid": "https://lain.bgm.tv/pic/crt/g/47/c1/13171_crt_m0EMk.jpg?r=1476691682"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6786,
+                    "name": "荒川美穂",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/26/63/6786_prsn_x8njP.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/26/63/6786_prsn_x8njP.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/26/63/6786_prsn_x8njP.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/26/63/6786_prsn_x8njP.jpg"
+                    },
+                    "short_summary": "荒川 美穂（あらかわ みほ、1987年12月4日 - ）は、日本の女性声優。東京俳優生活協同組合所属。\r\n宮城県仙台市出身。愛称は、みほりん、アース等。看護師資格を持ち、2011年現在看護師として病院勤務も兼ねる。左きき。\r\n\r\n2009年に俳協ボイスアクターズスタジオ第36期生になり、2010年より東京俳優生活協同組合所属となる。\r\n\r\n女子高に通っていた。特技は水泳。影響を受けた声優は林原めぐみで、ラジオも聴いていた。林原も看護師の資格を持っており、声優として活動できるかわからないという理由からも、看護師も目指した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13198,
+            "name": "荻野目苹果",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c7/48/13198_crt_7tpMT.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/48/13198_crt_7tpMT.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/48/13198_crt_7tpMT.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c7/48/13198_crt_7tpMT.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6846,
+                    "name": "三宅麻理恵",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/28/0b/6846_prsn_94Y5o.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/0b/6846_prsn_94Y5o.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/0b/6846_prsn_94Y5o.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/28/0b/6846_prsn_94Y5o.jpg"
+                    },
+                    "short_summary": "ラクーンドッグ所属\r\n\r\n出身地：大阪府\r\n方言：関西弁\r\n趣味：読書、落語\r\n特技：中国語、素潜り\r\n資格：Microsoft Word エキスパート",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

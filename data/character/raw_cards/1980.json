@@ -1,0 +1,60 @@
+{
+    "id": 1980,
+    "name": "レイラ・ハミルトン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e0/e0/1980_crt_SzaSk.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/e0/1980_crt_SzaSk.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/e0/1980_crt_SzaSk.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e0/e0/1980_crt_SzaSk.jpg"
+    },
+    "summary": "本作のもう一人の主人公。17歳のアメリカ人。カレイドステージのトップスター。ユーリのパートナーで「ゴールデンフェニックス」の使い手。3年前のサーカスフェスティバルで優勝した実績を持つ。演技者としては自他共に厳しく、やや冷徹な雰囲気と言動で時にスタッフや他の演者と衝突することがあるが、それは常にプロとしてのプライドを持ってさらなる高みを目指していることの裏返しである。また、覆面を被り「仮面スター」として派手な野外パフォーマンスを行ったり、カレイドスター退団後はキャシーの持ち込んだ脚本に自分の新たなる目標を見出したという理由から、話題性が低いにもかかわらずオフ・ブロードウェイに進出するなど、破天荒な行動を見せることもある。プライベートでは、家事が全く駄目でコーヒー1つまともに淹れられないなどのお茶目な面もある。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蕾拉·汉密尔顿"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "レイラ・ハミルトン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Layla Hamilton"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月15日"
+        },
+        {
+            "key": "身高",
+            "value": "173cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 15,
+    "stat": {
+        "comments": 40,
+        "collects": 109
+    },
+    "anime_ids": [
+        4163
+    ]
+}

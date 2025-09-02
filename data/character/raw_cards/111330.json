@@ -1,0 +1,68 @@
+{
+    "id": 111330,
+    "name": "小鞠知花",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8e/66/111330_crt_C5zCe.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/66/111330_crt_C5zCe.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/66/111330_crt_C5zCe.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8e/66/111330_crt_C5zCe.jpg"
+    },
+    "summary": "文芸部に所属している1年生女子。引っ込み思案な性格で、人としゃべるのが苦手。和彦と同じく友達がいない。文芸部の先輩たちには心を開いており、その視線の先にはいつも……。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小鞠知花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小鞠 知花"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こまり ちか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Komari Chika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3-29"
+        },
+        {
+            "key": "身高",
+            "value": "148cm（SSS短篇集）"
+        },
+        {
+            "key": "体重",
+            "value": "41kg（SSS短篇集）"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://makeine-anime.com/character/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 29,
+    "stat": {
+        "comments": 172,
+        "collects": 488
+    },
+    "anime_ids": [
+        464376
+    ]
+}

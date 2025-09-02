@@ -1,0 +1,345 @@
+{
+    "id": 37460,
+    "type": 2,
+    "name": "ドラえもん",
+    "name_cn": "哆啦A梦 大山版",
+    "summary": "　　其实即是大家最熟悉的动画版本，有26年的历史。由于日本的哆啦A梦原声配音为大山羡代，故称之 为“大山版”。  大山版哆啦A梦哆啦A梦25年来连续放映，于八十年代曾创下30%的高收视纪绿。原作者于1997年去世后，由电视编剧自行创作的故事涌现。于2002年10月起，哆啦A梦动画不再用胶片制作，改用电脑上色。因为收视率下降，制作单位加进不少夸张元素，目标观众有幼儿化趋向。故事质素备受日本哆啦迷及国民关注。在2005年3月18日的《多啦A梦全部角色梦之大集合》特别节目后，日本叮当全体配音员及工作人员正式踏下台板。大山羡代当时已经68岁。而大长篇停映一年。 整个系列的电视短篇、特别篇及大长篇合共有1984集。\r\n　　大山版动画人物形象与漫画版有些差异，人物脸型更胖，哆啦a梦的身材更加瘦小，形象也更为机灵睿智。\r\n　　大山羡代配音的哆啦a梦声音比较沙哑，而且比较沉稳。",
+    "nsfw": false,
+    "locked": false,
+    "date": "1979-04-02",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/64/b3/37460_gtg0V.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/64/b3/37460_gtg0V.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/64/b3/37460_gtg0V.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/64/b3/37460_gtg0V.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/64/b3/37460_gtg0V.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "哆啦A梦 大山版"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "铜锣卫门",
+                    "k": null
+                },
+                {
+                    "v": "哆啦A梦 1979版",
+                    "k": null
+                },
+                {
+                    "v": "ドラえもん (1979年)",
+                    "k": null
+                },
+                {
+                    "v": "Doraemon",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "1787"
+        },
+        {
+            "key": "放送开始",
+            "value": "1979年4月2日"
+        },
+        {
+            "key": "播放结束",
+            "value": "2005年3月25日"
+        },
+        {
+            "key": "导演",
+            "value": "無 →もとひら了→ 芝山努"
+        },
+        {
+            "key": "其他",
+            "value": "全1787話制作された。特別番組用のために作られた（通常は話数に数えられない）作品も数えれば、1814話に達する。"
+        }
+    ],
+    "volumes": 0,
+    "eps": 1787,
+    "total_episodes": 610,
+    "rating": {
+        "rank": 25,
+        "total": 2823,
+        "count": {
+            "one": 6,
+            "two": 3,
+            "three": 2,
+            "four": 4,
+            "five": 8,
+            "six": 56,
+            "seven": 284,
+            "eight": 852,
+            "nine": 825,
+            "ten": 783
+        },
+        "score": 8.7
+    },
+    "collection": {
+        "wish": 219,
+        "collect": 4630,
+        "doing": 163,
+        "on_hold": 254,
+        "dropped": 96
+    },
+    "tags": [
+        {
+            "name": "童年",
+            "count": 769
+        },
+        {
+            "name": "哆啦A梦",
+            "count": 571
+        },
+        {
+            "name": "TV",
+            "count": 466
+        },
+        {
+            "name": "藤子・F・不二雄",
+            "count": 379
+        },
+        {
+            "name": "1979",
+            "count": 292
+        },
+        {
+            "name": "漫画改",
+            "count": 286
+        },
+        {
+            "name": "怎么看都看不完系列",
+            "count": 217
+        },
+        {
+            "name": "搞笑",
+            "count": 209
+        },
+        {
+            "name": "科幻",
+            "count": 145
+        },
+        {
+            "name": "SHIN-EI",
+            "count": 115
+        },
+        {
+            "name": "没看完",
+            "count": 81
+        },
+        {
+            "name": "漫改",
+            "count": 80
+        },
+        {
+            "name": "日常",
+            "count": 54
+        },
+        {
+            "name": "日本",
+            "count": 32
+        },
+        {
+            "name": "多啦A梦",
+            "count": 28
+        },
+        {
+            "name": "经典",
+            "count": 25
+        },
+        {
+            "name": "シンエイ動画",
+            "count": 16
+        },
+        {
+            "name": "教育片",
+            "count": 16
+        },
+        {
+            "name": "治愈",
+            "count": 14
+        },
+        {
+            "name": "70年代",
+            "count": 14
+        },
+        {
+            "name": "长篇",
+            "count": 12
+        },
+        {
+            "name": "子供向",
+            "count": 11
+        },
+        {
+            "name": "1979年4月",
+            "count": 10
+        },
+        {
+            "name": "1979年",
+            "count": 9
+        },
+        {
+            "name": "动画",
+            "count": 7
+        },
+        {
+            "name": "奇幻",
+            "count": 7
+        },
+        {
+            "name": "ドラえもん",
+            "count": 7
+        },
+        {
+            "name": "TVA",
+            "count": 7
+        },
+        {
+            "name": "神作",
+            "count": 7
+        },
+        {
+            "name": "1970s",
+            "count": 6
+        }
+    ],
+    "meta_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        7251,
+        7259,
+        7260,
+        7312,
+        7316
+    ],
+    "main_characters": [
+        {
+            "id": 7251,
+            "name": "ドラえもん",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/72/d1/7251_crt_eKXkB.jpg?r=1450325708",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/d1/7251_crt_eKXkB.jpg?r=1450325708",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/d1/7251_crt_eKXkB.jpg?r=1450325708",
+                "grid": "https://lain.bgm.tv/pic/crt/g/72/d1/7251_crt_eKXkB.jpg?r=1450325708"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4369,
+                    "name": "大山のぶ代",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/66/5d/4369_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/5d/4369_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/5d/4369_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/66/5d/4369_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                },
+                {
+                    "id": 7192,
+                    "name": "林保全",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a9/73/7192_prsn_sIDSG.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/73/7192_prsn_sIDSG.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/73/7192_prsn_sIDSG.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a9/73/7192_prsn_sIDSG.jpg"
+                    },
+                    "short_summary": "香港的资深男配音演员，1971年3月加入无线电视配音组，1992年转往亚洲电视配音组，1994年重返无线电视配音组。\r\n\r\n因多年为《哆啦A梦》配音而深入民心。\r\n\r\n代表作：叮当／哆啦A梦（叮当／哆啦A梦）、紫龙（圣斗士星矢）、熊猫博士（成语动画廊 ）等",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7259,
+            "name": "野比のび太",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d0/4c/7259_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/4c/7259_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/4c/7259_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d0/4c/7259_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 7260,
+            "name": "源静香",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c7/05/7260_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/05/7260_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/05/7260_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c7/05/7260_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 7312,
+            "name": "剛田武",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c9/3e/7312_crt_F745q.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/3e/7312_crt_F745q.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/3e/7312_crt_F745q.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c9/3e/7312_crt_F745q.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 7316,
+            "name": "骨川スネ夫",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5c/df/7316_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/df/7316_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/df/7316_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5c/df/7316_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7713,
+                    "name": "劉傑",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c8/e7/7713_prsn_Bb8xl.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/e7/7713_prsn_Bb8xl.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/e7/7713_prsn_Bb8xl.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c8/e7/7713_prsn_Bb8xl.jpg"
+                    },
+                    "short_summary": "或许你不知道他的名字，但你一定听过他的声音，他是《棒球英豪》里青涩散漫的笨哥哥“上杉达也”，《名侦探柯南》里自信专一的推理狂“工藤新一”，《犬夜叉》里的固执可爱的半妖“犬夜叉”《哆啦A梦》里的骄傲爱炫耀的牙擦仔“骨川小夫”。他就是中国首席声优刘杰，（1960年8月31日－）为台湾男性资深配音演员、广播节目主持人，本名刘鹏杰。出生于台北市。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

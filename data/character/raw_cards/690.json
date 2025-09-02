@@ -1,0 +1,68 @@
+{
+    "id": 690,
+    "name": "森美咲",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c0/6d/690_sl6rb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/6d/690_sl6rb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/6d/690_sl6rb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c0/6d/690_sl6rb.jpg"
+    },
+    "summary": "即将毕业的大学4年级生。1989年1月6日、昭和64年的7日间出生。双亲事故身亡，与姊姊、姊夫住在一起，原本内定在姊夫良助原本的公司里工作。\r\n毕业旅行时在华盛顿哥伦比亚特区认识泷泽朗，两人一起回到日本。\r\n在“六十枚导弹袭击”事件的最后，泷泽朗把自己的NOBLESSE手机放在了她衣服的口袋中。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "森美咲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "森美 咲"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "もりみ さき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Morimi Saki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1989年1月6日"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "早見沙織"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1989,
+    "birth_mon": 1,
+    "birth_day": 6,
+    "stat": {
+        "comments": 6,
+        "collects": 39
+    },
+    "anime_ids": [
+        1451
+    ]
+}

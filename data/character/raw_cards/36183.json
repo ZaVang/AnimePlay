@@ -1,0 +1,44 @@
+{
+    "id": 36183,
+    "name": "モグゾー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/da/4a/36183_crt_Dln3F.jpg?r=1473064660",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/4a/36183_crt_Dln3F.jpg?r=1473064660",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/4a/36183_crt_Dln3F.jpg?r=1473064660",
+        "grid": "https://lain.bgm.tv/pic/crt/g/da/4a/36183_crt_Dln3F.jpg?r=1473064660"
+    },
+    "summary": "でかい。くまっぽい。クラスは戦士。\r\n若干のろいが剣の扱いは正確で意外と器用。決める時に決めてくれる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莫古索"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Mogzo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 11
+    },
+    "anime_ids": [
+        148726
+    ]
+}

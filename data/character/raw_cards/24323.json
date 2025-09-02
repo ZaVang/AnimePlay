@@ -1,0 +1,64 @@
+{
+    "id": 24323,
+    "name": "影山飛雄",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/05/0a/24323_crt_z77p4.jpg?r=1411356359",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/0a/24323_crt_z77p4.jpg?r=1411356359",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/0a/24323_crt_z77p4.jpg?r=1411356359",
+        "grid": "https://lain.bgm.tv/pic/crt/g/05/0a/24323_crt_z77p4.jpg?r=1411356359"
+    },
+    "summary": "圧倒的センスでコートを支配する、人呼んで“コート上の王様”。 中学時代はその厳しい姿勢からチーム内で孤立していた。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "影山飞雄"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かげやま とびお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kageyama Tobio"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "12月22日"
+        },
+        {
+            "key": "身高",
+            "value": "180.6cm→181.9cm→188cm"
+        },
+        {
+            "key": "体重",
+            "value": "66.3kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 22,
+    "stat": {
+        "comments": 25,
+        "collects": 118
+    },
+    "anime_ids": [
+        173849,
+        120236,
+        84171,
+        295421,
+        269918
+    ]
+}

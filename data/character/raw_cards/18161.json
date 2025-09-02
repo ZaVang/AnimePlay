@@ -1,0 +1,80 @@
+{
+    "id": 18161,
+    "name": "海馬瀬人",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b3/4b/18161_crt_tcCe8.jpg?r=1751789981",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/4b/18161_crt_tcCe8.jpg?r=1751789981",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/4b/18161_crt_tcCe8.jpg?r=1751789981",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b3/4b/18161_crt_tcCe8.jpg?r=1751789981"
+    },
+    "summary": "游戏的宿敌、世界一流游戏企业“海马集团”的总裁。极度骄傲和自信的海马一心成为史上最伟大的决斗者，为此他不惜使用任何手段。海马的标志性怪兽是凶猛的传奇稀有卡“青眼白龙”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "海马濑人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Seto Kaiba"
+                },
+                {
+                    "k": "日文名",
+                    "v": "海馬 瀬人"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かいば せと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kaiba Seto"
+                },
+                {
+                    "k": "昵称",
+                    "v": "社长"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "10月25日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "186cm"
+        },
+        {
+            "key": "体重",
+            "value": "65kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://www.yugioh.com/characters/seto-kaiba"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 25,
+    "stat": {
+        "comments": 21,
+        "collects": 72
+    },
+    "anime_ids": [
+        6390
+    ]
+}

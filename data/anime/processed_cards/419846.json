@@ -1,0 +1,74 @@
+{
+    "id": 419846,
+    "name": "想要成为影之实力者！ 第二季",
+    "image_path": "data/images/anime/419846.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "接下来的舞台是由“血之女王”、“妖狐”、“暴君”三势力统治的无法都市。\r\n那里是无赖横行、弱肉强食的世界。为了讨伐吸血鬼们的支配者“血之女王”被姐姐克莱儿带走的希德，因为有机会做出“影之实力者”的行为而兴奋不已……。\r\n围绕“血之女王”的阴谋开始展开，无法都市三股势力混杂一起。\r\n此外，姐姐克莱儿也被卷入骚乱，暗影庭院也独自采取行动。\r\n在极度混沌中，希德不为人知地开始扮演幕后暗影。\r\n红月升起，觉醒的时刻到来了……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "战斗",
+        "小说改"
+    ],
+    "date": "2023-10-04",
+    "rating_rank": 1382,
+    "rating_score": 7.3,
+    "rating_total": 8338,
+    "main_character_ids": [
+        104269
+    ],
+    "main_characters": [
+        {
+            "id": 104269,
+            "name": "シド・カゲノー / シャドウ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/af/eb/104269_crt_SvQKJ.jpg?r=1675247488",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/eb/104269_crt_SvQKJ.jpg?r=1675247488",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/eb/104269_crt_SvQKJ.jpg?r=1675247488",
+                "grid": "https://lain.bgm.tv/pic/crt/g/af/eb/104269_crt_SvQKJ.jpg?r=1675247488"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 12143,
+                    "name": "山下誠一郎",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/67/99/12143_prsn_f8HZa.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/99/12143_prsn_f8HZa.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/99/12143_prsn_f8HZa.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/67/99/12143_prsn_f8HZa.jpg"
+                    },
+                    "short_summary": "山下 誠一郎（やました せいいちろう、1992年5月21日 - ）は、日本の男性声優。\r\n大沢事務所所属。広島県出身。アミューズメントメディア総合学院声優タレント学科卒業。\r\n\r\n高校卒業後、アミューズメントメディア総合学院へ入学。2012年に洋画『グッド・ドクター 禁断のカルテ』で声優デビューを果たした後、2013年1月から3月にかけて行われた「プロダクション所属学内オーディション」で大沢事務所に合格。同年10月にはテレビアニメ『ワルキューレ ロマンツェ』で主役デビューを果たした。",
+                    "locked": false
+                },
+                {
+                    "id": 35605,
+                    "name": "南真由",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/80/d1/35605_prsn_6LRuC.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/d1/35605_prsn_6LRuC.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/d1/35605_prsn_6LRuC.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/80/d1/35605_prsn_6LRuC.jpg"
+                    },
+                    "short_summary": "声優養成所「スタジオカンブリア」在籍時に『ガンダムビルドファイターズトライ』の生徒役でテレビアニメ初出演。\r\n\r\n『放課後ガールズトライブ』のキャスティングをユーザー投票で決定するオーディションで、清涼院撫子役を演じることとなる。\r\n\r\n2016年、円演劇研究所に入所。2017年2月より演劇集団円の会員昇格をする。\r\n\r\n2017年、ゲーム「Leaugue of Angels」ジーナ役オーディションにてグランプリを獲得する。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

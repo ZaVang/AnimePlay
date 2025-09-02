@@ -1,0 +1,152 @@
+{
+    "id": 199392,
+    "name": "血界战线 & BEYOND",
+    "image_path": "data/images/anime/199392.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "曾经被称为纽约的城市，仅仅一晚便消失无踪。\r\n出现在那里的城市“赫尔沙雷姆兹·罗特”。在浓雾的另一侧展开，连结“异世界”与现世的这一地区，变化成了各怀心思的人们所跋扈的“地球上最危险的城市”。\r\n为了保护这座混沌之城的均衡，持续着不为人知的活动的人们。\r\n以使用布雷格利德流血斗术的强硬绅士克劳斯·V·莱因赫兹为首领，面带伤疤的克劳斯的左膀右臂史蒂芬，银发不良扎普·伦弗洛与半人半鱼的齐德，不可视的人狼钱·皇与独眼的淑女K·K。以及拥有“诸神的义眼”的青年雷欧……。\r\n当骚动发生之时，秘密结社·莱布拉必定会现身。\r\n响彻小巷子里的狂乱与邪恶的怪物们。深爱的深渊与不断重复的灾变。不会结束的家常便饭现在再次开幕。\r\n并且，去往更加遥远的Beyond……。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2017-10-07",
+    "rating_rank": 816,
+    "rating_score": 7.5,
+    "rating_total": 6010,
+    "main_character_ids": [
+        31630,
+        31632,
+        31633,
+        31640
+    ],
+    "main_characters": [
+        {
+            "id": 31630,
+            "name": "レオナルド・ウォッチ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4c/35/31630_crt_pGC2c.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/35/31630_crt_pGC2c.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/35/31630_crt_pGC2c.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4c/35/31630_crt_pGC2c.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4231,
+                    "name": "阪口大助",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/10/4231_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/10/4231_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/10/4231_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/10/4231_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 31632,
+            "name": "クラウス・V・ラインヘルツ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/52/9a/31632_crt_vxaVV.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/9a/31632_crt_vxaVV.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/9a/31632_crt_vxaVV.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/52/9a/31632_crt_vxaVV.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4130,
+                    "name": "小山力也",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c9/29/4130_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/29/4130_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/29/4130_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c9/29/4130_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の男性俳優、声優、ナレーター。劇団俳優座所属。京都府京都市生まれ。愛称は「リッキー」「りきちゃん」「リキ」。\r\n立命館中学校・高等学校を経て1982年に立命館大学法学部入学。劇団立命芸術劇場に所属する。同期に現TBSアナウンサーの長峰由紀がおり、長峰を「トットちゃん」と呼んでいた[2]。当時は別役実、つかこうへい作品などを上演していた。1987年に大学卒業後、桐朋学園大学短期大学部芸術科演劇専攻に進む。部活動は水泳部に所属しており、水着になることには何の抵抗もないという。卒業後に劇団俳優座入団。\r\n\r\n『ER』が声優デビューとなるが、それが契機となりアニメなどで活躍する下地となった。また『うたわれるものらじお』をきっかけに、最近ではいろいろな女性声優とのラジオ、TV番組が急増。\r\n\r\n舞台俳優としても活躍し、2000年頃からはヨーロッパでの舞台公演（イギリス・フランス・オランダ・ルーマニア・イタリア・ロシア）に積極的に参加。2001年にアントーニオ役で出演した『ヴェニスの商人』は、第9回読売演劇大賞優秀作品賞を受賞。\r\n\r\n2009年には神谷明の降板により、『名探偵コナン』の二代目・毛利小五郎役に選ばれた。過去にもテレビシリーズ、映画『名探偵コナン 探偵たちの鎮魂歌』、テレビゲーム『名探偵コナン 追憶の幻想』のゲスト声優として何かとコナンには関わっている。\r\n\r\n2011年、第五回声優アワード「富山敬賞」を受",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 31633,
+            "name": "ザップ・レンフロ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/99/e3/31633_crt_444T4.jpg?r=1480961922",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/e3/31633_crt_444T4.jpg?r=1480961922",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/e3/31633_crt_444T4.jpg?r=1480961922",
+                "grid": "https://lain.bgm.tv/pic/crt/g/99/e3/31633_crt_444T4.jpg?r=1480961922"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4424,
+                    "name": "中井和哉",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/83/45/4424_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/45/4424_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/45/4424_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/83/45/4424_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の男性声優、ナレーター。兵庫県神戸市出身。青二プロダクション所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 31640,
+            "name": "スティーブン・A・スターフェイズ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d6/43/31640_crt_zCFKK.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/43/31640_crt_zCFKK.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/43/31640_crt_zCFKK.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d6/43/31640_crt_zCFKK.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3872,
+                    "name": "宮本充",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e4/e0/3872_prsn_8C5sC.jpg?r=1501343362",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/e0/3872_prsn_8C5sC.jpg?r=1501343362",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/e0/3872_prsn_8C5sC.jpg?r=1501343362",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e4/e0/3872_prsn_8C5sC.jpg?r=1501343362"
+                    },
+                    "short_summary": "日本の男性俳優、声優、ナレーターである。本名同じ。劇団昴所属・理事。大阪府堺市出身。生まれは東京都。大阪府立泉陽高等学校、北海道大学工学部合成化学科卒業。血液型はA型。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

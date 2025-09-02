@@ -1,0 +1,64 @@
+{
+    "id": 106312,
+    "name": "橘淳之介",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e7/89/106312_crt_yOzSs.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/89/106312_crt_yOzSs.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/89/106312_crt_yOzSs.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e7/89/106312_crt_yOzSs.jpg"
+    },
+    "summary": "本作の主人公。\r\n愛のないセックスを真っ向から否定する処女厨で、\r\n青藍島にありながらドスケベセックスを拒否している。\r\n反交尾勢力「NLNS（No Love No Sex）」を立ち上げ、島の条例に反抗する。\r\n\r\n「――俺が、ドスケベ条例をぶっ潰す」",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "橘淳之介"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たちばな じゅんのすけ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tachibana Junnosuke"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "12月31日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "179cm"
+        },
+        {
+            "key": "惯用手",
+            "value": "右手"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 31,
+    "stat": {
+        "comments": 59,
+        "collects": 37
+    },
+    "anime_ids": [
+        477825
+    ]
+}

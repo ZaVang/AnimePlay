@@ -1,0 +1,40 @@
+{
+    "id": 26808,
+    "name": "キャンディ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f1/06/26808_crt_Bpvil.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/06/26808_crt_Bpvil.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/06/26808_crt_Bpvil.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f1/06/26808_crt_Bpvil.jpg"
+    },
+    "summary": "「童話國度」的精靈女孩，負責來人間尋找五名光之美少女及收集魔法果實。做事有點失方寸，喜歡可愛的東西及打扮，圓形的耳朵可任意擺動，可以變出魔法果實幫助光之美少女使出必殺技。語尾習慣加上「～咕嚕（～クル）」。\r\n    故事的終末，被指定為新任的童話王國領導者，得到額外型態「皇家糖糖（ロイヤルキャンディ，Royale Candy）」。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "糖糖"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Kyandi"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        27332
+    ]
+}

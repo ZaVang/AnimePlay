@@ -1,0 +1,157 @@
+{
+    "id": 1773,
+    "name": "死亡笔记",
+    "image_path": "data/images/anime/1773.jpg",
+    "points": 8.4,
+    "cost": 4,
+    "rarity": "SSR",
+    "description": "高三生夜神月意外捡到一本名《DEATH NOTE》的笔记本，并且发现只要写下想要杀死的人的名字，就会变成现实。\r\n月开始利用死亡笔记制裁那些他认为该死的人。接着，笔记的原主人：死神也以旁观者的姿态出现在月面前。\r\n另一方面越来越多的罪犯离奇死亡事件引起了各国政府的关注，在国际刑事警察机构会议（ICPO）上他们委托神秘人士L来调查此事。社会上则称这个神秘的杀手为“基拉”，不同的人有不同的反应。  \r\n到底谁才是正义的一方，谁又会取得最后的胜利呢？一场斗智斗勇的较量就此展开…… ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 37,
+    "synergy_tags": [
+        "悬疑",
+        "TV",
+        "日本",
+        "推理",
+        "漫画改"
+    ],
+    "date": "2006-10-04",
+    "rating_rank": 60,
+    "rating_score": 8.4,
+    "rating_total": 21484,
+    "main_character_ids": [
+        2215,
+        15993,
+        16684,
+        16685
+    ],
+    "main_characters": [
+        {
+            "id": 2215,
+            "name": "夜神月",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bd/36/2215_crt_nWAZZ.jpg?r=1720107970",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/36/2215_crt_nWAZZ.jpg?r=1720107970",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/36/2215_crt_nWAZZ.jpg?r=1720107970",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bd/36/2215_crt_nWAZZ.jpg?r=1720107970"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4697,
+                    "name": "宮野真守",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307"
+                    },
+                    "short_summary": "小学生時代から劇団ひまわりに所属し、主に舞台などで活動した。高校生時代に海外ドラマ『私はケイトリン』の吹替で声優デビューする。PS2用ゲーム『キングダム ハーツ』のリク役で注目を集め、その後は、『機動戦士ガンダム00』や『DEATH NOTE』の主役を務めるなど、数々の人気作品に出演している。\r\n第1回声優アワード主演男優賞および新人賞にノミネートされた（『DEATH NOTE』夜神月役）。 2008年の第2回声優アワード主演男優賞受賞。東京国際アニメフェア2008・第7回東京アニメアワード個人賞（声優部門）受賞（『DEATH NOTE』『機動戦士ガンダム00』）。 2008年12月1日、劇団ひまわりのHPで結婚と子供を授かったことを公表した。結婚相手や子供の性別は非公開。 2011年、ノン子とのび太のアニメスクランブルにて第21回アニメグランプリ最優秀男性声優賞受賞。 2012年、第6回声優アワードにて助演男優賞と歌唱賞（後者はST☆RISHとして）、日刊スポーツ第1回日刊アニメグランプリにてMIP男性声優賞、アニメージュ第34回アニメグランプリ声優部門においてグランプリを受賞。\r\n\r\n2025年6月8日宣布与向日葵剧团合约期满退团，次日宣布加入研音。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 15993,
+            "name": "弥海砂",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/40/ea/15993_crt_n0B4G.jpg?r=1720107996",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/ea/15993_crt_n0B4G.jpg?r=1720107996",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/ea/15993_crt_n0B4G.jpg?r=1720107996",
+                "grid": "https://lain.bgm.tv/pic/crt/g/40/ea/15993_crt_n0B4G.jpg?r=1720107996"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4158,
+                    "name": "平野綾",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/03/2e/4158_prsn_3p33N.jpg?r=1565883479",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/2e/4158_prsn_3p33N.jpg?r=1565883479",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/2e/4158_prsn_3p33N.jpg?r=1565883479",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/03/2e/4158_prsn_3p33N.jpg?r=1565883479"
+                    },
+                    "short_summary": "日本爱知县出身的女性声优、舞台女优、歌手。爱好是读书和银装饰品收集。年幼时候在美国生活。\r\n1998年，加入东京儿童剧团，开始参与电视广告等活动。\r\n2006年3月8日，以歌手身份推出第一首单曲《Breakthrough》。\r\n2006年，初次担任动画《凉宫春日的忧郁》主演，其片头曲《冒険でしょでしょ?》、片尾曲《ハレ晴レユカイ》、剧中歌集单曲《涼宮ハルヒの詰合》与个人第三张单曲《明日のプリズム》都创下不错的纪录。2007年担任主演的《幸运☆星》的片头曲《拿去吧！水手服》带起一阵狂热。\r\n2007年获得第一回声优奖新人女优赏，东京国际动画博览会第六回的声优赏。2008年获得声优奖主演女优赏和歌唱赏。\r\n其他代表角色有《死亡笔记》弥海砂、《NANA》芹泽蕾拉、《妖精的尾巴》露西·哈特菲利亚、《白色相簿》森川由绮、《银魂》今井信女、《寄生兽》小右等。\r\n2011年8月12日，宣布将于8月20日退出Space Craft Entertainment和关闭官方fan club“平野塾”。8月21日移籍Grick。\r\n2012年2月13日，在usteam的会员限定节目宣布已签署环球唱片公司。\r\n2011年至今主要发展方向转为音乐剧，出演角色包括《悲惨世界》艾潘妮，《lady bess》伊丽莎白女王等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16684,
+            "name": "L",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fc/07/16684_crt_3Vfi9.jpg?r=1720108018",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/07/16684_crt_3Vfi9.jpg?r=1720108018",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/07/16684_crt_3Vfi9.jpg?r=1720108018",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fc/07/16684_crt_3Vfi9.jpg?r=1720108018"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3900,
+                    "name": "山口勝平",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/46/c8/3900_prsn_9Z9tZ.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/46/c8/3900_prsn_9Z9tZ.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/46/c8/3900_prsn_9Z9tZ.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/46/c8/3900_prsn_9Z9tZ.jpg"
+                    },
+                    "short_summary": "日本の声優、劇団21世紀FOX所属舞台俳優、芸能プロダクション悟空代表。\r\n\r\n为人熟悉的代表配音作品有动画《乱马½》主角早乙女乱马〈男生〉、《犬夜叉》主角犬夜叉、《名侦探柯南》工藤新一、《魔术快斗》主角黑羽快斗／怪盗基德、《ONE PIECE》的骗人布、《死亡笔记本》的L、《我们这一家》的藤野等。\r\n兴趣和特长为画插图、弹吉他、杀阵。入读声优学校之前送过报纸。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16685,
+            "name": "リューク",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/43/8f/16685_crt_4x93X.jpg?r=1658995225",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/43/8f/16685_crt_4x93X.jpg?r=1658995225",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/43/8f/16685_crt_4x93X.jpg?r=1658995225",
+                "grid": "https://lain.bgm.tv/pic/crt/g/43/8f/16685_crt_4x93X.jpg?r=1658995225"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6541,
+                    "name": "中村獅童",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/04/65/6541_prsn_50CG5.jpg?r=1724687884",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/65/6541_prsn_50CG5.jpg?r=1724687884",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/65/6541_prsn_50CG5.jpg?r=1724687884",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/04/65/6541_prsn_50CG5.jpg?r=1724687884"
+                    },
+                    "short_summary": "二代目 中村 獅童（にだいめ なかむら しどう、昭和47年（1972年）9月14日 - ）は、日本の歌舞伎役者、俳優、声優。本名、小川 幹弘（おがわ みきひろ）。乙女座。血液型はO型。身長177cm。体重63kg。足のサイズ26.5cm。日本大学藝術学部演劇学科中退。\r\n\r\n中村出身日本歌舞伎世家，父亲及叔父都是歌舞伎演员，他自幼接受日本传统戏剧训练，一九八一年时已开始参与歌舞伎的演出，近年转战电影界。二零零二年主演电影《乒乓》，同年开始拍剧，正式踏足电影及电视界。中村在日本属于性格演员，每次演出都甚为抢镜，电影《乒乓》的演出，他终于跳出传统歌舞伎仃的框框，以光头造型配上没有眉毛的造型，极为突出！《乒乓》更令他提名日本最佳男演员。在《借着雨点说爱你》中，中村饰演不善于表达爱意的父亲，电影在日票房报捷，奠定了中村狮童实力演员之地位。\r\n1978年以七岁之稚龄首度登上舞台的中村狮童,本名小川干弘，出身于日本歌舞伎的名门《万屋一门》，是已故的万屋锦之介的外甥，1981年首次在歌舞伎座出演《妹背山妇女庭训》并袭名《中村狮童》(日本歌舞伎的艺名是世代相袭，但也要看演出实绩才决定是否能袭名)，除了歌舞伎之外，他在2002年也与洼冢洋介、李灿森合演电影《乒乓》窜红，后来也接演了日剧《HR》，2004年还出演NHK大河剧《新选组！》，但演出的角色多属怪咖。此外，也常以模特儿姿态在男性流行杂志上登场，算是歌舞伎的一大异类。去年演出《现在、很想见你》首次演出对于亡妻念念不忘的纯爱男子秋穗巧。这也是他首次诠释父亲的角色。\r\n《男人们的大和号》以及《霍元甲》中的精彩出演也吸引了无数观众的眼球。另外还担任目前大人气的电影《死亡笔记》以及动画片《死亡笔记》中死神硫克一角的声优。\r\n08年在吴宇森导演的电影《赤壁2决战天下》中饰演甘兴。\r\n在《翡翠森林狼与羊(Storm evening)》动画电影中，为狼(嘎布)配音。\r\n在神奇宝贝第11部剧场版《冥王龙与冰空的花束——雪米》中，为杰洛配音。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

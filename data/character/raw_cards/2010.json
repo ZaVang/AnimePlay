@@ -1,0 +1,65 @@
+{
+    "id": 2010,
+    "name": "サトシのピカチュウ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/02/94/2010_crt_7rr33.jpg?r=1720977703",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/94/2010_crt_7rr33.jpg?r=1720977703",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/94/2010_crt_7rr33.jpg?r=1720977703",
+        "grid": "https://lain.bgm.tv/pic/crt/g/02/94/2010_crt_7rr33.jpg?r=1720977703"
+    },
+    "summary": "小智的第一只神奇宝贝。非常讨厌进入精灵球里，所以平常都是坐在小智的肩膀上或跟在小智身边。\r\n\r\n皮卡丘一开始不听小智的话，也不愿意呆在精灵球中，因为它觉得精灵球中没意思，后与小智经历烈雀事件后皮卡丘开始听从小智的话而且还和小智默契十足。\r\n\r\n它和小智一样，对战斗充满着热情。它拒绝进化，因为它相信凭借自己的能力也能打赢。\r\n\r\n它有时候会帮忙照顾同伴中一些比较弱小的神奇宝贝，比如小霞的波克比。\r\n\r\n根据一些情节显示，小智的皮卡丘喜欢吃辣的东西和番茄酱。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小智的皮卡丘"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Ash's Pikachu"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Satoshi No Pikachu"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "小智的比卡超"
+                },
+                {
+                    "k": "昵称",
+                    "v": "皮神"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "雄性"
+        },
+        {
+            "key": "特性",
+            "value": "静电"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 29,
+        "collects": 125
+    },
+    "anime_ids": [
+        3019,
+        3021,
+        192680,
+        3020,
+        78799,
+        146408
+    ]
+}

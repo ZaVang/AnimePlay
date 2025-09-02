@@ -1,0 +1,79 @@
+{
+    "id": 104473,
+    "name": "ベオウルフモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a2/ce/104473_crt_AQRVt.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/ce/104473_crt_AQRVt.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/ce/104473_crt_AQRVt.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a2/ce/104473_crt_AQRVt.jpg"
+    },
+    "summary": "继承了传说中十斗士所有力量的数码宝贝，因为获得了未知能力而拥有超越传说的光能力。兼具野兽的狂野和人类的智慧，单手轻松挥下双刃大剑“三位一体”的强大战士。在战斗时从不冲动，沉着冷静地判断局势，信仰为朋友而战并挑战强敌的战士之道。左手持用于远程战斗的导弹发射器“罗兰2”，同时擅长远程战和近身战。必杀技是从罗兰2中发射出成对的跟踪导弹强袭敌人，用主炮猛轰敌人的强力组合重火器『光袭』，以及以亚光速自上段挥下大剑三位一体，瞬间将敌人斩断的『双剑斩』。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "战狼兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "贝奥武夫兽"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Beowolfmon"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Beourufumon"
+                },
+                {
+                    "k": "称号",
+                    "v": "光之融合斗士"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference/detail.php?directory_name=beowolfmon"
+        },
+        {
+            "key": "等级",
+            "value": "混合体"
+        },
+        {
+            "key": "类型",
+            "value": "战士型"
+        },
+        {
+            "key": "属性",
+            "value": "可变"
+        },
+        {
+            "key": "必杀技",
+            "value": [
+                {
+                    "v": "光袭"
+                },
+                {
+                    "v": "双剑斩"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        3131
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 72097,
+    "name": "麻藤兼嗣",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/75/3c/72097_crt_t2TOz.jpg?r=1712671931",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/3c/72097_crt_t2TOz.jpg?r=1712671931",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/3c/72097_crt_t2TOz.jpg?r=1712671931",
+        "grid": "https://lain.bgm.tv/pic/crt/g/75/3c/72097_crt_t2TOz.jpg?r=1712671931"
+    },
+    "summary": "MRSのディレクター。ミナレの喋りの才能を見出し、ミナレをラジオ業界に誘った。ミナレがラジオパーソナリティとしての活動を始めてからは、ミナレの番組のディレクターも務めている。\r\nかつてテレビ局に勤務していたが、シセル光明という芸人と出会ったことがきっかけでラジオ局へ移った過去を持つ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "麻藤兼嗣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "麻藤 兼嗣"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まとう かねつぐ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "matou kanetsugu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia(ja)"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 0
+    },
+    "anime_ids": [
+        292359
+    ]
+}

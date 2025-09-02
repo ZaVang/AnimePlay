@@ -1,0 +1,215 @@
+{
+    "id": 227718,
+    "name": "MEGALO BOX",
+    "image_path": "data/images/anime/227718.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "将肉体与“外骨骼技术”融合的究极格斗技——“MEGALO BOX”，将自己的全部赌在上面的男人们的热血战斗开始！\r\n今天也立于未认可地区的赌博比赛赛场上的MEGALO拳击手“Junk Dog”。虽然具备实力，却只有靠比赛造假赚钱这一条生存之道，他为自己的“现在”感到心焦。\r\n但，他与孤高的冠军·勇利相遇，作为MEGALO拳击手，作为男人，向自己的“现在”发起挑战——。 ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "运动"
+    ],
+    "date": "2018-04-05",
+    "rating_rank": 663,
+    "rating_score": 7.6,
+    "rating_total": 8463,
+    "main_character_ids": [
+        60666,
+        60801,
+        60802,
+        60803,
+        60804,
+        62431
+    ],
+    "main_characters": [
+        {
+            "id": 60666,
+            "name": "ジャンクドッグ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7f/2d/60666_crt_l24Ta.jpg?r=1621608555",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/2d/60666_crt_l24Ta.jpg?r=1621608555",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/2d/60666_crt_l24Ta.jpg?r=1621608555",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7f/2d/60666_crt_l24Ta.jpg?r=1621608555"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4982,
+                    "name": "細谷佳正",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/40/4e/4982_prsn_XOxkm.jpg"
+                    },
+                    "short_summary": "高中时代参加的社团是戏剧社和剑道社。后来只专注於戏剧社。\r\n专门学校时期和友人一起组成街头艺人，由于是新人加上良好的歌声和歌曲，被同一个事务所的前辈大须贺纯所称赞。与其搭档的友人是吉他老师。名字倾向本身的创作风格，用了‘不协和音’来命名。歌曲由两人共同创作。其中‘雪’这首曲子几乎是一个人完成的。而在当时的演出地点是在京王线府中站。\r\n在网球王子的试镜会中也参与了平古场凛的角色。\r\n以网球王子白石藏之介名义连续两个月发行角色专辑，为网球王子角色歌曲首例，2010年04月14日发行的首张专辑《Medicine or...?》在Oricon Style拿下首日第七名，首周第十名。2010年05月19日发行的第二张专辑《POISON》登上Oricon Style首日第三名，首周第六名。其中，《Medicine or...?》中的＜I.ng＞及《POISON》中的＜エピローグ＞皆由细谷本人亲自做词。\r\n\r\n兴趣是射击运动和吉他。\r\n喜欢的艺人以男性居多，像是藤原龙也和洼冢洋介。\r\n无关年龄，喜欢思想较为成熟的女性。\r\n讨厌的食物是牡蛎，连碰都不能碰。喜欢红酒。\r\n喜欢Ne-Yo的音乐。\r\n喜欢猫，会和流浪猫玩在一起，所以身上容易残留猫毛。有一次到电台参与‘电波系彼女’的录制，后来才知道小林ゆう对猫过敏，并且向她道歉。\r\n电台‘テニスの王子様 オン・ザ・レイディオ’中被认定了是欺负的一群，常被前辈声优欺负。\r\n身材较为纤细修长，非常容易出汗。\r\n经常有电波系的恐怖经验。\r\n被小林ゆう称赞其说话技巧很好。\r\n对电脑等电子装置很不熟悉的缘故，家中并没有电脑。工作上请附近的香烟店帮忙传真。\r\n对于星座很了解，不过否定自己的水瓶座B型是个“怪人”的见解。\r\n为了演出不良少年柔沢ジュウ的感觉，在自家的厕所里一边冲水一边大叫磨损喉咙。\r\n在过去的事件中，曾比喻自己“声音像没特色的茶泡饭”。\r\n\r\n2014年荣获第八届日本声优大赏“助演男优赏”。\r\n\r\n曾属Mausu Promotion。2014年在广播『天才軍師』2014年7月13日放送回中，宣布自2014年7月1日恢复为自由身。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 60801,
+            "name": "白都ゆき子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/85/65/60801_crt_229rB.jpg?r=1621609645",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/65/60801_crt_229rB.jpg?r=1621609645",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/65/60801_crt_229rB.jpg?r=1621609645",
+                "grid": "https://lain.bgm.tv/pic/crt/g/85/65/60801_crt_229rB.jpg?r=1621609645"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 14843,
+                    "name": "森なな子",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/cd/14843_prsn_bLjjf.jpg?r=1646528729",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/cd/14843_prsn_bLjjf.jpg?r=1646528729",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/cd/14843_prsn_bLjjf.jpg?r=1646528729",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/cd/14843_prsn_bLjjf.jpg?r=1646528729"
+                    },
+                    "short_summary": "出身学校は福岡市立城香中学校。宝塚歌劇団時代の芸名は冴輝 ちはや（さえき ちはや）。宝塚歌劇団時代の愛称は「モーリー」。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 60802,
+            "name": "南部贋作",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/36/c2/60802_crt_kz6LK.jpg?r=1621608694",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/c2/60802_crt_kz6LK.jpg?r=1621608694",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/c2/60802_crt_kz6LK.jpg?r=1621608694",
+                "grid": "https://lain.bgm.tv/pic/crt/g/36/c2/60802_crt_kz6LK.jpg?r=1621608694"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5468,
+                    "name": "斎藤志郎",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/92/df/5468_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/df/5468_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/df/5468_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/92/df/5468_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の男性俳優、声優。文学座所属。山形県酒田市出身。\r\n山形県立酒田工業高等学校、東洋大学法学部卒業。\r\n\r\n大学卒業後、都内の市役所の土木課で6年半働いていたが、退職し役者となった。\r\nアニメでは悪役が多く、人間以外の役を多く演じている。『結界師』の豆蔵のようなコミカルな役から『ベン10』のヴィルガクスのような威厳ある悪役まで演じる。\r\nまた、海外ドラマ・洋画の吹き替えの担当も数多く、中にはクレジットされていない役も多数ある。\r\n\r\n『ふたりは最高! ダーマ&グレッグ』で共演した雨蘭咲木子と親交がある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 60803,
+            "name": "サチオ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/28/ad/60803_crt_PECli.jpg?r=1621608902",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/ad/60803_crt_PECli.jpg?r=1621608902",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/ad/60803_crt_PECli.jpg?r=1621608902",
+                "grid": "https://lain.bgm.tv/pic/crt/g/28/ad/60803_crt_PECli.jpg?r=1621608902"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 15670,
+                    "name": "村瀬迪与",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/86/15670_prsn_1Qmw7.jpg?r=1555517542",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/86/15670_prsn_1Qmw7.jpg?r=1555517542",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/86/15670_prsn_1Qmw7.jpg?r=1555517542",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/86/15670_prsn_1Qmw7.jpg?r=1555517542"
+                    },
+                    "short_summary": "日本の女優・声優。マウスプロモーション所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 60804,
+            "name": "藤巻",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a9/f6/60804_crt_XxHXF.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/f6/60804_crt_XxHXF.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/f6/60804_crt_XxHXF.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a9/f6/60804_crt_XxHXF.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5337,
+                    "name": "木下浩之",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/80/73/5337_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/73/5337_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/73/5337_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/80/73/5337_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 62431,
+            "name": "勇利",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/89/ce/62431_crt_Jj9j5.jpg?r=1621608941",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/89/ce/62431_crt_Jj9j5.jpg?r=1621608941",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/89/ce/62431_crt_Jj9j5.jpg?r=1621608941",
+                "grid": "https://lain.bgm.tv/pic/crt/g/89/ce/62431_crt_Jj9j5.jpg?r=1621608941"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4483,
+                    "name": "安元洋貴",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e3/8f/4483_prsn_1GPaF.jpg?r=1510051257",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/8f/4483_prsn_1GPaF.jpg?r=1510051257",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/8f/4483_prsn_1GPaF.jpg?r=1510051257",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e3/8f/4483_prsn_1GPaF.jpg?r=1510051257"
+                    },
+                    "short_summary": "日本驹泽大学法律学系毕业。所属事务所为Sigma Seven（シグマ・セブン，Σ7）。\r\n\r\n拥有非常低沉音质的美声，大多配严肃或冷酷型的美青年，大多饰演认真老实的角色或是冷酷无情的敌方角色较多，但是，也饰演过许多像“狂乱家族日记”中乱崎帝架那样滑稽的角色。\r\n\r\n俳協ボイスアクターズスタジオ（俳协的声优养成学校）、The・声优塾、DOA ザ・フレッシュ出身。主要以旁白工作为居多，在‘洛克人EXE Stream’中饰演カーネル一角之后，固定角色方面的工作也开始多了起来。\r\n能获得茶渡的角色的契机，是恩师辻谷耕史与其经纪人说“安元很有趣喔，也用在动画上面看看吧！”的关系才参与试选会。\r\n\r\n昵称由来\r\n饲主\r\n同事务所的中村悠一在一段时间内由于体重原因被勒令禁肉减肥，安元却偷偷喂食他肉吃。当然不光是这个时候，就是平时也经常喂中村东西吃，据说安元的博客日记基本上可以看作“肉村养成日记”，因而被唤为“饲主”。\r\n良心君\r\n出自神谷浩史与小野大辅的广播DGS。在DGS中最正常且超级老好人的安元（本人自言在全日本好人排名靠前），甚至有戏言安元是含着好人卡出生的最后的良心君。因而被唤为“良心君”。\r\nY元\r\n安元本人很喜欢用姓名的某一个字母外加其后的第二个字来称呼某人，比如称自己Y元，称游佐浩二Y佐，称铃木达央T央，称寺岛拓笃T岛等等。\r\n\r\n虽然偏好大型犬、但饲养一只叫ギンコ的玩具贵宾犬（母），溺爱到以‘公主’来称呼它。\r\n非常喜欢重金属音乐。\r\n拥有20副以上的眼镜。\r\n在中学时代有过在加拿大寄宿家庭的经验。\r\n在大学时代的社团是广播研究会。俳协所属中佐藤朝问是他的前辈。\r\n有1位姐姐，在就职时期曾替安元说服父亲，之后一直在她面前抬不起头来。\r\n兴趣是锻炼肌肉。\r\n被说过和父亲的声音十分相似。本人也曾说过“如果父亲进入声优界的话自己恐怕就没工作了。（因为工作会被父亲抢去）”这样的话。（于广播‘电击大赏’2008年11月8日放送时的发言）。\r\n经常在自己出演的节目中，对同业者（特别是男性声优）进行八卦爆料。\r\n自己的名字（やすもと）时不时被误会为稀有的姓的“あんげん”。\r\n喜欢的名牌是roar、SHELLAC。\r\nCAPCOM公司出品的对战游戏“吸血鬼”中使用角色Anakiras，在当时的游戏中心立于不败地位，本人对此颇自豪。自曝在学生时代深陷足球游戏及赛马游戏因此成绩一落千丈。\r\n对于女性，第一注意的地方是脚。（その执事、狂騒～赤いヴァレンタイン～活动中的发言）\r\n曾经爆料在小学的时候左腕曾骨折过，原因是因为自己觉得自己是英雄，于是从二楼跳了下去，结果手上绑了绷带和夹板。在这种情况下上了飞机，然后手就开始发出声响，于是在后面的小学的某同学就说“安元的手腕是经过受控机体改造过的”，于是当时大家都喊他“眼镜蛇”。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

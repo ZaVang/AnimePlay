@@ -1,0 +1,306 @@
+{
+    "id": 9270,
+    "type": 2,
+    "name": "ちびまる子ちゃん",
+    "name_cn": "樱桃小丸子",
+    "summary": "『ちびまる子ちゃん』（ちびまるこちゃん）は、さくらももこによる日本の漫画作品やそれを元にしたアニメ作品、またはその主人公のあだ名。作者の子供時代の思い出を軸に、普通の小学生の生活を綴るコメディ。また、ドラマでまる子を演じた森迫永依・伊藤綺夏も「ちびまる子ちゃん」と呼ばれることがある。",
+    "nsfw": false,
+    "locked": false,
+    "date": "1995-01-08",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/25/04/9270_zlMzw.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/25/04/9270_zlMzw.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/25/04/9270_zlMzw.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/25/04/9270_zlMzw.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/25/04/9270_zlMzw.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "樱桃小丸子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "樱桃小丸子2",
+                    "k": null
+                },
+                {
+                    "v": "ちびまる子ちゃん 第2期",
+                    "k": null
+                },
+                {
+                    "v": "ちびまる子ちゃん (1995)",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "*"
+        },
+        {
+            "key": "放送开始",
+            "value": "1995年1月8日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://chibimaru.tv"
+        },
+        {
+            "key": "播放电视台",
+            "value": "フジテレビ（FNS）28局ネット"
+        },
+        {
+            "key": "导演",
+            "value": "須田裕美子、高木淳"
+        },
+        {
+            "key": "Copyright",
+            "value": "© さくらプロダクション / 日本アニメーション"
+        },
+        {
+            "key": "原作",
+            "value": "さくらももこ　集英社「りぼんマスコットコミックス」刊"
+        },
+        {
+            "key": "人物设定",
+            "value": "船越英之、中原久文"
+        },
+        {
+            "key": "监修",
+            "value": "宮永正隆、芝山努"
+        },
+        {
+            "key": "动画制作",
+            "value": "日本アニメーション"
+        },
+        {
+            "key": "製作",
+            "value": "本橋浩一、石川和子；製作管理：高桑充、中島順三、本橋寿一"
+        },
+        {
+            "key": "制片人",
+            "value": "フジテレビ：立川善久、和田実、金田耕司、鈴木専哉、鈴木吉弘、石井浩二、原田冬彦、川上大輔、春名剛生、松崎容子、水野綾子、高木明梨須、狩野雄太、橋爪駿輝、江花松樹、髙野舞、福山晋司；日本アニメーション：佐藤昭司、遠藤重夫、田中真津美、落合智、戸川淳、早船健一郎、田中伸明"
+        },
+        {
+            "key": "制作",
+            "value": "フジテレビ、日本アニメーション、読売広告社(NC)"
+        }
+    ],
+    "volumes": 0,
+    "eps": 0,
+    "total_episodes": 1529,
+    "rating": {
+        "rank": 774,
+        "total": 1315,
+        "count": {
+            "one": 2,
+            "two": 4,
+            "three": 1,
+            "four": 7,
+            "five": 43,
+            "six": 145,
+            "seven": 420,
+            "eight": 438,
+            "nine": 160,
+            "ten": 95
+        },
+        "score": 7.6
+    },
+    "collection": {
+        "wish": 138,
+        "collect": 2218,
+        "doing": 75,
+        "on_hold": 178,
+        "dropped": 90
+    },
+    "tags": [
+        {
+            "name": "童年",
+            "count": 452
+        },
+        {
+            "name": "小丸子",
+            "count": 246
+        },
+        {
+            "name": "经典",
+            "count": 216
+        },
+        {
+            "name": "TV",
+            "count": 139
+        },
+        {
+            "name": "爷爷才是萌物",
+            "count": 136
+        },
+        {
+            "name": "1995",
+            "count": 109
+        },
+        {
+            "name": "没看完",
+            "count": 90
+        },
+        {
+            "name": "OPED都是神曲",
+            "count": 86
+        },
+        {
+            "name": "看不完",
+            "count": 81
+        },
+        {
+            "name": "樱桃小丸子",
+            "count": 56
+        },
+        {
+            "name": "搞笑",
+            "count": 45
+        },
+        {
+            "name": "童年系",
+            "count": 32
+        },
+        {
+            "name": "漫画改",
+            "count": 31
+        },
+        {
+            "name": "不全",
+            "count": 18
+        },
+        {
+            "name": "日本アニメーション",
+            "count": 17
+        },
+        {
+            "name": "漫改",
+            "count": 15
+        },
+        {
+            "name": "日本",
+            "count": 15
+        },
+        {
+            "name": "日常",
+            "count": 14
+        },
+        {
+            "name": "爆笑类",
+            "count": 13
+        },
+        {
+            "name": "治愈",
+            "count": 10
+        },
+        {
+            "name": "补旧番",
+            "count": 9
+        },
+        {
+            "name": "怎么也",
+            "count": 8
+        },
+        {
+            "name": "TVB",
+            "count": 6
+        },
+        {
+            "name": "90年代",
+            "count": 6
+        },
+        {
+            "name": "1995年",
+            "count": 6
+        },
+        {
+            "name": "动画",
+            "count": 6
+        },
+        {
+            "name": "1995年1月",
+            "count": 4
+        },
+        {
+            "name": "长篇",
+            "count": 4
+        },
+        {
+            "name": "没看全",
+            "count": 3
+        },
+        {
+            "name": "日本动画",
+            "count": 3
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        14491
+    ],
+    "main_characters": [
+        {
+            "id": 14491,
+            "name": "さくらももこ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1d/5f/14491_crt_5j15h.jpg?r=1474354496",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/5f/14491_crt_5j15h.jpg?r=1474354496",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/5f/14491_crt_5j15h.jpg?r=1474354496",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1d/5f/14491_crt_5j15h.jpg?r=1474354496"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4498,
+                    "name": "TARAKO",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9f/2f/4498_prsn_58Dz8.jpg?r=1451539257",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/2f/4498_prsn_58Dz8.jpg?r=1451539257",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/2f/4498_prsn_58Dz8.jpg?r=1451539257",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9f/2f/4498_prsn_58Dz8.jpg?r=1451539257"
+                    },
+                    "short_summary": "TARAKOは、日本の声優、ナレーター、女優、シンガーソングライター、脚本家、エッセイスト。群馬県太田市出身。トルバドール音楽事務所所属。",
+                    "locked": false
+                },
+                {
+                    "id": 4768,
+                    "name": "菊池こころ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a7/64/4768_prsn_35399.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/64/4768_prsn_35399.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/64/4768_prsn_35399.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a7/64/4768_prsn_35399.jpg"
+                    },
+                    "short_summary": "日本の女性声優。東京都出身。ケンユウオフィス所属。旧芸名は菊池 心（読みは同じ）。\r\n\r\n特技：犬に好かれる・人ごみをサクサク歩ける\r\n趣味：園芸\r\n経歴：東映アニメーション研究所、東映アカデミー",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

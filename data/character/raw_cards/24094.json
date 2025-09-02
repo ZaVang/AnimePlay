@@ -1,0 +1,69 @@
+{
+    "id": 24094,
+    "name": "加藤恵",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d3/57/24094_crt_RYu7a.jpg?r=1674810335",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/57/24094_crt_RYu7a.jpg?r=1674810335",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/57/24094_crt_RYu7a.jpg?r=1674810335",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d3/57/24094_crt_RYu7a.jpg?r=1674810335"
+    },
+    "summary": "安艺伦也的同班同学，9月23日出生，是个平凡没有存在感的女孩，但仔细看是个可人儿，起初留着鲍伯头，后来留长头发并束成马尾。被就读医学院的堂哥加藤圭一误以为与安艺伦也是男女朋友。受安艺伦也的请求担任同人游戏的女主角。\r\n    有位将结婚的姊姊。\r\n    对男主角的称呼为安艺。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "加藤惠"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Katou Megumi"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かとう めぐみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kato Megumi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "圣人惠"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月23日"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "BWH",
+            "value": "84/57/83"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 23,
+    "stat": {
+        "comments": 397,
+        "collects": 2003
+    },
+    "anime_ids": [
+        132734,
+        100403
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": 88113,
+    "name": "シュウ・ビ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/59/8e/88113_crt_oARol.jpg?r=1607184309",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/8e/88113_crt_oARol.jpg?r=1607184309",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/8e/88113_crt_oARol.jpg?r=1607184309",
+        "grid": "https://lain.bgm.tv/pic/crt/g/59/8e/88113_crt_oARol.jpg?r=1607184309"
+    },
+    "summary": "レッカ凱帝国の天命宮大長官",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "周毕"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "修·毕"
+                },
+                {
+                    "k": "英文名",
+                    "v": "SHU BI"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://back-arrow.com/character/?page=shu_bi"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 26,
+        "collects": 41
+    },
+    "anime_ids": [
+        297396
+    ]
+}

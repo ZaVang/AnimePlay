@@ -1,0 +1,44 @@
+{
+    "id": 66553,
+    "name": "りつ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b5/df/66553_crt_i6PPk.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/df/66553_crt_i6PPk.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/df/66553_crt_i6PPk.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b5/df/66553_crt_i6PPk.jpg"
+    },
+    "summary": "おっとりしたお姉さんキャラで\r\n猫耳が特徴的",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "律"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Ritsu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 19
+    },
+    "anime_ids": [
+        237423
+    ]
+}

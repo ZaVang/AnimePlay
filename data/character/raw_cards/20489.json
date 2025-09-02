@@ -1,0 +1,43 @@
+{
+    "id": 20489,
+    "name": "吉武莉華",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2d/ce/20489_crt_1wPw1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/ce/20489_crt_1wPw1.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/ce/20489_crt_1wPw1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2d/ce/20489_crt_1wPw1.jpg"
+    },
+    "summary": "入学招新时被荻上会长现场作画吸引入会的腐女子，童颜长发眼镜娘，喜爱战国CP，家中还有一妹莉莎。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "吉武莉华"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1986年4月2日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1986,
+    "birth_mon": 4,
+    "birth_day": 2,
+    "stat": {
+        "comments": 8,
+        "collects": 14
+    },
+    "anime_ids": [
+        71802
+    ]
+}

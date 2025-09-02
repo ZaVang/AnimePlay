@@ -1,0 +1,77 @@
+{
+    "id": 7694,
+    "name": "セイラ・マス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b9/fb/7694_crt_Yifem.jpg?r=1428257571",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/fb/7694_crt_Yifem.jpg?r=1428257571",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/fb/7694_crt_Yifem.jpg?r=1428257571",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b9/fb/7694_crt_Yifem.jpg?r=1428257571"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "塞拉·玛斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "雪拉·玛斯"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Sayla Mass"
+                },
+                {
+                    "k": "昵称",
+                    "v": "鸭妹"
+                },
+                {
+                    "v": "鸭子妹"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月12日"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "本名",
+            "value": [
+                {
+                    "v": "Artesia Som Deikun"
+                },
+                {
+                    "v": "アルテイシア・ソム・ダイクン"
+                },
+                {
+                    "v": "阿尔黛西亚·索姆·戴肯"
+                }
+            ]
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 12,
+    "stat": {
+        "comments": 36,
+        "collects": 152
+    },
+    "anime_ids": [
+        50,
+        267412
+    ]
+}

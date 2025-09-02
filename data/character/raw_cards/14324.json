@@ -1,0 +1,48 @@
+{
+    "id": 14324,
+    "name": "ウェンディ・ギャレット",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/77/c3/14324_crt_6BpuU.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/c3/14324_crt_6BpuU.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/c3/14324_crt_6BpuU.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/77/c3/14324_crt_6BpuU.jpg"
+    },
+    "summary": "与邦一起旅行的少女，为了寻找哥哥的下落而追踪“钢爪男”",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "温蒂·嘉雷特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Wendy Garret"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "年龄",
+            "value": "13岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 26
+    },
+    "anime_ids": [
+        8539
+    ]
+}

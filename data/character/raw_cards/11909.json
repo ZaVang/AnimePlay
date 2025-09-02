@@ -1,0 +1,57 @@
+{
+    "id": 11909,
+    "name": "はかせ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/69/be/11909_crt_jf0Zy.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/be/11909_crt_jf0Zy.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/be/11909_crt_jf0Zy.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/69/be/11909_crt_jf0Zy.jpg"
+    },
+    "summary": "自稱博士，8歲。本名不明，研究所的名稱為東雲研究所。整天都在家裡研究，研究題材不明。似乎很想要芥川賞。留著茶色長髮，除了睡覺時間以外都穿著白衣。認為機器人很可愛，頑固的拒絕將名乃變得更像人類。不擅長說謊。喜歡喝4.5牛奶（特濃），愛吃甜食，曾因為吃太多零食而吃不下飯。喜歡古老的搞笑風格。認為鯊魚很酷，房間裡貼著鯊魚海報。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "博士"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Hakase"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月6日"
+        },
+        {
+            "key": "引用来源",
+            "value": "維基"
+        },
+        {
+            "key": "年龄",
+            "value": "8"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 6,
+    "stat": {
+        "comments": 50,
+        "collects": 458
+    },
+    "anime_ids": [
+        9912,
+        28205
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "id": 28960,
+    "name": "寺坂竜馬",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d6/ce/28960_crt_MCpZo.jpg?r=1450122468",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/ce/28960_crt_MCpZo.jpg?r=1450122468",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/ce/28960_crt_MCpZo.jpg?r=1450122468",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d6/ce/28960_crt_MCpZo.jpg?r=1450122468"
+    },
+    "summary": "代号为“模仿鹰冈的”。\r\n喜欢的科目：体育，讨厌的科目：所有文科。\r\n兴趣&特技：格斗技观战\r\n杀老师的学期测试：一学期•期中：230点（159位），一学期•期末：340点（94位），二学期•期中：310点（127位），二学期•期末：317点（46位）\r\n乌间老师的评价：寺坂君的体格很好同时也有胆量。再加上那个半强制的实行力在作战行动中会变成很大的战力。在暑假之后训练也变得积极起来，对他的成长有所期待。\r\n\r\n班上的不良少年，体格高大，眼神凶恶。学习态度和暗杀方面都不积极，不愿意配合班上活动。对杀老师有反抗心理。有着独特价值观，对暗杀有各自手段和技巧的学生。为了暗杀会采取激进的手段。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "寺坂龙马"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Ryoma Terasaka"
+                },
+                {
+                    "k": "日文名",
+                    "v": "寺坂 竜馬"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "てらさか りょうま"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Terasaka Ryōma"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月10日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "180cm"
+        },
+        {
+            "key": "体重",
+            "value": "77kg"
+        },
+        {
+            "key": "座号",
+            "value": "E-16"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 10,
+    "stat": {
+        "comments": 0,
+        "collects": 2
+    },
+    "anime_ids": [
+        106818
+    ]
+}

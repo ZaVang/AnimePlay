@@ -1,0 +1,48 @@
+{
+    "id": 45219,
+    "name": "プニちゃん",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/74/29/45219_crt_sEeAs.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/74/29/45219_crt_sEeAs.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/74/29/45219_crt_sEeAs.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/74/29/45219_crt_sEeAs.jpg"
+    },
+    "summary": "小软是宝可梦动画《精灵宝可梦 XY》中柚丽嘉照顾的一只未收服的宝可梦，其真身是基格尔德的核心之一，被闪焰队称为Z1。\r\n\r\n和与Z2不同，小软较相信人类。小软可以通过其他基格尔德细胞监督生态系统。当危险来临时，细胞们进行合体而改变形态。\r\n\r\n小软平常通过吸取阳光得到养分。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小软"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Squishy"
+                },
+                {
+                    "k": "昵称",
+                    "v": "Z1"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "无性别"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 5
+    },
+    "anime_ids": [
+        146408
+    ]
+}

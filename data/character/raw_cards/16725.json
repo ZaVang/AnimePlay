@@ -1,0 +1,48 @@
+{
+    "id": 16725,
+    "name": "鷺月子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b1/ea/16725_crt_122BU.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/ea/16725_crt_122BU.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/ea/16725_crt_122BU.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b1/ea/16725_crt_122BU.jpg"
+    },
+    "summary": "本作の主人公。M&F（エムアンドエフ）のOL。アニメキャラデザイナー。「マロミ」というキャラクターの作者。童顔が特徴。思わぬ成功と名声を得て、周囲の嫉妬と期待に押し潰されそうな生活を送っていた。「少年バット」による最初の被害者。何をやっても不器用で、いわゆる天然ボケかつドジっ娘な不思議ちゃん。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鹭月子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "鷺 月子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さぎ つきこ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 18
+    },
+    "anime_ids": [
+        843
+    ]
+}

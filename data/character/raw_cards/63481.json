@@ -1,0 +1,64 @@
+{
+    "id": 63481,
+    "name": "愛崎えみる／キュアマシェリ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7f/6f/63481_crt_4ny0w.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/6f/63481_crt_4ny0w.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/6f/63481_crt_4ny0w.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7f/6f/63481_crt_4ny0w.jpg"
+    },
+    "summary": "第9话登场，小鸟的好友兼同班同学，但因为瞎操心的关系而常做出极夸张的举动，让身为好友的小鸟相当担心她。出生日期为7月15日，巨蟹座。\r\n爱吃樱桃，喜欢唱歌及弹奏电吉他，另外不喜欢被人照顾。\r\n出身于音乐世家，家境极其富有，是大型企业“爱崎康采恩”的千金小姐。向哥哥正人隐瞒弹奏电吉他的事实。\r\n由于自幼生长于音乐的环境下及进行相关的培训的缘故，使得她拥有优秀的绝对音感。\r\n\r\n变身咒语为“未来水晶！闪烁心灵！”。\r\n变身口号为“抱紧闪亮的未来！！最喜欢大家！充满爱的光之美少女！挚爱天使！”。\r\n团体口号为“拥抱！光之美少女”。\r\n挚爱天使的形象是以偶像为原型。\r\n“Macherie”为法语的“亲爱的”之意。\r\n片头曲中的角色代表花为红色大丽菊。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "爱崎惠美瑠／挚爱天使"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "爱崎惠美留"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Emil / Cure Macherie"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あいさき えみる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aisaki Emiru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月15日"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.toei-anim.co.jp/tv/precure/character/people.php"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 15,
+    "stat": {
+        "comments": 21,
+        "collects": 33
+    },
+    "anime_ids": [
+        228046
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "id": 20583,
+    "name": "宮うつつ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d6/5c/20583_crt_k46et.jpg?r=1460178176",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/5c/20583_crt_k46et.jpg?r=1460178176",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/5c/20583_crt_k46et.jpg?r=1460178176",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d6/5c/20583_crt_k46et.jpg?r=1460178176"
+    },
+    "summary": "编号G-99\r\n在立川市内的「私立利川凤雏学园」就读的一年级生，年龄15岁（推定）→16岁（推定）【Insight】。\r\n在国际花绿公园里作为志愿者照顾花草。\r\n自我肯定感很低，害怕与他人缩短距离，能正常沟通交流的人只有O·D一个。\r\n面对其他G成员只会说「郁闷…」",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宫现"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "宮 うつつ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みや うつつ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Miya Utsutsu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "不明"
+        },
+        {
+            "key": "血型",
+            "value": "不明"
+        },
+        {
+            "key": "身高",
+            "value": "143cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.ntv.co.jp/GATCHAMAN_Crowds/character/utsutsu.html"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 29,
+        "collects": 73
+    },
+    "anime_ids": [
+        69494,
+        86721
+    ]
+}

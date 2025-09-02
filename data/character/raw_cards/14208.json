@@ -1,0 +1,52 @@
+{
+    "id": 14208,
+    "name": "仲上眞一郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/39/3b/14208_crt_p81P6.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/3b/14208_crt_p81P6.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/3b/14208_crt_p81P6.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/39/3b/14208_crt_p81P6.jpg"
+    },
+    "summary": "True Tears男主角，就读麦端高校一年B班。当地酿酒厂“仲上酒厂”厂长的独子，梦想成为绘本画家，每晚都进行着绘画的创作。也屡次向出版社投稿作品过，然而身为应当继承家业的独子，使得母亲对他的作为抱持反对的态度。虽被称作“当家花旦”，却不太情愿地学习著麦端祭上表演的麦端舞，与比吕美为同居关系的青梅竹马。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "仲上真一郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "なかがみ しんいちろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nakagami Shinichirou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月4日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 4,
+    "stat": {
+        "comments": 30,
+        "collects": 9
+    },
+    "anime_ids": [
+        309
+    ]
+}

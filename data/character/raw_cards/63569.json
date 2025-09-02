@@ -1,0 +1,39 @@
+{
+    "id": 63569,
+    "name": "繁丸",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e2/86/63569_crt_t0m9R.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/86/63569_crt_t0m9R.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/86/63569_crt_t0m9R.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e2/86/63569_crt_t0m9R.jpg"
+    },
+    "summary": "誰よりも力の強い山賊。女房達と暮らし、山を愛する。\r\nなぜか満開の桜を恐ろしいものと感じている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "繁丸"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        2882
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "id": 6801,
+    "name": "早瀬未沙",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1f/b3/6801_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1f/b3/6801_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1f/b3/6801_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1f/b3/6801_crt_anidb.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "早濑未沙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "はやせ みさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hayase Misa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1990-03-03"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        },
+        {
+            "key": "体重",
+            "value": "45kg"
+        },
+        {
+            "key": "BWH",
+            "value": "83/57/83"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        },
+        {
+            "key": "年龄",
+            "value": "19歳（2009年時点）"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1990,
+    "birth_mon": 3,
+    "birth_day": 3,
+    "stat": {
+        "comments": 16,
+        "collects": 43
+    },
+    "anime_ids": [
+        3166
+    ]
+}

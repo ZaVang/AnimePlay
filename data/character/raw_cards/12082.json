@@ -1,0 +1,64 @@
+{
+    "id": 12082,
+    "name": "此花ルチア",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f0/5c/12082_crt_rX86J.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/5c/12082_crt_rX86J.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/5c/12082_crt_rX86J.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f0/5c/12082_crt_rX86J.jpg"
+    },
+    "summary": "作为富有（人格）魅力的班长，在临近的班级也颇有名气。似乎有洁癖，极不擅长和男孩子打交道。\r\n每每被卷进与太郎搞出的乱子，在最后给予铁拳制裁。\r\n气质凛然，喜欢吃辣（学校食堂存在只有她能吃下去的超辣菜单），和同学关系不错，不过本人并不喜欢出风头。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "此花露西娅"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Konohana Lucia"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "このはな るちあ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月23日"
+        },
+        {
+            "key": "身高",
+            "value": "167 cm"
+        },
+        {
+            "key": "体重",
+            "value": "52 kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B93/ W59/ H86"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 23,
+    "stat": {
+        "comments": 72,
+        "collects": 123
+    },
+    "anime_ids": [
+        363880
+    ]
+}

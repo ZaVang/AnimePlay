@@ -1,0 +1,140 @@
+{
+    "id": 41568,
+    "name": "歌牌情缘 第二季",
+    "image_path": "data/images/anime/41568.jpg",
+    "points": 8.2,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "成为二年级学生的千早和太一等人，首次迎来后辈，在经历着作为前辈的痛苦与喜悦的同时，目标也直指竞争对手学校的强敌。更加充满激情的瑞泽高校歌牌部，将会一如既往地展开活力四射的青春群像剧——",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 25,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "少女向"
+    ],
+    "date": "2013-01-11",
+    "rating_rank": 157,
+    "rating_score": 8.2,
+    "rating_total": 3878,
+    "main_character_ids": [
+        13414,
+        13418,
+        13419
+    ],
+    "main_characters": [
+        {
+            "id": 13414,
+            "name": "綾瀬千早",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b1/e2/13414_crt_vHVUs.jpg?r=1567356180",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/e2/13414_crt_vHVUs.jpg?r=1567356180",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/e2/13414_crt_vHVUs.jpg?r=1567356180",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b1/e2/13414_crt_vHVUs.jpg?r=1567356180"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5766,
+                    "name": "瀬戸麻沙美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/b7/5766_prsn_6q644.jpg"
+                    },
+                    "short_summary": "中学生2年生の時、偶然視聴したアニメ『D.Gray-man』の主人公、アレン・ウォーカー（声：小林沙苗）に魅せられ、キャラクターだけでなく演者の声優にも興味が湧き、声優を志す。高校在学中の2009年に声優事務所のオーディションを受験、翌2010年より声優活動を開始する。\r\n2010年、初めて受けたオーディションでテレビアニメ『放浪息子』（2011年）の準主人公 \"高槻よしの\" 役に抜擢される。彼女にとって初仕事の収録だったが、演技などに関して事前の指示はほとんど必要としなかったと監督のあおきえいは述べている。\r\n2011年、日本テレビ系テレビアニメ『ちはやふる』で主演（ \"綾瀬千早\" 役）とエンディング主題歌の歌唱を担当。同局系列のテレビアニメ『HUNTER×HUNTER』の \"クラピカ\" 役オーディションに参加していた瀬戸の演技が『ちはやふる』番組関係者の目に留まり、改めて \"綾瀬千早\" 役のオーディションを行ったところ満場一致で瀬戸の起用が決定した。\r\n2015年4月1日付けで、シグマ・セブンeからシグマ・セブンへ移動。\r\n2021年11月1日よりStarCrewへ移籍。あわせて公式Twitterアカウントを開設した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13418,
+            "name": "綿谷新",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3a/64/13418_crt_rPv5V.jpg?r=1567356104",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/64/13418_crt_rPv5V.jpg?r=1567356104",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/64/13418_crt_rPv5V.jpg?r=1567356104",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3a/64/13418_crt_rPv5V.jpg?r=1567356104"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4845,
+                    "name": "寺崎裕香",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2d/43/4845_prsn_dD99I.jpg?r=1429155853",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/43/4845_prsn_dD99I.jpg?r=1429155853",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/43/4845_prsn_dD99I.jpg?r=1429155853",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2d/43/4845_prsn_dD99I.jpg?r=1429155853"
+                    },
+                    "short_summary": "寺崎裕香原本的志愿是当歌手，读书的时候在当地事务所工作。之后，NHK福冈的广播剧里演了舞台剧，很有趣。并以此为目标，来到东京上学。当时以影像的工作为中心进行活动。当时事务所的社长说：“你的声音很有趣，声优有试过吗？”以后便投入到声优行业当中。",
+                    "locked": false
+                },
+                {
+                    "id": 4982,
+                    "name": "細谷佳正",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/40/4e/4982_prsn_XOxkm.jpg"
+                    },
+                    "short_summary": "高中时代参加的社团是戏剧社和剑道社。后来只专注於戏剧社。\r\n专门学校时期和友人一起组成街头艺人，由于是新人加上良好的歌声和歌曲，被同一个事务所的前辈大须贺纯所称赞。与其搭档的友人是吉他老师。名字倾向本身的创作风格，用了‘不协和音’来命名。歌曲由两人共同创作。其中‘雪’这首曲子几乎是一个人完成的。而在当时的演出地点是在京王线府中站。\r\n在网球王子的试镜会中也参与了平古场凛的角色。\r\n以网球王子白石藏之介名义连续两个月发行角色专辑，为网球王子角色歌曲首例，2010年04月14日发行的首张专辑《Medicine or...?》在Oricon Style拿下首日第七名，首周第十名。2010年05月19日发行的第二张专辑《POISON》登上Oricon Style首日第三名，首周第六名。其中，《Medicine or...?》中的＜I.ng＞及《POISON》中的＜エピローグ＞皆由细谷本人亲自做词。\r\n\r\n兴趣是射击运动和吉他。\r\n喜欢的艺人以男性居多，像是藤原龙也和洼冢洋介。\r\n无关年龄，喜欢思想较为成熟的女性。\r\n讨厌的食物是牡蛎，连碰都不能碰。喜欢红酒。\r\n喜欢Ne-Yo的音乐。\r\n喜欢猫，会和流浪猫玩在一起，所以身上容易残留猫毛。有一次到电台参与‘电波系彼女’的录制，后来才知道小林ゆう对猫过敏，并且向她道歉。\r\n电台‘テニスの王子様 オン・ザ・レイディオ’中被认定了是欺负的一群，常被前辈声优欺负。\r\n身材较为纤细修长，非常容易出汗。\r\n经常有电波系的恐怖经验。\r\n被小林ゆう称赞其说话技巧很好。\r\n对电脑等电子装置很不熟悉的缘故，家中并没有电脑。工作上请附近的香烟店帮忙传真。\r\n对于星座很了解，不过否定自己的水瓶座B型是个“怪人”的见解。\r\n为了演出不良少年柔沢ジュウ的感觉，在自家的厕所里一边冲水一边大叫磨损喉咙。\r\n在过去的事件中，曾比喻自己“声音像没特色的茶泡饭”。\r\n\r\n2014年荣获第八届日本声优大赏“助演男优赏”。\r\n\r\n曾属Mausu Promotion。2014年在广播『天才軍師』2014年7月13日放送回中，宣布自2014年7月1日恢复为自由身。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13419,
+            "name": "真島太一",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/26/e4/13419_crt_58dhu.jpg?r=1567853823",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/26/e4/13419_crt_58dhu.jpg?r=1567853823",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/26/e4/13419_crt_58dhu.jpg?r=1567853823",
+                "grid": "https://lain.bgm.tv/pic/crt/g/26/e4/13419_crt_58dhu.jpg?r=1567853823"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4697,
+                    "name": "宮野真守",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307"
+                    },
+                    "short_summary": "小学生時代から劇団ひまわりに所属し、主に舞台などで活動した。高校生時代に海外ドラマ『私はケイトリン』の吹替で声優デビューする。PS2用ゲーム『キングダム ハーツ』のリク役で注目を集め、その後は、『機動戦士ガンダム00』や『DEATH NOTE』の主役を務めるなど、数々の人気作品に出演している。\r\n第1回声優アワード主演男優賞および新人賞にノミネートされた（『DEATH NOTE』夜神月役）。 2008年の第2回声優アワード主演男優賞受賞。東京国際アニメフェア2008・第7回東京アニメアワード個人賞（声優部門）受賞（『DEATH NOTE』『機動戦士ガンダム00』）。 2008年12月1日、劇団ひまわりのHPで結婚と子供を授かったことを公表した。結婚相手や子供の性別は非公開。 2011年、ノン子とのび太のアニメスクランブルにて第21回アニメグランプリ最優秀男性声優賞受賞。 2012年、第6回声優アワードにて助演男優賞と歌唱賞（後者はST☆RISHとして）、日刊スポーツ第1回日刊アニメグランプリにてMIP男性声優賞、アニメージュ第34回アニメグランプリ声優部門においてグランプリを受賞。\r\n\r\n2025年6月8日宣布与向日葵剧团合约期满退团，次日宣布加入研音。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": 21872,
+    "name": "鬼灯",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0b/dd/21872_crt_4Xm0f.jpg?r=1390832201",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/dd/21872_crt_4Xm0f.jpg?r=1390832201",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/dd/21872_crt_4Xm0f.jpg?r=1390832201",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0b/dd/21872_crt_4Xm0f.jpg?r=1390832201"
+    },
+    "summary": "头上有一支角，三白眼的阎魔大王的第一辅佐官，鬼神中是首级的地位。在剧中的纤细身材短小的印象，但是作者说那是阎魔大王较大身高185公分的健壮的体型的形象。 爱好是自己品种改良了金鱼草的饲养，喜欢动物，不畏惧女性。现世出差的时候，用帽子遮着耳朵及角。金鱼草比赛中担任审查员。不擅长吃辣。死对头是神兽白泽。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鬼灯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ほおずき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hozuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "185cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 47
+    },
+    "anime_ids": [
+        77188
+    ]
+}

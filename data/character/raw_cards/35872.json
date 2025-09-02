@@ -1,0 +1,52 @@
+{
+    "id": 35872,
+    "name": "羽鳥チセ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/08/7c/35872_crt_0i9hH.jpg?r=1505401732",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/7c/35872_crt_0i9hH.jpg?r=1505401732",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/7c/35872_crt_0i9hH.jpg?r=1505401732",
+        "grid": "https://lain.bgm.tv/pic/crt/g/08/7c/35872_crt_0i9hH.jpg?r=1505401732"
+    },
+    "summary": "本作主角。有着红色头发的日本少女，15岁。\r\n\r\n“艾利亚斯说可以的话，我就会去做。”\r\n日本少女。是能够近乎无限地产生魔力的名为“夜之爱子”的存在，会无关本人意志地将妖精吸引来。其资质被艾利亚斯看中，并被他以500万英镑的价格买下。在位于英格兰郊外的艾利亚斯宅邸住下，并开始为了成为魔法使而学习。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "羽鸟智世"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "羽鳥智世"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はとり ちせ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hatori Chise"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 46,
+        "collects": 147
+    },
+    "anime_ids": [
+        210864
+    ]
+}

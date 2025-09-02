@@ -1,0 +1,75 @@
+{
+    "id": 9270,
+    "name": "樱桃小丸子",
+    "image_path": "data/images/anime/9270.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "『ちびまる子ちゃん』（ちびまるこちゃん）は、さくらももこによる日本の漫画作品やそれを元にしたアニメ作品、またはその主人公のあだ名。作者の子供時代の思い出を軸に、普通の小学生の生活を綴るコメディ。また、ドラマでまる子を演じた森迫永依・伊藤綺夏も「ちびまる子ちゃん」と呼ばれることがある。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 0,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1995-01-08",
+    "rating_rank": 774,
+    "rating_score": 7.6,
+    "rating_total": 1315,
+    "main_character_ids": [
+        14491
+    ],
+    "main_characters": [
+        {
+            "id": 14491,
+            "name": "さくらももこ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1d/5f/14491_crt_5j15h.jpg?r=1474354496",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/5f/14491_crt_5j15h.jpg?r=1474354496",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/5f/14491_crt_5j15h.jpg?r=1474354496",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1d/5f/14491_crt_5j15h.jpg?r=1474354496"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4498,
+                    "name": "TARAKO",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9f/2f/4498_prsn_58Dz8.jpg?r=1451539257",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/2f/4498_prsn_58Dz8.jpg?r=1451539257",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/2f/4498_prsn_58Dz8.jpg?r=1451539257",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9f/2f/4498_prsn_58Dz8.jpg?r=1451539257"
+                    },
+                    "short_summary": "TARAKOは、日本の声優、ナレーター、女優、シンガーソングライター、脚本家、エッセイスト。群馬県太田市出身。トルバドール音楽事務所所属。",
+                    "locked": false
+                },
+                {
+                    "id": 4768,
+                    "name": "菊池こころ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a7/64/4768_prsn_35399.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/64/4768_prsn_35399.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/64/4768_prsn_35399.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a7/64/4768_prsn_35399.jpg"
+                    },
+                    "short_summary": "日本の女性声優。東京都出身。ケンユウオフィス所属。旧芸名は菊池 心（読みは同じ）。\r\n\r\n特技：犬に好かれる・人ごみをサクサク歩ける\r\n趣味：園芸\r\n経歴：東映アニメーション研究所、東映アカデミー",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

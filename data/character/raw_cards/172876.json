@@ -1,0 +1,53 @@
+{
+    "id": 172876,
+    "name": "パゴゴ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1c/02/172876_crt_aG3N8.jpg?r=1742095044",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/02/172876_crt_aG3N8.jpg?r=1742095044",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/02/172876_crt_aG3N8.jpg?r=1742095044",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1c/02/172876_crt_aG3N8.jpg?r=1742095044"
+    },
+    "summary": "巴戈戈是莉可的太乐巴戈斯，它是宝可梦 地平线的重要角色。它原是莉丝塔尔的宝可梦，后变成吊坠，先后由黛安娜和莉可继承。后由莉可正式收服。莉丝塔尔最早对它使用这一爱称，之后莉可一行人继续沿用。\r\n\r\n巴戈戈性格纯真、活泼。由于长期以吊坠的样子休眠，它对周围的人与环境充满好奇心，也因此喜欢到处乱跑，经常使得莉可等人紧张和担心。\r\n\r\n它也不怕生，能很快融入周围环境，与飞升伏特攻击队一行人和宝可梦融洽相处。\r\n\r\n在饮食习惯方面，巴戈戈喜欢吃树果以及奶油等甜食，而不像其他宝可梦那样吃宝可梦食物。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "巴戈戈"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "未知"
+        },
+        {
+            "key": "特性",
+            "value": [
+                {
+                    "v": "太晶变形(普通形态)"
+                },
+                {
+                    "v": "太晶甲壳(太晶形态)"
+                },
+                {
+                    "v": "归零化境(星晶形态)"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 1
+    },
+    "anime_ids": [
+        411247
+    ]
+}

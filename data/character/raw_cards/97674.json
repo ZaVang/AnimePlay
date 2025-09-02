@@ -1,0 +1,60 @@
+{
+    "id": 97674,
+    "name": "千早瞬平",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2e/46/97674_crt_LZ353.jpg?r=1702796209",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/46/97674_crt_LZ353.jpg?r=1702796209",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/46/97674_crt_LZ353.jpg?r=1702796209",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2e/46/97674_crt_LZ353.jpg?r=1702796209"
+    },
+    "summary": "巧みなバットコントロールと俊足を誇る二塁手。リトルシニア時代は恵まれない体格を技術と理論で補うべく必死の努力をしていたが、「技術と理論を兼ね備えた天才」清峰・要との対戦が遠因となり野球を辞めていた。斜に構えた性格の戦略家で、要の記憶喪失中はチームの頭脳役も務める。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "千早瞬平"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ちはや しゅんぺい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Chihaya Shunpei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "9月28日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "167cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 28,
+    "stat": {
+        "comments": 13,
+        "collects": 34
+    },
+    "anime_ids": [
+        448478
+    ]
+}

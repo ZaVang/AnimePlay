@@ -1,0 +1,52 @@
+{
+    "id": 13198,
+    "name": "荻野目苹果",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c7/48/13198_crt_7tpMT.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/48/13198_crt_7tpMT.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/48/13198_crt_7tpMT.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c7/48/13198_crt_7tpMT.jpg"
+    },
+    "summary": "櫻花御苑女子高中的学生，暗恋晶马和冠叶的班主任。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "荻野目苹果"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "おぎのめ りんご"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Oginome Ringo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1995年3月20日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1995,
+    "birth_mon": 3,
+    "birth_day": 20,
+    "stat": {
+        "comments": 54,
+        "collects": 262
+    },
+    "anime_ids": [
+        18624
+    ]
+}

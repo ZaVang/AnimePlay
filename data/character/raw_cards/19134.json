@@ -1,0 +1,52 @@
+{
+    "id": 19134,
+    "name": "コロコロ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/80/d5/19134_crt_oLxf6.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/d5/19134_crt_oLxf6.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/d5/19134_crt_oLxf6.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/80/d5/19134_crt_oLxf6.jpg"
+    },
+    "summary": "ちょっと不思議な雰囲気の妖精コロちゃん。おとなしいけど、なんだか常に壮大な妄想を膨らませちゃうよ！ 興奮すると顔つきが変わっちゃうことも！",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "可萝可萝"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "korokoro"
+                },
+                {
+                    "k": "昵称",
+                    "v": "コロちゃん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://gdgdfairy.com/part/part_chara.html"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 10
+    },
+    "anime_ids": [
+        25226
+    ]
+}

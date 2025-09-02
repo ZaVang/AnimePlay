@@ -1,0 +1,57 @@
+{
+    "id": 20582,
+    "name": "O・D",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3b/33/20582_crt_AcNbb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/33/20582_crt_AcNbb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/33/20582_crt_AcNbb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3b/33/20582_crt_AcNbb.jpg"
+    },
+    "summary": "编号G-12\r\n年龄不详的青年。\r\n口头禅是「太过火了！」，立川「CAGE」的气氛营造者。\r\n自称不能变身的悲剧Gatchaman，不会参与平时的普通任务。\r\n是从不对他人敞开心扉的现唯一的交心者，相当于其监护人般的存在。\r\n饲养着名为阿尔泰珥（原意为牵牛星，此处音译）（简称阿尔）的猫。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "O·D"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "オー・ディー"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "6月8日"
+        },
+        {
+            "key": "血型",
+            "value": "不明"
+        },
+        {
+            "key": "身高",
+            "value": "190cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 8,
+    "stat": {
+        "comments": 1,
+        "collects": 6
+    },
+    "anime_ids": [
+        69494,
+        86721
+    ]
+}

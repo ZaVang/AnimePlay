@@ -1,0 +1,48 @@
+{
+    "id": 27195,
+    "name": "ファバロ・レオーネ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c7/96/27195_crt_33Z69.jpg?r=1413907924",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/96/27195_crt_33Z69.jpg?r=1413907924",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/96/27195_crt_33Z69.jpg?r=1413907924",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c7/96/27195_crt_33Z69.jpg?r=1413907924"
+    },
+    "summary": "その日暮らしの賞金稼ぎ。盗賊だった父を持つ。\r\nお調子者で酒と女が大好き。\r\n適当についた嘘が原因となり、物語が動き出す。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "法瓦罗·雷欧涅"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "FAVARO"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://shingekinobahamut-genesis.jp/character/character_01.php"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 19,
+        "collects": 31
+    },
+    "anime_ids": [
+        91986
+    ]
+}

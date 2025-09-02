@@ -1,0 +1,52 @@
+{
+    "id": 33,
+    "name": "本須和秀樹",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/18/2b/33_0c5cdcd5072bb1864cdee4d3d6e_yyZGp.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/2b/33_0c5cdcd5072bb1864cdee4d3d6e_yyZGp.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/2b/33_0c5cdcd5072bb1864cdee4d3d6e_yyZGp.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/18/2b/33_0c5cdcd5072bb1864cdee4d3d6e_yyZGp.jpg"
+    },
+    "summary": "在乡村长大，由于考试落榜，现在正在东京上补买班的浪人。做事笨手笨脚，喜欢的大声自言自语，经常吓到路人。被身边的人公认为大好人~甚至不忍心用小唧打工赚回来的钱，而让还是半痴呆状态下的唧瞎花去了。当然，我们的男主角还是个健康的男性，家中收藏了不少A书，不过看来他就没什么手尾了，屋里满地都是，不到小唧拿起来时是不会收拾的~贫穷是我们主角的又一特色，虽不到贫困潦倒的地步，但有时还是会为吃饭问题而苦恼，TV版第二话时，为生计不得不出去找part-time做，最后在大村裕美的帮助下，终于在居酒屋找到工作~在之前他自己一直搞不清自己对唧的感情是如何的。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "本须和秀树"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "本須和 秀樹"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "9月3日"
+        },
+        {
+            "key": "身高",
+            "value": "180cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 3,
+    "stat": {
+        "comments": 10,
+        "collects": 16
+    },
+    "anime_ids": [
+        12
+    ]
+}

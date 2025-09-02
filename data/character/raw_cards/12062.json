@@ -1,0 +1,68 @@
+{
+    "id": 12062,
+    "name": "天王寺瑚太朗",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b7/ce/12062_crt_z3PW4.jpg?r=1613867185",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/ce/12062_crt_z3PW4.jpg?r=1613867185",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/ce/12062_crt_z3PW4.jpg?r=1613867185",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b7/ce/12062_crt_z3PW4.jpg?r=1613867185"
+    },
+    "summary": "主人公。以捉弄人为趣、有点容易得意忘形。\r\n本人虽然没有意识但是非常喜欢照顾别人。\r\n因为对什么事都喜欢刨根问底的性格的关系、最近被卷入了各种无法解释的神秘事件。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "天王寺瑚太朗"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "天王寺 瑚太朗"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "てんのうじ こたろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tennouji Kotarou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月2日"
+        },
+        {
+            "key": "身高",
+            "value": "176cm"
+        },
+        {
+            "key": "体重",
+            "value": "65kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B92/ W72/ H92"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 2,
+    "stat": {
+        "comments": 144,
+        "collects": 303
+    },
+    "anime_ids": [
+        363880
+    ]
+}

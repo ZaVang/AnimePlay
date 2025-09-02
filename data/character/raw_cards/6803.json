@@ -1,0 +1,72 @@
+{
+    "id": 6803,
+    "name": "一条輝",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/af/55/6803_crt_ivUg4.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/55/6803_crt_ivUg4.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/55/6803_crt_ivUg4.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/af/55/6803_crt_ivUg4.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "一条辉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いちじょう ひかる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ichijou Hikaru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1992-11-04"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        },
+        {
+            "key": "体重",
+            "value": "58cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        },
+        {
+            "key": "年龄",
+            "value": "16歳または17歳（初登場時点）"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1992,
+    "birth_mon": 11,
+    "birth_day": 4,
+    "stat": {
+        "comments": 5,
+        "collects": 14
+    },
+    "anime_ids": [
+        3166
+    ]
+}

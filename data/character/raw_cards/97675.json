@@ -1,0 +1,60 @@
+{
+    "id": 97675,
+    "name": "山田太郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6b/9b/97675_crt_wMHhe.jpg?r=1702796217",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/9b/97675_crt_wMHhe.jpg?r=1702796217",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/9b/97675_crt_wMHhe.jpg?r=1702796217",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6b/9b/97675_crt_wMHhe.jpg?r=1702796217"
+    },
+    "summary": "本作の語り手。天才と呼ばれるような実力はないが堅実な選手であり、仲間からの人望も厚い。穏やかな性格の常識人で、癖の強い天才チームメイト達をさりげなくまとめつつ、内心でツッコミを入れている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "山田太郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "やまだ たろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yamada Tarou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月3日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "164cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 3,
+    "stat": {
+        "comments": 10,
+        "collects": 8
+    },
+    "anime_ids": [
+        448478
+    ]
+}

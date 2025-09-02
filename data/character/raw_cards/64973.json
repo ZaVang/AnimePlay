@@ -1,0 +1,35 @@
+{
+    "id": 64973,
+    "name": "クリン・カシム",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/61/e5/64973_crt_4B3EZ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/e5/64973_crt_4B3EZ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/e5/64973_crt_4B3EZ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/61/e5/64973_crt_4B3EZ.jpg"
+    },
+    "summary": "地球メドール州出身。\r\n地球連邦評議会議長、ドナン・カシムの三男。\r\n父を救出するためにデロイアへ渡ったが、そこでデロイアのおかれている現実を直視してゲリラに身を投じる。ロッキーをリーダーとする太陽の牙のメンバーとなり、ダグラムの操縦を担当する。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "科林·卡西姆"
+        },
+        {
+            "key": "别名",
+            "value": []
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 5
+    },
+    "anime_ids": [
+        37183
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "id": 52830,
+    "name": "北沢はぐみ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e8/ed/52830_crt_kvMOc.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/ed/52830_crt_kvMOc.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/ed/52830_crt_kvMOc.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e8/ed/52830_crt_kvMOc.jpg"
+    },
+    "summary": "总是十分开朗活泼，感性而又纯粹的孩子。\r\n运动神经非常好，是当地的垒球队的王牌选手及队长。\r\n家中开着一家精肉店，可乐饼非常有名。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "北泽育美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "きたざわ はぐみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kitazawa Hagumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月30日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        },
+        {
+            "key": "担当",
+            "value": "贝斯手"
+        },
+        {
+            "key": "星座",
+            "value": "狮子座"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "自家的可乐饼，肉，咖喱"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "没有！"
+        },
+        {
+            "key": "兴趣",
+            "value": "马拉松"
+        },
+        {
+            "key": "所属",
+            "value": "ハロー、ハッピーワールド！"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 30,
+    "stat": {
+        "comments": 12,
+        "collects": 21
+    },
+    "anime_ids": [
+        246431
+    ]
+}

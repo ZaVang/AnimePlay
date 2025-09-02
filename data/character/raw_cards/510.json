@@ -1,0 +1,76 @@
+{
+    "id": 510,
+    "name": "姫宮アンシー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d7/bc/510_crt_v1Yc8.jpg?r=1445739529",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/bc/510_crt_v1Yc8.jpg?r=1445739529",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/bc/510_crt_v1Yc8.jpg?r=1445739529",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d7/bc/510_crt_v1Yc8.jpg?r=1445739529"
+    },
+    "summary": "年齡：14\r\n星座：雙魚座\r\n\r\n被稱為薔薇新娘的少女。有著一頭長髮，平時都是盤起的。沒有自主性，完全服從婚約者。由於決鬪勝利者可以得到世界革命的力量，所以她成為了眾決鬪者的目標。對革命無欲無求的歐蒂娜改變了她的心。\r\n\r\n被稱為王子的鳳曉生的妹妹。她是鳳曉生的救命恩人，亦是令鳳曉生自責的魔女；不過她終於對鳳曉生失望，最後當歐蒂娜掉落在深淵時，她極力喊回歐蒂娜。之後安茜和仍然在玩「王子遊戲」的曉生告別，出發去尋找「從曉生的世界中消失」的歐蒂娜。\r\n\r\n在電影版中安茜沒戴眼鏡，頭髮改成直髮。\r\n\r\n順帶一提，免費日文輸入法「Anthy」是取自安茜的名字。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "姬宫安希"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "姬宫安诗"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Himemiya Anthy"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひめみや アンシー"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Himemiya Anshii"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月29日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "体重",
+            "value": "41kg"
+        },
+        {
+            "key": "声优",
+            "value": "渕崎ゆり子"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 29,
+    "stat": {
+        "comments": 19,
+        "collects": 89
+    },
+    "anime_ids": [
+        1453
+    ]
+}

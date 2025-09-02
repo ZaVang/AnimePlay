@@ -1,0 +1,186 @@
+{
+    "id": 47759,
+    "name": "四驱兄弟WGP",
+    "image_path": "data/images/anime/47759.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "ミニ四駆に情熱を燃やす少年の戦いを描くレースアクション。1996年に放映された「爆走兄弟レッツ＆ゴー!!」の続編だ。国際ミニ四駆連盟は、ミニ四駆の世界グランプリを計画していた。ミニ四駆開発者にして陶芸家の岡田鉄心は、連盟の名誉会長を引き受ける代わりに、第１回の開催地をミニ四駆発祥の地・日本にしてほしいと希望。日本のミニ四駆のチャンピオンの星馬烈と弟の豪、鷹羽リョウ、三国藤吉、Ｊの５人は、その日本代表に選出される。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 51,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1997-01-06",
+    "rating_rank": 1623,
+    "rating_score": 7.2,
+    "rating_total": 991,
+    "main_character_ids": [
+        15089,
+        15090,
+        15091,
+        15092,
+        15093
+    ],
+    "main_characters": [
+        {
+            "id": 15089,
+            "name": "星馬豪",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b1/53/15089_crt_n9XsW.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/53/15089_crt_n9XsW.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/53/15089_crt_n9XsW.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b1/53/15089_crt_n9XsW.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4230,
+                    "name": "池澤春菜",
+                    "type": 1,
+                    "career": [
+                        "writer",
+                        "artist",
+                        "seiyu",
+                        "writer"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5c/b8/4230_prsn_xHl4e.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/b8/4230_prsn_xHl4e.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/b8/4230_prsn_xHl4e.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5c/b8/4230_prsn_xHl4e.jpg"
+                    },
+                    "short_summary": "日本科幻作家协会会员，在2017年7月22日以个人著作《SFのSは、ステキのS（SF的S，是美好的S）》 获得第48回星云赏一般散文类大奖，成为史上第一位拥有星云赏头衔的声优。2020年就任第20代日本科幻作家协会会长。\r\n\r\n特色\r\n能够饰演许多不同特色的角色：《Da!Da!Da!》中的花小町克莉丝汀娜、《玛莉亚的凝望》中的岛津由乃、《金田一少年之事件簿》中的金田一二三、《Keroro军曹》中的西泽桃华。\r\n\r\n经历\r\n成城学园出身（包括国中与高中，大学中退），在学生时代时到过英国与泰国留学。\r\n还在念大学的1994年时，在《B-UNIV バーチャファクトリー》中以助手身份在艺能界出道。配音演员领域则是客串配音《忍者龟》出道。\r\n\r\n逸事\r\n与近年成名的配音演员花泽香菜因为名字类似而导致许多误认行为，造成本人不愉快及困扰。\r\n曾经在《法语会话》这个节目中现场制作了和菓子，十分擅长料理。\r\n十分喜欢迪斯尼乐园，并频繁光顾。\r\n2003年在《法语会话》（日本NHK）这个节目时饰演学生这个角色，<；圣母在上>；的作者今野绪雪收看节目时，脱口而出：由乃就是她了啊！因此在TV版中被作者指定为由乃一角色的声优，一时传为声优界的美谈。\r\n最近在自己的博客上面多次提到，对声优间流行的游戏モンスターハンター（怪物猎人）十分热衷，并参加多次了グループ[モンハン会]活动的事情。（tootomyp注：MONSTER HUNTERgroup，声优界参加者有小野坂昌也（会长）、甲斐田ゆき（干事）、植田佳奈、置鮎龙太郎、保志総一朗、斎贺みつき、前田爱、池泽春菜、小清水亜美；小西克幸、子安武人、下崎紘、竹本英史、楠大典、神谷浩史等人正在考虑参加；从其他介绍来看，伊藤静、生天目仁美、井上麻里奈、清水香里、高桥美佳子、斎藤千和、田村ゆかり、中原麻衣、牧野由依、三瓶由布子、树元オリエ、田中理惠、阪田佳代、荻原秀树、こやまきみこ、笹岛かほる、平野绫、近藤隆、一条和矢、山口胜平、大须贺准、喜多村英梨、渡辺明乃、喜屋武ちあき、柿原彻也、小西克幸、小野大辅等人都是潜在会员-_-b）\r\n十分关注高达系列周边，尤其对有[高达王]的（全称ガンダムのプラモデル，也就是高达机器人的手办）之称的子安武人相当关注（春菜虽然没有高达系列的演出经历，不过在参演的KERORO军曹里面有高达出现）。\r\n收藏从PCエンジン（ぴーしーえんじん、PC Engine）到PC－FX的所有主机，NEOGEO的游戏收藏了大部分，喜欢玩的游戏相当多，但是有语音类的游戏却不喜欢（无语了，还是声优呢）。\r\n自称是读书狂，尤其喜欢SF类小说（Science Fiction、略语SF，也就是科幻小说）．小学时代把学校图书馆的书全部读完了，致使她父母有让她转校的想法（书都读没了，这个汗．．．．．.）。\r\n《法语会话》节目播放一年结束后，仍然在自学法语。\r\n由于父亲与祖父都是名人的关系，所以她虽然没有参加更多TV节目的演出，但关于她的话题依然并不少见。（祖父是小说家福永武彦。其父为芥川奖作家池泽夏树。母亲是希腊料理家池泽ショーエンバウム直美。）\r\n在声优中属于知性派，跟同行业、同时代的人相比，在这一点上具有压倒性的优势。这些可以从她主持的广播节目中，欢迎嘉宾时的言语与态度中可以明显的看出来。\r\n\r\n亲友、交友关系\r\n祖父是小说家福永武彦。其父为芥川奖作家池泽夏树。\r\n母亲是希腊料理家池澤ショーエンバウム直美。\r\n与桑岛法子是亲友关系，在《超重神GRAVION》中亦扮演亲友角色。\r\n\r\n2020年7月1日，在推特上公布于一般男性结婚，对方长期在海外，因新冠病毒影响对方推迟回国，公布比预期要晚一些。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 15090,
+            "name": "星馬烈",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fe/c4/15090_crt_Y5Z5K.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/c4/15090_crt_Y5Z5K.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/c4/15090_crt_Y5Z5K.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fe/c4/15090_crt_Y5Z5K.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3949,
+                    "name": "渕崎ゆり子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2e/5c/3949_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/5c/3949_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/5c/3949_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2e/5c/3949_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、舞台女優。リマックス所属。東京都出身。日本大学芸術学部卒業。1987年から1989年初頭までは、当時の本名の渕崎 有里子（読みは同じ）表記で活動。また、淵崎 ゆり子（読みは同じ）として活動していた時期もある。愛称は「ふっちー」。\r\n\r\n10歳からグループこまどりに所属し、子役として活動した。洋画吹き替えを間に挟み、1984年に『魔法の妖精ペルシャ』の篠川紀信役でアニメデビューを果たした。当時高校1年生であり、同世代の声優と比較するとキャリアは長い。\r\n\r\nその後、1991年にシグマ・セブンに移り、2003年7月1日には現所属事務所・リマックスへ移籍した。\r\n\r\n2005年3月31日に入籍、同年8月29日に双子の男児が誕生した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 15091,
+            "name": "J",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/26/a6/15091_crt_qHwge.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/26/a6/15091_crt_qHwge.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/26/a6/15091_crt_qHwge.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/26/a6/15091_crt_qHwge.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3819,
+                    "name": "渡辺久美子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3a/90/3819_prsn_1Bqbt.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/90/3819_prsn_1Bqbt.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/90/3819_prsn_1Bqbt.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3a/90/3819_prsn_1Bqbt.jpg"
+                    },
+                    "short_summary": "日本の女性声優、ナレーター。アーツビジョン所属。夫は同じく声優の辻谷耕史。千葉県出身。身長154cm、血液型はO型。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 15092,
+            "name": "三國藤吉",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/db/22/15092_crt_r7ABC.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/22/15092_crt_r7ABC.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/22/15092_crt_r7ABC.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/db/22/15092_crt_r7ABC.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4663,
+                    "name": "神代知衣",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c8/2a/4663_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/2a/4663_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/2a/4663_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c8/2a/4663_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の女性 声優。山口県 下関市出身。81プロデュース所属。 本名は美山 智恵。旧芸名は神代 智恵（読みは同じ）。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 15093,
+            "name": "鷹羽リョウ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/40/75/15093_crt_8XZ8P.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/75/15093_crt_8XZ8P.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/75/15093_crt_8XZ8P.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/40/75/15093_crt_8XZ8P.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4550,
+                    "name": "高乃麗",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/62/02/4550_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/02/4550_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/02/4550_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/62/02/4550_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "少女、怪物、日本刀を中心要素として、アニメーション映画、小説、漫画、コンピュータゲームで作品が制作されたが、それぞれの間でストーリーの繋がりは無い。\r\n\r\n作品展開の始まった2000年当時、それほど目立ったヒットは見せなかったが、2005年より世界観を共有する作品『BLOOD+』が同じくメディアミックス作品として展開したため、その前史として注目を集めることとなった。\r\n\r\n映画監督のクエンティン・タランティーノは本作のファンであり、代表作の1つ『キル・ビル Vol.1』ではアニメパートの制作をProduction I.Gに依頼している。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

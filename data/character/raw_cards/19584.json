@@ -1,0 +1,44 @@
+{
+    "id": 19584,
+    "name": "母さん（木下哲子）",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7c/0f/19584_crt_fH5qL.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/0f/19584_crt_fH5qL.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/0f/19584_crt_fH5qL.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7c/0f/19584_crt_fH5qL.jpg"
+    },
+    "summary": "ともおの母、家事とパートをこなす主婦。単身赴任で父が不在の木下家を支えるパワフル母さん。典型的おばさんと化していくことに悩んでいる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "妈妈（木下哲子）"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "きのした てつこ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 3
+    },
+    "anime_ids": [
+        61118
+    ]
+}

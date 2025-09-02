@@ -1,0 +1,64 @@
+{
+    "id": 16202,
+    "name": "宮本来夏",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d2/53/16202_crt_KDU8k.jpg?r=1364087025",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/53/16202_crt_KDU8k.jpg?r=1364087025",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/53/16202_crt_KDU8k.jpg?r=1364087025",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d2/53/16202_crt_KDU8k.jpg?r=1364087025"
+    },
+    "summary": "歌が好きなこともあって声楽部に所属している。性格は前向き。\r\n\r\n年齢：高校3年生\r\n\r\n好きな食べ物：いもけんぴ、フキの煮物、パセリ\r\n嫌いな食べ物：炭酸飲料（骨が溶けると思っている）\r\n趣味：音楽、歌うこと、コンドルクインズ\r\n兄弟：弟（誠・高校1年）",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宫本来夏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みやもと こなつ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Miyamoto Konatsu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月24日（双子座）"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "145cm"
+        },
+        {
+            "key": "体重",
+            "value": "42kg"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 4,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 24,
+    "stat": {
+        "comments": 21,
+        "collects": 120
+    },
+    "anime_ids": [
+        37137
+    ]
+}

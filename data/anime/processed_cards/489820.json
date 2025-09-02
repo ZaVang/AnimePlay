@@ -1,0 +1,109 @@
+{
+    "id": 489820,
+    "name": "乱马1/2",
+    "image_path": "data/images/anime/489820.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "早乙女乱馬と、 天道道場三女の天道あかねは親が決めた許婚同士。\r\nしかし乱馬にはある悩みが…。\r\n中国での修行中、伝説の修行場「呪泉郷」に落ちてしまい、\r\n水をかぶると女に、\r\nお湯をかぶると男に戻る\r\nという、不思議な体質になってしまっていた！？\r\n乱馬とあかね、そして個性豊かな\r\nキャラクターたちが繰り広げる\r\nドタバタ格闘ラブコメディー、\r\nここに開幕！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2024-10-05",
+    "rating_rank": 885,
+    "rating_score": 7.5,
+    "rating_total": 4769,
+    "main_character_ids": [
+        1638,
+        1639
+    ],
+    "main_characters": [
+        {
+            "id": 1638,
+            "name": "早乙女乱馬",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/25/bf/1638_crt_2Y12D.jpg?r=1728369697",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/bf/1638_crt_2Y12D.jpg?r=1728369697",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/bf/1638_crt_2Y12D.jpg?r=1728369697",
+                "grid": "https://lain.bgm.tv/pic/crt/g/25/bf/1638_crt_2Y12D.jpg?r=1728369697"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3900,
+                    "name": "山口勝平",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/46/c8/3900_prsn_9Z9tZ.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/46/c8/3900_prsn_9Z9tZ.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/46/c8/3900_prsn_9Z9tZ.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/46/c8/3900_prsn_9Z9tZ.jpg"
+                    },
+                    "short_summary": "日本の声優、劇団21世紀FOX所属舞台俳優、芸能プロダクション悟空代表。\r\n\r\n为人熟悉的代表配音作品有动画《乱马½》主角早乙女乱马〈男生〉、《犬夜叉》主角犬夜叉、《名侦探柯南》工藤新一、《魔术快斗》主角黑羽快斗／怪盗基德、《ONE PIECE》的骗人布、《死亡笔记本》的L、《我们这一家》的藤野等。\r\n兴趣和特长为画插图、弹吉他、杀阵。入读声优学校之前送过报纸。",
+                    "locked": false
+                },
+                {
+                    "id": 3919,
+                    "name": "林原めぐみ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490"
+                    },
+                    "short_summary": "日本的声优、歌手、DJ、作词家（化名为MEGUMI）、作家。出生于日本东京都北区。\r\n歌迷与动漫迷常以“小惠”（めぐさん）、“惠姐”（めぐ姉）及“阁下”（声优平松晶子命名）等方式称呼她。\r\n林原惠演过多部著名作品的主要女角及担任部分片头、片尾曲演唱，包含《新世纪福音战士》的绫波丽、《乱马1/2》的女乱马、《秀逗魔导士》的莉娜·因巴斯、《口袋妖怪》的武藏、《名侦探柯南》的灰原哀、《通灵王》的恐山安娜等，为日本公认的“声优女王”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 1639,
+            "name": "天道あかね",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0a/07/1639_crt_j9DDP.jpg?r=1619279114",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/07/1639_crt_j9DDP.jpg?r=1619279114",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/07/1639_crt_j9DDP.jpg?r=1619279114",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0a/07/1639_crt_j9DDP.jpg?r=1619279114"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4024,
+                    "name": "日髙のり子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5e/57/4024_prsn_bMBgq.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/57/4024_prsn_bMBgq.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/57/4024_prsn_bMBgq.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5e/57/4024_prsn_bMBgq.jpg"
+                    },
+                    "short_summary": "日髙 のり子（ひだか のりこ、1962年5月31日 - ）は、日本の声優、女優、ラジオパーソナリティ、ナレーターである。\r\n東京都千代田区九段出身。愛称は「ノン子（さん）」。本名の旧姓は伊東。名は範子。身長157cm。血液型はAB型。既婚。2009年1月19日に事務所「コンビネーション」を三ツ矢雄二と共に設立する。\r\n代表作に『タッチ』（浅倉南）、『となりのトトロ』（草壁サツキ）、『らんま1/2』（天道あかね）など。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

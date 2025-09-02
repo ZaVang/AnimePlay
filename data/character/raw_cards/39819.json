@@ -1,0 +1,80 @@
+{
+    "id": 39819,
+    "name": "勝生勇利",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2c/b3/39819_crt_nYrNv.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/b3/39819_crt_nYrNv.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/b3/39819_crt_nYrNv.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2c/b3/39819_crt_nYrNv.jpg"
+    },
+    "summary": "心理孱弱易胖体质…\r\n世界第一的玻璃之心花滑选手。\r\n喜欢吃大份猪排盖饭900kcal…！\r\n\r\n23岁，花样滑冰特别强化选手。\r\n有着独特的节奏感，唯一无二的步伐是他的最大武器！但是抗压能力很弱，在重要的场合里总是自灭…\r\n恍然间已是成年组(Senior)的第五年。离开了老家加入了底特律的滑冰俱乐部，但在第一次的大奖赛最终赛里大败，同时也大学毕了业。回到了暌违五年的故乡，九州长谷津町。在危崖上的最终季里赌上一切！",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "胜生勇利"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Yuri Katsuki"
+                },
+                {
+                    "k": "日文名",
+                    "v": "勝生 勇利"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かつき ゆうり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Katsuki Yūri"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "11月29日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "173cm"
+        },
+        {
+            "key": "兴趣",
+            "value": "游戏"
+        },
+        {
+            "key": "特长",
+            "value": "减肥"
+        },
+        {
+            "key": "出身地",
+            "value": "佐贺县"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 29,
+    "stat": {
+        "comments": 21,
+        "collects": 42
+    },
+    "anime_ids": [
+        174998
+    ]
+}

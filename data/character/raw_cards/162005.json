@@ -1,0 +1,76 @@
+{
+    "id": 162005,
+    "name": "雨宮さつき",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/44/65/162005_crt_W5gI4.jpg?r=1745805496",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/65/162005_crt_W5gI4.jpg?r=1745805496",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/65/162005_crt_W5gI4.jpg?r=1745805496",
+        "grid": "https://lain.bgm.tv/pic/crt/g/44/65/162005_crt_W5gI4.jpg?r=1745805496"
+    },
+    "summary": "本作の主人公。写真部の憧れの先輩が卒業してしまい、\r\n写真に対するモチベーションを失ってしまった高校2年生。\r\n見かねた親友・アンの助けで一念発起して廃部寸前の写真部と映画研究部を合併してシネフォト部を設立！\r\n春乃から購入した360度カメラでいろいろな景色を撮影したいと思っているが……？",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雨宫纱月"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "雨宮 さつき"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あまみや さつき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Amamiya Satsuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "好きな食べ物",
+            "value": "カレーパン"
+        },
+        {
+            "key": "趣味",
+            "value": "牧之原先輩を撮ること"
+        },
+        {
+            "key": "使用カメラ",
+            "value": "360度カメラ"
+        },
+        {
+            "key": "行きたいところ",
+            "value": "景色がいいところ"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 43,
+        "collects": 134
+    },
+    "anime_ids": [
+        485936
+    ]
+}

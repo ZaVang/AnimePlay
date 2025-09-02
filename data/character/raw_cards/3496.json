@@ -1,0 +1,60 @@
+{
+    "id": 3496,
+    "name": "岩倉玲音",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0d/cc/3496_crt_tTekN.jpg?r=1722920559",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/cc/3496_crt_tTekN.jpg?r=1722920559",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/cc/3496_crt_tTekN.jpg?r=1722920559",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0d/cc/3496_crt_tTekN.jpg?r=1722920559"
+    },
+    "summary": "年龄设定为14岁。家住世田谷区，原本对网络一窍不通，在剧中她逐渐揭开、发现她自己的真实面貌。玲音最初被描述为一个就读于东京都一中学二年级、性格内向害羞的女孩。在之后她逐渐在现实世界与连线世界里形成了多重的、更加勇敢的性格。玲音在最终发现自己其实是个具有自主权和情感的计算机程序软件，并以人类肉体的形式存在于现实世界中，是被设计来切断现实世界与连线世界无形的隔阂的存在。最后，玲音半信半疑地接受了她作为连线世界实际上的神的身份，成为了全能的、无所不在的、有自己的崇拜者的计算机化的虚拟存在体，能够无任何约束的、超越时空的存在。\r\n\r\nOmnipresence In The Wired,即为网络上的“神”。每个人的偷窥者、每个人的掌控者；她是负责维护网络健康运行的daemon；她是伴随网络成长进化、自我改进的协议自进化机制；她是遍在的神。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "岩仓玲音"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Lain Iwakura"
+                },
+                {
+                    "k": "日文名",
+                    "v": "岩倉 玲音"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いわくら れいん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Iwakura Lain"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 77,
+        "collects": 414
+    },
+    "anime_ids": [
+        2582
+    ]
+}

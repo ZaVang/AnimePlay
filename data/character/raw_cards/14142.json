@@ -1,0 +1,49 @@
+{
+    "id": 14142,
+    "name": "桜田麻音",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ca/a1/14142_crt_B8nBZ.jpg?r=1574168890",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/a1/14142_crt_B8nBZ.jpg?r=1574168890",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/a1/14142_crt_B8nBZ.jpg?r=1574168890",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ca/a1/14142_crt_B8nBZ.jpg?r=1574168890"
+    },
+    "summary": "のりえの友人で、楓の写真を気に入ったことがきっかけで楓とも友達になる。髪型は肩までの黒髪ストレート。制服時はカーディガンを着用。口下手で、感情を口笛で表現する癖がある。オカリナも吹ける。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "樱田麻音"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "さくらだ まおん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakurada Maon"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 23,
+        "collects": 99
+    },
+    "anime_ids": [
+        45213,
+        18605
+    ]
+}

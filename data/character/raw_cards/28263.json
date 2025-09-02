@@ -1,0 +1,52 @@
+{
+    "id": 28263,
+    "name": "カテジナ・ルース",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/72/ea/28263_crt_GAYPQ.jpg?r=1743084271",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/ea/28263_crt_GAYPQ.jpg?r=1743084271",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/ea/28263_crt_GAYPQ.jpg?r=1743084271",
+        "grid": "https://lain.bgm.tv/pic/crt/g/72/ea/28263_crt_GAYPQ.jpg?r=1743084271"
+    },
+    "summary": "住在地球特别区的17岁伯爵小姐，在受到赞斯卡尔帝国空袭之前过着与战争完全无缘的生活。由于家庭环境，家人关系的扭曲等不好等原因，她并不像是娇生惯养的温室花朵，反而持有非常冷漠的眼光，像是看惯了世间人情冷暖一样。由于赞斯卡尔战争的爆发而被卷入战争中，与神圣军事同盟一同行动着。最初卡迪珍娜也是一个单纯的反战者，但是由于爱慕者胡索·艾宾意外成为了高达机师并且在战争中发挥着越来越重要的作用，卡迪珍娜的内心慢慢发生了变化，内心深处渴望力量的她，对于胡索这样一个她曾经丝毫不放在眼里的小孩变得越来越强大，卡迪珍娜内心充满了嫉妒。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "卡迪珍娜·露丝"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Katejina Loos"
+                },
+                {
+                    "k": "日文名",
+                    "v": "カテジナ・ルース"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "高达中文WIKI"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 48,
+        "collects": 37
+    },
+    "anime_ids": [
+        985
+    ]
+}

@@ -1,0 +1,186 @@
+{
+    "id": 431767,
+    "name": "GIRLS BAND CRY",
+    "image_path": "data/images/anime/431767.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "无论是愤怒、喜悦还是悲伤，全都倾注其中。\r\n高中二年级，从学校退学，只身在东京以大学为目标的主人公。被同伴背叛，不知如何是好的少女。被父母抛弃，一个人在大城市里打工维生的女孩子。\r\n虽然这个世界总是背叛我们。虽然什么都不能称心如意。但是，因为我们想要喜欢某个东西。因为我们相信自己的容身之处就在某个地方。\r\n所以，我们歌唱。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "音乐"
+    ],
+    "date": "2024-04-05",
+    "rating_rank": 639,
+    "rating_score": 7.6,
+    "rating_total": 19941,
+    "main_character_ids": [
+        130664,
+        130665,
+        130666,
+        130667,
+        130668
+    ],
+    "main_characters": [
+        {
+            "id": 130664,
+            "name": "井芹仁菜",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/63/80/130664_crt_GdY10.jpg?r=1712842672",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/80/130664_crt_GdY10.jpg?r=1712842672",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/80/130664_crt_GdY10.jpg?r=1712842672",
+                "grid": "https://lain.bgm.tv/pic/crt/g/63/80/130664_crt_GdY10.jpg?r=1712842672"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 54888,
+                    "name": "理名",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ad/08/54888_prsn_r7a5h.jpg?r=1691112794",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/08/54888_prsn_r7a5h.jpg?r=1691112794",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/08/54888_prsn_r7a5h.jpg?r=1691112794",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ad/08/54888_prsn_r7a5h.jpg?r=1691112794"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 130665,
+            "name": "安和すばる",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6f/ea/130665_crt_CjaUT.jpg?r=1685333734",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6f/ea/130665_crt_CjaUT.jpg?r=1685333734",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6f/ea/130665_crt_CjaUT.jpg?r=1685333734",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6f/ea/130665_crt_CjaUT.jpg?r=1685333734"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 54889,
+                    "name": "美怜",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6b/43/54889_prsn_Vj11c.jpg?r=1691112963",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/43/54889_prsn_Vj11c.jpg?r=1691112963",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/43/54889_prsn_Vj11c.jpg?r=1691112963",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6b/43/54889_prsn_Vj11c.jpg?r=1691112963"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 130666,
+            "name": "河原木桃香",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a2/54/130666_crt_dr37L.jpg?r=1719567615",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/54/130666_crt_dr37L.jpg?r=1719567615",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/54/130666_crt_dr37L.jpg?r=1719567615",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a2/54/130666_crt_dr37L.jpg?r=1719567615"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 54890,
+                    "name": "夕莉",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5a/3b/54890_prsn_Y7lL0.jpg?r=1691113124",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5a/3b/54890_prsn_Y7lL0.jpg?r=1691113124",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5a/3b/54890_prsn_Y7lL0.jpg?r=1691113124",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5a/3b/54890_prsn_Y7lL0.jpg?r=1691113124"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 130667,
+            "name": "ルパ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7c/4c/130667_crt_tU28p.jpg?r=1719567949",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/4c/130667_crt_tU28p.jpg?r=1719567949",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/4c/130667_crt_tU28p.jpg?r=1719567949",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7c/4c/130667_crt_tU28p.jpg?r=1719567949"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 54891,
+                    "name": "朱李",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/85/8b/54891_prsn_64m2h.jpg?r=1691113313",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/8b/54891_prsn_64m2h.jpg?r=1691113313",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/8b/54891_prsn_64m2h.jpg?r=1691113313",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/85/8b/54891_prsn_64m2h.jpg?r=1691113313"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 130668,
+            "name": "海老塚智",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ca/26/130668_crt_G7Auy.jpg?r=1716195071",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/26/130668_crt_G7Auy.jpg?r=1716195071",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/26/130668_crt_G7Auy.jpg?r=1716195071",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ca/26/130668_crt_G7Auy.jpg?r=1716195071"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 54892,
+                    "name": "凪都",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/92/11/54892_prsn_aT3Z9.jpg?r=1691113503",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/11/54892_prsn_aT3Z9.jpg?r=1691113503",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/11/54892_prsn_aT3Z9.jpg?r=1691113503",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/92/11/54892_prsn_aT3Z9.jpg?r=1691113503"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

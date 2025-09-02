@@ -1,0 +1,56 @@
+{
+    "id": 13397,
+    "name": "河地大吉",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3f/d2/13397_crt_lcENB.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/d2/13397_crt_lcENB.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/d2/13397_crt_lcENB.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3f/d2/13397_crt_lcENB.jpg"
+    },
+    "summary": "本作品の主人公。30歳で独身（第2部では40歳、やはり独身である）。衣料品メーカーに勤めている。\r\n    りんのことを思って、彼女を引き取り育てることとなる。最初は育児という未知の世界に困惑するが、徐々に父親業も板に付き親として成長していっている。保育園の迎えに遅れないように残業のない課へ異動したり、りんが風邪を引くと会社を休み彼女に付きっ切りで看病したりするなど、りんのことを第一に考え行動している。部下からは慕われており、異動の際には部下から異動をしないよう懇願されていた。\r\n    若かりし日の宋一と瓜二つであるため、りんにはよく懐かれている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "河地大吉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "河地 大吉"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かわち だいきち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kawachi Daikichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wiki(jp)"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 33
+    },
+    "anime_ids": [
+        10843
+    ]
+}

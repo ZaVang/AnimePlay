@@ -1,0 +1,71 @@
+{
+    "id": 3345,
+    "name": "孫悟空",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/38/a7/3345_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/a7/3345_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/a7/3345_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/38/a7/3345_crt_anidb.jpg"
+    },
+    "summary": "孙悟空是日本漫画《七龙珠》和系列动画《七龙珠》、《七龙珠Z》、《七龙珠GT》、《七龙珠改》中登场的主角。重情重义、绝不欺骗朋友、喜欢帮助人，就算对着敌人也会帮助他（曾给短笛仙豆，把气给了命垂的弗利萨）。 多次救了地球和全人类，妻子为琪琪，有孙悟饭和孙悟天两个儿子。成名绝技有龟派气功、界王拳、元气弹等等。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "孙悟空"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "\\",
+                    "v": "Sangoku"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Goku"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Son Gokuu"
+                },
+                {
+                    "k": "昵称",
+                    "v": "卡卡罗特"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        },
+        {
+            "key": "体重",
+            "value": "62kg"
+        },
+        {
+            "key": "口头禅",
+            "value": "わくわくするぞっ！！"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 25,
+        "collects": 162
+    },
+    "anime_ids": [
+        9565,
+        9005,
+        2103,
+        97045
+    ]
+}

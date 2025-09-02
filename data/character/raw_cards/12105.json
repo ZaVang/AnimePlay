@@ -1,0 +1,56 @@
+{
+    "id": 12105,
+    "name": "神田空太",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e1/43/12105_crt_ySm65.jpg?r=1425729822",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/43/12105_crt_ySm65.jpg?r=1425729822",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/43/12105_crt_ySm65.jpg?r=1425729822",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e1/43/12105_crt_ySm65.jpg?r=1425729822"
+    },
+    "summary": "さくら荘101号室の住人。水明芸術大学付属高校普通科の2年生。ひょんなことからさくら荘に入居することになり、面倒見の良い事からましろ当番に任命される。猫好きで飼い主のいない猫たちと暮らしている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "神田空太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かんだ そらた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kanda Sorata"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "体重",
+            "value": "60kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 24,
+        "collects": 44
+    },
+    "anime_ids": [
+        41488
+    ]
+}

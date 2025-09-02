@@ -1,0 +1,40 @@
+{
+    "id": 160989,
+    "name": "レジェンダリー・ファイナル・クライマックス・ボム",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/39/86/160989_crt_hIKcC.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/86/160989_crt_hIKcC.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/86/160989_crt_hIKcC.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/39/86/160989_crt_hIKcC.jpg"
+    },
+    "summary": "﻿何でも「ちぎる」ことが出来る怪力。\r\nそのちぎりが原因で、村から離れた山でひっそりと暮らす。\r\n1人の生活は嫌いではないが、時折みんなと仲良く過ごす夢を見る…。\r\n\r\n拥有“撕裂”一切的超能力，因为这个能力，所以住在远离村庄的山中安静的生活着。\r\n虽然不讨厌一个人的生活，但偶尔也会梦到跟大家和睦相处…",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "传奇终结究极炸弹"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Legendary Final Climax Boom"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 14,
+        "collects": 8
+    },
+    "anime_ids": [
+        490824
+    ]
+}

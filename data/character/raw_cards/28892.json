@@ -1,0 +1,72 @@
+{
+    "id": 28892,
+    "name": "プロデューサー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fa/86/28892_crt_XgxDB.jpg?r=1420910432",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/86/28892_crt_XgxDB.jpg?r=1420910432",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/86/28892_crt_XgxDB.jpg?r=1420910432",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fa/86/28892_crt_XgxDB.jpg?r=1420910432"
+    },
+    "summary": "在『THE IDOLM@STER』世界中「制作人」是作为玩家的分身的主人公角色。游戏内能以「〜〜〜P」的形式用喜欢的名字作为设定名，游戏内的角色们则是以“写作「〜〜〜P」、读作「制作人」(等)”来称呼玩家。\r\n\r\n自2015年1月开始播放的TV动画『偶像大师 灰姑娘女孩』中登场的制作人沿袭了本家动画化的P的设定与处理：不被周围以名字来称呼，ED的名单内角色名也是只写为「制作人」。(值得一提的是，第一话中递给岛村卯月的名片上也仅是写着「株式会社346Production 灰姑娘计划 制作人」)\r\n因在IM@S界有着「制作人」意味着游戏玩家=IM@S粉丝总称的共识，故为了让346Pro的他与其他P存在区别，所以称呼他为“武内P”。名字来自其中之人(声优)的武内駿輔。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "武内P"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "制作人"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Producer"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "企划中"
+        },
+        {
+            "key": "血型",
+            "value": "企划中"
+        },
+        {
+            "key": "身高",
+            "value": "185cm (初期设定)"
+        },
+        {
+            "key": "体重",
+            "value": "企划中"
+        },
+        {
+            "key": "BWH",
+            "value": "企划中"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://dic.nicovideo.jp/a/武内p"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 26,
+        "collects": 40
+    },
+    "anime_ids": [
+        130231
+    ]
+}

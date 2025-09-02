@@ -1,0 +1,81 @@
+{
+    "id": 5923,
+    "name": "双海真美",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fa/7c/5923_crt_GWWO9.jpg?r=1522073263",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/7c/5923_crt_GWWO9.jpg?r=1522073263",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/7c/5923_crt_GWWO9.jpg?r=1522073263",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fa/7c/5923_crt_GWWO9.jpg?r=1522073263"
+    },
+    "summary": "所属偶像中最年少的双胞胎。个性差异不大而好作怪。从绑头发的位置可以分辨两人（以制作人的角度，向左绑的是亚美，向右绑的是真美，二代设定真美的绑发留长为马尾）。两人宣称轮替著从事演艺活动，但游戏中实际上台的只有亚美。父亲是医师，因为行医而和母亲相遇。称呼制作人为“兄ちゃん（哥哥）”。\r\n基本能力值是全角色里最差不过情绪管理容易。初期会因为能力过低而相当辛苦，不过衰退缓慢所以终盘会变强。但是在组成双人与三人团体时，若不和她们对谈的话情绪值会大幅降低，所以和情绪管理不易的角色组队时需要特别注意。\r\n初始设定亚美为姐姐，真美为妹妹，XBOX 360版及SP版变更设定，真美为姐姐，性格比亚美较为稳重有责任感；亚美为妹妹，性格比真美较为自由活泼。\r\n\r\n(偶像大师 XENOGLOSSIA中）\r\n双海亚美的双胞胎妹妹，iDOL “TEMPESTAS”的MASTER。\r\n7年前的事故中受了重伤并随TEMPESTAS一同失踪。在TEMPESTAS的驾驶舱中治愈伤口并陷入长眠，因此其精神层面没有生长，虽然身体跟亚美一样是12岁的模样，但是精神年龄还停留在5岁。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "双海真美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Mami Futami"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ふたみ まみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Futami Mami"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月22日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "149→158cm"
+        },
+        {
+            "key": "体重",
+            "value": "39→42kg"
+        },
+        {
+            "key": "BWH",
+            "value": "74/53/77→78/55/77"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://acg-wiki.info/?t=d&amp;amp;f=3938"
+        },
+        {
+            "key": "年龄",
+            "value": "12→13"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 22,
+    "stat": {
+        "comments": 31,
+        "collects": 78
+    },
+    "anime_ids": [
+        11577,
+        309807
+    ]
+}

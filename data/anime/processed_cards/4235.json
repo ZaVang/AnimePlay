@@ -1,0 +1,123 @@
+{
+    "id": 4235,
+    "name": "神是中学生",
+    "image_path": "data/images/anime/4235.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　在机缘巧合之下，普通的中学生一桥友里惠居然成为了法力高强的神！友里惠在第一时间将这一好消息告诉了好友四条光惠和三枝祀，没想到自己的兴高采烈换来的却是朋友的冷漠相对，气愤的友里惠和朋友们打赌，要用神迹来证实她的身份。台风的来袭证明了友里惠的话，也给城市带来了不小的麻烦，这让友里惠明白了，越是高强的能力，就越要小心的使用。 \r\n　　神也要恋爱呀，在友里惠的眼里，二宫健儿就是那个集万千有点为一身的他。对待感情有些笨拙的友里惠能否如有神助地对二宫健儿坦白自己的心思呢？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "原创",
+        "日常"
+    ],
+    "date": "2005-06-29",
+    "rating_rank": 1273,
+    "rating_score": 7.4,
+    "rating_total": 1091,
+    "main_character_ids": [
+        5588,
+        13915,
+        13916
+    ],
+    "main_characters": [
+        {
+            "id": 5588,
+            "name": "三枝祀",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/90/41/5588_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/41/5588_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/41/5588_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/90/41/5588_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4695,
+                    "name": "森永理科",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bc/e0/4695_prsn_7cuJn.jpg?r=1493120253",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/e0/4695_prsn_7cuJn.jpg?r=1493120253",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/e0/4695_prsn_7cuJn.jpg?r=1493120253",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bc/e0/4695_prsn_7cuJn.jpg?r=1493120253"
+                    },
+                    "short_summary": "森永 理科（もりなが りか、1980年4月25日 - ）は、日本の女性声優、女優、歌手。バンド「functioncode」のヴォーカルを担当。東京都出身。2015年よりマウスプロモーション所属。血液型はO型。\r\n\r\nBSQR489で放送していたラジオ『ヒヤマ・クラタの声優パソ☆コン』に応募し、5週連続勝ち抜き、それが声優の道へ進むきっかけとなる。 2002年、植田佳奈、斎藤千和、中原麻衣と声優ユニット「みっくすJUICE」を結成。翌年、ユニットメンバーらと出演した『ワンダバスタイル』にアニメ初出演。\r\n音楽活動との両立などを理由に、2007年6月30日付けでアイムエンタープライズを退社、フリーを経て、エクセレックスに移籍。2014年12月31日の自身のブログ記事において、エクセレックスからマウスプロモーションへ移籍する予定であることを表明。また、エクセレックスの公式サイトからも、正式に彼女の移籍に関する声明を発表した。\r\n\r\n「暗黒の宝塚」、とも呼ばれるアングラ演劇の『月蝕歌劇団』の一員として、舞台役者の活動もしている。森永理科という芸名は入団時についたもの。初舞台は2000年5月の『家畜人ヤプー』。同年10月の『ピーター・パン』より踊りの振付も担当。代表的な出演作品は、他に『白夜月蝕の少女航海紀』、『ステーシー』等。多忙のため、2006年以後の舞台出演はなし。\r\n2003年10月よりfunctioncode」のヴォーカルとしてバンド活動も開始した。寺山修司からJ・A・シーザーのアングラの流れを汲む表現を続けている。リザードのMOMOYOが主催するバンド、Gig AntiqueSのゲストヴォーカル兼パフォーマーとして、不定期にライヴ活動を行っている。\r\n「DIETS!」や「Senseless Face」といったブランドのカタログ、ウェブサイトなどでは服飾モデルとして活動している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13915,
+            "name": "一橋ゆりえ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f6/bf/13915_crt_3j633.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/bf/13915_crt_3j633.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/bf/13915_crt_3j633.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f6/bf/13915_crt_3j633.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6768,
+                    "name": "MAKO",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/74/6768_prsn_WnT68.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/74/6768_prsn_WnT68.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/74/6768_prsn_WnT68.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/74/6768_prsn_WnT68.jpg"
+                    },
+                    "short_summary": "MAKO（1986年10月7日－）是东京都出身的女性歌手、声优。曾经所属于Space Craft事务所，2011年9月1日移籍至I'm Enterprise。\r\n是隶属同一事务所（Space Craft）的南里侑香的粉丝。\r\n2014年6月20日在博客上发表了结婚以及育有一女的报告。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13916,
+            "name": "四条光恵",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7e/5d/13916_crt_O8CaF.jpg?r=1365286934",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/5d/13916_crt_O8CaF.jpg?r=1365286934",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/5d/13916_crt_O8CaF.jpg?r=1365286934",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7e/5d/13916_crt_O8CaF.jpg?r=1365286934"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5481,
+                    "name": "峯香織",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/24/f2/5481_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/f2/5481_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/f2/5481_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/24/f2/5481_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "和泉あやか ＝ 峯香織 ＝ 和泉あやの\r\nフリー",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

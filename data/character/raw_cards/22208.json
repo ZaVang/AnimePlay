@@ -1,0 +1,35 @@
+{
+    "id": 22208,
+    "name": "レキ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d2/20/22208_crt_t2252.jpg?r=1410398410",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/20/22208_crt_t2252.jpg?r=1410398410",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/20/22208_crt_t2252.jpg?r=1410398410",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d2/20/22208_crt_t2252.jpg?r=1410398410"
+    },
+    "summary": "本作第二女主角，成为灰羽七年，现在是老房子灰羽中第二年长的，同时也是实际上照顾老房子里灰羽最多的人。记得的梦境不完整，只记得在梦中一个人走在月光下的石子道路上，砾自从暗森离开之后就一直尝试着想把梦中的情景借由作画的方式画出来，没想到最后所画出来的东西竟是她内心的恶梦。过去她一出生时的翅膀不是灰色，而是带着黑色斑点的灰色翅膀，这意味着她是带着罪而出现的（不被祝福灰羽），所以被视为异类，受到其他灰羽的排斥，也因此变的相当灰暗内向。但在暗森的帮助下，砾现在不但成了大家所信赖的人，也成了落下唯一能依靠的朋友。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "砾"
+        },
+        {
+            "key": "别名",
+            "value": []
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 13,
+        "collects": 34
+    },
+    "anime_ids": [
+        893
+    ]
+}

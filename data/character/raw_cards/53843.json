@@ -1,0 +1,44 @@
+{
+    "id": 53843,
+    "name": "姫川図書之助",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b2/44/53843_crt_rUFp6.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/44/53843_crt_rUFp6.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/44/53843_crt_rUFp6.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b2/44/53843_crt_rUFp6.jpg"
+    },
+    "summary": "为武田播磨守的鹰匠。为了找回失踪的老鹰小次郎而在森林迷路，因此来到了白鹭城附近的池子。在这池子旁宿命地遇到了白鹭城里的富姬，结果渐渐地爱上了她。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "姬川图书之助"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ひめかわ ずしょのすけ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        976
+    ]
+}

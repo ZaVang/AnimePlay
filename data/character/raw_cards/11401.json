@@ -1,0 +1,60 @@
+{
+    "id": 11401,
+    "name": "鳥飼葉月",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/32/36/11401_crt_Sd55n.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/36/11401_crt_Sd55n.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/36/11401_crt_Sd55n.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/32/36/11401_crt_Sd55n.jpg"
+    },
+    "summary": "和空同个美术部的一年级学生。\r\n相当坚强的女生。\r\n喜欢百元商店、时令食物、生起司蛋糕和红茶。\r\n很节俭会在买东西时烦恼。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鸟饲叶月"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "とりかい はづき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "torikai hazuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月17日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 17,
+    "stat": {
+        "comments": 2,
+        "collects": 6
+    },
+    "anime_ids": [
+        3994
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "id": 9347,
+    "name": "小早川美幸",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/21/cb/9347_crt_4Jg8G.jpg?r=1625912717",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/cb/9347_crt_4Jg8G.jpg?r=1625912717",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/cb/9347_crt_4Jg8G.jpg?r=1625912717",
+        "grid": "https://lain.bgm.tv/pic/crt/g/21/cb/9347_crt_4Jg8G.jpg?r=1625912717"
+    },
+    "summary": "巡查。冷静、溫和、頭腦清晰，然是個重度的機械狂。有暴走傾向，和平常安靜的形象差異頗大。和中嶋是情人的關係不過遲遲沒有進展（漫画的最后一话78话有让中岛预约婚礼会场，作者在似乎暗示她和中岛会有情人终成眷属）。動畫播放1st season裡是23歲身高：166cm、三圍：93、56、95，血型A型。2nd season裡是設定為2年後的25歲。籍貫在岡山縣，現居住於江東區。住處在警局附近的公寓，與夏實同居。髮型在原作裡最初是短髮，不過漸漸變長後盤了起來（動畫版一開始即為盤髮）。被好球侠称为“全垒打女2號”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小早川美幸"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小早川美幸"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こばやかわ みゆき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kobayakawa Miyuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月7日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "166"
+        },
+        {
+            "key": "BWH",
+            "value": "93 56 95"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://ja.wikipedia.org/wiki/逮捕しちゃうぞ"
+        },
+        {
+            "key": "原作出生年",
+            "value": "昭和41年（1966）"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 7,
+    "stat": {
+        "comments": 14,
+        "collects": 73
+    },
+    "anime_ids": [
+        2074,
+        2076
+    ]
+}

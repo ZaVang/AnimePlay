@@ -1,0 +1,64 @@
+{
+    "id": 210,
+    "name": "紫龍",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6f/3e/210_77ac0e3619e98159e9b6febf557_fQcPg.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6f/3e/210_77ac0e3619e98159e9b6febf557_fQcPg.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6f/3e/210_77ac0e3619e98159e9b6febf557_fQcPg.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6f/3e/210_77ac0e3619e98159e9b6febf557_fQcPg.jpg"
+    },
+    "summary": "星矢最可靠的伙伴，每次都协助星矢渡过难关，为了雅典娜，不顾自己的爱。在中国庐山五老峰修炼，黄金圣斗士童虎的弟子。天龙星座。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "紫龙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "シリュウ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "10月4日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "172cm"
+        },
+        {
+            "key": "体重",
+            "value": "53kg"
+        },
+        {
+            "key": "出生地",
+            "value": "日本"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 4,
+    "stat": {
+        "comments": 6,
+        "collects": 7
+    },
+    "anime_ids": [
+        4843
+    ]
+}

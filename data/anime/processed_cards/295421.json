@@ -1,0 +1,88 @@
+{
+    "id": 295421,
+    "name": "排球少年 TO THE TOP 第二期",
+    "image_path": "data/images/anime/295421.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "运动",
+        "漫画改"
+    ],
+    "date": "2020-10-02",
+    "rating_rank": 588,
+    "rating_score": 7.7,
+    "rating_total": 2712,
+    "main_character_ids": [
+        24322,
+        24323
+    ],
+    "main_characters": [
+        {
+            "id": 24322,
+            "name": "日向翔陽",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/03/78/24322_crt_zuFs2.jpg?r=1411356315",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/78/24322_crt_zuFs2.jpg?r=1411356315",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/78/24322_crt_zuFs2.jpg?r=1411356315",
+                "grid": "https://lain.bgm.tv/pic/crt/g/03/78/24322_crt_zuFs2.jpg?r=1411356315"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 8253,
+                    "name": "村瀬歩",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ee/d9/8253_prsn_hnQG2.jpg?r=1543332484",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/d9/8253_prsn_hnQG2.jpg?r=1543332484",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/d9/8253_prsn_hnQG2.jpg?r=1543332484",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ee/d9/8253_prsn_hnQG2.jpg?r=1543332484"
+                    },
+                    "short_summary": "村瀬 歩（むらせ あゆむ、1988年12月14日 - ）は、日本の男性声優。アメリカ合衆国出身。ヴィムス所属。\r\n\r\nアメリカで生まれた後、高校時代まで愛知県で過ごし、京都府の大学に進学後上京。\r\n芝居を観るのが好きだったことから声優を目指し、日本ナレーション演技研究所へ入所。2012年、『Persona4 the ANIMATION』で声優デビュー。同年、『新世界より』の青沼瞬（14歳）役で初のメインキャラクターを演じた。2014年、『ハイキュー!!』の日向翔陽役で初主演を果たした。\r\n2016年に、第10回声優アワードで新人男優賞を受賞した。\r\n\r\n尊敬する声優は、自身が声優を目指すきっかけとなった大友龍三郎や、年齢が近く共演も多い松岡禎丞。\r\n中性的な音質を生かした役を演じることが多く、女性のガヤに加わったり、『チア男子!!』では佐久間龍造役と姉3名の役も兼ねるなど、女性キャラクターを演じることもある。またラジオなどでも村瀬歩（あゆみ）という女子の設定で話すことがある。一方で、『M3〜ソノ黒キ鋼〜』の伊削ヘイト役のように狂気じみた低音ボイスもこなせるほど声域が非常に広い。\r\n帰国子女のため英会話が堪能で、英語を必要とするモブキャラやガヤもこなし、洋画の吹き替えも増えている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 24323,
+            "name": "影山飛雄",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/05/0a/24323_crt_z77p4.jpg?r=1411356359",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/0a/24323_crt_z77p4.jpg?r=1411356359",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/0a/24323_crt_z77p4.jpg?r=1411356359",
+                "grid": "https://lain.bgm.tv/pic/crt/g/05/0a/24323_crt_z77p4.jpg?r=1411356359"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9953,
+                    "name": "石川界人",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/af/c4/9953_prsn_O0Dsl.jpg"
+                    },
+                    "short_summary": "日本男性声优。隶属于Stay Luck，出生于东京都。\r\n\r\n趣味\t読書、一人劇\r\n特技\t水泳、ウィンタースポーツ\r\n経歴\tプロ・フィット声優養成所　卒\r\n2014年第八回声優アワードにて「新人男優賞」受賞。\r\n2020年第十四回声優アワードにて「助演男優賞」受賞。\r\n2022年2月1日、ステイラックへ移籍。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

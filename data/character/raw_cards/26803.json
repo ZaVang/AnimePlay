@@ -1,0 +1,64 @@
+{
+    "id": 26803,
+    "name": "杉本恭己",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4f/8f/26803_crt_E553y.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/8f/26803_crt_E553y.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/8f/26803_crt_E553y.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4f/8f/26803_crt_E553y.jpg"
+    },
+    "summary": "高校2年になったとき、藤が谷から松岡に編入した。藤が谷に通っていた3人の姉がおり、恭己とあわせて杉本四姉妹と呼ばれる。\r\n優等生でスポーツもでき、女子に人気がある。\r\n姉の恋人である各務に想いを寄せており、失恋を機に松岡に編入。半ば当て付けのような形でふみと交際していたが破局した。その後、自分の失恋ばかりを正当視する身勝手さをふみ自身に諌められ、気持ちを切り替える。卒業後はロンドンに留学した。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "杉本恭己"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "杉本 恭己"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "すぎもと やすこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sugimoto Yasuko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月5日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "173cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 5,
+    "stat": {
+        "comments": 6,
+        "collects": 5
+    },
+    "anime_ids": [
+        1758
+    ]
+}

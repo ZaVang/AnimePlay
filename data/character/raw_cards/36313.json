@@ -1,0 +1,72 @@
+{
+    "id": 36313,
+    "name": "七尾百合子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f2/20/36313_crt_IaIis.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/20/36313_crt_IaIis.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/20/36313_crt_IaIis.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f2/20/36313_crt_IaIis.jpg"
+    },
+    "summary": "《偶像大师 百万LIVE!》登场的偶像。Visual属性。 \r\n\r\n一位格外喜爱书中的世界的15岁的文学少女。不管什麽题材只要她觉得有趣的书都会去看，像雷·布雷德伯里，太宰，托尔金之类的也照看不误。不过大部分都是幻想丶神秘类的题材。 \r\n\r\n通常情况下是一个性格开朗，言行举止都十分有活力的女孩子。但同时又有些怕生，和初次见面的人讲话会变得十分紧张。 \r\n\r\n对於自己的目标是成为一名「像作者离世百年之後仍在世间流传的好书般，留在每个人心中」的偶像。 \r\n\r\n形象颜色为黄色。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "七尾百合子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Nanao Yuriko"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ななお ゆりこ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月18日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        },
+        {
+            "key": "体重",
+            "value": "41kg"
+        },
+        {
+            "key": "BWH",
+            "value": "78/56/80"
+        },
+        {
+            "key": "年齡",
+            "value": "15岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 18,
+    "stat": {
+        "comments": 25,
+        "collects": 57
+    },
+    "anime_ids": [
+        309807
+    ]
+}

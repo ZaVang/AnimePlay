@@ -1,0 +1,67 @@
+{
+    "id": 4161,
+    "name": "ランボ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/06/2f/4161_crt_H97KY.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/2f/4161_crt_H97KY.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/2f/4161_crt_H97KY.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/06/2f/4161_crt_H97KY.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蓝波"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "蠢牛"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ランボ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Lambo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "????-05-28"
+        },
+        {
+            "key": "身高",
+            "value": "5岁─42cm，15岁─179cm，25岁─184cm"
+        },
+        {
+            "key": "体重",
+            "value": "5岁─4kg，15岁─64kg，25岁─73kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 28,
+    "stat": {
+        "comments": 5,
+        "collects": 19
+    },
+    "anime_ids": [
+        4562
+    ]
+}

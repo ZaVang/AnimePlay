@@ -1,0 +1,68 @@
+{
+    "id": 92946,
+    "name": "須理出未来",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e8/d8/92946_crt_GGIhS.jpg?r=1668711163",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/d8/92946_crt_GGIhS.jpg?r=1668711163",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/d8/92946_crt_GGIhS.jpg?r=1668711163",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e8/d8/92946_crt_GGIhS.jpg?r=1668711163"
+    },
+    "summary": "せるふの家のお隣さんで幼なじみの高校1年生。エリート校に通う成績優秀なしっかり者。何事にも一生懸命で向上心旺盛。小さい頃はせるふと仲良くしていたが最近はちょっとギクシャクしている。怒るとぷーっとほっぺたを膨らませる癖から『ぷりん』とあだ名がついた。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "须理出未来"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "布丁"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "すりで みく"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Suride Miku"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ぷりん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月3日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://diy-anime.com/character/purin.php"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 3,
+    "stat": {
+        "comments": 103,
+        "collects": 122
+    },
+    "anime_ids": [
+        331445
+    ]
+}

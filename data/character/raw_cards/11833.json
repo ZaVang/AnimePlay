@@ -1,0 +1,60 @@
+{
+    "id": 11833,
+    "name": "松前緒花",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/98/20/11833_crt_EqQs0.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/20/11833_crt_EqQs0.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/20/11833_crt_EqQs0.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/98/20/11833_crt_EqQs0.jpg"
+    },
+    "summary": "在单亲家庭长大的女孩，由于母亲和欠了一屁股债的男朋友跑路，于是一个人被流放到乡下外婆经营的旅店“喜翠庄”打工。\r\n由于鼻子天生较弱，所以很容易流鼻血。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "松前绪花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "まつまえ おはな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Matsumae Ohana"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1994年11月30日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "147cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1994,
+    "birth_mon": 11,
+    "birth_day": 30,
+    "stat": {
+        "comments": 86,
+        "collects": 549
+    },
+    "anime_ids": [
+        22759
+    ]
+}

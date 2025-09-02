@@ -1,0 +1,88 @@
+{
+    "id": 1951,
+    "name": "魔女猎人罗宾",
+    "image_path": "data/images/anime/1951.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "罗宾是STN-J新加入的成员，虽然拥有与巫人相似的能力，但是她对猎捕巫人这件事是深信不疑的。但是与巫人深入接触后，罗宾开始怀疑巫人与自己那与众不同的能力存在的目的。就在这个时候，罗宾发现所罗门似乎在猎捕巫人这件事尚有其他不为人知的企图，甚至发现自己原来也是组织想要猎杀的目标之一…",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2002-07-02",
+    "rating_rank": 1903,
+    "rating_score": 7.2,
+    "rating_total": 338,
+    "main_character_ids": [
+        9029,
+        18861
+    ],
+    "main_characters": [
+        {
+            "id": 9029,
+            "name": "瀬名ロビン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b3/c8/9029_crt_P9nnO.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/c8/9029_crt_P9nnO.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/c8/9029_crt_P9nnO.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b3/c8/9029_crt_P9nnO.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4032,
+                    "name": "渡辺明乃",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a4/66/4032_prsn_A288v.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/66/4032_prsn_A288v.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/66/4032_prsn_A288v.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a4/66/4032_prsn_A288v.jpg"
+                    },
+                    "short_summary": "日本的女性声优，千叶县船桥市出身\r\n    代表作有《重生传奇》（毛）、《魔法老师》（络操茶茶丸）、《超级机器人大战系列》（爱比丝·道格拉斯）等\r\n    以童星起家的女性声优，童星时期属于剧团日本儿童，后因崇拜幽游白书中绪方惠美演出的藏马角色而转行。\r\n    有点沙哑的声音（husky voice）为其特征。像テイルズオブリバース的マオ、韦駄天翔的山登翔之类活泼少年、IGPX的リズ那样的强气娘、爆裂天使的ジョウ和魔法老师的络缲茶々丸那样的（阴沉）寡言的脚色等，不限定于特定性格，可以演出各种性格角色的声优。另外不知为什么，百合类的演出也不少。\r\n    第一人称“仆”，不过偶尔会用“俺”，在传颂之物广播第13回也曾说过，有时会根据年龄使用“あたし”自称。 （仆，ボク，Boku——ボク一般是男性专用的自称。俺，おれ，Ore——一般是男性用自称，详见仆少女。あたし为女性专用自称。另一种则为“私”一般念作“わたし”（Watashi），是两性通用自称，“わたくし”（watakushi）则为古语，不过仍有人在使用）\r\n    非常讨厌别人讲黄色笑话。在担任某电台节目的特别来宾演出时，对于小野坂昌也说著一连串黄色笑话的时候，也不管当时正在录音，就突然生气，彻底的将小野坂斥责一遍。现在随着和同性声优的共演作品较多，常常被生天目仁美和伊藤静等用“近似”性骚扰的行为捉弄，渐渐的多少对这种事有点抵抗力了。\r\n    声优界知名的巨乳。因此常遭声优界有名的“揉乳狂”生天目仁美的“毒手”。\r\n    生天目仁美与伊藤静曾说“（明乃）是我们身体的偶像！”；柚木凉香和三宅华也也曾在渡边本人不在时的电台节目中讨论“胸部很大”的话题。\r\n    本人曾说“就算谁说了什么，のとまみ（能登麻美子爱称之一）也是我的人。不可以。不让给任何人。まーたん（指能登，亦为能登爱称之一，亦有直译（音译）为麻炭）是我的。看，我们在交往啊。就算不是在交往也绝对不让给人。”（但却比不上生天目仁美和同公司前辈川澄绫子她们对能登麻美子的溺爱程度。）\r\n    很喜欢酒，和声优界公认的“酒女”伊藤静是酒友。\r\n    曾在涩谷喝酒喝到天亮，原本打算坐涩谷到品川方面的电车的，但醒来时已经到了原宿这样的喝酒失败谭。明明打算坐首班车的，醒来时已经到了中午了（根据あまえないでよっ!!声优SP）。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 18861,
+            "name": "亜門",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/dc/b8/18861_crt_PBOji.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/b8/18861_crt_PBOji.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/b8/18861_crt_PBOji.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/dc/b8/18861_crt_PBOji.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4281,
+                    "name": "竹若拓磨",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a7/32/4281_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/32/4281_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/32/4281_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a7/32/4281_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

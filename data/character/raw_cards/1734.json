@@ -1,0 +1,70 @@
+{
+    "id": 1734,
+    "name": "真壁一騎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bf/83/1734_crt_s4a4X.jpg?r=1672722751",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/83/1734_crt_s4a4X.jpg?r=1672722751",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/83/1734_crt_s4a4X.jpg?r=1672722751",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bf/83/1734_crt_s4a4X.jpg?r=1672722751"
+    },
+    "summary": "原只是一位普通的运动神经极好的海岛少年，直到入侵者侵入了岛的那一天——\r\n在异界体侵入的危机下成为了Mark Elf的驾驶者，与自小的玩伴·总士并肩为了保护岛而战斗。\r\n因为某个“事故”而导致总士的左眼失明，故而自我否定度非常的高。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "真壁一骑"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "真壁 一騎"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まかべ かずき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Makabe Kazuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2131年9月21日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "169cm"
+        },
+        {
+            "key": "体重",
+            "value": "56kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 2131,
+    "birth_mon": 9,
+    "birth_day": 21,
+    "stat": {
+        "comments": 11,
+        "collects": 47
+    },
+    "anime_ids": [
+        60901,
+        130230,
+        2936
+    ]
+}

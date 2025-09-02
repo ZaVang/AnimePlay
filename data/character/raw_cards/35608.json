@@ -1,0 +1,68 @@
+{
+    "id": 35608,
+    "name": "エミリア",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/86/d4/35608_crt_3picp.jpg?r=1695696610",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/d4/35608_crt_3picp.jpg?r=1695696610",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/d4/35608_crt_3picp.jpg?r=1695696610",
+        "grid": "https://lain.bgm.tv/pic/crt/g/86/d4/35608_crt_3picp.jpg?r=1695696610"
+    },
+    "summary": "銀髪に紫紺の瞳を持つ美しい少女。お人好しで面倒見の良い性格だが、当人はなぜかそれを素直に認めようとしない。家族同然の猫精霊であるパックをお供に連れており、彼の前でだけ甘えた表情を見せる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾米莉娅"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "爱蜜莉雅"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Emilia"
+                },
+                {
+                    "k": "昵称",
+                    "v": "EMT"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月23日"
+        },
+        {
+            "key": "身高",
+            "value": "164cm"
+        },
+        {
+            "key": "星座",
+            "value": "天秤座"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 23,
+    "stat": {
+        "comments": 177,
+        "collects": 982
+    },
+    "anime_ids": [
+        296195,
+        316247,
+        278826,
+        140001,
+        425998
+    ]
+}

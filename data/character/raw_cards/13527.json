@@ -1,0 +1,73 @@
+{
+    "id": 13527,
+    "name": "ロックオン・ストラトス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/df/99/13527_crt_qXLgQ.jpg?r=1504037949",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/99/13527_crt_qXLgQ.jpg?r=1504037949",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/99/13527_crt_qXLgQ.jpg?r=1504037949",
+        "grid": "https://lain.bgm.tv/pic/crt/g/df/99/13527_crt_qXLgQ.jpg?r=1504037949"
+    },
+    "summary": "生于爱尔兰，射击型MS“力天使高达（GN-002 Gundam Dynames）”之驾驶员。\r\n四位驾驶员中年纪最大而担任领导角色，对另外三人无团队意识之举动感到无奈，十分照顾年纪最小的刹那。\r\n战斗中口头禅为“力天使，狙击目标”的语句。\r\n擅于狙击及射击，除以高达射击外即使手持狙击步枪亦能作出准确射击。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "洛克昂·斯特拉托斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ニール・ディランディ"
+                },
+                {
+                    "v": "Neil Dylandy"
+                },
+                {
+                    "v": "尼尔·狄兰迪"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Lockon Stratos"
+                },
+                {
+                    "k": "昵称",
+                    "v": "锁定叔"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2283-03-03"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "185cm"
+        },
+        {
+            "key": "体重",
+            "value": "67kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 3,
+    "stat": {
+        "comments": 10,
+        "collects": 61
+    },
+    "anime_ids": [
+        286
+    ]
+}

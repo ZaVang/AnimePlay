@@ -1,0 +1,52 @@
+{
+    "id": 13363,
+    "name": "桜木六郎太",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8b/2a/13363_crt_aeU88.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8b/2a/13363_crt_aeU88.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8b/2a/13363_crt_aeU88.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8b/2a/13363_crt_aeU88.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "樱木六郎太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Sakuragi Rokurouta"
+                },
+                {
+                    "k": "昵称",
+                    "v": "An-chan"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "年龄",
+            "value": "18"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 19
+    },
+    "anime_ids": [
+        4283
+    ]
+}

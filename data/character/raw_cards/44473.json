@@ -1,0 +1,98 @@
+{
+    "id": 44473,
+    "name": "チルチャック",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3c/b7/44473_crt_zy0yE.jpg?r=1708671363",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/b7/44473_crt_zy0yE.jpg?r=1708671363",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/b7/44473_crt_zy0yE.jpg?r=1708671363",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3c/b7/44473_crt_zy0yE.jpg?r=1708671363"
+    },
+    "summary": "半身人族男性，陷阱解除及开锁师。实际年龄为与外表不相符的29岁。平时个性沉稳，嘴巴有点坏，但一遇上解除陷阱整个人就神经异常紧绷。菜鸟时期常被宝箱怪阴死，因此对宝箱怪既恨又怕。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "奇尔查克"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "齐尔查克"
+                },
+                {
+                    "v": "齐尔查克·蒂姆兹"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Chilchack"
+                },
+                {
+                    "k": "日文名",
+                    "v": "チルチャック・ティムズ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Chilchuck Tims"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月18日"
+        },
+        {
+            "key": "身高",
+            "value": "110cm左右"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki、公式书"
+        },
+        {
+            "key": "BMI",
+            "value": "18"
+        },
+        {
+            "key": "年龄",
+            "value": "29岁"
+        },
+        {
+            "key": "人种",
+            "value": "半身人"
+        },
+        {
+            "key": "出生地区",
+            "value": "东方大陆"
+        },
+        {
+            "key": "家族成员",
+            "value": "母亲、妻子、哥哥、姐姐、两个弟弟、三个女儿"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "酒（特别是麦芽酒）"
+        },
+        {
+            "key": "不喜欢的食物",
+            "value": "甜食"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 18,
+    "stat": {
+        "comments": 27,
+        "collects": 51
+    },
+    "anime_ids": [
+        395378
+    ]
+}

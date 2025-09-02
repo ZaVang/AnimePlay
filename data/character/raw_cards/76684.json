@@ -1,0 +1,44 @@
+{
+    "id": 76684,
+    "name": "ぺこ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b3/3d/76684_crt_a31ol.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/3d/76684_crt_a31ol.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/3d/76684_crt_a31ol.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b3/3d/76684_crt_a31ol.jpg"
+    },
+    "summary": "淡黄色的小猫。爱好是吃东西和逗笑别人。舞良的搭档。\r\n\r\n薄い黄色の子猫。食べることと、皆を笑わせることが好き。まいらのパートナー。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "佩可"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Peko"
+                }
+            ]
+        },
+        {
+            "key": "生日",
+            "value": "12月3日"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 3,
+    "stat": {
+        "comments": 1,
+        "collects": 3
+    },
+    "anime_ids": [
+        289829
+    ]
+}

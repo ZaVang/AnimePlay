@@ -1,0 +1,68 @@
+{
+    "id": 17362,
+    "name": "小鳥遊六花",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a7/6c/17362_crt_yPAVp.jpg?r=1642151054",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/6c/17362_crt_yPAVp.jpg?r=1642151054",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/6c/17362_crt_yPAVp.jpg?r=1642151054",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a7/6c/17362_crt_yPAVp.jpg?r=1642151054"
+    },
+    "summary": "メインヒロイン。現役中二病患者で、自称「邪王真眼の使い手」。理数系は壊滅的なほどできないが、中二病の影響で国語や社会および英語はそこそこできる。裁縫は得意だが料理はできない。作者あとがきによると最終的にお馬鹿でまったく面影もなくなってしまったが涼宮ハルヒシリーズの長門有希がモデルの模様。アニメ公式HPのトップでもっている銃はモーゼルC96(モーゼルミリタリー)である。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小鸟游六花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たかなし りっか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takanashi Rikka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月12日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "150cm"
+        },
+        {
+            "key": "体重",
+            "value": "47kg"
+        },
+        {
+            "key": "BWH",
+            "value": "78/53/80"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 12,
+    "stat": {
+        "comments": 81,
+        "collects": 974
+    },
+    "anime_ids": [
+        29648
+    ]
+}

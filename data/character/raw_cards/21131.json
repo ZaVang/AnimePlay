@@ -1,0 +1,52 @@
+{
+    "id": 21131,
+    "name": "ロジャー・スミス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/04/1e/21131_crt_Ni9B2.jpg?r=1745946696",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/1e/21131_crt_Ni9B2.jpg?r=1745946696",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/1e/21131_crt_Ni9B2.jpg?r=1745946696",
+        "grid": "https://lain.bgm.tv/pic/crt/g/04/1e/21131_crt_Ni9B2.jpg?r=1745946696"
+    },
+    "summary": "元は軍警察の警部補であったが、パラダイム本社のやり方と対立し退職し、記憶を失った街、パラダイムシティ随一のネゴシエイター“交渉人”として活動。治安が乱れ、法が正しく機能していないこの街で、依頼人にとって有利になるように、卓越した頭脳でイーブン以上の交渉を成立させる。日常の愛車はグリフォン。\r\nそして隠されたもう一つの顔は、ビッグオーを駆り、巨大な敵、あるいは巨大な危機に立向かい、人々を守ること。\r\nフェミニストで紳士だが、鼻持ちならなくならない程度に不遜な態度をのぞかせることはしばし。また怒ると、元軍人という“闘う”仕事をしていた気性が彼を武装する。拳銃は持たない主義だ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "罗杰·史密斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Roger Smith"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "180cm"
+        },
+        {
+            "key": "年齢",
+            "value": "２５歳"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 10,
+        "collects": 32
+    },
+    "anime_ids": [
+        697
+    ]
+}

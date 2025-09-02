@@ -1,0 +1,59 @@
+{
+    "id": 25761,
+    "name": "クロエ・フォン・アインツベルン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a2/69/25761_crt_13Kzg.jpg?r=1498990165",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/69/25761_crt_13Kzg.jpg?r=1498990165",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/69/25761_crt_13Kzg.jpg?r=1498990165",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a2/69/25761_crt_13Kzg.jpg?r=1498990165"
+    },
+    "summary": "在第二部的时候登场，因处理地脉正常化的仪式出了差错，导致从伊莉雅身上分离出来并实体化的人格。\r\n其真实身分为爱因兹贝伦家在十年前的圣杯战争时所使用的许愿仪，并在伊莉雅婴儿时期被母亲封印的魔力、记忆及知识，经长年累积后实体化的人格（第一部伊莉雅的英灵化就是她）。\r\n皮肤较伊莉雅黝黑，发色也偏银色，服装类似Archer，但比较裸露。性格较伊莉雅来的狡猾活泼，但除了凛、露维亚、美游及伊莉雅的母亲外，没人认得出来她不是伊莉雅，为了方便和伊莉雅区别，而被凛取名叫“小黑”（クロ），而克洛伊·冯·爱因兹贝伦为自己掰出来的名字。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "克洛伊·冯·爱因兹贝伦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "小黑"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Chloe von Einzbern"
+                },
+                {
+                    "k": "日文名",
+                    "v": "クロエ・フォン・アインツベルン"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月20日"
+        },
+        {
+            "key": "声优",
+            "value": "斋藤千和"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 20,
+    "stat": {
+        "comments": 37,
+        "collects": 114
+    },
+    "anime_ids": [
+        113134
+    ]
+}

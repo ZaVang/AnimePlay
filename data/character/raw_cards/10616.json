@@ -1,0 +1,57 @@
+{
+    "id": 10616,
+    "name": "音無結弦",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7b/46/10616_crt_osAA0.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/46/10616_crt_osAA0.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/46/10616_crt_osAA0.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7b/46/10616_crt_osAA0.jpg"
+    },
+    "summary": "丧失记忆的少年\r\n本篇的主人公。\r\n在丧失记忆的状态下来到死后世界的少年。\r\n被最初遇到的少女“由理”半强制性地拉入了“死后世界战线”。\r\n脑子转得很快，虽然是新人但在有事时也会进行对战线的指挥。\r\n\r\n动画：因环境的急变而困惑的少年\r\n失去了生前记忆的本篇主人公。\r\n自己是为什么死去，死后的世界究竟是什么，以及自己究竟是否应该也参加战线……突然的环境变化将这些选择强加给他。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "音无结弦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "音無 結弦"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おとなし ゆづる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Otonashi Yuzuru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://key.visualarts.gr.jp/angelbeats/character.html"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 12,
+        "collects": 112
+    },
+    "anime_ids": [
+        1851,
+        363880
+    ]
+}

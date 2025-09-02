@@ -1,0 +1,87 @@
+{
+    "id": 614,
+    "name": "新藤景",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/90/eb/614_crt_ZTa2p.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/eb/614_crt_ZTa2p.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/eb/614_crt_ZTa2p.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/90/eb/614_crt_ZTa2p.jpg"
+    },
+    "summary": "音羽学园一年级生。广野纮的青梅竹马。留着短头发，个性与说话的口气像男孩子一样。社团属于篮球社，一年级就是正式选手。第二章的女主角，同时也是二年生。在二年级时辞去部活，对于失去纮而自暴自弃。平常是男性腔调，拥有比男人更强的杀伤力，但底子仍是柔弱的女生。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "生日",
+            "value": "6月2日"
+        },
+        {
+            "key": "身高",
+            "value": "150cm"
+        },
+        {
+            "key": "体重",
+            "value": "40kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B76/W55/H79"
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Shindou Kei"
+                },
+                {
+                    "k": "日文名",
+                    "v": "新藤景"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しんどう けい"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "官方设定集"
+                },
+                {
+                    "v": "anidb.net"
+                }
+            ]
+        },
+        {
+            "key": "简体中文名",
+            "value": "新藤景"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "声优",
+            "value": "樱井美铃"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 2,
+    "stat": {
+        "comments": 24,
+        "collects": 53
+    },
+    "anime_ids": [
+        799
+    ]
+}

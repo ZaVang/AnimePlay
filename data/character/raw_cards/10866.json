@@ -1,0 +1,60 @@
+{
+    "id": 10866,
+    "name": "来海えりか／キュアマリン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/95/c0/10866_crt_n6OQy.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/c0/10866_crt_n6OQy.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/c0/10866_crt_n6OQy.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/95/c0/10866_crt_n6OQy.jpg"
+    },
+    "summary": "13岁，就读于明堂院初中部二年级。家庭成员是父母姐姐的四人家庭，家里经营时尚用品店。梦想是成为让大家变得帅气的时尚设计师兼造型师。原本想成为模特，但是同样去参加选秀反而是姐姐入选成为职业模特实现梦想、成为大家追捧的目标，这让绘里香严重感到自卑。但是通过和蕾的相识，决定了不是作为模特，而是作为设计师来让女性更加的美丽。这也意味著她从来自姐姐的自卑感中的解脱。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "来海绘里香／海洋天使"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Cure Marine"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くるみ えりか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kurumi Erika"
+                },
+                {
+                    "k": "昵称",
+                    "v": "马琳"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://baike.baidu.com/view/3059341.htm#3"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 18,
+        "collects": 99
+    },
+    "anime_ids": [
+        4124
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "id": 4828,
+    "name": "アン・シャーリー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/dd/71/4828_crt_3Yoo8.jpg?r=1745736928",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/71/4828_crt_3Yoo8.jpg?r=1745736928",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/71/4828_crt_3Yoo8.jpg?r=1745736928",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dd/71/4828_crt_3Yoo8.jpg?r=1745736928"
+    },
+    "summary": "早くに両親を亡くし、11歳で孤児院からグリーン・ゲイブルズに引き取られる赤毛の少女。明るく前向きな性格と、類まれなる想像力は時には失敗も招くが、周囲の人たちを巻き込みながらも、常にたくさんの愛に包まれ、少女から素敵な女性に成長していく。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "安妮·雪莉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Anne Shirley"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 33
+    },
+    "anime_ids": [
+        18256
+    ]
+}

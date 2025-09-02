@@ -1,0 +1,72 @@
+{
+    "id": 6109,
+    "name": "相楽左之助",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/39/b3/6109_crt_wPQE0.jpg?r=1724609742",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/b3/6109_crt_wPQE0.jpg?r=1724609742",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/b3/6109_crt_wPQE0.jpg?r=1724609742",
+        "grid": "https://lain.bgm.tv/pic/crt/g/39/b3/6109_crt_wPQE0.jpg?r=1724609742"
+    },
+    "summary": "裏社会に名を轟かせる喧嘩代行を生業とする男。通称喧嘩屋“斬左“。依頼を受けて喧嘩をするが、戦って楽しい相手を常に探している。人並外れた怪力と打たれ強さ、背中の悪一文字が特徴。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "相乐左之助"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "相楽左之助"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さがら さのすけ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sagara Sanosuke"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1860年7月30日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "179cm"
+        },
+        {
+            "key": "体重",
+            "value": "71kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 30,
+    "stat": {
+        "comments": 4,
+        "collects": 13
+    },
+    "anime_ids": [
+        2712
+    ]
+}

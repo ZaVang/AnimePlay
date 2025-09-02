@@ -1,0 +1,62 @@
+{
+    "id": 1639,
+    "name": "天道あかね",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0a/07/1639_crt_j9DDP.jpg?r=1619279114",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/07/1639_crt_j9DDP.jpg?r=1619279114",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/07/1639_crt_j9DDP.jpg?r=1619279114",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0a/07/1639_crt_j9DDP.jpg?r=1619279114"
+    },
+    "summary": "本作的女主角，天道家最小的女儿，被许配给乱马。性格外刚内柔，经常与乱马争吵。口头上说不喜欢乱马，但心中却对乱马有好感。小茜在学校由于成绩优良、运动万能，所以在风林馆高中有不少粉丝；不过这么优秀的小茜，在烹调与手工艺方面的素养却令人实在不敢恭维(在漫画版中也曾成功煮出“普通”水平的咖哩)。初登场时为长发，在乱马与良牙对战时误被削断，于是恢复成为小时候一样的男孩子气的短发，这段与东风医生有关的故事更是吸引乱马的直接原因。跟乱马一样，小茜很讨厌落败，而且醋意甚浓，后来当乱马身边的女子越来越多时，更令她经常对乱马发脾气。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "天道茜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "天道 あかね"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "てんどう あかね"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tendou Akane"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "日高法子"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 76,
+        "collects": 153
+    },
+    "anime_ids": [
+        2789,
+        489820,
+        65883
+    ]
+}

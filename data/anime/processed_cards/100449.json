@@ -1,0 +1,90 @@
+{
+    "id": 100449,
+    "name": "月刊少女野崎君",
+    "image_path": "data/images/anime/100449.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "高中女生佐仓千代好不容易提起勇气向同年级的野崎梅太郎告白，得到的却是野崎的亲笔签名，和“要不要来我家？”的邀请。佐仓虽然对意料之外的展开感到困惑，却还是带着期待来到野崎家，没想到等着她的却是漫画原稿，不知不觉间就顺着野崎的指示开始进行涂黑作业。到这时佐仓才发现野崎是知名少女漫画家梦野咲子。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改",
+        "少女向"
+    ],
+    "date": "2014-07-06",
+    "rating_rank": 412,
+    "rating_score": 7.8,
+    "rating_total": 19646,
+    "main_character_ids": [
+        20362,
+        20363
+    ],
+    "main_characters": [
+        {
+            "id": 20362,
+            "name": "野崎梅太郎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6f/d3/20362_crt_4rlrg.jpg?r=1447000779",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6f/d3/20362_crt_4rlrg.jpg?r=1447000779",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6f/d3/20362_crt_4rlrg.jpg?r=1447000779",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6f/d3/20362_crt_4rlrg.jpg?r=1447000779"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4724,
+                    "name": "中村悠一",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/78/4724_prsn_7TvWV.jpg"
+                    },
+                    "short_summary": "爱称是ゆうきゃん，由铃村健一命名。英文标记法为‘yuu-kyan’\r\n与声优的杉田智和的私交良好，是在声优界著名的好友。\r\n兴趣是玩游戏、看电影等。\r\n不喜欢吃拉面。喜欢的食物是肉、奶酪、甜食。\r\n2020年10月1日，宣布从Sigma Seven移籍至INTENTION。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 20363,
+            "name": "佐倉千代",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6b/a4/20363_crt_JwFOJ.jpg?r=1405338921",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/a4/20363_crt_JwFOJ.jpg?r=1405338921",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/a4/20363_crt_JwFOJ.jpg?r=1405338921",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6b/a4/20363_crt_JwFOJ.jpg?r=1405338921"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 15287,
+                    "name": "小澤亜李",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/db/ff/15287_prsn_W8h04.jpg?r=1689137730",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/ff/15287_prsn_W8h04.jpg?r=1689137730",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/ff/15287_prsn_W8h04.jpg?r=1689137730",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/db/ff/15287_prsn_W8h04.jpg?r=1689137730"
+                    },
+                    "short_summary": "日本女性声优。\r\n初中看了各种各样的动漫度过了初中的时间，初三的时候下定决心要以成为声优为目标。\r\n为了进声优养成所，高一在保育员的父母工作的保育院里打理伙食，做兼职来存学费。\r\n在高二入读日本播音演技研究所。高中毕业之后，考取了调理师资格证，在拿到资格之后便确定了事务所。\r\n\r\n2013年4月加入I'm Enterprise。出道作为2013年《我的妹妹哪有这么可爱！》中游戏的声音，台词为「クリスマスホーリーナイト！」（Christmas Holy Night）。\r\n2014年7月，在《月刊少女野崎君》出演女主角佐仓千代，并担任片尾曲《ウラオモテ・フォーチュン》的演唱者。\r\n2017年，获得第11回声优奖新人女声优奖。\r\n\r\n称自己是一个有些腼腆、略怕生的人。\r\n昵称有“亚李（あり)”，“亚李酱（ありちゃん）”，“亚李李(ありりん)”。\r\n养有一只母迷你腊肠犬，取名叫そら（天空)。\r\n愿望是成为坚强成熟的女性，自己的名字能够以声优的身份被人记住。\r\n擅长插图，喜欢运动。持有调理师证书，会做料理。\r\n初一加入过田径部，但不擅长球类运动，上篮球课的时候是专门捡球的。\r\n比起做菜更喜欢吃，常在博客里发表有关吃喝的图片文字，相对肉更喜欢吃蔬菜，和食派，最喜欢的是吃起来“刺溜刺溜”的美味乌冬，有乌冬就很幸福。\r\n如果想要吃一些美味的饭菜时，就会在制作的时候做上一大堆。\r\n初中时处于画画的巅峰期，使用一些画漫画原稿用的钢笔进行绘图，而且还用手绘板创作一些东西。\r\n初一的时候遇到了《魔法先生》这部作品，被有很多女孩子出场的动画吸引了，很憧憬可以像那样笑着生活的女孩子。\r\n《牧场物语》是最憧憬的作品之一，希望能以一个角色的身份加入那种小温暖的世界。\r\n初中生时放学后常和朋友玩广播游戏，用电脑录音再听，然后五六个女生一起读漫画配音。\r\n因为喜欢《女生爱女生》和《水果篮子》这两部作品，所以喜欢田村由香里前辈和堀江由衣前辈。\r\n非常欣赏同事物所的前辈中原麻衣，认为麻衣前辈很可靠，曾在博客上说“麻衣前辈赛高”。\r\n与新人声优田泽茉纯、雨宫夕夏、长绳麻理亚、大西沙织等关系很好。跟共同出演动画《THE ROLLING GIRLS》的花守由美里关系也很好。\r\n2020年8月10日，小泽亚李向粉丝报告了自己和歌手Hige Driver结婚的事情，并在博客中表示迎来了28岁生日，我为私事感到很抱歉，在此向您报告。我、小泽亚李和音乐人Hige Driver结婚了。我希望今后也能和对哭泣、欢笑、调皮的我微笑着交往的他一起，构筑一个温暖的家庭。”至今为止、今后，我对角色的爱、对工作的感谢之情都不会改变。虽然我还不成熟，但是无论是作为一个人还是作为一个演员，我都想要更加精进。今后也请多多关照”。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

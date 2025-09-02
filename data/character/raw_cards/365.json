@@ -1,0 +1,69 @@
+{
+    "id": 365,
+    "name": "井ノ原真人",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c3/f0/365_crt_0Fp2y.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c3/f0/365_crt_0Fp2y.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c3/f0/365_crt_0Fp2y.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c3/f0/365_crt_0Fp2y.jpg"
+    },
+    "summary": "CV：水無月了\r\n不怎么可恶的的肌肉白痴\r\n肌肉白痴\r\n为了锻炼自己而拼上性命，现在认为战斗才是生存的意義\r\n与谦吾是竞争对手、不合的同伴\r\n他们的战斗已经达到了除了恭介无人能够阻止的程度",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "井之原真人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Masato Inohara"
+                },
+                {
+                    "k": "日文名",
+                    "v": "井ノ原 真人"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いのはら まさと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Inohara Masato"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "11月6日"
+        },
+        {
+            "key": "身高",
+            "value": "183cm"
+        },
+        {
+            "key": "体重",
+            "value": "80kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 6,
+    "stat": {
+        "comments": 20,
+        "collects": 49
+    },
+    "anime_ids": [
+        69484,
+        363880
+    ]
+}

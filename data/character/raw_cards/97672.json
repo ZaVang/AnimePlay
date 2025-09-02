@@ -1,0 +1,68 @@
+{
+    "id": 97672,
+    "name": "要圭",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fd/57/97672_crt_6Lt62.jpg?r=1702796180",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/57/97672_crt_6Lt62.jpg?r=1702796180",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/57/97672_crt_6Lt62.jpg?r=1702796180",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fd/57/97672_crt_6Lt62.jpg?r=1702796180"
+    },
+    "summary": "都立小手指高校一年。\r\n冷静沈着なリードでチームを勝利に導く“智将”と評された名捕手。卓越したバットコントロールで広角に長打を打てる技術と勝負強さも兼ね備えていた。ただ現在は記憶喪失のため野球の腕は素人同然。さらに人格も素直で緩い性格に変わり、時折変なギャグを発するようになってしまった。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "要圭"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かなめ けい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kaname Kei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月15日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "172cm"
+        },
+        {
+            "key": "位置",
+            "value": "捕手"
+        },
+        {
+            "key": "投打",
+            "value": "右投左打"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 15,
+    "stat": {
+        "comments": 31,
+        "collects": 33
+    },
+    "anime_ids": [
+        448478
+    ]
+}

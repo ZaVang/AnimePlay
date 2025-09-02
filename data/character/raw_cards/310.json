@@ -1,0 +1,44 @@
+{
+    "id": 310,
+    "name": "春日部咲",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/06/eb/310_gPIv1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/eb/310_gPIv1.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/eb/310_gPIv1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/06/eb/310_gPIv1.jpg"
+    },
+    "summary": "一般女性，家境富裕，逛街購物的單次結帳金額經常以10萬元日幣為單位計算，正式加入現視研是現視研首任會長陰謀威脅下加入的，喜歡抽煙並有一點暴力傾向，常常黏著高坂，對自己的魅力有著極高的自信，對於高坂的正室是ACG活動的事實目前只能默認無力改變，不喜歡cosplay，但曾被陷害而扮過不籤中的會長，大受好評，之後雖然大野不斷邀約，卻以畢業時再一次出場為藉口向大野拖延邀請。最痛恨被當做御宅族，但曾被漫研女社員取笑名字很“宅”。同人誌即賣會時參展社團名現視研的命名者。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "春日部咲"
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1983年7月19日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": 1983,
+    "birth_mon": 7,
+    "birth_day": 19,
+    "stat": {
+        "comments": 21,
+        "collects": 73
+    },
+    "anime_ids": [
+        1219,
+        928
+    ]
+}

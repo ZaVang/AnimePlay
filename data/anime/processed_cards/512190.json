@@ -1,0 +1,89 @@
+{
+    "id": 512190,
+    "name": "琉璃的宝石",
+    "image_path": "data/images/anime/512190.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "最喜欢闪亮亮事物的女高中生──谷川瑠璃，有天听说「可以靠自己采到水晶！」而为了寻找水晶前往山中。她在山里遇见专攻矿物学的女研究生──荒砥凪，于是两人决定一同采集矿物。有时为了寻找水晶走在山中的道路，有时为了捡拾石榴石浸在溪水中，有时又为了寻找未知的矿物而窥望显微镜──瑠璃在凪的引导下，一头栽进了矿物采集的世界。\r\n「就算是我应该也能采得到才对！」\r\n这正是任谁都曾有过的梦想。正宗科学冒险故事就要开始了！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2025-07-06",
+    "rating_rank": 644,
+    "rating_score": 7.7,
+    "rating_total": 1573,
+    "main_character_ids": [
+        164315,
+        164316
+    ],
+    "main_characters": [
+        {
+            "id": 164315,
+            "name": "谷川瑠璃",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8f/bd/164315_crt_IcX1D.jpg?r=1742743413",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/bd/164315_crt_IcX1D.jpg?r=1742743413",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/bd/164315_crt_IcX1D.jpg?r=1742743413",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8f/bd/164315_crt_IcX1D.jpg?r=1742743413"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 39801,
+                    "name": "根本京里",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a3/6d/39801_prsn_aY46b.jpg?r=1695006712",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a3/6d/39801_prsn_aY46b.jpg?r=1695006712",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a3/6d/39801_prsn_aY46b.jpg?r=1695006712",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a3/6d/39801_prsn_aY46b.jpg?r=1695006712"
+                    },
+                    "short_summary": "日本の女性声優。茨城県出身。青二プロダクション所属。\r\n\r\n声優になろうと思ったきっかけは、子供の頃からアニメが好きだったことから。\r\n\r\n東北新社映像テクノアカデミア声優科出身。\r\n\r\n文化放送 超!A&G+ラジオ番組「本気!アニラブ」第15期火曜パーソナリティを担当してきた。2019年12月より「本気！アニラブ」第15期のパーソナリティによるユニット「koikan@」のメンバーとなる。\r\n\r\n資格・免許：柔道初段\r\n趣味：ランニング、ネイルアート\r\n特技：エレキベース、スキー",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 164316,
+            "name": "荒砥凪",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fb/ad/164316_crt_U00U3.jpg?r=1742743551",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/ad/164316_crt_U00U3.jpg?r=1742743551",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/ad/164316_crt_U00U3.jpg?r=1742743551",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fb/ad/164316_crt_U00U3.jpg?r=1742743551"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5766,
+                    "name": "瀬戸麻沙美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/b7/5766_prsn_6q644.jpg"
+                    },
+                    "short_summary": "中学生2年生の時、偶然視聴したアニメ『D.Gray-man』の主人公、アレン・ウォーカー（声：小林沙苗）に魅せられ、キャラクターだけでなく演者の声優にも興味が湧き、声優を志す。高校在学中の2009年に声優事務所のオーディションを受験、翌2010年より声優活動を開始する。\r\n2010年、初めて受けたオーディションでテレビアニメ『放浪息子』（2011年）の準主人公 \"高槻よしの\" 役に抜擢される。彼女にとって初仕事の収録だったが、演技などに関して事前の指示はほとんど必要としなかったと監督のあおきえいは述べている。\r\n2011年、日本テレビ系テレビアニメ『ちはやふる』で主演（ \"綾瀬千早\" 役）とエンディング主題歌の歌唱を担当。同局系列のテレビアニメ『HUNTER×HUNTER』の \"クラピカ\" 役オーディションに参加していた瀬戸の演技が『ちはやふる』番組関係者の目に留まり、改めて \"綾瀬千早\" 役のオーディションを行ったところ満場一致で瀬戸の起用が決定した。\r\n2015年4月1日付けで、シグマ・セブンeからシグマ・セブンへ移動。\r\n2021年11月1日よりStarCrewへ移籍。あわせて公式Twitterアカウントを開設した。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 101795,
+    "name": "琴紗月",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b4/16/101795_crt_sRs4q.jpg?r=1685931055",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/16/101795_crt_sRs4q.jpg?r=1685931055",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/16/101795_crt_sRs4q.jpg?r=1685931055",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b4/16/101795_crt_sRs4q.jpg?r=1685931055"
+    },
+    "summary": "「…あなたそんなに面白い感じだったかしら」\r\n\r\nグループの真唯担当。黒髪美人の文学少女。\r\n真唯とは腐れ縁の幼馴染で、彼女にいつか\r\n敗北感を味わわせてやるのが目標。\r\n一見すると無愛想で近寄りがたいが、\r\n年頃の少女らしい平凡な感性も兼ね備えている。\r\n甘織れな子には、なにか思うところがあるようだ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "琴纱月"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "こと さつき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Koto Satsuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月26日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://dash.shueisha.co.jp/feature/watanare/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 26,
+    "stat": {
+        "comments": 14,
+        "collects": 52
+    },
+    "anime_ids": [
+        524707
+    ]
+}

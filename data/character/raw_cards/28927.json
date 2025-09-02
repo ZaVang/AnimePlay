@@ -1,0 +1,48 @@
+{
+    "id": 28927,
+    "name": "森友望未",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2c/81/28927_crt_6UZMZ.jpg?r=1422270393",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/81/28927_crt_6UZMZ.jpg?r=1422270393",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/81/28927_crt_6UZMZ.jpg?r=1422270393",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2c/81/28927_crt_6UZMZ.jpg?r=1422270393"
+    },
+    "summary": "本作の主人公。所沢の焼き団子店「もりとも」の一人娘で、日吉町自警団「プロペラーズ」の新米研修生。\r\n至って普通の女子高生であり、成績はオール3。好物はメロンパン。真茶未を実の姉のように慕っている。\r\n幼い頃のあだ名は「ノンスケ」。\r\n血液型 - A型、星座 - 牡牛座",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "森友望未"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "もりとも のぞみ"
+                }
+            ]
+        },
+        {
+            "key": "生日",
+            "value": "5月9日"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 9,
+    "stat": {
+        "comments": 6,
+        "collects": 52
+    },
+    "anime_ids": [
+        110600
+    ]
+}

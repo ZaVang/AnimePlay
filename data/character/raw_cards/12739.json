@@ -1,0 +1,60 @@
+{
+    "id": 12739,
+    "name": "久川鉄道",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c1/ad/12739_crt_dzN33.jpg?r=1624118932",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/ad/12739_crt_dzN33.jpg?r=1624118932",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/ad/12739_crt_dzN33.jpg?r=1624118932",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c1/ad/12739_crt_dzN33.jpg?r=1624118932"
+    },
+    "summary": "原“超和平Busters”队员，目前的爱好是环球旅行，在日本的时候住在Busters的“秘密基地”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "久川铁道"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "久川 鉄道"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひさかわ てつどう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hisakawa Tetsudou"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ぽっぽ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "185cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 21
+    },
+    "anime_ids": [
+        10440
+    ]
+}

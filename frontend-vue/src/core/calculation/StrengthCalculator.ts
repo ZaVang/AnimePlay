@@ -1,6 +1,7 @@
 import { useGameStore } from '@/stores/battle';
 import type { Card } from '@/types';
 import { SkillSystem } from '@/core/systems/SkillSystem';
+import { PersistentEffectSystem } from '@/core/systems/PersistentEffectSystem';
 
 // A simple function to get all active passive skills from both players
 // Removed direct aura scan; delegated to SkillSystem
@@ -38,6 +39,9 @@ export const StrengthCalculator = {
 
     // 3. Apply passive aura effects via SkillSystem
     finalStrength += SkillSystem.getAuraStrengthBonus(card, playerId);
+    
+    // 4. Apply persistent effects from PersistentEffectSystem
+    finalStrength += PersistentEffectSystem.getInstance().getStrengthBonus(playerId, card.synergy_tags || []);
 
     return finalStrength;
   }

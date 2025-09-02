@@ -1,0 +1,48 @@
+{
+    "id": 72140,
+    "name": "金森さやか",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1c/d1/72140_crt_gRobv.jpg?r=1581429379",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/d1/72140_crt_gRobv.jpg?r=1581429379",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/d1/72140_crt_gRobv.jpg?r=1581429379",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1c/d1/72140_crt_gRobv.jpg?r=1581429379"
+    },
+    "summary": "本作品の主人公の一人で映像研のメンバー。電車に乗ると人目を引くほどの長身。美脚。黒い長髪で、いつもおでこの上に眼鏡を乗せている。幼少期の体験から金に執着し、利益の出ない活動が嫌い。アニメの知識はないが、マネージメントと利益を創造するのが得意。浅草とは同じ中学校（上狸沢学校）の出身。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "金森沙耶香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Kanamori Sayaka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月9日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 9,
+    "stat": {
+        "comments": 38,
+        "collects": 98
+    },
+    "anime_ids": [
+        282433
+    ]
+}

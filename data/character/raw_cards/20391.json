@@ -1,0 +1,92 @@
+{
+    "id": 20391,
+    "name": "双葉杏",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b1/1d/20391_crt_H8wZj.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/1d/20391_crt_H8wZj.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/1d/20391_crt_H8wZj.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b1/1d/20391_crt_H8wZj.jpg"
+    },
+    "summary": "浅土黄色长发，悠闲懒散的乏力系少女。\r\n平常穿着很随便的松身衣着，其中以印着“工作便输了（働いたら負け）”字样的白色长T恤最具代表性。经常抱着的粉红色小兔布偶是内藏着 MP3 播放器的。\r\n经常打呵欠打瞌睡，表现得很疲倦乏力。言语上也颇多懒散的名句，例如：“下个假期是明天吗？”、“很想一星期休息八天”等。\r\n成为偶像的原因是希望通过收取版税来过生活。\r\n非常爱吃糖果，偷懒躲起来睡觉时，诸星煌梨利用糖果把她引出来。虽然懒散，可是收了糖果之后，也会认真地工作起来。智商其实意外的高。\r\n和同年龄的诸星煌梨是好朋友。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "双叶杏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ふたば あんず"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Futaba Anzu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月2日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "139cm"
+        },
+        {
+            "key": "体重",
+            "value": "30kg"
+        },
+        {
+            "key": "BWH",
+            "value": "Secret"
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        },
+        {
+            "key": "兴趣",
+            "value": "None"
+        },
+        {
+            "key": "利手",
+            "value": "右手"
+        },
+        {
+            "key": "星座",
+            "value": "处女座"
+        },
+        {
+            "key": "出生地",
+            "value": "北海道"
+        },
+        {
+            "key": "卡牌类型",
+            "value": "Cute"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 2,
+    "stat": {
+        "comments": 50,
+        "collects": 175
+    },
+    "anime_ids": [
+        130231
+    ]
+}

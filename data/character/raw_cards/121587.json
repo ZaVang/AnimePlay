@@ -1,0 +1,52 @@
+{
+    "id": 121587,
+    "name": "姫路紗良",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6e/9f/121587_crt_HsRZr.jpg?r=1752965305",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/9f/121587_crt_HsRZr.jpg?r=1752965305",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/9f/121587_crt_HsRZr.jpg?r=1752965305",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6e/9f/121587_crt_HsRZr.jpg?r=1752965305"
+    },
+    "summary": "丰原高中一年级生，和咲太同一补习班的学生。是个人见人爱的优等生，但也因此导致补习班两名讲师被辞退。第十卷时便表示对咲太的课程感兴趣，并于第十二卷成为他的学生。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "姫路纱良"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ひめじ さら"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月6日"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 6,
+    "stat": {
+        "comments": 2,
+        "collects": 5
+    },
+    "anime_ids": [
+        467930
+    ]
+}

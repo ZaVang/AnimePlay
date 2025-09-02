@@ -1,0 +1,105 @@
+{
+    "id": 6827,
+    "name": "春野サクラ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a9/8f/6827_crt_AJJiL.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/8f/6827_crt_AJJiL.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/8f/6827_crt_AJJiL.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a9/8f/6827_crt_AJJiL.jpg"
+    },
+    "summary": "本作のメインヒロイン。はたけカカシ率いる7班のくノ一。\r\n一人称は「私」。気合を入れるときの口癖は「しゃーんなろー!」。\r\n\r\n両親や親族は原作では未登場だが、アニメ版では父の春野キザシと母の春野メブキが登場している。\r\n\r\nうちはサスケをはじめ特別な血統や秘伝忍術を持つ家柄の出身が多いナルト世代の忍者の中では唯一ごく普通の家柄の出身であり、血筋に由来する特殊な能力や家に代々伝わる秘術などは持っていない。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "春野樱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "春野サクラ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はるのさくら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Haruno Sakura"
+                },
+                {
+                    "k": "昵称",
+                    "v": "樱爷"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月28日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "148.5cm(12歳)→150.1cm(13歳)→161.0cm(16歳)→165.0cm(18歳)"
+        },
+        {
+            "key": "体重",
+            "value": "35.9㎏(12歳)→45.4㎏(16歳)"
+        },
+        {
+            "key": "性格",
+            "value": "優等生、わがまま"
+        },
+        {
+            "key": "忍者登録番号",
+            "value": "012601"
+        },
+        {
+            "key": "好きな食べ物",
+            "value": "あんみつ、梅干し"
+        },
+        {
+            "key": "嫌いな食べ物",
+            "value": "激辛料理"
+        },
+        {
+            "key": "趣味",
+            "value": "暗記、クイズ"
+        },
+        {
+            "key": "闘ってみたい相手",
+            "value": "山中いの"
+        },
+        {
+            "key": "好きな言葉",
+            "value": "「一生愛の人生よ！」（臨の書）→「勇気」（闘の書）"
+        },
+        {
+            "key": "引用来源",
+            "value": "dic.pixiv.net/a/春野サクラ"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 28,
+    "stat": {
+        "comments": 55,
+        "collects": 91
+    },
+    "anime_ids": [
+        2782,
+        3425
+    ]
+}

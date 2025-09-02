@@ -1,0 +1,90 @@
+{
+    "id": 43168,
+    "name": "市ヶ谷有咲",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ee/95/43168_crt_87qzN.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/95/43168_crt_87qzN.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/95/43168_crt_87qzN.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ee/95/43168_crt_87qzN.jpg"
+    },
+    "summary": "典当行的孙女。\r\n要领很好、在学校成绩优秀、同时有着麻烦的性格。\r\n在年幼时就学习过钢琴、不过半途而废了。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "市谷有咲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いちがや ありさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ichigaya Arisa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月27日"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        },
+        {
+            "key": "担任",
+            "value": "键盘手"
+        },
+        {
+            "key": "乐器",
+            "value": "Roland JUNO Di.、铃鼓"
+        },
+        {
+            "key": "星座",
+            "value": "天蝎座"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "豆沙水果凉粉、玄米、白煮蛋"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "葱类"
+        },
+        {
+            "key": "兴趣",
+            "value": "盆栽、网上冲浪"
+        },
+        {
+            "key": "代表色",
+            "value": "白色"
+        },
+        {
+            "key": "所属",
+            "value": "Poppin'Party"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 27,
+    "stat": {
+        "comments": 57,
+        "collects": 198
+    },
+    "anime_ids": [
+        246431,
+        246430,
+        246429
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": 31645,
+    "name": "ホワイト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d6/c0/31645_crt_O43S8.jpg?r=1480959720",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/c0/31645_crt_O43S8.jpg?r=1480959720",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/c0/31645_crt_O43S8.jpg?r=1480959720",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d6/c0/31645_crt_O43S8.jpg?r=1480959720"
+    },
+    "summary": "アニメ版オリジナルキャラクターの少女。レオと出会うことになるが、出自は謎に包まれている。\r\nアニメ版監督の松本が描いた原案を元に、内藤が監修した。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "玛丽.麦克白"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "小白"
+                },
+                {
+                    "k": "英文名",
+                    "v": "White"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 20,
+        "collects": 132
+    },
+    "anime_ids": [
+        105075
+    ]
+}

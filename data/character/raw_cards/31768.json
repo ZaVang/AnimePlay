@@ -1,0 +1,66 @@
+{
+    "id": 31768,
+    "name": "伊達征士",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/11/87/31768_crt_yj1Sn.jpg?r=1428452732",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/11/87/31768_crt_yj1Sn.jpg?r=1428452732",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/11/87/31768_crt_yj1Sn.jpg?r=1428452732",
+        "grid": "https://lain.bgm.tv/pic/crt/g/11/87/31768_crt_yj1Sn.jpg?r=1428452732"
+    },
+    "summary": "伊达政宗之后。不是独眼龙但是会用刘海遮住右眼",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊达征士"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "光轮"
+                },
+                {
+                    "v": "光辉神"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "绥及"
+                },
+                {
+                    "k": "日文名",
+                    "v": "光輪のセイジ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "だて せいじ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1973年6月9日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1973,
+    "birth_mon": 6,
+    "birth_day": 9,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        3621
+    ]
+}

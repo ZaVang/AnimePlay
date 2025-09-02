@@ -1,0 +1,48 @@
+{
+    "id": 293,
+    "name": "銀",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/30/82/293_crt_uzbcR.jpg?r=1491230861",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/82/293_crt_uzbcR.jpg?r=1491230861",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/82/293_crt_uzbcR.jpg?r=1491230861",
+        "grid": "https://lain.bgm.tv/pic/crt/g/30/82/293_crt_uzbcR.jpg?r=1491230861"
+    },
+    "summary": "原名Kirsi（芬兰名，意为“樱桃”），来自北欧的17岁目盲少女，以水作为媒介操纵观测灵的Doll。在黑的小队中负责情报搜索的支援工作。平常的身份是离黑的住所不远一间烟草铺的看板娘。\r\n\r\n原本是名钢琴家的学徒，但在丧父丧母后因不明原因成为组织的Doll。受限于这一特殊体质，感情表现极其稀薄。随着故事的进行，在黑和其他人的影响下逐渐表露出感情和思想。一直支持着黑直到故事的结尾，并在最后与之一起脱离组织，开始新的生活。\r\n\r\n记忆力极佳。有绝对音感，可以单独行动。黑色哥特萝莉的装束是母亲给她的打扮。和侦探所助手的琪可是朋友关系，受其影响，曾表现出腐女子倾向的爱好。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "银"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Yin"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "イン"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 60,
+        "collects": 499
+    },
+    "anime_ids": [
+        292
+    ]
+}

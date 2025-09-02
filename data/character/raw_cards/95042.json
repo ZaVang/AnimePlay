@@ -1,0 +1,64 @@
+{
+    "id": 95042,
+    "name": "奈良田愛",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/61/43/95042_crt_Q1qZz.jpg?r=1625986273",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/43/95042_crt_Q1qZz.jpg?r=1625986273",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/43/95042_crt_Q1qZz.jpg?r=1625986273",
+        "grid": "https://lain.bgm.tv/pic/crt/g/61/43/95042_crt_Q1qZz.jpg?r=1625986273"
+    },
+    "summary": "紅華歌劇音楽学校 予科生。\r\n国民的アイドルグループ・JPX48のメンバーだったが、男性嫌いが理由でトラブルを起こして強制卒業。\r\n男性のいない世界を求めて紅華に入学した。\r\n整った容姿で周囲を惹き付けるが、紅華自体にあまり関心はない。\r\n音楽学校合格時は高校1年生。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "奈良田爱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ならた あい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Narata Ai"
+                },
+                {
+                    "k": "昵称",
+                    "v": "奈良っち"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月14日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://kageki-anime.com/character/ai.html"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 14,
+    "stat": {
+        "comments": 24,
+        "collects": 46
+    },
+    "anime_ids": [
+        317680
+    ]
+}

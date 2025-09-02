@@ -1,0 +1,69 @@
+{
+    "id": 29283,
+    "name": "加藤葉月",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bd/68/29283_crt_vL1H3.jpg?r=1559645553",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/68/29283_crt_vL1H3.jpg?r=1559645553",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/68/29283_crt_vL1H3.jpg?r=1559645553",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bd/68/29283_crt_vL1H3.jpg?r=1559645553"
+    },
+    "summary": "久美子的同班同学，与久美子和绿关系要好。\r\n加入吹奏部之前完全没有乐器演奏经验，中学时代加入的是网球部。\r\n♪好きな色\r\n黄、橙\r\n♪趣味\r\nテニス\r\n♪特技\r\n小さいころ空手をやっていた\r\n♪好きなもの\r\n菓子\r\n♪嫌いなもの\r\n野菜",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "加藤叶月"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "加藤葉月"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かとう はづき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Katou Hazuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月13日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "乐器",
+            "value": "大号"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 13,
+    "stat": {
+        "comments": 119,
+        "collects": 103
+    },
+    "anime_ids": [
+        152091,
+        115908
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "id": 24246,
+    "name": "レナモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e9/32/24246_crt_0Q5x4.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/32/24246_crt_0Q5x4.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/32/24246_crt_0Q5x4.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e9/32/24246_crt_0Q5x4.jpg"
+    },
+    "summary": "外型如金色狐狸的兽人型数码宝贝。妖狐兽是直接体现与人类关系的数码宝贝，据说只要幼年期培育方式得当，就能进化为智慧特别高的妖狐兽。个性冷静沉着，受到的训练让它几乎在任何状况下都不会失去冷静。纤细修长的身材与其他成长期数码宝贝相比也十分突出，与其靠力量战斗，更擅长利用速度与多样化的技术玩弄敌方。擅长技能是复制对方的外型，并替换成自身材质的变化之术『狐变虚』，必杀技是朝敌方投掷锐利树叶的『狐叶楔』。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "妖狐兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "狐狸兽"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Renamon"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference/detail.php?directory_name=renamon"
+        },
+        {
+            "key": "等级",
+            "value": "成长期"
+        },
+        {
+            "key": "类型",
+            "value": "兽人型"
+        },
+        {
+            "key": "属性",
+            "value": "资料"
+        },
+        {
+            "key": "必杀技",
+            "value": [
+                {
+                    "v": "狐变虚"
+                },
+                {
+                    "v": "狐叶楔"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 12
+    },
+    "anime_ids": [
+        3130
+    ]
+}

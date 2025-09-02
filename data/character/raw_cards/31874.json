@@ -1,0 +1,56 @@
+{
+    "id": 31874,
+    "name": "ナスティ·柳生",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d9/c3/31874_crt_t2A55.jpg?r=1428681238",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/c3/31874_crt_t2A55.jpg?r=1428681238",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/c3/31874_crt_t2A55.jpg?r=1428681238",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d9/c3/31874_crt_t2A55.jpg?r=1428681238"
+    },
+    "summary": "神奈川県小田原市出身\r\nフランス帰りのお嬢様でトルーパー達のお姉さん的存在。祖父（幼児向けの本では柳生博士の娘と書かれている物もある）が千石大学の教授で伝奇学の権威。その研究で妖邪の存在を知ることとなった。必然的に戦いに巻き込まれた。フランス人とのハーフで、父方に柳生十兵衛の流れを持つ。赤のパジェロに乗っている。人質になる確率が作品の中では著しく高い人物。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "娜斯汀柳生"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "娜斯蒂"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ナスティやぎゅう"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1970年5月28日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1970,
+    "birth_mon": 5,
+    "birth_day": 28,
+    "stat": {
+        "comments": 1,
+        "collects": 2
+    },
+    "anime_ids": [
+        3621
+    ]
+}

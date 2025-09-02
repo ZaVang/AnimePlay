@@ -1,0 +1,89 @@
+{
+    "id": 1948,
+    "name": "奇诺之旅",
+    "image_path": "data/images/anime/1948.jpg",
+    "points": 8.1,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "旅行者奇诺（Kino）骑着她那会说话的摩托车汉密斯（Hermes）到各个国家旅行，在每个国家奇诺都只停留三天，在她体会了该国家人民的文化、风俗之后，她便离开并前往另一个国家……\r\n\r\n　　--世界は美しくなんかない　そして それ故に 美しい--\r\n　　--The World Is Not Beautiful,Therefore It Is--\r\n　　--这个世界并不美丽，然而，又因此而美丽--",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "小说改"
+    ],
+    "date": "2003-04-08",
+    "rating_rank": 194,
+    "rating_score": 8.1,
+    "rating_total": 4766,
+    "main_character_ids": [
+        10721,
+        52330
+    ],
+    "main_characters": [
+        {
+            "id": 10721,
+            "name": "キノ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7c/65/10721_crt_09qz8.jpg?r=1605796650",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/65/10721_crt_09qz8.jpg?r=1605796650",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/65/10721_crt_09qz8.jpg?r=1605796650",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7c/65/10721_crt_09qz8.jpg?r=1605796650"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4248,
+                    "name": "前田愛",
+                    "type": 1,
+                    "career": [
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5f/24/4248_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/24/4248_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/24/4248_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5f/24/4248_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本女演员。本名波野愛（旧姓：前田）。日本女演员，东京都出身，1993年出道。1994年出演“あっぱれさんま大先生”的学生角色而大受欢迎，当时作为儿童角色偶像引人注目，被称作“日本最美丽的小学生”。\r\n2003年为《奇诺之旅》的主角奇诺配音。\r\n妹妹为女演员前田亚季，两人有很多次共演。丈夫为歌舞伎演员六代的中村勘九郎。\r\n\r\n与声优前田爱（代表作品有《数码宝贝》太刀川美美、《Yes！光之美少女5》水无月香恋、《滑头鬼之孙》花开院柚罗）并非同一人。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 52330,
+            "name": "エルメス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/cd/7e/52330_crt_Z0T18.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/7e/52330_crt_Z0T18.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/7e/52330_crt_Z0T18.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cd/7e/52330_crt_Z0T18.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 28116,
+                    "name": "相ヶ瀬龍史",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/af/5c/28116_prsn_m121a.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/5c/28116_prsn_m121a.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/5c/28116_prsn_m121a.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/af/5c/28116_prsn_m121a.jpg"
+                    },
+                    "short_summary": "日本の俳優。大阪府枚方市出身。ヴォーカル所属。東京児童劇団に所属し、子役としてデビュー。1995年より3年間、NHK教育『天才てれびくん』にてれび戦士として出演。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

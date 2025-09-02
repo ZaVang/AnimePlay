@@ -1,0 +1,68 @@
+{
+    "id": 28547,
+    "name": "生駒祐未",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5e/0a/28547_crt_0IZX5.jpg?r=1672740923",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/0a/28547_crt_0IZX5.jpg?r=1672740923",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/0a/28547_crt_0IZX5.jpg?r=1672740923",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5e/0a/28547_crt_0IZX5.jpg?r=1672740923"
+    },
+    "summary": "前传的女主角。15岁的中学生，母亲已过世，独自一人照顾有身体残障的父亲。是ROL时期的学生会副会长，对僚有特殊感情。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "生驹祐未"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "生駒 祐未"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いこま ゆみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ikoma Yumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2130年4月4日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "47kg"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 2,
+    "birth_year": 2130,
+    "birth_mon": 4,
+    "birth_day": 4,
+    "stat": {
+        "comments": 2,
+        "collects": 3
+    },
+    "anime_ids": [
+        14106
+    ]
+}

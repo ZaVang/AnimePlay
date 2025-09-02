@@ -1,0 +1,60 @@
+{
+    "id": 13391,
+    "name": "冬馬かずさ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f3/c8/13391_crt_OjC69.jpg?r=1642694348",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/c8/13391_crt_OjC69.jpg?r=1642694348",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/c8/13391_crt_OjC69.jpg?r=1642694348",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f3/c8/13391_crt_OjC69.jpg?r=1642694348"
+    },
+    "summary": "峰城大付属３年Ｅ組。\r\n窓際の席で常に居眠りしている、遅刻、サボリの常習犯にして、大人はわかってくれない的な鬱屈を抱える、時代錯誤な不良娘。長く艶やかな黒髪、モデル顔負けのスタイル、切れ長の瞳というその孤高で暴力的な性格に似合いすぎる鋭利な美しさのせいで、余計に周囲との距離が広がってしまうという悪循環に陥っているが、本人は何処吹く風で強がっている。\r\n誰にも聞かれたことはないが、どちらかと言えば緒方理奈派。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "冬马和纱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "冬马和咲"
+                },
+                {
+                    "k": "日文名",
+                    "v": "冬馬 かずさ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "とうま かずさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Touma Kazusa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1989年5月28日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1989,
+    "birth_mon": 5,
+    "birth_day": 28,
+    "stat": {
+        "comments": 248,
+        "collects": 994
+    },
+    "anime_ids": [
+        69496
+    ]
+}

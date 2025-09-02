@@ -1,0 +1,60 @@
+{
+    "id": 62580,
+    "name": "湊みお",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c7/e7/62580_crt_55tc6.jpg?r=1523631169",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/e7/62580_crt_55tc6.jpg?r=1523631169",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/e7/62580_crt_55tc6.jpg?r=1523631169",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c7/e7/62580_crt_55tc6.jpg?r=1523631169"
+    },
+    "summary": "1月6日出生，魔羯座，血型A型。\r\n    動畫故事另一個故事主角。\r\n    使用服裝品牌為MATERIAL COLOR。\r\n    第一季時就讀中學二年級，星和學園偶像科的學生。\r\n    學校內公認的頂級偶像，因為與愛音成為朋友為契機結成雙人組合，並以「鑽石友誼」為目標。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "凑美绪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "凑美绪"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みなと みお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Minato Mio"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月6日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 6,
+    "stat": {
+        "comments": 11,
+        "collects": 17
+    },
+    "anime_ids": [
+        234413
+    ]
+}

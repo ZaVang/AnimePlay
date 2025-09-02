@@ -1,0 +1,48 @@
+{
+    "id": 10797,
+    "name": "倉下月海",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/09/0c/10797_crt_v9UMI.jpg?r=1523886359",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/0c/10797_crt_v9UMI.jpg?r=1523886359",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/0c/10797_crt_v9UMI.jpg?r=1523886359",
+        "grid": "https://lain.bgm.tv/pic/crt/g/09/0c/10797_crt_v9UMI.jpg?r=1523886359"
+    },
+    "summary": "18岁。水母控。为成为插画家而远从鹿儿岛前往东京。受网友邀请入住天水馆。她有着多数女生都曾有过的梦——成为公主，但事与愿违，她非常平凡。穿着打扮带着一点土气，不像东京的“公主”们那么耀眼。除了过节，平时都不化妆；不喜欢逛街买衣服，去涩谷对于她来说就像是上战场一样。从小就相当热爱水母，对水母的一切了如指掌，养了一只叫“水水”的珍珠水母。擅长绘制水母的插图。拥有“摘下眼镜就会很可爱” 的设定。母亲曾说过要为她制作水母一样的婚纱，得知此事的藏之介向月海提议制作“水母之礼服”来筹钱挽救天水馆的危机。制作从小憧憬着的水母之礼服时，月海的性格大变，发挥出作为创作家的气质和才能。暗恋蔵之介的哥哥修。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "仓下月海"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "くらした つきみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kurashita Tsukimi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 13
+    },
+    "anime_ids": [
+        6811
+    ]
+}

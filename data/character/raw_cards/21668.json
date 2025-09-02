@@ -1,0 +1,48 @@
+{
+    "id": 21668,
+    "name": "五十鈴",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0e/80/21668_crt_Qu9V5.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/80/21668_crt_Qu9V5.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/80/21668_crt_Qu9V5.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0e/80/21668_crt_Qu9V5.jpg"
+    },
+    "summary": "人族，主职业吟游诗人，类型是指挥家，副职业为游牧民。\r\n等级24级（夏季集训时）→29级（城惠使用契约术式时），公会：无（大灾害时）→哈美伦→三日月同盟→记录的地平线\r\n\r\n高中生，现实世界中为管乐队，喜欢各种乐器。由于头发质粗而留成长辫，体型高瘦，个性开朗，不擅长深入的思考。\r\n对伦迪浩斯印象是金毛猎犬，但是喜欢著伦迪浩斯，是第一个发现伦迪浩斯是大地人的冒险者。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "五十铃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いすず"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Isuzu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 9
+    },
+    "anime_ids": [
+        100517
+    ]
+}

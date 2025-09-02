@@ -1,0 +1,71 @@
+{
+    "id": 24243,
+    "name": "ギルモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a1/90/24243_crt_B40Gz.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/90/24243_crt_B40Gz.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/90/24243_crt_B40Gz.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a1/90/24243_crt_B40Gz.jpg"
+    },
+    "summary": "模样有如稚气未脱的恐龙般的数码宝贝。虽说它尚在成长期，数码宝贝固有的“战斗种族”天性却潜质极高，其潜藏的凶暴程度如同肉食动物。画在腹部上的标志名为“数码危机”，此标志会印在可能严重危害到电脑资料的对象上；不过若能和平使用这个能力，它就有可能成为数码世界的守护者。擅长技能为使用强韧前爪破坏岩石的『破岩击』，必杀技则为从口中喷出强力火焰弹的『基尔火炮』。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "基尔兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Guilmon"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Girumon"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference/detail.php?directory_name=guilmon"
+        },
+        {
+            "key": "等级",
+            "value": "成长期"
+        },
+        {
+            "key": "类型",
+            "value": "爬虫类型"
+        },
+        {
+            "key": "属性",
+            "value": "病毒"
+        },
+        {
+            "key": "必杀技",
+            "value": [
+                {
+                    "v": "破岩击"
+                },
+                {
+                    "v": "基尔火炮"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 16
+    },
+    "anime_ids": [
+        3130
+    ]
+}

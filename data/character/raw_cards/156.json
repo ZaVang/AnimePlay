@@ -1,0 +1,55 @@
+{
+    "id": 156,
+    "name": "ギンコ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d1/91/156_crt_SWfqY.jpg?r=1444714628",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d1/91/156_crt_SWfqY.jpg?r=1444714628",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d1/91/156_crt_SWfqY.jpg?r=1444714628",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d1/91/156_crt_SWfqY.jpg?r=1444714628"
+    },
+    "summary": "故事的主角，是一位虫师。因为有招来虫的体质，不能久留在一个地方而四处游历。经常抽的烟是有驱虫作用的虫烟草。小时候叫做阿善（YOKI），因为虫（银蛊）的关系失去记忆和左眼，剩下的右眼变成绿色，头发则变成白色。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "银古"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ヨキ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ginko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 40,
+        "collects": 436
+    },
+    "anime_ids": [
+        340,
+        106207,
+        92705,
+        88473
+    ]
+}

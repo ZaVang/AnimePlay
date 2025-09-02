@@ -1,0 +1,91 @@
+{
+    "id": 32369,
+    "name": "春風どれみ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8d/40/32369_crt_NwWKm.jpg?r=1474245744",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/40/32369_crt_NwWKm.jpg?r=1474245744",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/40/32369_crt_NwWKm.jpg?r=1474245744",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8d/40/32369_crt_NwWKm.jpg?r=1474245744"
+    },
+    "summary": "春风doremi——主色为粉红色，热情开朗，做事错漏百出，善解人意，重视友情。\r\n      由于doremi看穿了魔女莉卡是个魔女,使得魔女莉卡变成了魔女青蛙。为了恢复原来的样子，魔女莉卡不得已只好让doremi当了魔女见习生。doremi学习魔法是为了要拥有敢对喜欢的人告白的勇气，在第二部当中doremi虽然升上了四年级，但是她那旺盛的好奇心，爱多管闲事,及胆小的性格还是一点都没变。但是有时她那关心别人的行动还真是让人感动呢！“~我是世界上最不幸的美少女了~”这是她的口头禅。她最喜欢吃的是牛排，但是大多都没有吃到。后来成为小花的妈妈，在第二部中被魔法师阿晓所喜欢。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "春风DoReMi"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "はるかぜ どれみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Harukaze Doremi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "春风同学"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1990年7月30日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "星座",
+            "value": "狮子座"
+        },
+        {
+            "key": "日文配音",
+            "value": "千叶千惠巳"
+        },
+        {
+            "key": "香港配音",
+            "value": "梁少霞"
+        },
+        {
+            "key": "中文配音",
+            "value": "杨凯凯/林美秀"
+        },
+        {
+            "key": "父亲",
+            "value": "春风溪介"
+        },
+        {
+            "key": "母亲",
+            "value": "春风遥子"
+        },
+        {
+            "key": "妹妹",
+            "value": "春风泡泡"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1990,
+    "birth_mon": 7,
+    "birth_day": 30,
+    "stat": {
+        "comments": 27,
+        "collects": 53
+    },
+    "anime_ids": [
+        14878,
+        14877,
+        14876,
+        14652
+    ]
+}

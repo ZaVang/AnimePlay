@@ -1,0 +1,44 @@
+{
+    "id": 19585,
+    "name": "父さん（木下鉄雄）",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bb/aa/19585_crt_25N5b.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/aa/19585_crt_25N5b.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/aa/19585_crt_25N5b.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bb/aa/19585_crt_25N5b.jpg"
+    },
+    "summary": "ともおの父、単身赴任中のサラリーマン。家族に会えるのは数カ月に一度だが、家族思いのやさしい父さん。ともおのことならなんでもお見通し。なぜかいつも顔が見えない。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "爸爸（木下铁雄）"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "きのした てつお"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 2
+    },
+    "anime_ids": [
+        61118
+    ]
+}

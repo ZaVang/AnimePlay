@@ -1,0 +1,68 @@
+{
+    "id": 2503,
+    "name": "常陸院馨",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/69/a4/2503_crt_JVVZl.jpg?r=1620404696",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/a4/2503_crt_JVVZl.jpg?r=1620404696",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/a4/2503_crt_JVVZl.jpg?r=1620404696",
+        "grid": "https://lain.bgm.tv/pic/crt/g/69/a4/2503_crt_JVVZl.jpg?r=1620404696"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "常陆院馨"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "常陸院 馨"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひたちいん かろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hitachiin Kaoru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "6月9日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "178.2cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 9,
+    "stat": {
+        "comments": 3,
+        "collects": 39
+    },
+    "anime_ids": [
+        1487
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "id": 365437,
+    "name": "放学后失眠的你",
+    "image_path": "data/images/anime/365437.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "“只要有小曲在，就对上学抱有期待，这是怎样的关系呢？”\r\n因失眠症而烦恼的高中生——中见丸太，在准备文化祭时偷摸跑到作为储物间的天文台，遇到了同样患有失眠症的曲伊咲。两人共享了这个秘密场所……？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2023-04-10",
+    "rating_rank": 1870,
+    "rating_score": 7.2,
+    "rating_total": 4402,
+    "main_character_ids": [
+        111627,
+        111628
+    ],
+    "main_characters": [
+        {
+            "id": 111627,
+            "name": "中見丸太",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b5/f7/111627_crt_CEfB3.jpg?r=1675666609",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/f7/111627_crt_CEfB3.jpg?r=1675666609",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/f7/111627_crt_CEfB3.jpg?r=1675666609",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b5/f7/111627_crt_CEfB3.jpg?r=1675666609"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 8403,
+                    "name": "洲崎綾",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/37/de/8403_prsn_w98m9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/de/8403_prsn_w98m9.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/de/8403_prsn_w98m9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/37/de/8403_prsn_w98m9.jpg"
+                    },
+                    "short_summary": "洲崎绫，出生于日本石川县，日本女性声优。隶属于I'm Enterprise。",
+                    "locked": false
+                },
+                {
+                    "id": 33386,
+                    "name": "佐藤元",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113"
+                    },
+                    "short_summary": "佐藤 元（さとう げん、1997年3月22日 - ）は、日本の男性声優。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 111628,
+            "name": "曲伊咲",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/cd/4b/111628_crt_I6ImM.jpg?r=1683139838",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/4b/111628_crt_I6ImM.jpg?r=1683139838",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/4b/111628_crt_I6ImM.jpg?r=1683139838",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cd/4b/111628_crt_I6ImM.jpg?r=1683139838"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 46488,
+                    "name": "田村好",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/25/1e/46488_prsn_vq2P1.jpg?r=1729515387",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/1e/46488_prsn_vq2P1.jpg?r=1729515387",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/1e/46488_prsn_vq2P1.jpg?r=1729515387",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/25/1e/46488_prsn_vq2P1.jpg?r=1729515387"
+                    },
+                    "short_summary": "マウスプロモーション所属",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

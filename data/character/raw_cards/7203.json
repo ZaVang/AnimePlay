@@ -1,0 +1,74 @@
+{
+    "id": 7203,
+    "name": "野原みさえ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a1/73/7203_crt_D011r.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/73/7203_crt_D011r.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/73/7203_crt_D011r.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a1/73/7203_crt_D011r.jpg"
+    },
+    "summary": "野原美冴（のはら みさえ）是臼井仪人的漫画作品‘蜡笔小新’中登场的一个虚构角色。动画版声优为ならはしみき。是主角野原新之助的母亲。熊本县アソ市出身（现实中在2005年市町村合并后，熊本县有一个阿苏市，但美冴出生时并没有名阿苏市（アソ市）的自治体）出身。29岁。专业主妇（曾经在超市打过一天工，但因无法忍受上司的恶劣态度辞职）。在原作中是10月10日生，不过在动画版中变为9月21日生。星座天秤座。母为小山ひさえ、父为小山よし治。还有一姐真冴及妹妹丽冴。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "野原美冴"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "小山美冴"
+                },
+                {
+                    "v": "野原美伢"
+                },
+                {
+                    "k": "日文名",
+                    "v": "野原みさえ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nohara Misae"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月10日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "159.2cm"
+        },
+        {
+            "key": "体重",
+            "value": "60.5kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 2,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 10,
+    "stat": {
+        "comments": 5,
+        "collects": 23
+    },
+    "anime_ids": [
+        24823
+    ]
+}

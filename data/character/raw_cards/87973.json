@@ -1,0 +1,68 @@
+{
+    "id": 87973,
+    "name": "伊地知虹夏",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6c/af/87973_crt_IFxtz.jpg?r=1666321823",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/af/87973_crt_IFxtz.jpg?r=1666321823",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/af/87973_crt_IFxtz.jpg?r=1666321823",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6c/af/87973_crt_IFxtz.jpg?r=1666321823"
+    },
+    "summary": "ドラム担当。下北沢高校2年→3年。明るく世話焼きなバンドのまとめ役。かつてはバンドマンで現在もライブハウスの店長を務める星歌の影響で幼い頃からバンド文化に触れてきており、業界事情にも詳しい。\r\n自身の夢を実現させるために親友であるリョウを誘って「結束バンド」を結成した。デザインが得意で「結束バンド」のロゴやCDジャケットの制作の他、ライブ映像を動画投稿サイトに投稿する際の編集なども手がけている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊地知虹夏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いじち にじか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ijichi Nijika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月29日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        },
+        {
+            "key": "体重",
+            "value": "48kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 29,
+    "stat": {
+        "comments": 354,
+        "collects": 1356
+    },
+    "anime_ids": [
+        328609
+    ]
+}

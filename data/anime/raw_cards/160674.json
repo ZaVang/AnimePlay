@@ -1,0 +1,205 @@
+{
+    "id": 160674,
+    "type": 2,
+    "name": "ルパン三世 イタリアン・ゲーム",
+    "name_cn": "鲁邦三世 意大利游戏",
+    "summary": "TV Special 25。\r\n\r\n本作的目标将围绕“卡里奥斯特罗伯爵的遗产”展开，蕾贝卡罗塞里尼被绑架，鲁邦不能放任自己的“妻子”不管，决定从犯人的手里“盗取”蕾贝卡。这其中又隐藏着什么不可告人的秘密呢？",
+    "nsfw": false,
+    "locked": false,
+    "date": "2016-01-08",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/21/b9/160674_N5f51.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/21/b9/160674_N5f51.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/21/b9/160674_N5f51.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/21/b9/160674_N5f51.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/21/b9/160674_N5f51.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "鲁邦三世 意大利游戏"
+        },
+        {
+            "key": "话数",
+            "value": "1"
+        },
+        {
+            "key": "放送开始",
+            "value": "2016年1月8日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期五"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://kinro.jointv.jp/lineup/160108"
+        },
+        {
+            "key": "播放电视台",
+            "value": "日本テレビ"
+        },
+        {
+            "key": "片长",
+            "value": "91分"
+        }
+    ],
+    "volumes": 0,
+    "eps": 1,
+    "total_episodes": 1,
+    "rating": {
+        "rank": 1824,
+        "total": 260,
+        "count": {
+            "one": 0,
+            "two": 0,
+            "three": 1,
+            "four": 0,
+            "five": 8,
+            "six": 46,
+            "seven": 108,
+            "eight": 79,
+            "nine": 13,
+            "ten": 5
+        },
+        "score": 7.2
+    },
+    "collection": {
+        "wish": 154,
+        "collect": 456,
+        "doing": 11,
+        "on_hold": 26,
+        "dropped": 26
+    },
+    "tags": [
+        {
+            "name": "鲁邦三世",
+            "count": 97
+        },
+        {
+            "name": "OVA",
+            "count": 52
+        },
+        {
+            "name": "2016",
+            "count": 46
+        },
+        {
+            "name": "TVSP",
+            "count": 30
+        },
+        {
+            "name": "2016年1月",
+            "count": 27
+        },
+        {
+            "name": "TelecomAnimationFilm",
+            "count": 26
+        },
+        {
+            "name": "TV",
+            "count": 22
+        },
+        {
+            "name": "漫改",
+            "count": 14
+        },
+        {
+            "name": "沢城みゆき",
+            "count": 14
+        },
+        {
+            "name": "矢野雄一郎",
+            "count": 13
+        },
+        {
+            "name": "原创",
+            "count": 10
+        },
+        {
+            "name": "漫画改",
+            "count": 8
+        },
+        {
+            "name": "SP",
+            "count": 8
+        },
+        {
+            "name": "日本",
+            "count": 6
+        },
+        {
+            "name": "2016年",
+            "count": 5
+        },
+        {
+            "name": "总集篇",
+            "count": 4
+        },
+        {
+            "name": "Telecom",
+            "count": 4
+        },
+        {
+            "name": "友永和秀",
+            "count": 4
+        },
+        {
+            "name": "剧场版",
+            "count": 4
+        },
+        {
+            "name": "小林清志",
+            "count": 3
+        },
+        {
+            "name": "森本晃司",
+            "count": 3
+        },
+        {
+            "name": "搞笑",
+            "count": 3
+        },
+        {
+            "name": "ルパン三世",
+            "count": 3
+        },
+        {
+            "name": "动画",
+            "count": 3
+        },
+        {
+            "name": "高橋悠也",
+            "count": 3
+        },
+        {
+            "name": "2016年一月番",
+            "count": 3
+        },
+        {
+            "name": "TAF",
+            "count": 2
+        },
+        {
+            "name": "栗田貫一",
+            "count": 2
+        },
+        {
+            "name": "经典",
+            "count": 2
+        },
+        {
+            "name": "Telecom_Animation_Film",
+            "count": 2
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [],
+    "main_characters": []
+}

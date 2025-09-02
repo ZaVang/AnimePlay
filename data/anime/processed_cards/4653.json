@@ -1,0 +1,173 @@
+{
+    "id": 4653,
+    "name": "天空战记",
+    "image_path": "data/images/anime/4653.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "平成元年四月，辽西中学学生日高秋亚人与对手（同时也是其好友）黑木凯争夺日本武道大赛冠军。比赛正进行到白热化时，二人被一阵白光包围并消失。\r\n秋亚人醒来后，发现自己来到一片完全陌生的世界——天空界。时破坏神湿华蠢蠢欲动，为保护祥和安宁的天空界，调和神惠明大师将一平和阿凯召来，转生“修罗王”和“夜叉王”，集齐勇猛正直的八部众。但转生过程里，阿凯被湿婆迷惑，性情大变，成为天界的敌人。\r\n天界总司令因陀罗伺机将毗湿奴石化，龙王良马、迦楼罗王利加、天王乔加、修罗王一平得知真相逃出，随后与同为八部众的闼婆王高也、紧那罗王莲伽、摩呼罗迦王阿达、夜叉王阿凯展开连番厮杀。八部众的内斗，无意中掉入破坏神的陷阱里。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 38,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "原创",
+        "战斗"
+    ],
+    "date": "1989-04-06",
+    "rating_rank": 1433,
+    "rating_score": 7.3,
+    "rating_total": 333,
+    "main_character_ids": [
+        31749,
+        31750,
+        31751,
+        31752
+    ],
+    "main_characters": [
+        {
+            "id": 31749,
+            "name": "日高秋亜人",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8c/0b/31749_crt_vuuIV.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/0b/31749_crt_vuuIV.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/0b/31749_crt_vuuIV.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8c/0b/31749_crt_vuuIV.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3854,
+                    "name": "関俊彦",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/45/d1/3854_prsn_vmzMU.jpg?r=1669454295",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/d1/3854_prsn_vmzMU.jpg?r=1669454295",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/d1/3854_prsn_vmzMU.jpg?r=1669454295",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/45/d1/3854_prsn_vmzMU.jpg?r=1669454295"
+                    },
+                    "short_summary": "日本の声優、舞台俳優、ナレーター、歌手。81プロデュース所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 31750,
+            "name": "黒木凱",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a2/45/31750_crt_yl5ly.jpg?r=1428445968",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/45/31750_crt_yl5ly.jpg?r=1428445968",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/45/31750_crt_yl5ly.jpg?r=1428445968",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a2/45/31750_crt_yl5ly.jpg?r=1428445968"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 1096,
+                    "name": "子安武人",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4f/e5/1096_prsn_84WcO.jpg?r=1509920084",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/e5/1096_prsn_84WcO.jpg?r=1509920084",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/e5/1096_prsn_84WcO.jpg?r=1509920084",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4f/e5/1096_prsn_84WcO.jpg?r=1509920084"
+                    },
+                    "short_summary": "子安武人, 名字之所以會叫「武人」是因為他的生日是日本的兒童節。\r\n他和三木真一郎、關智一、结城比吕组成声优团体Weiß，主要的作品是《白色猎人》。 \r\n有一小點的巧合是他演出的角色為金髮男子居多，其角色個性很廣泛，不論是搞笑型的，或是嚴肅型的角色皆為其拿手範圍內，另一方面一些其貌不揚或性情古怪的角色也非常擅長。\r\n本人称自己也不能算做很喜欢饰演变态或搞笑角色，只是有这么的工作就接了，结果却慢慢得越来越多。\r\n\r\n1988-1998年隶属于事务所Production Baobab，此后成立自己的会社T's Factory。",
+                    "locked": false
+                },
+                {
+                    "id": 4113,
+                    "name": "こおろぎさとみ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4e/e7/4113_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/e7/4113_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/e7/4113_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4e/e7/4113_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "姓氏相当难念（从她父母的出身地宫崎县来看，为日本神话所由来的姓氏[1]。因此将艺名取为平假名。正确的念法是“こうろぎ(Kourogi)”。\r\n    经常饰演动物的声音（叫声或会讲话的动物）。特技是用小孩子的声音拒绝电话推销[2]。\r\n    高中时代与声优的辻谷耕史同校同班，座位正好也在隔壁。另外据说与原职业棒球选手的和田丰是隔壁班。\r\n    高中毕业后就读短期大学当上幼稚园教师。当时受到电影《アリオン》的影响立志成为声优。在山田太平底下接受课程，透过其介绍进入PRODUCTION baobab。\r\n    出道作是《面包超人》的小绵羊。第一个固定演出是《童梦》的麻生薰役。本人言“快出道当时不晓得是什么声音所以被选上了”。在隔年《キャッ党忍伝てやんでえ》中饰演小玉之后开始受到注目。\r\n    在《少年アシベ》中担任ゴマフアザラシのゴマちゃん一角，从此时开始被称为动物声优。\r\n    饰演了《ハーイあっこです》的ハナコ、《机动战士V高达》的カルルマン、《蜡笔小新》的野原向日葵等许多还不能说话的婴儿的声音。（本人为了这件事在广播节目中感叹“都不让我讲人话”。）\r\n    另一方面，演技的幅度逐渐增大，能够饰演少年、母亲、老婆婆之类的角色。在《机动战士V高达》中扮演了カルルマン（婴儿）、スージィ（幼女）和コニー（成年女性）三个角色。\r\n    2002年时因声带疲劳近1年间无法出声，痛苦的程度曾令她一度考虑放弃事业。\r\n    兴趣是园艺。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 31751,
+            "name": "吉祥天ラクシュ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3a/37/31751_crt_4ACN5.jpg?r=1428446215",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/37/31751_crt_4ACN5.jpg?r=1428446215",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/37/31751_crt_4ACN5.jpg?r=1428446215",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3a/37/31751_crt_4ACN5.jpg?r=1428446215"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4644,
+                    "name": "水谷優子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e2/b2/4644_prsn_w2p2w.jpg?r=1491624056",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/b2/4644_prsn_w2p2w.jpg?r=1491624056",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/b2/4644_prsn_w2p2w.jpg?r=1491624056",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e2/b2/4644_prsn_w2p2w.jpg?r=1491624056"
+                    },
+                    "short_summary": "剧团青年座研究所出身。出道以来经历剧团青年座、Production baobab，最终所属青二Production。丈夫为动画导演西久保瑞穗。大阪府立岛本高等学校毕业。昵称“ケロリン”。\r\n\r\n她为人熟悉的代表配音作品有《樱桃小丸子》主角樱桃子的姐姐〈樱咲子〉、《怪医黑杰克》女主角皮诺可、《数码宝贝大冒险》女主角武之内空、《机器勇士》&外传作品《莉娜剑狼传说》女主角丽娜·斯托尔、《机动战士Z高达》莎拉·萨比亚洛夫、《天地无用！》的九罗密美星、《网球甜心2》主角冈浩美及《超级机器人大战OG》的艾克瑟莲·勃朗宁等。除了日本动画之外，还有1991年起至2016年逝去为止长达25年担任美国华特迪士尼作品（包含迪士尼乐园相关活动的广播）角色米妮的日语配音。\r\n\r\n出道是1985年播出的机器人题材电视动画《机动战士Z高达》（飞行场播报员）。出道之后，以相同作品登场的莎拉·萨比亚洛夫、《机器勇士》的丽娜·斯托尔及《星战英豪》的阿普尔等机器人动画的要角而获得拔擢，同时自身的知名度也开始上升。1988年，首次饰演女主角的作品是女子网球题材电视动画《网球甜心2》（冈浩美）。\r\n\r\n1990年，长寿电视动画《樱桃小丸子》开播，水谷演主角樱桃子的姐姐〈樱咲子〉，成为她的配音代表作。\r\n\r\n除了从事配音工作之外，另外曾经组成MIPPLE等其它声优组合参加相关的活动。\r\n\r\n1994年11月，水谷与动画导演西久保瑞穗结婚。在结婚之前，曾在西久保执导的电视动画《星战英豪》和《天空战记》中参演。\r\n\r\n2011年9月，水谷从Production baobab离所，经历自由身，2012年12月1日加入青二Production。\r\n\r\n2016年5月17日，水谷因乳癌在东京都的医院去世，享年51岁。而她在2年前就已经接受乳癌切除手术得治疗，但是在2016年4月22日完成《樱桃小丸子》录音工作（最后一次参加录音是在第1053～1054话）的一个礼拜后身体状况突然恶化必须住院。此外，其病名只有业界相关人士知情。讣报在《樱桃小丸子》的日本官方网站公告之后，原作者樱桃子也在自己的网志发表追思文，不只如此，以前和水谷认识合作的业界人士，及粉丝都陆续在Twitter发文追思悼念。\r\n同年5月28日，小说家赤堀悟宣布与水谷2人一起搭档主持超过10年的电台节目《一生ポリケロ》也在此划下句点。\r\n根据丈夫西久保的说法，妻子住院期间仍然带着台词本，表达她希望自己可以尽早出院继续参加配音工作。可是事与愿违，成为她的遗言。\r\n同年7月3日，于青山殡仪馆举办追思会‘状行会“见到你真好”’，约有700人参加，在这之中，有从以前开始经常跟她共演的同行关俊彦、井上和彦及TARAKO等人一起参加。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 31752,
+            "name": "迦楼羅王レイガ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3e/85/31752_crt_q7tFL.jpg?r=1428447359",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/85/31752_crt_q7tFL.jpg?r=1428447359",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/85/31752_crt_q7tFL.jpg?r=1428447359",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3e/85/31752_crt_q7tFL.jpg?r=1428447359"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 1582,
+                    "name": "井上和彦",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/59/f9/1582_prsn_N4nun.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/f9/1582_prsn_N4nun.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/f9/1582_prsn_N4nun.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/59/f9/1582_prsn_N4nun.jpg"
+                    },
+                    "short_summary": "日本声优、解说、舞台演员、音响监督。神奈川县横滨市出身。B-Box所属。横浜市立横浜商業高等学校卒業。\r\n曾数度结婚、离婚。首任妻子为《小甜甜》的漫画家五十岚优美子(いがらしゆみこ)，之后又曾与声优荒川美奈子、女演员越智静香结婚，但最终均离婚。长子为漫画家兼女装模特五十岚奈波(いがらし奈波)，本名五十岚庆一(五十嵐慶一)。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

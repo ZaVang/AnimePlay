@@ -1,0 +1,35 @@
+{
+    "id": 90499,
+    "name": "アビー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a4/a0/90499_crt_x8C2w.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/a0/90499_crt_x8C2w.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/a0/90499_crt_x8C2w.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a4/a0/90499_crt_x8C2w.jpg"
+    },
+    "summary": "真面目で好奇心旺盛。初心者マークを付けているが、いつか卒業できる日を夢見ている。他のモルカーに比べてプライドが高い。猫が苦手。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "引用来源",
+            "value": "https://molcar-anime.com/"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 2
+    },
+    "anime_ids": [
+        325178
+    ]
+}

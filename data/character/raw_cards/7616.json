@@ -1,0 +1,60 @@
+{
+    "id": 7616,
+    "name": "後藤喜一",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c9/52/7616_crt_tbW67.jpg?r=1423317102",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/52/7616_crt_tbW67.jpg?r=1423317102",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/52/7616_crt_tbW67.jpg?r=1423317102",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c9/52/7616_crt_tbW67.jpg?r=1423317102"
+    },
+    "summary": "特车二课第二小队的小队长。不苟言笑，外号“剃刀后藤”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "后藤喜一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "後藤 喜一"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ごとう きいち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Gotou Kiichi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "剃刀"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 14,
+        "collects": 100
+    },
+    "anime_ids": [
+        8484
+    ]
+}

@@ -1,0 +1,120 @@
+{
+    "id": 9005,
+    "name": "龙珠Z",
+    "image_path": "data/images/anime/9005.jpg",
+    "points": 8.2,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "龙珠Z（日文：ドラゴンボールZ，英文：DRAGON BALL Z）是指日本漫画家鸟山明的漫画《七龙珠》第195篇-第519篇，因为这期间鸟山明的漫画风格转为超激战，而且故事也和前194篇风格没有太大变化，因此由东映动画公司改编成为独立的动画片。题目中的\"Z\"代表着ZENKAI(日文\"全开\")之意。龙珠Z故事发生于《龙珠》后五年的世界，讲述孙悟空和同伴保卫地球的故事。 ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 291,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "1989-04-26",
+    "rating_rank": 143,
+    "rating_score": 8.2,
+    "rating_total": 3493,
+    "main_character_ids": [
+        1684,
+        3345,
+        8199
+    ],
+    "main_characters": [
+        {
+            "id": 1684,
+            "name": "ベジータ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1e/f9/1684_u91WP.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/f9/1684_u91WP.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/f9/1684_u91WP.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1e/f9/1684_u91WP.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4135,
+                    "name": "堀川りょう",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3d/b8/4135_prsn_He853.jpg?r=1669452328",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/b8/4135_prsn_He853.jpg?r=1669452328",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/b8/4135_prsn_He853.jpg?r=1669452328",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3d/b8/4135_prsn_He853.jpg?r=1669452328"
+                    },
+                    "short_summary": "堀川 りょう（ほりかわ りょう）は、日本の声優、俳優、音響監督、YouTuber。アズリードカンパニー（代表取締役）および株式会社ジャグラーインターナショナル所属。大阪府枚方市出身。\r\n青二プロダクションに所属していたころは堀川 亮（ほりかわ りょう）の芸名で活動していたが、2001年4月3日に現在の芸名に改名した。インターナショナル・メディア学院学院長。妻は同じく声優の及川ひとみ。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 3345,
+            "name": "孫悟空",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/38/a7/3345_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/a7/3345_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/a7/3345_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/38/a7/3345_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3954,
+                    "name": "野沢雅子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/ee/3954_prsn_mTEmk.jpg"
+                    },
+                    "short_summary": "日本の声優、女優、歌手、ナレーター。本名：塚田 雅子（つかだ まさこ、旧姓：野沢）。所属事務所は青二プロダクション。劇団ムーンライト主宰。\r\n\r\n東京都日暮里出身。身長157cm、血液型はO型。役者仲間からの愛称はマコさん。夫は同じく声優の塚田正昭。\r\n\r\n声優としての代表作に『ゲゲゲの鬼太郎』（鬼太郎）、『いなかっぺ大将』（風 大左衛門）、『ど根性ガエル』（ひろし）、『銀河鉄道999』（星野鉄郎）、『ドラゴンボール』シリーズ（孫悟空、孫悟飯、孫悟天）など。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 8199,
+            "name": "孫悟飯",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/65/3c/8199_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/3c/8199_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/3c/8199_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/65/3c/8199_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3954,
+                    "name": "野沢雅子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/ee/3954_prsn_mTEmk.jpg"
+                    },
+                    "short_summary": "日本の声優、女優、歌手、ナレーター。本名：塚田 雅子（つかだ まさこ、旧姓：野沢）。所属事務所は青二プロダクション。劇団ムーンライト主宰。\r\n\r\n東京都日暮里出身。身長157cm、血液型はO型。役者仲間からの愛称はマコさん。夫は同じく声優の塚田正昭。\r\n\r\n声優としての代表作に『ゲゲゲの鬼太郎』（鬼太郎）、『いなかっぺ大将』（風 大左衛門）、『ど根性ガエル』（ひろし）、『銀河鉄道999』（星野鉄郎）、『ドラゴンボール』シリーズ（孫悟空、孫悟飯、孫悟天）など。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

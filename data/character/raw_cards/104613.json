@@ -1,0 +1,70 @@
+{
+    "id": 104613,
+    "name": "イブ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a8/f4/104613_crt_o6dRX.jpg?r=1649878339",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a8/f4/104613_crt_o6dRX.jpg?r=1649878339",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a8/f4/104613_crt_o6dRX.jpg?r=1649878339",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a8/f4/104613_crt_o6dRX.jpg?r=1649878339"
+    },
+    "summary": "絶対に撃ち抜いてやる…この私の…虹色の弾丸で！\r\n\r\n賭けゴルフで生計を立てている少女。プレースタイルは独創的かつ強気な攻めのゴルフ。ショットの弾道も、性格も、どこまでも真っ直ぐ。『虹色の弾丸』で相手をことごとく撃ち破っていく“レインボー・バレットのイヴ”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊芙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "伊芙·阿莱昂"
+                },
+                {
+                    "v": "伊凡洁林·君鸟"
+                },
+                {
+                    "v": "伊凡洁林·伯顿"
+                },
+                {
+                    "v": "イブ・アレオン"
+                },
+                {
+                    "v": "イヴァンジェリン・F・君島、イヴァンジェリン・F・キミシマ"
+                },
+                {
+                    "v": "イヴァンジェリン・バートン"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Evangeline Burton"
+                },
+                {
+                    "k": "昵称",
+                    "v": "Eve"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://birdie-wing.net/character/chara_1.php"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 14,
+        "collects": 50
+    },
+    "anime_ids": [
+        354682
+    ]
+}

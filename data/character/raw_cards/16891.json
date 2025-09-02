@@ -1,0 +1,69 @@
+{
+    "id": 16891,
+    "name": "狡噛慎也",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4a/83/16891_crt_5wglE.jpg?r=1411138115",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4a/83/16891_crt_5wglE.jpg?r=1411138115",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4a/83/16891_crt_5wglE.jpg?r=1411138115",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4a/83/16891_crt_5wglE.jpg?r=1411138115"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "狡啮慎也"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "狡噛 慎也"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こうがみ しんや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kougami Shinya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2084年8月16日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "180cm"
+        },
+        {
+            "key": "体重",
+            "value": "66kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 2084,
+    "birth_mon": 8,
+    "birth_day": 16,
+    "stat": {
+        "comments": 46,
+        "collects": 325
+    },
+    "anime_ids": [
+        37685,
+        103906
+    ]
+}

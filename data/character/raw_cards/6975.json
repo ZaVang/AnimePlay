@@ -1,0 +1,68 @@
+{
+    "id": 6975,
+    "name": "次元大介",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/33/f2/6975_crt_KwU3M.jpg?r=1446818861",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/f2/6975_crt_KwU3M.jpg?r=1446818861",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/f2/6975_crt_KwU3M.jpg?r=1446818861",
+        "grid": "https://lain.bgm.tv/pic/crt/g/33/f2/6975_crt_KwU3M.jpg?r=1446818861"
+    },
+    "summary": "鲁邦的好朋友兼最佳伙伴。超一流的职业枪手，拔枪射击的速度只需0.3秒。曾经作为职业杀手，为了和鲁邦对决背叛了组织，后来和鲁邦成为搭档。\r\n每当在工作（偷东西）的时候，虽然不及鲁邦那么花哨、夸张，但是讲义气、认真的态度却是不输任何人，只不过常常会受鲁邦的影响，莫名其妙就得面对一团混乱。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "次元大介"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "次元大介"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "じげん だいすけ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Jigen Daisuke"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "178cm"
+        },
+        {
+            "key": "体重",
+            "value": "70kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 8,
+        "collects": 73
+    },
+    "anime_ids": [
+        115661,
+        36359,
+        24274,
+        219164,
+        84991
+    ]
+}

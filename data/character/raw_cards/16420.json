@@ -1,0 +1,48 @@
+{
+    "id": 16420,
+    "name": "八重樫太一",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7c/65/16420_crt_l803f.jpg?r=1535426180",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/65/16420_crt_l803f.jpg?r=1535426180",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/65/16420_crt_l803f.jpg?r=1535426180",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7c/65/16420_crt_l803f.jpg?r=1535426180"
+    },
+    "summary": "一年三班学生，文研部部员。第一人称“俺”。\r\n身高只比平均稍微高一点，爱自我牺牲。极度深爱着职业摔角。在开设文研部前打算加入“职业摔角研究会”，但因人数不足而失败。\r\n喜欢伊织，在小说第一集误以为伊织即将死亡时，向伊织告白。而伊织也向太一告白，并且与太一接吻（借由稻叶的身体）。\r\n有一名国小五年级的妹妹，与妹妹的感情还不错。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "八重樫太一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "やえがし たいち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "yaegashi taichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 9,
+        "collects": 26
+    },
+    "anime_ids": [
+        37154
+    ]
+}

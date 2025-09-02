@@ -1,0 +1,52 @@
+{
+    "id": 50906,
+    "name": "ジョーダン・ベス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/cb/20/50906_crt_jJy56.jpg?r=1486136788",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cb/20/50906_crt_jJy56.jpg?r=1486136788",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cb/20/50906_crt_jJy56.jpg?r=1486136788",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cb/20/50906_crt_jJy56.jpg?r=1486136788"
+    },
+    "summary": "“ソロ星”に派遣された地球連合軍の士官候補生。 “第６文明人”の遺跡での発掘調査を視察した折にバッフ・クランの襲撃に遭い、ソル・バニアに乗り込み戦うこととなる。“ソロ星”で生き残った軍人の中で最高位にあったためにソロシップの指揮官となる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "乔丹·贝斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ジョーダン・ベス"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "www.ideon.jp/chara/index.html"
+        },
+        {
+            "key": "年龄",
+            "value": "１８歳"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 7
+    },
+    "anime_ids": [
+        10375
+    ]
+}

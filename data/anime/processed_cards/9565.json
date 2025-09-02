@@ -1,0 +1,137 @@
+{
+    "id": 9565,
+    "name": "龙珠",
+    "image_path": "data/images/anime/9565.jpg",
+    "points": 8.2,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "鸟山明最早在《少年JUMP》周刊连载《龙珠》时，该漫画早期（1-194篇）比较偏重于搞笑，而且打斗一般并不在这儿占主流，因此这个时期，鸟山明的画风对人物性格刻画得很精准，可以让人爆笑起来，因此东映动画公司决定把这个时期的漫画改成一部153集的动画，这也是中国内地在三部《龙珠》系列动画中唯一引进的一部，故也称龙珠TV。而且第一部有很多风格和人物剧情都根源于《西游记》，而且鸟山明的前作《阿拉蕾》中的人物也有客串。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 153,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "1986-02-26",
+    "rating_rank": 116,
+    "rating_score": 8.2,
+    "rating_total": 5467,
+    "main_character_ids": [
+        3345,
+        15142
+    ],
+    "main_characters": [
+        {
+            "id": 3345,
+            "name": "孫悟空",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/38/a7/3345_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/a7/3345_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/a7/3345_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/38/a7/3345_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3954,
+                    "name": "野沢雅子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/ee/3954_prsn_mTEmk.jpg"
+                    },
+                    "short_summary": "日本の声優、女優、歌手、ナレーター。本名：塚田 雅子（つかだ まさこ、旧姓：野沢）。所属事務所は青二プロダクション。劇団ムーンライト主宰。\r\n\r\n東京都日暮里出身。身長157cm、血液型はO型。役者仲間からの愛称はマコさん。夫は同じく声優の塚田正昭。\r\n\r\n声優としての代表作に『ゲゲゲの鬼太郎』（鬼太郎）、『いなかっぺ大将』（風 大左衛門）、『ど根性ガエル』（ひろし）、『銀河鉄道999』（星野鉄郎）、『ドラゴンボール』シリーズ（孫悟空、孫悟飯、孫悟天）など。",
+                    "locked": false
+                },
+                {
+                    "id": 67944,
+                    "name": "王晓燕",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d2/fd/67944_prsn_ZRrG5.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/fd/67944_prsn_ZRrG5.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/fd/67944_prsn_ZRrG5.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d2/fd/67944_prsn_ZRrG5.jpg"
+                    },
+                    "short_summary": "王晓燕，配音演员，专业动画译制片配音演员。曾是辽宁儿童艺术剧院的主要配音员，到北京发展。97年接任李韫慧成为一休的第二位代言人，继李韫慧后的辽艺首席旦角。王晓燕在辽艺的作品颇丰，98年离开辽艺到北京发展，现已调至地方台，因而作品以地方台担任配音的影视剧为主。动画代表作：《聪明的一休》，《足球小子》，大空翼，《美少女战士》月野兔等，还曾参与多部电影以及国产剧的配音。",
+                    "locked": false
+                },
+                {
+                    "id": 67947,
+                    "name": "刘艺",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8b/07/67947_prsn_FsSo9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8b/07/67947_prsn_FsSo9.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8b/07/67947_prsn_FsSo9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8b/07/67947_prsn_FsSo9.jpg"
+                    },
+                    "short_summary": "刘艺，1961年12月出生于中国吉林省吉林市，毕业于解放军艺术学院，配音演员。主要作品《魔神英雄传》（前2部）、《光能使者》、《龙珠》、《阿拉蕾》、《铁胆火车侠》、《小虎还乡》、《聪明的一休》（08版）等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 15142,
+            "name": "ブルマ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4a/e8/15142_crt_gGh88.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4a/e8/15142_crt_gGh88.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4a/e8/15142_crt_gGh88.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4a/e8/15142_crt_gGh88.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3956,
+                    "name": "鶴ひろみ",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0f/3c/3956_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/3c/3956_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/3c/3956_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0f/3c/3956_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本的女性配音员、舞台演员、旁白。\r\n在北海道出生，成长和出身于神奈川县横滨市。血型O型。隶属于青二Production。血型O型。星座牡羊座。毕业于神奈川县立鹤见高等学校。知名的配音作品有佩琳物语的佩琳（小英）、龙珠的布玛、橙路的鲇川圆、乱马1/2的久远寺右京等。\r\n\r\n直爽的性格，声称在配美神令子时被潜移默化了。\r\n本来想当演员，之所以转变为声优，是因为“在儿童剧团时，曾被以前视为偶像的女演员所嫌弃”。\r\n与堀川亮，古谷彻搭档的角色，恋爱戏都相当地多，另外与古谷同是向日葵剧团出身，但是在剧团时代互不认识。\r\n原夫是同为声优的难波圭一。难波圭一就是《橙路》中小松整司的声优，不过后来他们离婚了。\r\n椎名高志自从看过ペリーヌ物語就是她的声迷，因此GS美神动画化时指名要她出演，并且在自己结婚时拜托她来担任司仪，结果最后连扮演横岛忠夫的堀川亮也一起拉来主持。\r\n与同世代的配音员松井菜樱子、富泽美智惠及川村万梨阿都以擅长强悍霸气的演技博得了很高的人气而为人熟悉。\r\n\r\n2017年11月16日，鹤弘美在首都高速公路上驾车过程中失去意识，人们将她送到医院，但已经确认死亡，现场没有事故痕迹。\r\n次日下午经纪公司公布死因是心脏主动脉剥离，震惊全国民众。她当时车子停在首都心环状线上，并打开警示灯，被送到医院时已经没有生命迹象，不少网友注意到，她其实在死前一直在强忍身体的病痛，直到停好车后才断气，避免了可能会发生的追撞车祸。",
+                    "locked": false
+                },
+                {
+                    "id": 67943,
+                    "name": "郝琳杰",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/41/c4/67943_prsn_d28Rs.jpg?r=1725993582",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/c4/67943_prsn_d28Rs.jpg?r=1725993582",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/c4/67943_prsn_d28Rs.jpg?r=1725993582",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/41/c4/67943_prsn_d28Rs.jpg?r=1725993582"
+                    },
+                    "short_summary": "国家二级演员\r\n郝琳杰，辽艺配音演员，国家二级演员。 配音作品有《聪明的一休》、《魔神英雄传》、《俏皮小花仙》、《美少女战士》等。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

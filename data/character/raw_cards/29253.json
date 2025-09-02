@@ -1,0 +1,85 @@
+{
+    "id": 29253,
+    "name": "ゴウセル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7e/87/29253_crt_881N9.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/87/29253_crt_881N9.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/87/29253_crt_881N9.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7e/87/29253_crt_881N9.jpg"
+    },
+    "summary": "「色欲の罪（ゴート・シン）(Goat's Sin)のゴウセル」。印となる獣は山羊。刺青の位置は右胸。手配書では巨大な鎧巨人（アーマージャイアント）の姿で描かれるが、本体はメガネをかけた中性的な美少年。\r\n\r\n纹身：羊（Goat）位置：右胸\r\n赤发金眸，戴着眼镜，有着可爱脸蛋的中性妖艳美少年。有着自由变换头发与声音的能力。罪因不明。于『沃丹之村』归团。\r\n总是面无表情，说话也毫无感情起伏。对战时总是冷静观察再行动。无法分辨现场气氛，难以启齿的事情也用平常的语气说出口。自认为“自己没有心”，因此喜爱阅读拥有心的人类所写的故事。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高瑟"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "色欲の罪（ゴート・シン）"
+                },
+                {
+                    "v": "Goat's Sin of Lust"
+                },
+                {
+                    "v": "「無欲」のゴウセル"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "哥塞爾"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Gowther"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "6月2日"
+        },
+        {
+            "key": "血型",
+            "value": "不明"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        },
+        {
+            "key": "体重",
+            "value": "61kg"
+        },
+        {
+            "key": "種族",
+            "value": "人形"
+        },
+        {
+            "key": "年齢",
+            "value": "不明"
+        },
+        {
+            "key": "闘級",
+            "value": "3100（魔力1300/武力500/気力1300）→35400"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 2,
+    "stat": {
+        "comments": 7,
+        "collects": 20
+    },
+    "anime_ids": [
+        101820
+    ]
+}

@@ -1,0 +1,231 @@
+{
+    "id": 71802,
+    "name": "现视研 二代目",
+    "image_path": "data/images/anime/71802.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "椎应大学现代视觉文化研究会、通称「现视研」。\r\n成为新会长的荻上千佳，借鉴着去年的迎新活动经验，在今年也力争拉入更多的新生入部。在迎新会场，把仍然自娱自乐地玩着COSPLAY的前会长·大野加奈子放在一边，荻上现场表演了即兴手绘大幅插画的功夫！而对此有所反应的两位女生，新入校的吉武莉华和矢岛美怜也决定加入现视研。所谓物以类聚，这二位自然也不是省油的灯——两人都是腐女子！而更加奇葩的则是出现在部室、希望入部的栗色头发女生，这位清秀美人的真身其实是标准的伪娘……\r\n迎接了超有个性的新生们加入，『现视研二代目』的活动即将开始！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2013-07-06",
+    "rating_rank": 1021,
+    "rating_score": 7.5,
+    "rating_total": 2109,
+    "main_character_ids": [
+        311,
+        315,
+        20487,
+        20488,
+        20489,
+        20490
+    ],
+    "main_characters": [
+        {
+            "id": 311,
+            "name": "斑目晴信",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9d/fc/311_GLFX0.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9d/fc/311_GLFX0.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9d/fc/311_GLFX0.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9d/fc/311_GLFX0.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5007,
+                    "name": "興津和幸",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9e/df/5007_prsn_LClCs.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/df/5007_prsn_LClCs.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/df/5007_prsn_LClCs.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9e/df/5007_prsn_LClCs.jpg"
+                    },
+                    "short_summary": "兵庫県立洲本高等学校、大阪芸術大学芸術学部放送学科卒。RME（ - 2006年10月）を経て、2007年5月よりケッケコーポレーションに所属。\r\n端役を多く演じているが、『屍鬼』や『れでぃ×ばと!』で主演としてのキャリアを積み、2012年にテレビアニメ化が実現した『ジョジョの奇妙な冒険』で主人公のジョナサン・ジョースター役に抜擢される。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 315,
+            "name": "荻上千佳",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ad/13/315_y2rHI.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/13/315_y2rHI.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/13/315_y2rHI.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ad/13/315_y2rHI.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7147,
+                    "name": "山本希望",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f1/84/7147_prsn_G6Zb1.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/84/7147_prsn_G6Zb1.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/84/7147_prsn_G6Zb1.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f1/84/7147_prsn_G6Zb1.jpg"
+                    },
+                    "short_summary": "VIMS所属声优. 2011年出道\r\n\r\n老家是青森農家，是5人姊弟的長女。對於80年代的JUMP漫畫非常熟悉，反而是對於時下的流行作不熟，因此經常鬧笑話。\r\n\r\n自認是個認真而心地善良的宅女，但是從廣播當中的行為表現也有腹黑女一說。\r\n\r\n宣稱喜歡的男性類型是「能夠戰勝猩猩的人」，如果要跟她告白的話得先去動物園一趟，打贏了再回來她才肯點頭。因為太喜歡大猩猩而被稱為ゴリラ声優，她本人的說法是「不是作為動物，而是作為異性而最喜歡大猩猩了」。\r\n\r\n以前假日都會在家滾來滾去一整天，最近開始走outdoor路線，在内田真礼的推坑下開始看美國超級英雄電影。而且能夠一次游泳15m了！(...) 另外也正在磨練自己的料理手藝並刊登在推特上，還在家裡種豆苗、番茄、藍莓和香草，深夜還忙著健身等等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 20487,
+            "name": "スザンナ・ホプキンス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/34/23/20487_crt_49bCX.jpg?r=1749438425",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/34/23/20487_crt_49bCX.jpg?r=1749438425",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/34/23/20487_crt_49bCX.jpg?r=1749438425",
+                "grid": "https://lain.bgm.tv/pic/crt/g/34/23/20487_crt_49bCX.jpg?r=1749438425"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10878,
+                    "name": "大空直美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2b/15/10878_prsn_0F1Km.jpg?r=1542263067",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/15/10878_prsn_0F1Km.jpg?r=1542263067",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/15/10878_prsn_0F1Km.jpg?r=1542263067",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2b/15/10878_prsn_0F1Km.jpg?r=1542263067"
+                    },
+                    "short_summary": "日本女性声优。隶属于青二Production，大阪府出身。身高153cm、血型为A型。立命馆大学映像学部毕业。青二塾大阪校第28期毕业。\r\n\r\n小学3年生の頃、『ドラゴンボール』にのめり込み、ヒーローと一緒に世界を冒険するようなアニメの虜になった。\r\n中学・高校時代も友人と作品の批評を楽しみ、「関係する仕事をしたい」と立命館大学映像学部に入学。\r\n3年で映像作品のナレーターを務めた時、場面ごとに声の表情を考える自分と大好きなアニメの声優の姿が重なり、くすぶっていた気持ちに火が付き、家電量販店のアルバイトで授業料50万円を貯め、4年生だった2010年4月、青二プロダクションが運営する養成所・青二塾大阪校に入塾。\r\n大学卒業から1年後、青二プロダクションの所属試験に合格する。\r\n2012年6月、『聖闘士星矢Ω』の子供役で声優デビュー。\r\n2013年7月、『げんしけん二代目』のスザンナ・ホプキンス役で初レギュラーを獲得。\r\n2014年1月、『いなり、こんこん、恋いろは。』の伏見いなり役で初主演を務める。\r\n\r\n英検準2級、日本漢字能力検定3級を所持している。\r\n趣味はイラスト、似顔絵、ピアノ、ケーナで、特技は歌唱、ダンス、美味しいたこ焼きを焼くことである。\r\n好きな言葉は「為せば成る」。\r\n\r\n幼い頃から『ドラゴンボール』や『キン肉マン』などの東映アニメが好きで、エンドロールの『青二プロダクション』のクレジットを見て、「声優と言えばここだ！」と考えていたため、青二プロダクションへの所属を目指し、青二塾大阪校に通うことを決めた。\r\n日本テレビ系『幸せ!ボンビーガール』にて「声優の卵」として出演。100円ショップでアルバイトし、特別な日には高級焼肉店のタレでパンの耳を食べてレッスンに励む姿が紹介されたことがある。\r\n英語を得意としており、初期の仕事では顔出しで英語教室で英語を教わる生徒役で出演していた。\r\n『アイドルマスター シンデレラガールズ』では緒方智絵里役を好演。CDデビューの他、テレビアニメでもメインキャストとして出演している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 20488,
+            "name": "波戸賢二郎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e2/3c/20488_crt_M4gm2.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/3c/20488_crt_M4gm2.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/3c/20488_crt_M4gm2.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e2/3c/20488_crt_M4gm2.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5155,
+                    "name": "山本和臣",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8c/88/5155_prsn_L17o8.jpg?r=1534077121",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/88/5155_prsn_L17o8.jpg?r=1534077121",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/88/5155_prsn_L17o8.jpg?r=1534077121",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8c/88/5155_prsn_L17o8.jpg?r=1534077121"
+                    },
+                    "short_summary": "日本の男性声優、歌手。プロダクション・エース所属。プロダクション・エース演技研究所出身。兵庫県出身。血液型はA型。\r\n2009年にデビュー。2013年3月1日、第7回声優アワード新人男優賞を受賞。\r\n\r\nミルクティーが大好きで、ほぼ毎日飲んでいる。パックはリプトン、缶は午後の紅茶、ペットボトルは紅茶花伝と飲み分けている。一時期はレモンティーを飲んでいたが飲みすぎて気持ちが悪くなったことからミルクティーに戻った。",
+                    "locked": false
+                },
+                {
+                    "id": 10806,
+                    "name": "加隈亜衣",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c4/8e/10806_prsn_kqVKK.jpg?r=1687829947",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/8e/10806_prsn_kqVKK.jpg?r=1687829947",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/8e/10806_prsn_kqVKK.jpg?r=1687829947",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c4/8e/10806_prsn_kqVKK.jpg?r=1687829947"
+                    },
+                    "short_summary": "日本女声优。MAUSU PROMOTION所属。福冈县出身。\r\n\r\n以不想麻烦家人为理由，高中毕业后作为OL工作了4年，但因无法舍弃成为声优的想法而来到东京，通过成为MAUSU PROMOTION附属养成所的第26期生，从2013年4月成为MAUSU PROMOTION的所属。\r\n从2011年秋天就开始在广播节目和游戏软件（里）演出。2012年4月26日发售的PS Vita游戏《静籁之空 ～献给失落之星的诗～》女主角依恩为其首度配音的角色。亦以2012年1月的动画《要听爸爸的话！》的姐姐角色正式动画出道。\r\n2013年10月至12月，与水濑祈结成期间限定组合“いのりっくま”，在德岛、福冈、东京举办了活动。\r\n\r\n出身于福冈县，会说博多方言。\r\n想要成为声优的契机是小学6年级时看过的动画《犬夜叉》，憧憬的前辈也是其中饰演女主角日暮戈薇的雪野五月。\r\n特长是游泳和乒乓球。此外，还擅长电脑打字。\r\n拥有驾照、日本汉字能力检定、台式电脑实务检定、簿记实务检定、文字处理机实务检定的资格。艺人简介“兴趣・特长”栏中的“河童捕获”实为在2012年11月岩手县原野市所取得（购入）了的《河童捕获许可证》。2015年5月4日，担当了在Machi★Asobi举办的事务所前辈市来光弘与朋友井上奈奈的公开结婚典礼的主持。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 20489,
+            "name": "吉武莉華",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2d/ce/20489_crt_1wPw1.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/ce/20489_crt_1wPw1.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/ce/20489_crt_1wPw1.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2d/ce/20489_crt_1wPw1.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7307,
+                    "name": "上坂すみれ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d3/30/7307_prsn_R3GWz.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/30/7307_prsn_R3GWz.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/30/7307_prsn_R3GWz.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d3/30/7307_prsn_R3GWz.jpg"
+                    },
+                    "short_summary": "日本的女性声优、艺人、歌手。\r\n神奈川县出身。上智大学外国语学院俄语系毕业。\r\n\r\n2012年，在《要听爸爸的话！》中首次出演女主角小鸟游空，亦同时出演该系列作品的CD、游戏、广播。\r\n2012年5月26日，受日本海上自卫队的邀请，造访了千叶县船桥基地，担当日本海上自卫队“山雪”号的一日舰长。\r\n2012年12月，在卡塔尔召开的第23届多哈图书展上，代表日本参展队伍的嘉宾出席。这也是上坂首次参与文化外交活动。\r\n2013年2月，宣布演唱电视动画《人鱼又上钩》的片头曲“七つの海よりキミの海”，经由STARCHILD歌手出道。\r\n2014年3月，自上智大学外国语学部俄语学科毕业。同年10月，应开拓动漫祭邀请前往台湾出席“Petit Fancy 21”。\r\n其他代表作品有《中二病也要谈恋爱！》凸守早苗、《舰队收藏》吹雪 、《偶像大师灰姑娘女孩》安娜史塔西亚、《CHAOS;CHILD》尾上世莉架等。\r\n2016年3月，第十届声优大赏中荣获新人女声优奖。\r\n2020年8月31日，宣布退出SPACE CRAFT。\r\n2021年3月1日，宣布加入Voice Kit事务所。\r\n\r\n上坂堇可以说是日本声优圈内的特例，原因在于她有着浓厚的苏俄情结，再加上在大学主修俄语，更让她和其他声优相比显得与众不同，对于俄罗斯的评价是：那是一个在文学、历史、绘画、音乐等方面都让人感觉很有个性且展现出不可思议魅力的国度。\r\n与俄罗斯产生情结的契机是高中一年级的时候听到了苏联国歌，歌词深深地感染了自己。她自己的愿望是能成为”日俄之间动画桥梁般的存在“的角色，她在博客里写文章经常使用西里尔字母的词汇，例如「Здравствуйте（你好）」、「До свидания（再见 ）」、「Спасибо（谢谢）」、「Хорошо（好）」、「Ура（万岁）」等。而在她的推特里，自我介绍一栏更是直言不讳，直接写上Я люблю Россию!!（我爱俄罗斯！！），在广播节目中喜欢称她的听众为“同志诸君”，也因此她的粉丝喜欢称她为“连长”“师团长“”军团长“。更是由于在人气动画《少女与战车》中农娜这一酷似政委的副队长角色，而在广大粉丝中有了“政委”的昵称。\r\n她本人也是个军武宅，爱好军歌和战时歌谣，喜欢的坦克是苏制BT-5轻型坦克，她在大学参加的社团也是关于苏联红军早期发展方面的研究，在钟情于俄罗斯之前，她也曾对第三帝国产生浓厚兴趣。\r\n因为参与了文化外交活动，上坂本人也与前日本文化外交大使樱井孝昌先生关系密切。在自己的推特、博客中也对樱井给予高度评价。在樱井先生不幸离世后，在博客中发表了真诚的悼念文章。\r\n成为声优的契机是受到《魔法护士小麦》中桃井晴子的演技所感动，并表示桃井晴子是她尊敬的声优。\r\n\r\n喜欢的食物是羊排和”きのこの山“ ，非常喜欢lolita服饰（Lolita Fashion），在她的博客中经常出现她洋装打扮的照片。是Lolita品牌Baby The Stars Shine Bright的模特。喜欢的音乐类型除了之前提到的军乐以及战时歌谣外，还包括King-Show（一种上世纪80年代至90年代流行于日本的音乐类型，又称”筋肉少女帯“），游戏音乐和重金属。\r\n爱犬的名字叫做“苹果”。这只蝴蝶犬出生于2001年6月23日，被上坂称作“家中的最高权力者”。2015年12月22日亡故。\r\n中学时代极为崇拜尼采、弗洛伊德与荣格。并且经常沉迷于他们的著作之中。\r\n被中川翔子戏称为“残念系亚文化美少女”。\r\n\r\n2016年3月，由于不堪忍受网络上的性骚扰，宣布Twitter账号停止更新，官方LINE账号继续更新；同年11月，Twitter账号恢复更新。2017年7月，由于网上再次出现性骚扰的情况，删除个人Twitter及Instagram账号。\r\n2017年11月，开设公式推特。2019年，重新开设Instagram账号。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 20490,
+            "name": "矢島美怜",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d6/4b/20490_crt_7akuU.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/4b/20490_crt_7akuU.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/4b/20490_crt_7akuU.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d6/4b/20490_crt_7akuU.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6560,
+                    "name": "内山夕実",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/99/e6/6560_prsn_gZezL.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/e6/6560_prsn_gZezL.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/e6/6560_prsn_gZezL.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/99/e6/6560_prsn_gZezL.jpg"
+                    },
+                    "short_summary": "内山 夕実（うちやま ゆみ、1987年10月30日 - ）は、日本の女性声優。東京都出身。大沢事務所所属。音域はアルト。\r\n\r\n中高一貫学校の出身で、15歳で日本ナレーション演技研究所のジュニアクラスに入所。日ナレ時代は、ならはしみき指導の下でレッスンを受けている。声優になった理由として中学時代に放送劇部に入ったことを挙げている。\r\nアーツビジョンに所属し、2005年に別名義でデビューするが、家庭の事情により20歳の時に一旦引退して就職する。3年のブランクを経て、2010年に元の事務所に再所属し、BeeTVで配信された海外ドラマ『バンパイアに恋して』のアビー役の吹き替えで再デビュー。翌年『Aチャンネル』のナギ役で初のレギュラーを獲得。\r\n2017年4月、アーツビジョンから大沢事務所に移籍したことを報告した。\r\n趣味は写真撮影で、ブログには彼女が撮った写真が掲載されている。特技はカラオケで、いきものがかりの「ありがとう」をよく歌っている。\r\n\r\n2024年12月31日发表与小林裕介结婚",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

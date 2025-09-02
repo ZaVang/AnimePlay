@@ -1,0 +1,48 @@
+{
+    "id": 7041,
+    "name": "毛利小五郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e8/09/7041_crt_S75jE.jpg?r=1741598437",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/09/7041_crt_S75jE.jpg?r=1741598437",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/09/7041_crt_S75jE.jpg?r=1741598437",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e8/09/7041_crt_S75jE.jpg?r=1741598437"
+    },
+    "summary": "米花町に個人経営の探偵事務所を営む、元刑事の私立探偵。工藤新一の幼なじみ・毛利蘭の父。推理がイマイチのせいで流行らない探偵稼業だったが、コナンが陰で推理を行い「眠りの小五郎」が定着すると、一躍名探偵の仲間入り。お調子者で、酒やギャンブルを好むが、柔道と刑事時代に培った拳銃の腕前はピカ一。弟子に探偵の安室透がいる。\r\n\r\nCV信息：\r\n* 神谷明（1-548话）\r\n* 小山力也（553话-）",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "毛利小五郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Richard Moore"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mouri Kogoro"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 20,
+        "collects": 59
+    },
+    "anime_ids": [
+        899
+    ]
+}

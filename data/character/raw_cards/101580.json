@@ -1,0 +1,72 @@
+{
+    "id": 101580,
+    "name": "鐘嵐珠",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a6/c6/101580_crt_JfM0c.jpg?r=1649763318",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/c6/101580_crt_JfM0c.jpg?r=1649763318",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/c6/101580_crt_JfM0c.jpg?r=1649763318",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a6/c6/101580_crt_JfM0c.jpg?r=1649763318"
+    },
+    "summary": "香港から留学してきた虹ヶ咲学園2年生。\r\nかなりのお嬢様で、やることすべてパーフェクトな結果を出す。\r\n本人はみんなと仲良くなりたいと思っているのに上手くいかない。\r\n同好会メンバーのことが大好き。好きな食べ物は肉。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "钟岚珠"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Lanzhu Zhong"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ショウ・ランジュ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月15日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B87・W55・H82"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://lovelive-as.bushimo.jp/member/lanzhu/"
+        },
+        {
+            "key": "分组",
+            "value": "R3BIRTH"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 15,
+    "stat": {
+        "comments": 49,
+        "collects": 82
+    },
+    "anime_ids": [
+        335579
+    ]
+}

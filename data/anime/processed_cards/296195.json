@@ -1,0 +1,122 @@
+{
+    "id": 296195,
+    "name": "Re：从零开始的异世界生活 新编集版",
+    "image_path": "data/images/anime/296195.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "2016年に放送されたTVアニメ『Re:ゼロから始める異世界生活』が新たに1時間番組として放送決定！ 新規カットを追加し、1時間番組として再編集を行った《新編集版》となる『Re:ゼロから始める異世界生活』は2020年1月1日(水)よりAT-X、TOKYO MX、BS11ほかにて放送スタート。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 25,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "战斗",
+        "小说改"
+    ],
+    "date": "2020-01-01",
+    "rating_rank": 610,
+    "rating_score": 7.7,
+    "rating_total": 6123,
+    "main_character_ids": [
+        35607,
+        35608,
+        35615
+    ],
+    "main_characters": [
+        {
+            "id": 35607,
+            "name": "ナツキ・スバル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f3/e4/35607_crt_zL7e7.jpg?r=1587941914",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/e4/35607_crt_zL7e7.jpg?r=1587941914",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/e4/35607_crt_zL7e7.jpg?r=1587941914",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f3/e4/35607_crt_zL7e7.jpg?r=1587941914"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13825,
+                    "name": "小林裕介",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c7/74/13825_prsn_93N54.jpg?r=1620821891",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/74/13825_prsn_93N54.jpg?r=1620821891",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/74/13825_prsn_93N54.jpg?r=1620821891",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c7/74/13825_prsn_93N54.jpg?r=1620821891"
+                    },
+                    "short_summary": "小林 裕介（こばやし ゆうすけ、1985年3月25日 - ）は、日本の男性声優、ナレーターである。ゆーりんプロ所属。\r\n東京都出身。アミューズメントメディア総合学院声優タレント学科卒業。\r\n\r\n趣味はダーツ、特技は腹話術と大学時代に4年間続けた空手。\r\n座右の銘としている言葉は、『失敗しても死にゃしない』。\r\nプラネタリウムのナレーションを担当する事を夢としている。\r\n\r\n5歳から10歳までイギリスに住んでおり、帰国子女である。しかし英語はあまり喋れない。\r\n高校生時代、自転車通学中にアニメのセリフを叫びながら走る癖があり、それを友人に話した所「声優になれば？」と返された事が声優を志望するきっかけになった。\r\n大学卒業後、就職したものの、日々の生活に物足りなさを感じて休日に歌のレッスンを受けるようになり、その講師が声優と縁のある職業であることを知った小林は「声優になりたかった」と語ったところ、講師に「興味があるならやった方がいい」と背中を押され、アミューズメントメディア総合学院に入学する。\r\n2009年に専門学校のワークショップでの『VANGUARD』の吹き替えでデビュー。\r\n2010年にアミューズメントメディア総合学院を卒業後、ゆーりんプロに所属。プロとしての初めての仕事は企業用ナレーション。以降、ナレーションの仕事を中心に活動。\r\n2013年、専門学校のワークショップでテレビアニメ『とある科学の超電磁砲S』の小佐古俊一役で声優デビュー。\r\n2014年には、テレビアニメ『ウィッチクラフトワークス』多華宮仄役で初主演した。\r\n2016年、7月より声優の古川慎と共にパーソナリティを務めるラジオ『なんでもヒーロー！ ゆっけとまーぼー』の放送を開始。\r\n2017年、第11回声優アワードで新人男優賞を受賞。\r\n\r\n2024年12月31日发表与内山夕实结婚",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 35608,
+            "name": "エミリア",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/86/d4/35608_crt_3picp.jpg?r=1695696610",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/d4/35608_crt_3picp.jpg?r=1695696610",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/d4/35608_crt_3picp.jpg?r=1695696610",
+                "grid": "https://lain.bgm.tv/pic/crt/g/86/d4/35608_crt_3picp.jpg?r=1695696610"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 17491,
+                    "name": "高橋李依",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bd/56/17491_prsn_1PkIP.jpg?r=1642506690",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/56/17491_prsn_1PkIP.jpg?r=1642506690",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/56/17491_prsn_1PkIP.jpg?r=1642506690",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bd/56/17491_prsn_1PkIP.jpg?r=1642506690"
+                    },
+                    "short_summary": "埼玉县立越谷南高等学校出身。2年级时曾获得动画甲子园2010-2011声音表演部门优秀赏。\r\n\r\n2012年3月，高中毕业的同时加入演员养成所81ACTOR'S STUDIO。研究生时期曾经以新人声优团体“Anisoni∀”的成员身份开始进行活动。\r\n\r\n2013年3月从81ACTOR'S STUDIO毕业，4月起加入81 Produce。\r\n\r\n2016年，获得第10回声优奖的新人女优赏。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 35615,
+            "name": "レム",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/42/35615_crt_O7WVP.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/42/35615_crt_O7WVP.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/42/35615_crt_O7WVP.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/42/35615_crt_O7WVP.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10868,
+                    "name": "水瀬いのり",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/87/b1/10868_prsn_LoxnW.jpg?r=1740115446",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/b1/10868_prsn_LoxnW.jpg?r=1740115446",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/b1/10868_prsn_LoxnW.jpg?r=1740115446",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/87/b1/10868_prsn_LoxnW.jpg?r=1740115446"
+                    },
+                    "short_summary": "日本的女性演员、声优，原Sony Music Artists所属，现AXL-ONE。东京都出身。\r\n\r\n兴趣为动画、游戏、NICONICO动画、上网。\r\n粉丝俱乐部叫“いのりまち”（祈町），自称是町长，粉丝则是町民。\r\n特技是在卡拉OK中用动画歌曲唱出二重唱、俄罗斯方块。「非常喜欢唱歌和表演。也十分喜欢声优的动画歌，对会唱歌的声优怀有憧憬。」\r\n小时候对于《美少女战士》的水手金星、《名侦探柯南》的毛利兰有所憧憬，从母亲那里得知声优的存在后决定以成为声优为目标，并因为受毛利兰影响而开始学空手道。\r\n初中时由于受到《网球王子》的影响而同时参加网球部和演剧部，但没多久就退出了网球部。\r\n国中三年级在《世纪末超自然学院》所配的冈本灯一角为出道作。\r\n小时候就很喜欢迪士尼的作品，甚至拥有年间护照。一年会去100次东京迪士尼乐园。理想男性为米老鼠爱好者。\r\n曾经在チャームキッズ（Charm Kids，一个专门培养少女偶像的机构）以偶像身份出道，2010年1月5日毕业。期间名义为【末永みお】。\r\n水树奈奈的粉丝，2015年9月24日宣布了将会在自己20岁生日当天（即2015年12月2日）以个人名义作为歌手出道，并发售第一张个人单曲，唱片公司为King Records。\r\n\r\n2013年，在NHK的晨间剧《海女》中饰演成田丽奈。由此在同年的NHK红白歌会的企划单元中决定和海女的主要演员一起出场，作为\"GMTスペシャルユニット feat.アメ横女学园芸能コース”的一员在舞台上披露了《暦の上ではディセンバー》。\r\n2015年12月12日在西武铁道（秩父线）担任了一日站长。\r\n2016年，获得了第10届声优奖的主演女声优赏，第25届日本影评人大奖的新人声优奖。2016年4月14日，被任命为京都国际动漫展的应援支持者。而且所绘画的『八桥舞妓酱』会展示在京都国际漫画博物馆。\r\n2016年11月19日，台湾一男子扬言要杀害水濑祈，虽然嫌犯立即被逮捕，但此事也导致原本预定于12月在台湾举办的现场活动、3单发售纪念活动以及此后的各项现场活动被取消。\r\n2017年7月3日，因合约到期，离开Sony Music Artists，事务所网站下的官方粉丝俱乐部也陆续关闭。\r\n2017年9月1日起加入AXL ONE。\r\n2017年12月2日在东京国际forum Hall A举行了第一次个人演唱会。\r\n2018年5月23日，发售第二张个人专辑《BLUE COMPASS》。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

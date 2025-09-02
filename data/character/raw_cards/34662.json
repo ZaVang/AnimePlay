@@ -1,0 +1,76 @@
+{
+    "id": 34662,
+    "name": "市原仁奈",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/45/0c/34662_crt_QN2U6.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/0c/34662_crt_QN2U6.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/0c/34662_crt_QN2U6.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/45/0c/34662_crt_QN2U6.jpg"
+    },
+    "summary": "喜欢收集布偶服的9岁女孩，橘色长发，是游戏中目前(2013年9月)最年少的角色之一。\r\n\r\n虽然是活动奖励卡登场，但是角色人气很高。由于卡片没有再版，当时的卡片现在属于高价格区。\r\n\r\n称双叶杏为「杏姐姐(杏おねーさん)」，经常黏在一起(二次创作?)。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "市原仁奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "市原 仁奈"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いちはら にな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ichihara Nina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月8日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "128cm"
+        },
+        {
+            "key": "体重",
+            "value": "29kg"
+        },
+        {
+            "key": "BWH",
+            "value": "61/57/67"
+        },
+        {
+            "key": "年龄",
+            "value": "9岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 8,
+    "stat": {
+        "comments": 26,
+        "collects": 80
+    },
+    "anime_ids": [
+        376703
+    ]
+}

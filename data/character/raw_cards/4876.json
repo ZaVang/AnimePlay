@@ -1,0 +1,68 @@
+{
+    "id": 4876,
+    "name": "乃木流架",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/77/bd/4876_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/bd/4876_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/bd/4876_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/77/bd/4876_crt_anidb.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "乃木流架"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "乃木 流架"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "のぎ るか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nogi Ruka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月16日"
+        },
+        {
+            "key": "身高",
+            "value": "140cm"
+        },
+        {
+            "key": "体重",
+            "value": "35kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 16,
+    "stat": {
+        "comments": 5,
+        "collects": 14
+    },
+    "anime_ids": [
+        2257
+    ]
+}

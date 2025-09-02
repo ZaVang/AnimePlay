@@ -1,0 +1,64 @@
+{
+    "id": 11300,
+    "name": "上杉達也",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/53/ec/11300_crt_Ej5ef.jpg?r=1610523255",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/ec/11300_crt_Ej5ef.jpg?r=1610523255",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/ec/11300_crt_Ej5ef.jpg?r=1610523255",
+        "grid": "https://lain.bgm.tv/pic/crt/g/53/ec/11300_crt_Ej5ef.jpg?r=1610523255"
+    },
+    "summary": "故事刚开始与和也相反，缺乏运动。没有确切理由去与和也竞争。达也潜在能力被忽视，经由2年的练习成为一个一流的棒球选手。和也死亡后2年，成为甲子园胜利投手。\r\n中学时是回家社，高中时被佐知子邀请参加棒球队。但后来又放弃了]棒球]，再原田劝诱下加入了拳击部。拳击动态视力与天生的运动神经，并克服了艰辛训练成为新人战优胜者。在和也去世后，棒球队队长黑木正试图寻找一个王牌投手。 经过柏叶英二郎严格特训后通过地区预赛，甲子园初出场初优胜使达也成为焦点。大学时期到外国(独立联盟)闯荡。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "上杉达也"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "上杉 達也"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "うえすぎ たつや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Uesugi Tatsuya"
+                },
+                {
+                    "k": "昵称",
+                    "v": "笨哥哥"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "6月16日"
+        },
+        {
+            "key": "引用来源",
+            "value": "维基百科"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 16,
+    "stat": {
+        "comments": 13,
+        "collects": 62
+    },
+    "anime_ids": [
+        2741
+    ]
+}

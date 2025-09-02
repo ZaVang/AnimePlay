@@ -1,0 +1,667 @@
+{
+    "id": 376703,
+    "type": 2,
+    "name": "アイドルマスター シンデレラガールズ U149",
+    "name_cn": "偶像大师 灰姑娘女孩 U149",
+    "summary": "某一个午后。迎来暑假的橘爱丽丝，进入了某个事务所的房间。在那里，她见到了年级和性格都大相径庭的8位少女们。房间的名字是“第3艺能课”。杂乱狭小的房间里，小小（149cm以下）的女孩子们怀揣着梦想。我们作为偶像的故事，也从此开始了呢。接下来登场的是如同白马王子一般的制作人！……才怪，而是刚刚成为制作人的矮小青年。仅仅拥有干劲的新晋制作人，一切都从零起步的少女们。烦恼着“为什么工作会那么难”，第二天又能若无其事的欢笑，手牵着手不断向上攀登。爱丽丝一行人，能终将达到她们梦想中的那个舞台吗？这是源自“偶像大师灰姑娘女孩”的全新故事。“一呐，长大了之后，会变成什么样呢！？”\r\n",
+    "nsfw": false,
+    "locked": false,
+    "date": "2023-04-05",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/58/c1/376703_g5559.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/58/c1/376703_g5559.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/58/c1/376703_g5559.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/58/c1/376703_g5559.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/58/c1/376703_g5559.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "偶像大师 灰姑娘女孩 U149"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "The Idolmaster: Cinderella Girls - U149",
+                    "k": null
+                },
+                {
+                    "v": "THE IDOLM@STER CINDERELLA GIRLS U149",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2023年4月5日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期三"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://cinderella-u149-anime.idolmaster-official.jp/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京"
+        },
+        {
+            "key": "其他电视台",
+            "value": "BS11"
+        },
+        {
+            "key": "播放结束",
+            "value": "2023年6月28日"
+        },
+        {
+            "key": "导演",
+            "value": "岡本学"
+        },
+        {
+            "key": "Copyright",
+            "value": "©Bandai Namco Entertainment Inc. / PROJECT U149"
+        },
+        {
+            "key": "原作",
+            "value": "バンダイナムコエンターテインメント"
+        },
+        {
+            "key": "原案",
+            "value": "「アイドルマスター シンデレラガールズ U149」廾之（サイコミ連載）"
+        },
+        {
+            "key": "人物设定",
+            "value": "井川典恵"
+        },
+        {
+            "key": "脚本",
+            "value": "村山沖"
+        },
+        {
+            "key": "系列构成",
+            "value": "村山沖"
+        },
+        {
+            "key": "背景美术",
+            "value": "概念美术：大久保錦一；"
+        },
+        {
+            "key": "设定",
+            "value": "野田猛、小田崎恵子、中村倫子、渡部尭皓、槙田路子"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "Sizuk(俊龍)、渡部チェル"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "俊龍、渡部チェル"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "Mahiro、朝倉路"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "U149 [橘ありす（CV：佐藤亜美菜）、櫻井桃華（CV：照井春佳）、赤城みりあ（CV：黒沢ともよ）、的場梨沙（CV：集貝はな）、結城晴（CV：小市眞琴）、 佐々木千枝（CV：今井麻夏）、龍崎薫（CV：春瀬なつみ）、市原仁奈（CV：久野美咲）、古賀小春（CV：小森結梨）]"
+        },
+        {
+            "key": "CG 导演",
+            "value": "石川寛貢、榊正宗、神谷宣幸"
+        },
+        {
+            "key": "製作",
+            "value": "PROJECT U149（バンダイナムコエンターテインメント、Cygames、日本コロムビア）"
+        },
+        {
+            "key": "企画",
+            "value": "藤原孝史、渡邊耕一、北條真；企画协力：波多野公士"
+        },
+        {
+            "key": "执行制片人",
+            "value": "田中快、竹中信広、柏谷智浩"
+        },
+        {
+            "key": "制片人",
+            "value": "川口崚太、冨田功一郎、秋田穣、柏谷智浩"
+        },
+        {
+            "key": "助理制片人",
+            "value": "武井由香、浅野由理奈、伊香賀進、近藤成一；副制片人：狭間和歌子"
+        },
+        {
+            "key": "音乐制作",
+            "value": "日本コロムビア"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "柏谷智浩"
+        },
+        {
+            "key": "摄影监督",
+            "value": "関谷能弘；辅佐：三好眞樹雄"
+        },
+        {
+            "key": "监修",
+            "value": "長町英樹[顾问]、本田良寛[企划监修]"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "上田華子、寺本将悟"
+        },
+        {
+            "key": "分镜",
+            "value": "岡本学(1)、高嶋宏之(2 ,7)、高橋正典(3)、河原龍太(4)、長町英樹(5)、伊礼えり(6)、片岡史旭(8 ,13.2)、諸冨直也(9 ,13.1)、河森正治(12)、鈴木健太郎(12)、小林敦(11)"
+        },
+        {
+            "key": "演出",
+            "value": "片岡史旭(1 ,8 ,13.2)、高嶋宏之(2)、高橋正典(3 ,10)、河原龍太(4)、長町英樹(5 ,10)、伊礼えり(6)、藍崎灯(7)、諸冨直也(9 ,13.1)、白羽鬨(10)、小林敦(11)、みうらたけひろ(12)、井端義秀(12)"
+        },
+        {
+            "key": "作画监督",
+            "value": "井川典恵、須川康太、槙田路子、高妻匠、末田晃大、小池智史、佐々木洋也、野田猛、長沼智也、栗原裕明、伊礼えり、岡崎滉、才田圭之介、鹿戸大介、滝吾郎、保村成、蔡泓鏗、浜平蒼生、林由香、矢永沙織、小田崎恵子、杉薗朗子、秋月彩、桐谷真咲、冨永一仁、中島順、ハニュー、冨谷美香、落合良亮、佐々木啓悟、長町英樹、原誠、諸冨直也；LIVE部分作监：渡部尭皓、落合良亮、小池智史、矢永沙織、浜平蒼生、伊礼えり、小田崎恵子、佐々木洋也、須川康太、槙田路子、井川典恵、高妻匠"
+        },
+        {
+            "key": "制作管理",
+            "value": "近藤成一；辅佐：日吉拓也"
+        },
+        {
+            "key": "作画监督助理",
+            "value": "井川典恵、小池智史、佐々木洋也、末田晃大、槙田路子、佐々木貴宏、藤優子、高妻匠、岡崎滉、雷韵、陈建南、熊俊杰、杨烈骏、冨谷美香、雲母ゆき、時乃キノ、金到暎、原誠、佐々木美穂、杉薗朗子、土佐岡加奈、古橋聡"
+        },
+        {
+            "key": "动画制片人",
+            "value": "上内健太"
+        },
+        {
+            "key": "原画",
+            "value": "三宮昌太、須川康太、高嶋宏之、中小路佳毅、野田猛、小田崎恵子、相音光、井口聖、大久保俊介、渡部尭皓、中井杏、藍崎灯、蔡泓鏗、TOMATO、Niii、小池智史、淵本宗平、けろりら、諸冨直也、李明振、村田駿、伊礼えり、Moaang、じゅら、高野徹、木曽勇太、今西亨、式地幸喜、小畑賢、中島順、佐藤利幸、陳昇孟"
+        },
+        {
+            "key": "特别鸣谢",
+            "value": "今村亮[6话 TP修正]、中川浩二[应援协力]"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 15,
+    "rating": {
+        "rank": 495,
+        "total": 6724,
+        "count": {
+            "one": 11,
+            "two": 6,
+            "three": 9,
+            "four": 36,
+            "five": 116,
+            "six": 501,
+            "seven": 1817,
+            "eight": 2952,
+            "nine": 869,
+            "ten": 407
+        },
+        "score": 7.7
+    },
+    "collection": {
+        "wish": 2147,
+        "collect": 8899,
+        "doing": 1947,
+        "on_hold": 748,
+        "dropped": 354
+    },
+    "tags": [
+        {
+            "name": "CygamesPictures",
+            "count": 1649
+        },
+        {
+            "name": "偶像大师",
+            "count": 1619
+        },
+        {
+            "name": "偶像",
+            "count": 1280
+        },
+        {
+            "name": "2023年4月",
+            "count": 1266
+        },
+        {
+            "name": "冈本学",
+            "count": 1149
+        },
+        {
+            "name": "萝莉",
+            "count": 1100
+        },
+        {
+            "name": "TV",
+            "count": 1008
+        },
+        {
+            "name": "漫画改",
+            "count": 762
+        },
+        {
+            "name": "2023",
+            "count": 594
+        },
+        {
+            "name": "音乐",
+            "count": 356
+        },
+        {
+            "name": "漫改",
+            "count": 322
+        },
+        {
+            "name": "幼女偶像",
+            "count": 303
+        },
+        {
+            "name": "岡本学",
+            "count": 203
+        },
+        {
+            "name": "铁窗P",
+            "count": 115
+        },
+        {
+            "name": "桃华妈妈",
+            "count": 90
+        },
+        {
+            "name": "日常",
+            "count": 54
+        },
+        {
+            "name": "日本",
+            "count": 47
+        },
+        {
+            "name": "萌",
+            "count": 34
+        },
+        {
+            "name": "治愈",
+            "count": 26
+        },
+        {
+            "name": "幼女",
+            "count": 15
+        },
+        {
+            "name": "2023年",
+            "count": 14
+        },
+        {
+            "name": "百合",
+            "count": 12
+        },
+        {
+            "name": "村山沖",
+            "count": 12
+        },
+        {
+            "name": "cygames",
+            "count": 11
+        },
+        {
+            "name": "IM@S",
+            "count": 10
+        },
+        {
+            "name": "TVA",
+            "count": 10
+        },
+        {
+            "name": "原创",
+            "count": 9
+        },
+        {
+            "name": "季番",
+            "count": 9
+        },
+        {
+            "name": "U149",
+            "count": 9
+        },
+        {
+            "name": "4月",
+            "count": 8
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "音乐"
+    ],
+    "series": false,
+    "main_character_ids": [
+        28580,
+        34662,
+        35277,
+        35468,
+        36220,
+        36222,
+        39067,
+        39226,
+        45923,
+        53685
+    ],
+    "main_characters": [
+        {
+            "id": 28580,
+            "name": "赤城みりあ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/44/d8/28580_crt_V4522.jpg?r=1682438140",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/d8/28580_crt_V4522.jpg?r=1682438140",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/d8/28580_crt_V4522.jpg?r=1682438140",
+                "grid": "https://lain.bgm.tv/pic/crt/g/44/d8/28580_crt_V4522.jpg?r=1682438140"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9560,
+                    "name": "黒沢ともよ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964"
+                    },
+                    "short_summary": "黒沢 ともよ（くろさわ ともよ、1996年4月10日 - ）は、日本の女性女優、声優、歌手。マウスプロモーション所属。埼玉県秩父市出身。\r\n\r\n3歳頃から演技の勉強を始め、2003年頃から子役としてテレビドラマ、CM、舞台へ出演。\r\n2008年よりSound Horizonのサポートメンバーとして参加。6th Story CD『Moira』のPV「冥王 -Θανατος-」、及びコンサート「Sound Horizon 6th Story Concert Moira 〜其れでも、お征きなさい仔等よ〜」に幼少期アルテミシア役で出演。いずれも発声無しの子役（モーションアクター）としての出演であったが、2010年の7th Story CD『Märchen』ではボーカル・ボイスアクターなども務めている。\r\n2010年、劇場アニメ『宇宙ショーへようこそ』の小山夏紀役にて声優デビュー。その後、テレビアニメ等、活躍の幅を広げている。\r\n東京児童劇団を退団後、2012年よりマウスプロモーションに所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 34662,
+            "name": "市原仁奈",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/45/0c/34662_crt_QN2U6.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/0c/34662_crt_QN2U6.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/0c/34662_crt_QN2U6.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/45/0c/34662_crt_QN2U6.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 11523,
+                    "name": "久野美咲",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/57/d9/11523_prsn_YfJJj.jpg?r=1664735208",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/57/d9/11523_prsn_YfJJj.jpg?r=1664735208",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/57/d9/11523_prsn_YfJJj.jpg?r=1664735208",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/57/d9/11523_prsn_YfJJj.jpg?r=1664735208"
+                    },
+                    "short_summary": "久野 美咲（くの みさき、1993年1月19日 - ）は、日本の声優、舞台女優。東京都出身。身長150cm、血液型はA型。大沢事務所所属。\r\n声優としての代表作に、『世界征服〜謀略のズヴィズダー〜』（星宮ケイト）、『七つの大罪』（ホーク）、『3月のライオン』（川本モモ）などがある。\r\n\r\n子役として『ミュージカル オズの魔法使い』『放浪記』などの舞台に出演していた。2003年に韓国映画『ボイス』の吹き替えで声優デビューする。デビュー当初は外国映画の吹き替えで活躍していたが、2010年以降はアニメやゲーム作品への出演が増えている。声質は「幼い子のリアルな声」「独特の存在感のある声」と評されている。\r\n\r\n2010年の劇場版アニメ『いばらの王』の監督である片山一良に「普段は大人しくて全然しゃべらない子なのに、本番になるとガラッと変わる。」と言われた。収録の際に久野がアドリブで入れた息だけの演技があまりにも良かったため、スタッフは感心してカットせずに採用したという。同作品と『ブラック★ロックシューター』で姉弟として共演した花澤香菜には「現場ではずっと隅っこに座っていて、独特な声で可愛かった。」と言われている。また沢城みゆきからは「マトの弟くんの久野ちゃんは自分を持っていてすごい。」とコメントされている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 35277,
+            "name": "櫻井桃華",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1e/a9/35277_crt_V6yKj.jpg?r=1688968900",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/a9/35277_crt_V6yKj.jpg?r=1688968900",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/a9/35277_crt_V6yKj.jpg?r=1688968900",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1e/a9/35277_crt_V6yKj.jpg?r=1688968900"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13177,
+                    "name": "照井春佳",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/41/87/13177_prsn_Zomq0.jpg?r=1512661684",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/87/13177_prsn_Zomq0.jpg?r=1512661684",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/87/13177_prsn_Zomq0.jpg?r=1512661684",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/41/87/13177_prsn_Zomq0.jpg?r=1512661684"
+                    },
+                    "short_summary": "照井 春佳（てるい はるか、1987年3月7日 - ）は、日本の女性声優、ナレーター。青二プロダクション所属。岩手県出身。A&Gアカデミー卒業。血液型はA型。\r\n\r\n幼い頃観ていた『らんま1/2』での林原めぐみの演技に感銘を受け、小学4年生の時に声優になることを決意。その後中学時代に、とある劇団での舞台経験を経て、高校でも演劇部に所属するなど日頃から芝居と接する環境下にあったという。A&Gアカデミーで演技を学び、2009年より『智一・美樹のラジオビッグバン』約1年間アシスタントを務める。 デビュー当時は飲食店、アパレル、コールセンターのアルバイトをしながら生計を立てたという。\r\n\r\n愛称はぱるにゃす。ふわふわっとした声が特徴。\r\n趣味はカラオケ、散歩。\r\n姉がいる。彼女は『未確認で進行形』の紅緒を思わせるシスコン的な性格だが、紅緒から残念な部分を抜いたしっかりした姉だという。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 35468,
+            "name": "橘ありす",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a0/28/35468_crt_93Lng.jpg?r=1688636456",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a0/28/35468_crt_93Lng.jpg?r=1688636456",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a0/28/35468_crt_93Lng.jpg?r=1688636456",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a0/28/35468_crt_93Lng.jpg?r=1688636456"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7075,
+                    "name": "佐藤亜美菜",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ab/6c/7075_prsn_nYYYV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/6c/7075_prsn_nYYYV.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/6c/7075_prsn_nYYYV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ab/6c/7075_prsn_nYYYV.jpg"
+                    },
+                    "short_summary": "佐藤 亜美菜（さとう あみな、1990年10月16日 - ）は、日本の声優、ナレーター、ラジオパーソナリティーであり、女性アイドルグループAKB48の元メンバー。東京都出身。AKSからアトリエ・ダンカンを経てAKSに戻り、2014年6月1日より大沢事務所に所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 36220,
+            "name": "佐々木千枝",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e8/af/36220_crt_2vVZj.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/af/36220_crt_2vVZj.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/af/36220_crt_2vVZj.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e8/af/36220_crt_2vVZj.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 15780,
+                    "name": "今井麻夏",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0b/71/15780_prsn_0LolD.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/71/15780_prsn_0LolD.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/71/15780_prsn_0LolD.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0b/71/15780_prsn_0LolD.jpg"
+                    },
+                    "short_summary": "日本の女性声優。アイムエンタープライズ所属。\r\n\r\n趣味・スポーツ：ダンス、スノーボード\r\n特技：イラストを描く、スキー、腹筋\r\n芸歴：日本ナレーション演技研究所、ヴォアレーヴ\r\n\r\n主な出演歴\r\n\r\n【吹替え】\r\n　・ジェシー！（エマ）\r\n　・謀りの後宮（孟芙）\r\n　・スイート・ライフ・オン・クルーズ（マヤ）\r\n　・WITHOUT A TRACE/FBI 失踪者を追え!\r\n　・名探偵モンク4\r\n　・ドリームズ・カム・トゥルー\r\n　・アンナと王様\r\n　・ビリー＆マンディ\r\n　・Akeelah and the Bee\r\n\r\n【アニメ】\r\n　・アイドルマスター シンデレラガールズ（佐々木千枝）\r\n　・冴えない彼女の育てかた\r\n　・黒魔女さんが通る！！（桜都愛花）\r\n　・ダ・カーポⅢ\r\n　・リトルバスターズ！\r\n　・好きっていいなよ。\r\n　・輪廻のラグランジェ\r\n\r\n【ゲーム】\r\n　・ＴＯＫＹＯ 7ＴＨ ＳＩＳＴＥＲＳ（久遠寺シズカ）\r\n\r\n【ラジオ】\r\n　・智一・美樹のラジオビックバン（7代目アシスタント）",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 36222,
+            "name": "龍崎薫",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/81/0e/36222_crt_mYjJt.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/0e/36222_crt_mYjJt.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/0e/36222_crt_mYjJt.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/81/0e/36222_crt_mYjJt.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19808,
+                    "name": "春瀬なつみ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/eb/19808_prsn_luu17.jpg?r=1738769269",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/eb/19808_prsn_luu17.jpg?r=1738769269",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/eb/19808_prsn_luu17.jpg?r=1738769269",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/eb/19808_prsn_luu17.jpg?r=1738769269"
+                    },
+                    "short_summary": "趣味・特技 読書・映画鑑賞・音楽鑑賞・フィギュアスケート観戦\r\n\r\n平成26年：プロ・フィット所属\r\n平成27年：フリーランスの期間を経る\r\n平成30年：マウスプロモーション所属",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 39067,
+            "name": "的場梨沙",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4e/de/39067_crt_lGhKn.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/de/39067_crt_lGhKn.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/de/39067_crt_lGhKn.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4e/de/39067_crt_lGhKn.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 35512,
+                    "name": "集貝はな",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/04/b1/35512_prsn_ynnNg.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/b1/35512_prsn_ynnNg.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/b1/35512_prsn_ynnNg.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/04/b1/35512_prsn_ynnNg.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 39226,
+            "name": "結城晴",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c7/21/39226_crt_m4r3Q.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/21/39226_crt_m4r3Q.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/21/39226_crt_m4r3Q.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c7/21/39226_crt_m4r3Q.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 20631,
+                    "name": "小市眞琴",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e2/e6/20631_prsn_bTC2c.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/e6/20631_prsn_bTC2c.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/e6/20631_prsn_bTC2c.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e2/e6/20631_prsn_bTC2c.jpg"
+                    },
+                    "short_summary": "小市真琴是日本的女性声优、舞台演员、编舞家，东京都出身。隶属于stay luck。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 45923,
+            "name": "古賀小春",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8f/69/45923_crt_osDGb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/69/45923_crt_osDGb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/69/45923_crt_osDGb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8f/69/45923_crt_osDGb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 53122,
+                    "name": "小森結梨",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/71/4f/53122_prsn_drTqH.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/4f/53122_prsn_drTqH.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/4f/53122_prsn_drTqH.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/71/4f/53122_prsn_drTqH.jpg"
+                    },
+                    "short_summary": "神奈川県出身，俳协所属声优。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 53685,
+            "name": "プロデューサー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/27/14/53685_crt_o1QQQ.jpg?r=1680782461",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/14/53685_crt_o1QQQ.jpg?r=1680782461",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/14/53685_crt_o1QQQ.jpg?r=1680782461",
+                "grid": "https://lain.bgm.tv/pic/crt/g/27/14/53685_crt_o1QQQ.jpg?r=1680782461"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 22698,
+                    "name": "米内佑希",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c0/37/22698_prsn_P7fpq.jpg?r=1459702345",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/37/22698_prsn_P7fpq.jpg?r=1459702345",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/37/22698_prsn_P7fpq.jpg?r=1459702345",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c0/37/22698_prsn_P7fpq.jpg?r=1459702345"
+                    },
+                    "short_summary": "誕生日：12月23日\r\n出身地：秋田県\r\n方言：秋田弁\r\n趣味・特技：英会話、DVD鑑賞",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

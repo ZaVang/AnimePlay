@@ -1,0 +1,61 @@
+{
+    "id": 6527,
+    "name": "李小狼",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/08/02/6527_crt_tZMv9.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/02/6527_crt_tZMv9.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/02/6527_crt_tZMv9.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/08/02/6527_crt_tZMv9.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "李小狼"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "王小明"
+                },
+                {
+                    "k": "日文名",
+                    "v": "李小狼"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Li Syaoran"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "7月13日"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 13,
+    "stat": {
+        "comments": 29,
+        "collects": 147
+    },
+    "anime_ids": [
+        1940,
+        183891
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 5166,
+    "name": "アグモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/65/37/5166_crt_XjsUs.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/37/5166_crt_XjsUs.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/37/5166_crt_XjsUs.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/65/37/5166_crt_XjsUs.jpg"
+    },
+    "summary": "成长后可以双足步行，外貌如小型恐龙般的爬虫类型数码宝贝。还在成长途中，所以力量不强，但个性相当凶猛，天不怕地不怕。双手双腿生有锐利的硬爪，能在战斗中发挥威力。可以预见它将能进化成拥有力量的伟大数码宝贝。必杀技是从口中吐出火炎吹息攻击敌人的『小型火焰』。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "亚古兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Agumon"
+                },
+                {
+                    "k": "韩文名",
+                    "v": "아구몬"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference/detail.php?directory_name=agumon"
+        },
+        {
+            "key": "等级",
+            "value": "成长期"
+        },
+        {
+            "key": "类型",
+            "value": "爬虫类型"
+        },
+        {
+            "key": "属性",
+            "value": "疫苗"
+        },
+        {
+            "key": "必杀技",
+            "value": "小型火焰"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 24
+    },
+    "anime_ids": [
+        3128
+    ]
+}

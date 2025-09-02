@@ -1,0 +1,60 @@
+{
+    "id": 34560,
+    "name": "戸崎優",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8f/2b/34560_crt_z213y.jpg?r=1447318982",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/2b/34560_crt_z213y.jpg?r=1447318982",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/2b/34560_crt_z213y.jpg?r=1447318982",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8f/2b/34560_crt_z213y.jpg?r=1447318982"
+    },
+    "summary": "厚生労働省から派遣された亜人担当の職員。ミントのタブレットを常に持ち歩いている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "户崎优"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "戸崎 優"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "とさき ゆう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tosaki Yuu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "182cm"
+        },
+        {
+            "key": "体重",
+            "value": "68kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 14,
+        "collects": 10
+    },
+    "anime_ids": [
+        146093
+    ]
+}

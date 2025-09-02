@@ -1,0 +1,68 @@
+{
+    "id": 1504,
+    "name": "白鍾雙樹",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b4/82/1504_crt_0EPYV.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/82/1504_crt_0EPYV.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/82/1504_crt_0EPYV.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b4/82/1504_crt_0EPYV.jpg"
+    },
+    "summary": "性格天真烂漫的双树，从小体弱多病，和妹妹正相反，两姐妹之间的心灵感应很强烈!\r\n\r\n•原作\r\n（待补充）\r\n•双恋\r\n（待补充）\r\n•双恋Alternative\r\n　　年龄：15岁、生日：11月23日、血型：AB型\r\n　　女主角之一，体质虚弱，擅长家务料理。自两年前来到双叶侦探事务所后，一直担任恋太郎的助手，并与恋太郎半处于同居状态。喜欢恋太郎。有着绿色的眼睛及一头系成双马尾的小麦色长发。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "白钟双树"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しろがね そうじゅ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shirogane Souju"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "151cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://zh.wikipedia.org/wiki/%E9%9B%99%E6%88%802"
+        },
+        {
+            "key": "生日（原作）",
+            "value": "8月8日"
+        },
+        {
+            "key": "生日（オルタナティブ）",
+            "value": "11月23日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 43
+    },
+    "anime_ids": [
+        2643
+    ]
+}

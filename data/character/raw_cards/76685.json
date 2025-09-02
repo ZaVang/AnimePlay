@@ -1,0 +1,44 @@
+{
+    "id": 76685,
+    "name": "すう",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4a/05/76685_crt_Zef2f.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4a/05/76685_crt_Zef2f.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4a/05/76685_crt_Zef2f.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4a/05/76685_crt_Zef2f.jpg"
+    },
+    "summary": "淡蓝色的小猫。戴着眼镜，头脑过人十分可靠。琴子的搭档。\r\n\r\n水色の子猫。眼鏡キャラで、頭が良くて頼りになる。ことこのパートナー。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小舒"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Suu"
+                }
+            ]
+        },
+        {
+            "key": "生日",
+            "value": "1月25日"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 25,
+    "stat": {
+        "comments": 0,
+        "collects": 2
+    },
+    "anime_ids": [
+        289829
+    ]
+}

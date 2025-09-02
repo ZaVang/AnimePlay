@@ -1,0 +1,47 @@
+{
+    "id": 170380,
+    "name": "ソラ・リュウヨウ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b6/45/170380_crt_pVV2C.jpg?r=1738430146",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/45/170380_crt_pVV2C.jpg?r=1738430146",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/45/170380_crt_pVV2C.jpg?r=1738430146",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b6/45/170380_crt_pVV2C.jpg?r=1738430146"
+    },
+    "summary": "光のソードアイズ。光の青デッキの使い手。修理工で格闘家スタイル。熱くなると愛を語る。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "空・龙阳"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "https://www.bn-pictures.co.jp/ba ... s/character/04.html"
+                }
+            ]
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        45337
+    ]
+}

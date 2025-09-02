@@ -1,0 +1,57 @@
+{
+    "id": 21664,
+    "name": "アカツキ／羽倉静",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b7/05/21664_crt_AgjGY.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/05/21664_crt_AgjGY.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/05/21664_crt_AgjGY.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b7/05/21664_crt_AgjGY.jpg"
+    },
+    "summary": "人族，主职业为刺客，副职业为追踪者。自称\"主公的忍者\"，推测与城惠同年。\r\n萝莉体型，初期为\"男性\"玩家，受城惠给予的限定道具而改变回自身应有的外型\r\n从此以后发誓追随城惠以报答恩情，随着故事的进展而真正的爱上城惠\r\n在\"秋叶原的星期天\"中与实莉发生城惠争夺战(天秤祭的逛街权)\r\n外号：\"城惠直属的暗杀者\"，\"城惠身边的美少女\"",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "晓／羽仓静"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "羽倉 静"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はねくら しずか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hanekura Shizuka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月7日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 7,
+    "stat": {
+        "comments": 21,
+        "collects": 138
+    },
+    "anime_ids": [
+        64140,
+        100517
+    ]
+}

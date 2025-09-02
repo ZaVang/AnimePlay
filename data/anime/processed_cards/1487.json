@@ -1,0 +1,251 @@
+{
+    "id": 1487,
+    "name": "樱兰高校男公关部",
+    "image_path": "data/images/anime/1487.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "这是一个发生在贵族学校的故事。私立樱兰高校是日本上流社会的一个缩影。而这个学校最闻名的社团之一，就是六个英俊不凡的男子组成的男公关部。而庶民春绯虽然得以凭借奖学金以特优生的身份进入这个高校，却因为一次偶遇加入公关部工作。青春，友情，爱情，感动，点亮了樱兰高校男公关部，在一系列的爆笑事件中，不一样的感情逐渐萌芽。这的确是一部无忧无虑的青春喜剧童话",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "校园",
+        "后宫",
+        "TV",
+        "日本",
+        "漫画改",
+        "少女向"
+    ],
+    "date": "2006-04-04",
+    "rating_rank": 636,
+    "rating_score": 7.6,
+    "rating_total": 5189,
+    "main_character_ids": [
+        2501,
+        2502,
+        2503,
+        2504,
+        25789,
+        26111,
+        38096
+    ],
+    "main_characters": [
+        {
+            "id": 2501,
+            "name": "須王環",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/66/e7/2501_crt_4YGsG.jpg?r=1625822605",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/e7/2501_crt_4YGsG.jpg?r=1625822605",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/e7/2501_crt_4YGsG.jpg?r=1625822605",
+                "grid": "https://lain.bgm.tv/pic/crt/g/66/e7/2501_crt_4YGsG.jpg?r=1625822605"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4697,
+                    "name": "宮野真守",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307"
+                    },
+                    "short_summary": "小学生時代から劇団ひまわりに所属し、主に舞台などで活動した。高校生時代に海外ドラマ『私はケイトリン』の吹替で声優デビューする。PS2用ゲーム『キングダム ハーツ』のリク役で注目を集め、その後は、『機動戦士ガンダム00』や『DEATH NOTE』の主役を務めるなど、数々の人気作品に出演している。\r\n第1回声優アワード主演男優賞および新人賞にノミネートされた（『DEATH NOTE』夜神月役）。 2008年の第2回声優アワード主演男優賞受賞。東京国際アニメフェア2008・第7回東京アニメアワード個人賞（声優部門）受賞（『DEATH NOTE』『機動戦士ガンダム00』）。 2008年12月1日、劇団ひまわりのHPで結婚と子供を授かったことを公表した。結婚相手や子供の性別は非公開。 2011年、ノン子とのび太のアニメスクランブルにて第21回アニメグランプリ最優秀男性声優賞受賞。 2012年、第6回声優アワードにて助演男優賞と歌唱賞（後者はST☆RISHとして）、日刊スポーツ第1回日刊アニメグランプリにてMIP男性声優賞、アニメージュ第34回アニメグランプリ声優部門においてグランプリを受賞。\r\n\r\n2025年6月8日宣布与向日葵剧团合约期满退团，次日宣布加入研音。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 2502,
+            "name": "鳳鏡夜",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c8/93/2502_crt_7B8Qq.jpg?r=1625822798",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/93/2502_crt_7B8Qq.jpg?r=1625822798",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/93/2502_crt_7B8Qq.jpg?r=1625822798",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c8/93/2502_crt_7B8Qq.jpg?r=1625822798"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4758,
+                    "name": "松風雅也",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ee/e3/4758_prsn_mS13M.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/e3/4758_prsn_mS13M.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/e3/4758_prsn_mS13M.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ee/e3/4758_prsn_mS13M.jpg"
+                    },
+                    "short_summary": "松风 雅也（1976年9月9日－），本名为渡边政也，血型Ｏ型，日本男性声优、演员、艺人，生于福岛县（在东京长大）。已婚。目前所属事务所是青二Production。\r\n作为声优的代表作是《地狱少女》（一目连）、《樱兰高校男公关部》（凤镜夜）以及《机动战士钢弹 铁血的孤儿》（盖里奥·巴特韦恩）。\r\n爱称为“番长”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 2503,
+            "name": "常陸院馨",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/69/a4/2503_crt_JVVZl.jpg?r=1620404696",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/a4/2503_crt_JVVZl.jpg?r=1620404696",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/a4/2503_crt_JVVZl.jpg?r=1620404696",
+                "grid": "https://lain.bgm.tv/pic/crt/g/69/a4/2503_crt_JVVZl.jpg?r=1620404696"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4594,
+                    "name": "織田圭祐",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/28/65/4594_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/65/4594_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/65/4594_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/28/65/4594_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優。ケンユウオフィス所属。\r\n青森県弘前市出身。 かつては東京アナウンス学院・アトリエピーチ・劇団すごろく・アーツビジョンに所属していた。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 2504,
+            "name": "銛之塚崇",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/19/92/2504_crt_Ym1xA.jpg?r=1625822745",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/92/2504_crt_Ym1xA.jpg?r=1625822745",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/92/2504_crt_Ym1xA.jpg?r=1625822745",
+                "grid": "https://lain.bgm.tv/pic/crt/g/19/92/2504_crt_Ym1xA.jpg?r=1625822745"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4719,
+                    "name": "桐井大介",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/da/2b/4719_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/2b/4719_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/2b/4719_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/da/2b/4719_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 25789,
+            "name": "藤岡ハルヒ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e9/a8/25789_crt_KhDYO.jpg?r=1625822551",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/a8/25789_crt_KhDYO.jpg?r=1625822551",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/a8/25789_crt_KhDYO.jpg?r=1625822551",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e9/a8/25789_crt_KhDYO.jpg?r=1625822551"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3877,
+                    "name": "坂本真綾",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d4/88/3877_prsn_VOY27.jpg?r=1574050572",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/88/3877_prsn_VOY27.jpg?r=1574050572",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/88/3877_prsn_VOY27.jpg?r=1574050572",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d4/88/3877_prsn_VOY27.jpg?r=1574050572"
+                    },
+                    "short_summary": "坂本真绫（さかもと まあや、1980年3月31日 - ），日本女声优、歌手、演员、电台主持。东京都板桥区出身，东京都立武蔵丘高等学校及东洋大学社会学部毕业，父亲是舞台照明家坂本义美。\r\n8岁进入儿童剧团，开始艺能活动，曾演唱广告歌、童谣，为外国电影剧集配音，出演电视节目等。15岁时，被音乐制作人菅野洋子发掘，真正地开始了音乐活动。16岁在歌坛出道。\r\n坂本真绫在音乐以外的领域也具有丰富的才能，广泛活跃在舞台表演、电台主持、电视节目主持、执笔等领域，被称为“才女”，她是现在日本乐坛少数的实力派之一。\r\n\r\n2011年8月13日，在网志上正式宣布和声优铃村健一在2011年8月8日结婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 26111,
+            "name": "常陸院光",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b9/74/26111_crt_NvsPW.jpg?r=1620404662",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/74/26111_crt_NvsPW.jpg?r=1620404662",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/74/26111_crt_NvsPW.jpg?r=1620404662",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b9/74/26111_crt_NvsPW.jpg?r=1620404662"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4311,
+                    "name": "鈴村健一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f5/9d/4311_prsn_3bBmY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/9d/4311_prsn_3bBmY.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/9d/4311_prsn_3bBmY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f5/9d/4311_prsn_3bBmY.jpg"
+                    },
+                    "short_summary": "鈴村 健一（すずむら けんいち、1974年9月12日 - ）は、日本の男性声優、ナレーター、歌手。インテンション代表取締役、同社所属。妻は声優、歌手の坂本真綾。\r\n\r\n1993年3月に大阪府立少路高等学校卒業後、代々木アニメーション学院、日本ナレーション演技研究所等を経て、1994年にテレビアニメ『マクロス7』のモーリー役でデビュー。以後、現在に至るまでアニメ、ゲーム、ドラマCD、ラジオパーソナリティ、音楽活動など様々な分野で活躍する。\r\n2008年3月8日に開催された第2回声優アワードにて、ベストパーソナリティ賞・シナジー賞（『仮面ライダー電王』）をダブル受賞。同年10月8日、ランティスよりメジャーデビュー。\r\n2011年8月13日、ブログにて坂本真綾との結婚を報告。入籍日は8月8日。同年、第一回ミュージック・ジャケット大賞2011において準大賞を受賞（『CHRONICLE to the future』）。\r\n2012年3月2日に開催された第6回声優アワードにて、ST☆RISHとして歌唱賞を受賞。同年4月に長年所属していたアーツビジョンを離れ、翌月5月1日にアーツビジョン時代からのマネージャーである桑原敦と共に株式会社インテンションを立ち上げたことを報告。\r\n2016年3月12日に開催された第10回声優アワードでは助演男優賞とパーソナリティ賞をダブル受賞。同年5月12日に発表された第六回「ミュージック・ジャケット大賞2016」では特別賞を受賞した（『月と太陽のうた』）。\r\n\r\n愛称は「鈴（スズ）」、「スズケン」、「ムラケン（保志総一朗命名）」、「ピンピン（特定ラジオ内）」など。ただし、「ムラケン」と呼ぶのは命名者である保志のファンがほとんどで、実際のファンは「鈴（スズ）」と呼ぶことが多い。\r\nプロフィール上では大阪府出身（上京前に住んでいたのが大阪府）となっているが、生まれは新潟県。転勤が多い家庭で育ったことから、上記の新潟県、大阪府以外にも、岡山県岡山市、福岡県北九州市門司区などに住んでいたことがある。そのため「関西弁はあまり話せない」という一方で、素の喋りでは標準語イントネーションに近い関西弁訛りで話す場合が多い。\r\n幼い頃は喘息持ちで、呼吸法をマスターするため合気道を5年やっていた。かなりの偏食で、小学校中学年頃までは給食も満足に食べられなかったという。その反動からか大人になってからはグルメになったとのこと。\r\n大の犬好きで現在キャバリアとヨークシャー・テリアを飼っている。名前は「もも」と「アイビー」（ともにメス犬）といい、由来は花の名前から。洋服をネットで注文したりするなど溺愛している。その愛犬家ぶりをラジオなどで語り、リスナーから「犬の話はやめてください」との便りが届いたこともある。2016年4月1日放送の『鈴村健一のユニゾン!』にて愛犬アイビーが2016年1月に亡くなっていたことを明かした。\r\nアクション監督をしている4歳下の弟がいる、ラジオなどでも共演している。\r\n自他共に認める特撮ファンであり、特に『人造人間キカイダー』をこよなく愛している。特撮好きが高じて、『超人タイツ』という自身の番組内でオリジナルの特撮DVD・CDを制作するまでに至っている。初の特撮番組出演作『仮面ライダー電王』では、リュウタロス/仮面ライダー電王ガンフォームの声役に抜擢され、「仮面ライダーになりたいという夢が叶った」と喜んでいた。TVシリーズ、劇場版ともに敵怪人の声を兼任し、さらに主題歌も歌った。以後放送された仮面ライダーの劇場版等にも顔出しや声の出演で関わっている。\r\n必殺技は『肘からぷぅ』。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 38096,
+            "name": "埴之塚光邦",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e3/9a/38096_crt_29Prn.jpg?r=1625822660",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/9a/38096_crt_29Prn.jpg?r=1625822660",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/9a/38096_crt_29Prn.jpg?r=1625822660",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e3/9a/38096_crt_29Prn.jpg?r=1625822660"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3950,
+                    "name": "齋藤彩夏",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7d/26/3950_prsn_l0hz6.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/26/3950_prsn_l0hz6.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/26/3950_prsn_l0hz6.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7d/26/3950_prsn_l0hz6.jpg"
+                    },
+                    "short_summary": "在三岁的时候隶属于“剧团日本儿童”剧团，在上小学之前没有任何工作的经历。\r\n在小学二年级的时候（1996年）以电影版动画《厕所里的花子（トイレの花子さん）》首次亮相。在导演大地丙太郎试听的时候对她的演技大吃一惊而对她印象深刻。隔年在音乐舞台剧《安妮》演出。\r\n在小学四年级的时候，大地丙太郎与斋藤彩夏访谈并想让她“成为专业的声优，之后也可以继续待在舞台上”。之后一边以演员的身分演出舞台剧，一边以声优的身份在各式各样的动画中演出。但因为声音的本质像小孩子，而主要是以小孩子的角色为主。\r\n与坂本真绫共同演出《樱兰高校男公关部》中的埴之冢光邦而大受欢迎，并且称呼坂本真绫为“姐姐”。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

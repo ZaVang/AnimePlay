@@ -1,0 +1,60 @@
+{
+    "id": 64716,
+    "name": "露崎まひる",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/35/a0/64716_crt_KkkSk.jpg?r=1533455428",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/35/a0/64716_crt_KkkSk.jpg?r=1533455428",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/35/a0/64716_crt_KkkSk.jpg?r=1533455428",
+        "grid": "https://lain.bgm.tv/pic/crt/g/35/a0/64716_crt_KkkSk.jpg?r=1533455428"
+    },
+    "summary": "聖翔音楽学園　99期　俳優育成科　出席番号17番\r\n舞台の上では溌剌と歌って踊るが、普段は大人しくて引っ込み思案な舞台少女。華恋のルームメイトで、彼女の明るさ、前向きさにずっと憧れている。だがひかりという華恋の幼馴染みの出現に、心中複雑で……\r\n夢は「華恋ちゃんのパートナー！」",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "露崎真昼"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "露崎 まひる"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "つゆざき まひる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mahiru Tsuyuzaki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月4日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://revuestarlight.bushimo.jp/character/mahiru/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 4,
+    "stat": {
+        "comments": 191,
+        "collects": 315
+    },
+    "anime_ids": [
+        214265
+    ]
+}

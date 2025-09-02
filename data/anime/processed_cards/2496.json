@@ -1,0 +1,58 @@
+{
+    "id": 2496,
+    "name": "物怪",
+    "image_path": "data/images/anime/2496.jpg",
+    "points": 8.2,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "有一位在各地旅行并且携带斩魔剑斩除「妖怪」的卖药郎。\r\n\r\n只要在他以及剑的呼唤下，在卖药男的面前就会出现一个又一个妖怪。\r\n\r\n在那些因为恐惧而要求除去妖怪的人们的请求下，他会拿出这把剑并且告知人们，他需要清楚找出关于妖怪的三种要素：分别是因为人的因果，所形成的缘份（えにし）即是「形（かたち）」、事情的真相「真（まこと）」、心中的隐情「理（ことわり）」才能加以消灭。\r\n\r\n就在这个除妖之旅上，他前往的地方，也就是各式各样所谓的「人世」。并且在完成使命后，又忽然消失于大家眼前……。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "原创"
+    ],
+    "date": "2007-07-12",
+    "rating_rank": 126,
+    "rating_score": 8.2,
+    "rating_total": 3983,
+    "main_character_ids": [
+        10453
+    ],
+    "main_characters": [
+        {
+            "id": 10453,
+            "name": "薬売り",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/00/94/10453_crt_BJj7b.jpg?r=1722137711",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/00/94/10453_crt_BJj7b.jpg?r=1722137711",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/00/94/10453_crt_BJj7b.jpg?r=1722137711",
+                "grid": "https://lain.bgm.tv/pic/crt/g/00/94/10453_crt_BJj7b.jpg?r=1722137711"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4015,
+                    "name": "櫻井孝宏",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/06/29/4015_prsn_4TZox.jpg?r=1638448222"
+                    },
+                    "short_summary": "爱知县冈崎市老家的本业是米店，店名为“樱井米谷店”，在当地小有名气。\r\n初中时的一个冬天，怕冷的他擅自把酒精灯里的液体倒在理科实验室的桌子上，点起火取暖，引响了火灾报警器，被赶来的老师狠狠教训了一顿。于是在老师的国语课上捣乱报复，夸张地朗读课文，实在听不过去的老师求他：“拜托，别念得跟声优似的好不好！”——这话对那时的樱井冲击很大，给他留下了声优不过是连小孩子都做得来的简单工作的印象。所以高中毕业后，乐得找轻松的樱井选择进入东京的声优专科学校。待迈入这一行，他才吐血地发现，且不说成为佼佼者，就是普通从业者也得掌握高超的专业技巧。\r\n2005年8月《最终幻想VII：降临之子》于第62届威尼斯影展参展。樱井以担任主角配音的身份，成为继山寺宏一后第2位踏上星光大道的日本籍声优。\r\n虽然戴着眼镜，可是樱井二眼视力皆为2.0，植田佳奈笑称那是“骗人眼镜”。那付眼镜的意义是“梦想与希望与对声迷们的爱”。\r\n最初的错误是BL DRAMA制作社Inter communications（inter桑）的一张drama的BK上打成了樱井考宏，之后《无法逃离的背叛》某个活动的官方网站上亦把樱井孝宏的名字写成“樱井考宏”，所以有昵称考哥，而并非是他的名字中的“孝”字与“考”字很像才有此外号。\r\n桜井(sakurai)，桜井さん（sakurai san），sakura i san，樱13",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

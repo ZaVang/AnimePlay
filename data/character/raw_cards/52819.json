@@ -1,0 +1,84 @@
+{
+    "id": 52819,
+    "name": "白鷺千聖",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9e/90/52819_crt_1pBi1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/90/52819_crt_1pBi1.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/90/52819_crt_1pBi1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9e/90/52819_crt_1pBi1.jpg"
+    },
+    "summary": "从小时候开始就以童星的身份活跃的年轻有为的女演员。\r\n非常重视能无所顾忌和她相处的朋友。对于参加乐队这件事似乎抱有什么想法，但是……？",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "白鹭千圣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しらさぎ ちさと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shirasagi Chisato"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月6日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        },
+        {
+            "key": "担当",
+            "value": "贝斯手"
+        },
+        {
+            "key": "星座",
+            "value": "牡羊座"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "红茶，Acai Bowl（一种夏威夷甜品）和味道清淡的东西"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "纳豆"
+        },
+        {
+            "key": "兴趣",
+            "value": "在咖啡店喝茶、逛街"
+        },
+        {
+            "key": "所属",
+            "value": "Pastel∗Palettes"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 6,
+    "stat": {
+        "comments": 28,
+        "collects": 61
+    },
+    "anime_ids": [
+        246431
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "id": 35185,
+    "name": "アツコ・カガリ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5b/ef/35185_crt_3F92S.jpg?r=1492703308",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/ef/35185_crt_3F92S.jpg?r=1492703308",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/ef/35185_crt_3F92S.jpg?r=1492703308",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5b/ef/35185_crt_3F92S.jpg?r=1492703308"
+    },
+    "summary": "从日本而来，志愿成为魔女的少女。小时候着迷于闪光莎莉欧的魔法秀，立志成为魔女于是来到了鲁纳诺娃魔法学校，虽然不擅长魔法，但会乐观向前地朝着成为莎莉欧那样的魔女而努力。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "篝敦子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "亚可·卡嘉莉"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Akko Kagari"
+                },
+                {
+                    "k": "日文名",
+                    "v": "アツコ・カガリ"
+                },
+                {
+                    "k": "昵称",
+                    "v": "アッコ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月25日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 25,
+    "stat": {
+        "comments": 86,
+        "collects": 295
+    },
+    "anime_ids": [
+        185792
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "id": 1971,
+    "name": "幕之内一歩",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/65/95/1971_crt_ulnp9.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/95/1971_crt_ulnp9.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/95/1971_crt_ulnp9.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/65/95/1971_crt_ulnp9.jpg"
+    },
+    "summary": "本作の主人公。鴨川ボクシングジム所属のフェザー級プロボクサー。\r\n家業は釣り舟屋。そのことで高校時代いじめられていた。しかし、偶然プロボクサー鷹村と出会い自分もボクシングを始める。多くのライバルたちとの激闘を経て、たくましく成長していく。\r\nそして、自らの努力の結晶である必殺のデンプシー・ロールを千堂に炸裂させ、見事日本フェザー級チャンピオンになる。衝撃度MAXの必殺技デンプシー・ロールを武器にタイトルを防衛中。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "幕之内一步"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "幕之内 一歩"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まくのうち いっぽ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Makunouchi Ippo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1973年11月23日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "164cm"
+        },
+        {
+            "key": "体重",
+            "value": "57kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1973,
+    "birth_mon": 11,
+    "birth_day": 23,
+    "stat": {
+        "comments": 3,
+        "collects": 8
+    },
+    "anime_ids": [
+        10419,
+        3641,
+        78798,
+        135195
+    ]
+}

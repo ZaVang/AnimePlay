@@ -1,0 +1,44 @@
+{
+    "id": 63178,
+    "name": "ラビ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9c/9b/63178_crt_R77oM.jpg?r=1637461666",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/9b/63178_crt_R77oM.jpg?r=1637461666",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/9b/63178_crt_R77oM.jpg?r=1637461666",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9c/9b/63178_crt_R77oM.jpg?r=1637461666"
+    },
+    "summary": "水の魔動戦士。水を司る魔動王、アクアビートに乗る耳長族の11歳の少年。\r\n幼い頃に両親と別れ、以来、なぜ自分が長い耳をもっているのかもわからず、ひたすら耳を隠して月面で生きてきた。そのためとてもガンコで頼ることをよしとせず、一匹狼を貫く。個人プレーが多いため、チームワークを大切にする大地とは度々衝突するが、次第に固い友情で結ばれていく。\r\n女の子に惚れやすく、ナンパ大好き。月面では独楽回しのチャンピオン。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "拉比"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "马流士·冯·拉玛斯"
+                },
+                {
+                    "k": "日文名",
+                    "v": "マリウス・フォン・ラーマス"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 7
+    },
+    "anime_ids": [
+        5467
+    ]
+}

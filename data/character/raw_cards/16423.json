@@ -1,0 +1,48 @@
+{
+    "id": 16423,
+    "name": "桐山唯",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7c/fa/16423_crt_aMZsX.jpg?r=1535426162",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/fa/16423_crt_aMZsX.jpg?r=1535426162",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/fa/16423_crt_aMZsX.jpg?r=1535426162",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7c/fa/16423_crt_aMZsX.jpg?r=1535426162"
+    },
+    "summary": "一年一班学生，文研部部员。第一人称“アタシ”。\r\n身材娇小，只有150CM多点，天生发色是明亮栗子色，带滋润光泽的长发，平时有在锻炼身体，身躯柔软且结实，给人活泼的印象，但其实患有严重的男性恐惧症。国中时代为止一直埋头于空手道，进入高中后开始关注可爱的东西，在开设文研部前是打算进入“Fancy社”，但因人数不足而失败。\r\n过去在“女子全接触空手道”中以压倒性的强悍而闻名，被称为“神童”。\r\n虽然在一开始婉拒了青木的告白，但是在小说第二集中因为青木的鼓励，以及青木真挚的告白，似乎渐渐地愿意接受青木。\r\n有一名妹妹，姐妹感情不错。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "桐山唯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "きりやま ゆい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kiriyama Yui"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 62
+    },
+    "anime_ids": [
+        37154
+    ]
+}

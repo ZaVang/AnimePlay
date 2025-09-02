@@ -1,0 +1,90 @@
+{
+    "id": 4328,
+    "name": "江户盗贼团五叶",
+    "image_path": "data/images/anime/4328.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "主人公秋津政之助是一个浪人。他害怕见到生人，很容易紧张和说错话，所以丢掉了好不容易找到的工作。因为剑法不错，所以被美男子弥一雇用为保镖。没想到弥一其实是从事诱拐绑架活动的组织“五叶”的头领。因为家里需要用钱，政之助无法辞掉这份工作。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2010-04-15",
+    "rating_rank": 671,
+    "rating_score": 7.6,
+    "rating_total": 1530,
+    "main_character_ids": [
+        10820,
+        10821
+    ],
+    "main_characters": [
+        {
+            "id": 10820,
+            "name": "秋津政之助",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/df/e2/10820_crt_auVBz.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/e2/10820_crt_auVBz.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/e2/10820_crt_auVBz.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/df/e2/10820_crt_auVBz.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4254,
+                    "name": "浪川大輔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/70/c3/4254_prsn_99K43.jpg?r=1631019573"
+                    },
+                    "short_summary": "浪川 大輔（なみかわ だいすけ、1976年4月2日 - ） は、日本の声優、俳優、歌手、ナレーター。ステイラック代表取締役。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10821,
+            "name": "弥一",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c7/16/10821_crt_13kZL.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/16/10821_crt_13kZL.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/16/10821_crt_13kZL.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c7/16/10821_crt_13kZL.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4015,
+                    "name": "櫻井孝宏",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/06/29/4015_prsn_4TZox.jpg?r=1638448222"
+                    },
+                    "short_summary": "爱知县冈崎市老家的本业是米店，店名为“樱井米谷店”，在当地小有名气。\r\n初中时的一个冬天，怕冷的他擅自把酒精灯里的液体倒在理科实验室的桌子上，点起火取暖，引响了火灾报警器，被赶来的老师狠狠教训了一顿。于是在老师的国语课上捣乱报复，夸张地朗读课文，实在听不过去的老师求他：“拜托，别念得跟声优似的好不好！”——这话对那时的樱井冲击很大，给他留下了声优不过是连小孩子都做得来的简单工作的印象。所以高中毕业后，乐得找轻松的樱井选择进入东京的声优专科学校。待迈入这一行，他才吐血地发现，且不说成为佼佼者，就是普通从业者也得掌握高超的专业技巧。\r\n2005年8月《最终幻想VII：降临之子》于第62届威尼斯影展参展。樱井以担任主角配音的身份，成为继山寺宏一后第2位踏上星光大道的日本籍声优。\r\n虽然戴着眼镜，可是樱井二眼视力皆为2.0，植田佳奈笑称那是“骗人眼镜”。那付眼镜的意义是“梦想与希望与对声迷们的爱”。\r\n最初的错误是BL DRAMA制作社Inter communications（inter桑）的一张drama的BK上打成了樱井考宏，之后《无法逃离的背叛》某个活动的官方网站上亦把樱井孝宏的名字写成“樱井考宏”，所以有昵称考哥，而并非是他的名字中的“孝”字与“考”字很像才有此外号。\r\n桜井(sakurai)，桜井さん（sakurai san），sakura i san，樱13",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

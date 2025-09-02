@@ -1,0 +1,95 @@
+{
+    "id": 27601,
+    "name": "マルシル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a8/07/27601_crt_Ecj1u.jpg?r=1692590014",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a8/07/27601_crt_Ecj1u.jpg?r=1692590014",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a8/07/27601_crt_Ecj1u.jpg?r=1692590014",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a8/07/27601_crt_Ecj1u.jpg?r=1692590014"
+    },
+    "summary": "精灵族女性，魔法使。父母曾经担任过宫廷魔术师，学院派出生的她立志要将地下城改造成能安全采集魔法用材料的场所。本作吐槽役、颜艺丰富，时常把事情搞砸。菜鸟时期被攻击性史莱姆包覆头部、窒息而死。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "玛露西尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "玛露西尔·多纳托"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Marcille"
+                },
+                {
+                    "k": "日文名",
+                    "v": "マルシル・ドナトー"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Marushiru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月19日"
+        },
+        {
+            "key": "身高",
+            "value": "160cm左右"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki、公式书"
+        },
+        {
+            "key": "BMI",
+            "value": "20"
+        },
+        {
+            "key": "年龄",
+            "value": "50岁"
+        },
+        {
+            "key": "人种",
+            "value": "半精灵"
+        },
+        {
+            "key": "出生地区",
+            "value": "北方大陆"
+        },
+        {
+            "key": "家族成员",
+            "value": "母亲"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "鱼贝类、干果"
+        },
+        {
+            "key": "不喜欢的食物",
+            "value": "所谓的猎奇食品"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 19,
+    "stat": {
+        "comments": 142,
+        "collects": 568
+    },
+    "anime_ids": [
+        395378
+    ]
+}

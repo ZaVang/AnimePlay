@@ -1,0 +1,48 @@
+{
+    "id": 72802,
+    "name": "ゼル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/25/9a/72802_crt_6XfmF.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/9a/72802_crt_6XfmF.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/9a/72802_crt_6XfmF.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/25/9a/72802_crt_6XfmF.jpg"
+    },
+    "summary": "スタンクの相棒。種族はエルフ。見た目も性欲も少年のようだが、実際の年齢は200歳を超えている。\r\n\r\n弓矢を得意としており、各種魔法も使用可能。クロスレビューの発行人でもある。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "杰尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "洁洁儿"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Zel"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 11
+    },
+    "anime_ids": [
+        285482
+    ]
+}

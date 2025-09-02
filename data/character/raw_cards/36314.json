@@ -1,0 +1,72 @@
+{
+    "id": 36314,
+    "name": "二階堂千鶴",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a2/fc/36314_crt_XCKtZ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/fc/36314_crt_XCKtZ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/fc/36314_crt_XCKtZ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a2/fc/36314_crt_XCKtZ.jpg"
+    },
+    "summary": "21岁、自称大小姐偶像、实际上是个“伪”大小姐、用着「啊哈哈~」的说话方式、对制作人也保持着高压的态度、但是台词中的细微之处有着难以言喻的平民气息和笑着笑着就会呛到的奇怪设定…… \r\n\r\n大口吃肉饼的设定画、穿着写着「NIKA??? SEIN???」的衬衫（「NIKAIDO SEINIKU=二阶堂精肉」）、推测家里其实是开肉店的吧？ \r\n\r\n这样的她、因为庶民气质而努力的她反而不会让人讨厌、就连车站前的卡拉OK店举行的超豪华烤肉排队也不会缺席。(そんな彼女だが、庶民気质ゆえかかなりの努力家であることも窥わせる。トップアイドルになって駅前のカラオケ屋で超豪华な祝宴を开くために、今日も彼女はレッスンを欠かさない。） \r\n\r\n与华丽的外表不相符合的奇怪家庭生活感、也能照料好低年龄的偶像、看到高级品会举步不前（顺便一说、举步不前的日语是尻込み）、也会横下心来怀着感激向其他人道歉。虽然装作是大小姐，但却是极为清楚其生活环境的。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "二阶堂千鹤"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Nikaidou Chitsuru"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "にかいどう ちづる"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月21日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "50kg"
+        },
+        {
+            "key": "BWH",
+            "value": "85-58-86"
+        },
+        {
+            "key": "年龄",
+            "value": "21岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 21,
+    "stat": {
+        "comments": 7,
+        "collects": 8
+    },
+    "anime_ids": [
+        309807
+    ]
+}

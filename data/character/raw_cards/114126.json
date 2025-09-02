@@ -1,0 +1,60 @@
+{
+    "id": 114126,
+    "name": "浅村悠太",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ed/17/114126_crt_IdNep.jpg?r=1711375043",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/17/114126_crt_IdNep.jpg?r=1711375043",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/17/114126_crt_IdNep.jpg?r=1711375043",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ed/17/114126_crt_IdNep.jpg?r=1711375043"
+    },
+    "summary": "16歳。水星高校2年生。\r\n父の再婚で沙季・亜季子と暮らし始める。\r\n幼い頃の家庭環境からか、どこか他人と距離を置いている。\r\n学業のかたわら、渋谷駅前の書店でアルバイトをしている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "浅村悠太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "悠太"
+                },
+                {
+                    "k": "日文名",
+                    "v": "浅村 悠太"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あさむらゆうた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Asamura Yūta"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "12月13日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 13,
+    "stat": {
+        "comments": 17,
+        "collects": 36
+    },
+    "anime_ids": [
+        393037
+    ]
+}

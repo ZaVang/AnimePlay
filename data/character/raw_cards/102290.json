@@ -1,0 +1,64 @@
+{
+    "id": 102290,
+    "name": "大友栄作",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d6/02/102290_crt_l4cxj.jpg?r=1635866531",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/02/102290_crt_l4cxj.jpg?r=1635866531",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/02/102290_crt_l4cxj.jpg?r=1635866531",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d6/02/102290_crt_l4cxj.jpg?r=1635866531"
+    },
+    "summary": "アシト、橘と同じセレクション組。チーム全体に気を配るムードメーカー的存在。試合前はガチガチに緊張するが、いざ試合が始まると冷静沈着な判断力でチームをコントロールするミッドフィルダー。普段はお調子者で女の子にモテようと必死だが、（努力虚しく）空回りしている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "大友荣作"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "おおとも えいさく"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ootomo Eisaku"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月5日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        },
+        {
+            "key": "体重",
+            "value": "55kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 5,
+    "stat": {
+        "comments": 5,
+        "collects": 3
+    },
+    "anime_ids": [
+        337459
+    ]
+}

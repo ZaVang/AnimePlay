@@ -1,0 +1,643 @@
+{
+    "id": 273877,
+    "type": 2,
+    "name": "彼方のアストラ",
+    "name_cn": "彼方的阿斯特拉",
+    "summary": "在往来宇宙已是司空见惯的近未来，9名少年少女踏上前去行星露营的旅程。他们怀着对宇宙旅行感到激动不已的心情出发，但等待他们的是出乎意料的事态……",
+    "nsfw": false,
+    "locked": false,
+    "date": "2019-07-03",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/2e/1e/273877_VS2qn.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/2e/1e/273877_VS2qn.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/2e/1e/273877_VS2qn.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/2e/1e/273877_VS2qn.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/2e/1e/273877_VS2qn.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "彼方的阿斯特拉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Astra Lost in Space",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2019年7月3日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期三"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://astra-anime.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "AT-X"
+        },
+        {
+            "key": "其他电视台",
+            "value": "TOKYO MX / テレビ愛知 / KBS京都 / サンテレビ / BS11"
+        },
+        {
+            "key": "播放结束",
+            "value": "2019年9月18日"
+        },
+        {
+            "key": "导演",
+            "value": "安藤正臣"
+        },
+        {
+            "key": "音乐",
+            "value": "横山克、信澤宣明"
+        },
+        {
+            "key": "Copyright",
+            "value": "© 篠原健太／集英社・彼方のアストラ製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "篠原健太 (集英社ジャンプ コミックス刊)"
+        },
+        {
+            "key": "系列构成",
+            "value": "海法紀光"
+        },
+        {
+            "key": "人物设定",
+            "value": "黒澤桂子"
+        },
+        {
+            "key": "总作画监督",
+            "value": "黒澤桂子(メイン)、山本由美子(サブ)"
+        },
+        {
+            "key": "机械设定",
+            "value": "有澤寛"
+        },
+        {
+            "key": "道具设计",
+            "value": "本多弘幸"
+        },
+        {
+            "key": "宇宙生物デザイン",
+            "value": "廣瀬智仁"
+        },
+        {
+            "key": "副导演",
+            "value": "柴田裕介"
+        },
+        {
+            "key": "美术监督",
+            "value": "甲斐政俊"
+        },
+        {
+            "key": "美术设计",
+            "value": "虎順、羽根広舟"
+        },
+        {
+            "key": "色彩设计",
+            "value": "多田早希"
+        },
+        {
+            "key": "摄影监督",
+            "value": "酒井淳子"
+        },
+        {
+            "key": "CGI",
+            "value": "ラークスエンタテインメント"
+        },
+        {
+            "key": "CG 导演",
+            "value": "加藤大輔"
+        },
+        {
+            "key": "2Dデザイン",
+            "value": "いまむら"
+        },
+        {
+            "key": "モニターデザイン",
+            "value": "山田可奈子"
+        },
+        {
+            "key": "剪辑",
+            "value": "宮崎直樹(森田編集室)"
+        },
+        {
+            "key": "音乐制作",
+            "value": "KADOKAWA"
+        },
+        {
+            "key": "音响监督",
+            "value": "飯田里樹"
+        },
+        {
+            "key": "音效",
+            "value": "奥田維城"
+        },
+        {
+            "key": "制片人",
+            "value": "田中翔、高野貴志、 岩崎大介、尾形光広、礒谷徳知、村松裕基"
+        },
+        {
+            "key": "动画制片人",
+            "value": "比嘉勇二"
+        },
+        {
+            "key": "动画制作",
+            "value": "ラルケ"
+        },
+        {
+            "key": "製作",
+            "value": "彼方のアストラ製作委員会（KADOKAWA、集英社、ドコモ・アニメストア、角川メディアハウス、AT-X、スタジオ雲雀）"
+        },
+        {
+            "key": "企画",
+            "value": "菊池剛、瓶子吉久、光延青児"
+        },
+        {
+            "key": "执行制片人",
+            "value": "工藤大丈、大好誠、 松田啓次、篠崎文彦、山崎明日香、宮崎裕司"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 12,
+    "rating": {
+        "rank": 1102,
+        "total": 2719,
+        "count": {
+            "one": 4,
+            "two": 4,
+            "three": 6,
+            "four": 28,
+            "five": 79,
+            "six": 292,
+            "seven": 948,
+            "eight": 1061,
+            "nine": 234,
+            "ten": 63
+        },
+        "score": 7.4
+    },
+    "collection": {
+        "wish": 1816,
+        "collect": 3873,
+        "doing": 342,
+        "on_hold": 240,
+        "dropped": 181
+    },
+    "tags": [
+        {
+            "name": "科幻",
+            "count": 744
+        },
+        {
+            "name": "2019年7月",
+            "count": 564
+        },
+        {
+            "name": "漫画改",
+            "count": 461
+        },
+        {
+            "name": "Lerche",
+            "count": 442
+        },
+        {
+            "name": "TV",
+            "count": 400
+        },
+        {
+            "name": "2019",
+            "count": 288
+        },
+        {
+            "name": "宇宙",
+            "count": 254
+        },
+        {
+            "name": "漫改",
+            "count": 229
+        },
+        {
+            "name": "生存",
+            "count": 195
+        },
+        {
+            "name": "彼方的阿斯特拉",
+            "count": 179
+        },
+        {
+            "name": "横山克",
+            "count": 145
+        },
+        {
+            "name": "悬疑",
+            "count": 117
+        },
+        {
+            "name": "安藤正臣",
+            "count": 110
+        },
+        {
+            "name": "冒险",
+            "count": 89
+        },
+        {
+            "name": "战斗",
+            "count": 81
+        },
+        {
+            "name": "搞笑",
+            "count": 75
+        },
+        {
+            "name": "海法紀光",
+            "count": 60
+        },
+        {
+            "name": "剧情",
+            "count": 43
+        },
+        {
+            "name": "日本",
+            "count": 24
+        },
+        {
+            "name": "热血",
+            "count": 13
+        },
+        {
+            "name": "青春",
+            "count": 12
+        },
+        {
+            "name": "恋爱",
+            "count": 11
+        },
+        {
+            "name": "ラルケ",
+            "count": 10
+        },
+        {
+            "name": "季番",
+            "count": 10
+        },
+        {
+            "name": "2019夏",
+            "count": 8
+        },
+        {
+            "name": "2019年",
+            "count": 7
+        },
+        {
+            "name": "7月",
+            "count": 7
+        },
+        {
+            "name": "TVA",
+            "count": 7
+        },
+        {
+            "name": "篠原健太",
+            "count": 7
+        },
+        {
+            "name": "奇幻",
+            "count": 6
+        }
+    ],
+    "meta_tags": [
+        "科幻",
+        "悬疑",
+        "TV",
+        "日本",
+        "漫画改",
+        "冒险",
+        "剧情"
+    ],
+    "series": false,
+    "main_character_ids": [
+        69356,
+        69357,
+        70011,
+        70012,
+        70013,
+        70014,
+        70015,
+        70016,
+        70017
+    ],
+    "main_characters": [
+        {
+            "id": 69356,
+            "name": "カナタ・ホシジマ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/82/35/69356_crt_iu6FR.jpg?r=1553258524",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/35/69356_crt_iu6FR.jpg?r=1553258524",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/35/69356_crt_iu6FR.jpg?r=1553258524",
+                "grid": "https://lain.bgm.tv/pic/crt/g/82/35/69356_crt_iu6FR.jpg?r=1553258524"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4982,
+                    "name": "細谷佳正",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/40/4e/4982_prsn_XOxkm.jpg"
+                    },
+                    "short_summary": "高中时代参加的社团是戏剧社和剑道社。后来只专注於戏剧社。\r\n专门学校时期和友人一起组成街头艺人，由于是新人加上良好的歌声和歌曲，被同一个事务所的前辈大须贺纯所称赞。与其搭档的友人是吉他老师。名字倾向本身的创作风格，用了‘不协和音’来命名。歌曲由两人共同创作。其中‘雪’这首曲子几乎是一个人完成的。而在当时的演出地点是在京王线府中站。\r\n在网球王子的试镜会中也参与了平古场凛的角色。\r\n以网球王子白石藏之介名义连续两个月发行角色专辑，为网球王子角色歌曲首例，2010年04月14日发行的首张专辑《Medicine or...?》在Oricon Style拿下首日第七名，首周第十名。2010年05月19日发行的第二张专辑《POISON》登上Oricon Style首日第三名，首周第六名。其中，《Medicine or...?》中的＜I.ng＞及《POISON》中的＜エピローグ＞皆由细谷本人亲自做词。\r\n\r\n兴趣是射击运动和吉他。\r\n喜欢的艺人以男性居多，像是藤原龙也和洼冢洋介。\r\n无关年龄，喜欢思想较为成熟的女性。\r\n讨厌的食物是牡蛎，连碰都不能碰。喜欢红酒。\r\n喜欢Ne-Yo的音乐。\r\n喜欢猫，会和流浪猫玩在一起，所以身上容易残留猫毛。有一次到电台参与‘电波系彼女’的录制，后来才知道小林ゆう对猫过敏，并且向她道歉。\r\n电台‘テニスの王子様 オン・ザ・レイディオ’中被认定了是欺负的一群，常被前辈声优欺负。\r\n身材较为纤细修长，非常容易出汗。\r\n经常有电波系的恐怖经验。\r\n被小林ゆう称赞其说话技巧很好。\r\n对电脑等电子装置很不熟悉的缘故，家中并没有电脑。工作上请附近的香烟店帮忙传真。\r\n对于星座很了解，不过否定自己的水瓶座B型是个“怪人”的见解。\r\n为了演出不良少年柔沢ジュウ的感觉，在自家的厕所里一边冲水一边大叫磨损喉咙。\r\n在过去的事件中，曾比喻自己“声音像没特色的茶泡饭”。\r\n\r\n2014年荣获第八届日本声优大赏“助演男优赏”。\r\n\r\n曾属Mausu Promotion。2014年在广播『天才軍師』2014年7月13日放送回中，宣布自2014年7月1日恢复为自由身。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 69357,
+            "name": "アリエス・スプリング",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/88/80/69357_crt_N70LA.jpg?r=1553259132",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/80/69357_crt_N70LA.jpg?r=1553259132",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/80/69357_crt_N70LA.jpg?r=1553259132",
+                "grid": "https://lain.bgm.tv/pic/crt/g/88/80/69357_crt_N70LA.jpg?r=1553259132"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10868,
+                    "name": "水瀬いのり",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/87/b1/10868_prsn_LoxnW.jpg?r=1740115446",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/b1/10868_prsn_LoxnW.jpg?r=1740115446",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/b1/10868_prsn_LoxnW.jpg?r=1740115446",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/87/b1/10868_prsn_LoxnW.jpg?r=1740115446"
+                    },
+                    "short_summary": "日本的女性演员、声优，原Sony Music Artists所属，现AXL-ONE。东京都出身。\r\n\r\n兴趣为动画、游戏、NICONICO动画、上网。\r\n粉丝俱乐部叫“いのりまち”（祈町），自称是町长，粉丝则是町民。\r\n特技是在卡拉OK中用动画歌曲唱出二重唱、俄罗斯方块。「非常喜欢唱歌和表演。也十分喜欢声优的动画歌，对会唱歌的声优怀有憧憬。」\r\n小时候对于《美少女战士》的水手金星、《名侦探柯南》的毛利兰有所憧憬，从母亲那里得知声优的存在后决定以成为声优为目标，并因为受毛利兰影响而开始学空手道。\r\n初中时由于受到《网球王子》的影响而同时参加网球部和演剧部，但没多久就退出了网球部。\r\n国中三年级在《世纪末超自然学院》所配的冈本灯一角为出道作。\r\n小时候就很喜欢迪士尼的作品，甚至拥有年间护照。一年会去100次东京迪士尼乐园。理想男性为米老鼠爱好者。\r\n曾经在チャームキッズ（Charm Kids，一个专门培养少女偶像的机构）以偶像身份出道，2010年1月5日毕业。期间名义为【末永みお】。\r\n水树奈奈的粉丝，2015年9月24日宣布了将会在自己20岁生日当天（即2015年12月2日）以个人名义作为歌手出道，并发售第一张个人单曲，唱片公司为King Records。\r\n\r\n2013年，在NHK的晨间剧《海女》中饰演成田丽奈。由此在同年的NHK红白歌会的企划单元中决定和海女的主要演员一起出场，作为\"GMTスペシャルユニット feat.アメ横女学园芸能コース”的一员在舞台上披露了《暦の上ではディセンバー》。\r\n2015年12月12日在西武铁道（秩父线）担任了一日站长。\r\n2016年，获得了第10届声优奖的主演女声优赏，第25届日本影评人大奖的新人声优奖。2016年4月14日，被任命为京都国际动漫展的应援支持者。而且所绘画的『八桥舞妓酱』会展示在京都国际漫画博物馆。\r\n2016年11月19日，台湾一男子扬言要杀害水濑祈，虽然嫌犯立即被逮捕，但此事也导致原本预定于12月在台湾举办的现场活动、3单发售纪念活动以及此后的各项现场活动被取消。\r\n2017年7月3日，因合约到期，离开Sony Music Artists，事务所网站下的官方粉丝俱乐部也陆续关闭。\r\n2017年9月1日起加入AXL ONE。\r\n2017年12月2日在东京国际forum Hall A举行了第一次个人演唱会。\r\n2018年5月23日，发售第二张个人专辑《BLUE COMPASS》。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 70011,
+            "name": "ザック・ウォーカー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/58/d4/70011_crt_fj77U.jpg?r=1557494022",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/d4/70011_crt_fj77U.jpg?r=1557494022",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/d4/70011_crt_fj77U.jpg?r=1557494022",
+                "grid": "https://lain.bgm.tv/pic/crt/g/58/d4/70011_crt_fj77U.jpg?r=1557494022"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 14414,
+                    "name": "石上静香",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/04/f5/14414_prsn_7nPYh.jpg?r=1735460841",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/f5/14414_prsn_7nPYh.jpg?r=1735460841",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/f5/14414_prsn_7nPYh.jpg?r=1735460841",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/04/f5/14414_prsn_7nPYh.jpg?r=1735460841"
+                    },
+                    "short_summary": "日本的女性声优，东京都出身，所属大泽事务所。\r\n\r\n東京メディアアカデミーの声優ボーカル科（現：東京声優アカデミーの声優養成科）を卒業。81プロデュース所属後、プロフィット養成所を経て2014年2月よりプロ・フィット所属となる。\r\n名前付きの初めての役は、『凪のあすから』の潮留晃。\r\nオーディションをして初めて受かった役は『健全ロボ ダイミダラー』の喜友名霧子。\r\n2022年1月1日、プロ・フィットが同年3月末で閉鎖することに伴い、大沢事務所へ移籍。\r\n\r\n2025年6月30日发表与[url=https://bgm.tv/person/41419]柳晃平[/url]结婚",
+                    "locked": false
+                },
+                {
+                    "id": 16361,
+                    "name": "武内駿輔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b9/41/16361_prsn_6vPo1.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/41/16361_prsn_6vPo1.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/41/16361_prsn_6vPo1.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b9/41/16361_prsn_6vPo1.jpg"
+                    },
+                    "short_summary": "武内 駿輔（たけうち しゅんすけ、1997年9月12日 - ）是日本的男性声优。81produce所属。\r\n\r\n兴趣是DTM、飞镖、台球、扑克等。IM@S中喜欢的偶像是高槻やよい。\r\n\r\n10歳の時、映画『ダークナイト』の敵役・ジョーカーを演じるヒース・レジャーに感動し、俳優になりたいという夢を持つ。俳優を研究するため多数のハリウッド映画を見るうち、吹き替えを行う声優を意識するようになる。\r\n中学では陸上部だったが、両親を説得、3年生の頃に養成所に入所。中学卒業後81プロデュースの養成所から声がかかり、週1回のレッスンに通う。\r\n17歳で『アイドルマスター シンデレラガールズ』のプロデューサー役に大抜擢され、注目を浴びる。オーディションを受けた時、まず「アイドルのプロデューサーはどんな仕事なのか」というところから調べ、さらに「長身」「無口で不器用」という設定から、アニメやドラマ、映画などから同じ共通点をもつキャラを探して、それを演じている役者の演技を研究したという。\r\n2016年には、第10回声優アワードで新人男優賞を受賞した。\r\n\r\n一人っ子である。「高校生とは思えないダンディすぎる声」と評される低い声質で、主に青年役を演じている。\r\n好きな教科は英語で、声優の仕事に活きるように発音を特に勉強している。\r\n好きな芸能人はGACKT。GACKTについては自身が声優としてデビューした時に、その生き様や歌に励まされたためと語っている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 70012,
+            "name": "キトリー・ラファエリ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/14/0c/70012_crt_7Ddf1.jpg?r=1557494046",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/14/0c/70012_crt_7Ddf1.jpg?r=1557494046",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/14/0c/70012_crt_7Ddf1.jpg?r=1557494046",
+                "grid": "https://lain.bgm.tv/pic/crt/g/14/0c/70012_crt_7Ddf1.jpg?r=1557494046"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9560,
+                    "name": "黒沢ともよ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964"
+                    },
+                    "short_summary": "黒沢 ともよ（くろさわ ともよ、1996年4月10日 - ）は、日本の女性女優、声優、歌手。マウスプロモーション所属。埼玉県秩父市出身。\r\n\r\n3歳頃から演技の勉強を始め、2003年頃から子役としてテレビドラマ、CM、舞台へ出演。\r\n2008年よりSound Horizonのサポートメンバーとして参加。6th Story CD『Moira』のPV「冥王 -Θανατος-」、及びコンサート「Sound Horizon 6th Story Concert Moira 〜其れでも、お征きなさい仔等よ〜」に幼少期アルテミシア役で出演。いずれも発声無しの子役（モーションアクター）としての出演であったが、2010年の7th Story CD『Märchen』ではボーカル・ボイスアクターなども務めている。\r\n2010年、劇場アニメ『宇宙ショーへようこそ』の小山夏紀役にて声優デビュー。その後、テレビアニメ等、活躍の幅を広げている。\r\n東京児童劇団を退団後、2012年よりマウスプロモーションに所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 70013,
+            "name": "フニシア・ラファエリ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/38/3f/70013_crt_0qQQx.jpg?r=1557494082",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/3f/70013_crt_0qQQx.jpg?r=1557494082",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/3f/70013_crt_0qQQx.jpg?r=1557494082",
+                "grid": "https://lain.bgm.tv/pic/crt/g/38/3f/70013_crt_0qQQx.jpg?r=1557494082"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19643,
+                    "name": "木野日菜",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a2/c8/19643_prsn_YYziU.jpg?r=1738932098",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/c8/19643_prsn_YYziU.jpg?r=1738932098",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/c8/19643_prsn_YYziU.jpg?r=1738932098",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a2/c8/19643_prsn_YYziU.jpg?r=1738932098"
+                    },
+                    "short_summary": "ドワンゴクリエイティブスクール出身。『サウザンドメモリーズ』の夢幻の魔怪盗リノでデビューする。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 70014,
+            "name": "ルカ・エスポジト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7a/04/70014_crt_TXWNS.jpg?r=1557494103",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/04/70014_crt_TXWNS.jpg?r=1557494103",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/04/70014_crt_TXWNS.jpg?r=1557494103",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7a/04/70014_crt_TXWNS.jpg?r=1557494103"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 18732,
+                    "name": "松田利冴",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/85/33/18732_prsn_v7uJF.jpg?r=1608450825",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/33/18732_prsn_v7uJF.jpg?r=1608450825",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/33/18732_prsn_v7uJF.jpg?r=1608450825",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/85/33/18732_prsn_v7uJF.jpg?r=1608450825"
+                    },
+                    "short_summary": "アイムエンタープライズ所属\r\n\r\n出身地：大阪府\r\n方言：大阪弁\r\n趣味・スポーツ：\r\n特撮鑑賞　筋トレ　\r\nダンス　ソフトテニス\r\n特技：\r\n歌のハモリ　和太鼓\r\n資格：書道(特待生)\r\n芸歴：\r\n　日本ナレーション演技研究所　\r\n　2010年 第4回全日本アニソングランプリ大阪大会優勝\r\n　2011年 第5回全日本アニソングランプリ大阪大会優勝",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 70015,
+            "name": "ウルガー・ツヴァイク",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1f/ca/70015_crt_AJ95X.jpg?r=1557494120",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1f/ca/70015_crt_AJ95X.jpg?r=1557494120",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1f/ca/70015_crt_AJ95X.jpg?r=1557494120",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1f/ca/70015_crt_AJ95X.jpg?r=1557494120"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5768,
+                    "name": "内山昂輝",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0f/d1/5768_prsn_35lt8.jpg?r=1637964101"
+                    },
+                    "short_summary": "内山 昂輝（うちやま こうき、1990年8月16日 - ）は、日本の声優、俳優。劇団ひまわり所属。\r\n早稲田大学卒業。 国際基督教大学高等学校出身。 1993年に劇団ひまわりに入団し、子役としてテレビドラマへの出演や少年役の吹き替えを主に行っていた。舞台経験はない。なお、声優として初めて参加した作品はA.I.である。\r\n2005年に発売された『キングダム ハーツII』のロクサス役で注目を浴び、その後は声優としての活動が多くなっている。内山本人も自身を「明朗快活なタイプではない」と語っているように、主にどこか影のある少年役を演じるが、明るい少年役を演じることも多くなっている。\r\n2011年、第5回声優アワードにて新人男優賞を受賞。2015年、東京アニメアワード2015で発表されたアニメ オブ ザ イヤーで声優賞を受賞。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 70016,
+            "name": "ユンファ・ルー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/39/fa/70016_crt_eXTR2.jpg?r=1557494133",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/fa/70016_crt_eXTR2.jpg?r=1557494133",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/fa/70016_crt_eXTR2.jpg?r=1557494133",
+                "grid": "https://lain.bgm.tv/pic/crt/g/39/fa/70016_crt_eXTR2.jpg?r=1557494133"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4895,
+                    "name": "早見沙織",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522"
+                    },
+                    "short_summary": "幼儿园、小学、初中、高中就读于白百合学园，高中时转入都内高中就读。早稻田大学毕业。\r\n在小学4年级的时候知道了“声优”这职业，决心成为声优。\r\n2004年4月，中学1年级时进入日本播音演技研究所少年声优班学习。\r\n在少年声优班第二年的2006年3月，通过I'm Enterprise的选拔考试。第一次工作是《机械女仆》的Drama CD。之后在2007年透过《桃华月惮》动画出道。\r\n清脆的声音是其特征。演技幅度很广的实力派，从幼女到花样年华的少女、文静的角色到活泼的角色、而且还能演出少年角色动物角色。演出的不同角色之间的差别很大。此外歌唱力也有公认的评价。\r\n2008年4月起，因学业缘故，每周只到日本播音演技研究所上一次课。2008年10月3日，首次主持广播节目《ラジオどっとあい 早见沙织のぽじてぃ部〜Sweetsな放课後》。\r\n2015年4月21日，以TV动画《赤发白雪姬》的片头主题歌《やさしい希望》歌手出道。\r\n2016年，在第10回声优奖中获得助演女优奖。\r\n\r\n家庭构成是父亲、母亲。还饲养着兔子。喜欢看警察题材的电视剧，在广播中透露出是电视剧《相棒》系列的FANS。\r\n从4岁开始学弹钢琴，此外还学过绘画、游泳、网球等众多东西，不过唯一持续下来的是弹钢琴，体育类的基本都持续不久。在绘画方面，据说曾在小学生时参加亚洲大赛并获得金奖。\r\n小时候开始就很喜欢唱歌，据说和母亲一起坐车的时候总是跟着车上的播放机大声地唱歌，然后母亲经常会指导她说“刚才走调了”之类的。在爵士乐歌手的母亲的推荐下在中学时就开始学习唱爵士乐。\r\n性格非常稳健，待人很有礼貌。而且在演技上具有很高的意识和才能，在声优前辈和动画制作人员中也有很高的评价。据说同事务所的间岛淳司在收录现场看到刚出道没多久时候的早见时说“看来我们事务所将来也很安泰啊”。\r\n也有天然的一面，曾把洗面奶错当牙膏拿来刷牙，还曾在收录时背后的拉链没拉上就来到录音棚。\r\n与同事务所的山本麻里安一样，因为就读的学校禁止艺术类活动而转校，在声优与学业两付重担艰难前行。\r\n与悠木碧和东山奈央公私关系良好，交往密切。日高里菜曾表示过“超喜欢早见沙织”，两人私交甚密。\r\n在广播节目中有时会模仿黑柳彻子、安东尼奥·猪木、儿玉清等。在《鹡鸰女神》的广播节目《セキレイらじお》中模仿黑柳彻子的段子，并在《鹡鸰女神》DVD第6卷的OVA里被用来作恶搞。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 70017,
+            "name": "シャルス・ラクロワ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1d/42/70017_crt_49LoL.jpg?r=1557494142",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/42/70017_crt_49LoL.jpg?r=1557494142",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/42/70017_crt_49LoL.jpg?r=1557494142",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1d/42/70017_crt_49LoL.jpg?r=1557494142"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7392,
+                    "name": "島﨑信長",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/65/0b/7392_prsn_85bDV.jpg"
+                    },
+                    "short_summary": "岛﨑信长（1988年12月6日－），日本男性配音演员。隶属于青二Production。出身于宫城县。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

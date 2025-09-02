@@ -1,0 +1,52 @@
+{
+    "id": 19785,
+    "name": "駒場一郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bd/c5/19785_crt_Ep1ZE.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/c5/19785_crt_Ep1ZE.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/c5/19785_crt_Ep1ZE.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bd/c5/19785_crt_Ep1ZE.jpg"
+    },
+    "summary": "眼神锐利，一头黑色短发的大个子少年。\r\n亚季的青梅竹马，两人还是清水第一中学的毕业生。其父早故，因此为了维继没有其他帮手的自家的奶畜产业而由推荐入学进入了虾夷农高。社团为棒球部。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "驹场一郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "駒場 一郎"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こまば いちろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Komaba Ichirou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 14
+    },
+    "anime_ids": [
+        59664
+    ]
+}

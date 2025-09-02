@@ -1,0 +1,72 @@
+{
+    "id": 2328,
+    "name": "緋村剣心",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9e/03/2328_crt_c14zj.jpg?r=1724610225",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/03/2328_crt_c14zj.jpg?r=1724610225",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/03/2328_crt_c14zj.jpg?r=1724610225",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9e/03/2328_crt_c14zj.jpg?r=1724610225"
+    },
+    "summary": "温和な雰囲気が漂う放浪の剣客。その正体は、神速の殺人剣「飛天御剣流」により「人斬り抜刀斎」と恐れられた幕末の志士。赤毛と頬の十字傷が特徴で、腰には峰と刃が逆の「逆刃刀」を差している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "绯村剑心"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "緋村剣心"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひむら　けんしん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Himura Kenshin"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1849年6月20日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "体重",
+            "value": "48kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 20,
+    "stat": {
+        "comments": 22,
+        "collects": 226
+    },
+    "anime_ids": [
+        2712
+    ]
+}

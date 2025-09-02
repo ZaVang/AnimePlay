@@ -1,0 +1,65 @@
+{
+    "id": 13067,
+    "name": "ミーナ・ディートリンデ・ヴィルケ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/41/f3/13067_crt_1Wy11.jpg?r=1605207237",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/f3/13067_crt_1Wy11.jpg?r=1605207237",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/f3/13067_crt_1Wy11.jpg?r=1605207237",
+        "grid": "https://lain.bgm.tv/pic/crt/g/41/f3/13067_crt_1Wy11.jpg?r=1605207237"
+    },
+    "summary": "帝政カールスラント出身。第501統合戦闘航空団の隊長。大人びた言動をする苦労性の司令官",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "明娜·迪特琳德·威尔克"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "明娜·迪特林德·威尔克"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Minna Dietlinde Wilcke"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ミーナ・ディートリンデ・ヴィルケ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mīna Dītorinde Viruke"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1926年3月11日"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1926,
+    "birth_mon": 3,
+    "birth_day": 11,
+    "stat": {
+        "comments": 4,
+        "collects": 28
+    },
+    "anime_ids": [
+        253046,
+        5651
+    ]
+}

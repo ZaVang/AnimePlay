@@ -1,0 +1,70 @@
+{
+    "id": 12414,
+    "name": "フォルテ・シュトーレン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b8/72/12414_crt_PbNk2.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/72/12414_crt_PbNk2.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/72/12414_crt_PbNk2.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b8/72/12414_crt_PbNk2.jpg"
+    },
+    "summary": "天使队的成员之一，是天使队的队长，有着鲜红色短发及深蓝色瞳孔，平时都带着帽子（并无任何原因单纯因为美观），左眼带着单眼眼镜，左眼因年幼时受的创伤导致视力较差。\r\n个性豪爽相当有侠义精神，是个不拘小节的大姊头，说话方式及用语十分男性化，不过沉默的时候展现出女人的成熟魅力；是天使队里最年长的人，也是最成熟的人。\r\n相当擅常射击，射击本领非常厉害。\r\n兴趣是收集各式枪支，是在这个雷射枪普及的时代，少数惯用火药枪式的武器迷；闲暇时会到射击训练场射击。\r\n非常喜欢吃关东煮尤其是黑轮更是喜爱。\r\n\r\n    佛特˙修特伦的佛特Forte是外来语意大利文，意思是音符里的强音记号；而修特伦Stollen则是德国点心的一种，圣诞果脯蛋糕。\r\n\r\n    主题曲为“弹dan丸gan beat!”",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "佛特·修特伦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "佛特·修特雷"
+                },
+                {
+                    "k": "日文名",
+                    "v": "フォルテ・シュトーレン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Forte Stollen"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "年龄",
+            "value": "22岁→23岁(Eternal Lovers)→26岁(GA2)"
+        },
+        {
+            "key": "座机",
+            "value": "GA-004 Happy Trigger（快感扳机）"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 10
+    },
+    "anime_ids": [
+        4635,
+        18082,
+        4634
+    ]
+}

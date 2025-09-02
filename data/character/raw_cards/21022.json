@@ -1,0 +1,56 @@
+{
+    "id": 21022,
+    "name": "島村抱月",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/13/79/21022_crt_pQZVv.jpg?r=1603007735",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/79/21022_crt_pQZVv.jpg?r=1603007735",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/79/21022_crt_pQZVv.jpg?r=1603007735",
+        "grid": "https://lain.bgm.tv/pic/crt/g/13/79/21022_crt_pQZVv.jpg?r=1603007735"
+    },
+    "summary": "尽管没到安达那种程度，\r\n同样经常逃课的高一学生。\r\n头发是棕色的，有点天然的感觉。\r\n虽然把与人交往视作麻烦，\r\n但也有会照顾人的一面。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "岛村抱月"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しまむら ほうげつ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shimamura Hogetsu"
+                },
+                {
+                    "k": "昵称",
+                    "v": "しまむら"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月10日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 10,
+    "stat": {
+        "comments": 76,
+        "collects": 289
+    },
+    "anime_ids": [
+        282372
+    ]
+}

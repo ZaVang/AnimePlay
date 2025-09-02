@@ -1,0 +1,68 @@
+{
+    "id": 10969,
+    "name": "榊由美子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/74/1e/10969_crt_BZHun.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/74/1e/10969_crt_BZHun.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/74/1e/10969_crt_BZHun.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/74/1e/10969_crt_BZHun.jpg"
+    },
+    "summary": "从主人公他们就读的私立美浜学园设立当初就一直在学的女孩子。\r\n父亲是在关东圈有着强大影响力的集团企业的总帅，也就是俗称的千金小姐。\r\n\r\n黑长直，五官端正，言行举止让人感到很有教养，然而有点怠慢与他人的交往，在没有必要的情况下常常一个人单独行动。\r\n因此平时就洋溢着一副生人勿近的气氛，不过也有着喜好草根饮食与兴趣这般让人意外的一面。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "榊由美子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "榊 由美子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さかき ゆみこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakaki Yumiko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月10日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        },
+        {
+            "key": "BWH",
+            "value": "85(D)/57/87"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 10,
+    "stat": {
+        "comments": 28,
+        "collects": 140
+    },
+    "anime_ids": [
+        130234
+    ]
+}

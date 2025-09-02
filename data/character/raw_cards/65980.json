@@ -1,0 +1,49 @@
+{
+    "id": 65980,
+    "name": "巽幸太郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3a/db/65980_crt_eg9Mh.jpg?r=1536563157",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/db/65980_crt_eg9Mh.jpg?r=1536563157",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/db/65980_crt_eg9Mh.jpg?r=1536563157",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3a/db/65980_crt_eg9Mh.jpg?r=1536563157"
+    },
+    "summary": "神秘的偶像经纪人。\r\n肩上批着黑夹克，红色背心的口袋总是插着小岛食品工业的鱿鱼丝。墨镜无论何时都不会摘下来。做事如旁若无人般的脱离常识，将传说（？）的7人复活为僵尸的罪魁祸首，策划着僵尸偶像拯救佐贺的“僵尸乐园偶像计划”。还未有人知晓其计划的全貌。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "巽幸太郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たつみ こうたろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tatsumi Kotaro"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 63,
+        "collects": 93
+    },
+    "anime_ids": [
+        252655,
+        287488
+    ]
+}

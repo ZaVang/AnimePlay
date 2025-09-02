@@ -1,0 +1,39 @@
+{
+    "id": 63583,
+    "name": "犍陀多",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d4/bf/63583_crt_q5Q7Z.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/bf/63583_crt_q5Q7Z.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/bf/63583_crt_q5Q7Z.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d4/bf/63583_crt_q5Q7Z.jpg"
+    },
+    "summary": "名うての盗賊。 傍若無人で、国王ですら手玉にとる器だが、そのために死刑となる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "犍陀多"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        2882
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "id": 36494,
+    "name": "飯島ゆん",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/47/11/36494_crt_2GEjc.jpg?r=1469387382",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/11/36494_crt_2GEjc.jpg?r=1469387382",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/11/36494_crt_2GEjc.jpg?r=1469387382",
+        "grid": "https://lain.bgm.tv/pic/crt/g/47/11/36494_crt_2GEjc.jpg?r=1469387382"
+    },
+    "summary": "　　役職：キャラクターデザイナー\r\n　　21歳。はじめと同期。関西弁で話し、フリルやレースがついた服を好んで着用し、自宅では名前の書かれた学生時代のものと思われるジャージを着ている。少なくとも2人の妹がおり、面倒見のいいお姉ちゃんである。\r\n　　同じブースの青葉、ひふみ、はじめと、おやつの時間によく一緒にお茶を飲んでいる。青葉からは良い意味で年上の感じがしないと言われているが、彼女曰く「青葉が接しやすいように子供っぽく振舞っているだけ」とのこと。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "饭岛结音"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "饭岛优"
+                },
+                {
+                    "k": "日文名",
+                    "v": "飯島 ゆん"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いいじま ゆん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Iijima Yun"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月6日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "151cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 6,
+    "stat": {
+        "comments": 29,
+        "collects": 133
+    },
+    "anime_ids": [
+        208908,
+        150775
+    ]
+}

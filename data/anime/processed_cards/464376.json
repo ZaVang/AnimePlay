@@ -1,0 +1,152 @@
+{
+    "id": 464376,
+    "name": "败犬女主太多了！",
+    "image_path": "data/images/anime/464376.jpg",
+    "points": 8.0,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "没能赢得心上人恋情的女孩——“败犬女主”。\r\n爱吃的青梅竹马系女主·八奈见杏菜。\r\n活力充沛的运动系女主·烧盐柠檬。\r\n怕生的小动物系女主·小鞠知花。\r\n被有点缺憾的败犬女主——败女们环绕，新感觉、乱糟糟的败走系青春故事就此揭幕。\r\n因失败而更加闪耀吧，败女们！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "小说改"
+    ],
+    "date": "2024-07-13",
+    "rating_rank": 243,
+    "rating_score": 8.0,
+    "rating_total": 22055,
+    "main_character_ids": [
+        111327,
+        111328,
+        111329,
+        111330
+    ],
+    "main_characters": [
+        {
+            "id": 111327,
+            "name": "温水和彦",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/ee/111327_crt_4RiER.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/ee/111327_crt_4RiER.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/ee/111327_crt_4RiER.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/ee/111327_crt_4RiER.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 41073,
+                    "name": "梅田修一朗",
+                    "type": 2,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/dc/41073_prsn_ol77n.jpg?r=1633081644"
+                    },
+                    "short_summary": "梅田 修一朗（うめだ しゅういちろう、10月11日）は、日本の男性声優。千葉県出身。賢プロダクション所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 111328,
+            "name": "八奈見杏菜",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/87/fc/111328_crt_mW5Z8.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/fc/111328_crt_mW5Z8.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/fc/111328_crt_mW5Z8.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/87/fc/111328_crt_mW5Z8.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 32639,
+                    "name": "遠野ひかる",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/76/24/32639_prsn_U39V2.jpg?r=1710509264",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/76/24/32639_prsn_U39V2.jpg?r=1710509264",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/76/24/32639_prsn_U39V2.jpg?r=1710509264",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/76/24/32639_prsn_U39V2.jpg?r=1710509264"
+                    },
+                    "short_summary": "遠野 ひかる（とおの ひかる、1996年3月5日 - ）は、日本の女性声優。響所属。東京都出身。\r\n\r\nオーディションを経て、響の所属となった。同期には紡木吏佐がいる。‏\r\n初めて声をあてた作品はアプリゲーム『トリプルモンスターズ』のメリュジーナ･マーリン役である。\r\n\r\n特技\tダンス、栄養管理(家庭料理技能検定3級)\r\n趣味\t舞台鑑賞、ピアノ、読書",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 111329,
+            "name": "焼塩檸檬",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/95/e0/111329_crt_lAAxq.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/e0/111329_crt_lAAxq.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/e0/111329_crt_lAAxq.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/95/e0/111329_crt_lAAxq.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 34866,
+                    "name": "若山詩音",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/87/b9/34866_prsn_3xaEH.jpg?r=1728674708",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/b9/34866_prsn_3xaEH.jpg?r=1728674708",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/b9/34866_prsn_3xaEH.jpg?r=1728674708",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/87/b9/34866_prsn_3xaEH.jpg?r=1728674708"
+                    },
+                    "short_summary": "若山 詩音（わかやま しおん、1998年2月10日 - ）は、日本の女性声優、元子役。千葉県出身。劇団ひまわり所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 111330,
+            "name": "小鞠知花",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8e/66/111330_crt_C5zCe.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/66/111330_crt_C5zCe.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/66/111330_crt_C5zCe.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8e/66/111330_crt_C5zCe.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 49576,
+                    "name": "寺澤百花",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/36/fb/49576_prsn_4i4Mm.jpg?r=1728675202",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/fb/49576_prsn_4i4Mm.jpg?r=1728675202",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/fb/49576_prsn_4i4Mm.jpg?r=1728675202",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/36/fb/49576_prsn_4i4Mm.jpg?r=1728675202"
+                    },
+                    "short_summary": "出身地：千葉県\r\n資格：漢字検定3級／英語検定3級／ヤマハグレード6級\r\n趣味：動画鑑賞／ディズニーリゾートのトリビア探し\r\n特技：赤ちゃんの声マネ",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

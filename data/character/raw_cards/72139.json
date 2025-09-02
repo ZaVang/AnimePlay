@@ -1,0 +1,44 @@
+{
+    "id": 72139,
+    "name": "水崎ツバメ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2e/b9/72139_crt_Ml1S1.jpg?r=1580228401",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/b9/72139_crt_Ml1S1.jpg?r=1580228401",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/b9/72139_crt_Ml1S1.jpg?r=1580228401",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2e/b9/72139_crt_Ml1S1.jpg?r=1580228401"
+    },
+    "summary": "本作品の主人公の一人で映像研のメンバー。美人のカリスマ読モで街中にポスターが貼ってあるほどの有名人、さらに実家がお金持ちだが、アニメーター志望。浅草並みに好奇心が強く、探検に出掛ける時には目を輝かせる。アニメーションによる動きのリアルさを表現することにこだわりを持つ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "水崎燕"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Mizusaki Tsubame"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 17,
+        "collects": 76
+    },
+    "anime_ids": [
+        282433
+    ]
+}

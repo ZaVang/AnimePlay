@@ -1,0 +1,47 @@
+{
+    "id": 72125,
+    "name": "バーナードオトゥール",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/40/6e/72125_crt_yxgky.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/6e/72125_crt_yxgky.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/6e/72125_crt_yxgky.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/40/6e/72125_crt_yxgky.jpg"
+    },
+    "summary": "联合防卫军欧洲第四特种部队军曹（中士），优秀的职业军人，好酒贪杯却从不误事，深受士兵信任，平时最爱挂在嘴边的话是“为了酒和女人，一定要活着回去！”在夺取环轨基地的高速作战飞船的战斗中与D-Boy相识，二人成为生死之交，他对鹰矢也有着很大的影响，宇宙骑士基地毁灭半年后，为传讯给外出执行任务的宇宙骑士队而奔波，与高野于英格兰再度重逢时刚好救了鹰矢一次，阿拉斯加的基地防卫战里，又为掩护正在进行超进化的高野而牺牲。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "巴纳德·奥图尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Sergeant Miles O'Rourke"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Barnard O'Toole"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        2481
+    ]
+}

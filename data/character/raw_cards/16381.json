@@ -1,0 +1,74 @@
+{
+    "id": 16381,
+    "name": "貧保田紅葉",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ac/48/16381_crt_IKc18.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/48/16381_crt_IKc18.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/48/16381_crt_IKc18.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ac/48/16381_crt_IKc18.jpg"
+    },
+    "summary": "为了保持「幸」と「不幸」的均衡，贫乏之神从上级接管了市子，没什么可让贫乳之神担心的。为了从市子身上夺取幸福能力，贫乏之神需要自己掏钱购买使用各种各样的神道具。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "贫保田红叶"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "びんぼだ もみじ"
+                },
+                {
+                    "v": "Binboda Momiji"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "もみじ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Momiji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月22日"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "体重",
+            "value": "39kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B78/W58/H79"
+        },
+        {
+            "key": "职业",
+            "value": "貧乏神"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 22,
+    "stat": {
+        "comments": 9,
+        "collects": 58
+    },
+    "anime_ids": [
+        37722
+    ]
+}

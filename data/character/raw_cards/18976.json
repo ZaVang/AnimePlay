@@ -1,0 +1,89 @@
+{
+    "id": 18976,
+    "name": "鳴子章吉",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f9/ab/18976_crt_Y27zq.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/ab/18976_crt_Y27zq.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/ab/18976_crt_Y27zq.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f9/ab/18976_crt_Y27zq.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鸣子章吉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "なるこ しょうきち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Naruko Shōkichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "8月28日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "56kg"
+        },
+        {
+            "key": "学校",
+            "value": "总北高校"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "面包/牛奶/烟火（带着自费的浴衣）"
+        },
+        {
+            "key": "收集的东西",
+            "value": "红色的东西/华丽的东西"
+        },
+        {
+            "key": "得意的东西",
+            "value": "烧烤的手艺"
+        },
+        {
+            "key": "得意科目",
+            "value": "喜欢地理"
+        },
+        {
+            "key": "爱车",
+            "value": "制造商：PINARELLO；颜色：红×黑"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 28,
+    "stat": {
+        "comments": 8,
+        "collects": 26
+    },
+    "anime_ids": [
+        59583,
+        104468
+    ]
+}

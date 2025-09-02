@@ -1,0 +1,44 @@
+{
+    "id": 63581,
+    "name": "城島",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e4/1b/63581_crt_11xCC.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/1b/63581_crt_11xCC.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/1b/63581_crt_11xCC.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e4/1b/63581_crt_11xCC.jpg"
+    },
+    "summary": "高田の親友。学生時代、戯曲を書くことに悩んでいた高田を叱咤し、勇気づけた。 高田ととある約束をするが、それが果たされることはなく……。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "城岛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "城島 貴一"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        2882
+    ]
+}

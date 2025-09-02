@@ -1,0 +1,88 @@
+{
+    "id": 93739,
+    "name": "乒乓",
+    "image_path": "data/images/anime/93739.jpg",
+    "points": 8.7,
+    "cost": 5,
+    "rarity": "HR",
+    "description": "星野裕（阿扁）是乒乓球天才，月本诚（笑匠）则是极具天赋的乒乓球好手。他们俩从小一起长大，同为片濑高中乒乓球队队员。在高校联赛中，遇上来自中国上海的孔文革、上届冠军风间龙一，关于乒乓联赛的成长的故事拉开序幕……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 11,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "运动",
+        "漫画改"
+    ],
+    "date": "2014-04-10",
+    "rating_rank": 24,
+    "rating_score": 8.7,
+    "rating_total": 14951,
+    "main_character_ids": [
+        23120,
+        23121
+    ],
+    "main_characters": [
+        {
+            "id": 23120,
+            "name": "星野裕",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/de/28/23120_crt_Yey01.jpg?r=1390458298",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/28/23120_crt_Yey01.jpg?r=1390458298",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/28/23120_crt_Yey01.jpg?r=1390458298",
+                "grid": "https://lain.bgm.tv/pic/crt/g/de/28/23120_crt_Yey01.jpg?r=1390458298"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 14143,
+                    "name": "片山福十郎",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fb/3a/14143_prsn_5eFf5.jpg?r=1396451098",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/3a/14143_prsn_5eFf5.jpg?r=1396451098",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/3a/14143_prsn_5eFf5.jpg?r=1396451098",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fb/3a/14143_prsn_5eFf5.jpg?r=1396451098"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 23121,
+            "name": "月本誠",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/48/3e/23121_crt_ffM61.jpg?r=1390458522",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/3e/23121_crt_ffM61.jpg?r=1390458522",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/3e/23121_crt_ffM61.jpg?r=1390458522",
+                "grid": "https://lain.bgm.tv/pic/crt/g/48/3e/23121_crt_ffM61.jpg?r=1390458522"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5768,
+                    "name": "内山昂輝",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0f/d1/5768_prsn_35lt8.jpg?r=1637964101"
+                    },
+                    "short_summary": "内山 昂輝（うちやま こうき、1990年8月16日 - ）は、日本の声優、俳優。劇団ひまわり所属。\r\n早稲田大学卒業。 国際基督教大学高等学校出身。 1993年に劇団ひまわりに入団し、子役としてテレビドラマへの出演や少年役の吹き替えを主に行っていた。舞台経験はない。なお、声優として初めて参加した作品はA.I.である。\r\n2005年に発売された『キングダム ハーツII』のロクサス役で注目を浴び、その後は声優としての活動が多くなっている。内山本人も自身を「明朗快活なタイプではない」と語っているように、主にどこか影のある少年役を演じるが、明るい少年役を演じることも多くなっている。\r\n2011年、第5回声優アワードにて新人男優賞を受賞。2015年、東京アニメアワード2015で発表されたアニメ オブ ザ イヤーで声優賞を受賞。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

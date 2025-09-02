@@ -1,0 +1,54 @@
+{
+    "id": 66479,
+    "name": "ユーリア・シャルデット",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/08/b8/66479_crt_Uub8A.jpg?r=1611791687",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/b8/66479_crt_Uub8A.jpg?r=1611791687",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/b8/66479_crt_Uub8A.jpg?r=1611791687",
+        "grid": "https://lain.bgm.tv/pic/crt/g/08/b8/66479_crt_Uub8A.jpg?r=1611791687"
+    },
+    "summary": "ふわふわの天然系で直感力と幸運に恵まれた生まれついての勇者体質。\r\n他人の家に勝手にお邪魔してアイテムを探すなど、一般的な常識はちょっと欠けている。\r\n何かに夢中になるとすぐに目的から脱線してしまうため、いつも仲間に支えてもらっている。\r\nどんな相手にも心優しく、とても仲間想いである。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "尤莉娅·夏尔戴特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ユーシャ"
+                },
+                {
+                    "v": "Yusha"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Yulia Chardiet"
+                },
+                {
+                    "k": "昵称",
+                    "v": "尤夏"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 15,
+        "collects": 78
+    },
+    "anime_ids": [
+        254895
+    ]
+}

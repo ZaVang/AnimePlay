@@ -1,0 +1,44 @@
+{
+    "id": 14372,
+    "name": "ポヨ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d5/5f/14372_crt_tkZ91.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/5f/14372_crt_tkZ91.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/5f/14372_crt_tkZ91.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d5/5f/14372_crt_tkZ91.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "嘟嘟"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "POYO"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 17
+    },
+    "anime_ids": [
+        23537
+    ]
+}

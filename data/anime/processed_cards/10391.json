@@ -1,0 +1,88 @@
+{
+    "id": 10391,
+    "name": "城市猎人",
+    "image_path": "data/images/anime/10391.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "《城市猎人》（シティーハンター，City Hunter）是日本漫画家北条司的漫画代表作之一，中国大陆曾以《侠探寒羽良》为名出版未授权删节本。\r\n\r\n因为该作品的火爆，除了漫画外被改变成动画、动画电影、小说以及真人电影。\r\n\r\n漫画《天使心》则是《城市猎人》的平行世界作品，只延用《城市猎人》故事人物，而非其续集",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 51,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1987-04-06",
+    "rating_rank": 678,
+    "rating_score": 7.6,
+    "rating_total": 679,
+    "main_character_ids": [
+        2830,
+        6968
+    ],
+    "main_characters": [
+        {
+            "id": 2830,
+            "name": "冴羽獠",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d3/c8/2830_crt_Ecm4v.jpg?r=1729050394",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/c8/2830_crt_Ecm4v.jpg?r=1729050394",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/c8/2830_crt_Ecm4v.jpg?r=1729050394",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d3/c8/2830_crt_Ecm4v.jpg?r=1729050394"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4202,
+                    "name": "神谷明",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b5/49/4202_prsn_jkJnt.jpg?r=1751970040",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/49/4202_prsn_jkJnt.jpg?r=1751970040",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/49/4202_prsn_jkJnt.jpg?r=1751970040",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b5/49/4202_prsn_jkJnt.jpg?r=1751970040"
+                    },
+                    "short_summary": "日本の声優、俳優、歌手、ナレーター、元日本工学院専門学校声優・俳優科講師。神奈川県横浜市出身。\r\n\r\n妻は元声優の戸部光代、長女はシナリオライターの華宮ゆう士、次女はミュージカル女優の神谷たえ。有限会社冴羽商事代表取締役。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6968,
+            "name": "槇村香",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a1/e9/6968_crt_QHHsG.jpg?r=1729050426",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/e9/6968_crt_QHHsG.jpg?r=1729050426",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/e9/6968_crt_QHHsG.jpg?r=1729050426",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a1/e9/6968_crt_QHHsG.jpg?r=1729050426"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4043,
+                    "name": "伊倉一恵",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8f/b1/4043_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/b1/4043_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/b1/4043_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8f/b1/4043_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "伊倉一惠出生於长野县上田市。药科大学落榜后，接受母亲的建议，来到东京加入了俳协演剧研究所，為該研究所7期生。两年后加入东京俳优生活协同组合。第一份工作是日本放送的鬧劇广播节目《超動漫》（ウルトラアニメ）。1979年，在《漫画猿飞佐助》中，以女忍者一角之声优出道。\r\n\r\n在研究所的毕业公演之后，开始以舞台为志向。1980年加入手塚敏夫主创的剧团「-劇舎(SHIBAIYA)-燐」，最多一年参加过6场公演。当时，以舞台为中心，以较自由的声优工作为兼职。1981年在《漫画水户黄门》中，以琴这一角色出道。1985年从「-劇舎(SHIBAIYA)-燐」退团，在25岁左右时正式开始声优工作。1987年在《城市猎人》中演出槇村香，这一作品也成为了她的成名作。\r\n\r\n1988年开始在《魔神英雄传》中演出虎王，与田中真弓相识，和田中一起加入了渡边正行的艺能事务所なべや。受到田中的影响，再一次开始了舞台活动。1993年在《魔神英雄传》的监督井内秀治担任专属作家的剧团「アトリエいっぽんの木」复出。\r\n\r\n1989年与同为声优的神代知衣以及坂本千夏组成名为「GALLOP」的和声组合。1990年在7月放送的《罗宾汉大冒险》中，第一次演出了TV动画的主角罗伯特·杭丁顿。在同年10月的《三目童子》中继续演出了主角写乐保介。游戏方面，在1992年发售的RPG游戏《天外魔境卍MARU》中演出主角战国卍丸。\r\n\r\n1996年开始演出《樱花大战》系列中雷尼·米尔西修特拉瑟这一角色，并在《樱花大战歌谣秀》中担任一部分乐曲的和声以及无伴奏清唱的编曲。在编曲时也负责选曲和全声部录音。演奏过钢琴和原声吉他等乐器。作为钢琴家根岸弥生音乐会的制作人，以朗诵的形式进行共同演出。\r\n\r\n2011年「GALLOP」举行了时隔20年的复活Live。2012年与田中真弓、竹田えり、高乃麗组成演剧组合「コーネンキーズ」。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": 21580,
+    "name": "鮮血",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/03/17/21580_crt_7A3oS.jpg?r=1400850118",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/17/21580_crt_7A3oS.jpg?r=1400850118",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/17/21580_crt_7A3oS.jpg?r=1400850118",
+        "grid": "https://lain.bgm.tv/pic/crt/g/03/17/21580_crt_7A3oS.jpg?r=1400850118"
+    },
+    "summary": "流子が身につける事になる神衣（かむい）。\r\n父の残した、意志をもちしゃべるセーラー服だが、\r\n記憶が定かではなく過去の事などはあまり覚えていない。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鲜血"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "せんけつ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "senketsu"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.kill-la-kill.jp/character/"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 21,
+        "collects": 80
+    },
+    "anime_ids": [
+        72941
+    ]
+}

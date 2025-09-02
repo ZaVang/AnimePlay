@@ -1,0 +1,54 @@
+{
+    "id": 1778,
+    "name": "ククリ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/63/9b/1778_crt_e76Ze.jpg?r=1631424834",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/9b/1778_crt_e76Ze.jpg?r=1631424834",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/9b/1778_crt_e76Ze.jpg?r=1631424834",
+        "grid": "https://lain.bgm.tv/pic/crt/g/63/9b/1778_crt_e76Ze.jpg?r=1631424834"
+    },
+    "summary": "女主角。黑暗族裔米古米古的最后遗裔，能使用咕噜咕噜魔法，但记性差，常画出错误魔法阵，使勇者尼克身陷险境。喜欢尼克。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "柯柯丽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "歌莉"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月16日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 16,
+    "stat": {
+        "comments": 3,
+        "collects": 32
+    },
+    "anime_ids": [
+        205485,
+        3149,
+        3148
+    ]
+}

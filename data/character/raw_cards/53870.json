@@ -1,0 +1,40 @@
+{
+    "id": 53870,
+    "name": "猫",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/80/ab/53870_crt_0eix8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/ab/53870_crt_0eix8.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/ab/53870_crt_0eix8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/80/ab/53870_crt_0eix8.jpg"
+    },
+    "summary": "声优：藤本たかひろ、回忆画面的幼猫：野上尤加奈\r\n住在坂井家密室的黑猫。被关住的珠生相当疼爱它。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "猫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ねこ"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        976
+    ]
+}

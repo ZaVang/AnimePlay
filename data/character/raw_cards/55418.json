@@ -1,0 +1,44 @@
+{
+    "id": 55418,
+    "name": "アンドレ・グランディエ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/73/cd/55418_crt_W4ffc.jpg?r=1738602964",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/cd/55418_crt_W4ffc.jpg?r=1738602964",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/cd/55418_crt_W4ffc.jpg?r=1738602964",
+        "grid": "https://lain.bgm.tv/pic/crt/g/73/cd/55418_crt_W4ffc.jpg?r=1738602964"
+    },
+    "summary": "ジャルジェ家に仕える、オスカルの従者かつ幼なじみ。母親が亡くなり、唯一の肉親の祖母マロンに育てられる。\r\n\r\n平民でありながらオスカルには幼い頃から友人として対等な関係を求められてきたため、祖母にたしなめられることが多い。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "安德烈·葛兰迪耶"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Andre Grandier"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 5
+    },
+    "anime_ids": [
+        12579
+    ]
+}

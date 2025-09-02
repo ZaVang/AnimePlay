@@ -1,0 +1,70 @@
+{
+    "id": 17607,
+    "name": "北島マヤ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f1/40/17607_crt_HB3AX.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/40/17607_crt_HB3AX.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/40/17607_crt_HB3AX.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f1/40/17607_crt_HB3AX.jpg"
+    },
+    "summary": "往年の大女優である月影千草にその才能を見出され、母親の反対を押し切り、家出して月影のもとで女優への道を歩む。劇団の仲間と友情を育み、師匠の元で演技を磨いていく。決して慢心することなく、演技を磨くためにひたむきに努力する姿が多くの人々の胸をうつ。初めての発表会「若草物語」では、ベス役に抜擢され、高熱を押して出演。そのひたむきさは大都芸能の速水真澄の凍れる心を溶かした。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "北岛真夜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "谭宝莲"
+                },
+                {
+                    "v": "北島麻亞"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "北島麻雅"
+                },
+                {
+                    "k": "日文名",
+                    "v": "北島 マヤ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きたじま まや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kitajima Maya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1963年2月20日"
+        },
+        {
+            "key": "体重",
+            "value": "156 cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1963,
+    "birth_mon": 2,
+    "birth_day": 20,
+    "stat": {
+        "comments": 2,
+        "collects": 9
+    },
+    "anime_ids": [
+        1961
+    ]
+}

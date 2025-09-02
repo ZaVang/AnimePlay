@@ -1,0 +1,39 @@
+{
+    "id": 17608,
+    "name": "月影千草",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bd/05/17608_crt_U3kZv.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/05/17608_crt_U3kZv.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/05/17608_crt_U3kZv.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bd/05/17608_crt_U3kZv.jpg"
+    },
+    "summary": "往年の大女優。劇団つきかげ主宰兼マヤの師匠。演劇史に名を残す名作『紅天女』の主役を務めた唯一の人物で、現在の『紅天女』上演権の持ち主。マヤの才能を見出し、自分の後継者として彼女を厳しく教育し、見守っている。　",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月29日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 29,
+    "stat": {
+        "comments": 3,
+        "collects": 4
+    },
+    "anime_ids": [
+        1961
+    ]
+}

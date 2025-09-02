@@ -1,0 +1,35 @@
+{
+    "id": 160991,
+    "name": "うっかりハチベー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3f/27/160991_crt_0LRg0.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/27/160991_crt_0LRg0.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/27/160991_crt_0LRg0.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3f/27/160991_crt_0LRg0.jpg"
+    },
+    "summary": "﻿うっかり者。\r\n思わぬ角度で裏切ってくるうっかりは、もはやエンターテイメント。\r\n村人達もそのうっかりを楽しんでいる。\r\nゴールデンレトリーバーとは幼馴染で、よく面倒を見て貰っている。\r\n\r\n冒失鬼，会以意想不到的角度冒失，村民们也以此为乐，跟黄金猎犬是青梅竹马，常常受到照顾。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "冒失鬼八兵卫"
+        },
+        {
+            "key": "别名",
+            "value": []
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 1
+    },
+    "anime_ids": [
+        490824
+    ]
+}

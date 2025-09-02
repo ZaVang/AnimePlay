@@ -1,0 +1,84 @@
+{
+    "id": 14960,
+    "name": "南ことり",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/05/0a/14960_crt_am5VS.jpg?r=1459814962",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/0a/14960_crt_am5VS.jpg?r=1459814962",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/0a/14960_crt_am5VS.jpg?r=1459814962",
+        "grid": "https://lain.bgm.tv/pic/crt/g/05/0a/14960_crt_am5VS.jpg?r=1459814962"
+    },
+    "summary": "アイドルなんて、ことりは全然自信ないんですけど、でもみんなと一緒だったら頑張れるかなって参加させてもらうことになりました。ただ、よく天然って言われちゃうし、けっこう、ドジが多いから、みんなの足を引っ張らないようにがんばらなくちゃ！　って思っています。でも、歌ったり踊ったりするのは大好きだから、一生懸命練習したいです　みんなを元気にできる踊りができるといいな。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "南琴梨"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "南小鸟"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みなみ ことり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Minami Kotori"
+                },
+                {
+                    "k": "昵称",
+                    "v": "小鸟、小鸟酱、ことりちゃん、Minalinsky"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月12日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "BWH",
+            "value": "80/58/80"
+        },
+        {
+            "key": "学级",
+            "value": "高中2年级"
+        },
+        {
+            "key": "年龄",
+            "value": "16岁"
+        },
+        {
+            "key": "分组",
+            "value": "Printemps"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 12,
+    "stat": {
+        "comments": 59,
+        "collects": 324
+    },
+    "anime_ids": [
+        49294
+    ]
+}

@@ -1,0 +1,82 @@
+{
+    "id": 4,
+    "name": "古河渚",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e9/cf/4_crt_ZeUZW.jpg?r=1692105566",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/cf/4_crt_ZeUZW.jpg?r=1692105566",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/cf/4_crt_ZeUZW.jpg?r=1692105566",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e9/cf/4_crt_ZeUZW.jpg?r=1692105566"
+    },
+    "summary": "就读某高中的3年B班，比朋也大一岁，因为久病重读一年，对于将面对新的环境而在往校门前的坡道上不敢前行，也因此和朋也相遇并熟识。\r\n家里开面包店，有个直爽的父亲和温柔的母亲。\r\n个性认真温柔，缺乏自信，不过有时却意外的顽固。\r\n十分喜欢演戏，可是却完全没有演戏剧的经验，目标是再建立戏剧社。\r\n对以前流行的“团子大家族”特别喜爱，时常哼著团子大家族的歌，也常抱着团子大家族的布偶入睡。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "古河渚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "冈崎渚"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ふるかわ なぎさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Furukawa Nagisa"
+                },
+                {
+                    "k": "昵称",
+                    "v": "小渚"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月24日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "体重",
+            "value": "43kg"
+        },
+        {
+            "key": "BWH",
+            "value": "80/55/81"
+        },
+        {
+            "key": "声优",
+            "value": "中原麻衣"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 24,
+    "stat": {
+        "comments": 305,
+        "collects": 1408
+    },
+    "anime_ids": [
+        876,
+        51,
+        363880
+    ]
+}

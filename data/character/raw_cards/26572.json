@@ -1,0 +1,82 @@
+{
+    "id": 26572,
+    "name": "ディアンヌ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/15/9c/26572_crt_LJrNq.jpg?r=1426527849",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/9c/26572_crt_LJrNq.jpg?r=1426527849",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/9c/26572_crt_LJrNq.jpg?r=1426527849",
+        "grid": "https://lain.bgm.tv/pic/crt/g/15/9c/26572_crt_LJrNq.jpg?r=1426527849"
+    },
+    "summary": "「嫉妬の罪（サーペント・シン）のディアンヌ」。印となる獣は蛇。刺青の位置は左の太腿。\r\n\r\n纹身：蛇（Serpent ）位置：左大腿外侧\r\n巨人族的少女，身体与力量都远超常人，与大地有着紧密联系，在团员中拥有最强怪力而自豪，罪因不明。于『白梦之森』与团长一行汇合，后被任命为猪帽子亭的大招牌女郎。讨厌虫子。\r\n个性直爽，爱憎分明。有着纯粹的善良天性，多次不顾自身安危救助别人，赤子之心连身处敌对立场的圣骑士都被由衷打动。精神年龄只有15岁，相当孩子气，容易吃醋，害羞时惯以双马尾遮脸。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黛安"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "嫉妬の罪（サーペント・シン）"
+                },
+                {
+                    "v": "Serpent's Sin of Envy"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "戴安娜"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Diane"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月24日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "914cm（變小後165cm）"
+        },
+        {
+            "key": "体重",
+            "value": "不明"
+        },
+        {
+            "key": "種族",
+            "value": "巨人族"
+        },
+        {
+            "key": "年齢",
+            "value": "約750歳（人間換算で15歳）"
+        },
+        {
+            "key": "闘級",
+            "value": "3250（魔力900/武力1970/気力480）→8000（通常）48000（ドロールの舞使用時）"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 24,
+    "stat": {
+        "comments": 17,
+        "collects": 38
+    },
+    "anime_ids": [
+        101820
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "id": 33776,
+    "name": "鬼野笑美",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c2/65/33776_crt_RPs22.jpg?r=1443190757",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/65/33776_crt_RPs22.jpg?r=1443190757",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/65/33776_crt_RPs22.jpg?r=1443190757",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c2/65/33776_crt_RPs22.jpg?r=1443190757"
+    },
+    "summary": "超人課の創設にも関係がある中核メンバー。かつては爾朗と付き合っていた。絵や写真から姿を借りて自身の容姿とする特殊能力をもつため、爾朗と同年代のはずだが年齢不詳。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鬼野笑美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Kino Emi"
+                },
+                {
+                    "k": "日文名",
+                    "v": "鬼野笑美"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きのえみ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 21,
+        "collects": 63
+    },
+    "anime_ids": [
+        139022,
+        160271
+    ]
+}

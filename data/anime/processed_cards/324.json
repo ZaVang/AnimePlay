@@ -1,0 +1,153 @@
+{
+    "id": 324,
+    "name": "攻壳机动队 STAND ALONE COMPLEX",
+    "image_path": "data/images/anime/324.jpg",
+    "points": 9.1,
+    "cost": 6,
+    "rarity": "UR",
+    "description": "公元2030的世界，改造人、生化人、机器人等等的存在已经非常普及。主人公草薙素子正是人类最高科技的结晶：只有大脑是人脑，其余身体部分皆为机械装置，外表看起来则是一名美貌兼干练的年轻女性。在这个高科技的世界里，人类通过更换身体的各个部件而达到长寿已不是新鲜事，更有许多人的大脑也已经电脑化，从而真正实现所谓的“电子化的存在”(并非“信息化的存在”)。从庞大的社会结构直至单独的个人身体，都可方便的通过网络连接，构成了一个无比复杂的信息网络：这就是本作的世界基础。 虽然人类社会的电脑化带来很多方便，但是无论构造成为身体的材料怎样变化，人类毕竟还是拥有人性，因此各种以电脑为契机的犯罪层出不穷。日本的公安九课是一个高出统治阶层的存在，它的职能就是猎捕一切有关于高级电脑类刑事犯罪者。公安九课所面对的罪犯：有时可能是政府中的高官，有时可能是偷换他人大脑的投机分子，更有可能是身边的同伴；每一次的案件，都是对人类存在的再思考，都可能给队内的每一个队员带来沉重的精神压力。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2002-10-01",
+    "rating_rank": 5,
+    "rating_score": 9.1,
+    "rating_total": 10267,
+    "main_character_ids": [
+        84,
+        3002,
+        3008,
+        36174
+    ],
+    "main_characters": [
+        {
+            "id": 84,
+            "name": "草薙素子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/11/7b/84_crt_xc45y.jpg?r=1587737580",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/11/7b/84_crt_xc45y.jpg?r=1587737580",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/11/7b/84_crt_xc45y.jpg?r=1587737580",
+                "grid": "https://lain.bgm.tv/pic/crt/g/11/7b/84_crt_xc45y.jpg?r=1587737580"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3873,
+                    "name": "田中敦子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6e/af/3873_prsn_1lUVv.jpg?r=1725375926",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/af/3873_prsn_1lUVv.jpg?r=1725375926",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/af/3873_prsn_1lUVv.jpg?r=1725375926",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6e/af/3873_prsn_1lUVv.jpg?r=1725375926"
+                    },
+                    "short_summary": "日本の女性声優、ナレーターである。マウスプロモーション所属。群馬県前橋市出身。群馬県立前橋女子高等学校、フェリス女学院大学国文科卒業。",
+                    "locked": false
+                },
+                {
+                    "id": 12693,
+                    "name": "Mary Elizabeth McGlynn",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e7/d1/12693_prsn_WYbbP.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/d1/12693_prsn_WYbbP.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/d1/12693_prsn_WYbbP.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e7/d1/12693_prsn_WYbbP.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 3002,
+            "name": "バトー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/da/95/3002_crt_DyxyG.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/95/3002_crt_DyxyG.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/95/3002_crt_DyxyG.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/da/95/3002_crt_DyxyG.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3832,
+                    "name": "大塚明夫",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/18/8c/3832_prsn_O1E5c.jpg?r=1545044333"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーター。マウスプロモーション所属。\r\n父は同じく俳優・声優の大塚周夫、元妻は声優の沢海陽子。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 3008,
+            "name": "公安9課",
+            "type": 4,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f5/c8/3008_crt_ftTsK.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/c8/3008_crt_ftTsK.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/c8/3008_crt_ftTsK.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f5/c8/3008_crt_ftTsK.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 36174,
+            "name": "笑い男",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5d/7b/36174_crt_zw4T4.jpg?r=1444986754",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5d/7b/36174_crt_zw4T4.jpg?r=1444986754",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5d/7b/36174_crt_zw4T4.jpg?r=1444986754",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5d/7b/36174_crt_zw4T4.jpg?r=1444986754"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3914,
+                    "name": "山寺宏一",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/36/d6/3914_prsn_pX74x.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/d6/3914_prsn_pX74x.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/d6/3914_prsn_pX74x.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/36/d6/3914_prsn_pX74x.jpg"
+                    },
+                    "short_summary": "日本男性聲優，1961年6月17日生\r\n少數由聲優轉型成演員、主持的成功例子，\r\n大學畢業後進入俳協養成所，1986年畢業，之後雖然演過不少角色但始終打不起名堂，直到《亂馬1/2》才以響良牙一角成名。\r\n擁有多變聲音聞名，被稱為「擁有七色聲音的男人」，由於什麼角色都能配，所以業界有個笑話說「配角想不到找誰來配的話就山寺宏一吧！」。\r\n由於這種萬能型特質所以雖然主角役很少，但卻是無數作品的必然配角，尤以洋畫系更明顯。\r\n富山敬離世後，山寺是其中一個接手富山角色的聲優。\r\n另一個以洋畫系為主舞台的聲優，多位荷里活紅星如愛迪．墨菲都是由他所配。\r\n和山口勝平，林原惠，戶田惠子，大塚明夫，富永美奈，田中敦子交好。\r\n因為洋畫配音被名編劇三谷幸喜發掘成為演員。\r\n不過也和他的聲優工作一樣，演的都是大配角以至小配角。\r\n1993年与声优金井美香结婚。2006年离婚。\r\n2012年6月17日在推特发表与声优田中理惠结婚。2018年8月3日，二人在各自的推特上宣布已离婚。\r\n2021年6月14日在推特发表与演员冈田罗宾翔子结婚。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

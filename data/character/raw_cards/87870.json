@@ -1,0 +1,48 @@
+{
+    "id": 87870,
+    "name": "ヒュンケル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a6/68/87870_crt_WdgZo.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/68/87870_crt_WdgZo.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/68/87870_crt_WdgZo.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a6/68/87870_crt_WdgZo.jpg"
+    },
+    "summary": "魔王ハドラーが指揮する６つの軍団のひとつである「不死騎団」の軍団長。とある事情からアバンを憎んでおり、人間でありながら魔王軍に味方している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "修伽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Hyunckel"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://dq-dai.com/character"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 3
+    },
+    "anime_ids": [
+        296980
+    ]
+}

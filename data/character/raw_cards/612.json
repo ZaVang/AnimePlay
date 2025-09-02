@@ -1,0 +1,87 @@
+{
+    "id": 612,
+    "name": "宮村みやこ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/42/84/612_crt_M4qCG.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/84/612_crt_M4qCG.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/84/612_crt_M4qCG.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/42/84/612_crt_M4qCG.jpg"
+    },
+    "summary": "第一章的女主角。音羽学园2年级生，虽然是姿容端丽、成绩优秀的女孩子，在男女生中也十分有名气，但同时也是有名的“跷课王”。在圣诞节之夜与纮邂逅。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宫村宫子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "宮村みやこ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みやむら みやこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Miyamura Miyako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月8日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "体重",
+            "value": "47kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B88/W57/H83"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "官方设定集"
+                },
+                {
+                    "v": "anidb.net"
+                }
+            ]
+        },
+        {
+            "key": "原作声优",
+            "value": "赤泽枫"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 2,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 8,
+    "stat": {
+        "comments": 43,
+        "collects": 216
+    },
+    "anime_ids": [
+        799
+    ]
+}

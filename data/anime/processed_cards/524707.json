@@ -1,0 +1,185 @@
+{
+    "id": 524707,
+    "name": "我怎么可能成为你的恋人，不行不行！(※不是不可能！？)",
+    "image_path": "data/images/anime/524707.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "「我要赢得最棒的校园生活！」\r\n为了摆脱孤单的国中生活，甘织玲奈子在高中成功华丽出道。然而因为天生个性阴沉的关系，让她无法适应梦寐以求的阳角生活。\r\n\r\n现役模特儿的完美美少女－「王冢真唯」\r\n温柔得像软绵绵的天使－「濑名紫阳花」\r\n总是冷静沉着的黑发美女－「琴纱月」\r\n活泼开朗的开心果－「小柳香穗」\r\n\r\n为了靠近憧憬的人们，甘织玲奈子今天也努力不懈。\r\n──本该如此。\r\n\r\n「我已经喜欢上妳了……」\r\n「等一下！说好的朋友关系呢？」\r\n\r\n在摇摆不定的心情之间，时而欢笑、时而烦恼，然后向前迈进吧！少女们。\r\n节奏明快的青春校园百合喜剧，现在热闹开幕！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "喜剧",
+        "百合",
+        "校园",
+        "后宫",
+        "TV",
+        "恋爱",
+        "日本",
+        "小说改"
+    ],
+    "date": "2025-07-07",
+    "rating_rank": 1937,
+    "rating_score": 7.2,
+    "rating_total": 1709,
+    "main_character_ids": [
+        101792,
+        101793,
+        101794,
+        101795,
+        101796
+    ],
+    "main_characters": [
+        {
+            "id": 101792,
+            "name": "甘織れな子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bd/1d/101792_crt_64hj4.jpg?r=1685930970",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/1d/101792_crt_64hj4.jpg?r=1685930970",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/1d/101792_crt_64hj4.jpg?r=1685930970",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bd/1d/101792_crt_64hj4.jpg?r=1685930970"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 26994,
+                    "name": "中村カンナ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/64/37/26994_prsn_4erd1.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/64/37/26994_prsn_4erd1.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/64/37/26994_prsn_4erd1.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/64/37/26994_prsn_4erd1.jpg"
+                    },
+                    "short_summary": "中村 カンナ（なかむら カンナ、10月26日 - ）は、日本の女性声優。大阪府出身。Rush Style準所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 101793,
+            "name": "王塚真唯",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3d/81/101793_crt_4LK8K.jpg?r=1685930996",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/81/101793_crt_4LK8K.jpg?r=1685930996",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/81/101793_crt_4LK8K.jpg?r=1685930996",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3d/81/101793_crt_4LK8K.jpg?r=1685930996"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 14320,
+                    "name": "大西沙織",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/67/e3/14320_prsn_NkyKy.jpg?r=1606880325",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/e3/14320_prsn_NkyKy.jpg?r=1606880325",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/e3/14320_prsn_NkyKy.jpg?r=1606880325",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/67/e3/14320_prsn_NkyKy.jpg?r=1606880325"
+                    },
+                    "short_summary": "大西 沙織（おおにし さおり、1992年8月6日 - ）は、日本の女性声優。千葉県出身。アイムエンタープライズ所属。\r\n\r\n小学校、中学校では吹奏楽部に所属し、サックスを吹いていた。高校時代は理系クラスで部活に入らず、養成学校に通っていた。\r\n声優を目指したきっかけは、小学4年生の頃テレビを観ていてアニメがおもしろいと思い、そのうち自然と「私は声優になるんだ」と考えるようになった。憧れの声優は坂本真綾と小林沙苗。\r\n事務所入所後の初仕事は2012年発売のドラマCD『ペンギンゑにし 第二譚 少女神隠し』。初めてオーディションで頂いた役は『ストライク・ザ・ブラッド』のラ・フォリア・リハヴァイン。\r\n『ラジオどっとあい』第60代目パーソナリティを2014年10月から同年12月まで務めた。\r\n特技はイラストを描くこと。\r\n趣味はアニメ・ドラマのサントラ鑑賞。\r\n2018年3月3日、第12回声優アワード助演女優賞・パーソナリティ賞受賞。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 101794,
+            "name": "瀬名紫陽花",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/72/30/101794_crt_3tzVe.jpg?r=1685931018",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/30/101794_crt_3tzVe.jpg?r=1685931018",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/30/101794_crt_3tzVe.jpg?r=1685931018",
+                "grid": "https://lain.bgm.tv/pic/crt/g/72/30/101794_crt_3tzVe.jpg?r=1685931018"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 31773,
+                    "name": "安齋由香里",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/02/9e/31773_prsn_pD9y1.jpg?r=1737363553",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/9e/31773_prsn_pD9y1.jpg?r=1737363553",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/9e/31773_prsn_pD9y1.jpg?r=1737363553",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/02/9e/31773_prsn_pD9y1.jpg?r=1737363553"
+                    },
+                    "short_summary": "日本女性声优，毕业于P's Voice Artist School",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 101795,
+            "name": "琴紗月",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/16/101795_crt_sRs4q.jpg?r=1685931055",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/16/101795_crt_sRs4q.jpg?r=1685931055",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/16/101795_crt_sRs4q.jpg?r=1685931055",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/16/101795_crt_sRs4q.jpg?r=1685931055"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 31136,
+                    "name": "市ノ瀬加那",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637"
+                    },
+                    "short_summary": "北海道帯広工業高等学校建築科出身。\r\n札幌スクールオブミュージック&ダンス専門学校出身。2016年4月に事務所に入所。\r\n\r\n2018年1月より放送のTVアニメ『ダーリン・イン・ザ・フランキス』のイチゴ役は市ノ瀬にとって、初のメインキャストとなった。\r\n2018年10月、超!A&G+とAG-ON Premiumで配信している「ラジオどっとあい」第76代目パーソナリティーに選ばれる。\r\n2019年4月7日、Twitterを始める。\r\n\r\n趣味は一人旅、スカイウォッチング、映画鑑賞。小・中学生時代にバスケットボールをやっており、現在も特技としている。\r\n\r\n危険物取扱者丙種、プレゼンテーション作成検定3級、日本語ワープロ検定3級、情報処理技能検定2級、パソコンスピード認定3級の資格を所持している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 101796,
+            "name": "小柳香穂",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/29/18/101796_crt_1Z3kN.jpg?r=1685931082",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/18/101796_crt_1Z3kN.jpg?r=1685931082",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/18/101796_crt_1Z3kN.jpg?r=1685931082",
+                "grid": "https://lain.bgm.tv/pic/crt/g/29/18/101796_crt_1Z3kN.jpg?r=1685931082"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 31565,
+                    "name": "田中貴子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/23/46/31565_prsn_ddSO9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/23/46/31565_prsn_ddSO9.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/23/46/31565_prsn_ddSO9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/23/46/31565_prsn_ddSO9.jpg"
+                    },
+                    "short_summary": "福井県出身の女性声優。マウスプロモーション所属。\r\n\r\n2015年、大阪アニメーションスクール専門学校の声優科 アニメ声優コースを卒業し、マウスプロモーション附属俳優養成所に入所。\r\n2017年4月1日に、マウスプロモーションに入所 。\r\n\r\n趣味・特技は、即興作詞作曲、ピアノ、1人ミュージカル、ジャングル動物の声真似。\r\n自身の性格を一言で表すと「ひもの女」だと語っている。\r\n地球上で一番好きなものには愛、一番嫌いなものにはゴキブリ、日本のホラー映画を挙げている。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

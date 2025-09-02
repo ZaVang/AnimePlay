@@ -1,0 +1,121 @@
+{
+    "id": 91205,
+    "name": "高分少女",
+    "image_path": "data/images/anime/91205.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "去和比我更强的GIRL相见——。\r\n“多边形”？那是啥？能吃吗？就在这种曾是2D全盛期的古早格斗游戏热潮到来的1991年。\r\n在不良、阿宅、上班族蔓延的市郊游戏中心，她凛然地坐在那里——。\r\n通过主人公春雄描绘的“90年代街机恋爱喜剧”！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2018-07-13",
+    "rating_rank": 327,
+    "rating_score": 7.9,
+    "rating_total": 5564,
+    "main_character_ids": [
+        61920,
+        61921,
+        61942
+    ],
+    "main_characters": [
+        {
+            "id": 61920,
+            "name": "矢口春雄",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7b/3f/61920_crt_2G3K5.jpg?r=1534652658",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/3f/61920_crt_2G3K5.jpg?r=1534652658",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/3f/61920_crt_2G3K5.jpg?r=1534652658",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7b/3f/61920_crt_2G3K5.jpg?r=1534652658"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7605,
+                    "name": "天﨑滉平",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d1/99/7605_prsn_mUHC1.jpg?r=1723389647",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d1/99/7605_prsn_mUHC1.jpg?r=1723389647",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d1/99/7605_prsn_mUHC1.jpg?r=1723389647",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d1/99/7605_prsn_mUHC1.jpg?r=1723389647"
+                    },
+                    "short_summary": "日本の男性声優。大阪府摂津市出身。\r\n日本ナレーション演技研究所を経て、2013年4月にアイムエンタープライズに所属。\r\n\r\n2018年10月より放送のTVアニメ『DOUBLE DECKER! ダグ&キリル』にてキリル・ヴルーベリ役でアニメ初主演を務める。\r\n2018年7月から放送開始のTVアニメ『ハイスコアガール』に主人公の矢口春雄役で出演、放送順としてはこちらが先の主演作品となった。\r\nゲームでは『テイルズ オブ クレストリア』にてカナタ・ヒューガ役で主演を務める。\r\n\r\n趣味は写真撮影で、雑誌のコラムや出演した番組などで披露している。\r\n甘いものが好きで、スイーツを出すカフェでバイト経験がある。\r\n事務所の同期に、内田雄馬、小澤亜李、長縄まりあがいる。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 61921,
+            "name": "大野晶",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ce/09/61921_crt_3tP1o.jpg?r=1534652875",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/09/61921_crt_3tP1o.jpg?r=1534652875",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/09/61921_crt_3tP1o.jpg?r=1534652875",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ce/09/61921_crt_3tP1o.jpg?r=1534652875"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 32687,
+                    "name": "鈴代紗弓",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8a/42/32687_prsn_GF9g5.jpg?r=1688106625"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 61942,
+            "name": "日高小春",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/db/c4/61942_crt_pxZYN.jpg?r=1535557767",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/c4/61942_crt_pxZYN.jpg?r=1535557767",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/c4/61942_crt_pxZYN.jpg?r=1535557767",
+                "grid": "https://lain.bgm.tv/pic/crt/g/db/c4/61942_crt_pxZYN.jpg?r=1535557767"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 25406,
+                    "name": "広瀬ゆうき",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/98/d4/25406_prsn_GmA6C.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/d4/25406_prsn_GmA6C.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/d4/25406_prsn_GmA6C.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/98/d4/25406_prsn_GmA6C.jpg"
+                    },
+                    "short_summary": "広瀬 ゆうき（ひろせ ゆうき、1993年4月2日 - ）は、日本の声優、アイドル、歌手である。東京都出身。青二プロダクション所属。\r\n父は俳優の廣瀬昌亮、母は女優の志水季里子。 ガールズユニット「A応P」（アニメ“勝手に”応援プロジェクト）のメンバー。\r\n2016年、第10回声優アワードにて、A応Pの一員として特別賞を受賞。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "id": 23980,
+    "name": "キャナル・ヴォルフィード",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/90/3b/23980_crt_IWR47.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/3b/23980_crt_IWR47.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/3b/23980_crt_IWR47.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/90/3b/23980_crt_IWR47.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Canal Vorfeed"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 10,
+        "collects": 34
+    },
+    "anime_ids": [
+        4400
+    ]
+}

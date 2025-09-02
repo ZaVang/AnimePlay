@@ -1,0 +1,64 @@
+{
+    "id": 10628,
+    "name": "芳岡ユイ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/53/42/10628_crt_aSsi7.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/42/10628_crt_aSsi7.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/42/10628_crt_aSsi7.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/53/42/10628_crt_aSsi7.jpg"
+    },
+    "summary": "Gldemo的超级粉丝\r\n“你知道吗？很厉害的哟，Gldemo！！”\r\n战线佯攻部队的辅助人员，同时是Gldemo的超级粉丝的少女。\r\n在街头表演中演奏Gldemo的曲子等活动当中也拥有着自己的粉丝。\r\n动画版中代替岩泽担当主唱及吉他手。外表看似可爱，但却有着急躁而毒舌的内在性格。特别是和日向总因为一些无聊的小事吵架，两人是拥有着“能够吵架程度的良好关系”的“凸凹组合”。\r\n\r\n动画：GDM的忠实粉丝。\r\n利用歌曲来引起周遭注意的佯攻部队“Girls Dead Monster（简称GDM）”的助手，本身也是GDM的铁杆粉丝。\r\n由于这份憧憬的心意，自己也立志走上音乐的道路，正在进行单手吉他的街头Live活动。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "芳冈由依"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "芳冈唯（《绯染天空》繁中）、芳冈结衣"
+                },
+                {
+                    "k": "日文名",
+                    "v": "芳岡 ユイ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "よしおか ゆい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yoshioka Yui"
+                },
+                {
+                    "k": "昵称",
+                    "v": "由依喵、由依酱"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://key.visualarts.gr.jp/angelbeats/character.html"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 35,
+        "collects": 231
+    },
+    "anime_ids": [
+        363880
+    ]
+}

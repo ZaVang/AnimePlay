@@ -1,0 +1,184 @@
+{
+    "id": 317613,
+    "name": "辉夜大小姐想让我告白-超级浪漫-",
+    "image_path": "data/images/anime/317613.jpg",
+    "points": 8.3,
+    "cost": 4,
+    "rarity": "SSR",
+    "description": "秀知院学园是秀才云集的菁英学校，在学生会中担任学生会副会长·四宫辉夜遇见了学生会长·白银御行。\r\n原以为这两个任谁都觉得很登对的天才应该很快就会在一起，但这两人却因为过高的自尊心导致他们终没能向对方告白。\r\n“该用什么办法才能让对方向自己告白呢？”在这场恋爱头脑战中用尽各种智慧谋略、身经百战的两人，各自在心中下了某个决心。\r\n在秀知院学园高中部的文化祭“奉心祭”的最终日到来前，两人的恋情将会出现巨大的进展。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2022-04-08",
+    "rating_rank": 83,
+    "rating_score": 8.3,
+    "rating_total": 19108,
+    "main_character_ids": [
+        66899,
+        66900,
+        67408,
+        67409,
+        69198
+    ],
+    "main_characters": [
+        {
+            "id": 66899,
+            "name": "四宮かぐや",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9e/72/66899_crt_kNOM3.jpg?r=1547389516",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/72/66899_crt_kNOM3.jpg?r=1547389516",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/72/66899_crt_kNOM3.jpg?r=1547389516",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9e/72/66899_crt_kNOM3.jpg?r=1547389516"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19606,
+                    "name": "古賀葵",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/39/93/19606_prsn_TEs83.jpg?r=1576158151",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/93/19606_prsn_TEs83.jpg?r=1576158151",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/93/19606_prsn_TEs83.jpg?r=1576158151",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/39/93/19606_prsn_TEs83.jpg?r=1576158151"
+                    },
+                    "short_summary": "日本の女性声優。佐賀県出身。\r\n2014年3月代々木アニメーション学院福岡校を卒業後、81プロデュース所属。\r\n\r\n9歳ごろ、アニメを見ていて、その番組後に声優のアフレコ現場を紹介するような番組から声優と職業を知り、声を使う仕事をやってみたいと思う。中学生ごろから、自分を表現することや意見をいうのが苦手であったことが嫌で、役を通じていろんな自分を表現することができるというきっかけで声優の道を目指した。高校卒業後、電車で佐賀から代々木アニメーション学院福岡校に通う。単身上京し、81ACTOR'S STUDIOに通い、81プロデュース所属。お金がなかった時期には、ご飯にポン酢をかけて食べてたこともある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 66900,
+            "name": "白銀御行",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ca/44/66900_crt_26nTL.jpg?r=1545567638",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/44/66900_crt_26nTL.jpg?r=1545567638",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/44/66900_crt_26nTL.jpg?r=1545567638",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ca/44/66900_crt_26nTL.jpg?r=1545567638"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 12483,
+                    "name": "古川慎",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/15/71/12483_prsn_pXYzu.jpg"
+                    },
+                    "short_summary": "古川 慎（ふるかわ まこと、1989年9月29日 - ）は、日本の男性声優。トイズファクトリー所属。\r\n熊本県出身。福岡スクールオブミュージック専門学校卒業。\r\n\r\n5歳の時に見た『新機動戦記ガンダムW』のヒイロ・ユイを充てた緑川光の声に憧れたことで声優への興味を持つようになった。その後中学生時代にスカパーのアニメ専門チャンネルを見てアニメ好きになったという。\r\n高校生の時、友達からもらった専門学校のパンフレットに緑川光が特別講師としてくることを見て、挑戦してみようと思い専門学校に通い始めた。\r\n\r\n趣味は雑貨屋めぐり、神社や寺などのパワースポットを巡ること。\r\n一番好きな食べ物はお好み焼き。キュウリとカリフラワーが苦手。\r\n好きなアーティストはL'Arc〜en〜Ciel、Mr.Children、ゴスペラーズ、GRANRODEO、BUMP OF CHICKEN。\r\n\r\n2011年にWebアニメ「武装中学生」吉野サトシ役で声優デビュー。\r\n2012年にアルバイトでPS3専用ソフト「白騎士物語」のモーションアクターを演じた経験を持つ。\r\n2016年、7月より声優の小林裕介と共にパーソナリティを務めるラジオ『なんでもヒーロー！ ゆっけとまーぼー』の放送を開始。\r\n2017年10月に開催された、初バースデーイベント「古川慎　秋の収穫祭2017」にて、2018年アーティスト活動を開始することを発表。\r\n2018年7月、Lantisより歌手デビュー。同年8月31日、6年間所属していたスペースクラフト・エンタテインメントを退所し、フリーでの活動期間を経て同年12月1日、トイズファクトリーに所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 67408,
+            "name": "藤原千花",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/38/34/67408_crt_ND0h8.jpg?r=1547508126",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/34/67408_crt_ND0h8.jpg?r=1547508126",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/34/67408_crt_ND0h8.jpg?r=1547508126",
+                "grid": "https://lain.bgm.tv/pic/crt/g/38/34/67408_crt_ND0h8.jpg?r=1547508126"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 27194,
+                    "name": "小原好美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844"
+                    },
+                    "short_summary": "日本女性配音员、演员。大泽事务所所属。\r\n\r\n国中时开始喜欢动画，并想要成为声优。高中毕业后进入Human Academy综合学园。2012年开始当了两年的演员，之后加入大泽事务所。\r\n\r\n2017年7月起3个月间在长寿电台节目《Radio Dottoai》就任第71代主持人。\r\n\r\n2017年4月至6月播出的《月色真美》中初次担任主演。同年7月播出《咕噜咕噜魔法阵 (2017年版)》中担演女主角而掀起话题，并与共同主演的石上静香主持同名动画的广播节目。同年11月10日Instagram开设。\r\n\r\n2019年于《Star☆Twinkle 光之美少女》中第一次出演光之美少女系列。同年4月，由文化放送“超！A&G+”制作的广播节目《小原好美のココロおきなく》开播，5月开设节目官方Twitter。2020年3月，该广播节目获得第6届Aniradi Award“BEST COMFORT RADIO 疗愈电台奖”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 67409,
+            "name": "石上優",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/17/ff/67409_crt_7MyY9.jpg?r=1545567685",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/ff/67409_crt_7MyY9.jpg?r=1545567685",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/ff/67409_crt_7MyY9.jpg?r=1545567685",
+                "grid": "https://lain.bgm.tv/pic/crt/g/17/ff/67409_crt_7MyY9.jpg?r=1545567685"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 30620,
+                    "name": "鈴木崚汰",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7f/7c/30620_prsn_037Bn.jpg?r=1723962282",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/7c/30620_prsn_037Bn.jpg?r=1723962282",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/7c/30620_prsn_037Bn.jpg?r=1723962282",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7f/7c/30620_prsn_037Bn.jpg?r=1723962282"
+                    },
+                    "short_summary": "日本の男性声優。愛知県出身。日本ナレーション演技研究所出身。ヴィムス所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 69198,
+            "name": "伊井野ミコ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/02/5a/69198_crt_9chtt.jpg?r=1590778597",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/5a/69198_crt_9chtt.jpg?r=1590778597",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/5a/69198_crt_9chtt.jpg?r=1590778597",
+                "grid": "https://lain.bgm.tv/pic/crt/g/02/5a/69198_crt_9chtt.jpg?r=1590778597"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 20701,
+                    "name": "富田美憂",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023"
+                    },
+                    "short_summary": "富田 美憂（とみた みゆ、1999年11月15日 - ）は、日本の女性声優。アミューズ所属。埼玉県出身。\r\n\r\n小学生の時にテレビアニメ『ヴァンパイア騎士』を見て、声優業に興味を持った。その際にこの作品に出演していた宮野真守にも憧れを持ったと語っている。\r\n第一回「アニ☆たん!」ではファイナリストとなり6社にスカウトされ、同時期に開催された「2014声優アーティスト育成プログラム・セレクション」でグランプリを獲得した。\r\nデビュー作は2015年のテレビアニメ『干物妹！うまるちゃん』のタイヘイ（幼少期）役である。2016年、『アイカツスターズ！』の虹野ゆめ役で初主演。\r\n2018年、声優ユニットを中心としたメディアミックス企画『Kleissis』の林堂アキラ役に選ばれる。\r\n\r\n高校では漫画研究部に所属していた。好きな教科は英語と美術だと語っている。\r\n趣味・特技はイラストを描くこと、ゲーム、空手。空手では上段回し蹴りが得意であり、ゲームでは、『うたの☆プリンスさまっ♪』『薄桜鬼』などの乙女ゲームが好きである。\r\n歌うこと、踊ること、ディズニーが好きである。\r\n好きな食べ物は、りんご、栗。\r\n狼、犬、ホワイトタイガーなど虫以外の動物全般を好きだと語っており、チャップという名前の犬を飼っている。\r\n「自分を一言で言うと…」の質問に「挙動不審」だと答えている。また、好きな言葉には「考えるよりチャレンジ！」をあげている。\r\n原作のある作品の場合は原作を読み込んで、キャラクターの考え方や行動を理解してからオーディションに臨んでいると語っている。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

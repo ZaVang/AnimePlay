@@ -1,0 +1,64 @@
+{
+    "id": 57715,
+    "name": "ヴラディレーナ・ミリーゼ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/18/cd/57715_crt_F2zF7.jpg?r=1647963497",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/cd/57715_crt_F2zF7.jpg?r=1647963497",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/cd/57715_crt_F2zF7.jpg?r=1647963497",
+        "grid": "https://lain.bgm.tv/pic/crt/g/18/cd/57715_crt_F2zF7.jpg?r=1647963497"
+    },
+    "summary": "共和国成立以前からこの地に住む白系種（アルバ）であり、かつ貴種として知られる白銀種（セレナ）の血を純血で受け継ぐ名家・ミリーゼ家の才媛。\r\n弱冠16歳で共和国軍の少佐にまで上り詰めたエリートで、ギアーデ帝国の〈レギオン〉部隊と最前線で戦うエイティシックスの指揮管制官〈ハンドラー〉としての職務に当たることとなった。\r\nその才能が上官の目に止まり、東部戦線第一戦区第一防衛戦隊、通称〈スピアヘッド〉戦隊へ配属。そこでシンと出会う。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "弗拉迪蕾娜·米丽洁"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "レーナ"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "蕾娜"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Vladilena Mirizé"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月12日"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://dengekitaisho.jp/special/23/eighty-six/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 12,
+    "stat": {
+        "comments": 130,
+        "collects": 623
+    },
+    "anime_ids": [
+        331887,
+        302189
+    ]
+}

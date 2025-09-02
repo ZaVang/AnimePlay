@@ -1,0 +1,72 @@
+{
+    "id": 36288,
+    "name": "矢吹可奈",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/68/12/36288_crt_z5UuU.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/12/36288_crt_z5UuU.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/12/36288_crt_z5UuU.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/68/12/36288_crt_z5UuU.jpg"
+    },
+    "summary": "偶像大师百万LIVE登场的偶像。Vocal属性。 \r\n\r\n体型在14岁中也算比较娇小的，曾经被育说过“像小学生”。 \r\n\r\n性格属于那种不顾一切向前冲的角色，努力家，也有些许冒失娘的性格，会把盐当成糖倒进咖啡，还会把上衣穿反。 \r\n\r\n此外，可奈还是个爱哭鬼，遇到恐怖或感动的事情就会哭出来。 \r\n\r\n可奈也很喜欢足球，小学时和男生经常一起玩。控球能力虽然不行，但是却有能一脚把球踢出运动场的强力踢击。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "矢吹可奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Yabuki Kana"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やぶき かな"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月18日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "体重",
+            "value": "43kg"
+        },
+        {
+            "key": "BWH",
+            "value": "77/54/76"
+        },
+        {
+            "key": "年龄",
+            "value": "14岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 18,
+    "stat": {
+        "comments": 16,
+        "collects": 22
+    },
+    "anime_ids": [
+        309807
+    ]
+}

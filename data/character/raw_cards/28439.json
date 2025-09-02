@@ -1,0 +1,92 @@
+{
+    "id": 28439,
+    "name": "本田未央",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/66/01/28439_crt_Ma271.jpg?r=1551990552",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/01/28439_crt_Ma271.jpg?r=1551990552",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/01/28439_crt_Ma271.jpg?r=1551990552",
+        "grid": "https://lain.bgm.tv/pic/crt/g/66/01/28439_crt_Ma271.jpg?r=1551990552"
+    },
+    "summary": "女主角之一。是一名高中一年级生，在第一集末出场，在后补的名额中通过选拔正式成为“CINDERELLA PROJECT”的一员。\r\n情格开朗，充满朝气，十分爱说话。\r\n与岛村卯月、涩谷凛组成3人的偶像组合“new generations”，首次登上舞台演出是作舞蹈员替城崎美嘉伴舞。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "本田未央"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ほんだみお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Honda Mio"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月1日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "161cm"
+        },
+        {
+            "key": "体重",
+            "value": "46kg"
+        },
+        {
+            "key": "BWH",
+            "value": "84/58/87"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁"
+        },
+        {
+            "key": "兴趣",
+            "value": "购物"
+        },
+        {
+            "key": "利手",
+            "value": "右手"
+        },
+        {
+            "key": "星座",
+            "value": "射手座"
+        },
+        {
+            "key": "出生地",
+            "value": "千叶"
+        },
+        {
+            "key": "卡牌类型",
+            "value": "Passion"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 1,
+    "stat": {
+        "comments": 35,
+        "collects": 41
+    },
+    "anime_ids": [
+        130231
+    ]
+}

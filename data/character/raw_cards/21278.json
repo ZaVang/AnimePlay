@@ -1,0 +1,56 @@
+{
+    "id": 21278,
+    "name": "満艦飾マコ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/13/f6/21278_crt_88Y4K.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/f6/21278_crt_88Y4K.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/f6/21278_crt_88Y4K.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/13/f6/21278_crt_88Y4K.jpg"
+    },
+    "summary": "流子の転校下先にいる本能字学園２年甲組の生徒。\r\n「超」が付くほどのド天然少女で、\r\n想像もつかない言動と行動で周囲をあ然とさせる。\r\n出会ったばかりの流子をいきなり親友と呼ぶ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "满舰饰真子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "満艦飾 マコ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まんかんしょく まこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mankanshoku Mako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.kill-la-kill.jp/character/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 69,
+        "collects": 277
+    },
+    "anime_ids": [
+        72941
+    ]
+}

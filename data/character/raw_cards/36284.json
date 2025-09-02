@@ -1,0 +1,72 @@
+{
+    "id": 36284,
+    "name": "箱崎星梨花",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/16/3c/36284_crt_Ec8NU.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/16/3c/36284_crt_Ec8NU.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/16/3c/36284_crt_Ec8NU.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/16/3c/36284_crt_Ec8NU.jpg"
+    },
+    "summary": "偶像大师百万LIVE登场的偶像。Vocal属性。 \r\n\r\n一个好到不能再好的乖宝宝。生于一个富裕的家庭，教养得当，性格率直、积极而努力，不会轻言放弃。 \r\n\r\n在游戏中由于星梨花会经常提到她的父亲，久而久之星梨花P们便被称呼为星梨花的爸爸了。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "箱崎星梨花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Hakozaki Serika"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はこざき せりか"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月20日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "146cm"
+        },
+        {
+            "key": "体重",
+            "value": "37kg"
+        },
+        {
+            "key": "BWH",
+            "value": "74/54/76"
+        },
+        {
+            "key": "年龄",
+            "value": "13岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 20,
+    "stat": {
+        "comments": 34,
+        "collects": 56
+    },
+    "anime_ids": [
+        309807
+    ]
+}

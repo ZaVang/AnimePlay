@@ -1,0 +1,54 @@
+{
+    "id": 22257,
+    "name": "高橋葵",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/12/8c/22257_crt_yBYvD.jpg?r=1430323923",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/8c/22257_crt_yBYvD.jpg?r=1430323923",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/8c/22257_crt_yBYvD.jpg?r=1430323923",
+        "grid": "https://lain.bgm.tv/pic/crt/g/12/8c/22257_crt_yBYvD.jpg?r=1430323923"
+    },
+    "summary": "桃成高校2年生。探索部部员，典型的现代少女，但对于现代的事物总有着非典型的偏见。\r\n谐音冷笑话专精，不擅长跳舞。\r\n非常怕鬼。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高桥葵"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たかはし あおい"
+                },
+                {
+                    "k": "昵称",
+                    "v": "噬痂者"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 4,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 30
+    },
+    "anime_ids": [
+        91987,
+        112838,
+        80442
+    ]
+}

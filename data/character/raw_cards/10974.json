@@ -1,0 +1,65 @@
+{
+    "id": 10974,
+    "name": "風見雄二",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4e/0a/10974_crt_7153e.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/0a/10974_crt_7153e.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/0a/10974_crt_7153e.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4e/0a/10974_crt_7153e.jpg"
+    },
+    "summary": "某日突然来到远离红尘俗世的和平学园的转校生。\r\n在小时候的事故中失去了姐姐，和双亲死别之后的详细经历不明，现在被德国人的养母收养着。\r\n和美浜学园的学园长是老朋友，通过这层关系，以来自海外的招待留学生的名义成为了第6个学生。\r\n沉默寡言，性格非常稳重，不通世俗的言行很显眼，给人有“黑历史”感觉的谜之男人。\r\n然而做事情又非常认真，有时还会认真过头，在和养母相同的职场做着兼职，一丝不苟地活在每一天。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "风见雄二"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Yuuji Kazami"
+                },
+                {
+                    "k": "日文名",
+                    "v": "風見 雄二"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かざみ ゆうじ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kazami Yūji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "178cm"
+        },
+        {
+            "key": "体重",
+            "value": "65kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 47,
+        "collects": 138
+    },
+    "anime_ids": [
+        130234,
+        121187
+    ]
+}

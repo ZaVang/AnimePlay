@@ -1,0 +1,72 @@
+{
+    "id": 36286,
+    "name": "最上静香",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/16/b2/36286_crt_swzeJ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/16/b2/36286_crt_swzeJ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/16/b2/36286_crt_swzeJ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/16/b2/36286_crt_swzeJ.jpg"
+    },
+    "summary": "《偶像大师 MILLION LIVE!》登场的偶像。VOCAL属性。 \r\n\r\n拥有着成熟气质的14岁少女。 \r\n\r\n如果说春日未来是天海春香位，伊吹翼是星井美希位的话，那么她应该就是如月千早位吧。（但正如后续所说其性格与如月千早有很大不同）。 \r\n\r\n姓氏「最上」符合偶像大师早期的取名规律，是军舰名。 \r\n\r\n形象颜色为蓝色。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "最上静香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "もがみ しずか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mogami Shizuka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月14日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "体重",
+            "value": "44kg"
+        },
+        {
+            "key": "BWH",
+            "value": "76-53-77"
+        },
+        {
+            "key": "年龄",
+            "value": "14岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 14,
+    "stat": {
+        "comments": 26,
+        "collects": 75
+    },
+    "anime_ids": [
+        309807
+    ]
+}

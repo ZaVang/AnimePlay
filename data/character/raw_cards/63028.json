@@ -1,0 +1,56 @@
+{
+    "id": 63028,
+    "name": "小糸侑",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/42/d7/63028_crt_pso5O.jpg?r=1538834795",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/d7/63028_crt_pso5O.jpg?r=1538834795",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/d7/63028_crt_pso5O.jpg?r=1538834795",
+        "grid": "https://lain.bgm.tv/pic/crt/g/42/d7/63028_crt_pso5O.jpg?r=1538834795"
+    },
+    "summary": "演 - 河内美里\r\n恋する気持ちを実感することができない少女。頼みごとをされると断れないタイプ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小丝侑"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "こいと ゆう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Koito Yuu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月5日"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 5,
+    "stat": {
+        "comments": 102,
+        "collects": 458
+    },
+    "anime_ids": [
+        243981
+    ]
+}

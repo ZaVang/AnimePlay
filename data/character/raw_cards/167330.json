@@ -1,0 +1,39 @@
+{
+    "id": 167330,
+    "name": "ミニスカサンタ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/53/4d/167330_crt_aF7cX.jpg?r=1752965050",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/4d/167330_crt_aF7cX.jpg?r=1752965050",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/4d/167330_crt_aF7cX.jpg?r=1752965050",
+        "grid": "https://lain.bgm.tv/pic/crt/g/53/4d/167330_crt_aF7cX.jpg?r=1752965050"
+    },
+    "summary": "咲太の前に突然現れる謎のミニスカサンタ。世間で注目を集めている正体不明のネットシンガー“霧島透子”を名乗る。咲太以外の人には見えず、映像にも映らない。本人曰く、思春期症候群をプレゼントして回っているらしいが……\r\n真名有剧透(?)[mask]岩見沢寧々/岩见泽宁宁[/mask]",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "迷你裙圣诞老人"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 6
+    },
+    "anime_ids": [
+        467930
+    ]
+}

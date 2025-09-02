@@ -1,0 +1,56 @@
+{
+    "id": 1404,
+    "name": "中川圭一",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a3/80/1404_crt_7iXAr.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a3/80/1404_crt_7iXAr.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a3/80/1404_crt_7iXAr.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a3/80/1404_crt_7iXAr.jpg"
+    },
+    "summary": "世界でもトップレベルの大企業「中川コンツェルン」の御曹司。階級は巡査。美形で長身、多才で何でもこなす。物腰穏やかで落ち着いた男性だが射撃と逮捕術は天才的な腕を持つ。\r\n幅広い知識を持ってはいるが、かなり世間知らずな部分があり、またプライベートにおける金遣いも非常に荒い。両津の破天荒さに半ば呆れながらも、両津の長所も知っているため、先輩として慕っている。\r\n愛車はフェラーリF40やF50などを所持している\r\n両津の相棒という立ち位置は変わらないものの、初期と現在では大きく人柄が違う。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "中川圭一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "なかがわ けいいち"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "12月24日"
+        },
+        {
+            "key": "身高",
+            "value": "179cm"
+        },
+        {
+            "key": "体重",
+            "value": "63kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 24,
+    "stat": {
+        "comments": 0,
+        "collects": 2
+    },
+    "anime_ids": [
+        2166
+    ]
+}

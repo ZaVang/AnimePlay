@@ -1,0 +1,48 @@
+{
+    "id": 73305,
+    "name": "野中晴",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7d/d4/73305_crt_F9rOO.jpg?r=1586211732",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/d4/73305_crt_F9rOO.jpg?r=1586211732",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/d4/73305_crt_F9rOO.jpg?r=1586211732",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7d/d4/73305_crt_F9rOO.jpg?r=1586211732"
+    },
+    "summary": "カラスを連れた不思議な雰囲気の女の子。リクオのバイト先を頻繁に訪れる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "野中晴"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "のなか はる"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ハル"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 78,
+        "collects": 244
+    },
+    "anime_ids": [
+        280516
+    ]
+}

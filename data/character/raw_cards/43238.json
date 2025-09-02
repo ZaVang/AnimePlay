@@ -1,0 +1,61 @@
+{
+    "id": 43238,
+    "name": "和泉三月",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/82/07/43238_crt_BB625.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/07/43238_crt_BB625.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/07/43238_crt_BB625.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/82/07/43238_crt_BB625.jpg"
+    },
+    "summary": "IDOLiSH7のメンバー。\r\n\r\n好きなもの：伝説のアイドル“ゼロ”\r\n嫌いなもの：大きいもの\r\n一織の兄。かわいらしい外見とは裏腹に、男気に溢れ面倒見のよい兄らしい一面を持つ。IDOLiSH7の中でも特に仕事熱心で、ムードメーカー的役割を果たす。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "和泉三月"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いずみみつき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Izumi Mitsuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月3日"
+        },
+        {
+            "key": "年龄",
+            "value": "21"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 3,
+    "stat": {
+        "comments": 2,
+        "collects": 12
+    },
+    "anime_ids": [
+        253042,
+        331751
+    ]
+}

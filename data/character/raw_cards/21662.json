@@ -1,0 +1,57 @@
+{
+    "id": 21662,
+    "name": "シロエ／城鐘恵",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/68/50/21662_crt_V0O2R.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/50/21662_crt_V0O2R.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/50/21662_crt_V0O2R.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/68/50/21662_crt_V0O2R.jpg"
+    },
+    "summary": "作品的男主角。半祖族，主职业为赋予术师，副职业为抄写师。\r\n现实世界中是工学系的大学生。\r\n个性谨慎周到，在\"浪荡者的茶会\"里有着智库的地位\r\n前期对公会有着不好的回忆。后期由猫太引导，找到人生方向后，成立\"纪录者的地平线\"\r\n担任公会长，秋叶原公会会馆所有人，圆桌会议11席代表之一\r\n外号：\"参谋\"，\"腹黑眼镜\"，\"东之外抄\"\r\n大地人之间称为\"大魔术师城惠\"(活跃时间长达180多年)\r\n在资深玩家跟大地人的史料之中都是知名人物",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "城惠／城钟惠"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "城鐘 恵"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しろがね けい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shiroe／Shirogane Kei"
+                },
+                {
+                    "k": "昵称",
+                    "v": "腹ぐろ眼鏡／腹黑眼镜"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 15,
+        "collects": 71
+    },
+    "anime_ids": [
+        64140,
+        100517
+    ]
+}

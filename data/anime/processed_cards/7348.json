@@ -1,0 +1,123 @@
+{
+    "id": 7348,
+    "name": "驭星者 闪亮的拓人",
+    "image_path": "data/images/anime/7348.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "坐落于日本南方的丰饶岛屿南十字岛，某天夜晚，一位名叫津名志拓人的少年来到了这座岛屿上，这个独自从本土游来的少年，进入岛上的南十字学园高中部学习，性格开朗向上的他遇到了像扬卷和子、进藤须方等充满个性的学生并与他们深入交流。\r\n但是，这个南十字学园隐藏着巨大的秘密，沉睡於地下的巨大人像“Cybody”。围绕着这二十多个巨像，人们都抱负着各自的秘密，自称“绮罗星十字团”的谜之秘密结社的暗中活跃，以及巫女们的歌声，还有拓人自身也抱有着巨大的秘密……\r\n以被蓝天大海包围的南国之岛为舞台，有爱情、梦想、友情的青春讴歌，现在就要开幕了。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 25,
+    "synergy_tags": [
+        "机战",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2010-10-03",
+    "rating_rank": 931,
+    "rating_score": 7.5,
+    "rating_total": 2900,
+    "main_character_ids": [
+        10479,
+        10481,
+        10482
+    ],
+    "main_characters": [
+        {
+            "id": 10479,
+            "name": "ツナシ・タクト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/56/73/10479_crt_7I5tF.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/73/10479_crt_7I5tF.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/73/10479_crt_7I5tF.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/56/73/10479_crt_7I5tF.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4697,
+                    "name": "宮野真守",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307"
+                    },
+                    "short_summary": "小学生時代から劇団ひまわりに所属し、主に舞台などで活動した。高校生時代に海外ドラマ『私はケイトリン』の吹替で声優デビューする。PS2用ゲーム『キングダム ハーツ』のリク役で注目を集め、その後は、『機動戦士ガンダム00』や『DEATH NOTE』の主役を務めるなど、数々の人気作品に出演している。\r\n第1回声優アワード主演男優賞および新人賞にノミネートされた（『DEATH NOTE』夜神月役）。 2008年の第2回声優アワード主演男優賞受賞。東京国際アニメフェア2008・第7回東京アニメアワード個人賞（声優部門）受賞（『DEATH NOTE』『機動戦士ガンダム00』）。 2008年12月1日、劇団ひまわりのHPで結婚と子供を授かったことを公表した。結婚相手や子供の性別は非公開。 2011年、ノン子とのび太のアニメスクランブルにて第21回アニメグランプリ最優秀男性声優賞受賞。 2012年、第6回声優アワードにて助演男優賞と歌唱賞（後者はST☆RISHとして）、日刊スポーツ第1回日刊アニメグランプリにてMIP男性声優賞、アニメージュ第34回アニメグランプリ声優部門においてグランプリを受賞。\r\n\r\n2025年6月8日宣布与向日葵剧团合约期满退团，次日宣布加入研音。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10481,
+            "name": "シンドウ・スガタ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ce/74/10481_crt_Sx7O0.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/74/10481_crt_Sx7O0.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/74/10481_crt_Sx7O0.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ce/74/10481_crt_Sx7O0.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3818,
+                    "name": "福山潤",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bf/00/3818_prsn_vlWlO.jpg?r=1669378022",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/00/3818_prsn_vlWlO.jpg?r=1669378022",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/00/3818_prsn_vlWlO.jpg?r=1669378022",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bf/00/3818_prsn_vlWlO.jpg?r=1669378022"
+                    },
+                    "short_summary": "福山润（1978年11月26日－）是一名日本男性声优。大阪府高槻市出身。2000年于21岁时加入PRODUCTION baobab，2011年退出和PRODUCTION baobab，并与森川智之共同设立AXL ONE事务所。2018年3月31日，与立花慎之介一起离开AXL ONE；同年4月1日，与立花合伙成立小型事务所“BLACK SHIP”。\r\n初试啼声的动画作品是1998年的《罗德斯岛战记》。初次担任主角的动画作品是2000年到2001年的《无敌王TRI-ZENON》，饰演神威章。此部作品同时也是无职身分的福山润再次以声优身分回归声优界的复归代表作。而令福山润真正登上事业上第一次颠峰的角色，则是《反叛的鲁路修》中的腹黑王子鲁路修，他就是凭着这个角色而获得了第一回声优悬赏奖的最佳男声优。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10482,
+            "name": "アゲマキ・ワコ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6e/77/10482_crt_wWBHw.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/77/10482_crt_wWBHw.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/77/10482_crt_wWBHw.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6e/77/10482_crt_wWBHw.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4895,
+                    "name": "早見沙織",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522"
+                    },
+                    "short_summary": "幼儿园、小学、初中、高中就读于白百合学园，高中时转入都内高中就读。早稻田大学毕业。\r\n在小学4年级的时候知道了“声优”这职业，决心成为声优。\r\n2004年4月，中学1年级时进入日本播音演技研究所少年声优班学习。\r\n在少年声优班第二年的2006年3月，通过I'm Enterprise的选拔考试。第一次工作是《机械女仆》的Drama CD。之后在2007年透过《桃华月惮》动画出道。\r\n清脆的声音是其特征。演技幅度很广的实力派，从幼女到花样年华的少女、文静的角色到活泼的角色、而且还能演出少年角色动物角色。演出的不同角色之间的差别很大。此外歌唱力也有公认的评价。\r\n2008年4月起，因学业缘故，每周只到日本播音演技研究所上一次课。2008年10月3日，首次主持广播节目《ラジオどっとあい 早见沙织のぽじてぃ部〜Sweetsな放课後》。\r\n2015年4月21日，以TV动画《赤发白雪姬》的片头主题歌《やさしい希望》歌手出道。\r\n2016年，在第10回声优奖中获得助演女优奖。\r\n\r\n家庭构成是父亲、母亲。还饲养着兔子。喜欢看警察题材的电视剧，在广播中透露出是电视剧《相棒》系列的FANS。\r\n从4岁开始学弹钢琴，此外还学过绘画、游泳、网球等众多东西，不过唯一持续下来的是弹钢琴，体育类的基本都持续不久。在绘画方面，据说曾在小学生时参加亚洲大赛并获得金奖。\r\n小时候开始就很喜欢唱歌，据说和母亲一起坐车的时候总是跟着车上的播放机大声地唱歌，然后母亲经常会指导她说“刚才走调了”之类的。在爵士乐歌手的母亲的推荐下在中学时就开始学习唱爵士乐。\r\n性格非常稳健，待人很有礼貌。而且在演技上具有很高的意识和才能，在声优前辈和动画制作人员中也有很高的评价。据说同事务所的间岛淳司在收录现场看到刚出道没多久时候的早见时说“看来我们事务所将来也很安泰啊”。\r\n也有天然的一面，曾把洗面奶错当牙膏拿来刷牙，还曾在收录时背后的拉链没拉上就来到录音棚。\r\n与同事务所的山本麻里安一样，因为就读的学校禁止艺术类活动而转校，在声优与学业两付重担艰难前行。\r\n与悠木碧和东山奈央公私关系良好，交往密切。日高里菜曾表示过“超喜欢早见沙织”，两人私交甚密。\r\n在广播节目中有时会模仿黑柳彻子、安东尼奥·猪木、儿玉清等。在《鹡鸰女神》的广播节目《セキレイらじお》中模仿黑柳彻子的段子，并在《鹡鸰女神》DVD第6卷的OVA里被用来作恶搞。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

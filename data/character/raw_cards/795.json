@@ -1,0 +1,68 @@
+{
+    "id": 795,
+    "name": "クロウ・ホーガン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/db/f9/795_crt_wWFFn.jpg?r=1749912138",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/f9/795_crt_wWFFn.jpg?r=1749912138",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/f9/795_crt_wWFFn.jpg?r=1749912138",
+        "grid": "https://lain.bgm.tv/pic/crt/g/db/f9/795_crt_wWFFn.jpg?r=1749912138"
+    },
+    "summary": "很为孩子们着想，拥有口恶心善的性格之人。虽然是小偷但是一个为贫穷的孩子们而偷盗的义贼。和游星他们是老朋友，与游星一样是个很为同伴着想的热血男儿。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "乌鸦・霍根"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "克罗・霍根"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Crow Hogan"
+                },
+                {
+                    "k": "日文名",
+                    "v": "クロウ・ホーガン"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "9月6日"
+        },
+        {
+            "key": "身高",
+            "value": "174cm"
+        },
+        {
+            "key": "体重",
+            "value": "56kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 6,
+    "stat": {
+        "comments": 5,
+        "collects": 8
+    },
+    "anime_ids": [
+        1609
+    ]
+}

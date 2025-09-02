@@ -1,0 +1,72 @@
+{
+    "id": 78,
+    "name": "ジェット・ブラック",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d4/e6/78_crt_VV28f.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/e6/78_crt_VV28f.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/e6/78_crt_VV28f.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d4/e6/78_crt_VV28f.jpg"
+    },
+    "summary": "史派克的搭档，「比博普」号的主人，原来是太阳系刑事警察机构的刑警。爱机是用掘土机改造的「榔头」，爱用的手枪是Walther P99。杰特以前作为ISSP(太阳系刑警警察机构)的警官在木卫三工作，有着「黑狗」的绰号。以一次事故为契机，辞去警察工作，凭借着之前的人际关系，成为了一名星际牛仔。那次事故让杰特失去了左手，虽然以当时的医疗技术可以移植一条有机手臂，不过他却选择了机械手臂，似乎是为了纪念什么。星际飞船「比博普」是他用一艘二手渔船改造成的。兴趣有盆栽、宇宙赛马、读书和料理，「没有肉丝的特制的青椒肉丝」是他的拿手好戏。因为没有女人缘而一直未婚的杰特是一位十足的家庭妇男。\r\n\r\n值得一提的是Cowboy Bebop初期在中国的盗版就曾经把片名翻译为“恶男杰特”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "杰特·布莱克"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Jet·Black"
+                },
+                {
+                    "k": "昵称",
+                    "v": "杰特"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2035-12-03"
+        },
+        {
+            "key": "年龄",
+            "value": "36岁"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "188cm"
+        },
+        {
+            "key": "体重",
+            "value": "90kg"
+        },
+        {
+            "key": "出生地",
+            "value": "木卫三"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 2035,
+    "birth_mon": 12,
+    "birth_day": 3,
+    "stat": {
+        "comments": 17,
+        "collects": 127
+    },
+    "anime_ids": [
+        253
+    ]
+}

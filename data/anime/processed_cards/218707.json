@@ -1,0 +1,91 @@
+{
+    "id": 218707,
+    "name": "少女终末旅行",
+    "image_path": "data/images/anime/218707.jpg",
+    "points": 8.1,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "距离极尽繁荣与荣华的人类文明迎来末日，已经经过了漫长的岁月。人类几乎死绝，就连生物都消失的迎来末日的世界。复杂建造的都市化作宛如迷宫的废墟，无从整备的机械也渐渐停止了动作。是何时结束的呢，是从何时开始结束的呢，就连这种想法也不复存在的终末世界中，有两位少女漫无目的地持续着旅行。千户与尤莉，今天也乘着爱车Kettenkrad，在废墟当中彷徨。\r\n在终末世界中温暖地求生的后启示录幻想剧，就此开幕。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "科幻",
+        "百合",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2017-10-06",
+    "rating_rank": 167,
+    "rating_score": 8.1,
+    "rating_total": 14530,
+    "main_character_ids": [
+        57672,
+        57673
+    ],
+    "main_characters": [
+        {
+            "id": 57672,
+            "name": "チト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/06/66/57672_crt_8cPpZ.jpg?r=1504755658",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/66/57672_crt_8cPpZ.jpg?r=1504755658",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/66/57672_crt_8cPpZ.jpg?r=1504755658",
+                "grid": "https://lain.bgm.tv/pic/crt/g/06/66/57672_crt_8cPpZ.jpg?r=1504755658"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10868,
+                    "name": "水瀬いのり",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/87/b1/10868_prsn_LoxnW.jpg?r=1740115446",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/b1/10868_prsn_LoxnW.jpg?r=1740115446",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/b1/10868_prsn_LoxnW.jpg?r=1740115446",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/87/b1/10868_prsn_LoxnW.jpg?r=1740115446"
+                    },
+                    "short_summary": "日本的女性演员、声优，原Sony Music Artists所属，现AXL-ONE。东京都出身。\r\n\r\n兴趣为动画、游戏、NICONICO动画、上网。\r\n粉丝俱乐部叫“いのりまち”（祈町），自称是町长，粉丝则是町民。\r\n特技是在卡拉OK中用动画歌曲唱出二重唱、俄罗斯方块。「非常喜欢唱歌和表演。也十分喜欢声优的动画歌，对会唱歌的声优怀有憧憬。」\r\n小时候对于《美少女战士》的水手金星、《名侦探柯南》的毛利兰有所憧憬，从母亲那里得知声优的存在后决定以成为声优为目标，并因为受毛利兰影响而开始学空手道。\r\n初中时由于受到《网球王子》的影响而同时参加网球部和演剧部，但没多久就退出了网球部。\r\n国中三年级在《世纪末超自然学院》所配的冈本灯一角为出道作。\r\n小时候就很喜欢迪士尼的作品，甚至拥有年间护照。一年会去100次东京迪士尼乐园。理想男性为米老鼠爱好者。\r\n曾经在チャームキッズ（Charm Kids，一个专门培养少女偶像的机构）以偶像身份出道，2010年1月5日毕业。期间名义为【末永みお】。\r\n水树奈奈的粉丝，2015年9月24日宣布了将会在自己20岁生日当天（即2015年12月2日）以个人名义作为歌手出道，并发售第一张个人单曲，唱片公司为King Records。\r\n\r\n2013年，在NHK的晨间剧《海女》中饰演成田丽奈。由此在同年的NHK红白歌会的企划单元中决定和海女的主要演员一起出场，作为\"GMTスペシャルユニット feat.アメ横女学园芸能コース”的一员在舞台上披露了《暦の上ではディセンバー》。\r\n2015年12月12日在西武铁道（秩父线）担任了一日站长。\r\n2016年，获得了第10届声优奖的主演女声优赏，第25届日本影评人大奖的新人声优奖。2016年4月14日，被任命为京都国际动漫展的应援支持者。而且所绘画的『八桥舞妓酱』会展示在京都国际漫画博物馆。\r\n2016年11月19日，台湾一男子扬言要杀害水濑祈，虽然嫌犯立即被逮捕，但此事也导致原本预定于12月在台湾举办的现场活动、3单发售纪念活动以及此后的各项现场活动被取消。\r\n2017年7月3日，因合约到期，离开Sony Music Artists，事务所网站下的官方粉丝俱乐部也陆续关闭。\r\n2017年9月1日起加入AXL ONE。\r\n2017年12月2日在东京国际forum Hall A举行了第一次个人演唱会。\r\n2018年5月23日，发售第二张个人专辑《BLUE COMPASS》。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 57673,
+            "name": "ユーリ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d8/0b/57673_crt_s7XFl.jpg?r=1513661592",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/0b/57673_crt_s7XFl.jpg?r=1513661592",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/0b/57673_crt_s7XFl.jpg?r=1513661592",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d8/0b/57673_crt_s7XFl.jpg?r=1513661592"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9270,
+                    "name": "久保ユリカ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/71/b4/9270_prsn_t0I7L.jpg?r=1731499108",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/b4/9270_prsn_t0I7L.jpg?r=1731499108",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/b4/9270_prsn_t0I7L.jpg?r=1731499108",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/71/b4/9270_prsn_t0I7L.jpg?r=1731499108"
+                    },
+                    "short_summary": "日本的女性声优、模特儿、歌手、艺人，2015年1月进入Clare Voice。2017年12月31日离开CLARE VOICE。2019年10月1日加入Stay Luck。奈良县出身。\r\n旧艺名包含“楢原ゆりか”、“久保由利香”（亦为本名），2014年9月27日发布的Instagram（https://www.instagram.com/p/tczvgbMPa7）正式以“久保百合花”作为官方中文译名。（我的中文名字是『久保百合花』。在不久的未來，應該會讓所有看到這篇文章的人，看到我以『久保百合花』的身份發佈令人驚豔的發表;) 然後…若也能叫我的綽號SHIKAKO『子鹿』的話，我也會很高興。謝謝大家一直在遙遠的一端支持我！很希望能盡快與大家見面。）",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

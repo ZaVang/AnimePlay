@@ -1,0 +1,75 @@
+{
+    "id": 13007,
+    "name": "吉川ちなつ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4c/ee/13007_crt_U3Pqv.jpg?r=1444773044",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/ee/13007_crt_U3Pqv.jpg?r=1444773044",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/ee/13007_crt_U3Pqv.jpg?r=1444773044",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4c/ee/13007_crt_U3Pqv.jpg?r=1444773044"
+    },
+    "summary": "与人气动画《小魔女米拉库》的主人公相似，是会装可爱的女孩子。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "吉川千夏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しかわ ちなつ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yoshikawa Chinatsu"
+                },
+                {
+                    "k": "昵称",
+                    "v": "China-chan、Chinacchi(ゆるゆり♪♪ep.2自述)"
+                },
+                {
+                    "k": "又昵称",
+                    "v": "China(ゆるゆり♪♪ep.2)"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月6日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "149cm"
+        },
+        {
+            "key": "年龄",
+            "value": "13岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 6,
+    "stat": {
+        "comments": 25,
+        "collects": 108
+    },
+    "anime_ids": [
+        28900,
+        14588,
+        127573,
+        136311
+    ]
+}

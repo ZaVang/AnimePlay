@@ -1,0 +1,249 @@
+{
+    "id": 395378,
+    "name": "迷宫饭",
+    "image_path": "data/images/anime/395378.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "迷宫饭，不是吃就是被吃…\r\n\r\n妹妹在迷宫深处被赤龙吃掉了！\r\n冒险者莱欧斯侥幸逃过一命回到了地面。\r\n他想要再度挑战迷宫，但是钱和食物都留在了迷宫深处…\r\n在妹妹随时可能会被消化掉情况下，莱欧斯下定了决心：\r\n「食物要在迷宫内就地取材」\r\n史莱姆、鸡尾蛇、宝箱怪、然后是龙！\r\n冒险者啊，一边吃掉袭来的魔物，一边通关迷宫吧！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗",
+        "冒险",
+        "美食"
+    ],
+    "date": "2024-01-04",
+    "rating_rank": 363,
+    "rating_score": 7.8,
+    "rating_total": 14268,
+    "main_character_ids": [
+        27601,
+        39850,
+        44473,
+        54297,
+        55790,
+        73175
+    ],
+    "main_characters": [
+        {
+            "id": 27601,
+            "name": "マルシル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a8/07/27601_crt_Ecj1u.jpg?r=1692590014",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a8/07/27601_crt_Ecj1u.jpg?r=1692590014",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a8/07/27601_crt_Ecj1u.jpg?r=1692590014",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a8/07/27601_crt_Ecj1u.jpg?r=1692590014"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10838,
+                    "name": "千本木彩花",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/56/7f/10838_prsn_vhSS9.jpg?r=1740109911",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/7f/10838_prsn_vhSS9.jpg?r=1740109911",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/7f/10838_prsn_vhSS9.jpg?r=1740109911",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/56/7f/10838_prsn_vhSS9.jpg?r=1740109911"
+                    },
+                    "short_summary": "日本の女性声優。 埼玉県出身。アイムエンタープライズ所属。\r\n\r\n日本ナレーション演技研究所で演技を学ぶ。同研究所卒業前の、高校生時にテレビアニメ『帰宅部活動記録』で九重クレア役としてデビュー。\r\n2015年にアイムエンタープライズへの所属が発表された。9月より「講談社ラノベ文庫チャンネル」のMCをつとめる。2016年4月に『甲鉄城のカバネリ』の無名役で初のメインヒロインを演じ、同年10月に『ガーリッシュナンバー』で、初主役となる烏丸千歳役を演じる。\r\n2017年、第11回声優アワードで新人女優賞を受賞。\r\n\r\n高校では部活動でベーム式B♭クラリネットを演奏。コンクールに出場していた。\r\n『甲鉄城のカバネリ』で共演した内田真礼は「1話ですでに（無名の）キャラクターが出来上がっていてすごい」と絶賛している。\r\n『ガーリッシュ ナンバー』の烏丸千歳役は100人以上の候補の中からオーディションを経てスタッフの満場一致で選ばれたのだが、実は千本木がオーディションを受けた役は八重役であった。監督の井畑翔太と原作者の渡航は千本木の演技だけが方向性がいい意味で異質であり、ほとんどの声優が空気を読んで適度にブレーキをかける中、千本木だけはアクセルをベタ踏み状態であったと述べている。また、本来千本木のキャリアよりもう1つ、2つ、上の世代がやっていてもおかしくない難しいことを求められている中で、こちらの要望によく応えてくれたともコメントしている。\r\n\r\n2019年12月29日、アニメ『甲鉄城のカバネリ』で共演した声優、畠中祐との結婚を発表。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 39850,
+            "name": "ライオス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/52/38/39850_crt_2z8Hh.jpg?r=1708671566",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/38/39850_crt_2z8Hh.jpg?r=1708671566",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/38/39850_crt_2z8Hh.jpg?r=1708671566",
+                "grid": "https://lain.bgm.tv/pic/crt/g/52/38/39850_crt_2z8Hh.jpg?r=1708671566"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19514,
+                    "name": "熊谷健太郎",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2f/8b/19514_prsn_eHdJh.jpg?r=1571104156",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2f/8b/19514_prsn_eHdJh.jpg?r=1571104156",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2f/8b/19514_prsn_eHdJh.jpg?r=1571104156",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2f/8b/19514_prsn_eHdJh.jpg?r=1571104156"
+                    },
+                    "short_summary": "熊谷 健太郎（くまがい けんたろう、1994年2月16日 - ）は、日本の男性声優。埼玉県生まれ、沖縄県出身。ヒューマンアカデミー卒業。東京俳優生活協同組合所属。\r\n\r\n埼玉県生まれの3人兄弟の長男。小学校に入学するタイミングで沖縄本島中部の町へ引っ越し、19歳まで住んでいた。\r\n総合学園ヒューマンアカデミー卒業後、2014年、俳協ボイスアクターズスタジオに第45期生として入所。2015年、東京俳優生活協同組合に所属。\r\n\r\n普通自動車免許に加え、PADIオープンダイバーとP検3級の資格も持っている。小学校から中学校まではサッカーをしていた。\r\n『アイドルマスター SideM』の握野英雄役で初めてオーディションに合格した。\r\n天﨑滉平とはアニメの初現場から現場が一緒になることが多く、アイドルマスターSideMの公開録音でもステージに一緒に立てて、幸せだと語っている。",
+                    "locked": false
+                },
+                {
+                    "id": 30764,
+                    "name": "依田菜津",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fe/33/30764_prsn_n7aqY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/33/30764_prsn_n7aqY.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/33/30764_prsn_n7aqY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fe/33/30764_prsn_n7aqY.jpg"
+                    },
+                    "short_summary": "出身地\t三重県\r\n方言\t三重弁、関西弁\r\n芸歴\t日本ナレーション演技研究所\r\n趣味・特技\t\r\n【趣味】歌を歌うこと\r\n【特技】応用情報技術者（IT全国大会出場）",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 44473,
+            "name": "チルチャック",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3c/b7/44473_crt_zy0yE.jpg?r=1708671363",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/b7/44473_crt_zy0yE.jpg?r=1708671363",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/b7/44473_crt_zy0yE.jpg?r=1708671363",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3c/b7/44473_crt_zy0yE.jpg?r=1708671363"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 23379,
+                    "name": "泊明日菜",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e0/92/23379_prsn_TK2S1.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/92/23379_prsn_TK2S1.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/92/23379_prsn_TK2S1.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e0/92/23379_prsn_TK2S1.jpg"
+                    },
+                    "short_summary": "日本的女性声优，茨城县出身，Zynchro所属。\r\n\r\n趣味・特技：寺社参詣、散歩、躰道、クラシックバレエ\r\n資格：秘書検定3級、漢字検定準2級、躰道初段、普通運転免許(AT限定)\r\n芸歴：日本ナレーション演技研究所",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 54297,
+            "name": "ファリン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/83/63/54297_crt_PFppF.jpg?r=1696424934",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/63/54297_crt_PFppF.jpg?r=1696424934",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/63/54297_crt_PFppF.jpg?r=1696424934",
+                "grid": "https://lain.bgm.tv/pic/crt/g/83/63/54297_crt_PFppF.jpg?r=1696424934"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4895,
+                    "name": "早見沙織",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522"
+                    },
+                    "short_summary": "幼儿园、小学、初中、高中就读于白百合学园，高中时转入都内高中就读。早稻田大学毕业。\r\n在小学4年级的时候知道了“声优”这职业，决心成为声优。\r\n2004年4月，中学1年级时进入日本播音演技研究所少年声优班学习。\r\n在少年声优班第二年的2006年3月，通过I'm Enterprise的选拔考试。第一次工作是《机械女仆》的Drama CD。之后在2007年透过《桃华月惮》动画出道。\r\n清脆的声音是其特征。演技幅度很广的实力派，从幼女到花样年华的少女、文静的角色到活泼的角色、而且还能演出少年角色动物角色。演出的不同角色之间的差别很大。此外歌唱力也有公认的评价。\r\n2008年4月起，因学业缘故，每周只到日本播音演技研究所上一次课。2008年10月3日，首次主持广播节目《ラジオどっとあい 早见沙织のぽじてぃ部〜Sweetsな放课後》。\r\n2015年4月21日，以TV动画《赤发白雪姬》的片头主题歌《やさしい希望》歌手出道。\r\n2016年，在第10回声优奖中获得助演女优奖。\r\n\r\n家庭构成是父亲、母亲。还饲养着兔子。喜欢看警察题材的电视剧，在广播中透露出是电视剧《相棒》系列的FANS。\r\n从4岁开始学弹钢琴，此外还学过绘画、游泳、网球等众多东西，不过唯一持续下来的是弹钢琴，体育类的基本都持续不久。在绘画方面，据说曾在小学生时参加亚洲大赛并获得金奖。\r\n小时候开始就很喜欢唱歌，据说和母亲一起坐车的时候总是跟着车上的播放机大声地唱歌，然后母亲经常会指导她说“刚才走调了”之类的。在爵士乐歌手的母亲的推荐下在中学时就开始学习唱爵士乐。\r\n性格非常稳健，待人很有礼貌。而且在演技上具有很高的意识和才能，在声优前辈和动画制作人员中也有很高的评价。据说同事务所的间岛淳司在收录现场看到刚出道没多久时候的早见时说“看来我们事务所将来也很安泰啊”。\r\n也有天然的一面，曾把洗面奶错当牙膏拿来刷牙，还曾在收录时背后的拉链没拉上就来到录音棚。\r\n与同事务所的山本麻里安一样，因为就读的学校禁止艺术类活动而转校，在声优与学业两付重担艰难前行。\r\n与悠木碧和东山奈央公私关系良好，交往密切。日高里菜曾表示过“超喜欢早见沙织”，两人私交甚密。\r\n在广播节目中有时会模仿黑柳彻子、安东尼奥·猪木、儿玉清等。在《鹡鸰女神》的广播节目《セキレイらじお》中模仿黑柳彻子的段子，并在《鹡鸰女神》DVD第6卷的OVA里被用来作恶搞。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 55790,
+            "name": "センシ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/55/f2/55790_crt_xjNzl.jpg?r=1692589851",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/f2/55790_crt_xjNzl.jpg?r=1692589851",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/f2/55790_crt_xjNzl.jpg?r=1692589851",
+                "grid": "https://lain.bgm.tv/pic/crt/g/55/f2/55790_crt_xjNzl.jpg?r=1692589851"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3998,
+                    "name": "中博史",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f6/c6/3998_prsn_YobUg.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/c6/3998_prsn_YobUg.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/c6/3998_prsn_YobUg.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f6/c6/3998_prsn_YobUg.jpg"
+                    },
+                    "short_summary": "日本の男性声優、ナレーターである。賢プロダクション所属。大分県出身。本名は中村 博昭（なかむら ひろあき）。\r\n\r\nバオバブ学園（現：ビジュアル・スペース俳優養成所）3期生。ぷろだくしょんバオバブに2012年1月まで所属していた。同年2月よりメディアフォース所属。2014年2月17日付けで賢プロダクションに移籍。",
+                    "locked": false
+                },
+                {
+                    "id": 18629,
+                    "name": "大隈健太",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/22/72/18629_prsn_0UZ9d.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/72/18629_prsn_0UZ9d.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/72/18629_prsn_0UZ9d.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/22/72/18629_prsn_0UZ9d.jpg"
+                    },
+                    "short_summary": "大隈 健太（おおくま けんた、1月22日 - ）は、日本の男性声優、俳優。大阪府出身。賢プロダクション所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 73175,
+            "name": "イヅツミ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3a/78/73175_crt_qdHgC.jpg?r=1711637185",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/78/73175_crt_qdHgC.jpg?r=1711637185",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/78/73175_crt_qdHgC.jpg?r=1711637185",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3a/78/73175_crt_qdHgC.jpg?r=1711637185"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 32862,
+                    "name": "神戸光歩",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e4/30/32862_prsn_tEDkf.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/30/32862_prsn_tEDkf.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/30/32862_prsn_tEDkf.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e4/30/32862_prsn_tEDkf.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

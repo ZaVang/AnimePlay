@@ -1,0 +1,56 @@
+{
+    "id": 72114,
+    "name": "能井",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2a/a4/72114_crt_4i4Mw.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/a4/72114_crt_4i4Mw.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/a4/72114_crt_4i4Mw.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2a/a4/72114_crt_4i4Mw.jpg"
+    },
+    "summary": "煙の従姉妹にして部下の掃除屋。身長209cm。体重124kg。足のサイズ30cm。バストのサイズ104cm。\r\n心のパートナーであり、彼を「先輩」と呼び慕っている。愛用の革ツナギとごついマスクを着けた姿では男性の巨漢にしか見えないが、実は女子ボディビルダーのような体格をした銀髪赤目の美女。男勝りのカラっとした性格でケンカが大好き。戦闘狂であり、一度負けている相手への対策を嫌がるなど戦いに関してはかなりの慢心が見受けられる。チョップで魔法使いを縦に真っ二つにし、殴り殺した相手が壁にめり込む等、その腕力を生かした打撃で戦う。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "能井"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "のい"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "209cm"
+        },
+        {
+            "key": "体重",
+            "value": "124kg"
+        },
+        {
+            "key": "胸围",
+            "value": "104cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 12,
+        "collects": 47
+    },
+    "anime_ids": [
+        266301
+    ]
+}

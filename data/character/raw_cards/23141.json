@@ -1,0 +1,52 @@
+{
+    "id": 23141,
+    "name": "香月舞",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/87/1e/23141_crt_FiXNU.jpg?r=1390517598",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/1e/23141_crt_FiXNU.jpg?r=1390517598",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/1e/23141_crt_FiXNU.jpg?r=1390517598",
+        "grid": "https://lain.bgm.tv/pic/crt/g/87/1e/23141_crt_FiXNU.jpg?r=1390517598"
+    },
+    "summary": "主人公。こてまり学園の小学部に通う11歳の少女。亜麻色のショートカットが特徴的な、活発で元気あふれる少女。\r\n    マジックが大好きだが、父親から受け継いでしまった生来の不器用さから手先がついて行かず、腕は未熟そのもの。憧れのエミリー・ハウエルのようなマジシャンになりたいと思う彼女は、鏡の精・トポから魔法を授かることで自分の理想像である「マジカルエミ」に変身できるようになった。\r\n    中森家に引っ越してきた高校生・結城将に淡い恋心を抱くようになる。クラスメイトの武蔵からは好意を持たれているが、本人は全く気付いていない。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "香月舞"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "香月 舞"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かづき まい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kazuki Mai"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 5
+    },
+    "anime_ids": [
+        67780
+    ]
+}

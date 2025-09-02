@@ -1,0 +1,151 @@
+{
+    "id": 14588,
+    "name": "摇曳百合",
+    "image_path": "data/images/anime/14588.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "在七森中学的校园里，无所事事四人帮——女主角赤座灯里、暴走的岁纳京子、吐糟役的船见结衣，以及在人前会伪装成可爱女孩的吉川千夏，擅自把废了部的茶道社部室据为己用，并且自称地建立了娱乐部。擅自使用课室又引来了学生会的介入，于是各种百合妄想也在作品中飞舞着。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2011-07-04",
+    "rating_rank": 632,
+    "rating_score": 7.6,
+    "rating_total": 8060,
+    "main_character_ids": [
+        13004,
+        13005,
+        13006,
+        13007
+    ],
+    "main_characters": [
+        {
+            "id": 13004,
+            "name": "赤座あかり",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/19/44/13004_crt_gjnmH.jpg?r=1728871300",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/44/13004_crt_gjnmH.jpg?r=1728871300",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/44/13004_crt_gjnmH.jpg?r=1728871300",
+                "grid": "https://lain.bgm.tv/pic/crt/g/19/44/13004_crt_gjnmH.jpg?r=1728871300"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5105,
+                    "name": "三上枝織",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4b/40/5105_prsn_K6Ry9.jpg?r=1700405779",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/40/5105_prsn_K6Ry9.jpg?r=1700405779",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/40/5105_prsn_K6Ry9.jpg?r=1700405779",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4b/40/5105_prsn_K6Ry9.jpg?r=1700405779"
+                    },
+                    "short_summary": "身高160cm，体重45公斤。\r\n\r\n2007年高中毕业后到东京居住，2009年毕业于东京广播学院放送声优科（相当于五专二技），并在第二回声优AWARD新人发掘甄选会上同时获得七家声优经纪公司的缺额，最后选择进入传统老牌经纪公司“青二Production”。\r\n\r\n2012年获得第六回声优AWARD新人女优奖，同年10月24日与同事务所的声优后辈津田美波一起为演出的电影“手机男友/手机女友”推出单曲EP。\r\n\r\n生日为西元1989年1月6日，是日本尚未改为平成年号的“昭和年代末段班”。\r\n\r\n成为声优的契机是因为在祖母家看过机械女神J。\r\n\r\n才艺为钢琴和网球，持有证照为：手排汽车驾照、汉字检定2级、珠算1级、心算1级。\r\n\r\n位在青森的老家是开设修车厂，父亲是日本东北区有名的职业拉力赛车手，其子女也跟随父亲脚步进入赛车界，可谓赛车手家族。\r\n\r\n喜欢吃的食物是甜点（特别是巧克力&芭菲）跟烧肉，也喜欢看男生戴眼镜穿西装，自称没有S属性。\r\n\r\n曾在Live广播节目“A&G NEXT GENERATION Lady Go!!”2012年1月2日播出回里在尚未营业的烧烤店内，展现出一个人边烧肉边介绍听众来信的样子。\r\n\r\n本人曰：“烧肉是主食，巧克力是点心”。\r\n\r\n但是本人曾说过烧肉的油脂部份总是让人难以下咽，所以都会把油脂推给别人吃。\r\n\r\n比起夏天更喜欢冬天，喜欢的二次元角色是美少女战士中的燕尾服假面。\r\n\r\n喜欢猫，常常去猫咖啡厅，此外也喜欢六角恐龙，不怎么常玩电视游戏。\r\n\r\n爱用龙角散喉糖，但是只要一吃此款喉糖就会开始流鼻水或打喷嚏。\r\n\r\n很不习惯在他人面前喝水，讨厌瓢虫，对瓢虫的圆点花纹感到很不舒服，曾说明瓢虫是所有生物中最令她感冒的一种。\r\n\r\n平常操著一口标准语（关东腔），但是偶尔会在广播节目中展现家乡口音“津轻腔”，曾在A&G NEXT GENERATION Lady Go!!2012年2月20日播出回中，几近从头到尾用津轻腔主持节目一小时。\r\n\r\n在广播节目中有无意摸头发或耳机的习惯，另外也有无意间触摸女孩子的手的习惯，对于共演已久的七森中娱乐部成员来说早已习惯被摸手，但是在声优活动中初次共同上台的声优（或是台上离比较近的声优）总是会被吓到。\r\n\r\n学生时代的校外教学地点分别为：国小去北海道函馆（经由青函海底隧道）、国中去东京及东京迪士尼乐园、高中去京都奈良（搭乘飞机），高中校外教学前两天原本突然发了38.9度的高烧，最后是靠打点滴总才算是勉强参加到旅行。\r\n\r\n喜欢幼小的小孩子，但是本人在饰演幼小的小孩子时不遮住脸就会感到非常的害羞。\r\n\r\n根据同为七森中娱乐部的成员大坪由佳在广播节目中所说，三上本人睡觉时会发出很可爱的呼噜声，而且还睡迷糊称大坪为“亲爱的”，当事人听到此言后当场羞耻的急忙挥手阻止场面继续发展下去，不过其害羞的样子却意外掳获不少日本粉丝的心。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13005,
+            "name": "歳納京子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/05/98/13005_crt_o8PHg.jpg?r=1444170198",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/98/13005_crt_o8PHg.jpg?r=1444170198",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/98/13005_crt_o8PHg.jpg?r=1444170198",
+                "grid": "https://lain.bgm.tv/pic/crt/g/05/98/13005_crt_o8PHg.jpg?r=1444170198"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6706,
+                    "name": "大坪由佳",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/55/4b/6706_prsn_55NH1.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/4b/6706_prsn_55NH1.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/4b/6706_prsn_55NH1.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/55/4b/6706_prsn_55NH1.jpg"
+                    },
+                    "short_summary": "大坪 由佳（おおつぼ ゆか、1993年6月11日 - ）は日本の女性声優。千葉県出身。EARLY WING所属。\r\n2020年10月31日，宣布与一般男性(29岁)结婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13006,
+            "name": "船見結衣",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7f/f6/13006_crt_44395.jpg?r=1445379779",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/f6/13006_crt_44395.jpg?r=1445379779",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/f6/13006_crt_44395.jpg?r=1445379779",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7f/f6/13006_crt_44395.jpg?r=1445379779"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5736,
+                    "name": "津田美波",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b8/b0/5736_prsn_6MaTt.jpg?r=1705471478",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/b0/5736_prsn_6MaTt.jpg?r=1705471478",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/b0/5736_prsn_6MaTt.jpg?r=1705471478",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b8/b0/5736_prsn_6MaTt.jpg?r=1705471478"
+                    },
+                    "short_summary": "津田美波是1989年出生于日本神奈川县，是一位日本的女性声优，所属于青二プロダクション。从2009年开始出道， 声线从幼女到青少年的少女。近来则出演过随和系，小大人系，娇蛮系，腹黑少女，纯情派等多种多样的配角色。在2011年的新番Fractale中首次主役。歌唱的不错在平时也很喜欢听歌",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13007,
+            "name": "吉川ちなつ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4c/ee/13007_crt_U3Pqv.jpg?r=1444773044",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/ee/13007_crt_U3Pqv.jpg?r=1444773044",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/ee/13007_crt_U3Pqv.jpg?r=1444773044",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4c/ee/13007_crt_U3Pqv.jpg?r=1444773044"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6090,
+                    "name": "大久保瑠美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/80/86/6090_prsn_9zFG9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/86/6090_prsn_9zFG9.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/86/6090_prsn_9zFG9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/80/86/6090_prsn_9zFG9.jpg"
+                    },
+                    "short_summary": "1989年、両親の実家である愛媛県で生まれ、埼玉県で育つ。\r\n2009年、専門学校東京アナウンス学院放送声優科在籍時に「第3回 81オーディション」に参加し、優秀賞を受賞。テレビアニメ『ささめきこと』でデビュー。\r\n2011年1月には、テレビアニメ『フリージング』で初のレギュラーを獲得。4月には『はっぴーカッピ』でテレビアニメ初主演を果たす。\r\n2013年3月1日、第7回声優アワード新人女優賞を受賞。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

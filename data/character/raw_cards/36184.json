@@ -1,0 +1,44 @@
+{
+    "id": 36184,
+    "name": "マナト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/32/70/36184_crt_oGJTr.jpg?r=1473063954",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/70/36184_crt_oGJTr.jpg?r=1473063954",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/70/36184_crt_oGJTr.jpg?r=1473063954",
+        "grid": "https://lain.bgm.tv/pic/crt/g/32/70/36184_crt_oGJTr.jpg?r=1473063954"
+    },
+    "summary": "パーティのまとめ役。リーダー。クラスは神官。\r\nパーティメンバーに対して、それぞれ的確な言葉をかけたり、指示を与えたりできる気配り人。いいやつ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "马纳多"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Manato"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 21,
+        "collects": 24
+    },
+    "anime_ids": [
+        148726
+    ]
+}

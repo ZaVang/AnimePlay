@@ -1,0 +1,64 @@
+{
+    "id": 2729,
+    "name": "エクレール",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b7/f1/2729_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/f1/2729_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/f1/2729_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b7/f1/2729_crt_anidb.jpg"
+    },
+    "summary": "“不管是怎么逃，到头来还是这样，我已经不想再绕远路了。”\r\n“不会开枪的，以我自己的意志。”\r\n\r\n平时是GOTT的接待员，真实身份是“ES MEMBER”一员。搭档是琉米爱尔。\r\n兼备一般人所不及的力量和速度，擅长力量攻击（运用管制技术制造的生化人）。武器是口红（涂了口红释放力量）、由口红变化而来的鞭子、其口红可破解/破坏电子系统。 以前G级的ES成员，但是记忆和G级能力也被封印了。但在第11集恢复记忆，G级能力也得到了解封。在第一季18集中以另一个身体出现（原来的身体没有阵亡，而是被Alv盗版了）。 过去和lumiere刚见面的时候被说“名字是男生”，当时的lumiere重伤了，救了她还成为了好友。一起流亡，一起看到了很多星球的毁灭和战争，然后遇到了eclipse，一起加入了GOTT，重复着悲伤的过去\r\n休日会很轻易地睡过头，和同为接待的riki为好友。本质是个吃货\r\n\r\n特殊能力：G级「Power」（力量）。C级武器是口红，当涂上口红後便很难控制自己的力量。 另外也可以使用纳米长枪等特殊武器。\r\n\r\n按照官方说法，真实能力为操纵规范粒子，所以也可以把粒子结成“力弹『FORCESHOOT』”发射进行远距离攻击\r\n喜欢的食物是杜松子酒、芹菜。\r\n\r\n口僻是“KEI·SEILA·SEIILA”（锵锵～☆)据说这是登场时的身体才有的口癖，过去的记忆里没有这种口癖。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾克蕾尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Eclair"
+                },
+                {
+                    "k": "日文名",
+                    "v": "エクレール"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ekureeru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "165"
+        },
+        {
+            "key": "BWH",
+            "value": "90/54/85"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 10
+    },
+    "anime_ids": [
+        3815
+    ]
+}

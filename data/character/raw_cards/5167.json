@@ -1,0 +1,64 @@
+{
+    "id": 5167,
+    "name": "ピヨモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/24/f0/5167_crt_Sw3w8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/f0/5167_crt_Sw3w8.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/f0/5167_crt_Sw3w8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/24/f0/5167_crt_Sw3w8.jpg"
+    },
+    "summary": "翅膀部份发达到像手臂一样的雏鸟型数码宝贝。翅膀能灵活动作，甚至可以抓住物体，但也因此反而不擅长飞行。平时生活在地面上，遇到危机就会飞上天空逃走。其飞行能力和巴达兽差不多，将巴达兽当成了竞争对手。梦想是成为能够在天上自在飞行的巴多拉兽，而不想成为无法飞上天空的巨鸡兽。个性好奇心旺盛，喜欢衔住种子兽的头部。必杀技是幻影的火焰『魔法火焰』。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "比丘兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Piyomon"
+                },
+                {
+                    "k": "韩文名",
+                    "v": "피요몬"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference/detail.php?directory_name=piyomon"
+        },
+        {
+            "key": "等级",
+            "value": "成长期"
+        },
+        {
+            "key": "类型",
+            "value": "雏鸟型"
+        },
+        {
+            "key": "属性",
+            "value": "疫苗"
+        },
+        {
+            "key": "必杀技",
+            "value": "魔法火焰"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 7
+    },
+    "anime_ids": [
+        3128
+    ]
+}

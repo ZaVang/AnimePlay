@@ -1,0 +1,56 @@
+{
+    "id": 5019,
+    "name": "フウ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/53/fd/5019_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/fd/5019_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/fd/5019_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/53/fd/5019_crt_anidb.jpg"
+    },
+    "summary": "多愁善感、心思细腻，武士家出身的15岁少女。\r\n带有一把粉色烤漆的武士刀，刀柄上有骰子及骷髅头的挂饰，对风来说意义重大。一直在寻找有向日葵味道的武士。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "风"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Fuu Kasumi"
+                },
+                {
+                    "k": "日文名",
+                    "v": "風"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fuu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 37,
+        "collects": 263
+    },
+    "anime_ids": [
+        254
+    ]
+}

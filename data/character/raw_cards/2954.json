@@ -1,0 +1,78 @@
+{
+    "id": 2954,
+    "name": "紫東遙",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ff/f6/2954_crt_Pbhth.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ff/f6/2954_crt_Pbhth.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ff/f6/2954_crt_Pbhth.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ff/f6/2954_crt_Pbhth.jpg"
+    },
+    "summary": "29歳。ＴＥＲＲＡ情報部第二諜報課所属の特務大尉。オーバーロード作戦にさきがけ、密命を帯び単身東京に潜入、綾人の脱出をサポートする。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "紫东遥"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "みしま はるか"
+                },
+                {
+                    "v": "美嶋遙"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Haruka Shitow"
+                },
+                {
+                    "k": "日文名",
+                    "v": "紫東遙"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しとう はるか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shitow Haruka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "167"
+        },
+        {
+            "key": "体重",
+            "value": "48"
+        },
+        {
+            "key": "BWH",
+            "value": "86/60/88"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 11,
+        "collects": 27
+    },
+    "anime_ids": [
+        1030
+    ]
+}

@@ -1,0 +1,93 @@
+{
+    "id": 127792,
+    "name": "要楽奈",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c2/a9/127792_crt_u2A5g.jpg?r=1743677729",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/a9/127792_crt_u2A5g.jpg?r=1743677729",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/a9/127792_crt_u2A5g.jpg?r=1743677729",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c2/a9/127792_crt_u2A5g.jpg?r=1743677729"
+    },
+    "summary": "花咲川女子学園の中学3年生。ライブハウス『RiNG』に神出鬼没に現れるエキセントリックガール。ギターの実力はかなりのもの。好きなものは好き、嫌いなものは嫌いとはっきりしている。抹茶が好き。\r\n\r\n因为觉得很有趣所以就加入了乐队。\r\n对猫很有兴趣。\r\n乐器：ESP POTBELLY Rāna Custom (Distressed See Thru Wine Red)\r\n\r\n[mask]MyGO!!!!! Gt.\r\n\r\n花咲川女子学園の中学3年生。MyGO!!!!!のギターを担当。かつて有名なガールズバンドでギターを務めていた都築詩船の孫で、ギターの実力はかなりのもの。気ままにライブハウス『RiNG』を訪れたり、猫と遊んだりしている。[/mask]",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "要乐奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "要 楽奈"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かなめ らーな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kaname Rāna"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月22日"
+        },
+        {
+            "key": "身高",
+            "value": "150cm"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "官网（It's MyGO!!!!!）",
+                    "v": "https://anime.bang-dream.com/mygo/character/rana/"
+                },
+                {
+                    "k": "官网（Ave Mujica）",
+                    "v": "https://anime.bang-dream.com/avemujica/character/rana/"
+                },
+                {
+                    "k": "萌娘百科",
+                    "v": "https://zh.moegirl.org.cn/zh-hans/MyGO!!!!!"
+                }
+            ]
+        },
+        {
+            "key": "担当",
+            "value": "吉他手"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "抺茶，还有荞麦面"
+        },
+        {
+            "key": "讨厌的东西",
+            "value": "韭菜，还有山药泥也不喜欢"
+        },
+        {
+            "key": "兴趣",
+            "value": "吸猫"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 22,
+    "stat": {
+        "comments": 225,
+        "collects": 488
+    },
+    "anime_ids": [
+        428735
+    ]
+}

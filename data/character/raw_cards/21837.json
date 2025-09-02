@@ -1,0 +1,44 @@
+{
+    "id": 21837,
+    "name": "イオリ・セイ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6c/fd/21837_crt_7B2VL.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/fd/21837_crt_7B2VL.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/fd/21837_crt_7B2VL.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6c/fd/21837_crt_7B2VL.jpg"
+    },
+    "summary": "私立圣凤学园初中部1年级生。模型店“伊织模型”的独生子，从小就与高达模型为伴，他对高达的制作技术与相关知识就连成年人也甘拜下风。 然而却不擅长对战的操作，总是在高达模型对战中的第一场就败下阵来。\r\n梦想是和父亲一样，在高达模型对战世界大赛中取胜，却因技术不足而苦恼。直至岭司出现，终找到自己值得信任的拍档。\r\n操作模型：飞翼高达→创制突击高达",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊织诚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Iori·Sei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 18
+    },
+    "anime_ids": [
+        77171
+    ]
+}

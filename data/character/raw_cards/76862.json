@@ -1,0 +1,68 @@
+{
+    "id": 76862,
+    "name": "仁科明",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4b/eb/76862_crt_QGW6D.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/eb/76862_crt_QGW6D.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/eb/76862_crt_QGW6D.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4b/eb/76862_crt_QGW6D.jpg"
+    },
+    "summary": "スポーツ推薦入学のオレ様ルーキー \r\nスポーツ推薦で風林中に入学した新入生。とある事情で弱体化した野球部の補強選手として入部した、名門・南陽ライオンズの元エース。自分の実力に自信を持ち、大吾や睦子に対し生意気な態度をとる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "仁科明"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "仁科　明"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "にしな　あきら"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "168cm（初中）"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        },
+        {
+            "key": "背号",
+            "value": "9"
+        },
+        {
+            "key": "守备位置",
+            "value": "外野手／投手"
+        },
+        {
+            "key": "投打",
+            "value": "右投右打"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 1
+    },
+    "anime_ids": [
+        292219
+    ]
+}

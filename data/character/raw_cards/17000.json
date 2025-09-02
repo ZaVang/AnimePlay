@@ -1,0 +1,65 @@
+{
+    "id": 17000,
+    "name": "槙島聖護",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ed/e2/17000_crt_ImbSW.jpg?r=1411138093",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/e2/17000_crt_ImbSW.jpg?r=1411138093",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/e2/17000_crt_ImbSW.jpg?r=1411138093",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ed/e2/17000_crt_ImbSW.jpg?r=1411138093"
+    },
+    "summary": "数々の事件の裏で暗躍する謎の男。\r\n狡噛慎也と何らかの因縁があるらしい。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "槙岛圣护"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "槙島 聖護"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まきしま しょうご"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Makishima Shougo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "180cm"
+        },
+        {
+            "key": "体重",
+            "value": "65kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 37,
+        "collects": 201
+    },
+    "anime_ids": [
+        37685,
+        103906
+    ]
+}

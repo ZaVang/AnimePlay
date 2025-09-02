@@ -1,0 +1,89 @@
+{
+    "id": 47658,
+    "name": "小林さん",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f1/f2/47658_crt_8111x.jpg?r=1484250105",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/f2/47658_crt_8111x.jpg?r=1484250105",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/f2/47658_crt_8111x.jpg?r=1484250105",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f1/f2/47658_crt_8111x.jpg?r=1484250105"
+    },
+    "summary": "本作の主人公。25歳。「地獄巡商事北千住事務所」のOLにしてシステムエンジニア。本人曰く「底辺」とのことだが、滝谷曰く会社の「柱」で、バレンタインデーには同僚からチョコを大量に貰っていた。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小林小姐"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小林"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こばやし"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kobayashi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月23日"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B70/W60/H70"
+        },
+        {
+            "key": "年龄",
+            "value": "25岁"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "酒、毛豆、芥末章鱼"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "羊栖菜、茄子"
+        },
+        {
+            "key": "兴趣",
+            "value": "女仆探讨"
+        },
+        {
+            "key": "特技",
+            "value": "超高速打字"
+        },
+        {
+            "key": "トールがいてよかったこと",
+            "value": "宅飲みの話し相手、自宅の整理整頓"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 23,
+    "stat": {
+        "comments": 35,
+        "collects": 136
+    },
+    "anime_ids": [
+        274234,
+        179949
+    ]
+}

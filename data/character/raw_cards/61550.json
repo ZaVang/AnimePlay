@@ -1,0 +1,69 @@
+{
+    "id": 61550,
+    "name": "梓川咲太",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b9/0c/61550_crt_8bbOR.jpg?r=1539633078",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/0c/61550_crt_8bbOR.jpg?r=1539633078",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/0c/61550_crt_8bbOR.jpg?r=1539633078",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b9/0c/61550_crt_8bbOR.jpg?r=1539633078"
+    },
+    "summary": "青春ブタ野郎\r\n\r\n今時、携帯電話を持っていない変わり者の高校2年生。\r\n暴力事件を起こしたという噂のせいで学校では浮いた存在になっているが、本人はあまり気にしていない。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "梓川咲太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "梓川 咲太"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あずさがわ さくた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Azusagawa Sakuta"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月10日"
+        },
+        {
+            "key": "身高",
+            "value": "172cm"
+        },
+        {
+            "key": "学年",
+            "value": "高校2年生"
+        },
+        {
+            "key": "特技",
+            "value": "なし"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 10,
+    "stat": {
+        "comments": 76,
+        "collects": 250
+    },
+    "anime_ids": [
+        240038,
+        467930
+    ]
+}

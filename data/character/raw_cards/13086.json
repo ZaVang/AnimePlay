@@ -1,0 +1,68 @@
+{
+    "id": 13086,
+    "name": "なずな",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8a/b6/13086_crt_uQui9.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/b6/13086_crt_uQui9.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/b6/13086_crt_uQui9.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8a/b6/13086_crt_uQui9.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "荠"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "小荠"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "薺"
+                },
+                {
+                    "k": "日文名",
+                    "v": "なずな"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なずな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nazuna"
+                },
+                {
+                    "k": "昵称",
+                    "v": "なずな殿"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "房间",
+            "value": "203号室"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 27
+    },
+    "anime_ids": [
+        37819,
+        3622
+    ]
+}

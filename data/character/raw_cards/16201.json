@@ -1,0 +1,64 @@
+{
+    "id": 16201,
+    "name": "坂井和奏",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/58/3a/16201_crt_9K6tz.jpg?r=1364087030",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/3a/16201_crt_9K6tz.jpg?r=1364087030",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/3a/16201_crt_9K6tz.jpg?r=1364087030",
+        "grid": "https://lain.bgm.tv/pic/crt/g/58/3a/16201_crt_9K6tz.jpg?r=1364087030"
+    },
+    "summary": "土産物屋の娘。母の存命中は音楽科に籍を置いていたが、彼女が他界した事により音楽と決別を果たした。家族構成は父圭介とオス猫のドラ。\r\n\r\n年齢：高校3年生\r\n\r\n好きな食べ物：ケーキ、健康にいいもの（有機、無農薬）\r\n嫌いな食べ物：ナス（色が気持ち悪い）、酢味噌\r\n趣味：猫じゃらし、旅番組を見る、読書\r\n兄弟：なし、猫を飼ってる（ドラ・♂）",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "坂井和奏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "さかい わかな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakai Wakana"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月6日（乙女座）"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "49.5kg（自称）"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 6,
+    "stat": {
+        "comments": 20,
+        "collects": 151
+    },
+    "anime_ids": [
+        37137
+    ]
+}

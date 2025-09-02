@@ -1,0 +1,39 @@
+{
+    "id": 76683,
+    "name": "みゅー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d8/88/76683_crt_z16g6.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/88/76683_crt_z16g6.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/88/76683_crt_z16g6.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d8/88/76683_crt_z16g6.jpg"
+    },
+    "summary": "玩偶猫一方的主角。浅紫罗兰色的小猫玩偶。性格十分温柔。怕狗。口头禅是「~喵」。拥有进入他人梦境的「梦境同步」这一能力。被小梦捡到后成为她的梦梦搭档，并一起收集梦梦宝石。\r\n\r\n猫キャラクター側の主人公。淡いすみれ色の子猫のぬいぐるみ。ほんわか優しい性格。犬が苦手。口癖は「～みゃ」。相手の夢の中に入れる「ユメシンクロ」という能力を持つ。ゆめに拾ったことでゆめのドリームパートナーになって、ドリーミーストーンを集めることになる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "梦梦猫"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "生日",
+            "value": "9月2日"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 2,
+    "stat": {
+        "comments": 4,
+        "collects": 5
+    },
+    "anime_ids": [
+        289829
+    ]
+}

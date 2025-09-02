@@ -1,0 +1,79 @@
+{
+    "id": 13070,
+    "name": "シャーロット・E・イェーガー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/00/2b/13070_crt_tt38c.jpg?r=1528123013",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/00/2b/13070_crt_tt38c.jpg?r=1528123013",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/00/2b/13070_crt_tt38c.jpg?r=1528123013",
+        "grid": "https://lain.bgm.tv/pic/crt/g/00/2b/13070_crt_tt38c.jpg?r=1528123013"
+    },
+    "summary": "隶属利比里昂陆军第363战斗飞行队，军衔上尉。\r\n部队中身材最丰满伟岸的女队员，身高167cm，三围达到傲人的94/61/86。战斗采极接近战。结果决定一切的能力主义者，但是对于周遭气氛的变化相当敏感；不拘小节、宽宏大量。个性上是一根肠子通到底，遇到挑战则会积极面对。喜欢干净，相当中意基地从扶桑皇国引进的澡堂。讨厌像章鱼之类“软软黏黏、蠕动”的食材做成的料理。\r\n机械造诣深厚，会在房间里整修摩托车，并且不时改装和测试自己的飞行脚。魔导引擎摩托车的速度记录保持人。入队后则为了追击速度型的异形军，致力于提升飞行脚的最大速度。\r\n\r\n飞行脚机型P-51D，武器为BAR M1918、Thompson M1A1冲锋枪、Colt Government 1911A1手枪，使魔是兔子。\r\n固有魔法是加速，可以快速横越长距离。\r\n\r\n原型：美国陆军航空团飞行员查克·叶格（Charles Elwood \"Chuck\" Yeager，1923年2月13日－2020年12月7日），拥有击坠数为12.5的战绩。战后查克担当美国空军与NASA试飞员，也是第一个突破音障的人类，并且在《强袭魔女》开播时仍在世。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "夏洛特·E·叶格"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "夏洛特·埃尔温·叶格"
+                },
+                {
+                    "v": "Charlotte E. Yeager"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Charlotte Elwyn Yeager"
+                },
+                {
+                    "k": "日文名",
+                    "v": "シャーロット・エルウィン・イェーガー"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shārotto Erū~in Iēgā"
+                },
+                {
+                    "k": "昵称",
+                    "v": "迷人的夏莉(グラマラス・シャーリー,Glamorous Shirley)"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1928年2月13日"
+        },
+        {
+            "key": "身高",
+            "value": "167cm"
+        },
+        {
+            "key": "体重",
+            "value": "52kg"
+        },
+        {
+            "key": "BWH",
+            "value": "94/61/86"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1928,
+    "birth_mon": 2,
+    "birth_day": 13,
+    "stat": {
+        "comments": 17,
+        "collects": 35
+    },
+    "anime_ids": [
+        253046,
+        5651
+    ]
+}

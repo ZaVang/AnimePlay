@@ -1,0 +1,586 @@
+{
+    "id": 13607,
+    "type": 2,
+    "name": "サイボーグ009 THE CYBORG SOLDIER",
+    "name_cn": "人造人009",
+    "summary": "       于2001年10月开始放送的人造人009系列TV动画第三作，共51话的彩色动画，通称平成版。\r\n       其中1-27话为バトルアライブ（Battle Alive）篇，28-48话为第二章 地上より永遠に（从现在到永远），49-51话为完結編〜Conclusion God's War〜序章〜。此外另有总集篇47.5话黄泉的群像。到48话为止即可视为完整的一个故事，关于完结篇之后会另外详细介绍。\r\n       平成版是以忠实于漫画原作为方针制作的，以原作的起点“诞生篇”为开头、“地下帝国黄泉篇”为动画结局，中间则包含了其他原作知名中篇及若干短篇改编而成的动画。\r\n       但由于动画播出时的2001年与原作开始的年代设定（1960年代）相比，世界局势发生了巨大的变化，所以动画相应地改动了一些设定，比如001-004号的“第一世代”设定就是原作所没有的。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2001-10-14",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/d4/79/13607_mDRDS.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/d4/79/13607_mDRDS.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/d4/79/13607_mDRDS.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/d4/79/13607_mDRDS.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/d4/79/13607_mDRDS.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "人造人009"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "再造人009",
+                    "k": null
+                },
+                {
+                    "v": "Cyborg 009",
+                    "k": null
+                },
+                {
+                    "v": "サイボーグ009 テレビシリーズ（第3作）",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "51"
+        },
+        {
+            "key": "放送开始",
+            "value": "2001年10月14日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://ishimoripro.com/作品紹介/?id=215"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京系列"
+        },
+        {
+            "key": "播放结束",
+            "value": "2002年10月13日"
+        },
+        {
+            "key": "导演",
+            "value": "川越淳"
+        },
+        {
+            "key": "音乐",
+            "value": "小室哲哉"
+        },
+        {
+            "key": "Copyright",
+            "value": "©2001 石森プロ／サイボーグ009製作委員会"
+        },
+        {
+            "key": "企画",
+            "value": "大橋研一、好木俊治、岩田圭介"
+        },
+        {
+            "key": "监修",
+            "value": "小野寺章"
+        },
+        {
+            "key": "美术监督",
+            "value": "竹田悠介；辅佐：阪井圭太、繁澤隆"
+        },
+        {
+            "key": "美术设计",
+            "value": "加藤浩、平澤晃弘"
+        },
+        {
+            "key": "色彩设计",
+            "value": "原田幸子"
+        },
+        {
+            "key": "剪辑",
+            "value": "田熊純；助手：中川綾子"
+        },
+        {
+            "key": "摄影监督",
+            "value": "大前亮介、佐藤正人"
+        },
+        {
+            "key": "音响监督",
+            "value": "岩浪美和"
+        },
+        {
+            "key": "音效",
+            "value": "浦畑将〔1-27〕、 川田清貴〔28-51〕；助手：上田文子〔1-28〕"
+        },
+        {
+            "key": "音乐制作",
+            "value": "avex mode；音乐协力：テレビ東京ミュージック"
+        },
+        {
+            "key": "动画制片人",
+            "value": "松元文一；现场制片人：田嶋秀樹"
+        },
+        {
+            "key": "制片人",
+            "value": "井上光晴、岩田牧子"
+        },
+        {
+            "key": "製作",
+            "value": "テレビ東京、ジャパンヴィステック；製作協力：avex mode、博報堂"
+        },
+        {
+            "key": "机械设定",
+            "value": "紺野直幸；客串机设：村田護郎、高倉武史"
+        },
+        {
+            "key": "录音",
+            "value": "山下裕康、矢野さとし；录音工作室：ACスタジオ"
+        },
+        {
+            "key": "音响",
+            "value": "AC CREATE〔1-?〕→ACクリエイト〔?-51〕；音响制作担当：三澤綾子"
+        },
+        {
+            "key": "构图",
+            "value": "レイアウト監修：紺野直幸"
+        },
+        {
+            "key": "机械作画监督",
+            "value": "阿蒜晃嗣"
+        },
+        {
+            "key": "制作协力",
+            "value": "東映アニメーション"
+        },
+        {
+            "key": "总制片人",
+            "value": "長澤隆之"
+        }
+    ],
+    "volumes": 0,
+    "eps": 51,
+    "total_episodes": 52,
+    "rating": {
+        "rank": 1339,
+        "total": 52,
+        "count": {
+            "one": 0,
+            "two": 0,
+            "three": 1,
+            "four": 0,
+            "five": 3,
+            "six": 5,
+            "seven": 11,
+            "eight": 24,
+            "nine": 4,
+            "ten": 4
+        },
+        "score": 7.6
+    },
+    "collection": {
+        "wish": 256,
+        "collect": 88,
+        "doing": 23,
+        "on_hold": 27,
+        "dropped": 15
+    },
+    "tags": [
+        {
+            "name": "2001",
+            "count": 37
+        },
+        {
+            "name": "TV",
+            "count": 35
+        },
+        {
+            "name": "漫画改",
+            "count": 21
+        },
+        {
+            "name": "石森章太郎",
+            "count": 20
+        },
+        {
+            "name": "サイボーグ009",
+            "count": 13
+        },
+        {
+            "name": "漫改",
+            "count": 12
+        },
+        {
+            "name": "川越淳",
+            "count": 11
+        },
+        {
+            "name": "补旧番",
+            "count": 9
+        },
+        {
+            "name": "森久保祥太郎",
+            "count": 7
+        },
+        {
+            "name": "科幻",
+            "count": 7
+        },
+        {
+            "name": "2001年10月",
+            "count": 6
+        },
+        {
+            "name": "Cybog009",
+            "count": 6
+        },
+        {
+            "name": "战斗",
+            "count": 5
+        },
+        {
+            "name": "石ノ森章太郎",
+            "count": 4
+        },
+        {
+            "name": "人造人009",
+            "count": 3
+        },
+        {
+            "name": "雪野五月",
+            "count": 3
+        },
+        {
+            "name": "日本",
+            "count": 3
+        },
+        {
+            "name": "小林靖子",
+            "count": 3
+        },
+        {
+            "name": "音乐不错",
+            "count": 3
+        },
+        {
+            "name": "大西信介",
+            "count": 3
+        },
+        {
+            "name": "若本规夫",
+            "count": 2
+        },
+        {
+            "name": "TVA",
+            "count": 2
+        },
+        {
+            "name": "日本动画",
+            "count": 2
+        },
+        {
+            "name": "动画",
+            "count": 2
+        },
+        {
+            "name": "2001版",
+            "count": 1
+        },
+        {
+            "name": "2000-2009",
+            "count": 1
+        },
+        {
+            "name": "老害最爱",
+            "count": 1
+        },
+        {
+            "name": "岩浪美和",
+            "count": 1
+        },
+        {
+            "name": "铃木利正",
+            "count": 1
+        },
+        {
+            "name": "吉成曜",
+            "count": 1
+        }
+    ],
+    "meta_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "series": false,
+    "main_character_ids": [
+        33999,
+        44851,
+        44852,
+        44853,
+        44854,
+        44855,
+        44856,
+        44857,
+        44858
+    ],
+    "main_characters": [
+        {
+            "id": 33999,
+            "name": "島村ジョー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/28/e5/33999_crt_VB0Vk.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/e5/33999_crt_VB0Vk.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/e5/33999_crt_VB0Vk.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/28/e5/33999_crt_VB0Vk.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4015,
+                    "name": "櫻井孝宏",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/06/29/4015_prsn_4TZox.jpg?r=1638448222"
+                    },
+                    "short_summary": "爱知县冈崎市老家的本业是米店，店名为“樱井米谷店”，在当地小有名气。\r\n初中时的一个冬天，怕冷的他擅自把酒精灯里的液体倒在理科实验室的桌子上，点起火取暖，引响了火灾报警器，被赶来的老师狠狠教训了一顿。于是在老师的国语课上捣乱报复，夸张地朗读课文，实在听不过去的老师求他：“拜托，别念得跟声优似的好不好！”——这话对那时的樱井冲击很大，给他留下了声优不过是连小孩子都做得来的简单工作的印象。所以高中毕业后，乐得找轻松的樱井选择进入东京的声优专科学校。待迈入这一行，他才吐血地发现，且不说成为佼佼者，就是普通从业者也得掌握高超的专业技巧。\r\n2005年8月《最终幻想VII：降临之子》于第62届威尼斯影展参展。樱井以担任主角配音的身份，成为继山寺宏一后第2位踏上星光大道的日本籍声优。\r\n虽然戴着眼镜，可是樱井二眼视力皆为2.0，植田佳奈笑称那是“骗人眼镜”。那付眼镜的意义是“梦想与希望与对声迷们的爱”。\r\n最初的错误是BL DRAMA制作社Inter communications（inter桑）的一张drama的BK上打成了樱井考宏，之后《无法逃离的背叛》某个活动的官方网站上亦把樱井孝宏的名字写成“樱井考宏”，所以有昵称考哥，而并非是他的名字中的“孝”字与“考”字很像才有此外号。\r\n桜井(sakurai)，桜井さん（sakurai san），sakura i san，樱13",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 44851,
+            "name": "イワン・ウイスキー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/64/01/44851_crt_q0lAT.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/64/01/44851_crt_q0lAT.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/64/01/44851_crt_q0lAT.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/64/01/44851_crt_q0lAT.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4263,
+                    "name": "植田佳奈",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/68/c8/4263_prsn_zcLyB.jpg?r=1460055841",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/c8/4263_prsn_zcLyB.jpg?r=1460055841",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/c8/4263_prsn_zcLyB.jpg?r=1460055841",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/68/c8/4263_prsn_zcLyB.jpg?r=1460055841"
+                    },
+                    "short_summary": "童年时在大阪府东大阪市渡过。因在关西出生，故经常为“关西腔”角色配音。\r\n由于替多个双马尾的角色配音，因此被部分粉丝称为双马尾声优。\r\n极爱玩网络游戏，和绿川光一样被称为“网络游戏废人”。另一兴趣是麻将，号称“植田雀庄庄主”。\r\n曾与声优中原麻衣、斎藤千和及森永理科结成组合“Mix JUICE”（みっくすJUICE），与同属同一事务所的森永理科和伊月唯关系良好。（两者现在均已退社）\r\n拥有业余无线电4级资格。 \r\n最新的个人日志中表示，现在是XBOX360的核心玩家，着迷于《最后一战3》，最近曾在8人联机对战比赛中连续奋战16小时，是有史以来头一次熬夜通宵游戏。目前属于陶山章央为核心的光晕战队。也在Halo 3: ODST和《使命召唤现代战争3》中配音。\r\n\r\nFacebook: https://www.facebook.com/%E6%A4%8D%E7%94%B0%E4%BD%B3%E5%A5%88Kana-Ueda-142283892502076/",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 44852,
+            "name": "ジェット・リンク",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/07/b9/44852_crt_gF138.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/b9/44852_crt_gF138.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/b9/44852_crt_gF138.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/07/b9/44852_crt_gF138.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4166,
+                    "name": "森久保祥太郎",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/21/ba/4166_prsn_pi1o3.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/ba/4166_prsn_pi1o3.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/ba/4166_prsn_pi1o3.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/21/ba/4166_prsn_pi1o3.jpg"
+                    },
+                    "short_summary": "日本的男性声优、演员、歌手。东京都八王子市出生，血型B型，现隶属于VIMS。\r\n带一点鼻音听起来有点“洋腔”的语调使他的声音辨识度极高，轻浮慢悠的口气很有贵族气息，也常接到一些外表看似花花公子实则非常专情的角色。\r\n在音乐方面十分活跃。与声优的石川英郎共组了乐团AN's ALL STARS。也常为友人的剧团担任音乐创作。\r\n演戏剧团“おにぎりスキッパーズ”的成员。\r\n与鸟海浩辅关系不错，两人在2008～2009的跨年夜曾整整两天都待在一起。\r\n2007年2月22日与浅川悠结婚。\r\n2009年1月14日离婚。\r\n2014年7月4日发表再婚消息，对方为一般女性。\r\n\r\n1992年、日本大学第三高等学校卒業、多摩美術大学中退。本格的に声優を始める前はタレント事務所に所属し、小学生の頃在籍したラボ・パーティの先輩達と立ち上げた劇団『おにぎりスキッパーズ』の公演を見た声優業界関係者のスカウトでオーディションを受け、『爆走兄弟レッツ&ゴー!!』のミニ四ファイターで1996年に声優デビュー。1年で最終話を迎えるはずが想像を遥かに超える人気作品に。よってシリーズが長引いてしまい、役者時代世話になった事務所から新たな声優事務所に移籍。以後、アニメ、ゲーム、ラジオパーソナリティ、音楽活動、舞台等様々な分野で活躍している。\r\nシグマ・セブンに在籍の後、現在のアーツビジョン系列事務所『ヴィムス』に移籍。\r\n1998年、声優の石川英郎と共に『あんず』(森久保が唯一食べられた果物)というユニット名で音楽活動を始める。\r\n1999年、バンドメンバーを加えバンド『AN's ALL STARS』結成。同年8月、バンド『Mosquito Milk』結成。\r\n2001年、カプコン セルピュータレーベルよりソロデビュー。\r\n2008年、Lantisより再デビュー。毎年末に開催される「Original Entertainment Paradise“おれパラ”」ではホストの一人としてライブを披露している。\r\n2010年、ソロプロジェクトとして『Buzzy→Bee（バジービー）』結成。\r\n2015年1月、bayfm長寿番組『KEIYOGINKO POWER COUNTDOWN JAPAN HOT 30』の2代目DJとして就任。(初代はバッキー木場。25年で引退。)\r\n2016年、第10回声優アワードで富山敬賞を受賞。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 44853,
+            "name": "フランソワーズ・アルヌール",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/30/bb/44853_crt_LPz22.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/bb/44853_crt_LPz22.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/bb/44853_crt_LPz22.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/30/bb/44853_crt_LPz22.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3821,
+                    "name": "ゆきのさつき",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a6/14/3821_prsn_96356.jpg?r=1671507307",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/14/3821_prsn_96356.jpg?r=1671507307",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/14/3821_prsn_96356.jpg?r=1671507307",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a6/14/3821_prsn_96356.jpg?r=1671507307"
+                    },
+                    "short_summary": "她在家里4个孩子中是最小的。出道之前，她上完小学、初中之后进入滋贺县立石山高中学习。在看过富士电视台于1986年开始播映的由高桥留美子原作的《相聚一刻》后，开始向往成为声优（14年后，她在公映的高桥作品《犬夜叉》中出演女主角·日暮篱）。高中毕业后，她说服强烈反对自己成为声优的父母，来到东京。\r\n\r\n来到东京后，她从专科学校——东京广播（announce）学院毕业。1992年，在NHK教育台播放的外国电影《很棒的日子》中出演少女C，由此出道。1996年在TBS系列播放的由布浦翼原作的《酷妹当家》中出演二之宫贵子，由此正式出道。尽管她是作为主角出道，但在当时还只是一个名不见经传的声优。而且，由于主人公二之宫贵子的台词很少，因此在节目中也较少听到她的声音。尽管现在已经很少看到了，但她确实曾经作为解说员为综艺节目做过旁白。之后，她出演众多作品，知名度逐渐上升。\r\n\r\n据说她本人性格认真，厌恶性格乖僻的人。比如在路上碰到乱扔空易开罐的人，她会提醒对方。甚至还抓到过流氓。也因此有些人觉得她很难相处、不懂得玩笑。她很容易投入角色，甚至在出演犬夜叉的过程中，看到山口胜平在和配桔梗的日高范子聊天就狠狠地瞪着对方。日高如是说：“（雪野）五月小姐很容易投入角色，因此当时她大概是以为犬夜叉被桔梗偷走了吧。不过，她那时的表情恐怖得非比寻常。”林原惠也证实，同样的轶事在《羔羊之歌》的收录现场也发生过。\r\n\r\n另外，她很讨厌下流的话题，1998年在东京系电视台播放的《在涩谷Chu！》节目中，她作为嘉宾出席，面对相声组合Jalism的捧哏（译注：在对口相声中，两名演员分别为逗哏和捧哏。逗哏主要叙述故事的发展，捧哏则对逗哏的叙述加以发挥补充，以增加喜剧气氛）、同为滋贺县出身的渡边锺接连放出的下流话题，她震怒了，令助手宫村优子小姐战栗不已（甚至令往常游刃有余地处理周围情况的宫村也慌张地为她打了圆场）。在节目最后，她毫不留情地给渡边评了低分，不过在2006年接演银魂后据说已经对下流的话题免疫了。不知何故，她接下的工作多为《犬夜叉》、《再做人009》、《植木的法则》等avex系列的动画。她喜欢的音乐家当属福山雅治。爱好则是旅游。顺便提一句，雪野还有许多其他因自己过于认真而导致与人交往困难的轶事，这些也为人熟知。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 44854,
+            "name": "アルベルト・ハインリヒ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/06/b3/44854_crt_398IY.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/b3/44854_crt_398IY.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/b3/44854_crt_398IY.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/06/b3/44854_crt_398IY.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4167,
+                    "name": "飛田展男",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fe/96/4167_prsn_iQprj.jpg?r=1514286894",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/96/4167_prsn_iQprj.jpg?r=1514286894",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/96/4167_prsn_iQprj.jpg?r=1514286894",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fe/96/4167_prsn_iQprj.jpg?r=1514286894"
+                    },
+                    "short_summary": "飛田 展男（とびた のぶお、1959年11月6日 - ）は、日本の声優、ナレーターであり、舞台俳優。アーツビジョン所属。\r\n茨城県水戸市出身。水戸市立三の丸小学校、茨城中学校・高等学校卒業。駒澤大学文学部歴史学科中退。体重55kg。血液型はAB型。愛称は「飛ちゃん」。\r\n\r\n飞田展男，可以说是日本男声优中的“变色龙”。他的角色反差极大，最为夸张的对比就是《安琪莉可》中的水之守护圣卢米埃和《烈火之炎》中的土门，一个美一个丑，一个柔弱一个健壮，一个温柔一个暴躁，一个优雅一个粗鲁，简直就是两个极端，令人怎么也无法相信这是同一位声优的演绎，但事实就是如此。飞田展男利用发音位置的变化控制声音效果，再辅以气声和力度，塑造出截然相反类型的人物。从控制发音变化的技巧来说，飞田展男是独一无二的。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 44855,
+            "name": "ジェロニモ・ジュニア",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9a/02/44855_crt_8jI1Y.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/02/44855_crt_8jI1Y.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/02/44855_crt_8jI1Y.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9a/02/44855_crt_8jI1Y.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3832,
+                    "name": "大塚明夫",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/18/8c/3832_prsn_O1E5c.jpg?r=1545044333"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーター。マウスプロモーション所属。\r\n父は同じく俳優・声優の大塚周夫、元妻は声優の沢海陽子。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 44856,
+            "name": "張々湖",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bd/46/44856_crt_yoRRy.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/46/44856_crt_yoRRy.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/46/44856_crt_yoRRy.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bd/46/44856_crt_yoRRy.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4046,
+                    "name": "茶風林",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/47/5d/4046_prsn_RmMtz.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/5d/4046_prsn_RmMtz.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/5d/4046_prsn_RmMtz.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/47/5d/4046_prsn_RmMtz.jpg"
+                    },
+                    "short_summary": "茶風林（ちゃふうりん、1961年12月4日 - ）は、日本の声優、俳優、ナレーターである。本名：嶋沢 弘隆（しまざわ ひろたか）。埼玉県出身。身長165cm、血液型はA型。大沢事務所に所属。かつては九プロダクションに所属していた。\r\n代表作は、『名探偵コナン』（目暮警部）、『ちびまる子ちゃん』（永沢くん、ヒデじい）、『スタートレック:エンタープライズ』（Dr.フロックス）、『サザエさん』（磯野波平）などがある。\r\n\r\n1961年12月4日、埼玉県に生まれる。東洋大学経済学部卒業。\r\n声優としては、アニメやゲーム、海外の映画などの吹き替え共に、中高年のキャラクターや三枚目、小悪党などを中心に個性的な役柄を多く演じる。ナレーターとしては、報道番組のナレーションの他に、テレビCMなどのナレーションも担当している。\r\n舞台俳優としても活動しており、舞台では自身の趣味であるタップダンスを生かす場面が見られることもある。なお、芸名の「茶風林」はチャップリンに由来している。\r\n2014年1月27日に、『サザエさん』にて放送開始以来44年にわたり磯野波平を演じた永井一郎が死去したことに伴い、同年2月16日放送分より2代目・磯野波平役、及び永井が『サザエさん』で担当していた持ち役を引き継ぐこととなり、放映前に自らのTwitter上で、「大好きだった大先輩のバトンを大切に受け継ぎたいと思います」とコメントした。\r\nホリ、古賀慶太と並んで滝口順平のモノマネを得意とする役者の1人で、前者よりも前にその技を生かしており、滝口の生前から多くの役を引き継ぎ、初代が滝口、2代目が茶であるものも少なくない。\r\n2016年8月8日、島根県松江市「観光大使」に就任。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 44857,
+            "name": "グレート・ブリテン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1b/5a/44857_crt_VdyOD.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/5a/44857_crt_VdyOD.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/5a/44857_crt_VdyOD.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1b/5a/44857_crt_VdyOD.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 44858,
+            "name": "ピュンマ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e9/27/44858_crt_cuFw4.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/27/44858_crt_cuFw4.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/27/44858_crt_cuFw4.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e9/27/44858_crt_cuFw4.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3889,
+                    "name": "岩田光央",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/86/09/3889_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/09/3889_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/09/3889_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/86/09/3889_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優。\r\n\r\n埼玉県所沢市出身。アクロス エンタテインメント所属。身長165cm、血液型はA型。以前は劇団こまどり、大沢事務所に所属していた。\r\n\r\n2013年3月1日、第7回声優アワードでパーソナリティ賞を受賞。\r\n\r\n妻子是同为声优的爱河里花子。两人结婚后将结婚这一事保密了很久。1992年6月13日两人在轻井泽高原教会结婚，2006年1月17日第1个孩子（男孩）诞生。\r\n实妹是声优AKIKO。表姐妹是歌手高柳千野（CHINO、叶菜）。义弟（爱河的弟弟）是《岩田光央・铃村健一 甜蜜引燃》的构成作家川添法臣。侄女是舞台剧演员、声优岩田阳葵（《少女☆歌剧 Revue Starlight》剧中露崎真昼的cv）。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

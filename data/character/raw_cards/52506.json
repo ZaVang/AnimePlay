@@ -1,0 +1,88 @@
+{
+    "id": 52506,
+    "name": "上原ひまり",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/39/12/52506_crt_8Tep0.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/12/52506_crt_8Tep0.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/12/52506_crt_8Tep0.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/39/12/52506_crt_8Tep0.jpg"
+    },
+    "summary": "性格开朗好相处，是乐队中的协调员。\r\n因为是有一点看不懂气氛的性格，导致最后会白忙活一场。\r\n泪点低，对于感动系的故事没有办法。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "上原绯玛丽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "上原绯鞠"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "うえはら ひまり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Uehara Himari"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月23日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "担当",
+            "value": "贝斯手"
+        },
+        {
+            "key": "星座",
+            "value": "天秤座"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "巧克力和零食"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "香菇"
+        },
+        {
+            "key": "兴趣",
+            "value": "在便利店吃饭"
+        },
+        {
+            "key": "所属",
+            "value": "Afterglow"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 23,
+    "stat": {
+        "comments": 16,
+        "collects": 50
+    },
+    "anime_ids": [
+        246431
+    ]
+}

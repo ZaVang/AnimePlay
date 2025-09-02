@@ -1,0 +1,60 @@
+{
+    "id": 35388,
+    "name": "木幡真琴",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3b/73/35388_crt_6TwkR.jpg?r=1455675174",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/73/35388_crt_6TwkR.jpg?r=1455675174",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/73/35388_crt_6TwkR.jpg?r=1455675174",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3b/73/35388_crt_6TwkR.jpg?r=1455675174"
+    },
+    "summary": "魔女。マイペースでおっとりした性格。\r\n極度の方向音痴ですぐに道に迷う。\r\n一人前の魔女を目指すため、高校入学に合わせて青森に引っ越してきた。現在は、倉本家に居候中。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "木幡真琴"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "木幡 真琴"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こわた まこと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kowata Makoto"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月22日"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.flyingwitch.jp/character/makoto.html"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 22,
+    "stat": {
+        "comments": 51,
+        "collects": 182
+    },
+    "anime_ids": [
+        141799
+    ]
+}

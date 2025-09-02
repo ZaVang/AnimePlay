@@ -1,0 +1,88 @@
+{
+    "id": 36287,
+    "name": "望月杏奈",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8b/b4/36287_crt_G5tVD.jpg?r=1753042983",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8b/b4/36287_crt_G5tVD.jpg?r=1753042983",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8b/b4/36287_crt_G5tVD.jpg?r=1753042983",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8b/b4/36287_crt_G5tVD.jpg?r=1753042983"
+    },
+    "summary": "偶像大師百萬LIVE登場的偶像。Vocal屬性。 \r\n\r\n總是一副睡眼惺忪的樣子的14歲女孩。有著在偶像大師界已經爛大街了的呆毛。 \r\n\r\n台詞中帶有大量的「…」。性格很溫順，是一個重度遊戲宅。 \r\n\r\n十分熱衷於玩電子遊戲。如果身邊沒有電腦的話就會玩自己的手機。和百合子無論在遊戲世界還是真實世界中都是好朋友。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "望月杏奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "望月 杏奈"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "もちづき あんな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mochizuki Anna"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月31日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        },
+        {
+            "key": "体重",
+            "value": "41kg"
+        },
+        {
+            "key": "BWH",
+            "value": "78/53/79"
+        },
+        {
+            "key": "年龄",
+            "value": "14岁"
+        },
+        {
+            "key": "出身地",
+            "value": "神奈川県"
+        },
+        {
+            "key": "爱好",
+            "value": "电子游戏"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://millionlive-anime.idolmaster-official.jp/character/anna/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 31,
+    "stat": {
+        "comments": 33,
+        "collects": 65
+    },
+    "anime_ids": [
+        309807
+    ]
+}

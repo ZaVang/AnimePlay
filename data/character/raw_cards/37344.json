@@ -1,0 +1,44 @@
+{
+    "id": 37344,
+    "name": "ヴァイオレット・エヴァーガーデン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/77/03/37344_crt_QeHnZ.jpg?r=1515695817",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/03/37344_crt_QeHnZ.jpg?r=1515695817",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/03/37344_crt_QeHnZ.jpg?r=1515695817",
+        "grid": "https://lain.bgm.tv/pic/crt/g/77/03/37344_crt_QeHnZ.jpg?r=1515695817"
+    },
+    "summary": "隶属C·H邮政公司的“自动记忆人偶”少女。\r\n与其美貌不相称的是，拥有罕见的战斗力。\r\n幼年时被基尔伯特捡到。有着作为军人的过去。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "薇尔莉特·伊芙加登"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Violet Evergarden"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 374,
+        "collects": 832
+    },
+    "anime_ids": [
+        183878
+    ]
+}

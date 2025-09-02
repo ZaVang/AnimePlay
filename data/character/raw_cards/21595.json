@@ -1,0 +1,52 @@
+{
+    "id": 21595,
+    "name": "向井戸まなか",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ef/5b/21595_crt_9s53r.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ef/5b/21595_crt_9s53r.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ef/5b/21595_crt_9s53r.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ef/5b/21595_crt_9s53r.jpg"
+    },
+    "summary": "呆头呆脑且是个爱哭鬼，优柔寡断的中学生。\r\n但是内心坚强，对待事情很专心。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "向井户爱花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "向井戸 まなか"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "むかいど まなか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mukaido Manaka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 28,
+        "collects": 128
+    },
+    "anime_ids": [
+        47889
+    ]
+}

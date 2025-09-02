@@ -1,0 +1,90 @@
+{
+    "id": 8081,
+    "name": "荒川爆笑团2",
+    "image_path": "data/images/anime/8081.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "“能和我谈一场恋爱么？”\r\n舞台是荒川河畔。在那里相遇的精英青年・市之宫行（通称リク）与自称是金星人的无家美少女・ニノ，笨拙的两人的恋爱有时古怪、有时又令人心痛……。以这样的两人为中心，描绘荒川居民不断卷起骚动的日常。\r\n元祖电波系新感觉温馨恋爱喜剧再度开幕！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2010-10-03",
+    "rating_rank": 755,
+    "rating_score": 7.6,
+    "rating_total": 5268,
+    "main_character_ids": [
+        10678,
+        11561
+    ],
+    "main_characters": [
+        {
+            "id": 10678,
+            "name": "市ノ宮行",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/50/0d/10678_crt_PLlXa.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/50/0d/10678_crt_PLlXa.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/50/0d/10678_crt_PLlXa.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/50/0d/10678_crt_PLlXa.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4232,
+                    "name": "神谷浩史",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/fa/4232_prsn_bBAP2.jpg?r=1675677585"
+                    },
+                    "short_summary": "高中时期是理科生，加入青二塾以前只是一般地看着动画，没有想要成为声优的念头。高三时，于7月份加入同年级朋友组建的演剧团，在9月份的地区演剧大赛中意外获得“个人演技奖”，自此开始对演剧事业产生兴趣。想考艺术类大学所以在高三理转文，并不成功，高考落榜。\r\n另寻出路的时候在杂志上看到了青二塾的广告，征得父母同意考上其东京校第14期。当时不了解其实这里培养的是声优而不是演员，起初产生了“别干了”的消极情绪，但之后仍在青二塾坚持学习了下去，不过是“不良墅生”，同学和老师之后都笑称当时他“很狂妄”，并不参加到同学间的自主练习中。1994年，19岁的神谷从青二塾毕业，顺利加入青二事务所。\r\n出道的头几年，相比于同期甚至后期的声优们很快的大放异彩，神谷则是全部出演酱油的路人角色。2006年8月7日，因为遭逢交通事故而住院治疗。虽然经纪公司并不愿透漏事故的原因，但从关系人口中得知似乎是骑乘机车时发生的。车祸似乎是神谷事业的一个拐点。2007年因担任《再见!绝望先生》、《高达00》等作品主角的CV而受到瞩目，之后在《夏目友人帐》、《化物语》等作品中为主角配音获得极高人气，目前则是因为饰演《进击的巨人》中的里维兵长而再度爆红。\r\n\r\n2025年1月1日，宣布与女演员、模特逢泽莉娜结婚。1月4日，在广播节目中透露自己于8年前起单身，后因此节目而与逢泽莉娜结缘，大约2年前开始交往。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 11561,
+            "name": "ニノ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f6/18/11561_crt_GeYem.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/18/11561_crt_GeYem.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/18/11561_crt_GeYem.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f6/18/11561_crt_GeYem.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3877,
+                    "name": "坂本真綾",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d4/88/3877_prsn_VOY27.jpg?r=1574050572",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/88/3877_prsn_VOY27.jpg?r=1574050572",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/88/3877_prsn_VOY27.jpg?r=1574050572",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d4/88/3877_prsn_VOY27.jpg?r=1574050572"
+                    },
+                    "short_summary": "坂本真绫（さかもと まあや、1980年3月31日 - ），日本女声优、歌手、演员、电台主持。东京都板桥区出身，东京都立武蔵丘高等学校及东洋大学社会学部毕业，父亲是舞台照明家坂本义美。\r\n8岁进入儿童剧团，开始艺能活动，曾演唱广告歌、童谣，为外国电影剧集配音，出演电视节目等。15岁时，被音乐制作人菅野洋子发掘，真正地开始了音乐活动。16岁在歌坛出道。\r\n坂本真绫在音乐以外的领域也具有丰富的才能，广泛活跃在舞台表演、电台主持、电视节目主持、执笔等领域，被称为“才女”，她是现在日本乐坛少数的实力派之一。\r\n\r\n2011年8月13日，在网志上正式宣布和声优铃村健一在2011年8月8日结婚。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

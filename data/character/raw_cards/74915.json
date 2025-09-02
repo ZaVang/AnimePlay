@@ -1,0 +1,47 @@
+{
+    "id": 74915,
+    "name": "シンシア・ムーア",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ce/ea/74915_crt_4J32Z.jpg?r=1605894175",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/ea/74915_crt_4J32Z.jpg?r=1605894175",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/ea/74915_crt_4J32Z.jpg?r=1605894175",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ce/ea/74915_crt_4J32Z.jpg?r=1605894175"
+    },
+    "summary": "優しく抱擁力のある信用詐欺師（コンフィデンスウーマン）。その美貌と演技力でターゲットの懐に入り込む。資産家でもあり、多くの不動産を所有している。飲むと陽気に絡んでくる愛飲家。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "辛西娅·穆尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Cynthia·Moore"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "CV（英语）",
+            "value": "ソフィー・フリゾン"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 44,
+        "collects": 90
+    },
+    "anime_ids": [
+        285813
+    ]
+}

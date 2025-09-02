@@ -1,0 +1,43 @@
+{
+    "id": 43145,
+    "name": "キザクラ・ククリ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e4/cb/43145_crt_1W0C1.jpg?r=1738429214",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/cb/43145_crt_1W0C1.jpg?r=1738429214",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/cb/43145_crt_1W0C1.jpg?r=1738429214",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e4/cb/43145_crt_1W0C1.jpg?r=1738429214"
+    },
+    "summary": "光のソードアイズ。光の黄デッキの使い手。お菓子大好き少女の集団スイーツメイツのリーダーで、世界のおいしいものを探して旅をしている。おそるべき肩書きをもっている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黄樱"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.sunrise-inc.co.jp/battlespirits5/character/02.html"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 7
+    },
+    "anime_ids": [
+        45337
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "id": 11847,
+    "name": "和倉結名",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d7/d7/11847_crt_ld72z.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/d7/11847_crt_ld72z.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/d7/11847_crt_ld72z.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d7/d7/11847_crt_ld72z.jpg"
+    },
+    "summary": "大酒店“福屋”的老板娘的独生女儿，虽然是喜翠庄的竞争对手，但是与绪花等人关系不错。特长是“倒口”",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "和仓结名"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "わくら ゆいな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Wakura Yuina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1995年1月23日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1995,
+    "birth_mon": 1,
+    "birth_day": 23,
+    "stat": {
+        "comments": 22,
+        "collects": 102
+    },
+    "anime_ids": [
+        22759
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "id": 178304,
+    "name": "摂津のきり丸",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/28/4d/178304_crt_3Djn2.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/4d/178304_crt_3Djn2.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/4d/178304_crt_3Djn2.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/28/4d/178304_crt_3Djn2.jpg"
+    },
+    "summary": "【一年は組】\r\n10歳／図書委員会所属\r\n戦で家を焼かれ家族をなくしたが、アルバイトをしながらたくましく生きている。忍術学園の長期休みには、土井先生の家でお世話になっている。\r\n小銭が大好きで、「タダ」「安い」という言葉に弱い。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "せっつのきりまる"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        4264
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "id": 43813,
+    "name": "マオ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/82/7a/43813_crt_FawSZ.jpg?r=1499624353",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/7a/43813_crt_FawSZ.jpg?r=1499624353",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/7a/43813_crt_FawSZ.jpg?r=1499624353",
+        "grid": "https://lain.bgm.tv/pic/crt/g/82/7a/43813_crt_FawSZ.jpg?r=1499624353"
+    },
+    "summary": "游戏中\r\n初登场于《精灵宝可梦 太阳／月亮》，是阿卡拉岛树荫丛林的队长，精通草属性。\r\n气质很好的厨师的她虽然喜欢烹饪，但是烹饪品味好像有比较独特的地方。\r\n\r\n动画中\r\n在《精灵宝可梦太阳&月亮》中，玛奥作为小智的同学登场。\r\n玛奥喜爱草属性宝可梦，性格活跃，她是家族企业“爱娜食堂”的招牌员。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "玛奥"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Mallow"
+                },
+                {
+                    "k": "法文名",
+                    "v": "Barbara"
+                },
+                {
+                    "k": "德文名",
+                    "v": "Maho"
+                },
+                {
+                    "k": "意大利文名",
+                    "v": "Ibis"
+                },
+                {
+                    "k": "西班牙文名",
+                    "v": "Lulú"
+                },
+                {
+                    "k": "韩文名",
+                    "v": "마오"
+                },
+                {
+                    "k": "俄文名",
+                    "v": "Маллоу"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mao"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "眼睛颜色",
+            "value": "绿色"
+        },
+        {
+            "key": "头发颜色",
+            "value": "绿色"
+        },
+        {
+            "key": "训练家类型",
+            "value": "队长"
+        },
+        {
+            "key": "职业",
+            "value": "厨师"
+        },
+        {
+            "key": "擅长属性",
+            "value": "草"
+        },
+        {
+            "key": "家乡所在地",
+            "value": "阿罗拉地区"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "https://wiki.52poke.com/wiki/玛奥"
+                },
+                {
+                    "v": "https://wiki.52poke.com/wiki/玛奥（动画）"
+                }
+            ]
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 34
+    },
+    "anime_ids": [
+        192680
+    ]
+}

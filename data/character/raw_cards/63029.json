@@ -1,0 +1,56 @@
+{
+    "id": 63029,
+    "name": "七海燈子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/95/c2/63029_crt_BBBzT.jpg?r=1539454254",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/c2/63029_crt_BBBzT.jpg?r=1539454254",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/c2/63029_crt_BBBzT.jpg?r=1539454254",
+        "grid": "https://lain.bgm.tv/pic/crt/g/95/c2/63029_crt_BBBzT.jpg?r=1539454254"
+    },
+    "summary": "演 - 小泉萌香\r\n学校中から信頼を集める生徒会役員の二年生。同性ながら侑に対して、好きだと告白する。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "七海灯子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ななみ とうこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nanami Touko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月19日"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 19,
+    "stat": {
+        "comments": 92,
+        "collects": 203
+    },
+    "anime_ids": [
+        243981
+    ]
+}

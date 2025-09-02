@@ -1,0 +1,56 @@
+{
+    "id": 24260,
+    "name": "氷見友樹",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/04/5f/24260_crt_NAfAf.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/5f/24260_crt_NAfAf.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/5f/24260_crt_NAfAf.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/04/5f/24260_crt_NAfAf.jpg"
+    },
+    "summary": "六位主角当中年纪最小的一名。因为兄长总不和他一同玩，导致他终日对着计算机和游戏机，所以他的计算机和游戏机技术是主角六人中最好的。进入数码世界后，得到冰战魂，进化成十斗士之中的冰熊兽以及巴撒兽。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "冰见友树"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Tommy Himi, Tommy Yomi"
+                },
+                {
+                    "k": "日文名",
+                    "v": "氷見 友樹"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひみ　ともき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Himi Tomoki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 8
+    },
+    "anime_ids": [
+        3131
+    ]
+}

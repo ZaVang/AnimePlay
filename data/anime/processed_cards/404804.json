@@ -1,0 +1,121 @@
+{
+    "id": 404804,
+    "name": "天国大魔境",
+    "image_path": "data/images/anime/404804.jpg",
+    "points": 7.7,
+    "cost": 2,
+    "rarity": "R",
+    "description": "2024年，世界发生了史无前例的灾难，然后15年过去了。\r\n成为废墟的日本栖息着一种食人的怪物（蛭子），人们艰难地生存着。\r\n在东京·中野经营万事屋的的斩子接受了一个神秘女人的委托，“带这个孩子去天国”。\r\n这个被留下的名叫真流的孩子说“天国好像有人和我长得一模一样。”\r\n除此之外他什么都不知道。\r\n“天国”究竟在哪里？\r\n当你到达那里时会发生什么......？\r\n真流和斩子寻找天国的旅程现在开始了——！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "科幻",
+        "悬疑",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2023-04-01",
+    "rating_rank": 470,
+    "rating_score": 7.7,
+    "rating_total": 13382,
+    "main_character_ids": [
+        121062,
+        121067,
+        125090
+    ],
+    "main_characters": [
+        {
+            "id": 121062,
+            "name": "マル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/80/34/121062_crt_Nz3ZG.jpg?r=1716563239",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/34/121062_crt_Nz3ZG.jpg?r=1716563239",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/34/121062_crt_Nz3ZG.jpg?r=1716563239",
+                "grid": "https://lain.bgm.tv/pic/crt/g/80/34/121062_crt_Nz3ZG.jpg?r=1716563239"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 33386,
+                    "name": "佐藤元",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/cf/a8/33386_prsn_mk1Gm.jpg?r=1537685113"
+                    },
+                    "short_summary": "佐藤 元（さとう げん、1997年3月22日 - ）は、日本の男性声優。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 121067,
+            "name": "キルコ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e8/f0/121067_crt_fzNyY.jpg?r=1681118714",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/f0/121067_crt_fzNyY.jpg?r=1681118714",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/f0/121067_crt_fzNyY.jpg?r=1681118714",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e8/f0/121067_crt_fzNyY.jpg?r=1681118714"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10838,
+                    "name": "千本木彩花",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/56/7f/10838_prsn_vhSS9.jpg?r=1740109911",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/7f/10838_prsn_vhSS9.jpg?r=1740109911",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/7f/10838_prsn_vhSS9.jpg?r=1740109911",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/56/7f/10838_prsn_vhSS9.jpg?r=1740109911"
+                    },
+                    "short_summary": "日本の女性声優。 埼玉県出身。アイムエンタープライズ所属。\r\n\r\n日本ナレーション演技研究所で演技を学ぶ。同研究所卒業前の、高校生時にテレビアニメ『帰宅部活動記録』で九重クレア役としてデビュー。\r\n2015年にアイムエンタープライズへの所属が発表された。9月より「講談社ラノベ文庫チャンネル」のMCをつとめる。2016年4月に『甲鉄城のカバネリ』の無名役で初のメインヒロインを演じ、同年10月に『ガーリッシュナンバー』で、初主役となる烏丸千歳役を演じる。\r\n2017年、第11回声優アワードで新人女優賞を受賞。\r\n\r\n高校では部活動でベーム式B♭クラリネットを演奏。コンクールに出場していた。\r\n『甲鉄城のカバネリ』で共演した内田真礼は「1話ですでに（無名の）キャラクターが出来上がっていてすごい」と絶賛している。\r\n『ガーリッシュ ナンバー』の烏丸千歳役は100人以上の候補の中からオーディションを経てスタッフの満場一致で選ばれたのだが、実は千本木がオーディションを受けた役は八重役であった。監督の井畑翔太と原作者の渡航は千本木の演技だけが方向性がいい意味で異質であり、ほとんどの声優が空気を読んで適度にブレーキをかける中、千本木だけはアクセルをベタ踏み状態であったと述べている。また、本来千本木のキャリアよりもう1つ、2つ、上の世代がやっていてもおかしくない難しいことを求められている中で、こちらの要望によく応えてくれたともコメントしている。\r\n\r\n2019年12月29日、アニメ『甲鉄城のカバネリ』で共演した声優、畠中祐との結婚を発表。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 125090,
+            "name": "トキオ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/42/48/125090_crt_0J1N2.jpg?r=1716563263",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/48/125090_crt_0J1N2.jpg?r=1716563263",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/48/125090_crt_0J1N2.jpg?r=1716563263",
+                "grid": "https://lain.bgm.tv/pic/crt/g/42/48/125090_crt_0J1N2.jpg?r=1716563263"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 12569,
+                    "name": "山村響",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/df/ce/12569_prsn_EVTkz.jpg?r=1687679505",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/ce/12569_prsn_EVTkz.jpg?r=1687679505",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/ce/12569_prsn_EVTkz.jpg?r=1687679505",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/df/ce/12569_prsn_EVTkz.jpg?r=1687679505"
+                    },
+                    "short_summary": "福岡県出身。血液型はO型。声優・キャラクターソング等の名義は山村響、アーティストとしてはhibiku（ひびく）名義で音楽活動をしていたが、2019年3月発売のミニアルバムからは音楽活動も山村響名義に統一する。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

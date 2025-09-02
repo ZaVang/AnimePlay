@@ -1,0 +1,52 @@
+{
+    "id": 74913,
+    "name": "ローラン・ティエリー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d9/f3/74913_crt_WZN0w.jpg?r=1579840479",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/f3/74913_crt_WZN0w.jpg?r=1579840479",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/f3/74913_crt_WZN0w.jpg?r=1579840479",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d9/f3/74913_crt_WZN0w.jpg?r=1579840479"
+    },
+    "summary": "世界中を飛び回る、フランス人の信用詐欺師（コンフィデンスマン）。どんな状況でも取り乱すことなく、うまく切り抜ける。お洒落でジョーク好き。浅草観光をしているときに、枝村から詐欺のターゲットにされるが…",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "罗兰·蒂埃里"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "罗兰·帖礼"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Laurent Thierry"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "法语CV",
+            "value": "ステファノ・パガニーニ(Stefano Paganini)"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 13,
+        "collects": 15
+    },
+    "anime_ids": [
+        285813
+    ]
+}

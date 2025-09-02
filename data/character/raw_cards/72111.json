@@ -1,0 +1,52 @@
+{
+    "id": 72111,
+    "name": "ニカイドウ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/10/d7/72111_crt_wxRNz.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/10/d7/72111_crt_wxRNz.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/10/d7/72111_crt_wxRNz.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/10/d7/72111_crt_wxRNz.jpg"
+    },
+    "summary": "カイマンの友人のグラマーな女性。身長169cm。体重56kg。足のサイズ25cm。\r\n徒手格闘の達人で、縛り付けられてもそのロープを引き千切る、手刀で魔法使いの手や首を撥る、蹴りでキノコマンを真っ二つにする、姿が見えないほどの速度で拳銃の連射を躱せるなど、戦闘能力が非常に高い。\r\n路地で倒れているカイマンを見つけた縁から、彼の魔法使い狩りを手伝っている。\r\n定食屋「空腹虫（ハングリーバグ）」を経営しているものの、カイマンが日々のギョーザ代を払わないためにほとんど儲かっていない。カイマンを「ただ一人の大切な友人」と形容し、いつか一緒に店を手伝ってもらいたいと考えている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "二阶堂"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "二階堂"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "169cm"
+        },
+        {
+            "key": "体重",
+            "value": "56kg"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 14,
+        "collects": 41
+    },
+    "anime_ids": [
+        266301
+    ]
+}

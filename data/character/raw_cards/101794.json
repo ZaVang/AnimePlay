@@ -1,0 +1,68 @@
+{
+    "id": 101794,
+    "name": "瀬名紫陽花",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/72/30/101794_crt_3tzVe.jpg?r=1685931018",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/30/101794_crt_3tzVe.jpg?r=1685931018",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/30/101794_crt_3tzVe.jpg?r=1685931018",
+        "grid": "https://lain.bgm.tv/pic/crt/g/72/30/101794_crt_3tzVe.jpg?r=1685931018"
+    },
+    "summary": "「えー？急に褒められても笑顔ぐらいしか出ないよ？」\r\n\r\nグループのバランサー & 癒やし系。\r\nほんわかオーラを振りまく大天使。\r\n明るく優しく、\r\n誰とでも分け隔てなく付き合っている。\r\nメンバーの仰を自然に取り持ってしまうほどに、\r\n懐が深い。\r\n小さな弟がふたりいるため、 \r\n家ではお姉ちゃんとしてもがんばっている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "濑名紫阳花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "瀬名 紫陽花"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "せな あじさい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sena Ajisai"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月12日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://dash.shueisha.co.jp/feature/watanare/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 12,
+    "stat": {
+        "comments": 39,
+        "collects": 104
+    },
+    "anime_ids": [
+        524707
+    ]
+}

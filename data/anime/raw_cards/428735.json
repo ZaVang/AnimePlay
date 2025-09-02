@@ -1,0 +1,474 @@
+{
+    "id": 428735,
+    "type": 2,
+    "name": "BanG Dream! It's MyGO!!!!!",
+    "name_cn": "",
+    "summary": "「能一辈子和我搞乐队吗？」\r\n\r\n在高一的春季即将结束之时，羽丘女子学园里人人都在参加乐队活动。\r\n入学较晚的爱音，也为了尽快融入班级，急忙寻找乐队成员。\r\n在寻找时，她发现被称为「羽丘的不可思议少女」的灯还没有参加乐队，\r\n于是爱音不由得向她发出邀请…\r\n\r\n我们的<音乐(呐喊)>，伤痕累累而充满狼狈。\r\n迷茫也无所谓，迷茫也要前进。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2023-06-29",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/e7/a7/428735_1v11n.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/e7/a7/428735_1v11n.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/e7/a7/428735_1v11n.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/e7/a7/428735_1v11n.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/e7/a7/428735_1v11n.jpg"
+    },
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "迷途之子!!!!!",
+                    "k": "大陆版权译"
+                },
+                {
+                    "v": "BanG Dream! 迷途之子!!!!!",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2023年6月29日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期四"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://anime.bang-dream.com/mygo/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX"
+        },
+        {
+            "key": "其他电视台",
+            "value": "テレビ愛知 / サンテレビ / 静岡放送 / BS日テレ / AT-X"
+        },
+        {
+            "key": "播放结束",
+            "value": "2023年9月14日"
+        },
+        {
+            "key": "导演",
+            "value": "柿本広大"
+        },
+        {
+            "key": "音乐",
+            "value": "藤田淳平（Elements Garden）、藤間仁（Elements Garden）"
+        },
+        {
+            "key": "Copyright",
+            "value": "©BanG Dream! Project"
+        },
+        {
+            "key": "原作",
+            "value": "ブシロード"
+        },
+        {
+            "key": "人物原案",
+            "value": "ひと和、植田和幸"
+        },
+        {
+            "key": "人物设定",
+            "value": "Craft Egg；动画人物设定：茶之原拓也、八森優香、Shin Joseph"
+        },
+        {
+            "key": "原案",
+            "value": "綾奈ゆにこ（MyGO!!!!!/Ave Mujica原案）"
+        },
+        {
+            "key": "脚本",
+            "value": "綾奈ゆにこ(1,3,7,13)、後藤みどり(2,6,10)、小川ひとみ(4,8,11)、和場明子(5,9,12)"
+        },
+        {
+            "key": "美术监督",
+            "value": "山根左帆、対馬里紗"
+        },
+        {
+            "key": "剪辑",
+            "value": "日髙初美"
+        },
+        {
+            "key": "模型监督",
+            "value": "武内泰久、寺林寛"
+        },
+        {
+            "key": "绑骨监督",
+            "value": "矢代奈津子、柏木亨"
+        },
+        {
+            "key": "製作",
+            "value": "BanG Dream! Project（ブシロード、TOKYO MX、Good Smile Company、ホリプロインターナショナル、ウルトラスーパーピクチャーズ）"
+        },
+        {
+            "key": "企画",
+            "value": "根本雄貴、金子広孝、宇佐義大、矢田部行庸、松浦裕暁"
+        },
+        {
+            "key": "制片人",
+            "value": "中野勇人、北澤史隆、呉桐、金成雄文、瓶子修一；MyGO!!!!!制片人：日下亜美"
+        },
+        {
+            "key": "助理制片人",
+            "value": "高比良佑香、小西裕貴、宮原恵、長尾知夏、高根寿美子"
+        },
+        {
+            "key": "动画制片人",
+            "value": "松浦裕暁、保住昇汰"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "吉村秀至"
+        },
+        {
+            "key": "分镜",
+            "value": "柿本広大(1,3)、梅津朋美(2,7,10)、林翔子(4,12)、森田紘吏(5,8,11)、岡こずえ(6)、奥川尚弥(9,13)；Live：日髙初美(12,13)、鈴木大介(12)"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "梅津朋美 / 池田新助"
+        },
+        {
+            "key": "演出",
+            "value": "遠藤求(1,2,9)、大森大地(3,5,12)、山之口創(13)、古賀公一郎(4,6,8,11)、梅津朋美(7,10)、池田新助（ED）；Live：山之口創(3)"
+        },
+        {
+            "key": "CG 导演",
+            "value": "奥川尚弥（CG总监）、遠藤求(1-2,7,9)、大森大地(3,5,10,12)、古賀公一郎(4,6,8,11)、山之口創(13)；Live：山之口創(3,12)、宮田拓実(7)、遠藤求(10)、鈴木大介(12)、小川浩太朗(13)"
+        },
+        {
+            "key": "作画监督",
+            "value": "前田亜紀、茶之原拓也、依田祐輔、八森優香、大峰誠也、Shin Joseph"
+        },
+        {
+            "key": "总作画监督",
+            "value": "茶之原拓也"
+        }
+    ],
+    "volumes": 0,
+    "eps": 13,
+    "total_episodes": 14,
+    "rating": {
+        "rank": 209,
+        "total": 26389,
+        "count": {
+            "one": 469,
+            "two": 141,
+            "three": 108,
+            "four": 197,
+            "five": 427,
+            "six": 1416,
+            "seven": 4170,
+            "eight": 8687,
+            "nine": 6759,
+            "ten": 4015
+        },
+        "score": 8.0
+    },
+    "collection": {
+        "wish": 3033,
+        "collect": 37260,
+        "doing": 2995,
+        "on_hold": 508,
+        "dropped": 511
+    },
+    "tags": [
+        {
+            "name": "BanGDream",
+            "count": 7035
+        },
+        {
+            "name": "原创",
+            "count": 6447
+        },
+        {
+            "name": "音乐",
+            "count": 5783
+        },
+        {
+            "name": "百合",
+            "count": 5145
+        },
+        {
+            "name": "扭曲",
+            "count": 4929
+        },
+        {
+            "name": "2023年7月",
+            "count": 3184
+        },
+        {
+            "name": "偶像",
+            "count": 2687
+        },
+        {
+            "name": "TV",
+            "count": 2392
+        },
+        {
+            "name": "3D",
+            "count": 2351
+        },
+        {
+            "name": "乐队",
+            "count": 2161
+        },
+        {
+            "name": "2023",
+            "count": 1583
+        },
+        {
+            "name": "SANZIGEN",
+            "count": 861
+        },
+        {
+            "name": "羊宮妃那",
+            "count": 719
+        },
+        {
+            "name": "日本",
+            "count": 517
+        },
+        {
+            "name": "柿本広大",
+            "count": 375
+        },
+        {
+            "name": "三次元",
+            "count": 261
+        },
+        {
+            "name": "无法预测的命运之舞台",
+            "count": 204
+        },
+        {
+            "name": "校园",
+            "count": 151
+        },
+        {
+            "name": "轻百合",
+            "count": 115
+        },
+        {
+            "name": "青春",
+            "count": 100
+        },
+        {
+            "name": "綾奈ゆにこ",
+            "count": 73
+        },
+        {
+            "name": "柿本广大",
+            "count": 58
+        },
+        {
+            "name": "少女乐队",
+            "count": 55
+        },
+        {
+            "name": "MYGO",
+            "count": 52
+        },
+        {
+            "name": "日常",
+            "count": 50
+        },
+        {
+            "name": "乐队题材",
+            "count": 42
+        },
+        {
+            "name": "重力",
+            "count": 41
+        },
+        {
+            "name": "神作",
+            "count": 39
+        },
+        {
+            "name": "サンジゲン",
+            "count": 38
+        },
+        {
+            "name": "2023年",
+            "count": 38
+        }
+    ],
+    "meta_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "原创",
+        "音乐"
+    ],
+    "series": false,
+    "main_character_ids": [
+        127790,
+        127791,
+        127792,
+        127793,
+        127794
+    ],
+    "main_characters": [
+        {
+            "id": 127790,
+            "name": "高松燈",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d8/94/127790_crt_PXTGX.jpg?r=1743677574",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/94/127790_crt_PXTGX.jpg?r=1743677574",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/94/127790_crt_PXTGX.jpg?r=1743677574",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d8/94/127790_crt_PXTGX.jpg?r=1743677574"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 40794,
+                    "name": "羊宮妃那",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f3/83/40794_prsn_4cu5z.jpg?r=1731846554",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/83/40794_prsn_4cu5z.jpg?r=1731846554",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/83/40794_prsn_4cu5z.jpg?r=1731846554",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f3/83/40794_prsn_4cu5z.jpg?r=1731846554"
+                    },
+                    "short_summary": "資格・免許：剣道初段\r\n趣味：描画、読書、映画鑑賞、音楽鑑賞、アコースティックギター弾き語り\r\n特技：ダンス\r\n方言：関西弁",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 127791,
+            "name": "千早愛音",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/87/3b/127791_crt_pOtpZ.jpg?r=1738746794",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/3b/127791_crt_pOtpZ.jpg?r=1738746794",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/3b/127791_crt_pOtpZ.jpg?r=1738746794",
+                "grid": "https://lain.bgm.tv/pic/crt/g/87/3b/127791_crt_pOtpZ.jpg?r=1738746794"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 53240,
+                    "name": "立石凛",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/20/35/53240_prsn_9qQud.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/20/35/53240_prsn_9qQud.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/20/35/53240_prsn_9qQud.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/20/35/53240_prsn_9qQud.jpg"
+                    },
+                    "short_summary": "立石凛是日本的声优，所属公司为响HiBiKi。出身地区为大阪府。\r\n2021年2月通过“株式会社S、响HiBiKi、Ace Crew Entertainment联合试镜2020”，与青木阳菜共同加入响HiBiKi。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 127792,
+            "name": "要楽奈",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c2/a9/127792_crt_u2A5g.jpg?r=1743677729",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/a9/127792_crt_u2A5g.jpg?r=1743677729",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/a9/127792_crt_u2A5g.jpg?r=1743677729",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c2/a9/127792_crt_u2A5g.jpg?r=1743677729"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 42304,
+                    "name": "青木陽菜",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/69/bf/42304_prsn_1C0M4.jpg?r=1723643101",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/bf/42304_prsn_1C0M4.jpg?r=1723643101",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/bf/42304_prsn_1C0M4.jpg?r=1723643101",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/69/bf/42304_prsn_1C0M4.jpg?r=1723643101"
+                    },
+                    "short_summary": "青木陽菜（あおき ひな）は、日本の女性声優。宮城県出身。響所属。\r\n\r\n大学では声楽を専攻しており、ピアノやギターなどの楽器演奏も得意としており、BanG Dream! It's MyGO!!!!!に登場し、尚且つリアルバンドでも活動しているMyGO!!!!!のリードギターである要楽奈役で活動している。因みにエレキギターを弾く上で影響を受けたバンドはUNISON SQUARE GARDEN、the band apart、KANA-BOONなどで、『バンドリ！』に登場するバンドだと、Roselia、RAISE A SUILENといったけっこうゴリゴリ音が好みとのこと。また趣味として弾き語り、一人カラオケ、ライブ鑑賞を挙げている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 127793,
+            "name": "長崎そよ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/32/2d/127793_crt_ueDx9.jpg?r=1738746626",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/2d/127793_crt_ueDx9.jpg?r=1738746626",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/2d/127793_crt_ueDx9.jpg?r=1738746626",
+                "grid": "https://lain.bgm.tv/pic/crt/g/32/2d/127793_crt_ueDx9.jpg?r=1738746626"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 53241,
+                    "name": "小日向美香",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/be/3f/53241_prsn_nZ9Vu.jpg?r=1737145283",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/3f/53241_prsn_nZ9Vu.jpg?r=1737145283",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/3f/53241_prsn_nZ9Vu.jpg?r=1737145283",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/be/3f/53241_prsn_nZ9Vu.jpg?r=1737145283"
+                    },
+                    "short_summary": "小日向美香是日本的女性声优。2020年，声优学校PineS毕业，并成为S所属。\r\n兴趣：跳舞、乐器。\r\n特长：低音单簧管、料理。\r\n资格：调理师免许。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 127794,
+            "name": "椎名立希",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9e/e9/127794_crt_XCSfZ.jpg?r=1743677672",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/e9/127794_crt_XCSfZ.jpg?r=1743677672",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/e9/127794_crt_XCSfZ.jpg?r=1743677672",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9e/e9/127794_crt_XCSfZ.jpg?r=1743677672"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 32434,
+                    "name": "林鼓子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d7/cf/32434_prsn_GcsNC.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/cf/32434_prsn_GcsNC.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/cf/32434_prsn_GcsNC.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d7/cf/32434_prsn_GcsNC.jpg"
+                    },
+                    "short_summary": "静岡県出身、81プロデュース、エイベックス・ピクチャーズ所属。avex×81produce Wake Up, Girls! AUDITION 第3回アニソン・ヴォーカルオーディション 合格。森嶋優花、厚木那奈美と共に3人組のユニットRun Girls, Run!を結成。『Wake Up, Girls! 新章』でアニメ初出演。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

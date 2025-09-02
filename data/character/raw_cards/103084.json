@@ -1,0 +1,48 @@
+{
+    "id": 103084,
+    "name": "タカ岡",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/33/47/103084_crt_FFjtX.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/47/103084_crt_FFjtX.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/47/103084_crt_FFjtX.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/33/47/103084_crt_FFjtX.jpg"
+    },
+    "summary": "明明是只老鹰却是个近视眼，暗恋着白色的猫头鹰\r\n\r\n为了食肉动物的尊严而战的鹰冈总是在战斗开始之前被兔原秒杀。因为近视曾把宇留野当成兔原一通乱啄。还把诅咒用的稻草人误以为是条鱼，叼来慰问发烧中的小野，其实是个很憨厚善良的青年。\r\n\r\nタカなのに、近眼で狩りが苦手。うさ原を捕らえようとすることもあるが、いつも失敗に終わる。本当はタカではなくワシだったことが判明した。しかし、タカ科の鳥の中で体のサイズが大きめのものをワシ、小さめのものをタカと、明確な区別をせずに慣習的に呼び分けているだけなので大差無い。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鹰冈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Takaoka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "动物属性",
+            "value": "鹰 (タカ)"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        2696
+    ]
+}

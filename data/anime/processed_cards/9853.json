@@ -1,0 +1,91 @@
+{
+    "id": 9853,
+    "name": "灵异E接触",
+    "image_path": "data/images/anime/9853.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "升上高中后一个人来到山形的高中生筒井雪隆住进了学生附近的宿舍，却发自己的租处已被入侵，里面有个自称自己是外星人的失忆男子。本来打算将他赶出去，但是在同情心及对方的说服下开始相信他是外星人并和他同居。安定下来不久后，王子的护卫军紧追而来，却发现降落在了好战的狄肯星人地盘上，同时研究外星人的机构也在追查，情况变的十分危急。就在雪隆为了外星王子的安危心急如焚时，王子本人却悠闲的在逛街买衣服。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2011-01-10",
+    "rating_rank": 391,
+    "rating_score": 7.8,
+    "rating_total": 3740,
+    "main_character_ids": [
+        10540,
+        10544
+    ],
+    "main_characters": [
+        {
+            "id": 10540,
+            "name": "バカ=キ=エル・ドグラ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/17/d7/10540_crt_K751S.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/d7/10540_crt_K751S.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/d7/10540_crt_K751S.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/17/d7/10540_crt_K751S.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4254,
+                    "name": "浪川大輔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/70/c3/4254_prsn_99K43.jpg?r=1631019573"
+                    },
+                    "short_summary": "浪川 大輔（なみかわ だいすけ、1976年4月2日 - ） は、日本の声優、俳優、歌手、ナレーター。ステイラック代表取締役。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 10544,
+            "name": "クラフト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5e/c7/10544_crt_IbbyA.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/c7/10544_crt_IbbyA.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/c7/10544_crt_IbbyA.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5e/c7/10544_crt_IbbyA.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 1096,
+                    "name": "子安武人",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4f/e5/1096_prsn_84WcO.jpg?r=1509920084",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/e5/1096_prsn_84WcO.jpg?r=1509920084",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/e5/1096_prsn_84WcO.jpg?r=1509920084",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4f/e5/1096_prsn_84WcO.jpg?r=1509920084"
+                    },
+                    "short_summary": "子安武人, 名字之所以會叫「武人」是因為他的生日是日本的兒童節。\r\n他和三木真一郎、關智一、结城比吕组成声优团体Weiß，主要的作品是《白色猎人》。 \r\n有一小點的巧合是他演出的角色為金髮男子居多，其角色個性很廣泛，不論是搞笑型的，或是嚴肅型的角色皆為其拿手範圍內，另一方面一些其貌不揚或性情古怪的角色也非常擅長。\r\n本人称自己也不能算做很喜欢饰演变态或搞笑角色，只是有这么的工作就接了，结果却慢慢得越来越多。\r\n\r\n1988-1998年隶属于事务所Production Baobab，此后成立自己的会社T's Factory。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

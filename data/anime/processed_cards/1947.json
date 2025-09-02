@@ -1,0 +1,90 @@
+{
+    "id": 1947,
+    "name": "人鱼之森",
+    "image_path": "data/images/anime/1947.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "注：电视播放共11话(剩下2话的人鱼之伤因内容关系无法在电视上播放而收录在DVD内)\r\n\r\n少女真鱼从小时候开始就在小村落的宅邸里由婆婆抚养长大，现在已经15岁了。而一直在寻找人鱼的青年涌太，终于来到了这个村落。村落里的老女人们包围住涌太，用鱼叉刺伤了他，并把他丢入洞穴里。但是，涌太却没有死。发现了人鱼尸体的涌太，又出现在真鱼的家中，与老女人们打了起来，并背负着真鱼谋求逃走。逃入洞穴的涌太，为真鱼解开了一直带着的脚镣。还告诉了她，自己因为以前吃过人鱼肉而变得不老不死，并听说如果能遇到人鱼的话也许可以重新变回普通人的事情......... \r\n\r\n",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改"
+    ],
+    "date": "2003-10-04",
+    "rating_rank": 1453,
+    "rating_score": 7.3,
+    "rating_total": 602,
+    "main_character_ids": [
+        9188,
+        29216
+    ],
+    "main_characters": [
+        {
+            "id": 9188,
+            "name": "湧太",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/13/1b/9188_crt_3C3Qb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/1b/9188_crt_3C3Qb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/1b/9188_crt_3C3Qb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/13/1b/9188_crt_3C3Qb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3914,
+                    "name": "山寺宏一",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/36/d6/3914_prsn_pX74x.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/d6/3914_prsn_pX74x.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/d6/3914_prsn_pX74x.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/36/d6/3914_prsn_pX74x.jpg"
+                    },
+                    "short_summary": "日本男性聲優，1961年6月17日生\r\n少數由聲優轉型成演員、主持的成功例子，\r\n大學畢業後進入俳協養成所，1986年畢業，之後雖然演過不少角色但始終打不起名堂，直到《亂馬1/2》才以響良牙一角成名。\r\n擁有多變聲音聞名，被稱為「擁有七色聲音的男人」，由於什麼角色都能配，所以業界有個笑話說「配角想不到找誰來配的話就山寺宏一吧！」。\r\n由於這種萬能型特質所以雖然主角役很少，但卻是無數作品的必然配角，尤以洋畫系更明顯。\r\n富山敬離世後，山寺是其中一個接手富山角色的聲優。\r\n另一個以洋畫系為主舞台的聲優，多位荷里活紅星如愛迪．墨菲都是由他所配。\r\n和山口勝平，林原惠，戶田惠子，大塚明夫，富永美奈，田中敦子交好。\r\n因為洋畫配音被名編劇三谷幸喜發掘成為演員。\r\n不過也和他的聲優工作一樣，演的都是大配角以至小配角。\r\n1993年与声优金井美香结婚。2006年离婚。\r\n2012年6月17日在推特发表与声优田中理惠结婚。2018年8月3日，二人在各自的推特上宣布已离婚。\r\n2021年6月14日在推特发表与演员冈田罗宾翔子结婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 29216,
+            "name": "真魚",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c5/b3/29216_crt_WLiOR.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/b3/29216_crt_WLiOR.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/b3/29216_crt_WLiOR.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c5/b3/29216_crt_WLiOR.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3933,
+                    "name": "高山みなみ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/29/8f/3933_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/8f/3933_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/8f/3933_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/29/8f/3933_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "中学时代加入向日葵剧团。高中毕业后，曾经是一个普通的OL，22岁时立志成为声优。与日本歌手永野椎菜合组歌唱组合TWO-MIX。\r\n2005年5月5日，与青山刚昌结婚。 \r\n根据日本《朝日新闻》2005年6月2日报道，《名侦探柯南》之父、41岁的青山刚昌当天在接受日本著名杂志《女性名流》的采访中承认，将迎娶在《名侦探柯南》动画片中为柯南配音的日本著名声优、当时41岁的高山南，而两人已于高山南的生日，也就是5月5日，正式办理了登记结婚手续。\r\n2007年12月9日，与青山刚昌离婚。 \r\n自从两人05年5月结婚以来，青山先生在漫画制作的截稿期之前都会在工作场所埋头苦干，而著名声优高山南工作也非常繁忙。在经常擦肩而过的生活持续之下，两人在甚少的沟通和关照之下，感情也渐渐变淡。最后，两人在两年后的12月9日决定离婚，至于青山先生对于传媒的采访态度为“无可奉告”。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,463 @@
+{
+    "id": 3169,
+    "type": 2,
+    "name": "マクロス7",
+    "name_cn": "超时空要塞7",
+    "summary": "       故事发生在《超时空要塞》36年后，人类与外星人杰特拉帝人在战争之后握手言和。2038年从地球派出第37次超长距离宇宙移民船团－新Macross级超大型船团7号（NMCV-007）前往太空深处寻找适合人类生活的星球，直到2045年遇见神秘的原始恶魔军团，展开本系列的故事。\r\n\r\n       本作叙述热气·巴萨拉（熱気バサラ），米莲·吉纳斯（ミレーヌ・F・ジーナス），雷伊·拉布洛克（レイ・ラブロック），比希达·费斯（ビヒーダ・フィーズ）等人以摇滚团体Fire Bomber在MACROSS 7活动的故事。",
+    "nsfw": false,
+    "locked": false,
+    "date": "1994-10-16",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/7a/98/3169_sfdlS.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/7a/98/3169_sfdlS.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/7a/98/3169_sfdlS.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/7a/98/3169_sfdlS.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/7a/98/3169_sfdlS.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "超时空要塞7"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Macross 7",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "52"
+        },
+        {
+            "key": "放送开始",
+            "value": "1994年10月16日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://macross.jp/pages/series?title=macross7"
+        },
+        {
+            "key": "播放电视台",
+            "value": "毎日放送をキー局にTBS系"
+        },
+        {
+            "key": "其他电视台",
+            "value": "TVB"
+        },
+        {
+            "key": "播放结束",
+            "value": "1995年9月24日"
+        },
+        {
+            "key": "导演",
+            "value": "アミノテツロー"
+        },
+        {
+            "key": "Copyright",
+            "value": "©1994 ビックウエスト"
+        },
+        {
+            "key": "原作",
+            "value": "河森正治"
+        },
+        {
+            "key": "企画",
+            "value": "大西良昌"
+        },
+        {
+            "key": "系列构成",
+            "value": "富田祐弘、シリーズ構成補：ミソトハジメ（佐藤順一）"
+        },
+        {
+            "key": "脚本",
+            "value": "富田祐弘、大橋志吉、隅沢克之、アミノテツロー"
+        },
+        {
+            "key": "人物原案",
+            "value": "美樹本晴彦"
+        },
+        {
+            "key": "人物设定",
+            "value": "桂憲一郎"
+        },
+        {
+            "key": "机械设定",
+            "value": "宮武一貴、河森正治；动画机械设定：前田明寿、名和宗則、小川浩、名原一樹"
+        },
+        {
+            "key": "音响监督",
+            "value": "本田保則；音響ディレクター：鶴岡陽太"
+        },
+        {
+            "key": "动画制作",
+            "value": "葦プロダクション（プロダクション リード）"
+        },
+        {
+            "key": "制片人",
+            "value": "大西加紋、高梨実〔8話-〕、井口亮"
+        },
+        {
+            "key": "製作",
+            "value": "ビックウエスト、毎日放送"
+        },
+        {
+            "key": "剪辑",
+            "value": "正木直幸、鈴木貴志〔1話-28話〕、小峰博美、片瀬健太〔52話〕"
+        },
+        {
+            "key": "录音",
+            "value": "滝沢おさむ"
+        },
+        {
+            "key": "音效",
+            "value": "蔭山満"
+        },
+        {
+            "key": "音响",
+            "value": "アーツプロ"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "佐々木史朗"
+        },
+        {
+            "key": "音乐制作",
+            "value": "ビクターエンタテインメント"
+        },
+        {
+            "key": "摄影监督",
+            "value": "橋本和典〔1話-34話〕→杉浦充〔35話-〕"
+        },
+        {
+            "key": "机械作画监督",
+            "value": "前田明寿、崎山知明、伊藤浩二"
+        },
+        {
+            "key": "背景美术",
+            "value": "プロダクションアイ、海野よしみ、岡田浩次、大関雅美、川合文江、山田勝宏"
+        },
+        {
+            "key": "摄影",
+            "value": "スタジオパートナー、手塚勝弘、杉浦充、広瀬勝利、樋口哲治"
+        },
+        {
+            "key": "色彩指定",
+            "value": "関本美津子、渡辺芙実子、中野倫明"
+        },
+        {
+            "key": "特效",
+            "value": "マリックス、長谷川敏生、寄取碧"
+        },
+        {
+            "key": "制作进行",
+            "value": "井澤哲也、大原昌典、森谷和彦、遠藤大祐、小澤一由、山崎光典、佐藤琢磨、福島健人、黒澤剛成、関裕幸、花見大作、金本佳大"
+        },
+        {
+            "key": "制作协力",
+            "value": "ライフワーク"
+        },
+        {
+            "key": "动画检查",
+            "value": "吉沢亮吉、古谷田順久、江上夏樹、丹羽恭利、江森真理子、井上博之、緒方美枝子"
+        }
+    ],
+    "volumes": 0,
+    "eps": 52,
+    "total_episodes": 64,
+    "rating": {
+        "rank": 568,
+        "total": 955,
+        "count": {
+            "one": 0,
+            "two": 0,
+            "three": 3,
+            "four": 10,
+            "five": 19,
+            "six": 93,
+            "seven": 262,
+            "eight": 348,
+            "nine": 155,
+            "ten": 65
+        },
+        "score": 7.7
+    },
+    "collection": {
+        "wish": 692,
+        "collect": 1301,
+        "doing": 138,
+        "on_hold": 130,
+        "dropped": 53
+    },
+    "tags": [
+        {
+            "name": "Macross",
+            "count": 252
+        },
+        {
+            "name": "河森正治",
+            "count": 185
+        },
+        {
+            "name": "TV",
+            "count": 169
+        },
+        {
+            "name": "1994",
+            "count": 139
+        },
+        {
+            "name": "超时空要塞",
+            "count": 116
+        },
+        {
+            "name": "原创",
+            "count": 104
+        },
+        {
+            "name": "萝卜",
+            "count": 96
+        },
+        {
+            "name": "热血",
+            "count": 96
+        },
+        {
+            "name": "音乐",
+            "count": 76
+        },
+        {
+            "name": "机战",
+            "count": 67
+        },
+        {
+            "name": "巴沙拉",
+            "count": 63
+        },
+        {
+            "name": "热气バサラ",
+            "count": 49
+        },
+        {
+            "name": "福山芳树",
+            "count": 45
+        },
+        {
+            "name": "燃",
+            "count": 42
+        },
+        {
+            "name": "苇PRODUCTION",
+            "count": 36
+        },
+        {
+            "name": "科幻",
+            "count": 24
+        },
+        {
+            "name": "日本",
+            "count": 15
+        },
+        {
+            "name": "熱氣バサラ",
+            "count": 14
+        },
+        {
+            "name": "アミノテツロー",
+            "count": 10
+        },
+        {
+            "name": "葦プロダクション",
+            "count": 10
+        },
+        {
+            "name": "补旧番",
+            "count": 8
+        },
+        {
+            "name": "网野哲郎",
+            "count": 7
+        },
+        {
+            "name": "美樹本晴彦",
+            "count": 7
+        },
+        {
+            "name": "富田祐弘",
+            "count": 7
+        },
+        {
+            "name": "90年代",
+            "count": 6
+        },
+        {
+            "name": "1994年10月",
+            "count": 6
+        },
+        {
+            "name": "年番",
+            "count": 6
+        },
+        {
+            "name": "機器人",
+            "count": 6
+        },
+        {
+            "name": "桂宪一郎",
+            "count": 5
+        },
+        {
+            "name": "TVA",
+            "count": 5
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "音乐"
+    ],
+    "series": false,
+    "main_character_ids": [
+        8879,
+        11192,
+        55596
+    ],
+    "main_characters": [
+        {
+            "id": 8879,
+            "name": "熱気バサラ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d2/8d/8879_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/8d/8879_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/8d/8879_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d2/8d/8879_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4018,
+                    "name": "神奈延年",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4c/f0/4018_prsn_K8iMe.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/f0/4018_prsn_K8iMe.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/f0/4018_prsn_K8iMe.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4c/f0/4018_prsn_K8iMe.jpg"
+                    },
+                    "short_summary": "子役出身。日本児童、副多事務所を経て、劇団青杜から青二プロダクションへ所属。3歳のときに役者デビューしCMや映画に出演、中学生のときに学業に専念するため一旦休業。高校卒業後、舞台役者を経て、1991年にテレビアニメ『ドラゴンクエスト』のフランク王子役で声優デビューを果たす。\r\n\r\n2000年1月1日付で芸名を「神奈延年」に改める。意味は職人が使用する木を削る鉋（かんな）で削るが如く、演技や自分に磨きをかけるため＝神奈（かんな）とのこと。「神奈」は姓名鑑定で決めてもらった苗字で、他には「蔵門」（くらかど）等の苗字が候補に挙がっていた。\r\n\r\n2010年7月27日、神奈延年の知人である容疑者が不正アクセスをし、神奈延年のブログになりすましを行い書き込んだことが報道された。容疑者は約100回に渡り、意味不明なことを書き込んでいた。報道された当初、ブログは閉鎖されていたが現在ではブログは再開されている。",
+                    "locked": false
+                },
+                {
+                    "id": 5999,
+                    "name": "福山芳樹",
+                    "type": 1,
+                    "career": [
+                        "artist"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/98/3b/5999_prsn_7BW4G.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/3b/5999_prsn_7BW4G.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/3b/5999_prsn_7BW4G.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/98/3b/5999_prsn_7BW4G.jpg"
+                    },
+                    "short_summary": "福山芳树（1963年9月14日－），神奈川县镰仓市出身的音乐人。Three Nine Entertainment（seesonic／GENEON ENTERTAINMENT）所属。爱称：“福ちゃん（Fuku chan）、ボンバー（Bomber）”等。\r\n1984年:受到邀请加入[Kirenjaku] 黄连雀\r\n1988年：与古屋敏之、麻生祥一郎组成“HUMMING BIRD”。担任主唱、吉他和键盘手。\r\n1990年：获得AXIA MUSIC征选，歌部门最优秀赏。\r\n1991年：以“HUMMING BIRD”正式出道。\r\n1994年：在电视动画“超时空要塞 7”中，担任“Fire Bomber”主唱热气巴萨拉歌声的配音。\r\n2000年：“HUMMING BIRD”解散，开始个人活动。\r\n2002年：与牛岛正人组成“WILD VOX”。\r\n2003年：接受影山浩宣的邀请，加入动画歌手团体“JAM Project”。\r\n2007年：“超时空要塞25周年”之际，与当年配\"热气巴萨拉\"的日本声优神奈延年(旧姓:林延年)组“福神”。\r\n\r\n代表作品：\r\nPLANET DANCE TV动画《超时空要塞7》插入曲；\r\n真赤な誓い TV动画《武装炼金》片头曲\r\nワクガイ!! TV动画《仮面のメイドガイ》片尾曲",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 11192,
+            "name": "ミレーヌ・ジーナス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8b/d6/11192_crt_G5oLV.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8b/d6/11192_crt_G5oLV.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8b/d6/11192_crt_G5oLV.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8b/d6/11192_crt_G5oLV.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5954,
+                    "name": "櫻井智",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/83/5b/5954_prsn_03czo.jpg?r=1692756186",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/5b/5954_prsn_03czo.jpg?r=1692756186",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/5b/5954_prsn_03czo.jpg?r=1692756186",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/83/5b/5954_prsn_03czo.jpg?r=1692756186"
+                    },
+                    "short_summary": "原名八田友江，家中共有4姐妹。1987年16岁的八田踏入了艺能界，加入了由艺能经理人兼作词家朝仓薰组成的青春少女3人组合“Lemon Angel”。90年解散后，樱井智开始了舞台剧及动画配音（也就是声优）的工作，并经常推出歌曲CD或广播剧CD，因为也拥有大量歌迷，声迷的原因，有时也会举行演唱会及歌迷会。\r\n2016年9月1日，在官方博客上发表因自觉发声困难而决定引退的消息。《银魂》的日轮由井上喜久子接任。\r\n2019年5月31日在自己的Twitter上宣布复归声优业。",
+                    "locked": false
+                },
+                {
+                    "id": 13944,
+                    "name": "チエ・カジウラ",
+                    "type": 1,
+                    "career": [
+                        "artist"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/56/f3/13944_prsn_0xcqc.jpg?r=1392174612",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/f3/13944_prsn_0xcqc.jpg?r=1392174612",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/f3/13944_prsn_0xcqc.jpg?r=1392174612",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/56/f3/13944_prsn_0xcqc.jpg?r=1392174612"
+                    },
+                    "short_summary": "チエ カジウラは、日本の歌手。本来の表記はChie Kajiuraだが、CD等ではチエ・カジウラ、またはチエ カジウラと表記している。\r\nソロデビューに向けてデモ音源を作成中、自身のデビューより先にテレビアニメ『マクロス7』にて劇中に登場するロックバンド「Fire Bomber」のボーカルを担当するヒロイン、ミレーヌ・ジーナスの歌唱部分の吹替を担当。声を担当した声優の櫻井智と区別するため、彼女を「歌ミレーヌ」と呼ぶこともあり、「…だけど ベイビー!!」のCMで公式にも歌ミレーヌと呼ばれている。『マクロス7』中の楽曲では「M-MEG」名義で作詞も担当している。\r\n長女は女優の杉咲花である。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 55596,
+            "name": "ガムリン・木崎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/20/13/55596_crt_Rv630.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/20/13/55596_crt_Rv630.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/20/13/55596_crt_Rv630.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/20/13/55596_crt_Rv630.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 1096,
+                    "name": "子安武人",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4f/e5/1096_prsn_84WcO.jpg?r=1509920084",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/e5/1096_prsn_84WcO.jpg?r=1509920084",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/e5/1096_prsn_84WcO.jpg?r=1509920084",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4f/e5/1096_prsn_84WcO.jpg?r=1509920084"
+                    },
+                    "short_summary": "子安武人, 名字之所以會叫「武人」是因為他的生日是日本的兒童節。\r\n他和三木真一郎、關智一、结城比吕组成声优团体Weiß，主要的作品是《白色猎人》。 \r\n有一小點的巧合是他演出的角色為金髮男子居多，其角色個性很廣泛，不論是搞笑型的，或是嚴肅型的角色皆為其拿手範圍內，另一方面一些其貌不揚或性情古怪的角色也非常擅長。\r\n本人称自己也不能算做很喜欢饰演变态或搞笑角色，只是有这么的工作就接了，结果却慢慢得越来越多。\r\n\r\n1988-1998年隶属于事务所Production Baobab，此后成立自己的会社T's Factory。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

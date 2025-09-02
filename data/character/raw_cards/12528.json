@@ -1,0 +1,52 @@
+{
+    "id": 12528,
+    "name": "石動乃絵",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/64/68/12528_crt_VN7y4.jpg?r=1490969977",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/64/68/12528_crt_VN7y4.jpg?r=1490969977",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/64/68/12528_crt_VN7y4.jpg?r=1490969977",
+        "grid": "https://lain.bgm.tv/pic/crt/g/64/68/12528_crt_VN7y4.jpg?r=1490969977"
+    },
+    "summary": "一年前转至麦端高校的转学生，就读一年A班。因为奇特的想法与不理会别人目光的个性，被同学间视为是怪人，实际上却出奇的健谈，长相与言行举止都和年龄不符，比较像个小孩子，却拥有能看透别人内心的敏锐感性。幼时似乎发生某件事而无法流泪，常到学校的鸡舍对着鸡说话，是个不可思议的女孩。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "石动乃绘"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いするぎ のえ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Isurugi Noe"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月9日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 9,
+    "stat": {
+        "comments": 90,
+        "collects": 229
+    },
+    "anime_ids": [
+        309
+    ]
+}

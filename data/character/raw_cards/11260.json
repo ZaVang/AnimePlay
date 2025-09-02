@@ -1,0 +1,73 @@
+{
+    "id": 11260,
+    "name": "汐宮栞",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/26/9a/11260_crt_S2LC1.jpg?r=1378924317",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/26/9a/11260_crt_S2LC1.jpg?r=1378924317",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/26/9a/11260_crt_S2LC1.jpg?r=1378924317",
+        "grid": "https://lain.bgm.tv/pic/crt/g/26/9a/11260_crt_S2LC1.jpg?r=1378924317"
+    },
+    "summary": "本を愛し、本の世界に生きる図書委員の女の子。\r\n大人しくて控えめ、ヒトと話すのが苦手だけど、\r\n心の中ではとってもおしゃべり？\r\nいつも不思議な本を読んでいる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "汐宫栞"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "汐宫刊"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しおみや しおり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "shiomiya shiori"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月26日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "体重",
+            "value": "41kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B78 W54 H80"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 26,
+    "stat": {
+        "comments": 29,
+        "collects": 186
+    },
+    "anime_ids": [
+        56112,
+        5976
+    ]
+}

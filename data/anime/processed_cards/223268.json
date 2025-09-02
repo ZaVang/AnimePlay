@@ -1,0 +1,119 @@
+{
+    "id": 223268,
+    "name": "偶像大师 SideM 序章 -Episode of Jupiter-",
+    "image_path": "data/images/anime/223268.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "作为顶尖偶像活跃着的男性偶像组合“Jupiter”。\r\n但是，知晓了所属的961Pro暗地里的卑贱行为后的他们，离开了事务所，凭借着自己的力量去重新开始偶像活动。\r\n有着伸出援手的工作人员的协力，过着充实而又繁忙的每一天的Jupiter三人。\r\n然而，出现于他们面前的315Pro社长·斋藤抛出的话语却令人意外——！？\r\n这是描绘了Jupiter与315Pro的相遇的「偶像大师 SideM」的序章。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "游戏改"
+    ],
+    "date": "2017-09-30",
+    "rating_rank": 1422,
+    "rating_score": 7.3,
+    "rating_total": 376,
+    "main_character_ids": [
+        39469,
+        39470,
+        39471
+    ],
+    "main_characters": [
+        {
+            "id": 39469,
+            "name": "天ヶ瀬冬馬",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/40/2c/39469_crt_k547w.jpg?r=1530316251",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/2c/39469_crt_k547w.jpg?r=1530316251",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/2c/39469_crt_k547w.jpg?r=1530316251",
+                "grid": "https://lain.bgm.tv/pic/crt/g/40/2c/39469_crt_k547w.jpg?r=1530316251"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4906,
+                    "name": "寺島拓篤",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/39/32/4906_prsn_hlHhz.jpg?r=1637442016",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/32/4906_prsn_hlHhz.jpg?r=1637442016",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/32/4906_prsn_hlHhz.jpg?r=1637442016",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/39/32/4906_prsn_hlHhz.jpg?r=1637442016"
+                    },
+                    "short_summary": "东京东放学园毕业。2008年12月为止隶属于Holy Peak。2009年2月加入Production baobab。于2011年9月1日移籍到AXL ONE。\r\n对动物过敏（过敏検查呈阳性反应，但本人没感觉）。\r\n喜欢戴银制饰品，但吃饭时会脱下。\r\n特技是早起。兴趣是唱歌、插图、改造衣服、台球、飞镖。\r\n另外还喜欢看高尔夫，但一窍不通。不过在和森久保祥太郎、梶裕贵一起主持的‘ドーリィ☆バラエティ HYPER ViSUADOLL MOVIE’节目中实际体验了高尔夫。\r\n喜欢《哆啦A梦》和《守护甜心!》。 特别中意《守护甜心!》的女主角日奈森亚梦，喜欢到会在部落格放上自己画的亚梦的插画。\r\n有一个哥哥和一个弟弟。兄弟感情很好，从来没有吵过架。\r\n在死后文的庆功宴上，因为长得和植田佳奈相像而成为话题。植田本人也同意。\r\n说喜欢玩美少女游戏（‘さよなら絶望放送’第38回）。\r\n中学时的社团活动是剑道社，高中则是戏剧社。\r\n追求女性的理想条件为左撇子（《CLUB AT-X》第143回）。\r\n和岸尾大辅是一起玩MONSTER HUNTER的朋友。（《CLUB AT-X》第144回）\r\n害怕尖叫、恐怖系的游乐设施，在‘ドーリィ☆バラエティ HYPER ViSUADOLL MOVIE’节目中去富士急高原乐园录影时，虽然坐了云霄飞车、去了鬼屋，和一样讨厌尖叫、恐怖系的梶裕贵一起尖叫、脸色发青之后，一直要求着要中止录影。\r\n2009年1月5号，在自己的网志上贴出告知表示在2008年12月31号离开待了三年的Holy Peak，文中未提到新公司，只说会开设一个新的网志（《寺岛拓笃のモノクロームな日々》是在Holy Peak管理下）；2009年2月2日在新网志发表加入Production baobab。\r\n2011年8月31号当天晚上Production baobab上的资料消失而引起一阵讨论，隔天9月1号的中午在网志上正式发表移籍至AXL ONE的公告。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 39470,
+            "name": "御手洗翔太",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/78/b9/39470_crt_SQ5u5.jpg?r=1530316353",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/b9/39470_crt_SQ5u5.jpg?r=1530316353",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/b9/39470_crt_SQ5u5.jpg?r=1530316353",
+                "grid": "https://lain.bgm.tv/pic/crt/g/78/b9/39470_crt_SQ5u5.jpg?r=1530316353"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5764,
+                    "name": "松岡禎丞",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/91/77/5764_prsn_njsm3.jpg?r=1447773082",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/77/5764_prsn_njsm3.jpg?r=1447773082",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/77/5764_prsn_njsm3.jpg?r=1447773082",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/91/77/5764_prsn_njsm3.jpg?r=1447773082"
+                    },
+                    "short_summary": "15歳の頃に友人の勧めで見た『新世紀エヴァンゲリオン』の渚カヲルと『テイルズ オブ エターニア』のリッド・ハーシェルの双方を演じた石田彰の演技の違いに驚愕し、声優の仕事の存在を知る。高校三年の秋まで自動車の整備士を志していたが、声優も気にするようになり、道内の声優学校を捜すが、「東京に出ないと厳しい」との助言を受け単身上京。その後、新聞奨学生の仕事をしながら、日本ナレーション演技研究所に通うようになる。2009年、22歳の頃、「今年がダメなら北海道に帰ろう」と思っていた矢先にオーディションの話が入り、これを機にアイムエンタープライズの正所属となった。\r\n\r\n2012年、第6回声優アワード新人男優賞受賞。\r\n\r\n\r\n尊敬する先輩は松風雅也。事務所の先輩でもある間島淳司とは親交が深い[2]。また事務所は違うが島﨑信長と親交がありブログでもちょくちょく語っている。\r\n\r\n女性が大の苦手。\r\n\r\n現場で頑張り過ぎて、腕や肩に痛みを感じたり、叫び過ぎて、鼻血を出したり、服の着方を間違えたりと、お茶目な部分がある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 39471,
+            "name": "伊集院北斗",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/27/fe/39471_crt_AkbSb.jpg?r=1530316574",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/fe/39471_crt_AkbSb.jpg?r=1530316574",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/fe/39471_crt_AkbSb.jpg?r=1530316574",
+                "grid": "https://lain.bgm.tv/pic/crt/g/27/fe/39471_crt_AkbSb.jpg?r=1530316574"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5125,
+                    "name": "神原大地",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/45/81/5125_prsn_9r99T.jpg?r=1473835497",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/81/5125_prsn_9r99T.jpg?r=1473835497",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/81/5125_prsn_9r99T.jpg?r=1473835497",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/45/81/5125_prsn_9r99T.jpg?r=1473835497"
+                    },
+                    "short_summary": "神原 大地（かんばら だいち、1983年8月30日 - ）は、日本の男性声優。大阪府出身。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

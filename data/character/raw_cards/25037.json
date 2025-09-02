@@ -1,0 +1,48 @@
+{
+    "id": 25037,
+    "name": "マユ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9e/90/25037_crt_d845L.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/90/25037_crt_d845L.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/90/25037_crt_d845L.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9e/90/25037_crt_d845L.jpg"
+    },
+    "summary": "原本是在海滨的船屋和小狗旺太一起生活的离家少女，为了归还耕太遗留的雨伞而来到枫庄拜访，受到耕太等人的温暖对待，后来就决定在枫庄居住下来。真由其实是一位家暴的受害少女，因为曾持续遭受继父的性侵（最后一次并未另其得逞并离家出走），对于男性还有家人之类的都怀着不信任感，即使住进枫庄之后也还留有这种态度。不过，她对于身为男性的坂东却可以相当平常地对待，并曾经在坂东命危之际救了他的性命。真由是最先得知有关二觭人和“手”能力等秘密的普通人（经由娜娜口中得知），和娜娜是犹如姊妹般的亲密朋友。她除了设法将娜娜带进枫庄的家庭，调解露西和娜娜之间的冲突之外，也教导娜娜日常生活的知识与技巧，是一位相当善解人意且勇敢坚强的女孩。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "真由"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "マユ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "mayu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 7
+    },
+    "anime_ids": [
+        536
+    ]
+}

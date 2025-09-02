@@ -1,0 +1,52 @@
+{
+    "id": 22820,
+    "name": "兆麻",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d8/b1/22820_crt_mRRsR.jpg?r=1447002123",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/b1/22820_crt_mRRsR.jpg?r=1447002123",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/b1/22820_crt_mRRsR.jpg?r=1447002123",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d8/b1/22820_crt_mRRsR.jpg?r=1447002123"
+    },
+    "summary": "神器型态：耳饰\r\n毘沙门的神器。名为“兆”。戴着眼镜的青年。称呼毘沙门为“毘娜（ヴィーナ）”。是毘沙门神器当中最为古老的神器、“麻”之一族唯一存活下来的人。神器形状为樱花造型的耳环。本身的战斗能力低，负责指挥各个神器使他们的能力技术发挥到最大值（修正命中精度、攻撃范围的辅佐等），在毘沙门神器中担任最为重要的角色。他正确的引导被认为是“毘沙门成为最强武神的原因”，连夜斗也甘拜下风。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "兆麻"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "兆麻"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かずま"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kazuma"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 12,
+        "collects": 38
+    },
+    "anime_ids": [
+        129988
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "id": 71998,
+    "name": "コゼット",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a7/0b/71998_crt_14PQ0.jpg?r=1569644590",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/0b/71998_crt_14PQ0.jpg?r=1569644590",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/0b/71998_crt_14PQ0.jpg?r=1569644590",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a7/0b/71998_crt_14PQ0.jpg?r=1569644590"
+    },
+    "summary": "コゼット　（声：名塚佳織／3才・松元環季）\r\n\r\n貧しさから母親と別れ、宿屋のテナルディエ夫妻に預けられる。夫妻や娘たちから召使のような扱いで日々こき使われるが、母ファンティーヌの「必ず迎えに来るから」と言う約束を心の支えに、つらい毎日を明るくけなげに生きる。実の息子ながら夫妻に邪険にされているガヴローシュをかばい、姉弟のように仲良くしている。運命に導かれジャン･ヴァルジャンと暮らすようになってからは、父として慕うヴァルジャンからの愛を一身に受け、美しく明るく成長していく。やがて青年マリウスと出会い…",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "珂赛特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "柯赛特"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "柯塞特"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Cosette"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "www.nippon-animation.co.jp/lesmise/chara"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 22
+    },
+    "anime_ids": [
+        9571
+    ]
+}

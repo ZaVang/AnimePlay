@@ -1,0 +1,39 @@
+{
+    "id": 36182,
+    "name": "メリイ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fa/d3/36182_crt_8eOfG.jpg?r=1473064058",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/d3/36182_crt_8eOfG.jpg?r=1473064058",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/d3/36182_crt_8eOfG.jpg?r=1473064058",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fa/d3/36182_crt_8eOfG.jpg?r=1473064058"
+    },
+    "summary": "クールな美人。クラスは神官。\r\n目や態度が冷たくて非常にコワイ。治療もロクにしてくれないと、冒険者の間でもいろいろ噂になってる。\r\nいろいろとわけありのようだが…？",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "梅莉"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 65,
+        "collects": 238
+    },
+    "anime_ids": [
+        148726
+    ]
+}

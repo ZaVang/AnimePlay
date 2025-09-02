@@ -1,0 +1,55 @@
+{
+    "id": 14856,
+    "name": "チアキ・クリハラ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f1/8c/14856_crt_qrSrN.jpg?r=1613815721",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/8c/14856_crt_qrSrN.jpg?r=1613815721",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/8c/14856_crt_qrSrN.jpg?r=1613815721",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f1/8c/14856_crt_qrSrN.jpg?r=1613815721"
+    },
+    "summary": "由海森星转校至海明星的少女。宙海贼船巴巴罗萨号的船长栗原见城的女儿。对甜品没抵抗力。\r\n因权左卫门意外身故事件发生，为鉴证船长候补茉莉香是何许人物而转校来到白凰学院，并加入宇宙风帆部对茉莉香进行全方位的了解。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "千秋·栗原"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "栗原千秋"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "栗原千明"
+                },
+                {
+                    "k": "日文名",
+                    "v": "チアキ・クリハラ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "Chiaki Kurihara"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 8,
+        "collects": 19
+    },
+    "anime_ids": [
+        10462
+    ]
+}

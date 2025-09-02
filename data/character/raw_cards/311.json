@@ -1,0 +1,62 @@
+{
+    "id": 311,
+    "name": "斑目晴信",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9d/fc/311_GLFX0.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9d/fc/311_GLFX0.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9d/fc/311_GLFX0.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9d/fc/311_GLFX0.jpg"
+    },
+    "summary": "高瘦戴厚眼鏡的御宅族，現視研的第二任會長，喜歡發表對ACG事物的評論（尤其是不籤）跟引用動漫畫的名言，為了精品可以節衣縮食。在春日部加入後有一點動搖，有偷偷收藏春日部的照片。在第六集中畢業。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "生日",
+            "value": "1982年10月25日"
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Madarame Harunobu"
+                },
+                {
+                    "k": "日文名",
+                    "v": "斑目晴信"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "简体中文名",
+            "value": "斑目晴信"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 4,
+    "birth_year": 1982,
+    "birth_mon": 10,
+    "birth_day": 25,
+    "stat": {
+        "comments": 24,
+        "collects": 67
+    },
+    "anime_ids": [
+        1219,
+        928,
+        71802
+    ]
+}

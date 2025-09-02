@@ -1,0 +1,323 @@
+{
+    "id": 120236,
+    "type": 2,
+    "name": "ハイキュー!! セカンドシーズン",
+    "name_cn": "排球少年 第二季",
+    "summary": "",
+    "nsfw": false,
+    "locked": false,
+    "date": "2015-10-03",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/04/3d/120236_AffBR.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/04/3d/120236_AffBR.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/04/3d/120236_AffBR.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/04/3d/120236_AffBR.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/04/3d/120236_AffBR.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "排球少年 第二季"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Haikyuu!! 2nd Season",
+                    "k": null
+                },
+                {
+                    "v": "Haikyuu!! Second Season",
+                    "k": null
+                },
+                {
+                    "v": "Haikyu!! 2nd Season",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "25"
+        },
+        {
+            "key": "放送开始",
+            "value": "2015年10月3日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.j-haikyu.com/anime_s2/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "MBS"
+        },
+        {
+            "key": "其他电视台",
+            "value": "TOKYO MX / CBC / BS11 / 北海道放送 / 東北放送 / RKB毎日放送"
+        },
+        {
+            "key": "播放结束",
+            "value": "2016年3月26日"
+        },
+        {
+            "key": "导演",
+            "value": "満仲勧"
+        },
+        {
+            "key": "Copyright",
+            "value": "©古舘春一／集英社・「ハイキュー!! セカンドシーズン」製作委員会・MBS"
+        },
+        {
+            "key": "原作",
+            "value": "古舘春一（集英社「週刊少年ジャンプ」連載）"
+        },
+        {
+            "key": "美术监督",
+            "value": "立田一郎"
+        },
+        {
+            "key": "美术设计",
+            "value": "立田一郎"
+        },
+        {
+            "key": "3DCG",
+            "value": "ダンデライオン"
+        },
+        {
+            "key": "设定",
+            "value": "甲斐泰之（动作设定）"
+        },
+        {
+            "key": "人物设定",
+            "value": "岸田隆宏"
+        }
+    ],
+    "volumes": 0,
+    "eps": 25,
+    "total_episodes": 25,
+    "rating": {
+        "rank": 100,
+        "total": 6395,
+        "count": {
+            "one": 13,
+            "two": 4,
+            "three": 7,
+            "four": 6,
+            "five": 52,
+            "six": 111,
+            "seven": 744,
+            "eight": 3069,
+            "nine": 1721,
+            "ten": 668
+        },
+        "score": 8.3
+    },
+    "collection": {
+        "wish": 1286,
+        "collect": 10203,
+        "doing": 353,
+        "on_hold": 220,
+        "dropped": 118
+    },
+    "tags": [
+        {
+            "name": "热血",
+            "count": 1356
+        },
+        {
+            "name": "ProductionI.G",
+            "count": 1081
+        },
+        {
+            "name": "运动",
+            "count": 1024
+        },
+        {
+            "name": "2015年10月",
+            "count": 780
+        },
+        {
+            "name": "漫画改",
+            "count": 772
+        },
+        {
+            "name": "排球！！",
+            "count": 650
+        },
+        {
+            "name": "TV",
+            "count": 609
+        },
+        {
+            "name": "体育番",
+            "count": 489
+        },
+        {
+            "name": "2015",
+            "count": 418
+        },
+        {
+            "name": "Production.I.G",
+            "count": 290
+        },
+        {
+            "name": "漫改",
+            "count": 273
+        },
+        {
+            "name": "运动番",
+            "count": 208
+        },
+        {
+            "name": "石川界人",
+            "count": 109
+        },
+        {
+            "name": "排球",
+            "count": 84
+        },
+        {
+            "name": "内山昂輝",
+            "count": 57
+        },
+        {
+            "name": "排球少年",
+            "count": 56
+        },
+        {
+            "name": "校园",
+            "count": 52
+        },
+        {
+            "name": "満仲勧",
+            "count": 51
+        },
+        {
+            "name": "JUMP",
+            "count": 49
+        },
+        {
+            "name": "竞技",
+            "count": 48
+        },
+        {
+            "name": "日本",
+            "count": 43
+        },
+        {
+            "name": "村瀬歩",
+            "count": 39
+        },
+        {
+            "name": "青春",
+            "count": 28
+        },
+        {
+            "name": "满仲劝",
+            "count": 26
+        },
+        {
+            "name": "岸本卓",
+            "count": 25
+        },
+        {
+            "name": "续作",
+            "count": 23
+        },
+        {
+            "name": "体育",
+            "count": 20
+        },
+        {
+            "name": "2015年",
+            "count": 19
+        },
+        {
+            "name": "励志",
+            "count": 15
+        },
+        {
+            "name": "神谷浩史",
+            "count": 12
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "运动",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        24322,
+        24323
+    ],
+    "main_characters": [
+        {
+            "id": 24322,
+            "name": "日向翔陽",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/03/78/24322_crt_zuFs2.jpg?r=1411356315",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/78/24322_crt_zuFs2.jpg?r=1411356315",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/78/24322_crt_zuFs2.jpg?r=1411356315",
+                "grid": "https://lain.bgm.tv/pic/crt/g/03/78/24322_crt_zuFs2.jpg?r=1411356315"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 8253,
+                    "name": "村瀬歩",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ee/d9/8253_prsn_hnQG2.jpg?r=1543332484",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/d9/8253_prsn_hnQG2.jpg?r=1543332484",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/d9/8253_prsn_hnQG2.jpg?r=1543332484",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ee/d9/8253_prsn_hnQG2.jpg?r=1543332484"
+                    },
+                    "short_summary": "村瀬 歩（むらせ あゆむ、1988年12月14日 - ）は、日本の男性声優。アメリカ合衆国出身。ヴィムス所属。\r\n\r\nアメリカで生まれた後、高校時代まで愛知県で過ごし、京都府の大学に進学後上京。\r\n芝居を観るのが好きだったことから声優を目指し、日本ナレーション演技研究所へ入所。2012年、『Persona4 the ANIMATION』で声優デビュー。同年、『新世界より』の青沼瞬（14歳）役で初のメインキャラクターを演じた。2014年、『ハイキュー!!』の日向翔陽役で初主演を果たした。\r\n2016年に、第10回声優アワードで新人男優賞を受賞した。\r\n\r\n尊敬する声優は、自身が声優を目指すきっかけとなった大友龍三郎や、年齢が近く共演も多い松岡禎丞。\r\n中性的な音質を生かした役を演じることが多く、女性のガヤに加わったり、『チア男子!!』では佐久間龍造役と姉3名の役も兼ねるなど、女性キャラクターを演じることもある。またラジオなどでも村瀬歩（あゆみ）という女子の設定で話すことがある。一方で、『M3〜ソノ黒キ鋼〜』の伊削ヘイト役のように狂気じみた低音ボイスもこなせるほど声域が非常に広い。\r\n帰国子女のため英会話が堪能で、英語を必要とするモブキャラやガヤもこなし、洋画の吹き替えも増えている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 24323,
+            "name": "影山飛雄",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/05/0a/24323_crt_z77p4.jpg?r=1411356359",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/0a/24323_crt_z77p4.jpg?r=1411356359",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/0a/24323_crt_z77p4.jpg?r=1411356359",
+                "grid": "https://lain.bgm.tv/pic/crt/g/05/0a/24323_crt_z77p4.jpg?r=1411356359"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9953,
+                    "name": "石川界人",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/af/c4/9953_prsn_O0Dsl.jpg"
+                    },
+                    "short_summary": "日本男性声优。隶属于Stay Luck，出生于东京都。\r\n\r\n趣味\t読書、一人劇\r\n特技\t水泳、ウィンタースポーツ\r\n経歴\tプロ・フィット声優養成所　卒\r\n2014年第八回声優アワードにて「新人男優賞」受賞。\r\n2020年第十四回声優アワードにて「助演男優賞」受賞。\r\n2022年2月1日、ステイラックへ移籍。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

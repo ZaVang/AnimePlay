@@ -1,0 +1,64 @@
+{
+    "id": 16784,
+    "name": "リナリー・リー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/18/38/16784_crt_0NHMo.jpg?r=1369867309",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/38/16784_crt_0NHMo.jpg?r=1369867309",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/38/16784_crt_0NHMo.jpg?r=1369867309",
+        "grid": "https://lain.bgm.tv/pic/crt/g/18/38/16784_crt_0NHMo.jpg?r=1369867309"
+    },
+    "summary": "黒の教団の室長助手でエクソシスト。\r\n対アクマ武器「黒い靴（ダークブーツ）」で\r\n可憐に舞いアクマを破壊する。\r\n仲間想いで室長コムイの妹。\r\n黒の教団のマスコットガール的存在。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "利娜莉·李"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "李娜丽"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Lenalee Lee"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月20日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "166cm"
+        },
+        {
+            "key": "体重",
+            "value": "48kg"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 2,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 20,
+    "stat": {
+        "comments": 12,
+        "collects": 49
+    },
+    "anime_ids": [
+        488
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "id": 21954,
+    "name": "ユリーカ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3f/1d/21954_crt_x1S1O.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/1d/21954_crt_x1S1O.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/1d/21954_crt_x1S1O.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3f/1d/21954_crt_x1S1O.jpg"
+    },
+    "summary": "《神奇宝贝XY》的主角，希特隆的妹妹。非常喜欢神奇宝贝。也和小智一起旅行。在她成为正式的神奇宝贝训练家之前，西特隆替她保管她的神奇宝贝，目前希特隆替她保管的神奇宝贝只有电电鼠。常对希特隆的发明造成麻烦感到愤怒，也烦恼哥哥未来讨不到新娘。造型范本与3DS X、Y版同为希特隆的妹妹。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "柚丽嘉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "尤莉卡"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Bonnie"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Eureka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 16
+    },
+    "anime_ids": [
+        78799,
+        146408
+    ]
+}

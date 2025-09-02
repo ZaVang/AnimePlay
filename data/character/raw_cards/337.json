@@ -1,0 +1,52 @@
+{
+    "id": 337,
+    "name": "山崎薫",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/35/7a/337_W7gCV.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/35/7a/337_W7gCV.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/35/7a/337_W7gCV.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/35/7a/337_W7gCV.jpg"
+    },
+    "summary": "佐藤的学弟。由于其眼神在生气时非常凶狠，所以他在高中时经常被人欺负。 \r\n21岁。住在佐藤房间隔壁，深夜里大声播放着动画歌曲。 \r\n喜欢美少女角色。萝莉控、御宅族。 \r\n因为初恋的心理创伤而抱着扭曲的爱情观。 \r\n有着七菜子（菜菜子）这个傲娇的女友（大致）。 \r\n老家在北海道经营农业，因为是长子的关系时常被迫继承家业。 \r\n希望朝H-Game设计制作的工作发展，他负责绘画的部份。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "山崎薫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "山崎薫"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yamazaki Kaoru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 45,
+        "collects": 74
+    },
+    "anime_ids": [
+        995
+    ]
+}

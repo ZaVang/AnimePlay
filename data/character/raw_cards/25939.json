@@ -1,0 +1,49 @@
+{
+    "id": 25939,
+    "name": "木下藤吉郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/10/6a/25939_crt_C8G0B.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/10/6a/25939_crt_C8G0B.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/10/6a/25939_crt_C8G0B.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/10/6a/25939_crt_C8G0B.jpg"
+    },
+    "summary": "今川義元の間者として登場。農民から商人になった本物の木下藤吉郎を殺してその名と経歴を奪い、サブローの前に現れる。木下藤吉郎を名乗る以前は「田原伝二郎」と名乗っていたが、本名ではない。織田家に馬番として潜り込みながら密かに織田信行に謀反をすすめるなどをしていた。桶狭間の戦いで義元が討たれると、自らが力をつけ信長を倒す決意をする。表向きは愛想のよい有能な忠義者のふりをしているが、本性は腹黒く冷酷で、信長への復讐の機会を待っている。サブローにその有能さを認められて出世してゆき、4人の軍団長のひとりに選ばれると丹羽長秀・柴田勝家・明智光秀から各1字と藤吉郎から1字を取って羽柴秀吉と名乗る。秀長からは「日吉」と呼ばれていた。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "木下藤吉郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "田原伝二郎"
+                },
+                {
+                    "v": "木下秀吉"
+                },
+                {
+                    "v": "羽柴秀吉"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        103671
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 15943,
+    "name": "星空みゆき／キュアハッピー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b4/77/15943_crt_ik3G3.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/77/15943_crt_ik3G3.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/77/15943_crt_ik3G3.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b4/77/15943_crt_ik3G3.jpg"
+    },
+    "summary": "七色丘中学的转学生，现读二年二班，14岁，加入了学校啦啦队。个性开朗活泼，积极正面并勇于尝试。性格冒失天真，但紧要关头总能拉人一把。兴趣是吃蛋糕和看绘本。口头禅是“超级快乐（Ultra Happy）！”\r\n与绘本中的糖糖相遇后，为了保护糖糖阻挡敌人的攻击。以光的力量变身成乐天使，变身口号为“闪烁生辉的未来之光！乐天使！”",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "星空幸／快乐天使"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "星空美幸"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Cure Happy"
+                },
+                {
+                    "k": "日文名",
+                    "v": "星空 みゆき"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ほしぞら みゆき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hoshizora Miyuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "zh.wikipedia.org"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 27
+    },
+    "anime_ids": [
+        27332
+    ]
+}

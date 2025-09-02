@@ -1,0 +1,60 @@
+{
+    "id": 64712,
+    "name": "愛城華恋",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/55/09/64712_crt_4JDnU.jpg?r=1531722744",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/09/64712_crt_4JDnU.jpg?r=1531722744",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/09/64712_crt_4JDnU.jpg?r=1531722744",
+        "grid": "https://lain.bgm.tv/pic/crt/g/55/09/64712_crt_4JDnU.jpg?r=1531722744"
+    },
+    "summary": "聖翔音楽学園　99期　俳優育成科　出席番号1番\r\n幼い日に見たレヴュー『スタァライト』に心を奪われ、舞台の道を走り出した舞台少女。いつでも元気、声も大きめ、でも早朝レッスンは超苦手。幼い日に『運命』を交換したひかりと共に、謎のレヴューに参加する。\r\n夢は「ひかりちゃんと一緒に舞台に立つこと！」",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "爱城华恋"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "愛城 華恋"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あいじょう かれん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Karen Aijo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9-27"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://revuestarlight.bushimo.jp/character/karen/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 27,
+    "stat": {
+        "comments": 87,
+        "collects": 336
+    },
+    "anime_ids": [
+        214265
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 14950,
+    "name": "西見薫",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1f/d3/14950_crt_J5G6Z.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1f/d3/14950_crt_J5G6Z.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1f/d3/14950_crt_J5G6Z.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1f/d3/14950_crt_J5G6Z.jpg"
+    },
+    "summary": "本作の主人公。船乗りの父親の仕事の都合で、幼い頃から何度も転校を繰り返してきた。秀才で真面目だが、繊細で人付き合いも苦手。ある時からストレスで吐く癖がついてしまう。伯父の家に居候しているが、年下のいとこと伯母に嫌味を言われる日々を送っており、窮屈な思いをしている。\r\n    律子の無垢な笑顔に癒され、恋に落ちる。千太郎からは、「ボン」と呼ばれる。\r\n    小学生の頃から、ピアノを弾いていた。クラシックしか弾いたことがなかったが、千太郎に挑発され、ジャズに挑むようになる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "西见薰"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "西見 薫"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "にしみ かおる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nishimi Kaoru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://ja.wikipedia.org/wiki/%E5%9D%82%E9%81%93%E3%81%AE%E3%82%A2%E3%83%9D%E3%83%AD%E3%83%B3"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 20
+    },
+    "anime_ids": [
+        29426
+    ]
+}

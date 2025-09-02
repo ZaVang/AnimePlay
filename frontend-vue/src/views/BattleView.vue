@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue';
 import { useGameStore, usePlayerStore } from '@/stores/battle';
 import { TurnManager } from '@/core/battle/TurnManager';
+import { InteractionSystem } from '@/core/systems/InteractionSystem';
+import { PersistentEffectSystem } from '@/core/systems/PersistentEffectSystem';
 import type { Deck } from '@/stores/userStore';
 
 import DeckSelector from '@/components/battle/ui/DeckSelector.vue';
@@ -11,6 +13,7 @@ import TopicBiasBar from '@/components/battle/arena/TopicBiasBar.vue';
 import EndTurnButton from '@/components/battle/ui/EndTurnButton.vue';
 import NotificationDisplay from '@/components/battle/ui/NotificationDisplay.vue';
 import BattleLog from '@/components/battle/ui/BattleLog.vue';
+import InteractionManager from '@/components/battle/interaction/InteractionManager.vue';
 import { BattleController } from '@/core/battle/BattleController';
 
 type BattlePhase = 'deckSelection' | 'battle';
@@ -18,6 +21,7 @@ type BattlePhase = 'deckSelection' | 'battle';
 const gameStore = useGameStore();
 const playerStore = usePlayerStore();
 const battlePhase = ref<BattlePhase>('deckSelection');
+const interactionManager = ref<InstanceType<typeof InteractionManager> | null>(null);
 
 // Check game state when component is mounted
 onMounted(() => {
@@ -25,6 +29,19 @@ onMounted(() => {
   if (gameStore.phase !== 'setup' && gameStore.phase !== 'game_over') {
     battlePhase.value = 'battle';
   }
+
+  // Set up interaction system (use nextTick to ensure component is mounted)
+  nextTick(() => {
+    if (interactionManager.value) {
+      const interactionSystem = InteractionSystem.getInstance();
+      interactionSystem.setInteractionManager(interactionManager.value);
+    }
+  });
+});
+
+onBeforeUnmount(() => {
+  // Clean up systems when leaving battle
+  PersistentEffectSystem.getInstance().clearAll();
 });
 
 function handleDeckSelected(deck: Deck, aiProfileId?: string) {
@@ -45,6 +62,10 @@ function handleSkipTurn() {
 <template>
   <div class="battle-view">
     <NotificationDisplay />
+    
+    <!-- Interaction Manager for complex skill effects -->
+    <InteractionManager ref="interactionManager" />
+    
     <!-- Phase 1: Deck Selection -->
     <div v-if="battlePhase === 'deckSelection'" class="deck-selector-wrapper">
       <DeckSelector @deckSelected="handleDeckSelected" @randomDeck="handleRandomDeck" />

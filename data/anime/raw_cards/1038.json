@@ -1,0 +1,350 @@
+{
+    "id": 1038,
+    "type": 2,
+    "name": "ONE OUTS -ワンナウツ-",
+    "name_cn": "超智游戏",
+    "summary": "“埼京彩珠豺狼”队的儿岛弘道，虽然具备实力，但却一次优胜也没有得到过，因此被称为“不走运的天才击球手”。\r\n不能得到估胜，应该是哪里尚有不足之处。为了找出那个缺点而自己来到了冲绳进行私下特训。在那里，他遇到了一个叫渡久地东亚的男人——称为“ONE OUTS”的赌博棒球中不败的传说。\r\n在第二次的比赛中，最后儿岛以力气取胜。为了利卡恩兹的光明未来，他向东亚发出了邀请的。\r\n随着东亚的入团，万年B级队的弱小球队“埼京彩珠利卡恩兹”的命运迎来了巨大的转变。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2008-10-07",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/6d/70/1038_f4e4F.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/6d/70/1038_f4e4F.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/6d/70/1038_f4e4F.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/6d/70/1038_f4e4F.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/6d/70/1038_f4e4F.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "超智游戏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ONE OUTS Nobody wins, but I!",
+                    "k": null
+                },
+                {
+                    "v": "鬼影投手",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "25"
+        },
+        {
+            "key": "放送开始",
+            "value": "2008年10月7日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期二"
+        },
+        {
+            "key": "官方网站",
+            "value": [
+                {
+                    "v": "https://www.ntv.co.jp/oneouts",
+                    "k": null
+                },
+                {
+                    "v": "https://www.vap.co.jp/oneouts",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "播放电视台",
+            "value": "日本テレビ"
+        },
+        {
+            "key": "其他电视台",
+            "value": "札幌テレビ/中京テレビ/福岡放送/読売テレビ/日テレプラス/広島テレビ/とちぎテレビ/日本映画専門チャンネル/アニマックス"
+        },
+        {
+            "key": "播放结束",
+            "value": "2009年3月31日"
+        },
+        {
+            "key": "导演",
+            "value": "佐藤雄三"
+        },
+        {
+            "key": "Copyright",
+            "value": "©甲斐谷忍／集英社・VAP・マッドハウス・NTV・D.N.ドリームパートナーズ"
+        },
+        {
+            "key": "原作",
+            "value": "甲斐谷忍"
+        },
+        {
+            "key": "CG制作人",
+            "value": "今村幸也"
+        },
+        {
+            "key": "CG 导演",
+            "value": "さいとうつかさ"
+        },
+        {
+            "key": "剪辑",
+            "value": "寺内聡、河西直樹"
+        },
+        {
+            "key": "制片人",
+            "value": "中谷敏夫、田村学"
+        },
+        {
+            "key": "动画制片人",
+            "value": "三田圭志"
+        },
+        {
+            "key": "製作",
+            "value": "ONE OUTS製作委員会【日本テレビ/D.N.ドリームパートナーズ（堀越徹、阿佐美弘恭、小野利恵子、原田由佳、天野光康、植野浩之）、バップ（長富忠裕、大島満）、MADHOUSE（原史倫、上間康弘、田中花織）】"
+        },
+        {
+            "key": "人物设定",
+            "value": "梅原隆弘（主）、桜井邦彦、高田晴仁、日向正樹"
+        },
+        {
+            "key": "企画",
+            "value": "藤本鈴子、平山博志、丸山正雄"
+        },
+        {
+            "key": "协力",
+            "value": "有村伸一郎（クラッチプレイヤーズ）"
+        },
+        {
+            "key": "设定制作",
+            "value": "畝原隆"
+        },
+        {
+            "key": "副导演",
+            "value": "监督助手：岩城忠雄"
+        },
+        {
+            "key": "助理制片人",
+            "value": "進藤友博"
+        },
+        {
+            "key": "音乐制作",
+            "value": "音乐协力：日本テレビ音楽、バップ"
+        },
+        {
+            "key": "录音",
+            "value": "阿部智佳子；录音工作室：タバック"
+        },
+        {
+            "key": "录音助理",
+            "value": "松田悟（タバック）"
+        },
+        {
+            "key": "音效",
+            "value": "長谷川卓也（サウンドボックス）"
+        },
+        {
+            "key": "音响",
+            "value": "庄司明（アーツ・プロ）"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "Pay money To my Pain / TRIBAL CHAIR"
+        }
+    ],
+    "volumes": 0,
+    "eps": 25,
+    "total_episodes": 25,
+    "rating": {
+        "rank": 429,
+        "total": 1758,
+        "count": {
+            "one": 4,
+            "two": 2,
+            "three": 7,
+            "four": 7,
+            "five": 24,
+            "six": 117,
+            "seven": 410,
+            "eight": 819,
+            "nine": 272,
+            "ten": 96
+        },
+        "score": 7.8
+    },
+    "collection": {
+        "wish": 1191,
+        "collect": 2426,
+        "doing": 119,
+        "on_hold": 199,
+        "dropped": 107
+    },
+    "tags": [
+        {
+            "name": "MADHouse",
+            "count": 360
+        },
+        {
+            "name": "斗智",
+            "count": 287
+        },
+        {
+            "name": "超智游戏",
+            "count": 231
+        },
+        {
+            "name": "TV",
+            "count": 230
+        },
+        {
+            "name": "心理",
+            "count": 229
+        },
+        {
+            "name": "棒球",
+            "count": 225
+        },
+        {
+            "name": "2008",
+            "count": 184
+        },
+        {
+            "name": "赌博",
+            "count": 150
+        },
+        {
+            "name": "漫画改",
+            "count": 127
+        },
+        {
+            "name": "甲斐谷忍",
+            "count": 121
+        },
+        {
+            "name": "2008年10月",
+            "count": 112
+        },
+        {
+            "name": "体育",
+            "count": 70
+        },
+        {
+            "name": "运动",
+            "count": 67
+        },
+        {
+            "name": "漫改",
+            "count": 66
+        },
+        {
+            "name": "渡久地",
+            "count": 43
+        },
+        {
+            "name": "智斗",
+            "count": 41
+        },
+        {
+            "name": "佐藤雄三",
+            "count": 23
+        },
+        {
+            "name": "竞技",
+            "count": 17
+        },
+        {
+            "name": "日本",
+            "count": 16
+        },
+        {
+            "name": "赌",
+            "count": 12
+        },
+        {
+            "name": "2008年",
+            "count": 9
+        },
+        {
+            "name": "棒球板西索",
+            "count": 9
+        },
+        {
+            "name": "推理",
+            "count": 7
+        },
+        {
+            "name": "2000s",
+            "count": 5
+        },
+        {
+            "name": "日本动画",
+            "count": 5
+        },
+        {
+            "name": "动画",
+            "count": 5
+        },
+        {
+            "name": "TVA",
+            "count": 4
+        },
+        {
+            "name": "00年代",
+            "count": 3
+        },
+        {
+            "name": "半年番",
+            "count": 3
+        },
+        {
+            "name": "2008秋",
+            "count": 3
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "运动",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        12653
+    ],
+    "main_characters": [
+        {
+            "id": 12653,
+            "name": "渡久地東亜",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b5/62/12653_crt_ZFeue.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/62/12653_crt_ZFeue.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/62/12653_crt_ZFeue.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b5/62/12653_crt_ZFeue.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4955,
+                    "name": "萩原聖人",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/60/ce/4955_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/ce/4955_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/ce/4955_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/60/ce/4955_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本的演员、声优，出生于神奈川县茅崎市。他于1995年11月与曾在《夏子的酒》共同演出的和久井映见结婚，1999年10月生下了一名男孩。2003年7月因萩原圣人与和久井映见离婚，和久井映见获得孩子的监护权。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

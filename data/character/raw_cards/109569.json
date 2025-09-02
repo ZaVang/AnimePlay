@@ -1,0 +1,48 @@
+{
+    "id": 109569,
+    "name": "光明寺ミツ子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/88/69/109569_crt_IKG8y.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/69/109569_crt_IKG8y.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/69/109569_crt_IKG8y.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/88/69/109569_crt_IKG8y.jpg"
+    },
+    "summary": "光明寺博士の娘でマサルの姉。ロボットに現を抜かす父に愛憎を抱きながらも父と同じロボット工学の道も歩んでいる。\r\nジローの存在に戸惑いながらも彼に心を寄せていき、相思相愛の関係になっていく。\r\nゴールデンバットに拉致された際、兄・一郎の死から始まった光明寺家の闇を知るが、それに向き合っていった。\r\nダーク壊滅後、父の療養の為、家族全員で海外に旅立つことにしている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "光明寺满子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "光明寺光子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こうみょうじ ミツこ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        18457
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 180,
+    "name": "和久隆",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/04/51/180_7b0e0a11a242b9765e79cbf113f_KdzJc.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/51/180_7b0e0a11a242b9765e79cbf113f_KdzJc.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/51/180_7b0e0a11a242b9765e79cbf113f_KdzJc.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/04/51/180_7b0e0a11a242b9765e79cbf113f_KdzJc.jpg"
+    },
+    "summary": "和久隆\r\n(わく たかし)\r\n通称：ワク\r\n(声：阪口大助)\r\n中学１年",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "わく たかし"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Waku Takashi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ワク"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "155"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 2,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 2
+    },
+    "anime_ids": [
+        467
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 185,
+    "name": "町洋子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ee/cc/185_5b6365d9607ee5a9d336962c534_O7Gjy.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/cc/185_5b6365d9607ee5a9d336962c534_O7Gjy.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/cc/185_5b6365d9607ee5a9d336962c534_O7Gjy.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ee/cc/185_5b6365d9607ee5a9d336962c534_O7Gjy.jpg"
+    },
+    "summary": "町洋子\r\n(まち ようこ)\r\n通称：マチ\r\n(声：三瓶由布子）\r\n中学１年",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "身高",
+            "value": "145"
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Machi Youko"
+                },
+                {
+                    "k": "日文名",
+                    "v": "町洋子"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 2,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 6
+    },
+    "anime_ids": [
+        467
+    ]
+}

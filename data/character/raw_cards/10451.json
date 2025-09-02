@@ -1,0 +1,52 @@
+{
+    "id": 10451,
+    "name": "ピノ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a0/65/10451_crt_99zb9.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a0/65/10451_crt_99zb9.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a0/65/10451_crt_99zb9.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a0/65/10451_crt_99zb9.jpg"
+    },
+    "summary": "家用型机器娃娃，为让别人爱而存在，却不明白如何爱人。与law一道踏上了追寻之路，创造麻烦的同时也为law创造了唤醒记忆的契机。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "皮诺"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Pino"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ピノ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 14,
+        "collects": 29
+    },
+    "anime_ids": [
+        837
+    ]
+}

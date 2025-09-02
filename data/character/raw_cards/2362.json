@@ -1,0 +1,72 @@
+{
+    "id": 2362,
+    "name": "ウソップ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/de/60/2362_crt_JGX05.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/60/2362_crt_JGX05.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/60/2362_crt_JGX05.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/de/60/2362_crt_JGX05.jpg"
+    },
+    "summary": "草帽海贼团狙击手，被称作“GOD·乌索普”，悬赏2亿贝里。司法岛事件中曾以“狙击王”的身份被悬赏3000万贝里。\r\n乌索普小时候是出名的吹牛大王，和村里的几个孩子组成“乌索普海贼团”，自称乌索普船长。发现克洛船长的阴谋后，立志要保护村里的人，和蒙奇·D·路飞并肩作战。梦想是要成为勇敢的海上战士。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "乌索普"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "撒谎布"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "骗人布"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ウソップ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Usopp"
+                },
+                {
+                    "k": "昵称",
+                    "v": "狙击王（そげキング，Sogeking）"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月1日"
+        },
+        {
+            "key": "血型",
+            "value": "S型"
+        },
+        {
+            "key": "身高",
+            "value": "174-176cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 1,
+    "stat": {
+        "comments": 13,
+        "collects": 50
+    },
+    "anime_ids": [
+        975,
+        90792
+    ]
+}

@@ -1,0 +1,154 @@
+{
+    "id": 350764,
+    "name": "鬼灭之刃 无限列车篇",
+    "image_path": "data/images/anime/350764.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "第1話は、煉獄杏寿郎が鬼殺隊本部を旅立ち無限列車へと向かう道中の任務を描いた完全新作エピソード。第2話～第7話は、無限列車での任務を、新作追加映像、新主題歌映像などと共に描きます。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 7,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2021-10-10",
+    "rating_rank": 1467,
+    "rating_score": 7.3,
+    "rating_total": 7732,
+    "main_character_ids": [
+        57305,
+        57306,
+        57307,
+        57308
+    ],
+    "main_characters": [
+        {
+            "id": 57305,
+            "name": "竈門炭治郎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bd/1e/57305_crt_9ZG90.jpg?r=1610926902",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/1e/57305_crt_9ZG90.jpg?r=1610926902",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/1e/57305_crt_9ZG90.jpg?r=1610926902",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bd/1e/57305_crt_9ZG90.jpg?r=1610926902"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7772,
+                    "name": "花江夏樹",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084"
+                    },
+                    "short_summary": "花江夏树是日本的男性声优，ACROSS ENTERTAINMENT所属。\r\n「花江」是艺名，「夏樹」为本名。本名姓氏为「武田」。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 57306,
+            "name": "竈門禰豆子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/29/f6/57306_crt_EmNmM.jpg?r=1610926959",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/f6/57306_crt_EmNmM.jpg?r=1610926959",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/f6/57306_crt_EmNmM.jpg?r=1610926959",
+                "grid": "https://lain.bgm.tv/pic/crt/g/29/f6/57306_crt_EmNmM.jpg?r=1610926959"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19339,
+                    "name": "鬼頭明里",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a1/78/19339_prsn_3Dg35.jpg?r=1694799715"
+                    },
+                    "short_summary": "鬼頭明里（きとう あかり）は、日本の女性声優である。ラクーンドッグ所属。\r\nあだ名は「あかりん」。\r\n\r\n10月16日生まれ、愛知県出身、血液型B型、153cm。プロ・フィット声優養成所を経て、現事務所に2015年4月から所属。\r\n趣味は絵を描くこと、歌うこと。特技は絵を描くこと、歌うこと、湯切り。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 57307,
+            "name": "我妻善逸",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f3/e4/57307_crt_6v4rS.jpg?r=1555512852",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/e4/57307_crt_6v4rS.jpg?r=1555512852",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/e4/57307_crt_6v4rS.jpg?r=1555512852",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f3/e4/57307_crt_6v4rS.jpg?r=1555512852"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4262,
+                    "name": "下野紘",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/62/4262_prsn_tbC5r.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/62/4262_prsn_tbC5r.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/62/4262_prsn_tbC5r.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/62/4262_prsn_tbC5r.jpg"
+                    },
+                    "short_summary": "下野 紘は、日本の男性声優。アイムエンタープライズ所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 57308,
+            "name": "嘴平伊之助",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3b/a4/57308_crt_aaiQJ.jpg?r=1610927054",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/a4/57308_crt_aaiQJ.jpg?r=1610927054",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/a4/57308_crt_aaiQJ.jpg?r=1610927054",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3b/a4/57308_crt_aaiQJ.jpg?r=1610927054"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5764,
+                    "name": "松岡禎丞",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/91/77/5764_prsn_njsm3.jpg?r=1447773082",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/77/5764_prsn_njsm3.jpg?r=1447773082",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/77/5764_prsn_njsm3.jpg?r=1447773082",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/91/77/5764_prsn_njsm3.jpg?r=1447773082"
+                    },
+                    "short_summary": "15歳の頃に友人の勧めで見た『新世紀エヴァンゲリオン』の渚カヲルと『テイルズ オブ エターニア』のリッド・ハーシェルの双方を演じた石田彰の演技の違いに驚愕し、声優の仕事の存在を知る。高校三年の秋まで自動車の整備士を志していたが、声優も気にするようになり、道内の声優学校を捜すが、「東京に出ないと厳しい」との助言を受け単身上京。その後、新聞奨学生の仕事をしながら、日本ナレーション演技研究所に通うようになる。2009年、22歳の頃、「今年がダメなら北海道に帰ろう」と思っていた矢先にオーディションの話が入り、これを機にアイムエンタープライズの正所属となった。\r\n\r\n2012年、第6回声優アワード新人男優賞受賞。\r\n\r\n\r\n尊敬する先輩は松風雅也。事務所の先輩でもある間島淳司とは親交が深い[2]。また事務所は違うが島﨑信長と親交がありブログでもちょくちょく語っている。\r\n\r\n女性が大の苦手。\r\n\r\n現場で頑張り過ぎて、腕や肩に痛みを感じたり、叫び過ぎて、鼻血を出したり、服の着方を間違えたりと、お茶目な部分がある。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

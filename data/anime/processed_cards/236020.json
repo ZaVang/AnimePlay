@@ -1,0 +1,120 @@
+{
+    "id": 236020,
+    "name": "来玩游戏吧",
+    "image_path": "data/images/anime/236020.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "生在日本长在日本、完全不会说英语的金发美少女·奥莉薇，性格认真、知性洋溢、完全不会说英语的短发眼镜娘·香纯，以及虽然性格开朗却无法成为现充的下双马尾少女·华子，三名初中女生创造出来的是“游戏研究会”！？超级可爱有趣、令人捧腹绝倒的JC女生喜剧现在开幕！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2018-07-08",
+    "rating_rank": 665,
+    "rating_score": 7.6,
+    "rating_total": 5493,
+    "main_character_ids": [
+        61850,
+        61851,
+        61852
+    ],
+    "main_characters": [
+        {
+            "id": 61850,
+            "name": "本田華子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3f/2a/61850_crt_4BRqR.jpg?r=1531115253",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/2a/61850_crt_4BRqR.jpg?r=1531115253",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/2a/61850_crt_4BRqR.jpg?r=1531115253",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3f/2a/61850_crt_4BRqR.jpg?r=1531115253"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19643,
+                    "name": "木野日菜",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a2/c8/19643_prsn_YYziU.jpg?r=1738932098",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/c8/19643_prsn_YYziU.jpg?r=1738932098",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/c8/19643_prsn_YYziU.jpg?r=1738932098",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a2/c8/19643_prsn_YYziU.jpg?r=1738932098"
+                    },
+                    "short_summary": "ドワンゴクリエイティブスクール出身。『サウザンドメモリーズ』の夢幻の魔怪盗リノでデビューする。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 61851,
+            "name": "オリヴィア",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/83/ad/61851_crt_WqwWT.jpg?r=1533534947",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/ad/61851_crt_WqwWT.jpg?r=1533534947",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/ad/61851_crt_WqwWT.jpg?r=1533534947",
+                "grid": "https://lain.bgm.tv/pic/crt/g/83/ad/61851_crt_WqwWT.jpg?r=1533534947"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 28045,
+                    "name": "長江里加",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/93/cb/28045_prsn_OqNoZ.jpg?r=1690867355",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/cb/28045_prsn_OqNoZ.jpg?r=1690867355",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/cb/28045_prsn_OqNoZ.jpg?r=1690867355",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/93/cb/28045_prsn_OqNoZ.jpg?r=1690867355"
+                    },
+                    "short_summary": "長江 里加（ながえ りか、9月28日 - ）は、日本の女性声優。埼玉県出身。青二プロダクションジュニア所属。\r\n\r\n幼少期からディズニー作品が好きで、自分の歌声がテレビから流れてきたらいいなと思い声優業に興味を持った。\r\n友達に「声優に向いているよ！」と言われ本格的に声優を目指し始めた。\r\nアミューズメントメディア総合学院に在籍していた。\r\n2015年に青二プロダクションジュニア所属となる。\r\n2017年『フレームアームズ・ガール』バーゼラルド役で初のメインキャラクターを演じた。\r\n\r\n専門学生時代からの同期に和多田美咲がいる。\r\n英検準2級を持っている。\r\n趣味は、お菓子作り、料理、ピアノ・ギター演奏、テレビ観賞である。ピアノは、5歳から習っており、音感やリズム感には自信があると自負しており、学生時代は吹奏楽部、軽音楽部（ボーカル担当）に所属していた。また、100円均一巡りも趣味にあげている。\r\n食べる事が好きで健康オタクである。特に、中華料理が好きであるがしょっぱい味は苦手だと語っている。また、虫と暗い所は嫌いである。\r\n特技は、中国語の発音、人の顔を覚えることである。\r\nテニス、卓球、バドミントンをやっていた。\r\n自分の性格は「無我夢中」「天真爛漫」であると語っている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 61852,
+            "name": "野村香純",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b8/76/61852_crt_qRYPQ.jpg?r=1531300426",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/76/61852_crt_qRYPQ.jpg?r=1531300426",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/76/61852_crt_qRYPQ.jpg?r=1531300426",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b8/76/61852_crt_qRYPQ.jpg?r=1531300426"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 27194,
+                    "name": "小原好美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844"
+                    },
+                    "short_summary": "日本女性配音员、演员。大泽事务所所属。\r\n\r\n国中时开始喜欢动画，并想要成为声优。高中毕业后进入Human Academy综合学园。2012年开始当了两年的演员，之后加入大泽事务所。\r\n\r\n2017年7月起3个月间在长寿电台节目《Radio Dottoai》就任第71代主持人。\r\n\r\n2017年4月至6月播出的《月色真美》中初次担任主演。同年7月播出《咕噜咕噜魔法阵 (2017年版)》中担演女主角而掀起话题，并与共同主演的石上静香主持同名动画的广播节目。同年11月10日Instagram开设。\r\n\r\n2019年于《Star☆Twinkle 光之美少女》中第一次出演光之美少女系列。同年4月，由文化放送“超！A&G+”制作的广播节目《小原好美のココロおきなく》开播，5月开设节目官方Twitter。2020年3月，该广播节目获得第6届Aniradi Award“BEST COMFORT RADIO 疗愈电台奖”。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

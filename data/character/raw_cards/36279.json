@@ -1,0 +1,72 @@
+{
+    "id": 36279,
+    "name": "木下ひなた",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/91/9c/36279_crt_4hlH8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/9c/36279_crt_4hlH8.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/9c/36279_crt_4hlH8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/91/9c/36279_crt_4hlH8.jpg"
+    },
+    "summary": "《偶像大师 MILLION LIVE!》中登场的偶像。Vocal属性。说话带方言。 \r\n\r\n为了成为偶像从农村来到了首都，像老奶奶一样的14岁少女。头顶上有一根一个劲点头的呆毛，十分有特色。 \r\n\r\n为人和蔼丶诚实丶朴素丶纯洁丶天真丶十分成熟。灵魂纯度媲美弥生，从不介意自己失去了什麽，无论对谁都保有一颗善良之心，犹如圣人。 \r\n\r\n详细的出生地未明确给出，但R卡「家人的助威」的背景中有画着北海道地图的纸板箱。问候语音中有「したっけプロデューサー」这样一句话，其中的「したっけ」是北海道方言，就是「拜拜」的意思。由此推断其为北海道人。 \r\n\r\n仍未能完全适应东京的氛围，为了不想迷失方向而寻求携手并进的好友。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "木下日向"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Kinoshita Hinata"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きのした ひなた"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月4日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "146cm"
+        },
+        {
+            "key": "体重",
+            "value": "39.5kg"
+        },
+        {
+            "key": "BWH",
+            "value": "74-55-78"
+        },
+        {
+            "key": "年龄",
+            "value": "14岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 4,
+    "stat": {
+        "comments": 14,
+        "collects": 11
+    },
+    "anime_ids": [
+        309807
+    ]
+}

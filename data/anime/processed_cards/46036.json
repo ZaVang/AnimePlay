@@ -1,0 +1,56 @@
+{
+    "id": 46036,
+    "name": "怪医黑杰克",
+    "image_path": "data/images/anime/46036.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "《怪医黑杰克》于1992年首次改编为OVA，共十集。1996年播映剧场版，2004年起改编为电视动画，2006年再度播映剧场版。也多次拍成电视剧。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 63,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2004-10-11",
+    "rating_rank": 1026,
+    "rating_score": 7.5,
+    "rating_total": 579,
+    "main_character_ids": [
+        20651
+    ],
+    "main_characters": [
+        {
+            "id": 20651,
+            "name": "ブラック・ジャック",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/56/46/20651_crt_77elT.jpg?r=1374267545",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/46/20651_crt_77elT.jpg?r=1374267545",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/46/20651_crt_77elT.jpg?r=1374267545",
+                "grid": "https://lain.bgm.tv/pic/crt/g/56/46/20651_crt_77elT.jpg?r=1374267545"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3832,
+                    "name": "大塚明夫",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/18/8c/3832_prsn_O1E5c.jpg?r=1545044333"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーター。マウスプロモーション所属。\r\n父は同じく俳優・声優の大塚周夫、元妻は声優の沢海陽子。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

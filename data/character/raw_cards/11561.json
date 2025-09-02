@@ -1,0 +1,73 @@
+{
+    "id": 11561,
+    "name": "ニノ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f6/18/11561_crt_GeYem.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/18/11561_crt_GeYem.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/18/11561_crt_GeYem.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f6/18/11561_crt_GeYem.jpg"
+    },
+    "summary": "【原文：】ニノ、ニノさん\r\n【罗马字：】Nino、Nino-san\r\n【台译：】小珊、接二连珊\r\n【华盟译：】妮诺、妮诺小姐（妮诺桑）\r\n住在荒川的神秘少女，像似非常可爱的电波族。自称金星人。把主角视为自己的恋人。名字的来历一般认为是穿的运动衫号码布“2-3”。平日带着男性语调，经常在都在荒川钓鱼。容易忘记事情，所以要主角陪自己在荒川居住，以免忘记他的脸。家是由瓦纸板搭建的小屋，但内里有一张格格不入的豪华天鹅绒床。只是睡的时候，会进去下层的抽屉。患有梦游症，经常为寻求舒适睡眠的地方而做出麻烦事情，之后其他居民更因此传授了的防身术。起初表情态度十分淡白，但与男主角交往后变得常常露出笑容。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小珊/妮诺"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "小珊"
+                },
+                {
+                    "v": "接二连珊"
+                },
+                {
+                    "v": "妮诺"
+                },
+                {
+                    "v": "妮诺桑、妮诺小姐"
+                },
+                {
+                    "v": "ニノ"
+                },
+                {
+                    "v": "ニノさん"
+                },
+                {
+                    "v": "Nino"
+                },
+                {
+                    "v": "Nino-san"
+                },
+                {
+                    "k": "昵称",
+                    "v": "2-3"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://baike.baidu.com/view/4200251.htm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 11,
+        "collects": 162
+    },
+    "anime_ids": [
+        8081,
+        2464
+    ]
+}

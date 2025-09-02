@@ -1,0 +1,185 @@
+{
+    "id": 2567,
+    "name": "学生会的一己之见",
+    "image_path": "data/images/anime/2567.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "在私立碧阳学园。学生会成员的选举，有一套特殊的制度。\r\n不举行一般的选举，只是单纯地用《人气投票》来选取学生会成员。\r\n因此，每年被选出的基本上是《可爱的女孩》。这是因为美男子会遭到男性学生的不满，而美少女对男女学生来说，都是喜欢的对象。\r\n可是，用人气和外表来确定这样重要的人选，这样合适吗？\r\n在发生了异议之后，妥协的结果是选取《优秀者》。在各年级学习成绩顶尖的学生，只要本人愿意，就有机会加入学生会。\r\n于是，有学生开始猛学，却没能得到进入学生会的机会……。\r\n但是，有一个男学生，坚持了自己的信念，终于打破了常规！\r\n杉崎鍵。他梦想着自己能进入《除了自己之外全是美少女的团体》，他以此为目标，开始猛学，于是终于在年末的考试中取得了第一名。\r\n他抵达的目标，是个性鲜明的、美少女云集的学生会。\r\nLOLI娘学生会会长・樱野真红。\r\n冰冷而理性的前辈・红叶知弦。\r\n少年风的傲娇・椎名深夏。\r\n可爱的梦幻妹妹・椎名真冬。\r\n最终，杉崎能过上理想的后宫生活么？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "后宫",
+        "TV",
+        "日本",
+        "小说改"
+    ],
+    "date": "2009-10-02",
+    "rating_rank": 1198,
+    "rating_score": 7.4,
+    "rating_total": 7349,
+    "main_character_ids": [
+        501,
+        502,
+        503,
+        504,
+        505
+    ],
+    "main_characters": [
+        {
+            "id": 501,
+            "name": "杉崎鍵",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/80/94/501_crt_4j44p.jpg?r=1613649438",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/94/501_crt_4j44p.jpg?r=1613649438",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/94/501_crt_4j44p.jpg?r=1613649438",
+                "grid": "https://lain.bgm.tv/pic/crt/g/80/94/501_crt_4j44p.jpg?r=1613649438"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4265,
+                    "name": "近藤隆",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4e/8e/4265_prsn_6DRwU.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/8e/4265_prsn_6DRwU.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/8e/4265_prsn_6DRwU.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4e/8e/4265_prsn_6DRwU.jpg"
+                    },
+                    "short_summary": "近藤 隆（こんどう たかし、1979年5月12日 - ）は、日本の男性声優、ナレーター、歌手である。紅屋25時、ビーボを経て、AMBERnote所属となった。愛知県岡崎市出身。\r\n\r\nアミューズメントメディア総合学院卒業。アニメ初主演である『BLACK CAT』のトレイン＝ハートネット役で知名度を上げる。それ以降、アニメへの出演が多い。\r\n\r\n2007年からは歌手活動もするようになり、音楽CDの発売が増えた。『家庭教師ヒットマンREBORN!』のキャラクター「雲雀恭弥VS六道骸」名義で発売したキャラクターソング兼、番組EDテーマ「Sakura addiction」（2種）がオリコンシングル週間ランキングでは2枚の合算集計ながら初登場7位、11月期月間ランキングでは11位と、男性声優によるキャラクターソングとしては異例のロングヒットを記録した。\r\n\r\nトレイン＝ハートネット役や雲雀恭弥役をはじめ、二枚目役やクールな役が多いが、『奏光のストレイン』のラルフ＝ウィーレックのような悪役も演じることがある。また、吹き替えの仕事でも多く活躍している。\r\n\r\n『BLACK CAT』での共演以来、福圓美里とは共演する機会が非常に多く、本人たちによれば、くされ縁化しているとのこと。『RADIO BLACK CAT』で共にパーソナリティをやっていたこともある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 502,
+            "name": "桜野くりむ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3d/77/1336_CY3yC.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/77/1336_CY3yC.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/77/1336_CY3yC.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3d/77/1336_CY3yC.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5203,
+                    "name": "本多真梨子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b4/c0/5203_prsn_K583j.jpg?r=1514214438",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/c0/5203_prsn_K583j.jpg?r=1514214438",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/c0/5203_prsn_K583j.jpg?r=1514214438",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b4/c0/5203_prsn_K583j.jpg?r=1514214438"
+                    },
+                    "short_summary": "本多 真梨子（ほんだ まりこ、1986年10月3日- ）は、日本の女性声優。アミュレート所属。神奈川県出身。\r\n\r\n以前はプロダクション・エースに所属していた。プロダクション・エース演技研究所出身。\r\n2013年5月10日付けでプロダクション・エースを離れ、フリーで活動。12月1日付けでアミュレートへ移籍した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 503,
+            "name": "紅葉知弦",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d9/74/503_crt_C0850.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/74/503_crt_C0850.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/74/503_crt_C0850.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d9/74/503_crt_C0850.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5158,
+                    "name": "斉藤佑圭",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a7/d9/5158_prsn_6Y68W.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/d9/5158_prsn_6Y68W.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/d9/5158_prsn_6Y68W.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a7/d9/5158_prsn_6Y68W.jpg"
+                    },
+                    "short_summary": "毕业于Amusement Media综合学院专科，毕业后开始声优活动。\r\n2008年，在《西洋古董洋果子店》中出演主妇角色，以声优身份出道。\r\n2009年，在《学生会的一己之见》中出演女主角之一的红叶知弦，并同时成为声优组合“碧阳学园学生会”的一员（本多真梨子、齐藤佑圭、富樫美铃、堀中优希），但由于与组合中的其他几名声优隶属不同的事务所，因此在“碧阳学园校内放送”中没有出演。\r\n2015年5月20日，在博客上发表自己已与声优草尾毅结婚。\r\n2018年9月2日，在博客上宣布已于夏天成为“母亲”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 504,
+            "name": "椎名深夏",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/05/31/1338_DdKBz.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/31/1338_DdKBz.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/31/1338_DdKBz.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/05/31/1338_DdKBz.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5182,
+                    "name": "富樫美鈴",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2d/90/5182_prsn_Cziny.jpg?r=1502113224",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/90/5182_prsn_Cziny.jpg?r=1502113224",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/90/5182_prsn_Cziny.jpg?r=1502113224",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2d/90/5182_prsn_Cziny.jpg?r=1502113224"
+                    },
+                    "short_summary": "日本女性配音演员、演员、歌手，出身于北海道，血型A型。原隶属于PRODUCTION ACE，目前已退出，现在为贤Production所属。\r\n\r\n2009年に『生徒会の一存』で声優としてデビューを果たす。デビュー作にていきなりメインヒロインに抜擢されての出演となった。Veilのヴォーカリストの1人「Veil ∞ Misuzu」としても活動している。\r\n2011年11月2日、テレビアニメ『マケン姫っ!』のOPテーマ「Fly Away」で、本人名義での歌手デビューを果たす。カップリング曲では作詞も担当している。また、声優ユニット「碧陽学園生徒会」の初代メンバーでもある。\r\n2012年、『うぽって!!』で共演した野水伊織、佐土原かおり、味里と共に声優ユニット「sweet ARMS」を結成。\r\n2013年1月11日にデビュー当時から所属していたプロダクション・エースを退所。フリーの期間を経て、同年8月よりスチール・ウッド・ガーデンに所属。\r\n2014年12月31日付けでスチール・ウッド・ガーデンを退所し、フリーを経て、2015年2月より賢プロダクションに所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 505,
+            "name": "椎名真冬",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d1/0e/1339_sjhGB.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d1/0e/1339_sjhGB.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d1/0e/1339_sjhGB.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d1/0e/1339_sjhGB.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5157,
+                    "name": "堀中優希",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/99/5d/5157_prsn_6n62d.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/5d/5157_prsn_6n62d.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/5d/5157_prsn_6n62d.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/99/5d/5157_prsn_6n62d.jpg"
+                    },
+                    "short_summary": "2008年秋頃に実施されたオーディションに合格し、2009年プロダクション・エース所属となる。10月に『生徒会の一存』にてヒロインの椎名真冬役で声優デビュー。同作品では声優ユニット「碧陽学園生徒会」を結成し、オープニングテーマとエンディングテーマを担当。\r\n2010年10月31日をもってプロダクション・エースを退所。フリーを経て2011年9月に賢プロダクションに所属、2016年3月31日で同事務所を離れフリーに戻り活動中。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

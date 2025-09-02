@@ -1,0 +1,53 @@
+{
+    "id": 90390,
+    "name": "航海王：奈美之章～领航员之泪与伙伴的羁绊〜",
+    "image_path": "data/images/anime/90390.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "该，24小时特别节目为电影版的《阿拉巴斯坦战记》、《乔巴身世之谜》以原著的著名篇章所重新绘制的版本接续制作。为“周六PREMIUM”时段播出的《ONE PIECE》电视特别篇第一弹。\r\n\r\n至于本作挑选的原作著名篇章为“阿龙领域篇（奈美篇）”重新绘制成这套特别篇，在剧情上与原作有一定区别。发售的BD/DVD光碟版将于2012年11月30日于日本地区发行。\r\n\r\n本作主题曲为“ウィーアー!（We Are!）”，同时也是电视动画版的第一首片头曲，只是本作特别篇由AAA演唱。\r\n\r\n奈美离开了路飞他们，把一整船的宝藏带回了故乡可可亚西村，于是路飞决定要去找她；来到小岛上才发现，奈美是统治这个小岛的鱼人海盗团阿龙海贼团的成员，撒谎布无意间认识了奈美的异姓姐姐莉莉，才开始知道奈美的坎坷身世。奈美从8年前开始，为了筹措1亿贝里，从阿龙手中买回这个可可亚西村，只好答应阿龙为她绘制海图，并且四处去偷海盗的财物。没想到就在快要筹到1亿贝里的这时候，跟阿龙串通的海军上尉老鼠，居然来把这笔钱抢走了；阿龙根本不想实现约定，他只是在利用奈美，要奈美一辈子替他画海图。路飞知道以后，决定要帮助这个伙伴。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2012-08-25",
+    "rating_rank": 1956,
+    "rating_score": 7.2,
+    "rating_total": 259,
+    "main_character_ids": [
+        2358,
+        2360
+    ],
+    "main_characters": [
+        {
+            "id": 2358,
+            "name": "モンキー・D・ルフィ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/12/c1/2358_crt_3ZoDo.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/c1/2358_crt_3ZoDo.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/c1/2358_crt_3ZoDo.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/12/c1/2358_crt_3ZoDo.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 2360,
+            "name": "ナミ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d8/70/2360_crt_8PGg0.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/70/2360_crt_8PGg0.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/70/2360_crt_8PGg0.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d8/70/2360_crt_8PGg0.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

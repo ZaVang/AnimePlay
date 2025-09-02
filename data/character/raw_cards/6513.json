@@ -1,0 +1,64 @@
+{
+    "id": 6513,
+    "name": "苗木野そら",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1c/a4/6513_crt_lZ5R8.jpg?r=1746041896",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/a4/6513_crt_lZ5R8.jpg?r=1746041896",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/a4/6513_crt_lZ5R8.jpg?r=1746041896",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1c/a4/6513_crt_lZ5R8.jpg?r=1746041896"
+    },
+    "summary": "主角，16岁的日本女孩。年幼时父母因车祸双亡，由苗木野夫妇收养、后来妹妹梦出生。只身赴美加入万花筒剧团，在大家不看好下，凭著不断地努力跟毅力克服难关得到认同，不仅与蕾拉合力完成梦幻绝技，也成功诠释心目中天使的技巧，超越蕾拉成长为真正的百变之星。其后又原创新生黄金火凤凰之技，终能实现自己与蕾拉的梦想。感情方面迟钝，肯对她的告白总是没成功。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "苗木野空"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "苗木野そら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Naegino Sora"
+                },
+                {
+                    "k": "\\",
+                    "v": "Наэгино Сора"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月23日"
+        },
+        {
+            "key": "身高",
+            "value": "160"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 23,
+    "stat": {
+        "comments": 45,
+        "collects": 116
+    },
+    "anime_ids": [
+        4163
+    ]
+}

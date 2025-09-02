@@ -1,0 +1,72 @@
+{
+    "id": 19616,
+    "name": "アルミン・アルレルト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4a/67/19616_crt_88rMm.jpg?r=1410320151",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4a/67/19616_crt_88rMm.jpg?r=1410320151",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4a/67/19616_crt_88rMm.jpg?r=1410320151",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4a/67/19616_crt_88rMm.jpg?r=1410320151"
+    },
+    "summary": "艾连与米卡莎的儿时玩伴。15岁（835年生）。缺乏体力，身体能力也不高，本人说过，光是能通过毕业战斗模拟测验就已经是奇迹了。\r\n以清晰的头脑与丰富的知识，在课堂上得到了顶尖的成绩。自己希望加入调查兵团。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿明·阿诺德"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "阿尔敏·亚鲁雷特"
+                },
+                {
+                    "v": "艾尔敏·阿莱尔特"
+                },
+                {
+                    "v": "爱尔敏·亚鲁雷特"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Armin Arlert"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "11月3日"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        },
+        {
+            "key": "体重",
+            "value": "55kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 3,
+    "stat": {
+        "comments": 73,
+        "collects": 158
+    },
+    "anime_ids": [
+        263750,
+        217300,
+        55770,
+        118335,
+        285666,
+        376739,
+        331752,
+        415779
+    ]
+}

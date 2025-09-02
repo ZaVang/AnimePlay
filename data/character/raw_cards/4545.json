@@ -1,0 +1,63 @@
+{
+    "id": 4545,
+    "name": "アムロ・レイ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ca/a2/4545_crt_mbMsJ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/a2/4545_crt_mbMsJ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/a2/4545_crt_mbMsJ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ca/a2/4545_crt_mbMsJ.jpg"
+    },
+    "summary": "U.C.0079年：15～16岁。出生在地球，幼年时随父亲移民到宇宙，在殖民卫星Side 7生活，喜欢研究机械。由于追随地球联邦战舰白色基地号而来的吉恩军入侵Side 7，被卷入了战斗，偶然之间搭乘了父亲制造的机动战士，成为地球联邦军的士兵。\r\n[mask]一年战争期间参加敖德萨战役、星一号战役和阿·堡瓦·库战役，并且在战争中得知了自己可能是“新人类”（Newtype、NT）这一事实。\r\nU.C.0087年：23岁。由于是被确认为NT而长期遭到地球军的软禁，在小林的帮助下逃脱后加入了支持奥古的卡拉巴，与一年战争时的宿敌——夏亚并肩作战。参加了地球上的乞力曼加罗战役、达喀尔战役和新几内亚基地进攻战役。由于某些心理障碍不能上宇宙。\r\nU.C.0092～0093年：参加地球联邦军独立部队“朗德贝尔”，担任机动战士队队长。参加了月神5号战役和阿克西斯战役，最终在阿克西斯落向地球的途中发挥了新人类不可思议的力量改变了其坠落轨道，之后与毕生的宿敌——夏亚一起失踪。[/mask]",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿姆罗·雷"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "李亚宝"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "李阿宝"
+                },
+                {
+                    "k": "日文名",
+                    "v": "アムロ・レイ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Amuro Ray"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "168→172"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 47,
+        "collects": 210
+    },
+    "anime_ids": [
+        50
+    ]
+}

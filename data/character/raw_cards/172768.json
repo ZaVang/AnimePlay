@@ -1,0 +1,64 @@
+{
+    "id": 172768,
+    "name": "星なな",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a7/1f/172768_crt_Kj1HH.jpg?r=1741836662",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/1f/172768_crt_Kj1HH.jpg?r=1741836662",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/1f/172768_crt_Kj1HH.jpg?r=1741836662",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a7/1f/172768_crt_Kj1HH.jpg?r=1741836662"
+    },
+    "summary": "パズル部を断念し、食文化研究部には途中から入部する。つつじとは高校の同級生。\r\n極度の人見知りだが、打ち解けると本来の明るい一面が見れる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "星奈奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "星 なな"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ほし なな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hoshi Nana"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月17日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "星座",
+            "value": "双子座"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 17,
+    "stat": {
+        "comments": 78,
+        "collects": 178
+    },
+    "anime_ids": [
+        531159
+    ]
+}

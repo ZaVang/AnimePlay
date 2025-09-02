@@ -1,0 +1,44 @@
+{
+    "id": 19588,
+    "name": "よしのぶ（吉田由伸）",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/48/1f/19588_crt_jYq5M.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/1f/19588_crt_jYq5M.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/1f/19588_crt_jYq5M.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/48/1f/19588_crt_jYq5M.jpg"
+    },
+    "summary": "ともおの親友。おっとりした性格で、ともおの無茶に巻き込まれることもしばしば。友達思いの優しい少年。特技は大食い。食べかけのものでもポケットにいれてしまう癖がある。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "由伸（吉田由伸）"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "よしだ よしのぶ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 2
+    },
+    "anime_ids": [
+        61118
+    ]
+}

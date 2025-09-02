@@ -1,0 +1,56 @@
+{
+    "id": 62967,
+    "name": "只野仁人",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/35/9f/62967_crt_6Ii1u.jpg?r=1675259636",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/35/9f/62967_crt_6Ii1u.jpg?r=1675259636",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/35/9f/62967_crt_6Ii1u.jpg?r=1675259636",
+        "grid": "https://lain.bgm.tv/pic/crt/g/35/9f/62967_crt_6Ii1u.jpg?r=1675259636"
+    },
+    "summary": "私立伊旦高校1年1班，坐在古见硝子的左手边，但因坐在古见硝子的隔壁而被同学们视为眼中钉。知道古见硝子有交流障碍症之后，自愿帮她交到100位朋友。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "只野仁人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "只野 仁人"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ただの ひとひと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tadano Hitohito"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "9月29日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 29,
+    "stat": {
+        "comments": 19,
+        "collects": 31
+    },
+    "anime_ids": [
+        363242
+    ]
+}

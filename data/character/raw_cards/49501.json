@@ -1,0 +1,35 @@
+{
+    "id": 49501,
+    "name": "ベルナール・オクタビアス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1a/66/49501_crt_jgY1q.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/66/49501_crt_jgY1q.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/66/49501_crt_jgY1q.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1a/66/49501_crt_jgY1q.jpg"
+    },
+    "summary": "敵国・セルペナーダの良家に育ち、予科士官学校を経て従軍することとなった17歳の少年。「黄泉帰り（よみがえり）」と呼ばれる奇異な現象によって龍の歯から出現し、野ノ子たちと出会う。通称・ベル。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 7
+    },
+    "anime_ids": [
+        191056
+    ]
+}

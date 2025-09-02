@@ -1,0 +1,247 @@
+{
+    "id": 148726,
+    "name": "灰与幻想的格林姆迦尔",
+    "image_path": "data/images/anime/148726.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "我们为什么要这么做……？\r\n\r\n哈尔希洛回过神来，才发现自己身处在黑暗当中，他完全不知道自己人在何处，也不明白这个地方是哪里。\r\n\r\n他的身边有一群和他一样失去记忆，只记得自己名字的男女；而离开了地底后，等待着众人的是一个「宛如游戏」的世界。\r\n\r\n为求生存，哈尔希洛与自己有着相同境遇的伙伴们组成队伍、学习技能，以义勇兵见习者的身份踏入了这个世界--「格林姆迦尔」。\r\n\r\n没有人知道未来会遇见什么……这一切，就是从灰烬之中所诞生的冒险谭。 ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "战斗",
+        "小说改"
+    ],
+    "date": "2016-01-10",
+    "rating_rank": 918,
+    "rating_score": 7.5,
+    "rating_total": 7497,
+    "main_character_ids": [
+        36178,
+        36179,
+        36180,
+        36181,
+        36182,
+        36183,
+        36184
+    ],
+    "main_characters": [
+        {
+            "id": 36178,
+            "name": "ハルヒロ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ca/47/36178_crt_kyUOA.jpg?r=1473063874",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/47/36178_crt_kyUOA.jpg?r=1473063874",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/47/36178_crt_kyUOA.jpg?r=1473063874",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ca/47/36178_crt_kyUOA.jpg?r=1473063874"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4982,
+                    "name": "細谷佳正",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/40/4e/4982_prsn_XOxkm.jpg"
+                    },
+                    "short_summary": "高中时代参加的社团是戏剧社和剑道社。后来只专注於戏剧社。\r\n专门学校时期和友人一起组成街头艺人，由于是新人加上良好的歌声和歌曲，被同一个事务所的前辈大须贺纯所称赞。与其搭档的友人是吉他老师。名字倾向本身的创作风格，用了‘不协和音’来命名。歌曲由两人共同创作。其中‘雪’这首曲子几乎是一个人完成的。而在当时的演出地点是在京王线府中站。\r\n在网球王子的试镜会中也参与了平古场凛的角色。\r\n以网球王子白石藏之介名义连续两个月发行角色专辑，为网球王子角色歌曲首例，2010年04月14日发行的首张专辑《Medicine or...?》在Oricon Style拿下首日第七名，首周第十名。2010年05月19日发行的第二张专辑《POISON》登上Oricon Style首日第三名，首周第六名。其中，《Medicine or...?》中的＜I.ng＞及《POISON》中的＜エピローグ＞皆由细谷本人亲自做词。\r\n\r\n兴趣是射击运动和吉他。\r\n喜欢的艺人以男性居多，像是藤原龙也和洼冢洋介。\r\n无关年龄，喜欢思想较为成熟的女性。\r\n讨厌的食物是牡蛎，连碰都不能碰。喜欢红酒。\r\n喜欢Ne-Yo的音乐。\r\n喜欢猫，会和流浪猫玩在一起，所以身上容易残留猫毛。有一次到电台参与‘电波系彼女’的录制，后来才知道小林ゆう对猫过敏，并且向她道歉。\r\n电台‘テニスの王子様 オン・ザ・レイディオ’中被认定了是欺负的一群，常被前辈声优欺负。\r\n身材较为纤细修长，非常容易出汗。\r\n经常有电波系的恐怖经验。\r\n被小林ゆう称赞其说话技巧很好。\r\n对电脑等电子装置很不熟悉的缘故，家中并没有电脑。工作上请附近的香烟店帮忙传真。\r\n对于星座很了解，不过否定自己的水瓶座B型是个“怪人”的见解。\r\n为了演出不良少年柔沢ジュウ的感觉，在自家的厕所里一边冲水一边大叫磨损喉咙。\r\n在过去的事件中，曾比喻自己“声音像没特色的茶泡饭”。\r\n\r\n2014年荣获第八届日本声优大赏“助演男优赏”。\r\n\r\n曾属Mausu Promotion。2014年在广播『天才軍師』2014年7月13日放送回中，宣布自2014年7月1日恢复为自由身。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 36179,
+            "name": "ユメ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/01/83/36179_crt_dkmJ7.jpg?r=1473064293",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/83/36179_crt_dkmJ7.jpg?r=1473064293",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/83/36179_crt_dkmJ7.jpg?r=1473064293",
+                "grid": "https://lain.bgm.tv/pic/crt/g/01/83/36179_crt_dkmJ7.jpg?r=1473064293"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7498,
+                    "name": "小松未可子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/47/be/7498_prsn_fq3rD.jpg?r=1740107067",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/be/7498_prsn_fq3rD.jpg?r=1740107067",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/be/7498_prsn_fq3rD.jpg?r=1740107067",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/47/be/7498_prsn_fq3rD.jpg?r=1740107067"
+                    },
+                    "short_summary": "小松未可子，1988年11月11日出生，日本女演员、声优、歌手，三重县桑名市出身。所属事务所Hirata Office，偶像团体いもうと前成员之一。\r\n\r\n个人爱好看电影，听歌曲，5岁起开始学习马林巴琴演奏。\r\n从小受《名侦探柯南》很大的影响，成为了仓木麻衣的粉丝，因为憧憬仓木麻衣而加入艺能界。一个人去唱卡拉ok时会命名为仓木祭。家中贴著几张仓木麻衣的海报。而在看了《樱兰高校男公关部》中斋藤彩夏的表演后，意识到自己希望从事声优工作。\r\n\r\n代表作品有《暴力宇宙海贼》的加藤茉莉香，《来自凪之明日》的潮留美海。\r\n\r\n2003年加入偶像团体いもうと，成为其成员之一。\r\n2007年9月，退出いもうと。\r\n2009年11月，移籍到Hirata Office，开始了演员的职业生涯。\r\n2010年4月，首次在TV动画《HEROMAN》中出演乔瑟夫·卡达·乔伊·琼斯一角，正式开始了声优的职业生涯。\r\n2012年4月25日，个人首支单曲《Black Holy》发售，作为歌手出道。\r\n2012年11月7日，个人第二支单曲《冷たい部屋、一人/夏至の果実》发售。\r\n2013年7月24日，第三张单曲《终わらないメロディーを歌いだしました。》发售。\r\n2013年12月25日，第四张单曲《虹の約束》发售。\r\n2014年2月22日，第五张单曲《Sail away》发售。\r\n\r\n2020年5月12日，宣布与同为声优的前野智昭结婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 36180,
+            "name": "シホル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/59/3c/36180_crt_XKI22.jpg?r=1473064407",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/3c/36180_crt_XKI22.jpg?r=1473064407",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/3c/36180_crt_XKI22.jpg?r=1473064407",
+                "grid": "https://lain.bgm.tv/pic/crt/g/59/3c/36180_crt_XKI22.jpg?r=1473064407"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13177,
+                    "name": "照井春佳",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/41/87/13177_prsn_Zomq0.jpg?r=1512661684",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/87/13177_prsn_Zomq0.jpg?r=1512661684",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/87/13177_prsn_Zomq0.jpg?r=1512661684",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/41/87/13177_prsn_Zomq0.jpg?r=1512661684"
+                    },
+                    "short_summary": "照井 春佳（てるい はるか、1987年3月7日 - ）は、日本の女性声優、ナレーター。青二プロダクション所属。岩手県出身。A&Gアカデミー卒業。血液型はA型。\r\n\r\n幼い頃観ていた『らんま1/2』での林原めぐみの演技に感銘を受け、小学4年生の時に声優になることを決意。その後中学時代に、とある劇団での舞台経験を経て、高校でも演劇部に所属するなど日頃から芝居と接する環境下にあったという。A&Gアカデミーで演技を学び、2009年より『智一・美樹のラジオビッグバン』約1年間アシスタントを務める。 デビュー当時は飲食店、アパレル、コールセンターのアルバイトをしながら生計を立てたという。\r\n\r\n愛称はぱるにゃす。ふわふわっとした声が特徴。\r\n趣味はカラオケ、散歩。\r\n姉がいる。彼女は『未確認で進行形』の紅緒を思わせるシスコン的な性格だが、紅緒から残念な部分を抜いたしっかりした姉だという。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 36181,
+            "name": "ランタ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bf/7f/36181_crt_MMEH0.jpg?r=1473064527",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/7f/36181_crt_MMEH0.jpg?r=1473064527",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/7f/36181_crt_MMEH0.jpg?r=1473064527",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bf/7f/36181_crt_MMEH0.jpg?r=1473064527"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3955,
+                    "name": "吉野裕行",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153"
+                    },
+                    "short_summary": "日本の男性声優、歌手、ナレーターである。らえら所属。千葉県出身。身長163cm、血液型はB型。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 36182,
+            "name": "メリイ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fa/d3/36182_crt_8eOfG.jpg?r=1473064058",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/d3/36182_crt_8eOfG.jpg?r=1473064058",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/d3/36182_crt_8eOfG.jpg?r=1473064058",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fa/d3/36182_crt_8eOfG.jpg?r=1473064058"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 11485,
+                    "name": "安済知佳",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e9/02/11485_prsn_63BEE.jpg?r=1688702458",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/02/11485_prsn_63BEE.jpg?r=1688702458",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/02/11485_prsn_63BEE.jpg?r=1688702458",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e9/02/11485_prsn_63BEE.jpg?r=1688702458"
+                    },
+                    "short_summary": "所属事务所为Avex Planning & Development。\r\n\r\n小学5年级时开始知道声优这个职业，中学生时进入了Avex Artist Academy。当初因为交通费的关系，15岁时独自一人从福井县到东京，并过着一个月一次从东京回到福井县高中读书的生活。\r\n\r\n勉強を始めてから4年目の2009年、テレビアニメ『あにゃまる探偵 キルミンずぅ』のメインキャラクター、御子神ナギサ役でデビュー。\r\n2014年、テレビアニメ『棺姫のチャイカ』のチャイカ・トラバント役で初主演。\r\n\r\n2020年8月1日，在Instagram上公布结婚的消息。\r\n\r\nYTB频道：\r\nhttps://www.youtube.com/channel/UCdWglOsvq7Q_3-XM5XMxaqQ",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 36183,
+            "name": "モグゾー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/da/4a/36183_crt_Dln3F.jpg?r=1473064660",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/4a/36183_crt_Dln3F.jpg?r=1473064660",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/4a/36183_crt_Dln3F.jpg?r=1473064660",
+                "grid": "https://lain.bgm.tv/pic/crt/g/da/4a/36183_crt_Dln3F.jpg?r=1473064660"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 20135,
+                    "name": "落合福嗣",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/f6/20135_prsn_CT455.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/f6/20135_prsn_CT455.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/f6/20135_prsn_CT455.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/f6/20135_prsn_CT455.jpg"
+                    },
+                    "short_summary": "落合 福嗣（おちあい ふくし、1987年8月20日 - ）は、日本の男性声優、タレント、ナレーター。\r\n愛知県名古屋市出身。落合博満・信子夫妻の長男。元プロレスラーのジャイアント落合は従兄。\r\n身長186cm。愛称は「フクシくん」。国士舘大学21世紀アジア学部卒業。アミューズメントメディア総合学院東京校声優タレント学科卒業。青二プロダクション（ジュニア）所属。\r\n\r\n父・博満が中日ドラゴンズの選手として在籍中に名古屋市で生まれる。国士舘中学時代、軟式野球チーム「世田谷ウイングス」の大型内野手として活躍するも、国士舘高校在学中に野球を断念。その後は父親の知名度を活かして各種メディアに出演している。得意教科は英語で、「私立中学校英語レシテーション（暗唱）大会」では優秀賞の受賞歴がある。2010年10月18日にSkypeで知り合った山口県出身の一般人女性と4ヶ月の交際の後結婚。2014年1月20日には長女が誕生した。\r\n2015年4月より青二プロダクションのジュニア所属（新人研修生で3年後に再びオーディションし合格すればプロダクションに正式所属となる）となった。母・信子は「周囲から認められるようレベルに達しないと大きなチャンスは巡って来ない」と厳しくもエールを送っている。\r\n2016年6月、自身のTwitterにて第2子誕生を公表。\r\n\r\n虚実混交したエピソードが「落合福嗣伝説」として流布されている。著書のタイトルもそれを意識している。福嗣本人によれば、現役プロ野球選手だった父・博満とふれあう機会が少なかった幼少期に、父のたまの休日に一緒に外出してもスポーツ紙の番記者やファンに追いかけられてしまうため、番記者やファンにいたずらを繰り返していたものが「“悪童”伝説」とされたもので、誇張されて流布されたものは少ないという。\r\n2004年に当時父・博満が監督を務め、リーグ優勝を果たした中日ドラゴンズの優勝祝賀会に登場し、母・信子に誘われてビールかけに参加したが当時17歳、国士舘高校野球部の部員であったことに加え、このシーンが全国にテレビ中継されていたため、後に高野連から親子ともども厳重注意を受けた（厳密にはビールかけについてではなく学生野球憲章で野球部員のプロ選手との写真撮影やテレビ出演などを禁じていたため）。\r\n2009年3月、KINYA、演歌歌手の広野ゆき、秋葉系アイドルのまいみんらとKINYA&ALphaというユニットを結成。CDアルバム「摩天楼ブルース」をリリース。\r\n2010年11月13日夜にインターネットの動画サイト「Ustream」のライブ中継で結婚したことを発表した。\r\nMMORPG『ファイナルファンタジーXIV 新生エオルゼア』の熱心なプレイヤーである。\r\n2015年6月20日のTBS系列で放送された『新・情報7days ニュースキャスター』でナレーションを行った際、顔出しを今後しばらくの間行わないことを明らかにしている。\r\n先述したように高校時代は野球部に在籍していたが、卒業して以来は一切バットを握っていなかった。しかし2015年に父博満と共に野球のトレーニングに打ち込んだとのこと。\r\n父親共々大の『機動戦士ガンダム』シリーズのファンとして知られる。自身が初めて見たガンダムシリーズのアニメは『機動戦士ガンダム 第08MS小隊』。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 36184,
+            "name": "マナト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/32/70/36184_crt_oGJTr.jpg?r=1473063954",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/70/36184_crt_oGJTr.jpg?r=1473063954",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/70/36184_crt_oGJTr.jpg?r=1473063954",
+                "grid": "https://lain.bgm.tv/pic/crt/g/32/70/36184_crt_oGJTr.jpg?r=1473063954"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7392,
+                    "name": "島﨑信長",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/65/0b/7392_prsn_85bDV.jpg"
+                    },
+                    "short_summary": "岛﨑信长（1988年12月6日－），日本男性配音演员。隶属于青二Production。出身于宫城县。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

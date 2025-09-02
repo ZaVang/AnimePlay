@@ -1,0 +1,56 @@
+{
+    "id": 9289,
+    "name": "篠原遊馬",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/53/97/9289_crt_jYkqI.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/97/9289_crt_jYkqI.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/97/9289_crt_jYkqI.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/53/97/9289_crt_jYkqI.jpg"
+    },
+    "summary": "特车二课第二小队队员，负责泉野明的指挥。父亲是开发机器人的筱原重工的社长。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "筱原游马"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "篠原遊馬"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shinohara Asuma"
+                },
+                {
+                    "k": "昵称",
+                    "v": "阿诗玛"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 23
+    },
+    "anime_ids": [
+        8484
+    ]
+}

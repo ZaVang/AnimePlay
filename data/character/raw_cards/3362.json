@@ -1,0 +1,66 @@
+{
+    "id": 3362,
+    "name": "千秋真一",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/39/cd/3362_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/cd/3362_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/cd/3362_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/39/cd/3362_crt_anidb.jpg"
+    },
+    "summary": "千秋真一是桃丘音乐大学钢琴系3年生，父亲是名钢琴家千秋雅之。3岁开始在维也纳学习音乐，因此能说流利的德语、英语和法语，擅长乐器是钢琴和小提琴。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "千秋真一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "千秋真一"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ちあき しんいち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Chiaki Shin`ichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1981-02-17"
+        },
+        {
+            "key": "身高",
+            "value": "181"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1981,
+    "birth_mon": 2,
+    "birth_day": 17,
+    "stat": {
+        "comments": 5,
+        "collects": 35
+    },
+    "anime_ids": [
+        443,
+        3478,
+        1966
+    ]
+}

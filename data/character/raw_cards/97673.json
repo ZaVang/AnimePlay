@@ -1,0 +1,60 @@
+{
+    "id": 97673,
+    "name": "藤堂葵",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/af/db/97673_crt_GwVe7.jpg?r=1702796190",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/db/97673_crt_GwVe7.jpg?r=1702796190",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/db/97673_crt_GwVe7.jpg?r=1702796190",
+        "grid": "https://lain.bgm.tv/pic/crt/g/af/db/97673_crt_GwVe7.jpg?r=1702796190"
+    },
+    "summary": "都立小手指高校一年。\r\n豪快なバッティングが持ち味の強肩強打の遊撃手。性格は直情的で、初球からフルスイングでいくなど力強いプレースタイルを誇る。派手な風貌だが真面目な努力家でストイック。\r\n\r\nポジション：遊撃手 投打：右投右打",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藤堂葵"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "とうどう あおい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Toudou Aoi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "8月31日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "181cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 31,
+    "stat": {
+        "comments": 12,
+        "collects": 25
+    },
+    "anime_ids": [
+        448478
+    ]
+}

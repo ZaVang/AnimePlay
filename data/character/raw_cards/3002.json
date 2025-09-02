@@ -1,0 +1,50 @@
+{
+    "id": 3002,
+    "name": "バトー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/da/95/3002_crt_DyxyG.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/95/3002_crt_DyxyG.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/95/3002_crt_DyxyG.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/da/95/3002_crt_DyxyG.jpg"
+    },
+    "summary": "公安9课成员，前陆上自卫队游骑兵部队成员。\r\n近乎通身义体化，比例仅次于草薙素子。\r\n佩戴于陆上自卫队时期特制的特殊义眼，带有传感器阵列、热传感器等。\r\n能熟练操控从小型到重型的各种武器。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "巴特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "バトー"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Batou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 54,
+        "collects": 211
+    },
+    "anime_ids": [
+        326,
+        324,
+        320
+    ]
+}

@@ -1,0 +1,121 @@
+{
+    "id": 1926,
+    "name": "圣枪修女",
+    "image_path": "data/images/anime/1926.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "她叫罗塞特修女，玛克达拉修道院的除魔师。\r\n公元1928年，美国纽约。依旧是夜晚被黑暗妆点的时候。第一次世界大战结束后不久，美国经济开始了前所未有的发展。但是过于急速的发展吸引了一些不速之客。人眼看不到的怪异，在黑暗中蠢蠢欲动。专司除魔的玛克达拉修道院的修女罗塞特，和她的助手少年克罗诺正是被称为“除魔师”的专家。\r\n本领高强的两人阻止依附在各种物品上侵入合众国的恶魔，展开了无数冒险。只不过偶尔在解决恶魔的同时也令周围遭受更大的损失。罗塞特一直在寻找小时候因恶魔引发的时间而失散的弟弟尤休亚。\r\n为此进入修道院，接受除魔师的训练。不过她合克罗诺之间尤一个重大的秘密：克罗诺的真实身份是和罗塞特定下“怀表契约”的恶魔。情况紧急时，罗赛特解开封印，让克罗诺发挥他强大的力量。但是，代价就是罗赛特必须消耗自己的“灵魂”，也就意味着罗赛特的寿命会缩短。人类和恶魔之间建立了绝对的信赖关系。不过，罗赛特的生命能够维持到和弟弟尤休亚相见么？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2003-11-24",
+    "rating_rank": 1134,
+    "rating_score": 7.4,
+    "rating_total": 1134,
+    "main_character_ids": [
+        830,
+        831,
+        832
+    ],
+    "main_characters": [
+        {
+            "id": 830,
+            "name": "ロゼット・クリストファ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9b/b5/830_crt_1FsP7.jpg?r=1500082027",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9b/b5/830_crt_1FsP7.jpg?r=1500082027",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9b/b5/830_crt_1FsP7.jpg?r=1500082027",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9b/b5/830_crt_1FsP7.jpg?r=1500082027"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3880,
+                    "name": "川上とも子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/da/05/3880_prsn_NX58v.jpg?r=1678190819",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/05/3880_prsn_NX58v.jpg?r=1678190819",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/05/3880_prsn_NX58v.jpg?r=1678190819",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/da/05/3880_prsn_NX58v.jpg?r=1678190819"
+                    },
+                    "short_summary": "川上伦子（艺名：川上 とも子，1970年4月25日－2011年6月9日）是一名日本女性声优。血型O型。东京都出身。隶属于Production baobab事务所。自2008年8月16日因病住院而暂停其声优事业，Keroro军曹的日向冬树和BLEACH的砕蜂这2个角色暂时由另一位声优桑岛法子代役。自手术过后于2008年10月开始进入长期休养的状态，2009后半年出院后复出，2011年6月9日过世，享年41岁。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 831,
+            "name": "クロノ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e0/ec/831_G8LIJ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/ec/831_G8LIJ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/ec/831_G8LIJ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e0/ec/831_G8LIJ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3927,
+                    "name": "石田彰",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/75/f0/3927_prsn_PPbE7.jpg?r=1632126400",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/f0/3927_prsn_PPbE7.jpg?r=1632126400",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/f0/3927_prsn_PPbE7.jpg?r=1632126400",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/75/f0/3927_prsn_PPbE7.jpg?r=1632126400"
+                    },
+                    "short_summary": "石田彰，是日本人气一线声优，近几年来在日本各地稳居声优榜前列，在男女老少间都很受欢迎。出道已经近二十年了，声音宜男宜女，是业界少见的可以配女性角色还不易被人察觉的男声优。2009年3月前效力于Mausu Promotion，4月开始是自由身，2012年3月开始他进入了新的事务所ピアレスガーベラ。主要作品：桂小太郎《银魂》、我爱罗《火影忍者》、阿斯兰·萨拉《高达SEED》、渚熏《EVA》、猪八戒《最游记》等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 832,
+            "name": "アズマリア・ヘンドリック",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/72/50/832_sinqi.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/50/832_sinqi.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/50/832_sinqi.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/72/50/832_sinqi.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4129,
+                    "name": "千葉紗子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/6a/4129_seiyu_anidb.jpg?r=1400776553",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/6a/4129_seiyu_anidb.jpg?r=1400776553",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/6a/4129_seiyu_anidb.jpg?r=1400776553",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/6a/4129_seiyu_anidb.jpg?r=1400776553"
+                    },
+                    "short_summary": "千葉 紗子（ちば さえこ、1977年8月26日 - ）は、日本の女性声優。東京都出身。血液型はA型。スペースクラフトに所属していた。\r\n\r\n2007年，8月27日、30歳を迎えると同時にブログで結婚を発表。翌年以降、アニメ『ストライクウィッチーズ』の坂本美緒役を降板するなど、声優としての活動を一時休業した時期もあったが、現在も声優として活動を続けている。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

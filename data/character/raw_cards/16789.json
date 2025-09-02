@@ -1,0 +1,101 @@
+{
+    "id": 16789,
+    "name": "黒咲芽亜",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/be/7b/16789_crt_SFvv8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/7b/16789_crt_SFvv8.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/7b/16789_crt_SFvv8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/be/7b/16789_crt_SFvv8.jpg"
+    },
+    "summary": "Darkness篇女主角之一。在漫画版‘Darkness’中登场。1年B班、娜娜与茉茉的同班同学。红头发绑辫子的少女。在第二集揭露拥有与小暗相同的变身能力以及这种变身能力是小暗的改良版（能够变成更多和不同的武器，例如光束兵器），称呼小暗为“姊姊”，据“主人”涅墨西斯所说是小暗唯一的亲人，计画抹杀梨斗，目的是为了让小暗恢复杀手的本性。\r\n名字的意义是取自 “Nightmare（噩梦）”（ナイトメア）的メア。\r\n超级喜欢甜，能把红茶用糖塞满后再不断地塞，以及会把甜食当正餐，美柑认为芽亚这点和小暗十分相似，是小暗和芽亚这对姐妹的特色。\r\n性格上没有像小暗一样讨厌“H（色情）”的事，反而很主动地对梨斗做“H”的事。\r\n官方女主角总选举获得“想要做朋友角色”第2名。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黑咲芽亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Mea Kurosaki"
+                },
+                {
+                    "k": "日文名",
+                    "v": "黒咲 芽亜"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くろさき めあ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kurosaki Meia"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月1日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "153cm"
+        },
+        {
+            "key": "体重",
+            "value": "44kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B75-W52-H77"
+        },
+        {
+            "key": "专长",
+            "value": "变身能力"
+        },
+        {
+            "key": "喜欢",
+            "value": "地球上的生物"
+        },
+        {
+            "key": "不擅长",
+            "value": "交朋友、团体行动"
+        },
+        {
+            "key": "收到会开心的物品",
+            "value": "食物模型的手机吊饰"
+        },
+        {
+            "key": "喜欢的游玩地点",
+            "value": "逛点心店"
+        },
+        {
+            "key": "喜欢的电影类型",
+            "value": "有点色色的电影"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 1,
+    "stat": {
+        "comments": 11,
+        "collects": 94
+    },
+    "anime_ids": [
+        37694,
+        120763
+    ]
+}

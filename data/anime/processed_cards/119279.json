@@ -1,0 +1,154 @@
+{
+    "id": 119279,
+    "name": "Go! Princess 光之美少女",
+    "image_path": "data/images/anime/119279.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "梦想是成为公主的春野遥，于新的学期正式成为寄宿学校贵族学园的初中一年级生，准备展开期待已久的新生活。就在此时，她目睹邪恶势力把人通往梦想的“门”紧密封闭，并染上浓厚的绝望。然后在机缘巧合之下，她集齐了希望王国彼方王子誓死守护的公主香水及装扮锁匙，变身成为光之美少女——花神天使，开始奋勇对抗敌人。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 50,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2015-02-01",
+    "rating_rank": 472,
+    "rating_score": 7.8,
+    "rating_total": 573,
+    "main_character_ids": [
+        28504,
+        28505,
+        28506,
+        37195
+    ],
+    "main_characters": [
+        {
+            "id": 28504,
+            "name": "春野はるか／キュアフローラ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2c/96/28504_crt_mNAKL.jpg?r=1693039193",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/96/28504_crt_mNAKL.jpg?r=1693039193",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/96/28504_crt_mNAKL.jpg?r=1693039193",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2c/96/28504_crt_mNAKL.jpg?r=1693039193"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4933,
+                    "name": "嶋村侑",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5c/4e/4933_prsn_yZzxs.jpg?r=1514984285",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/4e/4933_prsn_yZzxs.jpg?r=1514984285",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/4e/4933_prsn_yZzxs.jpg?r=1514984285",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5c/4e/4933_prsn_yZzxs.jpg?r=1514984285"
+                    },
+                    "short_summary": "2005年，在网络动画《圣光之翼》中出演女主角琉克丝·迫水，正式声优出道。2008年3月，退出原所属的Office薰，同年4月，移籍至贤Production。工作重心主要以电影电视剧吹替为主，2011年起，才逐渐在电视动画中出演主要角色。2013年，在电视动画《探险Driland-1000年的真宝-》出演雷蝶花绯铃，首次在电视动画中出演女主角。\r\n出演角色广泛，从少女到成年女性、少年甚至非人类的角色，涵盖了各种不同类型的角色。足球迷，喜欢的动物是刺猬。兴趣爱好是骑马和看电视剧，特技是游泳 。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28505,
+            "name": "海藤みなみ／キュアマーメイド",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a4/7f/28505_crt_JlpKz.jpg?r=1693039252",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/7f/28505_crt_JlpKz.jpg?r=1693039252",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/7f/28505_crt_JlpKz.jpg?r=1693039252",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a4/7f/28505_crt_JlpKz.jpg?r=1693039252"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3841,
+                    "name": "浅野真澄",
+                    "type": 1,
+                    "career": [
+                        "writer",
+                        "artist",
+                        "seiyu",
+                        "writer"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b6/6e/3841_prsn_wLZh5.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/6e/3841_prsn_wLZh5.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/6e/3841_prsn_wLZh5.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b6/6e/3841_prsn_wLZh5.jpg"
+                    },
+                    "short_summary": "2005年与堀江由衣等另外4名声优结成名为“Aice5”的声优团体。2008年4月30日，离开ARTSVISION，加入青二Production。\r\n\r\n秋田县能代市出身，10岁时搬到埼玉县三乡市。\r\n生长于非常严格的家庭，从小父母就对她看的漫画和电视节目有很大的限制，后来就算不被父母限制，也几乎不看电视。对动画和声优也不了解，参加声优选拔的理由是，选拔活动是合宿的形式，像是和朋友一起去旅行的感觉。父母在她小时候就开始叮咛“绝对不要走演戏这条路”。其实浅野父母在年轻时，以演戏为志愿，参加俳优养成所而成为相识的契机，进而结婚。因为父母自身体会过演戏这条路的艰辛，所以不希望女儿走这条路。浅野向父母表示想走声优这条路的时候，受到了强烈反对，不过现在父母也对她的工作给予支持。\r\n小学一年级到高中三年级，每年都获得读书心得奖。\r\n\r\n身高163cm，体重49kg。小学时就已经有160厘米。\r\n小时候头就很大，绰号是“脑袋”。长大之后，身体和头取得平衡，也仍然很介意这件事。浅野在广播里把这件事告诉大原沙耶香后，被大爆笑，之后大原告诉与浅野一起主持广播的斋藤桃子，被浅野欺负的时候就回骂“脑袋”来反击。\r\n被称赞胸部很大，皮肤很白皙。\r\n\r\n家里很穷，所以对于金钱很执著。\r\n因为付不出读大学的费用，所以从高中时就为了得到大学奖学金而努力，为了让奖学金申请书看起来很漂亮，高中时代都没有迟到、没有缺席、没有早退。大学时接受日本育英会的奖学金，从国学院大学毕业。目标在30岁以前还完奖学金，2007年8月的生日前还完了约日币500万元。\r\n理想的男性是有着知性与经济能力的人，不过也说了不能依靠对方的收入。\r\n第1回声优アワード ベストパーソナリティ赏得主。\r\n\r\n2018年2月12日，在个人推特上宣布与《旋风管家》作者畑健二郎结婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 28506,
+            "name": "天ノ川きらら／キュアトゥインクル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a9/56/28506_crt_hZjyd.jpg?r=1702802099",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/56/28506_crt_hZjyd.jpg?r=1702802099",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/56/28506_crt_hZjyd.jpg?r=1702802099",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a9/56/28506_crt_hZjyd.jpg?r=1702802099"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 12569,
+                    "name": "山村響",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/df/ce/12569_prsn_EVTkz.jpg?r=1687679505",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/ce/12569_prsn_EVTkz.jpg?r=1687679505",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/ce/12569_prsn_EVTkz.jpg?r=1687679505",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/df/ce/12569_prsn_EVTkz.jpg?r=1687679505"
+                    },
+                    "short_summary": "福岡県出身。血液型はO型。声優・キャラクターソング等の名義は山村響、アーティストとしてはhibiku（ひびく）名義で音楽活動をしていたが、2019年3月発売のミニアルバムからは音楽活動も山村響名義に統一する。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 37195,
+            "name": "紅城トワ／トワイライト／キュアスカーレット",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2a/67/37195_crt_1G6b8.jpg?r=1702804520",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/67/37195_crt_1G6b8.jpg?r=1702804520",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/67/37195_crt_1G6b8.jpg?r=1702804520",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2a/67/37195_crt_1G6b8.jpg?r=1702804520"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4244,
+                    "name": "沢城みゆき",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/b0/4244_prsn_Igahi.jpg?r=1687791526",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/b0/4244_prsn_Igahi.jpg?r=1687791526",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/b0/4244_prsn_Igahi.jpg?r=1687791526",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/b0/4244_prsn_Igahi.jpg?r=1687791526"
+                    },
+                    "short_summary": "日本长野县出身的女性声优。昵称みゆきち(Miyukichi)，隶属青二Production事务所。\r\n\r\n1998年，Broccoli公司弄出一系列旗下精品店2D角色的策划，即猫耳女仆装萌LOLI角色商品的推广，并且在全国范围开展了还算有声势的“Di Gi Charat”角色声优遴选活动。那时候，初中二年级也是选手中年龄第二小的泽城美雪获得了评委特别奖，和得到冠军的真田麻美（真田アサミ）一起于“Di Gi Charat”声优出道。\r\n2001年，在动画《顽皮小白貂》中首次为主演角色配音。\r\n\r\n未进入过声优养成所的她经过同是D.U.P.成员的冰上恭子介绍，来到以外国影视吹替为特色的事务所Mausu Promotion，之后演技学习上得到了更好的指导，也获得了不少锻炼经验，可以明显地感觉她的声优本领技巧历精更始。\r\n2007年秋，成为Theatre剧团子的准剧团成员，开始了舞台剧的表演生涯。\r\n2009年，获得第三届声优奖助演女声优赏。获“以率真的表演为多部作品添色不少的实力派声优”的评价。\r\n2010年，获得第四届声优奖主演女声优赏。2010年全年，泽城的总演出电视动画集数是219话，即大约在每一季度，便有超过50话的动画都能听见她的声音。\r\n2011年，获得第五届声优奖海外人气赏。2011年，FAMI通2011年度大赏，最佳女主角奖。唯一在游戏界和动画界取得该成就的女性声优。\r\n2013年，NewType动画大赏2013 女性声优赏。\r\n2015年，获得第九届声优奖助演女声优赏，同年8月1日从Mausu Promotion移籍至青二事务所。\r\n\r\n为人沉着低调，甚至到了被以为是情绪低落的地步，即使是大合照亦少见笑容，也极少见出现于其他声优网志之中。做事认真，由于资历老实力好做事又一板一眼，所以往往在录音室甚至要指导其他声优的演出，因此被田中理惠封为『座长』。\r\n和坂本真绫一样，即使在大学时还是有参与工作，而且其工作的密度完全无法想像直到2008年四月之前还是大学生。 并没有受过正统声优学校训练，而被前辈冰上恭子以至事务所的吹替系前辈作演技指导，可说是边做边学。\r\n2008年3月大学毕业。学习勤奋刻苦的她以优异的成绩毕业，之前她仅两年内就拿到了100以上的高学分，大学四年间，她声优活动与兼顾学业做到两不耽误。\r\n自心之图书馆起便经常与斋藤千和共演，由于出道年份来说泽城很早就出道，所以往往出现明明年纪比她大的声优却要叫她前辈的有趣事。\r\n由于和真田麻美一起出道，因此二人公私之间的感情非常要好，也是低调的泽城少数私交较深的同行。和名冢佳织、小清水亚美、三瓶由布子因一同出演《强袭魔女》而交好。和同出身于东京都的下野纮有着类似于青梅竹马一样的关系。此外，和水树奈奈关系也不错，后者曾邀请泽城到新宿KOMA剧场参演舞台剧，以庆祝泽城大学毕业，两人还曾一同去屋久岛两日一夜游。\r\n\r\n家庭成员是父母和一个弟弟，弟弟是演员和声优泽城千春，喜欢西方古典乐，会在泡澡时看书。其实名字是叫做泽城幸，其原因是父亲是中岛美雪的歌迷，所以就按照「みゆき」（MIYUKI）这个读音给她取名字意为「幸」，因此她的名字应该汉字写作「泽城幸」。有趣的是，在父亲给她取名的时候，日本人由于有时候用汉字可以标记的假名太多，所以经常混淆。她的母亲曾经反驳父亲道，叫「幸」不是应该用「さち（SACHI）」的读音吗？\r\n\r\n2014年6月2日，在自己的博客宣告了与圈外男性结婚的喜讯。\r\n2018年6月28日，因要产前休养、以及产后育儿相关事情，宣布从夏天开始暂停声优工作，在同年的11月5日产后复出。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

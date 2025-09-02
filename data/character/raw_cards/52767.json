@@ -1,0 +1,48 @@
+{
+    "id": 52767,
+    "name": "ちせ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/10/47/52767_crt_ddeN0.jpg?r=1490326830",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/10/47/52767_crt_ddeN0.jpg?r=1490326830",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/10/47/52767_crt_ddeN0.jpg?r=1490326830",
+        "grid": "https://lain.bgm.tv/pic/crt/g/10/47/52767_crt_ddeN0.jpg?r=1490326830"
+    },
+    "summary": "留学生としてやってきた日本人。小さいながらも剣術は達人級の腕前。西洋の文化にも慣れていないため、時折世間知らずな言動をしてしまうこともある。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "千世"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "千岁"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Chise"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 9,
+        "collects": 38
+    },
+    "anime_ids": [
+        211936
+    ]
+}

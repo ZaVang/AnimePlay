@@ -1,0 +1,52 @@
+{
+    "id": 50907,
+    "name": "イムホフ・カーシャ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ce/96/50907_crt_7d0ou.jpg?r=1486136826",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/96/50907_crt_7d0ou.jpg?r=1486136826",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/96/50907_crt_7d0ou.jpg?r=1486136826",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ce/96/50907_crt_7d0ou.jpg?r=1486136826"
+    },
+    "summary": "ロケット工学の天才で男勝りの女の子。幼い頃、劣悪な環境の植民星“Ａ９２星”で親と引き離され、軍の施設で育てられる。“第６文明人”の遺跡でバッフ・クランの襲撃に遭い、ソル・コンバーに乗り込む。イデオン合体時には主にミサイル部門を担当。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊姆霍夫‧卡夏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "イムホフ・カーシャ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "www.ideon.jp/chara/index.html"
+        },
+        {
+            "key": "年龄",
+            "value": "１７歳"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 4
+    },
+    "anime_ids": [
+        10375
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "id": 207573,
+    "name": "月色真美",
+    "image_path": "data/images/anime/207573.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "茜与小太郎。\r\n初三时第一次被分到同班，相识的两人。\r\n同班同学、社团伙伴、教师、父母……与周围的关联，自己的成长。\r\n在那个一边被变化与不安追着，一边慌慌张张地向前飞奔的季节之中，稚嫩而又令人眩目的青春期之恋。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "原创"
+    ],
+    "date": "2017-04-06",
+    "rating_rank": 318,
+    "rating_score": 7.9,
+    "rating_total": 14219,
+    "main_character_ids": [
+        51210,
+        51211
+    ],
+    "main_characters": [
+        {
+            "id": 51210,
+            "name": "安曇小太郎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/14/a3/51210_crt_0T38c.jpg?r=1492931423",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/14/a3/51210_crt_0T38c.jpg?r=1492931423",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/14/a3/51210_crt_0T38c.jpg?r=1492931423",
+                "grid": "https://lain.bgm.tv/pic/crt/g/14/a3/51210_crt_0T38c.jpg?r=1492931423"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19619,
+                    "name": "千葉翔也",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2d/3a/19619_prsn_1Q8Cb.jpg?r=1718790551",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/3a/19619_prsn_1Q8Cb.jpg?r=1718790551",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/3a/19619_prsn_1Q8Cb.jpg?r=1718790551",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2d/3a/19619_prsn_1Q8Cb.jpg?r=1718790551"
+                    },
+                    "short_summary": "千叶翔也（1995年8月29日－）是日本男性声优及演员（前儿童演员），TOY'S FACTORY所属。\r\n\r\n兴趣及专长是吉他、看音乐剧。是宝冢歌剧团的粉丝。\r\n高中时期曾经加入了轻音乐部。\r\n在广播节目“千叶翔也的浪漫千层派”里提到自己崇拜的声优前辈是逢坂良太。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 51211,
+            "name": "水野茜",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/09/99/51211_crt_265oI.jpg?r=1492931449",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/99/51211_crt_265oI.jpg?r=1492931449",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/99/51211_crt_265oI.jpg?r=1492931449",
+                "grid": "https://lain.bgm.tv/pic/crt/g/09/99/51211_crt_265oI.jpg?r=1492931449"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 27194,
+                    "name": "小原好美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844"
+                    },
+                    "short_summary": "日本女性配音员、演员。大泽事务所所属。\r\n\r\n国中时开始喜欢动画，并想要成为声优。高中毕业后进入Human Academy综合学园。2012年开始当了两年的演员，之后加入大泽事务所。\r\n\r\n2017年7月起3个月间在长寿电台节目《Radio Dottoai》就任第71代主持人。\r\n\r\n2017年4月至6月播出的《月色真美》中初次担任主演。同年7月播出《咕噜咕噜魔法阵 (2017年版)》中担演女主角而掀起话题，并与共同主演的石上静香主持同名动画的广播节目。同年11月10日Instagram开设。\r\n\r\n2019年于《Star☆Twinkle 光之美少女》中第一次出演光之美少女系列。同年4月，由文化放送“超！A&G+”制作的广播节目《小原好美のココロおきなく》开播，5月开设节目官方Twitter。2020年3月，该广播节目获得第6届Aniradi Award“BEST COMFORT RADIO 疗愈电台奖”。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 5155,
+    "name": "太刀川ミミ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2d/fe/5155_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/fe/5155_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/fe/5155_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2d/fe/5155_crt_anidb.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Tachikawa Mimi"
+                },
+                {
+                    "k": "日文名",
+                    "v": "太刀川ミミ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たちかわ みみ"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "简体中文名",
+            "value": "太刀川美美"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 36
+    },
+    "anime_ids": [
+        3128
+    ]
+}

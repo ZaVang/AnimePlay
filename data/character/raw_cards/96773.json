@@ -1,0 +1,47 @@
+{
+    "id": 96773,
+    "name": "ハヤト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/82/80/96773_crt_IZFRH.jpg?r=1622748565",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/80/96773_crt_IZFRH.jpg?r=1622748565",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/80/96773_crt_IZFRH.jpg?r=1622748565",
+        "grid": "https://lain.bgm.tv/pic/crt/g/82/80/96773_crt_IZFRH.jpg?r=1622748565"
+    },
+    "summary": "自分の戦闘力を上げることに飽くなき情熱を燃やす、\r\n単細胞＆脳筋の修行マニア韋駄天。\r\n師匠・リンによる厳しすぎるしごきから歴代韋駄天の中で唯一逃げださず、現在も修行の日々を送っている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "隼人"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "体重",
+            "value": "65kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://idaten-anime.com/character/"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 8,
+        "collects": 14
+    },
+    "anime_ids": [
+        312723
+    ]
+}

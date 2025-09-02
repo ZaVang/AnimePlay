@@ -1,0 +1,63 @@
+{
+    "id": 13083,
+    "name": "ヴァッシュ・ザ・スタンピード",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7d/57/13083_crt_3LB3L.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/57/13083_crt_3LB3L.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/57/13083_crt_3LB3L.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7d/57/13083_crt_3LB3L.jpg"
+    },
+    "summary": "是一位尝试推广“爱与和平”的轻快的神枪手。他是一位快活的人，并讨厌正经，但实际上他却是位十分正经及有深度的人。他经常展露笑容，而伍夫伍德称之为“虚伪的笑容”。在他笑容下是他痛苦与负重担的灵魂。 威席又称“人间台风”，并有着全星球最高赏金的通缉犯——600亿$$。每个他经过的城镇都会称之为“神般的举动”或“人间灾祸”。\r\n\r\n实际上，威席与其兄弟其实都是人类发现的特异人类，拥有破坏力惊人的技能。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "法修·史丹比特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "威席·史坦毕特"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "法修·斯坦比特"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Vash the Stampede"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ヴァッシュ・ザ・スタンピード"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ヴァッシュ・ザ・スタンピード"
+                },
+                {
+                    "k": "昵称",
+                    "v": "法修"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 16,
+        "collects": 55
+    },
+    "anime_ids": [
+        7159
+    ]
+}

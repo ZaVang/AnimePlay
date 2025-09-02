@@ -1,0 +1,52 @@
+{
+    "id": 6018,
+    "name": "ロラン・セアック",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8d/2a/6018_crt_anidb.jpg?r=1637596877",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/2a/6018_crt_anidb.jpg?r=1637596877",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/2a/6018_crt_anidb.jpg?r=1637596877",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8d/2a/6018_crt_anidb.jpg?r=1637596877"
+    },
+    "summary": "所属：ムーンレィス（地球に帰化、イングレッサ・ミリシャ）\r\n\r\n　17歳。ムーンレィスの少年。ターンエーのパイロットである。\r\n　正暦2328年11月2日生。月のメイザム地区出身で運河人と呼ばれる下層階級の生まれである。 中学卒業後、15歳のときにキース、フランとともに地球帰還の先遣調査員として6機のフラットの2番機で 地球の北アメリア大陸へ降下した。川で溺れたところをハイム家のキエルとシソエの姉妹に救われ、使用人として雇われる。月の女王であるディアナと、うりふたつのキエルの二人に憧れている。\r\n　戦いを好まない穏和な性格で、ムーンレィスの平和な帰還を望んでいた。アーク山での成人式の夜、ホワイトドールの石像の中から現れたターンエーに搭乗してしまい、グエンの策で、女性パイロット、ローラ・ローラとして望まぬ戦いに参加することになる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "罗兰·塞亚克"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Loran Cehack"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2328-11-02"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 2,
+    "stat": {
+        "comments": 14,
+        "collects": 78
+    },
+    "anime_ids": [
+        3553
+    ]
+}

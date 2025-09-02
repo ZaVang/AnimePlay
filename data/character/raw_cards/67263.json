@@ -1,0 +1,47 @@
+{
+    "id": 67263,
+    "name": "キーン・キッス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/60/b0/67263_crt_14XfW.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/b0/67263_crt_14XfW.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/b0/67263_crt_14XfW.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/60/b0/67263_crt_14XfW.jpg"
+    },
+    "summary": "世代侍奉基文家族的基斯家骑兵团领袖基布茨·基斯的女儿。继承了家族的传统，成为了骑士。从小跟随基文家长子尼·基文，对尼也一直抱有好感。\r\n\r\n　　基文家被灭后与尼等同伴一起搭乘捷拉娜号转战各地。但是父亲基布茨·基斯为了保全家族却投靠了杜雷库，父女两成为了敌人，不过基布茨在之后的战斗中被翔击破座机而死。故事前期主要驾驶翼型战机凤作为翔的支援登场，后期在得到奥拉增幅器技术后驾驶奥拉战士参加战斗。\r\n\r\n　　太平洋上的决战中被缪基驾驶的奥拉飞艇波布利近距离击中座机而死。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "奇恩·奇思"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "年龄",
+            "value": "15岁"
+        },
+        {
+            "key": "种族",
+            "value": "古门"
+        },
+        {
+            "key": "故乡",
+            "value": "拜斯顿·威尔 亚之国"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        10402
+    ]
+}

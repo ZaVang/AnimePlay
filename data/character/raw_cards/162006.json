@@ -1,0 +1,76 @@
+{
+    "id": 162006,
+    "name": "霧山アン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/11/19/162006_crt_zieRl.jpg?r=1745805765",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/11/19/162006_crt_zieRl.jpg?r=1745805765",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/11/19/162006_crt_zieRl.jpg?r=1745805765",
+        "grid": "https://lain.bgm.tv/pic/crt/g/11/19/162006_crt_zieRl.jpg?r=1745805765"
+    },
+    "summary": "高校２年生のシネフォト部員。写真フォルダはさつきだらけ！\r\n元々さつきが好きすぎるあまりに当時は興味もなかった写真部に入ったほどの、熱狂的さつきファン。\r\n明るい性格のムードメーカーで行動力があり、シネフォト部の活動の言い出しっぺになることも多い。\r\nひねり揚げに目がない。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雾山杏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "霧山 アン"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きりやま アン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kiriyama An"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月"
+        },
+        {
+            "key": "身高",
+            "value": "150cm"
+        },
+        {
+            "key": "好きな食べ物",
+            "value": "ひねり揚げ"
+        },
+        {
+            "key": "趣味",
+            "value": "さっちゃんを撮ること"
+        },
+        {
+            "key": "使用カメラ",
+            "value": "広角アクションカメラ"
+        },
+        {
+            "key": "行きたいところ",
+            "value": "さっちゃんのいるところ"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 93,
+        "collects": 173
+    },
+    "anime_ids": [
+        485936
+    ]
+}

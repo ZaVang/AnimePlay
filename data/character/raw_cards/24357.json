@@ -1,0 +1,53 @@
+{
+    "id": 24357,
+    "name": "科戸瀬イザナ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c5/b6/24357_crt_n2J0J.jpg?r=1397217144",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/b6/24357_crt_n2J0J.jpg?r=1397217144",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/b6/24357_crt_n2J0J.jpg?r=1397217144",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c5/b6/24357_crt_n2J0J.jpg?r=1397217144"
+    },
+    "summary": "衛人操縦士第628期訓練生。\r\n機体番号は「ＴＳ科－２９１」。\r\n性別は男でも女でもない。見た目も中性的。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "科户濑伊扎那"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "科戸瀬 イザナ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しなとせ いざな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shinatose Izana"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "中性"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 51,
+        "collects": 79
+    },
+    "anime_ids": [
+        105255,
+        77476
+    ]
+}

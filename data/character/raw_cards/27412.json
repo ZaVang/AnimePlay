@@ -1,0 +1,76 @@
+{
+    "id": 27412,
+    "name": "結城友奈",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8c/2c/27412_crt_NlJsH.jpg?r=1489882066",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/2c/27412_crt_NlJsH.jpg?r=1489882066",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/2c/27412_crt_NlJsH.jpg?r=1489882066",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8c/2c/27412_crt_NlJsH.jpg?r=1489882066"
+    },
+    "summary": "守护精灵：牛鬼\r\n每天开朗地度过中学生活的，本作的主人公。\r\n虽然个性轻率，但不论何时都能积极地向前看，\r\n关键时刻会变得很可靠，让大家心服口服。\r\n特技是从父母那里习得的武术。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "结城友奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "結城 友奈"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ゆうき ゆうな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yuuki Yuuna"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月21日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        },
+        {
+            "key": "学年",
+            "value": "中学２年生"
+        },
+        {
+            "key": "趣味",
+            "value": "押し花"
+        },
+        {
+            "key": "好きな食べ物",
+            "value": "うどん"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 21,
+    "stat": {
+        "comments": 45,
+        "collects": 191
+    },
+    "anime_ids": [
+        195937
+    ]
+}

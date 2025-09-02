@@ -1,0 +1,64 @@
+{
+    "id": 88133,
+    "name": "麻中蓬",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e2/8f/88133_crt_1einY.jpg?r=1618104837",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/8f/88133_crt_1einY.jpg?r=1618104837",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/8f/88133_crt_1einY.jpg?r=1618104837",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e2/8f/88133_crt_1einY.jpg?r=1618104837"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "麻中蓬"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あさなか よもぎ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Asanaka Yomogi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2004年11月22日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "51kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 2004,
+    "birth_mon": 11,
+    "birth_day": 22,
+    "stat": {
+        "comments": 80,
+        "collects": 220
+    },
+    "anime_ids": [
+        296367
+    ]
+}

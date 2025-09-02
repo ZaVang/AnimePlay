@@ -1,0 +1,69 @@
+{
+    "id": 123909,
+    "name": "市川京太郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/69/9b/123909_crt_UouUd.jpg?r=1675669301",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/9b/123909_crt_UouUd.jpg?r=1675669301",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/9b/123909_crt_UouUd.jpg?r=1675669301",
+        "grid": "https://lain.bgm.tv/pic/crt/g/69/9b/123909_crt_UouUd.jpg?r=1675669301"
+    },
+    "summary": "重度の中二病を抱えた、いわゆる陰キャ。『殺人大百科』や『解剖図』を愛読し、図書室で独り過ごすことが多い。クラスの人気者・山田杏奈に惹かれつつも、予測不能な言動に振り回されていく。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "市川京太郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "市川 京太郎"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いちかわ きょうたろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kyotaro Ichikawa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月26日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "156.5cm→158cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://bokuyaba-anime.com/character/detail/?chara=01"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 2,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 26,
+    "stat": {
+        "comments": 93,
+        "collects": 189
+    },
+    "anime_ids": [
+        441795,
+        394260
+    ]
+}

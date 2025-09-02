@@ -1,0 +1,52 @@
+{
+    "id": 14824,
+    "name": "福部里志",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f2/0e/14824_crt_CVxOo.jpg?r=1363889232",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/0e/14824_crt_CVxOo.jpg?r=1363889232",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/0e/14824_crt_CVxOo.jpg?r=1363889232",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f2/0e/14824_crt_CVxOo.jpg?r=1363889232"
+    },
+    "summary": "神山高中一年级D班的男生，既是古典部的也是手工部的，还隶属于总务委员会。身高低于男生平均水平，从远处看像女生，但是喜欢自行车旅行，在很大程度上锻炼了脚力。总是笑眯眯的。擅长杂学，自认为数据库。从现代史到推理小说无所不知，但正如他的口头禅“数据库不能得出结论”，自己从来不进行推理。总是带着荷包，里面有各种各样的东西。收到了伊原的求爱，但总是将话题巧妙岔开。二年级成为了总务委员会副委员长。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "福部里志"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ふくべ さとし"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fukube Satoshi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 33,
+        "collects": 229
+    },
+    "anime_ids": [
+        27364
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 34780,
+    "name": "二代目有楽亭助六",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e3/cc/34780_crt_23c1D.jpg?r=1488615398",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/cc/34780_crt_23c1D.jpg?r=1488615398",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/cc/34780_crt_23c1D.jpg?r=1488615398",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e3/cc/34780_crt_23c1D.jpg?r=1488615398"
+    },
+    "summary": "故人。小夏の父で8代目八雲とは同い年、同日入門の間柄。「稀代の天才」と称され人気を博したが、初代助六譲りの型破りな落語から、協会上層部や評論家からの評価は決して良いものではなかった。真打昇進後に芸の方向性の違いから師匠と対立し、最後は破門される。\r\n前座・二つ目時代は初太郎（はつたろう）。二つ目途中に2代目助六を襲名。通称「信さん」。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "二代目有乐亭助六"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "助六"
+                },
+                {
+                    "v": "信さん"
+                },
+                {
+                    "v": "はつたろう"
+                },
+                {
+                    "v": "初太郎"
+                },
+                {
+                    "k": "日文名",
+                    "v": "二代目有楽亭助六"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "にだいめ ゆうらくてい すけろく"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 22
+    },
+    "anime_ids": [
+        119394
+    ]
+}

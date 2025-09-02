@@ -1,0 +1,44 @@
+{
+    "id": 17238,
+    "name": "秋月真理亜",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/aa/b4/17238_crt_ihLN3.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/b4/17238_crt_ihLN3.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/b4/17238_crt_ihLN3.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/aa/b4/17238_crt_ihLN3.jpg"
+    },
+    "summary": "早季の幼馴染であり早季の親友。透き通るような白い肌と燃えるような赤い髪を持つ美少女。\r\n強気な性格で、大人しく気弱な守を従えているが、いざという時には献身的に彼を守ろうとする。\r\nそのいっぽう、怖い話は苦手という女の子らしい一面もある。\r\n過去に間接的ではあるが早季に命を救われたことがある。\r\nだが同時にこの時に助けなければのちの悲劇が起こらなかったとも早季の手記には書かれている。\r\n早季達とミノシロモドキから情報を引き出してしまったことを理由に処分対象となるが、大人たちの都合により保留される。\r\nしかし恋仲の守が正式に処分対象になった為に守と二人で町の外に出る。\r\n数年後に守との間に子供を授かるがバケネズミによって自身と守は共に殺された。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "秋月真理亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あきづき まりあ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 43,
+        "collects": 153
+    },
+    "anime_ids": [
+        37785
+    ]
+}

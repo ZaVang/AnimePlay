@@ -1,0 +1,452 @@
+{
+    "id": 3020,
+    "type": 2,
+    "name": "ポケットモンスター アドバンスジェネレーション",
+    "name_cn": "精灵宝可梦 超世代",
+    "summary": "　　《神奇宝贝超世代》（Pokémon Advanced Generation）共分为芳缘地区丰缘联盟及关都地区对战开拓区两篇，《神奇宝贝超世代》和前面的剧情不一样的就是，故事变成了两个主线，小智为了参加丰缘联盟，努力挑战道馆，丰缘联盟结束后，则改挑战故乡关都地区新设的对战开拓区，而小遥则以成为协调训练家努力，挑战各地的华丽大赛，取得优胜缎带勋章，好参加大型庆典，两人都为了达成各自的目标，与神奇宝贝一同奋斗。\r\n　　这个星球上生活着不可思议的生物神奇宝贝。现在开始讲述少年小智和神奇宝贝们的相遇、冒险和战斗经历的故事。\r\n　　立志成为神奇宝贝训练大师的小智胸中怀着新的理想，带者皮卡丘终于来到了芳缘地方在路上认识了刚成为神奇宝贝训练员的小遥和她弟弟小正以及在路上会和的小刚结伴为了追寻梦想和冒险开始方缘地方的旅程……",
+    "nsfw": false,
+    "locked": false,
+    "date": "2002-11-21",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/e4/a9/3020_hH3U4.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/e4/a9/3020_hH3U4.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/e4/a9/3020_hH3U4.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/e4/a9/3020_hH3U4.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/e4/a9/3020_hH3U4.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "精灵宝可梦 超世代"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "神奇宝贝AG",
+                    "k": null
+                },
+                {
+                    "v": "神奇宝贝超世代",
+                    "k": null
+                },
+                {
+                    "v": "宠物小精灵超世代",
+                    "k": null
+                },
+                {
+                    "v": "口袋妖怪超世代",
+                    "k": null
+                },
+                {
+                    "v": "Pokemon Advanced Generation Series",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "192"
+        },
+        {
+            "key": "放送开始",
+            "value": "2002年11月21日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期四"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.pokemon.co.jp/anime/index.html"
+        },
+        {
+            "key": "播放电视台",
+            "value": "东京电视台系列"
+        },
+        {
+            "key": "其他电视台",
+            "value": "翡翠台、中国电视公司"
+        },
+        {
+            "key": "播放结束",
+            "value": "2006年9月14日"
+        },
+        {
+            "key": "导演",
+            "value": "日高政光（第1-158话）、須藤典彦（第171-192话）"
+        },
+        {
+            "key": "音乐",
+            "value": "宮崎慎二"
+        },
+        {
+            "key": "原案",
+            "value": "田尻智、増田順一、杉森建"
+        },
+        {
+            "key": "监修",
+            "value": "总监：石原恒和 || 动画监修：小田部羊一"
+        },
+        {
+            "key": "制作助理",
+            "value": "吉川兆二"
+        },
+        {
+            "key": "企画",
+            "value": "岩田圭介（第1-134话）→深沢幹彦（第135-182话）、陣内弘之、久保雅一"
+        },
+        {
+            "key": "总导演",
+            "value": "湯山邦彦"
+        },
+        {
+            "key": "人物设定",
+            "value": "一石小百合"
+        },
+        {
+            "key": "总作画监督",
+            "value": "山田俊也"
+        },
+        {
+            "key": "美术监督",
+            "value": "金村勝義"
+        },
+        {
+            "key": "色彩设计",
+            "value": "吉野記通"
+        },
+        {
+            "key": "摄影监督",
+            "value": "白井久男"
+        },
+        {
+            "key": "剪辑",
+            "value": "辺見俊夫"
+        },
+        {
+            "key": "音响监督",
+            "value": "三間雅文"
+        },
+        {
+            "key": "制片人",
+            "value": "松山進、深澤幹彦（1-134话）→原田孝（第135-192话）、盛武源"
+        },
+        {
+            "key": "动画制片人",
+            "value": "神田修吉"
+        },
+        {
+            "key": "动画制作",
+            "value": "OLM TEAM OTA（第1话 - 第169话）→OLM TEAM IGUCHI（第170话 - 第191话）"
+        },
+        {
+            "key": "製作",
+            "value": "テレビ東京、小学館プロダクション"
+        },
+        {
+            "key": "脚本",
+            "value": "武上純希、米村正二、大橋志吉、冨岡淳広、藤田伸三、松井亜弥、十川誠志、園田英樹"
+        },
+        {
+            "key": "分镜",
+            "value": "湯山邦彦、木村竜二、誌村宏明、浅田裕二、新留俊哉、横田和、藤本義孝、秦義人、片貝慎、須藤典彦、吉田浩、辻初樹、篠幸裕、まつもとよしひさ、大山和弘、井硲清高、志村錠児、日高政光、川田武範、小山賢、入好さとる"
+        },
+        {
+            "key": "演出",
+            "value": "鈴木敏明、大町繁、秦義人、浅田裕二、須藤典彦、渡辺正彦、ながはまのりひこ、まつもとよしひさ、中村圭三、志村錠児、嵯峨敏、大山和弘、今野アキラ、小山賢、山田浩之、牧野行洋"
+        },
+        {
+            "key": "作画监督",
+            "value": "志村泉、武田政次、宍戸久美子、岩根雅明、酒井啓史、徳田夢之介、向山祐治、松原徳弘、広岡トシヒト、村上勉、上石忠太、杉本光司、田中薫、玉川明洋、山下恵、山本正文、船津弘美、飯飼一幸、유승희、新城真、市川雅也、平川亜喜雄"
+        },
+        {
+            "key": "人物原案",
+            "value": "藤原基史、岩下明日香、にしだあつこ、森本茂樹、富田愛美、斎藤むねお、吉田宏信、海野隆雄、吉川玲奈、太田敏、江尾可奈子、奥谷順"
+        }
+    ],
+    "volumes": 0,
+    "eps": 192,
+    "total_episodes": 192,
+    "rating": {
+        "rank": 995,
+        "total": 1413,
+        "count": {
+            "one": 0,
+            "two": 0,
+            "three": 2,
+            "four": 4,
+            "five": 20,
+            "six": 145,
+            "seven": 604,
+            "eight": 480,
+            "nine": 87,
+            "ten": 71
+        },
+        "score": 7.5
+    },
+    "collection": {
+        "wish": 178,
+        "collect": 2546,
+        "doing": 76,
+        "on_hold": 116,
+        "dropped": 43
+    },
+    "tags": [
+        {
+            "name": "pokemon",
+            "count": 293
+        },
+        {
+            "name": "童年",
+            "count": 267
+        },
+        {
+            "name": "游戏改",
+            "count": 212
+        },
+        {
+            "name": "TV",
+            "count": 184
+        },
+        {
+            "name": "2002",
+            "count": 183
+        },
+        {
+            "name": "宠物小精灵",
+            "count": 129
+        },
+        {
+            "name": "神奇宝贝",
+            "count": 108
+        },
+        {
+            "name": "口袋妖怪",
+            "count": 93
+        },
+        {
+            "name": "OLM",
+            "count": 73
+        },
+        {
+            "name": "美好滴回忆=",
+            "count": 70
+        },
+        {
+            "name": "热血",
+            "count": 53
+        },
+        {
+            "name": "AG",
+            "count": 45
+        },
+        {
+            "name": "超世代",
+            "count": 45
+        },
+        {
+            "name": "战斗",
+            "count": 40
+        },
+        {
+            "name": "宝可梦",
+            "count": 23
+        },
+        {
+            "name": "童年系",
+            "count": 21
+        },
+        {
+            "name": "冒险",
+            "count": 15
+        },
+        {
+            "name": "长篇",
+            "count": 15
+        },
+        {
+            "name": "奇幻",
+            "count": 14
+        },
+        {
+            "name": "日本",
+            "count": 14
+        },
+        {
+            "name": "精灵宝可梦",
+            "count": 13
+        },
+        {
+            "name": "2002年11月",
+            "count": 12
+        },
+        {
+            "name": "2002年",
+            "count": 11
+        },
+        {
+            "name": "童年回忆！",
+            "count": 11
+        },
+        {
+            "name": "日高政光",
+            "count": 8
+        },
+        {
+            "name": "汤山邦彦",
+            "count": 7
+        },
+        {
+            "name": "原创",
+            "count": 5
+        },
+        {
+            "name": "大谷育江",
+            "count": 5
+        },
+        {
+            "name": "经典",
+            "count": 4
+        },
+        {
+            "name": "TVB",
+            "count": 4
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "游戏改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        2010,
+        6154,
+        12815,
+        14541,
+        14549
+    ],
+    "main_characters": [
+        {
+            "id": 2010,
+            "name": "サトシのピカチュウ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/02/94/2010_crt_7rr33.jpg?r=1720977703",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/94/2010_crt_7rr33.jpg?r=1720977703",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/94/2010_crt_7rr33.jpg?r=1720977703",
+                "grid": "https://lain.bgm.tv/pic/crt/g/02/94/2010_crt_7rr33.jpg?r=1720977703"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3906,
+                    "name": "大谷育江",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/27/b6/3906_prsn_xa7NA.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/b6/3906_prsn_xa7NA.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/b6/3906_prsn_xa7NA.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/27/b6/3906_prsn_xa7NA.jpg"
+                    },
+                    "short_summary": "优点是好奇心旺盛。\r\n    兴趣是泡香草浴、读书。\r\n    特技是英语的发音和日本舞蹈。\r\n    喜欢的颜色是白色、粉红色、黑色。\r\n\r\n主要是为少年、少女配音，在一个作品里配一个以上的角色也是有的。在《深渊传奇》中就分别配了伊恩(诚实)、新库(愤怒)、芙萝利安(纯洁)三种个性不同的角色。\r\n\r\n被说是演技声音广泛的其中一名声优。\r\n\r\n由于皮卡丘的声音是全世界共通的，所以就算不知道“大谷育江”这个人名，只要一听到是“皮卡丘的声音”大家就知道了。\r\n\r\n不太记得起来人的名字。\r\n\r\n小学和国中的时候认为加入排球部可以长高吧，就入社了。\r\n\r\n第六届（2011年度）声优奖Kid's Family赏的得奖者（キッズ・ファミリー賞）。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6154,
+            "name": "サトシ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a5/b5/6154_crt_HWSVh.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/b5/6154_crt_HWSVh.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/b5/6154_crt_HWSVh.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a5/b5/6154_crt_HWSVh.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4205,
+                    "name": "松本梨香",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/22/78/4205_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/78/4205_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/78/4205_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/22/78/4205_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本女性配音员、演员、歌手。出身于神奈川县横滨市。\r\n株式会社Matsurica社长、代代木动画学院声优艺人科特别讲师。\r\n\r\n经历\r\n松本梨香的父亲是大众戏剧团团长，因此从小她自己也以舞台演员为目标。但是由于哥哥的去世和自己本身有疾病缠身而无法登上舞台公演，最后因为担心而打消了念头。\r\n后来，松本受到前辈名古屋章的推荐下，参加1988年电视动画《小松君》的角色试音，结果成为她的配音出道作。之后更在1991年电视动画《绝对无敌雷神王》第一次得到主演的机会，从此她多为充满朝气活力的小男孩献声，而最为人熟知的配音作品即是《精灵宝可梦》系列主角小智。除了日本动画外，她还有为珊卓·布拉克、朱丽叶特·刘易斯、茱儿·芭莉摩、帕特里夏·阿奎特等美国现役女星进行日语配音。\r\n歌手活动方面，2000年7月起，她与水木一郎、影山浩宣、坂本英三、远藤正明共5人结成“JAM Project”。同时是首位为“超人力霸王”唱片尾曲和“假面骑士”系列唱主题曲的女歌手。另外与市川吉之、古道圭一组成“TRiCYCLE”，担任过乐团主唱。单曲“目标是精灵宝可梦大师”顺着精灵宝可梦的热潮，创下了发售185万张的纪录，这也是松本唯一破百万销量的声优音乐作品。\r\n2008年4月7日，暂时从JAM Project的活动中退出。\r\n2015年1月5日，宣布离开所属20年的Sunmusic Production，成为自由身。同年4月1日加入amuleto。\r\n2016年12月1日，再度宣布已于11月30日离开amuleto，又成为自由身。\r\n2018年5月16日（父亲去世的这一天），自行就任社长，成立个人事务所“株式会社Matsurica”专门进行演艺事业管理。\r\n2019年3月1日，松本演唱的歌曲‘目标是精灵宝可梦大师’从平成动画歌曲大赏作品赏（1989年 - 1999年）中选出。\r\n同年10月21日，受邀任命担任“日本酷大使（クールジャパン·アンバサダー）”。\r\n\r\n个人生活\r\n兴趣有旅行（温泉巡礼）。特长是日本舞、画图、掷标枪。拿手的运动有排球、手球、游泳、滑雪（2级）。爱车是BMW318Ci 1995cc。\r\n此外同样是神奈川县出身的白鸟由里对她以“おやび～ん”作昵称，相反的松本泽对白鸟以“こびん”称呼。\r\n井上瑶去世后，松本继承了一些配音的角色（有《游☆戏☆王 怪兽之决斗》的獏良了、〈高达系列〉的Haro等）。另外，松本在她自己的出道作《小松君》曾经与井上共演（松本演松野六胞胎中的三男轻松；井上演长男、作品主角松野小松）。\r\n2018年12月22日开始在《声优ってなんだっけ》进行对谈（初回嘉宾：三矢雄二）。其意旨在对配音员有抱负的志愿者传达演技和表达的重要性。\r\n山寺宏一发出唐老鸭的声音是她所教出来的。\r\n在自身主演的动画《勇者传说达钢》的录音室现场有三支麦克风，其中有一支专门为松本调低了麦克风的音量。还有，她是发出声音时全身就会出声音的类型，只要一动就会发出说话的声音。\r\n\r\n与《精灵宝可梦（宝可梦）》有关的事\r\n自演出主角小智以来，让她印象深刻的剧情是无印时期的“再见巴大蝴”和钻石&珍珠时期的“终结的宿敌对战！小智对真司！”。\r\n当初，松本本来是参加小智的对手小茂的录音（小茂的声音由小林优子担当），但是试镜会结束后，工作人员建议她也来演小智的声音，就这样成为了自身长年担任的配音代表作。但是导演汤山邦彦说，松本是从一开始就被提名为小智声音的人选，外界似乎以为她先演小茂的角色所以才会入选而被误解。\r\n她的喉结是长年担任小智的声音而突起的。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 12815,
+            "name": "ハルカ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/02/f3/12815_crt_zXUlV.jpg?r=1402295247",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/f3/12815_crt_zXUlV.jpg?r=1402295247",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/f3/12815_crt_zXUlV.jpg?r=1402295247",
+                "grid": "https://lain.bgm.tv/pic/crt/g/02/f3/12815_crt_zXUlV.jpg?r=1402295247"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4319,
+                    "name": "KAORI.",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b3/f3/4319_prsn_WjX50.jpg?r=1411638945",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/f3/4319_prsn_WjX50.jpg?r=1411638945",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/f3/4319_prsn_WjX50.jpg?r=1411638945",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b3/f3/4319_prsn_WjX50.jpg?r=1411638945"
+                    },
+                    "short_summary": "KAORI.（かおり、1976年2月28日 - ）は、日本の女性声優、歌手。神奈川県横浜市出身。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 14541,
+            "name": "オーキド・グリーン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/17/e9/14541_crt_kUPKu.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/e9/14541_crt_kUPKu.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/e9/14541_crt_kUPKu.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/17/e9/14541_crt_kUPKu.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        },
+        {
+            "id": 14549,
+            "name": "マサト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ef/11/14549_crt_AtQLA.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ef/11/14549_crt_AtQLA.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ef/11/14549_crt_AtQLA.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ef/11/14549_crt_AtQLA.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

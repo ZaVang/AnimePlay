@@ -1,0 +1,56 @@
+{
+    "id": 26005,
+    "name": "渡亮太",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/36/89/26005_crt_58ipl.jpg?r=1420760441",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/89/26005_crt_58ipl.jpg?r=1420760441",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/89/26005_crt_58ipl.jpg?r=1420760441",
+        "grid": "https://lain.bgm.tv/pic/crt/g/36/89/26005_crt_58ipl.jpg?r=1420760441"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "渡亮太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "渡 亮太"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "わたり りょうた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "watari ryouta"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月14日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 14,
+    "stat": {
+        "comments": 7,
+        "collects": 29
+    },
+    "anime_ids": [
+        100444
+    ]
+}

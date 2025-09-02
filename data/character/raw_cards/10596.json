@@ -1,0 +1,77 @@
+{
+    "id": 10596,
+    "name": "遠坂凛",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/79/f0/10596_crt_J4h2w.jpg?r=1675677254",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/79/f0/10596_crt_J4h2w.jpg?r=1675677254",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/79/f0/10596_crt_J4h2w.jpg?r=1675677254",
+        "grid": "https://lain.bgm.tv/pic/crt/g/79/f0/10596_crt_J4h2w.jpg?r=1675677254"
+    },
+    "summary": "穂群原学園2年A組に通う女生徒で、魔術師。魔術の名門、遠坂家の後継者。\r\n学園内では非の打ち所のない優等生として男子生徒の人気も上々だが、イジワル大好きないじめっこ、という小悪魔的な本性を持つ。\r\n現代に生きる魔術師として聖杯戦争に参加。素人同然の主人公と衝突する。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "远坂凛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Rin Tohsaka"
+                },
+                {
+                    "k": "日文名",
+                    "v": "遠坂 凛"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "とおさか りん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tohsaka Rin"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月3日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "体重",
+            "value": "47kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B77/W57/H80"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 3,
+    "stat": {
+        "comments": 221,
+        "collects": 1576
+    },
+    "anime_ids": [
+        95225,
+        109386
+    ]
+}

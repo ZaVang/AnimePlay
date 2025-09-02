@@ -1,0 +1,50 @@
+{
+    "id": 125172,
+    "name": "結束バンド",
+    "type": 4,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/72/e5/125172_crt_lZs9i.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/e5/125172_crt_lZs9i.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/e5/125172_crt_lZs9i.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/72/e5/125172_crt_lZs9i.jpg"
+    },
+    "summary": "主角等人组成的乐队，在虹夏的姐姐星歌于下北泽经营的Live House“STARRY”进行活动。乐队名“纽带乐队”（結束バンド）在日文中意指束线带，取自日文“带”（バンド）与英文“乐队”（band）的谐音。成员的姓氏皆源自于亚细亚功夫世代的成员。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "纽带乐队"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "团结Band"
+                },
+                {
+                    "v": "团结乐队"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "结束乐队"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Kessoku Band"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 33
+    },
+    "anime_ids": [
+        328609
+    ]
+}

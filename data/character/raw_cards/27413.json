@@ -1,0 +1,76 @@
+{
+    "id": 27413,
+    "name": "犬吠埼風",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bd/15/27413_crt_6mmYe.jpg?r=1489104205",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/15/27413_crt_6mmYe.jpg?r=1489104205",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/15/27413_crt_6mmYe.jpg?r=1489104205",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bd/15/27413_crt_6mmYe.jpg?r=1489104205"
+    },
+    "summary": "守护精灵：犬神\r\n勇者部部长。\r\n性格直率，有着能把人们强力地吸引过来的魅力的大姐姐。\r\n很疼爱妹妹树，也经常拿她没办法。\r\n家务万能，做的料理也很美味。\r\n此外还是个吃货。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "犬吠埼风"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "犬吠埼風"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いぬぼうざき ふう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "INUBOZAKI FUU"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月1日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        },
+        {
+            "key": "年齢",
+            "value": "中学３年生"
+        },
+        {
+            "key": "趣味",
+            "value": "散歩"
+        },
+        {
+            "key": "好きな食べ物",
+            "value": "うどん"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 1,
+    "stat": {
+        "comments": 18,
+        "collects": 38
+    },
+    "anime_ids": [
+        195937
+    ]
+}

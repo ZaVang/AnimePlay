@@ -1,0 +1,68 @@
+{
+    "id": 101793,
+    "name": "王塚真唯",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3d/81/101793_crt_4LK8K.jpg?r=1685930996",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/81/101793_crt_4LK8K.jpg?r=1685930996",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/81/101793_crt_4LK8K.jpg?r=1685930996",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3d/81/101793_crt_4LK8K.jpg?r=1685930996"
+    },
+    "summary": "「どうやら私は、君のことを好きになってしまったようだ」\r\n\r\nグループのリーダーで、学校のスーパースター。\r\n容姿完璧で文武無敵、性格も良く、\r\n非の打ち所のない女性。\r\nその完全無欠な振舞いから付いた異名は\r\n『ミス・パーフェクト』『スパダリ』。\r\n好きな人には甘えたいし甘えられたいタイプで、 \r\n意外にポンコツなー面も。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "王冢真唯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "王塚 真唯"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おうづか まい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ōzuka Mai"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月31日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "167cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://dash.shueisha.co.jp/feature/watanare/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 31,
+    "stat": {
+        "comments": 51,
+        "collects": 48
+    },
+    "anime_ids": [
+        524707
+    ]
+}

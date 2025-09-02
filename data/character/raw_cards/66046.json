@@ -1,0 +1,60 @@
+{
+    "id": 66046,
+    "name": "チカ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/de/a5/66046_crt_YXqY4.jpg?r=1551279266",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/a5/66046_crt_YXqY4.jpg?r=1551279266",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/a5/66046_crt_YXqY4.jpg?r=1551279266",
+        "grid": "https://lain.bgm.tv/pic/crt/g/de/a5/66046_crt_YXqY4.jpg?r=1551279266"
+    },
+    "summary": "隊の最年少で、考えるより先に手が出る元気っ娘。\r\nセオリーを無視した動きで、相手を翻弄する戦い方が特徴。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "琪卡"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "エhlka"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Chika"
+                },
+                {
+                    "k": "昵称",
+                    "v": "電光石火のチカ（电光石火的琪卡）、チカ姐さん（琪卡姐姐）"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月25日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://kotobuki-anime.com/character/chika"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 25,
+    "stat": {
+        "comments": 4,
+        "collects": 18
+    },
+    "anime_ids": [
+        260467
+    ]
+}

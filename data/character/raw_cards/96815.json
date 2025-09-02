@@ -1,0 +1,84 @@
+{
+    "id": 96815,
+    "name": "イルル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ca/bf/96815_crt_OZBiv.jpg?r=1625831792",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/bf/96815_crt_OZBiv.jpg?r=1625831792",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/bf/96815_crt_OZBiv.jpg?r=1625831792",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ca/bf/96815_crt_OZBiv.jpg?r=1625831792"
+    },
+    "summary": "混沌勢の中でも過激派に属するドラゴン。トールよりも好戦的で、人間界を破壊することに躊躇いがない。しかし魔法の扱いが苦手で、体も一部がドラゴンのままだったり、不器用な面も。背が低く幼く見えるがトールと同世代であり、そういう意味でも終焉帝の娘であり、人間に与するトールに一際執念を抱いている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊露露"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "依露露"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "イルル"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Iruru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "130cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B130/W55/H70"
+        },
+        {
+            "key": "年龄",
+            "value": "16岁（人类）"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "所有肉"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "所有蔬菜"
+        },
+        {
+            "key": "兴趣",
+            "value": "与小孩游玩"
+        },
+        {
+            "key": "特技",
+            "value": "恶作剧魔法"
+        },
+        {
+            "key": "タケトと仕事をして気になること",
+            "value": "あんなに見てるけど触りたいのか？"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 68,
+        "collects": 79
+    },
+    "anime_ids": [
+        274234
+    ]
+}

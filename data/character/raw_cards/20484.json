@@ -1,0 +1,73 @@
+{
+    "id": 20484,
+    "name": "九条カレン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/90/1d/20484_crt_BrU2k.jpg?r=1429642378",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/1d/20484_crt_BrU2k.jpg?r=1429642378",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/1d/20484_crt_BrU2k.jpg?r=1429642378",
+        "grid": "https://lain.bgm.tv/pic/crt/g/90/1d/20484_crt_BrU2k.jpg?r=1429642378"
+    },
+    "summary": "艾莉丝的青梅竹马，追着艾莉丝来到日本留学，和忍与艾莉丝就读同一间学校，但班级不同。\r\n金发、灰色瞳孔的少女。制服的衬衫和其他4个人不同，并披着英国国旗花纹的外套。\r\n日本人父亲和英国人母亲生下的混血儿，从小住在英国，不太会说日文，加上她的身高高窕，比长的不高的艾莉丝更像是外国人。\r\n第一次登场是小时候和艾莉丝的合照，当时身高比艾莉丝还矮，忍到英国游学时没见过她。\r\n个性开朗好相处，很快就习惯了日本的学校生活。经常故意装傻而被阳子吐嘈。\r\n父亲替他取了“可怜”这个同时可用于英国与日本的名字。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "九条可怜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "九条 カレン"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くじょう カレン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kujou Karen"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月1日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "150cm"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁→17岁"
+        },
+        {
+            "key": "所属班级",
+            "value": "1年A组→2年A组→3年B组"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 1,
+    "stat": {
+        "comments": 63,
+        "collects": 290
+    },
+    "anime_ids": [
+        100405,
+        57978
+    ]
+}

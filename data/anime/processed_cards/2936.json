@@ -1,0 +1,138 @@
+{
+    "id": 2936,
+    "name": "苍穹之法芙娜",
+    "image_path": "data/images/anime/2936.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　主角真壁一骑所居住的龙宫岛有着平稳无波的每一天。和青梅竹马的皆城总士和远见真矢他们一同平静的生活，却突然间被破坏了。少年们视为理所当然的和平，实际上只是虚伪的幻影，他们在岛上的平静生活，不过是巧妙地制造出来的假象。袭来的敌人剥去了这层薄纱般的欺瞒之时，少年操纵着巨人，为了保护无可替代的朋友与家人，以及有着深切情感的岛屿。因守护宝物而忘却了心的龙，再次张开了它的獠牙。\r\n　　和平 家族 同伴\r\n　　少年少女们为了这些珍贵的事物，而不断的战斗着。不管什么时候，只要能在龙宫岛上生存下去，便是幸福，即使这是虚伪的乐园，假造的现实，也无法抹灭曾在这岛上生活的人们的珍贵回忆。他们努力着，直到龙宫岛能恢复成真正的乐园那一天。\r\n　　这是属于他们的既悲伤又欢喜的故事。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "机战",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2004-07-04",
+    "rating_rank": 977,
+    "rating_score": 7.5,
+    "rating_total": 1924,
+    "main_character_ids": [
+        1734,
+        1735,
+        1736
+    ],
+    "main_characters": [
+        {
+            "id": 1734,
+            "name": "真壁一騎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bf/83/1734_crt_s4a4X.jpg?r=1672722751",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/83/1734_crt_s4a4X.jpg?r=1672722751",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/83/1734_crt_s4a4X.jpg?r=1672722751",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bf/83/1734_crt_s4a4X.jpg?r=1672722751"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3866,
+                    "name": "豊口めぐみ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7e/e4/3866_prsn_DXf7T.jpg?r=1657030254",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/e4/3866_prsn_DXf7T.jpg?r=1657030254",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/e4/3866_prsn_DXf7T.jpg?r=1657030254",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7e/e4/3866_prsn_DXf7T.jpg?r=1657030254"
+                    },
+                    "short_summary": "豊口 めぐみ（とよぐち めぐみ、1978年1月2日 - ）は、日本の女性声優、ナレーター。81プロデュース所属。\r\n東京都町田市出身。愛称は「めぐぅ」など。\r\n\r\n町田市立町田第三中学校、東京都立忠生高等学校、日本工学院八王子専門学校音響芸術科卒業。\r\n小学校高学年の頃、知り合いに薦められたアニメ『ドラゴンボール』にハマり、同作品でヤムチャ役を演じていた古谷徹のファンになる。中学2年生の頃、古谷が出演していた『ドラゴンクエスト』を見て、登場人物の物真似をするうちに、声優という仕事に興味を持つようになった。\r\n中学卒業後は親に声優の専門学校入学を志願するが、高校に行くように言われる。高校卒業後、声優を目指して日本工学院の声優の学科での入学を目指していたが、家族に反対される。声優に少しでも関われる仕事に就きたいと考え、ラジオスタッフになるべく音響芸術科に変更する。ラジオ番組制作の実習では、主にパーソナリティを担当することで喋りの練習を積み、後のラジオトークに生かされた。\r\n同校在学時、文化放送のラジオ番組『広井王子のマルチ天国』の火星ガールオーディションに応募する。中学時代からこの当時まで、いくつものをオーディションを不合格になっていたため、今回で受験を最後にするつもりであった。だが、グランプリを獲得し、ラジオにレギュラー出演を果たした。その後、同ラジオで共演した千葉繁の紹介で81プロデュースへ所属することになった。同期に千葉千恵巳や柚木涼香がいる。\r\n2007年には『カンナさん大成功です!』の主人公カンナ役の吹き替えをこなすなど、仕事の幅を広げている。翌2008年、『演劇バトルロワイヤル「ガンまげ」』に、声優として唯一ゲスト出演し、初舞台を踏む。\r\n劇作家・演出家の野坂実と演劇ユニット『東京ジャンケン』を旗揚げ。2013年5月に初公演。その後も公演中。\r\n2016年9月30日、事務所公式サイトにおいて、数年前に結婚していたことと、現在妊娠し出産準備に入るためしばらく休業することを発表した。\r\n\r\n甲高い声と低い声、その2種類の声色を使い分けている。前者は『ポケットモンスターダイヤモンド&パール』のヒカリ、後者は『ブラックラグーン』のレヴィが代表的。\r\n『キングダム ハーツ バース バイ スリープ』のアクアでは「女性らしい強い女性」を演じ、「アクアの人気が出たのは豊口さんのおかげ」とディレクターに言われるほどの当たり役となった。スクウェア・エニックスのゲームでは他に『ファイナルファンタジーX-2』『キングダム ハーツII』でパインとしても出演している。",
+                    "locked": false
+                },
+                {
+                    "id": 4967,
+                    "name": "石井真",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/98/15/4967_prsn_lbn62.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/15/4967_prsn_lbn62.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/15/4967_prsn_lbn62.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/98/15/4967_prsn_lbn62.jpg"
+                    },
+                    "short_summary": "石井真 ＝ 西島古都夫 ＝ 西嶋古都夫 = ふかひれマーボ = NISHIJIMA KOTOO 名義変更無しフリー？",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 1735,
+            "name": "皆城総士",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/75/22/1735_crt_VnNn3.jpg?r=1672722818",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/22/1735_crt_VnNn3.jpg?r=1672722818",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/22/1735_crt_VnNn3.jpg?r=1672722818",
+                "grid": "https://lain.bgm.tv/pic/crt/g/75/22/1735_crt_VnNn3.jpg?r=1672722818"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4562,
+                    "name": "喜安浩平",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fd/32/4562_prsn_L0lFg.jpg?r=1718790295",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/32/4562_prsn_L0lFg.jpg?r=1718790295",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/32/4562_prsn_L0lFg.jpg?r=1718790295",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fd/32/4562_prsn_L0lFg.jpg?r=1718790295"
+                    },
+                    "short_summary": "【ナイロン100℃とブルドッキングヘッドロックの劇団員】\r\n演劇、映画、テレビの脚本。舞台演出。俳優。声優。芸術家志望。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 1736,
+            "name": "遠見真矢",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ea/b6/1736_crt_4ZiL8.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/b6/1736_crt_4ZiL8.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/b6/1736_crt_4ZiL8.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ea/b6/1736_crt_4ZiL8.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4446,
+                    "name": "松本まりか",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0f/8c/4446_prsn_NWq1w.jpg?r=1605532855",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/8c/4446_prsn_NWq1w.jpg?r=1605532855",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/8c/4446_prsn_NWq1w.jpg?r=1605532855",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0f/8c/4446_prsn_NWq1w.jpg?r=1605532855"
+                    },
+                    "short_summary": "日本の女優、ナレーター、声優。A-team所属。東京都中野区出身。東京都立杉並高等学校卒。\r\n\r\n2000年に放送された『o-daiba.com』で共演した、栗山千明、須藤温子、ベッキー、宮崎あおいと仲が良い。誕生日には各々が互いのお祝いをしに行くほどである。宮崎あおいが結婚するにあたっても、仕事で都合がつかなかった栗山千明を除いて、他の三人が集まり、結婚を事前に打ち明けるほどの仲である。\r\n    2001年から2年間、ミニストップのキャラクター「ミニストップちゃん」として、妻夫木聡と共演した。\r\n    『FINAL FANTASY X』のリュックの声優としても知られる。また、DVDのインタビューにて「リュックと容姿がそっくりだと言われる」と答えている。\r\n    2005年11月12日、『A&G 超RADIO SHOW〜アニスパ!〜』内にて「アニスパ公認悪女クィーン」に輝く。\r\n    2010年6月から2011年2月までイギリスに留学した。\r\n    元イトーカンパニー所属。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

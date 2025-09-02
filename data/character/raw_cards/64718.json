@@ -1,0 +1,60 @@
+{
+    "id": 64718,
+    "name": "西條クロディーヌ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/56/52/64718_crt_PN11l.jpg?r=1535709608",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/52/64718_crt_PN11l.jpg?r=1535709608",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/52/64718_crt_PN11l.jpg?r=1535709608",
+        "grid": "https://lain.bgm.tv/pic/crt/g/56/52/64718_crt_PN11l.jpg?r=1535709608"
+    },
+    "summary": "聖翔音楽学園　99期　俳優育成科　出席番号11番\r\n日本人の父とフランス人の母を持つハーフ。豊かな才能を持ち、子役として何度も舞台に出演してきた舞台少女。だが入学して真矢という強烈な輝きを放つ存在と初めて出会い、以来ずっと彼女をライバル視している。\r\n夢は「天堂真矢を超え、私が一番のスタァになる！」",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "西条克洛迪娜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "西條 クロディーヌ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さいじょう クロディーヌ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Claudine Saijo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8-1"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://revuestarlight.bushimo.jp/character/claudine/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 1,
+    "stat": {
+        "comments": 20,
+        "collects": 128
+    },
+    "anime_ids": [
+        214265
+    ]
+}

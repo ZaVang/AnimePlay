@@ -1,0 +1,74 @@
+{
+    "id": 36289,
+    "name": "エミリー スチュアート",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/18/d0/36289_crt_66k9p.jpg?r=1560670417",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/d0/36289_crt_66k9p.jpg?r=1560670417",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/d0/36289_crt_66k9p.jpg?r=1560670417",
+        "grid": "https://lain.bgm.tv/pic/crt/g/18/d0/36289_crt_66k9p.jpg?r=1560670417"
+    },
+    "summary": "偶像大师百万LIVE登场的偶像。Dance属性。 \r\n\r\n一个充满活力欢乐，有着一头金发，一举一动都很端庄典雅的英国女孩。 \r\n\r\n自年幼时起就接受了父母的日本舞蹈教育，从而变得十分热爱日本，并梦想着成为一名大和抚子。 \r\n\r\n但她对于大和抚子的标准似乎非常的奇怪。比方说她以为偶像就是大和抚子，另外完全不使用一点外来语，全部改为使用和语词汇。因此说话特别古怪，时常会说出与她年龄不符极其复杂的日语单词。 \r\n\r\n她称制作人为“仕掛け人様”（当家的），在接受帮助会讲“助太刀玉房”，签名称为“署名”。 \r\n\r\n但情绪高涨的时候会不知不觉的从口中蹦出像“WOW！”、“EXCELLENT！”之类的英语，本人会为此而感到害羞。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾米莉·司徒亚特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "艾蜜莉"
+                },
+                {
+                    "v": "エミリー・スチュアート"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Emily Stewart"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月8日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "体重",
+            "value": "41kg"
+        },
+        {
+            "key": "BWH",
+            "value": "74-54-76"
+        },
+        {
+            "key": "年龄",
+            "value": "13岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 8,
+    "stat": {
+        "comments": 20,
+        "collects": 22
+    },
+    "anime_ids": [
+        309807
+    ]
+}

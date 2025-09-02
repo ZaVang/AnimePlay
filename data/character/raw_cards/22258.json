@@ -1,0 +1,72 @@
+{
+    "id": 22258,
+    "name": "田中心春",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d3/9d/22258_crt_kkJAB.jpg?r=1430547610",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/9d/22258_crt_kkJAB.jpg?r=1430547610",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/9d/22258_crt_kkJAB.jpg?r=1430547610",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d3/9d/22258_crt_kkJAB.jpg?r=1430547610"
+    },
+    "summary": "桃成高校1年生，探索部部员。\r\n新入部员，一开始还有些主人公的特质，但渐渐还是沦落为了一般部员。\r\n设定上是奶奶养大的孩子。\r\n非常喜欢漫画和游戏。\r\n拥有让一切搞笑的桥段（主要是谐音笑话）瞬间冷场的能力。\r\n有时会穿着破旧的内裤。\r\n偶尔会肚子叫，是总受。\r\n中学时曾经做过跟踪狂。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "田中心春"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "こはるん"
+                },
+                {
+                    "v": "心春儿"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "动词大词田中"
+                },
+                {
+                    "k": "英文名",
+                    "v": "小丑儿"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たなか こはる"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ドンチキ田中"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "印象色",
+            "value": "#feacda"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 22
+    },
+    "anime_ids": [
+        91987,
+        112838,
+        80442
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "id": 6108,
+    "name": "明神弥彦",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8c/1f/6108_crt_caMJM.jpg?r=1724609585",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/1f/6108_crt_caMJM.jpg?r=1724609585",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/1f/6108_crt_caMJM.jpg?r=1724609585",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8c/1f/6108_crt_caMJM.jpg?r=1724609585"
+    },
+    "summary": "東京府士族出身の少年。両親を亡くして天涯孤独の身となり、ごろつきに拾われスリとして働かされていたが、剣心と出会うことで誇りを取り戻す。剣士として強くなるために神谷道場の門下生となる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "明神弥彦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "明神 弥彦"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みょうじん やひこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Myoujin Yahiko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1868年11月26日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "128cm"
+        },
+        {
+            "key": "体重",
+            "value": "23kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 26,
+    "stat": {
+        "comments": 3,
+        "collects": 6
+    },
+    "anime_ids": [
+        2712
+    ]
+}

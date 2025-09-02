@@ -1,0 +1,64 @@
+{
+    "id": 10456,
+    "name": "櫛枝実乃梨",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/72/86/10456_crt_kJ033.jpg?r=1735053809",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/86/10456_crt_kJ033.jpg?r=1735053809",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/86/10456_crt_kJ033.jpg?r=1735053809",
+        "grid": "https://lain.bgm.tv/pic/crt/g/72/86/10456_crt_kJ033.jpg?r=1735053809"
+    },
+    "summary": "2年C班。大河的好友。昵称“小实”（みのりん）。女子垒球社的社长。性格天然且有自己的一套想法与作法。说话语调常常有变化。打工很多，食量极大。讨厌发酵食品。非常关心大河的生活，几度以为龙儿与大河正在交往。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "栉枝实乃梨"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Minori Kushieda"
+                },
+                {
+                    "k": "日文名",
+                    "v": "櫛枝 実乃梨"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くしえだ みのり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kushieda Minori"
+                },
+                {
+                    "k": "昵称",
+                    "v": "みのり"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia.com"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 45,
+        "collects": 342
+    },
+    "anime_ids": [
+        909
+    ]
+}

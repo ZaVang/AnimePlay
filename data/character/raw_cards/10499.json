@@ -1,0 +1,70 @@
+{
+    "id": 10499,
+    "name": "高木秋人",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/48/2a/10499_crt_qgh55.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/2a/10499_crt_qgh55.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/2a/10499_crt_qgh55.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/48/2a/10499_crt_qgh55.jpg"
+    },
+    "summary": "真城最高的同班同学，班上学习成绩最好的学生，有着不错的文笔，极佳的创作才华。因看见最高在笔记本上的涂鸦很有绘画天分，邀请其一起创作漫画。分析能力很强，搜集情报能力一流，梦想成为漫画剧作家。与最高以“亚城木梦叶”为笔名发表作品，担任原作。目前已与见吉结婚。和最高的第一部作品同人画集(20张)《金钱与智慧》取得了15岁天才漫画家的称号!",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高木秋人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たかぎ あきと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takagi Akito"
+                },
+                {
+                    "k": "昵称",
+                    "v": "「囚人（シュージン），Shūjin」（最高专用），或者「shoot（シュート），Shūto」（其他人专用）"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1994年1月25日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        },
+        {
+            "key": "体重",
+            "value": "66kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1994,
+    "birth_mon": 1,
+    "birth_day": 25,
+    "stat": {
+        "comments": 16,
+        "collects": 96
+    },
+    "anime_ids": [
+        33352,
+        22588,
+        3428
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "id": 112477,
+    "name": "明浦路司",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4c/5e/112477_crt_rzbY1.jpg?r=1735227493",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/5e/112477_crt_rzbY1.jpg?r=1735227493",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/5e/112477_crt_rzbY1.jpg?r=1735227493",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4c/5e/112477_crt_rzbY1.jpg?r=1735227493"
+    },
+    "summary": "26岁。虽曾以参加冰上表演赛为目标，但在遇到祈后决心转行成为教练。有全国赛的冰舞出场经验。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "明浦路司"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "明浦路 司"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あけうらじ つかさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Akeuraji Tsukasa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "9月4日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "186cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://medalist-pr.com/character.html"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 4,
+    "stat": {
+        "comments": 47,
+        "collects": 107
+    },
+    "anime_ids": [
+        430699
+    ]
+}

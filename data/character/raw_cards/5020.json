@@ -1,0 +1,60 @@
+{
+    "id": 5020,
+    "name": "ムゲン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b2/8d/5020_crt_anidb.jpg?r=1520567844",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/8d/5020_crt_anidb.jpg?r=1520567844",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/8d/5020_crt_anidb.jpg?r=1520567844",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b2/8d/5020_crt_anidb.jpg?r=1520567844"
+    },
+    "summary": "20岁。琉球出身的武士，性格阳刚、好女色(多次被骗)。\r\n很重视伙伴，和仁是死对头。有一把造型特殊的武士刀作为武器，脚穿木屐，偶尔在战斗中也会派上用场。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "无幻"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "無幻"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mugen"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "180"
+        },
+        {
+            "key": "体重",
+            "value": "59"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 18,
+        "collects": 134
+    },
+    "anime_ids": [
+        254
+    ]
+}

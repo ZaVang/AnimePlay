@@ -1,0 +1,120 @@
+{
+    "id": 2076,
+    "name": "逮捕令 第二季",
+    "image_path": "data/images/anime/2076.jpg",
+    "points": 7.1,
+    "cost": 1,
+    "rarity": "N",
+    "description": "一如既往的，中岛还是在美幸面前抬不起头来，而夏实和东海林的关系倒是有了突飞猛进的发展。佐贺沙织，美幸和夏实的徒弟，她也成为了一名警察。\r\n墨东署会有什么样的新故事？中岛和美幸到底结果会怎样？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2001-04-07",
+    "rating_rank": 1984,
+    "rating_score": 7.1,
+    "rating_total": 438,
+    "main_character_ids": [
+        9311,
+        9347,
+        24088
+    ],
+    "main_characters": [
+        {
+            "id": 9311,
+            "name": "辻本夏実",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/72/4d/9311_crt_4jrQa.jpg?r=1625199465",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/4d/9311_crt_4jrQa.jpg?r=1625199465",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/4d/9311_crt_4jrQa.jpg?r=1625199465",
+                "grid": "https://lain.bgm.tv/pic/crt/g/72/4d/9311_crt_4jrQa.jpg?r=1625199465"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4171,
+                    "name": "玉川砂記子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1b/d3/4171_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/d3/4171_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/d3/4171_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1b/d3/4171_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "玉川砂记子，本名池田砂记子（旧姓：玉川）。是日本的女性声优。东京都出身。丈夫是为声优的池田秀一。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9347,
+            "name": "小早川美幸",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/21/cb/9347_crt_4Jg8G.jpg?r=1625912717",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/cb/9347_crt_4Jg8G.jpg?r=1625912717",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/cb/9347_crt_4Jg8G.jpg?r=1625912717",
+                "grid": "https://lain.bgm.tv/pic/crt/g/21/cb/9347_crt_4Jg8G.jpg?r=1625912717"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3931,
+                    "name": "平松晶子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ac/ff/3931_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/ff/3931_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/ff/3931_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ac/ff/3931_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本女性配音员。出身于东京都。原属81 Produce，现在是贤Production所属。东京动画养成所毕业。\r\n\r\n为人熟悉的代表配音作品有动画《Keroro军曹》日向家的妈妈〈日向秋〉、《逮捕令》系列的小早川美幸、《笑园漫画大王》的谷崎由佳里、《青出于蓝》的神乐崎雅、《机械女神》系列的红莓、《地球防卫企业》的桃井伊吹、《烈火之炎》的雾泽风子、《蜜柑绘日记》的草凪吐梦、《灌篮高手》的赤木晴子、《叮当猫》的木之叶美琪、《机甲战记威龙》的萝丝·帕提顿、《Genocyber 虚界之魔兽》的艾蕾因·里德／戴安娜·里德；美国动画《X战警》的欢欢等。\r\n平松在国中毕业时期很喜欢活动，后来受到漫画《気分はグルービー》的影响下，高中时期原本想组乐团，却因为成员不足而放弃。但是不久之后收看电视动画《银河铁道999》、《我是小甜甜》便得知有声优这项职业而产生兴趣，于是平松选择前往东京动画养成所进修。\r\n1986年，平松以电视动画《相聚一刻》（声演第27话帮路人角色〈洋子〉）她的声优出道作。1987年，平松为另一出电视动画《机甲战记威龙》登场角色萝丝·帕提顿配音是她首次声演主要角色的作品。\r\n平松在广播节目经常表明自己是列奥那多·狄卡皮欧的大影迷。还有，她也喜欢趴趴熊。\r\n\r\n与同期出道的林原惠、白鸟由里是同行好友。因此，平松曾经代替请产假的林原惠在电视动画《精灵宝可梦超世代》声演武藏。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 24088,
+            "name": "中嶋剣",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9a/c4/24088_crt_56lre.jpg?r=1625918581",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/c4/24088_crt_56lre.jpg?r=1625918581",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/c4/24088_crt_56lre.jpg?r=1625918581",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9a/c4/24088_crt_56lre.jpg?r=1625918581"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3960,
+                    "name": "島田敏",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ac/52/3960_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/52/3960_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/52/3960_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ac/52/3960_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーターである。青二プロダクション所属。新潟県新潟市出身。以前はテアトル・エコーに所属。現在、日本俳優連合常務理事。\r\n\r\n身長164cm、体重53kg。血液型はB型。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

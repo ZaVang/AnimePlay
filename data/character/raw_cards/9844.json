@@ -1,0 +1,48 @@
+{
+    "id": 9844,
+    "name": "星野鉄郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e6/8d/9844_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/8d/9844_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/8d/9844_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e6/8d/9844_crt_anidb.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "星野铁郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Hoshino Tetsurou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 5
+    },
+    "anime_ids": [
+        10392
+    ]
+}

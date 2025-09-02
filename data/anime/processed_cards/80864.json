@@ -1,0 +1,123 @@
+{
+    "id": 80864,
+    "name": "太空丹迪",
+    "image_path": "data/images/anime/80864.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "宇宙浪子是宇宙中一位叫作丹迪的人。身为宇宙猎人的他积极寻找未知的外星物种、因此与搭档旧型清扫机器人QT以及长得像猫的外星人阿喵一起在宇宙中到处冒险，并又为此卷入一场即将发生的阴谋之中。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2014-01-05",
+    "rating_rank": 269,
+    "rating_score": 7.9,
+    "rating_total": 4301,
+    "main_character_ids": [
+        23248,
+        23249,
+        23250
+    ],
+    "main_characters": [
+        {
+            "id": 23248,
+            "name": "ダンディ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b2/8c/23248_crt_8JJ1n.jpg?r=1390800970",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/8c/23248_crt_8JJ1n.jpg?r=1390800970",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/8c/23248_crt_8JJ1n.jpg?r=1390800970",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b2/8c/23248_crt_8JJ1n.jpg?r=1390800970"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3864,
+                    "name": "諏訪部順一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3f/9b/3864_prsn_Sgipq.jpg?r=1455697884"
+                    },
+                    "short_summary": "日本の男性声優、ナレーター、歌手。東京俳優生活協同組合所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 23249,
+            "name": "QT",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/48/1a/23249_crt_2maZo.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/1a/23249_crt_2maZo.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/1a/23249_crt_2maZo.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/48/1a/23249_crt_2maZo.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13788,
+                    "name": "佐武宇綺",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ae/fd/13788_prsn_wqQn9.jpg?r=1468215325",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ae/fd/13788_prsn_wqQn9.jpg?r=1468215325",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ae/fd/13788_prsn_wqQn9.jpg?r=1468215325",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ae/fd/13788_prsn_wqQn9.jpg?r=1468215325"
+                    },
+                    "short_summary": "日本东京都出身、隶属于LesPros的女演员,为团体9nine团员之一。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 23250,
+            "name": "ミャウ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6e/b4/23250_crt_9v46c.jpg?r=1390802041",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/b4/23250_crt_9v46c.jpg?r=1390802041",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/b4/23250_crt_9v46c.jpg?r=1390802041",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6e/b4/23250_crt_9v46c.jpg?r=1390802041"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3955,
+                    "name": "吉野裕行",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153"
+                    },
+                    "short_summary": "日本の男性声優、歌手、ナレーターである。らえら所属。千葉県出身。身長163cm、血液型はB型。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 26802,
+    "name": "井汲京子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2d/d3/26802_crt_92fwX.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/d3/26802_crt_92fwX.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/d3/26802_crt_92fwX.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2d/d3/26802_crt_92fwX.jpg"
+    },
+    "summary": "高等部1年の時にあきらの隣の席であったことから友人となる。幼なじみの康が許嫁になっているが、中等部の頃から恭己が好きで、報われない恋に思い悩んでいる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "井汲京子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "井汲 京子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いくみ きょうこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ikumi Kyouko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月22日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 22,
+    "stat": {
+        "comments": 1,
+        "collects": 2
+    },
+    "anime_ids": [
+        1758
+    ]
+}

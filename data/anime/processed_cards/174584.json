@@ -1,0 +1,90 @@
+{
+    "id": 174584,
+    "name": "轻拍翻转小魔女",
+    "image_path": "data/images/anime/174584.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "对你而言，世界是怎样的呢——。\r\n获得了打开大门的钥匙的两位女主人公，帕皮卡和可可娜。\r\n少女与少女相遇，开始了在不同的时间、相异的空间“Pure Illusion”的冒险。\r\n在寻找着据说能实现愿望的神秘结晶体“耳之碎片”而游历Pure Illusion的两人面前，\r\n出现了各种各样的困难。\r\n当两人陷入危机之时，“耳之碎片”发出光芒，而她们也因此变身了。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "奇幻",
+        "原创"
+    ],
+    "date": "2016-10-06",
+    "rating_rank": 940,
+    "rating_score": 7.5,
+    "rating_total": 3913,
+    "main_character_ids": [
+        39748,
+        39749
+    ],
+    "main_characters": [
+        {
+            "id": 39748,
+            "name": "パピカ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e8/15/39748_crt_2BnB0.jpg?r=1610523559",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/15/39748_crt_2BnB0.jpg?r=1610523559",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/15/39748_crt_2BnB0.jpg?r=1610523559",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e8/15/39748_crt_2BnB0.jpg?r=1610523559"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10887,
+                    "name": "M・A・O",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821"
+                    },
+                    "short_summary": "出生于日本大阪府，日本女演员、声优，前属大阪堀制作事务所所属女艺人，现为Yellow Cab NEXT旗下的女艺人。\r\n2006年10月，市道真央曾在大阪堀制作的HOP CLUB组合面试之中夺得大奖。2010年中，移居到东京。同年8月，在周刊少年JUMP的读者投稿角落《JUM魂G！》以职员身份登场。2011年2月，她在参演超级战队系列特摄作品《海贼战队豪快者》之中，饰演女主角之一“Luka Millfy／豪快黄”。2012年，以M·A·O的名义在电视动画《料理偶像》出演奇拉奇拉，正式开始声优活动。\r\n\r\n个人生活\r\n特色是关西腔。于2014年因出演《极黑的布伦希尔德》中的和美一角而出名。\r\n小的时候就很喜欢动画和漫画，不过，直接的契机是在特摄剧《海贼战队豪快者》中出演。由于对于这种化装后再配音的工作很感兴趣，所以希望有机会能从事与声音有关的工作。\r\n喜欢看书，但最喜欢的还是漫画，尤其是《周刊少年JUMP》。\r\n憧憬的角色不分身份、性别，只要能够锻炼演技都会广泛出演。希望尝试小男孩一类或者有着古怪变化的角色。\r\n在成为声优前亦有为《海贼战队豪快者》配音，因此拥有一定的基础，声线恬静柔和，无论是幼女还是青年女子都能够出演。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 39749,
+            "name": "ココナ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8d/cc/39749_crt_x0X82.jpg?r=1610523594",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/cc/39749_crt_x0X82.jpg?r=1610523594",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/cc/39749_crt_x0X82.jpg?r=1610523594",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8d/cc/39749_crt_x0X82.jpg?r=1610523594"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10757,
+                    "name": "髙橋ミナミ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e5/5f/10757_prsn_blW8L.jpg?r=1558165979",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/5f/10757_prsn_blW8L.jpg?r=1558165979",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/5f/10757_prsn_blW8L.jpg?r=1558165979",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e5/5f/10757_prsn_blW8L.jpg?r=1558165979"
+                    },
+                    "short_summary": "俳協所属\r\n\r\n出身地：神奈川県\r\n声：メゾソプラノ\r\n特技：英語、ドイツ語（日常会話程度）\r\n免許・資格：英語検定準2級\r\n趣味・スポーツ：新体操\r\n\r\n自2020年12月20日起艺名由高橋未奈美更改为髙橋ミナミ。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

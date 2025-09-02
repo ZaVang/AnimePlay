@@ -1,0 +1,64 @@
+{
+    "id": 3455,
+    "name": "工藤新一",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2f/ef/3455_crt_77oMO.jpg?r=1741598307",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2f/ef/3455_crt_77oMO.jpg?r=1741598307",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2f/ef/3455_crt_77oMO.jpg?r=1741598307",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2f/ef/3455_crt_77oMO.jpg?r=1741598307"
+    },
+    "summary": "江戸川コナンの本来の姿。以前は迷宮なしの高校生探偵として、新聞に載るほどの活躍を見せた。「東の名探偵」「日本警察の救世主」など、新一を称賛するフレーズは数多い。父は小説家、母は元女優と、両親は有名人。アメリカに拠点を移した親元を離れて日本で一人暮らしをしていたが、組織に飲まされたＡＰＴＸ４８６９のせいで小さくなってしまう。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "工藤新一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Jimmy Kudo"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くどう しんいち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kudou Shinichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月4日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "174cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 4,
+    "stat": {
+        "comments": 34,
+        "collects": 181
+    },
+    "anime_ids": [
+        899
+    ]
+}

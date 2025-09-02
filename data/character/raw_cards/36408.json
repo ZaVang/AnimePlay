@@ -1,0 +1,44 @@
+{
+    "id": 36408,
+    "name": "アンズ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/63/a9/36408_crt_a6vKJ.jpg?r=1525501553",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/a9/36408_crt_a6vKJ.jpg?r=1525501553",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/a9/36408_crt_a6vKJ.jpg?r=1525501553",
+        "grid": "https://lain.bgm.tv/pic/crt/g/63/a9/36408_crt_a6vKJ.jpg?r=1525501553"
+    },
+    "summary": "组织派来处分雏的少女。\r\n和雏一样可以使用念动力。\r\n她虽然不谙世事、极具攻击性，但骨子里是个温柔的人，表情也很丰富。\r\n非常笨拙，根本没有生活和自理能力，一直过着流浪的生活。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "杏子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Anzu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 33,
+        "collects": 123
+    },
+    "anime_ids": [
+        225631
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "id": 72282,
+    "name": "戦部ワタル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/36/e9/72282_crt_DKFfa.jpg?r=1660993274",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/e9/72282_crt_DKFfa.jpg?r=1660993274",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/e9/72282_crt_DKFfa.jpg?r=1660993274",
+        "grid": "https://lain.bgm.tv/pic/crt/g/36/e9/72282_crt_DKFfa.jpg?r=1660993274"
+    },
+    "summary": "《魔神英雄传》系列的共通主角、龙神丸的操作者。实际上是出生于天神界拳龙族，继承传说中一千年才会出现一次、作为救世者凭证的“拳龙之勾玉”(拳龙分娩时流下的眼泪变成，亦具有封印神部界地底地狱之门的能力。)、以及拳龙继承者的名称“Adaru”。\r\n在现实世界中，战部渡只是学习成绩普通的小学生，但每次运动会，都会被同学视为夺金英雄，家中亦摆放多个奖杯及得奖照片。在同学间人缘极佳，唯独是一位男同学阿俊会视他为竞争对手。在得意时会不自觉以手擦鼻尖的习惯。\r\n某次在经过附近的龙神山时，拾起一串勾玉，后来把它挂在美术课中制作的黏土机器人颈上，无意中产生共鸣，结果被传送到神部界，成为拯救创界山的救世主。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "战部渡"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Ikusabe Wataru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1978年5月5日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "132cm"
+        },
+        {
+            "key": "体重",
+            "value": "27kg"
+        },
+        {
+            "key": "星座",
+            "value": "金牛座"
+        },
+        {
+            "key": "梦想",
+            "value": "成为宇宙飞行员"
+        },
+        {
+            "key": "喜好",
+            "value": "棒球"
+        },
+        {
+            "key": "讨厌的事情",
+            "value": "学习，撒谎，欺负弱者"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1978,
+    "birth_mon": 5,
+    "birth_day": 5,
+    "stat": {
+        "comments": 1,
+        "collects": 8
+    },
+    "anime_ids": [
+        1972,
+        1973,
+        1974
+    ]
+}

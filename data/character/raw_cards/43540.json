@@ -1,0 +1,57 @@
+{
+    "id": 43540,
+    "name": "今村耕平",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/86/ee/43540_crt_abUTV.jpg?r=1535337966",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/ee/43540_crt_abUTV.jpg?r=1535337966",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/ee/43540_crt_abUTV.jpg?r=1535337966",
+        "grid": "https://lain.bgm.tv/pic/crt/g/86/ee/43540_crt_abUTV.jpg?r=1535337966"
+    },
+    "summary": "　　伊織の同級生。見た目は金髪のイケメンだが、妄想癖のある真性のアニメオタクで常日頃キャラクターが描かれたTシャツなどの衣類を愛用しているため、周囲の人物をドン引きさせることが多い。いわゆる三次元には興味が薄いもののまったく興味が無いタイプではなく、「お兄ちゃん」と呼んでもらうなど典型的な「オタクの願望」には目がない。\r\n　　ダイビング未経験者で、伊織に騙されるかたちで「PaB」に入会させられる。以降、伊織とは常に共に行動しつつ、危機に際しては躊躇なく互いを身代わりにしようとする、悪友とも呼べる関係を築いている。その一方、ここぞというときは伊織とは協力しあい、息の合ったところを見せる。運動は苦手だが、ダイビングについては飲み込みが早く目立った失態を犯すことはなかった。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "今村耕平"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "今村 耕平"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いまむら こうへい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Imamura Kouhei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 19,
+        "collects": 55
+    },
+    "anime_ids": [
+        235130,
+        515880
+    ]
+}

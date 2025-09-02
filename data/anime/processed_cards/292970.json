@@ -1,0 +1,58 @@
+{
+    "id": 292970,
+    "name": "魔女之旅",
+    "image_path": "data/images/anime/292970.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "在某个地方有一位旅人。她的名字叫伊蕾娜。\r\n她是年纪轻轻就成为了最上位的“魔女”的才女。\r\n憧憬着小时候读过的旅行的故事，\r\n顺其自然地持续着随心所欲的长途旅行。\r\n在广大的世界里自由地穿行 ，遇见莫名其妙、可笑的人，\r\n或是见证到某人的美丽的日常，\r\n她作为旅人，也没有什么目的，\r\n重复着和各种各样的国家和人的相遇。\r\n以及相同数量的——\r\n\r\n“请别管我。我就是个旅人，\r\n必须赶路了。”\r\n这样的魔女伊蕾娜所编织的离别的物语。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "奇幻",
+        "小说改"
+    ],
+    "date": "2020-10-02",
+    "rating_rank": 1940,
+    "rating_score": 7.2,
+    "rating_total": 13703,
+    "main_character_ids": [
+        72355
+    ],
+    "main_characters": [
+        {
+            "id": 72355,
+            "name": "イレイナ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/35/0e/72355_crt_6Z6zM.jpg?r=1602429332",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/35/0e/72355_crt_6Z6zM.jpg?r=1602429332",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/35/0e/72355_crt_6Z6zM.jpg?r=1602429332",
+                "grid": "https://lain.bgm.tv/pic/crt/g/35/0e/72355_crt_6Z6zM.jpg?r=1602429332"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19560,
+                    "name": "本渡楓",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1a/96/19560_prsn_dIRg5.jpg?r=1709906617"
+                    },
+                    "short_summary": "日本的女性声优，爱知县名古屋市出身。I'm Enterprise所属。\r\n高中二年级进入日本播音演技研究所名古屋校就读，2015年4月进入I'm Enterprise。\r\n高中时代加入戏剧社，但因为身高矮小无法演出护士，而改以不会被外貌影响的声优为目标。\r\n交情好的声优有目前在《见习神仙 秘密的心灵》中共同演出的潘惠美、事务所的前辈小泽亚李与长绳麻理亚。\r\n对于演出婴儿的声音很有自信。\r\n2019年，获得第13回声优奖的新人女优赏。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

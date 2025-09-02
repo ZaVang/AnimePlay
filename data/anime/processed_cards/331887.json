@@ -1,0 +1,91 @@
+{
+    "id": 331887,
+    "name": "86 -不存在的战区- 第2部分",
+    "image_path": "data/images/anime/331887.jpg",
+    "points": 8.0,
+    "cost": 2,
+    "rarity": "R",
+    "description": "東部戦線第一戦区第一防衛戦隊、通称スピアヘッド戦隊。\r\nサンマグノリア共和国から“排除”された〈エイティシックス〉の少年少女たちで構成された彼らは、ギア－デ帝国が投入した無人兵器〈レギオン〉との過酷な戦いに身を投じていた。\r\nそして次々と数を減らしていくスピアヘッド戦隊に課せられた、成功率 0％、任務期間無制限の「特別偵察任務」。それは母国からの実質上の死刑宣告であったが、\r\nリーダーのシンエイ・ノウゼン、ライデン・シュガ、セオト・リッカ、アンジュ・エマ、クレナ・ククミラの 5 人は、それでも前に進み続けること、戦い続けることを選択する。\r\n希望や未来を追い求めようとしたわけではない。\r\n“戦場”が、彼らにとって唯一の居場所となっていたのだから。\r\nそしてその願いは皮肉にも、知らぬ間に足を踏み入れた新天地で叶うことになるのだった。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "科幻",
+        "机战",
+        "TV",
+        "日本",
+        "小说改"
+    ],
+    "date": "2021-10-02",
+    "rating_rank": 260,
+    "rating_score": 8.0,
+    "rating_total": 12748,
+    "main_character_ids": [
+        57715,
+        57716
+    ],
+    "main_characters": [
+        {
+            "id": 57715,
+            "name": "ヴラディレーナ・ミリーゼ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/18/cd/57715_crt_F2zF7.jpg?r=1647963497",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/cd/57715_crt_F2zF7.jpg?r=1647963497",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/cd/57715_crt_F2zF7.jpg?r=1647963497",
+                "grid": "https://lain.bgm.tv/pic/crt/g/18/cd/57715_crt_F2zF7.jpg?r=1647963497"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 30858,
+                    "name": "長谷川育美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/85/45/30858_prsn_9nB7N.jpg?r=1705933451",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/45/30858_prsn_9nB7N.jpg?r=1705933451",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/45/30858_prsn_9nB7N.jpg?r=1705933451",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/85/45/30858_prsn_9nB7N.jpg?r=1705933451"
+                    },
+                    "short_summary": "日本女性声优。出生于栃木县。身高164cm，血型A型。所属事务所为Raccoon Dog（ラクーンドッグ）。\r\n\r\n就读两年制专科学校期间，同时在Pro Fit声优培训学校进修，并完成全部课程。\r\n\r\n2018年4月10日，宣布从Pro Fit事务所的预备成员晋升为准正式成员。2021年4月，正式升格为事务所签约声优。\r\n\r\n2021年首次担纲主演，为《86-不存在的战区-》女主角芙拉蒂蕾娜·米利杰献声，同时出演《弱势角色友崎君》主要角色七海美波。同年首次担任动画广播节目《86-不存在的战区-圣玛格诺利亚共和国第85.5区情报局》主持人。\r\n\r\n2022年4月1日，因原事务所Pro Fit于同年3月底终止经纪业务，正式转入Raccoon Dog。\r\n\r\n兴趣爱好是独自唱卡拉OK、长时间泡澡，特长为歌唱与Y字平衡动作。\r\n持有日本汉字能力检定准2级证书。\r\n公开表示憧憬的声优是入野自由与泽城美雪。\r\n立志成为声优的契机是初中一年级时沉迷《网球王子》等运动题材漫画。自述学业不佳，曾被班主任评价性格固执。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 57716,
+            "name": "シンエイ・ノウゼン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4b/06/57716_crt_MAGah.jpg?r=1611759800",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/06/57716_crt_MAGah.jpg?r=1611759800",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/06/57716_crt_MAGah.jpg?r=1611759800",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4b/06/57716_crt_MAGah.jpg?r=1611759800"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19619,
+                    "name": "千葉翔也",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2d/3a/19619_prsn_1Q8Cb.jpg?r=1718790551",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/3a/19619_prsn_1Q8Cb.jpg?r=1718790551",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/3a/19619_prsn_1Q8Cb.jpg?r=1718790551",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2d/3a/19619_prsn_1Q8Cb.jpg?r=1718790551"
+                    },
+                    "short_summary": "千叶翔也（1995年8月29日－）是日本男性声优及演员（前儿童演员），TOY'S FACTORY所属。\r\n\r\n兴趣及专长是吉他、看音乐剧。是宝冢歌剧团的粉丝。\r\n高中时期曾经加入了轻音乐部。\r\n在广播节目“千叶翔也的浪漫千层派”里提到自己崇拜的声优前辈是逢坂良太。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

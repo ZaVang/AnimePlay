@@ -1,0 +1,65 @@
+{
+    "id": 10609,
+    "name": "立華かなで",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c0/9f/10609_crt_PrsS5.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/9f/10609_crt_PrsS5.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/9f/10609_crt_PrsS5.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c0/9f/10609_crt_PrsS5.jpg"
+    },
+    "summary": "守护学园秩序的学生会长\r\n“……我，不是什么天使”\r\n死后世界学校的学生会长。\r\n沉默而冷静，不经常显露感情，不过本质却是个天然呆。喜欢麻婆豆腐。\r\n使用名为“Handsonic”、“Distortion”的特殊能力与战线成员交战。\r\n\r\n动画：守护秩序的神秘少女\r\n在死后世界的学校担任学生会长的、少女姿态的天使。\r\n与不愿意老老实实成佛的“死后世界战线”成员们展开了多次激烈的战斗。\r\n虽然不是没有感情，但欠缺表情的变化，很难弄清楚她在想什么。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "立华奏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "立華 かなで"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たちばな かなで"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tachibana Kanade"
+                },
+                {
+                    "k": "昵称",
+                    "v": "天使"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "150cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://key.visualarts.gr.jp/angelbeats/character.html"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 81,
+        "collects": 1039
+    },
+    "anime_ids": [
+        1851,
+        363880
+    ]
+}

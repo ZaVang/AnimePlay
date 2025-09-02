@@ -1,0 +1,85 @@
+{
+    "id": 65987,
+    "name": "ゆうぎり",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/53/f1/65987_crt_6ww94.jpg?r=1623211761",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/f1/65987_crt_6ww94.jpg?r=1623211761",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/f1/65987_crt_6ww94.jpg?r=1623211761",
+        "grid": "https://lain.bgm.tv/pic/crt/g/53/f1/65987_crt_6ww94.jpg?r=1623211761"
+    },
+    "summary": "束起长发，装容妖艳的魅力僵尸5号。\r\n从幕末开始到明治的动摇时代，维维新运动的背后隐藏着这个人的身影，传说中的花魁”。由于开朗、我行我素的性格，尽管复苏在了离生前约150年后的世界，对周围的环境以及自己是僵尸的事实也不为所动，保持现状。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "夕雾"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Yugiri"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1863年11月23日（文久3年10月13日）"
+        },
+        {
+            "key": "血型",
+            "value": "不明"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "48kg"
+        },
+        {
+            "key": "BWH",
+            "value": "94：62：89(I)"
+        },
+        {
+            "key": "去世日期",
+            "value": "1882年12月28日（明治15年12月28日，佛灭）"
+        },
+        {
+            "key": "兴趣",
+            "value": "收集扇子"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "甜酒"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "柚子"
+        },
+        {
+            "key": "喜欢的颜色",
+            "value": "红色"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 23,
+    "stat": {
+        "comments": 47,
+        "collects": 118
+    },
+    "anime_ids": [
+        252655,
+        287488
+    ]
+}

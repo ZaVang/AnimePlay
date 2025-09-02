@@ -1,0 +1,39 @@
+{
+    "id": 21667,
+    "name": "ミノリ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/08/92/21667_crt_mz1Kn.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/92/21667_crt_mz1Kn.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/92/21667_crt_mz1Kn.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/08/92/21667_crt_mz1Kn.jpg"
+    },
+    "summary": "人族，主职业神官，副职业为裁缝师(后期转为见习徒弟)\r\n国中生，班长个性，做事仔细小心，顾虑周到(得城惠直传)。\r\n中后期为\"纪录的地平线\"新米组的后卫战术指挥(\"朱雀门的鬼祭\"大战攻略中发挥实力)",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "实莉"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 60
+    },
+    "anime_ids": [
+        100517
+    ]
+}

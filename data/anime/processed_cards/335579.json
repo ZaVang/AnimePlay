@@ -1,0 +1,437 @@
+{
+    "id": 335579,
+    "name": "Love Live! 虹咲学园校园偶像同好会 第二季",
+    "image_path": "data/images/anime/335579.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "位于东京台场，拥有自由校风和多项专科的人气高中「虹咲学园」。对学园偶像的魅力感到心动的普通科2年级高咲侑，和儿时玩伴上原步梦一起敲响了「学园偶像同好会」的门。\r\n有时作为对手，有时作为同伴，胸怀各自的心意，每天展开活动的成员们。\r\n「如果能够为追逐梦想的人加油的话……。」\r\n9名与1名少女所编织的，第一次的「大家实现梦想的故事（School Idol Project）」。传达到吧！我们的心动——。\r\n现在，再一次追逐梦想吧！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2022-04-02",
+    "rating_rank": 1043,
+    "rating_score": 7.4,
+    "rating_total": 3925,
+    "main_character_ids": [
+        42435,
+        42452,
+        42649,
+        54177,
+        54178,
+        54179,
+        54180,
+        54181,
+        54182,
+        85761,
+        87028,
+        101579,
+        101580
+    ],
+    "main_characters": [
+        {
+            "id": 42435,
+            "name": "桜坂しずく",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d4/c7/42435_crt_J1TB2.jpg?r=1703253658",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/c7/42435_crt_J1TB2.jpg?r=1703253658",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/c7/42435_crt_J1TB2.jpg?r=1703253658",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d4/c7/42435_crt_J1TB2.jpg?r=1703253658"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 30811,
+                    "name": "前田佳織里",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/04/06/30811_prsn_2H8dd.jpg?r=1740109566",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/06/30811_prsn_2H8dd.jpg?r=1740109566",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/06/30811_prsn_2H8dd.jpg?r=1740109566",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/04/06/30811_prsn_2H8dd.jpg?r=1740109566"
+                    },
+                    "short_summary": "前田佳織里（まえだ かおり）は、日本の女性声優、歌手。福岡県北九州市出身。アミューズ所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 42452,
+            "name": "近江彼方",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/66/f6/42452_crt_EHIzT.jpg?r=1625679646",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/f6/42452_crt_EHIzT.jpg?r=1625679646",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/f6/42452_crt_EHIzT.jpg?r=1625679646",
+                "grid": "https://lain.bgm.tv/pic/crt/g/66/f6/42452_crt_EHIzT.jpg?r=1625679646"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19339,
+                    "name": "鬼頭明里",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/78/19339_prsn_3Dg35.jpg?r=1694799715",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a1/78/19339_prsn_3Dg35.jpg?r=1694799715"
+                    },
+                    "short_summary": "鬼頭明里（きとう あかり）は、日本の女性声優である。ラクーンドッグ所属。\r\nあだ名は「あかりん」。\r\n\r\n10月16日生まれ、愛知県出身、血液型B型、153cm。プロ・フィット声優養成所を経て、現事務所に2015年4月から所属。\r\n趣味は絵を描くこと、歌うこと。特技は絵を描くこと、歌うこと、湯切り。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 42649,
+            "name": "エマ・ヴェルデ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/22/05/42649_crt_162dH.jpg?r=1687704687",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/05/42649_crt_162dH.jpg?r=1687704687",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/05/42649_crt_162dH.jpg?r=1687704687",
+                "grid": "https://lain.bgm.tv/pic/crt/g/22/05/42649_crt_162dH.jpg?r=1687704687"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 30812,
+                    "name": "指出毬亜",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c0/51/30812_prsn_ZxZX7.jpg?r=1750598778",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/51/30812_prsn_ZxZX7.jpg?r=1750598778",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/51/30812_prsn_ZxZX7.jpg?r=1750598778",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c0/51/30812_prsn_ZxZX7.jpg?r=1750598778"
+                    },
+                    "short_summary": "指出 毬亜（さしで まりあ、1998年9月20日 - ）は、日本の女性声優。WITH LINE所属。埼玉県出身。身長163cm、血液型はAB型。\r\n\r\nアニメ好きな母親の影響で幼少期からアニメを観ており、その時から自然と声優についても意識していたと語っている。\r\n元々は舞台が好きで舞台女優を目指していたが、声が変わっていると言われたことをきっかけに声優を目指すようになった。\r\nA&Gアカデミーの卒業生で、2015年、高校在学中に「チェンクロキャラクターボイスオーディション」最終審査に進出。その後、A&Gアカデミーを経て、2016年4月から現在の事務所に所属となった。\r\n\r\n人物\r\n幼少期に好きだったアニメは、『ソウルイーター』、『天元突破グレンラガン』、『鋼の錬金術師』。\r\n趣味・長所に歌、声楽、ジャズダンス、タップダンス、ピアノを挙げている。姉がおり、姉の作ったオリジナルソングをよく歌うと語っている。その姉が指出を「うみちゃん」と呼んだことから家族には「うみちゃん」と呼ばれている。\r\n動物好きでもあり、家では猫を飼っている。リアルな猫の鳴き声が得意である。また、ヘビやトカゲといった爬虫類も平気だと語っている。\r\n得意料理はプリンである。\r\n人見知りが激しく、相手と毎日、顔を合わせて喋ることができるまでに2～3年かかるほどだと語っている。\r\n乃木坂46、欅坂46、ハロー!プロジェクトといったアイドルが好きである。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 54177,
+            "name": "上原歩夢",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/00/91/54177_crt_79D2E.jpg?r=1605617734",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/00/91/54177_crt_79D2E.jpg?r=1605617734",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/00/91/54177_crt_79D2E.jpg?r=1605617734",
+                "grid": "https://lain.bgm.tv/pic/crt/g/00/91/54177_crt_79D2E.jpg?r=1605617734"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 30810,
+                    "name": "大西亜玖璃",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9a/fa/30810_prsn_ukl4j.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/fa/30810_prsn_ukl4j.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/fa/30810_prsn_ukl4j.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9a/fa/30810_prsn_ukl4j.jpg"
+                    },
+                    "short_summary": "日本の女優、声優、歌手。愛称はあぐぽん、アグメーション。愛知県出身。リンク・プラン所属。\r\n代表作に『ラブライブ! スクールアイドルフェスティバルALL STARS』（上原歩夢）、『マギアレコード 魔法少女まどか☆マギカ外伝』（土岐すなお）『まえせつ!』（北風ふぶき）などがある。\r\n\r\n2011年9月2日放送のNHK『中学生日記 転校生シリーズ「僕と君のメロディ」』にヒロイン役で出演、「僕と君のメロディ」は2013年に国際エミー賞の子どもシリーズドラマ部門を受賞した。\r\n2012年に開催された第13回全日本国民的美少女コンテストのファイナリストになり、ファイナリスト21名から結成された次世代ユニットX21のメンバーとして2013年1月から活動。2017年4月16日に卒業、オスカープロモーションを退所した。\r\nプロ・フィット声優養成所卒。2017年7月よりリンク・プラン所属。2017年、『ヨメクラ』ドラマCDに一之瀬未羽役で出演し、声優デビューした。\r\n\r\n名前はNHK連続テレビ小説『あぐり』に由来し、吉行あぐりのように「自分をしっかりもった芯のある人になってほしい」という願いが込められている。愛称のアグメーションは、2013年4月19日にテレビ朝日で放送されたバラエティ番組『GO!オスカル!X21』にて、武井咲によって命名された。アニメが好きなことから、アニメーションとあぐりを組み合わせてできた造語である。\r\n趣味は読書、カラオケ、特技はアルトサックス等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 54178,
+            "name": "中須かすみ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0e/a0/54178_crt_EU8E8.jpg?r=1609281271",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/a0/54178_crt_EU8E8.jpg?r=1609281271",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/a0/54178_crt_EU8E8.jpg?r=1609281271",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0e/a0/54178_crt_EU8E8.jpg?r=1609281271"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 23429,
+                    "name": "相良茉優",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/48/d0/23429_prsn_jOw8w.jpg?r=1721826535",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/d0/23429_prsn_jOw8w.jpg?r=1721826535",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/d0/23429_prsn_jOw8w.jpg?r=1721826535",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/48/d0/23429_prsn_jOw8w.jpg?r=1721826535"
+                    },
+                    "short_summary": "趣味：カラオケ/美味しいお店探し\r\n特技：そろばん/ダーツ/テナーサックス\r\n資格：暗算五段/普通自動車免許\r\n経歴：プロ・フィット声優養成所　卒",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 54179,
+            "name": "朝香果林",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/da/4c/54179_crt_tJYhm.jpg?r=1687704468",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/4c/54179_crt_tJYhm.jpg?r=1687704468",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/4c/54179_crt_tJYhm.jpg?r=1687704468",
+                "grid": "https://lain.bgm.tv/pic/crt/g/da/4c/54179_crt_tJYhm.jpg?r=1687704468"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 18430,
+                    "name": "久保田未夢",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7f/37/18430_prsn_45P6R.jpg?r=1727538610",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/37/18430_prsn_45P6R.jpg?r=1727538610",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/37/18430_prsn_45P6R.jpg?r=1727538610",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7f/37/18430_prsn_45P6R.jpg?r=1727538610"
+                    },
+                    "short_summary": "大手レコード会社エイベックスと声優事務所81プロデュースがタッグを組んで開催した、「アニソン・ヴォーカルオーディション」の合格者6名にて結成されたユニット「i☆Ris」のメンバーとしても活動している。ユニット内でのイメージカラーはオレンジ。挨拶は「わんわんおー（U＾ω＾）」。\r\n\r\n趣味はアニメ鑑賞[1]。好きなキャラクターは『デュラララ!!』の平和島静雄。\r\n\r\n犬が大好きで挨拶の由来にもなっている。飼いたい犬はドーベルマン。\r\n\r\n工業高校出身で、フォークリフトとアーク溶接の免許を所持している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 54180,
+            "name": "宮下愛",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2a/93/54180_crt_Vy5BN.jpg?r=1625677678",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/93/54180_crt_Vy5BN.jpg?r=1625677678",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/93/54180_crt_Vy5BN.jpg?r=1625677678",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2a/93/54180_crt_Vy5BN.jpg?r=1625677678"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 23846,
+                    "name": "村上奈津実",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fa/1b/23846_prsn_nj4Eb.jpg?r=1586196469",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/1b/23846_prsn_nj4Eb.jpg?r=1586196469",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/1b/23846_prsn_nj4Eb.jpg?r=1586196469",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fa/1b/23846_prsn_nj4Eb.jpg?r=1586196469"
+                    },
+                    "short_summary": "声優を目指すようになったきっかけは、中学校の英語の授業で行われた『不思議の国のアリス』の絵に声を当てる朗読劇。アリス役を演じた際にクラスメイトから「アリスの声がかわいい」という感想をもらい、演じるということに興味を持ち声の仕事を意識するようになった[1][4]。もともと好きだったアニメの見方も変わり、『DEATH NOTE』で宮野真守の声の存在感に感銘を受けた[1]。\r\n中学生の時点ではアルバイトができずレッスンに通う資金が無かったため学校の勉強に集中し、受験を終えた後に声優の勉強ができる学校を探し始めた。複数の専門学校や養成所の体験授業に参加し、その中で見学したよこざわけい子の授業は良い緊張感があり基礎からしっかり学べると思いよこざわけい子 声優・ナレータースクールに入学することを決めた[4]。\r\n『アイカツスターズ!』の早乙女あこ役でアニメ作品に初出演。\r\n\r\n趣味・特技は釣り、けん玉、ドラムなど（2017年1月時点）。\r\n犬を飼っており、名前はモカ。\r\n好きなアニメは『カードキャプターさくら』で、幼稚園の頃から繰り返し見ている。\r\n声優としてのターニングポイントになった役に『アイカツスターズ!』の早乙女あこを挙げており、人生で大切な存在と語っている。\r\n「声が特徴的でヒロイン向きじゃない」と言われることもある。目標はラブコメディで正統派のヒロインを演じること。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 54181,
+            "name": "優木せつ菜",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/02/1b/54181_crt_iiU1Z.jpg?r=1600149114",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/1b/54181_crt_iiU1Z.jpg?r=1600149114",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/1b/54181_crt_iiU1Z.jpg?r=1600149114",
+                "grid": "https://lain.bgm.tv/pic/crt/g/02/1b/54181_crt_iiU1Z.jpg?r=1600149114"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 29965,
+                    "name": "楠木ともり",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b8/95/29965_prsn_vHZch.jpg?r=1693807875",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/95/29965_prsn_vHZch.jpg?r=1693807875",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/95/29965_prsn_vHZch.jpg?r=1693807875",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b8/95/29965_prsn_vHZch.jpg?r=1693807875"
+                    },
+                    "short_summary": "女性声优、歌手，所属经纪公司为Sony Music Artists，唱片公司为SACRA MUSIC。\r\n\r\n楠木灯自初中二年级起喜欢动画，在《小鸠》再播时为花泽香菜演技所动，志向成为声优。她未在声优养成所学习，而是自学。\r\n2016年，于Sony Music Artists主办的试音企画Anistoteles第5回中获特别奖。楠木灯当时是没有经验，觉得声优试音很严酷，以歌手志愿参加的试音。\r\n2017年，借由电视动画《埃罗芒阿老师》女中学生声优出道。次年以《原书·原书使》键村叶月声优的身份首次担任动画主演。\r\n2018年4月15日，SMA voice内成员网站“TOMOROOM”开设。\r\n2018年8月8日在其个人Twitter正式表明自己的中文名为“楠木灯”。\r\n2018年8月24日，以《刀剑神域外传 Gun Gale Online》莲的声优之名义出演Animelo Summer Live 2018 \"OK!\"。\r\n2019年3月9日，获第13回声优奖新人女优奖。\r\n2019年12月29日，在楠木灯 生日演唱会 2019 Kusunoki Tomori coming-of-age『WRAPPED///LIVE廿』中正式出道。\r\n2020年6月12日，宣布了首张正式出道独唱专辑《不适任者》的发售决定。\r\n\r\n楠木灯自3岁起学习钢琴，初中时代加入吹奏乐社，高中时代加入轻音社。对作词作曲感兴趣[，发布有原创CD。喜欢Sayuri、遥与美幸等歌手，以及投入自身感情的歌曲。\r\n她在志向成为声优时，对设计感兴趣，想边读美术学校，边实现成为声优的梦想。但得到动画主演的决定后，觉得无法兼顾工作和学业而选择了工作。成为声优后，有时也有机会设计演唱会商品。她有绘画方面的特长，常常绘制本人出演角色的画像。\r\n她在初中时代做过学生会长，觉得人前和平常的自己如同两人而有乐趣，认为声优职业是“成为自己本无法成为的人”，两者的共同点是工作的乐趣。她对“变身”有强烈的憧憬，喜欢这类题材的魔法少女动画，其中《东京喵喵》是她喜欢动画的契机。她还喜欢物语系列、《盗梦侦探》等作品。\r\n她认为自己“不服弱”。周围人对她也多有“认真”的印象。东方收音机的中田敦彦在初次共同广播谈话时，评价她为多才，是“小岛瑠璃子以来的冲击”。\r\n她表示，她在活动时以“大家的心是明灯”为指针，希望能陪伴在痛苦者的身边。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 54182,
+            "name": "天王寺璃奈",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c9/e8/54182_crt_6ynhd.jpg?r=1600149198",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/e8/54182_crt_6ynhd.jpg?r=1600149198",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/e8/54182_crt_6ynhd.jpg?r=1600149198",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c9/e8/54182_crt_6ynhd.jpg?r=1600149198"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 23439,
+                    "name": "田中ちえ美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/10/e5/23439_prsn_Cbj67.jpg?r=1689178730",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/10/e5/23439_prsn_Cbj67.jpg?r=1689178730",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/10/e5/23439_prsn_Cbj67.jpg?r=1689178730",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/10/e5/23439_prsn_Cbj67.jpg?r=1689178730"
+                    },
+                    "short_summary": "日本的女性声优，静冈县出身，sigma7e所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 85761,
+            "name": "高咲侑",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c2/da/85761_crt_07hC9.jpg?r=1622642251",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/da/85761_crt_07hC9.jpg?r=1622642251",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/da/85761_crt_07hC9.jpg?r=1622642251",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c2/da/85761_crt_07hC9.jpg?r=1622642251"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 38883,
+                    "name": "矢野妃菜喜",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/44/96/38883_prsn_5Adk5.jpg?r=1704199875",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/96/38883_prsn_5Adk5.jpg?r=1704199875",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/96/38883_prsn_5Adk5.jpg?r=1704199875",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/44/96/38883_prsn_5Adk5.jpg?r=1704199875"
+                    },
+                    "short_summary": "日本の声優、歌手、女優。兵庫県出身。ソニー・ミュージックアーティスツ所属。DUSTY FRUITS CLUBのボーカリスト。うたたねこ歌劇団、私立恵比寿中学、momonaki、pieceesの元メンバー。\r\n\r\nかつてはスターダストプロモーションに所属し、2008年から「piecees」、2009年から「momonaki」のメンバーとして活動していた。\r\n\r\n2010年2月14日、アイドルグループ「私立恵比寿中学」に加入。2011年4月17日、私立恵比寿中学を転校（脱退）。当初の転校予定日は2011年3月20日であったが、東日本大震災の影響でライブが中止になったため、4月17日に延期となった。\r\n2013年、WARAHATAに移籍し、映画『INORIGAMI』『ブラックリスター ゼロ』で主演を務める。\r\nその後、ソニーミュージックアーティスツに移籍。月影妃菜喜として、陽光真理愛とのユニット「うたたねこ歌劇団」の活動を開始。2014年4月3日、OVA『12歳。』の主題歌「恋の12歳」を担当。同年5月13日、新曲「パンパカパン」のミュージックビデオを公開。\r\n2016年、アニメコラボカフェ・SHIROBACOのキャストとして活動開始。2018年10月20日、SHIROBACOを卒業。\r\n2017年、バンド「DUSTY FRUITS CLUB」のボーカリストとして活動開始。\r\n\r\n趣味はゲーム、アニメ鑑賞、美少女の写真集め。特技はダンス。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 87028,
+            "name": "三船栞子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f7/12/87028_crt_eaGOm.jpg?r=1605184382",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/12/87028_crt_eaGOm.jpg?r=1605184382",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/12/87028_crt_eaGOm.jpg?r=1605184382",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f7/12/87028_crt_eaGOm.jpg?r=1605184382"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 32945,
+                    "name": "小泉萌香",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/20/bb/32945_prsn_0A7uR.jpg?r=1732870498",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/20/bb/32945_prsn_0A7uR.jpg?r=1732870498",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/20/bb/32945_prsn_0A7uR.jpg?r=1732870498",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/20/bb/32945_prsn_0A7uR.jpg?r=1732870498"
+                    },
+                    "short_summary": "小泉 萌香は、日本の女優、声優。兵庫県出身。アミューズ所属。\r\n2014年に「アミューズオーディションフェス2014」歌うま・声優部門でグランプリを獲得。CMやミュージカルなどに出演していた。\r\n趣味はアカペラ、映画鑑賞。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 101579,
+            "name": "ミア・テイラー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e9/15/101579_crt_TiNiI.jpg?r=1633455023",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/15/101579_crt_TiNiI.jpg?r=1633455023",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/15/101579_crt_TiNiI.jpg?r=1633455023",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e9/15/101579_crt_TiNiI.jpg?r=1633455023"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 25191,
+                    "name": "内田秀",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d7/8a/25191_prsn_FpS4H.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/8a/25191_prsn_FpS4H.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/8a/25191_prsn_FpS4H.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d7/8a/25191_prsn_FpS4H.jpg"
+                    },
+                    "short_summary": "内田 秀（うちだ しゅう、5月24日 - ）は日本の女性声優。原属CaliCom，现属Just Production。オーストラリア・シドニー出身。\r\n\r\n2歳から19歳までオーストラリアで暮らしており、本格的に日本に住むようになったのは2014年頃。\r\nプロ・フィット声優養成所の卒業生である。\r\n趣味は読書、お菓子作り、メイク集め、特技は洋服づくり、英語である。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 101580,
+            "name": "鐘嵐珠",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a6/c6/101580_crt_JfM0c.jpg?r=1649763318",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/c6/101580_crt_JfM0c.jpg?r=1649763318",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/c6/101580_crt_JfM0c.jpg?r=1649763318",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a6/c6/101580_crt_JfM0c.jpg?r=1649763318"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 39872,
+                    "name": "法元明菜",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/28/02/39872_prsn_B7bx6.jpg?r=1604168887",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/02/39872_prsn_B7bx6.jpg?r=1604168887",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/02/39872_prsn_B7bx6.jpg?r=1604168887",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/28/02/39872_prsn_B7bx6.jpg?r=1604168887"
+                    },
+                    "short_summary": "母親是中國人，父親希望法元明菜學會漢語，她因此自小學二年級至國中三年級住在中國大陸。\r\n\r\n小學六年級時，在家以中日混合的神祕語言交談。\r\n\r\n興趣愛好\r\n在演出《麟犀AI韻律出差版 麟麟家-LinLin HOUSE-》時產生了繪畫的興趣，從Niconico動畫與bilibili的評論中決定畫作的題目與內容，並將題目的漢語拼音顯示在屏幕上。\r\n\r\n喜歡乳酪，曾声称乳酪是飲品；也喜歡布丁、南瓜、壽司。在中國吃月餅時只吃中間的蛋黃，讓父親發過脾氣。\r\n\r\n曾在与双亲同住时養有倉鼠。\r\n\r\n非常喜歡桌上遊戲（卡牌遊戲、桌上角色扮演遊戲等）、生存遊戲。\r\n\r\n喜歡演奏原聲吉他，會在Twitter上募集詞句，演奏1分鐘的曲子。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

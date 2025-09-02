@@ -1,0 +1,76 @@
+{
+    "id": 360,
+    "name": "三枝葉留佳",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/68/82/360_crt_4glWd.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/82/360_crt_4glWd.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/82/360_crt_4glWd.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/68/82/360_crt_4glWd.jpg"
+    },
+    "summary": "CV：涼森ちさと\r\n无忧无虑 逍遥自在 喧闹的少女\r\n与主人公分处不同的班级，但不知为何却总在主人公的教室里\r\n总是使周围喧嚣起来，自己也乐在其中&自挖墓穴\r\n基本上不怎么深入思考，一时兴起便行动起来",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "三枝叶留佳"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Haruka Saigusa"
+                },
+                {
+                    "k": "日文名",
+                    "v": "三枝 葉留佳"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さいぐさ はるか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Saigusa Haruka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月13日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        },
+        {
+            "key": "体重",
+            "value": "49kg"
+        },
+        {
+            "key": "BWH",
+            "value": "81/59/82"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 2,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 13,
+    "stat": {
+        "comments": 24,
+        "collects": 107
+    },
+    "anime_ids": [
+        363880
+    ]
+}

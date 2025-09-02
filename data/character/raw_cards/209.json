@@ -1,0 +1,67 @@
+{
+    "id": 209,
+    "name": "星矢",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9c/19/209_crt_0ihPr.jpg?r=1587700924",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/19/209_crt_0ihPr.jpg?r=1587700924",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/19/209_crt_0ihPr.jpg?r=1587700924",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9c/19/209_crt_0ihPr.jpg?r=1587700924"
+    },
+    "summary": "在圣斗士的发源地，希腊圣域内，接受白银圣斗士魔玲的指导，而成为天马星座的青铜圣斗士。是位有着满腔热血的少年，常在有说明之前，就先以行动表示其态度。而凭藉其１秒能挥上百拳以上的「天马流星拳」，打倒了无数的敌人。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "星矢"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ペガサス星矢"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "セイヤ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Seiya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "12月1日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "53kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 2,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 1,
+    "stat": {
+        "comments": 3,
+        "collects": 12
+    },
+    "anime_ids": [
+        4843
+    ]
+}

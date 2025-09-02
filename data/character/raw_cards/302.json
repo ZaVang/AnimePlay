@@ -1,0 +1,84 @@
+{
+    "id": 302,
+    "name": "碇シンジ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e1/af/302_crt_ce4yO.jpg?r=1616247180",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/af/302_crt_ce4yO.jpg?r=1616247180",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/af/302_crt_ce4yO.jpg?r=1616247180",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e1/af/302_crt_ce4yO.jpg?r=1616247180"
+    },
+    "summary": "本故事的主角，有着极端内向的性格，极其害怕与陌生人接触，不知如何和别人相处而感到害怕，一直只是照着别人的要求而生活，之后慢慢地敞開了心扉。\r\n　　母亲死后就住在亲戚家中，和碇源堂分居了十年，突然接到父亲的信而来到第三新东京都市，身为初号机的驾驶员却不愿意驾驶初号机。\r\n　　14岁，操纵EVA初号机的第三适格者（THIRD CHILDREN）。 NERV司令碇元渡的独子，作为驾驶员，他与EVA初号机的同步值最高，在歼灭使徒的各次战役中的表现亦最为突出。但其本人性格内向、处事态度消极、遇事总是用“对不起”来逃避现实成为明日香对其最为反感的原因。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "碇真嗣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "碇真治"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いかり　しんじ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ikari Shinji"
+                },
+                {
+                    "k": "昵称",
+                    "v": "笨蛋真嗣（バガシンジ），小鬼真嗣（ガキシンジ，剧场版Q），わんこ君（真希波限定）"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2001年6月6日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "wikipedia"
+                }
+            ]
+        },
+        {
+            "key": "所属",
+            "value": "NERV/EVA初号機専属操縦者、第3新東京市立第壱中学校2年A組"
+        },
+        {
+            "key": "特技",
+            "value": "チェロ演奏、料理"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 1,
+    "birth_year": 2001,
+    "birth_mon": 6,
+    "birth_day": 6,
+    "stat": {
+        "comments": 215,
+        "collects": 688
+    },
+    "anime_ids": [
+        265
+    ]
+}

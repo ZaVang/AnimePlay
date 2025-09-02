@@ -1,0 +1,64 @@
+{
+    "id": 10447,
+    "name": "グゥ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/10/56/10447_crt_d66cA.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/10/56/10447_crt_d66cA.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/10/56/10447_crt_d66cA.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/10/56/10447_crt_d66cA.jpg"
+    },
+    "summary": "变身前\r\n雪白的皮肤，苗条的身材，在丛林里少见的脸\r\n变身后\r\n雪白的皮肤，苗条的身材，在丛林里少见的脸",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿布"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Guu"
+                },
+                {
+                    "k": "日文名",
+                    "v": "グゥ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Guu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "属性",
+            "value": "搞笑"
+        },
+        {
+            "key": "特技",
+            "value": "万能"
+        },
+        {
+            "key": "兴趣",
+            "value": "整小晴"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 14,
+        "collects": 59
+    },
+    "anime_ids": [
+        3291
+    ]
+}

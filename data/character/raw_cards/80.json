@@ -1,0 +1,78 @@
+{
+    "id": 80,
+    "name": "エドワード・ウォン・ハウ・ペペル・チブルスキー4世",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a7/6e/80_crt_T8DMp.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/6e/80_crt_T8DMp.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/6e/80_crt_T8DMp.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a7/6e/80_crt_T8DMp.jpg"
+    },
+    "summary": "拥有男性名字的13岁地球少女，曾经被称作激进爱德华的天才黑客。因为父亲专注于记录陨石的掉落地点的工作，而连她是女孩这个事实都没弄清楚。惯用的电脑「番茄」是她自己制造的。从小就到处流浪，不喜欢待在同一个地方，是个电脑天才，几乎可以侵入任何安全系统，但在日常生活与人际关系上的常识，却有微妙程度的缺乏，言行举止有些微幼儿化。平时性格异常开朗，和资料犬爱因关系很好。虽然年纪小，但是心中也有自己对生活的看法。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾德"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "爱德华·王·侯·皮皮鲁·提布鲁斯基Ⅳ世"
+                },
+                {
+                    "v": "Ed/Edward Wong Hau Pepelu Tivrusky Ⅳ"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Edward·Wong·Hau·Pepelu·Tivrusky 4th"
+                },
+                {
+                    "k": "昵称",
+                    "v": "エド"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2058-01-01"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "136cm"
+        },
+        {
+            "key": "体重",
+            "value": "36kg"
+        },
+        {
+            "key": "年龄",
+            "value": "13岁"
+        },
+        {
+            "key": "出生地",
+            "value": "地球"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 2058,
+    "birth_mon": 1,
+    "birth_day": 1,
+    "stat": {
+        "comments": 40,
+        "collects": 175
+    },
+    "anime_ids": [
+        253
+    ]
+}

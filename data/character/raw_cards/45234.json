@@ -1,0 +1,60 @@
+{
+    "id": 45234,
+    "name": "姫川亜弓",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/05/35/45234_crt_52JrC.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/35/45234_crt_52JrC.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/35/45234_crt_52JrC.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/05/35/45234_crt_52JrC.jpg"
+    },
+    "summary": "裕福な家のお嬢様。ストイックな性格から、現在事情を猛勉強。知識は豊富だが、経験値は高くないのがたまにきず。マヤを唯一無二のライバルだと認め、常に己の芝居力を磨いている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "姬川亚弓"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "白莎莉"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひめかわ あゆみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ayumi Himekawa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1963年8月5日"
+        },
+        {
+            "key": "身高",
+            "value": "168 cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1963,
+    "birth_mon": 8,
+    "birth_day": 5,
+    "stat": {
+        "comments": 0,
+        "collects": 7
+    },
+    "anime_ids": [
+        1961
+    ]
+}

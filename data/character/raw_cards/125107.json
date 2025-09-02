@@ -1,0 +1,48 @@
+{
+    "id": 125107,
+    "name": "ジロン・アモス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/52/50/125107_crt_dz78i.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/50/125107_crt_dz78i.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/50/125107_crt_dz78i.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/52/50/125107_crt_dz78i.jpg"
+    },
+    "summary": "「鉄の腕」と呼ばれたロックマンの息子。両親の仇、ティンプ・シャローンを「三日間限りの掟」を破ってまで追いかける。目先のことしか考えない単細胞で、考える前に行動してしまう熱血漢。身勝手なジロンの行動はイノセントたちにシビリアンの世代交代の象徴と受けとられ、やがては惑星ゾラを揺るがす事件へと発展する。\r\n反イノセント組織ソルトの二代目リーダーとなり、イノセントを不法に支配するカシム・キングを打倒、ゾラに新しい時代をもたらすことになる。\r\n父の教えに従い、「女には優しくしろ」を信条として生きている。ラグとエルチの間で揺れ動くが、最後には失明したエルチの目と手足になることを決意した。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Jiron Amos"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://xabungle.net/character/detail.php?id=1"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 4
+    },
+    "anime_ids": [
+        34281
+    ]
+}

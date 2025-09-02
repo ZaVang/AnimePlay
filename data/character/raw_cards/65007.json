@@ -1,0 +1,64 @@
+{
+    "id": 65007,
+    "name": "豊浜のどか",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7f/d9/65007_crt_lbhhe.jpg?r=1537448480",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/d9/65007_crt_lbhhe.jpg?r=1537448480",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/d9/65007_crt_lbhhe.jpg?r=1537448480",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7f/d9/65007_crt_lbhhe.jpg?r=1537448480"
+    },
+    "summary": "現役女子高校生アイドル\r\n\r\n麻衣の母親違いの妹。\r\nアイドルグループ『スイートバレット』のメンバーでおしゃれ担当。\r\n派手な見た目に似合わず、お嬢様高校に通っている。とても強気で負けず嫌い。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "丰滨和花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "丰滨和香"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "とよはま のどか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Toyohama Nodoka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月14日"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "特技",
+            "value": "早着替え"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 14,
+    "stat": {
+        "comments": 9,
+        "collects": 86
+    },
+    "anime_ids": [
+        240038
+    ]
+}

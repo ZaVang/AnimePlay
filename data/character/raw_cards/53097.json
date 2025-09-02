@@ -1,0 +1,51 @@
+{
+    "id": 53097,
+    "name": "ハレ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1e/aa/53097_crt_CjJur.jpg?r=1491160364",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/aa/53097_crt_CjJur.jpg?r=1491160364",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/aa/53097_crt_CjJur.jpg?r=1491160364",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1e/aa/53097_crt_CjJur.jpg?r=1491160364"
+    },
+    "summary": "住在雨林中的少年，初次登场时10岁。在《哈雷阿布》第2卷的时候是初中2年级学生（13岁）。因为周围多是一些奇怪的人，他年纪轻轻就被人说成性格像是30岁的青年，和一般的孩子很不相同。在看到到奇怪的人时候，就会产生被害妄想。对阿布为首的周围的人（特别是女性）所说的话言听计从的少年。\r\n本作中唯一的吐槽角色。和玛丽有接吻的经验，似乎是两情相悦，不过对玛丽的恋爱妄想的习惯有些困惑。被阿布说是女权主义，妈妈控。\r\n很喜欢玩游戏，几乎拥有全部种类的家用游戏机。喝酒以后会大叔化，并且发酒疯。因为曾经数次进入阿布的体内，所以能听懂外语。\r\n和父亲有十年没有见面，所以关系很差。在弟弟刚出生的时候，两人关系曾经缓和，但是仅持续了数格就开始吐血。在城市的学校和丽塔初次相会时，曾经突然觉得学校很有趣，看来还是继承了花花公子的性格。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "哈雷"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "小晴"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "晴"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wikipedia"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 8,
+        "collects": 8
+    },
+    "anime_ids": [
+        3291
+    ]
+}

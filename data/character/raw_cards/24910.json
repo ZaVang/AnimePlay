@@ -1,0 +1,48 @@
+{
+    "id": 24910,
+    "name": "山崎烝",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c9/47/24910_crt_OLTCx.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/47/24910_crt_OLTCx.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/47/24910_crt_OLTCx.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c9/47/24910_crt_OLTCx.jpg"
+    },
+    "summary": "新选组监察。是队内负责四处奔走收集情报的密探。真面目仍有许多不明之处。\r\n个性冰冷，少言寡语，面部很少有表情。执行任务雷厉风行，经常化妆成山崎步的样子去和打探情报，只听从土方的命令。\r\n面容清秀美好，平时的样子很清秀帅气，而化妆成女性的样子极美，以至於大街上的所有男人都忘记了走路。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "山崎烝"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "やまざき すすむ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yamazaki Susumu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 0
+    },
+    "anime_ids": [
+        1930
+    ]
+}

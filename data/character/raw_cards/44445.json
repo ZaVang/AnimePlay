@@ -1,0 +1,48 @@
+{
+    "id": 44445,
+    "name": "紫東恵",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/07/fe/44445_crt_C36K6.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/fe/44445_crt_C36K6.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/fe/44445_crt_C36K6.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/07/fe/44445_crt_C36K6.jpg"
+    },
+    "summary": "ＴＥＲＲＡのオペレーター見習い。遙の妹。明るく活発なだが、姉にコンプレックスを持っている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "紫东惠"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しとう めぐみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shitou Megumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 9
+    },
+    "anime_ids": [
+        1030
+    ]
+}

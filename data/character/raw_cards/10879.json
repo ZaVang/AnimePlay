@@ -1,0 +1,61 @@
+{
+    "id": 10879,
+    "name": "胡坊",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/df/0b/10879_crt_89Ypi.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/0b/10879_crt_89Ypi.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/0b/10879_crt_89Ypi.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/df/0b/10879_crt_89Ypi.jpg"
+    },
+    "summary": "胡坊（通称胡ぼん）　１才・♂\r\n好奇心旺盛でまだまだ子ども",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "胡坊"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "胡笨"
+                },
+                {
+                    "k": "日文名",
+                    "v": "胡坊"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ゴボン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "GOBON"
+                },
+                {
+                    "k": "昵称",
+                    "v": "胡ぼん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "公"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 0
+    },
+    "anime_ids": [
+        6756,
+        1752
+    ]
+}

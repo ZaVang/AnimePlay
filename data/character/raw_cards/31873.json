@@ -1,0 +1,68 @@
+{
+    "id": 31873,
+    "name": "神谷薫",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/28/fa/31873_crt_Dg20G.jpg?r=1724610391",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/fa/31873_crt_Dg20G.jpg?r=1724610391",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/fa/31873_crt_Dg20G.jpg?r=1724610391",
+        "grid": "https://lain.bgm.tv/pic/crt/g/28/fa/31873_crt_Dg20G.jpg?r=1724610391"
+    },
+    "summary": "神谷薰为《浪客剑心》中的女主角。薰从小就失去了母亲，父亲失踪，但她没有因为失去双亲而被击倒，反而更坚强积极面对自己的人生。以「活留口剑术─活人剑」为精神的神谷活心流之代理师父。在城内主持一家道场，有竹剑美少女之外号，可见其剑术之精湛。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "神谷薰"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "神谷 薫"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かみや かおる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kamiya Kaoru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1862年10月10日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "体重",
+            "value": "41kg"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 10,
+    "stat": {
+        "comments": 18,
+        "collects": 91
+    },
+    "anime_ids": [
+        2712
+    ]
+}

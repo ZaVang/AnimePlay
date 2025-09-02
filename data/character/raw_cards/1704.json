@@ -1,0 +1,56 @@
+{
+    "id": 1704,
+    "name": "五代裕作",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/65/a9/1704_crt_Z8Bz8.jpg?r=1616082038",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/a9/1704_crt_Z8Bz8.jpg?r=1616082038",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/a9/1704_crt_Z8Bz8.jpg?r=1616082038",
+        "grid": "https://lain.bgm.tv/pic/crt/g/65/a9/1704_crt_Z8Bz8.jpg?r=1616082038"
+    },
+    "summary": "故事的男主角，一刻馆五号房的房客，个性优柔寡断。故事开始的时候，他是个大学落榜生，因此住在一刻馆准备重考，之后考上了三流私立大学。他在一刻馆的几年当中，不但遇到了他的理想伴侣，也在大学毕业后找到他真正适合的事业──幼稚园老师，因此《相聚一刻》可以说是他成长历程的故事。他的故乡在新潟县，家人经营一间大众食堂。 \r\n性格 : 內向、怕事、優柔寡斷 \r\n嗜好 : 幻想、表演木偶、打欖球",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "五代裕作"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ごだい ゆうさく"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Godai Yusaku"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "二又一成"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 9,
+        "collects": 24
+    },
+    "anime_ids": [
+        2921
+    ]
+}

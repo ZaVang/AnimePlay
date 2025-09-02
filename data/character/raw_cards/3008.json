@@ -1,0 +1,56 @@
+{
+    "id": 3008,
+    "name": "公安9課",
+    "type": 4,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f5/c8/3008_crt_ftTsK.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/c8/3008_crt_ftTsK.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/c8/3008_crt_ftTsK.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f5/c8/3008_crt_ftTsK.jpg"
+    },
+    "summary": "由前军官、法医科学家和警察侦探组成的信息安全和情报部门。\r\n组织结构以德国GSG-9特种部队为基础，与英国特种空勤团亦有交叉训练。\r\n是直属日本内务省，听命于总局长和日本首相的独立部队。\r\n有关第9课的大部分信息为高度机密，内务省不对其活动细节发表评论。\r\n公众并不知晓第9课的存在，国会和其他安全部队部门对9课的认识也仅为一个“黑色行动单位”。这使得9课能够独立运作，不受政府监督，以避免繁文缛节和官僚主义。\r\n9课负责众多独特职能，包括国家层面的信息安全、要员保护、调查贪污、打击恐怖组织乃至于暗杀，其形态的特殊也令其直面新型犯罪事件。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "公安9课"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "攻壳机动队"
+                },
+                {
+                    "v": "9课"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Public Security Section 9"
+                },
+                {
+                    "k": "日文名",
+                    "v": "公安9課"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Koan Kyuka"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 11,
+        "collects": 96
+    },
+    "anime_ids": [
+        326,
+        324,
+        320
+    ]
+}

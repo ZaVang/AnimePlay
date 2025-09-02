@@ -1,0 +1,49 @@
+{
+    "id": 23250,
+    "name": "ミャウ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6e/b4/23250_crt_9v46c.jpg?r=1390802041",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/b4/23250_crt_9v46c.jpg?r=1390802041",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/b4/23250_crt_9v46c.jpg?r=1390802041",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6e/b4/23250_crt_9v46c.jpg?r=1390802041"
+    },
+    "summary": "像是猫的外星人，虽然外型看起来很类似猫科动物，但实际上他不完全是猫。是位戴着红色帽子的参宿四星人，天生带点傻头傻脑的个性，看起来就是一副无忧无虑的样子。最常看见的就是阿喵在拨弄他的手机。另外虽然有自己的名字，但因为太难念而被丹迪以他长著像猫一样而命名为阿喵。\r\n由于喜欢偷拍别人而偶然被丹迪发现并因此加入他们，常有告诉丹迪有新品种外星人居住的情报来逃避临时状况。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿喵"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "喵呜"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Meow"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ミャウ"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 17,
+        "collects": 45
+    },
+    "anime_ids": [
+        100501,
+        80864
+    ]
+}

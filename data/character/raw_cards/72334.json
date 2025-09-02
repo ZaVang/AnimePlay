@@ -1,0 +1,69 @@
+{
+    "id": 72334,
+    "name": "忍部ヒミコ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/84/9e/72334_crt_18P0S.jpg?r=1573104918",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/84/9e/72334_crt_18P0S.jpg?r=1573104918",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/84/9e/72334_crt_18P0S.jpg?r=1573104918",
+        "grid": "https://lain.bgm.tv/pic/crt/g/84/9e/72334_crt_18P0S.jpg?r=1573104918"
+    },
+    "summary": "极度天真烂漫，甚至没有令她害怕的东西，因为乐天的性格，脸上经常挂著笑脸。\r\n本片里不可或缺的人物，她的忍术虽不一定很解决问题，但却十分搞笑；虽然平时嘻嘻哈哈，但也有严肃的时候。\r\n精通各种忍法，虽然多数只属半吊子水平，不过仍有着历代头领中最大的破坏力。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "忍部火美子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "希米可、小美、火美子、西米格"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひみこ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "创界历二万三千五百二五十六年 卯月一日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "110cm"
+        },
+        {
+            "key": "体重",
+            "value": "18kg"
+        },
+        {
+            "key": "星座",
+            "value": "白羊座"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 3
+    },
+    "anime_ids": [
+        1972,
+        1973,
+        1974
+    ]
+}

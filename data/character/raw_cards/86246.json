@@ -1,0 +1,52 @@
+{
+    "id": 86246,
+    "name": "フリーレン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b5/b6/86246_crt_VexxG.jpg?r=1696587402",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/b6/86246_crt_VexxG.jpg?r=1696587402",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/b6/86246_crt_VexxG.jpg?r=1696587402",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b5/b6/86246_crt_VexxG.jpg?r=1696587402"
+    },
+    "summary": "千年以上生きるエルフで、勇者パーティーとして魔王を倒した魔法使い。魔法であればどんなものでも興味を持つ魔法オタク。性格はずぼらでドライ。仲間たちとの旅を経て、知らず知らずのうちにその心にも変化が現れる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "芙莉莲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Frieren"
+                },
+                {
+                    "k": "昵称",
+                    "v": "葬送のフリーレン"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://frieren-anime.jp/character/chara_group1/1-1/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 172,
+        "collects": 865
+    },
+    "anime_ids": [
+        400602
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": 161096,
+    "name": "河合井コタロー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3a/7e/161096_crt_4XvU7.jpg?r=1721309997",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/7e/161096_crt_4XvU7.jpg?r=1721309997",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/7e/161096_crt_4XvU7.jpg?r=1721309997",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3a/7e/161096_crt_4XvU7.jpg?r=1721309997"
+    },
+    "summary": "私立ライム中学校2年生。幼少期に偶然作ったぷにると7年間一緒に暮らしている。\r\n本当はかわいいものが好きだけど、周りには隠しているひねくれボーイ。\r\nぷにるの自由気ままな言動には振り回され、成長した姿にドキドキすることも…。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "河合井小太郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "河合井 コタロー"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かわいい こたろー"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kawaii Kotarō"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 29,
+        "collects": 15
+    },
+    "anime_ids": [
+        530115
+    ]
+}

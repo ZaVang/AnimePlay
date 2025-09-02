@@ -1,0 +1,64 @@
+{
+    "id": 27234,
+    "name": "宮森あおい",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/44/b7/27234_crt_0jV1l.jpg?r=1675248575",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/b7/27234_crt_0jV1l.jpg?r=1675248575",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/b7/27234_crt_0jV1l.jpg?r=1675248575",
+        "grid": "https://lain.bgm.tv/pic/crt/g/44/b7/27234_crt_0jV1l.jpg?r=1675248575"
+    },
+    "summary": "武蔵野アニメーションの制作進行。現在一年目。\r\n学生時代からアニメーション制作に関心を持ち、同好会に所属していたが、具体的な目標を見出せないままに卒業。\r\n武蔵野アニメーションの門を叩いた。性格は明朗快活、いつも前向き。夢は学生時代に志を共にした仲間達と再びアニメーションを作り上げること。絵麻としずかからは「おいちゃん」、みどりと美沙からは「おい先輩」、職場仲間からは「みゃーもり」と呼ばれる。ドーナツが大好物。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宫森葵"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "宮森 あおい"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みやもり あおい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Miyamori Aoi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "みゃーもり、喵森"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "职业",
+            "value": "制作进行 → 制作管理 → 动画制作人"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 133,
+        "collects": 795
+    },
+    "anime_ids": [
+        110467
+    ]
+}

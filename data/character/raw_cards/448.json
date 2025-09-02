@@ -1,0 +1,49 @@
+{
+    "id": 448,
+    "name": "轮入道",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d0/ce/448_crt_vNNQM.jpg?r=1392046204",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/ce/448_crt_vNNQM.jpg?r=1392046204",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/ce/448_crt_vNNQM.jpg?r=1392046204",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d0/ce/448_crt_vNNQM.jpg?r=1392046204"
+    },
+    "summary": "本当は車輪の形をした妖怪で、空を駆けるあいの乗り物になる。学校では校務員として働いている。（藁人形時：黒） \r\n原形为牛车上燃烧车轮中央有脸的妖怪，可操纵火焰。平时主要化为头戴中高帽、身穿和装的和霭老人。他缠绕自己颈部上的围巾后化为黑色稻草人。三魔之中历链最丰富，经常担任领导的角色。进行调查时使用“不破龙堂”的假名。一旦阎魔爱即将前往人间将受诅人流放至地狱，他变化成一辆带有古风味的牛车，运送爱至目的地。生前为一驾驶著载有公主、却意外悬崖的马车之马夫，亦有说是马车的车轮。后化为妖怪，于山道上不断奔跑并不时吓到路人，其名字“轮入道”就是当时的人所取。于山道上与阎魔爱相遇，后来成为第一个属下。\r\n　　认为爱和其他二藁是“恋人”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "輪入道"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Wanyuudou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 11
+    },
+    "anime_ids": [
+        1261,
+        1260
+    ]
+}

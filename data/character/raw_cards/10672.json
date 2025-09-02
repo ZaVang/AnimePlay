@@ -1,0 +1,80 @@
+{
+    "id": 10672,
+    "name": "佐倉杏子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/09/88/10672_crt_p2zHz.jpg?r=1605029625",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/88/10672_crt_p2zHz.jpg?r=1605029625",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/88/10672_crt_p2zHz.jpg?r=1605029625",
+        "grid": "https://lain.bgm.tv/pic/crt/g/09/88/10672_crt_p2zHz.jpg?r=1605029625"
+    },
+    "summary": "「要するに、ブッ潰しちゃえばいいんでしょ？」\r\nマミの縄張りを狙い、別の町からやってきた魔法少女。いつも何かを食べている。周囲の被害を鑑みない利己主義者。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "佐仓杏子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "佐倉 杏子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さくら きょうこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakura Kyouko"
+                },
+                {
+                    "k": "昵称",
+                    "v": "红毛"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "156~158cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "www.madoka-magica.com/tv/character"
+        },
+        {
+            "key": "年龄",
+            "value": "14岁"
+        },
+        {
+            "key": "出身",
+            "value": "风见野市"
+        },
+        {
+            "key": "妹妹",
+            "value": "佐仓桃"
+        },
+        {
+            "key": "人设",
+            "value": "苍树梅"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 61,
+        "collects": 603
+    },
+    "anime_ids": [
+        9717
+    ]
+}

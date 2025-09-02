@@ -1,0 +1,56 @@
+{
+    "id": 13396,
+    "name": "鹿賀りん",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0e/fe/13396_crt_MzV38.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/fe/13396_crt_MzV38.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/fe/13396_crt_MzV38.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0e/fe/13396_crt_MzV38.jpg"
+    },
+    "summary": "宋一と正子の娘であり、大吉の血縁関係上の叔母。6歳（第2部では16歳）。\r\n    大吉と出会ったばかりの頃はほとんどものを言わずに一人きりでいるのを好んでいたが、その後大吉と共に暮らしていくうちに信頼できる人たちも増え、口数も多くなり明るい性格となる。大吉より早く起きて朝食の下準備をしたり、栄養を考えて食事をしたりするなど、大人に引けをとらないしっかり者。鹿賀という祖父と同じ苗字を大事に思っており、大吉に養子縁組をするかと問われた際にはきっぱりと拒否している。また、大吉のことを父親とは思っておらず、あくまで大吉は大吉だと思っている。\r\n    「りん」という名前は宋一が、自分が好きだったリンドウの花の名からつけた。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鹿贺凛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "鹿賀りん"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かが りん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kaga Rin"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wiki(jp)"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 17,
+        "collects": 194
+    },
+    "anime_ids": [
+        10843
+    ]
+}

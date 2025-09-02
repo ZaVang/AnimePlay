@@ -1,0 +1,56 @@
+{
+    "id": 518519,
+    "name": "航海王：粉丝来信",
+    "image_path": "data/images/anime/518519.jpg",
+    "points": 8.5,
+    "cost": 5,
+    "rarity": "HR",
+    "description": "故事讲述了顶上战争两年后的香波迪群岛上，娜美的小迷妹展开的一场小小冒险…… 本作改编自航海王官方外传小说《航海王 novel 草帽故事集》，小说描述了以一般人的角度来看待草帽海贼团成员们的短篇故事。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "小说改"
+    ],
+    "date": "2024-10-20",
+    "rating_rank": 43,
+    "rating_score": 8.5,
+    "rating_total": 3295,
+    "main_character_ids": [
+        166110
+    ],
+    "main_characters": [
+        {
+            "id": 166110,
+            "name": "少女",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/64/88/166110_crt_29j2V.jpg?r=1729853217",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/64/88/166110_crt_29j2V.jpg?r=1729853217",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/64/88/166110_crt_29j2V.jpg?r=1729853217",
+                "grid": "https://lain.bgm.tv/pic/crt/g/64/88/166110_crt_29j2V.jpg?r=1729853217"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4768,
+                    "name": "菊池こころ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a7/64/4768_prsn_35399.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/64/4768_prsn_35399.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/64/4768_prsn_35399.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a7/64/4768_prsn_35399.jpg"
+                    },
+                    "short_summary": "日本の女性声優。東京都出身。ケンユウオフィス所属。旧芸名は菊池 心（読みは同じ）。\r\n\r\n特技：犬に好かれる・人ごみをサクサク歩ける\r\n趣味：園芸\r\n経歴：東映アニメーション研究所、東映アカデミー",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "id": 1863,
+    "name": "上賀茂潤",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/09/fb/1863_7MDId.jpg?r=1509016755",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/fb/1863_7MDId.jpg?r=1509016755",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/fb/1863_7MDId.jpg?r=1509016755",
+        "grid": "https://lain.bgm.tv/pic/crt/g/09/fb/1863_7MDId.jpg?r=1509016755"
+    },
+    "summary": "在八坂一初次到“方舟”时碰巧坐在他的一旁，后来和八坂一两人都做了“方舟”的服务员和关系特别的朋友。女生，却因行为举止而被人误为男生，而卡亚和岚先后知清这个事实。演技高超，在出演大学生自制的电影时获得大家的赞赏。名字估计是从京都的上贺茂神社而来",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "上贺茂润"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "上賀茂 潤"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かみがも じゅん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kamigamo Jun"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "小见川千明"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 11
+    },
+    "anime_ids": [
+        2604,
+        1454
+    ]
+}

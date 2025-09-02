@@ -1,0 +1,65 @@
+{
+    "id": 10877,
+    "name": "カラスぼん",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5e/30/10877_crt_oTNd5.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/30/10877_crt_oTNd5.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/30/10877_crt_oTNd5.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5e/30/10877_crt_oTNd5.jpg"
+    },
+    "summary": "カラスぼん（通称ぼん）　７才・♂\r\n空気の読めない内弁慶",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "乌鸦波"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "笨兄"
+                },
+                {
+                    "k": "日文名",
+                    "v": "カラスぼん"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "カラスボン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "KARASUBON"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ぼん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "公"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.enterbrain.co.jp/nekoweb/"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        6756,
+        1752
+    ]
+}

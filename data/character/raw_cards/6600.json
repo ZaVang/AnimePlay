@@ -1,0 +1,57 @@
+{
+    "id": 6600,
+    "name": "ジャック・F・ウッドブリッジ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/cd/44/6600_crt_4P5xW.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/44/6600_crt_4P5xW.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/44/6600_crt_4P5xW.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cd/44/6600_crt_4P5xW.jpg"
+    },
+    "summary": "この物語のもう1人の主人公。アメリカ人。親友の吾郎と共に5大陸の最高峰を制した後、米軍に入隊し海軍所属の戦闘機のエースパイロットからNASA入りする。軍に籍を置いていたころから徐々に頭角を表し、やがて政治的権力を手中に収めながら月の覇権を握る戦いへ身を投じてゆく。飛行機宇宙船の操縦技術はピカイチで人類初の宇宙戦闘経験者となる。吾郎とは逆に己の野心を実現すべくあえて孤高の存在として振舞っている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "罗斯特曼"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ジャック・F・ウッドブリッジ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Jack F. Woodbridge"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ロストマン"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 2
+    },
+    "anime_ids": [
+        2733,
+        2732
+    ]
+}

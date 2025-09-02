@@ -1,0 +1,121 @@
+{
+    "id": 326,
+    "name": "攻壳机动队 S.A.C. 2nd GIG",
+    "image_path": "data/images/anime/326.jpg",
+    "points": 9.2,
+    "cost": 6,
+    "rarity": "UR",
+    "description": "这个世界距离我们并不遥远，你把它看作是现代社会的镜子亦为不可。\r\n也许：无论人类怎样发展，人性是不会改变的，即使容纳这渺小人性的外壳换作了机器身体亦是一样。\r\n无论怎样，在一个充斥着改装身体的社会里，人类的欲望得以被延续且发扬光大，由此相关的犯罪也应运而生。\r\n由荒卷所领导的特务组织：公安9课，其实就可以算是日本社会的清洁剂。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2004-01-01",
+    "rating_rank": 1,
+    "rating_score": 9.2,
+    "rating_total": 8964,
+    "main_character_ids": [
+        84,
+        3002,
+        3008
+    ],
+    "main_characters": [
+        {
+            "id": 84,
+            "name": "草薙素子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/11/7b/84_crt_xc45y.jpg?r=1587737580",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/11/7b/84_crt_xc45y.jpg?r=1587737580",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/11/7b/84_crt_xc45y.jpg?r=1587737580",
+                "grid": "https://lain.bgm.tv/pic/crt/g/11/7b/84_crt_xc45y.jpg?r=1587737580"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3873,
+                    "name": "田中敦子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6e/af/3873_prsn_1lUVv.jpg?r=1725375926",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/af/3873_prsn_1lUVv.jpg?r=1725375926",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/af/3873_prsn_1lUVv.jpg?r=1725375926",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6e/af/3873_prsn_1lUVv.jpg?r=1725375926"
+                    },
+                    "short_summary": "日本の女性声優、ナレーターである。マウスプロモーション所属。群馬県前橋市出身。群馬県立前橋女子高等学校、フェリス女学院大学国文科卒業。",
+                    "locked": false
+                },
+                {
+                    "id": 12693,
+                    "name": "Mary Elizabeth McGlynn",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e7/d1/12693_prsn_WYbbP.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/d1/12693_prsn_WYbbP.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/d1/12693_prsn_WYbbP.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e7/d1/12693_prsn_WYbbP.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 3002,
+            "name": "バトー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/da/95/3002_crt_DyxyG.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/95/3002_crt_DyxyG.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/95/3002_crt_DyxyG.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/da/95/3002_crt_DyxyG.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3832,
+                    "name": "大塚明夫",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/18/8c/3832_prsn_O1E5c.jpg?r=1545044333"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーター。マウスプロモーション所属。\r\n父は同じく俳優・声優の大塚周夫、元妻は声優の沢海陽子。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 3008,
+            "name": "公安9課",
+            "type": 4,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f5/c8/3008_crt_ftTsK.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/c8/3008_crt_ftTsK.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/c8/3008_crt_ftTsK.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f5/c8/3008_crt_ftTsK.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

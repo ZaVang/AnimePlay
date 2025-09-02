@@ -1,0 +1,76 @@
+{
+    "id": 332,
+    "name": "河島はるか",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bb/d8/332_crt_vYYpb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/d8/332_crt_vYYpb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/d8/332_crt_vYYpb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bb/d8/332_crt_vYYpb.jpg"
+    },
+    "summary": "主人公とは実家が近所で、幼稚園以来、\r\n小中高そして大学まで一緒という間柄。\r\nマイペースな性格。気まぐれで、無気力で、\r\nそしてレジャースポーツと散歩を好む。\r\nそしてその全てに付き合ってくれる主人公は\r\n彼女のお気に入りである。\r\nだけど、それでも、友達は友達のままで…。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "河岛遥"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "河島 はるか"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かわしま はるか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kawashima Haruka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月15日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "164cm"
+        },
+        {
+            "key": "BWH",
+            "value": "74/54/78"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "升望"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 15,
+    "stat": {
+        "comments": 9,
+        "collects": 31
+    },
+    "anime_ids": [
+        993
+    ]
+}

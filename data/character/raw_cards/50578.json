@@ -1,0 +1,84 @@
+{
+    "id": 50578,
+    "name": "トウカイテイオー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/6a/83/50578_crt_Y9JG9.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/83/50578_crt_Y9JG9.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/83/50578_crt_Y9JG9.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6a/83/50578_crt_Y9JG9.jpg"
+    },
+    "summary": "在周围的期待与艳羡下长大的精英马娘，她的母亲是被称为“皇帝”的传说中的马娘。\r\n身体轻巧脚步敏捷，像是跳跃一般的独特的跑法被称呼为“帝皇步”。\r\n性格不服输且稍微有点自大，自尊心很高。虽然容易闹情绪但对赛跑的热情不输给任何人。\r\n从心底里敬爱着母亲，冀望着能有一日被母亲所认同、自己能够成为像母亲一样的最强马娘。目标母亲所达成过的“无败三冠制霸”，挑战绝对不会失败的记录。\r\n***\r\n东海帝皇（1988年4月20日~2013年8月30日）枣色\r\n公马\r\n出生地：日本（北海道新冠町）\r\n父亲是鲁铎象征(Symboli Rudolf)",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "东海帝王"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "东海帝皇"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Tokai Teio"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月20日"
+        },
+        {
+            "key": "身高",
+            "value": "150cm"
+        },
+        {
+            "key": "体重",
+            "value": "无增减"
+        },
+        {
+            "key": "BWH",
+            "value": "B77・W54・H76"
+        },
+        {
+            "key": "毛色",
+            "value": "鹿毛"
+        },
+        {
+            "key": "现实马主",
+            "value": "内村 正則"
+        },
+        {
+            "key": "成績(勝率)",
+            "value": "12戦9勝（75％）"
+        },
+        {
+            "key": "獲得賞金",
+            "value": "6億470万円 (中央)"
+        },
+        {
+            "key": "固有二つ名",
+            "value": "帝王"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 20,
+    "stat": {
+        "comments": 132,
+        "collects": 669
+    },
+    "anime_ids": [
+        315574
+    ]
+}

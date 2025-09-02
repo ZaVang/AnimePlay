@@ -1,0 +1,45 @@
+{
+    "id": 10721,
+    "name": "キノ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7c/65/10721_crt_09qz8.jpg?r=1605796650",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/65/10721_crt_09qz8.jpg?r=1605796650",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/65/10721_crt_09qz8.jpg?r=1605796650",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7c/65/10721_crt_09qz8.jpg?r=1605796650"
+    },
+    "summary": "声 - 前田愛 / 悠木碧 / 久川綾（ラジオドラマ・電撃FC）\r\n本作女主角，本名不详，是一种花名，可能是“樱”。原为大人之国的居民，家里经营旅馆。由于不想变成“大人”，在旅行者奇诺替她挡下刺向她的刀后，骑着汉密斯逃离大人之国。\r\n短发、穿着风衣的中性打扮，具有说服者（Persuader，指枪械）段位，对于旅行中所遇到的事物多采中立不关心的态度，武器主要是左轮“卡农”、单发自动式手枪“森之人”及可拆卸的步枪“长笛”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "奇诺"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Kino"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 38,
+        "collects": 343
+    },
+    "anime_ids": [
+        1948,
+        211068
+    ]
+}

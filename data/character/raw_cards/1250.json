@@ -1,0 +1,70 @@
+{
+    "id": 1250,
+    "name": "D-BOY",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/44/a9/1250_crt_YSzTb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/a9/1250_crt_YSzTb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/a9/1250_crt_YSzTb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/44/a9/1250_crt_YSzTb.jpg"
+    },
+    "summary": "主角。可变身为Tekkaman Blade。和Space Knights一同战斗。一开始不肯说出自己的身世谎称自己丧失了记忆，诺亚尔就为他起了D(angerous)-boy这个绰号。因为没有完全成为Tekkaman，所以变身成为Tekkaman有30分钟的时间限制，30分钟后他就会被拉达姆支配身体。由于不断的战斗全身组织开始受到破坏，进化成功后虽然身体组织破坏收到抑制但是进化后的副作用使组织破坏转移到了脑部，每次变身都会逐渐丧失部分记忆。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "D-Boy"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "迪博威"
+                },
+                {
+                    "v": "dangerous boy"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "相羽高野"
+                },
+                {
+                    "k": "英文名",
+                    "v": "tekkaman blade"
+                },
+                {
+                    "k": "日文名",
+                    "v": "相羽タカヤ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "テッカマンブレード"
+                },
+                {
+                    "k": "昵称",
+                    "v": "Dボウイ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 31
+    },
+    "anime_ids": [
+        2481
+    ]
+}

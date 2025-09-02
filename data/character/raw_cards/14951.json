@@ -1,0 +1,52 @@
+{
+    "id": 14951,
+    "name": "川渕千太郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e0/70/14951_crt_j2JD2.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/70/14951_crt_j2JD2.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/70/14951_crt_j2JD2.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e0/70/14951_crt_j2JD2.jpg"
+    },
+    "summary": "大柄で野蛮な少年。豪快かつ型破りな性格で、学校中から「札付きのワル」と恐れられているが、面倒見が良く正義感も強い。クリスチャン。首に母親の形見のロザリオを下げている。律子とは幼なじみ。日本とアメリカのハーフだが、日本人の母親は千太郎を残して姿を消し、叔父夫婦に引き取られた。妹と弟（叔父の子）が2人ずつおり、とても慕われている。百合香のことを好きになる。サラ･ボーンという鳩を飼っている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "川渊千太郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かわぶち せんたろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kawabuchi Sentarou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://ja.wikipedia.org/wiki/%E5%9D%82%E9%81%93%E3%81%AE%E3%82%A2%E3%83%9D%E3%83%AD%E3%83%B3"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 24
+    },
+    "anime_ids": [
+        29426
+    ]
+}

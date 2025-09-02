@@ -1,0 +1,313 @@
+{
+    "id": 37785,
+    "name": "来自新世界",
+    "image_path": "data/images/anime/37785.jpg",
+    "points": 8.2,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "1000年后的世界，日本的孩子们正不断地消失，只存在想象中的恐怖动物与人类展开殊死战斗。反乌托邦式的未来超级社会“新世界”，是口吐真言凭藉“咒力”就能移动物体的人类，与有着等同于普通人智力的生物“化鼠”共存的世界。乍看之下一切和平，但“新世界”的孩子们的行动被彻底地控制和管束着，不合适的记忆被消去，被认为有问题的孩子，如同不良产品般被分开处理。因为一些违反规则的小事而莫名地失去不少朋友的主人公渡边早季，卷进了人类与化鼠之间的战争。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 25,
+    "synergy_tags": [
+        "科幻",
+        "悬疑",
+        "TV",
+        "日本",
+        "小说改"
+    ],
+    "date": "2012-09-28",
+    "rating_rank": 145,
+    "rating_score": 8.2,
+    "rating_total": 13817,
+    "main_character_ids": [
+        17235,
+        17236,
+        17237,
+        17238,
+        17239,
+        17240,
+        17241
+    ],
+    "main_characters": [
+        {
+            "id": 17235,
+            "name": "渡辺早季",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f8/6a/17235_crt_4TZv0.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/6a/17235_crt_4TZv0.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/6a/17235_crt_4TZv0.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f8/6a/17235_crt_4TZv0.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4893,
+                    "name": "遠藤綾",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d7/68/4893_prsn_mmFDO.jpg?r=1739368057",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/68/4893_prsn_mmFDO.jpg?r=1739368057",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/68/4893_prsn_mmFDO.jpg?r=1739368057",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d7/68/4893_prsn_mmFDO.jpg?r=1739368057"
+                    },
+                    "short_summary": "遠藤 綾（えんどう あや、1980年2月17日 - ）は、日本の女性声優、ナレーター。オフィスPAC所属。\r\n山形県出身。身長160cm、血液型はO型。\r\n\r\n高校卒業後に声優を目指し上京。野沢那智が主宰する現事務所の養成所パフォーミング・アート・センターに入学し、留年を経て卒業。養成所を決めた理由は、親が野沢のことを知っていたため安心だと思ったからと語っている。\r\n初期の出演作としては2002年の『ワンだー・エディ』（第28話）、『魔王ダンテ』（第4話以降）などがある。2005年の『おくさまは女子高生』の堀口かすみ役が最初のレギュラー役出演、2007年の『らき☆すた』の高良みゆき役で知名度を上げて以来、2008年には『マクロスF』のシェリル・ノーム役、『ネオ アンジェリーク』のアンジェリーク役やOVA『舞-乙HiME 0〜S.ifr〜』のレナ・セイヤーズ役などを担当した。\r\nインターネットラジオ番組『Plume物語』内では、水野愛日、河原木志穂と共に声優ユニット・Plume（プリュム）を結成していたが、現在は活動休止中である。\r\nテレビアニメ『らき☆すた』オープニングテーマ『もってけ!セーラーふく』が第12回アニメーション神戸で主題歌賞（ラジオ関西賞）を受賞、2008年、第2回声優アワードにて平野綾、加藤英美里、福原香織と共に歌唱賞を受賞、2009年、第3回声優アワードにて助演女優賞を受賞。\r\n2013年8月8日、自身のブログで結婚を報告した。\r\n養成所時代の頃は演劇が苦手であり、師匠的存在の野沢那智によれば「演劇が嫌だ」と言っていたこともあるという。本人は「芝居はやりたいが、ラブシーンを演じるのが嫌」で、それが原因で卒業させてもらえなかったという逸話もある。野沢はそれに関して「よしじゃあ、ラブシーンのない芝居を作ろう」と語ったこともある。また、本人は元々声優がやりたかったので「声優の前に俳優であれ」という校長の言葉に周囲が重くなり、クラスの中と学校で「声優になりたい人」と言われたときに遠藤だけが手を上げていたという。",
+                    "locked": false
+                },
+                {
+                    "id": 8138,
+                    "name": "種田梨沙",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/07/06/8138_prsn_azY4i.jpg?r=1581916191",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/06/8138_prsn_azY4i.jpg?r=1581916191",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/06/8138_prsn_azY4i.jpg?r=1581916191",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/07/06/8138_prsn_azY4i.jpg?r=1581916191"
+                    },
+                    "short_summary": "初中一年级的时候打算成为一名声优是因为《哈利·波特》的影响，想做有关系的工作。但中学、高中的时候禁止一切艺能活动，通过自学学习了表演的经验技术。\r\n2007年，产生许多人气声优的‘智一・美树的广播大爆炸’一般应募进入，成为第9代的助理。与三上枝织同期。\r\n2012年9月出演《来自新世界》，为首部配演主役的动画。\r\n美术大学毕业，也取得高等学校美术教师资格。\r\n2016年9月1日，种田梨沙所属大泽事务所发布公告称，种田梨沙将因病暂停活动。有网友猜测，种田梨沙的病情可能与喉咙有关。\r\n2017年8月4日，大泽事务所发布公告，种田梨沙将重新开始进行声优活动。\r\n\r\n随着活动的暂停，原本由种田梨沙担任的角色改由以下声优代演或接任：\r\n水树奈奈：《WWW.WORKING!!》近藤妃\r\n真田麻美：《CHAOS;CHILD》久野里澪\r\n高桥李依：《Fate/Grand Order》玛修·基列莱特\r\n石原夏织：《Break Out》旁白\r\n金元寿子：《食戟之灵》薙切绘理奈\r\n川澄绫子：《剑姬神圣谭》里维莉亚·利欧斯·阿尔弗、《幻影纹章》巴尔蒙克、青龙偃月刀\r\n水濑祈：《英雄传说 闪之轨迹III》艾尔缇娜·奥莱恩\r\n加隈亚衣：《如果有妹妹就好了。》白川京\r\n此外，预定在2016年9月1日（即宣布休养）以后演出的活动和LIVE目前也全部取消出席。\r\n根据《偶像大师 百万人演唱会！》CD系列「THE IDOLM@STER THE@TER ACTIVITIES 03」的声优投票结果，原本预定登场的田中琴叶（声：种田梨沙）亦出于上述理由，决定改由第二名的矢吹可奈（声：木户衣吹）代为登场。决定取消出席的还有2017年3月12日在日本武道馆举办的《THE IDOLM@STER MILLION LIVE! 4thLIVE TH@NK YOU for SMILE!! DAY3 Starlight Theater》。\r\n《噬血狂袭Ⅱ》并未更换声优，而预定在2016年11月发售的姬柊雪菜（声：种田梨沙）的角色歌专辑也按照原定的日程发售。《黄金拼图 Pretty Days》由于已在活动暂停前录制完成，故预定在11月上映的电影亦按照原定的日程进行。\r\n\r\nBlog：sp.rhodanthe-rsc.jp\r\n注：付费粉丝Blog。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 17236,
+            "name": "朝比奈覚",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ad/06/17236_crt_PQ2i8.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/06/17236_crt_PQ2i8.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/06/17236_crt_PQ2i8.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ad/06/17236_crt_PQ2i8.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5209,
+                    "name": "梶裕貴",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/51/73/5209_prsn_bD3dr.jpg?r=1478379077"
+                    },
+                    "short_summary": "ARTSVISION第17期免费新人培育选拔会合格，并且加入了事务所ARTSVISION。\r\n2009年获得第3届声优奖—新人男声优赏，且开始了“G.Addict”的活动。\r\n2012年2月22日以本人的名义开始歌手的活动，发售第一张单曲《sense of wonder》。2012年9月5日发售第二张单曲《Hello！》。\r\n2013年获得第7届声优奖—主演男声优赏。\r\n2013年10月1日，由原来的事务所ARTSVISION转入VIMS。\r\n2014年获得第8届声优奖—主演男声优赏。\r\n\r\n拥有中性的声音，能演出从少年到青年、动物等各式各样的角色。\r\n担任剧团“妄想中毒”的pretty团长。\r\n中小学时代担任过学生会长，有体育或美术被表扬等表现，是个非常有才能的小孩。\r\n声优伙伴或支持者称呼他为“王子”。\r\n和代永翼组成团体“BRAVE WING”。\r\n与寺岛拓笃、堀江一真和阿部敦等四人组成团体“G.Addict”。\r\n性格极其纯良，待人有礼温善。虽然人前很活泼开朗，但其实是个喜欢宁静安逸的人，只有与亲近的人在一起时才会放松的流露真实自我。\r\n不只声音，外型也很中性，现在也还会被误认成女生。本人对此表示否定，表示“内在意外地很有男子气概”。\r\n虽然年轻，但是性格相当认真。寺岛拓笃评价他“面对工作上的态度很严谨”，大亲友下野纮也说：“他真的很可靠，很会待人处世，作为声优也相当优秀。”\r\n\r\n代表作品有《进击的巨人》艾伦·耶格尔、《夜樱四重奏》比泉秋名、《未来都市NO.6》紫苑、《罪恶王冠》樱满集、《七大罪》梅利奥达斯、《加速世界》有田春雪、《魔笛MAGI》阿里巴巴·沙尔贾等。",
+                    "locked": false
+                },
+                {
+                    "id": 8252,
+                    "name": "東條加那子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/84/99/8252_prsn_KvMza.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/84/99/8252_prsn_KvMza.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/84/99/8252_prsn_KvMza.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/84/99/8252_prsn_KvMza.jpg"
+                    },
+                    "short_summary": "アクセルワン所属。鹿児島県出身。\r\n勝田声優学院第19期卒業生。\r\n洋画・海外ドラマの吹き替え作品に数多く出演している。\r\n2011年5月までアーツビジョンに所属していた。同年8月よりアクセルワン所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 17237,
+            "name": "青沼瞬",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/01/60/17237_crt_A3Spa.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/60/17237_crt_A3Spa.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/60/17237_crt_A3Spa.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/01/60/17237_crt_A3Spa.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5631,
+                    "name": "藤堂真衣",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ca/cb/5631_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/cb/5631_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/cb/5631_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ca/cb/5631_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                },
+                {
+                    "id": 8253,
+                    "name": "村瀬歩",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ee/d9/8253_prsn_hnQG2.jpg?r=1543332484",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/d9/8253_prsn_hnQG2.jpg?r=1543332484",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/d9/8253_prsn_hnQG2.jpg?r=1543332484",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ee/d9/8253_prsn_hnQG2.jpg?r=1543332484"
+                    },
+                    "short_summary": "村瀬 歩（むらせ あゆむ、1988年12月14日 - ）は、日本の男性声優。アメリカ合衆国出身。ヴィムス所属。\r\n\r\nアメリカで生まれた後、高校時代まで愛知県で過ごし、京都府の大学に進学後上京。\r\n芝居を観るのが好きだったことから声優を目指し、日本ナレーション演技研究所へ入所。2012年、『Persona4 the ANIMATION』で声優デビュー。同年、『新世界より』の青沼瞬（14歳）役で初のメインキャラクターを演じた。2014年、『ハイキュー!!』の日向翔陽役で初主演を果たした。\r\n2016年に、第10回声優アワードで新人男優賞を受賞した。\r\n\r\n尊敬する声優は、自身が声優を目指すきっかけとなった大友龍三郎や、年齢が近く共演も多い松岡禎丞。\r\n中性的な音質を生かした役を演じることが多く、女性のガヤに加わったり、『チア男子!!』では佐久間龍造役と姉3名の役も兼ねるなど、女性キャラクターを演じることもある。またラジオなどでも村瀬歩（あゆみ）という女子の設定で話すことがある。一方で、『M3〜ソノ黒キ鋼〜』の伊削ヘイト役のように狂気じみた低音ボイスもこなせるほど声域が非常に広い。\r\n帰国子女のため英会話が堪能で、英語を必要とするモブキャラやガヤもこなし、洋画の吹き替えも増えている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 17238,
+            "name": "秋月真理亜",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/aa/b4/17238_crt_ihLN3.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/b4/17238_crt_ihLN3.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/b4/17238_crt_ihLN3.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/aa/b4/17238_crt_ihLN3.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4765,
+                    "name": "花澤香菜",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ae/ff/4765_prsn_04olO.jpg?r=1630981320",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ae/ff/4765_prsn_04olO.jpg?r=1630981320",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ae/ff/4765_prsn_04olO.jpg?r=1630981320",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ae/ff/4765_prsn_04olO.jpg?r=1630981320"
+                    },
+                    "short_summary": "　　花泽香菜（1989年2月25日－），是一名日本女性艺人、声优、演员。大泽事务所所属，前Smile-Monkey所属。2007年开始是大学生，到2011年为止都是半工半读。\r\n　　从幼女到青少年的少女，被多次选拔为主角役。近来则出演过随和系，小大人系，娇蛮系，腹黑少女，纯情派等多种多样的角色。歌曲演唱好象还在修行中。很多配音的角色都是平刘海短发学生头，而且大都不是正常人类（主角正常人类的也少），且不知为何以眼镜娘居多。\r\n　　曾以童星的身份演出《やっぱりさんま大先生》和《ガッコの先生》。亦是由于是儿童演员出身，所以和一般传统声优不同是采用自然声而非假声配音，而且能配一些很平实不做作的角色，但亦能配出很动画化、很夸张的萌音。\r\n       演员身份方面则在东京深夜播放的剧集怨屋本铺饰演青山美香。\r\n　　有一个弟弟，而且是弟控，曾经和田村由加利、樱井浩美谈话时谈到弟弟的时候就变得很兴奋\r\n　　曾有过偷饮母亲的酒而变成吻魔到处吻人的事件，因此现在不喝酒。\r\n　　头发是天然的卷发，在弄发型的时候要花很多时间\r\n　　经常在作品中和比她年长得多的一线声优大演对手戏，当中合作最多则是神谷浩史。\r\n       由于多部作品都演姊妹，所以和户松遥感情很好，但有趣是不论是入行还是实际年纪花泽都比户松大，但动画中却是户松演姊姊。另外也和辻步美感情很好。\r\n　　自从在《我的妹妹哪有这么可爱！》中和竹达彩奈合作后二人感情突飞猛进，在网络电台中经常大放闪光弹，甚至在花泽香菜生日的当天被竹达逼问‘给我说清楚哪个才是正妻啊！！’  \r\n\r\n　　2006年，被选为东京电视系的动画《ZEGAPAIN》中的主角角色之一 守凪了子。Fans称之为“和初期的能登麻美子说话没有感情起伏（良い棒読み）很像”，简称“良い棒”、“棒子”。\r\n　　在《ZEGAPAIN》演出当时仍不是声优，在共演的川澄绫子建议她成为全职声优后，移籍到川澄隶属的大泽事务所，正式踏上声优之路。到现在川澄绫子仍经常给她技术指导。\r\n　　2007年，更演出动画月面兔兵器米娜的角色羽蝉ナコル。\r\n       2010年12月19日，获得《ノン子とのび太のアニメスクランブル》听众投票选出的“动画大赏2010”最优秀女声优奖。\r\n　　2011年与日笠阳子、井口裕香、日高里菜、小仓唯一起组成了声优团体“ro-kyu-bu\"，共同出演了动画《萝球社》并演唱了动画的OP以及ED。2011年8月28日，ro-kyu-bu参加了在埼玉举办的ASL2011的演出。\r\n      2012年2月宣布以个人歌手名义出道，唱片公司为Aniplex，4月25日推出首张单曲《星空☆ディスティネーション》。\r\n      2012年3月11日，到香港参加“C3日本动玩博览2012 DAY3”。\r\n      2013年2月20日推出首张专辑《claire》。\r\n      2013年4月17日，获得“Fami通大赏 2012”角色声优奖。\r\n      2013年9月27日，十月新番《来自风平浪静的明天》举办了声优们到场的先行上映会。在会场举办的声优谈话节目中，饰演主人公先岛光的花江夏树提到“自己最近瘦了下来，体重减到45kg”的时候，香菜不由地回应道“和我一样啊”，随后又反应过来，自己把女孩子不该透漏的秘密说了出去，因而后悔不已。这个消息迅速在日本的各类动漫论坛传播开来。由此，花泽香菜的目前体重资料得到了公开——45kg。\r\n      2015年，在第9回声优奖中获得助演女优奖。\r\n      2015年5月3日，在日本武道馆举办个人演唱会，成为第八位在武道馆举办个人演唱会的声优。\r\n      2017年，据《周刊文春》称与小野贤章热恋并已经同居，事务所承认恋情属实。\r\n      2020年7月8日，宣布已与小野贤章结婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 17239,
+            "name": "伊東守",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a3/1b/17239_crt_1I7Dx.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a3/1b/17239_crt_1I7Dx.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a3/1b/17239_crt_1I7Dx.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a3/1b/17239_crt_1I7Dx.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4671,
+                    "name": "工藤晴香",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b0/1c/4671_prsn_p1xXW.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/1c/4671_prsn_p1xXW.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/1c/4671_prsn_p1xXW.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b0/1c/4671_prsn_p1xXW.jpg"
+                    },
+                    "short_summary": "工藤 晴香（1989年3月16日－）是日本的女性声优、模特及艺能人，曾经所属于Sigma Seven e和ELBS Entertainment，2017年移籍至Ace Crew Entertainment inc.。\r\n她的代表作为《蜂蜜幸运草》（花本育）及动画版《死亡笔记》（夜神妆裕）等等。\r\n另外，她曾担任青年时尚杂志《Seventeen》的专属模特直到2007年5月为止。",
+                    "locked": false
+                },
+                {
+                    "id": 4679,
+                    "name": "高城元気",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/97/78/4679_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/97/78/4679_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/97/78/4679_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/97/78/4679_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "高城 元気（たかぎ もとき、1980年10月4日 - ）は、日本の声優、舞台俳優。アイムエンタープライズ所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 17240,
+            "name": "野狐丸",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/31/cc/17240_crt_18IJ1.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/31/cc/17240_crt_18IJ1.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/31/cc/17240_crt_18IJ1.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/31/cc/17240_crt_18IJ1.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4254,
+                    "name": "浪川大輔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/70/c3/4254_prsn_99K43.jpg?r=1631019573"
+                    },
+                    "short_summary": "浪川 大輔（なみかわ だいすけ、1976年4月2日 - ） は、日本の声優、俳優、歌手、ナレーター。ステイラック代表取締役。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 17241,
+            "name": "奇狼丸",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4c/cb/17241_crt_8w6Vx.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/cb/17241_crt_8w6Vx.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/cb/17241_crt_8w6Vx.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4c/cb/17241_crt_8w6Vx.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4184,
+                    "name": "平田広明",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3c/4c/4184_prsn_trDqk.jpg?r=1492863980",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/4c/4184_prsn_trDqk.jpg?r=1492863980",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/4c/4184_prsn_trDqk.jpg?r=1492863980",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3c/4c/4184_prsn_trDqk.jpg?r=1492863980"
+                    },
+                    "short_summary": "平田 広明（ひらた ひろあき、1963年8月7日 - ）は、日本の声優、俳優、ナレーターである。ひらたプロダクションジャパン所属。\r\n代表作に『ER緊急救命室』（ジョン・トルーマン・カーターの吹き替え）、『ONE PIECE』（サンジ）、『パイレーツ・オブ・カリビアン』（ジャック・スパロウの吹き替え）、『宇宙兄弟』（南波六太）。\r\n\r\n高校卒業後、昴演劇学校を経て劇団昴に所属する。初舞台は1986年『夏の夜の夢』。舞台俳優として活動していたころに、当時のマネージャーから「声優に興味があるか」と誘われ、オーディションを受けたのが声優業をはじめるきっかけとなった。以後、数多くの洋画の吹き替えやアニメなどで活動している。\r\n2011年にアニメ『TIGER & BUNNY』で主人公を演じ、第11回東京アニメアワード個人部門声優賞、第6回声優アワード主演男優賞 を受賞。同年、27年間在籍した劇団昴を離れ、新たにひらたプロダクションジャパンを立ち上げた。\r\n2017年1月9日、テレビ朝日にて放映された『人気声優200人が本気で選んだ!声優総選挙!3時間SP』で第25位に選ばれる。\r\n\r\nジョニー・デップをはじめ、マット・デイモンやジュード・ロウ、エドワード・ノートン、ノア・ワイリー、ユアン・マクレガーなどの海外俳優や数多くの洋画作品で吹き替えを担当している。平田自身は「自分だったらこう演じたい」と意思の乗せられる、セリフの少ない役者を吹替えるのが好きであると公言している。また、目標としている声優は小池朝雄で、彼の演じた『刑事コロンボ』が吹替を演じる上での目標であると語っている。2015年には、『チャーリー・モルデカイ 華麗なる名画の秘密』のPRの為に来日したジョニー・デップと共演を果たし、本人も公認するフィックス声優となった。また、ジャパンプレミアで共演した際、ジョニー・デップ自身は平田が花束を渡す際に「僕の方が彼に花束を渡すべきです。自分の声を20年も担当してくれたことが本当に光栄に思う」と語っている。\r\n森川智之と宮本充、堀内賢雄と並んでジョニー・デップとトム・クルーズ、キアヌ・リーブスとブラッド・ピット両者の吹き替えを経験している数少ない人物でもある。\r\nかつて声優業を行うことに抵抗のある者から「吹き替えなんかやるな、セリフがアテレコ調になる」と言われ、自分でもそう思ったこともあったが、自身が敬愛し、声優業を行っていた小池朝雄の演技を見て芸が荒れているとは到底思えず、「アテレコやってたおかげで芝居の幅が広がるということはあっても、それが舞台での芝居の足を引っ張ることは一切あり得ない」という確信を持つようになったという。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

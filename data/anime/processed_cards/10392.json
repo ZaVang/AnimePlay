@@ -1,0 +1,89 @@
+{
+    "id": 10392,
+    "name": "银河铁道999",
+    "image_path": "data/images/anime/10392.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "主角星野铁郎受母亲的影响，希望搭上银河铁道999，到达可以获得免费改造成机械身体权利的安达罗星云，母亲却被机械伯爵所杀，后来遇上谜样的女子，给他的车票，于是搭上列车，展开旅程，途中经过宇宙中各种不同的星星，发生各种事情。 \r\n　　连环画版中的结尾，铁郎向梅戴尔表白自己的喜爱，她婉转的拒绝了并在铁郎回到地球后搭乘999号列车去寻找自己真正的身体。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 113,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1978-09-14",
+    "rating_rank": 455,
+    "rating_score": 7.9,
+    "rating_total": 266,
+    "main_character_ids": [
+        3589,
+        9844
+    ],
+    "main_characters": [
+        {
+            "id": 3589,
+            "name": "メーテル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a8/06/3589_crt_LwKRJ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a8/06/3589_crt_LwKRJ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a8/06/3589_crt_LwKRJ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a8/06/3589_crt_LwKRJ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4111,
+                    "name": "池田昌子",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/64/f0/4111_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/64/f0/4111_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/64/f0/4111_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/64/f0/4111_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、女優、ナレーターである。東京府東京市小石川区（現：東京都文京区）出身。東京俳優生活協同組合所属。\r\n\r\nオードリー・ヘプバーンの吹き替えや、アニメ『銀河鉄道999』のメーテル役などで知られる。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9844,
+            "name": "星野鉄郎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e6/8d/9844_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/8d/9844_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/8d/9844_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e6/8d/9844_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3954,
+                    "name": "野沢雅子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/ee/3954_prsn_mTEmk.jpg"
+                    },
+                    "short_summary": "日本の声優、女優、歌手、ナレーター。本名：塚田 雅子（つかだ まさこ、旧姓：野沢）。所属事務所は青二プロダクション。劇団ムーンライト主宰。\r\n\r\n東京都日暮里出身。身長157cm、血液型はO型。役者仲間からの愛称はマコさん。夫は同じく声優の塚田正昭。\r\n\r\n声優としての代表作に『ゲゲゲの鬼太郎』（鬼太郎）、『いなかっぺ大将』（風 大左衛門）、『ど根性ガエル』（ひろし）、『銀河鉄道999』（星野鉄郎）、『ドラゴンボール』シリーズ（孫悟空、孫悟飯、孫悟天）など。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

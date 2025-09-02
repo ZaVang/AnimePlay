@@ -1,0 +1,89 @@
+{
+    "id": 36271,
+    "name": "棋魂特别篇 迈向北斗杯之路",
+    "image_path": "data/images/anime/36271.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "运动",
+        "漫画改",
+        "少年向"
+    ],
+    "date": "2004-01-03",
+    "rating_rank": 736,
+    "rating_score": 7.6,
+    "rating_total": 837,
+    "main_character_ids": [
+        215,
+        217
+    ],
+    "main_characters": [
+        {
+            "id": 215,
+            "name": "進藤ヒカル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b9/6b/215_crt_YZ59e.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/6b/215_crt_YZ59e.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/6b/215_crt_YZ59e.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b9/6b/215_crt_YZ59e.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3880,
+                    "name": "川上とも子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/da/05/3880_prsn_NX58v.jpg?r=1678190819",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/05/3880_prsn_NX58v.jpg?r=1678190819",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/05/3880_prsn_NX58v.jpg?r=1678190819",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/da/05/3880_prsn_NX58v.jpg?r=1678190819"
+                    },
+                    "short_summary": "川上伦子（艺名：川上 とも子，1970年4月25日－2011年6月9日）是一名日本女性声优。血型O型。东京都出身。隶属于Production baobab事务所。自2008年8月16日因病住院而暂停其声优事业，Keroro军曹的日向冬树和BLEACH的砕蜂这2个角色暂时由另一位声优桑岛法子代役。自手术过后于2008年10月开始进入长期休养的状态，2009后半年出院后复出，2011年6月9日过世，享年41岁。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 217,
+            "name": "塔矢アキラ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/04/62/217_crt_y7cMB.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/62/217_crt_y7cMB.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/62/217_crt_y7cMB.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/04/62/217_crt_y7cMB.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4428,
+                    "name": "小林沙苗",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/07/54/4428_prsn_9cDQ7.jpg?r=1515082891",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/54/4428_prsn_9cDQ7.jpg?r=1515082891",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/54/4428_prsn_9cDQ7.jpg?r=1515082891",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/07/54/4428_prsn_9cDQ7.jpg?r=1515082891"
+                    },
+                    "short_summary": "小林沙苗（1980年1月26日－）为日本女性声优。出生于静冈县滨松市滨北区。2015年6月1日隶属公司从Production baobab移至Sigma Seven。\r\n\r\n简介\r\n最初的梦想是成为演员，高中时为地区音乐剧团“ステージ97”所属团员，在该剧团东京公演时，被前来观戏的声优立壁和也赏识其演技力并网罗至声优界。\r\n刚出道时因为仍在该地区大学就读的关系，以新干线来往东京通勤工作。\r\n主要工作是外国片、动画、游戏、以及广播剧配音，近期以幼教片、外国片日文配音居多。\r\n声线范围广泛，是少数拥有“七色之声”美名的声优之一，属于高演技力的实力派，从少年到少女、年长的女性到冷艳气质的大姐、角色的人格分裂都能完美诠释。\r\n第一次配音的作品是外国片的一名小配角，台词只有结尾的一段话，因而等候录音等到睡着。在那之后，她多次为有赛琳娜·戈麦斯、美莎·芭顿、河智苑出演的外国片进行日语配音。\r\n有潜水员执照、剑道初段，但为了保护声带而放弃需要用力呐喊的剑道。\r\n在戏剧之外的兴趣是绘画，曾在访谈中提到若没成为声优就会想走美术系。\r\n曾与永野椎菜的企划“ShiinaTactix”合作，录制‘ShiinaTactix-Sana.K’专辑，但随后则婉拒第二张专辑合作计划。\r\n\r\n交友关系\r\n和铃村健一、樱井孝宏在工作上有多次合作因此成为好友。\r\n与松来未祐交情深厚，曾在生日时一同前往东京迪斯尼乐园庆祝。在出演《D.Gray-man》之后，也与饰演利娜莉一角的伊藤静相互结识。\r\n与丰口惠、水树奈奈、能登麻美子因在《草莓100%》中共演而深交，成为所谓的“草莓聚会（いちご会）”。\r\n\r\n角色佚话\r\n在《草莓100%》中，小林饰演北大路皋月一角，但最初小林所试镜的角色是西野司，反而现在饰演西野司的丰口惠最初试镜的角色是北大路皋月。\r\n在《魔法少女奈叶A's》中，小林为暗之书／Reinforce一角献声，但最初试镜的角色是守护骑士的席格娜，反之现在饰演席格娜的清水香里最初则试镜的角色是暗之书／Reinforce。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

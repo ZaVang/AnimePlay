@@ -1,0 +1,101 @@
+{
+    "id": 467,
+    "name": "秋山澪",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2c/b7/467_crt_xTYj0.jpg?r=1733754923",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/b7/467_crt_xTYj0.jpg?r=1733754923",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/b7/467_crt_xTYj0.jpg?r=1733754923",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2c/b7/467_crt_xTYj0.jpg?r=1733754923"
+    },
+    "summary": "秋山 澪（日语：秋山 澪，あきやま みお，Akiyama Mio）是《轻音少女》（K-ON!）的女主角之一。轻音部的电贝斯手及合唱（有时也会担任主唱）。会写出很肉麻、可爱、甜蜜的歌词，学习一级棒（曾被律视为考试时的救星），唱歌（被许多人夸声音非常优美）。是一个左撇子，眼角稍稍挑起，有着到腰长度的黑发。是轻音部中唯一有后援会的部员。\r\n乐器是Fender japan JB62-DMC/VSP/3TS LH\r\n扩音器是Fender Japan BMC-20WZY\r\n动画中澪所用的耳机为AKG K701耳机，对播放器电流输出能力有很高的要求，一般需搭配高级耳放及解码器使用，若以较为低端的播放器推动则容易出恶声。目前该耳机为AKG在产民用次旗舰耳机，在中国售价为2000元人民币左右。EP05中使用的播放器疑为Panasonic CT-570，另EP13中K701亦有亮相。K701在日本一度被炒作到70000日元以上。\r\n动画中澪所用的手机为三菱FOMO手机的D902i，2005上市，滑盖，2.8英寸240×400像素的QVGA液晶屏，200万像素CCD相机等，澪用的是莹白色的。目前已经很难买到了。\r\n第一季的第十三番外中澪所用的笔记本为Macbook MC240\r\n澪的姓氏来源于秋山胜彦，直接取自于79年结成2000年解散的音乐组合P-MODEL。\r\n    秋山澪分别拿下2010年国际最萌联盟比赛的冠军和海蓝宝石项链（Aquamarine Necklace）2012年黄玉宝石项链（Topaz Necklace）。\r\n    2010年韩国动画最萌大赛（韩萌+韩超萌）拿下冠军。\r\n    2010年批踢踢希洽板（C Chat）最萌大赛拿下冠军。\r\n    动画中穿着女仆装（黑色膝上袜+纯白色围裙+女仆发带）发动“萌啊萌啊啾（萌え萌えキュン♥）”，是戏仿《守护甜心》日奈森亚梦的“Open Heart”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "秋山澪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Mio Akiyama"
+                },
+                {
+                    "k": "日文名",
+                    "v": "秋山 澪"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あきやまみお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Akiyama Mio"
+                },
+                {
+                    "k": "昵称",
+                    "v": "Mio"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月15日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "54kg"
+        },
+        {
+            "key": "星座",
+            "value": "摩羯座"
+        },
+        {
+            "key": "声优",
+            "value": "日笠阳子"
+        },
+        {
+            "key": "位置",
+            "value": "贝斯手"
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        },
+        {
+            "key": "头发",
+            "value": "黑灰色齐腰直发"
+        },
+        {
+            "key": "眸色",
+            "value": "黑"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 15,
+    "stat": {
+        "comments": 165,
+        "collects": 1576
+    },
+    "anime_ids": [
+        3774,
+        1424
+    ]
+}

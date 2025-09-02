@@ -1,0 +1,80 @@
+{
+    "id": 52507,
+    "name": "美竹蘭",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ea/6e/52507_crt_jp88J.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/6e/52507_crt_jp88J.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/6e/52507_crt_jp88J.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ea/6e/52507_crt_jp88J.jpg"
+    },
+    "summary": "拥有百年历史的花道家族中的独生女。\r\n个性好强讨厌失败，也有着感到寂寞的一面。\r\n非常重视青梅竹马和亲人。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "美竹兰"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みたけ らん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mitake Ran"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月10日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "担当",
+            "value": "主唱&amp;吉他"
+        },
+        {
+            "key": "星座",
+            "value": "牡羊座"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "苦味的点心"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "青豆"
+        },
+        {
+            "key": "所属",
+            "value": "Afterglow"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 10,
+    "stat": {
+        "comments": 36,
+        "collects": 91
+    },
+    "anime_ids": [
+        246431
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": 36463,
+    "name": "トーマス・オブライアン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f9/d8/36463_crt_h5fYF.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/d8/36463_crt_h5fYF.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/d8/36463_crt_h5fYF.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f9/d8/36463_crt_h5fYF.jpg"
+    },
+    "summary": "ヴァイオリンの名人で、舞台に上がると堂々と演奏ができるのに、普段は地味で照れ屋なおにいさん。密かにシルビィーに恋心を寄せているが、そんな性格ゆえに気付いてもらえないよう",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "托马斯·奥布莱恩"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Thomas O'Brien"
+                },
+                {
+                    "k": "日文名",
+                    "v": "トーマス・オブライアン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tōmasu Oburaian"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        9564
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "id": 29215,
+    "name": "蘭飛鴻",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fa/d4/29215_crt_mlLEC.jpg?r=1429252556",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/d4/29215_crt_mlLEC.jpg?r=1429252556",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/d4/29215_crt_mlLEC.jpg?r=1429252556",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fa/d4/29215_crt_mlLEC.jpg?r=1429252556"
+    },
+    "summary": "曾在大同馆修行，和阿昴同获“特级厨师”的头衔的冷静美少年。漫画版中成为宫廷御厨龙厨师并帮助阿昴击败朱七，一洗冤屈；及后再战阿昴；结局中与众人一同上路。动画版中被“黑暗料理界”以药物操控成为麟厨师，幸得到阿昴以“传说中的厨具”救助痊愈。透露自己曾经被阿贝师傅救活，不然自己也成为黑暗料理界的麟厨师，漫画为贝仙女与亚刊料理对决平手之后勉强把强褓中的阿飞救出来，动画则为阿飞自己从黑暗料理界逃出来，在大雪纷飞中于菊下楼门口前倒下，被贝仙女救起来。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "兰飞鸿"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "阿飞"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Lan Fei Hong"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ラン・フェイフォン"
+                },
+                {
+                    "k": "昵称",
+                    "v": "フェイ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://zh.wikipedia.org/wiki/%E4%B8%AD%E8%8F%AF%E4%B8%80%E7%95%AA%EF%BC%81%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 2
+    },
+    "anime_ids": [
+        1934
+    ]
+}

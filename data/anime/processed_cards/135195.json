@@ -1,0 +1,58 @@
+{
+    "id": 135195,
+    "name": "第一神拳 冠军之路",
+    "image_path": "data/images/anime/135195.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　壮絶なる戦いの末、千堂を破りついに幕之内一歩は日本フェザー級チャンピオンの座を手に入れた。そして一歩は「挑戦者」から「チャンピオン」として、初防衛戦の相手が決まる。\r\n　　その挑戦者の名は真田一機。二階級制覇を目指しジュニア・フェザー級のタイトルを返上した強敵。真田は、現役医大生というもう一つの顔を持ち、それは人体の何処を殴れば、スタミナを奪い、確実なダメージで相手を倒せるかを熟知している、さらに自分のコンディションを発汗量、呼吸、心拍数から医学的に冷静に判断する、最もインテリジェンスな戦術をもったボクサー。\r\n　　一方、初防衛戦を迎える一歩は、緊張に加え、対戦相手の情報を知れば知るほどに不安と恐怖に襲われはじめる。さらに驚くべきは、真田一機のトレーナーには鴨川会長の現役時代のライバル・浜団吉がついており、団吉の現役時代の必殺技「飛燕」が伝授されていた。\r\n　　一歩の所属するジムの先輩の鷹村や木村、かつての対戦相手、母親に励まされ、そして一歩が想いを寄せている久美ちゃんに見守られる中、初防衛戦の日が迫ってくる、一歩対真田、そしてコーチ因縁の対決、鴨川会長ＶＳ浜　団吉、それぞれの想いが交錯し、いよいよ決戦の日が訪れる！\r\n　　はたして一歩は「飛燕」をかいくぐり、勝機を見出せるか？ ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2003-04-18",
+    "rating_rank": 1229,
+    "rating_score": 7.6,
+    "rating_total": 66,
+    "main_character_ids": [
+        1971
+    ],
+    "main_characters": [
+        {
+            "id": 1971,
+            "name": "幕之内一歩",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/65/95/1971_crt_ulnp9.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/95/1971_crt_ulnp9.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/95/1971_crt_ulnp9.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/65/95/1971_crt_ulnp9.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4562,
+                    "name": "喜安浩平",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fd/32/4562_prsn_L0lFg.jpg?r=1718790295",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/32/4562_prsn_L0lFg.jpg?r=1718790295",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/32/4562_prsn_L0lFg.jpg?r=1718790295",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fd/32/4562_prsn_L0lFg.jpg?r=1718790295"
+                    },
+                    "short_summary": "【ナイロン100℃とブルドッキングヘッドロックの劇団員】\r\n演劇、映画、テレビの脚本。舞台演出。俳優。声優。芸術家志望。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

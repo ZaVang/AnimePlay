@@ -1,0 +1,60 @@
+{
+    "id": 20135,
+    "name": "比屋定真帆",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f3/ac/20135_crt_8foKm.jpg?r=1525056120",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/ac/20135_crt_8foKm.jpg?r=1525056120",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/ac/20135_crt_8foKm.jpg?r=1525056120",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f3/ac/20135_crt_8foKm.jpg?r=1525056120"
+    },
+    "summary": "ヴィクトル・コンドリア大学脳科学研究所の研究員で、牧瀬紅莉栖の先輩。非常に小柄でとても21歳には見えないので、日没後に街を歩いているといつも補導されそうになる。性格はキッめ。相手が誰であろうと物怖じせず理路整然と論破してしまうために敵を作りやすく、ツンデレを通り結してッンドラに近い。口調は懲勲無礼。専攻は人工知能で、人I旧の記憶を人工知能に移植する研究を続けている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "比屋定真帆"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "比屋定 真帆"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひやじょう まほ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hiyajo Maho"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月2日"
+        },
+        {
+            "key": "年齡",
+            "value": "21"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 2,
+    "stat": {
+        "comments": 50,
+        "collects": 242
+    },
+    "anime_ids": [
+        129807
+    ]
+}

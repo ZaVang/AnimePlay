@@ -1,0 +1,82 @@
+{
+    "id": 8492,
+    "name": "初春飾利",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/18/4d/8492_crt_FngwT.jpg?r=1580042313",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/4d/8492_crt_FngwT.jpg?r=1580042313",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/4d/8492_crt_FngwT.jpg?r=1580042313",
+        "grid": "https://lain.bgm.tv/pic/crt/g/18/4d/8492_crt_FngwT.jpg?r=1580042313"
+    },
+    "summary": "栅川初中一年级，和黑子同为第177支部的风纪委员。留着黑色短发，头戴花圈，远看好像头顶着花瓶。白井的好友兼拍挡。对贵族大小姐的生活相当憧憬，很喜欢婚后光子所饲养名叫爱卡迪莉娜的蟒蛇。害羞谦逊，喜欢吃甜食，体能很差。但对风纪委员这项工作很认真。\r\n能力为等级一的定温保存（Thermal Hand），只能做到使拿着的物体保持一定温度。黑客能力高超，工作时负责运用电脑处理信息，技术让专业人员都为之吃惊。独力设计“书库”的防火墙，击败许多网络黑客的入侵，是都市传说中“守护神（Gatekeeper）”的正体（但本人并不知晓）。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "初春饰利"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "初春飾利"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ういはる かざり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Uiharu Kazari"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "153cm"
+        },
+        {
+            "key": "体重",
+            "value": "43kg"
+        },
+        {
+            "key": "BWH",
+            "value": "75/58/76"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "超能力",
+            "value": "定温保存（サーマルハンド）"
+        },
+        {
+            "key": "超能力等级",
+            "value": "Level 1"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 21,
+        "collects": 224
+    },
+    "anime_ids": [
+        262940,
+        51928,
+        2585
+    ]
+}

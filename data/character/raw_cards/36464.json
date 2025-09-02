@@ -1,0 +1,56 @@
+{
+    "id": 36464,
+    "name": "アーベル・ガイガー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/cb/0f/36464_crt_dghHM.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cb/0f/36464_crt_dghHM.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cb/0f/36464_crt_dghHM.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cb/0f/36464_crt_dghHM.jpg"
+    },
+    "summary": "陽気な道化師（ピエロ）芸達者で子供たちの人気者。医術の心得があるちょっと謎のありそうなおじさん。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿贝尔·盖革"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Abel Geiger"
+                },
+                {
+                    "k": "日文名",
+                    "v": "アーベル・ガイガー"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Āberu Gaigā"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.toei-anim.co.jp/tv/nadja/frame_chara.html"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        9564
+    ]
+}

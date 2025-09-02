@@ -1,0 +1,382 @@
+{
+    "id": 4035,
+    "type": 2,
+    "name": "BECK",
+    "name_cn": "摇滚新乐团",
+    "summary": "故事开始于每天过着平凡的生活，并对未来感到不安的14岁少年田中幸雄，在某天遇到了一位谜样人物南龙介后就一脚踏入了音乐的世界。以田中幸雄、南龙介为中心并集结其他才华洋溢的成员所形成的乐团BECK，虽然历经许多失败与挫折，但成员们还是对自己的乐团抱持信心一步步缓缓前进。在作品中可看到小雄活用他天生的好歌喉和作曲能力为乐团做出许多贡献，但一方面也因吉他功力不足而有不少扯后腿的场面；在龙介的异父妹妹、同时也是恋人的真帆支持下，过着以乐团为中心并不同于一般高中生的生活。 ",
+    "nsfw": false,
+    "locked": false,
+    "date": "2004-10-06",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/4f/81/4035_nKZCN.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/4f/81/4035_nKZCN.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/4f/81/4035_nKZCN.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/4f/81/4035_nKZCN.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/4f/81/4035_nKZCN.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "摇滚新乐团"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ベック",
+                    "k": null
+                },
+                {
+                    "v": "BECK: Mongolian Chop Squad",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "26"
+        },
+        {
+            "key": "放送开始",
+            "value": "2004年10月6日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期三"
+        },
+        {
+            "key": "官方网站",
+            "value": [
+                {
+                    "v": "http://www.beck.ne.jp/index.html",
+                    "k": "官网（已失效）"
+                },
+                {
+                    "v": "https://www.tv-tokyo.co.jp/anime/beck/",
+                    "k": "东京电视台"
+                }
+            ]
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京"
+        },
+        {
+            "key": "播放结束",
+            "value": "2005年3月30日"
+        },
+        {
+            "key": "导演",
+            "value": "小林治"
+        },
+        {
+            "key": "音乐",
+            "value": "西岡和哉；演奏：Typhoon24"
+        },
+        {
+            "key": "Copyright",
+            "value": "©ハロルド作石・講談社／2004 BECK製作員会"
+        },
+        {
+            "key": "脚本",
+            "value": "小林治"
+        },
+        {
+            "key": "人物设定",
+            "value": "堀元宣、小林治"
+        },
+        {
+            "key": "美术监督",
+            "value": "上原伸一"
+        },
+        {
+            "key": "音乐制作",
+            "value": "DefSTAR RECORDS[デフスターレコーズ]"
+        },
+        {
+            "key": "製作",
+            "value": "BECK製作委員会（キングレコード、マーベラス、MADHOUSE）"
+        },
+        {
+            "key": "摄影制作人",
+            "value": "奈良井昌幸"
+        },
+        {
+            "key": "摄影监督",
+            "value": "尾崎隆晴"
+        },
+        {
+            "key": "设定",
+            "value": "武山篤"
+        },
+        {
+            "key": "CGI 导演",
+            "value": "ハヤシヒロミ"
+        },
+        {
+            "key": "录音",
+            "value": "松岡義昭"
+        },
+        {
+            "key": "音效",
+            "value": "佐藤秀国"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "音乐综合制作人：ヒダカトオル[日高央]（BEAT CRUSADERS）"
+        },
+        {
+            "key": "原作",
+            "value": "ハロルド作石（講談社「月刊少年マガジン」連載）"
+        },
+        {
+            "key": "企画",
+            "value": "大月俊倫、中山晴喜、丸山正雄；企画协力：清水保雄、猪熊泰則、江田慎一、高見洋平"
+        },
+        {
+            "key": "执行制片人",
+            "value": "森山敦、片岡義朗、松本慶明"
+        },
+        {
+            "key": "制片人",
+            "value": "宿利剛、中嶋嘉美"
+        },
+        {
+            "key": "助理制片人",
+            "value": "川村彩"
+        },
+        {
+            "key": "动画制片人",
+            "value": "笠井信児（#1-#18）→諸澤昌男（#19-#26）"
+        },
+        {
+            "key": "宣传",
+            "value": "竹下浩一郎（#1-#22）、田村孔亮、丸山創"
+        }
+    ],
+    "volumes": 0,
+    "eps": 26,
+    "total_episodes": 26,
+    "rating": {
+        "rank": 475,
+        "total": 1264,
+        "count": {
+            "one": 5,
+            "two": 1,
+            "three": 6,
+            "four": 11,
+            "five": 29,
+            "six": 85,
+            "seven": 336,
+            "eight": 479,
+            "nine": 213,
+            "ten": 99
+        },
+        "score": 7.8
+    },
+    "collection": {
+        "wish": 2268,
+        "collect": 1640,
+        "doing": 297,
+        "on_hold": 230,
+        "dropped": 86
+    },
+    "tags": [
+        {
+            "name": "MADHouse",
+            "count": 437
+        },
+        {
+            "name": "摇滚",
+            "count": 369
+        },
+        {
+            "name": "音乐",
+            "count": 356
+        },
+        {
+            "name": "TV",
+            "count": 290
+        },
+        {
+            "name": "2004",
+            "count": 217
+        },
+        {
+            "name": "BECK",
+            "count": 203
+        },
+        {
+            "name": "乐队",
+            "count": 189
+        },
+        {
+            "name": "漫画改",
+            "count": 182
+        },
+        {
+            "name": "小林治",
+            "count": 176
+        },
+        {
+            "name": "青春",
+            "count": 154
+        },
+        {
+            "name": "2004年10月",
+            "count": 113
+        },
+        {
+            "name": "漫改",
+            "count": 66
+        },
+        {
+            "name": "神曲神作",
+            "count": 59
+        },
+        {
+            "name": "少年",
+            "count": 50
+        },
+        {
+            "name": "神作",
+            "count": 24
+        },
+        {
+            "name": "日本",
+            "count": 20
+        },
+        {
+            "name": "励志",
+            "count": 11
+        },
+        {
+            "name": "BAND",
+            "count": 8
+        },
+        {
+            "name": "2000s",
+            "count": 6
+        },
+        {
+            "name": "2004年",
+            "count": 6
+        },
+        {
+            "name": "anime",
+            "count": 4
+        },
+        {
+            "name": "剧情",
+            "count": 4
+        },
+        {
+            "name": "2004秋",
+            "count": 4
+        },
+        {
+            "name": "动画",
+            "count": 4
+        },
+        {
+            "name": "半年番",
+            "count": 4
+        },
+        {
+            "name": "00年代",
+            "count": 3
+        },
+        {
+            "name": "日本动画",
+            "count": 3
+        },
+        {
+            "name": "剧集",
+            "count": 3
+        },
+        {
+            "name": "眯眯眼阿櫻",
+            "count": 3
+        },
+        {
+            "name": "TVA",
+            "count": 3
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "音乐"
+    ],
+    "series": false,
+    "main_character_ids": [
+        17244,
+        17245
+    ],
+    "main_characters": [
+        {
+            "id": 17244,
+            "name": "田中幸雄",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b2/a1/17244_crt_nhM8b.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/a1/17244_crt_nhM8b.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/a1/17244_crt_nhM8b.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b2/a1/17244_crt_nhM8b.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4254,
+                    "name": "浪川大輔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/70/c3/4254_prsn_99K43.jpg?r=1631019573"
+                    },
+                    "short_summary": "浪川 大輔（なみかわ だいすけ、1976年4月2日 - ） は、日本の声優、俳優、歌手、ナレーター。ステイラック代表取締役。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 17245,
+            "name": "南竜介",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/88/c6/17245_crt_wMdZQ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/c6/17245_crt_wMdZQ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/c6/17245_crt_wMdZQ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/88/c6/17245_crt_wMdZQ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 41217,
+                    "name": "上野裕馬",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "",
+                        "medium": "",
+                        "small": "",
+                        "grid": ""
+                    },
+                    "short_summary": "兵庫県出身の俳優、タレント。主な出演にテレビ「マルサ!!」「TOKYO2003」「トラベラーズTV」、映画『異形ノ恋』『HEAT灼熱』などがある。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

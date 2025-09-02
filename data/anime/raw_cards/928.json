@@ -1,0 +1,468 @@
+{
+    "id": 928,
+    "type": 2,
+    "name": "げんしけん",
+    "name_cn": "现视研",
+    "summary": "“现代视觉文化研究会”，简称“现视研”，是一个以研究动漫等综合性现代视觉文化为成立宗旨，但行吃喝玩乐之实的社团。主角笹原完士在成为大学新人后，跟同为一年级新生的重度御宅族高坂真琴一起加入了现视研。但在都是“御宅族”的社团活动中，高坂的青梅竹马春日部咲对其展开攻势；即使与其交往之后发现了高坂的“御宅族”真面目，仍不放弃将他拉回正道，因而成为社团的常客。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2004-10-10",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/d0/45/928_qRa5b.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/d0/45/928_qRa5b.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/d0/45/928_qRa5b.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/d0/45/928_qRa5b.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/d0/45/928_qRa5b.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "现视研"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "THE SOCIETY FOR THE STUDY OF MODERN VISUAL CULTURE",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2004年10月10日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.genshiken.info/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "キッズステーション"
+        },
+        {
+            "key": "播放结束",
+            "value": "2004年12月26日"
+        },
+        {
+            "key": "导演",
+            "value": "池端隆史"
+        },
+        {
+            "key": "Copyright",
+            "value": "©2004 木尾士目・講談社/現視研研究会"
+        },
+        {
+            "key": "原作",
+            "value": "木尾士目"
+        },
+        {
+            "key": "人物设定",
+            "value": "木下裕孝"
+        },
+        {
+            "key": "制片人",
+            "value": "山森篤、伊平崇耶、坂本直紀、塚本浩司、山口克己"
+        },
+        {
+            "key": "製作",
+            "value": "現視研研究会(メディアファクトリー、東芝エンタテインメント、キッズステーション、コミックとらのあな；永田勝治、臼井久人、須磨直樹、吉田博高)"
+        },
+        {
+            "key": "制作",
+            "value": "GENCO"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 12,
+    "rating": {
+        "rank": 460,
+        "total": 3502,
+        "count": {
+            "one": 1,
+            "two": 1,
+            "three": 7,
+            "four": 8,
+            "five": 67,
+            "six": 239,
+            "seven": 906,
+            "eight": 1603,
+            "nine": 514,
+            "ten": 156
+        },
+        "score": 7.8
+    },
+    "collection": {
+        "wish": 3445,
+        "collect": 5122,
+        "doing": 374,
+        "on_hold": 365,
+        "dropped": 114
+    },
+    "tags": [
+        {
+            "name": "现视研",
+            "count": 761
+        },
+        {
+            "name": "Otaku",
+            "count": 590
+        },
+        {
+            "name": "TV",
+            "count": 558
+        },
+        {
+            "name": "宅",
+            "count": 555
+        },
+        {
+            "name": "校园",
+            "count": 501
+        },
+        {
+            "name": "2004",
+            "count": 393
+        },
+        {
+            "name": "漫画改",
+            "count": 357
+        },
+        {
+            "name": "2004年10月",
+            "count": 343
+        },
+        {
+            "name": "青春",
+            "count": 246
+        },
+        {
+            "name": "宅男腐女",
+            "count": 218
+        },
+        {
+            "name": "日常",
+            "count": 195
+        },
+        {
+            "name": "不公正抽签",
+            "count": 156
+        },
+        {
+            "name": "漫改",
+            "count": 144
+        },
+        {
+            "name": "讲谈社",
+            "count": 91
+        },
+        {
+            "name": "池端隆史",
+            "count": 75
+        },
+        {
+            "name": "PALM",
+            "count": 64
+        },
+        {
+            "name": "宅在校园",
+            "count": 63
+        },
+        {
+            "name": "パルム",
+            "count": 57
+        },
+        {
+            "name": "搞笑",
+            "count": 45
+        },
+        {
+            "name": "げんしけん",
+            "count": 41
+        },
+        {
+            "name": "横手美智子",
+            "count": 30
+        },
+        {
+            "name": "日本",
+            "count": 29
+        },
+        {
+            "name": "宅男",
+            "count": 27
+        },
+        {
+            "name": "生活",
+            "count": 20
+        },
+        {
+            "name": "2004年",
+            "count": 20
+        },
+        {
+            "name": "PALMSTUDIO",
+            "count": 16
+        },
+        {
+            "name": "腐女",
+            "count": 15
+        },
+        {
+            "name": "水岛努",
+            "count": 14
+        },
+        {
+            "name": "TVA",
+            "count": 11
+        },
+        {
+            "name": "动画",
+            "count": 11
+        }
+    ],
+    "meta_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "series": false,
+    "main_character_ids": [
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314
+    ],
+    "main_characters": [
+        {
+            "id": 308,
+            "name": "笹原完士",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a8/c8/308_OdT4P.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a8/c8/308_OdT4P.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a8/c8/308_OdT4P.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a8/c8/308_OdT4P.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4444,
+                    "name": "大山鎬則",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/db/c4/4444_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/c4/4444_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/c4/4444_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/db/c4/4444_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 309,
+            "name": "高坂真琴",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ed/de/309_DfXHy.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/de/309_DfXHy.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/de/309_DfXHy.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ed/de/309_DfXHy.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3924,
+                    "name": "斎賀みつき",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d8/c6/3924_prsn_kbHr5.jpg?r=1515334832",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/c6/3924_prsn_kbHr5.jpg?r=1515334832",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/c6/3924_prsn_kbHr5.jpg?r=1515334832",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d8/c6/3924_prsn_kbHr5.jpg?r=1515334832"
+                    },
+                    "short_summary": "日本の女性声優、ナレーターである。埼玉県出身。身長は168cm、血液型はAB型。賢プロダクション所属。\r\n\r\n代表作に『天元突破グレンラガン』（ロシウ・アダイ）、『07-GHOST』（テイト＝クライン）、『海月姫』（鯉淵蔵之介）、『イナズマイレブンGO』（神童拓人）などがある。\r\n\r\n愛称はみつきや斎賀ちゃんやサイガー（『おはスタ』に顔出しで出演していた「麗人サイガー」から）など。以前伊藤健太郎主宰の劇団K-Showのメンバーであった（2008年9月23日に自身のブログにて退団を公表）。\r\n\r\n2008年に、第2回声優アワードサブキャラクター女優賞を受賞。2010年に、第4回声優アワード海外ファン賞を受賞。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 310,
+            "name": "春日部咲",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/06/eb/310_gPIv1.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/eb/310_gPIv1.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/eb/310_gPIv1.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/06/eb/310_gPIv1.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3821,
+                    "name": "ゆきのさつき",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a6/14/3821_prsn_96356.jpg?r=1671507307",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/14/3821_prsn_96356.jpg?r=1671507307",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/14/3821_prsn_96356.jpg?r=1671507307",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a6/14/3821_prsn_96356.jpg?r=1671507307"
+                    },
+                    "short_summary": "她在家里4个孩子中是最小的。出道之前，她上完小学、初中之后进入滋贺县立石山高中学习。在看过富士电视台于1986年开始播映的由高桥留美子原作的《相聚一刻》后，开始向往成为声优（14年后，她在公映的高桥作品《犬夜叉》中出演女主角·日暮篱）。高中毕业后，她说服强烈反对自己成为声优的父母，来到东京。\r\n\r\n来到东京后，她从专科学校——东京广播（announce）学院毕业。1992年，在NHK教育台播放的外国电影《很棒的日子》中出演少女C，由此出道。1996年在TBS系列播放的由布浦翼原作的《酷妹当家》中出演二之宫贵子，由此正式出道。尽管她是作为主角出道，但在当时还只是一个名不见经传的声优。而且，由于主人公二之宫贵子的台词很少，因此在节目中也较少听到她的声音。尽管现在已经很少看到了，但她确实曾经作为解说员为综艺节目做过旁白。之后，她出演众多作品，知名度逐渐上升。\r\n\r\n据说她本人性格认真，厌恶性格乖僻的人。比如在路上碰到乱扔空易开罐的人，她会提醒对方。甚至还抓到过流氓。也因此有些人觉得她很难相处、不懂得玩笑。她很容易投入角色，甚至在出演犬夜叉的过程中，看到山口胜平在和配桔梗的日高范子聊天就狠狠地瞪着对方。日高如是说：“（雪野）五月小姐很容易投入角色，因此当时她大概是以为犬夜叉被桔梗偷走了吧。不过，她那时的表情恐怖得非比寻常。”林原惠也证实，同样的轶事在《羔羊之歌》的收录现场也发生过。\r\n\r\n另外，她很讨厌下流的话题，1998年在东京系电视台播放的《在涩谷Chu！》节目中，她作为嘉宾出席，面对相声组合Jalism的捧哏（译注：在对口相声中，两名演员分别为逗哏和捧哏。逗哏主要叙述故事的发展，捧哏则对逗哏的叙述加以发挥补充，以增加喜剧气氛）、同为滋贺县出身的渡边锺接连放出的下流话题，她震怒了，令助手宫村优子小姐战栗不已（甚至令往常游刃有余地处理周围情况的宫村也慌张地为她打了圆场）。在节目最后，她毫不留情地给渡边评了低分，不过在2006年接演银魂后据说已经对下流的话题免疫了。不知何故，她接下的工作多为《犬夜叉》、《再做人009》、《植木的法则》等avex系列的动画。她喜欢的音乐家当属福山雅治。爱好则是旅游。顺便提一句，雪野还有许多其他因自己过于认真而导致与人交往困难的轶事，这些也为人熟知。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 311,
+            "name": "斑目晴信",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9d/fc/311_GLFX0.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9d/fc/311_GLFX0.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9d/fc/311_GLFX0.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9d/fc/311_GLFX0.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4105,
+                    "name": "檜山修之",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d8/c2/4105_prsn_6dzrY.jpg?r=1732374320",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/c2/4105_prsn_6dzrY.jpg?r=1732374320",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/c2/4105_prsn_6dzrY.jpg?r=1732374320",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d8/c2/4105_prsn_6dzrY.jpg?r=1732374320"
+                    },
+                    "short_summary": "檜山 修之（ひやま のぶゆき、1967年8月25日- ）は、日本の男性声優、ナレーターである。アーツビジョン所属。広島県廿日市市出身。身長166cm、体重74kg。血液型はA型。星座はおとめ座。干支は羊。\r\n\r\n仕事をする時に気をつけていることは「その時やってる役にとにかく専念すること」。\r\n\r\nデビューして約5年間、バイトをしながら生活していた。その中の一つである警備員のバイトをしていた頃、道路工事の現場がアフレコスタジオの前だった時があり、同僚にばれないように顔を隠していたという。\r\n\r\n自分が声を演じた役の中でヒーロー役の集大成は前述の獅子王凱、悪役の集大成は『機動戦士ガンダムSEED』のムルタ・アズラエル。特に凱を含め『ガオガイガー』には思い入れが強く、『スーパーロボット大戦シリーズ』公式サイト内のインタビューにて、「ガオガイガーが入らずに何が入るんだっていう気もあった」と語っている。\r\n\r\n森川智之と仲が良く、森川とは前述の『おまえら〜』のイベントのほか、ラジオ番組を何度か共演している。この2人は主に美形キャラを演じる場合が多い。\r\n\r\n大の広島東洋カープファンで知られている。\r\n\r\n『スーパーロボット大戦Z』では自身が声を演じた参戦作品の主人公すら出ないにもかかわらず、敵一般兵役で声を演じている。寺田貴信プロデューサーによれば、これは本人から希望したという。また自身もハーケン・ブロウニング役で出演している『無限のフロンティアEXCEED』公式サイトで「声優界で緑川光の次にスパロボ作品をやりこんでいる」とコメントしている。\r\n\r\n仕事をする傍らで声優の専門学校や養成所などで、自らが講師として後進の育成も手掛けている。\r\n\r\n声優グランプリmobileで既婚であることを公表している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 312,
+            "name": "田中総市郎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/95/0a/312_VzScI.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/0a/312_VzScI.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/0a/312_VzScI.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/95/0a/312_VzScI.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3868,
+                    "name": "関智一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/40/94/3868_prsn_24eU6.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/94/3868_prsn_24eU6.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/94/3868_prsn_24eU6.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/40/94/3868_prsn_24eU6.jpg"
+                    },
+                    "short_summary": "日本男性配音员。东京俳优生活协同组合→Atomic Monkey所属。东京都江东区深川出身。以热血激昂的声线闻名，昵称为“チイチ”（ChiIChi, 智一的音读）。\r\n\r\n在机动武斗传G高达的主角选角时，自己参加试音的路上因积雪滑了一跤，心想“这下肯定落选了”结果反而在两天后宣布中选。\r\n非常爱开黄腔，也因此冒犯许多不好此道的女声优，曾因尺度太大被电台高层警告。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 313,
+            "name": "久我山光紀",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/15/8f/313_agQGv.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/8f/313_agQGv.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/8f/313_agQGv.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/15/8f/313_agQGv.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4443,
+                    "name": "乃村健次",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3c/f3/4443_prsn_c97C9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/f3/4443_prsn_c97C9.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/f3/4443_prsn_c97C9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3c/f3/4443_prsn_c97C9.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 314,
+            "name": "大野加奈子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/75/88/314_FIfcs.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/88/314_FIfcs.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/88/314_FIfcs.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/75/88/314_FIfcs.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 740,
+                    "name": "川澄綾子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/05/d0/740_prsn_TqQ7W.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/d0/740_prsn_TqQ7W.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/d0/740_prsn_TqQ7W.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/05/d0/740_prsn_TqQ7W.jpg"
+                    },
+                    "short_summary": "日本女性声优。生于东京，亦有兼任歌唱工作。東邦音楽短期大学毕业。\r\n\r\n在低出生体重儿的危险状况下被生下来，曾说过自己的父母已有了万一的觉悟急急忙忙以“あ”为开头作为名字。出生预定日为5月3日。被亲戚笑“比牛奶球还小”。\r\n在1996年的SME声优大赛中得到代代木动画学院奖。\r\n在《逮捕令》中以妇警D一角初次以动画声优登场，之前已以广告旁白出道。\r\n以《头文字D》中的茂木夏树一角和动画《To Heart》的神岸明一角开始活跃。\r\n在《星界战旗》的拉斐尔选角时从一百名候选人被选拔，配音时发烧发到摄氏40度仍然去配音，结果被音响监督叫她回家去，说“从来没见到这么拼命的声优”。\r\n说“是（はい）”的口音独特。\r\n为少女、幼女、美女、恶女、严肃、搞笑、纯情、傲娇等等各式各样的类型的角色配过音。部分作品中会演唱主题曲或角色曲。\r\n在动画的配音中，比起黄金档、低龄向作品、一般向作品，以深夜动画、萌系动画和美少女动画居多。\r\n被剧本家会川升称为“オーディション荒らし”。\r\n曾以“あやちー（小绫）”这个爱称在fans间流传，但是在业界内现在还用这个爱称称呼的只有过去认识的朋友。其他的还有“绫ちゃん（小绫）”、“あやすみ（绫澄）”、“あやねえ（绫姐）”等。\r\n一般不戴眼镜，极偶尔会在杂志和网络上出现她戴眼镜的照片。但在《PONY CANYON STYLE まるなび!?》的BSQR489版中则有很多她戴眼镜的照片。\r\n因为憧憬岩田光央而进入大泽事务所。\r\n喜欢的很大只的猫。\r\n学生时代曾经是《JoJo的奇妙冒险》的粉丝，后在2012年7月在东京举办的JoJo连载25周年纪念“JoJo展”中与饰演乔纳森・乔斯达的兴津和幸、担任旁白的大川透共同到场。\r\n座右铭是“人間万事塞翁が馬”。\r\n\r\n从3岁起学习钢琴，拥有绝对音感；但因认为平时弹钢琴没有什么意义，几乎只在为まるなび！？HOT TUNE作曲时才会接触钢琴。\r\n兴趣是看棒球比赛，为东京养乐多燕子的球迷。特别是经常将代跑城友博（1999年移籍至阪神虎）的成绩整理在笔记本里。\r\n于PONY CANYON STYLE まるなび！？的第139回（2007年5月22日）中提及自己取得了汽车驾驶执照。\r\n非常喜爱猫，东京父母的家中养有数只。\r\n得意料理是千层面、绫子锅（生天目仁美命名），其中绫子锅在棉花糖会（ましまろ会）中大受好评。\r\n相当害怕昆虫。据说家族旅行时，要去露天温泉的途中看到虫，而发出哀嚎吓到母亲。另外，与能登麻美子一起去旅行的时候，也曾因见到虫而吓得从露天温泉里逃出来。\r\n自认非常喜欢说话，是个健谈的女孩子。\r\n据说即使长时间乘坐电车，也不会在里头睡着。\r\n关于配音，曾提到：“现在想起来，第一次的拍后录音是最紧张的时候。因为紧张，有的时候甚至会说不出话来（笑）。现在总算是已经适应了这种气氛了，而且使我兴奋的是最近挑战的几个全新的角色，也许大家从中能够看到另外一个我呢。能够出演这样一些角色我自己也非常高兴，我希望在30岁、不，40岁以后大家还是象现在一样喜欢我塑造的角色。\r\n\r\n被同事务所的晚辈能登麻美子称呼为“小绫”（绫ちゃん）、而且还私下2人一起去过温泉旅行。\r\n在演出《草莓棉花糖》后，与同剧的声优千叶纱子、折笠富美子及能登麻美子关系良好，因此组成了“棉花糖会（ましまろ会）”，偶尔会相约一起出外活动。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+{
+    "id": 102056,
+    "name": "チャックモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/77/fa/102056_crt_WE9Kx.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/fa/102056_crt_WE9Kx.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/fa/102056_crt_WE9Kx.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/77/fa/102056_crt_WE9Kx.jpg"
+    },
+    "summary": "拥有传说中的十斗士之力的冰能力数码宝贝。自称隶属于极地军的极地防卫部队，军衔为中士。一被问及此事就回答全是机密事项，所以真相不明。一般认为这是它自己的幻想。但是，所持发射器（俗称罗密欧）的操作和战斗时的准确动作是实打实的，生存知识丰富，确实是可靠的存在。鲜少主动行动，主要是响应他人的要求或命令而行动。如果没有人要求就无事可做，有时候会因为烦恼自己的存在意义而沮丧。从发射器中射出的特殊雪球根据用途可以分为好几种。必杀技是化作冰柱状向敌人猛扑过去的『冰柱飞袭』，以及从发射器乱射超级冰冻雪球的『雪球炮轰』。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "冰熊兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Chackmon，Chakmon，Kumamon"
+                },
+                {
+                    "k": "西班牙文名",
+                    "v": "Kunamon"
+                },
+                {
+                    "k": "葡萄牙文名",
+                    "v": "Kunamon"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Chakkumon"
+                },
+                {
+                    "k": "称号",
+                    "v": "冰之人型斗士"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference/detail.php?directory_name=chackmon"
+        },
+        {
+            "key": "等级",
+            "value": "混合体"
+        },
+        {
+            "key": "类型",
+            "value": "兽人型"
+        },
+        {
+            "key": "属性",
+            "value": "可变"
+        },
+        {
+            "key": "必杀技",
+            "value": [
+                {
+                    "v": "冰柱飞袭"
+                },
+                {
+                    "v": "雪球炮轰"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 2
+    },
+    "anime_ids": [
+        3131
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "id": 5926,
+    "name": "高槻やよい",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3d/0e/5926_crt_pO05B.jpg?r=1546755001",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/0e/5926_crt_pO05B.jpg?r=1546755001",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/0e/5926_crt_pO05B.jpg?r=1546755001",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3d/0e/5926_crt_pO05B.jpg?r=1546755001"
+    },
+    "summary": "765事务所中最穷的偶像，属于Dance阵营，为六个子女中的老大，很早就开始作为姐姐照顾全家。父亲为自由职业者。\r\n个性活泼开朗，爱护家庭的好孩子，但家中经济似乎不太好，在事务所里常常帮忙打扫与倒垃圾。因为设定上没有手机，只有在培育期间和事务所借用，引退以后就不会寄信件回来。不太会撒娇，说话略微有点大舌头，并且有恐高症，对待弟弟妹妹们非常有姐姐的形象。\r\n对钱看得非常敏感，二次设定中一旦陷入经济危机很可能会黑化。\r\n成为偶像的原因：为了全家人的生计。\r\n基本能力值虽低，但情绪管理容易且能力衰退的速度也慢，是新手也容易操作的角色。\r\n\r\n（在偶像大师 XENOGLOSSIA中）\r\n身高154cm、体重44kg、B87/W56/H82。\r\n超喜欢可爱的事物，天真烂漫的15岁少女，与春香从小学开始就是要好的朋友。梦想是成为一个大明星。现在是某个电台节目的主播。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高槻弥生"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たかつき やよい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takatsuki Yayoi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "やよいっち"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月25日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "145cm"
+        },
+        {
+            "key": "体重",
+            "value": "37kg"
+        },
+        {
+            "key": "BWH",
+            "value": "72/54/77→74/54/78"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 25,
+    "stat": {
+        "comments": 66,
+        "collects": 145
+    },
+    "anime_ids": [
+        11577,
+        309807
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "id": 876,
+    "name": "CLANNAD 〜AFTER STORY〜",
+    "image_path": "data/images/anime/876.jpg",
+    "points": 9.1,
+    "cost": 6,
+    "rarity": "UR",
+    "description": "在某个小镇，主角冈崎朋也因为家庭的因素成为不良少年，一直与春原阳平为伍，在光坂高校过着潦倒的生活，但冀望终有一天能够离开所在的小镇。某一天，他在学校坡道前发现了一个止步不前的女孩，在朋也认识了这个名为“古河渚”的女孩后，他的生活开始有了重大的变化。\r\n\r\n前半为主角和女主角们之间所发生的事件，后半After story为主角和古河渚，在冈崎中学毕业之后，共同生活的日子，其中还穿插了“幻想世界”，CLANNAD就是由这三个要素所组成的故事。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "游戏改",
+        "日常"
+    ],
+    "date": "2008-10-02",
+    "rating_rank": 3,
+    "rating_score": 9.1,
+    "rating_total": 27379,
+    "main_character_ids": [
+        4,
+        1007
+    ],
+    "main_characters": [
+        {
+            "id": 4,
+            "name": "古河渚",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e9/cf/4_crt_ZeUZW.jpg?r=1692105566",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/cf/4_crt_ZeUZW.jpg?r=1692105566",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/cf/4_crt_ZeUZW.jpg?r=1692105566",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e9/cf/4_crt_ZeUZW.jpg?r=1692105566"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4145,
+                    "name": "中原麻衣",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/9c/4145_prsn_zzFZl.jpg?r=1723388748",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/9c/4145_prsn_zzFZl.jpg?r=1723388748",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/9c/4145_prsn_zzFZl.jpg?r=1723388748",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/9c/4145_prsn_zzFZl.jpg?r=1723388748"
+                    },
+                    "short_summary": "小时候经常搬家，但仍能清楚记得什么时期居住在什么地方。从幼儿直至中学三年级第2学期约10年，都是跟祖母住在爱媛县西宇和郡伊方町。因此在出演‘アイドル大阪環状線’时，表示出自己对爱媛丰富的知识。\r\n受到《七海的堤可》的影响，从小学5年级就立志成为配音演员，初中毕业时向父母表示“希望能进入声优训练学校”。后来在父母的劝告下高中毕业，18岁时一人从九州搬至东京，在没有两亲的援助下过著一边从事医疗事务的OL的工作，一边在声优训练学校上课，每天都抑郁着的生活。本人说自己当时非常希望当配音演员。\r\n在日本旁白演技研究所的考试中取得合格。在2000年10月被电台节目‘VOICE CREW’起用。\r\n2001年声演パラッパラッパー的路人B，并于2002年以七人之奈奈中奈奈一角正式于动画界出道。同年开始声演《魔法咪路咪路》的主角南枫，这长达3年半的长期系列作品成为中原麻衣初期的代表作。其后，2004年的《舞-HiME》，2006年的《寒蝉鸣泣之时》，2007年的《CLANNAD》等动画作品都担任著主角。\r\n当初成为声优时多于个人电台活动。\r\n从声演‘暮蝉悲鸣时’的龙宫礼奈，‘舞-HiME’的鸨羽舞衣中，得到了“擅长狂怒的声音”的评价。声演的多为动画的主角，角色比如傲娇、女王系、病弱等形形色色的角色也声演过。\r\n就读声优训练学校的时期被说“你的声音只能当配角”。但是，除了出道作外声演的角色为主角的都压倒性地多。\r\n唱的多为动画或游戏的角色歌曲。2002年与曾参与七人之奈奈的声优水树奈奈、秋田まどか、浅木舞、名冢佳织、福井裕佳梨和桃森すもも组成“nanaxnana”的组合，并歌唱此作品的主题曲。又以自己作领导，与植田佳奈、斎藤千和、森永理科结成名为‘みっくすJUICE’的组合，2004年起与清水爱组成“PoppinS”、“中原麻衣&清水爱”。\r\n2004年起展开个人歌手的活动。直至2008年6月共推出了9枚CD。\r\n2006年到台湾的同人活动出席嘉宾。\r\n2007年出演以广播员训练学校为舞台的电视剧‘女子アナ一直線!’以嘉宾形式出演读原稿，教授演技的配音演员“中原麻衣”。\r\n手脚长的苗条体型，经常被称为模特体型。\r\n非常喜欢狗，爱犬是モカ。\r\n醉酒时会说出“你幸福吗？”、“不想回家”等话。\r\n自“妄想科学”和“星空的邂逅2”起，中原与清水爱在动画及电台的共演作品就非常的多。2人的关系在公在私亦非常良好，在清水爱的日记也可常看到有关中原的事，亦曾一起推出过声优CD。\r\n同经纪公司的田村由香里在自己的电台节目表示中原麻衣服装诱人，会使自己变得紧张。田村由香里甚至称赞她“很会打扮而且全都很可爱”。\r\n与植田佳奈的感情非常好。其余的亲交有高桥美佳子、新谷良子、渡边明乃、钉宫理恵、生天目仁美、松来未祐等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 1007,
+            "name": "岡崎朋也",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9c/2b/1007_crt_ZLqlZ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/2b/1007_crt_ZLqlZ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/2b/1007_crt_ZLqlZ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9c/2b/1007_crt_ZLqlZ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4724,
+                    "name": "中村悠一",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/78/4724_prsn_7TvWV.jpg"
+                    },
+                    "short_summary": "爱称是ゆうきゃん，由铃村健一命名。英文标记法为‘yuu-kyan’\r\n与声优的杉田智和的私交良好，是在声优界著名的好友。\r\n兴趣是玩游戏、看电影等。\r\n不喜欢吃拉面。喜欢的食物是肉、奶酪、甜食。\r\n2020年10月1日，宣布从Sigma Seven移籍至INTENTION。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

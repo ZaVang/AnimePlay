@@ -1,0 +1,49 @@
+{
+    "id": 52,
+    "name": "国崎往人",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9a/11/52_fYX72.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/11/52_fYX72.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/11/52_fYX72.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9a/11/52_fYX72.jpg"
+    },
+    "summary": "Kunisaki Yukito\r\n游戏版、剧场版CV：绿川光\r\n电视版CV：小野大辅\r\n男主角（游戏中可以更改名字），独自旅行的少年，似乎很有搞笑的天份，而且貌似很容易饿。背负着传承了近1000年的使命：寻找并解救“天空中的女孩”。他从母亲身上学到操纵玩偶的特殊能力，以表演玩偶为生，四处旅行。也许是因为一个人旅行，所以不大容易和别人交往。在一个海边小镇上认识了神尾观铃并且暂时寄宿在她家。喜欢吃的食物是拉面套餐。最终献出自身以完成拯救神奈灵魂的使命。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "国崎往人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "くにさき ゆきと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kunisaki Yukito"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 11,
+        "collects": 73
+    },
+    "anime_ids": [
+        234,
+        363880
+    ]
+}

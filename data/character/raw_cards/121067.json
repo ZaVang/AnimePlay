@@ -1,0 +1,44 @@
+{
+    "id": 121067,
+    "name": "キルコ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e8/f0/121067_crt_fzNyY.jpg?r=1681118714",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/f0/121067_crt_fzNyY.jpg?r=1681118714",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/f0/121067_crt_fzNyY.jpg?r=1681118714",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e8/f0/121067_crt_fzNyY.jpg?r=1681118714"
+    },
+    "summary": "東京・中野で便利屋を営む少女。\r\nマルを「天国」に連れて行く、というボディガード依頼を引き受ける。サバイバル能力が高く、銃の名手。以前は浅草にある孤児のための施設で暮らしていた。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "斩子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第三中文名",
+                    "v": "希子"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "贵留子"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 74,
+        "collects": 155
+    },
+    "anime_ids": [
+        404804
+    ]
+}

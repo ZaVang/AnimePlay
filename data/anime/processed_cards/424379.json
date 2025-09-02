@@ -1,0 +1,264 @@
+{
+    "id": 424379,
+    "name": "超超超超超喜欢你的100个女朋友",
+    "image_path": "data/images/anime/424379.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "中学で失恋100回を達成した愛城恋太郎は、\r\n高校でこそ彼女を！と願い訪れた神社で、現れた恋の神様から\r\n「高校で出会う運命の人は100人いる」と告げられる。\r\nしかし神様いわく、運命の人と出会った人間は、\r\nその相手と愛し合って幸せになれなければ死んでしまうという……。\r\n次々に待ち受ける運命の人との出会い──どうする恋太郎？どうなる100人の彼女！？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "后宫",
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2023-10-08",
+    "rating_rank": 1378,
+    "rating_score": 7.3,
+    "rating_total": 8841,
+    "main_character_ids": [
+        126610,
+        126611,
+        126612,
+        132521,
+        132525,
+        132529,
+        143424
+    ],
+    "main_characters": [
+        {
+            "id": 126610,
+            "name": "愛城恋太郎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/69/29/126610_crt_O2Zpv.jpg?r=1717851307",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/29/126610_crt_O2Zpv.jpg?r=1717851307",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/29/126610_crt_O2Zpv.jpg?r=1717851307",
+                "grid": "https://lain.bgm.tv/pic/crt/g/69/29/126610_crt_O2Zpv.jpg?r=1717851307"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 35749,
+                    "name": "天海由梨奈",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/cf/ce/35749_prsn_9Bmpf.jpg?r=1733931399",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/ce/35749_prsn_9Bmpf.jpg?r=1733931399",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/ce/35749_prsn_9Bmpf.jpg?r=1733931399",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/cf/ce/35749_prsn_9Bmpf.jpg?r=1733931399"
+                    },
+                    "short_summary": "日本の女性声優、神奈川県出身。血液型はO型。所属事務所は81プロデュース。",
+                    "locked": false
+                },
+                {
+                    "id": 36065,
+                    "name": "加藤渉",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/29/1c/36065_prsn_3r28u.jpg?r=1576648326",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/1c/36065_prsn_3r28u.jpg?r=1576648326",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/1c/36065_prsn_3r28u.jpg?r=1576648326",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/29/1c/36065_prsn_3r28u.jpg?r=1576648326"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 126611,
+            "name": "院田唐音",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/cb/9e/126611_crt_084B0.jpg?r=1702801741",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cb/9e/126611_crt_084B0.jpg?r=1702801741",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cb/9e/126611_crt_084B0.jpg?r=1702801741",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cb/9e/126611_crt_084B0.jpg?r=1702801741"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 20701,
+                    "name": "富田美憂",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023"
+                    },
+                    "short_summary": "富田 美憂（とみた みゆ、1999年11月15日 - ）は、日本の女性声優。アミューズ所属。埼玉県出身。\r\n\r\n小学生の時にテレビアニメ『ヴァンパイア騎士』を見て、声優業に興味を持った。その際にこの作品に出演していた宮野真守にも憧れを持ったと語っている。\r\n第一回「アニ☆たん!」ではファイナリストとなり6社にスカウトされ、同時期に開催された「2014声優アーティスト育成プログラム・セレクション」でグランプリを獲得した。\r\nデビュー作は2015年のテレビアニメ『干物妹！うまるちゃん』のタイヘイ（幼少期）役である。2016年、『アイカツスターズ！』の虹野ゆめ役で初主演。\r\n2018年、声優ユニットを中心としたメディアミックス企画『Kleissis』の林堂アキラ役に選ばれる。\r\n\r\n高校では漫画研究部に所属していた。好きな教科は英語と美術だと語っている。\r\n趣味・特技はイラストを描くこと、ゲーム、空手。空手では上段回し蹴りが得意であり、ゲームでは、『うたの☆プリンスさまっ♪』『薄桜鬼』などの乙女ゲームが好きである。\r\n歌うこと、踊ること、ディズニーが好きである。\r\n好きな食べ物は、りんご、栗。\r\n狼、犬、ホワイトタイガーなど虫以外の動物全般を好きだと語っており、チャップという名前の犬を飼っている。\r\n「自分を一言で言うと…」の質問に「挙動不審」だと答えている。また、好きな言葉には「考えるよりチャレンジ！」をあげている。\r\n原作のある作品の場合は原作を読み込んで、キャラクターの考え方や行動を理解してからオーディションに臨んでいると語っている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 126612,
+            "name": "花園羽香里",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e6/c6/126612_crt_N87S4.jpg?r=1704905145",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/c6/126612_crt_N87S4.jpg?r=1704905145",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/c6/126612_crt_N87S4.jpg?r=1704905145",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e6/c6/126612_crt_N87S4.jpg?r=1704905145"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19560,
+                    "name": "本渡楓",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1a/96/19560_prsn_dIRg5.jpg?r=1709906617"
+                    },
+                    "short_summary": "日本的女性声优，爱知县名古屋市出身。I'm Enterprise所属。\r\n高中二年级进入日本播音演技研究所名古屋校就读，2015年4月进入I'm Enterprise。\r\n高中时代加入戏剧社，但因为身高矮小无法演出护士，而改以不会被外貌影响的声优为目标。\r\n交情好的声优有目前在《见习神仙 秘密的心灵》中共同演出的潘惠美、事务所的前辈小泽亚李与长绳麻理亚。\r\n对于演出婴儿的声音很有自信。\r\n2019年，获得第13回声优奖的新人女优赏。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 132521,
+            "name": "好本静",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/88/67/132521_crt_Ejjeu.jpg?r=1700148665",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/67/132521_crt_Ejjeu.jpg?r=1700148665",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/67/132521_crt_Ejjeu.jpg?r=1700148665",
+                "grid": "https://lain.bgm.tv/pic/crt/g/88/67/132521_crt_Ejjeu.jpg?r=1700148665"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 14918,
+                    "name": "長縄まりあ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5b/8c/14918_prsn_1V1dU.jpg?r=1676109778",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/8c/14918_prsn_1V1dU.jpg?r=1676109778",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/8c/14918_prsn_1V1dU.jpg?r=1676109778",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5b/8c/14918_prsn_1V1dU.jpg?r=1676109778"
+                    },
+                    "short_summary": "日本的女性声优，爱知县出身。I'm Enterprise所属。\r\n\r\n成为声优的契机是在国中时代参与呼吁禁烟运动的时候，曾被路上的人称赞 “你的声音很棒”，同时在学校也常被同学模仿，因此知道自己的声音并不普通。\r\n就读日本播音演技研究所的基本科时，在进级审查中的试镜中合格，并加入I'm Enterprise。\r\n\r\n憧憬的声优为大谷育江与钉宫理惠。\r\n喜欢的食物是煎饼、零食。有在寿司店打工的经验。\r\n特别喜欢少年系的动画。\r\n2016年的访谈中提到今后想以演出吉祥物角色为目标。\r\n\r\n与同期出身的声优小泽亚李交情很好。同时与在《三坪房间的侵略者！？》演出的大森日雅、铃木绘理、田泽茉纯亦有深交。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 132525,
+            "name": "栄逢凪乃",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/82/40/132525_crt_ITw9e.jpg?r=1688127897",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/40/132525_crt_ITw9e.jpg?r=1688127897",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/40/132525_crt_ITw9e.jpg?r=1688127897",
+                "grid": "https://lain.bgm.tv/pic/crt/g/82/40/132525_crt_ITw9e.jpg?r=1688127897"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5766,
+                    "name": "瀬戸麻沙美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/b7/5766_prsn_6q644.jpg"
+                    },
+                    "short_summary": "中学生2年生の時、偶然視聴したアニメ『D.Gray-man』の主人公、アレン・ウォーカー（声：小林沙苗）に魅せられ、キャラクターだけでなく演者の声優にも興味が湧き、声優を志す。高校在学中の2009年に声優事務所のオーディションを受験、翌2010年より声優活動を開始する。\r\n2010年、初めて受けたオーディションでテレビアニメ『放浪息子』（2011年）の準主人公 \"高槻よしの\" 役に抜擢される。彼女にとって初仕事の収録だったが、演技などに関して事前の指示はほとんど必要としなかったと監督のあおきえいは述べている。\r\n2011年、日本テレビ系テレビアニメ『ちはやふる』で主演（ \"綾瀬千早\" 役）とエンディング主題歌の歌唱を担当。同局系列のテレビアニメ『HUNTER×HUNTER』の \"クラピカ\" 役オーディションに参加していた瀬戸の演技が『ちはやふる』番組関係者の目に留まり、改めて \"綾瀬千早\" 役のオーディションを行ったところ満場一致で瀬戸の起用が決定した。\r\n2015年4月1日付けで、シグマ・セブンeからシグマ・セブンへ移動。\r\n2021年11月1日よりStarCrewへ移籍。あわせて公式Twitterアカウントを開設した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 132529,
+            "name": "薬膳楠莉",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4b/e4/132529_crt_556eK.jpg?r=1688128102",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/e4/132529_crt_556eK.jpg?r=1688128102",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/e4/132529_crt_556eK.jpg?r=1688128102",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4b/e4/132529_crt_556eK.jpg?r=1688128102"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 16264,
+                    "name": "朝井彩加",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2c/01/16264_prsn_eDeSy.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/01/16264_prsn_eDeSy.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/01/16264_prsn_eDeSy.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2c/01/16264_prsn_eDeSy.jpg"
+                    },
+                    "short_summary": "日本の声優、女優。\r\n2013年1月1日より青年座映画放送に所属。同年、アミューズメントメディア総合学院東京校を卒業、および声優活動を開始し、『私がモテないのはどう考えてもお前らが悪い!』で初のレギュラー出演。\r\n2015年、『新妹魔王の契約者』の成瀬澪役で初のヒロイン役を務める。\r\n2017年5月に青年座映画放送を退所し、その後はフリーで活動。10月より東映撮影所に所属。\r\n2020年8月にインテンションへの移籍を報告した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 143424,
+            "name": "花園羽々里",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/81/df/143424_crt_6kt3N.jpg?r=1701615434",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/df/143424_crt_6kt3N.jpg?r=1701615434",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/df/143424_crt_6kt3N.jpg?r=1701615434",
+                "grid": "https://lain.bgm.tv/pic/crt/g/81/df/143424_crt_6kt3N.jpg?r=1701615434"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7307,
+                    "name": "上坂すみれ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d3/30/7307_prsn_R3GWz.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/30/7307_prsn_R3GWz.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/30/7307_prsn_R3GWz.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d3/30/7307_prsn_R3GWz.jpg"
+                    },
+                    "short_summary": "日本的女性声优、艺人、歌手。\r\n神奈川县出身。上智大学外国语学院俄语系毕业。\r\n\r\n2012年，在《要听爸爸的话！》中首次出演女主角小鸟游空，亦同时出演该系列作品的CD、游戏、广播。\r\n2012年5月26日，受日本海上自卫队的邀请，造访了千叶县船桥基地，担当日本海上自卫队“山雪”号的一日舰长。\r\n2012年12月，在卡塔尔召开的第23届多哈图书展上，代表日本参展队伍的嘉宾出席。这也是上坂首次参与文化外交活动。\r\n2013年2月，宣布演唱电视动画《人鱼又上钩》的片头曲“七つの海よりキミの海”，经由STARCHILD歌手出道。\r\n2014年3月，自上智大学外国语学部俄语学科毕业。同年10月，应开拓动漫祭邀请前往台湾出席“Petit Fancy 21”。\r\n其他代表作品有《中二病也要谈恋爱！》凸守早苗、《舰队收藏》吹雪 、《偶像大师灰姑娘女孩》安娜史塔西亚、《CHAOS;CHILD》尾上世莉架等。\r\n2016年3月，第十届声优大赏中荣获新人女声优奖。\r\n2020年8月31日，宣布退出SPACE CRAFT。\r\n2021年3月1日，宣布加入Voice Kit事务所。\r\n\r\n上坂堇可以说是日本声优圈内的特例，原因在于她有着浓厚的苏俄情结，再加上在大学主修俄语，更让她和其他声优相比显得与众不同，对于俄罗斯的评价是：那是一个在文学、历史、绘画、音乐等方面都让人感觉很有个性且展现出不可思议魅力的国度。\r\n与俄罗斯产生情结的契机是高中一年级的时候听到了苏联国歌，歌词深深地感染了自己。她自己的愿望是能成为”日俄之间动画桥梁般的存在“的角色，她在博客里写文章经常使用西里尔字母的词汇，例如「Здравствуйте（你好）」、「До свидания（再见 ）」、「Спасибо（谢谢）」、「Хорошо（好）」、「Ура（万岁）」等。而在她的推特里，自我介绍一栏更是直言不讳，直接写上Я люблю Россию!!（我爱俄罗斯！！），在广播节目中喜欢称她的听众为“同志诸君”，也因此她的粉丝喜欢称她为“连长”“师团长“”军团长“。更是由于在人气动画《少女与战车》中农娜这一酷似政委的副队长角色，而在广大粉丝中有了“政委”的昵称。\r\n她本人也是个军武宅，爱好军歌和战时歌谣，喜欢的坦克是苏制BT-5轻型坦克，她在大学参加的社团也是关于苏联红军早期发展方面的研究，在钟情于俄罗斯之前，她也曾对第三帝国产生浓厚兴趣。\r\n因为参与了文化外交活动，上坂本人也与前日本文化外交大使樱井孝昌先生关系密切。在自己的推特、博客中也对樱井给予高度评价。在樱井先生不幸离世后，在博客中发表了真诚的悼念文章。\r\n成为声优的契机是受到《魔法护士小麦》中桃井晴子的演技所感动，并表示桃井晴子是她尊敬的声优。\r\n\r\n喜欢的食物是羊排和”きのこの山“ ，非常喜欢lolita服饰（Lolita Fashion），在她的博客中经常出现她洋装打扮的照片。是Lolita品牌Baby The Stars Shine Bright的模特。喜欢的音乐类型除了之前提到的军乐以及战时歌谣外，还包括King-Show（一种上世纪80年代至90年代流行于日本的音乐类型，又称”筋肉少女帯“），游戏音乐和重金属。\r\n爱犬的名字叫做“苹果”。这只蝴蝶犬出生于2001年6月23日，被上坂称作“家中的最高权力者”。2015年12月22日亡故。\r\n中学时代极为崇拜尼采、弗洛伊德与荣格。并且经常沉迷于他们的著作之中。\r\n被中川翔子戏称为“残念系亚文化美少女”。\r\n\r\n2016年3月，由于不堪忍受网络上的性骚扰，宣布Twitter账号停止更新，官方LINE账号继续更新；同年11月，Twitter账号恢复更新。2017年7月，由于网上再次出现性骚扰的情况，删除个人Twitter及Instagram账号。\r\n2017年11月，开设公式推特。2019年，重新开设Instagram账号。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

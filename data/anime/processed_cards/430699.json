@@ -1,0 +1,88 @@
+{
+    "id": 430699,
+    "name": "金牌得主",
+    "image_path": "data/images/anime/430699.jpg",
+    "points": 8.0,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "作为滑冰者遭遇挫折的青年·明浦路司遇到了对花样滑冰世界充满憧憬的少女·结束祈。\r\n在对冰场怀有执念的祈的推动下，司决定亲自担任教练。\r\n随着祈逐渐展现出自己的才能，司也作为指导者不断成长。\r\n两人组成搭档，目标是荣耀的“金牌得主”——！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "运动",
+        "漫画改"
+    ],
+    "date": "2025-01-04",
+    "rating_rank": 228,
+    "rating_score": 8.0,
+    "rating_total": 9178,
+    "main_character_ids": [
+        92177,
+        112477
+    ],
+    "main_characters": [
+        {
+            "id": 92177,
+            "name": "結束いのり",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ca/5e/92177_crt_2zFoV.jpg?r=1739024057",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/5e/92177_crt_2zFoV.jpg?r=1739024057",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/5e/92177_crt_2zFoV.jpg?r=1739024057",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ca/5e/92177_crt_2zFoV.jpg?r=1739024057"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19808,
+                    "name": "春瀬なつみ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/eb/19808_prsn_luu17.jpg?r=1738769269",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/eb/19808_prsn_luu17.jpg?r=1738769269",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/eb/19808_prsn_luu17.jpg?r=1738769269",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/eb/19808_prsn_luu17.jpg?r=1738769269"
+                    },
+                    "short_summary": "趣味・特技 読書・映画鑑賞・音楽鑑賞・フィギュアスケート観戦\r\n\r\n平成26年：プロ・フィット所属\r\n平成27年：フリーランスの期間を経る\r\n平成30年：マウスプロモーション所属",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 112477,
+            "name": "明浦路司",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/4c/5e/112477_crt_rzbY1.jpg?r=1735227493",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/5e/112477_crt_rzbY1.jpg?r=1735227493",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/5e/112477_crt_rzbY1.jpg?r=1735227493",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4c/5e/112477_crt_rzbY1.jpg?r=1735227493"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 32681,
+                    "name": "大塚剛央",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fc/12/32681_prsn_0Sz5C.jpg?r=1734791596",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/12/32681_prsn_0Sz5C.jpg?r=1734791596",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/12/32681_prsn_0Sz5C.jpg?r=1734791596",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fc/12/32681_prsn_0Sz5C.jpg?r=1734791596"
+                    },
+                    "short_summary": "大塚 剛央（おおつか たけお、1992年10月19日 - ）は、日本の男性声優。東京都出身。\r\n\r\n日本ナレーション演技研究所を経て、アイムエンタープライズに所属。\r\n2018年8月公開の劇場版アニメ『詩季織々』の「上海恋」にてリモ役でアニメ初主演。\r\n2018年10月放送のテレビアニメ『風が強く吹いている』にて蔵原走役でテレビアニメ初主演を務める。\r\n\r\n交友関係としては、天﨑滉平とプライベートでも仲が良いとWEBラジオ「僕たちもう、フレンドですよね？」のアカウントで公言している。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,357 @@
+{
+    "id": 4075,
+    "type": 2,
+    "name": "今、そこにいる僕",
+    "name_cn": "此时此刻的我",
+    "summary": "热血而耿直的少年修在放学路上遇见沉默的少女。在突如其来的变故中，为了保护向他呼救的少女，修被卷入了陌生的时空。在荒芜的世界里，生命将何去何从……\r\n",
+    "nsfw": false,
+    "locked": false,
+    "date": "1999-10-14",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/e3/b2/4075_5Ewqd.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/e3/b2/4075_5Ewqd.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/e3/b2/4075_5Ewqd.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/e3/b2/4075_5Ewqd.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/e3/b2/4075_5Ewqd.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "此时此刻的我"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Now and Then, Here and There",
+                    "k": null
+                },
+                {
+                    "v": "此时此地的我",
+                    "k": null
+                },
+                {
+                    "v": "超时空幻境",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "1999年10月14日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期四"
+        },
+        {
+            "key": "官方网站",
+            "value": [
+                {
+                    "v": "https://www.nbcuni.co.jp/rondorobe/anime/imaboku/story.html",
+                    "k": "新官网"
+                },
+                {
+                    "v": "http://www.geneon-ent.co.jp/rondorobe/anime/imaboku/",
+                    "k": "旧官网（已失效）"
+                }
+            ]
+        },
+        {
+            "key": "播放电视台",
+            "value": "WOWOW"
+        },
+        {
+            "key": "播放结束",
+            "value": "2000年1月20日"
+        },
+        {
+            "key": "导演",
+            "value": "大地丙太郎"
+        },
+        {
+            "key": "音乐",
+            "value": "岩崎琢"
+        },
+        {
+            "key": "Copyright",
+            "value": "©1999 丙tarty・AIC/Geneon Universal Entertainment."
+        },
+        {
+            "key": "概念设计",
+            "value": "山﨑健志"
+        },
+        {
+            "key": "美术监修",
+            "value": "加藤浩"
+        },
+        {
+            "key": "制作协力",
+            "value": "伽藍"
+        },
+        {
+            "key": "监制",
+            "value": "隈部昌一、森尻和明"
+        },
+        {
+            "key": "制片人",
+            "value": "福良啓、松嵜義之"
+        },
+        {
+            "key": "製作",
+            "value": "AIC、パイオニアLDC"
+        },
+        {
+            "key": "剪辑",
+            "value": "松村正宏、芝関美和子（第2話-第13話）"
+        },
+        {
+            "key": "音响",
+            "value": "アクアトーン、楽音舎；音响制作担当：白崎恵理"
+        },
+        {
+            "key": "录音",
+            "value": "名倉靖；录音工作室：アバコクリエイティブスタジオ"
+        },
+        {
+            "key": "美术监督",
+            "value": "野村正信、益城貴昌（第2話、第3話、第5話-第13話）、京田邦晴（第4話）"
+        },
+        {
+            "key": "副导演",
+            "value": "助監督：宮崎なぎさ、則座誠"
+        },
+        {
+            "key": "宣传",
+            "value": "飯田尚史、宮井紫帆"
+        }
+    ],
+    "volumes": 0,
+    "eps": 13,
+    "total_episodes": 13,
+    "rating": {
+        "rank": 837,
+        "total": 1446,
+        "count": {
+            "one": 25,
+            "two": 7,
+            "three": 8,
+            "four": 27,
+            "five": 39,
+            "six": 116,
+            "seven": 358,
+            "eight": 544,
+            "nine": 242,
+            "ten": 80
+        },
+        "score": 7.5
+    },
+    "collection": {
+        "wish": 1984,
+        "collect": 1880,
+        "doing": 157,
+        "on_hold": 185,
+        "dropped": 54
+    },
+    "tags": [
+        {
+            "name": "TV",
+            "count": 419
+        },
+        {
+            "name": "大地丙太郎",
+            "count": 407
+        },
+        {
+            "name": "AIC",
+            "count": 313
+        },
+        {
+            "name": "1999",
+            "count": 280
+        },
+        {
+            "name": "原创",
+            "count": 272
+        },
+        {
+            "name": "黑暗系",
+            "count": 215
+        },
+        {
+            "name": "致郁",
+            "count": 198
+        },
+        {
+            "name": "岩崎琢",
+            "count": 165
+        },
+        {
+            "name": "内涵",
+            "count": 126
+        },
+        {
+            "name": "1999年10月",
+            "count": 115
+        },
+        {
+            "name": "军国主义",
+            "count": 92
+        },
+        {
+            "name": "倉田英之",
+            "count": 56
+        },
+        {
+            "name": "藍藍路",
+            "count": 49
+        },
+        {
+            "name": "仓田英之",
+            "count": 48
+        },
+        {
+            "name": "黑暗",
+            "count": 34
+        },
+        {
+            "name": "科幻",
+            "count": 32
+        },
+        {
+            "name": "战争",
+            "count": 32
+        },
+        {
+            "name": "90年代",
+            "count": 24
+        },
+        {
+            "name": "反战",
+            "count": 18
+        },
+        {
+            "name": "名塚佳織",
+            "count": 13
+        },
+        {
+            "name": "穿越",
+            "count": 12
+        },
+        {
+            "name": "日本",
+            "count": 11
+        },
+        {
+            "name": "TVA",
+            "count": 8
+        },
+        {
+            "name": "奇幻",
+            "count": 8
+        },
+        {
+            "name": "1999年",
+            "count": 7
+        },
+        {
+            "name": "1990s",
+            "count": 7
+        },
+        {
+            "name": "补番",
+            "count": 7
+        },
+        {
+            "name": "异世界",
+            "count": 6
+        },
+        {
+            "name": "季番",
+            "count": 6
+        },
+        {
+            "name": "长滨博史",
+            "count": 5
+        }
+    ],
+    "meta_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创",
+        "穿越"
+    ],
+    "series": false,
+    "main_character_ids": [
+        13296,
+        13297
+    ],
+    "main_characters": [
+        {
+            "id": 13296,
+            "name": "松谷修造",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c0/54/13296_crt_aavK4.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/54/13296_crt_aavK4.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/54/13296_crt_aavK4.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c0/54/13296_crt_aavK4.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4170,
+                    "name": "岡村明美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b1/96/4170_prsn_1rA7b.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/96/4170_prsn_1rA7b.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/96/4170_prsn_1rA7b.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b1/96/4170_prsn_1rA7b.jpg"
+                    },
+                    "short_summary": "岡村 明美（おかむら あけみ、1969年3月12日 - ）は、日本の女性声優。マウスプロモーション所属。東京都出身。血液型はO型。\r\n代表作に『紅の豚』（フィオ・ピッコロ）、『ONE PIECE』（ナミ）、『カサンドラ〜愛と運命の果てに』（カサンドラ）、『ラブ★コン』（小泉リサ）などがある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13297,
+            "name": "ララ・ルゥ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c2/84/13297_crt_cao9e.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/84/13297_crt_cao9e.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/84/13297_crt_cao9e.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c2/84/13297_crt_cao9e.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3922,
+                    "name": "名塚佳織",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0b/59/3922_prsn_rSvg6.jpg?r=1518234694",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/59/3922_prsn_rSvg6.jpg?r=1518234694",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/59/3922_prsn_rSvg6.jpg?r=1518234694",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0b/59/3922_prsn_rSvg6.jpg?r=1518234694"
+                    },
+                    "short_summary": "日本东京都出身的女性声优。\r\n\r\n从小学生开始就以童星之姿在舞台上演出。也有如音乐剧‘トラップ一家物语’等，担任多个角色连续演出多场的作品。\r\n在1998年的音乐剧《フラワー》中，除饰演サイヤ以外，也担任女主角メズーラ的代班演员。前来观赏同台演出的斋藤彩夏的动画导演大地丙太郎因此留下了印象。在导演的另一部作品反斗小王子中客串演出子石的角色，是为声优出道作。\r\n2006年3月从桐朋学园艺术短期大学演剧学科毕业。\r\n\r\n没加入过任何事务所，以前由母亲担任经纪人，现在则全部自己一手包办。\r\n家庭成员有爸爸、妈妈、姊姊和一只猫（MOKO）。\r\n有“就算连续三天喝到天亮也没事”的好酒量。\r\n喜欢的音乐是以J-POP为主\r\n曾学过七年的小提琴，是一项才艺。\r\n虽然本人似乎没有注意到，在广播节目中常用“てなわけで”、“そんなわけで”。\r\n昵称的“かもさん”是由于就读幼稚园时，NHK教育台播放“鸭子的桥”这首歌的时候会跟着一起唱唱跳跳，因此被父亲叫做“かもさん”。\r\n\r\n2011年2月21日, 在个人官方部落格上公开结婚消息。\r\n2012年1月1日，在官方博客上宣布，自己在稍早前的时候已经当上了妈妈，在2011年底顺利产下一名体重近6斤的健康女婴，在此对支持她的家人及粉丝表示感谢。\r\n2021年7月2日，在个人SNS上公布再度怀孕的消息。\r\n2021年12月4日，在个人SNS上公布次子平安生产的消息。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

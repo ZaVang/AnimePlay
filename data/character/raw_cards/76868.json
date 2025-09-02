@@ -1,0 +1,64 @@
+{
+    "id": 76868,
+    "name": "丹波広夢",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1f/0f/76868_crt_sI56L.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1f/0f/76868_crt_sI56L.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1f/0f/76868_crt_sI56L.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1f/0f/76868_crt_sI56L.jpg"
+    },
+    "summary": "生徒会長兼務の ザ・中学球児 \r\n真面目な性格で生徒会長を兼務しながら野球に情熱を傾ける、一番”球児らしい”風林中野球部唯一の３年生。プレッシャーに弱い一面も…？",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "丹波广梦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たんば ひろむ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "170cm（初中）"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        },
+        {
+            "key": "背号",
+            "value": "3"
+        },
+        {
+            "key": "守备位置",
+            "value": "一垒手"
+        },
+        {
+            "key": "投打",
+            "value": "右投右打"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 1
+    },
+    "anime_ids": [
+        292219
+    ]
+}

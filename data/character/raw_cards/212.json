@@ -1,0 +1,63 @@
+{
+    "id": 212,
+    "name": "瞬",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fb/94/212_crt_N7Ded.jpg?r=1587703324",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/94/212_crt_N7Ded.jpg?r=1587703324",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/94/212_crt_N7Ded.jpg?r=1587703324",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fb/94/212_crt_N7Ded.jpg?r=1587703324"
+    },
+    "summary": "星矢最可靠的伙伴，每次都协助星矢渡过难关，性格比较软弱，不喜欢杀戮，总需要哥哥一辉的帮助打败敌人。师傅是实力与黄金圣斗士接近的白银圣斗士 。在仙女岛修炼。仙女星座。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "瞬"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "アンドロメダ瞬"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Andromeda Shun"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "9月9日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "51kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 9,
+    "stat": {
+        "comments": 1,
+        "collects": 14
+    },
+    "anime_ids": [
+        4843
+    ]
+}

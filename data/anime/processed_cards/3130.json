@@ -1,0 +1,215 @@
+{
+    "id": 3130,
+    "name": "数码宝贝驯兽师之王",
+    "image_path": "data/images/anime/3130.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "　　松田启人是个稍微有点率真个性极普通得小学五年级男生，现在最喜欢东西就数码宝贝！\r\n　　对他来说与朋友玩数码宝贝卡片游戏及上课时偷偷地把自己创作数码暴龙画笔记簿上最大乐趣！热爱数码宝贝少年启人某日竟偶然得到了一张能把命运大大改变的以往从未有人见过的不可思议的蓝色卡片——蓝卡！\r\n　　就在把蓝卡放读卡机读进去瞬间启人眼前冒险之门已经打开了。与接着到访的命运拍档——基尔兽相遇，现在西新宿舞台上的新故事要揭开序幕了……\r\n　　松田启人、李建良、牧野留姬、秋山辽、加藤树莉、盐田博和、北川健太、李小春八个小朋友，来到数码宝贝世界，打败堕天地狱兽后回到人类世界，并合力打败帝厉魔，拯救了世界。后来数码宝贝们都回到了数码世界。结尾启人在基尔兽的洞中又看到了通往数码世界的大门，留下了悬念……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 51,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2001-04-01",
+    "rating_rank": 277,
+    "rating_score": 7.9,
+    "rating_total": 2411,
+    "main_character_ids": [
+        22118,
+        24241,
+        24242,
+        24243,
+        24244,
+        24246
+    ],
+    "main_characters": [
+        {
+            "id": 22118,
+            "name": "牧野留姫",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2d/b9/22118_crt_7nc4J.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/b9/22118_crt_7nc4J.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/b9/22118_crt_7nc4J.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2d/b9/22118_crt_7nc4J.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4042,
+                    "name": "折笠富美子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b9/7a/4042_prsn_rDhDy.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/7a/4042_prsn_rDhDy.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/7a/4042_prsn_rDhDy.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b9/7a/4042_prsn_rDhDy.jpg"
+                    },
+                    "short_summary": "名字“富美子”的意思是，她的母亲希望她成为一个内心丰“富”“美”丽的人。\r\n    自幼在东京台东区浅草长大，高中毕业后不读大学为了不增加母亲的负担，因为出身于单亲家庭，家庭成员有母亲及一个姐姐，中学及高中时期因受姐姐影响都就读女校。\r\n    从小便学习电子琴，因此中学及高中时期皆为轻音乐社的社员，高中时期还担任学生会副会长的职位。\r\n    高二时期参与了日本的知名剧团“Super Eccentric Theater”的招募活动，自幼开始便不擅长在人群前表演，所以在决定参加SET剧团招募活动时家人感到惊讶但支持她去尝试，于最后面谈唱了迪士尼的“星に愿いを”令人留下印象之后通过测验，高三时期便成为剧团之第三期研究生培训，研究生毕业公演担当主角后成为正式成员剧团的一员。\r\n    演技广泛，不论是活泼少女、坚强女性，甚至是阴郁内向的女生，她都能完美地诠释。\r\n    1996年，曾参加“辉く日本の星!---平成的原节子”的比赛，在比赛中最后获得第二名。\r\n    得知自己被选为动画版GTO女主角时高兴地说“我快成了松岛菜菜子了”。\r\n    在2006年12月9日和嘉数由美、丰口惠共同组成演剧团体“R*L（ラフラフ）”(R＝Rough，L＝Laugh)。\r\n    1999年，加入东京俳优生活协同组合（俳协），俳协主页上把麾下声优按照声型逐个分为高、中、低不同的声部，她被划分为女高音。\r\n    2007年3月1日离开俳协，并在2007年2月28日加入新的声优事务所“Atomic Monkey”。\r\n    目前正在学习手语，已取得NPO手语检定2级及全国手语检定3级的资格。\r\n    在家中饲养了一只名叫SERORI的猫咪。\r\n    曾自言不擅长杂志采访和出席广播谈话节目。\r\n    喜欢搜集簪子及手帕。\r\n    似乎是个灵感很强的人，常可以感应到一些东西，但本人对于此不是很在意，而且可以若无其事的说出鬼故事。\r\n    在业界中跟嘉数由美是很好的朋友，嘉数低调结婚到生子的时候，都去为她祝贺，且时不时在一起相聚喝茶。\r\n    是“和服社”的一员（嘉数由美是目前的社长）；不论公私活动，出外都穿着和服；和服部其他的成员还有：大原沙耶香、菊池志穗、丰口惠、浅野真由美等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 24241,
+            "name": "松田啓人",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/df/97/24241_crt_zggiF.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/97/24241_crt_zggiF.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/97/24241_crt_zggiF.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/df/97/24241_crt_zggiF.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4017,
+                    "name": "津村まこと",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d5/99/4017_prsn_9WP1P.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/99/4017_prsn_9WP1P.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/99/4017_prsn_9WP1P.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d5/99/4017_prsn_9WP1P.jpg"
+                    },
+                    "short_summary": "日本女性声优。北海道出身。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 24242,
+            "name": "李健良",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/09/35/24242_crt_PKtCC.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/35/24242_crt_PKtCC.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/35/24242_crt_PKtCC.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/09/35/24242_crt_PKtCC.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4057,
+                    "name": "山口眞弓",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f2/ea/4057_prsn_IVLXl.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/ea/4057_prsn_IVLXl.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/ea/4057_prsn_IVLXl.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f2/ea/4057_prsn_IVLXl.jpg"
+                    },
+                    "short_summary": "日本的女性声优，代表作人物有《数码宝贝大冒险系列》里的加布兽（出道作品）和钢铁加鲁鲁兽，《数码宝贝驯兽师之王》里的李建良，《银河天使》里的佛特．修特伦。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 24243,
+            "name": "ギルモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a1/90/24243_crt_B40Gz.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/90/24243_crt_B40Gz.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/90/24243_crt_B40Gz.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a1/90/24243_crt_B40Gz.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3954,
+                    "name": "野沢雅子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/ee/3954_prsn_mTEmk.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/ee/3954_prsn_mTEmk.jpg"
+                    },
+                    "short_summary": "日本の声優、女優、歌手、ナレーター。本名：塚田 雅子（つかだ まさこ、旧姓：野沢）。所属事務所は青二プロダクション。劇団ムーンライト主宰。\r\n\r\n東京都日暮里出身。身長157cm、血液型はO型。役者仲間からの愛称はマコさん。夫は同じく声優の塚田正昭。\r\n\r\n声優としての代表作に『ゲゲゲの鬼太郎』（鬼太郎）、『いなかっぺ大将』（風 大左衛門）、『ど根性ガエル』（ひろし）、『銀河鉄道999』（星野鉄郎）、『ドラゴンボール』シリーズ（孫悟空、孫悟飯、孫悟天）など。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 24244,
+            "name": "テリアモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/78/f6/24244_crt_GZDwI.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/f6/24244_crt_GZDwI.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/f6/24244_crt_GZDwI.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/78/f6/24244_crt_GZDwI.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3921,
+                    "name": "多田葵",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/ba/3921_prsn_758v4.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/ba/3921_prsn_758v4.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/ba/3921_prsn_758v4.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/ba/3921_prsn_758v4.jpg"
+                    },
+                    "short_summary": "多田葵（ただ あおい、1981年7月3日 - ）は、日本の女性シンガーソングライター。元子役、声優、舞台女優。 東京都出身、横浜市在住。血液型はO型。かに座。エスエスピー所属。早稲田大学第二文学部卒業。\r\n\r\n[うまれ]　1981年7月3日0時0分　東京都\r\n[せいざ]　かに座\r\n[けつえきがた]　Ｏ型\r\n[しんちょう]　160cm\r\n[くつ]　24.5cm\r\n[そだち]　横浜\r\n[とくちょう]　左手の甲の青いホクロ・歯並びがよい・身体がやわらかい\r\n[とくぎ]　うた（あたりまえだけど）、ダンス、タップダンス、バレエ、ものまね、マット運動、ネイルアート\r\n[すきなおと]　ポップでメロディアスでハッピーな音、楽しい気持ちになる歌、渋谷系な音楽。猫の鳴き声、鈴虫の鳴き声、友達の笑い声、水の流れる音\r\n[すきなアーティスト]　LINDBERG、aiko、NONA REEVES、ピチカートファイヴ、ジャクソン５、スティービー・ワンダー、タカハシタク☆、小西康陽etc.....\r\n[すきなスポーツ]　フットサル（やる方！）／ラグビー／サッカー／バレーボールF1（見る方！）\r\n[すきなたべもの]　１位：ネギトロ丼　２位：グミ　３位：プリン \r\n[すきなのみもの]　お茶全般、カフェラテ、ビール\r\n[すきなばしょ]　家のコタツ、渋谷の電力館の隣のスタバ、新宿のFlags、地元の川沿いの道、高校のスタンド\r\n[すきなふうけい]　夏の入道雲、花火の上がった空、冬の透き通った空、犬の散歩をしている老夫婦 \r\n[すきなにおい]　季節の変わり目のにおい、花火が終わった後のにおい、本屋さんのにおい、猫を洗った後のにおい\r\n[じゃくてん]　パクチー、救急車の音、日に焼けること、水泳、経済関係、ハイテク文化\r\n[はじめてかったCD]　LINDBERG『LINDBERG VI』Dreams Come True『The swinging star』（当時11歳）\r\n[はじめていったLIVE]　LINDBERGの１９９４年のツアー＠日本武道館（当時13歳）“歌で生きていくことに決めた記念日”\r\n\r\n元劇団ひまわり所属。かつては子役として『家なき子』等に出演。また舞台でも『アニー』（1991年度版）のアニー役を務めている。\r\n2003年高橋英樹とP505iの活動にキーボーディストとして参加。\r\n2005年3月以降はmoon-bunny entertainmentに所属を移し、シンガーソングライターとしての活動を開始、現在までに計3枚のオリジナル・アルバムを発表している。また、Veil ∞ Aoi名義でボーカル・グループVeilにも参加し、オムニバスWho’s next? Vol.3など、主にテレビアニメやPCゲームの主題歌を担当している。 励まし系シンガーソングライターを自称し、人気アニメやゲームなのエンディングを歌唱している為別名”エンディングの女王”の名前が付いている。 2013年4月エスエスピー所属となる。\r\n\r\n2010年度　Billboard Japan Music Awards\r\n“Independent of the year”受賞や\r\nグラミー賞受賞作にもヴォーカリストとして\r\n参加するなど、近年多方面に活動の幅を広げている。\r\n\r\n【代表作】\r\nアニメ「Angel Beats!」ED　♪Brave Song\r\nゲーム「君と彼女と彼女の恋」ED　♪星のメリーゴーランド\r\nゲーム「Rewrite」ED　♪渡りの詩/CANOE\r\nゲーム「Rewrite Harvest Festa!」OP　♪Harvest\r\nアニメ「リコーダーとランドセル ド♪」ED主題歌　♪Glitter\r\nアニメ「FORTUNE ARTERIAL～赤い約束～」ED　♪I miss you\r\nアニメ「GUNSLINGER　GIRL－IL TEATRINO－」ED　♪doll",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 24246,
+            "name": "レナモン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e9/32/24246_crt_0Q5x4.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/32/24246_crt_0Q5x4.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/32/24246_crt_0Q5x4.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e9/32/24246_crt_0Q5x4.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3833,
+                    "name": "今井由香",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0e/32/3833_prsn_udUHN.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/32/3833_prsn_udUHN.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/32/3833_prsn_udUHN.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0e/32/3833_prsn_udUHN.jpg"
+                    },
+                    "short_summary": "1970年9月19日に、静岡県熱海市で生まれた。その後、静岡県立熱海高等学校を卒業。1994年に、テレビアニメ『きらめき森のヤンタくん』のヤマリン役にて、声優としてデビューした。その後、1995年のテレビアニメ『愛天使伝説ウェディングピーチ』のスカーレット小原役や、1996年のテレビアニメ『セイバーマリオネットJ』の間宮小樽役などで知名度を上げ、以降も「出演作品」に挙げられているように様々な作品に出演していく。しかし、2006年に、持ち役があったゲーム『機神咆吼デモンベイン』とテレビアニメ『ふたりはプリキュア Splash Star』を途中降板してしまう。この理由について、当時は病気のためと説明されていたのだが、2010年に自身の公式ブログにて、実際は出産のためであり、また妊娠悪阻を併発していたことを明らかにしている。\r\n\r\nかつては劇団ムーンライトに所属していた。その後フリーであった期間を経て、2009年9月8日よりアトミックモンキーに所属している。\r\n\r\n在休业报告1年后，于2018年8月30日宣布退出声优界。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

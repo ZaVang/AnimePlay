@@ -1,0 +1,92 @@
+{
+    "id": 6710,
+    "name": "海王みちる",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/78/9d/6710_crt_vL6pV.jpg?r=1510268079",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/9d/6710_crt_vL6pV.jpg?r=1510268079",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/9d/6710_crt_vL6pV.jpg?r=1510268079",
+        "grid": "https://lain.bgm.tv/pic/crt/g/78/9d/6710_crt_vL6pV.jpg?r=1510268079"
+    },
+    "summary": "优雅的才女，同样出身富裕世家，擅长拉小提琴，小提琴名为海之圣堂，市值五亿日元，常到外地表演。\r\n可以变身为Sailor Neptune（台湾译本漫画原著和动画台湾新版配音译为水手海王星，动画台湾旧版配音译为海王星仙子），使用海之力，守护星是海王星，必杀技为“深海狂潮”、“深海镜射”，圣物“深海之镜”（台版翻译：深水镜＆心镜）的持有者。\r\n和天王遥是情侣关系。\r\n海王星行星力量，变身！（Neptune Planet Power,Make Up!）\r\n海王星水晶力量，变身！（Neptune Crystal Power,Make Up!）",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "海王满"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "セーラーネプチューン / Sailor Neptune / 水手海王星"
+                },
+                {
+                    "k": "海外名",
+                    "v": "ミシェル"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "海王美智留"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Michelle Kaioh"
+                },
+                {
+                    "k": "日文名",
+                    "v": "海王 みちる"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かいおう みちる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kaiou Michiru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "????-03-06"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "175"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "特长",
+            "value": "拉小提琴"
+        },
+        {
+            "key": "梦想",
+            "value": "成为小提琴家"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 4,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 6,
+    "stat": {
+        "comments": 1,
+        "collects": 22
+    },
+    "anime_ids": [
+        5434,
+        5432
+    ]
+}

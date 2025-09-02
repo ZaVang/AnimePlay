@@ -1,0 +1,52 @@
+{
+    "id": 103564,
+    "name": "明日小路",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/11/f6/103564_crt_yI0uS.jpg?r=1638721509",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/11/f6/103564_crt_yI0uS.jpg?r=1638721509",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/11/f6/103564_crt_yI0uS.jpg?r=1638721509",
+        "grid": "https://lain.bgm.tv/pic/crt/g/11/f6/103564_crt_yI0uS.jpg?r=1638721509"
+    },
+    "summary": "1年3組出席番号1番。\r\nとあるきっかけによりセーラー服に強い憧れを持つ少女。明るく真っ直ぐな性格で、学園生活を心から楽しみにしている。 運動神経がとても良い。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "明日小路"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あけび こみち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Akebi Komichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月4日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 4,
+    "stat": {
+        "comments": 55,
+        "collects": 204
+    },
+    "anime_ids": [
+        331480
+    ]
+}

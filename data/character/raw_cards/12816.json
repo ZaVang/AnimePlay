@@ -1,0 +1,44 @@
+{
+    "id": 12816,
+    "name": "ヒカリ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/93/fe/12816_crt_YpB1d.jpg?r=1638640310",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/fe/12816_crt_YpB1d.jpg?r=1638640310",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/fe/12816_crt_YpB1d.jpg?r=1638640310",
+        "grid": "https://lain.bgm.tv/pic/crt/g/93/fe/12816_crt_YpB1d.jpg?r=1638640310"
+    },
+    "summary": "小光（英文：Dawn，日文：ヒカリ）是一个在动漫口袋妖怪里出现的虚拟角色，同时亦是《口袋妖怪钻石珍珠》的女主角。她的梦想是成为世界上最伟大的口袋妖怪协调训练家。她拥有圆企鹅、帕奇利兹及象牙猪等众多不同的小精灵。\r\n《口袋妖怪钻石珍珠》的主角。年龄10岁，目标是成为像母亲般出色的口袋妖怪协调训练家，属于有话直说型的人。冒险开始时与波加曼成为伙伴，并在同一天于心齐湖遇见传说中的口袋妖怪艾姆利多，以及协助被火箭队追赶的皮卡丘。口头禅是“没问题”，但事实上，当她说“没问题”的时候就是最有问题、最危险的时候。造型范本为NDS钻石、珍珠版的女主角。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小光"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Dawn"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hikari"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 19,
+        "collects": 88
+    },
+    "anime_ids": [
+        3021
+    ]
+}

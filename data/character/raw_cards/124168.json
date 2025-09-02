@@ -1,0 +1,44 @@
+{
+    "id": 124168,
+    "name": "浅雛悠",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fd/dc/124168_crt_Tt1l1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/dc/124168_crt_Tt1l1.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/dc/124168_crt_Tt1l1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fd/dc/124168_crt_Tt1l1.jpg"
+    },
+    "summary": "「小牧モータース」に所属する、寡黙な高校生「F4」レーサー。\r\n「応援なんていらない」と放言する頑なな性格で、表彰台に立つという夢を果たすため、ただひたむきに走り続ける。\r\n普段は小牧家に居候をしつつ、新聞配達のアルバイトをしている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "浅雏悠"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Asahina Haruka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 16
+    },
+    "anime_ids": [
+        416534
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": 16422,
+    "name": "稲葉姫子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9d/46/16422_crt_34Bg0.jpg?r=1427919143",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9d/46/16422_crt_34Bg0.jpg?r=1427919143",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9d/46/16422_crt_34Bg0.jpg?r=1427919143",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9d/46/16422_crt_34Bg0.jpg?r=1427919143"
+    },
+    "summary": "一年三班学生，文研部副部长。第一人称“あたし”。\r\n留着黑色中长直发的女生，做事一丝不苟，个性尖锐而又冷漠，是因为自己没有办法信任他人，兴趣是收集情报并加以分析。在开设文研部前是打算进入“电脑社”，但因与社长性格不合而发生严重冲突而取回入社申请表，并打算复兴“情报处理部”，可惜因人数不足而失败。\r\n喜欢太一，在伊织的鼓励下坦然面对自己的心情，于小说第二集向太一告白，并且在告白后亲吻太一。\r\n有一名大学生的哥哥。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "稻叶姬子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いなば ひめこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "inaba himeko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 50,
+        "collects": 253
+    },
+    "anime_ids": [
+        37154
+    ]
+}

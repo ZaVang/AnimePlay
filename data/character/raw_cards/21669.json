@@ -1,0 +1,56 @@
+{
+    "id": 21669,
+    "name": "ルンデルハウス＝コード",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c9/61/21669_crt_8Ytsd.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/61/21669_crt_8Ytsd.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/61/21669_crt_8Ytsd.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c9/61/21669_crt_8Ytsd.jpg"
+    },
+    "summary": "人族，主职业妖术师，副职业为冒险者。\r\n等级23（夏季集训时）→25级（城惠使用契约术式时），公会：无→记录的地平线\r\n通称伦迪（ルディ），金发碧眼的美男子。自尊心高，被周围的人当作笨蛋而接受，但对自己的错误会坦承道歉，个性直率。\r\n大地人出身，却一直仰慕冒险者的自由作风。偷偷参加“圆桌会议”举办的夏季集训，对自我能力的要求很高而非常努力训练。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伦迪浩斯·寇德"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Rundelhaus Code"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Runderuhausu Kōdo"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ルディ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wiki"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 8,
+        "collects": 7
+    },
+    "anime_ids": [
+        100517
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "id": 4010,
+    "name": "剑豪生死斗",
+    "image_path": "data/images/anime/4010.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "江户初期，天下太平。\r\n应大纳言德川忠长的命令，一直都是以木剑来进行的殿前比武改为使用真剑。参加这一场比武的是岩本虎眼道场的同门——独臂的藤木源之助和盲眼的伊良子清玄。\r\n究竟谁才可以站在武士道的顶点？残酷的命运开始了……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2007-07-19",
+    "rating_rank": 359,
+    "rating_score": 7.9,
+    "rating_total": 1478,
+    "main_character_ids": [
+        88501,
+        88502
+    ],
+    "main_characters": [
+        {
+            "id": 88501,
+            "name": "藤木源之助",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8d/a4/88501_crt_hXibN.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/a4/88501_crt_hXibN.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/a4/88501_crt_hXibN.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8d/a4/88501_crt_hXibN.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4254,
+                    "name": "浪川大輔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/c3/4254_prsn_99K43.jpg?r=1631019573",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/70/c3/4254_prsn_99K43.jpg?r=1631019573"
+                    },
+                    "short_summary": "浪川 大輔（なみかわ だいすけ、1976年4月2日 - ） は、日本の声優、俳優、歌手、ナレーター。ステイラック代表取締役。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 88502,
+            "name": "伊良子清玄",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/05/94/88502_crt_8uUQB.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/94/88502_crt_8uUQB.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/94/88502_crt_8uUQB.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/05/94/88502_crt_8uUQB.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4188,
+                    "name": "佐々木望",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6a/1b/4188_prsn_aMya2.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/1b/4188_prsn_aMya2.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/1b/4188_prsn_aMya2.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6a/1b/4188_prsn_aMya2.jpg"
+                    },
+                    "short_summary": "※另有同名音乐人。非同一人物。\r\n\r\n佐佐木望（日语：佐々木望，1967年1月25日－）是日本男性声优、歌手。广岛县出身。近年因为声线与过去大大不同，而有喉咙因病开刀的谣言。其本人曾表示“并没有动过手术，也没任何疾病”。\r\n声优代表作有《幽游白书》（浦饭幽助）、《网球王子系列》（亚久津仁）。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

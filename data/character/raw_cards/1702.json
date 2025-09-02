@@ -1,0 +1,56 @@
+{
+    "id": 1702,
+    "name": "モコナ・ラーグ・モドキ（黒モコナ）",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b9/f9/1702_M4sEU.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/f9/1702_M4sEU.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/f9/1702_M4sEU.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b9/f9/1702_M4sEU.jpg"
+    },
+    "summary": "　黑色的全名是“莫歌拿・拉格・摩多基”（Mokona・Larg・Modoki）。\r\n　在侑子的一方中，所指的是黑色的莫歌拿，留在侑子的一方，负责联络之用；四月一日常以“黑馒头”称呼它。\r\n　黑色摩可拿耳朵的耳环是“封印道具”，为库洛·里德所做。\r\n    在《×××HOLiC》中，除了通讯以外，还有许多其他的能力。除了黑莫歌拿也有的108招秘技外，也懂得驾驭妖魔的技巧，比本作白莫歌拿活跃不少。\r\n　而且贪吃、贪喝以及喜欢作弄四月一日为乐的程度不比侑子弱。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "摩可拿·拉古·摩多基"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "莫哥拿 蒙哥拿"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Mokona・Larg・Modoki"
+                },
+                {
+                    "k": "日文名",
+                    "v": "モコナ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "囧"
+        },
+        {
+            "key": "声优",
+            "value": "菊地美香"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 24
+    },
+    "anime_ids": [
+        2439
+    ]
+}

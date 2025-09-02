@@ -1,0 +1,60 @@
+{
+    "id": 21684,
+    "name": "比泉秋名",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8f/3b/21684_crt_TgBfb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/3b/21684_crt_TgBfb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/3b/21684_crt_TgBfb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8f/3b/21684_crt_TgBfb.jpg"
+    },
+    "summary": "18岁的青年，黑色短发，茶色的眼睛。是个普通的人，兴趣是料理和扫除，另外还有珠算三段的本领。现在是“比泉生活相谈事务所”的所长。也是个心地善良的老实人，但是也是一个饱尝生活艰辛的人。当看到有人发生了为难的事情的时候，一定无法视若无睹。感情非常丰富，基本没有发怒过，但是确优柔寡断，懦弱，不顾全大局，导致了城镇妖怪的能力失控。和枪樱是从前的旧识，由于擅长做菜而经常为了枪樱做料理，可以说是很有家务才能了。而且他还继承了能够“调律”妖怪的能力，当他发动自己的能力的时候，头发会变成长长的黑色头发，另外会对自己的身体产生很大的负担，每个月都会被医生要求去体检。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "比泉秋名"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "比泉 秋名"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひいずみ あきな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hiizumi Akina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月3日"
+        },
+        {
+            "key": "身高",
+            "value": "173cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 3,
+    "stat": {
+        "comments": 2,
+        "collects": 10
+    },
+    "anime_ids": [
+        71955
+    ]
+}

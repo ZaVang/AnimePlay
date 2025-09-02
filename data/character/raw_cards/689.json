@@ -1,0 +1,60 @@
+{
+    "id": 689,
+    "name": "滝沢朗",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/07/a9/689_mjxma.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/a9/689_mjxma.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/a9/689_mjxma.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/07/a9/689_mjxma.jpg"
+    },
+    "summary": "Seleção No.09。本名、年龄不明，消去了有关自己过去的记忆。“泷泽朗”是被准备的许多护照中其中一个名字。护照里面记载生日是昭和64年1月7日。22岁。\r\n在华盛顿哥伦比亚特区帮助了咲，两人一起回到日本。虽然记忆丧失，但电影的内容却记的很清楚，在说话时常引用到。在华盛顿哥伦比亚特区的住所放有各式各样的武器和多本护照，及有关两万人尼特族失踪事件的照片等，以为自己是恐怖份子。\r\n拥有一间大型商场，并且将其作为自己的家。\r\n随着与别的Seleção接触，渐渐发现自己的身份，和自己失去记忆前所做过的事情。\r\n喜欢森美咲。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "泷泽朗"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "滝沢 朗"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たきざわ あきら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takizawa Akira"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1月7日"
+        },
+        {
+            "key": "身高",
+            "value": "172cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 7,
+    "stat": {
+        "comments": 21,
+        "collects": 80
+    },
+    "anime_ids": [
+        1451
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "id": 178303,
+    "name": "猪名寺乱太郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9f/71/178303_crt_uTpL2.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/71/178303_crt_uTpL2.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/71/178303_crt_uTpL2.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9f/71/178303_crt_uTpL2.jpg"
+    },
+    "summary": "【一年は組】\r\n10歳／保健委員会所属\r\n家は先祖代々由緒正しいヒラ忍者。一流の忍者を目指して、忍術学園に入学。\r\nぼさぼさ頭で、ひどい乱視のためメガネをかけている。\r\n足が速く、100ｍ10秒で走ることができる。絵を描くのも得意。素直で元気！\r\n「乱・きり・しん」三人組のまとめ役。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "猪名寺乱太郎"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        4264
+    ]
+}

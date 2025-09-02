@@ -1,0 +1,408 @@
+{
+    "id": 489820,
+    "type": 2,
+    "name": "らんま1/2",
+    "name_cn": "乱马1/2",
+    "summary": "早乙女乱馬と、 天道道場三女の天道あかねは親が決めた許婚同士。\r\nしかし乱馬にはある悩みが…。\r\n中国での修行中、伝説の修行場「呪泉郷」に落ちてしまい、\r\n水をかぶると女に、\r\nお湯をかぶると男に戻る\r\nという、不思議な体質になってしまっていた！？\r\n乱馬とあかね、そして個性豊かな\r\nキャラクターたちが繰り広げる\r\nドタバタ格闘ラブコメディー、\r\nここに開幕！",
+    "nsfw": false,
+    "locked": false,
+    "date": "2024-10-05",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/13/a3/489820_Hre3R.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/13/a3/489820_Hre3R.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/13/a3/489820_Hre3R.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/13/a3/489820_Hre3R.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/13/a3/489820_Hre3R.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "乱马1/2"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Ranma 1/2 (Completely New Anime)",
+                    "k": null
+                },
+                {
+                    "v": "らんま1/2（2024）",
+                    "k": null
+                },
+                {
+                    "v": "Ranma1/2 (2024)",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2024年10月5日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://ranma-pr.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "日本テレビ系列"
+        },
+        {
+            "key": "播放结束",
+            "value": "2024年12月21日"
+        },
+        {
+            "key": "导演",
+            "value": "宇田鋼之介"
+        },
+        {
+            "key": "Copyright",
+            "value": "©高橋留美子・小学館／「らんま1/2」製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "高橋留美子「らんま1/2」（小学館「少年サンデーコミックス」刊）"
+        },
+        {
+            "key": "人物设定",
+            "value": "谷口宏美；副人设：金田莉子、田中志穂"
+        },
+        {
+            "key": "POP ART WORK",
+            "value": "北村みなみ"
+        },
+        {
+            "key": "选曲",
+            "value": "茅原万起子"
+        },
+        {
+            "key": "总作画监督",
+            "value": "谷口宏美、吉岡毅、齊藤佳子、大津直"
+        },
+        {
+            "key": "主动画师",
+            "value": "内藤直、青木里枝"
+        },
+        {
+            "key": "道具设计",
+            "value": "本多みゆき、小市由佳、亀谷響子"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "Taku Inoue / 羽生まゐご"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "真部脩一 / りりあ。"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "あの、真部脩一 / りりあ。"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "ano(あの) / りりあ。"
+        },
+        {
+            "key": "製作",
+            "value": "「らんま1/2」製作委員会（小学館集英社プロダクション、MAPPA、小学館、日本テレビ）；高澤邦仁、大塚学、沢辺伸政、佐藤貴博"
+        },
+        {
+            "key": "企画",
+            "value": "企画制片：小学館集英社プロダクション"
+        },
+        {
+            "key": "总制片人",
+            "value": "長谷川友紀、備前島幹人、山越寛和；制作统括: 長谷川博哉"
+        },
+        {
+            "key": "制片人",
+            "value": "佐藤エミ、林田師博、近藤秀峰、今井蘭泉"
+        },
+        {
+            "key": "副制片人",
+            "value": "根岸智也"
+        },
+        {
+            "key": "助理制片人",
+            "value": "大場幸、アンドリューアプトン"
+        },
+        {
+            "key": "原作协力",
+            "value": "大嶋一範、岡本吏莉"
+        },
+        {
+            "key": "音乐制作",
+            "value": "小学館ミュージック&デジタルエンタテイメント"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "大隅啓良"
+        },
+        {
+            "key": "动画制片人",
+            "value": "岡村耕也"
+        },
+        {
+            "key": "原画",
+            "value": "田中宏紀（NC）"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "関和亮&篠原ぱらこ／北村みなみ"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 12,
+    "rating": {
+        "rank": 885,
+        "total": 4769,
+        "count": {
+            "one": 4,
+            "two": 3,
+            "three": 9,
+            "four": 15,
+            "five": 78,
+            "six": 370,
+            "seven": 1717,
+            "eight": 2178,
+            "nine": 303,
+            "ten": 92
+        },
+        "score": 7.5
+    },
+    "collection": {
+        "wish": 1810,
+        "collect": 6157,
+        "doing": 1725,
+        "on_hold": 388,
+        "dropped": 226
+    },
+    "tags": [
+        {
+            "name": "恋爱",
+            "count": 1150
+        },
+        {
+            "name": "2024年10月",
+            "count": 1115
+        },
+        {
+            "name": "MAPPA",
+            "count": 1059
+        },
+        {
+            "name": "漫画改",
+            "count": 968
+        },
+        {
+            "name": "搞笑",
+            "count": 926
+        },
+        {
+            "name": "TV",
+            "count": 861
+        },
+        {
+            "name": "性转",
+            "count": 850
+        },
+        {
+            "name": "高桥留美子",
+            "count": 640
+        },
+        {
+            "name": "日常",
+            "count": 631
+        },
+        {
+            "name": "2024",
+            "count": 450
+        },
+        {
+            "name": "奇幻",
+            "count": 418
+        },
+        {
+            "name": "重制",
+            "count": 392
+        },
+        {
+            "name": "日本",
+            "count": 325
+        },
+        {
+            "name": "漫改",
+            "count": 264
+        },
+        {
+            "name": "宇田钢之介",
+            "count": 103
+        },
+        {
+            "name": "战斗",
+            "count": 37
+        },
+        {
+            "name": "校园",
+            "count": 34
+        },
+        {
+            "name": "宇田鋼之介",
+            "count": 18
+        },
+        {
+            "name": "2024年",
+            "count": 11
+        },
+        {
+            "name": "喜剧",
+            "count": 9
+        },
+        {
+            "name": "乱马",
+            "count": 9
+        },
+        {
+            "name": "季番",
+            "count": 7
+        },
+        {
+            "name": "乱马1",
+            "count": 7
+        },
+        {
+            "name": "2",
+            "count": 7
+        },
+        {
+            "name": "追番",
+            "count": 6
+        },
+        {
+            "name": "经典",
+            "count": 6
+        },
+        {
+            "name": "林原めぐみ",
+            "count": 5
+        },
+        {
+            "name": "2024秋",
+            "count": 5
+        },
+        {
+            "name": "TVA",
+            "count": 4
+        },
+        {
+            "name": "日本动画",
+            "count": 4
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "日常"
+    ],
+    "series": false,
+    "main_character_ids": [
+        1638,
+        1639
+    ],
+    "main_characters": [
+        {
+            "id": 1638,
+            "name": "早乙女乱馬",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/25/bf/1638_crt_2Y12D.jpg?r=1728369697",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/bf/1638_crt_2Y12D.jpg?r=1728369697",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/bf/1638_crt_2Y12D.jpg?r=1728369697",
+                "grid": "https://lain.bgm.tv/pic/crt/g/25/bf/1638_crt_2Y12D.jpg?r=1728369697"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3900,
+                    "name": "山口勝平",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/46/c8/3900_prsn_9Z9tZ.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/46/c8/3900_prsn_9Z9tZ.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/46/c8/3900_prsn_9Z9tZ.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/46/c8/3900_prsn_9Z9tZ.jpg"
+                    },
+                    "short_summary": "日本の声優、劇団21世紀FOX所属舞台俳優、芸能プロダクション悟空代表。\r\n\r\n为人熟悉的代表配音作品有动画《乱马½》主角早乙女乱马〈男生〉、《犬夜叉》主角犬夜叉、《名侦探柯南》工藤新一、《魔术快斗》主角黑羽快斗／怪盗基德、《ONE PIECE》的骗人布、《死亡笔记本》的L、《我们这一家》的藤野等。\r\n兴趣和特长为画插图、弹吉他、杀阵。入读声优学校之前送过报纸。",
+                    "locked": false
+                },
+                {
+                    "id": 3919,
+                    "name": "林原めぐみ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490"
+                    },
+                    "short_summary": "日本的声优、歌手、DJ、作词家（化名为MEGUMI）、作家。出生于日本东京都北区。\r\n歌迷与动漫迷常以“小惠”（めぐさん）、“惠姐”（めぐ姉）及“阁下”（声优平松晶子命名）等方式称呼她。\r\n林原惠演过多部著名作品的主要女角及担任部分片头、片尾曲演唱，包含《新世纪福音战士》的绫波丽、《乱马1/2》的女乱马、《秀逗魔导士》的莉娜·因巴斯、《口袋妖怪》的武藏、《名侦探柯南》的灰原哀、《通灵王》的恐山安娜等，为日本公认的“声优女王”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 1639,
+            "name": "天道あかね",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0a/07/1639_crt_j9DDP.jpg?r=1619279114",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/07/1639_crt_j9DDP.jpg?r=1619279114",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/07/1639_crt_j9DDP.jpg?r=1619279114",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0a/07/1639_crt_j9DDP.jpg?r=1619279114"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4024,
+                    "name": "日髙のり子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5e/57/4024_prsn_bMBgq.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/57/4024_prsn_bMBgq.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/57/4024_prsn_bMBgq.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5e/57/4024_prsn_bMBgq.jpg"
+                    },
+                    "short_summary": "日髙 のり子（ひだか のりこ、1962年5月31日 - ）は、日本の声優、女優、ラジオパーソナリティ、ナレーターである。\r\n東京都千代田区九段出身。愛称は「ノン子（さん）」。本名の旧姓は伊東。名は範子。身長157cm。血液型はAB型。既婚。2009年1月19日に事務所「コンビネーション」を三ツ矢雄二と共に設立する。\r\n代表作に『タッチ』（浅倉南）、『となりのトトロ』（草壁サツキ）、『らんま1/2』（天道あかね）など。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

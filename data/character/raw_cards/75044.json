@@ -1,0 +1,36 @@
+{
+    "id": 75044,
+    "name": "ペンチ・イライザ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b3/05/75044_crt_UvC95.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/05/75044_crt_UvC95.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/05/75044_crt_UvC95.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b3/05/75044_crt_UvC95.jpg"
+    },
+    "summary": "10歳。女子。地球（フランス）出身。血液型はA型。詩作と読書が好きな、普段は物静かな女の子。だが時折芯の強さを見せ周囲を驚かせる。フレッドと仲が良く、優柔不断な彼を常にリードしている。シャロンとはある事件をきっかけに気の置けない悪友となる。直接戦闘に絡むことは稀。見かけによらず寝相が悪い。食事当番では航路設定の勉学をこなしながら自動調理器の操作をしていたため設定を誤り、133人分の食事を作り出してしまい、艦内がパニックになったこともある。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "PENCH ELIZA"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        37295
+    ]
+}

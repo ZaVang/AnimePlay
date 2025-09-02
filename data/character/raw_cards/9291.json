@@ -1,0 +1,56 @@
+{
+    "id": 9291,
+    "name": "太田功",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8f/3d/9291_crt_I44jh.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/3d/9291_crt_I44jh.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/3d/9291_crt_I44jh.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8f/3d/9291_crt_I44jh.jpg"
+    },
+    "summary": "第二小队队员，2号机驾驶员，性格冲动，习惯开枪解决问题。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "太田功"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "太田功"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おおた いさお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Oota Isao"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 15,
+        "collects": 6
+    },
+    "anime_ids": [
+        8484
+    ]
+}

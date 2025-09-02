@@ -1,0 +1,97 @@
+{
+    "id": 12399,
+    "name": "橋田至",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0d/44/12399_crt_gSpN4.jpg?r=1529463866",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/44/12399_crt_gSpN4.jpg?r=1529463866",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/44/12399_crt_gSpN4.jpg?r=1529463866",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0d/44/12399_crt_gSpN4.jpg?r=1529463866"
+    },
+    "summary": "　东京电机大学一年级。冈伦高中时代的友人，两人也在同一所大学上学。因为出色的编程和黑客技术，被冈伦称为「右手」的未来道具研究所的宝贵战力。\r\n　　御宅族，常常使用2ch用语，喜欢谈下半身的话题，是个从2次元到3次元甚至到无机物都能萌上的家伙。口癖“常考”。最近喜欢的是动画『10 之使魔』的露易丝，在女仆咖啡厅『女仆皇后+喵 2』打工的菲利斯等。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "桥田至"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "橋田至"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はしだ いたる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hashida itaru"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ダル/桶子，变态"
+                },
+                {
+                    "k": "网名",
+                    "v": "DaSH (Daru the Super-Hacker)"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1991-05-19(金牛座)"
+        },
+        {
+            "key": "血型",
+            "value": "AB 型"
+        },
+        {
+            "key": "身高",
+            "value": "164cm"
+        },
+        {
+            "key": "体重",
+            "value": "98Kg"
+        },
+        {
+            "key": "年龄",
+            "value": "19岁"
+        },
+        {
+            "key": "特技",
+            "value": "编程"
+        },
+        {
+            "key": "讨厌的东西",
+            "value": "运动"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "萌物，PC 美少女游戏，女仆咖啡厅，近未来风格建筑"
+        },
+        {
+            "key": "趣味",
+            "value": "上 2ch，黑客活动，收集H 图片和影像"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1991,
+    "birth_mon": 5,
+    "birth_day": 19,
+    "stat": {
+        "comments": 42,
+        "collects": 133
+    },
+    "anime_ids": [
+        10380,
+        129807
+    ]
+}

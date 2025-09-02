@@ -1,0 +1,64 @@
+{
+    "id": 15695,
+    "name": "東方不敗マスター・アジア",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f0/9c/15695_crt_XsIfj.jpg?r=1636629536",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/9c/15695_crt_XsIfj.jpg?r=1636629536",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/9c/15695_crt_XsIfj.jpg?r=1636629536",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f0/9c/15695_crt_XsIfj.jpg?r=1636629536"
+    },
+    "summary": "前大会――第12回大会の優勝者。ドモンの格闘技の師匠であり、旧シャッフル同盟のひとりで\"キング・オブ・ハート\"の称号を持つ。正統派格闘技の流派\"東方不敗\"を編み出し、素手でモビルファイターを倒すほどの超人的な強さを持っている。普段は温厚で冷静沈着、詩歌などの芸術も好む。しかし闘いにおいては容赦ない非情さで相手を叩き潰す。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "东方不败亚洲天王"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "シュウジ・クロス"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "とうほうふはい マスターアジア"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "F.C10年2月22日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "193cm"
+        },
+        {
+            "key": "体重",
+            "value": "80kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 2,
+    "stat": {
+        "comments": 7,
+        "collects": 22
+    },
+    "anime_ids": [
+        4212
+    ]
+}

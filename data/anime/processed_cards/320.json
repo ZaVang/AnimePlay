@@ -1,0 +1,120 @@
+{
+    "id": 320,
+    "name": "攻壳机动队 S.A.C. Solid State Society",
+    "image_path": "data/images/anime/320.jpg",
+    "points": 8.4,
+    "cost": 4,
+    "rarity": "SSR",
+    "description": "　　时间为公历2034年，在2nd GIG“难民事件”的两年后。增员20人的新重组的公安九课又再临危受命，调查以梵文刺青为标志的恐怖分子的连续自杀事件以及机场人质劫持事件。从疑犯口中得知，潜藏于事件背后的幕后黑手，是一个被称为“傀儡回”的超高级黑客。 \r\n　　老将巴特在一次暗中调查时，与久违两年的少佐草薙素子不期而遇，然而重逢十分短暂，素子神秘的行动，以及那句“不要接近Solid State Society”的忠告，就连巴特也误认为素子就是“傀儡回”。 \r\n　　因两年前素子的失踪而被任命为队长的陀古萨，正在为神秘自杀事件困惑，另一边厢，又一件头痛的事件接踵而来——发现16名被绑架的失踪儿童，而且这些孩子们都被删去了关于父母的部份记忆，而追查其监护人，竟然都是孤独无依的鳏寡老人。 \r\n　　调查越深，事件越发不可思议，失踪小童的数字竟达两万多人，政府官员意欲雇凶自杀，如催眠师般的“傀儡回”无线入侵，陀古萨的宝贝女儿被盯上，甚至陀古萨的性命也差点不保……一个个谜团如沸水般不停冒泡，越演越烈，Solid State Society究竟指的是什么？在大家都茫无头绪之际，素子终于现身，她将为事态带来怎样的转机？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2006-09-01",
+    "rating_rank": 70,
+    "rating_score": 8.4,
+    "rating_total": 3511,
+    "main_character_ids": [
+        84,
+        3002,
+        3008
+    ],
+    "main_characters": [
+        {
+            "id": 84,
+            "name": "草薙素子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/11/7b/84_crt_xc45y.jpg?r=1587737580",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/11/7b/84_crt_xc45y.jpg?r=1587737580",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/11/7b/84_crt_xc45y.jpg?r=1587737580",
+                "grid": "https://lain.bgm.tv/pic/crt/g/11/7b/84_crt_xc45y.jpg?r=1587737580"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3873,
+                    "name": "田中敦子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6e/af/3873_prsn_1lUVv.jpg?r=1725375926",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/af/3873_prsn_1lUVv.jpg?r=1725375926",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/af/3873_prsn_1lUVv.jpg?r=1725375926",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6e/af/3873_prsn_1lUVv.jpg?r=1725375926"
+                    },
+                    "short_summary": "日本の女性声優、ナレーターである。マウスプロモーション所属。群馬県前橋市出身。群馬県立前橋女子高等学校、フェリス女学院大学国文科卒業。",
+                    "locked": false
+                },
+                {
+                    "id": 12693,
+                    "name": "Mary Elizabeth McGlynn",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e7/d1/12693_prsn_WYbbP.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/d1/12693_prsn_WYbbP.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/d1/12693_prsn_WYbbP.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e7/d1/12693_prsn_WYbbP.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 3002,
+            "name": "バトー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/da/95/3002_crt_DyxyG.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/95/3002_crt_DyxyG.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/95/3002_crt_DyxyG.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/da/95/3002_crt_DyxyG.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3832,
+                    "name": "大塚明夫",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/18/8c/3832_prsn_O1E5c.jpg?r=1545044333"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーター。マウスプロモーション所属。\r\n父は同じく俳優・声優の大塚周夫、元妻は声優の沢海陽子。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 3008,
+            "name": "公安9課",
+            "type": 4,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f5/c8/3008_crt_ftTsK.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/c8/3008_crt_ftTsK.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/c8/3008_crt_ftTsK.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f5/c8/3008_crt_ftTsK.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

@@ -1,0 +1,410 @@
+{
+    "id": 5365,
+    "type": 2,
+    "name": "ローゼンメイデン・オーベルテューレ",
+    "name_cn": "蔷薇少女 序曲",
+    "summary": "《薔薇少女 ～序曲～》作为TV动画的特別篇于2006年12月22、23日深夜播出，主角是水銀燈和真红，介绍两人从最初相遇到反目成仇的过程。共前、後兩篇。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2006-12-22",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/b1/05/5365_ZRtBk.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/b1/05/5365_ZRtBk.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/b1/05/5365_ZRtBk.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/b1/05/5365_ZRtBk.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/b1/05/5365_ZRtBk.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "蔷薇少女 序曲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "蔷薇少女 特别篇",
+                    "k": null
+                },
+                {
+                    "v": "ローゼンメイデン オーベルテューレ",
+                    "k": null
+                },
+                {
+                    "v": "Rozen Maiden ouvertüre",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "2"
+        },
+        {
+            "key": "放送开始",
+            "value": "2006年12月22日"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.tbs.co.jp/rozen-maiden/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TBS"
+        },
+        {
+            "key": "其他电视台",
+            "value": "BS-i"
+        },
+        {
+            "key": "播放结束",
+            "value": "2006年12月23日"
+        },
+        {
+            "key": "导演",
+            "value": "松尾衡"
+        },
+        {
+            "key": "Copyright",
+            "value": "©PEACH-PIT/薔薇乙女製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "PEACH-PIT (幻冬舎コミックス刊「月刊コミックバーズ」連載中)"
+        },
+        {
+            "key": "製作",
+            "value": "薔薇乙女製作委員会、TBS"
+        },
+        {
+            "key": "人物设定",
+            "value": "石井久美"
+        },
+        {
+            "key": "系列构成",
+            "value": "花田十輝"
+        }
+    ],
+    "volumes": 0,
+    "eps": 2,
+    "total_episodes": 2,
+    "rating": {
+        "rank": 1739,
+        "total": 1519,
+        "count": {
+            "one": 1,
+            "two": 2,
+            "three": 2,
+            "four": 8,
+            "five": 48,
+            "six": 267,
+            "seven": 592,
+            "eight": 497,
+            "nine": 68,
+            "ten": 34
+        },
+        "score": 7.2
+    },
+    "collection": {
+        "wish": 526,
+        "collect": 2739,
+        "doing": 53,
+        "on_hold": 89,
+        "dropped": 26
+    },
+    "tags": [
+        {
+            "name": "蔷薇少女",
+            "count": 366
+        },
+        {
+            "name": "OVA",
+            "count": 343
+        },
+        {
+            "name": "水银灯",
+            "count": 216
+        },
+        {
+            "name": "2006",
+            "count": 191
+        },
+        {
+            "name": "哥特萝莉",
+            "count": 128
+        },
+        {
+            "name": "人偶",
+            "count": 122
+        },
+        {
+            "name": "真紅",
+            "count": 118
+        },
+        {
+            "name": "漫画改",
+            "count": 105
+        },
+        {
+            "name": "百合",
+            "count": 98
+        },
+        {
+            "name": "NOMAD",
+            "count": 93
+        },
+        {
+            "name": "Rozen_Maiden_ouvertüre",
+            "count": 54
+        },
+        {
+            "name": "PEACH-PIT",
+            "count": 52
+        },
+        {
+            "name": "主席",
+            "count": 42
+        },
+        {
+            "name": "TV",
+            "count": 40
+        },
+        {
+            "name": "漫改",
+            "count": 38
+        },
+        {
+            "name": "奇幻",
+            "count": 33
+        },
+        {
+            "name": "萝莉",
+            "count": 23
+        },
+        {
+            "name": "哥特",
+            "count": 22
+        },
+        {
+            "name": "松尾衡",
+            "count": 21
+        },
+        {
+            "name": "2006年12月",
+            "count": 19
+        },
+        {
+            "name": "日本",
+            "count": 15
+        },
+        {
+            "name": "ローゼンメイデン",
+            "count": 15
+        },
+        {
+            "name": "2006年",
+            "count": 13
+        },
+        {
+            "name": "战斗",
+            "count": 11
+        },
+        {
+            "name": "沢城みゆき",
+            "count": 11
+        },
+        {
+            "name": "乳酸菌",
+            "count": 9
+        },
+        {
+            "name": "花田十辉",
+            "count": 8
+        },
+        {
+            "name": "番外",
+            "count": 6
+        },
+        {
+            "name": "萌",
+            "count": 6
+        },
+        {
+            "name": "田中理惠",
+            "count": 6
+        }
+    ],
+    "meta_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        6288,
+        6290,
+        6292,
+        6293,
+        11641
+    ],
+    "main_characters": [
+        {
+            "id": 6288,
+            "name": "真紅",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b0/a9/6288_crt_etAY3.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/a9/6288_crt_etAY3.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/a9/6288_crt_etAY3.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b0/a9/6288_crt_etAY3.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4244,
+                    "name": "沢城みゆき",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/b0/4244_prsn_Igahi.jpg?r=1687791526",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/b0/4244_prsn_Igahi.jpg?r=1687791526",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/b0/4244_prsn_Igahi.jpg?r=1687791526",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/b0/4244_prsn_Igahi.jpg?r=1687791526"
+                    },
+                    "short_summary": "日本长野县出身的女性声优。昵称みゆきち(Miyukichi)，隶属青二Production事务所。\r\n\r\n1998年，Broccoli公司弄出一系列旗下精品店2D角色的策划，即猫耳女仆装萌LOLI角色商品的推广，并且在全国范围开展了还算有声势的“Di Gi Charat”角色声优遴选活动。那时候，初中二年级也是选手中年龄第二小的泽城美雪获得了评委特别奖，和得到冠军的真田麻美（真田アサミ）一起于“Di Gi Charat”声优出道。\r\n2001年，在动画《顽皮小白貂》中首次为主演角色配音。\r\n\r\n未进入过声优养成所的她经过同是D.U.P.成员的冰上恭子介绍，来到以外国影视吹替为特色的事务所Mausu Promotion，之后演技学习上得到了更好的指导，也获得了不少锻炼经验，可以明显地感觉她的声优本领技巧历精更始。\r\n2007年秋，成为Theatre剧团子的准剧团成员，开始了舞台剧的表演生涯。\r\n2009年，获得第三届声优奖助演女声优赏。获“以率真的表演为多部作品添色不少的实力派声优”的评价。\r\n2010年，获得第四届声优奖主演女声优赏。2010年全年，泽城的总演出电视动画集数是219话，即大约在每一季度，便有超过50话的动画都能听见她的声音。\r\n2011年，获得第五届声优奖海外人气赏。2011年，FAMI通2011年度大赏，最佳女主角奖。唯一在游戏界和动画界取得该成就的女性声优。\r\n2013年，NewType动画大赏2013 女性声优赏。\r\n2015年，获得第九届声优奖助演女声优赏，同年8月1日从Mausu Promotion移籍至青二事务所。\r\n\r\n为人沉着低调，甚至到了被以为是情绪低落的地步，即使是大合照亦少见笑容，也极少见出现于其他声优网志之中。做事认真，由于资历老实力好做事又一板一眼，所以往往在录音室甚至要指导其他声优的演出，因此被田中理惠封为『座长』。\r\n和坂本真绫一样，即使在大学时还是有参与工作，而且其工作的密度完全无法想像直到2008年四月之前还是大学生。 并没有受过正统声优学校训练，而被前辈冰上恭子以至事务所的吹替系前辈作演技指导，可说是边做边学。\r\n2008年3月大学毕业。学习勤奋刻苦的她以优异的成绩毕业，之前她仅两年内就拿到了100以上的高学分，大学四年间，她声优活动与兼顾学业做到两不耽误。\r\n自心之图书馆起便经常与斋藤千和共演，由于出道年份来说泽城很早就出道，所以往往出现明明年纪比她大的声优却要叫她前辈的有趣事。\r\n由于和真田麻美一起出道，因此二人公私之间的感情非常要好，也是低调的泽城少数私交较深的同行。和名冢佳织、小清水亚美、三瓶由布子因一同出演《强袭魔女》而交好。和同出身于东京都的下野纮有着类似于青梅竹马一样的关系。此外，和水树奈奈关系也不错，后者曾邀请泽城到新宿KOMA剧场参演舞台剧，以庆祝泽城大学毕业，两人还曾一同去屋久岛两日一夜游。\r\n\r\n家庭成员是父母和一个弟弟，弟弟是演员和声优泽城千春，喜欢西方古典乐，会在泡澡时看书。其实名字是叫做泽城幸，其原因是父亲是中岛美雪的歌迷，所以就按照「みゆき」（MIYUKI）这个读音给她取名字意为「幸」，因此她的名字应该汉字写作「泽城幸」。有趣的是，在父亲给她取名的时候，日本人由于有时候用汉字可以标记的假名太多，所以经常混淆。她的母亲曾经反驳父亲道，叫「幸」不是应该用「さち（SACHI）」的读音吗？\r\n\r\n2014年6月2日，在自己的博客宣告了与圈外男性结婚的喜讯。\r\n2018年6月28日，因要产前休养、以及产后育儿相关事情，宣布从夏天开始暂停声优工作，在同年的11月5日产后复出。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6290,
+            "name": "翠星石",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7c/44/6290_crt_0sfgm.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/44/6290_crt_0sfgm.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/44/6290_crt_0sfgm.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7c/44/6290_crt_0sfgm.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4168,
+                    "name": "桑谷夏子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0d/b1/4168_prsn_QjUU4.jpg?r=1507394630",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/b1/4168_prsn_QjUU4.jpg?r=1507394630",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/b1/4168_prsn_QjUU4.jpg?r=1507394630",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0d/b1/4168_prsn_QjUU4.jpg?r=1507394630"
+                    },
+                    "short_summary": "桑谷 夏子（くわたに なつこ、1978年8月8日 - ）は、日本の女性声優。本名同じ。東京都青梅市出身。アイムエンタープライズ所属。血液型はO型。\r\n\r\n代々木アニメーション学院・日本ナレーション演技研究所・アーツビジョン。『彼氏彼女の事情』の少女A役でデビュー。桑谷本人が雑誌の一般募集に応募したことによる。その後『シスター・プリンセス』シリーズの可憐役で、一躍ブレイクする。そして『シスター・プリンセス』シリーズで共演した望月久代・小林由美子・水樹奈々と共に「Prits（プリッツ）」というユニットを結成していた。\r\n\r\nラジオ『VOICE CREW』では、番組の放送延長を記念して、一緒にパーソナリティを務めた斎藤千和とともに「coopee（クーピー）」を結成していた。\r\n\r\n2008年3月1日付けで、アーツビジョンから、現在のアイムエンタープライズに移籍している。\r\n\r\n高校生の頃は漫画家を目指し、2年生の時から雑誌に投稿していた。しかし、卒業までに漫画家デビューできなかったため、見切りを付けて声優を目指すことになった。『魔法少女リリカルなのは』シリーズのイベントでは、イラストを披露していたが、同席していた女性声優一同から「うまーい!!」と絶賛されたエピソードもある。\r\n\r\n2003年8月から2005年8月まで、雑誌『電撃アニマガ』で、イラスト付きコラム「なっちゃんのたあいもない話」を書いていた。イラストには自筆の文章も含まれている。\r\n\r\n友人は中原麻衣、斎藤千和、石毛佐和、小林由美子、釘宮理恵、高橋美佳子、力丸乃りこ、野川さくら、堀江由衣、田村ゆかりなどがいる。また、清水香里や植田佳奈と三姉妹を自称している。\r\n\r\n涼宮ハルヒの憂鬱シリーズ、長門有希ちゃんの消失で共演した杉田智和からは「小さな巨人」と呼ばれ、頼りになる存在とされている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6292,
+            "name": "水銀燈",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fe/80/6292_crt_OCpj3.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/80/6292_crt_OCpj3.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/80/6292_crt_OCpj3.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fe/80/6292_crt_OCpj3.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3862,
+                    "name": "田中理恵",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/59/da/3862_prsn_JVDU6.jpg?r=1725291681",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/da/3862_prsn_JVDU6.jpg?r=1725291681",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/da/3862_prsn_JVDU6.jpg?r=1725291681",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/59/da/3862_prsn_JVDU6.jpg?r=1725291681"
+                    },
+                    "short_summary": "田中理恵，歌手、声优。\r\n\r\n      理惠在家中是独生女，是个平凡的女孩子，本来喜欢读书跟画画，特别中意猪股睦美的画。但在听了从书店中看到猪股所画的『CD THEATER 勇者斗恶龙』而买下来的广播剧CD之後，而立志要当一个声优。\r\n\r\n　　高中毕业后进入代代木动画学院的声优科，在学中获了由MediaWorks与SCITRON合办的歌手试演会中的冠军，而在《悠久幻想曲》第二张专辑中唱了『永远的好朋友』。也因为如此，歌手部份比起声优还要早出道。\r\n\r\n　　出道动画作是《平行世界物语》。马上就担任了女主角真田三月的配音。这部动画是双女主角制的，与担任另一女主角罗螺观月配音的丰口惠共演的机会很多。 \r\n\r\n      所属的会社，当初是Sony Music Entertainment Visual WORKS（现在的Aniplex Inc.），2003年转属到Victor Entertainment Inc.（即JVC Music）。在当年秋天所释出的『Chara de Rie』之后，从同社所出的就只停留在《机动战士高达SEED》系列作相关的乐曲的程度。近年以来，少有除了以角色名义的歌曲或是特别活动之外的歌手活动的机会。\r\n\r\n　　近年在《热拳本色》之后，出演东映动画与Marvelous Entertainment Inc.（漫威娱乐）所制作的动画的机会很多。\r\n\r\n　　在电视动画《玻璃舰队》、《交响情人梦》、《sola》的STAFF列表中记载了同名同姓的音响监督，不过却是不一样的人。\r\n\r\n　　曾经在日本新力音乐所营运的宽频网站『MORRICH』中，担任Aniplax Inc.介绍节目的领航员。\r\n\r\n　　丈夫是同为声优的山寺宏一，山寺宏一于2012年6月17日在推特上公布二人的婚讯。2018年8月3日，二人在各自的推特上宣布离婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6293,
+            "name": "桜田ジュン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a6/17/6293_crt_7h55G.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/17/6293_crt_7h55G.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/17/6293_crt_7h55G.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a6/17/6293_crt_7h55G.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3847,
+                    "name": "真田アサミ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4e/63/3847_prsn_k0x7l.jpg?r=1632494334",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/63/3847_prsn_k0x7l.jpg?r=1632494334",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/63/3847_prsn_k0x7l.jpg?r=1632494334",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4e/63/3847_prsn_k0x7l.jpg?r=1632494334"
+                    },
+                    "short_summary": "特殊技能为服装剪裁、服装穿着。\r\n\r\n1999年5月2日在Broccoli主办的‘铃铛猫娘（Di Gi Charat）声优选拔会 -in 六本木ヴェルファーレ’公开选拔会上获得大赏，得到Di Gi Charat角色的同时以声优身份出道。\r\n\r\n曾经有一阵时期因为Di Gi Charat角色的印象太强烈，而常被以“Nyo（にょ）”的昵称（出自铃铛猫娘的口头禅，会在语尾加上“にょ”）所称呼、最近多被称为“麻姐（アサ姉）”。\r\n\r\n因为《铃铛猫娘》以来的渊源，常和泽城美雪共同演出。\r\n\r\n以‘铃铛猫娘’角色走红，但是由于该角色的印象太强烈而难以评价在其他角色的优秀演技成为“双面刃”（諸刃の剣）。而最近以少年角色为中心，多方尝试不同的类型，有时也会展露出蕴含狂气的演技。\r\n\r\n2004年7月25日在幕张Messe举办的东京角色展2004活动中，Broccoli社长木谷高明发表了‘铃铛猫娘’以及D.U.P.（真田麻美、冰上恭子、泽城美雪的组合）的活动终止声明。2004年12月26日，在幕张Messe举行D.U.P.最后演唱会‘FINAL☆PARTY☆NIGHT’后，‘铃铛猫娘’休止而D.U.P.解散。\r\n\r\n喜爱假面骑士555，甚至参加了《假面骑士555 失落的乐园（仮面ライダー555 パラダイス・ロスト）》的1万人临时演员，不过在作品中无法确认其演出。\r\n\r\n2013年11月1日在自己的博客上发表结婚的消息。2020年5月29日在博客宣布自己已于去年离婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 11641,
+            "name": "蒼星石",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/37/99/11641_crt_otlOq.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/99/11641_crt_otlOq.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/99/11641_crt_otlOq.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/37/99/11641_crt_otlOq.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4695,
+                    "name": "森永理科",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bc/e0/4695_prsn_7cuJn.jpg?r=1493120253",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/e0/4695_prsn_7cuJn.jpg?r=1493120253",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/e0/4695_prsn_7cuJn.jpg?r=1493120253",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bc/e0/4695_prsn_7cuJn.jpg?r=1493120253"
+                    },
+                    "short_summary": "森永 理科（もりなが りか、1980年4月25日 - ）は、日本の女性声優、女優、歌手。バンド「functioncode」のヴォーカルを担当。東京都出身。2015年よりマウスプロモーション所属。血液型はO型。\r\n\r\nBSQR489で放送していたラジオ『ヒヤマ・クラタの声優パソ☆コン』に応募し、5週連続勝ち抜き、それが声優の道へ進むきっかけとなる。 2002年、植田佳奈、斎藤千和、中原麻衣と声優ユニット「みっくすJUICE」を結成。翌年、ユニットメンバーらと出演した『ワンダバスタイル』にアニメ初出演。\r\n音楽活動との両立などを理由に、2007年6月30日付けでアイムエンタープライズを退社、フリーを経て、エクセレックスに移籍。2014年12月31日の自身のブログ記事において、エクセレックスからマウスプロモーションへ移籍する予定であることを表明。また、エクセレックスの公式サイトからも、正式に彼女の移籍に関する声明を発表した。\r\n\r\n「暗黒の宝塚」、とも呼ばれるアングラ演劇の『月蝕歌劇団』の一員として、舞台役者の活動もしている。森永理科という芸名は入団時についたもの。初舞台は2000年5月の『家畜人ヤプー』。同年10月の『ピーター・パン』より踊りの振付も担当。代表的な出演作品は、他に『白夜月蝕の少女航海紀』、『ステーシー』等。多忙のため、2006年以後の舞台出演はなし。\r\n2003年10月よりfunctioncode」のヴォーカルとしてバンド活動も開始した。寺山修司からJ・A・シーザーのアングラの流れを汲む表現を続けている。リザードのMOMOYOが主催するバンド、Gig AntiqueSのゲストヴォーカル兼パフォーマーとして、不定期にライヴ活動を行っている。\r\n「DIETS!」や「Senseless Face」といったブランドのカタログ、ウェブサイトなどでは服飾モデルとして活動している。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

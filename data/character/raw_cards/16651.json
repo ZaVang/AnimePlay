@@ -1,0 +1,68 @@
+{
+    "id": 16651,
+    "name": "水谷雫",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/67/ee/16651_crt_C8F72.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/ee/16651_crt_C8F72.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/ee/16651_crt_C8F72.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/67/ee/16651_crt_C8F72.jpg"
+    },
+    "summary": "女主角，就读松杨高中的一年级B班学生。性格冷静且坦率。非常重视自己的成绩，尤其是模拟考的成绩。认为念书能够巩固自己的未来，所以一有空闲时间，基本上全是用来念书。学习成绩很好，惟体育十分差劲，逃走速度超慢，成绩亦经常比不上春而考获第二名。\r\n最初的梦想是“年收入一千万”，对他人或动物完全没有兴趣。最后却喜欢上吉田春。\r\n衣着打扮十分老土，朋友山贤曾经见过一位老人家与雫的打扮完全一样。厨艺了得。爸爸的公司曾倒闭6次，对此渐渐没有感觉，认为是司空见惯的事。而妈妈亦为了赚钱几乎不会回家。有一名叫隆也的弟弟。是个弟控，给隆也的情人节巧克力比春还多。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "水谷雫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "水谷 雫"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みずたに しずく"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mizutani Shizuku"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月14日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 2,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 14,
+    "stat": {
+        "comments": 41,
+        "collects": 190
+    },
+    "anime_ids": [
+        40533
+    ]
+}

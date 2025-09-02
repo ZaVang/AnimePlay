@@ -1,0 +1,89 @@
+{
+    "id": 316247,
+    "name": "Re：从零开始的异世界生活 第二季 后半部分",
+    "image_path": "data/images/anime/316247.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "俺が必ず、お前を救ってみせる。\r\n\r\n魔女教大罪司教「怠惰」担当ペテルギウス・ロマネコンティを打倒し、エミリアとの再開を果たしたナツキ・スバル。\r\n辛い決別を乗り越え、ようやく和解した二人だったが、それは新たな波乱の幕開けだった。\r\n\r\n想像を超える絶体絶命の危機、そして襲い来る無慈悲な現実。\r\n少年は再び過酷な運命に立ち向かう。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "穿越",
+        "小说改"
+    ],
+    "date": "2021-01-06",
+    "rating_rank": 720,
+    "rating_score": 7.6,
+    "rating_total": 10947,
+    "main_character_ids": [
+        35607,
+        35608
+    ],
+    "main_characters": [
+        {
+            "id": 35607,
+            "name": "ナツキ・スバル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f3/e4/35607_crt_zL7e7.jpg?r=1587941914",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/e4/35607_crt_zL7e7.jpg?r=1587941914",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/e4/35607_crt_zL7e7.jpg?r=1587941914",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f3/e4/35607_crt_zL7e7.jpg?r=1587941914"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13825,
+                    "name": "小林裕介",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c7/74/13825_prsn_93N54.jpg?r=1620821891",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/74/13825_prsn_93N54.jpg?r=1620821891",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/74/13825_prsn_93N54.jpg?r=1620821891",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c7/74/13825_prsn_93N54.jpg?r=1620821891"
+                    },
+                    "short_summary": "小林 裕介（こばやし ゆうすけ、1985年3月25日 - ）は、日本の男性声優、ナレーターである。ゆーりんプロ所属。\r\n東京都出身。アミューズメントメディア総合学院声優タレント学科卒業。\r\n\r\n趣味はダーツ、特技は腹話術と大学時代に4年間続けた空手。\r\n座右の銘としている言葉は、『失敗しても死にゃしない』。\r\nプラネタリウムのナレーションを担当する事を夢としている。\r\n\r\n5歳から10歳までイギリスに住んでおり、帰国子女である。しかし英語はあまり喋れない。\r\n高校生時代、自転車通学中にアニメのセリフを叫びながら走る癖があり、それを友人に話した所「声優になれば？」と返された事が声優を志望するきっかけになった。\r\n大学卒業後、就職したものの、日々の生活に物足りなさを感じて休日に歌のレッスンを受けるようになり、その講師が声優と縁のある職業であることを知った小林は「声優になりたかった」と語ったところ、講師に「興味があるならやった方がいい」と背中を押され、アミューズメントメディア総合学院に入学する。\r\n2009年に専門学校のワークショップでの『VANGUARD』の吹き替えでデビュー。\r\n2010年にアミューズメントメディア総合学院を卒業後、ゆーりんプロに所属。プロとしての初めての仕事は企業用ナレーション。以降、ナレーションの仕事を中心に活動。\r\n2013年、専門学校のワークショップでテレビアニメ『とある科学の超電磁砲S』の小佐古俊一役で声優デビュー。\r\n2014年には、テレビアニメ『ウィッチクラフトワークス』多華宮仄役で初主演した。\r\n2016年、7月より声優の古川慎と共にパーソナリティを務めるラジオ『なんでもヒーロー！ ゆっけとまーぼー』の放送を開始。\r\n2017年、第11回声優アワードで新人男優賞を受賞。\r\n\r\n2024年12月31日发表与内山夕实结婚",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 35608,
+            "name": "エミリア",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/86/d4/35608_crt_3picp.jpg?r=1695696610",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/d4/35608_crt_3picp.jpg?r=1695696610",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/d4/35608_crt_3picp.jpg?r=1695696610",
+                "grid": "https://lain.bgm.tv/pic/crt/g/86/d4/35608_crt_3picp.jpg?r=1695696610"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 17491,
+                    "name": "高橋李依",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bd/56/17491_prsn_1PkIP.jpg?r=1642506690",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/56/17491_prsn_1PkIP.jpg?r=1642506690",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/56/17491_prsn_1PkIP.jpg?r=1642506690",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bd/56/17491_prsn_1PkIP.jpg?r=1642506690"
+                    },
+                    "short_summary": "埼玉县立越谷南高等学校出身。2年级时曾获得动画甲子园2010-2011声音表演部门优秀赏。\r\n\r\n2012年3月，高中毕业的同时加入演员养成所81ACTOR'S STUDIO。研究生时期曾经以新人声优团体“Anisoni∀”的成员身份开始进行活动。\r\n\r\n2013年3月从81ACTOR'S STUDIO毕业，4月起加入81 Produce。\r\n\r\n2016年，获得第10回声优奖的新人女优赏。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

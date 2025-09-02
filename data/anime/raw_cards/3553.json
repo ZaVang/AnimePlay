@@ -1,0 +1,507 @@
+{
+    "id": 3553,
+    "type": 2,
+    "name": "∀ガンダム",
+    "name_cn": "∀高达",
+    "summary": "故事舞台是在遥远的未来，部分人类离开太阳系外，发展出高度的文明，这个文明的一架废弃机体(Turn X)漂流回到地球上，地球上的人惊觉外面有极高文明的人类，自己却连逆向工程复制一架废弃机体都做不到(过程中产生了Turn A)，地球上的人分成了两派，一方认为应该继续全力发展现存文明，急起直追；另一方则认为继续发展不可能追上，只有毁灭文明，重新从其他方式发展才能够追上。两派地球人各持Turn X和Turn A交战，在交战过程中，Turn A破坏了地球文明，部分留守地球的人在地球上重新建立起文明，而科技再度发展到类似第二次科技革命的时代。\r\n而被留在月球上冯 布朗的居民Moonrace，则是保存了以前人类地球居民文明所发展的高科技（但仍然和太阳系外有重大差距）。留在月球上的居民想要重回地球居住，于是派遣了“先遣部队”作实验性移民并和留守地球的人类接触。\r\n二年后“先遣部队”成功后确认了自己适应当代地球后，而派遣了先锋部队Dianna Counter来到了Amercia（原来的美洲），想为月球人的移民做预备。而这个举动惹怒了Amercia上的各领地，其后双方谈判不果。于是在地球跟月球就开始了小规模的冲突。及后月球军方首领战斗神吉姆=金卡拉姆叛变，亦加入战争。\r\n而部队Dianna Counter的成员罗兰，在经过两年适应并融入当地后，于成人仪式上遭遇迪亚娜回归军攻击村庄，无意中启动了被地球人误会为神像，旧地球守军的最强（曾经让人类文明濒临灭亡）MS Turn A Gundam，故事正式开始。",
+    "nsfw": false,
+    "locked": false,
+    "date": "1999-04-09",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/e2/50/3553_FIw4I.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/e2/50/3553_FIw4I.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/e2/50/3553_FIw4I.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/e2/50/3553_FIw4I.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/e2/50/3553_FIw4I.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "∀高达"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "逆A高达",
+                    "k": null
+                },
+                {
+                    "v": "Turn A高达",
+                    "k": null
+                },
+                {
+                    "v": "倒A高达",
+                    "k": null
+                },
+                {
+                    "v": "ターンエーガンダム",
+                    "k": null
+                },
+                {
+                    "v": "Turn A Gundam",
+                    "k": null
+                },
+                {
+                    "v": "躺A",
+                    "k": null
+                },
+                {
+                    "v": "TA",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "50"
+        },
+        {
+            "key": "放送开始",
+            "value": "1999年4月9日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期五"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.turn-a-gundam.net/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "フジテレビ"
+        },
+        {
+            "key": "播放结束",
+            "value": "2000年4月14日"
+        },
+        {
+            "key": "音乐",
+            "value": "菅野よう子"
+        },
+        {
+            "key": "Copyright",
+            "value": "©創通・サンライズ"
+        },
+        {
+            "key": "原作",
+            "value": "矢立肇、富野由悠季"
+        },
+        {
+            "key": "企画",
+            "value": "サンライズ"
+        },
+        {
+            "key": "总导演",
+            "value": "富野由悠季"
+        },
+        {
+            "key": "人物原案",
+            "value": "安田朗"
+        },
+        {
+            "key": "人物设定",
+            "value": "菱沼義仁"
+        },
+        {
+            "key": "机械设定",
+            "value": "大河原邦男、Syd Mead、重田敦司、沙倉拓実；メカニカルデザイン協力：岩城人志、宮尾佳和、石垣純哉、前田真宏、土器手司、宮武一貴（第34話～第50話）、高倉武史（第41話～第50話）、山根公利（第48話～第50話）"
+        },
+        {
+            "key": "美术监督",
+            "value": "池田繁美"
+        },
+        {
+            "key": "色彩设计",
+            "value": "笠森美代子；辅佐：佐藤美由紀"
+        },
+        {
+            "key": "摄影监督",
+            "value": "大神洋一"
+        },
+        {
+            "key": "剪辑",
+            "value": "山森重之；助手：秋保宣宏"
+        },
+        {
+            "key": "音响监督",
+            "value": "鶴岡陽太"
+        },
+        {
+            "key": "音响",
+            "value": "笠松広司"
+        },
+        {
+            "key": "制片人",
+            "value": "鈴木吉弘（フジテレビ）、富岡秀行（サンライズ）"
+        },
+        {
+            "key": "制作",
+            "value": "フジテレビ、サンライズ"
+        },
+        {
+            "key": "制作协力",
+            "value": "アサツー ディ・ケイ、創通エージェンシー；"
+        },
+        {
+            "key": "脚本",
+            "value": "星山博之、千葉克彦、浅川美也、高橋哲子、高山治郎、大河内一楼、太田愛、斧谷稔(富野由悠季)"
+        },
+        {
+            "key": "分镜",
+            "value": "斧谷稔(富野由悠季)、西森章、菱田正和、横山彰利、森邦宏、横田和、川瀬敏文、工堂紘軌(角銅博之)、金剛寺弾(大森英敏)、鳥羽聡、アミノテツロー、小原正和、西本由紀夫、南康宏、高田淳、奥田誠治、赤根和樹、日高政光"
+        },
+        {
+            "key": "演出",
+            "value": "渡邊哲哉、森邦宏、南康宏、西森章、岩崎良明、池端隆史、山口美浩、杉谷光一、北川正人、鳥羽聡"
+        },
+        {
+            "key": "作画监督",
+            "value": "土器手司、佐久間信一、鈴木藤雄、戸部敦夫、しんぼたくろう、中田栄治、うのまこと、菱沼義仁、杉光登、後藤雅巳"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "井荻麟(富野由悠季)（OP1&2,ED2）、浜口祐夢（OP2）、谷村新司（ED1）、C.Piece（最终话ED）"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "小林亜星（OP1）、浜口祐夢（OP2）、谷村新司（ED1）、菅野よう子（ED2&最终话ED）"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "矢田部正（OP1）、RAY-GUNS（OP2）、菅野よう子（ED1&2&最终话ED）"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "西城秀樹（OP1）、RAY-GUNS（OP2）、谷村新司（ED1）、奥井亜紀（ED2&最终话ED）"
+        },
+        {
+            "key": "插入歌演出",
+            "value": "Gabriela Robin(菅野よう子)、大塚宗一郎、Carla Vallet、西城秀樹、Maryanne Murray"
+        }
+    ],
+    "volumes": 0,
+    "eps": 50,
+    "total_episodes": 50,
+    "rating": {
+        "rank": 73,
+        "total": 2469,
+        "count": {
+            "one": 17,
+            "two": 4,
+            "three": 6,
+            "four": 13,
+            "five": 24,
+            "six": 102,
+            "seven": 332,
+            "eight": 677,
+            "nine": 812,
+            "ten": 482
+        },
+        "score": 8.4
+    },
+    "collection": {
+        "wish": 2082,
+        "collect": 3283,
+        "doing": 521,
+        "on_hold": 378,
+        "dropped": 115
+    },
+    "tags": [
+        {
+            "name": "高达",
+            "count": 750
+        },
+        {
+            "name": "富野由悠季",
+            "count": 619
+        },
+        {
+            "name": "SUNRISE",
+            "count": 592
+        },
+        {
+            "name": "∀高达",
+            "count": 465
+        },
+        {
+            "name": "TV",
+            "count": 417
+        },
+        {
+            "name": "菅野洋子",
+            "count": 410
+        },
+        {
+            "name": "1999",
+            "count": 342
+        },
+        {
+            "name": "原创",
+            "count": 239
+        },
+        {
+            "name": "GUNDAM",
+            "count": 222
+        },
+        {
+            "name": "科幻",
+            "count": 146
+        },
+        {
+            "name": "萝卜",
+            "count": 146
+        },
+        {
+            "name": "胡子",
+            "count": 116
+        },
+        {
+            "name": "高达黑历史",
+            "count": 96
+        },
+        {
+            "name": "文艺高达",
+            "count": 96
+        },
+        {
+            "name": "逆A",
+            "count": 58
+        },
+        {
+            "name": "机战",
+            "count": 34
+        },
+        {
+            "name": "日本",
+            "count": 33
+        },
+        {
+            "name": "二小姐我喜欢你啊！",
+            "count": 26
+        },
+        {
+            "name": "1999年4月",
+            "count": 22
+        },
+        {
+            "name": "神作",
+            "count": 18
+        },
+        {
+            "name": "文艺",
+            "count": 18
+        },
+        {
+            "name": "90年代",
+            "count": 17
+        },
+        {
+            "name": "战争",
+            "count": 13
+        },
+        {
+            "name": "菅野よう子",
+            "count": 11
+        },
+        {
+            "name": "白富野",
+            "count": 11
+        },
+        {
+            "name": "大河内一楼",
+            "count": 10
+        },
+        {
+            "name": "1990s",
+            "count": 9
+        },
+        {
+            "name": "补旧番",
+            "count": 8
+        },
+        {
+            "name": "战斗",
+            "count": 8
+        },
+        {
+            "name": "神！作！",
+            "count": 7
+        }
+    ],
+    "meta_tags": [
+        "科幻",
+        "科幻",
+        "TV",
+        "TV",
+        "日本",
+        "日本",
+        "原创",
+        "原创"
+    ],
+    "series": false,
+    "main_character_ids": [
+        6018,
+        6020,
+        6021,
+        6022,
+        6024
+    ],
+    "main_characters": [
+        {
+            "id": 6018,
+            "name": "ロラン・セアック",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8d/2a/6018_crt_anidb.jpg?r=1637596877",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/2a/6018_crt_anidb.jpg?r=1637596877",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/2a/6018_crt_anidb.jpg?r=1637596877",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8d/2a/6018_crt_anidb.jpg?r=1637596877"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4027,
+                    "name": "朴璐美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/57/a7/4027_prsn_EemLU.jpg?r=1518234742",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/57/a7/4027_prsn_EemLU.jpg?r=1518234742",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/57/a7/4027_prsn_EemLU.jpg?r=1518234742",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/57/a7/4027_prsn_EemLU.jpg?r=1518234742"
+                    },
+                    "short_summary": "主业是舞台剧演员，东京都出身，日本国籍（2015年12月取得）。\r\n桐朋学园艺术短期大学戏剧科毕业。曾在韩国延世大学语学院留学。隶属于演剧集团圆（圆企画）。\r\n\r\n父亲是在日的韩国人第二代、母亲是居留日本的韩国人第三代。\r\n家中有1姊1弟，表弟是NHK的导演。\r\n至2005年宠物是猫（母）（コギト君）（已去世），新宠物是超迷你腊肠犬（カニンヘンダックス）（其名在韩国语中为爱或恋爱的意思）。\r\n专长有游泳、钢琴、少林拳法、韩语、泡茶。\r\n20岁时，为了与过去的恋情诀别，经由友人介绍踏入了戏剧的世界。\r\n被来看舞台剧的富野由悠季相中，于是得以在电视动画《机动神脑》中配音正式出道。不止在动画方面，西片配音也在配希拉蕊史旺与蜜拉乔娃维琪的声音上很活跃。其他尚有担任广播节目主持人、本业的舞台剧演员等。\r\n配音演员伊藤健太郎是其大学学弟、和川上伦子是大学同年生。\r\n演出从热血到冷酷等多数的少年角色、在近年的女性配音演员中，极为罕见地很受女性欢迎。虽是美人，但在比男人还要男人的一面上为其魅力。\r\n2004年获得“第2回东京国际动画片展奖”的声优赏。\r\n2007年获得第一届日本声优赏“主演女声优奖”（NANA、大崎娜娜）\r\n另外，朴璐美的运气总是很衰，可谓是“喝凉水都塞牙”。每当接到重要任务之前总会有些不测。比如说，录《高达倒A》前几天就遭遇了一场车祸，肿着脸满身绷带坚持去录音，结果被工作人员训斥：“不是让你不要来吗？快回去！”弄得她委屈的大叫：“我的声音完全没问题！”\r\n\r\n2020年1月22日，宣布与山路和弘结婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6020,
+            "name": "キエル・ハイム",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2d/85/6020_crt_zPp55.jpg?r=1637597201",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/85/6020_crt_zPp55.jpg?r=1637597201",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/85/6020_crt_zPp55.jpg?r=1637597201",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2d/85/6020_crt_zPp55.jpg?r=1637597201"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3974,
+                    "name": "高橋理恵子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9a/32/3974_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/32/3974_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/32/3974_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9a/32/3974_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、女優。演劇集団 円所属。\r\n\r\n埼玉県出身。血液型はA型。\r\n\r\n京華女子高等学校卒業。1989年に円・演劇研究所に入所し、1992年に演劇集団 円に入団[1]。声優の高橋美佳子と組んだラジオ番組『Simoun〜電波 DE リ・マージョン〜』で人気を博す。\r\n\r\nプロレスが好きで、長州力の大ファンである。 好きな花は鈴蘭。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6021,
+            "name": "ソシエ・ハイム",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7d/e3/6021_crt_8611F.jpg?r=1637597129",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/e3/6021_crt_8611F.jpg?r=1637597129",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/e3/6021_crt_8611F.jpg?r=1637597129",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7d/e3/6021_crt_8611F.jpg?r=1637597129"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4664,
+                    "name": "村田秋乃",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fc/45/4664_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/45/4664_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/45/4664_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fc/45/4664_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6022,
+            "name": "ディアナ・ソレル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/85/27/6022_crt_hexr4.jpg?r=1637597178",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/27/6022_crt_hexr4.jpg?r=1637597178",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/27/6022_crt_hexr4.jpg?r=1637597178",
+                "grid": "https://lain.bgm.tv/pic/crt/g/85/27/6022_crt_hexr4.jpg?r=1637597178"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3974,
+                    "name": "高橋理恵子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9a/32/3974_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/32/3974_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/32/3974_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9a/32/3974_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、女優。演劇集団 円所属。\r\n\r\n埼玉県出身。血液型はA型。\r\n\r\n京華女子高等学校卒業。1989年に円・演劇研究所に入所し、1992年に演劇集団 円に入団[1]。声優の高橋美佳子と組んだラジオ番組『Simoun〜電波 DE リ・マージョン〜』で人気を博す。\r\n\r\nプロレスが好きで、長州力の大ファンである。 好きな花は鈴蘭。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6024,
+            "name": "グエン・サード・ラインフォード",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5f/f8/6024_crt_fPUPa.jpg?r=1637597255",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/f8/6024_crt_fPUPa.jpg?r=1637597255",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/f8/6024_crt_fPUPa.jpg?r=1637597255",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5f/f8/6024_crt_fPUPa.jpg?r=1637597255"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4157,
+                    "name": "青羽剛",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b8/37/4157_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/37/4157_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/37/4157_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b8/37/4157_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": 109162,
+    "name": "ハチワレ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fd/7c/109162_crt_AjoAg.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/7c/109162_crt_AjoAg.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/7c/109162_crt_AjoAg.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fd/7c/109162_crt_AjoAg.jpg"
+    },
+    "summary": "ちいかわのともだち。明るくてポジティブ。\r\nどうくつで生活している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "哈奇猫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "小八"
+                },
+                {
+                    "k": "昵称",
+                    "v": "哈奇喵、小八猫"
+                }
+            ]
+        },
+        {
+            "key": "生日",
+            "value": "2020-05-01"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": 2020,
+    "birth_mon": 5,
+    "birth_day": 1,
+    "stat": {
+        "comments": 16,
+        "collects": 22
+    },
+    "anime_ids": [
+        354700
+    ]
+}

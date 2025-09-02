@@ -1,0 +1,69 @@
+{
+    "id": 1684,
+    "name": "ベジータ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1e/f9/1684_u91WP.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/f9/1684_u91WP.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/f9/1684_u91WP.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1e/f9/1684_u91WP.jpg"
+    },
+    "summary": "赛亚人的王子，是一个强壮、骄傲、寂寞而且严肃的人。贝吉塔的妻子是布尔玛，他们生有一子特兰克斯，一女布拉。虽然贝吉塔的自尊心很强，不过他的实力始终不及主角孙悟空。\r\n\r\n贝吉塔的名字ベジータ是来自于英文的vegetable,这也和大多数赛亚人的名字来自蔬菜相一致。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "贝吉塔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "比達"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Vegeta IV"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ベジータ四世"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Bejīta Yonsei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "164cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "堀川りょう"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 24,
+        "collects": 89
+    },
+    "anime_ids": [
+        9005,
+        97045
+    ]
+}

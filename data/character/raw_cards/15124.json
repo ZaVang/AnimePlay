@@ -1,0 +1,72 @@
+{
+    "id": 15124,
+    "name": "フレイ・アルスター",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ba/18/15124_crt_XA3v6.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/18/15124_crt_XA3v6.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/18/15124_crt_XA3v6.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ba/18/15124_crt_XA3v6.jpg"
+    },
+    "summary": "15岁 自然人\r\n在海利欧波里斯时，是基拉的同学。她是故事的女主角之一，\r\n属于典型的大小姐。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "芙蕾·阿尔斯塔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Flay Allster"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "C.E.56年3月15日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "体重",
+            "value": "53kg"
+        },
+        {
+            "key": "髪色",
+            "value": "濃い赤"
+        },
+        {
+            "key": "瞳",
+            "value": "薄いグレー"
+        },
+        {
+            "key": "年齢",
+            "value": "15歳"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 56,
+    "birth_day": 3,
+    "stat": {
+        "comments": 32,
+        "collects": 76
+    },
+    "anime_ids": [
+        1860
+    ]
+}

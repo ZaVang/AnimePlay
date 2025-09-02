@@ -1,0 +1,64 @@
+{
+    "id": 67232,
+    "name": "ダンバイン",
+    "type": 2,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/79/ae/67232_crt_0018J.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/79/ae/67232_crt_0018J.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/79/ae/67232_crt_0018J.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/79/ae/67232_crt_0018J.jpg"
+    },
+    "summary": "地上科学家肖特·威本协助杜雷库在拉斯·威恩制造的奥拉战士。共生产了三架，分别交给了从地上召唤的翔、托特、多卡马库三人驾驶。机体通过感应操纵者奥拉力的强弱来发挥战斗能力。三台中多卡马库和托特的两台都在正式开战前与基文家的交战中被击毁，而翔则带着自己的登拜恩加入了基文家的反杜雷库阵营。在得到西拉女王提供的新型奥拉战士比尔拜恩后，该机改由地上人马比露驾驶，在太平洋决战时被黑骑士的卡拉巴击毁。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "丹拜因"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Dunbine"
+                }
+            ]
+        },
+        {
+            "key": "身高",
+            "value": "6.9米"
+        },
+        {
+            "key": "体重",
+            "value": "4.4吨"
+        },
+        {
+            "key": "设计者",
+            "value": "肖特·威本"
+        },
+        {
+            "key": "制造国",
+            "value": "亚之国 拉斯·威恩城"
+        },
+        {
+            "key": "武装",
+            "value": "索爪×4，奥拉剑×1，外挂式四连装奥拉炮×1"
+        },
+        {
+            "key": "机师",
+            "value": "座间翔"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 9,
+        "collects": 6
+    },
+    "anime_ids": [
+        10402
+    ]
+}

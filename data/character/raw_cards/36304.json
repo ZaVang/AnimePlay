@@ -1,0 +1,72 @@
+{
+    "id": 36304,
+    "name": "篠宮可憐",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4b/18/36304_crt_kRg0g.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/18/36304_crt_kRg0g.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/18/36304_crt_kRg0g.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4b/18/36304_crt_kRg0g.jpg"
+    },
+    "summary": "偶像大师 MILLION LIVE!》中登场的偶像。Visual属性。\r\n外表华丽（？），但是性格非常懦弱，十分怕生的十六岁。\r\n\r\n为了改变这样懦弱的自己，在周围的女孩子打气加油之下，以成为偶像为目标前进。（そして同じような女の子たちに自信を与えるためにアイドルを目指しているようだ。）",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "篠宫可怜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しのみや かれん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shinomiya Karen"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月27日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "体重",
+            "value": "48kg"
+        },
+        {
+            "key": "BWH",
+            "value": "90-59-90"
+        },
+        {
+            "key": "年龄",
+            "value": "16岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 27,
+    "stat": {
+        "comments": 8,
+        "collects": 10
+    },
+    "anime_ids": [
+        309807
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "id": 33045,
+    "name": "バク丸",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d5/b9/33045_crt_t7IXI.jpg?r=1433031502",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/b9/33045_crt_t7IXI.jpg?r=1433031502",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/b9/33045_crt_t7IXI.jpg?r=1433031502",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d5/b9/33045_crt_t7IXI.jpg?r=1433031502"
+    },
+    "summary": "子-鼠\r\n鼠精灵，最常出击的队员之一，具冒险心和行动力，个性精明且有正义感，曾有严重的恐猫症(严重的原因好像是宵克拉)，后期在虎精灵卡奥的帮助下治好\r\n和卡奥是知己，和克莉姆感情要好，和蒙克是吵架伙伴，另外6年前失踪的猫精灵宵克拉是他的天敌\r\n道具:光剑<OR闪光大刀>(在桃太郎世界恢复原样后仍留下来的一把能量光剑) 照妖镜<OR‘现魔镜’>(虽是主要持有人，但因为任务需要，未出击时曾有让渡过)\r\n能力:领导队员，操作照妖镜及光剑攻击 .必杀技为<爆烈丸剑法>. 包含<快刀斩>与<疾风剑>\r\n十二支之最:最热血的",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "爆丸"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "オレ"
+                },
+                {
+                    "k": "昵称",
+                    "v": "爆烈丸"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 3
+    },
+    "anime_ids": [
+        1979
+    ]
+}

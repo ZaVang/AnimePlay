@@ -1,0 +1,56 @@
+{
+    "id": 15533,
+    "name": "高鴨穏乃",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f4/f1/15533_crt_5i5kK.jpg?r=1603205302",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/f1/15533_crt_5i5kK.jpg?r=1603205302",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/f1/15533_crt_5i5kK.jpg?r=1603205302",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f4/f1/15533_crt_5i5kK.jpg?r=1603205302"
+    },
+    "summary": "阿知贺女子学院高中一年级，团体战大将。\r\n十分活泼的女生，为了与渐渐疏远的小学时候的挚友小和再次对战，在阿知贺女子学院跟小憧她们一起以全国大赛为目标而努力。\r\n牌风是稳健的理论流。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高鸭稳乃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たかかも しずの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takakamo Shizuno"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月8日"
+        },
+        {
+            "key": "身高",
+            "value": "139cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 8,
+    "stat": {
+        "comments": 21,
+        "collects": 64
+    },
+    "anime_ids": [
+        24165
+    ]
+}

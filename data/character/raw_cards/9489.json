@@ -1,0 +1,48 @@
+{
+    "id": 9489,
+    "name": "ギロロ伍長",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b2/08/9489_crt_E11NZ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/08/9489_crt_E11NZ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/08/9489_crt_E11NZ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b2/08/9489_crt_E11NZ.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ギロロ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Giroro"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 19
+    },
+    "anime_ids": [
+        1849
+    ]
+}

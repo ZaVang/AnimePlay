@@ -1,0 +1,44 @@
+{
+    "id": 67039,
+    "name": "国宝憲一",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2e/93/67039_crt_f666B.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/93/67039_crt_f666B.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/93/67039_crt_f666B.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2e/93/67039_crt_f666B.jpg"
+    },
+    "summary": "国宝家大儿子，因为父亲失手丢入河中，流落森林。从小被玄米茶流空手道高手玄米茶师父收养，练就了惊人的武力。\r\n然而面对城市生活很不适应，武力下限也很低，不爆种时非常弱。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "国宝宪一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "卡内奇·古哈"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こくほう けんいち"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        5927
+    ]
+}

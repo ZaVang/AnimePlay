@@ -1,0 +1,56 @@
+{
+    "id": 11399,
+    "name": "梶原空",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/58/ac/11399_crt_KmmG9.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/ac/11399_crt_KmmG9.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/ac/11399_crt_KmmG9.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/58/ac/11399_crt_KmmG9.jpg"
+    },
+    "summary": "主角。\r\n无口属性的高一生。\r\n喜欢散步、猫和素描簿。\r\n一直带着素描簿。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "梶原空"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かじわら そら"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月4日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 4,
+    "stat": {
+        "comments": 8,
+        "collects": 22
+    },
+    "anime_ids": [
+        3994
+    ]
+}

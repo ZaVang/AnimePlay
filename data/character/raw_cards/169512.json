@@ -1,0 +1,44 @@
+{
+    "id": 169512,
+    "name": "マリーヒューズ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5e/9b/169512_crt_rtYU7.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/9b/169512_crt_rtYU7.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/9b/169512_crt_rtYU7.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5e/9b/169512_crt_rtYU7.jpg"
+    },
+    "summary": "TV原创星空之键篇中的人物。全名玛丽修斯。是个女的。是赞多比亚教的雷吉欧队的队员。魔法是操纵术。武器是一根手形的指挥棒。第一阶段可以控制别人。第二阶段可以让别人的魔法脱离身体，并攻击别人。第三阶段可以和操纵之物融为一体。后被米拉杰的接收魔神哈尔法司击败。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "玛丽修斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Mary Hughes"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 1
+    },
+    "anime_ids": [
+        2609
+    ]
+}

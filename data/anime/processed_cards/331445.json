@@ -1,0 +1,215 @@
+{
+    "id": 331445,
+    "name": "少女手工",
+    "image_path": "data/images/anime/331445.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "女子高中生×工具＝制造\r\nDIY「初学者」女孩的日常故事、活动开始！\r\n\r\n这是个描绘了在家具和友情，乃至人生上，\r\n思考、钻研、吃苦、犯错，在亲手完成之前决不放弃的，\r\n这些开拓未来的少女们，她们迈出第一步的故事——",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "原创",
+        "日常"
+    ],
+    "date": "2022-10-05",
+    "rating_rank": 1682,
+    "rating_score": 7.2,
+    "rating_total": 4233,
+    "main_character_ids": [
+        92944,
+        92945,
+        92946,
+        92947,
+        92948,
+        92949
+    ],
+    "main_characters": [
+        {
+            "id": 92944,
+            "name": "矢差暮礼",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/83/27/92944_crt_0mkI3.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/27/92944_crt_0mkI3.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/27/92944_crt_0mkI3.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/83/27/92944_crt_0mkI3.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5745,
+                    "name": "佐倉綾音",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929"
+                    },
+                    "short_summary": "佐仓绫音（さくら あやね）是日本的女性声优，1994年1月29日出生及成长于东京都；曾为[url=www.imenterprise.jp]I'm Enterprise[/url]旗下声优，2022年2月1日移籍至[url=www.aoni.co.jp]青二Production[/url]。\r\n\r\n[b]经历[/b]\r\n中学时所属剧团东俳，[url=https://nichinare.com/]日本播音演技研究所[/url]出身。《Dottoai广播》第45代主持人。2011年，在TV动画《[url=https://bgm.tv/subject/8990]食梦者玛利[/url]》出演[url=https://bgm.tv/character/10571]玛利·梦魔[/url]，首次出演主角。同年在剧场版动画《[url=https://bgm.tv/subject/12544]萤火之森[/url]》中出演[url=https://bgm.tv/character/15896]竹川萤[/url]，首次担当主役。\r\n其他代表作品有《[url=https://bgm.tv/subject/88287]请问您今天要来点兔子吗？[/url]》[url=https://bgm.tv/character/23647]保登心爱[/url]、《[url=https://bgm.tv/subject/78405]悠哉日常大王[/url]》[url=https://bgm.tv/character/21370]越谷夏海[/url]、《[url=https://bgm.tv/subject/37685]心理测量者[/url]》[url=https://bgm.tv/character/18476]霜月美佳[/url]、《[url=https://bgm.tv/subject/54433]我的青春恋爱物语果然有问题[/url]》[url=https://bgm.tv/character/26090]一色彩羽[/url]、《[url=https://bgm.tv/subject/120925]夏洛特[/url]》[url=https://bgm.tv/character/29511]友利奈绪[/url]、《[url=https://bgm.tv/subject/100444]四月是你的谎言[/url]》[url=https://bgm.tv/character/26004]泽部椿[/url]等。\r\n\r\n[b]其他[/b]\r\n昵称“あやねる（ayaneru）”是由[url=https://bgm.tv/person/4950]冈本信彦[/url]（《[url=https://bgm.tv/subject/8990]食梦者玛利[/url]》的合演者）给予的。关于昵称（本人说）“没什么特别的”。“あやねる”只是“绫音”和“睡觉（寝る）”的组合。\r\n完全的百合脑、百合控，非常喜欢[url=https://bgm.tv/person/4765]花泽香菜[/url]。\r\n爱好读书，特技是插图。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 92945,
+            "name": "日蔭匠",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/29/a1/92945_crt_oR00O.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/a1/92945_crt_oR00O.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/a1/92945_crt_oR00O.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/29/a1/92945_crt_oR00O.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19353,
+                    "name": "和氣あず未",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/ea/19353_prsn_AJuZS.jpg?r=1687968758",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/ea/19353_prsn_AJuZS.jpg?r=1687968758",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/ea/19353_prsn_AJuZS.jpg?r=1687968758",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/ea/19353_prsn_AJuZS.jpg?r=1687968758"
+                    },
+                    "short_summary": "和氣 あず未（わき あずみ、1994年9月8日 - ）は、日本の女性声優。東京俳優生活協同組合所属。東京都出身。\r\n\r\n13歳の時に好きであったアニメに出演していた声優のアフレコ映像を見て、声優業に興味を持った。\r\n東京アニメ・声優専門学校第3期卒業生である。中学時代はキャビンアテンダントを目指していたが、高校に入ると、英語が苦手なことから声優志望に転向した。\r\n2014年に俳協に所属。\r\n元々は人前で何かすることが苦手であったと語っている。\r\n所属後、初めてオーディションを受けた作品がアイドルマスター シンデレラガールズであった。\r\n初ライブとなった「THE IDOLM@STER CINDERELLA GIRLS 3rdLIVE シンデレラの舞踏会」には養成所の名誉会長にあたる津川雅彦からフラワースタンドが贈られている。\r\n\r\n名前の「あず未」は本名だが、長野県の安曇野から取られた名前だと自身のTwitterにて語っている。\r\n年の離れた兄が３人いる。\r\n中学、高校とテニス部に所属していたため、運動神経は良いと自負している。\r\n趣味はお菓子作りとイラスト。\r\n寝る事が好きである。\r\n好きなアニメは「鋼の錬金術師」である。この作品に登場するロイ・マスタングのようにちょっとSなキャラクターが好きと語っている。\r\nファンから友達感覚でいてもらえるような親しみやすい声優を目指している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 92946,
+            "name": "須理出未来",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e8/d8/92946_crt_GGIhS.jpg?r=1668711163",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/d8/92946_crt_GGIhS.jpg?r=1668711163",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/d8/92946_crt_GGIhS.jpg?r=1668711163",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e8/d8/92946_crt_GGIhS.jpg?r=1668711163"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 31136,
+                    "name": "市ノ瀬加那",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637"
+                    },
+                    "short_summary": "北海道帯広工業高等学校建築科出身。\r\n札幌スクールオブミュージック&ダンス専門学校出身。2016年4月に事務所に入所。\r\n\r\n2018年1月より放送のTVアニメ『ダーリン・イン・ザ・フランキス』のイチゴ役は市ノ瀬にとって、初のメインキャストとなった。\r\n2018年10月、超!A&G+とAG-ON Premiumで配信している「ラジオどっとあい」第76代目パーソナリティーに選ばれる。\r\n2019年4月7日、Twitterを始める。\r\n\r\n趣味は一人旅、スカイウォッチング、映画鑑賞。小・中学生時代にバスケットボールをやっており、現在も特技としている。\r\n\r\n危険物取扱者丙種、プレゼンテーション作成検定3級、日本語ワープロ検定3級、情報処理技能検定2級、パソコンスピード認定3級の資格を所持している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 92947,
+            "name": "ジュリエット・クイーン・エリザベス8世",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/af/0e/92947_crt_2eF4Z.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/0e/92947_crt_2eF4Z.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/0e/92947_crt_2eF4Z.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/af/0e/92947_crt_2eF4Z.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 14923,
+                    "name": "大森日雅",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e0/29/14923_prsn_611c1.jpg?r=1549852393",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/29/14923_prsn_611c1.jpg?r=1549852393",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/29/14923_prsn_611c1.jpg?r=1549852393",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e0/29/14923_prsn_611c1.jpg?r=1549852393"
+                    },
+                    "short_summary": "大森 日雅（おおもり にちか、1994年10月15日 - ）は、日本の女性声優。クロコダイル所属。長野県出身。以前はリンク・プランに所属していた。\r\n\r\n経歴\r\nプロ・フィット声優養成所の卒業生である。\r\n2017年4月からリンク・プランを離れフリーランスになる。同年9月より、クロコダイル所属となる。\r\n\r\n人物\r\n趣味は、犬と昼寝すること、深海魚、特技は、ピアノと水泳である。\r\n実用英語検定2級の資格を持っている。\r\n初めてしたアルバイトはパン屋であったことを語っている。\r\n『六畳間の侵略者!?』で共演した長縄まりあ、鈴木絵理、田澤茉純とも仲が良い。\r\n『アニメマシテ』にて4人兄弟でガンダムを観て育ったこともあり誕生日の際のバースデーソングは「翔べ! ガンダム」だったり、好きになったアニメキャラクターがシャアであったりと、かなりのガンダム好きである事を番組内で洩らしている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 92948,
+            "name": "結愛せるふ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/42/03/92948_crt_IaYy3.jpg?r=1668851651",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/03/92948_crt_IaYy3.jpg?r=1668851651",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/03/92948_crt_IaYy3.jpg?r=1668851651",
+                "grid": "https://lain.bgm.tv/pic/crt/g/42/03/92948_crt_IaYy3.jpg?r=1668851651"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 43100,
+                    "name": "稲垣好",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4d/52/43100_prsn_C4xcm.jpg?r=1740406733",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4d/52/43100_prsn_C4xcm.jpg?r=1740406733",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4d/52/43100_prsn_C4xcm.jpg?r=1740406733",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4d/52/43100_prsn_C4xcm.jpg?r=1740406733"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 92949,
+            "name": "幸希心",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f4/83/92949_crt_77ss9.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/83/92949_crt_77ss9.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/83/92949_crt_77ss9.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f4/83/92949_crt_77ss9.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10099,
+                    "name": "高橋花林",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2e/12/10099_prsn_aQKQE.jpg?r=1470959123",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/12/10099_prsn_aQKQE.jpg?r=1470959123",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/12/10099_prsn_aQKQE.jpg?r=1470959123",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2e/12/10099_prsn_aQKQE.jpg?r=1470959123"
+                    },
+                    "short_summary": "日本の女性声優。神奈川県出身。青二プロダクション（ジュニア）所属。YURI*KARIのメンバー。第1回ぽにきゃん声たまオーディションの声たまプリンセス（第2回は遠藤ゆりか）。\r\n人形劇、聖歌を歌うこと、アコースティックギター、フルート\r\n\r\n資格・免許：日商簿記検定3級、英検2級、漢検2級、中検3級\r\n趣味：アニメ観賞、音楽鑑賞、観劇、読書\r\n特技：アコースティックギター弾き語り、歌唱、描画",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

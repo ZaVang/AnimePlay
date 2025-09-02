@@ -1,0 +1,68 @@
+{
+    "id": 92177,
+    "name": "結束いのり",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ca/5e/92177_crt_2zFoV.jpg?r=1739024057",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/5e/92177_crt_2zFoV.jpg?r=1739024057",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/5e/92177_crt_2zFoV.jpg?r=1739024057",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ca/5e/92177_crt_2zFoV.jpg?r=1739024057"
+    },
+    "summary": "五年级。最喜欢花滑。来自Lux东山花滑俱乐部。虽在校园生活中有很多不得意之处，但一到滑冰场上便会脱胎换骨。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "结束祈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "結束 いのり"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ゆいつか いのり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yuitsuka Inori"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月16日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "134cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://medalist-pr.com/character.html"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 16,
+    "stat": {
+        "comments": 135,
+        "collects": 382
+    },
+    "anime_ids": [
+        430699
+    ]
+}

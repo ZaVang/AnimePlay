@@ -1,0 +1,55 @@
+{
+    "id": 104269,
+    "name": "シド・カゲノー / シャドウ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/af/eb/104269_crt_SvQKJ.jpg?r=1675247488",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/eb/104269_crt_SvQKJ.jpg?r=1675247488",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/eb/104269_crt_SvQKJ.jpg?r=1675247488",
+        "grid": "https://lain.bgm.tv/pic/crt/g/af/eb/104269_crt_SvQKJ.jpg?r=1675247488"
+    },
+    "summary": "憧憬「影之强者」、追求力量的转生少年。表面上是乡下贵族卡盖诺男爵家的二男，在米德加尔魔剑士学园享受着“龙套”生活，但背地里却作为影之组织「暗影庭园」的盟主暗影，与「黑暗教团」对峙着（以这样的设定遨游）。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "希德·卡盖诺"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "暗影"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Cid Kageno"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1月10日"
+        },
+        {
+            "key": "亲属",
+            "value": "克蕾娅·卡盖诺（姐姐）"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 10,
+    "stat": {
+        "comments": 106,
+        "collects": 158
+    },
+    "anime_ids": [
+        419846
+    ]
+}

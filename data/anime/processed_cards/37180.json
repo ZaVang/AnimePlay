@@ -1,0 +1,56 @@
+{
+    "id": 37180,
+    "name": "斗将戴莫斯",
+    "image_path": "data/images/anime/37180.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　因天灾而失去母星的宇宙流浪民族——十亿巴姆星人希望向地球移民，双方在月球基地展开了谈判，但是谈判过程中却发生了巴姆星里昂大元帅被人阴谋投毒暗杀事件，里昂之子里希迪鲁情急之下误杀了地球方面代表龙崎勇。最后谈判破裂，巴姆星人开始了对地球的全面侵攻作战。\r\n　　另一方面，龙崎勇博士的儿子龙崎一矢与好友夕月京四郎完成了宇宙飞行，返回了地球。利用一矢与京四郎从宇宙带来的新型能源戴莫光线，龙崎博士的好友和泉博士终于完成了他与龙崎博士共同设计的超级机器人斗将戴莫斯。龙崎一矢继承父亲的遗志，成为了戴莫斯的机师。在战场上，一矢救下了失忆的美少女艾莉卡，两人一见钟情，然而艾莉卡却是巴姆星地球侵攻总司令里希迪鲁提督的妹妹……一矢与艾莉卡将直面残酷的宿命。巴姆星解放军与奥鲁邦一党进行着不懈的斗争，艾莉卡逐渐成长为解放军的领袖，里希迪鲁开始一直敌视一矢与妹妹之间的感情，但在奥鲁邦的阴谋逐渐被揭露，他的战友巴鲁巴斯和莱萨先后为揭露阴谋和掩护自己而牺牲之后，里希迪鲁在地球军和巴姆星解放军的帮助下决定亲手解决战争元凶来洗刷自己与地球开战的罪恶。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 44,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "1978-04-01",
+    "rating_rank": 1513,
+    "rating_score": 7.4,
+    "rating_total": 62,
+    "main_character_ids": [
+        106725
+    ],
+    "main_characters": [
+        {
+            "id": 106725,
+            "name": "竜崎一矢",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/aa/73/106725_crt_Bq7tE.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/73/106725_crt_Bq7tE.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/73/106725_crt_Bq7tE.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/aa/73/106725_crt_Bq7tE.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4202,
+                    "name": "神谷明",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b5/49/4202_prsn_jkJnt.jpg?r=1751970040",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/49/4202_prsn_jkJnt.jpg?r=1751970040",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/49/4202_prsn_jkJnt.jpg?r=1751970040",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b5/49/4202_prsn_jkJnt.jpg?r=1751970040"
+                    },
+                    "short_summary": "日本の声優、俳優、歌手、ナレーター、元日本工学院専門学校声優・俳優科講師。神奈川県横浜市出身。\r\n\r\n妻は元声優の戸部光代、長女はシナリオライターの華宮ゆう士、次女はミュージカル女優の神谷たえ。有限会社冴羽商事代表取締役。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

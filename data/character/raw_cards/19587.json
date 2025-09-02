@@ -1,0 +1,48 @@
+{
+    "id": 19587,
+    "name": "よしもと（吉本雅人）",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/38/85/19587_crt_MMWNY.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/85/19587_crt_MMWNY.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/85/19587_crt_MMWNY.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/38/85/19587_crt_MMWNY.jpg"
+    },
+    "summary": "ともおの親友。ちょっぴりませた性格の、ともおのよきツッコミ役。勉強もスポーツもできる優等生。ともおとは仲良しだが、しょっちゅう喧嘩もする。「エロ本」と呼ばれる事も。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "吉本（吉本雅人）"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "よしもと まさと"
+                },
+                {
+                    "k": "昵称",
+                    "v": "エロ本"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 3
+    },
+    "anime_ids": [
+        61118
+    ]
+}

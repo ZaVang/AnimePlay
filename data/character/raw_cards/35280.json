@@ -1,0 +1,76 @@
+{
+    "id": 35280,
+    "name": "佐竹美奈子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d5/1b/35280_crt_5ZL6h.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/1b/35280_crt_5ZL6h.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/1b/35280_crt_5ZL6h.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d5/1b/35280_crt_5ZL6h.jpg"
+    },
+    "summary": "《偶像大师 百万LIVE!》登场的偶像。Dance属性。\r\n十分适合穿围裙和三角巾的18岁的家庭主妇。\r\n性格开朗有活力，同时也非常喜欢关心别人。\r\n有着即使是说她把关心别人当做生存意义也不为过的天生爱管闲事的体质，尤其是对年纪比她小的偶像们，特别喜爱。\r\n而且，对于制作人也明确了有好感，各种关怀备至，呵护有加。\r\n家务也全能，所谓的“比起恋人更适合当媳妇的类型”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "佐竹美奈子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "佐竹 美奈子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さたけ みなこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Satake Minako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月22日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "体重",
+            "value": "45kg"
+        },
+        {
+            "key": "BWH",
+            "value": "86/54/82"
+        },
+        {
+            "key": "年龄",
+            "value": "18岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 22,
+    "stat": {
+        "comments": 23,
+        "collects": 24
+    },
+    "anime_ids": [
+        309807
+    ]
+}

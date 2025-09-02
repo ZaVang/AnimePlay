@@ -1,0 +1,89 @@
+{
+    "id": 65985,
+    "name": "水野愛",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/15/02/65985_crt_Pdi63.jpg?r=1541221186",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/02/65985_crt_Pdi63.jpg?r=1541221186",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/02/65985_crt_Pdi63.jpg?r=1541221186",
+        "grid": "https://lain.bgm.tv/pic/crt/g/15/02/65985_crt_Pdi63.jpg?r=1541221186"
+    },
+    "summary": "黑色短发上戴着黄色花瓣发饰的僵尸3号。\r\n在2000年以后的偶像战国时代中人气绝顶的偶像组合中无法撼动的中心。虽然擅长唱歌，但本人对跳舞更有自信。性格要强，毫不掩饰自己的心里话。对于幸太郎的计划，感到十分怀疑。\r\n顺带一提，一变成偶像模式，头上的花就会变多。\r\n害怕打雷。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "水野爱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みずの あい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mizuno Ai"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1992年3月7日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "42kg"
+        },
+        {
+            "key": "BWH",
+            "value": "81：56：80(B)"
+        },
+        {
+            "key": "去世日期",
+            "value": "2008年8月4日（佛灭）"
+        },
+        {
+            "key": "兴趣",
+            "value": "偶像研究、收集丑萌玩偶商品"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "烤肉"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "碳水化合物"
+        },
+        {
+            "key": "喜欢的颜色",
+            "value": "蓝色"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1992,
+    "birth_mon": 3,
+    "birth_day": 7,
+    "stat": {
+        "comments": 66,
+        "collects": 291
+    },
+    "anime_ids": [
+        252655,
+        287488
+    ]
+}

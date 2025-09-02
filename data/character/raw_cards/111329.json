@@ -1,0 +1,68 @@
+{
+    "id": 111329,
+    "name": "焼塩檸檬",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/95/e0/111329_crt_lAAxq.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/e0/111329_crt_lAAxq.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/e0/111329_crt_lAAxq.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/95/e0/111329_crt_lAAxq.jpg"
+    },
+    "summary": "和彦のクラスメイトで陸上部のエース。いつも元気いっぱいで天真爛漫な性格。走ることが大好きで、勉強はちょっぴり苦手。頭の良い幼なじみに淡い恋心を抱いている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "烧盐柠檬"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "焼塩 檸檬"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やきしお　れもん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yakishio Remon"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月1日"
+        },
+        {
+            "key": "身高",
+            "value": "163cm（SSS短篇集）"
+        },
+        {
+            "key": "体重",
+            "value": "50kg（SSS短篇集）"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://makeine-anime.com/character/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 1,
+    "stat": {
+        "comments": 97,
+        "collects": 179
+    },
+    "anime_ids": [
+        464376
+    ]
+}

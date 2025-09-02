@@ -1,0 +1,51 @@
+{
+    "id": 96774,
+    "name": "ポーラ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2f/54/96774_crt_MWtZG.jpg?r=1628732673",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2f/54/96774_crt_MWtZG.jpg?r=1628732673",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2f/54/96774_crt_MWtZG.jpg?r=1628732673",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2f/54/96774_crt_MWtZG.jpg?r=1628732673"
+    },
+    "summary": "鳥たちと会話ができる、唯一の心優しき良識派韋駄天。\r\nすぐ突っ走るハヤトとすぐ裏の顔を見せるイースリイに挟まれつつもいつもふたりを和ませる優しいムードメーカー。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "波菈"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月21日"
+        },
+        {
+            "key": "体重",
+            "value": "35kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://idaten-anime.com/character/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 21,
+    "stat": {
+        "comments": 59,
+        "collects": 85
+    },
+    "anime_ids": [
+        312723
+    ]
+}

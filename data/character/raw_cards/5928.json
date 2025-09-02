@@ -1,0 +1,77 @@
+{
+    "id": 5928,
+    "name": "如月千早",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ed/41/5928_crt_Q77Qa.jpg?r=1513506057",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/41/5928_crt_Q77Qa.jpg?r=1513506057",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/41/5928_crt_Q77Qa.jpg?r=1513506057",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ed/41/5928_crt_Q77Qa.jpg?r=1513506057"
+    },
+    "summary": "偶像大师系列游戏与动画三巨头之一，Vocal阵营的队长。\r\n中产阶级出身，弟弟·如月优8年前因车祸死亡，目前父母离异，自己独居中。\r\n蓝色及腰长发，身体纤细挺拔，但胸围非常小，经常会不自觉的吐槽胸围，并且对胸围较大的人有一定抵触情绪。性格非常认真，有时候会很死板。拥有事务所最高超的演唱能力，本人也很喜爱唱歌，但对歌曲有着微妙的执着，对唱歌以外的其他工作有着明显的抵触情绪。\r\n因为CV的原因，有痴女设定，控同事务所的高槻弥生达到了不像话的地步。\r\n成为偶像的原因：弟弟生前极爱听她唱歌，于是音乐成为了她活下去的唯一动力。\r\n基本能力以Vocal最为突出，同时其余两项能力水准也很高，名副其实的最强角色，但因为情绪管理难度过大，另一方面衰减较快，使用难度不低，甚至还有因为情绪低落和衰减造成的“千早螺旋”，不适合新手上手使用。\r\n\r\n（在偶像大师 XENOGLOSSIA中）\r\n身高167cm、体重47kg、B89/W55/H82、17岁。\r\n所属对抗Mondenkind的组织Turiavita，是驾驶iDOL的皇牌驾驶员。品行正直，冷静沉着，言行有礼，总是流露出典雅的气质。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "如月千早"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "きさらぎ ちはや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kisaragi Chihaya"
+                },
+                {
+                    "k": "昵称",
+                    "v": "72, 歌神"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月25日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "体重",
+            "value": "41kg"
+        },
+        {
+            "key": "BWH",
+            "value": "72/55/78"
+        },
+        {
+            "key": "年龄",
+            "value": "15→16岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 25,
+    "stat": {
+        "comments": 113,
+        "collects": 432
+    },
+    "anime_ids": [
+        11577,
+        309807
+    ]
+}

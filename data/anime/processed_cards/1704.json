@@ -1,0 +1,153 @@
+{
+    "id": 1704,
+    "name": "猎人",
+    "image_path": "data/images/anime/1704.jpg",
+    "points": 8.4,
+    "cost": 4,
+    "rarity": "SSR",
+    "description": "这是关于一群“猎人”的故事，所谓猎人，就是追求怪物、财宝、悬赏、美食、遗迹、幻兽等稀有存在渡生之人的总称，猎人是精英中的精英，并可以免费享受全球各国公共设施，因此必须通过高难度测试最终拿到执照才有资格成为猎人。全世界也不过只有600名左右猎人。\r\n\r\n　　善良天真充满热情的小杰为了寻找失踪的父亲——传说中最伟大的猎人，于是下定决心也要成为猎人，在接受猎人测试的途中，他认识了冷酷少年奇牙、漂亮的酷拉皮卡和外表很成熟的雷欧力，四个有着不同目的却都想要成为猎人的少年成了好朋友。于是他们一起踏上了猎人之旅，并面对他们最大的敌人——幻影旅团",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 62,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗",
+        "冒险"
+    ],
+    "date": "1999-10-16",
+    "rating_rank": 64,
+    "rating_score": 8.4,
+    "rating_total": 5168,
+    "main_character_ids": [
+        6497,
+        6550,
+        6551,
+        14097
+    ],
+    "main_characters": [
+        {
+            "id": 6497,
+            "name": "ゴン＝フリークス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/88/c9/6497_crt_0XOoy.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/c9/6497_crt_0XOoy.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/c9/6497_crt_0XOoy.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/88/c9/6497_crt_0XOoy.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4084,
+                    "name": "竹内順子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/3c/4084_prsn_wQHsi.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a5/3c/4084_prsn_wQHsi.jpg"
+                    },
+                    "short_summary": "竹内顺子（1972年4月5日－），日本的女性声优、演员，现属剧团BQ MAP及尾木プロ THE NEXT事务所旗下。埼玉县出身，血型是B型。代表作有‘Hunter × Hunter’的（小杰·富力士）、‘メダロットシリーズ’的（メタビー）、‘火影忍者’的（漩涡鸣人）、‘Yes! 光之美少女5’的（夏木玲）等。\r\n\r\n\r\n竹内顺子在98年左右最成功的角色无疑是《Hunter X Hunter》的小杰了，小杰的天真、童稚、智慧、善良、倔强、快乐、忧愁、希望、失落，一切的一切都被竹内小姐以其稚气未脱、幼稚的语言所表现，竹内小姐的嗓鼻使用方面堪称高手，在激动和冷静时表现的气质是Q所喜爱并敬佩的，竹内小姐带动的小杰的气质是向高尚的气质发展的，可以感觉得到她对人物的理解是跨时代性的，是用发展的语言演绛成长的人物，这是其最大的优势和财富所在。这一点是田中小姐甚至许多女声优所不能比拟的。而田中小姐的语言感染力以及表现功力的自然和纯熟也是值得学习的。 　　后来竹内顺子又参与《火影忍者》中漩涡鸣人的配音，再一次大大提高了竹内的知名度，并且相当成功，与小杰有的一拼，这时候的她已经有12年的配音经验，可以说比98年的时候要成熟许多。虽然鸣人是男性，但是竹内顺子却能配的天衣无缝，不仅如此，还将鸣人的勇敢、毅力、倔强、不服输的精神以及偶尔显示的智慧表现的淋漓尽致。 　　竹内顺子的作品并不算特别多，但是人气漫画的主角倒占了不少。她也很会为男性人物配音，甚至有些比较难，比较不可思议的声音，都听不出来是出自于她。可见竹内的精炼。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6550,
+            "name": "キルア＝ゾルディック",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6e/ae/6550_crt_raIg7.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/ae/6550_crt_raIg7.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/ae/6550_crt_raIg7.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6e/ae/6550_crt_raIg7.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4019,
+                    "name": "三橋加奈子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7f/c6/4019_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/c6/4019_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/c6/4019_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7f/c6/4019_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6551,
+            "name": "クラピカ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b9/24/6551_crt_1jOw1.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/24/6551_crt_1jOw1.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/24/6551_crt_1jOw1.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b9/24/6551_crt_1jOw1.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4083,
+                    "name": "甲斐田ゆき",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e1/b9/4083_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/b9/4083_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/b9/4083_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e1/b9/4083_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "因演出《HUNTER×HUNTER》的酷拉皮卡而一跃成名，之后又因演出《网球王子》的不二周助获得了好评，从此确立扮演少年角色的良好声誉。\r\n    年龄应介于竹内顺子和乡田穗积之间；比竹内年长但比乡田年轻。（某广播节目上发言说和小野坂昌也为同代。）\r\n    高校时为提高科学成绩而隶属科学部，在某广播节目中提及也曾隶属羽毛球部。\r\n    高校毕业后入读国际大学，专攻音乐剧。毕业时同校男友决定先行回国，出发当日到机场送别，回程途中独自一人在车中流泪。\r\n    双亲家是私塾学校，数年前因火灾全毁。\r\n    能讲熟练英文，也能说简单的法语和中文。\r\n    得知中文圈把她的名字译为“雪”，在Twitter正名应是“幸”。 \r\n    兄长的生日是11月14日。\r\n    爱犬的名字是“BIBIAN”（ビビアン）。\r\n    声优麦人是小学和中学的学长。\r\n    和她利用同一个铁路车站的置鮎龙太郎称她为“伯母”，但是她本人并不喜欢被如此称呼。\r\n    因同样的姓氏，常被误认为甲斐田裕子。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 14097,
+            "name": "レオリオ＝パラディナイト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/60/fc/14097_crt_cv0s1.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/fc/14097_crt_cv0s1.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/fc/14097_crt_cv0s1.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/60/fc/14097_crt_cv0s1.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 1555,
+                    "name": "郷田ほづみ",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b5/02/1555_prsn_DDOJ3.jpg?r=1574056733",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/02/1555_prsn_DDOJ3.jpg?r=1574056733",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/02/1555_prsn_DDOJ3.jpg?r=1574056733",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b5/02/1555_prsn_DDOJ3.jpg?r=1574056733"
+                    },
+                    "short_summary": "日本の声優、俳優、音響監督。湘南アルファロメオクラブ会長。尾木プロ THE NEXT所属。\r\n\r\n東京都出身。神奈川県平塚市在住。身長176cm、体重60kg。血液型はAB型。神奈川県立小田原高等学校、玉川大学文学部芸術学科演劇学専攻卒業。\r\n\r\n1981年、富山敬に憧れて「第3回アマチュア声優・ドラマ・コンテスト」に応募して入賞する。主催社であるニッポン放送のドン上野に「君、やってみないか」と声をかけられ、『夜のドラマハウス』でデビューする。芸名「郷田ほづみ」はドン上野による命名。\r\n\r\n1983年に平光琢也、赤星昇一郎の3人で結成したお笑いトリオ「怪物ランド」で『お笑いスター誕生!!』に出場し、10週勝ち抜きチャンピオンとなる。\r\n\r\n同年、テレビアニメ『装甲騎兵ボトムズ』にキリコ・キュービィー役で出演する。その後、怪物ランドの仕事も多忙となり、徐々に声優の仕事から離れていくが、OVA『銀河英雄伝説』の外伝が制作されることとなった際、同作の登場人物であるヤン・ウェンリー役を1995年に死去した富山敬に代わって演じて以降、再び声優の仕事に戻る。\r\n\r\nその後も数々のアニメに出演するほか、テレビドラマなどにもしばしば出演している。\r\n\r\nアニメの音響監督も手がけつつ、1999年には「湘南アクターズスクール」を設立する。湘南テアトロ☆デラルテ（旧：湘南アクターズ）、ひらり、空中分解。、羽衣1011など、数々の劇団において芝居の演出も行なっている。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

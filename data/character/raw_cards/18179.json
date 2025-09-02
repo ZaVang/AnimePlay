@@ -1,0 +1,74 @@
+{
+    "id": 18179,
+    "name": "倉上ひなた",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/31/46/18179_crt_g2Nn2.jpg?r=1534404543",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/31/46/18179_crt_g2Nn2.jpg?r=1534404543",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/31/46/18179_crt_g2Nn2.jpg?r=1534404543",
+        "grid": "https://lain.bgm.tv/pic/crt/g/31/46/18179_crt_g2Nn2.jpg?r=1534404543"
+    },
+    "summary": "11月11日生，15岁。A型。与葵同学年兼青梅竹马的女学生。虽为短黑发，但在头部两侧绑有双马尾为一大特征。在中学时代虽与葵疏离，但在高校的偶然机会下重遇。在与葵分开后，曾有段时间没有很要好的朋友，在各自成长及重逢后，立即紧紧地黏着葵不放，不过亦巧妙地挑拨葵令其掉进自己的计划中，另一方面，对葵亦十分关心，并且拥有不害怕与别人相处的性格。因受父亲的影响非常喜欢登山，不过仍为经验与知识不足的新手。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "仓上日向"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "倉上 ひなた"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くらうえ ひなた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kuraue Hinata"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1997年11月11日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "体重",
+            "value": "47kg"
+        },
+        {
+            "key": "罩杯",
+            "value": "B→C"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1997,
+    "birth_mon": 11,
+    "birth_day": 11,
+    "stat": {
+        "comments": 59,
+        "collects": 257
+    },
+    "anime_ids": [
+        290980,
+        216310,
+        86670
+    ]
+}

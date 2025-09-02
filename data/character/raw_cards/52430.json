@@ -1,0 +1,62 @@
+{
+    "id": 52430,
+    "name": "ラッキービースト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5b/80/52430_crt_COygy.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/80/52430_crt_COygy.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/80/52430_crt_COygy.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5b/80/52430_crt_COygy.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "幸运兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Lackey beast"
+                },
+                {
+                    "v": "ボス"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "老大"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Lucky Beast"
+                },
+                {
+                    "k": "日文名",
+                    "v": "幸運の獣"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "らっきーびーすと"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ラッキーさん"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 18,
+        "collects": 18
+    },
+    "anime_ids": [
+        176478
+    ]
+}

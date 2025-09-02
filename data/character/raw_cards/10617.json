@@ -1,0 +1,55 @@
+{
+    "id": 10617,
+    "name": "松尾芭蕉",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/93/f8/10617_crt_MG2Bv.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/f8/10617_crt_MG2Bv.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/f8/10617_crt_MG2Bv.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/93/f8/10617_crt_MG2Bv.jpg"
+    },
+    "summary": "日本历史上有名的俳圣，曾良的老师，常被曾良欺压，却又离不开他。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "松尾芭蕉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "松尾芭蕉"
+                },
+                {
+                    "k": "昵称",
+                    "v": "芭蕉桑"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "祭日",
+            "value": "1694年11月28日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 9
+    },
+    "anime_ids": [
+        2461,
+        2459,
+        2460,
+        3482
+    ]
+}

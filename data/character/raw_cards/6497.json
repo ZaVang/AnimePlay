@@ -1,0 +1,76 @@
+{
+    "id": 6497,
+    "name": "ゴン＝フリークス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/88/c9/6497_crt_0XOoy.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/c9/6497_crt_0XOoy.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/c9/6497_crt_0XOoy.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/88/c9/6497_crt_0XOoy.jpg"
+    },
+    "summary": "本作第一男主角。性格纯朴、善良、天真开朗，童年时光多半在树林里度过，所有的动物对他十分友善。想法过于天真与简单，因此很容易吸引朋友和敌人的注意力，同时也是奇犽最好的朋友。有着超人一般的视觉和嗅觉。事后得知父亲还活着并且是名猎人，让自己也想要成为猎人，追寻父亲并且了解父亲不顾一切也要追求的目标。缺点是脾气过于冲动、固执，经常缺乏对事情的全盘思考。有着超龄的身体能力，愤怒的时候、力量尤其强大。\r\n念能力属于强化系，能以较快的速度恢复、强化的力量。招式名为“猜猜拳”，是一种将剪刀、石头、布用于战斗的招式。但在与尼菲彼多战斗，由于愤怒过度使用誓约与制约，强制让肉体与力量成长成到可以击败尼菲彼多的状态。付出的代价连猎人协会找来的除念师也无法处理。在被阿路加的能力治疗后丧失原本念能力但还有气，故事已交代他的念能力可再使用但必须从头练起。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "杰·富力士"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "冈"
+                },
+                {
+                    "v": "小杰"
+                },
+                {
+                    "v": "岡·菲猎斯"
+                },
+                {
+                    "v": "Gon Freaks"
+                },
+                {
+                    "v": "Gon Freecss"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月5日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        },
+        {
+            "key": "体重",
+            "value": "49kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://www.ntv.co.jp/hunterhunter/character/gon.html"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 5,
+    "stat": {
+        "comments": 21,
+        "collects": 109
+    },
+    "anime_ids": [
+        1704,
+        21032
+    ]
+}

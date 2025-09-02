@@ -1,0 +1,88 @@
+{
+    "id": 8386,
+    "name": "北斗神拳",
+    "image_path": "data/images/anime/8386.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "当世界由于大规模的核战争而遭到毁灭性打击后，人类为了争夺仅有的淡水和食物开始互相抢夺厮杀，为了解救黑暗时代的人们，北斗神拳的继承人健次郎凭借着威力无比的暗杀拳法——北斗神拳，同各种邪恶势力做战斗，最终将光明带回世界。\r\n\r\n第23話からオープニング（OP）でタイトルの前に「世紀末救世主伝説」と表示されるようになったことで、世紀末救世主伝説 北斗の拳（せいきまつきゅうせいしゅでんせつ ほくとのけん）と呼称されることもある。全109話。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 109,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "1984-10-04",
+    "rating_rank": 714,
+    "rating_score": 7.6,
+    "rating_total": 718,
+    "main_character_ids": [
+        6729,
+        6739
+    ],
+    "main_characters": [
+        {
+            "id": 6729,
+            "name": "ケンシロウ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8e/19/6729_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/19/6729_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/19/6729_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8e/19/6729_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4202,
+                    "name": "神谷明",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b5/49/4202_prsn_jkJnt.jpg?r=1751970040",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/49/4202_prsn_jkJnt.jpg?r=1751970040",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/49/4202_prsn_jkJnt.jpg?r=1751970040",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b5/49/4202_prsn_jkJnt.jpg?r=1751970040"
+                    },
+                    "short_summary": "日本の声優、俳優、歌手、ナレーター、元日本工学院専門学校声優・俳優科講師。神奈川県横浜市出身。\r\n\r\n妻は元声優の戸部光代、長女はシナリオライターの華宮ゆう士、次女はミュージカル女優の神谷たえ。有限会社冴羽商事代表取締役。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6739,
+            "name": "バット",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1a/9d/6739_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/9d/6739_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/9d/6739_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1a/9d/6739_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5454,
+                    "name": "一龍斎貞友",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/10/70/5454_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/10/70/5454_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/10/70/5454_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/10/70/5454_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "id": 11424,
+    "name": "ルーシー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/65/3c/11424_crt_E9bBE.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/3c/11424_crt_E9bBE.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/3c/11424_crt_E9bBE.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/65/3c/11424_crt_E9bBE.jpg"
+    },
+    "summary": "年约18岁的变异人女孩，头发与双瞳皆为绯红色，她是握有足以威胁人类地位之能力的新人类物种“二觭人”的原始母体，同时也是唯一具有生殖能力的个体（相当于蜂群组织中的女王蜂），也是唯一已成年的二觭人。\r\n从研究所脱逃的时候由于头部受到重弹冲击，导致人格分裂，天真单纯的妮悠因此诞生。只要头部受到冲击就会变回露西的人格，使用名为“手”的看不见的手臂，被称为是个见人类就杀、杀人不眨眼的恶魔。不过，无论发生任何事情，她都不会伤害耕太还有动物（特别是狗），藏间室长也是她表示“绝不会杀死”的对象。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "露西"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二人格",
+                    "v": "にゅう"
+                },
+                {
+                    "k": "第二人格中文名",
+                    "v": "妮悠"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Lucy"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月2日"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "体重",
+            "value": "48kg"
+        },
+        {
+            "key": "年龄",
+            "value": "18"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 2,
+    "stat": {
+        "comments": 6,
+        "collects": 113
+    },
+    "anime_ids": [
+        536
+    ]
+}

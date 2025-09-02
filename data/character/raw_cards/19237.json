@@ -1,0 +1,52 @@
+{
+    "id": 19237,
+    "name": "相模玲",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b2/63/19237_crt_44268.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/63/19237_crt_44268.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/63/19237_crt_44268.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b2/63/19237_crt_44268.jpg"
+    },
+    "summary": "紗南の専属マネージャー。9月23日生まれ。乙女座。A型。麻子とは高校の頃付き合っていた。災難続きで世捨て人に陥っていたところを紗南に拾われた。紗南と麻子が共演したドラマがきっかけで、麻子と再び付き合う。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "相模玲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "さがみ レイ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "9月23日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 23,
+    "stat": {
+        "comments": 1,
+        "collects": 1
+    },
+    "anime_ids": [
+        1515
+    ]
+}

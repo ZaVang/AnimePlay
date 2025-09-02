@@ -1,0 +1,52 @@
+{
+    "id": 103078,
+    "name": "うさ原",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0c/0a/103078_crt_yn8hd.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0c/0a/103078_crt_yn8hd.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0c/0a/103078_crt_yn8hd.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0c/0a/103078_crt_yn8hd.jpg"
+    },
+    "summary": "强大无比、像狼一样的兔子，并且认为自己具备了兔子的特质——孤独与理性，在秋天很容易变得忧郁\r\n\r\n强大无比 超凡卓群 性格像狼一样的兔子（在16集也穿了独角彦给的狼皮...）并且认为自己具备了兔子的特质——孤独与理性，并在秋天很容易变得忧郁。\r\n\r\n喜欢欺负宇留野\r\n\r\n和独角彦应该算是朋友吧.\r\n\r\n強すぎて群れから追い出されたウサギ。弱肉強食という言葉を無視した存在であり、別名「最凶のウサちゃん」。常にタバコをくわえている。秋の初めには一時的に憂鬱モードになる。うる野をいじめているが、彼とは腐れ縁で繋がっている。\r\n本人は自覚していないものの、基本的に熱血で真面目な性格のためかツッコミキャラという位置づけが強く、親友であるゆに彦とのコンビはうる野を巻き込むことが多い。最近は傍観者的立場が多く、ゆに彦と共にオチ担当に使われることが多い。白黒友の会メンバー。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "兔原"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Usahara"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "人间年龄",
+            "value": "21岁"
+        },
+        {
+            "key": "动物属性",
+            "value": "兔 (ウサギ)"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        2696
+    ]
+}

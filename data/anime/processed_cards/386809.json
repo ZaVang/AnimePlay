@@ -1,0 +1,104 @@
+{
+    "id": 386809,
+    "name": "【我推的孩子】",
+    "image_path": "data/images/anime/386809.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "“在演艺圈里，谎言就是武器。 ”\r\n在小城市工作的妇产科医生・五郎，有一天他所推的偶像“B小町”出现在了他的面前。“B小町”有着一个禁忌的秘密。\r\n如此这般的两人实现了最糟糕的相遇，从此命运的齿轮开始转动——",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 11,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2023-04-12",
+    "rating_rank": 1153,
+    "rating_score": 7.4,
+    "rating_total": 17759,
+    "main_character_ids": [
+        102125,
+        102126
+    ],
+    "main_characters": [
+        {
+            "id": 102125,
+            "name": "星野愛久愛海",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c5/3a/102125_crt_I1eZN.jpg?r=1674520069",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/3a/102125_crt_I1eZN.jpg?r=1674520069",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/3a/102125_crt_I1eZN.jpg?r=1674520069",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c5/3a/102125_crt_I1eZN.jpg?r=1674520069"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6560,
+                    "name": "内山夕実",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/99/e6/6560_prsn_gZezL.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/e6/6560_prsn_gZezL.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/e6/6560_prsn_gZezL.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/99/e6/6560_prsn_gZezL.jpg"
+                    },
+                    "short_summary": "内山 夕実（うちやま ゆみ、1987年10月30日 - ）は、日本の女性声優。東京都出身。大沢事務所所属。音域はアルト。\r\n\r\n中高一貫学校の出身で、15歳で日本ナレーション演技研究所のジュニアクラスに入所。日ナレ時代は、ならはしみき指導の下でレッスンを受けている。声優になった理由として中学時代に放送劇部に入ったことを挙げている。\r\nアーツビジョンに所属し、2005年に別名義でデビューするが、家庭の事情により20歳の時に一旦引退して就職する。3年のブランクを経て、2010年に元の事務所に再所属し、BeeTVで配信された海外ドラマ『バンパイアに恋して』のアビー役の吹き替えで再デビュー。翌年『Aチャンネル』のナギ役で初のレギュラーを獲得。\r\n2017年4月、アーツビジョンから大沢事務所に移籍したことを報告した。\r\n趣味は写真撮影で、ブログには彼女が撮った写真が掲載されている。特技はカラオケで、いきものがかりの「ありがとう」をよく歌っている。\r\n\r\n2024年12月31日发表与小林裕介结婚",
+                    "locked": false
+                },
+                {
+                    "id": 32681,
+                    "name": "大塚剛央",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fc/12/32681_prsn_0Sz5C.jpg?r=1734791596",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/12/32681_prsn_0Sz5C.jpg?r=1734791596",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/12/32681_prsn_0Sz5C.jpg?r=1734791596",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fc/12/32681_prsn_0Sz5C.jpg?r=1734791596"
+                    },
+                    "short_summary": "大塚 剛央（おおつか たけお、1992年10月19日 - ）は、日本の男性声優。東京都出身。\r\n\r\n日本ナレーション演技研究所を経て、アイムエンタープライズに所属。\r\n2018年8月公開の劇場版アニメ『詩季織々』の「上海恋」にてリモ役でアニメ初主演。\r\n2018年10月放送のテレビアニメ『風が強く吹いている』にて蔵原走役でテレビアニメ初主演を務める。\r\n\r\n交友関係としては、天﨑滉平とプライベートでも仲が良いとWEBラジオ「僕たちもう、フレンドですよね？」のアカウントで公言している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 102126,
+            "name": "星野瑠美衣",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/71/cc/102126_crt_aJfCA.jpg?r=1674520085",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/cc/102126_crt_aJfCA.jpg?r=1674520085",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/cc/102126_crt_aJfCA.jpg?r=1674520085",
+                "grid": "https://lain.bgm.tv/pic/crt/g/71/cc/102126_crt_aJfCA.jpg?r=1674520085"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 49689,
+                    "name": "伊駒ゆりえ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/52/a7/49689_prsn_04woF.jpg?r=1688572888",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/a7/49689_prsn_04woF.jpg?r=1688572888",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/a7/49689_prsn_04woF.jpg?r=1688572888",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/52/a7/49689_prsn_04woF.jpg?r=1688572888"
+                    },
+                    "short_summary": "81プロデュース所属の新人声優",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

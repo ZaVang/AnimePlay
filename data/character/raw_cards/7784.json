@@ -1,0 +1,68 @@
+{
+    "id": 7784,
+    "name": "トヨタ・AE86",
+    "type": 3,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a4/e2/7784_crt_PRGx3.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/e2/7784_crt_PRGx3.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/e2/7784_crt_PRGx3.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a4/e2/7784_crt_PRGx3.jpg"
+    },
+    "summary": "丰田生产的两款小巧、轻量、经济效益取向的高性能小型车Corolla Levin和Sprinter Trueno的底盘代号，在1983年分别以Corolla第五代产品线的身份面市。代号“AE86”，代表1600cc引擎气缸容积、后轮驱动形式，在丰田的代号系统中，“A”代表车型搭载的发动机型号（4A系列），“E”代表是卡罗拉车系，“8”代表第五代卡罗拉（即E80系列），而“6”代表是该世代第六款衍生车型。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "四代丰田Sprinter Trueno/卡罗拉雷凌"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "丰田AE86"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ハチロク"
+                }
+            ]
+        },
+        {
+            "key": "发动机位置",
+            "value": "前置"
+        },
+        {
+            "key": "驱动形式",
+            "value": "后驱"
+        },
+        {
+            "key": "车身类型",
+            "value": "4座2门Coupe/4座3门Coupe"
+        },
+        {
+            "key": "发动机",
+            "value": "4A-GEU"
+        },
+        {
+            "key": "变速箱",
+            "value": "5速手动"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 17,
+        "collects": 41
+    },
+    "anime_ids": [
+        8290,
+        9568,
+        104569,
+        3816,
+        46312
+    ]
+}

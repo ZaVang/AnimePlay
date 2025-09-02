@@ -1,0 +1,67 @@
+{
+    "id": 2501,
+    "name": "須王環",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/66/e7/2501_crt_4YGsG.jpg?r=1625822605",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/e7/2501_crt_4YGsG.jpg?r=1625822605",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/e7/2501_crt_4YGsG.jpg?r=1625822605",
+        "grid": "https://lain.bgm.tv/pic/crt/g/66/e7/2501_crt_4YGsG.jpg?r=1625822605"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "须王环"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ルネ・環・リシャール・ド・グランテーヌ"
+                },
+                {
+                    "k": "日文名",
+                    "v": "須王 環"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "すおう たまき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Suou Tamaki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月8日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "183cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 8,
+    "stat": {
+        "comments": 20,
+        "collects": 123
+    },
+    "anime_ids": [
+        1487
+    ]
+}

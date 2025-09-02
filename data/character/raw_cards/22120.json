@@ -1,0 +1,75 @@
+{
+    "id": 22120,
+    "name": "フェアリモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c1/53/22120_crt_43nOi.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/53/22120_crt_43nOi.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/53/22120_crt_43nOi.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c1/53/22120_crt_43nOi.jpg"
+    },
+    "summary": "拥有传说中的十斗士之力的风能力数码宝贝。擅长自由操纵空气向敌人展示海市蜃楼以及创造真空状态以产生「镰鼬」的攻击。比起实际战斗能力，更擅长情报战。性格天真无邪且好奇心旺盛，是个话痨又轻佻的麻烦精，但本人完全没有坏心眼，所以不怎么惹讨人厌。彻头彻尾的乐观主义者，拥有遇到困难也会微笑着克服的坚强精神。必杀技是倒立着施展旋风踢的『旋风踢』，以及冲向敌人一番连踢后，施展转身踢的『薔薇暴风』。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "仙女兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Fairimon，Fairymon，Kazemon"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fearimon"
+                },
+                {
+                    "k": "称号",
+                    "v": "风之人型斗士"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference/detail.php?directory_name=fairimon"
+        },
+        {
+            "key": "等级",
+            "value": "混合体"
+        },
+        {
+            "key": "类型",
+            "value": "妖精型"
+        },
+        {
+            "key": "属性",
+            "value": "可变"
+        },
+        {
+            "key": "必杀技",
+            "value": [
+                {
+                    "v": "旋风踢"
+                },
+                {
+                    "v": "薔薇暴风"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 7
+    },
+    "anime_ids": [
+        3131
+    ]
+}

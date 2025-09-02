@@ -1,0 +1,355 @@
+{
+    "id": 24274,
+    "type": 2,
+    "name": "ルパン三世",
+    "name_cn": "鲁邦三世  第一期",
+    "summary": "鲁邦三世 (TV第1期)是动画鲁邦三世的作品里面，作为连续电视系列1971年10月24日-1972年3月26日播出的系列。",
+    "nsfw": false,
+    "locked": false,
+    "date": "1971-10-24",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/33/d2/24274_obiN2.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/33/d2/24274_obiN2.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/33/d2/24274_obiN2.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/33/d2/24274_obiN2.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/33/d2/24274_obiN2.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "鲁邦三世  第一期"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ルパン三世 (TV第1シリーズ)",
+                    "k": null
+                },
+                {
+                    "v": "Lupin the Third Part I",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "23"
+        },
+        {
+            "key": "放送开始",
+            "value": "1971年10月24日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "播放电视台",
+            "value": "よみうりテレビ系列"
+        },
+        {
+            "key": "播放结束",
+            "value": "1972年3月26日"
+        },
+        {
+            "key": "导演",
+            "value": "大隅正秋(1-6、9、12話) → 高畑勲、宮崎駿(Aプロダクション演出グループ名義)(7、8、10、11、13-23話)"
+        },
+        {
+            "key": "制作協力",
+            "value": "Aプロダクション"
+        },
+        {
+            "key": "制作",
+            "value": "読売テレビ（よみうりテレビ）、東京ムービー"
+        }
+    ],
+    "volumes": 0,
+    "eps": 23,
+    "total_episodes": 23,
+    "rating": {
+        "rank": 937,
+        "total": 468,
+        "count": {
+            "one": 2,
+            "two": 1,
+            "three": 0,
+            "four": 3,
+            "five": 15,
+            "six": 46,
+            "seven": 139,
+            "eight": 194,
+            "nine": 53,
+            "ten": 15
+        },
+        "score": 7.5
+    },
+    "collection": {
+        "wish": 629,
+        "collect": 726,
+        "doing": 116,
+        "on_hold": 125,
+        "dropped": 47
+    },
+    "tags": [
+        {
+            "name": "鲁邦三世",
+            "count": 144
+        },
+        {
+            "name": "TV",
+            "count": 143
+        },
+        {
+            "name": "1971",
+            "count": 109
+        },
+        {
+            "name": "宫崎骏",
+            "count": 85
+        },
+        {
+            "name": "漫画改",
+            "count": 72
+        },
+        {
+            "name": "高畑勋",
+            "count": 69
+        },
+        {
+            "name": "漫改",
+            "count": 45
+        },
+        {
+            "name": "東京ムービー",
+            "count": 39
+        },
+        {
+            "name": "國民級",
+            "count": 37
+        },
+        {
+            "name": "搞笑",
+            "count": 35
+        },
+        {
+            "name": "补旧番",
+            "count": 27
+        },
+        {
+            "name": "东京movie",
+            "count": 17
+        },
+        {
+            "name": "日本",
+            "count": 15
+        },
+        {
+            "name": "大隅正秋",
+            "count": 12
+        },
+        {
+            "name": "大塚康生",
+            "count": 10
+        },
+        {
+            "name": "冒险",
+            "count": 9
+        },
+        {
+            "name": "经典",
+            "count": 9
+        },
+        {
+            "name": "70年代",
+            "count": 8
+        },
+        {
+            "name": "TMS",
+            "count": 6
+        },
+        {
+            "name": "1971年10月",
+            "count": 6
+        },
+        {
+            "name": "战斗",
+            "count": 6
+        },
+        {
+            "name": "TVA",
+            "count": 5
+        },
+        {
+            "name": "高畑勲",
+            "count": 4
+        },
+        {
+            "name": "宮崎駿",
+            "count": 4
+        },
+        {
+            "name": "日本动画",
+            "count": 3
+        },
+        {
+            "name": "漫画改编",
+            "count": 3
+        },
+        {
+            "name": "80年代前",
+            "count": 3
+        },
+        {
+            "name": "童年系",
+            "count": 3
+        },
+        {
+            "name": "近藤喜文",
+            "count": 3
+        },
+        {
+            "name": "童年",
+            "count": 3
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "冒险"
+    ],
+    "series": false,
+    "main_character_ids": [
+        6784,
+        6975,
+        7253,
+        7266
+    ],
+    "main_characters": [
+        {
+            "id": 6784,
+            "name": "ルパン三世",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/08/4e/6784_crt_bQQph.jpg?r=1446820910",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/4e/6784_crt_bQQph.jpg?r=1446820910",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/4e/6784_crt_bQQph.jpg?r=1446820910",
+                "grid": "https://lain.bgm.tv/pic/crt/g/08/4e/6784_crt_bQQph.jpg?r=1446820910"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4408,
+                    "name": "山田康雄",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c7/93/4408_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/93/4408_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/93/4408_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c7/93/4408_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "山田 康雄（やまだ やすお、1932年〈昭和7年〉9月10日 - 1995年〈平成7年〉3月19日）は、日本の俳優、声優、司会者。テアトル・エコーに所属していた。長男は演芸作家の山田浩康。\r\n代表作に、ルパン三世の声（初代）や、クリント・イーストウッド、ジャン・ポール・ベルモンドの吹き替えがある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6975,
+            "name": "次元大介",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/33/f2/6975_crt_KwU3M.jpg?r=1446818861",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/f2/6975_crt_KwU3M.jpg?r=1446818861",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/f2/6975_crt_KwU3M.jpg?r=1446818861",
+                "grid": "https://lain.bgm.tv/pic/crt/g/33/f2/6975_crt_KwU3M.jpg?r=1446818861"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4219,
+                    "name": "小林清志",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d4/b4/4219_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/b4/4219_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/b4/4219_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d4/b4/4219_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーター。東京俳優生活協同組合の創立メンバーの一人であり、同組合に所属した。\r\n\r\n独特の渋い声を生かして、声優界の創生期から活躍した。アニメでの主な出演作は『ルパン三世』シリーズの次元大介や『妖怪人間ベム』（1968年）のベムなど。また、CMやテレビ番組などのナレーションも多く担当し、洋画ではジェームズ・コバーン、リー・マーヴィンらの吹き替えを務めていた。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7253,
+            "name": "峰不二子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/78/0b/7253_crt_V6dHh.jpg?r=1446819708",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/0b/7253_crt_V6dHh.jpg?r=1446819708",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/0b/7253_crt_V6dHh.jpg?r=1446819708",
+                "grid": "https://lain.bgm.tv/pic/crt/g/78/0b/7253_crt_V6dHh.jpg?r=1446819708"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 34540,
+                    "name": "二階堂有希子",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7c/c1/34540_prsn_381Sr.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/c1/34540_prsn_381Sr.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/c1/34540_prsn_381Sr.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7c/c1/34540_prsn_381Sr.jpg"
+                    },
+                    "short_summary": "二階堂 有希子（にかいどう ゆきこ、結婚後の本名:柳生 加津子、1940年10月27日 - ）は、日本の女優、声優である。\r\nそのほかにアニメ『忍風カムイ外伝』（フジテレビ系）のスガル、日本初の2時間テレビアニメ『100万年地球の旅　バンダーブック』（日本テレビ系）のクドー夫人の声などを担当した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7266,
+            "name": "石川五ェ門",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/51/2c/7266_crt_hAex8.jpg?r=1446822000",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/2c/7266_crt_hAex8.jpg?r=1446822000",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/2c/7266_crt_hAex8.jpg?r=1446822000",
+                "grid": "https://lain.bgm.tv/pic/crt/g/51/2c/7266_crt_hAex8.jpg?r=1446822000"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4204,
+                    "name": "大塚周夫",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3c/9c/4204_prsn_O966c.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/9c/4204_prsn_O966c.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/9c/4204_prsn_O966c.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3c/9c/4204_prsn_O966c.jpg"
+                    },
+                    "short_summary": "日本资深的男性声优和演员，最终隶属于青二Production。出生地为东京都，身高170cm，体重73kg，血型为B型，星座为巨蟹座。\r\n大冢擅长扮演作品中的反派角色，知名的反派角色包括：《小飞侠Peter Pan》的海盗船船长、《七龙珠》的桃白白、《ONE PIECE》的哥尔·D·罗杰、《刺猬索尼克》系列的Doctor Eggman 蛋头博士及《超级马里奥兄弟》系列的瓦里奥等等。除动画和游戏角色，大冢亦常参与外语电影的配音，其中更是查尔斯·布朗森和理查·威麦（Richard Widmark）的指定配音员。\r\n他的长子大冢明夫亦为声优，父子二人曾多次一同参与演出，合作作品包括：《怪医黑杰克》、《机动战士高达 0083：Stardust Memory》、《全金属狂潮》及《潜龙谍影4：爱国者之枪》等。\r\n2015年1月16日青二Production发布大冢周夫于1月15日在东京都新宿区过世的消息，死因为缺血性心脏病所引起的心脏衰竭，享寿85岁。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

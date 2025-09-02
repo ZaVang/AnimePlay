@@ -1,0 +1,44 @@
+{
+    "id": 52765,
+    "name": "ドロシー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f4/4d/52765_crt_b9LEL.jpg?r=1490326581",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/4d/52765_crt_b9LEL.jpg?r=1490326581",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/4d/52765_crt_b9LEL.jpg?r=1490326581",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f4/4d/52765_crt_b9LEL.jpg?r=1490326581"
+    },
+    "summary": "アンジェの相棒で、チームをまとめるリーダー的存在。車の運転技術などに長け、射撃の腕は超一流。色仕掛けも得意だが、意外と純情。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "多萝西"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Dorothy"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 25,
+        "collects": 53
+    },
+    "anime_ids": [
+        211936
+    ]
+}

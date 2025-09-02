@@ -1,0 +1,57 @@
+{
+    "id": 28287,
+    "name": "铁臂阿童木",
+    "image_path": "data/images/anime/28287.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "本作虽然是旧作的翻拍，但是每一个故事的内容都按现代视角进行了重新改编。另外，将“阿童木对阿托拉斯”这一善与恶的明确对立作为系列插入九集也是典型的手塚治虫式表现手法。简而言之，正是通过在故事构成上将善恶对立的主题持续九集的演绎，反而更传达出了好人和坏人也各有各的软弱和烦恼这一内涵。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 52,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1980-10-01",
+    "rating_rank": 1443,
+    "rating_score": 7.3,
+    "rating_total": 486,
+    "main_character_ids": [
+        14494
+    ],
+    "main_characters": [
+        {
+            "id": 14494,
+            "name": "アトム",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ea/68/14494_crt_b7H8w.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/68/14494_crt_b7H8w.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/68/14494_crt_b7H8w.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ea/68/14494_crt_b7H8w.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 34550,
+                    "name": "清水マリ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c5/4a/34550_prsn_T2giQ.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/4a/34550_prsn_T2giQ.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/4a/34550_prsn_T2giQ.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c5/4a/34550_prsn_T2giQ.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

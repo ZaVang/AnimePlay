@@ -1,0 +1,49 @@
+{
+    "id": 22816,
+    "name": "雪音",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c3/96/22816_crt_5Yioo.jpg?r=1389082899",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c3/96/22816_crt_5Yioo.jpg?r=1389082899",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c3/96/22816_crt_5Yioo.jpg?r=1389082899",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c3/96/22816_crt_5Yioo.jpg?r=1389082899"
+    },
+    "summary": "夜トに拾われ”神器（しんき）”となる少年。名前を呼ばれて”雪器（せっき）”となれば、剣と化す。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雪音"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "雪音"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ゆきね"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 29,
+        "collects": 71
+    },
+    "anime_ids": [
+        129988,
+        82572
+    ]
+}

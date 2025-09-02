@@ -1,0 +1,60 @@
+{
+    "id": 72355,
+    "name": "イレイナ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/35/0e/72355_crt_6Z6zM.jpg?r=1602429332",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/35/0e/72355_crt_6Z6zM.jpg?r=1602429332",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/35/0e/72355_crt_6Z6zM.jpg?r=1602429332",
+        "grid": "https://lain.bgm.tv/pic/crt/g/35/0e/72355_crt_6Z6zM.jpg?r=1602429332"
+    },
+    "summary": "憧憬『ニケの冒険譚』而随心所欲地在世界各地旅行的魔女。虽然还很年轻，但通过不懈努力，精通了所有体系的魔法。性格沈着冷静、严厉，但好奇心也很旺盛。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊蕾娜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "灰之魔女"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Elaina"
+                },
+                {
+                    "k": "日文名",
+                    "v": "灰の魔女"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月17日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://majotabi.jp/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 17,
+    "stat": {
+        "comments": 146,
+        "collects": 1043
+    },
+    "anime_ids": [
+        292970
+    ]
+}

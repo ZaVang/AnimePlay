@@ -1,0 +1,48 @@
+{
+    "id": 31849,
+    "name": "小此木友美",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b7/cb/31849_crt_MgbTX.jpg?r=1429635877",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/cb/31849_crt_MgbTX.jpg?r=1429635877",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/cb/31849_crt_MgbTX.jpg?r=1429635877",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b7/cb/31849_crt_MgbTX.jpg?r=1429635877"
+    },
+    "summary": "代理女神之一。\r\n都立帝圣高等学校3年生，生性冷静而洞察力敏锐的天才。精神苏联人，会说俄语。因为驾驶直升机不方便转而以战车代步。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小此木友美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "おこのぎ ともみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Okonogi Tomomi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 6
+    },
+    "anime_ids": [
+        112838
+    ]
+}

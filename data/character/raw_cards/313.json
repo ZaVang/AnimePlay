@@ -1,0 +1,65 @@
+{
+    "id": 313,
+    "name": "久我山光紀",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/15/8f/313_agQGv.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/8f/313_agQGv.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/8f/313_agQGv.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/15/8f/313_agQGv.jpg"
+    },
+    "summary": "漫画《现视研》系列及相关动画中角色。既胖動作又慢講話結巴的御宅族，但家中的經濟讓他有資金從事收藏，社上少數在畫漫畫的草圖。被春日部加上久我胖的綽號。在第六卷（動畫第二季第七集）中畢業。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "久我山光紀"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "久我山光紀"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くがやま みつのり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kugayama Mitsunori"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1982年6月29日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 1,
+    "birth_year": 1982,
+    "birth_mon": 6,
+    "birth_day": 29,
+    "stat": {
+        "comments": 5,
+        "collects": 2
+    },
+    "anime_ids": [
+        1219,
+        928
+    ]
+}

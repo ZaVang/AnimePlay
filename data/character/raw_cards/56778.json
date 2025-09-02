@@ -1,0 +1,58 @@
+{
+    "id": 56778,
+    "name": "犬山あおい",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9b/d2/56778_crt_2uooA.jpg?r=1717694149",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9b/d2/56778_crt_2uooA.jpg?r=1717694149",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9b/d2/56778_crt_2uooA.jpg?r=1717694149",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9b/d2/56778_crt_2uooA.jpg?r=1717694149"
+    },
+    "summary": "関西なまりで話すおっとり系。\r\n猪突猛進な野クルメンバーの中で、\r\n肝心な時にみんなを気づかう陰のリーダー的存在。\r\n千明からはイヌ子と呼ばれている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "犬山葵"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "犬山 あおい"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いぬやま あおい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Inuyama Aoi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月4日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 4,
+    "stat": {
+        "comments": 141,
+        "collects": 433
+    },
+    "anime_ids": [
+        262897,
+        207195,
+        266070
+    ]
+}

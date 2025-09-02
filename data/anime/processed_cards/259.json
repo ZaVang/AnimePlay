@@ -1,0 +1,155 @@
+{
+    "id": 259,
+    "name": "夏目友人帐",
+    "image_path": "data/images/anime/259.jpg",
+    "points": 8.0,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "因为看得见妖怪而被人类疏远的女子夏目玲子，为了打发寂寞的日子，她向妖怪们发起挑战，并将败在自己手下的妖怪的名字写在一纸契约上，以此做为妖怪们成为自己属下的证据。 \r\n玲子的孙子夏目贵志得到了那些契约书所做成的“友人帐”，还继承了玲子的力量，能看到不会显现在人前的物体。而且也和玲子一样成为了被周围人疏远的一员。 \r\n可是，作为唯一继续了玲子血统的他却做出了一个重要的决定：将玲子夺过来的姓怪们的名字一一归还。在这样的夏目的身边，开始聚集起各种各样的妖怪们…… \r\n能看到妖怪的少年夏目贵志，与招财猫外表的妖怪喵先生一起，为大家讲述一个奇异、悲伤，怀念、令人感动的怪谈故事。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2008-07-07",
+    "rating_rank": 237,
+    "rating_score": 8.0,
+    "rating_total": 10817,
+    "main_character_ids": [
+        74,
+        75,
+        76
+    ],
+    "main_characters": [
+        {
+            "id": 74,
+            "name": "夏目貴志",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/62/dd/74_crt_Zt22s.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/dd/74_crt_Zt22s.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/dd/74_crt_Zt22s.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/62/dd/74_crt_Zt22s.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4232,
+                    "name": "神谷浩史",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/fa/4232_prsn_bBAP2.jpg?r=1675677585"
+                    },
+                    "short_summary": "高中时期是理科生，加入青二塾以前只是一般地看着动画，没有想要成为声优的念头。高三时，于7月份加入同年级朋友组建的演剧团，在9月份的地区演剧大赛中意外获得“个人演技奖”，自此开始对演剧事业产生兴趣。想考艺术类大学所以在高三理转文，并不成功，高考落榜。\r\n另寻出路的时候在杂志上看到了青二塾的广告，征得父母同意考上其东京校第14期。当时不了解其实这里培养的是声优而不是演员，起初产生了“别干了”的消极情绪，但之后仍在青二塾坚持学习了下去，不过是“不良墅生”，同学和老师之后都笑称当时他“很狂妄”，并不参加到同学间的自主练习中。1994年，19岁的神谷从青二塾毕业，顺利加入青二事务所。\r\n出道的头几年，相比于同期甚至后期的声优们很快的大放异彩，神谷则是全部出演酱油的路人角色。2006年8月7日，因为遭逢交通事故而住院治疗。虽然经纪公司并不愿透漏事故的原因，但从关系人口中得知似乎是骑乘机车时发生的。车祸似乎是神谷事业的一个拐点。2007年因担任《再见!绝望先生》、《高达00》等作品主角的CV而受到瞩目，之后在《夏目友人帐》、《化物语》等作品中为主角配音获得极高人气，目前则是因为饰演《进击的巨人》中的里维兵长而再度爆红。\r\n\r\n2025年1月1日，宣布与女演员、模特逢泽莉娜结婚。1月4日，在广播节目中透露自己于8年前起单身，后因此节目而与逢泽莉娜结缘，大约2年前开始交往。",
+                    "locked": false
+                },
+                {
+                    "id": 4783,
+                    "name": "藤村歩",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f5/c7/4783_prsn_Jp5jV.jpg?r=1515334929",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/c7/4783_prsn_Jp5jV.jpg?r=1515334929",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/c7/4783_prsn_Jp5jV.jpg?r=1515334929",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f5/c7/4783_prsn_Jp5jV.jpg?r=1515334929"
+                    },
+                    "short_summary": "日本女性声优，隶属于贤Production。\r\n代表作品有《风之圣痕》神凪绫乃、《会长是女仆大人》鲇泽美咲、《圣痕炼金士》织部真冬、《机动战士高达UC》米妮瓦·拉欧·扎比（奥黛丽·伯恩）、《空之境界》黑桐鲜花等。\r\n\r\n2019年4月1日由事务所宣布无限期停止声优活动。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 75,
+            "name": "ニャンコ先生/斑",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/67/23/75_crt_Z7GLo.jpg?r=1716320474",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/23/75_crt_Z7GLo.jpg?r=1716320474",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/23/75_crt_Z7GLo.jpg?r=1716320474",
+                "grid": "https://lain.bgm.tv/pic/crt/g/67/23/75_crt_Z7GLo.jpg?r=1716320474"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 1582,
+                    "name": "井上和彦",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/59/f9/1582_prsn_N4nun.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/f9/1582_prsn_N4nun.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/f9/1582_prsn_N4nun.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/59/f9/1582_prsn_N4nun.jpg"
+                    },
+                    "short_summary": "日本声优、解说、舞台演员、音响监督。神奈川县横滨市出身。B-Box所属。横浜市立横浜商業高等学校卒業。\r\n曾数度结婚、离婚。首任妻子为《小甜甜》的漫画家五十岚优美子(いがらしゆみこ)，之后又曾与声优荒川美奈子、女演员越智静香结婚，但最终均离婚。长子为漫画家兼女装模特五十岚奈波(いがらし奈波)，本名五十岚庆一(五十嵐慶一)。",
+                    "locked": false
+                },
+                {
+                    "id": 4428,
+                    "name": "小林沙苗",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/07/54/4428_prsn_9cDQ7.jpg?r=1515082891",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/54/4428_prsn_9cDQ7.jpg?r=1515082891",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/54/4428_prsn_9cDQ7.jpg?r=1515082891",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/07/54/4428_prsn_9cDQ7.jpg?r=1515082891"
+                    },
+                    "short_summary": "小林沙苗（1980年1月26日－）为日本女性声优。出生于静冈县滨松市滨北区。2015年6月1日隶属公司从Production baobab移至Sigma Seven。\r\n\r\n简介\r\n最初的梦想是成为演员，高中时为地区音乐剧团“ステージ97”所属团员，在该剧团东京公演时，被前来观戏的声优立壁和也赏识其演技力并网罗至声优界。\r\n刚出道时因为仍在该地区大学就读的关系，以新干线来往东京通勤工作。\r\n主要工作是外国片、动画、游戏、以及广播剧配音，近期以幼教片、外国片日文配音居多。\r\n声线范围广泛，是少数拥有“七色之声”美名的声优之一，属于高演技力的实力派，从少年到少女、年长的女性到冷艳气质的大姐、角色的人格分裂都能完美诠释。\r\n第一次配音的作品是外国片的一名小配角，台词只有结尾的一段话，因而等候录音等到睡着。在那之后，她多次为有赛琳娜·戈麦斯、美莎·芭顿、河智苑出演的外国片进行日语配音。\r\n有潜水员执照、剑道初段，但为了保护声带而放弃需要用力呐喊的剑道。\r\n在戏剧之外的兴趣是绘画，曾在访谈中提到若没成为声优就会想走美术系。\r\n曾与永野椎菜的企划“ShiinaTactix”合作，录制‘ShiinaTactix-Sana.K’专辑，但随后则婉拒第二张专辑合作计划。\r\n\r\n交友关系\r\n和铃村健一、樱井孝宏在工作上有多次合作因此成为好友。\r\n与松来未祐交情深厚，曾在生日时一同前往东京迪斯尼乐园庆祝。在出演《D.Gray-man》之后，也与饰演利娜莉一角的伊藤静相互结识。\r\n与丰口惠、水树奈奈、能登麻美子因在《草莓100%》中共演而深交，成为所谓的“草莓聚会（いちご会）”。\r\n\r\n角色佚话\r\n在《草莓100%》中，小林饰演北大路皋月一角，但最初小林所试镜的角色是西野司，反而现在饰演西野司的丰口惠最初试镜的角色是北大路皋月。\r\n在《魔法少女奈叶A's》中，小林为暗之书／Reinforce一角献声，但最初试镜的角色是守护骑士的席格娜，反之现在饰演席格娜的清水香里最初则试镜的角色是暗之书／Reinforce。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 76,
+            "name": "夏目レイコ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/81/4f/76_crt_IOCoO.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/4f/76_crt_IOCoO.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/4f/76_crt_IOCoO.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/81/4f/76_crt_IOCoO.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4428,
+                    "name": "小林沙苗",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/07/54/4428_prsn_9cDQ7.jpg?r=1515082891",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/54/4428_prsn_9cDQ7.jpg?r=1515082891",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/54/4428_prsn_9cDQ7.jpg?r=1515082891",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/07/54/4428_prsn_9cDQ7.jpg?r=1515082891"
+                    },
+                    "short_summary": "小林沙苗（1980年1月26日－）为日本女性声优。出生于静冈县滨松市滨北区。2015年6月1日隶属公司从Production baobab移至Sigma Seven。\r\n\r\n简介\r\n最初的梦想是成为演员，高中时为地区音乐剧团“ステージ97”所属团员，在该剧团东京公演时，被前来观戏的声优立壁和也赏识其演技力并网罗至声优界。\r\n刚出道时因为仍在该地区大学就读的关系，以新干线来往东京通勤工作。\r\n主要工作是外国片、动画、游戏、以及广播剧配音，近期以幼教片、外国片日文配音居多。\r\n声线范围广泛，是少数拥有“七色之声”美名的声优之一，属于高演技力的实力派，从少年到少女、年长的女性到冷艳气质的大姐、角色的人格分裂都能完美诠释。\r\n第一次配音的作品是外国片的一名小配角，台词只有结尾的一段话，因而等候录音等到睡着。在那之后，她多次为有赛琳娜·戈麦斯、美莎·芭顿、河智苑出演的外国片进行日语配音。\r\n有潜水员执照、剑道初段，但为了保护声带而放弃需要用力呐喊的剑道。\r\n在戏剧之外的兴趣是绘画，曾在访谈中提到若没成为声优就会想走美术系。\r\n曾与永野椎菜的企划“ShiinaTactix”合作，录制‘ShiinaTactix-Sana.K’专辑，但随后则婉拒第二张专辑合作计划。\r\n\r\n交友关系\r\n和铃村健一、樱井孝宏在工作上有多次合作因此成为好友。\r\n与松来未祐交情深厚，曾在生日时一同前往东京迪斯尼乐园庆祝。在出演《D.Gray-man》之后，也与饰演利娜莉一角的伊藤静相互结识。\r\n与丰口惠、水树奈奈、能登麻美子因在《草莓100%》中共演而深交，成为所谓的“草莓聚会（いちご会）”。\r\n\r\n角色佚话\r\n在《草莓100%》中，小林饰演北大路皋月一角，但最初小林所试镜的角色是西野司，反而现在饰演西野司的丰口惠最初试镜的角色是北大路皋月。\r\n在《魔法少女奈叶A's》中，小林为暗之书／Reinforce一角献声，但最初试镜的角色是守护骑士的席格娜，反之现在饰演席格娜的清水香里最初则试镜的角色是暗之书／Reinforce。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

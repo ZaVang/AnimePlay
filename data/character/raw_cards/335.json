@@ -1,0 +1,43 @@
+{
+    "id": 335,
+    "name": "佐藤達広",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f9/b9/335_G4FaK.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/b9/335_G4FaK.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/b9/335_G4FaK.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f9/b9/335_G4FaK.jpg"
+    },
+    "summary": "本作的主角，故事开始时为22岁，4年前被大学开除，不经不觉间当了四年的家里蹲，很容易陷入自己的妄想之中，特别是性幻想，靠着跟老家伸手住在出租屋过日子。 \r\n跟邻居的学弟山崎薫计划从事H-Game设计制作的工作，主要负责写剧本。 \r\n是一个废材，典型的NEET；沉迷网游；严重的交流障碍等种种精神变态现象。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "佐藤达广"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1月28日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 28,
+    "stat": {
+        "comments": 53,
+        "collects": 44
+    },
+    "anime_ids": [
+        995
+    ]
+}

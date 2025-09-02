@@ -1,0 +1,60 @@
+{
+    "id": 11875,
+    "name": "神原拓也",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a6/9f/11875_crt_01fcK.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/9f/11875_crt_01fcK.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/9f/11875_crt_01fcK.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a6/9f/11875_crt_01fcK.jpg"
+    },
+    "summary": "住在自由之丘的小学五年级学生。一天无意中收到了一封手机邮件，在「决定未来的游戏」的指引下出发前往数码世界旅行。在炎之终端，得到了传说中的十斗士之一火神兽的斗士之魂，在孩子们中最先进化成数码宝贝。在家也能看到他经常照顾弟弟信也，比起自己优先考虑的是同伴，很有大哥范儿。正义感强烈，无论是同伴还是数码宝贝都有求必应，因此自然而然地担任了孩子们的向导。总是非常勇敢，但另一方面因为考虑事情不够周全，也会有不顾后果地冲向危险的倾向。不过通过与辉二的对立和与强敌暗黑兽的战斗重新反思，逐渐成长成一个真正守护同伴的好领队。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "神原拓也"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Takuya Kanbara"
+                },
+                {
+                    "k": "日文名",
+                    "v": "神原 拓也"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かんばら たくや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kanbara Takuya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "8月"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 17
+    },
+    "anime_ids": [
+        3131
+    ]
+}

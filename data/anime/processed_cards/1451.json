@@ -1,0 +1,89 @@
+{
+    "id": 1451,
+    "name": "东之伊甸",
+    "image_path": "data/images/anime/1451.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "2010年11月22日（星期一）\r\n日本各地被投下了10枚导弹，然而却出现了没有一人牺牲的局面，人们称此次事件为“愚蠢的星期一”，并很快地被人们所淡忘。\r\n事件过后3个月\r\n前往美国进行毕业旅行的森美咲，在白宫前被卷入冲突事件，被一个日本人救下。那人名叫泷泽朗，他失去记忆，一丝不挂，手里握着手枪和被冲入82亿日元的电子货币的手机……。\r\n泷泽朗是什么人？谜一般的手机的实体是什么？泷泽朗失去的记忆又是什么？\r\n",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 11,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2009-04-09",
+    "rating_rank": 888,
+    "rating_score": 7.5,
+    "rating_total": 5027,
+    "main_character_ids": [
+        689,
+        690
+    ],
+    "main_characters": [
+        {
+            "id": 689,
+            "name": "滝沢朗",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/07/a9/689_mjxma.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/a9/689_mjxma.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/a9/689_mjxma.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/07/a9/689_mjxma.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4994,
+                    "name": "木村良平",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d5/46/4994_prsn_RJG93.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/46/4994_prsn_RJG93.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/46/4994_prsn_RJG93.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d5/46/4994_prsn_RJG93.jpg"
+                    },
+                    "short_summary": "3岁时加入向日葵剧团，中学就读不需要穿制服，甚至没有特定讲课内容和课本的私立学校\r\n\r\n2009年在电视动画《东之伊甸》中首次担当男主角泷泽朗[s]为今后Noitamina小王子拉开序幕[/s]\r\n\r\n2011年与一同主持广播节目「Kiramune Presents 江口拓也と木村良平と代永翼の キラキラ☆ビート」的江口拓也、代永翼组成音乐团体Trignal（Kiramune所属）。首张迷你专辑“Party”于2012年12月12日发行。\r\n\r\n2012年，荣获第六回声优奖男声优配角赏\r\n\r\n吸血鬼役相当多，曾在推特自称是吸血鬼声优（在和小信的电击GS里角色设定为‘好想喝酒，虽然其实是想吸血’）「BLOOD LAD」布拉德·D·布莱斯、「Servamp」Lawless、「DIABOLIK LOVERS」无神皓、DramaCD 吸血ダーリン、酔い愛、天顶游戏、明治吸血奇譚、RUNLIMIT）\r\nNoitamina[s]小王子[/s]\r\n东之伊甸 泷泽朗，坡道上的阿波罗 西见薰，ROBOTICS；NOTES 八汐海翔角色，银之匙 八轩勇吾，PSYCHO-PASS 鹿矛围桐斗，野球少年 瑞垣俊二\r\n\r\n界内界外交际广泛，经常招待朋友去家中聚会\r\n自称很怕生害羞，被日笠阳子称为「攻めシャイ」\r\n看似很随意，但其实最会看气氛（丰永）在聚会时能关注到每个人（白石凉子）\r\n恐高\r\n喜欢猫和狗推特头像是老家的猫\r\nkaji病和香菜病患者（和佐仓互称为情敌←虽然最近都被贤章打败了）",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 690,
+            "name": "森美咲",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c0/6d/690_sl6rb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/6d/690_sl6rb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/6d/690_sl6rb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c0/6d/690_sl6rb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4895,
+                    "name": "早見沙織",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522"
+                    },
+                    "short_summary": "幼儿园、小学、初中、高中就读于白百合学园，高中时转入都内高中就读。早稻田大学毕业。\r\n在小学4年级的时候知道了“声优”这职业，决心成为声优。\r\n2004年4月，中学1年级时进入日本播音演技研究所少年声优班学习。\r\n在少年声优班第二年的2006年3月，通过I'm Enterprise的选拔考试。第一次工作是《机械女仆》的Drama CD。之后在2007年透过《桃华月惮》动画出道。\r\n清脆的声音是其特征。演技幅度很广的实力派，从幼女到花样年华的少女、文静的角色到活泼的角色、而且还能演出少年角色动物角色。演出的不同角色之间的差别很大。此外歌唱力也有公认的评价。\r\n2008年4月起，因学业缘故，每周只到日本播音演技研究所上一次课。2008年10月3日，首次主持广播节目《ラジオどっとあい 早见沙织のぽじてぃ部〜Sweetsな放课後》。\r\n2015年4月21日，以TV动画《赤发白雪姬》的片头主题歌《やさしい希望》歌手出道。\r\n2016年，在第10回声优奖中获得助演女优奖。\r\n\r\n家庭构成是父亲、母亲。还饲养着兔子。喜欢看警察题材的电视剧，在广播中透露出是电视剧《相棒》系列的FANS。\r\n从4岁开始学弹钢琴，此外还学过绘画、游泳、网球等众多东西，不过唯一持续下来的是弹钢琴，体育类的基本都持续不久。在绘画方面，据说曾在小学生时参加亚洲大赛并获得金奖。\r\n小时候开始就很喜欢唱歌，据说和母亲一起坐车的时候总是跟着车上的播放机大声地唱歌，然后母亲经常会指导她说“刚才走调了”之类的。在爵士乐歌手的母亲的推荐下在中学时就开始学习唱爵士乐。\r\n性格非常稳健，待人很有礼貌。而且在演技上具有很高的意识和才能，在声优前辈和动画制作人员中也有很高的评价。据说同事务所的间岛淳司在收录现场看到刚出道没多久时候的早见时说“看来我们事务所将来也很安泰啊”。\r\n也有天然的一面，曾把洗面奶错当牙膏拿来刷牙，还曾在收录时背后的拉链没拉上就来到录音棚。\r\n与同事务所的山本麻里安一样，因为就读的学校禁止艺术类活动而转校，在声优与学业两付重担艰难前行。\r\n与悠木碧和东山奈央公私关系良好，交往密切。日高里菜曾表示过“超喜欢早见沙织”，两人私交甚密。\r\n在广播节目中有时会模仿黑柳彻子、安东尼奥·猪木、儿玉清等。在《鹡鸰女神》的广播节目《セキレイらじお》中模仿黑柳彻子的段子，并在《鹡鸰女神》DVD第6卷的OVA里被用来作恶搞。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

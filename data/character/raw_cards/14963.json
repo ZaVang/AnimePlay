@@ -1,0 +1,84 @@
+{
+    "id": 14963,
+    "name": "西木野真姫",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/53/9e/14963_crt_O3VWX.jpg?r=1465996341",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/9e/14963_crt_O3VWX.jpg?r=1465996341",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/9e/14963_crt_O3VWX.jpg?r=1465996341",
+        "grid": "https://lain.bgm.tv/pic/crt/g/53/9e/14963_crt_O3VWX.jpg?r=1465996341"
+    },
+    "summary": "マキ、15歳　将来はパパとママの跡を継いで医者になるつもりだから、本当はアイ活してる時間なんて本当はないんだけど、こーんなにカワイイのにアイドルにならないなんてもったいないじゃナイ？　だからとりあえず、青春の思い出に参戦　趣味は買い物、今１番欲しいものはお兄ちゃん、特技は開脚、あとは――アピールポイントはなんだっけな。\r\nあ、こう見えて彼氏いない歴15年よ！",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "西木野真姬"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "西木野 真姫"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "にしきの まき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nishikino Maki"
+                },
+                {
+                    "k": "昵称",
+                    "v": "真姬、真姬酱、真姫ちゃん、マッキー"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月19日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "161cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B78 W56 H83 cm"
+        },
+        {
+            "key": "学级",
+            "value": "高中1年级"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁"
+        },
+        {
+            "key": "分组",
+            "value": "BiBi"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 19,
+    "stat": {
+        "comments": 49,
+        "collects": 295
+    },
+    "anime_ids": [
+        49294
+    ]
+}

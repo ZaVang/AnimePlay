@@ -1,0 +1,79 @@
+{
+    "id": 99003,
+    "name": "ガルムモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/65/5d/99003_crt_fJ88S.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/5d/99003_crt_fJ88S.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/5d/99003_crt_fJ88S.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/65/5d/99003_crt_fJ88S.jpg"
+    },
+    "summary": "寄宿着传说中的十斗士力量，拥有光属性能力的数码宝贝。或许因为它是在光纤网络中被发现的，能以超高速移动，会一边闪避子弹一边接近敌人，若认定对方是邪恶之人，就会二话不说用尖锐的爪牙撕裂对方。名字源自北欧神话「诸神黄昏」中与战神提尔战斗的加姆，并拥有不负此名的强烈正义之心，比一般人加倍痛恨邪恶。只要有些许邪恶之心就绝对无法使它服从，不过一旦宣誓效忠后就绝不背叛。必杀技是超高速冲刺再利用背部的翼刃将敌人切成碎片的『流星快刀斩』；以及将光能源吸入口中，在到达临界点时吐出的『太阳雷射』。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "银狼兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "加鲁姆兽"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Garummon，Garmmon"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Garumumon"
+                },
+                {
+                    "k": "称号",
+                    "v": "光之兽型斗士"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference/detail.php?directory_name=garummon"
+        },
+        {
+            "key": "等级",
+            "value": "混合体"
+        },
+        {
+            "key": "类型",
+            "value": "改造型"
+        },
+        {
+            "key": "属性",
+            "value": "可变"
+        },
+        {
+            "key": "必杀技",
+            "value": [
+                {
+                    "v": "流星快刀斩"
+                },
+                {
+                    "v": "太阳雷射"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        3131
+    ]
+}

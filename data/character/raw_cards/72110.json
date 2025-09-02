@@ -1,0 +1,47 @@
+{
+    "id": 72110,
+    "name": "カイマン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/52/90/72110_crt_g6m4m.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/90/72110_crt_g6m4m.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/90/72110_crt_g6m4m.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/52/90/72110_crt_g6m4m.jpg"
+    },
+    "summary": "本作品の主人公。カイマントカゲによく似た頭部を持つ男。身長216cm、体重146kg、足のサイズ38cm。\r\nガスマスクと銃剣（当初M7を使用していたが、後にM9へ）がトレードマーク。首をはねられても新たな頭部が再生するという不死に近い身体と、魔法が効かない特殊体質を持っている。怪力の持ち主で刃物の扱いに長けており、ニカイドウには“ナイフを持ってこそ強い”と称された。彼女と本気で戦ったことはないが、その気になれば圧倒している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "开曼"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "216cm"
+        },
+        {
+            "key": "体重",
+            "value": "146kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 10
+    },
+    "anime_ids": [
+        266301
+    ]
+}

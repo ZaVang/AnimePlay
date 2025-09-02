@@ -1,0 +1,52 @@
+{
+    "id": 46582,
+    "name": "相麻菫",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/1f/be/46582_crt_cvos0.jpg?r=1506230212",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1f/be/46582_crt_cvos0.jpg?r=1506230212",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1f/be/46582_crt_cvos0.jpg?r=1506230212",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1f/be/46582_crt_cvos0.jpg?r=1506230212"
+    },
+    "summary": "芦原桥高中1年级学生。\r\n一位像野猫一样的少女。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "相麻堇"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "相麻 菫"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "そうま すみれ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Souma Sumire"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 149,
+        "collects": 670
+    },
+    "anime_ids": [
+        193378
+    ]
+}

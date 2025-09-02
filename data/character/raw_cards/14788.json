@@ -1,0 +1,48 @@
+{
+    "id": 14788,
+    "name": "京極堂",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4c/33/14788_crt_yBJne.jpg?r=1437639124",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/33/14788_crt_yBJne.jpg?r=1437639124",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/33/14788_crt_yBJne.jpg?r=1437639124",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4c/33/14788_crt_yBJne.jpg?r=1437639124"
+    },
+    "summary": "经营一间名为“京极堂”旧书店，同时也是“武藏晴明神社”的神主，副业则是阴阳师，朋友们常以他所经营的书店名称“京极堂”称呼他。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "京极堂"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "中禅寺 秋彦"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ちゅうぜんじ あきひこ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 18
+    },
+    "anime_ids": [
+        916
+    ]
+}

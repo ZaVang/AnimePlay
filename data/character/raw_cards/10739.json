@@ -1,0 +1,52 @@
+{
+    "id": 10739,
+    "name": "アイザック・ディアン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fc/2e/10739_crt_sPssD.jpg?r=1418351788",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/2e/10739_crt_sPssD.jpg?r=1418351788",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/2e/10739_crt_sPssD.jpg?r=1418351788",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fc/2e/10739_crt_sPssD.jpg?r=1418351788"
+    },
+    "summary": "外观：二十岁左右。咖啡色头发，身材高眺的男士。经常穿着引人瞩目的衣装。\r\n性格：积极乐观，但有点秀逗。缺少危机感，无论发生什么事也会向前进。\r\n简介：盗贼。曾盗窃过博物馆的入口大门、糖果店的糖果巧克力、富豪子孙的不幸来源(庞大遗产)。一共87次左右(1930年后未计算在内)\r\n　　　虽然性情古怪，却因此拯救过不少人(如察斯)，也为很多人带来欢笑。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾萨克·迪安"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Issac Dian"
+                },
+                {
+                    "k": "日文名",
+                    "v": "アイザック・ディアン"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "アイザック・ディアン"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 15,
+        "collects": 88
+    },
+    "anime_ids": [
+        965
+    ]
+}

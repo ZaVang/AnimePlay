@@ -1,0 +1,58 @@
+{
+    "id": 27397,
+    "name": "真中らぁら",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/79/41/27397_crt_XPL33.jpg?r=1620830531",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/79/41/27397_crt_XPL33.jpg?r=1620830531",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/79/41/27397_crt_XPL33.jpg?r=1620830531",
+        "grid": "https://lain.bgm.tv/pic/crt/g/79/41/27397_crt_XPL33.jpg?r=1620830531"
+    },
+    "summary": "本作女主角。性格明亮活泼，很积极地结交朋友，为朋友着想的心情比别人强大一倍。故事开始时，对“美妙天堂”感到兴趣，但碍于校规想放弃，却因为捡到了米蕾的美妙包，而意外进入美妙天堂。本人没有自觉，但她拥有传说中的“Prism Voice”。在美妙天堂在经历短短9个月的偶像期间，偶像等级类别提升，从主流偶像中的「火热偶像」中冒起。当正认为这是一帆风顺的兆头时，突然被宣告组合解散。为了成为「美妙天堂梦幻巡游」的主演，以被选拔的5人为目标，已再次组成「SoLaMi♡SMILE」。86集成为四季公主并成为“美妙天堂梦幻巡游”的主演。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "真中啦啦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "まなからぁら"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月20日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "年龄",
+            "value": "13岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 4,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 20,
+    "stat": {
+        "comments": 39,
+        "collects": 48
+    },
+    "anime_ids": [
+        99748,
+        120186,
+        162802
+    ]
+}

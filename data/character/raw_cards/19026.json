@@ -1,0 +1,56 @@
+{
+    "id": 19026,
+    "name": "潤",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c2/d5/19026_crt_HhG5I.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/d5/19026_crt_HhG5I.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/d5/19026_crt_HhG5I.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c2/d5/19026_crt_HhG5I.jpg"
+    },
+    "summary": "ナオの幼なじみ。実はかなりの照れ屋。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "润"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "野村润"
+                },
+                {
+                    "k": "日文名",
+                    "v": "野村潤"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "のむら じゅん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nomura Jun"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "anime_ids": [
+        2710
+    ]
+}

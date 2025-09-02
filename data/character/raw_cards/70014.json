@@ -1,0 +1,52 @@
+{
+    "id": 70014,
+    "name": "ルカ・エスポジト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7a/04/70014_crt_TXWNS.jpg?r=1557494103",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/04/70014_crt_TXWNS.jpg?r=1557494103",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/04/70014_crt_TXWNS.jpg?r=1557494103",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7a/04/70014_crt_TXWNS.jpg?r=1557494103"
+    },
+    "summary": "手先が器用でセンスも抜群の芸術家肌。\r\n陽気で人懐っこく、誰とでもすぐに打ち解けられる。\r\n一人称は「オイラ」で、語尾に「っす」と付ける独特の喋り方が特徴。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Luca Esposito"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "双性"
+        },
+        {
+            "key": "生日",
+            "value": "8月19日"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "体重",
+            "value": "47kg"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 19,
+    "stat": {
+        "comments": 15,
+        "collects": 19
+    },
+    "anime_ids": [
+        273877
+    ]
+}

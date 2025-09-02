@@ -1,0 +1,48 @@
+{
+    "id": 24907,
+    "name": "土方歳三",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4c/c7/24907_crt_cFLZI.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/c7/24907_crt_cFLZI.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/c7/24907_crt_cFLZI.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4c/c7/24907_crt_cFLZI.jpg"
+    },
+    "summary": "新选组副长。指挥组织摸样无情残酷，令其他队员不寒而栗、敬为鬼神。 实际上是个非常看重队员的人，曾经想尽一切办法不让铁之助拿刀而被铁之助怨念，实际上是不愿意让这麼小这麼纯洁的孩子被血玷污，变得冷酷。对总司一直抱有对不起的态度。因为土方在总司九岁时让他选择拿刀杀人的道路，觉得非常对不起总司。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "土方岁三"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ひじかた としぞう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hijikata Toshizou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 2
+    },
+    "anime_ids": [
+        1930
+    ]
+}

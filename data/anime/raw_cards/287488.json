@@ -1,0 +1,585 @@
+{
+    "id": 287488,
+    "type": 2,
+    "name": "ゾンビランドサガ リベンジ",
+    "name_cn": "佐贺偶像是传奇 复仇",
+    "summary": "2018年10月、オリジナルTVアニメ「ゾンビランドサガ」の放送が深夜にひっそりと開始。\r\n2019年、佐賀県凱旋LIVEで続篇の制作を発表したが、\r\n今日まで沈黙を続けてきた。\r\n\r\nそして、沈黙は破られ2021年4月オリジナルTVアニメ「ゾンビランドサガ リベンジ」がアニメーション制作スタジオ「MAPPA」設立10周年に放送決定！\r\n\r\n遂に新感覚ゾンビアイドル系オリジナルTVアニメ「ゾンビランドサガ リベンジ」の幕が上がる。\r\n\r\nオリジナルTVアニメ「ゾンビランドサガ リベンジ」――――\r\n最終回が終わる頃、佐賀県という言葉は、新しい意味を持つだろう。\r\n\r\nこれは「運命へのリベンジ」。\r\n理不尽な運命の炎に焼き焦がされてきた我々の尊厳を取り戻す戦い。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2021-04-08",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/02/c7/287488_1FJYC.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/02/c7/287488_1FJYC.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/02/c7/287488_1FJYC.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/02/c7/287488_1FJYC.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/02/c7/287488_1FJYC.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "佐贺偶像是传奇 复仇"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Zombie Land Saga Revenge",
+                    "k": null
+                },
+                {
+                    "v": "佐贺偶像是传奇 卷土重来",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2021年4月8日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期四"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://zombielandsaga.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX"
+        },
+        {
+            "key": "其他电视台",
+            "value": "サンテレビ、TVQ九州放送、サガテレビ、BS11、AT-X"
+        },
+        {
+            "key": "播放结束",
+            "value": "2021年6月24日"
+        },
+        {
+            "key": "导演",
+            "value": "境宗久"
+        },
+        {
+            "key": "音乐",
+            "value": "高梨康治・Funta7"
+        },
+        {
+            "key": "Copyright",
+            "value": "©ゾンビランドサガ リベンジ製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "広報広聴課ゾンビ係"
+        },
+        {
+            "key": "製作",
+            "value": "出品人：勝股英夫、渡邊耕一、田中宏幸、大塚学、山崎明日香；出品：ゾンビランドサガ リベンジ製作委員会(avex pictures、Cygames、CyberAgent、MAPPA、AT-X)"
+        },
+        {
+            "key": "总制片人",
+            "value": "飯泉朝一、竹中信広、木村誠、椛嶋麻菜美；制作统括：大塚学"
+        },
+        {
+            "key": "制片人",
+            "value": "今福太郎、飯塚彩"
+        },
+        {
+            "key": "系列构成",
+            "value": "村越繁"
+        },
+        {
+            "key": "人物设定",
+            "value": "深川可純；客串人物设定：横田拓己、りお"
+        },
+        {
+            "key": "总作画监督",
+            "value": "崔ふみひで、桑原幹根"
+        },
+        {
+            "key": "美术监督",
+            "value": "大西達朗"
+        },
+        {
+            "key": "色彩设计",
+            "value": "佐々木梓"
+        },
+        {
+            "key": "3DCG 导演",
+            "value": "黒岩あい"
+        },
+        {
+            "key": "摄影监督",
+            "value": "三舟桃子"
+        },
+        {
+            "key": "剪辑",
+            "value": "後藤正浩"
+        },
+        {
+            "key": "主题歌・插入歌",
+            "value": "SCOOP MUSIC"
+        },
+        {
+            "key": "音效",
+            "value": "今野康之"
+        },
+        {
+            "key": "音乐制作",
+            "value": "avex pictures"
+        },
+        {
+            "key": "动画制片人",
+            "value": "小川崇博"
+        },
+        {
+            "key": "音响监督",
+            "value": "境宗久"
+        },
+        {
+            "key": "音响",
+            "value": "dugout"
+        },
+        {
+            "key": "动画制作",
+            "value": "MAPPA"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "フランシュシュ（源さくら(CV:本渡楓)、二階堂サキ(CV:田野アサミ)、水野愛(CV:種田梨沙)、紺野純子(CV:河瀬茉希)、ゆうぎり(CV:衣川里佳)、星川リリィ(CV:田中美海)）"
+        },
+        {
+            "key": "脚本",
+            "value": "村越繁(1,2,6,7,10-12)、吉村清子(3-5,8,9)"
+        },
+        {
+            "key": "分镜",
+            "value": "境宗久(1,12)、石田貴史(2,5)、佐藤威(3,4)、吉村愛(6)、岡本泰知(7)、森本育郎(8,9)、宇田鋼之介(10,11)、清水久敏(12)"
+        },
+        {
+            "key": "演出",
+            "value": "境宗久(1,12)、石田貴史(2,5,8)、岡本泰知(3,7)、佐藤威(4,9)、後藤康徳(5)、金子貴弘(6)、宇田鋼之介(8,11)、清水久敏(10)"
+        },
+        {
+            "key": "设定",
+            "value": "偶像服原案：原田幸枝；偶像服设计：石川佳代子"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 12,
+    "rating": {
+        "rank": 432,
+        "total": 7814,
+        "count": {
+            "one": 8,
+            "two": 9,
+            "three": 9,
+            "four": 33,
+            "five": 109,
+            "six": 474,
+            "seven": 2048,
+            "eight": 3669,
+            "nine": 1043,
+            "ten": 412
+        },
+        "score": 7.8
+    },
+    "collection": {
+        "wish": 2390,
+        "collect": 12150,
+        "doing": 924,
+        "on_hold": 495,
+        "dropped": 180
+    },
+    "tags": [
+        {
+            "name": "原创",
+            "count": 2100
+        },
+        {
+            "name": "偶像",
+            "count": 1958
+        },
+        {
+            "name": "MAPPA",
+            "count": 1955
+        },
+        {
+            "name": "搞笑",
+            "count": 1407
+        },
+        {
+            "name": "2021年4月",
+            "count": 1159
+        },
+        {
+            "name": "TV",
+            "count": 936
+        },
+        {
+            "name": "僵尸",
+            "count": 851
+        },
+        {
+            "name": "2021",
+            "count": 614
+        },
+        {
+            "name": "续作",
+            "count": 493
+        },
+        {
+            "name": "音乐",
+            "count": 446
+        },
+        {
+            "name": "治愈",
+            "count": 294
+        },
+        {
+            "name": "境宗久",
+            "count": 273
+        },
+        {
+            "name": "偶像大尸灰骨娘女骸",
+            "count": 186
+        },
+        {
+            "name": "百合",
+            "count": 179
+        },
+        {
+            "name": "日本",
+            "count": 79
+        },
+        {
+            "name": "村越繁",
+            "count": 63
+        },
+        {
+            "name": "佐贺偶像是传奇",
+            "count": 48
+        },
+        {
+            "name": "励志",
+            "count": 33
+        },
+        {
+            "name": "日本动画",
+            "count": 30
+        },
+        {
+            "name": "奇幻",
+            "count": 30
+        },
+        {
+            "name": "cygames",
+            "count": 26
+        },
+        {
+            "name": "热血",
+            "count": 25
+        },
+        {
+            "name": "2021年",
+            "count": 21
+        },
+        {
+            "name": "日常",
+            "count": 15
+        },
+        {
+            "name": "季番",
+            "count": 12
+        },
+        {
+            "name": "高梨康治",
+            "count": 11
+        },
+        {
+            "name": "沙雕",
+            "count": 10
+        },
+        {
+            "name": "轻百合",
+            "count": 10
+        },
+        {
+            "name": "丧尸",
+            "count": 8
+        },
+        {
+            "name": "TVA",
+            "count": 7
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "音乐"
+    ],
+    "series": false,
+    "main_character_ids": [
+        65980,
+        65981,
+        65982,
+        65985,
+        65986,
+        65987,
+        65988,
+        65989
+    ],
+    "main_characters": [
+        {
+            "id": 65980,
+            "name": "巽幸太郎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3a/db/65980_crt_eg9Mh.jpg?r=1536563157",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/db/65980_crt_eg9Mh.jpg?r=1536563157",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/db/65980_crt_eg9Mh.jpg?r=1536563157",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3a/db/65980_crt_eg9Mh.jpg?r=1536563157"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4697,
+                    "name": "宮野真守",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307"
+                    },
+                    "short_summary": "小学生時代から劇団ひまわりに所属し、主に舞台などで活動した。高校生時代に海外ドラマ『私はケイトリン』の吹替で声優デビューする。PS2用ゲーム『キングダム ハーツ』のリク役で注目を集め、その後は、『機動戦士ガンダム00』や『DEATH NOTE』の主役を務めるなど、数々の人気作品に出演している。\r\n第1回声優アワード主演男優賞および新人賞にノミネートされた（『DEATH NOTE』夜神月役）。 2008年の第2回声優アワード主演男優賞受賞。東京国際アニメフェア2008・第7回東京アニメアワード個人賞（声優部門）受賞（『DEATH NOTE』『機動戦士ガンダム00』）。 2008年12月1日、劇団ひまわりのHPで結婚と子供を授かったことを公表した。結婚相手や子供の性別は非公開。 2011年、ノン子とのび太のアニメスクランブルにて第21回アニメグランプリ最優秀男性声優賞受賞。 2012年、第6回声優アワードにて助演男優賞と歌唱賞（後者はST☆RISHとして）、日刊スポーツ第1回日刊アニメグランプリにてMIP男性声優賞、アニメージュ第34回アニメグランプリ声優部門においてグランプリを受賞。\r\n\r\n2025年6月8日宣布与向日葵剧团合约期满退团，次日宣布加入研音。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 65981,
+            "name": "源さくら",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6f/17/65981_crt_eGeOV.jpg?r=1539418849",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6f/17/65981_crt_eGeOV.jpg?r=1539418849",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6f/17/65981_crt_eGeOV.jpg?r=1539418849",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6f/17/65981_crt_eGeOV.jpg?r=1539418849"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 19560,
+                    "name": "本渡楓",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1a/96/19560_prsn_dIRg5.jpg?r=1709906617"
+                    },
+                    "short_summary": "日本的女性声优，爱知县名古屋市出身。I'm Enterprise所属。\r\n高中二年级进入日本播音演技研究所名古屋校就读，2015年4月进入I'm Enterprise。\r\n高中时代加入戏剧社，但因为身高矮小无法演出护士，而改以不会被外貌影响的声优为目标。\r\n交情好的声优有目前在《见习神仙 秘密的心灵》中共同演出的潘惠美、事务所的前辈小泽亚李与长绳麻理亚。\r\n对于演出婴儿的声音很有自信。\r\n2019年，获得第13回声优奖的新人女优赏。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 65982,
+            "name": "二階堂サキ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/42/32/65982_crt_czZTY.jpg?r=1544204008",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/32/65982_crt_czZTY.jpg?r=1544204008",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/32/65982_crt_czZTY.jpg?r=1544204008",
+                "grid": "https://lain.bgm.tv/pic/crt/g/42/32/65982_crt_czZTY.jpg?r=1544204008"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13493,
+                    "name": "田野アサミ",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9e/dc/13493_prsn_RHb0F.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/dc/13493_prsn_RHb0F.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/dc/13493_prsn_RHb0F.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9e/dc/13493_prsn_RHb0F.jpg"
+                    },
+                    "short_summary": "田野 アサミ（たの アサミ、1987年2月12日 - ）は、日本の女優、声優。アミューズ所属。2005年に本名の田野あさ美から改名。兵庫県尼崎市出身。堀越高等学校卒業。\r\n\r\n1998年に、沖縄アクターズスクール全国オーディションで、川田由起奈・上原香代子と共にグランプリを受賞。2002年に、村川絵梨（現女優）を含めた4人でボーカル＆ダンスユニットBOYSTYLEのメンバーとしてデビュー。メインボーカルを担当。\r\n上述の通り、兵庫県尼崎市出身で、『HEY!HEY!HEY!MUSIC CHAMP』（フジテレビ）に出演した際、実母が同郷であるダウンタウンの松本人志の実兄に昔、愛の告白をされ、玉砕させたことを暴露した。また、相方の浜田雅功と実母は家が近所だったらしく、浜田は「きれいな人やった」と語っていた。\r\n中学時代までは、尼崎市在住で帰宅部だった。\r\nBOYSTYLE解散後はタレント・女優・声優と幅広く活動している。2011年、テレビアニメ『トリコ』（フジテレビ・東映アニメーション制作）のリン役で声優デビュー。2012年にはプリキュアシリーズ（朝日放送・東映アニメーション制作）の9作目となる『スマイルプリキュア!』で日野あかね/キュアサニー役を演じる。あかね/キュアサニーという役は、自身の声優としてのルーツになっているという。\r\n「ラブライブ!」シリーズの第2作『ラブライブ! サンシャイン!!』では、Aqoursのライバルとなる姉妹のスクールアイドルグループ・Saint Snowの姉・鹿角聖良役で出演。2017年10月より放送のテレビアニメ第2期において、2017年12月20日に、Aqoursとの合同ユニット・Saint Aqours Snow（セイント アクア スノウ）の名義でシングル「Awaken the power」をリリースすることが発表された。また、併せて2018年4月27日と28日にSaint Snow主導によるユニットライブ『Saint Snow PRESENTS LOVELIVE! SUNSHINE!! HAKODATE UNIT CARNIVAL』が開催されることが決定。妹の理亞役である佐藤日向と共に、Aqours同様の声優ユニットとして活動することとなった。\r\n2018年7月28日、身体の不調を感じ医師の診察を受けたところ「甲状腺機能障害」と診断され、8月出演予定の舞台「七つの大罪 The STAGE」の降板を発表。声優活動は継続する。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 65985,
+            "name": "水野愛",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/15/02/65985_crt_Pdi63.jpg?r=1541221186",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/02/65985_crt_Pdi63.jpg?r=1541221186",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/02/65985_crt_Pdi63.jpg?r=1541221186",
+                "grid": "https://lain.bgm.tv/pic/crt/g/15/02/65985_crt_Pdi63.jpg?r=1541221186"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 8138,
+                    "name": "種田梨沙",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/07/06/8138_prsn_azY4i.jpg?r=1581916191",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/06/8138_prsn_azY4i.jpg?r=1581916191",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/06/8138_prsn_azY4i.jpg?r=1581916191",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/07/06/8138_prsn_azY4i.jpg?r=1581916191"
+                    },
+                    "short_summary": "初中一年级的时候打算成为一名声优是因为《哈利·波特》的影响，想做有关系的工作。但中学、高中的时候禁止一切艺能活动，通过自学学习了表演的经验技术。\r\n2007年，产生许多人气声优的‘智一・美树的广播大爆炸’一般应募进入，成为第9代的助理。与三上枝织同期。\r\n2012年9月出演《来自新世界》，为首部配演主役的动画。\r\n美术大学毕业，也取得高等学校美术教师资格。\r\n2016年9月1日，种田梨沙所属大泽事务所发布公告称，种田梨沙将因病暂停活动。有网友猜测，种田梨沙的病情可能与喉咙有关。\r\n2017年8月4日，大泽事务所发布公告，种田梨沙将重新开始进行声优活动。\r\n\r\n随着活动的暂停，原本由种田梨沙担任的角色改由以下声优代演或接任：\r\n水树奈奈：《WWW.WORKING!!》近藤妃\r\n真田麻美：《CHAOS;CHILD》久野里澪\r\n高桥李依：《Fate/Grand Order》玛修·基列莱特\r\n石原夏织：《Break Out》旁白\r\n金元寿子：《食戟之灵》薙切绘理奈\r\n川澄绫子：《剑姬神圣谭》里维莉亚·利欧斯·阿尔弗、《幻影纹章》巴尔蒙克、青龙偃月刀\r\n水濑祈：《英雄传说 闪之轨迹III》艾尔缇娜·奥莱恩\r\n加隈亚衣：《如果有妹妹就好了。》白川京\r\n此外，预定在2016年9月1日（即宣布休养）以后演出的活动和LIVE目前也全部取消出席。\r\n根据《偶像大师 百万人演唱会！》CD系列「THE IDOLM@STER THE@TER ACTIVITIES 03」的声优投票结果，原本预定登场的田中琴叶（声：种田梨沙）亦出于上述理由，决定改由第二名的矢吹可奈（声：木户衣吹）代为登场。决定取消出席的还有2017年3月12日在日本武道馆举办的《THE IDOLM@STER MILLION LIVE! 4thLIVE TH@NK YOU for SMILE!! DAY3 Starlight Theater》。\r\n《噬血狂袭Ⅱ》并未更换声优，而预定在2016年11月发售的姬柊雪菜（声：种田梨沙）的角色歌专辑也按照原定的日程发售。《黄金拼图 Pretty Days》由于已在活动暂停前录制完成，故预定在11月上映的电影亦按照原定的日程进行。\r\n\r\nBlog：sp.rhodanthe-rsc.jp\r\n注：付费粉丝Blog。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 65986,
+            "name": "紺野純子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c6/45/65986_crt_4cre2.jpg?r=1542780355",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c6/45/65986_crt_4cre2.jpg?r=1542780355",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c6/45/65986_crt_4cre2.jpg?r=1542780355",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c6/45/65986_crt_4cre2.jpg?r=1542780355"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 30531,
+                    "name": "河瀬茉希",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2e/6b/30531_prsn_94y4m.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/6b/30531_prsn_94y4m.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/6b/30531_prsn_94y4m.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2e/6b/30531_prsn_94y4m.jpg"
+                    },
+                    "short_summary": "河瀬 茉希（かわせ まき、1995年12月31日 - ）は、日本の女性声優。アーツビジョン所属。血液型はA型。千葉県出身。\r\n\r\n日本ナレーション演技研究所に在籍していた。\r\n趣味・特技は読書、歌、ベースである。また、back numberのファンクラブ会員でもあることをブログに綴っている。\r\nディズニーキャラクターではベイマックスが好きだと語っている。\r\n紅茶が入っているスイーツが好きだと語っている。\r\n高校までは髪型がショートカットであったことを語っている。高校卒業後から事務所に所属が決まった時には「女の子は髪が長いものであるべき」と考えていたが、無理をするのはやめようと髪をショートカットにしている。\r\n事務所の同期である相内沙英、小泉瀬奈と仲が良い。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 65987,
+            "name": "ゆうぎり",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/53/f1/65987_crt_6ww94.jpg?r=1623211761",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/f1/65987_crt_6ww94.jpg?r=1623211761",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/f1/65987_crt_6ww94.jpg?r=1623211761",
+                "grid": "https://lain.bgm.tv/pic/crt/g/53/f1/65987_crt_6ww94.jpg?r=1623211761"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 21487,
+                    "name": "衣川里佳",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4f/36/21487_prsn_9V18t.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/36/21487_prsn_9V18t.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/36/21487_prsn_9V18t.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4f/36/21487_prsn_9V18t.jpg"
+                    },
+                    "short_summary": "东京都出身，FIRST WIND production事务所所属。\r\n兴趣与特长：散歩（1時間以上）、温泉・銭湯めぐり、TVゲーム",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 65988,
+            "name": "星川リリィ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/eb/d6/65988_crt_D7bBT.jpg?r=1545298208",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/d6/65988_crt_D7bBT.jpg?r=1545298208",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/d6/65988_crt_D7bBT.jpg?r=1545298208",
+                "grid": "https://lain.bgm.tv/pic/crt/g/eb/d6/65988_crt_D7bBT.jpg?r=1545298208"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13683,
+                    "name": "田中美海",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/48/28/13683_prsn_zDFkN.jpg?r=1693281513",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/28/13683_prsn_zDFkN.jpg?r=1693281513",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/28/13683_prsn_zDFkN.jpg?r=1693281513",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/48/28/13683_prsn_zDFkN.jpg?r=1693281513"
+                    },
+                    "short_summary": "田中 美海（たなか みなみ、1996年1月22日 - ）は、日本の女性声優。81プロデュース所属。\r\n神奈川県出身。血液型はA型。\r\n\r\n2012年に開催された、avex×81produce「Wake Up, Girls! AUDITION」第2回アニソン・ヴォーカルオーディションに合格。同時受賞したメンバー7人で声優ユニット「Wake Up, Girls!」を結成し、芸能活動を開始。\r\n2015年、第9回声優アワード特別賞をWake Up, Girls!として受賞。\r\n\r\n声優を志したきっかけは、小学校高学年の時にアニメのエンデイングのクレジットで出てくる名前を見て、アニメの声は人がやっていると知り、声優という職業を目の当たりにしたからである。声優を目指すために、中学では、演劇部に、高校では、放送部に所属していた。\r\n自動車運転免許を保有している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 65989,
+            "name": "山田たえ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9f/8c/65989_crt_VvL6k.jpg?r=1536564713",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/8c/65989_crt_VvL6k.jpg?r=1536564713",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/8c/65989_crt_VvL6k.jpg?r=1536564713",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9f/8c/65989_crt_VvL6k.jpg?r=1536564713"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3918,
+                    "name": "三石琴乃",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/85/9b/3918_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/9b/3918_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/9b/3918_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/85/9b/3918_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本女性声优、旁白。出身于东京都。本名相同。现为自由身，以前是ARTSVISION所属。胜田声优学院、日本播音演技研究所出身。\r\n\r\n经历\r\n三石出生于埼玉县户田市。25歳的时候来到千叶县流山市。1986年，三石从千叶县立柏南高等学校毕业后，便进入胜田声优学院学习当声优。在成为声优之前原本的志业是当保育员，但由于少子化影响导致就业困难而难以取得资格之下不得不放弃。此时在那个情况下，三石由于自己喜欢听广播剧而对声优产生兴趣。稍早之前，据三石的说法是在高中3年级利用暑假参加声优养成所主办的夏令营活动时才下定决心要当声优的。而当时三石的个性内向而且害羞，谁也没料想到的是她将来会成为第一线的声优。在胜田声优学院就读期间，三石一边在Sunshine 60大厦兼职担任电梯小姐，一边进行声优课程的学习。\r\n1988年，三石在一般公司就职，因为要兼顾OL和培养所而经常向公司请假，因此自己的收入减少。在那之后，三石前往东京都厅上班，从事空气污染无线连络员的工作。\r\n1989年，三石在北海道电力泊核能发电厂当安全宣导影片的记者。同年，于OVA《网球甜心 Final Stage》成为在声优业界的出道作。同时加盟经纪公司ARTSVISION成为旗下声优，从此开展她的声优事业。翌年1990年，三石的第一份解说工作是游戏公司Sega主办玩具展的解说。\r\n1991年，三石于电视动画《猜拳人》得到主要角色的配音经验后，同年于另一部电视动画《高智能方程式》为女主角菅生明日香献声，成为三石第一次演女主角的代表作。\r\n1992年，三石为动画《美少女战士》第一女主角月野兔配音，确立了她人气声优的地位。《美少女战士》第1季完结之后，来到东京定居。\r\n1995年，三石为当时掀起日本国内社会现象的动画《新世纪福音战士》要角葛城美里献声时，再一次大大提升了她的知名度。自此之后，三石经常负责许多动画中的成年女性角色，配音技巧亦趋娴熟。同年4月，三石的首部随笔集《月 星 太阳》出版。\r\n2000年，结婚成为人妻，虽然从未对外公开丈夫身份，但可确定非同行声优。\r\n2003年，女儿出生。\r\n2005年3月起，三石在朝日电视台新版《哆啦A梦》中，为主角野比大雄的妈妈（野比玉子）配音至今。\r\n在那之后，三石离开出道公司ARTSVISION，从此以自由声优身份持续参加，并将事业转向以负责解说为中心。\r\n2014年，三石荣获第8届声优Award“高桥和枝奖”。\r\n2017年1月9日，三石在朝日电视台播放的节目‘200位人气声优认真票选！声优总选举3小时SP’的排名中得到第15名。\r\n\r\n个人生活\r\n三石从声优出道以来，配过像《美少女战士》系列主角月野兔／水手月亮、《新世纪福音战士》的葛城美里、《少女革命》的有栖川树璃等等充满个人特色的主角。然后从1990年代末期开始，接演许多作品的重要班底，像《蜡笔小新》的上尾老师、《麻辣教师GTO》的神崎丽美、《哆啦A梦 (水田山葵版)》主角野比大雄的妈妈等等，而且几乎都是动画名作。不仅如此，在动画导演大地丙太郎（有《丸少爷》）和福田己津央（有《高智能方程式》、《机动战士高达SEED》）的作品都可听到她的声音。\r\n胜田声优学院时期以来，三石曾被担任讲师的野泽雅子评价为“看起来很老实，但也有着可爱的如骑摩托车速度般的行为以及意外的行动力，总之是个有毅力的人”。还有，三石在1995年主持电视节目《声♥游俱乐部》时曾对自己说“在某种程度上能成为受欢迎的声优吗？ 我想，这是我从未料到的（作为一个有名的声优）”。\r\n三石私生活的爱好与月野兔一样，喜欢“吃、睡、玩”这三要素。\r\n三石曾经骑过一台山叶 EZ520-Phaser车种的重型机车，另外还给一个昵称叫做“Phaser子（日语：フェザ子）”。并印有2型YSP的商标。\r\n《美少女战士》另一位主角水野亚美（水手水星）的声优久川绫于录音室与三石一起进行录音期间，久川曾说看到三石的演技而感叹自己没办法像她那样。\r\n但是三石于美少女战士第1季尾声（第44－46话）及第2季《美少女战士R》（第1－4话、第47－50话）进行录制的时候，因罹患卵巢囊肿住进医院1个月、并在出院之后在家花3个月的时间休养，不过三石原本说是得了阑尾炎（盲肠炎）。此事后来在当时就任ARTSVISION社长的松田咲实在自己的著书《声优白书》感慨表示“我竟然让这么受欢迎的三石卖命的工作，为此我深表遗憾并感到抱歉”。另外在2008年，三石在自己的个人日志自明，事实上是罹患卵巢囊肿并发腹膜炎，而且有生命危险。\r\n1995年4月，三石的随笔集《月 星 太阳》发行时在内文中提到，于美少女战士第1季第44－46话的录音期间不得不请假，这对她来说不只是明显伤害了角色，连自己的自尊心也受到冲击，结果成为三石心中很深刻的遗憾。但是后来，三石缺席集数的录制音源后来有在卡式录音带版中收录发行。\r\n艺人中川翔子称自己是美少女战士的忠实粉丝。2007年，中川曾经录制自己模仿月野兔的声音当作闹钟铃声作为送给自己的生日礼物。然后在2012年10月，与三石一起对谈的心愿实现，此时中川趁这机会送了一张画有水手月亮和葛城美里的插图当作送给三石的礼物，然后三石拿了附有亲笔签名的水手月亮赛璐片当作回送的谢礼给中川。\r\n2014年7月开始，三石于《美少女战士》时隔22年之后的新作动画《美少女战士Crystal》再度为女主角月野兔配音，是唯一一位当年的配音班底。三石也承认因为年龄增长使声音与年轻时大不同，配出自然可爱的少女音很吃力。\r\n\r\n逸事\r\n三石在《新世纪福音战士》声演葛城美里的时候，导演庵野秀明以充满“腹黑阴暗”的人对她评价。还有，三石被视为日本声优界中最具影响力的声优之一。新世纪福音战士动画的制作公司GAINAX之所以将甚具争议的作品“小织与小虾”制成动画，很大程度上是因为三石琴乃对它深感兴趣。\r\n三石从《美少女战士》以来，一直把同期的久川绫当竞争对手。\r\n《LoveLive！》在日本国内开始流行时，三石表示自己也想在舞台上唱歌跳舞。\r\n在移动电话尚未普及的时代，工作人员使用事务所户外设置的公用电话进行确认三石的时间表，在旁边等候的人听到三石会出现在事务所之后就突然跑开了。\r\n《迷糊女战士》主角优秀是三石最投入配音的角色，在面临庞大的台词量之下，三石说只要根据图片内容进行配音时就会让她更有自信。\r\n随笔集《月 星 太阳》出版时，据三石本人的说法，因为没有钱请人代笔，所以内容全部都是她自己一个人撰写完成。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

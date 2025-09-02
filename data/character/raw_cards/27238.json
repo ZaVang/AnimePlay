@@ -1,0 +1,64 @@
+{
+    "id": 27238,
+    "name": "今井みどり",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b6/32/27238_crt_vP3BS.jpg?r=1566224479",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/32/27238_crt_vP3BS.jpg?r=1566224479",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/32/27238_crt_vP3BS.jpg?r=1566224479",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b6/32/27238_crt_vP3BS.jpg?r=1566224479"
+    },
+    "summary": "脚本家志望。あおいの二学年後輩で、一緒にアニメを制作していた仲間。現在、大学生。卒業後はアニメ業界に進みたいと考えているが、きっかけが見出だせずにいる。好きなことに関してはとことん調査・追求し、のめりこんでいくタイプ。体育会系ノリの言葉遣いが特徴的。あおい達からは「りーちゃん」と呼ばれる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "今井绿"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "今井 みどり"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いまい みどり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Imai Midori"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ディーゼル"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        },
+        {
+            "key": "职业",
+            "value": "设定制作→编剧"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 46,
+        "collects": 291
+    },
+    "anime_ids": [
+        110467
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "id": 86247,
+    "name": "フェルン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/38/6d/86247_crt_C8831.jpg?r=1692974235",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/6d/86247_crt_C8831.jpg?r=1692974235",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/6d/86247_crt_C8831.jpg?r=1692974235",
+        "grid": "https://lain.bgm.tv/pic/crt/g/38/6d/86247_crt_C8831.jpg?r=1692974235"
+    },
+    "summary": "フリーレンの弟子として共に旅をすることになる魔法使い。ハイターに育てられた戦災孤児。冷静な少女で、生活面でずぼらなフリーレンのお母さん役。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "菲伦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Fern"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://frieren-anime.jp/character/chara_group1/1-5/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 165,
+        "collects": 679
+    },
+    "anime_ids": [
+        400602
+    ]
+}

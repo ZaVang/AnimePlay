@@ -1,0 +1,187 @@
+{
+    "id": 29648,
+    "name": "中二病也要谈恋爱！",
+    "image_path": "data/images/anime/29648.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "富㭴勇太于初中毕业的时候，决定同时为自己举办中二病毕业的仪式。打算顺利渡过高中生活的他，在开学日以最后的中二语录完全封锁这段黑历史。可惜天意弄人，勇太遇上了现任中二病患者暨同班同学小鸟游六花，更被对方看出中二病的残余症状。六花于是以此威逼勇太与她“立下契约”。对方的行为举止惹来了不少同学、家人、甚至青梅竹马的注目，使勇太在享受“现充”的生活同时，又充满著难言之隐……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "小说改"
+    ],
+    "date": "2012-10-03",
+    "rating_rank": 1157,
+    "rating_score": 7.4,
+    "rating_total": 22483,
+    "main_character_ids": [
+        17362,
+        17363,
+        17364,
+        17368,
+        17369
+    ],
+    "main_characters": [
+        {
+            "id": 17362,
+            "name": "小鳥遊六花",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a7/6c/17362_crt_yPAVp.jpg?r=1642151054",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/6c/17362_crt_yPAVp.jpg?r=1642151054",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/6c/17362_crt_yPAVp.jpg?r=1642151054",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a7/6c/17362_crt_yPAVp.jpg?r=1642151054"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 6724,
+                    "name": "内田真礼",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4c/23/6724_prsn_DIyje.jpg?r=1738653463"
+                    },
+                    "short_summary": "内田 真礼（うちだ まあや、1989年12月27日 - ）は、日本の声優、歌手、女優、タレント。\r\nアイムエンタープライズ（事務所）、ポニーキャニオン（レコード会社）に所属。愛称は主にまややん、まれいたそ。東京都出身。血液型はA型。本名同じ。声優の内田雄馬は実弟。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 17363,
+            "name": "富樫勇太",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/07/83/17363_crt_efqIF.jpg?r=1361630049",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/83/17363_crt_efqIF.jpg?r=1361630049",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/83/17363_crt_efqIF.jpg?r=1361630049",
+                "grid": "https://lain.bgm.tv/pic/crt/g/07/83/17363_crt_efqIF.jpg?r=1361630049"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3818,
+                    "name": "福山潤",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bf/00/3818_prsn_vlWlO.jpg?r=1669378022",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/00/3818_prsn_vlWlO.jpg?r=1669378022",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/00/3818_prsn_vlWlO.jpg?r=1669378022",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bf/00/3818_prsn_vlWlO.jpg?r=1669378022"
+                    },
+                    "short_summary": "福山润（1978年11月26日－）是一名日本男性声优。大阪府高槻市出身。2000年于21岁时加入PRODUCTION baobab，2011年退出和PRODUCTION baobab，并与森川智之共同设立AXL ONE事务所。2018年3月31日，与立花慎之介一起离开AXL ONE；同年4月1日，与立花合伙成立小型事务所“BLACK SHIP”。\r\n初试啼声的动画作品是1998年的《罗德斯岛战记》。初次担任主角的动画作品是2000年到2001年的《无敌王TRI-ZENON》，饰演神威章。此部作品同时也是无职身分的福山润再次以声优身分回归声优界的复归代表作。而令福山润真正登上事业上第一次颠峰的角色，则是《反叛的鲁路修》中的腹黑王子鲁路修，他就是凭着这个角色而获得了第一回声优悬赏奖的最佳男声优。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 17364,
+            "name": "丹生谷森夏",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/34/20/17364_crt_klp1q.jpg?r=1610523138",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/34/20/17364_crt_klp1q.jpg?r=1610523138",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/34/20/17364_crt_klp1q.jpg?r=1610523138",
+                "grid": "https://lain.bgm.tv/pic/crt/g/34/20/17364_crt_klp1q.jpg?r=1610523138"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7297,
+                    "name": "赤﨑千夏",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/18/51/7297_prsn_9Dfe9.jpg?r=1496038723",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/51/7297_prsn_9Dfe9.jpg?r=1496038723",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/51/7297_prsn_9Dfe9.jpg?r=1496038723",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/18/51/7297_prsn_9Dfe9.jpg?r=1496038723"
+                    },
+                    "short_summary": "81プロデュース所属。鹿児島県出身。\r\n\r\n声優を志したのは小学5、6年生頃のこと。中学生時代はバスケットボール部と放送部に所属し、放送部では鹿児島県大会での受賞経歴がある。錦江湾高校在学中は同高校に演劇部がなかったため、地元の市民劇団「劇団いぶき」に所属した。\r\n\r\n家族に2歳上の姉がいる。目標にしている先輩として皆口裕子の名を挙げている。方言は鹿児島弁。趣味・特技は歌。\r\n\r\n東京学芸大学教育学部演劇専修（ゼロ免課程）卒業。大学では第2外国語としてイタリア語を履修。\r\nボイスニュータイプ・サマーオーディション2008で文化放送賞、81プロデュース賞、アルケミスト賞を受賞。81プロデュース賞の受賞特典として2008年10月から、81ACTOR'S STUDIO（81プロデュース付属俳優養成所）に通っていた。2009年10月に養成所を卒業、2010年4月に81プロデュース所属となった。\r\n\r\n2012年にテレビアニメ『キルミーベイベー』で折部やすな役で初めての主役級キャラクターに抜擢。その後の『モーレツ宇宙海賊』『中二病でも恋がしたい!』『恋愛ラボ』等でも主要キャラクターを演じ、2013年に放送された『俺の彼女と幼なじみが修羅場すぎる』では初の（主役ではない）メインヒロインを務めた。\r\n\r\n2018年8月10日、自身のTwitterで結婚を発表した。2020年8月10日、第1子男児の出産を報告。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 17368,
+            "name": "五月七日くみん",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/11/99/17368_crt_8ZFK5.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/11/99/17368_crt_8ZFK5.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/11/99/17368_crt_8ZFK5.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/11/99/17368_crt_8ZFK5.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5827,
+                    "name": "浅倉杏美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/55/8c/5827_prsn_F17F2.jpg?r=1428402015",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/8c/5827_prsn_F17F2.jpg?r=1428402015",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/8c/5827_prsn_F17F2.jpg?r=1428402015",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/55/8c/5827_prsn_F17F2.jpg?r=1428402015"
+                    },
+                    "short_summary": "就读ARTSVISION、日本旁白演技研究所的声优科目。\r\n爱称是“あずみん”。\r\n2006年9月1日，由“山本杏美”改名做“浅仓杏美”。\r\n在网上广播“G.S.Station”，和曾田光星、江里夏组成“MEA:*”的组合。\r\n把自己比作动物的啮齿目。\r\n因为生日是情人节翌日，生日礼物经常也是巧克力。\r\n“魔法老师！”中年纪最小的声优。经常穿着校服出现在录音室。\r\n“魔法老师！”歌曲“GLOW WILD”是“运动部四人组（浅仓杏美、木村圆、山村琴美、堀江由衣”的初次见面。\r\n“魔法老师！”第一、二集的台词也是只有“什么？”一句。第三集的声优表连她的名字也没有。\r\n在“VOiCE Newtype”的新人Audition2003夏中获得Columbia奖状。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 17369,
+            "name": "凸守早苗",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/62/04/17369_crt_Zt1b8.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/04/17369_crt_Zt1b8.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/04/17369_crt_Zt1b8.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/62/04/17369_crt_Zt1b8.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 7307,
+                    "name": "上坂すみれ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d3/30/7307_prsn_R3GWz.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/30/7307_prsn_R3GWz.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/30/7307_prsn_R3GWz.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d3/30/7307_prsn_R3GWz.jpg"
+                    },
+                    "short_summary": "日本的女性声优、艺人、歌手。\r\n神奈川县出身。上智大学外国语学院俄语系毕业。\r\n\r\n2012年，在《要听爸爸的话！》中首次出演女主角小鸟游空，亦同时出演该系列作品的CD、游戏、广播。\r\n2012年5月26日，受日本海上自卫队的邀请，造访了千叶县船桥基地，担当日本海上自卫队“山雪”号的一日舰长。\r\n2012年12月，在卡塔尔召开的第23届多哈图书展上，代表日本参展队伍的嘉宾出席。这也是上坂首次参与文化外交活动。\r\n2013年2月，宣布演唱电视动画《人鱼又上钩》的片头曲“七つの海よりキミの海”，经由STARCHILD歌手出道。\r\n2014年3月，自上智大学外国语学部俄语学科毕业。同年10月，应开拓动漫祭邀请前往台湾出席“Petit Fancy 21”。\r\n其他代表作品有《中二病也要谈恋爱！》凸守早苗、《舰队收藏》吹雪 、《偶像大师灰姑娘女孩》安娜史塔西亚、《CHAOS;CHILD》尾上世莉架等。\r\n2016年3月，第十届声优大赏中荣获新人女声优奖。\r\n2020年8月31日，宣布退出SPACE CRAFT。\r\n2021年3月1日，宣布加入Voice Kit事务所。\r\n\r\n上坂堇可以说是日本声优圈内的特例，原因在于她有着浓厚的苏俄情结，再加上在大学主修俄语，更让她和其他声优相比显得与众不同，对于俄罗斯的评价是：那是一个在文学、历史、绘画、音乐等方面都让人感觉很有个性且展现出不可思议魅力的国度。\r\n与俄罗斯产生情结的契机是高中一年级的时候听到了苏联国歌，歌词深深地感染了自己。她自己的愿望是能成为”日俄之间动画桥梁般的存在“的角色，她在博客里写文章经常使用西里尔字母的词汇，例如「Здравствуйте（你好）」、「До свидания（再见 ）」、「Спасибо（谢谢）」、「Хорошо（好）」、「Ура（万岁）」等。而在她的推特里，自我介绍一栏更是直言不讳，直接写上Я люблю Россию!!（我爱俄罗斯！！），在广播节目中喜欢称她的听众为“同志诸君”，也因此她的粉丝喜欢称她为“连长”“师团长“”军团长“。更是由于在人气动画《少女与战车》中农娜这一酷似政委的副队长角色，而在广大粉丝中有了“政委”的昵称。\r\n她本人也是个军武宅，爱好军歌和战时歌谣，喜欢的坦克是苏制BT-5轻型坦克，她在大学参加的社团也是关于苏联红军早期发展方面的研究，在钟情于俄罗斯之前，她也曾对第三帝国产生浓厚兴趣。\r\n因为参与了文化外交活动，上坂本人也与前日本文化外交大使樱井孝昌先生关系密切。在自己的推特、博客中也对樱井给予高度评价。在樱井先生不幸离世后，在博客中发表了真诚的悼念文章。\r\n成为声优的契机是受到《魔法护士小麦》中桃井晴子的演技所感动，并表示桃井晴子是她尊敬的声优。\r\n\r\n喜欢的食物是羊排和”きのこの山“ ，非常喜欢lolita服饰（Lolita Fashion），在她的博客中经常出现她洋装打扮的照片。是Lolita品牌Baby The Stars Shine Bright的模特。喜欢的音乐类型除了之前提到的军乐以及战时歌谣外，还包括King-Show（一种上世纪80年代至90年代流行于日本的音乐类型，又称”筋肉少女帯“），游戏音乐和重金属。\r\n爱犬的名字叫做“苹果”。这只蝴蝶犬出生于2001年6月23日，被上坂称作“家中的最高权力者”。2015年12月22日亡故。\r\n中学时代极为崇拜尼采、弗洛伊德与荣格。并且经常沉迷于他们的著作之中。\r\n被中川翔子戏称为“残念系亚文化美少女”。\r\n\r\n2016年3月，由于不堪忍受网络上的性骚扰，宣布Twitter账号停止更新，官方LINE账号继续更新；同年11月，Twitter账号恢复更新。2017年7月，由于网上再次出现性骚扰的情况，删除个人Twitter及Instagram账号。\r\n2017年11月，开设公式推特。2019年，重新开设Instagram账号。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

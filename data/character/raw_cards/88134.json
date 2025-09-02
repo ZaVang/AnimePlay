@@ -1,0 +1,64 @@
+{
+    "id": 88134,
+    "name": "山中暦",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/cb/50/88134_crt_Xp0MK.jpg?r=1624171853",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cb/50/88134_crt_Xp0MK.jpg?r=1624171853",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cb/50/88134_crt_Xp0MK.jpg?r=1624171853",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cb/50/88134_crt_Xp0MK.jpg?r=1624171853"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "山中历"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "やまなか こよみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yamanaka Koyomi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1987年3月2日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "178cm"
+        },
+        {
+            "key": "体重",
+            "value": "69kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1987,
+    "birth_mon": 3,
+    "birth_day": 2,
+    "stat": {
+        "comments": 22,
+        "collects": 20
+    },
+    "anime_ids": [
+        296367
+    ]
+}

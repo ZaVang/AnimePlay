@@ -1,0 +1,216 @@
+{
+    "id": 8484,
+    "name": "机动警察",
+    "image_path": "data/images/anime/8484.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "　　二十一世纪初，人口不断增长，职位和房屋的需求成为了人们首要的问题。 \r\n　　原本的土地已经不足以满足社会的发展，于是日本政府将东京湾对出的海域进行一次大规模的填海造地工程，填平面积总共四十五万平方公尺，把木更津第一人工岛和川崎第二人工岛连接结合，长十五公里的大型防波堤就可以动工。这就不仅代表绕首都圈一周的大环状路完全通车，同时十多个水门亦可利用潮差去排水，最重要就是确保了未来十年东京有四万五千公顷的用地。 \r\n　　由于是以“永恒之都巴比伦”作为蓝本建设的国际大都会东京，于是这“巴比伦计划（Babylon Project）”称得上是本世纪最大海面工程计划。为了加快工作效率，建造更加庞大的建筑物及应付这庞大的工程，于是发展出专为工业使用的大型机械人，称之为Labor。 \r\n　　他们被广泛使用后，除增加了建筑的效率、解决了房屋问题外，亦增加了不少的就业机会；不过与此同时亦衍生出了一个新的问题，就是Labor犯罪案件的频发。这些可能只是醉酒驾驶，又可能只是驾驶者的意气用事，或者是不法份子把Labor改装为犯罪工具。不过这一切一切不仅使周遭的环境破坏,更使社会秩序混乱。 \r\n　　社会迈入了新时代，人类已经制造出可以操作的机械人来代替他们从事某些危险及繁重的工作，这些机械人常应用在工程建筑领域。但是正因为机械人的强大力量，使得犯罪分子也蠢蠢欲动。因此作为国家工具之一的警察部队自然也会有相对应的机构来应付机械人事件的发生。 \r\n　　在这个极其特殊时代的不安定状况下，日本警示厅警备部于是决定成立了一个全新部门――特车二课（Special Vehicles Section 2），以专门打击Labor相关的犯罪案件。而这种警队专用的Patrol-Labor（巡逻警用机械人）被称为Patlabor！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 47,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1989-10-11",
+    "rating_rank": 368,
+    "rating_score": 7.9,
+    "rating_total": 1301,
+    "main_character_ids": [
+        7611,
+        7616,
+        9289,
+        9291,
+        9292,
+        9293
+    ],
+    "main_characters": [
+        {
+            "id": 7611,
+            "name": "泉野明",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a6/34/7611_crt_ODvnX.jpg?r=1582266776",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/34/7611_crt_ODvnX.jpg?r=1582266776",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/34/7611_crt_ODvnX.jpg?r=1582266776",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a6/34/7611_crt_ODvnX.jpg?r=1582266776"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4022,
+                    "name": "冨永みーな",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/36/6b/4022_prsn_NU8hh.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/6b/4022_prsn_NU8hh.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/6b/4022_prsn_NU8hh.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/36/6b/4022_prsn_NU8hh.jpg"
+                    },
+                    "short_summary": "富永美衣奈（1966年4月3日－）是日本女性声优。广岛县广岛市出身。5岁时首次参加电影演出，6岁时加入“剧団こまどり”；曾以“富永美子”之本名在《雷欧·奥特曼》等多部特摄片中扮演重要角色，就读于日本大学樱丘高等学校时期开始参与声优演出活动，日本大学艺术学部演剧学科在读期间作为声优的人气急剧上升，从而奠定了她日后于声优界立足发展的开始。曾先后效力于グループこまどり、プロジェクト‧レヴュー、大桥巨泉事务所等剧团及声优事务所。曾与同为著名声优的矢尾一树结婚，后离婚。2001年8月与演员增本庄一郎结婚，2002年1月产下长女，2005年又产下一子。代表作为“机动警察”的泉野明、“相聚一刻”的七尾梢、“浪客剑心”的明神弥彦、“地狱老师”的细川美树、“棒球英豪”的新田由加。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7616,
+            "name": "後藤喜一",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c9/52/7616_crt_tbW67.jpg?r=1423317102",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/52/7616_crt_tbW67.jpg?r=1423317102",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/52/7616_crt_tbW67.jpg?r=1423317102",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c9/52/7616_crt_tbW67.jpg?r=1423317102"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4052,
+                    "name": "大林隆介",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2e/8a/4052_prsn_vM99g.jpg?r=1723550750",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/8a/4052_prsn_vM99g.jpg?r=1723550750",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/8a/4052_prsn_vM99g.jpg?r=1723550750",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2e/8a/4052_prsn_vM99g.jpg?r=1723550750"
+                    },
+                    "short_summary": "日本の男性俳優、声優、ナレーター。81プロデュース所属。福岡県出身。身長171cm。血液型はA型。一時期、大林 直樹（おおばやし なおき）や大林 隆之介（おおばやし りゅうのすけ）の名前で活動していたこともあった。\r\n\r\n文学座付属研究所卒業。かつては劇団雲、劇団四季に所属していた。\r\n\r\n1960年代から活動を開始し、当初は俳優としての出演が中心であったが、1980年代からは声優としてアニメなどにも出演するようになった。\r\n\r\n俳優としては『北信濃絶唱』、『朝ごはんぬき?』などの昼ドラに出演。声優としては『機動警察パトレイバー』シリーズの後藤喜一役、『らんま1/2』シリーズの天道早雲役で知られる。\r\n\r\n趣味は剣道、フライフィッシング。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9289,
+            "name": "篠原遊馬",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/53/97/9289_crt_jYkqI.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/97/9289_crt_jYkqI.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/97/9289_crt_jYkqI.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/53/97/9289_crt_jYkqI.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4178,
+                    "name": "古川登志夫",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/97/ad/4178_prsn_t2qhX.jpg?r=1669452184",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/97/ad/4178_prsn_t2qhX.jpg?r=1669452184",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/97/ad/4178_prsn_t2qhX.jpg?r=1669452184",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/97/ad/4178_prsn_t2qhX.jpg?r=1669452184"
+                    },
+                    "short_summary": "古川 登志夫（ふるかわ としお、1946年7月16日 - ）は、日本の声優、俳優、ナレーター。元大阪芸術大学短期大学部教授。青二プロダクション所属。妻は同じく声優の柿沼紫乃。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9291,
+            "name": "太田功",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/8f/3d/9291_crt_I44jh.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/3d/9291_crt_I44jh.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/3d/9291_crt_I44jh.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8f/3d/9291_crt_I44jh.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4306,
+                    "name": "池水通洋",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b0/35/4306_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/35/4306_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/35/4306_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b0/35/4306_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーター。満洲国新京（現：中華人民共和国吉林省長春市）生まれ、神奈川県出身。青二プロダクション所属。しばしば池永と誤表記される。日本俳優連合専務理事。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9292,
+            "name": "香貫花クランシー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/72/aa/9292_crt_6vmt6.jpg?r=1582267307",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/aa/9292_crt_6vmt6.jpg?r=1582267307",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/aa/9292_crt_6vmt6.jpg?r=1582267307",
+                "grid": "https://lain.bgm.tv/pic/crt/g/72/aa/9292_crt_6vmt6.jpg?r=1582267307"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4200,
+                    "name": "井上瑤",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/86/db/4200_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/db/4200_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/db/4200_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/86/db/4200_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "1970年代から2000年代初めまで活躍。東京都立八潮高等学校、早稲田大学卒業。\r\n\r\n大学時代は劇研に所属し、卒業後は早稲田小劇場に進んだが、1年で退団。アルバイトで始めたTBSの朝のテレビ番組『ヤング720』を皮切りに放送タレントの道へ。クイズ番組『ベルトクイズQ&Q』の声、『モーニングジャンボ』などTBSのテレビ番組に出演。\r\n\r\n声優活動以外にも自分の出演番組の台本を書いていたことから、放送作家の仕事が舞い込むようになり、1980年代初めまで、『お笑い頭の体操』『相性診断ピッタンコ』などの構成台本や『クイズダービー』の問題作成の仕事を行なった。同時期には西田堯の下でモダンダンスを学び、国立劇場、日生劇場の舞台に立つ。また「レイ・ホシコ」という名の占い師という顔も持つなど、多才ぶりを発揮していた。\r\n\r\n2000年放映開始の『遊☆戯☆王デュエルモンスターズ』に獏良了役でキャスティングされていたが、体調不良のため41話までで降板。同役は松本梨香が最終回まで継いだ。\r\n\r\n2003年2月28日9時29分、都内の病院で肺水腫のため死去、56歳没。葬儀にはガンダムのキッカ・キタモトとハロ（どちらも井上の担当キャラクター）の人形が飾られた。最後の声優参加は、ニンテンドーゲームキューブ用ゲーム『機動戦士ガンダム 戦士達の軌跡』のセイラ・マスである。このゲームには、エンディングにスタッフからのメッセージが表示され、ゲーム発売前に亡くなった井上への追悼の言葉が含まれている。喪主は実弟が務めた。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 9293,
+            "name": "進士幹泰",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f1/1e/9293_crt_p9vN1.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/1e/9293_crt_p9vN1.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/1e/9293_crt_p9vN1.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f1/1e/9293_crt_p9vN1.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4109,
+                    "name": "二又一成",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c2/4c/4109_prsn_3Hee3.jpg?r=1669452241",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/4c/4109_prsn_3Hee3.jpg?r=1669452241",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/4c/4109_prsn_3Hee3.jpg?r=1669452241",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c2/4c/4109_prsn_3Hee3.jpg?r=1669452241"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "id": 64719,
+    "name": "石動双葉",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a1/8a/64719_crt_wIuPB.jpg?r=1535713801",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/8a/64719_crt_wIuPB.jpg?r=1535713801",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/8a/64719_crt_wIuPB.jpg?r=1535713801",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a1/8a/64719_crt_wIuPB.jpg?r=1535713801"
+    },
+    "summary": "聖翔音楽学園　99期　俳優育成科　出席番号2番\r\n香子の幼馴染みで、彼女に付き添って聖翔音楽学園に入学してきた異端の舞台少女。口は悪いが根は優しく、文句を言いつつ香子の事が最優先。小柄ながらも身体能力は高く、実戦仕込み（？）の殺陣を得意とする。\r\n夢は「香子がご機嫌なら、あたしはそれでいいんだよ」",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "石动双叶"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "石動 双葉"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いするぎ ふたば"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Isurugi Futaba"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4-17"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://revuestarlight.bushimo.jp/character/futaba/"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 17,
+    "stat": {
+        "comments": 12,
+        "collects": 70
+    },
+    "anime_ids": [
+        214265
+    ]
+}

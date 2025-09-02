@@ -1,0 +1,53 @@
+{
+    "id": 10960,
+    "name": "萩村スズ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5c/8b/10960_crt_xgX7R.jpg?r=1612629928",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/8b/10960_crt_xgX7R.jpg?r=1612629928",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/8b/10960_crt_xgX7R.jpg?r=1612629928",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5c/8b/10960_crt_xgX7R.jpg?r=1612629928"
+    },
+    "summary": "学生会会计。归国子女，家世不错。IQ高达180的天才少女，英语十分流利，会讲五国语言，梦想高中毕业以后出国留学，能够很快心算出10位数的计算。与天草和七条相比，算是比较正常的存在，因此有时跟津田一样得负责吐槽。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "萩村铃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "はぎむら すず"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hagimura Suzu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "140cm未満"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 39,
+        "collects": 169
+    },
+    "anime_ids": [
+        85204,
+        5649
+    ]
+}

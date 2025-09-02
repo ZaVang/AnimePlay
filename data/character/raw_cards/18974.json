@@ -1,0 +1,93 @@
+{
+    "id": 18974,
+    "name": "小野田坂道",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2f/e7/18974_crt_hWv0f.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2f/e7/18974_crt_hWv0f.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2f/e7/18974_crt_hWv0f.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2f/e7/18974_crt_hWv0f.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小野田坂道"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小野田 坂道"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おのだ さかみち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Onoda Sakamichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月7日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "54kg"
+        },
+        {
+            "key": "学校",
+            "value": "総北高校"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "妈妈做的、加了裙带菜和肉的乌冬面"
+        },
+        {
+            "key": "害怕的东西",
+            "value": "吠叫的大型犬"
+        },
+        {
+            "key": "收集的东西",
+            "value": "动画的手办/DVD/贴纸"
+        },
+        {
+            "key": "得意科目",
+            "value": "没有"
+        },
+        {
+            "key": "爱车",
+            "value": "淑女车、公路车（制造商：黑森）"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 7,
+    "stat": {
+        "comments": 8,
+        "collects": 17
+    },
+    "anime_ids": [
+        59583,
+        104468
+    ]
+}

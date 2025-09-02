@@ -1,0 +1,76 @@
+{
+    "id": 3193,
+    "name": "鷹野三四",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7b/f5/3193_crt_y4kcE.jpg?r=1556788502",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/f5/3193_crt_y4kcE.jpg?r=1556788502",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/f5/3193_crt_y4kcE.jpg?r=1556788502",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7b/f5/3193_crt_y4kcE.jpg?r=1556788502"
+    },
+    "summary": "入江诊疗所的护士。\r\n表面上十分温柔，却对雏见沢的黑历史和残酷的宗教仪式相当着迷，\r\n正在暗地裡独力研究中。\r\n无时无刻散发着成熟的魅力，\r\n但一旦提及到神秘学的话题就会显露出孩子般天真的一面，\r\n是个难以捉摸的人物。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鹰野三四"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "田无美代子"
+                },
+                {
+                    "k": "日文名",
+                    "v": "鷹野三四/田無美代子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たかの みよ/たなし みよこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takano Miyo/Tanashi Miyoko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月20日（双子座）"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.oyashirosama.com/web/character/index.htm"
+        },
+        {
+            "key": "喜欢",
+            "value": "文献(ホラー要素を含むもの)、ぬいぐるみ収集、祖父"
+        },
+        {
+            "key": "讨厌",
+            "value": "自分より偉そうな存在、神様"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 20,
+    "stat": {
+        "comments": 54,
+        "collects": 67
+    },
+    "anime_ids": [
+        288
+    ]
+}

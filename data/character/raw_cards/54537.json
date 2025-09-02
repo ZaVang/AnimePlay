@@ -1,0 +1,68 @@
+{
+    "id": 54537,
+    "name": "白石紬",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c4/e5/54537_crt_71V3A.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/e5/54537_crt_71V3A.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/e5/54537_crt_71V3A.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c4/e5/54537_crt_71V3A.jpg"
+    },
+    "summary": "自THEATER DAYS登场的765Pro所属新人偶像。17岁。\r\n右撇子\r\n特技：和服的着装过程·三味线\r\n兴趣：游览庭院&甜品处\r\n喜欢：和风甜品\r\n出身：石川县",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "白石紬"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しらいし つむぎ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shiraishi Tsumugi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月29日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "45kg"
+        },
+        {
+            "key": "BWH",
+            "value": "82-56-83"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 29,
+    "stat": {
+        "comments": 34,
+        "collects": 62
+    },
+    "anime_ids": [
+        309807
+    ]
+}

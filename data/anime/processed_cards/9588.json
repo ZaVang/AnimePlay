@@ -1,0 +1,89 @@
+{
+    "id": 9588,
+    "name": "金田一少年事件簿",
+    "image_path": "data/images/anime/9588.jpg",
+    "points": 7.8,
+    "cost": 1,
+    "rarity": "N",
+    "description": "主人公金田一一是名侦探“金田一耕助”的孙子，功课不好，体育不行，有点好色，走到哪，哪就会发生命案，在推理时却像变了一个人似的，解开了一个又一个谜题，经典台词是：“我以我爷爷--金田一耕助的名义发誓……谜底已经解开了，凶手就在我们中间。” 。\r\n金田一的青梅竹马七濑美雪，是不动高中的资优生兼学生会会长，长得好看、身材好、功课也好，人缘更是好得没话说，可她就喜欢那个吊儿郎当的金田一。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 148,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "推理",
+        "漫画改"
+    ],
+    "date": "1997-04-07",
+    "rating_rank": 513,
+    "rating_score": 7.8,
+    "rating_total": 988,
+    "main_character_ids": [
+        13003,
+        13009
+    ],
+    "main_characters": [
+        {
+            "id": 13003,
+            "name": "金田一一",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ce/85/13003_crt_rJGZo.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/85/13003_crt_rJGZo.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/85/13003_crt_rJGZo.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ce/85/13003_crt_rJGZo.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4643,
+                    "name": "松野太紀",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/77/c6/4643_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/c6/4643_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/c6/4643_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/77/c6/4643_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優、タレント。東京都品川区出身。本籍は山梨県。青二プロダクション最終所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13009,
+            "name": "七瀬美雪",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/02/82/13009_crt_oCFCF.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/82/13009_crt_oCFCF.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/82/13009_crt_oCFCF.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/02/82/13009_crt_oCFCF.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4325,
+                    "name": "中川亜紀子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2b/38/4325_prsn_fpZV3.jpg?r=1462634472",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/38/4325_prsn_fpZV3.jpg?r=1462634472",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/38/4325_prsn_fpZV3.jpg?r=1462634472",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2b/38/4325_prsn_fpZV3.jpg?r=1462634472"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

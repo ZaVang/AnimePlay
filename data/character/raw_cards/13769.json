@@ -1,0 +1,70 @@
+{
+    "id": 13769,
+    "name": "伊波まひる",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/66/a7/13769_crt_AHdAh.jpg?r=1611758663",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/a7/13769_crt_AHdAh.jpg?r=1611758663",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/a7/13769_crt_AHdAh.jpg?r=1611758663",
+        "grid": "https://lain.bgm.tv/pic/crt/g/66/a7/13769_crt_AHdAh.jpg?r=1611758663"
+    },
+    "summary": "有男性恐惧症的体质，长相虽然非常可爱但随时会往男性腹部殴上毁灭拳，但内心是可爱的少女。 对于自身力量过强，胸部太小以及胸部非常小这件事稿感到自卑。 在女子高中也有牵连，由于老师是男性，所以从对数学以及古文感到棘手。 跟种岛是牛奶爱好者之一。 最近对高丽菜也有些兴趣。\r\n\r\n平胸。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊波真昼"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いなみ まひる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Inami Mahiru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月17日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "擅长科目",
+            "value": "数学、古文以外"
+        },
+        {
+            "key": "兴趣",
+            "value": "阅读"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 17,
+    "stat": {
+        "comments": 22,
+        "collects": 107
+    },
+    "anime_ids": [
+        20547,
+        4255,
+        110648
+    ]
+}

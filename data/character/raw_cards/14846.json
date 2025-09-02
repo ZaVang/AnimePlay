@@ -1,0 +1,64 @@
+{
+    "id": 14846,
+    "name": "古田織部",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e7/d0/14846_crt_1RWek.jpg?r=1365067658",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/d0/14846_crt_1RWek.jpg?r=1365067658",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/d0/14846_crt_1RWek.jpg?r=1365067658",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e7/d0/14846_crt_1RWek.jpg?r=1365067658"
+    },
+    "summary": "天正10年（1582年）开始与茶道名人千利休来往，在这期间亦拜入其门下，并成为后来“利休七哲”之一。在未看清自身之前，便已创造出根基于颜艺的令众生颠倒的茶道。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "颜艺王"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "古田织部"
+                },
+                {
+                    "k": "英文名",
+                    "v": "古田重然"
+                },
+                {
+                    "k": "日文名",
+                    "v": "古田左介"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "古左"
+                },
+                {
+                    "k": "昵称",
+                    "v": "古織"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "天文十三年"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 12
+    },
+    "anime_ids": [
+        10436
+    ]
+}

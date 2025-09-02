@@ -1,0 +1,183 @@
+{
+    "id": 428735,
+    "name": "BanG Dream! It's MyGO!!!!!",
+    "image_path": "data/images/anime/428735.jpg",
+    "points": 8.0,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "「能一辈子和我搞乐队吗？」\r\n\r\n在高一的春季即将结束之时，羽丘女子学园里人人都在参加乐队活动。\r\n入学较晚的爱音，也为了尽快融入班级，急忙寻找乐队成员。\r\n在寻找时，她发现被称为「羽丘的不可思议少女」的灯还没有参加乐队，\r\n于是爱音不由得向她发出邀请…\r\n\r\n我们的<音乐(呐喊)>，伤痕累累而充满狼狈。\r\n迷茫也无所谓，迷茫也要前进。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "原创",
+        "音乐"
+    ],
+    "date": "2023-06-29",
+    "rating_rank": 209,
+    "rating_score": 8.0,
+    "rating_total": 26389,
+    "main_character_ids": [
+        127790,
+        127791,
+        127792,
+        127793,
+        127794
+    ],
+    "main_characters": [
+        {
+            "id": 127790,
+            "name": "高松燈",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d8/94/127790_crt_PXTGX.jpg?r=1743677574",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/94/127790_crt_PXTGX.jpg?r=1743677574",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/94/127790_crt_PXTGX.jpg?r=1743677574",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d8/94/127790_crt_PXTGX.jpg?r=1743677574"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 40794,
+                    "name": "羊宮妃那",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f3/83/40794_prsn_4cu5z.jpg?r=1731846554",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/83/40794_prsn_4cu5z.jpg?r=1731846554",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/83/40794_prsn_4cu5z.jpg?r=1731846554",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f3/83/40794_prsn_4cu5z.jpg?r=1731846554"
+                    },
+                    "short_summary": "資格・免許：剣道初段\r\n趣味：描画、読書、映画鑑賞、音楽鑑賞、アコースティックギター弾き語り\r\n特技：ダンス\r\n方言：関西弁",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 127791,
+            "name": "千早愛音",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/87/3b/127791_crt_pOtpZ.jpg?r=1738746794",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/3b/127791_crt_pOtpZ.jpg?r=1738746794",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/3b/127791_crt_pOtpZ.jpg?r=1738746794",
+                "grid": "https://lain.bgm.tv/pic/crt/g/87/3b/127791_crt_pOtpZ.jpg?r=1738746794"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 53240,
+                    "name": "立石凛",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/20/35/53240_prsn_9qQud.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/20/35/53240_prsn_9qQud.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/20/35/53240_prsn_9qQud.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/20/35/53240_prsn_9qQud.jpg"
+                    },
+                    "short_summary": "立石凛是日本的声优，所属公司为响HiBiKi。出身地区为大阪府。\r\n2021年2月通过“株式会社S、响HiBiKi、Ace Crew Entertainment联合试镜2020”，与青木阳菜共同加入响HiBiKi。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 127792,
+            "name": "要楽奈",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c2/a9/127792_crt_u2A5g.jpg?r=1743677729",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/a9/127792_crt_u2A5g.jpg?r=1743677729",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/a9/127792_crt_u2A5g.jpg?r=1743677729",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c2/a9/127792_crt_u2A5g.jpg?r=1743677729"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 42304,
+                    "name": "青木陽菜",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/69/bf/42304_prsn_1C0M4.jpg?r=1723643101",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/bf/42304_prsn_1C0M4.jpg?r=1723643101",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/bf/42304_prsn_1C0M4.jpg?r=1723643101",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/69/bf/42304_prsn_1C0M4.jpg?r=1723643101"
+                    },
+                    "short_summary": "青木陽菜（あおき ひな）は、日本の女性声優。宮城県出身。響所属。\r\n\r\n大学では声楽を専攻しており、ピアノやギターなどの楽器演奏も得意としており、BanG Dream! It's MyGO!!!!!に登場し、尚且つリアルバンドでも活動しているMyGO!!!!!のリードギターである要楽奈役で活動している。因みにエレキギターを弾く上で影響を受けたバンドはUNISON SQUARE GARDEN、the band apart、KANA-BOONなどで、『バンドリ！』に登場するバンドだと、Roselia、RAISE A SUILENといったけっこうゴリゴリ音が好みとのこと。また趣味として弾き語り、一人カラオケ、ライブ鑑賞を挙げている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 127793,
+            "name": "長崎そよ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/32/2d/127793_crt_ueDx9.jpg?r=1738746626",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/2d/127793_crt_ueDx9.jpg?r=1738746626",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/2d/127793_crt_ueDx9.jpg?r=1738746626",
+                "grid": "https://lain.bgm.tv/pic/crt/g/32/2d/127793_crt_ueDx9.jpg?r=1738746626"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 53241,
+                    "name": "小日向美香",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/be/3f/53241_prsn_nZ9Vu.jpg?r=1737145283",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/3f/53241_prsn_nZ9Vu.jpg?r=1737145283",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/3f/53241_prsn_nZ9Vu.jpg?r=1737145283",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/be/3f/53241_prsn_nZ9Vu.jpg?r=1737145283"
+                    },
+                    "short_summary": "小日向美香是日本的女性声优。2020年，声优学校PineS毕业，并成为S所属。\r\n兴趣：跳舞、乐器。\r\n特长：低音单簧管、料理。\r\n资格：调理师免许。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 127794,
+            "name": "椎名立希",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9e/e9/127794_crt_XCSfZ.jpg?r=1743677672",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/e9/127794_crt_XCSfZ.jpg?r=1743677672",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/e9/127794_crt_XCSfZ.jpg?r=1743677672",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9e/e9/127794_crt_XCSfZ.jpg?r=1743677672"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 32434,
+                    "name": "林鼓子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d7/cf/32434_prsn_GcsNC.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/cf/32434_prsn_GcsNC.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/cf/32434_prsn_GcsNC.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d7/cf/32434_prsn_GcsNC.jpg"
+                    },
+                    "short_summary": "静岡県出身、81プロデュース、エイベックス・ピクチャーズ所属。avex×81produce Wake Up, Girls! AUDITION 第3回アニソン・ヴォーカルオーディション 合格。森嶋優花、厚木那奈美と共に3人組のユニットRun Girls, Run!を結成。『Wake Up, Girls! 新章』でアニメ初出演。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

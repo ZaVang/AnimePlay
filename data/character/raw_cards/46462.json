@@ -1,0 +1,64 @@
+{
+    "id": 46462,
+    "name": "ルーデウス・グレイラット",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/2b/a4/46462_crt_bwGOt.jpg?r=1711026790",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/a4/46462_crt_bwGOt.jpg?r=1711026790",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/a4/46462_crt_bwGOt.jpg?r=1711026790",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2b/a4/46462_crt_bwGOt.jpg?r=1711026790"
+    },
+    "summary": "交通事故死した34歳無職童貞引きこもりニートの男が異世界で転生した姿。\r\n前世の後悔や経験を糧に「今度こそ本気で生きる」ことを決意し、幼少期から魔術を学ぶなど人として成長していく。\r\n母ゼニスを探す中で冒険者“泥沼”として名を馳せ、ラノア魔法大学へ入学。姿を偽っていた幼馴染のシルフィエットと再会、そして惹かれあい彼女と結婚、子供を授かる。\r\nそんな中、ゼニスの危機を知り、救出のためベガリット大陸の迷宮都市ラパンへ向かう。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鲁迪乌斯·格雷拉特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "卢迪乌斯·格雷拉特"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Rudeus Greyrat"
+                },
+                {
+                    "k": "昵称",
+                    "v": "鲁迪"
+                },
+                {
+                    "k": "称号",
+                    "v": "泥沼的鲁迪乌斯"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "甲龙历407年/公历11月22日（前世忌日）"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 7,
+    "stat": {
+        "comments": 123,
+        "collects": 303
+    },
+    "anime_ids": [
+        325585,
+        277554,
+        501963,
+        444557,
+        373247
+    ]
+}

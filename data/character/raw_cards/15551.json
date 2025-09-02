@@ -1,0 +1,64 @@
+{
+    "id": 15551,
+    "name": "片岡優希",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/98/32/15551_crt_apcLU.jpg?r=1603942404",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/32/15551_crt_apcLU.jpg?r=1603942404",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/32/15551_crt_apcLU.jpg?r=1603942404",
+        "grid": "https://lain.bgm.tv/pic/crt/g/98/32/15551_crt_apcLU.jpg?r=1603942404"
+    },
+    "summary": "清澄学院高中一年级，团体战先锋。\r\n性格无忧无虑且天然，活跃于东场的实力派。最喜欢的东西是墨西哥饼。\r\n擅长东风战快攻。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "片冈优希"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Taco"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かたおか ゆうき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kataoka Yuuki"
+                },
+                {
+                    "k": "昵称",
+                    "v": "卷饼"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月16日"
+        },
+        {
+            "key": "身高",
+            "value": "143cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 16,
+    "stat": {
+        "comments": 25,
+        "collects": 76
+    },
+    "anime_ids": [
+        1444,
+        52606
+    ]
+}

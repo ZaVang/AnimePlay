@@ -1,0 +1,66 @@
+{
+    "id": 27400,
+    "name": "東堂シオン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fe/b0/27400_crt_HyT2t.jpg?r=1620835174",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/b0/27400_crt_HyT2t.jpg?r=1620835174",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/b0/27400_crt_HyT2t.jpg?r=1620835174",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fe/b0/27400_crt_HyT2t.jpg?r=1620835174"
+    },
+    "summary": "初登场与第十三话。在美妙天堂时有着紫色歪马尾造型。世界围棋锦标赛五连霸的学生组冠军。会以冷静沉实的性格、读取气场与潮流来取得胜负的进攻冒险系少女。围棋用语和四字成语的口头禅总是挂在嘴边。认为“此后十年，在围棋界能打败我的人已经不会再出现”的想法而暂告别围棋界，转向美妙天堂发展。因为被米蕾贴了一张违纪单以及与米蕾同是团队中的智囊的缘故，所以经常和米蕾作对，后来突然宣布Dressing Pafe组合解散，后来在44集重新组成Dressing Pafe。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "东堂紫音"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "东堂诗音"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "とうどしおん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月5日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁"
+        },
+        {
+            "key": "星座",
+            "value": "摩羯座"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 2,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 5,
+    "stat": {
+        "comments": 7,
+        "collects": 11
+    },
+    "anime_ids": [
+        99748,
+        120186,
+        162802
+    ]
+}

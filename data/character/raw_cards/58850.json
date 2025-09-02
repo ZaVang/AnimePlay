@@ -1,0 +1,44 @@
+{
+    "id": 58850,
+    "name": "ミコチ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/63/5d/58850_crt_3hwB0.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/5d/58850_crt_3hwB0.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/5d/58850_crt_3hwB0.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/63/5d/58850_crt_3hwB0.jpg"
+    },
+    "summary": "黒髪ストレートの女の子。\r\n理論的でインドア派。\r\n仕事として保存食や日用品を作って、商店に卸している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蜜珂析"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "御子地"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 13,
+        "collects": 78
+    },
+    "anime_ids": [
+        221726
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": 9847,
+    "name": "リューズ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a7/a5/9847_crt_p1a03.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/a5/9847_crt_p1a03.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/a5/9847_crt_p1a03.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a7/a5/9847_crt_p1a03.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "リューズ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ryuuzu"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 10
+    },
+    "anime_ids": [
+        3893
+    ]
+}

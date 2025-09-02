@@ -1,0 +1,314 @@
+{
+    "id": 56159,
+    "type": 2,
+    "name": "あいうら",
+    "name_cn": "AIURA",
+    "summary": "一所平凡的女子高中，新学期伊始，三个女孩相聚在同一班级。拥有茶色头发的天谷奏香，性格无比活泼，想象力超级丰富，喜欢给自己和他人其各种各样的名字，略微带着点儿招人烦的中二病气质；身材高挑染着金黄色头发的岩泽彩生，与奏香是相识多年的青梅竹马，但是性格却截然相反，有着与年龄不相匹配的成熟和沉稳；一头黑色秀发的上原步子，永远一副乖乖女的模样，看起来是三人组中最正常的一个。稀松平常的女高生活，小小情趣点缀着女孩们的青春岁月……",
+    "nsfw": false,
+    "locked": false,
+    "date": "2013-04-09",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/ab/a2/56159_5zydj.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/ab/a2/56159_5zydj.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/ab/a2/56159_5zydj.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/ab/a2/56159_5zydj.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/ab/a2/56159_5zydj.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "AIURA"
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2013年4月9日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期二"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.tv-tokyo.co.jp/anime/aiura"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京"
+        },
+        {
+            "key": "播放结束",
+            "value": "2013年6月25日"
+        },
+        {
+            "key": "导演",
+            "value": "中村亮介"
+        },
+        {
+            "key": "原作",
+            "value": "茶麻"
+        },
+        {
+            "key": "人物设定",
+            "value": "細居美恵子"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 12,
+    "rating": {
+        "rank": 1659,
+        "total": 1684,
+        "count": {
+            "one": 1,
+            "two": 4,
+            "three": 3,
+            "four": 9,
+            "five": 71,
+            "six": 273,
+            "seven": 645,
+            "eight": 526,
+            "nine": 107,
+            "ten": 45
+        },
+        "score": 7.2
+    },
+    "collection": {
+        "wish": 1144,
+        "collect": 2439,
+        "doing": 163,
+        "on_hold": 124,
+        "dropped": 71
+    },
+    "tags": [
+        {
+            "name": "泡面番",
+            "count": 717
+        },
+        {
+            "name": "日常",
+            "count": 409
+        },
+        {
+            "name": "2013年4月",
+            "count": 313
+        },
+        {
+            "name": "百合",
+            "count": 275
+        },
+        {
+            "name": "萌",
+            "count": 228
+        },
+        {
+            "name": "治愈",
+            "count": 221
+        },
+        {
+            "name": "TV",
+            "count": 211
+        },
+        {
+            "name": "2013",
+            "count": 198
+        },
+        {
+            "name": "J.C.STAFF",
+            "count": 154
+        },
+        {
+            "name": "漫画改",
+            "count": 142
+        },
+        {
+            "name": "LIDENFILMS",
+            "count": 131
+        },
+        {
+            "name": "四格漫改",
+            "count": 115
+        },
+        {
+            "name": "中村亮介",
+            "count": 98
+        },
+        {
+            "name": "AIURA",
+            "count": 77
+        },
+        {
+            "name": "漫改",
+            "count": 39
+        },
+        {
+            "name": "泡面",
+            "count": 31
+        },
+        {
+            "name": "NICONICO漫画",
+            "count": 30
+        },
+        {
+            "name": "搞笑",
+            "count": 28
+        },
+        {
+            "name": "校园",
+            "count": 20
+        },
+        {
+            "name": "日本",
+            "count": 18
+        },
+        {
+            "name": "2013年",
+            "count": 12
+        },
+        {
+            "name": "2013年四月番",
+            "count": 9
+        },
+        {
+            "name": "轻百合",
+            "count": 8
+        },
+        {
+            "name": "ライデンフィルム",
+            "count": 7
+        },
+        {
+            "name": "村井秀清",
+            "count": 6
+        },
+        {
+            "name": "TVA",
+            "count": 5
+        },
+        {
+            "name": "美腿",
+            "count": 5
+        },
+        {
+            "name": "欢乐",
+            "count": 5
+        },
+        {
+            "name": "细居美惠子",
+            "count": 5
+        },
+        {
+            "name": "空气系",
+            "count": 4
+        }
+    ],
+    "meta_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "series": false,
+    "main_character_ids": [
+        19683,
+        19685,
+        19686
+    ],
+    "main_characters": [
+        {
+            "id": 19683,
+            "name": "天谷奏香",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/3e/27/19683_crt_7LeOu.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/27/19683_crt_7LeOu.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/27/19683_crt_7LeOu.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3e/27/19683_crt_7LeOu.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9976,
+                    "name": "中島唯",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/03/a8/9976_prsn_zlYLl.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/a8/9976_prsn_zlYLl.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/a8/9976_prsn_zlYLl.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/03/a8/9976_prsn_zlYLl.jpg"
+                    },
+                    "short_summary": "日本の女性声優。大阪総合デザイン専門学校出身。2013年、テレビアニメ『あいうら』の天谷奏香役で声優デビュー。 2017年5月31日付でEARLY WINGを退所、同年6月1日付でマウスプロモーションの所属となる[4]。\r\n\r\n趣味・特技：アイドル鑑賞・ゲーム・スポーツ",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19685,
+            "name": "上原歩子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bd/4e/19685_crt_Qou44.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/4e/19685_crt_Qou44.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/4e/19685_crt_Qou44.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bd/4e/19685_crt_Qou44.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9978,
+                    "name": "田村奈央",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/56/33/9978_prsn_f1E35.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/33/9978_prsn_f1E35.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/33/9978_prsn_f1E35.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/56/33/9978_prsn_f1E35.jpg"
+                    },
+                    "short_summary": "日本の女性声優。埼玉県出身。東京俳優生活協同組合所属。身長153cm、血液型はB型。\r\n\r\n大学時代に本格的に声優を目指し、演劇の勉強を始める。 ヒューマンアカデミー渋谷校受講修了後、2013年2月よりEARLY WING所属となる。2016年3月31日付けで同事務所を退所、2016年4月1日より東京俳優生活協同組合の所属となる。\r\n\r\n免許・資格：普通自動車、剣道初段、英検準2級\r\n趣味・スポーツ：のんびり散歩、音楽鑑賞、剣道",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19686,
+            "name": "岩沢彩生",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0a/45/19686_crt_3mMJY.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/45/19686_crt_3mMJY.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/45/19686_crt_3mMJY.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0a/45/19686_crt_3mMJY.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9977,
+                    "name": "飯田友子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e3/48/9977_prsn_00jzp.jpg?r=1608448417",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/48/9977_prsn_00jzp.jpg?r=1608448417",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/48/9977_prsn_00jzp.jpg?r=1608448417",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e3/48/9977_prsn_00jzp.jpg?r=1608448417"
+                    },
+                    "short_summary": "アイムエンタープライズ所属\r\n\r\n趣味・スポーツ：\r\n舞台・映画鑑賞　\r\n野球観戦　ツーリング　\r\nバレーボール　バスケットボール　野球\r\n特技：長距離走　部屋の片付け\r\n資格：漢字検定3級　普通自動二輪　普通自動車\r\n芸歴：日本ナレーション演技研究所",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

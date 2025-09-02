@@ -1,0 +1,64 @@
+{
+    "id": 95041,
+    "name": "渡辺さらさ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/db/eb/95041_crt_X0IEn.jpg?r=1625986281",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/eb/95041_crt_X0IEn.jpg?r=1625986281",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/eb/95041_crt_X0IEn.jpg?r=1625986281",
+        "grid": "https://lain.bgm.tv/pic/crt/g/db/eb/95041_crt_X0IEn.jpg?r=1625986281"
+    },
+    "summary": "紅華歌劇音楽学校 予科生。\r\n178cmの長身としなやかな手足、かがやく瞳を持つ少女。\r\n天真爛漫でどんなことにも物怖じしない性格。\r\n幼い頃に祖母の影響で紅華歌劇団の「ベルサイユのばら」を鑑賞し、\r\n“オスカル様”を目指すようになる。\r\n音楽学校合格時は中学3年生。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "渡边更纱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "わたなべ さらさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Watanabe Sarasa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月1日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "178cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://kageki-anime.com/character/sarasa.html"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 4,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 1,
+    "stat": {
+        "comments": 35,
+        "collects": 58
+    },
+    "anime_ids": [
+        317680
+    ]
+}

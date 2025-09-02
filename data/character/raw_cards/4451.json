@@ -1,0 +1,65 @@
+{
+    "id": 4451,
+    "name": "宮永咲",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/76/e6/4451_crt_JqkG9.jpg?r=1603942355",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/76/e6/4451_crt_JqkG9.jpg?r=1603942355",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/76/e6/4451_crt_JqkG9.jpg?r=1603942355",
+        "grid": "https://lain.bgm.tv/pic/crt/g/76/e6/4451_crt_JqkG9.jpg?r=1603942355"
+    },
+    "summary": "清澄高中一年级，担任团体战的大将兼ACE。 \r\n系列第一主角，个性内向的可爱女生。每次都能以正负0分的结局打完牌局的天才麻将少女。 \r\n特技是岭上开花。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宫永咲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "宮永咲"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みやなが さき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Miyanaga Saki"
+                },
+                {
+                    "k": "昵称",
+                    "v": "魔王，大魔王，清澄的岭上开花使者"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月27日"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 27,
+    "stat": {
+        "comments": 43,
+        "collects": 214
+    },
+    "anime_ids": [
+        1444,
+        52606
+    ]
+}

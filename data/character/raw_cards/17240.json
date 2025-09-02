@@ -1,0 +1,52 @@
+{
+    "id": 17240,
+    "name": "野狐丸",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/31/cc/17240_crt_18IJ1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/31/cc/17240_crt_18IJ1.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/31/cc/17240_crt_18IJ1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/31/cc/17240_crt_18IJ1.jpg"
+    },
+    "summary": "「塩屋虻」コロニーの奏上役を務めているバケネズミ。後に人間から「野狐丸」という漢字名を授けられる。弁が立ち非常に頭が切れる。 女王から実権を剥奪しコロニー間の融合を推し進めることにより勢力を拡大。遂には人間に対して反乱を起こす。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "野狐丸"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "斯奎拉"
+                },
+                {
+                    "k": "日文名",
+                    "v": "野狐丸"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やこまる"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 110,
+        "collects": 65
+    },
+    "anime_ids": [
+        37785
+    ]
+}

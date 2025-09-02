@@ -1,0 +1,72 @@
+{
+    "id": 57307,
+    "name": "我妻善逸",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f3/e4/57307_crt_6v4rS.jpg?r=1555512852",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/e4/57307_crt_6v4rS.jpg?r=1555512852",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/e4/57307_crt_6v4rS.jpg?r=1555512852",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f3/e4/57307_crt_6v4rS.jpg?r=1555512852"
+    },
+    "summary": "炭治郎同期的鬼杀队剑士，癸级。16岁。\r\n消极的胆怯少年，对自己作为剑士的实力完全没自信，害怕并逃避与鬼的战斗，紧张到极限时会昏睡进入半觉醒状态，发挥本来的强大实力。\r\n有着过人的听觉，能从声音读取人的情感，亦能分辨人与鬼。\r\n对女孩子相当着迷，过于纠缠总被女孩子们厌恶。对身为鬼的祢豆子也一见钟情。\r\n平时总是懦弱自私的要求身边的人保护自己，危急之时却挺身保护小孩子和朋友重要之物，是个温柔的好人。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "我妻善逸"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "我妻 善逸"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あがつま ぜんいつ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Agatsuma Zenitsu"
+                },
+                {
+                    "k": "昵称",
+                    "v": "懶覺丸"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "9月3日"
+        },
+        {
+            "key": "身高",
+            "value": "164.5cm"
+        },
+        {
+            "key": "体重",
+            "value": "58kg"
+        },
+        {
+            "key": "剑术流派",
+            "value": "雷之呼吸"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 3,
+    "stat": {
+        "comments": 35,
+        "collects": 86
+    },
+    "anime_ids": [
+        350764
+    ]
+}

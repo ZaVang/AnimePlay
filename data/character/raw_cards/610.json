@@ -1,0 +1,83 @@
+{
+    "id": 610,
+    "name": "麻生蓮治",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/18/6f/610_crt_x2rqF.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/6f/610_crt_x2rqF.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/6f/610_crt_x2rqF.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/18/6f/610_crt_x2rqF.jpg"
+    },
+    "summary": "父亲是德国建筑师。从国外转学，喜欢阅读原文小说。第三章的男主角。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "生日",
+            "value": "11月1日"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "体重",
+            "value": "50kg"
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Asou Renji"
+                },
+                {
+                    "k": "日文名",
+                    "v": "麻生蓮治"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あそう れんじ"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "官方设定集"
+                },
+                {
+                    "v": "anidb.net"
+                }
+            ]
+        },
+        {
+            "key": "简体中文名",
+            "value": "麻生莲治"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "原作声优",
+            "value": "伊香川椎音"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 2,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 1,
+    "stat": {
+        "comments": 7,
+        "collects": 15
+    },
+    "anime_ids": [
+        799
+    ]
+}

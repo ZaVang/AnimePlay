@@ -1,0 +1,65 @@
+{
+    "id": 20586,
+    "name": "爾乃美家累",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ac/71/20586_crt_9nnVX.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/71/20586_crt_9nnVX.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/71/20586_crt_9nnVX.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ac/71/20586_crt_9nnVX.jpg"
+    },
+    "summary": "18岁，居住在位于东京都江东区的高级公寓「荣耀之塔丰州」的最上层。\r\n极为头脑清晰，懂得三国语言（英语，日语，中文）。\r\n一边在网上的学习网站自学，一边从全世界的黑客那里学习语言学和代码的编写方法，开发出了SNS「GALAX」和「总裁X」。\r\n觉得当今的世界（日本）超级无聊。\r\n为了「让世界的时钟加速，更新」而进行各种各样的活动。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "尔乃美家累"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "爾乃美家 累"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "にのみや るい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ninomiya Rui"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月25日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 25,
+    "stat": {
+        "comments": 21,
+        "collects": 38
+    },
+    "anime_ids": [
+        69494,
+        86721
+    ]
+}

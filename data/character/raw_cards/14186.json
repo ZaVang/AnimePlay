@@ -1,0 +1,60 @@
+{
+    "id": 14186,
+    "name": "クマ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/0e/f9/14186_crt_dc3t6.jpg?r=1608019546",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/f9/14186_crt_dc3t6.jpg?r=1608019546",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/f9/14186_crt_dc3t6.jpg?r=1608019546",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0e/f9/14186_crt_dc3t6.jpg?r=1608019546"
+    },
+    "summary": "居住在“午夜电视”中的神秘生物。\r\n为了消灭”幻影“而寻求主人公集团的帮助。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "库玛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "熊"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kuma"
+                }
+            ]
+        },
+        {
+            "key": "生日",
+            "value": "不明"
+        },
+        {
+            "key": "血型",
+            "value": "不明"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "体重",
+            "value": "55kg"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 26,
+        "collects": 58
+    },
+    "anime_ids": [
+        15489
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": 90497,
+    "name": "ポテト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a3/ef/90497_crt_7IZoz.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a3/ef/90497_crt_7IZoz.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a3/ef/90497_crt_7IZoz.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a3/ef/90497_crt_7IZoz.jpg"
+    },
+    "summary": "のんびり屋だけど運転手の操縦を時々無視する側面も。助けを求める者がいたら、どんな状況であっても行動を起こす勇敢さを持ち合わせる。ニンジンが好き。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "引用来源",
+            "value": "https://molcar-anime.com/"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 4
+    },
+    "anime_ids": [
+        325178
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "id": 47243,
+    "name": "阿拉蕾",
+    "image_path": "data/images/anime/47243.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "在一个偏僻的村庄“企鹅村”，有名自以为天才的则卷千兵卫博士，想要制造一个与真人一样的机器人，意外制造出与理想中不同的则卷阿拉蕾，而荒诞不稽的故事情节从此展开。\r\n\r\n《阿拉蕾》（日语：Dr.スランプ）是日本著名漫画家鸟山明的1980年代漫画作品。电视动画由东映动画制作，第一作在1981年4月8日至1986年2月19日于富士电视台系列播放（日本时间为每周三19:00－19:30），台湾播映权由民视无线台、华视、卫视中文台、东森电视等台取得，香港播映权由香港无线电视取得；香港版主题曲由梅艳芳演唱，2009年7月17日J2重播。1997年再推出重制版本，译为《新阿拉蕾》，许多角色的外貌设定皆经更改；香港版主题曲由吴君如演唱。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 243,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1981-04-08",
+    "rating_rank": 1627,
+    "rating_score": 7.3,
+    "rating_total": 271,
+    "main_character_ids": [
+        17749,
+        27111
+    ],
+    "main_characters": [
+        {
+            "id": 17749,
+            "name": "則巻アラレ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/01/35/17749_crt_WW9Wd.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/35/17749_crt_WW9Wd.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/35/17749_crt_WW9Wd.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/01/35/17749_crt_WW9Wd.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4159,
+                    "name": "小山茉美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/59/be/4159_prsn_S2dx7.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/be/4159_prsn_S2dx7.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/be/4159_prsn_S2dx7.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/59/be/4159_prsn_S2dx7.jpg"
+                    },
+                    "short_summary": "テレビアニメだけでなく、洋画吹き替えにも積極的に参加。専任の俳優はいないものの、シャロン・ストーン、キム・ベイシンガー、ミシェル・ファイファー、ダイアン・レイン、メグ・ライアン、ルーシー・リューなどのクールでスレンダーな美女役が多い。\r\n\r\n近年ではNHKの教養番組や学校放送、テレビ朝日の『報道ステーション』、TBSの『報道特集』といった報道番組などのナレーションを務めることも多い。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27111,
+            "name": "則巻ガジラ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c5/34/27111_crt_tv3eT.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/34/27111_crt_tv3eT.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/34/27111_crt_tv3eT.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c5/34/27111_crt_tv3eT.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5294,
+                    "name": "中野聖子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "",
+                        "medium": "",
+                        "small": "",
+                        "grid": ""
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": 16260,
+    "name": "九十九遊馬",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/05/dd/16260_crt_M224X.jpg?r=1751868001",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/dd/16260_crt_M224X.jpg?r=1751868001",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/dd/16260_crt_M224X.jpg?r=1751868001",
+        "grid": "https://lain.bgm.tv/pic/crt/g/05/dd/16260_crt_M224X.jpg?r=1751868001"
+    },
+    "summary": "目标是成为决斗冠军的少年“九十九游马”，在遭遇了来自星界的迷之生命体“星光体”后，为了寻找名为“编号卡”的星光体的记忆碎片，秉承“一飞冲天”的精神挑战种种决斗。王牌怪兽是“编号39 希望皇霍普”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "九十九游马"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "九十九 遊馬"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "つくも ゆうま"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tsukumo Yūma"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 17
+    },
+    "anime_ids": [
+        48670
+    ]
+}

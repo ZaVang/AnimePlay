@@ -1,0 +1,48 @@
+{
+    "id": 51210,
+    "name": "安曇小太郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/14/a3/51210_crt_0T38c.jpg?r=1492931423",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/14/a3/51210_crt_0T38c.jpg?r=1492931423",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/14/a3/51210_crt_0T38c.jpg?r=1492931423",
+        "grid": "https://lain.bgm.tv/pic/crt/g/14/a3/51210_crt_0T38c.jpg?r=1492931423"
+    },
+    "summary": "本が好きで、小説家になれたら、と思い始めている。文芸部部長。\r\n産まれも育ちも勤め先も地元、という父親と専業主婦の母親のもとに産まれ、幼時から近所の神社の祭り囃子連に入れられて笛・太鼓・踊りの練習をさせられるなど、地縁・近所づきあい濃く育つ。\r\n祖父母が建てた一軒家住まい。一人っ子。\r\nのんびりしているため、周囲に流されないように見える。\r\n勉強はあまり積極的にしておらず、成績は中の下。\r\nクラスではあまり目立たない存在。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "安昙小太郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あずみ こたろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Azumi Kotaro"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 18,
+        "collects": 71
+    },
+    "anime_ids": [
+        207573
+    ]
+}

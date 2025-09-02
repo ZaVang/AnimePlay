@@ -1,0 +1,66 @@
+{
+    "id": 74,
+    "name": "夏目貴志",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/62/dd/74_crt_Zt22s.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/dd/74_crt_Zt22s.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/dd/74_crt_Zt22s.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/62/dd/74_crt_Zt22s.jpg"
+    },
+    "summary": "祖母・レイコ同様、妖怪を見ることができる類稀なる妖力の持ち主。幼い頃に両親と死に別れ、親戚中をたらい回しにされてきた。\r\nレイコの遺産「友人帳」を継いで以来、さまざまな人と妖怪との関わりに戸惑いながらも、妖怪たちへその名を返す日々を送っている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "夏目贵志"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "なつめ たかし"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Natsume Takashi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "7月1日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "167cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 1,
+    "stat": {
+        "comments": 42,
+        "collects": 632
+    },
+    "anime_ids": [
+        12536,
+        891,
+        259,
+        23495,
+        443676,
+        174638,
+        203387
+    ]
+}

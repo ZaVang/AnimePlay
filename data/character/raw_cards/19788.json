@@ -1,0 +1,52 @@
+{
+    "id": 19788,
+    "name": "相川進之介",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/65/cd/19788_crt_ZLPCe.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/cd/19788_crt_ZLPCe.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/cd/19788_crt_ZLPCe.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/65/cd/19788_crt_ZLPCe.jpg"
+    },
+    "summary": "平时都眯缝着眼睛的稳重少年。\r\n幕别东中学的毕业生。因自小时候起就梦想着成为兽医，为了能尽早地从事医学研究，而升入了研究设备齐全的虾夷农高。隶属社团是荷兰奶牛部。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "相川进之介"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "相川 進之介"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あいかわ   しんのすけ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aikawa  Shinnosike"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 3
+    },
+    "anime_ids": [
+        59664
+    ]
+}

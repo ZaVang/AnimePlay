@@ -1,0 +1,64 @@
+{
+    "id": 12072,
+    "name": "千里朱音",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a1/4b/12072_crt_Yb0ur.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/4b/12072_crt_Yb0ur.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/4b/12072_crt_Yb0ur.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a1/4b/12072_crt_Yb0ur.jpg"
+    },
+    "summary": "被暗地里称作「学园的魔女」的神秘研究会部长。\r\n在校内是个我行我素的人在部分学生中很有名。\r\n和外表不相称的是比瑚太朗更喜欢捉弄人、内心深处也有着朴实的一面的少女。\r\n似乎为了什么目的一举一动都很引人注目、真正的目的谁也无从知晓。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "千里朱音"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "せんり あかね"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Senri Akane"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月17日"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "47kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B86/ W57/ H85"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 2,
+    "birth_day": 17,
+    "stat": {
+        "comments": 85,
+        "collects": 298
+    },
+    "anime_ids": [
+        363880
+    ]
+}

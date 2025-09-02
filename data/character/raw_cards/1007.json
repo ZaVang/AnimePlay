@@ -1,0 +1,74 @@
+{
+    "id": 1007,
+    "name": "岡崎朋也",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9c/2b/1007_crt_ZLqlZ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/2b/1007_crt_ZLqlZ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/2b/1007_crt_ZLqlZ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9c/2b/1007_crt_ZLqlZ.jpg"
+    },
+    "summary": "故事的主人公。作为不良少年而为全校闻名的高三学生，经常迟到。\r\n\r\n与女主角古河渚在光板高校校门前樱花坡道的邂逅，是他人生开始改变的转折点…",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "冈崎朋也"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "岡崎朋也"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Okazaki Tomoya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "10月30日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "173cm"
+        },
+        {
+            "key": "体重",
+            "value": "61kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "中村悠一"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 30,
+    "stat": {
+        "comments": 61,
+        "collects": 354
+    },
+    "anime_ids": [
+        876,
+        51,
+        363880
+    ]
+}

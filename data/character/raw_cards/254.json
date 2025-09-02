@@ -1,0 +1,64 @@
+{
+    "id": 254,
+    "name": "志村妙",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/80/94/254_crt_1Yyju.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/94/254_crt_1Yyju.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/94/254_crt_1Yyju.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/80/94/254_crt_1Yyju.jpg"
+    },
+    "summary": "18岁，新八的姐姐，通称“阿妙（お妙）”。 \r\n表面上是个十分COOL的美女，但一发怒便会凶暴化（笑里藏刀的类型），谁都恐惧的存在。 \r\n为了保住父亲的道场而努力赚钱，现在于酒吧工作。 \r\n神楽称她为“大姐”（姐御）。 \r\n名字是参照新选组局长“近藤勇”的情人“阿妙”（お妙）。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "志村妙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Shimura Tae"
+                },
+                {
+                    "k": "昵称",
+                    "v": "阿妙"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月31日"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        },
+        {
+            "key": "体重",
+            "value": "49kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 31,
+    "stat": {
+        "comments": 11,
+        "collects": 73
+    },
+    "anime_ids": [
+        232884
+    ]
+}

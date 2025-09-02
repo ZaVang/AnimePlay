@@ -1,0 +1,65 @@
+{
+    "id": 27172,
+    "name": "ハチ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3d/23/27172_crt_Qzqvz.jpg?r=1420415817",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/23/27172_crt_Qzqvz.jpg?r=1420415817",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/23/27172_crt_Qzqvz.jpg?r=1420415817",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3d/23/27172_crt_Qzqvz.jpg?r=1420415817"
+    },
+    "summary": "ジョーカーの助手。ちょっとドジな新人ドロボウ。忍者の里で生まれ育ったにもかかわらず、ドジなせいで落ちこぼれだった。のんびりした性格だが誰よりも正義感が強く、優しく義理と人情に熱い。少し頼りないところもあるがジョーカーをしっかりサポートしている。家事が得意で、料理はシェフ顔負けの腕前。\r\n\r\n○好きな本：\r\n本を読むのが大好き。特にミステリー小説が大好き。\r\n\r\n○好きな食べ物：\r\nいちご大福、せんべい、ようかん、みかん、お茶",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿巴"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "小八"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Hachi"
+                },
+                {
+                    "k": "日文名",
+                    "v": "風魔 八"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月28日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "120cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 28,
+    "stat": {
+        "comments": 1,
+        "collects": 1
+    },
+    "anime_ids": [
+        122864,
+        147085
+    ]
+}

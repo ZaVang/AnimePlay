@@ -1,0 +1,88 @@
+{
+    "id": 10445,
+    "name": "美樹さやか",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/90/a0/10445_crt_4Dfsw.jpg?r=1606143077",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/a0/10445_crt_4Dfsw.jpg?r=1606143077",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/a0/10445_crt_4Dfsw.jpg?r=1606143077",
+        "grid": "https://lain.bgm.tv/pic/crt/g/90/a0/10445_crt_4Dfsw.jpg?r=1606143077"
+    },
+    "summary": "「あいつが何かちょっかい出してきたら、あたしがぶっとばしてやるからさ。マミさんだってついてるんだし」\r\nまどかのクラスメイト。いつも元気で活発な性格で、まどかとは大の仲良し。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "美树沙耶香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "美树沙耶加"
+                },
+                {
+                    "k": "日文名",
+                    "v": "美樹 さやか"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みき さやか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Miki Sayaka"
+                },
+                {
+                    "k": "昵称",
+                    "v": "蓝毛"
+                },
+                {
+                    "k": "其它译名",
+                    "v": "美树爽"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "158~160cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "www.madoka-magica.com/tv/character"
+        },
+        {
+            "key": "年龄",
+            "value": "14岁（中2）"
+        },
+        {
+            "key": "出身",
+            "value": "见泷原市"
+        },
+        {
+            "key": "学校",
+            "value": "见泷原中学校"
+        },
+        {
+            "key": "人设",
+            "value": "苍树梅"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 84,
+        "collects": 464
+    },
+    "anime_ids": [
+        9717
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": 111628,
+    "name": "曲伊咲",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/cd/4b/111628_crt_I6ImM.jpg?r=1683139838",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/4b/111628_crt_I6ImM.jpg?r=1683139838",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/4b/111628_crt_I6ImM.jpg?r=1683139838",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cd/4b/111628_crt_I6ImM.jpg?r=1683139838"
+    },
+    "summary": "能登の高校に通う一年生。夜眠れない悩みを人に言えず、昼間こっそり天文台で休息を取っていた。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "曲伊咲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "曲 伊咲"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まがり いさき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Magari Isaki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 64,
+        "collects": 127
+    },
+    "anime_ids": [
+        365437
+    ]
+}

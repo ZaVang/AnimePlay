@@ -1,0 +1,56 @@
+{
+    "id": 13027,
+    "name": "神名綾人",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/53/ee/13027_crt_5D7DP.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/ee/13027_crt_5D7DP.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/ee/13027_crt_5D7DP.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/53/ee/13027_crt_5D7DP.jpg"
+    },
+    "summary": "17岁，本剧的主人公。有着与巨神“RahXephon”一体化能力的少年。有些内向，会习惯性的与他人保持距离。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "神名绫人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "神名綾人"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かみな　あやと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kamina Ayato"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.mediafactory.co.jp/anime/rahxephon/onair/"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 4,
+        "collects": 4
+    },
+    "anime_ids": [
+        1030
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "id": 61921,
+    "name": "大野晶",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ce/09/61921_crt_3tP1o.jpg?r=1534652875",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/09/61921_crt_3tP1o.jpg?r=1534652875",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/09/61921_crt_3tP1o.jpg?r=1534652875",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ce/09/61921_crt_3tP1o.jpg?r=1534652875"
+    },
+    "summary": "勉強、運動なんでもこい。全てにおいて点数高めの才色兼備なお嬢様。\r\n成績優秀で容姿端麗。絵に描いたようなお嬢様だが、その正体は凄腕のアーケードゲーマー。厳しい家柄から日々稽古事に追われており、ゲームが唯一のストレス発散手段となっている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "大野晶"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "大野 晶"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おおの あきら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Oono Akira"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1979年10月10日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 4,
+    "birth_year": 1979,
+    "birth_mon": 10,
+    "birth_day": 10,
+    "stat": {
+        "comments": 49,
+        "collects": 190
+    },
+    "anime_ids": [
+        278569,
+        91205
+    ]
+}

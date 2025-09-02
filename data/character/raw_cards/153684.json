@@ -1,0 +1,52 @@
+{
+    "id": 153684,
+    "name": "十景",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/15/9b/153684_crt_HeqC6.jpg?r=1717333835",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/9b/153684_crt_HeqC6.jpg?r=1717333835",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/9b/153684_crt_HeqC6.jpg?r=1717333835",
+        "grid": "https://lain.bgm.tv/pic/crt/g/15/9b/153684_crt_HeqC6.jpg?r=1717333835"
+    },
+    "summary": "「真夜中ぱんチ」のメンバー。\r\nギャンブルとお金をこよなく愛する自由人で、面倒なことが大嫌い。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "十景"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "十景"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "とかげ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tokage"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 21,
+        "collects": 13
+    },
+    "anime_ids": [
+        477207
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "id": 43164,
+    "name": "花園たえ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e2/d4/43164_crt_Det8F.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/d4/43164_crt_Det8F.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/d4/43164_crt_Det8F.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e2/d4/43164_crt_Det8F.jpg"
+    },
+    "summary": "从小就开始弹吉他的实力派。\r\n平时寡言少语的冷美人。\r\n事实上有着不喜欢失败的一面。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "花园多惠"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "花园多英"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "花园妙"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はなぞの たえ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hanazono Tae"
+                },
+                {
+                    "k": "昵称",
+                    "v": "おたえ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月4日"
+        },
+        {
+            "key": "身高",
+            "value": "164cm"
+        },
+        {
+            "key": "担当",
+            "value": "主吉他手"
+        },
+        {
+            "key": "乐器",
+            "value": "ESP SNAPPER"
+        },
+        {
+            "key": "星座",
+            "value": "射手座"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "汉堡肉（无比的肉食爱好者)、年糕红豆粥、能吃的都喜欢"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "无（猎奇的东西之类的话...？）"
+        },
+        {
+            "key": "兴趣",
+            "value": "跑步（不要勉强）、黏土、泡澡"
+        },
+        {
+            "key": "代表色",
+            "value": "蓝色"
+        },
+        {
+            "key": "所属",
+            "value": "Poppin'Party"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 4,
+    "stat": {
+        "comments": 39,
+        "collects": 131
+    },
+    "anime_ids": [
+        246431,
+        246430,
+        246429
+    ]
+}

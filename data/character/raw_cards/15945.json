@@ -1,0 +1,56 @@
+{
+    "id": 15945,
+    "name": "黄瀬やよい／キュアピース",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/99/5e/15945_crt_H6uLM.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/5e/15945_crt_H6uLM.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/5e/15945_crt_H6uLM.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/99/5e/15945_crt_H6uLM.jpg"
+    },
+    "summary": "七色丘中学二年二班学生，隶属漫画研究社。性格软弱爱哭，但老实安分，意志力坚强。在班上没什么存在感，给人印象如妹妹一般，但家政上是个妈妈般的角色。热爱漫画、立志成为漫画家，由于个性害羞而很少将自己作品分享他人。\r\n为了保护同学与维护作为画家的尊严，以雷电的力量变身成和平天使。变身口号为“一闪一闪亮晶晶，剪刀石头布♪ 和平天使！”",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黄濑弥生／和平天使"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Cure Peace"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きせ やよい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kise Yayoi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "zh.wikipedia.org"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 8,
+        "collects": 32
+    },
+    "anime_ids": [
+        27332
+    ]
+}

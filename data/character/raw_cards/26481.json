@@ -1,0 +1,68 @@
+{
+    "id": 26481,
+    "name": "ホーク",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8b/fc/26481_crt_kSvv6.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8b/fc/26481_crt_kSvv6.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8b/fc/26481_crt_kSvv6.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8b/fc/26481_crt_kSvv6.jpg"
+    },
+    "summary": "人語を解する豚。メリオダスの友人。残飯処理などを請け負う、酒樽を担いで商売をすることもある。母親の超巨大豚ホークママの頭に「豚の帽子亭」が乗っており、酒場が移動するのは彼女の力のお蔭である。\r\n\r\n会说人类语言的谜之猪，屁股有着四叶草胎记，左耳带着猪帽子亭挂牌。猪帽子亭的招牌猪，负责酒馆内的各类工作和处理剩饭，自称『剩饭处理骑士团』团长。明明是猪，名字却是\"鹰（hawk）\"。\r\n10年前救了昏倒在路边的梅利奥达斯，和他成为挚友好搭档，一起经营移动酒馆，经常吐槽他。伊丽莎白加入后常一起行动，感情很好，常制止梅利奥达斯对她的性骚扰。\r\n对自己的力量相当自信，有着多彩的\"必杀技\"名称，使命感强烈，在七大罪与敌人对战时总是守护着伊丽莎白。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "霍克"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Hawk"
+                }
+            ]
+        },
+        {
+            "key": "生日",
+            "value": "8月6日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "体長100cm・体高50cm"
+        },
+        {
+            "key": "体重",
+            "value": "140kg"
+        },
+        {
+            "key": "種族",
+            "value": "豚"
+        },
+        {
+            "key": "年齢",
+            "value": "16歳"
+        },
+        {
+            "key": "闘級",
+            "value": "30（魔力0/武力25/気力5）"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 6,
+    "stat": {
+        "comments": 25,
+        "collects": 26
+    },
+    "anime_ids": [
+        101820
+    ]
+}

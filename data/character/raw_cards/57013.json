@@ -1,0 +1,40 @@
+{
+    "id": 57013,
+    "name": "クルル曹長",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/06/6f/57013_crt_ZMwoQ.jpg?r=1503030915",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/6f/57013_crt_ZMwoQ.jpg?r=1503030915",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/6f/57013_crt_ZMwoQ.jpg?r=1503030915",
+        "grid": "https://lain.bgm.tv/pic/crt/g/06/6f/57013_crt_ZMwoQ.jpg?r=1503030915"
+    },
+    "summary": "現在のケロン軍での階級はケロロより1つ上の曹長（OR-7）で、ケロロ小隊の作戦通信参謀である。なお、彼には階級にまつわるエピソードが存在する。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Kururu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 5
+    },
+    "anime_ids": [
+        1849
+    ]
+}

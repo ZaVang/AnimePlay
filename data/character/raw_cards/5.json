@@ -1,0 +1,73 @@
+{
+    "id": 5,
+    "name": "一ノ瀬ことみ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/27/ff/5_crt_2wk2X.jpg?r=1692105806",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/ff/5_crt_2wk2X.jpg?r=1692105806",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/ff/5_crt_2wk2X.jpg?r=1692105806",
+        "grid": "https://lain.bgm.tv/pic/crt/g/27/ff/5_crt_2wk2X.jpg?r=1692105806"
+    },
+    "summary": "总是在图书室读着书，有些奇怪的女孩。虽然头脑非常好，但她那奇特的言行每每让周围的人们感到不安与混乱。她有时候会用剪刀去剪下书页，而在这奇特的行为的背后更隐藏着一个大秘密……",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "一之濑琴美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "一ノ瀬 ことみ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いちのせ ことみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ichinose Kotomi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月13日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "48kg"
+        },
+        {
+            "key": "BWH",
+            "value": "88/58/85"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 13,
+    "stat": {
+        "comments": 83,
+        "collects": 451
+    },
+    "anime_ids": [
+        51,
+        363880
+    ]
+}

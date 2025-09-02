@@ -1,0 +1,65 @@
+{
+    "id": 2050,
+    "name": "坂本美緒",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/95/c7/2050_crt_O5Z02.jpg?r=1555512310",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/c7/2050_crt_O5Z02.jpg?r=1555512310",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/c7/2050_crt_O5Z02.jpg?r=1555512310",
+        "grid": "https://lain.bgm.tv/pic/crt/g/95/c7/2050_crt_O5Z02.jpg?r=1555512310"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "坂本美绪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "さかもと みお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakamoto Mio"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1924年8月26日"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "13貫（約48.7kg）"
+        },
+        {
+            "key": "引用来源",
+            "value": "ja.wikipedia.org/wiki/ストライクウィッチーズの登場人物"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1924,
+    "birth_mon": 8,
+    "birth_day": 26,
+    "stat": {
+        "comments": 5,
+        "collects": 25
+    },
+    "anime_ids": [
+        253046,
+        5651
+    ]
+}

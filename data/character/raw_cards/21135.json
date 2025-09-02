@@ -1,0 +1,52 @@
+{
+    "id": 21135,
+    "name": "エンジェル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/94/3c/21135_crt_5IR9W.jpg?r=1745946679",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/94/3c/21135_crt_5IR9W.jpg?r=1745946679",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/94/3c/21135_crt_5IR9W.jpg?r=1745946679",
+        "grid": "https://lain.bgm.tv/pic/crt/g/94/3c/21135_crt_5IR9W.jpg?r=1745946679"
+    },
+    "summary": "　謎の女。パラダイム側のネゴシエイターとして最初はロジャーの前に現れるが、その行動は必ずしもパラダイムの利益の為に行動しているわけではない。\r\n　ある時は、ロジャーに水力発電所の再開交渉を依頼してきた“ケイシー・ジェンキンズ”。またある時は、＃４のフィル・ガセーの秘書、“パトリシア・ラブジョイ”等いつも異なる名前で現れる謎の女。後に“パトリシア・ラブジョイ”としては、アレックス・ローズウォーターの秘書にまで上り詰める。\r\nエンジェルというのは通り名であり、その由来は背中に天使の羽のような痣があるからだと言われている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "安琪儿"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Angel"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        },
+        {
+            "key": "年齢",
+            "value": "２６歳"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 6,
+        "collects": 27
+    },
+    "anime_ids": [
+        697
+    ]
+}

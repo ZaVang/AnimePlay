@@ -1,0 +1,44 @@
+{
+    "id": 9325,
+    "name": "ハッピー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a2/4f/9325_crt_hagVb.jpg?r=1716564981",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/4f/9325_crt_hagVb.jpg?r=1716564981",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/4f/9325_crt_hagVb.jpg?r=1716564981",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a2/4f/9325_crt_hagVb.jpg?r=1716564981"
+    },
+    "summary": "人間の言葉が話せるエクシードという種族の青い猫で、\r\nナツの相棒。\r\n翼（エーラ）という魔法で空を飛ぶことができる。\r\nお魚が大好き。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "哈比"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ハッピー"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Happy"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 8,
+        "collects": 41
+    },
+    "anime_ids": [
+        2609
+    ]
+}

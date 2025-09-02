@@ -1,0 +1,44 @@
+{
+    "id": 19591,
+    "name": "より子（葉山より子）",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b4/29/19591_crt_i675L.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/29/19591_crt_i675L.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/29/19591_crt_i675L.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b4/29/19591_crt_i675L.jpg"
+    },
+    "summary": "やさしい性格の女の子。ケリ子と仲が良く、二人で遊ぶことが多い。絵が得意で、成績優秀なしっかりもの。コンビニの兄ちゃんこと今野に好意を抱いている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "赖子（叶山赖子）"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "はやま よりこ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        61118
+    ]
+}

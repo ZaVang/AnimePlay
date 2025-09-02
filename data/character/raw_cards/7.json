@@ -1,0 +1,69 @@
+{
+    "id": 7,
+    "name": "藤林杏",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c1/93/7_crt_hHRVz.jpg?r=1692105674",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/93/7_crt_hHRVz.jpg?r=1692105674",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/93/7_crt_hHRVz.jpg?r=1692105674",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c1/93/7_crt_hHRVz.jpg?r=1692105674"
+    },
+    "summary": "主人公と同じ学校の３年生。口が悪くおおざっぱな性格をしているけど、面倒見のいい女の子。隣のクラスで委員長をしている。２年の時は、主人公と同じクラスだった。内緒で校則違反となるバイク通学中。おとなしい妹の椋とはちがい、活発なキャラクター。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藤林杏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ふじばやし きょう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fujibayashi Kyou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月9日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "160 cm"
+        },
+        {
+            "key": "体重",
+            "value": "46 kg"
+        },
+        {
+            "key": "BWH",
+            "value": "82/56/82"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 4,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 9,
+    "stat": {
+        "comments": 89,
+        "collects": 764
+    },
+    "anime_ids": [
+        51,
+        363880
+    ]
+}

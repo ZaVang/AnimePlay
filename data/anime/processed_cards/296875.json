@@ -1,0 +1,151 @@
+{
+    "id": 296875,
+    "name": "境界触发者 第二季",
+    "image_path": "data/images/anime/296875.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2021-01-09",
+    "rating_rank": 616,
+    "rating_score": 7.7,
+    "rating_total": 811,
+    "main_character_ids": [
+        27210,
+        27211,
+        27212,
+        27213
+    ],
+    "main_characters": [
+        {
+            "id": 27210,
+            "name": "空閑遊真",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/25/fc/27210_crt_cM76Q.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/fc/27210_crt_cM76Q.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/fc/27210_crt_cM76Q.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/25/fc/27210_crt_cM76Q.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 16266,
+                    "name": "村中知",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/36/8c/16266_prsn_0hPeA.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/8c/16266_prsn_0hPeA.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/8c/16266_prsn_0hPeA.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/36/8c/16266_prsn_0hPeA.jpg"
+                    },
+                    "short_summary": "日本の女性声優、ナレーター。俳協ボイスアクターズスタジオ卒業。東京俳優生活協同組合所属。\r\n\r\n特技：マッサージ・ジャズダンス・社交ダンス水泳\r\n免許・資格：英語検定2級・漢字検定2級・硬筆6段\r\n趣味・スポーツ：旅行・音楽鑑賞・ラジオ視聴・乗馬映画鑑賞・水上スキー・歌う事・踊る事\r\n\r\n経歴\r\n\r\n2008　俳協ボイスアクターズスタジオ第34期生\r\n2009　俳協",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27211,
+            "name": "三雲修",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0b/00/27211_crt_TXfz5.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/00/27211_crt_TXfz5.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/00/27211_crt_TXfz5.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0b/00/27211_crt_TXfz5.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5209,
+                    "name": "梶裕貴",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/51/73/5209_prsn_bD3dr.jpg?r=1478379077"
+                    },
+                    "short_summary": "ARTSVISION第17期免费新人培育选拔会合格，并且加入了事务所ARTSVISION。\r\n2009年获得第3届声优奖—新人男声优赏，且开始了“G.Addict”的活动。\r\n2012年2月22日以本人的名义开始歌手的活动，发售第一张单曲《sense of wonder》。2012年9月5日发售第二张单曲《Hello！》。\r\n2013年获得第7届声优奖—主演男声优赏。\r\n2013年10月1日，由原来的事务所ARTSVISION转入VIMS。\r\n2014年获得第8届声优奖—主演男声优赏。\r\n\r\n拥有中性的声音，能演出从少年到青年、动物等各式各样的角色。\r\n担任剧团“妄想中毒”的pretty团长。\r\n中小学时代担任过学生会长，有体育或美术被表扬等表现，是个非常有才能的小孩。\r\n声优伙伴或支持者称呼他为“王子”。\r\n和代永翼组成团体“BRAVE WING”。\r\n与寺岛拓笃、堀江一真和阿部敦等四人组成团体“G.Addict”。\r\n性格极其纯良，待人有礼温善。虽然人前很活泼开朗，但其实是个喜欢宁静安逸的人，只有与亲近的人在一起时才会放松的流露真实自我。\r\n不只声音，外型也很中性，现在也还会被误认成女生。本人对此表示否定，表示“内在意外地很有男子气概”。\r\n虽然年轻，但是性格相当认真。寺岛拓笃评价他“面对工作上的态度很严谨”，大亲友下野纮也说：“他真的很可靠，很会待人处世，作为声优也相当优秀。”\r\n\r\n代表作品有《进击的巨人》艾伦·耶格尔、《夜樱四重奏》比泉秋名、《未来都市NO.6》紫苑、《罪恶王冠》樱满集、《七大罪》梅利奥达斯、《加速世界》有田春雪、《魔笛MAGI》阿里巴巴·沙尔贾等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27212,
+            "name": "雨取千佳",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bd/71/27212_crt_P32u9.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/71/27212_crt_P32u9.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/71/27212_crt_P32u9.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bd/71/27212_crt_P32u9.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9978,
+                    "name": "田村奈央",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/56/33/9978_prsn_f1E35.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/33/9978_prsn_f1E35.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/33/9978_prsn_f1E35.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/56/33/9978_prsn_f1E35.jpg"
+                    },
+                    "short_summary": "日本の女性声優。埼玉県出身。東京俳優生活協同組合所属。身長153cm、血液型はB型。\r\n\r\n大学時代に本格的に声優を目指し、演劇の勉強を始める。 ヒューマンアカデミー渋谷校受講修了後、2013年2月よりEARLY WING所属となる。2016年3月31日付けで同事務所を退所、2016年4月1日より東京俳優生活協同組合の所属となる。\r\n\r\n免許・資格：普通自動車、剣道初段、英検準2級\r\n趣味・スポーツ：のんびり散歩、音楽鑑賞、剣道",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 27213,
+            "name": "迅悠一",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/9f/c9/27213_crt_CjN3Y.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/c9/27213_crt_CjN3Y.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/c9/27213_crt_CjN3Y.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9f/c9/27213_crt_CjN3Y.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4724,
+                    "name": "中村悠一",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/78/4724_prsn_7TvWV.jpg"
+                    },
+                    "short_summary": "爱称是ゆうきゃん，由铃村健一命名。英文标记法为‘yuu-kyan’\r\n与声优的杉田智和的私交良好，是在声优界著名的好友。\r\n兴趣是玩游戏、看电影等。\r\n不喜欢吃拉面。喜欢的食物是肉、奶酪、甜食。\r\n2020年10月1日，宣布从Sigma Seven移籍至INTENTION。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

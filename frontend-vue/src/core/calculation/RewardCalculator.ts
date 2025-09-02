@@ -15,8 +15,6 @@ function getStrengthCategory(diff: number): StrengthCategory {
   if (diff === 0) return 'draw';
   if (diff >= -4) return 'defender_advantage';
   if (diff <= -5) return 'defender_crush';
-  // Note: Perfect Parry (diff <= -6) is handled as a special case of defender_crush
-  // because its rewards are a superset of the defender_crush rewards.
   return 'draw'; // Should be unreachable
 }
 
@@ -35,49 +33,39 @@ export const RewardCalculator = {
     if (clash.defenseStyle === '赞同' || !clash.defenseStyle) {
       if (clash.attackStyle === '友好安利') {
         switch (category) {
-          case 'attacker_crush':   result = { attackerReputationChange: 4, defenderReputationChange: -1, topicBiasChange: 2 * biasDirection }; break;
-          case 'attacker_advantage': result = { attackerReputationChange: 3, defenderReputationChange: 0, topicBiasChange: 1 * biasDirection }; break;
-          case 'draw':             result = { attackerReputationChange: 2, defenderReputationChange: 1, topicBiasChange: 0 }; break;
-          case 'defender_advantage': result = { attackerReputationChange: 1, defenderReputationChange: 1, topicBiasChange: 0 }; break;
-          case 'defender_crush':   result = { attackerReputationChange: 0, defenderReputationChange: 2, topicBiasChange: 0 }; break;
+          case 'attacker_crush':   result = { attackerReputationChange: 1, defenderReputationChange: -4, topicBiasChange: 2 * biasDirection }; break;
+          case 'attacker_advantage': result = { attackerReputationChange: 0, defenderReputationChange: -3, topicBiasChange: 1 * biasDirection }; break;
+          case 'draw':             result = { attackerReputationChange: 0, defenderReputationChange: 0, topicBiasChange: 0 }; break;
+          case 'defender_advantage': result = { attackerReputationChange: -3, defenderReputationChange: 0, topicBiasChange: 0 }; break;
+          case 'defender_crush':   result = { attackerReputationChange: -4, defenderReputationChange: 0, topicBiasChange: 0 }; break;
         }
       } else { // 辛辣点评
         switch (category) {
-          case 'attacker_crush':   result = { attackerReputationChange: 2, defenderReputationChange: -2, topicBiasChange: 3 * biasDirection }; break;
-          case 'attacker_advantage': result = { attackerReputationChange: 1, defenderReputationChange: -1, topicBiasChange: 2 * biasDirection }; break;
-          case 'draw':             result = { attackerReputationChange: 1, defenderReputationChange: 0, topicBiasChange: 1 * biasDirection }; break;
-          case 'defender_advantage': result = { attackerReputationChange: -1, defenderReputationChange: 1, topicBiasChange: 1 * biasDirection }; break;
-          case 'defender_crush':   result = { attackerReputationChange: -2, defenderReputationChange: 2, topicBiasChange: 0 }; break;
+          case 'attacker_crush':   result = { attackerReputationChange: 0, defenderReputationChange: -6, topicBiasChange: 3 * biasDirection }; break;
+          case 'attacker_advantage': result = { attackerReputationChange: 0, defenderReputationChange: -5, topicBiasChange: 2 * biasDirection }; break;
+          case 'draw':             result = { attackerReputationChange: 0, defenderReputationChange: 0, topicBiasChange: 1 * biasDirection }; break;
+          case 'defender_advantage': result = { attackerReputationChange: -5, defenderReputationChange: 0, topicBiasChange: 0 }; break;
+          case 'defender_crush':   result = { attackerReputationChange: -6, defenderReputationChange: 0, topicBiasChange: 1 * biasDirection }; break;
         }
       }
     }
     // --- Defender chose: 反驳 ---
     else if (clash.defenseStyle === '反驳') {
-      // Handle Perfect Parry as a special case
-      if (strengthDifference <= -5) {
-        if (clash.attackStyle === '友好安利') {
-          result = { attackerReputationChange: -3, defenderReputationChange: 4, topicBiasChange: -2 * biasDirection };
-        } else { // 辛辣点评
-          result = { attackerReputationChange: -2, defenderReputationChange: 3, topicBiasChange: -5 * biasDirection };
-        }
-        return result;
-      }
-      
       if (clash.attackStyle === '友好安利') {
         switch (category) {
-          case 'attacker_crush':   result = { attackerReputationChange: 2, defenderReputationChange: -2, topicBiasChange: 1 * biasDirection }; break;
-          case 'attacker_advantage': result = { attackerReputationChange: 1, defenderReputationChange: -1, topicBiasChange: 0 }; break;
-          case 'draw':             result = { attackerReputationChange: 0, defenderReputationChange: 0, topicBiasChange: -1 * biasDirection }; break;
-          case 'defender_advantage': result = { attackerReputationChange: -1, defenderReputationChange: 2, topicBiasChange: -1 * biasDirection }; break;
-          case 'defender_crush':   result = { attackerReputationChange: -2, defenderReputationChange: 3, topicBiasChange: -2 * biasDirection }; break;
+          case 'attacker_crush':   result = { attackerReputationChange: 1, defenderReputationChange: -5, topicBiasChange: 2 * biasDirection }; break;
+          case 'attacker_advantage': result = { attackerReputationChange: 0, defenderReputationChange: -4, topicBiasChange: 1 * biasDirection }; break;
+          case 'draw':             result = { attackerReputationChange: -1, defenderReputationChange: 1, topicBiasChange: 0 }; break;
+          case 'defender_advantage': result = { attackerReputationChange: -2, defenderReputationChange: 0, topicBiasChange: 0 }; break;
+          case 'defender_crush':   result = { attackerReputationChange: -3, defenderReputationChange: 0, topicBiasChange: 0 }; break;
         }
       } else { // 辛辣点评
         switch (category) {
-          case 'attacker_crush':   result = { attackerReputationChange: 1, defenderReputationChange: -3, topicBiasChange: 2 * biasDirection }; break;
-          case 'attacker_advantage': result = { attackerReputationChange: 0, defenderReputationChange: -2, topicBiasChange: 1 * biasDirection }; break;
-          case 'draw':             result = { attackerReputationChange: -1, defenderReputationChange: 1, topicBiasChange: -2 * biasDirection }; break;
-          case 'defender_advantage': result = { attackerReputationChange: -2, defenderReputationChange: 1, topicBiasChange: -3 * biasDirection }; break;
-          case 'defender_crush':   result = { attackerReputationChange: -3, defenderReputationChange: 2, topicBiasChange: -4 * biasDirection }; break;
+          case 'attacker_crush':   result = { attackerReputationChange: 0, defenderReputationChange: -7, topicBiasChange: 3 * biasDirection }; break;
+          case 'attacker_advantage': result = { attackerReputationChange: 0, defenderReputationChange: -6, topicBiasChange: 2 * biasDirection }; break;
+          case 'draw':             result = { attackerReputationChange: 0, defenderReputationChange: 0, topicBiasChange: 0 }; break;
+          case 'defender_advantage': result = { attackerReputationChange: -4, defenderReputationChange: 0, topicBiasChange: 0 }; break;
+          case 'defender_crush':   result = { attackerReputationChange: -5, defenderReputationChange: 0, topicBiasChange: 0 }; break;
         }
       }
     }

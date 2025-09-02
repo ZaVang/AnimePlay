@@ -1,0 +1,61 @@
+{
+    "id": 43239,
+    "name": "四葉環",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b6/4b/43239_crt_lhQEK.jpg?r=1586017951",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/4b/43239_crt_lhQEK.jpg?r=1586017951",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/4b/43239_crt_lhQEK.jpg?r=1586017951",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b6/4b/43239_crt_lhQEK.jpg?r=1586017951"
+    },
+    "summary": "IDOLiSH7のメンバー。\r\n\r\n好きなもの：王様プリン\r\n嫌いなもの：細かいこと\r\n天才肌でなんでもできる天然系キャラ。三月の熱い姿勢を苦手に思っていたり、壮五の細かい指示を聞かなかったりと、マイペースで個人主義な一面が強い。メンバーも知らない、ある目的のために芸能界入りした。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "四叶环"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "よつばたまき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yotsuba Tamaki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月1日"
+        },
+        {
+            "key": "年龄",
+            "value": "17"
+        },
+        {
+            "key": "身高",
+            "value": "183cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 1,
+    "stat": {
+        "comments": 6,
+        "collects": 13
+    },
+    "anime_ids": [
+        253042,
+        331751
+    ]
+}

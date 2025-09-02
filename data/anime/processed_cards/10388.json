@@ -1,0 +1,88 @@
+{
+    "id": 10388,
+    "name": "福星小子",
+    "image_path": "data/images/anime/10388.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "福星小子描述的是外星鬼族女子拉姆与地球少年诸星当之间的爱情故事。拉姆是遥远的鬼星公主，随其父踏上了企图征服地球的旅程，然而却在一场决定地球命运的捉迷藏对决中被诸星当打败。随后双方就上演了一场又一场令人捧腹大笑的爱情欢笑故事。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 218,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1981-10-14",
+    "rating_rank": 1019,
+    "rating_score": 7.5,
+    "rating_total": 388,
+    "main_character_ids": [
+        7672,
+        16808
+    ],
+    "main_characters": [
+        {
+            "id": 7672,
+            "name": "諸星あたる",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/bb/e5/7672_crt_la1b1.jpg?r=1664072433",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/e5/7672_crt_la1b1.jpg?r=1664072433",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/e5/7672_crt_la1b1.jpg?r=1664072433",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bb/e5/7672_crt_la1b1.jpg?r=1664072433"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4178,
+                    "name": "古川登志夫",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/97/ad/4178_prsn_t2qhX.jpg?r=1669452184",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/97/ad/4178_prsn_t2qhX.jpg?r=1669452184",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/97/ad/4178_prsn_t2qhX.jpg?r=1669452184",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/97/ad/4178_prsn_t2qhX.jpg?r=1669452184"
+                    },
+                    "short_summary": "古川 登志夫（ふるかわ としお、1946年7月16日 - ）は、日本の声優、俳優、ナレーター。元大阪芸術大学短期大学部教授。青二プロダクション所属。妻は同じく声優の柿沼紫乃。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 16808,
+            "name": "ラム",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5c/60/16808_crt_Hm9Sx.jpg?r=1717731146",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/60/16808_crt_Hm9Sx.jpg?r=1717731146",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/60/16808_crt_Hm9Sx.jpg?r=1717731146",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5c/60/16808_crt_Hm9Sx.jpg?r=1717731146"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4201,
+                    "name": "平野文",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/05/30/4201_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/30/4201_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/30/4201_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/05/30/4201_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

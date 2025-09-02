@@ -1,0 +1,121 @@
+{
+    "id": 176615,
+    "name": "昭和元禄落语心中 -助六再临篇-",
+    "image_path": "data/images/anime/176615.jpg",
+    "points": 8.3,
+    "cost": 4,
+    "rarity": "SSR",
+    "description": "由于难以忘记在刑务所的落语慰问会中见到的大名人·八云的“死神”，一出狱与太郎便径直前往寄席。拜倒在八云面前，成为他住所的雇工及弟子，磨炼了技艺的与太郎终于升进成为真打。他所继承的名号是第三代助六。为了八云师父，为了小夏，为了改变两人心中的助六，与太郎所找到的自己的落语是……。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2017-01-06",
+    "rating_rank": 91,
+    "rating_score": 8.3,
+    "rating_total": 2385,
+    "main_character_ids": [
+        34777,
+        34778,
+        34779
+    ],
+    "main_characters": [
+        {
+            "id": 34777,
+            "name": "三代目有楽亭助六",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/5c/b3/34777_crt_pTtId.jpg?r=1488615304",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/b3/34777_crt_pTtId.jpg?r=1488615304",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/b3/34777_crt_pTtId.jpg?r=1488615304",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5c/b3/34777_crt_pTtId.jpg?r=1488615304"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3868,
+                    "name": "関智一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/40/94/3868_prsn_24eU6.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/94/3868_prsn_24eU6.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/94/3868_prsn_24eU6.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/40/94/3868_prsn_24eU6.jpg"
+                    },
+                    "short_summary": "日本男性配音员。东京俳优生活协同组合→Atomic Monkey所属。东京都江东区深川出身。以热血激昂的声线闻名，昵称为“チイチ”（ChiIChi, 智一的音读）。\r\n\r\n在机动武斗传G高达的主角选角时，自己参加试音的路上因积雪滑了一跤，心想“这下肯定落选了”结果反而在两天后宣布中选。\r\n非常爱开黄腔，也因此冒犯许多不好此道的女声优，曾因尺度太大被电台高层警告。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 34778,
+            "name": "八代目有楽亭八雲",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b7/4d/34778_crt_xWvhV.jpg?r=1488615337",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/4d/34778_crt_xWvhV.jpg?r=1488615337",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/4d/34778_crt_xWvhV.jpg?r=1488615337",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b7/4d/34778_crt_xWvhV.jpg?r=1488615337"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3927,
+                    "name": "石田彰",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/75/f0/3927_prsn_PPbE7.jpg?r=1632126400",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/f0/3927_prsn_PPbE7.jpg?r=1632126400",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/f0/3927_prsn_PPbE7.jpg?r=1632126400",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/75/f0/3927_prsn_PPbE7.jpg?r=1632126400"
+                    },
+                    "short_summary": "石田彰，是日本人气一线声优，近几年来在日本各地稳居声优榜前列，在男女老少间都很受欢迎。出道已经近二十年了，声音宜男宜女，是业界少见的可以配女性角色还不易被人察觉的男声优。2009年3月前效力于Mausu Promotion，4月开始是自由身，2012年3月开始他进入了新的事务所ピアレスガーベラ。主要作品：桂小太郎《银魂》、我爱罗《火影忍者》、阿斯兰·萨拉《高达SEED》、渚熏《EVA》、猪八戒《最游记》等。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 34779,
+            "name": "小夏",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/96/02/34779_crt_KP0uX.jpg?r=1488615319",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/02/34779_crt_KP0uX.jpg?r=1488615319",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/02/34779_crt_KP0uX.jpg?r=1488615319",
+                "grid": "https://lain.bgm.tv/pic/crt/g/96/02/34779_crt_KP0uX.jpg?r=1488615319"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4398,
+                    "name": "小林ゆう",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1b/c3/4398_prsn_XMW01.jpg?r=1730732992",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/c3/4398_prsn_XMW01.jpg?r=1730732992",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/c3/4398_prsn_XMW01.jpg?r=1730732992",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1b/c3/4398_prsn_XMW01.jpg?r=1730732992"
+                    },
+                    "short_summary": "配音范围，从少年至美少女，亦或是活力充沛的角色，都没有问题。\r\n当声优以前是个十分活跃的杂志模特，这是一个与众不同的经历。可能因为这样，身高在女声优界中是很高的168cm，只是比170cm以上的本田贵子、汤屋敦子、葛城七穗矮一点。\r\n母亲是插花师傅。亦可能因为这样，对任何事也十分谦虚有礼，众所周知她很平易近人。\r\n对同年、甚至比自己年轻的同事经常也会在名字后加“～さん(先生/小姐)”，虽然如此，但却把比自己大一年的中原麻衣唤做“まいたん”\r\n在广播中，几乎每次也会把手或头碰到麦克风，每次也很热衷于节目中的游戏，无意识地发出喘气声。\r\n喜欢料理。自己有糠床(由米糠和盐混制而成，是做 糠渍け 的主要原料)，用来做糠渍け(一种用米糠拌盐腌的和式小菜)。\r\n为了练习配音和唱歌的技巧，经常独自一人在卡啦ok流连，连卡啦ok的店员们也认得出她的样貌。某日和声优朋友一起唱卡啦ok时，还被店员说了“今天和朋友们一起来真是太好了”。\r\n在决定“魔法老师”将会有演出时开始学习剑道，但现在好像已经放弃了。\r\n因广播节目中游戏的惩罚，曾穿着“魔法老师”中麻帆良学园的校服在新宿站坐地下铁，沿湘南新宿线坐到高崎线深谷站，并在深谷站前唱了“聖なる空の下で”。\r\n看了“魔法老师”漫画第114话“みんながいるからボクがいる”涅吉和刹那对战后，好像有点悲伤地向作者赤松健说“请让刹那胜利吧…”。\r\n2006年5月8日的网上广播“麻帆良学園中等部2-A・ヒミツの放課後 Part2”，为了取材而和佐藤利奈一起来到录音室的赤松健，给小林优体验了一下当助手的感觉而让她在“魔法先生ネギま！”第136话“チーム・ネギ坊主”(单行本第15卷的109页，中日单行本相同)的第1页第7格写下了“もぞもぞ…”和“うじうじ”。\r\n2006年6月20日，名为“White Wing”的fans club成立了。\r\n喜欢的动物是兔子，而且曾经饲养，名叫Nono（ノノ）。另外似乎很满意看到自己配音的刹那在漫画中戴上兔耳cosplay。\r\n2007年2月4日，Saint October的op“Wheel of fortune”pv拍摄完毕后，2月5日凌晨0:00，一众工作人员以及一起拍摄的片冈あづさ，福井裕佳梨为她庆祝生日，给了她一个惊喜。就在把蜡烛吹熄后，一如以往为表感谢而鞠躬的她，碰到了工作人员手拿的蛋糕，把头上戴着的帽子弄脏了，惹得大家都笑了。\r\n2008年获得声优奖女优部门新人赏。\r\n2009年在Animelo Summer Live 2009 与其他“绝望少女达”（野中蓝、新谷良子、小林优、泽城美雪）人员及大槻ケンヂ一起演出动画“绝望老师”的相关曲“人として轴がぶれている”、“空想ルンバ”和“林檎もぎれビーム! ”。其中小林优与泽城美雪在表演时同时进入“疯狂状态”，十分卖力地演出。事后根据小林本人说，唱完三首歌回到了后台之后就晕倒了，其后发现颈亦受伤了，以致9月份的个人首唱会都不能作强烈的颈部运动。\r\n同年冬天与RYO组成2人乐团“Crush Tears”，出现第一首曲“闪光の瞬き”。于2010年2月17日发表此曲。\r\n2010年Crush Tears组合增加2人，现变成四人乐团，新曲为动画“爆丸”相关曲“Communication Breakdown”此曲发售日期为7月7日。\r\n绘画十分的不济，画什么也会变成自己独创的东西，因而被称为“画伯”（大画家）。\r\n2006年6月9日发布在网上广播所画的画（魔法先生ネギま！的登场人物源静奈）时，还因为画作有某方面的危险而被工作人员修正了。\r\n赤松健的日记中对其他声优会在名字后加“さん”（先生/小姐），而小林却是“画伯”。\r\n\r\n2017年12月29日，在个人Twitter上宣布结婚消息。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

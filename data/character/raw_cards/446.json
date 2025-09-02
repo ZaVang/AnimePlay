@@ -1,0 +1,57 @@
+{
+    "id": 446,
+    "name": "一目連",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8d/55/446_crt_403C0.jpg?r=1392046014",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/55/446_crt_403C0.jpg?r=1392046014",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/55/446_crt_403C0.jpg?r=1392046014",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8d/55/446_crt_403C0.jpg?r=1392046014"
+    },
+    "summary": "原形为武士刀付丧神。平时通常化为身穿西装裤与运动夹克，发覆左眼的青年。他亲吻自己颈部的项链后会化为蓝色稻草人。平日遮住的左眼为一隐藏的眼睛，能在任何平面上窥探。听从爱的命令去收集情报。进行调查时，使用“石元连”的假名。\r\n与爱和轮入道第一次见面之前是一个砍杀过无数人、换过无数主人的刀子，在一目连回忆中出现过的那人的身份很可能是在战国时代的武士。他是爱的第二个属下。三鼎中为赛河原四中的自然教师。\r\n认为爱和其他二藁是“家人”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "一目连"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "一目連"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いちもくれん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ichimoku Ren"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 42
+    },
+    "anime_ids": [
+        1261,
+        1260
+    ]
+}

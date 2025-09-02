@@ -1,0 +1,52 @@
+{
+    "id": 42111,
+    "name": "香澄真昼",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4c/92/42111_crt_3e6k4.jpg?r=1464623775",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/92/42111_crt_3e6k4.jpg?r=1464623775",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/92/42111_crt_3e6k4.jpg?r=1464623775",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4c/92/42111_crt_3e6k4.jpg?r=1464623775"
+    },
+    "summary": "月の美組に所属しており、夜空に匹敵する実力者。周りからは大人びてて話しかけ難い雰囲気を持っているが、同じ組の小春に話かけられ親しくなる。ゲームでは2弾シーズンサマーより登場。アニメでは第8話より登場。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "香澄真昼"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かすみ まひる"
+                },
+                {
+                    "k": "昵称",
+                    "v": "Kasumi Mahiru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月28日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 28,
+    "stat": {
+        "comments": 11,
+        "collects": 14
+    },
+    "anime_ids": [
+        207491
+    ]
+}

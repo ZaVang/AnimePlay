@@ -1,0 +1,56 @@
+{
+    "id": 22119,
+    "name": "織本泉",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/17/ed/22119_crt_BMIGj.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/ed/22119_crt_BMIGj.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/ed/22119_crt_BMIGj.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/17/ed/22119_crt_BMIGj.jpg"
+    },
+    "summary": "小学五年级学生。跟拓也乘上同一辆机车兽前往数码世界的少女。一年前从意大利返回的归国子女，对话的时候喜欢夹杂意大利语。本来是善良开朗的性格，但因为过于表达自己的意见而被同学们疏远。根据神秘邮件参加这场「游戏」的理由是觉得那样的日常「好像很有趣」。对于数码世界有些不知所措却也表现出较强适应能力，也经常拉同伴一把。甚至在数码宝贝中还成立了她的粉丝俱乐部。在旅途中明白了与同伴们在一起的快乐，也逐渐理解了合群的重要性。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "织本泉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Zoe Orimoto, Zoe Ayamoto, Zoe Yamamoto"
+                },
+                {
+                    "k": "日文名",
+                    "v": "織本 泉"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Orimoto Izumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 10,
+        "collects": 13
+    },
+    "anime_ids": [
+        3131
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 66730,
+    "name": "姫坂乃愛",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8d/9e/66730_crt_o4aoy.jpg?r=1549849338",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/9e/66730_crt_o4aoy.jpg?r=1549849338",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/9e/66730_crt_o4aoy.jpg?r=1549849338",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8d/9e/66730_crt_o4aoy.jpg?r=1549849338"
+    },
+    "summary": "かわいければオールオッケーなハーフの女の子。両親や周りから甘やかされて育ったため自分が世界一かわいいと思っている。打たれ弱くすぐに落ち込むが立ち直りも早い。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "姬坂乃爱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ひめさか のあ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Himesaka Noa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月24日"
+        },
+        {
+            "key": "身高",
+            "value": "142.7cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 24,
+    "stat": {
+        "comments": 72,
+        "collects": 271
+    },
+    "anime_ids": [
+        249637
+    ]
+}

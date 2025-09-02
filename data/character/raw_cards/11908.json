@@ -1,0 +1,61 @@
+{
+    "id": 11908,
+    "name": "東雲なの",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/27/2f/11908_crt_4669K.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/2f/11908_crt_4669K.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/2f/11908_crt_4669K.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/27/2f/11908_crt_4669K.jpg"
+    },
+    "summary": "女高中生機器人。實際年齡1歲，目前就讀高中，十分憧憬普通女生。留著黑色短髮，對自己是機器人而且背上裝著很大的發條（旋轉後左腳大拇指（用 USB端子連接）會被發射出去，發條能夠取下）感到自卑。被博士施以非人道改造，右手裝備能夠連發的豆子機關槍，左手有裝過竹輪、瑞士捲，兩手具備火箭飛拳功能，額頭具有鴿子時鐘和收納功能，頭頂有烤麵包機。害怕蟑螂和雷。雖然是機器人卻具有痛覺，但只要把會痛的部分拔除就不會感覺到。雙手（特別是右手）受到一點衝擊就會掉下來。有時會因為博士不認真聽自己的煩惱而抓狂，但都敗在博士泛著淚光的眼神之下。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "东云名乃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しののめ なの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shinonome Nano"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月7日"
+        },
+        {
+            "key": "引用来源",
+            "value": "维基"
+        },
+        {
+            "key": "年龄",
+            "value": "1"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 7,
+    "stat": {
+        "comments": 38,
+        "collects": 331
+    },
+    "anime_ids": [
+        9912,
+        28205
+    ]
+}

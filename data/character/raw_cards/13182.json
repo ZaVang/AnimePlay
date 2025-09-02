@@ -1,0 +1,40 @@
+{
+    "id": 13182,
+    "name": "点蔵・クロスユナイト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/96/fb/13182_crt_kx2L8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/fb/13182_crt_kx2L8.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/fb/13182_crt_kx2L8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/96/fb/13182_crt_kx2L8.jpg"
+    },
+    "summary": "“総長連合”の第一特務。忍術を用いた接近戦や諜報を得意とし、忍者として高い実力を持つ。性格も親切で気配りもきくが、「好みのタイプは金髪巨乳！」と公言し続けるところが残念な男子。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "てんぞう・クロスユナイト"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 11
+    },
+    "anime_ids": [
+        29307
+    ]
+}

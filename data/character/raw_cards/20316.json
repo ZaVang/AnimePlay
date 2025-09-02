@@ -1,0 +1,56 @@
+{
+    "id": 20316,
+    "name": "北原春希",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e2/29/20316_crt_YS7L7.jpg?r=1570948327",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/29/20316_crt_YS7L7.jpg?r=1570948327",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/29/20316_crt_YS7L7.jpg?r=1570948327",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e2/29/20316_crt_YS7L7.jpg?r=1570948327"
+    },
+    "summary": "峰城大付属３年Ｅ組。前期クラス委員長。\r\n軽音楽同好会所属。セカンドギター（雑用）担当。\r\n特技は余計なお節介と非の打ち所のない説教と完璧な理論武装。\r\n成績はトップクラス。その面倒見が良すぎて妥協できない性格ゆえ、全校の教師と学生に非常に都合よく慕われている。\r\n学園生活最後の年に、無謀にも派手めな思い出を残そうと思い立ち、学園祭のステージに立つことを計画する。手先はそこそこ不器用。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "北原春希"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "北原 春希"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きたはら はるき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kitahara Haruki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1989年4月3日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1989,
+    "birth_mon": 4,
+    "birth_day": 3,
+    "stat": {
+        "comments": 134,
+        "collects": 111
+    },
+    "anime_ids": [
+        69496
+    ]
+}

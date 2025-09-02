@@ -1,0 +1,52 @@
+{
+    "id": 153550,
+    "name": "真咲",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a6/bc/153550_crt_THhBb.jpg?r=1717333717",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/bc/153550_crt_THhBb.jpg?r=1717333717",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/bc/153550_crt_THhBb.jpg?r=1717333717",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a6/bc/153550_crt_THhBb.jpg?r=1717333717"
+    },
+    "summary": "「真夜中ぱんチ」をプロデュースする動画投稿者。\r\n動画制作に命を捧げ、企画、撮影、編集を一手に担っている。我が強すぎるのが玉にキズ。\r\n「はりきりシスターズ」の「まさ吉」として活動していた。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "真咲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "真咲"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まさき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Masaki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 71,
+        "collects": 113
+    },
+    "anime_ids": [
+        477207
+    ]
+}

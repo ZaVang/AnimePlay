@@ -1,0 +1,64 @@
+{
+    "id": 793,
+    "name": "龍亞",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ad/e7/793_crt_bbBYB.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/e7/793_crt_bbBYB.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/e7/793_crt_bbBYB.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ad/e7/793_crt_bbBYB.jpg"
+    },
+    "summary": "双子兄妹的哥哥。活泼且冒失鬼的性格。十分好强，一旦决斗输了马上就会落泪。希望能绝对守护体弱多病的妹妹。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "龙亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "龍亞"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "るあ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Rua"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "6月20日"
+        },
+        {
+            "key": "身高",
+            "value": "145cm"
+        },
+        {
+            "key": "体重",
+            "value": "35kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 20,
+    "stat": {
+        "comments": 2,
+        "collects": 4
+    },
+    "anime_ids": [
+        1609
+    ]
+}

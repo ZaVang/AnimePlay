@@ -1,0 +1,330 @@
+{
+    "id": 203526,
+    "type": 2,
+    "name": "メイドインアビス",
+    "name_cn": "来自深渊",
+    "summary": "       在每一个角落都被探索完毕的世界中，唯一残留的秘境——大洞穴“深渊”。不知道延续到何方，深不见底的巨大纵向洞穴，栖息着各种奇妙奇怪的生物们，沉眠着现在的人类无法制造的贵重遗物。“深渊”那充满了不可思议的姿态吸引了人们，并驱使人们展开冒险。如此，多次挑战大洞穴的冒险者们，陆续得到了“探窟家”的名号。\r\n       住在建造于深渊边缘的城镇“奥斯”的孤儿莉可，梦想着有朝一日成为母亲那样伟大的探窟家，并解开深渊的谜团。这样的某一天，莉可在探索深渊的途中，捡到了有着少年样貌的机器人…？",
+    "nsfw": false,
+    "locked": false,
+    "date": "2017-07-07",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/f7/bf/203526_q2P6P.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/f7/bf/203526_q2P6P.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/f7/bf/203526_q2P6P.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/f7/bf/203526_q2P6P.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/f7/bf/203526_q2P6P.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "来自深渊"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Made in Abyss",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2017年7月7日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期五"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://miabyss.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "AT-X"
+        },
+        {
+            "key": "其他电视台",
+            "value": "TOKYO MX、テレビ愛知、サンテレビ、KBS京都、TVQ九州放送、サガテレビ、BS11"
+        },
+        {
+            "key": "播放结束",
+            "value": "2017年9月29日"
+        },
+        {
+            "key": "导演",
+            "value": "小島正幸"
+        },
+        {
+            "key": "Copyright",
+            "value": "©2017つくしあきひと・竹書房／メイドインアビス製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "つくしあきひと（竹書房「WEB コミックガンマ」）"
+        },
+        {
+            "key": "副导演",
+            "value": "垪和等、飯野慎也"
+        },
+        {
+            "key": "人物设定",
+            "value": "黄瀬和哉"
+        },
+        {
+            "key": "企画",
+            "value": "菊池剛、渡邊耕一、後藤明信、小笠原宗紀、山崎明日香、榊原光広、松井宏記、高麗大助、篠崎文彦"
+        },
+        {
+            "key": "制片人",
+            "value": "山下愼平、竹中信広、木村淳、礒谷徳知、鶴田美栄子、高木隆行、尾形光広"
+        },
+        {
+            "key": "动画制片人",
+            "value": "小笠原宗紀"
+        },
+        {
+            "key": "製作",
+            "value": "メイドインアビス製作委員会（KADOKAWA、Cygames、竹書房、KINEMA CITRUS、AT-X、ソニー・ミュージックソリューションズ、鐘通インベストメント、グローバル・ソリューションズ、角川メディアハウス）"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "リコ（CV：富田美憂）、レグ（CV：伊瀬茉莉也）、ナナチ（CV：井澤詩織）"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "中村亮介(OP) / kubotabee、UKYO INABA(ED)"
+        }
+    ],
+    "volumes": 0,
+    "eps": 13,
+    "total_episodes": 13,
+    "rating": {
+        "rank": 109,
+        "total": 16592,
+        "count": {
+            "one": 18,
+            "two": 11,
+            "three": 26,
+            "four": 36,
+            "five": 123,
+            "six": 480,
+            "seven": 2239,
+            "eight": 7171,
+            "nine": 4949,
+            "ten": 1539
+        },
+        "score": 8.2
+    },
+    "collection": {
+        "wish": 6395,
+        "collect": 24650,
+        "doing": 1424,
+        "on_hold": 895,
+        "dropped": 251
+    },
+    "tags": [
+        {
+            "name": "奇幻",
+            "count": 3600
+        },
+        {
+            "name": "漫画改",
+            "count": 2874
+        },
+        {
+            "name": "冒险",
+            "count": 2536
+        },
+        {
+            "name": "2017年7月",
+            "count": 2190
+        },
+        {
+            "name": "猎奇",
+            "count": 2138
+        },
+        {
+            "name": "来自深渊",
+            "count": 2076
+        },
+        {
+            "name": "TV",
+            "count": 1790
+        },
+        {
+            "name": "治愈",
+            "count": 1541
+        },
+        {
+            "name": "KINEMACITRUS",
+            "count": 1336
+        },
+        {
+            "name": "2017",
+            "count": 975
+        },
+        {
+            "name": "漫改",
+            "count": 889
+        },
+        {
+            "name": "致郁",
+            "count": 681
+        },
+        {
+            "name": "小岛正幸",
+            "count": 543
+        },
+        {
+            "name": "KINEMA_CITRUS",
+            "count": 232
+        },
+        {
+            "name": "小島正幸",
+            "count": 112
+        },
+        {
+            "name": "日本",
+            "count": 103
+        },
+        {
+            "name": "战斗",
+            "count": 54
+        },
+        {
+            "name": "神作",
+            "count": 51
+        },
+        {
+            "name": "剧情",
+            "count": 35
+        },
+        {
+            "name": "催泪",
+            "count": 34
+        },
+        {
+            "name": "2017年",
+            "count": 33
+        },
+        {
+            "name": "萌",
+            "count": 31
+        },
+        {
+            "name": "KINEMA.CITRUS",
+            "count": 31
+        },
+        {
+            "name": "倉田英之",
+            "count": 24
+        },
+        {
+            "name": "黄瀬和哉",
+            "count": 22
+        },
+        {
+            "name": "正太",
+            "count": 20
+        },
+        {
+            "name": "异世界",
+            "count": 19
+        },
+        {
+            "name": "仓田英之",
+            "count": 19
+        },
+        {
+            "name": "公路片",
+            "count": 16
+        },
+        {
+            "name": "土笔章人",
+            "count": 15
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "冒险",
+        "青年向"
+    ],
+    "series": false,
+    "main_character_ids": [
+        49600,
+        49601
+    ],
+    "main_characters": [
+        {
+            "id": 49600,
+            "name": "リコ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/30/b1/49600_crt_up2e4.jpg?r=1515127883",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/b1/49600_crt_up2e4.jpg?r=1515127883",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/b1/49600_crt_up2e4.jpg?r=1515127883",
+                "grid": "https://lain.bgm.tv/pic/crt/g/30/b1/49600_crt_up2e4.jpg?r=1515127883"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 20701,
+                    "name": "富田美憂",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023"
+                    },
+                    "short_summary": "富田 美憂（とみた みゆ、1999年11月15日 - ）は、日本の女性声優。アミューズ所属。埼玉県出身。\r\n\r\n小学生の時にテレビアニメ『ヴァンパイア騎士』を見て、声優業に興味を持った。その際にこの作品に出演していた宮野真守にも憧れを持ったと語っている。\r\n第一回「アニ☆たん!」ではファイナリストとなり6社にスカウトされ、同時期に開催された「2014声優アーティスト育成プログラム・セレクション」でグランプリを獲得した。\r\nデビュー作は2015年のテレビアニメ『干物妹！うまるちゃん』のタイヘイ（幼少期）役である。2016年、『アイカツスターズ！』の虹野ゆめ役で初主演。\r\n2018年、声優ユニットを中心としたメディアミックス企画『Kleissis』の林堂アキラ役に選ばれる。\r\n\r\n高校では漫画研究部に所属していた。好きな教科は英語と美術だと語っている。\r\n趣味・特技はイラストを描くこと、ゲーム、空手。空手では上段回し蹴りが得意であり、ゲームでは、『うたの☆プリンスさまっ♪』『薄桜鬼』などの乙女ゲームが好きである。\r\n歌うこと、踊ること、ディズニーが好きである。\r\n好きな食べ物は、りんご、栗。\r\n狼、犬、ホワイトタイガーなど虫以外の動物全般を好きだと語っており、チャップという名前の犬を飼っている。\r\n「自分を一言で言うと…」の質問に「挙動不審」だと答えている。また、好きな言葉には「考えるよりチャレンジ！」をあげている。\r\n原作のある作品の場合は原作を読み込んで、キャラクターの考え方や行動を理解してからオーディションに臨んでいると語っている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 49601,
+            "name": "レグ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/36/dc/49601_crt_PfqEH.jpg?r=1515128242",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/dc/49601_crt_PfqEH.jpg?r=1515128242",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/dc/49601_crt_PfqEH.jpg?r=1515128242",
+                "grid": "https://lain.bgm.tv/pic/crt/g/36/dc/49601_crt_PfqEH.jpg?r=1515128242"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4769,
+                    "name": "伊瀬茉莉也",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/aa/cd/4769_prsn_hII7Z.jpg?r=1687855320"
+                    },
+                    "short_summary": "小时候非常喜欢宫崎骏先生的作品，比如《风之谷》什么的，看了很多遍把录像带磨坏了。大约小学3年级左右，看了《幽灵公主》之后非常希望能够加入到里面，做出能让人感动的作品。那个时候光看这部动画就去了电影院8次，一开始是想当监督，后来偶然地有配音机会，便开始走上声优的道路。\r\n一开始父母强烈反对，后来茉莉也对他们描绘了心中的梦想，用“这是我必须去做的事”和“学费自己来付”说服了他们。那时拿出了从小学开始存的压岁钱【好心痛～（笑）】。一开始非常困难，一边要上学一边又要去2小时车程以外的培训中心，但是靠毅力坚持下来之后父母也开始变得支持了，后来嘛，就好了。\r\n第一次工作是在16岁那年，在动画片《愛してるぜベイベ★★》中饰演一个路人角色，台词也只有一两句，但那个时候紧张得不行，拿着剧本的手一直在发抖。后来在比较广为人知的《虫师》中配小孩子的声音，慢慢地工作就多了起来。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

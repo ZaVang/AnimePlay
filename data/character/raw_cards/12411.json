@@ -1,0 +1,70 @@
+{
+    "id": 12411,
+    "name": "蘭花・フランボワーズ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/24/48/12411_crt_qoRcr.jpg?r=1753361136",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/48/12411_crt_qoRcr.jpg?r=1753361136",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/48/12411_crt_qoRcr.jpg?r=1753361136",
+        "grid": "https://lain.bgm.tv/pic/crt/g/24/48/12411_crt_qoRcr.jpg?r=1753361136"
+    },
+    "summary": "天使队的成员之一，有着亮丽的金色长发及琥珀色的瞳孔，头上带着两个头饰，个性好强、充满自信有着强烈的正义感，凡事喜欢正面突破，是个相当热血的女孩，虽然本人不承认不过兰花是天使队里最容易掉眼泪最有人情味的人；遇到有困难的人难以放下，内心里其实是个懂得体谅别人的少女。\r\n主修体育系，非常擅长各类运动项目，由其格斗技更是拿手，据说曾在公平淘汰赛中击败男人并获得冠军（这似乎是她充满自信的原因）。\r\n兴趣是运动，喜欢看少女漫画也热衷于占卜，最喜欢吃超辣料理（曾在游戏月夜情人中吃过激辣1000倍咖哩）。\r\n与同期的梅尔优˙樱叶从学生时代就认识了，两人从认识到现在感情从没变过，不过梅尔优冒冒失失的个性总是让兰花感到无奈。\r\n兰花˙法兰波瓦兹似乎有许多弟妹。\r\n\r\n    兰花˙法兰波瓦兹的Ranpha意思是西兰花，也就是俗称的花椰菜；而法兰波瓦兹Franboise则是法文中木莓的意思，较常的说法则是覆盆子。\r\n兰花的名字跟林德曼的著名啤酒相同（Framboise），原料一样也是覆盆子。\r\n\r\n    主题曲为“Fortune Love”",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "兰花·法兰波瓦兹"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "兰花·弗兰波瓦兹"
+                },
+                {
+                    "k": "日文名",
+                    "v": "蘭花・フランボワーズ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ranpha Franboise"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "161cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "年龄",
+            "value": "18 岁→ 19 岁 ( Eternal Lovers) → 22 岁 ( GA2)"
+        },
+        {
+            "key": "座机",
+            "value": "GA-002 Kung-fu Fighter（功夫战机）"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 13
+    },
+    "anime_ids": [
+        4635,
+        18082,
+        4634
+    ]
+}

@@ -1,0 +1,513 @@
+{
+    "id": 477825,
+    "type": 2,
+    "name": "ぬきたし THE ANIMATION",
+    "name_cn": "拔作岛",
+    "summary": "这里是四季如夏的孤岛「青蓝岛」。\r\n在这座岛出生的橘淳之介，以父母过世为契机，与妹妹橘麻沙音一起回到了岛上。然而青蓝岛为了防止人口继续减少而实施了《超色情条例》，岛上因此到处都允许及推荐人进行色情爱爱（打炮）。要是拒绝这种「性产行为」，甚至会受到与犯罪同等的惩罚。因此，现在已然成为一座疯狂的岛屿。\r\n淳之介身为自豪的处男又是个处女厨，自然对这项条例抱有疑虑。为了守护自己与心爱妹妹的纯洁，他成立了反交配势力NLNS（No Love No Sex），以破坏色情条例为目标展开行动──！\r\n\r\n「我…一定要击溃色情条例！」",
+    "nsfw": false,
+    "locked": false,
+    "date": "2025-07-18",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/ee/a3/477825_5H55M.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/ee/a3/477825_5H55M.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/ee/a3/477825_5H55M.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/ee/a3/477825_5H55M.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/ee/a3/477825_5H55M.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "拔作岛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "NUKITASHI 住在拔作島上的我該如何是好？、NUKITASHI 住在拔作岛上的我该如何是好？",
+                    "k": null
+                },
+                {
+                    "v": "Nukitashi THE ANIMATION",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "11"
+        },
+        {
+            "key": "放送开始",
+            "value": "2025年7月18日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期五"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://nukiani.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "AT-X"
+        },
+        {
+            "key": "其他电视台",
+            "value": "BS11 / 岐阜放送 / TOKYO MX2 / KBS京都 / 三重テレビ"
+        },
+        {
+            "key": "导演",
+            "value": "長山延好"
+        },
+        {
+            "key": "音乐",
+            "value": "えびかれー伯爵、池木紗々、ウミガメ、かしこ、岩嵜壮志"
+        },
+        {
+            "key": "Copyright",
+            "value": "©Qruppo／青藍島観光協会"
+        },
+        {
+            "key": "原作",
+            "value": "Qruppo"
+        },
+        {
+            "key": "人物设定",
+            "value": "くまた(松隈勇樹)；副人设：出雲誉明、横松雄馬"
+        },
+        {
+            "key": "人物原案",
+            "value": "浮丸つぼね(kyokutyo)、如月千幸"
+        },
+        {
+            "key": "监修",
+            "value": "脚本监修：倉骨治人、神近ゆう；综合监修：ハメドリくん"
+        },
+        {
+            "key": "製作",
+            "value": "青藍島観光協会（KADOKAWA、Yostar、AT-X、Qruppo）"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "OP：LuneSoupe / ED：中山正恵、くまた[松隈勇樹]（协力）"
+        },
+        {
+            "key": "企画",
+            "value": "工藤大丈、田中翔、山崎明日香、Qruppo"
+        },
+        {
+            "key": "执行制片人",
+            "value": "笠原周造、竹ノ内端史"
+        },
+        {
+            "key": "制片人",
+            "value": "菊島憲文、藤原利紀、礒谷徳知、Oshino、紀東輝"
+        },
+        {
+            "key": "动画制片人",
+            "value": "西藤和広"
+        },
+        {
+            "key": "道具设计",
+            "value": "くまた(松隈勇樹)、大河広行、島すずめ、うのまこと"
+        },
+        {
+            "key": "美术设计",
+            "value": "草薙、グーフィー、益荒男貫汰、濱川修二郎"
+        },
+        {
+            "key": "美术监督",
+            "value": "小林嵩弥"
+        },
+        {
+            "key": "色彩设计",
+            "value": "伊予実美子"
+        },
+        {
+            "key": "副导演",
+            "value": "助监督：武本大樹"
+        },
+        {
+            "key": "摄影监督",
+            "value": "嶋哲哉"
+        },
+        {
+            "key": "剪辑",
+            "value": "丹彩子；剪辑助手：平野寧緒；剪辑工作室：グラフィニカ"
+        },
+        {
+            "key": "音响监督",
+            "value": "ひらさわひさよし；音响助监督：松尾崇宏"
+        },
+        {
+            "key": "音效",
+            "value": "小山健二"
+        },
+        {
+            "key": "音响",
+            "value": "ハヤブサフィルム；音响制作担当：新美基紀、吉川香純、喜田知子"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "茶畑満里奈"
+        },
+        {
+            "key": "录音",
+            "value": "都築寿文；录音工作室：ONSEN STUDIO"
+        },
+        {
+            "key": "录音助理",
+            "value": "杉江帆南"
+        },
+        {
+            "key": "助理制片人",
+            "value": "新井健介"
+        },
+        {
+            "key": "设定制作",
+            "value": "大倉圭祐"
+        },
+        {
+            "key": "制作进行",
+            "value": "高橋瑛太"
+        }
+    ],
+    "volumes": 0,
+    "eps": 11,
+    "total_episodes": 15,
+    "rating": {
+        "rank": 241,
+        "total": 2408,
+        "count": {
+            "one": 24,
+            "two": 4,
+            "three": 6,
+            "four": 12,
+            "five": 28,
+            "six": 96,
+            "seven": 442,
+            "eight": 1065,
+            "nine": 481,
+            "ten": 250
+        },
+        "score": 8.0
+    },
+    "collection": {
+        "wish": 3053,
+        "collect": 379,
+        "doing": 11563,
+        "on_hold": 97,
+        "dropped": 70
+    },
+    "tags": [
+        {
+            "name": "GAL改",
+            "count": 1086
+        },
+        {
+            "name": "2025年7月",
+            "count": 857
+        },
+        {
+            "name": "搞笑",
+            "count": 760
+        },
+        {
+            "name": "游戏改",
+            "count": 729
+        },
+        {
+            "name": "TV",
+            "count": 681
+        },
+        {
+            "name": "抽象",
+            "count": 597
+        },
+        {
+            "name": "Passione",
+            "count": 461
+        },
+        {
+            "name": "校园",
+            "count": 404
+        },
+        {
+            "name": "日本",
+            "count": 378
+        },
+        {
+            "name": "2025",
+            "count": 310
+        },
+        {
+            "name": "恋爱",
+            "count": 252
+        },
+        {
+            "name": "战斗",
+            "count": 239
+        },
+        {
+            "name": "qruppo",
+            "count": 239
+        },
+        {
+            "name": "青年向",
+            "count": 124
+        },
+        {
+            "name": "无法预测的命运之舞台",
+            "count": 105
+        },
+        {
+            "name": "卖肉",
+            "count": 66
+        },
+        {
+            "name": "长山延好",
+            "count": 21
+        },
+        {
+            "name": "肉番",
+            "count": 20
+        },
+        {
+            "name": "热血",
+            "count": 19
+        },
+        {
+            "name": "長山延好",
+            "count": 15
+        },
+        {
+            "name": "2025年",
+            "count": 12
+        },
+        {
+            "name": "未确定",
+            "count": 11
+        },
+        {
+            "name": "肉",
+            "count": 11
+        },
+        {
+            "name": "里番",
+            "count": 10
+        },
+        {
+            "name": "逆天",
+            "count": 10
+        },
+        {
+            "name": "燃",
+            "count": 9
+        },
+        {
+            "name": "猪原健太",
+            "count": 9
+        },
+        {
+            "name": "拔作岛",
+            "count": 6
+        },
+        {
+            "name": "色情",
+            "count": 6
+        },
+        {
+            "name": "后宫",
+            "count": 5
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "TV",
+        "日本",
+        "日本",
+        "游戏改",
+        "游戏改",
+        "青年向",
+        "青年向"
+    ],
+    "series": false,
+    "main_character_ids": [
+        63861,
+        63862,
+        63863,
+        63864,
+        106312
+    ],
+    "main_characters": [
+        {
+            "id": 63861,
+            "name": "渡会ヒナミ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/42/4e/63861_crt_tEY3m.jpg?r=1751811343",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/4e/63861_crt_tEY3m.jpg?r=1751811343",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/4e/63861_crt_tEY3m.jpg?r=1751811343",
+                "grid": "https://lain.bgm.tv/pic/crt/g/42/4e/63861_crt_tEY3m.jpg?r=1751811343"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 32659,
+                    "name": "小澤みのり",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/92/48/32659_prsn_W2zMG.jpg?r=1579508242",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/48/32659_prsn_W2zMG.jpg?r=1579508242",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/48/32659_prsn_W2zMG.jpg?r=1579508242",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/92/48/32659_prsn_W2zMG.jpg?r=1579508242"
+                    },
+                    "short_summary": "アンドピクセル所属声優",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 63862,
+            "name": "片桐奈々瀬",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/82/ad/63862_crt_07B79.jpg?r=1751811353",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/ad/63862_crt_07B79.jpg?r=1751811353",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/ad/63862_crt_07B79.jpg?r=1751811353",
+                "grid": "https://lain.bgm.tv/pic/crt/g/82/ad/63862_crt_07B79.jpg?r=1751811353"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 14414,
+                    "name": "石上静香",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/04/f5/14414_prsn_7nPYh.jpg?r=1735460841",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/f5/14414_prsn_7nPYh.jpg?r=1735460841",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/f5/14414_prsn_7nPYh.jpg?r=1735460841",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/04/f5/14414_prsn_7nPYh.jpg?r=1735460841"
+                    },
+                    "short_summary": "日本的女性声优，东京都出身，所属大泽事务所。\r\n\r\n東京メディアアカデミーの声優ボーカル科（現：東京声優アカデミーの声優養成科）を卒業。81プロデュース所属後、プロフィット養成所を経て2014年2月よりプロ・フィット所属となる。\r\n名前付きの初めての役は、『凪のあすから』の潮留晃。\r\nオーディションをして初めて受かった役は『健全ロボ ダイミダラー』の喜友名霧子。\r\n2022年1月1日、プロ・フィットが同年3月末で閉鎖することに伴い、大沢事務所へ移籍。\r\n\r\n2025年6月30日发表与[url=https://bgm.tv/person/41419]柳晃平[/url]结婚",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 63863,
+            "name": "畔美岬",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b0/72/63863_crt_V68j7.jpg?r=1751811521",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/72/63863_crt_V68j7.jpg?r=1751811521",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/72/63863_crt_V68j7.jpg?r=1751811521",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b0/72/63863_crt_V68j7.jpg?r=1751811521"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13368,
+                    "name": "岡本理絵",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/44/02/13368_prsn_lR18j.jpg?r=1621275023",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/02/13368_prsn_lR18j.jpg?r=1621275023",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/02/13368_prsn_lR18j.jpg?r=1621275023",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/44/02/13368_prsn_lR18j.jpg?r=1621275023"
+                    },
+                    "short_summary": "岡本 理絵（おかもと りえ、1月9日 - ）は、日本の女性声優。パワー・ライズ（合併前はトリトリオフィス）所属。秋田県出身。身長156cm。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 63864,
+            "name": "橘麻沙音",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1b/60/63864_crt_2NycY.jpg?r=1751811388",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/60/63864_crt_2NycY.jpg?r=1751811388",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/60/63864_crt_2NycY.jpg?r=1751811388",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1b/60/63864_crt_2NycY.jpg?r=1751811388"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 69976,
+                    "name": "小秋あこ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b6/55/69976_prsn_6pzog.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/55/69976_prsn_6pzog.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/55/69976_prsn_6pzog.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b6/55/69976_prsn_6pzog.jpg"
+                    },
+                    "short_summary": "出身地\r\n東京都\r\n趣味\r\nお笑い・バラエティ番組鑑賞、芸人ラジオ視聴、絵を描く、手芸・ハンドメイド、数独\r\n特技\r\n整理整頓・掃除、アドリブ芝居、雑談・一人喋り、コツコツした作業、寝つきが良い、暑さに強い 、声色＆話し方での人間観察、1のネタを10に膨らませる妄想",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 106312,
+            "name": "橘淳之介",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e7/89/106312_crt_yOzSs.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/89/106312_crt_yOzSs.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/89/106312_crt_yOzSs.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e7/89/106312_crt_yOzSs.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 25119,
+                    "name": "仲田ありさ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/cc/88/25119_prsn_lZ6qe.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/88/25119_prsn_lZ6qe.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/88/25119_prsn_lZ6qe.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/cc/88/25119_prsn_lZ6qe.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                },
+                {
+                    "id": 41419,
+                    "name": "柳晃平",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/60/39/41419_prsn_6d3j4.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/39/41419_prsn_6d3j4.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/39/41419_prsn_6d3j4.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/60/39/41419_prsn_6d3j4.jpg"
+                    },
+                    "short_summary": "2018年にマウスプロモーション付属養成所に入所。2020年よりマウスプロモーションに所属となる。\r\n\r\n『レイヤードストーリーズ ゼロ』の主人公・ユウト役で声優デビュー。\r\n\r\n2025年6月30日发表与[url=https://bgm.tv/person/14414]石上静香[/url]结婚",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

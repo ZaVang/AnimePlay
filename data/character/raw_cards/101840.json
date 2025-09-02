@@ -1,0 +1,48 @@
+{
+    "id": 101840,
+    "name": "後白河法皇",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/59/f3/101840_crt_C011Y.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/f3/101840_crt_C011Y.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/f3/101840_crt_C011Y.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/59/f3/101840_crt_C011Y.jpg"
+    },
+    "summary": "平氏との協力体制のもと院政を敷く法皇。重盛を重用しているが、清盛のことは警戒している。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "后白河法皇"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ごしらかわほうおう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Goshirakawa Houou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 1
+    },
+    "anime_ids": [
+        348335
+    ]
+}

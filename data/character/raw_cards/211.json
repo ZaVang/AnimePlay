@@ -1,0 +1,64 @@
+{
+    "id": 211,
+    "name": "氷河",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/eb/16/211_727917cbba1eea208541a643e74_Il6Qs.jpg?r=1427918874",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/16/211_727917cbba1eea208541a643e74_Il6Qs.jpg?r=1427918874",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/16/211_727917cbba1eea208541a643e74_Il6Qs.jpg?r=1427918874",
+        "grid": "https://lain.bgm.tv/pic/crt/g/eb/16/211_727917cbba1eea208541a643e74_Il6Qs.jpg?r=1427918874"
+    },
+    "summary": "星矢最可靠的伙伴，每次都协助星矢渡过难关，心中最重要的本来是海难中失去的妈妈，后来在师傅黄金圣斗士卡妙的引领下，明白了圣斗士的真谛。在西伯利亚修炼。白鸟星座。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "冰河"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ヒョウガ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1月23日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "173cm"
+        },
+        {
+            "key": "体重",
+            "value": "60kg"
+        },
+        {
+            "key": "国籍",
+            "value": "俄国"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 4,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 23,
+    "stat": {
+        "comments": 2,
+        "collects": 10
+    },
+    "anime_ids": [
+        4843
+    ]
+}

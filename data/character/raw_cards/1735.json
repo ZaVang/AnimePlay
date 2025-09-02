@@ -1,0 +1,71 @@
+{
+    "id": 1735,
+    "name": "皆城総士",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/75/22/1735_crt_VnNn3.jpg?r=1672722818",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/22/1735_crt_VnNn3.jpg?r=1672722818",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/22/1735_crt_VnNn3.jpg?r=1672722818",
+        "grid": "https://lain.bgm.tv/pic/crt/g/75/22/1735_crt_VnNn3.jpg?r=1672722818"
+    },
+    "summary": "一骑的挚友，皆城公藏与鞘的孩子。妹妹·乙姬沉睡于岛中的“女神的岩窟”中。\r\n与愉快成长的同龄人相比，自小就知晓着岛的真相与自身的责任。因为某个“事故”，在左眼处留下了一道伤疤。\r\n担任着于齐格飞系统中的与驾驶者们的指挥管理。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "皆城总士"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "皆城 総士"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みなしろ そうし"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Minashiro Soushi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2131年12月27日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "173cm"
+        },
+        {
+            "key": "体重",
+            "value": "61kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 2131,
+    "birth_mon": 12,
+    "birth_day": 27,
+    "stat": {
+        "comments": 10,
+        "collects": 47
+    },
+    "anime_ids": [
+        60901,
+        130230,
+        14106,
+        2936
+    ]
+}

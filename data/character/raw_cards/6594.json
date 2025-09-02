@@ -1,0 +1,83 @@
+{
+    "id": 6594,
+    "name": "愛野美奈子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/72/45/6594_crt_E9D9C.jpg?r=1465481690",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/45/6594_crt_E9D9C.jpg?r=1465481690",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/45/6594_crt_E9D9C.jpg?r=1465481690",
+        "grid": "https://lain.bgm.tv/pic/crt/g/72/45/6594_crt_E9D9C.jpg?r=1465481690"
+    },
+    "summary": "爱野美奈子，是著名的日本动漫《美少女战士》中的主要人物之一。五战士中最早觉醒的人。她有一只公猫叫阿尔特米斯，跟小兔的黑猫露娜是恋人，可变身成Sailor Venus。使用金星力量，漫画提及在苏醒成为Sailor Venus前，她一直都是以水手V（Sailor V）身份作战，目的是击败黑暗帝国的敌人和找寻同伴。与Sailor Moon一样，她拥有一只月亮形的镜子，是变身的法宝，梦想成为名歌手，守护星金星，经验比其他战士丰富，是四个守护神战士的首领。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "セーラーヴィーナス"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aino Minako"
+                },
+                {
+                    "k": "日文名",
+                    "v": "愛野美奈子"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "水手金星"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Mina Aino"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あいの みなこ"
+                },
+                {
+                    "k": "\\",
+                    "v": "Arianne Aino"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "简体中文名",
+            "value": "爱野美奈子"
+        },
+        {
+            "key": "生日",
+            "value": "????-10-22"
+        },
+        {
+            "key": "身高",
+            "value": "157"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 22,
+    "stat": {
+        "comments": 8,
+        "collects": 40
+    },
+    "anime_ids": [
+        5434,
+        5432,
+        1510,
+        5433,
+        5428
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "id": 87,
+    "name": "アルフォンス・エルリック",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8d/b3/87_crt_DaRIi.jpg?r=1378928233",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/b3/87_crt_DaRIi.jpg?r=1378928233",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/b3/87_crt_DaRIi.jpg?r=1378928233",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8d/b3/87_crt_DaRIi.jpg?r=1378928233"
+    },
+    "summary": "在钢铁铠甲中有颗善良的心。\r\n    那铠甲里面是空洞洞的。阿尔丰斯·艾尔利克是个只有灵魂的人。4年前，他失去了整个身体作为人体炼成的代价，但因哥哥拼死炼成，他的灵魂得以附在铠甲上，继续生存着。他比任何人更深切地理解爱德、关心他，有时还劝慰容易冲动的哥哥，担当监护人的角色。和哥哥一起持续着取回身体的旅程。对阿尔而言，最大的愿望是爱德的身体能恢复原状。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿尔芬斯·艾尔利克"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Alphonse Elric"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "232.5cm"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "anidb.net"
+                }
+            ]
+        },
+        {
+            "key": "出生年份",
+            "value": "大陆历1900年"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 23,
+        "collects": 166
+    },
+    "anime_ids": [
+        1428,
+        315
+    ]
+}

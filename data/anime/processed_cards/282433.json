@@ -1,0 +1,120 @@
+{
+    "id": 282433,
+    "name": "别对映像研出手！",
+    "image_path": "data/images/anime/282433.jpg",
+    "points": 8.1,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "　　高中1年级学生浅草绿，是强调“设定即生命”的动画迷。在素描本上描绘积累各种各样的想法，却因不能一个人行动做事而无法迈出走向动画制作的一步。对于浅草这种才能，拥有制片人气质的金森沙耶香很快注意到了。同时，得知同学兼新星读者模特的水崎燕，其实希望将来成为动画人，3人为了展现脑内“最强的世界”而设立了映像研……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2020-01-05",
+    "rating_rank": 183,
+    "rating_score": 8.1,
+    "rating_total": 8207,
+    "main_character_ids": [
+        72138,
+        72139,
+        72140
+    ],
+    "main_characters": [
+        {
+            "id": 72138,
+            "name": "浅草みどり",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/81/4d/72138_crt_mi200.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/4d/72138_crt_mi200.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/4d/72138_crt_mi200.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/81/4d/72138_crt_mi200.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 29166,
+                    "name": "伊藤沙莉",
+                    "type": 1,
+                    "career": [
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/39/46/29166_prsn_52bcb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/46/29166_prsn_52bcb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/46/29166_prsn_52bcb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/39/46/29166_prsn_52bcb.jpg"
+                    },
+                    "short_summary": "伊藤 沙莉（いとう さいり、1994年5月4日 - ）は、日本の女優（元・子役）。\r\n千葉県千葉市蘇我出身。アルファエージェンシー所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 72139,
+            "name": "水崎ツバメ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/2e/b9/72139_crt_Ml1S1.jpg?r=1580228401",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/b9/72139_crt_Ml1S1.jpg?r=1580228401",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/b9/72139_crt_Ml1S1.jpg?r=1580228401",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2e/b9/72139_crt_Ml1S1.jpg?r=1580228401"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 35731,
+                    "name": "松岡美里",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/63/c3/35731_prsn_kTtZb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/c3/35731_prsn_kTtZb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/c3/35731_prsn_kTtZb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/63/c3/35731_prsn_kTtZb.jpg"
+                    },
+                    "short_summary": "趣味・スポーツ\t映画鑑賞\r\n特技\t歌唱　長座体前屈\r\n資格\t話ことば検定3級\r\n芸歴\t日本ナレーション演技研究所",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 72140,
+            "name": "金森さやか",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1c/d1/72140_crt_gRobv.jpg?r=1581429379",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/d1/72140_crt_gRobv.jpg?r=1581429379",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/d1/72140_crt_gRobv.jpg?r=1581429379",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1c/d1/72140_crt_gRobv.jpg?r=1581429379"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5636,
+                    "name": "田村睦心",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/39/84/5636_prsn_p449k.jpg?r=1665351736"
+                    },
+                    "short_summary": "日本东京都出身的女性声优，现时隶属 I'm Enterprise。\r\n\r\n日本解说表演研究所毕业。2007年，在电视动画《悠久之翼》中以声优身份出道。2008年，在《Battle Spirits 少年突破马神》中首次担任主演。\r\n嗓音沙哑，多出演动画男主角的少年时期形象的角色。\r\n2014年8月，因为喉咙问题切除了息肉而暂时休息。9月1日在博客上记载康复，9月8日在广播节目中说明情况。\r\n\r\n官方说法上爱好是书法和长笛。从小学1年级开始练习书法，擅长草书和行书。实际上私下里喜欢一个人望着墙壁发呆。\r\n喜欢吃东西和睡觉。喜欢的食物是意大利面、梅干一类的下酒菜。也喜欢喝酒。\r\n喜欢布娃娃。\r\n家中有一个比自己小1岁的弟弟。\r\n昵称是“田村少年”，但是这个名字和自己担任少年役居多没有直接关系。\r\n与共同出演过《Battle Spirits 少年突破马神》、《爱杀宝贝》的赤崎千夏有深交。\r\n把bl游戏藏在书柜的最下层。“其实我根本就没有藏，只是放在那里而已。”",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

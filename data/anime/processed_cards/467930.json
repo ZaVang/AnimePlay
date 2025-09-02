@@ -1,0 +1,248 @@
+{
+    "id": 467930,
+    "name": "青春笨蛋少年不做圣诞服女郎的梦",
+    "image_path": "data/images/anime/467930.jpg",
+    "points": 7.1,
+    "cost": 1,
+    "rarity": "N",
+    "description": "思春期症候群──\r\n据说这是一种由不安定的精神状态引发的不可思议现象。\r\n\r\n在高中时期与许多出现思春期症候群的少女们相遇的「梓川咲太」，如今也成为大学生了。咲太与国民级人气女演员、同时也是他的恋人的「樱岛麻衣」都考上了位于金泽八景的大学。他在校园内，发现了一名穿着不合时节的迷你裙圣诞女郎。\r\n\r\n「真让人惊讶。原来你看得见我啊。」\r\n\r\n她说出了这句似曾相识的台词。声称自己正在「赠送思春期症候群」的迷你裙圣诞女郎，对咲太说道——「……我的名字叫雾岛透子。」\r\n社群网站流行的预知梦、身份不明的网络歌手、骚灵现象，随着一个个充满谜团的现象的发生，与心绪荡漾的少女们之间不可思议的故事将再度开始。\r\n\r\n思春期不会结束──",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "小说改"
+    ],
+    "date": "2025-07-05",
+    "rating_rank": 1968,
+    "rating_score": 7.1,
+    "rating_total": 913,
+    "main_character_ids": [
+        35980,
+        61550,
+        86970,
+        87016,
+        121587,
+        121588,
+        167330
+    ],
+    "main_characters": [
+        {
+            "id": 35980,
+            "name": "桜島麻衣",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7d/1c/35980_crt_J56iZ.jpg?r=1538834837",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/1c/35980_crt_J56iZ.jpg?r=1538834837",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/1c/35980_crt_J56iZ.jpg?r=1538834837",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7d/1c/35980_crt_J56iZ.jpg?r=1538834837"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5766,
+                    "name": "瀬戸麻沙美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/b7/5766_prsn_6q644.jpg"
+                    },
+                    "short_summary": "中学生2年生の時、偶然視聴したアニメ『D.Gray-man』の主人公、アレン・ウォーカー（声：小林沙苗）に魅せられ、キャラクターだけでなく演者の声優にも興味が湧き、声優を志す。高校在学中の2009年に声優事務所のオーディションを受験、翌2010年より声優活動を開始する。\r\n2010年、初めて受けたオーディションでテレビアニメ『放浪息子』（2011年）の準主人公 \"高槻よしの\" 役に抜擢される。彼女にとって初仕事の収録だったが、演技などに関して事前の指示はほとんど必要としなかったと監督のあおきえいは述べている。\r\n2011年、日本テレビ系テレビアニメ『ちはやふる』で主演（ \"綾瀬千早\" 役）とエンディング主題歌の歌唱を担当。同局系列のテレビアニメ『HUNTER×HUNTER』の \"クラピカ\" 役オーディションに参加していた瀬戸の演技が『ちはやふる』番組関係者の目に留まり、改めて \"綾瀬千早\" 役のオーディションを行ったところ満場一致で瀬戸の起用が決定した。\r\n2015年4月1日付けで、シグマ・セブンeからシグマ・セブンへ移動。\r\n2021年11月1日よりStarCrewへ移籍。あわせて公式Twitterアカウントを開設した。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 61550,
+            "name": "梓川咲太",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b9/0c/61550_crt_8bbOR.jpg?r=1539633078",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/0c/61550_crt_8bbOR.jpg?r=1539633078",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/0c/61550_crt_8bbOR.jpg?r=1539633078",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b9/0c/61550_crt_8bbOR.jpg?r=1539633078"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9953,
+                    "name": "石川界人",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/af/c4/9953_prsn_O0Dsl.jpg"
+                    },
+                    "short_summary": "日本男性声优。隶属于Stay Luck，出生于东京都。\r\n\r\n趣味\t読書、一人劇\r\n特技\t水泳、ウィンタースポーツ\r\n経歴\tプロ・フィット声優養成所　卒\r\n2014年第八回声優アワードにて「新人男優賞」受賞。\r\n2020年第十四回声優アワードにて「助演男優賞」受賞。\r\n2022年2月1日、ステイラックへ移籍。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 86970,
+            "name": "赤城郁実",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d3/a0/86970_crt_Z9iHY.jpg?r=1752965374",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/a0/86970_crt_Z9iHY.jpg?r=1752965374",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/a0/86970_crt_Z9iHY.jpg?r=1752965374",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d3/a0/86970_crt_Z9iHY.jpg?r=1752965374"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 35912,
+                    "name": "山根綺",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f4/05/35912_prsn_Ba2b8.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/05/35912_prsn_Ba2b8.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/05/35912_prsn_Ba2b8.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f4/05/35912_prsn_Ba2b8.jpg"
+                    },
+                    "short_summary": "山根 綺（やまね あや）は、日本の女性声優、歌手。Kleissisの元メンバー。神奈川県横浜市出身。青二プロダクション所属。2023年3月、公式ファンサイト「YAYA RECORDS」を開設。\r\n\r\n父親が日本と中国のハーフで母親は中国人。\r\n\r\n「綺」という名前は本名である。予定日より少し早く可愛らしい赤ちゃんとは程遠い姿で生まれ、身体が弱く、それを見た母は、名前を大変更し、「どんどん綺麗になりますように」という意味を込めて名付けてくれたという。\r\n\r\n趣味は料理、麻雀、ギター、ヒューマンドラマを観ること。特技は歌唱、ダンス。愛用シャンプーはAujua。金属アレルギーを持っており、身に着けるアクセサリーは純金かプラチナがメインである。18Kゴールドや樹脂製も試用したが、かぶれてしまうとのこと。\r\n\r\n影響を受けたアニメとして『犬夜叉』や『Angel Beats!』、『涼宮ハルヒの憂鬱』を挙げている。\r\n\r\n2021年、「アイドルマスターシリーズ」の『アイドルマスター シャイニーカラーズ』にて、新たなユニット・SHHisの緋田美琴役に抜擢された。専門学校時代から自身は「ずっと『アイマス』の声優になりたい」といった夢を掲げており、事務所に所属後は『シンデレラガールズ』と『シャイニーカラーズ』のオーディションを受けたものの合格できなかったが、同年のオーディションで遂に合格することができた。また、過去のオーディションとして『シャイニーカラーズ』の幽谷霧子役・浅倉透役・市川雛菜役をそれぞれ受けており、緋田美琴役に合格した時のオーディションでは、斑鳩ルカ役も受けていた。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 87016,
+            "name": "広川卯月",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/99/65/87016_crt_K1CR9.jpg?r=1752964844",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/65/87016_crt_K1CR9.jpg?r=1752964844",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/65/87016_crt_K1CR9.jpg?r=1752964844",
+                "grid": "https://lain.bgm.tv/pic/crt/g/99/65/87016_crt_K1CR9.jpg?r=1752964844"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 12568,
+                    "name": "雨宮天",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a2/62/12568_prsn_jLLz4.jpg?r=1693248727"
+                    },
+                    "short_summary": "雨宫天（あまみや そら）是日本的女性声优、歌手，1993年8月28日出生于日本东京都。\r\n\r\n[b]经历[/b]\r\n1993年8月28日出生于日本东京都；因憧憬声优[url=https://bgm.tv/person/4244]泽城美雪[/url]而向往成为一名声优。\r\n在2011年举办的第2回MusicRay'n超级声优试镜中合格，2012年声优活动开始，2014年在TV动画《[url=https://bgm.tv/subject/88493]一周的朋友。[/url]》担任[url=https://bgm.tv/character/23104]藤宫香织[/url]CV,为初主役角色。\r\n2014年12月21日，与同事务所的[url=https://bgm.tv/person/13565]麻仓桃[/url]、[url=https://bgm.tv/person/13581]夏川椎菜[/url]组成声优组合“[url=https://bgm.tv/person/18492]TrySail[/url]”，并于2015年·正式开始活动。\r\n2015年第9回声优奖中获得新人女声优奖。\r\n2015年10月2日，发行自己的第一部写真集《ソライロ～青と旅する～》。\r\n2020年4月17日，开通绘画日记企划期间限定Twitter账号(现已转为永久账号)",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 121587,
+            "name": "姫路紗良",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6e/9f/121587_crt_HsRZr.jpg?r=1752965305",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/9f/121587_crt_HsRZr.jpg?r=1752965305",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/9f/121587_crt_HsRZr.jpg?r=1752965305",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6e/9f/121587_crt_HsRZr.jpg?r=1752965305"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 27194,
+                    "name": "小原好美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844"
+                    },
+                    "short_summary": "日本女性配音员、演员。大泽事务所所属。\r\n\r\n国中时开始喜欢动画，并想要成为声优。高中毕业后进入Human Academy综合学园。2012年开始当了两年的演员，之后加入大泽事务所。\r\n\r\n2017年7月起3个月间在长寿电台节目《Radio Dottoai》就任第71代主持人。\r\n\r\n2017年4月至6月播出的《月色真美》中初次担任主演。同年7月播出《咕噜咕噜魔法阵 (2017年版)》中担演女主角而掀起话题，并与共同主演的石上静香主持同名动画的广播节目。同年11月10日Instagram开设。\r\n\r\n2019年于《Star☆Twinkle 光之美少女》中第一次出演光之美少女系列。同年4月，由文化放送“超！A&G+”制作的广播节目《小原好美のココロおきなく》开播，5月开设节目官方Twitter。2020年3月，该广播节目获得第6届Aniradi Award“BEST COMFORT RADIO 疗愈电台奖”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 121588,
+            "name": "美東美織",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/df/ee/121588_crt_zn769.jpg?r=1752965146",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/ee/121588_crt_zn769.jpg?r=1752965146",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/ee/121588_crt_zn769.jpg?r=1752965146",
+                "grid": "https://lain.bgm.tv/pic/crt/g/df/ee/121588_crt_zn769.jpg?r=1752965146"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 27559,
+                    "name": "石見舞菜香",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710"
+                    },
+                    "short_summary": "日本女性声优。出生于埼玉县。所属事务所为Raccoon Dog（ラクーンドッグ）。\r\n毕业于Pro Fit声优培训学校。\r\n\r\n初中时期观看《我们仍未知道那天所看见的花的名字。》（あの日見た花の名前を僕達はまだ知らない。）时，被茅野爱衣的演技深深打动，萌生了\"想用声音感动人心\"的愿望，从此立志成为声优。而让她初识声优职业的契机是《无头骑士异闻录》（デュラララ!!）。\r\n\r\n因自觉发音不够清晰，石见认为必须比他人更早开始专业训练才能成为职业声优。为此她向父亲立下\"若不同意自己就读声优培训学校就拒绝升学高中\"的宣言，最终成功说服家人。\r\n\r\n2016年，在《未闻花名》编剧冈田麿里首部执导作品《朝花夕誓——于离别之朝束起约定之花》（さよならの朝に約束の花をかざろう）中，石见被选拔担任女主角玛奇亚的配音。该作中更实现了与饰演玛奇亚挚友蕾莉亚的茅野爱衣同台演出。\r\n\r\n兴趣爱好是散步、读书，特长是演奏大号（チューバ）和动耳神功。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 167330,
+            "name": "ミニスカサンタ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/53/4d/167330_crt_aF7cX.jpg?r=1752965050",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/4d/167330_crt_aF7cX.jpg?r=1752965050",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/4d/167330_crt_aF7cX.jpg?r=1752965050",
+                "grid": "https://lain.bgm.tv/pic/crt/g/53/4d/167330_crt_aF7cX.jpg?r=1752965050"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13164,
+                    "name": "上田麗奈",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c5/14/13164_prsn_KWnmW.jpg?r=1752543801"
+                    },
+                    "short_summary": "日本的女性声优，富山县出身，所属事务所为81 Produce。\r\n初中时同属演剧部的女生有声优志向者，尊敬她的上田觉得“声优肯定是很美妙的职业”，又担心“自己的性格很奇怪”，本来以美术大学为志愿的她最终在声优试音报名结束前三天才报名。\r\n2011年，在第5回81 Audition中获得准优秀奖，之后加入81 Produce。\r\n获第九届声优奖新人女声优奖。\r\n是声优组合Anisonia的成员之一。\r\n在电视动画《摸索吧！部活剧》中，一人分饰18角。\r\n绘画力极强，《摸索吧！部活剧》的试音中因为绘画好而被选中，后来也在花舞少女广播中绘画并得到采用，还担任了《骇客娃娃》第五话的Endcard。\r\n不擅长运动。\r\n在各种场合被人说“凡骨”，自己的性格也很天然。\r\n自称只要对她好，就能喜欢上那个人。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

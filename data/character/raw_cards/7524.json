@@ -1,0 +1,57 @@
+{
+    "id": 7524,
+    "name": "伊藤開司",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/58/ec/7524_crt_anidb.jpg?r=1381750879",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/ec/7524_crt_anidb.jpg?r=1381750879",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/ec/7524_crt_anidb.jpg?r=1381750879",
+        "grid": "https://lain.bgm.tv/pic/crt/g/58/ec/7524_crt_anidb.jpg?r=1381750879"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊藤开司"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "中国真人版名",
+                    "v": "郑开司"
+                },
+                {
+                    "k": "日文名",
+                    "v": "伊藤開司"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Itou Kaiji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 29,
+        "collects": 106
+    },
+    "anime_ids": [
+        3892,
+        12317
+    ]
+}

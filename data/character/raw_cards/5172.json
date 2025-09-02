@@ -1,0 +1,68 @@
+{
+    "id": 5172,
+    "name": "パルモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5c/44/5172_crt_8mUIQ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/44/5172_crt_8mUIQ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/44/5172_crt_8mUIQ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5c/44/5172_crt_8mUIQ.jpg"
+    },
+    "summary": "头上盛开着热带花朵的植物型数码宝贝。虽然从种子兽发生偏向爬虫类的进化，却因为外表与特性而被分类到植物型的珍奇类型。白天会张开花叶般的手臂进行光合作用，平常会将腿部埋进土里像植物根一般吸收养分，不过其实是可以步行的。头部的花在高兴快乐的时候会散发出甘甜的香气，愤怒或感觉到危险时则是发出连大型数码宝贝都会落荒而逃的恶臭。必杀技是以带有强烈毒性的茎叶缠住对手的『毒蔓藤』，受到此攻击就会使身体麻痹。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "巴鲁兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Palmon，Parumon"
+                },
+                {
+                    "k": "韩文名",
+                    "v": "팔몬"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Parumon"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference/detail.php?directory_name=palmon"
+        },
+        {
+            "key": "等级",
+            "value": "成长期"
+        },
+        {
+            "key": "类型",
+            "value": "植物型"
+        },
+        {
+            "key": "属性",
+            "value": "资料"
+        },
+        {
+            "key": "必杀技",
+            "value": "毒蔓藤"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 3
+    },
+    "anime_ids": [
+        3128
+    ]
+}

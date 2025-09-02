@@ -1,0 +1,100 @@
+{
+    "id": 3216,
+    "name": "エミヤ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/12/a1/3216_crt_OMAL4.jpg?r=1492586676",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/a1/3216_crt_OMAL4.jpg?r=1492586676",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/a1/3216_crt_OMAL4.jpg?r=1492586676",
+        "grid": "https://lain.bgm.tv/pic/crt/g/12/a1/3216_crt_OMAL4.jpg?r=1492586676"
+    },
+    "summary": "与凛订定契约·弓兵的英灵。\r\n经常嘲讽他人的现实主义者，不过与凛之间互相有着坚强的羁绊。\r\n喜欢单独行动，明明是Archer却喜欢近身战，拿手的武器是雌雄双刀－干将莫邪，超人的弓技直到Fate/hollow ataraxia才展现。\r\n他本人自称由于召唤时的事故忘了自己的真身为何，拿手的技术是家事全能，凛曾称赞过他泡的红茶非常好喝。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "卫宫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "红茶，红A，阿茶，背影侠"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "英灵卫宫"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Emiya"
+                },
+                {
+                    "k": "日文名",
+                    "v": "英霊エミヤ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Archer"
+                },
+                {
+                    "k": "昵称",
+                    "v": "Faker"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "187cm"
+        },
+        {
+            "key": "体重",
+            "value": "78kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "属性",
+            "value": "中立·中庸"
+        },
+        {
+            "key": "印象颜色",
+            "value": "红"
+        },
+        {
+            "key": "难对付的东西",
+            "value": "正义的伙伴"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "所有家务（本人否认）"
+        },
+        {
+            "key": "擅长",
+            "value": "修理、家务全能"
+        },
+        {
+            "key": "职阶",
+            "value": "アーチャー Archer"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 70,
+        "collects": 400
+    },
+    "anime_ids": [
+        95225,
+        109386
+    ]
+}

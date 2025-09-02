@@ -1,0 +1,64 @@
+{
+    "id": 3880,
+    "name": "柊つかさ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/49/69/3880_crt_pSTN3.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/69/3880_crt_pSTN3.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/69/3880_crt_pSTN3.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/49/69/3880_crt_pSTN3.jpg"
+    },
+    "summary": "　　柊家四女，擅长料理，但却不太擅长运动与念书。体格比起一般标准来说稍微小了点。眼睛是薄青紫色，淡紫色的短发上常常缚有像发箍一样作用的缎带，是典型的天然治愈系角色，也是个好人。\r\n\r\n　　与双亲、姊妹共6人同住。和此方是同班同学。在生日时候收到了手机当作礼物，但却因为把手机放在裙子口袋中忘了拿出来就拿去洗而报废，重新买了后也曾经跌到地上而坏掉。\r\n　　也似乎有过把热水加进炒面泡面后就摆着，结果应该要倒掉的热水都被面吸干的经历，由此可见她的冒失。另外她也很喜欢在鸡肉蛋饭（亲子丼）以及牛肉饭等等加上蛋黄酱来吃。 是左撇子。\r\n　　擅长的科目是家政科，不擅长的是体育。\r\n　　在2008年萌战中获得亚军。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "柊司"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ひいらぎ つかさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hiiragi Tsukasa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月7日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "惯用手",
+            "value": "左手"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 7,
+    "stat": {
+        "comments": 49,
+        "collects": 389
+    },
+    "anime_ids": [
+        276
+    ]
+}

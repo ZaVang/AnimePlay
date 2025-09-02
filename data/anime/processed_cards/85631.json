@@ -1,0 +1,232 @@
+{
+    "id": 85631,
+    "name": "JOJO的奇妙冒险 星尘斗士",
+    "image_path": "data/images/anime/85631.jpg",
+    "points": 8.0,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "时为1987年，乔瑟夫·乔斯达与“柱之男”们之间的死战后过了50年……乔瑟夫为了为了帮助“被恶灵附身了”的外孙子·空条承太郎而来到了日本。原来那并不是恶灵而是幽波纹（替身）。替身突然出现的原因在于，从跨越100年的长眠中苏醒过来的吸血鬼·DIO与乔斯达家之间的令人忌讳的因缘。为了拯救受到DIO的诅咒而倒下的承太郎的母亲·荷莉，他们决定要打倒邪恶的化身·DIO，和伙伴们一起踏上了旅程。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2014-04-04",
+    "rating_rank": 213,
+    "rating_score": 8.0,
+    "rating_total": 15009,
+    "main_character_ids": [
+        878,
+        879,
+        3100,
+        3106,
+        17601,
+        18570
+    ],
+    "main_characters": [
+        {
+            "id": 878,
+            "name": "空条承太郎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/15/41/878_crt_1DgJ5.jpg?r=1645975679",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/41/878_crt_1DgJ5.jpg?r=1645975679",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/41/878_crt_1DgJ5.jpg?r=1645975679",
+                "grid": "https://lain.bgm.tv/pic/crt/g/15/41/878_crt_1DgJ5.jpg?r=1645975679"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4456,
+                    "name": "小野大輔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c4/8e/4456_prsn_HEQe3.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/8e/4456_prsn_HEQe3.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/8e/4456_prsn_HEQe3.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c4/8e/4456_prsn_HEQe3.jpg"
+                    },
+                    "short_summary": "在日本大学艺术学部放送学科就读时，主要是专攻电视节目制作。但因为当时提出的企划作品被教授评价的很差，所以转而改以演出者方式参与，并在参与过程中感受到演戏的有趣，因此决定以成为声优为目标。\r\n　　 出道当时，以动画节目的准常态出演（担任非固定角色名的小角色配音）为主。\r\n　　 第一部担任主角的动画作品是「AIR」TV动画版的男主角国崎往人。\r\n　　 在2006年放送的动画《凉宫春日的忧郁》以古泉一树这个角色获得广大知名度，其後也陆续获得许多要角演出。从帅气知性的青年到有点脱线的搞笑角色，演出的类型范围十分广泛。\r\n　　 2008年以《南家三姐妹》保坂这个角色获得第二回声优奖男优部门配角赏。　\r\n　　据来自2010年6月14日，IT世界网的咨询《Voice NewType投票，新一代声优崭露头角》中报道：男性榜单这边倒几乎都是老面孔，不过占据首位的再也不是福山润和神谷浩史等人，今次终于也轮到了小野大辅。长期以来如同劳模一般辛苦工作的小野大辅，如今终于名利双收，不但摘得上届声优大赏最佳男主角赏，如今人气投票又问鼎冠军，实在可喜可贺。\r\n　　 2010年1月31日その执事、狂騒～赤いヴァレンタイン声优见面会中被主持人吉田尚记称为声优界的谷原章介。\r\n　　 2010年3月以《黑执事》塞巴斯蒂安这个角色获得第四回声优奖主演男优赏。\r\n　　 2010年4月新番《迷糊餐馆working》中担任佐藤润的声优。\r\n　　 2010年4月新番《无法逃离的背叛》中担任莲城焰椎真的声优\r\n　　 2010年7月新番《传说中的勇者传说》中担任西昂·阿斯塔尔的声优。《黑执事2》中继续担任塞巴斯蒂安的声优。\r\n　　在《背叛》中的热血少年，《传说中的勇者传说》的拥有伟大理想又腹黑的西昂使小野大辅的声线变化发挥地更为淋漓尽致。",
+                    "locked": false
+                },
+                {
+                    "id": 7302,
+                    "name": "高森奈津美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/01/4a/7302_prsn_V44Vn.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/4a/7302_prsn_V44Vn.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/4a/7302_prsn_V44Vn.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/01/4a/7302_prsn_V44Vn.jpg"
+                    },
+                    "short_summary": "高森奈津美（たかもり なつみ、1987年2月14日），日本女声优。出身于山梨县，血型是A型。\r\n\r\nPro Fit声优养成所第10期生出身。2009年10月毕业。\r\n高中时加入羽毛球部，并有参加校际间运动会的经历。\r\n兴趣爱好是逛咖啡馆和插画。\r\n特技是握力“40”以上和随便到哪里都能睡着。\r\n持有全商情报处理检定2级、汉字检定3级别、全经计算器检定3级以及秘书实务检定3级。\r\n因山梨县出身的，使用方言为关东方言的甲州弁，曾出任山梨县富士吉田市“樱织”旅游宣传大使。\r\n稍微下垂的黑色双目是她的典型特征，本人自嘲为“エロ目”。\r\n同事务所的茅野爱衣曾对高森给出“胸部好大”的第一印象。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 879,
+            "name": "ジョセフ・ジョースター",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/32/fb/879_crt_8LVcM.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/fb/879_crt_8LVcM.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/fb/879_crt_8LVcM.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/32/fb/879_crt_8LVcM.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4045,
+                    "name": "石塚運昇",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/9c/08/4045_prsn_msnzf.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/08/4045_prsn_msnzf.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/08/4045_prsn_msnzf.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9c/08/4045_prsn_msnzf.jpg"
+                    },
+                    "short_summary": "日本男性配音员、演员、旁白。原Aksent所属（2010年1月离所），最终所属于青二Production。出身于福井县胜山市。A型血。\r\n本名与艺名相同，不一样的是将日文发音“いしづか ゆきのり”变更为“いしづか うんしょう”。\r\n石冢以《精灵宝可梦》系列的大木博士为人所知，此外经常演出像《头文字D》的藤原文太等成熟男性角色。\r\n2018年8月17日，由青二Production发表石冢因食道癌药物治疗无效，已于2018年8月13日逝世，享寿67岁。\r\n\r\n高中时代首次在别人面前演戏，激起了演员的热情。\r\n由于家里经营机车行，从年轻时期即开始骑乘，年过30岁仍然乐于其中。\r\n成为演员之前在剧团四季与剧团青年座之间做荞麦面的摊贩生意。\r\n演艺事业从剧团蔷薇座→シェイクスピアシアター开始。石冢自身描述：刚开始配音工作的当时，曾在与舞台工作之间烦恼许久，但仍然陆续增加配音的工作，后来在《精灵宝可梦》时，才第一次意识到在映像管（电视机）前的观众（小孩）。在这之前似乎对被称为“声优”这件事有抵抗心理。\r\n年轻时常饰演美男角色“ヴイヴイ”イわしていた。（共演者谈）\r\n高中时代曾加入登山社，并参加过日本全国高中体育比赛。\r\n主办以朗读指导为主的“石冢运昇 Reading Company（石塚運昇 リーディングカンパニー）”，举行由参加者演出的朗读剧，以自身对舞台演员、声优的经验做演出、演技指导。\r\n在儿童节目时以像大木博士一般的温厚声音演出，但依照角色性格会骤变为激烈的讲话方式，声音更加地老气好像完全变成另一个人。\r\n\r\n当以大木博士身份参加《精灵宝可梦》活动，被现场的小孩问到“超梦和喷火龙谁比较强？”的问题时，石冢的回答是“不晓得。”。\r\n为了替精灵宝可梦电影做宣传，以大木博士身份在‘おはスタ’节目中作为特别来宾露脸。亦曾在同节目的单元内配合森巴的节奏跳舞。\r\n曾配合《精灵宝可梦》的特别节目一同出国，有过穿着阿啰哈衬衫搭配短裤、凉鞋打扮登场的画面。\r\n由于经常喝得一身酒臭味出现在录音现场，一部分的共演者以蕴含敬意和亲切感的“醉汉老爹（酔っぱらい親父）”称之。\r\n在《MAZE☆爆热时空》的影带访谈中，关于女性同士的互动，表达“（因为都是女的）看到觉得自己赚到了”。\r\n其人似乎是容易落泪的个性，于《星际牛仔》第18话收录当中，受到剧中女主角菲（配音：林原惠）说出“加油！加油！我自己！（フレーフレーアタシ）”的台词场景感动而泣。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 3100,
+            "name": "モハメド・アヴドゥル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7c/23/3100_crt_HX9nO.jpg?r=1368729822",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/23/3100_crt_HX9nO.jpg?r=1368729822",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/23/3100_crt_HX9nO.jpg?r=1368729822",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7c/23/3100_crt_HX9nO.jpg?r=1368729822"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4227,
+                    "name": "三宅健太",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/cc/be/4227_prsn_53qZC.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/be/4227_prsn_53qZC.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/be/4227_prsn_53qZC.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/cc/be/4227_prsn_53qZC.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 3106,
+            "name": "花京院典明",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/51/bb/3106_crt_DtxLq.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/bb/3106_crt_DtxLq.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/bb/3106_crt_DtxLq.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/51/bb/3106_crt_DtxLq.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4452,
+                    "name": "平川大輔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/31/a0/4452_prsn_hC5zx.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/31/a0/4452_prsn_hC5zx.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/31/a0/4452_prsn_hC5zx.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/31/a0/4452_prsn_hC5zx.jpg"
+                    },
+                    "short_summary": "平川 大輔（ひらかわ だいすけ、1973年6月4日 - ）は、日本の男性声優、歌手、ナレーター。フリー。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 17601,
+            "name": "ディオ・ブランドー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/42/ae/17601_crt_9eQRN.jpg?r=1387219981",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/ae/17601_crt_9eQRN.jpg?r=1387219981",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/ae/17601_crt_9eQRN.jpg?r=1387219981",
+                "grid": "https://lain.bgm.tv/pic/crt/g/42/ae/17601_crt_9eQRN.jpg?r=1387219981"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 1096,
+                    "name": "子安武人",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/4f/e5/1096_prsn_84WcO.jpg?r=1509920084",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/e5/1096_prsn_84WcO.jpg?r=1509920084",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/e5/1096_prsn_84WcO.jpg?r=1509920084",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4f/e5/1096_prsn_84WcO.jpg?r=1509920084"
+                    },
+                    "short_summary": "子安武人, 名字之所以會叫「武人」是因為他的生日是日本的兒童節。\r\n他和三木真一郎、關智一、结城比吕组成声优团体Weiß，主要的作品是《白色猎人》。 \r\n有一小點的巧合是他演出的角色為金髮男子居多，其角色個性很廣泛，不論是搞笑型的，或是嚴肅型的角色皆為其拿手範圍內，另一方面一些其貌不揚或性情古怪的角色也非常擅長。\r\n本人称自己也不能算做很喜欢饰演变态或搞笑角色，只是有这么的工作就接了，结果却慢慢得越来越多。\r\n\r\n1988-1998年隶属于事务所Production Baobab，此后成立自己的会社T's Factory。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 18570,
+            "name": "ジャン＝ピエール・ポルナレフ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/cd/e7/18570_crt_Q3lIn.jpg?r=1368729728",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/e7/18570_crt_Q3lIn.jpg?r=1368729728",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/e7/18570_crt_Q3lIn.jpg?r=1368729728",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cd/e7/18570_crt_Q3lIn.jpg?r=1368729728"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5663,
+                    "name": "小松史法",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ac/71/5663_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/71/5663_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/71/5663_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ac/71/5663_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

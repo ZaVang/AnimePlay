@@ -1,0 +1,91 @@
+{
+    "id": 2940,
+    "name": "恋爱情结",
+    "image_path": "data/images/anime/2940.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "身高172cm的高个女生小泉理沙，和身高156.2cm的可爱男生大谷敦士，从进入每户学园之后，就互相吐槽、彼此抬杠，是大家眼中的斗嘴好搭档。可是在高一那年的圣诞节，两人的关系却产生了微妙的变化。理沙发现自己渐渐爱上了大谷，会随着他的一言一行又喜又悲又生气。可是“像我这样的电线杆女生，为什么偏偏喜欢上娇小可爱的男生？”不知该如何是好的理沙，只好用搞笑来掩饰真心。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改",
+        "少女向"
+    ],
+    "date": "2007-04-07",
+    "rating_rank": 1244,
+    "rating_score": 7.4,
+    "rating_total": 845,
+    "main_character_ids": [
+        1755,
+        1756
+    ],
+    "main_characters": [
+        {
+            "id": 1755,
+            "name": "小泉リサ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d8/d3/1755_z6OtP.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/d3/1755_z6OtP.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/d3/1755_z6OtP.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d8/d3/1755_z6OtP.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4170,
+                    "name": "岡村明美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b1/96/4170_prsn_1rA7b.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/96/4170_prsn_1rA7b.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/96/4170_prsn_1rA7b.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b1/96/4170_prsn_1rA7b.jpg"
+                    },
+                    "short_summary": "岡村 明美（おかむら あけみ、1969年3月12日 - ）は、日本の女性声優。マウスプロモーション所属。東京都出身。血液型はO型。\r\n代表作に『紅の豚』（フィオ・ピッコロ）、『ONE PIECE』（ナミ）、『カサンドラ〜愛と運命の果てに』（カサンドラ）、『ラブ★コン』（小泉リサ）などがある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 1756,
+            "name": "大谷敦士",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ce/fa/1756_TqnTm.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/fa/1756_TqnTm.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/fa/1756_TqnTm.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ce/fa/1756_TqnTm.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4911,
+                    "name": "永田彬",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2c/c0/4911_prsn_PP7yn.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/c0/4911_prsn_PP7yn.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/c0/4911_prsn_PP7yn.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2c/c0/4911_prsn_PP7yn.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

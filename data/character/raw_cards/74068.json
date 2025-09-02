@@ -1,0 +1,48 @@
+{
+    "id": 74068,
+    "name": "後藤姫",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/e5/0d/74068_crt_hvl56.jpg?r=1590217288",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/0d/74068_crt_hvl56.jpg?r=1590217288",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/0d/74068_crt_hvl56.jpg?r=1590217288",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e5/0d/74068_crt_hvl56.jpg?r=1590217288"
+    },
+    "summary": "可久士の娘。小学4年生。ぱっつん前髪がトレードマーク。幾度となく可久士の仕事がバレそうな状況に居合わせるが、知ってか知らずか、気づかないままの日々を送る。父親想いで、しっかり者な一面も。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "后藤姬"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ごとう ひめ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Gotou Hime"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 48,
+        "collects": 136
+    },
+    "anime_ids": [
+        294713
+    ]
+}

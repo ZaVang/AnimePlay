@@ -1,0 +1,48 @@
+{
+    "id": 28105,
+    "name": "三嶋瞳",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/dc/2d/28105_crt_4nM75.jpg?r=1524878890",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/2d/28105_crt_4nM75.jpg?r=1524878890",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/2d/28105_crt_4nM75.jpg?r=1524878890",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dc/2d/28105_crt_4nM75.jpg?r=1524878890"
+    },
+    "summary": "雏就读的初中的同学，负责守护雏。是一名普通的初中生。\r\n\r\n她是容易受牵连的体质，因为做事很懂要领，也常常会被没用的大人拜托她帮忙。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "三岛瞳"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みしま ひとみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mishima Hitomi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 61,
+        "collects": 132
+    },
+    "anime_ids": [
+        225631
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "id": 74243,
+    "name": "五条悟",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/12/12/74243_crt_c5h9t.jpg?r=1646562964",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/12/74243_crt_c5h9t.jpg?r=1646562964",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/12/74243_crt_c5h9t.jpg?r=1646562964",
+        "grid": "https://lain.bgm.tv/pic/crt/g/12/12/74243_crt_c5h9t.jpg?r=1646562964"
+    },
+    "summary": "东京咒术高专一年级男班主任，28岁，身高超过190cm。个性轻浮，是个什么都会的人，所以就什么都不做，本人称之“培养新人”，大多时间为刺猬头(抓出来的)，并以黑布遮盖住眼睛作为眼罩用的造型示人，偶尔会将头发放下，原本并不喜欢甜食，但因需要动脑想很多事情，所以吃甜点来帮助脑部有效率地运转，久而久之变成了甜食控。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "五条悟"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ごじょう さとる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Gojō Satoru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1989年12月7日"
+        },
+        {
+            "key": "身高",
+            "value": "190cm"
+        },
+        {
+            "key": "体重",
+            "value": "89kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1989,
+    "birth_mon": 12,
+    "birth_day": 7,
+    "stat": {
+        "comments": 108,
+        "collects": 193
+    },
+    "anime_ids": [
+        369304
+    ]
+}

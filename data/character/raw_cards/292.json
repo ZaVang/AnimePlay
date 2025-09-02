@@ -1,0 +1,61 @@
+{
+    "id": 292,
+    "name": "黒",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f0/4f/292_crt_aMPWP.jpg?r=1568771715",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/4f/292_crt_aMPWP.jpg?r=1568771715",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/4f/292_crt_aMPWP.jpg?r=1568771715",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f0/4f/292_crt_aMPWP.jpg?r=1568771715"
+    },
+    "summary": "本作的主人公，契约者，梅西耶代号BK-201，能力是自由操纵电流。代价不明。隶属组织的一个行动小队，在东京进行特工活动。平常的身份是中国留学生李舜生，居住在海月庄公寓。\r\n\r\n事实上他不是完全的契约者，而是从妹妹“白”身上取得能力的，且并不需要付出代价。电击只是初级能力，真正能力为对物质的量子水平改造，并可借助流星碎片增幅能力，制作出类似“地狱门”的空间，任何东西都无法进入。在成为契约者前已被称为“黑色的死神”，后又被称为“传说中受诅咒的契约者”，但本身其实非常讨厌杀戮。\r\n\r\n根据身份的切换，会表现出冷酷与温厚两种截然不同的性格。食量惊人，本身亦非常擅长中华料理。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黑"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "曾用化名",
+                    "v": "李舜生"
+                },
+                {
+                    "k": "日文名",
+                    "v": "黒"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ヘイ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hei"
+                },
+                {
+                    "k": "Codename",
+                    "v": "BK201"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 60,
+        "collects": 385
+    },
+    "anime_ids": [
+        292,
+        2354
+    ]
+}

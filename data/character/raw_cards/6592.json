@@ -1,0 +1,74 @@
+{
+    "id": 6592,
+    "name": "木野まこと",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8a/1a/6592_crt_Q21q1.jpg?r=1465481530",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/1a/6592_crt_Q21q1.jpg?r=1465481530",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/1a/6592_crt_Q21q1.jpg?r=1465481530",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8a/1a/6592_crt_Q21q1.jpg?r=1465481530"
+    },
+    "summary": "沉醉在恋爱中的怪力少女。12月5日出生，力量十分强壮，可变身成Sailor Jupiter。和小兔是同一所学校但是穿的是转学之前的制服，原因是没有大尺寸的制服。非常害怕飞机，事缘因为她父母是在飞机上遇到空难而死。守护星是木星，兴趣是做家务、厨艺、园艺。对以前暗恋过的学长念念不忘，经常说男生“好像我以前喜欢的学长（师兄）”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "木野真琴"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "セーラージュピター"
+                },
+                {
+                    "v": "水手木星"
+                },
+                {
+                    "k": "\\",
+                    "v": "Mako Kino"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Lita Kino"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きの まこと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kino Makoto"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月5日"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 5,
+    "stat": {
+        "comments": 8,
+        "collects": 31
+    },
+    "anime_ids": [
+        5434,
+        5432,
+        1510,
+        5433,
+        5428
+    ]
+}

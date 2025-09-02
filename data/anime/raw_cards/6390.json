@@ -1,0 +1,521 @@
+{
+    "id": 6390,
+    "type": 2,
+    "name": "遊☆戯☆王デュエルモンスターズ",
+    "name_cn": "游戏王－怪兽之决斗",
+    "summary": "一卷神秘的录像带，千年神器中千年眼的拥有者，贝卡斯·J·克罗佛多在录像带中使用黑暗决斗向武藤游戏挑战，但武藤游戏却因为时间终止而败北，武藤双六的灵魂也因此被千年眼的力量封印在灵魂封印卡中（漫画版为贝卡斯寄给游戏的录像带），武藤游戏为了救回灵魂被囚禁的爷爷，与伙伴们前往决斗者王国找贝卡斯决斗，与互信的伙伴们以及心中的另一个自己并肩作战。",
+    "nsfw": false,
+    "locked": false,
+    "date": "2000-04-18",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/72/98/6390_Dr5S5.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/72/98/6390_Dr5S5.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/72/98/6390_Dr5S5.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/72/98/6390_Dr5S5.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/72/98/6390_Dr5S5.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "游戏王－怪兽之决斗"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Yu-Gi-Oh! Duel Monsters",
+                    "k": null
+                },
+                {
+                    "v": "游☆戏☆王－怪兽之决斗",
+                    "k": null
+                },
+                {
+                    "v": "游戏王Duel Monsters",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "224"
+        },
+        {
+            "key": "放送开始",
+            "value": "2000年4月18日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期二"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://www.tv-tokyo.co.jp/anime/yugioh2000/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京系"
+        },
+        {
+            "key": "播放结束",
+            "value": "2004年9月29日"
+        },
+        {
+            "key": "导演",
+            "value": "杉島邦久"
+        },
+        {
+            "key": "音乐",
+            "value": "光宗信吉"
+        },
+        {
+            "key": "Copyright",
+            "value": "©高橋和希・スタジオダイス  集英社・TV TOKYO・nas"
+        },
+        {
+            "key": "原作",
+            "value": "高橋和希"
+        },
+        {
+            "key": "动画制作",
+            "value": "ぎゃろっぷ"
+        },
+        {
+            "key": "製作",
+            "value": "テレビ東京、NAS"
+        },
+        {
+            "key": "系列构成",
+            "value": "武上純希 [第1話～第121話] 、前川淳 [第122話～第144話] 、吉田伸 [第145話～第184話・第199話～第224話] 、面出明美 [第185話～第198話]"
+        },
+        {
+            "key": "人物设定",
+            "value": "荒木伸吾、姫野美智、 原憲一（第145話 - 第184話） 加々美高浩（第199話 - 第224話）"
+        },
+        {
+            "key": "机械设定",
+            "value": "小海雄司"
+        }
+    ],
+    "volumes": 0,
+    "eps": 224,
+    "total_episodes": 224,
+    "rating": {
+        "rank": 339,
+        "total": 3095,
+        "count": {
+            "one": 5,
+            "two": 1,
+            "three": 1,
+            "four": 4,
+            "five": 37,
+            "six": 211,
+            "seven": 841,
+            "eight": 1224,
+            "nine": 518,
+            "ten": 253
+        },
+        "score": 7.9
+    },
+    "collection": {
+        "wish": 406,
+        "collect": 4788,
+        "doing": 336,
+        "on_hold": 361,
+        "dropped": 111
+    },
+    "tags": [
+        {
+            "name": "游戏王",
+            "count": 772
+        },
+        {
+            "name": "童年",
+            "count": 589
+        },
+        {
+            "name": "经典",
+            "count": 414
+        },
+        {
+            "name": "TV",
+            "count": 363
+        },
+        {
+            "name": "2000",
+            "count": 301
+        },
+        {
+            "name": "漫画改",
+            "count": 255
+        },
+        {
+            "name": "热血",
+            "count": 211
+        },
+        {
+            "name": "神棍打牌王",
+            "count": 194
+        },
+        {
+            "name": "俺のターン！",
+            "count": 125
+        },
+        {
+            "name": "社长",
+            "count": 95
+        },
+        {
+            "name": "nico入门必修作",
+            "count": 78
+        },
+        {
+            "name": "漫改",
+            "count": 76
+        },
+        {
+            "name": "卡牌",
+            "count": 65
+        },
+        {
+            "name": "三人行必有基友",
+            "count": 62
+        },
+        {
+            "name": "童年系",
+            "count": 39
+        },
+        {
+            "name": "StudioGallop",
+            "count": 37
+        },
+        {
+            "name": "奇幻",
+            "count": 31
+        },
+        {
+            "name": "HA☆NA☆SE!",
+            "count": 31
+        },
+        {
+            "name": "2000年4月",
+            "count": 30
+        },
+        {
+            "name": "战斗",
+            "count": 29
+        },
+        {
+            "name": "2000年",
+            "count": 21
+        },
+        {
+            "name": "长篇",
+            "count": 18
+        },
+        {
+            "name": "日本",
+            "count": 18
+        },
+        {
+            "name": "YGO",
+            "count": 17
+        },
+        {
+            "name": "ぎゃろっぷ",
+            "count": 16
+        },
+        {
+            "name": "科幻",
+            "count": 11
+        },
+        {
+            "name": "打牌",
+            "count": 11
+        },
+        {
+            "name": "杉島邦久",
+            "count": 11
+        },
+        {
+            "name": "遊☆戯☆王",
+            "count": 10
+        },
+        {
+            "name": "JUMP",
+            "count": 10
+        }
+    ],
+    "meta_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "少年向"
+    ],
+    "series": false,
+    "main_character_ids": [
+        7454,
+        7637,
+        7638,
+        7639,
+        18160,
+        18161
+    ],
+    "main_characters": [
+        {
+            "id": 7454,
+            "name": "闇遊戯 / アテム",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/62/c2/7454_crt_rb3qK.jpg?r=1751867929",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/c2/7454_crt_rb3qK.jpg?r=1751867929",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/c2/7454_crt_rb3qK.jpg?r=1751867929",
+                "grid": "https://lain.bgm.tv/pic/crt/g/62/c2/7454_crt_rb3qK.jpg?r=1751867929"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4462,
+                    "name": "風間俊介",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e6/e4/4462_prsn_GnyN8.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/e4/4462_prsn_GnyN8.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/e4/4462_prsn_GnyN8.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e6/e4/4462_prsn_GnyN8.jpg"
+                    },
+                    "short_summary": "風間 俊介（かざま しゅんすけ、1983年6月17日 - ）は、日本の俳優、声優、タレント。東京都墨田区出身。ジャニーズ事務所所属。\r\n\r\nオーディションに合格し、1997年、中学2年生の時にジャニーズ事務所に入所。同年の少年隊の舞台でデビューし、以降ジャニーズJr.として活動する。生田斗真と共にセンターポジションで踊るなどしていたが、高校受験のために半年間芸能活動を休止したところ、元のポジションには戻れず、生田の後ろで踊らなければならないようになってしまう。\r\nしかし1999年、TBS系テレビドラマ『3年B組金八先生 第5シリーズ』に出演して兼末健次郎役を演じ、第3回日刊スポーツドラマ・グランプリ新人賞を受賞。これを境にテレビドラマへの出演が増え、山下、生田、長谷川純とユニット・Four Topsも結成するなど以前のポジションを取り戻す。しかしこのユニットは最初から「このメンツでデビューすることはない」と社長のジャニー喜多川に言われており、実際、山下がNEWSとしてCDデビューをしたことでユニットはなくなってしまう。\r\n2011年、10年ぶりにプライムタイムの現代ドラマでレギュラー出演した『それでも、生きてゆく』で日本放送映画芸術大賞助演男優賞やザテレビジョン第70回ドラマアカデミー賞助演男優賞を受賞すると再び脚光をあび、翌年の連続テレビ小説『純と愛』で一躍知名度があがる。\r\n2013年5月上旬に一般女性と結婚、同年7月にジャニーズ事務所を通じて発表した。\r\n2015年10月15日、ジャニーズ事務所公式ホームページで単独ページができ、事実上のジャニーズJr.卒業となる。",
+                    "locked": false
+                },
+                {
+                    "id": 66786,
+                    "name": "長浜満里子",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5c/9c/66786_prsn_E9f7E.jpg?r=1722669071",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/9c/66786_prsn_E9f7E.jpg?r=1722669071",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/9c/66786_prsn_E9f7E.jpg?r=1722669071",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5c/9c/66786_prsn_E9f7E.jpg?r=1722669071"
+                    },
+                    "short_summary": "日本の声優、舞台女優。日本芸術専門学校特別講師。青森県出身。劇団アルターエゴ所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7637,
+            "name": "本田ヒロト",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/61/77/7637_crt_3NNVc.jpg?r=1751867962",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/77/7637_crt_3NNVc.jpg?r=1751867962",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/77/7637_crt_3NNVc.jpg?r=1751867962",
+                "grid": "https://lain.bgm.tv/pic/crt/g/61/77/7637_crt_3NNVc.jpg?r=1751867962"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3980,
+                    "name": "近藤孝行",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/02/f6/3980_prsn_JIZ2G.jpg?r=1488074180",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/f6/3980_prsn_JIZ2G.jpg?r=1488074180",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/f6/3980_prsn_JIZ2G.jpg?r=1488074180",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/02/f6/3980_prsn_JIZ2G.jpg?r=1488074180"
+                    },
+                    "short_summary": "来歴・特色\r\n\r\n鉄道会社に勤めたあと、声優に転職した経歴を持つ。2000年から『遊☆戯☆王デュエルモンスターズ』の本田ヒロト役でレギュラー出演していたが、2001年、急病のため入院を余儀なくされ53話より菊池英博に変更になり、そのまま降板となる。退院後はアニメ『Dr.リンにきいてみて!』同年9月の放送から仕事に復帰した。2009年3月に東京俳優生活協同組合を離れ、フリーの期間を挟んだ同年6月よりAIR AGENCY所属となった。\r\n\r\n演じる役柄は『テニスの王子様』の大石秀一郎のような爽やかで堅実な役、『狂乱家族日記』の乱崎凰火のような好青年な二枚目から『トランスフォーマー カーロボット』のマッハアラートのような堅物な役、更には低い声を使った悪役を演じる。若干のジェネレーションギャップを感じつつ収録を行っているという[1]。\r\n人物\r\n\r\n趣味はプロレス鑑賞。選手では武藤敬司を熱烈に応援している。また、収録現場や集まりなどでスタッフらとプロレスの話を頻繁にする。『テニスの王子様』のアフレコスタジオにあるお菓子を口に入りきらないほど詰め込んだという逸話を持つほどの食いしん坊である。『テニスの王子様 オン・ザ・レイディオ』では、自分を料理屋の息子と話す。また、同番組内で「世界のT.K」というあだ名を付けられた（元は高阪剛の通称であり、イニシャルが同一であることから）。\r\n\r\n幼少の頃にカブトムシを飼っていたら、一匹を踏み殺し、もう一匹は洗濯機の中で洗われ、最後の一匹は行方不明になっていたことがトラウマとなり、カブトムシが苦手になってしまったという[2]。また、自宅の冷蔵庫にアリが侵入していたことがあり、それ以来アリも苦手になったという[2]。\r\n\r\n同年代の声優である日野聡とは仲が良く、同世代の声優7名（小野大輔・立花慎之介・福山潤・日野聡・間島淳司・近藤孝行・菅沼久義）で結成されたユニットである「DABA」（正式ではDは反転して表記）の一員。DABA内での名は「フォンドヴォー」。\r\n\r\n人気ラジオ番組・文化放送「小野大輔・近藤孝行の夢冒険～Dragon&Tiger」から誕生したダンスボーカルユニットD.A.T（ダット）としても活動中。 元々バラードからロック、演歌に至るまで歌い分けるその歌唱力には定評があったが、同ユニットのファーストシングルにおいても硬軟使い分けるその歌い方に高い評価を得ている。また、ダンスにおいてもダイナミックかつキレのあるダンスを披露している。",
+                    "locked": false
+                },
+                {
+                    "id": 37348,
+                    "name": "菊池英博",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0a/5f/37348_prsn_EQqfu.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/5f/37348_prsn_EQqfu.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/5f/37348_prsn_EQqfu.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0a/5f/37348_prsn_EQqfu.jpg"
+                    },
+                    "short_summary": "日本の男性声優。東京都出身。\r\n以前はグループこまどり、プロダクション東京ドラマハウスに所属していた。\r\n子役として幼少のころから活動している。『銀河漂流バイファム』にフレッド・シャッフル役で出演していた際は小学生で、収録期間中に変声期を迎え、前半と後半とでは声が違っている。さらに後に放送された『銀河漂流バイファム13』においても同じ役で出演しているが、この時は変声期も終わり大人の声になっている。\r\n現在は活動を休止しており途中降板した近藤孝行の後任で本田ヒロト役を担当していた『遊☆戯☆王 THE DARK SIDE OF DIMENSIONS』でも当初は出演キャストに名を連ねていたものの急遽降板し、初代声優の近藤がシリーズ復帰を果たして引き継いだ。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7638,
+            "name": "城之内克也",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/77/02/7638_crt_9uHF7.jpg?r=1751790022",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/02/7638_crt_9uHF7.jpg?r=1751790022",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/02/7638_crt_9uHF7.jpg?r=1751790022",
+                "grid": "https://lain.bgm.tv/pic/crt/g/77/02/7638_crt_9uHF7.jpg?r=1751790022"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3979,
+                    "name": "高橋広樹",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/93/5a/3979_prsn_boof9.jpg?r=1692756137",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/5a/3979_prsn_boof9.jpg?r=1692756137",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/5a/3979_prsn_boof9.jpg?r=1692756137",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/93/5a/3979_prsn_boof9.jpg?r=1692756137"
+                    },
+                    "short_summary": "日本の声優、俳優、歌手。マックミック所属。既婚。",
+                    "locked": false
+                },
+                {
+                    "id": 66786,
+                    "name": "長浜満里子",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5c/9c/66786_prsn_E9f7E.jpg?r=1722669071",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/9c/66786_prsn_E9f7E.jpg?r=1722669071",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/9c/66786_prsn_E9f7E.jpg?r=1722669071",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5c/9c/66786_prsn_E9f7E.jpg?r=1722669071"
+                    },
+                    "short_summary": "日本の声優、舞台女優。日本芸術専門学校特別講師。青森県出身。劇団アルターエゴ所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7639,
+            "name": "真崎杏子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/33/2f/7639_crt_Mqo27.jpg?r=1751790097",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/2f/7639_crt_Mqo27.jpg?r=1751790097",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/2f/7639_crt_Mqo27.jpg?r=1751790097",
+                "grid": "https://lain.bgm.tv/pic/crt/g/33/2f/7639_crt_Mqo27.jpg?r=1751790097"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4461,
+                    "name": "齊藤真紀",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b1/9b/4461_prsn_ffHY3.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/9b/4461_prsn_ffHY3.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/9b/4461_prsn_ffHY3.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b1/9b/4461_prsn_ffHY3.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 18160,
+            "name": "武藤遊戯",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6a/57/18160_crt_RdiyU.jpg?r=1751790128",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/57/18160_crt_RdiyU.jpg?r=1751790128",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/57/18160_crt_RdiyU.jpg?r=1751790128",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6a/57/18160_crt_RdiyU.jpg?r=1751790128"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4462,
+                    "name": "風間俊介",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e6/e4/4462_prsn_GnyN8.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/e4/4462_prsn_GnyN8.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/e4/4462_prsn_GnyN8.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e6/e4/4462_prsn_GnyN8.jpg"
+                    },
+                    "short_summary": "風間 俊介（かざま しゅんすけ、1983年6月17日 - ）は、日本の俳優、声優、タレント。東京都墨田区出身。ジャニーズ事務所所属。\r\n\r\nオーディションに合格し、1997年、中学2年生の時にジャニーズ事務所に入所。同年の少年隊の舞台でデビューし、以降ジャニーズJr.として活動する。生田斗真と共にセンターポジションで踊るなどしていたが、高校受験のために半年間芸能活動を休止したところ、元のポジションには戻れず、生田の後ろで踊らなければならないようになってしまう。\r\nしかし1999年、TBS系テレビドラマ『3年B組金八先生 第5シリーズ』に出演して兼末健次郎役を演じ、第3回日刊スポーツドラマ・グランプリ新人賞を受賞。これを境にテレビドラマへの出演が増え、山下、生田、長谷川純とユニット・Four Topsも結成するなど以前のポジションを取り戻す。しかしこのユニットは最初から「このメンツでデビューすることはない」と社長のジャニー喜多川に言われており、実際、山下がNEWSとしてCDデビューをしたことでユニットはなくなってしまう。\r\n2011年、10年ぶりにプライムタイムの現代ドラマでレギュラー出演した『それでも、生きてゆく』で日本放送映画芸術大賞助演男優賞やザテレビジョン第70回ドラマアカデミー賞助演男優賞を受賞すると再び脚光をあび、翌年の連続テレビ小説『純と愛』で一躍知名度があがる。\r\n2013年5月上旬に一般女性と結婚、同年7月にジャニーズ事務所を通じて発表した。\r\n2015年10月15日、ジャニーズ事務所公式ホームページで単独ページができ、事実上のジャニーズJr.卒業となる。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 18161,
+            "name": "海馬瀬人",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b3/4b/18161_crt_tcCe8.jpg?r=1751789981",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/4b/18161_crt_tcCe8.jpg?r=1751789981",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/4b/18161_crt_tcCe8.jpg?r=1751789981",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b3/4b/18161_crt_tcCe8.jpg?r=1751789981"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3977,
+                    "name": "津田健次郎",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/29/aa/3977_prsn_j4CoM.jpg?r=1692256394",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/aa/3977_prsn_j4CoM.jpg?r=1692256394",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/aa/3977_prsn_j4CoM.jpg?r=1692256394",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/29/aa/3977_prsn_j4CoM.jpg?r=1692256394"
+                    },
+                    "short_summary": "津田 健次郎（つだ けんじろう、1971年6月11日 - ）は、日本の声優、俳優。大阪府出身。芸能事務所はアンドステアに所属。\r\n\r\n幼少時代をジャカルタで過ごした経験をもつ。明治大学文学部文学科演劇学2年の時に、元々は映画を撮りたいと思っていた矢先に演じるほうにも興味を持ち、円・演劇研究所専攻科を受けて合格、休学して演劇活動に熱中する。その後、復学して卒業した。\r\n養成所卒業後は舞台系の事務所に所属していた。その際にオーディションの話があり、1995年のテレビアニメ『H2』で声優デビューする。以降は声優業を中心に、舞台やテレビドラマ、映画に出演、他にもテレビ番組やCMでのナレーションやラジオパーソナリティーなど多方面で活動している。\r\n映画は撮ることも観ることも好む。中学時代から映画館に通い始め、高校までは古い洋画を、大学入学後はアート系映画を中心に観ていたが、基本的にはノンジャンルとのことである。\r\n2017年より、病気療養中だった藤原啓治が演じていた幾つかの役（『宇宙戦艦ヤマト2202 愛の戦士たち』・榎本勇役、『進撃の巨人』・ハンネス役）を引き継いだ。\r\n2019年2月2日公開の「ドキュメンターテイメント AD-LIVE」で映画監督デビューした。\r\n\r\nゲーム『デス・ストランディング』の収録現場で、総監督を務めるゲームデザイナー小島秀夫やダイ・ハードマン役で共演する声優大塚明夫から「ケン坊」と呼ばれていることを自身のツイッターで明かしている。数日後、津田のツイートに返信する形で、同じゲームのデッドマン役で共演する声優石住昭彦も「ケン坊」と書いている。\r\n\r\n舞台役者として駆け出しの頃に出会った一般人女性と結婚しており、現在は2児の父親である。結婚を公表しない方が家族を安全を守れるという理由と、津田の好きな役者に私生活の見えない魅力があった人物が多く、自身もそういった表現者になりたいという思いから、結婚していることは公表していなかった。しかし、2020年7月、一部週刊誌で津田の結婚に関する記事が掲載されたことを受けて、自身のInstagramでこれらの事実を公表することとなった。",
+                    "locked": false
+                },
+                {
+                    "id": 18398,
+                    "name": "矢澤喜代美",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7c/e3/18398_prsn_p9aAK.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/e3/18398_prsn_p9aAK.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/e3/18398_prsn_p9aAK.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7c/e3/18398_prsn_p9aAK.jpg"
+                    },
+                    "short_summary": "矢澤 喜代美（やざわ きよみ、1980年1月8日 - ）は、日本の女性声優。東京俳優生活協同組合所属。神奈川県出身。血液型はB型。左利き。\r\n学習院大学文学部日本語日本文学科卒。日本ナレーション演技研究所を経て、俳協ボイスアクターズスタジオ第26期生（同期に蒼井里紗）。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "id": 46451,
+    "name": "ハナちゃん",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a4/d2/46451_crt_H17E9.jpg?r=1474248979",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/d2/46451_crt_H17E9.jpg?r=1474248979",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/d2/46451_crt_H17E9.jpg?r=1474248979",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a4/d2/46451_crt_H17E9.jpg?r=1474248979"
+    },
+    "summary": "本作品女主角之一。喜欢作品中的角色之一:迪加大叔。\r\n起初从魔力超强的蓝玫瑰中出生，因为DoReMi等人目睹其出生而成为小花的妈妈，并由DoReMi等人照顾。之后则到魔法幼稚园就读，与DoReMi等人分离。后因挂念DoReMi并想跟她们一起上学，而用魔法把自己变成12岁，但因魔力冲击过强令水晶球全数粉碎，只能成为见习魔女通过考试来回复魔女身份。在人类世界使用化名卷机山花，对外宣称是卷机山婆婆亲戚的小孩。\r\n最爱的食物为布丁。\r\n善于弹奏手风琴，并具有魔女世界有史以来最强的魔力，最后成为新任女王。\r\n小学毕业后就陪同魔女莉卡返回魔女界。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "卷机山花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "小花"
+                },
+                {
+                    "k": "日文名",
+                    "v": "巻機山花"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まきはたやま はな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Makihatayama Hana"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2000年3月25日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 2000,
+    "birth_mon": 3,
+    "birth_day": 25,
+    "stat": {
+        "comments": 8,
+        "collects": 23
+    },
+    "anime_ids": [
+        14878,
+        14877,
+        14876
+    ]
+}

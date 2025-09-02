@@ -1,0 +1,64 @@
+{
+    "id": 1703,
+    "name": "音無響子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3f/45/1703_crt_pfR0T.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/45/1703_crt_pfR0T.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/45/1703_crt_pfR0T.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3f/45/1703_crt_pfR0T.jpg"
+    },
+    "summary": "故事的女主角，響子剛結婚不久丈夫便不幸去世，從此便成為寡，並搬到一刻館居住。後來在一刻館遇到五代，又在網球場上認識三鷹，兩人都追求響子。響子最終選擇五代，並在婚後次年誕下女兒春香。 \r\n性格 : 容易吃醋、小氣、親切 \r\n嗜好 : 打掃、清潔、打網球",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "音无响子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "\\",
+                    "v": "Juliette Rozier"
+                },
+                {
+                    "k": "日文名",
+                    "v": "音無響子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おとなし きょうこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Otonashi Kyouko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "岛本须美"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 20,
+        "collects": 89
+    },
+    "anime_ids": [
+        2921
+    ]
+}

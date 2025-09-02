@@ -1,0 +1,60 @@
+{
+    "id": 3289,
+    "name": "ゴーイング・メリー号",
+    "type": 3,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9f/17/3289_crt_7pp2k.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/17/3289_crt_7pp2k.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/17/3289_crt_7pp2k.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9f/17/3289_crt_7pp2k.jpg"
+    },
+    "summary": "黄金梅丽号，日本漫画《海贼王》及其衍生作品中的船只。是“草帽一伙”最初的海贼船。黄金梅丽号是“草帽一伙”的第一艘海贼船，是一艘骨架结构、三角帆全都使用船尾中央掌舵法的“卡拉维尔帆船”(Caravel)，船首为羊头，造型可爱。是“草帽一伙”重要伙伴之一。\r\n当“草帽一伙”在司法岛受困时，梅利（船精灵）向冰山恳求让它最后航行一次，去救路飞一行人，梅利号化身的“船之精灵”在关键的时候顺利地救出了路飞一行人，但因大限已至，于途中寿命耗尽。路飞以火葬仪式送黄金梅利号最后一程，就此结束了黄金梅利号伟大的使命。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "前进·梅利号"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "黄金梅丽号"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ゴーイング・メリー号"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Going Merry-gou"
+                }
+            ]
+        },
+        {
+            "key": "生日",
+            "value": "1月22日"
+        },
+        {
+            "key": "身高",
+            "value": "1100cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 22,
+    "stat": {
+        "comments": 8,
+        "collects": 20
+    },
+    "anime_ids": [
+        975
+    ]
+}

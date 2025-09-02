@@ -1,0 +1,57 @@
+{
+    "id": 69820,
+    "name": "アシェラッド",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/de/5b/69820_crt_ZdlP0.jpg?r=1556102219",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/5b/69820_crt_ZdlP0.jpg?r=1556102219",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/5b/69820_crt_ZdlP0.jpg?r=1556102219",
+        "grid": "https://lain.bgm.tv/pic/crt/g/de/5b/69820_crt_ZdlP0.jpg?r=1556102219"
+    },
+    "summary": "100人のヴァイキング達からなるアシェラッド兵団の首領。\r\n飄々として誰に対しても気やすく振る舞うが、実際は目的のためなら残酷な手段もいとわない策士で、剣術も一流。人の本質を見抜く力に長けている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿谢拉德"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Lucius Artorius Castus"
+                },
+                {
+                    "v": "ルキウス・アルトリウス・カストゥス"
+                },
+                {
+                    "v": "卢修斯·阿托利乌斯·卡斯图斯"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "阿谢拉特"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Askeladd"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 94,
+        "collects": 284
+    },
+    "anime_ids": [
+        240386
+    ]
+}

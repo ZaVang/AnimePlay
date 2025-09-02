@@ -1,0 +1,54 @@
+{
+    "id": 87547,
+    "name": "ボンド・フォージャー",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/34/ba/87547_crt_ESwQf.jpg?r=1606415933",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/34/ba/87547_crt_ESwQf.jpg?r=1606415933",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/34/ba/87547_crt_ESwQf.jpg?r=1606415933",
+        "grid": "https://lain.bgm.tv/pic/crt/g/34/ba/87547_crt_ESwQf.jpg?r=1606415933"
+    },
+    "summary": "拥有预知能力的大型犬，安妮亚的宠物。\r\n原本是东国某个组织“苹果计划”的第8个实验体，曾经遭到计划研究员的非人道对待。后落入由大学生组成的恐怖组织手中，被当作狗体炸弹使用。由于它看见被佛杰一家收养的未来而主动帮助安妮亚，在恐怖组织的炸弹袭击计划失败后，正式成为佛杰家的一员。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "邦德·福杰"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "彭德"
+                },
+                {
+                    "v": "プロジェクト〈アップル〉の被検体8号"
+                },
+                {
+                    "v": "ボンド・フォージャー"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Bond"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "公"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 16,
+        "collects": 28
+    },
+    "anime_ids": [
+        373267,
+        411427
+    ]
+}

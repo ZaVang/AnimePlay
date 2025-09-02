@@ -1,0 +1,183 @@
+{
+    "id": 2097,
+    "name": "秀逗魔导士TRY",
+    "image_path": "data/images/anime/2097.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "第三部(TRY)里讲述了人类，魔族与神族之间的恩怨!这一部可说是三部中魔法场面最为华丽的一部。而故事的内容也真正的进入了主题!神族的巫女菲莉雅在收到火龙王的神谕后，找到了莉娜他们，希望他们能够拯救这个世界，而莉娜却完全没有要拯救世界的意思，但是在菲莉雅将一封莉娜的姐姐露娜的信交给莉娜看后，莉娜马上答应了菲莉雅的请求，从此开始了这场拯救世界的战斗旅程!为了菲莉亚说的神谕而旅行的主角们，在外界遇到了久违的兽神官杰洛士，还有把莉娜当成魔龙王的敌人大面积追杀过来的瓦尔加布。神秘的强敌终于出现了，而且主角们的魔法对他竟然毫无效用。可是就在这时他被一个更加神秘的人召唤了回去，在此主角们总算是逃过了此劫。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "小说改"
+    ],
+    "date": "1997-04-04",
+    "rating_rank": 722,
+    "rating_score": 7.6,
+    "rating_total": 771,
+    "main_character_ids": [
+        104,
+        105,
+        106,
+        107,
+        23959
+    ],
+    "main_characters": [
+        {
+            "id": 104,
+            "name": "リナ・インバース",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/7b/a6/104_crt_bHSVe.jpg?r=1611335397",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/a6/104_crt_bHSVe.jpg?r=1611335397",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/a6/104_crt_bHSVe.jpg?r=1611335397",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7b/a6/104_crt_bHSVe.jpg?r=1611335397"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3919,
+                    "name": "林原めぐみ",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490"
+                    },
+                    "short_summary": "日本的声优、歌手、DJ、作词家（化名为MEGUMI）、作家。出生于日本东京都北区。\r\n歌迷与动漫迷常以“小惠”（めぐさん）、“惠姐”（めぐ姉）及“阁下”（声优平松晶子命名）等方式称呼她。\r\n林原惠演过多部著名作品的主要女角及担任部分片头、片尾曲演唱，包含《新世纪福音战士》的绫波丽、《乱马1/2》的女乱马、《秀逗魔导士》的莉娜·因巴斯、《口袋妖怪》的武藏、《名侦探柯南》的灰原哀、《通灵王》的恐山安娜等，为日本公认的“声优女王”。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 105,
+            "name": "ガウリイ・ガブリエフ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f8/c0/105_crt_XSMdd.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/c0/105_crt_XSMdd.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/c0/105_crt_XSMdd.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f8/c0/105_crt_XSMdd.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3845,
+                    "name": "松本保典",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c6/d6/3845_seiyu_anidb.jpg?r=1575075897",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c6/d6/3845_seiyu_anidb.jpg?r=1575075897",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c6/d6/3845_seiyu_anidb.jpg?r=1575075897",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c6/d6/3845_seiyu_anidb.jpg?r=1575075897"
+                    },
+                    "short_summary": "大学卒業後、劇団がらくた工房（現・劇団すごろく）付属養成所に4期生として入所する。デビュー作は『マンガ日本経済入門』。現在は劇団すごろく副座長。サイト「劇団すごろく」のプロフィールには「2月7日生 19歳」と表記されている。\r\n\r\n1988年に『超音戦士ボーグマン』の響リョウ、『鎧伝サムライトルーパー』の闇魔将悪奴弥守やOVA『機甲猟兵メロウリンク』のメロウリンク・アリティと同年に放映された3つの作品で主要な役柄を演じてブレイク、その後は多くの分野で主役からサブキャラクターを演じるようになる。アニメだけに留まらず、吹き替え・ナレーションと幅広く活動している。\r\n\r\n『サザエさん』では「ノリスケ」、『ドラえもん』ではのび太のパパこと「野比のび助」と国民的2大アニメの重要な脇役を担っている。ちなみにのび助もノリスケも初代（加藤正之、村越伊知郎）が死去し、2代目（中庸助[3]、荒川太朗）が途中降板したため共に3代目である。また『サザエさん』では、2009年までレギュラー男性声優では最年少となっていた[4]（2009年10月からは中村浩太郎が最年少）。\r\n\r\n速水奨が企画した『Super Stylish Doctors Story(S.S.D.S)』のメンバーのひとり。イベントの歌コーナーで、ピンクのポンポンを持ってダンスも披露。可愛かったと評判だが、踊った後は「酔った勢いで脱いだ後、我に返って1人淋しく服を着る時の心境に近い」とコメント。また、トークでは速水奨への突っ込みが多いため、役（小児科医役）にちなみ「黒い小児科医」と称される時もある。\r\n\r\n学生時代は競輪部のキャプテンを務め、国体出場経験もある。しかし、腰を痛めたためにやめたという。『S.S.D.S』のイベント内で「学生時代にもっと（競輪を）頑張っていたら、ここにはいなかったかもしれない」と語っていた。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 106,
+            "name": "ゼルガディス・グレイワーズ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/67/56/106_crt_a6H6O.jpg?r=1604343488",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/56/106_crt_a6H6O.jpg?r=1604343488",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/56/106_crt_a6H6O.jpg?r=1604343488",
+                "grid": "https://lain.bgm.tv/pic/crt/g/67/56/106_crt_a6H6O.jpg?r=1604343488"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3967,
+                    "name": "緑川光",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ad/f7/3967_prsn_XC09F.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/f7/3967_prsn_XC09F.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/f7/3967_prsn_XC09F.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ad/f7/3967_prsn_XC09F.jpg"
+                    },
+                    "short_summary": "绿川光是日本声优界青年声优中的佼佼者之一，以其纯净纤细的独特声线为观众所喜爱。他偏冷色的音质十分适合饰演一些感性的角色，如《不思议游戏》中的鬼宿和《精灵使》中的觉罗。有时也会出演一些冷酷的恶役角色。其出演的角色中，有不少是看似性格孤僻、很难接近的人物，他声音中的“冷感”在这一类型的角色身上得到了充分的发挥。如《新机动战记高达W》中的希罗·尤尔和《灌篮高手》中的流川枫，但是细细品来可以发觉这些人物大都是本质纯朴、性格率直的少年。不甘被定型的绿川光还为拓展戏路而饰演了《白色猎人》中邪恶阴险的基路德比、《魔剑美神》（又名：秀逗魔导士）中笑料百出的杰路·刚帝士等与之前角色迥然不同的人物，其表现也十分出色 。最近还在乙女向游戏《Starry☆Sky～in Spring～》中担当人气的土萌羊配音。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 107,
+            "name": "アメリア・ウィル・テスラ・セイルーン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/99/107_crt_nk856.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/99/107_crt_nk856.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/99/107_crt_nk856.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/99/107_crt_nk856.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4528,
+                    "name": "鈴木真仁",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/59/11/4528_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/11/4528_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/11/4528_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/59/11/4528_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 23959,
+            "name": "ヴァルガーヴ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d8/2c/23959_crt_o0iRz.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/2c/23959_crt_o0iRz.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/2c/23959_crt_o0iRz.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d8/2c/23959_crt_o0iRz.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3986,
+                    "name": "高木渉",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2b/f2/3986_prsn_ZAA2q.jpg?r=1469971214",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/f2/3986_prsn_ZAA2q.jpg?r=1469971214",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/f2/3986_prsn_ZAA2q.jpg?r=1469971214",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2b/f2/3986_prsn_ZAA2q.jpg?r=1469971214"
+                    },
+                    "short_summary": "出身于千叶县的日本男性声优、舞台演员。所属事务所是ARTSVISION。\r\n\r\n胜田声优学院第5期毕业。1987年以《妙手小厨师》声优出道。\r\n担任剧团“あかぺら倶楽部”的代表，亦常以舞台演员的身份活动。2002年和山口胜平、关智一合组名为“三人帮（さんにんのかい）”的三人戏剧团体。\r\n2005年接任《哆啦A梦》的老师角色、2007年接《鬼太郎》的鼠男，在重制动画当中继承大梁位置。\r\n\r\n在动画、外语配音等多方面活跃，主要演出少年、青年、上至中年、老人角色，其他像小坏蛋、丑角、坏小孩、傲慢男、俊俏帅哥、动物、甚至肆无忌惮口出秽言的残酷恶徒或滑稽角色等都经历过。\r\n有名的迟到大王。在配《鲁莽天使》的时候，曾经因为迟到让许多同僚等候，而被林原惠训斥。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

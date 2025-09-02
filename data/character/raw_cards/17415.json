@@ -1,0 +1,76 @@
+{
+    "id": 17415,
+    "name": "秋山優花里",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/9b/c5/17415_crt_KsD7H.jpg?r=1464655402",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9b/c5/17415_crt_KsD7H.jpg?r=1464655402",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9b/c5/17415_crt_KsD7H.jpg?r=1464655402",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9b/c5/17415_crt_KsD7H.jpg?r=1464655402"
+    },
+    "summary": "砲手→装填手。実家は秋山理髪店。戦車への愛情と共に造詣も深い筋金入りの戦車マニアで、自宅の部屋には戦車関連の品々が飾られている。1年前の決勝戦で黒森峰の副隊長として指揮を執っていたみほを見て以来、彼女に対して強い憧れを抱いている。相手の戦力を把握するために独断で潜入した諜報活動では独自に入手した制服で変装して短時間で動画編集を行うなど大胆さと器用さを併せ持ち、試合でも必要な場面では降車して単独で斥候を行う。後に、エルヴィンたちから「グデーリアン」と呼ばれるようになった",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "秋山优花里"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "秋山 優花里"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あきやま ゆかり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Akiyama Yukari"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月6日"
+        },
+        {
+            "key": "血型",
+            "value": "Rh+O"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "喜欢的花",
+            "value": "たんぽぽ （蒲公英）"
+        },
+        {
+            "key": "喜欢的战车",
+            "value": "7TP双砲塔型（ナヒュール中戦車も気になる存在）"
+        },
+        {
+            "key": "出身",
+            "value": "茨城県土浦市"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 6,
+    "stat": {
+        "comments": 21,
+        "collects": 98
+    },
+    "anime_ids": [
+        40310
+    ]
+}

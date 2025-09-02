@@ -1,0 +1,45 @@
+{
+    "id": 11328,
+    "name": "丸井ひとは",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8e/9d/11328_crt_paP80.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/9d/11328_crt_paP80.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/9d/11328_crt_paP80.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8e/9d/11328_crt_paP80.jpg"
+    },
+    "summary": "性格阴暗，处事冷静，有严重的惧高症，由于不坦率经常造成误会。丸井一家的日常家务、烹饪都是由她完成。非常热爱H书刊，常常把H书刊带到学校看。喜欢特摄节目，喜欢“正气战队-全力特攻队”。被松岗误以为有灵媒体质。很讨厌也不擅长游泳，游泳时会把头发绑成马尾。小时候很天真纯洁，不像现在阴暗低沉的个性。很喜欢导师矢部在学校养的黄金鼠“乳头”，非常照顾它。曾因为乳头喜欢上三叶的黄金鼠图案内裤，而大发醋劲，宣示要剪三叶的内裤。在抑郁的时候喜欢躲到矢部老师的桌下。发烧时，平常的恐怖气场会消失，转而变成美少女气场，十分柔弱动人，脸颊泛著红晕，全身散发著点点光辉，令人着迷，让佐藤等班上男生惊艳不已，但是听到千叶的发言十分不满。被佐藤评论为“感冒真是恐怖的东西”。非常喜欢小动物，常常因为小动物的事而大受打击。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "丸井一叶"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "まるい ひとは"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "http://zh.wikipedia.org"
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 60
+    },
+    "anime_ids": [
+        10071,
+        5658
+    ]
+}

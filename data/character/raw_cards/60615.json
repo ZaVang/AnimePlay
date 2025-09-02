@@ -1,0 +1,53 @@
+{
+    "id": 60615,
+    "name": "白石由竹",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/de/9f/60615_crt_Eoe1E.jpg?r=1605921018",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/9f/60615_crt_Eoe1E.jpg?r=1605921018",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/9f/60615_crt_Eoe1E.jpg?r=1605921018",
+        "grid": "https://lain.bgm.tv/pic/crt/g/de/9f/60615_crt_Eoe1E.jpg?r=1605921018"
+    },
+    "summary": "入れ墨を持つ脱獄囚の一人。「明治の脱獄王」と呼ばれた脱走の天才。\r\n生まれつき関節が柔らかく、自在に脱臼させて狭い隙間を出入りできる特異な体質に加え、脱獄に用いる小細工を用意しそれを体内に隠せる器用さ、自身の入獄した施設の特徴や死角を見抜く優れた観察眼を活かして数々の監獄からの脱獄を成功させている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "白石由竹"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しらいし よしたけ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shiraishi Yoshitake"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月3日"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 3,
+    "stat": {
+        "comments": 17,
+        "collects": 22
+    },
+    "anime_ids": [
+        251547,
+        221127
+    ]
+}

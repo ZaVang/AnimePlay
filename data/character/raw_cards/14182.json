@@ -1,0 +1,72 @@
+{
+    "id": 14182,
+    "name": "里中千枝",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/03/d0/14182_crt_ecGzZ.jpg?r=1608019970",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/d0/14182_crt_ecGzZ.jpg?r=1608019970",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/d0/14182_crt_ecGzZ.jpg?r=1608019970",
+        "grid": "https://lain.bgm.tv/pic/crt/g/03/d0/14182_crt_ecGzZ.jpg?r=1608019970"
+    },
+    "summary": "主人公的同班同学，非常活泼的女孩子。\r\n喜欢看功夫片，受其影响练过两下子，也学了李小龙的口头禅。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "里中千枝"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Chie Satonaka"
+                },
+                {
+                    "k": "日文名",
+                    "v": "里中 千枝"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さとなか　ちえ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Satonaka Chie"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1994-07-30"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "体重",
+            "value": "保密"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 2,
+    "birth_year": 1994,
+    "birth_mon": 7,
+    "birth_day": 30,
+    "stat": {
+        "comments": 17,
+        "collects": 75
+    },
+    "anime_ids": [
+        15489
+    ]
+}

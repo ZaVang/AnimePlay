@@ -1,0 +1,60 @@
+{
+    "id": 7611,
+    "name": "泉野明",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a6/34/7611_crt_ODvnX.jpg?r=1582266776",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/34/7611_crt_ODvnX.jpg?r=1582266776",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/34/7611_crt_ODvnX.jpg?r=1582266776",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a6/34/7611_crt_ODvnX.jpg?r=1582266776"
+    },
+    "summary": "特车二课第二小队队员，负责驾驶警用Patlabor英格拉姆1号机。热爱机器人的热血少女。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "泉野明"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "泉野明"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Izumi Noa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1978-12-17"
+        },
+        {
+            "key": "身高",
+            "value": "155"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": 1978,
+    "birth_mon": 12,
+    "birth_day": 17,
+    "stat": {
+        "comments": 27,
+        "collects": 88
+    },
+    "anime_ids": [
+        8484
+    ]
+}

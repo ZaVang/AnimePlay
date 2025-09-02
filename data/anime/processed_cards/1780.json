@@ -1,0 +1,57 @@
+{
+    "id": 1780,
+    "name": "骷髅13",
+    "image_path": "data/images/anime/1780.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "《骷髅13》是一部随着世界潮流的创作，取材以时事为主。大小事件的发生、来龙去脉，成了斋藤隆夫搜集的资料。三十年来的世界历史就在《骷髅13》中一目了然。使看漫画的人可以约略明白世界的变动，从“波斯湾战争”、“北约修理南斯拉夫”、“克林顿情史”、“世纪末的好莱坞”，以至“教皇遇刺”…《骷髅 13》从另一个角度为读者解读事件的始末。《骷髅13》是以超凡级狙击手作为引子，牵扯出种种的事件内幕！故事从真人真事出发，再加上虚构的剧情强化内容，使一般人在精彩的故事中，不仅可以看到尔虞我诈的人间百态，也能感受到温馨感人的一面。因此，格外受上班族的喜爱。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 50,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2008-04-11",
+    "rating_rank": 1942,
+    "rating_score": 7.2,
+    "rating_total": 180,
+    "main_character_ids": [
+        7943
+    ],
+    "main_characters": [
+        {
+            "id": 7943,
+            "name": "ゴルゴ13",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/01/63/7943_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/63/7943_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/63/7943_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/01/63/7943_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5625,
+                    "name": "舘ひろし",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/65/7e/5625_prsn_EZyqY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/7e/5625_prsn_EZyqY.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/7e/5625_prsn_EZyqY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/65/7e/5625_prsn_EZyqY.jpg"
+                    },
+                    "short_summary": "舘 ひろし（たち ひろし、1950年3月31日 - ）は、日本の俳優・シンガーソングライター。本名は舘 廣（たち ひろし）。愛知県名古屋市中区老松町（現・名古屋市中区千代田）出身。石原プロモーション所属。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

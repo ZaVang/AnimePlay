@@ -1,0 +1,56 @@
+{
+    "id": 316,
+    "name": "朽木學",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3f/e9/316_BgHzf.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/e9/316_BgHzf.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/e9/316_BgHzf.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3f/e9/316_BgHzf.jpg"
+    },
+    "summary": "在登場沒多久就因春日部的陰謀而暫時遠離現視研，之後又厚著臉皮跑回來，個性白目不知道看場合說話而常常被小咲痛毆。喜歡別人叫他「小木木」。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "朽木学"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "クチキ マナブ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kuchiki Manabu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1985年3月21日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": 1985,
+    "birth_mon": 3,
+    "birth_day": 21,
+    "stat": {
+        "comments": 9,
+        "collects": 2
+    },
+    "anime_ids": [
+        1219
+    ]
+}

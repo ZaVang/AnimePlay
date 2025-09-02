@@ -1,0 +1,374 @@
+{
+    "id": 211066,
+    "type": 2,
+    "name": "三ツ星カラーズ",
+    "name_cn": "三颗星彩色冒险",
+    "summary": "默默坐落于上野的公园的秘密基地。\r\n在那里的是3位小学生少女——。\r\n没错，她们正是守护上野的正义组织“COLORS”！！\r\n结衣、小幸、琴叶3人今天也为了守护上野的和平，\r\n每日每夜（骗你的，只到傍晚而已）在街上来回奔走！！ ",
+    "nsfw": false,
+    "locked": false,
+    "date": "2018-01-07",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/83/52/211066_6cuj1.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/83/52/211066_6cuj1.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/83/52/211066_6cuj1.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/83/52/211066_6cuj1.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/83/52/211066_6cuj1.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "三颗星彩色冒险"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Mitsuboshi Colors",
+                    "k": null
+                },
+                {
+                    "v": "三星Colors",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2018年1月7日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://mitsuboshi-anime.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "AT-X"
+        },
+        {
+            "key": "其他电视台",
+            "value": "BS11 / TOKYO MX / サンテレビ / KBS京都"
+        },
+        {
+            "key": "播放结束",
+            "value": "2018年3月25日"
+        },
+        {
+            "key": "导演",
+            "value": "河村智之"
+        },
+        {
+            "key": "Copyright",
+            "value": "©2017 カツヲ／KADOKAWA　アスキー・メディアワークス／三ツ星カラーズ製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "カツヲ（「月刊コミック電撃大王」連載（毎月27日発売））"
+        },
+        {
+            "key": "色彩设计",
+            "value": "水本志保"
+        },
+        {
+            "key": "3D监督",
+            "value": "天狗工房"
+        },
+        {
+            "key": "音效",
+            "value": "山田香織"
+        },
+        {
+            "key": "录音调整",
+            "value": "常川総一"
+        },
+        {
+            "key": "製作",
+            "value": "三ツ星カラーズ製作委員会（フロンティアワークス、KADOKAWA アスキー・メディアワークス、博報堂DYミュージック&ピクチャーズ、AT-X、角川メディアハウス、丸井グループ、SILVER LINK.）"
+        },
+        {
+            "key": "人物设定",
+            "value": "横田拓己"
+        },
+        {
+            "key": "主动画师",
+            "value": "山本亮友"
+        },
+        {
+            "key": "企画",
+            "value": "辻政英、郡司聡、菊池剛、村田嘉邦、山崎明日香、篠崎文彦、青木正久、金子逸人"
+        },
+        {
+            "key": "制片人",
+            "value": "南原充宏、小林由美子、山下愼平、山崎史紀、尾形光広、石川功"
+        },
+        {
+            "key": "动画制片人",
+            "value": "中川二郎"
+        },
+        {
+            "key": "执行制片人",
+            "value": "中村誠"
+        }
+    ],
+    "volumes": 0,
+    "eps": 12,
+    "total_episodes": 12,
+    "rating": {
+        "rank": 1085,
+        "total": 2969,
+        "count": {
+            "one": 4,
+            "two": 1,
+            "three": 2,
+            "four": 15,
+            "five": 81,
+            "six": 340,
+            "seven": 1075,
+            "eight": 1161,
+            "nine": 203,
+            "ten": 87
+        },
+        "score": 7.4
+    },
+    "collection": {
+        "wish": 1232,
+        "collect": 4261,
+        "doing": 378,
+        "on_hold": 382,
+        "dropped": 254
+    },
+    "tags": [
+        {
+            "name": "日常",
+            "count": 771
+        },
+        {
+            "name": "萝莉",
+            "count": 637
+        },
+        {
+            "name": "搞笑",
+            "count": 587
+        },
+        {
+            "name": "2018年1月",
+            "count": 553
+        },
+        {
+            "name": "TV",
+            "count": 486
+        },
+        {
+            "name": "漫画改",
+            "count": 463
+        },
+        {
+            "name": "SILVERLINK.",
+            "count": 347
+        },
+        {
+            "name": "2018",
+            "count": 257
+        },
+        {
+            "name": "SILVERLINK",
+            "count": 207
+        },
+        {
+            "name": "萌",
+            "count": 190
+        },
+        {
+            "name": "漫改",
+            "count": 182
+        },
+        {
+            "name": "河村智之",
+            "count": 115
+        },
+        {
+            "name": "三颗星彩色冒险",
+            "count": 105
+        },
+        {
+            "name": "治愈",
+            "count": 105
+        },
+        {
+            "name": "百合",
+            "count": 34
+        },
+        {
+            "name": "日本",
+            "count": 27
+        },
+        {
+            "name": "SILVER_LINK.",
+            "count": 21
+        },
+        {
+            "name": "熊孩子",
+            "count": 12
+        },
+        {
+            "name": "轻百合",
+            "count": 12
+        },
+        {
+            "name": "横田拓己",
+            "count": 11
+        },
+        {
+            "name": "2018年",
+            "count": 10
+        },
+        {
+            "name": "欢乐",
+            "count": 7
+        },
+        {
+            "name": "TVA",
+            "count": 7
+        },
+        {
+            "name": "童年",
+            "count": 7
+        },
+        {
+            "name": "日本动画",
+            "count": 7
+        },
+        {
+            "name": "2018冬",
+            "count": 6
+        },
+        {
+            "name": "ヤスカワショウゴ",
+            "count": 6
+        },
+        {
+            "name": "未知瑠",
+            "count": 6
+        },
+        {
+            "name": "萌系",
+            "count": 6
+        },
+        {
+            "name": "萌豚",
+            "count": 6
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "series": false,
+    "main_character_ids": [
+        52285,
+        52286,
+        52287
+    ],
+    "main_characters": [
+        {
+            "id": 52285,
+            "name": "赤松結衣",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/02/6c/52285_crt_9m142.jpg?r=1522419034",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/6c/52285_crt_9m142.jpg?r=1522419034",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/6c/52285_crt_9m142.jpg?r=1522419034",
+                "grid": "https://lain.bgm.tv/pic/crt/g/02/6c/52285_crt_9m142.jpg?r=1522419034"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 18087,
+                    "name": "高田憂希",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/be/36/18087_prsn_87vIV.jpg?r=1632479127",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/36/18087_prsn_87vIV.jpg?r=1632479127",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/36/18087_prsn_87vIV.jpg?r=1632479127",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/be/36/18087_prsn_87vIV.jpg?r=1632479127"
+                    },
+                    "short_summary": "日本の女性声優。マウスプロモーション所属。血液型はAB型。福岡県北九州市出身。\r\n\r\n代々木アニメーション学院福岡校、マウスプロモーション付属養成所の第28期生を経て、2015年よりマウスプロモーションの所属となる。\r\n劇場版アニメ『BAYONETTA Bloody Fate』のヴィグリットの人々、乗客、魔界の住人役でアニメデビュー。\r\n2015年7月5日 株式会社オブジェクト主催・企画のイベント『こえずか 〜声優図鑑に出てくれた最高なメンバーをがむしゃらに揃えましたSP〜【夜の部】』にて優勝。\r\n\r\n自身のコラムにて、天然パーマだと語っている。\r\n趣味・特技は、明太子の食べ比べ、歌うこと、靴下集め。\r\n好きな食べ物はカレーライス、苦手な食べ物はいちごである。\r\n『美少女戦士セーラームーン』が好きで、特にセーラーヴィーナスが好きだと語っている。\r\n動物のキリンが好きであるほか、レモン、ひまわりが好きである。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 52286,
+            "name": "黄瀬沙希",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d5/3c/52286_crt_Og92G.jpg?r=1522419315",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/3c/52286_crt_Og92G.jpg?r=1522419315",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/3c/52286_crt_Og92G.jpg?r=1522419315",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d5/3c/52286_crt_Og92G.jpg?r=1522419315"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 16031,
+                    "name": "高野麻里佳",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/1a/29/16031_prsn_alMVC.jpg?r=1746713868",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/29/16031_prsn_alMVC.jpg?r=1746713868",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/29/16031_prsn_alMVC.jpg?r=1746713868",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1a/29/16031_prsn_alMVC.jpg?r=1746713868"
+                    },
+                    "short_summary": "高野 麻里佳（こうの まりか、1994年2月22日 - ）は、日本の女性声優。マウスプロモーション所属。東京都出身。声優ユニット・イヤホンズ、TEAM OHENRO。のメンバー。\r\n\r\n代々木アニメーション学院高等部大宮校卒。マウスプロモーション付属養成所第27期卒。2014年からマウスプロモーションに正式所属中。\r\n2014年、ufotable 徳島スタジオ制作の四国八十八箇所を扱った情報番組『おへんろ。』にて主役の一人である、めぐみ役を演じて知られるようになり、同番組の主演陣（山下七海、江原裕理）で構成される声優ユニット「TEAM OHENRO。」に参加する。同年10月8日に同ユニット名義でDIVE II entertainmentより同番組の主題歌である「千と二百の物語」をリリースし、CDデビュー。\r\n2015年7月、テレビアニメ『それが声優!』で自身初となるテレビアニメ準主演を務め、同作品で共演した高橋李依、長久友紀と共に同作品から派生した声優ユニット「イヤホンズ」を結成、同年6月18日にEVIL LINE RECORDSよりイヤホンズとして、デビューシングル「耳の中へ」を発売した。12月、お笑い芸人のゴー☆ジャスがパーソナリティーを務めているゲーム実況動画のアシスタントから結成したユニット「エレ☆ガンス」としての活動も本格的に開始した。\r\n\r\n三人姉妹の次女で、姉は女優・ダンサーの高野璃奈。\r\n声優を目指したきっかけは、小さいころから本を読むのが大好きで、小学生時代に音読のための練習を各キャラクターにアレンジを加えて楽しんでいたところ、そのことを母親に褒められたことが始まり。その後『ポケットモンスター』のピカチュウと『ONE PIECE』のトニートニー・チョッパーの声優が同じ大谷育江であることを知ったときに、「この人になりたい！」と職業として声優を意識した。\r\n事務所の同期には桑原由気、高井舞香、水間友美がいる。\r\n好きな食べ物はビーフジャーキーで、アフレコ現場などに行く際は私用のバッグに常時携帯している。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 52287,
+            "name": "青山琴葉",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/aa/32/52287_crt_XRm8M.jpg?r=1522453030",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/32/52287_crt_XRm8M.jpg?r=1522453030",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/32/52287_crt_XRm8M.jpg?r=1522453030",
+                "grid": "https://lain.bgm.tv/pic/crt/g/aa/32/52287_crt_XRm8M.jpg?r=1522453030"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13582,
+                    "name": "日岡なつみ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/19/d0/13582_prsn_yg5N2.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/d0/13582_prsn_yg5N2.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/d0/13582_prsn_yg5N2.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/19/d0/13582_prsn_yg5N2.jpg"
+                    },
+                    "short_summary": "高校時代に深夜アニメを観たことがきっかけで声優業に興味を持ち始め、その後専門学校東京アナウンス学院への入学を決意した。両親は当初入学に対し否定的であったが結果を出すことを条件に許可したという。\r\n\r\n高校時代には『涼宮ハルヒの憂鬱』、『マクロスF』、『東のエデン』にハマっており、他方好きな声優には木村良平、早見沙織を挙げている。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

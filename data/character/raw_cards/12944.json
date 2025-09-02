@@ -1,0 +1,64 @@
+{
+    "id": 12944,
+    "name": "小野寺律",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b4/ab/12944_crt_8ddY8.jpg?r=1489513145",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/ab/12944_crt_8ddY8.jpg?r=1489513145",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/ab/12944_crt_8ddY8.jpg?r=1489513145",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b4/ab/12944_crt_8ddY8.jpg?r=1489513145"
+    },
+    "summary": "エメラルド編集部の編集者にして、武藤雪菜の担当兼雑誌進行係でもある。現在26歳。\r\n転属前は小野寺出版の文芸編集者であり、大物作家を担当していた。\r\n高校生の時、3年間片想いしていた高野に告白して付き合い始めるが、勘違いから一方的に別れ、\r\nその後、海外へと留学。高野曰く｢一回やると口に出したら、無理矢理力技でやる｣タイプ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小野寺律"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "織田律"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おのでら りつ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Onodera Ritsu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月7日"
+        },
+        {
+            "key": "身高",
+            "value": "172cm"
+        },
+        {
+            "key": "体重",
+            "value": "58kg"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 7,
+    "stat": {
+        "comments": 7,
+        "collects": 50
+    },
+    "anime_ids": [
+        20813,
+        10243
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "id": 12856,
+    "name": "レヴィ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/90/f1/12856_crt_BBDpf.jpg?r=1426310656",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/f1/12856_crt_BBDpf.jpg?r=1426310656",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/f1/12856_crt_BBDpf.jpg?r=1426310656",
+        "grid": "https://lain.bgm.tv/pic/crt/g/90/f1/12856_crt_BBDpf.jpg?r=1426310656"
+    },
+    "summary": "美籍华人，本名蕾贝卡。擅长使用双枪攻击，绰号“双枪手”（Two-Hand）。她在纽约贫民区长大，童年生活黑暗，热衷于暴力和枪械，遭到FBI和NYPD27局的通缉，后来为船长达奇所救，加入了黑礁商会。惯用的枪为贝瑞塔M92的定制改装版。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莱薇"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "拉薇"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Ravy"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "レベッカ・リー"
+                },
+                {
+                    "k": "昵称",
+                    "v": "Two-Hand"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 36,
+        "collects": 208
+    },
+    "anime_ids": [
+        980,
+        979
+    ]
+}

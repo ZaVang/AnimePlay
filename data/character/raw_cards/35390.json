@@ -1,0 +1,56 @@
+{
+    "id": 35390,
+    "name": "倉本圭",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c4/7e/35390_crt_85CC8.jpg?r=1455675290",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/7e/35390_crt_85CC8.jpg?r=1455675290",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/7e/35390_crt_85CC8.jpg?r=1455675290",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c4/7e/35390_crt_85CC8.jpg?r=1455675290"
+    },
+    "summary": "倉本家の長男で千夏の兄。\r\n真琴とは同い年でクラスメイトでもある。\r\n家事全般が得意で料理が趣味。\r\n達観しているところもあるが、おばけなど怖い話が苦手。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "仓本圭"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "倉本 圭"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くらもと けい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kuramoto Kei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.flyingwitch.jp/character/kei.html"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 5
+    },
+    "anime_ids": [
+        141799
+    ]
+}

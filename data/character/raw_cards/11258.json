@@ -1,0 +1,69 @@
+{
+    "id": 11258,
+    "name": "高原歩美",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/34/18/11258_crt_Z8cUx.jpg?r=1378923920",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/34/18/11258_crt_Z8cUx.jpg?r=1378923920",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/34/18/11258_crt_Z8cUx.jpg?r=1378923920",
+        "grid": "https://lain.bgm.tv/pic/crt/g/34/18/11258_crt_Z8cUx.jpg?r=1378923920"
+    },
+    "summary": "陸上部でハードル走を種目とする明るく活発な女の子。\r\nつねに前に向かって突っ走っている陸上少女だったが、\r\nあることがきっかけで駆け魂にとり憑かれてしまう。\r\n桂馬のことを「オタメガネ」と呼ぶ。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高原步美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たかはら あゆみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "takahara ayumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月2日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "体重",
+            "value": "50kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B84 W60 H85"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 5,
+    "birth_day": 2,
+    "stat": {
+        "comments": 24,
+        "collects": 86
+    },
+    "anime_ids": [
+        56112,
+        5976
+    ]
+}

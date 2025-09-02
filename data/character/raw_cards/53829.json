@@ -1,0 +1,44 @@
+{
+    "id": 53829,
+    "name": "民谷岩",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/69/95/53829_crt_0rZ7S.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/95/53829_crt_0rZ7S.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/95/53829_crt_0rZ7S.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/69/95/53829_crt_0rZ7S.jpg"
+    },
+    "summary": "在产下伊右卫门的孩子后，也还是不发牢骚地过着贫困的生活。但由于伊藤家的阴谋，而遭到下毒。因而在留下恨意后而愤死并且成为怨灵，对伊右卫门和他周围的人一个一个进行报复……",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "民谷岩"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たみや いわ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 1
+    },
+    "anime_ids": [
+        976
+    ]
+}

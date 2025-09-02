@@ -1,0 +1,69 @@
+{
+    "id": 14097,
+    "name": "レオリオ＝パラディナイト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/60/fc/14097_crt_cv0s1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/fc/14097_crt_cv0s1.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/fc/14097_crt_cv0s1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/60/fc/14097_crt_cv0s1.jpg"
+    },
+    "summary": "性格成熟，有包容力，但容易感情用事，在猎人试验期间与小杰，奇犽和酷拉皮卡结识。表面上、参加猎人试验的目的是钱，但实际上是为了成为医生。在最要好的朋友皮耶杜因病去世后决定成为猎人以支付读医学院的费用。相较于其他主角并没有特别的战斗才华，然而其心地良善、重义气、真诚、具吸引人的领袖风范。在友克鑫市篇后直到会长选举篇才再度登场，几乎成为新一届猎人协会会长人选。在其后加入十二支并举荐酷拉皮卡加入远征暗黑大陆。\r\n念能力属于放出系，能力是让身体部位(例:手)穿梭空间进行攻击。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雷欧力·帕拉丁奈特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Leorio Paladinight"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "レオリオ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月3日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "193cm"
+        },
+        {
+            "key": "体重",
+            "value": "85kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "百科"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 3,
+    "birth_day": 3,
+    "stat": {
+        "comments": 15,
+        "collects": 50
+    },
+    "anime_ids": [
+        1704,
+        21032
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 66042,
+    "name": "ケイト",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4a/52/66042_crt_1129Y.jpg?r=1548219515",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4a/52/66042_crt_1129Y.jpg?r=1548219515",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4a/52/66042_crt_1129Y.jpg?r=1548219515",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4a/52/66042_crt_1129Y.jpg?r=1548219515"
+    },
+    "summary": "理詰めな性格で計算も早い、寡黙な女の子。\r\n機械のような正確な射撃とトリッキーな操縦で敵を撃墜していく。\r\n\r\n常人には不可能なトリッキーな操縦を淡々とやってのけ、機械のように正確に敵を撃墜していく天才パイロット。\r\n理詰めな性格で、普段は寡黙で感情を表に出さず、仲間との会話でも客観的事実だけを話す。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "凯特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Kate"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Keito"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月31日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://kotobuki-anime.com/character/kate"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 31,
+    "stat": {
+        "comments": 3,
+        "collects": 17
+    },
+    "anime_ids": [
+        260467
+    ]
+}

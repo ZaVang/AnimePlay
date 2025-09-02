@@ -1,0 +1,52 @@
+{
+    "id": 7406,
+    "name": "堂本大輔",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/82/52/7406_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/52/7406_crt_anidb.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/52/7406_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/82/52/7406_crt_anidb.jpg"
+    },
+    "summary": "外星人警察。因为太空船一时的事故而在地球上迫降，然后在受伤的时候遇到了翼。\r\n在执行运送六颗Megure(マギュア)的卵到总部的任务途中，因为卵在太空船上发生失控，就分别飞散在北海道当地，而自己在紧急迫降中受伤。由在附近追逐爱犬的翼相救，在同僚来支援以前独自留在地球上战斗和分析资料。目前以堂本大辅的地球人身份与翼、光两人同住。\r\n擅长记忆操作。在表面上是光与翼的父亲英夫的摄影师朋友，但在职业的表现上没有非常强烈。任务结束后未消除翼的记忆，在机场与翼道别。\r\n伪装地球人样貌是以金城武为原创角色。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "堂本大辅"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "D・D"
+                },
+                {
+                    "k": "日文名",
+                    "v": "堂本大輔"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Doumoto Daisuke"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        10376
+    ]
+}

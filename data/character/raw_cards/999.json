@@ -1,0 +1,73 @@
+{
+    "id": 999,
+    "name": "沢渡真琴",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/19/3d/999_crt_SesTE.jpg?r=1523160243",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/3d/999_crt_SesTE.jpg?r=1523160243",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/3d/999_crt_SesTE.jpg?r=1523160243",
+        "grid": "https://lain.bgm.tv/pic/crt/g/19/3d/999_crt_SesTE.jpg?r=1523160243"
+    },
+    "summary": "突然出现在祐一的面前，声称要报过去的仇并袭击而来的身分不明的少女。丧失了记忆，除了自己的名字叫做“泽渡真琴”以外什么也想不起来。口头禅是“啊呜（あうーっ）”。虽然想不出理由为何却还是憎恨著祐一并不断地纠缠，后来就寄住在水濑家。反覆趁著祐一睡着时进行偷袭却常遭受反击。喜欢的食物是肉包。一旦看起漫画就会看得入迷。后来捡了一只猫并由祐一取名为“ぴろ（Piro）”（语源是俄文的Пирожки（Pirozhki），意同俄罗斯饺子）。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "泽渡真琴"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "沢渡 真琴"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さわたり まこと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sawatari Makoto"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月6日"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "体重",
+            "value": "46kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B81 W55 H79"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 6,
+    "stat": {
+        "comments": 29,
+        "collects": 140
+    },
+    "anime_ids": [
+        274,
+        363880
+    ]
+}

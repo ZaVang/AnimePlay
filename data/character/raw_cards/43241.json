@@ -1,0 +1,61 @@
+{
+    "id": 43241,
+    "name": "六弥ナギ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/44/6d/43241_crt_kz4f6.jpg?r=1586443606",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/6d/43241_crt_kz4f6.jpg?r=1586443606",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/6d/43241_crt_kz4f6.jpg?r=1586443606",
+        "grid": "https://lain.bgm.tv/pic/crt/g/44/6d/43241_crt_kz4f6.jpg?r=1586443606"
+    },
+    "summary": "IDOLiSH7のメンバー。\r\n\r\n好きなもの：女性\r\n嫌いなもの：深夜アニメを邪魔する速報\r\n北欧系のハーフ。上品な物腰だが、甘い言葉ですぐ女性を口説く。母親が日本人だった影響もあり、日本のアニメに大きな愛を注いでいる。幼いころは容姿や性格のせいで友達がいなかったため、メンバーのことが大好き。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "六弥凪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ろくやなぎ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Rokuya Nagi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "6月20日"
+        },
+        {
+            "key": "身高",
+            "value": "180cm"
+        },
+        {
+            "key": "年龄",
+            "value": "19"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 20,
+    "stat": {
+        "comments": 12,
+        "collects": 7
+    },
+    "anime_ids": [
+        253042,
+        331751
+    ]
+}

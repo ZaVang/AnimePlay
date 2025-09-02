@@ -1,0 +1,181 @@
+{
+    "id": 36359,
+    "name": "鲁邦三世 第二期",
+    "image_path": "data/images/anime/36359.jpg",
+    "points": 7.8,
+    "cost": 1,
+    "rarity": "N",
+    "description": "ルパン一味の日本脱出から5年。世界各地で悠々自適の生活を送っていた次元、五ェ門、不二子のもとに同窓会の招待状が届く。果たして豪華客船サーロイン号に集結したルパンたち、だがそれはルパンに復讐を願うミスターXの罠だった……！　ICPOへと出向し勢いを増す銭形警部との攻防もさらに白熱、ルパンたちの新たな冒険が始まる！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 155,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "1977-10-03",
+    "rating_rank": 629,
+    "rating_score": 7.8,
+    "rating_total": 215,
+    "main_character_ids": [
+        6784,
+        6975,
+        7253,
+        7254,
+        7266
+    ],
+    "main_characters": [
+        {
+            "id": 6784,
+            "name": "ルパン三世",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/08/4e/6784_crt_bQQph.jpg?r=1446820910",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/4e/6784_crt_bQQph.jpg?r=1446820910",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/4e/6784_crt_bQQph.jpg?r=1446820910",
+                "grid": "https://lain.bgm.tv/pic/crt/g/08/4e/6784_crt_bQQph.jpg?r=1446820910"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4408,
+                    "name": "山田康雄",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c7/93/4408_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/93/4408_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/93/4408_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c7/93/4408_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "山田 康雄（やまだ やすお、1932年〈昭和7年〉9月10日 - 1995年〈平成7年〉3月19日）は、日本の俳優、声優、司会者。テアトル・エコーに所属していた。長男は演芸作家の山田浩康。\r\n代表作に、ルパン三世の声（初代）や、クリント・イーストウッド、ジャン・ポール・ベルモンドの吹き替えがある。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6975,
+            "name": "次元大介",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/33/f2/6975_crt_KwU3M.jpg?r=1446818861",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/f2/6975_crt_KwU3M.jpg?r=1446818861",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/f2/6975_crt_KwU3M.jpg?r=1446818861",
+                "grid": "https://lain.bgm.tv/pic/crt/g/33/f2/6975_crt_KwU3M.jpg?r=1446818861"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4219,
+                    "name": "小林清志",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d4/b4/4219_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/b4/4219_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/b4/4219_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d4/b4/4219_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーター。東京俳優生活協同組合の創立メンバーの一人であり、同組合に所属した。\r\n\r\n独特の渋い声を生かして、声優界の創生期から活躍した。アニメでの主な出演作は『ルパン三世』シリーズの次元大介や『妖怪人間ベム』（1968年）のベムなど。また、CMやテレビ番組などのナレーションも多く担当し、洋画ではジェームズ・コバーン、リー・マーヴィンらの吹き替えを務めていた。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7253,
+            "name": "峰不二子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/78/0b/7253_crt_V6dHh.jpg?r=1446819708",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/0b/7253_crt_V6dHh.jpg?r=1446819708",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/0b/7253_crt_V6dHh.jpg?r=1446819708",
+                "grid": "https://lain.bgm.tv/pic/crt/g/78/0b/7253_crt_V6dHh.jpg?r=1446819708"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4407,
+                    "name": "増山江威子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/03/07/4407_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/07/4407_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/07/4407_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/03/07/4407_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "増山 江威子は、日本の女優、声優、ナレーター。東京府（現東京都）品川区荏原出身。青二プロダクション所属。\r\n4人姉妹の末っ子として生まれる。小さい頃はゆっくりした話し方で、教師に「あなた、ちゃんとお話しできないの?」と言われショックを受けるなど、次第にその話し方に劣等感を持つようになる。\r\n幼少期はバレリーナを目指しレッスンも行っていたが、肺病のため12歳の時に断念。「何か夢を持ちたい」と思っていたころに、義理の兄の紹介もあり、話し方の改善も考え新児童劇団（現在の劇団新児童）に所属。指導担当だった麻生美代子に師事する。そこで話し方の劣等感を克服し、自然と演技に興味を持つようになる。\r\n立正学園高等学校出身。\r\n15歳の頃、児童劇団に所属する年齢でもなくなったため、近い世代の毒蝮三太夫・稲吉靖司・影万里江・北浜晴子・豊原ミツ子らと「劇団山王」を立ち上げる。数年後、浅利慶太に「女優が少ないから」と頼まれ、影万里江とともに劇団四季に移籍。テレビ出演、海外ドラマの吹き替えの仕事もするようになったという。四季にラジオドラマやアテレコの仕事が入って来るうちに声の仕事に興味を持ち始める。プライベートで時間の制約ができてしまい、時間が不規則なテレビ、稽古が必要な舞台の仕事が難しくなっていったという。\r\nその後、「声の仕事だけに集中しよう」と決意し、家庭や子育てを仕事と両立させるため、舞台などよりは比較的短時間でできる声優業に専念するようになり、1960年代から青二プロダクションに所属。\r\n2017年、『東京アニメアワードフェスティバル 2017』において「アニメ功労部門」を受賞。\r\n2021年、第十五回声優アワードにて「功労賞」を受賞。\r\n2024年5月20日、肺炎のため死去した。88歳没。葬儀は本人の意向により家族葬として行い、訃報は6月3日に青二プロダクションより発表された。\r\n\r\n夫は、TBSテレビのチーフ・プロデューサーを務めた政田一喜（2022年没）。娘がいる。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7254,
+            "name": "銭形幸一",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/a7/07/7254_crt_CMERs.jpg?r=1744607981",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/07/7254_crt_CMERs.jpg?r=1744607981",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/07/7254_crt_CMERs.jpg?r=1744607981",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a7/07/7254_crt_CMERs.jpg?r=1744607981"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4218,
+                    "name": "納谷悟朗",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d2/78/4218_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/78/4218_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/78/4218_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d2/78/4218_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の俳優、声優、ナレーター、舞台演出家。テアトル・エコー所属。\r\n\r\n北海道函館市出身。立命館大学法学部中退。弟は俳優・声優の納谷六朗、妻は女優・声優の火野カチ子。代表作に『ルパン三世』シリーズ（銭形警部役）がある。洋画ではクラーク・ゲーブル、チャールトン・ヘストン、ジョン・ウェインの声の吹き替えを担当。\r\n\r\n2008年の舞台公演中に体調不良を訴え俳優業を引退し、2009年に都内から千葉市に転居。その後も声優業は続け、日曜洋画劇場で2012年5月28日に収録した『インセプション』の吹き替え収録後体調を崩し入退院を繰り返していたが、2013年3月5日、慢性呼吸不全のため千葉市内の自宅で死去。83歳没。通夜及び告別式は近親者のみで行われ、3月11日にマスコミに公表された。5月21日には恵比寿・エコー劇場でお別れの会が行われ、栗田貫一、小林清志、増山江威子、野沢雅子、山寺宏一ら声優仲間やファンおよそ300人が訪れた。また、神谷明や麻上洋子、井上真樹夫、松井菜桜子は納谷の訃報が発表された際、自身のブログで追悼のコメントを述べている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 7266,
+            "name": "石川五ェ門",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/51/2c/7266_crt_hAex8.jpg?r=1446822000",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/2c/7266_crt_hAex8.jpg?r=1446822000",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/2c/7266_crt_hAex8.jpg?r=1446822000",
+                "grid": "https://lain.bgm.tv/pic/crt/g/51/2c/7266_crt_hAex8.jpg?r=1446822000"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4234,
+                    "name": "井上真樹夫",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/fd/45/4234_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/45/4234_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/45/4234_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fd/45/4234_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "井上 真樹夫（いのうえ まきお、本名：井上 孝夫（いのうえ たかお））は、日本の俳優、声優、作詞家。青二プロダクション所属。山梨県出身。血液型はO型。\r\n中学生の時、移動劇団の『チルチルミチル』を観劇したことがきっかけで芝居の道を志し、16歳頃にはテレビドラマに出演を開始、高校在学中に東京アナウンス・アカデミーへ入学。同じ頃には寺山修司にインスパイアされ、後に友人と共にアングラ劇団を立ち上げたりしている。\r\nしばらくして、舞台の成立が困難になったり生活が苦しくなったりしたため「お金を稼がなきゃ」と思っていたところ、知り合いのマネージャーに誘われ『ドビーの青春』の吹き替えに出演、声優業を行うようになる。後に青二プロダクションに所属、アニメにも多数出演するようになり、第1次声優ブームが起きると富山敬、神谷明と共に「声優御三家」の一人となる。\r\n80歳を超えた現在も『キングダム ハーツ シリーズ』でマスター・エラクゥス役として出演するなどの声優業の他に、講演会・読み聞かせの開催、「伊能 絵巻（いのう えまき）」名義での作詩活動や小説の執筆など、精力的に活動を行っている。\r\n\r\n因缺血性心脏病恶化，于2019年11月29日去世。曾配音《鲁邦三世》石川五右卫门（二代目），《宇宙海贼哈洛克船长》哈洛克，《巨人之星》花形满，《银河英雄传说》安森巴哈。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

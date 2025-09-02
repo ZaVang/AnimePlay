@@ -1,0 +1,56 @@
+{
+    "id": 28092,
+    "name": "百合城銀子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/86/82/28092_crt_msc0v.jpg?r=1416751618",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/82/28092_crt_msc0v.jpg?r=1416751618",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/82/28092_crt_msc0v.jpg?r=1416751618",
+        "grid": "https://lain.bgm.tv/pic/crt/g/86/82/28092_crt_msc0v.jpg?r=1416751618"
+    },
+    "summary": "嵐が丘学園に転校してきた女の子。しかし、彼女の正体は「人食クマ（熊）」なのである！椿輝紅羽に対して特別な執着をみせるが、過去に二人は・・・。\r\n「ユリ、承認！」の掛け声で、ウィニングモードに変身！\r\n「見つけた、デリシャスメル！　私の『スキ』・・・ガウガウ。」",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "百合城银子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "百合城 銀子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ゆりしろ ぎんこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yurishiro Ginko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "yurikuma.jp/chara.html"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 9,
+        "collects": 36
+    },
+    "anime_ids": [
+        59825
+    ]
+}

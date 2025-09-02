@@ -1,0 +1,58 @@
+{
+    "id": 92705,
+    "name": "虫师 续章",
+    "image_path": "data/images/anime/92705.jpg",
+    "points": 8.5,
+    "cost": 5,
+    "rarity": "HR",
+    "description": "另一个世界，住着一群与常见动植物截然不同的生物。远古以来，人们敬畏地称它们为“虫”。当虫的世界和人的世界重合时，虫师银古便会出现。介绍中提到的虫显然不是看上去肉呼呼扭动的小东西，而是一种最接近生命本源，类似灵体的生物。它们有自己的生存方式，而这种方式却可能有悖于人类的常识，甚至危害人类的生存。于是就出现了“虫师”这种职业，他们云游四方，对虫的生命形态，生存方式进行研究，并接受人们的委托，解决可能是由虫引起的怪异事件。银古，正是他们的一员。 银古出入穷乡僻壤去追寻虫的足迹。虫可能潜伏在人的身体中，潜伏在沼泽地中，潜伏在整个山岭中，带来疾病、瘟疫等可怕的灾难。银古总能找到结症，予以化解。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 11,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改"
+    ],
+    "date": "2014-04-04",
+    "rating_rank": 45,
+    "rating_score": 8.5,
+    "rating_total": 4361,
+    "main_character_ids": [
+        156
+    ],
+    "main_characters": [
+        {
+            "id": 156,
+            "name": "ギンコ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d1/91/156_crt_SWfqY.jpg?r=1444714628",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d1/91/156_crt_SWfqY.jpg?r=1444714628",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d1/91/156_crt_SWfqY.jpg?r=1444714628",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d1/91/156_crt_SWfqY.jpg?r=1444714628"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4846,
+                    "name": "中野裕斗",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ce/6b/4846_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/6b/4846_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/6b/4846_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ce/6b/4846_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の男性俳優、声優。所属事務所はムーブマン。千葉県出身。身長174cm、体重68kg。血液型はO型。\r\n2005年秋、大地の弟子的存在である長濱博史が監督したアニメ『蟲師』では主人公ギンコを演じた。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

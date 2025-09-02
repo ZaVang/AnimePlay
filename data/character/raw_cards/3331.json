@@ -1,0 +1,76 @@
+{
+    "id": 3331,
+    "name": "大空翼",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c6/a0/3331_crt_kt4ey.jpg?r=1519007029",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c6/a0/3331_crt_kt4ey.jpg?r=1519007029",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c6/a0/3331_crt_kt4ey.jpg?r=1519007029",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c6/a0/3331_crt_kt4ey.jpg?r=1519007029"
+    },
+    "summary": "大空翼（日语：大空 翼，平假名：おおぞら つばさ），日本漫画《足球小将》的主角。以“足球是朋友”（日语：ボールは友達）为信念，在作中被叫作“足球小将”（日语：サッカーの申し子）。\r\n\r\n在大部分球队中，他穿着10号球衣，是一名技术全面且极具天赋的球员，擅长倒挂金勾与冲力射球，并经常把别人的球技化为自己的绝技，故事中被誉为是世界球坛的绝世奇才。\r\n\r\n绝技计有：猎鹰射球（展翅射球）、冲力射球、倒挂金勾、双人射球、猎鹰冲力射球（飞翔冲力射球）、新猎鹰冲力射球（新飞翔冲力射球）、鹰击射球（空降射球）、其他模仿自别人的绝招。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "大空翼"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "戴翅伟，方育翔"
+                },
+                {
+                    "k": "日文名",
+                    "v": "大空 翼"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おおぞら つばさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Oozora Tsubasa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "7月28日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        },
+        {
+            "key": "体重",
+            "value": "64kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 28,
+    "stat": {
+        "comments": 7,
+        "collects": 11
+    },
+    "anime_ids": [
+        5426
+    ]
+}

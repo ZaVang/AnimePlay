@@ -1,0 +1,70 @@
+{
+    "id": 9531,
+    "name": "紀田正臣",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/dd/60/9531_crt_PE7Bk.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/60/9531_crt_PE7Bk.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/60/9531_crt_PE7Bk.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dd/60/9531_crt_PE7Bk.jpg"
+    },
+    "summary": "居住在日本池袋的少年，是竜之峰帝人的小学同学。他邀请帝人来池袋一起读高中。就读于来良学院。兴趣是搞笑，但通常都是冷笑话。对池袋十分熟悉。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "纪田正臣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "きだ　まさおみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kida Masaomi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "6月19日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "体重",
+            "value": "60kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 19,
+    "stat": {
+        "comments": 28,
+        "collects": 254
+    },
+    "anime_ids": [
+        2463,
+        99941,
+        114968
+    ]
+}

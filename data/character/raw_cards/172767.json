@@ -1,0 +1,64 @@
+{
+    "id": 172767,
+    "name": "比嘉つつじ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ff/4c/172767_crt_2EErs.jpg?r=1741836625",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ff/4c/172767_crt_2EErs.jpg?r=1741836625",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ff/4c/172767_crt_2EErs.jpg?r=1741836625",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ff/4c/172767_crt_2EErs.jpg?r=1741836625"
+    },
+    "summary": "クールで独特の感性の持ち主。\r\nななの性格を熟知している。\r\n周りのことをよく観察しているが、ハプニングが起きるとパニックになるとこも。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "比嘉踯躅"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "比嘉 つつじ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひが つつじ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Higa Tsutsuji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月9日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "星座",
+            "value": "处女座"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 9,
+    "stat": {
+        "comments": 79,
+        "collects": 242
+    },
+    "anime_ids": [
+        531159
+    ]
+}

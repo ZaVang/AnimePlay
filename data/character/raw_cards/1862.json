@@ -1,0 +1,57 @@
+{
+    "id": 1862,
+    "name": "八坂一",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/4e/87/1862_47Z7J.jpg?r=1509016713",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/87/1862_47Z7J.jpg?r=1509016713",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/87/1862_47Z7J.jpg?r=1509016713",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4e/87/1862_47Z7J.jpg?r=1509016713"
+    },
+    "summary": "本作的主角。\r\n戴着眼镜的13岁少年，暑期借宿在祖父家中。他的不平凡遭遇从遇到岚的那一刻开始。\r\n名字估计是从京都祇园的八坂神社而来。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "八坂一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "八坂 一"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やさか はじめ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yasaka Hajime"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "声优",
+            "value": "三瓶由布子"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 8
+    },
+    "anime_ids": [
+        2604,
+        1454
+    ]
+}

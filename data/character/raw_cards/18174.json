@@ -1,0 +1,39 @@
+{
+    "id": 18174,
+    "name": "大庭葉蔵",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/50/83/18174_crt_DOm2z.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/50/83/18174_crt_DOm2z.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/50/83/18174_crt_DOm2z.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/50/83/18174_crt_DOm2z.jpg"
+    },
+    "summary": "叶藏生于二战时日本不愁吃穿的政治富家，是个体弱多病的家族末子，又从小看遍人情冷暖、正面背面的一套，所以感觉自己人生没有意义，从小学会看别人脸色、讨别人笑容。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "大庭叶藏"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 4
+    },
+    "anime_ids": [
+        2882
+    ]
+}

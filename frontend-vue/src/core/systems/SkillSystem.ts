@@ -10,7 +10,7 @@ export const SkillSystem = {
    * Called when a card is played by attacker or defender.
    * Minimal demo: if an anime card has '日常'标签，则为该玩家抽1张牌。
    */
-  onCardPlayed(playerId: 'playerA' | 'playerB', card: Card) {
+  async onCardPlayed(playerId: 'playerA' | 'playerB', card: Card) {
     const playerStore = usePlayerStore();
     const gameStore = useGameStore();
     const historyStore = useHistoryStore();
@@ -34,47 +34,52 @@ export const SkillSystem = {
     // Standardized per-card effects (onPlay)
     if (isAnime) {
       const anime = card as AnimeCard;
-      anime.effects?.filter(e => e.trigger === 'onPlay').forEach(e => {
+      const onPlayEffects = anime.effects?.filter(e => e.trigger === 'onPlay') || [];
+      for (const e of onPlayEffects) {
         const ctx: EffectContext = { event: 'onPlay', playerId, role: 'attacker', card: anime };
-        runEffect(e.effectId, ctx);
-      });
+        await runEffect(e.effectId, ctx);
+      }
     }
   },
 
   /**
    * Emit beforeResolve effects for both sides.
    */
-  emitBeforeResolve(clash: ClashInfo, addStrengthBonus: (side: 'attacker'|'defender', amount: number) => void) {
+  async emitBeforeResolve(clash: ClashInfo, addStrengthBonus: (side: 'attacker'|'defender', amount: number) => void) {
     const attackerId = clash.attackerId;
     const defenderId = clash.defenderId || (attackerId === 'playerA' ? 'playerB' : 'playerA');
 
     if (clash.attackingCard?.effects) {
-      clash.attackingCard.effects.filter(e => e.trigger === 'beforeResolve').forEach(e => {
-        runEffect(e.effectId, { event: 'beforeResolve', playerId: attackerId, role: 'attacker', card: clash.attackingCard, clash, addStrengthBonus });
-      });
+      const beforeResolveEffects = clash.attackingCard.effects.filter(e => e.trigger === 'beforeResolve');
+      for (const e of beforeResolveEffects) {
+        await runEffect(e.effectId, { event: 'beforeResolve', playerId: attackerId, role: 'attacker', card: clash.attackingCard, clash, addStrengthBonus });
+      }
     }
     if (clash.defendingCard?.effects) {
-      clash.defendingCard.effects.filter(e => e.trigger === 'beforeResolve').forEach(e => {
-        runEffect(e.effectId, { event: 'beforeResolve', playerId: defenderId, role: 'defender', card: clash.defendingCard, clash, addStrengthBonus });
-      });
+      const beforeResolveEffects = clash.defendingCard.effects.filter(e => e.trigger === 'beforeResolve');
+      for (const e of beforeResolveEffects) {
+        await runEffect(e.effectId, { event: 'beforeResolve', playerId: defenderId, role: 'defender', card: clash.defendingCard, clash, addStrengthBonus });
+      }
     }
   },
 
   /**
    * Emit afterResolve effects for both sides.
    */
-  emitAfterResolve(clash: ClashInfo) {
+  async emitAfterResolve(clash: ClashInfo) {
     const attackerId = clash.attackerId;
     const defenderId = clash.defenderId || (attackerId === 'playerA' ? 'playerB' : 'playerA');
     if (clash.attackingCard?.effects) {
-      clash.attackingCard.effects.filter(e => e.trigger === 'afterResolve').forEach(e => {
-        runEffect(e.effectId, { event: 'afterResolve', playerId: attackerId, role: 'attacker', card: clash.attackingCard, clash });
-      });
+      const afterResolveEffects = clash.attackingCard.effects.filter(e => e.trigger === 'afterResolve');
+      for (const e of afterResolveEffects) {
+        await runEffect(e.effectId, { event: 'afterResolve', playerId: attackerId, role: 'attacker', card: clash.attackingCard, clash });
+      }
     }
     if (clash.defendingCard?.effects) {
-      clash.defendingCard.effects.filter(e => e.trigger === 'afterResolve').forEach(e => {
-        runEffect(e.effectId, { event: 'afterResolve', playerId: defenderId, role: 'defender', card: clash.defendingCard, clash });
-      });
+      const afterResolveEffects = clash.defendingCard.effects.filter(e => e.trigger === 'afterResolve');
+      for (const e of afterResolveEffects) {
+        await runEffect(e.effectId, { event: 'afterResolve', playerId: defenderId, role: 'defender', card: clash.defendingCard, clash });
+      }
     }
   },
 
@@ -124,7 +129,7 @@ export const SkillSystem = {
   /**
    * Executes a skill's effect.
    */
-  useSkill(playerId: 'playerA' | 'playerB', skill: Skill) {
+  async useSkill(playerId: 'playerA' | 'playerB', skill: Skill) {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
@@ -150,7 +155,7 @@ export const SkillSystem = {
 
     // --- Execute skill effect via effectId (preferred path) ---
     if (skill.effectId) {
-      runEffect(skill.effectId, { event: 'onPlay', playerId, role: 'attacker' });
+      await runEffect(skill.effectId, { event: 'onPlay', playerId, role: 'attacker' });
     } else {
       console.warn(`Skill effectId missing for "${skill.id}". Consider adding effectId -> handler mapping.`);
     }

@@ -1,0 +1,64 @@
+{
+    "id": 11765,
+    "name": "フィーロ・プロシェンツォ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/01/c0/11765_crt_3fO5V.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/c0/11765_crt_3fO5V.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/c0/11765_crt_3fO5V.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/01/c0/11765_crt_3fO5V.jpg"
+    },
+    "summary": "外观：十八左右，但外观看起来是比实龄少三、四的少年。栗子色头发。\r\n性格：乐观天真，决定的事就必须去做。\r\n经历：甘德鲁三兄弟及克雷亚的儿时玩伴。\r\n　　　意大利与英国美裔混血儿。在地狱厨房的贫民窟长大。父亲在出生不久后死亡，母亲也在其十岁时过世。\r\n　　　后来为生活、为了生存，什么都做过，也没空分辨事物善恶。流浪时曾企图偷窃矢车的皮包，从此生活就起了天大的变化。出入“ALVEARE蜂蜜店”的成员也成为他的家人。\r\n简介：第一卷时刚要晋升为组织干部。晋升典礼前在火场前对艾妮丝一见钟情。\r\n　　　其后不断打探艾妮丝的消息。晋升后在管理其中一个赌场。\r\n　　　其后将圣拉多吞食，使艾妮丝成为他的独立体。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "菲洛·普罗辛琪奥"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "费洛・普罗宣查"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Firo Prochainezo"
+                },
+                {
+                    "k": "日文名",
+                    "v": "フィーロ・プロシェンツォ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "フィーロ・プロシェンツォ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "fiiro puroshyentsu"
+                },
+                {
+                    "k": "昵称",
+                    "v": "Firo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 12,
+        "collects": 88
+    },
+    "anime_ids": [
+        965
+    ]
+}

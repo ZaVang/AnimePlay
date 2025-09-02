@@ -1,0 +1,52 @@
+{
+    "id": 13148,
+    "name": "D'eon de Beaumont",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/20/93/13148_crt_PcC8W.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/20/93/13148_crt_PcC8W.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/20/93/13148_crt_PcC8W.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/20/93/13148_crt_PcC8W.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "迪恩·德·波蒙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "デオン・ド・ボーモン"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://zh.wikipedia.org/wiki/雙面騎士#.E6.AF.8F.E8.A9.B1.E6.A8.99.E9.A1.8C"
+        },
+        {
+            "key": "声优",
+            "value": "泰勇气（青年）／野岛昭生（晚年）"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 5
+    },
+    "anime_ids": [
+        2083
+    ]
+}

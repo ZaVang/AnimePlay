@@ -1,0 +1,436 @@
+{
+    "id": 9304,
+    "type": 2,
+    "name": "キャッツ・アイ",
+    "name_cn": "猫眼三姐妹",
+    "summary": "猫眼三姐妹是专门窃取美术作品的盗贼集团。她们作案时总会留下带有猫眼三姐妹字样的卡片。被猫眼三姐妹所盗的美术作品都属于她们失散多年的父亲海因茨，一位著名的艺术收藏家。犬鸣署的警员内海俊夫负责调查猫眼三姐妹的案子，但是逮捕行动却一次又一次失败。来生瞳是内海俊夫的女友，经营一家同样名为“猫眼”的咖啡厅。内海俊夫却不知道来生瞳就是猫眼三姐妹之一……",
+    "nsfw": false,
+    "locked": false,
+    "date": "1983-07-11",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/05/42/9304_X55DO.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/05/42/9304_X55DO.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/05/42/9304_X55DO.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/05/42/9304_X55DO.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/05/42/9304_X55DO.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "猫眼三姐妹"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Cat's Eye",
+                    "k": null
+                },
+                {
+                    "v": "Cat Eye",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "73"
+        },
+        {
+            "key": "放送开始",
+            "value": "1983年7月11日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期一"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://www.tms-e.co.jp/alltitles/1980s/045101.html"
+        },
+        {
+            "key": "播放电视台",
+            "value": "日本テレビ系列"
+        },
+        {
+            "key": "播放结束",
+            "value": "1985年7月8日"
+        },
+        {
+            "key": "导演",
+            "value": "竹内啓雄（第一季）、 こだま兼嗣（第二季）"
+        },
+        {
+            "key": "其他",
+            "value": "第1期：1983年7月11日 - 1984年3月26日（全36話）；第2期：1984年10月8日 - 1985年7月8日（全37話）"
+        },
+        {
+            "key": "Copyright",
+            "value": "©北条司／コアミックス・TMS 1983"
+        },
+        {
+            "key": "原作",
+            "value": "北条司"
+        },
+        {
+            "key": "作画监督",
+            "value": "平山智、塚田信子、富田邦"
+        },
+        {
+            "key": "美术监督",
+            "value": "水谷利春、早乙女満、石垣努、小関睦夫"
+        },
+        {
+            "key": "摄影监督",
+            "value": "高橋宏固"
+        },
+        {
+            "key": "音响监督",
+            "value": "加藤敏"
+        },
+        {
+            "key": "动画制作",
+            "value": "東京ムービー新社（トムス・エンタテインメント）"
+        },
+        {
+            "key": "人物设定",
+            "value": "杉野昭夫（第一季）、平山智（第二季）"
+        }
+    ],
+    "volumes": 0,
+    "eps": 73,
+    "total_episodes": 73,
+    "rating": {
+        "rank": 1871,
+        "total": 1205,
+        "count": {
+            "one": 0,
+            "two": 2,
+            "three": 4,
+            "four": 5,
+            "five": 44,
+            "six": 198,
+            "seven": 544,
+            "eight": 314,
+            "nine": 54,
+            "ten": 40
+        },
+        "score": 7.2
+    },
+    "collection": {
+        "wish": 620,
+        "collect": 2056,
+        "doing": 157,
+        "on_hold": 201,
+        "dropped": 77
+    },
+    "tags": [
+        {
+            "name": "童年",
+            "count": 316
+        },
+        {
+            "name": "北条司",
+            "count": 196
+        },
+        {
+            "name": "TV",
+            "count": 178
+        },
+        {
+            "name": "1983",
+            "count": 146
+        },
+        {
+            "name": "三姐妹",
+            "count": 126
+        },
+        {
+            "name": "猫眼三姐妹",
+            "count": 119
+        },
+        {
+            "name": "紧身衣",
+            "count": 106
+        },
+        {
+            "name": "漫画改",
+            "count": 90
+        },
+        {
+            "name": "笨蛋警察",
+            "count": 75
+        },
+        {
+            "name": "怪盗",
+            "count": 63
+        },
+        {
+            "name": "没看完",
+            "count": 55
+        },
+        {
+            "name": "TMS",
+            "count": 43
+        },
+        {
+            "name": "童年的回忆",
+            "count": 36
+        },
+        {
+            "name": "盗窃",
+            "count": 35
+        },
+        {
+            "name": "补旧番",
+            "count": 32
+        },
+        {
+            "name": "漫改",
+            "count": 28
+        },
+        {
+            "name": "古老",
+            "count": 17
+        },
+        {
+            "name": "日本",
+            "count": 17
+        },
+        {
+            "name": "80年代",
+            "count": 13
+        },
+        {
+            "name": "1983年7月",
+            "count": 11
+        },
+        {
+            "name": "女贼",
+            "count": 11
+        },
+        {
+            "name": "日本动画",
+            "count": 8
+        },
+        {
+            "name": "1983年",
+            "count": 7
+        },
+        {
+            "name": "动画",
+            "count": 7
+        },
+        {
+            "name": "こだま兼嗣",
+            "count": 6
+        },
+        {
+            "name": "恋爱",
+            "count": 6
+        },
+        {
+            "name": "TMSEntertainment",
+            "count": 6
+        },
+        {
+            "name": "经典",
+            "count": 6
+        },
+        {
+            "name": "竹内啓雄",
+            "count": 6
+        },
+        {
+            "name": "トムス・エンタテインメント",
+            "count": 5
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "series": false,
+    "main_character_ids": [
+        17526,
+        17527,
+        17528,
+        99731
+    ],
+    "main_characters": [
+        {
+            "id": 17526,
+            "name": "来生瞳",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b8/1d/17526_crt_ZfczF.jpg?r=1629273402",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/1d/17526_crt_ZfczF.jpg?r=1629273402",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/1d/17526_crt_ZfczF.jpg?r=1629273402",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b8/1d/17526_crt_ZfczF.jpg?r=1629273402"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4447,
+                    "name": "戸田恵子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/6f/d6/4447_seiyu_anidb.jpg?r=1407469286",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6f/d6/4447_seiyu_anidb.jpg?r=1407469286",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6f/d6/4447_seiyu_anidb.jpg?r=1407469286",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6f/d6/4447_seiyu_anidb.jpg?r=1407469286"
+                    },
+                    "short_summary": "戸田 恵子（とだ けいこ、1957年9月12日- ）は、日本の女優、声優、ナレーター、歌手、タレント。旧芸名、あゆ 朱美（あゆ あけみ）。青二プロダクション、グランパパプロダクションを経てルックアップ所属。特技はダンス、茶道。\r\n\r\n愛知県名古屋市出身。駒沢学園女子高等学校卒業。",
+                    "locked": false
+                },
+                {
+                    "id": 39817,
+                    "name": "范楚绒",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/69/b7/39817_prsn_91z11.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/b7/39817_prsn_91z11.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/b7/39817_prsn_91z11.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/69/b7/39817_prsn_91z11.jpg"
+                    },
+                    "short_summary": "范楚绒，中国女性配音演员，曾任中国福利会儿童艺术剧院演员。代表作有动画《隋唐英雄传》长孙无蓉、《大耳朵图图》图图妈，游戏《英雄联盟》薇恩、《最终幻想14》夕雾等。现居上海。\r\n\r\n全能型女声，能够生动演绎温婉柔弱的年轻女子、直爽聒噪的中年妇女、活泼机敏的正太、魅惑狠辣的御姐等各种类型的角色。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 17527,
+            "name": "来生泪",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/d2/21/17527_crt_JfQsj.jpg?r=1629273447",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/21/17527_crt_JfQsj.jpg?r=1629273447",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/21/17527_crt_JfQsj.jpg?r=1629273447",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d2/21/17527_crt_JfQsj.jpg?r=1629273447"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4557,
+                    "name": "藤田淑子",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/35/96/4557_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/35/96/4557_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/35/96/4557_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/35/96/4557_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本女性声优和歌手，从属青二Production事务所，出生于中国大连。代表作有《聪明的一休》（一休）、《猫眼三姐妹》（来生泪）、《奇天烈大百科》（木手英一）、《神龙之谜》（小呆）和《数码兽大冒险》（八神太一）。\r\n\r\n2018年12月28日，因患浸润性乳腺癌逝世，享年68岁。",
+                    "locked": false
+                },
+                {
+                    "id": 39815,
+                    "name": "姚培华",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b3/ad/39815_prsn_0V6m1.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/ad/39815_prsn_0V6m1.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/ad/39815_prsn_0V6m1.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b3/ad/39815_prsn_0V6m1.jpg"
+                    },
+                    "short_summary": "姚培华，中国女性配音演员。1983年进入中国福利会儿童艺术剧院任演员。曾出演儿童剧《魔鬼面壳》《少女宋庆龄》等。1984年开始参加配音工作。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 17528,
+            "name": "来生愛",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c5/dc/17528_crt_37lI0.jpg?r=1629273484",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/dc/17528_crt_37lI0.jpg?r=1629273484",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/dc/17528_crt_37lI0.jpg?r=1629273484",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c5/dc/17528_crt_37lI0.jpg?r=1629273484"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4092,
+                    "name": "坂本千夏",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/7e/8d/4092_prsn_666bW.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/8d/4092_prsn_666bW.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/8d/4092_prsn_666bW.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7e/8d/4092_prsn_666bW.jpg"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 99731,
+            "name": "内海俊夫",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c0/17/99731_crt_1aZjV.jpg?r=1629276901",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/17/99731_crt_1aZjV.jpg?r=1629276901",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/17/99731_crt_1aZjV.jpg?r=1629276901",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c0/17/99731_crt_1aZjV.jpg?r=1629276901"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4420,
+                    "name": "安原義人",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/73/6c/4420_prsn_HZXKr.jpg?r=1629276959",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/6c/4420_prsn_HZXKr.jpg?r=1629276959",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/6c/4420_prsn_HZXKr.jpg?r=1629276959",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/73/6c/4420_prsn_HZXKr.jpg?r=1629276959"
+                    },
+                    "short_summary": "日本の俳優、声優。兵庫県相生市出身。テアトル・エコー所属。妻は女優・声優の木村有里。",
+                    "locked": false
+                },
+                {
+                    "id": 39823,
+                    "name": "张欣",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d5/65/39823_prsn_3tHhf.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/65/39823_prsn_3tHhf.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/65/39823_prsn_3tHhf.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d5/65/39823_prsn_3tHhf.jpg"
+                    },
+                    "short_summary": "张欣，中国男性配音演员。1995年毕业于上海戏剧学院表演系。后进入上海电影译制厂任配音演员。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "id": 20580,
+    "name": "橘清音",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7a/f9/20580_crt_oM1mE.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/f9/20580_crt_oM1mE.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/f9/20580_crt_oM1mE.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7a/f9/20580_crt_oM1mE.jpg"
+    },
+    "summary": "编号G-96\r\n在立川市内的「私立利川凤雏学园」就读的三年级生，19岁。\r\n擅长使居合术的武士小伙。\r\n颇具古风的性格，将拥有正义感，常识以及力量的人所应肩负的使命和责任深刻铭记于心。\r\nNOTE能力：「无限间合的NOTE」\r\n将能干涉时空的NOTE能力与其擅长的居合术相结合来战斗。\r\nG装甲特征：铠甲武者、忍者、披鳞的幻兽三者结合而成的姿态。\r\n面对近距离的敌人会使用分子震动剑「音叉刀 疾风」或者隐藏武器发动攻击。而面对远距离的敌人则使用无限间合的必杀剑「无限刀 岚」。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "橘清音"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "橘 清音"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たちばな すがね"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tachibana Sugane"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "8月2日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 2,
+    "stat": {
+        "comments": 3,
+        "collects": 9
+    },
+    "anime_ids": [
+        69494,
+        86721
+    ]
+}

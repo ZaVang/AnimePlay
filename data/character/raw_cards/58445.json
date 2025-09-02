@@ -1,0 +1,72 @@
+{
+    "id": 58445,
+    "name": "緒山みはり",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/8e/01/58445_crt_AaAK3.jpg?r=1673433150",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/01/58445_crt_AaAK3.jpg?r=1673433150",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/01/58445_crt_AaAK3.jpg?r=1673433150",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8e/01/58445_crt_AaAK3.jpg?r=1673433150"
+    },
+    "summary": "文武双全的能干妹妹。\r\n跳级进了大学，正在从事奇怪的研究。\r\n表面上为了进行试验，给亲哥下了药，\r\n然而她的本意是…？\r\n就结果而言对欧尼酱很娇惯。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "绪山哨"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "绪山美波里"
+                },
+                {
+                    "k": "日文名",
+                    "v": "緒山 みはり"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おやま みはり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Oyama Mihari"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月22日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        },
+        {
+            "key": "体重",
+            "value": "47kg"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 22,
+    "stat": {
+        "comments": 83,
+        "collects": 296
+    },
+    "anime_ids": [
+        378862
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "id": 49525,
+    "name": "卯都木命",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/67/f0/49525_crt_8Ww41.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/f0/49525_crt_8Ww41.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/f0/49525_crt_8Ww41.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/67/f0/49525_crt_8Ww41.jpg"
+    },
+    "summary": "3G参谋部操作员，凯的支援员，和凯以前是高中同学关系，在凯出事变成改造人后重新见面并加入3G组织，喜欢和关心凯。\r\n在EI-01击落事件时，EI-01坠落在命的家，父母双亡，其也被EI-01暗中植入了机界种子，后来命在3G组织工作期间接触G石能量时间增多，使种子适应了G石能量，于39集被耳原种激活了，并于48集爆发为机界新种，后来凯想利用护的能力与命同归于尽时，由护净化得以恢复。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "卯都木命"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "うつぎ みこと"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "BWH",
+            "value": "B86 W54 H88"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 5
+    },
+    "anime_ids": [
+        2981,
+        1894
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": 67683,
+    "name": "ラクウェル・カスール",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/83/90/67683_crt_2wa2N.jpg?r=1608224866",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/90/67683_crt_2wa2N.jpg?r=1608224866",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/90/67683_crt_2wa2N.jpg?r=1608224866",
+        "grid": "https://lain.bgm.tv/pic/crt/g/83/90/67683_crt_2wa2N.jpg?r=1608224866"
+    },
+    "summary": "カスール家の長女。魔法を得意とするが肉体労働は苦手。\r\n\r\nシャノンとは双子だが、ラクウェルの主張により姉ということになっている。魔法を使う能力は母親ゆずりで非常に高いが魔法オタクの気があるらしく、ことあるごとに様々な魔法を試そうとする。おっとりのんびりした性格でどこかずれた天然なところがある。\r\nパシフィカ・カスールとは出会って初めから仲良し。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "拉克维尔·卡苏尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Raquel Casull"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月23日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "172cm"
+        },
+        {
+            "key": "体重",
+            "value": "55.4kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://dic.pixiv.net/a/ラクウェル・カスール"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 23,
+    "stat": {
+        "comments": 1,
+        "collects": 6
+    },
+    "anime_ids": [
+        2092
+    ]
+}

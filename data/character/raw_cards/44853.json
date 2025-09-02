@@ -1,0 +1,52 @@
+{
+    "id": 44853,
+    "name": "フランソワーズ・アルヌール",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/30/bb/44853_crt_LPz22.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/bb/44853_crt_LPz22.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/bb/44853_crt_LPz22.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/30/bb/44853_crt_LPz22.jpg"
+    },
+    "summary": "聴覚と視覚を強化されており、索敵能力と情報収集能力に長けている。\r\nゼロゼロナンバーサイボーグの紅一点で、気が強いところもあるが、優しい心の持ち主。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Francoise Arnoul"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "编号",
+            "value": "003"
+        },
+        {
+            "key": "出身",
+            "value": "法国"
+        },
+        {
+            "key": "能力",
+            "value": "索敌"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 7,
+        "collects": 21
+    },
+    "anime_ids": [
+        13607
+    ]
+}

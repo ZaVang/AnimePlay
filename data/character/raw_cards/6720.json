@@ -1,0 +1,72 @@
+{
+    "id": 6720,
+    "name": "土萠ほたる",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/28/60/6720_crt_ylQ55.jpg?r=1701535953",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/60/6720_crt_ylQ55.jpg?r=1701535953",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/60/6720_crt_ylQ55.jpg?r=1701535953",
+        "grid": "https://lain.bgm.tv/pic/crt/g/28/60/6720_crt_ylQ55.jpg?r=1701535953"
+    },
+    "summary": "土萌萤（日语：土萠ほたる），可变身成为水手土星（即Sailor Saturn），是著名的日本动漫《美少女战士》中的主要人物之一。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "土萌萤"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Sailor Saturn"
+                },
+                {
+                    "k": "\\",
+                    "v": "Томо Хотару"
+                },
+                {
+                    "k": "日文名",
+                    "v": "土萠ほたる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tomoe Hotaru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "????-01-06"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "147"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 6,
+    "stat": {
+        "comments": 8,
+        "collects": 49
+    },
+    "anime_ids": [
+        5432
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "id": 98625,
+    "name": "アグニモン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f9/34/98625_crt_SaaEx.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/34/98625_crt_SaaEx.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/34/98625_crt_SaaEx.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f9/34/98625_crt_SaaEx.jpg"
+    },
+    "summary": "寄宿着传说中的十斗士力量，拥有火属性能力的数码宝贝。由于「数码核心（电脑核）」被称为神圣之火的灵魂火焰包覆，所以能自由操纵火焰。它是网络的防护墙「防火墙」的化身，也是守护神。知道自己的性情容易激动，所以会利用瑜伽呼吸来提升精神修养，这点正显现出了它身为武人的一面。说话用词有点像古时候的拳法家。使用东洋武术进行战斗，懂得利用将气集中的诀窍，把火焰集中在身体一处来提升攻击力。必杀技是从包覆着火焰的拳头射出火焰龙的『火龙烈焰拳』，以及使出火焰旋风脚的『火龙碎裂脚』。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "火神兽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "阿耆尼兽"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Agnimon"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Agunimon"
+                },
+                {
+                    "k": "称号",
+                    "v": "火之人型斗士"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://digimon.net/reference/detail.php?directory_name=agnimon"
+        },
+        {
+            "key": "等级",
+            "value": "混合体"
+        },
+        {
+            "key": "类型",
+            "value": "魔人型"
+        },
+        {
+            "key": "属性",
+            "value": "可变"
+        },
+        {
+            "key": "必杀技",
+            "value": [
+                {
+                    "v": "火龙烈焰拳"
+                },
+                {
+                    "v": "火龙碎裂脚"
+                }
+            ]
+        }
+    ],
+    "gender": null,
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "anime_ids": [
+        3131
+    ]
+}

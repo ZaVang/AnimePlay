@@ -1,0 +1,89 @@
+{
+    "id": 168204,
+    "name": "宇宙巡警露露子",
+    "image_path": "data/images/anime/168204.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　在宇宙人与地球人共同生活的银河指定宇宙移民特区OGIKUBO和父亲两人生活，随处可见的“超普通”现役女初中生露露子。在过着普通生活的露露子面前突然出现的神秘转学生AΩ·诺瓦。这次“相遇”让露露子的命运卷起波澜。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "原创"
+    ],
+    "date": "2016-04-01",
+    "rating_rank": 1030,
+    "rating_score": 7.4,
+    "rating_total": 4810,
+    "main_character_ids": [
+        38652,
+        38653
+    ],
+    "main_characters": [
+        {
+            "id": 38652,
+            "name": "ルル子",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/88/b5/38652_crt_GMMq0.jpg?r=1459556461",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/b5/38652_crt_GMMq0.jpg?r=1459556461",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/b5/38652_crt_GMMq0.jpg?r=1459556461",
+                "grid": "https://lain.bgm.tv/pic/crt/g/88/b5/38652_crt_GMMq0.jpg?r=1459556461"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10887,
+                    "name": "M・A・O",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821"
+                    },
+                    "short_summary": "出生于日本大阪府，日本女演员、声优，前属大阪堀制作事务所所属女艺人，现为Yellow Cab NEXT旗下的女艺人。\r\n2006年10月，市道真央曾在大阪堀制作的HOP CLUB组合面试之中夺得大奖。2010年中，移居到东京。同年8月，在周刊少年JUMP的读者投稿角落《JUM魂G！》以职员身份登场。2011年2月，她在参演超级战队系列特摄作品《海贼战队豪快者》之中，饰演女主角之一“Luka Millfy／豪快黄”。2012年，以M·A·O的名义在电视动画《料理偶像》出演奇拉奇拉，正式开始声优活动。\r\n\r\n个人生活\r\n特色是关西腔。于2014年因出演《极黑的布伦希尔德》中的和美一角而出名。\r\n小的时候就很喜欢动画和漫画，不过，直接的契机是在特摄剧《海贼战队豪快者》中出演。由于对于这种化装后再配音的工作很感兴趣，所以希望有机会能从事与声音有关的工作。\r\n喜欢看书，但最喜欢的还是漫画，尤其是《周刊少年JUMP》。\r\n憧憬的角色不分身份、性别，只要能够锻炼演技都会广泛出演。希望尝试小男孩一类或者有着古怪变化的角色。\r\n在成为声优前亦有为《海贼战队豪快者》配音，因此拥有一定的基础，声线恬静柔和，无论是幼女还是青年女子都能够出演。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 38653,
+            "name": "ΑΩ・ノヴァ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b9/fc/38653_crt_8H9f3.jpg?r=1458462325",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/fc/38653_crt_8H9f3.jpg?r=1458462325",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/fc/38653_crt_8H9f3.jpg?r=1458462325",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b9/fc/38653_crt_8H9f3.jpg?r=1458462325"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 16353,
+                    "name": "榎木淳弥",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/70/16353_prsn_O8uZj.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/70/16353_prsn_O8uZj.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/70/16353_prsn_O8uZj.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/70/16353_prsn_O8uZj.jpg"
+                    },
+                    "short_summary": "大学時代に周囲の影響でアニメを見始めるようになり、『天元突破グレンラガン』に感動したことがきっかけで声優を目指す。アトミックモンキー 声優・演技研究所に3期生として入所、卒業後に事務所所属となる。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

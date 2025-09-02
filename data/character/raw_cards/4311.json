@@ -1,0 +1,72 @@
+{
+    "id": 4311,
+    "name": "クローム髑髏",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/07/60/4311_crt_1TCZd.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/60/4311_crt_1TCZd.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/60/4311_crt_1TCZd.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/07/60/4311_crt_1TCZd.jpg"
+    },
+    "summary": "彭格列家族第十代雾之守护者（代理），死气炎属性波动为\"雾\"。\r\n武器（三叉戟）及发型与六道骸一样，右眼戴着骷髅花纹的眼罩，身穿黑曜中学的女子制服。常感受到骸的意识，并遵从他的意思行动，非常景仰骸，称之为“骸大人”。库洛姆·髑髅（Kurōmu Dokuro）之名是由六道骸（Rokudō Mukuro ）改变文字顺序而来。本名为“凪（Nagi）”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "库洛姆·髑髅"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "クロームどくろ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Chrome Dokuro"
+                },
+                {
+                    "k": "本名",
+                    "v": "凪"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月5日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        },
+        {
+            "key": "体重",
+            "value": "41kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 5,
+    "stat": {
+        "comments": 10,
+        "collects": 46
+    },
+    "anime_ids": [
+        4562
+    ]
+}
