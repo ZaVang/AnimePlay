@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { useUserStore, type Deck } from '@/stores/userStore';
-import { useGameDataStore, type Card, type Rarity } from '@/stores/gameDataStore';
+import { useGameDataStore } from '@/stores/gameDataStore';
+import type { Card, Rarity, AnimeCard as AnimeCardType, CharacterCard as CharacterCardType } from '@/types/card';
 import AnimeCard from '@/components/AnimeCard.vue';
 import CharacterCard from '@/components/CharacterCard.vue';
 import CardDetailModal from '@/components/CardDetailModal.vue';
+import VirtualGrid from '@/components/VirtualGrid.vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
+import '@/utils/deckEditorTest'; // 导入测试工具
 
 const props = defineProps<{
   deckName: string | null;
@@ -45,6 +48,17 @@ const characterFilters = ref({ name: '', rarity: '' });
 // Card Detail Modal State
 const selectedCard = ref<Card | null>(null);
 const selectedCardType = ref<'anime' | 'character'>('anime');
+
+// 虚拟化配置 (针对DeckEditor的紧凑布局)
+const DECK_VIRTUAL_CONFIG = {
+  itemHeight: 120,      // 卡组编辑器中的卡片高度稍小
+  containerHeight: 500, // 收藏区域高度
+  minItemWidth: 90,     // 更紧凑的最小宽度
+  gap: 8               // 较小的间隙
+};
+
+// 虚拟化阈值 (DeckEditor通常显示的卡片较多)
+const DECK_VIRTUALIZATION_THRESHOLD = 30;
 
 // --- LIFECYCLE ---
 if (props.deckName) {
@@ -86,6 +100,34 @@ const ownedAnimeCards = computed(() => {
   // Sort by rarity
   return cards.sort((a, b) => rarityOrder.indexOf(a.rarity) - rarityOrder.indexOf(b.rarity));
 });
+
+// 判断是否需要虚拟化
+const shouldVirtualizeAnimeCollection = computed(() => {
+  return ownedAnimeCards.value.length > DECK_VIRTUALIZATION_THRESHOLD;
+});
+
+const shouldVirtualizeCharacterCollection = computed(() => {
+  return ownedCharacterCards.value.length > DECK_VIRTUALIZATION_THRESHOLD;
+});
+
+// 性能监控（开发环境）
+if (import.meta.env.DEV) {
+  import('vue').then(({ watch }) => {
+    watch(
+      () => ownedAnimeCards.value.length,
+      (newCount, oldCount) => {
+        console.log(`🔧 [DeckEditor] 动画卡收藏数量: ${oldCount} → ${newCount}, 虚拟化: ${newCount > DECK_VIRTUALIZATION_THRESHOLD ? '✅' : '❌'}`);
+      }
+    );
+    
+    watch(
+      () => ownedCharacterCards.value.length,
+      (newCount, oldCount) => {
+        console.log(`🔧 [DeckEditor] 角色卡收藏数量: ${oldCount} → ${newCount}, 虚拟化: ${newCount > DECK_VIRTUALIZATION_THRESHOLD ? '✅' : '❌'}`);
+      }
+    );
+  });
+}
 
 const ownedCharacterCards = computed(() => {
   let cards = Array.from(userStore.characterCollection.entries()).map(([id, data]) => {
@@ -243,21 +285,73 @@ async function handleSaveDeck() {
 
            </div>
            <div class="p-4 overflow-y-auto">
-              <div v-if="collectionTab === 'anime'" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
-            <AnimeCard v-for="card in ownedAnimeCards" :key="card.id" :anime="card" :count="card.count"
-                :is-in-deck="animeIdInDeck.has(card.id)"
-                :show-cost="true"
-                @click="addToDeck(card, 'anime')"
-                @contextmenu.prevent="showCardDetails(card, 'anime')"
-            />
-          </div>
-          <div v-if="collectionTab === 'character'" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
-            <CharacterCard v-for="card in ownedCharacterCards" :key="card.id" :character="card" :count="card.count"
-                :is-in-deck="characterIdInDeck.has(card.id)"
-                @click="addToDeck(card, 'character')"
-                @contextmenu.prevent="showCardDetails(card, 'character')"
-            />
-          </div>
+              <!-- 动画卡收藏区域 -->
+              <div v-if="collectionTab === 'anime'">
+                <!-- 虚拟化版本 -->
+                <VirtualGrid
+                  v-if="shouldVirtualizeAnimeCollection"
+                  :items="ownedAnimeCards"
+                  :item-height="DECK_VIRTUAL_CONFIG.itemHeight"
+                  :container-height="DECK_VIRTUAL_CONFIG.containerHeight"
+                  :min-item-width="DECK_VIRTUAL_CONFIG.minItemWidth"
+                  :gap="DECK_VIRTUAL_CONFIG.gap"
+                  @item-click="addToDeck($event, 'anime')"
+                >
+                  <template #default="{ item }">
+                    <AnimeCard 
+                      :anime="item as AnimeCardType & { count: number }" 
+                      :count="item.count"
+                      :is-in-deck="animeIdInDeck.has(item.id)"
+                      :show-cost="true"
+                      @contextmenu.prevent="showCardDetails(item, 'anime')"
+                    />
+                  </template>
+                </VirtualGrid>
+                <!-- 传统版本 -->
+                <div v-else class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+                  <AnimeCard v-for="card in ownedAnimeCards" :key="card.id" 
+                      :anime="card as AnimeCardType & { count: number }" 
+                      :count="card.count"
+                      :is-in-deck="animeIdInDeck.has(card.id)"
+                      :show-cost="true"
+                      @click="addToDeck(card, 'anime')"
+                      @contextmenu.prevent="showCardDetails(card, 'anime')"
+                  />
+                </div>
+              </div>
+
+              <!-- 角色卡收藏区域 -->
+              <div v-if="collectionTab === 'character'">
+                <!-- 虚拟化版本 -->
+                <VirtualGrid
+                  v-if="shouldVirtualizeCharacterCollection"
+                  :items="ownedCharacterCards"
+                  :item-height="DECK_VIRTUAL_CONFIG.itemHeight"
+                  :container-height="DECK_VIRTUAL_CONFIG.containerHeight"
+                  :min-item-width="DECK_VIRTUAL_CONFIG.minItemWidth"
+                  :gap="DECK_VIRTUAL_CONFIG.gap"
+                  @item-click="addToDeck($event, 'character')"
+                >
+                  <template #default="{ item }">
+                    <CharacterCard 
+                      :character="item as CharacterCardType & { count: number }" 
+                      :count="item.count"
+                      :is-in-deck="characterIdInDeck.has(item.id)"
+                      @contextmenu.prevent="showCardDetails(item, 'character')"
+                    />
+                  </template>
+                </VirtualGrid>
+                <!-- 传统版本 -->
+                <div v-else class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+                  <CharacterCard v-for="card in ownedCharacterCards" :key="card.id" 
+                      :character="card as CharacterCardType & { count: number }" 
+                      :count="card.count"
+                      :is-in-deck="characterIdInDeck.has(card.id)"
+                      @click="addToDeck(card, 'character')"
+                      @contextmenu.prevent="showCardDetails(card, 'character')"
+                  />
+                </div>
+              </div>
            </div>
         </div>
 

@@ -7,6 +7,8 @@ import CardDetailModal from '@/components/CardDetailModal.vue';
 import DeckManager from '@/components/decks/DeckManager.vue';
 import AnimeCard from '@/components/AnimeCard.vue';
 import CharacterCard from '@/components/CharacterCard.vue';
+import VirtualGrid from '@/components/VirtualGrid.vue';
+import '@/utils/performanceMonitor'; // 启动性能监控
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
@@ -20,6 +22,17 @@ const rarityOrder: Rarity[] = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
 // Filters
 const animeFilters = ref({ name: '', rarity: '', tag: '' });
 const characterFilters = ref({ name: '', rarity: '' });
+
+// 虚拟化配置
+const VIRTUAL_GRID_CONFIG = {
+  itemHeight: 140,      // 卡片高度
+  containerHeight: 600, // 容器高度
+  minItemWidth: 100,    // 最小卡片宽度
+  gap: 16              // 间隙
+};
+
+// 虚拟化阈值 - 超过此数量才启用虚拟化
+const VIRTUALIZATION_THRESHOLD = 50;
 
 
 // --- Event Handlers ---
@@ -87,6 +100,35 @@ const filteredAnimeCards = computed(() => {
   
   return sortCards(cards);
 });
+
+// 判断是否需要虚拟化
+const shouldVirtualizeAnime = computed(() => {
+  return filteredAnimeCards.value.length > VIRTUALIZATION_THRESHOLD;
+});
+
+const shouldVirtualizeCharacter = computed(() => {
+  return filteredCharacterCards.value.length > VIRTUALIZATION_THRESHOLD;
+});
+
+// 性能监控（开发环境）
+if (import.meta.env.DEV) {
+  // 监控卡片数量变化
+  import('vue').then(({ watch }) => {
+    watch(
+      () => filteredAnimeCards.value.length,
+      (newCount, oldCount) => {
+        console.log(`📊 [虚拟化] 动画卡数量变化: ${oldCount} → ${newCount}, 虚拟化: ${newCount > VIRTUALIZATION_THRESHOLD ? '✅' : '❌'}`);
+      }
+    );
+    
+    watch(
+      () => filteredCharacterCards.value.length,
+      (newCount, oldCount) => {
+        console.log(`📊 [虚拟化] 角色卡数量变化: ${oldCount} → ${newCount}, 虚拟化: ${newCount > VIRTUALIZATION_THRESHOLD ? '✅' : '❌'}`);
+      }
+    );
+  });
+}
 
 const filteredCharacterCards = computed(() => {
   if (!userStore.isLoggedIn || gameDataStore.allCharacterCards.length === 0) return [];
@@ -166,6 +208,21 @@ const filteredCharacterCards = computed(() => {
           <div v-if="filteredAnimeCards.length === 0" class="text-center py-12">
               <p class="text-gray-500 text-lg font-medium">找不到匹配的动画卡</p>
           </div>
+          <!-- 虚拟化版本 -->
+          <VirtualGrid
+            v-else-if="shouldVirtualizeAnime"
+            :items="filteredAnimeCards"
+            :item-height="VIRTUAL_GRID_CONFIG.itemHeight"
+            :container-height="VIRTUAL_GRID_CONFIG.containerHeight"
+            :min-item-width="VIRTUAL_GRID_CONFIG.minItemWidth"
+            :gap="VIRTUAL_GRID_CONFIG.gap"
+            @item-click="openDetail($event, 'anime')"
+          >
+            <template #default="{ item }">
+              <AnimeCard :anime="item as AnimeCardType & { count: number }" :count="item.count" />
+            </template>
+          </VirtualGrid>
+          <!-- 传统版本（数据量少时使用） -->
           <div v-else class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-4">
             <AnimeCard v-for="card in filteredAnimeCards" :key="card.id" :anime="card" :count="card.count" @click="openDetail(card, 'anime')"/>
           </div>
@@ -176,6 +233,21 @@ const filteredCharacterCards = computed(() => {
            <div v-if="filteredCharacterCards.length === 0" class="text-center py-12">
               <p class="text-gray-500 text-lg font-medium">找不到匹配的角色卡</p>
            </div>
+          <!-- 虚拟化版本 -->
+          <VirtualGrid
+            v-else-if="shouldVirtualizeCharacter"
+            :items="filteredCharacterCards"
+            :item-height="VIRTUAL_GRID_CONFIG.itemHeight"
+            :container-height="VIRTUAL_GRID_CONFIG.containerHeight"
+            :min-item-width="VIRTUAL_GRID_CONFIG.minItemWidth"
+            :gap="VIRTUAL_GRID_CONFIG.gap"
+            @item-click="openDetail($event, 'character')"
+          >
+            <template #default="{ item }">
+              <CharacterCard :character="item as CharacterCardType & { count: number }" :count="item.count" />
+            </template>
+          </VirtualGrid>
+          <!-- 传统版本（数据量少时使用） -->
           <div v-else class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-4">
             <CharacterCard v-for="card in filteredCharacterCards" :key="card.id" :character="card" :count="card.count" @click="openDetail(card, 'character')"/>
           </div>
