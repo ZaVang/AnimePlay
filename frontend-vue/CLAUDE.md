@@ -102,3 +102,78 @@ This is a Vue 3 + TypeScript anime-themed card battle game using Vite, Pinia for
 **Type Safety**: Uses strict TypeScript with Vue composition API. Card types defined in `/src/types/` include `AnimeCard`, `CharacterCard`, and `Skill` interfaces.
 
 **Testing Integration**: Complex interactions can be tested using UR character skills in battle. The InteractionManager is automatically set up in BattleView and ready for use.
+
+---
+
+# 番组游戏优化计划
+
+## 🚀 高优先级优化 (进行中)
+
+### 1. 性能优化
+- [x] 实现动态抽卡轮换系统
+- [x] **gachaRotation 缓存机制** - 避免重复计算日期和卡片索引
+  - ✅ 实现多级缓存系统 (UP池缓存、轮换计时器缓存、卡片筛选缓存)
+  - ✅ 添加缓存清理机制防止内存泄漏
+  - ✅ 提供缓存统计和调试功能
+- [x] **完善 TypeScript 类型** - 减少 `as any` 使用，提高类型安全
+  - ✅ 创建类型守卫函数 `isAnimeCard` 和 `isCharacterCard`
+  - ✅ 修复 gacha 组件中的类型断言问题
+  - ✅ 改进 gachaRotation 工具函数的类型定义
+- [ ] 状态管理优化 - 大数据量卡片数组虚拟化
+
+### 2. 用户体验优化
+- [x] **加载状态** - 抽卡、战斗等异步操作
+  - ✅ GachaView: 抽卡按钮加载状态和防重复点击
+  - ✅ GachaShop: 购买按钮加载状态和防重复操作
+  - ✅ 添加旋转加载动画和状态提示
+- [x] **错误处理** - 统一错误处理和用户友好提示
+  - ✅ 抽卡券不足检查和友好提示
+  - ✅ 知识点不足检查和提示
+  - ✅ 错误信息自动消失机制
+  - ✅ 可关闭的错误提示界面
+- [ ] **动画反馈** - 抽卡、战斗结果视觉效果
+
+## 🎮 游戏功能补充 (计划中)
+
+### 3. 核心系统扩展
+- [ ] 数据持久化 - 可靠的保存/读取系统
+- [ ] 成就系统 - 里程碑奖励机制
+- [ ] 每日任务系统 - 日常玩法内容
+- [ ] 教程引导系统
+
+### 4. 社交功能
+- [ ] 排行榜系统 - 战斗胜率、收集进度
+- [ ] 好友系统 - 互赠、对战功能
+
+## 🛠 技术架构升级 (长期)
+
+### 5. 代码质量
+- [ ] 测试覆盖 - 单元测试和集成测试
+- [ ] 配置分层 - 模块化 gameConfig
+- [ ] 国际化支持 - 多语言系统
+
+### 6. 现代化特性
+- [ ] PWA支持 - 离线游戏体验
+- [ ] 响应式设计 - 移动端适配
+- [ ] 主题系统 - 深色模式等
+
+---
+## 执行顺序
+
+**当前阶段：性能优化** ✅ 已完成
+1. ✅ gachaRotation 缓存机制
+2. ✅ TypeScript 类型完善  
+3. ✅ 加载状态和错误处理
+
+**下一阶段：用户体验**
+4. 动画反馈系统 - 抽卡特效和视觉反馈
+5. 成就系统 - 里程碑奖励
+6. 每日任务 - 日常活动内容
+
+**最终阶段：架构升级**
+7. 测试系统
+8. PWA 功能
+9. 国际化支持
+
+---
+*优化计划更新时间：2025-09-03*

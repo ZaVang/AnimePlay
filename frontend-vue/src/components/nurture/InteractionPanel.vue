@@ -288,7 +288,7 @@ function giveGift(gift: any) {
   }
   
   // 记录礼物
-  userStore.giveGift(props.character.id, gift.id);
+  nurtureData.gifts.push(gift.id);
   userStore.addLog(`${props.character.name} 收到了${gift.name}，看起来很开心！`, 'success');
   
   closeSelection();

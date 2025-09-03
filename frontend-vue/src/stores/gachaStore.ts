@@ -3,6 +3,7 @@ import { ref } from 'vue';
 import { useUserStore } from './userStore';
 import { useGameDataStore } from './gameDataStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
+import { getCurrentUpPool } from '@/utils/gachaRotation';
 import { type Card, type Rarity } from '@/types/card';
 
 export type DrawnCard = Card & {
@@ -23,7 +24,16 @@ export const useGachaStore = defineStore('gacha', () => {
         const config = gachaType === 'anime' ? GAME_CONFIG.animeSystem : GAME_CONFIG.characterSystem;
         const pityState = gachaType === 'anime' ? userStore.animePityState : userStore.characterPityState;
         const allCards = gachaType === 'anime' ? gameDataStore.allAnimeCards : gameDataStore.allCharacterCards;
-        const rateUpCards = allCards.filter(c => config.rateUp.ids.includes(c.id));
+        
+        // 获取动态轮换的UP卡池
+        let rateUpCards: Card[] = [];
+        try {
+            const { urId, hrId } = getCurrentUpPool(gachaType);
+            rateUpCards = allCards.filter(c => c.id === urId || c.id === hrId);
+        } catch (error) {
+            console.warn('Failed to get current UP pool, using empty UP pool:', error);
+            rateUpCards = [];
+        }
 
         const drawnCards: DrawnCard[] = [];
 
@@ -60,9 +70,17 @@ export const useGachaStore = defineStore('gacha', () => {
                     }
                 }
 
-                if (drawnRarity === 'HR' && rateUpCards.length > 0 && Math.random() < config.rateUp.hrChance) {
-                    pityState.pullsSinceLastHR = 0; // Reset pity on getting UP HR
-                    drawnCard = rateUpCards[Math.floor(Math.random() * rateUpCards.length)];
+                // UP卡逻辑：UR或HR稀有度时都有概率获得UP卡
+                if ((drawnRarity === 'HR' || drawnRarity === 'UR') && rateUpCards.length > 0 && Math.random() < config.rateUp.hrChance) {
+                    pityState.pullsSinceLastHR = 0; // Reset pity on getting UP card
+                    // 根据抽到的稀有度选择对应的UP卡
+                    const upCardsOfRarity = rateUpCards.filter(c => c.rarity === drawnRarity);
+                    if (upCardsOfRarity.length > 0) {
+                        drawnCard = upCardsOfRarity[Math.floor(Math.random() * upCardsOfRarity.length)];
+                    } else {
+                        // 如果没有对应稀有度的UP卡，随机选择一个UP卡
+                        drawnCard = rateUpCards[Math.floor(Math.random() * rateUpCards.length)];
+                    }
                 } else {
                     const pool = allCards.filter(c => c.rarity === drawnRarity);
 

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
+import { useUserStore } from '@/stores/userStore';
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/stores/userStore';
 
@@ -7,57 +8,71 @@ const props = defineProps<{
   character: CharacterCard & { nurtureData: CharacterNurtureData };
 }>();
 
-// 计算好感度等级
-const affectionLevel = computed(() => {
+const userStore = useUserStore();
+
+// 计算角色等级进度
+const levelProgress = computed(() => {
+  return userStore.getLevelProgress(props.character.nurtureData);
+});
+
+// 计算羁绊等级
+const bondLevel = computed(() => {
   const affection = props.character.nurtureData.affection;
   if (affection >= 1000) return { 
-    level: '恋人', 
+    level: '永恒羁绊', 
     color: 'text-pink-400', 
     bgColor: 'bg-pink-500/20', 
-    icon: '💕',
-    progress: 100
+    icon: '⭐',
+    progress: 100, // 最高级后不再显示进度，但数值可以继续增加
+    maxReached: true
   };
   if (affection >= 800) return { 
-    level: '恋慕', 
+    level: '深度羁绊', 
     color: 'text-red-400', 
     bgColor: 'bg-red-500/20', 
-    icon: '❤️',
-    progress: ((affection - 800) / 200) * 100
+    icon: '🌟',
+    progress: ((affection - 800) / 200) * 100,
+    maxReached: false
   };
   if (affection >= 600) return { 
-    level: '信赖', 
+    level: '信任伙伴', 
     color: 'text-purple-400', 
     bgColor: 'bg-purple-500/20', 
     icon: '💜',
-    progress: ((affection - 600) / 200) * 100
+    progress: ((affection - 600) / 200) * 100,
+    maxReached: false
   };
   if (affection >= 400) return { 
-    level: '友好', 
+    level: '亲密战友', 
     color: 'text-blue-400', 
     bgColor: 'bg-blue-500/20', 
     icon: '💙',
-    progress: ((affection - 400) / 200) * 100
+    progress: ((affection - 400) / 200) * 100,
+    maxReached: false
   };
   if (affection >= 200) return { 
-    level: '熟悉', 
+    level: '熟悉伙伴', 
     color: 'text-green-400', 
     bgColor: 'bg-green-500/20', 
     icon: '💚',
-    progress: ((affection - 200) / 200) * 100
+    progress: ((affection - 200) / 200) * 100,
+    maxReached: false
   };
   if (affection >= 100) return { 
-    level: '好感', 
+    level: '初步羁绊', 
     color: 'text-yellow-400', 
     bgColor: 'bg-yellow-500/20', 
     icon: '💛',
-    progress: ((affection - 100) / 100) * 100
+    progress: ((affection - 100) / 100) * 100,
+    maxReached: false
   };
   return { 
-    level: '初识', 
+    level: '初次相遇', 
     color: 'text-gray-400', 
     bgColor: 'bg-gray-500/20', 
-    icon: '🤍',
-    progress: (affection / 100) * 100
+    icon: '🤝',
+    progress: (affection / 100) * 100,
+    maxReached: false
   };
 });
 
@@ -189,6 +204,17 @@ function getActivityLevel(interactions: number): string {
   if (interactions >= 5) return '较少';
   return '刚开始';
 }
+
+// 获取当前羁绊等级的下一级阈值
+function getBondLevelThreshold(): number {
+  const affection = props.character.nurtureData.affection;
+  if (affection >= 800) return 1000;
+  if (affection >= 600) return 800;
+  if (affection >= 400) return 600;
+  if (affection >= 200) return 400;
+  if (affection >= 100) return 200;
+  return 100;
+}
 </script>
 
 <template>
@@ -252,24 +278,24 @@ function getActivityLevel(interactions: number): string {
     <!-- 角色信息面板 -->
     <div class="p-6 space-y-6">
       
-      <!-- 好感度等级 -->
+      <!-- 羁绊等级 -->
       <div>
         <div class="flex items-center justify-between mb-3">
           <h4 class="text-lg font-semibold text-white flex items-center">
-            <span class="text-2xl mr-2">{{ affectionLevel.icon }}</span>
-            好感度等级
+            <span class="text-2xl mr-2">{{ bondLevel.icon }}</span>
+            羁绊等级
           </h4>
-          <span :class="affectionLevel.color" class="font-bold">
-            {{ affectionLevel.level }}
+          <span :class="bondLevel.color" class="font-bold">
+            {{ bondLevel.level }}
           </span>
         </div>
         
-        <!-- 好感度进度条 -->
+        <!-- 羁绊进度条 -->
         <div class="w-full bg-gray-700 rounded-full h-3 overflow-hidden">
           <div 
-            :class="affectionLevel.bgColor.replace('/20', '')" 
+            :class="bondLevel.bgColor.replace('/20', '')" 
             class="h-full rounded-full transition-all duration-500 relative"
-            :style="{ width: `${affectionLevel.progress}%` }"
+            :style="{ width: `${bondLevel.progress}%` }"
           >
             <div class="absolute inset-0 bg-white/20"></div>
           </div>
@@ -277,7 +303,41 @@ function getActivityLevel(interactions: number): string {
         
         <div class="flex justify-between text-xs text-gray-400 mt-1">
           <span>{{ character.nurtureData.affection }}</span>
-          <span>1000</span>
+          <span v-if="!bondLevel.maxReached">{{ getBondLevelThreshold() }}</span>
+          <span v-else class="text-pink-400">MAX</span>
+        </div>
+      </div>
+
+      <!-- 角色等级 -->
+      <div class="mb-6">
+        <div class="flex items-center justify-between mb-3">
+          <h4 class="text-lg font-semibold text-white flex items-center">
+            <span class="text-2xl mr-2">⚡</span>
+            角色等级
+          </h4>
+          <span class="text-yellow-400 font-bold text-xl">
+            Lv.{{ character.nurtureData.level }}
+          </span>
+        </div>
+        
+        <!-- 经验值进度条 -->
+        <div class="w-full bg-gray-700 rounded-full h-3 overflow-hidden">
+          <div 
+            class="h-full rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 transition-all duration-500 relative"
+            :style="{ width: `${levelProgress.percentage}%` }"
+          >
+            <div class="absolute inset-0 bg-white/20"></div>
+          </div>
+        </div>
+        
+        <div class="flex justify-between text-xs text-gray-400 mt-1">
+          <span>{{ levelProgress.current }} / {{ levelProgress.required }} EXP</span>
+          <span class="text-yellow-400">下一级</span>
+        </div>
+        
+        <!-- 总经验值显示 -->
+        <div class="text-center mt-2 text-xs text-gray-500">
+          总经验值: {{ character.nurtureData.totalExperience }}
         </div>
       </div>
 

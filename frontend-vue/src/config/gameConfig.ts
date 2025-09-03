@@ -242,19 +242,16 @@ export const GAME_CONFIG: GameConfig = {
             }
         },
         rateUp: {
-            ids: [326, 876], // UP卡牌的ID
+            ids: [], // 动态UP卡牌的ID，由轮换系统计算
             hrChance: 0.66,   // HR稀有度时，获得UP卡牌的概率
             pityPulls: 70,    // 必定获得UP卡牌的保底抽数
         },
         gacha: {
             guaranteedSSR_Pulls: 10, // 十连抽保底SSR
         },
-        // 商店配置
+        // 商店配置 - 动态跟随UP池
         shop: {
-            items: [
-                { Id: 326, cost: 10000 }, // UR card
-                { Id: 876, cost: 10000 }, // UR card
-            ]
+            items: [] // 由轮换系统动态生成
         },
     },
 
@@ -311,9 +308,9 @@ export const GAME_CONFIG: GameConfig = {
                 effect: 'border border-gray-400'  // 普通边框即可
             }
         },
-        // Character UP pool configuration (identical to anime system)
+        // Character UP pool configuration with dynamic rotation
         rateUp: {
-            ids: [12393, 304], // UP character IDs - example characters for testing
+            ids: [], // 动态UP角色的ID，由轮换系统计算
             hrChance: 0.66, // HR rarity时，获得UP角色的概率
             pityPulls: 70, // 必定获得UP角色的保底抽数
         },
@@ -321,12 +318,9 @@ export const GAME_CONFIG: GameConfig = {
         gacha: {
             guaranteedSSR_Pulls: 10, // 10-pull guarantees at least SSR (identical to anime)
         },
-        // 商店配置
+        // 商店配置 - 动态跟随UP池
         shop: {
-            items: [
-                { Id: 12393, cost: 10000 }, // UR character
-                { Id: 304, cost: 10000 }, // HR character
-            ]
+            items: [] // 由轮换系统动态生成
         },
     },
 

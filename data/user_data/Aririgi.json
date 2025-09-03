@@ -35,7 +35,7 @@
             "totalWatchTime": 600
         },
         "level": 10,
-        "knowledgePoints": 14284,
+        "knowledgePoints": 13972,
         "animeGachaTickets": 120,
         "characterGachaTickets": 32,
         "exp": 12170,
@@ -4351,12 +4351,12 @@
         [
             12393,
             {
-                "affection": 1000,
+                "affection": 1235,
                 "attributes": {
-                    "charm": 73,
-                    "intelligence": 78,
+                    "charm": 76,
+                    "intelligence": 89,
                     "mood": 100,
-                    "strength": 77
+                    "strength": 83
                 },
                 "dialogueHistory": [
                     "anime",
@@ -4365,7 +4365,8 @@
                     "weather",
                     "anime",
                     "park",
-                    "cafe"
+                    "cafe",
+                    "cooking"
                 ],
                 "gifts": [
                     {
@@ -4582,7 +4583,7 @@
                     }
                 ],
                 "intimacy": 0,
-                "lastInteraction": "2025-09-02T12:50:41.613Z",
+                "lastInteraction": "2025-09-03T04:37:08.996Z",
                 "preferences": {
                     "dislikedTopics": [],
                     "favoriteGifts": [],
@@ -4592,9 +4593,12 @@
                     "special_event_1756816699350",
                     "special_event_1756816700054",
                     "special_event_1756816894873",
-                    "date_amusement_park_1756817436827"
+                    "date_amusement_park_1756817436827",
+                    "special_event_1756874223752"
                 ],
-                "totalInteractions": 73
+                "totalInteractions": 77,
+                "experience": null,
+                "totalExperience": null
             }
         ],
         [

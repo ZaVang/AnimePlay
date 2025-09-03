@@ -51,15 +51,15 @@ const currentCharacter = computed(() => {
   return availableCharacters.value.find(c => c.id === props.selectedCharacterId) || null;
 });
 
-// 获取角色的好感度等级
-function getAffectionLevel(affection: number) {
-  if (affection >= 1000) return { level: '恋人', color: 'text-pink-400', icon: '💕' };
-  if (affection >= 800) return { level: '恋慕', color: 'text-red-400', icon: '❤️' };
-  if (affection >= 600) return { level: '信赖', color: 'text-purple-400', icon: '💜' };
-  if (affection >= 400) return { level: '友好', color: 'text-blue-400', icon: '💙' };
-  if (affection >= 200) return { level: '熟悉', color: 'text-green-400', icon: '💚' };
-  if (affection >= 100) return { level: '好感', color: 'text-yellow-400', icon: '💛' };
-  return { level: '初识', color: 'text-gray-400', icon: '🤍' };
+// 获取角色的羁绊等级
+function getBondLevel(affection: number) {
+  if (affection >= 1000) return { level: '永恒羁绊', color: 'text-pink-400', icon: '⭐' };
+  if (affection >= 800) return { level: '深度羁绊', color: 'text-red-400', icon: '🌟' };
+  if (affection >= 600) return { level: '信任伙伴', color: 'text-purple-400', icon: '💜' };
+  if (affection >= 400) return { level: '亲密战友', color: 'text-blue-400', icon: '💙' };
+  if (affection >= 200) return { level: '熟悉伙伴', color: 'text-green-400', icon: '💚' };
+  if (affection >= 100) return { level: '初步羁绊', color: 'text-yellow-400', icon: '💛' };
+  return { level: '初次相遇', color: 'text-gray-400', icon: '🤝' };
 }
 
 function handleSelect(characterId: number) {
@@ -80,9 +80,10 @@ function handleSelect(characterId: number) {
       </div>
       <div class="text-left">
         <div class="text-sm font-medium">{{ currentCharacter.name }}</div>
-        <div class="text-xs opacity-75">
-          {{ getAffectionLevel(currentCharacter.nurtureData.affection || 0).icon }} 
-          {{ getAffectionLevel(currentCharacter.nurtureData.affection || 0).level }}
+        <div class="text-xs opacity-75 space-x-2">
+          <span>Lv.{{ currentCharacter.nurtureData.level }}</span>
+          <span>{{ getBondLevel(currentCharacter.nurtureData.affection || 0).icon }}</span>
+          <span>{{ getBondLevel(currentCharacter.nurtureData.affection || 0).level }}</span>
         </div>
       </div>
     </div>
@@ -143,14 +144,19 @@ function handleSelect(characterId: number) {
               <!-- 角色名称 -->
               <h4 class="text-sm font-medium text-white truncate mb-1">{{ character.name }}</h4>
 
-              <!-- 好感度等级 -->
-              <div class="flex items-center justify-between text-xs">
-                <span :class="getAffectionLevel(character.nurtureData.affection || 0).color">
-                  {{ getAffectionLevel(character.nurtureData.affection || 0).icon }}
-                </span>
-                <span :class="getAffectionLevel(character.nurtureData.affection || 0).color">
-                  {{ getAffectionLevel(character.nurtureData.affection || 0).level }}
-                </span>
+              <!-- 等级和羁绊等级 -->
+              <div class="space-y-1">
+                <div class="text-xs text-yellow-400 font-bold">
+                  Lv.{{ character.nurtureData.level }}
+                </div>
+                <div class="flex items-center justify-between text-xs">
+                  <span :class="getBondLevel(character.nurtureData.affection || 0).color">
+                    {{ getBondLevel(character.nurtureData.affection || 0).icon }}
+                  </span>
+                  <span :class="getBondLevel(character.nurtureData.affection || 0).color">
+                    {{ getBondLevel(character.nurtureData.affection || 0).level }}
+                  </span>
+                </div>
               </div>
 
               <!-- 稀有度边框效果 -->

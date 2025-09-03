@@ -19,12 +19,44 @@ const drawnCardsResult = ref<DrawnCard[]>([]);
 // 控制概率详情弹窗的状态
 const isRatesModalOpen = ref(false);
 
+// 加载状态和错误处理
+const isDrawing = ref(false);
+const drawError = ref<string>('');
+
 async function handleDraw(count: number) {
-    const drawnCards = await userStore.drawCards(activeGachaType.value, count);
-    if (drawnCards) {
-        drawnCardsResult.value = drawnCards;
-        isResultModalOpen.value = true;
+    if (isDrawing.value) return; // 防止重复点击
+    
+    isDrawing.value = true;
+    drawError.value = '';
+    
+    try {
+        // 检查是否有足够的抽卡券
+        const hasEnoughTickets = activeGachaType.value === 'anime' 
+            ? userStore.playerState.animeGachaTickets >= count
+            : userStore.playerState.characterGachaTickets >= count;
+            
+        if (!hasEnoughTickets) {
+            drawError.value = `没有足够的${activeGachaType.value === 'anime' ? '动画券' : '角色券'}！`;
+            return;
+        }
+        
+        const drawnCards = await userStore.drawCards(activeGachaType.value, count);
+        if (drawnCards) {
+            drawnCardsResult.value = drawnCards;
+            isResultModalOpen.value = true;
+        } else {
+            drawError.value = '抽卡失败，请稍后重试';
+        }
+    } catch (error) {
+        console.error('抽卡错误:', error);
+        drawError.value = '抽卡过程中发生错误，请稍后重试';
+    } finally {
+        isDrawing.value = false;
     }
+}
+
+function clearError() {
+    drawError.value = '';
 }
 
 function closeResultModal() {
@@ -88,6 +120,18 @@ function closeRatesModal() {
           <!-- UP Banner -->
           <UpBanner :gacha-type="activeGachaType" />
           
+          <!-- 错误提示 -->
+          <div v-if="drawError" class="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg">
+            <div class="flex justify-between items-center">
+              <p class="text-red-600 text-sm">{{ drawError }}</p>
+              <button @click="clearError" class="text-red-400 hover:text-red-600">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          
           <!-- Anime Gacha Content -->
           <div v-if="activeGachaType === 'anime'">
             <div class="flex justify-between items-center mb-4">
@@ -100,11 +144,43 @@ function closeRatesModal() {
               </div>
             </div>
             <div class="text-center mb-4">
-              <button @click="handleDraw(1)" class="bg-indigo-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-indigo-700 text-sm">
-                单次抽卡
+              <button 
+                @click="handleDraw(1)" 
+                :disabled="isDrawing || userStore.playerState.animeGachaTickets < 1"
+                :class="[
+                  'font-semibold py-2 px-6 rounded-lg text-sm transition-all duration-200',
+                  isDrawing || userStore.playerState.animeGachaTickets < 1
+                    ? 'bg-gray-400 text-gray-200 cursor-not-allowed'
+                    : 'bg-indigo-600 text-white hover:bg-indigo-700'
+                ]"
+              >
+                <span v-if="isDrawing" class="flex items-center gap-2">
+                  <svg class="animate-spin h-4 w-4" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="m4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                  抽卡中...
+                </span>
+                <span v-else>单次抽卡</span>
               </button>
-              <button @click="handleDraw(10)" class="bg-amber-500 text-white font-semibold py-2 px-6 rounded-lg hover:bg-amber-600 ml-3 text-sm">
-                十次抽卡
+              <button 
+                @click="handleDraw(10)" 
+                :disabled="isDrawing || userStore.playerState.animeGachaTickets < 10"
+                :class="[
+                  'font-semibold py-2 px-6 rounded-lg text-sm ml-3 transition-all duration-200',
+                  isDrawing || userStore.playerState.animeGachaTickets < 10
+                    ? 'bg-gray-400 text-gray-200 cursor-not-allowed'
+                    : 'bg-amber-500 text-white hover:bg-amber-600'
+                ]"
+              >
+                <span v-if="isDrawing" class="flex items-center gap-2">
+                  <svg class="animate-spin h-4 w-4" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="m4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                  抽卡中...
+                </span>
+                <span v-else>十次抽卡</span>
               </button>
             </div>
             <div class="text-center">
@@ -124,11 +200,43 @@ function closeRatesModal() {
               </div>
             </div>
             <div class="text-center mb-4">
-              <button @click="handleDraw(1)" class="bg-pink-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-pink-700 text-sm">
-                单次抽卡
+              <button 
+                @click="handleDraw(1)" 
+                :disabled="isDrawing || userStore.playerState.characterGachaTickets < 1"
+                :class="[
+                  'font-semibold py-2 px-6 rounded-lg text-sm transition-all duration-200',
+                  isDrawing || userStore.playerState.characterGachaTickets < 1
+                    ? 'bg-gray-400 text-gray-200 cursor-not-allowed'
+                    : 'bg-pink-600 text-white hover:bg-pink-700'
+                ]"
+              >
+                <span v-if="isDrawing" class="flex items-center gap-2">
+                  <svg class="animate-spin h-4 w-4" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="m4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                  抽卡中...
+                </span>
+                <span v-else>单次抽卡</span>
               </button>
-              <button @click="handleDraw(10)" class="bg-purple-500 text-white font-semibold py-2 px-6 rounded-lg hover:bg-purple-600 ml-3 text-sm">
-                十次抽卡
+              <button 
+                @click="handleDraw(10)" 
+                :disabled="isDrawing || userStore.playerState.characterGachaTickets < 10"
+                :class="[
+                  'font-semibold py-2 px-6 rounded-lg text-sm ml-3 transition-all duration-200',
+                  isDrawing || userStore.playerState.characterGachaTickets < 10
+                    ? 'bg-gray-400 text-gray-200 cursor-not-allowed'
+                    : 'bg-purple-500 text-white hover:bg-purple-600'
+                ]"
+              >
+                <span v-if="isDrawing" class="flex items-center gap-2">
+                  <svg class="animate-spin h-4 w-4" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="m4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                  抽卡中...
+                </span>
+                <span v-else>十次抽卡</span>
               </button>
             </div>
             <div class="text-center">

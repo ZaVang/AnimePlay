@@ -54,13 +54,17 @@ export interface LogEntry {
 
 // 角色养成数据接口
 export interface CharacterNurtureData {
-  affection: number; // 好感度 (0-1000)
+  affection: number; // 好感度 (0-1000+, 可以超过1000)
   intimacy: number; // 亲密度 (0-100)
   lastInteraction: string; // 最后互动时间
   totalInteractions: number; // 总互动次数
   dialogueHistory: string[]; // 对话历史ID
-  gifts: { itemId: string; timestamp: number }[]; // 收到的礼物
+  gifts: string[]; // 收到的礼物ID列表 (简化数据结构)
   specialEvents: string[]; // 已解锁的特殊事件
+  // 角色等级系统
+  level: number; // 角色等级 (1+, 无上限)
+  experience: number; // 当前经验值
+  totalExperience: number; // 总经验值 (用于计算等级)
   attributes: {
     charm: number; // 魅力值
     intelligence: number; // 智力值
@@ -578,6 +582,10 @@ export const useUserStore = defineStore('user', () => {
         dialogueHistory: [],
         gifts: [],
         specialEvents: [],
+        // 角色等级系统默认值
+        level: 1,
+        experience: 0,
+        totalExperience: 0,
         attributes: {
           charm: 50,
           intelligence: 50,
@@ -602,15 +610,19 @@ export const useUserStore = defineStore('user', () => {
     return characterNurtureData.value.get(characterId)!;
   }
 
-  // 增加好感度
+  // 增加好感度 (无上限)
   function increaseAffection(characterId: number, amount: number) {
     if (!isLoggedIn.value) return;
     
     const nurtureData = getNurtureData(characterId);
     const oldAffection = nurtureData.affection;
-    nurtureData.affection = Math.min(1000, nurtureData.affection + amount);
+    nurtureData.affection = nurtureData.affection + amount; // 移除上限限制
     nurtureData.lastInteraction = new Date().toISOString();
     nurtureData.totalInteractions++;
+    
+    // 给予经验值奖励 (互动给予少量经验)
+    const expReward = amount * 5; // 每点好感度给5经验
+    addCharacterExp(characterId, expReward);
 
     const gameDataStore = useGameDataStore();
     const character = gameDataStore.getCharacterCardById(characterId);
@@ -671,6 +683,10 @@ export const useUserStore = defineStore('user', () => {
     const oldValue = nurtureData.attributes[attribute];
     nurtureData.attributes[attribute] = Math.min(100, oldValue + amount);
     
+    // 给予经验值奖励 (基础训练给予中等经验)
+    const expReward = amount * 15; // 每点属性给15经验
+    addCharacterExp(characterId, expReward);
+    
     const gameDataStore = useGameDataStore();
     const character = gameDataStore.getCharacterCardById(characterId);
     
@@ -694,6 +710,10 @@ export const useUserStore = defineStore('user', () => {
     const nurtureData = getNurtureData(characterId);
     const oldValue = nurtureData.battleEnhancements[stat];
     nurtureData.battleEnhancements[stat] = Math.min(100, oldValue + amount);
+    
+    // 给予经验值奖励 (战斗训练给予更高经验)
+    const expReward = amount * 25; // 每点战斗属性给25经验
+    addCharacterExp(characterId, expReward);
     
     const gameDataStore = useGameDataStore();
     const character = gameDataStore.getCharacterCardById(characterId);
@@ -729,6 +749,82 @@ export const useUserStore = defineStore('user', () => {
       sp: Math.floor(baseStats.sp * (1 + enhancements.sp / 100)),
       spd: Math.floor(baseStats.spd * (1 + enhancements.spd / 100))
     };
+  }
+
+  // === 角色等级系统 ===
+
+  // 计算等级所需的经验值 (使用 level^2 * 1000 公式)
+  function getRequiredExpForLevel(level: number): number {
+    if (level <= 1) return 0;
+    return (level - 1) * (level - 1) * 1000;
+  }
+
+  // 根据总经验值计算当前等级
+  function getLevelFromExp(totalExp: number): number {
+    let level = 1;
+    while (getRequiredExpForLevel(level + 1) <= totalExp) {
+      level++;
+    }
+    return level;
+  }
+
+  // 获取当前等级的经验值进度 (当前等级内的经验 / 升下一级需要的经验)
+  function getLevelProgress(nurtureData: CharacterNurtureData): { current: number; required: number; percentage: number } {
+    const currentLevel = nurtureData.level;
+    const totalExp = nurtureData.totalExperience;
+    const currentLevelExpStart = getRequiredExpForLevel(currentLevel);
+    const nextLevelExpStart = getRequiredExpForLevel(currentLevel + 1);
+    
+    const currentLevelExp = totalExp - currentLevelExpStart;
+    const requiredForNext = nextLevelExpStart - currentLevelExpStart;
+    
+    return {
+      current: currentLevelExp,
+      required: requiredForNext,
+      percentage: (currentLevelExp / requiredForNext) * 100
+    };
+  }
+
+  // 增加经验值并处理等级提升
+  function addCharacterExp(characterId: number, expAmount: number) {
+    if (!isLoggedIn.value || expAmount <= 0) return;
+    
+    const nurtureData = getNurtureData(characterId);
+    const oldLevel = nurtureData.level;
+    
+    // 增加经验值
+    nurtureData.experience += expAmount;
+    nurtureData.totalExperience += expAmount;
+    
+    // 计算新等级
+    const newLevel = getLevelFromExp(nurtureData.totalExperience);
+    
+    if (newLevel > oldLevel) {
+      // 等级提升
+      nurtureData.level = newLevel;
+      const levelGain = newLevel - oldLevel;
+      
+      const gameDataStore = useGameDataStore();
+      const character = gameDataStore.getCharacterCardById(characterId);
+      
+      if (character) {
+        addLog(`🎉 ${character.name} 等级提升！Lv.${oldLevel} → Lv.${newLevel}`, 'success');
+        
+        // 等级提升奖励 (每级提升给予属性点数)
+        const attributeBonus = levelGain * 2; // 每级+2属性点
+        nurtureData.attributes.charm += attributeBonus;
+        nurtureData.attributes.intelligence += attributeBonus;
+        nurtureData.attributes.strength += attributeBonus;
+        
+        if (levelGain > 1) {
+          addLog(`连续提升 ${levelGain} 级！获得额外属性奖励！`, 'success');
+        }
+      }
+    }
+    
+    // 重置当前等级的经验值显示
+    const levelProgress = getLevelProgress(nurtureData);
+    nurtureData.experience = levelProgress.current;
   }
 
   return {
@@ -773,5 +869,10 @@ export const useUserStore = defineStore('user', () => {
     enhanceAttribute,
     enhanceBattleStat,
     getEnhancedBattleStats,
+    // 角色等级系统
+    getRequiredExpForLevel,
+    getLevelFromExp,
+    getLevelProgress,
+    addCharacterExp,
   };
 });
