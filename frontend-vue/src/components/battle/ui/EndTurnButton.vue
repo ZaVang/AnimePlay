@@ -15,16 +15,13 @@ function handleEndTurn() {
   <button
     @click="handleEndTurn"
     :disabled="gameStore.phase !== 'action' || gameStore.activePlayer !== 'playerA'"
-    class="end-turn-button"
+    class="battle-action-btn bg-green-600 hover:bg-green-500 disabled:bg-gray-600 disabled:shadow-none disabled:cursor-not-allowed disabled:transform-none"
+    :class="{ 'shadow-green-500/50': gameStore.phase === 'action' && gameStore.activePlayer === 'playerA' }"
   >
     结束回合
   </button>
 </template>
 
 <style scoped>
-.end-turn-button {
-  @apply text-white font-bold py-3 px-6 rounded-lg text-xl transition-all duration-300;
-  @apply bg-green-600 hover:bg-green-500 shadow-lg hover:shadow-green-500/50;
-  @apply disabled:bg-gray-600 disabled:shadow-none disabled:cursor-not-allowed;
-}
+/* 继承父组件的 battle-action-btn 样式 */
 </style>

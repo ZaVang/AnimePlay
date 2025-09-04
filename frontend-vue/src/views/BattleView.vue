@@ -14,7 +14,14 @@ import EndTurnButton from '@/components/battle/ui/EndTurnButton.vue';
 import NotificationDisplay from '@/components/battle/ui/NotificationDisplay.vue';
 import BattleLog from '@/components/battle/ui/BattleLog.vue';
 import InteractionManager from '@/components/battle/interaction/InteractionManager.vue';
+import BattleDialogueManager from '@/components/battle/dialogue/BattleDialogueManager.vue';
+import BattleRulesModal from '@/components/battle/ui/BattleRulesModal.vue';
 import { BattleController } from '@/core/battle/BattleController';
+
+// 开发环境下导入测试工具
+if (import.meta.env.DEV) {
+  import('@/utils/testRandomAI');
+}
 
 type BattlePhase = 'deckSelection' | 'battle';
 
@@ -22,6 +29,9 @@ const gameStore = useGameStore();
 const playerStore = usePlayerStore();
 const battlePhase = ref<BattlePhase>('deckSelection');
 const interactionManager = ref<InstanceType<typeof InteractionManager> | null>(null);
+
+// 战斗规则弹窗
+const showRulesModal = ref(false);
 
 // Check game state when component is mounted
 onMounted(() => {
@@ -45,17 +55,55 @@ onBeforeUnmount(() => {
 });
 
 function handleDeckSelected(deck: Deck, aiProfileId?: string) {
-  TurnManager.initializeGameWithDeck(deck, aiProfileId);
-  battlePhase.value = 'battle';
+  console.log('🎮 尝试开始战斗，使用卡组:', deck.name, 'AI:', aiProfileId);
+  try {
+    TurnManager.initializeGameWithDeck(deck, aiProfileId);
+    battlePhase.value = 'battle';
+    console.log('✅ 战斗初始化成功');
+  } catch (error) {
+    console.error('❌ 战斗初始化失败:', error);
+  }
 }
 
 function handleRandomDeck(aiProfileId?: string) {
-  TurnManager.initializeRandomGame(aiProfileId);
-  battlePhase.value = 'battle';
+  console.log('🎲 尝试开始随机战斗，AI:', aiProfileId);
+  try {
+    TurnManager.initializeRandomGame(aiProfileId);
+    battlePhase.value = 'battle';
+    console.log('✅ 随机战斗初始化成功');
+  } catch (error) {
+    console.error('❌ 随机战斗初始化失败:', error);
+  }
 }
 
 function handleSkipTurn() {
   BattleController.skipTurn();
+}
+
+function handleExitBattle() {
+  console.log('🚪 退出战斗按钮被点击');
+  try {
+    // 确认退出对话框
+    if (confirm('确定要退出当前战斗吗？进度将不会保存。')) {
+      console.log('✅ 用户确认退出，开始清理战斗状态');
+      
+      // 清理战斗状态
+      gameStore.resetGame();
+      playerStore.clearPlayers();
+      
+      // 清理持久化效果系统
+      PersistentEffectSystem.getInstance().clearAll();
+      
+      // 返回卡组选择界面
+      battlePhase.value = 'deckSelection';
+      
+      console.log('✅ 战斗退出成功，已返回卡组选择界面');
+    } else {
+      console.log('❌ 用户取消退出');
+    }
+  } catch (error) {
+    console.error('❌ 退出战斗失败:', error);
+  }
 }
 </script>
 
@@ -65,6 +113,15 @@ function handleSkipTurn() {
     
     <!-- Interaction Manager for complex skill effects -->
     <InteractionManager ref="interactionManager" />
+    
+    <!-- Battle Dialogue Manager for speech bubbles and action effects -->
+    <BattleDialogueManager v-if="battlePhase === 'battle'" />
+    
+    <!-- Battle Rules Modal -->
+    <BattleRulesModal 
+      :show="showRulesModal" 
+      @close="showRulesModal = false"
+    />
     
     <!-- Phase 1: Deck Selection -->
     <div v-if="battlePhase === 'deckSelection'" class="deck-selector-wrapper">
@@ -99,9 +156,24 @@ function handleSkipTurn() {
             <button
                 v-if="gameStore.phase === 'defense' && gameStore.activePlayer === 'playerB'"
                 @click="handleSkipTurn"
-                class="px-4 py-2 rounded-lg bg-yellow-600 hover:bg-yellow-700 transition-colors"
+                class="battle-action-btn bg-yellow-600 hover:bg-yellow-700"
+                title="跳过当前防御阶段"
             >
                 跳过防御
+            </button>
+            <button
+                @click="showRulesModal = true"
+                class="battle-action-btn bg-blue-600 hover:bg-blue-700"
+                title="查看战斗规则详解"
+            >
+                📋 规则
+            </button>
+            <button
+                @click="handleExitBattle"
+                class="battle-action-btn bg-red-600 hover:bg-red-700"
+                title="退出当前战斗，进度将不会保存"
+            >
+                退出战斗
             </button>
         </div>
       </div>
@@ -154,7 +226,20 @@ function handleSkipTurn() {
 }
 
 .action-buttons {
-    @apply flex flex-col space-y-2 justify-center items-center;
+    @apply flex flex-col space-y-3 justify-center items-center;
     flex: 0 1 250px; /* Do not grow, shrink if needed, initial width 250px */
+}
+
+/* 统一战斗操作按钮样式 */
+.battle-action-btn {
+    @apply px-6 py-3 rounded-lg text-white font-semibold transition-all duration-200 min-w-[120px] text-center;
+}
+
+.battle-action-btn:hover {
+    @apply shadow-lg transform scale-105;
+}
+
+.battle-action-btn:active {
+    @apply transform scale-95;
 }
 </style>

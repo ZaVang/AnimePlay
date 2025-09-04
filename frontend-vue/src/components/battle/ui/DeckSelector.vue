@@ -4,6 +4,7 @@ import { useGameDataStore } from '@/stores/gameDataStore';
 import { ref, computed, onMounted } from 'vue';
 import { listAIProfiles, type AIProfile } from '@/core/ai/aiProfiles';
 import { useSettingsStore } from '@/stores/settings';
+import BattleRulesModal from './BattleRulesModal.vue';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
@@ -42,11 +43,34 @@ const emit = defineEmits<{
   (e: 'deckSelected', deck: Deck, aiProfileId?: string): void;
   (e: 'randomDeck', aiProfileId?: string): void;
 }>();
+
+// 战斗规则弹窗
+const showRulesModal = ref(false);
+
+// 调试函数
+function handleDeckClick(deck: Deck) {
+  console.log('📦 卡组被点击:', deck.name, 'AI:', selectedAIId.value);
+  emit('deckSelected', deck, selectedAIId.value);
+}
+
+function handleRandomClick() {
+  console.log('🎲 随机卡组按钮被点击，AI:', selectedAIId.value);
+  emit('randomDeck', selectedAIId.value);
+}
 </script>
 
 <template>
   <div class="deck-selector-container">
-    <h2 class="text-3xl font-bold text-center text-white mb-8">请选择您的出战卡组</h2>
+    <div class="flex items-center justify-center mb-8">
+      <h2 class="text-3xl font-bold text-center text-white">请选择您的出战卡组</h2>
+      <button 
+        @click="showRulesModal = true" 
+        class="ml-4 px-3 py-1 text-sm bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
+        title="查看战斗规则"
+      >
+        📋 规则详解
+      </button>
+    </div>
     <div class="ai-selection-section mb-8">
       <div class="flex items-center justify-center gap-3 mb-4">
         <label class="text-white text-lg font-semibold">AI 对手：</label>
@@ -68,27 +92,35 @@ const emit = defineEmits<{
     </div>
     <div v-if="Object.keys(userStore.savedDecks).length === 0" class="text-center">
       <p class="text-gray-400">没有找到已保存的卡组。</p>
-      <button @click="emit('randomDeck', selectedAIId)" class="btn-primary mt-4">使用随机卡组开始</button>
+      <button @click="handleRandomClick" class="btn-primary mt-4">使用随机卡组开始</button>
     </div>
-    <div v-else class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-      <div
-        v-for="deck in userStore.savedDecks"
-        :key="deck.name"
-        class="bg-gray-800 rounded-lg shadow-lg overflow-hidden group cursor-pointer border-2 border-transparent hover:border-yellow-400 transition-all"
-        @click="emit('deckSelected', deck, selectedAIId)"
-      >
-        <div class="relative aspect-w-10 aspect-h-12 bg-gray-700">
-          <img :src="getCoverImage(deck)" class="w-full h-full object-cover" :alt="`${deck.name} cover`" />
-        </div>
-        <div class="p-4">
-          <h4 class="font-bold text-lg truncate text-white">{{ deck.name }}</h4>
-          <p class="text-sm text-gray-400">{{ deck.anime.length }} 动画 / {{ deck.character.length }} 角色</p>
+    <div v-else>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <div
+          v-for="deck in userStore.savedDecks"
+          :key="deck.name"
+          class="bg-gray-800 rounded-lg shadow-lg overflow-hidden group cursor-pointer border-2 border-transparent hover:border-yellow-400 transition-all"
+          @click="handleDeckClick(deck)"
+        >
+          <div class="relative aspect-w-10 aspect-h-12 bg-gray-700">
+            <img :src="getCoverImage(deck)" class="w-full h-full object-cover" :alt="`${deck.name} cover`" />
+          </div>
+          <div class="p-4">
+            <h4 class="font-bold text-lg truncate text-white">{{ deck.name }}</h4>
+            <p class="text-sm text-gray-400">{{ deck.anime.length }} 动画 / {{ deck.character.length }} 角色</p>
+          </div>
         </div>
       </div>
+      <div class="text-center mt-8">
+        <button @click="handleRandomClick" class="btn-secondary">或使用随机卡组开始</button>
+      </div>
     </div>
-    <div class="text-center mt-8">
-      <button @click="emit('randomDeck', selectedAIId)" class="btn-secondary">或使用随机卡组开始</button>
-    </div>
+    
+    <!-- Battle Rules Modal -->
+    <BattleRulesModal 
+      :show="showRulesModal" 
+      @close="showRulesModal = false"
+    />
   </div>
 </template>
 

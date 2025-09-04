@@ -23,16 +23,19 @@ const rarityOrder: Rarity[] = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
 const animeFilters = ref({ name: '', rarity: '', tag: '' });
 const characterFilters = ref({ name: '', rarity: '' });
 
-// 虚拟化配置
+// 虚拟化配置 - 确保卡片名字完全可见
 const VIRTUAL_GRID_CONFIG = {
-  itemHeight: 140,      // 卡片高度
-  containerHeight: 600, // 容器高度
+  itemHeight: 180,      // 增加卡片高度，确保名字完全显示
+  containerHeight: 650, // 容器高度
   minItemWidth: 100,    // 最小卡片宽度
   gap: 16              // 间隙
 };
 
-// 虚拟化阈值 - 超过此数量才启用虚拟化
-const VIRTUALIZATION_THRESHOLD = 50;
+// 虚拟化阈值 - 提高阈值，减少虚拟化触发频率
+const VIRTUALIZATION_THRESHOLD = 100;
+
+// 虚拟化开关 - 用户可以选择禁用虚拟化
+const enableVirtualization = ref(true);
 
 
 // --- Event Handlers ---
@@ -103,11 +106,11 @@ const filteredAnimeCards = computed(() => {
 
 // 判断是否需要虚拟化
 const shouldVirtualizeAnime = computed(() => {
-  return filteredAnimeCards.value.length > VIRTUALIZATION_THRESHOLD;
+  return enableVirtualization.value && filteredAnimeCards.value.length > VIRTUALIZATION_THRESHOLD;
 });
 
 const shouldVirtualizeCharacter = computed(() => {
-  return filteredCharacterCards.value.length > VIRTUALIZATION_THRESHOLD;
+  return enableVirtualization.value && filteredCharacterCards.value.length > VIRTUALIZATION_THRESHOLD;
 });
 
 // 性能监控（开发环境）
@@ -181,6 +184,10 @@ const filteredCharacterCards = computed(() => {
                 <button @click="handleDismantleAll('anime')" :disabled="!hasDuplicateAnime" class="p-2 border rounded-lg bg-red-600 text-white disabled:bg-gray-400">
                     一键分解重复卡
                 </button>
+                <label class="flex items-center space-x-2 text-gray-700">
+                    <input type="checkbox" v-model="enableVirtualization" class="rounded">
+                    <span class="text-sm">启用虚拟化 (>{{ VIRTUALIZATION_THRESHOLD }}张)</span>
+                </label>
             </div>
         </div>
         <div v-if="activeTab === 'character'">
@@ -193,6 +200,10 @@ const filteredCharacterCards = computed(() => {
                 <button @click="handleDismantleAll('character')" :disabled="!hasDuplicateCharacters" class="p-2 border rounded-lg bg-red-600 text-white disabled:bg-gray-400">
                     一键分解重复卡
                 </button>
+                <label class="flex items-center space-x-2 text-gray-700">
+                    <input type="checkbox" v-model="enableVirtualization" class="rounded">
+                    <span class="text-sm">启用虚拟化 (>{{ VIRTUALIZATION_THRESHOLD }}张)</span>
+                </label>
             </div>
         </div>
       </div>

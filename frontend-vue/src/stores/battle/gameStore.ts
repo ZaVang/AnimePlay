@@ -56,6 +56,17 @@ export const useGameStore = defineStore('game', {
     clearClash() {
       this.clashInfo = null;
     },
+    // Reset game to initial state
+    resetGame() {
+      this.turn = 1;
+      this.activePlayer = 'playerA';
+      this.phase = 'setup';
+      this.topicBias = 0;
+      this.winner = null;
+      this.clashInfo = null;
+      this.notifications = [];
+      console.log('Game state reset to initial values');
+    },
   },
   getters: {
     isGameOver: (state) => state.phase === 'game_over',

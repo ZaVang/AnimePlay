@@ -195,7 +195,7 @@ export const GAME_CONFIG: GameConfig = {
             'UR': { 
                 p: 0.5, 
                 c: 'from-amber-400 to-red-500', 
-                dismantleValue: 1000, 
+                dismantleValue: 200, // 从1000降至200，更合理的稀有度价值
                 color: 'text-red-600', 
                 chartColor: '#dc2626', 
                 effect: 'border-4 border-amber-600 shadow-amber-600/70 shadow-[0_0_25px_var(--tw-shadow-color)]'
@@ -203,7 +203,7 @@ export const GAME_CONFIG: GameConfig = {
             'HR': { 
                 p: 2.5, 
                 c: 'from-red-500 to-purple-600', 
-                dismantleValue: 400, 
+                dismantleValue: 100, // 从400降至100，保持5倍UR概率差但2倍价值差
                 color: 'text-purple-700', 
                 chartColor: '#7c3aed', 
                 effect: 'border-4 border-red-600 shadow-red-600/70 shadow-[0_0_20px_var(--tw-shadow-color)]'
@@ -211,7 +211,7 @@ export const GAME_CONFIG: GameConfig = {
             'SSR': { 
                 p: 7, 
                 c: 'from-yellow-300 to-amber-400', 
-                dismantleValue: 100, 
+                dismantleValue: 50, // 从100降至50，更平衡的价值递减
                 color: 'text-amber-600', 
                 chartColor: '#d97706', 
                 effect: 'border-4 border-yellow-600 shadow-yellow-500/70 shadow-[0_0_15px_var(--tw-shadow-color)]'
@@ -219,7 +219,7 @@ export const GAME_CONFIG: GameConfig = {
             'SR': { 
                 p: 20, 
                 c: 'from-indigo-400 to-blue-500',  // 改为蓝紫渐变，避免和HR重复
-                dismantleValue: 20, 
+                dismantleValue: 25, // 从20增至25，更平缓的价值曲线
                 color: 'text-indigo-600', 
                 chartColor: '#4f46e5',
                 effect: 'border-2 border-indigo-500 shadow-indigo-500/60 shadow-[0_0_10px_var(--tw-shadow-color)]'
@@ -227,7 +227,7 @@ export const GAME_CONFIG: GameConfig = {
             'R': { 
                 p: 30, 
                 c: 'from-green-400 to-teal-500',  // 改为绿色渐变
-                dismantleValue: 5, 
+                dismantleValue: 10, // 从5增至10，提升基础卡价值
                 color: 'text-green-600', 
                 chartColor: '#059669',
                 effect: 'border-2 border-green-500 shadow-green-500/50 shadow-[0_0_8px_var(--tw-shadow-color)]'
@@ -235,7 +235,7 @@ export const GAME_CONFIG: GameConfig = {
             'N': { 
                 p: 0, 
                 c: 'from-gray-400 to-gray-600',  // 灰色渐变
-                dismantleValue: 1, 
+                dismantleValue: 3, // 从1增至3，提升最低稀有度价值
                 color: 'text-gray-600', 
                 chartColor: '#4b5563',
                 effect: 'border border-gray-400'  // 普通边框即可
@@ -262,7 +262,7 @@ export const GAME_CONFIG: GameConfig = {
             'UR': { 
                 p: 0.5, 
                 c: 'from-amber-400 to-red-500', 
-                dismantleValue: 1000, 
+                dismantleValue: 200, // 从1000降至200，更合理的稀有度价值
                 color: 'text-red-600', 
                 chartColor: '#dc2626', 
                 effect: 'border-4 border-amber-600 shadow-amber-600/70 shadow-[0_0_25px_var(--tw-shadow-color)]'
@@ -270,7 +270,7 @@ export const GAME_CONFIG: GameConfig = {
             'HR': { 
                 p: 2.5, 
                 c: 'from-red-500 to-purple-600', 
-                dismantleValue: 400, 
+                dismantleValue: 100, // 从400降至100，保持5倍UR概率差但2倍价值差
                 color: 'text-purple-700', 
                 chartColor: '#7c3aed', 
                 effect: 'border-4 border-red-600 shadow-red-600/70 shadow-[0_0_20px_var(--tw-shadow-color)]'
@@ -278,7 +278,7 @@ export const GAME_CONFIG: GameConfig = {
             'SSR': { 
                 p: 7, 
                 c: 'from-yellow-300 to-amber-400', 
-                dismantleValue: 100, 
+                dismantleValue: 50, // 从100降至50，更平衡的价值递减
                 color: 'text-amber-600', 
                 chartColor: '#d97706', 
                 effect: 'border-4 border-yellow-600 shadow-yellow-500/70 shadow-[0_0_15px_var(--tw-shadow-color)]'
@@ -286,7 +286,7 @@ export const GAME_CONFIG: GameConfig = {
             'SR': { 
                 p: 20, 
                 c: 'from-indigo-400 to-blue-500',  // 改为蓝紫渐变，避免和HR重复
-                dismantleValue: 20, 
+                dismantleValue: 25, // 从20增至25，更平缓的价值曲线
                 color: 'text-indigo-600', 
                 chartColor: '#4f46e5',
                 effect: 'border-2 border-indigo-500 shadow-indigo-500/60 shadow-[0_0_10px_var(--tw-shadow-color)]'
@@ -294,7 +294,7 @@ export const GAME_CONFIG: GameConfig = {
             'R': { 
                 p: 30, 
                 c: 'from-green-400 to-teal-500',  // 改为绿色渐变
-                dismantleValue: 5, 
+                dismantleValue: 10, // 从5增至10，提升基础卡价值
                 color: 'text-green-600', 
                 chartColor: '#059669',
                 effect: 'border-2 border-green-500 shadow-green-500/50 shadow-[0_0_8px_var(--tw-shadow-color)]'
@@ -302,7 +302,7 @@ export const GAME_CONFIG: GameConfig = {
             'N': { 
                 p: 0, 
                 c: 'from-gray-400 to-gray-600',  // 灰色渐变
-                dismantleValue: 1, 
+                dismantleValue: 3, // 从1增至3，提升最低稀有度价值
                 color: 'text-gray-600', 
                 chartColor: '#4b5563',
                 effect: 'border border-gray-400'  // 普通边框即可

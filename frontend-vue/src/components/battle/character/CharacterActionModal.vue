@@ -18,6 +18,11 @@ const emit = defineEmits<{
 }>();
 
 const playerStore = usePlayerStore();
+
+// 检查是否可以轮换角色
+const canRotate = computed(() => {
+  return playerStore.canRotateCharacter(props.playerId);
+});
 </script>
 
 <template>
@@ -59,7 +64,16 @@ const playerStore = usePlayerStore();
       </div>
 
       <div class="actions-section" v-if="!isMainDebater">
-        <button @click="emit('rotate')" class="btn-rotate">轮换为主辩手</button>
+        <button 
+          @click="emit('rotate')" 
+          :disabled="!canRotate"
+          :title="canRotate ? '轮换为主辩手' : '本回合已经轮换过主辩手'"
+          class="btn-rotate"
+          :class="{ 'disabled': !canRotate }"
+        >
+          轮换为主辩手
+          <span v-if="!canRotate" class="text-xs block">(本回合已用)</span>
+        </button>
       </div>
 
       <button @click="emit('close')" class="absolute top-3 right-3 text-gray-400 hover:text-white text-2xl">✕</button>
@@ -104,5 +118,13 @@ const playerStore = usePlayerStore();
 }
 .btn-rotate {
   @apply bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded-lg text-lg;
+}
+
+.btn-rotate.disabled {
+  @apply bg-gray-500 cursor-not-allowed text-gray-300;
+}
+
+.btn-rotate.disabled:hover {
+  @apply bg-gray-500;
 }
 </style>

@@ -1,4 +1,3 @@
-import { GAME_CONFIG } from '@/config/gameConfig';
 export interface AIProfile {
   id: string;
   name: string;
@@ -32,16 +31,16 @@ export const generatedAIProfiles: AIProfile[] = [
   }
 ];
 
-// 从 GAME_CONFIG.aiOpponent 迁移为一个 AI 档案（仅包含动画卡，角色留空表示随机）
-const fromGameConfig: AIProfile = {
-  id: 'config-ai',
-  name: GAME_CONFIG.aiOpponent?.name || 'AI#000',
-  anime: GAME_CONFIG.aiOpponent?.deck || [],
-  character: [],
-  description: '经典预设卡组，平衡的对战体验，适合快速开始游戏',
+// 随机AI档案 - 每次生成不同的卡组
+const randomAI: AIProfile = {
+  id: 'random-ai',
+  name: '随机AI',
+  anime: [], // 空数组表示使用随机生成
+  character: [], // 空数组表示使用随机生成
+  description: '每次对战都会生成不同的卡组和角色组合，提供全新的挑战体验',
 };
 
-const mergedProfiles: AIProfile[] = [...generatedAIProfiles, fromGameConfig];
+const mergedProfiles: AIProfile[] = [...generatedAIProfiles, randomAI];
 
 export function getAIProfileById(id: string): AIProfile | undefined {
   return mergedProfiles.find(p => p.id === id);

@@ -16,6 +16,7 @@ const createDefaultPlayer = (id: 'playerA' | 'playerB', name: string): PlayerSta
   activeCharacterIndex: 0,
   skillCooldowns: {},
   needsRotation: false,
+  rotationsUsedThisTurn: 0,
 });
 
 export const usePlayerStore = defineStore('players', {
@@ -107,11 +108,35 @@ export const usePlayerStore = defineStore('players', {
       });
     },
 
-    // Set the active character for a player
-    setActiveCharacter(playerId: 'playerA' | 'playerB', characterIndex: number) {
-      if (characterIndex >= 0 && characterIndex < this[playerId].characters.length) {
-        this[playerId].activeCharacterIndex = characterIndex;
+    // Set the active character for a player (with rotation limit)
+    setActiveCharacter(playerId: 'playerA' | 'playerB', characterIndex: number): boolean {
+      const player = this[playerId];
+      
+      // 检查轮换次数限制
+      if (player.rotationsUsedThisTurn >= 1) {
+        return false; // 超过轮换限制
       }
+      
+      if (characterIndex >= 0 && characterIndex < player.characters.length) {
+        // 只有在实际改变主辩手时才增加轮换次数
+        if (player.activeCharacterIndex !== characterIndex) {
+          player.activeCharacterIndex = characterIndex;
+          player.rotationsUsedThisTurn++;
+          return true;
+        }
+        return true; // 没有改变，但不算错误
+      }
+      return false; // 索引无效
+    },
+
+    // 重置玩家的轮换次数（每回合开始时调用）
+    resetRotationsForNewTurn(playerId: 'playerA' | 'playerB') {
+      this[playerId].rotationsUsedThisTurn = 0;
+    },
+
+    // 检查玩家是否还能轮换
+    canRotateCharacter(playerId: 'playerA' | 'playerB'): boolean {
+      return this[playerId].rotationsUsedThisTurn < 1;
     },
 
     // Flag a player for character rotation in the next turn
@@ -173,6 +198,13 @@ export const usePlayerStore = defineStore('players', {
       });
       // Add them back at the top in the specified order
       player.deck.unshift(...newOrder);
+    },
+
+    // Clear all player data and reset to defaults
+    clearPlayers() {
+      this.playerA = createDefaultPlayer('playerA', 'Player 1');
+      this.playerB = createDefaultPlayer('playerB', 'Player 2');
+      console.log('Player states cleared and reset to defaults');
     }
   },
   getters: {

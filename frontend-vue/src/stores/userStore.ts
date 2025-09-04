@@ -4,6 +4,7 @@ import { useGachaStore, type DrawnCard } from './gachaStore';
 import { useGameDataStore } from './gameDataStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { type Card, type Rarity } from '@/types/card';
+import { type ShopItem } from '@/utils/gachaRotation';
 
 // --- Type Definitions ---
 
@@ -493,6 +494,80 @@ export const useUserStore = defineStore('user', () => {
     saveStateToServer();
   }
 
+  function purchaseShopItem(item: ShopItem) {
+    if (!isLoggedIn.value) {
+      alert('请先登录！');
+      return Promise.reject(new Error('未登录'));
+    }
+
+    if (playerState.value.knowledgePoints < item.cost) {
+      addLog('知识点不足，无法购买！', 'warning');
+      return Promise.reject(new Error('知识点不足'));
+    }
+
+    // 扣除知识点
+    playerState.value.knowledgePoints -= item.cost;
+
+    // 根据物品类型进行处理
+    switch (item.type) {
+      case 'ticket':
+        // 增加抽卡券
+        if (item.id.includes('anime')) {
+          playerState.value.animeGachaTickets += item.quantity || 1;
+          addLog(`成功购买 ${item.name}！获得 ${item.quantity || 1} 张动画抽卡券`, 'success');
+        } else if (item.id.includes('character')) {
+          playerState.value.characterGachaTickets += item.quantity || 1;
+          addLog(`成功购买 ${item.name}！获得 ${item.quantity || 1} 张角色抽卡券`, 'success');
+        }
+        break;
+
+      case 'currency':
+        // 增加知识点（相当于返还）
+        playerState.value.knowledgePoints += item.quantity || 0;
+        addLog(`成功购买 ${item.name}！获得 ${item.quantity || 0} 知识点`, 'success');
+        break;
+
+      case 'booster':
+        // 增加经验值
+        playerState.value.exp += item.quantity || 0;
+        
+        // 检查是否升级
+        let targetLevel = playerState.value.level;
+        const levelXP = GAME_CONFIG.gameplay.levelXP;
+        
+        while (targetLevel < levelXP.length && playerState.value.exp >= levelXP[targetLevel]) {
+          targetLevel++;
+        }
+        
+        if (targetLevel > playerState.value.level) {
+          const oldLevel = playerState.value.level;
+          playerState.value.level = targetLevel;
+          addLog(`恭喜！等级提升至 Lv.${targetLevel}！`, 'success');
+          
+          // 给予升级奖励
+          for (let level = oldLevel + 1; level <= targetLevel; level++) {
+            const reward = GAME_CONFIG.gameplay.levelUpRewards[level.toString()];
+            if (reward) {
+              playerState.value.animeGachaTickets += reward.animeTickets;
+              playerState.value.characterGachaTickets += reward.characterTickets;
+              playerState.value.knowledgePoints += reward.knowledge;
+              addLog(`升级奖励：${reward.animeTickets}动画券 + ${reward.characterTickets}角色券 + ${reward.knowledge}知识点`, 'success');
+            }
+          }
+        }
+        
+        addLog(`成功购买 ${item.name}！获得 ${item.quantity || 0} 经验值`, 'success');
+        break;
+
+      default:
+        addLog(`成功购买 ${item.name}！`, 'success');
+        break;
+    }
+
+    saveStateToServer();
+    return Promise.resolve();
+  }
+
   function dismantleCard(cardId: number, cardType: 'anime' | 'character') {
     const collection = cardType === 'anime' ? animeCollection.value : characterCollection.value;
     const cardData = collection.get(cardId);
@@ -857,6 +932,7 @@ export const useUserStore = defineStore('user', () => {
     addToViewingQueue,
     collectFromViewingQueue,
     purchaseFromShop,
+    purchaseShopItem,
     dismantleCard,
     dismantleAllDuplicates,
     toggleFavorite,

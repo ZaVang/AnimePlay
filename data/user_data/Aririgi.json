@@ -2,43 +2,55 @@
     "state": {
         "viewingQueue": [
             {
-                "animeId": 326,
-                "startTime": 1756815600831
+                "animeId": 68812,
+                "startTime": 1756966113830
             },
             {
-                "animeId": 298477,
-                "startTime": 1756815602579
+                "animeId": 289,
+                "startTime": 1756966114909
             },
             {
-                "animeId": 120236,
-                "startTime": 1756815604332
+                "animeId": 331752,
+                "startTime": 1756966117355
             }
         ],
         "watchedAnime": [
             876,
             254,
-            127563
+            127563,
+            326,
+            298477,
+            120236,
+            3428,
+            995,
+            18624
         ],
         "viewingStats": {
-            "consecutiveDays": 1,
+            "consecutiveDays": 3,
             "genreProgress": {
-                "TV": 3,
-                "原创": 1,
+                "TV": 9,
+                "冒险": 1,
+                "原创": 2,
+                "奇幻": 2,
+                "小说改": 1,
                 "恋爱": 1,
-                "战斗": 2,
+                "战斗": 3,
                 "日常": 1,
-                "日本": 3,
+                "日本": 9,
                 "游戏改": 1,
-                "漫画改": 1
+                "漫画改": 5,
+                "科幻": 1,
+                "运动": 1,
+                "青年向": 1
             },
-            "lastWatchDate": "2025-09-02T12:19:57.547Z",
-            "totalWatchTime": 600
+            "lastWatchDate": "2025-09-04T06:08:32.281Z",
+            "totalWatchTime": 1560
         },
         "level": 10,
-        "knowledgePoints": 13972,
-        "animeGachaTickets": 120,
+        "knowledgePoints": 17117,
+        "animeGachaTickets": 12,
         "characterGachaTickets": 32,
-        "exp": 12170,
+        "exp": 26430,
         "savedDecks": {
             "test": {
                 "anime": [
@@ -93,19 +105,19 @@
         [
             876,
             {
-                "count": 3
+                "count": 1
             }
         ],
         [
             509297,
             {
-                "count": 2
+                "count": 1
             }
         ],
         [
             292970,
             {
-                "count": 4
+                "count": 1
             }
         ],
         [
@@ -117,7 +129,7 @@
         [
             85631,
             {
-                "count": 2
+                "count": 1
             }
         ],
         [
@@ -129,31 +141,31 @@
         [
             82322,
             {
-                "count": 2
+                "count": 1
             }
         ],
         [
             296367,
             {
-                "count": 4
+                "count": 1
             }
         ],
         [
             4255,
             {
-                "count": 4
+                "count": 1
             }
         ],
         [
             1851,
             {
-                "count": 4
+                "count": 1
             }
         ],
         [
             9781,
             {
-                "count": 2
+                "count": 1
             }
         ],
         [
@@ -171,7 +183,7 @@
         [
             424379,
             {
-                "count": 4
+                "count": 1
             }
         ],
         [
@@ -183,7 +195,7 @@
         [
             373247,
             {
-                "count": 2
+                "count": 1
             }
         ],
         [
@@ -207,13 +219,13 @@
         [
             443428,
             {
-                "count": 2
+                "count": 1
             }
         ],
         [
             135275,
             {
-                "count": 2
+                "count": 1
             }
         ],
         [
@@ -237,7 +249,7 @@
         [
             240038,
             {
-                "count": 2
+                "count": 1
             }
         ],
         [
@@ -255,7 +267,7 @@
         [
             285482,
             {
-                "count": 2
+                "count": 1
             }
         ],
         [
@@ -279,7 +291,7 @@
         [
             326,
             {
-                "count": 2
+                "count": 1
             }
         ],
         [
@@ -315,13 +327,13 @@
         [
             148726,
             {
-                "count": 3
+                "count": 1
             }
         ],
         [
             100403,
             {
-                "count": 3
+                "count": 1
             }
         ],
         [
@@ -369,7 +381,7 @@
         [
             131891,
             {
-                "count": 2
+                "count": 1
             }
         ],
         [
@@ -381,7 +393,7 @@
         [
             294713,
             {
-                "count": 4
+                "count": 1
             }
         ],
         [
@@ -393,7 +405,7 @@
         [
             110048,
             {
-                "count": 2
+                "count": 1
             }
         ],
         [
@@ -411,13 +423,13 @@
         [
             393037,
             {
-                "count": 2
+                "count": 1
             }
         ],
         [
             193378,
             {
-                "count": 2
+                "count": 1
             }
         ],
         [
@@ -453,19 +465,19 @@
         [
             137722,
             {
-                "count": 2
+                "count": 1
             }
         ],
         [
             140001,
             {
-                "count": 2
+                "count": 1
             }
         ],
         [
             129988,
             {
-                "count": 3
+                "count": 1
             }
         ],
         [
@@ -477,7 +489,7 @@
         [
             82572,
             {
-                "count": 2
+                "count": 1
             }
         ],
         [
@@ -608,6 +620,252 @@
         ],
         [
             531159,
+            {
+                "count": 1
+            }
+        ],
+        [
+            415779,
+            {
+                "count": 1
+            }
+        ],
+        [
+            68812,
+            {
+                "count": 1
+            }
+        ],
+        [
+            373267,
+            {
+                "count": 1
+            }
+        ],
+        [
+            331752,
+            {
+                "count": 1
+            }
+        ],
+        [
+            357961,
+            {
+                "count": 1
+            }
+        ],
+        [
+            179949,
+            {
+                "count": 1
+            }
+        ],
+        [
+            420628,
+            {
+                "count": 1
+            }
+        ],
+        [
+            369304,
+            {
+                "count": 1
+            }
+        ],
+        [
+            23686,
+            {
+                "count": 1
+            }
+        ],
+        [
+            234,
+            {
+                "count": 1
+            }
+        ],
+        [
+            5976,
+            {
+                "count": 1
+            }
+        ],
+        [
+            282,
+            {
+                "count": 1
+            }
+        ],
+        [
+            40533,
+            {
+                "count": 1
+            }
+        ],
+        [
+            411427,
+            {
+                "count": 1
+            }
+        ],
+        [
+            419846,
+            {
+                "count": 1
+            }
+        ],
+        [
+            28900,
+            {
+                "count": 1
+            }
+        ],
+        [
+            37154,
+            {
+                "count": 1
+            }
+        ],
+        [
+            10843,
+            {
+                "count": 1
+            }
+        ],
+        [
+            47889,
+            {
+                "count": 1
+            }
+        ],
+        [
+            378862,
+            {
+                "count": 1
+            }
+        ],
+        [
+            296739,
+            {
+                "count": 1
+            }
+        ],
+        [
+            350764,
+            {
+                "count": 1
+            }
+        ],
+        [
+            891,
+            {
+                "count": 1
+            }
+        ],
+        [
+            289,
+            {
+                "count": 1
+            }
+        ],
+        [
+            102134,
+            {
+                "count": 1
+            }
+        ],
+        [
+            274234,
+            {
+                "count": 1
+            }
+        ],
+        [
+            106818,
+            {
+                "count": 1
+            }
+        ],
+        [
+            266794,
+            {
+                "count": 1
+            }
+        ],
+        [
+            5649,
+            {
+                "count": 1
+            }
+        ],
+        [
+            16235,
+            {
+                "count": 1
+            }
+        ],
+        [
+            109386,
+            {
+                "count": 1
+            }
+        ],
+        [
+            1512,
+            {
+                "count": 1
+            }
+        ],
+        [
+            116461,
+            {
+                "count": 1
+            }
+        ],
+        [
+            274,
+            {
+                "count": 1
+            }
+        ],
+        [
+            428735,
+            {
+                "count": 1
+            }
+        ],
+        [
+            138829,
+            {
+                "count": 1
+            }
+        ],
+        [
+            2464,
+            {
+                "count": 1
+            }
+        ],
+        [
+            276,
+            {
+                "count": 1
+            }
+        ],
+        [
+            259,
+            {
+                "count": 1
+            }
+        ],
+        [
+            51928,
+            {
+                "count": 1
+            }
+        ],
+        [
+            263750,
             {
                 "count": 1
             }
@@ -905,7 +1163,7 @@
         [
             304,
             {
-                "count": 3
+                "count": 2
             }
         ],
         [
@@ -1360,8 +1618,8 @@
         ]
     ],
     "animePity": {
-        "pullsSinceLastHR": 4,
-        "totalPulls": 130
+        "pullsSinceLastHR": 7,
+        "totalPulls": 240
     },
     "characterPity": {
         "pullsSinceLastHR": 36,
@@ -2017,6 +2275,506 @@
             "id": 531159,
             "rarity": "SR",
             "timestamp": 1756727054349
+        },
+        {
+            "id": 415779,
+            "rarity": "SR",
+            "timestamp": 1756890179828
+        },
+        {
+            "id": 29648,
+            "rarity": "R",
+            "timestamp": 1756890179828
+        },
+        {
+            "id": 3425,
+            "rarity": "SR",
+            "timestamp": 1756890179828
+        },
+        {
+            "id": 41488,
+            "rarity": "R",
+            "timestamp": 1756890179828
+        },
+        {
+            "id": 68812,
+            "rarity": "HR",
+            "timestamp": 1756890179828
+        },
+        {
+            "id": 424379,
+            "rarity": "R",
+            "timestamp": 1756890179828
+        },
+        {
+            "id": 376703,
+            "rarity": "SR",
+            "timestamp": 1756890179828
+        },
+        {
+            "id": 243916,
+            "rarity": "SR",
+            "timestamp": 1756890179828
+        },
+        {
+            "id": 373267,
+            "rarity": "R",
+            "timestamp": 1756890179828
+        },
+        {
+            "id": 331752,
+            "rarity": "SR",
+            "timestamp": 1756890179828
+        },
+        {
+            "id": 127563,
+            "rarity": "SSR",
+            "timestamp": 1756890181274
+        },
+        {
+            "id": 357961,
+            "rarity": "SR",
+            "timestamp": 1756890181274
+        },
+        {
+            "id": 316247,
+            "rarity": "SR",
+            "timestamp": 1756890181274
+        },
+        {
+            "id": 179949,
+            "rarity": "R",
+            "timestamp": 1756890181274
+        },
+        {
+            "id": 420628,
+            "rarity": "R",
+            "timestamp": 1756890181274
+        },
+        {
+            "id": 110048,
+            "rarity": "R",
+            "timestamp": 1756890181274
+        },
+        {
+            "id": 899,
+            "rarity": "SR",
+            "timestamp": 1756890181274
+        },
+        {
+            "id": 369304,
+            "rarity": "R",
+            "timestamp": 1756890181274
+        },
+        {
+            "id": 467461,
+            "rarity": "R",
+            "timestamp": 1756890181274
+        },
+        {
+            "id": 23686,
+            "rarity": "R",
+            "timestamp": 1756890181274
+        },
+        {
+            "id": 68812,
+            "rarity": "HR",
+            "timestamp": 1756890182406
+        },
+        {
+            "id": 234,
+            "rarity": "SSR",
+            "timestamp": 1756890182406
+        },
+        {
+            "id": 5976,
+            "rarity": "R",
+            "timestamp": 1756890182406
+        },
+        {
+            "id": 531159,
+            "rarity": "SR",
+            "timestamp": 1756890182406
+        },
+        {
+            "id": 282,
+            "rarity": "SR",
+            "timestamp": 1756890182406
+        },
+        {
+            "id": 40533,
+            "rarity": "R",
+            "timestamp": 1756890182406
+        },
+        {
+            "id": 411427,
+            "rarity": "R",
+            "timestamp": 1756890182406
+        },
+        {
+            "id": 292970,
+            "rarity": "R",
+            "timestamp": 1756890182406
+        },
+        {
+            "id": 419846,
+            "rarity": "R",
+            "timestamp": 1756890182406
+        },
+        {
+            "id": 37685,
+            "rarity": "SSR",
+            "timestamp": 1756890182406
+        },
+        {
+            "id": 150490,
+            "rarity": "SR",
+            "timestamp": 1756890183380
+        },
+        {
+            "id": 373247,
+            "rarity": "R",
+            "timestamp": 1756890183380
+        },
+        {
+            "id": 419846,
+            "rarity": "R",
+            "timestamp": 1756890183380
+        },
+        {
+            "id": 40310,
+            "rarity": "SR",
+            "timestamp": 1756890183380
+        },
+        {
+            "id": 28900,
+            "rarity": "SR",
+            "timestamp": 1756890183380
+        },
+        {
+            "id": 2617,
+            "rarity": "R",
+            "timestamp": 1756890183380
+        },
+        {
+            "id": 37154,
+            "rarity": "R",
+            "timestamp": 1756890183380
+        },
+        {
+            "id": 10843,
+            "rarity": "SSR",
+            "timestamp": 1756890183380
+        },
+        {
+            "id": 225631,
+            "rarity": "R",
+            "timestamp": 1756890183380
+        },
+        {
+            "id": 47889,
+            "rarity": "R",
+            "timestamp": 1756890183380
+        },
+        {
+            "id": 369304,
+            "rarity": "R",
+            "timestamp": 1756890184607
+        },
+        {
+            "id": 378862,
+            "rarity": "SR",
+            "timestamp": 1756890184607
+        },
+        {
+            "id": 296739,
+            "rarity": "SSR",
+            "timestamp": 1756890184607
+        },
+        {
+            "id": 350764,
+            "rarity": "R",
+            "timestamp": 1756890184607
+        },
+        {
+            "id": 40310,
+            "rarity": "SR",
+            "timestamp": 1756890184607
+        },
+        {
+            "id": 393037,
+            "rarity": "R",
+            "timestamp": 1756890184607
+        },
+        {
+            "id": 28900,
+            "rarity": "SR",
+            "timestamp": 1756890184607
+        },
+        {
+            "id": 891,
+            "rarity": "SSR",
+            "timestamp": 1756890184607
+        },
+        {
+            "id": 289,
+            "rarity": "SSR",
+            "timestamp": 1756890184607
+        },
+        {
+            "id": 102134,
+            "rarity": "R",
+            "timestamp": 1756890184607
+        },
+        {
+            "id": 40533,
+            "rarity": "R",
+            "timestamp": 1756890185781
+        },
+        {
+            "id": 274234,
+            "rarity": "SR",
+            "timestamp": 1756890185781
+        },
+        {
+            "id": 424379,
+            "rarity": "R",
+            "timestamp": 1756890185781
+        },
+        {
+            "id": 140001,
+            "rarity": "R",
+            "timestamp": 1756890185781
+        },
+        {
+            "id": 106818,
+            "rarity": "R",
+            "timestamp": 1756890185781
+        },
+        {
+            "id": 266794,
+            "rarity": "R",
+            "timestamp": 1756890185781
+        },
+        {
+            "id": 3326,
+            "rarity": "R",
+            "timestamp": 1756890185781
+        },
+        {
+            "id": 82322,
+            "rarity": "R",
+            "timestamp": 1756890185781
+        },
+        {
+            "id": 110048,
+            "rarity": "R",
+            "timestamp": 1756890185781
+        },
+        {
+            "id": 68812,
+            "rarity": "HR",
+            "timestamp": 1756890185781
+        },
+        {
+            "id": 5649,
+            "rarity": "R",
+            "timestamp": 1756890187328
+        },
+        {
+            "id": 131891,
+            "rarity": "SR",
+            "timestamp": 1756890187328
+        },
+        {
+            "id": 251831,
+            "rarity": "R",
+            "timestamp": 1756890187328
+        },
+        {
+            "id": 294713,
+            "rarity": "SR",
+            "timestamp": 1756890187328
+        },
+        {
+            "id": 395378,
+            "rarity": "SR",
+            "timestamp": 1756890187328
+        },
+        {
+            "id": 68812,
+            "rarity": "HR",
+            "timestamp": 1756890187328
+        },
+        {
+            "id": 2567,
+            "rarity": "R",
+            "timestamp": 1756890187328
+        },
+        {
+            "id": 100403,
+            "rarity": "R",
+            "timestamp": 1756890187328
+        },
+        {
+            "id": 129988,
+            "rarity": "R",
+            "timestamp": 1756890187328
+        },
+        {
+            "id": 16235,
+            "rarity": "R",
+            "timestamp": 1756890187328
+        },
+        {
+            "id": 106818,
+            "rarity": "R",
+            "timestamp": 1756890188663
+        },
+        {
+            "id": 292,
+            "rarity": "SSR",
+            "timestamp": 1756890188663
+        },
+        {
+            "id": 174043,
+            "rarity": "SR",
+            "timestamp": 1756890188663
+        },
+        {
+            "id": 129988,
+            "rarity": "R",
+            "timestamp": 1756890188663
+        },
+        {
+            "id": 109386,
+            "rarity": "R",
+            "timestamp": 1756890188663
+        },
+        {
+            "id": 1512,
+            "rarity": "SR",
+            "timestamp": 1756890188663
+        },
+        {
+            "id": 123568,
+            "rarity": "R",
+            "timestamp": 1756890188663
+        },
+        {
+            "id": 102134,
+            "rarity": "R",
+            "timestamp": 1756890188663
+        },
+        {
+            "id": 116461,
+            "rarity": "R",
+            "timestamp": 1756890188663
+        },
+        {
+            "id": 274,
+            "rarity": "SR",
+            "timestamp": 1756890188663
+        },
+        {
+            "id": 428735,
+            "rarity": "SSR",
+            "timestamp": 1756890190010
+        },
+        {
+            "id": 265708,
+            "rarity": "SR",
+            "timestamp": 1756890190010
+        },
+        {
+            "id": 251831,
+            "rarity": "R",
+            "timestamp": 1756890190010
+        },
+        {
+            "id": 174043,
+            "rarity": "SR",
+            "timestamp": 1756890190010
+        },
+        {
+            "id": 127563,
+            "rarity": "SSR",
+            "timestamp": 1756890190010
+        },
+        {
+            "id": 69496,
+            "rarity": "R",
+            "timestamp": 1756890190010
+        },
+        {
+            "id": 47889,
+            "rarity": "R",
+            "timestamp": 1756890190010
+        },
+        {
+            "id": 110048,
+            "rarity": "R",
+            "timestamp": 1756890190010
+        },
+        {
+            "id": 3326,
+            "rarity": "R",
+            "timestamp": 1756890190010
+        },
+        {
+            "id": 137722,
+            "rarity": "SR",
+            "timestamp": 1756890190010
+        },
+        {
+            "id": 1851,
+            "rarity": "SR",
+            "timestamp": 1756966121516
+        },
+        {
+            "id": 278826,
+            "rarity": "R",
+            "timestamp": 1756966121516
+        },
+        {
+            "id": 276,
+            "rarity": "HR",
+            "timestamp": 1756966121516
+        },
+        {
+            "id": 3428,
+            "rarity": "SSR",
+            "timestamp": 1756966121516
+        },
+        {
+            "id": 259,
+            "rarity": "SSR",
+            "timestamp": 1756966121516
+        },
+        {
+            "id": 51928,
+            "rarity": "R",
+            "timestamp": 1756966121516
+        },
+        {
+            "id": 249637,
+            "rarity": "R",
+            "timestamp": 1756966121516
+        },
+        {
+            "id": 350764,
+            "rarity": "R",
+            "timestamp": 1756966121516
+        },
+        {
+            "id": 5649,
+            "rarity": "R",
+            "timestamp": 1756966121516
+        },
+        {
+            "id": 116461,
+            "rarity": "R",
+            "timestamp": 1756966121516
         }
     ],
     "characterHistory": [
@@ -4368,6 +5126,7 @@
                     "cafe",
                     "cooking"
                 ],
+                "experience": null,
                 "gifts": [
                     {
                         "itemId": "candy",
@@ -4596,9 +5355,8 @@
                     "date_amusement_park_1756817436827",
                     "special_event_1756874223752"
                 ],
-                "totalInteractions": 77,
-                "experience": null,
-                "totalExperience": null
+                "totalExperience": null,
+                "totalInteractions": 77
             }
         ],
         [

@@ -13,6 +13,7 @@ export interface PlayerState {
   activeCharacterIndex: number;
   skillCooldowns: Record<string, number>; // Key: skillId, Value: rounds remaining
   needsRotation: boolean;
+  rotationsUsedThisTurn: number; // 本回合已使用的轮换次数
 }
 
 export type GamePhase = 

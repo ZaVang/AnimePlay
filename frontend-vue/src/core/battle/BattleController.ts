@@ -6,6 +6,7 @@ import type { AnimeCard, PlayerState } from '@/types';
 import { usePlayerStore } from '@/stores/battle';
 import { useSettingsStore } from '@/stores/settings';
 import { SkillSystem } from '@/core/systems/SkillSystem';
+import { DialogueSystem } from '@/core/systems/DialogueSystem';
 
 export const BattleController = {
   async initiateClash(animeId: number, style: '友好安利' | '辛辣点评') {
@@ -47,6 +48,21 @@ export const BattleController = {
     const attackerName = attackerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
     historyStore.addLog(`${attackerName} 以 [${style}] 的方式打出了 [${attackingCard.name}]。`, 'clash');
 
+    // 触发辩论对话系统
+    const dialogueSystem = DialogueSystem.getInstance();
+    
+    // 生成攻击对话
+    const attackDialogue = dialogueSystem.generateAttackDialogue(style, attackingCard.name);
+    dialogueSystem.addDialogue(attackerId, attackDialogue, 'speech');
+    
+    // 如果是辛辣点评，有概率触发"异议！"动作效果
+    if (style === '辛辣点评' && Math.random() < 0.3) {
+      setTimeout(() => {
+        const objectionText = dialogueSystem.generateActionDialogue('objection');
+        dialogueSystem.addDialogue(attackerId, objectionText, 'action', 'objection');
+      }, 1500);
+    }
+
     // If the player is the attacker, trigger AI response.
     // If AI is the attacker, the UI will wait for player's input.
     if (attackerId === 'playerA') {
@@ -81,10 +97,34 @@ export const BattleController = {
     if (decision.shouldDefend && decision.card) {
       const defenderName = defenderId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
       historyStore.addLog(`${defenderName} 使用 [${decision.card.name}] 进行 [${decision.style}]。`, 'clash');
+      
+      // 触发AI防御对话
+      const dialogueSystem = DialogueSystem.getInstance();
+      const defenseDialogue = dialogueSystem.generateDefenseDialogue(
+        decision.style === '赞同' ? '赞同' : '反驳', 
+        gameStore.clashInfo?.attackingCard.name || '',
+        decision.card.name
+      );
+      dialogueSystem.addDialogue(defenderId, defenseDialogue, 'speech');
+      
+      // 如果是反驳，有概率触发反击动作效果
+      if (decision.style === '反驳' && Math.random() < 0.4) {
+        setTimeout(() => {
+          const counterText = dialogueSystem.generateActionDialogue('counterattack');
+          dialogueSystem.addDialogue(defenderId, counterText, 'action', 'counterattack');
+        }, 2000);
+      }
+      
       this.respondToClash(decision.card.id, decision.style);
     } else {
       const defenderName = defenderId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
       historyStore.addLog(`${defenderName} 选择不响应，跳过防御。`, 'info');
+      
+      // AI跳过防御时的对话
+      const dialogueSystem = DialogueSystem.getInstance();
+      const passDialogue = "这个...我暂时没有好的反驳...";
+      dialogueSystem.addDialogue(defenderId, passDialogue, 'speech');
+      
       this.passDefense();
     }
   },
@@ -132,7 +172,15 @@ export const BattleController = {
     const gameStore = useGameStore();
     if (!gameStore.clashInfo) return;
 
-    // 默认以“赞同”方式防守，且不出卡（强度为0）
+    // 生成跳过防御的对话 
+    const defenderId = gameStore.opponentId;
+    const dialogueSystem = DialogueSystem.getInstance();
+    const passDialogue = defenderId === 'playerA' 
+      ? "这个观点...确实有些道理..." 
+      : "这个...我暂时没有好的反驳...";
+    dialogueSystem.addDialogue(defenderId, passDialogue, 'speech');
+
+    // 默认以"赞同"方式防守，且不出卡（强度为0）
     const finalClashInfo: ClashInfo = {
       ...gameStore.clashInfo,
       defenseStyle: '赞同',
@@ -171,6 +219,23 @@ export const BattleController = {
 
     // Trigger onPlay effects for defender (minimal demo)
     await SkillSystem.onCardPlayed(defenderId, defendingCard);
+
+    // 生成玩家防御对话
+    const dialogueSystem = DialogueSystem.getInstance();
+    const defenseDialogue = dialogueSystem.generateDefenseDialogue(
+      defenseStyle === '赞同' ? '赞同' : '反驳', 
+      gameStore.clashInfo?.attackingCard.name || '',
+      defendingCard.name
+    );
+    dialogueSystem.addDialogue(defenderId, defenseDialogue, 'speech');
+    
+    // 如果是反驳，有概率触发反击动作效果
+    if (defenseStyle === '反驳' && Math.random() < 0.4) {
+      setTimeout(() => {
+        const counterText = dialogueSystem.generateActionDialogue('counterattack');
+        dialogueSystem.addDialogue(defenderId, counterText, 'action', 'counterattack');
+      }, 2000);
+    }
 
     await this.resolveClash(finalClashInfo);
   },

@@ -49,16 +49,19 @@ const characterFilters = ref({ name: '', rarity: '' });
 const selectedCard = ref<Card | null>(null);
 const selectedCardType = ref<'anime' | 'character'>('anime');
 
-// 虚拟化配置 (针对DeckEditor的紧凑布局)
+// 虚拟化配置 - 确保卡片名字完全可见
 const DECK_VIRTUAL_CONFIG = {
-  itemHeight: 120,      // 卡组编辑器中的卡片高度稍小
-  containerHeight: 500, // 收藏区域高度
-  minItemWidth: 90,     // 更紧凑的最小宽度
-  gap: 8               // 较小的间隙
+  itemHeight: 150,      // 增加卡片高度，确保名字完全显示
+  containerHeight: 550, // 收藏区域高度
+  minItemWidth: 90,     // 紧凑的最小宽度
+  gap: 10               // 间隙
 };
 
-// 虚拟化阈值 (DeckEditor通常显示的卡片较多)
-const DECK_VIRTUALIZATION_THRESHOLD = 30;
+// 虚拟化阈值 - 提高阈值，减少虚拟化触发频率
+const DECK_VIRTUALIZATION_THRESHOLD = 80;
+
+// 虚拟化开关
+const enableVirtualization = ref(true);
 
 // --- LIFECYCLE ---
 if (props.deckName) {
@@ -103,11 +106,11 @@ const ownedAnimeCards = computed(() => {
 
 // 判断是否需要虚拟化
 const shouldVirtualizeAnimeCollection = computed(() => {
-  return ownedAnimeCards.value.length > DECK_VIRTUALIZATION_THRESHOLD;
+  return enableVirtualization.value && ownedAnimeCards.value.length > DECK_VIRTUALIZATION_THRESHOLD;
 });
 
 const shouldVirtualizeCharacterCollection = computed(() => {
-  return ownedCharacterCards.value.length > DECK_VIRTUALIZATION_THRESHOLD;
+  return enableVirtualization.value && ownedCharacterCards.value.length > DECK_VIRTUALIZATION_THRESHOLD;
 });
 
 // 性能监控（开发环境）
@@ -274,6 +277,10 @@ async function handleSaveDeck() {
                         <option v-for="tag in allAnimeTags" :key="tag" :value="tag">{{ tag }}</option>
                     </select>
                 </div>
+                <label class="flex items-center space-x-2 text-gray-700 text-sm">
+                    <input type="checkbox" v-model="enableVirtualization" class="rounded">
+                    <span>启用虚拟化 (>{{ DECK_VIRTUALIZATION_THRESHOLD }}张)</span>
+                </label>
              </div>
              <div v-if="collectionTab === 'character'" class="space-y-2">
                 <input type="text" v-model="characterFilters.name" placeholder="搜索角色名称..." class="w-full p-2 border rounded">
@@ -281,6 +288,10 @@ async function handleSaveDeck() {
                     <option value="">所有稀有度</option>
                     <option v-for="r in rarityOrder" :key="r" :value="r">{{ r }}</option>
                 </select>
+                <label class="flex items-center space-x-2 text-gray-700 text-sm">
+                    <input type="checkbox" v-model="enableVirtualization" class="rounded">
+                    <span>启用虚拟化 (>{{ DECK_VIRTUALIZATION_THRESHOLD }}张)</span>
+                </label>
              </div>
 
            </div>

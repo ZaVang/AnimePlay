@@ -10,6 +10,7 @@ import type { Rarity } from '@/types/card';
 
 import { urCharacterSkillMap } from '@/data/urCharacterSkills';
 import { PersistentEffectSystem } from '../systems/PersistentEffectSystem';
+import { generateRandomAIDeck } from '@/utils/randomAIDeckGenerator';
 
 // 辅助函数：正确的数组洗牌
 function shuffleArray<T>(array: T[]): T[] {
@@ -101,8 +102,15 @@ export const TurnManager = {
     const historyStore = useHistoryStore();
     const userStore = useUserStore();
 
+    console.log('🎮 TurnManager.initializeGameWithDeck 调用');
+    console.log('📊 游戏数据状态:', {
+      animeCards: gameDataStore.allAnimeCards.length,
+      characterCards: gameDataStore.allCharacterCards.length
+    });
+
     if (!gameDataStore.allAnimeCards.length || !gameDataStore.allCharacterCards.length) {
-      console.error("Game data is not loaded. Cannot start the game.");
+      console.error("❌ 游戏数据未加载。无法开始游戏。");
+      alert('游戏数据未加载完成，请刷新页面重试。');
       return;
     }
 
@@ -122,14 +130,30 @@ export const TurnManager = {
     // Player B (AI) uses configured profile or random fallback
     const aiProfile: AIProfile = aiProfileId ? (getAIProfileById(aiProfileId) || pickDefaultAIProfile()) : pickDefaultAIProfile();
     
-    const playerB_deck = (aiProfile.anime.length
-      ? aiProfile.anime.map(id => gameDataStore.getAnimeCardById(id)).filter((c): c is AnimeCard => c !== undefined)
-      : shuffleArray([...gameDataStore.allAnimeCards]).slice(0, 30));
-    const playerB_chars = (aiProfile.character.length
-      ? aiProfile.character.map(id => gameDataStore.getCharacterCardById(id)).filter((c): c is CharacterCard => c !== undefined).map(injectSkills)
-      : shuffleArray([...gameDataStore.allCharacterCards])
-          .slice(0, 4)
-          .map(injectSkills));
+    let playerB_deck: AnimeCard[];
+    let playerB_chars: CharacterCard[];
+    
+    if (aiProfile.id === 'random-ai') {
+      // 使用随机AI卡组生成器
+      const randomDeck = generateRandomAIDeck(gameDataStore.allAnimeCards, gameDataStore.allCharacterCards);
+      playerB_deck = randomDeck.anime
+        .map(id => gameDataStore.getAnimeCardById(id))
+        .filter((c): c is AnimeCard => c !== undefined);
+      playerB_chars = randomDeck.character
+        .map(id => gameDataStore.getCharacterCardById(id))
+        .filter((c): c is CharacterCard => c !== undefined)
+        .map(injectSkills);
+    } else {
+      // 使用预配置的AI档案或简单随机
+      playerB_deck = (aiProfile.anime.length
+        ? aiProfile.anime.map(id => gameDataStore.getAnimeCardById(id)).filter((c): c is AnimeCard => c !== undefined)
+        : shuffleArray([...gameDataStore.allAnimeCards]).slice(0, 30));
+      playerB_chars = (aiProfile.character.length
+        ? aiProfile.character.map(id => gameDataStore.getCharacterCardById(id)).filter((c): c is CharacterCard => c !== undefined).map(injectSkills)
+        : shuffleArray([...gameDataStore.allCharacterCards])
+            .slice(0, 4)
+            .map(injectSkills));
+    }
     
     // Debug: Check AI deck generation and available cards
     console.log('🤖 AI卡组生成调试:', {
@@ -194,8 +218,15 @@ export const TurnManager = {
     const historyStore = useHistoryStore();
     const userStore = useUserStore();
 
+    console.log('🎲 TurnManager.initializeRandomGame 调用');
+    console.log('📊 游戏数据状态:', {
+      animeCards: gameDataStore.allAnimeCards.length,
+      characterCards: gameDataStore.allCharacterCards.length
+    });
+
     if (!gameDataStore.allAnimeCards.length || !gameDataStore.allCharacterCards.length) {
-      console.error("Game data is not loaded. Cannot start the game.");
+      console.error("❌ 游戏数据未加载。无法开始游戏。");
+      alert('游戏数据未加载完成，请刷新页面重试。');
       return;
     }
 
@@ -210,14 +241,31 @@ export const TurnManager = {
       .map(injectSkills);
 
     const aiProfile: AIProfile = aiProfileId ? (getAIProfileById(aiProfileId) || pickDefaultAIProfile()) : pickDefaultAIProfile();
-    const playerB_deck = (aiProfile.anime.length
-      ? aiProfile.anime.map(id => gameDataStore.getAnimeCardById(id)).filter((c): c is AnimeCard => c !== undefined)
-      : shuffleArray([...gameDataStore.allAnimeCards]).slice(0, 30));
-    const playerB_chars = (aiProfile.character.length
-      ? aiProfile.character.map(id => gameDataStore.getCharacterCardById(id)).filter((c): c is CharacterCard => c !== undefined).map(injectSkills)
-      : shuffleArray([...gameDataStore.allCharacterCards])
-          .slice(0, 4)
-          .map(injectSkills));
+    
+    let playerB_deck: AnimeCard[];
+    let playerB_chars: CharacterCard[];
+    
+    if (aiProfile.id === 'random-ai') {
+      // 使用随机AI卡组生成器
+      const randomDeck = generateRandomAIDeck(gameDataStore.allAnimeCards, gameDataStore.allCharacterCards);
+      playerB_deck = randomDeck.anime
+        .map(id => gameDataStore.getAnimeCardById(id))
+        .filter((c): c is AnimeCard => c !== undefined);
+      playerB_chars = randomDeck.character
+        .map(id => gameDataStore.getCharacterCardById(id))
+        .filter((c): c is CharacterCard => c !== undefined)
+        .map(injectSkills);
+    } else {
+      // 使用预配置的AI档案或简单随机
+      playerB_deck = (aiProfile.anime.length
+        ? aiProfile.anime.map(id => gameDataStore.getAnimeCardById(id)).filter((c): c is AnimeCard => c !== undefined)
+        : shuffleArray([...gameDataStore.allAnimeCards]).slice(0, 30));
+      playerB_chars = (aiProfile.character.length
+        ? aiProfile.character.map(id => gameDataStore.getCharacterCardById(id)).filter((c): c is CharacterCard => c !== undefined).map(injectSkills)
+        : shuffleArray([...gameDataStore.allCharacterCards])
+            .slice(0, 4)
+            .map(injectSkills));
+    }
 
     gameStore.startGame();
     playerStore.setupPlayers(playerA_deck, playerA_chars, playerB_deck, playerB_chars);
@@ -260,6 +308,9 @@ export const TurnManager = {
     // 2. Draw a card for the active player (at the start of their turn)
     playerStore.drawCards(gameStore.activePlayer, 1);
     
+    // 3. Reset character rotation count for the active player
+    playerStore.resetRotationsForNewTurn(gameStore.activePlayer);
+    
     // Debug: Check hand sizes after drawing
     console.log(`回合 ${gameStore.turn} 开始后手牌状态:`, {
       playerA: playerStore.playerA.hand.length,
@@ -267,7 +318,7 @@ export const TurnManager = {
       activePlayer: gameStore.activePlayer
     });
 
-    // 3. Process persistent effects at start of turn
+    // 4. Process persistent effects at start of turn
     PersistentEffectSystem.getInstance().onTurnStart(gameStore.activePlayer);
     
     // 4. Handle character skill cooldowns reduction

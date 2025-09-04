@@ -17,16 +17,16 @@ const userStore = useUserStore();
 // 当前选中的互动类型
 const selectedInteractionType = ref<'dialogue' | 'gift' | 'activity' | 'date' | null>(null);
 
-// 礼物系统数据
+// 礼物系统数据 - 重新平衡消耗和收益
 const availableGifts = ref([
   {
     id: 'flower',
     name: '鲜花',
     icon: '🌹',
     description: '美丽的玫瑰花',
-    cost: 15,
-    affectionGain: 25,
-    moodGain: 10,
+    cost: 35, // 从15增至35，提高成本
+    affectionGain: 20, // 从25降至20，降低效率
+    moodGain: 8, // 从10降至8
     rarity: 'common'
   },
   {
@@ -34,9 +34,9 @@ const availableGifts = ref([
     name: '巧克力',
     icon: '🍫',
     description: '香甜的手工巧克力',
-    cost: 20,
-    affectionGain: 30,
-    moodGain: 15,
+    cost: 45, // 从20增至45
+    affectionGain: 25, // 从30降至25
+    moodGain: 12, // 从15降至12
     rarity: 'common'
   },
   {
@@ -44,9 +44,9 @@ const availableGifts = ref([
     name: '书籍',
     icon: '📚',
     description: '有趣的小说',
-    cost: 25,
-    affectionGain: 35,
-    intelligenceGain: 5,
+    cost: 60, // 从25增至60
+    affectionGain: 30, // 从35降至30
+    intelligenceGain: 4, // 从5降至4
     rarity: 'uncommon'
   },
   {
@@ -54,9 +54,9 @@ const availableGifts = ref([
     name: '音乐CD',
     icon: '💿',
     description: '她喜欢的音乐专辑',
-    cost: 30,
-    affectionGain: 40,
-    moodGain: 20,
+    cost: 75, // 从30增至75
+    affectionGain: 35, // 从40降至35
+    moodGain: 15, // 从20降至15
     rarity: 'uncommon'
   },
   {
@@ -64,9 +64,9 @@ const availableGifts = ref([
     name: '首饰',
     icon: '💎',
     description: '精致的项链',
-    cost: 50,
-    affectionGain: 60,
-    charmGain: 10,
+    cost: 120, // 从50增至120
+    affectionGain: 50, // 从60降至50
+    charmGain: 8, // 从10降至8
     rarity: 'rare'
   },
   {
@@ -74,23 +74,23 @@ const availableGifts = ref([
     name: '毛绒玩具',
     icon: '🧸',
     description: '可爱的泰迪熊',
-    cost: 35,
-    affectionGain: 45,
-    moodGain: 25,
+    cost: 90, // 从35增至90
+    affectionGain: 40, // 从45降至40
+    moodGain: 20, // 从25降至20
     rarity: 'uncommon'
   }
 ]);
 
-// 活动系统数据
+// 活动系统数据 - 重新平衡消耗和收益
 const availableActivities = ref([
   {
     id: 'movie',
     name: '看电影',
     icon: '🎬',
     description: '一起看一部有趣的电影',
-    cost: 30,
-    affectionGain: 40,
-    moodGain: 15,
+    cost: 80, // 从30增至80
+    affectionGain: 35, // 从40降至35
+    moodGain: 12, // 从15降至12
     duration: 120,
     requirements: { affection: 100 }
   },
@@ -99,9 +99,9 @@ const availableActivities = ref([
     name: '咖啡厅',
     icon: '☕',
     description: '在安静的咖啡厅聊天',
-    cost: 25,
-    affectionGain: 35,
-    intelligenceGain: 5,
+    cost: 70, // 从25增至70
+    affectionGain: 30, // 从35降至30
+    intelligenceGain: 4, // 从5降至4
     duration: 90,
     requirements: { affection: 150 }
   },
@@ -110,9 +110,9 @@ const availableActivities = ref([
     name: '购物',
     icon: '🛍️',
     description: '一起逛街购物',
-    cost: 40,
-    affectionGain: 50,
-    charmGain: 8,
+    cost: 100, // 从40增至100
+    affectionGain: 45, // 从50降至45
+    charmGain: 6, // 从8降至6
     duration: 150,
     requirements: { affection: 200 }
   },
@@ -404,13 +404,13 @@ function quickChat() {
 
 // 快速赠送小礼物
 function quickGift() {
-  if (userStore.playerState.knowledgePoints >= 10) {
+  if (userStore.playerState.knowledgePoints >= 25) { // 从10增至25
     const smallGifts = ['flower', 'candy', 'book', 'music_cd'];
     const randomGift = smallGifts[Math.floor(Math.random() * smallGifts.length)];
     
-    userStore.playerState.knowledgePoints -= 10;
+    userStore.playerState.knowledgePoints -= 25; // 从10增至25
     userStore.giveGift(props.character.id, randomGift);
-    userStore.increaseAffection(props.character.id, 20);
+    userStore.increaseAffection(props.character.id, 15); // 从20降至15，降低效率
   }
 }
 </script>
@@ -453,11 +453,11 @@ function quickGift() {
           <div class="text-2xl mb-2 group-hover:scale-110 transition-transform">🎁</div>
           <span 
             class="text-sm font-medium"
-            :class="userStore.playerState.knowledgePoints >= 10 ? 'text-pink-400' : 'text-gray-500'"
+            :class="userStore.playerState.knowledgePoints >= 25 ? 'text-pink-400' : 'text-gray-500'"
           >
             小礼物
           </span>
-          <span class="text-xs text-gray-400">10 知识点</span>
+          <span class="text-xs text-gray-400">25 知识点</span>
         </button>
 
       </div>

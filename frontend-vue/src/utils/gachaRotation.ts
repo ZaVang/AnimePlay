@@ -183,18 +183,159 @@ export function getTimeUntilNextRotation(): { hours: number; minutes: number } {
 }
 
 /**
- * 获取当前UP池的商店物品配置 - 优化版本，复用UP池缓存
+ * 商店物品类型定义
  */
-export function getCurrentUpShopItems(gachaType: 'anime' | 'character'): Array<{ Id: number; cost: number }> {
+export interface ShopItem {
+  id: string;
+  type: 'card' | 'ticket' | 'currency' | 'booster';
+  cardId?: number;
+  cost: number;
+  name: string;
+  description: string;
+  icon?: string;
+  quantity?: number;
+  dailyLimit?: number;
+}
+
+/**
+ * 获取当前UP池的商店物品配置 - 扩展版本，包含更多商店物品类型
+ */
+export function getCurrentUpShopItems(gachaType: 'anime' | 'character'): ShopItem[] {
   try {
-    // 直接复用已缓存的UP池结果
+    // 当前UP卡牌 - 调整价格以匹配新的分解值系统
     const { urId, hrId } = getCurrentUpPool(gachaType);
-    return [
-      { Id: urId, cost: 10000 }, // UR卡价格
-      { Id: hrId, cost: 4000 }   // HR卡价格
+    const upItems: ShopItem[] = [
+      {
+        id: `up_ur_${urId}`,
+        type: 'card',
+        cardId: urId,
+        cost: 1500, // 从10000降至1500，约为7.5张UR分解价值
+        name: `今日UP UR卡牌`,
+        description: '当前轮换的UR稀有度卡牌',
+      },
+      {
+        id: `up_hr_${hrId}`,
+        type: 'card',
+        cardId: hrId,
+        cost: 800, // 从4000降至800，约为8张HR分解价值
+        name: `今日UP HR卡牌`,
+        description: '当前轮换的HR稀有度卡牌',
+      }
     ];
+
+    // 常规商店物品 - 重新平衡价格
+    const regularItems: ShopItem[] = [
+      // 抽卡券类 - 价格降低，更容易获得
+      {
+        id: `${gachaType}_ticket_1`,
+        type: 'ticket',
+        cost: 60, // 从300降至60，约为2-3张SR分解值
+        name: `${gachaType === 'anime' ? '动画' : '角色'}抽卡券`,
+        description: '用于进行抽卡的基础券种',
+        quantity: 1,
+        dailyLimit: 5,
+      },
+      {
+        id: `${gachaType}_ticket_10`,
+        type: 'ticket',
+        cost: 550, // 从2800降至550，约10张券的9折优惠
+        name: `${gachaType === 'anime' ? '动画' : '角色'}抽卡券包`,
+        description: '10张抽卡券的优惠包装',
+        quantity: 10,
+        dailyLimit: 2,
+      },
+
+      // 增强道具类 - 价格略微降低，但数量重新平衡
+      {
+        id: 'exp_booster_small',
+        type: 'booster',
+        cost: 30, // 从150降至30
+        name: '经验药水（小）',
+        description: '增加50点经验值', // 从100降至50，保持性价比
+        quantity: 50,
+        dailyLimit: 10,
+      },
+      {
+        id: 'exp_booster_large',
+        type: 'booster',
+        cost: 120, // 从500降至120
+        name: '经验药水（大）',
+        description: '增加250点经验值', // 从500降至250，保持性价比
+        quantity: 250,
+        dailyLimit: 3,
+      },
+
+      // 货币兑换类 - 重新设计为合理的循环经济
+      {
+        id: 'knowledge_pack_small',
+        type: 'currency',
+        cost: 40, // 从50降至40
+        name: '知识点包（小）',
+        description: '额外获得50知识点', // 从200降至50，投资回报率25%
+        quantity: 50,
+        dailyLimit: 20,
+      },
+      {
+        id: 'knowledge_pack_large',
+        type: 'currency',
+        cost: 160, // 从200降至160
+        name: '知识点包（大）',
+        description: '额外获得200知识点', // 从1000降至200，投资回报率25%
+        quantity: 200,
+        dailyLimit: 5,
+      }
+    ];
+
+    // 组合所有物品
+    return [...upItems, ...regularItems];
   } catch (error) {
     console.warn('Failed to get UP shop items:', error);
+    return [];
+  }
+}
+
+/**
+ * 获取历史UP卡牌商店物品（过去一周的UP卡牌）
+ */
+export function getHistoricalUpShopItems(gachaType: 'anime' | 'character'): ShopItem[] {
+  try {
+    const { urCards, hrCards } = getCachedFilteredCards(gachaType);
+    const historicalItems: ShopItem[] = [];
+    
+    // 获取过去7天的UP卡牌
+    for (let i = 1; i <= 7; i++) {
+      const date = new Date();
+      date.setDate(date.getDate() - i);
+      
+      // 计算该日期的UP卡牌索引
+      const urIndex = (date.getDate() + date.getMonth()) % urCards.length;
+      const hrIndex = (date.getDate() * 2 + date.getMonth() * 3) % hrCards.length;
+      
+      if (urCards[urIndex] && hrCards[hrIndex]) {
+        historicalItems.push(
+          {
+            id: `historical_ur_${urCards[urIndex].id}_${i}`,
+            type: 'card',
+            cardId: urCards[urIndex].id,
+            cost: 1800, // 从12000降至1800，比当前UP贵20%
+            name: `过往UP UR卡牌`,
+            description: `${i}天前的UP卡牌 (${date.toLocaleDateString()})`,
+          },
+          {
+            id: `historical_hr_${hrCards[hrIndex].id}_${i}`,
+            type: 'card',
+            cardId: hrCards[hrIndex].id,
+            cost: 960, // 从5000降至960，比当前UP贵20%
+            name: `过往UP HR卡牌`,
+            description: `${i}天前的UP卡牌 (${date.toLocaleDateString()})`,
+          }
+        );
+      }
+    }
+    
+    return historicalItems;
+  } catch (error) {
+    console.warn('Failed to get historical UP shop items:', error);
     return [];
   }
 }

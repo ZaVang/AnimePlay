@@ -38,9 +38,13 @@ async function handleUseSkill(skill: Skill) {
 }
 
 function handleRotate() {
-  playerStore.setActiveCharacter(props.playerId, selectedCharacterIndex.value);
-  gameStore.addNotification(`已轮换主辩手为: ${selectedCharacter.value?.name}`);
-  closeModal();
+  const success = playerStore.setActiveCharacter(props.playerId, selectedCharacterIndex.value);
+  if (success) {
+    gameStore.addNotification(`已轮换主辩手为: ${selectedCharacter.value?.name}`);
+    closeModal();
+  } else {
+    gameStore.addNotification('本回合已经轮换过主辩手，无法再次轮换', 'warning');
+  }
 }
 
 function closeModal() {
