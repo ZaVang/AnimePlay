@@ -13,8 +13,8 @@ import TopicBiasBar from '@/components/battle/arena/TopicBiasBar.vue';
 import EndTurnButton from '@/components/battle/ui/EndTurnButton.vue';
 import NotificationDisplay from '@/components/battle/ui/NotificationDisplay.vue';
 import BattleLog from '@/components/battle/ui/BattleLog.vue';
-import InteractionManager from '@/components/battle/interaction/InteractionManager.vue';
-import BattleDialogueManager from '@/components/battle/dialogue/BattleDialogueManager.vue';
+import InteractionManager from '@/components/battle/InteractionManager.vue';
+import BattleDialogueManager from '@/components/battle/BattleDialogueManager.vue';
 import BattleRulesModal from '@/components/battle/ui/BattleRulesModal.vue';
 import { BattleController } from '@/core/battle/BattleController';
 

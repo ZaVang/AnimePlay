@@ -3,7 +3,6 @@ import { computed, ref } from 'vue';
 import { useGachaStore, type DrawnCard } from './gachaStore';
 import { useGameDataStore } from './gameDataStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
-import { type Card, type Rarity } from '@/types/card';
 import { type ShopItem } from '@/utils/gachaRotation';
 
 // --- Type Definitions ---
@@ -732,10 +731,7 @@ export const useUserStore = defineStore('user', () => {
     if (!isLoggedIn.value) return;
     
     const nurtureData = getNurtureData(characterId);
-    nurtureData.gifts.push({
-      itemId: giftId,
-      timestamp: Date.now()
-    });
+    nurtureData.gifts.push(giftId);
     
     // TODO: 根据角色偏好计算礼物效果
     // TODO: 实现礼物系统和效果计算

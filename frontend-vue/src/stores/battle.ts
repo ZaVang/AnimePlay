@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia';
 import type { PlayerState, AnimeCard, CharacterCard, Card } from '@/types';
+import type { GameState, ClashInfo, Notification } from '@/types/battle';
 import { ResourceManager } from '@/core/systems/ResourceManager';
 
 // Helper function to create a default player state
@@ -19,6 +20,87 @@ const createDefaultPlayer = (id: 'playerA' | 'playerB', name: string): PlayerSta
   rotationsUsedThisTurn: 0,
 });
 
+// =============================================================================
+// GAME STORE
+// =============================================================================
+export const useGameStore = defineStore('game', {
+  state: (): GameState & { notifications: Notification[], clashInfo: ClashInfo | null } => ({
+    turn: 1,
+    activePlayer: 'playerA',
+    phase: 'setup',
+    topicBias: 0,
+    winner: null,
+    notifications: [],
+    clashInfo: null, // State for the current battle clash
+  }),
+  actions: {
+    addNotification(message: string, type: 'info' | 'warning' = 'info') {
+      const id = Date.now();
+      this.notifications.push({ id, message, type });
+      setTimeout(() => {
+        this.removeNotification(id);
+      }, 1000);
+    },
+    removeNotification(id: number) {
+      this.notifications = this.notifications.filter(n => n.id !== id);
+    },
+    startGame() {
+      this.turn = 1;
+      this.activePlayer = 'playerA';
+      this.phase = 'draw';
+      this.topicBias = 0;
+      this.clashInfo = null; // Reset clash info on new game
+      console.log('Game started!');
+    },
+    nextTurn() {
+      this.turn++;
+      this.activePlayer = this.activePlayer === 'playerA' ? 'playerB' : 'playerA';
+      this.phase = 'draw';
+      this.clashInfo = null; // Clear clash info at the end of a turn
+      console.log(`Turn ${this.turn}, ${this.activePlayer}'s turn.`);
+    },
+    setPhase(phase: GameState['phase']) {
+      this.phase = phase;
+      console.log(`Phase changed to: ${phase}`);
+    },
+    updateTopicBias(change: number) {
+      const newBias = this.topicBias + change;
+      this.topicBias = Math.max(-10, Math.min(10, newBias));
+    },
+    setWinner(winner: 'playerA' | 'playerB' | 'draw' | null) {
+      this.winner = winner;
+    },
+    // Actions to manage the clash state
+    setClash(clash: ClashInfo) {
+      this.clashInfo = clash;
+    },
+    clearClash() {
+      this.clashInfo = null;
+    },
+    // Reset game to initial state
+    resetGame() {
+      this.turn = 1;
+      this.activePlayer = 'playerA';
+      this.phase = 'setup';
+      this.topicBias = 0;
+      this.winner = null;
+      this.clashInfo = null;
+      this.notifications = [];
+      console.log('Game state reset to initial values');
+    },
+  },
+  getters: {
+    isGameOver: (state) => state.phase === 'game_over',
+    opponentId: (state): 'playerA' | 'playerB' => {
+      return state.activePlayer === 'playerA' ? 'playerB' : 'playerA';
+    },
+    isSetupPhase: (state) => state.phase === 'setup',
+  },
+});
+
+// =============================================================================
+// PLAYER STORE
+// =============================================================================
 export const usePlayerStore = defineStore('players', {
   state: () => ({
     playerA: createDefaultPlayer('playerA', 'Player 1'),
@@ -219,6 +301,28 @@ export const usePlayerStore = defineStore('players', {
     },
     getSkillCooldown: (state) => (playerId: 'playerA' | 'playerB', skillId: string): number => {
       return state[playerId].skillCooldowns[skillId] || 0;
+    }
+  }
+});
+
+// =============================================================================
+// HISTORY STORE  
+// =============================================================================
+export const useHistoryStore = defineStore('battleHistory', {
+  state: () => ({
+    log: [] as string[],
+  }),
+  actions: {
+    addEntry(entry: string) {
+      this.log.push(entry);
+      console.log(`[Battle Log] ${entry}`);
+    },
+    // Keep the old method name for compatibility
+    addLog(entry: string) {
+      this.addEntry(entry);
+    },
+    clearLog() {
+      this.log = [];
     }
   }
 });

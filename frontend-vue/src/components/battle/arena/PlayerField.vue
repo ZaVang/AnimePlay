@@ -2,7 +2,7 @@
 import { computed } from 'vue';
 import { usePlayerStore } from '@/stores/battle';
 import CharacterLineup from '@/components/battle/character/CharacterLineup.vue';
-import HandDisplay from '@/components/battle/anime/HandDisplay.vue';
+import HandDisplay from '@/components/battle/HandDisplay.vue';
 
 const props = defineProps<{
   playerId: 'playerA' | 'playerB';

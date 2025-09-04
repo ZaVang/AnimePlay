@@ -48,9 +48,9 @@
         },
         "level": 10,
         "knowledgePoints": 17117,
-        "animeGachaTickets": 12,
+        "animeGachaTickets": 2,
         "characterGachaTickets": 32,
-        "exp": 26430,
+        "exp": 26540,
         "savedDecks": {
             "test": {
                 "anime": [
@@ -195,7 +195,7 @@
         [
             373247,
             {
-                "count": 1
+                "count": 2
             }
         ],
         [
@@ -381,7 +381,7 @@
         [
             131891,
             {
-                "count": 1
+                "count": 2
             }
         ],
         [
@@ -555,7 +555,7 @@
         [
             115932,
             {
-                "count": 1
+                "count": 2
             }
         ],
         [
@@ -663,7 +663,7 @@
         [
             420628,
             {
-                "count": 1
+                "count": 2
             }
         ],
         [
@@ -711,7 +711,7 @@
         [
             419846,
             {
-                "count": 1
+                "count": 2
             }
         ],
         [
@@ -801,7 +801,7 @@
         [
             16235,
             {
-                "count": 1
+                "count": 2
             }
         ],
         [
@@ -843,7 +843,7 @@
         [
             2464,
             {
-                "count": 1
+                "count": 2
             }
         ],
         [
@@ -866,6 +866,24 @@
         ],
         [
             263750,
+            {
+                "count": 1
+            }
+        ],
+        [
+            282433,
+            {
+                "count": 1
+            }
+        ],
+        [
+            487630,
+            {
+                "count": 1
+            }
+        ],
+        [
+            126173,
             {
                 "count": 1
             }
@@ -1618,8 +1636,8 @@
         ]
     ],
     "animePity": {
-        "pullsSinceLastHR": 7,
-        "totalPulls": 240
+        "pullsSinceLastHR": 17,
+        "totalPulls": 250
     },
     "characterPity": {
         "pullsSinceLastHR": 36,
