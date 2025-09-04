@@ -27,7 +27,7 @@ const bondLevel = computed(() => {
     maxReached: true
   };
   if (affection >= 800) return { 
-    level: '深度羁绊', 
+    level: '命定之人', 
     color: 'text-red-400', 
     bgColor: 'bg-red-500/20', 
     icon: '🌟',
@@ -35,7 +35,7 @@ const bondLevel = computed(() => {
     maxReached: false
   };
   if (affection >= 600) return { 
-    level: '信任伙伴', 
+    level: '肝胆相照', 
     color: 'text-purple-400', 
     bgColor: 'bg-purple-500/20', 
     icon: '💜',
@@ -43,7 +43,7 @@ const bondLevel = computed(() => {
     maxReached: false
   };
   if (affection >= 400) return { 
-    level: '亲密战友', 
+    level: '心照不宣', 
     color: 'text-blue-400', 
     bgColor: 'bg-blue-500/20', 
     icon: '💙',
@@ -51,7 +51,7 @@ const bondLevel = computed(() => {
     maxReached: false
   };
   if (affection >= 200) return { 
-    level: '熟悉伙伴', 
+    level: '志同道合', 
     color: 'text-green-400', 
     bgColor: 'bg-green-500/20', 
     icon: '💚',
@@ -59,7 +59,7 @@ const bondLevel = computed(() => {
     maxReached: false
   };
   if (affection >= 100) return { 
-    level: '初步羁绊', 
+    level: '萍水相逢', 
     color: 'text-yellow-400', 
     bgColor: 'bg-yellow-500/20', 
     icon: '💛',
@@ -105,16 +105,24 @@ const moodStatus = computed(() => {
 
 // 获取事件图标
 function getEventIcon(event: string): string {
+  if (event.startsWith('campus_')) return '🎓';
   if (event.startsWith('date_')) return '💕';
   if (event.startsWith('special_event_')) return '⭐';
   if (event.includes('movie')) return '🎬';
   if (event.includes('cafe')) return '☕';
   if (event.includes('shopping')) return '🛍️';
+  if (event.includes('study')) return '📚';
+  if (event.includes('festival')) return '🎪';
+  if (event.includes('club')) return '🎭';
   return '🌟';
 }
 
 // 获取事件描述
 function getEventDescription(event: string): string {
+  if (event.startsWith('campus_study_together')) return '一起在图书馆学习';
+  if (event.startsWith('campus_campus_walk')) return '校园里悠闲散步';
+  if (event.startsWith('campus_school_festival')) return '参加校园文化祭';
+  if (event.startsWith('campus_club_activity')) return '参加社团活动';
   if (event.startsWith('date_romantic_dinner')) return '共度浪漫晚餐';
   if (event.startsWith('date_beach_walk')) return '海边漫步';
   if (event.startsWith('date_amusement_park')) return '游乐园约会';

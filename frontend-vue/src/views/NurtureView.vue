@@ -105,24 +105,30 @@ function endDialogue() {
         </div>
 
         <!-- 角色已选择状态 -->
-        <div v-if="selectedCharacter" class="grid grid-cols-1 xl:grid-cols-3 gap-8">
+        <div v-if="selectedCharacter" class="grid grid-cols-1 xl:grid-cols-3 gap-8" style="height: 800px;">
           
           <!-- 左侧：角色资料 -->
-          <div class="xl:col-span-1">
-            <CharacterProfile :character="selectedCharacter" />
+          <div class="xl:col-span-1 h-full">
+            <div class="h-full overflow-y-auto">
+              <CharacterProfile :character="selectedCharacter" />
+            </div>
           </div>
 
           <!-- 中间：交互面板 -->
-          <div class="xl:col-span-1">
-            <InteractionPanel 
-              :character="selectedCharacter"
-              @start-dialogue="startDialogue"
-            />
+          <div class="xl:col-span-1 h-full">
+            <div class="h-full overflow-y-auto">
+              <InteractionPanel 
+                :character="selectedCharacter"
+                @start-dialogue="startDialogue"
+              />
+            </div>
           </div>
 
           <!-- 右侧：养成行动 -->
-          <div class="xl:col-span-1">
-            <NurtureActions :character="selectedCharacter" />
+          <div class="xl:col-span-1 h-full">
+            <div class="h-full overflow-y-auto">
+              <NurtureActions :character="selectedCharacter" />
+            </div>
           </div>
 
         </div>

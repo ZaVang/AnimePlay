@@ -207,7 +207,7 @@ const specialActivities = computed(() => [
     name: '特殊事件',
     icon: '🌟',
     description: '触发角色专属的特殊剧情',
-    effect: '好感度大幅提升',
+    effect: '羁绊值大幅提升',
     cost: 50,
     available: props.character.nurtureData.affection >= 500,
     color: 'yellow'
@@ -536,7 +536,7 @@ onUnmounted(() => {
             <!-- 需求条件 -->
             <div class="mb-3 text-xs text-gray-400">
               <span>需要: </span>
-              <span v-if="program.requirements.affection">好感度{{ program.requirements.affection }}+ </span>
+              <span v-if="program.requirements.affection">羁绊值{{ program.requirements.affection }}+ </span>
               <span v-if="program.requirements.strength">体力{{ program.requirements.strength }}+ </span>
               <span v-if="program.requirements.intelligence">智力{{ program.requirements.intelligence }}+ </span>
               <span v-if="program.requirements.charm">魅力{{ program.requirements.charm }}+ </span>

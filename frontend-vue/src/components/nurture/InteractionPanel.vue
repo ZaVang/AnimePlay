@@ -15,7 +15,7 @@ const emit = defineEmits<{
 const userStore = useUserStore();
 
 // 当前选中的互动类型
-const selectedInteractionType = ref<'dialogue' | 'gift' | 'activity' | 'date' | null>(null);
+const selectedInteractionType = ref<'dialogue' | 'gift' | 'activity' | 'campus_activity' | null>(null);
 
 // 礼物系统数据 - 重新平衡消耗和收益
 const availableGifts = ref([
@@ -140,42 +140,55 @@ const availableActivities = ref([
   }
 ]);
 
-// 约会场所数据
-const dateLocations = ref([
+// 校园活动数据
+const campusActivities = ref([
   {
-    id: 'romantic_dinner',
-    name: '浪漫晚餐',
-    icon: '🕯️',
-    description: '在高级餐厅享受烛光晚餐',
-    cost: 80,
-    affectionGain: 100,
-    moodGain: 30,
-    charmGain: 10,
-    duration: 180,
+    id: 'study_together',
+    name: '一起学习',
+    icon: '📚',
+    description: '在图书馆一起温习功课',
+    cost: 60,
+    affectionGain: 80,
+    moodGain: 20,
+    intelligenceGain: 8,
+    duration: 120,
     requirements: { affection: 600, mood: 70 }
   },
   {
-    id: 'beach_walk',
-    name: '海边漫步',
-    icon: '🏖️',
-    description: '在夕阳下沿着海滩散步',
-    cost: 60,
-    affectionGain: 80,
+    id: 'campus_walk',
+    name: '校园散步',
+    icon: '🌸',
+    description: '在樱花飞舞的校园里悠闲漫步',
+    cost: 40,
+    affectionGain: 60,
     moodGain: 25,
-    strengthGain: 5,
-    duration: 150,
+    strengthGain: 3,
+    duration: 90,
     requirements: { affection: 500, mood: 60 }
   },
   {
-    id: 'amusement_park',
-    name: '游乐园',
-    icon: '🎡',
-    description: '在游乐园度过快乐时光',
-    cost: 70,
-    affectionGain: 90,
-    moodGain: 40,
-    duration: 200,
+    id: 'school_festival',
+    name: '校园祭',
+    icon: '🎪',
+    description: '参加热闹的校园文化祭',
+    cost: 80,
+    affectionGain: 100,
+    moodGain: 35,
+    charmGain: 5,
+    duration: 180,
     requirements: { affection: 650, mood: 80 }
+  },
+  {
+    id: 'club_activity',
+    name: '社团活动',
+    icon: '🎭',
+    description: '参加社团的日常活动',
+    cost: 50,
+    affectionGain: 70,
+    moodGain: 20,
+    charmGain: 6,
+    duration: 100,
+    requirements: { affection: 400, mood: 50 }
   }
 ]);
 
@@ -213,11 +226,11 @@ const availableInteractions = computed(() => {
       color: 'green'
     },
     {
-      id: 'date',
-      name: '约会',
-      icon: '💕',
-      description: '特殊的约会时光',
-      available: affection >= 600 && mood >= 70,
+      id: 'campus_activity',
+      name: '校园活动',
+      icon: '🎓',
+      description: '参加校园里的特色活动',
+      available: affection >= 400 && mood >= 50,
       cost: { type: 'knowledge', amount: 50 },
       color: 'purple'
     }
@@ -236,8 +249,8 @@ function executeInteraction(interactionId: string) {
     case 'activity':
       openActivitySelection();
       break;
-    case 'date':
-      startDate();
+    case 'campus_activity':
+      startCampusActivity();
       break;
   }
 }
@@ -252,9 +265,9 @@ function openActivitySelection() {
   selectedInteractionType.value = 'activity';
 }
 
-// 开始约会
-function startDate() {
-  selectedInteractionType.value = 'date';
+// 开始校园活动
+function startCampusActivity() {
+  selectedInteractionType.value = 'campus_activity';
 }
 
 // 关闭选择界面
@@ -299,7 +312,7 @@ function doActivity(activity: any) {
   const affection = props.character.nurtureData.affection;
   
   if (affection < activity.requirements.affection) {
-    userStore.addLog('好感度不足，无法进行此活动！', 'warning');
+    userStore.addLog('羁绊值不足，无法进行此活动！', 'warning');
     return;
   }
   
@@ -336,42 +349,45 @@ function doActivity(activity: any) {
   closeSelection();
 }
 
-// 进行约会
-function goOnDate(location: any) {
+// 进行校园活动
+function doCampusActivity(activity: any) {
   const affection = props.character.nurtureData.affection;
   const mood = props.character.nurtureData.attributes.mood;
   
-  if (affection < location.requirements.affection || mood < location.requirements.mood) {
-    userStore.addLog('条件不满足，无法进行约会！', 'warning');
+  if (affection < activity.requirements.affection || mood < activity.requirements.mood) {
+    userStore.addLog('条件不满足，无法参加校园活动！', 'warning');
     return;
   }
   
-  if (userStore.playerState.knowledgePoints < location.cost) {
-    userStore.addLog('知识点不足，无法约会！', 'warning');
+  if (userStore.playerState.knowledgePoints < activity.cost) {
+    userStore.addLog('知识点不足，无法参加活动！', 'warning');
     return;
   }
 
   // 扣除知识点
-  userStore.playerState.knowledgePoints -= location.cost;
+  userStore.playerState.knowledgePoints -= activity.cost;
   
-  // 增加好感度
-  userStore.increaseAffection(props.character.id, location.affectionGain);
+  // 增加羁绊值
+  userStore.increaseAffection(props.character.id, activity.affectionGain);
   
   // 应用其他效果
   const nurtureData = userStore.getNurtureData(props.character.id);
-  if (location.moodGain) {
-    nurtureData.attributes.mood = Math.min(100, nurtureData.attributes.mood + location.moodGain);
+  if (activity.moodGain) {
+    nurtureData.attributes.mood = Math.min(100, nurtureData.attributes.mood + activity.moodGain);
   }
-  if (location.charmGain) {
-    userStore.enhanceAttribute(props.character.id, 'charm', location.charmGain);
+  if (activity.charmGain) {
+    userStore.enhanceAttribute(props.character.id, 'charm', activity.charmGain);
   }
-  if (location.strengthGain) {
-    userStore.enhanceAttribute(props.character.id, 'strength', location.strengthGain);
+  if (activity.strengthGain) {
+    userStore.enhanceAttribute(props.character.id, 'strength', activity.strengthGain);
+  }
+  if (activity.intelligenceGain) {
+    userStore.enhanceAttribute(props.character.id, 'intelligence', activity.intelligenceGain);
   }
   
   // 记录特殊事件
-  nurtureData.specialEvents.push(`date_${location.id}_${Date.now()}`);
-  userStore.addLog(`${props.character.name} 和你在${location.name}度过了浪漫的时光！`, 'success');
+  nurtureData.specialEvents.push(`campus_${activity.id}_${Date.now()}`);
+  userStore.addLog(`${props.character.name} 和你一起参加了${activity.name}，增进了彼此的了解！`, 'success');
   
   closeSelection();
 }
@@ -381,11 +397,11 @@ function isActivityAvailable(activity: any) {
   return props.character.nurtureData.affection >= activity.requirements.affection;
 }
 
-// 检查约会是否可用
-function isDateAvailable(location: any) {
+// 检查校园活动是否可用
+function isCampusActivityAvailable(activity: any) {
   const affection = props.character.nurtureData.affection;
   const mood = props.character.nurtureData.attributes.mood;
-  return affection >= location.requirements.affection && mood >= location.requirements.mood;
+  return affection >= activity.requirements.affection && mood >= activity.requirements.mood;
 }
 
 // 简单的聊天互动
@@ -436,7 +452,7 @@ function quickGift() {
         >
           <div class="text-2xl mb-2 group-hover:scale-110 transition-transform">💬</div>
           <span class="text-sm font-medium text-blue-400">随便聊聊</span>
-          <span class="text-xs text-gray-400">+5-15 好感度</span>
+          <span class="text-xs text-gray-400">+5-15 羁绊值</span>
         </button>
 
         <!-- 快速送礼 -->
@@ -514,9 +530,9 @@ function quickGift() {
                     知识点不足
                   </span>
                   <span v-else-if="interaction.id === 'activity' && character.nurtureData.affection < 100">
-                    好感度不足
+                    羁绊值不足
                   </span>
-                  <span v-else-if="interaction.id === 'date'">
+                  <span v-else-if="interaction.id === 'campus_activity'">
                     条件不满足
                   </span>
                 </div>
@@ -614,7 +630,7 @@ function quickGift() {
             
             <!-- 需求条件 -->
             <div class="text-xs text-gray-400 mb-2">
-              需要好感度: {{ activity.requirements.affection }}+
+              需要羁绊值: {{ activity.requirements.affection }}+
             </div>
             
             <!-- 效果预览 -->
@@ -629,52 +645,53 @@ function quickGift() {
       </div>
     </div>
 
-    <!-- 约会选择模态框 -->
-    <div v-if="selectedInteractionType === 'date'" class="fixed inset-0 bg-black/75 flex items-center justify-center z-50 p-4" @click.self="closeSelection">
+    <!-- 校园活动选择模态框 -->
+    <div v-if="selectedInteractionType === 'campus_activity'" class="fixed inset-0 bg-black/75 flex items-center justify-center z-50 p-4" @click.self="closeSelection">
       <div class="bg-gray-800 p-6 rounded-lg shadow-xl max-w-2xl w-full border border-gray-700 max-h-[80vh] overflow-y-auto">
         <div class="flex justify-between items-center mb-4">
           <h3 class="text-xl font-bold text-white flex items-center">
-            <span class="text-2xl mr-2">💕</span>
-            选择约会地点
+            <span class="text-2xl mr-2">🎓</span>
+            选择校园活动
           </h3>
           <button @click="closeSelection" class="text-gray-400 hover:text-white text-2xl font-bold">&times;</button>
         </div>
         
         <div class="space-y-4">
           <div 
-            v-for="location in dateLocations" 
-            :key="location.id"
-            class="group cursor-pointer bg-gradient-to-r from-pink-600/10 to-purple-600/10 rounded-lg p-4 border transition-all duration-300"
-            :class="isDateAvailable(location)
-              ? 'hover:from-pink-600/20 hover:to-purple-600/20 border-pink-600/30 hover:border-pink-600/50'
+            v-for="activity in campusActivities" 
+            :key="activity.id"
+            class="group cursor-pointer bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-lg p-4 border transition-all duration-300"
+            :class="isCampusActivityAvailable(activity)
+              ? 'hover:from-blue-600/20 hover:to-purple-600/20 border-blue-600/30 hover:border-blue-600/50'
               : 'border-gray-700 opacity-50 cursor-not-allowed from-gray-700/10 to-gray-700/10'"
-            @click="isDateAvailable(location) && goOnDate(location)"
+            @click="isCampusActivityAvailable(activity) && doCampusActivity(activity)"
           >
             <div class="flex items-center justify-between mb-3">
               <div class="flex items-center">
-                <div class="text-3xl mr-4">{{ location.icon }}</div>
+                <div class="text-3xl mr-4">{{ activity.icon }}</div>
                 <div>
-                  <h4 class="font-medium text-white text-lg">{{ location.name }}</h4>
-                  <p class="text-sm text-gray-400">{{ location.description }}</p>
+                  <h4 class="font-medium text-white text-lg">{{ activity.name }}</h4>
+                  <p class="text-sm text-gray-400">{{ activity.description }}</p>
                 </div>
               </div>
               <div class="text-right">
-                <div class="text-sm font-medium text-pink-400">+{{ location.affectionGain }}</div>
-                <div class="text-xs text-gray-400">💎 {{ location.cost }}</div>
-                <div class="text-xs text-gray-400">{{ location.duration }}分钟</div>
+                <div class="text-sm font-medium text-purple-400">+{{ activity.affectionGain }}</div>
+                <div class="text-xs text-gray-400">💎 {{ activity.cost }}</div>
+                <div class="text-xs text-gray-400">{{ activity.duration }}分钟</div>
               </div>
             </div>
             
             <!-- 需求条件 -->
             <div class="text-xs text-gray-400 mb-2">
-              需要好感度: {{ location.requirements.affection }}+, 心情: {{ location.requirements.mood }}+
+              需要羁绊值: {{ activity.requirements.affection }}+, 心情: {{ activity.requirements.mood }}+
             </div>
             
             <!-- 效果预览 -->
             <div class="text-xs text-gray-300 flex space-x-4">
-              <div v-if="location.moodGain">心情 +{{ location.moodGain }}</div>
-              <div v-if="location.charmGain">魅力 +{{ location.charmGain }}</div>
-              <div v-if="location.strengthGain">体力 +{{ location.strengthGain }}</div>
+              <div v-if="activity.moodGain">心情 +{{ activity.moodGain }}</div>
+              <div v-if="activity.charmGain">魅力 +{{ activity.charmGain }}</div>
+              <div v-if="activity.strengthGain">体力 +{{ activity.strengthGain }}</div>
+              <div v-if="activity.intelligenceGain">智力 +{{ activity.intelligenceGain }}</div>
             </div>
           </div>
         </div>
