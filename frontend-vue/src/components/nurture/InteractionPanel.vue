@@ -432,48 +432,46 @@ function quickGift() {
 </script>
 
 <template>
-  <div class="bg-gray-800 rounded-lg shadow-lg border border-gray-700 p-6">
-    <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
-      <svg class="w-6 h-6 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-3.582 8-8 8a8.013 8.013 0 01-7-4.027A11.906 11.906 0 013 12c0-2.517.615-4.885 1.704-6.971A8.013 8.013 0 0112 4c4.418 0 8 3.582 8 8z"></path>
-      </svg>
-      互动面板
-    </h2>
+  <div class="p-6">
 
     <!-- 快速互动按钮 -->
-    <div class="mb-8">
+    <div class="mb-6">
       <h3 class="text-lg font-medium text-gray-300 mb-4">快速互动</h3>
-      <div class="grid grid-cols-2 gap-3">
+      <div class="grid grid-cols-2 gap-4">
         
         <!-- 快速聊天 -->
         <button 
           @click="quickChat"
-          class="flex flex-col items-center p-4 bg-blue-600/20 hover:bg-blue-600/30 border border-blue-600/30 rounded-lg transition-all duration-300 group"
+          class="flex items-center p-4 bg-blue-600/20 hover:bg-blue-600/30 border border-blue-600/30 rounded-lg transition-all duration-300 group"
         >
-          <div class="text-2xl mb-2 group-hover:scale-110 transition-transform">💬</div>
-          <span class="text-sm font-medium text-blue-400">随便聊聊</span>
-          <span class="text-xs text-gray-400">+5-15 羁绊值</span>
+          <div class="text-2xl mr-3 group-hover:scale-110 transition-transform">💬</div>
+          <div class="flex-1">
+            <div class="text-sm font-medium text-blue-400 mb-1">随便聊聊</div>
+            <div class="text-xs text-gray-400">+5-15 羁绊值</div>
+          </div>
         </button>
 
         <!-- 快速送礼 -->
         <button 
           @click="quickGift"
-          :disabled="userStore.playerState.knowledgePoints < 10"
+          :disabled="userStore.playerState.knowledgePoints < 25"
           :class="[
-            'flex flex-col items-center p-4 border rounded-lg transition-all duration-300 group',
-            userStore.playerState.knowledgePoints >= 10
+            'flex items-center p-4 border rounded-lg transition-all duration-300 group',
+            userStore.playerState.knowledgePoints >= 25
               ? 'bg-pink-600/20 hover:bg-pink-600/30 border-pink-600/30'
               : 'bg-gray-700/50 border-gray-600/50 opacity-50 cursor-not-allowed'
           ]"
         >
-          <div class="text-2xl mb-2 group-hover:scale-110 transition-transform">🎁</div>
-          <span 
-            class="text-sm font-medium"
-            :class="userStore.playerState.knowledgePoints >= 25 ? 'text-pink-400' : 'text-gray-500'"
-          >
-            小礼物
-          </span>
-          <span class="text-xs text-gray-400">25 知识点</span>
+          <div class="text-2xl mr-3 group-hover:scale-110 transition-transform">🎁</div>
+          <div class="flex-1">
+            <div 
+              class="text-sm font-medium mb-1"
+              :class="userStore.playerState.knowledgePoints >= 25 ? 'text-pink-400' : 'text-gray-500'"
+            >
+              小礼物
+            </div>
+            <div class="text-xs text-gray-400">25 知识点</div>
+          </div>
         </button>
 
       </div>
@@ -482,64 +480,57 @@ function quickGift() {
     <!-- 主要互动选项 -->
     <div>
       <h3 class="text-lg font-medium text-gray-300 mb-4">深度互动</h3>
-      <div class="space-y-3">
+      <div class="grid grid-cols-2 gap-4">
         
-        <div 
+        <button
           v-for="interaction in availableInteractions" 
           :key="interaction.id"
-          class="group"
+          @click="executeInteraction(interaction.id)"
+          :disabled="!interaction.available"
+          :class="[
+            'flex items-center p-4 rounded-lg border transition-all duration-300 group',
+            interaction.available 
+              ? `bg-${interaction.color}-600/10 hover:bg-${interaction.color}-600/20 border-${interaction.color}-600/30 hover:border-${interaction.color}-600/50`
+              : 'bg-gray-700/30 border-gray-600/50 opacity-50 cursor-not-allowed'
+          ]"
         >
-          <button
-            @click="executeInteraction(interaction.id)"
-            :disabled="!interaction.available"
-            :class="[
-              'w-full text-left p-4 rounded-lg border transition-all duration-300',
-              interaction.available 
-                ? `bg-${interaction.color}-600/10 hover:bg-${interaction.color}-600/20 border-${interaction.color}-600/30 hover:border-${interaction.color}-600/50`
-                : 'bg-gray-700/30 border-gray-600/50 opacity-50 cursor-not-allowed'
-            ]"
-          >
-            <div class="flex items-center justify-between">
-              <div class="flex items-center">
-                <div class="text-2xl mr-3 group-hover:scale-110 transition-transform">
-                  {{ interaction.icon }}
-                </div>
-                <div>
-                  <h4 
-                    class="font-medium"
-                    :class="interaction.available ? 'text-white' : 'text-gray-500'"
-                  >
-                    {{ interaction.name }}
-                  </h4>
-                  <p 
-                    class="text-sm"
-                    :class="interaction.available ? 'text-gray-400' : 'text-gray-500'"
-                  >
-                    {{ interaction.description }}
-                  </p>
-                </div>
+          <div class="text-2xl mr-3 group-hover:scale-110 transition-transform">
+            {{ interaction.icon }}
+          </div>
+          <div class="flex-1">
+            <h4 
+              class="font-medium text-sm mb-1"
+              :class="interaction.available ? 'text-white' : 'text-gray-500'"
+            >
+              {{ interaction.name }}
+            </h4>
+            <p 
+              class="text-xs mb-2"
+              :class="interaction.available ? 'text-gray-400' : 'text-gray-500'"
+            >
+              {{ interaction.description }}
+            </p>
+            
+            <!-- 成本和状态显示 -->
+            <div class="flex justify-between items-center">
+              <div v-if="interaction.cost.type === 'knowledge'" class="text-xs text-gray-400">
+                💎 {{ interaction.cost.amount }}
               </div>
-              
-              <div class="text-right">
-                <div v-if="interaction.cost.type === 'knowledge'" class="text-sm text-gray-400">
-                  💎 {{ interaction.cost.amount }}
-                </div>
-                <div v-if="!interaction.available" class="text-xs text-red-400 mt-1">
-                  <!-- 显示不可用原因 -->
-                  <span v-if="interaction.id === 'gift' && userStore.playerState.knowledgePoints < 10">
-                    知识点不足
-                  </span>
-                  <span v-else-if="interaction.id === 'activity' && character.nurtureData.affection < 100">
-                    羁绊值不足
-                  </span>
-                  <span v-else-if="interaction.id === 'campus_activity'">
-                    条件不满足
-                  </span>
-                </div>
+              <div v-if="!interaction.available" class="text-xs text-red-400">
+                <!-- 显示不可用原因 -->
+                <span v-if="interaction.id === 'gift' && userStore.playerState.knowledgePoints < 10">
+                  知识点不足
+                </span>
+                <span v-else-if="interaction.id === 'activity' && character.nurtureData.affection < 100">
+                  羁绊值不足
+                </span>
+                <span v-else-if="interaction.id === 'campus_activity'">
+                  条件不满足
+                </span>
               </div>
             </div>
-          </button>
-        </div>
+          </div>
+        </button>
 
       </div>
     </div>

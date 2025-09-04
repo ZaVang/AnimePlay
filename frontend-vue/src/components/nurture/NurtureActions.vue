@@ -338,7 +338,7 @@ function getAttributeProgress(value: number) {
 }
 
 // 定期更新冷却时间显示
-let cooldownUpdateInterval: number | null = null;
+let cooldownUpdateInterval: ReturnType<typeof setInterval> | null = null;
 
 onMounted(() => {
   // 每秒更新一次冷却时间显示
@@ -361,13 +361,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="bg-gray-800 rounded-lg shadow-lg border border-gray-700 p-6">
-    <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
-      <svg class="w-6 h-6 mr-2 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-      </svg>
-      养成训练
-    </h2>
+  <div class="p-6">
 
     <!-- 当前资源显示 -->
     <div class="bg-gray-700/30 rounded-lg p-4 mb-6">
@@ -393,9 +387,9 @@ onUnmounted(() => {
     </div>
 
     <!-- 养成属性训练区域 -->
-    <div class="mb-8">
+    <div class="mb-6">
       <h3 class="text-lg font-medium text-gray-300 mb-4">养成属性训练</h3>
-      <div class="space-y-3">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
         
         <div 
           v-for="program in trainingPrograms" 
@@ -403,7 +397,7 @@ onUnmounted(() => {
           class="group"
         >
           <div 
-            class="p-4 rounded-lg border transition-all duration-300 relative overflow-hidden"
+            class="p-4 rounded-lg border transition-all duration-300 relative overflow-hidden h-full"
             :class="[
               program.available 
                 ? 'bg-gray-700/50 hover:bg-gray-700/70 border-gray-600 hover:border-gray-500' 
@@ -416,25 +410,23 @@ onUnmounted(() => {
               v-if="trainingAnimations[program.id]" 
               class="absolute inset-0 bg-gradient-to-r from-blue-400/20 via-transparent to-blue-400/20 animate-shimmer"
             ></div>
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center">
-                <div class="text-2xl mr-3">{{ program.icon }}</div>
-                <div>
-                  <h4 class="font-medium text-white">{{ program.name }}</h4>
-                  <p class="text-sm text-gray-400">{{ program.description }}</p>
-                </div>
-              </div>
+            
+            <!-- 头部信息 -->
+            <div class="text-center mb-3">
+              <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">{{ program.icon }}</div>
+              <h4 class="font-medium text-white text-sm mb-1">{{ program.name }}</h4>
+              <p class="text-xs text-gray-400 mb-2">{{ program.description }}</p>
               
-              <div class="text-right">
-                <div class="text-sm font-medium text-green-400">+{{ program.gain }}</div>
-                <div class="text-xs text-gray-400">💎 {{ program.cost }}</div>
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-green-400 font-medium">+{{ program.gain }}</span>
+                <span class="text-gray-400">💎 {{ program.cost }}</span>
               </div>
             </div>
 
             <!-- 当前属性进度条 -->
             <div class="mb-3">
               <div class="flex justify-between text-xs text-gray-400 mb-1">
-                <span>当前 {{ program.attribute }}</span>
+                <span>{{ program.attribute }}</span>
                 <span>{{ character.nurtureData.attributes[program.attribute] }}/100</span>
               </div>
               <div class="w-full bg-gray-600 rounded-full h-2">
@@ -459,12 +451,12 @@ onUnmounted(() => {
             <button
               @click="startTraining(program.id)"
               :disabled="!program.available || userStore.playerState.knowledgePoints < program.cost || isTrainingOnCooldown(program.id)"
-              class="w-full py-2 px-4 rounded-lg font-medium transition-all duration-300"
+              class="w-full py-2 px-3 rounded-lg font-medium text-sm transition-all duration-300"
               :class="program.available && userStore.playerState.knowledgePoints >= program.cost && !isTrainingOnCooldown(program.id)
                 ? 'bg-blue-600 hover:bg-blue-700 text-white'
                 : 'bg-gray-600 text-gray-400 cursor-not-allowed'"
             >
-              <span v-if="isTrainingOnCooldown(program.id)">训练中...</span>
+              <span v-if="isTrainingOnCooldown(program.id)">训练中</span>
               <span v-else-if="!program.available">心情不足</span>
               <span v-else-if="userStore.playerState.knowledgePoints < program.cost">知识点不足</span>
               <span v-else>开始训练</span>
@@ -476,14 +468,14 @@ onUnmounted(() => {
     </div>
 
     <!-- 战斗属性训练区域 -->
-    <div class="mb-8">
+    <div class="mb-6">
       <h3 class="text-lg font-medium text-gray-300 mb-4 flex items-center">
         <svg class="w-5 h-5 mr-2 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
         </svg>
         战斗属性强化
       </h3>
-      <div class="space-y-3">
+      <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
         
         <div 
           v-for="program in battleTrainingPrograms" 
@@ -491,7 +483,7 @@ onUnmounted(() => {
           class="group"
         >
           <div 
-            class="p-4 rounded-lg border transition-all duration-300 relative overflow-hidden"
+            class="p-4 rounded-lg border transition-all duration-300 relative overflow-hidden h-full"
             :class="[
               program.available 
                 ? 'bg-red-600/10 hover:bg-red-600/20 border-red-600/30 hover:border-red-600/50' 
@@ -504,26 +496,24 @@ onUnmounted(() => {
               v-if="trainingAnimations[program.id]" 
               class="absolute inset-0 bg-gradient-to-r from-red-400/20 via-transparent to-red-400/20 animate-shimmer"
             ></div>
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center">
-                <div class="text-2xl mr-3">{{ program.icon }}</div>
-                <div>
-                  <h4 class="font-medium text-white">{{ program.name }}</h4>
-                  <p class="text-sm text-gray-400">{{ program.description }}</p>
-                </div>
-              </div>
+            
+            <!-- 头部信息 -->
+            <div class="text-center mb-3">
+              <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">{{ program.icon }}</div>
+              <h4 class="font-medium text-white text-sm mb-1">{{ program.name }}</h4>
+              <p class="text-xs text-gray-400 mb-2">{{ program.description }}</p>
               
-              <div class="text-right">
-                <div class="text-sm font-medium text-red-400">+{{ program.gain }}%</div>
-                <div class="text-xs text-gray-400">💎 {{ program.cost }}</div>
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-red-400 font-medium">+{{ program.gain }}%</span>
+                <span class="text-gray-400">💎 {{ program.cost }}</span>
               </div>
             </div>
 
             <!-- 当前战斗属性加成 -->
             <div class="mb-3">
               <div class="flex justify-between text-xs text-gray-400 mb-1">
-                <span>当前{{ program.stat.toUpperCase() }}加成</span>
-                <span>{{ character.nurtureData.battleEnhancements?.[program.stat] || 0 }}%/100%</span>
+                <span>{{ program.stat.toUpperCase() }}加成</span>
+                <span>{{ character.nurtureData.battleEnhancements?.[program.stat] || 0 }}%</span>
               </div>
               <div class="w-full bg-gray-600 rounded-full h-2">
                 <div 
@@ -534,29 +524,29 @@ onUnmounted(() => {
             </div>
 
             <!-- 需求条件 -->
-            <div class="mb-3 text-xs text-gray-400">
+            <div class="mb-3 text-xs text-gray-400 text-center">
               <span>需要: </span>
-              <span v-if="program.requirements.affection">羁绊值{{ program.requirements.affection }}+ </span>
-              <span v-if="program.requirements.strength">体力{{ program.requirements.strength }}+ </span>
-              <span v-if="program.requirements.intelligence">智力{{ program.requirements.intelligence }}+ </span>
-              <span v-if="program.requirements.charm">魅力{{ program.requirements.charm }}+ </span>
+              <span v-if="program.requirements.affection">羁绊{{ program.requirements.affection }} </span>
+              <span v-if="program.requirements.strength">体力{{ program.requirements.strength }} </span>
+              <span v-if="program.requirements.intelligence">智力{{ program.requirements.intelligence }} </span>
+              <span v-if="program.requirements.charm">魅力{{ program.requirements.charm }} </span>
             </div>
 
             <!-- 冷却时间显示 -->
             <div v-if="isTrainingOnCooldown(program.id)" class="mb-2 text-xs text-orange-400 text-center">
-              冷却中: {{ formatCooldownTime(getTrainingCooldownRemaining(program.id)) }}
+              {{ formatCooldownTime(getTrainingCooldownRemaining(program.id)) }}
             </div>
 
             <!-- 行动按钮 -->
             <button
               @click="startBattleTraining(program.id)"
               :disabled="!program.available || userStore.playerState.knowledgePoints < program.cost || isTrainingOnCooldown(program.id)"
-              class="w-full py-2 px-4 rounded-lg font-medium transition-all duration-300"
+              class="w-full py-2 px-3 rounded-lg font-medium text-sm transition-all duration-300"
               :class="program.available && userStore.playerState.knowledgePoints >= program.cost && !isTrainingOnCooldown(program.id)
                 ? 'bg-red-600 hover:bg-red-700 text-white'
                 : 'bg-gray-600 text-gray-400 cursor-not-allowed'"
             >
-              <span v-if="isTrainingOnCooldown(program.id)">强化中...</span>
+              <span v-if="isTrainingOnCooldown(program.id)">强化中</span>
               <span v-else-if="!program.available">条件不满足</span>
               <span v-else-if="userStore.playerState.knowledgePoints < program.cost">知识点不足</span>
               <span v-else>开始强化</span>
@@ -570,7 +560,7 @@ onUnmounted(() => {
     <!-- 特殊活动区域 -->
     <div>
       <h3 class="text-lg font-medium text-gray-300 mb-4">特殊活动</h3>
-      <div class="space-y-3">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
         
         <div 
           v-for="activity in specialActivities" 
@@ -578,28 +568,33 @@ onUnmounted(() => {
           class="group"
         >
           <div 
-            class="p-4 rounded-lg border transition-all duration-300"
+            class="p-4 rounded-lg border transition-all duration-300 h-full"
             :class="activity.available 
               ? `bg-${activity.color}-600/10 hover:bg-${activity.color}-600/20 border-${activity.color}-600/30`
               : 'bg-gray-800/50 border-gray-700 opacity-60'"
           >
-            <div class="flex items-center justify-between mb-2">
-              <div class="flex items-center">
-                <div class="text-2xl mr-3">{{ activity.icon }}</div>
-                <div>
-                  <h4 class="font-medium text-white">{{ activity.name }}</h4>
-                  <p class="text-sm text-gray-400">{{ activity.description }}</p>
-                </div>
-              </div>
+            <!-- 头部信息 -->
+            <div class="text-center mb-3">
+              <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">{{ activity.icon }}</div>
+              <h4 class="font-medium text-white text-sm mb-1">{{ activity.name }}</h4>
+              <p class="text-xs text-gray-400 mb-2">{{ activity.description }}</p>
               <div class="text-xs text-gray-400">💎 {{ activity.cost }}</div>
             </div>
 
-            <div class="text-xs text-gray-300 mb-3">{{ activity.effect }}</div>
+            <div class="text-xs text-gray-300 mb-3 text-center">{{ activity.effect }}</div>
+
+            <!-- 需求条件显示 -->
+            <div v-if="!activity.available || userStore.playerState.knowledgePoints < activity.cost" class="mb-3 text-xs text-gray-400 text-center">
+              <span>需要: </span>
+              <span v-if="activity.id === 'meditation' && character.nurtureData.affection < 200">羁绊值200+ </span>
+              <span v-if="activity.id === 'special_event' && character.nurtureData.affection < 500">羁绊值500+ </span>
+              <span v-if="userStore.playerState.knowledgePoints < activity.cost">知识点{{ activity.cost }}+ </span>
+            </div>
 
             <button
               @click="performSpecialActivity(activity.id)"
               :disabled="!activity.available || userStore.playerState.knowledgePoints < activity.cost"
-              class="w-full py-2 px-4 rounded-lg font-medium text-sm transition-all duration-300"
+              class="w-full py-2 px-3 rounded-lg font-medium text-sm transition-all duration-300"
               :class="activity.available && userStore.playerState.knowledgePoints >= activity.cost
                 ? `bg-${activity.color}-600 hover:bg-${activity.color}-700 text-white`
                 : 'bg-gray-600 text-gray-400 cursor-not-allowed'"

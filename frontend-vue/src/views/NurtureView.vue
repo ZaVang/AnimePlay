@@ -7,6 +7,7 @@ import CharacterProfile from '@/components/nurture/CharacterProfile.vue';
 import InteractionPanel from '@/components/nurture/InteractionPanel.vue';
 import NurtureActions from '@/components/nurture/NurtureActions.vue';
 import DialogueSystem from '@/components/nurture/DialogueSystem.vue';
+import CollapsiblePanel from '@/components/nurture/CollapsiblePanel.vue';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
@@ -105,30 +106,28 @@ function endDialogue() {
         </div>
 
         <!-- 角色已选择状态 -->
-        <div v-if="selectedCharacter" class="grid grid-cols-1 xl:grid-cols-3 gap-8" style="height: 800px;">
+        <div v-if="selectedCharacter" class="space-y-6">
           
-          <!-- 左侧：角色资料 -->
-          <div class="xl:col-span-1 h-full">
-            <div class="h-full overflow-y-auto">
-              <CharacterProfile :character="selectedCharacter" />
-            </div>
+          <!-- 角色资料区域 -->
+          <div>
+            <CharacterProfile :character="selectedCharacter" />
           </div>
 
-          <!-- 中间：交互面板 -->
-          <div class="xl:col-span-1 h-full">
-            <div class="h-full overflow-y-auto">
+          <!-- 互动面板区域 -->
+          <div>
+            <CollapsiblePanel title="互动面板" icon="💬" :defaultOpen="true">
               <InteractionPanel 
                 :character="selectedCharacter"
                 @start-dialogue="startDialogue"
               />
-            </div>
+            </CollapsiblePanel>
           </div>
 
-          <!-- 右侧：养成行动 -->
-          <div class="xl:col-span-1 h-full">
-            <div class="h-full overflow-y-auto">
+          <!-- 养成训练区域 -->
+          <div>
+            <CollapsiblePanel title="养成训练" icon="⚡" :defaultOpen="true">
               <NurtureActions :character="selectedCharacter" />
-            </div>
+            </CollapsiblePanel>
           </div>
 
         </div>

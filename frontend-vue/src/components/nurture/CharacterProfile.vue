@@ -228,328 +228,222 @@ function getBondLevelThreshold(): number {
 <template>
   <div class="bg-gray-800 rounded-lg shadow-lg border border-gray-700 overflow-hidden">
     
-    <!-- 角色头部 -->
-    <div class="relative">
-      <div class="aspect-[2/3] overflow-hidden">
-        <img 
-          :src="character.image_path" 
-          :alt="character.name"
-          class="w-full h-full object-cover object-top"
-        >
+    <!-- 角色信息横向布局 -->
+    <div class="flex">
+      <!-- 左侧：角色头像 -->
+      <div class="relative w-48 flex-shrink-0">
+        <div class="aspect-[2/3] overflow-hidden">
+          <img 
+            :src="character.image_path" 
+            :alt="character.name"
+            class="w-full h-full object-cover object-top"
+          >
+        </div>
+        
+        <!-- 稀有度背景效果 -->
+        <div 
+          class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"
+          :class="{
+            'from-red-900/30': character.rarity === 'UR',
+            'from-purple-900/30': character.rarity === 'HR',
+            'from-yellow-900/30': character.rarity === 'SSR',
+            'from-blue-900/30': character.rarity === 'SR',
+            'from-green-900/30': character.rarity === 'R'
+          }"
+        ></div>
+        
+        <!-- 角色名称和稀有度 -->
+        <div class="absolute bottom-4 left-4 right-4">
+          <h3 class="text-lg font-bold text-white mb-1">{{ character.name }}</h3>
+          <div class="flex items-center justify-between">
+            <span 
+              class="px-2 py-1 rounded-full text-xs font-medium"
+              :class="{
+                'bg-red-500 text-white': character.rarity === 'UR',
+                'bg-purple-500 text-white': character.rarity === 'HR',
+                'bg-yellow-500 text-black': character.rarity === 'SSR',
+                'bg-blue-500 text-white': character.rarity === 'SR',
+                'bg-green-500 text-white': character.rarity === 'R',
+                'bg-gray-500 text-white': character.rarity === 'N'
+              }"
+            >
+              {{ character.rarity }}
+            </span>
+            
+            <!-- 心情状态 -->
+            <div class="text-right">
+              <div class="text-lg">{{ moodStatus.icon }}</div>
+            </div>
+          </div>
+        </div>
       </div>
-      
-      <!-- 稀有度背景效果 -->
-      <div 
-        class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"
-        :class="{
-          'from-red-900/30': character.rarity === 'UR',
-          'from-purple-900/30': character.rarity === 'HR',
-          'from-yellow-900/30': character.rarity === 'SSR',
-          'from-blue-900/30': character.rarity === 'SR',
-          'from-green-900/30': character.rarity === 'R'
-        }"
-      ></div>
-      
-      <!-- 角色名称和稀有度 -->
-      <div class="absolute bottom-4 left-4 right-4">
-        <div class="flex items-end justify-between">
-          <div>
-            <h3 class="text-xl font-bold text-white mb-1">{{ character.name }}</h3>
-            <div class="flex items-center">
-              <span 
-                class="px-2 py-1 rounded-full text-xs font-medium"
-                :class="{
-                  'bg-red-500 text-white': character.rarity === 'UR',
-                  'bg-purple-500 text-white': character.rarity === 'HR',
-                  'bg-yellow-500 text-black': character.rarity === 'SSR',
-                  'bg-blue-500 text-white': character.rarity === 'SR',
-                  'bg-green-500 text-white': character.rarity === 'R',
-                  'bg-gray-500 text-white': character.rarity === 'N'
-                }"
-              >
-                {{ character.rarity }}
+
+      <!-- 右侧：角色信息面板 -->
+      <div class="flex-1 p-6">
+        
+        <!-- 顶部：羁绊等级和角色等级 -->
+        <div class="grid grid-cols-2 gap-4 mb-6">
+          <!-- 羁绊等级 -->
+          <div class="bg-gray-700/30 rounded-lg p-4">
+            <div class="flex items-center justify-between mb-2">
+              <h4 class="text-sm font-semibold text-white flex items-center">
+                <span class="text-lg mr-2">{{ bondLevel.icon }}</span>
+                羁绊等级
+              </h4>
+              <span :class="bondLevel.color" class="text-sm font-bold">
+                {{ bondLevel.level }}
               </span>
             </div>
+            
+            <!-- 羁绊进度条 -->
+            <div class="w-full bg-gray-600 rounded-full h-2 overflow-hidden mb-1">
+              <div 
+                :class="bondLevel.bgColor.replace('/20', '')" 
+                class="h-full rounded-full transition-all duration-500"
+                :style="{ width: `${bondLevel.progress}%` }"
+              ></div>
+            </div>
+            
+            <div class="flex justify-between text-xs text-gray-400">
+              <span>{{ character.nurtureData.affection }}</span>
+              <span v-if="!bondLevel.maxReached">{{ getBondLevelThreshold() }}</span>
+              <span v-else class="text-pink-400">MAX</span>
+            </div>
+          </div>
+
+          <!-- 角色等级 -->
+          <div class="bg-gray-700/30 rounded-lg p-4">
+            <div class="flex items-center justify-between mb-2">
+              <h4 class="text-sm font-semibold text-white flex items-center">
+                <span class="text-lg mr-2">⚡</span>
+                角色等级
+              </h4>
+              <span class="text-yellow-400 font-bold text-sm">
+                Lv.{{ character.nurtureData.level }}
+              </span>
+            </div>
+            
+            <!-- 经验值进度条 -->
+            <div class="w-full bg-gray-600 rounded-full h-2 overflow-hidden mb-1">
+              <div 
+                class="h-full rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 transition-all duration-500"
+                :style="{ width: `${levelProgress.percentage}%` }"
+              ></div>
+            </div>
+            
+            <div class="flex justify-between text-xs text-gray-400">
+              <span>{{ levelProgress.current }}/{{ levelProgress.required }}</span>
+              <span class="text-yellow-400">下一级</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 中部：养成属性 -->
+        <div class="bg-gray-700/30 rounded-lg p-4 mb-4">
+          <h4 class="text-sm font-semibold text-white mb-3">养成属性</h4>
+          <div class="grid grid-cols-4 gap-4 text-center">
+            <div>
+              <div class="text-xl mb-1">✨</div>
+              <div class="text-xs text-gray-400 mb-1">魅力</div>
+              <div class="text-sm font-bold text-pink-400">{{ character.nurtureData.attributes.charm }}</div>
+            </div>
+            <div>
+              <div class="text-xl mb-1">🧠</div>
+              <div class="text-xs text-gray-400 mb-1">智力</div>
+              <div class="text-sm font-bold text-blue-400">{{ character.nurtureData.attributes.intelligence }}</div>
+            </div>
+            <div>
+              <div class="text-xl mb-1">💪</div>
+              <div class="text-xs text-gray-400 mb-1">体力</div>
+              <div class="text-sm font-bold text-green-400">{{ character.nurtureData.attributes.strength }}</div>
+            </div>
+            <div>
+              <div class="text-xl mb-1">{{ moodStatus.icon }}</div>
+              <div class="text-xs text-gray-400 mb-1">心情</div>
+              <div class="text-sm font-bold" :class="moodStatus.color">{{ character.nurtureData.attributes.mood }}</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 中部：战斗属性 -->
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <!-- 基础战斗属性 -->
+          <div class="bg-gray-700/30 rounded-lg p-4">
+            <div class="text-xs text-gray-400 mb-3 text-center">基础属性</div>
+            <div class="space-y-2">
+              <div class="flex justify-between text-xs">
+                <span class="text-gray-400">HP</span>
+                <span class="text-red-400 font-medium">{{ character.battle_stats?.hp || 0 }}</span>
+              </div>
+              <div class="flex justify-between text-xs">
+                <span class="text-gray-400">ATK</span>
+                <span class="text-orange-400 font-medium">{{ character.battle_stats?.atk || 0 }}</span>
+              </div>
+              <div class="flex justify-between text-xs">
+                <span class="text-gray-400">DEF</span>
+                <span class="text-blue-400 font-medium">{{ character.battle_stats?.def || 0 }}</span>
+              </div>
+              <div class="flex justify-between text-xs">
+                <span class="text-gray-400">SP</span>
+                <span class="text-purple-400 font-medium">{{ character.battle_stats?.sp || 0 }}</span>
+              </div>
+              <div class="flex justify-between text-xs">
+                <span class="text-gray-400">SPD</span>
+                <span class="text-green-400 font-medium">{{ character.battle_stats?.spd || 0 }}</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 战斗属性加成 -->
+          <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 rounded-lg p-4 border border-pink-500/20">
+            <div class="text-xs text-pink-400 mb-3 text-center">养成加成</div>
+            <div class="space-y-2">
+              <div class="flex justify-between text-xs">
+                <span class="text-gray-400">HP</span>
+                <span class="text-red-400 font-medium">+{{ character.nurtureData.battleEnhancements?.hp || 0 }}%</span>
+              </div>
+              <div class="flex justify-between text-xs">
+                <span class="text-gray-400">ATK</span>
+                <span class="text-orange-400 font-medium">+{{ character.nurtureData.battleEnhancements?.atk || 0 }}%</span>
+              </div>
+              <div class="flex justify-between text-xs">
+                <span class="text-gray-400">DEF</span>
+                <span class="text-blue-400 font-medium">+{{ character.nurtureData.battleEnhancements?.def || 0 }}%</span>
+              </div>
+              <div class="flex justify-between text-xs">
+                <span class="text-gray-400">SP</span>
+                <span class="text-purple-400 font-medium">+{{ character.nurtureData.battleEnhancements?.sp || 0 }}%</span>
+              </div>
+              <div class="flex justify-between text-xs">
+                <span class="text-gray-400">SPD</span>
+                <span class="text-green-400 font-medium">+{{ character.nurtureData.battleEnhancements?.spd || 0 }}%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 底部：统计信息 -->
+        <div class="grid grid-cols-3 gap-4">
+          <!-- 互动统计 -->
+          <div class="bg-gray-700/30 rounded-lg p-4 text-center">
+            <div class="text-lg font-bold text-yellow-400 mb-1">{{ character.nurtureData.totalInteractions }}</div>
+            <div class="text-xs text-gray-400">总互动</div>
+          </div>
+          
+          <!-- 最近活动 -->
+          <div class="bg-gray-700/30 rounded-lg p-4 text-center">
+            <div class="text-sm font-medium text-gray-300 mb-1">{{ lastInteractionText }}</div>
+            <div class="text-xs text-gray-400">最后互动</div>
           </div>
           
           <!-- 心情状态 -->
-          <div class="text-right">
-            <div class="text-2xl mb-1">{{ moodStatus.icon }}</div>
-            <div :class="moodStatus.color" class="text-xs font-medium">
-              {{ moodStatus.text }}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 角色信息面板 -->
-    <div class="p-6 space-y-6">
-      
-      <!-- 羁绊等级 -->
-      <div>
-        <div class="flex items-center justify-between mb-3">
-          <h4 class="text-lg font-semibold text-white flex items-center">
-            <span class="text-2xl mr-2">{{ bondLevel.icon }}</span>
-            羁绊等级
-          </h4>
-          <span :class="bondLevel.color" class="font-bold">
-            {{ bondLevel.level }}
-          </span>
-        </div>
-        
-        <!-- 羁绊进度条 -->
-        <div class="w-full bg-gray-700 rounded-full h-3 overflow-hidden">
-          <div 
-            :class="bondLevel.bgColor.replace('/20', '')" 
-            class="h-full rounded-full transition-all duration-500 relative"
-            :style="{ width: `${bondLevel.progress}%` }"
-          >
-            <div class="absolute inset-0 bg-white/20"></div>
+          <div class="bg-gray-700/30 rounded-lg p-4 text-center">
+            <div class="text-lg mb-1">{{ moodStatus.icon }}</div>
+            <div class="text-xs" :class="moodStatus.color">{{ moodStatus.text }}</div>
           </div>
         </div>
         
-        <div class="flex justify-between text-xs text-gray-400 mt-1">
-          <span>{{ character.nurtureData.affection }}</span>
-          <span v-if="!bondLevel.maxReached">{{ getBondLevelThreshold() }}</span>
-          <span v-else class="text-pink-400">MAX</span>
-        </div>
       </div>
-
-      <!-- 角色等级 -->
-      <div class="mb-6">
-        <div class="flex items-center justify-between mb-3">
-          <h4 class="text-lg font-semibold text-white flex items-center">
-            <span class="text-2xl mr-2">⚡</span>
-            角色等级
-          </h4>
-          <span class="text-yellow-400 font-bold text-xl">
-            Lv.{{ character.nurtureData.level }}
-          </span>
-        </div>
-        
-        <!-- 经验值进度条 -->
-        <div class="w-full bg-gray-700 rounded-full h-3 overflow-hidden">
-          <div 
-            class="h-full rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 transition-all duration-500 relative"
-            :style="{ width: `${levelProgress.percentage}%` }"
-          >
-            <div class="absolute inset-0 bg-white/20"></div>
-          </div>
-        </div>
-        
-        <div class="flex justify-between text-xs text-gray-400 mt-1">
-          <span>{{ levelProgress.current }} / {{ levelProgress.required }} EXP</span>
-          <span class="text-yellow-400">下一级</span>
-        </div>
-        
-        <!-- 总经验值显示 -->
-        <div class="text-center mt-2 text-xs text-gray-500">
-          总经验值: {{ character.nurtureData.totalExperience }}
-        </div>
-      </div>
-
-      <!-- 养成属性面板 -->
-      <div class="mb-6">
-        <h4 class="text-lg font-semibold text-white mb-4">养成属性</h4>
-        <div class="grid grid-cols-2 gap-4">
-          
-          <!-- 魅力值 -->
-          <div class="text-center">
-            <div class="text-2xl mb-1">✨</div>
-            <div class="text-xs text-gray-400 mb-1">魅力</div>
-            <div class="text-lg font-bold text-pink-400">
-              {{ character.nurtureData.attributes.charm }}
-            </div>
-          </div>
-          
-          <!-- 智力值 -->
-          <div class="text-center">
-            <div class="text-2xl mb-1">🧠</div>
-            <div class="text-xs text-gray-400 mb-1">智力</div>
-            <div class="text-lg font-bold text-blue-400">
-              {{ character.nurtureData.attributes.intelligence }}
-            </div>
-          </div>
-          
-          <!-- 体力值 -->
-          <div class="text-center">
-            <div class="text-2xl mb-1">💪</div>
-            <div class="text-xs text-gray-400 mb-1">体力</div>
-            <div class="text-lg font-bold text-green-400">
-              {{ character.nurtureData.attributes.strength }}
-            </div>
-          </div>
-          
-          <!-- 心情值 -->
-          <div class="text-center">
-            <div class="text-2xl mb-1">{{ moodStatus.icon }}</div>
-            <div class="text-xs text-gray-400 mb-1">心情</div>
-            <div class="text-lg font-bold" :class="moodStatus.color">
-              {{ character.nurtureData.attributes.mood }}
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- 战斗属性面板 -->
-      <div>
-        <h4 class="text-lg font-semibold text-white mb-4">战斗能力</h4>
-        
-        <!-- 基础战斗属性 -->
-        <div class="bg-gray-700/30 rounded-lg p-4 mb-4">
-          <div class="text-xs text-gray-400 mb-3 text-center">基础属性</div>
-          <div class="grid grid-cols-5 gap-2 text-center">
-            <div>
-              <div class="text-xs text-gray-400 mb-1">HP</div>
-              <div class="text-sm font-bold text-red-400">{{ character.battle_stats?.hp || 0 }}</div>
-            </div>
-            <div>
-              <div class="text-xs text-gray-400 mb-1">ATK</div>
-              <div class="text-sm font-bold text-orange-400">{{ character.battle_stats?.atk || 0 }}</div>
-            </div>
-            <div>
-              <div class="text-xs text-gray-400 mb-1">DEF</div>
-              <div class="text-sm font-bold text-blue-400">{{ character.battle_stats?.def || 0 }}</div>
-            </div>
-            <div>
-              <div class="text-xs text-gray-400 mb-1">SP</div>
-              <div class="text-sm font-bold text-purple-400">{{ character.battle_stats?.sp || 0 }}</div>
-            </div>
-            <div>
-              <div class="text-xs text-gray-400 mb-1">SPD</div>
-              <div class="text-sm font-bold text-green-400">{{ character.battle_stats?.spd || 0 }}</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 战斗属性加成 -->
-        <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 rounded-lg p-4 border border-pink-500/20">
-          <div class="text-xs text-pink-400 mb-3 text-center">养成加成 (%)</div>
-          <div class="grid grid-cols-5 gap-2 text-center">
-            <div>
-              <div class="text-xs text-gray-400 mb-1">HP</div>
-              <div class="text-sm font-bold text-red-400">+{{ character.nurtureData.battleEnhancements?.hp || 0 }}%</div>
-            </div>
-            <div>
-              <div class="text-xs text-gray-400 mb-1">ATK</div>
-              <div class="text-sm font-bold text-orange-400">+{{ character.nurtureData.battleEnhancements?.atk || 0 }}%</div>
-            </div>
-            <div>
-              <div class="text-xs text-gray-400 mb-1">DEF</div>
-              <div class="text-sm font-bold text-blue-400">+{{ character.nurtureData.battleEnhancements?.def || 0 }}%</div>
-            </div>
-            <div>
-              <div class="text-xs text-gray-400 mb-1">SP</div>
-              <div class="text-sm font-bold text-purple-400">+{{ character.nurtureData.battleEnhancements?.sp || 0 }}%</div>
-            </div>
-            <div>
-              <div class="text-xs text-gray-400 mb-1">SPD</div>
-              <div class="text-sm font-bold text-green-400">+{{ character.nurtureData.battleEnhancements?.spd || 0 }}%</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 互动统计 -->
-      <div class="border-t border-gray-700 pt-4">
-        <div class="grid grid-cols-2 gap-4 text-center">
-          <div>
-            <div class="text-lg font-bold text-yellow-400">{{ character.nurtureData.totalInteractions }}</div>
-            <div class="text-xs text-gray-400">总互动次数</div>
-          </div>
-          <div>
-            <div class="text-sm font-medium text-gray-300">{{ lastInteractionText }}</div>
-            <div class="text-xs text-gray-400">最后互动</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 特殊事件记录 -->
-      <div class="border-t border-gray-700 pt-4 mb-6">
-        <h4 class="text-lg font-semibold text-white mb-3 flex items-center">
-          <span class="text-2xl mr-2">🌟</span>
-          特殊回忆
-        </h4>
-        <div v-if="character.nurtureData.specialEvents.length === 0" class="text-center py-4">
-          <span class="text-gray-500 text-sm">暂无特殊回忆</span>
-        </div>
-        <div v-else class="space-y-2">
-          <div 
-            v-for="(event, index) in character.nurtureData.specialEvents.slice(-5)" 
-            :key="index"
-            class="bg-gray-700/30 rounded-lg p-3 text-sm"
-          >
-            <div class="flex items-center text-gray-300">
-              <span class="text-lg mr-2">{{ getEventIcon(event) }}</span>
-              <span>{{ getEventDescription(event) }}</span>
-            </div>
-            <div class="text-xs text-gray-500 mt-1">
-              {{ formatEventTime(event) }}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 收到的礼物历史 -->
-      <div class="border-t border-gray-700 pt-4 mb-6">
-        <h4 class="text-lg font-semibold text-white mb-3 flex items-center">
-          <span class="text-2xl mr-2">🎁</span>
-          收到的礼物
-        </h4>
-        <div v-if="character.nurtureData.gifts.length === 0" class="text-center py-4">
-          <span class="text-gray-500 text-sm">还没有收到过礼物</span>
-        </div>
-        <div v-else class="grid grid-cols-2 gap-2">
-          <div 
-            v-for="(gift, index) in getGiftSummary()" 
-            :key="index"
-            class="bg-gray-700/30 rounded-lg p-2 text-center"
-          >
-            <div class="text-lg mb-1">{{ getGiftIcon(gift.type) }}</div>
-            <div class="text-xs text-gray-300">{{ getGiftName(gift.type) }}</div>
-            <div class="text-xs text-gray-500">x{{ gift.count }}</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 性格偏好信息 -->
-      <div class="border-t border-gray-700 pt-4">
-        <h4 class="text-lg font-semibold text-white mb-3 flex items-center">
-          <span class="text-2xl mr-2">💭</span>
-          性格偏好
-        </h4>
-        <div class="space-y-3">
-          <!-- 喜好类型 -->
-          <div class="bg-gray-700/30 rounded-lg p-3">
-            <div class="text-sm text-gray-400 mb-2">喜好类型</div>
-            <div class="flex flex-wrap gap-2">
-              <span v-for="preference in getCharacterPreferences()" :key="preference" 
-                    class="px-2 py-1 bg-pink-500/20 text-pink-300 text-xs rounded-full">
-                {{ preference }}
-              </span>
-            </div>
-          </div>
-          
-          <!-- 互动频率 -->
-          <div class="bg-gray-700/30 rounded-lg p-3">
-            <div class="text-sm text-gray-400 mb-2">互动活跃度</div>
-            <div class="flex items-center">
-              <div class="flex-1 bg-gray-600 rounded-full h-2 mr-3">
-                <div 
-                  class="h-2 rounded-full bg-gradient-to-r from-green-400 to-blue-400 transition-all duration-500"
-                  :style="{ width: `${Math.min(100, (character.nurtureData.totalInteractions / 50) * 100)}%` }"
-                ></div>
-              </div>
-              <span class="text-xs text-gray-300">
-                {{ getActivityLevel(character.nurtureData.totalInteractions) }}
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      
     </div>
   </div>
 </template>

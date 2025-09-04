@@ -6,12 +6,12 @@
                 "startTime": 1756966113830
             },
             {
-                "animeId": 289,
-                "startTime": 1756966114909
+                "animeId": 278826,
+                "startTime": 1756974026898
             },
             {
-                "animeId": 331752,
-                "startTime": 1756966117355
+                "animeId": 37685,
+                "startTime": 1756974029215
             }
         ],
         "watchedAnime": [
@@ -23,34 +23,38 @@
             120236,
             3428,
             995,
-            18624
+            18624,
+            289,
+            331752
         ],
         "viewingStats": {
             "consecutiveDays": 3,
             "genreProgress": {
-                "TV": 9,
+                "TV": 11,
                 "冒险": 1,
                 "原创": 2,
-                "奇幻": 2,
+                "奇幻": 3,
                 "小说改": 1,
                 "恋爱": 1,
-                "战斗": 3,
+                "战斗": 4,
                 "日常": 1,
-                "日本": 9,
-                "游戏改": 1,
-                "漫画改": 5,
+                "日本": 11,
+                "游戏改": 2,
+                "漫画改": 6,
                 "科幻": 1,
                 "运动": 1,
-                "青年向": 1
+                "青年向": 1,
+                "惊悚": 1,
+                "悬疑": 1
             },
-            "lastWatchDate": "2025-09-04T06:08:32.281Z",
-            "totalWatchTime": 1560
+            "lastWatchDate": "2025-09-04T08:20:27.802Z",
+            "totalWatchTime": 1740
         },
         "level": 10,
-        "knowledgePoints": 17117,
+        "knowledgePoints": 17095,
         "animeGachaTickets": 2,
         "characterGachaTickets": 32,
-        "exp": 26540,
+        "exp": 27940,
         "savedDecks": {
             "test": {
                 "anime": [
@@ -4516,12 +4520,12 @@
         [
             304,
             {
-                "affection": 63,
+                "affection": 98,
                 "attributes": {
-                    "charm": 57,
-                    "intelligence": 62,
+                    "charm": 61,
+                    "intelligence": 66,
                     "mood": 100,
-                    "strength": 59
+                    "strength": 67
                 },
                 "dialogueHistory": [
                     "hobby",
@@ -4536,17 +4540,20 @@
                     {
                         "itemId": "book",
                         "timestamp": 1756816198557
-                    }
+                    },
+                    "music_cd"
                 ],
                 "intimacy": 0,
-                "lastInteraction": "2025-09-02T12:29:58.561Z",
+                "lastInteraction": "2025-09-04T08:34:04.401Z",
                 "preferences": {
                     "dislikedTopics": [],
                     "favoriteGifts": [],
                     "favoriteTopics": []
                 },
                 "specialEvents": [],
-                "totalInteractions": 8
+                "totalInteractions": 9,
+                "experience": null,
+                "totalExperience": null
             }
         ],
         [
