@@ -54,7 +54,7 @@
         "knowledgePoints": 16372,
         "animeGachaTickets": 2,
         "characterGachaTickets": 32,
-        "exp": 31565,
+        "exp": 31655,
         "savedDecks": {
             "test": {
                 "anime": [
@@ -3686,7 +3686,12 @@
                     "favoriteTopics": []
                 },
                 "specialEvents": [],
-                "totalInteractions": 0
+                "totalInteractions": 0,
+                "levelBonusAttributes": {
+                    "charm": 0,
+                    "intelligence": 0,
+                    "strength": 0
+                }
             }
         ],
         [
@@ -4468,7 +4473,12 @@
                     "favoriteTopics": []
                 },
                 "specialEvents": [],
-                "totalInteractions": 0
+                "totalInteractions": 0,
+                "levelBonusAttributes": {
+                    "charm": 0,
+                    "intelligence": 0,
+                    "strength": 0
+                }
             }
         ],
         [
@@ -4590,7 +4600,13 @@
                     "campus_club_activity_1757044589330"
                 ],
                 "totalExperience": 3685,
-                "totalInteractions": 46
+                "totalInteractions": 46,
+                "levelBonusAttributes": {
+                    "charm": 4,
+                    "intelligence": 14,
+                    "strength": 2
+                },
+                "level": 2
             }
         ],
         [
@@ -4928,6 +4944,7 @@
                 "dialogueHistory": [
                     "anime"
                 ],
+                "experience": 0,
                 "gifts": [
                     "candy",
                     "music_cd",
@@ -4943,9 +4960,13 @@
                     "favoriteTopics": []
                 },
                 "specialEvents": [],
+                "totalExperience": null,
                 "totalInteractions": 7,
-                "experience": 0,
-                "totalExperience": null
+                "levelBonusAttributes": {
+                    "charm": 0,
+                    "intelligence": 0,
+                    "strength": 0
+                }
             }
         ],
         [
@@ -5188,6 +5209,13 @@
                     "mood": 92,
                     "strength": 85
                 },
+                "battleEnhancements": {
+                    "atk": 0,
+                    "def": 2,
+                    "hp": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
                 "dialogueHistory": [
                     "anime",
                     "greeting",
@@ -5429,14 +5457,7 @@
                     "special_event_1757045139610"
                 ],
                 "totalExperience": 1150,
-                "totalInteractions": 79,
-                "battleEnhancements": {
-                    "hp": 0,
-                    "atk": 0,
-                    "def": 2,
-                    "sp": 0,
-                    "spd": 0
-                }
+                "totalInteractions": 79
             }
         ],
         [
@@ -5919,7 +5940,12 @@
                     "favoriteTopics": []
                 },
                 "specialEvents": [],
-                "totalInteractions": 0
+                "totalInteractions": 0,
+                "levelBonusAttributes": {
+                    "charm": 0,
+                    "intelligence": 0,
+                    "strength": 0
+                }
             }
         ],
         [
@@ -7890,103 +7916,136 @@
             16490,
             {
                 "affection": 0,
-                "intimacy": 0,
-                "lastInteraction": "",
-                "totalInteractions": 0,
-                "dialogueHistory": [],
-                "gifts": [],
-                "specialEvents": [],
-                "level": 1,
-                "experience": 0,
-                "totalExperience": 0,
                 "attributes": {
                     "charm": 50,
                     "intelligence": 50,
-                    "strength": 50,
-                    "mood": 80
+                    "mood": 80,
+                    "strength": 50
                 },
                 "battleEnhancements": {
-                    "hp": 0,
                     "atk": 0,
                     "def": 0,
+                    "hp": 0,
                     "sp": 0,
                     "spd": 0
                 },
+                "dialogueHistory": [],
+                "experience": 0,
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "level": 1,
                 "preferences": {
-                    "favoriteTopics": [],
                     "dislikedTopics": [],
-                    "favoriteGifts": []
-                }
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalExperience": 0,
+                "totalInteractions": 0
             }
         ],
         [
             21276,
             {
                 "affection": 0,
-                "intimacy": 0,
-                "lastInteraction": "",
-                "totalInteractions": 0,
-                "dialogueHistory": [],
-                "gifts": [],
-                "specialEvents": [],
-                "level": 1,
-                "experience": 0,
-                "totalExperience": 0,
                 "attributes": {
                     "charm": 50,
                     "intelligence": 50,
-                    "strength": 50,
-                    "mood": 80
+                    "mood": 80,
+                    "strength": 50
                 },
                 "battleEnhancements": {
-                    "hp": 0,
                     "atk": 0,
                     "def": 0,
+                    "hp": 0,
                     "sp": 0,
                     "spd": 0
                 },
+                "dialogueHistory": [],
+                "experience": 0,
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "level": 1,
                 "preferences": {
-                    "favoriteTopics": [],
                     "dislikedTopics": [],
-                    "favoriteGifts": []
-                }
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalExperience": 0,
+                "totalInteractions": 0
             }
         ],
         [
             27238,
             {
                 "affection": 0,
-                "intimacy": 0,
-                "lastInteraction": "",
-                "totalInteractions": 0,
-                "dialogueHistory": [],
-                "gifts": [],
-                "specialEvents": [],
-                "level": 1,
-                "experience": 0,
-                "totalExperience": 0,
                 "attributes": {
                     "charm": 50,
                     "intelligence": 50,
-                    "strength": 50,
-                    "mood": 80
+                    "mood": 80,
+                    "strength": 50
                 },
                 "battleEnhancements": {
-                    "hp": 0,
                     "atk": 0,
                     "def": 0,
+                    "hp": 0,
                     "sp": 0,
                     "spd": 0
                 },
+                "dialogueHistory": [],
+                "experience": 0,
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "level": 1,
                 "preferences": {
-                    "favoriteTopics": [],
                     "dislikedTopics": [],
-                    "favoriteGifts": []
-                }
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalExperience": 0,
+                "totalInteractions": 0
             }
         ],
         [
             3106,
+            {
+                "affection": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "mood": 80,
+                    "strength": 50
+                },
+                "battleEnhancements": {
+                    "atk": 0,
+                    "def": 0,
+                    "hp": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "dialogueHistory": [],
+                "experience": 0,
+                "gifts": [],
+                "intimacy": 0,
+                "lastInteraction": "",
+                "level": 1,
+                "preferences": {
+                    "dislikedTopics": [],
+                    "favoriteGifts": [],
+                    "favoriteTopics": []
+                },
+                "specialEvents": [],
+                "totalExperience": 0,
+                "totalInteractions": 0
+            }
+        ],
+        [
+            1667,
             {
                 "affection": 0,
                 "intimacy": 0,
@@ -8003,6 +8062,87 @@
                     "intelligence": 50,
                     "strength": 50,
                     "mood": 80
+                },
+                "levelBonusAttributes": {
+                    "charm": 0,
+                    "intelligence": 0,
+                    "strength": 0
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            88208,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "levelBonusAttributes": {
+                    "charm": 0,
+                    "intelligence": 0,
+                    "strength": 0
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            64206,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "levelBonusAttributes": {
+                    "charm": 0,
+                    "intelligence": 0,
+                    "strength": 0
                 },
                 "battleEnhancements": {
                     "hp": 0,

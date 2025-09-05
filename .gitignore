@@ -49,3 +49,5 @@ pnpm-debug.log*
 *.ipynb
 data/images
 !frontend-vue/src/data/
+
+.VSCodeCounter/

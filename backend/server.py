@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify, send_from_directory
 import os
 import json
+from dialogue.dialogue_generator import dialogue_generator, DialogueRequest
 
 app = Flask(__name__, static_folder="../frontend")
 app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0  # Disable caching
@@ -192,6 +193,39 @@ def get_characters_batch():
                     characters.append(character_data)
 
         return jsonify({"characters": characters})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+# --- Dialogue API Routes ---
+@app.route("/api/dialogue/generate", methods=["POST"])
+def generate_dialogue():
+    """生成对话内容"""
+    try:
+        data = request.get_json()
+
+        # 构建对话请求
+        dialogue_request = DialogueRequest(
+            player_id=data.get("playerId", ""),
+            card_name=data.get("cardName", ""),
+            dialogue_type=data.get("dialogueType", ""),
+            style=data.get("style"),
+            action_type=data.get("actionType"),
+            target_card=data.get("targetCard"),
+        )
+
+        # 生成对话
+        response = dialogue_generator.generate_dialogue(dialogue_request)
+
+        return jsonify(
+            {
+                "content": response.content,
+                "type": response.type,
+                "actionType": response.action_type,
+                "duration": response.duration,
+            }
+        )
+
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 

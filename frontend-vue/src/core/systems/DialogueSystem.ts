@@ -11,28 +11,13 @@ export interface DialogueAction {
   timestamp: number;
 }
 
-export interface SpeechPattern {
-  attack: {
-    friendly: string[];
-    harsh: string[];
-  };
-  defense: {
-    agree: string[];
-    disagree: string[];
-  };
-  special: {
-    objection: string[];
-    counterattack: string[];
-    victory: string[];
-    defeat: string[];
-  };
-}
 
 export class DialogueSystem {
   private static instance: DialogueSystem;
   private dialogueQueue: DialogueAction[] = [];
   private currentDialogue: DialogueAction | null = null;
   private listeners: ((action: DialogueAction) => void)[] = [];
+  private apiBaseUrl = '/api/dialogue';
 
   static getInstance(): DialogueSystem {
     if (!DialogueSystem.instance) {
@@ -41,112 +26,99 @@ export class DialogueSystem {
     return DialogueSystem.instance;
   }
 
-  // 辩论用语库 - 更丰富的对话内容
-  private speechPatterns: SpeechPattern = {
-    attack: {
-      friendly: [
-        "这部作品真的很棒，你应该试试看！",
-        "我觉得这个故事会打动你的！",
-        "相信我，这绝对值得一看！",
-        "这部作品的深度真的很令人惊喜！",
-        "我强烈推荐这个，质量很高！"
-      ],
-      harsh: [
-        "你根本没看过这个作品吧？",
-        "这种水平的作品你都不认识？",
-        "你的品味需要提升一下了！",
-        "这明显是经典，你居然不知道？",
-        "看来你对这个类型还不够了解啊！"
-      ]
-    },
-    defense: {
-      agree: [
-        "太有共鸣了！我也是这么想的！",
-        "确实，我想多了...",
-        "你说得对，惭愧...",
-        "这个观点很有道理！",
-        "我被你说服了！"
-      ],
-      disagree: [
-        "你这是恶意黑！",
-        "XX才是真正的神作！",
-        "我看的那个更好！",
-        "但是XX更符合我口味！",
-        "我更喜欢XX类型的！",
-        "这个评价太偏激了吧？"
-      ]
-    },
-    special: {
-      objection: [
-        "异议！",
-        "等等！",
-        "住手！",
-        "不对！",
-        "慢着！"
-      ],
-      counterattack: [
-        "降维打击！",
-        "反击成功！",
-        "你的论点站不住脚！",
-        "这就是实力差距！",
-        "让我来教教你什么叫品味！"
-      ],
-      victory: [
-        "看来我的安利成功了！",
-        "这就是经典的魅力！",
-        "终于理解了吧！",
-        "这才是真正的好作品！"
-      ],
-      defeat: [
-        "唔...确实有道理...",
-        "你的观点让我重新思考...",
-        "这个角度我没想到...",
-        "看来我还需要学习..."
-      ]
+  /**
+   * 调用API生成对话
+   */
+  private async generateDialogueFromAPI(
+    dialogueType: 'attack' | 'defense' | 'action',
+    options: {
+      playerId: 'playerA' | 'playerB';
+      cardName: string;
+      style?: '友好安利' | '辛辣点评' | '赞同' | '反驳';
+      actionType?: 'objection' | 'counterattack' | 'victory' | 'defeat';
+      targetCard?: string;
     }
-  };
+  ): Promise<{ content: string; type: string; actionType?: string; duration: number }> {
+    try {
+      const response = await fetch(`${this.apiBaseUrl}/generate`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          playerId: options.playerId,
+          cardName: options.cardName,
+          dialogueType,
+          style: options.style,
+          actionType: options.actionType,
+          targetCard: options.targetCard,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to generate dialogue');
+      }
+
+      return await response.json();
+    } catch (error) {
+      console.error('Error generating dialogue:', error);
+      // 降级处理：返回默认对话
+      return {
+        content: '...',
+        type: 'speech',
+        duration: 1000,
+      };
+    }
+  }
 
   /**
    * 生成攻击时的对话
    */
-  generateAttackDialogue(style: '友好安利' | '辛辣点评', cardName: string): string {
-    const patterns = style === '友好安利' 
-      ? this.speechPatterns.attack.friendly
-      : this.speechPatterns.attack.harsh;
-    
-    const baseDialogue = patterns[Math.floor(Math.random() * patterns.length)];
-    
-    // 有时候会提到具体的作品名
-    if (Math.random() < 0.3) {
-      return baseDialogue.replace(/这部作品|这个|XX/g, `《${cardName}》`);
-    }
-    
-    return baseDialogue;
+  async generateAttackDialogue(
+    style: '友好安利' | '辛辣点评',
+    cardName: string,
+    playerId: 'playerA' | 'playerB' = 'playerA'
+  ): Promise<string> {
+    const result = await this.generateDialogueFromAPI('attack', {
+      playerId,
+      cardName,
+      style,
+    });
+    return result.content;
   }
 
   /**
    * 生成防御时的对话
    */
-  generateDefenseDialogue(response: '赞同' | '反驳', attackCard: string, defenseCard?: string): string {
-    const patterns = response === '赞同' 
-      ? this.speechPatterns.defense.agree
-      : this.speechPatterns.defense.disagree;
-    
-    const baseDialogue = patterns[Math.floor(Math.random() * patterns.length)];
-    
-    if (defenseCard && baseDialogue.includes('XX')) {
-      return baseDialogue.replace(/XX/g, `《${defenseCard}》`);
-    }
-    
-    return baseDialogue;
+  async generateDefenseDialogue(
+    response: '赞同' | '反驳',
+    attackCard: string,
+    playerId: 'playerA' | 'playerB' = 'playerB',
+    defenseCard?: string
+  ): Promise<string> {
+    const result = await this.generateDialogueFromAPI('defense', {
+      playerId,
+      cardName: defenseCard || '',
+      style: response,
+      targetCard: attackCard,
+    });
+    return result.content;
   }
 
   /**
    * 生成特殊动作对话
    */
-  generateActionDialogue(actionType: 'objection' | 'counterattack' | 'victory' | 'defeat'): string {
-    const patterns = this.speechPatterns.special[actionType];
-    return patterns[Math.floor(Math.random() * patterns.length)];
+  async generateActionDialogue(
+    actionType: 'objection' | 'counterattack' | 'victory' | 'defeat',
+    playerId: 'playerA' | 'playerB',
+    cardName: string
+  ): Promise<string> {
+    const result = await this.generateDialogueFromAPI('action', {
+      playerId,
+      cardName,
+      actionType,
+    });
+    return result.content;
   }
 
   /**
