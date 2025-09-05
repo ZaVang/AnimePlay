@@ -71,6 +71,12 @@ export interface CharacterNurtureData {
     strength: number; // 体力值
     mood: number; // 心情值 (0-100)
   };
+  // 升级获得的随机属性加成
+  levelBonusAttributes: {
+    charm: number; // 升级获得的魅力加成
+    intelligence: number; // 升级获得的智力加成
+    strength: number; // 升级获得的体力加成
+  };
   // 战斗属性增强 (基于原始battle_stats的百分比加成)
   battleEnhancements: {
     hp: number; // HP加成 (0-100%)
@@ -114,6 +120,37 @@ export const useUserStore = defineStore('user', () => {
   
   // 角色养成数据
   const characterNurtureData = ref<Map<number, CharacterNurtureData>>(new Map());
+  
+  // 预设小队数据
+  interface PresetSquad {
+    id: number;
+    name: string;
+    members: (number | null)[]; // 4个位置，null表示空位
+    lastUsed?: string;
+  }
+  
+  const presetSquads = ref<PresetSquad[]>([
+    { id: 1, name: '小队 A', members: [null, null, null, null] },
+    { id: 2, name: '小队 B', members: [null, null, null, null] },
+    { id: 3, name: '小队 C', members: [null, null, null, null] }
+  ]);
+
+  // 爬塔进度数据
+  interface TowerProgress {
+    currentFloor: number; // 当前最高到达层数
+    maxFloor: number; // 历史最高层数
+    floorRewards: { [floor: number]: boolean }; // 已领取的层数奖励
+    todayAttempts: number; // 今日尝试次数
+    lastAttemptDate: string; // 上次尝试日期
+  }
+
+  const towerProgress = ref<TowerProgress>({
+    currentFloor: 1,
+    maxFloor: 1,
+    floorRewards: {},
+    todayAttempts: 0,
+    lastAttemptDate: ''
+  });
 
   // --- GETTERS ---
   const isLoggedIn = computed(() => !!currentUser.value);
@@ -645,6 +682,35 @@ export const useUserStore = defineStore('user', () => {
 
   // --- 角色养成系统方法 ---
   
+  // 随机分配属性点的辅助函数
+  function distributeRandomAttributes(totalPoints: number): { charm: number; intelligence: number; strength: number } {
+    const attributes = ['charm', 'intelligence', 'strength'] as const;
+    const distribution = { charm: 0, intelligence: 0, strength: 0 };
+    
+    let remainingPoints = totalPoints;
+    
+    // 确保每个属性至少分配到一些点数
+    for (const attr of attributes) {
+      const minPoints = Math.floor(totalPoints * 0.1); // 至少10%
+      const maxPoints = Math.floor(totalPoints * 0.6); // 最多60%
+      const points = Math.min(
+        Math.max(minPoints, Math.floor(Math.random() * (maxPoints - minPoints + 1)) + minPoints),
+        remainingPoints - (attributes.length - attributes.indexOf(attr) - 1)
+      );
+      distribution[attr] = points;
+      remainingPoints -= points;
+    }
+    
+    // 将剩余点数随机分配
+    while (remainingPoints > 0) {
+      const randomAttr = attributes[Math.floor(Math.random() * attributes.length)];
+      distribution[randomAttr]++;
+      remainingPoints--;
+    }
+    
+    return distribution;
+  }
+  
   // 获取角色养成数据，如果不存在则创建默认数据
   function getNurtureData(characterId: number): CharacterNurtureData {
     if (!characterNurtureData.value.has(characterId)) {
@@ -666,6 +732,11 @@ export const useUserStore = defineStore('user', () => {
           strength: 50,
           mood: 80
         },
+        levelBonusAttributes: {
+          charm: 0,
+          intelligence: 0,
+          strength: 0
+        },
         battleEnhancements: {
           hp: 0,
           atk: 0,
@@ -681,7 +752,55 @@ export const useUserStore = defineStore('user', () => {
       };
       characterNurtureData.value.set(characterId, defaultData);
     }
-    return characterNurtureData.value.get(characterId)!;
+    
+    const data = characterNurtureData.value.get(characterId)!;
+    
+    // 确保levelBonusAttributes字段存在（兼容旧数据）
+    if (!data.levelBonusAttributes) {
+      data.levelBonusAttributes = {
+        charm: 0,
+        intelligence: 0,
+        strength: 0
+      };
+    }
+    
+    // 确保等级与总经验值同步（修复旧数据）
+    if (data.totalExperience !== undefined) {
+      const maxLevel = 100;
+      const correctLevel = Math.min(getLevelFromExp(data.totalExperience), maxLevel);
+      console.log(`检查角色 ${characterId} 等级同步: 总经验=${data.totalExperience}, 当前等级=${data.level || 1}, 计算等级=${correctLevel}`);
+      
+      if ((data.level || 1) !== correctLevel) {
+        const oldLevel = data.level || 1;
+        data.level = correctLevel;
+        
+        // 如果等级发生了变化，需要重新分配属性
+        if (correctLevel > oldLevel && correctLevel <= maxLevel) {
+          let totalCharmGain = 0;
+          let totalIntGain = 0;
+          let totalStrGain = 0;
+          
+          // 为错过的等级补发属性
+          for (let level = oldLevel + 1; level <= correctLevel; level++) {
+            const totalPoints = level * 10;
+            const randomBonus = distributeRandomAttributes(totalPoints);
+            
+            data.levelBonusAttributes.charm += randomBonus.charm;
+            data.levelBonusAttributes.intelligence += randomBonus.intelligence;
+            data.levelBonusAttributes.strength += randomBonus.strength;
+            
+            totalCharmGain += randomBonus.charm;
+            totalIntGain += randomBonus.intelligence;
+            totalStrGain += randomBonus.strength;
+          }
+          
+          console.log(`角色等级自动更新：Lv.${oldLevel} → Lv.${correctLevel}`);
+          console.log(`属性补发：魅力+${totalCharmGain}, 智力+${totalIntGain}, 体力+${totalStrGain}`);
+        }
+      }
+    }
+    
+    return data;
   }
 
   // 增加好感度 (无上限)
@@ -776,11 +895,39 @@ export const useUserStore = defineStore('user', () => {
 
   // 提升角色战斗属性
   function enhanceBattleStat(characterId: number, stat: keyof CharacterNurtureData['battleEnhancements'], amount: number) {
+    console.log('enhanceBattleStat called with FIXED VERSION:', { characterId, stat, amount });
     if (!isLoggedIn.value) return;
     
-    const nurtureData = getNurtureData(characterId);
-    const oldValue = nurtureData.battleEnhancements[stat];
-    nurtureData.battleEnhancements[stat] = Math.min(100, oldValue + amount);
+    try {
+      const nurtureData = getNurtureData(characterId);
+      
+      // 确保 battleEnhancements 属性完整初始化
+      if (!nurtureData.battleEnhancements) {
+        nurtureData.battleEnhancements = {
+          hp: 0,
+          atk: 0,
+          def: 0,
+          sp: 0,
+          spd: 0
+        };
+      }
+      
+      // 确保所有属性都存在
+      const validStats = ['hp', 'atk', 'def', 'sp', 'spd'] as const;
+      for (const validStat of validStats) {
+        if (nurtureData.battleEnhancements[validStat] === undefined) {
+          nurtureData.battleEnhancements[validStat] = 0;
+        }
+      }
+      
+      const oldValue = nurtureData.battleEnhancements[stat] || 0;
+      nurtureData.battleEnhancements[stat] = Math.min(100, oldValue + amount);
+    } catch (error) {
+      console.error('Error in enhanceBattleStat:', error, { characterId, stat, amount });
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      addLog(`战斗属性提升失败：${errorMessage}`, 'warning');
+      return;
+    }
     
     // 给予经验值奖励 (战斗训练给予更高经验)
     const expReward = amount * 25; // 每点战斗属性给25经验
@@ -841,18 +988,23 @@ export const useUserStore = defineStore('user', () => {
 
   // 获取当前等级的经验值进度 (当前等级内的经验 / 升下一级需要的经验)
   function getLevelProgress(nurtureData: CharacterNurtureData): { current: number; required: number; percentage: number } {
-    const currentLevel = nurtureData.level;
-    const totalExp = nurtureData.totalExperience;
+    // 确保数据有效性
+    const currentLevel = nurtureData.level || 1;
+    const totalExp = nurtureData.totalExperience || 0;
+    
     const currentLevelExpStart = getRequiredExpForLevel(currentLevel);
     const nextLevelExpStart = getRequiredExpForLevel(currentLevel + 1);
     
-    const currentLevelExp = totalExp - currentLevelExpStart;
+    const currentLevelExp = Math.max(0, totalExp - currentLevelExpStart);
     const requiredForNext = nextLevelExpStart - currentLevelExpStart;
+    
+    // 防止除零错误
+    const percentage = requiredForNext > 0 ? (currentLevelExp / requiredForNext) * 100 : 0;
     
     return {
       current: currentLevelExp,
       required: requiredForNext,
-      percentage: (currentLevelExp / requiredForNext) * 100
+      percentage: Math.min(100, Math.max(0, percentage))
     };
   }
 
@@ -867,10 +1019,11 @@ export const useUserStore = defineStore('user', () => {
     nurtureData.experience += expAmount;
     nurtureData.totalExperience += expAmount;
     
-    // 计算新等级
-    const newLevel = getLevelFromExp(nurtureData.totalExperience);
+    // 计算新等级 (最大等级100)
+    const maxLevel = 100;
+    const newLevel = Math.min(getLevelFromExp(nurtureData.totalExperience), maxLevel);
     
-    if (newLevel > oldLevel) {
+    if (newLevel > oldLevel && newLevel <= maxLevel) {
       // 等级提升
       nurtureData.level = newLevel;
       const levelGain = newLevel - oldLevel;
@@ -879,16 +1032,31 @@ export const useUserStore = defineStore('user', () => {
       const character = gameDataStore.getCharacterCardById(characterId);
       
       if (character) {
+        let totalCharmGain = 0;
+        let totalIntGain = 0;
+        let totalStrGain = 0;
+        
+        // 为每一级分配随机属性点 (等级 * 10)
+        for (let level = oldLevel + 1; level <= newLevel; level++) {
+          const totalPoints = level * 10;
+          const randomBonus = distributeRandomAttributes(totalPoints);
+          
+          nurtureData.levelBonusAttributes.charm += randomBonus.charm;
+          nurtureData.levelBonusAttributes.intelligence += randomBonus.intelligence;
+          nurtureData.levelBonusAttributes.strength += randomBonus.strength;
+          
+          totalCharmGain += randomBonus.charm;
+          totalIntGain += randomBonus.intelligence;
+          totalStrGain += randomBonus.strength;
+        }
+        
+        const totalGainMsg = `魅力+${totalCharmGain}, 智力+${totalIntGain}, 体力+${totalStrGain}`;
+        
         addLog(`🎉 ${character.name} 等级提升！Lv.${oldLevel} → Lv.${newLevel}`, 'success');
+        addLog(`随机属性分配：${totalGainMsg}`, 'info');
         
-        // 等级提升奖励 (每级提升给予属性点数)
-        const attributeBonus = levelGain * 2; // 每级+2属性点
-        nurtureData.attributes.charm += attributeBonus;
-        nurtureData.attributes.intelligence += attributeBonus;
-        nurtureData.attributes.strength += attributeBonus;
-        
-        if (levelGain > 1) {
-          addLog(`连续提升 ${levelGain} 级！获得额外属性奖励！`, 'success');
+        if (newLevel >= maxLevel) {
+          addLog(`🏆 ${character.name} 已达到满级！(Lv.${maxLevel})`, 'success');
         }
       }
     }
@@ -946,5 +1114,62 @@ export const useUserStore = defineStore('user', () => {
     getLevelFromExp,
     getLevelProgress,
     addCharacterExp,
+    
+    // 预设小队系统
+    presetSquads: presetSquads,
+    
+    // 预设小队操作函数
+    updateSquadMember(squadId: number, position: number, characterId: number | null) {
+      const squad = presetSquads.value.find((s: PresetSquad) => s.id === squadId);
+      if (squad && position >= 0 && position < 4) {
+        squad.members[position] = characterId;
+        squad.lastUsed = new Date().toISOString();
+      }
+    },
+    
+    updateSquadName(squadId: number, newName: string) {
+      const squad = presetSquads.value.find((s: PresetSquad) => s.id === squadId);
+      if (squad) {
+        squad.name = newName;
+      }
+    },
+    
+    getSquadMembers(squadId: number): (number | null)[] {
+      const squad = presetSquads.value.find((s: PresetSquad) => s.id === squadId);
+      return squad ? [...squad.members] : [null, null, null, null];
+    },
+
+    // 爬塔系统
+    towerProgress: towerProgress,
+    
+    // 获取当前可挑战的层数
+    getCurrentChallengeFloor(): number {
+      return towerProgress.value.currentFloor;
+    },
+    
+    // 完成某层挑战
+    completeFloor(floor: number) {
+      if (floor === towerProgress.value.currentFloor) {
+        towerProgress.value.currentFloor = Math.min(floor + 1, 999); // 最高999层
+        towerProgress.value.maxFloor = Math.max(towerProgress.value.maxFloor, floor);
+        addLog(`成功通过第${floor}层！`, 'success');
+      }
+    },
+    
+    // 检查某层是否已完成
+    hasCompletedFloor(floor: number): boolean {
+      return floor < towerProgress.value.currentFloor;
+    },
+    
+    // 检查今日挑战次数（已移除限制）
+    canAttemptToday(): boolean {
+      return true; // 移除每日挑战次数限制
+    },
+    
+    // 记录挑战尝试
+    recordTowerAttempt() {
+      // 移除每日挑战次数记录，无限挑战
+      return;
+    }
   };
 });

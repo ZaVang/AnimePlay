@@ -1,0 +1,4515 @@
+{
+    "state": {
+        "level": 5,
+        "knowledgePoints": 1053,
+        "animeGachaTickets": 120,
+        "characterGachaTickets": 0,
+        "exp": 310,
+        "savedDecks": {},
+        "viewingQueue": [
+            null,
+            null,
+            null
+        ],
+        "watchedAnime": [],
+        "viewingStats": {
+            "totalWatchTime": 0,
+            "genreProgress": {},
+            "consecutiveDays": 0,
+            "lastWatchDate": ""
+        }
+    },
+    "animeCollection": [
+        [
+            123568,
+            {
+                "count": 1
+            }
+        ],
+        [
+            420628,
+            {
+                "count": 1
+            }
+        ],
+        [
+            285776,
+            {
+                "count": 1
+            }
+        ],
+        [
+            326895,
+            {
+                "count": 1
+            }
+        ],
+        [
+            333664,
+            {
+                "count": 1
+            }
+        ],
+        [
+            185943,
+            {
+                "count": 1
+            }
+        ],
+        [
+            41488,
+            {
+                "count": 1
+            }
+        ],
+        [
+            1606,
+            {
+                "count": 1
+            }
+        ],
+        [
+            28900,
+            {
+                "count": 1
+            }
+        ],
+        [
+            106818,
+            {
+                "count": 1
+            }
+        ]
+    ],
+    "characterCollection": [
+        [
+            57307,
+            {
+                "count": 1
+            }
+        ],
+        [
+            295,
+            {
+                "count": 2
+            }
+        ],
+        [
+            44473,
+            {
+                "count": 1
+            }
+        ],
+        [
+            102486,
+            {
+                "count": 1
+            }
+        ],
+        [
+            38466,
+            {
+                "count": 1
+            }
+        ],
+        [
+            125090,
+            {
+                "count": 3
+            }
+        ],
+        [
+            102091,
+            {
+                "count": 1
+            }
+        ],
+        [
+            26004,
+            {
+                "count": 1
+            }
+        ],
+        [
+            88133,
+            {
+                "count": 2
+            }
+        ],
+        [
+            114126,
+            {
+                "count": 2
+            }
+        ],
+        [
+            74068,
+            {
+                "count": 1
+            }
+        ],
+        [
+            3319,
+            {
+                "count": 2
+            }
+        ],
+        [
+            19188,
+            {
+                "count": 1
+            }
+        ],
+        [
+            11561,
+            {
+                "count": 1
+            }
+        ],
+        [
+            92177,
+            {
+                "count": 1
+            }
+        ],
+        [
+            18568,
+            {
+                "count": 1
+            }
+        ],
+        [
+            6536,
+            {
+                "count": 1
+            }
+        ],
+        [
+            67403,
+            {
+                "count": 1
+            }
+        ],
+        [
+            11909,
+            {
+                "count": 8
+            }
+        ],
+        [
+            104094,
+            {
+                "count": 1
+            }
+        ],
+        [
+            5151,
+            {
+                "count": 1
+            }
+        ],
+        [
+            50578,
+            {
+                "count": 1
+            }
+        ],
+        [
+            60666,
+            {
+                "count": 2
+            }
+        ],
+        [
+            102125,
+            {
+                "count": 1
+            }
+        ],
+        [
+            17235,
+            {
+                "count": 1
+            }
+        ],
+        [
+            3453,
+            {
+                "count": 1
+            }
+        ],
+        [
+            88134,
+            {
+                "count": 1
+            }
+        ],
+        [
+            23647,
+            {
+                "count": 1
+            }
+        ],
+        [
+            36179,
+            {
+                "count": 1
+            }
+        ],
+        [
+            69405,
+            {
+                "count": 1
+            }
+        ],
+        [
+            11847,
+            {
+                "count": 1
+            }
+        ],
+        [
+            19452,
+            {
+                "count": 1
+            }
+        ],
+        [
+            19141,
+            {
+                "count": 1
+            }
+        ],
+        [
+            16685,
+            {
+                "count": 1
+            }
+        ],
+        [
+            35185,
+            {
+                "count": 2
+            }
+        ],
+        [
+            3214,
+            {
+                "count": 1
+            }
+        ],
+        [
+            130668,
+            {
+                "count": 1
+            }
+        ],
+        [
+            43536,
+            {
+                "count": 1
+            }
+        ],
+        [
+            18570,
+            {
+                "count": 1
+            }
+        ],
+        [
+            35669,
+            {
+                "count": 1
+            }
+        ],
+        [
+            17647,
+            {
+                "count": 1
+            }
+        ],
+        [
+            57716,
+            {
+                "count": 2
+            }
+        ],
+        [
+            6528,
+            {
+                "count": 2
+            }
+        ],
+        [
+            57378,
+            {
+                "count": 1
+            }
+        ],
+        [
+            11260,
+            {
+                "count": 1
+            }
+        ],
+        [
+            10678,
+            {
+                "count": 1
+            }
+        ],
+        [
+            72804,
+            {
+                "count": 1
+            }
+        ],
+        [
+            16424,
+            {
+                "count": 1
+            }
+        ],
+        [
+            88129,
+            {
+                "count": 1
+            }
+        ],
+        [
+            36495,
+            {
+                "count": 1
+            }
+        ],
+        [
+            14960,
+            {
+                "count": 1
+            }
+        ],
+        [
+            59993,
+            {
+                "count": 1
+            }
+        ],
+        [
+            74243,
+            {
+                "count": 1
+            }
+        ],
+        [
+            14208,
+            {
+                "count": 1
+            }
+        ],
+        [
+            54474,
+            {
+                "count": 2
+            }
+        ],
+        [
+            35666,
+            {
+                "count": 1
+            }
+        ],
+        [
+            72140,
+            {
+                "count": 1
+            }
+        ],
+        [
+            505,
+            {
+                "count": 1
+            }
+        ],
+        [
+            36494,
+            {
+                "count": 1
+            }
+        ],
+        [
+            273,
+            {
+                "count": 1
+            }
+        ],
+        [
+            21580,
+            {
+                "count": 1
+            }
+        ],
+        [
+            20533,
+            {
+                "count": 1
+            }
+        ],
+        [
+            61552,
+            {
+                "count": 1
+            }
+        ],
+        [
+            31640,
+            {
+                "count": 1
+            }
+        ],
+        [
+            35835,
+            {
+                "count": 1
+            }
+        ],
+        [
+            70611,
+            {
+                "count": 1
+            }
+        ],
+        [
+            10565,
+            {
+                "count": 1
+            }
+        ],
+        [
+            17416,
+            {
+                "count": 1
+            }
+        ],
+        [
+            64205,
+            {
+                "count": 1
+            }
+        ],
+        [
+            57305,
+            {
+                "count": 1
+            }
+        ],
+        [
+            10736,
+            {
+                "count": 1
+            }
+        ],
+        [
+            13396,
+            {
+                "count": 1
+            }
+        ],
+        [
+            43539,
+            {
+                "count": 1
+            }
+        ],
+        [
+            964,
+            {
+                "count": 1
+            }
+        ],
+        [
+            21599,
+            {
+                "count": 2
+            }
+        ],
+        [
+            65,
+            {
+                "count": 1
+            }
+        ],
+        [
+            21595,
+            {
+                "count": 1
+            }
+        ],
+        [
+            23649,
+            {
+                "count": 1
+            }
+        ],
+        [
+            112749,
+            {
+                "count": 1
+            }
+        ],
+        [
+            35607,
+            {
+                "count": 1
+            }
+        ],
+        [
+            36496,
+            {
+                "count": 1
+            }
+        ],
+        [
+            3189,
+            {
+                "count": 1
+            }
+        ],
+        [
+            709,
+            {
+                "count": 1
+            }
+        ],
+        [
+            46580,
+            {
+                "count": 1
+            }
+        ],
+        [
+            57306,
+            {
+                "count": 1
+            }
+        ],
+        [
+            18581,
+            {
+                "count": 1
+            }
+        ],
+        [
+            12105,
+            {
+                "count": 1
+            }
+        ],
+        [
+            70612,
+            {
+                "count": 1
+            }
+        ],
+        [
+            47659,
+            {
+                "count": 1
+            }
+        ],
+        [
+            51210,
+            {
+                "count": 1
+            }
+        ],
+        [
+            20013,
+            {
+                "count": 1
+            }
+        ],
+        [
+            121067,
+            {
+                "count": 1
+            }
+        ],
+        [
+            14958,
+            {
+                "count": 1
+            }
+        ],
+        [
+            26005,
+            {
+                "count": 1
+            }
+        ],
+        [
+            879,
+            {
+                "count": 1
+            }
+        ],
+        [
+            121062,
+            {
+                "count": 1
+            }
+        ],
+        [
+            3116,
+            {
+                "count": 1
+            }
+        ]
+    ],
+    "animePity": {
+        "totalPulls": 10,
+        "pullsSinceLastHR": 10
+    },
+    "characterPity": {
+        "totalPulls": 116,
+        "pullsSinceLastHR": 9
+    },
+    "animeHistory": [
+        {
+            "id": 123568,
+            "rarity": "R",
+            "timestamp": 1757044552096
+        },
+        {
+            "id": 420628,
+            "rarity": "R",
+            "timestamp": 1757044552096
+        },
+        {
+            "id": 285776,
+            "rarity": "R",
+            "timestamp": 1757044552096
+        },
+        {
+            "id": 326895,
+            "rarity": "R",
+            "timestamp": 1757044552096
+        },
+        {
+            "id": 333664,
+            "rarity": "SR",
+            "timestamp": 1757044552096
+        },
+        {
+            "id": 185943,
+            "rarity": "SR",
+            "timestamp": 1757044552096
+        },
+        {
+            "id": 41488,
+            "rarity": "R",
+            "timestamp": 1757044552096
+        },
+        {
+            "id": 1606,
+            "rarity": "SSR",
+            "timestamp": 1757044552096
+        },
+        {
+            "id": 28900,
+            "rarity": "SR",
+            "timestamp": 1757044552096
+        },
+        {
+            "id": 106818,
+            "rarity": "R",
+            "timestamp": 1757044552096
+        }
+    ],
+    "characterHistory": [
+        {
+            "id": 57307,
+            "rarity": "R",
+            "timestamp": 1757044556968
+        },
+        {
+            "id": 295,
+            "rarity": "R",
+            "timestamp": 1757044556968
+        },
+        {
+            "id": 44473,
+            "rarity": "R",
+            "timestamp": 1757044556968
+        },
+        {
+            "id": 102486,
+            "rarity": "SSR",
+            "timestamp": 1757044556968
+        },
+        {
+            "id": 38466,
+            "rarity": "R",
+            "timestamp": 1757044556968
+        },
+        {
+            "id": 125090,
+            "rarity": "R",
+            "timestamp": 1757044556968
+        },
+        {
+            "id": 102091,
+            "rarity": "R",
+            "timestamp": 1757044556968
+        },
+        {
+            "id": 26004,
+            "rarity": "SR",
+            "timestamp": 1757044556968
+        },
+        {
+            "id": 88133,
+            "rarity": "R",
+            "timestamp": 1757044556968
+        },
+        {
+            "id": 114126,
+            "rarity": "R",
+            "timestamp": 1757044556968
+        },
+        {
+            "id": 74068,
+            "rarity": "SR",
+            "timestamp": 1757044558839
+        },
+        {
+            "id": 3319,
+            "rarity": "SR",
+            "timestamp": 1757044558839
+        },
+        {
+            "id": 19188,
+            "rarity": "R",
+            "timestamp": 1757044558839
+        },
+        {
+            "id": 11561,
+            "rarity": "R",
+            "timestamp": 1757044558839
+        },
+        {
+            "id": 92177,
+            "rarity": "SSR",
+            "timestamp": 1757044558839
+        },
+        {
+            "id": 18568,
+            "rarity": "SR",
+            "timestamp": 1757044558839
+        },
+        {
+            "id": 6536,
+            "rarity": "SR",
+            "timestamp": 1757044558839
+        },
+        {
+            "id": 67403,
+            "rarity": "R",
+            "timestamp": 1757044558839
+        },
+        {
+            "id": 11909,
+            "rarity": "HR",
+            "timestamp": 1757044558839
+        },
+        {
+            "id": 104094,
+            "rarity": "SR",
+            "timestamp": 1757044558839
+        },
+        {
+            "id": 5151,
+            "rarity": "SR",
+            "timestamp": 1757044559967
+        },
+        {
+            "id": 50578,
+            "rarity": "HR",
+            "timestamp": 1757044559967
+        },
+        {
+            "id": 60666,
+            "rarity": "R",
+            "timestamp": 1757044559967
+        },
+        {
+            "id": 102125,
+            "rarity": "R",
+            "timestamp": 1757044559967
+        },
+        {
+            "id": 17235,
+            "rarity": "SSR",
+            "timestamp": 1757044559967
+        },
+        {
+            "id": 3453,
+            "rarity": "SR",
+            "timestamp": 1757044559967
+        },
+        {
+            "id": 88134,
+            "rarity": "R",
+            "timestamp": 1757044559967
+        },
+        {
+            "id": 23647,
+            "rarity": "SR",
+            "timestamp": 1757044559967
+        },
+        {
+            "id": 36179,
+            "rarity": "R",
+            "timestamp": 1757044559967
+        },
+        {
+            "id": 69405,
+            "rarity": "R",
+            "timestamp": 1757044559967
+        },
+        {
+            "id": 11847,
+            "rarity": "R",
+            "timestamp": 1757044561807
+        },
+        {
+            "id": 19452,
+            "rarity": "R",
+            "timestamp": 1757044561807
+        },
+        {
+            "id": 19141,
+            "rarity": "R",
+            "timestamp": 1757044561807
+        },
+        {
+            "id": 60666,
+            "rarity": "R",
+            "timestamp": 1757044561807
+        },
+        {
+            "id": 16685,
+            "rarity": "SR",
+            "timestamp": 1757044561807
+        },
+        {
+            "id": 88133,
+            "rarity": "R",
+            "timestamp": 1757044561807
+        },
+        {
+            "id": 35185,
+            "rarity": "SR",
+            "timestamp": 1757044561807
+        },
+        {
+            "id": 3214,
+            "rarity": "SSR",
+            "timestamp": 1757044561807
+        },
+        {
+            "id": 130668,
+            "rarity": "SSR",
+            "timestamp": 1757044561807
+        },
+        {
+            "id": 43536,
+            "rarity": "SSR",
+            "timestamp": 1757044561807
+        },
+        {
+            "id": 18570,
+            "rarity": "SSR",
+            "timestamp": 1757044563280
+        },
+        {
+            "id": 35669,
+            "rarity": "R",
+            "timestamp": 1757044563280
+        },
+        {
+            "id": 125090,
+            "rarity": "R",
+            "timestamp": 1757044563280
+        },
+        {
+            "id": 17647,
+            "rarity": "R",
+            "timestamp": 1757044563280
+        },
+        {
+            "id": 57716,
+            "rarity": "SR",
+            "timestamp": 1757044563280
+        },
+        {
+            "id": 6528,
+            "rarity": "SR",
+            "timestamp": 1757044563280
+        },
+        {
+            "id": 57378,
+            "rarity": "R",
+            "timestamp": 1757044563280
+        },
+        {
+            "id": 11260,
+            "rarity": "R",
+            "timestamp": 1757044563280
+        },
+        {
+            "id": 10678,
+            "rarity": "R",
+            "timestamp": 1757044563280
+        },
+        {
+            "id": 72804,
+            "rarity": "R",
+            "timestamp": 1757044563280
+        },
+        {
+            "id": 16424,
+            "rarity": "R",
+            "timestamp": 1757044564393
+        },
+        {
+            "id": 11909,
+            "rarity": "HR",
+            "timestamp": 1757044564393
+        },
+        {
+            "id": 88129,
+            "rarity": "R",
+            "timestamp": 1757044564393
+        },
+        {
+            "id": 36495,
+            "rarity": "R",
+            "timestamp": 1757044564393
+        },
+        {
+            "id": 295,
+            "rarity": "R",
+            "timestamp": 1757044564393
+        },
+        {
+            "id": 14960,
+            "rarity": "SR",
+            "timestamp": 1757044564393
+        },
+        {
+            "id": 59993,
+            "rarity": "SSR",
+            "timestamp": 1757044564393
+        },
+        {
+            "id": 74243,
+            "rarity": "R",
+            "timestamp": 1757044564393
+        },
+        {
+            "id": 11909,
+            "rarity": "HR",
+            "timestamp": 1757044564393
+        },
+        {
+            "id": 14208,
+            "rarity": "R",
+            "timestamp": 1757044564393
+        },
+        {
+            "id": 54474,
+            "rarity": "SR",
+            "timestamp": 1757044565599
+        },
+        {
+            "id": 35666,
+            "rarity": "R",
+            "timestamp": 1757044565599
+        },
+        {
+            "id": 72140,
+            "rarity": "SR",
+            "timestamp": 1757044565599
+        },
+        {
+            "id": 505,
+            "rarity": "SR",
+            "timestamp": 1757044565599
+        },
+        {
+            "id": 36494,
+            "rarity": "R",
+            "timestamp": 1757044565599
+        },
+        {
+            "id": 11909,
+            "rarity": "HR",
+            "timestamp": 1757044565599
+        },
+        {
+            "id": 273,
+            "rarity": "UR",
+            "timestamp": 1757044565599
+        },
+        {
+            "id": 21580,
+            "rarity": "SR",
+            "timestamp": 1757044565599
+        },
+        {
+            "id": 11909,
+            "rarity": "HR",
+            "timestamp": 1757044565599
+        },
+        {
+            "id": 20533,
+            "rarity": "SSR",
+            "timestamp": 1757044565599
+        },
+        {
+            "id": 61552,
+            "rarity": "SR",
+            "timestamp": 1757044566751
+        },
+        {
+            "id": 31640,
+            "rarity": "R",
+            "timestamp": 1757044566751
+        },
+        {
+            "id": 35835,
+            "rarity": "R",
+            "timestamp": 1757044566751
+        },
+        {
+            "id": 70611,
+            "rarity": "R",
+            "timestamp": 1757044566751
+        },
+        {
+            "id": 10565,
+            "rarity": "R",
+            "timestamp": 1757044566751
+        },
+        {
+            "id": 11909,
+            "rarity": "HR",
+            "timestamp": 1757044566751
+        },
+        {
+            "id": 114126,
+            "rarity": "R",
+            "timestamp": 1757044566751
+        },
+        {
+            "id": 17416,
+            "rarity": "R",
+            "timestamp": 1757044566751
+        },
+        {
+            "id": 64205,
+            "rarity": "SR",
+            "timestamp": 1757044566751
+        },
+        {
+            "id": 57305,
+            "rarity": "R",
+            "timestamp": 1757044566751
+        },
+        {
+            "id": 10736,
+            "rarity": "R",
+            "timestamp": 1757044567913
+        },
+        {
+            "id": 13396,
+            "rarity": "SR",
+            "timestamp": 1757044567913
+        },
+        {
+            "id": 43539,
+            "rarity": "R",
+            "timestamp": 1757044567913
+        },
+        {
+            "id": 3319,
+            "rarity": "SR",
+            "timestamp": 1757044567913
+        },
+        {
+            "id": 964,
+            "rarity": "R",
+            "timestamp": 1757044567913
+        },
+        {
+            "id": 21599,
+            "rarity": "SSR",
+            "timestamp": 1757044567913
+        },
+        {
+            "id": 65,
+            "rarity": "SR",
+            "timestamp": 1757044567913
+        },
+        {
+            "id": 21595,
+            "rarity": "R",
+            "timestamp": 1757044567913
+        },
+        {
+            "id": 23649,
+            "rarity": "R",
+            "timestamp": 1757044567913
+        },
+        {
+            "id": 112749,
+            "rarity": "R",
+            "timestamp": 1757044567913
+        },
+        {
+            "id": 35607,
+            "rarity": "SR",
+            "timestamp": 1757044569616
+        },
+        {
+            "id": 36496,
+            "rarity": "R",
+            "timestamp": 1757044569616
+        },
+        {
+            "id": 21599,
+            "rarity": "SSR",
+            "timestamp": 1757044569616
+        },
+        {
+            "id": 3189,
+            "rarity": "SSR",
+            "timestamp": 1757044569616
+        },
+        {
+            "id": 709,
+            "rarity": "HR",
+            "timestamp": 1757044569616
+        },
+        {
+            "id": 46580,
+            "rarity": "SR",
+            "timestamp": 1757044569616
+        },
+        {
+            "id": 57306,
+            "rarity": "SR",
+            "timestamp": 1757044569616
+        },
+        {
+            "id": 6528,
+            "rarity": "SR",
+            "timestamp": 1757044569616
+        },
+        {
+            "id": 18581,
+            "rarity": "SR",
+            "timestamp": 1757044569616
+        },
+        {
+            "id": 12105,
+            "rarity": "R",
+            "timestamp": 1757044569616
+        },
+        {
+            "id": 70612,
+            "rarity": "R",
+            "timestamp": 1757044570631
+        },
+        {
+            "id": 11909,
+            "rarity": "HR",
+            "timestamp": 1757044570631
+        },
+        {
+            "id": 57716,
+            "rarity": "SR",
+            "timestamp": 1757044570631
+        },
+        {
+            "id": 47659,
+            "rarity": "SSR",
+            "timestamp": 1757044570631
+        },
+        {
+            "id": 51210,
+            "rarity": "SR",
+            "timestamp": 1757044570631
+        },
+        {
+            "id": 20013,
+            "rarity": "SR",
+            "timestamp": 1757044570631
+        },
+        {
+            "id": 11909,
+            "rarity": "HR",
+            "timestamp": 1757044570631
+        },
+        {
+            "id": 54474,
+            "rarity": "SR",
+            "timestamp": 1757044570631
+        },
+        {
+            "id": 121067,
+            "rarity": "SR",
+            "timestamp": 1757044570631
+        },
+        {
+            "id": 14958,
+            "rarity": "R",
+            "timestamp": 1757044570631
+        },
+        {
+            "id": 26005,
+            "rarity": "R",
+            "timestamp": 1757044572646
+        },
+        {
+            "id": 879,
+            "rarity": "SSR",
+            "timestamp": 1757044573774
+        },
+        {
+            "id": 125090,
+            "rarity": "R",
+            "timestamp": 1757044574910
+        },
+        {
+            "id": 35185,
+            "rarity": "SR",
+            "timestamp": 1757044575646
+        },
+        {
+            "id": 121062,
+            "rarity": "R",
+            "timestamp": 1757044576383
+        },
+        {
+            "id": 3116,
+            "rarity": "SR",
+            "timestamp": 1757044577247
+        }
+    ],
+    "favoriteAnime": [],
+    "favoriteCharacters": [],
+    "characterNurtureData": [
+        [
+            57307,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            295,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            44473,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            102486,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            38466,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            125090,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            102091,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            26004,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            88133,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            114126,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            74068,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            3319,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            19188,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            11561,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            92177,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            18568,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            6536,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            67403,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            11909,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            104094,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            5151,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            50578,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            60666,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            102125,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            17235,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            3453,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            88134,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            23647,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            36179,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            69405,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            11847,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            19452,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            19141,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            16685,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            35185,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            3214,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            130668,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            43536,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            18570,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            35669,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            17647,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            57716,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            6528,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            57378,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            11260,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            10678,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            72804,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            16424,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            88129,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            36495,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            14960,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            59993,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            74243,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            14208,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            54474,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            35666,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            72140,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            505,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            36494,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            273,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 180,
+                "totalExperience": 180,
+                "attributes": {
+                    "charm": 53,
+                    "intelligence": 54,
+                    "strength": 55,
+                    "mood": 70
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            21580,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            20533,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            61552,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            31640,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            35835,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            70611,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            10565,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            17416,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            64205,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            57305,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            10736,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            13396,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            43539,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            964,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            21599,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            65,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            21595,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            23649,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            112749,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            35607,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            36496,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            3189,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            709,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            46580,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            57306,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            18581,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            12105,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            70612,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            47659,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            51210,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            20013,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            121067,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            14958,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            26005,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            879,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            121062,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ],
+        [
+            3116,
+            {
+                "affection": 0,
+                "intimacy": 0,
+                "lastInteraction": "",
+                "totalInteractions": 0,
+                "dialogueHistory": [],
+                "gifts": [],
+                "specialEvents": [],
+                "level": 1,
+                "experience": 0,
+                "totalExperience": 0,
+                "attributes": {
+                    "charm": 50,
+                    "intelligence": 50,
+                    "strength": 50,
+                    "mood": 80
+                },
+                "battleEnhancements": {
+                    "hp": 0,
+                    "atk": 0,
+                    "def": 0,
+                    "sp": 0,
+                    "spd": 0
+                },
+                "preferences": {
+                    "favoriteTopics": [],
+                    "dislikedTopics": [],
+                    "favoriteGifts": []
+                }
+            }
+        ]
+    ]
+}

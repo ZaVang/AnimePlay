@@ -3,6 +3,7 @@ import { computed } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/stores/userStore';
+import { generateBattleStats, calculateBattlePower } from '@/utils/battleCalculator';
 
 const props = defineProps<{
   character: CharacterCard & { nurtureData: CharacterNurtureData };
@@ -223,6 +224,26 @@ function getBondLevelThreshold(): number {
   if (affection >= 100) return 200;
   return 100;
 }
+
+// 测试升级函数
+function testLevelUp() {
+  console.log('触发测试升级，添加5000经验值');
+  userStore.addCharacterExp(props.character.id, 5000);
+}
+
+// 计算实际战斗属性
+const actualBattleStats = computed(() => {
+  return generateBattleStats(
+    props.character.battle_stats || { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 },
+    props.character.nurtureData.attributes,
+    props.character.nurtureData.battleEnhancements || { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 }
+  );
+});
+
+// 计算战斗力评分
+const battlePower = computed(() => {
+  return calculateBattlePower(actualBattleStats.value);
+});
 </script>
 
 <template>
@@ -317,9 +338,16 @@ function getBondLevelThreshold(): number {
               <h4 class="text-sm font-semibold text-white flex items-center">
                 <span class="text-lg mr-2">⚡</span>
                 角色等级
+                <button 
+                  @click="testLevelUp" 
+                  class="ml-2 px-2 py-1 text-xs bg-green-600 hover:bg-green-700 rounded"
+                  title="测试升级 (+5000经验)"
+                >
+                  测试
+                </button>
               </h4>
               <span class="text-yellow-400 font-bold text-sm">
-                Lv.{{ character.nurtureData.level }}
+                Lv.{{ character.nurtureData.level || 1 }}
               </span>
             </div>
             
@@ -332,7 +360,7 @@ function getBondLevelThreshold(): number {
             </div>
             
             <div class="flex justify-between text-xs text-gray-400">
-              <span>{{ levelProgress.current }}/{{ levelProgress.required }}</span>
+              <span>{{ levelProgress.current || 0 }}/{{ levelProgress.required || 1000 }}</span>
               <span class="text-yellow-400">下一级</span>
             </div>
           </div>
@@ -345,17 +373,32 @@ function getBondLevelThreshold(): number {
             <div>
               <div class="text-xl mb-1">✨</div>
               <div class="text-xs text-gray-400 mb-1">魅力</div>
-              <div class="text-sm font-bold text-pink-400">{{ character.nurtureData.attributes.charm }}</div>
+              <div class="text-sm font-bold text-pink-400">
+                {{ character.nurtureData.attributes.charm }}
+                <span v-if="(character.nurtureData.levelBonusAttributes?.charm || 0) > 0" class="text-xs text-pink-300">
+                  (+{{ character.nurtureData.levelBonusAttributes.charm }})
+                </span>
+              </div>
             </div>
             <div>
               <div class="text-xl mb-1">🧠</div>
               <div class="text-xs text-gray-400 mb-1">智力</div>
-              <div class="text-sm font-bold text-blue-400">{{ character.nurtureData.attributes.intelligence }}</div>
+              <div class="text-sm font-bold text-blue-400">
+                {{ character.nurtureData.attributes.intelligence }}
+                <span v-if="(character.nurtureData.levelBonusAttributes?.intelligence || 0) > 0" class="text-xs text-blue-300">
+                  (+{{ character.nurtureData.levelBonusAttributes.intelligence }})
+                </span>
+              </div>
             </div>
             <div>
               <div class="text-xl mb-1">💪</div>
               <div class="text-xs text-gray-400 mb-1">体力</div>
-              <div class="text-sm font-bold text-green-400">{{ character.nurtureData.attributes.strength }}</div>
+              <div class="text-sm font-bold text-green-400">
+                {{ character.nurtureData.attributes.strength }}
+                <span v-if="(character.nurtureData.levelBonusAttributes?.strength || 0) > 0" class="text-xs text-green-300">
+                  (+{{ character.nurtureData.levelBonusAttributes.strength }})
+                </span>
+              </div>
             </div>
             <div>
               <div class="text-xl mb-1">{{ moodStatus.icon }}</div>
@@ -367,37 +410,45 @@ function getBondLevelThreshold(): number {
 
         <!-- 中部：战斗属性 -->
         <div class="grid grid-cols-2 gap-4 mb-4">
-          <!-- 基础战斗属性 -->
+          <!-- 实际战斗属性 -->
           <div class="bg-gray-700/30 rounded-lg p-4">
-            <div class="text-xs text-gray-400 mb-3 text-center">基础属性</div>
+            <div class="text-xs text-gray-400 mb-3 text-center">实际属性</div>
             <div class="space-y-2">
               <div class="flex justify-between text-xs">
                 <span class="text-gray-400">HP</span>
-                <span class="text-red-400 font-medium">{{ character.battle_stats?.hp || 0 }}</span>
+                <span class="text-red-400 font-medium">{{ actualBattleStats.hp }}</span>
               </div>
               <div class="flex justify-between text-xs">
                 <span class="text-gray-400">ATK</span>
-                <span class="text-orange-400 font-medium">{{ character.battle_stats?.atk || 0 }}</span>
+                <span class="text-orange-400 font-medium">{{ actualBattleStats.atk }}</span>
               </div>
               <div class="flex justify-between text-xs">
                 <span class="text-gray-400">DEF</span>
-                <span class="text-blue-400 font-medium">{{ character.battle_stats?.def || 0 }}</span>
+                <span class="text-blue-400 font-medium">{{ actualBattleStats.def }}</span>
               </div>
               <div class="flex justify-between text-xs">
                 <span class="text-gray-400">SP</span>
-                <span class="text-purple-400 font-medium">{{ character.battle_stats?.sp || 0 }}</span>
+                <span class="text-purple-400 font-medium">{{ actualBattleStats.sp }}</span>
               </div>
               <div class="flex justify-between text-xs">
                 <span class="text-gray-400">SPD</span>
-                <span class="text-green-400 font-medium">{{ character.battle_stats?.spd || 0 }}</span>
+                <span class="text-green-400 font-medium">{{ actualBattleStats.spd }}</span>
               </div>
             </div>
           </div>
 
-          <!-- 战斗属性加成 -->
+          <!-- 战斗力评分 -->
           <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 rounded-lg p-4 border border-pink-500/20">
-            <div class="text-xs text-pink-400 mb-3 text-center">养成加成</div>
-            <div class="space-y-2">
+            <div class="text-xs text-pink-400 mb-3 text-center">战斗力</div>
+            
+            <!-- 总战斗力 -->
+            <div class="text-center mb-3">
+              <div class="text-2xl font-bold text-yellow-400">{{ battlePower }}</div>
+              <div class="text-xs text-gray-400">综合评分</div>
+            </div>
+            
+            <!-- 加成详情 -->
+            <div class="space-y-1">
               <div class="flex justify-between text-xs">
                 <span class="text-gray-400">HP</span>
                 <span class="text-red-400 font-medium">+{{ character.nurtureData.battleEnhancements?.hp || 0 }}%</span>
