@@ -768,8 +768,6 @@ export const useUserStore = defineStore('user', () => {
     if (data.totalExperience !== undefined) {
       const maxLevel = 100;
       const correctLevel = Math.min(getLevelFromExp(data.totalExperience), maxLevel);
-      console.log(`检查角色 ${characterId} 等级同步: 总经验=${data.totalExperience}, 当前等级=${data.level || 1}, 计算等级=${correctLevel}`);
-      
       if ((data.level || 1) !== correctLevel) {
         const oldLevel = data.level || 1;
         data.level = correctLevel;
@@ -794,8 +792,10 @@ export const useUserStore = defineStore('user', () => {
             totalStrGain += randomBonus.strength;
           }
           
-          console.log(`角色等级自动更新：Lv.${oldLevel} → Lv.${correctLevel}`);
-          console.log(`属性补发：魅力+${totalCharmGain}, 智力+${totalIntGain}, 体力+${totalStrGain}`);
+          // 如需要可以在这里添加升级日志
+          if (correctLevel > oldLevel + 1) {
+            addLog(`角色等级自动同步：Lv.${oldLevel} → Lv.${correctLevel}，获得随机属性加成！`, 'success');
+          }
         }
       }
     }

@@ -396,9 +396,30 @@ function endBattle() {
     const survivalBonus = playerSquad.value.filter(m => !m.isDefeated).length * 10;
     const totalExp = baseReward + survivalBonus;
     
+    // 玩家获得经验和知识点
     userStore.addExp(totalExp);
     userStore.playerState.knowledgePoints += knowledgeReward;
+    
+    // 给参与战斗的角色分配经验值
+    const characterExp = Math.floor(totalExp / 2); // 角色获得玩家经验的一半
+    playerSquad.value.forEach(member => {
+      let individualExp = characterExp;
+      
+      // 存活角色获得额外经验奖励
+      if (!member.isDefeated) {
+        individualExp += 20; // 存活奖励
+      }
+      
+      // 爬塔层数奖励
+      if (currentBattleMode.value === 'tower') {
+        individualExp += currentTowerFloor.value * 5; // 每层额外5经验
+      }
+      
+      userStore.addCharacterExp(member.character.id, individualExp);
+    });
+    
     userStore.addLog(`战斗胜利！获得 ${totalExp} 经验和 ${knowledgeReward} 知识点！`, 'success');
+    userStore.addLog(`参战角色获得 ${characterExp}~${characterExp + 20 + (currentBattleMode.value === 'tower' ? currentTowerFloor.value * 5 : 0)} 角色经验！`, 'info');
     
   } else if (!playerAlive && enemyAlive) {
     battleResult.value = 'defeat';
@@ -411,7 +432,15 @@ function endBattle() {
     }
     
     userStore.addExp(consolationExp);
+    
+    // 给参与战斗的角色分配失败经验
+    const characterFailExp = Math.floor(consolationExp / 3); // 失败时角色获得更少经验
+    playerSquad.value.forEach(member => {
+      userStore.addCharacterExp(member.character.id, characterFailExp);
+    });
+    
     userStore.addLog(`虽然失败了，但从战斗中学到了经验。获得 ${consolationExp} 经验！`, 'info');
+    userStore.addLog(`参战角色获得 ${characterFailExp} 角色经验！`, 'info');
     
   } else {
     battleResult.value = 'victory'; // 平局算胜利

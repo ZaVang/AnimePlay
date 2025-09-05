@@ -225,11 +225,6 @@ function getBondLevelThreshold(): number {
   return 100;
 }
 
-// 测试升级函数
-function testLevelUp() {
-  console.log('触发测试升级，添加5000经验值');
-  userStore.addCharacterExp(props.character.id, 5000);
-}
 
 // 计算实际战斗属性
 const actualBattleStats = computed(() => {
@@ -338,13 +333,6 @@ const battlePower = computed(() => {
               <h4 class="text-sm font-semibold text-white flex items-center">
                 <span class="text-lg mr-2">⚡</span>
                 角色等级
-                <button 
-                  @click="testLevelUp" 
-                  class="ml-2 px-2 py-1 text-xs bg-green-600 hover:bg-green-700 rounded"
-                  title="测试升级 (+5000经验)"
-                >
-                  测试
-                </button>
               </h4>
               <span class="text-yellow-400 font-bold text-sm">
                 Lv.{{ character.nurtureData.level || 1 }}
