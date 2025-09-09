@@ -4,6 +4,7 @@ import { useGameDataStore } from '@/stores/gameDataStore';
 import { useUserStore } from '@/stores/userStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { getCurrentUpShopItems, getHistoricalUpShopItems, isAnimeCard, isCharacterCard, type ShopItem } from '@/utils/gachaRotation';
+import type { Card } from '@/types/card';
 import AnimeCard from '@/components/AnimeCard.vue';
 import CharacterCard from '@/components/CharacterCard.vue';
 
@@ -38,7 +39,7 @@ const regularShopItems = computed(() => {
 });
 
 // 处理商店物品，为卡牌类型物品添加卡牌数据
-function getShopItemsWithCards(items: ShopItem[]): (ShopItem & { card?: any })[] {
+function getShopItemsWithCards(items: ShopItem[]): (ShopItem & { card?: Card })[] {
   const cardSource = props.gachaType === 'anime' ? gameDataStore.allAnimeCards : gameDataStore.allCharacterCards;
   
   // 如果没有加载卡片数据，返回空数组
@@ -54,7 +55,7 @@ function getShopItemsWithCards(items: ShopItem[]): (ShopItem & { card?: any })[]
         };
       }
       return item;
-    }).filter(item => item.type !== 'card' || (item as any).card);
+    }).filter(item => item.type !== 'card' || item.card);
   } catch (error) {
     console.warn('Failed to get shop items:', error);
     return [];
@@ -65,7 +66,7 @@ function getShopItemsWithCards(items: ShopItem[]): (ShopItem & { card?: any })[]
 const isPurchasing = ref<string | null>(null); // 记录正在购买的物品ID
 const purchaseError = ref<string>('');
 
-async function handlePurchase(item: ShopItem & { card?: any }) {
+async function handlePurchase(item: ShopItem & { card?: Card }) {
     if (isPurchasing.value !== null) return;
     
     let confirmMessage = '';
@@ -97,7 +98,7 @@ async function handlePurchase(item: ShopItem & { card?: any }) {
             await userStore.purchaseFromShop({
                 Id: item.cardId || 0,
                 cost: item.cost
-            } as any, props.gachaType);
+            }, props.gachaType);
         } else {
             // 其他类型物品，调用新的购买方法
             await userStore.purchaseShopItem(item);

@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 import type { PlayerState, AnimeCard, CharacterCard, Card } from '@/types';
-import type { GameState, ClashInfo, Notification } from '@/types/battle';
+import type { GameState, ClashInfo, Notification, BattleLogMessage, BattleLogType } from '@/types/battle';
 import { ResourceManager } from '@/core/systems/ResourceManager';
 
 // Helper function to create a default player state
@@ -310,16 +310,23 @@ export const usePlayerStore = defineStore('players', {
 // =============================================================================
 export const useHistoryStore = defineStore('battleHistory', {
   state: () => ({
-    log: [] as string[],
+    log: [] as BattleLogMessage[],
   }),
   actions: {
-    addEntry(entry: string) {
-      this.log.push(entry);
-      console.log(`[Battle Log] ${entry}`);
+    addEntry(message: string, type: BattleLogType = 'info', turn?: number) {
+      const gameStore = useGameStore();
+      const logEntry: BattleLogMessage = {
+        id: Date.now() + Math.random(),
+        turn: turn || gameStore.turn,
+        message,
+        type
+      };
+      this.log.push(logEntry);
+      console.log(`[Battle Log] ${message}`);
     },
     // Keep the old method name for compatibility
-    addLog(entry: string) {
-      this.addEntry(entry);
+    addLog(message: string, type: BattleLogType = 'info') {
+      this.addEntry(message, type);
     },
     clearLog() {
       this.log = [];

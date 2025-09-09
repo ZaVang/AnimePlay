@@ -62,8 +62,8 @@ export const useGachaStore = defineStore('gacha', () => {
                 let cumulativeProb = 0;
                 let drawnRarity: Rarity = 'N';
 
-                for (const rarity in config.rarityConfig) {
-                    cumulativeProb += (config.rarityConfig as any)[rarity].p;
+                for (const [rarity, rarityData] of effectiveRarityEntries) {
+                    cumulativeProb += rarityData.p;
                     if (rand < cumulativeProb) {
                         drawnRarity = rarity as Rarity;
                         break;

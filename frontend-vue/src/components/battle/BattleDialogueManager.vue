@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, computed } from 'vue';
 import { usePlayerStore } from '@/stores/battle';
-import { DialogueSystem, type DialogueAction } from '@/core/systems/DialogueSystem';
+import { useDialogue } from '@/core/di/composables';
+import type { DialogueAction } from '@/core/systems/DialogueSystem';
 import BattleSpeechBubble from './BattleSpeechBubble.vue';
 import BattleActionEffect from './BattleActionEffect.vue';
 
 const playerStore = usePlayerStore();
-const dialogueSystem = DialogueSystem.getInstance();
+const dialogueSystem = useDialogue();
 
 // 当前对话状态
 const currentDialogue = ref<DialogueAction | null>(null);

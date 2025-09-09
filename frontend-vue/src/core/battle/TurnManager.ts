@@ -9,7 +9,7 @@ import type { Rarity } from '@/types/card';
 // removed duplicate Deck import
 
 import { urCharacterSkillMap } from '@/data/urCharacterSkills';
-import { PersistentEffectSystem } from '../systems/PersistentEffectSystem';
+import { systemRegistry } from '@/core/di/registry';
 import { generateRandomAIDeck } from '@/utils/randomAIDeckGenerator';
 
 // 辅助函数：正确的数组洗牌
@@ -319,7 +319,7 @@ export const TurnManager = {
     });
 
     // 4. Process persistent effects at start of turn
-    PersistentEffectSystem.getInstance().onTurnStart(gameStore.activePlayer);
+    systemRegistry.getPersistentEffectSystem().onTurnStart(gameStore.activePlayer);
     
     // 4. Handle character skill cooldowns reduction
     playerStore.reduceSkillCooldowns(gameStore.activePlayer);
@@ -348,7 +348,7 @@ export const TurnManager = {
     const gameStore = useGameStore();
     
     // Process persistent effects at end of turn
-    PersistentEffectSystem.getInstance().onTurnEnd(gameStore.activePlayer);
+    systemRegistry.getPersistentEffectSystem().onTurnEnd(gameStore.activePlayer);
     
     if (gameStore.turn >= 12) {
       this.judgeFinalWinner();

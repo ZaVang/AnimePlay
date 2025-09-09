@@ -1,23 +1,8 @@
 import { usePlayerStore, useGameStore, useHistoryStore } from '@/stores/battle';
-import type { ClashInfo } from '@/types/battle';
 import type { AnimeCard } from '@/types/card';
 import { StatusEffectSystem } from '@/core/systems/StatusEffectSystem';
-import { InteractionSystem } from '@/core/systems/InteractionSystem';
-import { PersistentEffectSystem } from '@/core/systems/PersistentEffectSystem';
-
-export type BattleEvent = 'onPlay' | 'beforeResolve' | 'afterResolve';
-export type CombatRole = 'attacker' | 'defender';
-
-export interface EffectContext {
-  event: BattleEvent;
-  playerId: 'playerA' | 'playerB';
-  role: CombatRole;
-  card?: AnimeCard;
-  clash?: ClashInfo;
-  addStrengthBonus?: (role: CombatRole, amount: number) => void;
-}
-
-type EffectHandler = (ctx: EffectContext) => void | Promise<void>;
+import { systemRegistry } from '@/core/di/registry';
+import type { EffectContext, EffectHandler, EffectRegistry } from '@/types/effects';
 
 // Effect registry
 const handlers: Record<string, EffectHandler> = {
@@ -153,8 +138,8 @@ const handlers: Record<string, EffectHandler> = {
     const playerStore = usePlayerStore();
     const gameStore = useGameStore();
     const historyStore = useHistoryStore();
-    const interactionSystem = InteractionSystem.getInstance();
-    const persistentSystem = PersistentEffectSystem.getInstance();
+    const interactionSystem = systemRegistry.getInteractionSystem();
+    const persistentSystem = systemRegistry.getPersistentEffectSystem();
     
     const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
     historyStore.addLog(`${name} 使用了时间理论！`, 'info');
@@ -362,8 +347,8 @@ const handlers: Record<string, EffectHandler> = {
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
     const gameStore = useGameStore();
-    const interactionSystem = InteractionSystem.getInstance();
-    const persistentSystem = PersistentEffectSystem.getInstance();
+    const interactionSystem = systemRegistry.getInteractionSystem();
+    const persistentSystem = systemRegistry.getPersistentEffectSystem();
     
     const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
     historyStore.addLog(`${name} 进行魔法指导：选择一张手牌视为任意类型。`, 'info');
@@ -1368,8 +1353,8 @@ const handlers: Record<string, EffectHandler> = {
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
     const gameStore = useGameStore();
-    const interactionSystem = InteractionSystem.getInstance();
-    const persistentSystem = PersistentEffectSystem.getInstance();
+    const interactionSystem = systemRegistry.getInteractionSystem();
+    const persistentSystem = systemRegistry.getPersistentEffectSystem();
     
     const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
     historyStore.addLog(`${name} 展现商业智慧：选择卡牌类型强化。`, 'info');

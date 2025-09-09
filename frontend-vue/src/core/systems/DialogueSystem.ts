@@ -12,18 +12,18 @@ export interface DialogueAction {
 }
 
 
+/**
+ * 辩论式对话系统
+ * 移除单例模式，支持依赖注入
+ */
 export class DialogueSystem {
-  private static instance: DialogueSystem;
   private dialogueQueue: DialogueAction[] = [];
   private currentDialogue: DialogueAction | null = null;
   private listeners: ((action: DialogueAction) => void)[] = [];
   private apiBaseUrl = '/api/dialogue';
 
-  static getInstance(): DialogueSystem {
-    if (!DialogueSystem.instance) {
-      DialogueSystem.instance = new DialogueSystem();
-    }
-    return DialogueSystem.instance;
+  constructor() {
+    // 现在是普通构造函数，支持多实例
   }
 
   /**
@@ -62,13 +62,66 @@ export class DialogueSystem {
       return await response.json();
     } catch (error) {
       console.error('Error generating dialogue:', error);
-      // 降级处理：返回默认对话
-      return {
-        content: '...',
-        type: 'speech',
-        duration: 1000,
-      };
+      // 降级处理：返回有意义的默认对话
+      return this.generateFallbackDialogue(dialogueType, options);
     }
+  }
+
+  /**
+   * 生成备用对话内容
+   */
+  private generateFallbackDialogue(
+    dialogueType: 'attack' | 'defense' | 'action',
+    options: {
+      playerId: 'playerA' | 'playerB';
+      cardName: string;
+      style?: '友好安利' | '辛辣点评' | '赞同' | '反驳';
+      actionType?: 'objection' | 'counterattack' | 'victory' | 'defeat';
+      targetCard?: string;
+    }
+  ): { content: string; type: string; actionType?: string; duration: number } {
+    let content = '';
+    
+    switch (dialogueType) {
+      case 'attack':
+        if (options.style === '友好安利') {
+          content = `推荐大家看看《${options.cardName}》！这部作品真的很棒！`;
+        } else {
+          content = `《${options.cardName}》的问题太明显了，让我来指出几点...`;
+        }
+        break;
+      case 'defense':
+        if (options.style === '赞同') {
+          content = `我完全同意！《${options.targetCard}》确实值得推荐。`;
+        } else {
+          content = `等等！我对《${options.targetCard}》有不同的看法！`;
+        }
+        break;
+      case 'action':
+        switch (options.actionType) {
+          case 'objection':
+            content = `异议！这个观点有问题！`;
+            break;
+          case 'counterattack':
+            content = `看我的反击！《${options.cardName}》！`;
+            break;
+          case 'victory':
+            content = `太好了！看起来我的观点更有说服力！`;
+            break;
+          case 'defeat':
+            content = `这次败给你了...但下次我不会轻易认输！`;
+            break;
+          default:
+            content = `使用《${options.cardName}》！`;
+        }
+        break;
+    }
+    
+    return {
+      content,
+      type: 'speech',
+      duration: 2500,
+    };
   }
 
   /**
@@ -190,5 +243,14 @@ export class DialogueSystem {
    */
   getCurrentDialogue(): DialogueAction | null {
     return this.currentDialogue;
+  }
+
+  /**
+   * 清理系统资源
+   */
+  cleanup(): void {
+    this.dialogueQueue = [];
+    this.currentDialogue = null;
+    this.listeners = [];
   }
 }

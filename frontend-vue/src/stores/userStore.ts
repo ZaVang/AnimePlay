@@ -250,6 +250,16 @@ export const useUserStore = defineStore('user', () => {
         const savedNurtureData = payload.characterNurtureData || [];
         characterNurtureData.value = new Map(savedNurtureData);
         
+        // 加载推塔进度
+        if (payload.towerProgress) {
+          towerProgress.value = payload.towerProgress;
+        }
+        
+        // 加载预设小队
+        if (payload.presetSquads) {
+          presetSquads.value = payload.presetSquads;
+        }
+        
         addLog('成功从服务器加载存档。', 'info');
       }
     } catch (error) {
@@ -279,6 +289,8 @@ export const useUserStore = defineStore('user', () => {
         favoriteAnime: Array.from(favoriteAnime.value),
         favoriteCharacters: Array.from(favoriteCharacters.value),
         characterNurtureData: Array.from(characterNurtureData.value.entries()),
+        towerProgress: towerProgress.value,
+        presetSquads: presetSquads.value,
     };
     try {
         const response = await fetch('/api/user/data', {
@@ -1124,6 +1136,7 @@ export const useUserStore = defineStore('user', () => {
       if (squad && position >= 0 && position < 4) {
         squad.members[position] = characterId;
         squad.lastUsed = new Date().toISOString();
+        saveStateToServer(); // 保存预设小队更改
       }
     },
     
@@ -1131,6 +1144,7 @@ export const useUserStore = defineStore('user', () => {
       const squad = presetSquads.value.find((s: PresetSquad) => s.id === squadId);
       if (squad) {
         squad.name = newName;
+        saveStateToServer(); // 保存预设小队名称更改
       }
     },
     
@@ -1153,6 +1167,7 @@ export const useUserStore = defineStore('user', () => {
         towerProgress.value.currentFloor = Math.min(floor + 1, 999); // 最高999层
         towerProgress.value.maxFloor = Math.max(towerProgress.value.maxFloor, floor);
         addLog(`成功通过第${floor}层！`, 'success');
+        saveStateToServer(); // 确保推塔进度保存到服务器
       }
     },
     

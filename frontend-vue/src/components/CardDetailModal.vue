@@ -25,7 +25,7 @@ const cardRarityConfig = computed(() => {
 
 // FIXED: Added `const` back
 const dismantleValue = computed(() => {
-    return cardRarityConfig.value.dismantleValue || 0;
+    return (cardRarityConfig.value as any)?.dismantleValue ?? 0;
 });
 
 // --- NEW: Computed properties for skills ---
@@ -62,11 +62,11 @@ const animeEffectsDescriptions = computed(() => {
 const processedAnimeNames = computed(() => {
     if (props.cardType !== 'character' || !props.card || !(props.card as CharacterCard).anime_names) return [];
     
-    return (props.card as CharacterCard).anime_names.map(name => {
+    return (props.card as CharacterCard).anime_names?.map(name => {
         const animeCard = gameDataStore.allAnimeCards.find(c => c.name === name);
         const isOwned = animeCard ? userStore.animeCollection.has(animeCard.id) : false;
         return { name, isOwned };
-    });
+    }) || [];
 });
 
 function closeModal() {
@@ -199,7 +199,7 @@ function handleDismantle() {
                 </div>
             </div>
 
-            <div v-if="cardType === 'character' && (card as CharacterCard).anime_names && (card as CharacterCard).anime_names.length" class="mt-4 border-t pt-4">
+            <div v-if="cardType === 'character' && (card as CharacterCard).anime_names?.length" class="mt-4 border-t pt-4">
               <h3 class="font-bold text-lg mb-2">登场作品</h3>
               <div class="flex flex-wrap gap-2">
                 <span v-for="anime in processedAnimeNames" :key="anime.name"

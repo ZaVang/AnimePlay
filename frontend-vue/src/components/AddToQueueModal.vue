@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useUserStore } from '@/stores/userStore';
-import { useGameDataStore, type Card } from '@/stores/gameDataStore';
+import { useGameDataStore} from '@/stores/gameDataStore';
+import type {AnimeCard as AnimeCardType } from '@/types/card';
 import AnimeCard from '@/components/AnimeCard.vue';
 
 const props = defineProps<{
@@ -45,7 +46,7 @@ const availableAnime = computed(() => {
       
       // 稀有度相同时按名字排序
       return a!.name.localeCompare(b!.name);
-    }) as (Card & { count: number })[];
+    }) as (AnimeCardType & { count: number })[];
 });
 
 function handleSelect(animeId: number) {

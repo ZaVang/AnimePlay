@@ -29,17 +29,14 @@ export interface CardSelectionResult {
 
 /**
  * 交互系统核心类
+ * 移除单例模式，支持依赖注入
  */
 export class InteractionSystem {
-  private static instance: InteractionSystem;
   private pendingInteraction: Promise<any> | null = null;
   private interactionManager: any = null; // Will be set by BattleView
 
-  static getInstance(): InteractionSystem {
-    if (!InteractionSystem.instance) {
-      InteractionSystem.instance = new InteractionSystem();
-    }
-    return InteractionSystem.instance;
+  constructor() {
+    // 现在是普通构造函数，支持多实例
   }
 
   /**
@@ -226,5 +223,13 @@ export class InteractionSystem {
     if (this.pendingInteraction) {
       await this.pendingInteraction;
     }
+  }
+
+  /**
+   * 清理系统资源
+   */
+  cleanup(): void {
+    this.pendingInteraction = null;
+    this.interactionManager = null;
   }
 }

@@ -1,9 +1,11 @@
 import { useGameStore, usePlayerStore, useHistoryStore } from '@/stores/battle';
 import type { Card, Skill } from '@/types';
-import { runEffect, type EffectContext } from '@/skills/effects';
+import { runEffect } from '@/skills/effects';
+import type { EffectContext } from '@/types/effects';
 import type { ClashInfo } from '@/types/battle';
-import type { AnimeCard } from '@/types/card';
+import type { AnimeCard, CharacterCard } from '@/types/card';
 import { StatusEffectSystem } from '@/core/systems/StatusEffectSystem';
+import { isAnimeCard, isCharacterCard, setCardTreatedAsAnyType, isCardTreatedAsAnyType } from '@/utils/typeGuards';
 
 export const SkillSystem = {
   /**
@@ -16,8 +18,7 @@ export const SkillSystem = {
     const historyStore = useHistoryStore();
 
     // Demo anime effect: synergy tag '日常' → draw 1
-    const isAnime = (card as any).cost !== undefined;
-    if (isAnime && card.synergy_tags?.includes('日常')) {
+    if (isAnimeCard(card) && card.synergy_tags?.includes('日常')) {
       playerStore.drawCards(playerId, 1);
       const name = playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
       historyStore.addLog(`${name} 触发卡面效果：日常系抽1张。`, 'info');
@@ -28,15 +29,14 @@ export const SkillSystem = {
     // If granted, we can mark the card as matching any synergy in later calculations.
     const consumedAnyType = StatusEffectSystem.consumeNextCardAnyType(playerId);
     if (consumedAnyType) {
-      (card as any).__treatedAsAnyType = true; // lightweight flag consumed within this clash window
+      setCardTreatedAsAnyType(card);
     }
 
     // Standardized per-card effects (onPlay)
-    if (isAnime) {
-      const anime = card as AnimeCard;
-      const onPlayEffects = anime.effects?.filter(e => e.trigger === 'onPlay') || [];
+    if (isAnimeCard(card)) {
+      const onPlayEffects = card.effects?.filter(e => e.trigger === 'onPlay') || [];
       for (const e of onPlayEffects) {
-        const ctx: EffectContext = { event: 'onPlay', playerId, role: 'attacker', card: anime };
+        const ctx: EffectContext = { event: 'onPlay', playerId, role: 'attacker', card };
         await runEffect(e.effectId, ctx);
       }
     }
@@ -94,12 +94,12 @@ export const SkillSystem = {
     let bonus = 0;
     const allChars = [...playerStore.playerA.characters, ...playerStore.playerB.characters];
     for (const character of allChars) {
-      const skills = (character as any).skills as Skill[] | undefined;
-      if (!skills) continue;
-      for (const s of skills) {
-        if (s.type !== '被动光环') continue;
+      if (!isCharacterCard(character) || !character.skills) continue;
+      
+      for (const skill of character.skills) {
+        if (skill.type !== '被动光环') continue;
         // Demo passive: 类型专家
-        if (s.id === 'AURA_GENRE_EXPERT' && card.synergy_tags?.includes('日常')) {
+        if (skill.id === 'AURA_GENRE_EXPERT' && card.synergy_tags?.includes('日常')) {
           bonus += 1;
         }
       }

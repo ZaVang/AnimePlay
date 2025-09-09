@@ -50,8 +50,8 @@ const battleResult = ref<'victory' | 'defeat' | null>(null);
 // 选中用于战斗的小队ID
 const selectedSquadForBattle = ref<number | null>(null);
 
-// 爬塔模式相关状态
-const currentTowerFloor = ref<number>(1);
+// 爬塔模式相关状态 - 使用 userStore 的数据
+const currentTowerFloor = computed(() => userStore.getCurrentChallengeFloor());
 const towerEnemyData = ref<any>(null);
 
 // 页面状态持久化键
@@ -61,8 +61,8 @@ const BATTLE_STATE_KEY = 'squadBattleState';
 function saveState() {
   const state = {
     currentPhase: currentPhase.value,
-    currentTowerFloor: currentTowerFloor.value,
     towerEnemyData: towerEnemyData.value
+    // currentTowerFloor 现在通过 userStore 持久化，不需要在这里保存
   };
   try {
     sessionStorage.setItem(BATTLE_STATE_KEY, JSON.stringify(state));
@@ -81,9 +81,10 @@ function loadState() {
       // 只恢复塔模式状态
       if (state.currentPhase === 'towerMode') {
         currentPhase.value = state.currentPhase;
-        currentTowerFloor.value = state.currentTowerFloor || 1;
         towerEnemyData.value = state.towerEnemyData;
+        // currentTowerFloor 现在从 userStore 获取，不需要恢复
         console.log('[DEBUG] State loaded:', state);
+        console.log('[DEBUG] Current tower floor from userStore:', currentTowerFloor.value);
       } else {
         console.log('[DEBUG] Reset to tower mode');
         currentPhase.value = 'towerMode';
@@ -381,12 +382,13 @@ function endBattle() {
       knowledgeReward += currentTowerFloor.value * 5;
       
       // 通过当前层并进入下一层
-      userStore.completeFloor(currentTowerFloor.value);
-      battleLog.value.push(`🏆 通过第${currentTowerFloor.value}层！`);
+      const completedFloor = currentTowerFloor.value;
+      userStore.completeFloor(completedFloor);
+      battleLog.value.push(`🏆 通过第${completedFloor}层！`);
       
-      // 自动进入下一层
-      currentTowerFloor.value = currentTowerFloor.value + 1;
-      towerEnemyData.value = null; // 清除当前层敌人数据，需要重新生成
+      // userStore.completeFloor() 已经自动将 currentFloor 推进到下一层
+      // 清除当前层敌人数据，需要重新生成下一层
+      towerEnemyData.value = null;
       battleLog.value.push(`⬆️ 自动进入第${currentTowerFloor.value}层！`);
       
       // 保存新状态

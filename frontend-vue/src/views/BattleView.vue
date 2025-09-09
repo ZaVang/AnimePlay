@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue';
+import { ref, onMounted, onBeforeUnmount, nextTick, provide, watch, computed } from 'vue';
 import { useGameStore, usePlayerStore } from '@/stores/battle';
 import { TurnManager } from '@/core/battle/TurnManager';
 import { InteractionSystem } from '@/core/systems/InteractionSystem';
 import { PersistentEffectSystem } from '@/core/systems/PersistentEffectSystem';
+import { DialogueSystem } from '@/core/systems/DialogueSystem';
+import { BATTLE_INTERACTION_SYSTEM, BATTLE_PERSISTENT_SYSTEM, BATTLE_DIALOGUE_SYSTEM } from '@/core/di/injection-keys';
+import { systemRegistry } from '@/core/di/registry';
 import type { Deck } from '@/stores/userStore';
 
 import DeckSelector from '@/components/battle/ui/DeckSelector.vue';
@@ -16,7 +19,7 @@ import BattleLog from '@/components/battle/ui/BattleLog.vue';
 import InteractionManager from '@/components/battle/InteractionManager.vue';
 import BattleDialogueManager from '@/components/battle/BattleDialogueManager.vue';
 import BattleRulesModal from '@/components/battle/ui/BattleRulesModal.vue';
-import { BattleController } from '@/core/battle/BattleController';
+import { createBattleController } from '@/core/battle/BattleController';
 
 // 开发环境下导入测试工具
 if (import.meta.env.DEV) {
@@ -33,8 +36,70 @@ const interactionManager = ref<InstanceType<typeof InteractionManager> | null>(n
 // 战斗规则弹窗
 const showRulesModal = ref(false);
 
+// 游戏结束相关状态
+const showGameOverModal = ref(false);
+const gameResult = ref<{
+  winner: 'playerA' | 'playerB' | 'draw';
+  reason: string;
+  details?: string;
+}>({
+  winner: 'draw',
+  reason: '',
+  details: ''
+});
+
+// 计算胜利信息
+const victoryInfo = computed(() => {
+  if (!gameStore.isGameOver) return null;
+  
+  const playerA = playerStore.playerA;
+  const playerB = playerStore.playerB;
+  
+  // 根据声望和话题偏向判断胜利原因
+  if (playerA.reputation <= 0) {
+    return { winner: 'playerB', reason: '声望归零', details: `${playerA.name}的声望降至0，败北！` };
+  } else if (playerB.reputation <= 0) {
+    return { winner: 'playerA', reason: '声望归零', details: `${playerB.name}的声望降至0，败北！` };
+  } else if (gameStore.topicBias >= 10) {
+    return { winner: 'playerA', reason: '议题掌控', details: `${playerA.name}完全掌控了辩论议题！` };
+  } else if (gameStore.topicBias <= -10) {
+    return { winner: 'playerB', reason: '议题掌控', details: `${playerB.name}完全掌控了辩论议题！` };
+  } else if (gameStore.turn >= 12) {
+    // 12回合后的判定
+    if (playerA.reputation > playerB.reputation) {
+      return { winner: 'playerA', reason: '声望胜利', details: `经过激烈的辩论，${playerA.name}以更高的声望获胜！` };
+    } else if (playerB.reputation > playerA.reputation) {
+      return { winner: 'playerB', reason: '声望胜利', details: `经过激烈的辩论，${playerB.name}以更高的声望获胜！` };
+    } else {
+      return { winner: 'draw', reason: '平局', details: '双方势均力敌，以平局结束！' };
+    }
+  }
+  
+  return null;
+});
+
+// 创建系统实例并通过依赖注入提供
+const interactionSystem = new InteractionSystem();
+const persistentSystem = new PersistentEffectSystem();
+const dialogueSystem = new DialogueSystem();
+
+// 提供系统实例给子组件
+provide(BATTLE_INTERACTION_SYSTEM, interactionSystem);
+provide(BATTLE_PERSISTENT_SYSTEM, persistentSystem);
+provide(BATTLE_DIALOGUE_SYSTEM, dialogueSystem);
+
+// 创建BattleController实例
+const battleController = createBattleController(dialogueSystem);
+
 // Check game state when component is mounted
 onMounted(() => {
+  // 注册系统实例到全局注册表（向后兼容）
+  systemRegistry.registerSystems({
+    interaction: interactionSystem,
+    persistent: persistentSystem,
+    dialogue: dialogueSystem
+  });
+
   // If a game is in progress (i.e., not in setup or game over phase), go directly to the battle screen.
   if (gameStore.phase !== 'setup' && gameStore.phase !== 'game_over') {
     battlePhase.value = 'battle';
@@ -43,15 +108,34 @@ onMounted(() => {
   // Set up interaction system (use nextTick to ensure component is mounted)
   nextTick(() => {
     if (interactionManager.value) {
-      const interactionSystem = InteractionSystem.getInstance();
       interactionSystem.setInteractionManager(interactionManager.value);
     }
   });
 });
 
+// 监听游戏结束状态
+watch(() => gameStore.isGameOver, (isGameOver) => {
+  if (isGameOver && victoryInfo.value) {
+    // 延迟显示结果模态框，让最后的动画完成
+    setTimeout(() => {
+      gameResult.value = {
+        winner: victoryInfo.value!.winner,
+        reason: victoryInfo.value!.reason,
+        details: victoryInfo.value!.details || ''
+      };
+      showGameOverModal.value = true;
+    }, 1500);
+  }
+}, { immediate: true });
+
 onBeforeUnmount(() => {
-  // Clean up systems when leaving battle
-  PersistentEffectSystem.getInstance().clearAll();
+  // Clean up all systems when leaving battle
+  interactionSystem.cleanup();
+  persistentSystem.cleanup();
+  dialogueSystem.cleanup();
+  
+  // 清理全局注册表
+  systemRegistry.clear();
 });
 
 function handleDeckSelected(deck: Deck, aiProfileId?: string) {
@@ -77,7 +161,7 @@ function handleRandomDeck(aiProfileId?: string) {
 }
 
 function handleSkipTurn() {
-  BattleController.skipTurn();
+  battleController.skipTurn();
 }
 
 function handleExitBattle() {
@@ -92,7 +176,11 @@ function handleExitBattle() {
       playerStore.clearPlayers();
       
       // 清理持久化效果系统
-      PersistentEffectSystem.getInstance().clearAll();
+      try {
+        systemRegistry.getPersistentEffectSystem().clearAll();
+      } catch (error) {
+        console.warn('PersistentEffectSystem not available during exit:', error);
+      }
       
       // 返回卡组选择界面
       battlePhase.value = 'deckSelection';
@@ -104,6 +192,26 @@ function handleExitBattle() {
   } catch (error) {
     console.error('❌ 退出战斗失败:', error);
   }
+}
+
+function handleGameOver() {
+  console.log('🏁 游戏结束，结果:', gameResult.value);
+  showGameOverModal.value = false;
+  
+  // 重置游戏状态并返回卡组选择
+  gameStore.resetGame();
+  playerStore.clearPlayers();
+  battlePhase.value = 'deckSelection';
+}
+
+function restartBattle() {
+  console.log('🔄 重新开始战斗');
+  showGameOverModal.value = false;
+  
+  // 重置游戏状态并返回卡组选择
+  gameStore.resetGame();
+  playerStore.clearPlayers();
+  battlePhase.value = 'deckSelection';
 }
 </script>
 
@@ -122,6 +230,53 @@ function handleExitBattle() {
       :show="showRulesModal" 
       @close="showRulesModal = false"
     />
+    
+    <!-- Game Over Modal -->
+    <div 
+      v-if="showGameOverModal" 
+      class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+      @click.self="handleGameOver"
+    >
+      <div class="bg-gray-800 text-white p-8 rounded-2xl border-2 border-gray-600 max-w-md w-full mx-4 shadow-2xl">
+        <div class="text-center">
+          <!-- Victory Icon -->
+          <div class="text-6xl mb-4">
+            <span v-if="gameResult.winner === 'playerA'">🏆</span>
+            <span v-else-if="gameResult.winner === 'playerB'">😔</span>
+            <span v-else>🤝</span>
+          </div>
+          
+          <!-- Victory Title -->
+          <h2 class="text-3xl font-bold mb-2">
+            <span v-if="gameResult.winner === 'playerA'" class="text-green-400">胜利！</span>
+            <span v-else-if="gameResult.winner === 'playerB'" class="text-red-400">失败</span>
+            <span v-else class="text-yellow-400">平局</span>
+          </h2>
+          
+          <!-- Victory Reason -->
+          <h3 class="text-xl font-semibold text-gray-300 mb-4">{{ gameResult.reason }}</h3>
+          
+          <!-- Victory Details -->
+          <p class="text-gray-400 mb-6">{{ gameResult.details }}</p>
+          
+          <!-- Action Buttons -->
+          <div class="flex gap-4 justify-center">
+            <button 
+              @click="restartBattle"
+              class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition-all duration-200"
+            >
+              再次挑战
+            </button>
+            <button 
+              @click="handleGameOver"
+              class="px-6 py-3 bg-gray-600 hover:bg-gray-700 rounded-lg font-semibold transition-all duration-200"
+            >
+              返回选择
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <!-- Phase 1: Deck Selection -->
     <div v-if="battlePhase === 'deckSelection'" class="deck-selector-wrapper">

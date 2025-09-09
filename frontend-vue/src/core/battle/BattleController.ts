@@ -6,9 +6,13 @@ import type { AnimeCard, PlayerState } from '@/types';
 import { usePlayerStore } from '@/stores/battle';
 import { useSettingsStore } from '@/stores/settings';
 import { SkillSystem } from '@/core/systems/SkillSystem';
-import { DialogueSystem } from '@/core/systems/DialogueSystem';
+import { systemRegistry } from '@/core/di/registry';
+import type { DialogueSystem } from '@/core/systems/DialogueSystem';
 
-export const BattleController = {
+// 工厂函数：创建带有依赖注入的 BattleController
+export function createBattleController(dialogueSystem: DialogueSystem) {
+  return {
+    dialogueSystem, // 保存依赖引用
   async initiateClash(animeId: number, style: '友好安利' | '辛辣点评') {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
@@ -49,17 +53,14 @@ export const BattleController = {
     historyStore.addLog(`${attackerName} 以 [${style}] 的方式打出了 [${attackingCard.name}]。`, 'clash');
 
     // 触发辩论对话系统
-    const dialogueSystem = DialogueSystem.getInstance();
-    
-    // 生成攻击对话
-    const attackDialogue = dialogueSystem.generateAttackDialogue(style, attackingCard.name);
-    dialogueSystem.addDialogue(attackerId, attackDialogue, 'speech');
+    const attackDialogue = await this.dialogueSystem.generateAttackDialogue(style, attackingCard.name, attackerId);
+    this.dialogueSystem.addDialogue(attackerId, attackDialogue, 'speech');
     
     // 如果是辛辣点评，有概率触发"异议！"动作效果
     if (style === '辛辣点评' && Math.random() < 0.3) {
-      setTimeout(() => {
-        const objectionText = dialogueSystem.generateActionDialogue('objection');
-        dialogueSystem.addDialogue(attackerId, objectionText, 'action', 'objection');
+      setTimeout(async () => {
+        const objectionText = await this.dialogueSystem.generateActionDialogue('objection', attackerId, attackingCard.name);
+        this.dialogueSystem.addDialogue(attackerId, objectionText, 'action', 'objection');
       }, 1500);
     }
 
@@ -81,7 +82,7 @@ export const BattleController = {
     }
   },
 
-  aiRespondToClash() {
+  async aiRespondToClash() {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
@@ -99,18 +100,19 @@ export const BattleController = {
       historyStore.addLog(`${defenderName} 使用 [${decision.card.name}] 进行 [${decision.style}]。`, 'clash');
       
       // 触发AI防御对话
-      const dialogueSystem = DialogueSystem.getInstance();
-      const defenseDialogue = dialogueSystem.generateDefenseDialogue(
+      const dialogueSystem = this.dialogueSystem;
+      const defenseDialogue = await dialogueSystem.generateDefenseDialogue(
         decision.style === '赞同' ? '赞同' : '反驳', 
         gameStore.clashInfo?.attackingCard.name || '',
+        defenderId,
         decision.card.name
       );
       dialogueSystem.addDialogue(defenderId, defenseDialogue, 'speech');
       
       // 如果是反驳，有概率触发反击动作效果
       if (decision.style === '反驳' && Math.random() < 0.4) {
-        setTimeout(() => {
-          const counterText = dialogueSystem.generateActionDialogue('counterattack');
+        setTimeout(async () => {
+          const counterText = await dialogueSystem.generateActionDialogue('counterattack', defenderId, decision.card.name);
           dialogueSystem.addDialogue(defenderId, counterText, 'action', 'counterattack');
         }, 2000);
       }
@@ -121,7 +123,7 @@ export const BattleController = {
       historyStore.addLog(`${defenderName} 选择不响应，跳过防御。`, 'info');
       
       // AI跳过防御时的对话
-      const dialogueSystem = DialogueSystem.getInstance();
+      const dialogueSystem = this.dialogueSystem;
       const passDialogue = "这个...我暂时没有好的反驳...";
       dialogueSystem.addDialogue(defenderId, passDialogue, 'speech');
       
@@ -174,7 +176,7 @@ export const BattleController = {
 
     // 生成跳过防御的对话 
     const defenderId = gameStore.opponentId;
-    const dialogueSystem = DialogueSystem.getInstance();
+    const dialogueSystem = this.dialogueSystem;
     const passDialogue = defenderId === 'playerA' 
       ? "这个观点...确实有些道理..." 
       : "这个...我暂时没有好的反驳...";
@@ -221,18 +223,19 @@ export const BattleController = {
     await SkillSystem.onCardPlayed(defenderId, defendingCard);
 
     // 生成玩家防御对话
-    const dialogueSystem = DialogueSystem.getInstance();
-    const defenseDialogue = dialogueSystem.generateDefenseDialogue(
+    const dialogueSystem = this.dialogueSystem;
+    const defenseDialogue = await dialogueSystem.generateDefenseDialogue(
       defenseStyle === '赞同' ? '赞同' : '反驳', 
       gameStore.clashInfo?.attackingCard.name || '',
+      defenderId,
       defendingCard.name
     );
     dialogueSystem.addDialogue(defenderId, defenseDialogue, 'speech');
     
     // 如果是反驳，有概率触发反击动作效果
     if (defenseStyle === '反驳' && Math.random() < 0.4) {
-      setTimeout(() => {
-        const counterText = dialogueSystem.generateActionDialogue('counterattack');
+      setTimeout(async () => {
+        const counterText = await dialogueSystem.generateActionDialogue('counterattack', defenderId, defendingCard.name);
         dialogueSystem.addDialogue(defenderId, counterText, 'action', 'counterattack');
       }, 2000);
     }
@@ -295,4 +298,15 @@ export const BattleController = {
       TurnManager.endTurn();
     }
   },
+  };
+}
+
+// 创建一个默认实例用于向后兼容（暂时使用 null，实际使用时需要正确的 DialogueSystem 实例）
+// TODO: 这是临时的向后兼容方案，应该逐步迁移到依赖注入
+export const BattleController = {
+  // 临时的兼容方法，会在运行时报错提示需要使用新的依赖注入方式
+  async initiateClash() {
+    throw new Error('BattleController.initiateClash() 已废弃，请使用 createBattleController(dialogueSystem).initiateClash()');
+  },
+  // 其他方法类似...
 };

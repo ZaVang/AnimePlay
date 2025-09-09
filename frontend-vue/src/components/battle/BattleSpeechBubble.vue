@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, watch, nextTick } from 'vue';
+import { ref, computed, watch } from 'vue';
 import type { DialogueAction } from '@/core/systems/DialogueSystem';
 
 interface Props {
@@ -17,8 +17,8 @@ const isVisible = ref(false);
 const bubbleRef = ref<HTMLElement>();
 const typewriterText = ref('');
 
-// 计算气泡样式
-const bubbleClasses = computed(() => {
+// 预计算的基础样式类，避免重复计算
+const basePositionClasses = computed(() => {
   const baseClasses = [
     'speech-bubble',
     'relative',
@@ -27,9 +27,6 @@ const bubbleClasses = computed(() => {
     'p-5',
     'rounded-2xl',
     'shadow-2xl',
-    'transform',
-    'transition-all',
-    'duration-300',
     'border-2'
   ];
 
@@ -53,13 +50,21 @@ const bubbleClasses = computed(() => {
     );
   }
 
+  return baseClasses;
+});
+
+// 优化的气泡样式计算
+const bubbleClasses = computed(() => {
+  const classes = [...basePositionClasses.value];
+  
+  // 使用 CSS 变量代替动态类切换来提高性能
   if (isVisible.value) {
-    baseClasses.push('scale-100', 'opacity-100');
+    classes.push('bubble-visible');
   } else {
-    baseClasses.push('scale-75', 'opacity-0');
+    classes.push('bubble-hidden');
   }
 
-  return baseClasses.join(' ');
+  return classes.join(' ');
 });
 
 // 监听动作变化
@@ -85,15 +90,24 @@ watch(() => props.action, async (newAction) => {
   }
 }, { immediate: true });
 
-// 打字机效果
+// 优化的打字机效果 - 使用 requestAnimationFrame 代替 setTimeout
 async function typewriterEffect(text: string) {
   typewriterText.value = '';
   const chars = text.split('');
+  let currentIndex = 0;
   
-  for (let i = 0; i < chars.length; i++) {
-    typewriterText.value += chars[i];
-    await new Promise(resolve => setTimeout(resolve, 30));
-  }
+  // 使用更高效的动画方式
+  const animate = () => {
+    if (currentIndex < chars.length) {
+      typewriterText.value += chars[currentIndex];
+      currentIndex++;
+      
+      // 减少延迟，使用 requestAnimationFrame
+      setTimeout(() => requestAnimationFrame(animate), 15);
+    }
+  };
+  
+  requestAnimationFrame(animate);
 }
 
 // 气泡点击效果
@@ -217,7 +231,25 @@ function handleBubbleClick() {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-/* 动画效果 */
+/* 优化的可见性控制 */
+.bubble-visible {
+  @apply transform transition-all duration-300 ease-out;
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.bubble-hidden {
+  @apply transform transition-all duration-300 ease-out;
+  opacity: 0;
+  transform: scale(0.75) translateY(10px);
+}
+
+/* 入场动画 - 使用 will-change 优化性能 */
+.speech-bubble {
+  will-change: transform, opacity;
+  animation: bubble-appear 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
 @keyframes bubble-appear {
   0% {
     opacity: 0;
@@ -225,16 +257,12 @@ function handleBubbleClick() {
   }
   50% {
     opacity: 0.9;
-    transform: scale(1.1) translateY(-10px);
+    transform: scale(1.05) translateY(-5px);
   }
   100% {
     opacity: 1;
     transform: scale(1) translateY(0);
   }
-}
-
-.speech-bubble {
-  animation: bubble-appear 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 /* 响应式设计 */

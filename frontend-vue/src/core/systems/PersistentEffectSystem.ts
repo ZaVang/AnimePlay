@@ -29,18 +29,15 @@ export interface TemporaryBonus {
 
 /**
  * 持续效果管理器
+ * 移除单例模式，支持依赖注入
  */
 export class PersistentEffectSystem {
-  private static instance: PersistentEffectSystem;
   private effects: Map<string, PersistentEffect> = new Map();
   private bonuses: Map<string, TemporaryBonus> = new Map();
   private restrictions: Map<string, any> = new Map();
 
-  static getInstance(): PersistentEffectSystem {
-    if (!PersistentEffectSystem.instance) {
-      PersistentEffectSystem.instance = new PersistentEffectSystem();
-    }
-    return PersistentEffectSystem.instance;
+  constructor() {
+    // 现在是普通构造函数，支持多实例
   }
 
   /**
@@ -267,5 +264,14 @@ export class PersistentEffectSystem {
   // 强制行动类型
   addForcedAction(playerId: 'playerA' | 'playerB', actionType: string, duration: number = 1) {
     return this.addRestriction(playerId, 'forced_action', { actionType }, duration);
+  }
+
+  /**
+   * 清理系统资源
+   */
+  cleanup(): void {
+    this.effects.clear();
+    this.bonuses.clear();
+    this.restrictions.clear();
   }
 }

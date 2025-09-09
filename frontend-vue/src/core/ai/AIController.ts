@@ -1,8 +1,22 @@
 import { useGameStore, usePlayerStore, useHistoryStore } from '@/stores/battle';
-import { BattleController } from '../battle/BattleController';
+import { createBattleController } from '../battle/BattleController';
+import { systemRegistry } from '@/core/di/registry';
 import { useSettingsStore } from '@/stores/settings';
 
 export const AIController = {
+  /**
+   * 获取BattleController实例
+   */
+  getBattleController() {
+    try {
+      const dialogueSystem = systemRegistry.getDialogueSystem();
+      return createBattleController(dialogueSystem);
+    } catch (error) {
+      console.error('Failed to get BattleController in AIController:', error);
+      throw error;
+    }
+  },
+
   /**
    * The AI's main turn logic.
    */
@@ -28,12 +42,12 @@ export const AIController = {
         const style = this.selectBattleStyle(cardToPlay, aiPlayer);
         
         historyStore.addLog(`${aiPlayer.name} 打出了 [${cardToPlay.name}]。`, 'clash');
-        BattleController.initiateClash(cardToPlay.id, style);
+        this.getBattleController().initiateClash(cardToPlay.id, style);
       } else {
         // If no card can be played, try using character skills first
         if (!this.tryUseCharacterSkill(aiPlayer)) {
           historyStore.addLog(`${aiPlayer.name} 选择结束回合。`, 'event');
-          BattleController.endTurn();
+          this.getBattleController().endTurn();
         }
       }
     }, delay);
