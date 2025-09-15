@@ -71,7 +71,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
-import { getSkillCacheStats, clearSkillCache } from '@/skills/effects';
+import { getSkillCacheStats, clearSkillCache } from '@/skills';
 import { battleStateSnapshot } from '@/core/systems/BattleStateSnapshot';
 import { useGameStore, usePlayerStore } from '@/stores/battle';
 

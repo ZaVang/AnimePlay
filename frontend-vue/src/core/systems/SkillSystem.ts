@@ -1,6 +1,6 @@
 import { useGameStore, usePlayerStore, useHistoryStore } from '@/stores/battle';
 import type { Card, Skill } from '@/types';
-import { runEffect } from '@/skills/effects';
+import { runEffect } from '@/skills';
 import type { EffectContext } from '@/types/effects';
 import type { ClashInfo } from '@/types/battle';
 import type { AnimeCard, CharacterCard } from '@/types/card';

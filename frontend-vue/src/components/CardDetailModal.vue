@@ -5,7 +5,7 @@ import { useGameDataStore } from '@/stores/gameDataStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import type { Card, AnimeCard, CharacterCard } from '@/types/card';
 import type { Skill } from '@/types/skill';
-import { getEffectText, getTriggerText } from '@/skills/effects/descriptions';
+import { getEffectText, getTriggerText } from '@/skills';
 
 const props = defineProps<{
   card: Card | null;

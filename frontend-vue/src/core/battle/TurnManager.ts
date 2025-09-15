@@ -11,7 +11,7 @@ import type { Rarity } from '@/types/card';
 import { urCharacterSkillMap } from '@/data/urCharacterSkills';
 import { systemRegistry } from '@/core/di/registry';
 import { generateRandomAIDeck } from '@/utils/randomAIDeckGenerator';
-import { clearSkillCache } from '@/skills/effects';
+import { clearSkillCache } from '@/skills';
 
 // 辅助函数：正确的数组洗牌
 function shuffleArray<T>(array: T[]): T[] {
