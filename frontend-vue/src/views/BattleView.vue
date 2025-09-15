@@ -20,6 +20,7 @@ import InteractionManager from '@/components/battle/InteractionManager.vue';
 import BattleDialogueManager from '@/components/battle/BattleDialogueManager.vue';
 import BattleRulesModal from '@/components/battle/ui/BattleRulesModal.vue';
 import { createBattleController } from '@/core/battle/BattleController';
+import PerformanceMonitor from '@/components/debug/PerformanceMonitor.vue';
 
 // 开发环境下导入测试工具
 if (import.meta.env.DEV) {
@@ -338,6 +339,9 @@ function restartBattle() {
         <PlayerField playerId="playerA" />
       </div>
     </div>
+
+    <!-- 性能监控器 (仅在开发环境中显示) -->
+    <PerformanceMonitor v-if="import.meta.env.DEV" />
   </div>
 </template>
 

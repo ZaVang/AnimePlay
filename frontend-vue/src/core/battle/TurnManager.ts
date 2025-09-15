@@ -11,6 +11,7 @@ import type { Rarity } from '@/types/card';
 import { urCharacterSkillMap } from '@/data/urCharacterSkills';
 import { systemRegistry } from '@/core/di/registry';
 import { generateRandomAIDeck } from '@/utils/randomAIDeckGenerator';
+import { clearSkillCache } from '@/skills/effects';
 
 // 辅助函数：正确的数组洗牌
 function shuffleArray<T>(array: T[]): T[] {
@@ -115,6 +116,9 @@ export const TurnManager = {
     }
 
     historyStore.clearLog();
+    
+    // 清理技能缓存以确保新游戏的状态干净
+    clearSkillCache();
     historyStore.addLog('游戏开始！正在构筑卡组...', 'event');
 
     // Player A uses the selected deck
@@ -231,6 +235,9 @@ export const TurnManager = {
     }
 
     historyStore.clearLog();
+    
+    // 清理技能缓存以确保新游戏的状态干净
+    clearSkillCache();
     historyStore.addLog('游戏开始！正在随机化卡组...', 'event');
 
     // Get random decks for Player A; AI uses configured profile or random fallback

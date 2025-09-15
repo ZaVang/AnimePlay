@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import { useGameDataStore } from '@/stores/gameDataStore'
+import { setupErrorBoundary, createVueErrorHandler } from '@/utils/errorBoundary'
 import './assets/main.css'
 
 import App from './App.vue'
@@ -8,6 +9,11 @@ import router from './router'
 
 const app = createApp(App)
 const pinia = createPinia()
+
+// 设置全局错误边界
+setupErrorBoundary()
+app.config.errorHandler = createVueErrorHandler()
+
 app.use(pinia)
 app.use(router)
 

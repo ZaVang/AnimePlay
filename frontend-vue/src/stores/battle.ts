@@ -2,6 +2,7 @@ import { defineStore } from 'pinia';
 import type { PlayerState, AnimeCard, CharacterCard, Card } from '@/types';
 import type { GameState, ClashInfo, Notification, BattleLogMessage, BattleLogType } from '@/types/battle';
 import { ResourceManager } from '@/core/systems/ResourceManager';
+import { battleStateSnapshot, type StateChange } from '@/core/systems/BattleStateSnapshot';
 
 // Helper function to create a default player state
 const createDefaultPlayer = (id: 'playerA' | 'playerB', name: string): PlayerState => ({
@@ -34,6 +35,61 @@ export const useGameStore = defineStore('game', {
     clashInfo: null, // State for the current battle clash
   }),
   actions: {
+    // 创建当前状态的快照
+    createSnapshot() {
+      const playerStore = usePlayerStore();
+      return battleStateSnapshot.createSnapshot(
+        this.$state,
+        playerStore.playerA,
+        playerStore.playerB
+      );
+    },
+
+    // 应用状态变更并创建快照
+    applyStateChangeWithSnapshot(change: StateChange) {
+      const playerStore = usePlayerStore();
+      const currentSnapshot = battleStateSnapshot.createSnapshot(
+        this.$state,
+        playerStore.playerA,
+        playerStore.playerB
+      );
+      
+      // 预测新状态（用于性能优化）
+      const nextSnapshot = battleStateSnapshot.applyChange(currentSnapshot, change);
+      
+      // 应用实际的状态变更
+      this.applyStateChange(change);
+      
+      console.debug(`[BattleStateSnapshot] 状态变更: ${change.type}`);
+    },
+
+    // 实际应用状态变更的内部方法
+    applyStateChange(change: StateChange) {
+      switch (change.type) {
+        case 'PHASE_CHANGE':
+          this.phase = change.phase;
+          break;
+        case 'PLAYER_SWITCH':
+          this.activePlayer = change.activePlayer;
+          break;
+        case 'TOPIC_BIAS_CHANGE':
+          this.topicBias = change.bias;
+          break;
+        case 'CLASH_SET':
+          this.clashInfo = change.clashInfo;
+          break;
+        case 'CLASH_CLEAR':
+          this.clashInfo = null;
+          break;
+        case 'TURN_ADVANCE':
+          this.turn++;
+          break;
+        case 'GAME_END':
+          this.phase = 'game_over';
+          break;
+      }
+    },
+
     addNotification(message: string, type: 'info' | 'warning' = 'info') {
       const id = Date.now();
       this.notifications.push({ id, message, type });
@@ -60,22 +116,28 @@ export const useGameStore = defineStore('game', {
       console.log(`Turn ${this.turn}, ${this.activePlayer}'s turn.`);
     },
     setPhase(phase: GameState['phase']) {
-      this.phase = phase;
+      // 使用快照系统记录状态变更
+      this.applyStateChangeWithSnapshot({ type: 'PHASE_CHANGE', phase });
       console.log(`Phase changed to: ${phase}`);
     },
     updateTopicBias(change: number) {
       const newBias = this.topicBias + change;
-      this.topicBias = Math.max(-10, Math.min(10, newBias));
+      const clampedBias = Math.max(-10, Math.min(10, newBias));
+      
+      // 使用快照系统记录话题偏向变更
+      this.applyStateChangeWithSnapshot({ type: 'TOPIC_BIAS_CHANGE', bias: clampedBias });
     },
     setWinner(winner: 'playerA' | 'playerB' | 'draw' | null) {
       this.winner = winner;
     },
     // Actions to manage the clash state
     setClash(clash: ClashInfo) {
-      this.clashInfo = clash;
+      // 使用快照系统记录冲突设置
+      this.applyStateChangeWithSnapshot({ type: 'CLASH_SET', clashInfo: clash });
     },
     clearClash() {
-      this.clashInfo = null;
+      // 使用快照系统记录冲突清理
+      this.applyStateChangeWithSnapshot({ type: 'CLASH_CLEAR' });
     },
     // Reset game to initial state
     resetGame() {
@@ -86,6 +148,10 @@ export const useGameStore = defineStore('game', {
       this.winner = null;
       this.clashInfo = null;
       this.notifications = [];
+      
+      // 清理战斗状态快照
+      battleStateSnapshot.clearAll();
+      
       console.log('Game state reset to initial values');
     },
   },
