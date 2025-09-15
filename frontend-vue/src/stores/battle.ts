@@ -67,7 +67,7 @@ export const useGameStore = defineStore('game', {
     applyStateChange(change: StateChange) {
       switch (change.type) {
         case 'PHASE_CHANGE':
-          this.phase = change.phase;
+          this.phase = change.phase as GameState['phase'];
           break;
         case 'PLAYER_SWITCH':
           this.activePlayer = change.activePlayer;
@@ -92,32 +92,40 @@ export const useGameStore = defineStore('game', {
 
     addNotification(message: string, type: 'info' | 'warning' = 'info') {
       const id = Date.now();
-      this.notifications.push({ id, message, type });
+      this.$patch((state) => {
+        state.notifications.push({ id, message, type });
+      });
       setTimeout(() => {
         this.removeNotification(id);
       }, 1000);
     },
     removeNotification(id: number) {
-      this.notifications = this.notifications.filter(n => n.id !== id);
+      this.$patch((state) => {
+        state.notifications = state.notifications.filter(n => n.id !== id);
+      });
     },
     startGame() {
-      this.turn = 1;
-      this.activePlayer = 'playerA';
-      this.phase = 'draw';
-      this.topicBias = 0;
-      this.clashInfo = null; // Reset clash info on new game
+      this.$patch((state) => {
+        state.turn = 1;
+        state.activePlayer = 'playerA';
+        state.phase = 'draw';
+        state.topicBias = 0;
+        state.clashInfo = null; // Reset clash info on new game
+      });
       console.log('Game started!');
     },
     nextTurn() {
-      this.turn++;
-      this.activePlayer = this.activePlayer === 'playerA' ? 'playerB' : 'playerA';
-      this.phase = 'draw';
-      this.clashInfo = null; // Clear clash info at the end of a turn
+      this.$patch((state) => {
+        state.turn++;
+        state.activePlayer = state.activePlayer === 'playerA' ? 'playerB' : 'playerA';
+        state.phase = 'draw';
+        state.clashInfo = null; // Clear clash info at the end of a turn
+      });
       console.log(`Turn ${this.turn}, ${this.activePlayer}'s turn.`);
     },
     setPhase(phase: GameState['phase']) {
       // 使用快照系统记录状态变更
-      this.applyStateChangeWithSnapshot({ type: 'PHASE_CHANGE', phase });
+      this.applyStateChangeWithSnapshot({ type: 'PHASE_CHANGE', phase: phase as any });
       console.log(`Phase changed to: ${phase}`);
     },
     updateTopicBias(change: number) {
@@ -128,7 +136,9 @@ export const useGameStore = defineStore('game', {
       this.applyStateChangeWithSnapshot({ type: 'TOPIC_BIAS_CHANGE', bias: clampedBias });
     },
     setWinner(winner: 'playerA' | 'playerB' | 'draw' | null) {
-      this.winner = winner;
+      this.$patch((state) => {
+        state.winner = winner;
+      });
     },
     // Actions to manage the clash state
     setClash(clash: ClashInfo) {
@@ -141,13 +151,15 @@ export const useGameStore = defineStore('game', {
     },
     // Reset game to initial state
     resetGame() {
-      this.turn = 1;
-      this.activePlayer = 'playerA';
-      this.phase = 'setup';
-      this.topicBias = 0;
-      this.winner = null;
-      this.clashInfo = null;
-      this.notifications = [];
+      this.$patch((state) => {
+        state.turn = 1;
+        state.activePlayer = 'playerA';
+        state.phase = 'setup';
+        state.topicBias = 0;
+        state.winner = null;
+        state.clashInfo = null;
+        state.notifications = [];
+      });
       
       // 清理战斗状态快照
       battleStateSnapshot.clearAll();
@@ -178,37 +190,49 @@ export const usePlayerStore = defineStore('players', {
       playerA_deck: AnimeCard[], playerA_chars: CharacterCard[],
       playerB_deck: AnimeCard[], playerB_chars: CharacterCard[]
     ) {
-      this.playerA.deck = [...playerA_deck];
-      this.playerA.characters = [...playerA_chars];
-      
-      this.playerB.deck = [...playerB_deck];
-      this.playerB.characters = [...playerB_chars];
+      this.$patch((state) => {
+        state.playerA.deck = [...playerA_deck];
+        state.playerA.characters = [...playerA_chars];
+        
+        state.playerB.deck = [...playerB_deck];
+        state.playerB.characters = [...playerB_chars];
+      });
     },
 
     // Shuffle deck for a specific player
     shuffleDeck(playerId: 'playerA' | 'playerB') {
       const player = this[playerId];
       const newState = ResourceManager.shuffleDeck(player);
-      this[playerId] = { ...this[playerId], ...newState };
+      this.$patch((state) => {
+        state[playerId].deck = newState.deck;
+      });
     },
 
     // Draw cards for a specific player
     drawCards(playerId: 'playerA' | 'playerB', count: number) {
       const player = this[playerId];
       const newState = ResourceManager.drawCards(player, count);
-      this[playerId] = { ...this[playerId], ...newState };
+      this.$patch((state) => {
+        state[playerId].deck = newState.deck;
+        state[playerId].hand = newState.hand;
+      });
     },
 
     // Discard a card from hand
     discardCardFromHand(playerId: 'playerA' | 'playerB', cardId: string) {
       const player = this[playerId];
       const newState = ResourceManager.discardCard(player, cardId);
-      this[playerId] = { ...this[playerId], ...newState };
+      this.$patch((state) => {
+        state[playerId].hand = newState.hand;
+        state[playerId].discardPile = newState.discardPile;
+      });
     },
 
     // Change reputation for a player
     changeReputation(playerId: 'playerA' | 'playerB', amount: number) {
-      this[playerId].reputation += amount;
+      this.$patch((state) => {
+        state[playerId].reputation += amount;
+      });
     },
     
     // Change TP for a player by a certain amount
@@ -219,7 +243,9 @@ export const usePlayerStore = defineStore('players', {
         : ResourceManager.spendTp(player, -amount);
 
       if (newTp !== null) {
-        player.tp = newTp;
+        this.$patch((state) => {
+          state[playerId].tp = newTp;
+        });
       } else {
         console.error(`${playerId} does not have enough TP to spend ${-amount}`);
       }
@@ -227,11 +253,13 @@ export const usePlayerStore = defineStore('players', {
 
     // Set max TP for a specific player and clamp current TP if necessary
     setMaxTp(playerId: 'playerA' | 'playerB', value: number) {
-      const player = this[playerId];
-      player.maxTp = value;
-      if (player.tp > value) {
-        player.tp = value;
-      }
+      // 使用函数式 $patch 仅修改叶子字段，避免深度合并触碰只读对象
+      this.$patch((state) => {
+        state[playerId].maxTp = value;
+        if (state[playerId].tp > value) {
+          state[playerId].tp = value;
+        }
+      });
     },
 
     // Sync both players' max TP to the same value
@@ -242,7 +270,9 @@ export const usePlayerStore = defineStore('players', {
 
     // Restore TP to max for a specific player
     restoreTpToMax(playerId: 'playerA' | 'playerB') {
-      this[playerId].tp = this[playerId].maxTp;
+      this.$patch((state) => {
+        state[playerId].tp = state[playerId].maxTp;
+      });
     },
 
     // Restore TP at the start of a new turn
@@ -268,8 +298,11 @@ export const usePlayerStore = defineStore('players', {
       if (characterIndex >= 0 && characterIndex < player.characters.length) {
         // 只有在实际改变主辩手时才增加轮换次数
         if (player.activeCharacterIndex !== characterIndex) {
-          player.activeCharacterIndex = characterIndex;
-          player.rotationsUsedThisTurn++;
+          // 使用 $patch 来修改状态，避免只读属性错误
+          this.$patch((state) => {
+            state[playerId].activeCharacterIndex = characterIndex;
+            state[playerId].rotationsUsedThisTurn++;
+          });
           return true;
         }
         return true; // 没有改变，但不算错误
@@ -279,7 +312,9 @@ export const usePlayerStore = defineStore('players', {
 
     // 重置玩家的轮换次数（每回合开始时调用）
     resetRotationsForNewTurn(playerId: 'playerA' | 'playerB') {
-      this[playerId].rotationsUsedThisTurn = 0;
+      this.$patch((state) => {
+        state[playerId].rotationsUsedThisTurn = 0;
+      });
     },
 
     // 检查玩家是否还能轮换
@@ -289,7 +324,9 @@ export const usePlayerStore = defineStore('players', {
 
     // Flag a player for character rotation in the next turn
     flagForRotation(playerId: 'playerA' | 'playerB') {
-      this[playerId].needsRotation = true;
+      this.$patch((state) => {
+        state[playerId].needsRotation = true;
+      });
     },
 
     // Reduce all skill cooldowns for a player by 1
@@ -302,56 +339,74 @@ export const usePlayerStore = defineStore('players', {
           newCooldowns[skillId] = remaining;
         }
       }
-      player.skillCooldowns = newCooldowns;
+      this.$patch((state) => {
+        state[playerId].skillCooldowns = newCooldowns;
+      });
     },
     setSkillCooldown(playerId: 'playerA' | 'playerB', skillId: string, duration: number) {
-      this[playerId].skillCooldowns[skillId] = duration;
+      this.$patch((state) => {
+        if (!state[playerId].skillCooldowns) {
+          state[playerId].skillCooldowns = {};
+        }
+        state[playerId].skillCooldowns[skillId] = duration;
+      });
     },
 
     // Hand manipulation methods for complex interactions
     addCardToHand(playerId: 'playerA' | 'playerB', card: AnimeCard) {
-      this[playerId].hand.push(card);
+      this.$patch((state) => {
+        state[playerId].hand.push(card);
+      });
     },
 
     removeCardFromHand(playerId: 'playerA' | 'playerB', card: AnimeCard) {
-      const hand = this[playerId].hand;
-      const index = hand.findIndex(c => c.id === card.id);
-      if (index !== -1) {
-        hand.splice(index, 1);
-      }
+      this.$patch((state) => {
+        const hand = state[playerId].hand;
+        const index = hand.findIndex(c => c.id === card.id);
+        if (index !== -1) {
+          hand.splice(index, 1);
+        }
+      });
     },
 
     // Move card from deck top to specific position or hand
     moveCardFromDeck(playerId: 'playerA' | 'playerB', fromIndex: number, toHand: boolean = true) {
-      const player = this[playerId];
-      if (fromIndex >= 0 && fromIndex < player.deck.length) {
-        const card = player.deck.splice(fromIndex, 1)[0];
-        if (toHand) {
-          player.hand.push(card);
+      let result: AnimeCard | null = null;
+      this.$patch((state) => {
+        const player = state[playerId];
+        if (fromIndex >= 0 && fromIndex < player.deck.length) {
+          const card = player.deck.splice(fromIndex, 1)[0];
+          if (toHand) {
+            player.hand.push(card);
+          }
+          result = card;
         }
-        return card;
-      }
-      return null;
+      });
+      return result;
     },
 
     // Reorder deck (for library manipulation effects)
     reorderDeckTop(playerId: 'playerA' | 'playerB', newOrder: AnimeCard[]) {
-      const player = this[playerId];
-      // Remove the cards from their current positions
-      newOrder.forEach(card => {
-        const index = player.deck.findIndex(c => c.id === card.id);
-        if (index !== -1) {
-          player.deck.splice(index, 1);
-        }
+      this.$patch((state) => {
+        const player = state[playerId];
+        // Remove the cards from their current positions
+        newOrder.forEach(card => {
+          const index = player.deck.findIndex(c => c.id === card.id);
+          if (index !== -1) {
+            player.deck.splice(index, 1);
+          }
+        });
+        // Add them back at the top in the specified order
+        player.deck.unshift(...newOrder);
       });
-      // Add them back at the top in the specified order
-      player.deck.unshift(...newOrder);
     },
 
     // Clear all player data and reset to defaults
     clearPlayers() {
-      this.playerA = createDefaultPlayer('playerA', 'Player 1');
-      this.playerB = createDefaultPlayer('playerB', 'Player 2');
+      this.$patch((state) => {
+        state.playerA = createDefaultPlayer('playerA', 'Player 1');
+        state.playerB = createDefaultPlayer('playerB', 'Player 2');
+      });
       console.log('Player states cleared and reset to defaults');
     }
   },
@@ -387,7 +442,9 @@ export const useHistoryStore = defineStore('battleHistory', {
         message,
         type
       };
-      this.log.push(logEntry);
+      this.$patch((state) => {
+        state.log.push(logEntry);
+      });
       console.log(`[Battle Log] ${message}`);
     },
     // Keep the old method name for compatibility
@@ -395,7 +452,9 @@ export const useHistoryStore = defineStore('battleHistory', {
       this.addEntry(message, type);
     },
     clearLog() {
-      this.log = [];
+      this.$patch((state) => {
+        state.log = [];
+      });
     }
   }
 });

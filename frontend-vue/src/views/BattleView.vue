@@ -34,6 +34,9 @@ const playerStore = usePlayerStore();
 const battlePhase = ref<BattlePhase>('deckSelection');
 const interactionManager = ref<InstanceType<typeof InteractionManager> | null>(null);
 
+// 开发环境标记
+const isDev = import.meta.env.DEV;
+
 // 战斗规则弹窗
 const showRulesModal = ref(false);
 
@@ -120,7 +123,7 @@ watch(() => gameStore.isGameOver, (isGameOver) => {
     // 延迟显示结果模态框，让最后的动画完成
     setTimeout(() => {
       gameResult.value = {
-        winner: victoryInfo.value!.winner,
+        winner: victoryInfo.value!.winner as 'playerA' | 'playerB' | 'draw',
         reason: victoryInfo.value!.reason,
         details: victoryInfo.value!.details || ''
       };
@@ -341,7 +344,7 @@ function restartBattle() {
     </div>
 
     <!-- 性能监控器 (仅在开发环境中显示) -->
-    <PerformanceMonitor v-if="import.meta.env.DEV" />
+    <PerformanceMonitor v-if="isDev" />
   </div>
 </template>
 

@@ -3,14 +3,14 @@
  * 使用不可变数据结构优化频繁的状态变更，提升性能和支持撤销/重做
  */
 import type { PlayerState } from '@/types';
-import type { ClashInfo } from '@/types/battle';
+import type { ClashInfo, GameState } from '@/types/battle';
 
 // 战斗状态的快照接口
 export interface BattleSnapshot {
   readonly id: string;
   readonly timestamp: number;
   readonly turn: number;
-  readonly phase: 'setup' | 'action' | 'defense' | 'resolve' | 'game_over';
+  readonly phase: GameState['phase'];
   readonly activePlayer: 'playerA' | 'playerB';
   readonly topicBias: number;
   readonly playerA: Readonly<PlayerState>;
@@ -63,9 +63,10 @@ export class BattleStateSnapshot {
       phase: gameState.phase,
       activePlayer: gameState.activePlayer,
       topicBias: gameState.topicBias,
-      playerA: this.freezeDeep(playerAState),
-      playerB: this.freezeDeep(playerBState),
-      clashInfo: gameState.clashInfo ? this.freezeDeep(gameState.clashInfo) : undefined,
+      // 先深拷贝再冻结，避免冻结 Pinia 实际状态对象
+      playerA: this.freezeDeep(this.cloneDeep(playerAState)),
+      playerB: this.freezeDeep(this.cloneDeep(playerBState)),
+      clashInfo: gameState.clashInfo ? this.freezeDeep(this.cloneDeep(gameState.clashInfo)) : undefined,
       isGameOver: gameState.isGameOver
     };
 
@@ -94,6 +95,23 @@ export class BattleStateSnapshot {
     });
 
     return Object.freeze(obj);
+  }
+
+  /**
+   * 对象深拷贝（仅用于快照）
+   */
+  private cloneDeep<T>(obj: T): T {
+    if (obj === null || typeof obj !== 'object') {
+      return obj;
+    }
+    if (Array.isArray(obj)) {
+      return (obj.map(item => this.cloneDeep(item)) as unknown) as T;
+    }
+    const result: any = {};
+    for (const key of Object.keys(obj as any)) {
+      result[key] = this.cloneDeep((obj as any)[key]);
+    }
+    return result as T;
   }
 
   /**

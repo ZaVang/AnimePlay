@@ -10,9 +10,9 @@ import router from './router'
 const app = createApp(App)
 const pinia = createPinia()
 
-// 设置全局错误边界
-setupErrorBoundary()
-app.config.errorHandler = createVueErrorHandler()
+// 设置全局错误边界 - 临时禁用以便调试
+// setupErrorBoundary()
+// app.config.errorHandler = createVueErrorHandler()
 
 app.use(pinia)
 app.use(router)
