@@ -52,12 +52,7 @@ const 轮回记忆: SkillEffect = (ctx: EffectContext) => {
     data: { recoveryChance: 0.25 },
     description: '轮回记忆：失败卡牌25%几率回收',
     onApply: () => {
-      EffectPatterns.logSkillActivation(
-        helpers,
-        ctx.playerId,
-        '轮回记忆',
-        '失败卡牌有概率回收到手牌'
-      );
+      // 轮回记忆静默应用，只在实际回收卡牌时才显示提示
     }
   });
 };

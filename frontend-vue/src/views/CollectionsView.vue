@@ -230,12 +230,12 @@ const filteredCharacterCards = computed(() => {
             @item-click="openDetail($event, 'anime')"
           >
             <template #default="{ item }">
-              <AnimeCard :anime="item as AnimeCardType & { count: number }" :count="item.count" />
+              <AnimeCard :anime="item as AnimeCardType & { count: number }" :count="item.count" :show-strength="true" />
             </template>
           </VirtualGrid>
           <!-- 传统版本（数据量少时使用） -->
           <div v-else class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-4">
-            <AnimeCard v-for="card in filteredAnimeCards" :key="card.id" :anime="card" :count="card.count" @click="openDetail(card, 'anime')"/>
+            <AnimeCard v-for="card in filteredAnimeCards" :key="card.id" :anime="card" :count="card.count" :show-strength="true" @click="openDetail(card, 'anime')"/>
           </div>
         </div>
 

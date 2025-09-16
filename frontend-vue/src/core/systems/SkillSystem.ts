@@ -10,35 +10,13 @@ import { isAnimeCard, isCharacterCard, setCardTreatedAsAnyType, isCardTreatedAsA
 export const SkillSystem = {
   /**
    * Called when a card is played by attacker or defender.
-   * Minimal demo: if an anime card has '日常'标签，则为该玩家抽1张牌。
    */
   async onCardPlayed(playerId: 'playerA' | 'playerB', card: Card) {
-    const playerStore = usePlayerStore();
-    const gameStore = useGameStore();
-    const historyStore = useHistoryStore();
-
-    // Demo anime effect: synergy tag '日常' → draw 1
-    if (isAnimeCard(card) && card.synergy_tags?.includes('日常')) {
-      playerStore.drawCards(playerId, 1);
-      const name = playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-      historyStore.addLog(`${name} 触发卡面效果：日常系抽1张。`, 'info');
-      gameStore.addNotification('日常系：抽1张', 'info');
-    }
-
     // StatusEffect: NEXT_CARD_ANY_TYPE
     // If granted, we can mark the card as matching any synergy in later calculations.
     const consumedAnyType = StatusEffectSystem.consumeNextCardAnyType(playerId);
     if (consumedAnyType) {
       setCardTreatedAsAnyType(card);
-    }
-
-    // Standardized per-card effects (onPlay)
-    if (isAnimeCard(card)) {
-      const onPlayEffects = card.effects?.filter(e => e.trigger === 'onPlay') || [];
-      for (const e of onPlayEffects) {
-        const ctx: EffectContext = { event: 'onPlay', playerId, role: 'attacker', card };
-        await runEffect(e.effectId, ctx);
-      }
     }
   },
 
@@ -85,25 +63,51 @@ export const SkillSystem = {
 
   /**
    * Aggregates passive aura bonuses that affect strength.
-   * Minimal demo: AURA_GENRE_EXPERT → 同类型（日常）+1 强度
+   * 只执行影响强度计算的被动技能
    */
   getAuraStrengthBonus(card: Card | undefined, actingPlayerId: 'playerA' | 'playerB'): number {
     if (!card) return 0;
     const playerStore = usePlayerStore();
 
     let bonus = 0;
+
+    // 创建一个临时的加成函数
+    const addStrengthBonus = (role: 'attacker' | 'defender', amount: number) => {
+      bonus += amount;
+    };
+
+    // 只检查真正影响强度的被动技能（白名单）
+    const strengthPassiveSkills = [
+      '安原绘麻_内向专注',  // 手牌≥7时强度+1
+      'AURA_GENRE_EXPERT'  // 类型专家技能
+    ];
+
+    // 检查所有角色的被动技能
     const allChars = [...playerStore.playerA.characters, ...playerStore.playerB.characters];
     for (const character of allChars) {
       if (!isCharacterCard(character) || !character.skills) continue;
-      
+
       for (const skill of character.skills) {
         if (skill.type !== '被动光环') continue;
-        // Demo passive: 类型专家
-        if (skill.id === 'AURA_GENRE_EXPERT' && card.synergy_tags?.includes('日常')) {
-          bonus += 1;
+
+        // 只执行白名单中的强度加成技能
+        if (skill.effectId && strengthPassiveSkills.includes(skill.effectId)) {
+          try {
+            // 同步调用被动技能，传入beforeResolve事件
+            runEffect(skill.effectId, {
+              event: 'beforeResolve',
+              playerId: actingPlayerId,
+              role: 'attacker',
+              card: card as AnimeCard,
+              addStrengthBonus
+            });
+          } catch (error) {
+            console.warn(`执行强度加成技能 ${skill.effectId} 时出错:`, error);
+          }
         }
       }
     }
+
     return bonus;
   },
   /**

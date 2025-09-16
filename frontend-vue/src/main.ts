@@ -22,6 +22,13 @@ const gameDataStore = useGameDataStore(pinia);
 gameDataStore.fetchGameData().then(() => {
   app.mount('#app');
   console.log('App mounted after game data has been fetched.');
+
+  // 开发环境调试工具
+  if (import.meta.env.DEV) {
+    import('./debug/skillDebug').then(module => {
+      setTimeout(() => module.debugSkillSystem(), 1000);
+    });
+  }
 }).catch(error => {
   console.error("Failed to fetch game data before mounting:", error);
   // Optionally, you can show an error message to the user on the screen here

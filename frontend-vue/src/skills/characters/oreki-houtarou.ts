@@ -50,12 +50,7 @@ const 省力主义: SkillEffect = (ctx: EffectContext) => {
     }
   });
   
-  EffectPatterns.logSkillActivation(
-    helpers,
-    ctx.playerId,
-    '省力主义',
-    '跳过攻击机会降低卡牌成本！'
-  );
+  // 省力主义技能静默应用，只在实际跳过攻击时才显示提示
 };
 
 /**

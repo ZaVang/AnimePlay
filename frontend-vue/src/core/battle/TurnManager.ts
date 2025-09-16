@@ -312,16 +312,20 @@ export const TurnManager = {
     const nonActivePlayer = gameStore.activePlayer === 'playerA' ? 'playerB' : 'playerA';
     playerStore.restoreTpToMax(nonActivePlayer);
 
-    // 2. Draw a card for the active player (at the start of their turn)
-    playerStore.drawCards(gameStore.activePlayer, 1);
+    // 2. Draw a card for both players (at the start of each turn)
+    playerStore.drawCards('playerA', 1);
+    playerStore.drawCards('playerB', 1);
+    historyStore.addLog('双方各抽取1张卡牌', 'event');
     
     // 3. Reset character rotation count for the active player
     playerStore.resetRotationsForNewTurn(gameStore.activePlayer);
     
     // Debug: Check hand sizes after drawing
-    console.log(`回合 ${gameStore.turn} 开始后手牌状态:`, {
-      playerA: playerStore.playerA.hand.length,
-      playerB: playerStore.playerB.hand.length,
+    console.log(`回合 ${gameStore.turn} 开始 - 双方各抽1张牌后状态:`, {
+      playerA_hand: playerStore.playerA.hand.length,
+      playerA_deck: playerStore.playerA.deck.length,
+      playerB_hand: playerStore.playerB.hand.length,
+      playerB_deck: playerStore.playerB.deck.length,
       activePlayer: gameStore.activePlayer
     });
 

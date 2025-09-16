@@ -35,40 +35,106 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Architecture
 
-This is a Vue 3 + TypeScript anime-themed card battle game using Vite, Pinia for state management, and TailwindCSS for styling.
+This is a Vue 3 + TypeScript anime-themed card battle game featuring advanced dependency injection, comprehensive state management, and modular system design. Built with Vite, Pinia for state management, and TailwindCSS for styling.
 
-### Core Game Architecture
+### Core Architecture Patterns
 
-**Game Flow**: The application loads master data (anime/character cards, skills) at startup via `gameDataStore.fetchGameData()` before mounting the Vue app.
+**Application Bootstrap**: The app loads master data at startup via `gameDataStore.fetchGameData()` in `main.ts` before mounting the Vue app. Development mode includes debug tools for skill system analysis.
 
-**State Management** (Pinia stores):
-- `gameDataStore` - Master data for anime cards, character cards, and skills
-- `userStore` - User authentication, collections, decks, and gacha system
-- Battle stores (`gameStore`, `playerStore`, `historyStore`) - Turn-based battle state
+**Dependency Injection**: Advanced DI system (`/src/core/di/`) provides centralized service registration and composable-based injection for battle systems:
+- `InteractionSystem` - Manages complex user interactions (hand viewing, card selection)
+- `PersistentEffectSystem` - Handles cross-turn effects and temporary bonuses
+- `DialogueSystem` - Manages character dialogue and narrative elements
 
-**Battle System**:
-- **Turn Management**: `TurnManager` handles game initialization, turn flow, and victory conditions
-- **Skill System**: Character skills defined in `/src/skills/` with effects in `/src/skills/effects/index.ts`
-- **AI System**: AI opponents in `/src/core/ai/` with different strategies and profiles
+**State Management Architecture** (Pinia stores):
+- `gameDataStore` - Master data (anime/character cards, skills) with card binding logic
+- `userStore` - Comprehensive user state (authentication, collections, decks, gacha, character nurturing)
+- Battle stores (`gameStore`, `playerStore`, `historyStore`) - Turn-based battle state with snapshot system
+- `gachaStore` - Gacha mechanics and probability calculations
+- `settings` - User preferences and configuration
 
-### Key Directories
+### Core Game Systems
 
-**Data Layer**:
-- `/src/data/` - Static game data and generated UR character skills
-- `/src/config/` - Game configuration (rarities, costs, AI profiles)
+**Battle System** (`/src/core/battle/`):
+- **TurnManager**: Game initialization, turn flow, victory conditions, and AI integration
+- **BattleController**: Orchestrates battle phases and state transitions
+- **SkillSystem**: Handles skill execution, cooldowns, and effect triggers
 
-**Battle System**:
-- `/src/core/battle/` - Core battle logic (TurnManager, etc.)
-- `/src/core/ai/` - AI controllers and strategies
-- `/src/core/systems/` - Game systems (status effects, etc.)
+**Calculation Engine** (`/src/core/calculation/`):
+- **BattleEngine**: Core combat calculations and clash resolution
+- **StrengthCalculator**: Card strength and synergy calculations
+- **RewardCalculator**: Experience and progression rewards
 
-**Skills System**:
-- `/src/skills/` - Skill definitions and effect handlers
-- `/src/skills/effects/` - 130+ skill effect implementations
+**System Registry** (`/src/core/systems/`):
+- **StatusEffectSystem**: Manages temporary effects and status conditions
+- **ResourceManager**: Handles deck manipulation, card drawing, and TP management
+- **BattleStateSnapshot**: State tracking and rollback capabilities
+- **SkillCache**: Performance optimization for skill lookups
 
-**UI Components**:
-- `/src/components/battle/` - Battle-specific UI components
-- `/src/components/` - General UI components (cards, modals, etc.)
+**AI System** (`/src/core/ai/`):
+- **AIController**: AI decision making and turn execution
+- **aiProfiles**: Predefined AI personalities and strategies
+- Random deck generation and adaptive difficulty
+
+### Skills Architecture
+
+**Skills System** (`/src/skills/`):
+- **registry.ts**: Centralized skill effect registration and execution
+- **library.ts**: Skill definitions with metadata and triggers
+- **utils.ts**: Effect helpers and common patterns
+- **characters/**: 64 individual character skill implementations (128 total skills)
+
+**Skill Execution Flow**:
+1. Skills registered in `registry.ts` with effect handlers
+2. Effects triggered through `runEffect()` with context
+3. All effects support async operations and complex interactions
+4. Character skills mapped via `characterSkillsMap.ts`
+
+### User Experience Systems
+
+**Character Nurturing** (`/src/components/nurture/`):
+- **Character Development**: Level progression, attribute enhancement, affection systems
+- **Battle Enhancements**: Percentage-based stat bonuses for combat
+- **Interaction System**: Deep character interactions, gift system, dialogue trees
+
+**Collection Management**:
+- **Gacha System**: Multi-layered probability with pity mechanics
+- **Deck Building**: Advanced deck editor with validation
+- **Progress Tracking**: Tower climbing, viewing queue, achievement system
+
+### Data Architecture
+
+**Master Data** (`/src/data/`):
+- `characterSkillsMap.ts` - Character to skill binding mappings
+- `urCharacterSkills.ts` - Generated UR character skill definitions
+- `characterDefaultSkills.ts` - Fallback skills by rarity
+
+**Configuration** (`/src/config/`):
+- `gameConfig.ts` - Centralized game balance and system parameters
+
+**Types** (`/src/types/`):
+- Comprehensive TypeScript definitions for all game entities
+- Effect context and skill definition types
+- Battle state and interaction interfaces
+
+### UI Component Architecture
+
+**Battle Interface** (`/src/components/battle/`):
+- **Arena Components**: Field visualization, clash zones, topic bias indicators
+- **Character System**: Lineup management, action modals, skill interfaces
+- **Interaction Management**: Modal system for complex user choices
+- **UI Controls**: Turn management, notifications, battle logs
+
+**Game Features** (`/src/components/`):
+- **Collection System**: Card displays, favorites, statistics
+- **Deck Management**: Advanced deck editor with drag-drop
+- **Gacha Interface**: Multi-pull animations, history tracking
+- **Character Nurturing**: Training systems, interaction panels
+
+**Utility Systems** (`/src/utils/`):
+- Performance monitoring and error boundaries
+- AI deck generation and testing utilities
+- Image management and type guards
 
 ### Important Technical Details
 
@@ -88,106 +154,3 @@ This is a Vue 3 + TypeScript anime-themed card battle game using Vite, Pinia for
 
 **Turn Integration**: Persistent effects are automatically processed at turn start/end via TurnManager integration.
 ---
-# 番组游戏优化计划
-
-## 🚀 高优先级优化 (进行中)
-
-1. 代码结构优化
-
-- 大组件拆分: NurtureActions.vue (867行) 和 InteractionPanel.vue (635行) 过于庞大，建议拆分为多个专职组件
-- 类型安全: 发现多个文件中有TODO注释提及类型优化需求，特别是技能系统中的类型定义
-- 依赖注入优化: 过多的单例模式 (InteractionSystem.getInstance()) 可考虑使用Vue的provide/inject
-
-2. 性能优化亮点 ⭐
-
-你已经实现了很多优秀的性能优化:
-- ✅ 虚拟化组件 (VirtualGrid)
-- ✅ 缓存系统 (gachaRotation)
-- ✅ 智能阈值控制
-
-建议进一步优化:
-- ✅ 技能系统缓存: 130+技能效果已实现智能缓存系统
-- ✅ 战斗状态快照: 频繁的状态变更已使用不可变数据结构优化
-- 资源懒加载: 角色养成的大量图片资源可按需加载
-
-## 🎯 新增性能优化系统 (已完成)
-
-### 1. 技能系统缓存 (`/src/core/systems/SkillCache.ts`)
-- **智能缓存策略**: 自动识别纯函数式技能效果，仅缓存无副作用的计算结果
-- **LRU淘汰机制**: 限制缓存大小，自动清理最少使用的缓存条目
-- **命中率统计**: 实时监控缓存命中率，优化缓存策略
-- **预热机制**: 游戏开始时可预计算常用技能效果
-- **集成方式**: 在 `runEffect()` 中透明集成，不影响现有技能逻辑
-
-### 2. 战斗状态快照系统 (`/src/core/systems/BattleStateSnapshot.ts`)
-- **不可变数据**: 使用 `Object.freeze()` 创建不可变状态快照
-- **撤销/重做**: 支持完整的状态历史管理和时间旅行调试
-- **差异检测**: 智能比较状态变更，减少不必要的更新
-- **内存管理**: 自动限制快照数量，防止内存泄漏
-- **检查点系统**: 支持在关键游戏节点创建命名检查点
-
-### 3. 实时性能监控 (`/src/components/debug/PerformanceMonitor.vue`)
-- **多维度监控**: 缓存命中率、内存使用、FPS、渲染时间
-- **开发工具**: 仅在开发环境显示，支持快捷键 `Ctrl+Shift+P` 开关
-- **数据导出**: 可导出性能统计数据供分析
-- **实时更新**: 每秒更新统计数据，提供实时反馈
-
-### 性能优化效果预估
-- **技能计算性能**: 重复技能效果缓存命中可提升30-50%执行效率
-- **状态管理性能**: 不可变数据结构减少70%不必要的响应式更新
-- **内存使用**: 快照系统智能管理，内存使用增长控制在5MB以内
-- **调试效率**: 状态历史和撤销功能显著提升调试体验
-
-3. 用户体验提升
-
-// 建议添加全局错误边界
-// src/utils/errorBoundary.ts
-export const setupErrorBoundary = () => {
-window.addEventListener('unhandledrejection', handleAsyncError);
-window.addEventListener('error', handleSyncError);
-}
-
-4. 架构升级建议
-
-状态管理分层:
-// 当前: 大而全的store
-// 建议: 按功能域拆分
-stores/
-├── game/          # 游戏核心
-├── battle/        # 战斗系统
-├── character/     # 角色系统
-└── ui/           # UI状态
-
-组件组织:
-components/
-├── base/          # 基础组件
-├── business/      # 业务组件
-├── layout/        # 布局组件
-└── feature/       # 功能组件
-
-🚀 即时优化项目
-
-高优先级 (1-2天)
-
-1. 内存泄漏检查: 养成系统的定时器清理
-2. 错误边界: 全局错误处理机制
-3. 加载优化: 首屏加载时间优化
-
-中优先级 (1周)
-
-1. 组件拆分: 大型组件模块化
-2. 测试覆盖: 关键业务逻辑单测
-3. 类型完善: 减少any使用
-
-低优先级 (长期)
-
-1. 微前端: 如果项目继续扩大可考虑
-2. 国际化: i18n支持
-3. PWA: 离线体验
-
-📊 技术债务清理
-
-从TODO注释分析发现的技术债:
-- 技能系统类型定义需要完善
-- AI系统策略算法可优化
-- 交互系统的异步处理需要统一

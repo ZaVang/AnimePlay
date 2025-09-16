@@ -2,6 +2,8 @@
 import { computed } from 'vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { useUserStore } from '@/stores/userStore';
+import { useGameStore, usePlayerStore } from '@/stores/battle';
+import { CostCalculator } from '@/core/calculation/CostCalculator';
 import type { AnimeCard } from '@/types/card';
 
 const props = defineProps<{
@@ -11,14 +13,58 @@ const props = defineProps<{
   isDuplicate?: boolean;
   isInDeck?: boolean;
   showCost?: boolean; // New prop to control cost visibility
+  showStrength?: boolean; // New prop to control strength visibility
+  playerId?: 'playerA' | 'playerB'; // New prop for cost calculation
 }>();
 
 const userStore = useUserStore();
+const gameStore = useGameStore();
+const playerStore = usePlayerStore();
 
 const rarityData = computed(() => GAME_CONFIG.animeSystem.rarityConfig[props.anime.rarity] || {});
 const rarityColorClass = computed(() => rarityData.value.c || 'bg-gray-500');
 const rarityEffectClass = computed(() => rarityData.value.effect || '');
 const isFavorite = computed(() => userStore.isFavorite(props.anime.id, 'anime'));
+
+// 根据稀有度计算基础强度
+const baseStrength = computed(() => {
+  const rarityStrength = {
+    'UR': 10,
+    'HR': 8,
+    'SSR': 6,
+    'SR': 4,
+    'R': 3,
+    'N': 2
+  };
+  return props.anime.points || rarityStrength[props.anime.rarity as keyof typeof rarityStrength] || 2;
+});
+
+// 计算卡牌费用（考虑减免效果）
+const costInfo = computed(() => {
+  const baseCost = props.anime.cost || 0;
+
+  // 只在战斗状态下计算费用修改
+  if (props.playerId && gameStore) {
+    try {
+      return CostCalculator.getCostModification(props.anime, props.playerId);
+    } catch {
+      // 如果计算失败，返回基础费用
+      return {
+        baseCost,
+        finalCost: baseCost,
+        reduction: 0,
+        hasModification: false
+      };
+    }
+  }
+
+  return {
+    baseCost,
+    finalCost: baseCost,
+    reduction: 0,
+    hasModification: false
+  };
+});
 
 function onImageError(event: Event) {
   const target = event.target as HTMLImageElement;
@@ -42,9 +88,13 @@ function toggleFavorite(event: MouseEvent) {
     :data-item-id="anime.id"
     data-item-type="动画"
   >
-    <!-- Cost Gem: Now with conditional rendering -->
-    <div v-if="anime.cost > 0 && showCost" class="cost-gem">
-      {{ anime.cost }}
+    <!-- Cost Gem: Now with conditional rendering and cost modification display -->
+    <div v-if="anime.cost > 0 && showCost" class="cost-gem" :class="{ 'cost-modified': costInfo.hasModification }">
+      <span v-if="!costInfo.hasModification">{{ costInfo.finalCost }}</span>
+      <span v-else class="cost-with-modification">
+        <span class="original-cost">{{ costInfo.baseCost }}</span>
+        <span class="final-cost">{{ costInfo.finalCost }}</span>
+      </span>
     </div>
 
     <div class="relative">
@@ -95,6 +145,17 @@ function toggleFavorite(event: MouseEvent) {
     
     <div class="p-2">
       <p class="text-xs text-center font-bold truncate text-gray-900" :title="anime.name">{{ anime.name }}</p>
+      <!-- Strength display next to cost -->
+      <div v-if="showStrength" class="flex justify-center items-center gap-2 mt-1">
+        <div class="flex items-center text-xs text-gray-600">
+          <span class="text-blue-600 font-bold">{{ baseStrength }}</span>
+          <span class="ml-1">强度</span>
+        </div>
+        <div v-if="anime.cost > 0" class="flex items-center text-xs text-gray-600">
+          <span class="text-purple-600 font-bold">{{ anime.cost }}</span>
+          <span class="ml-1">TP</span>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -122,5 +183,41 @@ function toggleFavorite(event: MouseEvent) {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 20;
+  transition: all 0.3s ease;
+}
+
+.cost-gem.cost-modified {
+  background: linear-gradient(45deg, #22c55e, #16a34a);
+  border-color: #dcfce7;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+  animation: pulse-glow 2s infinite;
+}
+
+.cost-with-modification {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+}
+
+.original-cost {
+  font-size: 14px;
+  text-decoration: line-through;
+  opacity: 0.7;
+  margin-bottom: -2px;
+}
+
+.final-cost {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 16px rgba(34, 197, 94, 0.6);
+  }
 }
 </style>

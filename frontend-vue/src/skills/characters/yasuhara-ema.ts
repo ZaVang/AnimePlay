@@ -42,19 +42,12 @@ const 原画创作: SkillEffect = (ctx: EffectContext) => {
  */
 const 内向专注: SkillEffect = (ctx: EffectContext) => {
   const helpers = getEffectHelpers(ctx);
-  
+
   if (ctx.event === 'beforeResolve' && ctx.addStrengthBonus) {
     if (helpers.playerStore[ctx.playerId].hand.length >= 7) {
       ctx.addStrengthBonus(ctx.role, 1);
-      
-      EffectPatterns.logSkillActivation(
-        helpers,
-        ctx.playerId,
-        '内向专注',
-        '手牌充足，卡牌强度+1！'
-      );
-      
-      console.log('内向专注：手牌充足，卡牌强度+1');
+
+      // 技能效果静默应用，避免在强度预览时产生过多提示
     }
   }
 };

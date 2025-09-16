@@ -7,6 +7,7 @@ import type { AnimeCard as AnimeCardType } from '@/types/card'; // Renamed to av
 import AnimeCard from '@/components/AnimeCard.vue'; // Using the main component
 import CardActionModal from '@/components/battle/ui/CardActionModal.vue';
 import CardDetailModal from '@/components/CardDetailModal.vue';
+import CardStrengthPreview from '@/components/battle/ui/CardStrengthPreview.vue';
 import { useUserStore } from '@/stores/userStore';
 
 const props = defineProps<{
@@ -84,7 +85,11 @@ function handlePlayCard(style: '友好安利' | '辛辣点评' | '赞同' | '反
       @contextmenu.prevent="onCardRightClick(card)"
     >
       <!-- Using the main AnimeCard component and showing cost -->
-      <AnimeCard v-if="!isOpponent" :anime="card" :show-cost="true" />
+      <div v-if="!isOpponent" class="card-wrapper">
+        <AnimeCard :anime="card" :show-cost="true" :player-id="playerId" />
+        <!-- 添加强度预览组件 -->
+        <CardStrengthPreview :card="card" :player-id="playerId" />
+      </div>
       <div v-else class="card-back"></div>
     </div>
 
@@ -112,6 +117,9 @@ function handlePlayCard(style: '友好安利' | '辛辣点评' | '赞同' | '反
 }
 .card-container {
   @apply w-32 h-48 cursor-pointer transform hover:-translate-y-4 transition-transform duration-300;
+}
+.card-wrapper {
+  @apply relative w-full h-full;
 }
 .card-back {
   @apply w-full h-full bg-blue-900 border-2 border-blue-400 rounded-lg;
