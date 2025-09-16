@@ -119,7 +119,11 @@ function formatTime(timestamp: number) {
 
 <template>
   <div>
-    <h3 class="text-lg font-semibold mb-4">{{ gachaType === 'anime' ? '动画抽卡历史' : '角色抽卡历史' }} (总计: {{ historyWithDetails.length }}抽)</h3>
+    <h3 class="text-lg font-semibold mb-2">{{ gachaType === 'anime' ? '动画抽卡历史' : '角色抽卡历史' }} (总计: {{ historyWithDetails.length }}抽)</h3>
+    <p class="text-sm text-gray-600 mb-4">
+      <i class="fas fa-info-circle mr-1"></i>
+      仅显示最近500抽的历史记录和统计数据
+    </p>
     <div v-if="historyWithDetails.length > 0" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
       <!-- Chart -->
       <div class="relative h-96">

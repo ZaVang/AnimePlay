@@ -51,12 +51,32 @@ export const useGachaStore = defineStore('gacha', () => {
         for (let i = 0; i < count; i++) {
             pityState.totalPulls++;
             pityState.pullsSinceLastHR++;
+            pityState.pullsSinceLastUR++;
 
             let drawnCard: Card | undefined;
 
-            if (config.rateUp.pityPulls > 0 && pityState.pullsSinceLastHR >= config.rateUp.pityPulls && rateUpCards.length > 0) {
+            // UR保底检查（优先级最高）
+            if (config.rateUp.urPityPulls > 0 && pityState.pullsSinceLastUR >= config.rateUp.urPityPulls && rateUpCards.length > 0) {
+                pityState.pullsSinceLastUR = 0;
+                pityState.pullsSinceLastHR = 0; // UR也会重置HR计数
+                // 优先选择UP池中的UR卡
+                const upURCards = rateUpCards.filter(c => c.rarity === 'UR');
+                if (upURCards.length > 0) {
+                    drawnCard = upURCards[Math.floor(Math.random() * upURCards.length)];
+                } else {
+                    drawnCard = rateUpCards[Math.floor(Math.random() * rateUpCards.length)];
+                }
+            }
+            // HR保底检查
+            else if (config.rateUp.hrPityPulls > 0 && pityState.pullsSinceLastHR >= config.rateUp.hrPityPulls && rateUpCards.length > 0) {
                 pityState.pullsSinceLastHR = 0;
-                drawnCard = rateUpCards[Math.floor(Math.random() * rateUpCards.length)];
+                // 优先选择UP池中的HR卡
+                const upHRCards = rateUpCards.filter(c => c.rarity === 'HR');
+                if (upHRCards.length > 0) {
+                    drawnCard = upHRCards[Math.floor(Math.random() * upHRCards.length)];
+                } else {
+                    drawnCard = rateUpCards[Math.floor(Math.random() * rateUpCards.length)];
+                }
             } else {
                 const rand = Math.random() * totalEffectiveProbability;
                 let cumulativeProb = 0;
@@ -72,7 +92,14 @@ export const useGachaStore = defineStore('gacha', () => {
 
                 // UP卡逻辑：UR或HR稀有度时都有概率获得UP卡
                 if ((drawnRarity === 'HR' || drawnRarity === 'UR') && rateUpCards.length > 0 && Math.random() < config.rateUp.hrChance) {
-                    pityState.pullsSinceLastHR = 0; // Reset pity on getting UP card
+                    // 重置相应的pity计数
+                    if (drawnRarity === 'UR') {
+                        pityState.pullsSinceLastUR = 0;
+                        pityState.pullsSinceLastHR = 0; // UR也会重置HR计数
+                    } else if (drawnRarity === 'HR') {
+                        pityState.pullsSinceLastHR = 0;
+                    }
+
                     // 根据抽到的稀有度选择对应的UP卡
                     const upCardsOfRarity = rateUpCards.filter(c => c.rarity === drawnRarity);
                     if (upCardsOfRarity.length > 0) {
@@ -91,8 +118,12 @@ export const useGachaStore = defineStore('gacha', () => {
                         console.warn(`No cards found for rarity "${drawnRarity}" in ${gachaType} pool. Falling back to a random card.`);
                         drawnCard = allCards.length > 0 ? allCards[Math.floor(Math.random() * allCards.length)] : undefined;
                     }
-                    
-                    if (drawnRarity === 'HR' || drawnRarity === 'UR') {
+
+                    // 重置相应的pity计数
+                    if (drawnRarity === 'UR') {
+                        pityState.pullsSinceLastUR = 0;
+                        pityState.pullsSinceLastHR = 0; // UR也会重置HR计数
+                    } else if (drawnRarity === 'HR') {
                         pityState.pullsSinceLastHR = 0;
                     }
                 }

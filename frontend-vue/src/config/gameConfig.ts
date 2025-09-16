@@ -15,7 +15,8 @@ interface RarityConfig {
 interface RateUpConfig {
     ids: number[];
     hrChance: number;
-    pityPulls: number;
+    hrPityPulls: number; // HR保底抽数
+    urPityPulls: number; // UR保底抽数
 }
 
 interface GachaConfig {
@@ -243,8 +244,9 @@ export const GAME_CONFIG: GameConfig = {
         },
         rateUp: {
             ids: [], // 动态UP卡牌的ID，由轮换系统计算
-            hrChance: 0.66,   // HR稀有度时，获得UP卡牌的概率
-            pityPulls: 70,    // 必定获得UP卡牌的保底抽数
+            hrChance: 0.33,   // HR稀有度时，获得UP卡牌的概率（从66%调整到33%）
+            hrPityPulls: 40,  // HR保底抽数（从70调整到40）
+            urPityPulls: 180, // UR保底抽数（新增，180抽保底）
         },
         gacha: {
             guaranteedSSR_Pulls: 10, // 十连抽保底SSR
@@ -311,8 +313,9 @@ export const GAME_CONFIG: GameConfig = {
         // Character UP pool configuration with dynamic rotation
         rateUp: {
             ids: [], // 动态UP角色的ID，由轮换系统计算
-            hrChance: 0.66, // HR rarity时，获得UP角色的概率
-            pityPulls: 70, // 必定获得UP角色的保底抽数
+            hrChance: 0.33, // HR rarity时，获得UP角色的概率（从66%调整到33%）
+            hrPityPulls: 40, // HR保底抽数（从70调整到40）
+            urPityPulls: 180, // UR保底抽数（新增，180抽保底）
         },
         // Character gacha settings (identical to anime system)
         gacha: {

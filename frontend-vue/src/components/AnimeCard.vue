@@ -26,8 +26,14 @@ const rarityColorClass = computed(() => rarityData.value.c || 'bg-gray-500');
 const rarityEffectClass = computed(() => rarityData.value.effect || '');
 const isFavorite = computed(() => userStore.isFavorite(props.anime.id, 'anime'));
 
-// 根据稀有度计算基础强度
+// 获取卡牌的基础强度（优先使用points字段，回退到稀有度默认值）
 const baseStrength = computed(() => {
+  // 直接使用卡牌的points字段作为强度
+  if (props.anime.points !== undefined) {
+    return props.anime.points;
+  }
+
+  // 如果没有points字段，按稀有度提供默认值（仅作为后备）
   const rarityStrength = {
     'UR': 10,
     'HR': 8,
@@ -36,7 +42,7 @@ const baseStrength = computed(() => {
     'R': 3,
     'N': 2
   };
-  return props.anime.points || rarityStrength[props.anime.rarity as keyof typeof rarityStrength] || 2;
+  return rarityStrength[props.anime.rarity as keyof typeof rarityStrength] || 2;
 });
 
 // 计算卡牌费用（考虑减免效果）
