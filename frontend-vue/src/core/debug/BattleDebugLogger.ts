@@ -348,9 +348,13 @@ export class BattleDebugLogger {
       hand: playerId === 'playerA' ? player.hand.map(card => BattleDebugLogger.toCardReference(card)) : [], // 只记录己方手牌详情
       handCount: player.hand.length,
       characters: player.characters.map(char => BattleDebugLogger.toCharacterReference(char)),
+      activeCharacter: player.characters[player.activeCharacterIndex] ? {
+        ...BattleDebugLogger.toCharacterReference(player.characters[player.activeCharacterIndex]),
+        isActive: true
+      } : null,
       activeSkills: player.characters.flatMap(char =>
         char.skills?.filter(skill => skill.type === '主动技能').map(skill => ({
-          skillId: skill.effectId,
+          skillId: skill.effectId || skill.id,
           skillName: skill.name,
           cooldown: skill.cooldown || 0
         })) || []

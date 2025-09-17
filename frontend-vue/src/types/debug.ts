@@ -32,6 +32,7 @@ export interface PlayerSnapshot {
   hand: CardReference[]; // 轻量级卡牌引用
   handCount: number; // 对手手牌只记录数量
   characters: CharacterReference[]; // 轻量级角色引用
+  activeCharacter: (CharacterReference & { isActive: true }) | null; // 当前激活角色
   activeSkills: Array<{
     skillId: string;
     skillName: string;
@@ -55,7 +56,7 @@ export interface PlayerSnapshot {
 // 游戏状态快照
 export interface GameSnapshot {
   turn: number;
-  phase: 'setup' | 'action' | 'defense' | 'resolution' | 'cleanup' | 'game_over';
+  phase: 'setup' | 'draw' | 'action' | 'defense' | 'end_turn' | 'game_over';
   activePlayer: 'playerA' | 'playerB';
   topicBias: number;
   clashInfo?: {

@@ -9,6 +9,9 @@ import { SkillSystem } from '@/core/systems/SkillSystem';
 import { systemRegistry } from '@/core/di/registry';
 import type { DialogueSystem } from '@/core/systems/DialogueSystem';
 import { CostCalculator } from '@/core/calculation/CostCalculator';
+import { battleDebugLogger } from '@/core/debug/BattleDebugLogger';
+import { StrengthCalculator } from '@/core/calculation/StrengthCalculator';
+import type { StrengthCalculation } from '@/types/debug';
 
 // 工厂函数：创建带有依赖注入的 BattleController
 export function createBattleController(dialogueSystem: DialogueSystem) {
@@ -52,6 +55,21 @@ export function createBattleController(dialogueSystem: DialogueSystem) {
 
     // Trigger onPlay effects for attacker (minimal demo)
     await SkillSystem.onCardPlayed(attackerId, attackingCard);
+
+    // Log card play action for debugging with detailed calculations
+    const strengthCalc = this.getStrengthCalculationDetails(attackingCard, attackerId);
+    const costCalc = CostCalculator.getCostModification(attackingCard, attackerId);
+    battleDebugLogger.logCardPlay(attackerId, attackingCard, style, strengthCalc, {
+      cardId: attackingCard.id,
+      cardName: attackingCard.name,
+      baseCost: costCalc.baseCost,
+      costReductions: costCalc.reduction > 0 ? [{
+        source: '系统减免',
+        amount: costCalc.reduction,
+        reason: '技能效果或临时加成'
+      }] : [],
+      finalCost: costCalc.finalCost
+    });
 
     const attackerName = attackerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
     historyStore.addLog(`${attackerName} 以 [${style}] 的方式打出了 [${attackingCard.name}]。`, 'clash');
@@ -102,6 +120,21 @@ export function createBattleController(dialogueSystem: DialogueSystem) {
     if (decision.shouldDefend && decision.card) {
       const defenderName = defenderId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
       historyStore.addLog(`${defenderName} 使用 [${decision.card.name}] 进行 [${decision.style}]。`, 'clash');
+
+      // Log AI defense card play for debugging with detailed calculations
+      const aiStrengthCalc = this.getStrengthCalculationDetails(decision.card, defenderId);
+      const aiCostCalc = CostCalculator.getCostModification(decision.card, defenderId);
+      battleDebugLogger.logCardPlay(defenderId, decision.card, decision.style, aiStrengthCalc, {
+        cardId: decision.card.id,
+        cardName: decision.card.name,
+        baseCost: aiCostCalc.baseCost,
+        costReductions: aiCostCalc.reduction > 0 ? [{
+          source: 'AI系统减免',
+          amount: aiCostCalc.reduction,
+          reason: 'AI技能效果或临时加成'
+        }] : [],
+        finalCost: aiCostCalc.finalCost
+      });
       
       // 触发AI防御对话
       const dialogueSystem = this.dialogueSystem;
@@ -230,6 +263,21 @@ export function createBattleController(dialogueSystem: DialogueSystem) {
     // Trigger onPlay effects for defender (minimal demo)
     await SkillSystem.onCardPlayed(defenderId, defendingCard);
 
+    // Log defense card play action for debugging with detailed calculations
+    const defenseStrengthCalc = this.getStrengthCalculationDetails(defendingCard, defenderId);
+    const defenseCostCalc = CostCalculator.getCostModification(defendingCard, defenderId);
+    battleDebugLogger.logCardPlay(defenderId, defendingCard, defenseStyle, defenseStrengthCalc, {
+      cardId: defendingCard.id,
+      cardName: defendingCard.name,
+      baseCost: defenseCostCalc.baseCost,
+      costReductions: defenseCostCalc.reduction > 0 ? [{
+        source: '玩家系统减免',
+        amount: defenseCostCalc.reduction,
+        reason: '玩家技能效果或临时加成'
+      }] : [],
+      finalCost: defenseCostCalc.finalCost
+    });
+
     // 生成玩家防御对话
     const dialogueSystem = this.dialogueSystem;
     const defenseDialogue = await dialogueSystem.generateDefenseDialogue(
@@ -269,6 +317,30 @@ export function createBattleController(dialogueSystem: DialogueSystem) {
     clashResult.defenderStrength += extraDefender;
     const { rewards } = clashResult;
 
+    // Determine winner based on strength comparison
+    const strengthDiff = clashResult.attackerStrength - clashResult.defenderStrength;
+    const winner = strengthDiff > 0 ? clashInfo.attackerId :
+                   strengthDiff < 0 ? (clashInfo.defenderId || clashInfo.attackerId) :
+                   'draw' as 'playerA' | 'playerB' | 'draw';
+
+    // Log clash resolution for debugging
+    battleDebugLogger.logClashResolve(
+      clashInfo.attackerId,
+      clashInfo.defenderId || clashInfo.attackerId,
+      clashInfo.attackingCard,
+      clashInfo.defendingCard || null,
+      clashResult.attackerStrength,
+      clashResult.defenderStrength,
+      {
+        winner,
+        reputationChange: {
+          playerA: clashInfo.attackerId === 'playerA' ? rewards.attackerReputationChange : rewards.defenderReputationChange,
+          playerB: clashInfo.attackerId === 'playerB' ? rewards.attackerReputationChange : rewards.defenderReputationChange
+        },
+        topicBiasChange: rewards.topicBiasChange
+      }
+    );
+
     playerStore.changeReputation(clashInfo.attackerId, rewards.attackerReputationChange);
     if (clashInfo.defenderId) {
       playerStore.changeReputation(clashInfo.defenderId, rewards.defenderReputationChange);
@@ -303,8 +375,62 @@ export function createBattleController(dialogueSystem: DialogueSystem) {
   endTurn() {
     const gameStore = useGameStore();
     if (!gameStore.isGameOver) {
+      // Log turn end for debugging
+      battleDebugLogger.logAction('turn_end', gameStore.activePlayer, `回合结束: ${gameStore.activePlayer}`);
       TurnManager.endTurn();
     }
+  },
+
+  /**
+   * 获取卡牌强度计算详情
+   */
+  getStrengthCalculationDetails(card: AnimeCard, playerId: 'playerA' | 'playerB'): StrengthCalculation {
+    const playerStore = usePlayerStore();
+    const baseStrength = card.points || 0;
+    const finalStrength = StrengthCalculator.calculateFinalStrength(card, playerId);
+    const strengthBonus = finalStrength - baseStrength;
+
+    const strengthBonuses: Array<{source: string, amount: number, reason: string}> = [];
+
+    // 检查是否有强度加成
+    if (strengthBonus > 0) {
+      strengthBonuses.push({
+        source: '技能效果',
+        amount: strengthBonus,
+        reason: '角色技能或临时效果提供的强度加成'
+      });
+    } else if (strengthBonus < 0) {
+      strengthBonuses.push({
+        source: '负面效果',
+        amount: strengthBonus,
+        reason: '受到削弱效果影响'
+      });
+    }
+
+    // 检查玩家当前激活的角色和技能
+    const player = playerStore[playerId];
+    const activeCharacter = player.characters[player.activeCharacterIndex];
+    if (activeCharacter && activeCharacter.skills) {
+      const activeSkills = activeCharacter.skills.filter(skill =>
+        skill.type === '被动技能' || (skill.type === '主动技能' && !player.skillCooldowns[skill.id || skill.effectId || ''])
+      );
+
+      if (activeSkills.length > 0) {
+        strengthBonuses.push({
+          source: activeCharacter.name,
+          amount: 0, // 这里应该从技能系统获取实际加成
+          reason: `角色技能: ${activeSkills.map(s => s.name).join(', ')}`
+        });
+      }
+    }
+
+    return {
+      cardId: card.id,
+      cardName: card.name,
+      baseStrength,
+      strengthBonuses,
+      finalStrength
+    };
   },
   };
 }

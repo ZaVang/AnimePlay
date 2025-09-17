@@ -249,6 +249,9 @@ function togglePanel() {
             <button @click="exportLog" class="debug-btn small primary">
               💾 导出日志
             </button>
+            <router-link to="/battle-replay" class="debug-btn small">
+              🎬 打开回放器
+            </router-link>
             <button @click="clearSession" class="debug-btn small danger">
               🗑️ 清理会话
             </button>
@@ -284,7 +287,7 @@ function togglePanel() {
       <div class="log-modal-content">
         <div class="log-controls">
           <button
-@click="(window as any).navigator.clipboard.writeText(detailedLogData); (window as any).alert('日志已复制到剪贴板')"
+            @click="() => { (window as any).navigator.clipboard.writeText(detailedLogData); (window as any).alert('日志已复制到剪贴板'); }"
             class="debug-btn small"
           >
             📋 复制日志
