@@ -8,6 +8,7 @@ import { useSettingsStore } from '@/stores/settings';
 import { SkillSystem } from '@/core/systems/SkillSystem';
 import { systemRegistry } from '@/core/di/registry';
 import type { DialogueSystem } from '@/core/systems/DialogueSystem';
+import { CostCalculator } from '@/core/calculation/CostCalculator';
 
 // 工厂函数：创建带有依赖注入的 BattleController
 export function createBattleController(dialogueSystem: DialogueSystem) {
@@ -27,8 +28,11 @@ export function createBattleController(dialogueSystem: DialogueSystem) {
     if (!attackingCard) return;
 
     const styleCost = style === '辛辣点评' ? 1 : 0;
-    const totalCost = (attackingCard.cost || 0) + styleCost;
-    
+
+    // 使用 CostCalculator 计算实际费用（考虑减免效果）
+    const costInfo = CostCalculator.getCostModification(attackingCard, attackerId);
+    const totalCost = costInfo.finalCost + styleCost;
+
     if (attacker.tp < totalCost) {
       gameStore.addNotification('TP不足，无法出牌！', 'warning');
       return;
@@ -203,12 +207,16 @@ export function createBattleController(dialogueSystem: DialogueSystem) {
     if (!defendingCard) return;
 
     const styleCost = defenseStyle === '反驳' ? 1 : 0;
-    const totalCost = (defendingCard.cost || 0) + styleCost;
+
+    // 使用 CostCalculator 计算实际费用（考虑减免效果）
+    const costInfo = CostCalculator.getCostModification(defendingCard, defenderId);
+    const totalCost = costInfo.finalCost + styleCost;
+
     if (defender.tp < totalCost) {
       gameStore.addNotification('TP不足！', 'warning');
       return;
     }
-    
+
     playerStore.changeTp(defenderId, -totalCost);
     playerStore.discardCardFromHand(defenderId, defendingAnimeId.toString());
 

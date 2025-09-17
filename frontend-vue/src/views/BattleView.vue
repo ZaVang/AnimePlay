@@ -19,8 +19,11 @@ import BattleLog from '@/components/battle/ui/BattleLog.vue';
 import InteractionManager from '@/components/battle/InteractionManager.vue';
 import BattleDialogueManager from '@/components/battle/BattleDialogueManager.vue';
 import BattleRulesModal from '@/components/battle/ui/BattleRulesModal.vue';
+import PassiveSkillPanel from '@/components/battle/ui/PassiveSkillPanel.vue';
 import { createBattleController } from '@/core/battle/BattleController';
 import PerformanceMonitor from '@/components/debug/PerformanceMonitor.vue';
+import BattleDebugPanel from '@/components/debug/BattleDebugPanel.vue';
+import { battleDebugLogger } from '@/core/debug/BattleDebugLogger';
 
 // 开发环境下导入测试工具
 if (import.meta.env.DEV) {
@@ -137,27 +140,38 @@ onBeforeUnmount(() => {
   interactionSystem.cleanup();
   persistentSystem.cleanup();
   dialogueSystem.cleanup();
-  
+
+  // 清理调试日志
+  battleDebugLogger.cleanup();
+
   // 清理全局注册表
   systemRegistry.clear();
 });
 
-function handleDeckSelected(deck: Deck, aiProfileId?: string) {
+async function handleDeckSelected(deck: Deck, aiProfileId?: string) {
   console.log('🎮 尝试开始战斗，使用卡组:', deck.name, 'AI:', aiProfileId);
   try {
-    TurnManager.initializeGameWithDeck(deck, aiProfileId);
+    await TurnManager.initializeGameWithDeck(deck, aiProfileId);
     battlePhase.value = 'battle';
+
+    // 初始化调试日志
+    battleDebugLogger.startSession(deck.name, 'AI Deck', aiProfileId);
+
     console.log('✅ 战斗初始化成功');
   } catch (error) {
     console.error('❌ 战斗初始化失败:', error);
   }
 }
 
-function handleRandomDeck(aiProfileId?: string) {
+async function handleRandomDeck(aiProfileId?: string) {
   console.log('🎲 尝试开始随机战斗，AI:', aiProfileId);
   try {
-    TurnManager.initializeRandomGame(aiProfileId);
+    await TurnManager.initializeRandomGame(aiProfileId);
     battlePhase.value = 'battle';
+
+    // 初始化调试日志
+    battleDebugLogger.startSession('Random Deck', 'AI Random Deck', aiProfileId);
+
     console.log('✅ 随机战斗初始化成功');
   } catch (error) {
     console.error('❌ 随机战斗初始化失败:', error);
@@ -309,31 +323,40 @@ function restartBattle() {
             </div>
         </div>
 
-        <!-- Right: Action Buttons -->
-        <div class="action-buttons">
-            <EndTurnButton />
-            <button
-                v-if="gameStore.phase === 'defense' && gameStore.activePlayer === 'playerB'"
-                @click="handleSkipTurn"
-                class="battle-action-btn bg-yellow-600 hover:bg-yellow-700"
-                title="跳过当前防御阶段"
-            >
-                跳过防御
-            </button>
-            <button
-                @click="showRulesModal = true"
-                class="battle-action-btn bg-blue-600 hover:bg-blue-700"
-                title="查看战斗规则详解"
-            >
-                📋 规则
-            </button>
-            <button
-                @click="handleExitBattle"
-                class="battle-action-btn bg-red-600 hover:bg-red-700"
-                title="退出当前战斗，进度将不会保存"
-            >
-                退出战斗
-            </button>
+        <!-- Right: Action Buttons and Passive Skills -->
+        <div class="right-sidebar">
+            <!-- 被动技能面板 -->
+            <div class="passive-skills-section">
+                <PassiveSkillPanel playerId="playerB" isOpponent />
+                <PassiveSkillPanel playerId="playerA" />
+            </div>
+
+            <!-- 操作按钮 -->
+            <div class="action-buttons">
+                <EndTurnButton />
+                <button
+                    v-if="gameStore.phase === 'defense' && gameStore.activePlayer === 'playerB'"
+                    @click="handleSkipTurn"
+                    class="battle-action-btn bg-yellow-600 hover:bg-yellow-700"
+                    title="跳过当前防御阶段"
+                >
+                    跳过防御
+                </button>
+                <button
+                    @click="showRulesModal = true"
+                    class="battle-action-btn bg-blue-600 hover:bg-blue-700"
+                    title="查看战斗规则详解"
+                >
+                    📋 规则
+                </button>
+                <button
+                    @click="handleExitBattle"
+                    class="battle-action-btn bg-red-600 hover:bg-red-700"
+                    title="退出当前战斗，进度将不会保存"
+                >
+                    退出战斗
+                </button>
+            </div>
         </div>
       </div>
 
@@ -345,6 +368,9 @@ function restartBattle() {
 
     <!-- 性能监控器 (仅在开发环境中显示) -->
     <PerformanceMonitor v-if="isDev" />
+
+    <!-- 战斗调试面板 (仅在开发环境中显示) -->
+    <BattleDebugPanel v-if="isDev" />
   </div>
 </template>
 
@@ -387,9 +413,17 @@ function restartBattle() {
     flex: 1 1 auto; /* Grow to fill available space */
 }
 
+.right-sidebar {
+    @apply flex flex-col gap-4;
+    flex: 0 1 300px; /* Do not grow, shrink if needed, initial width 300px */
+}
+
+.passive-skills-section {
+    @apply flex flex-col gap-2;
+}
+
 .action-buttons {
     @apply flex flex-col space-y-3 justify-center items-center;
-    flex: 0 1 250px; /* Do not grow, shrink if needed, initial width 250px */
 }
 
 /* 统一战斗操作按钮样式 */

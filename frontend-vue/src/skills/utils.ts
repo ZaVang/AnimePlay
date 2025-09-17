@@ -77,7 +77,8 @@ export const EffectPatterns = {
   logSkillActivation(helpers: EffectHelpers, playerId: 'playerA' | 'playerB', skillName: string, description: string) {
     const name = helpers.getPlayerName(playerId);
     helpers.historyStore.addLog(`${name} ${skillName}：${description}`, 'info');
-    helpers.gameStore.addNotification(`${skillName}：${description}`, 'info');
+    // 移除技能激活的弹窗通知，效果已通过被动技能面板和卡牌实时显示展现
+    // helpers.gameStore.addNotification(`${skillName}：${description}`, 'info');
   }
 };
 

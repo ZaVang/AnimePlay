@@ -86,7 +86,7 @@ function handlePlayCard(style: '友好安利' | '辛辣点评' | '赞同' | '反
     >
       <!-- Using the main AnimeCard component and showing cost -->
       <div v-if="!isOpponent" class="card-wrapper">
-        <AnimeCard :anime="card" :show-cost="true" :player-id="playerId" />
+        <AnimeCard :anime="card" :show-cost="true" :show-strength="true" :player-id="playerId" />
         <!-- 添加强度预览组件 -->
         <CardStrengthPreview :card="card" :player-id="playerId" />
       </div>

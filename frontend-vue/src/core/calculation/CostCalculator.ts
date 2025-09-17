@@ -21,7 +21,8 @@ export const CostCalculator = {
       const nextCardReduction = persistentSystem.getNextCardCostModification(playerId);
 
       // 计算最终费用，但不能低于0
-      const finalCost = Math.max(0, baseCost + typeReduction + nextCardReduction);
+      // typeReduction 是正数（减免量），nextCardReduction 是负数（减免量）
+      const finalCost = Math.max(0, baseCost - typeReduction + nextCardReduction);
 
       return finalCost;
     } catch (error) {

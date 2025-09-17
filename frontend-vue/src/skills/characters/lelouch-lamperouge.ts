@@ -46,13 +46,14 @@ const 皇族智谋: SkillEffect = (ctx: EffectContext) => {
     data: { bonusUsed: false },
     description: '皇族智谋：下张卡牌+1强度',
     onApply: () => {
-      EffectPatterns.logSkillActivation(
-        helpers,
-        ctx.playerId,
-        '皇族智谋',
-        '技能运用将增强下张卡牌'
-      );
-      helpers.gameStore.addNotification('皇族智谋：下张卡+1强度', 'info');
+      // 移除重复的技能提示，效果已通过被动技能面板显示
+      // EffectPatterns.logSkillActivation(
+      //   helpers,
+      //   ctx.playerId,
+      //   '皇族智谋',
+      //   '技能运用将增强下张卡牌'
+      // );
+      // helpers.gameStore.addNotification('皇族智谋：下张卡+1强度', 'info');
     }
   });
 };

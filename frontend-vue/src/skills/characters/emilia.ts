@@ -43,19 +43,29 @@ const 精灵加护: SkillEffect = (ctx: EffectContext) => {
 const 银发王选: SkillEffect = (ctx: EffectContext) => {
   const helpers = getEffectHelpers(ctx);
   const persistentSystem = systemRegistry.getPersistentEffectSystem();
-  
+
+  // 检查是否已经有相同的效果存在，避免重复添加
+  const existingBonuses = persistentSystem.getActiveBonuses(ctx.playerId);
+  const hasExistingEffect = existingBonuses.some(bonus =>
+    bonus.bonusType === 'cost' &&
+    bonus.cardType === '奇幻' &&
+    bonus.description === '银发王选：议题中立时奇幻卡牌成本-1'
+  );
+
   // 议题中立时所有奇幻类卡牌成本-1
-  if (helpers.gameStore.topicBias === 0) {
+  if (helpers.gameStore.topicBias === 0 && !hasExistingEffect) {
     persistentSystem.addTemporaryBonus({
       playerId: ctx.playerId,
       cardType: '奇幻',
       bonusType: 'cost',
-      amount: -1,
+      amount: 1, // 正数表示减免量
       duration: 1,
       description: '银发王选：议题中立时奇幻卡牌成本-1'
     });
-    
-    console.log('银发王选：议题中立时奇幻卡牌成本-1');
+
+    console.log('银发王选：议题中立时奇幻卡牌成本-1 (新增效果)');
+  } else if (hasExistingEffect) {
+    console.log('银发王选：效果已存在，跳过添加');
   }
 };
 

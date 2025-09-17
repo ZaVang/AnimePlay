@@ -41,12 +41,13 @@ const 温柔鼓励: SkillEffect = (ctx: EffectContext) => {
     data: { tpBonus: 1 },
     description: '温柔鼓励：声望≤20时回合开始获得额外1TP',
     onApply: () => {
-      EffectPatterns.logSkillActivation(
-        helpers,
-        ctx.playerId,
-        '温柔鼓励',
-        '声望低迷时回合开始获得额外TP'
-      );
+      // 移除重复的技能提示，效果已通过被动技能面板显示
+      // EffectPatterns.logSkillActivation(
+      //   helpers,
+      //   ctx.playerId,
+      //   '温柔鼓励',
+      //   '声望低迷时回合开始获得额外TP'
+      // );
     },
     onTurnStart: () => {
       if (helpers.playerStore[ctx.playerId].reputation <= 20) {

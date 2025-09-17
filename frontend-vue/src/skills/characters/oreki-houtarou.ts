@@ -36,20 +36,30 @@ const 节能推理: SkillEffect = (ctx: EffectContext) => {
 const 省力主义: SkillEffect = (ctx: EffectContext) => {
   const helpers = getEffectHelpers(ctx);
   const persistentSystem = systemRegistry.getPersistentEffectSystem();
-  
-  // TODO: 实现己方每跳过一次攻击机会，下次卡牌成本-1的功能
+
+  // 检查是否已经有相同的效果存在，避免重复添加
+  const existingEffects = persistentSystem.getActiveEffects(ctx.playerId);
+  const hasExistingEffect = existingEffects.some(effect =>
+    effect.type === 'energy_saving' &&
+    effect.description === '省力主义：跳过攻击降低成本'
+  );
+
   // 添加被动效果：跳过攻击时记录
-  persistentSystem.addEffect({
-    playerId: ctx.playerId,
-    type: 'energy_saving',
-    duration: -1, // 永久被动
-    data: { skipCount: 0 },
-    description: '省力主义：跳过攻击降低成本',
-    onApply: () => {
-      console.log('省力主义：跳过攻击机会');
-    }
-  });
-  
+  if (!hasExistingEffect) {
+    persistentSystem.addEffect({
+      playerId: ctx.playerId,
+      type: 'energy_saving',
+      duration: -1, // 永久被动
+      data: { skipCount: 0 },
+      description: '省力主义：跳过攻击降低成本',
+      onApply: () => {
+        console.log('省力主义：跳过攻击机会 (新增效果)');
+      }
+    });
+  } else {
+    console.log('省力主义：效果已存在，跳过添加');
+  }
+
   // 省力主义技能静默应用，只在实际跳过攻击时才显示提示
 };
 

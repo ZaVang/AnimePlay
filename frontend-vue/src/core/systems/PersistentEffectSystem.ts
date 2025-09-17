@@ -54,8 +54,9 @@ export class PersistentEffectSystem {
       fullEffect.onApply();
     }
 
-    const historyStore = useHistoryStore();
-    historyStore.addLog(`持续效果激活：${fullEffect.description}`, 'info');
+    // 移除重复的持续效果激活提示
+    // const historyStore = useHistoryStore();
+    // historyStore.addLog(`持续效果激活：${fullEffect.description}`, 'info');
     
     return id;
   }
@@ -69,8 +70,9 @@ export class PersistentEffectSystem {
     
     this.bonuses.set(id, fullBonus);
 
-    const historyStore = useHistoryStore();
-    historyStore.addLog(`临时加成：${fullBonus.description}`, 'info');
+    // 移除重复的临时加成提示
+    // const historyStore = useHistoryStore();
+    // historyStore.addLog(`临时加成：${fullBonus.description}`, 'info');
     
     return id;
   }
@@ -189,7 +191,8 @@ export class PersistentEffectSystem {
         bonus.duration--;
         if (bonus.duration === 0) {
           this.bonuses.delete(id);
-          historyStore.addLog(`临时加成结束：${bonus.description}`, 'info');
+          // 移除重复的临时加成结束提示
+          // historyStore.addLog(`临时加成结束：${bonus.description}`, 'info');
         }
       }
     }
@@ -610,6 +613,27 @@ export class PersistentEffectSystem {
       }
     }
     return restrictions;
+  }
+
+  /**
+   * 获取指定玩家的所有活跃效果
+   */
+  getPlayerEffects(playerId: 'playerA' | 'playerB'): PersistentEffect[] {
+    return Array.from(this.effects.values()).filter(effect => effect.playerId === playerId);
+  }
+
+  /**
+   * 获取所有活跃效果
+   */
+  getAllEffects(): PersistentEffect[] {
+    return Array.from(this.effects.values());
+  }
+
+  /**
+   * 获取指定玩家的效果数量
+   */
+  getPlayerEffectCount(playerId: 'playerA' | 'playerB'): number {
+    return this.getPlayerEffects(playerId).length;
   }
 
   /**

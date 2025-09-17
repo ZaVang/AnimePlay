@@ -1,11 +1,11 @@
-import type { AnimeCard } from './card';
+import type { AnimeCard, CharacterCard } from './card';
 import type { ClashInfo } from './battle';
 
 // 战斗事件类型
-export type BattleEvent = 'onPlay' | 'beforeResolve' | 'afterResolve';
+export type BattleEvent = 'onPlay' | 'beforeResolve' | 'afterResolve' | 'onGameStart';
 
 // 战斗角色
-export type CombatRole = 'attacker' | 'defender';
+export type CombatRole = 'attacker' | 'defender' | 'supporter';
 
 // 玩家ID类型
 export type PlayerId = 'playerA' | 'playerB';
@@ -16,6 +16,7 @@ export interface EffectContext {
   playerId: PlayerId;
   role: CombatRole;
   card?: AnimeCard;
+  character?: CharacterCard;
   clash?: ClashInfo;
   addStrengthBonus?: (role: CombatRole, amount: number) => void;
 }

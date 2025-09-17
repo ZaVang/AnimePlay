@@ -4,6 +4,7 @@ import { GAME_CONFIG } from '@/config/gameConfig';
 import { useUserStore } from '@/stores/userStore';
 import { useGameStore, usePlayerStore } from '@/stores/battle';
 import { CostCalculator } from '@/core/calculation/CostCalculator';
+import { SkillSystem } from '@/core/systems/SkillSystem';
 import type { AnimeCard } from '@/types/card';
 
 const props = defineProps<{
@@ -43,6 +44,41 @@ const baseStrength = computed(() => {
     'N': 2
   };
   return rarityStrength[props.anime.rarity as keyof typeof rarityStrength] || 2;
+});
+
+// 计算强度信息（包含被动技能加成）
+const strengthInfo = computed(() => {
+  const base = baseStrength.value;
+
+  // 只在战斗状态下且有playerId时计算强度加成
+  if (props.playerId && gameStore) {
+    try {
+      const auraBonus = SkillSystem.getAuraStrengthBonus(props.anime, props.playerId);
+      const finalStrength = base + auraBonus;
+
+      return {
+        baseStrength: base,
+        finalStrength,
+        bonus: auraBonus,
+        hasBonus: auraBonus > 0
+      };
+    } catch {
+      // 如果计算失败，返回基础强度
+      return {
+        baseStrength: base,
+        finalStrength: base,
+        bonus: 0,
+        hasBonus: false
+      };
+    }
+  }
+
+  return {
+    baseStrength: base,
+    finalStrength: base,
+    bonus: 0,
+    hasBonus: false
+  };
 });
 
 // 计算卡牌费用（考虑减免效果）
@@ -154,11 +190,19 @@ function toggleFavorite(event: MouseEvent) {
       <!-- Strength display next to cost -->
       <div v-if="showStrength" class="flex justify-center items-center gap-2 mt-1">
         <div class="flex items-center text-xs text-gray-600">
-          <span class="text-blue-600 font-bold">{{ baseStrength }}</span>
+          <span v-if="!strengthInfo.hasBonus" class="text-blue-600 font-bold">{{ strengthInfo.finalStrength }}</span>
+          <span v-else class="strength-with-bonus text-green-600 font-bold">
+            <span class="base-strength">{{ strengthInfo.baseStrength }}</span>
+            <span class="bonus-indicator">+{{ strengthInfo.bonus }}</span>
+          </span>
           <span class="ml-1">强度</span>
         </div>
         <div v-if="anime.cost > 0" class="flex items-center text-xs text-gray-600">
-          <span class="text-purple-600 font-bold">{{ anime.cost }}</span>
+          <span v-if="!costInfo.hasModification" class="text-purple-600 font-bold">{{ costInfo.finalCost }}</span>
+          <span v-else class="cost-with-modification-inline text-green-600 font-bold">
+            <span class="original-cost-inline">{{ costInfo.baseCost }}</span>
+            <span class="final-cost-inline">{{ costInfo.finalCost }}</span>
+          </span>
           <span class="ml-1">TP</span>
         </div>
       </div>
@@ -224,6 +268,52 @@ function toggleFavorite(event: MouseEvent) {
   }
   50% {
     box-shadow: 0 4px 16px rgba(34, 197, 94, 0.6);
+  }
+}
+
+/* 强度加成显示样式 */
+.strength-with-bonus {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.base-strength {
+  color: #2563eb; /* blue-600 */
+}
+
+.bonus-indicator {
+  color: #16a34a; /* green-600 */
+  font-size: 10px;
+  background: rgba(34, 197, 94, 0.1);
+  padding: 1px 3px;
+  border-radius: 3px;
+  animation: glow-green 2s infinite;
+}
+
+/* 内联成本修改显示 */
+.cost-with-modification-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.original-cost-inline {
+  text-decoration: line-through;
+  opacity: 0.6;
+  font-size: 10px;
+}
+
+.final-cost-inline {
+  color: #16a34a; /* green-600 */
+}
+
+@keyframes glow-green {
+  0%, 100% {
+    background: rgba(34, 197, 94, 0.1);
+  }
+  50% {
+    background: rgba(34, 197, 94, 0.2);
   }
 }
 </style>

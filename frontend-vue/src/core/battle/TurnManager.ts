@@ -12,6 +12,7 @@ import { urCharacterSkillMap } from '@/data/urCharacterSkills';
 import { systemRegistry } from '@/core/di/registry';
 import { generateRandomAIDeck } from '@/utils/randomAIDeckGenerator';
 import { clearSkillCache } from '@/skills';
+import { SkillSystem } from '@/core/systems/SkillSystem';
 
 // 辅助函数：正确的数组洗牌
 function shuffleArray<T>(array: T[]): T[] {
@@ -96,7 +97,7 @@ export const TurnManager = {
    * Initializes a game with a specific deck for Player A.
    * @param playerADeck - The deck selected by Player A.
    */
-  initializeGameWithDeck(playerADeck: Deck, aiProfileId?: string) {
+  async initializeGameWithDeck(playerADeck: Deck, aiProfileId?: string) {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
     const gameDataStore = useGameDataStore();
@@ -209,13 +210,16 @@ export const TurnManager = {
       playerB_deck: playerStore.playerB.deck.length
     });
 
+    // 🎯 初始化所有角色的被动技能
+    await SkillSystem.initializePassiveSkills();
+
     this.startTurn();
   },
 
   /**
    * Initializes a game with random decks for both players.
    */
-  initializeRandomGame(aiProfileId?: string) {
+  async initializeRandomGame(aiProfileId?: string) {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
     const gameDataStore = useGameDataStore();
@@ -288,6 +292,9 @@ export const TurnManager = {
     // Draw initial hands
     playerStore.drawCards('playerA', 5);
     playerStore.drawCards('playerB', 5);
+
+    // 🎯 初始化所有角色的被动技能
+    await SkillSystem.initializePassiveSkills();
 
     this.startTurn();
   },

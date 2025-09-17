@@ -54,9 +54,17 @@ const 不良委员长: SkillEffect = (ctx: EffectContext) => {
 const 外硬内软: SkillEffect = (ctx: EffectContext) => {
   const helpers = getEffectHelpers(ctx);
   const persistentSystem = systemRegistry.getPersistentEffectSystem();
-  
-  // TODO: 实现己方声望受损时下次校园类卡牌成本-1的功能
-  if (helpers.playerStore[ctx.playerId].reputation < 30) { // 简化检测
+
+  // 检查是否已经有相同的效果存在，避免重复添加
+  const existingEffects = persistentSystem.getActiveBonuses(ctx.playerId);
+  const hasExistingEffect = existingEffects.some(bonus =>
+    bonus.bonusType === 'cost' &&
+    bonus.cardType === '校园' &&
+    bonus.description === '外硬内软：校园卡牌成本-1'
+  );
+
+  // 只在声望受损且没有现有效果时添加
+  if (helpers.playerStore[ctx.playerId].reputation < 30 && !hasExistingEffect) {
     persistentSystem.addTemporaryBonus({
       playerId: ctx.playerId,
       cardType: '校园',
@@ -65,15 +73,10 @@ const 外硬内软: SkillEffect = (ctx: EffectContext) => {
       duration: 1, // 下次使用
       description: '外硬内软：校园卡牌成本-1'
     });
-    
-    EffectPatterns.logSkillActivation(
-      helpers,
-      ctx.playerId,
-      '外硬内软',
-      '声望受损，校园卡牌成本-1！'
-    );
-    
-    console.log('外硬内软：声望受损，校园卡牌成本-1');
+
+    console.log('外硬内软：声望受损，校园卡牌成本-1 (新增效果)');
+  } else if (hasExistingEffect) {
+    console.log('外硬内软：效果已存在，跳过添加');
   }
 };
 
