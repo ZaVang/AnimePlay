@@ -174,12 +174,10 @@ export const useUserStore = defineStore('user', () => {
   );
   const savedDecks = computed(() => playerState.value.savedDecks);
   const expToNextLevel = computed(() => {
-    const levelXP = GAME_CONFIG.gameplay.levelXP;
     const currentLevel = playerState.value.level;
-    if (currentLevel >= levelXP.length) {
-      return Infinity; // Max level reached
-    }
-    return levelXP[currentLevel];
+    const currentLevelExp = GAME_CONFIG.gameplay.levelSystem.getExpForLevel(currentLevel);
+    const nextLevelExp = GAME_CONFIG.gameplay.levelSystem.getExpForLevel(currentLevel + 1);
+    return nextLevelExp - currentLevelExp;
   });
 
   // --- ACTIONS ---
@@ -395,22 +393,20 @@ export const useUserStore = defineStore('user', () => {
     let requiredExp = expToNextLevel.value;
     while (playerState.value.exp >= requiredExp) {
         playerState.value.exp -= requiredExp;
-        const currentLevel = playerState.value.level;
-        const rewards = GAME_CONFIG.gameplay.levelUpRewards[currentLevel + 1];
+        const newLevel = playerState.value.level + 1;
 
-        playerState.value.level++;
+        // Use new function-based reward system
+        const rewards = GAME_CONFIG.gameplay.levelSystem.getLevelRewards(newLevel);
 
-        if (rewards) {
-            playerState.value.animeGachaTickets += rewards.animeTickets;
-            playerState.value.characterGachaTickets += rewards.characterTickets;
-            playerState.value.knowledgePoints += rewards.knowledge;
-            addLog(`恭喜！你已达到 ${playerState.value.level} 级！获得动画券 ${rewards.animeTickets} 张，角色券 ${rewards.characterTickets} 张，知识点 ${rewards.knowledge} 点。`, 'success');
-        } else {
-            addLog(`恭喜！你已达到 ${playerState.value.level} 级！`, 'success');
-        }
+        playerState.value.level = newLevel;
+        playerState.value.animeGachaTickets += rewards.animeTickets;
+        playerState.value.characterGachaTickets += rewards.characterTickets;
+        playerState.value.knowledgePoints += rewards.knowledge;
+
+        const milestoneMsg = newLevel % 10 === 0 ? '🎉 里程碑等级！' : '';
+        addLog(`恭喜！你已达到 ${newLevel} 级！${milestoneMsg}获得动画券 ${rewards.animeTickets} 张，角色券 ${rewards.characterTickets} 张，知识点 ${rewards.knowledge} 点。`, 'success');
 
         requiredExp = expToNextLevel.value;
-        if (requiredExp === Infinity) break;
     }
     saveStateToServer();
   }
@@ -656,28 +652,28 @@ export const useUserStore = defineStore('user', () => {
         // 增加经验值
         playerState.value.exp += item.quantity || 0;
         
-        // 检查是否升级
+        // 检查是否升级 (使用新的函数式系统)
         let targetLevel = playerState.value.level;
-        const levelXP = GAME_CONFIG.gameplay.levelXP;
-        
-        while (targetLevel < levelXP.length && playerState.value.exp >= levelXP[targetLevel]) {
+        let totalExpNeeded = GAME_CONFIG.gameplay.levelSystem.getExpForLevel(targetLevel + 1);
+
+        while (playerState.value.exp >= totalExpNeeded) {
           targetLevel++;
+          totalExpNeeded = GAME_CONFIG.gameplay.levelSystem.getExpForLevel(targetLevel + 1);
         }
-        
+
         if (targetLevel > playerState.value.level) {
           const oldLevel = playerState.value.level;
           playerState.value.level = targetLevel;
           addLog(`恭喜！等级提升至 Lv.${targetLevel}！`, 'success');
-          
-          // 给予升级奖励
+
+          // 给予升级奖励 (使用新的函数式奖励)
           for (let level = oldLevel + 1; level <= targetLevel; level++) {
-            const reward = GAME_CONFIG.gameplay.levelUpRewards[level.toString()];
-            if (reward) {
-              playerState.value.animeGachaTickets += reward.animeTickets;
-              playerState.value.characterGachaTickets += reward.characterTickets;
-              playerState.value.knowledgePoints += reward.knowledge;
-              addLog(`升级奖励：${reward.animeTickets}动画券 + ${reward.characterTickets}角色券 + ${reward.knowledge}知识点`, 'success');
-            }
+            const reward = GAME_CONFIG.gameplay.levelSystem.getLevelRewards(level);
+            playerState.value.animeGachaTickets += reward.animeTickets;
+            playerState.value.characterGachaTickets += reward.characterTickets;
+            playerState.value.knowledgePoints += reward.knowledge;
+            const milestoneMsg = level % 10 === 0 ? ' 🎉 里程碑等级！' : '';
+            addLog(`升级奖励${milestoneMsg}：${reward.animeTickets}动画券 + ${reward.characterTickets}角色券 + ${reward.knowledge}知识点`, 'success');
           }
         }
         

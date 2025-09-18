@@ -71,9 +71,9 @@ onMounted(() => {
                 <li><RouterLink to="/" class="nav-link">主页</RouterLink></li>
                 <li><RouterLink to="/gacha" class="nav-link">抽卡系统</RouterLink></li>
                 <li><RouterLink to="/collections" class="nav-link">卡牌收藏</RouterLink></li>
+                <li><RouterLink to="/nurture" class="nav-link">角色养成</RouterLink></li>
                 <li><RouterLink to="/battle" class="nav-link">宅理论战</RouterLink></li>
                 <li><RouterLink to="/squad-battle" class="nav-link">小队战斗</RouterLink></li>
-                <li><RouterLink to="/nurture" class="nav-link">角色养成</RouterLink></li>
                 <li><RouterLink to="/settings" class="nav-link">设置</RouterLink></li>
             </ul>
         </nav>
