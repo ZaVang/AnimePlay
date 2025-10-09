@@ -14,7 +14,8 @@ export {
   getAvailableSkillIds,
   hasSkillEffect,
   getSkillCacheStats,
-  clearSkillCache
+  clearSkillCache,
+  resetSkillStats
 } from './registry';
 
 // 效果帮助函数和模式

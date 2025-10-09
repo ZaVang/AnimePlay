@@ -80,5 +80,5 @@ const 世渡り上手: SkillEffect = (ctx: EffectContext) => {
  */
 export const anzaisubaruSkills = {
   '安和昴_偶像魅力': 偶像魅力,
-  '安和昴_世渡り上手': 世渡り上手
+  '安和昴_世渡_上手': 世渡り上手
 };

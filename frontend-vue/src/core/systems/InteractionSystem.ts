@@ -139,21 +139,39 @@ export class InteractionSystem {
    */
   async selectFromDeck(playerId: 'playerA' | 'playerB', options: CardSelectionOptions): Promise<CardSelectionResult> {
     const playerStore = usePlayerStore();
+    const historyStore = useHistoryStore();
     const deck = playerStore[playerId].deck;
-    
-    let availableCards = deck.slice(0, 10); // 限制查看前10张
+
+    // 限制查看牌库顶部的卡牌数量
+    const viewLimit = options.count * 3 || 10; // 查看数量为选择数量的3倍，默认10张
+    let availableCards = deck.slice(0, viewLimit);
+
     if (options.filter) {
       availableCards = availableCards.filter(options.filter);
     }
 
-    // TODO: 显示牌库选择UI Modal
-    const selectedCount = Math.min(options.count, availableCards.length);
-    const selected = availableCards.slice(0, selectedCount);
-    
-    return {
-      selected,
-      cancelled: false
-    };
+    // 记录日志
+    const playerName = playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
+    historyStore.addLog(`${playerName} 查看牌库顶部 ${Math.min(viewLimit, deck.length)} 张牌。`, 'info');
+
+    // 显示牌库选择UI Modal
+    if (this.interactionManager && availableCards.length > 0) {
+      const result = await this.interactionManager.showCardSelection(availableCards, {
+        ...options,
+        title: options.title || '从牌库选择卡牌',
+        description: options.description || `从牌库顶部选择 ${options.count} 张卡牌`
+      });
+      return result;
+    } else {
+      // 无UI时的简化处理
+      const selectedCount = Math.min(options.count, availableCards.length);
+      const selected = availableCards.slice(0, selectedCount);
+
+      return {
+        selected,
+        cancelled: false
+      };
+    }
   }
 
   /**
@@ -191,9 +209,14 @@ export class InteractionSystem {
    * 确认对话框
    */
   async confirm(message: string, title?: string): Promise<boolean> {
-    // TODO: 显示确认对话框UI
-    // 目前返回true作为默认
-    return true;
+    // 显示确认对话框UI
+    if (this.interactionManager) {
+      return await this.interactionManager.showConfirmation(message, title);
+    } else {
+      // 无UI时默认返回true
+      console.log(`[InteractionSystem] 确认对话框: ${message}`);
+      return true;
+    }
   }
 
   /**

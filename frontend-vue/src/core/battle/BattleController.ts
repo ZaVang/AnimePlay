@@ -341,16 +341,22 @@ export function createBattleController(dialogueSystem: DialogueSystem) {
       }
     );
 
-    playerStore.changeReputation(clashInfo.attackerId, rewards.attackerReputationChange);
-    if (clashInfo.defenderId) {
-      playerStore.changeReputation(clashInfo.defenderId, rewards.defenderReputationChange);
-    }
-    gameStore.updateTopicBias(rewards.topicBiasChange);
-
+    // 使用批量更新优化性能
     const nameA = playerStore.playerA.name;
     const nameB = playerStore.playerB.name;
     const attackerName2 = clashInfo.attackerId === 'playerA' ? nameA : nameB;
     const defenderName2 = clashInfo.defenderId === 'playerA' ? nameA : nameB;
+
+    // 批量更新玩家状态和游戏状态（减少响应式触发）
+    playerStore.$patch((state) => {
+      state[clashInfo.attackerId].reputation += rewards.attackerReputationChange;
+      if (clashInfo.defenderId) {
+        state[clashInfo.defenderId].reputation += rewards.defenderReputationChange;
+      }
+    });
+    gameStore.updateTopicBias(rewards.topicBiasChange);
+
+    // 批量添加日志
     historyStore.addLog(`声望变化: ${attackerName2} ${rewards.attackerReputationChange}, ${defenderName2} ${rewards.defenderReputationChange}。`, 'damage');
     historyStore.addLog(`议题偏向变化: ${rewards.topicBiasChange > 0 ? '+' : ''}${rewards.topicBiasChange}。`, 'info');
 

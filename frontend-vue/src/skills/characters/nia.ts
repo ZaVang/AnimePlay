@@ -13,44 +13,34 @@ import { systemRegistry } from '@/core/di/registry';
 const 天真好奇: SkillEffect = async (ctx: EffectContext) => {
   const helpers = getEffectHelpers(ctx);
   const interactionSystem = systemRegistry.getInteractionSystem();
-  
-  // TODO: 实现查看对手3张手牌，每种不同类型令己方抽1张牌的功能
-  try {
-    const viewedCards = await interactionSystem.viewOpponentHand(ctx.playerId, {
-      count: 3,
-      source: 'hand',
-      title: '天真好奇：查看对手手牌'
-    });
-    
-    // 计算不同类型数量
-    const uniqueTypes = new Set();
-    viewedCards.forEach(card => {
-      card.synergy_tags?.forEach(tag => uniqueTypes.add(tag));
-    });
-    
-    const drawCount = Math.min(uniqueTypes.size, 3); // 最多抽3张
+
+  // 查看对手3张手牌
+  const viewedCards = await interactionSystem.viewOpponentHand(ctx.playerId, {
+    count: 3,
+    source: 'hand',
+    title: '天真好奇 - 查看对手手牌'
+  });
+
+  // 计算不同类型数量
+  const uniqueTypes = new Set();
+  viewedCards.forEach(card => {
+    card.synergy_tags?.forEach(tag => uniqueTypes.add(tag));
+  });
+
+  const drawCount = Math.min(uniqueTypes.size, 3); // 最多抽3张
+  if (drawCount > 0) {
     helpers.playerStore.drawCards(ctx.playerId, drawCount);
-    
-    EffectPatterns.logSkillActivation(
-      helpers,
-      ctx.playerId,
-      '天真好奇',
-      `发现${uniqueTypes.size}种类型，抽${drawCount}张牌！`
-    );
-  } catch (error) {
-    // 简化实现：抽2张
-    helpers.playerStore.drawCards(ctx.playerId, 2);
-    
-    EffectPatterns.logSkillActivation(
-      helpers,
-      ctx.playerId,
-      '天真好奇',
-      '侦查多样性，抽2张牌！'
-    );
   }
-  
+
+  EffectPatterns.logSkillActivation(
+    helpers,
+    ctx.playerId,
+    '天真好奇',
+    `发现${uniqueTypes.size}种类型，抽${drawCount}张牌！`
+  );
+
   const name = ctx.playerId === 'playerA' ? helpers.playerStore.playerA.name : helpers.playerStore.playerB.name;
-  helpers.historyStore.addLog(`${name} 天真好奇：侦查多样性，抽牌。`, 'info');
+  helpers.historyStore.addLog(`${name} 天真好奇：发现${uniqueTypes.size}种类型，抽${drawCount}张牌。`, 'info');
 };
 
 /**

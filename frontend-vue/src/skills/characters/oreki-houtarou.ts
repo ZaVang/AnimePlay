@@ -10,23 +10,31 @@ import { systemRegistry } from '@/core/di/registry';
 /**
  * 节能推理 - TP劣势时查看对手3张手牌，然后抽1张牌
  */
-const 节能推理: SkillEffect = (ctx: EffectContext) => {
+const 节能推理: SkillEffect = async (ctx: EffectContext) => {
   const helpers = getEffectHelpers(ctx);
+  const interactionSystem = systemRegistry.getInteractionSystem();
   const opponentId = ctx.playerId === 'playerA' ? 'playerB' : 'playerA';
-  
+
   if (helpers.playerStore[ctx.playerId].tp <= helpers.playerStore[opponentId].tp) {
-    // TODO: 实现查看对手3张手牌的功能
+    // 查看对手3张手牌
+    await interactionSystem.viewOpponentHand(ctx.playerId, {
+      count: 3,
+      source: 'hand',
+      title: '节能推理 - 侦查对手手牌'
+    });
+
+    // 然后抽1张牌
     helpers.playerStore.drawCards(ctx.playerId, 1);
-    
+
     EffectPatterns.logSkillActivation(
       helpers,
       ctx.playerId,
       '节能推理',
       'TP劣势时侦查并抽牌！'
     );
-    
+
     const name = ctx.playerId === 'playerA' ? helpers.playerStore.playerA.name : helpers.playerStore.playerB.name;
-    helpers.historyStore.addLog(`${name} 节能推理：TP劣势时侦查并抽牌。`, 'info');
+    helpers.historyStore.addLog(`${name} 节能推理：查看对手3张手牌并抽1张牌。`, 'info');
   }
 };
 

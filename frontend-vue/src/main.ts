@@ -25,6 +25,11 @@ gameDataStore.fetchGameData().then(() => {
 
   // 开发环境调试工具
   if (import.meta.env.DEV) {
+    // 技能缓存监控工具
+    import('./debug/skill-cache-monitor').then(() => {
+      console.log('✅ 技能缓存监控工具已加载');
+    });
+
     import('./debug/skillDebug').then(module => {
       setTimeout(() => module.debugSkillSystem(), 1000);
     });

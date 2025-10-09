@@ -14,26 +14,52 @@ const 商业智慧: SkillEffect = async (ctx: EffectContext) => {
   const helpers = getEffectHelpers(ctx);
   const interactionSystem = systemRegistry.getInteractionSystem();
   const persistentSystem = systemRegistry.getPersistentEffectSystem();
-  
-  EffectPatterns.logSkillActivation(
-    helpers,
-    ctx.playerId,
-    '商业智慧',
-    '分析市场+复制效果'
-  );
-  
-  // TODO: 实现查看对手手牌及卡组中最高成本的卡牌，复制其效果到己方下张手牌的复杂功能
-  try {
-    await interactionSystem.viewOpponentHand(ctx.playerId, {
-      count: 3,
-      source: 'hand',
-      title: '商业智慧：分析市场'
+  const opponentId = ctx.playerId === 'playerA' ? 'playerB' : 'playerA';
+
+  // 查看对手手牌
+  const viewedCards = await interactionSystem.viewOpponentHand(ctx.playerId, {
+    count: 5,
+    source: 'hand',
+    title: '商业智慧 - 分析市场'
+  });
+
+  // 从对手手牌和牌库中找到最高成本的卡牌
+  const opponentDeck = helpers.playerStore[opponentId].deck;
+  const allOpponentCards = [...viewedCards, ...opponentDeck];
+
+  if (allOpponentCards.length > 0) {
+    const highestCostCard = allOpponentCards.reduce((prev, current) =>
+      (current.cost > prev.cost) ? current : prev
+    );
+
+    // 添加持久效果：下张打出的卡牌获得最高成本卡牌的效果
+    persistentSystem.addEffect({
+      playerId: ctx.playerId,
+      type: 'copy_card_effect',
+      duration: 1,
+      data: { copiedCardId: highestCostCard.id, copiedEffects: highestCostCard.skills },
+      description: `商业智慧：复制 ${highestCostCard.name} 的效果`
     });
-  } catch (error) {
-    console.warn('Hand viewing not available:', error);
+
+    helpers.gameStore.addNotification(`商业智慧：复制 ${highestCostCard.name} (成本${highestCostCard.cost})`, 'success');
+
+    EffectPatterns.logSkillActivation(
+      helpers,
+      ctx.playerId,
+      '商业智慧',
+      `复制${highestCostCard.name}的效果！`
+    );
+
+    const name = ctx.playerId === 'playerA' ? helpers.playerStore.playerA.name : helpers.playerStore.playerB.name;
+    helpers.historyStore.addLog(`${name} 商业智慧：复制 ${highestCostCard.name} 的效果。`, 'info');
+  } else {
+    EffectPatterns.logSkillActivation(
+      helpers,
+      ctx.playerId,
+      '商业智慧',
+      '分析市场！'
+    );
   }
-  
-  helpers.gameStore.addNotification('商业智慧：复制效果', 'info');
 };
 
 /**

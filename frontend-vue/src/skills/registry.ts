@@ -9,6 +9,7 @@
 
 import type { EffectContext } from '@/types/effects';
 import type { SkillEffect } from './utils';
+import { LRUCache } from '@/core/cache/LRUCache';
 
 /**
  * 自动导入所有角色技能文件
@@ -44,22 +45,52 @@ function createSkillRegistry(): Record<string, SkillEffect> {
 export const skillEffects = createSkillRegistry();
 
 /**
- * 执行技能效果
+ * 技能效果LRU缓存
+ * 缓存最近使用的技能效果函数，提升查找性能
+ */
+const skillEffectCache = new LRUCache<string, SkillEffect>(150);
+
+/**
+ * 技能执行统计
+ */
+let executionStats = {
+  totalExecutions: 0,
+  successfulExecutions: 0,
+  failedExecutions: 0,
+  notFoundCount: 0
+};
+
+/**
+ * 执行技能效果（带缓存优化）
  * @param effectId 技能效果标识符
  * @param context 效果执行上下文
  */
 export async function runEffect(effectId: string, context: EffectContext): Promise<void> {
-  const effect = skillEffects[effectId];
+  executionStats.totalExecutions++;
 
+  // 尝试从缓存获取
+  let effect = skillEffectCache.get(effectId);
+
+  // 缓存未命中，从注册表查找
   if (!effect) {
-    console.warn(`技能效果 "${effectId}" 未找到`);
-    return;
+    effect = skillEffects[effectId];
+
+    if (!effect) {
+      console.warn(`技能效果 "${effectId}" 未找到`);
+      executionStats.notFoundCount++;
+      return;
+    }
+
+    // 加入缓存
+    skillEffectCache.set(effectId, effect);
   }
 
   try {
     await effect(context);
+    executionStats.successfulExecutions++;
   } catch (error) {
     console.error(`执行技能效果 "${effectId}" 时出错:`, error);
+    executionStats.failedExecutions++;
   }
 }
 
@@ -78,21 +109,53 @@ export function hasSkillEffect(effectId: string): boolean {
 }
 
 /**
- * 获取技能缓存统计（占位符实现）
+ * 获取技能缓存统计
  */
-export const getSkillCacheStats = () => ({
-  hits: 0,
-  misses: 0,
-  evictions: 0,
-  totalExecutions: 0,
-  hitRate: '0%',
-  cacheSize: 0
-});
+export function getSkillCacheStats() {
+  const cacheStats = skillEffectCache.getStats();
+
+  return {
+    // 缓存统计
+    cacheHits: cacheStats.hits,
+    cacheMisses: cacheStats.misses,
+    cacheHitRate: cacheStats.hitRate,
+    cacheSize: cacheStats.size,
+    cacheMaxSize: cacheStats.maxSize,
+
+    // 执行统计
+    totalExecutions: executionStats.totalExecutions,
+    successfulExecutions: executionStats.successfulExecutions,
+    failedExecutions: executionStats.failedExecutions,
+    notFoundCount: executionStats.notFoundCount,
+
+    // 成功率
+    successRate: executionStats.totalExecutions > 0
+      ? ((executionStats.successfulExecutions / executionStats.totalExecutions) * 100).toFixed(2) + '%'
+      : '0%'
+  };
+}
 
 /**
- * 清理技能缓存（占位符实现）
+ * 清理技能缓存
  */
-export const clearSkillCache = () => console.log('技能缓存已清理');
+export function clearSkillCache(): void {
+  skillEffectCache.clear();
+  console.log('[SkillRegistry] 技能缓存已清理');
+}
+
+/**
+ * 重置统计信息
+ */
+export function resetSkillStats(): void {
+  skillEffectCache.resetStats();
+  executionStats = {
+    totalExecutions: 0,
+    successfulExecutions: 0,
+    failedExecutions: 0,
+    notFoundCount: 0
+  };
+  console.log('[SkillRegistry] 统计信息已重置');
+}
 
 /**
  * 获取自动导入信息（调试用）

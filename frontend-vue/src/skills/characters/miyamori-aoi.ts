@@ -10,19 +10,41 @@ import { systemRegistry } from '@/core/di/registry';
 /**
  * 制作进行 - 查看己方牌库顶3张牌，选择一张加入手牌，其余放回牌库顺序不变
  */
-const 制作进行: SkillEffect = (ctx: EffectContext) => {
+const 制作进行: SkillEffect = async (ctx: EffectContext) => {
   const helpers = getEffectHelpers(ctx);
-  
-  // TODO: 实现查看己方牌库顶3张牌，选择一张加入手牌，其余放回牌库顺序不变的功能
-  helpers.playerStore.drawCards(ctx.playerId, 1); // 简化为直接抽1张
-  
+  const interactionSystem = systemRegistry.getInteractionSystem();
+
+  // 从牌库顶选择卡牌
+  const result = await interactionSystem.selectFromDeck(ctx.playerId, {
+    count: 1,
+    source: 'deck',
+    required: false,
+    title: '制作进行',
+    description: '查看牌库顶部3张牌，选择一张加入手牌'
+  });
+
+  // 如果选择了卡牌，加入手牌并从牌库移除
+  if (!result.cancelled && result.selected.length > 0) {
+    const selectedCard = result.selected[0];
+    helpers.playerStore.addCardToHand(ctx.playerId, selectedCard);
+
+    // 从牌库移除该卡牌
+    const deck = helpers.playerStore[ctx.playerId].deck;
+    const cardIndex = deck.findIndex(c => c.id === selectedCard.id);
+    if (cardIndex !== -1) {
+      deck.splice(cardIndex, 1);
+    }
+
+    helpers.gameStore.addNotification(`制作进行：获得 ${selectedCard.name}`, 'success');
+  }
+
   EffectPatterns.logSkillActivation(
     helpers,
     ctx.playerId,
     '制作进行',
     '精选牌库卡牌！'
   );
-  
+
   const name = ctx.playerId === 'playerA' ? helpers.playerStore.playerA.name : helpers.playerStore.playerB.name;
   helpers.historyStore.addLog(`${name} 制作进行：精选牌库卡牌。`, 'info');
 };
