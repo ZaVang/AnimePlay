@@ -69,7 +69,7 @@ const 天真烂漫: SkillEffect = (ctx: EffectContext) => {
     
     // 追加恋爱卡牌额外强度
     if (ctx.addStrengthBonus) {
-      ctx.addStrengthBonus(ctx.role, 1);
+      ctx.addStrengthBonus(1);
     }
     
     EffectPatterns.logSkillActivation(

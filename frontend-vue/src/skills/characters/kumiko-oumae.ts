@@ -27,14 +27,14 @@ const 和谐演奏: SkillEffect = (ctx: EffectContext) => {
 };
 
 /**
- * 校园协调 - 校园卡牌强化
+ * 校园协调 - 打出校园卡牌时，本回合所有校园类卡牌成本-1（被动触发）
  */
 const 校园协调: SkillEffect = (ctx: EffectContext) => {
-  if (ctx.event === 'onPlay' && ctx.card?.synergy_tags?.includes('校园')) {
+  if (ctx.event === 'afterResolve' && ctx.card?.synergy_tags?.includes('校园')) {
     const helpers = getEffectHelpers(ctx);
     const persistentSystem = systemRegistry.getPersistentEffectSystem();
-    
-    // TODO: 实现本回合所有校园类卡牌成本-1的功能
+
+    // 本回合所有校园类卡牌成本-1
     persistentSystem.addTemporaryBonus({
       playerId: ctx.playerId,
       cardType: '校园',
@@ -43,13 +43,15 @@ const 校园协调: SkillEffect = (ctx: EffectContext) => {
       duration: 1,
       description: '校园协调：校园卡牌成本-1'
     });
-    
+
     EffectPatterns.logSkillActivation(
       helpers,
       ctx.playerId,
       '校园协调',
       '校园卡牌成本-1'
     );
+
+    helpers.gameStore.addNotification('校园协调：校园卡牌-1成本', 'info');
   }
 };
 

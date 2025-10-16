@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { useUserStore, type LogEntry } from '@/stores/userStore';
+import { useAuthStore } from '@/stores/modules/authStore';
+import type { LogEntry } from '@/stores/userStore';
 import { computed } from 'vue';
 
-const userStore = useUserStore();
+const authStore = useAuthStore();
 
 function timeAgo(timestamp: number): string {
   const now = Date.now();
@@ -37,10 +38,10 @@ const logTypeIcon = {
   <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 h-full flex flex-col">
     <h2 class="text-2xl font-bold text-white mb-4">系统日志</h2>
     <div class="flex-1 overflow-y-auto pr-2 space-y-2 max-h-[640px]">
-      <div v-if="userStore.logs.length === 0" class="text-center text-gray-500 pt-8">
+      <div v-if="authStore.logs.length === 0" class="text-center text-gray-500 pt-8">
         暂无任何系统日志。
       </div>
-      <div v-else v-for="(log, index) in userStore.logs" :key="log.timestamp + '-' + index" 
+      <div v-else v-for="(log, index) in authStore.logs" :key="log.timestamp + '-' + index" 
            class="flex items-start gap-3 p-3 rounded-lg text-sm"
            :class="logTypeStyles[log.type]">
         <span class="mt-1">{{ logTypeIcon[log.type] }}</span>

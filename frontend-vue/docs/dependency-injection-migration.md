@@ -2,11 +2,13 @@
 
 ## 概述
 
-本项目已从单例模式迁移到 Vue 3 的 provide/inject 依赖注入模式，以提供更好的：
-- 测试支持
-- 内存管理
-- 类型安全
-- 组件生命周期绑定
+本项目已**完全完成**从单例模式到 Vue 3 的 provide/inject 依赖注入模式的迁移，提供了：
+- ✅ **更好的测试支持** - 可轻松 mock 服务
+- ✅ **更好的内存管理** - 与组件生命周期绑定
+- ✅ **类型安全** - 完整的 TypeScript 支持
+- ✅ **更好的组件隔离** - 每个组件树可以有独立实例
+
+**迁移完成日期**: 2025-10-11
 
 ## 已完成的系统重构
 
@@ -135,21 +137,25 @@ provide(BATTLE_INTERACTION_SYSTEM, mockInteractionSystem)
 
 ## 迁移状态
 
-✅ **已完成**:
+✅ **已完成** (2025-10-11):
 - InteractionSystem 重构
-- PersistentEffectSystem 重构  
+- PersistentEffectSystem 重构
 - DialogueSystem 重构
 - BattleView.vue 更新为 provide 模式
 - BattleDialogueManager.vue 更新为 inject 模式
+- HandDisplay.vue 使用 useDialogue composable
+- AIController.ts 使用 systemRegistry
 - 依赖注入基础设施（injection keys, composables）
+- BattleController 完全重构为工厂函数模式
+- **完全移除旧的单例代码和向后兼容导出**
+- **技能效果系统验证（无单例调用）**
 
-🔄 **进行中**:
-- BattleController 部分重构（提供工厂函数）
-
-⏳ **待完成**:
-- 更新所有技能效果文件使用新的依赖注入
-- 更新其他使用单例的组件
-- 完全移除旧的单例代码
+🎉 **迁移完成总结**:
+- ✅ 所有 `getInstance()` 调用已移除
+- ✅ BattleController 向后兼容代码已移除
+- ✅ 所有组件正确使用 provide/inject 或 composables
+- ✅ 类型检查通过（无新增错误）
+- ✅ 20+ 处依赖注入使用点
 
 ## 最佳实践
 

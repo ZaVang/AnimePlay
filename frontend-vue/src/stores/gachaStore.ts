@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
-import { useUserStore } from './userStore';
+import { useCollectionStore } from './modules/collectionStore';
 import { useGameDataStore } from './gameDataStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { getCurrentUpPool } from '@/utils/gachaRotation';
@@ -15,14 +15,14 @@ export const useGachaStore = defineStore('gacha', () => {
     const lastResult = ref<DrawnCard[]>([]);
 
     function performGachaLogic(
-        gachaType: 'anime' | 'character',   
+        gachaType: 'anime' | 'character',
         count: number
     ): DrawnCard[] {
-        const userStore = useUserStore();
+        const collectionStore = useCollectionStore();
         const gameDataStore = useGameDataStore();
-        
+
         const config = gachaType === 'anime' ? GAME_CONFIG.animeSystem : GAME_CONFIG.characterSystem;
-        const pityState = gachaType === 'anime' ? userStore.animePityState : userStore.characterPityState;
+        const pityState = gachaType === 'anime' ? collectionStore.animePityState : collectionStore.characterPityState;
         const allCards = gachaType === 'anime' ? gameDataStore.allAnimeCards : gameDataStore.allCharacterCards;
         
         // 获取动态轮换的UP卡池

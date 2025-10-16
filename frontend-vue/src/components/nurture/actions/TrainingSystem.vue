@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import { useUserStore } from '@/stores/userStore';
+import { useAuthStore } from '@/stores/modules/authStore';
+import { useEconomyStore } from '@/stores/modules/economyStore';
+import { useNurtureStore } from '@/stores/modules/nurtureStore';
+
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/stores/userStore';
 import { useCharacterTraining } from '@/composables/useCharacterTraining';
@@ -9,7 +12,9 @@ const props = defineProps<{
   character: CharacterCard & { nurtureData: CharacterNurtureData };
 }>();
 
-const userStore = useUserStore();
+const authStore = useAuthStore();
+const economyStore = useEconomyStore();
+const nurtureStore = useNurtureStore();
 const { trainingPrograms, getAttributeProgress } = useCharacterTraining(props.character);
 const {
   trainingAnimations,
@@ -26,23 +31,23 @@ function startTraining(programId: string) {
   if (!program || !program.available) return;
   
   if (isTrainingOnCooldown(programId)) {
-    userStore.addLog('训练还在冷却中，请稍后再试！', 'warning');
+    authStore.addLog('训练还在冷却中，请稍后再试！', 'warning');
     return;
   }
   
-  if (userStore.playerState.knowledgePoints < program.cost) {
-    userStore.addLog('知识点不足，无法进行训练！', 'warning');
+  if (economyStore.knowledgePoints < program.cost) {
+    authStore.addLog('知识点不足，无法进行训练！', 'warning');
     return;
   }
 
   // 扣除知识点
-  userStore.playerState.knowledgePoints -= program.cost;
+  economyStore.knowledgePoints -= program.cost;
   
   // 提升属性
-  userStore.enhanceAttribute(props.character.id, program.attribute, program.gain);
+  nurtureStore.enhanceAttribute(props.character.id, program.attribute, program.gain);
   
   // 降低心情 (训练会让角色疲惫)
-  const nurtureData = userStore.getNurtureData(props.character.id);
+  const nurtureData = nurtureStore.getNurtureData(props.character.id);
   nurtureData.attributes.mood = Math.max(10, nurtureData.attributes.mood - 5);
   
   // 设置训练冷却 (基于训练时长)
@@ -51,11 +56,11 @@ function startTraining(programId: string) {
   // 启动训练动画
   startTrainingAnimation(programId);
   
-  userStore.addLog(`${props.character.name} 开始了${program.name}，将在${program.duration}分钟后完成！`, 'success');
+  authStore.addLog(`${props.character.name} 开始了${program.name}，将在${program.duration}分钟后完成！`, 'success');
   
   // 训练完成后的通知
   setTimeout(() => {
-    userStore.addLog(`${props.character.name} 完成了${program.name}！`, 'success');
+    authStore.addLog(`${props.character.name} 完成了${program.name}！`, 'success');
   }, program.duration * 60 * 1000);
 }
 </script>
@@ -124,15 +129,15 @@ function startTraining(programId: string) {
           <!-- 行动按钮 -->
           <button
             @click="startTraining(program.id)"
-            :disabled="!program.available || userStore.playerState.knowledgePoints < program.cost || isTrainingOnCooldown(program.id)"
+            :disabled="!program.available || economyStore.knowledgePoints < program.cost || isTrainingOnCooldown(program.id)"
             class="w-full py-2 px-3 rounded-lg font-medium text-sm transition-all duration-300"
-            :class="program.available && userStore.playerState.knowledgePoints >= program.cost && !isTrainingOnCooldown(program.id)
+            :class="program.available && economyStore.knowledgePoints >= program.cost && !isTrainingOnCooldown(program.id)
               ? 'bg-blue-600 hover:bg-blue-700 text-white'
               : 'bg-gray-600 text-gray-400 cursor-not-allowed'"
           >
             <span v-if="isTrainingOnCooldown(program.id)">训练中</span>
             <span v-else-if="!program.available">心情不足</span>
-            <span v-else-if="userStore.playerState.knowledgePoints < program.cost">知识点不足</span>
+            <span v-else-if="economyStore.knowledgePoints < program.cost">知识点不足</span>
             <span v-else>开始训练</span>
           </button>
         </div>

@@ -63,6 +63,36 @@ export const SkillSystem = {
   },
 
   /**
+   * 检查并激活基于条件的被动技能
+   * 在回合开始时调用，用于处理需要动态检查状态的被动技能
+   */
+  async checkConditionalPassiveSkills(playerId: 'playerA' | 'playerB') {
+    const playerStore = usePlayerStore();
+    const player = playerStore[playerId];
+
+    // 检查当前活跃角色的被动技能
+    const activeCharacter = player.characters[player.activeCharacterIndex];
+    if (!isCharacterCard(activeCharacter) || !activeCharacter.skills) return;
+
+    for (const skill of activeCharacter.skills) {
+      // 处理被动技能的条件检查
+      if (skill.type === '被动技能' && skill.effectId) {
+        try {
+          // 使用 onTurnStart 事件来触发条件检查
+          await runEffect(skill.effectId, {
+            event: 'onTurnStart',
+            playerId,
+            role: 'supporter',
+            character: activeCharacter
+          });
+        } catch (error) {
+          console.error(`❌ 检查条件被动技能失败: ${skill.effectId}`, error);
+        }
+      }
+    }
+  },
+
+  /**
    * Called when a card is played by attacker or defender.
    */
   async onCardPlayed(playerId: 'playerA' | 'playerB', card: Card) {
@@ -76,21 +106,55 @@ export const SkillSystem = {
 
   /**
    * Emit beforeResolve effects for both sides.
+   * 修改：将临时加成直接添加到 PersistentEffectSystem，而不是通过回调
    */
-  async emitBeforeResolve(clash: ClashInfo, addStrengthBonus: (side: CombatRole, amount: number) => void) {
+  async emitBeforeResolve(clash: ClashInfo) {
     const attackerId = clash.attackerId;
     const defenderId = clash.defenderId || (attackerId === 'playerA' ? 'playerB' : 'playerA');
+    const persistentSystem = systemRegistry.getPersistentEffectSystem();
 
     if (clash.attackingCard?.effects) {
       const beforeResolveEffects = clash.attackingCard.effects.filter(e => e.trigger === 'beforeResolve');
       for (const e of beforeResolveEffects) {
-        await runEffect(e.effectId, { event: 'beforeResolve', playerId: attackerId, role: 'attacker', card: clash.attackingCard, clash, addStrengthBonus });
+        await runEffect(e.effectId, {
+          event: 'beforeResolve',
+          playerId: attackerId,
+          role: 'attacker',
+          card: clash.attackingCard,
+          clash,
+          // 提供统一的加成接口
+          addStrengthBonus: (amount: number) => {
+            persistentSystem.addTemporaryBonus({
+              playerId: attackerId,
+              bonusType: 'strength',
+              amount,
+              duration: 0, // 立即生效且仅此次
+              description: 'beforeResolve临时加成'
+            });
+          }
+        });
       }
     }
     if (clash.defendingCard?.effects) {
       const beforeResolveEffects = clash.defendingCard.effects.filter(e => e.trigger === 'beforeResolve');
       for (const e of beforeResolveEffects) {
-        await runEffect(e.effectId, { event: 'beforeResolve', playerId: defenderId, role: 'defender', card: clash.defendingCard, clash, addStrengthBonus });
+        await runEffect(e.effectId, {
+          event: 'beforeResolve',
+          playerId: defenderId,
+          role: 'defender',
+          card: clash.defendingCard,
+          clash,
+          // 提供统一的加成接口
+          addStrengthBonus: (amount: number) => {
+            persistentSystem.addTemporaryBonus({
+              playerId: defenderId,
+              bonusType: 'strength',
+              amount,
+              duration: 0, // 立即生效且仅此次
+              description: 'beforeResolve临时加成'
+            });
+          }
+        });
       }
     }
   },

@@ -1,24 +1,26 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import { useUserStore } from '@/stores/userStore';
+import { useAuthStore } from '@/stores/modules/authStore';
+import { useCollectionStore } from '@/stores/modules/collectionStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import AnimeCard from '@/components/AnimeCard.vue';
 import CharacterCard from '@/components/CharacterCard.vue';
 import { RouterLink } from 'vue-router';
 
-const userStore = useUserStore();
+const authStore = useAuthStore();
+const collectionStore = useCollectionStore();
 const gameDataStore = useGameDataStore();
 
 const activeTab = ref<'anime' | 'character'>('anime');
 
 const favoriteAnimeCards = computed(() => {
-  return Array.from(userStore.favoriteAnime)
+  return Array.from(collectionStore.favoriteAnime)
     .map(id => gameDataStore.getAnimeCardById(id))
     .filter(Boolean); // 过滤掉可能未找到的卡片
 });
 
 const favoriteCharacterCards = computed(() => {
-  return Array.from(userStore.favoriteCharacters)
+  return Array.from(collectionStore.favoriteCharacters)
     .map(id => gameDataStore.getCharacterCardById(id))
     .filter(Boolean); // 过滤掉可能未找到的卡片
 });
@@ -45,7 +47,7 @@ const favoriteCharacterCards = computed(() => {
     </div>
 
     <div class="flex-grow overflow-y-auto max-h-[600px]">
-        <div v-if="userStore.isLoggedIn">
+        <div v-if="authStore.isLoggedIn">
             <div v-if="activeTab === 'anime'">
                 <div v-if="favoriteAnimeCards.length > 0" class="grid grid-cols-5 gap-4">
                 <AnimeCard v-for="card in favoriteAnimeCards" :key="`fav-${card!.id}`" :anime="card!" />

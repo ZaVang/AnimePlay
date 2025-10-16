@@ -32,7 +32,7 @@ export function createBattleController(dialogueSystem: DialogueSystem) {
 
     const styleCost = style === '辛辣点评' ? 1 : 0;
 
-    // 使用 CostCalculator 计算实际费用（考虑减免效果）
+    // 使用 CostCalculator 计算实际费用（第一次计算，不消耗减免）
     const costInfo = CostCalculator.getCostModification(attackingCard, attackerId);
     const totalCost = costInfo.finalCost + styleCost;
 
@@ -41,7 +41,9 @@ export function createBattleController(dialogueSystem: DialogueSystem) {
       return;
     }
 
-    playerStore.changeTp(attackerId, -totalCost);
+    // 应用费用并消耗"下张卡牌"减免效果
+    const finalCost = CostCalculator.calculateFinalCost(attackingCard, attackerId, true) + styleCost;
+    playerStore.changeTp(attackerId, -finalCost);
     playerStore.discardCardFromHand(attackerId, animeId.toString());
 
     const clash: ClashInfo = {
@@ -241,7 +243,7 @@ export function createBattleController(dialogueSystem: DialogueSystem) {
 
     const styleCost = defenseStyle === '反驳' ? 1 : 0;
 
-    // 使用 CostCalculator 计算实际费用（考虑减免效果）
+    // 使用 CostCalculator 计算实际费用（第一次计算，不消耗减免）
     const costInfo = CostCalculator.getCostModification(defendingCard, defenderId);
     const totalCost = costInfo.finalCost + styleCost;
 
@@ -250,7 +252,9 @@ export function createBattleController(dialogueSystem: DialogueSystem) {
       return;
     }
 
-    playerStore.changeTp(defenderId, -totalCost);
+    // 应用费用并消耗"下张卡牌"减免效果
+    const finalCost = CostCalculator.calculateFinalCost(defendingCard, defenderId, true) + styleCost;
+    playerStore.changeTp(defenderId, -finalCost);
     playerStore.discardCardFromHand(defenderId, defendingAnimeId.toString());
 
     const finalClashInfo: ClashInfo = {
@@ -305,16 +309,11 @@ export function createBattleController(dialogueSystem: DialogueSystem) {
     const historyStore = useHistoryStore();
     const settingsStore = useSettingsStore();
 
-    // beforeResolve: allow effects to inject temp bonuses
-    let extraAttacker = 0;
-    let extraDefender = 0;
-    await SkillSystem.emitBeforeResolve(clashInfo, (side, amount) => {
-      if (side === 'attacker') extraAttacker += amount; else extraDefender += amount;
-    });
+    // beforeResolve: 技能效果会将临时加成添加到 PersistentEffectSystem
+    await SkillSystem.emitBeforeResolve(clashInfo);
 
+    // BattleEngine.resolveClash 内部会通过 StrengthCalculator 读取所有加成
     const clashResult = BattleEngine.resolveClash(clashInfo);
-    clashResult.attackerStrength += extraAttacker;
-    clashResult.defenderStrength += extraDefender;
     const { rewards } = clashResult;
 
     // Determine winner based on strength comparison
@@ -440,13 +439,3 @@ export function createBattleController(dialogueSystem: DialogueSystem) {
   },
   };
 }
-
-// 创建一个默认实例用于向后兼容（暂时使用 null，实际使用时需要正确的 DialogueSystem 实例）
-// TODO: 这是临时的向后兼容方案，应该逐步迁移到依赖注入
-export const BattleController = {
-  // 临时的兼容方法，会在运行时报错提示需要使用新的依赖注入方式
-  async initiateClash() {
-    throw new Error('BattleController.initiateClash() 已废弃，请使用 createBattleController(dialogueSystem).initiateClash()');
-  },
-  // 其他方法类似...
-};

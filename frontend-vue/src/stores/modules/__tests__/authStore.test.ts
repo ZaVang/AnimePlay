@@ -2,7 +2,7 @@
  * AuthStore Unit Tests
  */
 
-import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { setActivePinia, createPinia } from 'pinia';
 import { useAuthStore } from '../authStore';
 
@@ -133,8 +133,9 @@ describe('AuthStore', () => {
   });
 
   describe('addExp', () => {
-    it('should add experience points', () => {
+    it('should add experience points', async () => {
       const authStore = useAuthStore();
+      await authStore.login('testuser');
       const initialExp = authStore.exp;
       authStore.addExp(100);
 
@@ -149,7 +150,7 @@ describe('AuthStore', () => {
       expect(authStore.exp).toBe(initialExp); // Should not change
     });
 
-    it('should level up when enough exp gained', () => {
+    it('should level up when enough exp gained', async () => {
       const authStore = useAuthStore();
       await authStore.login('testuser');
       const initialLevel = authStore.level;
@@ -159,7 +160,7 @@ describe('AuthStore', () => {
       expect(authStore.level).toBeGreaterThan(initialLevel);
     });
 
-    it('should handle zero exp', () => {
+    it('should handle zero exp', async () => {
       const authStore = useAuthStore();
       await authStore.login('testuser');
       const initialExp = authStore.exp;
@@ -168,7 +169,7 @@ describe('AuthStore', () => {
       expect(authStore.exp).toBe(initialExp);
     });
 
-    it('should add log when gaining exp', () => {
+    it('should add log when gaining exp', async () => {
       const authStore = useAuthStore();
       await authStore.login('testuser');
       authStore.addExp(100);

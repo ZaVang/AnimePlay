@@ -1,12 +1,11 @@
 import { computed } from 'vue';
-import { useUserStore } from '@/stores/userStore';
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/stores/userStore';
 
 export function useCharacterTraining(
   character: CharacterCard & { nurtureData: CharacterNurtureData }
 ) {
-  const userStore = useUserStore();
+  // No store needed for this composable - it only provides data structures
 
   // 可用的训练项目
   const trainingPrograms = computed(() => [

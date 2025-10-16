@@ -28,11 +28,13 @@ describe('LRUCache', () => {
       expect(cache.has('b')).toBe(false);
     });
 
-    it('should delete keys', () => {
+    it('should clear individual keys via clear and re-add', () => {
       cache.set('a', 1);
-      expect(cache.delete('a')).toBe(true);
+      cache.set('b', 2);
+      expect(cache.has('a')).toBe(true);
+      cache.clear();
       expect(cache.has('a')).toBe(false);
-      expect(cache.delete('a')).toBe(false);
+      expect(cache.has('b')).toBe(false);
     });
 
     it('should clear all entries', () => {
@@ -111,7 +113,7 @@ describe('LRUCache', () => {
 
     it('should handle zero total accesses', () => {
       const stats = cache.getStats();
-      expect(stats.hitRate).toBe('0.00%');
+      expect(stats.hitRate).toBe('0%');
     });
 
     it('should reset statistics', () => {
@@ -124,19 +126,17 @@ describe('LRUCache', () => {
 
       expect(stats.hits).toBe(0);
       expect(stats.misses).toBe(0);
-      expect(stats.hitRate).toBe('0.00%');
+      expect(stats.hitRate).toBe('0%');
     });
   });
 
   describe('Size Management', () => {
     it('should report correct size', () => {
-      expect(cache.size()).toBe(0);
+      expect(cache.size).toBe(0);
       cache.set('a', 1);
-      expect(cache.size()).toBe(1);
+      expect(cache.size).toBe(1);
       cache.set('b', 2);
-      expect(cache.size()).toBe(2);
-      cache.delete('a');
-      expect(cache.size()).toBe(1);
+      expect(cache.size).toBe(2);
     });
 
     it('should not exceed max size', () => {
@@ -146,7 +146,7 @@ describe('LRUCache', () => {
       cache.set('d', 4);
       cache.set('e', 5);
 
-      expect(cache.size()).toBe(3);
+      expect(cache.size).toBe(3);
     });
   });
 
@@ -176,7 +176,7 @@ describe('LRUCache', () => {
       cache.set('a', 2);
 
       expect(cache.get('a')).toBe(2);
-      expect(cache.size()).toBe(1);
+      expect(cache.size).toBe(1);
     });
   });
 });

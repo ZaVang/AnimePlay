@@ -36,7 +36,7 @@ const 圆环理: SkillEffect = (ctx: EffectContext) => {
     const opponentId = helpers.getOpponentId(ctx.playerId);
     
     if (helpers.playerStore[opponentId].reputation <= 5) {
-      ctx.addStrengthBonus(ctx.role, 2);
+      ctx.addStrengthBonus(2);
       console.log('圆环理：对手危机，卡牌强度+2');
     }
   }

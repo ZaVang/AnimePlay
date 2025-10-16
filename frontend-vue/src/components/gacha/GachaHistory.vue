@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useUserStore } from '@/stores/userStore';
+import { useCollectionStore } from '@/stores/modules/collectionStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { Bar } from 'vue-chartjs';
@@ -13,11 +13,11 @@ const props = defineProps<{
   gachaType: 'anime' | 'character';
 }>();
 
-const userStore = useUserStore();
+const collectionStore = useCollectionStore();
 const gameDataStore = useGameDataStore();
 
 const historyWithDetails = computed(() => {
-    const sourceHistory = props.gachaType === 'anime' ? userStore.animeGachaHistory : userStore.characterGachaHistory;
+    const sourceHistory = props.gachaType === 'anime' ? collectionStore.animeGachaHistory : collectionStore.characterGachaHistory;
     const getCardById = props.gachaType === 'anime' ? gameDataStore.getAnimeCardById : gameDataStore.getCharacterCardById;
 
     return sourceHistory.map(item => {

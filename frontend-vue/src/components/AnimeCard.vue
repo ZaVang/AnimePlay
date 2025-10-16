@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
-import { useUserStore } from '@/stores/userStore';
+import { useCollectionStore } from '@/stores/modules/collectionStore';
 import { useGameStore, usePlayerStore } from '@/stores/battle';
 import { CostCalculator } from '@/core/calculation/CostCalculator';
 import { SkillSystem } from '@/core/systems/SkillSystem';
@@ -18,14 +18,14 @@ const props = defineProps<{
   playerId?: 'playerA' | 'playerB'; // New prop for cost calculation
 }>();
 
-const userStore = useUserStore();
+const collectionStore = useCollectionStore();
 const gameStore = useGameStore();
 const playerStore = usePlayerStore();
 
 const rarityData = computed(() => GAME_CONFIG.animeSystem.rarityConfig[props.anime.rarity] || {});
 const rarityColorClass = computed(() => rarityData.value.c || 'bg-gray-500');
 const rarityEffectClass = computed(() => rarityData.value.effect || '');
-const isFavorite = computed(() => userStore.isFavorite(props.anime.id, 'anime'));
+const isFavorite = computed(() => collectionStore.isFavorite(props.anime.id, 'anime'));
 
 // 获取卡牌的基础强度（优先使用points字段，回退到稀有度默认值）
 const baseStrength = computed(() => {
@@ -116,7 +116,7 @@ function onImageError(event: Event) {
 
 function toggleFavorite(event: MouseEvent) {
   event.stopPropagation();
-  userStore.toggleFavorite(props.anime.id, 'anime');
+  collectionStore.toggleFavorite(props.anime.id, 'anime');
 }
 </script>
 

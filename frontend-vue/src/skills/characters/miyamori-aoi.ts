@@ -35,7 +35,7 @@ const 制作进行: SkillEffect = async (ctx: EffectContext) => {
       deck.splice(cardIndex, 1);
     }
 
-    helpers.gameStore.addNotification(`制作进行：获得 ${selectedCard.name}`, 'success');
+    helpers.gameStore.addNotification(`制作进行：获得 ${selectedCard.name}`, 'info');
   }
 
   EffectPatterns.logSkillActivation(
@@ -58,7 +58,7 @@ const 团队合作: SkillEffect = (ctx: EffectContext) => {
   // TODO: 实现己方打出的第2张和第3张不同类型的卡牌都+1强度的功能
   if (ctx.event === 'beforeResolve' && ctx.addStrengthBonus) {
     // 简化检测：假设是多样化出牌
-    ctx.addStrengthBonus(ctx.role, 1);
+    ctx.addStrengthBonus(1);
     
     EffectPatterns.logSkillActivation(
       helpers,

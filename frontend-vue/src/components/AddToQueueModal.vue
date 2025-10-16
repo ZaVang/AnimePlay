@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useUserStore } from '@/stores/userStore';
+import { useCollectionStore } from '@/stores/modules/collectionStore';
+import { useViewingStore } from '@/stores/modules/viewingStore';
 import { useGameDataStore} from '@/stores/gameDataStore';
 import type {AnimeCard as AnimeCardType } from '@/types/card';
 import AnimeCard from '@/components/AnimeCard.vue';
@@ -11,14 +12,15 @@ const props = defineProps<{
 
 const emit = defineEmits(['close', 'select']);
 
-const userStore = useUserStore();
+const collectionStore = useCollectionStore();
+const viewingStore = useViewingStore();
 const gameDataStore = useGameDataStore();
 
 const availableAnime = computed(() => {
-  const cardsInQueue = userStore.playerState.viewingQueue
+  const cardsInQueue = viewingStore.viewingQueue
     .filter(Boolean)
     .map(slot => slot!.animeId);
-  
+
   // 定义稀有度排序权重
   const rarityOrder: Record<string, number> = {
     'UR': 6,
@@ -28,11 +30,11 @@ const availableAnime = computed(() => {
     'R': 2,
     'N': 1
   };
-  
-  return Array.from(userStore.animeCollection.entries())
-    .filter(([id]) => 
+
+  return Array.from(collectionStore.animeCollection.entries())
+    .filter(([id]) =>
       !cardsInQueue.includes(id) && // 不在当前队列中
-      !userStore.playerState.watchedAnime.has(id) // 没有观看过
+      !viewingStore.watchedAnime.has(id) // 没有观看过
     )
     .map(([id, data]) => {
       const card = gameDataStore.getAnimeCardById(id);
@@ -73,7 +75,7 @@ function handleSelect(animeId: number) {
         <div v-else>
           <div class="mb-4 text-sm text-gray-400 flex items-center justify-between">
             <span>{{ availableAnime.length }} 部可观看动画 (按稀有度排序)</span>
-            <span class="text-xs">已观看: {{ userStore.playerState.watchedAnime.size }} 部</span>
+            <span class="text-xs">已观看: {{ viewingStore.watchedAnime.size }} 部</span>
           </div>
           <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
             <AnimeCard v-for="card in availableAnime" :key="card.id" :anime="card" :count="card.count" @click="handleSelect(card.id)" />

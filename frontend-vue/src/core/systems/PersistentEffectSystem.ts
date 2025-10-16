@@ -11,6 +11,7 @@ export interface PersistentEffect {
   duration: number; // -1 for permanent, 0 for immediate, >0 for temporary
   data: Record<string, any>; // Effect-specific data
   description: string;
+  sourceCharacterId?: number; // 效果来源角色的ID（用于生命周期管理）
   onApply?: () => void;
   onExpire?: () => void;
   onTurnStart?: () => void;
@@ -63,11 +64,18 @@ export class PersistentEffectSystem {
 
   /**
    * 添加临时加成
+   * 修改：duration=0 的加成会立即在下次查询后自动移除
    */
   addTemporaryBonus(bonus: Omit<TemporaryBonus, 'id'>): string {
     const id = `bonus_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
     const fullBonus: TemporaryBonus = { ...bonus, id };
-    
+
+    // 如果 duration 为 0，标记为"单次使用"加成
+    // 将在 getStrengthBonus 查询后自动清理
+    if (fullBonus.duration === 0) {
+      fullBonus.duration = -999; // 特殊标记，表示"查询后立即删除"
+    }
+
     this.bonuses.set(id, fullBonus);
 
     // 移除重复的临时加成提示
@@ -79,25 +87,27 @@ export class PersistentEffectSystem {
 
   /**
    * 回合开始时处理所有效果
+   * 修改：只处理当前活跃玩家的效果持续时间
    */
   onTurnStart(playerId: 'playerA' | 'playerB') {
-    // 处理持续效果
+    // 处理当前玩家的持续效果
     for (const [id, effect] of this.effects.entries()) {
-      if (effect.onTurnStart) {
+      if (effect.playerId === playerId && effect.onTurnStart) {
         effect.onTurnStart();
       }
     }
 
-    // 减少所有效果的持续时间
-    this.decreaseDuration();
+    // 只减少当前玩家的效果持续时间
+    this.decreaseDuration(playerId);
   }
 
   /**
    * 回合结束时处理所有效果
+   * 修改：只处理当前活跃玩家的效果
    */
   onTurnEnd(playerId: 'playerA' | 'playerB') {
     for (const [id, effect] of this.effects.entries()) {
-      if (effect.onTurnEnd) {
+      if (effect.playerId === playerId && effect.onTurnEnd) {
         effect.onTurnEnd();
       }
     }
@@ -105,18 +115,28 @@ export class PersistentEffectSystem {
 
   /**
    * 获取卡牌强度加成
+   * 修改：查询后自动清理 duration=-999 的单次使用加成
    */
   getStrengthBonus(playerId: 'playerA' | 'playerB', cardTypes: string[] = []): number {
     let totalBonus = 0;
+    const toRemove: string[] = [];
 
-    for (const bonus of this.bonuses.values()) {
+    for (const [id, bonus] of this.bonuses.entries()) {
       if (bonus.playerId === playerId && bonus.bonusType === 'strength') {
         // 检查卡牌类型匹配
         if (!bonus.cardType || cardTypes.includes(bonus.cardType)) {
           totalBonus += bonus.amount;
+
+          // 标记单次使用的加成待删除
+          if (bonus.duration === -999) {
+            toRemove.push(id);
+          }
         }
       }
     }
+
+    // 清理单次使用的加成
+    toRemove.forEach(id => this.bonuses.delete(id));
 
     return totalBonus;
   }
@@ -171,12 +191,16 @@ export class PersistentEffectSystem {
 
   /**
    * 减少持续时间并移除过期效果
+   * 修改：支持按玩家ID减少持续时间
    */
-  private decreaseDuration() {
+  private decreaseDuration(playerId?: 'playerA' | 'playerB') {
     const historyStore = useHistoryStore();
 
     // 处理持续效果
     for (const [id, effect] of this.effects.entries()) {
+      // 如果指定了玩家ID，只处理该玩家的效果
+      if (playerId && effect.playerId !== playerId) continue;
+
       if (effect.duration > 0) {
         effect.duration--;
         if (effect.duration === 0) {
@@ -187,6 +211,9 @@ export class PersistentEffectSystem {
 
     // 处理临时加成
     for (const [id, bonus] of this.bonuses.entries()) {
+      // 如果指定了玩家ID，只处理该玩家的加成
+      if (playerId && bonus.playerId !== playerId) continue;
+
       if (bonus.duration > 0) {
         bonus.duration--;
         if (bonus.duration === 0) {
@@ -199,6 +226,10 @@ export class PersistentEffectSystem {
 
     // 处理限制
     for (const [key, restriction] of this.restrictions.entries()) {
+      // 限制的key格式为 `${playerId}_${restrictionType}`
+      // 如果指定了玩家ID，只处理该玩家的限制
+      if (playerId && !key.startsWith(`${playerId}_`)) continue;
+
       if (restriction.duration > 0) {
         restriction.duration--;
         if (restriction.duration === 0) {
@@ -634,6 +665,29 @@ export class PersistentEffectSystem {
    */
   getPlayerEffectCount(playerId: 'playerA' | 'playerB'): number {
     return this.getPlayerEffects(playerId).length;
+  }
+
+  /**
+   * 移除指定角色的所有效果
+   * 用于角色替换/死亡时清理
+   */
+  removeCharacterEffects(playerId: 'playerA' | 'playerB', characterId: number): void {
+    const toRemove: string[] = [];
+
+    // 查找并标记该角色的所有效果
+    for (const [id, effect] of this.effects.entries()) {
+      if (effect.playerId === playerId && effect.data.characterId === characterId) {
+        toRemove.push(id);
+      }
+    }
+
+    // 移除效果
+    toRemove.forEach(id => this.removeEffect(id));
+
+    if (toRemove.length > 0) {
+      const historyStore = useHistoryStore();
+      historyStore.addLog(`角色替换：移除了 ${toRemove.length} 个效果`, 'info');
+    }
   }
 
   /**

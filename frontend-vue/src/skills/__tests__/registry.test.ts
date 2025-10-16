@@ -3,6 +3,7 @@
  */
 
 import { describe, it, expect, beforeEach, vi } from 'vitest';
+import { setActivePinia, createPinia } from 'pinia';
 import {
   runEffect,
   hasSkillEffect,
@@ -12,9 +13,52 @@ import {
   resetSkillStats
 } from '../registry';
 import type { EffectContext } from '@/types/effects';
+import { systemRegistry } from '@/core/di/registry';
+
+// Mock systems for DI
+const mockPersistentEffectSystem = {
+  addEffect: vi.fn(),
+  addTemporaryBonus: vi.fn(),
+  addCardTypeStrengthBonus: vi.fn(), // 添加这个方法
+  addRestriction: vi.fn(),
+  getEffects: vi.fn(() => []),
+  getBonuses: vi.fn(() => []),
+  getRestrictions: vi.fn(() => []),
+  removeEffect: vi.fn(),
+  removeBonus: vi.fn(),
+  removeRestriction: vi.fn(),
+  processTurnStart: vi.fn(),
+  processTurnEnd: vi.fn(),
+  clear: vi.fn(),
+};
+
+const mockInteractionSystem = {
+  requestCardSelection: vi.fn(),
+  requestTypeSelection: vi.fn(),
+  showHandToOpponent: vi.fn(),
+  viewOpponentHand: vi.fn(), // 添加这个方法
+  reset: vi.fn(),
+};
+
+const mockDialogueSystem = {
+  addDialogue: vi.fn(),
+  generateAttackDialogue: vi.fn(),
+  generateClashDialogue: vi.fn(),
+  clear: vi.fn(),
+};
 
 describe('Skill Registry', () => {
   beforeEach(() => {
+    // Initialize Pinia for skills that use stores
+    setActivePinia(createPinia());
+
+    // Register mock systems for DI
+    systemRegistry.registerSystems({
+      persistent: mockPersistentEffectSystem as any,
+      interaction: mockInteractionSystem as any,
+      dialogue: mockDialogueSystem as any,
+    });
+
     clearSkillCache();
     resetSkillStats();
   });

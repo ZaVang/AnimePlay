@@ -13,10 +13,17 @@ import { systemRegistry } from '@/core/di/registry';
 const 掌中老虎: SkillEffect = (ctx: EffectContext) => {
   const helpers = getEffectHelpers(ctx);
   const persistentSystem = systemRegistry.getPersistentEffectSystem();
-  
+
+  // 只在回合开始时检查条件
+  if (ctx.event !== 'onTurnStart' && ctx.event !== 'onGameStart') {
+    return;
+  }
+
   // 实现若对手上回合伤害了己方声望，本回合所有攻击+2强度的功能
-  // 简化检测：如果声望低于30则认为受到了伤害
-  if (helpers.playerStore[ctx.playerId].reputation < 30) {
+  // 检测：如果声望低于30则认为受到了伤害
+  const currentReputation = helpers.playerStore[ctx.playerId].reputation;
+
+  if (currentReputation < 30) {
     // 本回合所有卡牌+2强度（攻击性强化）
     persistentSystem.addTemporaryBonus({
       playerId: ctx.playerId,
@@ -26,14 +33,14 @@ const 掌中老虎: SkillEffect = (ctx: EffectContext) => {
       duration: 1,
       description: '掌中老虎：受伤反击+2强度'
     });
-    
+
     EffectPatterns.logSkillActivation(
       helpers,
       ctx.playerId,
       '掌中老虎',
       '受到伤害后反击+2强度！'
     );
-    
+
     helpers.gameStore.addNotification('掌中老虎：攻击+2强度', 'info');
   }
 };
@@ -44,14 +51,18 @@ const 掌中老虎: SkillEffect = (ctx: EffectContext) => {
 const 傲娇反击: SkillEffect = (ctx: EffectContext) => {
   const helpers = getEffectHelpers(ctx);
   const persistentSystem = systemRegistry.getPersistentEffectSystem();
-  
+
   // 添加被动效果：对手使用辛辣点评时的反击机制
   persistentSystem.addEffect({
     playerId: ctx.playerId,
     type: 'tsundere_counter',
     duration: -1, // 永久被动
-    data: { targetCard: '辛辣点评' },
+    data: {
+      targetCard: '辛辣点评',
+      characterId: ctx.character?.id // 绑定角色ID用于生命周期管理
+    },
     description: '傲娇反击：以牙还牙',
+    sourceCharacterId: ctx.character?.id,
     onApply: () => {
       console.log('傲娇反击：以牙还牙');
     }

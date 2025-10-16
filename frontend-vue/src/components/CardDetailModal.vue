@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useUserStore } from '@/stores/userStore';
+import { useCollectionStore } from '@/stores/modules/collectionStore';
+import { useEconomyStore } from '@/stores/modules/economyStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import type { Card, AnimeCard, CharacterCard } from '@/types/card';
@@ -14,7 +15,8 @@ const props = defineProps<{
 }>();
 
 const emit = defineEmits(['close']);
-const userStore = useUserStore();
+const collectionStore = useCollectionStore();
+const economyStore = useEconomyStore();
 const gameDataStore = useGameDataStore();
 
 const cardRarityConfig = computed(() => {
@@ -61,10 +63,10 @@ const animeEffectsDescriptions = computed(() => {
 
 const processedAnimeNames = computed(() => {
     if (props.cardType !== 'character' || !props.card || !(props.card as CharacterCard).anime_names) return [];
-    
+
     return (props.card as CharacterCard).anime_names?.map(name => {
         const animeCard = gameDataStore.allAnimeCards.find(c => c.name === name);
-        const isOwned = animeCard ? userStore.animeCollection.has(animeCard.id) : false;
+        const isOwned = animeCard ? collectionStore.animeCollection.has(animeCard.id) : false;
         return { name, isOwned };
     }) || [];
 });
@@ -76,7 +78,7 @@ function closeModal() {
 function handleDismantle() {
     if (props.card) {
         if (confirm(`确定要分解一张 [${props.card.rarity}] ${props.card.name} 吗？\n你将获得 ${dismantleValue.value} 知识点。`)) {
-            userStore.dismantleCard(props.card.id, props.cardType);
+            economyStore.dismantleCard(props.card.id, props.cardType);
             closeModal();
         }
     }

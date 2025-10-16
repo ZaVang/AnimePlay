@@ -2,7 +2,8 @@ import { useGameStore } from '@/stores/battle';
 import { usePlayerStore } from '@/stores/battle';
 import { useHistoryStore } from '@/stores/battle';
 import { useGameDataStore } from '@/stores/gameDataStore';
-import { useUserStore, type Deck } from '@/stores/userStore';
+import { useAuthStore } from '@/stores/modules/authStore';
+import type { Deck } from '@/stores/userStore';
 import { getAIProfileById, pickDefaultAIProfile, type AIProfile } from '@/core/ai/aiProfiles';
 import type { AnimeCard, CharacterCard, Skill } from '@/types';
 import type { Rarity } from '@/types/card';
@@ -102,7 +103,7 @@ export const TurnManager = {
     const playerStore = usePlayerStore();
     const gameDataStore = useGameDataStore();
     const historyStore = useHistoryStore();
-    const userStore = useUserStore();
+    const authStore = useAuthStore();
 
     console.log('🎮 TurnManager.initializeGameWithDeck 调用');
     console.log('📊 游戏数据状态:', {
@@ -181,12 +182,12 @@ export const TurnManager = {
     console.log('📋 setupPlayers后状态:', {
       playerA_deckSize: playerStore.playerA.deck.length,
       playerA_handSize: playerStore.playerA.hand.length,
-      playerB_deckSize: playerStore.playerB.deck.length,  
+      playerB_deckSize: playerStore.playerB.deck.length,
       playerB_handSize: playerStore.playerB.hand.length
     });
 
     // Set player names: logged-in user vs AI profile name
-    playerStore.playerA.name = userStore.currentUser || '你';
+    playerStore.playerA.name = authStore.currentUser || '你';
     playerStore.playerB.name = aiProfile.name;
 
     playerStore.shuffleDeck('playerA');
@@ -224,7 +225,7 @@ export const TurnManager = {
     const playerStore = usePlayerStore();
     const gameDataStore = useGameDataStore();
     const historyStore = useHistoryStore();
-    const userStore = useUserStore();
+    const authStore = useAuthStore();
 
     console.log('🎲 TurnManager.initializeRandomGame 调用');
     console.log('📊 游戏数据状态:', {
@@ -283,7 +284,7 @@ export const TurnManager = {
 
     // Shuffle decks at the start of the game
     // Set player names: logged-in user vs AI profile name
-    playerStore.playerA.name = userStore.currentUser || '你';
+    playerStore.playerA.name = authStore.currentUser || '你';
     playerStore.playerB.name = aiProfile.name;
 
     playerStore.shuffleDeck('playerA');
@@ -338,11 +339,14 @@ export const TurnManager = {
 
     // 4. Process persistent effects at start of turn
     systemRegistry.getPersistentEffectSystem().onTurnStart(gameStore.activePlayer);
-    
-    // 4. Handle character skill cooldowns reduction
+
+    // 4.5. Check conditional passive skills (动态被动技能检查)
+    SkillSystem.checkConditionalPassiveSkills(gameStore.activePlayer);
+
+    // 5. Handle character skill cooldowns reduction
     playerStore.reduceSkillCooldowns(gameStore.activePlayer);
     
-    // 5. Handle character rotation if needed
+    // 6. Handle character rotation if needed
     if (playerStore[gameStore.activePlayer].needsRotation) {
       const player = playerStore[gameStore.activePlayer];
       const newIndex = (player.activeCharacterIndex + 1) % player.characters.length;
@@ -350,10 +354,10 @@ export const TurnManager = {
       player.needsRotation = false; // Reset the flag
     }
 
-    // 6. Set phase to action
+    // 7. Set phase to action
     gameStore.setPhase('action');
 
-    // 7. If it's the AI's turn, trigger its action
+    // 8. If it's the AI's turn, trigger its action
     if (gameStore.activePlayer === 'playerB') {
       AIController.takeTurn();
     }

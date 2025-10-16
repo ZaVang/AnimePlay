@@ -1,12 +1,12 @@
 import { ref, computed } from 'vue';
-import { useUserStore } from '@/stores/userStore';
+import { useEconomyStore } from '@/stores/modules/economyStore';
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/stores/userStore';
 
 export function useInteractionData(
   character: CharacterCard & { nurtureData: CharacterNurtureData }
 ) {
-  const userStore = useUserStore();
+  const economyStore = useEconomyStore();
 
   // 礼物系统数据 - 重新平衡消耗和收益
   const availableGifts = ref([
@@ -203,7 +203,7 @@ export function useInteractionData(
         name: '赠送礼物',
         icon: '🎁',
         description: '送礼物增进感情',
-        available: userStore.playerState.knowledgePoints >= 10,
+        available: economyStore.knowledgePoints >= 10,
         cost: { type: 'knowledge', amount: 10 },
         color: 'pink'
       },

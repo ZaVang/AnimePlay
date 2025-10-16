@@ -1,12 +1,13 @@
 <script setup lang="ts">
-import { useUserStore, type Deck } from '@/stores/userStore';
+import type { Deck } from '@/stores/userStore';
+import { useDeckStore } from '@/stores/modules/deckStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { ref, computed, onMounted } from 'vue';
 import { listAIProfiles, type AIProfile } from '@/core/ai/aiProfiles';
 import { useSettingsStore } from '@/stores/settings';
 import BattleRulesModal from './BattleRulesModal.vue';
 
-const userStore = useUserStore();
+const deckStore = useDeckStore();
 const gameDataStore = useGameDataStore();
 const settingsStore = useSettingsStore();
 
@@ -90,14 +91,14 @@ function handleRandomClick() {
         </div>
       </div>
     </div>
-    <div v-if="Object.keys(userStore.savedDecks).length === 0" class="text-center">
+    <div v-if="Object.keys(deckStore.savedDecks).length === 0" class="text-center">
       <p class="text-gray-400">没有找到已保存的卡组。</p>
       <button @click="handleRandomClick" class="btn-primary mt-4">使用随机卡组开始</button>
     </div>
     <div v-else>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
         <div
-          v-for="deck in userStore.savedDecks"
+          v-for="deck in deckStore.savedDecks"
           :key="deck.name"
           class="bg-gray-800 rounded-lg shadow-lg overflow-hidden group cursor-pointer border-2 border-transparent hover:border-yellow-400 transition-all"
           @click="handleDeckClick(deck)"

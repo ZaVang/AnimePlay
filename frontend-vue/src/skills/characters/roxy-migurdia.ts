@@ -36,7 +36,7 @@ const 魔法指导: SkillEffect = async (ctx: EffectContext) => {
       description: `魔法指导：${selectedCard.name} 视为任意类型`
     });
 
-    helpers.gameStore.addNotification(`魔法指导：${selectedCard.name} 已强化为万能类型`, 'success');
+    helpers.gameStore.addNotification(`魔法指导：${selectedCard.name} 已强化为万能类型`, 'info');
 
     EffectPatterns.logSkillActivation(
       helpers,

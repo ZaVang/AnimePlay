@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import { useUserStore } from '@/stores/userStore';
+import { useAuthStore } from '@/stores/modules/authStore';
+import { useEconomyStore } from '@/stores/modules/economyStore';
+import { useNurtureStore } from '@/stores/modules/nurtureStore';
+
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/stores/userStore';
 import { useCharacterTraining } from '@/composables/useCharacterTraining';
@@ -14,7 +17,9 @@ const props = defineProps<{
   character: CharacterCard & { nurtureData: CharacterNurtureData };
 }>();
 
-const userStore = useUserStore();
+const authStore = useAuthStore();
+const economyStore = useEconomyStore();
+const nurtureStore = useNurtureStore();
 const { battleTrainingPrograms } = useCharacterTraining(props.character);
 const {
   trainingAnimations,
@@ -71,31 +76,31 @@ function processBattleTrainingResult(program: any, battleResult: any) {
   if (battleResult.winner === 'attacker') {
     // 胜利：更好的奖励
     console.log('About to call enhanceBattleStat with:', { characterId, stat: program.stat, gain: program.gain });
-    userStore.enhanceBattleStat(characterId, program.stat, program.gain);
-    userStore.addCharacterExp(characterId, 25); // 战斗经验
+    nurtureStore.enhanceBattleStat(characterId, program.stat, program.gain);
+    nurtureStore.addCharacterExp(characterId, 25); // 战斗经验
     
     const bonusMessage = battleResult.isCriticalHit ? '表现出色，' : '';
-    userStore.addLog(
+    authStore.addLog(
       `🎉 ${props.character.name} 在${program.name}中获胜！${bonusMessage}${program.stat.toUpperCase()}提升${program.gain}%！`,
       'success'
     );
   } else if (battleResult.winner === 'defender') {
     // 失败：较少奖励，但仍有成长
     const reducedGain = Math.ceil(program.gain * 0.4);
-    userStore.enhanceBattleStat(characterId, program.stat, reducedGain);
-    userStore.addCharacterExp(characterId, 10);
+    nurtureStore.enhanceBattleStat(characterId, program.stat, reducedGain);
+    nurtureStore.addCharacterExp(characterId, 10);
     
-    userStore.addLog(
+    authStore.addLog(
       `😔 ${props.character.name} 在${program.name}中落败，但从失败中学习。${program.stat.toUpperCase()}提升${reducedGain}%！`,
       'warning'
     );
   } else {
     // 平局：中等奖励
     const mediumGain = Math.ceil(program.gain * 0.7);
-    userStore.enhanceBattleStat(characterId, program.stat, mediumGain);
-    userStore.addCharacterExp(characterId, 18);
+    nurtureStore.enhanceBattleStat(characterId, program.stat, mediumGain);
+    nurtureStore.addCharacterExp(characterId, 18);
     
-    userStore.addLog(
+    authStore.addLog(
       `⚡ ${props.character.name} 在${program.name}中打成平手！势均力敌的较量让实力提升。${program.stat.toUpperCase()}提升${mediumGain}%！`,
       'info'
     );
@@ -118,18 +123,18 @@ function startBattleTraining(programId: string) {
     }
     
     if (isTrainingOnCooldown(programId)) {
-      userStore.addLog('战斗训练还在冷却中，请稍后再试！', 'warning');
+      authStore.addLog('战斗训练还在冷却中，请稍后再试！', 'warning');
       return;
     }
     
-    if (!userStore.playerState || userStore.playerState.knowledgePoints < program.cost) {
-      userStore.addLog('知识点不足，无法进行战斗训练！', 'warning');
+    if (economyStore.knowledgePoints < program.cost) {
+      authStore.addLog('知识点不足，无法进行战斗训练！', 'warning');
       return;
     }
 
     // 扣除知识点
-    userStore.playerState.knowledgePoints -= program.cost;
-    console.log('Knowledge points deducted, remaining:', userStore.playerState.knowledgePoints);
+    economyStore.knowledgePoints -= program.cost;
+    console.log('Knowledge points deducted, remaining:', economyStore.knowledgePoints);
     
     // 生成角色当前战斗状态
     const currentBattleStats = generateBattleStats(
@@ -148,7 +153,7 @@ function startBattleTraining(programId: string) {
     processBattleTrainingResult(program, battleResult);
     
     // 降低心情和体力 (高强度训练更累)
-    const nurtureData = userStore.getNurtureData(props.character.id);
+    const nurtureData = nurtureStore.getNurtureData(props.character.id);
     nurtureData.attributes.mood = Math.max(5, nurtureData.attributes.mood - 8);
     nurtureData.attributes.strength = Math.max(10, nurtureData.attributes.strength - 3);
     
@@ -158,7 +163,7 @@ function startBattleTraining(programId: string) {
   } catch (error) {
     console.error('Battle training error:', error);
     const errorMessage = error instanceof Error ? error.message : String(error);
-    userStore.addLog(`战斗训练出错：${errorMessage}`, 'warning');
+    authStore.addLog(`战斗训练出错：${errorMessage}`, 'warning');
   }
   
   // 启动战斗训练动画
@@ -239,15 +244,15 @@ function startBattleTraining(programId: string) {
           <!-- 行动按钮 -->
           <button
             @click="startBattleTraining(program.id)"
-            :disabled="!program.available || userStore.playerState.knowledgePoints < program.cost || isTrainingOnCooldown(program.id)"
+            :disabled="!program.available || economyStore.knowledgePoints < program.cost || isTrainingOnCooldown(program.id)"
             class="w-full py-2 px-3 rounded-lg font-medium text-sm transition-all duration-300"
-            :class="program.available && userStore.playerState.knowledgePoints >= program.cost && !isTrainingOnCooldown(program.id)
+            :class="program.available && economyStore.knowledgePoints >= program.cost && !isTrainingOnCooldown(program.id)
               ? 'bg-red-600 hover:bg-red-700 text-white'
               : 'bg-gray-600 text-gray-400 cursor-not-allowed'"
           >
             <span v-if="isTrainingOnCooldown(program.id)">强化中</span>
             <span v-else-if="!program.available">条件不满足</span>
-            <span v-else-if="userStore.playerState.knowledgePoints < program.cost">知识点不足</span>
+            <span v-else-if="economyStore.knowledgePoints < program.cost">知识点不足</span>
             <span v-else>开始强化</span>
           </button>
         </div>

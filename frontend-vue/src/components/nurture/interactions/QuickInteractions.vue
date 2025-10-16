@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useUserStore } from '@/stores/userStore';
+import { useEconomyStore } from '@/stores/modules/economyStore';
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/stores/userStore';
 import { useInteractionEffects } from '@/composables/useInteractionEffects';
@@ -8,7 +8,7 @@ const props = defineProps<{
   character: CharacterCard & { nurtureData: CharacterNurtureData };
 }>();
 
-const userStore = useUserStore();
+const economyStore = useEconomyStore();
 const { quickChat, quickGift } = useInteractionEffects(props.character);
 </script>
 
@@ -33,10 +33,10 @@ const { quickChat, quickGift } = useInteractionEffects(props.character);
       <!-- 快速送礼 -->
       <button 
         @click="quickGift"
-        :disabled="userStore.playerState.knowledgePoints < 25"
+        :disabled="economyStore.knowledgePoints < 25"
         :class="[
           'flex items-center p-4 border rounded-lg transition-all duration-300 group',
-          userStore.playerState.knowledgePoints >= 25
+          economyStore.knowledgePoints >= 25
             ? 'bg-pink-600/20 hover:bg-pink-600/30 border-pink-600/30'
             : 'bg-gray-700/50 border-gray-600/50 opacity-50 cursor-not-allowed'
         ]"
@@ -45,7 +45,7 @@ const { quickChat, quickGift } = useInteractionEffects(props.character);
         <div class="flex-1">
           <div 
             class="text-sm font-medium mb-1"
-            :class="userStore.playerState.knowledgePoints >= 25 ? 'text-pink-400' : 'text-gray-500'"
+            :class="economyStore.knowledgePoints >= 25 ? 'text-pink-400' : 'text-gray-500'"
           >
             小礼物
           </div>

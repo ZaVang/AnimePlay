@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { useUserStore } from '@/stores/userStore';
+import { useDeckStore } from '@/stores/modules/deckStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 
-const userStore = useUserStore();
+const deckStore = useDeckStore();
 const gameDataStore = useGameDataStore();
 
 const getCoverImage = (deck) => {
@@ -19,7 +19,7 @@ const emit = defineEmits(['editDeck', 'newDeck']);
 
 const handleDeleteDeck = (deckName: string) => {
   if (confirm(`确定要删除卡组 "${deckName}" 吗？此操作不可撤销。`)) {
-    userStore.deleteDeck(deckName);
+    deckStore.deleteDeck(deckName);
   }
 };
 </script>
@@ -27,13 +27,13 @@ const handleDeleteDeck = (deckName: string) => {
 <template>
   <div>
     <div class="flex justify-between items-center mb-4">
-      <h3 class="text-xl font-bold">已保存的卡组 ({{ Object.keys(userStore.savedDecks).length }})</h3>
+      <h3 class="text-xl font-bold">已保存的卡组 ({{ Object.keys(deckStore.savedDecks).length }})</h3>
       <button @click="$emit('newDeck')" class="bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700">
         创建新卡组
       </button>
     </div>
 
-    <div v-if="Object.keys(userStore.savedDecks).length === 0" class="text-center py-16 border-2 border-dashed border-gray-300 rounded-lg">
+    <div v-if="Object.keys(deckStore.savedDecks).length === 0" class="text-center py-16 border-2 border-dashed border-gray-300 rounded-lg">
       <p class="text-gray-500">你还没有创建任何卡组。</p>
       <button @click="$emit('newDeck')" class="mt-4 bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700">
         立即创建
@@ -41,7 +41,7 @@ const handleDeleteDeck = (deckName: string) => {
     </div>
 
     <div v-else class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6">
-      <div v-for="deck in userStore.savedDecks" :key="deck.name" class="bg-white rounded-lg shadow-md overflow-hidden group cursor-pointer" @click="$emit('editDeck', deck.name)">
+      <div v-for="deck in deckStore.savedDecks" :key="deck.name" class="bg-white rounded-lg shadow-md overflow-hidden group cursor-pointer" @click="$emit('editDeck', deck.name)">
         <div class="relative aspect-w-1 aspect-h-2">
           <img :src="getCoverImage(deck)" class="w-full h-full object-cover" :alt="`${deck.name} cover`">
           <div class="absolute top-0 right-0 p-2 opacity-0 group-hover:opacity-100 transition-opacity">

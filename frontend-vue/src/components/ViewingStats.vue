@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useUserStore } from '@/stores/userStore';
+import { useAuthStore } from '@/stores/modules/authStore';
+import { useViewingStore } from '@/stores/modules/viewingStore';
 
-const userStore = useUserStore();
+const authStore = useAuthStore();
+const viewingStore = useViewingStore();
 
-const stats = computed(() => userStore.playerState.viewingStats);
+const stats = computed(() => viewingStore.viewingStats);
 const totalWatchedHours = computed(() => Math.floor(stats.value.totalWatchTime / 60));
 const totalWatchedMinutes = computed(() => stats.value.totalWatchTime % 60);
 
@@ -32,7 +34,7 @@ const progressLevel = computed(() => {
       观看统计
     </h2>
 
-    <div v-if="userStore.isLoggedIn" class="space-y-6">
+    <div v-if="authStore.isLoggedIn" class="space-y-6">
       <!-- 观看等级 -->
       <div class="text-center p-4 bg-gray-700/50 rounded-lg">
         <div class="text-2xl mb-2">{{ progressLevel.icon }}</div>
@@ -52,7 +54,7 @@ const progressLevel = computed(() => {
 
         <!-- 已观看动画数 -->
         <div class="bg-gray-700/30 p-4 rounded-lg text-center">
-          <div class="text-2xl font-bold text-green-400">{{ userStore.playerState.watchedAnime.size }}</div>
+          <div class="text-2xl font-bold text-green-400">{{ viewingStore.watchedAnime.size }}</div>
           <div class="text-xs text-gray-400 mt-1">已观看动画</div>
         </div>
       </div>

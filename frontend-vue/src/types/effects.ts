@@ -2,7 +2,7 @@ import type { AnimeCard, CharacterCard } from './card';
 import type { ClashInfo } from './battle';
 
 // 战斗事件类型
-export type BattleEvent = 'onPlay' | 'beforeResolve' | 'afterResolve' | 'onGameStart';
+export type BattleEvent = 'onPlay' | 'beforeResolve' | 'afterResolve' | 'onGameStart' | 'onTurnStart' | 'onTurnEnd';
 
 // 战斗角色
 export type CombatRole = 'attacker' | 'defender' | 'supporter';
@@ -18,7 +18,8 @@ export interface EffectContext {
   card?: AnimeCard;
   character?: CharacterCard;
   clash?: ClashInfo;
-  addStrengthBonus?: (role: CombatRole, amount: number) => void;
+  // 修改：简化为单参数版本，在 beforeResolve 事件中提供
+  addStrengthBonus?: (amount: number) => void;
 }
 
 // 效果处理器类型

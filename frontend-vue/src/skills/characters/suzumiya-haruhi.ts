@@ -29,7 +29,7 @@ const 团长命令: SkillEffect = (ctx: EffectContext) => {
  */
 const SOS团氛围: SkillEffect = (ctx: EffectContext) => {
   if (ctx.event === 'beforeResolve' && ctx.card?.synergy_tags?.includes('日常') && ctx.addStrengthBonus) {
-    ctx.addStrengthBonus(ctx.role, 1);
+    ctx.addStrengthBonus(1);
     console.log('SOS团氛围：日常卡牌+1强度');
   }
 };

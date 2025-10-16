@@ -1,6 +1,6 @@
 <script setup lang="ts">
+import { useEconomyStore } from '@/stores/modules/economyStore';
 import { ref } from 'vue';
-import { useUserStore } from '@/stores/userStore';
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/stores/userStore';
 import { useInteractionData } from '@/composables/useInteractionData';
@@ -16,7 +16,7 @@ const emit = defineEmits<{
   openCampus: [];
 }>();
 
-const userStore = useUserStore();
+const economyStore = useEconomyStore();
 const { availableInteractions } = useInteractionData(props.character);
 
 // 执行互动
@@ -80,7 +80,7 @@ function executeInteraction(interactionId: string) {
             </div>
             <div v-if="!interaction.available" class="text-xs text-red-400">
               <!-- 显示不可用原因 -->
-              <span v-if="interaction.id === 'gift' && userStore.playerState.knowledgePoints < 10">
+              <span v-if="interaction.id === 'gift' && economyStore.knowledgePoints < 10">
                 知识点不足
               </span>
               <span v-else-if="interaction.id === 'activity' && character.nurtureData.affection < 100">

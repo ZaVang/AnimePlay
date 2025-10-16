@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useUserStore } from '@/stores/userStore';
+import { useNurtureStore } from '@/stores/modules/nurtureStore';;
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/stores/userStore';
 import { generateBattleStats, calculateBattlePower } from '@/utils/battleCalculator';
@@ -9,11 +9,11 @@ const props = defineProps<{
   character: CharacterCard & { nurtureData: CharacterNurtureData };
 }>();
 
-const userStore = useUserStore();
+const nurtureStore = useNurtureStore();
 
 // 计算角色等级进度
 const levelProgress = computed(() => {
-  return userStore.getLevelProgress(props.character.nurtureData);
+  return nurtureStore.getLevelProgress(props.character.nurtureData);
 });
 
 // 计算羁绊等级

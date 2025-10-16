@@ -50,31 +50,46 @@ const AT力场: SkillEffect = (ctx: EffectContext) => {
 };
 
 /**
- * 逃避现实 - 己方声望≤15时所有卡牌成本-1
+ * 逃避现实 - 己方声望≤15时所有卡牌成本-1（被动，每回合检查）
  */
 const 逃避现实: SkillEffect = (ctx: EffectContext) => {
   const helpers = getEffectHelpers(ctx);
   const persistentSystem = systemRegistry.getPersistentEffectSystem();
-  
-  // TODO: 实现己方声望≤15时所有卡牌成本-1的功能
-  if (helpers.playerStore[ctx.playerId].reputation <= 15) {
+
+  // 被动技能在回合开始时检查条件
+  if (ctx.event !== 'onTurnStart' && ctx.event !== 'onGameStart') {
+    return;
+  }
+
+  const currentReputation = helpers.playerStore[ctx.playerId].reputation;
+
+  // 清除旧的逃避现实效果
+  const existingEffects = Array.from(persistentSystem['bonuses'].values()).filter(
+    bonus => bonus.playerId === ctx.playerId && bonus.description.includes('逃避现实')
+  );
+  existingEffects.forEach(effect => {
+    persistentSystem['bonuses'].delete(effect.id);
+  });
+
+  // 如果声望≤15，添加成本减免
+  if (currentReputation <= 15) {
     persistentSystem.addTemporaryBonus({
       playerId: ctx.playerId,
       cardType: undefined, // 所有卡牌
       bonusType: 'cost',
       amount: 1,
-      duration: -1, // 持续到声望回复
+      duration: 1, // 持续1回合，下回合重新检查
       description: '逃避现实：低声望时卡牌成本-1'
     });
-    
+
     EffectPatterns.logSkillActivation(
       helpers,
       ctx.playerId,
       '逃避现实',
-      '低声望时卡牌成本-1！'
+      `低声望（${currentReputation}）时卡牌成本-1！`
     );
-    
-    console.log('逃避现实：低声望时卡牌成本-1');
+
+    helpers.gameStore.addNotification('逃避现实：卡牌成本-1', 'info');
   }
 };
 

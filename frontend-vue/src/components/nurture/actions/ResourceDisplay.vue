@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useUserStore } from '@/stores/userStore';
+import { useEconomyStore } from '@/stores/modules/economyStore';
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/stores/userStore';
 
@@ -7,7 +7,7 @@ const props = defineProps<{
   character: CharacterCard & { nurtureData: CharacterNurtureData };
 }>();
 
-const userStore = useUserStore();
+const economyStore = useEconomyStore();
 </script>
 
 <template>
@@ -16,7 +16,7 @@ const userStore = useUserStore();
     <div class="flex items-center justify-between text-sm">
       <div class="flex items-center">
         <span class="text-gray-400">可用知识点:</span>
-        <span class="ml-2 font-bold text-blue-400">{{ userStore.playerState.knowledgePoints }}</span>
+        <span class="ml-2 font-bold text-blue-400">{{ economyStore.knowledgePoints }}</span>
       </div>
       <div class="flex items-center">
         <span class="text-gray-400">心情值:</span>

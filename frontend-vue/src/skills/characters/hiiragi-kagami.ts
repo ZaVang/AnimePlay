@@ -41,31 +41,64 @@ const 射击精准: SkillEffect = (ctx: EffectContext) => {
 };
 
 /**
- * 双子感应 - 同类型连击强化
+ * 双子感应 - 同类型连击强化（被动）
  */
 const 双子感应: SkillEffect = (ctx: EffectContext) => {
   const helpers = getEffectHelpers(ctx);
   const persistentSystem = systemRegistry.getPersistentEffectSystem();
-  
-  // TODO: 实现己方打出与上张卡牌相同类型时强度+2的功能
-  // 添加同类型连击检测器
-  persistentSystem.addEffect({
-    playerId: ctx.playerId,
-    type: 'twin_sense',
-    duration: -1, // 永久被动
-    data: { lastCardType: '', strengthBonus: 2 },
-    description: '双子感应：同类型连击+2强度',
-    onApply: () => {
-      console.log('双子感应：同类型连击强化');
+
+  // afterResolve: 检查卡牌类型并追踪连击
+  if (ctx.event === 'afterResolve' && ctx.card) {
+    const currentTypes = ctx.card.synergy_tags || [];
+
+    // 查找现有的双子感应追踪效果
+    let twinEffect = Array.from(persistentSystem['effects'].values()).find(
+      effect => effect.playerId === ctx.playerId && effect.type === 'twin_sense_tracker'
+    );
+
+    if (twinEffect) {
+      const lastTypes = twinEffect.data.lastCardTypes || [];
+
+      // 检查是否有相同类型
+      const hasMatch = currentTypes.some(type => lastTypes.includes(type));
+
+      if (hasMatch) {
+        // 下张卡牌+2强度
+        persistentSystem.addTemporaryBonus({
+          playerId: ctx.playerId,
+          cardType: undefined, // 所有卡牌
+          bonusType: 'strength',
+          amount: 2,
+          duration: 0, // 单次使用
+          description: '双子感应：同类型连击+2强度'
+        });
+
+        helpers.gameStore.addNotification('双子感应：同类型连击+2强度', 'info');
+        EffectPatterns.logSkillActivation(
+          helpers,
+          ctx.playerId,
+          '双子感应',
+          '同类型连击！'
+        );
+      }
+
+      // 更新上次卡牌类型
+      twinEffect.data.lastCardTypes = currentTypes;
+    } else {
+      // 首次使用，建立追踪
+      persistentSystem.addEffect({
+        playerId: ctx.playerId,
+        type: 'twin_sense_tracker',
+        duration: -1, // 永久被动
+        data: { lastCardTypes: currentTypes },
+        description: '双子感应：类型追踪',
+        sourceCharacterId: ctx.character?.id,
+        onApply: () => {
+          console.log('双子感应：开始类型追踪');
+        }
+      });
     }
-  });
-  
-  EffectPatterns.logSkillActivation(
-    helpers,
-    ctx.playerId,
-    '双子感应',
-    '同类型连击+2强度！'
-  );
+  }
 };
 
 /**

@@ -18,7 +18,8 @@ app.use(pinia)
 app.use(router)
 
 // Load master data using the existing gameDataStore before mounting the app
-const gameDataStore = useGameDataStore(pinia);
+// Note: Must call useGameDataStore() AFTER app.use(pinia)
+const gameDataStore = useGameDataStore();
 gameDataStore.fetchGameData().then(() => {
   app.mount('#app');
   console.log('App mounted after game data has been fetched.');

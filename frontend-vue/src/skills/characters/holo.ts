@@ -41,7 +41,7 @@ const 商业智慧: SkillEffect = async (ctx: EffectContext) => {
       description: `商业智慧：复制 ${highestCostCard.name} 的效果`
     });
 
-    helpers.gameStore.addNotification(`商业智慧：复制 ${highestCostCard.name} (成本${highestCostCard.cost})`, 'success');
+    helpers.gameStore.addNotification(`商业智慧：复制 ${highestCostCard.name} (成本${highestCostCard.cost})`, 'info');
 
     EffectPatterns.logSkillActivation(
       helpers,
@@ -63,31 +63,33 @@ const 商业智慧: SkillEffect = async (ctx: EffectContext) => {
 };
 
 /**
- * 丰收之神 - 己方打出的卡牌每有一个协同标签，下张卡牌成本-1
+ * 丰收之神 - 己方打出的卡牌每有一个协同标签，下张卡牌成本-1（被动）
  */
 const 丰收之神: SkillEffect = (ctx: EffectContext) => {
   if (ctx.event !== 'afterResolve') return;
-  
+
   const helpers = getEffectHelpers(ctx);
   const persistentSystem = systemRegistry.getPersistentEffectSystem();
-  
+
   const synergy_count = ctx.card?.synergy_tags?.length || 0;
   if (synergy_count > 0) {
-    // TODO: 实现下张卡牌成本-synergy_count的功能
+    // 添加下张卡牌成本减免效果
     persistentSystem.addEffect({
       playerId: ctx.playerId,
       type: 'next_card_cost_reduction',
       duration: 1,
       data: { costReduction: synergy_count },
-      description: `贤狼协商：下张卡牌成本-${synergy_count}`
+      description: `丰收之神：下张卡牌成本-${synergy_count}`
     });
-    
+
     EffectPatterns.logSkillActivation(
       helpers,
       ctx.playerId,
       '丰收之神',
       `下张卡牌成本-${synergy_count}`
     );
+
+    helpers.gameStore.addNotification(`丰收之神：下张卡牌成本-${synergy_count}`, 'info');
   }
 };
 

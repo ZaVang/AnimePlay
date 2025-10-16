@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 import { useGameDataStore } from '@/stores/gameDataStore';
-import { useUserStore } from '@/stores/userStore';
+import { useEconomyStore } from '@/stores/modules/economyStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { getCurrentUpShopItems, getHistoricalUpShopItems, isAnimeCard, isCharacterCard, type ShopItem } from '@/utils/gachaRotation';
 import type { Card } from '@/types/card';
@@ -13,7 +13,7 @@ const props = defineProps<{
 }>();
 
 const gameDataStore = useGameDataStore();
-const userStore = useUserStore();
+const economyStore = useEconomyStore();
 
 // 商店标签页状态
 const activeShopTab = ref<'current' | 'historical' | 'regular'>('current');
@@ -72,8 +72,8 @@ const purchaseQuantities = ref<Record<string, number>>({});
 // 获取商品购买状态
 function getItemPurchaseInfo(item: ShopItem & { card?: Card }) {
     try {
-        const purchased = userStore.getTodayPurchaseCount(item.id);
-        const { canPurchase, reason } = userStore.canPurchaseItem(item);
+        const purchased = economyStore.getTodayPurchaseCount(item.id);
+        const { canPurchase, reason } = economyStore.canPurchaseItem(item);
         return {
             purchased,
             remaining: item.dailyLimit ? Math.max(0, item.dailyLimit - purchased) : null,
@@ -85,7 +85,7 @@ function getItemPurchaseInfo(item: ShopItem & { card?: Card }) {
         return {
             purchased: 0,
             remaining: item.dailyLimit || null,
-            canPurchase: userStore.playerState.knowledgePoints >= item.cost,
+            canPurchase: economyStore.knowledgePoints >= item.cost,
             disableReason: '',
         };
     }
@@ -95,7 +95,7 @@ function getItemPurchaseInfo(item: ShopItem & { card?: Card }) {
 function getMaxPurchaseQuantity(item: ShopItem & { card?: Card }): number {
     try {
         const { remaining } = getItemPurchaseInfo(item);
-        const affordableQuantity = Math.floor(userStore.playerState.knowledgePoints / item.cost);
+        const affordableQuantity = Math.floor(economyStore.knowledgePoints / item.cost);
 
         if (remaining !== null) {
             return Math.min(remaining, affordableQuantity);
@@ -103,7 +103,7 @@ function getMaxPurchaseQuantity(item: ShopItem & { card?: Card }): number {
         return affordableQuantity;
     } catch (error) {
         console.warn('Error getting max purchase quantity:', error);
-        return Math.floor(userStore.playerState.knowledgePoints / item.cost);
+        return Math.floor(economyStore.knowledgePoints / item.cost);
     }
 }
 
@@ -142,7 +142,7 @@ async function handlePurchase(item: ShopItem & { card?: Card }) {
     if (!confirmPurchase) return;
     
     // 检查知识点是否足够
-    if (userStore.playerState.knowledgePoints < totalCost) {
+    if (economyStore.knowledgePoints < totalCost) {
         purchaseError.value = '知识点不足，无法购买此物品';
         setTimeout(() => { purchaseError.value = ''; }, 3000);
         return;
@@ -154,14 +154,14 @@ async function handlePurchase(item: ShopItem & { card?: Card }) {
     try {
         if (item.type === 'card') {
             // 卡牌类物品，使用原有购买逻辑
-            await userStore.purchaseFromShop({
+            await economyStore.purchaseFromShop({
                 Id: item.cardId || 0,
                 cost: item.cost
             }, props.gachaType);
         } else {
             // 其他类型物品，批量购买
             for (let i = 0; i < quantity; i++) {
-                await userStore.purchaseShopItem(item);
+                await economyStore.purchaseShopItem(item);
             }
             // 重置购买数量
             setPurchaseQuantity(item.id, 1);
@@ -216,7 +216,7 @@ const activeShopItems = computed((): (ShopItem & { card?: any })[] => {
         <div class="flex items-center gap-2">
             <span class="text-sm text-gray-600">知识点：</span>
             <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-semibold">
-                {{ userStore.playerState.knowledgePoints.toLocaleString() }}
+                {{ economyStore.knowledgePoints.toLocaleString() }}
             </span>
         </div>
     </div>
@@ -260,12 +260,12 @@ const activeShopItems = computed((): (ShopItem & { card?: any })[] => {
         <div class="text-center w-full">
             <p class="font-semibold text-sm">{{ item.cost.toLocaleString() }} 知识点</p>
             <p v-if="item.description" class="text-xs text-gray-500 mb-1">{{ item.description }}</p>
-            <button 
+            <button
                 @click="handlePurchase(item)"
-                :disabled="isPurchasing === item.id || userStore.playerState.knowledgePoints < item.cost"
+                :disabled="isPurchasing === item.id || economyStore.knowledgePoints < item.cost"
                 :class="[
                   'mt-2 w-full font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-200',
-                  isPurchasing === item.id || userStore.playerState.knowledgePoints < item.cost
+                  isPurchasing === item.id || economyStore.knowledgePoints < item.cost
                     ? 'bg-gray-400 text-gray-200 cursor-not-allowed'
                     : 'bg-green-600 text-white hover:bg-green-700'
                 ]"
@@ -277,7 +277,7 @@ const activeShopItems = computed((): (ShopItem & { card?: any })[] => {
                   </svg>
                   购买中...
                 </span>
-                <span v-else-if="userStore.playerState.knowledgePoints < item.cost">
+                <span v-else-if="economyStore.knowledgePoints < item.cost">
                   知识点不足
                 </span>
                 <span v-else>
@@ -350,7 +350,7 @@ const activeShopItems = computed((): (ShopItem & { card?: any })[] => {
 
             <button
                 @click="handlePurchase(item)"
-                :disabled="isPurchasing === item.id || !getItemPurchaseInfo(item).canPurchase || (item.type !== 'card' && userStore.playerState.knowledgePoints < item.cost * getPurchaseQuantity(item.id))"
+                :disabled="isPurchasing === item.id || !getItemPurchaseInfo(item).canPurchase || (item.type !== 'card' && economyStore.knowledgePoints < item.cost * getPurchaseQuantity(item.id))"
                 :class="[
                   'w-full font-semibold py-2 px-3 rounded-lg text-sm transition-all duration-200',
                   isPurchasing === item.id || !getItemPurchaseInfo(item).canPurchase

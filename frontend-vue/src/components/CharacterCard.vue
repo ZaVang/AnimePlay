@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
-import { useUserStore } from '@/stores/userStore';
+import { useCollectionStore } from '@/stores/modules/collectionStore';
 
 // 定义组件接收的 props
 // 我们假设会传入一个包含角色所有信息的对象
@@ -20,12 +20,12 @@ const props = defineProps<{
   isInDeck?: boolean; // 是否已在卡组中，可选
 }>();
 
-const userStore = useUserStore();
+const collectionStore = useCollectionStore();
 
 const rarityData = computed(() => GAME_CONFIG.characterSystem.rarityConfig[props.character.rarity] || {});
 const rarityColorClass = computed(() => rarityData.value.c || 'bg-gray-500');
 const rarityEffectClass = computed(() => rarityData.value.effect || '');
-const isFavorite = computed(() => userStore.isFavorite(props.character.id, 'character'));
+const isFavorite = computed(() => collectionStore.isFavorite(props.character.id, 'character'));
 
 // 处理图片加载失败
 function onImageError(event: Event) {
@@ -36,7 +36,7 @@ function onImageError(event: Event) {
 
 function toggleFavorite(event: MouseEvent) {
   event.stopPropagation(); // 阻止事件冒泡到父元素
-  userStore.toggleFavorite(props.character.id, 'character');
+  collectionStore.toggleFavorite(props.character.id, 'character');
 }
 </script>
 

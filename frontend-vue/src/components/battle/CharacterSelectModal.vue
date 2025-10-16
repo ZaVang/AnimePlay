@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import { useUserStore } from '@/stores/userStore';
+import { useAuthStore } from '@/stores/modules/authStore';
+import { useCollectionStore } from '@/stores/modules/collectionStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import type { CharacterCard } from '@/types/card';
 
@@ -17,7 +18,8 @@ const emit = defineEmits<{
   remove: [position: number];
 }>();
 
-const userStore = useUserStore();
+const authStore = useAuthStore();
+const collectionStore = useCollectionStore();
 const gameDataStore = useGameDataStore();
 
 // 搜索关键词
@@ -25,9 +27,9 @@ const searchKeyword = ref('');
 
 // 获取可选择的角色
 const availableCharacters = computed(() => {
-  if (!userStore.isLoggedIn) return [];
-  
-  return Array.from(userStore.characterCollection.entries())
+  if (!authStore.isLoggedIn) return [];
+
+  return Array.from(collectionStore.characterCollection.entries())
     .map(([id, data]) => ({
       id,
       count: data.count,

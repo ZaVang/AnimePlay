@@ -62,7 +62,7 @@ const 宅女知识: SkillEffect = async (ctx: EffectContext) => {
 const 运动天赋: SkillEffect = (ctx: EffectContext) => {
   if (ctx.event !== 'beforeResolve' || !ctx.card?.synergy_tags?.includes('运动') || !ctx.addStrengthBonus) return;
   
-  ctx.addStrengthBonus(ctx.role, 2);
+  ctx.addStrengthBonus(2);
   console.log('运动天赋：运动卡牌+2强度');
 };
 

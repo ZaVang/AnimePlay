@@ -41,7 +41,7 @@ const 学霸气质: SkillEffect = (ctx: EffectContext) => {
     const opponentId = helpers.getOpponentId(ctx.playerId);
     
     if (helpers.playerStore[ctx.playerId].reputation >= helpers.playerStore[opponentId].reputation) {
-      ctx.addStrengthBonus(ctx.role, 1);
+      ctx.addStrengthBonus(1);
       console.log('学霸气质：声望优势，卡牌+1强度');
     }
   }

@@ -28,13 +28,13 @@ const 冰山女王: SkillEffect = (ctx: EffectContext) => {
 };
 
 /**
- * 完美主义 - 校园卡牌完美发挥
+ * 完美主义 - 校园卡牌完美发挥（成本-1且+1强度）
  */
 const 完美主义: SkillEffect = (ctx: EffectContext) => {
   const helpers = getEffectHelpers(ctx);
   const persistentSystem = systemRegistry.getPersistentEffectSystem();
-  
-  // TODO: 实现己方校园类卡牌成本-1且+1强度的功能
+
+  // 校园卡牌+1强度
   persistentSystem.addTemporaryBonus({
     playerId: ctx.playerId,
     cardType: '校园',
@@ -43,13 +43,25 @@ const 完美主义: SkillEffect = (ctx: EffectContext) => {
     duration: 1,
     description: '完美主义：校园卡牌+1强度'
   });
-  
+
+  // 校园卡牌成本-1
+  persistentSystem.addTemporaryBonus({
+    playerId: ctx.playerId,
+    cardType: '校园',
+    bonusType: 'cost',
+    amount: 1,
+    duration: 1,
+    description: '完美主义：校园卡牌成本-1'
+  });
+
   EffectPatterns.logSkillActivation(
     helpers,
     ctx.playerId,
     '完美主义',
-    '校园环境下的完美表现'
+    '校园卡牌成本-1且+1强度'
   );
+
+  helpers.gameStore.addNotification('完美主义：校园卡牌强化', 'info');
 };
 
 /**

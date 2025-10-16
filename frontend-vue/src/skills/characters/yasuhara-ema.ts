@@ -45,7 +45,7 @@ const 内向专注: SkillEffect = (ctx: EffectContext) => {
 
   if (ctx.event === 'beforeResolve' && ctx.addStrengthBonus) {
     if (helpers.playerStore[ctx.playerId].hand.length >= 7) {
-      ctx.addStrengthBonus(ctx.role, 1);
+      ctx.addStrengthBonus(1);
 
       // 技能效果静默应用，避免在强度预览时产生过多提示
     }

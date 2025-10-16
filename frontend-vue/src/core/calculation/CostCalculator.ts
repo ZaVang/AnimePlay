@@ -7,8 +7,9 @@ import type { AnimeCard } from '@/types/card';
 export const CostCalculator = {
   /**
    * 计算卡牌的最终费用（考虑所有减免效果）
+   * @param applyReduction 是否应用并消耗"下张卡牌"减免效果（默认false，仅计算）
    */
-  calculateFinalCost(card: AnimeCard, playerId: 'playerA' | 'playerB'): number {
+  calculateFinalCost(card: AnimeCard, playerId: 'playerA' | 'playerB', applyReduction = false): number {
     const baseCost = card.cost || 0;
 
     try {
@@ -17,12 +18,14 @@ export const CostCalculator = {
       // 获取卡牌类型相关的费用减免
       const typeReduction = persistentSystem.getCostReduction(playerId, card.synergy_tags || []);
 
-      // 获取下张卡牌的费用减免
-      const nextCardReduction = persistentSystem.getNextCardCostModification(playerId);
+      // 获取下张卡牌的费用减免（如果applyReduction=true，会消耗效果）
+      const nextCardReduction = applyReduction
+        ? persistentSystem.applyAndConsumeNextCardCostReduction(playerId)
+        : persistentSystem.getNextCardCostModification(playerId);
 
       // 计算最终费用，但不能低于0
-      // typeReduction 是正数（减免量），nextCardReduction 是负数（减免量）
-      const finalCost = Math.max(0, baseCost - typeReduction + nextCardReduction);
+      const totalReduction = typeReduction + Math.abs(nextCardReduction);
+      const finalCost = Math.max(0, baseCost - totalReduction);
 
       return finalCost;
     } catch (error) {

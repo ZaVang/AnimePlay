@@ -8,7 +8,7 @@ import AnimeCard from '@/components/AnimeCard.vue'; // Using the main component
 import CardActionModal from '@/components/battle/ui/CardActionModal.vue';
 import CardDetailModal from '@/components/CardDetailModal.vue';
 import CardStrengthPreview from '@/components/battle/ui/CardStrengthPreview.vue';
-import { useUserStore } from '@/stores/userStore';
+import { useCollectionStore } from '@/stores/modules/collectionStore';
 
 const props = defineProps<{
   playerId: 'playerA' | 'playerB';
@@ -17,7 +17,7 @@ const props = defineProps<{
 
 const gameStore = useGameStore();
 const playerStore = usePlayerStore();
-const userStore = useUserStore();
+const collectionStore = useCollectionStore();
 const dialogueSystem = useDialogue();
 
 // 创建BattleController实例
@@ -105,7 +105,7 @@ function handlePlayCard(style: '友好安利' | '辛辣点评' | '赞同' | '反
       v-if="detailCard"
       :card="detailCard"
       card-type="anime"
-      :count="userStore.getAnimeCardCount(detailCard.id)"
+      :count="collectionStore.getAnimeCardCount(detailCard.id)"
       @close="closeDetailModal"
     />
   </div>

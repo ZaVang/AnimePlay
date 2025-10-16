@@ -55,7 +55,7 @@ const 牺牲觉悟: SkillEffect = (ctx: EffectContext) => {
   
   if (ctx.event === 'beforeResolve' && ctx.addStrengthBonus) {
     if (helpers.playerStore[ctx.playerId].reputation <= 10) {
-      ctx.addStrengthBonus(ctx.role, 2);
+      ctx.addStrengthBonus(2);
       
       EffectPatterns.logSkillActivation(
         helpers,

@@ -36,7 +36,7 @@ const 魔法修行: SkillEffect = async (ctx: EffectContext) => {
       deck.splice(cardIndex, 1);
     }
 
-    helpers.gameStore.addNotification(`魔法修行：获得 ${selectedCard.name}`, 'success');
+    helpers.gameStore.addNotification(`魔法修行：获得 ${selectedCard.name}`, 'info');
   }
 
   EffectPatterns.logSkillActivation(
@@ -51,32 +51,67 @@ const 魔法修行: SkillEffect = async (ctx: EffectContext) => {
 };
 
 /**
- * 师父照顾 - 己方奇幻类卡牌连续打出时第2张起成本-1
+ * 师父照顾 - 己方奇幻类卡牌连续打出时第2张起成本-1（被动）
  */
 const 师父照顾: SkillEffect = (ctx: EffectContext) => {
   const helpers = getEffectHelpers(ctx);
   const persistentSystem = systemRegistry.getPersistentEffectSystem();
-  
-  // TODO: 实现己方奇幻类卡牌连续打出时第2张起成本-1的功能
-  if (ctx.card?.synergy_tags?.includes('奇幻')) {
-    // 添加奇幻连击记录器
-    persistentSystem.addEffect({
-      playerId: ctx.playerId,
-      type: 'fantasy_combo',
-      duration: -1, // 永久被动
-      data: { comboCount: 0 },
-      description: '师父照顾：奇幻连击降低成本',
-      onApply: () => {
-        console.log('师父照顾：奇幻连击降低成本');
+
+  // afterResolve: 检查是否打出奇幻卡牌
+  if (ctx.event === 'afterResolve' && ctx.card?.synergy_tags?.includes('奇幻')) {
+    // 查找现有的奇幻连击效果
+    let comboEffect = Array.from(persistentSystem['effects'].values()).find(
+      effect => effect.playerId === ctx.playerId && effect.type === 'fern_fantasy_combo'
+    );
+
+    if (comboEffect) {
+      // 已有连击，增加计数并应用成本-1
+      comboEffect.data.comboCount = (comboEffect.data.comboCount || 0) + 1;
+
+      // 第2张起成本-1
+      if (comboEffect.data.comboCount >= 1) {
+        persistentSystem.addEffect({
+          playerId: ctx.playerId,
+          type: 'next_card_cost_reduction',
+          duration: 1,
+          data: { costReduction: 1 },
+          description: '师父照顾：下张卡牌成本-1'
+        });
+        helpers.gameStore.addNotification(`师父照顾：奇幻连击x${comboEffect.data.comboCount + 1}，下张-1成本`, 'info');
       }
-    });
-    
+    } else {
+      // 第一次打出奇幻卡牌，建立连击追踪
+      persistentSystem.addEffect({
+        playerId: ctx.playerId,
+        type: 'fern_fantasy_combo',
+        duration: -1, // 永久追踪
+        data: { comboCount: 0, lastCardType: '奇幻' },
+        description: '师父照顾：奇幻连击追踪',
+        sourceCharacterId: ctx.character?.id,
+        onApply: () => {
+          console.log('师父照顾：开始奇幻连击追踪');
+        }
+      });
+    }
+
     EffectPatterns.logSkillActivation(
       helpers,
       ctx.playerId,
       '师父照顾',
-      '奇幻连击降低成本！'
+      '奇幻连击！'
     );
+  }
+
+  // afterResolve: 如果打出非奇幻卡牌，重置连击
+  if (ctx.event === 'afterResolve' && !ctx.card?.synergy_tags?.includes('奇幻')) {
+    const comboEffect = Array.from(persistentSystem['effects'].values()).find(
+      effect => effect.playerId === ctx.playerId && effect.type === 'fern_fantasy_combo'
+    );
+
+    if (comboEffect) {
+      comboEffect.data.comboCount = 0;
+      console.log('师父照顾：连击中断');
+    }
   }
 };
 
