@@ -48,4 +48,5 @@ pnpm-debug.log*
 
 *.ipynb
 data/images
+data/user_data
 !frontend-vue/src/data/
