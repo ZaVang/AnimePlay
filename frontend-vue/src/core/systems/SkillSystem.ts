@@ -1,64 +1,160 @@
 import { useGameStore, usePlayerStore, useHistoryStore } from '@/stores/battle';
 import type { Card, Skill } from '@/types';
-import { runEffect, type EffectContext } from '@/skills/effects';
+import { runEffect } from '@/skills';
+import type { EffectContext, CombatRole } from '@/types/effects';
 import type { ClashInfo } from '@/types/battle';
-import type { AnimeCard } from '@/types/card';
+import type { AnimeCard, CharacterCard } from '@/types/card';
 import { StatusEffectSystem } from '@/core/systems/StatusEffectSystem';
+import { isAnimeCard, isCharacterCard, setCardTreatedAsAnyType, isCardTreatedAsAnyType } from '@/utils/typeGuards';
+import { systemRegistry } from '@/core/di/registry';
 
 export const SkillSystem = {
   /**
-   * Called when a card is played by attacker or defender.
-   * Minimal demo: if an anime card has '日常'标签，则为该玩家抽1张牌。
+   * 初始化所有角色的被动技能
+   * 在游戏开始时调用，激活所有永久被动效果
    */
-  async onCardPlayed(playerId: 'playerA' | 'playerB', card: Card) {
+  async initializePassiveSkills() {
     const playerStore = usePlayerStore();
-    const gameStore = useGameStore();
     const historyStore = useHistoryStore();
 
-    // Demo anime effect: synergy tag '日常' → draw 1
-    const isAnime = (card as any).cost !== undefined;
-    if (isAnime && card.synergy_tags?.includes('日常')) {
-      playerStore.drawCards(playerId, 1);
-      const name = playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-      historyStore.addLog(`${name} 触发卡面效果：日常系抽1张。`, 'info');
-      gameStore.addNotification('日常系：抽1张', 'info');
+    console.log('🎯 开始初始化被动技能...');
+
+    // 收集所有角色的被动技能
+    const allCharacters = [...playerStore.playerA.characters, ...playerStore.playerB.characters];
+    let passiveCount = 0;
+
+    for (const character of allCharacters) {
+      if (!isCharacterCard(character) || !character.skills) continue;
+
+      // 确定角色所属的玩家
+      const playerId = playerStore.playerA.characters.includes(character) ? 'playerA' : 'playerB';
+
+      for (const skill of character.skills) {
+        // 只激活被动技能类型（不包括主动技能）
+        if (skill.type === '被动光环' || skill.type === '被动技能') {
+          if (skill.effectId) {
+            try {
+              console.log(`🔮 激活被动技能: ${character.name} - ${skill.name} (${skill.effectId})`);
+
+              // 调用被动技能效果，传入初始化事件
+              await runEffect(skill.effectId, {
+                event: 'onGameStart',
+                playerId,
+                role: 'supporter',
+                character
+              });
+
+              passiveCount++;
+
+              historyStore.addLog(
+                `${character.name} 的被动技能「${skill.name}」已激活`,
+                'info'
+              );
+            } catch (error) {
+              console.error(`❌ 激活被动技能失败: ${skill.effectId}`, error);
+            }
+          }
+        }
+      }
     }
 
-    // StatusEffect: NEXT_CARD_ANY_TYPE
-    // If granted, we can mark the card as matching any synergy in later calculations.
-    const consumedAnyType = StatusEffectSystem.consumeNextCardAnyType(playerId);
-    if (consumedAnyType) {
-      (card as any).__treatedAsAnyType = true; // lightweight flag consumed within this clash window
-    }
+    console.log(`✅ 被动技能初始化完成，共激活 ${passiveCount} 个被动技能`);
+    historyStore.addLog(`游戏开始：已激活 ${passiveCount} 个被动技能`, 'event');
+  },
 
-    // Standardized per-card effects (onPlay)
-    if (isAnime) {
-      const anime = card as AnimeCard;
-      const onPlayEffects = anime.effects?.filter(e => e.trigger === 'onPlay') || [];
-      for (const e of onPlayEffects) {
-        const ctx: EffectContext = { event: 'onPlay', playerId, role: 'attacker', card: anime };
-        await runEffect(e.effectId, ctx);
+  /**
+   * 检查并激活基于条件的被动技能
+   * 在回合开始时调用，用于处理需要动态检查状态的被动技能
+   */
+  async checkConditionalPassiveSkills(playerId: 'playerA' | 'playerB') {
+    const playerStore = usePlayerStore();
+    const player = playerStore[playerId];
+
+    // 检查当前活跃角色的被动技能
+    const activeCharacter = player.characters[player.activeCharacterIndex];
+    if (!isCharacterCard(activeCharacter) || !activeCharacter.skills) return;
+
+    for (const skill of activeCharacter.skills) {
+      // 处理被动技能的条件检查
+      if (skill.type === '被动技能' && skill.effectId) {
+        try {
+          // 使用 onTurnStart 事件来触发条件检查
+          await runEffect(skill.effectId, {
+            event: 'onTurnStart',
+            playerId,
+            role: 'supporter',
+            character: activeCharacter
+          });
+        } catch (error) {
+          console.error(`❌ 检查条件被动技能失败: ${skill.effectId}`, error);
+        }
       }
     }
   },
 
   /**
-   * Emit beforeResolve effects for both sides.
+   * Called when a card is played by attacker or defender.
    */
-  async emitBeforeResolve(clash: ClashInfo, addStrengthBonus: (side: 'attacker'|'defender', amount: number) => void) {
+  async onCardPlayed(playerId: 'playerA' | 'playerB', card: Card) {
+    // StatusEffect: NEXT_CARD_ANY_TYPE
+    // If granted, we can mark the card as matching any synergy in later calculations.
+    const consumedAnyType = StatusEffectSystem.consumeNextCardAnyType(playerId);
+    if (consumedAnyType) {
+      setCardTreatedAsAnyType(card);
+    }
+  },
+
+  /**
+   * Emit beforeResolve effects for both sides.
+   * 修改：将临时加成直接添加到 PersistentEffectSystem，而不是通过回调
+   */
+  async emitBeforeResolve(clash: ClashInfo) {
     const attackerId = clash.attackerId;
     const defenderId = clash.defenderId || (attackerId === 'playerA' ? 'playerB' : 'playerA');
+    const persistentSystem = systemRegistry.getPersistentEffectSystem();
 
     if (clash.attackingCard?.effects) {
       const beforeResolveEffects = clash.attackingCard.effects.filter(e => e.trigger === 'beforeResolve');
       for (const e of beforeResolveEffects) {
-        await runEffect(e.effectId, { event: 'beforeResolve', playerId: attackerId, role: 'attacker', card: clash.attackingCard, clash, addStrengthBonus });
+        await runEffect(e.effectId, {
+          event: 'beforeResolve',
+          playerId: attackerId,
+          role: 'attacker',
+          card: clash.attackingCard,
+          clash,
+          // 提供统一的加成接口
+          addStrengthBonus: (amount: number) => {
+            persistentSystem.addTemporaryBonus({
+              playerId: attackerId,
+              bonusType: 'strength',
+              amount,
+              duration: 0, // 立即生效且仅此次
+              description: 'beforeResolve临时加成'
+            });
+          }
+        });
       }
     }
     if (clash.defendingCard?.effects) {
       const beforeResolveEffects = clash.defendingCard.effects.filter(e => e.trigger === 'beforeResolve');
       for (const e of beforeResolveEffects) {
-        await runEffect(e.effectId, { event: 'beforeResolve', playerId: defenderId, role: 'defender', card: clash.defendingCard, clash, addStrengthBonus });
+        await runEffect(e.effectId, {
+          event: 'beforeResolve',
+          playerId: defenderId,
+          role: 'defender',
+          card: clash.defendingCard,
+          clash,
+          // 提供统一的加成接口
+          addStrengthBonus: (amount: number) => {
+            persistentSystem.addTemporaryBonus({
+              playerId: defenderId,
+              bonusType: 'strength',
+              amount,
+              duration: 0, // 立即生效且仅此次
+              description: 'beforeResolve临时加成'
+            });
+          }
+        });
       }
     }
   },
@@ -84,27 +180,21 @@ export const SkillSystem = {
   },
 
   /**
-   * Aggregates passive aura bonuses that affect strength.
-   * Minimal demo: AURA_GENRE_EXPERT → 同类型（日常）+1 强度
+   * 获取已激活的强度加成（不执行技能，只查询现有效果）
    */
   getAuraStrengthBonus(card: Card | undefined, actingPlayerId: 'playerA' | 'playerB'): number {
     if (!card) return 0;
-    const playerStore = usePlayerStore();
 
-    let bonus = 0;
-    const allChars = [...playerStore.playerA.characters, ...playerStore.playerB.characters];
-    for (const character of allChars) {
-      const skills = (character as any).skills as Skill[] | undefined;
-      if (!skills) continue;
-      for (const s of skills) {
-        if (s.type !== '被动光环') continue;
-        // Demo passive: 类型专家
-        if (s.id === 'AURA_GENRE_EXPERT' && card.synergy_tags?.includes('日常')) {
-          bonus += 1;
-        }
-      }
+    try {
+      const persistentSystem = systemRegistry.getPersistentEffectSystem();
+      const cardTypes = (card as AnimeCard).synergy_tags || [];
+
+      // 只查询已有的强度加成，不执行技能
+      return persistentSystem.getStrengthBonus(actingPlayerId, cardTypes);
+    } catch (error) {
+      console.warn('PersistentEffectSystem not available in getAuraStrengthBonus:', error);
+      return 0;
     }
-    return bonus;
   },
   /**
    * Checks if a skill can be used by the player.

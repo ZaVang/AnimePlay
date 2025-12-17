@@ -1,11 +1,17 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue';
-import { useUserStore } from '@/stores/userStore';
+import { ref, onMounted, onUnmounted, computed } from 'vue';
+import { useAuthStore } from '@/stores/modules/authStore';
+import { useViewingStore } from '@/stores/modules/viewingStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
+import { GAME_CONFIG } from '@/config/gameConfig';
 import AddToQueueModal from './AddToQueueModal.vue';
 
-const userStore = useUserStore();
+const authStore = useAuthStore();
+const viewingStore = useViewingStore();
 const gameDataStore = useGameDataStore();
+
+// 使用配置中的观看奖励
+const VIEWING_REWARDS = GAME_CONFIG.viewingSystem.viewingRewards;
 
 const isModalOpen = ref(false);
 const selectedSlot = ref(0);
@@ -28,7 +34,7 @@ function openModal(slotIndex: number) {
 }
 
 function handleCardSelected(animeId: number) {
-  userStore.addToViewingQueue(animeId, selectedSlot.value);
+  viewingStore.addToViewingQueue(animeId, selectedSlot.value);
   isModalOpen.value = false;
 }
 
@@ -49,9 +55,9 @@ function getRemainingTime(startTime: number, durationMinutes: number) {
 <template>
   <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
     <h2 class="text-2xl font-bold text-white mb-4">观看队列</h2>
-    
-    <div v-if="userStore.isLoggedIn" class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div v-for="(slot, index) in userStore.playerState.viewingQueue" :key="index">
+
+    <div v-if="authStore.isLoggedIn" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div v-for="(slot, index) in viewingStore.viewingQueue" :key="index">
         
         <!-- Empty Slot -->
         <div v-if="!slot" 
@@ -69,13 +75,13 @@ function getRemainingTime(startTime: number, durationMinutes: number) {
             <img :src="gameDataStore.getAnimeCardById(slot.animeId)?.image_path" class="w-24 aspect-[3/2] object-cover rounded-md mb-2">
             <p class="font-bold text-sm truncate w-full">{{ gameDataStore.getAnimeCardById(slot.animeId)?.name }}</p>
             
-            <div v-if="now < (slot.startTime + userStore.VIEWING_REWARDS[gameDataStore.getAnimeCardById(slot.animeId)!.rarity].time * 60 * 1000)">
+            <div v-if="now < (slot.startTime + VIEWING_REWARDS[gameDataStore.getAnimeCardById(slot.animeId)!.rarity].time * 60 * 1000)">
               <p class="text-xs text-gray-400">
-                剩余: {{ getRemainingTime(slot.startTime, userStore.VIEWING_REWARDS[gameDataStore.getAnimeCardById(slot.animeId)!.rarity].time) }}
+                剩余: {{ getRemainingTime(slot.startTime, VIEWING_REWARDS[gameDataStore.getAnimeCardById(slot.animeId)!.rarity].time) }}
               </p>
             </div>
             <div v-else>
-              <button @click="userStore.collectFromViewingQueue(index)" class="mt-2 bg-green-500 text-white font-bold py-1 px-3 rounded-lg text-xs hover:bg-green-600">
+              <button @click="viewingStore.collectFromViewingQueue(index)" class="mt-2 bg-green-500 text-white font-bold py-1 px-3 rounded-lg text-xs hover:bg-green-600">
                 收获
               </button>
             </div>

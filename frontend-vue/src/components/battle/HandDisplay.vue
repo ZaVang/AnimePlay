@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { useGameStore, usePlayerStore } from '@/stores/battle';
-import { BattleController } from '@/core/battle/BattleController';
+import { createBattleController } from '@/core/battle/BattleController';
+import { useDialogue } from '@/core/di/composables';
 import type { AnimeCard as AnimeCardType } from '@/types/card'; // Renamed to avoid conflict
 import AnimeCard from '@/components/AnimeCard.vue'; // Using the main component
 import CardActionModal from '@/components/battle/ui/CardActionModal.vue';
 import CardDetailModal from '@/components/CardDetailModal.vue';
-import { useUserStore } from '@/stores/userStore';
+import CardStrengthPreview from '@/components/battle/ui/CardStrengthPreview.vue';
+import { useCollectionStore } from '@/stores/modules/collectionStore';
 
 const props = defineProps<{
   playerId: 'playerA' | 'playerB';
@@ -15,7 +17,11 @@ const props = defineProps<{
 
 const gameStore = useGameStore();
 const playerStore = usePlayerStore();
-const userStore = useUserStore();
+const collectionStore = useCollectionStore();
+const dialogueSystem = useDialogue();
+
+// 创建BattleController实例
+const battleController = createBattleController(dialogueSystem);
 
 const selectedCard = ref<AnimeCardType | null>(null);
 const detailCard = ref<AnimeCardType | null>(null);
@@ -55,9 +61,9 @@ function closeDetailModal() {
 function handlePlayCard(style: '友好安利' | '辛辣点评' | '赞同' | '反驳') {
   if (selectedCard.value) {
     if (gameStore.phase === 'action' && (style === '友好安利' || style === '辛辣点评')) {
-      BattleController.initiateClash(selectedCard.value.id, style);
+      battleController.initiateClash(selectedCard.value.id, style);
     } else if (gameStore.phase === 'defense' && (style === '赞同' || style === '反驳')) {
-      BattleController.respondToClash(selectedCard.value.id, style);
+      battleController.respondToClash(selectedCard.value.id, style);
     }
     closeActionModal();
   }
@@ -79,7 +85,11 @@ function handlePlayCard(style: '友好安利' | '辛辣点评' | '赞同' | '反
       @contextmenu.prevent="onCardRightClick(card)"
     >
       <!-- Using the main AnimeCard component and showing cost -->
-      <AnimeCard v-if="!isOpponent" :anime="card" :show-cost="true" />
+      <div v-if="!isOpponent" class="card-wrapper">
+        <AnimeCard :anime="card" :show-cost="true" :show-strength="true" :player-id="playerId" />
+        <!-- 添加强度预览组件 -->
+        <CardStrengthPreview :card="card" :player-id="playerId" />
+      </div>
       <div v-else class="card-back"></div>
     </div>
 
@@ -95,7 +105,7 @@ function handlePlayCard(style: '友好安利' | '辛辣点评' | '赞同' | '反
       v-if="detailCard"
       :card="detailCard"
       card-type="anime"
-      :count="userStore.getAnimeCardCount(detailCard.id)"
+      :count="collectionStore.getAnimeCardCount(detailCard.id)"
       @close="closeDetailModal"
     />
   </div>
@@ -107,6 +117,9 @@ function handlePlayCard(style: '友好安利' | '辛辣点评' | '赞同' | '反
 }
 .card-container {
   @apply w-32 h-48 cursor-pointer transform hover:-translate-y-4 transition-transform duration-300;
+}
+.card-wrapper {
+  @apply relative w-full h-full;
 }
 .card-back {
   @apply w-full h-full bg-blue-900 border-2 border-blue-400 rounded-lg;

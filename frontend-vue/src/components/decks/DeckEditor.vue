@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import { useUserStore, type Deck } from '@/stores/userStore';
+import type { Deck } from '@/stores/userStore';
+import { useDeckStore } from '@/stores/modules/deckStore';
+import { useCollectionStore } from '@/stores/modules/collectionStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import type { Card, Rarity, AnimeCard as AnimeCardType, CharacterCard as CharacterCardType } from '@/types/card';
 import AnimeCard from '@/components/AnimeCard.vue';
@@ -16,13 +18,14 @@ const props = defineProps<{
 
 const emit = defineEmits(['back']);
 
-const userStore = useUserStore();
+const deckStore = useDeckStore();
+const collectionStore = useCollectionStore();
 const gameDataStore = useGameDataStore();
 
 function generateNewDeckName(): string {
   let defaultName = '新卡组';
   let counter = 2;
-  const existingNames = Object.keys(userStore.savedDecks);
+  const existingNames = Object.keys(deckStore.savedDecks);
   while (existingNames.includes(defaultName)) {
     defaultName = `新卡组 ${counter}`;
     counter++;
@@ -65,7 +68,7 @@ const enableVirtualization = ref(true);
 
 // --- LIFECYCLE ---
 if (props.deckName) {
-  const existingDeck = userStore.savedDecks[props.deckName];
+  const existingDeck = deckStore.savedDecks[props.deckName];
   if (existingDeck) {
     newDeckName.value = existingDeck.name;
     currentDeck.value = JSON.parse(JSON.stringify(existingDeck));
@@ -85,7 +88,7 @@ const allAnimeTags = computed(() => {
 });
 
 const ownedAnimeCards = computed(() => {
-  let cards = Array.from(userStore.animeCollection.entries()).map(([id, data]) => {
+  let cards = Array.from(collectionStore.animeCollection.entries()).map(([id, data]) => {
     const card = gameDataStore.getAnimeCardById(id);
     return card ? { ...card, count: data.count } : null;
   }).filter(Boolean) as (Card & { count: number })[];
@@ -133,7 +136,7 @@ if (import.meta.env.DEV) {
 }
 
 const ownedCharacterCards = computed(() => {
-  let cards = Array.from(userStore.characterCollection.entries()).map(([id, data]) => {
+  let cards = Array.from(collectionStore.characterCollection.entries()).map(([id, data]) => {
     const card = gameDataStore.getCharacterCardById(id);
     return card ? { ...card, count: data.count } : null;
   }).filter(Boolean) as (Card & { count: number })[];
@@ -230,11 +233,11 @@ async function handleSaveDeck() {
   const isNewDeck = !props.deckName;
 
   if (isRenaming) {
-      await userStore.deleteDeck(props.deckName!);
+      await deckStore.deleteDeck(props.deckName!);
   }
-  
+
   // Prevent overwriting a different deck if the user renames this one to an existing name
-  if ((isNewDeck || isRenaming) && userStore.savedDecks[deckToSave.name]) {
+  if ((isNewDeck || isRenaming) && deckStore.savedDecks[deckToSave.name]) {
       if (!confirm(`名为 "${deckToSave.name}" 的卡组已存在。要覆盖它吗？`)) {
           // If the user cancelled the overwrite of an existing deck during a rename,
           // we might need to restore the old deck if we deleted it.
@@ -247,7 +250,7 @@ async function handleSaveDeck() {
       }
   }
 
-  await userStore.saveDeck(deckToSave);
+  await deckStore.saveDeck(deckToSave);
   alert('卡组已保存！');
   emit('back');
 }
@@ -405,12 +408,12 @@ async function handleSaveDeck() {
       </div>
     
       <!-- Card Detail Modal -->
-      <CardDetailModal 
+      <CardDetailModal
           v-if="selectedCard"
-          :card="selectedCard" 
-          :card-type="selectedCardType" 
-          :count="selectedCardType === 'anime' ? userStore.getAnimeCardCount(selectedCard.id) : userStore.getCharacterCardCount(selectedCard.id)"
-          @close="closeDetailModal" 
+          :card="selectedCard"
+          :card-type="selectedCardType"
+          :count="selectedCardType === 'anime' ? collectionStore.getAnimeCardCount(selectedCard.id) : collectionStore.getCharacterCardCount(selectedCard.id)"
+          @close="closeDetailModal"
       />
   </div>
 </template>

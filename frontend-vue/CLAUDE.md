@@ -35,40 +35,106 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Architecture
 
-This is a Vue 3 + TypeScript anime-themed card battle game using Vite, Pinia for state management, and TailwindCSS for styling.
+This is a Vue 3 + TypeScript anime-themed card battle game featuring advanced dependency injection, comprehensive state management, and modular system design. Built with Vite, Pinia for state management, and TailwindCSS for styling.
 
-### Core Game Architecture
+### Core Architecture Patterns
 
-**Game Flow**: The application loads master data (anime/character cards, skills) at startup via `gameDataStore.fetchGameData()` before mounting the Vue app.
+**Application Bootstrap**: The app loads master data at startup via `gameDataStore.fetchGameData()` in `main.ts` before mounting the Vue app. Development mode includes debug tools for skill system analysis.
 
-**State Management** (Pinia stores):
-- `gameDataStore` - Master data for anime cards, character cards, and skills
-- `userStore` - User authentication, collections, decks, and gacha system
-- Battle stores (`gameStore`, `playerStore`, `historyStore`) - Turn-based battle state
+**Dependency Injection**: Advanced DI system (`/src/core/di/`) provides centralized service registration and composable-based injection for battle systems:
+- `InteractionSystem` - Manages complex user interactions (hand viewing, card selection)
+- `PersistentEffectSystem` - Handles cross-turn effects and temporary bonuses
+- `DialogueSystem` - Manages character dialogue and narrative elements
 
-**Battle System**:
-- **Turn Management**: `TurnManager` handles game initialization, turn flow, and victory conditions
-- **Skill System**: Character skills defined in `/src/skills/` with effects in `/src/skills/effects/index.ts`
-- **AI System**: AI opponents in `/src/core/ai/` with different strategies and profiles
+**State Management Architecture** (Pinia stores):
+- `gameDataStore` - Master data (anime/character cards, skills) with card binding logic
+- `userStore` - Comprehensive user state (authentication, collections, decks, gacha, character nurturing)
+- Battle stores (`gameStore`, `playerStore`, `historyStore`) - Turn-based battle state with snapshot system
+- `gachaStore` - Gacha mechanics and probability calculations
+- `settings` - User preferences and configuration
 
-### Key Directories
+### Core Game Systems
 
-**Data Layer**:
-- `/src/data/` - Static game data and generated UR character skills
-- `/src/config/` - Game configuration (rarities, costs, AI profiles)
+**Battle System** (`/src/core/battle/`):
+- **TurnManager**: Game initialization, turn flow, victory conditions, and AI integration
+- **BattleController**: Orchestrates battle phases and state transitions
+- **SkillSystem**: Handles skill execution, cooldowns, and effect triggers
 
-**Battle System**:
-- `/src/core/battle/` - Core battle logic (TurnManager, etc.)
-- `/src/core/ai/` - AI controllers and strategies
-- `/src/core/systems/` - Game systems (status effects, etc.)
+**Calculation Engine** (`/src/core/calculation/`):
+- **BattleEngine**: Core combat calculations and clash resolution
+- **StrengthCalculator**: Card strength and synergy calculations
+- **RewardCalculator**: Experience and progression rewards
 
-**Skills System**:
-- `/src/skills/` - Skill definitions and effect handlers
-- `/src/skills/effects/` - 130+ skill effect implementations
+**System Registry** (`/src/core/systems/`):
+- **StatusEffectSystem**: Manages temporary effects and status conditions
+- **ResourceManager**: Handles deck manipulation, card drawing, and TP management
+- **BattleStateSnapshot**: State tracking and rollback capabilities
+- **SkillCache**: Performance optimization for skill lookups
 
-**UI Components**:
-- `/src/components/battle/` - Battle-specific UI components
-- `/src/components/` - General UI components (cards, modals, etc.)
+**AI System** (`/src/core/ai/`):
+- **AIController**: AI decision making and turn execution
+- **aiProfiles**: Predefined AI personalities and strategies
+- Random deck generation and adaptive difficulty
+
+### Skills Architecture
+
+**Skills System** (`/src/skills/`):
+- **registry.ts**: Centralized skill effect registration and execution
+- **library.ts**: Skill definitions with metadata and triggers
+- **utils.ts**: Effect helpers and common patterns
+- **characters/**: 64 individual character skill implementations (128 total skills)
+
+**Skill Execution Flow**:
+1. Skills registered in `registry.ts` with effect handlers
+2. Effects triggered through `runEffect()` with context
+3. All effects support async operations and complex interactions
+4. Character skills mapped via `characterSkillsMap.ts`
+
+### User Experience Systems
+
+**Character Nurturing** (`/src/components/nurture/`):
+- **Character Development**: Level progression, attribute enhancement, affection systems
+- **Battle Enhancements**: Percentage-based stat bonuses for combat
+- **Interaction System**: Deep character interactions, gift system, dialogue trees
+
+**Collection Management**:
+- **Gacha System**: Multi-layered probability with pity mechanics
+- **Deck Building**: Advanced deck editor with validation
+- **Progress Tracking**: Tower climbing, viewing queue, achievement system
+
+### Data Architecture
+
+**Master Data** (`/src/data/`):
+- `characterSkillsMap.ts` - Character to skill binding mappings
+- `urCharacterSkills.ts` - Generated UR character skill definitions
+- `characterDefaultSkills.ts` - Fallback skills by rarity
+
+**Configuration** (`/src/config/`):
+- `gameConfig.ts` - Centralized game balance and system parameters
+
+**Types** (`/src/types/`):
+- Comprehensive TypeScript definitions for all game entities
+- Effect context and skill definition types
+- Battle state and interaction interfaces
+
+### UI Component Architecture
+
+**Battle Interface** (`/src/components/battle/`):
+- **Arena Components**: Field visualization, clash zones, topic bias indicators
+- **Character System**: Lineup management, action modals, skill interfaces
+- **Interaction Management**: Modal system for complex user choices
+- **UI Controls**: Turn management, notifications, battle logs
+
+**Game Features** (`/src/components/`):
+- **Collection System**: Card displays, favorites, statistics
+- **Deck Management**: Advanced deck editor with drag-drop
+- **Gacha Interface**: Multi-pull animations, history tracking
+- **Character Nurturing**: Training systems, interaction panels
+
+**Utility Systems** (`/src/utils/`):
+- Performance monitoring and error boundaries
+- AI deck generation and testing utilities
+- Image management and type guards
 
 ### Important Technical Details
 
@@ -88,71 +154,3 @@ This is a Vue 3 + TypeScript anime-themed card battle game using Vite, Pinia for
 
 **Turn Integration**: Persistent effects are automatically processed at turn start/end via TurnManager integration.
 ---
-# 番组游戏优化计划
-
-## 🚀 高优先级优化 (进行中)
-
-### 1. 性能优化
-- [x] 实现动态抽卡轮换系统
-- [x] **gachaRotation 缓存机制** - 避免重复计算日期和卡片索引
-  - ✅ 实现多级缓存系统 (UP池缓存、轮换计时器缓存、卡片筛选缓存)
-  - ✅ 添加缓存清理机制防止内存泄漏
-  - ✅ 提供缓存统计和调试功能
-- [x] **完善 TypeScript 类型** - 减少 `as any` 使用，提高类型安全
-  - ✅ 创建类型守卫函数 `isAnimeCard` 和 `isCharacterCard`
-  - ✅ 修复 gacha 组件中的类型断言问题
-  - ✅ 改进 gachaRotation 工具函数的类型定义
-- [x] **状态管理优化** - 大数据量卡片数组虚拟化 ⭐ **用户体验优化完成**
-  - ✅ 创建自定义虚拟化网格组件 `VirtualGrid.vue`
-  - ✅ CollectionsView 虚拟化 (阈值调整至：100张卡片，高度：180px)
-  - ✅ DeckEditor 虚拟化 (阈值调整至：80张卡片，高度：150px)
-  - ✅ 智能阈值检测系统，根据使用场景动态调整
-  - ✅ 响应式网格布局支持，适配不同屏幕尺寸
-  - ✅ 性能监控和调试工具集成
-  - ✅ 兼容性回退机制 (少量数据时使用传统渲染)
-  - ✅ **卡片名字遮挡问题修复** - 确保所有卡片内容完全可见
-  - ✅ **用户可控制** - 新增虚拟化开关，用户可自由选择启用/禁用
-  - ✅ **智能启用** - 大幅提高阈值，减少不必要的虚拟化触发
-
-### 2. 用户体验优化
-- [x] **加载状态** - 抽卡、战斗等异步操作
-  - ✅ GachaView: 抽卡按钮加载状态和防重复点击
-  - ✅ GachaShop: 购买按钮加载状态和防重复操作
-  - ✅ 添加旋转加载动画和状态提示
-- [x] **错误处理** - 统一错误处理和用户友好提示
-  - ✅ 抽卡券不足检查和友好提示
-  - ✅ 知识点不足检查和提示
-  - ✅ 错误信息自动消失机制
-  - ✅ 可关闭的错误提示界面
-- [x] **动画反馈** - 战斗结果视觉效果 ⭐ **辩论式对话系统完成**
-  - ✅ 创建DialogueSystem对话管理系统，支持多种对话类型和动作效果
-  - ✅ 实现BattleSpeechBubble气泡对话框，支持打字机效果和角色头像
-  - ✅ 添加BattleActionEffect动作特效，包含"异议！"、"反击！"等逆转裁判风格效果
-  - ✅ 集成到BattleController，在战斗时自动触发生动的辩论对话
-  - ✅ 丰富的对话内容库，包含友好安利、辛辣点评、反驳、赞同等多种场景
-  - ✅ 响应式UI设计，支持历史对话显示和实时对话效果
-  - ✅ 素材系统准备就绪，支持角色头像和表情切换
-
-## 🎮 游戏功能补充 (计划中)
-
-### 3. 核心系统扩展
-- [ ] 数据持久化 - 可靠的保存/读取系统
-- [ ] 成就系统 - 里程碑奖励机制
-- [ ] 每日任务系统 - 日常玩法内容
-- [ ] 教程引导系统
-
-### 4. 社交功能
-- [ ] 排行榜系统 - 战斗胜率、收集进度
-- [ ] 好友系统 - 互赠、对战功能
-
-## 🛠 技术架构升级 (长期)
-
-### 5. 代码质量
-- [ ] 测试覆盖 - 单元测试和集成测试
-- [ ] 配置分层 - 模块化 gameConfig
-- [ ] 国际化支持 - 多语言系统
-
-### 6. 现代化特性
-- [ ] PWA支持 - 离线游戏体验
-- [ ] 响应式设计 - 移动端适配
-- [ ] 主题系统 - 深色模式等

@@ -39,11 +39,17 @@ interface PlayerState {
     consecutiveDays: number; // 连续观看天数
     lastWatchDate: string; // 最后观看日期
   };
+  // 商店每日购买记录
+  dailyPurchases: {
+    date: string; // YYYY-MM-DD格式的日期
+    purchases: Record<string, number>; // itemId -> 购买数量
+  };
 }
 
 interface PityState {
   totalPulls: number;
   pullsSinceLastHR: number;
+  pullsSinceLastUR: number; // 添加UR保底计数
 }
 
 export interface LogEntry {
@@ -92,6 +98,9 @@ export interface CharacterNurtureData {
   };
 }
 
+// 抽卡历史记录最大保存数量
+const MAX_GACHA_HISTORY_RECORDS = 500;
+
 export const useUserStore = defineStore('user', () => {
   // --- STATE ---
   const currentUser = ref<string>('');
@@ -107,6 +116,10 @@ export const useUserStore = defineStore('user', () => {
       consecutiveDays: 0,
       lastWatchDate: '',
     },
+    dailyPurchases: {
+      date: new Date().toISOString().split('T')[0], // 今天日期 YYYY-MM-DD
+      purchases: {},
+    },
   });
   const logs = ref<LogEntry[]>([]);
   const animeCollection = ref<Map<number, { count: number }>>(new Map());
@@ -115,8 +128,8 @@ export const useUserStore = defineStore('user', () => {
   const favoriteCharacters = ref<Set<number>>(new Set());
   const animeGachaHistory = ref<any[]>([]);
   const characterGachaHistory = ref<any[]>([]);
-  const animePityState = ref<PityState>({ totalPulls: 0, pullsSinceLastHR: 0 });
-  const characterPityState = ref<PityState>({ totalPulls: 0, pullsSinceLastHR: 0 });
+  const animePityState = ref<PityState>({ totalPulls: 0, pullsSinceLastHR: 0, pullsSinceLastUR: 0 });
+  const characterPityState = ref<PityState>({ totalPulls: 0, pullsSinceLastHR: 0, pullsSinceLastUR: 0 });
   
   // 角色养成数据
   const characterNurtureData = ref<Map<number, CharacterNurtureData>>(new Map());
@@ -161,12 +174,10 @@ export const useUserStore = defineStore('user', () => {
   );
   const savedDecks = computed(() => playerState.value.savedDecks);
   const expToNextLevel = computed(() => {
-    const levelXP = GAME_CONFIG.gameplay.levelXP;
     const currentLevel = playerState.value.level;
-    if (currentLevel >= levelXP.length) {
-      return Infinity; // Max level reached
-    }
-    return levelXP[currentLevel];
+    const currentLevelExp = GAME_CONFIG.gameplay.levelSystem.getExpForLevel(currentLevel);
+    const nextLevelExp = GAME_CONFIG.gameplay.levelSystem.getExpForLevel(currentLevel + 1);
+    return nextLevelExp - currentLevelExp;
   });
 
   // --- ACTIONS ---
@@ -191,6 +202,10 @@ export const useUserStore = defineStore('user', () => {
           consecutiveDays: 0,
           lastWatchDate: '',
         },
+        dailyPurchases: {
+          date: new Date().toISOString().split('T')[0],
+          purchases: {},
+        },
     };
     logs.value = [];
     animeCollection.value.clear();
@@ -200,8 +215,8 @@ export const useUserStore = defineStore('user', () => {
     characterNurtureData.value.clear();
     animeGachaHistory.value = [];
     characterGachaHistory.value = [];
-    animePityState.value = { totalPulls: 0, pullsSinceLastHR: 0 };
-    characterPityState.value = { totalPulls: 0, pullsSinceLastHR: 0 };
+    animePityState.value = { totalPulls: 0, pullsSinceLastHR: 0, pullsSinceLastUR: 0 };
+    characterPityState.value = { totalPulls: 0, pullsSinceLastHR: 0, pullsSinceLastUR: 0 };
   }
 
   async function loadStateFromServer() {
@@ -231,24 +246,65 @@ export const useUserStore = defineStore('user', () => {
         if (payload.state?.watchedAnime && Array.isArray(payload.state.watchedAnime)) {
           loadedState.watchedAnime = new Set(payload.state.watchedAnime);
         }
+
+        // 确保dailyPurchases字段存在并处理日期重置
+        const today = new Date().toISOString().split('T')[0];
+        if (!loadedState.dailyPurchases || loadedState.dailyPurchases.date !== today) {
+          loadedState.dailyPurchases = {
+            date: today,
+            purchases: {},
+          };
+        }
+
         playerState.value = loadedState;
 
-        animePityState.value = payload.animePity || animePityState.value;
-        characterPityState.value = payload.characterPity || characterPityState.value;
+        // 加载pity状态，确保UR计数字段存在
+        const loadedAnimePity = payload.animePity || { totalPulls: 0, pullsSinceLastHR: 0, pullsSinceLastUR: 0 };
+        const loadedCharacterPity = payload.characterPity || { totalPulls: 0, pullsSinceLastHR: 0, pullsSinceLastUR: 0 };
+
+        // 兼容旧存档，添加缺失的UR计数字段
+        if (loadedAnimePity.pullsSinceLastUR === undefined) {
+          loadedAnimePity.pullsSinceLastUR = 0;
+        }
+        if (loadedCharacterPity.pullsSinceLastUR === undefined) {
+          loadedCharacterPity.pullsSinceLastUR = 0;
+        }
+
+        animePityState.value = loadedAnimePity;
+        characterPityState.value = loadedCharacterPity;
         const savedAnimeCollection = payload.animeCollection || [];
         const migratedAnimeCollection = savedAnimeCollection.map(([id, data]: [number, any]) => [id, typeof data === 'number' ? { count: data } : data]);
         animeCollection.value = new Map(migratedAnimeCollection);
         const savedCharacterCollection = payload.characterCollection || [];
         const migratedCharacterCollection = savedCharacterCollection.map(([id, data]: [number, any]) => [id, typeof data === 'number' ? { count: data } : data]);
         characterCollection.value = new Map(migratedCharacterCollection);
-        animeGachaHistory.value = payload.animeHistory || [];
-        characterGachaHistory.value = payload.characterHistory || [];
+        // 限制历史记录最多保存500抽
+        const animeHistory = payload.animeHistory || [];
+        const characterHistory = payload.characterHistory || [];
+
+        // 只保留最新的500抽记录
+        animeGachaHistory.value = animeHistory.length > MAX_GACHA_HISTORY_RECORDS
+            ? animeHistory.slice(-MAX_GACHA_HISTORY_RECORDS)
+            : animeHistory;
+        characterGachaHistory.value = characterHistory.length > MAX_GACHA_HISTORY_RECORDS
+            ? characterHistory.slice(-MAX_GACHA_HISTORY_RECORDS)
+            : characterHistory;
         favoriteAnime.value = new Set(payload.favoriteAnime || []);
         favoriteCharacters.value = new Set(payload.favoriteCharacters || []);
         
         // 加载角色养成数据
         const savedNurtureData = payload.characterNurtureData || [];
         characterNurtureData.value = new Map(savedNurtureData);
+        
+        // 加载推塔进度
+        if (payload.towerProgress) {
+          towerProgress.value = payload.towerProgress;
+        }
+        
+        // 加载预设小队
+        if (payload.presetSquads) {
+          presetSquads.value = payload.presetSquads;
+        }
         
         addLog('成功从服务器加载存档。', 'info');
       }
@@ -279,6 +335,8 @@ export const useUserStore = defineStore('user', () => {
         favoriteAnime: Array.from(favoriteAnime.value),
         favoriteCharacters: Array.from(favoriteCharacters.value),
         characterNurtureData: Array.from(characterNurtureData.value.entries()),
+        towerProgress: towerProgress.value,
+        presetSquads: presetSquads.value,
     };
     try {
         const response = await fetch('/api/user/data', {
@@ -335,22 +393,20 @@ export const useUserStore = defineStore('user', () => {
     let requiredExp = expToNextLevel.value;
     while (playerState.value.exp >= requiredExp) {
         playerState.value.exp -= requiredExp;
-        const currentLevel = playerState.value.level;
-        const rewards = GAME_CONFIG.gameplay.levelUpRewards[currentLevel + 1];
+        const newLevel = playerState.value.level + 1;
 
-        playerState.value.level++;
+        // Use new function-based reward system
+        const rewards = GAME_CONFIG.gameplay.levelSystem.getLevelRewards(newLevel);
 
-        if (rewards) {
-            playerState.value.animeGachaTickets += rewards.animeTickets;
-            playerState.value.characterGachaTickets += rewards.characterTickets;
-            playerState.value.knowledgePoints += rewards.knowledge;
-            addLog(`恭喜！你已达到 ${playerState.value.level} 级！获得动画券 ${rewards.animeTickets} 张，角色券 ${rewards.characterTickets} 张，知识点 ${rewards.knowledge} 点。`, 'success');
-        } else {
-            addLog(`恭喜！你已达到 ${playerState.value.level} 级！`, 'success');
-        }
+        playerState.value.level = newLevel;
+        playerState.value.animeGachaTickets += rewards.animeTickets;
+        playerState.value.characterGachaTickets += rewards.characterTickets;
+        playerState.value.knowledgePoints += rewards.knowledge;
+
+        const milestoneMsg = newLevel % 10 === 0 ? '🎉 里程碑等级！' : '';
+        addLog(`恭喜！你已达到 ${newLevel} 级！${milestoneMsg}获得动画券 ${rewards.animeTickets} 张，角色券 ${rewards.characterTickets} 张，知识点 ${rewards.knowledge} 点。`, 'success');
 
         requiredExp = expToNextLevel.value;
-        if (requiredExp === Infinity) break;
     }
     saveStateToServer();
   }
@@ -405,7 +461,15 @@ export const useUserStore = defineStore('user', () => {
         rarity: card.rarity,
         timestamp: Date.now(),
     }));
+
+    // 添加新记录
     history.push(...historyItems);
+
+    // 限制历史记录最多保存500抽
+    if (history.length > MAX_GACHA_HISTORY_RECORDS) {
+        // 删除最旧的记录，保留最新的500抽
+        history.splice(0, history.length - MAX_GACHA_HISTORY_RECORDS);
+    }
 
     gachaStore.lastResult = drawnCards;
     return drawnCards;
@@ -541,6 +605,27 @@ export const useUserStore = defineStore('user', () => {
       return Promise.reject(new Error('知识点不足'));
     }
 
+    // 检查每日购买限制
+    if (item.dailyLimit) {
+      // 确保购买记录是今日的
+      const today = new Date().toISOString().split('T')[0];
+      if (playerState.value.dailyPurchases.date !== today) {
+        playerState.value.dailyPurchases = {
+          date: today,
+          purchases: {},
+        };
+      }
+
+      const currentPurchases = playerState.value.dailyPurchases.purchases[item.id] || 0;
+      if (currentPurchases >= item.dailyLimit) {
+        addLog(`该商品每日限购${item.dailyLimit}个，今日已达上限！`, 'warning');
+        return Promise.reject(new Error('已达每日购买限制'));
+      }
+
+      // 更新购买记录
+      playerState.value.dailyPurchases.purchases[item.id] = currentPurchases + 1;
+    }
+
     // 扣除知识点
     playerState.value.knowledgePoints -= item.cost;
 
@@ -567,28 +652,28 @@ export const useUserStore = defineStore('user', () => {
         // 增加经验值
         playerState.value.exp += item.quantity || 0;
         
-        // 检查是否升级
+        // 检查是否升级 (使用新的函数式系统)
         let targetLevel = playerState.value.level;
-        const levelXP = GAME_CONFIG.gameplay.levelXP;
-        
-        while (targetLevel < levelXP.length && playerState.value.exp >= levelXP[targetLevel]) {
+        let totalExpNeeded = GAME_CONFIG.gameplay.levelSystem.getExpForLevel(targetLevel + 1);
+
+        while (playerState.value.exp >= totalExpNeeded) {
           targetLevel++;
+          totalExpNeeded = GAME_CONFIG.gameplay.levelSystem.getExpForLevel(targetLevel + 1);
         }
-        
+
         if (targetLevel > playerState.value.level) {
           const oldLevel = playerState.value.level;
           playerState.value.level = targetLevel;
           addLog(`恭喜！等级提升至 Lv.${targetLevel}！`, 'success');
-          
-          // 给予升级奖励
+
+          // 给予升级奖励 (使用新的函数式奖励)
           for (let level = oldLevel + 1; level <= targetLevel; level++) {
-            const reward = GAME_CONFIG.gameplay.levelUpRewards[level.toString()];
-            if (reward) {
-              playerState.value.animeGachaTickets += reward.animeTickets;
-              playerState.value.characterGachaTickets += reward.characterTickets;
-              playerState.value.knowledgePoints += reward.knowledge;
-              addLog(`升级奖励：${reward.animeTickets}动画券 + ${reward.characterTickets}角色券 + ${reward.knowledge}知识点`, 'success');
-            }
+            const reward = GAME_CONFIG.gameplay.levelSystem.getLevelRewards(level);
+            playerState.value.animeGachaTickets += reward.animeTickets;
+            playerState.value.characterGachaTickets += reward.characterTickets;
+            playerState.value.knowledgePoints += reward.knowledge;
+            const milestoneMsg = level % 10 === 0 ? ' 🎉 里程碑等级！' : '';
+            addLog(`升级奖励${milestoneMsg}：${reward.animeTickets}动画券 + ${reward.characterTickets}角色券 + ${reward.knowledge}知识点`, 'success');
           }
         }
         
@@ -602,6 +687,51 @@ export const useUserStore = defineStore('user', () => {
 
     saveStateToServer();
     return Promise.resolve();
+  }
+
+  // 获取今日商品购买次数
+  function getTodayPurchaseCount(itemId: string): number {
+    try {
+      // 确保dailyPurchases字段存在
+      if (!playerState.value.dailyPurchases) {
+        playerState.value.dailyPurchases = {
+          date: new Date().toISOString().split('T')[0],
+          purchases: {},
+        };
+      }
+
+      const today = new Date().toISOString().split('T')[0];
+      if (playerState.value.dailyPurchases.date !== today) {
+        return 0;
+      }
+      return playerState.value.dailyPurchases.purchases[itemId] || 0;
+    } catch (error) {
+      console.warn('Error getting today purchase count:', error);
+      return 0;
+    }
+  }
+
+  // 检查商品是否可以购买
+  function canPurchaseItem(item: { id: string; cost: number; dailyLimit?: number }): { canPurchase: boolean; reason?: string } {
+    try {
+      // 检查知识点
+      if (playerState.value.knowledgePoints < item.cost) {
+        return { canPurchase: false, reason: '知识点不足' };
+      }
+
+      // 检查每日限制
+      if (item.dailyLimit) {
+        const purchased = getTodayPurchaseCount(item.id);
+        if (purchased >= item.dailyLimit) {
+          return { canPurchase: false, reason: '今日已达购买上限' };
+        }
+      }
+
+      return { canPurchase: true };
+    } catch (error) {
+      console.warn('Error checking purchase eligibility:', error);
+      return { canPurchase: false, reason: '无法检查购买条件' };
+    }
   }
 
   function dismantleCard(cardId: number, cardType: 'anime' | 'character') {
@@ -1097,6 +1227,8 @@ export const useUserStore = defineStore('user', () => {
     collectFromViewingQueue,
     purchaseFromShop,
     purchaseShopItem,
+    getTodayPurchaseCount,
+    canPurchaseItem,
     dismantleCard,
     dismantleAllDuplicates,
     toggleFavorite,
@@ -1124,6 +1256,7 @@ export const useUserStore = defineStore('user', () => {
       if (squad && position >= 0 && position < 4) {
         squad.members[position] = characterId;
         squad.lastUsed = new Date().toISOString();
+        saveStateToServer(); // 保存预设小队更改
       }
     },
     
@@ -1131,6 +1264,7 @@ export const useUserStore = defineStore('user', () => {
       const squad = presetSquads.value.find((s: PresetSquad) => s.id === squadId);
       if (squad) {
         squad.name = newName;
+        saveStateToServer(); // 保存预设小队名称更改
       }
     },
     
@@ -1153,6 +1287,7 @@ export const useUserStore = defineStore('user', () => {
         towerProgress.value.currentFloor = Math.min(floor + 1, 999); // 最高999层
         towerProgress.value.maxFloor = Math.max(towerProgress.value.maxFloor, floor);
         addLog(`成功通过第${floor}层！`, 'success');
+        saveStateToServer(); // 确保推塔进度保存到服务器
       }
     },
     

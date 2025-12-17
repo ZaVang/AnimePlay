@@ -2,15 +2,18 @@ import { useGameStore } from '@/stores/battle';
 import { usePlayerStore } from '@/stores/battle';
 import { useHistoryStore } from '@/stores/battle';
 import { useGameDataStore } from '@/stores/gameDataStore';
-import { useUserStore, type Deck } from '@/stores/userStore';
+import { useAuthStore } from '@/stores/modules/authStore';
+import type { Deck } from '@/stores/userStore';
 import { getAIProfileById, pickDefaultAIProfile, type AIProfile } from '@/core/ai/aiProfiles';
 import type { AnimeCard, CharacterCard, Skill } from '@/types';
 import type { Rarity } from '@/types/card';
 // removed duplicate Deck import
 
 import { urCharacterSkillMap } from '@/data/urCharacterSkills';
-import { PersistentEffectSystem } from '../systems/PersistentEffectSystem';
+import { systemRegistry } from '@/core/di/registry';
 import { generateRandomAIDeck } from '@/utils/randomAIDeckGenerator';
+import { clearSkillCache } from '@/skills';
+import { SkillSystem } from '@/core/systems/SkillSystem';
 
 // 辅助函数：正确的数组洗牌
 function shuffleArray<T>(array: T[]): T[] {
@@ -95,12 +98,12 @@ export const TurnManager = {
    * Initializes a game with a specific deck for Player A.
    * @param playerADeck - The deck selected by Player A.
    */
-  initializeGameWithDeck(playerADeck: Deck, aiProfileId?: string) {
+  async initializeGameWithDeck(playerADeck: Deck, aiProfileId?: string) {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
     const gameDataStore = useGameDataStore();
     const historyStore = useHistoryStore();
-    const userStore = useUserStore();
+    const authStore = useAuthStore();
 
     console.log('🎮 TurnManager.initializeGameWithDeck 调用');
     console.log('📊 游戏数据状态:', {
@@ -115,6 +118,9 @@ export const TurnManager = {
     }
 
     historyStore.clearLog();
+    
+    // 清理技能缓存以确保新游戏的状态干净
+    clearSkillCache();
     historyStore.addLog('游戏开始！正在构筑卡组...', 'event');
 
     // Player A uses the selected deck
@@ -176,12 +182,12 @@ export const TurnManager = {
     console.log('📋 setupPlayers后状态:', {
       playerA_deckSize: playerStore.playerA.deck.length,
       playerA_handSize: playerStore.playerA.hand.length,
-      playerB_deckSize: playerStore.playerB.deck.length,  
+      playerB_deckSize: playerStore.playerB.deck.length,
       playerB_handSize: playerStore.playerB.hand.length
     });
 
     // Set player names: logged-in user vs AI profile name
-    playerStore.playerA.name = userStore.currentUser || '你';
+    playerStore.playerA.name = authStore.currentUser || '你';
     playerStore.playerB.name = aiProfile.name;
 
     playerStore.shuffleDeck('playerA');
@@ -205,18 +211,21 @@ export const TurnManager = {
       playerB_deck: playerStore.playerB.deck.length
     });
 
+    // 🎯 初始化所有角色的被动技能
+    await SkillSystem.initializePassiveSkills();
+
     this.startTurn();
   },
 
   /**
    * Initializes a game with random decks for both players.
    */
-  initializeRandomGame(aiProfileId?: string) {
+  async initializeRandomGame(aiProfileId?: string) {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
     const gameDataStore = useGameDataStore();
     const historyStore = useHistoryStore();
-    const userStore = useUserStore();
+    const authStore = useAuthStore();
 
     console.log('🎲 TurnManager.initializeRandomGame 调用');
     console.log('📊 游戏数据状态:', {
@@ -231,6 +240,9 @@ export const TurnManager = {
     }
 
     historyStore.clearLog();
+    
+    // 清理技能缓存以确保新游戏的状态干净
+    clearSkillCache();
     historyStore.addLog('游戏开始！正在随机化卡组...', 'event');
 
     // Get random decks for Player A; AI uses configured profile or random fallback
@@ -272,7 +284,7 @@ export const TurnManager = {
 
     // Shuffle decks at the start of the game
     // Set player names: logged-in user vs AI profile name
-    playerStore.playerA.name = userStore.currentUser || '你';
+    playerStore.playerA.name = authStore.currentUser || '你';
     playerStore.playerB.name = aiProfile.name;
 
     playerStore.shuffleDeck('playerA');
@@ -281,6 +293,9 @@ export const TurnManager = {
     // Draw initial hands
     playerStore.drawCards('playerA', 5);
     playerStore.drawCards('playerB', 5);
+
+    // 🎯 初始化所有角色的被动技能
+    await SkillSystem.initializePassiveSkills();
 
     this.startTurn();
   },
@@ -305,26 +320,33 @@ export const TurnManager = {
     const nonActivePlayer = gameStore.activePlayer === 'playerA' ? 'playerB' : 'playerA';
     playerStore.restoreTpToMax(nonActivePlayer);
 
-    // 2. Draw a card for the active player (at the start of their turn)
-    playerStore.drawCards(gameStore.activePlayer, 1);
+    // 2. Draw a card for both players (at the start of each turn)
+    playerStore.drawCards('playerA', 1);
+    playerStore.drawCards('playerB', 1);
+    historyStore.addLog('双方各抽取1张卡牌', 'event');
     
     // 3. Reset character rotation count for the active player
     playerStore.resetRotationsForNewTurn(gameStore.activePlayer);
     
     // Debug: Check hand sizes after drawing
-    console.log(`回合 ${gameStore.turn} 开始后手牌状态:`, {
-      playerA: playerStore.playerA.hand.length,
-      playerB: playerStore.playerB.hand.length,
+    console.log(`回合 ${gameStore.turn} 开始 - 双方各抽1张牌后状态:`, {
+      playerA_hand: playerStore.playerA.hand.length,
+      playerA_deck: playerStore.playerA.deck.length,
+      playerB_hand: playerStore.playerB.hand.length,
+      playerB_deck: playerStore.playerB.deck.length,
       activePlayer: gameStore.activePlayer
     });
 
     // 4. Process persistent effects at start of turn
-    PersistentEffectSystem.getInstance().onTurnStart(gameStore.activePlayer);
-    
-    // 4. Handle character skill cooldowns reduction
+    systemRegistry.getPersistentEffectSystem().onTurnStart(gameStore.activePlayer);
+
+    // 4.5. Check conditional passive skills (动态被动技能检查)
+    SkillSystem.checkConditionalPassiveSkills(gameStore.activePlayer);
+
+    // 5. Handle character skill cooldowns reduction
     playerStore.reduceSkillCooldowns(gameStore.activePlayer);
     
-    // 5. Handle character rotation if needed
+    // 6. Handle character rotation if needed
     if (playerStore[gameStore.activePlayer].needsRotation) {
       const player = playerStore[gameStore.activePlayer];
       const newIndex = (player.activeCharacterIndex + 1) % player.characters.length;
@@ -332,10 +354,10 @@ export const TurnManager = {
       player.needsRotation = false; // Reset the flag
     }
 
-    // 6. Set phase to action
+    // 7. Set phase to action
     gameStore.setPhase('action');
 
-    // 7. If it's the AI's turn, trigger its action
+    // 8. If it's the AI's turn, trigger its action
     if (gameStore.activePlayer === 'playerB') {
       AIController.takeTurn();
     }
@@ -348,7 +370,7 @@ export const TurnManager = {
     const gameStore = useGameStore();
     
     // Process persistent effects at end of turn
-    PersistentEffectSystem.getInstance().onTurnEnd(gameStore.activePlayer);
+    systemRegistry.getPersistentEffectSystem().onTurnEnd(gameStore.activePlayer);
     
     if (gameStore.turn >= 12) {
       this.judgeFinalWinner();

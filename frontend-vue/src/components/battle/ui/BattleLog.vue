@@ -24,7 +24,7 @@ const logTypeClasses = {
   clash: 'text-white',
   damage: 'text-red-400',
   info: 'text-gray-400 italic',
-};
+} as const;
 </script>
 
 <template>

@@ -15,7 +15,8 @@ interface RarityConfig {
 interface RateUpConfig {
     ids: number[];
     hrChance: number;
-    pityPulls: number;
+    hrPityPulls: number; // HR保底抽数
+    urPityPulls: number; // UR保底抽数
 }
 
 interface GachaConfig {
@@ -99,6 +100,10 @@ export interface GameConfig {
     animeSystem: SystemConfig;
     characterSystem: SystemConfig;
     gameplay: {
+        levelSystem: {
+            getExpForLevel: (level: number) => number;
+            getLevelRewards: (level: number) => LevelUpReward;
+        };
         levelXP: number[];
         levelUpRewards: { [level: string]: LevelUpReward };
         animeGachaEXP: {
@@ -243,8 +248,9 @@ export const GAME_CONFIG: GameConfig = {
         },
         rateUp: {
             ids: [], // 动态UP卡牌的ID，由轮换系统计算
-            hrChance: 0.66,   // HR稀有度时，获得UP卡牌的概率
-            pityPulls: 70,    // 必定获得UP卡牌的保底抽数
+            hrChance: 0.33,   // HR稀有度时，获得UP卡牌的概率（从66%调整到33%）
+            hrPityPulls: 40,  // HR保底抽数（从70调整到40）
+            urPityPulls: 180, // UR保底抽数（新增，180抽保底）
         },
         gacha: {
             guaranteedSSR_Pulls: 10, // 十连抽保底SSR
@@ -311,8 +317,9 @@ export const GAME_CONFIG: GameConfig = {
         // Character UP pool configuration with dynamic rotation
         rateUp: {
             ids: [], // 动态UP角色的ID，由轮换系统计算
-            hrChance: 0.66, // HR rarity时，获得UP角色的概率
-            pityPulls: 70, // 必定获得UP角色的保底抽数
+            hrChance: 0.33, // HR rarity时，获得UP角色的概率（从66%调整到33%）
+            hrPityPulls: 40, // HR保底抽数（从70调整到40）
+            urPityPulls: 180, // UR保底抽数（新增，180抽保底）
         },
         // Character gacha settings (identical to anime system)
         gacha: {
@@ -326,9 +333,41 @@ export const GAME_CONFIG: GameConfig = {
 
     // --- Gameplay Settings ---
     gameplay: {
-        // EXP required for each level (index 0 is for level 1)
-        levelXP: [0, 100, 250, 500, 800, 1200, 1800, 2500, 3500, 5000], // Up to level 10
-        // Rewards for leveling up
+        // Level system functions (replaces fixed levelXP array)
+        levelSystem: {
+            // Function to calculate EXP required for a specific level
+            // Formula: base * level^exponent + linear * level
+            getExpForLevel: (level: number): number => {
+                if (level <= 1) return 0;
+                const base = 100;
+                const exponent = 1.8;
+                const linear = 50;
+                return Math.floor(base * Math.pow(level - 1, exponent) + linear * (level - 1));
+            },
+
+            // Function to calculate level-up rewards
+            getLevelRewards: (level: number): LevelUpReward => {
+                // Base rewards that scale with level
+                const baseAnime = Math.floor(3 + level * 0.5);
+                const baseCharacter = Math.floor(2 + level * 0.3);
+                const baseKnowledge = Math.floor(50 + level * level * 5);
+
+                // Bonus rewards at milestone levels
+                const isMilestone = level % 10 === 0;
+                const milestoneMultiplier = isMilestone ? 3 : 1;
+
+                return {
+                    animeTickets: baseAnime * milestoneMultiplier,
+                    characterTickets: baseCharacter * milestoneMultiplier,
+                    knowledge: baseKnowledge * milestoneMultiplier
+                };
+            }
+        },
+
+        // Legacy levelXP array (kept for backward compatibility, but unused)
+        levelXP: [0, 100, 250, 500, 800, 1200, 1800, 2500, 3500, 5000],
+
+        // Legacy levelUpRewards (kept for backward compatibility, but unused)
         levelUpRewards: {
             "2": { animeTickets: 5, knowledge: 100, characterTickets: 3 },
             "3": { animeTickets: 5, knowledge: 200, characterTickets: 3 },
@@ -355,12 +394,12 @@ export const GAME_CONFIG: GameConfig = {
             slots: 3,
             // Time in minutes and rewards per rarity
             rewards: {
-                'UR': { time: 240, exp: 5000, knowledge: 1000 },
-                'HR': { time: 180, exp: 2500, knowledge: 400 },
-                'SSR': { time: 120, exp: 1000, knowledge: 100 },
-                'SR': { time: 60, exp: 400, knowledge: 20 },
-                'R': { time: 30, exp: 150, knowledge: 5 },
-                'N': { time: 10, exp: 50, knowledge: 1 }
+                'UR': { time: 720, exp: 800, knowledge: 1000 },
+                'HR': { time: 540, exp: 400, knowledge: 600 },
+                'SSR': { time: 360, exp: 200, knowledge: 300 },
+                'SR': { time: 180, exp: 100, knowledge: 100 },
+                'R': { time: 90, exp: 50, knowledge: 50 },
+                'N': { time: 45, exp: 20, knowledge: 10 }
             }
         }
     }

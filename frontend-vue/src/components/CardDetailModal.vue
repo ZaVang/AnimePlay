@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useUserStore } from '@/stores/userStore';
+import { useCollectionStore } from '@/stores/modules/collectionStore';
+import { useEconomyStore } from '@/stores/modules/economyStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import type { Card, AnimeCard, CharacterCard } from '@/types/card';
 import type { Skill } from '@/types/skill';
-import { getEffectText, getTriggerText } from '@/skills/effects/descriptions';
+import { getEffectText, getTriggerText } from '@/skills';
 
 const props = defineProps<{
   card: Card | null;
@@ -14,7 +15,8 @@ const props = defineProps<{
 }>();
 
 const emit = defineEmits(['close']);
-const userStore = useUserStore();
+const collectionStore = useCollectionStore();
+const economyStore = useEconomyStore();
 const gameDataStore = useGameDataStore();
 
 const cardRarityConfig = computed(() => {
@@ -25,7 +27,7 @@ const cardRarityConfig = computed(() => {
 
 // FIXED: Added `const` back
 const dismantleValue = computed(() => {
-    return cardRarityConfig.value.dismantleValue || 0;
+    return (cardRarityConfig.value as any)?.dismantleValue ?? 0;
 });
 
 // --- NEW: Computed properties for skills ---
@@ -61,12 +63,12 @@ const animeEffectsDescriptions = computed(() => {
 
 const processedAnimeNames = computed(() => {
     if (props.cardType !== 'character' || !props.card || !(props.card as CharacterCard).anime_names) return [];
-    
-    return (props.card as CharacterCard).anime_names.map(name => {
+
+    return (props.card as CharacterCard).anime_names?.map(name => {
         const animeCard = gameDataStore.allAnimeCards.find(c => c.name === name);
-        const isOwned = animeCard ? userStore.animeCollection.has(animeCard.id) : false;
+        const isOwned = animeCard ? collectionStore.animeCollection.has(animeCard.id) : false;
         return { name, isOwned };
-    });
+    }) || [];
 });
 
 function closeModal() {
@@ -76,7 +78,7 @@ function closeModal() {
 function handleDismantle() {
     if (props.card) {
         if (confirm(`确定要分解一张 [${props.card.rarity}] ${props.card.name} 吗？\n你将获得 ${dismantleValue.value} 知识点。`)) {
-            userStore.dismantleCard(props.card.id, props.cardType);
+            economyStore.dismantleCard(props.card.id, props.cardType);
             closeModal();
         }
     }
@@ -199,7 +201,7 @@ function handleDismantle() {
                 </div>
             </div>
 
-            <div v-if="cardType === 'character' && (card as CharacterCard).anime_names && (card as CharacterCard).anime_names.length" class="mt-4 border-t pt-4">
+            <div v-if="cardType === 'character' && (card as CharacterCard).anime_names?.length" class="mt-4 border-t pt-4">
               <h3 class="font-bold text-lg mb-2">登场作品</h3>
               <div class="flex flex-wrap gap-2">
                 <span v-for="anime in processedAnimeNames" :key="anime.name"

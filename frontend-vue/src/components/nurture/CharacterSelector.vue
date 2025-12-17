@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import { useUserStore } from '@/stores/userStore';
+import { useCollectionStore } from '@/stores/modules/collectionStore';
+import { useNurtureStore } from '@/stores/modules/nurtureStore';;
 import { useGameDataStore } from '@/stores/gameDataStore';
 import type { CharacterCard } from '@/types/card';
 
@@ -12,7 +13,8 @@ const emit = defineEmits<{
   select: [characterId: number];
 }>();
 
-const userStore = useUserStore();
+const collectionStore = useCollectionStore();
+const nurtureStore = useNurtureStore();
 const gameDataStore = useGameDataStore();
 const isModalOpen = ref(false);
 
@@ -22,12 +24,12 @@ const availableCharacters = computed(() => {
     'UR': 6, 'HR': 5, 'SSR': 4, 'SR': 3, 'R': 2, 'N': 1
   };
 
-  return Array.from(userStore.characterCollection.entries())
+  return Array.from(collectionStore.characterCollection.entries())
     .map(([id, data]) => {
       const character = gameDataStore.getCharacterCardById(id);
       if (!character) return null;
       
-      const nurtureData = userStore.getNurtureData(id);
+      const nurtureData = nurtureStore.getNurtureData(id);
       return {
         ...character,
         count: data.count,

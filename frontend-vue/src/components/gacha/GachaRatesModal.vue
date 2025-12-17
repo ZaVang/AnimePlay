@@ -80,14 +80,32 @@ const rates = computed(() => {
           <div>
             <h3 class="font-semibold text-gray-700 mb-2">卡池机制</h3>
             <ul class="list-disc list-inside space-y-2 text-sm text-gray-600">
+              <!-- 基础保底 -->
               <li>
                 <strong>十连保底:</strong> 每进行 <span class="font-bold text-indigo-600">10</span> 次召唤，必定获得至少 <span class="font-bold text-purple-600">1</span> 张SSR或更高级别的卡牌。
               </li>
+
+              <!-- UP机制说明 -->
               <li v-if="rateUpConfig && rateUpConfig.ids.length > 0">
-                <strong>UP卡牌:</strong> 当您抽到 <span class="font-bold text-red-600">HR</span> 稀有度的卡牌时，有 <span class="font-bold text-indigo-600">{{ rateUpConfig.hrChance * 100 }}%</span> 的概率为当期UP卡牌之一。
+                <strong>UP概率提升:</strong> 当您抽到 <span class="font-bold text-red-600">HR</span> 或 <span class="font-bold text-amber-600">UR</span> 稀有度的卡牌时，有 <span class="font-bold text-indigo-600">{{ rateUpConfig.hrChance * 100 }}%</span> 的概率为当期UP卡牌之一。
               </li>
-               <li v-if="rateUpConfig && rateUpConfig.pityPulls > 0">
-                <strong>大保底:</strong> 在本卡池中，每进行 <span class="font-bold text-indigo-600">{{ rateUpConfig.pityPulls }}</span> 次召唤，必定会获得当期UP的 <span class="font-bold text-red-600">HR</span> 卡牌之一（若提前抽到则重置计数）。
+
+              <!-- HR保底机制 -->
+              <li v-if="rateUpConfig && rateUpConfig.hrPityPulls > 0">
+                <strong>HR保底:</strong> 连续 <span class="font-bold text-indigo-600">{{ rateUpConfig.hrPityPulls }}</span> 抽未获得UP的HR卡牌，下次必定获得当期UP的 <span class="font-bold text-red-600">HR</span> 卡牌之一。
+                <span class="block text-xs text-gray-500 mt-1">💡 提前抽到HR或UR会重置此计数</span>
+              </li>
+
+              <!-- UR保底机制 -->
+              <li v-if="rateUpConfig && rateUpConfig.urPityPulls > 0">
+                <strong>UR保底:</strong> 连续 <span class="font-bold text-amber-600">{{ rateUpConfig.urPityPulls }}</span> 抽未获得UR卡牌，下次必定获得当期UP的 <span class="font-bold text-amber-600">UR</span> 卡牌之一。
+                <span class="block text-xs text-gray-500 mt-1">🌟 获得UR会同时重置HR保底计数</span>
+              </li>
+
+              <!-- 机制优先级说明 -->
+              <li v-if="rateUpConfig && (rateUpConfig.hrPityPulls > 0 || rateUpConfig.urPityPulls > 0)">
+                <strong>保底优先级:</strong> UR保底 > HR保底 > 基础概率
+                <span class="block text-xs text-gray-500 mt-1">📊 同时触发多个保底时，优先级高的生效</span>
               </li>
             </ul>
           </div>

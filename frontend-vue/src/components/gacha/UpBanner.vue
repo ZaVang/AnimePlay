@@ -85,8 +85,11 @@ onUnmounted(() => {
       <p class="text-sm text-yellow-800">
         在抽到 <span class="font-bold text-purple-700">HR</span> 或 <span class="font-bold text-red-700">UR</span> 稀有度时，有 <span class="font-bold">{{ (upConfig.hrChance * 100).toFixed(0) }}%</span> 的概率为UP卡！
       </p>
-      <p v-if="upConfig.pityPulls > 0" class="text-xs text-yellow-700">
-        {{ upConfig.pityPulls }}次未抽中UP卡，下次必定获得UP卡！
+      <p v-if="upConfig.hrPityPulls > 0" class="text-xs text-yellow-700">
+        HR保底：{{ upConfig.hrPityPulls }}抽必得UP·HR
+      </p>
+      <p v-if="upConfig.urPityPulls > 0" class="text-xs text-yellow-700">
+        UR保底：{{ upConfig.urPityPulls }}抽必得UP·UR
       </p>
       <p class="text-xs text-yellow-700 opacity-75">
         🔄 每日0点自动轮换新的UP组合

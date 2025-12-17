@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import { useUserStore } from '@/stores/userStore';
+import { useAuthStore } from '@/stores/modules/authStore';
+import { useNurtureStore } from '@/stores/modules/nurtureStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import CharacterSelector from '@/components/nurture/CharacterSelector.vue';
 import CharacterProfile from '@/components/nurture/CharacterProfile.vue';
@@ -9,7 +10,8 @@ import NurtureActions from '@/components/nurture/NurtureActions.vue';
 import DialogueSystem from '@/components/nurture/DialogueSystem.vue';
 import CollapsiblePanel from '@/components/nurture/CollapsiblePanel.vue';
 
-const userStore = useUserStore();
+const authStore = useAuthStore();
+const nurtureStore = useNurtureStore();
 const gameDataStore = useGameDataStore();
 
 // 当前选中的角色
@@ -21,7 +23,7 @@ const selectedCharacter = computed(() => {
   const character = gameDataStore.getCharacterCardById(selectedCharacterId.value);
   if (!character) return null;
   
-  const nurtureData = userStore.getNurtureData(selectedCharacterId.value);
+  const nurtureData = nurtureStore.getNurtureData(selectedCharacterId.value);
   return {
     ...character,
     nurtureData
@@ -66,7 +68,7 @@ function endDialogue() {
       </div>
 
       <!-- 未登录状态 -->
-      <div v-if="!userStore.isLoggedIn" class="text-center py-20">
+      <div v-if="!authStore.isLoggedIn" class="text-center py-20">
         <svg class="w-24 h-24 mx-auto mb-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
         </svg>

@@ -1,7 +1,8 @@
 import { useGameStore } from '@/stores/battle';
 import type { Card } from '@/types';
 import { SkillSystem } from '@/core/systems/SkillSystem';
-import { PersistentEffectSystem } from '@/core/systems/PersistentEffectSystem';
+import { systemRegistry } from '@/core/di/registry';
+import { isCardTreatedAsAnyType } from '@/utils/typeGuards';
 
 // A simple function to get all active passive skills from both players
 // Removed direct aura scan; delegated to SkillSystem
@@ -32,8 +33,8 @@ export const StrengthCalculator = {
 
     // 2. Treat as any type if status consumed (simple heuristic: grants +1 if card有任意标签可触发的被动)
     // 已通过 SkillSystem.onCardPlayed 设置了临时标记 __treatedAsAnyType
-    // 具体的“任何类型匹配策略”可在此扩展，这里仅让被动聚合阶段感知。
-    if ((card as any).__treatedAsAnyType) {
+    // 具体的"任何类型匹配策略"可在此扩展，这里仅让被动聚合阶段感知。
+    if (isCardTreatedAsAnyType(card)) {
       // 在 getAuraStrengthBonus 中会检查卡的标签，这里不修改标签，仅保留标记影响逻辑（如后续实现）
     }
 
@@ -41,7 +42,12 @@ export const StrengthCalculator = {
     finalStrength += SkillSystem.getAuraStrengthBonus(card, playerId);
     
     // 4. Apply persistent effects from PersistentEffectSystem
-    finalStrength += PersistentEffectSystem.getInstance().getStrengthBonus(playerId, card.synergy_tags || []);
+    try {
+      finalStrength += systemRegistry.getPersistentEffectSystem().getStrengthBonus(playerId, card.synergy_tags || []);
+    } catch (error) {
+      // 如果系统不可用（如在某些测试环境中），跳过强度加成
+      console.warn('PersistentEffectSystem not available in StrengthCalculator:', error);
+    }
 
     return finalStrength;
   }

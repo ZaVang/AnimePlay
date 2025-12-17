@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import { useUserStore } from '@/stores/userStore';
+import { useAuthStore } from '@/stores/modules/authStore';
+import { useCollectionStore } from '@/stores/modules/collectionStore';
+import { useEconomyStore } from '@/stores/modules/economyStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import type { AnimeCard as AnimeCardType, CharacterCard as CharacterCardType, Rarity } from '@/types/card';
 import CardDetailModal from '@/components/CardDetailModal.vue';
@@ -10,7 +12,9 @@ import CharacterCard from '@/components/CharacterCard.vue';
 import VirtualGrid from '@/components/VirtualGrid.vue';
 import '@/utils/performanceMonitor'; // 启动性能监控
 
-const userStore = useUserStore();
+const authStore = useAuthStore();
+const collectionStore = useCollectionStore();
+const economyStore = useEconomyStore();
 const gameDataStore = useGameDataStore();
 
 // --- STATE for UI ---
@@ -51,16 +55,16 @@ function closeDetail() {
 function handleDismantleAll(type: 'anime' | 'character') {
     const typeText = type === 'anime' ? '动画' : '角色';
     if (confirm(`确定要分解所有重复的${typeText}卡吗？`)) {
-        userStore.dismantleAllDuplicates(type);
+        economyStore.dismantleAllDuplicates(type);
     }
 }
 
 // --- COMPUTED Properties ---
 const hasDuplicateAnime = computed(() => {
-    return Array.from(userStore.animeCollection.values()).some(c => c.count > 1);
+    return Array.from(collectionStore.animeCollection.values()).some(c => c.count > 1);
 });
 const hasDuplicateCharacters = computed(() => {
-    return Array.from(userStore.characterCollection.values()).some(c => c.count > 1);
+    return Array.from(collectionStore.characterCollection.values()).some(c => c.count > 1);
 });
 
 const allAnimeTags = computed(() => {
@@ -81,10 +85,10 @@ const sortCards = <T extends AnimeCardType | CharacterCardType>(cards: (T & { co
 };
 
 const filteredAnimeCards = computed(() => {
-  if (!userStore.isLoggedIn || gameDataStore.allAnimeCards.length === 0) return [];
-  
+  if (!authStore.isLoggedIn || gameDataStore.allAnimeCards.length === 0) return [];
+
   let cards: (AnimeCardType & { count: number })[] = [];
-  for (const [id, collectionData] of userStore.animeCollection.entries()) {
+  for (const [id, collectionData] of collectionStore.animeCollection.entries()) {
     const cardDetails = gameDataStore.getAnimeCardById(id);
     if (cardDetails) {
       cards.push({ ...cardDetails, count: collectionData.count });
@@ -134,10 +138,10 @@ if (import.meta.env.DEV) {
 }
 
 const filteredCharacterCards = computed(() => {
-  if (!userStore.isLoggedIn || gameDataStore.allCharacterCards.length === 0) return [];
+  if (!authStore.isLoggedIn || gameDataStore.allCharacterCards.length === 0) return [];
 
   let cards: (CharacterCardType & { count: number })[] = [];
-  for (const [id, collectionData] of userStore.characterCollection.entries()) {
+  for (const [id, collectionData] of collectionStore.characterCollection.entries()) {
     const cardDetails = gameDataStore.getCharacterCardById(id);
     if (cardDetails) {
       cards.push({ ...cardDetails, count: collectionData.count });
@@ -210,7 +214,7 @@ const filteredCharacterCards = computed(() => {
 
       <!-- Content Area -->
       <div class="p-6">
-        <div v-if="!userStore.isLoggedIn" class="text-center py-12">
+        <div v-if="!authStore.isLoggedIn" class="text-center py-12">
           <p class="text-gray-500 text-lg font-medium">请先登录以查看您的收藏。</p>
         </div>
         
@@ -230,12 +234,12 @@ const filteredCharacterCards = computed(() => {
             @item-click="openDetail($event, 'anime')"
           >
             <template #default="{ item }">
-              <AnimeCard :anime="item as AnimeCardType & { count: number }" :count="item.count" />
+              <AnimeCard :anime="item as AnimeCardType & { count: number }" :count="item.count" :show-strength="true" />
             </template>
           </VirtualGrid>
           <!-- 传统版本（数据量少时使用） -->
           <div v-else class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-4">
-            <AnimeCard v-for="card in filteredAnimeCards" :key="card.id" :anime="card" :count="card.count" @click="openDetail(card, 'anime')"/>
+            <AnimeCard v-for="card in filteredAnimeCards" :key="card.id" :anime="card" :count="card.count" :show-strength="true" @click="openDetail(card, 'anime')"/>
           </div>
         </div>
 
@@ -273,12 +277,12 @@ const filteredCharacterCards = computed(() => {
     </div>
 
     <!-- Card Detail Modal -->
-    <CardDetailModal 
+    <CardDetailModal
         v-if="selectedCard"
-        :card="selectedCard" 
-        :card-type="selectedCardType" 
-        :count="selectedCardType === 'anime' ? userStore.getAnimeCardCount(selectedCard.id) : userStore.getCharacterCardCount(selectedCard.id)"
-        @close="closeDetail" 
+        :card="selectedCard"
+        :card-type="selectedCardType"
+        :count="selectedCardType === 'anime' ? collectionStore.getAnimeCardCount(selectedCard.id) : collectionStore.getCharacterCardCount(selectedCard.id)"
+        @close="closeDetail"
     />
   </div>
 </template>

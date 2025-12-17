@@ -1,6 +1,6 @@
 <script setup lang="ts">
+import { useNurtureStore } from '@/stores/modules/nurtureStore';
 import { ref, computed, onMounted, nextTick } from 'vue';
-import { useUserStore } from '@/stores/userStore';
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/stores/userStore';
 
@@ -12,7 +12,8 @@ const emit = defineEmits<{
   close: [];
 }>();
 
-const userStore = useUserStore();
+const nurtureStore = useNurtureStore();
+
 
 // 对话状态
 const currentDialogue = ref<any>(null);
@@ -146,8 +147,8 @@ function selectDialogue(dialogue: any) {
     isTyping.value = false;
     
     // 增加好感度
-    userStore.increaseAffection(props.character.id, dialogue.affectionGain);
-    userStore.interactWithCharacter(props.character.id, dialogue.id);
+    nurtureStore.increaseAffection(props.character.id, dialogue.affectionGain);
+    nurtureStore.interactWithCharacter(props.character.id, dialogue.id);
     
     scrollToBottom();
   }, 1000 + Math.random() * 1500); // 随机延迟模拟思考时间

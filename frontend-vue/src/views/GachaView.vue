@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { useUserStore } from '@/stores/userStore';
+import { useEconomyStore } from '@/stores/modules/economyStore';
+import { useCollectionStore } from '@/stores/modules/collectionStore';
 import GachaResultModal from '@/components/GachaResultModal.vue';
 import GachaRatesModal from '@/components/gacha/GachaRatesModal.vue';
 import UpBanner from '@/components/gacha/UpBanner.vue';
@@ -8,7 +9,8 @@ import GachaShop from '@/components/gacha/GachaShop.vue';
 import GachaHistory from '@/components/gacha/GachaHistory.vue';
 import type { DrawnCard } from '@/stores/gachaStore';
 
-const userStore = useUserStore();
+const economyStore = useEconomyStore();
+const collectionStore = useCollectionStore();
 const activeGachaType = ref<'anime' | 'character'>('anime');
 const activeTab = ref<'pool' | 'shop' | 'history'>('pool');
 
@@ -31,16 +33,16 @@ async function handleDraw(count: number) {
     
     try {
         // 检查是否有足够的抽卡券
-        const hasEnoughTickets = activeGachaType.value === 'anime' 
-            ? userStore.playerState.animeGachaTickets >= count
-            : userStore.playerState.characterGachaTickets >= count;
+        const hasEnoughTickets = activeGachaType.value === 'anime'
+            ? economyStore.animeGachaTickets >= count
+            : economyStore.characterGachaTickets >= count;
             
         if (!hasEnoughTickets) {
             drawError.value = `没有足够的${activeGachaType.value === 'anime' ? '动画券' : '角色券'}！`;
             return;
         }
         
-        const drawnCards = await userStore.drawCards(activeGachaType.value, count);
+        const drawnCards = await collectionStore.drawCards(activeGachaType.value, count);
         if (drawnCards) {
             drawnCardsResult.value = drawnCards;
             isResultModalOpen.value = true;
@@ -139,17 +141,17 @@ function closeRatesModal() {
               <div class="flex items-center gap-2">
                 <span class="text-sm text-gray-600">拥有：</span>
                 <span class="bg-amber-100 text-amber-800 px-2 py-1 rounded-full text-xs font-semibold">
-                  {{ userStore.playerState.animeGachaTickets }} 张动画券
+                  {{ economyStore.animeGachaTickets }} 张动画券
                 </span>
               </div>
             </div>
             <div class="text-center mb-4">
-              <button 
-                @click="handleDraw(1)" 
-                :disabled="isDrawing || userStore.playerState.animeGachaTickets < 1"
+              <button
+                @click="handleDraw(1)"
+                :disabled="isDrawing || economyStore.animeGachaTickets < 1"
                 :class="[
                   'font-semibold py-2 px-6 rounded-lg text-sm transition-all duration-200',
-                  isDrawing || userStore.playerState.animeGachaTickets < 1
+                  isDrawing || economyStore.animeGachaTickets < 1
                     ? 'bg-gray-400 text-gray-200 cursor-not-allowed'
                     : 'bg-indigo-600 text-white hover:bg-indigo-700'
                 ]"
@@ -163,12 +165,12 @@ function closeRatesModal() {
                 </span>
                 <span v-else>单次抽卡</span>
               </button>
-              <button 
-                @click="handleDraw(10)" 
-                :disabled="isDrawing || userStore.playerState.animeGachaTickets < 10"
+              <button
+                @click="handleDraw(10)"
+                :disabled="isDrawing || economyStore.animeGachaTickets < 10"
                 :class="[
                   'font-semibold py-2 px-6 rounded-lg text-sm ml-3 transition-all duration-200',
-                  isDrawing || userStore.playerState.animeGachaTickets < 10
+                  isDrawing || economyStore.animeGachaTickets < 10
                     ? 'bg-gray-400 text-gray-200 cursor-not-allowed'
                     : 'bg-amber-500 text-white hover:bg-amber-600'
                 ]"
@@ -195,17 +197,17 @@ function closeRatesModal() {
               <div class="flex items-center gap-2">
                 <span class="text-sm text-gray-600">拥有：</span>
                 <span class="bg-pink-100 text-pink-800 px-2 py-1 rounded-full text-xs font-semibold">
-                  {{ userStore.playerState.characterGachaTickets }} 张角色券
+                  {{ economyStore.characterGachaTickets }} 张角色券
                 </span>
               </div>
             </div>
             <div class="text-center mb-4">
-              <button 
-                @click="handleDraw(1)" 
-                :disabled="isDrawing || userStore.playerState.characterGachaTickets < 1"
+              <button
+                @click="handleDraw(1)"
+                :disabled="isDrawing || economyStore.characterGachaTickets < 1"
                 :class="[
                   'font-semibold py-2 px-6 rounded-lg text-sm transition-all duration-200',
-                  isDrawing || userStore.playerState.characterGachaTickets < 1
+                  isDrawing || economyStore.characterGachaTickets < 1
                     ? 'bg-gray-400 text-gray-200 cursor-not-allowed'
                     : 'bg-pink-600 text-white hover:bg-pink-700'
                 ]"
@@ -219,12 +221,12 @@ function closeRatesModal() {
                 </span>
                 <span v-else>单次抽卡</span>
               </button>
-              <button 
-                @click="handleDraw(10)" 
-                :disabled="isDrawing || userStore.playerState.characterGachaTickets < 10"
+              <button
+                @click="handleDraw(10)"
+                :disabled="isDrawing || economyStore.characterGachaTickets < 10"
                 :class="[
                   'font-semibold py-2 px-6 rounded-lg text-sm ml-3 transition-all duration-200',
-                  isDrawing || userStore.playerState.characterGachaTickets < 10
+                  isDrawing || economyStore.characterGachaTickets < 10
                     ? 'bg-gray-400 text-gray-200 cursor-not-allowed'
                     : 'bg-purple-500 text-white hover:bg-purple-600'
                 ]"

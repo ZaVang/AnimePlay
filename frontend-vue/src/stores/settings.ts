@@ -70,7 +70,7 @@ export const useSettingsStore = defineStore('settings', () => {
   function applyPreset(presetName: keyof typeof themePresets) {
     const preset = themePresets[presetName];
     uiTheme.value = { ...preset };
-    biasBarTheme.value = preset.biasBar as any;
+    biasBarTheme.value = preset.biasBar as 'gradient' | 'cyber' | 'elegant';
     saveSettings();
   }
   

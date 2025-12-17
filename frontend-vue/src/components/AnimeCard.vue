@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
-import { useUserStore } from '@/stores/userStore';
+import { useCollectionStore } from '@/stores/modules/collectionStore';
+import { useGameStore, usePlayerStore } from '@/stores/battle';
+import { CostCalculator } from '@/core/calculation/CostCalculator';
+import { SkillSystem } from '@/core/systems/SkillSystem';
 import type { AnimeCard } from '@/types/card';
 
 const props = defineProps<{
@@ -11,14 +14,99 @@ const props = defineProps<{
   isDuplicate?: boolean;
   isInDeck?: boolean;
   showCost?: boolean; // New prop to control cost visibility
+  showStrength?: boolean; // New prop to control strength visibility
+  playerId?: 'playerA' | 'playerB'; // New prop for cost calculation
 }>();
 
-const userStore = useUserStore();
+const collectionStore = useCollectionStore();
+const gameStore = useGameStore();
+const playerStore = usePlayerStore();
 
 const rarityData = computed(() => GAME_CONFIG.animeSystem.rarityConfig[props.anime.rarity] || {});
 const rarityColorClass = computed(() => rarityData.value.c || 'bg-gray-500');
 const rarityEffectClass = computed(() => rarityData.value.effect || '');
-const isFavorite = computed(() => userStore.isFavorite(props.anime.id, 'anime'));
+const isFavorite = computed(() => collectionStore.isFavorite(props.anime.id, 'anime'));
+
+// 获取卡牌的基础强度（优先使用points字段，回退到稀有度默认值）
+const baseStrength = computed(() => {
+  // 直接使用卡牌的points字段作为强度
+  if (props.anime.points !== undefined) {
+    return props.anime.points;
+  }
+
+  // 如果没有points字段，按稀有度提供默认值（仅作为后备）
+  const rarityStrength = {
+    'UR': 10,
+    'HR': 8,
+    'SSR': 6,
+    'SR': 4,
+    'R': 3,
+    'N': 2
+  };
+  return rarityStrength[props.anime.rarity as keyof typeof rarityStrength] || 2;
+});
+
+// 计算强度信息（包含被动技能加成）
+const strengthInfo = computed(() => {
+  const base = baseStrength.value;
+
+  // 只在战斗状态下且有playerId时计算强度加成
+  if (props.playerId && gameStore) {
+    try {
+      const auraBonus = SkillSystem.getAuraStrengthBonus(props.anime, props.playerId);
+      const finalStrength = base + auraBonus;
+
+      return {
+        baseStrength: base,
+        finalStrength,
+        bonus: auraBonus,
+        hasBonus: auraBonus > 0
+      };
+    } catch {
+      // 如果计算失败，返回基础强度
+      return {
+        baseStrength: base,
+        finalStrength: base,
+        bonus: 0,
+        hasBonus: false
+      };
+    }
+  }
+
+  return {
+    baseStrength: base,
+    finalStrength: base,
+    bonus: 0,
+    hasBonus: false
+  };
+});
+
+// 计算卡牌费用（考虑减免效果）
+const costInfo = computed(() => {
+  const baseCost = props.anime.cost || 0;
+
+  // 只在战斗状态下计算费用修改
+  if (props.playerId && gameStore) {
+    try {
+      return CostCalculator.getCostModification(props.anime, props.playerId);
+    } catch {
+      // 如果计算失败，返回基础费用
+      return {
+        baseCost,
+        finalCost: baseCost,
+        reduction: 0,
+        hasModification: false
+      };
+    }
+  }
+
+  return {
+    baseCost,
+    finalCost: baseCost,
+    reduction: 0,
+    hasModification: false
+  };
+});
 
 function onImageError(event: Event) {
   const target = event.target as HTMLImageElement;
@@ -28,7 +116,7 @@ function onImageError(event: Event) {
 
 function toggleFavorite(event: MouseEvent) {
   event.stopPropagation();
-  userStore.toggleFavorite(props.anime.id, 'anime');
+  collectionStore.toggleFavorite(props.anime.id, 'anime');
 }
 </script>
 
@@ -42,9 +130,13 @@ function toggleFavorite(event: MouseEvent) {
     :data-item-id="anime.id"
     data-item-type="动画"
   >
-    <!-- Cost Gem: Now with conditional rendering -->
-    <div v-if="anime.cost > 0 && showCost" class="cost-gem">
-      {{ anime.cost }}
+    <!-- Cost Gem: Now with conditional rendering and cost modification display -->
+    <div v-if="anime.cost > 0 && showCost" class="cost-gem" :class="{ 'cost-modified': costInfo.hasModification }">
+      <span v-if="!costInfo.hasModification">{{ costInfo.finalCost }}</span>
+      <span v-else class="cost-with-modification">
+        <span class="original-cost">{{ costInfo.baseCost }}</span>
+        <span class="final-cost">{{ costInfo.finalCost }}</span>
+      </span>
     </div>
 
     <div class="relative">
@@ -95,6 +187,25 @@ function toggleFavorite(event: MouseEvent) {
     
     <div class="p-2">
       <p class="text-xs text-center font-bold truncate text-gray-900" :title="anime.name">{{ anime.name }}</p>
+      <!-- Strength display next to cost -->
+      <div v-if="showStrength" class="flex justify-center items-center gap-2 mt-1">
+        <div class="flex items-center text-xs text-gray-600">
+          <span v-if="!strengthInfo.hasBonus" class="text-blue-600 font-bold">{{ strengthInfo.finalStrength }}</span>
+          <span v-else class="strength-with-bonus text-green-600 font-bold">
+            <span class="base-strength">{{ strengthInfo.baseStrength }}</span>
+            <span class="bonus-indicator">+{{ strengthInfo.bonus }}</span>
+          </span>
+          <span class="ml-1">强度</span>
+        </div>
+        <div v-if="anime.cost > 0" class="flex items-center text-xs text-gray-600">
+          <span v-if="!costInfo.hasModification" class="text-purple-600 font-bold">{{ costInfo.finalCost }}</span>
+          <span v-else class="cost-with-modification-inline text-green-600 font-bold">
+            <span class="original-cost-inline">{{ costInfo.baseCost }}</span>
+            <span class="final-cost-inline">{{ costInfo.finalCost }}</span>
+          </span>
+          <span class="ml-1">TP</span>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -122,5 +233,87 @@ function toggleFavorite(event: MouseEvent) {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 20;
+  transition: all 0.3s ease;
+}
+
+.cost-gem.cost-modified {
+  background: linear-gradient(45deg, #22c55e, #16a34a);
+  border-color: #dcfce7;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+  animation: pulse-glow 2s infinite;
+}
+
+.cost-with-modification {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+}
+
+.original-cost {
+  font-size: 14px;
+  text-decoration: line-through;
+  opacity: 0.7;
+  margin-bottom: -2px;
+}
+
+.final-cost {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 16px rgba(34, 197, 94, 0.6);
+  }
+}
+
+/* 强度加成显示样式 */
+.strength-with-bonus {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.base-strength {
+  color: #2563eb; /* blue-600 */
+}
+
+.bonus-indicator {
+  color: #16a34a; /* green-600 */
+  font-size: 10px;
+  background: rgba(34, 197, 94, 0.1);
+  padding: 1px 3px;
+  border-radius: 3px;
+  animation: glow-green 2s infinite;
+}
+
+/* 内联成本修改显示 */
+.cost-with-modification-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.original-cost-inline {
+  text-decoration: line-through;
+  opacity: 0.6;
+  font-size: 10px;
+}
+
+.final-cost-inline {
+  color: #16a34a; /* green-600 */
+}
+
+@keyframes glow-green {
+  0%, 100% {
+    background: rgba(34, 197, 94, 0.1);
+  }
+  50% {
+    background: rgba(34, 197, 94, 0.2);
+  }
 }
 </style>

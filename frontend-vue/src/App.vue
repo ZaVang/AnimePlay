@@ -1,16 +1,18 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import { RouterLink, RouterView } from 'vue-router';
-import { useUserStore } from './stores/userStore';
+import { useAuthStore } from './stores/modules/authStore';
+import { useEconomyStore } from './stores/modules/economyStore';
 import { useGameDataStore } from './stores/gameDataStore';
 
-const userStore = useUserStore();
+const authStore = useAuthStore();
+const economyStore = useEconomyStore();
 const gameDataStore = useGameDataStore();
 const usernameInput = ref('');
 
 async function handleLogin() {
   if (usernameInput.value) {
-    await userStore.login(usernameInput.value);
+    await authStore.login(usernameInput.value);
     usernameInput.value = '';
   }
 }
@@ -34,17 +36,17 @@ onMounted(() => {
 
                 <!-- 用户信息 / 登录区域 -->
                 <div class="flex items-center gap-3">
-                  <div v-if="userStore.isLoggedIn" class="flex items-center gap-4 text-sm">
+                  <div v-if="authStore.isLoggedIn" class="flex items-center gap-4 text-sm">
                       <div class="flex flex-col text-right">
-                        <span class="font-bold text-green-400">{{ userStore.currentUser }}</span>
-                        <span class="text-xs text-gray-400">Lv. {{ userStore.playerState.level }}</span>
+                        <span class="font-bold text-green-400">{{ authStore.currentUser }}</span>
+                        <span class="text-xs text-gray-400">Lv. {{ authStore.level }}</span>
                       </div>
                       <div class="h-8 w-px bg-gray-700"></div>
                       <div class="flex items-center gap-3 text-xs">
-                        <span>动画券: {{ userStore.playerState.animeGachaTickets }}</span>
-                        <span>角色券: {{ userStore.playerState.characterGachaTickets }}</span>
+                        <span>动画券: {{ economyStore.animeGachaTickets }}</span>
+                        <span>角色券: {{ economyStore.characterGachaTickets }}</span>
                       </div>
-                      <button @click="userStore.logout()" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg text-sm transition-colors">
+                      <button @click="authStore.logout()" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg text-sm transition-colors">
                           登出
                       </button>
                   </div>
@@ -71,9 +73,9 @@ onMounted(() => {
                 <li><RouterLink to="/" class="nav-link">主页</RouterLink></li>
                 <li><RouterLink to="/gacha" class="nav-link">抽卡系统</RouterLink></li>
                 <li><RouterLink to="/collections" class="nav-link">卡牌收藏</RouterLink></li>
+                <li><RouterLink to="/nurture" class="nav-link">角色养成</RouterLink></li>
                 <li><RouterLink to="/battle" class="nav-link">宅理论战</RouterLink></li>
                 <li><RouterLink to="/squad-battle" class="nav-link">小队战斗</RouterLink></li>
-                <li><RouterLink to="/nurture" class="nav-link">角色养成</RouterLink></li>
                 <li><RouterLink to="/settings" class="nav-link">设置</RouterLink></li>
             </ul>
         </nav>

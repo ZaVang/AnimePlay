@@ -38,6 +38,16 @@ const router = createRouter({
       path: '/settings',
       name: 'settings',
       component: () => import('../views/SettingsView.vue')
+    },
+    {
+      path: '/skill-test',
+      name: 'skillTest',
+      component: () => import('../views/SkillTestView.vue')
+    },
+    {
+      path: '/battle-replay',
+      name: 'battleReplay',
+      component: () => import('../views/BattleReplayView.vue')
     }
   ]
 })

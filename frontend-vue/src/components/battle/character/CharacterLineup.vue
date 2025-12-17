@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { usePlayerStore, useGameStore } from '@/stores/battle';
+import { useCollectionStore } from '@/stores/modules/collectionStore';
 import { SkillSystem } from '@/core/systems/SkillSystem';
 import CharacterItem from './CharacterItem.vue';
 import CharacterActionModal from './CharacterActionModal.vue';
 import type { Card, Skill } from '@/types';
 import CardDetailModal from '@/components/CardDetailModal.vue';
-import { useUserStore } from '@/stores/userStore';
 
 const props = defineProps<{
   playerId: 'playerA' | 'playerB';
@@ -14,7 +14,7 @@ const props = defineProps<{
 
 const playerStore = usePlayerStore();
 const gameStore = useGameStore();
-const userStore = useUserStore();
+const collectionStore = useCollectionStore();
 const player = computed(() => playerStore[props.playerId]);
 
 const selectedCharacter = ref<Card | null>(null);
@@ -87,7 +87,7 @@ function closeDetailModal() {
       v-if="detailCharacter"
       :card="detailCharacter"
       card-type="character"
-      :count="userStore.getCharacterCardCount(detailCharacter.id)"
+      :count="collectionStore.getCharacterCardCount(detailCharacter.id)"
       @close="closeDetailModal"
     />
   </div>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useUserStore } from '@/stores/userStore';
+import { useCollectionStore } from '@/stores/modules/collectionStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { Bar } from 'vue-chartjs';
@@ -13,11 +13,11 @@ const props = defineProps<{
   gachaType: 'anime' | 'character';
 }>();
 
-const userStore = useUserStore();
+const collectionStore = useCollectionStore();
 const gameDataStore = useGameDataStore();
 
 const historyWithDetails = computed(() => {
-    const sourceHistory = props.gachaType === 'anime' ? userStore.animeGachaHistory : userStore.characterGachaHistory;
+    const sourceHistory = props.gachaType === 'anime' ? collectionStore.animeGachaHistory : collectionStore.characterGachaHistory;
     const getCardById = props.gachaType === 'anime' ? gameDataStore.getAnimeCardById : gameDataStore.getCharacterCardById;
 
     return sourceHistory.map(item => {
@@ -119,7 +119,11 @@ function formatTime(timestamp: number) {
 
 <template>
   <div>
-    <h3 class="text-lg font-semibold mb-4">{{ gachaType === 'anime' ? '动画抽卡历史' : '角色抽卡历史' }} (总计: {{ historyWithDetails.length }}抽)</h3>
+    <h3 class="text-lg font-semibold mb-2">{{ gachaType === 'anime' ? '动画抽卡历史' : '角色抽卡历史' }} (总计: {{ historyWithDetails.length }}抽)</h3>
+    <p class="text-sm text-gray-600 mb-4">
+      <i class="fas fa-info-circle mr-1"></i>
+      仅显示最近500抽的历史记录和统计数据
+    </p>
     <div v-if="historyWithDetails.length > 0" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
       <!-- Chart -->
       <div class="relative h-96">

@@ -1,4 +1,5 @@
 import type { Skill } from './skill';
+import type { CardEffect } from './effects';
 
 export type Rarity = 'N' | 'R' | 'SR' | 'SSR' | 'HR' | 'UR';
 
@@ -17,11 +18,7 @@ export interface BaseCard {
 export interface AnimeCard extends BaseCard {
   cost: number; // TP cost to play the card
   effectDescription?: string; // Special effect text
-  effects?: Array<{
-    trigger: 'onPlay' | 'beforeResolve' | 'afterResolve';
-    effectId: string;
-    params?: Record<string, any>;
-  }>;
+  effects?: CardEffect[]; // Type-safe effects array
 }
 
 // Interface for Character cards with their skills
@@ -29,6 +26,14 @@ export interface CharacterCard extends BaseCard {
   activeSkillId: string;   // ID for the character's active skill
   passiveSkillId: string;  // ID for the character's passive aura
   anime_names?: string[];
+  skills?: Skill[];        // Character's available skills
+  battle_stats?: {         // Optional battle statistics
+    hp: number;
+    atk: number;
+    def: number;
+    sp: number;
+    spd: number;
+  };
 }
 
 // A union type for any card, useful for generic components

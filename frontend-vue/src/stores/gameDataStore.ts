@@ -3,8 +3,6 @@ import { ref, computed } from 'vue';
 import type { AnimeCard, CharacterCard } from '@/types/card';
 import type { Skill } from '@/types/skill';
 import { skillLibrary } from '@/skills'; // Corrected import path
-import { animeEffectsMap } from '@/data/animeEffectsMap';
-import { animeDefaultEffects } from '@/data/animeDefaultEffects';
 import { characterDefaultSkills } from '@/data/characterDefaultSkills';
 import { characterSkillsMap } from '@/data/characterSkillsMap';
 
@@ -61,12 +59,7 @@ export const useGameDataStore = defineStore('gameData', () => {
       };
 
       allAnimeCards.value = animeData.map((card: any) => {
-        const processed = processCardImagePath(card, 'anime');
-        const mappedEffects = animeEffectsMap[processed.id];
-        if (mappedEffects) return { ...processed, effects: mappedEffects };
-        // fallback to default effects by rarity if card has no explicit effects
-        const defaults = animeDefaultEffects[processed.rarity as keyof typeof animeDefaultEffects];
-        return defaults ? { ...processed, effects: defaults } : processed;
+        return processCardImagePath(card, 'anime');
       });
 
       if (characterData.characters) {

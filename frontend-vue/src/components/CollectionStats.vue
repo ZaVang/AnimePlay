@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useUserStore } from '@/stores/userStore';
+import { useCollectionStore } from '@/stores/modules/collectionStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
 
@@ -8,14 +8,14 @@ const props = defineProps<{
   type: 'anime' | 'character';
 }>();
 
-const userStore = useUserStore();
+const collectionStore = useCollectionStore();
 const gameDataStore = useGameDataStore();
 
 const itemType = computed(() => props.type === 'anime' ? '动画' : '角色');
 
 const collectionStats = computed(() => {
     const isAnime = props.type === 'anime';
-    const collection = isAnime ? userStore.animeCollection : userStore.characterCollection;
+    const collection = isAnime ? collectionStore.animeCollection : collectionStore.characterCollection;
     const allPossibleCards = isAnime ? gameDataStore.allAnimeCards : gameDataStore.allCharacterCards;
     const rarityConfig = isAnime ? GAME_CONFIG.animeSystem.rarityConfig : GAME_CONFIG.characterSystem.rarityConfig;
     
