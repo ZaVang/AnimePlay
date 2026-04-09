@@ -1,0 +1,2 @@
+- When overriding Tailwind theme.extend.fontFamily, wrap font names containing spaces (like 'Noto Sans SC') in extra double-quotes inside single-quotes to ensure valid CSS parsing.
+- [Vue] `v-else` and `v-else-if` MUST be immediate siblings of their corresponding `v-if`. Any intervening elements (including comment blocks or absolute positioned divs) will break the compiler.

@@ -2,7 +2,7 @@ import { useAuthStore } from '@/stores/modules/authStore';
 import { useEconomyStore } from '@/stores/modules/economyStore';
 import { useNurtureStore } from '@/stores/modules/nurtureStore';
 import type { CharacterCard } from '@/types/card';
-import type { CharacterNurtureData } from '@/stores/userStore';
+import type { CharacterNurtureData } from '@/types/store';
 
 export function useInteractionEffects(
   character: CharacterCard & { nurtureData: CharacterNurtureData }

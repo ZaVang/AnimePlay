@@ -3,7 +3,7 @@
  */
 
 import { usePlayerStore, useHistoryStore, useGameStore } from '@/stores/battle';
-import type { EffectContext } from '@/types/effects';
+import type { EffectContext, PlayerId } from '@/types/effects';
 import { systemRegistry } from '@/core/di/registry';
 
 export interface EffectHelpers {
@@ -11,32 +11,45 @@ export interface EffectHelpers {
   historyStore: ReturnType<typeof useHistoryStore>;
   gameStore: ReturnType<typeof useGameStore>;
   persistentSystem: ReturnType<typeof systemRegistry.getPersistentEffectSystem>;
+  interactionSystem: {
+    viewOpponentHand: (playerId: PlayerId, options: any) => Promise<void>;
+  };
   getOpponentId: (playerId: 'playerA' | 'playerB') => 'playerA' | 'playerB';
   getPlayerName: (playerId: 'playerA' | 'playerB') => string;
 }
 
 /**
  * Get common helper objects for skill effects
+ * Refactored to use the standardized SkillAPI from context
  */
 export function getEffectHelpers(ctx: EffectContext): EffectHelpers {
-  const playerStore = usePlayerStore();
-  const historyStore = useHistoryStore();
-  const gameStore = useGameStore();
-  const persistentSystem = systemRegistry.getPersistentEffectSystem();
-
-  const getOpponentId = (playerId: 'playerA' | 'playerB') => 
-    playerId === 'playerA' ? 'playerB' : 'playerA';
-
-  const getPlayerName = (playerId: 'playerA' | 'playerB') =>
-    playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
+  const api = ctx.api;
 
   return {
-    playerStore,
-    historyStore,
-    gameStore,
-    persistentSystem,
-    getOpponentId,
-    getPlayerName
+    // Legacy mapping to new API methods
+    playerStore: {
+      drawCards: (playerId: 'playerA' | 'playerB', count: number) => api.drawCards(playerId, count),
+      changeTp: (playerId: 'playerA' | 'playerB', amount: number) => api.changeTp(playerId, amount),
+      discardCardFromHand: (playerId: 'playerA' | 'playerB', cardId: string) => api.discardCard(playerId, cardId),
+    } as any,
+    historyStore: {
+      addLog: (msg: string, type?: string) => api.addLog(msg, type as any),
+    } as any,
+    gameStore: {
+      addNotification: (msg: string, type?: string) => api.addNotification(msg, type as any),
+    } as any,
+    persistentSystem: {
+      addTemporaryBonus: (params: any) => api.addTemporaryBonus({ ...params, bonusType: 'strength' }),
+      addCardTypeStrengthBonus: (pId: any, type: string, amt: number, dur: number) => 
+        api.addTemporaryBonus({ playerId: pId, cardType: type, amount: amt, duration: dur, bonusType: 'strength', description: '类型强化' }),
+      addCardTypeCostReduction: (pId: any, type: string, amt: number, dur: number) => 
+        api.addTemporaryBonus({ playerId: pId, cardType: type, amount: amt, duration: dur, bonusType: 'cost', description: '费用减免' }),
+    } as any,
+    interactionSystem: {
+      viewOpponentHand: (pId: PlayerId, opts: any) => api.viewOpponentHand(pId, opts),
+    },
+    getOpponentId: (playerId: 'playerA' | 'playerB') => api.getOpponentId(playerId),
+    getPlayerName: (playerId: 'playerA' | 'playerB') => api.getPlayerName(playerId)
   };
 }
 

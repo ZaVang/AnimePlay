@@ -10,6 +10,8 @@ export type CombatRole = 'attacker' | 'defender' | 'supporter';
 // 玩家ID类型
 export type PlayerId = 'playerA' | 'playerB';
 
+import type { SkillAPI } from './skill-api';
+
 // 效果上下文接口
 export interface EffectContext {
   event: BattleEvent;
@@ -18,6 +20,7 @@ export interface EffectContext {
   card?: AnimeCard;
   character?: CharacterCard;
   clash?: ClashInfo;
+  api: SkillAPI;
   // 修改：简化为单参数版本，在 beforeResolve 事件中提供
   addStrengthBonus?: (amount: number) => void;
 }

@@ -11,7 +11,7 @@ const viewingStore = useViewingStore();
 const gameDataStore = useGameDataStore();
 
 // 使用配置中的观看奖励
-const VIEWING_REWARDS = GAME_CONFIG.viewingSystem.viewingRewards;
+const VIEWING_REWARDS = GAME_CONFIG.gameplay.viewingQueue.rewards;
 
 const isModalOpen = ref(false);
 const selectedSlot = ref(0);
@@ -53,45 +53,75 @@ function getRemainingTime(startTime: number, durationMinutes: number) {
 </script>
 
 <template>
-  <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
-    <h2 class="text-2xl font-bold text-white mb-4">观看队列</h2>
+  <div class="bg-industrial-800 border border-industrial-700 h-full flex flex-col clip-chamfer datapad-reveal">
+    <div class="tactical-panel-header">
+      <span class="flex items-center gap-2">
+        <span class="w-2 h-2 bg-clinical-warning animate-pulse"></span>
+        数据缓冲模块
+      </span>
+      <span class="opacity-30">安全协议：AES-256</span>
+    </div>
 
-    <div v-if="authStore.isLoggedIn" class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div v-for="(slot, index) in viewingStore.viewingQueue" :key="index">
+    <div v-if="authStore.isLoggedIn" class="p-6 grid grid-cols-1 md:grid-cols-3 gap-6 font-sans">
+      <div v-for="(slot, index) in viewingStore.viewingQueue" :key="index" class="relative group">
         
-        <!-- Empty Slot -->
+        <!-- Empty Slot (Tactical Mount Point) -->
         <div v-if="!slot" 
-             class="h-48 flex items-center justify-center bg-gray-700/50 rounded-lg border-2 border-dashed border-gray-600 hover:border-green-500 hover:bg-gray-700 transition cursor-pointer"
+             class="h-44 flex flex-col items-center justify-center bg-industrial-900/50 border border-dashed border-industrial-600 hover:border-clinical-warning hover:bg-industrial-800 transition-all cursor-pointer group clip-chamfer-sm"
              @click="openModal(index)">
-          <div class="text-center text-gray-400">
-             <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
-             <span class="font-bold">添加动画</span>
+          <div class="text-center text-industrial-600 group-hover:text-clinical-warning">
+             <div class="text-2xl mb-1">⎔</div>
+             <span class="text-xs font-bold tracking-widest text-white">挂载数据源</span>
           </div>
+          <!-- Corner decorations -->
+          <div class="absolute top-0 left-0 w-2 h-2 border-t border-l border-industrial-500 opacity-30"></div>
+          <div class="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-industrial-500 opacity-30"></div>
         </div>
 
-        <!-- Occupied Slot -->
-        <div v-else class="h-48 flex flex-col items-center justify-center bg-gray-700 rounded-lg p-2 text-center">
+        <!-- Occupied Slot (Active Download) -->
+        <div v-else class="h-44 flex flex-col bg-industrial-900 border border-industrial-700 p-3 relative clip-chamfer-sm overflow-hidden text-white">
+          <!-- Background Scanline effect for active slots -->
+          <div class="absolute inset-0 bg-scanline opacity-5 pointer-events-none"></div>
+
           <template v-if="gameDataStore.getAnimeCardById(slot.animeId)">
-            <img :src="gameDataStore.getAnimeCardById(slot.animeId)?.image_path" class="w-24 aspect-[3/2] object-cover rounded-md mb-2">
-            <p class="font-bold text-sm truncate w-full">{{ gameDataStore.getAnimeCardById(slot.animeId)?.name }}</p>
-            
-            <div v-if="now < (slot.startTime + VIEWING_REWARDS[gameDataStore.getAnimeCardById(slot.animeId)!.rarity].time * 60 * 1000)">
-              <p class="text-xs text-gray-400">
-                剩余: {{ getRemainingTime(slot.startTime, VIEWING_REWARDS[gameDataStore.getAnimeCardById(slot.animeId)!.rarity].time) }}
-              </p>
+            <div class="flex gap-3 mb-3">
+              <div class="w-20 aspect-video bg-industrial-800 border border-industrial-700 overflow-hidden shrink-0">
+                <img :src="gameDataStore.getAnimeCardById(slot.animeId)?.image_path" class="w-full h-full object-cover">
+              </div>
+              <div class="overflow-hidden">
+                <p class="text-[12px] font-black text-white truncate">{{ gameDataStore.getAnimeCardById(slot.animeId)?.name }}</p>
+                <p class="text-[10px] text-clinical-blue mt-0.5">任务槽位_{{ String(index + 1).padStart(2, '0') }}</p>
+              </div>
             </div>
-            <div v-else>
-              <button @click="viewingStore.collectFromViewingQueue(index)" class="mt-2 bg-green-500 text-white font-bold py-1 px-3 rounded-lg text-xs hover:bg-green-600">
-                收获
-              </button>
+            
+            <div class="mt-auto space-y-2">
+              <div v-if="now < (slot.startTime + VIEWING_REWARDS[gameDataStore.getAnimeCardById(slot.animeId)!.rarity].time * 60 * 1000)" class="space-y-1">
+                <div class="flex justify-between text-[10px] text-industrial-300">
+                  <span class="font-bold">同步进度：{{ (Math.random() * 100).toFixed(1) }}%</span>
+                  <span>{{ getRemainingTime(slot.startTime, VIEWING_REWARDS[gameDataStore.getAnimeCardById(slot.animeId)!.rarity].time) }}</span>
+                </div>
+                <div class="h-1.5 bg-industrial-800 overflow-hidden flex gap-0.5">
+                  <div class="h-full bg-clinical-warning animate-pulse" :style="{ width: '60%' }"></div>
+                  <div class="h-full bg-industrial-700 flex-1"></div>
+                </div>
+              </div>
+              <div v-else>
+                <button @click="viewingStore.collectFromViewingQueue(index)" 
+                        class="w-full bg-clinical-warning text-industrial-900 font-black py-2.5 text-xs tracking-widest hover:bg-white transition-colors clip-chamfer-sm">
+                  一键恢复数据
+                </button>
+              </div>
             </div>
           </template>
         </div>
 
       </div>
     </div>
-     <p v-else class="text-gray-500 text-center py-4">请先登录</p>
+     <div v-else class="flex-1 flex items-center justify-center py-12 opacity-30 font-sans">
+       <p class="text-sm tracking-widest text-white">请先同步身份标识</p>
+     </div>
   </div>
   
   <AddToQueueModal v-if="isModalOpen" :slotIndex="selectedSlot" @close="isModalOpen = false" @select="handleCardSelected" />
 </template>
+

@@ -2,34 +2,43 @@
 import { ref } from 'vue';
 import DeckList from './DeckList.vue';
 import DeckEditor from './DeckEditor.vue';
+import { useDeckEditor } from '@/composables/useDeckEditor';
 
 type Mode = 'list' | 'editor';
 
-const mode = ref<Mode>('list');
-const deckToEdit = ref<string | null>(null);
+const {
+  isEditing,
+  currentDeckName,
+  currentDeck,
+  animeIdInDeck,
+  characterIdInDeck,
+  addToDeck,
+  removeFromDeck,
+  saveDeck,
+  startEditing,
+  stopEditing
+} = useDeckEditor();
 
 function handleNewDeck() {
-  deckToEdit.value = null;
-  mode.value = 'editor';
+  startEditing(null);
 }
 
 function handleEditDeck(deckName: string) {
-  deckToEdit.value = deckName;
-  mode.value = 'editor';
+  startEditing(deckName);
 }
 
 function backToList() {
-  mode.value = 'list';
+  stopEditing();
 }
 </script>
 
 <template>
   <div>
-    <div v-if="mode === 'list'">
+    <div v-if="!isEditing">
       <DeckList @newDeck="handleNewDeck" @editDeck="handleEditDeck" />
     </div>
     <div v-else>
-      <DeckEditor :deckName="deckToEdit" @back="backToList" />
+      <DeckEditor :deckName="currentDeckName" @back="backToList" />
     </div>
   </div>
 </template>

@@ -2,7 +2,7 @@
 import { useNurtureStore } from '@/stores/modules/nurtureStore';
 import { ref, computed, onMounted, nextTick } from 'vue';
 import type { CharacterCard } from '@/types/card';
-import type { CharacterNurtureData } from '@/stores/userStore';
+import type { CharacterNurtureData } from '@/types/store';
 
 const props = defineProps<{
   character: CharacterCard & { nurtureData: CharacterNurtureData };

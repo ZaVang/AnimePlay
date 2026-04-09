@@ -2,7 +2,7 @@
 import { useEconomyStore } from '@/stores/modules/economyStore';
 import { ref } from 'vue';
 import type { CharacterCard } from '@/types/card';
-import type { CharacterNurtureData } from '@/stores/userStore';
+import type { CharacterNurtureData } from '@/types/store';
 import { useInteractionData } from '@/composables/useInteractionData';
 
 const props = defineProps<{

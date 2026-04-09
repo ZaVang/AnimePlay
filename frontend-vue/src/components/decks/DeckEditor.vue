@@ -1,16 +1,14 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
-import type { Deck } from '@/stores/userStore';
-import { useDeckStore } from '@/stores/modules/deckStore';
+import { ref } from 'vue';
+import type { Card } from '@/types/card';
+import { useDeckEditor } from '@/composables/useDeckEditor';
 import { useCollectionStore } from '@/stores/modules/collectionStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
-import type { Card, Rarity, AnimeCard as AnimeCardType, CharacterCard as CharacterCardType } from '@/types/card';
-import AnimeCard from '@/components/AnimeCard.vue';
-import CharacterCard from '@/components/CharacterCard.vue';
+
+// Components
+import DeckCollectionPanel from './DeckCollectionPanel.vue';
+import DeckActivePanel from './DeckActivePanel.vue';
 import CardDetailModal from '@/components/CardDetailModal.vue';
-import VirtualGrid from '@/components/VirtualGrid.vue';
-import { GAME_CONFIG } from '@/config/gameConfig';
-import '@/utils/deckEditorTest'; // 导入测试工具
 
 const props = defineProps<{
   deckName: string | null;
@@ -18,446 +16,106 @@ const props = defineProps<{
 
 const emit = defineEmits(['back']);
 
-const deckStore = useDeckStore();
+// --- LOGIC SOURCE ---
+const {
+  currentDeckName,
+  currentDeck,
+  animeIdInDeck,
+  characterIdInDeck,
+  addToDeck,
+  removeFromDeck,
+  saveDeck,
+  stopEditing
+} = useDeckEditor();
+
 const collectionStore = useCollectionStore();
 const gameDataStore = useGameDataStore();
 
-function generateNewDeckName(): string {
-  let defaultName = '新卡组';
-  let counter = 2;
-  const existingNames = Object.keys(deckStore.savedDecks);
-  while (existingNames.includes(defaultName)) {
-    defaultName = `新卡组 ${counter}`;
-    counter++;
-  }
-  return defaultName;
-}
-
-// --- STATE ---
-const newDeckName = ref(props.deckName || generateNewDeckName());
-const currentDeck = ref<Omit<Deck, 'name'>>({
-  anime: [],
-  character: [],
-  cover: null,
-  createdAt: new Date().toISOString(),
-  version: 2,
-});
-
-const collectionTab = ref<'anime' | 'character'>('anime');
-const rarityOrder: Rarity[] = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
-const animeFilters = ref({ name: '', rarity: '', tag: '' });
-const characterFilters = ref({ name: '', rarity: '' });
-
-// Card Detail Modal State
+// --- UI STATE (ORCHESTRATION) ---
 const selectedCard = ref<Card | null>(null);
 const selectedCardType = ref<'anime' | 'character'>('anime');
-
-// 虚拟化配置 - 确保卡片名字完全可见
-const DECK_VIRTUAL_CONFIG = {
-  itemHeight: 150,      // 增加卡片高度，确保名字完全显示
-  containerHeight: 550, // 收藏区域高度
-  minItemWidth: 90,     // 紧凑的最小宽度
-  gap: 10               // 间隙
-};
-
-// 虚拟化阈值 - 提高阈值，减少虚拟化触发频率
-const DECK_VIRTUALIZATION_THRESHOLD = 80;
-
-// 虚拟化开关
-const enableVirtualization = ref(true);
-
-// --- LIFECYCLE ---
-if (props.deckName) {
-  const existingDeck = deckStore.savedDecks[props.deckName];
-  if (existingDeck) {
-    newDeckName.value = existingDeck.name;
-    currentDeck.value = JSON.parse(JSON.stringify(existingDeck));
-  } else {
-    console.warn(`Deck with name "${props.deckName}" not found. Starting with a new deck.`);
-    newDeckName.value = props.deckName;
-  }
-}
-
-// --- COMPUTED: Filtered Collections ---
-const allAnimeTags = computed(() => {
-    const tags = new Set<string>();
-    gameDataStore.allAnimeCards.forEach(card => {
-        card.synergy_tags?.forEach(tag => tags.add(tag));
-    });
-    return Array.from(tags).sort();
-});
-
-const ownedAnimeCards = computed(() => {
-  let cards = Array.from(collectionStore.animeCollection.entries()).map(([id, data]) => {
-    const card = gameDataStore.getAnimeCardById(id);
-    return card ? { ...card, count: data.count } : null;
-  }).filter(Boolean) as (Card & { count: number })[];
-  
-  if (animeFilters.value.name) {
-      cards = cards.filter(card => card.name.toLowerCase().includes(animeFilters.value.name.toLowerCase()));
-  }
-  if (animeFilters.value.rarity) {
-      cards = cards.filter(card => card.rarity === animeFilters.value.rarity);
-  }
-  if (animeFilters.value.tag) {
-      cards = cards.filter(card => card.synergy_tags?.includes(animeFilters.value.tag));
-  }
-  
-  // Sort by rarity
-  return cards.sort((a, b) => rarityOrder.indexOf(a.rarity) - rarityOrder.indexOf(b.rarity));
-});
-
-// 判断是否需要虚拟化
-const shouldVirtualizeAnimeCollection = computed(() => {
-  return enableVirtualization.value && ownedAnimeCards.value.length > DECK_VIRTUALIZATION_THRESHOLD;
-});
-
-const shouldVirtualizeCharacterCollection = computed(() => {
-  return enableVirtualization.value && ownedCharacterCards.value.length > DECK_VIRTUALIZATION_THRESHOLD;
-});
-
-// 性能监控（开发环境）
-if (import.meta.env.DEV) {
-  import('vue').then(({ watch }) => {
-    watch(
-      () => ownedAnimeCards.value.length,
-      (newCount, oldCount) => {
-        console.log(`🔧 [DeckEditor] 动画卡收藏数量: ${oldCount} → ${newCount}, 虚拟化: ${newCount > DECK_VIRTUALIZATION_THRESHOLD ? '✅' : '❌'}`);
-      }
-    );
-    
-    watch(
-      () => ownedCharacterCards.value.length,
-      (newCount, oldCount) => {
-        console.log(`🔧 [DeckEditor] 角色卡收藏数量: ${oldCount} → ${newCount}, 虚拟化: ${newCount > DECK_VIRTUALIZATION_THRESHOLD ? '✅' : '❌'}`);
-      }
-    );
-  });
-}
-
-const ownedCharacterCards = computed(() => {
-  let cards = Array.from(collectionStore.characterCollection.entries()).map(([id, data]) => {
-    const card = gameDataStore.getCharacterCardById(id);
-    return card ? { ...card, count: data.count } : null;
-  }).filter(Boolean) as (Card & { count: number })[];
-
-  if (characterFilters.value.name) {
-      cards = cards.filter(card => card.name.toLowerCase().includes(characterFilters.value.name.toLowerCase()));
-  }
-  if (characterFilters.value.rarity) {
-      cards = cards.filter(card => card.rarity === characterFilters.value.rarity);
-  }
-  
-  // Sort by rarity
-  return cards.sort((a, b) => rarityOrder.indexOf(a.rarity) - rarityOrder.indexOf(b.rarity));
-});
-
-// --- COMPUTED: Cards in Deck ---
-const animeInDeck = computed(() => 
-  currentDeck.value.anime.map(id => gameDataStore.getAnimeCardById(id)).filter(Boolean) as Card[]
-);
-const characterInDeck = computed(() => 
-  currentDeck.value.character.map(id => gameDataStore.getCharacterCardById(id)).filter(Boolean) as Card[]
-);
-
-const animeIdInDeck = computed(() => new Set(currentDeck.value.anime));
-const characterIdInDeck = computed(() => new Set(currentDeck.value.character));
-
-
-// --- ACTIONS ---
-function addToDeck(card: Card, type: 'anime' | 'character') {
-  const deckCards = currentDeck.value[type];
-  const maxSize = type === 'anime' ? GAME_CONFIG.deckBuilding.AnimeMaxNum : GAME_CONFIG.deckBuilding.CharacterMaxNum;
-  if (deckCards.includes(card.id)) return;
-  if (deckCards.length >= maxSize) {
-    alert(`${type === 'anime' ? '动画' : '角色'}卡已达上限！`);
-    return;
-  }
-  deckCards.push(card.id);
-  
-  if (type === 'character') {
-    if (currentDeck.value.cover?.type !== 'character') {
-      currentDeck.value.cover = { id: card.id, type: 'character' };
-    }
-  } else { // type is 'anime'
-    if (!currentDeck.value.cover) {
-      currentDeck.value.cover = { id: card.id, type: 'anime' };
-    }
-  }
-}
-
-function removeFromDeck(cardId: number, type: 'anime' | 'character') {
-  const deckCards = currentDeck.value[type];
-  const index = deckCards.indexOf(cardId);
-  if (index > -1) {
-    deckCards.splice(index, 1);
-
-    if (currentDeck.value.cover?.id === cardId) {
-      const firstChar = characterInDeck.value[0];
-      if (firstChar) {
-        currentDeck.value.cover = { id: firstChar.id, type: 'character' };
-      } else {
-        const firstAnime = animeInDeck.value[0];
-        currentDeck.value.cover = firstAnime ? { id: firstAnime.id, type: 'anime' } : null;
-      }
-    }
-  }
-}
 
 function showCardDetails(card: Card, type: 'anime' | 'character') {
     selectedCard.value = card;
     selectedCardType.value = type;
 }
 
-function closeDetailModal() {
-    selectedCard.value = null;
+async function handleSave() {
+  try {
+    await saveDeck();
+    alert('卡组已保存！');
+    emit('back');
+  } catch (e: any) {
+    alert(e.message || '保存失败');
+  }
 }
 
-function handleImageError(event: Event) {
-    (event.target as HTMLImageElement).src = 'https://placehold.co/100x100/e2e8f0/334155?text=...';
-}
+// Helper for UI to get card objects for the active panel
+const animeInDeckObjects = ref<Card[]>([]);
+const characterInDeckObjects = ref<Card[]>([]);
 
-async function handleSaveDeck() {
-  if (!newDeckName.value.trim()) {
-    alert('请输入卡组名称！');
-    return;
-  }
-  
-  const deckToSave: Deck = {
-    ...currentDeck.value,
-    name: newDeckName.value.trim(),
-    createdAt: new Date().toISOString(),
-  };
-
-  const isRenaming = props.deckName && props.deckName !== deckToSave.name;
-  const isNewDeck = !props.deckName;
-
-  if (isRenaming) {
-      await deckStore.deleteDeck(props.deckName!);
-  }
-
-  // Prevent overwriting a different deck if the user renames this one to an existing name
-  if ((isNewDeck || isRenaming) && deckStore.savedDecks[deckToSave.name]) {
-      if (!confirm(`名为 "${deckToSave.name}" 的卡组已存在。要覆盖它吗？`)) {
-          // If the user cancelled the overwrite of an existing deck during a rename,
-          // we might need to restore the old deck if we deleted it.
-          // For simplicity, we'll just stop here. A better implementation would handle this more gracefully.
-          if(isRenaming) {
-            // This is tricky, for now we just alert user.
-            alert("请选择一个新的卡组名。");
-          }
-          return;
-      }
-  }
-
-  await deckStore.saveDeck(deckToSave);
-  alert('卡组已保存！');
-  emit('back');
-}
+// Sync card objects based on IDs in deck
+import { watchEffect } from 'vue';
+watchEffect(() => {
+  animeInDeckObjects.value = currentDeck.value.anime
+    .map(id => gameDataStore.getAnimeCardById(id))
+    .filter(Boolean) as Card[];
+    
+  characterInDeckObjects.value = currentDeck.value.character
+    .map(id => gameDataStore.getCharacterCardById(id))
+    .filter(Boolean) as Card[];
+});
 </script>
 
 <template>
-  <div>
-      <div class="deck-editor-grid">
-        <!-- Left Column: Collection -->
-        <div class="collection-pane">
-           <div class="p-4 border-b">
-             <div class="flex border-b mb-4">
-                <button @click="collectionTab = 'anime'" :class="{'text-indigo-600 border-indigo-600': collectionTab === 'anime'}" class="flex-1 py-2 text-center font-semibold border-b-2">动画收藏</button>
-                <button @click="collectionTab = 'character'" :class="{'text-indigo-600 border-indigo-600': collectionTab === 'character'}" class="flex-1 py-2 text-center font-semibold border-b-2">角色收藏</button>
-             </div>
-             
-             <!-- Filters -->
-             <div v-if="collectionTab === 'anime'" class="space-y-2">
-                <input type="text" v-model="animeFilters.name" placeholder="搜索动画名称..." class="w-full p-2 border rounded">
-                <div class="flex gap-2">
-                    <select v-model="animeFilters.rarity" class="w-full p-2 border rounded bg-white">
-                        <option value="">所有稀有度</option>
-                        <option v-for="r in rarityOrder" :key="r" :value="r">{{ r }}</option>
-                    </select>
-                    <select v-model="animeFilters.tag" class="w-full p-2 border rounded bg-white">
-                        <option value="">所有标签</option>
-                        <option v-for="tag in allAnimeTags" :key="tag" :value="tag">{{ tag }}</option>
-                    </select>
-                </div>
-                <label class="flex items-center space-x-2 text-gray-700 text-sm">
-                    <input type="checkbox" v-model="enableVirtualization" class="rounded">
-                    <span>启用虚拟化 (>{{ DECK_VIRTUALIZATION_THRESHOLD }}张)</span>
-                </label>
-             </div>
-             <div v-if="collectionTab === 'character'" class="space-y-2">
-                <input type="text" v-model="characterFilters.name" placeholder="搜索角色名称..." class="w-full p-2 border rounded">
-                <select v-model="characterFilters.rarity" class="w-full p-2 border rounded bg-white">
-                    <option value="">所有稀有度</option>
-                    <option v-for="r in rarityOrder" :key="r" :value="r">{{ r }}</option>
-                </select>
-                <label class="flex items-center space-x-2 text-gray-700 text-sm">
-                    <input type="checkbox" v-model="enableVirtualization" class="rounded">
-                    <span>启用虚拟化 (>{{ DECK_VIRTUALIZATION_THRESHOLD }}张)</span>
-                </label>
-             </div>
-
-           </div>
-           <div class="p-4 overflow-y-auto">
-              <!-- 动画卡收藏区域 -->
-              <div v-if="collectionTab === 'anime'">
-                <!-- 虚拟化版本 -->
-                <VirtualGrid
-                  v-if="shouldVirtualizeAnimeCollection"
-                  :items="ownedAnimeCards"
-                  :item-height="DECK_VIRTUAL_CONFIG.itemHeight"
-                  :container-height="DECK_VIRTUAL_CONFIG.containerHeight"
-                  :min-item-width="DECK_VIRTUAL_CONFIG.minItemWidth"
-                  :gap="DECK_VIRTUAL_CONFIG.gap"
-                  @item-click="addToDeck($event, 'anime')"
-                >
-                  <template #default="{ item }">
-                    <AnimeCard 
-                      :anime="item as AnimeCardType & { count: number }" 
-                      :count="item.count"
-                      :is-in-deck="animeIdInDeck.has(item.id)"
-                      :show-cost="true"
-                      @contextmenu.prevent="showCardDetails(item, 'anime')"
-                    />
-                  </template>
-                </VirtualGrid>
-                <!-- 传统版本 -->
-                <div v-else class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
-                  <AnimeCard v-for="card in ownedAnimeCards" :key="card.id" 
-                      :anime="card as AnimeCardType & { count: number }" 
-                      :count="card.count"
-                      :is-in-deck="animeIdInDeck.has(card.id)"
-                      :show-cost="true"
-                      @click="addToDeck(card, 'anime')"
-                      @contextmenu.prevent="showCardDetails(card, 'anime')"
-                  />
-                </div>
-              </div>
-
-              <!-- 角色卡收藏区域 -->
-              <div v-if="collectionTab === 'character'">
-                <!-- 虚拟化版本 -->
-                <VirtualGrid
-                  v-if="shouldVirtualizeCharacterCollection"
-                  :items="ownedCharacterCards"
-                  :item-height="DECK_VIRTUAL_CONFIG.itemHeight"
-                  :container-height="DECK_VIRTUAL_CONFIG.containerHeight"
-                  :min-item-width="DECK_VIRTUAL_CONFIG.minItemWidth"
-                  :gap="DECK_VIRTUAL_CONFIG.gap"
-                  @item-click="addToDeck($event, 'character')"
-                >
-                  <template #default="{ item }">
-                    <CharacterCard 
-                      :character="item as CharacterCardType & { count: number }" 
-                      :count="item.count"
-                      :is-in-deck="characterIdInDeck.has(item.id)"
-                      @contextmenu.prevent="showCardDetails(item, 'character')"
-                    />
-                  </template>
-                </VirtualGrid>
-                <!-- 传统版本 -->
-                <div v-else class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
-                  <CharacterCard v-for="card in ownedCharacterCards" :key="card.id" 
-                      :character="card as CharacterCardType & { count: number }" 
-                      :count="card.count"
-                      :is-in-deck="characterIdInDeck.has(card.id)"
-                      @click="addToDeck(card, 'character')"
-                      @contextmenu.prevent="showCardDetails(card, 'character')"
-                  />
-                </div>
-              </div>
-           </div>
-        </div>
-
-        <!-- Right Column: Deck -->
-        <div class="deck-pane">
-          <div class="deck-header">
-            <input type="text" v-model="newDeckName" class="deck-name-input" placeholder="输入卡组名称">
-            <div class="deck-actions">
-              <button @click="$emit('back')" class="btn-secondary">返回</button>
-              <button @click="handleSaveDeck" class="btn-primary">保存</button>
-            </div>
-          </div>
-          <div class="deck-stats">
-             <p>动画: {{ currentDeck.anime.length }} / {{ GAME_CONFIG.deckBuilding.AnimeMaxNum }}</p>
-             <p>角色: {{ currentDeck.character.length }} / {{ GAME_CONFIG.deckBuilding.CharacterMaxNum }}</p>
-          </div>
-          <div class="deck-content">
-        <h4 class="font-bold mb-2">动画卡 ({{ animeInDeck.length }}/{{ GAME_CONFIG.deckBuilding.AnimeMaxNum }})</h4>
-        <div class="deck-card-list">
-          <div v-for="card in animeInDeck" :key="card.id" @click="removeFromDeck(card.id, 'anime')"
-               class="flex items-center p-1 rounded hover:bg-red-100 cursor-pointer text-sm gap-2">
-            <img :src="card.image_path" class="w-8 h-6 object-cover rounded-sm flex-shrink-0" @error="handleImageError">
-            <span class="font-bold w-6">{{ card.rarity }}</span>
-            <span class="truncate flex-1">{{ card.name }}</span>
-          </div>
-           <p v-if="animeInDeck.length === 0" class="text-xs text-gray-400 py-4 text-center">从左侧点击添加</p>
-        </div>
-        <h4 class="font-bold mt-4 mb-2">角色卡 ({{ characterInDeck.length }}/{{ GAME_CONFIG.deckBuilding.CharacterMaxNum }})</h4>
-        <div class="deck-card-list">
-           <div v-for="card in characterInDeck" :key="card.id" @click="removeFromDeck(card.id, 'character')"
-               class="flex items-center p-1 rounded hover:bg-red-100 cursor-pointer text-sm gap-2">
-            <img :src="card.image_path" class="w-6 h-8 object-cover rounded-sm flex-shrink-0" @error="handleImageError">
-            <span class="font-bold w-6">{{ card.rarity }}</span>
-            <span class="truncate flex-1">{{ card.name }}</span>
-          </div>
-          <p v-if="characterInDeck.length === 0" class="text-xs text-gray-400 py-4 text-center">从左侧点击添加</p>
-        </div>
-      </div>
-        </div>
-      </div>
-    
-      <!-- Card Detail Modal -->
-      <CardDetailModal
-          v-if="selectedCard"
-          :card="selectedCard"
-          :card-type="selectedCardType"
-          :count="selectedCardType === 'anime' ? collectionStore.getAnimeCardCount(selectedCard.id) : collectionStore.getCharacterCardCount(selectedCard.id)"
-          @close="closeDetailModal"
+  <div class="deck-editor-container">
+    <div class="deck-editor-layout">
+      <!-- Left: Collection (Stateless UI) -->
+      <DeckCollectionPanel
+        :anime-id-in-deck="animeIdInDeck"
+        :character-id-in-deck="characterIdInDeck"
+        @add-to-deck="addToDeck"
+        @show-details="showCardDetails"
+        class="flex-1"
       />
+
+      <!-- Right: Active Deck (Stateless UI) -->
+      <DeckActivePanel
+        v-model:deck-name="currentDeckName"
+        :anime-in-deck="animeInDeckObjects"
+        :character-in-deck="characterInDeckObjects"
+        @remove-from-deck="removeFromDeck"
+        @save="handleSave"
+        @back="$emit('back')"
+        class="w-[380px]"
+      />
+    </div>
+    
+    <!-- Modals -->
+    <CardDetailModal
+        v-if="selectedCard"
+        :card="selectedCard"
+        :card-type="selectedCardType"
+        :count="selectedCardType === 'anime' ? collectionStore.getAnimeCardCount(selectedCard.id) : collectionStore.getCharacterCardCount(selectedCard.id)"
+        @close="selectedCard = null"
+    />
   </div>
 </template>
 
 <style scoped>
-.deck-editor-grid {
-  display: grid;
-  grid-template-columns: 1fr 350px;
-  gap: 1rem;
-  height: 80vh;
+.deck-editor-container {
+  @apply h-[85vh] overflow-hidden;
 }
-.collection-pane, .deck-pane {
-  @apply bg-white rounded-lg shadow-sm border;
-  display: flex;
-  flex-direction: column;
+
+.deck-editor-layout {
+  @apply flex gap-4 h-full;
 }
-.collection-pane {
-  overflow-y: hidden; /* Parent controls scroll */
+
+/* Custom transitions for the editor layout */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease;
 }
-.deck-pane {
-  overflow-y: hidden;
-}
-.deck-header {
-  @apply p-4 border-b flex items-center gap-4;
-}
-.deck-name-input {
-  @apply text-xl font-bold p-2 border-b-2 border-transparent focus:border-indigo-500 outline-none w-full bg-transparent;
-}
-.deck-actions {
-  @apply flex-shrink-0 flex gap-2;
-}
-.btn-primary {
-  @apply bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700;
-}
-.btn-secondary {
-  @apply bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-300;
-}
-.deck-stats {
-  @apply p-2 border-b text-sm text-gray-600 flex justify-around;
-}
-.deck-content {
-  @apply p-4 overflow-y-auto flex-1;
-}
-.deck-card-list {
-  @apply space-y-1;
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
 }
 </style>

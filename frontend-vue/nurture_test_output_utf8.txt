@@ -1,0 +1,86 @@
+﻿
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90mD:/work/AnimePlay/frontend-vue[39m
+
+ [32m✓[39m src/core/calculation/__tests__/nurture_logic.test.ts[2m > [22mNurtureCalculator: growth & Balance logic[2m > [22mExperience Curve[2m > [22mshould calculate correct EXP for levels
+ [32m✓[39m src/core/calculation/__tests__/nurture_logic.test.ts[2m > [22mNurtureCalculator: growth & Balance logic[2m > [22mExperience Curve[2m > [22mshould calculate correct level from total exp
+ [32m✓[39m src/core/calculation/__tests__/nurture_logic.test.ts[2m > [22mNurtureCalculator: growth & Balance logic[2m > [22mExperience Curve[2m > [22mshould respect max level cap
+ [32m✓[39m src/core/calculation/__tests__/nurture_logic.test.ts[2m > [22mNurtureCalculator: growth & Balance logic[2m > [22mExperience Curve[2m > [22mshould calculate level progress correctly
+ [31m×[39m src/core/calculation/__tests__/nurture_logic.test.ts[2m > [22mNurtureCalculator: growth & Balance logic[2m > [22mAttribute Distribution (The "Balance" Test)[2m > [22mshould always distribute points within [10%, 60%] range
+[31m   → expected 8 to be greater than or equal to 10[39m
+ [32m✓[39m src/core/calculation/__tests__/nurture_logic.test.ts[2m > [22mNurtureCalculator: growth & Balance logic[2m > [22mBattle Enhancements[2m > [22mshould calculate enhanced stats correctly with rounding
+
+node.exe : 
+[31m⎯⎯⎯⎯⎯⎯⎯[1m[7m 
+Failed Tests 1 
+[27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: ([3  
+  1m⎯⎯⎯⎯⎯⎯⎯[1...22m⎯⎯⎯⎯   
+ ⎯⎯⎯[39m:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+
+[31m[1m[7m FAIL 
+[27m[22m[39m src/core/ca
+lculation/__tests__/nurture
+_logic.test.ts[2m > 
+[22mNurtureCalculator: 
+growth & Balance logic[2m 
+> [22mAttribute 
+Distribution (The 
+"Balance" Test)[2m > 
+[22mshould always 
+distribute points within 
+[10%, 60%] range
+[31m[1mAssertionError[22
+m: expected 8 to be 
+greater than or equal to 
+10[39m
+[36m [2m❯[22m src/core/c
+alculation/__tests__/nurtur
+e_logic.test.ts:[2m55:33[
+22m[39m
+    [90m 53| [39m        
+[34mexpect[39m(result[33
+m.[39mcharm)[33m.[39m[3
+4mtoBeGreaterThanOrEqual[3
+9m([34m10[39m)[33m;[39m
+    [90m 54| [39m        
+[34mexpect[39m(result[33
+m.[39mintelligence)[33m.
+[39m[34mtoBeGreaterThanOrE
+qual[39m([34m10[39m)[33
+m;[39m
+    [90m 55| [39m        
+[34mexpect[39m(result[33
+m.[39mstrength)[33m.[39m
+[34mtoBeGreaterThanOrEqual
+[39m([34m10[39m)[33m;[
+39m
+    [90m   | [39m        
+                        
+[31m^[39m
+    [90m 56| [39m
+    [90m 57| [39m        
+[90m// Max check (should 
+not wildly exceed 60% + 
+leftovers)[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m5 passed[39m[22m[90m (6)[39m
+[2m   Start at [22m 17:15:04
+[2m   Duration [22m 721ms[2m (transform 32ms, setup 0ms, collect 32ms, tests 5ms, environment 381ms, prepare 72ms)[22m
+

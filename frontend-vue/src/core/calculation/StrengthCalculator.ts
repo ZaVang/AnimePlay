@@ -1,52 +1,31 @@
-import { useGameStore } from '@/stores/battle';
 import type { Card } from '@/types';
+import type { BattleContext } from '@/types/battle';
+import { useGameStore } from '@/stores/battle';
 import { SkillSystem } from '@/core/systems/SkillSystem';
 import { systemRegistry } from '@/core/di/registry';
-import { isCardTreatedAsAnyType } from '@/utils/typeGuards';
-
-// A simple function to get all active passive skills from both players
-// Removed direct aura scan; delegated to SkillSystem
 
 export const StrengthCalculator = {
   /**
    * Calculates the final strength of an anime card in a clash.
-   * This now includes passive aura effects.
-   * It safely handles cases where no card is played (e.g., a pass).
+   * Now supports an optional BattleContext for pure functional testing.
    */
-  calculateFinalStrength(card: Card | undefined, playerId: 'playerA' | 'playerB'): number {
-    // If no card is provided, strength is 0
-    if (!card) {
-      return 0;
-    }
-
-    const gameStore = useGameStore();
+  calculateFinalStrength(card: Card | undefined, playerId: 'playerA' | 'playerB', context?: BattleContext): number {
+    if (!card) return 0;
 
     let finalStrength = card.points || 0;
 
-    // 1. Add base topic bias
-    // const bias = gameStore.topicBias;
-    // if (playerId === 'playerA' && bias > 0) {
-    //   finalStrength += bias;
-    // } else if (playerId === 'playerB' && bias < 0) {
-    //   finalStrength += Math.abs(bias);
-    // }
-
-    // 2. Treat as any type if status consumed (simple heuristic: grants +1 if card有任意标签可触发的被动)
-    // 已通过 SkillSystem.onCardPlayed 设置了临时标记 __treatedAsAnyType
-    // 具体的"任何类型匹配策略"可在此扩展，这里仅让被动聚合阶段感知。
-    if (isCardTreatedAsAnyType(card)) {
-      // 在 getAuraStrengthBonus 中会检查卡的标签，这里不修改标签，仅保留标记影响逻辑（如后续实现）
-    }
-
-    // 3. Apply passive aura effects via SkillSystem
-    finalStrength += SkillSystem.getAuraStrengthBonus(card, playerId);
-    
-    // 4. Apply persistent effects from PersistentEffectSystem
-    try {
-      finalStrength += systemRegistry.getPersistentEffectSystem().getStrengthBonus(playerId, card.synergy_tags || []);
-    } catch (error) {
-      // 如果系统不可用（如在某些测试环境中），跳过强度加成
-      console.warn('PersistentEffectSystem not available in StrengthCalculator:', error);
+    // 1. Apply Aura/Passive bonuses (Prefer context if provided)
+    if (context) {
+      const auraBonus = playerId === 'playerA' ? context.attackerAuraBonus : context.defenderAuraBonus;
+      finalStrength += (auraBonus || 0);
+    } else {
+      // Fallback to legacy global system calls
+      finalStrength += SkillSystem.getAuraStrengthBonus(card, playerId);
+      try {
+        finalStrength += systemRegistry.getPersistentEffectSystem().getStrengthBonus(playerId, card.synergy_tags || []);
+      } catch (error) {
+        console.warn('PersistentEffectSystem not available in StrengthCalculator:', error);
+      }
     }
 
     return finalStrength;

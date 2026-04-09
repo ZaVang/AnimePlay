@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useEconomyStore } from '@/stores/modules/economyStore';
 import type { CharacterCard } from '@/types/card';
-import type { CharacterNurtureData } from '@/stores/userStore';
+import type { CharacterNurtureData } from '@/types/store';
 
 const props = defineProps<{
   character: CharacterCard & { nurtureData: CharacterNurtureData };

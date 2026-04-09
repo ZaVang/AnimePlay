@@ -28,47 +28,56 @@ const favoriteCharacterCards = computed(() => {
 </script>
 
 <template>
-  <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 h-full flex flex-col">
-    <h2 class="text-2xl font-bold text-white mb-4">我的喜爱</h2>
+  <div class="bg-industrial-800 border border-industrial-700 h-full flex flex-col clip-chamfer datapad-reveal">
+    <div class="tactical-panel-header">
+      <span class="flex items-center gap-2">
+        <span class="w-2 h-2 bg-clinical-warning animate-pulse"></span>
+        本地数据收藏库
+      </span>
+      <span class="opacity-30">已开启加密访问</span>
+    </div>
     
-    <div class="border-b border-gray-700 mb-4">
-      <nav class="-mb-px flex space-x-4">
+    <div class="p-4 border-b border-industrial-700 bg-industrial-900/30">
+      <nav class="flex gap-2 font-sans">
         <button @click="activeTab = 'anime'" 
-                :class="[activeTab === 'anime' ? 'border-green-400 text-green-400' : 'border-transparent text-gray-400 hover:text-white hover:border-gray-500']"
-                class="whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
-          动画 ({{ favoriteAnimeCards.length }}/10)
+                :class="[activeTab === 'anime' ? 'bg-clinical-warning text-industrial-900 font-bold' : 'text-industrial-400 hover:text-industrial-100 bg-industrial-800 border border-industrial-700']"
+                class="flex-1 py-2 px-3 text-[11px] font-black tracking-widest transition-all clip-chamfer-sm">
+          动画核心 ({{ favoriteAnimeCards.length }})
         </button>
         <button @click="activeTab = 'character'" 
-                :class="[activeTab === 'character' ? 'border-green-400 text-green-400' : 'border-transparent text-gray-400 hover:text-white hover:border-gray-500']"
-                class="whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
-          角色 ({{ favoriteCharacterCards.length }}/10)
+                :class="[activeTab === 'character' ? 'bg-clinical-blue text-industrial-900 font-bold' : 'text-industrial-400 hover:text-industrial-100 bg-industrial-800 border border-industrial-700']"
+                class="flex-1 py-2 px-3 text-[11px] font-black tracking-widest transition-all clip-chamfer-sm">
+          人员档案 ({{ favoriteCharacterCards.length }})
         </button>
       </nav>
     </div>
 
-    <div class="flex-grow overflow-y-auto max-h-[600px]">
+    <div class="flex-grow overflow-y-auto p-4 bg-industrial-900/10">
         <div v-if="authStore.isLoggedIn">
             <div v-if="activeTab === 'anime'">
-                <div v-if="favoriteAnimeCards.length > 0" class="grid grid-cols-5 gap-4">
-                <AnimeCard v-for="card in favoriteAnimeCards" :key="`fav-${card!.id}`" :anime="card!" />
+                <div v-if="favoriteAnimeCards.length > 0" class="grid grid-cols-4 sm:grid-cols-5 gap-3">
+                  <AnimeCard v-for="card in favoriteAnimeCards" :key="`fav-${card!.id}`" :anime="card!" />
                 </div>
-                <div v-else class="text-center py-8 text-gray-400">
-                    <p>还没有喜爱的动画卡牌。</p>
-                    <p class="text-sm mt-2">去 <RouterLink to="/collections" class="text-green-400 hover:underline">收藏</RouterLink> 页面点亮星星吧！</p>
+                <div v-else class="flex flex-col items-center justify-center py-12 opacity-20 font-mono">
+                    <p class="text-2xl mb-2">⊘</p>
+                    <p class="text-[10px]">NO_MARKED_CORE_DATA</p>
                 </div>
             </div>
 
             <div v-if="activeTab === 'character'">
-                <div v-if="favoriteCharacterCards.length > 0" class="grid grid-cols-5 gap-4">
-                <CharacterCard v-for="card in favoriteCharacterCards" :key="`fav-${card!.id}`" :character="card!" />
+                <div v-if="favoriteCharacterCards.length > 0" class="grid grid-cols-4 sm:grid-cols-5 gap-3">
+                  <CharacterCard v-for="card in favoriteCharacterCards" :key="`fav-${card!.id}`" :character="card!" />
                 </div>
-                <div v-else class="text-center py-8 text-gray-400">
-                    <p>还没有喜爱的角色卡牌。</p>
-                    <p class="text-sm mt-2">去 <RouterLink to="/collections" class="text-green-400 hover:underline">收藏</RouterLink> 页面点亮星星吧！</p>
+                <div v-else class="flex flex-col items-center justify-center py-12 opacity-20 font-mono">
+                    <p class="text-2xl mb-2">⊘</p>
+                    <p class="text-[10px]">NO_MARKED_STAFF_RECORD</p>
                 </div>
             </div>
         </div>
-        <p v-else class="text-gray-500 text-center py-4">请先登录查看喜爱收藏</p>
+        <div v-else class="flex-1 flex items-center justify-center py-12 opacity-30 font-mono">
+          <p class="text-[10px] uppercase tracking-widest">Access_Denied: Login_Required</p>
+        </div>
     </div>
   </div>
 </template>
+

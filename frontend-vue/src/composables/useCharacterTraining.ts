@@ -1,6 +1,6 @@
 import { computed } from 'vue';
 import type { CharacterCard } from '@/types/card';
-import type { CharacterNurtureData } from '@/stores/userStore';
+import type { CharacterNurtureData } from '@/types/store';
 
 export function useCharacterTraining(
   character: CharacterCard & { nurtureData: CharacterNurtureData }

@@ -3,7 +3,8 @@
  * From: Steins;Gate
  */
 
-import type { EffectContext } from '@/types/effects';
+import { usePlayerStore, useHistoryStore, useGameStore } from '@/stores/battle';
+import type { EffectContext, PlayerId } from '@/types/effects';
 import { getEffectHelpers, EffectPatterns, type SkillEffect } from '../utils';
 import { systemRegistry } from '@/core/di/registry';
 
@@ -12,8 +13,8 @@ import { systemRegistry } from '@/core/di/registry';
  */
 const 时间理论: SkillEffect = async (ctx: EffectContext) => {
   const helpers = getEffectHelpers(ctx);
-  const interactionSystem = systemRegistry.getInteractionSystem();
-  const persistentSystem = systemRegistry.getPersistentEffectSystem();
+  const interactionSystem = helpers.interactionSystem;
+  const persistentSystem = helpers.persistentSystem;
   
   EffectPatterns.logSkillActivation(
     helpers,

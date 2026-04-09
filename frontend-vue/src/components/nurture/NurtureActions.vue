@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { CharacterCard } from '@/types/card';
-import type { CharacterNurtureData } from '@/stores/userStore';
+import type { CharacterNurtureData } from '@/types/store';
 import ResourceDisplay from './actions/ResourceDisplay.vue';
 import TrainingSystem from './actions/TrainingSystem.vue';
 import BattleTraining from './actions/BattleTraining.vue';

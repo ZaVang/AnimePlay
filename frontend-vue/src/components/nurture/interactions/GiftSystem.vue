@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import type { CharacterCard } from '@/types/card';
-import type { CharacterNurtureData } from '@/stores/userStore';
+import type { CharacterNurtureData } from '@/types/store';
 import { useInteractionData } from '@/composables/useInteractionData';
 import { useInteractionEffects } from '@/composables/useInteractionEffects';
 

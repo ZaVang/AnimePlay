@@ -3,7 +3,7 @@ import { usePlayerStore } from '@/stores/battle';
 import { useHistoryStore } from '@/stores/battle';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { useAuthStore } from '@/stores/modules/authStore';
-import type { Deck } from '@/stores/userStore';
+import type { Deck } from '@/types/store';
 import { getAIProfileById, pickDefaultAIProfile, type AIProfile } from '@/core/ai/aiProfiles';
 import type { AnimeCard, CharacterCard, Skill } from '@/types';
 import type { Rarity } from '@/types/card';

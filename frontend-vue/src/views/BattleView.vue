@@ -7,7 +7,7 @@ import { PersistentEffectSystem } from '@/core/systems/PersistentEffectSystem';
 import { DialogueSystem } from '@/core/systems/DialogueSystem';
 import { BATTLE_INTERACTION_SYSTEM, BATTLE_PERSISTENT_SYSTEM, BATTLE_DIALOGUE_SYSTEM } from '@/core/di/injection-keys';
 import { systemRegistry } from '@/core/di/registry';
-import type { Deck } from '@/stores/userStore';
+import type { Deck } from '@/types/store';
 
 import DeckSelector from '@/components/battle/ui/DeckSelector.vue';
 import PlayerField from '@/components/battle/arena/PlayerField.vue';

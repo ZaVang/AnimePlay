@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Deck } from '@/stores/userStore';
+import type { Deck } from '@/types/store';
 import { useDeckStore } from '@/stores/modules/deckStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { ref, computed, onMounted } from 'vue';

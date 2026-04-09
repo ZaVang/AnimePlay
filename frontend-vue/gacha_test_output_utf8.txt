@@ -1,0 +1,133 @@
+﻿
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90mD:/work/AnimePlay/frontend-vue[39m
+
+ [32m✓[39m src/core/calculation/__tests__/gacha_engine.test.ts[2m > [22mGachaEngine: Probability & Pity logic[2m > [22mPity Mechanics[2m > [22mshould trigger UR pity exactly at the configured pull
+ [31m×[39m src/core/calculation/__tests__/gacha_engine.test.ts[2m > [22mGachaEngine: Probability & Pity logic[2m > [22mPity Mechanics[2m > [22mshould trigger HR pity independently
+[31m   → expected 1 to be 20 // Object.is equality[39m
+ [32m✓[39m src/core/calculation/__tests__/gacha_engine.test.ts[2m > [22mGachaEngine: Probability & Pity logic[2m > [22mMulti-pull Guarantee[2m > [22mshould guarantee at least 1 SSR in a 10-pull
+ [31m×[39m src/core/calculation/__tests__/gacha_engine.test.ts[2m > [22mGachaEngine: Probability & Pity logic[2m > [22mStatistical Analysis (Big Numbers)[2m > [22mshould converge to configured rates over 10,000 pulls
+[31m   → expected 88 to be greater than 100[39m
+
+node.exe : 
+[31m⎯⎯⎯⎯⎯⎯⎯[1m[7m 
+Failed Tests 2 
+[27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: ([3  
+  1m⎯⎯⎯⎯⎯⎯⎯[1...22m⎯⎯⎯⎯   
+ ⎯⎯⎯[39m:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+
+[31m[1m[7m FAIL 
+[27m[22m[39m src/core/ca
+lculation/__tests__/gacha_e
+ngine.test.ts[2m > 
+[22mGachaEngine: 
+Probability & Pity 
+logic[2m > [22mPity 
+Mechanics[2m > 
+[22mshould trigger HR 
+pity independently
+[31m[1mAssertionError[22
+m: expected 1 to be 20 // 
+Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 20[39m
+[31m+ 1[39m
+
+[36m [2m❯[22m src/core/c
+alculation/__tests__/gacha_
+engine.test.ts:[2m70:52[2
+2m[39m
+    [90m 68| [39m      [
+34mexpect[39m(result[33m.
+[39mcards[[34m0[39m][33
+m.[39mrarity)[33m.[39m[
+34mtoBe[39m([32m'HR'[39m
+)[33m;[39m
+    [90m 69| [39m      [
+34mexpect[39m(result[33m.
+[39mnewPityState[33m.[39
+mpullsSinceLastHR)[33m.[3
+9m[34mtoBe[39m([34m0[39
+m)[33m;[39m
+    [90m 70| [39m      [
+34mexpect[39m(result[33m.
+[39mnewPityState[33m.[39
+mpullsSinceLastUR)[33m.[3
+9m[34mtoBe[39m([34m20[3
+9m)[33m;[39m [90m// 
+Normal[39m…
+    [90m   | [39m        
+                           
+                [31m^[39m
+    [90m 71| [39m    
+})[33m;[39m
+    [90m 72| [39m  
+})[33m;[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+⎯⎯⎯⎯⎯⎯[1/2]⎯[22m[39m
+
+[31m[1m[7m FAIL 
+[27m[22m[39m src/core/ca
+lculation/__tests__/gacha_e
+ngine.test.ts[2m > 
+[22mGachaEngine: 
+Probability & Pity 
+logic[2m > 
+[22mStatistical Analysis 
+(Big Numbers)[2m > 
+[22mshould converge to 
+configured rates over 
+10,000 pulls
+[31m[1mAssertionError[22
+m: expected 88 to be 
+greater than 100[39m
+[36m [2m❯[22m src/core/c
+alculation/__tests__/gacha_
+engine.test.ts:[2m97:23[2
+2m[39m
+    [90m 95| [39m      
+    [90m 96| [39m      
+[90m// UR base 1% + Pity 
+influence. Expected is > 
+100.[39m
+    [90m 97| [39m      [
+34mexpect[39m(urCount)[33
+m.[39m[34mtoBeGreaterThan
+[39m([34m100[39m)[33m;
+[39m 
+    [90m   | [39m        
+              [31m^[39m
+    [90m 98| [39m      
+[90m// SSR base 10%. 
+Expected around 1000.[39m
+    [90m 99| [39m      
+[35mconst[39m ssrRate 
+[33m=[39m (ssrCount 
+[33m/[39m 
+simulationCount)[33m;[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+⎯⎯⎯⎯⎯⎯[2/2]⎯[22m[39m
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[31m2 failed[39m[22m[2m | [22m[1m[32m2 passed[39m[22m[90m (4)[39m
+[2m   Start at [22m 18:57:15
+[2m   Duration [22m 916ms[2m (transform 37ms, setup 0ms, collect 38ms, tests 12ms, environment 400ms, prepare 90ms)[22m
+

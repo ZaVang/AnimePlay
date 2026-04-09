@@ -1,47 +1,93 @@
 import { useGameStore, usePlayerStore, useHistoryStore } from '@/stores/battle';
 import type { Card, Skill } from '@/types';
 import { runEffect } from '@/skills';
-import type { EffectContext, CombatRole } from '@/types/effects';
+import type { EffectContext, CombatRole, PlayerId } from '@/types/effects';
+import type { SkillAPI } from '@/types/skill-api';
 import type { ClashInfo } from '@/types/battle';
 import type { AnimeCard, CharacterCard } from '@/types/card';
 import { StatusEffectSystem } from '@/core/systems/StatusEffectSystem';
 import { isAnimeCard, isCharacterCard, setCardTreatedAsAnyType, isCardTreatedAsAnyType } from '@/utils/typeGuards';
 import { systemRegistry } from '@/core/di/registry';
 
+/**
+ * 创建基于真实 Store 的 SkillAPI 实现
+ */
+const createRealSkillAPI = (): SkillAPI => {
+  const gameStore = useGameStore();
+  const playerStore = usePlayerStore();
+  const historyStore = useHistoryStore();
+  const persistentSystem = systemRegistry.getPersistentEffectSystem();
+  const interactionSystem = systemRegistry.getInteractionSystem();
+
+  return {
+    drawCards: (playerId, count) => playerStore.drawCards(playerId, count),
+    changeTp: (playerId, amount) => playerStore.changeTp(playerId, amount),
+    discardCard: (playerId, cardId) => playerStore.discardCardFromHand(playerId, cardId),
+    addLog: (message, type) => historyStore.addLog(message, type as any || 'info'),
+    addNotification: (message, type) => gameStore.addNotification(message, type || 'info'),
+    addTemporaryBonus: (params) => {
+      if (params.bonusType === 'strength') {
+        if (params.cardType) {
+          persistentSystem.addCardTypeStrengthBonus(params.playerId, params.cardType, params.amount, params.duration);
+        } else {
+          persistentSystem.addTemporaryBonus({
+            playerId: params.playerId,
+            bonusType: 'strength',
+            amount: params.amount,
+            duration: params.duration,
+            description: params.description
+          });
+        }
+      } else if (params.bonusType === 'cost') {
+        persistentSystem.addCardTypeCostReduction(params.playerId, params.cardType || 'Any', params.amount, params.duration);
+      }
+    },
+    viewOpponentHand: async (playerId, options) => {
+      try {
+        await interactionSystem.viewOpponentHand(playerId, {
+          ...options,
+          source: options.source as 'hand' | 'deck'
+        });
+      } catch (e) {
+        console.warn('ViewOpponentHand failed in API:', e);
+      }
+    },
+    getOpponentId: (playerId) => playerId === 'playerA' ? 'playerB' : 'playerA',
+    getPlayerName: (playerId) => playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name
+  };
+};
+
 export const SkillSystem = {
   /**
    * 初始化所有角色的被动技能
-   * 在游戏开始时调用，激活所有永久被动效果
    */
   async initializePassiveSkills() {
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
+    const api = createRealSkillAPI();
 
     console.log('🎯 开始初始化被动技能...');
 
-    // 收集所有角色的被动技能
     const allCharacters = [...playerStore.playerA.characters, ...playerStore.playerB.characters];
     let passiveCount = 0;
 
     for (const character of allCharacters) {
       if (!isCharacterCard(character) || !character.skills) continue;
 
-      // 确定角色所属的玩家
       const playerId = playerStore.playerA.characters.includes(character) ? 'playerA' : 'playerB';
 
       for (const skill of character.skills) {
-        // 只激活被动技能类型（不包括主动技能）
-        if (skill.type === '被动光环' || skill.type === '被动技能') {
+        if (skill.type === '被动光环' || (skill.type as string) === '被动技能') {
           if (skill.effectId) {
             try {
               console.log(`🔮 激活被动技能: ${character.name} - ${skill.name} (${skill.effectId})`);
 
-              // 调用被动技能效果，传入初始化事件
               await runEffect(skill.effectId, {
                 event: 'onGameStart',
                 playerId,
                 role: 'supporter',
-                character
+                character,
+                api
               });
 
               passiveCount++;
@@ -64,26 +110,24 @@ export const SkillSystem = {
 
   /**
    * 检查并激活基于条件的被动技能
-   * 在回合开始时调用，用于处理需要动态检查状态的被动技能
    */
   async checkConditionalPassiveSkills(playerId: 'playerA' | 'playerB') {
     const playerStore = usePlayerStore();
     const player = playerStore[playerId];
+    const api = createRealSkillAPI();
 
-    // 检查当前活跃角色的被动技能
     const activeCharacter = player.characters[player.activeCharacterIndex];
     if (!isCharacterCard(activeCharacter) || !activeCharacter.skills) return;
 
     for (const skill of activeCharacter.skills) {
-      // 处理被动技能的条件检查
-      if (skill.type === '被动技能' && skill.effectId) {
+      if ((skill.type as string) === '被动技能' && skill.effectId) {
         try {
-          // 使用 onTurnStart 事件来触发条件检查
           await runEffect(skill.effectId, {
             event: 'onTurnStart',
             playerId,
             role: 'supporter',
-            character: activeCharacter
+            character: activeCharacter,
+            api
           });
         } catch (error) {
           console.error(`❌ 检查条件被动技能失败: ${skill.effectId}`, error);
@@ -96,8 +140,6 @@ export const SkillSystem = {
    * Called when a card is played by attacker or defender.
    */
   async onCardPlayed(playerId: 'playerA' | 'playerB', card: Card) {
-    // StatusEffect: NEXT_CARD_ANY_TYPE
-    // If granted, we can mark the card as matching any synergy in later calculations.
     const consumedAnyType = StatusEffectSystem.consumeNextCardAnyType(playerId);
     if (consumedAnyType) {
       setCardTreatedAsAnyType(card);
@@ -106,12 +148,12 @@ export const SkillSystem = {
 
   /**
    * Emit beforeResolve effects for both sides.
-   * 修改：将临时加成直接添加到 PersistentEffectSystem，而不是通过回调
    */
   async emitBeforeResolve(clash: ClashInfo) {
     const attackerId = clash.attackerId;
     const defenderId = clash.defenderId || (attackerId === 'playerA' ? 'playerB' : 'playerA');
     const persistentSystem = systemRegistry.getPersistentEffectSystem();
+    const api = createRealSkillAPI();
 
     if (clash.attackingCard?.effects) {
       const beforeResolveEffects = clash.attackingCard.effects.filter(e => e.trigger === 'beforeResolve');
@@ -122,14 +164,10 @@ export const SkillSystem = {
           role: 'attacker',
           card: clash.attackingCard,
           clash,
-          // 提供统一的加成接口
+          api,
           addStrengthBonus: (amount: number) => {
             persistentSystem.addTemporaryBonus({
-              playerId: attackerId,
-              bonusType: 'strength',
-              amount,
-              duration: 0, // 立即生效且仅此次
-              description: 'beforeResolve临时加成'
+              playerId: attackerId, bonusType: 'strength', amount, duration: 0, description: 'beforeResolve临时加成'
             });
           }
         });
@@ -144,14 +182,10 @@ export const SkillSystem = {
           role: 'defender',
           card: clash.defendingCard,
           clash,
-          // 提供统一的加成接口
+          api,
           addStrengthBonus: (amount: number) => {
             persistentSystem.addTemporaryBonus({
-              playerId: defenderId,
-              bonusType: 'strength',
-              amount,
-              duration: 0, // 立即生效且仅此次
-              description: 'beforeResolve临时加成'
+              playerId: defenderId, bonusType: 'strength', amount, duration: 0, description: 'beforeResolve临时加成'
             });
           }
         });
@@ -165,54 +199,45 @@ export const SkillSystem = {
   async emitAfterResolve(clash: ClashInfo) {
     const attackerId = clash.attackerId;
     const defenderId = clash.defenderId || (attackerId === 'playerA' ? 'playerB' : 'playerA');
+    const api = createRealSkillAPI();
+
     if (clash.attackingCard?.effects) {
       const afterResolveEffects = clash.attackingCard.effects.filter(e => e.trigger === 'afterResolve');
       for (const e of afterResolveEffects) {
-        await runEffect(e.effectId, { event: 'afterResolve', playerId: attackerId, role: 'attacker', card: clash.attackingCard, clash });
+        await runEffect(e.effectId, { event: 'afterResolve', playerId: attackerId, role: 'attacker', card: clash.attackingCard, clash, api });
       }
     }
     if (clash.defendingCard?.effects) {
       const afterResolveEffects = clash.defendingCard.effects.filter(e => e.trigger === 'afterResolve');
       for (const e of afterResolveEffects) {
-        await runEffect(e.effectId, { event: 'afterResolve', playerId: defenderId, role: 'defender', card: clash.defendingCard, clash });
+        await runEffect(e.effectId, { event: 'afterResolve', playerId: defenderId, role: 'defender', card: clash.defendingCard, clash, api });
       }
     }
   },
 
   /**
-   * 获取已激活的强度加成（不执行技能，只查询现有效果）
+   * 获取已激活的强度加成
    */
   getAuraStrengthBonus(card: Card | undefined, actingPlayerId: 'playerA' | 'playerB'): number {
     if (!card) return 0;
-
     try {
       const persistentSystem = systemRegistry.getPersistentEffectSystem();
       const cardTypes = (card as AnimeCard).synergy_tags || [];
-
-      // 只查询已有的强度加成，不执行技能
       return persistentSystem.getStrengthBonus(actingPlayerId, cardTypes);
     } catch (error) {
       console.warn('PersistentEffectSystem not available in getAuraStrengthBonus:', error);
       return 0;
     }
   },
+
   /**
    * Checks if a skill can be used by the player.
    */
   canUseSkill(playerId: 'playerA' | 'playerB', skill: Skill): boolean {
     const playerStore = usePlayerStore();
     const player = playerStore[playerId];
-
-    if (skill.cost && player.tp < skill.cost) {
-      return false; // Not enough TP
-    }
-
-    if (player.skillCooldowns[skill.id] > 0) {
-      return false; // Skill on cooldown
-    }
-
-    // TODO: Add other conditions like game phase, character status, etc.
-
+    if (skill.cost && player.tp < skill.cost) return false;
+    if (player.skillCooldowns[skill.id] > 0) return false;
     return true;
   },
 
@@ -223,31 +248,24 @@ export const SkillSystem = {
     const gameStore = useGameStore();
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
+    const api = createRealSkillAPI();
 
     if (!this.canUseSkill(playerId, skill)) {
       gameStore.addNotification('无法使用该技能！', 'warning');
       return;
     }
 
-    // Pay TP cost
-    if (skill.cost) {
-      playerStore.changeTp(playerId, -skill.cost);
-    }
-
-    // Set cooldown
-    if (skill.cooldown) {
-      playerStore.setSkillCooldown(playerId, skill.id, skill.cooldown);
-    }
+    if (skill.cost) playerStore.changeTp(playerId, -skill.cost);
+    if (skill.cooldown) playerStore.setSkillCooldown(playerId, skill.id, skill.cooldown);
     
     gameStore.addNotification(`使用了技能: ${skill.name}`);
     const name2 = playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
     historyStore.addLog(`${name2} 使用了技能 [${skill.name}]。`, 'event');
 
-    // --- Execute skill effect via effectId (preferred path) ---
     if (skill.effectId) {
-      await runEffect(skill.effectId, { event: 'onPlay', playerId, role: 'attacker' });
+      await runEffect(skill.effectId, { event: 'onPlay', playerId, role: 'attacker', api });
     } else {
-      console.warn(`Skill effectId missing for "${skill.id}". Consider adding effectId -> handler mapping.`);
+      console.warn(`Skill effectId missing for "${skill.id}".`);
     }
   },
 };

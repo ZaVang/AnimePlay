@@ -7,6 +7,7 @@ import { defineStore } from 'pinia';
 import { ref } from 'vue';
 import { useAuthStore } from './authStore';
 import { useGameDataStore } from '../gameDataStore';
+import { NurtureCalculator } from '@/core/calculation/NurtureCalculator';
 
 export interface CharacterNurtureData {
   affection: number;
@@ -76,61 +77,17 @@ export const useNurtureStore = defineStore('nurture', () => {
   });
 
   // --- HELPER FUNCTIONS ---
-  function distributeRandomAttributes(totalPoints: number): { charm: number; intelligence: number; strength: number } {
-    const attributes = ['charm', 'intelligence', 'strength'] as const;
-    const distribution = { charm: 0, intelligence: 0, strength: 0 };
-    let remainingPoints = totalPoints;
-
-    for (const attr of attributes) {
-      const minPoints = Math.floor(totalPoints * 0.1);
-      const maxPoints = Math.floor(totalPoints * 0.6);
-      const points = Math.min(
-        Math.max(minPoints, Math.floor(Math.random() * (maxPoints - minPoints + 1)) + minPoints),
-        remainingPoints - (attributes.length - attributes.indexOf(attr) - 1)
-      );
-      distribution[attr] = points;
-      remainingPoints -= points;
-    }
-
-    while (remainingPoints > 0) {
-      const randomAttr = attributes[Math.floor(Math.random() * attributes.length)];
-      distribution[randomAttr]++;
-      remainingPoints--;
-    }
-
-    return distribution;
+  // --- CALCULATOR PROXIES ---
+  function getRequiredExpForLevel(level: number) {
+    return NurtureCalculator.getRequiredExpForLevel(level);
   }
 
-  function getRequiredExpForLevel(level: number): number {
-    if (level <= 1) return 0;
-    return (level - 1) * (level - 1) * 1000;
+  function getLevelFromExp(totalExp: number) {
+    return NurtureCalculator.getLevelFromExp(totalExp);
   }
 
-  function getLevelFromExp(totalExp: number): number {
-    let level = 1;
-    while (getRequiredExpForLevel(level + 1) <= totalExp) {
-      level++;
-    }
-    return level;
-  }
-
-  function getLevelProgress(nurtureData: CharacterNurtureData): { current: number; required: number; percentage: number } {
-    const currentLevel = nurtureData.level || 1;
-    const totalExp = nurtureData.totalExperience || 0;
-
-    const currentLevelExpStart = getRequiredExpForLevel(currentLevel);
-    const nextLevelExpStart = getRequiredExpForLevel(currentLevel + 1);
-
-    const currentLevelExp = Math.max(0, totalExp - currentLevelExpStart);
-    const requiredForNext = nextLevelExpStart - currentLevelExpStart;
-
-    const percentage = requiredForNext > 0 ? (currentLevelExp / requiredForNext) * 100 : 0;
-
-    return {
-      current: currentLevelExp,
-      required: requiredForNext,
-      percentage: Math.min(100, Math.max(0, percentage))
-    };
+  function getLevelProgress(nurtureData: any) {
+    return NurtureCalculator.getLevelProgress(nurtureData.totalExperience || 0, nurtureData.level || 1);
   }
 
   // --- ACTIONS ---
@@ -208,7 +165,7 @@ export const useNurtureStore = defineStore('nurture', () => {
         if (correctLevel > oldLevel && correctLevel <= maxLevel) {
           for (let level = oldLevel + 1; level <= correctLevel; level++) {
             const totalPoints = level * 10;
-            const randomBonus = distributeRandomAttributes(totalPoints);
+            const randomBonus = NurtureCalculator.rollAttributeGain(totalPoints);
             data.levelBonusAttributes.charm += randomBonus.charm;
             data.levelBonusAttributes.intelligence += randomBonus.intelligence;
             data.levelBonusAttributes.strength += randomBonus.strength;
@@ -348,13 +305,10 @@ export const useNurtureStore = defineStore('nurture', () => {
     const baseStats = character.battle_stats;
     const enhancements = nurtureData.battleEnhancements;
 
-    return {
-      hp: Math.floor(baseStats.hp * (1 + enhancements.hp / 100)),
-      atk: Math.floor(baseStats.atk * (1 + enhancements.atk / 100)),
-      def: Math.floor(baseStats.def * (1 + enhancements.def / 100)),
-      sp: Math.floor(baseStats.sp * (1 + enhancements.sp / 100)),
-      spd: Math.floor(baseStats.spd * (1 + enhancements.spd / 100))
-    };
+    return NurtureCalculator.calculateEnhancedStats(
+      baseStats as any,
+      enhancements as any
+    );
   }
 
   function addCharacterExp(characterId: number, expAmount: number) {
@@ -383,7 +337,7 @@ export const useNurtureStore = defineStore('nurture', () => {
 
         for (let level = oldLevel + 1; level <= newLevel; level++) {
           const totalPoints = level * 10;
-          const randomBonus = distributeRandomAttributes(totalPoints);
+          const randomBonus = NurtureCalculator.rollAttributeGain(totalPoints);
 
           nurtureData.levelBonusAttributes.charm += randomBonus.charm;
           nurtureData.levelBonusAttributes.intelligence += randomBonus.intelligence;

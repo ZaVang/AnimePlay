@@ -1,0 +1,153 @@
+﻿
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90mD:/work/AnimePlay/frontend-vue[39m
+
+node.exe : [90mstderr[2m 
+| src/skills/__tests__/skil
+l_logic.test.ts[2m > 
+[22m[2mSkill Logic: 
+Makise Kurisu 
+(Steins;Gate)[2m > 
+[22m[2m牧濑红莉栖_时间理论[2m > 
+[22m[2mshould view 
+opponent hand and add 
+strength bonus
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: ([9  
+  0mstderr[2m... streng   
+ th bonus:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+[22m[39m执行技能效果 
+"牧濑红莉栖_时间理论" 时出错: Error: 
+InteractionSystem not 
+registered. Make sure to 
+call registerSystems() 
+first.
+    at SystemRegistry.getIn
+teractionSystem [90m(D:\wo
+rk\AnimePlay\frontend-vue\
+[39msrc\core\di\registry.ts
+:33:13[90m)[39m
+    at 时间理论 [90m(D:\work\A
+nimePlay\frontend-vue\[39m
+src\skills\characters\makis
+e-kurisu.ts:15:44[90m)[39
+m
+    at Module.runEffect [9
+0m(D:\work\AnimePlay\fronte
+nd-vue\[39msrc\skills\regi
+stry.ts:89:11[90m)[39m
+    at [90mD:\work\AnimePl
+ay\frontend-vue\[39msrc\sk
+ills\__tests__\skill_logic.
+test.ts:36:13
+    at [90mfile:///D:/work
+/AnimePlay/frontend-vue/[3
+9mnode_modules/[4m@vitest/
+runner[24m/dist/index.js:1
+46:14
+    at [90mfile:///D:/work
+/AnimePlay/frontend-vue/[3
+9mnode_modules/[4m@vitest/
+runner[24m/dist/index.js:5
+33:11
+    at runWithTimeout [90m
+(file:///D:/work/AnimePlay/
+frontend-vue/[39mnode_modu
+les/[4m@vitest/runner[24m
+/dist/index.js:39:7[90m)[
+39m
+    at runTest [90m(file:/
+//D:/work/AnimePlay/fronten
+d-vue/[39mnode_modules/[4
+m@vitest/runner[24m/dist/i
+ndex.js:1056:17[90m)[39m
+[90m    at 
+processTicksAndRejections (
+node:internal/process/task_
+queues:104:5)[39m
+    at runSuite [90m(file:
+///D:/work/AnimePlay/fronte
+nd-vue/[39mnode_modules/[
+4m@vitest/runner[24m/dist/
+index.js:1205:15[90m)[39m
+
+ [31m×[39m src/skills/__tests__/skill_logic.test.ts[2m > [22mSkill Logic: Makise Kurisu (Steins;Gate)[2m > [22m牧濑红莉栖_时间理论[2m > [22mshould view opponent hand and add strength bonus
+[31m   → expected "spy" to be called with arguments: [ 'playerA', ObjectContaining{…} ][90m
+
+Received: 
+
+[31m[90m
+
+Number of calls: [1m0[22m
+[31m[39m
+ [32m✓[39m src/skills/__tests__/skill_logic.test.ts[2m > [22mSkill Logic: Makise Kurisu (Steins;Gate)[2m > [22m牧濑红莉栖_科学逻辑[2m > [22mshould draw 1 card when playing 科幻 card and probability hits
+ [32m✓[39m src/skills/__tests__/skill_logic.test.ts[2m > [22mSkill Logic: Makise Kurisu (Steins;Gate)[2m > [22m牧濑红莉栖_科学逻辑[2m > [22mshould NOT draw card when probability misses
+ [32m✓[39m src/skills/__tests__/skill_logic.test.ts[2m > [22mSkill Logic: Makise Kurisu (Steins;Gate)[2m > [22m牧濑红莉栖_科学逻辑[2m > [22mshould NOT trigger when card type is NOT 科幻
+
+[31m⎯⎯⎯⎯⎯⎯⎯[1m[7m 
+Failed Tests 1 
+[27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[31m[1m[7m FAIL 
+[27m[22m[39m src/skills/
+__tests__/skill_logic.test.
+ts[2m > [22mSkill Logic: 
+Makise Kurisu 
+(Steins;Gate)[2m > 
+[22m牧濑红莉栖_时间理论[2m > 
+[22mshould view opponent 
+hand and add strength bonus
+[31m[1mAssertionError[22
+m: expected "spy" to be 
+called with arguments: [ 
+'playerA', 
+ObjectContaining{…} ][90m
+
+Received: 
+
+[31m[90m
+
+Number of calls: [1m0[22m
+[31m[39m
+[36m [2m❯[22m src/skills
+/__tests__/skill_logic.test
+.ts:[2m39:40[22m[39m
+    [90m 37| [39m
+    [90m 38| [39m      
+[90m// 验证查看手牌调用[39m
+    [90m 39| [39m      [
+34mexpect[39m(mockApi[33m
+.[39mviewOpponentHand)[33
+m.[39m[34mtoHaveBeenCalle
+dWith[39m([32m'playerA'[
+39m[33m,[39m…
+    [90m   | [39m        
+                           
+    [31m^[39m
+    [90m 40| [39m        
+count[33m:[39m 
+[34m3[39m[33m,[39m
+    [90m 41| [39m        
+title[33m:[39m expect[33
+m.[39m[34mstringContainin
+g[39m([32m'时间理论'[39m)
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m3 passed[39m[22m[90m (4)[39m
+[2m   Start at [22m 16:59:38
+[2m   Duration [22m 1.22s[2m (transform 304ms, setup 0ms, collect 516ms, tests 9ms, environment 390ms, prepare 66ms)[22m
+

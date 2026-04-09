@@ -6,6 +6,13 @@
 import { defineStore } from 'pinia';
 import { computed, ref } from 'vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
+import { useEconomyStore } from './economyStore';
+import { useCollectionStore } from './collectionStore';
+import { useViewingStore } from './viewingStore';
+import { useDeckStore } from './deckStore';
+import { useNurtureStore } from './nurtureStore';
+
+import { PersistenceService } from '../../api/persistence';
 
 export interface LogEntry {
   message: string;
@@ -15,10 +22,11 @@ export interface LogEntry {
 
 export const useAuthStore = defineStore('auth', () => {
   // --- STATE ---
-  const currentUser = ref<string>('');
+  const currentUser = ref<string>(localStorage.getItem('animeplay_user') || '');
   const level = ref(GAME_CONFIG.playerInitialState.level);
   const exp = ref(0);
   const logs = ref<LogEntry[]>([]);
+  const isSyncing = ref(false);
 
   // --- GETTERS ---
   const isLoggedIn = computed(() => !!currentUser.value);
@@ -29,17 +37,92 @@ export const useAuthStore = defineStore('auth', () => {
   });
 
   // --- ACTIONS ---
+  async function saveState() {
+    if (!currentUser.value || isSyncing.value) return;
+    
+    isSyncing.value = true;
+    try {
+      // 协调全量数据序列化
+      const economyStore = useEconomyStore();
+      const collectionStore = useCollectionStore();
+      const viewingStore = useViewingStore();
+      const deckStore = useDeckStore();
+      const nurtureStore = useNurtureStore();
+
+      const fullState = {
+        state: {
+          level: level.value,
+          exp: exp.value,
+          logs: logs.value,
+          ...economyStore.serializeForSave(),
+          ...viewingStore.serializeForSave()
+        },
+        ...collectionStore.serializeForSave(),
+        ...deckStore.serializeForSave(),
+        ...nurtureStore.serializeForSave()
+      };
+
+      await PersistenceService.saveUserData(currentUser.value, fullState);
+    } catch (e) {
+      console.error('全量同步失败:', e);
+    } finally {
+      isSyncing.value = false;
+    }
+  }
+
+  async function loadState(username: string) {
+    try {
+      const data = await PersistenceService.loadUserData(username);
+      
+      if (data) {
+        // 1. 本地状态加载 (适配嵌套的 state 对象)
+        const s = data.state || {};
+        level.value = s.level || GAME_CONFIG.playerInitialState.level;
+        exp.value = s.exp || 0;
+        logs.value = s.logs || [];
+
+        // 2. 分发全量数据到各个子 Store
+        const economyStore = useEconomyStore();
+        const collectionStore = useCollectionStore();
+        const viewingStore = useViewingStore();
+        const deckStore = useDeckStore();
+        const nurtureStore = useNurtureStore();
+
+        economyStore.loadFromPayload(s);
+        collectionStore.loadFromPayload(data);
+        viewingStore.loadFromPayload(s);
+        deckStore.loadFromPayload(s); // 保持原有逻辑，从 state 中加载
+        nurtureStore.loadFromPayload(data);
+
+        return true;
+      }
+      return false;
+    } catch (e) {
+      console.error('全量加载失败:', e);
+      return false;
+    }
+  }
+
   function addLog(message: string, type: LogEntry['type'] = 'info') {
     logs.value.unshift({ message, type, timestamp: Date.now() });
     if (logs.value.length > 50) {
       logs.value.pop();
     }
+    saveState();
   }
 
   function resetState() {
     level.value = GAME_CONFIG.playerInitialState.level;
     exp.value = 0;
     logs.value = [];
+    localStorage.removeItem('animeplay_user');
+    
+    // 重置所有子 Store
+    useEconomyStore().resetState();
+    useCollectionStore().resetState();
+    useViewingStore().resetState();
+    useDeckStore().resetState();
+    useNurtureStore().resetState();
   }
 
   async function login(username: string) {
@@ -47,17 +130,29 @@ export const useAuthStore = defineStore('auth', () => {
       alert('用户名只能包含字母和数字。');
       return;
     }
+    
     currentUser.value = username;
+    localStorage.setItem('animeplay_user', username);
+    
+    const loaded = await loadState(username);
+    if (!loaded) {
+      addLog(`欢迎，[${username}] 为新接入终端。`, 'success');
+      saveState();
+    } else {
+      addLog(`接入成功，[${username}] 全量数据已同步。`, 'success');
+    }
   }
 
   async function logout() {
-    addLog('已登出，再见！', 'info');
+    await saveState();
     currentUser.value = '';
+    localStorage.removeItem('animeplay_user');
+    resetState();
+    addLog('连接断开。', 'info');
   }
 
   function addExp(amount: number) {
     if (!isLoggedIn.value || amount === 0) return;
-    addLog(`获得 ${amount} 点经验。`, 'info');
     exp.value += amount;
     let requiredExp = expToNextLevel.value;
 
@@ -68,17 +163,20 @@ export const useAuthStore = defineStore('auth', () => {
 
       level.value = newLevel;
 
-      // Notify other stores about level rewards
-      // They will listen to this store's state changes
-
-      const milestoneMsg = newLevel % 10 === 0 ? '🎉 里程碑等级！' : '';
+      const milestoneMsg = newLevel % 10 === 0 ? ' [里程碑]' : '';
       addLog(
-        `恭喜！你已达到 ${newLevel} 级！${milestoneMsg}获得动画券 ${rewards.animeTickets} 张，角色券 ${rewards.characterTickets} 张，知识点 ${rewards.knowledge} 点。`,
+        `核心同步率提升！当前等级: ${newLevel}${milestoneMsg}。获得奖励：知识点 ${rewards.knowledge}。`,
         'success'
       );
 
       requiredExp = expToNextLevel.value;
     }
+    saveState();
+  }
+
+  // --- AUTO RECOVERY ---
+  if (currentUser.value) {
+    loadState(currentUser.value).catch(e => console.error('[AuthStore] Auto-recovery failed:', e));
   }
 
   return {
@@ -93,5 +191,7 @@ export const useAuthStore = defineStore('auth', () => {
     login,
     logout,
     addExp,
+    saveState,
+    loadState
   };
 });

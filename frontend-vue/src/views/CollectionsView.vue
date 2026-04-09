@@ -10,6 +10,7 @@ import DeckManager from '@/components/decks/DeckManager.vue';
 import AnimeCard from '@/components/AnimeCard.vue';
 import CharacterCard from '@/components/CharacterCard.vue';
 import VirtualGrid from '@/components/VirtualGrid.vue';
+import { useDeckEditor } from '@/composables/useDeckEditor';
 import '@/utils/performanceMonitor'; // 启动性能监控
 
 const authStore = useAuthStore();
@@ -22,6 +23,9 @@ const activeTab = ref<'anime' | 'character' | 'decks'>('anime');
 const selectedCard = ref<AnimeCardType | CharacterCardType | null>(null);
 const selectedCardType = ref<'anime' | 'character'>('anime');
 const rarityOrder: Rarity[] = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
+
+// Deck Editor Integration
+const { isEditing, addToDeck, currentDeckName } = useDeckEditor();
 
 // Filters
 const animeFilters = ref({ name: '', rarity: '', tag: '' });
@@ -50,6 +54,18 @@ function openDetail(card: AnimeCardType | CharacterCardType, type: 'anime' | 'ch
 
 function closeDetail() {
     selectedCard.value = null;
+}
+
+// 统一点击处理
+function handleCardClick(card: AnimeCardType | CharacterCardType, type: 'anime' | 'character') {
+    if (isEditing.value) {
+        const success = addToDeck(card.id, type);
+        if (!success) {
+            alert(`无法添加 ${card.name} (重复或已满)`);
+        }
+    } else {
+        openDetail(card, type);
+    }
 }
 
 function handleDismantleAll(type: 'anime' | 'character') {
@@ -161,6 +177,20 @@ const filteredCharacterCards = computed(() => {
 
 <template>
   <div class="space-y-6">
+    <!-- Deck Editing Mode Banner -->
+    <div v-if="isEditing" class="bg-indigo-600 text-white px-4 py-3 rounded-lg shadow-md flex justify-between items-center animate-pulse">
+      <div class="flex items-center gap-3">
+        <span class="flex h-3 w-3 relative">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+        </span>
+        <span class="font-bold tracking-widest">正在为卡组 [{{ currentDeckName }}] 选择成员...</span>
+      </div>
+      <button @click="activeTab = 'decks'" class="text-xs bg-white/20 hover:bg-white/30 px-3 py-1 rounded-full backdrop-blur-sm transition-colors uppercase font-black">
+        返回编辑器
+      </button>
+    </div>
+
     <!-- Header, Tabs, and Filters -->
     <div class="bg-white rounded-lg shadow-sm text-gray-800 border-2 border-gray-200">
       <div class="border-b border-gray-200 px-6 pt-4 pb-2">
@@ -231,7 +261,7 @@ const filteredCharacterCards = computed(() => {
             :container-height="VIRTUAL_GRID_CONFIG.containerHeight"
             :min-item-width="VIRTUAL_GRID_CONFIG.minItemWidth"
             :gap="VIRTUAL_GRID_CONFIG.gap"
-            @item-click="openDetail($event, 'anime')"
+            @item-click="handleCardClick($event, 'anime')"
           >
             <template #default="{ item }">
               <AnimeCard :anime="item as AnimeCardType & { count: number }" :count="item.count" :show-strength="true" />
@@ -239,7 +269,7 @@ const filteredCharacterCards = computed(() => {
           </VirtualGrid>
           <!-- 传统版本（数据量少时使用） -->
           <div v-else class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-4">
-            <AnimeCard v-for="card in filteredAnimeCards" :key="card.id" :anime="card" :count="card.count" :show-strength="true" @click="openDetail(card, 'anime')"/>
+            <AnimeCard v-for="card in filteredAnimeCards" :key="card.id" :anime="card" :count="card.count" :show-strength="true" @click="handleCardClick(card, 'anime')"/>
           </div>
         </div>
 
@@ -256,7 +286,7 @@ const filteredCharacterCards = computed(() => {
             :container-height="VIRTUAL_GRID_CONFIG.containerHeight"
             :min-item-width="VIRTUAL_GRID_CONFIG.minItemWidth"
             :gap="VIRTUAL_GRID_CONFIG.gap"
-            @item-click="openDetail($event, 'character')"
+            @item-click="handleCardClick($event, 'character')"
           >
             <template #default="{ item }">
               <CharacterCard :character="item as CharacterCardType & { count: number }" :count="item.count" />
@@ -264,7 +294,7 @@ const filteredCharacterCards = computed(() => {
           </VirtualGrid>
           <!-- 传统版本（数据量少时使用） -->
           <div v-else class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-4">
-            <CharacterCard v-for="card in filteredCharacterCards" :key="card.id" :character="card" :count="card.count" @click="openDetail(card, 'character')"/>
+            <CharacterCard v-for="card in filteredCharacterCards" :key="card.id" :character="card" :count="card.count" @click="handleCardClick(card, 'character')"/>
           </div>
         </div>
         

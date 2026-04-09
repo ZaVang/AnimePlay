@@ -59,18 +59,30 @@ describe('Skill Registry', () => {
       dialogue: mockDialogueSystem as any,
     });
 
-    clearSkillCache();
-    resetSkillStats();
+    // Reset all mock functions before each test
+    vi.clearAllMocks();
   });
+
+  const mockApi = {
+    drawCards: vi.fn(),
+    changeTp: vi.fn(),
+    discardCard: vi.fn(),
+    addLog: vi.fn(),
+    addNotification: vi.fn(),
+    addTemporaryBonus: vi.fn(),
+    viewOpponentHand: vi.fn().mockResolvedValue(undefined),
+    getOpponentId: vi.fn((id) => (id === 'playerA' ? 'playerB' : 'playerA')),
+    getPlayerName: vi.fn(() => 'TestPlayer'),
+  };
 
   describe('runEffect', () => {
     it('should execute existing skill effect', async () => {
       const mockContext: EffectContext = {
         playerId: 'playerA',
         event: 'onPlay',
-        card: null,
-        role: null,
-        addStrengthBonus: null,
+        card: undefined as any,
+        role: 'attacker',
+        api: mockApi as any,
       };
 
       // This should not throw for any registered skill
@@ -81,9 +93,9 @@ describe('Skill Registry', () => {
       const mockContext: EffectContext = {
         playerId: 'playerA',
         event: 'onPlay',
-        card: null,
-        role: null,
-        addStrengthBonus: null,
+        card: undefined as any,
+        role: 'attacker',
+        api: mockApi as any,
       };
 
       const consoleSpy = vi.spyOn(console, 'warn').mockImplementation(() => {});

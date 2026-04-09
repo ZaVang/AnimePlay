@@ -60,3 +60,9 @@ export interface Notification {
   message: string;
   type: 'info' | 'warning';
 }
+
+export interface BattleContext {
+  topicBias: number;
+  attackerAuraBonus?: number;
+  defenderAuraBonus?: number;
+}

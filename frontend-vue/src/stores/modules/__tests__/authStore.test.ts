@@ -1,15 +1,36 @@
-/**
- * AuthStore Unit Tests
- */
-
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { setActivePinia, createPinia } from 'pinia';
+
+vi.mock('../../../api/persistence', () => ({
+  PersistenceService: {
+    saveUserData: vi.fn().mockResolvedValue(undefined),
+    loadUserData: vi.fn().mockResolvedValue({ isNewUser: true })
+  }
+}));
+
 import { useAuthStore } from '../authStore';
+import { PersistenceService } from '../../../api/persistence';
 
 describe('AuthStore', () => {
   beforeEach(() => {
     setActivePinia(createPinia());
+    vi.clearAllMocks();
+    
+    // Mock localStorage
+    const store: Record<string, string> = {};
+    vi.stubGlobal('localStorage', {
+      getItem: vi.fn((key: string) => store[key] || null),
+      setItem: vi.fn((key: string, value: string) => { store[key] = value }),
+      removeItem: vi.fn((key: string) => { delete store[key] }),
+      clear: vi.fn(() => { for (const key in store) delete store[key] })
+    });
+
+    // Mock window.alert
+    vi.stubGlobal('alert', vi.fn());
   });
+
+  // Helper to wait for any outstanding promises if necessary
+  const flushPromises = () => new Promise(resolve => setTimeout(resolve, 0));
 
   describe('Initial State', () => {
     it('should initialize with empty current user', () => {
@@ -80,7 +101,7 @@ describe('AuthStore', () => {
       await authStore.login('testuser');
       await authStore.logout();
 
-      expect(authStore.logs.some(log => log.message.includes('登出'))).toBe(true);
+      expect(authStore.logs.some((log: any) => log.message.includes('连接断开'))).toBe(true);
     });
   });
 
@@ -169,12 +190,12 @@ describe('AuthStore', () => {
       expect(authStore.exp).toBe(initialExp);
     });
 
-    it('should add log when gaining exp', async () => {
+    it('should add log when leveling up via exp gain', async () => {
       const authStore = useAuthStore();
       await authStore.login('testuser');
-      authStore.addExp(100);
+      authStore.addExp(10000); // Trigger level up
 
-      expect(authStore.logs.some(log => log.message.includes('100'))).toBe(true);
+      expect(authStore.logs.some((log: any) => log.message.includes('核心同步率提升'))).toBe(true);
     });
   });
 

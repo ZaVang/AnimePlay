@@ -1,7 +1,7 @@
 import { ref, computed } from 'vue';
 import { useEconomyStore } from '@/stores/modules/economyStore';
 import type { CharacterCard } from '@/types/card';
-import type { CharacterNurtureData } from '@/stores/userStore';
+import type { CharacterNurtureData } from '@/types/store';
 
 export function useInteractionData(
   character: CharacterCard & { nurtureData: CharacterNurtureData }

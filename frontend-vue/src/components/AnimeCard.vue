@@ -122,46 +122,52 @@ function toggleFavorite(event: MouseEvent) {
 
 <template>
   <div
-    class="card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer group relative"
+    class="card bg-industrial-800 border border-industrial-700 hover:border-clinical-warning transition-all duration-300 cursor-pointer group relative datapad-reveal"
     :class="[
         rarityEffectClass,
-        { 'opacity-50 grayscale': isInDeck }
+        { 'opacity-50 grayscale': isInDeck },
+        'clip-chamfer-sm'
     ]"
     :data-item-id="anime.id"
     data-item-type="动画"
   >
-    <!-- Cost Gem: Now with conditional rendering and cost modification display -->
-    <div v-if="anime.cost > 0 && showCost" class="cost-gem" :class="{ 'cost-modified': costInfo.hasModification }">
-      <span v-if="!costInfo.hasModification">{{ costInfo.finalCost }}</span>
-      <span v-else class="cost-with-modification">
-        <span class="original-cost">{{ costInfo.baseCost }}</span>
-        <span class="final-cost">{{ costInfo.finalCost }}</span>
-      </span>
+    <!-- Tactical Cost Tag -->
+    <div v-if="anime.cost > 0 && showCost" 
+         class="absolute top-0 left-0 z-20 bg-industrial-900 border-b border-r border-industrial-700 px-3 py-1 font-mono font-bold text-clinical-warning clip-chamfer-sm"
+         :class="{ 'border-clinical-warning animate-pulse': costInfo.hasModification }">
+      <div v-if="!costInfo.hasModification" class="text-lg">{{ costInfo.finalCost }}</div>
+      <div v-else class="flex flex-col items-start leading-none">
+        <span class="text-[10px] line-through opacity-50">{{ costInfo.baseCost }}</span>
+        <span class="text-sm font-black">{{ costInfo.finalCost }}</span>
+      </div>
     </div>
 
-    <div class="relative">
+    <div class="relative overflow-hidden">
       <img
         :src="anime.image_path"
-        class="w-full aspect-[2/3] object-cover object-top"
+        class="w-full aspect-[2/3] object-cover object-top opacity-80 group-hover:opacity-100 transition-opacity duration-500"
         @error="onImageError"
       />
       
-      <!-- Favorite Star -->
+      <!-- Scanline Overlay on Image -->
+      <div class="absolute inset-0 bg-scanline pointer-events-none opacity-10"></div>
+
+      <!-- Favorite Star (Tactical Style) -->
       <div 
         @click="toggleFavorite"
-        class="absolute top-1 left-1 w-7 h-7 flex items-center justify-center cursor-pointer rounded-full hover:bg-black/20 transition-colors"
+        class="absolute top-2 right-10 w-8 h-8 flex items-center justify-center cursor-pointer rounded-none hover:bg-industrial-700/50 transition-colors z-30"
         :title="isFavorite ? '取消喜爱' : '设为喜爱'"
       >
-        <svg v-if="isFavorite" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-yellow-400 drop-shadow-lg">
+        <svg v-if="isFavorite" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-clinical-warning">
           <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.007z" clip-rule="evenodd" />
         </svg>
-        <svg v-else xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white text-opacity-80 group-hover:text-yellow-300 drop-shadow-md" style="filter: drop-shadow(0 0 2px rgba(0,0,0,0.7));">
+        <svg v-else xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-industrial-300 group-hover:text-clinical-warning">
           <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.31h5.418a.562.562 0 01.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-3.355a.563.563 0 00-.586 0L6.982 21.03a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.562.562 0 01.321-.988h5.418a.563.563 0 00.475-.31L11.48 3.5z" />
         </svg>
       </div>
 
       <div
-        class="absolute top-1 right-1 px-2 py-0.5 text-xs font-bold text-white rounded-bl-lg rounded-tr-lg"
+        class="absolute top-0 right-0 px-3 py-1 text-[10px] font-mono font-bold text-industrial-900 bg-industrial-100 clip-chamfer-sm"
         :class="[
           rarityColorClass,
           rarityColorClass.includes('from') ? 'bg-gradient-to-r' : ''
@@ -172,38 +178,37 @@ function toggleFavorite(event: MouseEvent) {
       
       <div
         v-if="count && count > 1"
-        class="absolute bottom-1 right-1 bg-indigo-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center"
+        class="absolute bottom-2 right-2 bg-industrial-900 border border-industrial-600 text-industrial-100 text-[10px] font-mono font-bold px-2 py-0.5"
       >
         x{{ count }}
       </div>
       
-      <div v-if="isDuplicate" class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-center p-1">
-        <span class="text-white font-bold text-2xl">+1</span>
+      <div v-if="isDuplicate" class="absolute inset-0 bg-industrial-900/80 flex items-center justify-center text-center p-1 font-mono">
+        <span class="text-clinical-warning font-bold text-3xl tracking-tighter">DATA_REDUNDANT</span>
       </div>
-      <div v-if="isNew" class="absolute top-1 left-1 bg-green-500 text-white text-xs font-bold px-1 rounded">
-        NEW
+      <div v-if="isNew" class="absolute top-10 left-0 bg-clinical-warning text-industrial-900 text-[10px] font-bold px-2 py-0.5 clip-chamfer-sm z-10">
+        NEW_ENTRY
       </div>
     </div>
     
-    <div class="p-2">
-      <p class="text-xs text-center font-bold truncate text-gray-900" :title="anime.name">{{ anime.name }}</p>
-      <!-- Strength display next to cost -->
-      <div v-if="showStrength" class="flex justify-center items-center gap-2 mt-1">
-        <div class="flex items-center text-xs text-gray-600">
-          <span v-if="!strengthInfo.hasBonus" class="text-blue-600 font-bold">{{ strengthInfo.finalStrength }}</span>
-          <span v-else class="strength-with-bonus text-green-600 font-bold">
-            <span class="base-strength">{{ strengthInfo.baseStrength }}</span>
-            <span class="bonus-indicator">+{{ strengthInfo.bonus }}</span>
+    <div class="px-3 py-2 bg-industrial-900/50 border-t border-industrial-700">
+      <p class="text-[11px] font-mono font-bold truncate text-industrial-100 uppercase tracking-wider" :title="anime.name">
+        {{ anime.name }}
+      </p>
+      
+      <!-- Strength display (Tactical Grid Style) -->
+      <div v-if="showStrength" class="flex justify-between items-center mt-2 pt-2 border-t border-industrial-800/50 font-mono text-[10px]">
+        <div class="flex items-center gap-2">
+          <span class="text-industrial-600">STR:</span>
+          <span v-if="!strengthInfo.hasBonus" class="text-clinical-blue font-bold">{{ strengthInfo.finalStrength }}</span>
+          <span v-else class="text-clinical-warning font-bold flex items-center gap-1">
+            {{ strengthInfo.finalStrength }}
+            <span class="text-[8px] opacity-70">({{ strengthInfo.baseStrength }}+{{ strengthInfo.bonus }})</span>
           </span>
-          <span class="ml-1">强度</span>
         </div>
-        <div v-if="anime.cost > 0" class="flex items-center text-xs text-gray-600">
-          <span v-if="!costInfo.hasModification" class="text-purple-600 font-bold">{{ costInfo.finalCost }}</span>
-          <span v-else class="cost-with-modification-inline text-green-600 font-bold">
-            <span class="original-cost-inline">{{ costInfo.baseCost }}</span>
-            <span class="final-cost-inline">{{ costInfo.finalCost }}</span>
-          </span>
-          <span class="ml-1">TP</span>
+        <div class="flex items-center gap-2">
+          <span class="text-industrial-600">TP:</span>
+          <span class="text-industrial-100">{{ costInfo.finalCost }}</span>
         </div>
       </div>
     </div>
@@ -212,108 +217,25 @@ function toggleFavorite(event: MouseEvent) {
 
 <style scoped>
 .card {
-  position: relative;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.cost-gem {
-  position: absolute;
-  top: -8px;
-  left: -8px;
-  width: 40px;
-  height: 40px;
-  background-color: #0d6efd;
-  color: white;
-  font-size: 22px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 3px solid white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 20;
-  transition: all 0.3s ease;
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);
 }
 
-.cost-gem.cost-modified {
-  background: linear-gradient(45deg, #22c55e, #16a34a);
-  border-color: #dcfce7;
-  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
-  animation: pulse-glow 2s infinite;
-}
-
-.cost-with-modification {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 1;
-}
-
-.original-cost {
-  font-size: 14px;
-  text-decoration: line-through;
-  opacity: 0.7;
-  margin-bottom: -2px;
-}
-
-.final-cost {
-  font-size: 18px;
-  font-weight: 900;
-}
+/* 稀有度光效增强 */
+.rarity-ur { box-shadow: inset 0 0 15px rgba(239, 68, 68, 0.2); }
+.rarity-ssr { box-shadow: inset 0 0 15px rgba(250, 204, 21, 0.1); }
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.2);
   }
   50% {
-    box-shadow: 0 4px 16px rgba(34, 197, 94, 0.6);
-  }
-}
-
-/* 强度加成显示样式 */
-.strength-with-bonus {
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-}
-
-.base-strength {
-  color: #2563eb; /* blue-600 */
-}
-
-.bonus-indicator {
-  color: #16a34a; /* green-600 */
-  font-size: 10px;
-  background: rgba(34, 197, 94, 0.1);
-  padding: 1px 3px;
-  border-radius: 3px;
-  animation: glow-green 2s infinite;
-}
-
-/* 内联成本修改显示 */
-.cost-with-modification-inline {
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-}
-
-.original-cost-inline {
-  text-decoration: line-through;
-  opacity: 0.6;
-  font-size: 10px;
-}
-
-.final-cost-inline {
-  color: #16a34a; /* green-600 */
-}
-
-@keyframes glow-green {
-  0%, 100% {
-    background: rgba(34, 197, 94, 0.1);
-  }
-  50% {
-    background: rgba(34, 197, 94, 0.2);
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
   }
 }
 </style>
+

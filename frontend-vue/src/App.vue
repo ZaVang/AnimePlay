@@ -24,42 +24,48 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="bg-gray-800 text-gray-200 min-h-screen">
-    <header class="bg-gray-900 shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto px-4">
+  <div class="bg-industrial-900 text-industrial-100 min-h-screen selection:bg-clinical-warning selection:text-black">
+    <header class="bg-industrial-800 border-b border-industrial-700 sticky top-0 z-50 font-sans">
+        <div class="container mx-auto px-6">
             <div class="flex justify-between items-center py-3">
                 
                 <!-- Logo -->
-                <RouterLink to="/" class="text-2xl font-bold text-white hover:text-green-400 transition-colors">
-                  动画宅的自我修养
+                <RouterLink to="/" class="text-xl font-black tracking-[0.2em] text-industrial-100 hover:text-clinical-warning transition-none">
+                  幻界战术终端
                 </RouterLink>
 
                 <!-- 用户信息 / 登录区域 -->
-                <div class="flex items-center gap-3">
-                  <div v-if="authStore.isLoggedIn" class="flex items-center gap-4 text-sm">
+                <div class="flex items-center gap-4">
+                  <div v-if="authStore.isLoggedIn" class="flex items-center gap-6 text-sm">
                       <div class="flex flex-col text-right">
-                        <span class="font-bold text-green-400">{{ authStore.currentUser }}</span>
-                        <span class="text-xs text-gray-400">Lv. {{ authStore.level }}</span>
+                        <span class="font-bold text-white tracking-wider">用户：{{ authStore.currentUser }}</span>
+                        <span class="text-xs text-industrial-300">等级.{{ String(authStore.level).padStart(2, '0') }}</span>
                       </div>
-                      <div class="h-8 w-px bg-gray-700"></div>
-                      <div class="flex items-center gap-3 text-xs">
-                        <span>动画券: {{ economyStore.animeGachaTickets }}</span>
-                        <span>角色券: {{ economyStore.characterGachaTickets }}</span>
+                      <div class="h-8 w-px bg-industrial-700"></div>
+                      <div class="flex gap-4 text-xs tracking-wider">
+                        <span class="flex flex-col">
+                          <span class="text-industrial-600 border-b border-industrial-700 text-[10px]">动画核心</span>
+                          <span class="text-white font-bold">{{ String(economyStore.animeGachaTickets).padStart(3, '0') }}</span>
+                        </span>
+                        <span class="flex flex-col">
+                          <span class="text-industrial-600 border-b border-industrial-700 text-[10px]">人员核心</span>
+                          <span class="text-white font-bold">{{ String(economyStore.characterGachaTickets).padStart(3, '0') }}</span>
+                        </span>
                       </div>
-                      <button @click="authStore.logout()" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg text-sm transition-colors">
-                          登出
+                      <button @click="authStore.logout()" class="border border-industrial-600 px-4 py-2 text-xs font-bold tracking-wider text-industrial-300 hover:bg-clinical-danger hover:text-white hover:border-clinical-danger transition-none clip-chamfer-sm">
+                          断开连接
                       </button>
                   </div>
-                  <div v-else class="flex gap-2 items-center">
+                  <div v-else class="flex gap-3 items-center">
                       <input 
                           v-model="usernameInput" 
                           @keyup.enter="handleLogin"
                           type="text" 
-                          placeholder="用户名" 
-                          class="px-3 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500 transition w-40"
+                          placeholder="输入用户标识 ID" 
+                          class="px-3 py-2 rounded-none bg-industrial-900 border border-industrial-600 text-sm focus:outline-none focus:border-clinical-warning transition-none w-48 placeholder-industrial-600 text-white"
                       />
-                      <button @click="handleLogin" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition-colors">
-                          登录
+                      <button @click="handleLogin" class="border border-industrial-300 bg-industrial-100 text-industrial-900 font-bold px-4 py-2 text-sm tracking-wider hover:bg-clinical-warning hover:border-clinical-warning transition-none clip-chamfer-sm">
+                          接入系统
                       </button>
                   </div>
                 </div>
@@ -68,20 +74,35 @@ onMounted(() => {
     </header>
 
     <div class="flex">
-        <nav class="w-48 bg-gray-800 p-4 pt-6">
-            <ul class="space-y-2">
-                <li><RouterLink to="/" class="nav-link">主页</RouterLink></li>
-                <li><RouterLink to="/gacha" class="nav-link">抽卡系统</RouterLink></li>
-                <li><RouterLink to="/collections" class="nav-link">卡牌收藏</RouterLink></li>
-                <li><RouterLink to="/nurture" class="nav-link">角色养成</RouterLink></li>
-                <li><RouterLink to="/battle" class="nav-link">宅理论战</RouterLink></li>
-                <li><RouterLink to="/squad-battle" class="nav-link">小队战斗</RouterLink></li>
-                <li><RouterLink to="/settings" class="nav-link">设置</RouterLink></li>
+        <nav class="w-56 bg-industrial-800 border-r border-industrial-700 p-6 pt-8 font-sans relative min-h-[calc(100vh-60px)]">
+            <!-- Sidebar decoration -->
+            <div class="absolute inset-0 bg-scanline pointer-events-none opacity-[0.03]"></div>
+            <div class="absolute bottom-4 left-6 text-[10px] text-industrial-600 pointer-events-none font-sans">
+              系统版本 // 0.9.1a<br>
+              运行状态 // 正常
+            </div>
+
+            <ul class="space-y-1 relative z-10">
+                <li><RouterLink to="/" class="nav-link"><span class="mr-2 opacity-30 text-xs">01</span> 主控面板</RouterLink></li>
+                <li><RouterLink to="/gacha" class="nav-link"><span class="mr-2 opacity-30 text-xs">02</span> 人员招募</RouterLink></li>
+                <li><RouterLink to="/collections" class="nav-link"><span class="mr-2 opacity-30 text-xs">03</span> 机密档案</RouterLink></li>
+                <li><RouterLink to="/nurture" class="nav-link"><span class="mr-2 opacity-30 text-xs">04</span> 战力调优</RouterLink></li>
+                <li><RouterLink to="/battle" class="nav-link"><span class="mr-2 opacity-30 text-xs">05</span> 逻辑推演</RouterLink></li>
+                <li><RouterLink to="/squad-battle" class="nav-link"><span class="mr-2 opacity-30 text-xs">06</span> 战术小队</RouterLink></li>
+                <li class="pt-6 mt-6 border-t border-industrial-700">
+                  <RouterLink to="/settings" class="nav-link text-industrial-600 hover:text-industrial-300"><span class="mr-2 opacity-30 text-xs">99</span> 系统设置</RouterLink>
+                </li>
             </ul>
         </nav>
         
-        <main class="flex-1 p-6">
-          <RouterView />
+        <main class="flex-1 p-8 relative">
+          <!-- Background decoration for the main view -->
+          <div class="absolute inset-0 pointer-events-none overflow-hidden opacity-5 z-0 flex items-center justify-center">
+            <span class="text-[12rem] leading-none font-bold whitespace-nowrap text-white" style="writing-mode: vertical-rl;">机密数据</span>
+          </div>
+          <div class="relative z-10 w-full h-full">
+            <RouterView />
+          </div>
         </main>
     </div>
 
@@ -89,54 +110,21 @@ onMounted(() => {
 </template>
 
 <style>
-body { font-family: 'Noto Sans SC', sans-serif; }
+/* Font imported in index.html usually, but let's keep typography classes in Tailwind */
 
 .nav-link {
-    @apply block px-4 py-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white transition-colors duration-200;
+    @apply block px-4 py-3 text-sm text-industrial-300 hover:text-industrial-100 hover:bg-industrial-700/50 transition-none border-l-4 border-transparent hover:border-industrial-300 uppercase tracking-widest;
 }
 .router-link-exact-active {
-    @apply bg-green-500 text-white font-bold;
+    @apply text-clinical-warning border-clinical-warning bg-industrial-700/30 font-bold;
 }
 
-/* Card effects, we can keep them here for now or move them to main.css */
-.legendary-glow::before {
-    content: '';
-    position: absolute;
-    top: -2px; left: -2px; right: -2px; bottom: -2px;
-    background: linear-gradient(45deg, #fbbf24, #f59e0b, #fbbf24, #f59e0b);
-    background-size: 400% 400%;
-    border-radius: inherit;
-    z-index: -1;
-    animation: legendary-shine 2s infinite;
-}
-.masterpiece-shine::before {
-    content: '';
-    position: absolute;
-    top: -1px; left: -1px; right: -1px; bottom: -1px;
-    background: linear-gradient(45deg, #a855f7, #ec4899, #a855f7, #ec4899);
-    background-size: 400% 400%;
-    border-radius: inherit;
-    z-index: -1;
-    animation: masterpiece-pulse 1.5s infinite;
-}
+/* Hard reset for specific card visuals waiting to be refactored */
+.legendary-glow::before,
+.masterpiece-shine::before,
 .popular-sparkle::after {
-    content: '✨';
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    font-size: 12px;
-    animation: sparkle 2s infinite;
+    display: none !important;
 }
-@keyframes legendary-shine {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-}
-@keyframes masterpiece-pulse {
-    0%, 100% { background-position: 0% 50%; opacity: 0.8; }
-    50% { background-position: 100% 50%; opacity: 1; }
-}
-@keyframes sparkle {
-    0%, 100% { opacity: 0.5; transform: scale(1); }
-    50% { opacity: 1; transform: scale(1.2); }
-}
+
+/* Global utility tweaks that are outside standard tailwind can stay in main.css */
 </style>

@@ -2,7 +2,7 @@
 import { computed } from 'vue';
 import { useNurtureStore } from '@/stores/modules/nurtureStore';;
 import type { CharacterCard } from '@/types/card';
-import type { CharacterNurtureData } from '@/stores/userStore';
+import type { CharacterNurtureData } from '@/types/store';
 import { generateBattleStats, calculateBattlePower } from '@/utils/battleCalculator';
 
 const props = defineProps<{
