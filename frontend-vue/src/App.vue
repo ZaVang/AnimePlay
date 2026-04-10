@@ -24,14 +24,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="bg-industrial-900 text-industrial-100 min-h-screen selection:bg-clinical-warning selection:text-black">
-    <header class="bg-industrial-800 border-b border-industrial-700 sticky top-0 z-50 font-sans">
+  <div class="bg-abyss text-industrial-100 min-h-screen selection:bg-gold selection:text-black font-ui">
+    <header class="glass-substrate sticky top-0 z-50 font-ui transition-all duration-500">
         <div class="container mx-auto px-6">
             <div class="flex justify-between items-center py-3">
                 
                 <!-- Logo -->
-                <RouterLink to="/" class="text-xl font-black tracking-[0.2em] text-industrial-100 hover:text-clinical-warning transition-none">
-                  幻界战术终端
+                <RouterLink to="/" class="text-xl font-display font-bold tracking-[0.2em] text-industrial-100 hover:text-gold transition-all duration-300">
+                  ANIME<span class="text-gold">PLAY</span> // 终端
                 </RouterLink>
 
                 <!-- 用户信息 / 登录区域 -->
@@ -44,16 +44,16 @@ onMounted(() => {
                       <div class="h-8 w-px bg-industrial-700"></div>
                       <div class="flex gap-4 text-xs tracking-wider">
                         <span class="flex flex-col">
-                          <span class="text-industrial-600 border-b border-industrial-700 text-[10px]">动画核心</span>
-                          <span class="text-white font-bold">{{ String(economyStore.animeGachaTickets).padStart(3, '0') }}</span>
+                          <span class="text-industrial-500 text-[9px] uppercase font-bold">Anime Core</span>
+                          <span class="text-white font-display text-xs text-right">{{ String(economyStore.animeGachaTickets).padStart(3, '0') }}</span>
                         </span>
                         <span class="flex flex-col">
-                          <span class="text-industrial-600 border-b border-industrial-700 text-[10px]">人员核心</span>
-                          <span class="text-white font-bold">{{ String(economyStore.characterGachaTickets).padStart(3, '0') }}</span>
+                          <span class="text-industrial-500 text-[9px] uppercase font-bold">Personnel</span>
+                          <span class="text-white font-display text-xs text-right">{{ String(economyStore.characterGachaTickets).padStart(3, '0') }}</span>
                         </span>
                       </div>
-                      <button @click="authStore.logout()" class="border border-industrial-600 px-4 py-2 text-xs font-bold tracking-wider text-industrial-300 hover:bg-clinical-danger hover:text-white hover:border-clinical-danger transition-none clip-chamfer-sm">
-                          断开连接
+                      <button @click="authStore.logout()" class="border border-white/10 px-4 py-2 text-[10px] font-bold tracking-widest text-industrial-300 hover:bg-clinical-danger hover:text-white hover:border-clinical-danger transition-all duration-300 uppercase">
+                          Disconnect
                       </button>
                   </div>
                   <div v-else class="flex gap-3 items-center">
@@ -74,7 +74,7 @@ onMounted(() => {
     </header>
 
     <div class="flex">
-        <nav class="w-56 bg-industrial-800 border-r border-industrial-700 p-6 pt-8 font-sans relative min-h-[calc(100vh-60px)]">
+        <nav class="w-64 bg-substrate/40 border-r border-white/5 p-6 pt-8 font-ui relative min-h-[calc(100vh-64px)]">
             <!-- Sidebar decoration -->
             <div class="absolute inset-0 bg-scanline pointer-events-none opacity-[0.03]"></div>
             <div class="absolute bottom-4 left-6 text-[10px] text-industrial-600 pointer-events-none font-sans">
@@ -113,10 +113,10 @@ onMounted(() => {
 /* Font imported in index.html usually, but let's keep typography classes in Tailwind */
 
 .nav-link {
-    @apply block px-4 py-3 text-sm text-industrial-300 hover:text-industrial-100 hover:bg-industrial-700/50 transition-none border-l-4 border-transparent hover:border-industrial-300 uppercase tracking-widest;
+    @apply block px-4 py-3 text-[11px] text-industrial-400 hover:text-industrial-100 hover:bg-white/5 transition-all duration-300 border-l-2 border-transparent hover:border-gold uppercase tracking-[0.2em] font-medium;
 }
 .router-link-exact-active {
-    @apply text-clinical-warning border-clinical-warning bg-industrial-700/30 font-bold;
+    @apply text-gold border-gold bg-gold/5 font-bold;
 }
 
 /* Hard reset for specific card visuals waiting to be refactored */
