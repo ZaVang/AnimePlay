@@ -1,4 +1,7 @@
 <script setup lang="ts">
+/**
+ * Gacha History - Mission Archive Record Standard
+ */
 import { computed } from 'vue';
 import { useCollectionStore } from '@/stores/modules/collectionStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
@@ -24,7 +27,7 @@ const historyWithDetails = computed(() => {
         const card = getCardById(item.id);
         return {
             ...item,
-            name: card?.name || '未知卡牌'
+            name: card?.name || 'UNKNOWN_SUBJECT'
         }
     });
 });
@@ -37,9 +40,7 @@ const rarityOrder: ('UR' | 'HR' | 'SSR' | 'SR' | 'R' | 'N')[] = ['UR', 'HR', 'SS
 
 const chartData = computed(() => {
   const totalPulls = historyWithDetails.value.length;
-  if (totalPulls === 0) {
-      return { labels: [], datasets: [] };
-  }
+  if (totalPulls === 0) return { labels: [], datasets: [] };
   
   const counts = historyWithDetails.value.reduce((acc, item) => {
     acc[item.rarity] = (acc[item.rarity] || 0) + 1;
@@ -48,17 +49,16 @@ const chartData = computed(() => {
 
   const labels = rarityOrder.filter(r => counts[r]);
   const data = labels.map(r => counts[r]);
-  const colors = labels.map(r => rarityConfig.value[r]?.chartColor || '#cccccc');
+  const colors = labels.map(r => rarityConfig.value[r]?.chartColor || '#D4A574');
 
   return {
     labels: labels,
-    datasets: [
-      {
-        backgroundColor: colors,
-        data: data,
-        label: '数量'
-      },
-    ],
+    datasets: [{
+      backgroundColor: colors,
+      data: data,
+      label: 'Units',
+      borderRadius: 2
+    }],
   };
 });
 
@@ -68,22 +68,16 @@ const chartOptions = computed(() => {
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
-            legend: {
-                display: false
-            },
+            legend: { display: false },
             tooltip: {
+                backgroundColor: 'rgba(0,0,0,0.9)',
+                titleFont: { family: 'Geist Mono', size: 10 },
+                bodyFont: { family: 'Geist Mono', size: 10 },
                 callbacks: {
-                    label: function(context: any) {
-                        let label = context.dataset.label || '';
-                        if (label) {
-                            label += ': ';
-                        }
-                        if (context.parsed.y !== null) {
-                            const count = context.parsed.y;
-                            const percentage = totalPulls > 0 ? ((count / totalPulls) * 100).toFixed(2) : 0;
-                            label += `${count} (${percentage}%)`;
-                        }
-                        return label;
+                    label: (context: any) => {
+                        const count = context.parsed.y;
+                        const percentage = totalPulls > 0 ? ((count / totalPulls) * 100).toFixed(1) : 0;
+                        return ` QUANTITY: ${count} (${percentage}%)`;
                     }
                 }
             },
@@ -91,65 +85,97 @@ const chartOptions = computed(() => {
                 anchor: 'end',
                 align: 'top',
                 formatter: (value: number) => {
-                    const percentage = totalPulls > 0 ? ((value / totalPulls) * 100).toFixed(1) + '%' : '0%';
-                    return `${value}\n(${percentage})`;
+                    const percentage = totalPulls > 0 ? ((value / totalPulls) * 100).toFixed(0) + '%' : '0%';
+                    return `${value}\n[${percentage}]`;
                 },
-                font: {
-                    weight: 'bold'
-                },
-                color: '#4A5568'
+                font: { family: 'Geist Mono', size: 8, weight: 'bold' },
+                color: '#D4A574'
             }
         },
         scales: {
             y: {
                 beginAtZero: true,
-                grace: '10%', // Add 10% padding to the top
-                ticks: {
-                    stepSize: 1
-                }
+                grid: { color: 'rgba(255,255,255,0.05)' },
+                ticks: { color: '#666', font: { family: 'Geist Mono', size: 8 } }
+            },
+            x: {
+                grid: { display: false },
+                ticks: { color: '#D4A574', font: { family: 'Geist Mono', size: 10, weight: 'bold' } }
             }
         }
     }
 });
 
 function formatTime(timestamp: number) {
-  return new Date(timestamp).toLocaleString();
+  const d = new Date(timestamp);
+  return `${d.getMonth()+1}.${d.getDate()} // ${d.getHours()}:${String(d.getMinutes()).padStart(2, '0')}`;
 }
 </script>
 
 <template>
-  <div>
-    <h3 class="text-lg font-semibold mb-2">{{ gachaType === 'anime' ? '动画抽卡历史' : '角色抽卡历史' }} (总计: {{ historyWithDetails.length }}抽)</h3>
-    <p class="text-sm text-gray-600 mb-4">
-      <i class="fas fa-info-circle mr-1"></i>
-      仅显示最近500抽的历史记录和统计数据
-    </p>
-    <div v-if="historyWithDetails.length > 0" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      <!-- Chart -->
-      <div class="relative h-96">
-        <Bar :data="chartData" :options="chartOptions" />
+  <div class="gacha-history-archives space-y-8 quantic-reveal">
+    <!-- Summary Header -->
+    <div class="flex justify-between items-end border-b border-white/5 pb-4">
+       <div class="space-y-1">
+          <h3 class="text-[10px] font-display font-bold text-gold tracking-[0.3em] uppercase opacity-70">Archive Buffer</h3>
+          <div class="text-xl font-display font-black text-white uppercase tracking-tighter">Manifest History</div>
+       </div>
+       <div class="text-right">
+          <div class="text-[8px] font-display text-industrial-500 uppercase">Total Manifestations</div>
+          <div class="text-lg font-mono font-bold text-gold">{{ historyWithDetails.length }}</div>
+       </div>
+    </div>
+
+    <div v-if="historyWithDetails.length > 0" class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <!-- Chart Analytics -->
+      <div class="lg:col-span-7 bg-white/[0.02] border border-white/5 p-6 relative min-h-[400px]">
+        <div class="absolute top-4 left-6 text-[8px] font-display font-bold text-industrial-600 uppercase tracking-widest">Rarity Distribution Matrix</div>
+        <div class="h-full pt-8">
+           <Bar :data="chartData" :options="chartOptions as any" />
+        </div>
       </div>
 
-      <!-- History List -->
-      <div class="max-h-96 overflow-y-auto pr-2">
-        <ul class="space-y-2">
-          <li v-for="(item, index) in [...historyWithDetails].reverse()" :key="index" class="flex justify-between items-center p-2 rounded-md bg-gray-50">
-            <div class="flex items-center">
+      <!-- History Stream -->
+      <div class="lg:col-span-5 space-y-4">
+        <div class="text-[8px] font-display font-bold text-industrial-500 uppercase tracking-[0.4em] mb-4">Signal Stream</div>
+        <div class="history-scroll max-h-[400px] overflow-y-auto pr-4 space-y-1 scrollbar-none">
+          <div 
+            v-for="(item, index) in [...historyWithDetails].reverse()" 
+            :key="index" 
+            class="group flex justify-between items-center p-3 border border-white/5 bg-white/[0.01] hover:bg-white/[0.05] transition-all"
+          >
+            <div class="flex items-center gap-4">
+              <span class="text-[8px] font-mono opacity-20 group-hover:opacity-60 transition-opacity">{{ String(historyWithDetails.length - index).padStart(3, '0') }}</span>
               <span 
-                class="font-bold px-1.5 py-0.5 rounded text-xs text-white" 
-                :class="rarityConfig[item.rarity]?.c.includes('from') ? `bg-gradient-to-r ${rarityConfig[item.rarity]?.c}` : rarityConfig[item.rarity]?.c || 'bg-gray-400'"
+                class="font-display font-black text-[9px] px-2 py-0.5" 
+                :class="rarityConfig[item.rarity]?.c.includes('from') ? `bg-gradient-to-r ${rarityConfig[item.rarity]?.c} text-white` : 'text-gold border border-gold/30'"
               >
                 {{ item.rarity }}
               </span>
-              <span class="ml-3 font-medium text-sm truncate" :title="item.name">{{ item.name }}</span>
+              <span class="text-[10px] font-display font-black text-white uppercase tracking-tight truncate max-w-[120px]">{{ item.name }}</span>
             </div>
-            <span class="text-xs text-gray-500 flex-shrink-0 ml-2">{{ formatTime(item.timestamp) }}</span>
-          </li>
-        </ul>
+            <span class="text-[8px] font-mono text-industrial-600">{{ formatTime(item.timestamp) }}</span>
+          </div>
+        </div>
       </div>
     </div>
-    <div v-else class="text-center text-gray-500 py-8">
-      <p>还没有抽卡历史记录。</p>
+
+    <!-- Empty State -->
+    <div v-else class="py-24 text-center border border-dashed border-white/5">
+       <div class="text-4xl opacity-10 mb-4">📂</div>
+       <p class="text-[10px] font-display font-bold text-industrial-600 uppercase tracking-widest">Historical buffers are currently empty.</p>
     </div>
   </div>
 </template>
+
+<style scoped>
+.history-scroll {
+  scrollbar-width: none;
+}
+.history-scroll::-webkit-scrollbar {
+  display: none;
+}
+.history-item {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 98% 100%, 0 100%);
+}
+</style>

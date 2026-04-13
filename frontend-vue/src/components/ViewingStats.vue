@@ -17,102 +17,132 @@ const topGenres = computed(() => {
 });
 
 const progressLevel = computed(() => {
-  if (stats.value.consecutiveDays >= 30) return { level: '大师', color: 'text-purple-400', icon: '👑' };
-  if (stats.value.consecutiveDays >= 14) return { level: '专家', color: 'text-blue-400', icon: '🎖️' };
-  if (stats.value.consecutiveDays >= 7) return { level: '爱好者', color: 'text-green-400', icon: '⭐' };
-  if (stats.value.consecutiveDays >= 3) return { level: '初级', color: 'text-yellow-400', icon: '🌟' };
-  return { level: '新手', color: 'text-gray-400', icon: '🌱' };
+  if (stats.value.consecutiveDays >= 30) return { level: 'MASTER_05', color: 'text-gold', icon: '◈' };
+  if (stats.value.consecutiveDays >= 14) return { level: 'EXPERT_04', color: 'text-blue-400', icon: '◇' };
+  if (stats.value.consecutiveDays >= 7) return { level: 'ENTHUSIAST_03', color: 'text-green-400', icon: '△' };
+  if (stats.value.consecutiveDays >= 3) return { level: 'CADET_02', color: 'text-yellow-400', icon: '▽' };
+  return { level: 'INITIATE_01', color: 'text-industrial-600', icon: '○' };
 });
 </script>
 
 <template>
-  <div class="bg-industrial-800 border border-industrial-700 h-full flex flex-col clip-chamfer datapad-reveal">
-    <div class="tactical-panel-header">
-      <span class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-clinical-blue animate-pulse"></span>
-        观看数据统计分析
-      </span>
-      <span class="opacity-30">实时监测中</span>
+  <div class="viewing-stats-monitor-tactical h-full flex flex-col bg-black/60 backdrop-blur-md border border-white/5 relative overflow-hidden">
+    <!-- Static Backdrop Decoration -->
+    <div class="absolute inset-x-0 top-0 h-px bg-white/10 pointer-events-none"></div>
+    <div class="absolute inset-0 bg-scanline opacity-[0.02] pointer-events-none"></div>
+
+    <div class="p-6 border-b border-white/5 bg-white/[0.02] flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <div class="w-1.5 h-3 bg-gold"></div>
+        <span class="text-[10px] font-display font-black text-white uppercase tracking-[0.2em] italic self-center">LOGISTIC_STREAMS_MONITOR</span>
+      </div>
+      <div class="flex items-center gap-2">
+         <div class="w-1 h-1 bg-gold animate-ping"></div>
+         <span class="text-[8px] font-display font-bold text-gold uppercase tracking-widest opacity-60">LIVE_TELEMETRY</span>
+      </div>
     </div>
 
-    <div v-if="authStore.isLoggedIn" class="p-6 space-y-6 flex-1 overflow-y-auto font-sans text-white">
-      <!-- 观看等级 (Tactical Badge) -->
-      <div class="p-4 bg-industrial-900 border-l-4 border-clinical-blue flex justify-between items-center relative overflow-hidden">
-        <div>
-          <h3 class="text-xs text-industrial-500 font-bold mb-1">系统权限等级</h3>
-          <div class="text-2xl font-black italic tracking-tighter text-white">
-            第 {{ progressLevel.level }} 阶级
-          </div>
-          <p class="text-[11px] text-industrial-300 mt-1 font-bold">持续活跃稳定性：{{ stats.consecutiveDays }} 天</p>
-        </div>
-        <div class="text-4xl opacity-20 filter grayscale">{{ progressLevel.icon }}</div>
-        
-        <!-- Decoration lines -->
-        <div class="absolute top-0 right-0 w-8 h-8 opacity-10">
-          <div class="absolute top-0 right-0 w-full h-[1px] bg-white"></div>
-          <div class="absolute top-0 right-0 h-full w-[1px] bg-white"></div>
-        </div>
-      </div>
-
-      <!-- 统计数据网格 (Stark) -->
-      <div class="grid grid-cols-2 gap-px bg-industrial-700 border border-industrial-700">
-        <div class="bg-industrial-800 p-4 text-center">
-          <div class="text-xl font-bold text-clinical-blue">{{ totalWatchedHours }}H {{ totalWatchedMinutes }}M</div>
-          <div class="text-[9px] text-industrial-500 uppercase mt-1">Accumulated_Time</div>
-        </div>
-        <div class="bg-industrial-800 p-4 text-center">
-          <div class="text-xl font-bold text-industrial-100">{{ viewingStore.watchedAnime.size }}</div>
-          <div class="text-[9px] text-industrial-500 uppercase mt-1">Profiles_Accessed</div>
-        </div>
-      </div>
-
-      <!-- 类型偏好 (Segmented) -->
-      <div v-if="topGenres.length > 0">
-        <h4 class="text-[10px] text-industrial-500 uppercase tracking-widest mb-4 flex items-center gap-2">
-          <span class="w-1 h-3 bg-industrial-600"></span>
-          Genre_Affinity_Matrix
-        </h4>
+    <div v-if="authStore.isLoggedIn" class="p-6 space-y-8 flex-1 overflow-y-auto scrollbar-tactical">
+      <!-- Authorization Tier Badge -->
+      <div class="p-5 bg-black/40 border-l-2 border-gold flex justify-between items-start relative group">
         <div class="space-y-4">
-          <div v-for="[genre, count] in topGenres" :key="genre" class="space-y-1.5">
-            <div class="flex justify-between text-[10px] text-industrial-300">
-              <span class="uppercase tracking-tighter">{{ genre }}</span>
-              <span>{{ count }}U</span>
+          <div class="space-y-1">
+             <div class="text-[7px] font-display font-bold text-industrial-500 uppercase tracking-[0.4em]">Authorization_Tier</div>
+             <div class="text-2xl font-display font-black tracking-tighter text-white uppercase italic" :class="progressLevel.color">
+               {{ progressLevel.level }}
+             </div>
+          </div>
+          <div class="flex flex-col gap-1">
+             <div class="text-[7px] font-display font-bold text-industrial-600 uppercase tracking-widest">Active_Uptime_Link</div>
+             <div class="text-[10px] font-mono font-black text-white tracking-widest">{{ stats.consecutiveDays }}_DAYS_NOMINAL</div>
+          </div>
+        </div>
+        <div class="text-4xl opacity-10 group-hover:opacity-20 transition-opacity text-white">{{ progressLevel.icon }}</div>
+        
+        <!-- Corner Decoration -->
+        <div class="absolute bottom-1 right-1 w-2 h-2 border-b border-r border-white/10"></div>
+      </div>
+
+      <!-- Core Usage Metrics -->
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-white/[0.02] border border-white/5 p-4 flex flex-col items-center group hover:bg-white/[0.04] transition-all">
+          <div class="text-[7px] font-display font-bold text-industrial-500 uppercase tracking-widest mb-1 group-hover:text-gold transition-colors">Accumulated_Runtime</div>
+          <div class="text-lg font-mono font-black text-white tabular-nums tracking-tighter">{{ totalWatchedHours }}H {{ totalWatchedMinutes }}M</div>
+        </div>
+        <div class="bg-white/[0.02] border border-white/5 p-4 flex flex-col items-center group hover:bg-white/[0.04] transition-all">
+          <div class="text-[7px] font-display font-bold text-industrial-500 uppercase tracking-widest mb-1 group-hover:text-white transition-colors">Asset_Nodes_Synced</div>
+          <div class="text-lg font-mono font-black text-industrial-100 tabular-nums tracking-tighter">{{ viewingStore.watchedAnime.size }}U</div>
+        </div>
+      </div>
+
+      <!-- Affinity Matrix (Progress Bars) -->
+      <div v-if="topGenres.length > 0" class="quantic-reveal">
+        <div class="flex items-center gap-3 mb-6">
+           <h4 class="text-[8px] font-display font-bold text-gold tracking-[0.4em] uppercase">Genre_Affinity_Matrix</h4>
+           <div class="flex-1 h-px bg-white/5"></div>
+        </div>
+        
+        <div class="space-y-6">
+          <div v-for="[genre, count] in topGenres" :key="genre" class="space-y-2">
+            <div class="flex justify-between items-baseline">
+              <span class="text-[8px] font-display font-black text-white uppercase tracking-widest">{{ genre }}</span>
+              <span class="text-[9px] font-mono text-industrial-500 tabular-nums">{{ count }}_BIAS</span>
             </div>
-            <div class="segmented-bar-container bg-industrial-900 h-2 px-0.5 py-0.5 gap-0.5">
+            <!-- Tactical Segmented Progress -->
+            <div class="flex gap-1 h-1.5">
               <div 
                 v-for="i in 10" 
                 :key="i"
-                class="segmented-bar-block"
-                :class="{ 'active': (i / 10) * 100 <= (count / Math.max(...topGenres.map(([,c]) => c))) * 100 }"
+                class="flex-1 transition-all duration-700"
+                :class="(i / 10) * 100 <= (count / Math.max(...topGenres.map(([,c]) => c))) * 100 
+                        ? 'bg-gold shadow-[0_0_5px_#D4A574/50]' 
+                        : 'bg-white/5'"
               ></div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- 下一个里程碑 (System Prompt style) -->
-      <div class="bg-industrial-900/50 border border-industrial-700/50 p-3 text-[10px] text-industrial-400 group">
-        <div class="flex items-start gap-2">
-          <span class="text-clinical-warning animate-pulse shrink-0">>></span>
-          <span v-if="stats.consecutiveDays < 7">
-            MAINTAIN TERMINAL UPTIME FOR <span class="text-clinical-warning">{{ 7 - stats.consecutiveDays }}</span> ADDITIONAL DAYS TO ACHIEVE "FAN" CLASSIFICATION.
-          </span>
-          <span v-else-if="stats.consecutiveDays < 14">
-            MAINTAIN TERMINAL UPTIME FOR <span class="text-clinical-warning">{{ 14 - stats.consecutiveDays }}</span> ADDITIONAL DAYS TO ACHIEVE "EXPERT" CLASSIFICATION.
-          </span>
-          <span v-else-if="stats.consecutiveDays < 30">
-            MAINTAIN TERMINAL UPTIME FOR <span class="text-clinical-warning">{{ 30 - stats.consecutiveDays }}</span> ADDITIONAL DAYS TO ACHIEVE "MASTER" CLASSIFICATION.
-          </span>
-          <span v-else>
-            MAXIMUM AUTHORIZATION LEVEL REACHED. CONTINUOUS OPERATION RECOMMENDED FOR REWARD RETENTION.
-          </span>
+      <!-- System Prompt Readout -->
+      <div class="bg-black/40 border border-white/5 p-4 quantic-reveal relative">
+        <div class="absolute top-0 right-0 w-1.5 h-px bg-gold/40"></div>
+        <div class="flex items-start gap-3">
+          <span class="text-gold font-bold text-[9px] animate-pulse">>></span>
+          <div class="text-[8px] font-display font-black text-industrial-300 uppercase tracking-wider leading-relaxed">
+            <span v-if="stats.consecutiveDays < 7">
+              MAINTAIN_TERMINAL_UPTIME_LINK FOR <span class="text-gold">{{ 7 - stats.consecutiveDays }}</span>_DAYS TO ACHIEVE [ENTHUSIAST_LEVEL] AUTHORIZATION.
+            </span>
+            <span v-else-if="stats.consecutiveDays < 14">
+              MAINTAIN_TERMINAL_UPTIME_LINK FOR <span class="text-gold">{{ 14 - stats.consecutiveDays }}</span>_DAYS TO ACHIEVE [EXPERT_LEVEL] AUTHORIZATION.
+            </span>
+            <span v-else-if="stats.consecutiveDays < 30">
+              MAINTAIN_TERMINAL_UPTIME_LINK FOR <span class="text-gold">{{ 30 - stats.consecutiveDays }}</span>_DAYS TO ACHIEVE [MASTER_LEVEL] AUTHORIZATION.
+            </span>
+            <span v-else>
+              MAXIMUM_AUTHORIZATION_TIER_ACHIEVED. CONTINUOUS_SYNC_RECOMMENDED.
+            </span>
+          </div>
         </div>
       </div>
     </div>
     
-    <div v-else class="flex-1 flex flex-col items-center justify-center py-12 opacity-30 font-mono">
-      <div class="text-4xl mb-4">🛡️</div>
-      <p class="text-xs uppercase tracking-widest text-center px-8">Encryption_Active: Identity_Confirmation_Required</p>
+    <div v-else class="flex-1 flex flex-col items-center justify-center py-20 opacity-20">
+      <div class="text-5xl mb-6 grayscale brightness-0 invert">🛡️</div>
+      <p class="text-[8px] font-display font-bold text-white uppercase tracking-[0.5em] text-center px-12 leading-loose">
+        ENCRYPTION_PROTOCOL_ACTIVE // IDENTITY_CONFIRMATION_REQUIRED
+      </p>
     </div>
   </div>
 </template>
+
+<style scoped>
+.scrollbar-tactical::-webkit-scrollbar {
+  width: 1px;
+}
+.scrollbar-tactical::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+.scrollbar-tactical::-webkit-scrollbar-thumb {
+  @apply bg-gold/10 hover:bg-gold/30;
+}
+</style>

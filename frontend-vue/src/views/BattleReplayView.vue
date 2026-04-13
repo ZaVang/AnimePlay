@@ -1,8 +1,15 @@
 <script setup lang="ts">
+/**
+ * Battle Replay View - Mission Archives Standard
+ */
 import { ref, computed, onMounted, onUnmounted, watch } from 'vue';
 import { BattleReplayManager, type ReplayState } from '@/core/replay/BattleReplayManager';
 import type { BattleSessionLog, ActionRecord } from '@/types/debug';
 import ActionDetailCard from '@/components/replay/ActionDetailCard.vue';
+
+// Atomic Components
+import GlassPanel from '@/components/ui/GlassPanel.vue';
+import TacticalButton from '@/components/ui/TacticalButton.vue';
 
 const replayManager = ref<BattleReplayManager>(new BattleReplayManager());
 const replayState = ref<ReplayState | null>(null);
@@ -14,11 +21,10 @@ const fileInput = ref<HTMLInputElement | null>(null);
 const showActionDetails = ref(false);
 const selectedActionIndex = ref(-1);
 
-// 播放控制
+// Playback Logic
 const controls = computed(() => replayManager.value.getControls());
 const progress = computed(() => replayManager.value.getProgress());
 
-// 状态显示
 const isLoaded = computed(() => replayState.value !== null);
 const isPlaying = computed(() => replayState.value?.isPlaying || false);
 const canStepBack = computed(() => (replayState.value?.currentActionIndex || 0) > -1);
@@ -27,7 +33,6 @@ const canStepForward = computed(() => {
   return replayState.value.currentActionIndex < sessionInfo.value.actionCount - 1;
 });
 
-// 设置状态变化监听
 onMounted(() => {
   replayManager.value.setOnStateChange((state: ReplayState) => {
     replayState.value = state;
@@ -35,27 +40,14 @@ onMounted(() => {
   });
 });
 
-onUnmounted(() => {
-  replayManager.value.cleanup();
-});
+onUnmounted(() => replayManager.value.cleanup());
 
-// 监听动作索引变化
 watch(() => replayState.value?.currentActionIndex, (newIndex) => {
-  if (newIndex !== undefined && newIndex >= 0) {
-    selectedActionIndex.value = newIndex;
-  }
+  if (newIndex !== undefined && newIndex >= 0) selectedActionIndex.value = newIndex;
 });
 
-/**
- * 加载日志文件
- */
-function loadLogFile() {
-  fileInput.value?.click();
-}
+function loadLogFile() { fileInput.value?.click(); }
 
-/**
- * 处理文件选择
- */
 function handleFileChange(event: Event) {
   const file = (event.target as HTMLInputElement).files?.[0];
   if (!file) return;
@@ -67,533 +59,247 @@ function handleFileChange(event: Event) {
       replayManager.value.loadSession(logData);
       sessionInfo.value = replayManager.value.getSessionInfo();
       sessionActions.value = logData.actions || [];
-
-      // 重置文件输入
-      if (fileInput.value) {
-        fileInput.value.value = '';
-      }
+      if (fileInput.value) fileInput.value.value = '';
     } catch (error) {
-      alert('无法解析日志文件，请确保文件格式正确。');
-      console.error('Log file parse error:', error);
+      console.error('Archive read error:', error);
     }
   };
   reader.readAsText(file);
 }
 
-/**
- * 播放速度选项
- */
 const speedOptions = [
   { value: 0.5, label: '0.5x' },
-  { value: 1, label: '1x' },
+  { value: 1, label: '1.0x' },
   { value: 1.5, label: '1.5x' },
-  { value: 2, label: '2x' },
-  { value: 3, label: '3x' }
+  { value: 2, label: '2.0x' }
 ];
 
-/**
- * 格式化时间
- */
 function formatTime(seconds: number): string {
   const mins = Math.floor(seconds / 60);
   const secs = Math.floor(seconds % 60);
   return `${mins}:${secs.toString().padStart(2, '0')}`;
 }
 
-/**
- * 格式化动作类型
- */
 function getActionTypeLabel(type: string): string {
   const labels: Record<string, string> = {
-    'play_card': '出牌',
-    'clash_resolve': '冲突解算',
-    'turn_end': '回合结束',
-    'turn_start': '回合开始',
-    'skill_activation': '技能激活',
-    'effect_apply': '效果应用'
+    'play_card': 'CARD_EXEC',
+    'clash_resolve': 'CLASH_RESL',
+    'turn_end': 'CYCLE_END',
+    'turn_start': 'CYCLE_INIT',
+    'skill_activation': 'SKILL_ACTV',
+    'effect_apply': 'EFFECT_APPLY'
   };
-  return labels[type] || type;
+  return labels[type] || type.toUpperCase();
 }
 
-/**
- * 跳转到指定动作
- */
 function jumpToAction(index: number) {
   controls.value.jumpToAction(index);
   selectedActionIndex.value = index;
 }
 
-/**
- * 获取玩家名称
- */
 function getPlayerName(playerId: 'playerA' | 'playerB'): string {
-  if (!replayState.value) return playerId;
-  return replayState.value[playerId].name;
+  if (!replayState.value) return playerId.toUpperCase();
+  return replayState.value[playerId].name.toUpperCase();
 }
 </script>
 
 <template>
-  <div class="battle-replay-view">
-    <div class="replay-header">
-      <h1>🎬 战斗回放系统</h1>
-      <button @click="loadLogFile" class="load-btn">
-        📁 加载日志文件
-      </button>
-      <input
-        ref="fileInput"
-        type="file"
-        accept=".json"
-        @change="handleFileChange"
-        style="display: none"
-      />
+  <div class="battle-replay-slate p-6 md:p-12 space-y-12 font-mono relative overflow-hidden">
+    <!-- Background Static -->
+    <div class="fixed inset-0 bg-scanline opacity-10 pointer-events-none"></div>
+    
+    <!-- Top Bar: Archive Status -->
+    <header class="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-white/5 pb-12 relative z-10">
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+           <div class="w-1 h-4 bg-cyan-400"></div>
+           <h2 class="text-[10px] font-display font-bold text-cyan-400 tracking-[0.5em] uppercase opacity-70">Mission_Archives</h2>
+        </div>
+        <h1 class="text-4xl font-display font-black tracking-tighter uppercase text-white italic scale-y-110">PLAYBACK_LOGIC_STREAM</h1>
+      </div>
+      
+      <div class="flex items-center gap-6 pb-1">
+        <TacticalButton variant="secondary" size="md" @click="loadLogFile">LOAD_MISSION_DATA</TacticalButton>
+        <input ref="fileInput" type="file" accept=".json" @change="handleFileChange" class="hidden" />
+      </div>
+    </header>
+
+    <!-- Content: Mission Data -->
+    <main v-if="isLoaded" class="quantic-reveal space-y-12 relative z-10">
+      
+      <!-- Metadata Matrix -->
+      <div v-if="sessionInfo" class="grid grid-cols-2 md:grid-cols-4 gap-4 p-8 border border-white/5 bg-black/40">
+        <div v-for="(val, key) in { 'Archive_ID': sessionInfo.sessionId, 'Duration': formatTime(sessionInfo.duration), 'Total_Actions': sessionInfo.actionCount, 'Winner': sessionInfo.winner ? getPlayerName(sessionInfo.winner) : 'N/A' }" :key="key" class="space-y-2">
+          <div class="text-[7px] font-display font-bold text-industrial-500 uppercase tracking-widest">{{ key }}</div>
+          <div class="text-xs font-mono font-black text-white tracking-widest tabular-nums uppercase border-l border-white/10 pl-3 italic">{{ val }}</div>
+        </div>
+      </div>
+
+      <!-- Playback Console -->
+      <GlassPanel :reveal="false" class="border-cyan-400/20 bg-cyan-400/[0.01] p-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+          <!-- Main Sequential Controls -->
+           <div class="flex items-center gap-4">
+             <TacticalButton variant="secondary" size="sm" @click="controls.stop()">STOP_SEQ</TacticalButton>
+             <TacticalButton variant="secondary" size="sm" :disabled="!canStepBack" @click="controls.stepBackward()">PREV_STEP</TacticalButton>
+             <TacticalButton variant="primary" size="md" class="min-w-[150px]" @click="isPlaying ? controls.pause() : controls.play()">
+               {{ isPlaying ? 'PAUSE_BITSTREAM' : 'EXECUTE_STREAM' }}
+             </TacticalButton>
+             <TacticalButton variant="secondary" size="sm" :disabled="!canStepForward" @click="controls.stepForward()">NEXT_STEP</TacticalButton>
+           </div>
+
+           <!-- Playback Frequency -->
+           <div class="flex flex-col items-end gap-2">
+              <div class="text-[8px] font-display font-bold text-industrial-500 uppercase tracking-widest">Temporal_Frequency</div>
+              <div class="flex gap-2">
+                <button 
+                  v-for="opt in speedOptions" 
+                  :key="opt.value"
+                  @click="controls.setSpeed(opt.value)"
+                  class="text-[9px] font-mono px-3 py-1.5 border transition-all"
+                  :class="replayState?.playbackSpeed === opt.value ? 'bg-cyan-400 text-black border-cyan-400 font-bold' : 'text-industrial-500 border-white/5 hover:border-white/20'"
+                >
+                  {{ opt.label }}
+                </button>
+              </div>
+           </div>
+        </div>
+
+        <!-- Scrubber: Tactical Track -->
+        <div class="mt-10 relative h-1 bg-white/5 overflow-hidden">
+           <div class="h-full bg-cyan-400 shadow-[0_0_10px_#22D3EE] transition-all duration-300" :style="{ width: `${progress}%` }"></div>
+        </div>
+      </GlassPanel>
+
+      <!-- Tactical Analytics Layer -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Field Manifest -->
+        <div class="lg:col-span-8 space-y-12">
+           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <!-- Operative A State -->
+              <div class="space-y-6">
+                <div class="flex items-center gap-4 border-l-2 border-cyan-400 pl-4">
+                   <div class="w-1.5 h-1.5 bg-cyan-400"></div>
+                   <h3 class="text-xs font-display font-black text-white uppercase italic tracking-widest">{{ replayState?.playerA.name }}</h3>
+                </div>
+                <GlassPanel :reveal="false" class="border-white/5 bg-white/[0.01] p-6">
+                   <div class="grid grid-cols-3 gap-6 text-center">
+                     <div v-for="(v, k) in { 'REPUTATION': replayState?.playerA.reputation, 'TP_AMP': replayState?.playerA.tp, 'LOADOUT': replayState?.playerA.handCount }" :key="k" class="space-y-2">
+                        <div class="text-[7px] font-display font-bold text-industrial-500 uppercase tracking-[0.2em]">{{ k }}</div>
+                        <div class="text-2xl font-mono font-black text-white tracking-tighter">{{ v }}</div>
+                     </div>
+                   </div>
+                </GlassPanel>
+              </div>
+
+              <!-- Operative B State -->
+              <div class="space-y-6">
+                <div class="flex items-center gap-4 flex-row-reverse text-right border-r-2 border-clinical-danger pr-4">
+                   <div class="w-1.5 h-1.5 bg-clinical-danger"></div>
+                   <h3 class="text-xs font-display font-black text-white uppercase italic tracking-widest">{{ replayState?.playerB.name }}</h3>
+                </div>
+                <GlassPanel :reveal="false" class="border-white/5 bg-white/[0.01] p-6">
+                   <div class="grid grid-cols-3 gap-6 text-center">
+                     <div v-for="(v, k) in { 'REPUTATION': replayState?.playerB.reputation, 'TP_AMP': replayState?.playerB.tp, 'LOADOUT': replayState?.playerB.handCount }" :key="k" class="space-y-2">
+                        <div class="text-[7px] font-display font-bold text-industrial-500 uppercase tracking-[0.2em]">{{ k }}</div>
+                        <div class="text-2xl font-mono font-black text-white tracking-tighter">{{ v }}</div>
+                     </div>
+                   </div>
+                </GlassPanel>
+              </div>
+           </div>
+
+           <!-- Action Focus Node -->
+           <div v-if="currentAction" class="quantic-reveal">
+              <div class="flex items-center gap-3 mb-6">
+                 <h4 class="text-[8px] font-display font-bold text-industrial-500 uppercase tracking-[0.5em]">Tactical_Focus_Matrix</h4>
+                 <div class="flex-1 h-px bg-white/5"></div>
+              </div>
+              <ActionDetailCard :action="currentAction" />
+           </div>
+        </div>
+
+        <!-- Action Timeline Stream -->
+        <div class="lg:col-span-4 space-y-6">
+           <div class="flex items-center justify-between border-b border-white/5 pb-4">
+             <h3 class="text-[10px] font-display font-bold text-gold tracking-widest uppercase">Action_Timeline_Stream</h3>
+             <TacticalButton variant="secondary" size="xs" @click="showActionDetails = !showActionDetails">
+               {{ showActionDetails ? 'MASK_METADATA' : 'EXPOSE_METADATA' }}
+             </TacticalButton>
+           </div>
+
+           <div class="timeline-scroll h-[60vh] overflow-y-auto space-y-3 pr-4 scrollbar-tactical">
+              <div
+                v-for="(action, index) in sessionActions"
+                :key="index"
+                @click="jumpToAction(index)"
+                class="timeline-node p-4 border transition-all cursor-pointer group relative overflow-hidden"
+                :class="[
+                  index === replayState?.currentActionIndex ? 'bg-cyan-400/10 border-cyan-400/60' : 'bg-white/[0.02] border-white/5 hover:bg-white/[0.05]',
+                  index === selectedActionIndex ? 'ring-1 ring-gold/40 shadow-[0_0_15px_rgba(212,165,116,0.1)]' : ''
+                ]"
+              >
+                <div class="absolute inset-0 bg-scanline opacity-[0.03] pointer-events-none"></div>
+                
+                <div class="flex items-center gap-5 relative z-10">
+                  <div class="text-[10px] font-mono font-black opacity-30 tabular-nums">#{{ String(index + 1).padStart(3, '0') }}</div>
+                  <div class="flex-1">
+                    <div class="flex justify-between items-center mb-1.5">
+                      <span class="text-[10px] font-display font-black text-white uppercase tracking-widest italic">{{ getActionTypeLabel(action.actionType) }}</span>
+                      <span class="text-[8px] font-mono font-bold text-cyan-400 tracking-widest px-1.5 py-0.5 bg-cyan-400/10">{{ getPlayerName(action.playerId) }}</span>
+                    </div>
+                    <div class="text-[10px] text-industrial-500 uppercase tracking-tighter line-clamp-1 leading-tight">{{ action.description }}</div>
+                  </div>
+                </div>
+                <div v-if="showActionDetails && action.details" class="mt-4 pt-4 border-t border-white/5 relative z-10 quantic-reveal">
+                  <pre class="text-[9px] font-mono text-industrial-400 overflow-x-hidden leading-relaxed">{{ JSON.stringify(action.details, null, 2) }}</pre>
+                </div>
+              </div>
+           </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Initial State: Connection Pending -->
+    <div v-else class="h-[75vh] flex items-center justify-center relative z-10">
+       <div class="text-center space-y-10 max-w-sm group">
+          <div class="relative flex items-center justify-center">
+             <div class="w-16 h-16 border border-white/10 group-hover:border-white/30 rotate-45 transition-all duration-1000"></div>
+             <div class="absolute w-12 h-12 border border-gold/10 group-hover:border-gold/30 -rotate-12 transition-all duration-1000"></div>
+             <div class="absolute font-display font-black text-white/10 group-hover:text-gold/60 text-xl tracking-widest">ARCHV</div>
+          </div>
+          <div class="space-y-4">
+            <h3 class="text-sm font-display font-bold text-white uppercase tracking-[0.5em]">Awaiting_Uplink_Signal</h3>
+            <p class="text-[9px] text-industrial-500 uppercase leading-relaxed tracking-[0.1em] px-8">Feed mission_archive.json into the terminal buffer to initiate decryption and playback protocols.</p>
+          </div>
+          <div class="flex justify-center pt-4">
+            <TacticalButton variant="primary" size="md" @click="loadLogFile">INITIATE_HANDSHAKE</TacticalButton>
+          </div>
+       </div>
     </div>
 
-    <!-- 会话信息 -->
-    <div v-if="sessionInfo" class="session-info">
-      <div class="info-grid">
-        <div class="info-item">
-          <span class="label">会话ID:</span>
-          <span class="value">{{ sessionInfo.sessionId }}</span>
-        </div>
-        <div class="info-item">
-          <span class="label">时长:</span>
-          <span class="value">{{ formatTime(sessionInfo.duration) }}</span>
-        </div>
-        <div class="info-item">
-          <span class="label">动作数:</span>
-          <span class="value">{{ sessionInfo.actionCount }}</span>
-        </div>
-        <div class="info-item" v-if="sessionInfo.winner">
-          <span class="label">获胜者:</span>
-          <span class="value winner">{{ getPlayerName(sessionInfo.winner) }}</span>
-        </div>
-      </div>
-    </div>
-
-    <div v-if="isLoaded" class="replay-content">
-      <!-- 播放控制 -->
-      <div class="controls-panel">
-        <div class="playback-controls">
-          <button
-            @click="controls.stop()"
-            class="control-btn"
-            title="停止"
-          >
-            ⏹️
-          </button>
-          <button
-            @click="controls.stepBackward()"
-            class="control-btn"
-            :disabled="!canStepBack"
-            title="上一步"
-          >
-            ⏮️
-          </button>
-          <button
-            @click="isPlaying ? controls.pause() : controls.play()"
-            class="control-btn play-btn"
-            title="播放/暂停"
-          >
-            {{ isPlaying ? '⏸️' : '▶️' }}
-          </button>
-          <button
-            @click="controls.stepForward()"
-            class="control-btn"
-            :disabled="!canStepForward"
-            title="下一步"
-          >
-            ⏭️
-          </button>
-        </div>
-
-        <div class="speed-control">
-          <span class="speed-label">速度:</span>
-          <select
-            :value="replayState?.playbackSpeed || 1"
-            @change="controls.setSpeed(Number(($event.target as HTMLSelectElement).value))"
-            class="speed-select"
-          >
-            <option v-for="option in speedOptions" :key="option.value" :value="option.value">
-              {{ option.label }}
-            </option>
-          </select>
-        </div>
-
-        <div class="progress-bar">
-          <div class="progress-fill" :style="{ width: `${progress}%` }"></div>
-        </div>
-      </div>
-
-      <!-- 当前状态显示 -->
-      <div class="state-display">
-        <div class="players-state">
-          <!-- 玩家A状态 -->
-          <div class="player-panel">
-            <h3>{{ replayState?.playerA.name || 'Player A' }}</h3>
-            <div class="player-stats">
-              <div class="stat">
-                <span class="stat-label">声望:</span>
-                <span class="stat-value">{{ replayState?.playerA.reputation }}</span>
-              </div>
-              <div class="stat">
-                <span class="stat-label">TP:</span>
-                <span class="stat-value">{{ replayState?.playerA.tp }}</span>
-              </div>
-              <div class="stat">
-                <span class="stat-label">手牌:</span>
-                <span class="stat-value">{{ replayState?.playerA.handCount }}</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- 游戏状态 -->
-          <div class="game-state">
-            <div class="turn-info">
-              <div class="turn">回合 {{ replayState?.game.turn }}</div>
-              <div class="phase">{{ replayState?.game.phase }}</div>
-              <div class="active-player">
-                当前玩家: {{ getPlayerName(replayState?.game.activePlayer || 'playerA') }}
-              </div>
-            </div>
-            <div class="topic-bias">
-              <span class="label">话题偏向:</span>
-              <span class="value" :class="{
-                positive: (replayState?.game.topicBias || 0) > 0,
-                negative: (replayState?.game.topicBias || 0) < 0
-              }">
-                {{ replayState?.game.topicBias || 0 }}
-              </span>
-            </div>
-          </div>
-
-          <!-- 玩家B状态 -->
-          <div class="player-panel">
-            <h3>{{ replayState?.playerB.name || 'Player B' }}</h3>
-            <div class="player-stats">
-              <div class="stat">
-                <span class="stat-label">声望:</span>
-                <span class="stat-value">{{ replayState?.playerB.reputation }}</span>
-              </div>
-              <div class="stat">
-                <span class="stat-label">TP:</span>
-                <span class="stat-value">{{ replayState?.playerB.tp }}</span>
-              </div>
-              <div class="stat">
-                <span class="stat-label">手牌:</span>
-                <span class="stat-value">{{ replayState?.playerB.handCount }}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 当前动作详细信息 -->
-        <div v-if="currentAction" class="current-action">
-          <h4>当前动作详情</h4>
-          <ActionDetailCard
-            :action="currentAction"
-            :player-names="{
-              playerA: replayState?.playerA.name || 'Player A',
-              playerB: replayState?.playerB.name || 'Player B'
-            }"
-          />
-        </div>
-      </div>
-
-      <!-- 动作列表 -->
-      <div class="actions-list">
-        <div class="actions-header">
-          <h4>动作历史</h4>
-          <button
-            @click="showActionDetails = !showActionDetails"
-            class="toggle-details-btn"
-          >
-            {{ showActionDetails ? '隐藏详情' : '显示详情' }}
-          </button>
-        </div>
-
-        <div class="actions-scroll">
-          <div
-            v-for="(action, index) in sessionActions"
-            :key="action.id || index"
-            class="action-item"
-            :class="{
-              active: index === selectedActionIndex,
-              current: index === replayState?.currentActionIndex
-            }"
-            @click="jumpToAction(index)"
-          >
-            <div class="action-summary">
-              <span class="action-index">{{ index + 1 }}</span>
-              <span class="action-type-label">{{ getActionTypeLabel(action.actionType) }}</span>
-              <span class="action-player-name">{{ getPlayerName(action.playerId) }}</span>
-              <span class="action-desc">{{ action.description }}</span>
-            </div>
-
-            <div v-if="showActionDetails && action.details" class="action-details">
-              <pre>{{ JSON.stringify(action.details, null, 2) }}</pre>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 空状态 -->
-    <div v-else class="empty-state">
-      <div class="empty-content">
-        <div class="empty-icon">📁</div>
-        <h3>请加载战斗日志文件</h3>
-        <p>选择一个从调试面板导出的 JSON 格式战斗日志文件来开始回放。</p>
-        <button @click="loadLogFile" class="empty-load-btn">
-          选择文件
-        </button>
-      </div>
-    </div>
+    <!-- Final Infrastructure Reading -->
+    <footer class="fixed bottom-4 right-8 text-[6px] font-display font-bold text-industrial-700 uppercase tracking-[0.8em] opacity-40 z-20 pointer-events-none">
+       System_Replay_Engine_v1.2.0 // Buffering_Status: Nominal
+    </footer>
   </div>
 </template>
 
 <style scoped>
-.battle-replay-view {
-  @apply min-h-screen bg-gray-100 p-6;
+.battle-replay-slate {
+  min-height: calc(100vh - 80px);
 }
-
-.replay-header {
-  @apply flex items-center justify-between mb-6 bg-white rounded-lg shadow p-4;
+.timeline-node {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0 100%);
 }
-
-.replay-header h1 {
-  @apply text-2xl font-bold text-gray-800 m-0;
+.scrollbar-tactical::-webkit-scrollbar {
+  width: 1px;
 }
-
-.load-btn {
-  @apply bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors;
+.scrollbar-tactical::-webkit-scrollbar-track {
+  @apply bg-transparent;
 }
-
-.session-info {
-  @apply bg-white rounded-lg shadow p-4 mb-6;
-}
-
-.info-grid {
-  @apply grid grid-cols-2 md:grid-cols-4 gap-4;
-}
-
-.info-item {
-  @apply flex flex-col;
-}
-
-.info-item .label {
-  @apply text-sm text-gray-500 font-medium;
-}
-
-.info-item .value {
-  @apply text-lg font-semibold text-gray-800;
-}
-
-.info-item .winner {
-  @apply text-green-600;
-}
-
-.replay-content {
-  @apply space-y-6;
-}
-
-.controls-panel {
-  @apply bg-white rounded-lg shadow p-4;
-}
-
-.playback-controls {
-  @apply flex items-center gap-2 mb-4;
-}
-
-.control-btn {
-  @apply w-10 h-10 rounded-full border-2 border-gray-300 bg-white hover:bg-gray-50 transition-colors;
-  @apply flex items-center justify-center text-lg;
-}
-
-.control-btn:disabled {
-  @apply opacity-50 cursor-not-allowed hover:bg-white;
-}
-
-.play-btn {
-  @apply border-blue-500 text-blue-500 hover:bg-blue-50;
-}
-
-.speed-control {
-  @apply flex items-center gap-2 mb-4;
-}
-
-.speed-label {
-  @apply text-sm font-medium text-gray-700;
-}
-
-.speed-select {
-  @apply px-2 py-1 border border-gray-300 rounded;
-}
-
-.progress-bar {
-  @apply w-full h-2 bg-gray-200 rounded-full overflow-hidden;
-}
-
-.progress-fill {
-  @apply h-full bg-blue-500 transition-all duration-200;
-}
-
-.state-display {
-  @apply bg-white rounded-lg shadow p-6;
-}
-
-.players-state {
-  @apply grid grid-cols-1 md:grid-cols-3 gap-6 mb-6;
-}
-
-.player-panel {
-  @apply text-center;
-}
-
-.player-panel h3 {
-  @apply text-xl font-bold text-gray-900 mb-4;
-}
-
-.player-stats {
-  @apply space-y-3;
-}
-
-.stat {
-  @apply flex justify-between bg-white p-2 rounded border;
-}
-
-.stat-label {
-  @apply text-base font-bold text-gray-800;
-}
-
-.stat-value {
-  @apply font-bold text-lg text-blue-700;
-}
-
-.game-state {
-  @apply text-center border-l border-r border-gray-200 px-6;
-}
-
-.turn-info {
-  @apply space-y-3 mb-6;
-}
-
-.turn {
-  @apply text-3xl font-bold text-blue-700 bg-blue-50 px-4 py-2 rounded-lg;
-}
-
-.phase {
-  @apply text-base font-bold text-white bg-indigo-600 px-3 py-2 rounded-lg;
-}
-
-.active-player {
-  @apply text-base font-bold text-green-700 bg-green-50 px-3 py-2 rounded;
-}
-
-.topic-bias {
-  @apply flex justify-center gap-3 bg-white p-3 rounded-lg border-2 border-gray-200;
-}
-
-.topic-bias .label {
-  @apply font-bold text-gray-900;
-}
-
-.topic-bias .value.positive {
-  @apply text-red-700 font-bold bg-red-100 px-2 py-1 rounded;
-}
-
-.topic-bias .value.negative {
-  @apply text-blue-700 font-bold bg-blue-100 px-2 py-1 rounded;
-}
-
-.current-action {
-  @apply border-t border-gray-200 pt-4;
-}
-
-.current-action h4 {
-  @apply text-xl font-bold text-gray-900 mb-4;
-}
-
-.actions-list {
-  @apply bg-white rounded-lg shadow-lg border border-gray-200;
-}
-
-.actions-header {
-  @apply flex justify-between items-center p-4 border-b-2 border-gray-300 bg-gray-50;
-}
-
-.actions-header h4 {
-  @apply text-xl font-bold text-gray-900 m-0;
-}
-
-.toggle-details-btn {
-  @apply text-base font-medium text-blue-700 hover:text-blue-900 bg-blue-50 px-3 py-1 rounded;
-}
-
-.actions-scroll {
-  @apply max-h-96 overflow-y-auto;
-}
-
-.action-item {
-  @apply border-b border-gray-200 hover:bg-blue-50 cursor-pointer transition-all duration-200;
-}
-
-.action-item.active {
-  @apply bg-blue-100 border-blue-400 shadow-md;
-}
-
-.action-item.current {
-  @apply bg-yellow-100 border-yellow-400 shadow-md;
-}
-
-.action-summary {
-  @apply flex items-center gap-4 p-4;
-}
-
-.action-index {
-  @apply text-sm bg-gray-800 text-white px-3 py-1 rounded-full font-bold min-w-[2.5rem] text-center;
-}
-
-.action-type-label {
-  @apply text-sm bg-blue-600 text-white px-3 py-1 rounded-full font-medium;
-}
-
-.action-player-name {
-  @apply text-base font-bold text-green-700 bg-green-50 px-2 py-1 rounded;
-}
-
-.action-desc {
-  @apply text-base font-medium text-gray-900 flex-1;
-}
-
-.action-details {
-  @apply bg-gray-50 p-3 border-t border-gray-200;
-}
-
-.action-details pre {
-  @apply text-xs text-gray-600 whitespace-pre-wrap;
-}
-
-.empty-state {
-  @apply flex items-center justify-center min-h-[60vh];
-}
-
-.empty-content {
-  @apply text-center max-w-md mx-auto;
-}
-
-.empty-icon {
-  @apply text-6xl mb-4;
-}
-
-.empty-content h3 {
-  @apply text-xl font-semibold text-gray-800 mb-2;
-}
-
-.empty-content p {
-  @apply text-gray-600 mb-6;
-}
-
-.empty-load-btn {
-  @apply bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors;
+.scrollbar-tactical::-webkit-scrollbar-thumb {
+  @apply bg-gold/10 hover:bg-gold/30;
 }
 </style>

@@ -1,71 +1,99 @@
 <template>
-  <div v-if="showMonitor" class="performance-monitor fixed bottom-4 right-4 bg-gray-800 text-white p-4 rounded-lg shadow-lg z-50 max-w-sm">
-    <div class="flex justify-between items-center mb-2">
-      <h3 class="text-lg font-bold">性能监控</h3>
-      <button @click="toggleMonitor" class="text-gray-400 hover:text-white">
-        {{ expanded ? '−' : '+' }}
-      </button>
-    </div>
-    
-    <div v-if="expanded" class="space-y-3">
-      <!-- 技能缓存统计 -->
-      <div class="skill-cache-stats">
-        <h4 class="font-semibold text-yellow-400">技能缓存</h4>
-        <div class="text-sm grid grid-cols-2 gap-1">
-          <div>命中率: {{ skillStats.hitRate }}</div>
-          <div>缓存大小: {{ skillStats.cacheSize }}</div>
-          <div>命中: {{ skillStats.hits }}</div>
-          <div>未命中: {{ skillStats.misses }}</div>
-          <div>清理: {{ skillStats.evictions }}</div>
-          <div>总调用: {{ skillStats.totalExecutions }}</div>
+  <div v-if="showMonitor" class="quantic-reveal">
+    <GlassPanel 
+      class="performance-monitor fixed bottom-4 right-4 z-50 max-w-sm border-gold/20 shadow-2xl"
+      :reveal="false"
+    >
+      <template #header>
+        <div class="flex justify-between items-center mb-4 border-b border-white/5 pb-2">
+          <div class="space-y-0.5">
+             <div class="text-[7px] font-display font-bold text-industrial-500 uppercase tracking-[0.4em]">Infrastructure_Link</div>
+             <h3 class="text-[10px] font-display font-black tracking-widest text-gold uppercase">PERFORMANCE_MONITOR_UPLINK</h3>
+          </div>
+          <button @click="toggleMonitor" class="text-industrial-600 hover:text-gold transition-colors font-mono font-black text-sm px-2">
+            {{ expanded ? '[ - ]' : '[ + ]' }}
+          </button>
+        </div>
+      </template>
+
+      <div v-if="expanded" class="space-y-6 px-2">
+        <!-- Skill Cache Stats: Matrix Readout -->
+        <div class="skill-cache-stats">
+          <div class="flex items-center gap-2 mb-2">
+             <div class="w-1 h-3 bg-gold/40"></div>
+             <h4 class="text-[8px] font-display font-black text-industrial-300 tracking-[0.2em] uppercase">Skill_Cache_Throughput</h4>
+          </div>
+          <div class="grid grid-cols-2 gap-x-4 gap-y-1 font-mono text-[9px] text-industrial-500">
+            <div class="flex justify-between"><span>Hit_Rate:</span> <span class="text-gold">{{ skillStats.hitRate }}</span></div>
+            <div class="flex justify-between"><span>Node_Size:</span> <span class="text-white">{{ skillStats.cacheSize }}</span></div>
+            <div class="flex justify-between"><span>Hit_Link:</span> <span class="text-white">{{ skillStats.hits }}</span></div>
+            <div class="flex justify-between"><span>Miss_Link:</span> <span class="text-white">{{ skillStats.misses }}</span></div>
+          </div>
+        </div>
+
+        <!-- State Snapshot Stats -->
+        <div class="snapshot-stats">
+          <div class="flex items-center gap-2 mb-2">
+             <div class="w-1 h-3 bg-clinical-danger/40"></div>
+             <h4 class="text-[8px] font-display font-black text-industrial-300 tracking-[0.2em] uppercase">Temporal_Snapshots</h4>
+          </div>
+          <div class="grid grid-cols-2 gap-x-4 gap-y-1 font-mono text-[9px] text-industrial-500">
+            <div class="flex justify-between"><span>Total_Seg:</span> <span class="text-white">{{ snapshotStats.totalSnapshots }}</span></div>
+            <div class="flex justify-between"><span>Mem_Load:</span> <span class="text-white">{{ snapshotStats.memoryUsage }}</span></div>
+            <div class="flex justify-between"><span>Act_Index:</span> <span class="text-white">{{ snapshotStats.currentIndex }}</span></div>
+            <div class="flex justify-between"><span>Undo_Buf:</span> <span :class="snapshotStats.canUndo ? 'text-gold' : 'text-industrial-700'">{{ snapshotStats.canUndo ? 'READY' : 'NULL' }}</span></div>
+          </div>
+        </div>
+
+        <!-- Realtime Performance Metrics -->
+        <div class="performance-metrics bg-black/40 border border-white/5 p-3">
+          <div class="grid grid-cols-3 gap-2">
+             <div class="flex flex-col items-center border-r border-white/5">
+                <span class="text-[7px] font-display font-bold text-industrial-500 uppercase mb-1">FPS</span>
+                <span class="text-xs font-mono font-black text-gold">{{ fps }}</span>
+             </div>
+             <div class="flex flex-col items-center border-r border-white/5">
+                <span class="text-[7px] font-display font-bold text-industrial-500 uppercase mb-1">HEAP</span>
+                <span class="text-xs font-mono font-black text-white italic">{{ memoryUsage }}</span>
+             </div>
+             <div class="flex flex-col items-center">
+                <span class="text-[7px] font-display font-bold text-industrial-500 uppercase mb-1">RNDR</span>
+                <span class="text-xs font-mono font-black text-white">{{ renderTime }}ms</span>
+             </div>
+          </div>
         </div>
       </div>
 
-      <!-- 状态快照统计 -->
-      <div class="snapshot-stats">
-        <h4 class="font-semibold text-blue-400">状态快照</h4>
-        <div class="text-sm grid grid-cols-2 gap-1">
-          <div>快照数: {{ snapshotStats.totalSnapshots }}</div>
-          <div>内存: {{ snapshotStats.memoryUsage }}</div>
-          <div>当前索引: {{ snapshotStats.currentIndex }}</div>
-          <div>可撤销: {{ snapshotStats.canUndo ? '是' : '否' }}</div>
-          <div>可重做: {{ snapshotStats.canRedo ? '是' : '否' }}</div>
+      <!-- Action Footer -->
+      <template #footer>
+        <div v-if="expanded" class="flex gap-1 mt-4 border-t border-white/5">
+          <button @click="clearCaches" class="flex-1 hover:bg-clinical-danger/20 p-2 text-[8px] font-display font-black text-industrial-500 hover:text-white uppercase tracking-widest transition-all">
+            PURGE_ALL
+          </button>
+          <button @click="createCheckpoint" class="flex-1 hover:bg-gold/20 p-2 text-[8px] font-display font-black text-industrial-500 hover:text-white uppercase tracking-widest transition-all border-x border-white/5">
+            MARK_POINT
+          </button>
+          <button @click="exportStats" class="flex-1 hover:bg-white/10 p-2 text-[8px] font-display font-black text-gold hover:text-white uppercase tracking-widest transition-all">
+            EXTRACT_DATA
+          </button>
         </div>
-      </div>
-
-      <!-- 实时性能指标 -->
-      <div class="performance-metrics">
-        <h4 class="font-semibold text-green-400">性能指标</h4>
-        <div class="text-sm">
-          <div>FPS: {{ fps }}</div>
-          <div>内存使用: {{ memoryUsage }}</div>
-          <div>渲染时间: {{ renderTime }}ms</div>
+        <div class="py-1 flex justify-center bg-black/60">
+           <span class="text-[5px] font-mono text-white/10 uppercase tracking-[0.5em]">System_Integrity_Monitor_Active</span>
         </div>
-      </div>
-
-      <!-- 操作按钮 -->
-      <div class="action-buttons flex gap-2 text-xs">
-        <button @click="clearCaches" class="bg-red-600 hover:bg-red-700 px-2 py-1 rounded">
-          清理缓存
-        </button>
-        <button @click="createCheckpoint" class="bg-blue-600 hover:bg-blue-700 px-2 py-1 rounded">
-          创建检查点
-        </button>
-        <button @click="exportStats" class="bg-green-600 hover:bg-green-700 px-2 py-1 rounded">
-          导出统计
-        </button>
-      </div>
-    </div>
+      </template>
+    </GlassPanel>
   </div>
 
-  <!-- 触发按钮（当监控器隐藏时） -->
+  <!-- Trigger Button: Tactical Performance Node -->
   <button 
     v-else 
     @click="showMonitor = true" 
-    class="fixed bottom-4 right-4 bg-gray-800 text-white px-3 py-2 rounded-lg shadow-lg hover:bg-gray-700 z-50"
-    title="显示性能监控"
+    class="fixed bottom-4 right-4 w-10 h-10 bg-black/80 backdrop-blur-md border border-gold/30 text-gold flex flex-col items-center justify-center z-50 hover:bg-gold/10 transition-all group overflow-hidden"
+    title="Display Performance Monitor"
   >
-    📊
+    <div class="absolute inset-0 bg-scanline opacity-10 pointer-events-none"></div>
+    <span class="text-[10px] font-display font-black italic relative z-10 group-hover:scale-110 transition-transform">PERF</span>
+    <div class="w-full h-px bg-gold/20 absolute bottom-2"></div>
   </button>
 </template>
 
@@ -74,6 +102,7 @@ import { ref, onMounted, onUnmounted } from 'vue';
 import { getSkillCacheStats, clearSkillCache } from '@/skills';
 import { battleStateSnapshot } from '@/core/systems/BattleStateSnapshot';
 import { useGameStore, usePlayerStore } from '@/stores/battle';
+import GlassPanel from '@/components/ui/GlassPanel.vue';
 
 const gameStore = useGameStore();
 const playerStore = usePlayerStore();
@@ -81,181 +110,86 @@ const playerStore = usePlayerStore();
 const showMonitor = ref(false);
 const expanded = ref(true);
 
-// 统计数据
 const skillStats = ref({
-  hits: 0,
-  misses: 0,
-  evictions: 0,
-  totalExecutions: 0,
-  hitRate: '0.00%',
-  cacheSize: 0
+  hits: 0, misses: 0, evictions: 0, totalExecutions: 0, hitRate: '0.00%', cacheSize: 0
 });
 
 const snapshotStats = ref({
-  totalSnapshots: 0,
-  currentIndex: -1,
-  canUndo: false,
-  canRedo: false,
-  memoryUsage: '0 KB'
+  totalSnapshots: 0, currentIndex: -1, canUndo: false, canRedo: false, memoryUsage: '0 KB'
 });
 
-// 性能指标
 const fps = ref(0);
-const memoryUsage = ref('未知');
+const memoryUsage = ref('N/A');
 const renderTime = ref(0);
 
-let updateInterval: NodeJS.Timeout | null = null;
+let updateInterval: any = null;
 let fpsCounter = 0;
 let fpsLastTime = performance.now();
 
-// 更新统计数据
 function updateStats() {
-  // 更新技能缓存统计
   skillStats.value = getSkillCacheStats();
-  
-  // 更新快照统计
   snapshotStats.value = battleStateSnapshot.getStats();
-  
-  // 更新性能指标
   updatePerformanceMetrics();
 }
 
-// 更新性能指标
 function updatePerformanceMetrics() {
   const now = performance.now();
   fpsCounter++;
-  
   if (now - fpsLastTime >= 1000) {
     fps.value = Math.round(fpsCounter * 1000 / (now - fpsLastTime));
     fpsCounter = 0;
     fpsLastTime = now;
   }
-
-  // 获取内存使用情况（如果浏览器支持）
   if ('memory' in performance) {
     const memory = (performance as any).memory;
-    const used = (memory.usedJSHeapSize / 1024 / 1024).toFixed(2);
-    const total = (memory.totalJSHeapSize / 1024 / 1024).toFixed(2);
-    memoryUsage.value = `${used}/${total} MB`;
+    memoryUsage.value = `${(memory.usedJSHeapSize / 1024 / 1024).toFixed(1)}MB`;
   }
-
-  // 模拟渲染时间
-  renderTime.value = Math.random() * 2 + 0.5;
+  renderTime.value = parseFloat((Math.random() * 2 + 0.5).toFixed(1));
 }
 
-// 切换监控器展开状态
-function toggleMonitor() {
-  expanded.value = !expanded.value;
-}
+function toggleMonitor() { expanded.value = !expanded.value; }
 
-// 清理所有缓存
 function clearCaches() {
   clearSkillCache();
   battleStateSnapshot.clearAll();
-  console.log('🧹 所有缓存已清理');
+  console.log('STATUS // CACHE_PURGED');
 }
 
-// 创建检查点
 function createCheckpoint() {
   battleStateSnapshot.createCheckpoint(
-    gameStore.$state,
-    playerStore.playerA,
-    playerStore.playerB,
-    `手动检查点_${Date.now()}`
+    gameStore.$state, playerStore.playerA, playerStore.playerB, `Manual_Log_${Date.now()}`
   );
-  console.log('📍 检查点已创建');
+  console.log('STATUS // CHECKPOINT_CREATED');
 }
 
-// 导出统计信息
 function exportStats() {
   const stats = {
     skillCache: skillStats.value,
     stateSnapshot: snapshotStats.value,
-    performance: {
-      fps: fps.value,
-      memory: memoryUsage.value,
-      renderTime: renderTime.value
-    },
+    performance: { fps: fps.value, memory: memoryUsage.value, renderTime: renderTime.value },
     timestamp: new Date().toISOString()
   };
-  
-  const dataStr = JSON.stringify(stats, null, 2);
-  const dataBlob = new Blob([dataStr], { type: 'application/json' });
-  
+  const dataBlob = new Blob([JSON.stringify(stats, null, 2)], { type: 'application/json' });
   const link = document.createElement('a');
   link.href = URL.createObjectURL(dataBlob);
-  link.download = `battle-performance-stats-${Date.now()}.json`;
+  link.download = `ATL-perf-log-${Date.now()}.json`;
   link.click();
-  
-  console.log('📊 统计信息已导出');
 }
 
-// 生命周期
 onMounted(() => {
-  // 在开发环境中自动显示
-  if (import.meta.env.DEV) {
-    showMonitor.value = true;
-  }
-  
-  // 每秒更新统计数据
+  if (import.meta.env.DEV) showMonitor.value = true;
   updateInterval = setInterval(updateStats, 1000);
-  updateStats(); // 立即更新一次
-});
-
-onUnmounted(() => {
-  if (updateInterval) {
-    clearInterval(updateInterval);
-  }
-});
-
-// 键盘快捷键支持
-onMounted(() => {
-  const handleKeydown = (event: KeyboardEvent) => {
-    // Ctrl+Shift+P 切换性能监控器
-    if (event.ctrlKey && event.shiftKey && event.key === 'P') {
+  updateStats();
+  
+  const handleKeydown = (e: KeyboardEvent) => {
+    if (e.ctrlKey && e.shiftKey && e.key === 'P') {
       showMonitor.value = !showMonitor.value;
-      event.preventDefault();
+      e.preventDefault();
     }
   };
-  
-  document.addEventListener('keydown', handleKeydown);
-  
-  onUnmounted(() => {
-    document.removeEventListener('keydown', handleKeydown);
-  });
+  window.addEventListener('keydown', handleKeydown);
+  onUnmounted(() => window.removeEventListener('keydown', handleKeydown));
 });
+
+onUnmounted(() => updateInterval && clearInterval(updateInterval));
 </script>
-
-<style scoped>
-.performance-monitor {
-  font-family: 'Consolas', 'Monaco', monospace;
-  font-size: 12px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  max-height: 80vh;
-  overflow-y: auto;
-}
-
-.performance-monitor::-webkit-scrollbar {
-  width: 4px;
-}
-
-.performance-monitor::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 2px;
-}
-
-.performance-monitor h4 {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 2px;
-  margin-bottom: 4px;
-}
-
-.action-buttons button {
-  transition: all 0.2s ease;
-}
-
-.action-buttons button:hover {
-  transform: scale(1.05);
-}
-</style>

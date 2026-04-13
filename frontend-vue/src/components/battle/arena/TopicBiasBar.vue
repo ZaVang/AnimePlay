@@ -3,7 +3,7 @@ import { computed } from 'vue';
 import { useGameStore } from '@/stores/battle';
 import { useSettingsStore } from '@/stores/settings';
 
-// 导入不同风格的子组件
+// Themes mapping
 import BiasBarGradient from '@/themes/topicBiasBar/Gradient.vue';
 import BiasBarCyber from '@/themes/topicBiasBar/Cyber.vue';
 import BiasBarElegant from '@/themes/topicBiasBar/Elegant.vue';
@@ -11,10 +11,10 @@ import BiasBarElegant from '@/themes/topicBiasBar/Elegant.vue';
 const gameStore = useGameStore();
 const settingsStore = useSettingsStore();
 
-// 获取当前选择的主题
+// Get active theme
 const currentTheme = computed(() => settingsStore.biasBarTheme || 'gradient');
 
-// 主题组件映射
+// Component mapping
 const themeComponents = {
   gradient: BiasBarGradient,
   cyber: BiasBarCyber,
@@ -25,8 +25,8 @@ const CurrentBiasBar = computed(() => themeComponents[currentTheme.value]);
 </script>
 
 <template>
-  <div class="bias-bar-container">
-    <!-- 动态组件切换 -->
+  <div class="bias-bar-container quantic-reveal relative">
+    <!-- Component Switch Anim -->
     <Transition name="theme-switch" mode="out-in">
       <component 
         :is="CurrentBiasBar" 
@@ -35,14 +35,20 @@ const CurrentBiasBar = computed(() => themeComponents[currentTheme.value]);
       />
     </Transition>
     
-    <!-- 快速切换按钮（可选，用于演示） -->
+    <!-- Tactical Theme Switcher: Terminal Style -->
     <button 
       v-if="settingsStore.showThemeSwitcher"
       @click="settingsStore.cycleBarTheme()"
-      class="theme-switch-btn"
-      :title="`当前主题: ${currentTheme}`"
+      class="theme-switch-btn group"
+      :title="`UI_PROTOCOL: ${currentTheme.toUpperCase()}`"
     >
-      🎨
+      <div class="flex flex-col items-center">
+         <div class="w-1 h-1 bg-gold opacity-40 group-hover:opacity-100 group-hover:scale-125 transition-all mb-0.5"></div>
+         <span class="text-[7px] font-display font-bold text-industrial-500 uppercase tracking-tighter group-hover:text-gold transition-colors">OS_STYLE</span>
+      </div>
+      
+      <!-- Border feedback -->
+      <div class="absolute inset-0 border border-white/5 group-hover:border-gold/30 transition-colors"></div>
     </button>
   </div>
 </template>
@@ -53,26 +59,27 @@ const CurrentBiasBar = computed(() => themeComponents[currentTheme.value]);
 }
 
 .theme-switch-btn {
-  @apply absolute top-2 right-2 w-8 h-8 rounded-full;
-  @apply bg-gray-700/50 hover:bg-gray-600/50;
-  @apply flex items-center justify-center text-sm;
-  @apply transition-all duration-200;
+  @apply absolute top-1 right-1 px-2 py-1 bg-black/40 backdrop-blur-md;
+  @apply flex items-center justify-center;
+  @apply transition-all duration-300;
   @apply z-20;
 }
 
-/* 主题切换动画 */
+/* Theme switch animations */
 .theme-switch-enter-active,
 .theme-switch-leave-active {
-  transition: all 0.3s ease;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .theme-switch-enter-from {
   opacity: 0;
-  transform: scale(0.9);
+  filter: blur(10px);
+  transform: scale(0.95);
 }
 
 .theme-switch-leave-to {
   opacity: 0;
-  transform: scale(1.1);
+  filter: blur(10px);
+  transform: scale(1.05);
 }
 </style>

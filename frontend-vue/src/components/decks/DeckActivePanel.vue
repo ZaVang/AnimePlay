@@ -1,8 +1,10 @@
-
 <script setup lang="ts">
 import { computed } from 'vue';
 import type { Card } from '@/types/card';
 import { GAME_CONFIG } from '@/config/gameConfig';
+
+// Atomic Components
+import TacticalButton from '@/components/ui/TacticalButton.vue';
 
 const props = defineProps<{
   deckName: string;
@@ -23,188 +25,132 @@ const deckNameModel = computed({
 });
 
 function handleImageError(event: Event) {
-    (event.target as HTMLImageElement).src = 'https://placehold.co/100x100/e2e8f0/334155?text=...';
+    (event.target as HTMLImageElement).src = '/data/images/card_back.jpg';
 }
 </script>
 
 <template>
-  <div class="deck-pane">
-    <div class="deck-header">
-      <input 
-        type="text" 
-        v-model="deckNameModel" 
-        class="deck-name-input" 
-        placeholder="输入卡组名称"
-      >
-      <div class="deck-actions">
-        <button @click="emit('back')" class="btn-secondary">返回</button>
-        <button @click="emit('save')" class="btn-primary">保存</button>
+  <div class="deck-active-pane-tactical flex flex-col h-full bg-black/60 backdrop-blur-md border-l border-white/5 relative overflow-hidden">
+    <!-- Static Backdrop Decoration -->
+    <div class="absolute inset-0 bg-scanline opacity-[0.03] pointer-events-none"></div>
+
+    <!-- Header: Identity Configuration -->
+    <div class="p-6 border-b border-white/5 space-y-4 bg-black/20">
+      <div class="space-y-1">
+        <div class="text-[7px] font-display font-bold text-gold tracking-[0.5em] uppercase opacity-70">Configuration</div>
+        <input 
+          type="text" 
+          v-model="deckNameModel" 
+          class="w-full bg-transparent text-xl font-display font-black text-white uppercase tracking-tighter outline-none focus:text-gold transition-colors placeholder:text-industrial-700" 
+          placeholder="ENTER_STRATUM_NAME..."
+        >
+      </div>
+      
+      <div class="flex gap-2">
+        <TacticalButton variant="ghost" size="sm" @click="emit('back')" class="flex-1">
+          ABORT
+        </TacticalButton>
+        <TacticalButton variant="primary" size="sm" @click="emit('save')" class="flex-1">
+          SAVE_UPLINK
+        </TacticalButton>
       </div>
     </div>
     
-    <div class="deck-stats">
-       <div class="stat-item" :class="{'text-clinical-danger': animeInDeck.length > GAME_CONFIG.deckBuilding.AnimeMaxNum}">
-         <span class="label">动画卡</span>
-         <span class="value">{{ animeInDeck.length }} / {{ GAME_CONFIG.deckBuilding.AnimeMaxNum }}</span>
+    <!-- Stats Matrix -->
+    <div class="grid grid-cols-2 bg-white/[0.02] border-b border-white/5">
+       <div class="p-4 border-r border-white/5 flex flex-col items-center">
+         <span class="text-[7px] font-display font-bold text-industrial-500 uppercase tracking-widest mb-1">Anime_Payload</span>
+         <span class="text-xs font-mono font-black tabular-nums" :class="animeInDeck.length > GAME_CONFIG.deckBuilding.AnimeMaxNum ? 'text-clinical-danger' : 'text-gold'">
+           {{ animeInDeck.length }} / {{ GAME_CONFIG.deckBuilding.AnimeMaxNum }}
+         </span>
        </div>
-       <div class="stat-item" :class="{'text-clinical-danger': characterInDeck.length > GAME_CONFIG.deckBuilding.CharacterMaxNum}">
-         <span class="label">角色卡</span>
-         <span class="value">{{ characterInDeck.length }} / {{ GAME_CONFIG.deckBuilding.CharacterMaxNum }}</span>
+       <div class="p-4 flex flex-col items-center">
+         <span class="text-[7px] font-display font-bold text-industrial-500 uppercase tracking-widest mb-1">Operative_Roster</span>
+         <span class="text-xs font-mono font-black tabular-nums" :class="characterInDeck.length > GAME_CONFIG.deckBuilding.CharacterMaxNum ? 'text-clinical-danger' : 'text-white'">
+           {{ characterInDeck.length }} / {{ GAME_CONFIG.deckBuilding.CharacterMaxNum }}
+         </span>
        </div>
     </div>
 
-    <div class="deck-content custom-scrollbar">
-      <!-- Anime Cards -->
-      <div class="section">
-        <h4 class="section-title">
-          <span class="icon">🎬</span> 动画序列 
-          <span class="badge">{{ animeInDeck.length }}</span>
-        </h4>
-        <div class="deck-card-list">
+    <!-- Active List Viewport -->
+    <div class="flex-1 overflow-y-auto p-4 space-y-8 scrollbar-tactical custom-scrollbar">
+      <!-- Deployment Queue: Anime -->
+      <section class="quantic-reveal">
+        <div class="flex justify-between items-center mb-3">
+           <h4 class="text-[8px] font-display font-bold text-industrial-400 uppercase tracking-[0.2em]">Deployment_Queue // Anime</h4>
+           <div class="w-10 h-px bg-white/5"></div>
+        </div>
+        
+        <div class="space-y-1.5">
           <div v-for="card in animeInDeck" :key="card.id" 
                @click="emit('remove-from-deck', card.id, 'anime')"
-               class="deck-list-item group">
-            <img :src="card.image_path" class="thumb" @error="handleImageError">
-            <div class="info">
-              <span class="rarity" :class="'rarity-' + card.rarity">{{ card.rarity }}</span>
-              <span class="name truncate">{{ card.name }}</span>
+               class="deck-active-item group relative flex items-center p-2 bg-black/40 border border-white/5 cursor-pointer hover:border-clinical-danger/30 transition-all">
+            <img :src="card.image_path" class="w-12 h-8 object-cover opacity-60 group-hover:opacity-100 grayscale group-hover:grayscale-0 transition-all" @error="handleImageError">
+            <div class="ml-3 flex-1 min-w-0">
+               <div class="text-[8px] font-mono font-black uppercase" :class="'rarity-' + card.rarity">{{ card.rarity }}_SPEC</div>
+               <div class="text-[10px] font-display font-bold text-white uppercase truncate tracking-tight">{{ card.name }}</div>
             </div>
-            <div class="remove-hint">移除</div>
+            <div class="text-[7px] font-display font-black text-clinical-danger opacity-0 group-hover:opacity-100 transition-opacity tracking-widest px-2">PURGE</div>
           </div>
-          <p v-if="animeInDeck.length === 0" class="empty-placeholder">从左侧点击添加动画卡</p>
+          
+          <div v-if="animeInDeck.length === 0" class="py-8 text-center bg-white/[0.02] border border-dashed border-white/5">
+             <span class="text-[8px] font-display font-black text-industrial-600 uppercase tracking-[0.2em] italic">Queue_Empty_Standby</span>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Character Cards -->
-      <div class="section mt-6">
-        <h4 class="section-title">
-          <span class="icon">👤</span> 参战角色
-          <span class="badge">{{ characterInDeck.length }}</span>
-        </h4>
-        <div class="deck-card-list">
+      <!-- Operative Roster: Character -->
+      <section class="quantic-reveal">
+        <div class="flex justify-between items-center mb-3">
+           <h4 class="text-[8px] font-display font-bold text-industrial-400 uppercase tracking-[0.2em]">Operative_Roster // Char</h4>
+           <div class="w-10 h-px bg-white/5"></div>
+        </div>
+        
+        <div class="space-y-1.5">
            <div v-for="card in characterInDeck" :key="card.id" 
                 @click="emit('remove-from-deck', card.id, 'character')"
-                class="deck-list-item group">
-            <img :src="card.image_path" class="thumb thumb-char" @error="handleImageError">
-            <div class="info">
-              <span class="rarity" :class="'rarity-' + card.rarity">{{ card.rarity }}</span>
-              <span class="name truncate">{{ card.name }}</span>
+                class="deck-active-item group relative flex items-center p-2 bg-black/40 border border-white/5 cursor-pointer hover:border-clinical-danger/30 transition-all">
+            <img :src="card.image_path" class="w-10 h-10 object-cover opacity-60 group-hover:opacity-100 grayscale group-hover:grayscale-0 transition-all" @error="handleImageError">
+            <div class="ml-3 flex-1 min-w-0">
+               <div class="text-[8px] font-mono font-black uppercase" :class="'rarity-' + card.rarity">{{ card.rarity }}_SPEC</div>
+               <div class="text-[10px] font-display font-bold text-white uppercase truncate tracking-tight">{{ card.name }}</div>
             </div>
-            <div class="remove-hint">移除</div>
+            <div class="text-[7px] font-display font-black text-clinical-danger opacity-0 group-hover:opacity-100 transition-opacity tracking-widest px-2">PURGE</div>
           </div>
-          <p v-if="characterInDeck.length === 0" class="empty-placeholder">从左侧点击添加角色卡</p>
+          
+          <div v-if="characterInDeck.length === 0" class="py-8 text-center bg-white/[0.02] border border-dashed border-white/5">
+             <span class="text-[8px] font-display font-black text-industrial-600 uppercase tracking-[0.2em] italic">Roster_Incomplete_Standby</span>
+          </div>
         </div>
-      </div>
+      </section>
+    </div>
+
+    <!-- Secondary info tag -->
+    <div class="absolute bottom-1 left-2 text-[5px] font-mono text-white/5 uppercase tracking-widest pointer-events-none">
+       Loadout_Integrity_Monitor_404
     </div>
   </div>
 </template>
 
 <style scoped>
-.deck-pane {
-  @apply bg-industrial-800 border-l border-industrial-700;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+.deck-active-item:hover {
+  @apply bg-clinical-danger/[0.02];
 }
 
-.deck-header {
-  @apply p-4 border-b border-industrial-700 bg-industrial-900/50;
-}
-
-.deck-name-input {
-  @apply text-lg font-black text-white p-2 border-b-2 border-transparent focus:border-clinical-warning outline-none w-full bg-transparent tracking-widest placeholder-industrial-600;
-}
-
-.deck-actions {
-  @apply mt-4 flex gap-2;
-}
-
-.btn-primary {
-  @apply flex-1 bg-clinical-warning text-black font-black py-2 px-4 text-xs tracking-widest hover:bg-yellow-400 clip-chamfer-sm transition-colors;
-}
-
-.btn-secondary {
-  @apply flex-1 bg-industrial-700 text-industrial-300 font-bold py-2 px-4 text-xs tracking-widest hover:bg-industrial-600 clip-chamfer-sm transition-colors;
-}
-
-.deck-stats {
-  @apply p-4 bg-industrial-900/30 grid grid-cols-2 gap-4 border-b border-industrial-700;
-}
-
-.stat-item {
-  @apply flex flex-col items-center p-2 border border-industrial-700/50 bg-black/20;
-}
-
-.stat-item .label {
-  @apply text-[10px] text-industrial-500 uppercase tracking-tighter;
-}
-
-.stat-item .value {
-  @apply text-sm font-black text-industrial-100 font-mono;
-}
-
-.deck-content {
-  @apply p-4 overflow-y-auto flex-1;
-}
-
-.section-title {
-  @apply text-[10px] font-black text-industrial-500 uppercase tracking-widest mb-3 flex items-center gap-2;
-}
-
-.section-title .badge {
-  @apply bg-industrial-700 text-industrial-300 px-1.5 py-0.5 rounded-none text-[9px];
-}
-
-.deck-card-list {
-  @apply space-y-1.5;
-}
-
-.deck-list-item {
-  @apply flex items-center p-2 bg-industrial-900/40 border border-industrial-700/50 hover:border-clinical-danger/50 cursor-pointer relative overflow-hidden;
-}
-
-.deck-list-item .thumb {
-  @apply w-10 h-7 object-cover grayscale-[0.5] group-hover:grayscale-0 transition-all;
-}
-
-.deck-list-item .thumb-char {
-  @apply w-8 h-10;
-}
-
-.deck-list-item .info {
-  @apply flex flex-col ml-3 flex-1 min-w-0;
-}
-
-.deck-list-item .rarity {
-  @apply text-[9px] font-black uppercase;
-}
-
-.deck-list-item .name {
-  @apply text-xs text-industrial-200 font-bold;
-}
-
-.remove-hint {
-  @apply absolute right-2 inset-y-0 flex items-center text-[10px] font-black text-clinical-danger opacity-0 group-hover:opacity-100 transition-opacity;
-}
-
-.empty-placeholder {
-  @apply text-[10px] text-industrial-600 py-8 text-center border-2 border-dashed border-industrial-700 italic;
-}
-
-.rarity-UR { @apply text-red-500; }
-.rarity-HR { @apply text-purple-500; }
-.rarity-SSR { @apply text-amber-500; }
-.rarity-SR { @apply text-indigo-400; }
-.rarity-R { @apply text-green-500; }
-.rarity-N { @apply text-gray-500; }
+.rarity-UR { @apply text-clinical-danger shadow-[0_0_8px_rgba(159,18,57,0.3)]; }
+.rarity-HR { @apply text-gold; }
+.rarity-SSR { @apply text-amber-500 opacity-80; }
+.rarity-SR { @apply text-blue-400 opacity-60; }
+.rarity-R { @apply text-industrial-400 opacity-40; }
+.rarity-N { @apply text-industrial-600 opacity-30; }
 
 .custom-scrollbar::-webkit-scrollbar {
-  width: 4px;
+  width: 1px;
 }
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.2);
+  @apply bg-transparent;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #334155;
+  @apply bg-gold/10 hover:bg-gold/30;
 }
 </style>

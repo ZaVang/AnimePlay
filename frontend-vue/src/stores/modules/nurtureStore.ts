@@ -17,6 +17,7 @@ export interface CharacterNurtureData {
   dialogueHistory: string[];
   gifts: string[];
   specialEvents: string[];
+  unlockedLoreIndices: number[];
   level: number;
   experience: number;
   totalExperience: number;
@@ -119,6 +120,7 @@ export const useNurtureStore = defineStore('nurture', () => {
         dialogueHistory: [],
         gifts: [],
         specialEvents: [],
+        unlockedLoreIndices: [],
         level: 1,
         experience: 0,
         totalExperience: 0,
@@ -410,6 +412,16 @@ export const useNurtureStore = defineStore('nurture', () => {
     return;
   }
 
+  function unlockLore(characterId: number, loreIndex: number) {
+    const authStore = useAuthStore();
+    const nurtureData = getNurtureData(characterId);
+    
+    if (!nurtureData.unlockedLoreIndices.includes(loreIndex)) {
+      nurtureData.unlockedLoreIndices.push(loreIndex);
+      authStore.addLog(`叙事碎片已解锁 // ID_${loreIndex} // 同步完成`, 'success');
+    }
+  }
+
   function loadFromPayload(payload: any) {
     const savedNurtureData = payload.characterNurtureData || [];
     characterNurtureData.value = new Map(savedNurtureData);
@@ -455,6 +467,7 @@ export const useNurtureStore = defineStore('nurture', () => {
     hasCompletedFloor,
     canAttemptToday,
     recordTowerAttempt,
+    unlockLore,
     loadFromPayload,
     serializeForSave,
   };

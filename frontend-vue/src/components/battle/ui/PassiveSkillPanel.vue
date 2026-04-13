@@ -12,49 +12,47 @@ const props = defineProps<{
 const persistentSystem = usePersistentEffects();
 const hoveredEffect = ref<PersistentEffect | null>(null);
 
-// 获取玩家的活跃效果
+// Get player's active effects
 const activeEffects = computed(() => {
   return persistentSystem.getPlayerEffects(props.playerId);
 });
 
-// 过滤显示的效果（排除一些内部效果）
+// Filter displayed effects
 const displayEffects = computed(() => {
   return activeEffects.value.filter(effect => {
-    // 过滤掉一些不需要显示的内部效果
     const hiddenTypes = ['first_card_discount', 'next_card_cost_reduction'];
     return !hiddenTypes.includes(effect.type);
   });
 });
 
-// 获取效果的图标
+// Tactical Icon Mapping
 function getEffectIcon(effect: PersistentEffect): string {
   const iconMap: Record<string, string> = {
-    'gentle_encouragement': '💝', // 古河渚 - 温柔鼓励
-    'reincarnation_memory': '🔄', // 晓美焰 - 轮回记忆
-    'time_stop_priority': '⏰', // 晓美焰 - 时间停止
-    'bass_rhythm': '🎵', // 秋山澪 - 贝斯节奏
-    'inner_focus': '🎯', // 内向专注
-    'musical_family': '🎼', // 音乐世家
-    'genre_expert': '📚', // 类型专家
-    'default': '✨'
+    'gentle_encouragement': '◈', 
+    'reincarnation_memory': '↺', 
+    'time_stop_priority': '⌬', 
+    'bass_rhythm': '☊', 
+    'inner_focus': '⦿', 
+    'musical_family': '♬', 
+    'genre_expert': '⊞', 
+    'default': 'diamondsuit;'
   };
-
   return iconMap[effect.type] || iconMap.default;
 }
 
-// 获取效果的显示颜色
+// Semantic Color Class
 function getEffectColor(effect: PersistentEffect): string {
-  if (effect.duration === -1) return 'text-purple-400'; // 永久效果
-  if (effect.duration > 3) return 'text-blue-400'; // 长期效果
-  if (effect.duration > 1) return 'text-yellow-400'; // 中期效果
-  return 'text-red-400'; // 短期效果
+  if (effect.duration === -1) return 'text-gold drop-shadow-[0_0_5px_rgba(212,165,116,0.3)]'; 
+  if (effect.duration > 3) return 'text-blue-400'; 
+  if (effect.duration > 1) return 'text-blue-300 opacity-80'; 
+  return 'text-clinical-danger animate-pulse'; 
 }
 
-// 获取持续时间显示
+// Duration Readout
 function getDurationText(effect: PersistentEffect): string {
-  if (effect.duration === -1) return '永久';
-  if (effect.duration === 0) return '即将结束';
-  return `${effect.duration}回合`;
+  if (effect.duration === -1) return 'INFINITE';
+  if (effect.duration === 0) return 'EXPIRING';
+  return `${effect.duration} RND`;
 }
 
 function onEffectHover(effect: PersistentEffect) {
@@ -67,161 +65,161 @@ function onEffectLeave() {
 </script>
 
 <template>
-  <div class="passive-skill-panel">
-    <!-- 面板标题 -->
+  <div class="passive-skill-panel quantic-reveal">
+    <!-- Panel Header: Tactical Tag -->
     <div class="panel-header">
-      <h3 class="panel-title">
-        {{ title || (isOpponent ? 'AI被动技能' : '我的被动技能') }}
-      </h3>
-      <span class="effect-count">{{ displayEffects.length }}</span>
+       <div class="flex flex-col">
+          <span class="text-[7px] font-display font-bold text-gold/50 uppercase tracking-[0.3em]">Status Registry</span>
+          <h3 class="panel-title">
+            {{ title || (isOpponent ? 'OPPONENT_PASSIVES' : 'USER_PASSIVES') }}
+          </h3>
+       </div>
+       <div class="effect-count tabular-nums">{{ displayEffects.length }}</div>
     </div>
 
-    <!-- 效果列表 -->
-    <div class="effects-container">
+    <!-- Effects Stack -->
+    <div class="effects-container scrollbar-none">
       <div
         v-for="effect in displayEffects"
         :key="effect.id"
-        class="effect-item"
+        class="effect-item group"
         :class="getEffectColor(effect)"
         @mouseenter="onEffectHover(effect)"
         @mouseleave="onEffectLeave"
       >
-        <!-- 效果图标 -->
-        <div class="effect-icon">
-          {{ getEffectIcon(effect) }}
+        <!-- Tactical Slot Indicator -->
+        <div class="effect-icon-container">
+           <span class="effect-icon">{{ getEffectIcon(effect) }}</span>
         </div>
 
-        <!-- 效果名称 -->
-        <div class="effect-name">
-          {{ effect.description }}
+        <div class="effect-info">
+          <div class="effect-name uppercase tracking-tighter">{{ effect.description }}</div>
+          <div class="effect-duration font-mono">{{ getDurationText(effect) }}</div>
         </div>
-
-        <!-- 持续时间 -->
-        <div class="effect-duration">
-          {{ getDurationText(effect) }}
-        </div>
+        
+        <!-- Selection highlight decoration -->
+        <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        <div class="absolute left-0 inset-y-0 w-0.5 bg-current opacity-0 group-hover:opacity-100 transition-all"></div>
       </div>
 
-      <!-- 无效果时的占位 -->
+      <!-- Null State -->
       <div v-if="displayEffects.length === 0" class="no-effects">
-        暂无活跃技能
+        <span class="opacity-30">NO_ACTIVE_PROTOCOLS</span>
       </div>
     </div>
 
-    <!-- 效果详情悬浮窗 -->
+    <!-- Tactical Tooltip: Holographic Overlay -->
     <div
       v-if="hoveredEffect"
       class="effect-tooltip"
     >
       <div class="tooltip-header">
-        <span class="tooltip-icon">{{ getEffectIcon(hoveredEffect) }}</span>
-        <span class="tooltip-title">{{ hoveredEffect.description }}</span>
-      </div>
-      <div class="tooltip-content">
-        <p><strong>类型:</strong> {{ hoveredEffect.type }}</p>
-        <p><strong>持续时间:</strong> {{ getDurationText(hoveredEffect) }}</p>
-        <div v-if="hoveredEffect.data && Object.keys(hoveredEffect.data).length > 0" class="tooltip-data">
-          <strong>效果数据:</strong>
-          <ul>
-            <li v-for="[key, value] in Object.entries(hoveredEffect.data)" :key="key">
-              {{ key }}: {{ value }}
-            </li>
-          </ul>
+        <span class="tooltip-icon text-gold">{{ getEffectIcon(hoveredEffect) }}</span>
+        <div class="flex flex-col">
+           <span class="text-[7px] font-display font-bold text-gold uppercase tracking-widest">Protocol_Detail</span>
+           <span class="tooltip-title uppercase tracking-tighter">{{ hoveredEffect.description }}</span>
         </div>
       </div>
+      <div class="tooltip-content">
+        <div class="flex justify-between items-center mb-2">
+           <span class="text-industrial-500">TYPE:</span>
+           <span class="text-white font-mono uppercase">{{ hoveredEffect.type }}</span>
+        </div>
+        <div class="flex justify-between items-center mb-3">
+           <span class="text-industrial-500">LIFE_CYCLE:</span>
+           <span class="font-mono" :class="getEffectColor(hoveredEffect)">{{ getDurationText(hoveredEffect) }}</span>
+        </div>
+        
+        <div v-if="hoveredEffect.data && Object.entries(hoveredEffect.data).length > 0" class="tooltip-data border-t border-white/5 pt-2 mt-2">
+          <div class="text-[7px] font-display font-bold text-industrial-500 uppercase tracking-widest mb-1">Payload_Data:</div>
+          <div v-for="[key, value] in Object.entries(hoveredEffect.data)" :key="key" class="flex justify-between items-center py-0.5">
+             <span class="text-industrial-400 capitalize">{{ key.replace(/_/g, ' ') }}:</span>
+             <span class="text-gold/80 font-mono">{{ value }}</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Scanline background for tooltip -->
+      <div class="absolute inset-0 bg-scanline opacity-[0.02] pointer-events-none"></div>
     </div>
   </div>
 </template>
 
 <style scoped>
 .passive-skill-panel {
-  @apply bg-gray-800/70 rounded-lg border border-gray-600 p-3 relative;
-  min-width: 200px;
-  max-width: 300px;
+  @apply bg-black/40 backdrop-blur-md border border-white/5 p-3 relative;
+  min-width: 220px;
+  max-width: 280px;
 }
 
 .panel-header {
-  @apply flex items-center justify-between mb-2 pb-2 border-b border-gray-600;
+  @apply flex items-end justify-between mb-4 pb-2 border-b border-white/5;
 }
 
 .panel-title {
-  @apply text-sm font-semibold text-gray-200;
+  @apply text-[10px] font-display font-black text-white uppercase tracking-tight;
 }
 
 .effect-count {
-  @apply text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded;
+  @apply text-[9px] font-mono font-bold text-gold px-2 py-0.5 bg-white/5 border border-white/5;
 }
 
 .effects-container {
-  @apply space-y-1 max-h-32 overflow-y-auto;
+  @apply space-y-1.5 max-h-48 overflow-y-auto;
 }
 
 .effect-item {
-  @apply flex items-center gap-2 p-2 rounded bg-gray-700/50 hover:bg-gray-700 transition-all duration-200 cursor-pointer;
-  font-size: 0.75rem;
+  @apply flex items-center gap-3 p-2 bg-white/[0.02] border border-white/5 relative transition-all duration-300;
+}
+
+.effect-icon-container {
+  @apply w-6 h-6 flex items-center justify-center bg-white/[0.03] border border-white/5 flex-shrink-0;
 }
 
 .effect-icon {
-  @apply text-base flex-shrink-0;
+  @apply text-sm font-bold;
+}
+
+.effect-info {
+  @apply flex-1 flex flex-col min-w-0;
 }
 
 .effect-name {
-  @apply flex-1 truncate;
+  @apply text-[10px] text-industrial-100 font-display font-black truncate leading-tight;
 }
 
 .effect-duration {
-  @apply text-xs opacity-75 flex-shrink-0;
+  @apply text-[8px] opacity-60 tracking-widest mt-0.5;
 }
 
 .no-effects {
-  @apply text-xs text-gray-500 text-center py-4 italic;
+  @apply text-[8px] font-display font-bold text-industrial-600 text-center py-6 tracking-[0.3em] font-mono;
 }
 
-/* 悬浮提示框 */
+/* Tactical Tooltip */
 .effect-tooltip {
-  @apply absolute left-full ml-2 top-0 z-50 bg-gray-900 border border-gray-600 rounded-lg p-3 shadow-lg;
-  width: 250px;
+  @apply absolute left-full ml-4 top-0 z-50 bg-black/90 border border-white/10 p-4 shadow-2xl backdrop-blur-xl;
+  width: 260px;
   pointer-events: none;
+  box-shadow: 0 0 30px rgba(0,0,0,0.8), 0 0 10px rgba(212,165,116,0.1);
 }
 
 .tooltip-header {
-  @apply flex items-center gap-2 mb-2 pb-2 border-b border-gray-600;
+  @apply flex items-center gap-3 mb-4 pb-3 border-b border-white/10;
 }
 
 .tooltip-icon {
-  @apply text-lg;
+  @apply text-xl font-black;
 }
 
 .tooltip-title {
-  @apply font-semibold text-gray-200;
+  @apply font-display font-black text-white text-[12px];
 }
 
 .tooltip-content {
-  @apply text-xs text-gray-300 space-y-1;
+  @apply text-[10px] text-industrial-300;
 }
 
-.tooltip-data ul {
-  @apply ml-2 mt-1;
-}
-
-.tooltip-data li {
-  @apply text-gray-400;
-}
-
-/* 滚动条样式 */
-.effects-container::-webkit-scrollbar {
-  width: 4px;
-}
-
-.effects-container::-webkit-scrollbar-track {
-  @apply bg-gray-800;
-}
-
-.effects-container::-webkit-scrollbar-thumb {
-  @apply bg-gray-600 rounded;
-}
-
-.effects-container::-webkit-scrollbar-thumb:hover {
-  @apply bg-gray-500;
-}
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
 </style>

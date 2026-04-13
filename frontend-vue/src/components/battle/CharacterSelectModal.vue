@@ -5,11 +5,16 @@ import { useCollectionStore } from '@/stores/modules/collectionStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import type { CharacterCard } from '@/types/card';
 
+// Atomic Components
+import GlassPanel from '@/components/ui/GlassPanel.vue';
+import TacticalButton from '@/components/ui/TacticalButton.vue';
+import RarityTag from '@/components/ui/RarityTag.vue';
+
 const props = defineProps<{
   isOpen: boolean;
-  position: number; // 0-3，选择的位置
-  currentCharacterId?: number; // 当前位置已选中的角色ID
-  usedCharacterIds?: number[]; // 已被其他位置使用的角色ID列表
+  position: number; // 0-3
+  currentCharacterId?: number; 
+  usedCharacterIds?: number[]; 
 }>();
 
 const emit = defineEmits<{
@@ -22,10 +27,8 @@ const authStore = useAuthStore();
 const collectionStore = useCollectionStore();
 const gameDataStore = useGameDataStore();
 
-// 搜索关键词
 const searchKeyword = ref('');
 
-// 获取可选择的角色
 const availableCharacters = computed(() => {
   if (!authStore.isLoggedIn) return [];
 
@@ -41,242 +44,164 @@ const availableCharacters = computed(() => {
       count: item.count
     }))
     .filter(character => {
-      // 搜索过滤
       if (searchKeyword.value) {
         const matchesSearch = character.name.toLowerCase().includes(searchKeyword.value.toLowerCase());
         if (!matchesSearch) return false;
       }
-      
-      // 过滤已被其他位置使用的角色（但保留当前位置的角色）
       if (props.usedCharacterIds && props.usedCharacterIds.length > 0) {
         return !props.usedCharacterIds.includes(character.id) || character.id === props.currentCharacterId;
       }
-      
       return true;
     })
     .sort((a, b) => {
-      // 按稀有度排序：UR > HR > SSR > SR > R > N
       const rarityOrder = { 'UR': 6, 'HR': 5, 'SSR': 4, 'SR': 3, 'R': 2, 'N': 1 };
       return (rarityOrder[b.rarity] || 0) - (rarityOrder[a.rarity] || 0);
     });
 });
 
-// 选择角色
 function selectCharacter(character: CharacterCard) {
-  // 检查是否是已被其他位置使用的角色
   if (props.usedCharacterIds && 
       props.usedCharacterIds.includes(character.id) && 
       character.id !== props.currentCharacterId) {
-    return; // 阻止选择已被使用的角色
+    return; 
   }
-  
   emit('select', character.id, props.position);
   closeModal();
 }
 
-// 移除当前位置的角色
 function removeCharacter() {
   emit('remove', props.position);
   closeModal();
 }
 
-// 关闭弹窗
 function closeModal() {
   searchKeyword.value = '';
   emit('close');
-}
-
-// 点击背景关闭
-function handleBackdropClick(event: MouseEvent) {
-  if (event.target === event.currentTarget) {
-    closeModal();
-  }
 }
 </script>
 
 <template>
   <div 
     v-if="isOpen"
-    class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
-    @click="handleBackdropClick"
+    class="fixed inset-0 bg-black/80 backdrop-blur-md flex items-center justify-center z-50 p-4 transition-all duration-500"
+    @click.self="closeModal"
   >
-    <div class="bg-gray-800 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-hidden border border-gray-700">
-      
-      <!-- 头部 -->
-      <div class="p-6 border-b border-gray-700">
-        <div class="flex items-center justify-between mb-4">
-          <h2 class="text-2xl font-bold text-white">
-            选择位置 {{ position + 1 }} 的角色
-          </h2>
-          <button 
-            @click="closeModal"
-            class="w-8 h-8 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center text-gray-300 hover:text-white transition-colors"
-          >
-            ✕
-          </button>
+    <GlassPanel class="max-w-4xl w-full border-white/10 shadow-3xl quantic-reveal overflow-hidden">
+      <template #header>
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+           <div class="space-y-1">
+              <div class="text-[8px] font-display font-bold text-gold tracking-[0.5em] uppercase opacity-70">Unit Deployment Protocol</div>
+              <h2 class="text-3xl font-display font-black text-white uppercase tracking-tighter">
+                Personnel Selection // Slot_{{ position + 1 }}
+              </h2>
+           </div>
+           
+           <!-- Search Logic -->
+           <div class="relative w-full md:w-64 group">
+             <input
+               v-model="searchKeyword"
+               placeholder="IDENTIFY_NAME..."
+               class="w-full pl-4 pr-10 py-2 bg-white/5 border border-white/10 text-[10px] font-display text-white outline-none focus:border-gold/50 transition-all uppercase tracking-widest"
+             />
+             <div class="absolute right-3 top-2.5 text-industrial-500 group-focus-within:text-gold transition-colors">◈</div>
+           </div>
         </div>
-        
-        <!-- 搜索框 -->
-        <div class="relative">
-          <input
-            v-model="searchKeyword"
-            placeholder="搜索角色名称..."
-            class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg border border-gray-600 focus:border-blue-500 focus:outline-none"
-          >
-          <div class="absolute right-3 top-2 text-gray-400">🔍</div>
-        </div>
-        
-        <!-- 当前选中的角色 -->
-        <div v-if="currentCharacterId" class="mt-4 p-4 bg-blue-900/20 rounded-lg border border-blue-500">
-          <div class="flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-              <div class="w-12 h-12 rounded-full overflow-hidden">
-                <img 
-                  :src="gameDataStore.getCharacterCardById(currentCharacterId)?.image_path"
-                  :alt="gameDataStore.getCharacterCardById(currentCharacterId)?.name"
-                  class="w-full h-full object-cover object-top"
-                  @error="($event.target as HTMLImageElement).src = '/data/images/character/77.jpg'"
-                >
+
+        <!-- Current Active Slot Profile -->
+        <div v-if="currentCharacterId" class="mb-6 p-4 bg-gold/5 border-l-2 border-gold flex items-center justify-between">
+           <div class="flex items-center gap-4">
+              <div class="w-16 h-16 border border-gold/20 overflow-hidden relative">
+                 <img 
+                   :src="gameDataStore.getCharacterCardById(currentCharacterId)?.image_path"
+                   class="w-full h-full object-cover object-top"
+                 >
+                 <div class="absolute inset-0 bg-gradient-to-t from-gold/20 to-transparent"></div>
               </div>
-              <div>
-                <div class="text-white font-medium">
-                  当前：{{ gameDataStore.getCharacterCardById(currentCharacterId)?.name }}
-                </div>
-                <div class="text-blue-400 text-sm">位置 {{ position + 1 }}</div>
+              <div class="space-y-1">
+                 <div class="text-[8px] font-display font-bold text-gold uppercase tracking-widest opacity-60">Current_Deployment</div>
+                 <div class="text-lg font-display font-black text-white uppercase">{{ gameDataStore.getCharacterCardById(currentCharacterId)?.name }}</div>
+                 <div class="text-[9px] font-mono text-gold/40">READY_FOR_ENGAGEMENT</div>
               </div>
-            </div>
-            <button 
-              @click="removeCharacter"
-              class="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors"
-            >
-              移除
-            </button>
-          </div>
+           </div>
+           <TacticalButton variant="danger" size="sm" @click="removeCharacter">TERMINATE_UPLINK</TacticalButton>
         </div>
-      </div>
-      
-      <!-- 角色列表 -->
-      <div class="p-6 overflow-y-auto max-h-96">
-        <div v-if="availableCharacters.length === 0" class="text-center py-8">
-          <div class="text-gray-400 mb-4">
-            {{ searchKeyword ? '未找到匹配的角色' : '你还没有收藏任何角色' }}
-          </div>
-          <router-link 
-            v-if="!searchKeyword"
-            to="/gacha" 
-            class="text-blue-400 hover:text-blue-300"
-            @click="closeModal"
-          >
-            去抽卡获得角色 →
-          </router-link>
+      </template>
+
+      <!-- Selection Grid -->
+      <div class="h-[50vh] overflow-y-auto pr-2 scrollbar-none">
+        <div v-if="availableCharacters.length === 0" class="flex flex-col items-center justify-center h-full py-12 text-center">
+           <div class="text-[10px] font-display font-bold text-industrial-600 uppercase tracking-[0.5em] mb-4">
+             {{ searchKeyword ? 'SIGNAL_NOT_FOUND' : 'COLLECTION_EMPTY' }}
+           </div>
+           <TacticalButton v-if="!searchKeyword" variant="primary" size="md" @click="$router.push('/gacha')">INDUCT_NEW_PERSONNEL</TacticalButton>
         </div>
         
-        <div v-else class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div v-else class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
           <div 
             v-for="character in availableCharacters"
             :key="character.id"
             @click="selectCharacter(character)"
-            class="relative cursor-pointer bg-gray-700 rounded-lg border-2 overflow-hidden transition-all transform hover:scale-105"
-            :class="{
-              'border-green-500 bg-green-900/20': character.id === currentCharacterId,
-              'border-gray-600 hover:border-blue-500': character.id !== currentCharacterId && (!usedCharacterIds || !usedCharacterIds.includes(character.id)),
-              'border-red-500 bg-red-900/20 opacity-60 cursor-not-allowed': usedCharacterIds && usedCharacterIds.includes(character.id) && character.id !== currentCharacterId
-            }"
+            class="group relative cursor-pointer border transition-all duration-300 overflow-hidden"
+            :class="[
+              character.id === currentCharacterId ? 'border-gold bg-gold/5 scale-95' : 'border-white/5 bg-black/40 hover:border-gold/30',
+              usedCharacterIds?.includes(character.id) && character.id !== currentCharacterId ? 'opacity-30 grayscale cursor-not-allowed border-clinical-danger/20' : ''
+            ]"
           >
-            <div class="aspect-[2/3] relative">
-              <!-- 角色图片 -->
+            <!-- Background Decoration -->
+            <div class="absolute top-0 right-0 p-1 opacity-10 group-hover:opacity-30 transition-opacity">
+               <div class="text-xl font-display font-black">UN_{{ character.id }}</div>
+            </div>
+
+            <div class="aspect-[3/4] relative">
               <img 
                 :src="character.image_path"
-                :alt="character.name"
-                class="w-full h-full object-cover object-top"
-                @error="($event.target as HTMLImageElement).src = '/data/images/character/77.jpg'"
+                class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
               >
               
-              <!-- 稀有度背景 -->
-              <div 
-                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"
-                :class="{
-                  'from-red-900/60': character.rarity === 'UR',
-                  'from-purple-900/60': character.rarity === 'HR', 
-                  'from-yellow-900/60': character.rarity === 'SSR',
-                  'from-blue-900/60': character.rarity === 'SR',
-                  'from-green-900/60': character.rarity === 'R'
-                }"
-              ></div>
+              <!-- Gradient Overlay -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
               
-              <!-- 当前选中标记 -->
-              <div 
-                v-if="character.id === currentCharacterId"
-                class="absolute top-2 right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center shadow-lg"
-              >
-                <span class="text-white font-bold">✓</span>
+              <!-- Selection Icons -->
+              <div v-if="character.id === currentCharacterId" class="absolute top-1 right-1 w-5 h-5 bg-gold flex items-center justify-center">
+                 <span class="text-black text-[10px] font-black">✓</span>
+              </div>
+              <div v-else-if="usedCharacterIds?.includes(character.id)" class="absolute top-1 right-1 w-5 h-5 bg-clinical-danger flex items-center justify-center shadow-lg">
+                 <span class="text-white text-[8px] font-black italic">!</span>
               </div>
               
-              <!-- 拥有数量 -->
-              <div 
-                v-if="character.count > 1"
-                class="absolute top-2 left-2 px-2 py-1 bg-blue-500 rounded-full text-xs text-white font-bold"
-              >
-                ×{{ character.count }}
+              <div v-if="character.count > 1" class="absolute top-1 left-1 px-1.5 py-0.5 bg-blue-500/80 text-[8px] font-display font-bold text-white uppercase tracking-tighter">
+                DUPx{{ character.count }}
               </div>
               
-              <!-- 角色信息 -->
-              <div class="absolute bottom-0 left-0 right-0 p-3">
-                <div class="text-xs text-white font-medium text-center mb-1">
-                  {{ character.name }}
-                </div>
-                <div class="text-center">
-                  <span 
-                    class="px-2 py-1 rounded text-xs font-bold"
-                    :class="{
-                      'bg-red-500 text-white': character.rarity === 'UR',
-                      'bg-purple-500 text-white': character.rarity === 'HR',
-                      'bg-yellow-500 text-black': character.rarity === 'SSR',
-                      'bg-blue-500 text-white': character.rarity === 'SR',
-                      'bg-green-500 text-white': character.rarity === 'R',
-                      'bg-gray-500 text-white': character.rarity === 'N'
-                    }"
-                  >
-                    {{ character.rarity }}
-                  </span>
-                </div>
+              <!-- Info Strip -->
+              <div class="absolute bottom-0 left-0 right-0 p-2 space-y-1">
+                 <div class="text-[9px] font-display font-black text-white uppercase truncate text-center group-hover:text-gold transition-colors">{{ character.name }}</div>
+                 <div class="flex justify-center">
+                    <RarityTag :rarity="character.rarity" size="sm" />
+                 </div>
               </div>
             </div>
+            
+            <!-- Surge effect on hover -->
+            <div class="absolute inset-0 border border-gold opacity-0 group-hover:opacity-10 pointer-events-none transition-opacity"></div>
           </div>
         </div>
       </div>
       
-    </div>
+      <template #footer>
+        <div class="mt-6 pt-6 border-t border-white/5 flex justify-between items-center text-[8px] font-display font-bold text-industrial-600 uppercase tracking-widest">
+           <div>UPLINK_STATUS: STABLE</div>
+           <div>PERSONNEL_COUNT: {{ availableCharacters.length }}</div>
+        </div>
+      </template>
+    </GlassPanel>
   </div>
 </template>
 
 <style scoped>
-/* 弹窗动画 */
-.fixed {
-  animation: fadeIn 0.2s ease-out;
+.shadow-3xl {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
 }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.bg-gray-800 {
-  animation: slideUp 0.3s ease-out;
-}
-
-@keyframes slideUp {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
 </style>

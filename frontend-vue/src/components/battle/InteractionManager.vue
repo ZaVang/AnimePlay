@@ -34,35 +34,47 @@
       @close="closeTypeSelection"
     />
 
-    <!-- Confirmation Dialog -->
+    <!-- Confirmation Dialog: Refactored to ATL Standard -->
     <div
       v-if="confirmationState.visible"
-      @click="onConfirmationBackgroundClick"
-      class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+      @click.self="onConfirmationBackgroundClick"
+      class="fixed inset-0 bg-black/80 backdrop-blur-xl flex items-center justify-center z-50 p-4 transition-all duration-500"
     >
-      <div
-        @click.stop
-        class="bg-white rounded-lg shadow-xl max-w-md w-full text-gray-800 mx-4"
+      <GlassPanel
+        class="max-w-md w-full border-white/10 shadow-3xl quantic-reveal"
       >
-        <div class="p-6">
-          <h3 class="text-lg font-bold mb-4">{{ confirmationState.title || '确认' }}</h3>
-          <p class="text-gray-700 mb-6">{{ confirmationState.message }}</p>
-          <div class="flex justify-end space-x-3">
-            <button
-              @click="onConfirmationCancel"
-              class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50"
-            >
-              取消
-            </button>
-            <button
-              @click="onConfirmationConfirm"
-              class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-            >
-              确认
-            </button>
-          </div>
+        <template #header>
+           <div class="mb-4">
+              <div class="text-[8px] font-display font-bold text-gold tracking-[0.5em] uppercase opacity-70 mb-1">Confirmation_Protocol</div>
+              <h2 class="text-xl font-display font-black text-white uppercase tracking-tighter">{{ confirmationState.title || 'REQUIRED_CONFIRMATION' }}</h2>
+           </div>
+        </template>
+
+        <div class="py-4">
+           <p class="text-xs text-industrial-200 leading-relaxed font-ui italic opacity-80 border-l border-gold/40 pl-4">
+             {{ confirmationState.message }}
+           </p>
         </div>
-      </div>
+
+        <template #footer>
+          <div class="flex justify-end gap-4 mt-8 pt-6 border-t border-white/5">
+            <TacticalButton
+              variant="ghost"
+              size="md"
+              @click="onConfirmationCancel"
+            >
+              ABORT
+            </TacticalButton>
+            <TacticalButton
+              variant="primary"
+              size="lg"
+              @click="onConfirmationConfirm"
+            >
+              CONFIRM_EXECUTION
+            </TacticalButton>
+          </div>
+        </template>
+      </GlassPanel>
     </div>
   </div>
 </template>
@@ -71,6 +83,11 @@
 import { reactive } from 'vue';
 import type { AnimeCard } from '@/types/card';
 import type { CardSelectionOptions } from '@/core/systems/InteractionSystem';
+
+// Atomic Components
+import GlassPanel from '@/components/ui/GlassPanel.vue';
+import TacticalButton from '@/components/ui/TacticalButton.vue';
+
 import HandViewModal from './HandViewModal.vue';
 import CardSelectionModal from './CardSelectionModal.vue';
 import TypeSelectionModal from './TypeSelectionModal.vue';
@@ -229,7 +246,7 @@ function closeTypeSelection() {
 function showConfirmation(message: string, title?: string): Promise<boolean> {
   confirmationState.visible = true;
   confirmationState.message = message;
-  confirmationState.title = title || '确认';
+  confirmationState.title = title || 'REQ_CONFIRM';
   
   return new Promise((resolve) => {
     confirmationState.resolve = resolve;
@@ -266,5 +283,7 @@ defineExpose({
 </script>
 
 <style scoped>
-/* Component styles can be added here if needed */
+.shadow-3xl {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
+}
 </style>

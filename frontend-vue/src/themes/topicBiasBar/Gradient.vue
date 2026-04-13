@@ -2,224 +2,172 @@
 import { computed } from 'vue';
 import { usePlayerStore } from '@/stores/battle';
 
-// 接收props
 interface Props {
-  topicBias: number;  // -10 到 +10 的值
+  topicBias: number;  // -10 to +10
 }
 
 const props = defineProps<Props>();
 const playerStore = usePlayerStore();
 
-// -10 (反方/B) to +10 (正方/A)
+// -10 (Opponent/B) to +10 (Player/A)
 const isPlayerA = playerStore.playerId === 'playerA';
 
-const playerLabel = computed(() => (isPlayerA ? '我方' : '对手'));
-const opponentLabel = computed(() => (isPlayerA ? '对手' : '我方'));
+const playerLabel = computed(() => (isPlayerA ? 'USER_UPLINK' : 'RIVAL_SIGNAL'));
+const opponentLabel = computed(() => (isPlayerA ? 'RIVAL_SIGNAL' : 'USER_UPLINK'));
 
-const playerColor = computed(() => (isPlayerA ? 'text-green-400' : 'text-red-400'));
-const opponentColor = computed(() => (isPlayerA ? 'text-red-400' : 'text-green-400'));
+const playerColor = computed(() => (isPlayerA ? 'text-gold' : 'text-clinical-danger'));
+const opponentColor = computed(() => (isPlayerA ? 'text-clinical-danger' : 'text-gold'));
 
-// 计算偏向百分比（用于定位指示器）
 const biasPercentage = computed(() => {
-  // 将 -10 到 +10 (B -> A) 映射到 0% 到 100%
-  // 如果是A，+10是100%。如果是B，-10是100%
   const bias = isPlayerA ? props.topicBias : -props.topicBias;
   return (bias + 10) * 5;
 });
 
-// 计算数值显示的样式类
-const valueClass = computed(() => {
-  if (props.topicBias > 0) return 'positive';
-  if (props.topicBias < 0) return 'negative';
-  return 'neutral';
-});
-
-// 计算状态文本
 const statusText = computed(() => {
   const bias = props.topicBias;
-  if (bias >= 10) return '即将胜利';
-  if (bias >= 7) return '绝对优势';
-  if (bias >= 4) return '占据主动';
-  if (bias >= 1) return '略占优势';
-  if (bias === 0) return '势均力敌';
-  if (bias >= -3) return '略处劣势';
-  if (bias >= -6) return '陷入被动';
-  if (bias >= -9) return '岌岌可危';
-  return '濒临失败';
-});
-
-// 计算填充条的高度
-const fillHeight = computed(() => {
-  return Math.abs(props.topicBias) * 5; // 每点偏向值对应5%高度
-});
-
-// 计算状态条的宽度
-const statusBarWidth = computed(() => {
-  return Math.abs(props.topicBias) * 10; // 每点偏向值对应10%宽度
-});
-
-// 判断是否显示警告
-const showWarning = computed(() => {
-  return Math.abs(props.topicBias) >= 8;
-});
-
-// 计算指示器颜色
-const indicatorColor = computed(() => {
-  const bias = props.topicBias;
-  if (bias >= 7) return '#10b981';    // 优势绿
-  if (bias > 0) return '#60a5fa';     // 略优蓝
-  if (bias === 0) return '#fbbf24';    // 均势黄
-  if (bias < 0 && bias > -7) return '#fb923c'; // 略劣橙
-  return '#ef4444';                   // 劣势红
+  if (bias >= 10) return 'TERMINATION_PROXIMITY';
+  if (bias >= 7) return 'ABSOLUTE_DOMINANCE';
+  if (bias >= 4) return 'STRATEGIC_INITIATIVE';
+  if (bias >= 1) return 'MARGINAL_ADVANTAGE';
+  if (bias === 0) return 'EQUILIBRIUM_STATE';
+  if (bias >= -3) return 'STOCHASTIC_DEBT';
+  if (bias >= -6) return 'SIGNAL_DEGRADATION';
+  if (bias >= -9) return 'CRITICAL_VULNERABILITY';
+  return 'DESTRUCTION_IMMINENT';
 });
 
 const playerIndicatorColor = computed(() => {
   const bias = isPlayerA ? props.topicBias : -props.topicBias;
-  if (bias >= 7) return '#10b981';
-  if (bias > 0) return '#60a5fa';
-  if (bias === 0) return '#fbbf24';
-  if (bias < 0 && bias > -7) return '#fb923c';
-  return '#ef4444';
+  if (bias >= 7) return '#d4a574';    // Gold
+  if (bias > 0) return '#60a5fa';     // Tactical Blue
+  if (bias === 0) return '#ffffff';    // White
+  if (bias < 0 && bias > -7) return '#fb923c'; 
+  return '#ef4444';                   // Danger Red
 });
 
-// 发射事件（如果需要与父组件交互）
 const emit = defineEmits<{
   (e: 'click', value: number): void;
 }>();
-
-function handleClick() {
-  emit('click', props.topicBias);
-}
 </script>
 
 <template>
-  <div class="topic-bias-container-horizontal">
-    <!-- 左侧标签 -->
+  <div class="topic-bias-container-horizontal quantic-reveal">
+    <!-- Background Static decoration -->
+    <div class="absolute inset-0 bg-scanline opacity-[0.03] pointer-events-none"></div>
+
+    <!-- Label: RIVAL -->
     <div class="bias-label left">
-      <span :class="opponentColor">{{ opponentLabel }}</span>
+      <div class="text-[7px] font-display font-bold text-industrial-600 uppercase tracking-widest mb-1">Source_B</div>
+      <span :class="opponentColor" class="text-[10px] font-display font-black uppercase tracking-tighter">{{ opponentLabel }}</span>
     </div>
     
-    <!-- 主偏向条 -->
-    <div class="bias-track-horizontal">
-      <!-- 背景渐变 -->
-      <div class="bias-gradient-horizontal"></div>
+    <!-- Main Bias Track: Tactical Readout -->
+    <div class="bias-track-horizontal bg-white/[0.02] border border-white/5 relative group">
+      <!-- Minimalist Gradient Backdrop -->
+      <div class="bias-gradient-horizontal opacity-10"></div>
       
-      <!-- 刻度线 -->
+      <!-- Scale Marks: Tactical Ticks -->
       <div class="scale-marks-horizontal">
-        <div v-for="i in 5" :key="i" class="mark-horizontal" :class="{ 'mark-major-horizontal': i === 3 }"></div>
+        <div v-for="i in 21" :key="i" 
+             class="mark-horizontal" 
+             :class="{ 
+               'mark-major-horizontal': i === 11,
+               'opacity-40': (i-1) % 5 === 0 && i !== 11,
+               'opacity-10': (i-1) % 5 !== 0 
+             }">
+        </div>
       </div>
       
-      <!-- 危险区域标记 -->
-      <div class="danger-zone-horizontal left"></div>
-      <div class="danger-zone-horizontal right"></div>
+      <!-- Critical Threshold Alerts -->
+      <div v-if="Math.abs(props.topicBias) >= 8" class="absolute inset-0 animate-pulse bg-clinical-danger/[0.05] pointer-events-none"></div>
       
-      <!-- 指示器 -->
+      <!-- Bias Indicator: Floating Tactical Node -->
       <div 
-        class="bias-indicator-horizontal"
+        class="bias-indicator-horizontal group-hover:scale-105 transition-all duration-700 ease-out cursor-pointer"
         :style="{ 
-          left: `calc(${biasPercentage}% - 12px)`,
-          backgroundColor: playerIndicatorColor,
-          boxShadow: `0 0 20px ${playerIndicatorColor}`
+          left: `calc(${biasPercentage}% - 30px)`,
+          borderColor: playerIndicatorColor,
+          boxShadow: `0 0 15px ${playerIndicatorColor}44`
         }"
+        @click="emit('click', props.topicBias)"
       >
-        <span class="indicator-value">{{ props.topicBias > 0 ? '+' : '' }}{{ props.topicBias }}</span>
+        <div class="absolute top-0 left-0 w-1 h-1 bg-current opacity-60"></div>
+        <div class="flex flex-col items-center">
+           <span class="indicator-value font-mono text-xs tabular-nums text-white">
+             {{ props.topicBias > 0 ? '+' : '' }}{{ props.topicBias }}
+           </span>
+           <span class="text-[6px] font-display font-bold uppercase tracking-tighter opacity-50">{{ statusText }}</span>
+        </div>
       </div>
     </div>
     
-    <!-- 右侧标签 -->
+    <!-- Label: USER -->
     <div class="bias-label right">
-      <span :class="playerColor">{{ playerLabel }}</span>
+      <div class="text-[7px] font-display font-bold text-industrial-600 uppercase tracking-widest mb-1">Source_A</div>
+      <span :class="playerColor" class="text-[10px] font-display font-black uppercase tracking-tighter">{{ playerLabel }}</span>
     </div>
+
+    <!-- Corner decorations -->
+    <div class="absolute top-0 right-0 w-4 h-px bg-white/5"></div>
+    <div class="absolute bottom-0 left-0 w-px h-4 bg-white/5"></div>
   </div>
 </template>
 
 <style scoped>
 .topic-bias-container-horizontal {
   @apply w-full h-24 flex items-center justify-between;
-  @apply bg-gray-900/80 backdrop-blur-sm rounded-xl border border-gray-700;
-  @apply p-4 relative shadow-2xl;
+  @apply bg-black/60 backdrop-blur-md border border-white/5;
+  @apply p-6 relative overflow-hidden;
 }
 
 .bias-label {
-  @apply flex flex-col items-center gap-1 font-bold;
-  flex-basis: 60px;
+  @apply flex flex-col items-center;
+  flex-basis: 90px;
 }
 
 .bias-track-horizontal {
-  @apply relative flex-1 h-12 mx-3;
-  @apply bg-gray-800 rounded-full;
-  @apply border border-gray-600;
+  @apply relative flex-1 h-10 mx-6 overflow-visible;
 }
 
 .bias-gradient-horizontal {
-  @apply absolute inset-0 rounded-full overflow-hidden;
+  @apply absolute inset-0;
   background: linear-gradient(to right,
     #ef4444 0%,
-    #fb923c 25%,
-    #fbbf24 50%,
-    #60a5fa 75%,
-    #10b981 100%
+    transparent 50%,
+    #d4a574 100%
   );
-  opacity: 0.2;
 }
 
 .scale-marks-horizontal {
-  @apply absolute inset-0 flex justify-between px-4;
+  @apply absolute inset-0 flex justify-between px-0;
 }
 
 .mark-horizontal {
-  @apply h-full w-px bg-gray-600;
+  @apply h-full w-px bg-white;
 }
 
 .mark-major-horizontal {
-  @apply bg-yellow-500 w-0.5;
-}
-
-.danger-zone-horizontal {
-  @apply absolute h-full w-8 top-0;
-  @apply bg-gradient-to-r from-transparent;
-}
-
-.danger-zone-horizontal.left {
-  @apply left-0 rounded-l-full;
-  @apply to-red-500/30;
-}
-
-.danger-zone-horizontal.right {
-  @apply right-0 rounded-r-full rotate-180;
-  @apply to-green-500/30;
+  @apply bg-gold/50 w-px;
 }
 
 .bias-indicator-horizontal {
   @apply absolute top-1/2 transform -translate-y-1/2;
-  @apply w-16 h-6 rounded-full;
+  @apply w-[60px] h-10 border bg-black/80;
   @apply flex items-center justify-center;
-  @apply font-bold text-white text-sm;
-  @apply transition-all duration-300 ease-out;
-  @apply cursor-pointer hover:scale-110;
   z-index: 10;
 }
 
 .indicator-value {
-  @apply drop-shadow-lg;
+  @apply drop-shadow-[0_0_5px_rgba(255,255,255,0.2)];
 }
 
-.status-text {
-  @apply text-xs font-bold animate-pulse;
-}
-
-/* 动画效果 */
-@keyframes pulse-danger {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
-}
-
+/* Float animation for the indicator */
 .bias-indicator-horizontal {
-  animation: float-y 3s ease-in-out infinite;
+  animation: float-tactical 4s ease-in-out infinite;
 }
 
-@keyframes float-y {
+@keyframes float-tactical {
   0%, 100% { transform: translateY(-50%) translateX(0); }
-  50% { transform: translateY(-50%) translateX(-2px); }
+  50% { transform: translateY(-50%) translateX(-1px); }
 }
 </style>

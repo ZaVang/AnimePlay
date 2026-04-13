@@ -1,8 +1,14 @@
 <script setup lang="ts">
+/**
+ * Collection Stats - Manifest Analytics Substrate
+ */
 import { computed } from 'vue';
 import { useCollectionStore } from '@/stores/modules/collectionStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
+
+// Atomic Components
+import GlassPanel from '@/components/ui/GlassPanel.vue';
 
 const props = defineProps<{
   type: 'anime' | 'character';
@@ -11,7 +17,7 @@ const props = defineProps<{
 const collectionStore = useCollectionStore();
 const gameDataStore = useGameDataStore();
 
-const itemType = computed(() => props.type === 'anime' ? '动画' : '角色');
+const itemType = computed(() => props.type === 'anime' ? 'ARCHIVE_INDEX' : 'PERSONNEL_INDEX');
 
 const collectionStats = computed(() => {
     const isAnime = props.type === 'anime';
@@ -24,7 +30,7 @@ const collectionStats = computed(() => {
     const totalPossible = allPossibleCards.length;
     const completionRate = totalPossible > 0 ? ((uniqueCount / totalPossible) * 100).toFixed(1) : '0.0';
 
-    const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
+    const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'] as const;
     const rarityCounts = rarityOrder.map(rarity => {
         const count = Array.from(collection.keys()).filter(id => {
             const card = isAnime ? gameDataStore.getAnimeCardById(id) : gameDataStore.getCharacterCardById(id);
@@ -34,67 +40,66 @@ const collectionStats = computed(() => {
         return {
             rarity,
             count,
-            colorClass: rarityConfig[rarity]?.c || 'bg-gray-400'
+            colorClass: rarityConfig[rarity]?.c || 'bg-industrial-600'
         };
     });
 
-    let genderCounts = null;
-    if (!isAnime) {
-        const counts = { male: 0, female: 0, unknown: 0 };
-        for (const id of collection.keys()) {
-            const card = gameDataStore.getCharacterCardById(id);
-            if (card?.gender === '男') counts.male++;
-            else if (card?.gender === '女') counts.female++;
-            else counts.unknown++;
-        }
-        genderCounts = [
-            { label: '男性', count: counts.male },
-            { label: '女性', count: counts.female },
-            { label: '未知', count: counts.unknown },
-        ].filter(g => g.count > 0);
-    }
-
-    return {
-        uniqueCount,
-        totalCount,
-        totalPossible,
-        completionRate,
-        rarityCounts,
-        genderCounts
-    };
+    return { uniqueCount, totalCount, totalPossible, completionRate, rarityCounts };
 });
-
 </script>
 
 <template>
-  <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 shadow-sm">
-    <h3 class="text-lg font-semibold mb-3 text-gray-800">{{ itemType }}收藏统计</h3>
+  <GlassPanel class="p-6 border-white/10 relative overflow-hidden group/stats">
+    <!-- Grid Ornament -->
+    <div class="absolute inset-0 bg-grid opacity-5 pointer-events-none group-hover/stats:opacity-10 transition-opacity"></div>
     
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center text-sm mb-4">
-      <div>
-        <p class="text-gray-600">已收集种类</p>
-        <p class="text-2xl font-bold text-indigo-600">{{ collectionStats.uniqueCount }} / {{ collectionStats.totalPossible }}</p>
+    <div class="relative flex justify-between items-end mb-8 border-b border-white/5 pb-4">
+       <div class="space-y-1">
+          <h3 class="text-[10px] font-display font-black text-white uppercase tracking-[0.4em] opacity-80">{{ itemType }}</h3>
+          <div class="text-[8px] font-mono text-industrial-500 uppercase">Collection Matrix Optimization Result</div>
+       </div>
+       <div class="text-[10px] font-mono font-bold text-gold tabular-nums tracking-widest">{{ collectionStats.completionRate }}% COMPLETED</div>
+    </div>
+    
+    <!-- Primary Metrics -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 border-b border-white/5 pb-8">
+      <div class="space-y-2">
+        <p class="text-[8px] font-display font-bold text-industrial-600 uppercase tracking-widest">Manifest Synchronicity</p>
+        <div class="flex items-baseline gap-2">
+           <p class="text-3xl font-display font-black text-white tabular-nums">{{ collectionStats.uniqueCount }}</p>
+           <p class="text-xs font-mono text-industrial-500">/ {{ collectionStats.totalPossible }} UNIQUE_VARIANTS</p>
+        </div>
       </div>
-      <div>
-        <p class="text-gray-600">卡牌总数量</p>
-        <p class="text-2xl font-bold text-indigo-600">{{ collectionStats.totalCount }}</p>
-      </div>
-      <div>
-        <p class="text-gray-600">收集完成率</p>
-        <p class="text-2xl font-bold text-teal-600">{{ collectionStats.completionRate }}%</p>
+      <div class="space-y-2 md:text-right">
+        <p class="text-[8px] font-display font-bold text-industrial-600 uppercase tracking-widest">Total Vector Yield</p>
+        <div class="flex items-baseline gap-2 md:justify-end">
+           <p class="text-3xl font-display font-black text-gold tabular-nums">{{ collectionStats.totalCount }}</p>
+           <p class="text-xs font-mono text-industrial-500">TOTAL_RECORDS</p>
+        </div>
       </div>
     </div>
 
-    <div class="text-center text-sm space-y-2">
-      <div class="text-gray-600">
-        稀有度分布:
-        <span v-for="item in collectionStats.rarityCounts" :key="item.rarity" class="inline-block ml-3">
+    <!-- Rarity Distribution -->
+    <div class="space-y-3">
+      <div class="text-[8px] font-display font-bold text-industrial-600 uppercase tracking-widest mb-4">Frequency Distribution Matrix</div>
+      <div class="flex flex-wrap gap-4">
+        <div v-for="item in collectionStats.rarityCounts" :key="item.rarity" class="flex items-center gap-3 bg-white/[0.02] border border-white/5 px-3 py-2 transition-all hover:bg-white/[0.05]">
           <span 
-            class="font-bold px-1.5 py-0.5 rounded-sm text-xs text-white"
+            class="font-display font-black px-2 py-0.5 text-[9px] text-white"
             :class="[item.colorClass, item.colorClass.includes('from') ? 'bg-gradient-to-r' : '']"
-          >{{ item.rarity }}</span>: {{ item.count }}
-        </span>
+          >{{ item.rarity }}</span>
+          <span class="text-xs font-mono font-bold text-white tabular-nums">{{ String(item.count).padStart(2, '0') }}</span>
+        </div>
       </div>
     </div>
-  </div>
+  </GlassPanel>
 </template>
+
+<style scoped>
+.bg-grid {
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+}
+</style>

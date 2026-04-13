@@ -34,6 +34,12 @@ export interface CharacterCard extends BaseCard {
     sp: number;
     spd: number;
   };
+  lore_fragments?: {        // Narrative fragments for Phase 5
+    id: number;
+    title: string;
+    content: string;
+    requiredIntimacy?: number;
+  }[];
 }
 
 // A union type for any card, useful for generic components

@@ -2,9 +2,6 @@
 import { ref, onMounted, onBeforeUnmount, nextTick, provide, watch, computed } from 'vue';
 import { useGameStore, usePlayerStore } from '@/stores/battle';
 import { TurnManager } from '@/core/battle/TurnManager';
-import { InteractionSystem } from '@/core/systems/InteractionSystem';
-import { PersistentEffectSystem } from '@/core/systems/PersistentEffectSystem';
-import { DialogueSystem } from '@/core/systems/DialogueSystem';
 import { BATTLE_INTERACTION_SYSTEM, BATTLE_PERSISTENT_SYSTEM, BATTLE_DIALOGUE_SYSTEM } from '@/core/di/injection-keys';
 import { systemRegistry } from '@/core/di/registry';
 import type { Deck } from '@/types/store';
@@ -25,6 +22,15 @@ import PerformanceMonitor from '@/components/debug/PerformanceMonitor.vue';
 import BattleDebugPanel from '@/components/debug/BattleDebugPanel.vue';
 import { battleDebugLogger } from '@/core/debug/BattleDebugLogger';
 
+// Atomic Components
+import GlassPanel from '@/components/ui/GlassPanel.vue';
+import TacticalButton from '@/components/ui/TacticalButton.vue';
+
+// Systems
+import { InteractionSystem } from '@/core/systems/InteractionSystem';
+import { PersistentEffectSystem } from '@/core/systems/PersistentEffectSystem';
+import { DialogueSystem } from '@/core/systems/DialogueSystem';
+
 // 开发环境下导入测试工具
 if (import.meta.env.DEV) {
   import('@/utils/testRandomAI');
@@ -37,14 +43,10 @@ const playerStore = usePlayerStore();
 const battlePhase = ref<BattlePhase>('deckSelection');
 const interactionManager = ref<InstanceType<typeof InteractionManager> | null>(null);
 
-// 开发环境标记
 const isDev = import.meta.env.DEV;
-
-// 战斗规则弹窗
 const showRulesModal = ref(false);
-
-// 游戏结束相关状态
 const showGameOverModal = ref(false);
+
 const gameResult = ref<{
   winner: 'playerA' | 'playerB' | 'draw';
   reason: string;
@@ -58,61 +60,42 @@ const gameResult = ref<{
 // 计算胜利信息
 const victoryInfo = computed(() => {
   if (!gameStore.isGameOver) return null;
-  
   const playerA = playerStore.playerA;
   const playerB = playerStore.playerB;
   
-  // 根据声望和话题偏向判断胜利原因
-  if (playerA.reputation <= 0) {
-    return { winner: 'playerB', reason: '声望归零', details: `${playerA.name}的声望降至0，败北！` };
-  } else if (playerB.reputation <= 0) {
-    return { winner: 'playerA', reason: '声望归零', details: `${playerB.name}的声望降至0，败北！` };
-  } else if (gameStore.topicBias >= 10) {
-    return { winner: 'playerA', reason: '议题掌控', details: `${playerA.name}完全掌控了辩论议题！` };
-  } else if (gameStore.topicBias <= -10) {
-    return { winner: 'playerB', reason: '议题掌控', details: `${playerB.name}完全掌控了辩论议题！` };
-  } else if (gameStore.turn >= 12) {
-    // 12回合后的判定
-    if (playerA.reputation > playerB.reputation) {
-      return { winner: 'playerA', reason: '声望胜利', details: `经过激烈的辩论，${playerA.name}以更高的声望获胜！` };
-    } else if (playerB.reputation > playerA.reputation) {
-      return { winner: 'playerB', reason: '声望胜利', details: `经过激烈的辩论，${playerB.name}以更高的声望获胜！` };
-    } else {
-      return { winner: 'draw', reason: '平局', details: '双方势均力敌，以平局结束！' };
-    }
+  if (playerA.reputation <= 0) return { winner: 'playerB', reason: 'REPUTATION DEPLETED', details: `${playerA.name}'s influence dropped to zero.` };
+  if (playerB.reputation <= 0) return { winner: 'playerA', reason: 'REPUTATION DEPLETED', details: `${playerB.name}'s influence dropped to zero.` };
+  if (gameStore.topicBias >= 10) return { winner: 'playerA', reason: 'CONCEPTUAL MASTERY', details: `${playerA.name} completely dominated the narrative.` };
+  if (gameStore.topicBias <= -10) return { winner: 'playerB', reason: 'CONCEPTUAL MASTERY', details: `${playerB.name} completely dominated the narrative.` };
+  if (gameStore.turn >= 12) {
+    if (playerA.reputation > playerB.reputation) return { winner: 'playerA', reason: 'TACTICAL VICTORY', details: `Superior tactical score achieved.` };
+    if (playerB.reputation > playerA.reputation) return { winner: 'playerB', reason: 'TACTICAL VICTORY', details: `Superior tactical score achieved.` };
+    return { winner: 'draw', reason: 'STALEMATE', details: 'No strategic breakthrough achieved.' };
   }
-  
   return null;
 });
 
-// 创建系统实例并通过依赖注入提供
 const interactionSystem = new InteractionSystem();
 const persistentSystem = new PersistentEffectSystem();
 const dialogueSystem = new DialogueSystem();
 
-// 提供系统实例给子组件
 provide(BATTLE_INTERACTION_SYSTEM, interactionSystem);
 provide(BATTLE_PERSISTENT_SYSTEM, persistentSystem);
 provide(BATTLE_DIALOGUE_SYSTEM, dialogueSystem);
 
-// 创建BattleController实例
 const battleController = createBattleController(dialogueSystem);
 
-// Check game state when component is mounted
 onMounted(() => {
-  // 注册系统实例到全局注册表（向后兼容）
   systemRegistry.registerSystems({
     interaction: interactionSystem,
     persistent: persistentSystem,
     dialogue: dialogueSystem
   });
 
-  // If a game is in progress (i.e., not in setup or game over phase), go directly to the battle screen.
   if (gameStore.phase !== 'setup' && gameStore.phase !== 'game_over') {
     battlePhase.value = 'battle';
   }
 
-  // Set up interaction system (use nextTick to ensure component is mounted)
   nextTick(() => {
     if (interactionManager.value) {
       interactionSystem.setInteractionManager(interactionManager.value);
@@ -120,10 +103,8 @@ onMounted(() => {
   });
 });
 
-// 监听游戏结束状态
 watch(() => gameStore.isGameOver, (isGameOver) => {
   if (isGameOver && victoryInfo.value) {
-    // 延迟显示结果模态框，让最后的动画完成
     setTimeout(() => {
       gameResult.value = {
         winner: victoryInfo.value!.winner as 'playerA' | 'playerB' | 'draw',
@@ -136,45 +117,30 @@ watch(() => gameStore.isGameOver, (isGameOver) => {
 }, { immediate: true });
 
 onBeforeUnmount(() => {
-  // Clean up all systems when leaving battle
   interactionSystem.cleanup();
   persistentSystem.cleanup();
   dialogueSystem.cleanup();
-
-  // 清理调试日志
   battleDebugLogger.cleanup();
-
-  // 清理全局注册表
   systemRegistry.clear();
 });
 
 async function handleDeckSelected(deck: Deck, aiProfileId?: string) {
-  console.log('🎮 尝试开始战斗，使用卡组:', deck.name, 'AI:', aiProfileId);
   try {
     await TurnManager.initializeGameWithDeck(deck, aiProfileId);
     battlePhase.value = 'battle';
-
-    // 初始化调试日志
     battleDebugLogger.startSession(deck.name, 'AI Deck', aiProfileId);
-
-    console.log('✅ 战斗初始化成功');
   } catch (error) {
-    console.error('❌ 战斗初始化失败:', error);
+    console.error('BATTLE_INIT_ERROR:', error);
   }
 }
 
 async function handleRandomDeck(aiProfileId?: string) {
-  console.log('🎲 尝试开始随机战斗，AI:', aiProfileId);
   try {
     await TurnManager.initializeRandomGame(aiProfileId);
     battlePhase.value = 'battle';
-
-    // 初始化调试日志
     battleDebugLogger.startSession('Random Deck', 'AI Random Deck', aiProfileId);
-
-    console.log('✅ 随机战斗初始化成功');
   } catch (error) {
-    console.error('❌ 随机战斗初始化失败:', error);
+    console.error('BATTLE_INIT_ERROR:', error);
   }
 }
 
@@ -183,50 +149,22 @@ function handleSkipTurn() {
 }
 
 function handleExitBattle() {
-  console.log('🚪 退出战斗按钮被点击');
-  try {
-    // 确认退出对话框
-    if (confirm('确定要退出当前战斗吗？进度将不会保存。')) {
-      console.log('✅ 用户确认退出，开始清理战斗状态');
-      
-      // 清理战斗状态
-      gameStore.resetGame();
-      playerStore.clearPlayers();
-      
-      // 清理持久化效果系统
-      try {
-        systemRegistry.getPersistentEffectSystem().clearAll();
-      } catch (error) {
-        console.warn('PersistentEffectSystem not available during exit:', error);
-      }
-      
-      // 返回卡组选择界面
-      battlePhase.value = 'deckSelection';
-      
-      console.log('✅ 战斗退出成功，已返回卡组选择界面');
-    } else {
-      console.log('❌ 用户取消退出');
-    }
-  } catch (error) {
-    console.error('❌ 退出战斗失败:', error);
+  if (confirm('CONFIRM EXIT? Strategy progress will be purged.')) {
+    gameStore.resetGame();
+    playerStore.clearPlayers();
+    battlePhase.value = 'deckSelection';
   }
 }
 
 function handleGameOver() {
-  console.log('🏁 游戏结束，结果:', gameResult.value);
   showGameOverModal.value = false;
-  
-  // 重置游戏状态并返回卡组选择
   gameStore.resetGame();
   playerStore.clearPlayers();
   battlePhase.value = 'deckSelection';
 }
 
 function restartBattle() {
-  console.log('🔄 重新开始战斗');
   showGameOverModal.value = false;
-  
-  // 重置游戏状态并返回卡组选择
   gameStore.resetGame();
   playerStore.clearPlayers();
   battlePhase.value = 'deckSelection';
@@ -234,208 +172,148 @@ function restartBattle() {
 </script>
 
 <template>
-  <div class="battle-view">
+  <div class="battle-view font-ui">
     <NotificationDisplay />
-    
-    <!-- Interaction Manager for complex skill effects -->
     <InteractionManager ref="interactionManager" />
-    
-    <!-- Battle Dialogue Manager for speech bubbles and action effects -->
     <BattleDialogueManager v-if="battlePhase === 'battle'" />
+    <BattleRulesModal :show="showRulesModal" @close="showRulesModal = false" />
     
-    <!-- Battle Rules Modal -->
-    <BattleRulesModal 
-      :show="showRulesModal" 
-      @close="showRulesModal = false"
-    />
-    
-    <!-- Game Over Modal -->
-    <div 
-      v-if="showGameOverModal" 
-      class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
-      @click.self="handleGameOver"
-    >
-      <div class="bg-gray-800 text-white p-8 rounded-2xl border-2 border-gray-600 max-w-md w-full mx-4 shadow-2xl">
-        <div class="text-center">
-          <!-- Victory Icon -->
-          <div class="text-6xl mb-4">
+    <!-- Game Over Overlay -->
+    <div v-if="showGameOverModal" class="fixed inset-0 z-50 flex items-center justify-center p-4">
+      <div class="absolute inset-0 bg-black/80 backdrop-blur-xl"></div>
+      <GlassPanel class="max-w-md w-full text-center border-gold/40">
+        <template #header>
+          <div class="text-6xl mb-4 grayscale hover:grayscale-0 transition-all duration-500">
             <span v-if="gameResult.winner === 'playerA'">🏆</span>
-            <span v-else-if="gameResult.winner === 'playerB'">😔</span>
-            <span v-else>🤝</span>
+            <span v-else-if="gameResult.winner === 'playerB'">💀</span>
+            <span v-else>⚖️</span>
           </div>
-          
-          <!-- Victory Title -->
-          <h2 class="text-3xl font-bold mb-2">
-            <span v-if="gameResult.winner === 'playerA'" class="text-green-400">胜利！</span>
-            <span v-else-if="gameResult.winner === 'playerB'" class="text-red-400">失败</span>
-            <span v-else class="text-yellow-400">平局</span>
+          <h2 class="text-4xl font-display font-bold mb-2 tracking-tighter uppercase" :class="gameResult.winner === 'playerA' ? 'text-gold' : 'text-industrial-200'">
+            {{ gameResult.winner === 'playerA' ? 'SYSTEM VICTOR' : (gameResult.winner === 'playerB' ? 'DEFEAT' : 'STALEMATE') }}
           </h2>
-          
-          <!-- Victory Reason -->
-          <h3 class="text-xl font-semibold text-gray-300 mb-4">{{ gameResult.reason }}</h3>
-          
-          <!-- Victory Details -->
-          <p class="text-gray-400 mb-6">{{ gameResult.details }}</p>
-          
-          <!-- Action Buttons -->
-          <div class="flex gap-4 justify-center">
-            <button 
-              @click="restartBattle"
-              class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition-all duration-200"
-            >
-              再次挑战
-            </button>
-            <button 
-              @click="handleGameOver"
-              class="px-6 py-3 bg-gray-600 hover:bg-gray-700 rounded-lg font-semibold transition-all duration-200"
-            >
-              返回选择
-            </button>
-          </div>
+        </template>
+        <div class="mt-4">
+          <h3 class="text-xs font-display text-gold/60 mb-4 tracking-[0.3em] uppercase">{{ gameResult.reason }}</h3>
+          <p class="text-sm text-industrial-400 mb-8 border-l-2 border-white/5 pl-4 py-1 italic">{{ gameResult.details }}</p>
         </div>
-      </div>
+        <template #footer>
+          <div class="flex gap-4 justify-center">
+            <TacticalButton variant="primary" @click="restartBattle">RE-INITIALIZE</TacticalButton>
+            <TacticalButton variant="secondary" @click="handleGameOver">TERMINATE</TacticalButton>
+          </div>
+        </template>
+      </GlassPanel>
     </div>
     
     <!-- Phase 1: Deck Selection -->
-    <div v-if="battlePhase === 'deckSelection'" class="deck-selector-wrapper">
-      <DeckSelector @deckSelected="handleDeckSelected" @randomDeck="handleRandomDeck" />
+    <div v-if="battlePhase === 'deckSelection'" class="h-screen flex items-center justify-center">
+      <GlassPanel class="max-w-4xl w-full mx-4">
+        <template #header>
+          <h2 class="text-sm font-display font-bold tracking-[0.4em] uppercase text-gold/80 mb-6">Strategy Module Selection</h2>
+        </template>
+        <DeckSelector @deckSelected="handleDeckSelected" @randomDeck="handleRandomDeck" />
+      </GlassPanel>
     </div>
 
     <!-- Phase 2: Battle -->
-    <div v-else class="battle-arena">
-      <!-- Opponent's Field -->
-      <div class="field-opponent">
+    <div v-else class="battle-arena h-screen flex flex-col p-4 overflow-hidden relative">
+      <!-- Opponent Overlay Header -->
+      <div class="field-opponent relative z-10 flex-shrink-0">
         <PlayerField playerId="playerB" isOpponent />
       </div>
 
-      <!-- Center Area -->
-      <div class="center-area-reordered">
-        <!-- Left: Battle Log -->
-        <div class="log-container">
-            <BattleLog />
+      <!-- Center Strategic Area -->
+      <div class="flex-grow flex items-stretch justify-between gap-6 py-4 overflow-hidden">
+        <!-- Strategic Log -->
+        <GlassPanel :reveal="false" class="w-64 flex-shrink-0 flex flex-col p-0 border-white/5">
+           <template #header>
+             <div class="px-4 py-2 border-b border-white/5 bg-white/5">
+               <span class="text-[9px] font-display font-bold text-gold/60 tracking-widest uppercase">Signal Log</span>
+             </div>
+           </template>
+           <BattleLog class="flex-grow scrollbar-none" />
+        </GlassPanel>
+
+        <!-- Main Narrative Dashboard -->
+        <div class="flex-grow flex flex-col gap-6">
+           <GlassPanel :reveal="false" class="p-4 bg-gold/[0.02]">
+             <TopicBiasBar class="topic-bias-bar-horizontal-container" />
+           </GlassPanel>
+           
+           <div class="clash-zone-wrapper flex-grow relative">
+             <ClashZone />
+           </div>
         </div>
 
-        <!-- Center: Main Content (Topic Bar + Clash Zone) -->
-        <div class="center-content-wrapper">
-            <TopicBiasBar class="topic-bias-bar-horizontal-container" />
-            <div class="clash-zone-container">
-                <ClashZone />
-            </div>
-        </div>
-
-        <!-- Right: Action Buttons and Passive Skills -->
-        <div class="right-sidebar">
-            <!-- 被动技能面板 -->
-            <div class="passive-skills-section">
+        <!-- Tactical Command Sidebar -->
+        <div class="w-[320px] flex-shrink-0 flex flex-col gap-6">
+           <GlassPanel :reveal="false" class="flex-shrink-0">
+             <template #header>
+               <span class="text-[9px] font-display font-bold text-gold/60 tracking-widest uppercase mb-4 block">Passive Mods</span>
+             </template>
+             <div class="flex flex-col gap-4">
                 <PassiveSkillPanel playerId="playerB" isOpponent />
+                <div class="h-px bg-white/5"></div>
                 <PassiveSkillPanel playerId="playerA" />
-            </div>
+             </div>
+           </GlassPanel>
 
-            <!-- 操作按钮 -->
-            <div class="action-buttons">
-                <EndTurnButton />
-                <button
-                    v-if="gameStore.phase === 'defense' && gameStore.activePlayer === 'playerB'"
-                    @click="handleSkipTurn"
-                    class="battle-action-btn bg-yellow-600 hover:bg-yellow-700"
-                    title="跳过当前防御阶段"
-                >
-                    跳过防御
-                </button>
-                <button
-                    @click="showRulesModal = true"
-                    class="battle-action-btn bg-blue-600 hover:bg-blue-700"
-                    title="查看战斗规则详解"
-                >
-                    📋 规则
-                </button>
-                <button
-                    @click="handleExitBattle"
-                    class="battle-action-btn bg-red-600 hover:bg-red-700"
-                    title="退出当前战斗，进度将不会保存"
-                >
-                    退出战斗
-                </button>
-            </div>
+           <GlassPanel :reveal="false" class="flex-grow flex flex-col justify-center items-center gap-4 bg-white/5">
+              <template #header>
+                <span class="text-[9px] font-display font-bold text-gold/60 tracking-widest uppercase mb-4 block">Command Console</span>
+              </template>
+              <div class="flex flex-col gap-4 w-full px-6">
+                 <EndTurnButton />
+                 <TacticalButton 
+                   v-if="gameStore.phase === 'defense' && gameStore.activePlayer === 'playerB'"
+                   variant="secondary"
+                   @click="handleSkipTurn"
+                   class="w-full"
+                 >
+                   Skip Protocol
+                 </TacticalButton>
+                 
+                 <div class="grid grid-cols-2 gap-3 w-full">
+                    <TacticalButton variant="secondary" size="sm" @click="showRulesModal = true">GUIDE</TacticalButton>
+                    <TacticalButton variant="danger" size="sm" @click="handleExitBattle">ABORT</TacticalButton>
+                 </div>
+              </div>
+           </GlassPanel>
         </div>
       </div>
 
-      <!-- Player's Field -->
-      <div class="field-player">
+      <!-- User Command Deck -->
+      <div class="field-player relative z-10 flex-shrink-0">
         <PlayerField playerId="playerA" />
       </div>
     </div>
 
-    <!-- 性能监控器 (仅在开发环境中显示) -->
+    <!-- Dev Utilities -->
     <PerformanceMonitor v-if="isDev" />
-
-    <!-- 战斗调试面板 (仅在开发环境中显示) -->
     <BattleDebugPanel v-if="isDev" />
   </div>
 </template>
 
 <style scoped>
 .battle-view {
-  @apply bg-gray-900 text-white min-h-screen w-full h-full overflow-hidden;
+  @apply text-industrial-100 min-h-screen w-full h-full overflow-hidden;
 }
-.deck-selector-wrapper {
-  @apply w-full h-full flex items-center justify-center;
-}
+
 .battle-arena {
-  @apply h-full flex flex-col;
-}
-.field-opponent, .field-player {
-  @apply flex-1;
-  min-height: 250px; /* 确保玩家区域有最小高度 */
+  /* Environment is handled globally, but we add a vignette here */
+  background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.4) 100%);
 }
 
-/* Reordered Center Area Layout */
-.center-area-reordered {
-  @apply w-full flex-grow flex items-stretch justify-between p-4 gap-4;
+.clash-zone-wrapper {
+  perspective: 1000px;
 }
 
-.log-container {
-    @apply h-full bg-gray-800/50 rounded-lg p-2 overflow-hidden border border-gray-700 relative; /* Add relative positioning */
-    flex: 0 1 250px; /* Do not grow, shrink if needed, initial width 250px */
-    min-height: 0; /* Important fix for flex-child scrolling */
+/* Custom scrollbar for tactical log */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }
-
-.center-content-wrapper {
-    @apply flex-grow flex flex-col gap-4;
-}
-
-.topic-bias-bar-horizontal-container {
-    @apply w-full;
-}
-
-.clash-zone-container {
-    @apply h-full min-h-[18rem] bg-gray-800/50 rounded-lg p-2 overflow-hidden border border-gray-700;
-    flex: 1 1 auto; /* Grow to fill available space */
-}
-
-.right-sidebar {
-    @apply flex flex-col gap-4;
-    flex: 0 1 300px; /* Do not grow, shrink if needed, initial width 300px */
-}
-
-.passive-skills-section {
-    @apply flex flex-col gap-2;
-}
-
-.action-buttons {
-    @apply flex flex-col space-y-3 justify-center items-center;
-}
-
-/* 统一战斗操作按钮样式 */
-.battle-action-btn {
-    @apply px-6 py-3 rounded-lg text-white font-semibold transition-all duration-200 min-w-[120px] text-center;
-}
-
-.battle-action-btn:hover {
-    @apply shadow-lg transform scale-105;
-}
-
-.battle-action-btn:active {
-    @apply transform scale-95;
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 </style>

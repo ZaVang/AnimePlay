@@ -1,31 +1,28 @@
-# Sprint Contract: Dark Luxury Foundation & Gacha Lighthouse
+# Sprint Contract: Phase 5 - Sensory Narrative Convergence
 
-## 1. Scope of Work (The "What")
-This sprint establishes the system-level design tokens and applies them to the global shell and the Gacha system.
+## 1. Deliverables
 
-## 2. Technical API & File Changes
+### D1: Lore Core Expansion
+- **Type Definitions**: Extend `CharacterCard` and `CharacterNurtureData` in `types/card.ts` and `types/store.ts` to include `loreFragments`.
+- **Data Seed**: Inject localized lore fragments for at least 3 core characters.
+- **Decoding UI**: Implement `LoreDecoder.vue` (headless/composable style) to handle shuffling character animations.
 
-### A. Design Tokens (tailwind.config.js)
-- Define `theme.extend.colors.abyss` (`#08080C`)
-- Define `theme.extend.colors.substrate` (`#12121A`)
-- Define `theme.extend.colors.surface` (`#1C1C28`)
-- Define `theme.extend.colors.gold` (`#D4A574`)
-- Define `theme.extend.fontFamily.display` (`['Unbounded', 'sans-serif']`)
-- Define `theme.extend.fontFamily.ui` (`['Geist Sans', 'sans-serif']`)
+### D2: Surge GLSL System
+- **Event Bus**: Implement a `SurgeEvent` trigger system (e.g., in `authStore` or a dedicated `fxStore`).
+- **Reactive Overlays**: Integrate RGB Shift and Glitch CSS/SVG filters into `TacticalButton.vue` and `NurtureActions.vue` that trigger on success events.
 
-### B. Global Style (main.css)
-- Implement `.glass-substrate` utility: `backdrop-filter: blur(24px)`, `border: 1px solid rgba(255, 255, 255, 0.08)`.
-- Implement `.quantic-reveal` animation class.
+### D3: Audio Protocol V1
+- **`useTacticalAudio.ts` Logic**: Implement a Tone.js or Web Audio API based synthesizer for "Synthetic Blips".
+- **Interaction Mapping**: Bind specific frequencies/waveforms to Hover, Click, Success, and Warning events.
+- **Global Settings**: Extend `SettingsModal.vue` with individual volume/toggle controls for Sensory FX.
 
-### C. Feature Migration
-- **App.vue**: Refactor the main template and nav cards to use `bg-substrate` and `border-white/5` instead of industrial/900.
-- **GachaView.vue**: 
-    - Full template overhaul: remove `bg-industrial-900`.
-    - Apply `bg-abyss` to the main container.
-    - Style the Draw buttons for the "Golden Signal" look.
+## 2. Technical Standards
+- **Performance**: Maintain 60 FPS on all GLSL transitions.
+- **Latency**: Audio feedback must respond within < 50ms of user interaction.
+- **Refactoring**: Maintain 100% Geist Mono and ATL consistency. purge any leftover industrial artifacts.
 
-## 3. Success Criteria (The "Pass/Fail")
-- [ ] Tailwind theme colors/fonts are accessible in DevTools.
-- [ ] Navigation header looks "Luxury" (Refined, high-contrast white text).
-- [ ] Gacha page is entirely Dark Navy/Abyss, no grayscale/muddy panels.
-- [ ] App launches without build errors.
+## 3. Definition of Done
+- [ ] Lore fragments decoded correctly on hover/reveal interaction.
+- [ ] GLSL "Surge" visible and synchronized with Audio "Chime" on successful actions.
+- [ ] Global toggle in Settings correctly disables/enables all Phase 5 FX.
+- [ ] Build passes with `npm run build-only`.

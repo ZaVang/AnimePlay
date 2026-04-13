@@ -1,7 +1,14 @@
 <script setup lang="ts">
+/**
+ * Squad Card - Tactical Unit Manifest Standard
+ */
 import { computed } from 'vue';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { useSquadManager } from '@/composables/useSquadManager';
+
+// Atomic Components
+import GlassPanel from '@/components/ui/GlassPanel.vue';
+import TacticalButton from '@/components/ui/TacticalButton.vue';
 
 interface PresetSquad {
   id: number;
@@ -31,7 +38,6 @@ const { getSquadPower, getSquadMemberCount } = useSquadManager();
 const squadPower = computed(() => getSquadPower(props.squad.id));
 const memberCount = computed(() => getSquadMemberCount(props.squad.id));
 
-// 判断是否可以开始战斗
 const canStartBattle = computed(() => {
   if (memberCount.value < 4) return false;
   if (props.hasCompletedFloor) return false;
@@ -39,13 +45,12 @@ const canStartBattle = computed(() => {
   return true;
 });
 
-// 获取按钮文本
 const buttonText = computed(() => {
-  if (memberCount.value === 0) return '需要角色';
-  if (memberCount.value < 4) return `需要4人满编 (${memberCount.value}/4)`;
-  if (props.hasCompletedFloor) return '本层已通过';
-  if (!props.towerEnemyData) return '刷新敌人信息';
-  return '开始挑战';
+  if (memberCount.value === 0) return 'EQUIP_REQUIRED';
+  if (memberCount.value < 4) return `INCOMPLETE_[${memberCount.value}/4]`;
+  if (props.hasCompletedFloor) return 'SECTOR_CLEARED';
+  if (!props.towerEnemyData) return 'AWAIT_INTEL';
+  return 'DEPLOY_UNIT';
 });
 
 function handleNameUpdate(event: Event) {
@@ -64,7 +69,7 @@ function startBattle() {
 function getCharacterImage(characterId: number | null): string {
   if (!characterId) return '';
   const character = gameDataStore.getCharacterCardById(characterId);
-  return character?.image_path || '/data/images/character/77.jpg';
+  return character?.image_path || '/data/images/character/default.jpg';
 }
 
 function getCharacterName(characterId: number | null): string {
@@ -75,66 +80,105 @@ function getCharacterName(characterId: number | null): string {
 </script>
 
 <template>
-  <div class="bg-gray-700 rounded-lg p-4 border border-gray-600">
-    <!-- 小队名称和成员数 -->
-    <div class="flex items-center justify-between mb-3">
-      <input
-        :value="squad.name"
-        @change="handleNameUpdate"
-        class="font-bold text-white bg-transparent border border-transparent hover:border-gray-500 rounded px-2 py-1 transition-colors"
-        maxlength="20"
-      >
-      <div class="text-sm text-gray-400">{{ memberCount }}/4</div>
+  <GlassPanel :reveal="false" class="squad-unit-manifest group border-white/10 transition-all duration-500 hover:border-gold/40 relative overflow-hidden">
+    <!-- Card Metadata -->
+    <div class="absolute top-0 right-0 p-2 text-[6px] font-mono text-industrial-700 uppercase tracking-tighter transition-colors group-hover:text-gold/40">
+      UID: SQ-{{ String(squad.id).padStart(4, '0') }} // TYPE: TACTICAL_UNIT
     </div>
 
-    <!-- 小队成员预览 -->
-    <div class="grid grid-cols-4 gap-2 mb-3">
-      <div
-        v-for="position in 4"
-        :key="position"
-        @click="openCharacterSelect(position - 1)"
-        class="relative bg-gray-600 rounded border-2 cursor-pointer hover:border-blue-500 transition-colors overflow-hidden"
-        :class="squad.members[position - 1] ? 'border-green-500' : 'border-gray-600 border-dashed'"
-        style="aspect-ratio: 2/3; width: 50px; height: 75px;"
-      >
-        <div v-if="squad.members[position - 1]" class="absolute inset-0">
-          <img
-            :src="getCharacterImage(squad.members[position - 1])"
-            :alt="getCharacterName(squad.members[position - 1])"
-            class="w-full h-full object-cover object-top"
-            @error="($event.target as HTMLImageElement).src = '/data/images/character/77.jpg'"
-          >
-          <!-- 位置编号 -->
-          <div class="absolute top-0 left-0 w-4 h-4 bg-black/70 rounded-br text-white text-xs flex items-center justify-center">
-            {{ position }}
-          </div>
-        </div>
-        <div v-else class="absolute inset-0 flex flex-col items-center justify-center text-gray-400">
-          <div class="text-lg mb-1">+</div>
-          <div class="text-xs">{{ position }}</div>
+    <!-- Header Section -->
+    <div class="flex items-end justify-between mb-8 p-1">
+      <div class="flex-1 mr-4">
+        <div class="text-[7px] font-display font-black text-industrial-500 uppercase tracking-widest mb-1">Squad_Identity</div>
+        <input
+          :value="squad.name"
+          @change="handleNameUpdate"
+          class="w-full bg-transparent border-b border-white/5 text-white font-display font-black text-sm p-1 focus:border-gold/60 outline-none tracking-tighter uppercase transition-all"
+          maxlength="20"
+          placeholder="UNNAMED_UNIT"
+        >
+      </div>
+      <div class="text-right">
+        <div class="text-[7px] font-display font-black text-industrial-500 uppercase tracking-widest mb-1">Loadout</div>
+        <div class="text-lg font-mono font-bold text-white tabular-nums opacity-60">
+          [{{ memberCount }}/4]
         </div>
       </div>
     </div>
 
-    <!-- 小队战力 -->
-    <div class="mb-3 text-sm">
-      <span class="text-gray-400">战力:</span>
-      <span class="text-yellow-400 font-bold ml-1">{{ squadPower }}</span>
+    <!-- Member Deployment Grid -->
+    <div class="grid grid-cols-4 gap-4 mb-8">
+      <div
+        v-for="position in 4"
+        :key="position"
+        @click="openCharacterSelect(position - 1)"
+        class="tactical-deployment-slot relative aspect-[4/5] bg-white/[0.02] border border-white/5 cursor-pointer overflow-hidden transition-all duration-500 hover:border-gold/50 hover:bg-white/[0.05]"
+        :class="squad.members[position - 1] ? 'border-gold/20' : 'border-dashed border-white/10'"
+      >
+        <!-- Slot Grid Overlay -->
+        <div class="absolute inset-0 bg-grid opacity-5"></div>
+        
+        <div v-if="squad.members[position - 1]" class="absolute inset-0 slide-in-from-bottom duration-700">
+          <img
+            :src="getCharacterImage(squad.members[position - 1])"
+            :alt="getCharacterName(squad.members[position - 1])"
+            class="w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 transition-all duration-700"
+            @error="($event.target as HTMLImageElement).src = '/data/images/character/default.jpg'"
+          >
+          <!-- Gradient Mask -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+          
+          <!-- Position Tag -->
+          <div class="absolute bottom-1 right-2 text-[8px] font-mono font-bold text-gold/60">
+            SEC_{{ position }}
+          </div>
+        </div>
+        
+        <div v-else class="absolute inset-0 flex flex-col items-center justify-center gap-1">
+          <div class="text-white/10 font-thin text-2xl group-hover:text-gold/40 transition-colors">+</div>
+          <div class="text-[6px] font-mono text-industrial-600 uppercase tracking-tighter">EMPTY_SLOT</div>
+        </div>
+      </div>
     </div>
 
-    <!-- 挑战按钮 -->
-    <button
-      @click="startBattle"
-      :disabled="!canStartBattle"
-      class="w-full px-4 py-2 bg-green-600 hover:bg-green-700 disabled:bg-gray-600 disabled:cursor-not-allowed text-white font-bold rounded-lg transition-colors"
-    >
-      {{ buttonText }}
-    </button>
-  </div>
+    <!-- Tactical Metrics -->
+    <div class="flex justify-between items-center mb-8 px-2 py-4 bg-white/[0.01] border-y border-white/5">
+      <div class="space-y-1">
+        <span class="text-[8px] font-display font-black text-industrial-500 uppercase tracking-widest block leading-none">Power_Intensity</span>
+        <span class="text-[7px] font-mono text-industrial-700 uppercase leading-none">Verified_Rating</span>
+      </div>
+      <div class="text-2xl font-display font-black text-gold tabular-nums transition-transform group-hover:scale-105 duration-500">
+        {{ squadPower.toLocaleString() }}
+      </div>
+    </div>
+
+    <!-- Deployment Trigger -->
+    <div class="p-1">
+       <TacticalButton
+         variant="primary"
+         class="w-full !rounded-none"
+         size="sm"
+         :disabled="!canStartBattle"
+         @click="startBattle"
+       >
+         {{ buttonText }}
+       </TacticalButton>
+    </div>
+  </GlassPanel>
 </template>
 
 <style scoped>
-.cursor-pointer:hover {
-  transform: scale(1.02);
+.tactical-deployment-slot {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
+}
+.squad-unit-manifest:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px -15px rgba(212, 165, 116, 0.15);
+}
+.bg-grid {
+  background-size: 15px 15px;
+  background-image: 
+    linear-gradient(to right, rgba(212, 165, 116, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(212, 165, 116, 0.1) 1px, transparent 1px);
 }
 </style>

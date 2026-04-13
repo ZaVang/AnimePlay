@@ -34,6 +34,7 @@ export interface CharacterNurtureData {
   dialogueHistory: string[];
   gifts: string[];
   specialEvents: string[];
+  unlockedLoreIndices: number[];
   level: number;
   experience: number;
   totalExperience: number;

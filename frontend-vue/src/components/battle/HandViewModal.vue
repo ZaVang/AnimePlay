@@ -1,90 +1,10 @@
-<template>
-  <div
-    v-if="isVisible"
-    @click="close"
-    class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 transition-opacity duration-300"
-  >
-    <div
-      @click.stop
-      class="bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] flex flex-col text-gray-800 mx-4"
-    >
-      <!-- Header -->
-      <div class="flex justify-between items-start p-6 border-b border-gray-200">
-        <div>
-          <h2 class="text-2xl font-bold">{{ title }}</h2>
-          <p v-if="subtitle" class="text-gray-600 mt-1">{{ subtitle }}</p>
-        </div>
-        <button 
-          @click="close" 
-          class="text-2xl text-gray-500 hover:text-gray-800"
-        >
-          &times;
-        </button>
-      </div>
-
-      <!-- Cards Display -->
-      <div class="flex-grow overflow-y-auto p-6">
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-          <div
-            v-for="(card, index) in cards"
-            :key="`${card.id}-${index}`"
-            class="relative rounded-lg overflow-hidden border-2 border-gray-200 transition-all duration-200 hover:border-gray-300 hover:shadow-md"
-          >
-            <img 
-              :src="card.image_path"
-              class="w-full aspect-[3/4] object-cover"
-              :alt="card.name"
-              @error="onImageError"
-            />
-            
-            <!-- Card Info Overlay -->
-            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-2">
-              <p class="text-white text-xs font-bold truncate">{{ card.name }}</p>
-              <div class="flex justify-between items-center text-gray-300 text-xs mt-1">
-                <span>费用: {{ card.cost }}</span>
-                <span v-if="card.synergy_tags && card.synergy_tags.length > 0" class="truncate ml-2">
-                  {{ card.synergy_tags[0] }}
-                </span>
-              </div>
-            </div>
-            
-            <!-- Card Effect Summary (if available) -->
-            <div 
-              v-if="card.effectDescription"
-              class="absolute top-2 left-2 bg-blue-500/80 text-white text-xs px-2 py-1 rounded"
-            >
-              效果
-            </div>
-          </div>
-        </div>
-        
-        <div v-if="cards.length === 0" class="text-center py-12">
-          <p class="text-gray-500 text-lg">{{ emptyMessage || '没有卡牌可显示' }}</p>
-        </div>
-      </div>
-
-      <!-- Footer -->
-      <div class="border-t border-gray-200 p-6 flex justify-between items-center">
-        <div class="text-sm text-gray-600">
-          共 {{ cards.length }} 张卡牌
-          <span v-if="showTypes && cardTypes.length > 0" class="ml-4">
-            类型: {{ cardTypes.join(', ') }}
-          </span>
-        </div>
-        <button
-          @click="close"
-          class="px-6 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700"
-        >
-          确定
-        </button>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
 import { computed } from 'vue';
 import type { AnimeCard } from '@/types/card';
+
+// Atomic Components
+import GlassPanel from '@/components/ui/GlassPanel.vue';
+import TacticalButton from '@/components/ui/TacticalButton.vue';
 
 interface Props {
   isVisible: boolean;
@@ -118,11 +38,110 @@ function close() {
 
 function onImageError(event: Event) {
   const target = event.target as HTMLImageElement;
-  const placeholderText = encodeURIComponent('动画卡牌');
-  target.src = `https://placehold.co/240x360/e2e8f0/334155?text=${placeholderText}`;
+  // Local fallback to consistent tactical placeholder
+  target.src = '/data/images/anime/default_tactical.jpg';
 }
 </script>
 
+<template>
+  <div
+    v-if="isVisible"
+    @click.self="close"
+    class="fixed inset-0 bg-black/80 backdrop-blur-xl flex items-center justify-center z-50 p-4 transition-all duration-500"
+  >
+    <GlassPanel
+      class="max-w-5xl w-full border-white/10 shadow-3xl quantic-reveal flex flex-col h-[85vh]"
+    >
+      <!-- Header -->
+      <template #header>
+        <div class="flex justify-between items-center mb-8">
+          <div class="space-y-1">
+             <div class="text-[8px] font-display font-bold text-gold tracking-[0.5em] uppercase opacity-70">Resource Inventory Protocol</div>
+             <h2 class="text-3xl font-display font-black text-white uppercase tracking-tighter">{{ title }}</h2>
+             <p v-if="subtitle" class="text-[10px] font-mono text-industrial-500 uppercase tracking-widest italic opacity-60">{{ subtitle }}</p>
+          </div>
+          <TacticalButton variant="ghost" size="sm" @click="close">DISCONNECT_VIEW</TacticalButton>
+        </div>
+      </template>
+
+      <!-- Cards Display -->
+      <div class="flex-grow overflow-y-auto pr-4 -mr-4 scrollbar-none">
+        <div v-if="cards.length > 0" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
+          <div
+            v-for="(card, index) in cards"
+            :key="`${card.id}-${index}`"
+            class="group relative border border-white/5 bg-black/40 hover:border-gold/30 transition-all duration-500 overflow-hidden"
+          >
+            <!-- Scanline decoration -->
+            <div class="absolute inset-0 bg-scanline opacity-[0.03] pointer-events-none"></div>
+
+            <img 
+              :src="card.image_path"
+              class="w-full aspect-[3/4] object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
+              :alt="card.name"
+              @error="onImageError"
+            />
+            
+            <!-- Card Info Overlay -->
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-3 pt-8">
+              <p class="text-white text-[10px] font-display font-black truncate uppercase mb-1 tracking-tighter group-hover:text-gold transition-colors">{{ card.name }}</p>
+              <div class="flex justify-between items-center text-[8px] font-mono text-industrial-400 uppercase">
+                <span class="flex items-center gap-1 group-hover:text-blue-400 transition-colors">
+                  <span class="w-1 h-1 bg-blue-400/40"></span> COST: {{ card.cost }} TP
+                </span>
+                <span v-if="card.synergy_tags && card.synergy_tags.length > 0" class="truncate ml-2 opacity-60">
+                  #{{ card.synergy_tags[0] }}
+                </span>
+              </div>
+            </div>
+            
+            <!-- Type Label -->
+            <div 
+              v-if="card.effectDescription"
+              class="absolute top-2 left-2 bg-gold text-black text-[8px] font-display font-black px-2 py-0.5 tracking-widest uppercase"
+            >
+              DATA_LINK
+            </div>
+            
+            <!-- Hover light glow -->
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-10 dark:bg-gold/20 pointer-events-none transition-opacity"></div>
+          </div>
+        </div>
+        
+        <div v-else class="flex flex-col items-center justify-center h-full py-24 text-center">
+           <div class="text-[10px] font-display font-bold text-industrial-600 uppercase tracking-[0.5em] mb-4">
+             {{ emptyMessage || 'NO_DATA_STREAM_DETECTED' }}
+           </div>
+           <div class="w-16 h-px bg-white/5"></div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <template #footer>
+        <div class="mt-8 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+          <div class="flex flex-wrap gap-8 text-[8px] font-display font-bold text-industrial-600 uppercase tracking-widest">
+            <span class="flex items-center gap-2"><span class="w-1 h-1 bg-gold/40"></span> TOTAL_ENTITIES: {{ cards.length }}</span>
+            <span v-if="showTypes && cardTypes.length > 0" class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold/40"></span> SEMANTIC_TYPES: {{ cardTypes.join(' // ') }}
+            </span>
+          </div>
+          <TacticalButton
+            variant="primary"
+            size="lg"
+            @click="close"
+          >
+            CONFIRM_UPLINK
+          </TacticalButton>
+        </div>
+      </template>
+    </GlassPanel>
+  </div>
+</template>
+
 <style scoped>
-/* Additional styles can be added here if needed */
+.shadow-3xl {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
+}
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
 </style>

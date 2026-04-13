@@ -1,12 +1,17 @@
 <script setup lang="ts">
+/**
+ * Training System - Bio-Logic Tuning Interface
+ */
 import { useAuthStore } from '@/stores/modules/authStore';
 import { useEconomyStore } from '@/stores/modules/economyStore';
 import { useNurtureStore } from '@/stores/modules/nurtureStore';
-
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/types/store';
 import { useCharacterTraining } from '@/composables/useCharacterTraining';
 import { useTrainingTimer } from '@/composables/useTrainingTimer';
+
+// Atomic Components
+import TacticalButton from '@/components/ui/TacticalButton.vue';
 
 const props = defineProps<{
   character: CharacterCard & { nurtureData: CharacterNurtureData };
@@ -25,151 +30,144 @@ const {
   startTrainingAnimation
 } = useTrainingTimer();
 
-// 执行训练
 function startTraining(programId: string) {
   const program = trainingPrograms.value.find(p => p.id === programId);
   if (!program || !program.available) return;
   
   if (isTrainingOnCooldown(programId)) {
-    authStore.addLog('训练还在冷却中，请稍后再试！', 'warning');
+    authStore.addLog('SYSTEM // COOLDOWN_ACTIVE', 'warning');
     return;
   }
   
   if (economyStore.knowledgePoints < program.cost) {
-    authStore.addLog('知识点不足，无法进行训练！', 'warning');
+    authStore.addLog('SYSTEM // INSUFFICIENT_KNOWLEDGE', 'warning');
     return;
   }
 
-  // 扣除知识点
   economyStore.knowledgePoints -= program.cost;
-  
-  // 提升属性
   nurtureStore.enhanceAttribute(props.character.id, program.attribute, program.gain);
   
-  // 降低心情 (训练会让角色疲惫)
   const nurtureData = nurtureStore.getNurtureData(props.character.id);
   nurtureData.attributes.mood = Math.max(10, nurtureData.attributes.mood - 5);
   
-  // 设置训练冷却 (基于训练时长)
   setTrainingCooldown(programId, program.duration);
-  
-  // 启动训练动画
   startTrainingAnimation(programId);
   
-  authStore.addLog(`${props.character.name} 开始了${program.name}，将在${program.duration}分钟后完成！`, 'success');
+  authStore.addLog(`PROTOCOL // ${program.name.toUpperCase()}_INITIATED`, 'success');
   
-  // 训练完成后的通知
   setTimeout(() => {
-    authStore.addLog(`${props.character.name} 完成了${program.name}！`, 'success');
+    authStore.addLog(`PROTOCOL // ${program.name.toUpperCase()}_COMPLETE`, 'success');
   }, program.duration * 60 * 1000);
+}
+
+function getAttributeColor(attr: string) {
+  if (attr === 'charm') return 'text-hazard-rose';
+  if (attr === 'intelligence') return 'text-cyan-400';
+  return 'text-green-400';
 }
 </script>
 
 <template>
-  <div class="mb-6">
-    <h3 class="text-lg font-medium text-gray-300 mb-4">养成属性训练</h3>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-      
+  <div class="training-system space-y-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
       <div 
         v-for="program in trainingPrograms" 
         :key="program.id"
-        class="group"
+        class="training-card group relative bg-black/60 border border-white/10 p-6 transition-all duration-500 hover:border-hazard-rose/40 hover:bg-white/[0.02] overflow-hidden"
+        :class="{ 'opacity-50 grayscale': !program.available && !trainingAnimations[program.id] }"
       >
+        <!-- Tactical Overlays -->
+        <div class="absolute inset-0 bg-grid opacity-5 pointer-events-none"></div>
         <div 
-          class="p-4 rounded-lg border transition-all duration-300 relative overflow-hidden h-full"
-          :class="[
-            program.available 
-              ? 'bg-gray-700/50 hover:bg-gray-700/70 border-gray-600 hover:border-gray-500' 
-              : 'bg-gray-800/50 border-gray-700 opacity-60',
-            trainingAnimations[program.id] && 'animate-pulse border-blue-400'
-          ]"
-        >
-          <!-- 训练进行中的光效 -->
-          <div 
-            v-if="trainingAnimations[program.id]" 
-            class="absolute inset-0 bg-gradient-to-r from-blue-400/20 via-transparent to-blue-400/20 animate-shimmer"
-          ></div>
-          
-          <!-- 头部信息 -->
-          <div class="text-center mb-3">
-            <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">{{ program.icon }}</div>
-            <h4 class="font-medium text-white text-sm mb-1">{{ program.name }}</h4>
-            <p class="text-xs text-gray-400 mb-2">{{ program.description }}</p>
-            
-            <div class="flex justify-between items-center text-xs">
-              <span class="text-green-400 font-medium">+{{ program.gain }}</span>
-              <span class="text-gray-400">💎 {{ program.cost }}</span>
-            </div>
-          </div>
+          v-if="trainingAnimations[program.id]" 
+          class="absolute inset-0 bg-gradient-to-t from-hazard-rose/10 via-transparent to-hazard-rose/10 animate-pulse-tactical pointer-events-none"
+        ></div>
+        <div class="absolute top-0 right-0 p-2 text-[6px] font-mono text-industrial-700 opacity-40">
+           ID: {{ program.id.toUpperCase() }} // AUTH: LEVEL_1
+        </div>
 
-          <!-- 当前属性进度条 -->
-          <div class="mb-3">
-            <div class="flex justify-between text-xs text-gray-400 mb-1">
-              <span>{{ program.attribute }}</span>
-              <span>{{ character.nurtureData.attributes[program.attribute] }}/100</span>
-            </div>
-            <div class="w-full bg-gray-600 rounded-full h-2">
+        <!-- Header -->
+        <div class="flex justify-between items-start mb-6 relative z-10">
+           <div class="text-4xl grayscale group-hover:grayscale-0 transition-transform duration-700 group-hover:scale-110">{{ program.icon }}</div>
+           <div class="text-right">
+             <div class="text-[8px] font-display font-black text-industrial-500 uppercase tracking-widest mb-1">Protocol_Cost</div>
+             <div class="text-xs font-mono font-bold text-gold tabular-nums">{{ program.cost }} KP</div>
+           </div>
+        </div>
+
+        <!-- Info -->
+        <div class="space-y-1 mb-8 relative z-10">
+          <h4 class="text-[11px] font-display font-black text-white uppercase tracking-widest">{{ program.name }}</h4>
+          <p class="text-[9px] text-industrial-500 leading-relaxed uppercase tracking-tighter opacity-80">{{ program.description }}</p>
+        </div>
+
+        <!-- Attribute Progress -->
+        <div class="space-y-3 mb-8 relative z-10">
+           <div class="flex justify-between text-[8px] font-display font-black uppercase tracking-[0.2em]">
+              <span :class="getAttributeColor(program.attribute)">{{ program.attribute }}</span>
+              <span class="text-white">+{{ program.gain }} GAIN</span>
+           </div>
+           <div class="h-1 bg-white/[0.05] rounded-none overflow-hidden border border-white/5">
               <div 
-                class="h-2 rounded-full transition-all duration-500"
+                class="h-full transition-all duration-1000"
                 :class="{
-                  'bg-pink-400': program.attribute === 'charm',
-                  'bg-blue-400': program.attribute === 'intelligence',
-                  'bg-green-400': program.attribute === 'strength'
+                  'bg-hazard-rose shadow-[0_0_12px_#E51E5D]': program.attribute === 'charm',
+                  'bg-cyan-400 shadow-[0_0_12px_#22D3EE]': program.attribute === 'intelligence',
+                  'bg-green-400 shadow-[0_0_12px_#4ADE80]': program.attribute === 'strength'
                 }"
                 :style="{ width: `${getAttributeProgress(character.nurtureData.attributes[program.attribute])}%` }"
               ></div>
-            </div>
-          </div>
+           </div>
+        </div>
 
-          <!-- 冷却时间显示 -->
-          <div v-if="isTrainingOnCooldown(program.id)" class="mb-2 text-xs text-orange-400 text-center">
-            冷却中: {{ formatCooldownTime(getTrainingCooldownRemaining(program.id)) }}
-          </div>
+        <!-- Timer / Action -->
+        <div class="space-y-4 relative z-10">
+           <Transition name="fade">
+              <div v-if="isTrainingOnCooldown(program.id)" class="text-center py-2 bg-hazard-rose/5 border border-hazard-rose/20 mb-2">
+                 <div class="text-[8px] font-display font-black text-hazard-rose animate-pulse uppercase mb-1">SYNCHRONIZING_COGNITION</div>
+                 <div class="text-xs font-mono text-white tabular-nums tracking-tighter">{{ formatCooldownTime(getTrainingCooldownRemaining(program.id)) }}</div>
+              </div>
+           </Transition>
 
-          <!-- 行动按钮 -->
-          <button
-            @click="startTraining(program.id)"
-            :disabled="!program.available || economyStore.knowledgePoints < program.cost || isTrainingOnCooldown(program.id)"
-            class="w-full py-2 px-3 rounded-lg font-medium text-sm transition-all duration-300"
-            :class="program.available && economyStore.knowledgePoints >= program.cost && !isTrainingOnCooldown(program.id)
-              ? 'bg-blue-600 hover:bg-blue-700 text-white'
-              : 'bg-gray-600 text-gray-400 cursor-not-allowed'"
-          >
-            <span v-if="isTrainingOnCooldown(program.id)">训练中</span>
-            <span v-else-if="!program.available">心情不足</span>
-            <span v-else-if="economyStore.knowledgePoints < program.cost">知识点不足</span>
-            <span v-else>开始训练</span>
-          </button>
+           <TacticalButton
+             variant="secondary"
+             class="w-full !rounded-none"
+             size="sm"
+             :disabled="!program.available || economyStore.knowledgePoints < program.cost || isTrainingOnCooldown(program.id)"
+             @click="startTraining(program.id)"
+           >
+             <span v-if="isTrainingOnCooldown(program.id)">LINK_BUSY...</span>
+             <span v-else-if="!program.available">MOOD_CRITICAL</span>
+             <span v-else>INITIATE_UPGRADE</span>
+           </TacticalButton>
         </div>
       </div>
-
     </div>
   </div>
 </template>
 
 <style scoped>
-/* 训练动画效果 */
-@keyframes shimmer {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+.training-card {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 94% 100%, 0 100%);
 }
 
-.animate-shimmer {
-  animation: shimmer 2s ease-in-out infinite;
+@keyframes pulse-tactical {
+  0% { opacity: 0.1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 0.1; }
+}
+.animate-pulse-tactical { animation: pulse-tactical 2s ease-in-out infinite; }
+
+.bg-grid {
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
 }
 
-/* 训练按钮悬停效果 */
-.group:hover .text-2xl {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
-}
+.text-hazard-rose { color: #E51E5D; }
+.bg-hazard-rose { background-color: #E51E5D; }
 
-/* 进度条动画 */
-.h-2 {
-  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
+.fade-enter-active, .fade-leave-active { transition: opacity 0.5s ease; }
+.fade-enter-from, .fade-leave-to { opacity: 0; }
 </style>

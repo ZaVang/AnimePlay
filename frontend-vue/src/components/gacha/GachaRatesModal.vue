@@ -1,6 +1,13 @@
 <script setup lang="ts">
+/**
+ * Gacha Rates Modal - Manifest Probability Sheet Standard
+ */
 import { computed } from 'vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
+
+// Atomic Components
+import GlassPanel from '@/components/ui/GlassPanel.vue';
+import TacticalButton from '@/components/ui/TacticalButton.vue';
 
 const props = defineProps<{
   gachaType: 'anime' | 'character';
@@ -8,10 +15,6 @@ const props = defineProps<{
 }>();
 
 const emit = defineEmits(['close']);
-
-const title = computed(() => 
-  props.gachaType === 'anime' ? '动画卡池概率详情' : '角色卡池概率详情'
-);
 
 const rarityConfig = computed(() => 
   props.gachaType === 'anime' ? GAME_CONFIG.animeSystem.rarityConfig : GAME_CONFIG.characterSystem.rarityConfig
@@ -21,102 +24,118 @@ const rateUpConfig = computed(() =>
     props.gachaType === 'anime' ? GAME_CONFIG.animeSystem.rateUp : GAME_CONFIG.characterSystem.rateUp
 );
 
-const rarityOrder = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
-
 const rates = computed(() => {
-  const effectiveRarityEntries = Object.entries(rarityConfig.value).filter(
-    ([, rarityData]) => rarityData.p > 0
-  );
-  if (effectiveRarityEntries.length === 0) {
-    return [];
-  }
-  const totalEffectiveProbability = effectiveRarityEntries.reduce(
-    (sum, [, rarityData]) => sum + rarityData.p,
-    0
-  );
-  return effectiveRarityEntries.map(([rarity, rarityData]) => ({
+  const entries = Object.entries(rarityConfig.value).filter(([, d]) => d.p > 0);
+  const total = entries.reduce((sum, [, d]) => sum + d.p, 0);
+  return entries.map(([rarity, d]) => ({
     rarity,
-    ...rarityData,
-    probability: `${((rarityData.p / totalEffectiveProbability) * 100).toFixed(2)}%`,
-  }));
+    ...d,
+    probability: `${((d.p / total) * 100).toFixed(2)}%`,
+  })).sort((a, b) => (rarityConfig.value[b.rarity as any]?.p || 0) - (rarityConfig.value[a.rarity as any]?.p || 0));
 });
 
 </script>
 
 <template>
-  <div v-if="show" @click.self="emit('close')" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4">
-    <div class="bg-white rounded-lg shadow-xl max-w-md w-full max-h-[80vh] flex flex-col">
-      <div class="p-4 border-b">
-        <h2 class="text-xl font-bold text-center text-gray-800">{{ title }}</h2>
-      </div>
+  <div v-if="show" @click.self="emit('close')" class="fixed inset-0 bg-black/80 backdrop-blur-md flex items-center justify-center z-[100] p-4 quantic-reveal">
+    <GlassPanel class="max-w-md w-full border-gold/20 shadow-2xl relative overflow-hidden">
+      
+      <!-- Modal Header -->
+      <template #header>
+        <div class="p-6 border-b border-white/5 bg-white/[0.02] text-center">
+          <div class="text-[8px] font-display font-bold text-gold tracking-[0.4em] uppercase mb-1">Probability Manifest</div>
+          <h2 class="text-lg font-display font-black text-white uppercase tracking-tighter">{{ gachaType === 'anime' ? 'Anime Artifacts' : 'Personnel Profiles' }}</h2>
+        </div>
+      </template>
 
-      <div class="p-6 overflow-y-auto">
-        <div class="space-y-4">
-          <div>
-            <h3 class="font-semibold text-gray-700 mb-2">基础概率</h3>
-            <table class="w-full text-sm text-left text-gray-600">
-              <thead class="text-xs text-gray-700 uppercase bg-gray-100">
-                <tr>
-                  <th scope="col" class="px-4 py-2">稀有度</th>
-                  <th scope="col" class="px-4 py-2">概率</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr v-for="rate in rates" :key="rate.rarity" class="bg-white border-b last:border-b-0">
-                  <td class="px-4 py-2 font-medium">
-                     <span 
-                        class="font-bold px-2 py-1 rounded-md text-xs text-white"
-                        :class="[rate.c, rate.c.includes('from') ? 'bg-gradient-to-r' : '']"
-                     >
-                        {{ rate.rarity }}
-                    </span>
-                  </td>
-                  <td class="px-4 py-2 font-semibold">{{ rate.probability }}</td>
-                </tr>
-              </tbody>
-            </table>
+      <!-- Content Scroll -->
+      <div class="p-6 space-y-8 overflow-y-auto max-h-[60vh] scrollbar-none">
+        
+        <!-- Base Probability Table -->
+        <section class="space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="w-1 h-3 bg-gold"></div>
+            <h3 class="text-[10px] font-display font-black text-white uppercase tracking-widest">Base Vectors</h3>
           </div>
           
-          <div>
-            <h3 class="font-semibold text-gray-700 mb-2">卡池机制</h3>
-            <ul class="list-disc list-inside space-y-2 text-sm text-gray-600">
-              <!-- 基础保底 -->
-              <li>
-                <strong>十连保底:</strong> 每进行 <span class="font-bold text-indigo-600">10</span> 次召唤，必定获得至少 <span class="font-bold text-purple-600">1</span> 张SSR或更高级别的卡牌。
-              </li>
-
-              <!-- UP机制说明 -->
-              <li v-if="rateUpConfig && rateUpConfig.ids.length > 0">
-                <strong>UP概率提升:</strong> 当您抽到 <span class="font-bold text-red-600">HR</span> 或 <span class="font-bold text-amber-600">UR</span> 稀有度的卡牌时，有 <span class="font-bold text-indigo-600">{{ rateUpConfig.hrChance * 100 }}%</span> 的概率为当期UP卡牌之一。
-              </li>
-
-              <!-- HR保底机制 -->
-              <li v-if="rateUpConfig && rateUpConfig.hrPityPulls > 0">
-                <strong>HR保底:</strong> 连续 <span class="font-bold text-indigo-600">{{ rateUpConfig.hrPityPulls }}</span> 抽未获得UP的HR卡牌，下次必定获得当期UP的 <span class="font-bold text-red-600">HR</span> 卡牌之一。
-                <span class="block text-xs text-gray-500 mt-1">💡 提前抽到HR或UR会重置此计数</span>
-              </li>
-
-              <!-- UR保底机制 -->
-              <li v-if="rateUpConfig && rateUpConfig.urPityPulls > 0">
-                <strong>UR保底:</strong> 连续 <span class="font-bold text-amber-600">{{ rateUpConfig.urPityPulls }}</span> 抽未获得UR卡牌，下次必定获得当期UP的 <span class="font-bold text-amber-600">UR</span> 卡牌之一。
-                <span class="block text-xs text-gray-500 mt-1">🌟 获得UR会同时重置HR保底计数</span>
-              </li>
-
-              <!-- 机制优先级说明 -->
-              <li v-if="rateUpConfig && (rateUpConfig.hrPityPulls > 0 || rateUpConfig.urPityPulls > 0)">
-                <strong>保底优先级:</strong> UR保底 > HR保底 > 基础概率
-                <span class="block text-xs text-gray-500 mt-1">📊 同时触发多个保底时，优先级高的生效</span>
-              </li>
-            </ul>
+          <div class="bg-black/40 border border-white/5 overflow-hidden">
+             <table class="w-full text-left font-mono">
+                <thead class="bg-white/[0.03] text-[8px] text-industrial-500 uppercase tracking-widest">
+                   <tr>
+                      <th class="px-4 py-3 font-bold">Rarity_Class</th>
+                      <th class="px-4 py-3 font-bold text-right">Yield_Rate</th>
+                   </tr>
+                </thead>
+                <tbody class="text-[10px]">
+                   <tr v-for="rate in rates" :key="rate.rarity" class="border-t border-white/5 hover:bg-white/[0.02] transition-colors">
+                      <td class="px-4 py-3">
+                         <span class="inline-block px-2 py-0.5 font-display font-black text-[9px]" :class="[rate.c, rate.c.includes('from') ? 'bg-gradient-to-r text-white' : 'text-gold border border-gold/30']">
+                            {{ rate.rarity }}
+                         </span>
+                      </td>
+                      <td class="px-4 py-3 text-right font-bold text-white">{{ rate.probability }}</td>
+                   </tr>
+                </tbody>
+             </table>
           </div>
-        </div>
+        </section>
+
+        <!-- Logic & Mechanics -->
+        <section class="space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="w-1 h-3 bg-cyan-400"></div>
+            <h3 class="text-[10px] font-display font-black text-white uppercase tracking-widest">Logic Protocols</h3>
+          </div>
+
+          <div class="space-y-3 font-display">
+            <!-- Pity Mechanism -->
+            <div class="bg-white/[0.02] border border-white/5 p-4 space-y-2 relative overflow-hidden group">
+               <div class="absolute inset-0 bg-grid opacity-5 pointer-events-none"></div>
+               <div class="text-[9px] font-black text-cyan-400 uppercase tracking-tighter">[CONSECUTIVE_YIELD_GUARANTEE]</div>
+               <p class="text-[10px] text-industrial-400 leading-relaxed">System ensures at least <span class="text-white">1x SSR+</span> result every <span class="text-cyan-400 font-mono">10</span> cycles.</p>
+            </div>
+
+            <!-- Rate Up -->
+            <div v-if="rateUpConfig && rateUpConfig.ids.length > 0" class="bg-white/[0.02] border border-white/5 p-4 space-y-2">
+               <div class="text-[9px] font-black text-gold uppercase tracking-tighter">[BIAS_UPLINK_PROBABILITY]</div>
+               <p class="text-[10px] text-industrial-400 leading-relaxed">HR/UR yields have a <span class="text-gold font-mono">{{ rateUpConfig.hrChance * 100 }}%</span> probability to resolve to target UP Manifests.</p>
+            </div>
+
+            <!-- Hard Pity -->
+            <div v-if="rateUpConfig && (rateUpConfig.hrPityPulls > 0 || rateUpConfig.urPityPulls > 0)" class="bg-white/[0.02] border border-white/5 p-4 space-y-4">
+               <div class="text-[9px] font-black text-clinical-danger uppercase tracking-tighter">[FAILSAFE_CALIBRATION]</div>
+               
+               <div v-if="rateUpConfig.hrPityPulls > 0" class="flex justify-between items-center text-[10px] border-l border-clinical-danger/30 pl-3">
+                 <span class="text-industrial-500 uppercase">HR_Manifest_Pity</span>
+                 <span class="text-white font-mono">{{ rateUpConfig.hrPityPulls }} CYCLES</span>
+               </div>
+
+               <div v-if="rateUpConfig.urPityPulls > 0" class="flex justify-between items-center text-[10px] border-l border-gold/30 pl-3">
+                 <span class="text-industrial-500 uppercase">UR_Total_Pity</span>
+                 <span class="text-gold font-mono">{{ rateUpConfig.urPityPulls }} CYCLES</span>
+               </div>
+               
+               <p class="text-[8px] text-industrial-600 uppercase italic">AHEAD_OF_TARGET: Acquisition of target rarity resets respective failsafe counter.</p>
+            </div>
+          </div>
+        </section>
       </div>
 
-      <div class="p-4 border-t bg-gray-50 text-right">
-        <button @click="emit('close')" class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
-          关闭
-        </button>
+      <!-- Footer Action -->
+      <div class="p-6 border-t border-white/5 bg-white/[0.01] flex justify-end">
+        <TacticalButton variant="secondary" size="sm" @click="emit('close')">DISMISS_DATA</TacticalButton>
       </div>
-    </div>
+    </GlassPanel>
   </div>
 </template>
+
+<style scoped>
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
+.bg-grid {
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+}
+</style>

@@ -19,45 +19,56 @@ function toggleOpen() {
 </script>
 
 <template>
-  <div class="bg-gray-800 rounded-lg shadow-lg border border-gray-700 overflow-hidden">
+  <div class="collapsible-node-tactical quantic-reveal bg-black/40 border border-white/5 relative overflow-hidden transition-all duration-500">
+    <!-- Static Backdrop Decoration -->
+    <div class="absolute inset-x-0 top-0 h-px bg-white/5 pointer-events-none"></div>
     
-    <!-- 面板标题栏 -->
+    <!-- Title Bar: Tactical Header -->
     <div 
-      class="flex items-center justify-between p-4 cursor-pointer hover:bg-gray-700/50 transition-colors"
+      class="flex items-center justify-between p-4 cursor-pointer hover:bg-gold/[0.03] transition-all group"
       @click="toggleOpen"
     >
-      <h2 class="text-xl font-bold text-white flex items-center">
-        <span v-if="icon" class="text-2xl mr-3">{{ icon }}</span>
-        {{ title }}
-      </h2>
+      <div class="flex items-center gap-3">
+         <div v-if="icon" class="text-xl opacity-40 group-hover:opacity-100 transition-opacity">{{ icon }}</div>
+         <div class="flex flex-col">
+            <div class="text-[7px] font-display font-bold text-industrial-500 uppercase tracking-[0.4em] mb-0.5">Matrix_Node_0x{{ (title.length * 7).toString(16).toUpperCase() }}</div>
+            <h2 class="text-xs font-display font-black text-white uppercase tracking-widest group-hover:text-gold transition-colors italic">
+              {{ title }}
+            </h2>
+         </div>
+      </div>
       
-      <!-- 折叠箭头 -->
-      <div 
-        class="transform transition-transform duration-300 text-gray-400 hover:text-white"
-        :class="{ 'rotate-180': isOpen }"
-      >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-        </svg>
+      <!-- Fold Indicator: Tactical Switch -->
+      <div class="flex items-center gap-2">
+         <div class="font-mono text-[9px] font-black tracking-widest" :class="isOpen ? 'text-gold' : 'text-industrial-600'">
+            {{ isOpen ? '[ COLLAPSE_ ]' : '[ EXPAND_+ ]' }}
+         </div>
+         <div class="w-1.5 h-1.5 transition-all duration-500" 
+              :class="isOpen ? 'bg-gold shadow-[0_0_8px_#D4A574]' : 'bg-white/10'"></div>
       </div>
     </div>
 
-    <!-- 面板内容 -->
+    <!-- Content: Decrypted Layer -->
     <div 
-      class="overflow-hidden transition-all duration-300 ease-in-out"
+      class="overflow-hidden transition-all duration-500 ease-in-out relative bg-white/[0.01]"
       :class="isOpen ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'"
     >
-      <div class="border-t border-gray-700">
+      <div class="border-t border-white/5 p-4">
         <slot></slot>
       </div>
+      
+      <!-- Bottom Corner Decoration -->
+      <div class="absolute bottom-1 right-1 w-1 h-1 border-b border-r border-white/10"></div>
     </div>
-    
   </div>
 </template>
 
 <style scoped>
-/* 确保折叠动画平滑 */
+.collapsible-node-tactical {
+  box-shadow: inset 0 0 30px rgba(0,0,0,0.3);
+}
+
 .transition-all {
-  transition-property: max-height, opacity;
+  transition-property: max-height, opacity, background-color, border-color;
 }
 </style>

@@ -23,7 +23,7 @@ const props = defineProps<{
 const collectionStore = useCollectionStore();
 
 const rarityData = computed(() => GAME_CONFIG.characterSystem.rarityConfig[props.character.rarity] || {});
-const rarityColorClass = computed(() => rarityData.value.c || 'bg-gray-500');
+const rarityColorClass = computed(() => rarityData.value.c || 'bg-industrial-600');
 const rarityEffectClass = computed(() => rarityData.value.effect || '');
 const isFavorite = computed(() => collectionStore.isFavorite(props.character.id, 'character'));
 

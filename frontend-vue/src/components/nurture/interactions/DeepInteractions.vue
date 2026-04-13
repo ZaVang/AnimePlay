@@ -1,9 +1,15 @@
 <script setup lang="ts">
+/**
+ * Deep Interactions - Strategic Engagement Matrix
+ */
 import { useEconomyStore } from '@/stores/modules/economyStore';
 import { ref } from 'vue';
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/types/store';
 import { useInteractionData } from '@/composables/useInteractionData';
+
+// Atomic Components
+import TacticalButton from '@/components/ui/TacticalButton.vue';
 
 const props = defineProps<{
   character: CharacterCard & { nurtureData: CharacterNurtureData };
@@ -19,81 +25,67 @@ const emit = defineEmits<{
 const economyStore = useEconomyStore();
 const { availableInteractions } = useInteractionData(props.character);
 
-// 执行互动
 function executeInteraction(interactionId: string) {
   switch (interactionId) {
-    case 'dialogue':
-      emit('startDialogue');
-      break;
-    case 'gift':
-      emit('openGift');
-      break;
-    case 'activity':
-      emit('openActivity');
-      break;
-    case 'campus_activity':
-      emit('openCampus');
-      break;
+    case 'dialogue': emit('startDialogue'); break;
+    case 'gift': emit('openGift'); break;
+    case 'activity': emit('openActivity'); break;
+    case 'campus_activity': emit('openCampus'); break;
   }
 }
 </script>
 
 <template>
-  <!-- 主要互动选项 -->
-  <div>
-    <h3 class="text-lg font-medium text-gray-300 mb-4">深度互动</h3>
+  <div class="space-y-4">
+    <div class="flex items-center gap-2">
+      <div class="w-1 h-3 bg-gold"></div>
+      <h3 class="text-[10px] font-display font-black text-white uppercase tracking-[0.3em]">Deep Strategic Vectors</h3>
+    </div>
+
     <div class="grid grid-cols-2 gap-4">
-      
-      <button
+      <TacticalButton
         v-for="interaction in availableInteractions" 
         :key="interaction.id"
+        variant="secondary"
+        size="md"
         @click="executeInteraction(interaction.id)"
         :disabled="!interaction.available"
-        :class="[
-          'flex items-center p-4 rounded-lg border transition-all duration-300 group',
-          interaction.available 
-            ? `bg-${interaction.color}-600/10 hover:bg-${interaction.color}-600/20 border-${interaction.color}-600/30 hover:border-${interaction.color}-600/50`
-            : 'bg-gray-700/30 border-gray-600/50 opacity-50 cursor-not-allowed'
-        ]"
+        class="group !items-start !justify-start p-5 h-auto text-left relative overflow-hidden"
       >
-        <div class="text-2xl mr-3 group-hover:scale-110 transition-transform">
-          {{ interaction.icon }}
-        </div>
-        <div class="flex-1">
-          <h4 
-            class="font-medium text-sm mb-1"
-            :class="interaction.available ? 'text-white' : 'text-gray-500'"
-          >
-            {{ interaction.name }}
-          </h4>
-          <p 
-            class="text-xs mb-2"
-            :class="interaction.available ? 'text-gray-400' : 'text-gray-500'"
-          >
-            {{ interaction.description }}
-          </p>
+        <!-- Grid Overlay -->
+        <div class="absolute inset-0 bg-grid opacity-5 pointer-events-none"></div>
+
+        <div class="relative z-10 flex flex-col gap-4 w-full">
+          <div class="flex items-center justify-between w-full">
+             <div class="text-3xl group-hover:scale-110 transition-transform">{{ interaction.icon }}</div>
+             <div v-if="interaction.cost.type === 'knowledge'" class="text-[9px] font-mono text-gold/60 uppercase">COST: {{ interaction.cost.amount }} KP</div>
+          </div>
+
+          <div class="space-y-1">
+            <h4 class="text-[11px] font-display font-black text-white uppercase tracking-wider">{{ interaction.name }}</h4>
+            <p class="text-[9px] text-industrial-500 uppercase leading-relaxed line-clamp-2">{{ interaction.description }}</p>
+          </div>
           
-          <!-- 成本和状态显示 -->
-          <div class="flex justify-between items-center">
-            <div v-if="interaction.cost.type === 'knowledge'" class="text-xs text-gray-400">
-              💎 {{ interaction.cost.amount }}
-            </div>
-            <div v-if="!interaction.available" class="text-xs text-red-400">
-              <!-- 显示不可用原因 -->
-              <span v-if="interaction.id === 'gift' && economyStore.knowledgePoints < 10">
-                知识点不足
-              </span>
-              <span v-else-if="interaction.id === 'activity' && character.nurtureData.affection < 100">
-                羁绊值不足
-              </span>
-              <span v-else-if="interaction.id === 'campus_activity'">
-                条件不满足
-              </span>
-            </div>
+          <div v-if="!interaction.available" class="pt-2 border-t border-white/5">
+             <div class="text-[8px] font-mono text-clinical-danger uppercase animate-pulse">
+                [ACCESS_DENIED] // 
+                <span v-if="interaction.id === 'gift' && economyStore.knowledgePoints < 10">LOW_KP</span>
+                <span v-else-if="interaction.id === 'activity' && character.nurtureData.affection < 100">LOW_AFF</span>
+                <span v-else>AUTH_FAILURE</span>
+             </div>
           </div>
         </div>
-      </button>
-
+      </TacticalButton>
     </div>
   </div>
 </template>
+
+<style scoped>
+.bg-grid {
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+}
+.text-clinical-danger { color: #FF4D4D; }
+</style>

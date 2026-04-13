@@ -1,9 +1,17 @@
 <script setup lang="ts">
+/**
+ * Character Selector - Personnel Uplink Interface
+ */
 import { ref, computed } from 'vue';
 import { useCollectionStore } from '@/stores/modules/collectionStore';
-import { useNurtureStore } from '@/stores/modules/nurtureStore';;
+import { useNurtureStore } from '@/stores/modules/nurtureStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import type { CharacterCard } from '@/types/card';
+
+// Atomic Components
+import GlassPanel from '@/components/ui/GlassPanel.vue';
+import TacticalButton from '@/components/ui/TacticalButton.vue';
+import RarityTag from '@/components/ui/RarityTag.vue';
 
 const props = defineProps<{
   selectedCharacterId: number | null;
@@ -18,7 +26,6 @@ const nurtureStore = useNurtureStore();
 const gameDataStore = useGameDataStore();
 const isModalOpen = ref(false);
 
-// 获取已收集的角色，按稀有度排序
 const availableCharacters = computed(() => {
   const rarityOrder: Record<string, number> = {
     'UR': 6, 'HR': 5, 'SSR': 4, 'SR': 3, 'R': 2, 'N': 1
@@ -28,40 +35,29 @@ const availableCharacters = computed(() => {
     .map(([id, data]) => {
       const character = gameDataStore.getCharacterCardById(id);
       if (!character) return null;
-      
       const nurtureData = nurtureStore.getNurtureData(id);
-      return {
-        ...character,
-        count: data.count,
-        nurtureData
-      };
+      return { ...character, count: data.count, nurtureData };
     })
     .filter(Boolean)
     .sort((a, b) => {
-      // 按稀有度排序
       const rarityDiff = (rarityOrder[b!.rarity] || 0) - (rarityOrder[a!.rarity] || 0);
       if (rarityDiff !== 0) return rarityDiff;
-      
-      // 稀有度相同按好感度排序
       return (b!.nurtureData.affection || 0) - (a!.nurtureData.affection || 0);
     }) as (CharacterCard & { count: number; nurtureData: any })[];
 });
 
-// 当前选中的角色信息
 const currentCharacter = computed(() => {
   if (!props.selectedCharacterId) return null;
   return availableCharacters.value.find(c => c.id === props.selectedCharacterId) || null;
 });
 
-// 获取角色的羁绊等级
 function getBondLevel(affection: number) {
-  if (affection >= 1000) return { level: '永恒羁绊', color: 'text-pink-400', icon: '⭐' };
-  if (affection >= 800) return { level: '深度羁绊', color: 'text-red-400', icon: '🌟' };
-  if (affection >= 600) return { level: '信任伙伴', color: 'text-purple-400', icon: '💜' };
-  if (affection >= 400) return { level: '亲密战友', color: 'text-blue-400', icon: '💙' };
-  if (affection >= 200) return { level: '熟悉伙伴', color: 'text-green-400', icon: '💚' };
-  if (affection >= 100) return { level: '初步羁绊', color: 'text-yellow-400', icon: '💛' };
-  return { level: '初次相遇', color: 'text-gray-400', icon: '🤝' };
+  if (affection >= 1000) return { level: 'ETERNAL', color: 'text-hazard-rose', icon: '◈' };
+  if (affection >= 800) return { level: 'DESTINY', color: 'text-hazard-rose/80', icon: '◇' };
+  if (affection >= 600) return { level: 'SYNERGY', color: 'text-gold', icon: '◆' };
+  if (affection >= 400) return { level: 'TRUST', color: 'text-blue-400', icon: '△' };
+  if (affection >= 200) return { level: 'BOND', color: 'text-green-400', icon: '▽' };
+  return { level: 'INITIAL', color: 'text-industrial-500', icon: '○' };
 }
 
 function handleSelect(characterId: number) {
@@ -71,132 +67,95 @@ function handleSelect(characterId: number) {
 </script>
 
 <template>
-  <!-- 选择角色按钮 -->
-  <button 
-    @click="isModalOpen = true"
-    class="flex items-center px-4 py-2 bg-pink-600 hover:bg-pink-700 text-white rounded-lg transition-colors duration-300"
-  >
-    <div v-if="currentCharacter" class="flex items-center">
-      <div class="w-8 h-8 rounded-full overflow-hidden mr-3">
-        <img :src="currentCharacter.image_path" :alt="currentCharacter.name" class="w-full h-full object-cover object-top">
-      </div>
-      <div class="text-left">
-        <div class="text-sm font-medium">{{ currentCharacter.name }}</div>
-        <div class="text-xs opacity-75 space-x-2">
-          <span>Lv.{{ currentCharacter.nurtureData.level }}</span>
-          <span>{{ getBondLevel(currentCharacter.nurtureData.affection || 0).icon }}</span>
-          <span>{{ getBondLevel(currentCharacter.nurtureData.affection || 0).level }}</span>
+  <div class="character-selector-container">
+    <!-- Trigger Button -->
+    <button 
+      @click="isModalOpen = true"
+      class="group relative flex items-center gap-4 bg-white/[0.02] border border-white/5 px-4 py-2 transition-all hover:bg-white/[0.05] hover:border-gold/30"
+    >
+      <div v-if="currentCharacter" class="flex items-center gap-3">
+        <div class="w-8 h-8 overflow-hidden border border-white/10 skew-x-[-12deg]">
+          <img :src="currentCharacter.image_path" class="w-full h-full object-cover scale-125" @error="($event.target as HTMLImageElement).src = '/data/images/character/77.jpg'">
+        </div>
+        <div class="text-left">
+          <div class="text-[10px] font-display font-black text-white uppercase">{{ currentCharacter.name }}</div>
+          <div class="text-[8px] font-display text-gold uppercase tracking-widest">LV.{{ currentCharacter.nurtureData.level }} // SYNC: {{ currentCharacter.nurtureData.affection }}</div>
         </div>
       </div>
-    </div>
-    <div v-else class="flex items-center">
-      <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-      </svg>
-      选择角色
-    </div>
-  </button>
-
-  <!-- 角色选择模态框 -->
-  <div v-if="isModalOpen" class="fixed inset-0 bg-black/75 flex items-center justify-center z-50 p-4" @click.self="isModalOpen = false">
-    <div class="bg-gray-800 p-6 rounded-lg shadow-xl max-w-4xl w-full border border-gray-700">
-      <div class="flex justify-between items-center mb-4">
-        <h2 class="text-2xl font-bold text-white flex items-center">
-          <svg class="w-6 h-6 mr-2 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-          </svg>
-          选择养成角色
-        </h2>
-        <button @click="isModalOpen = false" class="text-gray-400 hover:text-white text-2xl font-bold">&times;</button>
+      <div v-else class="flex items-center gap-2">
+        <span class="text-gold opacity-40">⊕</span>
+        <span class="text-[10px] font-display font-bold text-industrial-500 uppercase tracking-widest">Select Subject</span>
       </div>
-      
-      <div class="max-h-[60vh] overflow-y-auto pr-2">
-        <!-- 没有角色时的提示 -->
-        <div v-if="availableCharacters.length === 0" class="text-center py-12">
-          <svg class="w-16 h-16 mx-auto mb-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-          </svg>
-          <h3 class="text-lg font-medium text-gray-300 mb-2">暂无可养成角色</h3>
-          <p class="text-gray-500 text-sm">去抽取一些角色卡吧！</p>
-        </div>
+      <div class="w-px h-4 bg-white/10 mx-2"></div>
+      <span class="text-[8px] font-display text-gold group-hover:translate-x-1 transition-transform">>>></span>
+    </button>
 
-        <!-- 角色网格 -->
-        <div v-else>
-          <div class="mb-4 text-sm text-gray-400">
-            {{ availableCharacters.length }} 个角色可进行养成
+    <!-- Modal -->
+    <div v-if="isModalOpen" class="fixed inset-0 bg-black/80 backdrop-blur-md flex items-center justify-center z-[100] p-4 quantic-reveal" @click.self="isModalOpen = false">
+      <GlassPanel class="max-w-4xl w-full border-gold/20 shadow-2xl">
+        <template #header>
+          <div class="flex justify-between items-center mb-8 border-b border-white/5 pb-4">
+            <div class="space-y-1">
+              <h2 class="text-[10px] font-display font-bold text-hazard-rose tracking-[0.4em] uppercase opacity-70">Neural Uplink</h2>
+              <h2 class="text-2xl font-display font-black text-white uppercase tracking-tighter">Personnel Selection</h2>
+            </div>
+            <TacticalButton variant="secondary" size="xs" @click="isModalOpen = false">ABORT</TacticalButton>
           </div>
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            <div 
-              v-for="character in availableCharacters" 
-              :key="character.id"
-              class="relative group cursor-pointer nurture-card bg-gray-700 rounded-lg p-3 border-2 transition-all duration-300 hover:border-pink-400 hover:bg-gray-600"
-              @click="handleSelect(character.id)"
-            >
-              <!-- 角色头像 -->
-              <div class="aspect-[2/3] rounded-md overflow-hidden mb-2">
-                <img 
-                  :src="character.image_path" 
-                  :alt="character.name"
-                  class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                >
-              </div>
+        </template>
+        
+        <div class="max-h-[60vh] overflow-y-auto pr-4 scrollbar-none">
+          <div v-if="availableCharacters.length === 0" class="py-24 text-center space-y-4">
+            <div class="text-6xl opacity-10">🧬</div>
+            <p class="text-[10px] font-display font-bold text-industrial-500 uppercase tracking-widest">No accessible personnel data found.</p>
+          </div>
 
-              <!-- 角色名称 -->
-              <h4 class="text-sm font-medium text-white truncate mb-1">{{ character.name }}</h4>
-
-              <!-- 等级和羁绊等级 -->
-              <div class="space-y-1">
-                <div class="text-xs text-yellow-400 font-bold">
-                  Lv.{{ character.nurtureData.level }}
-                </div>
-                <div class="flex items-center justify-between text-xs">
-                  <span :class="getBondLevel(character.nurtureData.affection || 0).color">
-                    {{ getBondLevel(character.nurtureData.affection || 0).icon }}
-                  </span>
-                  <span :class="getBondLevel(character.nurtureData.affection || 0).color">
-                    {{ getBondLevel(character.nurtureData.affection || 0).level }}
-                  </span>
-                </div>
-              </div>
-
-              <!-- 稀有度边框效果 -->
+          <div v-else class="space-y-8">
+            <div class="text-[8px] font-display font-bold text-industrial-500 uppercase tracking-[0.2em]">Available Subjects: {{ availableCharacters.length }}</div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
               <div 
-                class="absolute inset-0 rounded-lg pointer-events-none"
-                :class="{
-                  'shadow-sm': character.rarity === 'N',
-                  'shadow-md shadow-green-500/20': character.rarity === 'R',
-                  'shadow-md shadow-blue-500/20': character.rarity === 'SR', 
-                  'shadow-lg shadow-yellow-500/30': character.rarity === 'SSR',
-                  'shadow-lg shadow-purple-500/30': character.rarity === 'HR',
-                  'shadow-xl shadow-red-500/40': character.rarity === 'UR'
-                }"
-              ></div>
-
-              <!-- 当前选中指示器 -->
-              <div 
-                v-if="selectedCharacterId === character.id"
-                class="absolute -top-2 -right-2 w-6 h-6 bg-pink-400 rounded-full flex items-center justify-center shadow-lg"
+                v-for="character in availableCharacters" 
+                :key="character.id"
+                class="nurture-card-v2 group relative bg-black/40 border border-white/5 p-3 transition-all cursor-pointer hover:border-hazard-rose/30 hover:bg-white/[0.02]"
+                :class="{ 'ring-1 ring-hazard-rose/40': selectedCharacterId === character.id }"
+                @click="handleSelect(character.id)"
               >
-                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
+                <!-- Portrait -->
+                <div class="aspect-[2/3] overflow-hidden mb-3 relative border border-white/5">
+                  <img :src="character.image_path" class="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 transition-all duration-500" loading="lazy">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                  <div class="absolute top-2 right-2">
+                    <RarityTag :rarity="character.rarity" />
+                  </div>
+                </div>
+
+                <!-- Info -->
+                <div class="space-y-1">
+                  <div class="text-[10px] font-display font-bold text-white uppercase tracking-tight truncate border-b border-white/5 pb-1">{{ character.name }}</div>
+                  <div class="flex justify-between items-center text-[8px] font-mono">
+                    <span class="text-gold">LV.{{ character.nurtureData.level }}</span>
+                    <span :class="getBondLevel(character.nurtureData.affection).color">{{ getBondLevel(character.nurtureData.affection).level }}</span>
+                  </div>
+                </div>
+
+                <!-- Selected Indicator -->
+                <div v-if="selectedCharacterId === character.id" class="absolute -top-1 -right-1 w-3 h-3 bg-hazard-rose rounded-full shadow-[0_0_8px_#E51E5D]"></div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </GlassPanel>
     </div>
   </div>
 </template>
 
 <style scoped>
-.nurture-card {
-  transition: all 0.3s ease;
+.character-selector-container {
+  display: inline-block;
 }
-
-.nurture-card:hover {
-  transform: translateY(-2px);
+.nurture-card-v2 {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%);
 }
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
+.text-hazard-rose { color: #E51E5D; }
 </style>

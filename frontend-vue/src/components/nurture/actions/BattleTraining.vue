@@ -1,8 +1,10 @@
 <script setup lang="ts">
+/**
+ * Battle Training - Combat Intensity Enhancement Interface
+ */
 import { useAuthStore } from '@/stores/modules/authStore';
 import { useEconomyStore } from '@/stores/modules/economyStore';
 import { useNurtureStore } from '@/stores/modules/nurtureStore';
-
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/types/store';
 import { useCharacterTraining } from '@/composables/useCharacterTraining';
@@ -12,6 +14,9 @@ import {
   simulateBattle,
   type BattleStats 
 } from '@/utils/battleCalculator';
+
+// Atomic Components
+import TacticalButton from '@/components/ui/TacticalButton.vue';
 
 const props = defineProps<{
   character: CharacterCard & { nurtureData: CharacterNurtureData };
@@ -30,9 +35,7 @@ const {
   startTrainingAnimation
 } = useTrainingTimer();
 
-// 生成训练对手
 function generateTrainingOpponent(trainingStat: string, playerStats: BattleStats): BattleStats {
-  // 基于训练类型生成有针对性的对手
   const baseOpponent: BattleStats = {
     hp: playerStats.hp * 0.8,
     atk: playerStats.atk * 0.9,
@@ -41,23 +44,12 @@ function generateTrainingOpponent(trainingStat: string, playerStats: BattleStats
     spd: playerStats.spd * 0.9
   };
   
-  // 根据训练属性强化对手相应能力
   switch (trainingStat) {
-    case 'atk':
-      baseOpponent.def *= 1.2; // 防御型对手，训练攻击
-      break;
-    case 'def':
-      baseOpponent.atk *= 1.2; // 攻击型对手，训练防御
-      break;
-    case 'sp':
-      baseOpponent.sp *= 1.3; // 技能型对手，训练技能
-      break;
-    case 'spd':
-      baseOpponent.spd *= 1.3; // 速度型对手，训练速度
-      break;
-    case 'hp':
-      baseOpponent.hp *= 1.4; // 耐久型对手，训练生命
-      break;
+    case 'atk': baseOpponent.def *= 1.2; break;
+    case 'def': baseOpponent.atk *= 1.2; break;
+    case 'sp': baseOpponent.sp *= 1.3; break;
+    case 'spd': baseOpponent.spd *= 1.3; break;
+    case 'hp': baseOpponent.hp *= 1.4; break;
   }
   
   return {
@@ -69,222 +61,171 @@ function generateTrainingOpponent(trainingStat: string, playerStats: BattleStats
   };
 }
 
-// 处理战斗训练结果
 function processBattleTrainingResult(program: any, battleResult: any) {
   const characterId = props.character.id;
-  
   if (battleResult.winner === 'attacker') {
-    // 胜利：更好的奖励
-    console.log('About to call enhanceBattleStat with:', { characterId, stat: program.stat, gain: program.gain });
     nurtureStore.enhanceBattleStat(characterId, program.stat, program.gain);
-    nurtureStore.addCharacterExp(characterId, 25); // 战斗经验
-    
-    const bonusMessage = battleResult.isCriticalHit ? '表现出色，' : '';
-    authStore.addLog(
-      `🎉 ${props.character.name} 在${program.name}中获胜！${bonusMessage}${program.stat.toUpperCase()}提升${program.gain}%！`,
-      'success'
-    );
+    nurtureStore.addCharacterExp(characterId, 25);
+    authStore.addLog(`ENGAGEMENT // VICTORY // ${program.stat.toUpperCase()}_TUNED`, 'success');
   } else if (battleResult.winner === 'defender') {
-    // 失败：较少奖励，但仍有成长
     const reducedGain = Math.ceil(program.gain * 0.4);
     nurtureStore.enhanceBattleStat(characterId, program.stat, reducedGain);
     nurtureStore.addCharacterExp(characterId, 10);
-    
-    authStore.addLog(
-      `😔 ${props.character.name} 在${program.name}中落败，但从失败中学习。${program.stat.toUpperCase()}提升${reducedGain}%！`,
-      'warning'
-    );
+    authStore.addLog(`ENGAGEMENT // DEFEAT // MINIMAL_SYNC_LOGGED`, 'warning');
   } else {
-    // 平局：中等奖励
     const mediumGain = Math.ceil(program.gain * 0.7);
     nurtureStore.enhanceBattleStat(characterId, program.stat, mediumGain);
     nurtureStore.addCharacterExp(characterId, 18);
-    
-    authStore.addLog(
-      `⚡ ${props.character.name} 在${program.name}中打成平手！势均力敌的较量让实力提升。${program.stat.toUpperCase()}提升${mediumGain}%！`,
-      'info'
-    );
+    authStore.addLog(`ENGAGEMENT // STALEMATE // STEADY_ANALYSIS`, 'info');
   }
 }
 
-// 执行战斗属性训练
 function startBattleTraining(programId: string) {
-  try {
-    console.log('Starting battle training for:', programId);
-    
-    const program = battleTrainingPrograms.value.find(p => p.id === programId);
-    if (!program) {
-      console.error('Program not found:', programId);
-      return;
-    }
-    if (!program.available) {
-      console.log('Program not available:', program);
-      return;
-    }
-    
-    if (isTrainingOnCooldown(programId)) {
-      authStore.addLog('战斗训练还在冷却中，请稍后再试！', 'warning');
-      return;
-    }
-    
-    if (economyStore.knowledgePoints < program.cost) {
-      authStore.addLog('知识点不足，无法进行战斗训练！', 'warning');
-      return;
-    }
-
-    // 扣除知识点
-    economyStore.knowledgePoints -= program.cost;
-    console.log('Knowledge points deducted, remaining:', economyStore.knowledgePoints);
-    
-    // 生成角色当前战斗状态
-    const currentBattleStats = generateBattleStats(
-      props.character.battle_stats || { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 },
-      props.character.nurtureData.attributes,
-      props.character.nurtureData.battleEnhancements || { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 }
-    );
-    
-    // 生成训练对手（基于训练强度）
-    const trainingOpponent = generateTrainingOpponent(program.stat, currentBattleStats);
-    
-    // 模拟战斗
-    const battleResult = simulateBattle(currentBattleStats, trainingOpponent);
-    
-    // 根据战斗结果给予奖励
-    processBattleTrainingResult(program, battleResult);
-    
-    // 降低心情和体力 (高强度训练更累)
-    const nurtureData = nurtureStore.getNurtureData(props.character.id);
-    nurtureData.attributes.mood = Math.max(5, nurtureData.attributes.mood - 8);
-    nurtureData.attributes.strength = Math.max(10, nurtureData.attributes.strength - 3);
-    
-    // 战斗训练需要更长的冷却时间 (30分钟)
-    const battleTrainingDuration = 30;
-    setTrainingCooldown(programId, battleTrainingDuration);
-  } catch (error) {
-    console.error('Battle training error:', error);
-    const errorMessage = error instanceof Error ? error.message : String(error);
-    authStore.addLog(`战斗训练出错：${errorMessage}`, 'warning');
+  const program = battleTrainingPrograms.value.find(p => p.id === programId);
+  if (!program || !program.available) return;
+  if (isTrainingOnCooldown(programId)) {
+    authStore.addLog('SYSTEM // COMBAT_SIM_IN_PROGRESS', 'warning');
+    return;
   }
+  if (economyStore.knowledgePoints < program.cost) {
+    authStore.addLog('SYSTEM // INSUFFICIENT_KNOWLEDGE', 'warning');
+    return;
+  }
+
+  economyStore.knowledgePoints -= program.cost;
+  const currentBattleStats = generateBattleStats(
+    props.character.battle_stats || { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 },
+    props.character.nurtureData.attributes,
+    props.character.nurtureData.battleEnhancements || { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 }
+  );
+  const trainingOpponent = generateTrainingOpponent(program.stat, currentBattleStats);
+  const battleResult = simulateBattle(currentBattleStats, trainingOpponent);
   
-  // 启动战斗训练动画
+  processBattleTrainingResult(program, battleResult);
+  
+  const nurtureData = nurtureStore.getNurtureData(props.character.id);
+  nurtureData.attributes.mood = Math.max(5, nurtureData.attributes.mood - 8);
+  nurtureData.attributes.strength = Math.max(10, nurtureData.attributes.strength - 3);
+  
+  setTrainingCooldown(programId, 30);
   startTrainingAnimation(programId);
 }
 </script>
 
 <template>
-  <div class="mb-6">
-    <h3 class="text-lg font-medium text-gray-300 mb-4 flex items-center">
-      <svg class="w-5 h-5 mr-2 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-      </svg>
-      战斗属性强化
-    </h3>
-    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
-      
+  <div class="battle-training space-y-8">
+    <div class="flex items-center gap-4 mb-2">
+       <div class="w-2 h-4 bg-clinical-danger shadow-[0_0_8px_#FF4D4D] animate-pulse"></div>
+       <div class="space-y-0.5">
+          <h3 class="text-[10px] font-display font-black text-white uppercase tracking-[0.2em]">Combat Simulation Protocols</h3>
+          <div class="text-[7px] font-mono text-clinical-danger/60 uppercase tracking-widest">Type: Neural_Clash_Optimization</div>
+       </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
       <div 
         v-for="program in battleTrainingPrograms" 
         :key="program.id"
-        class="group"
+        class="battle-card group relative bg-black/60 border border-white/10 p-6 transition-all duration-500 hover:border-clinical-danger/40 hover:bg-white/[0.02] overflow-hidden"
+        :class="{ 'opacity-50 grayscale': !program.available && !trainingAnimations[program.id] }"
       >
-        <div 
-          class="p-4 rounded-lg border transition-all duration-300 relative overflow-hidden h-full"
-          :class="[
-            program.available 
-              ? 'bg-red-600/10 hover:bg-red-600/20 border-red-600/30 hover:border-red-600/50' 
-              : 'bg-gray-800/50 border-gray-700 opacity-60',
-            trainingAnimations[program.id] && 'animate-pulse border-red-400'
-          ]"
-        >
-          <!-- 战斗训练光效 -->
-          <div 
-            v-if="trainingAnimations[program.id]" 
-            class="absolute inset-0 bg-gradient-to-r from-red-400/20 via-transparent to-red-400/20 animate-shimmer"
-          ></div>
-          
-          <!-- 头部信息 -->
-          <div class="text-center mb-3">
-            <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">{{ program.icon }}</div>
-            <h4 class="font-medium text-white text-sm mb-1">{{ program.name }}</h4>
-            <p class="text-xs text-gray-400 mb-2">{{ program.description }}</p>
-            
-            <div class="flex justify-between items-center text-xs">
-              <span class="text-red-400 font-medium">+{{ program.gain }}%</span>
-              <span class="text-gray-400">💎 {{ program.cost }}</span>
-            </div>
-          </div>
+        <!-- Simulation Overlays -->
+        <div class="absolute inset-0 bg-grid opacity-5 pointer-events-none"></div>
+        <div v-if="trainingAnimations[program.id]" class="absolute inset-0 bg-gradient-to-t from-clinical-danger/10 via-transparent to-clinical-danger/10 animate-scanline pointer-events-none"></div>
+        <div class="absolute top-0 right-0 p-2 text-[6px] font-mono text-industrial-700 opacity-40 uppercase tracking-tighter">
+           ID: {{ program.id.toUpperCase() }} // SECTOR_{{ program.stat.substring(0,2).toUpperCase() }}
+        </div>
 
-          <!-- 当前战斗属性加成 -->
-          <div class="mb-3">
-            <div class="flex justify-between text-xs text-gray-400 mb-1">
-              <span>{{ program.stat.toUpperCase() }}加成</span>
-              <span>{{ character.nurtureData.battleEnhancements?.[program.stat] || 0 }}%</span>
-            </div>
-            <div class="w-full bg-gray-600 rounded-full h-2">
+        <div class="flex justify-between items-start mb-6 relative z-10">
+           <div class="text-4xl grayscale group-hover:grayscale-0 transition-transform duration-700 group-hover:scale-110 drop-shadow-[0_0_12px_rgba(255,255,255,0.1)]">{{ program.icon }}</div>
+           <div class="text-right">
+             <div class="text-[8px] font-display font-black text-industrial-500 uppercase tracking-widest mb-1">Resource_Drain</div>
+             <div class="text-xs font-mono font-bold text-gold tabular-nums">{{ program.cost }} KP</div>
+           </div>
+        </div>
+
+        <div class="space-y-1 mb-8 relative z-10">
+          <h4 class="text-[11px] font-display font-black text-white uppercase tracking-widest">{{ program.name }}</h4>
+          <p class="text-[9px] text-industrial-500 leading-relaxed uppercase tracking-tighter opacity-80 line-clamp-2">{{ program.description }}</p>
+        </div>
+
+        <!-- Combat Stats Bonus -->
+        <div class="space-y-3 mb-8 relative z-10">
+           <div class="flex justify-between text-[8px] font-display font-black uppercase tracking-[0.2em]">
+              <span class="text-clinical-danger">{{ program.stat }} Enhancement</span>
+              <span class="text-white">+{{ program.gain }}% VARIANCE</span>
+           </div>
+           <div class="h-1 bg-white/[0.05] border border-white/5 rounded-none overflow-hidden">
               <div 
-                class="h-2 rounded-full bg-gradient-to-r from-red-500 to-orange-500 transition-all duration-500"
+                class="h-full bg-clinical-danger shadow-[0_0_12px_#FF4D4D] transition-all duration-1000"
                 :style="{ width: `${Math.min(100, character.nurtureData.battleEnhancements?.[program.stat] || 0)}%` }"
               ></div>
-            </div>
-          </div>
+           </div>
+           <div class="flex justify-between text-[7px] font-mono text-industrial-600 uppercase tracking-tighter">
+              <span>Verified_Intensity</span>
+              <span>VAL: {{ character.nurtureData.battleEnhancements?.[program.stat] || 0 }}%</span>
+           </div>
+        </div>
 
-          <!-- 需求条件 -->
-          <div class="mb-3 text-xs text-gray-400 text-center">
-            <span>需要: </span>
-            <span v-if="program.requirements.affection">羁绊{{ program.requirements.affection }} </span>
-            <span v-if="program.requirements.strength">体力{{ program.requirements.strength }} </span>
-            <span v-if="program.requirements.intelligence">智力{{ program.requirements.intelligence }} </span>
-            <span v-if="program.requirements.charm">魅力{{ program.requirements.charm }} </span>
-          </div>
+        <!-- Requirements Matrix -->
+        <div class="mb-8 grid grid-cols-2 gap-px bg-white/5 border border-white/5 relative z-10">
+           <div v-for="(val, key) in program.requirements" :key="key" class="bg-black/40 p-2 flex justify-between items-center group/req transition-colors hover:bg-white/[0.05]">
+             <span class="text-[7px] font-display text-industrial-500 uppercase tracking-widest">{{ key }}</span>
+             <span class="text-[8px] font-mono text-white opacity-60 underline decoration-white/20 underline-offset-4 group-hover/req:opacity-100">{{ val }}</span>
+           </div>
+        </div>
 
-          <!-- 冷却时间显示 -->
-          <div v-if="isTrainingOnCooldown(program.id)" class="mb-2 text-xs text-orange-400 text-center">
-            {{ formatCooldownTime(getTrainingCooldownRemaining(program.id)) }}
-          </div>
+        <!-- Deployment Interface -->
+        <div class="space-y-4 relative z-10">
+           <Transition name="fade">
+              <div v-if="isTrainingOnCooldown(program.id)" class="text-center py-2 bg-clinical-danger/5 border border-clinical-danger/20 mb-2">
+                 <div class="text-[8px] font-display font-black text-clinical-danger animate-pulse uppercase mb-1">SIMULATION_IN_PROGRESS</div>
+                 <div class="text-xs font-mono text-white tabular-nums tracking-tighter">{{ formatCooldownTime(getTrainingCooldownRemaining(program.id)) }}</div>
+              </div>
+           </Transition>
 
-          <!-- 行动按钮 -->
-          <button
-            @click="startBattleTraining(program.id)"
-            :disabled="!program.available || economyStore.knowledgePoints < program.cost || isTrainingOnCooldown(program.id)"
-            class="w-full py-2 px-3 rounded-lg font-medium text-sm transition-all duration-300"
-            :class="program.available && economyStore.knowledgePoints >= program.cost && !isTrainingOnCooldown(program.id)
-              ? 'bg-red-600 hover:bg-red-700 text-white'
-              : 'bg-gray-600 text-gray-400 cursor-not-allowed'"
-          >
-            <span v-if="isTrainingOnCooldown(program.id)">强化中</span>
-            <span v-else-if="!program.available">条件不满足</span>
-            <span v-else-if="economyStore.knowledgePoints < program.cost">知识点不足</span>
-            <span v-else>开始强化</span>
-          </button>
+           <TacticalButton
+             variant="primary"
+             class="w-full !rounded-none"
+             size="sm"
+             :disabled="!program.available || economyStore.knowledgePoints < program.cost || isTrainingOnCooldown(program.id)"
+             @click="startBattleTraining(program.id)"
+           >
+             <span v-if="isTrainingOnCooldown(program.id)">CLASHING...</span>
+             <span v-else-if="!program.available">LINK_LOCKED</span>
+             <span v-else>INITIATE_ENGAGEMENT</span>
+           </TacticalButton>
         </div>
       </div>
-
     </div>
   </div>
 </template>
 
 <style scoped>
-/* 训练动画效果 */
-@keyframes shimmer {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+.battle-card {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 94% 100%, 0 100%);
 }
 
-.animate-shimmer {
-  animation: shimmer 2s ease-in-out infinite;
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+.animate-scanline {
+  background: linear-gradient(to bottom, transparent, rgba(255, 77, 77, 0.2), transparent);
+  height: 50%;
+  animation: scanline 2.5s ease-in-out infinite;
 }
 
-/* 训练按钮悬停效果 */
-.group:hover .text-2xl {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
+.bg-grid {
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
 }
 
-/* 进度条动画 */
-.h-2 {
-  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
+.text-clinical-danger { color: #FF4D4D; }
+.bg-clinical-danger { background-color: #FF4D4D; }
+
+.fade-enter-active, .fade-leave-active { transition: opacity 0.5s ease; }
+.fade-enter-from, .fade-leave-to { opacity: 0; }
 </style>

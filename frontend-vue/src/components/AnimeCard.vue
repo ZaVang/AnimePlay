@@ -23,7 +23,7 @@ const gameStore = useGameStore();
 const playerStore = usePlayerStore();
 
 const rarityData = computed(() => GAME_CONFIG.animeSystem.rarityConfig[props.anime.rarity] || {});
-const rarityColorClass = computed(() => rarityData.value.c || 'bg-gray-500');
+const rarityColorClass = computed(() => rarityData.value.c || 'bg-industrial-600');
 const rarityEffectClass = computed(() => rarityData.value.effect || '');
 const isFavorite = computed(() => collectionStore.isFavorite(props.anime.id, 'anime'));
 

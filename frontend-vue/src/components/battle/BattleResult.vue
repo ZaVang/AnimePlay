@@ -1,5 +1,12 @@
 <script setup lang="ts">
+/**
+ * Battle Result - Strategic Debriefing Standard
+ */
 import { computed } from 'vue';
+
+// Atomic Components
+import GlassPanel from '@/components/ui/GlassPanel.vue';
+import TacticalButton from '@/components/ui/TacticalButton.vue';
 
 interface Props {
   battleResult: 'victory' | 'defeat' | null;
@@ -15,10 +22,10 @@ interface Emits {
 const props = defineProps<Props>();
 const emit = defineEmits<Emits>();
 
-const resultEmoji = computed(() => props.battleResult === 'victory' ? '🎉' : '💔');
-const resultTitle = computed(() => props.battleResult === 'victory' ? '胜利！' : '失败...');
-const resultColor = computed(() => props.battleResult === 'victory' ? 'text-green-400' : 'text-red-400');
-const buttonText = computed(() => props.battleResult === 'victory' ? '继续挑战' : '返回爬塔');
+const isVictory = computed(() => props.battleResult === 'victory');
+const resultColorClass = computed(() => isVictory.value ? 'text-cyan-400' : 'text-clinical-danger');
+const resultStatusText = computed(() => isVictory.value ? 'OPERATION_SUCCESSFUL' : 'MISSION_FAILURE');
+const secondaryText = computed(() => isVictory.value ? 'Strategic objectives achieved. All units returning to base.' : 'Neural link severed. Hostile presence remains active.');
 
 const lastFiveLogs = computed(() => props.battleLog.slice(-5));
 
@@ -34,42 +41,72 @@ function handleRetry() {
 </script>
 
 <template>
-  <div class="text-center space-y-6">
-    <div class="bg-gray-800 rounded-lg p-8 border border-gray-700">
-      <div class="text-6xl mb-4">
-        {{ resultEmoji }}
+  <div class="battle-result-slate flex items-center justify-center min-h-[400px]">
+    <GlassPanel :reveal="true" class="max-w-xl w-full border-white/10 shadow-2xl relative overflow-hidden">
+      <!-- Background Ornament -->
+      <div 
+        class="absolute -top-12 -right-12 text-9xl font-display font-black opacity-5 pointer-events-none"
+        :class="resultColorClass"
+      >
+        {{ isVictory ? 'WIN' : 'LOSS' }}
       </div>
 
-      <h2 class="text-3xl font-bold mb-4" :class="resultColor">
-        {{ resultTitle }}
-      </h2>
+      <div class="text-center py-8 space-y-10 relative">
+        <!-- Status Header -->
+        <div class="space-y-2">
+           <div class="text-[10px] font-display font-black tracking-[0.5em] uppercase opacity-40">Tactical debriefing</div>
+           <h2 class="text-4xl font-display font-black uppercase tracking-tighter" :class="resultColorClass">
+             {{ resultStatusText }}
+           </h2>
+           <p class="text-[10px] font-display text-industrial-500 uppercase tracking-widest max-w-xs mx-auto leading-relaxed">
+             {{ secondaryText }}
+           </p>
+        </div>
 
-      <div class="space-y-2 mb-6">
-        <div
-          v-for="(log, index) in lastFiveLogs"
-          :key="index"
-          class="text-gray-300"
-        >
-          {{ log }}
+        <!-- Log Highlights -->
+        <div class="space-y-3 bg-black/40 border-y border-white/5 py-6 px-4">
+          <div class="text-[8px] font-display font-bold text-industrial-600 uppercase tracking-widest mb-2">Cycle Log Extract</div>
+          <div
+            v-for="(log, index) in lastFiveLogs"
+            :key="index"
+            class="text-[10px] font-mono text-industrial-400 uppercase tracking-tighter"
+          >
+            <span class="text-white/10 mr-2">>>></span> {{ log }}
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center px-8">
+          <TacticalButton
+            variant="primary"
+            class="min-w-[180px]"
+            @click="handleRestart"
+          >
+            RETURN TO COMMAND
+          </TacticalButton>
+
+          <TacticalButton
+            v-if="selectedSquadForBattle && !isVictory"
+            variant="secondary"
+            class="min-w-[180px]"
+            @click="handleRetry"
+          >
+            RE-ENGAGE TARGET
+          </TacticalButton>
         </div>
       </div>
 
-      <div class="flex gap-4 justify-center">
-        <button
-          @click="handleRestart"
-          class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-colors"
-        >
-          {{ buttonText }}
-        </button>
-
-        <button
-          v-if="selectedSquadForBattle && battleResult === 'defeat'"
-          @click="handleRetry"
-          class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors"
-        >
-          再次挑战
-        </button>
-      </div>
-    </div>
+      <!-- Footer Metadata -->
+      <template #footer>
+        <div class="flex justify-between items-center text-[8px] font-display text-industrial-600 uppercase tracking-widest py-2 border-t border-white/5 mt-8">
+           <span>Unit-ID: ANIMEPLAY_SQUAD_01</span>
+           <span class="animate-pulse" :class="resultColorClass">LINK_STABLE // 100%</span>
+        </div>
+      </template>
+    </GlassPanel>
   </div>
 </template>
+
+<style scoped>
+.text-clinical-danger { color: #FF4D4D; }
+</style>

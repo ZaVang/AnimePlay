@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, watch } from 'vue';
+import { ref, computed, watch, nextTick } from 'vue';
 import type { DialogueAction } from '@/core/systems/DialogueSystem';
 
 interface Props {
@@ -17,70 +17,54 @@ const isVisible = ref(false);
 const bubbleRef = ref<HTMLElement>();
 const typewriterText = ref('');
 
-// 预计算的基础样式类，避免重复计算
-const basePositionClasses = computed(() => {
-  const baseClasses = [
-    'speech-bubble',
+// Tactical Position Classes
+const bubbleClasses = computed(() => {
+  const base = [
+    'tactical-speech-bubble',
     'relative',
-    'max-w-lg',
-    'min-w-48',
-    'p-5',
-    'rounded-2xl',
-    'shadow-2xl',
-    'border-2'
+    'max-w-xl',
+    'min-w-64',
+    'p-6',
+    'border',
+    'backdrop-blur-xl',
+    'transition-all',
+    'duration-500'
   ];
 
   if (props.position === 'left') {
-    baseClasses.push(
-      'bg-gradient-to-br',
-      'from-blue-500',
-      'to-blue-700',
-      'border-blue-300',
-      'text-white',
-      'ml-4'
-    );
+    base.push('border-gold/30', 'bg-black/60', 'ml-6');
   } else {
-    baseClasses.push(
-      'bg-gradient-to-br',
-      'from-red-500',
-      'to-red-700',
-      'border-red-300',
-      'text-white',
-      'mr-4'
-    );
+    base.push('border-clinical-danger/30', 'bg-black/60', 'mr-6');
   }
 
-  return baseClasses;
-});
-
-// 优化的气泡样式计算
-const bubbleClasses = computed(() => {
-  const classes = [...basePositionClasses.value];
-  
-  // 使用 CSS 变量代替动态类切换来提高性能
   if (isVisible.value) {
-    classes.push('bubble-visible');
+    base.push('opacity-100 translate-y-0 scale-100');
   } else {
-    classes.push('bubble-hidden');
+    base.push('opacity-0 translate-y-4 scale-95');
   }
 
-  return classes.join(' ');
+  return base.join(' ');
 });
 
-// 监听动作变化
+// Character identity prefix
+const operatorId = computed(() => {
+  if (!props.character) return 'SYSTEM';
+  return props.position === 'left' ? `USER // ${props.character.name}` : `RIVAL // ${props.character.name}`;
+});
+
+// Watch for action changes
 watch(() => props.action, async (newAction) => {
   if (newAction) {
-    // 显示气泡
     isVisible.value = true;
     
-    // 打字机效果
+    // Typewriter with tactical delay
     if (newAction.type === 'speech') {
       await typewriterEffect(newAction.content);
     } else {
       typewriterText.value = newAction.content;
     }
 
-    // 自动隐藏
+    // Auto-hide session
     setTimeout(() => {
       isVisible.value = false;
     }, newAction.duration || 3000);
@@ -90,32 +74,26 @@ watch(() => props.action, async (newAction) => {
   }
 }, { immediate: true });
 
-// 优化的打字机效果 - 使用 requestAnimationFrame 代替 setTimeout
 async function typewriterEffect(text: string) {
   typewriterText.value = '';
   const chars = text.split('');
   let currentIndex = 0;
   
-  // 使用更高效的动画方式
   const animate = () => {
     if (currentIndex < chars.length) {
       typewriterText.value += chars[currentIndex];
       currentIndex++;
-      
-      // 减少延迟，使用 requestAnimationFrame
-      setTimeout(() => requestAnimationFrame(animate), 15);
+      setTimeout(() => requestAnimationFrame(animate), 20);
     }
   };
-  
   requestAnimationFrame(animate);
 }
 
-// 气泡点击效果
 function handleBubbleClick() {
   if (bubbleRef.value) {
-    bubbleRef.value.classList.add('animate-bounce');
+    bubbleRef.value.classList.add('pulse-surge');
     setTimeout(() => {
-      bubbleRef.value?.classList.remove('animate-bounce');
+      bubbleRef.value?.classList.remove('pulse-surge');
     }, 500);
   }
 }
@@ -132,148 +110,89 @@ function handleBubbleClick() {
       :class="bubbleClasses"
       @click="handleBubbleClick"
     >
-      <!-- 气泡箭头 -->
-      <div 
-        class="bubble-arrow"
-        :class="position === 'left' ? 'arrow-left' : 'arrow-right'"
-      ></div>
+      <!-- Background Scanline decoration -->
+      <div class="absolute inset-0 bg-scanline opacity-[0.05] pointer-events-none"></div>
 
-      <!-- 角色信息 -->
-      <div v-if="character" class="character-info mb-2">
-        <div class="flex items-center gap-2">
-          <div 
-            v-if="character.avatar" 
-            class="w-6 h-6 rounded-full bg-gray-300 flex-shrink-0"
-            :style="{ backgroundImage: `url(${character.avatar})`, backgroundSize: 'cover' }"
-          ></div>
-          <span class="text-xs font-semibold opacity-80">{{ character.name }}</span>
-        </div>
+      <!-- Tactical Header -->
+      <div class="flex items-center justify-between mb-4 border-b border-white/5 pb-2">
+         <div class="flex items-center gap-3">
+            <div 
+              v-if="character && character.avatar" 
+              class="w-8 h-8 border border-white/20 bg-black/40 grayscale group-hover:grayscale-0 transition-all"
+              :style="{ backgroundImage: `url(${character.avatar})`, backgroundSize: 'cover', backgroundPosition: 'top' }"
+            ></div>
+            <div class="flex flex-col">
+               <span class="text-[7px] font-display font-bold text-industrial-500 uppercase tracking-[0.2em]">Active_Signal_Origin</span>
+               <span class="text-[10px] font-mono font-black text-white uppercase tracking-tight">{{ operatorId }}</span>
+            </div>
+         </div>
+         <div class="text-[7px] font-mono text-gold opacity-40 animate-pulse tabular-nums">UPLINK_STABLE</div>
       </div>
 
-      <!-- 对话内容 -->
-      <div class="dialogue-content">
-        <p class="text-base leading-relaxed font-semibold text-shadow-lg">
+      <!-- Dialogue Core -->
+      <div class="dialogue-content relative">
+        <p class="text-[14px] leading-relaxed font-ui italic text-industrial-100 tracking-wide text-shadow-tactical">
           {{ typewriterText }}
         </p>
       </div>
 
-      <!-- 动作类型指示器 -->
+      <!-- Action Status Indicator -->
       <div 
         v-if="action.type === 'action'" 
-        class="action-indicator mt-2 text-center"
+        class="mt-4 flex justify-end"
       >
-        <span class="text-xs px-2 py-1 bg-black bg-opacity-20 rounded-full">
-          {{ action.actionType?.toUpperCase() }}
+        <span class="text-[8px] px-3 py-1 bg-gold text-black font-display font-black uppercase tracking-[0.2em] skew-x-[-12deg]">
+          {{ action.actionType || 'EXECUTE_PROTOCOL' }}
         </span>
       </div>
+
+      <!-- Corner Pins -->
+      <div class="absolute top-0 left-0 w-2 h-px bg-current opacity-40"></div>
+      <div class="absolute top-0 left-0 w-px h-2 bg-current opacity-40"></div>
+      <div class="absolute bottom-0 right-0 w-2 h-px bg-current opacity-40"></div>
+      <div class="absolute bottom-0 right-0 w-px h-2 bg-current opacity-40"></div>
     </div>
   </div>
 </template>
 
 <style scoped>
 .speech-bubble-container {
-  @apply flex w-full mb-2;
+  @apply flex w-full my-6;
 }
 
-.speech-bubble {
-  backdrop-filter: blur(10px);
-  box-shadow: 
-    0 20px 25px -5px rgba(0, 0, 0, 0.3),
-    0 10px 10px -5px rgba(0, 0, 0, 0.2),
-    0 0 0 1px rgba(255, 255, 255, 0.1);
+.tactical-speech-bubble {
+  @apply shadow-2xl;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
 }
 
-.speech-bubble:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-  box-shadow: 
-    0 25px 30px -5px rgba(0, 0, 0, 0.4),
-    0 15px 15px -5px rgba(0, 0, 0, 0.3);
+.tactical-speech-bubble:hover {
+  @apply cursor-pointer;
+  box-shadow: 0 0 50px rgba(212, 165, 116, 0.1);
 }
 
-/* 气泡箭头 */
-.bubble-arrow {
-  position: absolute;
-  top: 20px;
-  width: 0;
-  height: 0;
+.text-shadow-tactical {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-.arrow-left {
-  left: -12px;
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
-  border-right: 12px solid rgb(59 130 246); /* 蓝色渐变的主色 */
+/* Pulse surge effect */
+.pulse-surge {
+  animation: surge 0.5s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.arrow-right {
-  right: -12px;
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
-  border-left: 12px solid rgb(239 68 68); /* 红色渐变的主色 */
+@keyframes surge {
+  0% { transform: scale(1); border-color: inherit; }
+  50% { transform: scale(1.02); border-color: #d4a574; }
+  100% { transform: scale(1); border-color: inherit; }
 }
 
-/* 特殊动作气泡样式 */
-.speech-bubble:has(.action-indicator) {
-  @apply bg-gradient-to-br;
+/* Entrance physics */
+@keyframes bubble-tactical-appear {
+  0% { opacity: 0; transform: translateY(20px) scale(0.95); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-.speech-bubble:has(.action-indicator[data-action="objection"]) {
-  @apply from-yellow-500 to-orange-600;
-}
-
-.speech-bubble:has(.action-indicator[data-action="counterattack"]) {
-  @apply from-purple-500 to-pink-600;
-}
-
-/* 文本阴影效果 */
-.text-shadow-lg {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 0 1px 2px rgba(0, 0, 0, 0.6);
-}
-
-/* 优化的可见性控制 */
-.bubble-visible {
-  @apply transform transition-all duration-300 ease-out;
-  opacity: 1;
-  transform: scale(1) translateY(0);
-}
-
-.bubble-hidden {
-  @apply transform transition-all duration-300 ease-out;
-  opacity: 0;
-  transform: scale(0.75) translateY(10px);
-}
-
-/* 入场动画 - 使用 will-change 优化性能 */
-.speech-bubble {
+.tactical-speech-bubble {
   will-change: transform, opacity;
-  animation: bubble-appear 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-@keyframes bubble-appear {
-  0% {
-    opacity: 0;
-    transform: scale(0.6) translateY(20px);
-  }
-  50% {
-    opacity: 0.9;
-    transform: scale(1.05) translateY(-5px);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1) translateY(0);
-  }
-}
-
-/* 响应式设计 */
-@media (max-width: 768px) {
-  .speech-bubble {
-    max-width: 280px;
-    padding: 12px;
-  }
-  
-  .dialogue-content p {
-    font-size: 0.8rem;
-  }
+  animation: bubble-tactical-appear 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 </style>

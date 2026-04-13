@@ -1,8 +1,14 @@
 <script setup lang="ts">
+/**
+ * Quick Interactions - Tactical Engagement Strip
+ */
 import { useEconomyStore } from '@/stores/modules/economyStore';
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/types/store';
 import { useInteractionEffects } from '@/composables/useInteractionEffects';
+
+// Atomic Components
+import TacticalButton from '@/components/ui/TacticalButton.vue';
 
 const props = defineProps<{
   character: CharacterCard & { nurtureData: CharacterNurtureData };
@@ -13,46 +19,49 @@ const { quickChat, quickGift } = useInteractionEffects(props.character);
 </script>
 
 <template>
-  <!-- 快速互动按钮 -->
-  <div class="mb-6">
-    <h3 class="text-lg font-medium text-gray-300 mb-4">快速互动</h3>
+  <div class="mb-8 space-y-4">
+    <div class="flex items-center gap-2">
+      <div class="w-1 h-3 bg-cyan-400"></div>
+      <h3 class="text-[10px] font-display font-black text-white uppercase tracking-[0.3em]">Quick Response Vectors</h3>
+    </div>
+    
     <div class="grid grid-cols-2 gap-4">
-      
-      <!-- 快速聊天 -->
-      <button 
+      <!-- Quick Chat -->
+      <TacticalButton 
+        variant="secondary" 
+        size="md" 
         @click="quickChat"
-        class="flex items-center p-4 bg-blue-600/20 hover:bg-blue-600/30 border border-blue-600/30 rounded-lg transition-all duration-300 group"
+        class="group !justify-start p-4"
       >
-        <div class="text-2xl mr-3 group-hover:scale-110 transition-transform">💬</div>
-        <div class="flex-1">
-          <div class="text-sm font-medium text-blue-400 mb-1">随便聊聊</div>
-          <div class="text-xs text-gray-400">+5-15 羁绊值</div>
+        <div class="flex items-center gap-4 text-left">
+          <div class="text-2xl group-hover:scale-110 transition-transform">💬</div>
+          <div class="space-y-0.5">
+            <div class="text-[10px] font-display font-black text-white uppercase tracking-wider">CASUAL_UPLINK</div>
+            <div class="text-[8px] font-mono text-cyan-400 opacity-60">+05-15 AFF_DELTA</div>
+          </div>
         </div>
-      </button>
+      </TacticalButton>
 
-      <!-- 快速送礼 -->
-      <button 
+      <!-- Quick Gift -->
+      <TacticalButton 
+        variant="primary" 
+        size="md" 
         @click="quickGift"
         :disabled="economyStore.knowledgePoints < 25"
-        :class="[
-          'flex items-center p-4 border rounded-lg transition-all duration-300 group',
-          economyStore.knowledgePoints >= 25
-            ? 'bg-pink-600/20 hover:bg-pink-600/30 border-pink-600/30'
-            : 'bg-gray-700/50 border-gray-600/50 opacity-50 cursor-not-allowed'
-        ]"
+        class="group !justify-start p-4 border-hazard-rose/30"
       >
-        <div class="text-2xl mr-3 group-hover:scale-110 transition-transform">🎁</div>
-        <div class="flex-1">
-          <div 
-            class="text-sm font-medium mb-1"
-            :class="economyStore.knowledgePoints >= 25 ? 'text-pink-400' : 'text-gray-500'"
-          >
-            小礼物
+        <div class="flex items-center gap-4 text-left">
+          <div class="text-2xl group-hover:scale-110 transition-transform">🎁</div>
+          <div class="space-y-0.5">
+            <div class="text-[10px] font-display font-black text-white uppercase tracking-wider">MINOR_LARGESSE</div>
+            <div class="text-[8px] font-mono text-hazard-rose opacity-60">25 KP_REQUISITION</div>
           </div>
-          <div class="text-xs text-gray-400">25 知识点</div>
         </div>
-      </button>
-
+      </TacticalButton>
     </div>
   </div>
 </template>
+
+<style scoped>
+.text-hazard-rose { color: #E51E5D; }
+</style>

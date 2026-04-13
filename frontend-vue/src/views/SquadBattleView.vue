@@ -1,7 +1,6 @@
 <script setup lang="ts">
 /**
- * Squad Battle View
- * MIGRATED: Now uses modular stores (authStore, nurtureStore)
+ * Squad Battle View - Tactical Briefing Standard
  */
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 import { useAuthStore } from '@/stores/modules/authStore';
@@ -15,39 +14,58 @@ import CharacterSelectModal from '@/components/battle/CharacterSelectModal.vue';
 import SquadCard from '@/components/battle/SquadCard.vue';
 import BattleArena from '@/components/battle/BattleArena.vue';
 import BattleResult from '@/components/battle/BattleResult.vue';
-import type { CharacterCard } from '@/types/card';
+
+// Atomic Components
+import GlassPanel from '@/components/ui/GlassPanel.vue';
+import TacticalButton from '@/components/ui/TacticalButton.vue';
 
 const authStore = useAuthStore();
 const nurtureStore = useNurtureStore();
 const gameDataStore = useGameDataStore();
 
-// Composables
-const battleState = useBattleState();
+const { 
+  currentPhase, 
+  playerSquad, 
+  enemySquad, 
+  battleLog, 
+  currentTurn, 
+  isPlayerTurn, 
+  battleResult, 
+  selectedSquadForBattle,
+  towerEnemyData,
+  returnToTowerMode
+} = useBattleState();
+
 const squadManager = useSquadManager();
-const towerBattle = useTowerBattle(
-  battleState.playerSquad,
-  battleState.enemySquad,
-  battleState.currentPhase,
-  battleState.battleLog,
-  battleState.currentTurn,
-  battleState.isPlayerTurn,
-  battleState.battleResult,
-  battleState.selectedSquadForBattle,
-  battleState.currentBattleMode,
-  battleState.towerEnemyData,
+const { 
+  currentTowerFloor, 
+  startTowerBattle, 
+  refreshTowerEnemies, 
+  executeRound, 
+  autoFinishBattle 
+} = useTowerBattle(
+  playerSquad,
+  enemySquad,
+  currentPhase,
+  battleLog,
+  currentTurn,
+  isPlayerTurn,
+  battleResult,
+  selectedSquadForBattle,
+  ref('tower'), // currentBattleMode
+  towerEnemyData,
   squadManager.createSquadMember
 );
+
 const persistence = useBattlePersistence(
-  battleState.currentPhase,
-  battleState.towerEnemyData
+  currentPhase,
+  towerEnemyData
 );
 
-// 角色选择弹窗状态
 const showCharacterSelectModal = ref(false);
 const selectedPosition = ref(0);
 const editingSquadId = ref<number | null>(null);
 
-// Handlers
 function openCharacterSelect(squadId: number, position: number) {
   editingSquadId.value = squadId;
   selectedPosition.value = position;
@@ -71,191 +89,223 @@ function updateSquadName(squadId: number, newName: string) {
 }
 
 function handleStartBattle(squadId: number) {
-  towerBattle.startTowerBattle(squadId);
+  startTowerBattle(squadId);
   persistence.saveState();
 }
 
 function handleRestart() {
-  battleState.returnToTowerMode();
+  returnToTowerMode();
   persistence.saveState();
 }
 
 function handleRetryBattle(squadId: number) {
-  towerBattle.startTowerBattle(squadId);
+  startTowerBattle(squadId);
 }
 
-// Lifecycle
-onMounted(() => {
-  console.log('[DEBUG] Component mounted, loading state...');
-  persistence.loadState();
-});
-
-onBeforeUnmount(() => {
-  console.log('[DEBUG] Component unmounting, saving state...');
-  persistence.saveState();
-});
+onMounted(() => persistence.loadState());
+onBeforeUnmount(() => persistence.saveState());
 </script>
 
 <template>
-  <div class="min-h-screen bg-gray-900 py-8">
-    <div class="container mx-auto px-4">
-      
-      <!-- 页面标题 -->
-      <div class="text-center mb-8">
-        <h1 class="text-4xl font-bold text-white mb-2">挑战塔</h1>
-        <p class="text-gray-400">逐层挑战，难度递增，证明你的实力！</p>
-      </div>
-      
-      <!-- 未登录状态 -->
-      <div v-if="!authStore.isLoggedIn" class="text-center py-20">
-        <h2 class="text-2xl font-bold text-gray-300 mb-4">请先登录</h2>
-        <p class="text-gray-500">登录后即可参与爬塔挑战</p>
-      </div>
-
-      <!-- 爬塔模式界面 -->
-      <div v-else-if="(battleState.currentPhase as any) === 'towerMode'" class="space-y-6">
-
-        <!-- 爬塔信息面板 -->
-        <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
-          <div class="grid md:grid-cols-3 gap-6">
-            <!-- 当前进度 -->
-            <div class="text-center">
-              <h3 class="text-lg font-bold text-white mb-2">当前进度</h3>
-              <div class="text-3xl font-bold text-green-400 mb-2">第 {{ towerBattle.currentTowerFloor }} 层</div>
-              <div class="text-sm text-gray-400">历史最高：{{ nurtureStore.towerProgress.maxFloor }} 层</div>
+  <div class="squad-battle-view bg-black relative overflow-hidden font-ui">
+    <!-- Atmospheric Underlay -->
+    <div class="absolute inset-0 bg-grid opacity-10 pointer-events-none"></div>
+    <div class="absolute inset-0 bg-scanlines opacity-[0.03] pointer-events-none"></div>
+    
+    <div class="relative z-10 p-4 md:p-8 space-y-12">
+      <!-- PHASE: Tower Mode Dashboard -->
+      <template v-if="currentPhase === 'towerMode'">
+        <!-- Header: Command Center -->
+        <header class="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-white/10 pb-10">
+          <div class="space-y-2">
+            <h2 class="text-[10px] font-display font-bold text-gold tracking-[0.6em] uppercase opacity-70">Logistics Command</h2>
+            <h1 class="text-5xl font-display font-black tracking-tighter uppercase text-white leading-none">Strategic Tower</h1>
+            <div class="text-[8px] font-mono text-industrial-600 uppercase tracking-widest mt-2">Coordinates: Sector_7-04 // Mode: Tactical_Engagement</div>
+          </div>
+          
+          <div class="flex items-center gap-6">
+            <div class="text-right border-r border-white/10 pr-6">
+               <div class="text-[8px] font-display text-industrial-500 uppercase tracking-widest">Protocol Version</div>
+               <div class="text-xs font-mono text-white opacity-80 uppercase">APV.1044-T</div>
             </div>
-
-            <!-- 层数状态 -->
-            <div class="text-center">
-              <h3 class="text-lg font-bold text-white mb-2">层数状态</h3>
-              <div class="text-2xl font-bold text-blue-400 mb-2">
-                {{ nurtureStore.hasCompletedFloor(towerBattle.currentTowerFloor.value) ? '已通过' : '未挑战' }}
-              </div>
-              <div class="text-sm text-gray-400">每层只能挑战一次，无次数限制</div>
-            </div>
-
-            <!-- 当前敌人信息 -->
-            <div class="text-center">
-              <h3 class="text-lg font-bold text-white mb-2">当前层敌人</h3>
-              <div v-if="!battleState.towerEnemyData.value" class="space-y-2">
-                <button
-                  @click="towerBattle.refreshTowerEnemies"
-                  class="px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg transition-colors"
-                >
-                  刷新敌人
-                </button>
-              </div>
-              <div v-else class="space-y-2">
-                <div class="font-bold text-red-400">{{ battleState.towerEnemyData.value.name }}</div>
-                <div class="text-sm text-gray-400">{{ battleState.towerEnemyData.value.description }}</div>
-                <div class="text-lg font-bold text-yellow-400">
-                  战力: {{ battleState.towerEnemyData.value.floorPower }}
-                </div>
-                <div class="text-sm mb-2">
-                  <span class="px-2 py-1 rounded text-xs font-bold"
-                        :class="{
-                          'bg-green-500 text-white': battleState.towerEnemyData.value.difficulty === '简单',
-                          'bg-yellow-500 text-black': battleState.towerEnemyData.value.difficulty === '中等',
-                          'bg-red-500 text-white': battleState.towerEnemyData.value.difficulty === '困难',
-                          'bg-purple-500 text-white': battleState.towerEnemyData.value.difficulty === '极难'
-                        }">
-                    {{ battleState.towerEnemyData.value.difficulty }}
-                  </span>
-                </div>
-                <button
-                  @click="towerBattle.refreshTowerEnemies"
-                  class="px-3 py-1 bg-orange-600 hover:bg-orange-700 text-white text-sm rounded transition-colors"
-                >
-                  重新刷新
-                </button>
-              </div>
+            <div class="bg-gold/[0.03] px-8 py-4 border border-gold/20 relative group">
+               <div class="absolute top-0 right-0 w-1 h-1 bg-gold animate-pulse"></div>
+               <span class="text-[9px] font-display text-gold/60 uppercase tracking-widest block mb-1">Target Floor</span>
+               <span class="text-3xl font-display font-black text-gold tabular-nums">FL-{{ String(currentTowerFloor).padStart(2, '0') }}</span>
             </div>
           </div>
+        </header>
+        
+        <!-- Login Check -->
+        <div v-if="!authStore.isLoggedIn" class="py-32 text-center space-y-4">
+          <div class="text-4xl opacity-10">🔒</div>
+          <p class="text-industrial-500 font-display text-[10px] tracking-[0.4em] uppercase">Auth Required // Database Closed</p>
+          <TacticalButton variant="primary" size="sm">UPLINK_IDENTITY</TacticalButton>
         </div>
 
-        <!-- 选择挑战小队 -->
-        <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
-          <h3 class="text-xl font-bold text-white mb-4">选择挑战小队</h3>
+        <div v-else class="grid grid-cols-1 lg:grid-cols-12 gap-8 quantic-reveal items-start">
+          
+          <!-- Left: Intelligence Dossier -->
+          <div class="lg:col-span-4 space-y-8">
+             <GlassPanel :reveal="false" class="border-white/5 bg-white/[0.01]">
+               <template #header>
+                 <div class="p-6 border-b border-white/5 bg-white/[0.02]">
+                    <div class="text-[9px] font-display font-black text-gold tracking-[0.3em] uppercase opacity-80 mb-1">Combat Dossier</div>
+                    <div class="text-lg font-display font-bold text-white uppercase tracking-tighter">Enemy Intelligence</div>
+                 </div>
+               </template>
+               
+               <div class="p-6 space-y-8">
+                  <div v-if="!towerEnemyData" class="py-16 text-center space-y-6">
+                     <div class="text-5xl opacity-5 animate-pulse">📡</div>
+                     <div class="space-y-1">
+                        <p class="text-[10px] text-industrial-500 uppercase tracking-widest">No Signal Detected</p>
+                        <p class="text-[8px] text-industrial-600 uppercase">Scanning environment...</p>
+                     </div>
+                     <TacticalButton variant="primary" size="sm" @click="refreshTowerEnemies">Initiate Deep Scan</TacticalButton>
+                  </div>
+                  
+                  <div v-else class="space-y-8 animate-in fade-in slide-in-from-left-4 duration-500">
+                     <div class="relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gold/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div class="space-y-2 relative border-l-2 border-gold/40 pl-4 py-2">
+                           <div class="text-2xl font-display font-black text-white uppercase tracking-tighter tabular-nums">{{ towerEnemyData.name }}</div>
+                           <div class="text-[9px] text-industrial-500 font-ui uppercase leading-relaxed tracking-wide italic max-w-xs">{{ towerEnemyData.description }}</div>
+                        </div>
+                     </div>
+                     
+                     <div class="grid grid-cols-2 gap-px bg-white/5">
+                        <div class="bg-black/60 p-4 border border-white/5">
+                           <div class="text-[8px] font-display text-industrial-500 uppercase tracking-widest mb-1">Combat Rating</div>
+                           <div class="text-2xl font-display text-gold font-bold tabular-nums">{{ towerEnemyData.floorPower }}</div>
+                        </div>
+                        <div class="bg-black/60 p-4 border border-white/5">
+                           <div class="text-[8px] font-display text-industrial-500 uppercase tracking-widest mb-1">Threat Status</div>
+                           <div class="text-xs font-display font-black uppercase tracking-[0.2em]" :class="{
+                             'text-green-400/80': towerEnemyData.difficulty === '简单',
+                             'text-yellow-400/80': towerEnemyData.difficulty === '中等',
+                             'text-clinical-danger': ['困难', '极难'].includes(towerEnemyData.difficulty)
+                           }">{{ towerEnemyData.difficulty }}</div>
+                        </div>
+                     </div>
+                     
+                     <!-- Enemy Metadata List -->
+                     <ul class="space-y-3 p-1">
+                        <li class="flex items-center justify-between group">
+                           <span class="text-[8px] font-display text-industrial-600 uppercase">Location_ID</span>
+                           <span class="text-[9px] font-mono text-industrial-400 group-hover:text-white transition-colors">77-B/FL-{{ currentTowerFloor }}</span>
+                        </li>
+                        <li class="flex items-center justify-between group">
+                           <span class="text-[8px] font-display text-industrial-600 uppercase">Energy_Sign</span>
+                           <span class="text-[9px] font-mono text-gold group-hover:text-gold transition-colors">POS_WAVE</span>
+                        </li>
+                     </ul>
 
-          <div class="grid md:grid-cols-3 gap-6">
-            <SquadCard
-              v-for="squad in nurtureStore.presetSquads"
-              :key="squad.id"
-              :squad="squad"
-              :current-tower-floor="towerBattle.currentTowerFloor.value"
-              :has-completed-floor="nurtureStore.hasCompletedFloor(towerBattle.currentTowerFloor.value)"
-              :tower-enemy-data="battleState.towerEnemyData.value"
-              @start-battle="handleStartBattle"
-              @open-character-select="openCharacterSelect"
-              @update-name="updateSquadName"
+                     <TacticalButton variant="secondary" size="xs" class="w-full" @click="refreshTowerEnemies">RE_CALIBRATE_INTEL</TacticalButton>
+                  </div>
+               </div>
+             </GlassPanel>
+
+             <!-- Briefing Protocol -->
+             <div class="bg-white/[0.01] border border-white/5 p-6 space-y-4 relative">
+                <div class="absolute top-0 right-0 w-8 h-8 opacity-5">
+                   <svg viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                </div>
+                <h3 class="text-[8px] font-display font-black text-industrial-500 tracking-[0.4em] uppercase">Protocol: Briefing_Delta</h3>
+                <ul class="text-[8px] text-industrial-500 space-y-3 font-ui uppercase tracking-widest list-none">
+                  <li class="flex items-center gap-3"><span class="w-1 h-1 bg-gold/40"></span> Power intensity increases per cycle</li>
+                  <li class="flex items-center gap-3"><span class="w-1 h-1 bg-gold/40"></span> Victory resolves reward manifest</li>
+                  <li class="flex items-center gap-3"><span class="w-1 h-1 bg-gold/40"></span> Max: 10 engagements per session</li>
+               </ul>
+             </div>
+          </div>
+
+          <!-- Right: Squad Assembly Control -->
+          <div class="lg:col-span-8 space-y-10">
+             <div class="flex items-end justify-between border-b border-white/5 pb-6">
+               <div class="space-y-1">
+                  <h3 class="text-[9px] font-display font-bold text-white tracking-[0.3em] uppercase">Tactical Selection</h3>
+                  <p class="text-[7px] font-mono text-industrial-600 uppercase tracking-widest">Available_Presets: {{ nurtureStore.presetSquads.length }} // Max_Sync: FL-{{ nurtureStore.towerProgress.maxFloor }}</p>
+               </div>
+             </div>
+
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+               <SquadCard
+                 v-for="squad in nurtureStore.presetSquads"
+                 :key="squad.id"
+                 :squad="squad"
+                 :current-tower-floor="currentTowerFloor"
+                 :has-completed-floor="nurtureStore.hasCompletedFloor(currentTowerFloor)"
+                 :tower-enemy-data="towerEnemyData || {}"
+                 @start-battle="handleStartBattle"
+                 @open-character-select="openCharacterSelect"
+                 @update-name="updateSquadName"
+               />
+             </div>
+          </div>
+        </div>
+      </template>
+
+      <!-- PHASE: Engagement (Battle) -->
+      <template v-else-if="currentPhase === 'battle'">
+        <div class="quantic-reveal h-[calc(100vh-140px)] flex flex-col">
+          <BattleArena
+            :player-squad="playerSquad"
+            :enemy-squad="enemySquad"
+            :battle-log="battleLog"
+            :current-turn="currentTurn"
+            :is-player-turn="isPlayerTurn"
+            @execute-round="executeRound"
+            @auto-finish="autoFinishBattle"
+          />
+        </div>
+      </template>
+
+      <!-- PHASE: Debrief (Result) -->
+      <template v-else-if="currentPhase === 'result'">
+        <div class="quantic-reveal py-12 flex justify-center">
+          <div class="max-w-4xl w-full">
+            <BattleResult
+              :battle-result="battleResult"
+              :battle-log="battleLog"
+              :selected-squad-for-battle="selectedSquadForBattle || 0"
+              @restart="handleRestart"
+              @retry-battle="handleRetryBattle"
             />
           </div>
         </div>
+      </template>
 
-        <!-- 爬塔说明 -->
-        <div class="bg-blue-900/20 border border-blue-500 rounded-lg p-4">
-          <div class="flex items-start space-x-3">
-            <div class="text-blue-400 text-xl">🏗️</div>
-            <div>
-              <h3 class="text-blue-400 font-bold mb-2">爬塔规则</h3>
-              <ul class="text-sm text-gray-300 space-y-1">
-                <li>• 每层敌人战力和稀有度都会递增</li>
-                <li>• 胜利可获得大量经验和知识点奖励</li>
-                <li>• 每日最多挑战10次</li>
-                <li>• 通过当前层后解锁下一层</li>
-                <li>• 每5层难度显著提升</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- 战斗阶段 -->
-      <BattleArena
-        v-else-if="(battleState.currentPhase as any) === 'battle'"
-        :player-squad="battleState.playerSquad.value"
-        :enemy-squad="battleState.enemySquad.value"
-        :battle-log="battleState.battleLog.value"
-        :current-turn="battleState.currentTurn.value"
-        :is-player-turn="battleState.isPlayerTurn.value"
-        @execute-round="towerBattle.executeRound"
-        @auto-finish="towerBattle.autoFinishBattle"
+      <!-- Modals -->
+      <CharacterSelectModal
+        :is-open="showCharacterSelectModal"
+        :position="selectedPosition"
+        :current-character-id="editingSquadId ? (nurtureStore.getSquadMembers(editingSquadId)[selectedPosition] ?? undefined) : undefined"
+        :used-character-ids="editingSquadId ? squadManager.getUsedCharacterIds(editingSquadId, selectedPosition) : []"
+        @close="showCharacterSelectModal = false"
+        @select="handleCharacterSelect"
+        @remove="handleCharacterRemove"
       />
-
-      <!-- 结果阶段 -->
-      <BattleResult
-        v-else-if="(battleState.currentPhase as any) === 'result'"
-        :battle-result="battleState.battleResult.value"
-        :battle-log="battleState.battleLog.value"
-        :selected-squad-for-battle="battleState.selectedSquadForBattle.value || 0"
-        @restart="handleRestart"
-        @retry-battle="handleRetryBattle"
-      />
-      
     </div>
-    
-    <!-- 角色选择弹窗 -->
-    <CharacterSelectModal
-      :is-open="showCharacterSelectModal"
-      :position="selectedPosition"
-      :current-character-id="editingSquadId ? (nurtureStore.getSquadMembers(editingSquadId)[selectedPosition] || undefined) : undefined"
-      :used-character-ids="editingSquadId ? squadManager.getUsedCharacterIds(editingSquadId, selectedPosition) : []"
-      @close="showCharacterSelectModal = false"
-      @select="handleCharacterSelect"
-      @remove="handleCharacterRemove"
-    />
   </div>
 </template>
 
 <style scoped>
-/* 小队选择卡片动画 */
-.bg-gray-800:hover {
-  transform: translateY(-2px);
-  transition: transform 0.2s ease;
+.squad-battle-view {
+  min-height: calc(100vh - 80px);
 }
-
-/* 角色位置方格悬停效果 */
-.cursor-pointer:hover {
-  transform: scale(1.02);
+.bg-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+}
+.bg-scanlines {
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(255, 255, 255, 0.5) 50%
+  );
+  background-size: 100% 4px;
 }
 </style>

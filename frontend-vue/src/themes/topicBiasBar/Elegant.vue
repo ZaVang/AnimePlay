@@ -2,9 +2,8 @@
 import { computed } from 'vue';
 import { usePlayerStore } from '@/stores/battle';
 
-// 接收props
 interface Props {
-  topicBias: number;  // -10 到 +10 的值
+  topicBias: number;  // -10 to +10
 }
 
 const props = defineProps<Props>();
@@ -12,13 +11,13 @@ const playerStore = usePlayerStore();
 
 const isPlayerA = playerStore.playerId === 'playerA';
 
-// 计算偏向百分比
+// Calculate bias percentage
 const biasPercentage = computed(() => {
   const bias = isPlayerA ? props.topicBias : -props.topicBias;
   return (bias + 10) * 5;
 });
 
-// 计算状态颜色类别
+// Semantic value classes
 const valueClass = computed(() => {
   const bias = isPlayerA ? props.topicBias : -props.topicBias;
   if (bias > 0) return 'positive';
@@ -28,42 +27,36 @@ const valueClass = computed(() => {
 
 const valueLabel = computed(() => {
     const bias = isPlayerA ? props.topicBias : -props.topicBias;
-    if (bias > 0) return '我方';
-    if (bias < 0) return '对手';
-    return '中立';
+    if (bias > 0) return 'USER_UPLINK';
+    if (bias < 0) return 'RIVAL_SIGNAL';
+    return 'PARITY_STATE';
 });
 
-// 计算状态文本
+// Tactical status readout
 const statusText = computed(() => {
   const bias = props.topicBias;
-  if (bias >= 10) return '即将胜利';
-  if (bias >= 7) return '绝对优势';
-  if (bias >= 4) return '占据主动';
-  if (bias >= 1) return '略占优势';
-  if (bias === 0) return '势均力敌';
-  if (bias >= -3) return '略处劣势';
-  if (bias >= -6) return '陷入被动';
-  if (bias >= -9) return '岌岌可危';
-  return '濒临失败';
+  if (bias >= 10) return 'VICTORY_NEAR';
+  if (bias >= 7) return 'DOMINANT_SIGNAL';
+  if (bias >= 4) return 'ACTIVE_UPLINK';
+  if (bias >= 1) return 'MARGINAL_GAINS';
+  if (bias === 0) return 'SYNC_EQUILIBRIUM';
+  if (bias >= -3) return 'STOCHASTIC_DEBT';
+  if (bias >= -6) return 'SIGNAL_DEGRADING';
+  if (bias >= -9) return 'CRITICAL_FAILURE';
+  return 'SYSTEM_DESTRUCTION';
 });
 
-// 计算填充条的宽度
 const fillWidth = computed(() => {
   const bias = isPlayerA ? props.topicBias : -props.topicBias;
-  return Math.abs(bias) * 5; // 每点偏向值对应5%宽度
+  return Math.abs(bias) * 5;
 });
 
-// 计算状态条的宽度
 const statusBarWidth = computed(() => {
-  return Math.abs(props.topicBias) * 10; // 每点偏向值对应10%宽度
+  return Math.abs(props.topicBias) * 10;
 });
 
-// 判断是否显示警告
-const showWarning = computed(() => {
-  return Math.abs(props.topicBias) >= 8;
-});
+const showWarning = computed(() => Math.abs(props.topicBias) >= 8);
 
-// 发射事件（如果需要与父组件交互）
 const emit = defineEmits<{
   (e: 'click', value: number): void;
 }>();
@@ -74,37 +67,39 @@ function handleClick() {
 </script>
 
 <template>
-  <div class="bias-bar-elegant-horizontal" @click="handleClick">
-    <!-- 左侧状态提示 -->
-    <div class="status-section-horizontal">
-      <div class="status-text" :class="valueClass">
+  <div class="bias-bar-elegant-horizontal quantic-reveal group" @click="handleClick">
+    <!-- Status Diagnostic Segment -->
+    <div class="status-section-horizontal flex flex-col justify-center">
+      <div class="text-[7px] font-display font-bold text-gold/50 uppercase tracking-[0.4em] mb-1">Diagnostic_Link</div>
+      <div class="status-text uppercase tracking-tighter" :class="valueClass">
         {{ statusText }}
       </div>
-      <div class="status-bar-container">
+      <div class="status-bar-container mt-2">
         <div 
-          class="status-bar" 
+          class="status-bar transition-all duration-700" 
           :style="{ width: `${statusBarWidth}%` }"
           :class="valueClass"
         ></div>
       </div>
     </div>
     
-    <!-- 主偏向条 -->
+    <!-- Main Engagement Axis -->
     <div class="bias-bar-wrapper-horizontal">
-       <!-- 底部刻度 -->
+       <!-- Tactical Axis Labels -->
       <div class="scale-labels-horizontal">
-        <span class="scale-label" data-value="-10">对手</span>
-        <span class="scale-label center" data-value="0">0</span>
-        <span class="scale-label" data-value="+10">我方</span>
+        <span class="scale-label" :class="{ 'text-clinical-danger': !isPlayerA }">RIVAL</span>
+        <span class="scale-label center font-mono">0.0</span>
+        <span class="scale-label" :class="{ 'text-gold': isPlayerA }">USER</span>
       </div>
-      <div class="bias-bar-horizontal">
-        <!-- 背景层 -->
-        <div class="bar-background-horizontal"></div>
+      
+      <div class="bias-bar-horizontal border border-white/5 bg-black/40 relative">
+        <!-- Substrate Decoration -->
+        <div class="absolute inset-0 bg-scanline opacity-[0.03] pointer-events-none"></div>
         
-        <!-- 中线 -->
-        <div class="center-line-horizontal"></div>
+        <!-- Axis Zero Point -->
+        <div class="center-line-horizontal bg-white/10"></div>
         
-        <!-- 填充条 -->
+        <!-- Energy Surge Fill -->
         <div 
           class="bias-fill-horizontal"
           :class="{ 
@@ -113,221 +108,147 @@ function handleClick() {
           }"
           :style="{ 
             width: `${fillWidth}%`,
-            opacity: showWarning ? 1 : 0.8
+            opacity: showWarning ? 1 : 0.6
           }"
         ></div>
         
-        <!-- 指示点 -->
+        <!-- Tactical Reticle Indicator -->
         <div 
           class="indicator-dot-horizontal"
           :style="{ left: `${biasPercentage}%` }"
           :class="{ 'warning': showWarning }"
         >
-          <span class="indicator-tooltip">
-            {{ props.topicBias > 0 ? '+' : '' }}{{ props.topicBias }}
-          </span>
+          <!-- Geometric Reticle Decoration -->
+          <div class="absolute inset-0 border border-current opacity-40 scale-150 rotate-45 pointer-events-none"></div>
+          
+          <div class="indicator-tooltip font-mono text-[9px] uppercase tracking-tighter">
+            SYNC: {{ props.topicBias > 0 ? '+' : '' }}{{ props.topicBias }}
+          </div>
         </div>
       </div>
     </div>
     
-    <!-- 右侧数值显示 -->
+    <!-- Precise Readout Segment -->
     <div class="value-display-horizontal" :class="valueClass">
-      <span class="value-number">
-        {{ Math.abs(props.topicBias) }}
+      <div class="text-[7px] font-display font-bold text-industrial-600 uppercase tracking-widest mb-1">Delta_Offset</div>
+      <span class="value-number font-mono text-3xl font-black tabular-nums scale-y-110">
+        {{ Math.abs(props.topicBias).toFixed(1) }}
       </span>
-      <span class="value-label">
+      <span class="value-label font-display font-bold text-[8px] opacity-40 block mt-1 tracking-widest text-white">
         {{ valueLabel }}
       </span>
     </div>
+
+    <!-- Decorative Corner Pins -->
+    <div class="absolute top-2 left-2 w-1 h-1 bg-white/10"></div>
+    <div class="absolute bottom-2 right-2 w-1 h-1 bg-white/10"></div>
   </div>
 </template>
 
 <style scoped>
-/* 容器样式 */
 .bias-bar-elegant-horizontal {
   @apply w-full h-24 flex items-center justify-between;
-  @apply rounded-2xl p-4 cursor-pointer;
-  @apply transition-all duration-300;
-  
-  /* 毛玻璃效果 */
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  
-  /* 悬停效果 */
-  &:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.15);
-    transform: scale(1.01);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  }
+  @apply bg-black/40 backdrop-blur-md border border-white/5;
+  @apply p-6 cursor-pointer relative overflow-hidden;
+  @apply transition-all duration-500;
 }
 
-/* 数值显示 */
+.bias-bar-elegant-horizontal:hover {
+  @apply bg-black/60 border-white/10;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
 .value-display-horizontal {
-  @apply text-center transition-all duration-500;
-  flex-basis: 80px;
-  
-  .value-number {
-    @apply text-3xl font-light block;
-    @apply transition-all duration-300;
-  }
-  
-  .value-label {
-    @apply text-xs opacity-60 uppercase tracking-widest mt-1;
-  }
+  @apply text-right transition-all duration-500;
+  flex-basis: 120px;
 }
 
-/* 偏向条包装器 */
 .bias-bar-wrapper-horizontal {
-  @apply flex-1 flex flex-col items-center gap-2 mx-4;
-  min-width: 200px;
+  @apply flex-1 flex flex-col items-center gap-3 mx-8;
+  min-width: 250px;
 }
 
-/* 偏向条主体 */
 .bias-bar-horizontal {
-  @apply relative h-8 w-full;
-  @apply rounded-full overflow-hidden;
-  
-  .bar-background-horizontal {
-    @apply absolute inset-0;
-    background: linear-gradient(
-      to right,
-      rgba(239, 68, 68, 0.1) 0%,
-      rgba(0, 0, 0, 0.2) 45%,
-      rgba(0, 0, 0, 0.2) 55%,
-      rgba(16, 185, 129, 0.1) 100%
-    );
-  }
-  
-  .center-line-horizontal {
-    @apply absolute left-1/2 top-0 bottom-0 w-px;
-    @apply bg-white/30;
-    transform: translateX(-50%);
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
-  }
+  @apply relative h-6 w-full overflow-hidden;
 }
 
-/* 填充条 */
+.center-line-horizontal {
+  @apply absolute left-1/2 top-0 bottom-0 w-px;
+  transform: translateX(-50%);
+}
+
 .bias-fill-horizontal {
-  @apply absolute top-0 bottom-0;
-  @apply rounded-full transition-all duration-500 ease-out;
+  @apply absolute top-0 bottom-0 transition-all duration-700 ease-out;
   
-  &.positive { /* 我方优势 */
-    @apply left-1/2;
-    background: linear-gradient(
-      to right,
-      rgba(52, 211, 153, 0.4),
-      rgba(52, 211, 153, 0.8)
-    );
+  &.positive { 
+    @apply left-1/2 bg-gradient-to-r from-gold/5 via-gold/40 to-gold/60;
   }
   
-  &.negative { /* 对手优势 */
-    @apply right-1/2;
-    background: linear-gradient(
-      to left,
-      rgba(251, 113, 133, 0.4),
-      rgba(251, 113, 133, 0.8)
-    );
+  &.negative { 
+    @apply right-1/2 bg-gradient-to-l from-clinical-danger/5 via-clinical-danger/40 to-clinical-danger/60;
   }
 }
 
-/* 指示点 */
 .indicator-dot-horizontal {
   @apply absolute top-1/2 transform -translate-y-1/2 -translate-x-1/2;
-  @apply w-3 h-3 bg-white rounded-full;
-  @apply shadow-lg transition-all duration-300;
+  @apply w-px h-full bg-white transition-all duration-300;
   @apply z-10;
-  
-  &:hover {
-    @apply scale-150;
-    .indicator-tooltip {
-      @apply opacity-100 scale-100;
-    }
-  }
-  
-  &.warning {
-    @apply bg-yellow-400;
-    animation: pulse-warning 1s ease-in-out infinite;
-  }
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
 }
 
-/* 指示点提示 */
+.group:hover .indicator-dot-horizontal {
+  @apply h-[120%];
+}
+
 .indicator-tooltip {
-    @apply absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2;
-  @apply bg-gray-900 text-white text-xs px-2 py-1 rounded;
-  @apply opacity-0 scale-75 transition-all duration-200;
+  @apply absolute bottom-full left-1/2 transform -translate-x-1/2 mb-4;
+  @apply bg-black/90 border border-white/10 text-white px-3 py-1 scale-100;
   @apply whitespace-nowrap pointer-events-none;
-  
-  &::after {
-    content: '';
-    @apply absolute top-full left-1/2 transform -translate-x-1/2;
-    @apply border-4 border-transparent border-t-gray-900;
-  }
+  box-shadow: 0 4px 15px rgba(0,0,0,0.8);
 }
 
-/* 刻度标签 */
 .scale-labels-horizontal {
-  @apply flex justify-between w-full;
-  @apply text-xs px-1;
-  
-  .scale-label {
-    @apply text-white/40 transition-all duration-300;
-    
-    &.center {
-      @apply text-white/60 font-semibold;
-    }
-  }
+  @apply flex justify-between w-full text-[8px] font-display font-bold uppercase tracking-[0.2em] opacity-30;
 }
 
-/* 状态提示 */
 .status-section-horizontal {
-  @apply w-full space-y-2;
-  flex-basis: 120px;
-  
-  .status-text {
-    @apply text-xs font-semibold text-center;
-  }
-  
-  .status-bar-container {
-    @apply w-full h-1 bg-white/10 rounded-full overflow-hidden;
-    
-    .status-bar {
-      @apply h-full transition-all duration-500 ease-out rounded-full;
-    }
-  }
+  @apply space-y-1;
+  flex-basis: 140px;
 }
 
-/* 状态颜色 */
+.status-text {
+  @apply text-[10px] font-display font-black tracking-tight;
+}
+
+.status-bar-container {
+  @apply w-full h-0.5 bg-white/5 overflow-hidden;
+}
+
+.status-bar {
+  @apply h-full;
+}
+
+/* State Colors */
 .positive {
-  @apply text-emerald-400;
-  .status-bar { @apply bg-gradient-to-r from-emerald-400 to-emerald-500; }
+  @apply text-gold;
+  .status-bar { @apply bg-gold shadow-[0_0_8px_rgba(212,165,116,0.5)]; }
 }
 .negative {
-  @apply text-rose-400;
-   .status-bar { @apply bg-gradient-to-r from-rose-400 to-rose-500; }
+  @apply text-clinical-danger;
+   .status-bar { @apply bg-clinical-danger shadow-[0_0_8px_rgba(159,18,57,0.5)]; }
 }
 .neutral {
-  @apply text-amber-400;
-  .status-bar { @apply bg-gradient-to-r from-amber-400 to-amber-500; }
-}
-.value-display-horizontal.positive {
-  text-shadow: 0 0 20px rgba(52, 211, 153, 0.5);
-}
-.value-display-horizontal.negative {
-  text-shadow: 0 0 20px rgba(251, 113, 133, 0.5);
-}
-.value-display-horizontal.neutral {
-    text-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
+  @apply text-white/40;
+  .status-bar { @apply bg-white/20; }
 }
 
-/* 动画定义 */
 @keyframes pulse-warning {
-  0%, 100% {
-    box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7);
-  }
-  50% {
-    box-shadow: 0 0 0 8px rgba(251, 191, 36, 0);
-  }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.warning {
+  @apply bg-gold;
+  animation: pulse-warning 1s ease-in-out infinite;
 }
 </style>
