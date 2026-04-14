@@ -90,7 +90,7 @@ function handleImageError(event: Event) {
                <div class="text-[8px] font-mono font-black uppercase" :class="'rarity-' + card.rarity">{{ card.rarity }}_SPEC</div>
                <div class="text-[10px] font-display font-bold text-white uppercase truncate tracking-tight">{{ card.name }}</div>
             </div>
-            <div class="text-[7px] font-display font-black text-clinical-danger opacity-0 group-hover:opacity-100 transition-opacity tracking-widest px-2">PURGE</div>
+            <div class="text-[7px] font-display font-black text-clinical-danger transition-opacity tracking-widest px-2">清除单元</div>
           </div>
           
           <div v-if="animeInDeck.length === 0" class="py-8 text-center bg-white/[0.02] border border-dashed border-white/5">
@@ -115,7 +115,7 @@ function handleImageError(event: Event) {
                <div class="text-[8px] font-mono font-black uppercase" :class="'rarity-' + card.rarity">{{ card.rarity }}_SPEC</div>
                <div class="text-[10px] font-display font-bold text-white uppercase truncate tracking-tight">{{ card.name }}</div>
             </div>
-            <div class="text-[7px] font-display font-black text-clinical-danger opacity-0 group-hover:opacity-100 transition-opacity tracking-widest px-2">PURGE</div>
+            <div class="text-[7px] font-display font-black text-clinical-danger transition-opacity tracking-widest px-2">清除单元</div>
           </div>
           
           <div v-if="characterInDeck.length === 0" class="py-8 text-center bg-white/[0.02] border border-dashed border-white/5">

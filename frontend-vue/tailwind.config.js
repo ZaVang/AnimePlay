@@ -16,10 +16,10 @@ module.exports = {
         industrial: {
           900: '#0B0D11',
           800: '#13161C',
-          700: '#22252A',
-          600: '#3A3D43',
-          500: '#4F545C',
-          400: '#6F737D',
+          700: '#3F434A', // Brighter (was #22252A)
+          600: '#5A5E66', // Brighter (was #3A3D43)
+          500: '#757A82', // Brighter (was #4F545C)
+          400: '#8E929B', // Slightly brighter
           300: '#A1A5B1',
           200: '#C0C4CC',
           100: '#F4F4F4',

@@ -1,0 +1,182 @@
+
+D:\work\AnimePlay\frontend-vue\src\components\AddToQueueModal.vue
+  16:7  error  'props' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\AnimeCard.vue
+  23:7  error  'playerStore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\CardDetailModal.vue
+   2:20  error  'ref' is defined but never used           @typescript-eslint/no-unused-vars
+  34:39  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\work\AnimePlay\frontend-vue\src\components\CollectionPreview.vue
+  8:10  error  'RouterLink' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\GachaResultModal.vue
+  11:7  error  'props' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\WatchQueue.vue
+  2:39  error  'computed' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\battle\BattleSpeechBubble.vue
+  2:32  error  'nextTick' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\battle\HandDisplay.vue
+  2:25  error  'nextTick' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\battle\SquadCard.vue
+  23:20  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\work\AnimePlay\frontend-vue\src\components\battle\arena\BattleCalculationDisplay.vue
+   8:15  error  'AnimeCard' is defined but never used     @typescript-eslint/no-unused-vars
+  48:23  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  50:22  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\work\AnimePlay\frontend-vue\src\components\battle\ui\BattleRulesModal.vue
+  9:7  error  'props' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\battle\ui\CardStrengthPreview.vue
+  12:7   error  'gameStore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  82:24  error  'index' is defined but never used               vue/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\battle\ui\DeckSelector.vue
+  11:8  error  'GlassPanel' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\debug\BattleDebugPanel.vue
+   29:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   51:12  error  'error' is defined but never used         @typescript-eslint/no-unused-vars
+   87:16  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  104:16  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\work\AnimePlay\frontend-vue\src\components\debug\PerformanceMonitor.vue
+  125:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  144:36  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\work\AnimePlay\frontend-vue\src\components\decks\DeckCollectionPanel.vue
+  11:8  error  'TacticalButton' is defined but never used  @typescript-eslint/no-unused-vars
+  13:7  error  'props' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\decks\DeckEditor.vue
+  13:7   error  'props' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  28:3   error  'stopEditing' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  48:15  error  Unexpected any. Specify a different type          @typescript-eslint/no-explicit-any
+
+D:\work\AnimePlay\frontend-vue\src\components\decks\DeckList.vue
+   6:8   error  'GlassPanel' is defined but never used     @typescript-eslint/no-unused-vars
+  12:30  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  22:7   error  'emit' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\decks\DeckManager.vue
+   2:10  error  'ref' is defined but never used                         @typescript-eslint/no-unused-vars
+   7:6   error  'Mode' is defined but never used                        @typescript-eslint/no-unused-vars
+  12:3   error  'currentDeck' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  13:3   error  'animeIdInDeck' is assigned a value but never used      @typescript-eslint/no-unused-vars
+  14:3   error  'characterIdInDeck' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  15:3   error  'addToDeck' is assigned a value but never used          @typescript-eslint/no-unused-vars
+  16:3   error  'removeFromDeck' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  17:3   error  'saveDeck' is assigned a value but never used           @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\gacha\GachaHistory.vue
+  77:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\work\AnimePlay\frontend-vue\src\components\gacha\GachaRatesModal.vue
+  34:54   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  34:102  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\work\AnimePlay\frontend-vue\src\components\gacha\GachaShop.vue
+    8:10  error  'GAME_CONFIG' is defined but never used             @typescript-eslint/no-unused-vars
+   15:8   error  'GlassPanel' is defined but never used              @typescript-eslint/no-unused-vars
+   39:12  error  'error' is defined but never used                   @typescript-eslint/no-unused-vars
+   69:10  error  'getMaxPurchaseQuantity' is defined but never used  @typescript-eslint/no-unused-vars
+  100:14  error  'error' is defined but never used                   @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\gacha\UpBanner.vue
+  15:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  31:12  error  'error' is defined but never used         @typescript-eslint/no-unused-vars
+  74:26  error  'index' is defined but never used         vue/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\nurture\CharacterProfile.vue
+  5:20  error  'ref' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\nurture\CharacterSelector.vue
+  46:58  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\work\AnimePlay\frontend-vue\src\components\nurture\DialogueSystem.vue
+  72:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\work\AnimePlay\frontend-vue\src\components\nurture\InteractionPanel.vue
+  12:7  error  'props' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\nurture\NurtureActions.vue
+  9:7  error  'props' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\nurture\actions\BattleTraining.vue
+  64:47  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  64:66  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\work\AnimePlay\frontend-vue\src\components\nurture\actions\ResourceDisplay.vue
+  9:7  error  'props' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\nurture\interactions\ActivitySystem.vue
+  26:37  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\work\AnimePlay\frontend-vue\src\components\nurture\interactions\CampusActivities.vue
+  26:43  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\work\AnimePlay\frontend-vue\src\components\nurture\interactions\CharacterStatus.vue
+  5:7  error  'props' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\nurture\interactions\DeepInteractions.vue
+  6:10  error  'ref' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\components\nurture\interactions\GiftSystem.vue
+   5:10  error  'ref' is defined but never used           @typescript-eslint/no-unused-vars
+  27:31  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\work\AnimePlay\frontend-vue\src\components\ui\GlassPanel.vue
+  8:7  error  'props' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\themes\topicBiasBar\Cyber.vue
+  1:1  error  Component name "Cyber" should always be multi-word  vue/multi-word-component-names
+
+D:\work\AnimePlay\frontend-vue\src\themes\topicBiasBar\Elegant.vue
+  1:1  error  Component name "Elegant" should always be multi-word  vue/multi-word-component-names
+
+D:\work\AnimePlay\frontend-vue\src\themes\topicBiasBar\Gradient.vue
+  1:1  error  Component name "Gradient" should always be multi-word  vue/multi-word-component-names
+
+D:\work\AnimePlay\frontend-vue\src\views\BattleReplayView.vue
+   2:15  error  'computed' is defined but never used              @typescript-eslint/no-unused-vars
+   5:8   error  'GlassPanel' is defined but never used            @typescript-eslint/no-unused-vars
+  26:7   error  'currentStep' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\views\CollectionsView.vue
+  18:8  error  'VirtualGrid' is defined but never used                         @typescript-eslint/no-unused-vars
+  25:7  error  'economyStore' is assigned a value but never used               @typescript-eslint/no-unused-vars
+  26:7  error  'gameDataStore' is assigned a value but never used              @typescript-eslint/no-unused-vars
+  28:7  error  'nurtureStore' is assigned a value but never used               @typescript-eslint/no-unused-vars
+  44:7  error  'VIRTUAL_GRID_CONFIG' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  68:7  error  'shouldVirtualizeAnime' is assigned a value but never used      @typescript-eslint/no-unused-vars
+  69:7  error  'shouldVirtualizeCharacter' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\views\GachaView.vue
+  52:14  error  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\views\HomeView.vue
+  2:10  error  'ref' is defined but never used                    @typescript-eslint/no-unused-vars
+  2:15  error  'onMounted' is defined but never used              @typescript-eslint/no-unused-vars
+  9:7   error  'nurtureStore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\views\SettingsModal.vue
+  13:8  error  'TacticalButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\work\AnimePlay\frontend-vue\src\views\SkillTestView.vue
+  13:7   error  'gameStore' is assigned a value but never used      @typescript-eslint/no-unused-vars
+  18:7   error  'activeEffects' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  18:27  error  Unexpected any. Specify a different type            @typescript-eslint/no-explicit-any
+
+D:\work\AnimePlay\frontend-vue\src\views\SquadBattleView.vue
+  21:7   error  'gameDataStore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  27:28  error  Unexpected any. Specify a different type            @typescript-eslint/no-explicit-any
+
+✖ 88 problems (88 errors, 0 warnings)

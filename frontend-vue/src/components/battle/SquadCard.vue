@@ -46,11 +46,11 @@ const canStartBattle = computed(() => {
 });
 
 const buttonText = computed(() => {
-  if (memberCount.value === 0) return 'EQUIP_REQUIRED';
-  if (memberCount.value < 4) return `INCOMPLETE_[${memberCount.value}/4]`;
-  if (props.hasCompletedFloor) return 'SECTOR_CLEARED';
-  if (!props.towerEnemyData) return 'AWAIT_INTEL';
-  return 'DEPLOY_UNIT';
+  if (memberCount.value === 0) return '需要整备';
+  if (memberCount.value < 4) return `尚未就绪_[${memberCount.value}/4]`;
+  if (props.hasCompletedFloor) return '区域已清扫';
+  if (!props.towerEnemyData) return '等待情报';
+  return '立即部署';
 });
 
 function handleNameUpdate(event: Event) {
@@ -89,17 +89,17 @@ function getCharacterName(characterId: number | null): string {
     <!-- Header Section -->
     <div class="flex items-end justify-between mb-8 p-1">
       <div class="flex-1 mr-4">
-        <div class="text-[7px] font-display font-black text-industrial-500 uppercase tracking-widest mb-1">Squad_Identity</div>
+        <div class="text-[7px] font-display font-black text-industrial-300 uppercase tracking-widest mb-1">小队标识符</div>
         <input
           :value="squad.name"
           @change="handleNameUpdate"
-          class="w-full bg-transparent border-b border-white/5 text-white font-display font-black text-sm p-1 focus:border-gold/60 outline-none tracking-tighter uppercase transition-all"
+          class="w-full bg-transparent border-b border-white/10 text-white font-display font-black text-sm p-1 focus:border-gold/60 outline-none tracking-tighter uppercase transition-all"
           maxlength="20"
-          placeholder="UNNAMED_UNIT"
+          placeholder="未命名单元"
         >
       </div>
       <div class="text-right">
-        <div class="text-[7px] font-display font-black text-industrial-500 uppercase tracking-widest mb-1">Loadout</div>
+        <div class="text-[7px] font-display font-black text-industrial-300 uppercase tracking-widest mb-1">装载进度</div>
         <div class="text-lg font-mono font-bold text-white tabular-nums opacity-60">
           [{{ memberCount }}/4]
         </div>
@@ -144,8 +144,8 @@ function getCharacterName(characterId: number | null): string {
     <!-- Tactical Metrics -->
     <div class="flex justify-between items-center mb-8 px-2 py-4 bg-white/[0.01] border-y border-white/5">
       <div class="space-y-1">
-        <span class="text-[8px] font-display font-black text-industrial-500 uppercase tracking-widest block leading-none">Power_Intensity</span>
-        <span class="text-[7px] font-mono text-industrial-700 uppercase leading-none">Verified_Rating</span>
+        <span class="text-[8px] font-display font-black text-industrial-300 uppercase tracking-widest block leading-none">综合战力强度</span>
+        <span class="text-[7px] font-mono text-industrial-500 uppercase leading-none">身份验证评级</span>
       </div>
       <div class="text-2xl font-display font-black text-gold tabular-nums transition-transform group-hover:scale-105 duration-500">
         {{ squadPower.toLocaleString() }}

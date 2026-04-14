@@ -37,6 +37,22 @@ export const useCollectionStore = defineStore('collection', () => {
     type === 'anime' ? favoriteAnime.value.has(id) : favoriteCharacters.value.has(id)
   );
 
+  const ownedAnimeCards = computed(() => {
+    const gameDataStore = useGameDataStore();
+    return Array.from(animeCollection.value.entries()).map(([id, data]) => {
+      const card = gameDataStore.getAnimeCardById(id);
+      return card ? { ...card, count: data.count } : null;
+    }).filter((c): c is any => c !== null);
+  });
+
+  const ownedCharacterCards = computed(() => {
+    const gameDataStore = useGameDataStore();
+    return Array.from(characterCollection.value.entries()).map(([id, data]) => {
+      const card = gameDataStore.getCharacterCardById(id);
+      return card ? { ...card, count: data.count } : null;
+    }).filter((c): c is any => c !== null);
+  });
+
   // --- ACTIONS ---
   function resetState() {
     animeCollection.value.clear();
@@ -203,6 +219,8 @@ export const useCollectionStore = defineStore('collection', () => {
     characterGachaHistory,
     animePityState,
     characterPityState,
+    ownedAnimeCards,
+    ownedCharacterCards,
     getAnimeCardCount,
     getCharacterCardCount,
     isFavorite,

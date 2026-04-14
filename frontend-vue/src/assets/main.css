@@ -46,9 +46,30 @@
   }
   /* -------------------------------------------------------------------------- */
 
-  /* 移除过时的工业风装饰 */
+  /* --- Tactical Textures --- */
+  .bg-grid {
+    background-image: 
+      linear-gradient(to right, rgba(212, 165, 116, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(212, 165, 116, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    will-change: transform, opacity;
+  }
+
   .bg-scanline {
-    display: none;
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    background: linear-gradient(
+      to bottom,
+      transparent 50%,
+      rgba(212, 165, 116, 0.02) 50%
+    );
+    background-size: 100% 4px;
+    animation: scanline 10s linear infinite;
+    pointer-events: none;
+    will-change: transform;
+    opacity: 0.15;
   }
 }
 

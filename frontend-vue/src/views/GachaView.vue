@@ -68,17 +68,17 @@ function closeRatesModal() { isRatesModalOpen.value = false; }
       <!-- Header / Type Selection -->
       <template #header>
         <div class="px-6 pt-6 pb-4 border-b border-white/5">
-          <h2 class="text-[10px] font-display font-bold text-center mb-8 tracking-[0.5em] text-gold uppercase opacity-70">Manifestation Protocol</h2>
+          <h2 class="text-[10px] font-display font-bold text-center mb-8 tracking-[0.5em] text-gold uppercase opacity-70">具现协议</h2>
           <div class="flex justify-center gap-4">
             <button 
               v-for="type in (['anime', 'character'] as const)" 
               :key="type"
               @click="activeGachaType = type"
-              class="relative overflow-hidden group py-2 px-12 font-display text-[10px] tracking-[0.2em] uppercase border transition-all duration-500"
-              :class="activeGachaType === type ? 'border-gold text-gold bg-gold/5' : 'border-white/10 text-industrial-500 hover:border-gold/30'"
+              class="relative overflow-hidden group py-3 px-14 font-display text-xs font-black tracking-[0.2em] uppercase border transition-all duration-500"
+              :class="activeGachaType === type ? 'border-gold text-gold bg-gold/5' : 'border-white/10 text-industrial-100 opacity-60 hover:opacity-100 hover:border-gold/30'"
             >
               <div v-if="activeGachaType === type" class="absolute inset-x-0 bottom-0 h-0.5 bg-gold shadow-[0_0_8px_#D4A574]"></div>
-              {{ type === 'anime' ? 'Anime Core' : 'Personnel' }}
+              {{ type === 'anime' ? '动漫核心' : '人员单元' }}
             </button>
           </div>
         </div>
@@ -89,12 +89,12 @@ function closeRatesModal() { isRatesModalOpen.value = false; }
         <button 
           v-for="tab in (['pool', 'shop', 'history'] as const)" 
           :key="tab"
-          @click="activeTab = tab"
-          class="py-4 text-[9px] font-display font-bold tracking-[0.3em] uppercase transition-all relative"
-          :class="activeTab === tab ? 'text-white' : 'text-industrial-500 hover:text-white/60'"
+          @click="activeTab = tab" 
+          class="py-5 text-xs font-display font-black tracking-[0.3em] uppercase transition-all relative"
+          :class="activeTab === tab ? 'text-white' : 'text-industrial-300 hover:text-white/60'"
         >
-          <div v-if="activeTab === tab" class="absolute inset-x-0 bottom-0 h-0.5 bg-gold"></div>
-          {{ tab === 'pool' ? 'Neural Pool' : tab === 'shop' ? 'Energy Exchange' : 'Archives' }}
+          <div v-if="activeTab === tab" class="absolute inset-x-0 bottom-0 h-1 bg-gold shadow-[0_0_8px_#D4A574]"></div>
+          {{ tab === 'pool' ? '神经网络' : tab === 'shop' ? '原质交换' : '具现档案' }}
         </button>
       </nav>
 
@@ -114,12 +114,13 @@ function closeRatesModal() { isRatesModalOpen.value = false; }
           <div class="space-y-12">
              <div class="flex justify-between items-end border-l border-white/10 pl-6 h-12">
                 <div class="space-y-1">
-                  <h3 class="text-xs font-display font-black text-white uppercase tracking-widest">{{ activeGachaType === 'anime' ? 'Core Synthesis' : 'Personnel Acquisition' }}</h3>
-                  <p class="text-[8px] text-industrial-600 uppercase tracking-tighter">Authorized by Abyss Intelligence Agency // Encryption Active</p>
+                  <h2 class="text-[10px] font-display font-bold text-gold tracking-[0.6em] uppercase opacity-70">具现终端</h2>
+                  <h1 class="text-5xl font-display font-black tracking-tighter uppercase text-white leading-none">身份链路</h1>
+                  <div class="text-[8px] font-mono text-industrial-300 uppercase tracking-widest mt-2">坐标: TOKYO_DISTRICT_09 // 模式: 资产具现</div>
                 </div>
                 <div class="flex items-center gap-4">
-                  <div class="text-[8px] font-display text-industrial-500 uppercase">Available Tickets</div>
-                  <div class="bg-white/5 px-4 py-1 text-xs font-mono font-bold text-gold border border-white/5">
+                  <div class="text-[10px] font-display text-gold/80 uppercase font-bold tracking-widest">持有凭证</div>
+                  <div class="bg-black/60 px-6 py-2 text-base font-mono font-bold text-gold border border-gold/20 shadow-[0_0_10px_rgba(212,165,116,0.1)]">
                     {{ activeGachaType === 'anime' ? economyStore.animeGachaTickets : economyStore.characterGachaTickets }}
                   </div>
                 </div>
@@ -127,29 +128,29 @@ function closeRatesModal() { isRatesModalOpen.value = false; }
 
              <div class="flex justify-center gap-8 py-4">
                 <TacticalButton 
-                  variant="secondary" 
-                  size="md" 
-                  class="min-w-[200px]" 
-                  :disabled="isDrawing || (activeGachaType === 'anime' ? economyStore.animeGachaTickets < 1 : economyStore.characterGachaTickets < 1)"
+                  variant="primary" 
+                  size="lg" 
+                  class="flex-1 py-6"
+                  :disabled="isDrawing"
                   @click="handleDraw(1)"
                 >
-                  {{ isDrawing ? 'PROCESSING...' : 'SINGLE_MANIFEST' }}
+                  {{ isDrawing ? '身份链路构建中...' : '单次资产具现' }}
                 </TacticalButton>
-
+                
                 <TacticalButton 
-                  variant="primary" 
-                  size="md" 
-                  class="min-w-[200px]" 
-                  :disabled="isDrawing || (activeGachaType === 'anime' ? economyStore.animeGachaTickets < 10 : economyStore.characterGachaTickets < 10)"
+                  variant="secondary" 
+                  size="lg" 
+                  class="flex-1 py-6"
+                  :disabled="isDrawing"
                   @click="handleDraw(10)"
                 >
-                  {{ isDrawing ? 'LINKING...' : 'DECUPL_MANIFEST' }}
+                  {{ isDrawing ? '同步链路连接中...' : '十连资产具现' }}
                 </TacticalButton>
              </div>
 
              <div class="text-center">
-                <button @click="openRatesModal" class="text-[9px] font-display font-bold text-industrial-500 hover:text-gold uppercase tracking-[0.3em] transition-all border-b border-transparent hover:border-gold pb-1">
-                  View Manifestation Probability
+                <button @click="openRatesModal" class="text-[10px] font-display font-black text-industrial-100 hover:text-gold uppercase tracking-[0.3em] transition-all border-b border-transparent hover:border-gold pb-1 opacity-60 hover:opacity-100">
+                  查看具现概率详情
                 </button>
              </div>
           </div>

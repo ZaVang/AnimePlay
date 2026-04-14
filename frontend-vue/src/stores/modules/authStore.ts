@@ -126,8 +126,8 @@ export const useAuthStore = defineStore('auth', () => {
   }
 
   async function login(username: string) {
-    if (!username || !username.match(/^[a-zA-Z0-9]+$/)) {
-      alert('用户名只能包含字母和数字。');
+    if (!username || !username.match(/^[a-zA-Z0-9_-]+$/)) {
+      alert('用户名只能包含字母、数字、连字符和下划线。');
       return;
     }
     

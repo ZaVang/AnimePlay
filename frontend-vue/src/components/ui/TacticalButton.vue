@@ -59,8 +59,8 @@ function handleHover() {
       { 'fx-surge-active': isSurging },
       // Variant styles
       variant === 'primary' ? 'border-gold text-gold hover:text-black' : '',
-      variant === 'secondary' ? 'border-white/10 text-industrial-300 hover:border-gold/50 hover:text-gold' : '',
-      variant === 'danger' ? 'border-clinical-danger/40 text-clinical-danger hover:bg-clinical-danger hover:text-white' : '',
+      variant === 'secondary' ? 'border-white/20 text-industrial-200 hover:border-gold/50 hover:text-gold' : '',
+      variant === 'danger' ? 'border-clinical-danger/50 text-clinical-danger hover:bg-clinical-danger hover:text-white' : '',
       // Size styles
       size === 'xs' ? 'py-1 px-2 text-[7px]' : '',
       size === 'sm' ? 'py-1.5 px-4 text-[9px]' : '',
