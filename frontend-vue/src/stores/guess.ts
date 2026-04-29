@@ -8,16 +8,15 @@ import type { CharacterCard, Rarity } from '@/types/card';
 export interface GameStage {
   level: number;           // 阶段等级 (1-4)
   pixelSize: number;       // 像素化大小 (8, 16, 32, 原始)
-  displayRatio: number;    // 显示区域比例 (0.3, 0.5, 0.8, 1.0)
   label: string;           // 阶段标签
-  hint: string;           // 提示文字
+  description: string;     // 描述
 }
 
 export const GAME_STAGES: GameStage[] = [
-  { level: 1, pixelSize: 8, displayRatio: 0.3, label: 'Level 1', hint: '只能看到眼睛部分哦~' },
-  { level: 2, pixelSize: 16, displayRatio: 0.45, label: 'Level 2', hint: '能看到更多细节了！' },
-  { level: 3, pixelSize: 32, displayRatio: 0.65, label: 'Level 3', hint: '快要看到全貌了！' },
-  { level: 4, pixelSize: 0, displayRatio: 1.0, label: 'Final', hint: '全图展示，必须答对！' },
+  { level: 1, pixelSize: 8, label: '极难', description: '8×8 像素' },
+  { level: 2, pixelSize: 16, label: '困难', description: '16×16 像素' },
+  { level: 3, pixelSize: 32, label: '中等', description: '32×32 像素' },
+  { level: 4, pixelSize: 0, label: '简单', description: '原图' },
 ];
 
 // 稀有度权重配置
@@ -78,220 +77,200 @@ export const useGuessStore = defineStore('guess', () => {
   const gameDataStore = useGameDataStore();
 
   // 游戏状态
-  const currentCharacter = ref<CharacterCard | null>(null);
-  const currentStage = ref(1);
-  const attempts = ref(0);
   const isGameActive = ref(false);
   const isGameOver = ref(false);
-  const lastGuess = ref('');
-  const showResult = ref(false);
   const isCorrect = ref(false);
+  const showResult = ref(false);
+  const currentStage = ref(1);
+  const attempts = ref(0);
+  const currentScore = ref(0);
+  const highScore = ref(0);
   const imageLoaded = ref(false);
   const imageError = ref(false);
+  const isDataLoading = ref(false);
 
-  // 历史记录
+  // 当前角色
+  const currentCharacter = ref<CharacterCard | null>(null);
+
+  // 游戏记录
   const gameRecords = ref<GameRecord[]>([]);
-  const highScore = ref(0);
-
-  // 计算当前阶段信息
-  const currentStageInfo = computed((): GameStage => {
-    return GAME_STAGES[currentStage.value - 1] || GAME_STAGES[0];
-  });
-
-  // 计算得分
-  const currentScore = computed(() => {
-    if (!currentCharacter.value) return 0;
-    const rarityConfig = RARITY_WEIGHTS[currentCharacter.value.rarity as Rarity] || RARITY_WEIGHTS['R'];
-    const attemptsMultiplier = Math.max(0.5, 1 - (attempts.value - 1) * 0.15);
-    return Math.round(rarityConfig.baseScore * attemptsMultiplier);
-  });
 
   // 剩余尝试次数
   const remainingAttempts = computed(() => {
-    return 4 - attempts.value;
+    return Math.max(0, 4 - attempts.value);
   });
 
-  // 初始化：从 localStorage 加载历史记录和高分
-  function loadHistory() {
-    try {
-      const savedRecords = localStorage.getItem('guess-game-records');
-      const savedHighScore = localStorage.getItem('guess-game-highscore');
-      if (savedRecords) {
-        gameRecords.value = JSON.parse(savedRecords);
-      }
-      if (savedHighScore) {
-        highScore.value = parseInt(savedHighScore, 10);
-      }
-    } catch (e) {
-      console.error('Failed to load guess game history:', e);
-    }
+  // 当前阶段信息
+  const currentStageInfo = computed(() => {
+    return GAME_STAGES[currentStage.value - 1] || GAME_STAGES[0];
+  });
+
+  // 获取角色图片 URL
+  function getCharacterImageUrl(): string {
+    if (!currentCharacter.value) return '';
+    // 使用本地图片路径（.jpg 格式）
+    return `/data/images/character/${currentCharacter.value.id}.jpg`;
   }
 
-  // 保存到 localStorage
-  function saveHistory() {
-    try {
-      localStorage.setItem('guess-game-records', JSON.stringify(gameRecords.value.slice(0, 50)));
-      localStorage.setItem('guess-game-highscore', highScore.value.toString());
-    } catch (e) {
-      console.error('Failed to save guess game history:', e);
-    }
+  // 获取原始图片 URL（备用）
+  function getOriginalImageUrl(): string {
+    if (!currentCharacter.value) return '';
+    return '';
   }
 
-  // 根据稀有度加权随机选择角色
+  // 根据稀有度随机选择角色
   function selectRandomCharacter(): CharacterCard | null {
-    const cards = gameDataStore.allCharacterCards;
-    if (cards.length === 0) return null;
+    const characters = gameDataStore.allCharacterCards;
+    console.log('selectRandomCharacter: characters count =', characters?.length);
+    if (!characters || characters.length === 0) return null;
 
     // 计算总权重
-    const totalWeight = cards.reduce((sum, card) => {
-      const rarityConfig = RARITY_WEIGHTS[card.rarity as Rarity] || RARITY_WEIGHTS['R'];
-      return sum + rarityConfig.weight;
-    }, 0);
+    let totalWeight = 0;
+    const weightedCharacters: { character: CharacterCard; weight: number }[] = [];
 
-    // 加权随机选择
-    let random = Math.random() * totalWeight;
-    for (const card of cards) {
-      const rarityConfig = RARITY_WEIGHTS[card.rarity as Rarity] || RARITY_WEIGHTS['R'];
-      random -= rarityConfig.weight;
-      if (random <= 0) {
-        return card;
+    for (const char of characters) {
+      const rarityConfig = RARITY_WEIGHTS[char.rarity as Rarity];
+      if (rarityConfig) {
+        totalWeight += rarityConfig.weight;
+        weightedCharacters.push({ character: char, weight: rarityConfig.weight });
       }
     }
 
-    // Fallback
-    return cards[Math.floor(Math.random() * cards.length)];
+    // 随机选择
+    const random = Math.random() * totalWeight;
+    let cumulative = 0;
+
+    for (const item of weightedCharacters) {
+      cumulative += item.weight;
+      if (random <= cumulative) {
+        return item.character;
+      }
+    }
+
+    // 默认返回第一个
+    return characters[0];
+  }
+
+  // 计算得分
+  function calculateScore(): number {
+    if (!currentCharacter.value) return 0;
+
+    const rarityConfig = RARITY_WEIGHTS[currentCharacter.value.rarity as Rarity];
+    const baseScore = rarityConfig?.baseScore || 10;
+
+    // 根据尝试次数计算倍率
+    const attemptMultiplier = Math.max(0.25, 1 - (attempts.value - 1) * 0.25);
+
+    return Math.round(baseScore * attemptMultiplier);
   }
 
   // 开始新游戏
-  function startNewGame() {
+  async function startNewGame() {
+    // 确保数据已加载
+    if (gameDataStore.allCharacterCards.length === 0 && !gameDataStore.isLoading) {
+      isDataLoading.value = true;
+      await gameDataStore.fetchGameData();
+      isDataLoading.value = false;
+    }
+
     currentCharacter.value = selectRandomCharacter();
-    currentStage.value = 1;
-    attempts.value = 0;
+    console.log('startNewGame: selected character =', currentCharacter.value?.name);
     isGameActive.value = true;
     isGameOver.value = false;
-    lastGuess.value = '';
-    showResult.value = false;
     isCorrect.value = false;
+    showResult.value = false;
+    currentStage.value = 1;
+    attempts.value = 0;
+    currentScore.value = 0;
     imageLoaded.value = false;
     imageError.value = false;
   }
 
-  // 猜测角色名
+  // 猜测角色
   function guessCharacter(guess: string): { correct: boolean; message: string } {
-    if (!currentCharacter.value || !isGameActive.value) {
+    if (!currentCharacter.value) {
       return { correct: false, message: '游戏未开始' };
     }
 
-    lastGuess.value = guess;
     attempts.value++;
 
-    const characterName = currentCharacter.value.name;
-    const characterOriginalName = (currentCharacter.value as any).original_name || '';
+    // 检查猜测是否正确
+    const isMatch = fuzzyMatch(guess, currentCharacter.value.name) ||
+      fuzzyMatch(guess, currentCharacter.value.original_name || '');
 
-    // 模糊匹配
-    if (fuzzyMatch(guess, characterName) || fuzzyMatch(guess, characterOriginalName)) {
+    if (isMatch) {
       isCorrect.value = true;
       isGameOver.value = true;
       showResult.value = true;
+      currentScore.value = calculateScore();
 
-      // 计算并保存分数
-      const score = currentScore.value;
-      if (score > highScore.value) {
-        highScore.value = score;
+      // 更新最高分
+      if (currentScore.value > highScore.value) {
+        highScore.value = currentScore.value;
       }
 
-      // 记录游戏
-      const record: GameRecord = {
-        id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+      // 添加游戏记录
+      gameRecords.value.unshift({
+        id: Date.now().toString(),
         characterId: currentCharacter.value.id,
-        characterName: characterName,
+        characterName: currentCharacter.value.name,
         rarity: currentCharacter.value.rarity as Rarity,
         attempts: attempts.value,
-        score: score,
+        score: currentScore.value,
         timestamp: Date.now(),
-      };
-      gameRecords.value.unshift(record);
-      if (gameRecords.value.length > 50) {
-        gameRecords.value = gameRecords.value.slice(0, 50);
-      }
-      saveHistory();
+      });
 
-      return { correct: true, message: `正确！+${score}分` };
+      return { correct: true, message: `猜对了！获得 ${currentScore.value} 分！` };
     }
 
     // 猜错，进入下一阶段
-    if (currentStage.value < 4) {
+    if (currentStage.value < GAME_STAGES.length) {
       currentStage.value++;
-      return { correct: false, message: currentStageInfo.value.hint };
-    } else {
-      // 第四阶段仍未答对，游戏结束
-      isCorrect.value = false;
-      isGameOver.value = true;
-      showResult.value = true;
-
-      // 记录游戏（得分为0）
-      const record: GameRecord = {
-        id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
-        characterId: currentCharacter.value.id,
-        characterName: characterName,
-        rarity: currentCharacter.value.rarity as Rarity,
-        attempts: attempts.value,
-        score: 0,
-        timestamp: Date.now(),
-      };
-      gameRecords.value.unshift(record);
-      saveHistory();
-
-      return { correct: false, message: `正确答案是：${characterName}` };
+      return { correct: false, message: '猜错了，图片变得更清晰了...' };
     }
-  }
 
-  // 获取角色图片URL
-  function getCharacterImageUrl(): string {
-    if (!currentCharacter.value) return '';
-    return `/data/images/character/${currentCharacter.value.id}.jpg`;
-  }
+    // 最后一次机会也猜错
+    isGameOver.value = true;
+    showResult.value = true;
 
-  // 获取原始图片URL（用于回退）
-  function getOriginalImageUrl(): string {
-    if (!currentCharacter.value) return '';
-    return currentCharacter.value.image_path || '';
-  }
+    // 添加失败记录
+    gameRecords.value.unshift({
+      id: Date.now().toString(),
+      characterId: currentCharacter.value.id,
+      characterName: currentCharacter.value.name,
+      rarity: currentCharacter.value.rarity as Rarity,
+      attempts: attempts.value,
+      score: 0,
+      timestamp: Date.now(),
+    });
 
-  // 清除历史记录
-  function clearHistory() {
-    gameRecords.value = [];
-    highScore.value = 0;
-    saveHistory();
+    return { correct: false, message: `游戏结束！正确答案是：${currentCharacter.value.name}` };
   }
-
-  // 初始化加载历史
-  loadHistory();
 
   return {
     // 状态
-    currentCharacter,
-    currentStage,
-    attempts,
     isGameActive,
     isGameOver,
-    lastGuess,
-    showResult,
     isCorrect,
+    showResult,
+    currentStage,
+    attempts,
+    currentScore,
+    highScore,
     imageLoaded,
     imageError,
+    isDataLoading,
+    currentCharacter,
     gameRecords,
-    highScore,
+
     // 计算属性
-    currentStageInfo,
-    currentScore,
     remainingAttempts,
+    currentStageInfo,
+
     // 方法
-    startNewGame,
-    guessCharacter,
     getCharacterImageUrl,
     getOriginalImageUrl,
-    clearHistory,
-    GAME_STAGES,
+    startNewGame,
+    guessCharacter,
   };
 });

@@ -23,53 +23,37 @@ const rarityColors: Record<string, string> = {
   'UR': '#EF4444',
 };
 
-// 获取稀有度配置
-const rarityConfig = computed(() => {
-  if (!guessStore.currentCharacter) return null;
-  return GAME_CONFIG.characterSystem.rarityConfig[guessStore.currentCharacter.rarity] || null;
-});
-
 // 加载图片
 function loadImage() {
-  if (!guessStore.currentCharacter) return;
+  if (!guessStore.currentCharacter) {
+    console.log('loadImage: no currentCharacter');
+    return;
+  }
+  
+  const url = guessStore.getCharacterImageUrl();
+  console.log('loadImage: url =', url);
   
   const img = new Image();
   img.crossOrigin = 'anonymous';
   
   img.onload = () => {
+    console.log('loadImage: loaded successfully');
     originalImage.value = img;
     guessStore.imageLoaded = true;
     guessStore.imageError = false;
     processImage();
   };
   
-  img.onerror = () => {
-    // 尝试备用URL
-    const backupUrl = guessStore.getOriginalImageUrl();
-    if (backupUrl) {
-      const backupImg = new Image();
-      backupImg.crossOrigin = 'anonymous';
-      backupImg.onload = () => {
-        originalImage.value = backupImg;
-        guessStore.imageLoaded = true;
-        guessStore.imageError = false;
-        processImage();
-      };
-      backupImg.onerror = () => {
-        guessStore.imageError = true;
-        guessStore.imageLoaded = false;
-      };
-      backupImg.src = backupUrl;
-    } else {
-      guessStore.imageError = true;
-      guessStore.imageLoaded = false;
-    }
+  img.onerror = (e) => {
+    console.error('loadImage: error', e);
+    guessStore.imageError = true;
+    guessStore.imageLoaded = false;
   };
   
-  img.src = guessStore.getCharacterImageUrl();
+  img.src = url;
 }
 
-// 处理图片：像素化和局部显示
+// 处理图片：像素化（始终显示全身图）
 function processImage() {
   if (!canvasRef.value || !originalImage.value) return;
   
@@ -80,41 +64,28 @@ function processImage() {
   const stage = guessStore.currentStageInfo;
   const img = originalImage.value;
   
-  // 设置画布大小
+  // 设置画布大小（根据图片比例）
   const maxSize = 320;
-  canvas.width = maxSize;
-  canvas.height = maxSize;
+  const scale = Math.min(maxSize / img.width, maxSize / img.height);
+  const drawWidth = Math.round(img.width * scale);
+  const drawHeight = Math.round(img.height * scale);
+  
+  canvas.width = drawWidth;
+  canvas.height = drawHeight;
   
   // 清除画布
-  ctx.clearRect(0, 0, maxSize, maxSize);
+  ctx.clearRect(0, 0, drawWidth, drawHeight);
   
-  // 如果是最后一阶段，显示原图
-  if (stage.level === 4) {
-    // 等比缩放图片到最大尺寸
-    const scale = Math.min(maxSize / img.width, maxSize / img.height);
-    const drawWidth = img.width * scale;
-    const drawHeight = img.height * scale;
-    const offsetX = (maxSize - drawWidth) / 2;
-    const offsetY = (maxSize - drawHeight) / 2;
-    
-    ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
+  // 如果是最后一阶段或 pixelSize 为 0，显示原图
+  if (stage.pixelSize === 0) {
+    ctx.drawImage(img, 0, 0, drawWidth, drawHeight);
     return;
   }
   
-  // 计算显示区域
-  const imgCenterX = img.width / 2;
-  const imgCenterY = img.height * 0.4; // 稍微偏上（眼睛区域）
-  const displayRatio = stage.displayRatio;
-  
-  // 临时画布用于像素化
+  // 像素化处理
   const tempCanvas = document.createElement('canvas');
   const tempCtx = tempCanvas.getContext('2d');
   if (!tempCtx) return;
-  
-  // 计算源区域（从图片中心裁剪）
-  const sourceSize = Math.min(img.width, img.height) * displayRatio;
-  const sourceX = imgCenterX - sourceSize / 2;
-  const sourceY = imgCenterY - sourceSize / 2;
   
   // 设置临时画布大小为目标像素化大小
   tempCanvas.width = stage.pixelSize;
@@ -124,27 +95,15 @@ function processImage() {
   tempCtx.imageSmoothingEnabled = false;
   
   // 绘制缩小后的图片
-  tempCtx.drawImage(
-    img,
-    sourceX, sourceY, sourceSize, sourceSize,
-    0, 0, stage.pixelSize, stage.pixelSize
-  );
+  tempCtx.drawImage(img, 0, 0, stage.pixelSize, stage.pixelSize);
   
   // 启用平滑并绘制放大后的图片
-  ctx.imageSmoothingEnabled = true;
-  ctx.imageSmoothingQuality = 'high';
+  ctx.imageSmoothingEnabled = false; // 保持像素化效果
   ctx.drawImage(
     tempCanvas,
     0, 0, stage.pixelSize, stage.pixelSize,
-    0, 0, maxSize, maxSize
+    0, 0, drawWidth, drawHeight
   );
-  
-  // 添加圆形遮罩（使边缘更柔和）
-  ctx.globalCompositeOperation = 'destination-in';
-  ctx.beginPath();
-  ctx.arc(maxSize / 2, maxSize / 2, maxSize / 2 - 5, 0, Math.PI * 2);
-  ctx.fill();
-  ctx.globalCompositeOperation = 'source-over';
 }
 
 // 提交猜测
@@ -162,14 +121,12 @@ async function submitGuess() {
   
   if (result.correct) {
     showFeedback(result.message, 'success');
-    // 添加动画效果
     isAnimating.value = true;
     setTimeout(() => {
       isAnimating.value = false;
     }, 500);
   } else {
     showFeedback(result.message, 'error');
-    // 重新处理图片显示下一阶段
     setTimeout(() => {
       processImage();
     }, 100);
@@ -190,8 +147,8 @@ function showFeedback(message: string, type: 'success' | 'error' | 'info') {
 }
 
 // 开始新游戏
-function handleStartGame() {
-  guessStore.startNewGame();
+async function handleStartGame() {
+  await guessStore.startNewGame();
   guessInput.value = '';
   feedbackMessage.value = '';
   feedbackType.value = '';
@@ -212,7 +169,6 @@ watch(() => guessStore.currentCharacter, (newChar) => {
 });
 
 onMounted(() => {
-  // 初始加载
   if (guessStore.currentCharacter) {
     loadImage();
   }
@@ -236,29 +192,26 @@ function getFeedbackClass(type: FeedbackType): string {
   if (type === 'info') return 'bg-blue-100 text-blue-800';
   return '';
 }
-
-// 获取阶段指示器样式
-function getStageIndicatorStyle(index: number): Record<string, string> {
-  if (index < guessStore.currentStage - 1) {
-    return { backgroundColor: '#22c55e' }; // green-500
-  }
-  if (index === guessStore.currentStage - 1) {
-    return { '--tw-ring-color': 'var(--theme-accent)' } as Record<string, string>;
-  }
-  return { backgroundColor: '#d1d5db' }; // gray-300
-}
 </script>
 
 <template>
   <div class="guess-game">
+    <!-- 数据加载中 -->
+    <div v-if="guessStore.isDataLoading" class="text-center py-12">
+      <div class="animate-spin w-10 h-10 border-3 rounded-full mx-auto mb-4"
+        :style="{ borderColor: 'var(--theme-border)', borderTopColor: 'var(--theme-accent)' }"
+      ></div>
+      <p :style="{ color: 'var(--theme-text-secondary)' }">正在加载角色数据...</p>
+    </div>
+
     <!-- 游戏状态：未开始 -->
-    <div v-if="!guessStore.isGameActive" class="text-center py-12">
+    <div v-else-if="!guessStore.isGameActive" class="text-center py-12">
       <div class="text-6xl mb-4">🎭</div>
       <h2 class="text-2xl font-bold mb-4" :style="{ color: 'var(--theme-text-primary)' }">
         猜角色小游戏
       </h2>
       <p class="mb-6 text-sm" :style="{ color: 'var(--theme-text-secondary)' }">
-        根据越来越清晰的像素图片，猜出这是哪个动漫角色！<br/>
+        根据像素化的图片，猜出这是哪个动漫角色！<br/>
         稀有度越高的角色分值越高，但出现概率越低~
       </p>
       
@@ -283,7 +236,7 @@ function getStageIndicatorStyle(index: number): Record<string, string> {
     <div v-else class="game-container">
       <!-- 游戏头部信息 -->
       <div class="game-header mb-4 flex justify-between items-center">
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-3">
           <!-- 阶段指示器 -->
           <div class="flex gap-1">
             <div
@@ -296,9 +249,6 @@ function getStageIndicatorStyle(index: number): Record<string, string> {
               ]"
             ></div>
           </div>
-          <span class="text-sm font-medium" :style="{ color: 'var(--theme-text-secondary)' }">
-            {{ guessStore.currentStageInfo.label }}
-          </span>
         </div>
         
         <div class="flex items-center gap-4">
@@ -315,6 +265,18 @@ function getStageIndicatorStyle(index: number): Record<string, string> {
           >
             {{ guessStore.currentCharacter.rarity }}
           </div>
+        </div>
+      </div>
+
+      <!-- 当前阶段信息（模糊度） -->
+      <div class="stage-info mb-4 text-center p-3 rounded-lg" :style="{ backgroundColor: 'var(--theme-bg-card)' }">
+        <div class="flex items-center justify-center gap-2">
+          <span class="font-bold text-lg" :style="{ color: 'var(--theme-accent)' }">
+            {{ guessStore.currentStageInfo.label }}
+          </span>
+          <span class="text-sm" :style="{ color: 'var(--theme-text-muted)' }">
+            {{ guessStore.currentStageInfo.description }}
+          </span>
         </div>
       </div>
 
@@ -335,7 +297,7 @@ function getStageIndicatorStyle(index: number): Record<string, string> {
           <div
             v-if="!guessStore.imageLoaded && !guessStore.imageError"
             class="absolute inset-0 flex items-center justify-center rounded-lg"
-            :style="{ backgroundColor: 'var(--theme-bg-card)' }"
+            :style="{ backgroundColor: 'var(--theme-bg-card)', width: '320px', height: '320px' }"
           >
             <div class="text-center">
               <div class="animate-spin w-8 h-8 border-2 rounded-full mx-auto mb-2"
@@ -349,7 +311,7 @@ function getStageIndicatorStyle(index: number): Record<string, string> {
           <div
             v-if="guessStore.imageError"
             class="absolute inset-0 flex items-center justify-center rounded-lg"
-            :style="{ backgroundColor: 'var(--theme-bg-card)' }"
+            :style="{ backgroundColor: 'var(--theme-bg-card)', width: '320px', height: '320px' }"
           >
             <div class="text-center text-gray-400">
               <div class="text-4xl mb-2">🖼️</div>
