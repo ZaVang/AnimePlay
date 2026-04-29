@@ -13,7 +13,7 @@ const rarityColorMap: Record<Rarity, string> = {
   SSR: 'border-amber-500',
   SR: 'border-indigo-500',
   R: 'border-green-400',
-  N: 'border-gray-500',
+  N: 'border-warm-300',
 };
 
 const rarityClass = computed(() => rarityColorMap[props.character.rarity] || rarityColorMap.N);
@@ -24,7 +24,7 @@ const rarityClass = computed(() => rarityColorMap[props.character.rarity] || rar
     class="character-item relative w-24 h-36 rounded-lg overflow-hidden transition-all duration-300 transform"
     :class="{ 
       'border-4 shadow-xl scale-110 z-10': isActive, 
-      'border-2 border-gray-600 scale-90 opacity-70': !isActive,
+      'border-2 border-warm-300 scale-90 opacity-70': !isActive,
       [rarityClass]: true 
     }"
   >

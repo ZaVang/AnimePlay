@@ -16,7 +16,7 @@
         </div>
         <button 
           @click="close" 
-          class="text-2xl text-gray-500 hover:text-gray-800"
+          class="text-2xl text-gray-600 hover:text-gray-800"
         >
           &times;
         </button>
@@ -28,7 +28,7 @@
           <div
             v-for="(card, index) in cards"
             :key="`${card.id}-${index}`"
-            class="relative rounded-lg overflow-hidden border-2 border-gray-200 transition-all duration-200 hover:border-gray-300 hover:shadow-md"
+            class="relative rounded-lg overflow-hidden border-2 border-gray-200 transition-all duration-200 hover:border-warm-300 hover:shadow-md"
           >
             <img 
               :src="card.image_path"
@@ -40,7 +40,7 @@
             <!-- Card Info Overlay -->
             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-2">
               <p class="text-white text-xs font-bold truncate">{{ card.name }}</p>
-              <div class="flex justify-between items-center text-gray-300 text-xs mt-1">
+              <div class="flex justify-between items-center text-gray-600 text-xs mt-1">
                 <span>费用: {{ card.cost }}</span>
                 <span v-if="card.synergy_tags && card.synergy_tags.length > 0" class="truncate ml-2">
                   {{ card.synergy_tags[0] }}
@@ -59,7 +59,7 @@
         </div>
         
         <div v-if="cards.length === 0" class="text-center py-12">
-          <p class="text-gray-500 text-lg">{{ emptyMessage || '没有卡牌可显示' }}</p>
+          <p class="text-gray-600 text-lg">{{ emptyMessage || '没有卡牌可显示' }}</p>
         </div>
       </div>
 
@@ -73,7 +73,7 @@
         </div>
         <button
           @click="close"
-          class="px-6 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700"
+          class="px-6 py-2 bg-warm-400 text-white rounded-lg hover:bg-warm-300"
         >
           确定
         </button>

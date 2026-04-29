@@ -50,7 +50,7 @@
           <div class="flex justify-end space-x-3">
             <button
               @click="onConfirmationCancel"
-              class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50"
+              class="px-4 py-2 border border-warm-300 rounded-lg text-gray-700 hover:bg-warm-50"
             >
               取消
             </button>

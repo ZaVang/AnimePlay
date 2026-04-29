@@ -25,7 +25,7 @@
               'w-full p-4 text-left rounded-lg border-2 transition-all duration-200',
               selectedType === type
                 ? 'border-blue-500 bg-blue-50 text-blue-900'
-                : 'border-gray-200 hover:border-gray-300 hover:bg-gray-50'
+                : 'border-gray-200 hover:border-warm-300 hover:bg-warm-50'
             ]"
           >
             <div class="flex items-center justify-between">
@@ -39,7 +39,7 @@
         </div>
 
         <div v-if="availableTypes.length === 0" class="text-center py-8">
-          <p class="text-gray-500">没有可选择的类型</p>
+          <p class="text-gray-600">没有可选择的类型</p>
         </div>
       </div>
 
@@ -48,7 +48,7 @@
         <button
           v-if="allowCancel"
           @click="cancel"
-          class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50"
+          class="px-4 py-2 border border-warm-300 rounded-lg text-gray-700 hover:bg-warm-50"
         >
           取消
         </button>
@@ -59,7 +59,7 @@
             'px-6 py-2 rounded-lg font-medium',
             selectedType
               ? 'bg-blue-600 text-white hover:bg-blue-700'
-              : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+              : 'bg-warm-200 text-gray-600 cursor-not-allowed'
           ]"
         >
           确认选择

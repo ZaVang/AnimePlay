@@ -95,7 +95,7 @@ function handleDismantle() {
     >
       <div class="flex-shrink-0 flex justify-between items-start mb-4">
         <h2 class="text-2xl font-bold">{{ card.name }}</h2>
-        <button @click="closeModal" class="text-2xl text-gray-500 hover:text-gray-800">&times;</button>
+        <button @click="closeModal" class="text-2xl text-gray-600 hover:text-gray-800">&times;</button>
       </div>
 
       <div class="flex-grow overflow-y-auto pr-4 -mr-4">
@@ -106,7 +106,7 @@ function handleDismantle() {
             <div class="mt-4 text-center">
                 <span 
                     class="font-bold px-3 py-1 rounded-full text-white"
-                    :class="cardRarityConfig.c?.includes('from') ? `bg-gradient-to-r ${cardRarityConfig.c}` : cardRarityConfig.c || 'bg-gray-400'"
+                    :class="cardRarityConfig.c?.includes('from') ? `bg-gradient-to-r ${cardRarityConfig.c}` : cardRarityConfig.c || 'bg-warm-300'"
                 >
                     {{ card.rarity }}
                 </span>
@@ -204,7 +204,7 @@ function handleDismantle() {
               <div class="flex flex-wrap gap-2">
                 <span v-for="anime in processedAnimeNames" :key="anime.name"
                   class="text-xs font-semibold px-2.5 py-1 rounded-full"
-                  :class="anime.isOwned ? 'bg-green-100 text-green-800' : 'bg-gray-200 text-gray-700'"
+                  :class="anime.isOwned ? 'bg-green-100 text-green-800' : 'bg-warm-200 text-gray-700'"
                 >
                   {{ anime.name }}
                 </span>

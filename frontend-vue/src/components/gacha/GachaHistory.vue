@@ -129,22 +129,22 @@ function formatTime(timestamp: number) {
       <!-- History List -->
       <div class="max-h-96 overflow-y-auto pr-2">
         <ul class="space-y-2">
-          <li v-for="(item, index) in [...historyWithDetails].reverse()" :key="index" class="flex justify-between items-center p-2 rounded-md bg-gray-50">
+          <li v-for="(item, index) in [...historyWithDetails].reverse()" :key="index" class="flex justify-between items-center p-2 rounded-md bg-warm-50">
             <div class="flex items-center">
               <span 
                 class="font-bold px-1.5 py-0.5 rounded text-xs text-white" 
-                :class="rarityConfig[item.rarity]?.c.includes('from') ? `bg-gradient-to-r ${rarityConfig[item.rarity]?.c}` : rarityConfig[item.rarity]?.c || 'bg-gray-400'"
+                :class="rarityConfig[item.rarity]?.c.includes('from') ? `bg-gradient-to-r ${rarityConfig[item.rarity]?.c}` : rarityConfig[item.rarity]?.c || 'bg-warm-300'"
               >
                 {{ item.rarity }}
               </span>
               <span class="ml-3 font-medium text-sm truncate" :title="item.name">{{ item.name }}</span>
             </div>
-            <span class="text-xs text-gray-500 flex-shrink-0 ml-2">{{ formatTime(item.timestamp) }}</span>
+            <span class="text-xs text-gray-600 flex-shrink-0 ml-2">{{ formatTime(item.timestamp) }}</span>
           </li>
         </ul>
       </div>
     </div>
-    <div v-else class="text-center text-gray-500 py-8">
+    <div v-else class="text-center text-gray-600 py-8">
       <p>还没有抽卡历史记录。</p>
     </div>
   </div>

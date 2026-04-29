@@ -51,7 +51,7 @@ const isDefensePhase = computed(() => gameStore.phase === 'defense');
           </button>
         </template>
       </div>
-      <button @click="emit('close')" class="absolute top-2 right-2 text-gray-400 hover:text-white">✕</button>
+      <button @click="emit('close')" class="absolute top-2 right-2 text-gray-600 hover:text-white">✕</button>
     </div>
   </div>
 </template>
@@ -70,10 +70,10 @@ const isDefensePhase = computed(() => gameStore.phase === 'defense');
   z-index: 1000;
 }
 .modal-content {
-  background-color: #1f2937; /* bg-gray-800 */
+  background-color: #1f2937; /* bg-cream-100 */
   padding: 2rem;
   border-radius: 0.5rem;
-  border: 1px solid #4b5563; /* border-gray-600 */
+  border: 1px solid #4b5563; /* border-warm-300 */
   position: relative;
   width: 320px;
 }
@@ -90,7 +90,7 @@ const isDefensePhase = computed(() => gameStore.phase === 'defense');
   @apply text-white font-bold py-2 px-4 rounded-lg w-full transition-colors;
 }
 .btn-primary {
-  @apply bg-green-600 hover:bg-green-700;
+  @apply bg-teal-primary hover:bg-teal-dark;
 }
 .btn-secondary {
   @apply bg-red-600 hover:bg-red-700;

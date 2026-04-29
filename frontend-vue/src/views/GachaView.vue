@@ -74,7 +74,7 @@ function closeRatesModal() {
 
 <template>
   <div>
-    <div class="bg-white rounded-lg shadow-lg text-gray-800">
+    <div class="bg-warm-300 rounded-lg shadow text-gray-800 border border-warm-300">
       <!-- Header with Gacha Type Selector -->
       <div class="border-b border-gray-200">
         <div class="px-6 pt-4 pb-2">
@@ -150,7 +150,7 @@ function closeRatesModal() {
                 :class="[
                   'font-semibold py-2 px-6 rounded-lg text-sm transition-all duration-200',
                   isDrawing || userStore.playerState.animeGachaTickets < 1
-                    ? 'bg-gray-400 text-gray-200 cursor-not-allowed'
+                    ? 'bg-warm-300 text-gray-700 cursor-not-allowed'
                     : 'bg-indigo-600 text-white hover:bg-indigo-700'
                 ]"
               >
@@ -169,7 +169,7 @@ function closeRatesModal() {
                 :class="[
                   'font-semibold py-2 px-6 rounded-lg text-sm ml-3 transition-all duration-200',
                   isDrawing || userStore.playerState.animeGachaTickets < 10
-                    ? 'bg-gray-400 text-gray-200 cursor-not-allowed'
+                    ? 'bg-warm-300 text-gray-700 cursor-not-allowed'
                     : 'bg-amber-500 text-white hover:bg-amber-600'
                 ]"
               >
@@ -184,7 +184,7 @@ function closeRatesModal() {
               </button>
             </div>
             <div class="text-center">
-              <a href="#" @click.prevent="openRatesModal" class="text-xs text-gray-500 hover:underline">概率一览</a>
+              <a href="#" @click.prevent="openRatesModal" class="text-xs text-gray-600 hover:underline">概率一览</a>
             </div>
           </div>
 
@@ -206,7 +206,7 @@ function closeRatesModal() {
                 :class="[
                   'font-semibold py-2 px-6 rounded-lg text-sm transition-all duration-200',
                   isDrawing || userStore.playerState.characterGachaTickets < 1
-                    ? 'bg-gray-400 text-gray-200 cursor-not-allowed'
+                    ? 'bg-warm-300 text-gray-700 cursor-not-allowed'
                     : 'bg-pink-600 text-white hover:bg-pink-700'
                 ]"
               >
@@ -225,7 +225,7 @@ function closeRatesModal() {
                 :class="[
                   'font-semibold py-2 px-6 rounded-lg text-sm ml-3 transition-all duration-200',
                   isDrawing || userStore.playerState.characterGachaTickets < 10
-                    ? 'bg-gray-400 text-gray-200 cursor-not-allowed'
+                    ? 'bg-warm-300 text-gray-700 cursor-not-allowed'
                     : 'bg-purple-500 text-white hover:bg-purple-600'
                 ]"
               >
@@ -240,7 +240,7 @@ function closeRatesModal() {
               </button>
             </div>
             <div class="text-center">
-              <a href="#" @click.prevent="openRatesModal" class="text-xs text-gray-500 hover:underline">概率一览</a>
+              <a href="#" @click.prevent="openRatesModal" class="text-xs text-gray-600 hover:underline">概率一览</a>
             </div>
           </div>
         </div>

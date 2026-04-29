@@ -388,7 +388,7 @@ async function handleSaveDeck() {
             <span class="font-bold w-6">{{ card.rarity }}</span>
             <span class="truncate flex-1">{{ card.name }}</span>
           </div>
-           <p v-if="animeInDeck.length === 0" class="text-xs text-gray-400 py-4 text-center">从左侧点击添加</p>
+           <p v-if="animeInDeck.length === 0" class="text-xs text-gray-600 py-4 text-center">从左侧点击添加</p>
         </div>
         <h4 class="font-bold mt-4 mb-2">角色卡 ({{ characterInDeck.length }}/{{ GAME_CONFIG.deckBuilding.CharacterMaxNum }})</h4>
         <div class="deck-card-list">
@@ -398,7 +398,7 @@ async function handleSaveDeck() {
             <span class="font-bold w-6">{{ card.rarity }}</span>
             <span class="truncate flex-1">{{ card.name }}</span>
           </div>
-          <p v-if="characterInDeck.length === 0" class="text-xs text-gray-400 py-4 text-center">从左侧点击添加</p>
+          <p v-if="characterInDeck.length === 0" class="text-xs text-gray-600 py-4 text-center">从左侧点击添加</p>
         </div>
       </div>
         </div>
@@ -446,7 +446,7 @@ async function handleSaveDeck() {
   @apply bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700;
 }
 .btn-secondary {
-  @apply bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-300;
+  @apply bg-warm-200 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-warm-200;
 }
 .deck-stats {
   @apply p-2 border-b text-sm text-gray-600 flex justify-around;

@@ -15,58 +15,75 @@ async function handleLogin() {
   }
 }
 
-// 在组件挂载后，获取所有游戏核心数据
 onMounted(() => {
   gameDataStore.fetchGameData();
 });
 </script>
 
 <template>
-  <div class="bg-gray-800 text-gray-200 min-h-screen">
-    <header class="bg-gray-900 shadow-lg sticky top-0 z-50">
+  
+  <div class="bg-cream-100 text-gray-700 min-h-screen">
+    
+    <header class="bg-cream-100 shadow-sm border-b border-warm-300 sticky top-0 z-50">
+        
         <div class="container mx-auto px-4">
+            
             <div class="flex justify-between items-center py-3">
                 
-                <!-- Logo -->
-                <RouterLink to="/" class="text-2xl font-bold text-white hover:text-green-400 transition-colors">
+                <!-- Logo - 使用普通样式，不受选中状态影响 -->
+                <RouterLink to="/" class="logo-link text-2xl font-bold text-teal-primary hover:text-teal-dark transition-colors">
                   动画宅的自我修养
                 </RouterLink>
 
                 <!-- 用户信息 / 登录区域 -->
                 <div class="flex items-center gap-3">
+                  
                   <div v-if="userStore.isLoggedIn" class="flex items-center gap-4 text-sm">
+                      
                       <div class="flex flex-col text-right">
-                        <span class="font-bold text-green-400">{{ userStore.currentUser }}</span>
-                        <span class="text-xs text-gray-400">Lv. {{ userStore.playerState.level }}</span>
+                        <span class="font-bold text-teal-primary">{{ userStore.currentUser }}</span>
+                        <span class="text-xs text-gray-500">Lv. {{ userStore.playerState.level }}</span>
                       </div>
-                      <div class="h-8 w-px bg-gray-700"></div>
-                      <div class="flex items-center gap-3 text-xs">
+                      
+                      <div class="h-8 w-px bg-warm-300"></div>
+                      
+                      <div class="flex items-center gap-3 text-xs text-gray-600">
                         <span>动画券: {{ userStore.playerState.animeGachaTickets }}</span>
                         <span>角色券: {{ userStore.playerState.characterGachaTickets }}</span>
                       </div>
-                      <button @click="userStore.logout()" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg text-sm transition-colors">
+                      
+                      <button @click="userStore.logout()" class="bg-coral-accent hover:bg-coral-dark text-white font-bold py-2 px-4 rounded-lg text-sm transition-colors">
                           登出
                       </button>
+                  
                   </div>
+                  
                   <div v-else class="flex gap-2 items-center">
                       <input 
                           v-model="usernameInput" 
                           @keyup.enter="handleLogin"
                           type="text" 
                           placeholder="用户名" 
-                          class="px-3 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500 transition w-40"
+                          class="px-3 py-2 rounded-lg bg-white border border-warm-300 focus:outline-none focus:ring-2 focus:ring-teal-primary transition w-40 text-gray-700"
                       />
-                      <button @click="handleLogin" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                      
+                      <button @click="handleLogin" class="bg-teal-primary hover:bg-teal-dark text-white font-bold py-2 px-4 rounded-lg transition-colors">
                           登录
                       </button>
+                  
                   </div>
                 </div>
+            
             </div>
+        
         </div>
+    
     </header>
 
     <div class="flex">
-        <nav class="w-48 bg-gray-800 p-4 pt-6">
+        
+        <nav class="w-48 bg-cream-100 p-4 pt-6 border-r border-warm-300">
+            
             <ul class="space-y-2">
                 <li><RouterLink to="/" class="nav-link">主页</RouterLink></li>
                 <li><RouterLink to="/gacha" class="nav-link">抽卡系统</RouterLink></li>
@@ -76,11 +93,13 @@ onMounted(() => {
                 <li><RouterLink to="/nurture" class="nav-link">角色养成</RouterLink></li>
                 <li><RouterLink to="/settings" class="nav-link">设置</RouterLink></li>
             </ul>
+        
         </nav>
         
-        <main class="flex-1 p-6">
+        <main class="flex-1 p-6 bg-warm-50">
           <RouterView />
         </main>
+    
     </div>
 
   </div>
@@ -89,19 +108,28 @@ onMounted(() => {
 <style>
 body { font-family: 'Noto Sans SC', sans-serif; }
 
+/* 导航链接样式 */
 .nav-link {
-    @apply block px-4 py-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white transition-colors duration-200;
-}
-.router-link-exact-active {
-    @apply bg-green-500 text-white font-bold;
+    @apply block px-4 py-2 rounded-lg text-gray-600 hover:bg-warm-300 hover:text-gray-800 transition-colors duration-200;
 }
 
-/* Card effects, we can keep them here for now or move them to main.css */
+/* 只有导航链接的选中状态才有绿色背景 */
+.nav-link.router-link-exact-active {
+    @apply bg-teal-primary text-white font-bold;
+}
+
+/* Logo 链接始终保持原样 */
+.logo-link.router-link-exact-active {
+    @apply text-teal-primary font-bold;
+    background: none;
+}
+
+/* Card effects */
 .legendary-glow::before {
     content: '';
     position: absolute;
     top: -2px; left: -2px; right: -2px; bottom: -2px;
-    background: linear-gradient(45deg, #fbbf24, #f59e0b, #fbbf24, #f59e0b);
+    background: linear-gradient(45deg, #FFD23F, #FFC107, #FFD23F, #FFC107);
     background-size: 400% 400%;
     border-radius: inherit;
     z-index: -1;
@@ -111,7 +139,7 @@ body { font-family: 'Noto Sans SC', sans-serif; }
     content: '';
     position: absolute;
     top: -1px; left: -1px; right: -1px; bottom: -1px;
-    background: linear-gradient(45deg, #a855f7, #ec4899, #a855f7, #ec4899);
+    background: linear-gradient(45deg, #2BA8A2, #3CC4BD, #2BA8A2, #3CC4BD);
     background-size: 400% 400%;
     border-radius: inherit;
     z-index: -1;

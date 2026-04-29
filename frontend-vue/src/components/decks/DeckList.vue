@@ -33,8 +33,8 @@ const handleDeleteDeck = (deckName: string) => {
       </button>
     </div>
 
-    <div v-if="Object.keys(userStore.savedDecks).length === 0" class="text-center py-16 border-2 border-dashed border-gray-300 rounded-lg">
-      <p class="text-gray-500">你还没有创建任何卡组。</p>
+    <div v-if="Object.keys(userStore.savedDecks).length === 0" class="text-center py-16 border-2 border-dashed border-warm-300 rounded-lg">
+      <p class="text-gray-600">你还没有创建任何卡组。</p>
       <button @click="$emit('newDeck')" class="mt-4 bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700">
         立即创建
       </button>
@@ -52,7 +52,7 @@ const handleDeleteDeck = (deckName: string) => {
         </div>
         <div class="p-4">
           <h4 class="font-bold text-lg truncate">{{ deck.name }}</h4>
-          <p class="text-sm text-gray-500">{{ deck.anime.length }} 动画 / {{ deck.character.length }} 角色</p>
+          <p class="text-sm text-gray-600">{{ deck.anime.length }} 动画 / {{ deck.character.length }} 角色</p>
         </div>
       </div>
     </div>

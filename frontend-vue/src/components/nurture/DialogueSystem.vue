@@ -361,18 +361,18 @@ function getInitialGreeting() {
 
 <template>
   <div class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4" @click.self="emit('close')">
-    <div class="bg-gray-800 rounded-2xl shadow-2xl max-w-2xl w-full max-h-[80vh] border border-gray-700 overflow-hidden">
+    <div class="bg-cream-100 rounded-2xl shadow-2xl max-w-2xl w-full max-h-[80vh] border border-warm-400 overflow-hidden">
       
       <!-- 对话窗口头部 -->
-      <div class="flex items-center justify-between p-6 border-b border-gray-700 bg-gray-750">
+      <div class="flex items-center justify-between p-6 border-b border-warm-400 bg-gray-750">
         <div class="flex items-center">
           <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
             <img :src="character.image_path" :alt="character.name" class="w-full h-full object-cover object-top">
           </div>
           <div>
             <h3 class="text-lg font-bold text-white">{{ character.name }}</h3>
-            <div class="flex items-center text-sm text-gray-400">
-              <div class="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
+            <div class="flex items-center text-sm text-gray-600">
+              <div class="w-2 h-2 bg-teal-light rounded-full mr-2"></div>
               在线中
             </div>
           </div>
@@ -380,7 +380,7 @@ function getInitialGreeting() {
         
         <button 
           @click="emit('close')"
-          class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-700 rounded-full transition-colors"
+          class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-white hover:bg-warm-300 rounded-full transition-colors"
         >
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -401,7 +401,7 @@ function getInitialGreeting() {
               <div class="bg-blue-600 text-white p-3 rounded-2xl rounded-br-md">
                 {{ message.text }}
               </div>
-              <div class="text-xs text-gray-500 mt-1 text-right">{{ formatTime(message.timestamp) }}</div>
+              <div class="text-xs text-gray-600 mt-1 text-right">{{ formatTime(message.timestamp) }}</div>
             </div>
           </div>
 
@@ -412,10 +412,10 @@ function getInitialGreeting() {
                 <img :src="character.image_path" :alt="character.name" class="w-full h-full object-cover object-top">
               </div>
               <div>
-                <div class="bg-gray-700 text-white p-3 rounded-2xl rounded-bl-md">
+                <div class="bg-warm-300 text-white p-3 rounded-2xl rounded-bl-md">
                   {{ message.text }}
                 </div>
-                <div class="text-xs text-gray-500 mt-1">{{ formatTime(message.timestamp) }}</div>
+                <div class="text-xs text-gray-600 mt-1">{{ formatTime(message.timestamp) }}</div>
               </div>
             </div>
           </div>
@@ -428,11 +428,11 @@ function getInitialGreeting() {
             <div class="w-8 h-8 rounded-full overflow-hidden mr-2">
               <img :src="character.image_path" :alt="character.name" class="w-full h-full object-cover object-top">
             </div>
-            <div class="bg-gray-700 text-white p-3 rounded-2xl rounded-bl-md">
+            <div class="bg-warm-300 text-white p-3 rounded-2xl rounded-bl-md">
               <div class="flex space-x-1">
-                <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
-                <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.1s;"></div>
-                <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.2s;"></div>
+                <div class="w-2 h-2 bg-warm-300 rounded-full animate-bounce"></div>
+                <div class="w-2 h-2 bg-warm-300 rounded-full animate-bounce" style="animation-delay: 0.1s;"></div>
+                <div class="w-2 h-2 bg-warm-300 rounded-full animate-bounce" style="animation-delay: 0.2s;"></div>
               </div>
             </div>
           </div>
@@ -440,18 +440,18 @@ function getInitialGreeting() {
       </div>
 
       <!-- 对话选项区域 -->
-      <div class="p-4 border-t border-gray-700 space-y-3">
+      <div class="p-4 border-t border-warm-400 space-y-3">
         
         <!-- 预设对话选项 -->
         <div v-if="availableDialogues.length > 0" class="space-y-2">
-          <div class="text-sm text-gray-400 mb-2">选择话题：</div>
+          <div class="text-sm text-gray-600 mb-2">选择话题：</div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <button
               v-for="dialogue in availableDialogues.slice(0, 4)"
               :key="dialogue.id"
               @click="selectDialogue(dialogue)"
               :disabled="isTyping"
-              class="text-left p-3 bg-gray-700/50 hover:bg-gray-700 text-white text-sm rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              class="text-left p-3 bg-warm-300/50 hover:bg-warm-300 text-white text-sm rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {{ dialogue.text }}
             </button>
@@ -465,12 +465,12 @@ function getInitialGreeting() {
             @keyup.enter="sendFreeMessage"
             :disabled="isTyping"
             placeholder="输入你想说的话..."
-            class="flex-1 px-4 py-2 bg-gray-700 text-white rounded-lg border border-gray-600 focus:border-blue-500 focus:outline-none disabled:opacity-50"
+            class="flex-1 px-4 py-2 bg-warm-300 text-white rounded-lg border border-warm-300 focus:border-blue-500 focus:outline-none disabled:opacity-50"
           >
           <button
             @click="sendFreeMessage"
             :disabled="!userInput.trim() || isTyping"
-            class="px-6 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 text-white rounded-lg transition-colors disabled:cursor-not-allowed"
+            class="px-6 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-warm-400 text-white rounded-lg transition-colors disabled:cursor-not-allowed"
           >
             发送
           </button>

@@ -13,7 +13,7 @@
         <div>
           <h2 class="text-2xl font-bold">{{ options.title }}</h2>
           <p v-if="options.description" class="text-gray-600 mt-1">{{ options.description }}</p>
-          <p class="text-sm text-gray-500 mt-2">
+          <p class="text-sm text-gray-600 mt-2">
             请选择 {{ options.required ? options.count : `最多${options.count}` }} 张卡牌
             <span v-if="!options.required">(可取消)</span>
           </p>
@@ -21,7 +21,7 @@
         <button 
           v-if="!options.required"
           @click="cancel" 
-          class="text-2xl text-gray-500 hover:text-gray-800"
+          class="text-2xl text-gray-600 hover:text-gray-800"
         >
           &times;
         </button>
@@ -38,7 +38,7 @@
               'relative cursor-pointer transition-all duration-200 rounded-lg overflow-hidden border-2',
               selectedCards.includes(card) 
                 ? 'border-blue-500 shadow-lg transform scale-105' 
-                : 'border-gray-200 hover:border-gray-300 hover:shadow-md'
+                : 'border-gray-200 hover:border-warm-300 hover:shadow-md'
             ]"
           >
             <img 
@@ -58,13 +58,13 @@
             <!-- Card Info Overlay -->
             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-2">
               <p class="text-white text-xs font-bold truncate">{{ card.name }}</p>
-              <p class="text-gray-300 text-xs">费用: {{ card.cost }}</p>
+              <p class="text-gray-600 text-xs">费用: {{ card.cost }}</p>
             </div>
           </div>
         </div>
         
         <div v-if="availableCards.length === 0" class="text-center py-12">
-          <p class="text-gray-500 text-lg">没有可选择的卡牌</p>
+          <p class="text-gray-600 text-lg">没有可选择的卡牌</p>
         </div>
       </div>
 
@@ -77,7 +77,7 @@
           <button
             v-if="!options.required"
             @click="cancel"
-            class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50"
+            class="px-4 py-2 border border-warm-300 rounded-lg text-gray-700 hover:bg-warm-50"
           >
             取消
           </button>
@@ -87,7 +87,7 @@
             :class="[
               'px-6 py-2 rounded-lg font-medium',
               (options.required && selectedCards.length < options.count)
-                ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                ? 'bg-warm-200 text-gray-600 cursor-not-allowed'
                 : 'bg-blue-600 text-white hover:bg-blue-700'
             ]"
           >

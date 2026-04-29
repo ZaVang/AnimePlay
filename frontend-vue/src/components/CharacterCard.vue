@@ -23,7 +23,7 @@ const props = defineProps<{
 const userStore = useUserStore();
 
 const rarityData = computed(() => GAME_CONFIG.characterSystem.rarityConfig[props.character.rarity] || {});
-const rarityColorClass = computed(() => rarityData.value.c || 'bg-gray-500');
+const rarityColorClass = computed(() => rarityData.value.c || 'bg-warm-500');
 const rarityEffectClass = computed(() => rarityData.value.effect || '');
 const isFavorite = computed(() => userStore.isFavorite(props.character.id, 'character'));
 
@@ -93,14 +93,14 @@ function toggleFavorite(event: MouseEvent) {
       <div v-if="isDuplicate" class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-center p-1">
         <span class="text-white font-bold text-2xl">+1</span>
       </div>
-      <div v-if="isNew" class="absolute top-1 left-1 bg-green-500 text-white text-xs font-bold px-1 rounded">
+      <div v-if="isNew" class="absolute top-1 left-1 bg-teal-primary text-white text-xs font-bold px-1 rounded">
         NEW
       </div>
     </div>
     
     <div class="p-2">
       <p class="text-xs text-center font-bold truncate text-gray-900" :title="character.name">{{ character.name }}</p>
-      <p v-if="character.anime_count" class="text-xs text-center text-gray-500 mt-1">
+      <p v-if="character.anime_count" class="text-xs text-center text-gray-600 mt-1">
         {{ character.anime_count }}部作品
       </p>
     </div>

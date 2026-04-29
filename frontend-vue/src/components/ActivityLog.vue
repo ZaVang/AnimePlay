@@ -18,7 +18,7 @@ function timeAgo(timestamp: number): string {
 }
 
 const logTypeStyles = {
-  info: 'bg-gray-700 text-gray-300',
+  info: 'bg-warm-300 text-gray-600',
   success: 'bg-green-800 text-green-300',
   warning: 'bg-yellow-800 text-yellow-300',
   gacha: 'bg-purple-800 text-purple-300',
@@ -34,10 +34,10 @@ const logTypeIcon = {
 </script>
 
 <template>
-  <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 h-full flex flex-col">
+  <div class="bg-cream-100 p-6 rounded-lg shadow-lg border border-warm-400 h-full flex flex-col">
     <h2 class="text-2xl font-bold text-white mb-4">系统日志</h2>
     <div class="flex-1 overflow-y-auto pr-2 space-y-2 max-h-[640px]">
-      <div v-if="userStore.logs.length === 0" class="text-center text-gray-500 pt-8">
+      <div v-if="userStore.logs.length === 0" class="text-center text-gray-600 pt-8">
         暂无任何系统日志。
       </div>
       <div v-else v-for="(log, index) in userStore.logs" :key="log.timestamp + '-' + index" 
@@ -46,7 +46,7 @@ const logTypeIcon = {
         <span class="mt-1">{{ logTypeIcon[log.type] }}</span>
         <div class="flex-1">
           <p>{{ log.message }}</p>
-          <p class="text-xs text-gray-400 opacity-75 mt-1">{{ timeAgo(log.timestamp) }}</p>
+          <p class="text-xs text-gray-600 opacity-75 mt-1">{{ timeAgo(log.timestamp) }}</p>
         </div>
       </div>
     </div>

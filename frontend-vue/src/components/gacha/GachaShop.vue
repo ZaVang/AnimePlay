@@ -195,15 +195,15 @@ const activeShopItems = computed((): (ShopItem & { card?: any })[] => {
         </div>
         <div class="text-center w-full">
             <p class="font-semibold text-sm">{{ item.cost.toLocaleString() }} 知识点</p>
-            <p v-if="item.description" class="text-xs text-gray-500 mb-1">{{ item.description }}</p>
+            <p v-if="item.description" class="text-xs text-gray-600 mb-1">{{ item.description }}</p>
             <button 
                 @click="handlePurchase(item)"
                 :disabled="isPurchasing === item.id || userStore.playerState.knowledgePoints < item.cost"
                 :class="[
                   'mt-2 w-full font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-200',
                   isPurchasing === item.id || userStore.playerState.knowledgePoints < item.cost
-                    ? 'bg-gray-400 text-gray-200 cursor-not-allowed'
-                    : 'bg-green-600 text-white hover:bg-green-700'
+                    ? 'bg-warm-300 text-gray-700 cursor-not-allowed'
+                    : 'bg-teal-primary text-white hover:bg-teal-dark'
                 ]"
             >
                 <span v-if="isPurchasing === item.id" class="flex items-center justify-center gap-2">
@@ -232,7 +232,7 @@ const activeShopItems = computed((): (ShopItem & { card?: any })[] => {
         </div>
         <div class="text-center w-full">
             <h4 class="font-semibold text-sm mb-1">{{ item.name }}</h4>
-            <p class="text-xs text-gray-500 mb-2">{{ item.description }}</p>
+            <p class="text-xs text-gray-600 mb-2">{{ item.description }}</p>
             <p v-if="item.quantity" class="text-xs text-blue-600 mb-1">数量: {{ item.quantity }}</p>
             <p v-if="item.dailyLimit" class="text-xs text-orange-600 mb-2">每日限购: {{ item.dailyLimit }}</p>
             <p class="font-semibold text-sm mb-2">{{ item.cost.toLocaleString() }} 知识点</p>
@@ -242,11 +242,11 @@ const activeShopItems = computed((): (ShopItem & { card?: any })[] => {
                 :class="[
                   'w-full font-semibold py-2 px-3 rounded-lg text-sm transition-all duration-200',
                   isPurchasing === item.id || userStore.playerState.knowledgePoints < item.cost
-                    ? 'bg-gray-400 text-gray-200 cursor-not-allowed'
+                    ? 'bg-warm-300 text-gray-700 cursor-not-allowed'
                     : item.type === 'ticket' ? 'bg-indigo-600 text-white hover:bg-indigo-700'
                     : item.type === 'currency' ? 'bg-amber-600 text-white hover:bg-amber-700'
                     : item.type === 'booster' ? 'bg-purple-600 text-white hover:bg-purple-700'
-                    : 'bg-green-600 text-white hover:bg-green-700'
+                    : 'bg-teal-primary text-white hover:bg-teal-dark'
                 ]"
             >
                 <span v-if="isPurchasing === item.id" class="flex items-center justify-center gap-2">
@@ -266,7 +266,7 @@ const activeShopItems = computed((): (ShopItem & { card?: any })[] => {
         </div>
       </div>
     </div>
-    <div v-else class="text-center text-gray-500 py-8">
+    <div v-else class="text-center text-gray-600 py-8">
       <p>当前类别没有可兑换的物品。</p>
     </div>
   </div>

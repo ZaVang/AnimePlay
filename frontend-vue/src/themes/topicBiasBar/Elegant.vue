@@ -255,7 +255,7 @@ function handleClick() {
 /* 指示点提示 */
 .indicator-tooltip {
     @apply absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2;
-  @apply bg-gray-900 text-white text-xs px-2 py-1 rounded;
+  @apply bg-warm-400 text-white text-xs px-2 py-1 rounded;
   @apply opacity-0 scale-75 transition-all duration-200;
   @apply whitespace-nowrap pointer-events-none;
   

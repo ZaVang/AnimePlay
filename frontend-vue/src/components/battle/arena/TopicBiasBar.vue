@@ -54,7 +54,7 @@ const CurrentBiasBar = computed(() => themeComponents[currentTheme.value]);
 
 .theme-switch-btn {
   @apply absolute top-2 right-2 w-8 h-8 rounded-full;
-  @apply bg-gray-700/50 hover:bg-gray-600/50;
+  @apply bg-warm-300/50 hover:bg-warm-400/50;
   @apply flex items-center justify-center text-sm;
   @apply transition-all duration-200;
   @apply z-20;

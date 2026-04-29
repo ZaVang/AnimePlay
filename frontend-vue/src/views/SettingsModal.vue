@@ -103,7 +103,7 @@ const selectedAIId = computed({
             <span class="option-content">
               <span class="option-icon">🧠</span>
               <span class="option-name">AI 档案</span>
-              <select v-model="selectedAIId" class="ml-auto bg-gray-700 text-white rounded px-3 py-1 border border-gray-600">
+              <select v-model="selectedAIId" class="ml-auto bg-warm-300 text-white rounded px-3 py-1 border border-warm-300">
                 <option v-for="p in aiProfiles" :key="p.id" :value="p.id">{{ p.name }}</option>
               </select>
             </span>
@@ -184,7 +184,7 @@ const selectedAIId = computed({
 
 <style scoped>
 .settings-modal {
-  @apply bg-gray-800 rounded-lg p-6 max-w-4xl w-full;
+  @apply bg-cream-100 rounded-lg p-6 max-w-4xl w-full;
 }
 
 .settings-header {
@@ -192,11 +192,11 @@ const selectedAIId = computed({
 }
 
 .settings-tabs {
-  @apply flex gap-4 mb-6 border-b border-gray-700;
+  @apply flex gap-4 mb-6 border-b border-warm-400;
 }
 
 .settings-tabs button {
-  @apply px-4 py-2 text-gray-400 hover:text-white transition-colors;
+  @apply px-4 py-2 text-gray-600 hover:text-white transition-colors;
 }
 
 .settings-tabs button.active {
@@ -217,12 +217,12 @@ const selectedAIId = computed({
 
 .preset-btn {
   @apply flex flex-col items-center gap-2 p-4 rounded-lg;
-  @apply bg-gray-700/50 hover:bg-gray-700 transition-all;
+  @apply bg-warm-300/50 hover:bg-warm-300 transition-all;
   @apply border-2 border-transparent;
 }
 
 .preset-btn.active {
-  @apply border-blue-500 bg-gray-700;
+  @apply border-blue-500 bg-warm-300;
 }
 
 .bias-bar-selector {
@@ -234,7 +234,7 @@ const selectedAIId = computed({
 }
 
 .preview-box {
-  @apply h-64 flex items-center justify-center bg-gray-900 rounded-lg p-2;
+  @apply h-64 flex items-center justify-center bg-warm-400 rounded-lg p-2;
 }
 
 .preview-scale {
@@ -247,7 +247,7 @@ const selectedAIId = computed({
 
 .style-option {
   @apply flex items-center p-3 rounded-lg;
-  @apply bg-gray-700/30 hover:bg-gray-700/50 cursor-pointer;
+  @apply bg-warm-300/30 hover:bg-warm-300/50 cursor-pointer;
   @apply transition-all;
 }
 
@@ -268,11 +268,11 @@ const selectedAIId = computed({
 }
 
 .option-desc {
-  @apply text-sm text-gray-400 ml-auto;
+  @apply text-sm text-gray-600 ml-auto;
 }
 
 .toggle-option {
-  @apply mt-4 p-3 bg-gray-700/30 rounded-lg;
+  @apply mt-4 p-3 bg-warm-300/30 rounded-lg;
 }
 
 .toggle-option label {

@@ -207,7 +207,10 @@ def serve_static(path):
     # This is a bit of a catch-all. Be careful in production.
     # It tries to serve files from frontend/, then frontend/js/, etc.
     # A more robust solution would be to have nginx handle static files.
-    return send_from_directory(app.static_folder, path)
+    try:
+        return send_from_directory(app.static_folder, path)
+    except:
+        return send_from_directory(app.static_folder, "index.html")
 
 
 if __name__ == "__main__":

@@ -55,7 +55,7 @@ const rates = computed(() => {
           <div>
             <h3 class="font-semibold text-gray-700 mb-2">基础概率</h3>
             <table class="w-full text-sm text-left text-gray-600">
-              <thead class="text-xs text-gray-700 uppercase bg-gray-100">
+              <thead class="text-xs text-gray-700 uppercase bg-warm-100">
                 <tr>
                   <th scope="col" class="px-4 py-2">稀有度</th>
                   <th scope="col" class="px-4 py-2">概率</th>
@@ -94,7 +94,7 @@ const rates = computed(() => {
         </div>
       </div>
 
-      <div class="p-4 border-t bg-gray-50 text-right">
+      <div class="p-4 border-t bg-warm-50 text-right">
         <button @click="emit('close')" class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
           关闭
         </button>

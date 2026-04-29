@@ -23,7 +23,7 @@ const logTypeClasses = {
   event: 'text-yellow-300',
   clash: 'text-white',
   damage: 'text-red-400',
-  info: 'text-gray-400 italic',
+  info: 'text-gray-600 italic',
 };
 </script>
 

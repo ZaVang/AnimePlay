@@ -42,7 +42,7 @@ const clashInfo = computed(() => gameStore.clashInfo);
 }
 
 .placeholder {
-  @apply w-full h-full flex items-center justify-center text-gray-400 text-2xl font-bold;
+  @apply w-full h-full flex items-center justify-center text-gray-600 text-2xl font-bold;
 }
 
 .clash-display {
@@ -53,7 +53,7 @@ const clashInfo = computed(() => gameStore.clashInfo);
   @apply relative w-40 h-56;
 }
 .empty-slot {
-  @apply w-40 h-56 border-2 border-dashed border-gray-600 rounded-lg flex items-center justify-center text-gray-500;
+  @apply w-40 h-56 border-2 border-dashed border-warm-300 rounded-lg flex items-center justify-center text-gray-600;
 }
 .vs-icon {
   @apply text-5xl text-red-500 font-bold mx-8;

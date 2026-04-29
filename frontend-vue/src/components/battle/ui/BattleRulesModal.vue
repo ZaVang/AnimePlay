@@ -94,7 +94,7 @@ const battleResults = computed(() => [
               基础规则
             </h3>
             <div class="grid md:grid-cols-2 gap-4">
-              <div v-for="rule in battleMechanics" :key="rule.title" class="bg-gray-50 rounded-lg p-4">
+              <div v-for="rule in battleMechanics" :key="rule.title" class="bg-warm-50 rounded-lg p-4">
                 <h4 class="font-semibold text-gray-700 mb-2">{{ rule.title }}</h4>
                 <p class="text-sm text-gray-600">{{ rule.content }}</p>
               </div>
@@ -104,11 +104,11 @@ const battleResults = computed(() => [
           <!-- 行动类型 -->
           <section>
             <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
-              <span class="w-6 h-6 bg-green-500 text-white rounded-full text-sm flex items-center justify-center mr-2">2</span>
+              <span class="w-6 h-6 bg-teal-primary text-white rounded-full text-sm flex items-center justify-center mr-2">2</span>
               行动类型
             </h3>
             <div class="grid md:grid-cols-2 gap-4">
-              <div v-for="action in actionStyles" :key="action.key" class="bg-gray-50 rounded-lg p-4">
+              <div v-for="action in actionStyles" :key="action.key" class="bg-warm-50 rounded-lg p-4">
                 <div class="flex items-center justify-between mb-2">
                   <h4 class="font-semibold text-gray-700">{{ action.name }}</h4>
                   <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded-full">
@@ -133,7 +133,7 @@ const battleResults = computed(() => [
             </div>
             <div class="space-y-4">
               <div v-for="result in battleResults" :key="result.situation" class="border border-gray-200 rounded-lg overflow-hidden">
-                <div class="bg-gray-100 px-4 py-3">
+                <div class="bg-warm-100 px-4 py-3">
                   <h4 class="font-semibold text-gray-700">{{ result.situation }}</h4>
                 </div>
                 <div class="p-4 space-y-2">
@@ -175,7 +175,7 @@ const battleResults = computed(() => [
         </div>
       </div>
 
-      <div class="p-6 border-t border-gray-200 bg-gray-50 text-center">
+      <div class="p-6 border-t border-gray-200 bg-warm-50 text-center">
         <button @click="emit('close')" class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
           明白了，开始战斗！
         </button>

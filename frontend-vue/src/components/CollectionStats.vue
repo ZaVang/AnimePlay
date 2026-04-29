@@ -34,7 +34,7 @@ const collectionStats = computed(() => {
         return {
             rarity,
             count,
-            colorClass: rarityConfig[rarity]?.c || 'bg-gray-400'
+            colorClass: rarityConfig[rarity]?.c || 'bg-warm-300'
         };
     });
 
@@ -67,7 +67,7 @@ const collectionStats = computed(() => {
 </script>
 
 <template>
-  <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 shadow-sm">
+  <div class="bg-warm-50 p-4 rounded-lg border border-gray-200 shadow-sm">
     <h3 class="text-lg font-semibold mb-3 text-gray-800">{{ itemType }}收藏统计</h3>
     
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center text-sm mb-4">

@@ -47,7 +47,7 @@ function getRemainingTime(startTime: number, durationMinutes: number) {
 </script>
 
 <template>
-  <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
+  <div class="bg-cream-100 p-6 rounded-lg shadow-lg border border-warm-400">
     <h2 class="text-2xl font-bold text-white mb-4">观看队列</h2>
     
     <div v-if="userStore.isLoggedIn" class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -55,27 +55,27 @@ function getRemainingTime(startTime: number, durationMinutes: number) {
         
         <!-- Empty Slot -->
         <div v-if="!slot" 
-             class="h-48 flex items-center justify-center bg-gray-700/50 rounded-lg border-2 border-dashed border-gray-600 hover:border-green-500 hover:bg-gray-700 transition cursor-pointer"
+             class="h-48 flex items-center justify-center bg-warm-300/50 rounded-lg border-2 border-dashed border-warm-300 hover:border-green-500 hover:bg-warm-300 transition cursor-pointer"
              @click="openModal(index)">
-          <div class="text-center text-gray-400">
+          <div class="text-center text-gray-600">
              <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
              <span class="font-bold">添加动画</span>
           </div>
         </div>
 
         <!-- Occupied Slot -->
-        <div v-else class="h-48 flex flex-col items-center justify-center bg-gray-700 rounded-lg p-2 text-center">
+        <div v-else class="h-48 flex flex-col items-center justify-center bg-warm-300 rounded-lg p-2 text-center">
           <template v-if="gameDataStore.getAnimeCardById(slot.animeId)">
             <img :src="gameDataStore.getAnimeCardById(slot.animeId)?.image_path" class="w-24 aspect-[3/2] object-cover rounded-md mb-2">
             <p class="font-bold text-sm truncate w-full">{{ gameDataStore.getAnimeCardById(slot.animeId)?.name }}</p>
             
             <div v-if="now < (slot.startTime + userStore.VIEWING_REWARDS[gameDataStore.getAnimeCardById(slot.animeId)!.rarity].time * 60 * 1000)">
-              <p class="text-xs text-gray-400">
+              <p class="text-xs text-gray-600">
                 剩余: {{ getRemainingTime(slot.startTime, userStore.VIEWING_REWARDS[gameDataStore.getAnimeCardById(slot.animeId)!.rarity].time) }}
               </p>
             </div>
             <div v-else>
-              <button @click="userStore.collectFromViewingQueue(index)" class="mt-2 bg-green-500 text-white font-bold py-1 px-3 rounded-lg text-xs hover:bg-green-600">
+              <button @click="userStore.collectFromViewingQueue(index)" class="mt-2 bg-teal-primary text-white font-bold py-1 px-3 rounded-lg text-xs hover:bg-teal-primary">
                 收获
               </button>
             </div>
@@ -84,7 +84,7 @@ function getRemainingTime(startTime: number, durationMinutes: number) {
 
       </div>
     </div>
-     <p v-else class="text-gray-500 text-center py-4">请先登录</p>
+     <p v-else class="text-gray-600 text-center py-4">请先登录</p>
   </div>
   
   <AddToQueueModal v-if="isModalOpen" :slotIndex="selectedSlot" @close="isModalOpen = false" @select="handleCardSelected" />

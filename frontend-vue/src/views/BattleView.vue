@@ -188,7 +188,7 @@ function handleExitBattle() {
 
 <style scoped>
 .battle-view {
-  @apply bg-gray-900 text-white min-h-screen w-full h-full overflow-hidden;
+  @apply bg-warm-400 text-white min-h-screen w-full h-full overflow-hidden;
 }
 .deck-selector-wrapper {
   @apply w-full h-full flex items-center justify-center;
@@ -207,7 +207,7 @@ function handleExitBattle() {
 }
 
 .log-container {
-    @apply h-full bg-gray-800/50 rounded-lg p-2 overflow-hidden border border-gray-700 relative; /* Add relative positioning */
+    @apply h-full bg-cream-100/50 rounded-lg p-2 overflow-hidden border border-warm-400 relative; /* Add relative positioning */
     flex: 0 1 250px; /* Do not grow, shrink if needed, initial width 250px */
     min-height: 0; /* Important fix for flex-child scrolling */
 }
@@ -221,7 +221,7 @@ function handleExitBattle() {
 }
 
 .clash-zone-container {
-    @apply h-full min-h-[18rem] bg-gray-800/50 rounded-lg p-2 overflow-hidden border border-gray-700;
+    @apply h-full min-h-[18rem] bg-cream-100/50 rounded-lg p-2 overflow-hidden border border-warm-400;
     flex: 1 1 auto; /* Grow to fill available space */
 }
 
