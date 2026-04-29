@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, ref } from 'vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { useUserStore } from '@/stores/userStore';
 import type { AnimeCard } from '@/types/card';
@@ -10,20 +10,36 @@ const props = defineProps<{
   isNew?: boolean;
   isDuplicate?: boolean;
   isInDeck?: boolean;
-  showCost?: boolean; // New prop to control cost visibility
+  showCost?: boolean;
 }>();
 
 const userStore = useUserStore();
+const imageError = ref(false);
 
 const rarityData = computed(() => GAME_CONFIG.animeSystem.rarityConfig[props.anime.rarity] || {});
 const rarityColorClass = computed(() => rarityData.value.c || 'bg-warm-500');
 const rarityEffectClass = computed(() => rarityData.value.effect || '');
 const isFavorite = computed(() => userStore.isFavorite(props.anime.id, 'anime'));
 
+// 优先使用本地图片，回退到外部 URL
+const imageSrc = computed(() => {
+  if (imageError.value) {
+    return props.anime.image_path;
+  }
+  return `/data/images/anime/${props.anime.id}.jpg`;
+});
+
 function onImageError(event: Event) {
   const target = event.target as HTMLImageElement;
-  const placeholderText = encodeURIComponent('动画图片');
-  target.src = `https://placehold.co/240x360/e2e8f0/334155?text=${placeholderText}`;
+  if (!imageError.value) {
+    // 第一次失败，尝试外部 URL
+    imageError.value = true;
+    target.src = props.anime.image_path;
+  } else {
+    // 外部 URL 也失败，显示占位图
+    const placeholderText = encodeURIComponent('动画图片');
+    target.src = `https://placehold.co/240x360/e2e8f0/334155?text=${placeholderText}`;
+  }
 }
 
 function toggleFavorite(event: MouseEvent) {
@@ -42,14 +58,14 @@ function toggleFavorite(event: MouseEvent) {
     :data-item-id="anime.id"
     data-item-type="动画"
   >
-    <!-- Cost Gem: Now with conditional rendering -->
+    <!-- Cost Gem -->
     <div v-if="anime.cost > 0 && showCost" class="cost-gem">
       {{ anime.cost }}
     </div>
 
     <div class="relative">
       <img
-        :src="anime.image_path"
+        :src="imageSrc"
         class="w-full aspect-[2/3] object-cover object-top"
         @error="onImageError"
       />

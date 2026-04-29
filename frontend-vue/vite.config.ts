@@ -4,7 +4,6 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
@@ -18,8 +17,8 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5173,
+    allowedHosts: true,  // 允许所有主机（隧道场景需要）
     proxy: {
-      // 仅代理以 /api 或 /data 开头的请求，避免错误匹配 /src/data/**
       '/api': {
         target: 'http://127.0.0.1:5001',
         changeOrigin: true,
@@ -30,7 +29,6 @@ export default defineConfig({
       },
     },
     fs: {
-      // Allow serving files from one level up to the project root
       allow: ['..'],
     },
   },

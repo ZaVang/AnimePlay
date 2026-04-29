@@ -1,10 +1,8 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, ref } from 'vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { useUserStore } from '@/stores/userStore';
 
-// 定义组件接收的 props
-// 我们假设会传入一个包含角色所有信息的对象
 const props = defineProps<{
   character: {
     id: number;
@@ -12,30 +10,46 @@ const props = defineProps<{
     rarity: 'N' | 'R' | 'SR' | 'SSR' | 'HR' | 'UR';
     image_path: string;
     anime_count?: number;
-    // ... 其他未来可能用到的属性
   };
-  count?: number; // 卡片数量，可选
-  isNew?: boolean; // 是否是新卡片，可选
-  isDuplicate?: boolean; // 是否是重复卡片，可选
-  isInDeck?: boolean; // 是否已在卡组中，可选
+  count?: number;
+  isNew?: boolean;
+  isDuplicate?: boolean;
+  isInDeck?: boolean;
 }>();
 
 const userStore = useUserStore();
+const imageError = ref(false);
 
 const rarityData = computed(() => GAME_CONFIG.characterSystem.rarityConfig[props.character.rarity] || {});
 const rarityColorClass = computed(() => rarityData.value.c || 'bg-warm-500');
 const rarityEffectClass = computed(() => rarityData.value.effect || '');
 const isFavorite = computed(() => userStore.isFavorite(props.character.id, 'character'));
 
-// 处理图片加载失败
+// 优先使用本地图片，回退到外部 URL
+const imageSrc = computed(() => {
+  if (imageError.value) {
+    // 本地图片加载失败，使用外部 URL
+    return props.character.image_path;
+  }
+  // 优先尝试本地图片
+  return `/data/images/character/${props.character.id}.jpg`;
+});
+
 function onImageError(event: Event) {
   const target = event.target as HTMLImageElement;
-  const placeholderText = encodeURIComponent('角色头像');
-  target.src = `https://placehold.co/240x360/e2e8f0/334155?text=${placeholderText}`;
+  if (!imageError.value) {
+    // 第一次失败，尝试外部 URL
+    imageError.value = true;
+    target.src = props.character.image_path;
+  } else {
+    // 外部 URL 也失败，显示占位图
+    const placeholderText = encodeURIComponent('角色头像');
+    target.src = `https://placehold.co/240x360/e2e8f0/334155?text=${placeholderText}`;
+  }
 }
 
 function toggleFavorite(event: MouseEvent) {
-  event.stopPropagation(); // 阻止事件冒泡到父元素
+  event.stopPropagation();
   userStore.toggleFavorite(props.character.id, 'character');
 }
 </script>
@@ -52,7 +66,7 @@ function toggleFavorite(event: MouseEvent) {
   >
     <div class="relative">
       <img
-        :src="character.image_path"
+        :src="imageSrc"
         class="w-full aspect-[2/3] object-cover object-top"
         @error="onImageError"
       />
@@ -108,6 +122,4 @@ function toggleFavorite(event: MouseEvent) {
 </template>
 
 <style scoped>
-/* 这里可以放一些这个组件独有的样式，如果需要的话 */
-/* 我们旧的 CSS 效果是从全局 style 标签里来的，后续可以移到这里 */
 </style>
