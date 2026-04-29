@@ -2,24 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 主题 CSS 变量 */
+:root {
+  --theme-bg-primary: #FEFDFB;
+  --theme-bg-secondary: #FFF8E7;
+  --theme-bg-card: #F5EDE0;
+  --theme-bg-header: #FFF8E7;
+  --theme-text-primary: #374151;
+  --theme-text-secondary: #4B5563;
+  --theme-text-muted: #9CA3AF;
+  --theme-accent: #2BA8A2;
+  --theme-accent-hover: #1E8C86;
+  --theme-accent-light: #3CC4BD;
+  --theme-border: #F5EDE0;
+  --theme-border-light: #EDE3D3;
+  --theme-success: #10B981;
+  --theme-warning: #F59E0B;
+  --theme-danger: #EF6C4A;
+}
+
+/* 主题工具类 */
+.theme-bg-primary { background-color: var(--theme-bg-primary); }
+.theme-bg-secondary { background-color: var(--theme-bg-secondary); }
+.theme-bg-card { background-color: var(--theme-bg-card); }
+.theme-bg-header { background-color: var(--theme-bg-header); }
+.theme-text-primary { color: var(--theme-text-primary); }
+.theme-text-secondary { color: var(--theme-text-secondary); }
+.theme-text-muted { color: var(--theme-text-muted); }
+.theme-accent { color: var(--theme-accent); }
+.theme-border { border-color: var(--theme-border); }
+.theme-border-light { border-color: var(--theme-border-light); }
+
+/* 按钮主题 */
+.btn-accent {
+  background-color: var(--theme-accent);
+  color: white;
+  transition: all 0.2s;
+}
+.btn-accent:hover {
+  background-color: var(--theme-accent-hover);
+}
+
+/* 卡片主题 */
+.card-theme {
+  background-color: var(--theme-bg-card);
+  border: 1px solid var(--theme-border);
+}
+
+/* 动画 */
 @layer utilities {
     @keyframes pulse-strong {
-        0%, 100% {  /* ✅ 去掉引号 */
+        0%, 100% {
             box-shadow: 0 0 15px var(--tw-shadow-color);
             opacity: 1;
         }
-        50% {       /* ✅ 去掉引号 */
+        50% {
             box-shadow: 0 0 25px var(--tw-shadow-color);
             opacity: 0.8;
         }
     }
     
     @keyframes pulse-extra-strong {
-        0%, 100% {  /* ✅ 去掉引号 */
+        0%, 100% {
             box-shadow: 0 0 20px var(--tw-shadow-color);
             opacity: 1;
         }
-        50% {       /* ✅ 去掉引号 */
+        50% {
             box-shadow: 0 0 35px var(--tw-shadow-color);
             opacity: 0.85;
         }

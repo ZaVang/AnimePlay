@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 import { RouterLink, RouterView } from 'vue-router';
 import { useUserStore } from './stores/userStore';
 import { useGameDataStore } from './stores/gameDataStore';
+import { useThemeStore } from './stores/theme';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
+const themeStore = useThemeStore();
 const usernameInput = ref('');
 
 async function handleLogin() {
@@ -21,17 +23,16 @@ onMounted(() => {
 </script>
 
 <template>
-  
-  <div class="bg-cream-100 text-gray-700 min-h-screen">
+  <div class="min-h-screen theme-bg-primary" :style="{ color: 'var(--theme-text-primary)' }">
     
-    <header class="bg-cream-100 shadow-sm border-b border-warm-300 sticky top-0 z-50">
+    <header class="shadow-sm border-b theme-bg-header sticky top-0 z-50" :style="{ borderColor: 'var(--theme-border)' }">
         
         <div class="container mx-auto px-4">
             
             <div class="flex justify-between items-center py-3">
                 
-                <!-- Logo - 使用普通样式，不受选中状态影响 -->
-                <RouterLink to="/" class="logo-link text-2xl font-bold text-teal-primary hover:text-teal-dark transition-colors">
+                <!-- Logo -->
+                <RouterLink to="/" class="logo-link text-2xl font-bold transition-colors" :style="{ color: 'var(--theme-accent)' }">
                   动画宅的自我修养
                 </RouterLink>
 
@@ -41,18 +42,19 @@ onMounted(() => {
                   <div v-if="userStore.isLoggedIn" class="flex items-center gap-4 text-sm">
                       
                       <div class="flex flex-col text-right">
-                        <span class="font-bold text-teal-primary">{{ userStore.currentUser }}</span>
-                        <span class="text-xs text-gray-500">Lv. {{ userStore.playerState.level }}</span>
+                        <span class="font-bold" :style="{ color: 'var(--theme-accent)' }">{{ userStore.currentUser }}</span>
+                        <span class="text-xs" :style="{ color: 'var(--theme-text-muted)' }">Lv. {{ userStore.playerState.level }}</span>
                       </div>
                       
-                      <div class="h-8 w-px bg-warm-300"></div>
+                      <div class="h-8 w-px" :style="{ backgroundColor: 'var(--theme-border)' }"></div>
                       
-                      <div class="flex items-center gap-3 text-xs text-gray-600">
+                      <div class="flex items-center gap-3 text-xs" :style="{ color: 'var(--theme-text-secondary)' }">
                         <span>动画券: {{ userStore.playerState.animeGachaTickets }}</span>
                         <span>角色券: {{ userStore.playerState.characterGachaTickets }}</span>
                       </div>
                       
-                      <button @click="userStore.logout()" class="bg-coral-accent hover:bg-coral-dark text-white font-bold py-2 px-4 rounded-lg text-sm transition-colors">
+                      <button class="font-bold py-2 px-4 rounded-lg text-sm transition-colors" 
+                        :style="{ backgroundColor: 'var(--theme-danger)', color: 'white' }">
                           登出
                       </button>
                   
@@ -64,10 +66,11 @@ onMounted(() => {
                           @keyup.enter="handleLogin"
                           type="text" 
                           placeholder="用户名" 
-                          class="px-3 py-2 rounded-lg bg-white border border-warm-300 focus:outline-none focus:ring-2 focus:ring-teal-primary transition w-40 text-gray-700"
+                          class="px-3 py-2 rounded-lg bg-white border focus:outline-none transition w-40"
+                          :style="{ borderColor: 'var(--theme-border)', color: 'var(--theme-text-primary)' }"
                       />
                       
-                      <button @click="handleLogin" class="bg-teal-primary hover:bg-teal-dark text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                      <button @click="handleLogin" class="btn-accent font-bold py-2 px-4 rounded-lg">
                           登录
                       </button>
                   
@@ -82,7 +85,7 @@ onMounted(() => {
 
     <div class="flex">
         
-        <nav class="w-48 bg-cream-100 p-4 pt-6 border-r border-warm-300">
+        <nav class="w-48 p-4 pt-6 border-r" :style="{ backgroundColor: 'var(--theme-bg-secondary)', borderColor: 'var(--theme-border)' }">
             
             <ul class="space-y-2">
                 <li><RouterLink to="/" class="nav-link">主页</RouterLink></li>
@@ -96,7 +99,7 @@ onMounted(() => {
         
         </nav>
         
-        <main class="flex-1 p-6 bg-warm-50">
+        <main class="flex-1 p-6" :style="{ backgroundColor: 'var(--theme-bg-primary)' }">
           <RouterView />
         </main>
     
@@ -110,17 +113,29 @@ body { font-family: 'Noto Sans SC', sans-serif; }
 
 /* 导航链接样式 */
 .nav-link {
-    @apply block px-4 py-2 rounded-lg text-gray-600 hover:bg-warm-300 hover:text-gray-800 transition-colors duration-200;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: var(--theme-text-secondary);
+    transition: all 0.2s;
 }
 
-/* 只有导航链接的选中状态才有绿色背景 */
+.nav-link:hover {
+    background-color: var(--theme-bg-card);
+    color: var(--theme-text-primary);
+}
+
+/* 只有导航链接的选中状态才有强调色背景 */
 .nav-link.router-link-exact-active {
-    @apply bg-teal-primary text-white font-bold;
+    background-color: var(--theme-accent);
+    color: white;
+    font-weight: bold;
 }
 
 /* Logo 链接始终保持原样 */
 .logo-link.router-link-exact-active {
-    @apply text-teal-primary font-bold;
+    color: var(--theme-accent);
+    font-weight: bold;
     background: none;
 }
 

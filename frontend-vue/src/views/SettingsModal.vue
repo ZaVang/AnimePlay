@@ -1,16 +1,15 @@
 <!-- SettingsModal.vue -->
 <script setup lang="ts">
 import { useSettingsStore } from '@/stores/settings';
+import { useThemeStore, themes } from '@/stores/theme';
 import { ref, computed } from 'vue';
 import { listAIProfiles } from '@/core/ai/aiProfiles';
 
 const settingsStore = useSettingsStore();
+const themeStore = useThemeStore();
 const activeTab = ref('display');
 
-// 主题预览数据
-const mockBias = ref(4);
-
-// AI 对手选择（设置持久化）
+// AI 对手选择
 const aiProfiles = listAIProfiles();
 const selectedAIId = computed({
   get: () => settingsStore.selectedAIProfileId,
@@ -19,13 +18,14 @@ const selectedAIId = computed({
 </script>
 
 <template>
-  <div class="settings-modal">
+  <div class="settings-modal" :style="{ backgroundColor: 'var(--theme-bg-secondary)', color: 'var(--theme-text-primary)' }">
+    
     <div class="settings-header">
       <h2>游戏设置</h2>
       <button @click="$emit('close')" class="close-btn">✕</button>
     </div>
     
-    <div class="settings-tabs">
+    <div class="settings-tabs" :style="{ borderColor: 'var(--theme-border)' }">
       <button 
         @click="activeTab = 'display'" 
         :class="{ active: activeTab === 'display' }"
@@ -41,53 +41,57 @@ const selectedAIId = computed({
     </div>
     
     <div v-if="activeTab === 'display'" class="settings-content">
-      <!-- 主题预设 -->
+      
+      <!-- 全局主题选择 -->
       <div class="setting-group">
-        <h3>UI主题预设</h3>
-        <div class="theme-presets">
+        <h3>🎨 全局主题</h3>
+        <p class="setting-desc" :style="{ color: 'var(--theme-text-muted)' }">选择你喜欢的界面风格</p>
+        
+        <div class="theme-grid">
           <button 
-            v-for="(preset, name) in settingsStore.themePresets" 
-            :key="name"
-            @click="settingsStore.applyPreset(name)"
-            class="preset-btn"
-            :class="{ active: settingsStore.uiTheme.biasBar === preset.biasBar }"
+            v-for="(theme, id) in themes" 
+            :key="id"
+            @click="themeStore.setTheme(id)"
+            class="theme-card"
+            :class="{ active: themeStore.currentThemeId === id }"
           >
-            <span class="preset-icon">{{ 
-              name === 'classic' ? '🎨' : 
-              name === 'cyberpunk' ? '🤖' : '✨' 
-            }}</span>
-            <span class="preset-name">{{ 
-              name === 'classic' ? '经典' : 
-              name === 'cyberpunk' ? '赛博朋克' : '简约' 
-            }}</span>
+            <div class="theme-preview" :style="{ backgroundColor: theme.colors.bgPrimary, borderColor: theme.colors.border }">
+              <div class="preview-header" :style="{ backgroundColor: theme.colors.accent }"></div>
+              <div class="preview-sidebar" :style="{ backgroundColor: theme.colors.bgSecondary }"></div>
+              <div class="preview-accent" :style="{ backgroundColor: theme.colors.accent }"></div>
+            </div>
+            <div class="theme-info">
+              <span class="theme-icon">{{ theme.icon }}</span>
+              <span class="theme-name">{{ theme.name }}</span>
+            </div>
           </button>
         </div>
       </div>
-      
+
       <!-- 战斗速度 -->
       <div class="setting-group">
-        <h3>战斗速度</h3>
+        <h3>⚡ 战斗速度</h3>
+        
         <div class="style-options">
           <label class="style-option">
             <input type="radio" value="normal" v-model="settingsStore.battleSpeed" @change="settingsStore.saveSettings()" />
             <span class="option-content">
-              <span class="option-icon">⏱️</span>
               <span class="option-name">正常</span>
               <span class="option-desc">AI思考2s / 防御1.5s / 结算3s</span>
             </span>
           </label>
+          
           <label class="style-option">
             <input type="radio" value="fast" v-model="settingsStore.battleSpeed" @change="settingsStore.saveSettings()" />
             <span class="option-content">
-              <span class="option-icon">⚡</span>
               <span class="option-name">快速</span>
               <span class="option-desc">AI思考0.6s / 防御0.3s / 结算0.8s</span>
             </span>
           </label>
+          
           <label class="style-option">
             <input type="radio" value="instant" v-model="settingsStore.battleSpeed" @change="settingsStore.saveSettings()" />
             <span class="option-content">
-              <span class="option-icon">🚀</span>
               <span class="option-name">瞬间</span>
               <span class="option-desc">无动画等待，立即推进</span>
             </span>
@@ -97,13 +101,13 @@ const selectedAIId = computed({
 
       <!-- AI 对手 -->
       <div class="setting-group">
-        <h3>AI 对手</h3>
+        <h3>🧠 AI 对手</h3>
+        
         <div class="style-options">
           <label class="style-option">
             <span class="option-content">
-              <span class="option-icon">🧠</span>
               <span class="option-name">AI 档案</span>
-              <select v-model="selectedAIId" class="ml-auto bg-warm-300 text-white rounded px-3 py-1 border border-warm-300">
+              <select v-model="selectedAIId" class="ai-select">
                 <option v-for="p in aiProfiles" :key="p.id" :value="p.id">{{ p.name }}</option>
               </select>
             </span>
@@ -113,169 +117,248 @@ const selectedAIId = computed({
 
       <!-- 议题偏向条样式 -->
       <div class="setting-group">
-        <h3>议题偏向条样式</h3>
-        <div class="bias-bar-selector">
-          <div class="preview-container">
-            <!-- 预览当前选择的样式 -->
-            <div class="preview-box">
-              <BiasBarGradient 
-                v-if="settingsStore.biasBarTheme === 'gradient'"
-                :topic-bias="mockBias"
-                class="preview-scale"
-              />
-              <BiasBarCyber 
-                v-else-if="settingsStore.biasBarTheme === 'cyber'"
-                :topic-bias="mockBias"
-                class="preview-scale"
-              />
-              <BiasBarElegant 
-                v-else
-                :topic-bias="mockBias"
-                class="preview-scale"
-              />
-            </div>
-          </div>
-          
-          <div class="style-options">
-            <label 
-              v-for="theme in ['gradient', 'cyber', 'elegant']" 
-              :key="theme"
-              class="style-option"
-            >
-              <input 
-                type="radio" 
-                :value="theme" 
-                v-model="settingsStore.biasBarTheme"
-                @change="settingsStore.saveSettings()"
-              />
-              <span class="option-content">
-                <span class="option-icon">{{
-                  theme === 'gradient' ? '🌈' :
-                  theme === 'cyber' ? '⚡' : '💎'
-                }}</span>
-                <span class="option-name">{{
-                  theme === 'gradient' ? '渐变色彩' :
-                  theme === 'cyber' ? '赛博朋克' : '简约优雅'
-                }}</span>
-                <span class="option-desc">{{
-                  theme === 'gradient' ? '功能全面，信息丰富' :
-                  theme === 'cyber' ? '科技感强，视觉冲击' : '简洁清晰，现代感'
-                }}</span>
-              </span>
-            </label>
-          </div>
-        </div>
+        <h3>📊 议题偏向条样式</h3>
         
-        <!-- 快速切换开关 -->
-        <div class="toggle-option">
-          <label>
-            <input 
-              type="checkbox" 
-              v-model="settingsStore.showThemeSwitcher"
-              @change="settingsStore.saveSettings()"
-            />
-            <span>在战斗中显示快速切换按钮</span>
+        <div class="style-options">
+          <label class="style-option">
+            <input type="radio" value="gradient" v-model="settingsStore.biasBarTheme" @change="settingsStore.saveSettings()" />
+            <span class="option-content">
+              <span class="option-icon">🌈</span>
+              <span class="option-name">渐变色彩</span>
+              <span class="option-desc">功能全面，信息丰富</span>
+            </span>
+          </label>
+          
+          <label class="style-option">
+            <input type="radio" value="cyber" v-model="settingsStore.biasBarTheme" @change="settingsStore.saveSettings()" />
+            <span class="option-content">
+              <span class="option-icon">⚡</span>
+              <span class="option-name">赛博朋克</span>
+              <span class="option-desc">科技感强，视觉冲击</span>
+            </span>
+          </label>
+          
+          <label class="style-option">
+            <input type="radio" value="elegant" v-model="settingsStore.biasBarTheme" @change="settingsStore.saveSettings()" />
+            <span class="option-content">
+              <span class="option-icon">💎</span>
+              <span class="option-name">简约优雅</span>
+              <span class="option-desc">简洁清晰，现代感</span>
+            </span>
           </label>
         </div>
       </div>
     </div>
+    
+    <div v-if="activeTab === 'audio'" class="settings-content">
+      <div class="setting-group">
+        <h3>🔊 音频设置</h3>
+        <p :style="{ color: 'var(--theme-text-muted)' }">音频功能开发中...</p>
+      </div>
+    </div>
+  
   </div>
 </template>
 
 <style scoped>
 .settings-modal {
-  @apply bg-cream-100 rounded-lg p-6 max-w-4xl w-full;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  max-width: 56rem;
+  width: 100%;
 }
 
 .settings-header {
-  @apply flex justify-between items-center mb-6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.settings-header h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.close-btn {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--theme-text-muted);
+}
+
+.close-btn:hover {
+  background: var(--theme-bg-card);
 }
 
 .settings-tabs {
-  @apply flex gap-4 mb-6 border-b border-warm-400;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid;
 }
 
 .settings-tabs button {
-  @apply px-4 py-2 text-gray-600 hover:text-white transition-colors;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--theme-text-secondary);
+  transition: all 0.2s;
 }
 
 .settings-tabs button.active {
-  @apply text-white border-b-2 border-blue-500;
+  color: var(--theme-accent);
+  border-bottom: 2px solid var(--theme-accent);
+  font-weight: 600;
 }
 
 .setting-group {
-  @apply mb-8;
+  margin-bottom: 2rem;
 }
 
 .setting-group h3 {
-  @apply text-lg font-semibold mb-4;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
 }
 
-.theme-presets {
-  @apply flex gap-4;
+.setting-desc {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
 }
 
-.preset-btn {
-  @apply flex flex-col items-center gap-2 p-4 rounded-lg;
-  @apply bg-warm-300/50 hover:bg-warm-300 transition-all;
-  @apply border-2 border-transparent;
+/* 主题网格 */
+.theme-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
-.preset-btn.active {
-  @apply border-blue-500 bg-warm-300;
+.theme-card {
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  border: 2px solid var(--theme-border);
+  background: var(--theme-bg-card);
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
-.bias-bar-selector {
-  @apply flex gap-6;
+.theme-card:hover {
+  border-color: var(--theme-accent);
+  transform: translateY(-2px);
 }
 
-.preview-container {
-  @apply w-32;
+.theme-card.active {
+  border-color: var(--theme-accent);
+  box-shadow: 0 0 0 3px var(--theme-accent-light);
 }
 
-.preview-box {
-  @apply h-64 flex items-center justify-center bg-warm-400 rounded-lg p-2;
+.theme-preview {
+  height: 60px;
+  border-radius: 0.5rem;
+  border: 1px solid;
+  position: relative;
+  overflow: hidden;
 }
 
-.preview-scale {
-  transform: scale(0.8);
+.preview-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 12px;
 }
 
+.preview-sidebar {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 20px;
+  bottom: 0;
+}
+
+.preview-accent {
+  position: absolute;
+  top: 20px;
+  left: 28px;
+  width: 30px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.theme-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.theme-icon {
+  font-size: 1.25rem;
+}
+
+.theme-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* 选项样式 */
 .style-options {
-  @apply flex-1 space-y-3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .style-option {
-  @apply flex items-center p-3 rounded-lg;
-  @apply bg-warm-300/30 hover:bg-warm-300/50 cursor-pointer;
-  @apply transition-all;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background: var(--theme-bg-card);
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid var(--theme-border);
+}
+
+.style-option:hover {
+  border-color: var(--theme-accent);
 }
 
 .style-option input[type="radio"] {
-  @apply mr-3;
+  margin-right: 0.75rem;
+  accent-color: var(--theme-accent);
 }
 
 .option-content {
-  @apply flex-1 flex items-center gap-3;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
 }
 
 .option-icon {
-  @apply text-2xl;
+  font-size: 1.25rem;
 }
 
 .option-name {
-  @apply font-semibold;
+  font-weight: 500;
 }
 
 .option-desc {
-  @apply text-sm text-gray-600 ml-auto;
+  font-size: 0.875rem;
+  color: var(--theme-text-muted);
+  margin-left: auto;
 }
 
-.toggle-option {
-  @apply mt-4 p-3 bg-warm-300/30 rounded-lg;
-}
-
-.toggle-option label {
-  @apply flex items-center gap-2 cursor-pointer;
+.ai-select {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--theme-bg-primary);
+  border: 1px solid var(--theme-border);
+  color: var(--theme-text-primary);
+  margin-left: auto;
 }
 </style>
