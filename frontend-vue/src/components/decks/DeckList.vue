@@ -5,7 +5,7 @@ import { useGameDataStore } from '@/stores/gameDataStore';
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
 
-const getCoverImage = (deck) => {
+const getCoverImage = (deck: any) => {
   if (!deck.cover) {
     return `https://placehold.co/300x180/e2e8f0/334155?text=无封面`;
   }

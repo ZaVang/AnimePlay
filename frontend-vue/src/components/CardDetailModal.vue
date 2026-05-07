@@ -18,9 +18,9 @@ const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
 
 const cardRarityConfig = computed(() => {
-    if (!props.card) return {};
+    if (!props.card) return { p: 0, c: '', dismantleValue: 0, color: '', chartColor: '' };
     const config = props.cardType === 'anime' ? GAME_CONFIG.animeSystem : GAME_CONFIG.characterSystem;
-    return config.rarityConfig[props.card.rarity] || {};
+    return config.rarityConfig[props.card.rarity] || { p: 0, c: '', dismantleValue: 0, color: '', chartColor: '' };
 });
 
 // FIXED: Added `const` back
@@ -60,10 +60,12 @@ const animeEffectsDescriptions = computed(() => {
 });
 
 const processedAnimeNames = computed(() => {
-    if (props.cardType !== 'character' || !props.card || !(props.card as CharacterCard).anime_names) return [];
+    if (props.cardType !== 'character' || !props.card) return [];
+    const charCard = props.card as CharacterCard;
+    if (!charCard.anime_names) return [];
     
-    return (props.card as CharacterCard).anime_names.map(name => {
-        const animeCard = gameDataStore.allAnimeCards.find(c => c.name === name);
+    return charCard.anime_names.map((name: string) => {
+        const animeCard = gameDataStore.allAnimeCards.find((c: AnimeCard) => c.name === name);
         const isOwned = animeCard ? userStore.animeCollection.has(animeCard.id) : false;
         return { name, isOwned };
     });
@@ -199,7 +201,7 @@ function handleDismantle() {
                 </div>
             </div>
 
-            <div v-if="cardType === 'character' && (card as CharacterCard).anime_names && (card as CharacterCard).anime_names.length" class="mt-4 border-t pt-4">
+            <div v-if="cardType === 'character' && (card as CharacterCard)?.anime_names && (card as CharacterCard)?.anime_names?.length" class="mt-4 border-t pt-4">
               <h3 class="font-bold text-lg mb-2">登场作品</h3>
               <div class="flex flex-wrap gap-2">
                 <span v-for="anime in processedAnimeNames" :key="anime.name"

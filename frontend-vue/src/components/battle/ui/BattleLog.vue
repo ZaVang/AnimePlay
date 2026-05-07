@@ -30,8 +30,8 @@ const logTypeClasses = {
 <template>
   <div class="battle-log-wrapper">
     <div ref="logContainer" class="log-container">
-      <div v-for="log in logs" :key="log.id" class="log-message" :class="logTypeClasses[log.type]">
-        {{ log.message }}
+      <div v-for="(log, index) in logs" :key="index" class="log-message text-gray-600 italic">
+        {{ log }}
       </div>
     </div>
   </div>

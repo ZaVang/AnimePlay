@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useUserStore } from '@/stores/userStore';
-import { useGameDataStore, type Card } from '@/stores/gameDataStore';
+import { useGameDataStore } from '@/stores/gameDataStore';
+import type { Card } from '@/types/card';
 import AnimeCard from '@/components/AnimeCard.vue';
 
 const props = defineProps<{
@@ -75,7 +76,7 @@ function handleSelect(animeId: number) {
             <span class="text-xs">已观看: {{ userStore.playerState.watchedAnime.size }} 部</span>
           </div>
           <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            <AnimeCard v-for="card in availableAnime" :key="card.id" :anime="card" :count="card.count" @click="handleSelect(card.id)" />
+            <AnimeCard v-for="card in availableAnime" :key="card.id" :anime="(card as any)" :count="card.count" @click="handleSelect(card.id)" />
           </div>
         </div>
       </div>

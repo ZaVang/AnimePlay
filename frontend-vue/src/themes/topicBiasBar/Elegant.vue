@@ -10,7 +10,7 @@ interface Props {
 const props = defineProps<Props>();
 const playerStore = usePlayerStore();
 
-const isPlayerA = playerStore.playerId === 'playerA';
+const isPlayerA = true; // Human player is always playerA
 
 // 计算偏向百分比
 const biasPercentage = computed(() => {

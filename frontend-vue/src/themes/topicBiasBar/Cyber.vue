@@ -10,7 +10,7 @@ interface Props {
 const props = defineProps<Props>();
 const playerStore = usePlayerStore();
 
-const isPlayerA = playerStore.playerId === 'playerA';
+const isPlayerA = true; // Human player is always playerA
 
 const playerLabel = computed(() => (isPlayerA ? '我方领域' : '对手领域'));
 const opponentLabel = computed(() => (isPlayerA ? '对手领域' : '我方领域'));

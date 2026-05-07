@@ -88,14 +88,14 @@ const chartOptions = computed(() => {
                 }
             },
             datalabels: {
-                anchor: 'end',
-                align: 'top',
+                anchor: 'end' as const,
+                align: 'top' as const,
                 formatter: (value: number) => {
                     const percentage = totalPulls > 0 ? ((value / totalPulls) * 100).toFixed(1) + '%' : '0%';
                     return `${value}\n(${percentage})`;
                 },
                 font: {
-                    weight: 'bold'
+                    weight: 'bold' as const
                 },
                 color: '#4A5568'
             }

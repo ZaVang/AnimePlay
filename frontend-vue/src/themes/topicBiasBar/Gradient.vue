@@ -11,7 +11,7 @@ const props = defineProps<Props>();
 const playerStore = usePlayerStore();
 
 // -10 (反方/B) to +10 (正方/A)
-const isPlayerA = playerStore.playerId === 'playerA';
+const isPlayerA = true; // Human player is always playerA
 
 const playerLabel = computed(() => (isPlayerA ? '我方' : '对手'));
 const opponentLabel = computed(() => (isPlayerA ? '对手' : '我方'));

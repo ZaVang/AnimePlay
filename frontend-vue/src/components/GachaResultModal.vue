@@ -36,7 +36,7 @@ function closeModal() {
           <template v-for="card in cards" :key="card.id">
             <AnimeCard 
               v-if="gachaType === 'anime'"
-              :anime="card"
+              :anime="(card as any)"
               :is-new="card.isNew"
               :is-duplicate="card.isDuplicate"
             />

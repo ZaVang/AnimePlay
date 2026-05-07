@@ -92,6 +92,22 @@ export interface CharacterNurtureData {
   };
 }
 
+
+export interface PresetSquad {
+  id: number;
+  name: string;
+  members: (number | null)[]; // 4个位置，null表示空位
+  lastUsed?: string;
+}
+
+export interface TowerProgress {
+  currentFloor: number; // 当前最高到达层数
+  maxFloor: number; // 历史最高层数
+  floorRewards: { [floor: number]: boolean }; // 已领取的层数奖励
+  todayAttempts: number; // 今日尝试次数
+  lastAttemptDate: string; // 上次尝试日期
+}
+
 export const useUserStore = defineStore('user', () => {
   // --- STATE ---
   const currentUser = ref<string>('');
@@ -122,12 +138,6 @@ export const useUserStore = defineStore('user', () => {
   const characterNurtureData = ref<Map<number, CharacterNurtureData>>(new Map());
   
   // 预设小队数据
-  interface PresetSquad {
-    id: number;
-    name: string;
-    members: (number | null)[]; // 4个位置，null表示空位
-    lastUsed?: string;
-  }
   
   const presetSquads = ref<PresetSquad[]>([
     { id: 1, name: '小队 A', members: [null, null, null, null] },
@@ -136,13 +146,6 @@ export const useUserStore = defineStore('user', () => {
   ]);
 
   // 爬塔进度数据
-  interface TowerProgress {
-    currentFloor: number; // 当前最高到达层数
-    maxFloor: number; // 历史最高层数
-    floorRewards: { [floor: number]: boolean }; // 已领取的层数奖励
-    todayAttempts: number; // 今日尝试次数
-    lastAttemptDate: string; // 上次尝试日期
-  }
 
   const towerProgress = ref<TowerProgress>({
     currentFloor: 1,

@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, send_from_directory
 import os
 import json
 
-app = Flask(__name__, static_folder="../frontend")
+app = Flask(__name__, static_folder="../frontend-vue/dist")
 app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0  # Disable caching
 USER_DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "user_data")
 DATA_ROOT = os.path.join(os.path.dirname(__file__), "..", "data")

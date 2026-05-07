@@ -318,7 +318,7 @@ export const useHistoryStore = defineStore('battleHistory', {
       console.log(`[Battle Log] ${entry}`);
     },
     // Keep the old method name for compatibility
-    addLog(entry: string) {
+    addLog(entry: string, _type?: string) {
       this.addEntry(entry);
     },
     clearLog() {
