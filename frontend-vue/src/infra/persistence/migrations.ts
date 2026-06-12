@@ -7,6 +7,7 @@
  */
 import {
   SAVE_VERSION,
+  createDefaultAppearance,
   createDefaultPresetSquads,
   createDefaultTowerProgress,
   type SavePayload,
@@ -88,5 +89,10 @@ export function migrate(raw: unknown): SavePayload {
     // v2 → v3：商店限购计数 + 猜角色最高分
     shopPurchases: payload.shopPurchases && typeof payload.shopPurchases === 'object' ? payload.shopPurchases : {},
     guess: { highScore: typeof payload.guess?.highScore === 'number' ? payload.guess.highScore : 0 },
+    // v3 → v4：皮肤装扮（未知/缺失回落默认；id 合法性由应用层把关）
+    appearance:
+      typeof payload.appearance?.skinId === 'string'
+        ? { skinId: payload.appearance.skinId }
+        : createDefaultAppearance(),
   };
 }

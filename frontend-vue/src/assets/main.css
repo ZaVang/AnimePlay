@@ -2,26 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 主题 CSS 变量 */
-:root {
-  --theme-bg-primary: #FEFDFB;
-  --theme-bg-secondary: #FFF8E7;
-  --theme-bg-card: #F5EDE0;
-  --theme-bg-header: #FFF8E7;
-  --theme-text-primary: #374151;
-  --theme-text-secondary: #4B5563;
-  --theme-text-muted: #9CA3AF;
-  --theme-accent: #2BA8A2;
-  --theme-accent-hover: #1E8C86;
-  --theme-accent-light: #3CC4BD;
-  --theme-border: #F5EDE0;
-  --theme-border-light: #EDE3D3;
-  --theme-success: #10B981;
-  --theme-warning: #F59E0B;
-  --theme-danger: #EF6C4A;
+/*
+ * 皮肤变量真值在 ./skins.css（main.ts 中先于本文件引入）。
+ * 本文件放：全局基础样式 + 共享组件类（按钮色阶/面板/输入框）+ 动画。
+ */
+
+@layer base {
+  body {
+    font-family: 'Noto Sans SC', sans-serif;
+  }
 }
 
-/* 主题工具类 */
+@layer components {
+  /* ===== 按钮色阶（S7 统一）：场景选一个，不再手拼颜色 ===== */
+  .btn-primary,
+  .btn-secondary,
+  .btn-danger,
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-1 font-semibold rounded-control px-4 py-2 text-sm transition-all duration-150;
+  }
+  .btn-primary:disabled,
+  .btn-secondary:disabled,
+  .btn-danger:disabled,
+  .btn-ghost:disabled {
+    @apply opacity-45 cursor-not-allowed shadow-none;
+  }
+  .btn-primary:not(:disabled):active,
+  .btn-secondary:not(:disabled):active,
+  .btn-danger:not(:disabled):active,
+  .btn-ghost:not(:disabled):active {
+    transform: scale(0.97);
+  }
+  /* 主操作：强调色 + 皮肤光效（霓虹皮肤会发光） */
+  .btn-primary {
+    @apply bg-accent text-on-accent shadow-glow hover:bg-accent-strong;
+  }
+  /* 次操作：浅底描边 */
+  .btn-secondary {
+    @apply bg-surface-2 text-ink border border-line-2 hover:border-accent hover:text-accent;
+  }
+  /* 危险操作 */
+  .btn-danger {
+    @apply bg-danger text-white hover:opacity-85;
+  }
+  /* 弱化操作：无底色 */
+  .btn-ghost {
+    @apply bg-transparent text-ink-2 hover:bg-surface-2 hover:text-ink;
+  }
+
+  /* ===== 面板：页面级容器统一外观（圆角/阴影随皮肤） ===== */
+  .app-panel {
+    @apply bg-surface border border-line rounded-panel shadow-card;
+  }
+
+  /* ===== 输入控件 ===== */
+  .input-control {
+    @apply bg-surface text-ink placeholder:text-ink-3 border border-line rounded-control px-3 py-2 transition focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/25;
+  }
+}
+
+/* ===== 旧主题工具类（C2 全站迁移后删除，勿在新代码使用） ===== */
 .theme-bg-primary { background-color: var(--theme-bg-primary); }
 .theme-bg-secondary { background-color: var(--theme-bg-secondary); }
 .theme-bg-card { background-color: var(--theme-bg-card); }
@@ -33,23 +73,21 @@
 .theme-border { border-color: var(--theme-border); }
 .theme-border-light { border-color: var(--theme-border-light); }
 
-/* 按钮主题 */
 .btn-accent {
   background-color: var(--theme-accent);
-  color: white;
+  color: rgb(var(--c-on-accent));
   transition: all 0.2s;
 }
 .btn-accent:hover {
   background-color: var(--theme-accent-hover);
 }
 
-/* 卡片主题 */
 .card-theme {
   background-color: var(--theme-bg-card);
   border: 1px solid var(--theme-border);
 }
 
-/* 动画 */
+/* ===== 动画 ===== */
 @layer utilities {
     @keyframes pulse-strong {
         0%, 100% {
@@ -61,7 +99,7 @@
             opacity: 0.8;
         }
     }
-    
+
     @keyframes pulse-extra-strong {
         0%, 100% {
             box-shadow: 0 0 20px var(--tw-shadow-color);
@@ -76,7 +114,7 @@
     .animate-pulse-strong {
         animation: pulse-strong 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     }
-    
+
     .animate-pulse-extra-strong {
         animation: pulse-extra-strong 1.8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     }

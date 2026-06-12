@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import { useGameDataStore } from '@/stores/gameDataStore'
+import './assets/skins.css'
 import './assets/main.css'
 
 import App from './App.vue'

@@ -1,0 +1,197 @@
+/**
+ * 皮肤令牌系统（S7 建立）—— 全站色彩与装饰的唯一权威来源。
+ *
+ * 结构：
+ *  - 颜色令牌 `--c-*`：存 RGB 三元组（如 `43 168 162`），供 Tailwind
+ *    `rgb(var(--c-x) / <alpha-value>)` 映射使用，透明度修饰符（bg-accent/50）可用。
+ *    在普通 CSS 里取色写 `rgb(var(--c-x))`。
+ *  - 装饰令牌 `--sk-*`：完整 CSS 值（背景、圆角、阴影、光效），皮肤可改材质而不只是颜色。
+ *  - 皮肤切换：`<html data-skin="...">`，由 stores/theme.ts 控制；:root 兜底为默认皮肤。
+ *
+ * 新增皮肤三处同改：这里加一个 [data-skin] 块 + config/skins.ts 注册表 + docs/主题系统.md。
+ * 颜色语义约定见 tailwind.config.js 的映射注释。
+ */
+
+/* ========== 暖阳手账（默认）========== */
+:root,
+:root[data-skin='warm'] {
+  /* 表面 */
+  --c-app: 247 241 229;          /* 页面底 */
+  --c-header: 255 248 231;       /* 顶栏/侧栏 */
+  --c-surface: 255 253 248;      /* 面板/卡片 */
+  --c-surface-2: 245 237 224;    /* 嵌套面板/输入框/悬停 */
+  --c-elevated: 255 255 255;     /* 弹窗/浮层 */
+  /* 文字 */
+  --c-ink: 61 53 40;
+  --c-ink-2: 107 99 84;
+  --c-ink-3: 156 147 127;
+  --c-on-accent: 255 255 255;    /* 强调色表面上的文字 */
+  /* 强调 */
+  --c-accent: 43 168 162;
+  --c-accent-2: 30 140 134;      /* 悬停/加深（暗色皮肤里是提亮） */
+  --c-accent-soft: 217 240 238;  /* 强调淡底 */
+  --c-highlight: 230 168 23;     /* 次强调（金） */
+  /* 状态 */
+  --c-success: 16 185 129;
+  --c-warning: 217 119 6;
+  --c-danger: 226 92 61;
+  --c-info: 74 144 217;
+  /* 线条 */
+  --c-line: 232 222 201;
+  --c-line-2: 214 201 172;
+  /* 装饰 */
+  --sk-app-bg:
+    radial-gradient(rgba(214, 201, 172, 0.22) 1px, transparent 1.6px) 0 0 / 22px 22px,
+    linear-gradient(180deg, #faf4e8 0%, #f3ebda 100%);
+  --sk-radius-panel: 0.75rem;
+  --sk-radius-control: 0.5rem;
+  --sk-shadow-card: 0 1px 3px rgba(92, 80, 58, 0.1), 0 1px 2px rgba(92, 80, 58, 0.06);
+  --sk-shadow-pop: 0 12px 32px rgba(92, 80, 58, 0.22);
+  --sk-glow-accent: 0 0 #0000; /* 无光效占位（保持 shadow 列表合法） */
+}
+
+/* ========== 樱花和风 ========== */
+:root[data-skin='sakura'] {
+  --c-app: 252 240 245;
+  --c-header: 252 231 240;
+  --c-surface: 255 251 253;
+  --c-surface-2: 250 232 239;
+  --c-elevated: 255 255 255;
+  --c-ink: 74 43 58;
+  --c-ink-2: 122 84 104;
+  --c-ink-3: 176 140 160;
+  --c-on-accent: 255 255 255;
+  --c-accent: 224 92 143;
+  --c-accent-2: 201 68 122;
+  --c-accent-soft: 249 217 230;
+  --c-highlight: 157 123 216;    /* 紫藤 */
+  --c-success: 62 168 118;
+  --c-warning: 232 163 61;
+  --c-danger: 217 79 79;
+  --c-info: 122 143 217;
+  --c-line: 242 213 225;
+  --c-line-2: 227 184 204;
+  --sk-app-bg:
+    radial-gradient(rgba(224, 92, 143, 0.1) 1.2px, transparent 1.8px) 0 0 / 26px 26px,
+    linear-gradient(160deg, #fdf3f7 0%, #fae6ef 55%, #f6dfea 100%);
+  --sk-radius-panel: 1rem;
+  --sk-radius-control: 0.625rem;
+  --sk-shadow-card: 0 1px 3px rgba(160, 70, 110, 0.1), 0 1px 2px rgba(160, 70, 110, 0.06);
+  --sk-shadow-pop: 0 12px 32px rgba(160, 70, 110, 0.22);
+  --sk-glow-accent: 0 0 #0000; /* 无光效占位（保持 shadow 列表合法） */
+}
+
+/* ========== 薄荷清波 ========== */
+:root[data-skin='mint'] {
+  --c-app: 239 247 246;
+  --c-header: 227 241 239;
+  --c-surface: 255 255 255;
+  --c-surface-2: 233 243 241;
+  --c-elevated: 255 255 255;
+  --c-ink: 31 56 51;
+  --c-ink-2: 77 107 101;
+  --c-ink-3: 138 163 158;
+  --c-on-accent: 255 255 255;
+  --c-accent: 20 154 141;
+  --c-accent-2: 14 124 114;
+  --c-accent-soft: 210 238 234;
+  --c-highlight: 61 139 217;     /* 晴空蓝 */
+  --c-success: 22 163 74;
+  --c-warning: 202 138 4;
+  --c-danger: 220 76 76;
+  --c-info: 61 139 217;
+  --c-line: 215 232 229;
+  --c-line-2: 185 213 208;
+  --sk-app-bg: linear-gradient(180deg, #f1f9f8 0%, #e7f3f1 100%);
+  --sk-radius-panel: 0.5rem;
+  --sk-radius-control: 0.375rem;
+  --sk-shadow-card: 0 1px 2px rgba(31, 56, 51, 0.08);
+  --sk-shadow-pop: 0 12px 28px rgba(31, 56, 51, 0.18);
+  --sk-glow-accent: 0 0 #0000; /* 无光效占位（保持 shadow 列表合法） */
+}
+
+/* ========== 午夜剧场（暗色）========== */
+:root[data-skin='midnight'] {
+  --c-app: 21 23 30;
+  --c-header: 28 31 41;
+  --c-surface: 35 39 52;
+  --c-surface-2: 44 49 64;
+  --c-elevated: 50 56 73;
+  --c-ink: 232 234 242;
+  --c-ink-2: 179 185 204;
+  --c-ink-3: 125 132 153;
+  --c-on-accent: 42 34 8;        /* 琥珀底上用深字 */
+  --c-accent: 232 180 88;        /* 剧场琥珀 */
+  --c-accent-2: 245 204 121;     /* 暗色下悬停提亮 */
+  --c-accent-soft: 61 52 36;
+  --c-highlight: 142 124 195;
+  --c-success: 74 222 128;
+  --c-warning: 251 191 36;
+  --c-danger: 248 113 113;
+  --c-info: 96 165 250;
+  --c-line: 53 59 77;
+  --c-line-2: 72 80 102;
+  --sk-app-bg:
+    radial-gradient(1200px 600px at 50% -10%, rgba(232, 180, 88, 0.08), transparent 60%),
+    linear-gradient(180deg, #171a23 0%, #12141c 100%);
+  --sk-radius-panel: 0.75rem;
+  --sk-radius-control: 0.5rem;
+  --sk-shadow-card: 0 2px 6px rgba(0, 0, 0, 0.45);
+  --sk-shadow-pop: 0 16px 40px rgba(0, 0, 0, 0.6);
+  --sk-glow-accent: 0 0 #0000; /* 无光效占位（保持 shadow 列表合法） */
+}
+
+/* ========== 赛博霓虹（暗色 + 光效）========== */
+:root[data-skin='neon'] {
+  --c-app: 11 15 26;
+  --c-header: 16 22 38;
+  --c-surface: 20 27 46;
+  --c-surface-2: 27 36 64;
+  --c-elevated: 30 41 69;
+  --c-ink: 230 241 255;
+  --c-ink-2: 157 180 214;
+  --c-ink-3: 95 115 150;
+  --c-on-accent: 0 26 22;        /* 霓虹青底上用深字 */
+  --c-accent: 0 229 199;
+  --c-accent-2: 77 240 220;
+  --c-accent-soft: 14 58 56;
+  --c-highlight: 255 77 157;     /* 霓虹品红 */
+  --c-success: 46 230 168;
+  --c-warning: 255 201 60;
+  --c-danger: 255 92 122;
+  --c-info: 77 166 255;
+  --c-line: 37 48 77;
+  --c-line-2: 54 69 107;
+  --sk-app-bg:
+    linear-gradient(rgba(0, 229, 199, 0.05) 1px, transparent 1px) 0 0 / 32px 32px,
+    linear-gradient(90deg, rgba(0, 229, 199, 0.05) 1px, transparent 1px) 0 0 / 32px 32px,
+    radial-gradient(900px 500px at 80% -10%, rgba(255, 77, 157, 0.12), transparent 60%),
+    linear-gradient(180deg, #0d1322 0%, #0b0f1a 100%);
+  --sk-radius-panel: 0.375rem;
+  --sk-radius-control: 0.25rem;
+  --sk-shadow-card: 0 2px 8px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 229, 199, 0.07);
+  --sk-shadow-pop: 0 16px 44px rgba(0, 0, 0, 0.65), 0 0 24px rgba(0, 229, 199, 0.1);
+  --sk-glow-accent: 0 0 16px rgba(0, 229, 199, 0.45);
+}
+
+/*
+ * 旧主题变量兼容别名（C2 全站迁移完成后删除）。
+ * 自定义属性在使用处求值，因此只需在 :root 定义一次，会随 data-skin 自动联动。
+ */
+:root {
+  --theme-bg-primary: rgb(var(--c-app));
+  --theme-bg-secondary: rgb(var(--c-header));
+  --theme-bg-card: rgb(var(--c-surface-2));
+  --theme-bg-header: rgb(var(--c-header));
+  --theme-text-primary: rgb(var(--c-ink));
+  --theme-text-secondary: rgb(var(--c-ink-2));
+  --theme-text-muted: rgb(var(--c-ink-3));
+  --theme-accent: rgb(var(--c-accent));
+  --theme-accent-hover: rgb(var(--c-accent-2));
+  --theme-accent-light: rgb(var(--c-accent-soft));
+  --theme-border: rgb(var(--c-line));
+  --theme-border-light: rgb(var(--c-line-2));
+  --theme-success: rgb(var(--c-success));
+  --theme-warning: rgb(var(--c-warning));
+  --theme-danger: rgb(var(--c-danger));
+}

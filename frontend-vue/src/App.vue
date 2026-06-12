@@ -7,7 +7,7 @@ import { useThemeStore } from './stores/theme';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
-useThemeStore(); // 初始化主题（实例化即应用已保存主题）
+useThemeStore(); // 初始化皮肤（实例化即应用设备缓存的皮肤）
 const usernameInput = ref('');
 
 async function handleLogin() {
@@ -27,70 +27,68 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="min-h-screen theme-bg-primary" :style="{ color: 'var(--theme-text-primary)' }">
-    
-    <header class="shadow-sm border-b theme-bg-header sticky top-0 z-50" :style="{ borderColor: 'var(--theme-border)' }">
-        
+  <div class="app-shell min-h-screen text-ink">
+
+    <header class="sticky top-0 z-50 border-b border-line bg-header/90 shadow-sm backdrop-blur">
+
         <div class="container mx-auto px-4">
-            
+
             <div class="flex justify-between items-center py-3">
-                
+
                 <!-- Logo -->
-                <RouterLink to="/" class="logo-link text-2xl font-bold transition-colors" :style="{ color: 'var(--theme-accent)' }">
+                <RouterLink to="/" class="logo-link text-2xl font-bold text-accent transition-colors">
                   动画宅的自我修养
                 </RouterLink>
 
                 <!-- 用户信息 / 登录区域 -->
                 <div class="flex items-center gap-3">
-                  
+
                   <div v-if="userStore.isLoggedIn" class="flex items-center gap-4 text-sm">
-                      
+
                       <div class="flex flex-col text-right">
-                        <span class="font-bold" :style="{ color: 'var(--theme-accent)' }">{{ userStore.currentUser }}</span>
-                        <span class="text-xs" :style="{ color: 'var(--theme-text-muted)' }">Lv. {{ userStore.playerState.level }}</span>
+                        <span class="font-bold text-accent">{{ userStore.currentUser }}</span>
+                        <span class="text-xs text-ink-3">Lv. {{ userStore.playerState.level }}</span>
                       </div>
-                      
-                      <div class="h-8 w-px" :style="{ backgroundColor: 'var(--theme-border)' }"></div>
-                      
-                      <div class="flex items-center gap-3 text-xs" :style="{ color: 'var(--theme-text-secondary)' }">
+
+                      <div class="h-8 w-px bg-line-2"></div>
+
+                      <div class="flex items-center gap-3 text-xs text-ink-2">
                         <span>动画券: {{ userStore.playerState.animeGachaTickets }}</span>
                         <span>角色券: {{ userStore.playerState.characterGachaTickets }}</span>
                       </div>
-                      
-                      <button @click="handleLogout" class="font-bold py-2 px-4 rounded-lg text-sm transition-colors"
-                        :style="{ backgroundColor: 'var(--theme-danger)', color: 'white' }">
+
+                      <button @click="handleLogout" class="btn-danger">
                           登出
                       </button>
-                  
+
                   </div>
-                  
+
                   <div v-else class="flex gap-2 items-center">
-                      <input 
-                          v-model="usernameInput" 
+                      <input
+                          v-model="usernameInput"
                           @keyup.enter="handleLogin"
-                          type="text" 
-                          placeholder="用户名" 
-                          class="px-3 py-2 rounded-lg bg-white border focus:outline-none transition w-40"
-                          :style="{ borderColor: 'var(--theme-border)', color: 'var(--theme-text-primary)' }"
+                          type="text"
+                          placeholder="用户名"
+                          class="input-control w-40"
                       />
-                      
-                      <button @click="handleLogin" class="btn-accent font-bold py-2 px-4 rounded-lg">
+
+                      <button @click="handleLogin" class="btn-primary">
                           登录
                       </button>
-                  
+
                   </div>
                 </div>
-            
+
             </div>
-        
+
         </div>
-    
+
     </header>
 
     <div class="flex">
-        
-        <nav class="w-48 p-4 pt-6 border-r" :style="{ backgroundColor: 'var(--theme-bg-secondary)', borderColor: 'var(--theme-border)' }">
-            
+
+        <nav class="w-48 p-4 pt-6 border-r border-line bg-header/60">
+
             <ul class="space-y-2">
                 <li><RouterLink to="/" class="nav-link">主页</RouterLink></li>
                 <li><RouterLink to="/gacha" class="nav-link">抽卡系统</RouterLink></li>
@@ -101,50 +99,55 @@ onMounted(() => {
                 <li><RouterLink to="/guess" class="nav-link">🎭 猜角色</RouterLink></li>
                 <li><RouterLink to="/settings" class="nav-link">设置</RouterLink></li>
             </ul>
-        
+
         </nav>
-        
-        <main class="flex-1 p-6" :style="{ backgroundColor: 'var(--theme-bg-primary)' }">
+
+        <main class="flex-1 p-6 min-w-0">
           <RouterView />
         </main>
-    
+
     </div>
 
   </div>
 </template>
 
 <style>
-body { font-family: 'Noto Sans SC', sans-serif; }
+/* 应用底：皮肤材质（渐变/纹理随 data-skin 切换） */
+.app-shell {
+    background: var(--sk-app-bg);
+    background-attachment: fixed;
+}
 
 /* 导航链接样式 */
 .nav-link {
     display: block;
     padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    color: var(--theme-text-secondary);
+    border-radius: var(--sk-radius-control);
+    color: rgb(var(--c-ink-2));
     transition: all 0.2s;
 }
 
 .nav-link:hover {
-    background-color: var(--theme-bg-card);
-    color: var(--theme-text-primary);
+    background-color: rgb(var(--c-surface-2));
+    color: rgb(var(--c-ink));
 }
 
 /* 只有导航链接的选中状态才有强调色背景 */
 .nav-link.router-link-exact-active {
-    background-color: var(--theme-accent);
-    color: white;
+    background-color: rgb(var(--c-accent));
+    color: rgb(var(--c-on-accent));
     font-weight: bold;
+    box-shadow: var(--sk-glow-accent);
 }
 
 /* Logo 链接始终保持原样 */
 .logo-link.router-link-exact-active {
-    color: var(--theme-accent);
+    color: rgb(var(--c-accent));
     font-weight: bold;
     background: none;
 }
 
-/* Card effects */
+/* Card effects（稀有度特效：跨皮肤固定的品牌色，不随皮肤变） */
 .legendary-glow::before {
     content: '';
     position: absolute;

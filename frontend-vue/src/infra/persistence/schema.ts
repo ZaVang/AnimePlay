@@ -4,6 +4,7 @@
  * v1（无 version 字段）：S5 之前的历史存档，缺 presetSquads/towerProgress（塔进度刷新即丢的根因）。
  * v2：补入 presetSquads / towerProgress / version。
  * v3（S6）：补入 shopPurchases（商店每日限购计数）/ guess（猜角色最高分）。
+ * v4（S7）：补入 appearance（皮肤装扮，皮肤随账号走；将来点数兑换的 ownedSkins 也挂这里）。
  */
 import type { PityState } from '@/engine/gacha/draw';
 import type { CharacterNurtureData } from '@/types/nurture';
@@ -16,7 +17,7 @@ import type {
   TowerProgress,
 } from '@/types/player';
 
-export const SAVE_VERSION = 3 as const;
+export const SAVE_VERSION = 4 as const;
 
 /** 商店单品的当日购买记录（跨天读取时自动视为 0）。 */
 export interface ShopPurchaseRecord {
@@ -26,6 +27,11 @@ export interface ShopPurchaseRecord {
 
 export interface GuessGameSave {
   highScore: number;
+}
+
+/** 外观装扮（v4）。皮肤 id 对应 config/skins.ts 注册表；未知 id 由应用层回落默认。 */
+export interface AppearanceSave {
+  skinId: string;
 }
 
 /** playerState 的序列化形态（watchedAnime Set → 数组）。 */
@@ -61,6 +67,8 @@ export interface SavePayload {
   shopPurchases: Record<string, ShopPurchaseRecord>;
   /** v3 新增：猜角色最高分。 */
   guess: GuessGameSave;
+  /** v4 新增：皮肤装扮（随账号漫游）。 */
+  appearance: AppearanceSave;
 }
 
 /** 兼容别名（S5 时代命名）。 */
@@ -72,6 +80,11 @@ export function createDefaultPresetSquads(): PresetSquad[] {
     { id: 2, name: '小队 B', members: [null, null, null, null] },
     { id: 3, name: '小队 C', members: [null, null, null, null] },
   ];
+}
+
+/** 默认皮肤 id 与 config/skins.ts 的 DEFAULT_SKIN_ID 一致；未知 id 由 theme store 回落，故这里不依赖 config。 */
+export function createDefaultAppearance(): AppearanceSave {
+  return { skinId: 'warm' };
 }
 
 export function createDefaultTowerProgress(): TowerProgress {

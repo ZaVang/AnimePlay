@@ -76,6 +76,10 @@ describe('v1 → v2 迁移', () => {
     expect(v2.shopPurchases).toEqual({});
     expect(v2.guess).toEqual({ highScore: 0 });
   });
+
+  it('v4 新键：appearance 缺失补默认皮肤', () => {
+    expect(v2.appearance).toEqual({ skinId: 'warm' });
+  });
 });
 
 describe('v2 存档过迁移层', () => {
@@ -99,6 +103,16 @@ describe('v2 存档过迁移层', () => {
     });
     expect(out.shopPurchases.anime_ticket_1.count).toBe(3);
     expect(out.guess.highScore).toBe(85);
+  });
+
+  it('v4 存档的 appearance 原样保留（含未来未知皮肤 id，合法性由应用层把关）', () => {
+    expect(migrate({ version: 4, appearance: { skinId: 'neon' } }).appearance.skinId).toBe('neon');
+    expect(migrate({ version: 4, appearance: { skinId: 'limited_2027' } }).appearance.skinId).toBe('limited_2027');
+  });
+
+  it('appearance 形态损坏时回落默认皮肤', () => {
+    expect(migrate({ version: 4, appearance: { skinId: 42 } }).appearance).toEqual({ skinId: 'warm' });
+    expect(migrate({ version: 4, appearance: 'oops' }).appearance).toEqual({ skinId: 'warm' });
   });
 });
 

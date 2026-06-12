@@ -21,6 +21,7 @@ import { usePveStore } from './pve';
 import { useGachaStore } from './gachaStore';
 import { useShopStore } from './shop';
 import { useGuessStore } from './guess';
+import { useThemeStore } from './theme';
 import { createDefaultNurtureData } from '@/engine';
 import { SAVE_VERSION } from '@/infra/persistence';
 
@@ -69,6 +70,7 @@ function populateAllDomains() {
   useShopStore().recordPurchase('anime_ticket_1');
   useGuessStore().highScore = 85;
   data.trainingCooldowns = { charm_training: 1893456000000 };
+  useThemeStore().setSkin('neon'); // S7：皮肤随账号入档
 }
 
 describe('buildPayload ⇄ applyPayload 往返', () => {
@@ -76,8 +78,9 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
     populateAllDomains();
     const payload = JSON.parse(JSON.stringify(buildPayload())); // 模拟网络传输
 
-    // 清空一切再回放
+    // 清空一切再回放（皮肤按设计不随 reset 回滚，手动切回默认以验证 applyPayload 恢复）
     resetAllDomains();
+    useThemeStore().setSkin('warm');
     expect(useProfileStore().core.knowledgePoints).not.toBe(1234);
     applyPayload(payload);
 
@@ -112,6 +115,9 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
     expect(useShopStore().purchasedToday('anime_ticket_1')).toBe(1);
     expect(useGuessStore().highScore).toBe(85);
     expect(useNurtureStore().characterNurtureData.get(12393)?.trainingCooldowns).toEqual({ charm_training: 1893456000000 });
+
+    // S7 新增域：皮肤装扮（中途手动切回默认，验证 applyPayload 恢复账号皮肤）
+    expect(useThemeStore().currentSkinId).toBe('neon');
   });
 
   it('payload 带版本号与全部 schema 键', () => {
@@ -122,6 +128,7 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
       'state', 'animeCollection', 'characterCollection', 'animePity', 'characterPity',
       'animeHistory', 'characterHistory', 'favoriteAnime', 'favoriteCharacters',
       'characterNurtureData', 'presetSquads', 'towerProgress',
+      'shopPurchases', 'guess', 'appearance',
     ]) {
       expect(payload).toHaveProperty(key);
     }

@@ -14,6 +14,7 @@ import { usePveStore } from './pve';
 import { useGachaStore } from './gachaStore';
 import { useShopStore } from './shop';
 import { useGuessStore } from './guess';
+import { useThemeStore } from './theme';
 
 /** 从各领域 store 收集状态，装配为当前版本 payload。 */
 export function buildPayload(): SavePayload {
@@ -43,6 +44,7 @@ export function buildPayload(): SavePayload {
     ...pveData,
     shopPurchases: useShopStore().serialize(),
     guess: useGuessStore().serialize(),
+    appearance: { skinId: useThemeStore().currentSkinId },
   };
 }
 
@@ -75,6 +77,8 @@ export function applyPayload(payload: SavePayload) {
   });
   useShopStore().deserialize(payload.shopPurchases);
   useGuessStore().deserialize(payload.guess);
+  // 皮肤随账号走：账号存档覆盖设备缓存（登出/重置不回滚皮肤，见 resetAllDomains）
+  useThemeStore().applyFromSave(payload.appearance.skinId);
 }
 
 /** 全部领域回到初始态（新玩家 / 登出）。 */
@@ -88,6 +92,7 @@ export function resetAllDomains() {
   usePveStore().reset();
   useShopStore().reset();
   useGuessStore().reset();
+  // 注意：皮肤是设备/账号双层偏好，登出或新建账号不强制回滚到默认皮肤。
 }
 
 // 保存串行化 + 合并：同一时刻最多一个写请求在路上，连发的保存坍缩为一次

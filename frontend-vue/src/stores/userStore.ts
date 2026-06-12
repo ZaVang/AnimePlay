@@ -19,6 +19,7 @@ import { useNurtureStore } from './nurture';
 import { usePveStore } from './pve';
 import { useShopStore } from './shop';
 import { useGuessStore } from './guess';
+import { useThemeStore } from './theme';
 import { saveToServer, loadFromServer, resetAllDomains } from './persistence';
 
 // 类型转发（历史 import 路径兼容）
@@ -303,6 +304,9 @@ export const useUserStore = defineStore('user', () => {
 
     // guess（S6 接入经济）
     submitGuess,
+
+    // appearance（S7 皮肤随账号走；未登录时设置页直接用 theme store）
+    setSkin: (skinId: string) => { useThemeStore().setSkin(skinId); saveToServer(); },
 
     // nurture
     characterNurtureData: computed(() => nurture.characterNurtureData),
