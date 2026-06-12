@@ -6,9 +6,24 @@
  */
 import { usePlayerStore, useGameStore, useHistoryStore } from '@/stores/battle';
 import { ANNOUNCEMENTS, defaultRng, type EffectContext } from '@/engine';
+import type { Skill } from '@/types/skill';
 import { customHandlers } from './customHandlers';
 
 export type { EffectContext, BattleEvent, CombatRole } from '@/engine';
+
+/** 引擎层直接消化、不走 handler 的真实现效果（如被动光环强度走 engine/battle/strength）。 */
+const ENGINE_LEVEL_EFFECTS = new Set(['AURA_GENRE_EXPERT']);
+
+/** S8a 诚实化：该效果是否有真实现（false = 播报式占位 / 未注册 / 无 effectId）。 */
+export function isEffectImplemented(effectId?: string): boolean {
+  if (!effectId) return false;
+  return effectId in customHandlers || ENGINE_LEVEL_EFFECTS.has(effectId);
+}
+
+/** S8a 诚实化：技能是否真实生效（UI 据此挂「未实装」徽章）。 */
+export function isSkillImplemented(skill: Pick<Skill, 'effectId'>): boolean {
+  return isEffectImplemented(skill.effectId);
+}
 
 /** 调用方可不传 rng（默认 defaultRng）；测试场景传种子/序列源。 */
 export type EffectInvocation = Omit<EffectContext, 'rng'> & { rng?: EffectContext['rng'] };

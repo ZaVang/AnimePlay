@@ -16,6 +16,12 @@ describe('affordableCards', () => {
     const hand = [card(1, 3, 2), card(2, 5, 6), { id: 3, points: 1 } as unknown as AnimeCard];
     expect(affordableCards(hand, 3).map(c => c.id)).toEqual([1, 3]);
   });
+
+  it('S8a：注入费用解析器后按实际费用过滤（减费让原本出不起的牌可出）', () => {
+    const hand = [card(1, 3, 2), card(2, 5, 6)];
+    const costOf = (c: AnimeCard) => Math.max(0, (c.cost || 0) - 3); // 全员减 3 费
+    expect(affordableCards(hand, 3, costOf).map(c => c.id)).toEqual([1, 2]);
+  });
 });
 
 describe('chooseAttackCard', () => {
@@ -53,6 +59,12 @@ describe('chooseAttackStyle', () => {
   it('强度不足或 TP 不够 → 友好安利（不消耗随机数；0.5 哨兵若被消耗会翻成辛辣）', () => {
     expect(chooseAttackStyle(card(1, 3, 2), 9, createSequenceRng([0.5]))).toBe('友好安利');
     expect(chooseAttackStyle(card(1, 5, 3), 3, createSequenceRng([0.5]))).toBe('友好安利');
+  });
+
+  it('S8a：减费让「付不起辛辣」翻转为可辛辣', () => {
+    // 卡面 3 费 + 辛辣 1 = 4 > TP3 → 原本友好；减 1 费后 2+1=3 ≤ 3 → 60% 分支生效
+    const costOf = (c: AnimeCard) => Math.max(0, (c.cost || 0) - 1);
+    expect(chooseAttackStyle(card(1, 5, 3), 3, createSequenceRng([0.5]), costOf)).toBe('辛辣点评');
   });
 });
 

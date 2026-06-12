@@ -185,17 +185,6 @@ export const customHandlers: Record<string, EffectHandler> = {
     }
   },
 
-  '后藤一里_隐居创作': (ctx) => {
-    // TODO: 实现回合开始时，若己方TP<对方TP则抽1张牌的功能
-    if (ctx.event === 'onPlay') { // 简化处理，实际应该是回合开始
-      const playerStore = usePlayerStore();
-      const opponentId = ctx.playerId === 'playerA' ? 'playerB' : 'playerA';
-      if (playerStore[ctx.playerId].tp < playerStore[opponentId].tp) {
-        playerStore.drawCards(ctx.playerId, 1);
-      }
-    }
-  },
-
   // 忍野忍技能,
 
   '忍野忍_吸血冲击': (ctx) => {
@@ -338,29 +327,6 @@ export const customHandlers: Record<string, EffectHandler> = {
     historyStore.addLog(`${name} 分享团子治愈：双方声望提升。`, 'info');
   },
 
-  '古河渚_温柔鼓励': (ctx) => {
-    // TODO: 实现己方声望≤20时回合开始获得额外1TP的功能
-    if (ctx.event === 'onPlay') { // 简化处理
-      const playerStore = usePlayerStore();
-      if (playerStore[ctx.playerId].reputation <= 20) {
-        playerStore.changeTp(ctx.playerId, 1);
-      }
-    }
-  },
-
-  // 晓美焰技能,
-
-  '八奈见杏菜_人气者': (ctx) => {
-    if (ctx.event === 'onPlay' && ctx.rng.next() < 0.3) {
-      const playerStore = usePlayerStore();
-      const historyStore = useHistoryStore();
-      
-      playerStore.changeTp(ctx.playerId, 1);
-      const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-      historyStore.addLog(`${name} 的人气者魅力：获得1TP。`, 'info');
-    }
-  },
-
   // 坂田银时技能,
 
   '坂田银时_武士觉醒': (ctx) => {
@@ -376,26 +342,6 @@ export const customHandlers: Record<string, EffectHandler> = {
     }
   },
 
-  '平泽唯_天然直觉': (ctx) => {
-    // TODO: 实现己方打出的第一张音乐类卡牌每回合强度+1的功能
-    if (ctx.event === 'beforeResolve' && ctx.card?.synergy_tags?.includes('音乐') && ctx.addStrengthBonus) {
-      ctx.addStrengthBonus(ctx.role, 1);
-    }
-  },
-
-  // C.C.技能,
-
-  'CC_不死之身': (ctx) => {
-    const playerStore = usePlayerStore();
-    const historyStore = useHistoryStore();
-    
-    if (ctx.event === 'onPlay' && playerStore[ctx.playerId].reputation < 10) {
-      playerStore.changeReputation(ctx.playerId, 2);
-      const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-      historyStore.addLog(`${name} 的不死之身：声望自动恢复。`, 'info');
-    }
-  },
-
   // 远坂凛技能,
 
   '喜多郁代_社交网络': (ctx) => {
@@ -407,21 +353,6 @@ export const customHandlers: Record<string, EffectHandler> = {
     
     const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
     historyStore.addLog(`${name} 展开社交网络：查看对手手牌并抽牌。`, 'info');
-  },
-
-  '喜多郁代_阳光魅力': (ctx) => {
-    if (ctx.event === 'onPlay') {
-      const gameStore = useGameStore();
-      const playerStore = usePlayerStore();
-      const historyStore = useHistoryStore();
-      
-      const bias = ctx.playerId === 'playerA' ? gameStore.topicBias : -gameStore.topicBias;
-      if (bias > 0) {
-        playerStore.changeTp(ctx.playerId, 1);
-        const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-        historyStore.addLog(`${name} 的阳光魅力：议题优势，获得1TP。`, 'info');
-      }
-    }
   },
 
   // 惠惠技能,
@@ -545,27 +476,6 @@ export const customHandlers: Record<string, EffectHandler> = {
     historyStore.addLog(`${name} 展现治愈笑容：双方声望+2，己方抽牌。`, 'info');
   },
 
-  '椎名真由理_天然黑洞': (ctx) => {
-    // TODO: 实现对手每使用一次技能，己方有30%几率获得1TP的功能
-    if (ctx.rng.next() < 0.3) {
-      const playerStore = usePlayerStore();
-      const historyStore = useHistoryStore();
-      
-      playerStore.changeTp(ctx.playerId, 1);
-      const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-      historyStore.addLog(`${name} 的天然黑洞：吸收对手技能能量，获得1TP。`, 'info');
-    }
-  },
-
-  // 芙莉莲技能,
-
-  '高坂丽奈_音乐世家': (ctx) => {
-    // TODO: 实现己方打出的第一张校园类卡牌每回合+2强度的功能
-    if (ctx.event === 'beforeResolve' && ctx.card?.synergy_tags?.includes('校园') && ctx.addStrengthBonus) {
-      ctx.addStrengthBonus(ctx.role, 2);
-    }
-  },
-
   // 藤原千花技能,
 
   '藤原千花_千花游戏': (ctx) => {
@@ -591,14 +501,6 @@ export const customHandlers: Record<string, EffectHandler> = {
     historyStore.addLog(`${name} 制作进行：精选牌库卡牌。`, 'info');
   },
 
-  '宫森葵_团队合作': (ctx) => {
-    // TODO: 实现己方打出的第2张和第3张不同类型的卡牌都+1强度的功能
-    if (ctx.event === 'beforeResolve' && ctx.addStrengthBonus) {
-      // 简化检测：假设是多样化出牌
-      ctx.addStrengthBonus(ctx.role, 1);
-    }
-  },
-
   // 折木奉太郎技能,
 
   '折木奉太郎_节能推理': (ctx) => {
@@ -615,17 +517,6 @@ export const customHandlers: Record<string, EffectHandler> = {
     }
   },
 
-  '立华奏_沉默威严': (ctx) => {
-    // TODO: 实现对手使用技能时有20%几率无效化的功能
-    if (ctx.rng.next() < 0.2) {
-      const playerStore = usePlayerStore();
-      const historyStore = useHistoryStore();
-      const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-      historyStore.addLog(`${name} 的沉默威严：技能被无效化。`, 'info');
-      // TODO: 实际实现技能无效化机制
-    }
-  },
-
   // 由比滨结衣技能,
 
   '由比滨结衣_察言观色': (ctx) => {
@@ -637,21 +528,6 @@ export const customHandlers: Record<string, EffectHandler> = {
     
     const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
     historyStore.addLog(`${name} 察言观色：侦查对手获得1TP。`, 'info');
-  },
-
-  '由比滨结衣_温柔体贴': (ctx) => {
-    if (ctx.event === 'onPlay') {
-      const playerStore = usePlayerStore();
-      const historyStore = useHistoryStore();
-      const opponentId = ctx.playerId === 'playerA' ? 'playerB' : 'playerA';
-      const repDiff = Math.abs(playerStore[ctx.playerId].reputation - playerStore[opponentId].reputation);
-      
-      if (repDiff >= 5) {
-        playerStore.changeTp(ctx.playerId, 1);
-        const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-        historyStore.addLog(`${name} 的温柔体贴：声望差距大时获得1TP。`, 'info');
-      }
-    }
   },
 
   // 草薙素子技能,
@@ -667,14 +543,6 @@ export const customHandlers: Record<string, EffectHandler> = {
     
     const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
     historyStore.addLog(`${name} 冷静分析：重构双方手牌。`, 'info');
-  },
-
-  '柊镜_双子感应': (ctx) => {
-    // TODO: 实现己方打出与上张卡牌相同类型时强度+2的功能
-    if (ctx.event === 'beforeResolve' && ctx.addStrengthBonus) {
-      // 简化检测：假设是连续同类型
-      ctx.addStrengthBonus(ctx.role, 2);
-    }
   },
 
   // 阿良良木历技能,
@@ -762,21 +630,6 @@ export const customHandlers: Record<string, EffectHandler> = {
     }
   },
 
-  '赫萝_丰收之神': (ctx) => {
-    // TODO: 实现己方每打出3张不同类型的卡牌后抽1张牌的功能
-    if (ctx.event === 'onPlay') {
-      // 简化检测：每次打出卡牌时有33%几率抽牌
-      if (ctx.rng.next() < 0.33) {
-        const playerStore = usePlayerStore();
-        const historyStore = useHistoryStore();
-        
-        playerStore.drawCards(ctx.playerId, 1);
-        const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-        historyStore.addLog(`${name} 的丰收之神：多样化出牌，抽1张牌。`, 'info');
-      }
-    }
-  },
-
   // 藤林杏技能,
 
   '珂朵莉_诺塔_瑟尼欧里斯_圣剑解放': (ctx) => {
@@ -799,20 +652,6 @@ export const customHandlers: Record<string, EffectHandler> = {
     }
   },
 
-  // 史派克技能,
-
-  '史派克_斯皮格尔_赏金猎人': (ctx) => {
-    // TODO: 实现己方造成对手声望损失时有40%几率获得1TP的功能
-    if (ctx.rng.next() < 0.4) {
-      const playerStore = usePlayerStore();
-      const historyStore = useHistoryStore();
-      
-      playerStore.changeTp(ctx.playerId, 1);
-      const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-      historyStore.addLog(`${name} 的赏金猎人：造成损失获得1TP。`, 'info');
-    }
-  },
-
   // 安原绘麻技能,
 
   '安原绘麻_内向专注': (ctx) => {
@@ -829,37 +668,48 @@ export const customHandlers: Record<string, EffectHandler> = {
   '妮亚_天真好奇': (ctx) => {
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
-    
+
     // TODO: 实现查看对手3张手牌，每种不同类型令己方抽1张牌的功能
     playerStore.drawCards(ctx.playerId, 2); // 简化为抽2张
-    
+
     const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
     historyStore.addLog(`${name} 天真好奇：侦查多样性，抽2张牌。`, 'info');
   },
 
-  '妮亚_螺旋公主': (ctx) => {
-    if (ctx.event === 'afterResolve') {
-      const gameStore = useGameStore();
-      // TODO: 实现己方议题偏向变化时额外+1（朝己方有利方向）的功能
-      const delta = ctx.playerId === 'playerA' ? 1 : -1;
-      gameStore.updateTopicBias(delta);
-    }
+  // === S8a 补全：#36 志摩凛 / #37 三笠（设计即按已消费原语落地，无假实现）===
+
+  '志摩凛_秘境营地': (ctx) => {
+    const playerStore = usePlayerStore();
+    const gameStore = useGameStore();
+    persistentEffects.addCardTypeStrengthBonus(ctx.playerId, '日常', 2, 1);
+    playerStore.changeTp(ctx.playerId, 1);
+    gameStore.addNotification('秘境营地：日常+2强度，TP+1', 'info');
   },
 
-  // 安和昴技能,
-
-  '安和昴_世渡_上手': (ctx) => {
-    if (ctx.event === 'onPlay') {
-      const gameStore = useGameStore();
-      const playerStore = usePlayerStore();
-      const historyStore = useHistoryStore();
-      
-      const bias = ctx.playerId === 'playerA' ? gameStore.topicBias : -gameStore.topicBias;
-      if (bias > 0) {
-        playerStore.changeTp(ctx.playerId, 1);
-        const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-        historyStore.addLog(`${name} 世渡り上手：议题优势，获得1TP。`, 'info');
-      }
-    }
+  '志摩凛_围炉夜话': (ctx) => {
+    // 打出日常卡且（出牌后）手牌≤3 → 抽1
+    if (ctx.event !== 'onPlay' || !ctx.card?.synergy_tags?.includes('日常')) return;
+    const playerStore = usePlayerStore();
+    if (playerStore[ctx.playerId].hand.length > 3) return;
+    playerStore.drawCards(ctx.playerId, 1);
+    const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
+    useHistoryStore().addLog(`${name} 的围炉夜话：手牌告急，抽1张牌。`, 'info');
   },
+
+  '三笠_阿克曼_立体机动': (ctx) => {
+    const playerStore = usePlayerStore();
+    const gameStore = useGameStore();
+    persistentEffects.addCardTypeStrengthBonus(ctx.playerId, '战斗', 2, 1);
+    playerStore.drawCards(ctx.playerId, 1);
+    gameStore.addNotification('立体机动：战斗+2强度，抽1张', 'info');
+  },
+
+  '三笠_阿克曼_阿克曼血统': (ctx) => {
+    if (ctx.event !== 'beforeResolve' || !ctx.addStrengthBonus) return;
+    const playerStore = usePlayerStore();
+    if (playerStore[ctx.playerId].reputation > 15) return;
+    ctx.addStrengthBonus(ctx.role, 1);
+    useHistoryStore().addLog('阿克曼血统觉醒：+1强度。', 'info');
+  },
+
 };

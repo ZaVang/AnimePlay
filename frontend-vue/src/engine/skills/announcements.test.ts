@@ -8,8 +8,14 @@ import { ANNOUNCEMENTS } from './announcements';
 describe('ANNOUNCEMENTS 表', () => {
   const entries = Object.entries(ANNOUNCEMENTS);
 
-  it('共 72 条（S4 收编自 skills/effects 的播报式假实现）', () => {
-    expect(entries).toHaveLength(72);
+  it('共 88 条（S4 收编 72 + S8a 降级 16 个行为不符设计的半假被动）', () => {
+    expect(entries).toHaveLength(88);
+  });
+
+  it('S8a 降级的半假被动已入表为静默占位（原 handler 见 git 历史，S8b/c 按缺口复活）', () => {
+    for (const id of ['CC_不死之身', '喜多郁代_阳光魅力', '平泽唯_天然直觉', '椎名真由理_天然黑洞']) {
+      expect(ANNOUNCEMENTS[id]).toEqual({});
+    }
   });
 
   it('条目形状合法：log/notify 至少其一或为静默占位', () => {

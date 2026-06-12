@@ -106,6 +106,23 @@ export class PersistentEffectTracker {
     return this.restrictions.has(`${playerId}_${restrictionType}`);
   }
 
+  /** 读取限制的附加数据（S8a：供消费端取 skillId/actionType 等；无该限制返回 undefined）。 */
+  getRestriction(playerId: PlayerId, restrictionType: string): unknown | undefined {
+    return this.restrictions.get(`${playerId}_${restrictionType}`)?.data;
+  }
+
+  /** 技能是否被禁用（S8a 消费端谓词）：skillId 为 '*' 表示全体技能禁用。 */
+  isSkillDisabled(playerId: PlayerId, skillId: string): boolean {
+    const data = this.getRestriction(playerId, 'skill_disabled') as { skillId?: string } | undefined;
+    return !!data && (data.skillId === '*' || data.skillId === skillId);
+  }
+
+  /** 被强制的行动类型（S8a 消费端谓词；如 'friendly_only' = 只能友好安利），无则 undefined。 */
+  getForcedAction(playerId: PlayerId): string | undefined {
+    const data = this.getRestriction(playerId, 'forced_action') as { actionType?: string } | undefined;
+    return data?.actionType;
+  }
+
   addRestriction(playerId: PlayerId, restrictionType: string, data: unknown, duration: number = 1) {
     this.restrictions.set(`${playerId}_${restrictionType}`, { data, duration });
   }

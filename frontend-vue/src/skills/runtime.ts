@@ -4,10 +4,32 @@
  */
 import { useGameStore, usePlayerStore, useHistoryStore } from '@/stores/battle';
 import type { Card, Skill } from '@/types';
-import { runEffect } from './effects';
+import { runEffect, isEffectImplemented } from './effects';
 import type { ClashInfo } from '@/types/battle';
 import type { AnimeCard } from '@/types/card';
-import { statusEffects } from './systems';
+import { statusEffects, persistentEffects } from './systems';
+import type { EffectInvocation } from './effects';
+
+/**
+ * S8a 第四钩子：角色被动光环的事件管线。
+ * 此前被动技能从未被分发（仅 AURA_GENRE_EXPERT 经 engine/battle/strength 生效），
+ * customHandlers 里 27 个已写好的真被动一直是死代码。现在：
+ *  - 只触发**主辩手**的被动（绑定轮换机制，与「场上全角色」的强度光环刻意区分）；
+ *  - 只分发有真实现的 effectId——播报式占位被动保持静默（UI 已标「未实装」，不再假播报）。
+ */
+async function emitActivePassives(
+  playerId: 'playerA' | 'playerB',
+  invocation: Omit<EffectInvocation, 'playerId'>,
+) {
+  const player = usePlayerStore()[playerId];
+  const active = player.characters[player.activeCharacterIndex];
+  for (const skill of active?.skills || []) {
+    if (skill.type !== '被动光环' || !skill.effectId) continue;
+    if (skill.effectId === 'AURA_GENRE_EXPERT') continue; // 强度光环走 engine 结算
+    if (!isEffectImplemented(skill.effectId)) continue;
+    await runEffect(skill.effectId, { ...invocation, playerId });
+  }
+}
 
 export const SkillSystem = {
   /**
@@ -43,6 +65,8 @@ export const SkillSystem = {
       for (const e of onPlayEffects) {
         await runEffect(e.effectId, { event: 'onPlay', playerId, role: 'attacker', card: anime });
       }
+      // S8a：出牌方主辩手的被动响应 onPlay（如 科学逻辑「打出科幻卡 30% 抽1」）
+      await emitActivePassives(playerId, { event: 'onPlay', role: 'attacker', card: anime });
     }
   },
 
@@ -65,6 +89,9 @@ export const SkillSystem = {
         await runEffect(e.effectId, { event: 'beforeResolve', playerId: defenderId, role: 'defender', card: clash.defendingCard, clash, addStrengthBonus });
       }
     }
+    // S8a：双方主辩手被动响应 beforeResolve（携带各自的出牌；强度注入经 addStrengthBonus）
+    await emitActivePassives(attackerId, { event: 'beforeResolve', role: 'attacker', card: clash.attackingCard, clash, addStrengthBonus });
+    await emitActivePassives(defenderId, { event: 'beforeResolve', role: 'defender', card: clash.defendingCard, clash, addStrengthBonus });
   },
 
   /**
@@ -85,6 +112,9 @@ export const SkillSystem = {
         await runEffect(e.effectId, { event: 'afterResolve', playerId: defenderId, role: 'defender', card: clash.defendingCard, clash });
       }
     }
+    // S8a：双方主辩手被动响应 afterResolve
+    await emitActivePassives(attackerId, { event: 'afterResolve', role: 'attacker', card: clash.attackingCard, clash });
+    await emitActivePassives(defenderId, { event: 'afterResolve', role: 'defender', card: clash.defendingCard, clash });
   },
 
   // getAuraStrengthBonus 已移除：S2 起由 engine/battle/strength.auraStrengthBonus 提供（battleFlow 调用），此处零引用。
@@ -104,7 +134,10 @@ export const SkillSystem = {
       return false; // Skill on cooldown
     }
 
-    // TODO: Add other conditions like game phase, character status, etc.
+    // S8a：消费禁技限制（如 绝对沉默/电子战 的「对手技能禁用」，'*' 为全体禁用）
+    if (persistentEffects.isSkillDisabled(playerId, skill.id)) {
+      return false;
+    }
 
     return true;
   },

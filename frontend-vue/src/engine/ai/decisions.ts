@@ -16,9 +16,20 @@ export interface DefenseDecision {
   style?: DefenseStyle;
 }
 
+/**
+ * 费用解析器（S8a）：调用方可注入「考虑持续效果减费后的实际费用」；
+ * 缺省取卡面费用，保持旧行为。engine 不读追踪器，事实由 store 层换算后传入。
+ */
+export type CostResolver = (card: AnimeCard) => number;
+const faceCost: CostResolver = card => card.cost || 0;
+
 /** 当前 TP 出得起的牌。 */
-export function affordableCards(hand: readonly AnimeCard[], tp: number): AnimeCard[] {
-  return hand.filter(card => (card.cost || 0) <= tp);
+export function affordableCards(
+  hand: readonly AnimeCard[],
+  tp: number,
+  costOf: CostResolver = faceCost,
+): AnimeCard[] {
+  return hand.filter(card => costOf(card) <= tp);
 }
 
 /** 性价比 = 强度 / 费用（防除零）。 */
@@ -43,9 +54,14 @@ export function chooseAttackCard(playable: readonly AnimeCard[], rng: RNG): Anim
 }
 
 /** 选攻击方式：TP 够付 +1 且强度 ≥4 时 60% 辛辣点评，否则友好安利。 */
-export function chooseAttackStyle(card: AnimeCard, tp: number, rng: RNG): AttackStyle {
+export function chooseAttackStyle(
+  card: AnimeCard,
+  tp: number,
+  rng: RNG,
+  costOf: CostResolver = faceCost,
+): AttackStyle {
   const cardStrength = card.points || 1;
-  const canAffordHarsh = (card.cost || 0) + 1 <= tp;
+  const canAffordHarsh = costOf(card) + 1 <= tp;
 
   if (canAffordHarsh && cardStrength >= 4) {
     return rng.next() < 0.6 ? '辛辣点评' : '友好安利';
@@ -83,15 +99,16 @@ export function chooseDefense(
   tp: number,
   attackerStrength: number,
   rng: RNG,
+  costOf: CostResolver = faceCost,
 ): DefenseDecision {
-  const affordable = affordableCards(hand, tp);
+  const affordable = affordableCards(hand, tp, costOf);
   if (affordable.length === 0) return { defend: false };
 
   const bestDefenseCard = affordable.reduce((best, card) =>
     valueScore(card) > valueScore(best) ? card : best,
   );
 
-  const canAffordRebuttal = (bestDefenseCard.cost || 0) + 1 <= tp;
+  const canAffordRebuttal = costOf(bestDefenseCard) + 1 <= tp;
   const shouldRebuttal = canAffordRebuttal && attackerStrength >= 3;
   const style: DefenseStyle = shouldRebuttal && rng.next() < 0.7 ? '反驳' : '赞同';
 

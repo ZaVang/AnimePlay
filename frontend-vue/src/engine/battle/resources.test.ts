@@ -2,7 +2,7 @@
  * 资源规则特征测试（S2，原 ResourceManager 行为锁定）。
  */
 import { describe, it, expect } from 'vitest';
-import { drawCards, discardCard, shuffleDeck, spendTp, gainTp, restoreTpForNewTurn, MAX_HAND_SIZE } from './resources';
+import { drawCards, discardCard, shuffleDeck, spendTp, gainTp, restoreTpForNewTurn, effectiveCardCost, MAX_HAND_SIZE } from './resources';
 import { createSeededRng } from '../rng';
 import type { PlayerState } from '@/types';
 import type { AnimeCard } from '@/types/card';
@@ -76,6 +76,16 @@ describe('shuffleDeck', () => {
     expect(a.deck.map(x => x.id)).toEqual(b.deck.map(x => x.id));
     expect(a.deck.map(x => x.id)).not.toEqual(c.deck.map(x => x.id));
     expect([...a.deck.map(x => x.id)].sort((x, y) => x - y)).toEqual(deck.map(x => x.id));
+  });
+});
+
+describe('effectiveCardCost（S8a：减费首次被消费）', () => {
+  it('卡面费用 − 减免，下限 0', () => {
+    expect(effectiveCardCost(3, 1)).toBe(2);
+    expect(effectiveCardCost(2, 5)).toBe(0); // 减免超过费用 → 0
+    expect(effectiveCardCost(undefined, 1)).toBe(0); // 无费用卡
+    expect(effectiveCardCost(3, 0)).toBe(3);
+    expect(effectiveCardCost(3, -2)).toBe(3); // 负减免视为 0（防御性）
   });
 });
 

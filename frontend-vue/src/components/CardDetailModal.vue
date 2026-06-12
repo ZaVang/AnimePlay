@@ -6,6 +6,7 @@ import { GAME_CONFIG } from '@/config/gameConfig';
 import type { Card, AnimeCard, CharacterCard } from '@/types/card';
 import type { Skill } from '@/types/skill';
 import { getEffectText, getTriggerText } from '@/skills/effects/descriptions';
+import { isSkillImplemented } from '@/skills/effects';
 
 const props = defineProps<{
   card: Card | null;
@@ -74,6 +75,7 @@ const processedAnimeNames = computed(() => {
 function closeModal() {
   emit('close');
 }
+
 
 function handleDismantle() {
     if (props.card) {
@@ -152,7 +154,9 @@ function handleDismantle() {
               <!-- Character Card Battle Info -->
               <div v-if="cardType === 'character'" class="space-y-4">
                 <div v-if="activeSkill" class="p-3 bg-danger/10 rounded-lg">
-                  <h4 class="font-bold text-danger">主动技能: {{ activeSkill.name }}</h4>
+                  <h4 class="font-bold text-danger">主动技能: {{ activeSkill.name }}
+                    <span v-if="!isSkillImplemented(activeSkill)" class="badge-unimplemented" title="该技能尚未实装：当前不产生实际效果（S8 实装中）">⚠️ 未实装</span>
+                  </h4>
                   <p class="text-xs text-ink-2 mt-1">[消耗: {{ activeSkill.cost || 0 }} TP] [冷却: {{ activeSkill.cooldown || 0 }} 回合]</p>
                   <p class="text-sm mt-2">{{ activeSkill.description }}</p>
                   <div v-if="activeSkill.effectId" class="mt-2">
@@ -171,7 +175,9 @@ function handleDismantle() {
                   </div>
                 </div>
                 <div v-if="passiveSkill" class="p-3 bg-accent-soft rounded-lg">
-                  <h4 class="font-bold text-accent">被动光环: {{ passiveSkill.name }}</h4>
+                  <h4 class="font-bold text-accent">被动光环: {{ passiveSkill.name }}
+                    <span v-if="!isSkillImplemented(passiveSkill)" class="badge-unimplemented" title="该技能尚未实装：当前不产生实际效果（S8 实装中）">⚠️ 未实装</span>
+                  </h4>
                   <p class="text-sm mt-2">{{ passiveSkill.description }}</p>
                   <div v-if="passiveSkill.effectId" class="mt-2">
                     <ul class="mt-1">
@@ -227,3 +233,9 @@ function handleDismantle() {
     </div>
   </div>
 </template>
+
+<style scoped>
+.badge-unimplemented {
+  @apply ml-1 align-middle text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-warning/15 text-warning border border-warning/40;
+}
+</style>

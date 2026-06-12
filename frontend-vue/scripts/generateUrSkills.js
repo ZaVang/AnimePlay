@@ -1,16 +1,21 @@
 // 生成UR角色技能配置的脚本
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+// S8a：原脚本硬编码原作者机器的绝对路径，改为相对仓库根定位（脚本在 frontend-vue/scripts/ 下）
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const REPO_ROOT = path.resolve(__dirname, '../..');
 
 // 从角色数据文件读取UR角色信息
 const characterData = JSON.parse(fs.readFileSync(
-  '/Users/lilithgames/Downloads/lilith/bangumi/data/selected_character/all_cards.json', 
+  path.join(REPO_ROOT, 'data/selected_character/all_cards.json'), 
   'utf8'
 ));
 
 // 从技能设计文档解析技能信息
 const skillDoc = fs.readFileSync(
-  '/Users/lilithgames/Downloads/lilith/bangumi/docs/UR角色技能设计.md',
+  path.join(REPO_ROOT, 'docs/UR角色技能设计.md'),
   'utf8'
 );
 
@@ -20,7 +25,7 @@ const urCharacters = characterData.filter(char => char.rarity === 'UR');
 console.log(`找到 ${urCharacters.length} 个UR角色`);
 
 // 生成技能ID的函数
-function generateSkillId(characterName, skillName, isPassive = false) {
+function generateSkillId(characterName, skillName, _isPassive = false) {
   const cleanName = characterName
     .replace(/[·／]/g, '_')
     .replace(/[^\w\u4e00-\u9fa5]/g, '')
@@ -42,7 +47,7 @@ function parseSkillsFromDoc() {
   // 简单的正则解析（这里需要根据实际文档格式调整）
   const characterBlocks = skillDoc.split('### ').slice(1); // 跳过第一个空块
   
-  characterBlocks.forEach((block, index) => {
+  characterBlocks.forEach((block, _index) => {
     const lines = block.split('\n');
     const firstLine = lines[0];
     
@@ -169,7 +174,7 @@ try {
   
   // 输出到文件
   fs.writeFileSync(
-    '/Users/lilithgames/Downloads/lilith/bangumi/frontend-vue/src/data/urCharacterSkillsGenerated.ts',
+    path.join(__dirname, '../src/data/urCharacterSkillsGenerated.ts'),
     skillFileContent
   );
   

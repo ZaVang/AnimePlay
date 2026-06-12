@@ -2,6 +2,7 @@
 import { computed } from 'vue';
 import { usePlayerStore } from '@/stores/battle';
 import { SkillSystem } from '@/skills/runtime';
+import { isSkillImplemented } from '@/skills/effects';
 import type { Card, Skill } from '@/types';
 
 const props = defineProps<{
@@ -43,7 +44,14 @@ const canRotate = computed(() => {
         <div v-else class="skills-list">
           <div v-for="skill in character.skills" :key="skill.id" class="skill-item">
             <div class="skill-header">
-              <span class="font-bold">{{ skill.name }}</span>
+              <span class="font-bold">{{ skill.name }}
+                <!-- S8a 诚实化：播报式/占位技能明示未实装 -->
+                <span
+                  v-if="!isSkillImplemented(skill)"
+                  class="badge-unimplemented"
+                  title="该技能尚未实装：当前不产生实际效果（S8 实装中）"
+                >⚠️ 未实装</span>
+              </span>
               <span class="text-xs px-2 py-1 rounded-full" :class="skill.type === '被动光环' ? 'bg-surface-2 text-ink-2' : 'bg-accent text-on-accent'">{{ skill.type }}</span>
             </div>
             <p class="text-sm text-ink-2 mt-1">{{ skill.description }}</p>
@@ -109,6 +117,9 @@ const canRotate = computed(() => {
 }
 .skill-header, .skill-footer {
   @apply flex items-center justify-between gap-2;
+}
+.badge-unimplemented {
+  @apply ml-1 align-middle text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-warning/15 text-warning border border-warning/40;
 }
 .btn-use-skill {
   @apply bg-accent hover:bg-accent-strong disabled:bg-surface-2 disabled:text-ink-3 disabled:cursor-not-allowed text-on-accent font-bold py-1 px-3 rounded;

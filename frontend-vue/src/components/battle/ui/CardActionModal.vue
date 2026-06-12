@@ -2,6 +2,8 @@
 import type { AnimeCard as AnimeCardType } from '@/types/card';
 import AnimeCard from '@/components/AnimeCard.vue'; // Use the standard AnimeCard
 import { useGameStore } from '@/stores/battle';
+import { persistentEffects } from '@/skills/systems';
+import { effectiveCardCost } from '@/engine';
 import { computed } from 'vue';
 
 const props = defineProps<{
@@ -16,6 +18,14 @@ const emit = defineEmits<{
 
 const gameStore = useGameStore();
 const isDefensePhase = computed(() => gameStore.phase === 'defense');
+
+// S8a：显示实际费用（含持续效果减费；本弹窗只服务玩家侧 playerA）。
+// 追踪器非响应式，但弹窗每次打开经 v-if 重建，取值即当前状态。
+const effCost = computed(() =>
+  effectiveCardCost(props.card.cost, persistentEffects.getCostReduction('playerA', props.card.synergy_tags || [])),
+);
+// S8a：被强制友好安利时禁用辛辣点评（battleFlow 同口径钳制兜底）
+const forcedFriendly = computed(() => persistentEffects.getForcedAction('playerA') === 'friendly_only');
 </script>
 
 <template>
@@ -32,22 +42,27 @@ const isDefensePhase = computed(() => gameStore.phase === 'defense');
         <template v-if="isDefensePhase">
           <button @click="emit('play', '赞同')" class="btn-primary">
             <p class="font-bold">赞同</p>
-            <p class="text-xs">花费 {{ card.cost || 0 }} TP</p>
+            <p class="text-xs">花费 {{ effCost }} TP</p>
           </button>
           <button @click="emit('play', '反驳')" class="btn-secondary">
             <p class="font-bold">反驳</p>
-            <p class="text-xs">花费 {{ (card.cost || 0) + 1 }} TP</p>
+            <p class="text-xs">花费 {{ effCost + 1 }} TP</p>
           </button>
         </template>
         <!-- Action Phase Buttons -->
         <template v-else>
           <button @click="emit('play', '友好安利')" class="btn-primary">
             <p class="font-bold">友好安利</p>
-            <p class="text-xs">花费 {{ card.cost || 0 }} TP</p>
+            <p class="text-xs">花费 {{ effCost }} TP</p>
           </button>
-          <button @click="emit('play', '辛辣点评')" class="btn-secondary">
+          <button
+            @click="emit('play', '辛辣点评')"
+            class="btn-secondary"
+            :disabled="forcedFriendly"
+            :title="forcedFriendly ? '受效果限制，本回合只能友好安利' : ''"
+          >
             <p class="font-bold">辛辣点评</p>
-            <p class="text-xs">花费 {{ (card.cost || 0) + 1 }} TP</p>
+            <p class="text-xs">{{ forcedFriendly ? '被强制友好' : `花费 ${effCost + 1} TP` }}</p>
           </button>
         </template>
       </div>
@@ -96,5 +111,8 @@ const isDefensePhase = computed(() => gameStore.phase === 'defense');
 /* 辛辣/反驳为攻击风格识别色（红），刻意保持固定，不随皮肤 */
 .btn-secondary {
   @apply bg-red-600 hover:bg-red-700 text-white;
+}
+.btn-secondary:disabled {
+  @apply opacity-45 cursor-not-allowed hover:bg-red-600;
 }
 </style>
