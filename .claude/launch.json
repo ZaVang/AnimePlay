@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "backend",
+      "runtimeExecutable": "D:\\work\\AnimePlay\\.venv\\Scripts\\python.exe",
+      "runtimeArgs": ["start_server.py"],
+      "port": 5001
+    },
+    {
+      "name": "frontend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "frontend-vue", "run", "dev", "--", "--port", "5273", "--strictPort"],
+      "port": 5273
+    }
+  ]
+}
