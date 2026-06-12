@@ -3,8 +3,8 @@ import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue';
 import { useGameStore, usePlayerStore } from '@/stores/battle';
 import { BattleSetup } from '@/stores/battleSetup';
 import { BattleFlow } from '@/stores/battleFlow';
-import { InteractionSystem } from '@/core/systems/InteractionSystem';
-import { PersistentEffectSystem } from '@/core/systems/PersistentEffectSystem';
+import { InteractionSystem } from '@/skills/interaction';
+import { clearBattleSkillState } from '@/skills/systems';
 import type { Deck } from '@/stores/userStore';
 
 import DeckSelector from '@/components/battle/ui/DeckSelector.vue';
@@ -51,7 +51,7 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   // Clean up systems when leaving battle
-  PersistentEffectSystem.getInstance().clearAll();
+  clearBattleSkillState();
 });
 
 function handleDeckSelected(deck: Deck, aiProfileId?: string) {
@@ -92,7 +92,7 @@ function handleExitBattle() {
       playerStore.clearPlayers();
       
       // 清理持久化效果系统
-      PersistentEffectSystem.getInstance().clearAll();
+      clearBattleSkillState();
       
       // 返回卡组选择界面
       battlePhase.value = 'deckSelection';

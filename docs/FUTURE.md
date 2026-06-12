@@ -28,7 +28,7 @@
 | S1 | 测试安全网 & 架构骨架 | ✅ | 已完成 |
 | S2 | engine 抽取：宅理论战 | ✅ | 已完成 |
 | S3 | engine 抽取：抽卡 & 挑战塔 | ✅ | 已完成 |
-| S4 | engine 抽取：技能 & 养成 & AI | ☐ | 解耦 |
+| S4 | engine 抽取：技能 & 养成 & AI | ✅ | 已完成 |
 | S5 | 拆 god store & 持久化 | ☐ | 解耦 |
 | S6 | 功能闭环 | ☐ | 补完 |
 | S7 | 视觉还债 | ☐ | 补完 |
@@ -100,18 +100,22 @@
 
 ---
 
-## ☐ S4 — engine 抽取：技能 & 养成 & AI（解耦）
+## ✅ S4 — engine 抽取：技能 & 养成 & AI（已完成 2026-06-12）
 
 **目标**：剩余逻辑入 engine，提炼技能参数化原语，`core/` 旧目录清空。
 
-- [ ] `skills/effects` → `engine/skills`（注册表 + handlers）
-- [ ] 提炼参数化原语（加成 / 抽牌 / 查看手牌 / 强制类型… ~10 个），为 S8 真实现铺路
-- [ ] nurture 等级/属性/训练规则 → `engine/nurture`
-- [ ] `core/ai` → `engine/ai`（给定 state 纯函数化）
-- [ ] 替换剩余全部 `Math.random` → rng
-- [ ] 清理 `skills/effects/index.ts` 历史 lint 债（18 处 unused `ctx`，S1 移交）
+- [x] 技能系统重组为「纯数据/纯类入 engine + 薄执行器留 skills/」：
+  - `engine/skills/announcements.ts` —— **72 个播报式假实现收敛为纯数据表**（35 条带文案 `{name}` 占位 + 37 条静默占位），S8 真实现一个就从表里删一个；
+  - `engine/skills/status.ts` + `persistent.ts` —— 状态/持续效果追踪器纯类化（日志回调注入、ID 改计数器，将来服务端按对局实例化）；
+  - `skills/effects/index.ts` 1561 行 → 44 行执行器（custom → 播报表 → 告警三段分发）；64 个真实现/条件播报/交互式 handler 原样切分到 `customHandlers.ts`（脚本机械迁移保行为）
+- [x] 参数化原语以「追踪器方法 + EffectContext 注入」形态落地（addCardTypeStrengthBonus / costReduction / skillDisable / forcedAction / grantNextCardAnyType / draw / tp / rng…），S8 重写假技能时直接调用
+- [x] nurture 规则 → `engine/nurture/rules.ts`：等级曲线 (lv-1)²×1000、升级随机属性分配（lv×10 点，10%-60% 约束）、经验系数（互动×5/训练×15/战斗×25）、训练对手生成与胜负结算表、战斗属性强化应用；userStore/NurtureActions 改为委托
+- [x] `core/ai` → `engine/ai` 已在 S2 提前完成；本次 `core/systems` 全部迁出——SkillSystem→`skills/runtime`、InteractionSystem→`skills/interaction`、DialogueSystem→`stores/battleDialogue`，**`core/` 目录删除**
+- [x] 技能/养成域 `Math.random` → 注入 rng（handler 经 `ctx.rng`，6 处概率技能改造；纯演出层的对话概率保留 Math.random，不属规则域）
+- [x] `skills/effects/index.ts` 18 处历史 lint 债随重写消失；顺手清 userStore/NurtureActions 死变量与 `any`（抽卡历史/存档迁移/训练结算补真类型）
+- 额外：`CharacterNurtureData` 类型上移 `types/nurture.ts`（userStore 转发兼容）；修复 `defaultRng` 捕获 Math.random 引用导致测试 spy 失效的隐患（晚绑定）
 
-**Exit**：技能/养成/AI 正常；`engine/` 整体零 store/Vue import；`core/` 清空或仅留兼容壳。
+**Exit 达成**：手测战斗（onPlay 效果抽牌、角色技能 TP 恢复+冷却写入）与养成训练（+3 魅力/−15 知识点/−5 心情/+45 经验逐项命中 engine 常量），console 零错误；`engine/` 整体过 lint 闸（绊线复验 3 类全拦）；`core/` 已删除；测试 126 → **153 个**全绿；type-check 0 错；S4 接触面 lint 0 错。
 
 ---
 

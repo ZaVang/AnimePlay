@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { usePlayerStore } from '@/stores/battle';
-import { SkillSystem } from '@/core/systems/SkillSystem';
+import { SkillSystem } from '@/skills/runtime';
 import type { Card, Skill } from '@/types';
 
 const props = defineProps<{

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { usePlayerStore, useGameStore } from '@/stores/battle';
-import { SkillSystem } from '@/core/systems/SkillSystem';
+import { SkillSystem } from '@/skills/runtime';
 import CharacterItem from './CharacterItem.vue';
 import CharacterActionModal from './CharacterActionModal.vue';
 import type { Card, Skill } from '@/types';

@@ -70,7 +70,7 @@
 <script setup lang="ts">
 import { reactive } from 'vue';
 import type { AnimeCard } from '@/types/card';
-import type { CardSelectionOptions } from '@/core/systems/InteractionSystem';
+import type { CardSelectionOptions } from '@/skills/interaction';
 import HandViewModal from './HandViewModal.vue';
 import CardSelectionModal from './CardSelectionModal.vue';
 import TypeSelectionModal from './TypeSelectionModal.vue';

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue';
-import type { DialogueAction } from '@/core/systems/DialogueSystem';
+import type { DialogueAction } from '@/stores/battleDialogue';
 
 interface Props {
   action: DialogueAction | null;

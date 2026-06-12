@@ -1,9 +1,13 @@
+/**
+ * 技能运行时（原 core/systems/SkillSystem，S4 迁至 skills/）。
+ * 职责：卡牌/角色技能触发点 → runEffect 分发；TP/冷却校验。
+ */
 import { useGameStore, usePlayerStore, useHistoryStore } from '@/stores/battle';
 import type { Card, Skill } from '@/types';
-import { runEffect, type EffectContext } from '@/skills/effects';
+import { runEffect } from './effects';
 import type { ClashInfo } from '@/types/battle';
 import type { AnimeCard } from '@/types/card';
-import { StatusEffectSystem } from '@/core/systems/StatusEffectSystem';
+import { statusEffects } from './systems';
 
 export const SkillSystem = {
   /**
@@ -16,7 +20,7 @@ export const SkillSystem = {
     const historyStore = useHistoryStore();
 
     // Demo anime effect: synergy tag '日常' → draw 1
-    const isAnime = (card as any).cost !== undefined;
+    const isAnime = 'cost' in card && card.cost !== undefined;
     if (isAnime && card.synergy_tags?.includes('日常')) {
       playerStore.drawCards(playerId, 1);
       const name = playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
@@ -26,9 +30,10 @@ export const SkillSystem = {
 
     // StatusEffect: NEXT_CARD_ANY_TYPE
     // If granted, we can mark the card as matching any synergy in later calculations.
-    const consumedAnyType = StatusEffectSystem.consumeNextCardAnyType(playerId);
+    const consumedAnyType = statusEffects.consumeNextCardAnyType(playerId);
     if (consumedAnyType) {
-      (card as any).__treatedAsAnyType = true; // lightweight flag consumed within this clash window
+      // 仅本次对撞窗口内有效的轻量标记
+      (card as Card & { __treatedAsAnyType?: boolean }).__treatedAsAnyType = true;
     }
 
     // Standardized per-card effects (onPlay)
@@ -36,8 +41,7 @@ export const SkillSystem = {
       const anime = card as AnimeCard;
       const onPlayEffects = anime.effects?.filter(e => e.trigger === 'onPlay') || [];
       for (const e of onPlayEffects) {
-        const ctx: EffectContext = { event: 'onPlay', playerId, role: 'attacker', card: anime };
-        await runEffect(e.effectId, ctx);
+        await runEffect(e.effectId, { event: 'onPlay', playerId, role: 'attacker', card: anime });
       }
     }
   },
@@ -83,29 +87,8 @@ export const SkillSystem = {
     }
   },
 
-  /**
-   * Aggregates passive aura bonuses that affect strength.
-   * Minimal demo: AURA_GENRE_EXPERT → 同类型（日常）+1 强度
-   */
-  getAuraStrengthBonus(card: Card | undefined, actingPlayerId: 'playerA' | 'playerB'): number {
-    if (!card) return 0;
-    const playerStore = usePlayerStore();
+  // getAuraStrengthBonus 已移除：S2 起由 engine/battle/strength.auraStrengthBonus 提供（battleFlow 调用），此处零引用。
 
-    let bonus = 0;
-    const allChars = [...playerStore.playerA.characters, ...playerStore.playerB.characters];
-    for (const character of allChars) {
-      const skills = (character as any).skills as Skill[] | undefined;
-      if (!skills) continue;
-      for (const s of skills) {
-        if (s.type !== '被动光环') continue;
-        // Demo passive: 类型专家
-        if (s.id === 'AURA_GENRE_EXPERT' && card.synergy_tags?.includes('日常')) {
-          bonus += 1;
-        }
-      }
-    }
-    return bonus;
-  },
   /**
    * Checks if a skill can be used by the player.
    */

@@ -102,7 +102,7 @@
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue';
 import type { AnimeCard } from '@/types/card';
-import type { CardSelectionOptions } from '@/core/systems/InteractionSystem';
+import type { CardSelectionOptions } from '@/skills/interaction';
 
 interface Props {
   isVisible: boolean;

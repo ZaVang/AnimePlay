@@ -6,8 +6,12 @@ import type { CharacterNurtureData } from '@/stores/userStore';
 import {
   generateBattleStats,
   simulateBattle,
+  generateTrainingOpponent as engineGenerateTrainingOpponent,
+  trainingOutcome,
   defaultRng,
   type BattleStats,
+  type BattleResult,
+  type TrainingStat,
 } from '@/engine';
 
 const props = defineProps<{
@@ -15,9 +19,6 @@ const props = defineProps<{
 }>();
 
 const userStore = useUserStore();
-
-// 当前选中的训练类型
-const selectedTrainingType = ref<string | null>(null);
 
 // 训练动画状态
 const trainingAnimations = ref<Record<string, boolean>>({});
@@ -294,21 +295,21 @@ function startBattleTraining(programId: string) {
       props.character.nurtureData.attributes,
       props.character.nurtureData.battleEnhancements || { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 }
     );
-    
+
     // 生成训练对手（基于训练强度）
     const trainingOpponent = generateTrainingOpponent(program.stat, currentBattleStats);
-    
+
     // 模拟战斗
     const battleResult = simulateBattle(currentBattleStats, trainingOpponent, defaultRng);
-    
+
     // 根据战斗结果给予奖励
     processBattleTrainingResult(program, battleResult);
-    
+
     // 降低心情和体力 (高强度训练更累)
     const nurtureData = userStore.getNurtureData(props.character.id);
     nurtureData.attributes.mood = Math.max(5, nurtureData.attributes.mood - 8);
     nurtureData.attributes.strength = Math.max(10, nurtureData.attributes.strength - 3);
-    
+
     // 战斗训练需要更长的冷却时间 (30分钟)
     const battleTrainingDuration = 30;
     setTrainingCooldown(programId, battleTrainingDuration);
@@ -317,83 +318,42 @@ function startBattleTraining(programId: string) {
     const errorMessage = error instanceof Error ? error.message : String(error);
     userStore.addLog(`战斗训练出错：${errorMessage}`, 'warning');
   }
-  
+
   // 启动战斗训练动画
   startTrainingAnimation(programId);
 }
 
-// 生成训练对手
+// 生成训练对手（规则在 engine/nurture）
 function generateTrainingOpponent(trainingStat: string, playerStats: BattleStats): BattleStats {
-  // 基于训练类型生成有针对性的对手
-  const baseOpponent: BattleStats = {
-    hp: playerStats.hp * 0.8,
-    atk: playerStats.atk * 0.9,
-    def: playerStats.def * 0.8,
-    sp: playerStats.sp * 0.8,
-    spd: playerStats.spd * 0.9
-  };
-  
-  // 根据训练属性强化对手相应能力
-  switch (trainingStat) {
-    case 'atk':
-      baseOpponent.def *= 1.2; // 防御型对手，训练攻击
-      break;
-    case 'def':
-      baseOpponent.atk *= 1.2; // 攻击型对手，训练防御
-      break;
-    case 'sp':
-      baseOpponent.sp *= 1.3; // 技能型对手，训练技能
-      break;
-    case 'spd':
-      baseOpponent.spd *= 1.3; // 速度型对手，训练速度
-      break;
-    case 'hp':
-      baseOpponent.hp *= 1.4; // 耐久型对手，训练生命
-      break;
-  }
-  
-  return {
-    hp: Math.floor(baseOpponent.hp),
-    atk: Math.floor(baseOpponent.atk),
-    def: Math.floor(baseOpponent.def),
-    sp: Math.floor(baseOpponent.sp),
-    spd: Math.floor(baseOpponent.spd)
-  };
+  return engineGenerateTrainingOpponent(trainingStat as TrainingStat, playerStats);
 }
 
 // 处理战斗训练结果
-function processBattleTrainingResult(program: any, battleResult: any) {
+function processBattleTrainingResult(
+  program: { name: string; stat: TrainingStat; gain: number },
+  battleResult: BattleResult,
+) {
   const characterId = props.character.id;
   
+  // 数值结算规则在 engine/nurture（胜 100%/25 经验，负 40%/10，平 70%/18）
+  const outcome = trainingOutcome(battleResult.winner, program.gain);
+  userStore.enhanceBattleStat(characterId, program.stat, outcome.gain);
+  userStore.addCharacterExp(characterId, outcome.exp);
+
   if (battleResult.winner === 'attacker') {
-    // 胜利：更好的奖励
-    console.log('About to call enhanceBattleStat with:', { characterId, stat: program.stat, gain: program.gain });
-    userStore.enhanceBattleStat(characterId, program.stat, program.gain);
-    userStore.addCharacterExp(characterId, 25); // 战斗经验
-    
     const bonusMessage = battleResult.isCriticalHit ? '表现出色，' : '';
     userStore.addLog(
-      `🎉 ${props.character.name} 在${program.name}中获胜！${bonusMessage}${program.stat.toUpperCase()}提升${program.gain}%！`,
+      `🎉 ${props.character.name} 在${program.name}中获胜！${bonusMessage}${program.stat.toUpperCase()}提升${outcome.gain}%！`,
       'success'
     );
   } else if (battleResult.winner === 'defender') {
-    // 失败：较少奖励，但仍有成长
-    const reducedGain = Math.ceil(program.gain * 0.4);
-    userStore.enhanceBattleStat(characterId, program.stat, reducedGain);
-    userStore.addCharacterExp(characterId, 10);
-    
     userStore.addLog(
-      `😔 ${props.character.name} 在${program.name}中落败，但从失败中学习。${program.stat.toUpperCase()}提升${reducedGain}%！`,
+      `😔 ${props.character.name} 在${program.name}中落败，但从失败中学习。${program.stat.toUpperCase()}提升${outcome.gain}%！`,
       'warning'
     );
   } else {
-    // 平局：中等奖励
-    const mediumGain = Math.ceil(program.gain * 0.7);
-    userStore.enhanceBattleStat(characterId, program.stat, mediumGain);
-    userStore.addCharacterExp(characterId, 18);
-    
     userStore.addLog(
-      `⚡ ${props.character.name} 在${program.name}中打成平手！势均力敌的较量让实力提升。${program.stat.toUpperCase()}提升${mediumGain}%！`,
+      `⚡ ${props.character.name} 在${program.name}中打成平手！势均力敌的较量让实力提升。${program.stat.toUpperCase()}提升${outcome.gain}%！`,
       'info'
     );
   }

@@ -7,8 +7,7 @@
  *  - 禁止直接调用 Math.random（用 ./rng 注入）、fetch、DOM、localStorage；
  *  - 它是将来与 Node 权威服务端共享的那一层。
  *
- * 迁入计划（见 docs/FUTURE.md）：
- *  S2 battle/ + ai/ 决策（已迁入） · S3 gacha/ + squad/（已迁入） · S4 skills/ + nurture/ + ai/ 收尾
+ * 迁入状态（见 docs/FUTURE.md）：S2 battle/ + ai/ · S3 gacha/ + squad/ · S4 skills/ + nurture/ —— 全部迁入。
  */
 
 export * from './rng';
@@ -16,3 +15,5 @@ export * from './battle';
 export * from './ai';
 export * from './gacha';
 export * from './squad';
+export * from './skills';
+export * from './nurture';

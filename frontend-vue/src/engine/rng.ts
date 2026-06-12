@@ -72,6 +72,10 @@ export function createSequenceRng(values: readonly number[]): RNG {
   return createRng(() => values[i++ % values.length]);
 }
 
-/** 默认 RNG：生产环境的真随机（Math.random）。这是 engine 内唯一允许出现 Math.random 的地方。 */
+/**
+ * 默认 RNG：生产环境的真随机（Math.random）。这是 engine 内唯一允许出现 Math.random 的地方。
+ * 注意必须晚绑定（箭头包一层）：若直接传引用，测试里 vi.spyOn(Math, 'random')
+ * 替换的是属性而非已捕获的引用，spy 将对 defaultRng 失效。
+ */
 // eslint-disable-next-line no-restricted-properties
-export const defaultRng: RNG = createRng(Math.random);
+export const defaultRng: RNG = createRng(() => Math.random());

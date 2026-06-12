@@ -28,9 +28,9 @@ import {
   chooseAttackStyle,
   chooseDefense,
 } from '@/engine';
-import { SkillSystem } from '@/core/systems/SkillSystem';
-import { DialogueSystem } from '@/core/systems/DialogueSystem';
-import { PersistentEffectSystem } from '@/core/systems/PersistentEffectSystem';
+import { SkillSystem } from '@/skills/runtime';
+import { DialogueSystem } from '@/stores/battleDialogue';
+import { persistentEffects } from '@/skills/systems';
 
 function playerName(playerId: 'playerA' | 'playerB'): string {
   const playerStore = usePlayerStore();
@@ -42,7 +42,7 @@ function sideStrength(card: ClashInfo['attackingCard'] | undefined, ownerId: 'pl
   if (!card) return 0;
   const playerStore = usePlayerStore();
   const allCharacters = [...playerStore.playerA.characters, ...playerStore.playerB.characters];
-  const persistentBonus = PersistentEffectSystem.getInstance().getStrengthBonus(
+  const persistentBonus = persistentEffects.getStrengthBonus(
     ownerId,
     card.synergy_tags || [],
   );
@@ -82,7 +82,7 @@ function startTurn() {
   playerStore.resetRotationsForNewTurn(gameStore.activePlayer);
 
   // 4. 回合开始的持续效果与冷却递减
-  PersistentEffectSystem.getInstance().onTurnStart(gameStore.activePlayer);
+  persistentEffects.onTurnStart(gameStore.activePlayer);
   playerStore.reduceSkillCooldowns(gameStore.activePlayer);
 
   // 5. 处理待轮换标记
@@ -106,7 +106,7 @@ function endTurn() {
   const gameStore = useGameStore();
   if (gameStore.isGameOver) return;
 
-  PersistentEffectSystem.getInstance().onTurnEnd(gameStore.activePlayer);
+  persistentEffects.onTurnEnd(gameStore.activePlayer);
 
   if (isTurnLimitReached(gameStore.turn)) {
     judgeFinalWinner();

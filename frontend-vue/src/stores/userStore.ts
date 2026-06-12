@@ -4,6 +4,24 @@ import { useGachaStore, type DrawnCard } from './gachaStore';
 import { useGameDataStore } from './gameDataStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { type ShopItem } from '@/utils/gachaRotation';
+import type { CharacterNurtureData } from '@/types/nurture';
+import type { Rarity } from '@/types/card';
+import {
+  defaultRng,
+  getRequiredExpForLevel as engineGetRequiredExpForLevel,
+  getLevelFromExp as engineGetLevelFromExp,
+  getLevelProgress as engineGetLevelProgress,
+  levelUpAttributePoints,
+  distributeRandomAttributes as engineDistributeRandomAttributes,
+  createDefaultNurtureData,
+  applyBattleEnhancements,
+  MAX_CHARACTER_LEVEL,
+  ATTRIBUTE_CAP,
+  ENHANCEMENT_CAP,
+  EXP_PER_AFFECTION,
+  EXP_PER_ATTRIBUTE,
+  EXP_PER_BATTLE_STAT,
+} from '@/engine';
 
 // --- Type Definitions ---
 
@@ -48,43 +66,12 @@ export interface LogEntry {
 }
 
 // 角色养成数据接口
-export interface CharacterNurtureData {
-  affection: number; // 好感度 (0-1000+, 可以超过1000)
-  intimacy: number; // 亲密度 (0-100)
-  lastInteraction: string; // 最后互动时间
-  totalInteractions: number; // 总互动次数
-  dialogueHistory: string[]; // 对话历史ID
-  gifts: string[]; // 收到的礼物ID列表 (简化数据结构)
-  specialEvents: string[]; // 已解锁的特殊事件
-  // 角色等级系统
-  level: number; // 角色等级 (1+, 无上限)
-  experience: number; // 当前经验值
-  totalExperience: number; // 总经验值 (用于计算等级)
-  attributes: {
-    charm: number; // 魅力值
-    intelligence: number; // 智力值
-    strength: number; // 体力值
-    mood: number; // 心情值 (0-100)
-  };
-  // 升级获得的随机属性加成
-  levelBonusAttributes: {
-    charm: number; // 升级获得的魅力加成
-    intelligence: number; // 升级获得的智力加成
-    strength: number; // 升级获得的体力加成
-  };
-  // 战斗属性增强 (基于原始battle_stats的百分比加成)
-  battleEnhancements: {
-    hp: number; // HP加成 (0-100%)
-    atk: number; // 攻击力加成 (0-100%)
-    def: number; // 防御力加成 (0-100%)
-    sp: number; // SP加成 (0-100%)
-    spd: number; // 速度加成 (0-100%)
-  };
-  preferences: {
-    favoriteTopics: string[]; // 喜欢的话题
-    dislikedTopics: string[]; // 不喜欢的话题
-    favoriteGifts: string[]; // 喜欢的礼物
-  };
+export type { CharacterNurtureData } from '@/types/nurture';
+
+export interface GachaHistoryItem {
+  id: number;
+  rarity: Rarity;
+  timestamp: number;
 }
 
 
@@ -124,8 +111,8 @@ export const useUserStore = defineStore('user', () => {
   const characterCollection = ref<Map<number, { count: number }>>(new Map());
   const favoriteAnime = ref<Set<number>>(new Set());
   const favoriteCharacters = ref<Set<number>>(new Set());
-  const animeGachaHistory = ref<any[]>([]);
-  const characterGachaHistory = ref<any[]>([]);
+  const animeGachaHistory = ref<GachaHistoryItem[]>([]);
+  const characterGachaHistory = ref<GachaHistoryItem[]>([]);
   // 保底状态已归属 gacha 域（gachaStore.animePity / characterPity），存档读写经下方 load/save
   
   // 角色养成数据
@@ -233,11 +220,12 @@ export const useUserStore = defineStore('user', () => {
         gachaStore.animePity = payload.animePity || gachaStore.animePity;
         gachaStore.characterPity = payload.characterPity || gachaStore.characterPity;
         const savedAnimeCollection = payload.animeCollection || [];
-        const migratedAnimeCollection = savedAnimeCollection.map(([id, data]: [number, any]) => [id, typeof data === 'number' ? { count: data } : data]);
-        animeCollection.value = new Map(migratedAnimeCollection);
+        // 旧存档兼容：早期收藏值是裸数量 number，统一迁移为 { count }
+        const migrateCollection = (entries: [number, number | { count: number }][]): [number, { count: number }][] =>
+          entries.map(([id, data]) => [id, typeof data === 'number' ? { count: data } : data]);
+        animeCollection.value = new Map(migrateCollection(savedAnimeCollection));
         const savedCharacterCollection = payload.characterCollection || [];
-        const migratedCharacterCollection = savedCharacterCollection.map(([id, data]: [number, any]) => [id, typeof data === 'number' ? { count: data } : data]);
-        characterCollection.value = new Map(migratedCharacterCollection);
+        characterCollection.value = new Map(migrateCollection(savedCharacterCollection));
         animeGachaHistory.value = payload.animeHistory || [];
         characterGachaHistory.value = payload.characterHistory || [];
         favoriteAnime.value = new Set(payload.favoriteAnime || []);
@@ -680,74 +668,15 @@ export const useUserStore = defineStore('user', () => {
 
   // --- 角色养成系统方法 ---
   
-  // 随机分配属性点的辅助函数
-  function distributeRandomAttributes(totalPoints: number): { charm: number; intelligence: number; strength: number } {
-    const attributes = ['charm', 'intelligence', 'strength'] as const;
-    const distribution = { charm: 0, intelligence: 0, strength: 0 };
-    
-    let remainingPoints = totalPoints;
-    
-    // 确保每个属性至少分配到一些点数
-    for (const attr of attributes) {
-      const minPoints = Math.floor(totalPoints * 0.1); // 至少10%
-      const maxPoints = Math.floor(totalPoints * 0.6); // 最多60%
-      const points = Math.min(
-        Math.max(minPoints, Math.floor(Math.random() * (maxPoints - minPoints + 1)) + minPoints),
-        remainingPoints - (attributes.length - attributes.indexOf(attr) - 1)
-      );
-      distribution[attr] = points;
-      remainingPoints -= points;
-    }
-    
-    // 将剩余点数随机分配
-    while (remainingPoints > 0) {
-      const randomAttr = attributes[Math.floor(Math.random() * attributes.length)];
-      distribution[randomAttr]++;
-      remainingPoints--;
-    }
-    
-    return distribution;
+  // 随机分配属性点（规则在 engine/nurture，注入默认随机源）
+  function distributeRandomAttributes(totalPoints: number) {
+    return engineDistributeRandomAttributes(totalPoints, defaultRng);
   }
-  
+
   // 获取角色养成数据，如果不存在则创建默认数据
   function getNurtureData(characterId: number): CharacterNurtureData {
     if (!characterNurtureData.value.has(characterId)) {
-      const defaultData: CharacterNurtureData = {
-        affection: 0,
-        intimacy: 0,
-        lastInteraction: '',
-        totalInteractions: 0,
-        dialogueHistory: [],
-        gifts: [],
-        specialEvents: [],
-        // 角色等级系统默认值
-        level: 1,
-        experience: 0,
-        totalExperience: 0,
-        attributes: {
-          charm: 50,
-          intelligence: 50,
-          strength: 50,
-          mood: 80
-        },
-        levelBonusAttributes: {
-          charm: 0,
-          intelligence: 0,
-          strength: 0
-        },
-        battleEnhancements: {
-          hp: 0,
-          atk: 0,
-          def: 0,
-          sp: 0,
-          spd: 0
-        },
-        preferences: {
-          favoriteTopics: [],
-          dislikedTopics: [],
-          favoriteGifts: []
-        }
-      };
+      const defaultData: CharacterNurtureData = createDefaultNurtureData();
       characterNurtureData.value.set(characterId, defaultData);
     }
     
@@ -764,7 +693,7 @@ export const useUserStore = defineStore('user', () => {
     
     // 确保等级与总经验值同步（修复旧数据）
     if (data.totalExperience !== undefined) {
-      const maxLevel = 100;
+      const maxLevel = MAX_CHARACTER_LEVEL;
       const correctLevel = Math.min(getLevelFromExp(data.totalExperience), maxLevel);
       if ((data.level || 1) !== correctLevel) {
         const oldLevel = data.level || 1;
@@ -772,22 +701,14 @@ export const useUserStore = defineStore('user', () => {
         
         // 如果等级发生了变化，需要重新分配属性
         if (correctLevel > oldLevel && correctLevel <= maxLevel) {
-          let totalCharmGain = 0;
-          let totalIntGain = 0;
-          let totalStrGain = 0;
-          
           // 为错过的等级补发属性
           for (let level = oldLevel + 1; level <= correctLevel; level++) {
-            const totalPoints = level * 10;
+            const totalPoints = levelUpAttributePoints(level);
             const randomBonus = distributeRandomAttributes(totalPoints);
             
             data.levelBonusAttributes.charm += randomBonus.charm;
             data.levelBonusAttributes.intelligence += randomBonus.intelligence;
             data.levelBonusAttributes.strength += randomBonus.strength;
-            
-            totalCharmGain += randomBonus.charm;
-            totalIntGain += randomBonus.intelligence;
-            totalStrGain += randomBonus.strength;
           }
           
           // 如需要可以在这里添加升级日志
@@ -806,13 +727,12 @@ export const useUserStore = defineStore('user', () => {
     if (!isLoggedIn.value) return;
     
     const nurtureData = getNurtureData(characterId);
-    const oldAffection = nurtureData.affection;
     nurtureData.affection = nurtureData.affection + amount; // 移除上限限制
     nurtureData.lastInteraction = new Date().toISOString();
     nurtureData.totalInteractions++;
     
     // 给予经验值奖励 (互动给予少量经验)
-    const expReward = amount * 5; // 每点好感度给5经验
+    const expReward = amount * EXP_PER_AFFECTION;
     addCharacterExp(characterId, expReward);
 
     const gameDataStore = useGameDataStore();
@@ -869,10 +789,10 @@ export const useUserStore = defineStore('user', () => {
     
     const nurtureData = getNurtureData(characterId);
     const oldValue = nurtureData.attributes[attribute];
-    nurtureData.attributes[attribute] = Math.min(100, oldValue + amount);
+    nurtureData.attributes[attribute] = Math.min(ATTRIBUTE_CAP, oldValue + amount);
     
     // 给予经验值奖励 (基础训练给予中等经验)
-    const expReward = amount * 15; // 每点属性给15经验
+    const expReward = amount * EXP_PER_ATTRIBUTE;
     addCharacterExp(characterId, expReward);
     
     const gameDataStore = useGameDataStore();
@@ -919,7 +839,7 @@ export const useUserStore = defineStore('user', () => {
       }
       
       const oldValue = nurtureData.battleEnhancements[stat] || 0;
-      nurtureData.battleEnhancements[stat] = Math.min(100, oldValue + amount);
+      nurtureData.battleEnhancements[stat] = Math.min(ENHANCEMENT_CAP, oldValue + amount);
     } catch (error) {
       console.error('Error in enhanceBattleStat:', error, { characterId, stat, amount });
       const errorMessage = error instanceof Error ? error.message : String(error);
@@ -928,7 +848,7 @@ export const useUserStore = defineStore('user', () => {
     }
     
     // 给予经验值奖励 (战斗训练给予更高经验)
-    const expReward = amount * 25; // 每点战斗属性给25经验
+    const expReward = amount * EXP_PER_BATTLE_STAT;
     addCharacterExp(characterId, expReward);
     
     const gameDataStore = useGameDataStore();
@@ -958,52 +878,22 @@ export const useUserStore = defineStore('user', () => {
     const baseStats = character.battle_stats;
     const enhancements = nurtureData.battleEnhancements;
 
-    return {
-      hp: Math.floor(baseStats.hp * (1 + enhancements.hp / 100)),
-      atk: Math.floor(baseStats.atk * (1 + enhancements.atk / 100)),
-      def: Math.floor(baseStats.def * (1 + enhancements.def / 100)),
-      sp: Math.floor(baseStats.sp * (1 + enhancements.sp / 100)),
-      spd: Math.floor(baseStats.spd * (1 + enhancements.spd / 100))
-    };
+    return applyBattleEnhancements(baseStats, enhancements);
   }
 
   // === 角色等级系统 ===
 
-  // 计算等级所需的经验值 (使用 level^2 * 1000 公式)
+  // 等级曲线与进度（规则在 engine/nurture）
   function getRequiredExpForLevel(level: number): number {
-    if (level <= 1) return 0;
-    return (level - 1) * (level - 1) * 1000;
+    return engineGetRequiredExpForLevel(level);
   }
 
-  // 根据总经验值计算当前等级
   function getLevelFromExp(totalExp: number): number {
-    let level = 1;
-    while (getRequiredExpForLevel(level + 1) <= totalExp) {
-      level++;
-    }
-    return level;
+    return engineGetLevelFromExp(totalExp);
   }
 
-  // 获取当前等级的经验值进度 (当前等级内的经验 / 升下一级需要的经验)
-  function getLevelProgress(nurtureData: CharacterNurtureData): { current: number; required: number; percentage: number } {
-    // 确保数据有效性
-    const currentLevel = nurtureData.level || 1;
-    const totalExp = nurtureData.totalExperience || 0;
-    
-    const currentLevelExpStart = getRequiredExpForLevel(currentLevel);
-    const nextLevelExpStart = getRequiredExpForLevel(currentLevel + 1);
-    
-    const currentLevelExp = Math.max(0, totalExp - currentLevelExpStart);
-    const requiredForNext = nextLevelExpStart - currentLevelExpStart;
-    
-    // 防止除零错误
-    const percentage = requiredForNext > 0 ? (currentLevelExp / requiredForNext) * 100 : 0;
-    
-    return {
-      current: currentLevelExp,
-      required: requiredForNext,
-      percentage: Math.min(100, Math.max(0, percentage))
-    };
+  function getLevelProgress(nurtureData: CharacterNurtureData) {
+    return engineGetLevelProgress(nurtureData.level || 1, nurtureData.totalExperience || 0);
   }
 
   // 增加经验值并处理等级提升
@@ -1018,13 +908,12 @@ export const useUserStore = defineStore('user', () => {
     nurtureData.totalExperience += expAmount;
     
     // 计算新等级 (最大等级100)
-    const maxLevel = 100;
+    const maxLevel = MAX_CHARACTER_LEVEL;
     const newLevel = Math.min(getLevelFromExp(nurtureData.totalExperience), maxLevel);
     
     if (newLevel > oldLevel && newLevel <= maxLevel) {
       // 等级提升
       nurtureData.level = newLevel;
-      const levelGain = newLevel - oldLevel;
       
       const gameDataStore = useGameDataStore();
       const character = gameDataStore.getCharacterCardById(characterId);
@@ -1036,7 +925,7 @@ export const useUserStore = defineStore('user', () => {
         
         // 为每一级分配随机属性点 (等级 * 10)
         for (let level = oldLevel + 1; level <= newLevel; level++) {
-          const totalPoints = level * 10;
+          const totalPoints = levelUpAttributePoints(level);
           const randomBonus = distributeRandomAttributes(totalPoints);
           
           nurtureData.levelBonusAttributes.charm += randomBonus.charm;

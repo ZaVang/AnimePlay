@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, computed } from 'vue';
 import { usePlayerStore } from '@/stores/battle';
-import { DialogueSystem, type DialogueAction } from '@/core/systems/DialogueSystem';
+import { DialogueSystem, type DialogueAction } from '@/stores/battleDialogue';
 import BattleSpeechBubble from './BattleSpeechBubble.vue';
 import BattleActionEffect from './BattleActionEffect.vue';
 
