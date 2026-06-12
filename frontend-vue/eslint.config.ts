@@ -20,6 +20,17 @@ export default defineConfigWithVueTs(
   vueTsConfigs.recommended,
   skipFormatting,
 
+  // 约定：下划线前缀的参数/变量表示「有意不使用」（如兼容签名占位）
+  {
+    name: 'app/unused-vars-convention',
+    rules: {
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_', varsIgnorePattern: '^_', caughtErrorsIgnorePattern: '^_' },
+      ],
+    },
+  },
+
   // ─── 架构铁律：依赖只能向下（views → components → stores → engine）───
   // engine 是纯游戏逻辑层，将来与 Node 服务端共享；任何向上依赖都是架构破窗。
   // 详见 src/engine/README.md 与 docs/FUTURE.md。

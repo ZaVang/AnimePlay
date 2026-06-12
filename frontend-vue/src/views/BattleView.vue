@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue';
 import { useGameStore, usePlayerStore } from '@/stores/battle';
-import { TurnManager } from '@/core/battle/TurnManager';
+import { BattleSetup } from '@/stores/battleSetup';
+import { BattleFlow } from '@/stores/battleFlow';
 import { InteractionSystem } from '@/core/systems/InteractionSystem';
 import { PersistentEffectSystem } from '@/core/systems/PersistentEffectSystem';
 import type { Deck } from '@/stores/userStore';
@@ -16,7 +17,6 @@ import BattleLog from '@/components/battle/ui/BattleLog.vue';
 import InteractionManager from '@/components/battle/InteractionManager.vue';
 import BattleDialogueManager from '@/components/battle/BattleDialogueManager.vue';
 import BattleRulesModal from '@/components/battle/ui/BattleRulesModal.vue';
-import { BattleController } from '@/core/battle/BattleController';
 
 // 开发环境下导入测试工具
 if (import.meta.env.DEV) {
@@ -57,7 +57,7 @@ onBeforeUnmount(() => {
 function handleDeckSelected(deck: Deck, aiProfileId?: string) {
   console.log('🎮 尝试开始战斗，使用卡组:', deck.name, 'AI:', aiProfileId);
   try {
-    TurnManager.initializeGameWithDeck(deck, aiProfileId);
+    BattleSetup.initializeGameWithDeck(deck, aiProfileId);
     battlePhase.value = 'battle';
     console.log('✅ 战斗初始化成功');
   } catch (error) {
@@ -68,7 +68,7 @@ function handleDeckSelected(deck: Deck, aiProfileId?: string) {
 function handleRandomDeck(aiProfileId?: string) {
   console.log('🎲 尝试开始随机战斗，AI:', aiProfileId);
   try {
-    TurnManager.initializeRandomGame(aiProfileId);
+    BattleSetup.initializeRandomGame(aiProfileId);
     battlePhase.value = 'battle';
     console.log('✅ 随机战斗初始化成功');
   } catch (error) {
@@ -77,7 +77,7 @@ function handleRandomDeck(aiProfileId?: string) {
 }
 
 function handleSkipTurn() {
-  BattleController.skipTurn();
+  BattleFlow.skipTurn();
 }
 
 function handleExitBattle() {

@@ -26,7 +26,7 @@
 |---|---|---|---|
 | S0 | 文档重构 | ✅ | 已完成 |
 | S1 | 测试安全网 & 架构骨架 | ✅ | 已完成 |
-| S2 | engine 抽取：宅理论战 | ☐ | 解耦 |
+| S2 | engine 抽取：宅理论战 | ✅ | 已完成 |
 | S3 | engine 抽取：抽卡 & 挑战塔 | ☐ | 解耦 |
 | S4 | engine 抽取：技能 & 养成 & AI | ☐ | 解耦 |
 | S5 | 拆 god store & 持久化 | ☐ | 解耦 |
@@ -69,18 +69,19 @@
 
 ---
 
-## ☐ S2 — engine 抽取：宅理论战（解耦）
+## ✅ S2 — engine 抽取：宅理论战（已完成 2026-06-12）
 
 **目标**：把宅理论战规则搬进 `engine/battle`，与 Pinia 解耦，打破循环依赖。
 
-- [ ] `TurnManager` 规则部分 → `engine/battle/turn.ts`（状态转换纯函数化）
-- [ ] `BattleEngine` → `engine/battle/clash.ts`（已纯，迁移）
-- [ ] `RewardCalculator` → `engine/battle/rewards.ts`
-- [ ] 移除 `core/battle` 对 `@/stores` 的全部 import；battle store 改为「持有状态 + 调 engine」
-- [ ] 打破 `TurnManager↔AIController↔BattleController` 循环依赖
-- [ ] `InteractionSystem` 不再持 `any` 类型 UI 实例（改回调/事件注入）
+- [x] `TurnManager` 规则部分 → `engine/battle/turn.ts`（回合 TP/胜负判定/终局/轮换纯函数）+ `setup.ts`（技能解析链/卡组装配）
+- [x] `BattleEngine` → `engine/battle/clash.ts`（强度由调用方传入或回退卡面点数）；`StrengthCalculator` → `strength.ts`（光环加成纯函数化）
+- [x] `RewardCalculator` → `engine/battle/rewards.ts`
+- [x] `ResourceManager` → `engine/battle/resources.ts`（洗牌改注入 RNG）；`core/battle`、`core/calculation`、`core/ai` 整体清空，battle store 只「持有状态 + 调 engine」
+- [x] 打破 `TurnManager↔AIController↔BattleController` 循环：编排合并为 `stores/battleSetup.ts` → `stores/battleFlow.ts` 单向两模块；AI 决策提前抽到 `engine/ai/decisions.ts`（纯函数+注入 RNG，原属 S4 范围）
+- [x] `InteractionSystem` 改持 `BattleInteractionUI` 接口（不再 `any`）；顺手删零引用的 `exchangeCards`/`confirm`
+- 额外：`randomAIDeckGenerator` → `engine/ai/randomDeck.ts`（根除「带 seed 时全局猴子补丁 Math.random 且不恢复」的隐患）；`aiProfiles` → `config/`；`endGame` 开始调用 `gameStore.setWinner`（为 S6 结算 UI 铺路，当前无可见行为变化）
 
-**Exit**：宅理论战可正常对战（手测）；`engine/battle` 零 store import（lint 过）；相关测试通过。
+**Exit 达成**：手测完整对战（开局/攻防/技能强度注入/结算表/AI 决策/回合推进，console 零错误）；engine 全目录过 lint 闸（绊线复验 3 类错误全拦）；测试 56 → **95 个**全绿（rewards 表逐格 + clash + turn 胜负边界 + resources + AI 决策分支 + setup 技能链）；type-check 0 错。
 
 ---
 

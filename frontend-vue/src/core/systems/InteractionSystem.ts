@@ -28,12 +28,34 @@ export interface CardSelectionResult {
 }
 
 /**
+ * 战斗交互 UI 的契约 —— 由 components/battle/InteractionManager.vue 实现并在挂载时注入。
+ * 系统层只依赖这个接口，不持有具体组件实例类型。
+ */
+export interface BattleInteractionUI {
+  showHandView(
+    cards: AnimeCard[],
+    title: string,
+    subtitle?: string,
+    emptyMessage?: string,
+    showTypes?: boolean,
+  ): Promise<void>;
+  showCardSelection(cards: AnimeCard[], options: CardSelectionOptions): Promise<CardSelectionResult>;
+  showTypeSelection(
+    availableTypes: string[],
+    title: string,
+    description?: string,
+    allowCancel?: boolean,
+    typeDescriptions?: Record<string, string>,
+  ): Promise<string | null>;
+}
+
+/**
  * 交互系统核心类
  */
 export class InteractionSystem {
   private static instance: InteractionSystem;
-  private pendingInteraction: Promise<any> | null = null;
-  private interactionManager: any = null; // Will be set by BattleView
+  private pendingInteraction: Promise<unknown> | null = null;
+  private interactionManager: BattleInteractionUI | null = null; // 由 BattleView 挂载时注入
 
   static getInstance(): InteractionSystem {
     if (!InteractionSystem.instance) {
@@ -45,7 +67,7 @@ export class InteractionSystem {
   /**
    * 设置交互管理器实例 (由战斗界面组件调用)
    */
-  setInteractionManager(manager: any) {
+  setInteractionManager(manager: BattleInteractionUI | null) {
     this.interactionManager = manager;
   }
 
@@ -157,46 +179,6 @@ export class InteractionSystem {
       selected,
       cancelled: false
     };
-  }
-
-  /**
-   * 卡牌交换
-   */
-  async exchangeCards(playerAId: 'playerA' | 'playerB', playerBId: 'playerA' | 'playerB', count: number = 1): Promise<void> {
-    const playerStore = usePlayerStore();
-    const historyStore = useHistoryStore();
-    
-    const playerAHand = playerStore[playerAId].hand;
-    const playerBHand = playerStore[playerBId].hand;
-    
-    if (playerAHand.length === 0 || playerBHand.length === 0) {
-      return; // 无法交换
-    }
-
-    // 简化版本：随机交换第一张牌
-    const cardFromA = playerAHand[0];
-    const cardFromB = playerBHand[0];
-    
-    // 从各自手牌中移除
-    playerStore.removeCardFromHand(playerAId, cardFromA);
-    playerStore.removeCardFromHand(playerBId, cardFromB);
-    
-    // 添加到对方手牌
-    playerStore.addCardToHand(playerAId, cardFromB);
-    playerStore.addCardToHand(playerBId, cardFromA);
-    
-    const nameA = playerAId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-    const nameB = playerBId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-    historyStore.addLog(`${nameA} 与 ${nameB} 交换了手牌。`, 'info');
-  }
-
-  /**
-   * 确认对话框
-   */
-  async confirm(message: string, title?: string): Promise<boolean> {
-    // TODO: 显示确认对话框UI
-    // 目前返回true作为默认
-    return true;
   }
 
   /**

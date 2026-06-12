@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { useGameStore } from '@/stores/battle';
-import { TurnManager } from '@/core/battle/TurnManager';
+import { BattleFlow } from '@/stores/battleFlow';
 
 const gameStore = useGameStore();
 
 function handleEndTurn() {
   if (gameStore.phase === 'action' && gameStore.activePlayer === 'playerA') {
-    TurnManager.endTurn();
+    BattleFlow.endTurn();
   }
 }
 </script>

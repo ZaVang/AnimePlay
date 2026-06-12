@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { useGameStore, usePlayerStore } from '@/stores/battle';
-import { BattleController } from '@/core/battle/BattleController';
+import { BattleFlow } from '@/stores/battleFlow';
 import type { AnimeCard as AnimeCardType } from '@/types/card'; // Renamed to avoid conflict
 import AnimeCard from '@/components/AnimeCard.vue'; // Using the main component
 import CardActionModal from '@/components/battle/ui/CardActionModal.vue';
@@ -55,9 +55,9 @@ function closeDetailModal() {
 function handlePlayCard(style: '友好安利' | '辛辣点评' | '赞同' | '反驳') {
   if (selectedCard.value) {
     if (gameStore.phase === 'action' && (style === '友好安利' || style === '辛辣点评')) {
-      BattleController.initiateClash(selectedCard.value.id, style);
+      BattleFlow.initiateClash(selectedCard.value.id, style);
     } else if (gameStore.phase === 'defense' && (style === '赞同' || style === '反驳')) {
-      BattleController.respondToClash(selectedCard.value.id, style);
+      BattleFlow.respondToClash(selectedCard.value.id, style);
     }
     closeActionModal();
   }

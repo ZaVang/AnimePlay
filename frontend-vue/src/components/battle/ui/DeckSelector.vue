@@ -2,7 +2,7 @@
 import { useUserStore, type Deck } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { ref, computed, onMounted } from 'vue';
-import { listAIProfiles, type AIProfile } from '@/core/ai/aiProfiles';
+import { listAIProfiles, type AIProfile } from '@/config/aiProfiles';
 import { useSettingsStore } from '@/stores/settings';
 import BattleRulesModal from './BattleRulesModal.vue';
 

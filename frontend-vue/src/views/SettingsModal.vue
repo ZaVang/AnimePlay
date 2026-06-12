@@ -3,7 +3,7 @@
 import { useSettingsStore } from '@/stores/settings';
 import { useThemeStore, themes } from '@/stores/theme';
 import { ref, computed } from 'vue';
-import { listAIProfiles } from '@/core/ai/aiProfiles';
+import { listAIProfiles } from '@/config/aiProfiles';
 
 const settingsStore = useSettingsStore();
 const themeStore = useThemeStore();

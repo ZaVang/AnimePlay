@@ -1,0 +1,81 @@
+/**
+ * 宅理论战 AI 决策规则 —— 纯函数（随机源注入）。
+ * 只回答「出哪张牌、什么方式」；何时出牌（定时器/回合调度）由 stores/battleFlow.ts 负责。
+ * 概率与判断阈值原样取自旧 AIController / BattleController，行为不变。
+ */
+import type { AnimeCard } from '@/types/card';
+import type { RNG } from '../rng';
+
+export type AttackStyle = '友好安利' | '辛辣点评';
+export type DefenseStyle = '赞同' | '反驳';
+
+export interface DefenseDecision {
+  defend: boolean;
+  card?: AnimeCard;
+  style?: DefenseStyle;
+}
+
+/** 当前 TP 出得起的牌。 */
+export function affordableCards(hand: readonly AnimeCard[], tp: number): AnimeCard[] {
+  return hand.filter(card => (card.cost || 0) <= tp);
+}
+
+/** 性价比 = 强度 / 费用（防除零）。 */
+function valueScore(card: AnimeCard): number {
+  return (card.points || 1) / Math.max(card.cost || 1, 1);
+}
+
+/**
+ * 选攻击卡：按性价比排序，30% 取最优，70% 在前 3 张里随机（保留变化性）。
+ */
+export function chooseAttackCard(playable: readonly AnimeCard[], rng: RNG): AnimeCard | null {
+  if (playable.length === 0) return null;
+
+  const scored = playable.map(card => ({ card, score: valueScore(card) }));
+  scored.sort((a, b) => b.score - a.score);
+
+  if (rng.next() < 0.3 || scored.length === 1) {
+    return scored[0].card;
+  }
+  const top = scored.slice(0, Math.min(3, scored.length));
+  return top[Math.floor(rng.next() * top.length)].card;
+}
+
+/** 选攻击方式：TP 够付 +1 且强度 ≥4 时 60% 辛辣点评，否则友好安利。 */
+export function chooseAttackStyle(card: AnimeCard, tp: number, rng: RNG): AttackStyle {
+  const cardStrength = card.points || 1;
+  const canAffordHarsh = (card.cost || 0) + 1 <= tp;
+
+  if (canAffordHarsh && cardStrength >= 4) {
+    return rng.next() < 0.6 ? '辛辣点评' : '友好安利';
+  }
+  return '友好安利';
+}
+
+/**
+ * 防御决策：
+ * - 无可负担卡 → 不防御；
+ * - 选性价比最高的卡；TP 够付反驳费且对方强度 ≥3 时 70% 反驳；
+ * - 手牌 ≤2 且选中卡强度 <2 时 30% 概率放弃防御。
+ */
+export function chooseDefense(
+  hand: readonly AnimeCard[],
+  tp: number,
+  attackerStrength: number,
+  rng: RNG,
+): DefenseDecision {
+  const affordable = affordableCards(hand, tp);
+  if (affordable.length === 0) return { defend: false };
+
+  const bestDefenseCard = affordable.reduce((best, card) =>
+    valueScore(card) > valueScore(best) ? card : best,
+  );
+
+  const canAffordRebuttal = (bestDefenseCard.cost || 0) + 1 <= tp;
+  const shouldRebuttal = canAffordRebuttal && attackerStrength >= 3;
+  const style: DefenseStyle = shouldRebuttal && rng.next() < 0.7 ? '反驳' : '赞同';
+
+  const shouldSkip = hand.length <= 2 && (bestDefenseCard.points || 0) < 2 && rng.next() < 0.3;
+
+  return { defend: !shouldSkip, card: bestDefenseCard, style };
+}

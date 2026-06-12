@@ -3,7 +3,8 @@
  * 用于在开发环境中测试和调试随机AI生成功能
  */
 
-import { generateRandomAIDeck, generateDiversifiedRandomAIDeck } from './randomAIDeckGenerator';
+import { generateRandomAIDeck } from '@/engine/ai/randomDeck';
+import { defaultRng } from '@/engine/rng';
 import type { AnimeCard, CharacterCard } from '@/types/card';
 
 /**
@@ -28,7 +29,7 @@ export function testRandomAIGeneration(allAnime: AnimeCard[], allCharacters: Cha
   
   for (let i = 1; i <= testRounds; i++) {
     console.log(`\n🎯 测试轮次 ${i}:`);
-    const result = generateRandomAIDeck(allAnime, allCharacters);
+    const result = generateRandomAIDeck(allAnime, allCharacters, defaultRng);
     
     // 分析生成的卡组
     const analysis = analyzeDeck(result, allAnime, allCharacters);
@@ -142,7 +143,10 @@ function checkDuplicateDecks(results: ReturnType<typeof analyzeDeck>[]): boolean
  * 在开发环境下自动绑定到window对象
  */
 if (import.meta.env.DEV) {
-  (window as any).__testRandomAI = (allAnime: AnimeCard[], allCharacters: CharacterCard[]) => {
+  (window as unknown as Record<string, unknown>).__testRandomAI = (
+    allAnime: AnimeCard[],
+    allCharacters: CharacterCard[],
+  ) => {
     return testRandomAIGeneration(allAnime, allCharacters);
   };
   

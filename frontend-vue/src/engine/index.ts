@@ -8,7 +8,9 @@
  *  - 它是将来与 Node 权威服务端共享的那一层。
  *
  * 迁入计划（见 docs/FUTURE.md）：
- *  S2 battle/（宅理论战） · S3 gacha/ + squad/ · S4 skills/ + nurture/ + ai/
+ *  S2 battle/ + ai/ 决策（已迁入） · S3 gacha/ + squad/ · S4 skills/ + nurture/ + ai/ 收尾
  */
 
 export * from './rng';
+export * from './battle';
+export * from './ai';

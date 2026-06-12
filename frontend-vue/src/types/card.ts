@@ -29,6 +29,7 @@ export interface CharacterCard extends BaseCard {
   activeSkillId: string;   // ID for the character's active skill
   passiveSkillId: string;  // ID for the character's passive aura
   anime_names?: string[];
+  skills?: Skill[]; // 对战开局由 injectSkills 注入的技能实例
 }
 
 // A union type for any card, useful for generic components

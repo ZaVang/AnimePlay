@@ -1,5 +1,7 @@
 import type { AnimeCard, CharacterCard } from './card';
 
+export type PlayerId = 'playerA' | 'playerB';
+
 export interface PlayerState {
   id: 'playerA' | 'playerB';
   name: string;

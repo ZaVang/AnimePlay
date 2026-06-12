@@ -1,7 +1,8 @@
 import { defineStore } from 'pinia';
 import type { PlayerState, AnimeCard, CharacterCard, Card } from '@/types';
 import type { GameState, ClashInfo, Notification } from '@/types/battle';
-import { ResourceManager } from '@/core/systems/ResourceManager';
+import * as resources from '@/engine/battle/resources';
+import { defaultRng } from '@/engine/rng';
 
 // Helper function to create a default player state
 const createDefaultPlayer = (id: 'playerA' | 'playerB', name: string): PlayerState => ({
@@ -122,21 +123,21 @@ export const usePlayerStore = defineStore('players', {
     // Shuffle deck for a specific player
     shuffleDeck(playerId: 'playerA' | 'playerB') {
       const player = this[playerId];
-      const newState = ResourceManager.shuffleDeck(player);
+      const newState = resources.shuffleDeck(player, defaultRng);
       this[playerId] = { ...this[playerId], ...newState };
     },
 
     // Draw cards for a specific player
     drawCards(playerId: 'playerA' | 'playerB', count: number) {
       const player = this[playerId];
-      const newState = ResourceManager.drawCards(player, count);
+      const newState = resources.drawCards(player, count);
       this[playerId] = { ...this[playerId], ...newState };
     },
 
     // Discard a card from hand
     discardCardFromHand(playerId: 'playerA' | 'playerB', cardId: string) {
       const player = this[playerId];
-      const newState = ResourceManager.discardCard(player, cardId);
+      const newState = resources.discardCard(player, cardId);
       this[playerId] = { ...this[playerId], ...newState };
     },
 
@@ -148,9 +149,9 @@ export const usePlayerStore = defineStore('players', {
     // Change TP for a player by a certain amount
     changeTp(playerId: 'playerA' | 'playerB', amount: number) {
       const player = this[playerId];
-      const newTp = amount > 0 
-        ? ResourceManager.gainTp(player, amount)
-        : ResourceManager.spendTp(player, -amount);
+      const newTp = amount > 0
+        ? resources.gainTp(player, amount)
+        : resources.spendTp(player, -amount);
 
       if (newTp !== null) {
         player.tp = newTp;
@@ -182,7 +183,7 @@ export const usePlayerStore = defineStore('players', {
     // Restore TP at the start of a new turn
     restoreTpForNewTurn(playerId: 'playerA' | 'playerB', turn: number) {
       const player = this[playerId];
-      const { newTp, newMaxTp } = ResourceManager.restoreTpForNewTurn(player, turn);
+      const { newTp, newMaxTp } = resources.restoreTpForNewTurn(player, turn);
       
       this.$patch(state => {
         state[playerId].tp = newTp;
