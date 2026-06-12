@@ -98,55 +98,9 @@ const handlers: Record<string, EffectHandler> = {
     historyStore.addLog(`议题偏向 ${delta > 0 ? '+1' : '-1'}。`, 'info');
   },
 
-  // === UR Character Effects ===
-  
-  // 牧濑红莉栖 - 时间理论
-  KURISU_TIME_THEORY: (ctx) => {
-    const playerStore = usePlayerStore();
-    const gameStore = useGameStore();
-    const historyStore = useHistoryStore();
-    
-    // TODO: 实现查看对手3张手牌的功能
-    // TODO: 实现本回合科幻类卡牌+2强度的功能
-    const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-    historyStore.addLog(`${name} 使用了时间理论！`, 'info');
-    gameStore.addNotification('时间理论：科幻卡牌+2强度', 'info');
-  },
-
-  // 牧濑红莉栖 - 科学逻辑
-  KURISU_SCIENCE_LOGIC: (ctx) => {
-    if (ctx.event !== 'onPlay' || !ctx.card?.synergy_tags?.includes('科幻')) return;
-    
-    const playerStore = usePlayerStore();
-    const historyStore = useHistoryStore();
-    
-    // 30%几率抽1张牌
-    if (Math.random() < 0.3) {
-      playerStore.drawCards(ctx.playerId, 1);
-      const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-      historyStore.addLog(`${name} 的科学逻辑触发：抽1张牌。`, 'info');
-    }
-  },
-
-  // 战场原黑仪 - 毒舌反击
-  SENJOUGAHARA_POISON_TONGUE: (ctx) => {
-    const gameStore = useGameStore();
-    const historyStore = useHistoryStore();
-    const playerStore = usePlayerStore();
-    
-    // TODO: 实现对手下次"辛辣点评"强度-3的功能
-    const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-    historyStore.addLog(`${name} 准备毒舌反击！`, 'info');
-    gameStore.addNotification('毒舌反击：对方辛辣点评-3强度', 'warning');
-  },
-
-  // 战场原黑仪 - 傲娇魅力  
-  SENJOUGAHARA_TSUNDERE_CHARM: (ctx) => {
-    // TODO: 实现对手使用"友好安利"时议题偏向额外+1的功能
-    console.log('傲娇魅力被动光环触发');
-  },
-
   // === UR角色技能效果处理器 ===
+  // 注：旧版英文 ID 的 handler（KURISU_*、SENJOUGAHARA_*）已于 S1 清理——
+  // 全仓库零引用的死代码，实际技能绑定走下方中文 effectId（见 data/urCharacterSkillsGenerated.ts）。
   
   // 牧濑红莉栖技能
   '牧濑红莉栖_时间理论': async (ctx) => {

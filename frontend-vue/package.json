@@ -10,6 +10,8 @@
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
@@ -17,7 +19,6 @@
   },
   "dependencies": {
     "@tanstack/vue-virtual": "^3.13.12",
-    "@types/chart.js": "^2.9.41",
     "chart.js": "^4.5.0",
     "chartjs-plugin-datalabels": "^2.2.0",
     "pinia": "^3.0.3",
@@ -44,6 +45,7 @@
     "typescript": "~5.8.0",
     "vite": "^7.0.6",
     "vite-plugin-vue-devtools": "^8.0.0",
+    "vitest": "^4.1.8",
     "vue-tsc": "^3.0.4"
   }
 }

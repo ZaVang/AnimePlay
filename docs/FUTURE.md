@@ -25,7 +25,7 @@
 | Sprint | 主题 | 状态 | 阶段 |
 |---|---|---|---|
 | S0 | 文档重构 | ✅ | 已完成 |
-| S1 | 测试安全网 & 架构骨架 | ☐ | 地基 |
+| S1 | 测试安全网 & 架构骨架 | ✅ | 已完成 |
 | S2 | engine 抽取：宅理论战 | ☐ | 解耦 |
 | S3 | engine 抽取：抽卡 & 挑战塔 | ☐ | 解耦 |
 | S4 | engine 抽取：技能 & 养成 & AI | ☐ | 解耦 |
@@ -53,18 +53,19 @@
 
 ---
 
-## ☐ S1 — 测试安全网 & 架构骨架（地基）
+## ✅ S1 — 测试安全网 & 架构骨架（已完成 2026-06-12）
 
 **目标**：在动任何逻辑前铺好回归保护和边界闸，让后续重构「不瞎飞」。
 
-- [ ] 引入 vitest，配 `npm run test`
-- [ ] 给已是纯函数的逻辑补特征测试：`battleCalculator`（伤害/暴击/战力）、`BattleEngine.resolveClash`、`RewardCalculator` 结果表、抽卡概率分布
-- [ ] 新建 `engine/rng.ts`：定义可注入 RNG 接口 + 默认实现；抽卡测试用**种子 RNG** 断言「这一抽必出 X」
-- [ ] 建空骨架目录：`engine/ infra/ lib/ composables/`，各带 index/说明
-- [ ] 上依赖方向闸：`dependency-cruiser` 或 eslint `import/no-restricted-paths`，把「engine import stores/components/views/vue」配成 **error**，接入 lint
-- [ ] 清死代码：`stores/counter.ts`、`components/CollectionStats.vue`、英文技能 stub；删错配的 `@types/chart.js`
+- [x] 引入 vitest 4，配 `npm run test` / `test:watch`（node 环境，纯逻辑测试）
+- [x] 特征测试 **5 文件 56 个**：`battleCalculator`（曲线/伤害/连击/下限/养成联动）、`RewardCalculator` 四张结果表逐格锁定 + 分档边界、`BattleEngine.resolveClash`（薄测试，空 Pinia 搭台——完整纯函数化随 S2）、抽卡（6000 抽分布/70 抽保底/66% UP 替换/十连保底 SSR，种子化确定性）
+- [x] `engine/rng.ts`：RNG 接口 + `defaultRng` / `createSeededRng`(mulberry32) / `createSequenceRng`；保底测试已用种子断言「必出 UP」
+- [x] 骨架目录 `engine/ infra/ lib/ composables/` 各带章程 README；`engine/index.ts` 注明迁入计划
+- [x] 依赖方向闸：用 **ESLint 内置规则**实现（`no-restricted-imports` + `no-restricted-globals` + `no-restricted-properties`，零新增依赖，比 dependency-cruiser 轻）——engine 禁 import stores/components/views/infra/vue/pinia，禁 Math.random/fetch/DOM/localStorage；lib 同类约束。绊线验证：违规文件 3 类错误全拦截
+- [x] 清死代码：`stores/counter.ts`、`components/CollectionStats.vue`、4 个零引用英文技能 stub（KURISU_*/SENJOUGAHARA_*；有引用的 `NEXT_CARD_ANY_TYPE`/`BIAS_HALVE_OPP` 保留）；移除错配的 `@types/chart.js`
 
-**Exit**：`npm run test` 通过且覆盖核心公式；故意写一行 `engine→store` import 会被 lint 拦下；`type-check` 仍 0 错。
+**Exit 达成**：56 测试全绿；绊线文件被 lint 拦下（exit 1，3 类错误）；`type-check` 0 错。
+> 移交 S4 的发现：`skills/effects/index.ts` 有 18 处历史 lint 债（unused `ctx` 参数，S1 之前已存在），随技能系统重构一并处理。
 
 ---
 
@@ -107,6 +108,7 @@
 - [ ] nurture 等级/属性/训练规则 → `engine/nurture`
 - [ ] `core/ai` → `engine/ai`（给定 state 纯函数化）
 - [ ] 替换剩余全部 `Math.random` → rng
+- [ ] 清理 `skills/effects/index.ts` 历史 lint 债（18 处 unused `ctx`，S1 移交）
 
 **Exit**：技能/养成/AI 正常；`engine/` 整体零 store/Vue import；`core/` 清空或仅留兼容壳。
 
