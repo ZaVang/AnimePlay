@@ -1,11 +1,14 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import { useGameDataStore } from '@/stores/gameDataStore'
+import { installImgFallback } from '@/utils/imgFallback'
 import './assets/skins.css'
 import './assets/main.css'
 
 import App from './App.vue'
 import router from './router'
+
+installImgFallback()
 
 const app = createApp(App)
 const pinia = createPinia()

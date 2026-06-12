@@ -29,6 +29,11 @@ onMounted(() => {
 <template>
   <div class="app-shell min-h-screen text-ink">
 
+    <!-- S7 决策：桌面优先。小屏只提示，不做完整适配（移动端重排推迟到 S11 视图迁移再议） -->
+    <div class="md:hidden bg-warning/15 text-warning text-center text-xs px-3 py-1.5">
+      📺 本作按桌面浏览器设计，小屏体验可能错位，建议使用电脑访问
+    </div>
+
     <header class="sticky top-0 z-50 border-b border-line bg-header/90 shadow-sm backdrop-blur">
 
         <div class="container mx-auto px-4">

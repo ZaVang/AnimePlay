@@ -42,8 +42,8 @@ Vue 3 + TypeScript + Pinia + TailwindCSS, built with Vite.
 - `gameDataStore` — master anime/character/skill data (fetched at startup)
 - 领域 store：`profile`（会话/等级/货币 spend·earn/日志）、`collection`、`deck`、`viewing`、`nurture`、`pve`（小队+塔）、`gachaStore`（保底+历史）
 - `userStore` — **300 行兼容门面**：维持旧调用面 + 跨域编排（抽卡/商店/会话）+ 统一触发存档。新代码直接用领域 store；**货币只准走 `spend()/earn()`**。
-- 持久化：`infra/persistence`（schema v2 + migrate + IO）+ `stores/persistence.ts`（装配器，保存串行合并）。新增存档字段三处同改：schema / migrations / 装配器。
-- `battle.ts` (gameStore+playerStore+historyStore) / `theme.ts` / `settings.ts` / `guess.ts`
+- 持久化：`infra/persistence`（schema **v4** + migrate + IO；v3=商店限购+猜角色，v4=皮肤装扮）+ `stores/persistence.ts`（装配器，保存串行合并）。新增存档字段三处同改：schema / migrations / 装配器。
+- `battle.ts` (gameStore+playerStore+historyStore) / `theme.ts`（S7 皮肤系统：data-skin 切换，存档 v4 随账号漫游）/ `settings.ts` / `guess.ts`
 
 **分层（S2-S4 重构后，依赖只向下，lint 闸强制）**：
 - `engine/` — 纯游戏规则（battle/gacha/squad/skills/nurture/ai + 注入式 RNG）。零 Vue/Pinia/DOM/IO，将来与 Node 服务端共享。
@@ -64,7 +64,7 @@ The 2026-06 audit (`docs/项目审计报告-2026-06-12.md`) found these — be a
 - ~~Economy has no transaction entry~~ **已在 S5 解决**：`profile.spend()/earn()` 是唯一货币入口，8 处组件直改已清零。不要再绕过它改货币。
 - ~~Save protocol gaps（presetSquads/towerProgress 刷新即丢）~~ **已在 S5 解决**：存档协议 v2 + 迁移。注意：后端写文件仍非原子（S10 加固），前端已做保存串行合并兜底。
 - ~~Battle no result screen~~ **已在 S6 解决**：结算面板 + matchRewards 奖励入账（engine/battle/matchRewards.ts）。
-- **172 hardcoded `text-white`** (46 files) not wired to theme vars → titles wash out on the light default theme.
+- ~~172 hardcoded `text-white` → titles wash out~~ **已在 S7 解决**：全站 ~770 处硬编码色彩迁移到皮肤令牌（`assets/skins.css` + `docs/主题系统.md` 有完整规范）。**新代码颜色规则**：界面色一律用语义类（bg-surface/text-ink/accent/border-line…）或 `rgb(var(--c-*))`；按钮用 `.btn-primary/.btn-secondary/.btn-danger/.btn-ghost`；禁止 text-white 压浅底、禁止拼接动态颜色类（`bg-${color}`）；稀有度/资源识别色与图片压片白字是仅有的固定色例外。
 - ~~Dead code / 调试残留~~ **已清**：登出按钮已接通（S6）；console.log 实调用归零、调试 UI（AI手牌数量/虚拟化开关/performanceMonitor）已删。新增代码请勿再引入裸 console.log。
 - **Security (backend)**: save endpoint has no auth; `debug=True`. Must fix before any deploy.
 

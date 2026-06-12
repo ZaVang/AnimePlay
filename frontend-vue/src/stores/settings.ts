@@ -1,6 +1,6 @@
 // stores/settings.ts
 import { defineStore } from 'pinia';
-import { ref, watch } from 'vue';
+import { ref } from 'vue';
 
 export const useSettingsStore = defineStore('settings', () => {
   // 战斗速度设置
@@ -24,37 +24,10 @@ export const useSettingsStore = defineStore('settings', () => {
   
   // 是否显示快速切换按钮
   const showThemeSwitcher = ref(false);
-  
-  // 其他UI主题设置
-  const uiTheme = ref({
-    biasBar: 'gradient',
-    battleLog: 'classic',
-    characterCards: 'standard',
-    effects: 'normal'
-  });
-  
-  // 预设主题包
-  const themePresets = {
-    classic: {
-      biasBar: 'gradient',
-      battleLog: 'classic',
-      characterCards: 'standard',
-      effects: 'normal'
-    },
-    cyberpunk: {
-      biasBar: 'cyber',
-      battleLog: 'terminal',
-      characterCards: 'hologram',
-      effects: 'neon'
-    },
-    minimal: {
-      biasBar: 'elegant',
-      battleLog: 'minimal',
-      characterCards: 'simple',
-      effects: 'subtle'
-    }
-  };
-  
+
+  // （S7 清理：旧 uiTheme/themePresets/applyPreset 死配置已删——无 UI 入口，
+  //  全局换肤现归 stores/theme.ts 皮肤系统）
+
   // 切换议题偏向条主题
   function cycleBarTheme() {
     const themes = ['gradient', 'cyber', 'elegant'] as const;
@@ -66,21 +39,12 @@ export const useSettingsStore = defineStore('settings', () => {
     saveSettings();
   }
   
-  // 应用预设主题
-  function applyPreset(presetName: keyof typeof themePresets) {
-    const preset = themePresets[presetName];
-    uiTheme.value = { ...preset };
-    biasBarTheme.value = preset.biasBar as any;
-    saveSettings();
-  }
-  
   // 保存设置到本地存储
   function saveSettings() {
     localStorage.setItem('ui-settings', JSON.stringify({
       battleSpeed: battleSpeed.value,
       selectedAIProfileId: selectedAIProfileId.value,
       biasBarTheme: biasBarTheme.value,
-      uiTheme: uiTheme.value,
       showThemeSwitcher: showThemeSwitcher.value
     }));
   }
@@ -93,7 +57,6 @@ export const useSettingsStore = defineStore('settings', () => {
       battleSpeed.value = settings.battleSpeed || 'normal';
       selectedAIProfileId.value = settings.selectedAIProfileId || 'config-ai';
       biasBarTheme.value = settings.biasBarTheme || 'gradient';
-      uiTheme.value = settings.uiTheme || themePresets.classic;
       showThemeSwitcher.value = settings.showThemeSwitcher || false;
     }
   }
@@ -107,10 +70,7 @@ export const useSettingsStore = defineStore('settings', () => {
     selectedAIProfileId,
     biasBarTheme,
     showThemeSwitcher,
-    uiTheme,
-    themePresets,
     cycleBarTheme,
-    applyPreset,
     saveSettings,
     loadSettings
   };
