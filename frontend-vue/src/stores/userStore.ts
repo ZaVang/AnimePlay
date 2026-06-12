@@ -1,1060 +1,300 @@
+/**
+ * userStore —— 兼容门面（S5 拆分后）。状态与逻辑在领域 store（profile/collection/deck/
+ * viewing/nurture/pve/gachaStore），持久化装配在 stores/persistence.ts。本文件只做：
+ * ① 维持既有组件调用面（新代码请直接用领域 store）；② 跨域编排（抽卡/商店/会话）；
+ * ③ 动作完成后统一触发 saveToServer（领域 store 自身不保存）。
+ */
 import { defineStore } from 'pinia';
-import { computed, ref } from 'vue';
-import { useGachaStore, type DrawnCard } from './gachaStore';
-import { useGameDataStore } from './gameDataStore';
+import { computed, reactive } from 'vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { type ShopItem } from '@/utils/gachaRotation';
-import type { CharacterNurtureData } from '@/types/nurture';
-import type { Rarity } from '@/types/card';
-import {
-  defaultRng,
-  getRequiredExpForLevel as engineGetRequiredExpForLevel,
-  getLevelFromExp as engineGetLevelFromExp,
-  getLevelProgress as engineGetLevelProgress,
-  levelUpAttributePoints,
-  distributeRandomAttributes as engineDistributeRandomAttributes,
-  createDefaultNurtureData,
-  applyBattleEnhancements,
-  MAX_CHARACTER_LEVEL,
-  ATTRIBUTE_CAP,
-  ENHANCEMENT_CAP,
-  EXP_PER_AFFECTION,
-  EXP_PER_ATTRIBUTE,
-  EXP_PER_BATTLE_STAT,
-} from '@/engine';
+import type { CurrencyKey, Deck } from '@/types/player';
+import { useGachaStore, type DrawnCard } from './gachaStore';
+import { useGameDataStore } from './gameDataStore';
+import { useProfileStore } from './profile';
+import { useCollectionStore, type CardDomain } from './collection';
+import { useDeckStore } from './deck';
+import { useViewingStore } from './viewing';
+import { useNurtureStore } from './nurture';
+import { usePveStore } from './pve';
+import { saveToServer, loadFromServer, resetAllDomains } from './persistence';
 
-// --- Type Definitions ---
-
-export interface Deck {
-  name: string;
-  anime: number[]; // Store only anime card IDs
-  character: number[]; // Store only character card IDs
-  cover: {
-    id: number;
-    type: 'anime' | 'character';
-  } | null;
-  createdAt: string;
-  version: number;
-}
-
-export interface ViewingQueueSlot {
-  animeId: number;
-  startTime: number; // ISO timestamp
-}
-
-interface PlayerState {
-  level: number;
-  exp: number;
-  animeGachaTickets: number;
-  characterGachaTickets: number;
-  knowledgePoints: number;
-  savedDecks: Record<string, Deck>;
-  viewingQueue: (ViewingQueueSlot | null)[];
-  watchedAnime: Set<number>; // 已观看过的动画ID列表
-  viewingStats: {
-    totalWatchTime: number; // 总观看时间（分钟）
-    genreProgress: Record<string, number>; // 各类型观看数量
-    consecutiveDays: number; // 连续观看天数
-    lastWatchDate: string; // 最后观看日期
-  };
-}
-
-export interface LogEntry {
-  message: string;
-  type: 'info' | 'success' | 'warning' | 'gacha';
-  timestamp: number;
-}
-
-// 角色养成数据接口
+// 类型转发（历史 import 路径兼容）
+export type { Deck, ViewingQueueSlot, LogEntry, GachaHistoryItem, PresetSquad, TowerProgress } from '@/types/player';
 export type { CharacterNurtureData } from '@/types/nurture';
-
-export interface GachaHistoryItem {
-  id: number;
-  rarity: Rarity;
-  timestamp: number;
-}
-
-
-export interface PresetSquad {
-  id: number;
-  name: string;
-  members: (number | null)[]; // 4个位置，null表示空位
-  lastUsed?: string;
-}
-
-export interface TowerProgress {
-  currentFloor: number; // 当前最高到达层数
-  maxFloor: number; // 历史最高层数
-  floorRewards: { [floor: number]: boolean }; // 已领取的层数奖励
-  todayAttempts: number; // 今日尝试次数
-  lastAttemptDate: string; // 上次尝试日期
-}
+export type { DrawnCard } from './gachaStore';
 
 export const useUserStore = defineStore('user', () => {
-  // --- STATE ---
-  const currentUser = ref<string>('');
-  const playerState = ref<PlayerState>({
-    ...GAME_CONFIG.playerInitialState,
-    exp: 0,
-    savedDecks: {},
-    viewingQueue: Array(GAME_CONFIG.gameplay.viewingQueue.slots).fill(null),
-    watchedAnime: new Set<number>(),
-    viewingStats: {
-      totalWatchTime: 0,
-      genreProgress: {},
-      consecutiveDays: 0,
-      lastWatchDate: '',
-    },
-  });
-  const logs = ref<LogEntry[]>([]);
-  const animeCollection = ref<Map<number, { count: number }>>(new Map());
-  const characterCollection = ref<Map<number, { count: number }>>(new Map());
-  const favoriteAnime = ref<Set<number>>(new Set());
-  const favoriteCharacters = ref<Set<number>>(new Set());
-  const animeGachaHistory = ref<GachaHistoryItem[]>([]);
-  const characterGachaHistory = ref<GachaHistoryItem[]>([]);
-  // 保底状态已归属 gacha 域（gachaStore.animePity / characterPity），存档读写经下方 load/save
-  
-  // 角色养成数据
-  const characterNurtureData = ref<Map<number, CharacterNurtureData>>(new Map());
-  
-  // 预设小队数据
-  
-  const presetSquads = ref<PresetSquad[]>([
-    { id: 1, name: '小队 A', members: [null, null, null, null] },
-    { id: 2, name: '小队 B', members: [null, null, null, null] },
-    { id: 3, name: '小队 C', members: [null, null, null, null] }
-  ]);
+  const profile = useProfileStore();
+  const collection = useCollectionStore();
+  const deck = useDeckStore();
+  const viewing = useViewingStore();
+  const nurture = useNurtureStore();
+  const pve = usePveStore();
 
-  // 爬塔进度数据
-
-  const towerProgress = ref<TowerProgress>({
-    currentFloor: 1,
-    maxFloor: 1,
-    floorRewards: {},
-    todayAttempts: 0,
-    lastAttemptDate: ''
+  // --- playerState 兼容桥：字段读写直通各领域 store（货币写入请走 spend/earn） ---
+  const playerState = reactive({
+    get level() { return profile.core.level; }, set level(v: number) { profile.core.level = v; },
+    get exp() { return profile.core.exp; }, set exp(v: number) { profile.core.exp = v; },
+    get animeGachaTickets() { return profile.core.animeGachaTickets; }, set animeGachaTickets(v: number) { profile.core.animeGachaTickets = v; },
+    get characterGachaTickets() { return profile.core.characterGachaTickets; }, set characterGachaTickets(v: number) { profile.core.characterGachaTickets = v; },
+    get knowledgePoints() { return profile.core.knowledgePoints; }, set knowledgePoints(v: number) { profile.core.knowledgePoints = v; },
+    get savedDecks() { return deck.savedDecks; },
+    get viewingQueue() { return viewing.viewingQueue; },
+    get watchedAnime() { return viewing.watchedAnime; },
+    get viewingStats() { return viewing.viewingStats; },
   });
 
-  // --- GETTERS ---
-  const isLoggedIn = computed(() => !!currentUser.value);
-  const getAnimeCardCount = computed(() => (id: number) => animeCollection.value.get(id)?.count || 0);
-  const getCharacterCardCount = computed(() => (id: number) => characterCollection.value.get(id)?.count || 0);
-  const isFavorite = computed(() => (id: number, type: 'anime' | 'character') =>
-    type === 'anime' ? favoriteAnime.value.has(id) : favoriteCharacters.value.has(id)
-  );
-  const savedDecks = computed(() => playerState.value.savedDecks);
-  const expToNextLevel = computed(() => {
-    const levelXP = GAME_CONFIG.gameplay.levelXP;
-    const currentLevel = playerState.value.level;
-    if (currentLevel >= levelXP.length) {
-      return Infinity; // Max level reached
-    }
-    return levelXP[currentLevel];
-  });
-
-  // --- ACTIONS ---
-
-  function addLog(message: string, type: LogEntry['type'] = 'info') {
-    logs.value.unshift({ message, type, timestamp: Date.now() });
-    if (logs.value.length > 50) { // Keep only the last 50 logs
-      logs.value.pop();
-    }
-  }
-
-  function resetState() {
-    playerState.value = {
-        ...GAME_CONFIG.playerInitialState,
-        exp: 0,
-        savedDecks: {},
-        viewingQueue: Array(GAME_CONFIG.gameplay.viewingQueue.slots).fill(null),
-        watchedAnime: new Set<number>(),
-        viewingStats: {
-          totalWatchTime: 0,
-          genreProgress: {},
-          consecutiveDays: 0,
-          lastWatchDate: '',
-        },
-    };
-    logs.value = [];
-    animeCollection.value.clear();
-    characterCollection.value.clear();
-    favoriteAnime.value.clear();
-    favoriteCharacters.value.clear();
-    characterNurtureData.value.clear();
-    animeGachaHistory.value = [];
-    characterGachaHistory.value = [];
-    useGachaStore().resetPity();
-  }
-
-  async function loadStateFromServer() {
-    if (!currentUser.value) return;
-    try {
-      const response = await fetch(`/api/user/data?username=${currentUser.value}`);
-      if (!response.ok) throw new Error(`Server error: ${response.statusText}`);
-      const data = await response.json();
-      if (data.isNewUser) {
-        resetState();
-        addLog('欢迎新玩家！已为您初始化默认存档。', 'success');
-      } else {
-        const payload = data;
-        const initialState = { 
-          viewingQueue: Array(GAME_CONFIG.gameplay.viewingQueue.slots).fill(null),
-          watchedAnime: new Set<number>(),
-          viewingStats: {
-            totalWatchTime: 0,
-            genreProgress: {},
-            consecutiveDays: 0,
-            lastWatchDate: '',
-          },
-        };
-        
-        // 反序列化playerState，处理Set类型和新字段
-        const loadedState = { ...initialState, ...playerState.value, ...payload.state };
-        if (payload.state?.watchedAnime && Array.isArray(payload.state.watchedAnime)) {
-          loadedState.watchedAnime = new Set(payload.state.watchedAnime);
-        }
-        playerState.value = loadedState;
-
-        const gachaStore = useGachaStore();
-        gachaStore.animePity = payload.animePity || gachaStore.animePity;
-        gachaStore.characterPity = payload.characterPity || gachaStore.characterPity;
-        const savedAnimeCollection = payload.animeCollection || [];
-        // 旧存档兼容：早期收藏值是裸数量 number，统一迁移为 { count }
-        const migrateCollection = (entries: [number, number | { count: number }][]): [number, { count: number }][] =>
-          entries.map(([id, data]) => [id, typeof data === 'number' ? { count: data } : data]);
-        animeCollection.value = new Map(migrateCollection(savedAnimeCollection));
-        const savedCharacterCollection = payload.characterCollection || [];
-        characterCollection.value = new Map(migrateCollection(savedCharacterCollection));
-        animeGachaHistory.value = payload.animeHistory || [];
-        characterGachaHistory.value = payload.characterHistory || [];
-        favoriteAnime.value = new Set(payload.favoriteAnime || []);
-        favoriteCharacters.value = new Set(payload.favoriteCharacters || []);
-        
-        // 加载角色养成数据
-        const savedNurtureData = payload.characterNurtureData || [];
-        characterNurtureData.value = new Map(savedNurtureData);
-        
-        addLog('成功从服务器加载存档。', 'info');
-      }
-    } catch (error) {
-      console.error('Failed to load user data:', error);
-      alert('加载存档失败，将使用初始设置。');
-      resetState();
-    }
-  }
-
-  async function saveStateToServer(showAlert = false) {
-    if (!currentUser.value) return;
-    
-    // 序列化playerState，处理Set类型
-    const serializedState = {
-      ...playerState.value,
-      watchedAnime: Array.from(playerState.value.watchedAnime),
-    };
-    
-    const gachaStore = useGachaStore();
-    const payload = {
-        state: serializedState,
-        animeCollection: Array.from(animeCollection.value.entries()),
-        characterCollection: Array.from(characterCollection.value.entries()),
-        animePity: gachaStore.animePity,
-        characterPity: gachaStore.characterPity,
-        animeHistory: animeGachaHistory.value,
-        characterHistory: characterGachaHistory.value,
-        favoriteAnime: Array.from(favoriteAnime.value),
-        favoriteCharacters: Array.from(favoriteCharacters.value),
-        characterNurtureData: Array.from(characterNurtureData.value.entries()),
-    };
-    try {
-        const response = await fetch('/api/user/data', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ username: currentUser.value, payload }),
-        });
-        if (!response.ok) throw new Error(`Server error: ${response.statusText}`);
-        if (showAlert) addLog('存档已手动保存到服务器！', 'success');
-    } catch (error) {
-        console.error('Failed to save user data:', error);
-        if (showAlert) addLog('存档失败，请检查浏览器控制台日志。', 'warning');
-    }
-  }
-
-  async function saveDeck(deck: Deck) {
-    if (!isLoggedIn.value) return;
-    addLog(`卡组 [${deck.name}] 已保存。`, 'info');
-    playerState.value.savedDecks[deck.name] = deck;
-    playerState.value = { ...playerState.value };
-    await saveStateToServer();
-  }
-
-  async function deleteDeck(deckName: string) {
-    if (!isLoggedIn.value) return;
-    if (playerState.value.savedDecks[deckName]) {
-      addLog(`卡组 [${deckName}] 已删除。`, 'warning');
-      delete playerState.value.savedDecks[deckName];
-      playerState.value = { ...playerState.value };
-      await saveStateToServer();
-    }
-  }
+  // --- 会话 ---
 
   async function login(username: string) {
     if (!username || !username.match(/^[a-zA-Z0-9]+$/)) {
       alert('用户名只能包含字母和数字。');
       return;
     }
-    currentUser.value = username;
-    await loadStateFromServer();
+    profile.currentUser = username;
+    await loadFromServer();
   }
 
   async function logout() {
-    addLog('已登出，再见！', 'info');
-    await saveStateToServer(false);
-    currentUser.value = '';
-    resetState();
+    profile.addLog('已登出，再见！', 'info');
+    await saveToServer(false);
+    profile.currentUser = '';
+    resetAllDomains();
   }
 
-  function addExp(amount: number) {
-    if (!isLoggedIn.value || amount === 0) return;
-    addLog(`获得 ${amount} 点经验。`, 'info');
-    playerState.value.exp += amount;
-    let requiredExp = expToNextLevel.value;
-    while (playerState.value.exp >= requiredExp) {
-        playerState.value.exp -= requiredExp;
-        const currentLevel = playerState.value.level;
-        const rewards = GAME_CONFIG.gameplay.levelUpRewards[currentLevel + 1];
-
-        playerState.value.level++;
-
-        if (rewards) {
-            playerState.value.animeGachaTickets += rewards.animeTickets;
-            playerState.value.characterGachaTickets += rewards.characterTickets;
-            playerState.value.knowledgePoints += rewards.knowledge;
-            addLog(`恭喜！你已达到 ${playerState.value.level} 级！获得动画券 ${rewards.animeTickets} 张，角色券 ${rewards.characterTickets} 张，知识点 ${rewards.knowledge} 点。`, 'success');
-        } else {
-            addLog(`恭喜！你已达到 ${playerState.value.level} 级！`, 'success');
-        }
-
-        requiredExp = expToNextLevel.value;
-        if (requiredExp === Infinity) break;
-    }
-    saveStateToServer();
-  }
+  // --- 抽卡编排：券 → 抽取 → 入库 → 经验 → 历史 ---
 
   async function drawCards(gachaType: 'anime' | 'character', count: number): Promise<DrawnCard[] | null> {
-    if (!isLoggedIn.value) {
+    if (!profile.isLoggedIn) {
       alert('请先登录！');
       return null;
     }
-    const ticketType = gachaType === 'anime' ? 'animeGachaTickets' : 'characterGachaTickets';
-    if (playerState.value[ticketType] < count) {
-        const ticketName = gachaType === 'anime' ? '动画券' : '角色券';
-        alert(`${ticketName}不足！`);
-        return null;
+    const ticketType: CurrencyKey = gachaType === 'anime' ? 'animeGachaTickets' : 'characterGachaTickets';
+    if (profile.core[ticketType] < count) {
+      alert(`${gachaType === 'anime' ? '动画券' : '角色券'}不足！`);
+      return null;
     }
+
     const gachaStore = useGachaStore();
     const gameDataStore = useGameDataStore();
     const drawnCards = gachaStore.performGachaLogic(gachaType, count);
 
-    playerState.value[ticketType] -= count;
-    addLog(`进行了 ${count} 次${gachaType === 'anime' ? '动画' : '角色'}抽卡。`, 'info');
+    profile.spend(ticketType, count);
+    profile.addLog(`进行了 ${count} 次${gachaType === 'anime' ? '动画' : '角色'}抽卡。`, 'info');
 
-    const expConfig = gachaType === 'anime' ? GAME_CONFIG.gameplay.animeGachaEXP : GAME_CONFIG.gameplay.characterGachaEXP;
-    const expToAdd = count > 1 ? expConfig.multi : expConfig.single;
-
-    const collection = gachaType === 'anime' ? animeCollection.value : characterCollection.value;
     drawnCards.forEach((card: DrawnCard) => {
-        const cardData = gachaType === 'anime'
-            ? gameDataStore.getAnimeCardById(card.id)
-            : gameDataStore.getCharacterCardById(card.id);
+      const cardData = gachaType === 'anime'
+        ? gameDataStore.getAnimeCardById(card.id)
+        : gameDataStore.getCharacterCardById(card.id);
 
-        if (collection.has(card.id)) {
-            const existing = collection.get(card.id)!;
-            existing.count++;
-            card.isDuplicate = true;
-        } else {
-            collection.set(card.id, { count: 1 });
-            card.isNew = true;
-            addLog(`首次获得新卡: [${card.rarity}] ${cardData?.name}`, 'success');
-        }
-
-        if (['SSR', 'HR', 'UR'].includes(card.rarity)) {
-           addLog(`🎉 恭喜！抽到了稀有卡: [${card.rarity}] ${cardData?.name}`, 'gacha');
-        }
+      const { isNew } = collection.addCard(card.id, gachaType);
+      if (isNew) {
+        card.isNew = true;
+        profile.addLog(`首次获得新卡: [${card.rarity}] ${cardData?.name}`, 'success');
+      } else {
+        card.isDuplicate = true;
+      }
+      if (['SSR', 'HR', 'UR'].includes(card.rarity)) {
+        profile.addLog(`🎉 恭喜！抽到了稀有卡: [${card.rarity}] ${cardData?.name}`, 'gacha');
+      }
     });
 
-    addExp(expToAdd); // Add exp after logging gacha results
+    const expConfig = gachaType === 'anime' ? GAME_CONFIG.gameplay.animeGachaEXP : GAME_CONFIG.gameplay.characterGachaEXP;
+    profile.addExp(count > 1 ? expConfig.multi : expConfig.single);
 
-    const history = gachaType === 'anime' ? animeGachaHistory.value : characterGachaHistory.value;
-    const historyItems = drawnCards.map(card => ({
-        id: card.id,
-        rarity: card.rarity,
-        timestamp: Date.now(),
-    }));
-    history.push(...historyItems);
-
+    gachaStore.pushHistory(
+      gachaType,
+      drawnCards.map(card => ({ id: card.id, rarity: card.rarity, timestamp: Date.now() })),
+    );
     gachaStore.lastResult = drawnCards;
+
+    saveToServer();
     return drawnCards;
   }
 
-  // --- Viewing Queue Actions ---
-  function addToViewingQueue(animeId: number, slotIndex: number) {
-    if (!isLoggedIn.value || playerState.value.viewingQueue[slotIndex]) return;
+  // --- 商店编排 ---
 
-    const gameDataStore = useGameDataStore();
-    const anime = gameDataStore.getAnimeCardById(animeId);
-    if (!anime) return;
-
-    playerState.value.viewingQueue[slotIndex] = {
-      animeId: animeId,
-      startTime: Date.now(),
-    };
-    addLog(`开始观看 [${anime.rarity}] ${anime.name}。`, 'info');
-    saveStateToServer();
-  }
-
-  function collectFromViewingQueue(slotIndex: number) {
-    if (!isLoggedIn.value) return;
-    const slot = playerState.value.viewingQueue[slotIndex];
-    if (!slot) return;
-
-    const gameDataStore = useGameDataStore();
-    const anime = gameDataStore.getAnimeCardById(slot.animeId);
-    if (!anime) return;
-
-    const rewards = GAME_CONFIG.gameplay.viewingQueue.rewards[anime.rarity];
-    if (!rewards) {
-        addLog(`未找到稀有度为 ${anime.rarity} 的观看奖励配置。`, 'warning');
-        return;
-    }
-    const endTime = slot.startTime + rewards.time * 60 * 1000;
-
-    if (Date.now() >= endTime) {
-      addExp(rewards.exp);
-      playerState.value.knowledgePoints += rewards.knowledge;
-      
-      // 添加到已观看历史
-      playerState.value.watchedAnime.add(slot.animeId);
-      
-      // 更新观看统计
-      const stats = playerState.value.viewingStats;
-      stats.totalWatchTime += rewards.time;
-      
-      // 更新类型观看进度
-      if (anime.synergy_tags) {
-        anime.synergy_tags.forEach(genre => {
-          stats.genreProgress[genre] = (stats.genreProgress[genre] || 0) + 1;
-        });
-      }
-      
-      // 更新连续观看天数
-      const today = new Date().toDateString();
-      const lastDate = new Date(stats.lastWatchDate).toDateString();
-      const yesterday = new Date(Date.now() - 24 * 60 * 60 * 1000).toDateString();
-      
-      if (stats.lastWatchDate === '') {
-        // 首次观看
-        stats.consecutiveDays = 1;
-      } else if (lastDate === yesterday) {
-        // 连续观看
-        stats.consecutiveDays += 1;
-      } else if (lastDate !== today) {
-        // 断链，重新开始
-        stats.consecutiveDays = 1;
-      }
-      // 如果是同一天，不改变连续天数
-      
-      stats.lastWatchDate = new Date().toISOString();
-      
-      // 连续观看奖励
-      if (stats.consecutiveDays >= 7 && stats.consecutiveDays % 7 === 0) {
-        const bonusTickets = Math.min(5, Math.floor(stats.consecutiveDays / 7));
-        playerState.value.animeGachaTickets += bonusTickets;
-        addLog(`🎉 连续观看${stats.consecutiveDays}天！获得额外${bonusTickets}张动画券！`, 'success');
-      }
-
-      addLog(`看完了 ${anime.name}！获得了 ${rewards.exp} 经验和 ${rewards.knowledge} 知识点。`, 'success');
-      playerState.value.viewingQueue[slotIndex] = null;
-      saveStateToServer();
-    } else {
-      addLog('观看时间还没结束！', 'warning');
-    }
-  }
-
-  function purchaseFromShop(item: { Id: number; cost: number }, itemType: 'anime' | 'character') {
-    if (!isLoggedIn.value) {
+  function purchaseFromShop(item: { Id: number; cost: number }, itemType: CardDomain) {
+    if (!profile.isLoggedIn) {
       alert('请先登录！');
       return;
     }
-
-    if (playerState.value.knowledgePoints < item.cost) {
-      addLog('知识点不足，无法购买！', 'warning');
-      return;
-    }
-
-    const gameDataStore = useGameDataStore();
     const card = itemType === 'anime'
-        ? gameDataStore.getAnimeCardById(item.Id)
-        : gameDataStore.getCharacterCardById(item.Id);
-
+      ? useGameDataStore().getAnimeCardById(item.Id)
+      : useGameDataStore().getCharacterCardById(item.Id);
     if (!card) {
-      addLog('购买失败，物品不存在。', 'warning');
+      profile.addLog('购买失败，物品不存在。', 'warning');
       return;
     }
-
-    playerState.value.knowledgePoints -= item.cost;
-
-    const collection = itemType === 'anime' ? animeCollection.value : characterCollection.value;
-    const existing = collection.get(item.Id);
-    if (existing) {
-      existing.count++;
-    } else {
-      collection.set(item.Id, { count: 1 });
+    if (!profile.spend('knowledgePoints', item.cost)) {
+      profile.addLog('知识点不足，无法购买！', 'warning');
+      return;
     }
-
-    addLog(`成功购买 [${card.rarity}] ${card.name}！`, 'success');
-    saveStateToServer();
+    collection.addCard(item.Id, itemType);
+    profile.addLog(`成功购买 [${card.rarity}] ${card.name}！`, 'success');
+    saveToServer();
   }
 
   function purchaseShopItem(item: ShopItem) {
-    if (!isLoggedIn.value) {
+    if (!profile.isLoggedIn) {
       alert('请先登录！');
       return Promise.reject(new Error('未登录'));
     }
-
-    if (playerState.value.knowledgePoints < item.cost) {
-      addLog('知识点不足，无法购买！', 'warning');
+    if (!profile.spend('knowledgePoints', item.cost)) {
+      profile.addLog('知识点不足，无法购买！', 'warning');
       return Promise.reject(new Error('知识点不足'));
     }
 
-    // 扣除知识点
-    playerState.value.knowledgePoints -= item.cost;
-
-    // 根据物品类型进行处理
     switch (item.type) {
       case 'ticket':
-        // 增加抽卡券
         if (item.id.includes('anime')) {
-          playerState.value.animeGachaTickets += item.quantity || 1;
-          addLog(`成功购买 ${item.name}！获得 ${item.quantity || 1} 张动画抽卡券`, 'success');
+          profile.earn('animeGachaTickets', item.quantity || 1);
+          profile.addLog(`成功购买 ${item.name}！获得 ${item.quantity || 1} 张动画抽卡券`, 'success');
         } else if (item.id.includes('character')) {
-          playerState.value.characterGachaTickets += item.quantity || 1;
-          addLog(`成功购买 ${item.name}！获得 ${item.quantity || 1} 张角色抽卡券`, 'success');
+          profile.earn('characterGachaTickets', item.quantity || 1);
+          profile.addLog(`成功购买 ${item.name}！获得 ${item.quantity || 1} 张角色抽卡券`, 'success');
         }
         break;
 
       case 'currency':
-        // 增加知识点（相当于返还）
-        playerState.value.knowledgePoints += item.quantity || 0;
-        addLog(`成功购买 ${item.name}！获得 ${item.quantity || 0} 知识点`, 'success');
+        profile.earn('knowledgePoints', item.quantity || 0);
+        profile.addLog(`成功购买 ${item.name}！获得 ${item.quantity || 0} 知识点`, 'success');
         break;
 
-      case 'booster':
-        // 增加经验值
-        playerState.value.exp += item.quantity || 0;
-        
-        // 检查是否升级
-        let targetLevel = playerState.value.level;
+      case 'booster': {
+        // 经验药水：沿用原有的直加经验 + 等级走表逻辑（与 addExp 的扣减式升级并存是历史行为，S6 商店重构时统一）
+        profile.core.exp += item.quantity || 0;
+        let targetLevel = profile.core.level;
         const levelXP = GAME_CONFIG.gameplay.levelXP;
-        
-        while (targetLevel < levelXP.length && playerState.value.exp >= levelXP[targetLevel]) {
+        while (targetLevel < levelXP.length && profile.core.exp >= levelXP[targetLevel]) {
           targetLevel++;
         }
-        
-        if (targetLevel > playerState.value.level) {
-          const oldLevel = playerState.value.level;
-          playerState.value.level = targetLevel;
-          addLog(`恭喜！等级提升至 Lv.${targetLevel}！`, 'success');
-          
-          // 给予升级奖励
+        if (targetLevel > profile.core.level) {
+          const oldLevel = profile.core.level;
+          profile.core.level = targetLevel;
+          profile.addLog(`恭喜！等级提升至 Lv.${targetLevel}！`, 'success');
           for (let level = oldLevel + 1; level <= targetLevel; level++) {
             const reward = GAME_CONFIG.gameplay.levelUpRewards[level.toString()];
             if (reward) {
-              playerState.value.animeGachaTickets += reward.animeTickets;
-              playerState.value.characterGachaTickets += reward.characterTickets;
-              playerState.value.knowledgePoints += reward.knowledge;
-              addLog(`升级奖励：${reward.animeTickets}动画券 + ${reward.characterTickets}角色券 + ${reward.knowledge}知识点`, 'success');
+              profile.earn('animeGachaTickets', reward.animeTickets);
+              profile.earn('characterGachaTickets', reward.characterTickets);
+              profile.earn('knowledgePoints', reward.knowledge);
+              profile.addLog(`升级奖励：${reward.animeTickets}动画券 + ${reward.characterTickets}角色券 + ${reward.knowledge}知识点`, 'success');
             }
           }
         }
-        
-        addLog(`成功购买 ${item.name}！获得 ${item.quantity || 0} 经验值`, 'success');
+        profile.addLog(`成功购买 ${item.name}！获得 ${item.quantity || 0} 经验值`, 'success');
         break;
+      }
 
       default:
-        addLog(`成功购买 ${item.name}！`, 'success');
+        profile.addLog(`成功购买 ${item.name}！`, 'success');
         break;
     }
 
-    saveStateToServer();
+    saveToServer();
     return Promise.resolve();
   }
 
-  function dismantleCard(cardId: number, cardType: 'anime' | 'character') {
-    const collection = cardType === 'anime' ? animeCollection.value : characterCollection.value;
-    const cardData = collection.get(cardId);
+  // --- 各领域委托（动作完成后统一触发存档） ---
 
-    if (!cardData || cardData.count <= 1) {
-        addLog('分解失败：卡片不存在或只有一张。', 'warning');
-        return;
-    }
-
-    const gameDataStore = useGameDataStore();
-    const cardDetails = cardType === 'anime'
-        ? gameDataStore.getAnimeCardById(cardId)
-        : gameDataStore.getCharacterCardById(cardId);
-
-    if (!cardDetails) return;
-
-    const config = cardType === 'anime' ? GAME_CONFIG.animeSystem : GAME_CONFIG.characterSystem;
-    const dismantleValue = config.rarityConfig[cardDetails.rarity]?.dismantleValue || 0;
-
-    cardData.count--;
-    playerState.value.knowledgePoints += dismantleValue;
-    addLog(`成功分解 [${cardDetails.rarity}] ${cardDetails.name}，获得 ${dismantleValue} 知识点。`, 'success');
-    saveStateToServer();
-  }
-
-  function dismantleAllDuplicates(cardType: 'anime' | 'character') {
-    const collection = cardType === 'anime' ? animeCollection.value : characterCollection.value;
-    const gameDataStore = useGameDataStore();
-    const config = cardType === 'anime' ? GAME_CONFIG.animeSystem : GAME_CONFIG.characterSystem;
-    const getCardById = cardType === 'anime' ? gameDataStore.getAnimeCardById : gameDataStore.getCharacterCardById;
-
-    let totalValue = 0;
-    let dismantledCount = 0;
-
-    for (const [cardId, cardData] of collection.entries()) {
-        if (cardData.count > 1) {
-            const cardDetails = getCardById(cardId);
-            if(cardDetails) {
-                const duplicates = cardData.count - 1;
-                const valuePerCard = config.rarityConfig[cardDetails.rarity]?.dismantleValue || 0;
-                totalValue += valuePerCard * duplicates;
-                dismantledCount += duplicates;
-                cardData.count = 1;
-            }
-        }
-    }
-
-    if (dismantledCount > 0) {
-        playerState.value.knowledgePoints += totalValue;
-        const typeText = cardType === 'anime' ? '动画' : '角色';
-        addLog(`一键分解了 ${dismantledCount} 张重复${typeText}卡，获得 ${totalValue} 知识点。`, 'success');
-        saveStateToServer();
-    } else {
-        addLog('没有可分解的重复卡片。', 'info');
-    }
-  }
-
-  function toggleFavorite(cardId: number, cardType: 'anime' | 'character') {
-    const favorites = cardType === 'anime' ? favoriteAnime.value : favoriteCharacters.value;
-    const typeName = cardType === 'anime' ? '动画' : '角色';
-
-    if (favorites.has(cardId)) {
-        favorites.delete(cardId);
-        addLog(`已取消喜爱${typeName} #${cardId}。`, 'info');
-    } else {
-        if (favorites.size >= 10) {
-            addLog(`喜爱${typeName}列表已满（最多10张），无法添加。`, 'warning');
-            alert(`您的喜爱${typeName}列表已满（最多10张），请先移除一些再添加。`);
-            return;
-        }
-        favorites.add(cardId);
-        addLog(`已将${typeName} #${cardId} 添加到喜爱列表。`, 'success');
-    }
-    saveStateToServer();
-  }
-
-  // --- 角色养成系统方法 ---
-  
-  // 随机分配属性点（规则在 engine/nurture，注入默认随机源）
-  function distributeRandomAttributes(totalPoints: number) {
-    return engineDistributeRandomAttributes(totalPoints, defaultRng);
-  }
-
-  // 获取角色养成数据，如果不存在则创建默认数据
-  function getNurtureData(characterId: number): CharacterNurtureData {
-    if (!characterNurtureData.value.has(characterId)) {
-      const defaultData: CharacterNurtureData = createDefaultNurtureData();
-      characterNurtureData.value.set(characterId, defaultData);
-    }
-    
-    const data = characterNurtureData.value.get(characterId)!;
-    
-    // 确保levelBonusAttributes字段存在（兼容旧数据）
-    if (!data.levelBonusAttributes) {
-      data.levelBonusAttributes = {
-        charm: 0,
-        intelligence: 0,
-        strength: 0
-      };
-    }
-    
-    // 确保等级与总经验值同步（修复旧数据）
-    if (data.totalExperience !== undefined) {
-      const maxLevel = MAX_CHARACTER_LEVEL;
-      const correctLevel = Math.min(getLevelFromExp(data.totalExperience), maxLevel);
-      if ((data.level || 1) !== correctLevel) {
-        const oldLevel = data.level || 1;
-        data.level = correctLevel;
-        
-        // 如果等级发生了变化，需要重新分配属性
-        if (correctLevel > oldLevel && correctLevel <= maxLevel) {
-          // 为错过的等级补发属性
-          for (let level = oldLevel + 1; level <= correctLevel; level++) {
-            const totalPoints = levelUpAttributePoints(level);
-            const randomBonus = distributeRandomAttributes(totalPoints);
-            
-            data.levelBonusAttributes.charm += randomBonus.charm;
-            data.levelBonusAttributes.intelligence += randomBonus.intelligence;
-            data.levelBonusAttributes.strength += randomBonus.strength;
-          }
-          
-          // 如需要可以在这里添加升级日志
-          if (correctLevel > oldLevel + 1) {
-            addLog(`角色等级自动同步：Lv.${oldLevel} → Lv.${correctLevel}，获得随机属性加成！`, 'success');
-          }
-        }
-      }
-    }
-    
-    return data;
-  }
-
-  // 增加好感度 (无上限)
-  function increaseAffection(characterId: number, amount: number) {
-    if (!isLoggedIn.value) return;
-    
-    const nurtureData = getNurtureData(characterId);
-    nurtureData.affection = nurtureData.affection + amount; // 移除上限限制
-    nurtureData.lastInteraction = new Date().toISOString();
-    nurtureData.totalInteractions++;
-    
-    // 给予经验值奖励 (互动给予少量经验)
-    const expReward = amount * EXP_PER_AFFECTION;
-    addCharacterExp(characterId, expReward);
-
-    const gameDataStore = useGameDataStore();
-    const character = gameDataStore.getCharacterCardById(characterId);
-    
-    if (character) {
-      addLog(`与 ${character.name} 的好感度增加了 ${amount} 点！`, 'success');
-      
-      // 检查是否达到了新的好感度等级
-      // TODO: 实现等级提升奖励和事件解锁
-    }
-    
-    saveStateToServer();
-  }
-
-  // 进行对话互动
-  function interactWithCharacter(characterId: number, dialogueId: string) {
-    if (!isLoggedIn.value) return;
-    
-    const nurtureData = getNurtureData(characterId);
-    nurtureData.dialogueHistory.push(dialogueId);
-    nurtureData.lastInteraction = new Date().toISOString();
-    nurtureData.totalInteractions++;
-    
-    // TODO: 根据对话内容调整好感度和心情
-    // TODO: 解锁新的对话选项
-    
-    saveStateToServer();
-  }
-
-  // 送礼物
-  function giveGift(characterId: number, giftId: string) {
-    if (!isLoggedIn.value) return;
-    
-    const nurtureData = getNurtureData(characterId);
-    nurtureData.gifts.push(giftId);
-    
-    // TODO: 根据角色偏好计算礼物效果
-    // TODO: 实现礼物系统和效果计算
-    
-    const gameDataStore = useGameDataStore();
-    const character = gameDataStore.getCharacterCardById(characterId);
-    
-    if (character) {
-      addLog(`向 ${character.name} 送出了礼物！`, 'success');
-    }
-    
-    saveStateToServer();
-  }
-
-  // 提升角色属性
-  function enhanceAttribute(characterId: number, attribute: keyof CharacterNurtureData['attributes'], amount: number) {
-    if (!isLoggedIn.value) return;
-    
-    const nurtureData = getNurtureData(characterId);
-    const oldValue = nurtureData.attributes[attribute];
-    nurtureData.attributes[attribute] = Math.min(ATTRIBUTE_CAP, oldValue + amount);
-    
-    // 给予经验值奖励 (基础训练给予中等经验)
-    const expReward = amount * EXP_PER_ATTRIBUTE;
-    addCharacterExp(characterId, expReward);
-    
-    const gameDataStore = useGameDataStore();
-    const character = gameDataStore.getCharacterCardById(characterId);
-    
-    if (character) {
-      const attrName = {
-        charm: '魅力',
-        intelligence: '智力',
-        strength: '体力',
-        mood: '心情'
-      }[attribute] || attribute;
-      addLog(`${character.name} 的${attrName}提升了 ${amount} 点！`, 'success');
-    }
-    
-    saveStateToServer();
-  }
-
-  // 提升角色战斗属性
-  function enhanceBattleStat(characterId: number, stat: keyof CharacterNurtureData['battleEnhancements'], amount: number) {
-    console.log('enhanceBattleStat called with FIXED VERSION:', { characterId, stat, amount });
-    if (!isLoggedIn.value) return;
-    
-    try {
-      const nurtureData = getNurtureData(characterId);
-      
-      // 确保 battleEnhancements 属性完整初始化
-      if (!nurtureData.battleEnhancements) {
-        nurtureData.battleEnhancements = {
-          hp: 0,
-          atk: 0,
-          def: 0,
-          sp: 0,
-          spd: 0
-        };
-      }
-      
-      // 确保所有属性都存在
-      const validStats = ['hp', 'atk', 'def', 'sp', 'spd'] as const;
-      for (const validStat of validStats) {
-        if (nurtureData.battleEnhancements[validStat] === undefined) {
-          nurtureData.battleEnhancements[validStat] = 0;
-        }
-      }
-      
-      const oldValue = nurtureData.battleEnhancements[stat] || 0;
-      nurtureData.battleEnhancements[stat] = Math.min(ENHANCEMENT_CAP, oldValue + amount);
-    } catch (error) {
-      console.error('Error in enhanceBattleStat:', error, { characterId, stat, amount });
-      const errorMessage = error instanceof Error ? error.message : String(error);
-      addLog(`战斗属性提升失败：${errorMessage}`, 'warning');
-      return;
-    }
-    
-    // 给予经验值奖励 (战斗训练给予更高经验)
-    const expReward = amount * EXP_PER_BATTLE_STAT;
-    addCharacterExp(characterId, expReward);
-    
-    const gameDataStore = useGameDataStore();
-    const character = gameDataStore.getCharacterCardById(characterId);
-    
-    if (character) {
-      const statName = {
-        hp: '生命值',
-        atk: '攻击力',
-        def: '防御力',
-        sp: 'SP值',
-        spd: '速度'
-      }[stat] || stat;
-      addLog(`${character.name} 的${statName}加成提升了 ${amount}%！`, 'success');
-    }
-    
-    saveStateToServer();
-  }
-
-  // 获取角色最终战斗属性 (原始属性 + 百分比加成)
-  function getEnhancedBattleStats(characterId: number) {
-    const gameDataStore = useGameDataStore();
-    const character = gameDataStore.getCharacterCardById(characterId);
-    if (!character?.battle_stats) return null;
-
-    const nurtureData = getNurtureData(characterId);
-    const baseStats = character.battle_stats;
-    const enhancements = nurtureData.battleEnhancements;
-
-    return applyBattleEnhancements(baseStats, enhancements);
-  }
-
-  // === 角色等级系统 ===
-
-  // 等级曲线与进度（规则在 engine/nurture）
-  function getRequiredExpForLevel(level: number): number {
-    return engineGetRequiredExpForLevel(level);
-  }
-
-  function getLevelFromExp(totalExp: number): number {
-    return engineGetLevelFromExp(totalExp);
-  }
-
-  function getLevelProgress(nurtureData: CharacterNurtureData) {
-    return engineGetLevelProgress(nurtureData.level || 1, nurtureData.totalExperience || 0);
-  }
-
-  // 增加经验值并处理等级提升
-  function addCharacterExp(characterId: number, expAmount: number) {
-    if (!isLoggedIn.value || expAmount <= 0) return;
-    
-    const nurtureData = getNurtureData(characterId);
-    const oldLevel = nurtureData.level;
-    
-    // 增加经验值
-    nurtureData.experience += expAmount;
-    nurtureData.totalExperience += expAmount;
-    
-    // 计算新等级 (最大等级100)
-    const maxLevel = MAX_CHARACTER_LEVEL;
-    const newLevel = Math.min(getLevelFromExp(nurtureData.totalExperience), maxLevel);
-    
-    if (newLevel > oldLevel && newLevel <= maxLevel) {
-      // 等级提升
-      nurtureData.level = newLevel;
-      
-      const gameDataStore = useGameDataStore();
-      const character = gameDataStore.getCharacterCardById(characterId);
-      
-      if (character) {
-        let totalCharmGain = 0;
-        let totalIntGain = 0;
-        let totalStrGain = 0;
-        
-        // 为每一级分配随机属性点 (等级 * 10)
-        for (let level = oldLevel + 1; level <= newLevel; level++) {
-          const totalPoints = levelUpAttributePoints(level);
-          const randomBonus = distributeRandomAttributes(totalPoints);
-          
-          nurtureData.levelBonusAttributes.charm += randomBonus.charm;
-          nurtureData.levelBonusAttributes.intelligence += randomBonus.intelligence;
-          nurtureData.levelBonusAttributes.strength += randomBonus.strength;
-          
-          totalCharmGain += randomBonus.charm;
-          totalIntGain += randomBonus.intelligence;
-          totalStrGain += randomBonus.strength;
-        }
-        
-        const totalGainMsg = `魅力+${totalCharmGain}, 智力+${totalIntGain}, 体力+${totalStrGain}`;
-        
-        addLog(`🎉 ${character.name} 等级提升！Lv.${oldLevel} → Lv.${newLevel}`, 'success');
-        addLog(`随机属性分配：${totalGainMsg}`, 'info');
-        
-        if (newLevel >= maxLevel) {
-          addLog(`🏆 ${character.name} 已达到满级！(Lv.${maxLevel})`, 'success');
-        }
-      }
-    }
-    
-    // 重置当前等级的经验值显示
-    const levelProgress = getLevelProgress(nurtureData);
-    nurtureData.experience = levelProgress.current;
-  }
+  const withSave = <A extends unknown[]>(fn: (...args: A) => unknown) => (...args: A) => {
+    fn(...args);
+    saveToServer();
+  };
 
   return {
-    currentUser,
+    // profile
+    currentUser: computed(() => profile.currentUser),
     playerState,
-    logs,
-    animeCollection,
-    characterCollection,
-    animeGachaHistory,
-    characterGachaHistory,
-    favoriteAnime,
-    favoriteCharacters,
-    isLoggedIn,
-    getAnimeCardCount,
-    getCharacterCardCount,
-    isFavorite,
-    savedDecks,
-    expToNextLevel,
-    VIEWING_REWARDS: GAME_CONFIG.gameplay.viewingQueue.rewards, // Expose for UI
+    logs: computed(() => profile.logs),
+    isLoggedIn: computed(() => profile.isLoggedIn),
+    expToNextLevel: computed(() => profile.expToNextLevel),
+    addLog: profile.addLog,
+    // 货币唯一入口（委托 profile）
+    spend: (currency: CurrencyKey, amount: number) => profile.spend(currency, amount),
+    earn: (currency: CurrencyKey, amount: number) => profile.earn(currency, amount),
+    addExp: (amount: number) => {
+      profile.addExp(amount);
+      saveToServer();
+    },
     login,
     logout,
-    saveStateToServer,
-    addExp,
+    saveStateToServer: saveToServer,
+
+    // gacha
     drawCards,
-    saveDeck,
-    deleteDeck,
-    addLog,
-    addToViewingQueue,
-    collectFromViewingQueue,
-    purchaseFromShop,
-    purchaseShopItem,
-    dismantleCard,
-    dismantleAllDuplicates,
-    toggleFavorite,
-    // 养成系统
-    characterNurtureData,
-    getNurtureData,
-    increaseAffection,
-    interactWithCharacter,
-    giveGift,
-    enhanceAttribute,
-    enhanceBattleStat,
-    getEnhancedBattleStats,
-    // 角色等级系统
-    getRequiredExpForLevel,
-    getLevelFromExp,
-    getLevelProgress,
-    addCharacterExp,
-    
-    // 预设小队系统
-    presetSquads: presetSquads,
-    
-    // 预设小队操作函数
-    updateSquadMember(squadId: number, position: number, characterId: number | null) {
-      const squad = presetSquads.value.find((s: PresetSquad) => s.id === squadId);
-      if (squad && position >= 0 && position < 4) {
-        squad.members[position] = characterId;
-        squad.lastUsed = new Date().toISOString();
-      }
+    animeGachaHistory: computed(() => useGachaStore().animeHistory),
+    characterGachaHistory: computed(() => useGachaStore().characterHistory),
+
+    // collection
+    animeCollection: computed(() => collection.animeCollection),
+    characterCollection: computed(() => collection.characterCollection),
+    favoriteAnime: computed(() => collection.favoriteAnime),
+    favoriteCharacters: computed(() => collection.favoriteCharacters),
+    getAnimeCardCount: computed(() => collection.getAnimeCardCount),
+    getCharacterCardCount: computed(() => collection.getCharacterCardCount),
+    isFavorite: computed(() => collection.isFavorite),
+    dismantleCard: withSave(collection.dismantleCard),
+    dismantleAllDuplicates: (cardType: CardDomain) => {
+      if (collection.dismantleAllDuplicates(cardType)) saveToServer();
     },
-    
-    updateSquadName(squadId: number, newName: string) {
-      const squad = presetSquads.value.find((s: PresetSquad) => s.id === squadId);
-      if (squad) {
-        squad.name = newName;
-      }
-    },
-    
-    getSquadMembers(squadId: number): (number | null)[] {
-      const squad = presetSquads.value.find((s: PresetSquad) => s.id === squadId);
-      return squad ? [...squad.members] : [null, null, null, null];
+    toggleFavorite: (cardId: number, cardType: CardDomain) => {
+      if (collection.toggleFavorite(cardId, cardType)) saveToServer();
     },
 
-    // 爬塔系统
-    towerProgress: towerProgress,
-    
-    // 获取当前可挑战的层数
-    getCurrentChallengeFloor(): number {
-      return towerProgress.value.currentFloor;
+    // deck
+    savedDecks: computed(() => deck.savedDecks),
+    saveDeck: async (d: Deck) => {
+      if (!profile.isLoggedIn) return;
+      deck.saveDeck(d);
+      await saveToServer();
     },
-    
-    // 完成某层挑战
-    completeFloor(floor: number) {
-      if (floor === towerProgress.value.currentFloor) {
-        towerProgress.value.currentFloor = Math.min(floor + 1, 999); // 最高999层
-        towerProgress.value.maxFloor = Math.max(towerProgress.value.maxFloor, floor);
-        addLog(`成功通过第${floor}层！`, 'success');
-      }
+    deleteDeck: async (deckName: string) => {
+      if (!profile.isLoggedIn) return;
+      if (deck.deleteDeck(deckName)) await saveToServer();
     },
-    
-    // 检查某层是否已完成
-    hasCompletedFloor(floor: number): boolean {
-      return floor < towerProgress.value.currentFloor;
+
+    // viewing
+    VIEWING_REWARDS: GAME_CONFIG.gameplay.viewingQueue.rewards,
+    addToViewingQueue: (animeId: number, slotIndex: number) => {
+      if (viewing.addToViewingQueue(animeId, slotIndex)) saveToServer();
     },
-    
-    // 检查今日挑战次数（已移除限制）
-    canAttemptToday(): boolean {
-      return true; // 移除每日挑战次数限制
+    collectFromViewingQueue: (slotIndex: number) => {
+      if (viewing.collectFromViewingQueue(slotIndex)) saveToServer();
     },
-    
-    // 记录挑战尝试
-    recordTowerAttempt() {
-      // 移除每日挑战次数记录，无限挑战
-      return;
-    }
+
+    // shop
+    purchaseFromShop,
+    purchaseShopItem,
+
+    // nurture
+    characterNurtureData: computed(() => nurture.characterNurtureData),
+    getNurtureData: nurture.getNurtureData,
+    increaseAffection: withSave(nurture.increaseAffection),
+    interactWithCharacter: withSave(nurture.interactWithCharacter),
+    giveGift: withSave(nurture.giveGift),
+    enhanceAttribute: withSave(nurture.enhanceAttribute),
+    enhanceBattleStat: withSave(nurture.enhanceBattleStat),
+    getEnhancedBattleStats: nurture.getEnhancedBattleStats,
+    getRequiredExpForLevel: nurture.getRequiredExpForLevel,
+    getLevelFromExp: nurture.getLevelFromExp,
+    getLevelProgress: nurture.getLevelProgress,
+    addCharacterExp: withSave(nurture.addCharacterExp),
+
+    // pve ★ S5 起入存档：小队/塔进度的每次变更都会保存
+    presetSquads: computed(() => pve.presetSquads),
+    towerProgress: computed(() => pve.towerProgress),
+    updateSquadMember: withSave(pve.updateSquadMember),
+    updateSquadName: withSave(pve.updateSquadName),
+    getSquadMembers: pve.getSquadMembers,
+    getCurrentChallengeFloor: pve.getCurrentChallengeFloor,
+    completeFloor: (floor: number) => {
+      if (pve.completeFloor(floor)) saveToServer();
+    },
+    hasCompletedFloor: pve.hasCompletedFloor,
+    canAttemptToday: pve.canAttemptToday,
+    recordTowerAttempt: pve.recordTowerAttempt,
   };
 });

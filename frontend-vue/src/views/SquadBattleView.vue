@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
+import { ref, computed, watch, onMounted, onBeforeUnmount } from 'vue';
 import { RouterLink } from 'vue-router';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
@@ -75,8 +75,11 @@ function saveState() {
   }
 }
 
-// 从sessionStorage恢复状态
+// 恢复页面状态：以服务器存档的塔进度为权威，sessionStorage 只补足页面 UI 态。
+// S5 修复：此前只读 sessionStorage，关浏览器后塔层永远回到第 1 层。
 function loadState() {
+  const progressFloor = userStore.getCurrentChallengeFloor();
+  currentTowerFloor.value = progressFloor;
   try {
     const savedState = sessionStorage.getItem(BATTLE_STATE_KEY);
     if (savedState) {
@@ -84,8 +87,10 @@ function loadState() {
       // 只恢复塔模式状态
       if (state.currentPhase === 'towerMode') {
         currentPhase.value = state.currentPhase;
-        currentTowerFloor.value = state.currentTowerFloor || 1;
-        towerEnemyData.value = state.towerEnemyData;
+        const sessionFloor = state.currentTowerFloor || 1;
+        // 存档进度更靠前时（如旧 session 残留），跟随存档并废弃过期的敌人数据
+        currentTowerFloor.value = Math.max(sessionFloor, progressFloor);
+        towerEnemyData.value = sessionFloor === currentTowerFloor.value ? state.towerEnemyData : null;
         console.log('[DEBUG] State loaded:', state);
       } else {
         console.log('[DEBUG] Reset to tower mode');
@@ -392,7 +397,7 @@ function endBattle() {
     
     // 玩家获得经验和知识点
     userStore.addExp(totalExp);
-    userStore.playerState.knowledgePoints += knowledgeReward;
+    userStore.earn('knowledgePoints', knowledgeReward);
     
     // 给参与战斗的角色分配经验值
     const characterExp = Math.floor(totalExp / 2); // 角色获得玩家经验的一半
@@ -575,6 +580,18 @@ onMounted(() => {
   console.log('[DEBUG] Component mounted, loading state...');
   loadState();
 });
+
+// 存档进度晚于组件挂载到位时（如：刷新塔页面后才登录），跟随服务器进度前进。
+// S5 修复链路的一环：进度只前进不回退，楼层变化时废弃过期的敌人数据。
+watch(
+  () => userStore.towerProgress.currentFloor,
+  newFloor => {
+    if (currentPhase.value === 'towerMode' && newFloor > currentTowerFloor.value) {
+      currentTowerFloor.value = newFloor;
+      towerEnemyData.value = null;
+    }
+  },
+);
 
 // 组件卸载前保存状态
 onBeforeUnmount(() => {

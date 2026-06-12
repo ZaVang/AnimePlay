@@ -4,6 +4,7 @@ import { useGameDataStore } from './gameDataStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { getCurrentUpPool } from '@/utils/gachaRotation';
 import { type Card } from '@/types/card';
+import type { GachaHistoryItem } from '@/types/player';
 import { performDraws, createPityState, type PityState, defaultRng } from '@/engine';
 
 export type DrawnCard = Card & {
@@ -23,9 +24,47 @@ export const useGachaStore = defineStore('gacha', () => {
     const animePity = ref<PityState>(createPityState());
     const characterPity = ref<PityState>(createPityState());
 
+    // 抽卡历史（S5 自 userStore 收编进 gacha 域；序列化键沿用 animeHistory / characterHistory）
+    const animeHistory = ref<GachaHistoryItem[]>([]);
+    const characterHistory = ref<GachaHistoryItem[]>([]);
+
+    function pushHistory(gachaType: 'anime' | 'character', items: GachaHistoryItem[]) {
+        (gachaType === 'anime' ? animeHistory : characterHistory).value.push(...items);
+    }
+
     function resetPity() {
         animePity.value = createPityState();
         characterPity.value = createPityState();
+    }
+
+    // --- 持久化装配（由 stores/persistence.ts 调用） ---
+
+    function serialize() {
+        return {
+            animePity: animePity.value,
+            characterPity: characterPity.value,
+            animeHistory: animeHistory.value,
+            characterHistory: characterHistory.value,
+        };
+    }
+
+    function deserialize(data: {
+        animePity: PityState;
+        characterPity: PityState;
+        animeHistory: GachaHistoryItem[];
+        characterHistory: GachaHistoryItem[];
+    }) {
+        animePity.value = data.animePity;
+        characterPity.value = data.characterPity;
+        animeHistory.value = data.animeHistory;
+        characterHistory.value = data.characterHistory;
+    }
+
+    function reset() {
+        resetPity();
+        animeHistory.value = [];
+        characterHistory.value = [];
+        lastResult.value = [];
     }
 
     function performGachaLogic(
@@ -69,7 +108,13 @@ export const useGachaStore = defineStore('gacha', () => {
         lastResult,
         animePity,
         characterPity,
+        animeHistory,
+        characterHistory,
+        pushHistory,
         resetPity,
         performGachaLogic,
+        serialize,
+        deserialize,
+        reset,
     };
 });

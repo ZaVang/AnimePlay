@@ -5,7 +5,7 @@ This file guides Claude Code (claude.ai/code) when working in the `frontend-vue`
 ## Development Standards
 
 - Keep files focused; aim for under 200–300 lines and split by concern.
-  - Reality check: `stores/userStore.ts` (~1050) and `views/SquadBattleView.vue` (~985) still exceed this — S5/S6 refactor targets, not patterns to copy.
+  - Reality check: `views/SquadBattleView.vue` (~1000) still exceeds this — S6 refactor target, not a pattern to copy.
 - Use clear file/folder hierarchy by functionality; follow existing structure.
 - Use meaningful names; comment non-obvious logic only.
 - Mark incomplete features with detailed `TODO` comments — but **do not ship UI that announces an effect the code does not perform** (the current skill system does exactly this; see Known Debt).
@@ -38,10 +38,12 @@ Vue 3 + TypeScript + Pinia + TailwindCSS, built with Vite.
 | `/guess` | GuessView | 猜角色小游戏 | `docs/猜角色游戏.md` |
 | `/settings` | SettingsView | 设置/主题 | `docs/主题系统.md` |
 
-**State (Pinia)**:
+**State (Pinia, S5 拆分后)**:
 - `gameDataStore` — master anime/character/skill data (fetched at startup)
-- `userStore` — **god object (~1050 lines, 13+ responsibilities)**: session, level/exp, currencies, gacha draw + collection, history, decks, nurture, viewing queue, shop, preset squads, tower progress, save serialization, logs（保底状态已于 S3 移入 gachaStore）. S5 拆分目标.
-- `gachaStore` / `battle.ts` (gameStore+playerStore+historyStore) / `theme.ts` / `settings.ts` / `guess.ts`
+- 领域 store：`profile`（会话/等级/货币 spend·earn/日志）、`collection`、`deck`、`viewing`、`nurture`、`pve`（小队+塔）、`gachaStore`（保底+历史）
+- `userStore` — **300 行兼容门面**：维持旧调用面 + 跨域编排（抽卡/商店/会话）+ 统一触发存档。新代码直接用领域 store；**货币只准走 `spend()/earn()`**。
+- 持久化：`infra/persistence`（schema v2 + migrate + IO）+ `stores/persistence.ts`（装配器，保存串行合并）。新增存档字段三处同改：schema / migrations / 装配器。
+- `battle.ts` (gameStore+playerStore+historyStore) / `theme.ts` / `settings.ts` / `guess.ts`
 
 **分层（S2-S4 重构后，依赖只向下，lint 闸强制）**：
 - `engine/` — 纯游戏规则（battle/gacha/squad/skills/nurture/ai + 注入式 RNG）。零 Vue/Pinia/DOM/IO，将来与 Node 服务端共享。
@@ -59,8 +61,8 @@ The 2026-06 audit (`docs/项目审计报告-2026-06-12.md`) found these — be a
 
 - ~~core → stores reverse dependencies + 3 circular deps~~ **已在 S2-S4 解决**：规则全部入 `engine/`（lint 闸禁止向上依赖），不要再往 engine 里写 store import。
 - **~半数技能仍是播报式假实现**：现收敛在 `engine/skills/announcements.ts` 数据表（72 条），S8 逐批真实现。不要往表里加新假技能。
-- **Economy has no transaction entry**: 4 sites do `userStore.playerState.knowledgePoints -=` directly from components. Route currency changes through a store action instead.
-- **Save protocol gaps**: `presetSquads` / `towerProgress` are NOT in the save payload → tower progress is lost on refresh.
+- ~~Economy has no transaction entry~~ **已在 S5 解决**：`profile.spend()/earn()` 是唯一货币入口，8 处组件直改已清零。不要再绕过它改货币。
+- ~~Save protocol gaps（presetSquads/towerProgress 刷新即丢）~~ **已在 S5 解决**：存档协议 v2 + 迁移。注意：后端写文件仍非原子（S10 加固），前端已做保存串行合并兜底。
 - **Battle "no result screen"**: `battleFlow.endGame()` 已写入 `setWinner`（S2），但结算 UI 与奖励发放仍缺 —— S6 接入。
 - **172 hardcoded `text-white`** (46 files) not wired to theme vars → titles wash out on the light default theme.
 - **Dead code**: `userStore.logout` unreachable（登出按钮无 handler，S6 修）。counter.ts/CollectionStats/旧技能 stub 已于 S1-S4 清除。

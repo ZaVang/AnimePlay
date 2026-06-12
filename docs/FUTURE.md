@@ -29,7 +29,7 @@
 | S2 | engine 抽取：宅理论战 | ✅ | 已完成 |
 | S3 | engine 抽取：抽卡 & 挑战塔 | ✅ | 已完成 |
 | S4 | engine 抽取：技能 & 养成 & AI | ✅ | 已完成 |
-| S5 | 拆 god store & 持久化 | ☐ | 解耦 |
+| S5 | 拆 god store & 持久化 | ✅ | 已完成 |
 | S6 | 功能闭环 | ☐ | 补完 |
 | S7 | 视觉还债 | ☐ | 补完 |
 | S8 | 技能真实现 | ☐ | 补完 |
@@ -119,17 +119,18 @@
 
 ---
 
-## ☐ S5 — 拆 god store & 持久化（解耦）
+## ✅ S5 — 拆 god store & 持久化（已完成 2026-06-12）
 
 **目标**：userStore（1178 行）拆成领域 store，持久化显式化，**顺手修掉「小队/塔进度刷新丢失」bug**。
 
-- [ ] 拆 userStore → `profile / collection / deck / nurture / pve / gacha` 领域 store
-- [ ] `profile` store 暴露 `spend()/earn()` 作为**唯一货币入口**，消灭 4 处组件直改 `knowledgePoints`
-- [ ] `infra/persistence`：显式 schema 的 serialize / deserialize / migrate
-- [ ] ★ 把 `presetSquads` / `towerProgress` 纳入存档协议（修复刷新丢进度）
-- [ ] 各领域 store 注册到 persistence
+- [x] 拆 userStore → `profile / collection / deck / viewing / nurture / pve` 领域 store（+ gacha 历史归 gachaStore）；userStore 保留为 **300 行兼容门面**（28 个消费组件零迁移；门面只做调用面维持 + 跨域编排 + 统一触发存档；新代码直接用领域 store）
+- [x] `profile.spend()/earn()` 唯一货币入口：消灭组件直改 `knowledgePoints` **8 处**（审计时 4 处，实际已长到 8）—— InteractionPanel ×4、NurtureActions ×3、SquadBattleView ×1
+- [x] `infra/persistence`：schema.ts（SavePayloadV2 显式协议 + version）/ migrations.ts（v1→v2 纯函数迁移，含收藏裸数量兼容）/ api.ts（唯一的存档 fetch IO）
+- [x] ★ `presetSquads` / `towerProgress` 入存档协议 v2；小队编辑与通层即时保存；SquadBattleView 挂载兜底 + watch 进度（修复「刷新塔页面后才登录」场景）—— 手测：组队+通层 → 清 session 重载重登 → 小队/第 2 层完整恢复；真实 v1 存档（14272 知识点/139 收藏/175 养成）迁移加载全保真
+- [x] 各领域 store 以 serialize/deserialize/reset 三件套注册到 `stores/persistence.ts` 装配器（buildPayload ⇄ applyPayload 往返保真有测试锁定）
+- 额外：**保存串行合并**（同一时刻至多一个写请求、连发坍缩为一次）——手测中后端非原子写被 6 连发 POST 截断损坏存档（审计预言的 S10 隐患实际咬人），前端先堵住单客户端并发源，后端原子写仍留 S10
 
-**Exit**：存档完整（小队/塔进度刷新不丢）；货币只能经 action 改；各 store < 300 行。
+**Exit 达成**：存档完整（含跨「关浏览器」恢复）；货币只经 spend/earn；领域 store 全部 <300 行（最大 nurture 239，门面恰 300）；测试 153 → **171 个**全绿（迁移 v1/v2/损坏兜底 + 往返保真 + 串行合并 + spend/earn 语义）；type-check 0 错；S5 新文件 lint 0。
 
 ---
 

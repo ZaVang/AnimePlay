@@ -282,8 +282,8 @@ function giveGift(gift: any) {
     return;
   }
 
-  // 扣除知识点
-  userStore.playerState.knowledgePoints -= gift.cost;
+  // 扣除知识点（货币唯一入口）
+  if (!userStore.spend('knowledgePoints', gift.cost)) return;
   
   // 增加好感度
   userStore.increaseAffection(props.character.id, gift.affectionGain);
@@ -321,8 +321,8 @@ function doActivity(activity: any) {
     return;
   }
 
-  // 扣除知识点
-  userStore.playerState.knowledgePoints -= activity.cost;
+  // 扣除知识点（货币唯一入口）
+  if (!userStore.spend('knowledgePoints', activity.cost)) return;
   
   // 增加好感度
   userStore.increaseAffection(props.character.id, activity.affectionGain);
@@ -364,8 +364,8 @@ function doCampusActivity(activity: any) {
     return;
   }
 
-  // 扣除知识点
-  userStore.playerState.knowledgePoints -= activity.cost;
+  // 扣除知识点（货币唯一入口）
+  if (!userStore.spend('knowledgePoints', activity.cost)) return;
   
   // 增加羁绊值
   userStore.increaseAffection(props.character.id, activity.affectionGain);
@@ -424,7 +424,7 @@ function quickGift() {
     const smallGifts = ['flower', 'candy', 'book', 'music_cd'];
     const randomGift = smallGifts[Math.floor(Math.random() * smallGifts.length)];
     
-    userStore.playerState.knowledgePoints -= 25; // 从10增至25
+    userStore.spend('knowledgePoints', 25); // 从10增至25（上方已校验余额）
     userStore.giveGift(props.character.id, randomGift);
     userStore.increaseAffection(props.character.id, 15); // 从20降至15，降低效率
   }

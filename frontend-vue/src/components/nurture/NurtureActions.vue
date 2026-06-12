@@ -236,8 +236,8 @@ function startTraining(programId: string) {
     return;
   }
 
-  // 扣除知识点
-  userStore.playerState.knowledgePoints -= program.cost;
+  // 扣除知识点（货币唯一入口）
+  if (!userStore.spend('knowledgePoints', program.cost)) return;
   
   // 提升属性
   userStore.enhanceAttribute(props.character.id, program.attribute, program.gain);
@@ -285,8 +285,8 @@ function startBattleTraining(programId: string) {
       return;
     }
 
-    // 扣除知识点
-    userStore.playerState.knowledgePoints -= program.cost;
+    // 扣除知识点（货币唯一入口）
+    if (!userStore.spend('knowledgePoints', program.cost)) return;
     console.log('Knowledge points deducted, remaining:', userStore.playerState.knowledgePoints);
     
     // 生成角色当前战斗状态
@@ -369,7 +369,7 @@ function performSpecialActivity(activityId: string) {
     return;
   }
 
-  userStore.playerState.knowledgePoints -= activity.cost;
+  if (!userStore.spend('knowledgePoints', activity.cost)) return;
   const nurtureData = userStore.getNurtureData(props.character.id);
 
   switch (activityId) {
