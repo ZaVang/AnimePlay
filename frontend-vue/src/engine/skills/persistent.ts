@@ -24,11 +24,24 @@ export interface TemporaryBonus {
   id: string;
   playerId: PlayerId;
   cardType?: string; // 如 "科幻"、"战斗"；缺省对全部卡生效
+  /** S8c：只对指定卡生效（射击精准/宝石魔术这类点名卡牌的效果）。 */
+  cardId?: number;
   bonusType: 'strength' | 'cost' | 'tp_cost';
+  /** 正 = 增益；负 = 减益（负 cost 加成 = 费用增加，负 strength = 削弱，受护盾拦截）。 */
   amount: number;
   duration: number;
+  /**
+   * S8b 一次性语义：
+   *  - 'next-play'：下一次出牌后即失效（无论是否匹配，「下张卡牌」类效果）；
+   *  - 'next-match'：保留到首次匹配的出牌（「下次X类卡牌」类效果）。
+   * 缺省 = 持续整段 duration。消费时机见 consumeOneShotBonuses。
+   */
+  oneShot?: 'next-play' | 'next-match';
   description: string;
 }
+
+/** 敌对限制类型：写入时受 effect_shield 拦截（自我施加的限制不在此列）。 */
+const HOSTILE_RESTRICTIONS = new Set(['skill_disabled', 'forced_action', 'forced_card_type', 'harsh_penalty']);
 
 interface Restriction {
   data: unknown;
@@ -55,6 +68,11 @@ export class PersistentEffectTracker {
   }
 
   addTemporaryBonus(bonus: Omit<TemporaryBonus, 'id'>): string {
+    // S8c 护盾闸：负向加成（削弱/加费）是敌对写入，目标带效果护盾时整体拦下
+    if (bonus.amount < 0 && this.hasRestriction(bonus.playerId, 'effect_shield')) {
+      this.onLog(`✨ 效果护盾挡下了敌对效果：${bonus.description}`);
+      return '';
+    }
     const id = `bonus_${++this.seq}`;
     const fullBonus: TemporaryBonus = { ...bonus, id };
     this.bonuses.set(id, fullBonus);
@@ -76,30 +94,68 @@ export class PersistentEffectTracker {
     }
   }
 
-  /** 卡牌强度加成合计（按归属玩家 + 卡牌类型匹配）。 */
-  getStrengthBonus(playerId: PlayerId, cardTypes: string[] = []): number {
+  /** 加成是否匹配该次取值（玩家 + 种类 + 类型标签 + 点名卡牌）。 */
+  private bonusMatches(
+    bonus: TemporaryBonus,
+    playerId: PlayerId,
+    kind: TemporaryBonus['bonusType'],
+    cardTypes: string[],
+    cardId?: number,
+  ): boolean {
+    if (bonus.playerId !== playerId || bonus.bonusType !== kind) return false;
+    if (bonus.cardType && !cardTypes.includes(bonus.cardType)) return false;
+    if (bonus.cardId !== undefined && bonus.cardId !== cardId) return false;
+    return true;
+  }
+
+  /** 卡牌强度加成合计（按归属玩家 + 卡牌类型 + 可选点名卡牌匹配）。 */
+  getStrengthBonus(playerId: PlayerId, cardTypes: string[] = [], cardId?: number): number {
     let totalBonus = 0;
     for (const bonus of this.bonuses.values()) {
-      if (bonus.playerId === playerId && bonus.bonusType === 'strength') {
-        if (!bonus.cardType || cardTypes.includes(bonus.cardType)) {
-          totalBonus += bonus.amount;
-        }
+      if (this.bonusMatches(bonus, playerId, 'strength', cardTypes, cardId)) {
+        totalBonus += bonus.amount;
       }
     }
     return totalBonus;
   }
 
-  /** 卡牌费用减免合计。 */
-  getCostReduction(playerId: PlayerId, cardTypes: string[] = []): number {
+  /** 卡牌费用减免合计（负值 = 费用增加，由 effectiveCardCost 透传）。 */
+  getCostReduction(playerId: PlayerId, cardTypes: string[] = [], cardId?: number): number {
     let totalReduction = 0;
     for (const bonus of this.bonuses.values()) {
-      if (bonus.playerId === playerId && bonus.bonusType === 'cost') {
-        if (!bonus.cardType || cardTypes.includes(bonus.cardType)) {
-          totalReduction += bonus.amount;
-        }
+      if (this.bonusMatches(bonus, playerId, 'cost', cardTypes, cardId)) {
+        totalReduction += bonus.amount;
       }
     }
     return totalReduction;
+  }
+
+  /** 技能 TP 费减免合计（bonusType 'tp_cost'，黄前久美子/藤原千花 这类「下次技能-1费」）。 */
+  getSkillCostReduction(playerId: PlayerId): number {
+    let total = 0;
+    for (const bonus of this.bonuses.values()) {
+      if (bonus.playerId === playerId && bonus.bonusType === 'tp_cost') total += bonus.amount;
+    }
+    return total;
+  }
+
+  /**
+   * S8b：消费一次性加成。出牌（或用技能）完成后调用——
+   * 移除「匹配本次」的 next-match 加成 + 该玩家该种类的全部 next-play 加成。
+   */
+  consumeOneShotBonuses(
+    playerId: PlayerId,
+    kind: TemporaryBonus['bonusType'],
+    cardTypes: string[] = [],
+    cardId?: number,
+  ) {
+    for (const [id, bonus] of this.bonuses.entries()) {
+      if (bonus.playerId !== playerId || bonus.bonusType !== kind || !bonus.oneShot) continue;
+      const matched = this.bonusMatches(bonus, playerId, kind, cardTypes, cardId);
+      if (bonus.oneShot === 'next-play' || (bonus.oneShot === 'next-match' && matched)) {
+        this.bonuses.delete(id);
+      }
+    }
   }
 
   hasRestriction(playerId: PlayerId, restrictionType: string): boolean {
@@ -124,7 +180,17 @@ export class PersistentEffectTracker {
   }
 
   addRestriction(playerId: PlayerId, restrictionType: string, data: unknown, duration: number = 1) {
+    // S8c 护盾闸：敌对限制（禁技/强制行动/强制卡类型/辛辣惩罚）被效果护盾拦下
+    if (HOSTILE_RESTRICTIONS.has(restrictionType) && this.hasRestriction(playerId, 'effect_shield')) {
+      this.onLog('✨ 效果护盾挡下了敌对限制');
+      return;
+    }
     this.restrictions.set(`${playerId}_${restrictionType}`, { data, duration });
+  }
+
+  /** 显式移除限制（额外回合等一次性限制消费后调用）。 */
+  removeRestriction(playerId: PlayerId, restrictionType: string) {
+    this.restrictions.delete(`${playerId}_${restrictionType}`);
   }
 
   removeEffect(effectId: string) {

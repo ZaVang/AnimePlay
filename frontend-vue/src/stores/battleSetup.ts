@@ -23,7 +23,7 @@ import { BattleFlow } from './battleFlow';
 /** 数据层映射缺失时的遗留技能绑定（UR 表 + 历史散点）。 */
 const LEGACY_SKILL_MAP: Record<number, string[]> = {
   ...urCharacterSkillMap,
-  1007: ['KYON_TSUKKOMI', 'PASSIVE_PLACEHOLDER'], // 阿虚(非UR)
+  1007: ['KYON_TSUKKOMI', 'AURA_GENRE_EXPERT'], // 阿虚(非UR)；S8c：占位被动换真实现光环
   72355: ['TPL_DRAW_1', 'AURA_GENRE_EXPERT'],
 };
 

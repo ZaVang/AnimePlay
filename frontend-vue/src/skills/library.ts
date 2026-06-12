@@ -45,28 +45,9 @@ export const skillLibrary: Skill[] = [
     effectId: 'AURA_GENRE_EXPERT',
   },
 
-  // --- Character-Specific Passive Auras ---
-  {
-    id: 'HARUHI_AURA',
-    name: '团长命令',
-    type: '被动光环',
-    description: '己方回合开始时，若己方议题优势小于等于0，则有50%几率获得1点TP。',
-  },
-  {
-    id: 'PASSIVE_PLACEHOLDER',
-    name: '待定光环',
-    type: '被动光环',
-    description: '此技能尚未实现。',
-  },
-  {
-    id: 'ACTIVE_PLACEHOLDER',
-    name: '待定技能',
-    type: '主动技能',
-    description: '此技能尚未实现。',
-    cost: 1,
-    cooldown: 1,
-  },
-  
+  // S8c：HARUHI_AURA / PASSIVE_PLACEHOLDER / ACTIVE_PLACEHOLDER 三个占位技能已删
+  // （描述承诺从未实现；唯一消费者 阿虚 的被动换为真实现的 AURA_GENRE_EXPERT）。
+
   // --- UR Character Skills ---
   ...urCharacterSkills,
 ];

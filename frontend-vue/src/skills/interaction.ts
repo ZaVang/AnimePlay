@@ -5,6 +5,7 @@
 
 import type { AnimeCard } from '@/types/card';
 import { usePlayerStore, useGameStore, useHistoryStore } from '@/stores/battle';
+import { persistentEffects } from './systems';
 
 export interface CardViewOptions {
   count: number;
@@ -81,16 +82,31 @@ export class InteractionSystem {
     
     const opponentId = playerId === 'playerA' ? 'playerB' : 'playerA';
     const opponentHand = playerStore[opponentId].hand;
-    
+
+    // S8c：存在感消失——目标手牌本回合对查看者隐藏
+    if (persistentEffects.hasRestriction(opponentId, 'hand_hidden')) {
+      gameStore.addNotification('对方的手牌被「存在感消失」隐藏了！', 'warning');
+      historyStore.addLog('查看手牌失败：对方手牌处于隐藏状态。', 'info');
+      return [];
+    }
+
     // 根据选项过滤和选择卡牌
     let cardsToShow = opponentHand;
     if (options.filter) {
       cardsToShow = cardsToShow.filter(options.filter);
     }
-    
+
     // 限制查看数量
     if (options.count < cardsToShow.length) {
       cardsToShow = cardsToShow.slice(0, options.count);
+    }
+
+    // S8c：迷路小学生——被查看时藏起其中 1 张
+    const oppActive = playerStore[opponentId].characters[playerStore[opponentId].activeCharacterIndex];
+    const hasMayoi = (oppActive?.skills || []).some(s => s.effectId === '八九寺真宵_迷路小学生');
+    if (hasMayoi && cardsToShow.length > 0) {
+      cardsToShow = cardsToShow.slice(0, -1);
+      historyStore.addLog('迷路小学生捣乱：有 1 张手牌没被看到。', 'info');
     }
 
     // 记录日志
@@ -119,9 +135,10 @@ export class InteractionSystem {
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
     
+    // 牌库顶 = 数组尾（drawCards 从尾部 pop）；S8c 修正此前查反方向的 bug
     const playerDeck = playerStore[playerId].deck;
-    let cardsToShow = playerDeck.slice(0, Math.min(options.count, playerDeck.length));
-    
+    let cardsToShow = playerDeck.slice(-Math.min(options.count, playerDeck.length)).reverse();
+
     if (options.filter) {
       cardsToShow = cardsToShow.filter(options.filter);
     }
@@ -165,8 +182,8 @@ export class InteractionSystem {
   async selectFromDeck(playerId: 'playerA' | 'playerB', options: CardSelectionOptions): Promise<CardSelectionResult> {
     const playerStore = usePlayerStore();
     const deck = playerStore[playerId].deck;
-    
-    let availableCards = deck.slice(0, 10); // 限制查看前10张
+
+    let availableCards = deck.slice(-10).reverse(); // 牌库顶 10 张（顶=数组尾，S8c 修正方向）
     if (options.filter) {
       availableCards = availableCards.filter(options.filter);
     }
@@ -179,6 +196,17 @@ export class InteractionSystem {
       selected,
       cancelled: false
     };
+  }
+
+  /**
+   * S8c：从任意给定卡牌列表中选择（交互式技能通用；无 UI 时退化为取前 count 张）。
+   */
+  async selectFromCards(cards: AnimeCard[], options: CardSelectionOptions): Promise<CardSelectionResult> {
+    const available = options.filter ? cards.filter(options.filter) : cards;
+    if (this.interactionManager && available.length > 0) {
+      return await this.interactionManager.showCardSelection(available, options);
+    }
+    return { selected: available.slice(0, Math.min(options.count, available.length)), cancelled: false };
   }
 
   /**

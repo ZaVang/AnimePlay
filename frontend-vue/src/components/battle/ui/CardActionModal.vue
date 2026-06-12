@@ -3,7 +3,7 @@ import type { AnimeCard as AnimeCardType } from '@/types/card';
 import AnimeCard from '@/components/AnimeCard.vue'; // Use the standard AnimeCard
 import { useGameStore } from '@/stores/battle';
 import { persistentEffects } from '@/skills/systems';
-import { effectiveCardCost } from '@/engine';
+import { playerCardCost } from '@/skills/effects/costModifiers';
 import { computed } from 'vue';
 
 const props = defineProps<{
@@ -19,11 +19,9 @@ const emit = defineEmits<{
 const gameStore = useGameStore();
 const isDefensePhase = computed(() => gameStore.phase === 'defense');
 
-// S8a：显示实际费用（含持续效果减费；本弹窗只服务玩家侧 playerA）。
+// S8a：显示实际费用（与扣费同源 playerCardCost：追踪器加减费 + 条件被动减费）。
 // 追踪器非响应式，但弹窗每次打开经 v-if 重建，取值即当前状态。
-const effCost = computed(() =>
-  effectiveCardCost(props.card.cost, persistentEffects.getCostReduction('playerA', props.card.synergy_tags || [])),
-);
+const effCost = computed(() => playerCardCost('playerA', props.card));
 // S8a：被强制友好安利时禁用辛辣点评（battleFlow 同口径钳制兜底）
 const forcedFriendly = computed(() => persistentEffects.getForcedAction('playerA') === 'friendly_only');
 </script>

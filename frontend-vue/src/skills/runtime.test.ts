@@ -3,7 +3,7 @@
  * #36/#37 新增真实现技能、诚实化判定。完整编排链路（battleFlow 钳制/扣费）靠手测，
  * 这里锁定 runtime 层的分发与守卫语义。
  */
-import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { setActivePinia, createPinia } from 'pinia';
 import { SkillSystem } from './runtime';
 import { runEffect, isSkillImplemented } from './effects';
@@ -76,15 +76,28 @@ describe('被动光环管线（S8a 首次接通）', () => {
     expect(playerStore.playerA.hand).toHaveLength(5); // 仅日常系示例抽1
   });
 
-  it('播报式占位被动保持静默（不分发、不播报、无状态变化）', async () => {
+  it('未注册 effectId 的被动保持静默（不分发、无状态变化）', async () => {
     const playerStore = usePlayerStore();
-    playerStore.playerA.characters = [charWith([skillOf('战场原黑仪_傲娇魅力')])];
+    playerStore.playerA.characters = [charWith([skillOf('未来的某个限定皮肤技能_占位')])];
     playerStore.playerA.activeCharacterIndex = 0;
     playerStore.playerA.hand = [];
     playerStore.playerA.deck = [animeCard(11), animeCard(12)];
 
     await SkillSystem.onCardPlayed('playerA', animeCard(1, ['科幻']));
-    expect(playerStore.playerA.hand).toHaveLength(0); // 非日常卡无示例抽牌；假被动无任何效果
+    expect(playerStore.playerA.hand).toHaveLength(0); // 非日常卡无示例抽牌；未注册被动无任何效果
+  });
+
+  it('★ 费用修饰器型被动不进事件管线（银发王选——S8c 活体测试抓到的告警回归）', async () => {
+    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const playerStore = usePlayerStore();
+    playerStore.playerA.characters = [charWith([skillOf('艾米莉娅_银发王选')])];
+    playerStore.playerA.activeCharacterIndex = 0;
+    playerStore.playerA.hand = [];
+    playerStore.playerA.deck = [animeCard(11)];
+
+    await SkillSystem.onCardPlayed('playerA', animeCard(1, ['奇幻']));
+    expect(warn).not.toHaveBeenCalled(); // 不应分发到 runEffect 刷「handler not found」
+    warn.mockRestore();
   });
 
   it('beforeResolve：阿克曼血统——声望≤15 时主辩手为出牌侧注入+1强度', async () => {
@@ -168,12 +181,15 @@ describe('#36/#37 新增真实现主动技（S8a 补全设计）', () => {
   });
 });
 
-describe('isSkillImplemented（S8a 诚实化判定）', () => {
-  it('真实现/引擎级光环 → true；播报、降级、无 effectId → false', () => {
+describe('isSkillImplemented（S8a 诚实化判定，S8b/c 后全量真实现）', () => {
+  it('事件 handler / 基础设施级 / 费用修饰器 → true；未注册或无 effectId → false', () => {
     expect(isSkillImplemented(skillOf('志摩凛_围炉夜话'))).toBe(true);
     expect(isSkillImplemented(skillOf('AURA_GENRE_EXPERT'))).toBe(true);
-    expect(isSkillImplemented(skillOf('战场原黑仪_毒舌反击'))).toBe(false); // 播报表
-    expect(isSkillImplemented(skillOf('CC_不死之身'))).toBe(false); // S8a 降级
+    expect(isSkillImplemented(skillOf('战场原黑仪_毒舌反击'))).toBe(true); // S8c 真实现（曾是播报）
+    expect(isSkillImplemented(skillOf('CC_不死之身'))).toBe(true); // S8b 复活（曾降级）
+    expect(isSkillImplemented(skillOf('惣流_明日香_兰格雷_驾驶员骄傲'))).toBe(true); // 费用修饰器路径
+    expect(isSkillImplemented(skillOf('八九寺真宵_迷路小学生'))).toBe(true); // 基础设施级
+    expect(isSkillImplemented(skillOf('不存在的技能_占位'))).toBe(false); // 未注册
     expect(isSkillImplemented({ effectId: undefined })).toBe(false); // 无实现映射
   });
 });

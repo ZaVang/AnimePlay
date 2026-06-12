@@ -69,6 +69,12 @@ export const useGameStore = defineStore('game', {
       this.phase = 'draw';
       this.clashInfo = null; // Clear clash info at the end of a turn
     },
+    /** S8c 额外回合（时间停止）：推进回合数但不换边。 */
+    repeatTurn() {
+      this.turn++;
+      this.phase = 'draw';
+      this.clashInfo = null;
+    },
     setPhase(phase: GameState['phase']) {
       this.phase = phase;
     },
@@ -191,6 +197,14 @@ export const usePlayerStore = defineStore('players', {
     // Restore TP to max for a specific player
     restoreTpToMax(playerId: 'playerA' | 'playerB') {
       this[playerId].tp = this[playerId].maxTp;
+    },
+
+    /**
+     * S8b：允许溢出上限的 TP 获取（回合开始类被动「获得1TP」用——
+     * 普通 changeTp 会被 maxTp 封顶，回满后再 +1 会被吞）。溢出量下回合回满时自然归位。
+     */
+    gainTpOverflow(playerId: 'playerA' | 'playerB', amount: number) {
+      this[playerId].tp += amount;
     },
 
     // Restore TP at the start of a new turn

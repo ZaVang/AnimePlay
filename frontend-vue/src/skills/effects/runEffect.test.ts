@@ -1,11 +1,13 @@
 /**
- * 技能执行器接线测试（S4）。
- * 验证分发顺序（custom → 播报表 → 告警）与播报渲染（{name} 替换）。
+ * 技能执行器接线测试（S4 建立，S8c 收敛）。
+ * 播报表机制已删——只剩 真实现 handler → 未注册告警 两条路径；
+ * 另守卫合并注册表无重复 key（分桶文件 key 冲突会静默覆盖，必须拦截）。
  */
 import { describe, it, expect, beforeEach, vi, afterEach } from 'vitest';
 import { setActivePinia, createPinia } from 'pinia';
 import { runEffect } from './index';
-import { usePlayerStore, useHistoryStore, useGameStore } from '@/stores/battle';
+import { customHandlers, handlerBucketSizes } from './customHandlers';
+import { usePlayerStore } from '@/stores/battle';
 import { createSequenceRng } from '@/engine';
 
 beforeEach(() => {
@@ -17,18 +19,16 @@ afterEach(() => {
   vi.restoreAllMocks();
 });
 
-describe('播报表路径', () => {
-  it('log 的 {name} 替换为玩家名，notification 同步发出', async () => {
-    await runEffect('战场原黑仪_毒舌反击', { event: 'onPlay', playerId: 'playerA', role: 'attacker' });
-    const history = useHistoryStore();
-    expect(history.log).toContain('测试玩家 准备毒舌反击！');
-    const game = useGameStore();
-    expect(game.notifications.some(n => n.message === '毒舌反击：对方辛辣点评-3强度' && n.type === 'warning')).toBe(true);
+describe('合并注册表（S8c 分桶）', () => {
+  it('各桶 key 互不重复（合并总数 = 各桶之和）', () => {
+    const sum = handlerBucketSizes.reduce((a, b) => a + b, 0);
+    expect(Object.keys(customHandlers)).toHaveLength(sum);
   });
 
-  it('静默占位条目不产生任何日志', async () => {
-    await runEffect('战场原黑仪_傲娇魅力', { event: 'onPlay', playerId: 'playerA', role: 'attacker' });
-    expect(useHistoryStore().log).toHaveLength(0);
+  it('曾经的播报技能现在是真 handler（抽查）', () => {
+    for (const id of ['战场原黑仪_毒舌反击', '绫波丽_绝对沉默', '晓美焰_时间停止', 'CC_GEASS契约', '赫萝_丰收之神']) {
+      expect(typeof customHandlers[id]).toBe('function');
+    }
   });
 });
 

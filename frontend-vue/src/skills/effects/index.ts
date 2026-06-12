@@ -1,23 +1,36 @@
 /**
- * 技能效果执行器（S4 重构）。
- * 分发顺序：真实现/交互式 handler（customHandlers.ts）→ 播报表（engine/skills/announcements.ts）。
- * 播报表条目统一渲染：`{name}` 替换为玩家名；未注册的 effectId 仅告警。
+ * 技能效果执行器（S4 重构，S8c 收敛）。
+ * 分发：真实现 handler（customHandlers 合并注册表）→ 未注册仅告警。
+ * 播报表机制已随 S8c 全量真实现删除——技能要么真生效，要么不存在。
  * 类型（EffectContext 等）已上移 engine/skills/types —— 此处转发以兼容旧 import 路径。
  */
-import { usePlayerStore, useGameStore, useHistoryStore } from '@/stores/battle';
-import { ANNOUNCEMENTS, defaultRng, type EffectContext } from '@/engine';
+import { defaultRng, type EffectContext } from '@/engine';
 import type { Skill } from '@/types/skill';
 import { customHandlers } from './customHandlers';
+import { costModifiers } from './costModifiers';
 
 export type { EffectContext, BattleEvent, CombatRole } from '@/engine';
 
-/** 引擎层直接消化、不走 handler 的真实现效果（如被动光环强度走 engine/battle/strength）。 */
-const ENGINE_LEVEL_EFFECTS = new Set(['AURA_GENRE_EXPERT']);
+/**
+ * 不走事件 handler、在基础设施层真实生效的效果：
+ *  - AURA_GENRE_EXPERT：engine/battle/strength 结算强度光环；
+ *  - 八九寺真宵_迷路小学生：InteractionSystem.viewOpponentHand 消费（被查看时藏 1 张）。
+ */
+const INFRA_LEVEL_EFFECTS = new Set(['AURA_GENRE_EXPERT', '八九寺真宵_迷路小学生']);
 
-/** S8a 诚实化：该效果是否有真实现（false = 播报式占位 / 未注册 / 无 effectId）。 */
+/** S8a 诚实化：该效果是否有真实现（事件 handler / 条件费用修饰器 / 基础设施级；false = 占位）。 */
 export function isEffectImplemented(effectId?: string): boolean {
   if (!effectId) return false;
-  return effectId in customHandlers || ENGINE_LEVEL_EFFECTS.has(effectId);
+  return effectId in customHandlers || effectId in costModifiers || INFRA_LEVEL_EFFECTS.has(effectId);
+}
+
+/**
+ * 该效果是否有**事件 handler**（被动管线分发用）。
+ * 费用修饰器型 / 基础设施型被动虽「已实装」，但没有事件 handler，
+ * 分发给 runEffect 只会刷「handler not found」告警——管线必须用本判定而非 isEffectImplemented。
+ */
+export function hasEventHandler(effectId?: string): boolean {
+  return !!effectId && effectId in customHandlers;
 }
 
 /** S8a 诚实化：技能是否真实生效（UI 据此挂「未实装」徽章）。 */
@@ -37,19 +50,6 @@ export async function runEffect(effectId: string, invocation: EffectInvocation) 
       await handler(ctx);
     } catch (e) {
       console.error(`Effect handler error: ${effectId}`, e);
-    }
-    return;
-  }
-
-  const announce = ANNOUNCEMENTS[effectId];
-  if (announce) {
-    const playerStore = usePlayerStore();
-    const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-    if (announce.log) {
-      useHistoryStore().addLog(announce.log.replaceAll('{name}', name), announce.logType ?? 'info');
-    }
-    if (announce.notify) {
-      useGameStore().addNotification(announce.notify, announce.notifyType ?? 'info');
     }
     return;
   }

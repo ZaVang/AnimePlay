@@ -79,13 +79,15 @@ describe('shuffleDeck', () => {
   });
 });
 
-describe('effectiveCardCost（S8a：减费首次被消费）', () => {
-  it('卡面费用 − 减免，下限 0', () => {
+describe('effectiveCardCost（S8a 减费消费；S8c 起负减免 = 费用增加）', () => {
+  it('卡面费用 − 减免，下限 0；负减免透传为加费', () => {
     expect(effectiveCardCost(3, 1)).toBe(2);
     expect(effectiveCardCost(2, 5)).toBe(0); // 减免超过费用 → 0
     expect(effectiveCardCost(undefined, 1)).toBe(0); // 无费用卡
     expect(effectiveCardCost(3, 0)).toBe(3);
-    expect(effectiveCardCost(3, -2)).toBe(3); // 负减免视为 0（防御性）
+    // S8c 语义变更：负减免 = 敌对加费（射击精准/时间警告），不再钳 0
+    expect(effectiveCardCost(3, -2)).toBe(5);
+    expect(effectiveCardCost(0, -2)).toBe(2); // 0 费卡也能被加费
   });
 });
 

@@ -20,9 +20,12 @@ export function spendTp(player: PlayerState, amount: number): number | null {
   return null;
 }
 
-/** 实际出牌费用 = 卡面费用 − 持续效果减费，下限 0（S8a：减费首次被真实消费）。 */
+/**
+ * 实际出牌费用 = 卡面费用 − 持续效果减费，下限 0（S8a：减费首次被真实消费）。
+ * S8c 起 reduction 允许为负（= 费用增加，射击精准/时间警告类敌对效果），不再钳到 0。
+ */
 export function effectiveCardCost(baseCost: number | undefined, reduction: number): number {
-  return Math.max(0, (baseCost || 0) - Math.max(0, reduction));
+  return Math.max(0, (baseCost || 0) - reduction);
 }
 
 /** 获得 TP，封顶于 maxTp。 */

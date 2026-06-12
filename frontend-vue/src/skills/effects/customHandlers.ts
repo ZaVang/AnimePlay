@@ -1,19 +1,26 @@
 /**
- * 真实现/条件播报/交互式技能 handler（S4 自 skills/effects/index.ts 切分，body 原样保留）。
- * 与播报表（engine/skills/announcements.ts）互斥：一个 effectId 只在一边。
+ * 技能效果 handler 主注册表（S4 建立；S8b/c 全量真实现后播报表机制已删除）。
+ * 本文件保存 S4 存量 handler；S8b/c 新增按机制分桶在 handlers/ 目录，文件尾合并导出。
  * 约定：
  *  - 随机一律用 ctx.rng（注入源），禁止 Math.random；
  *  - 持续效果/状态标记经 ../systems 的共享实例；
- *  - 交互式 UI 经 ../interaction 的 InteractionSystem。
+ *  - 交互式 UI 经 ../interaction 的 InteractionSystem（AI 侧走 rng 自动决断）；
+ *  - 新技能必须带事件守卫，行为与设计文档描述一致（频率/条件不符宁可不接管线）。
  */
 import { usePlayerStore, useGameStore, useHistoryStore } from '@/stores/battle';
 import type { EffectContext } from '@/engine';
 import { statusEffects, persistentEffects } from '../systems';
 import { InteractionSystem } from '../interaction';
+import { revivedPassives } from './handlers/revivedPassives';
+import { contentPassives } from './handlers/contentPassives';
+import { contentActives } from './handlers/contentActives';
+import { systemSkills } from './handlers/systemSkills';
+import { interactiveSkills } from './handlers/interactiveSkills';
 
 type EffectHandler = (ctx: EffectContext) => void | Promise<void>;
 
-export const customHandlers: Record<string, EffectHandler> = {
+/** S4 起的存量 handler（S8b/c 新增按机制分桶在 handlers/ 目录，文件尾合并）。 */
+const legacyHandlers: Record<string, EffectHandler> = {
   DRAW_1: (ctx) => {
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
@@ -147,9 +154,11 @@ export const customHandlers: Record<string, EffectHandler> = {
     const gameStore = useGameStore();
     const historyStore = useHistoryStore();
     
-    // TODO: 实现本回合科幻或战斗类卡牌+2强度的功能
-    // TODO: 实现对对手造成议题偏向-1的功能
-    const delta = ctx.playerId === 'playerA' ? -1 : 1;
+    // S8c 补真：本回合科幻/战斗类卡牌+2强度（原为占位假实现）；议题偏向部分原本已真
+    persistentEffects.addCardTypeStrengthBonus(ctx.playerId, '科幻', 2, 1);
+    persistentEffects.addCardTypeStrengthBonus(ctx.playerId, '战斗', 2, 1);
+    // S8c 修复：「对对手造成议题偏向-1」= 偏向向己方推 1（原实现方向写反，等于在帮对手）
+    const delta = ctx.playerId === 'playerA' ? 1 : -1;
     gameStore.updateTopicBias(delta);
     
     const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
@@ -161,14 +170,21 @@ export const customHandlers: Record<string, EffectHandler> = {
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
     
-    // TODO: 实现己方与对方各抽1张牌，若双方都抽到相同类型卡牌，则己方+2TP的功能
-    playerStore.drawCards(ctx.playerId, 1);
+    // S8c 补真：抽牌前记下双方牌库顶（顶=数组末尾，drawCards 自尾部 pop），抽后比对主类型（原为占位假实现）
     const opponentId = ctx.playerId === 'playerA' ? 'playerB' : 'playerA';
+    const ownTop = playerStore[ctx.playerId].deck[playerStore[ctx.playerId].deck.length - 1];
+    const oppTop = playerStore[opponentId].deck[playerStore[opponentId].deck.length - 1];
+    playerStore.drawCards(ctx.playerId, 1);
     playerStore.drawCards(opponentId, 1);
-    
+
     const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
     historyStore.addLog(`${name} 发动和谐演奏：双方各抽1张牌。`, 'info');
-    // TODO: 检查卡牌类型匹配并给予TP奖励
+    // 和谐共鸣：双方抽到的主类型（synergy_tags[0]）相同 → 己方+2TP
+    const ownType = ownTop?.synergy_tags?.[0];
+    if (ownType && ownType === oppTop?.synergy_tags?.[0]) {
+      playerStore.changeTp(ctx.playerId, 2);
+      historyStore.addLog(`双方同抽${ownType}类卡牌，和谐共鸣：${name} +2TP。`, 'info');
+    }
   },
 
   '后藤一里_独奏时光': (ctx) => {
@@ -178,7 +194,8 @@ export const customHandlers: Record<string, EffectHandler> = {
     
     const handSize = playerStore[ctx.playerId].hand.length;
     if (handSize >= 7) {
-      // TODO: 实现本回合内所有日常类卡牌+3强度的功能
+      // S8c 补真：本回合日常类卡牌+3强度（原为占位假实现）
+      persistentEffects.addCardTypeStrengthBonus(ctx.playerId, '日常', 3, 1);
       const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
       historyStore.addLog(`${name} 进入独奏时光！手牌充足，日常卡牌+3强度。`, 'info');
       gameStore.addNotification('独奏时光：日常卡牌+3强度', 'info');
@@ -270,18 +287,6 @@ export const customHandlers: Record<string, EffectHandler> = {
 
   // 长门有希技能,
 
-  '千反田爱瑠_好奇探究': (ctx) => {
-    const playerStore = usePlayerStore();
-    const historyStore = useHistoryStore();
-    
-    // 抽2张牌，然后弃1张牌
-    playerStore.drawCards(ctx.playerId, 2);
-    // TODO: 实现弃牌选择和校园类卡牌额外抽牌的功能
-    
-    const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-    historyStore.addLog(`${name} 好奇探究：抽2张牌，然后弃1张。`, 'info');
-  },
-
   '凉宫春日_团长命令': (ctx) => {
     const gameStore = useGameStore();
     const historyStore = useHistoryStore();
@@ -335,41 +340,18 @@ export const customHandlers: Record<string, EffectHandler> = {
     const gameStore = useGameStore();
     
     if (playerStore[ctx.playerId].reputation <= 15) {
-      // TODO: 实现本回合所有攻击+3强度的功能
+      // S8c 补真：本回合全部论述+3强度（原为占位假实现；现有加成不区分攻防，按全卡牌生效）
+      persistentEffects.addTemporaryBonus({
+        playerId: ctx.playerId, bonusType: 'strength', amount: 3, duration: 1,
+        description: '武士觉醒：本回合攻击+3强度',
+      });
       const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
       historyStore.addLog(`${name} 武士觉醒：逆境中爆发，攻击+3强度！`, 'info');
       gameStore.addNotification('武士觉醒：攻击+3强度', 'info');
     }
   },
 
-  // 远坂凛技能,
-
-  '喜多郁代_社交网络': (ctx) => {
-    const playerStore = usePlayerStore();
-    const historyStore = useHistoryStore();
-    
-    // TODO: 实现查看对手2张手牌的功能
-    playerStore.drawCards(ctx.playerId, 1);
-    
-    const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-    historyStore.addLog(`${name} 展开社交网络：查看对手手牌并抽牌。`, 'info');
-  },
-
   // 惠惠技能,
-
-  '惠惠_爆裂魔法': (ctx) => {
-    const gameStore = useGameStore();
-    const historyStore = useHistoryStore();
-    
-    // 造成巨大议题偏向变化+4
-    const delta = ctx.playerId === 'playerA' ? 4 : -4;
-    gameStore.updateTopicBias(delta);
-    
-    // TODO: 实现下回合无法使用任何卡牌的功能
-    const playerStore = usePlayerStore();
-    const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-    historyStore.addLog(`${name} 发动爆裂魔法！巨大议题冲击+4，但下回合exhausted！`, 'info');
-  },
 
   '惠惠_爆裂专精': (ctx) => {
     if (ctx.event === 'afterResolve' && ctx.card?.synergy_tags?.includes('奇幻')) {
@@ -422,22 +404,12 @@ export const customHandlers: Record<string, EffectHandler> = {
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
     
-    // TODO: 实现己方校园类卡牌本回合+2强度，并获得1TP的功能
+    // S8c 补真：校园类卡牌本回合+2强度（原为占位假实现）；并获得1TP
+    persistentEffects.addCardTypeStrengthBonus(ctx.playerId, '校园', 2, 1);
     playerStore.changeTp(ctx.playerId, 1);
     
     const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
     historyStore.addLog(`${name} 展现会长领导力：校园卡牌+2强度，获得1TP。`, 'info');
-  },
-
-  '冈部伦太郎_命运探测': (ctx) => {
-    const playerStore = usePlayerStore();
-    const historyStore = useHistoryStore();
-    
-    // TODO: 实现查看己方牌库顶5张牌，选择2张加入手牌，其余放回牌库底的功能
-    playerStore.drawCards(ctx.playerId, 2); // 简化为直接抽2张
-    
-    const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-    historyStore.addLog(`${name} 进行命运探测：精选未来卡牌。`, 'info');
   },
 
   '冈部伦太郎_狂乱科学家': (ctx) => {
@@ -449,18 +421,6 @@ export const customHandlers: Record<string, EffectHandler> = {
   },
 
   // 逢坂大河技能,
-
-  '逢坂大河_掌中老虎': (ctx) => {
-    const playerStore = usePlayerStore();
-    const historyStore = useHistoryStore();
-    
-    // TODO: 实现若对手上回合伤害了己方声望，本回合所有攻击+2强度的功能
-    // 简化检测：如果声望低于30则认为受到了伤害
-    if (playerStore[ctx.playerId].reputation < 30) {
-      const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-      historyStore.addLog(`${name} 掌中老虎暴走！受到伤害后反击+2强度！`, 'info');
-    }
-  },
 
   '椎名真由理_治愈笑容': (ctx) => {
     const playerStore = usePlayerStore();
@@ -476,60 +436,6 @@ export const customHandlers: Record<string, EffectHandler> = {
     historyStore.addLog(`${name} 展现治愈笑容：双方声望+2，己方抽牌。`, 'info');
   },
 
-  // 藤原千花技能,
-
-  '藤原千花_千花游戏': (ctx) => {
-    const playerStore = usePlayerStore();
-    const historyStore = useHistoryStore();
-    
-    // 抽2张牌，然后隐藏其中一张直到下回合，当打出时+2强度
-    playerStore.drawCards(ctx.playerId, 2);
-    // TODO: 实现隐藏卡牌和延迟强化的功能
-    
-    const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-    historyStore.addLog(`${name} 开始千花游戏：抽2张牌，隐藏1张备用。`, 'info');
-  },
-
-  '宫森葵_制作进行': (ctx) => {
-    const playerStore = usePlayerStore();
-    const historyStore = useHistoryStore();
-    
-    // TODO: 实现查看己方牌库顶3张牌，选择一张加入手牌，其余放回牌库顺序不变的功能
-    playerStore.drawCards(ctx.playerId, 1); // 简化为直接抽1张
-    
-    const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-    historyStore.addLog(`${name} 制作进行：精选牌库卡牌。`, 'info');
-  },
-
-  // 折木奉太郎技能,
-
-  '折木奉太郎_节能推理': (ctx) => {
-    const playerStore = usePlayerStore();
-    const historyStore = useHistoryStore();
-    const opponentId = ctx.playerId === 'playerA' ? 'playerB' : 'playerA';
-    
-    if (playerStore[ctx.playerId].tp <= playerStore[opponentId].tp) {
-      // TODO: 实现查看对手3张手牌的功能
-      playerStore.drawCards(ctx.playerId, 1);
-      
-      const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-      historyStore.addLog(`${name} 节能推理：TP劣势时侦查并抽牌。`, 'info');
-    }
-  },
-
-  // 由比滨结衣技能,
-
-  '由比滨结衣_察言观色': (ctx) => {
-    const playerStore = usePlayerStore();
-    const historyStore = useHistoryStore();
-    
-    // TODO: 实现查看对手2张手牌，若其中有恋爱或校园类，己方+1TP的功能
-    playerStore.changeTp(ctx.playerId, 1); // 简化为直接给TP
-    
-    const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-    historyStore.addLog(`${name} 察言观色：侦查对手获得1TP。`, 'info');
-  },
-
   // 草薙素子技能,
 
   '明石_冷静分析': (ctx) => {
@@ -537,9 +443,15 @@ export const customHandlers: Record<string, EffectHandler> = {
     const historyStore = useHistoryStore();
     const opponentId = ctx.playerId === 'playerA' ? 'playerB' : 'playerA';
     
-    // TODO: 实现双方弃掉所有手牌中成本最高的1张，然后各抽2张牌的功能
-    playerStore.drawCards(ctx.playerId, 2);
-    playerStore.drawCards(opponentId, 2);
+    // S8c 补真：双方各弃手牌中成本最高的1张（同费取先入手者），再各抽2张（原为占位假实现）
+    for (const pid of [ctx.playerId, opponentId] as const) {
+      const hand = playerStore[pid].hand;
+      if (hand.length > 0) {
+        const costliest = hand.reduce((max, c) => ((c.cost || 0) > (max.cost || 0) ? c : max), hand[0]);
+        playerStore.discardCardFromHand(pid, String(costliest.id));
+      }
+      playerStore.drawCards(pid, 2);
+    }
     
     const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
     historyStore.addLog(`${name} 冷静分析：重构双方手牌。`, 'info');
@@ -551,11 +463,14 @@ export const customHandlers: Record<string, EffectHandler> = {
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
     
-    // TODO: 实现对手每有一张校园类手牌，己方获得1TP（最多3TP）的功能
-    playerStore.changeTp(ctx.playerId, 2); // 简化为固定2TP
-    
+    // S8c 补真：对手每有一张校园类手牌 → 己方+1TP，封顶3（原为占位假实现）
+    const opponentId = ctx.playerId === 'playerA' ? 'playerB' : 'playerA';
+    const schoolCount = playerStore[opponentId].hand.filter(c => c.synergy_tags?.includes('校园')).length;
+    const gain = Math.min(schoolCount, 3);
+    if (gain > 0) playerStore.changeTp(ctx.playerId, gain);
+
     const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-    historyStore.addLog(`${name} 吐槽连击：针对校园环境获得2TP。`, 'info');
+    historyStore.addLog(`${name} 吐槽连击：对手有${schoolCount}张校园类手牌，获得${gain}TP。`, 'info');
   },
 
   '艾米莉娅_精灵加护': (ctx) => {
@@ -576,24 +491,18 @@ export const customHandlers: Record<string, EffectHandler> = {
     const historyStore = useHistoryStore();
     const gameStore = useGameStore();
     
-    // TODO: 实现对手下张卡牌强度-1，若己方手牌≥6张则额外-1的功能
+    // S8c 补真：对手下张卡牌-1强度，己方手牌≥6张则-2（原为占位假实现；敌对负加成，受效果护盾拦截）
     const handSize = playerStore[ctx.playerId].hand.length;
     const penalty = handSize >= 6 ? 2 : 1;
-    
+    const opponentId = ctx.playerId === 'playerA' ? 'playerB' : 'playerA';
+    persistentEffects.addTemporaryBonus({
+      playerId: opponentId, bonusType: 'strength', amount: -penalty, duration: 3,
+      oneShot: 'next-play', description: `咬咬攻击：下张卡牌-${penalty}强度`,
+    });
+
     const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
     historyStore.addLog(`${name} 咬咬攻击：对手下张卡牌-${penalty}强度。`, 'info');
     gameStore.addNotification(`咬咬攻击：对手卡牌-${penalty}强度`, 'info');
-  },
-
-  '菲伦_魔法修行': (ctx) => {
-    const playerStore = usePlayerStore();
-    const historyStore = useHistoryStore();
-    
-    // TODO: 实现查看己方牌库顶4张牌，选择一张奇幻类加入手牌的功能
-    playerStore.drawCards(ctx.playerId, 1); // 简化为直接抽1张
-    
-    const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-    historyStore.addLog(`${name} 魔法修行：精选奇幻卡牌。`, 'info');
   },
 
   '赫萝_商业智慧': async (ctx) => {
@@ -669,11 +578,11 @@ export const customHandlers: Record<string, EffectHandler> = {
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
 
-    // TODO: 实现查看对手3张手牌，每种不同类型令己方抽1张牌的功能
-    playerStore.drawCards(ctx.playerId, 2); // 简化为抽2张
+    // 设计已简化为直觉抽取：抽2张
+    playerStore.drawCards(ctx.playerId, 2);
 
     const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
-    historyStore.addLog(`${name} 天真好奇：侦查多样性，抽2张牌。`, 'info');
+    historyStore.addLog(`${name} 天真好奇：凭直觉抽2张牌。`, 'info');
   },
 
   // === S8a 补全：#36 志摩凛 / #37 三笠（设计即按已消费原语落地，无假实现）===
@@ -713,3 +622,23 @@ export const customHandlers: Record<string, EffectHandler> = {
   },
 
 };
+
+/** 全部真实现 handler 的合并注册表（key 冲突由测试守卫拦截）。 */
+export const customHandlers: Record<string, EffectHandler> = {
+  ...legacyHandlers,
+  ...revivedPassives,
+  ...contentPassives,
+  ...contentActives,
+  ...systemSkills,
+  ...interactiveSkills,
+};
+
+/** 分桶尺寸（重复 key 检测用：合并后总数应等于各桶之和）。 */
+export const handlerBucketSizes = [
+  Object.keys(legacyHandlers).length,
+  Object.keys(revivedPassives).length,
+  Object.keys(contentPassives).length,
+  Object.keys(contentActives).length,
+  Object.keys(systemSkills).length,
+  Object.keys(interactiveSkills).length,
+];
