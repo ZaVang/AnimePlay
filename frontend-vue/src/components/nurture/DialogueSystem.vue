@@ -367,7 +367,7 @@ function getInitialGreeting() {
       <div class="flex items-center justify-between p-6 border-b border-line-2 bg-surface-2">
         <div class="flex items-center">
           <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
-            <img :src="character.image_path" :alt="character.name" class="w-full h-full object-cover object-top">
+            <img loading="lazy" decoding="async" :src="character.image_path" :alt="character.name" class="w-full h-full object-cover object-top">
           </div>
           <div>
             <h3 class="text-lg font-bold text-ink">{{ character.name }}</h3>
@@ -409,7 +409,7 @@ function getInitialGreeting() {
           <div v-else class="flex justify-start">
             <div class="flex items-start max-w-xs lg:max-w-md">
               <div class="w-8 h-8 rounded-full overflow-hidden mr-2 flex-shrink-0">
-                <img :src="character.image_path" :alt="character.name" class="w-full h-full object-cover object-top">
+                <img loading="lazy" decoding="async" :src="character.image_path" :alt="character.name" class="w-full h-full object-cover object-top">
               </div>
               <div>
                 <div class="bg-surface-2 text-ink p-3 rounded-2xl rounded-bl-md">
@@ -426,7 +426,7 @@ function getInitialGreeting() {
         <div v-if="isTyping" class="flex justify-start">
           <div class="flex items-start">
             <div class="w-8 h-8 rounded-full overflow-hidden mr-2">
-              <img :src="character.image_path" :alt="character.name" class="w-full h-full object-cover object-top">
+              <img loading="lazy" decoding="async" :src="character.image_path" :alt="character.name" class="w-full h-full object-cover object-top">
             </div>
             <div class="bg-surface-2 text-ink p-3 rounded-2xl rounded-bl-md">
               <div class="flex space-x-1">

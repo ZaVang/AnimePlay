@@ -41,7 +41,7 @@
                 : 'border-line hover:border-line-2 hover:shadow-md'
             ]"
           >
-            <img 
+            <img loading="lazy" decoding="async" 
               :src="card.image_path"
               class="w-full aspect-[3/4] object-cover"
               :alt="card.name"

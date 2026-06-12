@@ -28,7 +28,7 @@ const rarityClass = computed(() => rarityColorMap[props.character.rarity] || rar
       [rarityClass]: true 
     }"
   >
-    <img :src="character.image_path" :alt="character.name" class="w-full h-full object-cover object-top">
+    <img loading="lazy" decoding="async" :src="character.image_path" :alt="character.name" class="w-full h-full object-cover object-top">
     <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-1 text-center">
       <p class="text-white text-xs font-bold truncate" :title="character.name">{{ character.name }}</p>
     </div>

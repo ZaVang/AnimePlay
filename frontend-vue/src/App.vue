@@ -108,7 +108,18 @@ onMounted(() => {
         </nav>
 
         <main class="flex-1 p-6 min-w-0">
-          <RouterView />
+          <!-- S9：非阻塞挂载后的数据门控——就绪前不渲染路由（视图都假定主数据已在） -->
+          <div v-if="gameDataStore.error" class="data-gate">
+            <p class="text-4xl mb-3">😵</p>
+            <p class="font-bold text-lg mb-1">游戏数据加载失败</p>
+            <p class="text-sm text-ink-3 mb-4">{{ gameDataStore.error }}</p>
+            <button class="btn-primary" @click="gameDataStore.fetchGameData()">重试</button>
+          </div>
+          <div v-else-if="!gameDataStore.isReady" class="data-gate">
+            <div class="loading-spinner mb-4"></div>
+            <p class="text-sm text-ink-2">正在加载卡牌数据…</p>
+          </div>
+          <RouterView v-else />
         </main>
 
     </div>
@@ -121,6 +132,27 @@ onMounted(() => {
 .app-shell {
     background: var(--sk-app-bg);
     background-attachment: fixed;
+}
+
+/* S9：数据加载门控 */
+.data-gate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    text-align: center;
+}
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgb(var(--c-line));
+    border-top-color: rgb(var(--c-accent));
+    border-radius: 9999px;
+    animation: data-gate-spin 0.8s linear infinite;
+}
+@keyframes data-gate-spin {
+    to { transform: rotate(360deg); }
 }
 
 /* 导航链接样式 */

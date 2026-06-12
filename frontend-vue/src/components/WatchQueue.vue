@@ -66,7 +66,7 @@ function getRemainingTime(startTime: number, durationMinutes: number) {
         <!-- Occupied Slot -->
         <div v-else class="h-48 flex flex-col items-center justify-center bg-surface-2 rounded-lg p-2 text-center">
           <template v-if="gameDataStore.getAnimeCardById(slot.animeId)">
-            <img :src="gameDataStore.getAnimeCardById(slot.animeId)?.image_path" class="w-24 aspect-[3/2] object-cover rounded-md mb-2">
+            <img loading="lazy" decoding="async" :src="gameDataStore.getAnimeCardById(slot.animeId)?.image_path" class="w-24 aspect-[3/2] object-cover rounded-md mb-2">
             <p class="font-bold text-sm truncate w-full">{{ gameDataStore.getAnimeCardById(slot.animeId)?.name }}</p>
             
             <div v-if="now < (slot.startTime + userStore.VIEWING_REWARDS[gameDataStore.getAnimeCardById(slot.animeId)!.rarity].time * 60 * 1000)">

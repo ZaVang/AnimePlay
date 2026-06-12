@@ -2,7 +2,9 @@
 import { ref, computed } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
+import VirtualGrid from '@/components/VirtualGrid.vue';
 import type { CharacterCard } from '@/types/card';
+import type { CharacterNurtureData } from '@/types/nurture';
 
 const props = defineProps<{
   selectedCharacterId: number | null;
@@ -42,7 +44,7 @@ const availableCharacters = computed(() => {
       
       // 稀有度相同按好感度排序
       return (b!.nurtureData.affection || 0) - (a!.nurtureData.affection || 0);
-    }) as (CharacterCard & { count: number; nurtureData: any })[];
+    }) as (CharacterCard & { count: number; nurtureData: CharacterNurtureData })[];
 });
 
 // 当前选中的角色信息
@@ -76,7 +78,7 @@ function handleSelect(characterId: number) {
   >
     <div v-if="currentCharacter" class="flex items-center">
       <div class="w-8 h-8 rounded-full overflow-hidden mr-3">
-        <img :src="currentCharacter.image_path" :alt="currentCharacter.name" class="w-full h-full object-cover object-top">
+        <img loading="lazy" decoding="async" :src="currentCharacter.image_path" :alt="currentCharacter.name" class="w-full h-full object-cover object-top">
       </div>
       <div class="text-left">
         <div class="text-sm font-medium">{{ currentCharacter.name }}</div>
@@ -95,7 +97,8 @@ function handleSelect(characterId: number) {
     </div>
   </button>
 
-  <!-- 角色选择模态框 -->
+  <!-- 角色选择模态框（S9：Teleport 到 body——页面内有 transform 祖先时 fixed 定位会被劫持成局部坐标系，弹窗被压缩） -->
+  <Teleport to="body">
   <div v-if="isModalOpen" class="fixed inset-0 bg-black/75 flex items-center justify-center z-50 p-4" @click.self="isModalOpen = false">
     <div class="bg-elevated p-6 rounded-lg shadow-xl max-w-4xl w-full border border-line-2">
       <div class="flex justify-between items-center mb-4">
@@ -124,12 +127,19 @@ function handleSelect(characterId: number) {
           <div class="mb-4 text-sm text-ink-2">
             {{ availableCharacters.length }} 个角色可进行养成
           </div>
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            <div 
-              v-for="character in availableCharacters" 
-              :key="character.id"
-              class="relative group cursor-pointer nurture-card bg-surface-2 rounded-lg p-3 border-2 transition-all duration-300 hover:border-pink-400 hover:bg-surface-2"
-              @click="handleSelect(character.id)"
+          <!-- S9：虚拟化（养成角色池可达 665 项） -->
+          <VirtualGrid
+            :items="availableCharacters"
+            :item-height="330"
+            :container-height="500"
+            :min-item-width="150"
+            :gap="16"
+            @item-click="handleSelect(($event as typeof availableCharacters[number]).id)"
+          >
+            <template #default="{ item }">
+            <template v-for="character in [item as typeof availableCharacters[number]]" :key="character.id">
+            <div
+              class="relative group h-full nurture-card bg-surface-2 rounded-lg p-3 border-2 transition-all duration-300 hover:border-pink-400 hover:bg-surface-2"
             >
               <!-- 角色头像 -->
               <div class="aspect-[2/3] rounded-md overflow-hidden mb-2">
@@ -173,7 +183,7 @@ function handleSelect(characterId: number) {
               ></div>
 
               <!-- 当前选中指示器 -->
-              <div 
+              <div
                 v-if="selectedCharacterId === character.id"
                 class="absolute -top-2 -right-2 w-6 h-6 bg-pink-400 rounded-full flex items-center justify-center shadow-lg"
               >
@@ -182,11 +192,14 @@ function handleSelect(characterId: number) {
                 </svg>
               </div>
             </div>
-          </div>
+            </template>
+            </template>
+          </VirtualGrid>
         </div>
       </div>
     </div>
   </div>
+  </Teleport>
 </template>
 
 <style scoped>

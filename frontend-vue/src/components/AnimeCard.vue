@@ -64,7 +64,7 @@ function toggleFavorite(event: MouseEvent) {
     </div>
 
     <div class="relative">
-      <img
+      <img loading="lazy" decoding="async"
         :src="imageSrc"
         class="w-full aspect-[2/3] object-cover object-top"
         @error="onImageError"

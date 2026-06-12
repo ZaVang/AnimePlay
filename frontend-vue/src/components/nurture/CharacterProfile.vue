@@ -249,7 +249,7 @@ const battlePower = computed(() => {
       <!-- 左侧：角色头像 -->
       <div class="relative w-48 flex-shrink-0">
         <div class="aspect-[2/3] overflow-hidden">
-          <img 
+          <img loading="lazy" decoding="async" 
             :src="character.image_path" 
             :alt="character.name"
             class="w-full h-full object-cover object-top"

@@ -30,7 +30,7 @@ const canRotate = computed(() => {
   <div v-if="isVisible" class="modal-overlay" @click.self="emit('close')">
     <div class="modal-content">
       <div class="character-info">
-        <img :src="character.image_path" :alt="character.name" class="character-image">
+        <img loading="lazy" decoding="async" :src="character.image_path" :alt="character.name" class="character-image">
         <div class="character-details">
           <h3 class="text-2xl font-bold">{{ character.name }}</h3>
           <p class="text-sm text-ink-2">{{ character.rarity }} - {{ character.anime_names?.[0] || '未知系列' }}</p>

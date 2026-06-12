@@ -35,7 +35,7 @@
 | S8a | 技能真实现：机制地基 + 诚实化 | ✅ | 已完成 |
 | S8b | 技能真实现：纯原语内容批 | ✅ | 已完成 |
 | S8c | 技能真实现：系统技 + 交互技 | ✅ | 已完成 |
-| S9 | 性能优化 | ☐ | 上线前置 |
+| S9 | 性能优化 | ✅ | 已完成 |
 | S10 | 后端加固 & 安全 | ☐ | 上线前置 |
 | S11 | React 视图迁移 | ☐ | 演进 |
 | S12 | 权威后端 & 多人/PvP/排行榜 | ☐ | 终点 |
@@ -220,18 +220,18 @@
 
 ---
 
-## ☐ S9 — 性能优化（上线前置）
+## ✅ S9 — 性能优化（已完成 2026-06-12）
 
 **目标**：首屏体积、图片、列表、定时器全部达标。
 
-- [ ] 后端 `all_animes` 剥离 `main_characters` 字段（−92%，7.2MB → ~0.5MB）
-- [ ] 开 gzip（Flask-Compress）
-- [ ] 恢复图片 `Cache-Control` 长缓存 + 缩略图 + `loading="lazy"`
-- [ ] 补虚拟化（`CharacterSelectModal` / `CharacterSelector` 等可达 665 项的大列表）
-- [ ] 修定时器泄漏（~~performanceMonitor interval~~ 已随 S6 删除该调试工具；剩 squad 自动战斗 setTimeout 链）
-- [ ] `main.ts` 非阻塞挂载 + loading/超时兜底
+- [x] 后端 `all_animes` 服务时剥离 `main_characters`（实测占 94%：3.73MB → 458KB）+ **主数据进程内缓存**（此前每个请求重读重解析整个 JSON）
+- [x] gzip（Flask-Compress，requirements 已钉版本）：all_animes 最终 **107KB**、all_characters 228KB——首屏 API 合计 ~317KB（audit 口径 7.2MB → −96%）
+- [x] 图片 `Cache-Control: public, max-age=30d, immutable`（内容按 id 不变）+ vite 哈希产物 1 年 immutable + **22 处 `<img>` 补 `loading="lazy" decoding="async"`**。缩略图未做：列表图有 lazy + 长缓存后非瓶颈，真要做留给部署期（S10 随 nginx/CDN 一并定）
+- [x] 虚拟化：`CharacterSelectModal` / `CharacterSelector`（665 项级）接入 VirtualGrid；顺带修了 VirtualGrid 两个存量缺陷（容器宽 0 时 `floor(-16/w)=-1` 致列数为负全空——钳到 ≥1；仅监听 window.resize 漏弹窗内布局变化——改 ResizeObserver）；两弹窗 Teleport 到 body（防 transform/overflow 祖先干扰 fixed 定位）。活体验证：1280 视口 4 列、渲染 20/665、滚动窗口精确跟随
+- [x] squad 自动战斗 setTimeout 链泄漏：组件级定时器登记表（`schedule()`），卸载统一 clearTimeout——文件内唯一裸 `window.setTimeout` 就是登记表本身，结构性无泄漏；全仓 interval 普查其余三处均有清理
+- [x] `main.ts` 非阻塞挂载：立即出壳，App 数据门控（加载态 / 30s 超时 / 失败重试），就绪才渲染路由；**顺带修掉启动双拉 bug**（main.ts + App.onMounted 各拉一次主数据，此前每次启动双倍流量）——实测启动 API 调用恰 2 次
 
-**Exit**：首屏 < 1MB；大列表流畅；无定时器泄漏。
+**Exit 达成**：首屏 API 317KB + 入口 JS gzip 74KB ≪ 1MB；大列表虚拟化滚动流畅；定时器无泄漏；测试 305 全绿；生产构建通过。
 
 ---
 

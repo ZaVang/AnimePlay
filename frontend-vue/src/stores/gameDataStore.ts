@@ -16,6 +16,9 @@ export const useGameDataStore = defineStore('gameData', () => {
   const isLoading = ref<boolean>(false);
   const error = ref<string | null>(null);
 
+  /** S9：主数据是否就绪（App 以此门控路由渲染——非阻塞挂载后的等待条件）。 */
+  const isReady = computed(() => allAnimeCards.value.length > 0 && allCharacterCards.value.length > 0);
+
   // --- GETTERS ---
   const getAnimeCardById = computed(() => {
     const map = new Map(allAnimeCards.value.map(card => [card.id, card]));
@@ -35,23 +38,26 @@ export const useGameDataStore = defineStore('gameData', () => {
 
   // --- ACTIONS ---
   async function fetchGameData() {
-    if (isLoading.value) return;
+    // S9：幂等——已就绪或在途直接返回（修掉 main.ts + App.onMounted 启动双拉）
+    if (isLoading.value || isReady.value) return;
     isLoading.value = true;
     error.value = null;
 
     try {
+      // S9：30s 超时兜底，挂掉转入错误态由 App 提供重试
+      const timeout = AbortSignal.timeout(30000);
       const [animeResponse, characterResponse] = await Promise.all([
-        fetch('/api/all_animes?limit=1000'),
-        fetch('/api/all_characters?limit=1000')
+        fetch('/api/all_animes?limit=1000', { signal: timeout }),
+        fetch('/api/all_characters?limit=1000', { signal: timeout })
       ]);
 
       if (!animeResponse.ok) throw new Error('Failed to fetch anime cards');
       if (!characterResponse.ok) throw new Error('Failed to fetch character cards');
       
-      const animeData = await animeResponse.json();
-      const characterData = await characterResponse.json();
+      const animeData: AnimeCard[] = await animeResponse.json();
+      const characterData: { characters?: CharacterCard[] } = await characterResponse.json();
 
-      const processCardImagePath = (card: any, type: 'anime' | 'character') => {
+      const processCardImagePath = <T extends AnimeCard | CharacterCard>(card: T, type: 'anime' | 'character'): T => {
         const imagePath = `/data/images/${type}/${card.id}.jpg`;
         return {
             ...card,
@@ -60,7 +66,7 @@ export const useGameDataStore = defineStore('gameData', () => {
         };
       };
 
-      allAnimeCards.value = animeData.map((card: any) => {
+      allAnimeCards.value = animeData.map((card) => {
         const processed = processCardImagePath(card, 'anime');
         const mappedEffects = animeEffectsMap[processed.id];
         if (mappedEffects) return { ...processed, effects: mappedEffects };
@@ -70,7 +76,7 @@ export const useGameDataStore = defineStore('gameData', () => {
       });
 
       if (characterData.characters) {
-          allCharacterCards.value = characterData.characters.map((card: any) => {
+          allCharacterCards.value = characterData.characters.map((card) => {
             const processed = processCardImagePath(card, 'character');
             const binding = characterSkillsMap[processed.id];
             if (binding) {
@@ -85,8 +91,9 @@ export const useGameDataStore = defineStore('gameData', () => {
       }
 
 
-    } catch (e: any) {
-      error.value = e.message;
+    } catch (e: unknown) {
+      const err = e as { name?: string; message?: string };
+      error.value = err.name === 'TimeoutError' ? '加载超时（30 秒）：请检查后端服务是否在运行' : (err.message ?? String(e));
       console.error('Failed to fetch game data:', e);
     } finally {
       isLoading.value = false;
@@ -99,6 +106,7 @@ export const useGameDataStore = defineStore('gameData', () => {
     allCharacterCards,
     allSkills,
     isLoading,
+    isReady,
     error,
     // Getters
     getAnimeCardById,

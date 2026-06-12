@@ -1,6 +1,5 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import { useGameDataStore } from '@/stores/gameDataStore'
 import { installImgFallback } from '@/utils/imgFallback'
 import './assets/skins.css'
 import './assets/main.css'
@@ -15,11 +14,6 @@ const pinia = createPinia()
 app.use(pinia)
 app.use(router)
 
-// Load master data using the existing gameDataStore before mounting the app
-const gameDataStore = useGameDataStore(pinia);
-gameDataStore.fetchGameData().then(() => {
-  app.mount('#app');
-}).catch(error => {
-  console.error("Failed to fetch game data before mounting:", error);
-  // Optionally, you can show an error message to the user on the screen here
-});
+// S9：非阻塞挂载——立即出壳，主数据由 App.onMounted 触发拉取，
+// 就绪前 App 显示加载态（失败/超时提供重试），不再白屏等 API。
+app.mount('#app')

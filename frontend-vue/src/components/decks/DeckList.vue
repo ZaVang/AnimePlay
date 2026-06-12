@@ -43,7 +43,7 @@ const handleDeleteDeck = (deckName: string) => {
     <div v-else class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6">
       <div v-for="deck in userStore.savedDecks" :key="deck.name" class="bg-surface rounded-lg shadow-md overflow-hidden group cursor-pointer" @click="$emit('editDeck', deck.name)">
         <div class="relative aspect-w-1 aspect-h-2">
-          <img :src="getCoverImage(deck)" class="w-full h-full object-cover" :alt="`${deck.name} cover`">
+          <img loading="lazy" decoding="async" :src="getCoverImage(deck)" class="w-full h-full object-cover" :alt="`${deck.name} cover`">
           <div class="absolute top-0 right-0 p-2 opacity-0 group-hover:opacity-100 transition-opacity">
             <button @click.stop="handleDeleteDeck(deck.name)" class="bg-danger text-white rounded-full w-8 h-8 flex items-center justify-center hover:opacity-85">
               🗑️

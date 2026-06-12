@@ -373,7 +373,7 @@ async function handleSaveDeck() {
         <div class="deck-card-list">
           <div v-for="card in animeInDeck" :key="card.id" @click="removeFromDeck(card.id, 'anime')"
                class="flex items-center p-1 rounded hover:bg-danger/10 cursor-pointer text-sm gap-2">
-            <img :src="card.image_path" class="w-8 h-6 object-cover rounded-sm flex-shrink-0" @error="handleImageError">
+            <img loading="lazy" decoding="async" :src="card.image_path" class="w-8 h-6 object-cover rounded-sm flex-shrink-0" @error="handleImageError">
             <span class="font-bold w-6">{{ card.rarity }}</span>
             <span class="truncate flex-1">{{ card.name }}</span>
           </div>
@@ -383,7 +383,7 @@ async function handleSaveDeck() {
         <div class="deck-card-list">
            <div v-for="card in characterInDeck" :key="card.id" @click="removeFromDeck(card.id, 'character')"
                class="flex items-center p-1 rounded hover:bg-danger/10 cursor-pointer text-sm gap-2">
-            <img :src="card.image_path" class="w-6 h-8 object-cover rounded-sm flex-shrink-0" @error="handleImageError">
+            <img loading="lazy" decoding="async" :src="card.image_path" class="w-6 h-8 object-cover rounded-sm flex-shrink-0" @error="handleImageError">
             <span class="font-bold w-6">{{ card.rarity }}</span>
             <span class="truncate flex-1">{{ card.name }}</span>
           </div>

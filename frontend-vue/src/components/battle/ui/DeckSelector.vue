@@ -101,7 +101,7 @@ function handleRandomClick() {
           @click="handleDeckClick(deck)"
         >
           <div class="relative aspect-w-10 aspect-h-12 bg-surface-2">
-            <img :src="getCoverImage(deck)" class="w-full h-full object-cover" :alt="`${deck.name} cover`" />
+            <img loading="lazy" decoding="async" :src="getCoverImage(deck)" class="w-full h-full object-cover" :alt="`${deck.name} cover`" />
           </div>
           <div class="p-4">
             <h4 class="font-bold text-lg truncate text-ink">{{ deck.name }}</h4>

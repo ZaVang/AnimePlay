@@ -2,6 +2,7 @@
 import { ref, computed } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
+import VirtualGrid from '@/components/VirtualGrid.vue';
 import type { CharacterCard } from '@/types/card';
 
 const props = defineProps<{
@@ -93,7 +94,9 @@ function handleBackdropClick(event: MouseEvent) {
 </script>
 
 <template>
-  <div 
+  <!-- S9：Teleport 到 body——页面内 transform 祖先会劫持 fixed 定位，弹窗被压缩 -->
+  <Teleport to="body">
+  <div
     v-if="isOpen"
     class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
     @click="handleBackdropClick"
@@ -129,7 +132,7 @@ function handleBackdropClick(event: MouseEvent) {
           <div class="flex items-center justify-between">
             <div class="flex items-center space-x-3">
               <div class="w-12 h-12 rounded-full overflow-hidden">
-                <img 
+                <img loading="lazy" decoding="async" 
                   :src="gameDataStore.getCharacterCardById(currentCharacterId)?.image_path"
                   :alt="gameDataStore.getCharacterCardById(currentCharacterId)?.name"
                   class="w-full h-full object-cover object-top"
@@ -169,21 +172,30 @@ function handleBackdropClick(event: MouseEvent) {
           </router-link>
         </div>
         
-        <div v-else class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <div 
-            v-for="character in availableCharacters"
-            :key="character.id"
-            @click="selectCharacter(character)"
-            class="relative cursor-pointer bg-surface-2 rounded-lg border-2 overflow-hidden transition-all transform hover:scale-105"
+        <!-- S9：虚拟化（角色池可达 665 项；列表区本就固定高度，无条件虚拟化） -->
+        <VirtualGrid
+          v-else
+          :items="availableCharacters"
+          :item-height="252"
+          :container-height="384"
+          :min-item-width="150"
+          :gap="16"
+          @item-click="selectCharacter($event as typeof availableCharacters[number])"
+        >
+          <template #default="{ item }">
+          <div
+            :key="(item as typeof availableCharacters[number]).id"
+            class="relative h-full bg-surface-2 rounded-lg border-2 overflow-hidden transition-all"
             :class="{
-              'border-success bg-success/20': character.id === currentCharacterId,
-              'border-line hover:border-accent': character.id !== currentCharacterId && (!usedCharacterIds || !usedCharacterIds.includes(character.id)),
-              'border-danger bg-danger/20 opacity-60 cursor-not-allowed': usedCharacterIds && usedCharacterIds.includes(character.id) && character.id !== currentCharacterId
+              'border-success bg-success/20': (item as typeof availableCharacters[number]).id === currentCharacterId,
+              'border-line hover:border-accent': (item as typeof availableCharacters[number]).id !== currentCharacterId && (!usedCharacterIds || !usedCharacterIds.includes((item as typeof availableCharacters[number]).id)),
+              'border-danger bg-danger/20 opacity-60 cursor-not-allowed': usedCharacterIds && usedCharacterIds.includes((item as typeof availableCharacters[number]).id) && (item as typeof availableCharacters[number]).id !== currentCharacterId
             }"
           >
-            <div class="aspect-[2/3] relative">
+            <template v-for="character in [item as typeof availableCharacters[number]]" :key="character.id">
+            <div class="h-full relative">
               <!-- 角色图片 -->
-              <img 
+              <img loading="lazy" decoding="async" 
                 :src="character.image_path"
                 :alt="character.name"
                 class="w-full h-full object-cover object-top"
@@ -240,12 +252,15 @@ function handleBackdropClick(event: MouseEvent) {
                 </div>
               </div>
             </div>
+            </template>
           </div>
-        </div>
+          </template>
+        </VirtualGrid>
       </div>
-      
+
     </div>
   </div>
+  </Teleport>
 </template>
 
 <style scoped>

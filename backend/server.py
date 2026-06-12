@@ -2,10 +2,53 @@ from flask import Flask, request, jsonify, send_from_directory
 import os
 import json
 
+try:
+    from flask_compress import Compress
+except ImportError:  # 未安装时可降级运行（S9：正式环境必须安装，见 requirements.txt）
+    Compress = None
+
 app = Flask(__name__, static_folder="../frontend-vue/dist")
-app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0  # Disable caching
+# S9：gzip 压缩（JSON/文本自动压缩，all_animes 之类的大响应收益最大）
+if Compress is not None:
+    app.config["COMPRESS_MIMETYPES"] = [
+        "application/json", "text/html", "text/css",
+        "application/javascript", "text/javascript", "image/svg+xml",
+    ]
+    Compress(app)
+
+app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0  # 动态/HTML 默认不缓存；图片与带哈希指纹的资源单独放行（见下）
 USER_DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "user_data")
 DATA_ROOT = os.path.join(os.path.dirname(__file__), "..", "data")
+
+# S9：主数据进程内缓存——此前每个请求都重读重解析 3.7MB JSON。
+# 服务时剥离 main_characters（占 all_animes 94% 体积，前端零引用）。
+_ANIME_CACHE = None
+_CHARACTER_CACHE = None
+
+
+def load_anime_cards():
+    global _ANIME_CACHE
+    if _ANIME_CACHE is None:
+        with open(
+            os.path.join(DATA_ROOT, "selected_anime", "all_cards.json"),
+            "r", encoding="utf-8",
+        ) as f:
+            data = json.load(f)
+        for item in data:
+            item.pop("main_characters", None)
+        _ANIME_CACHE = data
+    return _ANIME_CACHE
+
+
+def load_character_cards():
+    global _CHARACTER_CACHE
+    if _CHARACTER_CACHE is None:
+        with open(
+            os.path.join(DATA_ROOT, "selected_character", "all_cards.json"),
+            "r", encoding="utf-8",
+        ) as f:
+            _CHARACTER_CACHE = json.load(f)
+    return _CHARACTER_CACHE
 
 
 # --- Helper Functions ---
@@ -57,30 +100,25 @@ def save_user_data():
 @app.route("/data/<path:path>")
 def serve_data_files(path):
     """Serves files from the root /data directory."""
+    # S9：图片内容不变（按 id 存档），恢复长缓存——此前全局禁缓存导致每次进列表全量重拉图
+    if path.startswith("images/"):
+        response = send_from_directory(DATA_ROOT, path, max_age=2592000)  # 30 天
+        response.headers["Cache-Control"] = "public, max-age=2592000, immutable"
+        return response
     return send_from_directory(DATA_ROOT, path)
 
 
 # --- Anime API Routes ---
 @app.route("/api/all_animes", methods=["GET"])
 def get_animes():
-    """Get a list of anime cards with full data."""
+    """Get a list of anime cards (S9: 内存缓存 + 剥离 main_characters)."""
     try:
-        anime_dir = os.path.join(DATA_ROOT, "selected_anime", "all_cards.json")
-        if not os.path.exists(anime_dir):
-            return jsonify({"error": "Anime directory not found"}), 404
-
-        # Get query parameters
         limit = request.args.get("limit", type=int, default=50)
         offset = request.args.get("offset", type=int, default=0)
-
-        # Get all anime files
-        with open(anime_dir, "r", encoding="utf-8") as f:
-            anime_data = json.load(f)
-
-        # Apply pagination
-        paginated_anime = anime_data[offset : offset + limit]
-
-        return jsonify(paginated_anime)
+        anime_data = load_anime_cards()
+        return jsonify(anime_data[offset : offset + limit])
+    except FileNotFoundError:
+        return jsonify({"error": "Anime data not found"}), 404
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
@@ -131,24 +169,14 @@ def get_anime_batch():
 # --- Character API Routes ---
 @app.route("/api/all_characters", methods=["GET"])
 def get_characters():
-    """Get a list of character cards with full data."""
+    """Get a list of character cards (S9: 内存缓存)."""
     try:
-        characters_dir = os.path.join(DATA_ROOT, "selected_character", "all_cards.json")
-        if not os.path.exists(characters_dir):
-            return jsonify({"error": "Characters directory not found"}), 404
-
-        # Get query parameters
         limit = request.args.get("limit", type=int, default=50)
         offset = request.args.get("offset", type=int, default=0)
-
-        # Get all character files
-        with open(characters_dir, "r", encoding="utf-8") as f:
-            character_data = json.load(f)
-
-        # Apply pagination
-        paginated_characters = character_data[offset : offset + limit]
-
-        return jsonify({"characters": paginated_characters})
+        character_data = load_character_cards()
+        return jsonify({"characters": character_data[offset : offset + limit]})
+    except FileNotFoundError:
+        return jsonify({"error": "Character data not found"}), 404
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
@@ -208,6 +236,11 @@ def serve_static(path):
     # It tries to serve files from frontend/, then frontend/js/, etc.
     # A more robust solution would be to have nginx handle static files.
     try:
+        # S9：vite 产物文件名带内容哈希，可永久缓存；其余（index.html 等）维持不缓存
+        if path.startswith("assets/"):
+            response = send_from_directory(app.static_folder, path, max_age=31536000)
+            response.headers["Cache-Control"] = "public, max-age=31536000, immutable"
+            return response
         return send_from_directory(app.static_folder, path)
     except:
         return send_from_directory(app.static_folder, "index.html")

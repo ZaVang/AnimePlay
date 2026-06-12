@@ -24,9 +24,14 @@ const containerWidth = ref(0);
 const gridParams = computed(() => {
   const availableWidth = containerWidth.value - props.gap;
   const itemWidthWithGap = props.minItemWidth + props.gap;
-  const columns = Math.floor(availableWidth / itemWidthWithGap) || 1;
-  const actualItemWidth = Math.floor((availableWidth - (columns - 1) * props.gap) / columns);
-  
+  // S9 修复：宽度未量到（弹窗内首帧为 0）时 floor 产生 -1，`|| 1` 兜底失效 → 列数为负全空。
+  // 列数钳到 ≥1，配合 ResizeObserver 在布局就绪后自动修正。
+  const columns = Math.max(1, Math.floor(availableWidth / itemWidthWithGap));
+  const actualItemWidth = Math.max(
+    props.minItemWidth,
+    Math.floor((availableWidth - (columns - 1) * props.gap) / columns),
+  );
+
   return {
     columns,
     itemWidth: actualItemWidth,
@@ -104,13 +109,21 @@ function updateContainerWidth() {
   }
 }
 
-// 生命周期
+// 生命周期（S9：ResizeObserver 跟踪容器自身尺寸——弹窗/布局延迟下 window.resize 不会触发）
+let resizeObserver: ResizeObserver | null = null;
+
 onMounted(() => {
   updateContainerWidth();
+  if (typeof ResizeObserver !== 'undefined' && containerRef.value) {
+    resizeObserver = new ResizeObserver(updateContainerWidth);
+    resizeObserver.observe(containerRef.value);
+  }
   window.addEventListener('resize', updateContainerWidth);
 });
 
 onUnmounted(() => {
+  resizeObserver?.disconnect();
+  resizeObserver = null;
   window.removeEventListener('resize', updateContainerWidth);
 });
 

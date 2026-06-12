@@ -333,9 +333,9 @@ function executeRound() {
   
   isPlayerTurn.value = !isPlayerTurn.value;
   currentTurn.value++;
-  
-  // 检查战斗结束
-  setTimeout(() => {
+
+  // 检查战斗结束（经登记的定时器：卸载即清，防游离回调）
+  schedule(() => {
     checkBattleEnd();
   }, 1500);
 }
@@ -544,8 +544,9 @@ function autoFinishBattle() {
       return;
     }
     
-    // 继续下一回合（使用很短的延时保持视觉效果）
-    setTimeout(autoRound, 50);
+    // 继续下一回合（短延时保持视觉效果；经登记定时器——离开页面链条即断，
+    // 修复审计 S9 指出的「自动战斗 setTimeout 链在卸载后永久跑完整场」泄漏）
+    schedule(autoRound, 50);
   };
   
   // 开始自动战斗
@@ -562,6 +563,16 @@ function refreshTowerEnemies() {
     CHARACTER_IMAGE_POOL,
   );
   saveState(); // 保存新的敌人数据
+}
+
+// S9：定时器登记——本组件所有 setTimeout 必须走这里，卸载时统一清除
+const pendingTimers = new Set<number>();
+function schedule(fn: () => void, delay: number) {
+  const id = window.setTimeout(() => {
+    pendingTimers.delete(id);
+    fn();
+  }, delay);
+  pendingTimers.add(id);
 }
 
 // 组件挂载时恢复状态
@@ -581,8 +592,10 @@ watch(
   },
 );
 
-// 组件卸载前保存状态
+// 组件卸载前：断掉全部待执行定时器（自动战斗链/结算检查），再保存状态
 onBeforeUnmount(() => {
+  pendingTimers.forEach(id => clearTimeout(id));
+  pendingTimers.clear();
   saveState();
 });
 </script>
@@ -696,7 +709,7 @@ onBeforeUnmount(() => {
                   style="aspect-ratio: 2/3; width: 50px; height: 75px;"
                 >
                   <div v-if="squad.members[position - 1]" class="absolute inset-0">
-                    <img 
+                    <img loading="lazy" decoding="async" 
                       :src="gameDataStore.getCharacterCardById(squad.members[position - 1]!)?.image_path"
                       :alt="gameDataStore.getCharacterCardById(squad.members[position - 1]!)?.name"
                       class="w-full h-full object-cover object-top"
@@ -787,7 +800,7 @@ onBeforeUnmount(() => {
                   <div class="relative">
                     <div class="w-16 h-16 rounded-full overflow-hidden border-2"
                          :class="member.isDefeated ? 'border-line' : 'border-blue-400'">
-                      <img 
+                      <img loading="lazy" decoding="async" 
                         :src="member.character.image_path"
                         :alt="member.character.name"
                         class="w-full h-full object-cover object-top"
@@ -846,7 +859,7 @@ onBeforeUnmount(() => {
                     <div class="w-16 h-16 rounded-full overflow-hidden border-2"
                          :class="member.isDefeated ? 'border-line' : 'border-red-400'">
                       <!-- 显示真实角色头像 -->
-                      <img 
+                      <img loading="lazy" decoding="async" 
                         :src="member.character.image_path"
                         :alt="member.character.name"
                         class="w-full h-full object-cover object-top"

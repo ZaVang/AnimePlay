@@ -106,7 +106,7 @@ function handleDismantle() {
         <div class="flex flex-col md:flex-row gap-6">
           <!-- Left side: Image -->
           <div class="md:w-1/3 flex-shrink-0">
-            <img :src="card.image_path" class="w-full rounded-md shadow-lg" :alt="card.name">
+            <img loading="lazy" decoding="async" :src="card.image_path" class="w-full rounded-md shadow-lg" :alt="card.name">
             <div class="mt-4 text-center">
                 <span 
                     class="font-bold px-3 py-1 rounded-full text-white"

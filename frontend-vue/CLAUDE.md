@@ -23,7 +23,7 @@ This file guides Claude Code (claude.ai/code) when working in the `frontend-vue`
 
 Vue 3 + TypeScript + Pinia + TailwindCSS, built with Vite.
 
-**Startup**: `main.ts` awaits `gameDataStore.fetchGameData()` (master anime/character data from the backend) **before** mounting the app.
+**Startup（S9 起非阻塞）**: `main.ts` 立即挂载；主数据由 `App.onMounted` 触发 `gameDataStore.fetchGameData()`（幂等 + 30s 超时），App 在 `isReady` 前渲染加载态/错误重试，就绪才渲染路由——视图可以继续假定主数据已在。后端服务时剥离 `main_characters` 并开 gzip（首屏 API ~317KB）；图片/哈希产物长缓存；665 项级大列表走 `VirtualGrid`（列数 ≥1 钳制 + ResizeObserver）；组件内多步 setTimeout 必须登记并在卸载时清除（参照 SquadBattleView 的 `schedule()`）。
 
 **8 feature modules** (routes in `router/index.ts`, all lazy-loaded except Home):
 
