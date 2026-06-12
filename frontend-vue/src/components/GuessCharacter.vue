@@ -189,9 +189,9 @@ function formatTime(timestamp: number): string {
 
 // 获取反馈框样式类
 function getFeedbackClass(type: FeedbackType): string {
-  if (type === 'success') return 'bg-green-100 text-green-800';
-  if (type === 'error') return 'bg-red-100 text-red-800';
-  if (type === 'info') return 'bg-blue-100 text-blue-800';
+  if (type === 'success') return 'bg-success/15 text-success';
+  if (type === 'error') return 'bg-danger/15 text-danger';
+  if (type === 'info') return 'bg-info/15 text-info';
   return '';
 }
 </script>
@@ -201,27 +201,27 @@ function getFeedbackClass(type: FeedbackType): string {
     <!-- 数据加载中 -->
     <div v-if="guessStore.isDataLoading" class="text-center py-12">
       <div class="animate-spin w-10 h-10 border-3 rounded-full mx-auto mb-4"
-        :style="{ borderColor: 'var(--theme-border)', borderTopColor: 'var(--theme-accent)' }"
+        :style="{ borderColor: 'rgb(var(--c-line))', borderTopColor: 'rgb(var(--c-accent))' }"
       ></div>
-      <p :style="{ color: 'var(--theme-text-secondary)' }">正在加载角色数据...</p>
+      <p :style="{ color: 'rgb(var(--c-ink-2))' }">正在加载角色数据...</p>
     </div>
 
     <!-- 游戏状态：未开始 -->
     <div v-else-if="!guessStore.isGameActive" class="text-center py-12">
       <div class="text-6xl mb-4">🎭</div>
-      <h2 class="text-2xl font-bold mb-4" :style="{ color: 'var(--theme-text-primary)' }">
+      <h2 class="text-2xl font-bold mb-4" :style="{ color: 'rgb(var(--c-ink))' }">
         猜角色小游戏
       </h2>
-      <p class="mb-6 text-sm" :style="{ color: 'var(--theme-text-secondary)' }">
+      <p class="mb-6 text-sm" :style="{ color: 'rgb(var(--c-ink-2))' }">
         根据像素化的图片，猜出这是哪个动漫角色！<br/>
         稀有度越高的角色分值越高，但出现概率越低~
       </p>
       
       <!-- 历史最高分 -->
       <div v-if="guessStore.highScore > 0" class="mb-6">
-        <div class="inline-block px-4 py-2 rounded-lg" :style="{ backgroundColor: 'var(--theme-bg-card)' }">
-          <span :style="{ color: 'var(--theme-text-secondary)' }">历史最高分：</span>
-          <span class="font-bold text-lg" :style="{ color: 'var(--theme-accent)' }">{{ guessStore.highScore }}</span>
+        <div class="inline-block px-4 py-2 rounded-lg" :style="{ backgroundColor: 'rgb(var(--c-surface-2))' }">
+          <span :style="{ color: 'rgb(var(--c-ink-2))' }">历史最高分：</span>
+          <span class="font-bold text-lg" :style="{ color: 'rgb(var(--c-accent))' }">{{ guessStore.highScore }}</span>
         </div>
       </div>
       
@@ -246,7 +246,7 @@ function getFeedbackClass(type: FeedbackType): string {
               :key="index"
               class="w-8 h-2 rounded-full transition-all duration-300"
               :class="[
-                index < guessStore.currentStage ? 'bg-green-500' : 'bg-gray-300',
+                index < guessStore.currentStage ? 'bg-success' : 'bg-surface-2',
                 index === guessStore.currentStage - 1 && guessStore.isGameActive ? 'ring-2 ring-offset-2' : ''
               ]"
             ></div>
@@ -255,7 +255,7 @@ function getFeedbackClass(type: FeedbackType): string {
         
         <div class="flex items-center gap-4">
           <!-- 剩余尝试次数 -->
-          <div class="text-sm" :style="{ color: 'var(--theme-text-secondary)' }">
+          <div class="text-sm" :style="{ color: 'rgb(var(--c-ink-2))' }">
             剩余 {{ guessStore.remainingAttempts }} 次机会
           </div>
           
@@ -271,12 +271,12 @@ function getFeedbackClass(type: FeedbackType): string {
       </div>
 
       <!-- 当前阶段信息（模糊度） -->
-      <div class="stage-info mb-4 text-center p-3 rounded-lg" :style="{ backgroundColor: 'var(--theme-bg-card)' }">
+      <div class="stage-info mb-4 text-center p-3 rounded-lg" :style="{ backgroundColor: 'rgb(var(--c-surface-2))' }">
         <div class="flex items-center justify-center gap-2">
-          <span class="font-bold text-lg" :style="{ color: 'var(--theme-accent)' }">
+          <span class="font-bold text-lg" :style="{ color: 'rgb(var(--c-accent))' }">
             {{ guessStore.currentStageInfo.label }}
           </span>
-          <span class="text-sm" :style="{ color: 'var(--theme-text-muted)' }">
+          <span class="text-sm" :style="{ color: 'rgb(var(--c-ink-3))' }">
             {{ guessStore.currentStageInfo.description }}
           </span>
         </div>
@@ -299,13 +299,13 @@ function getFeedbackClass(type: FeedbackType): string {
           <div
             v-if="!guessStore.imageLoaded && !guessStore.imageError"
             class="absolute inset-0 flex items-center justify-center rounded-lg"
-            :style="{ backgroundColor: 'var(--theme-bg-card)', width: '320px', height: '320px' }"
+            :style="{ backgroundColor: 'rgb(var(--c-surface-2))', width: '320px', height: '320px' }"
           >
             <div class="text-center">
               <div class="animate-spin w-8 h-8 border-2 rounded-full mx-auto mb-2"
-                :style="{ borderColor: 'var(--theme-border)', borderTopColor: 'var(--theme-accent)' }"
+                :style="{ borderColor: 'rgb(var(--c-line))', borderTopColor: 'rgb(var(--c-accent))' }"
               ></div>
-              <span class="text-sm" :style="{ color: 'var(--theme-text-muted)' }">加载中...</span>
+              <span class="text-sm" :style="{ color: 'rgb(var(--c-ink-3))' }">加载中...</span>
             </div>
           </div>
           
@@ -313,9 +313,9 @@ function getFeedbackClass(type: FeedbackType): string {
           <div
             v-if="guessStore.imageError"
             class="absolute inset-0 flex items-center justify-center rounded-lg"
-            :style="{ backgroundColor: 'var(--theme-bg-card)', width: '320px', height: '320px' }"
+            :style="{ backgroundColor: 'rgb(var(--c-surface-2))', width: '320px', height: '320px' }"
           >
-            <div class="text-center text-gray-400">
+            <div class="text-center text-ink-3">
               <div class="text-4xl mb-2">🖼️</div>
               <span class="text-sm">图片加载失败</span>
             </div>
@@ -336,32 +336,32 @@ function getFeedbackClass(type: FeedbackType): string {
       </div>
 
       <!-- 结果展示 -->
-      <div v-if="guessStore.showResult" class="result-section mb-6 p-4 rounded-lg" :style="{ backgroundColor: 'var(--theme-bg-card)' }">
+      <div v-if="guessStore.showResult" class="result-section mb-6 p-4 rounded-lg" :style="{ backgroundColor: 'rgb(var(--c-surface-2))' }">
         <div class="text-center">
           <div v-if="guessStore.isCorrect" class="text-4xl mb-2">🎉</div>
           <div v-else class="text-4xl mb-2">😅</div>
-          <h3 class="text-xl font-bold mb-2" :style="{ color: 'var(--theme-text-primary)' }">
+          <h3 class="text-xl font-bold mb-2" :style="{ color: 'rgb(var(--c-ink))' }">
             {{ guessStore.isCorrect ? '恭喜答对！' : '游戏结束' }}
           </h3>
-          <p class="mb-2" :style="{ color: 'var(--theme-text-secondary)' }">
+          <p class="mb-2" :style="{ color: 'rgb(var(--c-ink-2))' }">
             角色：<span class="font-bold">{{ guessStore.currentCharacter?.name }}</span>
           </p>
-          <p class="text-sm" :style="{ color: 'var(--theme-text-muted)' }">
+          <p class="text-sm" :style="{ color: 'rgb(var(--c-ink-3))' }">
             尝试次数：{{ guessStore.attempts }} 次
           </p>
           <div v-if="guessStore.isCorrect" class="mt-3">
-            <span class="text-2xl font-bold" :style="{ color: 'var(--theme-accent)' }">
+            <span class="text-2xl font-bold" :style="{ color: 'rgb(var(--c-accent))' }">
               +{{ guessStore.currentScore }} 分
             </span>
-            <p v-if="lastKnowledgeAwarded > 0" class="text-sm mt-1" :style="{ color: 'var(--theme-text-secondary)' }">
+            <p v-if="lastKnowledgeAwarded > 0" class="text-sm mt-1" :style="{ color: 'rgb(var(--c-ink-2))' }">
               兑换 +{{ lastKnowledgeAwarded }} 知识点
             </p>
           </div>
         </div>
         
         <!-- 角色信息 -->
-        <div v-if="guessStore.currentCharacter?.anime_names?.length" class="mt-4 pt-4 border-t" :style="{ borderColor: 'var(--theme-border)' }">
-          <p class="text-sm" :style="{ color: 'var(--theme-text-muted)' }">
+        <div v-if="guessStore.currentCharacter?.anime_names?.length" class="mt-4 pt-4 border-t" :style="{ borderColor: 'rgb(var(--c-line))' }">
+          <p class="text-sm" :style="{ color: 'rgb(var(--c-ink-3))' }">
             登场作品：{{ guessStore.currentCharacter.anime_names.slice(0, 2).join('、') }}
           </p>
         </div>
@@ -375,7 +375,7 @@ function getFeedbackClass(type: FeedbackType): string {
       </div>
 
       <!-- 输入区域 -->
-      <div v-else class="input-section" :style="{ backgroundColor: 'var(--theme-bg-card)' }">
+      <div v-else class="input-section" :style="{ backgroundColor: 'rgb(var(--c-surface-2))' }">
         <div class="flex gap-2">
           <input
             v-model="guessInput"
@@ -384,9 +384,9 @@ function getFeedbackClass(type: FeedbackType): string {
             placeholder="输入角色名字..."
             class="flex-1 px-4 py-3 rounded-lg border focus:outline-none transition"
             :style="{
-              backgroundColor: 'var(--theme-bg-primary)',
-              borderColor: 'var(--theme-border)',
-              color: 'var(--theme-text-primary)'
+              backgroundColor: 'rgb(var(--c-app))',
+              borderColor: 'rgb(var(--c-line))',
+              color: 'rgb(var(--c-ink))'
             }"
           />
           <button
@@ -396,7 +396,7 @@ function getFeedbackClass(type: FeedbackType): string {
             猜！
           </button>
         </div>
-        <p class="text-xs mt-2 text-center" :style="{ color: 'var(--theme-text-muted)' }">
+        <p class="text-xs mt-2 text-center" :style="{ color: 'rgb(var(--c-ink-3))' }">
           支持模糊匹配，大小写、繁简体均可
         </p>
       </div>
@@ -404,7 +404,7 @@ function getFeedbackClass(type: FeedbackType): string {
 
     <!-- 历史记录 -->
     <div v-if="guessStore.gameRecords.length > 0" class="history-section mt-8">
-      <h3 class="text-lg font-bold mb-3" :style="{ color: 'var(--theme-text-primary)' }">
+      <h3 class="text-lg font-bold mb-3" :style="{ color: 'rgb(var(--c-ink))' }">
         游戏记录
       </h3>
       <div class="space-y-2 max-h-60 overflow-y-auto">
@@ -412,10 +412,10 @@ function getFeedbackClass(type: FeedbackType): string {
           v-for="record in guessStore.gameRecords.slice(0, 10)"
           :key="record.id"
           class="flex justify-between items-center p-3 rounded-lg"
-          :style="{ backgroundColor: 'var(--theme-bg-card)' }"
+          :style="{ backgroundColor: 'rgb(var(--c-surface-2))' }"
         >
           <div class="flex-1">
-            <span class="font-medium" :style="{ color: 'var(--theme-text-primary)' }">
+            <span class="font-medium" :style="{ color: 'rgb(var(--c-ink))' }">
               {{ record.characterName }}
             </span>
             <span
@@ -426,10 +426,10 @@ function getFeedbackClass(type: FeedbackType): string {
             </span>
           </div>
           <div class="text-right">
-            <span class="font-bold" :style="{ color: record.score > 0 ? 'var(--theme-accent)' : 'var(--theme-text-muted)' }">
+            <span class="font-bold" :style="{ color: record.score > 0 ? 'rgb(var(--c-accent))' : 'rgb(var(--c-ink-3))' }">
               {{ record.score > 0 ? `+${record.score}` : '0' }}
             </span>
-            <p class="text-xs" :style="{ color: 'var(--theme-text-muted)' }">
+            <p class="text-xs" :style="{ color: 'rgb(var(--c-ink-3))' }">
               {{ formatTime(record.timestamp) }}
             </p>
           </div>
@@ -451,7 +451,7 @@ function getFeedbackClass(type: FeedbackType): string {
 }
 
 .correct-glow {
-  box-shadow: 0 0 30px rgba(16, 185, 129, 0.5);
+  box-shadow: 0 0 30px rgb(var(--c-success) / 0.5);
 }
 
 @keyframes correctPulse {
@@ -467,7 +467,7 @@ function getFeedbackClass(type: FeedbackType): string {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(to bottom, transparent, var(--theme-accent), transparent);
+  background: linear-gradient(to bottom, transparent, rgb(var(--c-accent)), transparent);
   animation: scan 2s linear infinite;
   opacity: 0.6;
   pointer-events: none;
@@ -480,22 +480,22 @@ function getFeedbackClass(type: FeedbackType): string {
 
 /* Canvas 样式 */
 canvas {
-  background-color: var(--theme-bg-card);
+  background-color: rgb(var(--c-surface-2));
 }
 
 /* 按钮样式 */
 .btn-accent {
-  background-color: var(--theme-accent);
-  color: white;
+  background-color: rgb(var(--c-accent));
+  color: rgb(var(--c-on-accent));
 }
 
 .btn-accent:hover {
-  background-color: var(--theme-accent-hover);
+  background-color: rgb(var(--c-accent-2));
 }
 
 /* 聚焦样式 */
 input:focus {
-  border-color: var(--theme-accent);
-  box-shadow: 0 0 0 2px var(--theme-accent-light);
+  border-color: rgb(var(--c-accent));
+  box-shadow: 0 0 0 2px rgb(var(--c-accent-soft));
 }
 </style>

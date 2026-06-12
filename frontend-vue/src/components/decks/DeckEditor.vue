@@ -8,7 +8,6 @@ import CharacterCard from '@/components/CharacterCard.vue';
 import CardDetailModal from '@/components/CardDetailModal.vue';
 import VirtualGrid from '@/components/VirtualGrid.vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
-import '@/utils/deckEditorTest'; // 导入测试工具
 
 const props = defineProps<{
   deckName: string | null;
@@ -258,19 +257,19 @@ async function handleSaveDeck() {
         <div class="collection-pane">
            <div class="p-4 border-b">
              <div class="flex border-b mb-4">
-                <button @click="collectionTab = 'anime'" :class="{'text-indigo-600 border-indigo-600': collectionTab === 'anime'}" class="flex-1 py-2 text-center font-semibold border-b-2">动画收藏</button>
-                <button @click="collectionTab = 'character'" :class="{'text-indigo-600 border-indigo-600': collectionTab === 'character'}" class="flex-1 py-2 text-center font-semibold border-b-2">角色收藏</button>
+                <button @click="collectionTab = 'anime'" :class="{'text-accent border-accent': collectionTab === 'anime'}" class="flex-1 py-2 text-center font-semibold border-b-2">动画收藏</button>
+                <button @click="collectionTab = 'character'" :class="{'text-accent border-accent': collectionTab === 'character'}" class="flex-1 py-2 text-center font-semibold border-b-2">角色收藏</button>
              </div>
              
              <!-- Filters -->
              <div v-if="collectionTab === 'anime'" class="space-y-2">
                 <input type="text" v-model="animeFilters.name" placeholder="搜索动画名称..." class="w-full p-2 border rounded">
                 <div class="flex gap-2">
-                    <select v-model="animeFilters.rarity" class="w-full p-2 border rounded bg-white">
+                    <select v-model="animeFilters.rarity" class="w-full p-2 border rounded bg-surface-2">
                         <option value="">所有稀有度</option>
                         <option v-for="r in rarityOrder" :key="r" :value="r">{{ r }}</option>
                     </select>
-                    <select v-model="animeFilters.tag" class="w-full p-2 border rounded bg-white">
+                    <select v-model="animeFilters.tag" class="w-full p-2 border rounded bg-surface-2">
                         <option value="">所有标签</option>
                         <option v-for="tag in allAnimeTags" :key="tag" :value="tag">{{ tag }}</option>
                     </select>
@@ -278,7 +277,7 @@ async function handleSaveDeck() {
              </div>
              <div v-if="collectionTab === 'character'" class="space-y-2">
                 <input type="text" v-model="characterFilters.name" placeholder="搜索角色名称..." class="w-full p-2 border rounded">
-                <select v-model="characterFilters.rarity" class="w-full p-2 border rounded bg-white">
+                <select v-model="characterFilters.rarity" class="w-full p-2 border rounded bg-surface-2">
                     <option value="">所有稀有度</option>
                     <option v-for="r in rarityOrder" :key="r" :value="r">{{ r }}</option>
                 </select>
@@ -373,22 +372,22 @@ async function handleSaveDeck() {
         <h4 class="font-bold mb-2">动画卡 ({{ animeInDeck.length }}/{{ GAME_CONFIG.deckBuilding.AnimeMaxNum }})</h4>
         <div class="deck-card-list">
           <div v-for="card in animeInDeck" :key="card.id" @click="removeFromDeck(card.id, 'anime')"
-               class="flex items-center p-1 rounded hover:bg-red-100 cursor-pointer text-sm gap-2">
+               class="flex items-center p-1 rounded hover:bg-danger/10 cursor-pointer text-sm gap-2">
             <img :src="card.image_path" class="w-8 h-6 object-cover rounded-sm flex-shrink-0" @error="handleImageError">
             <span class="font-bold w-6">{{ card.rarity }}</span>
             <span class="truncate flex-1">{{ card.name }}</span>
           </div>
-           <p v-if="animeInDeck.length === 0" class="text-xs text-gray-600 py-4 text-center">从左侧点击添加</p>
+           <p v-if="animeInDeck.length === 0" class="text-xs text-ink-2 py-4 text-center">从左侧点击添加</p>
         </div>
         <h4 class="font-bold mt-4 mb-2">角色卡 ({{ characterInDeck.length }}/{{ GAME_CONFIG.deckBuilding.CharacterMaxNum }})</h4>
         <div class="deck-card-list">
            <div v-for="card in characterInDeck" :key="card.id" @click="removeFromDeck(card.id, 'character')"
-               class="flex items-center p-1 rounded hover:bg-red-100 cursor-pointer text-sm gap-2">
+               class="flex items-center p-1 rounded hover:bg-danger/10 cursor-pointer text-sm gap-2">
             <img :src="card.image_path" class="w-6 h-8 object-cover rounded-sm flex-shrink-0" @error="handleImageError">
             <span class="font-bold w-6">{{ card.rarity }}</span>
             <span class="truncate flex-1">{{ card.name }}</span>
           </div>
-          <p v-if="characterInDeck.length === 0" class="text-xs text-gray-600 py-4 text-center">从左侧点击添加</p>
+          <p v-if="characterInDeck.length === 0" class="text-xs text-ink-2 py-4 text-center">从左侧点击添加</p>
         </div>
       </div>
         </div>
@@ -413,7 +412,7 @@ async function handleSaveDeck() {
   height: 80vh;
 }
 .collection-pane, .deck-pane {
-  @apply bg-white rounded-lg shadow-sm border;
+  @apply bg-surface rounded-lg shadow-sm border;
   display: flex;
   flex-direction: column;
 }
@@ -427,19 +426,19 @@ async function handleSaveDeck() {
   @apply p-4 border-b flex items-center gap-4;
 }
 .deck-name-input {
-  @apply text-xl font-bold p-2 border-b-2 border-transparent focus:border-indigo-500 outline-none w-full bg-transparent;
+  @apply text-xl font-bold p-2 border-b-2 border-transparent focus:border-accent outline-none w-full bg-transparent;
 }
 .deck-actions {
   @apply flex-shrink-0 flex gap-2;
 }
 .btn-primary {
-  @apply bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700;
+  @apply bg-accent text-on-accent font-bold py-2 px-4 rounded-lg hover:bg-accent-strong;
 }
 .btn-secondary {
-  @apply bg-warm-200 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-warm-200;
+  @apply bg-surface-2 text-ink font-bold py-2 px-4 rounded-lg hover:bg-surface-2;
 }
 .deck-stats {
-  @apply p-2 border-b text-sm text-gray-600 flex justify-around;
+  @apply p-2 border-b text-sm text-ink-2 flex justify-around;
 }
 .deck-content {
   @apply p-4 overflow-y-auto flex-1;

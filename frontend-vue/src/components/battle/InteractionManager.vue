@@ -42,21 +42,21 @@
     >
       <div
         @click.stop
-        class="bg-white rounded-lg shadow-xl max-w-md w-full text-gray-800 mx-4"
+        class="bg-elevated rounded-lg shadow-xl max-w-md w-full text-ink mx-4"
       >
         <div class="p-6">
           <h3 class="text-lg font-bold mb-4">{{ confirmationState.title || '确认' }}</h3>
-          <p class="text-gray-700 mb-6">{{ confirmationState.message }}</p>
+          <p class="text-ink-2 mb-6">{{ confirmationState.message }}</p>
           <div class="flex justify-end space-x-3">
             <button
               @click="onConfirmationCancel"
-              class="px-4 py-2 border border-warm-300 rounded-lg text-gray-700 hover:bg-warm-50"
+              class="px-4 py-2 border border-line rounded-lg text-ink-2 hover:bg-surface-2"
             >
               取消
             </button>
             <button
               @click="onConfirmationConfirm"
-              class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+              class="px-6 py-2 bg-accent text-on-accent rounded-lg hover:bg-accent-strong"
             >
               确认
             </button>

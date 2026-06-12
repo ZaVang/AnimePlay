@@ -21,7 +21,7 @@ const userStore = useUserStore();
 const imageError = ref(false);
 
 const rarityData = computed(() => GAME_CONFIG.characterSystem.rarityConfig[props.character.rarity] || {});
-const rarityColorClass = computed(() => rarityData.value.c || 'bg-warm-500');
+const rarityColorClass = computed(() => rarityData.value.c || 'bg-gray-500');
 const rarityEffectClass = computed(() => rarityData.value.effect || '');
 const isFavorite = computed(() => userStore.isFavorite(props.character.id, 'character'));
 
@@ -56,7 +56,7 @@ function toggleFavorite(event: MouseEvent) {
 
 <template>
   <div
-    class="card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer group relative"
+    class="card bg-surface rounded-lg shadow-md overflow-hidden cursor-pointer group relative"
     :class="[
         rarityEffectClass,
         { 'opacity-50 grayscale': isInDeck }
@@ -107,14 +107,14 @@ function toggleFavorite(event: MouseEvent) {
       <div v-if="isDuplicate" class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-center p-1">
         <span class="text-white font-bold text-2xl">+1</span>
       </div>
-      <div v-if="isNew" class="absolute top-1 left-1 bg-teal-primary text-white text-xs font-bold px-1 rounded">
+      <div v-if="isNew" class="absolute top-1 left-1 bg-accent text-on-accent text-xs font-bold px-1 rounded">
         NEW
       </div>
     </div>
     
     <div class="p-2">
-      <p class="text-xs text-center font-bold truncate text-gray-900" :title="character.name">{{ character.name }}</p>
-      <p v-if="character.anime_count" class="text-xs text-center text-gray-600 mt-1">
+      <p class="text-xs text-center font-bold truncate text-ink" :title="character.name">{{ character.name }}</p>
+      <p v-if="character.anime_count" class="text-xs text-center text-ink-2 mt-1">
         {{ character.anime_count }}部作品
       </p>
     </div>

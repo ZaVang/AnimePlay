@@ -51,7 +51,7 @@ const isDefensePhase = computed(() => gameStore.phase === 'defense');
           </button>
         </template>
       </div>
-      <button @click="emit('close')" class="absolute top-2 right-2 text-gray-600 hover:text-white">✕</button>
+      <button @click="emit('close')" class="absolute top-2 right-2 text-ink-2 hover:text-ink">✕</button>
     </div>
   </div>
 </template>
@@ -70,10 +70,11 @@ const isDefensePhase = computed(() => gameStore.phase === 'defense');
   z-index: 1000;
 }
 .modal-content {
-  background-color: #1f2937; /* bg-cream-100 */
+  background-color: rgb(var(--c-elevated));
+  color: rgb(var(--c-ink));
   padding: 2rem;
   border-radius: 0.5rem;
-  border: 1px solid #4b5563; /* border-warm-300 */
+  border: 1px solid rgb(var(--c-line));
   position: relative;
   width: 320px;
 }
@@ -87,12 +88,13 @@ const isDefensePhase = computed(() => gameStore.phase === 'defense');
   gap: 1rem;
 }
 .btn-primary, .btn-secondary {
-  @apply text-white font-bold py-2 px-4 rounded-lg w-full transition-colors;
+  @apply font-bold py-2 px-4 rounded-lg w-full transition-colors;
 }
 .btn-primary {
-  @apply bg-teal-primary hover:bg-teal-dark;
+  @apply bg-accent hover:bg-accent-strong text-on-accent;
 }
+/* 辛辣/反驳为攻击风格识别色（红），刻意保持固定，不随皮肤 */
 .btn-secondary {
-  @apply bg-red-600 hover:bg-red-700;
+  @apply bg-red-600 hover:bg-red-700 text-white;
 }
 </style>

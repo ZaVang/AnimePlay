@@ -20,17 +20,17 @@ watch(logs, () => {
 }, { deep: true });
 
 const logTypeClasses = {
-  event: 'text-yellow-300',
-  clash: 'text-white',
-  damage: 'text-red-400',
-  info: 'text-gray-600 italic',
+  event: 'text-accent',
+  clash: 'text-ink',
+  damage: 'text-danger',
+  info: 'text-ink-3 italic',
 };
 </script>
 
 <template>
   <div class="battle-log-wrapper">
     <div ref="logContainer" class="log-container">
-      <div v-for="(log, index) in logs" :key="index" class="log-message text-gray-600 italic">
+      <div v-for="(log, index) in logs" :key="index" class="log-message text-ink-2 italic">
         {{ log }}
       </div>
     </div>
@@ -39,7 +39,7 @@ const logTypeClasses = {
 
 <style scoped>
 .battle-log-wrapper {
-  @apply absolute inset-0 bg-black bg-opacity-50 p-2 rounded-lg text-xs;
+  @apply absolute inset-0 bg-surface-2/50 p-2 rounded-lg text-xs;
 }
 .log-container {
   @apply h-full overflow-y-auto pr-2;
@@ -56,7 +56,7 @@ const logTypeClasses = {
   background: transparent;
 }
 .log-container::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgb(var(--c-ink) / 0.2);
   border-radius: 20px;
 }
 </style>

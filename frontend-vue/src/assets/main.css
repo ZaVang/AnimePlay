@@ -61,32 +61,6 @@
   }
 }
 
-/* ===== 旧主题工具类（C2 全站迁移后删除，勿在新代码使用） ===== */
-.theme-bg-primary { background-color: var(--theme-bg-primary); }
-.theme-bg-secondary { background-color: var(--theme-bg-secondary); }
-.theme-bg-card { background-color: var(--theme-bg-card); }
-.theme-bg-header { background-color: var(--theme-bg-header); }
-.theme-text-primary { color: var(--theme-text-primary); }
-.theme-text-secondary { color: var(--theme-text-secondary); }
-.theme-text-muted { color: var(--theme-text-muted); }
-.theme-accent { color: var(--theme-accent); }
-.theme-border { border-color: var(--theme-border); }
-.theme-border-light { border-color: var(--theme-border-light); }
-
-.btn-accent {
-  background-color: var(--theme-accent);
-  color: rgb(var(--c-on-accent));
-  transition: all 0.2s;
-}
-.btn-accent:hover {
-  background-color: var(--theme-accent-hover);
-}
-
-.card-theme {
-  background-color: var(--theme-bg-card);
-  border: 1px solid var(--theme-border);
-}
-
 /* ===== 动画 ===== */
 @layer utilities {
     @keyframes pulse-strong {

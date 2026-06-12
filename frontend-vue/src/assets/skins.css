@@ -174,24 +174,3 @@
   --sk-glow-accent: 0 0 16px rgba(0, 229, 199, 0.45);
 }
 
-/*
- * 旧主题变量兼容别名（C2 全站迁移完成后删除）。
- * 自定义属性在使用处求值，因此只需在 :root 定义一次，会随 data-skin 自动联动。
- */
-:root {
-  --theme-bg-primary: rgb(var(--c-app));
-  --theme-bg-secondary: rgb(var(--c-header));
-  --theme-bg-card: rgb(var(--c-surface-2));
-  --theme-bg-header: rgb(var(--c-header));
-  --theme-text-primary: rgb(var(--c-ink));
-  --theme-text-secondary: rgb(var(--c-ink-2));
-  --theme-text-muted: rgb(var(--c-ink-3));
-  --theme-accent: rgb(var(--c-accent));
-  --theme-accent-hover: rgb(var(--c-accent-2));
-  --theme-accent-light: rgb(var(--c-accent-soft));
-  --theme-border: rgb(var(--c-line));
-  --theme-border-light: rgb(var(--c-line-2));
-  --theme-success: rgb(var(--c-success));
-  --theme-warning: rgb(var(--c-warning));
-  --theme-danger: rgb(var(--c-danger));
-}

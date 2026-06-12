@@ -98,17 +98,17 @@ function handleBackdropClick(event: MouseEvent) {
     class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
     @click="handleBackdropClick"
   >
-    <div class="bg-cream-100 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-hidden border border-warm-400">
-      
+    <div class="bg-elevated rounded-lg max-w-4xl w-full max-h-[90vh] overflow-hidden border border-line">
+
       <!-- 头部 -->
-      <div class="p-6 border-b border-warm-400">
+      <div class="p-6 border-b border-line">
         <div class="flex items-center justify-between mb-4">
-          <h2 class="text-2xl font-bold text-white">
+          <h2 class="text-2xl font-bold text-ink">
             选择位置 {{ position + 1 }} 的角色
           </h2>
-          <button 
+          <button
             @click="closeModal"
-            class="w-8 h-8 bg-warm-300 hover:bg-warm-400 rounded-full flex items-center justify-center text-gray-600 hover:text-white transition-colors"
+            class="w-8 h-8 bg-surface-2 rounded-full flex items-center justify-center text-ink-2 hover:text-ink transition-colors"
           >
             ✕
           </button>
@@ -119,13 +119,13 @@ function handleBackdropClick(event: MouseEvent) {
           <input
             v-model="searchKeyword"
             placeholder="搜索角色名称..."
-            class="w-full px-4 py-2 bg-warm-300 text-white rounded-lg border border-warm-300 focus:border-blue-500 focus:outline-none"
+            class="w-full px-4 py-2 bg-surface-2 text-ink rounded-lg border border-line focus:border-accent focus:outline-none"
           >
-          <div class="absolute right-3 top-2 text-gray-600">🔍</div>
+          <div class="absolute right-3 top-2 text-ink-2">🔍</div>
         </div>
-        
+
         <!-- 当前选中的角色 -->
-        <div v-if="currentCharacterId" class="mt-4 p-4 bg-blue-900/20 rounded-lg border border-blue-500">
+        <div v-if="currentCharacterId" class="mt-4 p-4 bg-accent-soft rounded-lg border border-accent">
           <div class="flex items-center justify-between">
             <div class="flex items-center space-x-3">
               <div class="w-12 h-12 rounded-full overflow-hidden">
@@ -137,15 +137,15 @@ function handleBackdropClick(event: MouseEvent) {
                 >
               </div>
               <div>
-                <div class="text-white font-medium">
+                <div class="text-ink font-medium">
                   当前：{{ gameDataStore.getCharacterCardById(currentCharacterId)?.name }}
                 </div>
-                <div class="text-blue-400 text-sm">位置 {{ position + 1 }}</div>
+                <div class="text-accent text-sm">位置 {{ position + 1 }}</div>
               </div>
             </div>
-            <button 
+            <button
               @click="removeCharacter"
-              class="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors"
+              class="btn-danger"
             >
               移除
             </button>
@@ -156,13 +156,13 @@ function handleBackdropClick(event: MouseEvent) {
       <!-- 角色列表 -->
       <div class="p-6 overflow-y-auto max-h-96">
         <div v-if="availableCharacters.length === 0" class="text-center py-8">
-          <div class="text-gray-600 mb-4">
+          <div class="text-ink-2 mb-4">
             {{ searchKeyword ? '未找到匹配的角色' : '你还没有收藏任何角色' }}
           </div>
-          <router-link 
+          <router-link
             v-if="!searchKeyword"
-            to="/gacha" 
-            class="text-blue-400 hover:text-blue-300"
+            to="/gacha"
+            class="text-accent hover:text-accent-strong"
             @click="closeModal"
           >
             去抽卡获得角色 →
@@ -174,11 +174,11 @@ function handleBackdropClick(event: MouseEvent) {
             v-for="character in availableCharacters"
             :key="character.id"
             @click="selectCharacter(character)"
-            class="relative cursor-pointer bg-warm-300 rounded-lg border-2 overflow-hidden transition-all transform hover:scale-105"
+            class="relative cursor-pointer bg-surface-2 rounded-lg border-2 overflow-hidden transition-all transform hover:scale-105"
             :class="{
-              'border-green-500 bg-green-900/20': character.id === currentCharacterId,
-              'border-warm-300 hover:border-blue-500': character.id !== currentCharacterId && (!usedCharacterIds || !usedCharacterIds.includes(character.id)),
-              'border-red-500 bg-red-900/20 opacity-60 cursor-not-allowed': usedCharacterIds && usedCharacterIds.includes(character.id) && character.id !== currentCharacterId
+              'border-success bg-success/20': character.id === currentCharacterId,
+              'border-line hover:border-accent': character.id !== currentCharacterId && (!usedCharacterIds || !usedCharacterIds.includes(character.id)),
+              'border-danger bg-danger/20 opacity-60 cursor-not-allowed': usedCharacterIds && usedCharacterIds.includes(character.id) && character.id !== currentCharacterId
             }"
           >
             <div class="aspect-[2/3] relative">
@@ -205,15 +205,15 @@ function handleBackdropClick(event: MouseEvent) {
               <!-- 当前选中标记 -->
               <div 
                 v-if="character.id === currentCharacterId"
-                class="absolute top-2 right-2 w-8 h-8 bg-teal-primary rounded-full flex items-center justify-center shadow-lg"
+                class="absolute top-2 right-2 w-8 h-8 bg-accent rounded-full flex items-center justify-center shadow-lg"
               >
-                <span class="text-white font-bold">✓</span>
+                <span class="text-on-accent font-bold">✓</span>
               </div>
-              
+
               <!-- 拥有数量 -->
-              <div 
+              <div
                 v-if="character.count > 1"
-                class="absolute top-2 left-2 px-2 py-1 bg-blue-500 rounded-full text-xs text-white font-bold"
+                class="absolute top-2 left-2 px-2 py-1 bg-accent rounded-full text-xs text-on-accent font-bold"
               >
                 ×{{ character.count }}
               </div>
@@ -231,8 +231,8 @@ function handleBackdropClick(event: MouseEvent) {
                       'bg-purple-500 text-white': character.rarity === 'HR',
                       'bg-yellow-500 text-black': character.rarity === 'SSR',
                       'bg-blue-500 text-white': character.rarity === 'SR',
-                      'bg-teal-primary text-white': character.rarity === 'R',
-                      'bg-warm-500 text-white': character.rarity === 'N'
+                      'bg-green-500 text-white': character.rarity === 'R',
+                      'bg-gray-500 text-white': character.rarity === 'N'
                     }"
                   >
                     {{ character.rarity }}
@@ -263,7 +263,7 @@ function handleBackdropClick(event: MouseEvent) {
   }
 }
 
-.bg-cream-100 {
+.bg-elevated {
   animation: slideUp 0.3s ease-out;
 }
 

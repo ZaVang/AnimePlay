@@ -187,6 +187,18 @@ const battleTrainingPrograms = computed(() => [
   }
 ]);
 
+// Tailwind JIT 需要完整字面类名，禁止模板字符串拼接颜色类
+const ACTIVITY_CARD_CLASSES: Record<string, string> = {
+  green:  'bg-green-600/10 hover:bg-green-600/20 border-green-600/30',
+  purple: 'bg-purple-600/10 hover:bg-purple-600/20 border-purple-600/30',
+  yellow: 'bg-yellow-600/10 hover:bg-yellow-600/20 border-yellow-600/30',
+};
+const ACTIVITY_BTN_CLASSES: Record<string, string> = {
+  green:  'bg-green-600 hover:bg-green-700 text-white',
+  purple: 'bg-purple-600 hover:bg-purple-700 text-white',
+  yellow: 'bg-yellow-600 hover:bg-yellow-700 text-white',
+};
+
 // 特殊活动
 const specialActivities = computed(() => [
   {
@@ -421,18 +433,18 @@ onUnmounted(() => {
   <div class="p-6">
 
     <!-- 当前资源显示 -->
-    <div class="bg-warm-300/30 rounded-lg p-4 mb-6">
+    <div class="bg-surface-2/30 rounded-lg p-4 mb-6">
       <div class="flex items-center justify-between text-sm">
         <div class="flex items-center">
-          <span class="text-gray-600">可用知识点:</span>
+          <span class="text-ink-2">可用知识点:</span>
           <span class="ml-2 font-bold text-blue-400">{{ userStore.playerState.knowledgePoints }}</span>
         </div>
         <div class="flex items-center">
-          <span class="text-gray-600">心情值:</span>
+          <span class="text-ink-2">心情值:</span>
           <span 
             class="ml-2 font-bold"
             :class="{
-              'text-teal-primary': character.nurtureData.attributes.mood >= 70,
+              'text-accent': character.nurtureData.attributes.mood >= 70,
               'text-yellow-400': character.nurtureData.attributes.mood >= 40,
               'text-red-400': character.nurtureData.attributes.mood < 40
             }"
@@ -445,7 +457,7 @@ onUnmounted(() => {
 
     <!-- 养成属性训练区域 -->
     <div class="mb-6">
-      <h3 class="text-lg font-medium text-gray-600 mb-4">养成属性训练</h3>
+      <h3 class="text-lg font-medium text-ink-2 mb-4">养成属性训练</h3>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
         
         <div 
@@ -456,9 +468,9 @@ onUnmounted(() => {
           <div 
             class="p-4 rounded-lg border transition-all duration-300 relative overflow-hidden h-full"
             :class="[
-              program.available 
-                ? 'bg-warm-300/50 hover:bg-warm-300/70 border-warm-300 hover:border-warm-300' 
-                : 'bg-cream-100/50 border-warm-400 opacity-60',
+              program.available
+                ? 'bg-surface-2/50 hover:bg-surface-2/70 border-line hover:border-line'
+                : 'bg-surface-2/50 border-line-2 opacity-60',
               trainingAnimations[program.id] && 'animate-pulse border-blue-400'
             ]"
           >
@@ -471,28 +483,28 @@ onUnmounted(() => {
             <!-- 头部信息 -->
             <div class="text-center mb-3">
               <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">{{ program.icon }}</div>
-              <h4 class="font-medium text-white text-sm mb-1">{{ program.name }}</h4>
-              <p class="text-xs text-gray-600 mb-2">{{ program.description }}</p>
+              <h4 class="font-medium text-ink text-sm mb-1">{{ program.name }}</h4>
+              <p class="text-xs text-ink-2 mb-2">{{ program.description }}</p>
               
               <div class="flex justify-between items-center text-xs">
-                <span class="text-teal-primary font-medium">+{{ program.gain }}</span>
-                <span class="text-gray-600">💎 {{ program.cost }}</span>
+                <span class="text-accent font-medium">+{{ program.gain }}</span>
+                <span class="text-ink-2">💎 {{ program.cost }}</span>
               </div>
             </div>
 
             <!-- 当前属性进度条 -->
             <div class="mb-3">
-              <div class="flex justify-between text-xs text-gray-600 mb-1">
+              <div class="flex justify-between text-xs text-ink-2 mb-1">
                 <span>{{ program.attribute }}</span>
                 <span>{{ character.nurtureData.attributes[program.attribute] }}/100</span>
               </div>
-              <div class="w-full bg-warm-400 rounded-full h-2">
+              <div class="w-full bg-surface-2 rounded-full h-2">
                 <div 
                   class="h-2 rounded-full transition-all duration-500"
                   :class="{
                     'bg-pink-400': program.attribute === 'charm',
                     'bg-blue-400': program.attribute === 'intelligence',
-                    'bg-teal-light': program.attribute === 'strength'
+                    'bg-accent': program.attribute === 'strength'
                   }"
                   :style="{ width: `${getAttributeProgress(character.nurtureData.attributes[program.attribute])}%` }"
                 ></div>
@@ -511,7 +523,7 @@ onUnmounted(() => {
               class="w-full py-2 px-3 rounded-lg font-medium text-sm transition-all duration-300"
               :class="program.available && userStore.playerState.knowledgePoints >= program.cost && !isTrainingOnCooldown(program.id)
                 ? 'bg-blue-600 hover:bg-blue-700 text-white'
-                : 'bg-warm-400 text-gray-600 cursor-not-allowed'"
+                : 'bg-surface-2 text-ink-3 cursor-not-allowed'"
             >
               <span v-if="isTrainingOnCooldown(program.id)">训练中</span>
               <span v-else-if="!program.available">心情不足</span>
@@ -526,7 +538,7 @@ onUnmounted(() => {
 
     <!-- 战斗属性训练区域 -->
     <div class="mb-6">
-      <h3 class="text-lg font-medium text-gray-600 mb-4 flex items-center">
+      <h3 class="text-lg font-medium text-ink-2 mb-4 flex items-center">
         <svg class="w-5 h-5 mr-2 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
         </svg>
@@ -543,8 +555,8 @@ onUnmounted(() => {
             class="p-4 rounded-lg border transition-all duration-300 relative overflow-hidden h-full"
             :class="[
               program.available 
-                ? 'bg-red-600/10 hover:bg-red-600/20 border-red-600/30 hover:border-red-600/50' 
-                : 'bg-cream-100/50 border-warm-400 opacity-60',
+                ? 'bg-red-600/10 hover:bg-red-600/20 border-red-600/30 hover:border-red-600/50'
+                : 'bg-surface-2/50 border-line-2 opacity-60',
               trainingAnimations[program.id] && 'animate-pulse border-red-400'
             ]"
           >
@@ -557,22 +569,22 @@ onUnmounted(() => {
             <!-- 头部信息 -->
             <div class="text-center mb-3">
               <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">{{ program.icon }}</div>
-              <h4 class="font-medium text-white text-sm mb-1">{{ program.name }}</h4>
-              <p class="text-xs text-gray-600 mb-2">{{ program.description }}</p>
+              <h4 class="font-medium text-ink text-sm mb-1">{{ program.name }}</h4>
+              <p class="text-xs text-ink-2 mb-2">{{ program.description }}</p>
               
               <div class="flex justify-between items-center text-xs">
                 <span class="text-red-400 font-medium">+{{ program.gain }}%</span>
-                <span class="text-gray-600">💎 {{ program.cost }}</span>
+                <span class="text-ink-2">💎 {{ program.cost }}</span>
               </div>
             </div>
 
             <!-- 当前战斗属性加成 -->
             <div class="mb-3">
-              <div class="flex justify-between text-xs text-gray-600 mb-1">
+              <div class="flex justify-between text-xs text-ink-2 mb-1">
                 <span>{{ program.stat.toUpperCase() }}加成</span>
                 <span>{{ character.nurtureData.battleEnhancements?.[program.stat] || 0 }}%</span>
               </div>
-              <div class="w-full bg-warm-400 rounded-full h-2">
+              <div class="w-full bg-surface-2 rounded-full h-2">
                 <div 
                   class="h-2 rounded-full bg-gradient-to-r from-red-500 to-orange-500 transition-all duration-500"
                   :style="{ width: `${Math.min(100, character.nurtureData.battleEnhancements?.[program.stat] || 0)}%` }"
@@ -581,7 +593,7 @@ onUnmounted(() => {
             </div>
 
             <!-- 需求条件 -->
-            <div class="mb-3 text-xs text-gray-600 text-center">
+            <div class="mb-3 text-xs text-ink-2 text-center">
               <span>需要: </span>
               <span v-if="program.requirements.affection">羁绊{{ program.requirements.affection }} </span>
               <span v-if="program.requirements.strength">体力{{ program.requirements.strength }} </span>
@@ -601,7 +613,7 @@ onUnmounted(() => {
               class="w-full py-2 px-3 rounded-lg font-medium text-sm transition-all duration-300"
               :class="program.available && userStore.playerState.knowledgePoints >= program.cost && !isTrainingOnCooldown(program.id)
                 ? 'bg-red-600 hover:bg-red-700 text-white'
-                : 'bg-warm-400 text-gray-600 cursor-not-allowed'"
+                : 'bg-surface-2 text-ink-3 cursor-not-allowed'"
             >
               <span v-if="isTrainingOnCooldown(program.id)">强化中</span>
               <span v-else-if="!program.available">条件不满足</span>
@@ -616,7 +628,7 @@ onUnmounted(() => {
 
     <!-- 特殊活动区域 -->
     <div>
-      <h3 class="text-lg font-medium text-gray-600 mb-4">特殊活动</h3>
+      <h3 class="text-lg font-medium text-ink-2 mb-4">特殊活动</h3>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
         
         <div 
@@ -626,22 +638,22 @@ onUnmounted(() => {
         >
           <div 
             class="p-4 rounded-lg border transition-all duration-300 h-full"
-            :class="activity.available 
-              ? `bg-${activity.color}-600/10 hover:bg-${activity.color}-600/20 border-${activity.color}-600/30`
-              : 'bg-cream-100/50 border-warm-400 opacity-60'"
+            :class="activity.available
+              ? (ACTIVITY_CARD_CLASSES[activity.color] ?? ACTIVITY_CARD_CLASSES.green)
+              : 'bg-surface-2/50 border-line-2 opacity-60'"
           >
             <!-- 头部信息 -->
             <div class="text-center mb-3">
               <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">{{ activity.icon }}</div>
-              <h4 class="font-medium text-white text-sm mb-1">{{ activity.name }}</h4>
-              <p class="text-xs text-gray-600 mb-2">{{ activity.description }}</p>
-              <div class="text-xs text-gray-600">💎 {{ activity.cost }}</div>
+              <h4 class="font-medium text-ink text-sm mb-1">{{ activity.name }}</h4>
+              <p class="text-xs text-ink-2 mb-2">{{ activity.description }}</p>
+              <div class="text-xs text-ink-2">💎 {{ activity.cost }}</div>
             </div>
 
-            <div class="text-xs text-gray-600 mb-3 text-center">{{ activity.effect }}</div>
+            <div class="text-xs text-ink-2 mb-3 text-center">{{ activity.effect }}</div>
 
             <!-- 需求条件显示 -->
-            <div v-if="!activity.available || userStore.playerState.knowledgePoints < activity.cost" class="mb-3 text-xs text-gray-600 text-center">
+            <div v-if="!activity.available || userStore.playerState.knowledgePoints < activity.cost" class="mb-3 text-xs text-ink-2 text-center">
               <span>需要: </span>
               <span v-if="activity.id === 'meditation' && character.nurtureData.affection < 200">羁绊值200+ </span>
               <span v-if="activity.id === 'special_event' && character.nurtureData.affection < 500">羁绊值500+ </span>
@@ -653,8 +665,8 @@ onUnmounted(() => {
               :disabled="!activity.available || userStore.playerState.knowledgePoints < activity.cost"
               class="w-full py-2 px-3 rounded-lg font-medium text-sm transition-all duration-300"
               :class="activity.available && userStore.playerState.knowledgePoints >= activity.cost
-                ? `bg-${activity.color}-600 hover:bg-${activity.color}-700 text-white`
-                : 'bg-warm-400 text-gray-600 cursor-not-allowed'"
+                ? (ACTIVITY_BTN_CLASSES[activity.color] ?? ACTIVITY_BTN_CLASSES.green)
+                : 'bg-surface-2 text-ink-3 cursor-not-allowed'"
             >
               <span v-if="!activity.available">条件不满足</span>
               <span v-else-if="userStore.playerState.knowledgePoints < activity.cost">知识点不足</span>

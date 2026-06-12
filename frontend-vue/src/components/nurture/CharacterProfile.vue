@@ -53,8 +53,8 @@ const bondLevel = computed(() => {
   };
   if (affection >= 200) return { 
     level: '志同道合', 
-    color: 'text-teal-primary', 
-    bgColor: 'bg-teal-primary/20', 
+    color: 'text-accent', 
+    bgColor: 'bg-accent/20',
     icon: '💚',
     progress: ((affection - 200) / 200) * 100,
     maxReached: false
@@ -69,8 +69,8 @@ const bondLevel = computed(() => {
   };
   return { 
     level: '初次相遇', 
-    color: 'text-gray-600', 
-    bgColor: 'bg-warm-500/20', 
+    color: 'text-ink-2', 
+    bgColor: 'bg-ink-3/20',
     icon: '🤝',
     progress: (affection / 100) * 100,
     maxReached: false
@@ -98,7 +98,7 @@ const lastInteractionText = computed(() => {
 const moodStatus = computed(() => {
   const mood = props.character.nurtureData.attributes.mood;
   if (mood >= 90) return { text: '非常开心', color: 'text-pink-400', icon: '😊' };
-  if (mood >= 70) return { text: '愉快', color: 'text-teal-primary', icon: '😌' };
+  if (mood >= 70) return { text: '愉快', color: 'text-accent', icon: '😌' };
   if (mood >= 50) return { text: '平常', color: 'text-yellow-400', icon: '😐' };
   if (mood >= 30) return { text: '有些烦躁', color: 'text-orange-400', icon: '😔' };
   return { text: '心情不好', color: 'text-red-400', icon: '😞' };
@@ -242,7 +242,7 @@ const battlePower = computed(() => {
 </script>
 
 <template>
-  <div class="bg-cream-100 rounded-lg shadow-lg border border-warm-400 overflow-hidden">
+  <div class="bg-surface rounded-lg shadow-lg border border-line-2 overflow-hidden">
     
     <!-- 角色信息横向布局 -->
     <div class="flex">
@@ -279,8 +279,8 @@ const battlePower = computed(() => {
                 'bg-purple-500 text-white': character.rarity === 'HR',
                 'bg-yellow-500 text-black': character.rarity === 'SSR',
                 'bg-blue-500 text-white': character.rarity === 'SR',
-                'bg-teal-primary text-white': character.rarity === 'R',
-                'bg-warm-500 text-white': character.rarity === 'N'
+                'bg-green-500 text-white': character.rarity === 'R',
+                'bg-gray-500 text-white': character.rarity === 'N'
               }"
             >
               {{ character.rarity }}
@@ -300,9 +300,9 @@ const battlePower = computed(() => {
         <!-- 顶部：羁绊等级和角色等级 -->
         <div class="grid grid-cols-2 gap-4 mb-6">
           <!-- 羁绊等级 -->
-          <div class="bg-warm-300/30 rounded-lg p-4">
+          <div class="bg-surface-2/30 rounded-lg p-4">
             <div class="flex items-center justify-between mb-2">
-              <h4 class="text-sm font-semibold text-white flex items-center">
+              <h4 class="text-sm font-semibold text-ink flex items-center">
                 <span class="text-lg mr-2">{{ bondLevel.icon }}</span>
                 羁绊等级
               </h4>
@@ -312,7 +312,7 @@ const battlePower = computed(() => {
             </div>
             
             <!-- 羁绊进度条 -->
-            <div class="w-full bg-warm-400 rounded-full h-2 overflow-hidden mb-1">
+            <div class="w-full bg-surface-2 rounded-full h-2 overflow-hidden mb-1">
               <div 
                 :class="bondLevel.bgColor.replace('/20', '')" 
                 class="h-full rounded-full transition-all duration-500"
@@ -320,7 +320,7 @@ const battlePower = computed(() => {
               ></div>
             </div>
             
-            <div class="flex justify-between text-xs text-gray-600">
+            <div class="flex justify-between text-xs text-ink-2">
               <span>{{ character.nurtureData.affection }}</span>
               <span v-if="!bondLevel.maxReached">{{ getBondLevelThreshold() }}</span>
               <span v-else class="text-pink-400">MAX</span>
@@ -328,9 +328,9 @@ const battlePower = computed(() => {
           </div>
 
           <!-- 角色等级 -->
-          <div class="bg-warm-300/30 rounded-lg p-4">
+          <div class="bg-surface-2/30 rounded-lg p-4">
             <div class="flex items-center justify-between mb-2">
-              <h4 class="text-sm font-semibold text-white flex items-center">
+              <h4 class="text-sm font-semibold text-ink flex items-center">
                 <span class="text-lg mr-2">⚡</span>
                 角色等级
               </h4>
@@ -340,14 +340,14 @@ const battlePower = computed(() => {
             </div>
             
             <!-- 经验值进度条 -->
-            <div class="w-full bg-warm-400 rounded-full h-2 overflow-hidden mb-1">
+            <div class="w-full bg-surface-2 rounded-full h-2 overflow-hidden mb-1">
               <div 
                 class="h-full rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 transition-all duration-500"
                 :style="{ width: `${levelProgress.percentage}%` }"
               ></div>
             </div>
             
-            <div class="flex justify-between text-xs text-gray-600">
+            <div class="flex justify-between text-xs text-ink-2">
               <span>{{ levelProgress.current || 0 }}/{{ levelProgress.required || 1000 }}</span>
               <span class="text-yellow-400">下一级</span>
             </div>
@@ -355,12 +355,12 @@ const battlePower = computed(() => {
         </div>
 
         <!-- 中部：养成属性 -->
-        <div class="bg-warm-300/30 rounded-lg p-4 mb-4">
-          <h4 class="text-sm font-semibold text-white mb-3">养成属性</h4>
+        <div class="bg-surface-2/30 rounded-lg p-4 mb-4">
+          <h4 class="text-sm font-semibold text-ink mb-3">养成属性</h4>
           <div class="grid grid-cols-4 gap-4 text-center">
             <div>
               <div class="text-xl mb-1">✨</div>
-              <div class="text-xs text-gray-600 mb-1">魅力</div>
+              <div class="text-xs text-ink-2 mb-1">魅力</div>
               <div class="text-sm font-bold text-pink-400">
                 {{ character.nurtureData.attributes.charm }}
                 <span v-if="(character.nurtureData.levelBonusAttributes?.charm || 0) > 0" class="text-xs text-pink-300">
@@ -370,7 +370,7 @@ const battlePower = computed(() => {
             </div>
             <div>
               <div class="text-xl mb-1">🧠</div>
-              <div class="text-xs text-gray-600 mb-1">智力</div>
+              <div class="text-xs text-ink-2 mb-1">智力</div>
               <div class="text-sm font-bold text-blue-400">
                 {{ character.nurtureData.attributes.intelligence }}
                 <span v-if="(character.nurtureData.levelBonusAttributes?.intelligence || 0) > 0" class="text-xs text-blue-300">
@@ -380,8 +380,8 @@ const battlePower = computed(() => {
             </div>
             <div>
               <div class="text-xl mb-1">💪</div>
-              <div class="text-xs text-gray-600 mb-1">体力</div>
-              <div class="text-sm font-bold text-teal-primary">
+              <div class="text-xs text-ink-2 mb-1">体力</div>
+              <div class="text-sm font-bold text-accent">
                 {{ character.nurtureData.attributes.strength }}
                 <span v-if="(character.nurtureData.levelBonusAttributes?.strength || 0) > 0" class="text-xs text-green-300">
                   (+{{ character.nurtureData.levelBonusAttributes.strength }})
@@ -390,7 +390,7 @@ const battlePower = computed(() => {
             </div>
             <div>
               <div class="text-xl mb-1">{{ moodStatus.icon }}</div>
-              <div class="text-xs text-gray-600 mb-1">心情</div>
+              <div class="text-xs text-ink-2 mb-1">心情</div>
               <div class="text-sm font-bold" :class="moodStatus.color">{{ character.nurtureData.attributes.mood }}</div>
             </div>
           </div>
@@ -399,28 +399,28 @@ const battlePower = computed(() => {
         <!-- 中部：战斗属性 -->
         <div class="grid grid-cols-2 gap-4 mb-4">
           <!-- 实际战斗属性 -->
-          <div class="bg-warm-300/30 rounded-lg p-4">
-            <div class="text-xs text-gray-600 mb-3 text-center">实际属性</div>
+          <div class="bg-surface-2/30 rounded-lg p-4">
+            <div class="text-xs text-ink-2 mb-3 text-center">实际属性</div>
             <div class="space-y-2">
               <div class="flex justify-between text-xs">
-                <span class="text-gray-600">HP</span>
+                <span class="text-ink-2">HP</span>
                 <span class="text-red-400 font-medium">{{ actualBattleStats.hp }}</span>
               </div>
               <div class="flex justify-between text-xs">
-                <span class="text-gray-600">ATK</span>
+                <span class="text-ink-2">ATK</span>
                 <span class="text-orange-400 font-medium">{{ actualBattleStats.atk }}</span>
               </div>
               <div class="flex justify-between text-xs">
-                <span class="text-gray-600">DEF</span>
+                <span class="text-ink-2">DEF</span>
                 <span class="text-blue-400 font-medium">{{ actualBattleStats.def }}</span>
               </div>
               <div class="flex justify-between text-xs">
-                <span class="text-gray-600">SP</span>
+                <span class="text-ink-2">SP</span>
                 <span class="text-purple-400 font-medium">{{ actualBattleStats.sp }}</span>
               </div>
               <div class="flex justify-between text-xs">
-                <span class="text-gray-600">SPD</span>
-                <span class="text-teal-primary font-medium">{{ actualBattleStats.spd }}</span>
+                <span class="text-ink-2">SPD</span>
+                <span class="text-accent font-medium">{{ actualBattleStats.spd }}</span>
               </div>
             </div>
           </div>
@@ -432,30 +432,30 @@ const battlePower = computed(() => {
             <!-- 总战斗力 -->
             <div class="text-center mb-3">
               <div class="text-2xl font-bold text-yellow-400">{{ battlePower }}</div>
-              <div class="text-xs text-gray-600">综合评分</div>
+              <div class="text-xs text-ink-2">综合评分</div>
             </div>
             
             <!-- 加成详情 -->
             <div class="space-y-1">
               <div class="flex justify-between text-xs">
-                <span class="text-gray-600">HP</span>
+                <span class="text-ink-2">HP</span>
                 <span class="text-red-400 font-medium">+{{ character.nurtureData.battleEnhancements?.hp || 0 }}%</span>
               </div>
               <div class="flex justify-between text-xs">
-                <span class="text-gray-600">ATK</span>
+                <span class="text-ink-2">ATK</span>
                 <span class="text-orange-400 font-medium">+{{ character.nurtureData.battleEnhancements?.atk || 0 }}%</span>
               </div>
               <div class="flex justify-between text-xs">
-                <span class="text-gray-600">DEF</span>
+                <span class="text-ink-2">DEF</span>
                 <span class="text-blue-400 font-medium">+{{ character.nurtureData.battleEnhancements?.def || 0 }}%</span>
               </div>
               <div class="flex justify-between text-xs">
-                <span class="text-gray-600">SP</span>
+                <span class="text-ink-2">SP</span>
                 <span class="text-purple-400 font-medium">+{{ character.nurtureData.battleEnhancements?.sp || 0 }}%</span>
               </div>
               <div class="flex justify-between text-xs">
-                <span class="text-gray-600">SPD</span>
-                <span class="text-teal-primary font-medium">+{{ character.nurtureData.battleEnhancements?.spd || 0 }}%</span>
+                <span class="text-ink-2">SPD</span>
+                <span class="text-accent font-medium">+{{ character.nurtureData.battleEnhancements?.spd || 0 }}%</span>
               </div>
             </div>
           </div>
@@ -464,19 +464,19 @@ const battlePower = computed(() => {
         <!-- 底部：统计信息 -->
         <div class="grid grid-cols-3 gap-4">
           <!-- 互动统计 -->
-          <div class="bg-warm-300/30 rounded-lg p-4 text-center">
+          <div class="bg-surface-2/30 rounded-lg p-4 text-center">
             <div class="text-lg font-bold text-yellow-400 mb-1">{{ character.nurtureData.totalInteractions }}</div>
-            <div class="text-xs text-gray-600">总互动</div>
+            <div class="text-xs text-ink-2">总互动</div>
           </div>
           
           <!-- 最近活动 -->
-          <div class="bg-warm-300/30 rounded-lg p-4 text-center">
-            <div class="text-sm font-medium text-gray-600 mb-1">{{ lastInteractionText }}</div>
-            <div class="text-xs text-gray-600">最后互动</div>
+          <div class="bg-surface-2/30 rounded-lg p-4 text-center">
+            <div class="text-sm font-medium text-ink-2 mb-1">{{ lastInteractionText }}</div>
+            <div class="text-xs text-ink-2">最后互动</div>
           </div>
           
           <!-- 心情状态 -->
-          <div class="bg-warm-300/30 rounded-lg p-4 text-center">
+          <div class="bg-surface-2/30 rounded-lg p-4 text-center">
             <div class="text-lg mb-1">{{ moodStatus.icon }}</div>
             <div class="text-xs" :class="moodStatus.color">{{ moodStatus.text }}</div>
           </div>

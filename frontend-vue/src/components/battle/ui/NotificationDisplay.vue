@@ -31,10 +31,10 @@ const gameStore = useGameStore();
   gap: 10px;
 }
 .notification-item {
-  @apply bg-blue-500 text-white font-bold py-2 px-6 rounded-full shadow-lg;
+  @apply bg-info text-white font-bold py-2 px-6 rounded-full shadow-lg;
 }
 .notification-item.is-warning {
-  @apply bg-red-500;
+  @apply bg-danger;
 }
 
 .list-enter-active,

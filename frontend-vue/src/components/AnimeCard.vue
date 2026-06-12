@@ -17,7 +17,7 @@ const userStore = useUserStore();
 const imageError = ref(false);
 
 const rarityData = computed(() => GAME_CONFIG.animeSystem.rarityConfig[props.anime.rarity] || {});
-const rarityColorClass = computed(() => rarityData.value.c || 'bg-warm-500');
+const rarityColorClass = computed(() => rarityData.value.c || 'bg-gray-500');
 const rarityEffectClass = computed(() => rarityData.value.effect || '');
 const isFavorite = computed(() => userStore.isFavorite(props.anime.id, 'anime'));
 
@@ -50,7 +50,7 @@ function toggleFavorite(event: MouseEvent) {
 
 <template>
   <div
-    class="card bg-white rounded-lg shadow-md overflow-hidden cursor-pointer group relative"
+    class="card bg-surface rounded-lg shadow-md overflow-hidden cursor-pointer group relative"
     :class="[
         rarityEffectClass,
         { 'opacity-50 grayscale': isInDeck }
@@ -96,7 +96,7 @@ function toggleFavorite(event: MouseEvent) {
       
       <div
         v-if="count && count > 1"
-        class="absolute bottom-1 right-1 bg-indigo-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center"
+        class="absolute bottom-1 right-1 bg-accent text-on-accent text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center"
       >
         x{{ count }}
       </div>
@@ -104,13 +104,13 @@ function toggleFavorite(event: MouseEvent) {
       <div v-if="isDuplicate" class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-center p-1">
         <span class="text-white font-bold text-2xl">+1</span>
       </div>
-      <div v-if="isNew" class="absolute top-1 left-1 bg-teal-primary text-white text-xs font-bold px-1 rounded">
+      <div v-if="isNew" class="absolute top-1 left-1 bg-accent text-on-accent text-xs font-bold px-1 rounded">
         NEW
       </div>
     </div>
     
     <div class="p-2">
-      <p class="text-xs text-center font-bold truncate text-gray-900" :title="anime.name">{{ anime.name }}</p>
+      <p class="text-xs text-center font-bold truncate text-ink" :title="anime.name">{{ anime.name }}</p>
     </div>
   </div>
 </template>

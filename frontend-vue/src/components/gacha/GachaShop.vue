@@ -150,7 +150,7 @@ const activeShopItems = computed((): (ShopItem & { card?: any })[] => {
     <div class="flex justify-between items-center mb-4">
         <h3 class="text-lg font-semibold">{{ gachaType === 'anime' ? '动画商店' : '角色商店' }}</h3>
         <div class="flex items-center gap-2">
-            <span class="text-sm text-gray-600">知识点：</span>
+            <span class="text-sm text-ink-2">知识点：</span>
             <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-semibold">
                 {{ userStore.playerState.knowledgePoints.toLocaleString() }}
             </span>
@@ -158,7 +158,7 @@ const activeShopItems = computed((): (ShopItem & { card?: any })[] => {
     </div>
 
     <!-- 商店标签导航 -->
-    <div class="border-b border-gray-200 mb-4">
+    <div class="border-b border-line mb-4">
         <nav class="flex justify-center -mb-px">
             <button 
                 @click="activeShopTab = 'current'" 
@@ -182,8 +182,8 @@ const activeShopItems = computed((): (ShopItem & { card?: any })[] => {
     </div>
 
     <!-- 错误提示 -->
-    <div v-if="purchaseError" class="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg">
-        <p class="text-red-600 text-sm">{{ purchaseError }}</p>
+    <div v-if="purchaseError" class="mb-4 p-3 bg-danger/10 border border-danger/30 rounded-lg">
+        <p class="text-danger text-sm">{{ purchaseError }}</p>
     </div>
 
     <div v-if="activeShopItems.length > 0" class="shop-grid-container overflow-x-auto pb-4">
@@ -195,15 +195,15 @@ const activeShopItems = computed((): (ShopItem & { card?: any })[] => {
         </div>
         <div class="text-center w-full">
             <p class="font-semibold text-sm">{{ item.cost.toLocaleString() }} 知识点</p>
-            <p v-if="item.description" class="text-xs text-gray-600 mb-1">{{ item.description }}</p>
+            <p v-if="item.description" class="text-xs text-ink-2 mb-1">{{ item.description }}</p>
             <button 
                 @click="handlePurchase(item)"
                 :disabled="isPurchasing === item.id || userStore.playerState.knowledgePoints < item.cost"
                 :class="[
                   'mt-2 w-full font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-200',
                   isPurchasing === item.id || userStore.playerState.knowledgePoints < item.cost
-                    ? 'bg-warm-300 text-gray-700 cursor-not-allowed'
-                    : 'bg-teal-primary text-white hover:bg-teal-dark'
+                    ? 'bg-surface-2 text-ink-2 cursor-not-allowed'
+                    : 'bg-accent text-on-accent hover:bg-accent-strong'
                 ]"
             >
                 <span v-if="isPurchasing === item.id" class="flex items-center justify-center gap-2">
@@ -232,9 +232,9 @@ const activeShopItems = computed((): (ShopItem & { card?: any })[] => {
         </div>
         <div class="text-center w-full">
             <h4 class="font-semibold text-sm mb-1">{{ item.name }}</h4>
-            <p class="text-xs text-gray-600 mb-2">{{ item.description }}</p>
+            <p class="text-xs text-ink-2 mb-2">{{ item.description }}</p>
             <p v-if="item.quantity" class="text-xs text-blue-600 mb-1">数量: {{ item.quantity }}</p>
-            <p v-if="item.dailyLimit" class="text-xs text-orange-600 mb-2">
+            <p v-if="item.dailyLimit" class="text-xs text-warning mb-2">
               每日限购 {{ item.dailyLimit }} · 今日剩余 {{ userStore.shopRemainingToday(item.id, item.dailyLimit) }}
             </p>
             <p class="font-semibold text-sm mb-2">{{ item.cost.toLocaleString() }} 知识点</p>
@@ -244,11 +244,11 @@ const activeShopItems = computed((): (ShopItem & { card?: any })[] => {
                 :class="[
                   'w-full font-semibold py-2 px-3 rounded-lg text-sm transition-all duration-200',
                   isPurchasing === item.id || userStore.playerState.knowledgePoints < item.cost || userStore.shopRemainingToday(item.id, item.dailyLimit) <= 0
-                    ? 'bg-warm-300 text-gray-700 cursor-not-allowed'
-                    : item.type === 'ticket' ? 'bg-indigo-600 text-white hover:bg-indigo-700'
+                    ? 'bg-surface-2 text-ink-2 cursor-not-allowed'
+                    : item.type === 'ticket' ? 'bg-accent text-on-accent hover:bg-accent-strong'
                     : item.type === 'currency' ? 'bg-amber-600 text-white hover:bg-amber-700'
                     : item.type === 'booster' ? 'bg-purple-600 text-white hover:bg-purple-700'
-                    : 'bg-teal-primary text-white hover:bg-teal-dark'
+                    : 'bg-accent text-on-accent hover:bg-accent-strong'
                 ]"
             >
                 <span v-if="isPurchasing === item.id" class="flex items-center justify-center gap-2">
@@ -271,7 +271,7 @@ const activeShopItems = computed((): (ShopItem & { card?: any })[] => {
         </div>
       </div>
     </div>
-    <div v-else class="text-center text-gray-600 py-8">
+    <div v-else class="text-center text-ink-2 py-8">
       <p>当前类别没有可兑换的物品。</p>
     </div>
   </div>
@@ -290,26 +290,26 @@ const activeShopItems = computed((): (ShopItem & { card?: any })[] => {
   height: 8px;
 }
 .shop-grid-container::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: rgb(var(--c-surface-2));
   border-radius: 10px;
 }
 .shop-grid-container::-webkit-scrollbar-thumb {
-  background: #94a3b8;
+  background: rgb(var(--c-line-2));
   border-radius: 10px;
 }
 .shop-grid-container::-webkit-scrollbar-thumb:hover {
-  background: #475569;
+  background: rgb(var(--c-ink-3));
 }
 
 /* 商店标签页样式 */
 .shop-tab-btn {
-    @apply py-3 px-4 block hover:text-blue-500 focus:outline-none text-gray-600 font-medium text-sm border-b-2 transition-colors duration-200;
+    @apply py-3 px-4 block hover:text-accent focus:outline-none text-ink-2 font-medium text-sm border-b-2 transition-colors duration-200;
     border-bottom-color: transparent;
 }
 .shop-tab-btn.active {
-    @apply text-blue-600 border-b-blue-500;
+    @apply text-accent border-b-accent;
 }
 .shop-tab-btn:hover:not(.active) {
-    @apply text-blue-400;
+    @apply text-accent;
 }
 </style>

@@ -15,8 +15,8 @@ function handleEndTurn() {
   <button
     @click="handleEndTurn"
     :disabled="gameStore.phase !== 'action' || gameStore.activePlayer !== 'playerA'"
-    class="battle-action-btn bg-teal-primary hover:bg-teal-primary disabled:bg-warm-400 disabled:shadow-none disabled:cursor-not-allowed disabled:transform-none"
-    :class="{ 'shadow-green-500/50': gameStore.phase === 'action' && gameStore.activePlayer === 'playerA' }"
+    class="battle-action-btn bg-accent text-on-accent hover:bg-accent-strong disabled:bg-surface-2 disabled:text-ink-3 disabled:shadow-none disabled:cursor-not-allowed disabled:transform-none"
+    :class="{ 'shadow-accent/50': gameStore.phase === 'action' && gameStore.activePlayer === 'playerA' }"
   >
     结束回合
   </button>

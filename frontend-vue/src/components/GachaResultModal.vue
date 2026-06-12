@@ -28,9 +28,9 @@ function closeModal() {
     <!-- 弹窗内容 -->
     <div 
       @click.stop 
-      class="bg-white p-6 rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] flex flex-col"
+      class="bg-elevated p-6 rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] flex flex-col"
     >
-      <h2 class="text-2xl font-bold mb-4 text-center text-gray-800">抽卡结果</h2>
+      <h2 class="text-2xl font-bold mb-4 text-center text-ink">抽卡结果</h2>
       <div class="overflow-y-auto">
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
           <template v-for="card in cards" :key="card.id">
@@ -52,7 +52,7 @@ function closeModal() {
       <div class="text-center mt-6">
         <button 
           @click="closeModal" 
-          class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-indigo-700"
+          class="bg-accent text-on-accent font-bold py-2 px-6 rounded-lg hover:bg-accent-strong"
         >
           确认
         </button>

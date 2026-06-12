@@ -255,14 +255,14 @@ function handleClick() {
 /* 指示点提示 */
 .indicator-tooltip {
     @apply absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2;
-  @apply bg-warm-400 text-white text-xs px-2 py-1 rounded;
+  @apply bg-surface-2 text-ink text-xs px-2 py-1 rounded;
   @apply opacity-0 scale-75 transition-all duration-200;
   @apply whitespace-nowrap pointer-events-none;
-  
+
   &::after {
     content: '';
     @apply absolute top-full left-1/2 transform -translate-x-1/2;
-    @apply border-4 border-transparent border-t-gray-900;
+    @apply border-4 border-transparent border-t-surface-2;
   }
 }
 
@@ -272,10 +272,10 @@ function handleClick() {
   @apply text-xs px-1;
   
   .scale-label {
-    @apply text-white/40 transition-all duration-300;
-    
+    @apply text-ink-3 transition-all duration-300;
+
     &.center {
-      @apply text-white/60 font-semibold;
+      @apply text-ink-2 font-semibold;
     }
   }
 }

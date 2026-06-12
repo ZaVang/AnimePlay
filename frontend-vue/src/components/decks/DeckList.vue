@@ -28,31 +28,31 @@ const handleDeleteDeck = (deckName: string) => {
   <div>
     <div class="flex justify-between items-center mb-4">
       <h3 class="text-xl font-bold">已保存的卡组 ({{ Object.keys(userStore.savedDecks).length }})</h3>
-      <button @click="$emit('newDeck')" class="bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700">
+      <button @click="$emit('newDeck')" class="bg-accent text-on-accent font-bold py-2 px-4 rounded-lg hover:bg-accent-strong">
         创建新卡组
       </button>
     </div>
 
-    <div v-if="Object.keys(userStore.savedDecks).length === 0" class="text-center py-16 border-2 border-dashed border-warm-300 rounded-lg">
-      <p class="text-gray-600">你还没有创建任何卡组。</p>
-      <button @click="$emit('newDeck')" class="mt-4 bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700">
+    <div v-if="Object.keys(userStore.savedDecks).length === 0" class="text-center py-16 border-2 border-dashed border-line-2 rounded-lg">
+      <p class="text-ink-2">你还没有创建任何卡组。</p>
+      <button @click="$emit('newDeck')" class="mt-4 bg-accent text-on-accent font-bold py-2 px-4 rounded-lg hover:bg-accent-strong">
         立即创建
       </button>
     </div>
 
     <div v-else class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6">
-      <div v-for="deck in userStore.savedDecks" :key="deck.name" class="bg-white rounded-lg shadow-md overflow-hidden group cursor-pointer" @click="$emit('editDeck', deck.name)">
+      <div v-for="deck in userStore.savedDecks" :key="deck.name" class="bg-surface rounded-lg shadow-md overflow-hidden group cursor-pointer" @click="$emit('editDeck', deck.name)">
         <div class="relative aspect-w-1 aspect-h-2">
           <img :src="getCoverImage(deck)" class="w-full h-full object-cover" :alt="`${deck.name} cover`">
           <div class="absolute top-0 right-0 p-2 opacity-0 group-hover:opacity-100 transition-opacity">
-            <button @click.stop="handleDeleteDeck(deck.name)" class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-red-600">
+            <button @click.stop="handleDeleteDeck(deck.name)" class="bg-danger text-white rounded-full w-8 h-8 flex items-center justify-center hover:opacity-85">
               🗑️
             </button>
           </div>
         </div>
         <div class="p-4">
           <h4 class="font-bold text-lg truncate">{{ deck.name }}</h4>
-          <p class="text-sm text-gray-600">{{ deck.anime.length }} 动画 / {{ deck.character.length }} 角色</p>
+          <p class="text-sm text-ink-2">{{ deck.anime.length }} 动画 / {{ deck.character.length }} 角色</p>
         </div>
       </div>
     </div>

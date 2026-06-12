@@ -16,8 +16,8 @@ const isPlayerA = true; // Human player is always playerA
 const playerLabel = computed(() => (isPlayerA ? '我方' : '对手'));
 const opponentLabel = computed(() => (isPlayerA ? '对手' : '我方'));
 
-const playerColor = computed(() => (isPlayerA ? 'text-teal-primary' : 'text-red-400'));
-const opponentColor = computed(() => (isPlayerA ? 'text-red-400' : 'text-teal-primary'));
+const playerColor = computed(() => (isPlayerA ? 'text-accent' : 'text-red-400'));
+const opponentColor = computed(() => (isPlayerA ? 'text-red-400' : 'text-accent'));
 
 // 计算偏向百分比（用于定位指示器）
 const biasPercentage = computed(() => {
@@ -136,7 +136,7 @@ function handleClick() {
 <style scoped>
 .topic-bias-container-horizontal {
   @apply w-full h-24 flex items-center justify-between;
-  @apply bg-warm-400/80 backdrop-blur-sm rounded-xl border border-warm-400;
+  @apply bg-surface-2/80 backdrop-blur-sm rounded-xl border border-line;
   @apply p-4 relative shadow-2xl;
 }
 
@@ -147,8 +147,8 @@ function handleClick() {
 
 .bias-track-horizontal {
   @apply relative flex-1 h-12 mx-3;
-  @apply bg-cream-100 rounded-full;
-  @apply border border-warm-300;
+  @apply bg-surface rounded-full;
+  @apply border border-line;
 }
 
 .bias-gradient-horizontal {
@@ -168,7 +168,7 @@ function handleClick() {
 }
 
 .mark-horizontal {
-  @apply h-full w-px bg-warm-400;
+  @apply h-full w-px bg-line;
 }
 
 .mark-major-horizontal {

@@ -137,9 +137,9 @@ const filteredCharacterCards = computed(() => {
 <template>
   <div class="space-y-6">
     <!-- Header, Tabs, and Filters -->
-    <div class="bg-warm-300 rounded-lg shadow text-gray-800 border border-warm-300">
-      <div class="border-b border-gray-200 px-6 pt-4 pb-2">
-        <h3 class="text-xl font-bold text-gray-800 mb-3">我的收藏</h3>
+    <div class="bg-surface-2 rounded-lg shadow text-ink border border-line">
+      <div class="border-b border-line px-6 pt-4 pb-2">
+        <h3 class="text-xl font-bold text-ink mb-3">我的收藏</h3>
         <nav class="-mb-px flex space-x-6" aria-label="Collection Tabs">
           <a href="#" @click.prevent="activeTab = 'anime'" :class="['collection-tab', { 'active': activeTab === 'anime' }]">动画收藏</a>
           <a href="#" @click.prevent="activeTab = 'character'" :class="['collection-tab', { 'active': activeTab === 'character' }]">角色收藏</a>
@@ -148,31 +148,31 @@ const filteredCharacterCards = computed(() => {
       </div>
 
       <!-- Filters Section for Collections -->
-      <div v-if="activeTab !== 'decks'" class="p-6 border-b border-gray-200">
+      <div v-if="activeTab !== 'decks'" class="p-6 border-b border-line">
         <div v-if="activeTab === 'anime'">
             <div class="flex flex-wrap gap-4 items-center">
-                <input type="text" v-model="animeFilters.name" placeholder="按动画名称搜索..." class="p-2 border rounded-lg flex-grow min-w-0 text-gray-800">
-                <select v-model="animeFilters.rarity" class="p-2 border rounded-lg text-gray-800 bg-cream-100">
+                <input type="text" v-model="animeFilters.name" placeholder="按动画名称搜索..." class="p-2 border rounded-lg flex-grow min-w-0 text-ink">
+                <select v-model="animeFilters.rarity" class="p-2 border rounded-lg text-ink bg-surface">
                     <option value="">所有稀有度</option>
                     <option v-for="r in rarityOrder" :key="r" :value="r">{{ r }}</option>
                 </select>
-                <select v-model="animeFilters.tag" class="p-2 border rounded-lg text-gray-800 bg-cream-100">
+                <select v-model="animeFilters.tag" class="p-2 border rounded-lg text-ink bg-surface">
                     <option value="">所有标签</option>
                     <option v-for="tag in allAnimeTags" :key="tag" :value="tag">{{ tag }}</option>
                 </select>
-                <button @click="handleDismantleAll('anime')" :disabled="!hasDuplicateAnime" class="p-2 border rounded-lg bg-red-600 text-white disabled:bg-warm-300">
+                <button @click="handleDismantleAll('anime')" :disabled="!hasDuplicateAnime" class="p-2 border rounded-lg bg-danger text-white disabled:opacity-45">
                     一键分解重复卡
                 </button>
             </div>
         </div>
         <div v-if="activeTab === 'character'">
             <div class="flex flex-wrap gap-4 items-center">
-                <input type="text" v-model="characterFilters.name" placeholder="按角色名称搜索..." class="p-2 border rounded-lg flex-grow min-w-0 text-gray-800">
-                 <select v-model="characterFilters.rarity" class="p-2 border rounded-lg text-gray-800 bg-cream-100">
+                <input type="text" v-model="characterFilters.name" placeholder="按角色名称搜索..." class="p-2 border rounded-lg flex-grow min-w-0 text-ink">
+                 <select v-model="characterFilters.rarity" class="p-2 border rounded-lg text-ink bg-surface">
                     <option value="">所有稀有度</option>
                     <option v-for="r in rarityOrder" :key="r" :value="r">{{ r }}</option>
                 </select>
-                <button @click="handleDismantleAll('character')" :disabled="!hasDuplicateCharacters" class="p-2 border rounded-lg bg-red-600 text-white disabled:bg-warm-300">
+                <button @click="handleDismantleAll('character')" :disabled="!hasDuplicateCharacters" class="p-2 border rounded-lg bg-danger text-white disabled:opacity-45">
                     一键分解重复卡
                 </button>
             </div>
@@ -182,13 +182,13 @@ const filteredCharacterCards = computed(() => {
       <!-- Content Area -->
       <div class="p-6">
         <div v-if="!userStore.isLoggedIn" class="text-center py-12">
-          <p class="text-gray-600 text-lg font-medium">请先登录以查看您的收藏。</p>
+          <p class="text-ink-2 text-lg font-medium">请先登录以查看您的收藏。</p>
         </div>
         
         <!-- Anime Cards List -->
         <div v-else-if="activeTab === 'anime'">
           <div v-if="filteredAnimeCards.length === 0" class="text-center py-12">
-              <p class="text-gray-600 text-lg font-medium">找不到匹配的动画卡</p>
+              <p class="text-ink-2 text-lg font-medium">找不到匹配的动画卡</p>
           </div>
           <!-- 虚拟化版本 -->
           <VirtualGrid
@@ -213,7 +213,7 @@ const filteredCharacterCards = computed(() => {
         <!-- Character Cards List -->
         <div v-else-if="activeTab === 'character'">
            <div v-if="filteredCharacterCards.length === 0" class="text-center py-12">
-              <p class="text-gray-600 text-lg font-medium">找不到匹配的角色卡</p>
+              <p class="text-ink-2 text-lg font-medium">找不到匹配的角色卡</p>
            </div>
           <!-- 虚拟化版本 -->
           <VirtualGrid
@@ -256,10 +256,10 @@ const filteredCharacterCards = computed(() => {
 
 <style scoped>
 .collection-tab {
-  @apply whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm border-transparent text-gray-600 hover:text-gray-700 hover:border-warm-300;
+  @apply whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm border-transparent text-ink-2 hover:text-ink hover:border-line-2;
 }
 .collection-tab.active {
-  @apply border-indigo-500 text-indigo-600;
+  @apply border-accent text-accent;
 }
 </style>
 

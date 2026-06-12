@@ -57,9 +57,9 @@ function getBondLevel(affection: number) {
   if (affection >= 800) return { level: '深度羁绊', color: 'text-red-400', icon: '🌟' };
   if (affection >= 600) return { level: '信任伙伴', color: 'text-purple-400', icon: '💜' };
   if (affection >= 400) return { level: '亲密战友', color: 'text-blue-400', icon: '💙' };
-  if (affection >= 200) return { level: '熟悉伙伴', color: 'text-teal-primary', icon: '💚' };
+  if (affection >= 200) return { level: '熟悉伙伴', color: 'text-accent', icon: '💚' };
   if (affection >= 100) return { level: '初步羁绊', color: 'text-yellow-400', icon: '💛' };
-  return { level: '初次相遇', color: 'text-gray-600', icon: '🤝' };
+  return { level: '初次相遇', color: 'text-ink-2', icon: '🤝' };
 }
 
 function handleSelect(characterId: number) {
@@ -97,38 +97,38 @@ function handleSelect(characterId: number) {
 
   <!-- 角色选择模态框 -->
   <div v-if="isModalOpen" class="fixed inset-0 bg-black/75 flex items-center justify-center z-50 p-4" @click.self="isModalOpen = false">
-    <div class="bg-cream-100 p-6 rounded-lg shadow-xl max-w-4xl w-full border border-warm-400">
+    <div class="bg-elevated p-6 rounded-lg shadow-xl max-w-4xl w-full border border-line-2">
       <div class="flex justify-between items-center mb-4">
-        <h2 class="text-2xl font-bold text-white flex items-center">
+        <h2 class="text-2xl font-bold text-ink flex items-center">
           <svg class="w-6 h-6 mr-2 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
           </svg>
           选择养成角色
         </h2>
-        <button @click="isModalOpen = false" class="text-gray-600 hover:text-white text-2xl font-bold">&times;</button>
+        <button @click="isModalOpen = false" class="text-ink-2 hover:text-ink text-2xl font-bold">&times;</button>
       </div>
       
       <div class="max-h-[60vh] overflow-y-auto pr-2">
         <!-- 没有角色时的提示 -->
         <div v-if="availableCharacters.length === 0" class="text-center py-12">
-          <svg class="w-16 h-16 mx-auto mb-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-16 h-16 mx-auto mb-4 text-ink-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
           </svg>
-          <h3 class="text-lg font-medium text-gray-600 mb-2">暂无可养成角色</h3>
-          <p class="text-gray-600 text-sm">去抽取一些角色卡吧！</p>
+          <h3 class="text-lg font-medium text-ink-2 mb-2">暂无可养成角色</h3>
+          <p class="text-ink-2 text-sm">去抽取一些角色卡吧！</p>
         </div>
 
         <!-- 角色网格 -->
         <div v-else>
-          <div class="mb-4 text-sm text-gray-600">
+          <div class="mb-4 text-sm text-ink-2">
             {{ availableCharacters.length }} 个角色可进行养成
           </div>
           <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
             <div 
               v-for="character in availableCharacters" 
               :key="character.id"
-              class="relative group cursor-pointer nurture-card bg-warm-300 rounded-lg p-3 border-2 transition-all duration-300 hover:border-pink-400 hover:bg-warm-400"
+              class="relative group cursor-pointer nurture-card bg-surface-2 rounded-lg p-3 border-2 transition-all duration-300 hover:border-pink-400 hover:bg-surface-2"
               @click="handleSelect(character.id)"
             >
               <!-- 角色头像 -->
@@ -142,7 +142,7 @@ function handleSelect(characterId: number) {
               </div>
 
               <!-- 角色名称 -->
-              <h4 class="text-sm font-medium text-white truncate mb-1">{{ character.name }}</h4>
+              <h4 class="text-sm font-medium text-ink truncate mb-1">{{ character.name }}</h4>
 
               <!-- 等级和羁绊等级 -->
               <div class="space-y-1">

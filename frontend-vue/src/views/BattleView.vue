@@ -170,21 +170,21 @@ function handleExitBattle() {
             <button
                 v-if="gameStore.phase === 'defense' && gameStore.activePlayer === 'playerB'"
                 @click="handleSkipTurn"
-                class="battle-action-btn bg-yellow-600 hover:bg-yellow-700"
+                class="battle-action-btn bg-warning text-white hover:opacity-90"
                 title="跳过当前防御阶段"
             >
                 跳过防御
             </button>
             <button
                 @click="showRulesModal = true"
-                class="battle-action-btn bg-blue-600 hover:bg-blue-700"
+                class="battle-action-btn bg-info text-white hover:opacity-90"
                 title="查看战斗规则详解"
             >
                 📋 规则
             </button>
             <button
                 @click="handleExitBattle"
-                class="battle-action-btn bg-red-600 hover:bg-red-700"
+                class="battle-action-btn bg-danger text-white hover:opacity-90"
                 title="退出当前战斗，进度将不会保存"
             >
                 退出战斗
@@ -207,8 +207,8 @@ function handleExitBattle() {
             <span class="reward-chip">+{{ gameStore.lastMatchRewards.knowledge }} 知识点</span>
           </div>
           <div class="result-actions">
-            <button class="battle-action-btn bg-teal-primary hover:opacity-90" @click="handlePlayAgain">再来一局</button>
-            <button class="battle-action-btn bg-warm-400 hover:opacity-90" @click="handleGoHome">返回主页</button>
+            <button class="battle-action-btn bg-accent text-on-accent hover:opacity-90" @click="handlePlayAgain">再来一局</button>
+            <button class="battle-action-btn bg-surface-2 text-ink hover:opacity-90" @click="handleGoHome">返回主页</button>
           </div>
         </div>
       </div>
@@ -218,7 +218,7 @@ function handleExitBattle() {
 
 <style scoped>
 .battle-view {
-  @apply bg-warm-400 text-white min-h-screen w-full h-full overflow-hidden;
+  @apply text-ink min-h-screen w-full h-full overflow-hidden;
 }
 .deck-selector-wrapper {
   @apply w-full h-full flex items-center justify-center;
@@ -237,7 +237,7 @@ function handleExitBattle() {
 }
 
 .log-container {
-    @apply h-full bg-cream-100/50 rounded-lg p-2 overflow-hidden border border-warm-400 relative; /* Add relative positioning */
+    @apply h-full bg-surface/50 rounded-lg p-2 overflow-hidden border border-line relative; /* Add relative positioning */
     flex: 0 1 250px; /* Do not grow, shrink if needed, initial width 250px */
     min-height: 0; /* Important fix for flex-child scrolling */
 }
@@ -251,7 +251,7 @@ function handleExitBattle() {
 }
 
 .clash-zone-container {
-    @apply h-full min-h-[18rem] bg-cream-100/50 rounded-lg p-2 overflow-hidden border border-warm-400;
+    @apply h-full min-h-[18rem] bg-surface/50 rounded-lg p-2 overflow-hidden border border-line;
     flex: 1 1 auto; /* Grow to fill available space */
 }
 
@@ -262,7 +262,7 @@ function handleExitBattle() {
 
 /* 统一战斗操作按钮样式 */
 .battle-action-btn {
-    @apply px-6 py-3 rounded-lg text-white font-semibold transition-all duration-200 min-w-[120px] text-center;
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-200 min-w-[120px] text-center;
 }
 
 /* S6: 整场结算面板 */
@@ -272,8 +272,8 @@ function handleExitBattle() {
 }
 .battle-result-card {
   @apply rounded-2xl px-10 py-8 text-center shadow-2xl;
-  background: var(--theme-bg-secondary, #fff);
-  color: var(--theme-text-primary, #333);
+  background: rgb(var(--c-elevated));
+  color: rgb(var(--c-ink));
   min-width: 320px;
 }
 .result-title {
@@ -287,7 +287,7 @@ function handleExitBattle() {
 }
 .reward-chip {
   @apply px-3 py-1 rounded-full text-sm font-semibold;
-  background: var(--theme-accent, #e8b84a);
+  background: rgb(var(--c-highlight));
   color: #fff;
 }
 .result-actions {

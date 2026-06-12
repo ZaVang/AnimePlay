@@ -129,7 +129,7 @@ function handleBubbleClick() {
         <div class="flex items-center gap-2">
           <div 
             v-if="character.avatar" 
-            class="w-6 h-6 rounded-full bg-warm-200 flex-shrink-0"
+            class="w-6 h-6 rounded-full bg-surface-2 flex-shrink-0"
             :style="{ backgroundImage: `url(${character.avatar})`, backgroundSize: 'cover' }"
           ></div>
           <span class="text-xs font-semibold opacity-80">{{ character.name }}</span>

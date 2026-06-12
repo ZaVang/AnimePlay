@@ -588,46 +588,46 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-warm-400 py-8">
+  <div class="min-h-screen py-8">
     <div class="container mx-auto px-4">
       
       <!-- 页面标题 -->
       <div class="text-center mb-8">
-        <h1 class="text-4xl font-bold text-white mb-2">挑战塔</h1>
-        <p class="text-gray-600">逐层挑战，难度递增，证明你的实力！</p>
+        <h1 class="text-4xl font-bold text-ink mb-2">挑战塔</h1>
+        <p class="text-ink-2">逐层挑战，难度递增，证明你的实力！</p>
       </div>
       
       <!-- 未登录状态 -->
       <div v-if="!userStore.isLoggedIn" class="text-center py-20">
-        <h2 class="text-2xl font-bold text-gray-600 mb-4">请先登录</h2>
-        <p class="text-gray-600">登录后即可参与爬塔挑战</p>
+        <h2 class="text-2xl font-bold text-ink-2 mb-4">请先登录</h2>
+        <p class="text-ink-2">登录后即可参与爬塔挑战</p>
       </div>
 
       <!-- 爬塔模式界面 -->
       <div v-else-if="currentPhase === 'towerMode'" class="space-y-6">
 
         <!-- 爬塔信息面板 -->
-        <div class="bg-cream-100 rounded-lg p-6 border border-warm-400">
+        <div class="bg-surface rounded-lg p-6 border border-line">
           <div class="grid md:grid-cols-3 gap-6">
             <!-- 当前进度 -->
             <div class="text-center">
-              <h3 class="text-lg font-bold text-white mb-2">当前进度</h3>
-              <div class="text-3xl font-bold text-teal-primary mb-2">第 {{ currentTowerFloor }} 层</div>
-              <div class="text-sm text-gray-600">历史最高：{{ userStore.towerProgress.maxFloor }} 层</div>
+              <h3 class="text-lg font-bold text-ink mb-2">当前进度</h3>
+              <div class="text-3xl font-bold text-accent mb-2">第 {{ currentTowerFloor }} 层</div>
+              <div class="text-sm text-ink-2">历史最高：{{ userStore.towerProgress.maxFloor }} 层</div>
             </div>
             
             <!-- 层数状态 -->
             <div class="text-center">
-              <h3 class="text-lg font-bold text-white mb-2">层数状态</h3>
+              <h3 class="text-lg font-bold text-ink mb-2">层数状态</h3>
               <div class="text-2xl font-bold text-blue-400 mb-2">
                 {{ userStore.hasCompletedFloor(currentTowerFloor) ? '已通过' : '未挑战' }}
               </div>
-              <div class="text-sm text-gray-600">每层只能挑战一次，无次数限制</div>
+              <div class="text-sm text-ink-2">每层只能挑战一次，无次数限制</div>
             </div>
             
             <!-- 当前敌人信息 -->
             <div class="text-center">
-              <h3 class="text-lg font-bold text-white mb-2">当前层敌人</h3>
+              <h3 class="text-lg font-bold text-ink mb-2">当前层敌人</h3>
               <div v-if="!towerEnemyData" class="space-y-2">
                 <button 
                   @click="refreshTowerEnemies"
@@ -638,14 +638,14 @@ onBeforeUnmount(() => {
               </div>
               <div v-else class="space-y-2">
                 <div class="font-bold text-red-400">{{ towerEnemyData.name }}</div>
-                <div class="text-sm text-gray-600">{{ towerEnemyData.description }}</div>
+                <div class="text-sm text-ink-2">{{ towerEnemyData.description }}</div>
                 <div class="text-lg font-bold text-yellow-400">
                   战力: {{ towerEnemyData.floorPower }}
                 </div>
                 <div class="text-sm mb-2">
                   <span class="px-2 py-1 rounded text-xs font-bold"
                         :class="{
-                          'bg-teal-primary text-white': towerEnemyData.difficulty === '简单',
+                          'bg-accent text-on-accent': towerEnemyData.difficulty === '简单',
                           'bg-yellow-500 text-black': towerEnemyData.difficulty === '中等',
                           'bg-red-500 text-white': towerEnemyData.difficulty === '困难',
                           'bg-purple-500 text-white': towerEnemyData.difficulty === '极难'
@@ -665,24 +665,24 @@ onBeforeUnmount(() => {
         </div>
 
         <!-- 选择挑战小队 -->
-        <div class="bg-cream-100 rounded-lg p-6 border border-warm-400">
-          <h3 class="text-xl font-bold text-white mb-4">选择挑战小队</h3>
+        <div class="bg-surface rounded-lg p-6 border border-line">
+          <h3 class="text-xl font-bold text-ink mb-4">选择挑战小队</h3>
           
           <div class="grid md:grid-cols-3 gap-6">
             <div 
               v-for="squad in userStore.presetSquads" 
               :key="squad.id"
-              class="bg-warm-300 rounded-lg p-4 border border-warm-300"
+              class="bg-surface-2 rounded-lg p-4 border border-line"
             >
               <!-- 小队名称和成员数 -->
               <div class="flex items-center justify-between mb-3">
                 <input 
                   :value="squad.name"
                   @change="updateSquadName(squad.id, ($event.target as HTMLInputElement).value)"
-                  class="font-bold text-white bg-transparent border border-transparent hover:border-warm-300 rounded px-2 py-1 transition-colors"
+                  class="font-bold text-ink bg-transparent border border-transparent hover:border-line rounded px-2 py-1 transition-colors"
                   maxlength="20"
                 >
-                <div class="text-sm text-gray-600">{{ getSquadMemberCount(squad.id) }}/4</div>
+                <div class="text-sm text-ink-2">{{ getSquadMemberCount(squad.id) }}/4</div>
               </div>
               
               <!-- 小队成员预览 -->
@@ -691,8 +691,8 @@ onBeforeUnmount(() => {
                   v-for="position in 4" 
                   :key="position"
                   @click="openCharacterSelect(squad.id, position - 1)"
-                  class="relative bg-warm-400 rounded border-2 cursor-pointer hover:border-blue-500 transition-colors overflow-hidden"
-                  :class="squad.members[position - 1] ? 'border-green-500' : 'border-warm-300 border-dashed'"
+                  class="relative bg-surface-2 rounded border-2 cursor-pointer hover:border-blue-500 transition-colors overflow-hidden"
+                  :class="squad.members[position - 1] ? 'border-green-500' : 'border-line border-dashed'"
                   style="aspect-ratio: 2/3; width: 50px; height: 75px;"
                 >
                   <div v-if="squad.members[position - 1]" class="absolute inset-0">
@@ -707,7 +707,7 @@ onBeforeUnmount(() => {
                       {{ position }}
                     </div>
                   </div>
-                  <div v-else class="absolute inset-0 flex flex-col items-center justify-center text-gray-600">
+                  <div v-else class="absolute inset-0 flex flex-col items-center justify-center text-ink-2">
                     <div class="text-lg mb-1">+</div>
                     <div class="text-xs">{{ position }}</div>
                   </div>
@@ -716,7 +716,7 @@ onBeforeUnmount(() => {
               
               <!-- 小队战力 -->
               <div class="mb-3 text-sm">
-                <span class="text-gray-600">战力:</span>
+                <span class="text-ink-2">战力:</span>
                 <span class="text-yellow-400 font-bold ml-1">{{ getSquadPower(squad.id) }}</span>
               </div>
               
@@ -724,7 +724,7 @@ onBeforeUnmount(() => {
               <button 
                 @click="startTowerBattle(squad.id)"
                 :disabled="getSquadMemberCount(squad.id) < 4 || userStore.hasCompletedFloor(currentTowerFloor) || !towerEnemyData"
-                class="w-full px-4 py-2 bg-teal-primary hover:bg-teal-dark disabled:bg-warm-400 disabled:cursor-not-allowed text-white font-bold rounded-lg transition-colors"
+                class="w-full px-4 py-2 bg-accent hover:bg-accent-strong disabled:opacity-45 disabled:cursor-not-allowed text-on-accent font-bold rounded-lg transition-colors"
               >
                 <span v-if="getSquadMemberCount(squad.id) === 0">需要角色</span>
                 <span v-else-if="getSquadMemberCount(squad.id) < 4">需要4人满编 ({{ getSquadMemberCount(squad.id) }}/4)</span>
@@ -742,7 +742,7 @@ onBeforeUnmount(() => {
             <div class="text-blue-400 text-xl">🏗️</div>
             <div>
               <h3 class="text-blue-400 font-bold mb-2">爬塔规则</h3>
-              <ul class="text-sm text-gray-600 space-y-1">
+              <ul class="text-sm text-ink-2 space-y-1">
                 <li>• 每层敌人战力和稀有度都会递增</li>
                 <li>• 胜利可获得大量经验和知识点奖励</li>
                 <li>• 每日最多挑战10次</li>
@@ -758,9 +758,9 @@ onBeforeUnmount(() => {
       <div v-else-if="currentPhase === 'battle'" class="space-y-6">
         
         <!-- 战斗场地 -->
-        <div class="bg-cream-100 rounded-lg p-6 border border-warm-400">
+        <div class="bg-surface rounded-lg p-6 border border-line">
           <div class="flex justify-between items-center mb-6">
-            <h2 class="text-xl font-bold text-white">第 {{ currentTurn + 1 }} 回合</h2>
+            <h2 class="text-xl font-bold text-ink">第 {{ currentTurn + 1 }} 回合</h2>
             <div class="text-lg font-bold" :class="isPlayerTurn ? 'text-blue-400' : 'text-red-400'">
               {{ isPlayerTurn ? '你的回合' : '敌方回合' }}
             </div>
@@ -779,14 +779,14 @@ onBeforeUnmount(() => {
                   class="flex items-center space-x-4 p-3 rounded-lg"
                   :class="{
                     'bg-blue-900/20 border border-blue-500': index === 0 && !member.isDefeated,
-                    'bg-warm-300/50': member.isDefeated,
-                    'bg-cream-100': index > 0 && !member.isDefeated
+                    'bg-surface-2/50': member.isDefeated,
+                    'bg-surface': index > 0 && !member.isDefeated
                   }"
                 >
                   <!-- 角色头像 -->
                   <div class="relative">
                     <div class="w-16 h-16 rounded-full overflow-hidden border-2"
-                         :class="member.isDefeated ? 'border-warm-300' : 'border-blue-400'">
+                         :class="member.isDefeated ? 'border-line' : 'border-blue-400'">
                       <img 
                         :src="member.character.image_path"
                         :alt="member.character.name"
@@ -806,20 +806,20 @@ onBeforeUnmount(() => {
                   </div>
                   
                   <div class="flex-1">
-                    <div class="font-medium" :class="member.isDefeated ? 'text-gray-600' : 'text-white'">
+                    <div class="font-medium" :class="member.isDefeated ? 'text-ink-2' : 'text-ink'">
                       {{ member.character.name }}
                     </div>
                     
                     <!-- 血条 -->
-                    <div class="w-full bg-warm-400 rounded-full h-2 mt-1">
+                    <div class="w-full bg-surface-2 rounded-full h-2 mt-1">
                       <div 
                         class="h-full rounded-full transition-all duration-500"
-                        :class="member.isDefeated ? 'bg-red-600' : 'bg-teal-primary'"
+                        :class="member.isDefeated ? 'bg-red-600' : 'bg-accent'"
                         :style="{ width: `${getHPPercentage(member)}%` }"
                       ></div>
                     </div>
                     
-                    <div class="text-xs" :class="member.isDefeated ? 'text-gray-600' : 'text-gray-600'">
+                    <div class="text-xs" :class="member.isDefeated ? 'text-ink-2' : 'text-ink-2'">
                       {{ member.currentHP }}/{{ member.maxHP }} HP
                     </div>
                   </div>
@@ -837,14 +837,14 @@ onBeforeUnmount(() => {
                   class="flex items-center space-x-4 p-3 rounded-lg"
                   :class="{
                     'bg-red-900/20 border border-red-500': index === 0 && !member.isDefeated,
-                    'bg-warm-300/50': member.isDefeated,
-                    'bg-cream-100': index > 0 && !member.isDefeated
+                    'bg-surface-2/50': member.isDefeated,
+                    'bg-surface': index > 0 && !member.isDefeated
                   }"
                 >
                   <!-- 敌人角色头像 -->
                   <div class="relative">
                     <div class="w-16 h-16 rounded-full overflow-hidden border-2"
-                         :class="member.isDefeated ? 'border-warm-300' : 'border-red-400'">
+                         :class="member.isDefeated ? 'border-line' : 'border-red-400'">
                       <!-- 显示真实角色头像 -->
                       <img 
                         :src="member.character.image_path"
@@ -865,20 +865,20 @@ onBeforeUnmount(() => {
                   </div>
                   
                   <div class="flex-1">
-                    <div class="font-medium" :class="member.isDefeated ? 'text-gray-600' : 'text-white'">
+                    <div class="font-medium" :class="member.isDefeated ? 'text-ink-2' : 'text-ink'">
                       {{ member.character.name }}
                     </div>
                     
                     <!-- 血条 -->
-                    <div class="w-full bg-warm-400 rounded-full h-2 mt-1">
+                    <div class="w-full bg-surface-2 rounded-full h-2 mt-1">
                       <div 
                         class="h-full rounded-full transition-all duration-500"
-                        :class="member.isDefeated ? 'bg-red-600' : 'bg-teal-primary'"
+                        :class="member.isDefeated ? 'bg-red-600' : 'bg-accent'"
                         :style="{ width: `${getHPPercentage(member)}%` }"
                       ></div>
                     </div>
                     
-                    <div class="text-xs" :class="member.isDefeated ? 'text-gray-600' : 'text-gray-600'">
+                    <div class="text-xs" :class="member.isDefeated ? 'text-ink-2' : 'text-ink-2'">
                       {{ member.currentHP }}/{{ member.maxHP }} HP
                     </div>
                   </div>
@@ -905,13 +905,13 @@ onBeforeUnmount(() => {
         </div>
         
         <!-- 战斗日志 -->
-        <div class="bg-cream-100 rounded-lg p-6 border border-warm-400">
-          <h3 class="text-lg font-bold text-white mb-4">战斗日志</h3>
+        <div class="bg-surface rounded-lg p-6 border border-line">
+          <h3 class="text-lg font-bold text-ink mb-4">战斗日志</h3>
           <div class="max-h-40 overflow-y-auto space-y-1">
             <div 
               v-for="(log, index) in battleLog.slice().reverse()"
               :key="index"
-              class="text-sm text-gray-600 p-2 bg-warm-300/30 rounded"
+              class="text-sm text-ink-2 p-2 bg-surface-2/30 rounded"
             >
               {{ log }}
             </div>
@@ -921,12 +921,12 @@ onBeforeUnmount(() => {
       
       <!-- 结果阶段 -->
       <div v-else-if="currentPhase === 'result'" class="text-center space-y-6">
-        <div class="bg-cream-100 rounded-lg p-8 border border-warm-400">
+        <div class="bg-surface rounded-lg p-8 border border-line">
           <div class="text-6xl mb-4">
             {{ battleResult === 'victory' ? '🎉' : '💔' }}
           </div>
           
-          <h2 class="text-3xl font-bold mb-4" :class="battleResult === 'victory' ? 'text-teal-primary' : 'text-red-400'">
+          <h2 class="text-3xl font-bold mb-4" :class="battleResult === 'victory' ? 'text-accent' : 'text-red-400'">
             {{ battleResult === 'victory' ? '胜利！' : '失败...' }}
           </h2>
           
@@ -934,7 +934,7 @@ onBeforeUnmount(() => {
             <div 
               v-for="(log, index) in battleLog.slice(-5)"
               :key="index"
-              class="text-gray-600"
+              class="text-ink-2"
             >
               {{ log }}
             </div>
@@ -951,7 +951,7 @@ onBeforeUnmount(() => {
             <button 
               v-if="selectedSquadForBattle && battleResult === 'defeat'"
               @click="startTowerBattle(selectedSquadForBattle)"
-              class="px-6 py-3 bg-teal-primary hover:bg-teal-dark text-white font-bold rounded-lg transition-colors"
+              class="px-6 py-3 bg-accent hover:bg-accent-strong text-on-accent font-bold rounded-lg transition-colors"
             >
               再次挑战
             </button>
@@ -976,7 +976,7 @@ onBeforeUnmount(() => {
 
 <style scoped>
 /* 小队选择卡片动画 */
-.bg-cream-100:hover {
+.bg-surface:hover {
   transform: translateY(-2px);
   transition: transform 0.2s ease;
 }

@@ -6,17 +6,17 @@
   >
     <div
       @click.stop
-      class="bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] flex flex-col text-gray-800 mx-4"
+      class="bg-elevated rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] flex flex-col text-ink mx-4"
     >
       <!-- Header -->
-      <div class="flex justify-between items-start p-6 border-b border-gray-200">
+      <div class="flex justify-between items-start p-6 border-b border-line">
         <div>
           <h2 class="text-2xl font-bold">{{ title }}</h2>
-          <p v-if="subtitle" class="text-gray-600 mt-1">{{ subtitle }}</p>
+          <p v-if="subtitle" class="text-ink-2 mt-1">{{ subtitle }}</p>
         </div>
-        <button 
-          @click="close" 
-          class="text-2xl text-gray-600 hover:text-gray-800"
+        <button
+          @click="close"
+          class="text-2xl text-ink-2 hover:text-ink"
         >
           &times;
         </button>
@@ -28,7 +28,7 @@
           <div
             v-for="(card, index) in cards"
             :key="`${card.id}-${index}`"
-            class="relative rounded-lg overflow-hidden border-2 border-gray-200 transition-all duration-200 hover:border-warm-300 hover:shadow-md"
+            class="relative rounded-lg overflow-hidden border-2 border-line transition-all duration-200 hover:border-line-2 hover:shadow-md"
           >
             <img 
               :src="card.image_path"
@@ -40,7 +40,7 @@
             <!-- Card Info Overlay -->
             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-2">
               <p class="text-white text-xs font-bold truncate">{{ card.name }}</p>
-              <div class="flex justify-between items-center text-gray-600 text-xs mt-1">
+              <div class="flex justify-between items-center text-white/80 text-xs mt-1">
                 <span>费用: {{ card.cost }}</span>
                 <span v-if="card.synergy_tags && card.synergy_tags.length > 0" class="truncate ml-2">
                   {{ card.synergy_tags[0] }}
@@ -51,7 +51,7 @@
             <!-- Card Effect Summary (if available) -->
             <div 
               v-if="card.effectDescription"
-              class="absolute top-2 left-2 bg-blue-500/80 text-white text-xs px-2 py-1 rounded"
+              class="absolute top-2 left-2 bg-accent/80 text-on-accent text-xs px-2 py-1 rounded"
             >
               效果
             </div>
@@ -59,13 +59,13 @@
         </div>
         
         <div v-if="cards.length === 0" class="text-center py-12">
-          <p class="text-gray-600 text-lg">{{ emptyMessage || '没有卡牌可显示' }}</p>
+          <p class="text-ink-2 text-lg">{{ emptyMessage || '没有卡牌可显示' }}</p>
         </div>
       </div>
 
       <!-- Footer -->
-      <div class="border-t border-gray-200 p-6 flex justify-between items-center">
-        <div class="text-sm text-gray-600">
+      <div class="border-t border-line p-6 flex justify-between items-center">
+        <div class="text-sm text-ink-2">
           共 {{ cards.length }} 张卡牌
           <span v-if="showTypes && cardTypes.length > 0" class="ml-4">
             类型: {{ cardTypes.join(', ') }}
@@ -73,7 +73,7 @@
         </div>
         <button
           @click="close"
-          class="px-6 py-2 bg-warm-400 text-white rounded-lg hover:bg-warm-300"
+          class="btn-secondary"
         >
           确定
         </button>

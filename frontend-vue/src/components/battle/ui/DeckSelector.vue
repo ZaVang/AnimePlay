@@ -60,10 +60,10 @@ function handleRandomClick() {
 <template>
   <div class="deck-selector-container">
     <div class="flex items-center justify-center mb-8">
-      <h2 class="text-3xl font-bold text-center text-white">请选择您的出战卡组</h2>
-      <button 
-        @click="showRulesModal = true" 
-        class="ml-4 px-3 py-1 text-sm bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
+      <h2 class="text-3xl font-bold text-center text-ink">请选择您的出战卡组</h2>
+      <button
+        @click="showRulesModal = true"
+        class="ml-4 px-3 py-1 text-sm bg-accent text-on-accent rounded-full hover:bg-accent-strong transition-colors"
         title="查看战斗规则"
       >
         📋 规则详解
@@ -71,25 +71,25 @@ function handleRandomClick() {
     </div>
     <div class="ai-selection-section mb-8">
       <div class="flex items-center justify-center gap-3 mb-4">
-        <label class="text-white text-lg font-semibold">AI 对手：</label>
-        <select v-model="selectedAIId" class="p-3 rounded-lg bg-cream-100 text-white border border-warm-300 min-w-48">
+        <label class="text-ink text-lg font-semibold">AI 对手：</label>
+        <select v-model="selectedAIId" class="p-3 rounded-lg bg-surface-2 text-ink border border-line min-w-48">
           <option v-for="p in aiProfiles" :key="p.id" :value="p.id">{{ p.name }}</option>
         </select>
       </div>
-      <div v-if="selectedAI" class="ai-info bg-cream-100/50 rounded-lg p-4 max-w-md mx-auto">
-        <p class="text-gray-600 text-center mb-2">{{ selectedAI.description }}</p>
+      <div v-if="selectedAI" class="ai-info bg-surface-2/50 rounded-lg p-4 max-w-md mx-auto">
+        <p class="text-ink-2 text-center mb-2">{{ selectedAI.description }}</p>
         <div class="flex justify-center gap-4 text-sm">
-          <span class="text-blue-400">
+          <span class="text-info">
             🎴 卡组: {{ selectedAI.anime.length > 0 ? '固定' : '随机' }}
           </span>
-          <span class="text-purple-400">
+          <span class="text-accent">
             👤 角色: {{ selectedAI.character.length > 0 ? '固定' : '随机' }}
           </span>
         </div>
       </div>
     </div>
     <div v-if="Object.keys(userStore.savedDecks).length === 0" class="text-center">
-      <p class="text-gray-600">没有找到已保存的卡组。</p>
+      <p class="text-ink-2">没有找到已保存的卡组。</p>
       <button @click="handleRandomClick" class="btn-primary mt-4">使用随机卡组开始</button>
     </div>
     <div v-else>
@@ -97,15 +97,15 @@ function handleRandomClick() {
         <div
           v-for="deck in userStore.savedDecks"
           :key="deck.name"
-          class="bg-cream-100 rounded-lg shadow-lg overflow-hidden group cursor-pointer border-2 border-transparent hover:border-yellow-400 transition-all"
+          class="bg-surface rounded-lg shadow-lg overflow-hidden group cursor-pointer border-2 border-transparent hover:border-highlight transition-all"
           @click="handleDeckClick(deck)"
         >
-          <div class="relative aspect-w-10 aspect-h-12 bg-warm-300">
+          <div class="relative aspect-w-10 aspect-h-12 bg-surface-2">
             <img :src="getCoverImage(deck)" class="w-full h-full object-cover" :alt="`${deck.name} cover`" />
           </div>
           <div class="p-4">
-            <h4 class="font-bold text-lg truncate text-white">{{ deck.name }}</h4>
-            <p class="text-sm text-gray-600">{{ deck.anime.length }} 动画 / {{ deck.character.length }} 角色</p>
+            <h4 class="font-bold text-lg truncate text-ink">{{ deck.name }}</h4>
+            <p class="text-sm text-ink-2">{{ deck.anime.length }} 动画 / {{ deck.character.length }} 角色</p>
           </div>
         </div>
       </div>
@@ -128,10 +128,5 @@ function handleRandomClick() {
   margin: 0 auto;
   padding: 2rem;
 }
-.btn-primary {
-  @apply bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors;
-}
-.btn-secondary {
-  @apply bg-warm-400 text-white font-bold py-2 px-4 rounded-lg hover:bg-warm-300 transition-colors;
-}
+/* .btn-primary / .btn-secondary 使用 main.css 全局组件类（语义令牌），不再本地覆写颜色 */
 </style>

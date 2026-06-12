@@ -18,10 +18,10 @@ function timeAgo(timestamp: number): string {
 }
 
 const logTypeStyles = {
-  info: 'bg-warm-300 text-gray-600',
-  success: 'bg-green-800 text-green-300',
-  warning: 'bg-yellow-800 text-yellow-300',
-  gacha: 'bg-purple-800 text-purple-300',
+  info: 'bg-surface-2 text-ink-2',
+  success: 'bg-success/15 text-success',
+  warning: 'bg-warning/15 text-warning',
+  gacha: 'bg-purple-500/15 text-purple-500',
 };
 
 const logTypeIcon = {
@@ -34,10 +34,10 @@ const logTypeIcon = {
 </script>
 
 <template>
-  <div class="bg-cream-100 p-6 rounded-lg shadow-lg border border-warm-400 h-full flex flex-col">
-    <h2 class="text-2xl font-bold text-white mb-4">系统日志</h2>
+  <div class="bg-surface p-6 rounded-lg shadow-lg border border-line h-full flex flex-col">
+    <h2 class="text-2xl font-bold text-ink mb-4">系统日志</h2>
     <div class="flex-1 overflow-y-auto pr-2 space-y-2 max-h-[640px]">
-      <div v-if="userStore.logs.length === 0" class="text-center text-gray-600 pt-8">
+      <div v-if="userStore.logs.length === 0" class="text-center text-ink-2 pt-8">
         暂无任何系统日志。
       </div>
       <div v-else v-for="(log, index) in userStore.logs" :key="log.timestamp + '-' + index" 
@@ -46,7 +46,7 @@ const logTypeIcon = {
         <span class="mt-1">{{ logTypeIcon[log.type] }}</span>
         <div class="flex-1">
           <p>{{ log.message }}</p>
-          <p class="text-xs text-gray-600 opacity-75 mt-1">{{ timeAgo(log.timestamp) }}</p>
+          <p class="text-xs text-ink-2 opacity-75 mt-1">{{ timeAgo(log.timestamp) }}</p>
         </div>
       </div>
     </div>
@@ -59,14 +59,14 @@ const logTypeIcon = {
   width: 6px;
 }
 .overflow-y-auto::-webkit-scrollbar-track {
-  background: #374151; /* gray-700 */
+  background: rgb(var(--c-surface-2));
   border-radius: 10px;
 }
 .overflow-y-auto::-webkit-scrollbar-thumb {
-  background: #4b5563; /* gray-600 */
+  background: rgb(var(--c-line));
   border-radius: 10px;
 }
 .overflow-y-auto::-webkit-scrollbar-thumb:hover {
-  background: #6b7280; /* gray-500 */
+  background: rgb(var(--c-line-2));
 }
 </style>

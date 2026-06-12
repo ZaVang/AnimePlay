@@ -80,64 +80,64 @@ const battleResults = computed(() => [
 
 <template>
   <div v-if="show" @click.self="emit('close')" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4">
-    <div class="bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] flex flex-col">
-      <div class="p-6 border-b border-gray-200">
-        <h2 class="text-2xl font-bold text-center text-gray-800">🎯 宅理论战 - 战斗规则详解</h2>
+    <div class="bg-elevated rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] flex flex-col">
+      <div class="p-6 border-b border-line">
+        <h2 class="text-2xl font-bold text-center text-ink">🎯 宅理论战 - 战斗规则详解</h2>
       </div>
 
       <div class="p-6 overflow-y-auto flex-1">
         <div class="space-y-8">
           <!-- 基础规则 -->
           <section>
-            <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
+            <h3 class="text-lg font-bold text-ink mb-4 flex items-center">
               <span class="w-6 h-6 bg-blue-500 text-white rounded-full text-sm flex items-center justify-center mr-2">1</span>
               基础规则
             </h3>
             <div class="grid md:grid-cols-2 gap-4">
-              <div v-for="rule in battleMechanics" :key="rule.title" class="bg-warm-50 rounded-lg p-4">
-                <h4 class="font-semibold text-gray-700 mb-2">{{ rule.title }}</h4>
-                <p class="text-sm text-gray-600">{{ rule.content }}</p>
+              <div v-for="rule in battleMechanics" :key="rule.title" class="bg-surface-2 rounded-lg p-4">
+                <h4 class="font-semibold text-ink mb-2">{{ rule.title }}</h4>
+                <p class="text-sm text-ink-2">{{ rule.content }}</p>
               </div>
             </div>
           </section>
 
           <!-- 行动类型 -->
           <section>
-            <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
-              <span class="w-6 h-6 bg-teal-primary text-white rounded-full text-sm flex items-center justify-center mr-2">2</span>
+            <h3 class="text-lg font-bold text-ink mb-4 flex items-center">
+              <span class="w-6 h-6 bg-accent text-on-accent rounded-full text-sm flex items-center justify-center mr-2">2</span>
               行动类型
             </h3>
             <div class="grid md:grid-cols-2 gap-4">
-              <div v-for="action in actionStyles" :key="action.key" class="bg-warm-50 rounded-lg p-4">
+              <div v-for="action in actionStyles" :key="action.key" class="bg-surface-2 rounded-lg p-4">
                 <div class="flex items-center justify-between mb-2">
-                  <h4 class="font-semibold text-gray-700">{{ action.name }}</h4>
+                  <h4 class="font-semibold text-ink">{{ action.name }}</h4>
                   <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded-full">
                     {{ action.cost > 0 ? `+${action.cost} TP` : '免费' }}
                   </span>
                 </div>
-                <p class="text-sm text-gray-600">{{ action.description }}</p>
+                <p class="text-sm text-ink-2">{{ action.description }}</p>
               </div>
             </div>
           </section>
 
           <!-- 战斗结果表 -->
           <section>
-            <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
+            <h3 class="text-lg font-bold text-ink mb-4 flex items-center">
               <span class="w-6 h-6 bg-purple-500 text-white rounded-full text-sm flex items-center justify-center mr-2">3</span>
               战斗结果表
             </h3>
-            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
-              <p class="text-sm text-yellow-800">
+            <div class="bg-warning/10 border-l-4 border-warning p-4 mb-4">
+              <p class="text-sm text-ink-2">
                 <strong>说明：</strong>战斗结果取决于攻击方式、双方卡牌的关系（相同卡牌/相同标签/不同标签）以及防御方式。
               </p>
             </div>
             <div class="space-y-4">
-              <div v-for="result in battleResults" :key="result.situation" class="border border-gray-200 rounded-lg overflow-hidden">
-                <div class="bg-warm-100 px-4 py-3">
-                  <h4 class="font-semibold text-gray-700">{{ result.situation }}</h4>
+              <div v-for="result in battleResults" :key="result.situation" class="border border-line rounded-lg overflow-hidden">
+                <div class="bg-surface-2 px-4 py-3">
+                  <h4 class="font-semibold text-ink">{{ result.situation }}</h4>
                 </div>
                 <div class="p-4 space-y-2">
-                  <div v-for="outcome in result.outcomes" :key="outcome" class="text-sm text-gray-600 pl-4 border-l-2 border-gray-200">
+                  <div v-for="outcome in result.outcomes" :key="outcome" class="text-sm text-ink-2 pl-4 border-l-2 border-line">
                     {{ outcome }}
                   </div>
                 </div>
@@ -147,26 +147,26 @@ const battleResults = computed(() => [
 
           <!-- 战术提示 -->
           <section>
-            <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
+            <h3 class="text-lg font-bold text-ink mb-4 flex items-center">
               <span class="w-6 h-6 bg-orange-500 text-white rounded-full text-sm flex items-center justify-center mr-2">4</span>
               战术提示
             </h3>
-            <div class="bg-blue-50 rounded-lg p-6">
-              <ul class="space-y-3 text-sm text-blue-800">
+            <div class="bg-info/10 rounded-lg p-6">
+              <ul class="space-y-3 text-sm text-ink-2">
                 <li class="flex items-start">
-                  <span class="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span class="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <span><strong>卡牌强度：</strong>卡牌点数决定战斗强度，角色技能可以提供额外强度加成</span>
                 </li>
                 <li class="flex items-start">
-                  <span class="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span class="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <span><strong>TP管理：</strong>合理使用"辛辣点评"和"反驳"，在关键时刻通过额外TP消耗获得优势</span>
                 </li>
                 <li class="flex items-start">
-                  <span class="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span class="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <span><strong>议题控制：</strong>玩家优势时议题偏向+10方向，达到+10即可获胜</span>
                 </li>
                 <li class="flex items-start">
-                  <span class="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span class="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <span><strong>防御抉择：</strong>赞同通常更安全，反驳消耗TP但在劣势时可能扭转局势</span>
                 </li>
               </ul>
@@ -175,8 +175,8 @@ const battleResults = computed(() => [
         </div>
       </div>
 
-      <div class="p-6 border-t border-gray-200 bg-warm-50 text-center">
-        <button @click="emit('close')" class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+      <div class="p-6 border-t border-line bg-surface-2 text-center">
+        <button @click="emit('close')" class="btn-primary">
           明白了，开始战斗！
         </button>
       </div>
@@ -191,15 +191,15 @@ const battleResults = computed(() => [
 }
 
 .overflow-y-auto::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: rgb(var(--c-surface-2));
 }
 
 .overflow-y-auto::-webkit-scrollbar-thumb {
-  background: #c1c1c1;
+  background: rgb(var(--c-line-2));
   border-radius: 3px;
 }
 
 .overflow-y-auto::-webkit-scrollbar-thumb:hover {
-  background: #a8a8a8;
+  background: rgb(var(--c-ink-3));
 }
 </style>

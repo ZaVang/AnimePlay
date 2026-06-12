@@ -30,8 +30,8 @@ const actionEffects = {
   agreement: {
     text: '贊同！',
     icon: '👍',
-    color: 'text-teal-primary',
-    bgColor: 'bg-teal-primary',
+    color: 'text-accent',
+    bgColor: 'bg-accent',
     animation: 'agreement-nod'
   },
   dismissal: {

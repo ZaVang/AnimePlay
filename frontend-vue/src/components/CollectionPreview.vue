@@ -26,18 +26,18 @@ const favoriteCharacterCards = computed(() => {
 </script>
 
 <template>
-  <div class="bg-cream-100 p-6 rounded-lg shadow-lg border border-warm-400 h-full flex flex-col">
-    <h2 class="text-2xl font-bold text-white mb-4">我的喜爱</h2>
-    
-    <div class="border-b border-warm-400 mb-4">
+  <div class="bg-surface p-6 rounded-lg shadow-lg border border-line h-full flex flex-col">
+    <h2 class="text-2xl font-bold text-ink mb-4">我的喜爱</h2>
+
+    <div class="border-b border-line mb-4">
       <nav class="-mb-px flex space-x-4">
         <button @click="activeTab = 'anime'" 
-                :class="[activeTab === 'anime' ? 'border-green-400 text-teal-primary' : 'border-transparent text-gray-600 hover:text-white hover:border-warm-300']"
+                :class="[activeTab === 'anime' ? 'border-accent text-accent' : 'border-transparent text-ink-2 hover:text-ink hover:border-line']"
                 class="whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
           动画 ({{ favoriteAnimeCards.length }}/10)
         </button>
         <button @click="activeTab = 'character'" 
-                :class="[activeTab === 'character' ? 'border-green-400 text-teal-primary' : 'border-transparent text-gray-600 hover:text-white hover:border-warm-300']"
+                :class="[activeTab === 'character' ? 'border-accent text-accent' : 'border-transparent text-ink-2 hover:text-ink hover:border-line']"
                 class="whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
           角色 ({{ favoriteCharacterCards.length }}/10)
         </button>
@@ -50,9 +50,9 @@ const favoriteCharacterCards = computed(() => {
                 <div v-if="favoriteAnimeCards.length > 0" class="grid grid-cols-5 gap-4">
                 <AnimeCard v-for="card in favoriteAnimeCards" :key="`fav-${card!.id}`" :anime="card!" />
                 </div>
-                <div v-else class="text-center py-8 text-gray-600">
+                <div v-else class="text-center py-8 text-ink-2">
                     <p>还没有喜爱的动画卡牌。</p>
-                    <p class="text-sm mt-2">去 <RouterLink to="/collections" class="text-teal-primary hover:underline">收藏</RouterLink> 页面点亮星星吧！</p>
+                    <p class="text-sm mt-2">去 <RouterLink to="/collections" class="text-accent hover:underline">收藏</RouterLink> 页面点亮星星吧！</p>
                 </div>
             </div>
 
@@ -60,13 +60,13 @@ const favoriteCharacterCards = computed(() => {
                 <div v-if="favoriteCharacterCards.length > 0" class="grid grid-cols-5 gap-4">
                 <CharacterCard v-for="card in favoriteCharacterCards" :key="`fav-${card!.id}`" :character="card!" />
                 </div>
-                <div v-else class="text-center py-8 text-gray-600">
+                <div v-else class="text-center py-8 text-ink-2">
                     <p>还没有喜爱的角色卡牌。</p>
-                    <p class="text-sm mt-2">去 <RouterLink to="/collections" class="text-teal-primary hover:underline">收藏</RouterLink> 页面点亮星星吧！</p>
+                    <p class="text-sm mt-2">去 <RouterLink to="/collections" class="text-accent hover:underline">收藏</RouterLink> 页面点亮星星吧！</p>
                 </div>
             </div>
         </div>
-        <p v-else class="text-gray-600 text-center py-4">请先登录查看喜爱收藏</p>
+        <p v-else class="text-ink-2 text-center py-4">请先登录查看喜爱收藏</p>
     </div>
   </div>
 </template>

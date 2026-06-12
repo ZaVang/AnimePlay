@@ -93,11 +93,11 @@ function handleDismantle() {
   >
     <div 
       @click.stop 
-      class="bg-white p-6 rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] flex flex-col text-gray-800"
+      class="bg-elevated p-6 rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] flex flex-col text-ink"
     >
       <div class="flex-shrink-0 flex justify-between items-start mb-4">
         <h2 class="text-2xl font-bold">{{ card.name }}</h2>
-        <button @click="closeModal" class="text-2xl text-gray-600 hover:text-gray-800">&times;</button>
+        <button @click="closeModal" class="text-2xl text-ink-2 hover:text-ink">&times;</button>
       </div>
 
       <div class="flex-grow overflow-y-auto pr-4 -mr-4">
@@ -108,12 +108,12 @@ function handleDismantle() {
             <div class="mt-4 text-center">
                 <span 
                     class="font-bold px-3 py-1 rounded-full text-white"
-                    :class="cardRarityConfig.c?.includes('from') ? `bg-gradient-to-r ${cardRarityConfig.c}` : cardRarityConfig.c || 'bg-warm-300'"
+                    :class="cardRarityConfig.c?.includes('from') ? `bg-gradient-to-r ${cardRarityConfig.c}` : cardRarityConfig.c || 'bg-gray-500'"
                 >
                     {{ card.rarity }}
                 </span>
             </div>
-            <div class="mt-2 text-center text-sm text-gray-600">
+            <div class="mt-2 text-center text-sm text-ink-2">
                 拥有数量: <span class="font-bold">{{ count }}</span>
             </div>
           </div>
@@ -138,12 +138,12 @@ function handleDismantle() {
                     <li v-for="line in animeEffectsDescriptions" :key="line"
                         class="px-3 py-2 rounded-md border text-sm"
                         :class="[
-                          'bg-gradient-to-r from-indigo-600/10 to-blue-600/10',
-                          'border-indigo-400/50',
-                          'text-indigo-900'
+                          'bg-gradient-to-r from-accent/10 to-info/10',
+                          'border-accent/50',
+                          'text-ink'
                         ]"
                     >
-                      <span class="inline-block mr-2 px-2 py-0.5 rounded bg-indigo-500 text-white text-xs">效果</span>
+                      <span class="inline-block mr-2 px-2 py-0.5 rounded bg-accent text-on-accent text-xs">效果</span>
                       <span class="font-medium">{{ line }}</span>
                     </li>
                   </ul>
@@ -151,38 +151,38 @@ function handleDismantle() {
               </div>
               <!-- Character Card Battle Info -->
               <div v-if="cardType === 'character'" class="space-y-4">
-                <div v-if="activeSkill" class="p-3 bg-red-50 rounded-lg">
-                  <h4 class="font-bold text-red-800">主动技能: {{ activeSkill.name }}</h4>
-                  <p class="text-xs text-gray-600 mt-1">[消耗: {{ activeSkill.cost || 0 }} TP] [冷却: {{ activeSkill.cooldown || 0 }} 回合]</p>
+                <div v-if="activeSkill" class="p-3 bg-danger/10 rounded-lg">
+                  <h4 class="font-bold text-danger">主动技能: {{ activeSkill.name }}</h4>
+                  <p class="text-xs text-ink-2 mt-1">[消耗: {{ activeSkill.cost || 0 }} TP] [冷却: {{ activeSkill.cooldown || 0 }} 回合]</p>
                   <p class="text-sm mt-2">{{ activeSkill.description }}</p>
                   <div v-if="activeSkill.effectId" class="mt-2">
                     <ul class="mt-1">
                       <li class="px-3 py-2 rounded-md border text-sm"
                           :class="[
-                            'bg-gradient-to-r from-rose-600/10 to-orange-600/10',
-                            'border-rose-400/50',
-                            'text-rose-900'
+                            'bg-gradient-to-r from-danger/10 to-warning/10',
+                            'border-danger/50',
+                            'text-ink'
                           ]"
                       >
-                        <span class="inline-block mr-2 px-2 py-0.5 rounded bg-rose-500 text-white text-xs">技能</span>
+                        <span class="inline-block mr-2 px-2 py-0.5 rounded bg-danger text-white text-xs">技能</span>
                         <span class="font-medium">{{ getEffectText(activeSkill.effectId) }}</span>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div v-if="passiveSkill" class="p-3 bg-indigo-50 rounded-lg">
-                  <h4 class="font-bold text-indigo-800">被动光环: {{ passiveSkill.name }}</h4>
+                <div v-if="passiveSkill" class="p-3 bg-accent-soft rounded-lg">
+                  <h4 class="font-bold text-accent">被动光环: {{ passiveSkill.name }}</h4>
                   <p class="text-sm mt-2">{{ passiveSkill.description }}</p>
                   <div v-if="passiveSkill.effectId" class="mt-2">
                     <ul class="mt-1">
                       <li class="px-3 py-2 rounded-md border text-sm"
                           :class="[
-                            'bg-gradient-to-r from-indigo-600/10 to-blue-600/10',
-                            'border-indigo-400/50',
-                            'text-indigo-900'
+                            'bg-gradient-to-r from-accent/10 to-info/10',
+                            'border-accent/50',
+                            'text-ink'
                           ]"
                       >
-                        <span class="inline-block mr-2 px-2 py-0.5 rounded bg-indigo-500 text-white text-xs">光环</span>
+                        <span class="inline-block mr-2 px-2 py-0.5 rounded bg-accent text-on-accent text-xs">光环</span>
                         <span class="font-medium">{{ getEffectText(passiveSkill.effectId) }}</span>
                       </li>
                     </ul>
@@ -206,7 +206,7 @@ function handleDismantle() {
               <div class="flex flex-wrap gap-2">
                 <span v-for="anime in processedAnimeNames" :key="anime.name"
                   class="text-xs font-semibold px-2.5 py-1 rounded-full"
-                  :class="anime.isOwned ? 'bg-green-100 text-green-800' : 'bg-warm-200 text-gray-700'"
+                  :class="anime.isOwned ? 'bg-green-100 text-green-800' : 'bg-surface-2 text-ink-2'"
                 >
                   {{ anime.name }}
                 </span>
@@ -219,8 +219,8 @@ function handleDismantle() {
       <!-- Dismantle Section -->
       <div v-if="count > 1" class="flex-shrink-0 border-t mt-4 pt-4">
           <h3 class="font-bold mb-2">分解卡牌</h3>
-          <p class="text-sm text-gray-600 mb-3">分解一张多余的 [{{card.rarity}}] {{ card.name }} 可获得 <span class="font-bold text-emerald-600">{{ dismantleValue }}</span> 知识点。</p>
-          <button @click="handleDismantle" class="bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700 text-sm">
+          <p class="text-sm text-ink-2 mb-3">分解一张多余的 [{{card.rarity}}] {{ card.name }} 可获得 <span class="font-bold text-emerald-600">{{ dismantleValue }}</span> 知识点。</p>
+          <button @click="handleDismantle" class="bg-danger text-white font-bold py-2 px-4 rounded-lg hover:opacity-85 text-sm">
               分解一张
           </button>
       </div>

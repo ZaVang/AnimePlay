@@ -194,7 +194,7 @@ function handleClick() {
 .warning-state-horizontal {
   @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
   @apply bg-red-500/90 px-2 py-1 rounded;
-  @apply text-xs font-bold animate-pulse;
+  @apply text-xs font-bold text-white animate-pulse;
   @apply whitespace-nowrap;
 }
 

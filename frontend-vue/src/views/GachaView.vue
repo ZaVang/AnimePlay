@@ -74,16 +74,16 @@ function closeRatesModal() {
 
 <template>
   <div>
-    <div class="bg-warm-300 rounded-lg shadow text-gray-800 border border-warm-300">
+    <div class="bg-surface-2 rounded-lg shadow text-ink border border-line">
       <!-- Header with Gacha Type Selector -->
-      <div class="border-b border-gray-200">
+      <div class="border-b border-line">
         <div class="px-6 pt-4 pb-2">
           <h2 class="text-lg font-bold text-center mb-3">抽卡系统</h2>
           <div class="flex justify-center gap-2 mb-4">
             <button 
               @click="activeGachaType = 'anime'"
               :class="['gacha-type-btn', { 'active': activeGachaType === 'anime' }]"
-              class="bg-indigo-600 text-white font-semibold py-2 px-4 rounded-md text-sm hover:bg-indigo-700"
+              class="bg-accent text-on-accent font-semibold py-2 px-4 rounded-md text-sm hover:bg-accent-strong"
             >
               动画抽卡
             </button>
@@ -99,7 +99,7 @@ function closeRatesModal() {
       </div>
 
       <!-- Tabs Navigation -->
-      <div class="border-b border-gray-200">
+      <div class="border-b border-line">
         <nav class="flex justify-center -mb-px text-lg">
           <button @click="activeTab = 'pool'" :class="['tab-btn', { 'active': activeTab === 'pool' }]">
             卡池
@@ -137,7 +137,7 @@ function closeRatesModal() {
             <div class="flex justify-between items-center mb-4">
               <h3 class="text-lg font-semibold">动画标准卡池</h3>
               <div class="flex items-center gap-2">
-                <span class="text-sm text-gray-600">拥有：</span>
+                <span class="text-sm text-ink-2">拥有：</span>
                 <span class="bg-amber-100 text-amber-800 px-2 py-1 rounded-full text-xs font-semibold">
                   {{ userStore.playerState.animeGachaTickets }} 张动画券
                 </span>
@@ -150,8 +150,8 @@ function closeRatesModal() {
                 :class="[
                   'font-semibold py-2 px-6 rounded-lg text-sm transition-all duration-200',
                   isDrawing || userStore.playerState.animeGachaTickets < 1
-                    ? 'bg-warm-300 text-gray-700 cursor-not-allowed'
-                    : 'bg-indigo-600 text-white hover:bg-indigo-700'
+                    ? 'bg-surface-2 text-ink-2 cursor-not-allowed'
+                    : 'bg-accent text-on-accent hover:bg-accent-strong'
                 ]"
               >
                 <span v-if="isDrawing" class="flex items-center gap-2">
@@ -169,7 +169,7 @@ function closeRatesModal() {
                 :class="[
                   'font-semibold py-2 px-6 rounded-lg text-sm ml-3 transition-all duration-200',
                   isDrawing || userStore.playerState.animeGachaTickets < 10
-                    ? 'bg-warm-300 text-gray-700 cursor-not-allowed'
+                    ? 'bg-surface-2 text-ink-2 cursor-not-allowed'
                     : 'bg-amber-500 text-white hover:bg-amber-600'
                 ]"
               >
@@ -184,7 +184,7 @@ function closeRatesModal() {
               </button>
             </div>
             <div class="text-center">
-              <a href="#" @click.prevent="openRatesModal" class="text-xs text-gray-600 hover:underline">概率一览</a>
+              <a href="#" @click.prevent="openRatesModal" class="text-xs text-ink-2 hover:underline">概率一览</a>
             </div>
           </div>
 
@@ -193,7 +193,7 @@ function closeRatesModal() {
             <div class="flex justify-between items-center mb-4">
               <h3 class="text-lg font-semibold">角色标准卡池</h3>
               <div class="flex items-center gap-2">
-                <span class="text-sm text-gray-600">拥有：</span>
+                <span class="text-sm text-ink-2">拥有：</span>
                 <span class="bg-pink-100 text-pink-800 px-2 py-1 rounded-full text-xs font-semibold">
                   {{ userStore.playerState.characterGachaTickets }} 张角色券
                 </span>
@@ -206,7 +206,7 @@ function closeRatesModal() {
                 :class="[
                   'font-semibold py-2 px-6 rounded-lg text-sm transition-all duration-200',
                   isDrawing || userStore.playerState.characterGachaTickets < 1
-                    ? 'bg-warm-300 text-gray-700 cursor-not-allowed'
+                    ? 'bg-surface-2 text-ink-2 cursor-not-allowed'
                     : 'bg-pink-600 text-white hover:bg-pink-700'
                 ]"
               >
@@ -225,7 +225,7 @@ function closeRatesModal() {
                 :class="[
                   'font-semibold py-2 px-6 rounded-lg text-sm ml-3 transition-all duration-200',
                   isDrawing || userStore.playerState.characterGachaTickets < 10
-                    ? 'bg-warm-300 text-gray-700 cursor-not-allowed'
+                    ? 'bg-surface-2 text-ink-2 cursor-not-allowed'
                     : 'bg-purple-500 text-white hover:bg-purple-600'
                 ]"
               >
@@ -240,7 +240,7 @@ function closeRatesModal() {
               </button>
             </div>
             <div class="text-center">
-              <a href="#" @click.prevent="openRatesModal" class="text-xs text-gray-600 hover:underline">概率一览</a>
+              <a href="#" @click.prevent="openRatesModal" class="text-xs text-ink-2 hover:underline">概率一览</a>
             </div>
           </div>
         </div>
@@ -280,17 +280,17 @@ function closeRatesModal() {
 }
 .gacha-type-btn.active {
   opacity: 1;
-  box-shadow: 0 0 15px rgba(167, 139, 250, 0.7);
+  box-shadow: 0 0 15px rgb(var(--c-accent) / 0.7);
 }
 .gacha-type-btn:not(.active) {
   opacity: 0.6;
 }
 .tab-btn {
-    @apply py-4 px-6 block hover:text-indigo-500 focus:outline-none text-gray-600 font-medium;
+    @apply py-4 px-6 block hover:text-accent focus:outline-none text-ink-2 font-medium;
     border-bottom: 2px solid transparent;
 }
 .tab-btn.active {
-    @apply text-indigo-600;
-    border-bottom-color: theme('colors.indigo.500');
+    @apply text-accent;
+    border-bottom-color: rgb(var(--c-accent));
 }
 </style>

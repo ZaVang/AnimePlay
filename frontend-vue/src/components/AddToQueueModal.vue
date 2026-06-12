@@ -56,22 +56,22 @@ function handleSelect(animeId: number) {
 
 <template>
   <div class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4" @click.self="$emit('close')">
-    <div class="bg-cream-100 p-6 rounded-lg shadow-xl max-w-4xl w-full border border-warm-400">
+    <div class="bg-elevated p-6 rounded-lg shadow-xl max-w-4xl w-full border border-line">
       <div class="flex justify-between items-center mb-4">
-        <h2 class="text-2xl font-bold text-white">选择要观看的动画</h2>
-        <button @click="$emit('close')" class="text-gray-600 hover:text-white text-2xl font-bold">&times;</button>
+        <h2 class="text-2xl font-bold text-ink">选择要观看的动画</h2>
+        <button @click="$emit('close')" class="text-ink-2 hover:text-ink text-2xl font-bold">&times;</button>
       </div>
       
       <div class="max-h-[60vh] overflow-y-auto pr-2">
-        <div v-if="availableAnime.length === 0" class="text-center text-gray-600 py-10">
-          <svg class="w-16 h-16 mx-auto mb-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div v-if="availableAnime.length === 0" class="text-center text-ink-2 py-10">
+          <svg class="w-16 h-16 mx-auto mb-4 text-ink-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
           </svg>
           <p class="text-lg font-medium mb-2">没有可观看的动画</p>
           <p class="text-sm">所有未观看的动画都在队列中，或者您已经看完了所有收藏的动画</p>
         </div>
         <div v-else>
-          <div class="mb-4 text-sm text-gray-600 flex items-center justify-between">
+          <div class="mb-4 text-sm text-ink-2 flex items-center justify-between">
             <span>{{ availableAnime.length }} 部可观看动画 (按稀有度排序)</span>
             <span class="text-xs">已观看: {{ userStore.playerState.watchedAnime.size }} 部</span>
           </div>

@@ -14,6 +14,14 @@ const emit = defineEmits<{
 
 const userStore = useUserStore();
 
+// Tailwind JIT 需要完整字面类名，禁止模板字符串拼接颜色类
+const INTERACTION_COLOR_CLASSES: Record<string, string> = {
+  blue:   'bg-blue-600/10 hover:bg-blue-600/20 border-blue-600/30 hover:border-blue-600/50',
+  pink:   'bg-pink-600/10 hover:bg-pink-600/20 border-pink-600/30 hover:border-pink-600/50',
+  green:  'bg-green-600/10 hover:bg-green-600/20 border-green-600/30 hover:border-green-600/50',
+  purple: 'bg-purple-600/10 hover:bg-purple-600/20 border-purple-600/30 hover:border-purple-600/50',
+};
+
 // 当前选中的互动类型
 const selectedInteractionType = ref<'dialogue' | 'gift' | 'activity' | 'campus_activity' | null>(null);
 
@@ -436,7 +444,7 @@ function quickGift() {
 
     <!-- 快速互动按钮 -->
     <div class="mb-6">
-      <h3 class="text-lg font-medium text-gray-600 mb-4">快速互动</h3>
+      <h3 class="text-lg font-medium text-ink-2 mb-4">快速互动</h3>
       <div class="grid grid-cols-2 gap-4">
         
         <!-- 快速聊天 -->
@@ -447,7 +455,7 @@ function quickGift() {
           <div class="text-2xl mr-3 group-hover:scale-110 transition-transform">💬</div>
           <div class="flex-1">
             <div class="text-sm font-medium text-blue-400 mb-1">随便聊聊</div>
-            <div class="text-xs text-gray-600">+5-15 羁绊值</div>
+            <div class="text-xs text-ink-2">+5-15 羁绊值</div>
           </div>
         </button>
 
@@ -459,18 +467,18 @@ function quickGift() {
             'flex items-center p-4 border rounded-lg transition-all duration-300 group',
             userStore.playerState.knowledgePoints >= 25
               ? 'bg-pink-600/20 hover:bg-pink-600/30 border-pink-600/30'
-              : 'bg-warm-300/50 border-warm-300/50 opacity-50 cursor-not-allowed'
+              : 'bg-surface-2/50 border-line/60 opacity-50 cursor-not-allowed'
           ]"
         >
           <div class="text-2xl mr-3 group-hover:scale-110 transition-transform">🎁</div>
           <div class="flex-1">
             <div 
               class="text-sm font-medium mb-1"
-              :class="userStore.playerState.knowledgePoints >= 25 ? 'text-pink-400' : 'text-gray-600'"
+              :class="userStore.playerState.knowledgePoints >= 25 ? 'text-pink-400' : 'text-ink-3'"
             >
               小礼物
             </div>
-            <div class="text-xs text-gray-600">25 知识点</div>
+            <div class="text-xs text-ink-2">25 知识点</div>
           </div>
         </button>
 
@@ -479,7 +487,7 @@ function quickGift() {
 
     <!-- 主要互动选项 -->
     <div>
-      <h3 class="text-lg font-medium text-gray-600 mb-4">深度互动</h3>
+      <h3 class="text-lg font-medium text-ink-2 mb-4">深度互动</h3>
       <div class="grid grid-cols-2 gap-4">
         
         <button
@@ -489,9 +497,9 @@ function quickGift() {
           :disabled="!interaction.available"
           :class="[
             'flex items-center p-4 rounded-lg border transition-all duration-300 group',
-            interaction.available 
-              ? `bg-${interaction.color}-600/10 hover:bg-${interaction.color}-600/20 border-${interaction.color}-600/30 hover:border-${interaction.color}-600/50`
-              : 'bg-warm-300/30 border-warm-300/50 opacity-50 cursor-not-allowed'
+            interaction.available
+              ? (INTERACTION_COLOR_CLASSES[interaction.color] ?? INTERACTION_COLOR_CLASSES.blue)
+              : 'bg-surface-2/40 border-line/60 opacity-50 cursor-not-allowed'
           ]"
         >
           <div class="text-2xl mr-3 group-hover:scale-110 transition-transform">
@@ -500,20 +508,20 @@ function quickGift() {
           <div class="flex-1">
             <h4 
               class="font-medium text-sm mb-1"
-              :class="interaction.available ? 'text-white' : 'text-gray-600'"
+              :class="interaction.available ? 'text-ink' : 'text-ink-3'"
             >
               {{ interaction.name }}
             </h4>
             <p 
               class="text-xs mb-2"
-              :class="interaction.available ? 'text-gray-600' : 'text-gray-600'"
+              :class="interaction.available ? 'text-ink-2' : 'text-ink-2'"
             >
               {{ interaction.description }}
             </p>
             
             <!-- 成本和状态显示 -->
             <div class="flex justify-between items-center">
-              <div v-if="interaction.cost.type === 'knowledge'" class="text-xs text-gray-600">
+              <div v-if="interaction.cost.type === 'knowledge'" class="text-xs text-ink-2">
                 💎 {{ interaction.cost.amount }}
               </div>
               <div v-if="!interaction.available" class="text-xs text-red-400">
@@ -537,24 +545,24 @@ function quickGift() {
 
     <!-- 礼物选择模态框 -->
     <div v-if="selectedInteractionType === 'gift'" class="fixed inset-0 bg-black/75 flex items-center justify-center z-50 p-4" @click.self="closeSelection">
-      <div class="bg-cream-100 p-6 rounded-lg shadow-xl max-w-2xl w-full border border-warm-400 max-h-[80vh] overflow-y-auto">
+      <div class="bg-elevated p-6 rounded-lg shadow-xl max-w-2xl w-full border border-line-2 max-h-[80vh] overflow-y-auto">
         <div class="flex justify-between items-center mb-4">
-          <h3 class="text-xl font-bold text-white flex items-center">
+          <h3 class="text-xl font-bold text-ink flex items-center">
             <span class="text-2xl mr-2">🎁</span>
             选择礼物
           </h3>
-          <button @click="closeSelection" class="text-gray-600 hover:text-white text-2xl font-bold">&times;</button>
+          <button @click="closeSelection" class="text-ink-2 hover:text-ink text-2xl font-bold">&times;</button>
         </div>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div 
             v-for="gift in availableGifts" 
             :key="gift.id"
-            class="group cursor-pointer bg-warm-300/50 hover:bg-warm-300 rounded-lg p-4 border border-warm-300 hover:border-warm-300 transition-all duration-300"
+            class="group cursor-pointer bg-surface-2/50 hover:bg-surface-2 rounded-lg p-4 border border-line hover:border-line transition-all duration-300"
             :class="{
               'border-yellow-500/50': gift.rarity === 'rare',
               'border-purple-500/50': gift.rarity === 'uncommon',
-              'border-warm-300': gift.rarity === 'common'
+              'border-line': gift.rarity === 'common'
             }"
             @click="giveGift(gift)"
           >
@@ -562,18 +570,18 @@ function quickGift() {
               <div class="flex items-center">
                 <div class="text-2xl mr-3">{{ gift.icon }}</div>
                 <div>
-                  <h4 class="font-medium text-white">{{ gift.name }}</h4>
-                  <p class="text-sm text-gray-600">{{ gift.description }}</p>
+                  <h4 class="font-medium text-ink">{{ gift.name }}</h4>
+                  <p class="text-sm text-ink-2">{{ gift.description }}</p>
                 </div>
               </div>
               <div class="text-right">
                 <div class="text-sm font-medium text-pink-400">+{{ gift.affectionGain }}</div>
-                <div class="text-xs text-gray-600">💎 {{ gift.cost }}</div>
+                <div class="text-xs text-ink-2">💎 {{ gift.cost }}</div>
               </div>
             </div>
             
             <!-- 效果预览 -->
-            <div class="text-xs text-gray-600 space-y-1">
+            <div class="text-xs text-ink-2 space-y-1">
               <div v-if="gift.moodGain">心情 +{{ gift.moodGain }}</div>
               <div v-if="gift.charmGain">魅力 +{{ gift.charmGain }}</div>
               <div v-if="gift.intelligenceGain">智力 +{{ gift.intelligenceGain }}</div>
@@ -585,47 +593,47 @@ function quickGift() {
 
     <!-- 活动选择模态框 -->
     <div v-if="selectedInteractionType === 'activity'" class="fixed inset-0 bg-black/75 flex items-center justify-center z-50 p-4" @click.self="closeSelection">
-      <div class="bg-cream-100 p-6 rounded-lg shadow-xl max-w-2xl w-full border border-warm-400 max-h-[80vh] overflow-y-auto">
+      <div class="bg-elevated p-6 rounded-lg shadow-xl max-w-2xl w-full border border-line-2 max-h-[80vh] overflow-y-auto">
         <div class="flex justify-between items-center mb-4">
-          <h3 class="text-xl font-bold text-white flex items-center">
+          <h3 class="text-xl font-bold text-ink flex items-center">
             <span class="text-2xl mr-2">🎯</span>
             选择活动
           </h3>
-          <button @click="closeSelection" class="text-gray-600 hover:text-white text-2xl font-bold">&times;</button>
+          <button @click="closeSelection" class="text-ink-2 hover:text-ink text-2xl font-bold">&times;</button>
         </div>
         
         <div class="space-y-3">
           <div 
             v-for="activity in availableActivities" 
             :key="activity.id"
-            class="group cursor-pointer bg-warm-300/50 rounded-lg p-4 border transition-all duration-300"
+            class="group cursor-pointer bg-surface-2/50 rounded-lg p-4 border transition-all duration-300"
             :class="isActivityAvailable(activity)
-              ? 'hover:bg-warm-300 border-warm-300 hover:border-warm-300'
-              : 'border-warm-400 opacity-50 cursor-not-allowed'"
+              ? 'hover:bg-surface-2 border-line hover:border-line'
+              : 'border-line-2 opacity-50 cursor-not-allowed'"
             @click="isActivityAvailable(activity) && doActivity(activity)"
           >
             <div class="flex items-center justify-between mb-2">
               <div class="flex items-center">
                 <div class="text-2xl mr-3">{{ activity.icon }}</div>
                 <div>
-                  <h4 class="font-medium text-white">{{ activity.name }}</h4>
-                  <p class="text-sm text-gray-600">{{ activity.description }}</p>
+                  <h4 class="font-medium text-ink">{{ activity.name }}</h4>
+                  <p class="text-sm text-ink-2">{{ activity.description }}</p>
                 </div>
               </div>
               <div class="text-right">
-                <div class="text-sm font-medium text-teal-primary">+{{ activity.affectionGain }}</div>
-                <div class="text-xs text-gray-600">💎 {{ activity.cost }}</div>
-                <div class="text-xs text-gray-600">{{ activity.duration }}分钟</div>
+                <div class="text-sm font-medium text-accent">+{{ activity.affectionGain }}</div>
+                <div class="text-xs text-ink-2">💎 {{ activity.cost }}</div>
+                <div class="text-xs text-ink-2">{{ activity.duration }}分钟</div>
               </div>
             </div>
             
             <!-- 需求条件 -->
-            <div class="text-xs text-gray-600 mb-2">
+            <div class="text-xs text-ink-2 mb-2">
               需要羁绊值: {{ activity.requirements.affection }}+
             </div>
             
             <!-- 效果预览 -->
-            <div class="text-xs text-gray-600 space-y-1">
+            <div class="text-xs text-ink-2 space-y-1">
               <div v-if="activity.moodGain">心情 +{{ activity.moodGain }}</div>
               <div v-if="activity.charmGain">魅力 +{{ activity.charmGain }}</div>
               <div v-if="activity.intelligenceGain">智力 +{{ activity.intelligenceGain }}</div>
@@ -638,13 +646,13 @@ function quickGift() {
 
     <!-- 校园活动选择模态框 -->
     <div v-if="selectedInteractionType === 'campus_activity'" class="fixed inset-0 bg-black/75 flex items-center justify-center z-50 p-4" @click.self="closeSelection">
-      <div class="bg-cream-100 p-6 rounded-lg shadow-xl max-w-2xl w-full border border-warm-400 max-h-[80vh] overflow-y-auto">
+      <div class="bg-elevated p-6 rounded-lg shadow-xl max-w-2xl w-full border border-line-2 max-h-[80vh] overflow-y-auto">
         <div class="flex justify-between items-center mb-4">
-          <h3 class="text-xl font-bold text-white flex items-center">
+          <h3 class="text-xl font-bold text-ink flex items-center">
             <span class="text-2xl mr-2">🎓</span>
             选择校园活动
           </h3>
-          <button @click="closeSelection" class="text-gray-600 hover:text-white text-2xl font-bold">&times;</button>
+          <button @click="closeSelection" class="text-ink-2 hover:text-ink text-2xl font-bold">&times;</button>
         </div>
         
         <div class="space-y-4">
@@ -654,31 +662,31 @@ function quickGift() {
             class="group cursor-pointer bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-lg p-4 border transition-all duration-300"
             :class="isCampusActivityAvailable(activity)
               ? 'hover:from-blue-600/20 hover:to-purple-600/20 border-blue-600/30 hover:border-blue-600/50'
-              : 'border-warm-400 opacity-50 cursor-not-allowed from-gray-700/10 to-gray-700/10'"
+              : 'border-line-2 opacity-50 cursor-not-allowed from-gray-700/10 to-gray-700/10'"
             @click="isCampusActivityAvailable(activity) && doCampusActivity(activity)"
           >
             <div class="flex items-center justify-between mb-3">
               <div class="flex items-center">
                 <div class="text-3xl mr-4">{{ activity.icon }}</div>
                 <div>
-                  <h4 class="font-medium text-white text-lg">{{ activity.name }}</h4>
-                  <p class="text-sm text-gray-600">{{ activity.description }}</p>
+                  <h4 class="font-medium text-ink text-lg">{{ activity.name }}</h4>
+                  <p class="text-sm text-ink-2">{{ activity.description }}</p>
                 </div>
               </div>
               <div class="text-right">
                 <div class="text-sm font-medium text-purple-400">+{{ activity.affectionGain }}</div>
-                <div class="text-xs text-gray-600">💎 {{ activity.cost }}</div>
-                <div class="text-xs text-gray-600">{{ activity.duration }}分钟</div>
+                <div class="text-xs text-ink-2">💎 {{ activity.cost }}</div>
+                <div class="text-xs text-ink-2">{{ activity.duration }}分钟</div>
               </div>
             </div>
             
             <!-- 需求条件 -->
-            <div class="text-xs text-gray-600 mb-2">
+            <div class="text-xs text-ink-2 mb-2">
               需要羁绊值: {{ activity.requirements.affection }}+, 心情: {{ activity.requirements.mood }}+
             </div>
             
             <!-- 效果预览 -->
-            <div class="text-xs text-gray-600 flex space-x-4">
+            <div class="text-xs text-ink-2 flex space-x-4">
               <div v-if="activity.moodGain">心情 +{{ activity.moodGain }}</div>
               <div v-if="activity.charmGain">魅力 +{{ activity.charmGain }}</div>
               <div v-if="activity.strengthGain">体力 +{{ activity.strengthGain }}</div>
@@ -690,15 +698,15 @@ function quickGift() {
     </div>
     
     <!-- 当前角色状态提示 -->
-    <div class="mt-6 p-4 bg-warm-300/30 rounded-lg">
-      <div class="flex items-center text-sm text-gray-600">
+    <div class="mt-6 p-4 bg-surface-2/30 rounded-lg">
+      <div class="flex items-center text-sm text-ink-2">
         <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
         </svg>
         <span>{{ character.name }} 目前心情 
           <span :class="{
             'text-pink-400': character.nurtureData.attributes.mood >= 80,
-            'text-teal-primary': character.nurtureData.attributes.mood >= 60,
+            'text-accent': character.nurtureData.attributes.mood >= 60,
             'text-yellow-400': character.nurtureData.attributes.mood >= 40,
             'text-orange-400': character.nurtureData.attributes.mood >= 20,
             'text-red-400': character.nurtureData.attributes.mood < 20

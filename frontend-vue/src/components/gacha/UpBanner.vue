@@ -83,7 +83,7 @@ onUnmounted(() => {
     
     <div class="text-center space-y-1">
       <p class="text-sm text-yellow-800">
-        在抽到 <span class="font-bold text-purple-700">HR</span> 或 <span class="font-bold text-red-700">UR</span> 稀有度时，有 <span class="font-bold">{{ (upConfig.hrChance * 100).toFixed(0) }}%</span> 的概率为UP卡！
+        在抽到 <span class="font-bold text-purple-500">HR</span> 或 <span class="font-bold text-red-500">UR</span> 稀有度时，有 <span class="font-bold">{{ (upConfig.hrChance * 100).toFixed(0) }}%</span> 的概率为UP卡！
       </p>
       <p v-if="upConfig.pityPulls > 0" class="text-xs text-yellow-700">
         {{ upConfig.pityPulls }}次未抽中UP卡，下次必定获得UP卡！

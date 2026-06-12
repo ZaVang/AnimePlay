@@ -19,21 +19,21 @@ function toggleOpen() {
 </script>
 
 <template>
-  <div class="bg-cream-100 rounded-lg shadow-lg border border-warm-400 overflow-hidden">
+  <div class="bg-surface rounded-lg shadow-lg border border-line-2 overflow-hidden">
     
     <!-- 面板标题栏 -->
     <div 
-      class="flex items-center justify-between p-4 cursor-pointer hover:bg-warm-300/50 transition-colors"
+      class="flex items-center justify-between p-4 cursor-pointer hover:bg-surface-2/50 transition-colors"
       @click="toggleOpen"
     >
-      <h2 class="text-xl font-bold text-white flex items-center">
+      <h2 class="text-xl font-bold text-ink flex items-center">
         <span v-if="icon" class="text-2xl mr-3">{{ icon }}</span>
         {{ title }}
       </h2>
       
       <!-- 折叠箭头 -->
       <div 
-        class="transform transition-transform duration-300 text-gray-600 hover:text-white"
+        class="transform transition-transform duration-300 text-ink-2 hover:text-ink"
         :class="{ 'rotate-180': isOpen }"
       >
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -47,7 +47,7 @@ function toggleOpen() {
       class="overflow-hidden transition-all duration-300 ease-in-out"
       :class="isOpen ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'"
     >
-      <div class="border-t border-warm-400">
+      <div class="border-t border-line-2">
         <slot></slot>
       </div>
     </div>

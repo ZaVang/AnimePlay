@@ -361,18 +361,18 @@ function getInitialGreeting() {
 
 <template>
   <div class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4" @click.self="emit('close')">
-    <div class="bg-cream-100 rounded-2xl shadow-2xl max-w-2xl w-full max-h-[80vh] border border-warm-400 overflow-hidden">
+    <div class="bg-elevated rounded-2xl shadow-2xl max-w-2xl w-full max-h-[80vh] border border-line-2 overflow-hidden">
       
       <!-- 对话窗口头部 -->
-      <div class="flex items-center justify-between p-6 border-b border-warm-400 bg-gray-750">
+      <div class="flex items-center justify-between p-6 border-b border-line-2 bg-surface-2">
         <div class="flex items-center">
           <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
             <img :src="character.image_path" :alt="character.name" class="w-full h-full object-cover object-top">
           </div>
           <div>
-            <h3 class="text-lg font-bold text-white">{{ character.name }}</h3>
-            <div class="flex items-center text-sm text-gray-600">
-              <div class="w-2 h-2 bg-teal-light rounded-full mr-2"></div>
+            <h3 class="text-lg font-bold text-ink">{{ character.name }}</h3>
+            <div class="flex items-center text-sm text-ink-2">
+              <div class="w-2 h-2 bg-accent rounded-full mr-2"></div>
               在线中
             </div>
           </div>
@@ -380,7 +380,7 @@ function getInitialGreeting() {
         
         <button 
           @click="emit('close')"
-          class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-white hover:bg-warm-300 rounded-full transition-colors"
+          class="w-8 h-8 flex items-center justify-center text-ink-2 hover:text-ink hover:bg-surface-2 rounded-full transition-colors"
         >
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -391,7 +391,7 @@ function getInitialGreeting() {
       <!-- 对话历史区域 -->
       <div 
         ref="dialogueContainer"
-        class="flex-1 p-4 space-y-4 overflow-y-auto max-h-96 bg-gray-850"
+        class="flex-1 p-4 space-y-4 overflow-y-auto max-h-96"
       >
         <div v-for="(message, index) in dialogueHistory" :key="index">
           
@@ -401,7 +401,7 @@ function getInitialGreeting() {
               <div class="bg-blue-600 text-white p-3 rounded-2xl rounded-br-md">
                 {{ message.text }}
               </div>
-              <div class="text-xs text-gray-600 mt-1 text-right">{{ formatTime(message.timestamp) }}</div>
+              <div class="text-xs text-ink-2 mt-1 text-right">{{ formatTime(message.timestamp) }}</div>
             </div>
           </div>
 
@@ -412,10 +412,10 @@ function getInitialGreeting() {
                 <img :src="character.image_path" :alt="character.name" class="w-full h-full object-cover object-top">
               </div>
               <div>
-                <div class="bg-warm-300 text-white p-3 rounded-2xl rounded-bl-md">
+                <div class="bg-surface-2 text-ink p-3 rounded-2xl rounded-bl-md">
                   {{ message.text }}
                 </div>
-                <div class="text-xs text-gray-600 mt-1">{{ formatTime(message.timestamp) }}</div>
+                <div class="text-xs text-ink-2 mt-1">{{ formatTime(message.timestamp) }}</div>
               </div>
             </div>
           </div>
@@ -428,11 +428,11 @@ function getInitialGreeting() {
             <div class="w-8 h-8 rounded-full overflow-hidden mr-2">
               <img :src="character.image_path" :alt="character.name" class="w-full h-full object-cover object-top">
             </div>
-            <div class="bg-warm-300 text-white p-3 rounded-2xl rounded-bl-md">
+            <div class="bg-surface-2 text-ink p-3 rounded-2xl rounded-bl-md">
               <div class="flex space-x-1">
-                <div class="w-2 h-2 bg-warm-300 rounded-full animate-bounce"></div>
-                <div class="w-2 h-2 bg-warm-300 rounded-full animate-bounce" style="animation-delay: 0.1s;"></div>
-                <div class="w-2 h-2 bg-warm-300 rounded-full animate-bounce" style="animation-delay: 0.2s;"></div>
+                <div class="w-2 h-2 bg-ink-3 rounded-full animate-bounce"></div>
+                <div class="w-2 h-2 bg-ink-3 rounded-full animate-bounce" style="animation-delay: 0.1s;"></div>
+                <div class="w-2 h-2 bg-ink-3 rounded-full animate-bounce" style="animation-delay: 0.2s;"></div>
               </div>
             </div>
           </div>
@@ -440,18 +440,18 @@ function getInitialGreeting() {
       </div>
 
       <!-- 对话选项区域 -->
-      <div class="p-4 border-t border-warm-400 space-y-3">
+      <div class="p-4 border-t border-line-2 space-y-3">
         
         <!-- 预设对话选项 -->
         <div v-if="availableDialogues.length > 0" class="space-y-2">
-          <div class="text-sm text-gray-600 mb-2">选择话题：</div>
+          <div class="text-sm text-ink-2 mb-2">选择话题：</div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <button
               v-for="dialogue in availableDialogues.slice(0, 4)"
               :key="dialogue.id"
               @click="selectDialogue(dialogue)"
               :disabled="isTyping"
-              class="text-left p-3 bg-warm-300/50 hover:bg-warm-300 text-white text-sm rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              class="text-left p-3 bg-surface-2/50 hover:bg-surface-2 text-ink text-sm rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {{ dialogue.text }}
             </button>
@@ -465,12 +465,12 @@ function getInitialGreeting() {
             @keyup.enter="sendFreeMessage"
             :disabled="isTyping"
             placeholder="输入你想说的话..."
-            class="flex-1 px-4 py-2 bg-warm-300 text-white rounded-lg border border-warm-300 focus:border-blue-500 focus:outline-none disabled:opacity-50"
+            class="flex-1 px-4 py-2 bg-surface-2 text-ink rounded-lg border border-line focus:border-blue-500 focus:outline-none disabled:opacity-50"
           >
           <button
             @click="sendFreeMessage"
             :disabled="!userInput.trim() || isTyping"
-            class="px-6 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-warm-400 text-white rounded-lg transition-colors disabled:cursor-not-allowed"
+            class="px-6 py-2 bg-blue-600 hover:bg-blue-700 disabled:opacity-45 text-white rounded-lg transition-colors disabled:cursor-not-allowed"
           >
             发送
           </button>
@@ -498,17 +498,17 @@ function getInitialGreeting() {
 }
 
 .overflow-y-auto::-webkit-scrollbar-track {
-  background: #374151;
+  background: rgb(var(--c-surface-2));
   border-radius: 3px;
 }
 
 .overflow-y-auto::-webkit-scrollbar-thumb {
-  background: #6B7280;
+  background: rgb(var(--c-line-2));
   border-radius: 3px;
 }
 
 .overflow-y-auto::-webkit-scrollbar-thumb:hover {
-  background: #9CA3AF;
+  background: rgb(var(--c-ink-3));
 }
 
 /* 打字动画 */

@@ -6,12 +6,12 @@
   >
     <div
       @click.stop
-      class="bg-white rounded-lg shadow-xl max-w-md w-full text-gray-800 mx-4"
+      class="bg-elevated rounded-lg shadow-xl max-w-md w-full text-ink mx-4"
     >
       <!-- Header -->
-      <div class="p-6 border-b border-gray-200">
+      <div class="p-6 border-b border-line">
         <h2 class="text-xl font-bold">{{ title }}</h2>
-        <p v-if="description" class="text-gray-600 mt-2 text-sm">{{ description }}</p>
+        <p v-if="description" class="text-ink-2 mt-2 text-sm">{{ description }}</p>
       </div>
 
       <!-- Type Options -->
@@ -24,31 +24,31 @@
             :class="[
               'w-full p-4 text-left rounded-lg border-2 transition-all duration-200',
               selectedType === type
-                ? 'border-blue-500 bg-blue-50 text-blue-900'
-                : 'border-gray-200 hover:border-warm-300 hover:bg-warm-50'
+                ? 'border-accent bg-accent-soft text-ink'
+                : 'border-line hover:border-line-2 hover:bg-surface-2'
             ]"
           >
             <div class="flex items-center justify-between">
               <span class="font-medium">{{ type }}</span>
-              <span v-if="selectedType === type" class="text-blue-500">✓</span>
+              <span v-if="selectedType === type" class="text-accent">✓</span>
             </div>
-            <p v-if="getTypeDescription(type)" class="text-sm text-gray-600 mt-1">
+            <p v-if="getTypeDescription(type)" class="text-sm text-ink-2 mt-1">
               {{ getTypeDescription(type) }}
             </p>
           </button>
         </div>
 
         <div v-if="availableTypes.length === 0" class="text-center py-8">
-          <p class="text-gray-600">没有可选择的类型</p>
+          <p class="text-ink-2">没有可选择的类型</p>
         </div>
       </div>
 
       <!-- Footer -->
-      <div class="border-t border-gray-200 p-6 flex justify-between items-center">
+      <div class="border-t border-line p-6 flex justify-between items-center">
         <button
           v-if="allowCancel"
           @click="cancel"
-          class="px-4 py-2 border border-warm-300 rounded-lg text-gray-700 hover:bg-warm-50"
+          class="px-4 py-2 border border-line rounded-lg text-ink-2 hover:bg-surface-2"
         >
           取消
         </button>
@@ -58,8 +58,8 @@
           :class="[
             'px-6 py-2 rounded-lg font-medium',
             selectedType
-              ? 'bg-blue-600 text-white hover:bg-blue-700'
-              : 'bg-warm-200 text-gray-600 cursor-not-allowed'
+              ? 'bg-accent text-on-accent hover:bg-accent-strong'
+              : 'bg-surface-2 text-ink-3 cursor-not-allowed'
           ]"
         >
           确认选择
