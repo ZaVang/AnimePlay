@@ -1,7 +1,9 @@
 /**
- * 简化版战斗属性计算系统
- * 基于角色的基础属性（ATK, DEF, SP, SPD）进行数值计算
+ * 小队战数值公式 —— 纯函数（随机源注入）。
+ * 原 utils/battleCalculator；这是全仓唯一一份伤害公式（SquadBattleView 的复制版已删除）。
+ * 公式受 engine/squad/combat.test.ts 锁定，详见 docs/挑战塔系统.md。
  */
+import type { RNG } from '../rng';
 
 export interface BattleStats {
   hp: number;
@@ -19,167 +21,129 @@ export interface BattleResult {
   winner: 'attacker' | 'defender' | null;
 }
 
-/**
- * 计算减伤率
- * 公式: DEF/(1000+DEF)
- */
+/** 减伤率 = DEF / (1000 + DEF) */
 export function calculateDamageReduction(def: number): number {
   return def / (1000 + def);
 }
 
-/**
- * 计算增伤率  
- * 公式: SP/(1000+SP)
- */
+/** 增伤率 = SP / (1000 + SP) */
 export function calculateDamageBonus(sp: number): number {
   return sp / (1000 + sp);
 }
 
-/**
- * 计算连击概率
- * 公式: min(SPD/10, 50)% 
- */
+/** 连击概率 = min(SPD/10, 50)% */
 export function calculateCriticalRate(spd: number): number {
   return Math.min(spd / 10, 50) / 100;
 }
 
-/**
- * 判断是否触发连击
- */
-export function rollCriticalHit(spd: number): boolean {
-  const critRate = calculateCriticalRate(spd);
-  return Math.random() < critRate;
+export function rollCriticalHit(spd: number, rng: RNG): boolean {
+  return rng.next() < calculateCriticalRate(spd);
 }
 
-/**
- * 计算单次攻击伤害
- */
+/** 单次攻击：ATK × (1+增伤) × (1−减伤)，连击 ×1.3，向下取整，下限 1。 */
 export function calculateAttackDamage(
   attackerStats: BattleStats,
-  defenderStats: BattleStats
+  defenderStats: BattleStats,
+  rng: RNG,
 ): { damage: number; isCriticalHit: boolean } {
   const baseAttack = attackerStats.atk;
   const damageBonus = calculateDamageBonus(attackerStats.sp);
   const damageReduction = calculateDamageReduction(defenderStats.def);
-  const isCriticalHit = rollCriticalHit(attackerStats.spd);
-  
-  // 基础伤害计算
+  const isCriticalHit = rollCriticalHit(attackerStats.spd, rng);
+
   let damage = baseAttack * (1 + damageBonus) * (1 - damageReduction);
-  
-  // 连击伤害加成
   if (isCriticalHit) {
     damage *= 1.3;
   }
-  
-  // 伤害最小为1
   damage = Math.max(1, Math.floor(damage));
-  
+
   return { damage, isCriticalHit };
 }
 
-/**
- * 模拟完整战斗（固定轮流，玩家先手）
- * 返回战斗结果
- */
-export function simulateBattle(
-  playerStats: BattleStats,
-  enemyStats: BattleStats
-): BattleResult {
+/** 模拟完整战斗（固定轮流，玩家先手，至多 100 回合）。 */
+export function simulateBattle(playerStats: BattleStats, enemyStats: BattleStats, rng: RNG): BattleResult {
   let playerHP = playerStats.hp;
   let enemyHP = enemyStats.hp;
-  let isPlayerTurn = true; // 玩家先手
+  let isPlayerTurn = true;
   let totalDamage = 0;
   let criticalHits = 0;
-  
-  // 最多进行100回合，避免无限循环
+
   let rounds = 0;
   const maxRounds = 100;
-  
+
   while (playerHP > 0 && enemyHP > 0 && rounds < maxRounds) {
     rounds++;
-    
     if (isPlayerTurn) {
-      // 玩家攻击敌人
-      const attackResult = calculateAttackDamage(playerStats, enemyStats);
+      const attackResult = calculateAttackDamage(playerStats, enemyStats, rng);
       enemyHP -= attackResult.damage;
       totalDamage += attackResult.damage;
-      
-      if (attackResult.isCriticalHit) {
-        criticalHits++;
-      }
+      if (attackResult.isCriticalHit) criticalHits++;
     } else {
-      // 敌人攻击玩家
-      const attackResult = calculateAttackDamage(enemyStats, playerStats);
+      const attackResult = calculateAttackDamage(enemyStats, playerStats, rng);
       playerHP -= attackResult.damage;
     }
-    
-    // 切换回合
     isPlayerTurn = !isPlayerTurn;
   }
-  
-  // 确定获胜者
+
   let winner: 'attacker' | 'defender' | null = null;
   if (playerHP <= 0 && enemyHP <= 0) {
-    winner = null; // 平局
+    winner = null;
   } else if (enemyHP <= 0) {
-    winner = 'attacker'; // 玩家获胜
+    winner = 'attacker';
   } else if (playerHP <= 0) {
-    winner = 'defender'; // 敌人获胜
+    winner = 'defender';
   }
-  
+
   return {
     damage: totalDamage,
     isCriticalHit: criticalHits > 0,
     attackerRemainHP: Math.max(0, playerHP),
     defenderRemainHP: Math.max(0, enemyHP),
-    winner
+    winner,
   };
 }
 
-/**
- * 计算战斗力评分（用于匹配对手难度）
- */
+/** 战力评分（用于匹配对手难度）。 */
 export function calculateBattlePower(stats: BattleStats): number {
   const attackPower = stats.atk * (1 + calculateDamageBonus(stats.sp));
   const defensePower = stats.hp * (1 - calculateDamageReduction(stats.def));
   const speedBonus = 1 + calculateCriticalRate(stats.spd) * 0.3;
-  
   return Math.floor((attackPower + defensePower * 0.5) * speedBonus);
 }
 
-/**
- * 生成基于角色基础属性的战斗状态
- * 结合养成属性加成
- */
+export interface NurtureAttributes {
+  charm: number;
+  intelligence: number;
+  strength: number;
+}
+
+export interface BattleEnhancements {
+  hp: number;
+  atk: number;
+  def: number;
+  sp: number;
+  spd: number;
+}
+
+/** 最终战斗属性 = 基础 ×(1+强化%) + 养成属性换算加成。 */
 export function generateBattleStats(
   baseStats: BattleStats,
-  nurtureAttributes: {
-    charm: number;
-    intelligence: number; 
-    strength: number;
-  },
-  battleEnhancements: {
-    hp: number;
-    atk: number;
-    def: number;
-    sp: number;
-    spd: number;
-  }
+  nurtureAttributes: NurtureAttributes,
+  battleEnhancements: BattleEnhancements,
 ): BattleStats {
-  // 养成属性对战斗属性的影响
   const attributeBonus = {
     atk: Math.floor(nurtureAttributes.strength * 0.5), // 体力影响攻击
-    def: Math.floor(nurtureAttributes.strength * 0.3), // 体力影响防御  
+    def: Math.floor(nurtureAttributes.strength * 0.3), // 体力影响防御
     sp: Math.floor(nurtureAttributes.intelligence * 0.4), // 智力影响技能
     spd: Math.floor(nurtureAttributes.charm * 0.3), // 魅力影响速度
-    hp: Math.floor((nurtureAttributes.strength + nurtureAttributes.charm) * 0.2)
+    hp: Math.floor((nurtureAttributes.strength + nurtureAttributes.charm) * 0.2),
   };
-  
+
   return {
     hp: Math.floor(baseStats.hp * (1 + battleEnhancements.hp / 100) + attributeBonus.hp),
     atk: Math.floor(baseStats.atk * (1 + battleEnhancements.atk / 100) + attributeBonus.atk),
     def: Math.floor(baseStats.def * (1 + battleEnhancements.def / 100) + attributeBonus.def),
     sp: Math.floor(baseStats.sp * (1 + battleEnhancements.sp / 100) + attributeBonus.sp),
-    spd: Math.floor(baseStats.spd * (1 + battleEnhancements.spd / 100) + attributeBonus.spd)
+    spd: Math.floor(baseStats.spd * (1 + battleEnhancements.spd / 100) + attributeBonus.spd),
   };
 }

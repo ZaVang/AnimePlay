@@ -3,12 +3,12 @@ import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/stores/userStore';
-import { 
-  generateBattleStats, 
-  simulateBattle, 
-  calculateBattlePower,
-  type BattleStats 
-} from '@/utils/battleCalculator';
+import {
+  generateBattleStats,
+  simulateBattle,
+  defaultRng,
+  type BattleStats,
+} from '@/engine';
 
 const props = defineProps<{
   character: CharacterCard & { nurtureData: CharacterNurtureData };
@@ -299,7 +299,7 @@ function startBattleTraining(programId: string) {
     const trainingOpponent = generateTrainingOpponent(program.stat, currentBattleStats);
     
     // 模拟战斗
-    const battleResult = simulateBattle(currentBattleStats, trainingOpponent);
+    const battleResult = simulateBattle(currentBattleStats, trainingOpponent, defaultRng);
     
     // 根据战斗结果给予奖励
     processBattleTrainingResult(program, battleResult);

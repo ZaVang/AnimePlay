@@ -1,5 +1,10 @@
+/**
+ * UP 轮换适配层：缓存 + gameDataStore 读取 + 商店目录。
+ * 轮换的索引规则（日期 → UP 组合）在 engine/gacha/rotation.ts。
+ */
 import { useGameDataStore } from '@/stores/gameDataStore';
 import type { Card, AnimeCard, CharacterCard } from '@/types/card';
+import { pickUpPool, upPoolIndices, toRotationDate, timeUntilNextRotation } from '@/engine/gacha/rotation';
 
 // 类型守卫函数
 export function isAnimeCard(card: Card): card is AnimeCard {
@@ -93,16 +98,16 @@ export function getCurrentUpPool(gachaType: 'anime' | 'character'): { urId: numb
     return { urId: cached.urId, hrId: cached.hrId };
   }
   
-  // 获取筛选后的卡片（带缓存）
+  // 获取筛选后的卡片（带缓存），用 engine 的日期规则选出当日组合
   const { urCards, hrCards } = getCachedFilteredCards(gachaType);
-  
-  // 如果没有足够的卡片，返回默认配置
-  if (urCards.length === 0 || hrCards.length === 0) {
-    const defaultPool = gachaType === 'anime' 
+  const result = pickUpPool(urCards, hrCards, toRotationDate(new Date()));
+
+  // 卡池为空时的默认兜底
+  if (!result) {
+    const defaultPool = gachaType === 'anime'
       ? { urId: 326, hrId: 876 }  // 假设876是HR卡
       : { urId: 12393, hrId: 304 };
-    
-    // 缓存默认配置
+
     upPoolCache.set(cacheKey, {
       gachaType,
       dateKey,
@@ -110,24 +115,10 @@ export function getCurrentUpPool(gachaType: 'anime' | 'character'): { urId: numb
       urCards: [],
       hrCards: []
     });
-    
+
     return defaultPool;
   }
-  
-  // 获取当前日期
-  const now = new Date();
-  
-  // 计算UR卡索引 (使用日期 + 月份作为种子)
-  const urIndex = (now.getDate() + now.getMonth()) % urCards.length;
-  
-  // 计算HR卡索引 (使用不同的种子避免重复模式)
-  const hrIndex = (now.getDate() * 2 + now.getMonth() * 3) % hrCards.length;
-  
-  const result = {
-    urId: urCards[urIndex].id,
-    hrId: hrCards[hrIndex].id
-  };
-  
+
   // 缓存结果
   upPoolCache.set(cacheKey, {
     gachaType,
@@ -136,18 +127,10 @@ export function getCurrentUpPool(gachaType: 'anime' | 'character'): { urId: numb
     urCards: urCards.slice(), // 浅拷贝避免引用问题
     hrCards: hrCards.slice()
   });
-  
+
   return result;
 }
 
-/**
- * 获取一年中的第几天
- */
-function getDayOfYear(date: Date): number {
-  const start = new Date(date.getFullYear(), 0, 0);
-  const diff = date.getTime() - start.getTime();
-  return Math.floor(diff / (1000 * 60 * 60 * 24));
-}
 
 /**
  * 获取UP池轮换的剩余时间（到下一个轮换的小时数）- 优化版本，带缓存
@@ -161,16 +144,7 @@ export function getTimeUntilNextRotation(): { hours: number; minutes: number } {
     return { hours: cached.hours, minutes: cached.minutes };
   }
   
-  const now = new Date();
-  const tomorrow = new Date(now);
-  tomorrow.setDate(tomorrow.getDate() + 1);
-  tomorrow.setHours(0, 0, 0, 0);
-  
-  const timeDiff = tomorrow.getTime() - now.getTime();
-  const hours = Math.floor(timeDiff / (1000 * 60 * 60));
-  const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-  
-  const result = { hours, minutes };
+  const result = timeUntilNextRotation(new Date());
   
   // 缓存结果（1分钟缓存，因为时间变化频繁）
   rotationTimerCache.set(dateKey, {
@@ -306,10 +280,9 @@ export function getHistoricalUpShopItems(gachaType: 'anime' | 'character'): Shop
     for (let i = 1; i <= 7; i++) {
       const date = new Date();
       date.setDate(date.getDate() - i);
-      
-      // 计算该日期的UP卡牌索引
-      const urIndex = (date.getDate() + date.getMonth()) % urCards.length;
-      const hrIndex = (date.getDate() * 2 + date.getMonth() * 3) % hrCards.length;
+
+      // 用 engine 的日期规则计算该日的UP卡牌索引
+      const { urIndex, hrIndex } = upPoolIndices(toRotationDate(date), urCards.length, hrCards.length);
       
       if (urCards[urIndex] && hrCards[hrIndex]) {
         historicalItems.push(
@@ -338,92 +311,4 @@ export function getHistoricalUpShopItems(gachaType: 'anime' | 'character'): Shop
     console.warn('Failed to get historical UP shop items:', error);
     return [];
   }
-}
-
-/**
- * 清理过期缓存
- * 建议在应用启动时或定时调用，防止内存泄漏
- */
-export function clearExpiredCache(): void {
-  const now = Date.now();
-  const currentDateKey = getTodayDateKey();
-  
-  // 清理过期的UP池缓存
-  for (const [key, value] of upPoolCache.entries()) {
-    if (value.dateKey !== currentDateKey) {
-      upPoolCache.delete(key);
-    }
-  }
-  
-  // 清理过期的轮换计时器缓存
-  for (const [key, value] of rotationTimerCache.entries()) {
-    if (value.dateKey !== currentDateKey || (now - value.timestamp) > 60000) {
-      rotationTimerCache.delete(key);
-    }
-  }
-  
-  // 清理过期的卡片筛选缓存
-  for (const [key, value] of cardFilterCache.entries()) {
-    if ((now - value.timestamp) > CACHE_TTL) {
-      cardFilterCache.delete(key);
-    }
-  }
-}
-
-/**
- * 手动清空所有缓存
- * 用于调试或强制刷新
- */
-export function clearAllCache(): void {
-  upPoolCache.clear();
-  rotationTimerCache.clear();
-  cardFilterCache.clear();
-}
-
-/**
- * 获取缓存统计信息
- * 用于调试和监控
- */
-export function getCacheStats(): {
-  upPoolCacheSize: number;
-  rotationTimerCacheSize: number;
-  cardFilterCacheSize: number;
-} {
-  return {
-    upPoolCacheSize: upPoolCache.size,
-    rotationTimerCacheSize: rotationTimerCache.size,
-    cardFilterCacheSize: cardFilterCache.size
-  };
-}
-
-/**
- * 获取轮换历史（过去7天和未来7天的UP卡组合）
- */
-export function getRotationSchedule(days: number = 7): Array<{
-  date: Date;
-  urId: number;
-  hrId: number;
-  isToday: boolean;
-}> {
-  const schedule = [];
-  const today = new Date();
-  
-  // 获取过去几天和未来几天的轮换
-  for (let i = -days; i <= days; i++) {
-    const date = new Date(today);
-    date.setDate(date.getDate() + i);
-    
-    // 模拟那一天的计算
-    const urIndex = (date.getDate() + date.getMonth()) % 10; // 假设有10张UR
-    const hrIndex = (date.getDate() * 2 + date.getMonth() * 3) % 10; // 假设有10张HR
-    
-    schedule.push({
-      date: new Date(date),
-      urId: urIndex + 1, // 简化示例，实际应该从真实卡片数组计算
-      hrId: hrIndex + 100, // 简化示例
-      isToday: i === 0
-    });
-  }
-  
-  return schedule;
 }

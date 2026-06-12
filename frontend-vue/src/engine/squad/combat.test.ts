@@ -1,10 +1,8 @@
 /**
- * battleCalculator 特征测试（S1 安全网）。
- * 锁死小队战伤害公式的当前行为；S3 把公式迁入 engine/squad 时，这些断言保持不变。
- * 注意：calculateAttackDamage 内部直接用 Math.random 判连击（S3 改为注入 RNG），
- * 此处通过 spy 控制随机以获得确定性。
+ * 小队战公式特征测试（S1 建立，S3 随公式迁入 engine/squad/combat）。
+ * S3 起随机源注入：用 createSequenceRng 替代 Math.random spy，断言数值不变。
  */
-import { describe, it, expect, vi, afterEach } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import {
   calculateDamageReduction,
   calculateDamageBonus,
@@ -14,15 +12,15 @@ import {
   calculateBattlePower,
   generateBattleStats,
   type BattleStats,
-} from './battleCalculator';
-
-afterEach(() => {
-  vi.restoreAllMocks();
-});
+} from './combat';
+import { createSequenceRng } from '../rng';
 
 const stats = (over: Partial<BattleStats> = {}): BattleStats => ({
   hp: 100, atk: 100, def: 0, sp: 0, spd: 0, ...over,
 });
+
+const noCrit = () => createSequenceRng([0.99]); // 连击率上限 0.5 → 0.99 永不连击
+const alwaysCrit = () => createSequenceRng([0]);
 
 describe('基础曲线', () => {
   it('减伤率 = DEF/(1000+DEF)', () => {
@@ -47,32 +45,29 @@ describe('基础曲线', () => {
 
 describe('单次伤害 calculateAttackDamage', () => {
   it('无连击：ATK × (1+增伤) × (1−减伤)，向下取整', () => {
-    vi.spyOn(Math, 'random').mockReturnValue(0.99); // 永不连击（连击率上限 0.5）
-    const r = calculateAttackDamage(stats({ atk: 200, sp: 1000 }), stats({ def: 1000 }));
+    const r = calculateAttackDamage(stats({ atk: 200, sp: 1000 }), stats({ def: 1000 }), noCrit());
     // 200 × 1.5 × 0.5 = 150
     expect(r).toEqual({ damage: 150, isCriticalHit: false });
   });
 
   it('连击时 ×1.3', () => {
-    vi.spyOn(Math, 'random').mockReturnValue(0); // 必连击（spd>0 即 rate>0）
-    const r = calculateAttackDamage(stats({ atk: 200, sp: 1000, spd: 100 }), stats({ def: 1000 }));
+    const r = calculateAttackDamage(stats({ atk: 200, sp: 1000, spd: 100 }), stats({ def: 1000 }), alwaysCrit());
     // 150 × 1.3 = 195
     expect(r).toEqual({ damage: 195, isCriticalHit: true });
   });
 
   it('伤害下限为 1（防御再高也掉 1 滴血）', () => {
-    vi.spyOn(Math, 'random').mockReturnValue(0.99);
-    const r = calculateAttackDamage(stats({ atk: 1 }), stats({ def: 1_000_000 }));
+    const r = calculateAttackDamage(stats({ atk: 1 }), stats({ def: 1_000_000 }), noCrit());
     expect(r.damage).toBe(1);
   });
 });
 
 describe('完整战斗 simulateBattle', () => {
   it('碾压局：玩家先手一刀清场，敌方 HP 归零', () => {
-    vi.spyOn(Math, 'random').mockReturnValue(0.99); // 无连击，全程确定
     const result = simulateBattle(
       stats({ hp: 100, atk: 100 }),
       stats({ hp: 10, atk: 1 }),
+      noCrit(),
     );
     expect(result.winner).toBe('attacker');
     expect(result.defenderRemainHP).toBe(0);
@@ -81,10 +76,10 @@ describe('完整战斗 simulateBattle', () => {
   });
 
   it('对称局也能分出结果且 HP 不为负', () => {
-    vi.spyOn(Math, 'random').mockReturnValue(0.99);
     const result = simulateBattle(
       stats({ hp: 50, atk: 10 }),
       stats({ hp: 50, atk: 10 }),
+      noCrit(),
     );
     // 同攻同血玩家先手必胜
     expect(result.winner).toBe('attacker');

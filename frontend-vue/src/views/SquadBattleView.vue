@@ -3,13 +3,16 @@ import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 import { RouterLink } from 'vue-router';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
-import { 
-  generateBattleStats, 
-  simulateBattle, 
+import {
+  generateBattleStats,
   calculateBattlePower,
-  type BattleStats 
-} from '@/utils/battleCalculator';
-import { generateMatchedAISquad, generateTowerFloorEnemies } from '@/utils/aiSquadGenerator';
+  calculateAttackDamage,
+  generateMatchedAISquad,
+  generateTowerFloorEnemies,
+  defaultRng,
+  type BattleStats,
+} from '@/engine';
+import { CHARACTER_IMAGE_POOL } from '@/utils/imageUtils';
 import CharacterSelectModal from '@/components/battle/CharacterSelectModal.vue';
 import type { CharacterCard } from '@/types/card';
 
@@ -223,7 +226,12 @@ function startTowerBattle(squadId: number) {
   
   // 生成当前层的敌人
   if (!towerEnemyData.value) {
-    towerEnemyData.value = generateTowerFloorEnemies(currentTowerFloor.value);
+    towerEnemyData.value = generateTowerFloorEnemies(
+      gameDataStore.allCharacterCards,
+      currentTowerFloor.value,
+      defaultRng,
+      CHARACTER_IMAGE_POOL,
+    );
   }
   
   // 开始战斗流程
@@ -259,7 +267,7 @@ function startBattle(squadId: number) {
   
   // 生成AI小队
   const playerPower = playerSquad.value.reduce((sum, member) => sum + calculateBattlePower(member.battleStats), 0);
-  const aiSquadData = generateMatchedAISquad(playerPower);
+  const aiSquadData = generateMatchedAISquad(playerPower, defaultRng, CHARACTER_IMAGE_POOL);
   
   startBattleCommon(squadId, aiSquadData.members, aiSquadData.name);
 }
@@ -331,23 +339,9 @@ function executeRound() {
   }, 1500);
 }
 
-// 计算回合伤害（使用新的战斗系统）
+// 回合伤害直接用 engine 的唯一公式（S3 删除了本组件内的复制版本）
 function calculateRoundDamage(attacker: BattleStats, defender: BattleStats) {
-  const baseAttack = attacker.atk;
-  const damageBonus = attacker.sp / (1000 + attacker.sp);
-  const damageReduction = defender.def / (1000 + defender.def);
-  const isCriticalHit = Math.random() < Math.min(attacker.spd / 10, 50) / 100;
-  
-  let damage = baseAttack * (1 + damageBonus) * (1 - damageReduction);
-  
-  if (isCriticalHit) {
-    damage *= 1.3;
-  }
-  
-  return {
-    damage: Math.max(1, Math.floor(damage)),
-    isCriticalHit
-  };
+  return calculateAttackDamage(attacker, defender, defaultRng);
 }
 
 // 检查战斗结束
@@ -566,7 +560,12 @@ function autoFinishBattle() {
 // 刷新爬塔敌人
 function refreshTowerEnemies() {
   console.log('[DEBUG] refreshTowerEnemies called');
-  towerEnemyData.value = generateTowerFloorEnemies(currentTowerFloor.value);
+  towerEnemyData.value = generateTowerFloorEnemies(
+    gameDataStore.allCharacterCards,
+    currentTowerFloor.value,
+    defaultRng,
+    CHARACTER_IMAGE_POOL,
+  );
   saveState(); // 保存新的敌人数据
   console.log('[DEBUG] Tower enemies refreshed:', towerEnemyData.value);
 }

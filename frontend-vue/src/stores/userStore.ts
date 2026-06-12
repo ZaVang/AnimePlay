@@ -41,11 +41,6 @@ interface PlayerState {
   };
 }
 
-interface PityState {
-  totalPulls: number;
-  pullsSinceLastHR: number;
-}
-
 export interface LogEntry {
   message: string;
   type: 'info' | 'success' | 'warning' | 'gacha';
@@ -131,8 +126,7 @@ export const useUserStore = defineStore('user', () => {
   const favoriteCharacters = ref<Set<number>>(new Set());
   const animeGachaHistory = ref<any[]>([]);
   const characterGachaHistory = ref<any[]>([]);
-  const animePityState = ref<PityState>({ totalPulls: 0, pullsSinceLastHR: 0 });
-  const characterPityState = ref<PityState>({ totalPulls: 0, pullsSinceLastHR: 0 });
+  // 保底状态已归属 gacha 域（gachaStore.animePity / characterPity），存档读写经下方 load/save
   
   // 角色养成数据
   const characterNurtureData = ref<Map<number, CharacterNurtureData>>(new Map());
@@ -203,8 +197,7 @@ export const useUserStore = defineStore('user', () => {
     characterNurtureData.value.clear();
     animeGachaHistory.value = [];
     characterGachaHistory.value = [];
-    animePityState.value = { totalPulls: 0, pullsSinceLastHR: 0 };
-    characterPityState.value = { totalPulls: 0, pullsSinceLastHR: 0 };
+    useGachaStore().resetPity();
   }
 
   async function loadStateFromServer() {
@@ -236,8 +229,9 @@ export const useUserStore = defineStore('user', () => {
         }
         playerState.value = loadedState;
 
-        animePityState.value = payload.animePity || animePityState.value;
-        characterPityState.value = payload.characterPity || characterPityState.value;
+        const gachaStore = useGachaStore();
+        gachaStore.animePity = payload.animePity || gachaStore.animePity;
+        gachaStore.characterPity = payload.characterPity || gachaStore.characterPity;
         const savedAnimeCollection = payload.animeCollection || [];
         const migratedAnimeCollection = savedAnimeCollection.map(([id, data]: [number, any]) => [id, typeof data === 'number' ? { count: data } : data]);
         animeCollection.value = new Map(migratedAnimeCollection);
@@ -271,12 +265,13 @@ export const useUserStore = defineStore('user', () => {
       watchedAnime: Array.from(playerState.value.watchedAnime),
     };
     
+    const gachaStore = useGachaStore();
     const payload = {
         state: serializedState,
         animeCollection: Array.from(animeCollection.value.entries()),
         characterCollection: Array.from(characterCollection.value.entries()),
-        animePity: animePityState.value,
-        characterPity: characterPityState.value,
+        animePity: gachaStore.animePity,
+        characterPity: gachaStore.characterPity,
         animeHistory: animeGachaHistory.value,
         characterHistory: characterGachaHistory.value,
         favoriteAnime: Array.from(favoriteAnime.value),
@@ -1077,8 +1072,6 @@ export const useUserStore = defineStore('user', () => {
     characterCollection,
     animeGachaHistory,
     characterGachaHistory,
-    animePityState,
-    characterPityState,
     favoriteAnime,
     favoriteCharacters,
     isLoggedIn,

@@ -1,31 +1,44 @@
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
-import { useUserStore } from './userStore';
 import { useGameDataStore } from './gameDataStore';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { getCurrentUpPool } from '@/utils/gachaRotation';
-import { type Card, type Rarity } from '@/types/card';
+import { type Card } from '@/types/card';
+import { performDraws, createPityState, type PityState, defaultRng } from '@/engine';
 
 export type DrawnCard = Card & {
     isNew?: boolean;
     isDuplicate?: boolean;
 };
 
+/**
+ * 抽卡 store —— 薄编排层：持有保底状态 + 调 engine/gacha。
+ * 保底状态归属 gacha 域（S3 解开 userStore↔gachaStore 循环依赖）；
+ * userStore 存档时从这里读写 animePity/characterPity。
+ */
 export const useGachaStore = defineStore('gacha', () => {
     const lastResult = ref<DrawnCard[]>([]);
 
+    // UP 保底状态（进存档，序列化键沿用 animePity / characterPity）
+    const animePity = ref<PityState>(createPityState());
+    const characterPity = ref<PityState>(createPityState());
+
+    function resetPity() {
+        animePity.value = createPityState();
+        characterPity.value = createPityState();
+    }
+
     function performGachaLogic(
-        gachaType: 'anime' | 'character',   
+        gachaType: 'anime' | 'character',
         count: number
     ): DrawnCard[] {
-        const userStore = useUserStore();
         const gameDataStore = useGameDataStore();
-        
+
         const config = gachaType === 'anime' ? GAME_CONFIG.animeSystem : GAME_CONFIG.characterSystem;
-        const pityState = gachaType === 'anime' ? userStore.animePityState : userStore.characterPityState;
+        const pityRef = gachaType === 'anime' ? animePity : characterPity;
         const allCards = gachaType === 'anime' ? gameDataStore.allAnimeCards : gameDataStore.allCharacterCards;
-        
-        // 获取动态轮换的UP卡池
+
+        // 获取动态轮换的 UP 卡池（失败则按无 UP 池抽取）
         let rateUpCards: Card[] = [];
         try {
             const { urId, hrId } = getCurrentUpPool(gachaType);
@@ -35,87 +48,28 @@ export const useGachaStore = defineStore('gacha', () => {
             rateUpCards = [];
         }
 
-        const drawnCards: DrawnCard[] = [];
+        const result = performDraws({
+            count,
+            allCards,
+            rateUpCards,
+            pity: pityRef.value,
+            config: {
+                rarityConfig: config.rarityConfig,
+                rateUp: config.rateUp,
+                guaranteedSSRPulls: config.gacha.guaranteedSSR_Pulls,
+            },
+            rng: defaultRng,
+        });
 
-        const effectiveRarityEntries = Object.entries(config.rarityConfig).filter(
-            ([, rarityData]) => rarityData.p > 0
-        );
-        if (effectiveRarityEntries.length === 0) {
-            return [];
-        }
-        const totalEffectiveProbability = effectiveRarityEntries.reduce(
-            (sum, [, rarityData]) => sum + rarityData.p,
-            0
-        );
-
-        for (let i = 0; i < count; i++) {
-            pityState.totalPulls++;
-            pityState.pullsSinceLastHR++;
-
-            let drawnCard: Card | undefined;
-
-            if (config.rateUp.pityPulls > 0 && pityState.pullsSinceLastHR >= config.rateUp.pityPulls && rateUpCards.length > 0) {
-                pityState.pullsSinceLastHR = 0;
-                drawnCard = rateUpCards[Math.floor(Math.random() * rateUpCards.length)];
-            } else {
-                const rand = Math.random() * totalEffectiveProbability;
-                let cumulativeProb = 0;
-                let drawnRarity: Rarity = 'N';
-
-                for (const rarity in config.rarityConfig) {
-                    cumulativeProb += (config.rarityConfig as any)[rarity].p;
-                    if (rand < cumulativeProb) {
-                        drawnRarity = rarity as Rarity;
-                        break;
-                    }
-                }
-
-                // UP卡逻辑：UR或HR稀有度时都有概率获得UP卡
-                if ((drawnRarity === 'HR' || drawnRarity === 'UR') && rateUpCards.length > 0 && Math.random() < config.rateUp.hrChance) {
-                    pityState.pullsSinceLastHR = 0; // Reset pity on getting UP card
-                    // 根据抽到的稀有度选择对应的UP卡
-                    const upCardsOfRarity = rateUpCards.filter(c => c.rarity === drawnRarity);
-                    if (upCardsOfRarity.length > 0) {
-                        drawnCard = upCardsOfRarity[Math.floor(Math.random() * upCardsOfRarity.length)];
-                    } else {
-                        // 如果没有对应稀有度的UP卡，随机选择一个UP卡
-                        drawnCard = rateUpCards[Math.floor(Math.random() * rateUpCards.length)];
-                    }
-                } else {
-                    const pool = allCards.filter(c => c.rarity === drawnRarity);
-
-                    if (pool.length > 0) {
-                        drawnCard = pool[Math.floor(Math.random() * pool.length)];
-                    } else {
-                        // Fallback if no cards of the drawn rarity exist
-                        console.warn(`No cards found for rarity "${drawnRarity}" in ${gachaType} pool. Falling back to a random card.`);
-                        drawnCard = allCards.length > 0 ? allCards[Math.floor(Math.random() * allCards.length)] : undefined;
-                    }
-                    
-                    if (drawnRarity === 'HR' || drawnRarity === 'UR') {
-                        pityState.pullsSinceLastHR = 0;
-                    }
-                }
-            }
-            if (drawnCard) {
-                drawnCards.push({ ...drawnCard });
-            }
-        }
-        
-        const highRarities: Rarity[] = ['SSR', 'HR', 'UR'];
-        if (count >= config.gacha.guaranteedSSR_Pulls && !drawnCards.some(card => highRarities.includes(card.rarity))) {
-            const ssrPool = allCards.filter(c => c.rarity === 'SSR');
-            const indexToReplace = drawnCards.findIndex(c => c.rarity === 'N' || c.rarity === 'R' || c.rarity === 'SR') ?? 0;
-            if (ssrPool.length > 0 && indexToReplace !== -1) {
-                drawnCards[indexToReplace] = { ...ssrPool[Math.floor(Math.random() * ssrPool.length)] };
-            }
-        }
-
-        return drawnCards;
+        pityRef.value = result.pity;
+        return result.cards;
     }
-    
+
     return {
         lastResult,
+        animePity,
+        characterPity,
+        resetPity,
         performGachaLogic,
     };
 });

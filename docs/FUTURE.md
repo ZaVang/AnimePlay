@@ -27,7 +27,7 @@
 | S0 | 文档重构 | ✅ | 已完成 |
 | S1 | 测试安全网 & 架构骨架 | ✅ | 已完成 |
 | S2 | engine 抽取：宅理论战 | ✅ | 已完成 |
-| S3 | engine 抽取：抽卡 & 挑战塔 | ☐ | 解耦 |
+| S3 | engine 抽取：抽卡 & 挑战塔 | ✅ | 已完成 |
 | S4 | engine 抽取：技能 & 养成 & AI | ☐ | 解耦 |
 | S5 | 拆 god store & 持久化 | ☐ | 解耦 |
 | S6 | 功能闭环 | ☐ | 补完 |
@@ -85,18 +85,18 @@
 
 ---
 
-## ☐ S3 — engine 抽取：抽卡 & 挑战塔（解耦）
+## ✅ S3 — engine 抽取：抽卡 & 挑战塔（已完成 2026-06-12）
 
 **目标**：抽卡与小队战逻辑入 engine，消除复制公式，解开 userStore↔gachaStore 循环。
 
-- [ ] `gachaStore.performGachaLogic` → `engine/gacha/draw.ts`（用注入 rng）
-- [ ] `gachaRotation` → `engine/gacha/rotation.ts`
-- [ ] 保底状态逻辑归并进 gacha 域（解 `userStore↔gachaStore` 循环依赖）
-- [ ] squad 伤害/战力公式 → `engine/squad/combat.ts`（**消除 `SquadBattleView` 内复制的那份公式**）
-- [ ] `aiSquadGenerator` 塔层生成 → `engine/squad/tower.ts`（用 rng）
-- [ ] 替换这两个域内的 `Math.random` → rng
+- [x] `gachaStore.performGachaLogic` → `engine/gacha/draw.ts`（注入 rng；保底状态传入/返回不就地改）
+- [x] `gachaRotation` 的日期索引规则 → `engine/gacha/rotation.ts`；utils 留缓存/数据读取/商店目录适配层（顺手删零引用的 getRotationSchedule/getCacheStats/clearAllCache/clearExpiredCache/getDayOfYear）
+- [x] 保底状态归并进 gacha 域：`gachaStore.animePity/characterPity` 持有，userStore 存档读写改走 gachaStore——**gachaStore 不再 import userStore，循环消失**（序列化键 animePity/characterPity 不变，旧存档兼容）
+- [x] squad 伤害/战力公式 → `engine/squad/combat.ts`；**SquadBattleView 内复制的 calculateRoundDamage 已删**，全仓只剩一份公式
+- [x] `aiSquadGenerator` → `engine/squad/tower.ts`（角色池/头像池/rng 全参数化；零引用的 generateRealCharacterAISquad/generateSimpleAISquad 淘汰）
+- [x] 两域内全部 `Math.random` → 注入 rng
 
-**Exit**：抽卡/爬塔正常；伤害公式只剩一份；`engine/gacha`+`engine/squad` 零 store import。
+**Exit 达成**：手测动画+角色双池十连（UR 出货、pity 重置后续数、双池独立、票数/经验/升级联动）、塔第 1 层生成（守卫者小队/0% 加成/简单/战力 2110）与战斗回合（连击 1.3× 可见、HP 结算、击败判定），console 零错误；伤害公式唯一；engine/gacha+squad 过 lint 闸；测试 95 → **126 个**全绿（draw 纯函数版分布/保底/66%/十连 + rotation 日期规则 + combat 注入版 + tower 阵容表/加成/兜底/战力分档 + gachaStore 接线薄测试）。
 
 ---
 

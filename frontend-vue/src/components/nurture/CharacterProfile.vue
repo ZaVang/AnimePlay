@@ -3,7 +3,7 @@ import { computed } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/stores/userStore';
-import { generateBattleStats, calculateBattlePower } from '@/utils/battleCalculator';
+import { generateBattleStats, calculateBattlePower } from '@/engine';
 
 const props = defineProps<{
   character: CharacterCard & { nurtureData: CharacterNurtureData };

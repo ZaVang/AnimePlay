@@ -4,18 +4,22 @@
 
 // 可用的角色图片ID列表（从实际文件系统获取）
 const AVAILABLE_CHARACTER_IMAGES = [
-  '34297', '5109', '20584', '10447', '49526', '10453', 
-  '36494', '6414', '77', '44764', '48895', '32508', 
+  '34297', '5109', '20584', '10447', '49526', '10453',
+  '36494', '6414', '77', '44764', '48895', '32508',
   '21773', '45627', '71', '76', '81', '20582'
 ];
+
+/** AI 生成角色可用的头像路径池（传给 engine/squad 的生成函数）。 */
+export const CHARACTER_IMAGE_POOL: readonly string[] = AVAILABLE_CHARACTER_IMAGES.map(
+  id => `/data/images/character/${id}.jpg`,
+);
 
 /**
  * 获取随机的角色图片路径
  * @returns 随机角色图片路径
  */
 export function getRandomCharacterImage(): string {
-  const randomId = AVAILABLE_CHARACTER_IMAGES[Math.floor(Math.random() * AVAILABLE_CHARACTER_IMAGES.length)];
-  return `/data/images/character/${randomId}.jpg`;
+  return CHARACTER_IMAGE_POOL[Math.floor(Math.random() * CHARACTER_IMAGE_POOL.length)];
 }
 
 /**
