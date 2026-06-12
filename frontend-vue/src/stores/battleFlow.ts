@@ -18,6 +18,9 @@ import {
   nextRotationIndex,
   TURN_START_DRAW,
   type GameOutcome,
+  // 整场结算
+  calculateMatchRewards,
+  VICTORY_REASON_TEXT,
   // 对撞规则
   resolveClash as engineResolveClash,
   finalStrength,
@@ -27,10 +30,13 @@ import {
   chooseAttackCard,
   chooseAttackStyle,
   chooseDefense,
+  chooseActiveSkill,
 } from '@/engine';
 import { SkillSystem } from '@/skills/runtime';
 import { DialogueSystem } from '@/stores/battleDialogue';
 import { persistentEffects } from '@/skills/systems';
+import { useProfileStore } from '@/stores/profile';
+import { saveToServer } from '@/stores/persistence';
 
 function playerName(playerId: 'playerA' | 'playerB'): string {
   const playerStore = usePlayerStore();
@@ -49,14 +55,31 @@ function sideStrength(card: ClashInfo['attackingCard'] | undefined, ownerId: 'pl
   return finalStrength(card, [auraStrengthBonus(card, allCharacters), persistentBonus]);
 }
 
+/** 整场结算：记录结果 → 发放奖励（登录用户）→ 存档。结算面板由 BattleView 依据 gameStore 渲染。 */
 function endGame(outcome: GameOutcome) {
   const gameStore = useGameStore();
+  const historyStore = useHistoryStore();
   if (gameStore.isGameOver) return; // 防止重复结算
 
-  gameStore.setWinner(outcome.winner);
+  gameStore.setWinner(outcome.winner, outcome.reason);
   gameStore.setPhase('game_over');
-  console.log(`Game Over! Winner: ${outcome.winner}, Reason: ${outcome.reason}`);
-  // TODO(S6): 结算 UI 与奖励发放在功能闭环 Sprint 接入。
+
+  const resultText = outcome.winner === 'draw' ? '平局' : outcome.winner === 'playerA' ? '胜利' : '败北';
+  historyStore.addLog(`—— 对战结束：${resultText}（${VICTORY_REASON_TEXT[outcome.reason]}）——`, 'event');
+
+  const rewards = calculateMatchRewards(outcome);
+  gameStore.setMatchRewards(rewards);
+
+  const profile = useProfileStore();
+  if (profile.isLoggedIn) {
+    profile.addExp(rewards.exp);
+    profile.earn('knowledgePoints', rewards.knowledge);
+    profile.addLog(
+      `宅理论战${resultText}！获得 ${rewards.exp} 经验、${rewards.knowledge} 知识点。`,
+      outcome.winner === 'playerA' ? 'success' : 'info',
+    );
+    saveToServer();
+  }
 }
 
 function startTurn() {
@@ -360,7 +383,7 @@ function aiTakeTurn() {
   historyStore.addLog(`${aiPlayer.name} 正在思考...`, 'info');
 
   const delay = settingsStore.getBattleDelay('aiThink');
-  setTimeout(() => {
+  setTimeout(async () => {
     const playable = affordableCards(aiPlayer.hand, aiPlayer.tp);
     const cardToPlay = chooseAttackCard(playable, defaultRng);
 
@@ -368,11 +391,25 @@ function aiTakeTurn() {
       const style = chooseAttackStyle(cardToPlay, aiPlayer.tp, defaultRng);
       historyStore.addLog(`${aiPlayer.name} 打出了 [${cardToPlay.name}]。`, 'clash');
       initiateClash(cardToPlay.id, style);
-    } else {
-      // TODO(S6 可选): AI 使用角色技能后再结束回合
-      historyStore.addLog(`${aiPlayer.name} 选择结束回合。`, 'event');
-      endTurn();
+      return;
     }
+
+    // S6: 没牌可出时先尝试主动技能（回费/抽牌自救），再试一次出牌
+    const activeCharacter = aiPlayer.characters[aiPlayer.activeCharacterIndex];
+    const skill = chooseActiveSkill(activeCharacter?.skills, aiPlayer.tp, aiPlayer.skillCooldowns);
+    if (skill) {
+      await SkillSystem.useSkill('playerB', skill);
+      const retryCard = chooseAttackCard(affordableCards(aiPlayer.hand, aiPlayer.tp), defaultRng);
+      if (retryCard) {
+        const style = chooseAttackStyle(retryCard, aiPlayer.tp, defaultRng);
+        historyStore.addLog(`${aiPlayer.name} 打出了 [${retryCard.name}]。`, 'clash');
+        initiateClash(retryCard.id, style);
+        return;
+      }
+    }
+
+    historyStore.addLog(`${aiPlayer.name} 选择结束回合。`, 'event');
+    endTurn();
   }, delay);
 }
 

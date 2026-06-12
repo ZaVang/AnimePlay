@@ -3,6 +3,7 @@ import type { PlayerState, AnimeCard, CharacterCard, Card } from '@/types';
 import type { GameState, ClashInfo, Notification } from '@/types/battle';
 import * as resources from '@/engine/battle/resources';
 import { defaultRng } from '@/engine/rng';
+import type { MatchRewards, VictoryReason } from '@/engine';
 
 // Helper function to create a default player state
 const createDefaultPlayer = (id: 'playerA' | 'playerB', name: string): PlayerState => ({
@@ -25,12 +26,19 @@ const createDefaultPlayer = (id: 'playerA' | 'playerB', name: string): PlayerSta
 // GAME STORE
 // =============================================================================
 export const useGameStore = defineStore('game', {
-  state: (): GameState & { notifications: Notification[], clashInfo: ClashInfo | null } => ({
+  state: (): GameState & {
+    notifications: Notification[];
+    clashInfo: ClashInfo | null;
+    victoryReason: VictoryReason | null;
+    lastMatchRewards: MatchRewards | null;
+  } => ({
     turn: 1,
     activePlayer: 'playerA',
     phase: 'setup',
     topicBias: 0,
     winner: null,
+    victoryReason: null,
+    lastMatchRewards: null,
     notifications: [],
     clashInfo: null, // State for the current battle clash
   }),
@@ -50,26 +58,30 @@ export const useGameStore = defineStore('game', {
       this.activePlayer = 'playerA';
       this.phase = 'draw';
       this.topicBias = 0;
+      this.winner = null;
+      this.victoryReason = null;
+      this.lastMatchRewards = null;
       this.clashInfo = null; // Reset clash info on new game
-      console.log('Game started!');
     },
     nextTurn() {
       this.turn++;
       this.activePlayer = this.activePlayer === 'playerA' ? 'playerB' : 'playerA';
       this.phase = 'draw';
       this.clashInfo = null; // Clear clash info at the end of a turn
-      console.log(`Turn ${this.turn}, ${this.activePlayer}'s turn.`);
     },
     setPhase(phase: GameState['phase']) {
       this.phase = phase;
-      console.log(`Phase changed to: ${phase}`);
     },
     updateTopicBias(change: number) {
       const newBias = this.topicBias + change;
       this.topicBias = Math.max(-10, Math.min(10, newBias));
     },
-    setWinner(winner: 'playerA' | 'playerB' | 'draw' | null) {
+    setWinner(winner: 'playerA' | 'playerB' | 'draw' | null, reason: VictoryReason | null = null) {
       this.winner = winner;
+      this.victoryReason = reason;
+    },
+    setMatchRewards(rewards: MatchRewards | null) {
+      this.lastMatchRewards = rewards;
     },
     // Actions to manage the clash state
     setClash(clash: ClashInfo) {
@@ -85,9 +97,10 @@ export const useGameStore = defineStore('game', {
       this.phase = 'setup';
       this.topicBias = 0;
       this.winner = null;
+      this.victoryReason = null;
+      this.lastMatchRewards = null;
       this.clashInfo = null;
       this.notifications = [];
-      console.log('Game state reset to initial values');
     },
   },
   getters: {
@@ -287,7 +300,6 @@ export const usePlayerStore = defineStore('players', {
     clearPlayers() {
       this.playerA = createDefaultPlayer('playerA', 'Player 1');
       this.playerB = createDefaultPlayer('playerB', 'Player 2');
-      console.log('Player states cleared and reset to defaults');
     }
   },
   getters: {
@@ -316,7 +328,6 @@ export const useHistoryStore = defineStore('battleHistory', {
   actions: {
     addEntry(entry: string) {
       this.log.push(entry);
-      console.log(`[Battle Log] ${entry}`);
     },
     // Keep the old method name for compatibility
     addLog(entry: string, _type?: string) {

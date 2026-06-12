@@ -9,7 +9,7 @@ import {
   SAVE_VERSION,
   createDefaultPresetSquads,
   createDefaultTowerProgress,
-  type SavePayloadV2,
+  type SavePayload,
   type SerializedPlayerState,
 } from './schema';
 import { createPityState } from '@/engine/gacha/draw';
@@ -64,8 +64,8 @@ function migrateTowerProgress(raw: any) {
   };
 }
 
-/** 任意原始存档 → 当前版本 payload。v1 与 v2 之外的形态按"尽力恢复 + 默认兜底"处理。 */
-export function migrate(raw: unknown): SavePayloadV2 {
+/** 任意原始存档 → 当前版本 payload。历史版本之外的形态按"尽力恢复 + 默认兜底"处理。 */
+export function migrate(raw: unknown): SavePayload {
   const payload = (raw ?? {}) as any;
 
   return {
@@ -85,5 +85,8 @@ export function migrate(raw: unknown): SavePayloadV2 {
       ? payload.presetSquads
       : createDefaultPresetSquads(),
     towerProgress: migrateTowerProgress(payload.towerProgress),
+    // v2 → v3：商店限购计数 + 猜角色最高分
+    shopPurchases: payload.shopPurchases && typeof payload.shopPurchases === 'object' ? payload.shopPurchases : {},
+    guess: { highScore: typeof payload.guess?.highScore === 'number' ? payload.guess.highScore : 0 },
   };
 }

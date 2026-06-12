@@ -69,7 +69,6 @@ function saveState() {
   };
   try {
     sessionStorage.setItem(BATTLE_STATE_KEY, JSON.stringify(state));
-    console.log('[DEBUG] State saved:', state);
   } catch (error) {
     console.warn('[DEBUG] Failed to save state:', error);
   }
@@ -91,9 +90,7 @@ function loadState() {
         // 存档进度更靠前时（如旧 session 残留），跟随存档并废弃过期的敌人数据
         currentTowerFloor.value = Math.max(sessionFloor, progressFloor);
         towerEnemyData.value = sessionFloor === currentTowerFloor.value ? state.towerEnemyData : null;
-        console.log('[DEBUG] State loaded:', state);
       } else {
-        console.log('[DEBUG] Reset to tower mode');
         currentPhase.value = 'towerMode';
       }
     }
@@ -107,7 +104,6 @@ function loadState() {
 function clearState() {
   try {
     sessionStorage.removeItem(BATTLE_STATE_KEY);
-    console.log('[DEBUG] State cleared');
   } catch (error) {
     console.warn('[DEBUG] Failed to clear state:', error);
   }
@@ -449,7 +445,6 @@ function endBattle() {
 
 // 重新开始
 function restart() {
-  console.log('[DEBUG] restart called');
   currentPhase.value = 'towerMode';
   playerSquad.value = [];
   enemySquad.value = [];
@@ -459,12 +454,10 @@ function restart() {
   battleResult.value = null;
   selectedSquadForBattle.value = null;
   // 保持敌人数据
-  console.log('[DEBUG] Restarted, phase:', currentPhase.value);
 }
 
 // 返回爬塔模式
 function returnToTowerMode() {
-  console.log('[DEBUG] returnToTowerMode called');
   currentPhase.value = 'towerMode';
   // 不要调用restart()，避免清除towerEnemyData
   playerSquad.value = [];
@@ -476,7 +469,6 @@ function returnToTowerMode() {
   selectedSquadForBattle.value = null;
   // 保持towerEnemyData和currentTowerFloor，避免状态丢失
   saveState(); // 保存状态
-  console.log('[DEBUG] Returned to tower mode, phase:', currentPhase.value);
 }
 
 // 获取生命值百分比
@@ -488,7 +480,6 @@ function getHPPercentage(member: SquadMember): number {
 function autoFinishBattle() {
   if (currentPhase.value !== 'battle') return;
   
-  console.log('[DEBUG] Auto finish battle started');
   
   // 最大回合数限制，避免无限循环
   const maxRounds = 100;
@@ -564,7 +555,6 @@ function autoFinishBattle() {
 
 // 刷新爬塔敌人
 function refreshTowerEnemies() {
-  console.log('[DEBUG] refreshTowerEnemies called');
   towerEnemyData.value = generateTowerFloorEnemies(
     gameDataStore.allCharacterCards,
     currentTowerFloor.value,
@@ -572,12 +562,10 @@ function refreshTowerEnemies() {
     CHARACTER_IMAGE_POOL,
   );
   saveState(); // 保存新的敌人数据
-  console.log('[DEBUG] Tower enemies refreshed:', towerEnemyData.value);
 }
 
 // 组件挂载时恢复状态
 onMounted(() => {
-  console.log('[DEBUG] Component mounted, loading state...');
   loadState();
 });
 
@@ -595,7 +583,6 @@ watch(
 
 // 组件卸载前保存状态
 onBeforeUnmount(() => {
-  console.log('[DEBUG] Component unmounting, saving state...');
   saveState();
 });
 </script>

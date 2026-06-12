@@ -17,6 +17,8 @@ import { useDeckStore } from './deck';
 import { useViewingStore } from './viewing';
 import { useNurtureStore } from './nurture';
 import { usePveStore } from './pve';
+import { useShopStore } from './shop';
+import { useGuessStore } from './guess';
 import { saveToServer, loadFromServer, resetAllDomains } from './persistence';
 
 // 类型转发（历史 import 路径兼容）
@@ -141,10 +143,17 @@ export const useUserStore = defineStore('user', () => {
       alert('请先登录！');
       return Promise.reject(new Error('未登录'));
     }
+    // S6: 每日限购真实计数
+    const shop = useShopStore();
+    if (!shop.canPurchase(item.id, item.dailyLimit)) {
+      profile.addLog(`「${item.name}」今日限购 ${item.dailyLimit} 次已用完，明天再来吧！`, 'warning');
+      return Promise.reject(new Error('今日限购已用完'));
+    }
     if (!profile.spend('knowledgePoints', item.cost)) {
       profile.addLog('知识点不足，无法购买！', 'warning');
       return Promise.reject(new Error('知识点不足'));
     }
+    shop.recordPurchase(item.id);
 
     switch (item.type) {
       case 'ticket':
@@ -195,6 +204,28 @@ export const useUserStore = defineStore('user', () => {
 
     saveToServer();
     return Promise.resolve();
+  }
+
+  // --- 猜角色：游戏逻辑在 guess store，这里编排经济奖励与存档（S6 接入主经济） ---
+
+  function submitGuess(guess: string): { correct: boolean; message: string; knowledgeAwarded: number } {
+    const guessStore = useGuessStore();
+    const result = guessStore.guessCharacter(guess);
+    let knowledgeAwarded = 0;
+
+    if (result.correct) {
+      if (profile.isLoggedIn) {
+        // 得分换知识点：score / 2 向下取整（与单张卡分解值同量级）
+        knowledgeAwarded = Math.floor(guessStore.currentScore / 2);
+        if (knowledgeAwarded > 0) {
+          profile.earn('knowledgePoints', knowledgeAwarded);
+          profile.addLog(`猜角色得分 ${guessStore.currentScore}，兑换 ${knowledgeAwarded} 知识点！`, 'success');
+        }
+        saveToServer(); // 最高分/知识点可能更新
+      }
+    }
+
+    return { ...result, knowledgeAwarded };
   }
 
   // --- 各领域委托（动作完成后统一触发存档） ---
@@ -265,9 +296,13 @@ export const useUserStore = defineStore('user', () => {
       if (viewing.collectFromViewingQueue(slotIndex)) saveToServer();
     },
 
-    // shop
+    // shop（S6 限购）
     purchaseFromShop,
     purchaseShopItem,
+    shopRemainingToday: (itemId: string, dailyLimit?: number) => useShopStore().remainingToday(itemId, dailyLimit),
+
+    // guess（S6 接入经济）
+    submitGuess,
 
     // nurture
     characterNurtureData: computed(() => nurture.characterNurtureData),
@@ -282,6 +317,10 @@ export const useUserStore = defineStore('user', () => {
     getLevelFromExp: nurture.getLevelFromExp,
     getLevelProgress: nurture.getLevelProgress,
     addCharacterExp: withSave(nurture.addCharacterExp),
+    // 训练冷却（S6 持久化）
+    setTrainingCooldown: withSave(nurture.setTrainingCooldown),
+    getTrainingCooldownRemaining: nurture.getTrainingCooldownRemaining,
+    isTrainingOnCooldown: nurture.isTrainingOnCooldown,
 
     // pve ★ S5 起入存档：小队/塔进度的每次变更都会保存
     presetSquads: computed(() => pve.presetSquads),

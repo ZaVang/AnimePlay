@@ -121,7 +121,6 @@ export const useGuessStore = defineStore('guess', () => {
   // 根据稀有度随机选择角色
   function selectRandomCharacter(): CharacterCard | null {
     const characters = gameDataStore.allCharacterCards;
-    console.log('selectRandomCharacter: characters count =', characters?.length);
     if (!characters || characters.length === 0) return null;
 
     // 计算总权重
@@ -174,7 +173,6 @@ export const useGuessStore = defineStore('guess', () => {
     }
 
     currentCharacter.value = selectRandomCharacter();
-    console.log('startNewGame: selected character =', currentCharacter.value?.name);
     isGameActive.value = true;
     isGameOver.value = false;
     isCorrect.value = false;
@@ -247,6 +245,24 @@ export const useGuessStore = defineStore('guess', () => {
     return { correct: false, message: `游戏结束！正确答案是：${currentCharacter.value.name}` };
   }
 
+  // --- 持久化装配（最高分进存档 v3；对局记录为会话态） ---
+
+  function serialize(): { highScore: number } {
+    return { highScore: highScore.value };
+  }
+
+  function deserialize(data: { highScore: number }) {
+    highScore.value = data?.highScore ?? 0;
+  }
+
+  function reset() {
+    highScore.value = 0;
+    gameRecords.value = [];
+    isGameActive.value = false;
+    isGameOver.value = false;
+    showResult.value = false;
+  }
+
   return {
     // 状态
     isGameActive,
@@ -272,5 +288,8 @@ export const useGuessStore = defineStore('guess', () => {
     getOriginalImageUrl,
     startNewGame,
     guessCharacter,
+    serialize,
+    deserialize,
+    reset,
   };
 });

@@ -82,7 +82,6 @@ function showEffect() {
 function playActionSound() {
   // TODO: 添加音效播放逻辑
   // 可以根据不同的 action 类型播放不同的音效
-  console.log(`🔊 播放${props.action?.actionType}音效`);
 }
 </script>
 

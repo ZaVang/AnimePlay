@@ -150,6 +150,32 @@ export const useNurtureStore = defineStore('nurture', () => {
     }
   }
 
+  // --- 训练冷却（S6 起持久化在 CharacterNurtureData.trainingCooldowns） ---
+
+  /** 设置训练冷却（分钟）。 */
+  function setTrainingCooldown(characterId: number, programId: string, durationMinutes: number) {
+    const data = getNurtureData(characterId);
+    if (!data.trainingCooldowns) data.trainingCooldowns = {};
+    data.trainingCooldowns[programId] = Date.now() + durationMinutes * 60 * 1000;
+  }
+
+  /** 剩余冷却秒数（无冷却/已过期为 0；过期项顺手清掉）。 */
+  function getTrainingCooldownRemaining(characterId: number, programId: string): number {
+    const data = getNurtureData(characterId);
+    const endTs = data.trainingCooldowns?.[programId];
+    if (!endTs) return 0;
+    const remaining = Math.ceil((endTs - Date.now()) / 1000);
+    if (remaining <= 0) {
+      delete data.trainingCooldowns![programId];
+      return 0;
+    }
+    return remaining;
+  }
+
+  function isTrainingOnCooldown(characterId: number, programId: string): boolean {
+    return getTrainingCooldownRemaining(characterId, programId) > 0;
+  }
+
   /** 最终战斗属性 = 原始属性 × (1 + 强化%)。 */
   function getEnhancedBattleStats(characterId: number) {
     const character = useGameDataStore().getCharacterCardById(characterId);
@@ -227,6 +253,9 @@ export const useNurtureStore = defineStore('nurture', () => {
     giveGift,
     enhanceAttribute,
     enhanceBattleStat,
+    setTrainingCooldown,
+    getTrainingCooldownRemaining,
+    isTrainingOnCooldown,
     getEnhancedBattleStats,
     getRequiredExpForLevel,
     getLevelFromExp,

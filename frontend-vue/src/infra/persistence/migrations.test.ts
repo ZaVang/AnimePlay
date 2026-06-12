@@ -71,6 +71,11 @@ describe('v1 → v2 迁移', () => {
     expect(v2.presetSquads).toEqual(createDefaultPresetSquads());
     expect(v2.towerProgress).toEqual(createDefaultTowerProgress());
   });
+
+  it('v3 新键：shopPurchases / guess 缺失补默认', () => {
+    expect(v2.shopPurchases).toEqual({});
+    expect(v2.guess).toEqual({ highScore: 0 });
+  });
 });
 
 describe('v2 存档过迁移层', () => {
@@ -84,6 +89,16 @@ describe('v2 存档过迁移层', () => {
     const out = migrate(v2in);
     expect(out.presetSquads[0].name).toBe('我的队');
     expect(out.towerProgress.currentFloor).toBe(13);
+  });
+
+  it('v3 存档的 shopPurchases / guess 原样保留', () => {
+    const out = migrate({
+      version: 3,
+      shopPurchases: { anime_ticket_1: { date: '2026-6-12', count: 3 } },
+      guess: { highScore: 85 },
+    });
+    expect(out.shopPurchases.anime_ticket_1.count).toBe(3);
+    expect(out.guess.highScore).toBe(85);
   });
 });
 

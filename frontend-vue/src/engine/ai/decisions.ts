@@ -4,6 +4,7 @@
  * 概率与判断阈值原样取自旧 AIController / BattleController，行为不变。
  */
 import type { AnimeCard } from '@/types/card';
+import type { Skill } from '@/types/skill';
 import type { RNG } from '../rng';
 
 export type AttackStyle = '友好安利' | '辛辣点评';
@@ -50,6 +51,25 @@ export function chooseAttackStyle(card: AnimeCard, tp: number, rng: RNG): Attack
     return rng.next() < 0.6 ? '辛辣点评' : '友好安利';
   }
   return '友好安利';
+}
+
+/**
+ * 选可用的主动技能（S6：AI 无牌可出时回费/抽牌自救）。
+ * 规则：第一个「主动技能 && TP 够付 && 不在冷却」的技能；没有则 null。
+ */
+export function chooseActiveSkill(
+  skills: readonly Skill[] | undefined,
+  tp: number,
+  cooldowns: Readonly<Record<string, number>>,
+): Skill | null {
+  if (!skills) return null;
+  for (const skill of skills) {
+    if (skill.type !== '主动技能') continue;
+    if ((skill.cost || 0) > tp) continue;
+    if ((cooldowns[skill.id] || 0) > 0) continue;
+    return skill;
+  }
+  return null;
 }
 
 /**

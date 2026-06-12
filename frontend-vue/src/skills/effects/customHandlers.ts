@@ -192,7 +192,6 @@ export const customHandlers: Record<string, EffectHandler> = {
       const opponentId = ctx.playerId === 'playerA' ? 'playerB' : 'playerA';
       if (playerStore[ctx.playerId].tp < playerStore[opponentId].tp) {
         playerStore.drawCards(ctx.playerId, 1);
-        console.log('隐居创作：TP劣势，抽1张牌');
       }
     }
   },
@@ -310,7 +309,6 @@ export const customHandlers: Record<string, EffectHandler> = {
   '凉宫春日_SOS团氛围': (ctx) => {
     if (ctx.event === 'beforeResolve' && ctx.card?.synergy_tags?.includes('日常') && ctx.addStrengthBonus) {
       ctx.addStrengthBonus(ctx.role, 1);
-      console.log('SOS团氛围：日常卡牌+1强度');
     }
   },
 
@@ -321,7 +319,6 @@ export const customHandlers: Record<string, EffectHandler> = {
       const playerStore = usePlayerStore();
       if (playerStore[ctx.playerId].reputation >= playerStore[ctx.playerId === 'playerA' ? 'playerB' : 'playerA'].reputation) {
         ctx.addStrengthBonus(ctx.role, 1);
-        console.log('学霸气质：声望优势，卡牌+1强度');
       }
     }
   },
@@ -347,7 +344,6 @@ export const customHandlers: Record<string, EffectHandler> = {
       const playerStore = usePlayerStore();
       if (playerStore[ctx.playerId].reputation <= 20) {
         playerStore.changeTp(ctx.playerId, 1);
-        console.log('温柔鼓励：声望低迷时获得1TP');
       }
     }
   },
@@ -384,7 +380,6 @@ export const customHandlers: Record<string, EffectHandler> = {
     // TODO: 实现己方打出的第一张音乐类卡牌每回合强度+1的功能
     if (ctx.event === 'beforeResolve' && ctx.card?.synergy_tags?.includes('音乐') && ctx.addStrengthBonus) {
       ctx.addStrengthBonus(ctx.role, 1);
-      console.log('天然直觉：首张音乐卡牌+1强度');
     }
   },
 
@@ -450,7 +445,6 @@ export const customHandlers: Record<string, EffectHandler> = {
       const gameStore = useGameStore();
       const delta = ctx.playerId === 'playerA' ? 1 : -1;
       gameStore.updateTopicBias(delta);
-      console.log('爆裂专精：奇幻卡牌议题偏向效果+1');
     }
   },
 
@@ -479,7 +473,6 @@ export const customHandlers: Record<string, EffectHandler> = {
       
       if (playerStore[opponentId].reputation <= 5) {
         ctx.addStrengthBonus(ctx.role, 2);
-        console.log('圆环理：对手危机，卡牌强度+2');
       }
     }
   },
@@ -489,7 +482,6 @@ export const customHandlers: Record<string, EffectHandler> = {
   '泉此方_运动天赋': (ctx) => {
     if (ctx.event === 'beforeResolve' && ctx.card?.synergy_tags?.includes('运动') && ctx.addStrengthBonus) {
       ctx.addStrengthBonus(ctx.role, 2);
-      console.log('运动天赋：运动卡牌+2强度');
     }
   },
 
@@ -522,7 +514,6 @@ export const customHandlers: Record<string, EffectHandler> = {
       const gameStore = useGameStore();
       const delta = ctx.playerId === 'playerA' ? 1 : -1;
       gameStore.updateTopicBias(delta);
-      console.log('狂乱科学家：科幻卡牌议题偏向+1');
     }
   },
 
@@ -572,7 +563,6 @@ export const customHandlers: Record<string, EffectHandler> = {
     // TODO: 实现己方打出的第一张校园类卡牌每回合+2强度的功能
     if (ctx.event === 'beforeResolve' && ctx.card?.synergy_tags?.includes('校园') && ctx.addStrengthBonus) {
       ctx.addStrengthBonus(ctx.role, 2);
-      console.log('音乐世家：首张校园卡牌+2强度');
     }
   },
 
@@ -606,7 +596,6 @@ export const customHandlers: Record<string, EffectHandler> = {
     if (ctx.event === 'beforeResolve' && ctx.addStrengthBonus) {
       // 简化检测：假设是多样化出牌
       ctx.addStrengthBonus(ctx.role, 1);
-      console.log('团队合作：多样化出牌+1强度');
     }
   },
 
@@ -633,7 +622,6 @@ export const customHandlers: Record<string, EffectHandler> = {
       const historyStore = useHistoryStore();
       const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
       historyStore.addLog(`${name} 的沉默威严：技能被无效化。`, 'info');
-      console.log('沉默威严：技能无效化');
       // TODO: 实际实现技能无效化机制
     }
   },
@@ -686,7 +674,6 @@ export const customHandlers: Record<string, EffectHandler> = {
     if (ctx.event === 'beforeResolve' && ctx.addStrengthBonus) {
       // 简化检测：假设是连续同类型
       ctx.addStrengthBonus(ctx.role, 2);
-      console.log('双子感应：同类型连击+2强度');
     }
   },
 
@@ -808,7 +795,6 @@ export const customHandlers: Record<string, EffectHandler> = {
       const playerStore = usePlayerStore();
       if (playerStore[ctx.playerId].reputation <= 10) {
         ctx.addStrengthBonus(ctx.role, 2);
-        console.log('牺牲觉悟：危机状态，卡牌强度+2');
       }
     }
   },
@@ -834,7 +820,6 @@ export const customHandlers: Record<string, EffectHandler> = {
       const playerStore = usePlayerStore();
       if (playerStore[ctx.playerId].hand.length >= 7) {
         ctx.addStrengthBonus(ctx.role, 1);
-        console.log('内向专注：手牌充足，卡牌强度+1');
       }
     }
   },
@@ -858,7 +843,6 @@ export const customHandlers: Record<string, EffectHandler> = {
       // TODO: 实现己方议题偏向变化时额外+1（朝己方有利方向）的功能
       const delta = ctx.playerId === 'playerA' ? 1 : -1;
       gameStore.updateTopicBias(delta);
-      console.log('螺旋公主：议题偏向额外+1');
     }
   },
 

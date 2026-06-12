@@ -32,20 +32,20 @@ function startTrainingAnimation(programId: string) {
   }, 3000);
 }
 
-// 训练冷却时间管理
-const trainingCooldowns = ref<Record<string, number>>({});
+// 训练冷却（S6 起按角色持久化在养成数据里，刷新/切换角色不再丢失）
+// nowTick 仅用于驱动倒计时显示每秒刷新
+const nowTick = ref(Date.now());
 
 // 检查训练是否在冷却中
 function isTrainingOnCooldown(programId: string): boolean {
-  const cooldownEnd = trainingCooldowns.value[programId];
-  return cooldownEnd ? Date.now() < cooldownEnd : false;
+  void nowTick.value;
+  return userStore.isTrainingOnCooldown(props.character.id, programId);
 }
 
 // 获取训练剩余冷却时间 (秒)
 function getTrainingCooldownRemaining(programId: string): number {
-  const cooldownEnd = trainingCooldowns.value[programId];
-  if (!cooldownEnd) return 0;
-  return Math.max(0, Math.ceil((cooldownEnd - Date.now()) / 1000));
+  void nowTick.value;
+  return userStore.getTrainingCooldownRemaining(props.character.id, programId);
 }
 
 // 格式化冷却时间显示
@@ -59,9 +59,9 @@ function formatCooldownTime(seconds: number): string {
   return `${remainingSeconds}秒`;
 }
 
-// 设置训练冷却
+// 设置训练冷却（写入养成数据并存档）
 function setTrainingCooldown(programId: string, durationMinutes: number) {
-  trainingCooldowns.value[programId] = Date.now() + (durationMinutes * 60 * 1000);
+  userStore.setTrainingCooldown(props.character.id, programId, durationMinutes);
 }
 
 // 可用的训练项目
@@ -263,7 +263,6 @@ function startTraining(programId: string) {
 // 执行战斗属性训练
 function startBattleTraining(programId: string) {
   try {
-    console.log('Starting battle training for:', programId);
     
     const program = battleTrainingPrograms.value.find(p => p.id === programId);
     if (!program) {
@@ -271,7 +270,6 @@ function startBattleTraining(programId: string) {
       return;
     }
     if (!program.available) {
-      console.log('Program not available:', program);
       return;
     }
     
@@ -287,7 +285,6 @@ function startBattleTraining(programId: string) {
 
     // 扣除知识点（货币唯一入口）
     if (!userStore.spend('knowledgePoints', program.cost)) return;
-    console.log('Knowledge points deducted, remaining:', userStore.playerState.knowledgePoints);
     
     // 生成角色当前战斗状态
     const currentBattleStats = generateBattleStats(
@@ -408,13 +405,8 @@ let cooldownUpdateInterval: ReturnType<typeof setInterval> | null = null;
 onMounted(() => {
   // 每秒更新一次冷却时间显示
   cooldownUpdateInterval = setInterval(() => {
-    // 触发响应式更新，这样冷却时间显示会实时更新
-    const now = Date.now();
-    Object.keys(trainingCooldowns.value).forEach(key => {
-      if (trainingCooldowns.value[key] && now >= trainingCooldowns.value[key]) {
-        delete trainingCooldowns.value[key];
-      }
-    });
+    // 每秒推进时钟，驱动倒计时显示刷新（冷却数据本体在养成存档里）
+    nowTick.value = Date.now();
   }, 1000);
 });
 

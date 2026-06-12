@@ -30,7 +30,7 @@
 | S3 | engine 抽取：抽卡 & 挑战塔 | ✅ | 已完成 |
 | S4 | engine 抽取：技能 & 养成 & AI | ✅ | 已完成 |
 | S5 | 拆 god store & 持久化 | ✅ | 已完成 |
-| S6 | 功能闭环 | ☐ | 补完 |
+| S6 | 功能闭环 | ✅ | 已完成 |
 | S7 | 视觉还债 | ☐ | 补完 |
 | S8 | 技能真实现 | ☐ | 补完 |
 | S9 | 性能优化 | ☐ | 上线前置 |
@@ -134,20 +134,20 @@
 
 ---
 
-## ☐ S6 — 功能闭环（补完）
+## ✅ S6 — 功能闭环（已完成 2026-06-12）
 
 **目标**：把 8 个模块的断点补齐，游戏「感觉完整」。
 
-- [ ] 宅理论战结算 UI + 奖励发放（`endGame` 接 `setWinner` + `RewardCalculator`）
-- [ ] 登出按钮接上 `logout()`
-- [ ] 设置 ✕ 关闭按钮生效
-- [ ] 商店每日限购真实计数
-- [ ] 训练冷却持久化（移出组件内存）
-- [ ] 猜角色：最高分持久化 + 接入主经济（得分换知识点）
-- [ ] 移除暴露的调试 UI（「AI手牌数量」、虚拟化开关）；清 150+ `console.log`
-- [ ] （可选）AI 会使用角色技能
+- [x] 宅理论战结算 UI + 奖励发放：`engine/battle/matchRewards.ts`（胜 60exp/30kp · 平 30/15 · 负 15/5，基线对齐塔奖励）；battleFlow.endGame 记录结果+原因、登录用户入账并存档；BattleView 结算面板（胜负/原因文案/奖励/再来一局/返回主页）
+- [x] 登出按钮接上 `logout()`（App.vue @click，登出即保存+清空全部领域）
+- [x] 设置 ✕ 关闭生效（SettingsView 接 router 回主页——原注释里的本意）
+- [x] 商店每日限购真实计数：`stores/shop.ts` 领域 store（按商品记 {date,count}，跨天读取归零）+ 门面拒绝超限 + UI「今日剩余 N / 今日已售罄」；进存档 v3
+- [x] 训练冷却持久化：`CharacterNurtureData.trainingCooldowns`（按角色随养成数据序列化，旧档兼容缺省）；NurtureActions 从组件内存切到 store，刷新/切角色/重开浏览器不再丢
+- [x] 猜角色：最高分进存档 v3 + 接入主经济（答对得分 ÷2 兑知识点，经 `userStore.submitGuess` 编排入账+存档，结果弹窗显示兑换额）
+- [x] 调试残留清零：删「AI手牌数量」、3 处虚拟化开关 checkbox、performanceMonitor（顺带消掉 S9 列的 interval 泄漏源之一）、testRandomAI/deckEditorTest 两个调试工具；**console.log 实际调用 103 → 0**（保留 error/warn）
+- [x] AI 会使用角色技能：`engine/ai/decisions.chooseActiveSkill`（主动+付得起+不在冷却取第一个）；AI 无牌可出时先用技能自救再试一次出牌
 
-**Exit**：8 模块核心循环全闭环；无调试残留。
+**Exit 达成**：8 模块核心循环手测全闭环（速胜局结算面板+奖励入账、商店 5 成 1 拒、冷却/最高分/限购计数三项跨「重开浏览器」保真、设置关闭与登出生效），console 零错误；存档协议升 v3（迁移测试覆盖 v1/v2/v3）；测试 171 → **183 个**全绿；type-check 0 错；S6 接触面 lint 0。
 
 ---
 
@@ -189,7 +189,7 @@
 - [ ] 开 gzip（Flask-Compress）
 - [ ] 恢复图片 `Cache-Control` 长缓存 + 缩略图 + `loading="lazy"`
 - [ ] 补虚拟化（`CharacterSelectModal` / `CharacterSelector` 等可达 665 项的大列表）
-- [ ] 修定时器泄漏（`performanceMonitor` interval、squad 自动战斗 setTimeout 链）
+- [ ] 修定时器泄漏（~~performanceMonitor interval~~ 已随 S6 删除该调试工具；剩 squad 自动战斗 setTimeout 链）
 - [ ] `main.ts` 非阻塞挂载 + loading/超时兜底
 
 **Exit**：首屏 < 1MB；大列表流畅；无定时器泄漏。

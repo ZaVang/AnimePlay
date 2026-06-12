@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, computed } from 'vue';
+import { ref, onMounted } from 'vue';
 import { RouterLink, RouterView } from 'vue-router';
 import { useUserStore } from './stores/userStore';
 import { useGameDataStore } from './stores/gameDataStore';
@@ -7,7 +7,7 @@ import { useThemeStore } from './stores/theme';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
-const themeStore = useThemeStore();
+useThemeStore(); // 初始化主题（实例化即应用已保存主题）
 const usernameInput = ref('');
 
 async function handleLogin() {
@@ -15,6 +15,10 @@ async function handleLogin() {
     await userStore.login(usernameInput.value);
     usernameInput.value = '';
   }
+}
+
+async function handleLogout() {
+  await userStore.logout();
 }
 
 onMounted(() => {
@@ -53,7 +57,7 @@ onMounted(() => {
                         <span>角色券: {{ userStore.playerState.characterGachaTickets }}</span>
                       </div>
                       
-                      <button class="font-bold py-2 px-4 rounded-lg text-sm transition-colors" 
+                      <button @click="handleLogout" class="font-bold py-2 px-4 rounded-lg text-sm transition-colors"
                         :style="{ backgroundColor: 'var(--theme-danger)', color: 'white' }">
                           登出
                       </button>

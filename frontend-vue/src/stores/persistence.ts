@@ -4,7 +4,7 @@
  * - 领域 store 自己不触发保存；保存时机由门面 userStore 的动作统一调用 saveToServer()。
  * - 新增持久化字段：schema.ts + migrations.ts + 这里，三处同改。
  */
-import { migrate, fetchUserSave, pushUserSave, SAVE_VERSION, type SavePayloadV2 } from '@/infra/persistence';
+import { migrate, fetchUserSave, pushUserSave, SAVE_VERSION, type SavePayload } from '@/infra/persistence';
 import { useProfileStore } from './profile';
 import { useCollectionStore } from './collection';
 import { useDeckStore } from './deck';
@@ -12,9 +12,11 @@ import { useViewingStore } from './viewing';
 import { useNurtureStore } from './nurture';
 import { usePveStore } from './pve';
 import { useGachaStore } from './gachaStore';
+import { useShopStore } from './shop';
+import { useGuessStore } from './guess';
 
 /** 从各领域 store 收集状态，装配为当前版本 payload。 */
-export function buildPayload(): SavePayloadV2 {
+export function buildPayload(): SavePayload {
   const profile = useProfileStore();
   const deck = useDeckStore();
   const viewing = useViewingStore();
@@ -39,11 +41,13 @@ export function buildPayload(): SavePayloadV2 {
     ...gachaData,
     characterNurtureData: nurture.serialize(),
     ...pveData,
+    shopPurchases: useShopStore().serialize(),
+    guess: useGuessStore().serialize(),
   };
 }
 
 /** 把（已迁移到当前版本的）payload 分发给各领域 store。 */
-export function applyPayload(payload: SavePayloadV2) {
+export function applyPayload(payload: SavePayload) {
   const profile = useProfileStore();
   profile.deserializeCore(payload.state);
   useDeckStore().deserialize(payload.state.savedDecks);
@@ -69,6 +73,8 @@ export function applyPayload(payload: SavePayloadV2) {
     presetSquads: payload.presetSquads,
     towerProgress: payload.towerProgress,
   });
+  useShopStore().deserialize(payload.shopPurchases);
+  useGuessStore().deserialize(payload.guess);
 }
 
 /** 全部领域回到初始态（新玩家 / 登出）。 */
@@ -80,6 +86,8 @@ export function resetAllDomains() {
   useGachaStore().reset();
   useNurtureStore().reset();
   usePveStore().reset();
+  useShopStore().reset();
+  useGuessStore().reset();
 }
 
 // 保存串行化 + 合并：同一时刻最多一个写请求在路上，连发的保存坍缩为一次

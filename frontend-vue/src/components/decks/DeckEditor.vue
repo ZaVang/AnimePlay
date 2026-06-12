@@ -118,15 +118,13 @@ if (import.meta.env.DEV) {
   import('vue').then(({ watch }) => {
     watch(
       () => ownedAnimeCards.value.length,
-      (newCount, oldCount) => {
-        console.log(`🔧 [DeckEditor] 动画卡收藏数量: ${oldCount} → ${newCount}, 虚拟化: ${newCount > DECK_VIRTUALIZATION_THRESHOLD ? '✅' : '❌'}`);
+      () => {
       }
     );
     
     watch(
       () => ownedCharacterCards.value.length,
-      (newCount, oldCount) => {
-        console.log(`🔧 [DeckEditor] 角色卡收藏数量: ${oldCount} → ${newCount}, 虚拟化: ${newCount > DECK_VIRTUALIZATION_THRESHOLD ? '✅' : '❌'}`);
+      () => {
       }
     );
   });
@@ -277,10 +275,6 @@ async function handleSaveDeck() {
                         <option v-for="tag in allAnimeTags" :key="tag" :value="tag">{{ tag }}</option>
                     </select>
                 </div>
-                <label class="flex items-center space-x-2 text-gray-700 text-sm">
-                    <input type="checkbox" v-model="enableVirtualization" class="rounded">
-                    <span>启用虚拟化 (>{{ DECK_VIRTUALIZATION_THRESHOLD }}张)</span>
-                </label>
              </div>
              <div v-if="collectionTab === 'character'" class="space-y-2">
                 <input type="text" v-model="characterFilters.name" placeholder="搜索角色名称..." class="w-full p-2 border rounded">
@@ -288,10 +282,6 @@ async function handleSaveDeck() {
                     <option value="">所有稀有度</option>
                     <option v-for="r in rarityOrder" :key="r" :value="r">{{ r }}</option>
                 </select>
-                <label class="flex items-center space-x-2 text-gray-700 text-sm">
-                    <input type="checkbox" v-model="enableVirtualization" class="rounded">
-                    <span>启用虚拟化 (>{{ DECK_VIRTUALIZATION_THRESHOLD }}张)</span>
-                </label>
              </div>
 
            </div>

@@ -1,12 +1,15 @@
 <script setup lang="ts">
-import { ref, computed, watch, onMounted } from 'vue';
+import { ref, watch, onMounted } from 'vue';
 import { useGuessStore, GAME_STAGES } from '@/stores/guess';
-import { GAME_CONFIG } from '@/config/gameConfig';
+import { useUserStore } from '@/stores/userStore';
 
 type FeedbackType = 'success' | 'error' | 'info' | '';
 
 const guessStore = useGuessStore();
+const userStore = useUserStore();
 const guessInput = ref('');
+// 本局答对兑换的知识点（S6 接入主经济）
+const lastKnowledgeAwarded = ref(0);
 const feedbackMessage = ref('');
 const feedbackType = ref<FeedbackType>('');
 const canvasRef = ref<HTMLCanvasElement | null>(null);
@@ -26,18 +29,15 @@ const rarityColors: Record<string, string> = {
 // 加载图片
 function loadImage() {
   if (!guessStore.currentCharacter) {
-    console.log('loadImage: no currentCharacter');
     return;
   }
   
   const url = guessStore.getCharacterImageUrl();
-  console.log('loadImage: url =', url);
   
   const img = new Image();
   img.crossOrigin = 'anonymous';
   
   img.onload = () => {
-    console.log('loadImage: loaded successfully');
     originalImage.value = img;
     guessStore.imageLoaded = true;
     guessStore.imageError = false;
@@ -117,8 +117,10 @@ async function submitGuess() {
     return;
   }
   
-  const result = guessStore.guessCharacter(guessInput.value.trim());
-  
+  // 经走 userStore 编排：答对时兑换知识点并存档（S6）
+  const result = userStore.submitGuess(guessInput.value.trim());
+  lastKnowledgeAwarded.value = result.knowledgeAwarded;
+
   if (result.correct) {
     showFeedback(result.message, 'success');
     isAnimating.value = true;
@@ -351,6 +353,9 @@ function getFeedbackClass(type: FeedbackType): string {
             <span class="text-2xl font-bold" :style="{ color: 'var(--theme-accent)' }">
               +{{ guessStore.currentScore }} 分
             </span>
+            <p v-if="lastKnowledgeAwarded > 0" class="text-sm mt-1" :style="{ color: 'var(--theme-text-secondary)' }">
+              兑换 +{{ lastKnowledgeAwarded }} 知识点
+            </p>
           </div>
         </div>
         

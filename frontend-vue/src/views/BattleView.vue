@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue';
+import { computed, ref, onMounted, onBeforeUnmount, nextTick } from 'vue';
+import { useRouter } from 'vue-router';
 import { useGameStore, usePlayerStore } from '@/stores/battle';
 import { BattleSetup } from '@/stores/battleSetup';
 import { BattleFlow } from '@/stores/battleFlow';
 import { InteractionSystem } from '@/skills/interaction';
 import { clearBattleSkillState } from '@/skills/systems';
+import { VICTORY_REASON_TEXT } from '@/engine';
 import type { Deck } from '@/stores/userStore';
 
 import DeckSelector from '@/components/battle/ui/DeckSelector.vue';
@@ -18,17 +20,39 @@ import InteractionManager from '@/components/battle/InteractionManager.vue';
 import BattleDialogueManager from '@/components/battle/BattleDialogueManager.vue';
 import BattleRulesModal from '@/components/battle/ui/BattleRulesModal.vue';
 
-// 开发环境下导入测试工具
-if (import.meta.env.DEV) {
-  import('@/utils/testRandomAI');
-}
 
 type BattlePhase = 'deckSelection' | 'battle';
 
+const router = useRouter();
 const gameStore = useGameStore();
 const playerStore = usePlayerStore();
 const battlePhase = ref<BattlePhase>('deckSelection');
 const interactionManager = ref<InstanceType<typeof InteractionManager> | null>(null);
+
+// --- S6: 整场结算面板 ---
+const resultTitle = computed(() => {
+  if (gameStore.winner === 'draw') return '平局';
+  return gameStore.winner === 'playerA' ? '🎉 胜利！' : '💀 败北';
+});
+const resultReason = computed(() =>
+  gameStore.victoryReason ? VICTORY_REASON_TEXT[gameStore.victoryReason] : '',
+);
+
+function cleanupBattleState() {
+  gameStore.resetGame();
+  playerStore.clearPlayers();
+  clearBattleSkillState();
+}
+
+function handlePlayAgain() {
+  cleanupBattleState();
+  battlePhase.value = 'deckSelection';
+}
+
+function handleGoHome() {
+  cleanupBattleState();
+  router.push('/');
+}
 
 // 战斗规则弹窗
 const showRulesModal = ref(false);
@@ -55,22 +79,18 @@ onBeforeUnmount(() => {
 });
 
 function handleDeckSelected(deck: Deck, aiProfileId?: string) {
-  console.log('🎮 尝试开始战斗，使用卡组:', deck.name, 'AI:', aiProfileId);
   try {
     BattleSetup.initializeGameWithDeck(deck, aiProfileId);
     battlePhase.value = 'battle';
-    console.log('✅ 战斗初始化成功');
   } catch (error) {
     console.error('❌ 战斗初始化失败:', error);
   }
 }
 
 function handleRandomDeck(aiProfileId?: string) {
-  console.log('🎲 尝试开始随机战斗，AI:', aiProfileId);
   try {
     BattleSetup.initializeRandomGame(aiProfileId);
     battlePhase.value = 'battle';
-    console.log('✅ 随机战斗初始化成功');
   } catch (error) {
     console.error('❌ 随机战斗初始化失败:', error);
   }
@@ -81,11 +101,9 @@ function handleSkipTurn() {
 }
 
 function handleExitBattle() {
-  console.log('🚪 退出战斗按钮被点击');
   try {
     // 确认退出对话框
     if (confirm('确定要退出当前战斗吗？进度将不会保存。')) {
-      console.log('✅ 用户确认退出，开始清理战斗状态');
       
       // 清理战斗状态
       gameStore.resetGame();
@@ -96,10 +114,6 @@ function handleExitBattle() {
       
       // 返回卡组选择界面
       battlePhase.value = 'deckSelection';
-      
-      console.log('✅ 战斗退出成功，已返回卡组选择界面');
-    } else {
-      console.log('❌ 用户取消退出');
     }
   } catch (error) {
     console.error('❌ 退出战斗失败:', error);
@@ -182,6 +196,22 @@ function handleExitBattle() {
       <div class="field-player">
         <PlayerField playerId="playerA" />
       </div>
+
+      <!-- S6: 整场结算面板 -->
+      <div v-if="gameStore.isGameOver" class="battle-result-overlay">
+        <div class="battle-result-card">
+          <h2 class="result-title">{{ resultTitle }}</h2>
+          <p class="result-reason">{{ resultReason }}</p>
+          <div v-if="gameStore.lastMatchRewards" class="result-rewards">
+            <span class="reward-chip">+{{ gameStore.lastMatchRewards.exp }} 经验</span>
+            <span class="reward-chip">+{{ gameStore.lastMatchRewards.knowledge }} 知识点</span>
+          </div>
+          <div class="result-actions">
+            <button class="battle-action-btn bg-teal-primary hover:opacity-90" @click="handlePlayAgain">再来一局</button>
+            <button class="battle-action-btn bg-warm-400 hover:opacity-90" @click="handleGoHome">返回主页</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -194,7 +224,7 @@ function handleExitBattle() {
   @apply w-full h-full flex items-center justify-center;
 }
 .battle-arena {
-  @apply h-full flex flex-col;
+  @apply h-full flex flex-col relative;
 }
 .field-opponent, .field-player {
   @apply flex-1;
@@ -233,6 +263,35 @@ function handleExitBattle() {
 /* 统一战斗操作按钮样式 */
 .battle-action-btn {
     @apply px-6 py-3 rounded-lg text-white font-semibold transition-all duration-200 min-w-[120px] text-center;
+}
+
+/* S6: 整场结算面板 */
+.battle-result-overlay {
+  @apply absolute inset-0 z-50 flex items-center justify-center;
+  background: rgba(0, 0, 0, 0.55);
+}
+.battle-result-card {
+  @apply rounded-2xl px-10 py-8 text-center shadow-2xl;
+  background: var(--theme-bg-secondary, #fff);
+  color: var(--theme-text-primary, #333);
+  min-width: 320px;
+}
+.result-title {
+  @apply text-3xl font-bold mb-2;
+}
+.result-reason {
+  @apply text-sm mb-4 opacity-80;
+}
+.result-rewards {
+  @apply flex justify-center gap-3 mb-6;
+}
+.reward-chip {
+  @apply px-3 py-1 rounded-full text-sm font-semibold;
+  background: var(--theme-accent, #e8b84a);
+  color: #fff;
+}
+.result-actions {
+  @apply flex justify-center gap-4;
 }
 
 .battle-action-btn:hover {

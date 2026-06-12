@@ -234,14 +234,16 @@ const activeShopItems = computed((): (ShopItem & { card?: any })[] => {
             <h4 class="font-semibold text-sm mb-1">{{ item.name }}</h4>
             <p class="text-xs text-gray-600 mb-2">{{ item.description }}</p>
             <p v-if="item.quantity" class="text-xs text-blue-600 mb-1">数量: {{ item.quantity }}</p>
-            <p v-if="item.dailyLimit" class="text-xs text-orange-600 mb-2">每日限购: {{ item.dailyLimit }}</p>
+            <p v-if="item.dailyLimit" class="text-xs text-orange-600 mb-2">
+              每日限购 {{ item.dailyLimit }} · 今日剩余 {{ userStore.shopRemainingToday(item.id, item.dailyLimit) }}
+            </p>
             <p class="font-semibold text-sm mb-2">{{ item.cost.toLocaleString() }} 知识点</p>
-            <button 
+            <button
                 @click="handlePurchase(item)"
-                :disabled="isPurchasing === item.id || userStore.playerState.knowledgePoints < item.cost"
+                :disabled="isPurchasing === item.id || userStore.playerState.knowledgePoints < item.cost || userStore.shopRemainingToday(item.id, item.dailyLimit) <= 0"
                 :class="[
                   'w-full font-semibold py-2 px-3 rounded-lg text-sm transition-all duration-200',
-                  isPurchasing === item.id || userStore.playerState.knowledgePoints < item.cost
+                  isPurchasing === item.id || userStore.playerState.knowledgePoints < item.cost || userStore.shopRemainingToday(item.id, item.dailyLimit) <= 0
                     ? 'bg-warm-300 text-gray-700 cursor-not-allowed'
                     : item.type === 'ticket' ? 'bg-indigo-600 text-white hover:bg-indigo-700'
                     : item.type === 'currency' ? 'bg-amber-600 text-white hover:bg-amber-700'
@@ -255,6 +257,9 @@ const activeShopItems = computed((): (ShopItem & { card?: any })[] => {
                     <path class="opacity-75" fill="currentColor" d="m4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                   </svg>
                   购买中...
+                </span>
+                <span v-else-if="userStore.shopRemainingToday(item.id, item.dailyLimit) <= 0">
+                  今日已售罄
                 </span>
                 <span v-else-if="userStore.playerState.knowledgePoints < item.cost">
                   知识点不足

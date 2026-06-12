@@ -3,9 +3,10 @@
  * 用序列 RNG 精确控制每个随机分支。
  */
 import { describe, it, expect } from 'vitest';
-import { affordableCards, chooseAttackCard, chooseAttackStyle, chooseDefense } from './decisions';
+import { affordableCards, chooseAttackCard, chooseAttackStyle, chooseDefense, chooseActiveSkill } from './decisions';
 import { createSequenceRng } from '../rng';
 import type { AnimeCard } from '@/types/card';
+import type { Skill } from '@/types/skill';
 
 const card = (id: number, points: number, cost: number): AnimeCard =>
   ({ id, points, cost }) as unknown as AnimeCard;
@@ -81,5 +82,26 @@ describe('chooseDefense', () => {
     // skip 随机 0.5 ≥ 0.3 → 防御
     const kept = chooseDefense(weak, 5, 1, createSequenceRng([0.5]));
     expect(kept.defend).toBe(true);
+  });
+});
+
+describe('chooseActiveSkill（S6：AI 无牌可出时的自救）', () => {
+  const mk = (id: string, type: '主动技能' | '被动光环', cost?: number): Skill =>
+    ({ id, name: id, type, description: '', cost }) as Skill;
+
+  it('跳过被动、付不起、冷却中的技能，取第一个可用主动', () => {
+    const skills = [
+      mk('PASSIVE', '被动光环'),
+      mk('EXPENSIVE', '主动技能', 5),
+      mk('COOLING', '主动技能', 1),
+      mk('OK', '主动技能', 2),
+    ];
+    expect(chooseActiveSkill(skills, 3, { COOLING: 2 })?.id).toBe('OK');
+  });
+
+  it('cost 缺省按 0；无可用 → null；skills 未定义 → null', () => {
+    expect(chooseActiveSkill([mk('FREE', '主动技能')], 0, {})?.id).toBe('FREE');
+    expect(chooseActiveSkill([mk('A', '主动技能', 9)], 1, {})).toBeNull();
+    expect(chooseActiveSkill(undefined, 9, {})).toBeNull();
   });
 });

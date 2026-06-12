@@ -63,9 +63,9 @@ The 2026-06 audit (`docs/项目审计报告-2026-06-12.md`) found these — be a
 - **~半数技能仍是播报式假实现**：现收敛在 `engine/skills/announcements.ts` 数据表（72 条），S8 逐批真实现。不要往表里加新假技能。
 - ~~Economy has no transaction entry~~ **已在 S5 解决**：`profile.spend()/earn()` 是唯一货币入口，8 处组件直改已清零。不要再绕过它改货币。
 - ~~Save protocol gaps（presetSquads/towerProgress 刷新即丢）~~ **已在 S5 解决**：存档协议 v2 + 迁移。注意：后端写文件仍非原子（S10 加固），前端已做保存串行合并兜底。
-- **Battle "no result screen"**: `battleFlow.endGame()` 已写入 `setWinner`（S2），但结算 UI 与奖励发放仍缺 —— S6 接入。
+- ~~Battle no result screen~~ **已在 S6 解决**：结算面板 + matchRewards 奖励入账（engine/battle/matchRewards.ts）。
 - **172 hardcoded `text-white`** (46 files) not wired to theme vars → titles wash out on the light default theme.
-- **Dead code**: `userStore.logout` unreachable（登出按钮无 handler，S6 修）。counter.ts/CollectionStats/旧技能 stub 已于 S1-S4 清除。
+- ~~Dead code / 调试残留~~ **已清**：登出按钮已接通（S6）；console.log 实调用归零、调试 UI（AI手牌数量/虚拟化开关/performanceMonitor）已删。新增代码请勿再引入裸 console.log。
 - **Security (backend)**: save endpoint has no auth; `debug=True`. Must fix before any deploy.
 
 ## Docs Index

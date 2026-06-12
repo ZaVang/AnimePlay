@@ -8,7 +8,6 @@ import DeckManager from '@/components/decks/DeckManager.vue';
 import AnimeCard from '@/components/AnimeCard.vue';
 import CharacterCard from '@/components/CharacterCard.vue';
 import VirtualGrid from '@/components/VirtualGrid.vue';
-import '@/utils/performanceMonitor'; // 启动性能监控
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
@@ -113,26 +112,6 @@ const shouldVirtualizeCharacter = computed(() => {
   return enableVirtualization.value && filteredCharacterCards.value.length > VIRTUALIZATION_THRESHOLD;
 });
 
-// 性能监控（开发环境）
-if (import.meta.env.DEV) {
-  // 监控卡片数量变化
-  import('vue').then(({ watch }) => {
-    watch(
-      () => filteredAnimeCards.value.length,
-      (newCount, oldCount) => {
-        console.log(`📊 [虚拟化] 动画卡数量变化: ${oldCount} → ${newCount}, 虚拟化: ${newCount > VIRTUALIZATION_THRESHOLD ? '✅' : '❌'}`);
-      }
-    );
-    
-    watch(
-      () => filteredCharacterCards.value.length,
-      (newCount, oldCount) => {
-        console.log(`📊 [虚拟化] 角色卡数量变化: ${oldCount} → ${newCount}, 虚拟化: ${newCount > VIRTUALIZATION_THRESHOLD ? '✅' : '❌'}`);
-      }
-    );
-  });
-}
-
 const filteredCharacterCards = computed(() => {
   if (!userStore.isLoggedIn || gameDataStore.allCharacterCards.length === 0) return [];
 
@@ -184,10 +163,6 @@ const filteredCharacterCards = computed(() => {
                 <button @click="handleDismantleAll('anime')" :disabled="!hasDuplicateAnime" class="p-2 border rounded-lg bg-red-600 text-white disabled:bg-warm-300">
                     一键分解重复卡
                 </button>
-                <label class="flex items-center space-x-2 text-gray-700">
-                    <input type="checkbox" v-model="enableVirtualization" class="rounded">
-                    <span class="text-sm">启用虚拟化 (>{{ VIRTUALIZATION_THRESHOLD }}张)</span>
-                </label>
             </div>
         </div>
         <div v-if="activeTab === 'character'">
@@ -200,10 +175,6 @@ const filteredCharacterCards = computed(() => {
                 <button @click="handleDismantleAll('character')" :disabled="!hasDuplicateCharacters" class="p-2 border rounded-lg bg-red-600 text-white disabled:bg-warm-300">
                     一键分解重复卡
                 </button>
-                <label class="flex items-center space-x-2 text-gray-700">
-                    <input type="checkbox" v-model="enableVirtualization" class="rounded">
-                    <span class="text-sm">启用虚拟化 (>{{ VIRTUALIZATION_THRESHOLD }}张)</span>
-                </label>
             </div>
         </div>
       </div>

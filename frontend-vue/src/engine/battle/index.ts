@@ -6,6 +6,7 @@
 export * from './turn';
 export * from './clash';
 export * from './rewards';
+export * from './matchRewards';
 export * from './strength';
 export * from './resources';
 export * from './setup';

@@ -15,7 +15,6 @@ app.use(router)
 const gameDataStore = useGameDataStore(pinia);
 gameDataStore.fetchGameData().then(() => {
   app.mount('#app');
-  console.log('App mounted after game data has been fetched.');
 }).catch(error => {
   console.error("Failed to fetch game data before mounting:", error);
   // Optionally, you can show an error message to the user on the screen here

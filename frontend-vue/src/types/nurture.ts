@@ -38,4 +38,6 @@ export interface CharacterNurtureData {
     dislikedTopics: string[];
     favoriteGifts: string[];
   };
+  /** 训练冷却（S6 起持久化）：key = 训练项目 id，value = 冷却结束时间戳（毫秒）。旧档缺省。 */
+  trainingCooldowns?: Record<string, number>;
 }

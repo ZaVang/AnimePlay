@@ -19,6 +19,8 @@ import { useViewingStore } from './viewing';
 import { useNurtureStore } from './nurture';
 import { usePveStore } from './pve';
 import { useGachaStore } from './gachaStore';
+import { useShopStore } from './shop';
+import { useGuessStore } from './guess';
 import { createDefaultNurtureData } from '@/engine';
 import { SAVE_VERSION } from '@/infra/persistence';
 
@@ -63,6 +65,10 @@ function populateAllDomains() {
   pve.updateSquadName(1, '推塔队');
   pve.towerProgress.currentFloor = 8;
   pve.towerProgress.maxFloor = 7;
+
+  useShopStore().recordPurchase('anime_ticket_1');
+  useGuessStore().highScore = 85;
+  data.trainingCooldowns = { charm_training: 1893456000000 };
 }
 
 describe('buildPayload ⇄ applyPayload 往返', () => {
@@ -101,6 +107,11 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
     expect(pve.presetSquads[0].name).toBe('推塔队');
     expect(pve.presetSquads[0].members).toEqual([12393, null, null, null]);
     expect(pve.towerProgress).toMatchObject({ currentFloor: 8, maxFloor: 7 });
+
+    // S6 新增域：商店限购 / 猜角色最高分 / 训练冷却（随养成数据）
+    expect(useShopStore().purchasedToday('anime_ticket_1')).toBe(1);
+    expect(useGuessStore().highScore).toBe(85);
+    expect(useNurtureStore().characterNurtureData.get(12393)?.trainingCooldowns).toEqual({ charm_training: 1893456000000 });
   });
 
   it('payload 带版本号与全部 schema 键', () => {

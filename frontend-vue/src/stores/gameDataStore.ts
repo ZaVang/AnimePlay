@@ -84,8 +84,6 @@ export const useGameDataStore = defineStore('gameData', () => {
           allCharacterCards.value = [];
       }
 
-      console.log(`Loaded ${allAnimeCards.value.length} anime cards.`);
-      console.log(`Loaded ${allCharacterCards.value.length} character cards.`);
 
     } catch (e: any) {
       error.value = e.message;

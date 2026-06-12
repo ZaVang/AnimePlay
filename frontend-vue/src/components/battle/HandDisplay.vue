@@ -33,7 +33,6 @@ const canPlayCard = computed(() => {
 
 function onCardClick(card: AnimeCardType) {
   if (!canPlayCard.value) {
-    console.log("Cannot play card right now.");
     return;
   }
   selectedCard.value = card;
@@ -66,10 +65,6 @@ function handlePlayCard(style: '友好安利' | '辛辣点评' | '赞同' | '反
 
 <template>
   <div class="hand-display-container">
-    <!-- 调试信息：显示手牌数量 -->
-    <div v-if="isOpponent" class="debug-info">
-      AI手牌数量: {{ hand.length }}
-    </div>
     <div
       v-for="card in hand"
       :key="card.id"

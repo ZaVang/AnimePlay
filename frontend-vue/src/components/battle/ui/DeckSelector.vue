@@ -49,12 +49,10 @@ const showRulesModal = ref(false);
 
 // 调试函数
 function handleDeckClick(deck: Deck) {
-  console.log('📦 卡组被点击:', deck.name, 'AI:', selectedAIId.value);
   emit('deckSelected', deck, selectedAIId.value);
 }
 
 function handleRandomClick() {
-  console.log('🎲 随机卡组按钮被点击，AI:', selectedAIId.value);
   emit('randomDeck', selectedAIId.value);
 }
 </script>
