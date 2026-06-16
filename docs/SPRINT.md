@@ -114,6 +114,24 @@ grep -rn "debug=True" backend/server.py api/index.py
 
 ---
 
+## 🔁 Evolution 第 3 轮追加任务（收口轮，基于 Evolution 审计 Round 3，2026-06-16）
+
+> 主题：把前两轮造的系统**让新人感知到、让老玩家带出去**。取 reviewer 最高 ROI 组合 🔴-1 onboarding + 🟡-2 成绩卡（都零后端）。
+
+- [x] **E3-T1：新人 onboarding（FTUE 点火）**
+  - 目标：首登引导遮罩（localStorage 触发，指向每日任务/抽卡/收藏/对战，可跳过）+ 首抽庆祝（GachaResultModal 叠特殊态）+ 空态 CTA（7 处死文字加引导按钮）。不进存档。
+  - 验收：首登弹引导可跳过且不再弹、首抽有庆祝非首抽无、主要空态有 CTA、type-check/build 通过。
+- [x] **E3-T2：可分享 Wrapped 成绩卡（传播喇叭）**
+  - 目标：CollectionsView 标题栏一键生成可下载炫耀图（Canvas 聚合图鉴完成度/等级/成就数/塔进度/真实数据），纯前端零后端零存档。
+  - 验收：入口可见、生成含真实成绩的 PNG 可下载（toBlob+a.download）、不引 html2canvas、颜色品牌一致、type-check/build 通过。
+- [x] **E3-T3：收口杂项（文档纠偏）**
+  - 目标：CLAUDE.md / pitfalls.md 的存档协议版本号 v4 → v6（实际值），免后续误判。
+  - 验收：文档版本号与实际一致。
+
+**第 3 轮验收命令**：`cd frontend-vue && npm run type-check`（0 错）/ `npm run test`（≥340 全绿）/ `npm run build`（通过）。
+
+---
+
 ## 📦 Backlog（决策门控，**本轮未激活**，勿当作 `[ ]` 执行任务）
 
 > 以下是 FUTURE.md S11/S12 的拆分，**仅作路线参考**。它们是「演进/终点」方向，FUTURE.md 明确标注

@@ -4,11 +4,16 @@ import type { DrawnCard } from '@/stores/gachaStore';
 import AnimeCard from './AnimeCard.vue';
 import CharacterCard from './CharacterCard.vue';
 
-const props = defineProps<{
-  isOpen: boolean;
-  cards: DrawnCard[];
-  gachaType: 'anime' | 'character';
-}>();
+const props = withDefaults(
+  defineProps<{
+    isOpen: boolean;
+    cards: DrawnCard[];
+    gachaType: 'anime' | 'character';
+    /** E3-T1：首抽庆祝态（这个账号的第一抽），由 GachaView 抽卡前判定后传入。 */
+    isFirstDraw?: boolean;
+  }>(),
+  { isFirstDraw: false },
+);
 
 const emit = defineEmits(['close']);
 
@@ -61,6 +66,17 @@ function glowClass(rarity: string) {
   if (rarity === 'SSR') return 'glow-ssr';
   return '';
 }
+
+/**
+ * E3-T1 首抽庆祝：静态彩纸碎片（纯 CSS 动画，无定时器/RAF → 无需登记清除）。
+ * 坐标/延时在模块加载时固定一次（非随机渲染，避免每帧重算）。
+ */
+const CONFETTI = Array.from({ length: 24 }, (_, i) => ({
+  left: (i * 4.3 + (i % 5) * 7) % 100,
+  delay: (i % 8) * 0.18,
+  duration: 2.4 + (i % 4) * 0.5,
+  color: ['#ff5c5c', '#ffb13d', '#3CC4BD', '#9d6fe0', '#FFD23F'][i % 5],
+}));
 </script>
 
 <template>
@@ -70,11 +86,31 @@ function glowClass(rarity: string) {
     @click="handleBackdropClick"
     class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
   >
+    <!-- E3-T1 首抽庆祝：彩纸层（仅首抽显示，纯 CSS 动画无定时器） -->
+    <div v-if="isFirstDraw" class="confetti-layer" aria-hidden="true">
+      <span
+        v-for="(p, i) in CONFETTI"
+        :key="i"
+        class="confetti-piece"
+        :style="{
+          left: p.left + '%',
+          animationDelay: p.delay + 's',
+          animationDuration: p.duration + 's',
+          backgroundColor: p.color,
+        }"
+      />
+    </div>
+
     <!-- 弹窗内容 -->
     <div
       @click.stop="handleBackdropClick"
       class="gacha-result-card bg-elevated p-6 rounded-panel shadow-pop max-w-4xl w-full max-h-[90vh] flex flex-col"
+      :class="{ 'first-draw-frame': isFirstDraw }"
     >
+      <!-- 首抽专属横幅 -->
+      <div v-if="isFirstDraw" class="first-draw-banner">
+        🎉 欢迎来到动画宅的世界 · 你的第一抽！
+      </div>
       <h2 class="text-2xl font-bold mb-1 text-center text-ink">抽卡结果</h2>
       <p v-if="headline" class="gacha-headline" :class="headline.cls">{{ headline.text }}</p>
       <p v-else class="text-center text-xs text-ink-3 mb-3">点击任意处跳过动画</p>
@@ -114,8 +150,57 @@ function glowClass(rarity: string) {
 <style scoped>
 /* 弹窗入场 */
 .gacha-result-card {
+  position: relative;
   animation: gacha-pop 0.35s cubic-bezier(0.2, 1.4, 0.4, 1) both;
 }
+
+/* ===== E3-T1 首抽庆祝 ===== */
+.first-draw-frame {
+  box-shadow: 0 0 0 2px rgba(255, 209, 63, 0.7), 0 0 30px 6px rgba(255, 177, 61, 0.35),
+    var(--sk-shadow-pop, 0 20px 40px rgba(0, 0, 0, 0.3));
+}
+.first-draw-banner {
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #ff5c5c, #ffb13d, #ffd23f);
+  background-size: 200% 100%;
+  color: #4a2a00; /* 暖底上的深字，固定色（庆祝横幅压片，脱离皮肤 token） */
+  animation: first-draw-shimmer 2.4s linear infinite;
+}
+@keyframes first-draw-shimmer {
+  to { background-position: 200% 0; }
+}
+
+/* 彩纸：从顶部飘落，纯 CSS keyframe，无定时器 */
+.confetti-layer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+.confetti-piece {
+  position: absolute;
+  top: -8%;
+  width: 8px;
+  height: 12px;
+  border-radius: 2px;
+  opacity: 0.9;
+  animation-name: confetti-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes confetti-fall {
+  0% { transform: translateY(-10vh) rotateZ(0deg); opacity: 0; }
+  10% { opacity: 0.95; }
+  100% { transform: translateY(110vh) rotateZ(540deg); opacity: 0.7; }
+}
+
 @keyframes gacha-pop {
   from { opacity: 0; transform: scale(0.88) translateY(12px); }
   to { opacity: 1; transform: none; }

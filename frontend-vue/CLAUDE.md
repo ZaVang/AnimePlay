@@ -42,8 +42,8 @@ Vue 3 + TypeScript + Pinia + TailwindCSS, built with Vite.
 - `gameDataStore` — master anime/character/skill data (fetched at startup)
 - 领域 store：`profile`（会话/等级/货币 spend·earn/日志）、`collection`、`deck`、`viewing`、`nurture`、`pve`（小队+塔）、`gachaStore`（保底+历史）
 - `userStore` — **300 行兼容门面**：维持旧调用面 + 跨域编排（抽卡/商店/会话）+ 统一触发存档。新代码直接用领域 store；**货币只准走 `spend()/earn()`**。
-- 持久化：`infra/persistence`（schema **v4** + migrate + IO；v3=商店限购+猜角色，v4=皮肤装扮）+ `stores/persistence.ts`（装配器，保存串行合并）。新增存档字段三处同改：schema / migrations / 装配器。
-- `battle.ts` (gameStore+playerStore+historyStore) / `theme.ts`（S7 皮肤系统：data-skin 切换，存档 v4 随账号漫游）/ `settings.ts` / `guess.ts`
+- 持久化：`infra/persistence`（schema **v6** + migrate + IO；v3=商店限购+猜角色，v4=皮肤装扮，v5=saveVersion 乐观并发，v6=每日任务/图鉴里程碑/成就）+ `stores/persistence.ts`（装配器，保存串行合并）。新增存档字段三处同改：schema / migrations / 装配器。
+- `battle.ts` (gameStore+playerStore+historyStore) / `theme.ts`（S7 皮肤系统：data-skin 切换，存档 v6 随账号漫游）/ `settings.ts` / `guess.ts`
 
 **分层（S2-S4 重构后，依赖只向下，lint 闸强制）**：
 - `engine/` — 纯游戏规则（battle/gacha/squad/skills/nurture/ai + 注入式 RNG）。零 Vue/Pinia/DOM/IO，将来与 Node 服务端共享。

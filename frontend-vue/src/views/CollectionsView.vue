@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
+import { useRouter } from 'vue-router';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import type { AnimeCard as AnimeCardType, CharacterCard as CharacterCardType, Rarity } from '@/types/card';
@@ -10,9 +11,11 @@ import CharacterCard from '@/components/CharacterCard.vue';
 import VirtualGrid from '@/components/VirtualGrid.vue';
 import CodexPanel from '@/components/CodexPanel.vue';
 import AchievementsPanel from '@/components/AchievementsPanel.vue';
+import ShareCard from '@/components/ShareCard.vue';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
+const router = useRouter();
 
 // --- STATE for UI ---
 const activeTab = ref<'anime' | 'character' | 'decks' | 'codex' | 'achievements'>('anime');
@@ -23,6 +26,9 @@ const rarityOrder: Rarity[] = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
 // Filters
 const animeFilters = ref({ name: '', rarity: '', tag: '' });
 const characterFilters = ref({ name: '', rarity: '' });
+
+// E3-T2：成绩卡分享弹窗
+const showShareCard = ref(false);
 
 // 虚拟化配置 - 确保卡片名字完全可见
 const VIRTUAL_GRID_CONFIG = {
@@ -57,6 +63,10 @@ function handleDismantleAll(type: 'anime' | 'character') {
 }
 
 // --- COMPUTED Properties ---
+// E3-T1 空态 CTA：区分「一张都没有」与「只是被筛选掉了」，给不同引导文案
+const hasAnyAnime = computed(() => userStore.animeCollection.size > 0);
+const hasAnyCharacter = computed(() => userStore.characterCollection.size > 0);
+
 const hasDuplicateAnime = computed(() => {
     return Array.from(userStore.animeCollection.values()).some(c => c.count > 1);
 });
@@ -141,7 +151,16 @@ const filteredCharacterCards = computed(() => {
     <!-- Header, Tabs, and Filters -->
     <div class="bg-surface-2 rounded-lg shadow text-ink border border-line">
       <div class="border-b border-line px-6 pt-4 pb-2">
-        <h3 class="text-xl font-bold text-ink mb-3">我的收藏</h3>
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-xl font-bold text-ink">我的收藏</h3>
+          <button
+            v-if="userStore.isLoggedIn"
+            class="btn-primary text-sm"
+            @click="showShareCard = true"
+          >
+            🎴 生成成绩卡
+          </button>
+        </div>
         <nav class="-mb-px flex space-x-6" aria-label="Collection Tabs">
           <a href="#" @click.prevent="activeTab = 'anime'" :class="['collection-tab', { 'active': activeTab === 'anime' }]">动画收藏</a>
           <a href="#" @click.prevent="activeTab = 'character'" :class="['collection-tab', { 'active': activeTab === 'character' }]">角色收藏</a>
@@ -192,7 +211,13 @@ const filteredCharacterCards = computed(() => {
         <!-- Anime Cards List -->
         <div v-else-if="activeTab === 'anime'">
           <div v-if="filteredAnimeCards.length === 0" class="text-center py-12">
-              <p class="text-ink-2 text-lg font-medium">找不到匹配的动画卡</p>
+              <p class="text-ink-2 text-lg font-medium mb-1">
+                {{ hasAnyAnime ? '没有匹配当前筛选的动画卡' : '你还没有任何动画卡' }}
+              </p>
+              <p class="text-ink-3 text-sm mb-4">
+                {{ hasAnyAnime ? '试试清空搜索或稀有度筛选。' : '去抽卡开出你的第一张番剧卡吧！' }}
+              </p>
+              <button class="btn-primary" @click="router.push('/gacha')">🎴 去抽卡</button>
           </div>
           <!-- 虚拟化版本 -->
           <VirtualGrid
@@ -217,7 +242,13 @@ const filteredCharacterCards = computed(() => {
         <!-- Character Cards List -->
         <div v-else-if="activeTab === 'character'">
            <div v-if="filteredCharacterCards.length === 0" class="text-center py-12">
-              <p class="text-ink-2 text-lg font-medium">找不到匹配的角色卡</p>
+              <p class="text-ink-2 text-lg font-medium mb-1">
+                {{ hasAnyCharacter ? '没有匹配当前筛选的角色卡' : '你还没有任何角色卡' }}
+              </p>
+              <p class="text-ink-3 text-sm mb-4">
+                {{ hasAnyCharacter ? '试试清空搜索或稀有度筛选。' : '去抽卡收集你喜欢的角色吧！' }}
+              </p>
+              <button class="btn-primary" @click="router.push('/gacha')">🎴 去抽卡</button>
            </div>
           <!-- 虚拟化版本 -->
           <VirtualGrid
@@ -258,13 +289,16 @@ const filteredCharacterCards = computed(() => {
     </div>
 
     <!-- Card Detail Modal -->
-    <CardDetailModal 
+    <CardDetailModal
         v-if="selectedCard"
-        :card="selectedCard" 
-        :card-type="selectedCardType" 
+        :card="selectedCard"
+        :card-type="selectedCardType"
         :count="selectedCardType === 'anime' ? userStore.getAnimeCardCount(selectedCard.id) : userStore.getCharacterCardCount(selectedCard.id)"
-        @close="closeDetail" 
+        @close="closeDetail"
     />
+
+    <!-- E3-T2：可分享成绩卡 -->
+    <ShareCard v-if="showShareCard" @close="showShareCard = false" />
   </div>
 </template>
 

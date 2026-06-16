@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { useUserStore } from '@/stores/userStore';
+import { useGachaStore } from '@/stores/gachaStore';
 import GachaResultModal from '@/components/GachaResultModal.vue';
 import GachaRatesModal from '@/components/gacha/GachaRatesModal.vue';
 import UpBanner from '@/components/gacha/UpBanner.vue';
@@ -9,12 +10,15 @@ import GachaHistory from '@/components/gacha/GachaHistory.vue';
 import type { DrawnCard } from '@/stores/gachaStore';
 
 const userStore = useUserStore();
+const gachaStore = useGachaStore();
 const activeGachaType = ref<'anime' | 'character'>('anime');
 const activeTab = ref<'pool' | 'shop' | 'history'>('pool');
 
 // 控制抽卡结果弹窗的状态
 const isResultModalOpen = ref(false);
 const drawnCardsResult = ref<DrawnCard[]>([]);
+// E3-T1：本次结果是否为「这个账号的第一抽」（庆祝态用），抽卡前判定（抽完历史就非空了）
+const isFirstDrawResult = ref(false);
 
 // 控制概率详情弹窗的状态
 const isRatesModalOpen = ref(false);
@@ -40,9 +44,14 @@ async function handleDraw(count: number) {
             return;
         }
         
+        // 抽卡前判定首抽：抽完后历史就非空了，必须在 drawCards 之前读
+        const firstDraw =
+            gachaStore.animeHistory.length === 0 && gachaStore.characterHistory.length === 0;
+
         const drawnCards = await userStore.drawCards(activeGachaType.value, count);
         if (drawnCards) {
             drawnCardsResult.value = drawnCards;
+            isFirstDrawResult.value = firstDraw;
             isResultModalOpen.value = true;
         } else {
             drawError.value = '抽卡失败，请稍后重试';
@@ -262,6 +271,7 @@ function closeRatesModal() {
       :is-open="isResultModalOpen"
       :cards="drawnCardsResult"
       :gacha-type="activeGachaType"
+      :is-first-draw="isFirstDrawResult"
       @close="closeResultModal"
     />
     

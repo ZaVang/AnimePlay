@@ -4,9 +4,12 @@ import { RouterLink, RouterView } from 'vue-router';
 import { useUserStore } from './stores/userStore';
 import { useGameDataStore } from './stores/gameDataStore';
 import { useThemeStore } from './stores/theme';
+import { useOnboardingStore } from './stores/onboarding';
+import OnboardingGuide from './components/OnboardingGuide.vue';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
+const onboardingStore = useOnboardingStore();
 useThemeStore(); // 初始化皮肤（实例化即应用设备缓存的皮肤）
 const usernameInput = ref('');
 const passwordInput = ref('');
@@ -26,6 +29,8 @@ async function handleLogin() {
   if (result.ok) {
     usernameInput.value = '';
     passwordInput.value = '';
+    // E3-T1：登录成功后，未看过引导的设备弹首登引导（localStorage 设备标志，不进存档）
+    onboardingStore.maybeStartGuide();
   } else {
     loginError.value = result.error ?? '登录失败，请重试。';
     passwordInput.value = '';
@@ -150,6 +155,9 @@ onMounted(() => {
         </main>
 
     </div>
+
+    <!-- E3-T1：首登引导遮罩（z-index 高于 header；内部 Teleport 到 body） -->
+    <OnboardingGuide />
 
   </div>
 </template>

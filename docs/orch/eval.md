@@ -1,134 +1,153 @@
-# QA Evaluation — Evolution 第 2 轮（E2-T1/T2）
+# Evaluator Report — Evolution 第 3 轮（收口轮）
 
-> Evaluator 独立验证。原则：不信 Generator 自报，亲自重跑验收命令 + 抽查源码。
-> tier1 on：本决策仅信息性，不终止循环。
-> 评估时间：2026-06-16。
+> QA Evaluator 独立验证。原则：不信 Generator 自报，亲自重跑验收命令 + 抽查代码。
+> tier1 on：本决策仅信息性。
+> 验证时间：2026-06-16。工作根：D:\work\AnimePlay。
 
-## 1. Checkbox 确认（docs/SPRINT.md）
+---
 
-- E2-T1 图鉴定向解锁（经济闭环）→ `[x]`（SPRINT.md:106）✓
-- E2-T2 真实评分/放送年可视化（差异化）→ `[x]`（SPRINT.md:109）✓
+## 1. SPRINT 合同 Checkbox
 
-两项均已勾，符合预期。
+`docs/SPRINT.md`「Evolution 第 3 轮」段（行 117-131）三项全部 `[x]`，已核：
 
-## 2. 验收命令重跑（亲自，frontend-vue/ 下）真实输出
+- 行 121 `[x] E3-T1：新人 onboarding（FTUE 点火）`
+- 行 124 `[x] E3-T2：可分享 Wrapped 成绩卡（传播喇叭）`
+- 行 127 `[x] E3-T3：收口杂项（文档纠偏）`
 
-| 命令 | 期望 | 实测 | 结论 |
+✅ 三项 checkbox 属实。
+
+---
+
+## 2. 验收命令重跑（亲自，真实输出）
+
+本轮验收线：type-check 0 错 / test ≥340 全绿 / build 通过。
+
+### `npm run type-check`
+```
+> vue-tsc --build
+（无输出，退出码 0）
+```
+✅ 0 错误。
+
+### `npm run test`
+```
+> vitest run
+ Test Files  31 passed (31)
+      Tests  354 passed (354)
+   Duration  4.13s
+```
+✅ 354 全绿 ≥ 340 线。
+
+### `npm run build`
+```
+> run-p type-check "build-only {@}"
+✓ built in 8.23s
+（type-check + vite 产物全部产出，无报错）
+```
+✅ 生产构建成功。
+
+### 新增测试单独复跑
+```
+$ npx vitest run src/stores/onboarding.test.ts src/wrapped/buildWrappedStats.test.ts
+ Test Files  2 passed (2)
+      Tests  14 passed (14)
+```
+onboarding 8 + buildWrappedStats 6 = **14** 新增用例，全绿。
+
+---
+
+## 3. 自报 vs 实测
+
+| 项 | 自报（gen_status） | 实测 | 结论 |
 |---|---|---|---|
-| `npm run type-check` | 0 错 | `vue-tsc --build`，无输出，退出 0 | PASS |
-| `npm run test` | ≥336（自报 340） | **Test Files 29 passed / Tests 340 passed**，Duration 4.11s | PASS |
-| `npm run build` | 成功 | `✓ 291 modules transformed`，`✓ built in 7.32s`，无错误 | PASS |
+| type-check | 0 错 | 0 错 | ✅ 一致 |
+| test 总数 | 354 全绿 | 354 全绿 | ✅ 一致 |
+| build | 通过 | 通过 | ✅ 一致 |
+| 新增用例数 | **18**（buildWrappedStats 10 + onboarding 8） | **14**（buildWrappedStats **6** + onboarding 8） | ⚠️ 轻微夸大 |
+| html2canvas | 零引入 | 全仓零命中 | ✅ 一致 |
+| schema 版本 | 仍 v6 未升 | `schema.ts:24 SAVE_VERSION = 6 as const` | ✅ 一致 |
 
-三条验收命令全绿。test 340 与自报一致。
+**唯一夸大**：gen_status 第 30 行自称 buildWrappedStats「10 用例」，实际文件只有 6 个 `it`（完成度合并 2 + UR 拆分 1 + 欧气 3 + 透传 1 = 6）。**总数 354 与 ≥340 验收线均真实**，此偏差仅影响"本轮 +X"的自我陈述，不影响通过判定。无功能缩水。
 
-## 3. 自报 vs 实测对比
+---
 
-| 自报 | 实测 | 是否夸大 |
-|---|---|---|
-| type-check 0 错 | 0 错 | 属实 |
-| test 340 passed（29 files，基线 336 → 340，+4 unlockCodex 测试） | 340 passed / 29 files | 属实 |
-| build 通过，291 modules | 291 modules，built ok | 属实 |
-| 新增 codexUnlock.ts + unlockCodex.test.ts；改 4 源文件；schema/迁移/装配器未动 | git status 完全印证（?? 两新文件，M 四源文件 + 文档，schema 三件套未在改动列表） | 属实 |
+## 4. 代码抽查（亲自 Read，逐项属实与否）
 
-**无夸大、无缩水。** 自报「PASSED / test 340」与实测逐项吻合。
+### E3-T1 onboarding
 
-## 4. 代码抽查（亲自 Read，逐项属实判定）
+- **不进存档/不升 schema**：`stores/onboarding.ts` 仅用 `localStorage`（key=`onboarding-done`，try/catch 包裹、node 无 DOM 静默回落 false），零 schema/存档字段触碰。`SAVE_VERSION` 仍 `6`，未误升。✅ 属实
+- **引导遮罩组件 + App.vue 顶层挂载**：`OnboardingGuide.vue` 内部 `<Teleport to="body">`，backdrop `z-index:100`（高于 header z-50）；`App.vue:160` 在 `<main>` 之外顶层渲染 `<OnboardingGuide />`。✅ 属实
+- **可跳过 + 跳过写标志不再弹**：`OnboardingGuide.skip()` → `onboarding.finishGuide()` → `writeDone()`（localStorage 落 `'1'`）+ `hasSeenGuide=true`；`maybeStartGuide()` 仅在 `!hasSeenGuide` 时开。✅ 属实
+- **触发逻辑不反向依赖**：触发在 `App.vue:33` `handleLogin` 成功分支调 `onboardingStore.maybeStartGuide()`，未塞进 userStore 门面。✅ 属实（架构合理）
+- **首抽庆祝 + 判定合理**：`GachaResultModal.vue` 加 `isFirstDraw` prop（`withDefaults` 默认 false）；判定在 `GachaView.vue:48-49` **抽卡前**读 `gachaStore.animeHistory.length===0 && characterHistory.length===0`，line 51 才 `drawCards`。前置正确（抽完历史非空，后置判定会永远 false）。✅ 属实
+- **庆祝无定时器风险**：彩纸 `CONFETTI`（模块加载时固定 24 片坐标）纯 CSS keyframe，无 setTimeout/RAF。✅ 属实
+  - 旁注：`GachaResultModal` 的 `revealTimer`（揭示动画 setTimeout）是**本轮前已存在**的代码，在每次 `isOpen` 切换时 `clearTimeout`（line 30），无 `onUnmounted` 兜底；非本轮 E3 引入，且关闭即清，记为既有微小观察，不计本轮缺陷。
+- **空态 CTA 用 `.btn-*`**：`CollectionsView.vue:220/251` 空态按钮用 `class="btn-primary"`（`router.push('/gacha')`），区分「一张都没有」vs「被筛掉」两种文案。**未学**旁边 dismantle 按钮的 `bg-danger text-white`。✅ 属实
 
-### 4.1 定向解锁经济平衡（config/codexUnlock.ts）— 属实，守住原则
+### E3-T2 成绩卡
 
-定价表 `CODEX_UNLOCK_PRICES`：N 50 / R 200 / SR 600 / SSR 2000 / HR 5000 / **UR 12000**。
+- **纯前端零重依赖**：`grep -rn html2canvas frontend-vue/` → **零命中**。✅ 属实
+- **buildWrappedStats 纯函数**：`wrapped/buildWrappedStats.ts` 仅 `import type { Rarity }`（类型 import，编译期擦除），零 Vue/Pinia/DOM 运行时 import；除零全走 `safePercent` 兜底。✅ 属实
+- **Canvas toBlob + a.download**：`ShareCard.vue:202-214` `canvas.toBlob` → `URL.createObjectURL` → `a.download='animeplay-wrapped-<user>.png'` → `a.click()` → `URL.revokeObjectURL`（用完即释放，未回退 S9 泄漏修复）。✅ 属实
+- **不嵌远程图（taint 风险）**：`grep drawImage|new Image|crossOrigin|.src=|fetch|http` 于 ShareCard → **零命中**，全部固定品牌 hex 自绘。✅ 属实
+- **入口可见且门控**：`CollectionsView.vue:156-162` 标题栏「🎴 生成成绩卡」`.btn-primary`，`v-if="userStore.isLoggedIn"` 仅登录显示。✅ 属实
 
-- **UR 远贵**：12000 是次高档 HR(5000) 的 2.4x，最高档 ✓
-- **阶梯递增**：50 → 200 → 600 → 2000 → 5000 → 12000，严格单调递增 ✓
-- **明显高于分解回收**（核对 gameConfig.ts dismantleValue 实值，非取信自报）：
-  - 回收实值：N=10(L230) / R=25(L222) / SR=100(L206) / SSR=50(L214) / UR=200(L198)
-  - 解锁 vs 回收倍率：N 5x、R 8x、SR 6x、SSR 40x、UR **60x**
-  - 每档均显著高于回收，UR 尤甚（60 倍）→ **绝不架空抽卡** ✓
-  - 注：项目既有回收价 SSR(50) < SR(100)（因 SSR 概率高于 SR），属历史设定，与本轮无关。
+### engine 纯净
 
-### 4.2 userStore.unlockCodexCard 编排（userStore.ts:251-280）— 属实，关键安全闭环成立
+`grep onboarding|wrapped|buildWrappedStats|ShareCard|OnboardingGuide` 于 `src/engine/` → **零命中**。onboarding/wrapped 逻辑未塞进 engine。✅ 属实
 
-逐行核验：
-1. 登录校验（L252 `!profile.isLoggedIn` → return）✓
-2. 卡存在校验（L258 `!card` → return）✓
-3. **已拥有则拒**（L263-269：`getAnimeCardCount/getCharacterCardCount > 0` → addLog + return，绝不重复入库）✓
-4. **关键安全——余额不足绝不发卡**：L271 `if (!profile.spend('knowledgePoints', price))` 返 false 时立即 `return { ok:false }`（L273）。`collection.addCard` 在 L275，**spend 失败的执行流根本到不了 addCard**。完全正确 ✓
-5. spend 语义复核（profile.ts:61-66）：`if (core[currency] < amount) return false`——余额不足不变更余额、返 false。链条闭环，**无「余额不足仍发卡」漏洞** ✓
-6. 成功路径：spend 成功 → addCard → addLog → **saveToServer()**（门面统一存档，不在领域 store 调存档）✓
-7. 完成度纯派生（addCard 后 codex.ts 自动 +1），无手动联动，无新 schema 字段 ✓
+### E3-T3 文档纠偏
 
-诚实化决策属实：自报移除了 `achievements.check('codex')` 空联动（唯一 codex 成就 condition 认 milestoneId，定向解锁场景永不触发）。代码中确无该 no-op 调用，符合 CLAUDE.md「不 ship 宣告效果但不执行的代码」。
+- `frontend-vue/CLAUDE.md`：持久化段已写 `schema **v6**（…v4=皮肤装扮，v5=saveVersion 乐观并发，v6=每日任务/图鉴里程碑/成就）`。「当前协议版本」=v6 正确。✅ 属实
+- `docs/plans/pitfalls.md:11`：`存档协议当前 **v6**`；`:34` `schema version（…现 6）`。✅ 属实
+- 残留的 v2/v4 提法均在「版本含义列表 / 历史迁移步骤」语境（如「v4=皮肤装扮」），属准确历史记录，按判定标准不算违规。✅ 属实
+- 核对依据：`schema.ts:24 SAVE_VERSION = 6 as const` 与文档一致。
 
-### 4.3 解锁不破坏抽卡经济 — 属实
+### 颜色铁律（新组件）
 
-gen_status 称「回收 UR200、解锁 UR12000」——核对 gameConfig.ts:198 dismantleValue 确为 200，codexUnlock.ts UR 确为 12000。量级属实，定价远高于回收（60x），不架空抽卡。
+- `OnboardingGuide.vue`：`grep text-white|bg-${|bg-danger text-white` 唯一命中是第 6 行**注释**「无 text-white 压浅底」，模板实体全走语义类（`bg-elevated/text-ink/border-line/btn-ghost/btn-primary/btn-secondary` + `rgb(var(--c-*))`）。✅ 无违规
+- `ShareCard.vue`：弹窗 UI 用语义类（`bg-elevated/text-ink/border-line/btn-*/text-danger`）；Canvas 内固定品牌 hex（`#1a1340` 等）属**导出图压片**合理固定色例外（脱离皮肤独立成图）。✅ 无违规
+- `GachaResultModal.vue` 首抽庆祝横幅 `#4a2a00`（暖底深字）属同类压片固定色例外，已注释说明。✅ 合理例外
 
-### 4.4 真实数据展示（CardDetailModal.vue 番剧资料区块）— 属实
-
-- 区块整体守卫：`v-if="hasAnimeMeta || hasCharacterMeta"`（L165），全缺不渲染 ✓
-- anime 字段：`rating_score`（L169-171）/ `rating_rank`（L174-175）/ `releaseYear`（L177，date.slice(0,4) + 长度守卫）——字段名对得上真实数据 ✓
-- character 字段：`anime_count`（L183-184）/ `popularity_score`（L186-187）/ `comprehensive_popularity`（L189-190）——对得上 ✓
-- 每字段独立 v-if 守卫（`typeof x === 'number'` / `releaseYear`），缺失不显示该行 ✓
-- 颜色语义类：text-accent / text-ink，**新区块无 text-white** ✓
-
-### 4.5 颜色违规扫描（grep "text-white" / "bg-${"）— 无违规
-
-- `bg-${` 动态拼接：**两文件零命中** ✓
-- text-white 命中 4 处，逐一确认均为规则明示的合法例外、且非本轮新增：
-  - CardDetailModal:146 — 稀有度徽章（配 `bg-gradient-to-r` 稀有度渐变），属「稀有度识别色」例外
-  - CardDetailModal:236/294 — `bg-danger text-white`（深红底白字）
-  - CodexPanel:225 — `bg-black/60` 黑底白字（图片压片），属例外
-  - 本轮新增的番剧资料区块与解锁价标签均用语义类（text-accent/text-ink/text-ink-2），无 text-white 压浅底。
-
-### 4.6 types/card.ts 显式可选字段 — 属实
-
-- AnimeCard 补：`date? / rating_score? / rating_rank? / rating_total?`（L25-29）显式类型 ✓
-- CharacterCard 补：`anime_count? / popularity_score? / comprehensive_popularity? / gender? / birthday?`（L38-43）显式类型 ✓
-- 不靠裸 any 读真实字段。BaseCard 的 `[key:string]:any`（L13）是历史既有索引签名，自报已声明未触碰，属实（这是 eslint 报的 2 处历史 no-explicit-any 之一，非本轮引入）。
-
-### 4.7 无新 schema 字段 / schema 仍 v6 — 属实
-
-- schema.ts:24 `SAVE_VERSION = 6 as const`，未升版 ✓
-- migrations.test.ts 最高分支 version 6（无 v7）✓
-- git status 中 schema.ts / migrations.ts / persistence.ts 装配器**均未出现在改动列表**——E2-T1 靠 collection 已有持久化、E2-T2 纯展示，确实未动存档协议 ✓
-
-### 4.8 CodexPanel 解锁交互守卫 — 属实
-
-- `handleUnlock`：`if (card.owned) return`（L103，owned 卡不处理）✓
-- 余额不足：alert 提示且不调 unlockCodexCard（L105-107）✓
-- 确认：confirm 显示价格 + 当前知识点（L109）✓
-- owned 卡不挂可点击态（cursor-pointer/价格标签 v-if 仅未拥有，L214/L229）✓
-- 价格颜色：`canAfford ? 'text-accent' : 'text-ink-2'`（L235）语义类 ✓
-
-### 4.9 特征测试覆盖（unlockCodex.test.ts）— 属实，三分支 + 1
-
-mock `@/infra/persistence/api` 隔离网络，4 个测试：
-1. 解锁成功：精确扣 600 + count=1 + characterCompletion.owned +1
-2. 余额不足（差 1 点）：ok:false / '知识点不足'，余额不变、未入库
-3. 已拥有：ok:false / '已拥有'，不扣费、count 仍 1
-4. 未登录：ok:false / '登录'
-
-覆盖 plan 要求的解锁成功 / 余额不足 / 已拥有三分支 + 未登录边界，断言到位。
+---
 
 ## 5. pitfalls 合规
 
-- 架构铁律：解锁编排在 userStore 门面 + collection（stores 层），未写进 engine ✓
-- 存档单一入口：解锁走门面 saveToServer，未在领域 store 调存档 ✓
-- 货币只走 spend/earn：解锁用 profile.spend，未绕过 ✓
-- 颜色规则：无 text-white 压浅底、无 bg-${} 动态拼接 ✓
-- schema 不动：v6 三件套未改 ✓
-- 不 ship 假实现：移除 codex 成就空联动，符合诚实化铁律 ✓
+- ✅ onboarding 用 localStorage（设备级），不进存档、不升 schema（pitfalls 存档段 + 计划陷阱一致）。
+- ✅ 成绩卡用标准 Canvas API，未引 html2canvas，首版不嵌远程图防 taint。
+- ✅ 空态 CTA 未学 `bg-danger text-white`，用 `.btn-*` 语义类。
+- ✅ schema 文档纠偏到 v6（scout C 段大坑已解）。
+- ✅ engine 纯净、颜色语义类无 text-white 压浅底。
+- ✅ 测试用 `npm run test`（vitest），未跑全仓 `npm run lint --fix`。
+- ✅ 改动文件范围与 gen_status 自报一致（git status：6 改 + 5 新增，无越界源码改动）。
+
+---
 
 ## 6. 结构漂移
 
-项目无 docs/project_structure.md，**跳过结构漂移核对**。git status 文件变更与 gen_status 自报一一对应，无意外漂移。
+项目无 `docs/project_structure.md`（已 `ls` 确认根与 frontend-vue/docs 下均不存在）。**结构漂移检查跳过**（无基线文件可比）。
+
+---
 
 ## 7. 失败分析
 
-无失败项。三条验收命令全绿，所有代码抽查点属实，无经济漏洞（余额不足不发卡链条闭环、定价 5-60 倍于回收不架空抽卡）、无颜色违规、无虚假 schema 升版、无 ship 假实现。
+无功能性失败。唯一瑕疵：gen_status 自报 buildWrappedStats「10 用例」实为 6（onboarding 8 真实）。属自我陈述层面的数量夸大，**不影响**：
+- test 总数 354（真实）≥ 340 验收线；
+- 三任务功能全部落地且可验；
+- 任何铁律合规判定。
 
-## 8. 决策（信息性，tier1 on 不终止循环）
+无假实现、无颜色违规、无误升 schema、无引入重依赖。
 
-**COMPLETE**
+---
 
-理由：E2-T1/T2 两项 checkbox 已勾；type-check 0 错 / test 340 全绿 / build 通过，实测与自报逐项吻合无夸大；经济安全核心（余额不足绝不发卡、已拥有拒重复、spend 失败 return）代码层面成立；定价守住「UR 远贵(12000)、阶梯递增、明显高于回收(5-60x)」原则，不架空抽卡；真实数据展示字段名正确、v-if 守卫齐全、颜色语义类；types 补显式可选字段；schema 仍 v6 无多余升版；特征测试三分支 + 边界齐全。本轮交付真实、合规、无缩水。
+## 8. 决策（COMPLETE / CONTINUE / BLOCKED，仅信息性）
+
+### DECISION: COMPLETE
+
+**理由**：
+- 三条验收命令亲自重跑全过（type-check 0 错 / test 354 全绿 ≥340 / build 成功）。
+- E3-T1/T2/T3 三任务代码抽查逐项属实：onboarding 纯 localStorage 不动 schema、引导遮罩 App 顶层可跳过且跳过不再弹、首抽判定前置正确、空态 CTA 语义类；成绩卡纯前端零 html2canvas、buildWrappedStats 纯函数、Canvas toBlob+download、不嵌远程图；文档 v4→v6 纠偏属实。
+- engine 纯净、依赖只向下、颜色铁律均未破，无误升 schema、无重依赖。
+- 唯一偏差是 gen_status 对单文件用例数的轻微夸大（10→实 6），不触及通过标准，仅信息性记录。
+
+tier1 on，本决策仅供 orchestrator 参考；收口轮目标已达成，建议归档本 sprint 并更新 FUTURE.md 对应进度。
