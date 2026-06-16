@@ -35,3 +35,11 @@
 - [原子写] 存档/凭据落盘用 `mkstemp + fsync + os.replace`（同目录），别用 `open(w)` 直接覆盖（写中断留损坏 JSON）。
 - [测试] 后端自检 `backend/test_security.py` 用 Flask test_client + tempdir + env（USER_DATA_DIR/AUTH_CREDENTIALS_PATH/SECRET_KEY）隔离，不引 pytest、不写真实 data/。跑它用 `./.venv/Scripts/python.exe`（系统 python 没装 Flask 依赖）。
 - [orch] 长跑 subagent（Scout/Generator）在本机偶发 socket 掉线；掉线后 git diff 可见已改动，orchestrator 可接管续做，不必整轮重来。
+
+## Evolution 三轮沉淀（2026-06-16，经 /product-loop --mode evolution）
+- [留存埋点] 「基于玩法事件」的新功能（任务/成就/统计）统一挂在 6 个玩法成功点：5 个在 `userStore` 编排函数（drawCards/collectFromViewingQueue/养成 withSave/submitGuess/completeFloor）的现有 saveToServer() 前，**对战胜利唯独在 `battleFlow.endGame` 的 isLoggedIn 块内、winner==='playerA' 时**（不在 userStore，易漏）。新功能复用这套埋点，别再改编排函数。
+- [图鉴派生] 完成度是从 `collection`（已拥有 Map）⊆ `gameDataStore.allXxxCards`（全量）纯派生的 computed，**总数一律 `.length`/filter 不硬编码 665**（数据会增减）。"拥有"用 collection 计数不用 favorite。
+- [经济出口] 图鉴定向解锁定价（`config/codexUnlock.ts`）须守"UR 远贵、阶梯递增、明显高于分解回收"——别便宜到架空抽卡。解锁流：`spend('knowledgePoints')` 成功才 `addCard`，余额不足/已拥有拒绝（经济安全）。
+- [设备级状态] onboarding 首登标志用 **localStorage**（设备级，仿 theme.ts try/catch），不进存档、不升 schema——不是所有"记住一次"都要进存档协议。
+- [纯前端出图] 成绩卡/分享图用标准 Canvas（`toBlob`+`createObjectURL`+`a.download`+`revokeObjectURL`），**别引 html2canvas**；首版别嵌远程封面图（cross-origin canvas taint 会让 toBlob 抛错）。聚合逻辑抽成纯函数（`wrapped/buildWrappedStats.ts`，零 Vue/Pinia/DOM）便于单测。
+- [真实数据] 卡数据有 Bangumi 真实 `rating_score/rating_rank/date`（anime）、`anime_count/popularity_score`（character），`BaseCard` 有 `[key]:any` 索引签名故裸读不报错，但补显式可选字段（types/card.ts）更安全。**声优数据 `main_characters[].actors` 被 `server.py` 服务时剥离，前端拿不到**——声优维度需后端配合。
