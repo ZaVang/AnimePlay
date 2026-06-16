@@ -4,7 +4,7 @@
  */
 import { describe, it, expect } from 'vitest';
 import { migrate } from './migrations';
-import { SAVE_VERSION, createDefaultPresetSquads, createDefaultTowerProgress } from './schema';
+import { SAVE_VERSION, createDefaultDaily, createDefaultPresetSquads, createDefaultTowerProgress } from './schema';
 
 /** 模拟 S5 之前服务器上的真实 v1 存档形态。 */
 function buildV1Payload() {
@@ -84,6 +84,12 @@ describe('v1 → v2 迁移', () => {
   it('v5 新键：saveVersion 缺失补 0（旧档从 0 起算）', () => {
     expect(v2.saveVersion).toBe(0);
   });
+
+  it('v6 新键：daily / codexMilestones / achievements 缺失补默认', () => {
+    expect(v2.daily).toEqual(createDefaultDaily());
+    expect(v2.codexMilestones).toEqual([]);
+    expect(v2.achievements).toEqual([]);
+  });
 });
 
 describe('v2 存档过迁移层', () => {
@@ -119,6 +125,25 @@ describe('v2 存档过迁移层', () => {
     // 非数字/缺失回落 0
     expect(migrate({ version: 5, saveVersion: 'oops' }).saveVersion).toBe(0);
     expect(migrate({ version: 5 }).saveVersion).toBe(0);
+  });
+
+  it('v6 存档的 daily / codexMilestones / achievements 原样保留', () => {
+    const out = migrate({
+      version: 6,
+      daily: { date: '2026-6-16', progress: { daily_gacha: 1 }, claimed: ['daily_gacha'], lastLoginDate: '2026-6-16' },
+      codexMilestones: ['char_owned_50', 'anime_ur_complete'],
+      achievements: ['ach_first_ur', 'ach_first_win'],
+    });
+    expect(out.daily).toEqual({ date: '2026-6-16', progress: { daily_gacha: 1 }, claimed: ['daily_gacha'], lastLoginDate: '2026-6-16' });
+    expect(out.codexMilestones).toEqual(['char_owned_50', 'anime_ur_complete']);
+    expect(out.achievements).toEqual(['ach_first_ur', 'ach_first_win']);
+  });
+
+  it('v6 daily 局部损坏时按字段补默认', () => {
+    const out = migrate({ version: 6, daily: { date: '2026-6-16' }, codexMilestones: 'oops', achievements: null });
+    expect(out.daily).toEqual({ date: '2026-6-16', progress: {}, claimed: [], lastLoginDate: '' });
+    expect(out.codexMilestones).toEqual([]);
+    expect(out.achievements).toEqual([]);
   });
 
   it('appearance 形态损坏时回落默认皮肤', () => {

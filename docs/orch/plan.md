@@ -1,66 +1,54 @@
-# Iteration 1 Plan
+# Iteration 1 Plan (evolution)
 
-> 需求来源：docs/SPRINT.md「S10」六任务（Tier1 off，无审计报告）。已读 scout.md「A.约束与可行性」与 pitfalls.md。
-> 本计划只说 WHAT/WHY；HOW（文件/函数）见 scout.md「B.代码地图与坑」，由 Generator 自主决定。
+> 需求来源：docs/orch/evolution-audit-report.md「Prioritized Recommendations」（Tier1 on，evolution 模式）。
+> 已读 scout.md A/B/C 段 + pitfalls.md。本计划只说 WHAT/WHY；HOW 见 scout.md B 段，Generator 自主决定。
+
+## 本轮主题：给"玩法齐全但没动机"的产品装上**留存引擎**
+
+reviewer 核心结论：8 个玩法是孤岛，缺三样留存核心（onboarding / 每日回访 / 收集完成度）。本轮取 reviewer 明确指定的**最高 ROI 组合 🔴-1 + 🔴-2，并叠加共享埋点的 🟡-3**——三者在「现有玩法成功点埋进度检测」这一套接入模式上完全同构，一轮一并落地，边际成本最低。
 
 ## 本轮任务（按依赖顺序）
 
-1. **T2: 关闭 debug 模式**（先做，无依赖、最低风险）
-   - 目标：两个后端入口都不再 `debug=True`（默认 False，可 env 开本地）。
+1. **E1-T1：每日任务 + 每日登录奖励**（reviewer 🔴-1）
+   - 目标：装上"明天为什么回来"。新建 `stores/daily.ts` 领域 store（跨天读时归零，复用 shop 的 todayKey 模式）；静态任务定义放 config；3-4 个任务全部命中现有成功点（抽卡/赢对战/收观看/养成互动）；做满给券+知识点；外加每日登录一次性发放。主页加「今日任务」面板。
+   - 依赖：无（但与 T3 共享埋点，建议同改）
+   - 验收：登录后主页显示今日任务面板 + 进度；触发对应玩法进度自增；做满可领奖（券/知识点入账）；跨天重置；每日登录奖励一次性发放且跨天再发；daily store 有 serialize/deserialize/reset + 特征测试；进存档 v6 跨「重开浏览器」保真。
+   - 来源：Evolution Reviewer 🔴-1
+
+2. **E1-T2：图鉴/收集完成度 + 里程碑奖励**（reviewer 🔴-2）
+   - 目标：把 665 张卡的补全欲变成有目标有奖励的进度轴。`CollectionsView` 加「图鉴」tab：动画/角色/各稀有度完成度进度条（X/总数，总数从数据 `.length` 派生不硬编码）；未拥有卡灰位剪影（复用 VirtualGrid）；静态里程碑阈值表，达成发奖（已领里程碑 id 进存档）。
    - 依赖：无
-   - 验收：`grep -rn "debug=True" backend/server.py api/index.py` 零命中；test_security.py 断言 `app.debug is False`。
-   - 来源：SPRINT S10-T2 / 审计安全红线
+   - 验收：图鉴 tab 显示各维度完成度（拥有/总数）+ 灰位未拥有卡；达到里程碑可领一次性奖励且已领状态持久化；完成度为纯派生（不新存"拥有集合"）；进存档 v6；特征测试覆盖完成度计算与里程碑领取。
+   - 来源：Evolution Reviewer 🔴-2
 
-2. **T1: 存档接口鉴权（密码账号 + 会话 token）**
-   - 目标：消灭「任意用户名免密读写任何人存档」。引入密码账号（首次登录即注册，盐哈希），登录签发会话 token；读写存档须带有效 token，token 解析出的 username 必须与被读写存档一致。现有 passwordless 存档走 claim-on-first-login。
-   - 依赖：无（与 T2 同改后端入口）
-   - 验收：test_security.py 全 PASS——未带 token 读→401；错密码→401；对密码→拿到 token；token 读写自己存档成功；用 A 的 token 写 B 存档被拒。前端 type-check/build 通过、登录 UI 有密码框且登录失败有反馈。
-   - 来源：SPRINT S10-T1 / 审计安全红线（最重）
+3. **E1-T3：成就系统**（reviewer 🟡-3，因与 T1 共享埋点纳入本轮）
+   - 目标：把散落的高光时刻变成可累积可炫耀的资产。`stores/achievements.ts` + 成就墙（弹窗或视图）；~15-20 条静态成就（首张 UR / 爬塔里程碑 / 养成满级 / 猜角色连对 / 图鉴里程碑 / 知识点累计…）在同一批成功点检测解锁，给徽章 + 一次性奖励；存"已解锁 id 数组"。
+   - 依赖：T1（共用同一批玩法成功点埋点，一次改完）
+   - 验收：达成条件解锁成就 + 发奖 + 持久化（已解锁 id 进存档 v6）；成就墙可见已解锁/未解锁；特征测试覆盖解锁判定。
+   - 来源：Evolution Reviewer 🟡-3
 
-3. **T3: 存档原子写 + 版本号 + 并发保护**
-   - 目标：防写入截断损坏（原子写）与后写覆盖（乐观并发）。
-   - 依赖：T1（同在后端写存档路径上改，复用凭据/版本侧基础设施）
-   - 验收：test_security.py 断言——模拟写入中途失败后原存档仍完整可读；旧版本号 POST→409、新版本号→成功。前端 `npm run test` 含 saveVersion 往返/迁移测试全绿（不低于既有 305）。
-   - 来源：SPRINT S10-T3 / 审计「存档并发」
-
-4. **T4: CORS 收敛 + vite host/allowedHosts 收敛**
-   - 目标：`api/index.py` 不再裸 `CORS(app)` 全开（env 配置允许源）；`vite.config.ts` 默认不再硬编码 `allowedHosts:true`/`host:'0.0.0.0'`（env 可放开，保留 proxy 与隧道注释）。
-   - 依赖：无
-   - 验收：源码核验无裸全开；`npm run build` 通过、dev 仍可本地起（type-check/build 不报错）。
-   - 来源：SPRINT S10-T4 / 审计 CORS
-
-5. **T5: 部署方案文档（不实施）**
-   - 目标：新建 `docs/部署方案.md`，写①自部署②serverless 两条路径要点 + 单人在线版上线清单；`docs/README.md` 加索引。
-   - 依赖：无（但内容引用 T1-T4 的加固结果）
-   - 验收：文档存在含①②两节 + 清单；README 索引行已加。
-   - 来源：SPRINT S10-T5（用户决策：只加固不实施）
-
-6. **T6: 回归与防漂移收口**
-   - 目标：全部验收命令绿；FUTURE.md S10 五项勾掉、进度总览 S10→✅；审计报告安全章节对应项标记已解。
-   - 依赖：T1-T5
-   - 验收：type-check 0 错、test 全绿、build 通过、test_security.py 全 PASS、grep 零命中；FUTURE.md 已更新。
-   - 来源：SPRINT S10-T6
+## 来自 Reviewer 的改进项（本轮采纳的）
+- 🔴-1 每日任务/登录 → 本轮做（E1-T1）
+- 🔴-2 图鉴完成度 → 本轮做（E1-T2）
+- 🟡-3 成就系统 → 本轮做（E1-T3，搭车共享埋点）
+- 经济失衡（知识点只进不出）→ 部分缓解：本轮 daily/里程碑/成就都发知识点会加剧"只进"，故 daily 奖励以**券**为主、知识点为辅；知识点出口（🟡-4 商城）留到第 2 轮正式做。
 
 ## 相关陷阱（从 pitfalls.md / scout.md C 段筛选）
-- [鉴权] 凭据绝不能进 user_data 存档文件（客户端全量覆盖写=可篡改）→ 独立凭据存储，后端权威。
-- [并发] saveVersion（保存计数）≠ schema `version`（协议版本=4），勿混用同一字段。
-- [协议] 新增持久化字段 schema.ts + migrations.ts + stores/persistence.ts 三处同改 + 旧档迁移默认值 + 更新往返/迁移测试，否则回归。
-- [后端] 两个入口（server.py + api/index.py）鉴权/debug/原子写都要改且一致；保 isalnum 白名单防路径穿越。
-- [前端] 全仓唯一 fetch 处是 api.ts，token 只挂这一层；login 失败别留半登录态。
-- [测试] 后端 test_security.py 用 Flask test_client 自包含 + tempdir 隔离，别写真实 data/user_data。
-- [工程] 不跑 `npm run lint`（--fix 全仓重排），单文件用 `npx eslint <path>`；颜色禁 text-white 压浅底/禁拼接动态色类。
+- userStore 已偏大：新逻辑进独立领域 store，userStore/battleFlow 成功点只加一行 markProgress/check。
+- 对战埋点必须在 battleFlow.endGame（唯一不在 userStore 的成功点），别漏。
+- schema v5→v6：schema.ts + migrations.ts + persistence.ts 三处同改 + 旧档缺键补默认 + 两测试文件只追加不改既有断言（含 persistence.test 的「payload 全键列表」要加新键）。
+- 存档字段紧凑：静态定义放 config，存档只存可变状态（进度计数/已领 id 数组）。
+- 颜色语义类，禁 text-white 压浅底/禁动态色类拼接；新面板/灰位用 bg-surface/text-ink/border-line 系。
+- 总数 `.length` 派生不硬编码 665；图鉴"拥有"用 collection 计数不用 favorite。
+- 领域 store 自己不调 saveToServer；engine 纯净，日期/进度检测留 stores 层。
 
-## 验收命令（从 SPRINT.md 原样复制）
-
+## 验收命令（回归 + 新增）
 ```bash
-# 1. 前端类型检查（期望 0 错误）
-cd frontend-vue && npm run type-check
-# 2. 前端测试（期望全绿，不低于既有 305）
-cd frontend-vue && npm run test
-# 3. 前端生产构建（期望成功）
-cd frontend-vue && npm run build
-# 4. 后端安全自检（退出码 0 且全 PASS）
-python backend/test_security.py
-# 5. debug 关闭核验（期望零命中）
-grep -rn "debug=True" backend/server.py api/index.py
+cd frontend-vue && npm run type-check     # 0 错
+cd frontend-vue && npm run test           # 全绿，不低于 310 + 新增 store/迁移测试
+cd frontend-vue && npm run build          # 生产构建通过
 ```
+（后端无改动，本轮不跑 test_security.py；S10 加固保持。）
+
+## 通过标准
+三个任务的功能可见可用 + 进存档 v6 跨重开保真 + 三条验收命令全绿 + 颜色/架构铁律不破。

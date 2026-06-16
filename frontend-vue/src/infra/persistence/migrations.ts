@@ -8,8 +8,10 @@
 import {
   SAVE_VERSION,
   createDefaultAppearance,
+  createDefaultDaily,
   createDefaultPresetSquads,
   createDefaultTowerProgress,
+  type DailySave,
   type SavePayload,
   type SerializedPlayerState,
 } from './schema';
@@ -65,6 +67,18 @@ function migrateTowerProgress(raw: any) {
   };
 }
 
+/** v6：每日任务/登录，字段级缺省兜底（缺失/损坏 → createDefaultDaily()）。 */
+function migrateDaily(raw: any): DailySave {
+  const defaults = createDefaultDaily();
+  if (!raw || typeof raw !== 'object') return defaults;
+  return {
+    date: typeof raw.date === 'string' ? raw.date : defaults.date,
+    progress: raw.progress && typeof raw.progress === 'object' ? raw.progress : defaults.progress,
+    claimed: Array.isArray(raw.claimed) ? raw.claimed : defaults.claimed,
+    lastLoginDate: typeof raw.lastLoginDate === 'string' ? raw.lastLoginDate : defaults.lastLoginDate,
+  };
+}
+
 /** 任意原始存档 → 当前版本 payload。历史版本之外的形态按"尽力恢复 + 默认兜底"处理。 */
 export function migrate(raw: unknown): SavePayload {
   const payload = (raw ?? {}) as any;
@@ -96,5 +110,9 @@ export function migrate(raw: unknown): SavePayload {
       typeof payload.appearance?.skinId === 'string'
         ? { skinId: payload.appearance.skinId }
         : createDefaultAppearance(),
+    // v5 → v6：每日任务/登录 + 图鉴里程碑 + 成就（缺失补默认）
+    daily: migrateDaily(payload.daily),
+    codexMilestones: Array.isArray(payload.codexMilestones) ? payload.codexMilestones : [],
+    achievements: Array.isArray(payload.achievements) ? payload.achievements : [],
   };
 }

@@ -38,6 +38,8 @@ import { persistentEffects, statusEffects } from '@/skills/systems';
 import { playerCardCost } from '@/skills/effects/costModifiers';
 import { useProfileStore } from '@/stores/profile';
 import { saveToServer } from '@/stores/persistence';
+import { useDailyStore } from '@/stores/daily';
+import { useAchievementsStore } from '@/stores/achievements';
 
 function playerName(playerId: 'playerA' | 'playerB'): string {
   const playerStore = usePlayerStore();
@@ -121,6 +123,11 @@ function endGame(outcome: GameOutcome) {
       `宅理论战${resultText}！获得 ${rewards.exp} 经验、${rewards.knowledge} 知识点。`,
       outcome.winner === 'playerA' ? 'success' : 'info',
     );
+    // 留存埋点（evolution-1）：仅玩家胜利记「赢 1 场」每日任务 + 成就（唯一不在 userStore 的成功点）
+    if (outcome.winner === 'playerA') {
+      useDailyStore().markProgress('battleWin', 1);
+      useAchievementsStore().check('battleWin');
+    }
     saveToServer();
   }
 }

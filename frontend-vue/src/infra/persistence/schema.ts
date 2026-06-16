@@ -8,6 +8,7 @@
  * v5（S10）：补入 saveVersion（保存计数，乐观并发用）。
  *   注意：saveVersion（第几次保存，单调递增）≠ 本 version（协议版本=5），是两个字段，别混。
  *   saveVersion 由后端权威维护（POST 返回新值），前端只是携带基线，旧档迁移默认 0。
+ * v6（evolution-1）：补入 daily（每日任务进度+日期+登录领取标记）/ codexMilestones（已领里程碑 id）/ achievements（已解锁 id）。
  */
 import type { PityState } from '@/engine/gacha/draw';
 import type { CharacterNurtureData } from '@/types/nurture';
@@ -20,12 +21,24 @@ import type {
   TowerProgress,
 } from '@/types/player';
 
-export const SAVE_VERSION = 5 as const;
+export const SAVE_VERSION = 6 as const;
 
 /** 商店单品的当日购买记录（跨天读取时自动视为 0）。 */
 export interface ShopPurchaseRecord {
   date: string;
   count: number;
+}
+
+/** 每日任务/登录（v6）。当日进度按 date 判定，跨天读取归零（逻辑在 stores/daily.ts）。 */
+export interface DailySave {
+  /** 当日任务集所属日期（todayKey：YYYY-M-D）。 */
+  date: string;
+  /** taskId → 进度计数。 */
+  progress: Record<string, number>;
+  /** 当日已领取的 taskId。 */
+  claimed: string[];
+  /** 每日登录奖励最近发放日期（todayKey）。 */
+  lastLoginDate: string;
 }
 
 export interface GuessGameSave {
@@ -77,6 +90,12 @@ export interface SavePayload {
   guess: GuessGameSave;
   /** v4 新增：皮肤装扮（随账号漫游）。 */
   appearance: AppearanceSave;
+  /** v6 新增：每日任务/登录进度。 */
+  daily: DailySave;
+  /** v6 新增：已领图鉴里程碑 id。 */
+  codexMilestones: string[];
+  /** v6 新增：已解锁成就 id。 */
+  achievements: string[];
 }
 
 /** 兼容别名（S5 时代命名）。 */
@@ -93,6 +112,11 @@ export function createDefaultPresetSquads(): PresetSquad[] {
 /** 默认皮肤 id 与 config/skins.ts 的 DEFAULT_SKIN_ID 一致；未知 id 由 theme store 回落，故这里不依赖 config。 */
 export function createDefaultAppearance(): AppearanceSave {
   return { skinId: 'warm' };
+}
+
+/** v6：每日任务/登录默认空态（新档/旧档迁移补默认）。 */
+export function createDefaultDaily(): DailySave {
+  return { date: '', progress: {}, claimed: [], lastLoginDate: '' };
 }
 
 export function createDefaultTowerProgress(): TowerProgress {

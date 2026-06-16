@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import PlayerStatus from '@/components/PlayerStatus.vue';
+import DailyTasksPanel from '@/components/DailyTasksPanel.vue';
 import ActivityLog from '@/components/ActivityLog.vue';
 import CollectionPreview from '@/components/CollectionPreview.vue';
 import WatchQueue from '@/components/WatchQueue.vue';
@@ -11,6 +12,9 @@ import ViewingStats from '@/components/ViewingStats.vue';
     
     <!-- Player Status Section -->
     <PlayerStatus />
+
+    <!-- Daily Tasks (留存引擎：每日任务面板) -->
+    <DailyTasksPanel />
 
     <!-- Watch Queue (独占一行) -->
     <WatchQueue />

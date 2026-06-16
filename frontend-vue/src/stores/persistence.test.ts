@@ -28,6 +28,9 @@ import { useGachaStore } from './gachaStore';
 import { useShopStore } from './shop';
 import { useGuessStore } from './guess';
 import { useThemeStore } from './theme';
+import { useDailyStore } from './daily';
+import { useCodexStore } from './codex';
+import { useAchievementsStore } from './achievements';
 import { createDefaultNurtureData } from '@/engine';
 import { SAVE_VERSION } from '@/infra/persistence';
 
@@ -77,7 +80,23 @@ function populateAllDomains() {
   useGuessStore().highScore = 85;
   data.trainingCooldowns = { charm_training: 1893456000000 };
   useThemeStore().setSkin('neon'); // S7：皮肤随账号入档
+
+  // evolution-1：每日任务 / 图鉴里程碑 / 成就
+  // 用「今天」的本地日期键，使 deserialize 的 ensureToday 不会判为跨天而清零进度。
+  const daily = useDailyStore();
+  daily.date = TODAY_KEY;
+  daily.progress = { daily_gacha: 1 };
+  daily.claimed = ['daily_gacha'];
+  daily.lastLoginDate = TODAY_KEY;
+  useCodexStore().claimedMilestones = ['char_owned_50'];
+  useAchievementsStore().unlocked = ['ach_first_ur'];
 }
+
+/** 与 daily store 同款本地日期键（YYYY-M-D）。 */
+const TODAY_KEY = (() => {
+  const d = new Date();
+  return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+})();
 
 describe('buildPayload ⇄ applyPayload 往返', () => {
   it('全部领域状态经一轮序列化后逐项保真（含 ★ presetSquads / towerProgress）', () => {
@@ -124,6 +143,15 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
 
     // S7 新增域：皮肤装扮（中途手动切回默认，验证 applyPayload 恢复账号皮肤）
     expect(useThemeStore().currentSkinId).toBe('neon');
+
+    // evolution-1 新增域：每日任务 / 图鉴里程碑 / 成就
+    const daily = useDailyStore();
+    expect(daily.date).toBe(TODAY_KEY);
+    expect(daily.progress).toEqual({ daily_gacha: 1 });
+    expect(daily.claimed).toEqual(['daily_gacha']);
+    expect(daily.lastLoginDate).toBe(TODAY_KEY);
+    expect(useCodexStore().claimedMilestones).toEqual(['char_owned_50']);
+    expect(useAchievementsStore().unlocked).toEqual(['ach_first_ur']);
   });
 
   it('payload 带版本号与全部 schema 键', () => {
@@ -136,6 +164,7 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
       'animeHistory', 'characterHistory', 'favoriteAnime', 'favoriteCharacters',
       'characterNurtureData', 'presetSquads', 'towerProgress',
       'shopPurchases', 'guess', 'appearance',
+      'daily', 'codexMilestones', 'achievements',
     ]) {
       expect(payload).toHaveProperty(key);
     }

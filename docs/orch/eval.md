@@ -1,118 +1,142 @@
-# Evaluator Report — Iteration 1
+# Evaluator 报告 — Evolution 第 1 轮（E1-T1/T2/T3）
 
-> 独立验证 S10（后端加固 & 安全）。不信任 Generator 自报，所有验收命令亲自重跑（前端在
-> `frontend-vue/`，后端用项目 venv `./.venv/Scripts/python.exe`）。验证时间 2026-06-16。
+> QA Evaluator 独立验证。不信 Generator 自报，亲自重跑全部验收命令 + 抽查代码。
+> 验证时间：2026-06-16。tier1 on：本决策为**信息性**（给下一轮 Planner），不直接终止循环。
 
-## Checkbox 状态
+---
 
-`docs/SPRINT.md` S10 六项任务全部已勾：
+## 1. Checkbox 状态（docs/SPRINT.md「Evolution 第 1 轮」段）
 
-| 任务 | 状态 | 说明 |
+| 任务 | 行 | 状态 |
 |---|---|---|
-| S10-T1 存档接口鉴权（密码账号 + 会话 token） | `[x]` | line 28 |
-| S10-T2 关闭 debug 模式 | `[x]` | line 34 |
-| S10-T3 存档原子写 + 版本号 + 并发保护 | `[x]` | line 38 |
-| S10-T4 CORS 收敛 + vite host/allowedHosts 收敛 | `[x]` | line 43 |
-| S10-T5 部署方案文档（不实施） | `[x]` | line 47 |
-| S10-T6 回归与防漂移收口 | `[x]` | line 51 |
+| E1-T1 每日任务 + 每日登录奖励 | L88 | `[x]` ✅ |
+| E1-T2 图鉴/收集完成度 + 里程碑 | L91 | `[x]` ✅ |
+| E1-T3 成就系统 | L94 | `[x]` ✅ |
 
-FUTURE.md 进度总览 S10 = ✅「已完成」（line 39），且有「S10 — 后端加固 & 安全（已完成 2026-06-16）」详情段（line 238）。
+三项全部勾掉，与合同要求一致。
 
-## 验收命令重跑结果
+---
 
-全部由 Evaluator 亲自运行，真实输出如下：
+## 2. 验收命令重跑结果（亲自跑，真实输出）
 
-| # | 命令 | 期望 | 实际 | 结论 |
-|---|---|---|---|---|
-| 1 | `npm run type-check` | 0 错 | `TYPECHECK_EXIT=0`（vue-tsc 0 错误） | ✅ |
-| 2 | `npm run test` | 全绿，≥305（应 310） | `Test Files 25 passed (25) / Tests 310 passed (310)`，`TEST_EXIT=0` | ✅ |
-| 3 | `npm run build` | 成功 | `✓ built in 10.00s`，`BUILD_EXIT=0` | ✅ |
-| 4 | `./.venv/Scripts/python.exe backend/test_security.py` | 退出码 0 + RESULT: PASS | 19 断言全 PASS，`RESULT: PASS — all security checks passed`，`SECTEST_EXIT=0` | ✅ |
-| 5 | `grep -rn "debug=True" backend/server.py api/index.py` | 零命中 | 两文件均 `No matches found` | ✅ |
-
-命令 4 完整逐项（亲自跑）：
-```
-PASS  server.app.debug is False
-PASS  GET without token → 401 (got 401)
-PASS  alice first login (register) → 200 (got 200)
-PASS  alice got a token on register
-PASS  wrong password → 401 (got 401)
-PASS  correct password → token
-PASS  POST own save with token → 200 (got 200)
-PASS  POST returns saveVersion=1
-PASS  GET own save with token → 200 (got 200)
-PASS  GET reflects saveVersion=1
-PASS  bob register → 200
-PASS  A token writing B's save → rejected (got 401)
-PASS  A token reading B's save → rejected (got 401)
-PASS  stale saveVersion POST → 409 (got 409)
-PASS  correct saveVersion POST → 200 saveVersion=2 (got 200)
-PASS  alice save intact before failure sim
-PASS  atomic_write_json raised on simulated failure
-PASS  original save unchanged & fully readable after failed write
-PASS  no temp file leftovers after failed write
-RESULT: PASS — all security checks passed
-```
-
-## Generator 报告 vs 实际对比
-
-| 项目 | Generator 自报（gen_status.md） | Evaluator 实测 | 一致？ |
+| # | 命令（frontend-vue/ 下）| 结果 | 真实输出摘录 |
 |---|---|---|---|
-| type-check | EXIT=0 | EXIT=0 | ✅ 一致 |
-| test | 25 files / 310 tests passed | 25 files / 310 tests passed | ✅ 一致 |
-| build | ✓ built in 10.12s | ✓ built in 10.00s（构建时长本就随机波动，无意义差异） | ✅ 一致 |
-| security test | RESULT: PASS，19 断言 | RESULT: PASS，19 断言 | ✅ 一致 |
-| debug grep | 零命中 | 零命中 | ✅ 一致 |
+| 1 | `npm run type-check` | ✅ PASS | `vue-tsc --build`，退出码 0，无任何错误/额外输出 |
+| 2 | `npm run test` | ✅ PASS | `Test Files 28 passed (28)` / `Tests 336 passed (336)`，退出码 0，Duration 3.88s |
+| 3 | `npm run build` | ✅ PASS | `✓ built in 8.80s`，退出码 0，产物正常 |
 
-无夸大、无遗漏。自报与实测完全吻合。
+三条全绿。测试数 336 ≥ 合同下限（≥310 全绿 + 新增）。
 
-## pitfalls 合规检查
+---
 
-逐条对照 `docs/plans/pitfalls.md`：
+## 3. Generator 自报 vs 实测对比
 
-- **凭据不进存档文件**：✅ `backend/auth.py` 把哈希落在 `data/auth/credentials.json`（独立文件）；对 `data/user_data/*.json` 4 个存档全文 grep `password|credential|password_hash|pbkdf2|scrypt`（忽略大小写）= 零命中。存档不含任何凭据字段。
-- **saveVersion ≠ 协议 version**：✅ schema 注释明确「saveVersion（保存计数）≠ version（协议版本=5）」；`SAVE_VERSION = 5`，saveVersion 是独立的单调计数字段，后端权威递增。
-- **不跑 npm lint --fix**：✅ 全程未运行 `npm run lint`；只跑 type-check / test / build。
-- **存档字段三处同改**：✅ `infra/persistence/schema.ts`（v5 + saveVersion 字段）+ `migrations.ts`（缺省补 0）+ `stores/persistence.ts`（装配器 `currentSaveVersion` 基线随 load/save 更新）三处齐改，并有 `migrations.test.ts` 新增用例锁定（缺失补 0 / 原样保留 / 非整数回落 0）。未破坏既有 v4→v5 往返测试（310 全绿）。
-- **两后端变体一致**：✅ `backend/server.py` 与 `api/index.py` 的鉴权/debug/原子写/saveVersion 逻辑同源（共用 `backend/auth.py`），serverless 变体不留洞。
-- **用户名白名单不破坏**：✅ `auth.is_valid_username` 仍是 `username.isalnum()`，与读写存档同一套防路径穿越白名单。
-- **鉴权头只改 api.ts 一处**：✅ `infra/persistence/api.ts` 模块级 token holder + `authHeaders()`，未散到各 store。
+| 指标 | gen_status 自报 | 我的实测 | 一致？ |
+|---|---|---|---|
+| type-check | 0 错 | 0 错 | ✅ 一致 |
+| 测试数 | 336 passed (28 files) | 336 passed (28 files) | ✅ 一致 |
+| build | `✓ built`（自报 10.66s）| `✓ built in 8.80s` | ✅ 一致（耗时机器差异，不计） |
+| 新测试文件 | daily/codex/achievements 三个 | 实存，用例数 10/6/7 = 23 | ✅ 一致 |
+| 成就条数 | 18 | `grep id:'ach_'` = 18 | ✅ 一致 |
+| 每日任务条数 | 4 | `grep id:'daily_'` = 4 | ✅ 一致 |
 
-## 代码安全属性抽查
+**无夸大、无造假。** 自报数字逐项落地。浏览器闭环部分无法复验（无后端实跑），但代码侧已交叉印证埋点链真实存在。
 
-亲自 Read 源码核实四项关键属性真实存在（非仅测试绿）：
+---
 
-1. **token 闸（两入口）**：✅ 真实存在。
-   - `backend/server.py` GET `/api/user/data`（line 98-100）与 POST（line 138-140）：`authed = _authed_username(); if authed is None or authed != username: return 401`。
-   - `api/index.py` GET（line 86-88）与 POST（line 110-112）：同样的 `authed != username → 401` 闸。
-   - `_authed_username` → `auth.username_from_auth_header` → 解析 `Bearer <token>` → itsdangerous 验签得 username。A 的 token 写/读 B 的存档被拒（测试实测 401）。
+## 4. 代码抽查结果（亲自 Read 核实，逐项判定）
 
-2. **凭据独立存储**：✅ 真实。`auth.py` 注释明确「绝不能进 user_data 存档」；哈希存 `data/auth/credentials.json`（`get_credentials_path`），用 `werkzeug.security.generate_password_hash`（盐哈希）。存档文件 grep 零凭据命中。`data/auth/` 目录尚未生成属正常（首次真实登录时 `atomic_write_json` 自建），现有 4 个 passwordless 存档完好待 claim-on-first-login 认领。
+### 4.1 三个新 store 独立 + userStore 未被塞领域逻辑 — ✅ 属实
+- `stores/daily.ts`（157 行）/ `stores/codex.ts`（132 行）/ `stores/achievements.ts`（132 行）均存在，是自包含领域 store，各带 serialize/deserialize/reset 三件套。
+- `daily.ts` 自带 `todayKey()`（复制 shop 模式，未横向 import）、`ensureToday()` 读时跨天归零、`markProgress/claim/claimLoginReward`。
+- `codex.ts` 完成度为 computed 纯派生，只存 `claimedMilestones: string[]`。
+- `achievements.ts` 只存 `unlocked: string[]`，stats 会话级 reactive（不进档），`check()` 事件驱动幂等。
+- userStore 仅在**编排函数加调用行**（markProgress/check/claimLoginReward/claim），新增 `withNurtureProgress` 包装器与 `claimDailyTask`/`claimCodexMilestone` 门面——均为薄编排，无规则下沉。
 
-3. **原子写（temp + os.replace）**：✅ 真实。`auth.atomic_write_json`（line 51-73）：同目录 `tempfile.mkstemp` 写临时文件 → `flush` + `os.fsync` → `os.replace(tmp, filepath)` 原子替换；异常时清理临时文件、原目标不动。存档写（server.py line 161 / index.py line 133）与凭据写（`_save_credentials`）都走它。**非**直接 `open(w)` 覆盖。测试模拟 `os.replace` 抛错后原档完整可读、无临时文件残留——实测 PASS。
+### 4.2 6 个玩法成功点埋点 — ✅ 全部命中，对战在 battleFlow（无漏）
+| 成功点 | 位置 | 埋点 |
+|---|---|---|
+| 抽卡 | userStore.ts:143-144 | `daily.markProgress('gacha')` + `ach.check('gacha', {rarities})` |
+| 收观看 | userStore.ts:354-355 | 返回值守卫内 `markProgress('watch')` + `check('watch')` |
+| 养成互动 | userStore.ts:288-290（withNurtureProgress 包 3 入口）| `markProgress('nurture')` + `check('nurture', {characterMaxLevel})` |
+| 猜对 | userStore.ts:257（+ 262 猜错 resetGuessStreak）| `check('guess')` |
+| 爬塔 | userStore.ts:412 | 返回值守卫内 `check('tower', {floor})` |
+| **对战胜利** | **battleFlow.ts:127-129** | `outcome.winner === 'playerA'` 块内 `markProgress('battleWin')` + `check('battleWin')` |
 
-4. **两入口 debug 默认 False**：✅ 真实。`server.py` line 321-322 `debug_mode = os.environ.get("FLASK_DEBUG") == "1"`（默认 False）；`api/index.py` line 146 同。grep `debug=True` 两文件零命中；test_security 断言 `server.app.debug is False` PASS。
+对战埋点确在 `battleFlow.endGame` 的胜利分支（scout 强调的唯一例外），**没漏**。
 
-附加抽查：
-- **CORS 收敛**：`api/index.py` 不再裸 `CORS(app)`，改 `CORS(app, resources={r"/api/*": {"origins": _allowed_origins}})`，源经 `ALLOWED_ORIGINS` 环境变量（缺省本地源）。
-- **vite 收敛**：`vite.config.ts` 默认 `host='localhost'`、`allowedHosts=undefined`（不再硬编码 `0.0.0.0` / `true`），经 `VITE_HOST` / `VITE_ALLOWED_HOSTS` 按需放开，保留 proxy 与隧道注释。
-- **saveVersion 乐观并发**：`save_user_data` 以现存文件 saveVersion 为权威，`client_version != current_version → 409`，否则递增写入——旧版本 409 / 新版本 200 实测 PASS。
-- **部署文档**：`docs/部署方案.md` 含路径①自部署、路径② Vercel serverless、通用环境变量节、单人在线版上线清单；`docs/README.md` 已加索引行（line 32）。
+### 4.3 schema v5→v6 三处同改 + 测试只追加 — ✅ 属实
+- `schema.ts`：`SAVE_VERSION = 6`，新增 `DailySave` 接口 + SavePayload 末尾三键（daily/codexMilestones/achievements）+ `createDefaultDaily()` 工厂 + 顶部块注释。
+- `migrations.ts`：新增 `migrateDaily()` 字段级兜底，migrate() 末尾加三键（codexMilestones/achievements 数组守卫）。既有 v1~v5 迁移逻辑一字未动。
+- `persistence.ts`：import 三个新 store；buildPayload/applyPayload/resetAllDomains 各加三行装配。
+- `migrations.test.ts`：diff 只追加 3 个 v6 用例（缺省补默认 / v6 原样保留 / 局部损坏字段兜底），唯一 `-` 行是 import 行扩展（非断言改动），既有断言未改。
+- `persistence.test.ts`：diff 只追加（三域往返断言 + 「payload 全键列表」加三键 + TODAY_KEY 辅助）。用 `TODAY_KEY` 塞值避免 deserialize 的 ensureToday 跨天清零——处理正确。
 
-## 结构漂移检查
+### 4.4 图鉴完成度纯派生 + 不硬编码 665 — ✅ 属实
+- `CodexPanel.vue:38` 用 `gameDataStore.allAnimeCards` / `allCharacterCards`；完成度走 `codex.animeCompletion/characterCompletion`（computed）。
+- `codex.ts` `completionFor()` 分母 = `allCards.length`，owned 用 `collection.getXxxCardCount(id) > 0` 判定。
+- **全仓 `grep 665` 在 src/ 命中 4 处，均为注释/AI 配置/技能数据 id，CodexPanel 与 codex.ts 零硬编码 665。**
 
-项目无 `docs/project_structure.md` 文件（已确认不存在），按指令跳过结构漂移比对。Generator 自报同样指出此文件不存在，无需同步。
+### 4.5 颜色铁律 — ✅ 合规（一处 text-white 是合法例外，非违规）
+- `grep "text-white\|bg-\${"`：DailyTasksPanel / AchievementsPanel **零命中**。CodexPanel 命中 **1 处**：
+  - `CodexPanel.vue:185` `text-white bg-black/60` —— 这是**卡图右上角稀有度角标的压片白字**（白字压在 `bg-black/60` 半透明深色 badge 上，且整体浮在卡片图片上）。这正是 CLAUDE.md 明列的允许例外：「图片压片白字是仅有的固定色例外」。**判定：合规，不算违规。**
+  - 「未拥有」灰位遮罩用 `text-ink-2` / `bg-surface/80`（语义色），灰位用 `opacity-40 grayscale`（非颜色类）。
+- 无任何 `bg-${...}` 动态色类拼接。
 
-## 失败原因分析
+### 4.6 engine 纯净 — ✅ 属实
+- `grep "defineStore|from 'pinia'|new Date()|useProfileStore|markProgress"` 扫 `engine/`：**零命中**。日期/进度/成就判定全在 stores 层，engine 未被塞 Pinia/Date 副作用。
 
-无失败项。5 条验收命令全过，6 个 checkbox 全勾，四项关键安全属性源码核实属实。
+---
 
-## 新陷阱待追加
+## 5. pitfalls 合规
 
-Generator 自报的新陷阱（凭据独立存储 / saveVersion≠schema version / Werkzeug 需与 Flask 同钉版本 / 后端自检须 tempdir+env 隔离）均经验证属实，建议追加进 `docs/plans/pitfalls.md`。其中 **Werkzeug 钉版本** 一条尤其值得固化：requirements 仅钉 Flask 时 fresh install 会拉 Werkzeug 3.x 与 Flask 2.3.x 不兼容；test_security.py 已加 `__version__` 兼容兜底，让既有 venv（仍是 3.x）也能跑过。Evaluator 实测当前 venv 下该脚本 PASS，兜底有效。
+| pitfalls 条目 | 合规 |
+|---|---|
+| engine 纯净（零 Vue/Pinia/Date/IO）| ✅ engine 零命中 |
+| 依赖只向下 | ✅ 新逻辑在 stores，组件→store→config，无反向 |
+| 存档新增字段三处同改 + 旧档缺省 + 测试只追加 | ✅ schema/migrations/persistence 全改，测试只 append |
+| 领域 store 自己不调 saveToServer | ✅ 三 store 均不触发存档，由门面统一 |
+| 颜色语义类，禁 text-white 压浅底/禁动态色类 | ✅ 唯一 text-white 是图片压片合法例外 |
+| 总数 .length 派生不硬编码 665 | ✅ 完成度全派生 |
+| userStore 已偏大，新逻辑进独立 store，成功点只加一行 | ✅ userStore 只加编排行 + 薄门面 |
 
-## 决策
+---
 
-所有 S10 checkbox 已 `[x]`，5 条验收命令全部亲自重跑通过（type-check 0 错 / 310 测试全绿 / build 成功 / 安全自检 19 断言 PASS 退出 0 / debug grep 零命中），四项关键安全属性源码核实真实存在，pitfalls 全合规，自报与实测一致无夸大。
+## 6. 结构漂移核查
 
-COMPLETE
+项目无 `docs/project_structure.md` —— **跳过结构漂移核查**。新增文件（3 store + 3 component + 3 config + 3 test = 12 个）布局符合既有 stores/components/config/ 约定。
+
+---
+
+## 7. 失败分析
+
+无失败项。三条验收命令全绿，代码抽查全部属实，无缩水/夸大/埋点漏/颜色违规/测试造假。
+
+---
+
+## 8. 新发现的坑（补充 Generator 已记录的）
+
+Generator 已记录 4 条坑（UR 同命中 SSR 档、round-trip 与跨天清零张力、MAX_CHARACTER_LEVEL=100、data/auth 运行时目录），均属实且有价值。Evaluator 补充：
+
+- **[git 状态] evolution-1 全部改动仍未提交**（working tree dirty：12 个改动文件 + 12 个新文件）。git log 顶是 S10（204f836）+ skills 清理（3f9d99f），本轮成果未落 commit。下一轮/收口前需提交，否则有丢失风险。
+- **[测试隔离] persistence.test 依赖真实系统时钟**：用 `new Date()` 算 TODAY_KEY 塞值。当前可过，但若测试跨午夜运行（塞值时刻与 deserialize 时刻分属两天）理论上有偶发风险。概率极低，记录备查。
+
+---
+
+## 9. 决策（tier1 on，仅信息性）
+
+**DECISION: COMPLETE**
+
+依据：
+- 三条验收命令亲自重跑全绿（type-check 0 错 / test 336 passed / build 成功），与 Generator 自报逐项一致，无夸大。
+- E1-T1/T2/T3 三 checkbox 全 `[x]`，功能埋点链代码侧交叉印证真实存在。
+- 代码抽查 6 大项（独立 store / 6 成功点埋点 / schema 三处同改 / 完成度纯派生 / 颜色铁律 / engine 纯净）**全部属实**。
+- 唯一 text-white 命中为图片压片合法例外，非违规。
+- pitfalls 全条合规。
+
+本轮「留存引擎」三件套（每日任务/登录、图鉴完成度/里程碑、成就系统）质量达标、诚实交付。
+
+**给下一轮 Planner 的提示**：
+1. 本轮成果尚未 commit，建议下一轮开工前先落 commit 固化。
+2. 经济「只进不出」张力仍在——daily 已以券为主缓解，但里程碑/成就仍发知识点。reviewer 🟡-4 知识点出口（商城扩展）建议下一轮正式做，对齐 plan.md 留的尾。
+3. daily 当前每类型仅 1 条任务（markProgress 已按类型遍历为多任务预留），若要丰富每日任务池，config 直接扩即可，无需改 store。

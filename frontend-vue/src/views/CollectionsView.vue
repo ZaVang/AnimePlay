@@ -8,12 +8,14 @@ import DeckManager from '@/components/decks/DeckManager.vue';
 import AnimeCard from '@/components/AnimeCard.vue';
 import CharacterCard from '@/components/CharacterCard.vue';
 import VirtualGrid from '@/components/VirtualGrid.vue';
+import CodexPanel from '@/components/CodexPanel.vue';
+import AchievementsPanel from '@/components/AchievementsPanel.vue';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
 
 // --- STATE for UI ---
-const activeTab = ref<'anime' | 'character' | 'decks'>('anime');
+const activeTab = ref<'anime' | 'character' | 'decks' | 'codex' | 'achievements'>('anime');
 const selectedCard = ref<AnimeCardType | CharacterCardType | null>(null);
 const selectedCardType = ref<'anime' | 'character'>('anime');
 const rarityOrder: Rarity[] = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
@@ -33,8 +35,8 @@ const VIRTUAL_GRID_CONFIG = {
 // 虚拟化阈值 - 提高阈值，减少虚拟化触发频率
 const VIRTUALIZATION_THRESHOLD = 100;
 
-// 虚拟化开关 - 用户可以选择禁用虚拟化
-const enableVirtualization = ref(true);
+// 虚拟化总开关（收成内部常量；曾是面向用户的调试开关，evolution-1 收口）
+const ENABLE_VIRTUALIZATION = true;
 
 
 // --- Event Handlers ---
@@ -105,11 +107,11 @@ const filteredAnimeCards = computed(() => {
 
 // 判断是否需要虚拟化
 const shouldVirtualizeAnime = computed(() => {
-  return enableVirtualization.value && filteredAnimeCards.value.length > VIRTUALIZATION_THRESHOLD;
+  return ENABLE_VIRTUALIZATION && filteredAnimeCards.value.length > VIRTUALIZATION_THRESHOLD;
 });
 
 const shouldVirtualizeCharacter = computed(() => {
-  return enableVirtualization.value && filteredCharacterCards.value.length > VIRTUALIZATION_THRESHOLD;
+  return ENABLE_VIRTUALIZATION && filteredCharacterCards.value.length > VIRTUALIZATION_THRESHOLD;
 });
 
 const filteredCharacterCards = computed(() => {
@@ -143,12 +145,14 @@ const filteredCharacterCards = computed(() => {
         <nav class="-mb-px flex space-x-6" aria-label="Collection Tabs">
           <a href="#" @click.prevent="activeTab = 'anime'" :class="['collection-tab', { 'active': activeTab === 'anime' }]">动画收藏</a>
           <a href="#" @click.prevent="activeTab = 'character'" :class="['collection-tab', { 'active': activeTab === 'character' }]">角色收藏</a>
+          <a href="#" @click.prevent="activeTab = 'codex'" :class="['collection-tab', { 'active': activeTab === 'codex' }]">图鉴</a>
+          <a href="#" @click.prevent="activeTab = 'achievements'" :class="['collection-tab', { 'active': activeTab === 'achievements' }]">成就</a>
           <a href="#" @click.prevent="activeTab = 'decks'" :class="['collection-tab', { 'active': activeTab === 'decks' }]">我的卡组</a>
         </nav>
       </div>
 
       <!-- Filters Section for Collections -->
-      <div v-if="activeTab !== 'decks'" class="p-6 border-b border-line">
+      <div v-if="activeTab === 'anime' || activeTab === 'character'" class="p-6 border-b border-line">
         <div v-if="activeTab === 'anime'">
             <div class="flex flex-wrap gap-4 items-center">
                 <input type="text" v-model="animeFilters.name" placeholder="按动画名称搜索..." class="p-2 border rounded-lg flex-grow min-w-0 text-ink">
@@ -235,6 +239,16 @@ const filteredCharacterCards = computed(() => {
           </div>
         </div>
         
+        <!-- Codex (图鉴完成度 + 里程碑) -->
+        <div v-else-if="activeTab === 'codex'">
+            <CodexPanel />
+        </div>
+
+        <!-- Achievements (成就墙) -->
+        <div v-else-if="activeTab === 'achievements'">
+            <AchievementsPanel />
+        </div>
+
         <!-- Deck Manager -->
         <div v-else-if="activeTab === 'decks'">
             <DeckManager />

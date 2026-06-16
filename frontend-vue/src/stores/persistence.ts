@@ -15,6 +15,9 @@ import { useGachaStore } from './gachaStore';
 import { useShopStore } from './shop';
 import { useGuessStore } from './guess';
 import { useThemeStore } from './theme';
+import { useDailyStore } from './daily';
+import { useCodexStore } from './codex';
+import { useAchievementsStore } from './achievements';
 
 // 乐观并发基线（S10-T3）：loadFromServer 后设为服务端的 saveVersion（新用户 0），
 // buildPayload 带上它，pushUserSave 成功后更新为后端返回的权威新值。
@@ -56,6 +59,9 @@ export function buildPayload(): SavePayload {
     shopPurchases: useShopStore().serialize(),
     guess: useGuessStore().serialize(),
     appearance: { skinId: useThemeStore().currentSkinId },
+    daily: useDailyStore().serialize(),
+    codexMilestones: useCodexStore().serialize(),
+    achievements: useAchievementsStore().serialize(),
   };
 }
 
@@ -88,6 +94,9 @@ export function applyPayload(payload: SavePayload) {
   });
   useShopStore().deserialize(payload.shopPurchases);
   useGuessStore().deserialize(payload.guess);
+  useDailyStore().deserialize(payload.daily);
+  useCodexStore().deserialize(payload.codexMilestones);
+  useAchievementsStore().deserialize(payload.achievements);
   // 皮肤随账号走：账号存档覆盖设备缓存（登出/重置不回滚皮肤，见 resetAllDomains）
   useThemeStore().applyFromSave(payload.appearance.skinId);
 }
@@ -103,6 +112,9 @@ export function resetAllDomains() {
   usePveStore().reset();
   useShopStore().reset();
   useGuessStore().reset();
+  useDailyStore().reset();
+  useCodexStore().reset();
+  useAchievementsStore().reset();
   // 注意：皮肤是设备/账号双层偏好，登出或新建账号不强制回滚到默认皮肤。
 }
 

@@ -7,6 +7,7 @@
 import { defineStore } from 'pinia';
 import { computed, reactive } from 'vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
+import { MAX_CHARACTER_LEVEL } from '@/engine';
 import { type ShopItem } from '@/utils/gachaRotation';
 import type { CurrencyKey, Deck } from '@/types/player';
 import { useGachaStore, type DrawnCard } from './gachaStore';
@@ -20,6 +21,9 @@ import { usePveStore } from './pve';
 import { useShopStore } from './shop';
 import { useGuessStore } from './guess';
 import { useThemeStore } from './theme';
+import { useDailyStore } from './daily';
+import { useCodexStore } from './codex';
+import { useAchievementsStore } from './achievements';
 import { saveToServer, loadFromServer, resetAllDomains } from './persistence';
 import { loginRequest, setAuthToken, clearAuthToken } from '@/infra/persistence';
 
@@ -67,6 +71,10 @@ export const useUserStore = defineStore('user', () => {
       setAuthToken(token); // token 先挂上，后续 loadFromServer 才能带鉴权头
       profile.currentUser = username;
       await loadFromServer();
+      // 每日登录奖励（evolution-1）：跨天首次登录发放一次，发了就落盘
+      if (useDailyStore().claimLoginReward()) {
+        saveToServer();
+      }
       return { ok: true };
     } catch (error) {
       // 401/网络失败：清理任何半登录态
@@ -130,6 +138,10 @@ export const useUserStore = defineStore('user', () => {
       drawnCards.map(card => ({ id: card.id, rarity: card.rarity, timestamp: Date.now() })),
     );
     gachaStore.lastResult = drawnCards;
+
+    // 留存埋点（evolution-1）：每日任务进度 + 成就检测（一次抽卡算 1 次任务进度）
+    useDailyStore().markProgress('gacha', 1);
+    useAchievementsStore().check('gacha', { rarities: drawnCards.map(c => c.rarity) });
 
     saveToServer();
     return drawnCards;
@@ -241,8 +253,13 @@ export const useUserStore = defineStore('user', () => {
           profile.earn('knowledgePoints', knowledgeAwarded);
           profile.addLog(`猜角色得分 ${guessStore.currentScore}，兑换 ${knowledgeAwarded} 知识点！`, 'success');
         }
+        // 留存埋点（evolution-1）：猜对成就（连对/累计）
+        useAchievementsStore().check('guess');
         saveToServer(); // 最高分/知识点可能更新
       }
+    } else if (profile.isLoggedIn) {
+      // 猜错打断连对计数（不存档：streak 是会话态）
+      useAchievementsStore().resetGuessStreak();
     }
 
     return { ...result, knowledgeAwarded };
@@ -254,6 +271,25 @@ export const useUserStore = defineStore('user', () => {
     fn(...args);
     saveToServer();
   };
+
+  /**
+   * 养成互动包装（evolution-1）：执行底层养成动作 + 留存埋点 + 存档。
+   * 第一参数约定为 characterId（三个互动入口同签名），用于满级成就判定。
+   */
+  const withNurtureProgress =
+    <A extends [number, ...unknown[]]>(fn: (...args: A) => unknown) =>
+    (...args: A) => {
+      if (!profile.isLoggedIn) {
+        fn(...args);
+        return;
+      }
+      fn(...args);
+      const characterId = args[0];
+      useDailyStore().markProgress('nurture', 1);
+      const isMaxLevel = (nurture.getNurtureData(characterId)?.level ?? 0) >= MAX_CHARACTER_LEVEL;
+      useAchievementsStore().check('nurture', { characterMaxLevel: isMaxLevel });
+      saveToServer();
+    };
 
   return {
     // profile
@@ -313,7 +349,12 @@ export const useUserStore = defineStore('user', () => {
       if (viewing.addToViewingQueue(animeId, slotIndex)) saveToServer();
     },
     collectFromViewingQueue: (slotIndex: number) => {
-      if (viewing.collectFromViewingQueue(slotIndex)) saveToServer();
+      if (viewing.collectFromViewingQueue(slotIndex)) {
+        // 留存埋点（evolution-1）：每日任务 + 成就（用返回值守卫，未到时间不记）
+        useDailyStore().markProgress('watch', 1);
+        useAchievementsStore().check('watch');
+        saveToServer();
+      }
     },
 
     // shop（S6 限购）
@@ -324,15 +365,28 @@ export const useUserStore = defineStore('user', () => {
     // guess（S6 接入经济）
     submitGuess,
 
+    // daily（evolution-1）：领取每日任务奖励（领域 store 自己不存档）
+    claimDailyTask: (taskId: string) => {
+      if (useDailyStore().claim(taskId)) saveToServer();
+    },
+
+    // codex（evolution-1）：领取图鉴里程碑奖励 + 联动「收藏家」成就
+    claimCodexMilestone: (milestoneId: string) => {
+      if (useCodexStore().claim(milestoneId)) {
+        useAchievementsStore().check('codex', { milestoneId });
+        saveToServer();
+      }
+    },
+
     // appearance（S7 皮肤随账号走；未登录时设置页直接用 theme store）
     setSkin: (skinId: string) => { useThemeStore().setSkin(skinId); saveToServer(); },
 
     // nurture
     characterNurtureData: computed(() => nurture.characterNurtureData),
     getNurtureData: nurture.getNurtureData,
-    increaseAffection: withSave(nurture.increaseAffection),
-    interactWithCharacter: withSave(nurture.interactWithCharacter),
-    giveGift: withSave(nurture.giveGift),
+    increaseAffection: withNurtureProgress(nurture.increaseAffection),
+    interactWithCharacter: withNurtureProgress(nurture.interactWithCharacter),
+    giveGift: withNurtureProgress(nurture.giveGift),
     enhanceAttribute: withSave(nurture.enhanceAttribute),
     enhanceBattleStat: withSave(nurture.enhanceBattleStat),
     getEnhancedBattleStats: nurture.getEnhancedBattleStats,
@@ -353,7 +407,11 @@ export const useUserStore = defineStore('user', () => {
     getSquadMembers: pve.getSquadMembers,
     getCurrentChallengeFloor: pve.getCurrentChallengeFloor,
     completeFloor: (floor: number) => {
-      if (pve.completeFloor(floor)) saveToServer();
+      if (pve.completeFloor(floor)) {
+        // 留存埋点（evolution-1）：爬塔通层成就（用返回值守卫，floor 不匹配不记）
+        useAchievementsStore().check('tower', { floor });
+        saveToServer();
+      }
     },
     hasCompletedFloor: pve.hasCompletedFloor,
     canAttemptToday: pve.canAttemptToday,
