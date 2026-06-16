@@ -9,11 +9,26 @@ const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
 useThemeStore(); // 初始化皮肤（实例化即应用设备缓存的皮肤）
 const usernameInput = ref('');
+const passwordInput = ref('');
+const loginError = ref('');
+const loggingIn = ref(false);
 
 async function handleLogin() {
-  if (usernameInput.value) {
-    await userStore.login(usernameInput.value);
+  if (loggingIn.value) return;
+  if (!usernameInput.value || !passwordInput.value) {
+    loginError.value = '请输入用户名和密码。';
+    return;
+  }
+  loggingIn.value = true;
+  loginError.value = '';
+  const result = await userStore.login(usernameInput.value, passwordInput.value);
+  loggingIn.value = false;
+  if (result.ok) {
     usernameInput.value = '';
+    passwordInput.value = '';
+  } else {
+    loginError.value = result.error ?? '登录失败，请重试。';
+    passwordInput.value = '';
   }
 }
 
@@ -68,19 +83,31 @@ onMounted(() => {
 
                   </div>
 
-                  <div v-else class="flex gap-2 items-center">
-                      <input
-                          v-model="usernameInput"
-                          @keyup.enter="handleLogin"
-                          type="text"
-                          placeholder="用户名"
-                          class="input-control w-40"
-                      />
+                  <div v-else class="flex flex-col items-end gap-1">
+                      <div class="flex gap-2 items-center">
+                          <input
+                              v-model="usernameInput"
+                              @keyup.enter="handleLogin"
+                              type="text"
+                              autocomplete="username"
+                              placeholder="用户名"
+                              class="input-control w-32"
+                          />
+                          <input
+                              v-model="passwordInput"
+                              @keyup.enter="handleLogin"
+                              type="password"
+                              autocomplete="current-password"
+                              placeholder="密码"
+                              class="input-control w-32"
+                          />
 
-                      <button @click="handleLogin" class="btn-primary">
-                          登录
-                      </button>
+                          <button @click="handleLogin" :disabled="loggingIn" class="btn-primary">
+                              {{ loggingIn ? '登录中…' : '登录' }}
+                          </button>
+                      </div>
 
+                      <p v-if="loginError" class="text-xs text-danger">{{ loginError }}</p>
                   </div>
                 </div>
 

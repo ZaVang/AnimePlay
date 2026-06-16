@@ -16,6 +16,16 @@ import { useShopStore } from './shop';
 import { useGuessStore } from './guess';
 import { useThemeStore } from './theme';
 
+// 乐观并发基线（S10-T3）：loadFromServer 后设为服务端的 saveVersion（新用户 0），
+// buildPayload 带上它，pushUserSave 成功后更新为后端返回的权威新值。
+// 这是「第几次保存」的计数，与 schema 的 version（协议版本）无关。
+let currentSaveVersion = 0;
+
+/** 测试辅助：读取当前并发基线。 */
+export function getCurrentSaveVersion(): number {
+  return currentSaveVersion;
+}
+
 /** 从各领域 store 收集状态，装配为当前版本 payload。 */
 export function buildPayload(): SavePayload {
   const profile = useProfileStore();
@@ -33,6 +43,7 @@ export function buildPayload(): SavePayload {
 
   return {
     version: SAVE_VERSION,
+    saveVersion: currentSaveVersion,
     state: {
       ...profile.serializeCore(),
       savedDecks: deck.serialize(),
@@ -112,7 +123,9 @@ export function saveToServer(showAlert = false): Promise<void> {
     const profile = useProfileStore();
     if (!profile.currentUser) return;
     try {
-      await pushUserSave(profile.currentUser, buildPayload());
+      const result = await pushUserSave(profile.currentUser, buildPayload());
+      // 后端权威递增：更新基线，下一次保存才不会撞 409。
+      currentSaveVersion = result.saveVersion;
       if (showAlert) profile.addLog('存档已手动保存到服务器！', 'success');
     } catch (error) {
       console.error('Failed to save user data:', error);
@@ -131,14 +144,18 @@ export async function loadFromServer(): Promise<void> {
     const result = await fetchUserSave(profile.currentUser);
     if (result.isNewUser) {
       resetAllDomains();
+      currentSaveVersion = 0; // 新用户从 0 起算
       profile.addLog('欢迎新玩家！已为您初始化默认存档。', 'success');
     } else {
-      applyPayload(migrate(result.raw));
+      const payload = migrate(result.raw);
+      applyPayload(payload);
+      currentSaveVersion = payload.saveVersion; // 记下服务端基线
       profile.addLog('成功从服务器加载存档。', 'info');
     }
   } catch (error) {
     console.error('Failed to load user data:', error);
     alert('加载存档失败，将使用初始设置。');
     resetAllDomains();
+    currentSaveVersion = 0;
   }
 }

@@ -36,7 +36,7 @@
 | S8b | 技能真实现：纯原语内容批 | ✅ | 已完成 |
 | S8c | 技能真实现：系统技 + 交互技 | ✅ | 已完成 |
 | S9 | 性能优化 | ✅ | 已完成 |
-| S10 | 后端加固 & 安全 | ☐ | 上线前置 |
+| S10 | 后端加固 & 安全 | ✅ | 已完成 |
 | S11 | React 视图迁移 | ☐ | 演进 |
 | S12 | 权威后端 & 多人/PvP/排行榜 | ☐ | 终点 |
 
@@ -235,17 +235,19 @@
 
 ---
 
-## ☐ S10 — 后端加固 & 安全（上线前置）
+## ✅ S10 — 后端加固 & 安全（已完成 2026-06-16）
 
-**目标**：堵死审计两条安全红线，达到「单人在线」可部署。
+**目标**：堵死审计两条安全红线，达到「单人在线」可部署。**决策**：鉴权＝密码账号 + 会话 token；部署＝只加固不实施（方案写文档）。经 `/product-loop --tier1 off`（SPRINT 当需求源）走 Scout→Planner→Generator→Evaluator 一轮交付。
 
-- [ ] 存档接口加鉴权（token / 会话）—— 当前任意用户名免密读写任何人存档
-- [ ] `debug=True` → `False`
-- [ ] 存档加版本号 + 并发保护（防后写覆盖 / 写入截断损坏）
-- [ ] CORS 收敛；vite `host` / `allowedHosts` 收敛
-- [ ] 部署方案确定（单人在线版）
+- [x] 存档接口加鉴权（密码账号 + 无状态会话 token）—— 新建 `backend/auth.py`（werkzeug 盐哈希 + itsdangerous 签名 token），两入口（`server.py` + `api/index.py`）加 `POST /api/auth/login`（claim-on-first-login，兼容现有 4 个 passwordless 存档）+ 读写存档 token 闸（解析出的用户名须与目标存档一致，否则 401）。**凭据独立存储 `data/auth/credentials.json`，绝不进存档文件**（存档由客户端 payload 全量覆盖写）。前端：`api.ts` 模块级 token holder + 唯一传输层挂 `Authorization`；`userStore.login` 改带密码（失败不留半登录态）；App.vue 登录加密码框 + 错误反馈。
+- [x] `debug=True` → 经 `FLASK_DEBUG` 门控，默认 `False`（两入口）
+- [x] 存档原子写（temp + `os.replace` 同目录，防截断损坏）+ `saveVersion` 乐观并发（协议 v4→v5，schema/migrations/装配器三处同改 + 迁移/往返测试；后端权威递增，客户端基线 < 服务端当前 → 409）
+- [x] CORS 收敛（`api/index.py` 不再裸 `CORS(app)`，env `ALLOWED_ORIGINS`）；vite `host`/`allowedHosts` 收敛（默认 localhost，env `VITE_HOST`/`VITE_ALLOWED_HOSTS` 可放开，保留 proxy 与隧道注释）
+- [x] 部署方案文档 [`部署方案.md`](部署方案.md)（自部署 gunicorn/waitress + serverless 各列要点 + 上线清单，不实施）；docs 索引已加
+- 额外：**Werkzeug 钉版本 2.3.8**——审计未列的潜在隐患，requirements 只钉 Flask 2.3.2 留 Werkzeug 浮动，fresh install 会拉 3.x（移除 `__version__`）与 Flask 2.3.2 不兼容（test client 炸）；钉死 + test_security 加兼容兜底
+- 额外：新建后端首个测试基建 `backend/test_security.py`（Flask test_client 自包含 + tempdir 隔离，不引 pytest，19 断言覆盖鉴权/跨用户拒绝/409 并发/原子写非截断/debug 关闭）
 
-**Exit**：可安全部署为单人在线版。
+**Exit 达成**：可安全部署为单人在线版（鉴权 + debug off + 原子写 + 并发保护 + CORS/host 收敛全落地）。验收全绿：type-check 0 错、测试 305 → **310** 全绿（+saveVersion 往返/迁移/并发基线）、生产构建通过、`python backend/test_security.py` 19 断言全 PASS、`grep debug=True` 零命中。审计五.2 安全章节（无鉴权 / debug=True / 存档并发）三项全解。
 
 ---
 

@@ -80,6 +80,10 @@ describe('v1 → v2 迁移', () => {
   it('v4 新键：appearance 缺失补默认皮肤', () => {
     expect(v2.appearance).toEqual({ skinId: 'warm' });
   });
+
+  it('v5 新键：saveVersion 缺失补 0（旧档从 0 起算）', () => {
+    expect(v2.saveVersion).toBe(0);
+  });
 });
 
 describe('v2 存档过迁移层', () => {
@@ -108,6 +112,13 @@ describe('v2 存档过迁移层', () => {
   it('v4 存档的 appearance 原样保留（含未来未知皮肤 id，合法性由应用层把关）', () => {
     expect(migrate({ version: 4, appearance: { skinId: 'neon' } }).appearance.skinId).toBe('neon');
     expect(migrate({ version: 4, appearance: { skinId: 'limited_2027' } }).appearance.skinId).toBe('limited_2027');
+  });
+
+  it('v5 存档的 saveVersion 原样保留', () => {
+    expect(migrate({ version: 5, saveVersion: 42 }).saveVersion).toBe(42);
+    // 非数字/缺失回落 0
+    expect(migrate({ version: 5, saveVersion: 'oops' }).saveVersion).toBe(0);
+    expect(migrate({ version: 5 }).saveVersion).toBe(0);
   });
 
   it('appearance 形态损坏时回落默认皮肤', () => {

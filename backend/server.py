@@ -2,6 +2,8 @@ from flask import Flask, request, jsonify, send_from_directory
 import os
 import json
 
+import auth  # S10-T1：共享鉴权（凭据/token/原子写），与 api/index.py 一致
+
 try:
     from flask_compress import Compress
 except ImportError:  # 未安装时可降级运行（S9：正式环境必须安装，见 requirements.txt）
@@ -17,7 +19,11 @@ if Compress is not None:
     Compress(app)
 
 app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0  # 动态/HTML 默认不缓存；图片与带哈希指纹的资源单独放行（见下）
-USER_DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "user_data")
+# USER_DATA_DIR 可经环境变量覆盖（test_security.py 用 tempdir 隔离，绝不写真实存档）。
+USER_DATA_DIR = os.environ.get(
+    "USER_DATA_DIR",
+    os.path.join(os.path.dirname(__file__), "..", "data", "user_data"),
+)
 DATA_ROOT = os.path.join(os.path.dirname(__file__), "..", "data")
 
 # S9：主数据进程内缓存——此前每个请求都重读重解析 3.7MB JSON。
@@ -58,6 +64,28 @@ def get_user_filepath(username):
     return os.path.join(USER_DATA_DIR, f"{username}.json")
 
 
+# --- Auth Route (S10-T1) ---
+@app.route("/api/auth/login", methods=["POST"])
+def login():
+    """密码账号登录/首次注册（claim-on-first-login），成功签发会话 token。"""
+    data = request.get_json(silent=True) or {}
+    username = data.get("username")
+    password = data.get("password")
+    token, error = auth.login_or_register(username, password)
+    if error == "invalid_username":
+        return jsonify({"error": "用户名只能包含字母和数字"}), 400
+    if error == "invalid_password":
+        return jsonify({"error": "密码不能为空"}), 400
+    if error == "bad_credentials":
+        return jsonify({"error": "用户名或密码错误"}), 401
+    return jsonify({"token": token, "username": username}), 200
+
+
+def _authed_username():
+    """从 Authorization: Bearer <token> 解析出已认证用户名（无效/缺失返回 None）。"""
+    return auth.username_from_auth_header(request.headers.get("Authorization"))
+
+
 # --- API Routes ---
 @app.route("/api/user/data", methods=["GET"])
 def get_user_data():
@@ -65,6 +93,11 @@ def get_user_data():
     filepath = get_user_filepath(username)
     if not filepath:
         return jsonify({"error": "Invalid username"}), 400
+
+    # token 闸：解析出的用户名必须与被读取的存档一致
+    authed = _authed_username()
+    if authed is None or authed != username:
+        return jsonify({"error": "未授权"}), 401
 
     if not os.path.exists(filepath):
         # If user file doesn't exist, return default initial state
@@ -78,21 +111,55 @@ def get_user_data():
         return jsonify({"error": str(e)}), 500
 
 
+def _read_save_version(filepath):
+    """读现存存档文件的 saveVersion（权威当前值）；无文件/损坏/缺字段一律视为 0。"""
+    if not os.path.exists(filepath):
+        return 0
+    try:
+        with open(filepath, "r", encoding="utf-8") as f:
+            existing = json.load(f)
+        if isinstance(existing, dict):
+            v = existing.get("saveVersion", 0)
+            return v if isinstance(v, int) else 0
+    except (json.JSONDecodeError, OSError):
+        return 0
+    return 0
+
+
 @app.route("/api/user/data", methods=["POST"])
 def save_user_data():
-    data = request.get_json()
+    data = request.get_json(silent=True) or {}
     username = data.get("username")
     filepath = get_user_filepath(username)
     if not filepath:
         return jsonify({"error": "Invalid username"}), 400
 
-    if not os.path.exists(USER_DATA_DIR):
-        os.makedirs(USER_DATA_DIR)
+    # token 闸：解析出的用户名必须与被写入的存档一致
+    authed = _authed_username()
+    if authed is None or authed != username:
+        return jsonify({"error": "未授权"}), 401
+
+    payload = data.get("payload")
+    if not isinstance(payload, dict):
+        return jsonify({"error": "Invalid payload"}), 400
+
+    # 乐观并发（S10-T3）：以现存文件的 saveVersion 为权威当前值。
+    current_version = _read_save_version(filepath)
+    client_version = payload.get("saveVersion", 0)
+    if not isinstance(client_version, int):
+        client_version = 0
+    if client_version != current_version:
+        return (
+            jsonify({"error": "存档版本冲突，请刷新后重试", "saveVersion": current_version}),
+            409,
+        )
+
+    new_version = current_version + 1
+    payload["saveVersion"] = new_version
 
     try:
-        with open(filepath, "w", encoding="utf-8") as f:
-            json.dump(data.get("payload"), f, ensure_ascii=False, indent=4)
-        return jsonify({"message": "Data saved successfully"}), 200
+        auth.atomic_write_json(filepath, payload)  # 原子写：temp + os.replace
+        return jsonify({"message": "Data saved successfully", "saveVersion": new_version}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
@@ -249,4 +316,7 @@ def serve_static(path):
 if __name__ == "__main__":
     if not os.path.exists(USER_DATA_DIR):
         os.makedirs(USER_DATA_DIR)
-    app.run(debug=True, port=5001)  # Using a different port to avoid conflicts
+    # S10-T2：默认关闭 debug（生产不暴露 Werkzeug 调试器/代码执行面）。
+    # 本地需要调试时设环境变量 FLASK_DEBUG=1。
+    debug_mode = os.environ.get("FLASK_DEBUG") == "1"
+    app.run(debug=debug_mode, port=5001)  # Using a different port to avoid conflicts

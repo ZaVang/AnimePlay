@@ -1,3 +1,6 @@
 Flask==2.3.2
+# Werkzeug 必须钉在 Flask 2.3.x 兼容范围内：Werkzeug 3.x 移除了 __version__ 等，
+# 与 Flask 2.3.2 不兼容（test client、部分运行路径会炸）。不钉则 pip 会拉最新 3.x（S10 加固）。
+Werkzeug==2.3.8
 flask-cors==4.0.0
 flask-compress==1.24

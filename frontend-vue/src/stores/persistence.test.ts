@@ -6,12 +6,18 @@ import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { setActivePinia, createPinia } from 'pinia';
 
 vi.mock('@/infra/persistence/api', () => ({
-  pushUserSave: vi.fn(() => new Promise<void>(resolve => setTimeout(resolve, 5))),
+  // pushUserSave 现在返回后端给的权威新版本号（S10-T3）；mock 给个递增计数即可。
+  pushUserSave: vi.fn(
+    () => new Promise<{ saveVersion: number }>(resolve => setTimeout(() => resolve({ saveVersion: 1 }), 5)),
+  ),
   fetchUserSave: vi.fn(),
+  setAuthToken: vi.fn(),
+  clearAuthToken: vi.fn(),
+  loginRequest: vi.fn(),
 }));
 
-import { buildPayload, applyPayload, resetAllDomains, saveToServer } from './persistence';
-import { pushUserSave } from '@/infra/persistence/api';
+import { buildPayload, applyPayload, resetAllDomains, saveToServer, loadFromServer, getCurrentSaveVersion } from './persistence';
+import { pushUserSave, fetchUserSave } from '@/infra/persistence/api';
 import { useProfileStore } from './profile';
 import { useCollectionStore } from './collection';
 import { useDeckStore } from './deck';
@@ -125,6 +131,7 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
     const payload = buildPayload();
     expect(payload.version).toBe(SAVE_VERSION);
     for (const key of [
+      'saveVersion',
       'state', 'animeCollection', 'characterCollection', 'animePity', 'characterPity',
       'animeHistory', 'characterHistory', 'favoriteAnime', 'favoriteCharacters',
       'characterNurtureData', 'presetSquads', 'towerProgress',
@@ -195,6 +202,44 @@ describe('saveToServer 串行合并（防后端非原子写被并发截断）', 
     useProfileStore().currentUser = '';
     await saveToServer();
     expect(pushUserSave).not.toHaveBeenCalled();
+  });
+});
+
+describe('saveVersion 乐观并发基线（S10-T3）', () => {
+  // currentSaveVersion 是模块级状态、跨用例存活；每个用例先用 new-user load 归零基线。
+  async function resetBaseline() {
+    vi.mocked(fetchUserSave).mockResolvedValueOnce({ isNewUser: true, raw: null });
+    useProfileStore().currentUser = 'baselinereset';
+    await loadFromServer();
+    useProfileStore().currentUser = '';
+  }
+
+  it('新用户 load 后基线为 0，buildPayload 带上 0', async () => {
+    await resetBaseline();
+    expect(getCurrentSaveVersion()).toBe(0);
+    populateAllDomains();
+    expect(buildPayload().saveVersion).toBe(0);
+  });
+
+  it('loadFromServer 后基线取服务端 saveVersion，buildPayload 带上它', async () => {
+    vi.mocked(fetchUserSave).mockResolvedValueOnce({
+      isNewUser: false,
+      raw: { version: 5, saveVersion: 7 },
+    });
+    const profile = useProfileStore();
+    profile.currentUser = 'tester';
+    await loadFromServer();
+    expect(getCurrentSaveVersion()).toBe(7);
+    expect(buildPayload().saveVersion).toBe(7);
+  });
+
+  it('保存成功后基线更新为后端返回的权威新版本号', async () => {
+    vi.mocked(pushUserSave).mockResolvedValueOnce({ saveVersion: 42 });
+    const profile = useProfileStore();
+    profile.currentUser = 'tester';
+    await saveToServer();
+    expect(getCurrentSaveVersion()).toBe(42);
+    expect(buildPayload().saveVersion).toBe(42);
   });
 });
 

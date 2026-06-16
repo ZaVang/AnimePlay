@@ -71,6 +71,8 @@ export function migrate(raw: unknown): SavePayload {
 
   return {
     version: SAVE_VERSION,
+    // v4 → v5：保存计数（乐观并发）。旧档无此字段 → 默认 0；保留已有数值。
+    saveVersion: typeof payload.saveVersion === 'number' ? payload.saveVersion : 0,
     state: migratePlayerState(payload.state),
     animeCollection: migrateCollection(payload.animeCollection),
     characterCollection: migrateCollection(payload.characterCollection),

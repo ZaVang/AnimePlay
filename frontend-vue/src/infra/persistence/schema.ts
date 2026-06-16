@@ -5,6 +5,9 @@
  * v2：补入 presetSquads / towerProgress / version。
  * v3（S6）：补入 shopPurchases（商店每日限购计数）/ guess（猜角色最高分）。
  * v4（S7）：补入 appearance（皮肤装扮，皮肤随账号走；将来点数兑换的 ownedSkins 也挂这里）。
+ * v5（S10）：补入 saveVersion（保存计数，乐观并发用）。
+ *   注意：saveVersion（第几次保存，单调递增）≠ 本 version（协议版本=5），是两个字段，别混。
+ *   saveVersion 由后端权威维护（POST 返回新值），前端只是携带基线，旧档迁移默认 0。
  */
 import type { PityState } from '@/engine/gacha/draw';
 import type { CharacterNurtureData } from '@/types/nurture';
@@ -17,7 +20,7 @@ import type {
   TowerProgress,
 } from '@/types/player';
 
-export const SAVE_VERSION = 4 as const;
+export const SAVE_VERSION = 5 as const;
 
 /** 商店单品的当日购买记录（跨天读取时自动视为 0）。 */
 export interface ShopPurchaseRecord {
@@ -49,6 +52,11 @@ export interface SerializedPlayerState {
 
 export interface SavePayload {
   version: typeof SAVE_VERSION;
+  /**
+   * ★ v5 新增：保存计数（乐观并发）。后端权威维护：POST 返回 saveVersion+1。
+   * 这是「第几次保存」的单调计数，与 version（协议版本）是两个不同的字段。旧档迁移默认 0。
+   */
+  saveVersion: number;
   state: SerializedPlayerState;
   animeCollection: [number, { count: number }][];
   characterCollection: [number, { count: number }][];

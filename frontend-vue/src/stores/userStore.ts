@@ -21,6 +21,7 @@ import { useShopStore } from './shop';
 import { useGuessStore } from './guess';
 import { useThemeStore } from './theme';
 import { saveToServer, loadFromServer, resetAllDomains } from './persistence';
+import { loginRequest, setAuthToken, clearAuthToken } from '@/infra/persistence';
 
 // 类型转发（历史 import 路径兼容）
 export type { Deck, ViewingQueueSlot, LogEntry, GachaHistoryItem, PresetSquad, TowerProgress } from '@/types/player';
@@ -50,19 +51,37 @@ export const useUserStore = defineStore('user', () => {
 
   // --- 会话 ---
 
-  async function login(username: string) {
+  /**
+   * 登录/首次注册（claim-on-first-login）。
+   * 返回 { ok, error }：失败时不进入登录态（不设 currentUser、不挂 token）。
+   */
+  async function login(username: string, password: string): Promise<{ ok: boolean; error?: string }> {
     if (!username || !username.match(/^[a-zA-Z0-9]+$/)) {
-      alert('用户名只能包含字母和数字。');
-      return;
+      return { ok: false, error: '用户名只能包含字母和数字。' };
     }
-    profile.currentUser = username;
-    await loadFromServer();
+    if (!password) {
+      return { ok: false, error: '请输入密码。' };
+    }
+    try {
+      const { token } = await loginRequest(username, password);
+      setAuthToken(token); // token 先挂上，后续 loadFromServer 才能带鉴权头
+      profile.currentUser = username;
+      await loadFromServer();
+      return { ok: true };
+    } catch (error) {
+      // 401/网络失败：清理任何半登录态
+      clearAuthToken();
+      profile.currentUser = '';
+      const message = error instanceof Error ? error.message : '登录失败，请重试。';
+      return { ok: false, error: message };
+    }
   }
 
   async function logout() {
     profile.addLog('已登出，再见！', 'info');
     await saveToServer(false);
     profile.currentUser = '';
+    clearAuthToken();
     resetAllDomains();
   }
 
