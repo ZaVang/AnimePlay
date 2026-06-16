@@ -3,7 +3,7 @@ import { computed } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import { useDailyStore } from '@/stores/daily';
 import { useProfileStore } from '@/stores/profile';
-import { DAILY_TASKS } from '@/config/dailyTasks';
+import { DAILY_TASKS, WEEKLY_TASKS } from '@/config/dailyTasks';
 
 const userStore = useUserStore();
 const dailyStore = useDailyStore();
@@ -33,10 +33,29 @@ const tasks = computed<TaskView[]>(() =>
   })),
 );
 
+const weeklyTasks = computed<TaskView[]>(() =>
+  WEEKLY_TASKS.map(task => ({
+    id: task.id,
+    title: task.title,
+    description: task.description,
+    current: dailyStore.weeklyProgressOf(task.id),
+    target: task.target,
+    complete: dailyStore.isWeeklyComplete(task.id),
+    claimed: dailyStore.isWeeklyClaimed(task.id),
+    rewardText: task.rewards.map(r => `${r.amount} ${profile.currencyName(r.currency)}`).join(' + '),
+  })),
+);
+
 const completedCount = computed(() => tasks.value.filter(t => t.claimed).length);
+const weeklyCompletedCount = computed(() => weeklyTasks.value.filter(t => t.claimed).length);
+const loginStreak = computed(() => dailyStore.loginStreak);
 
 function claim(taskId: string) {
   userStore.claimDailyTask(taskId);
+}
+
+function claimWeekly(taskId: string) {
+  userStore.claimWeeklyTask(taskId);
 }
 </script>
 
@@ -44,9 +63,10 @@ function claim(taskId: string) {
   <div class="bg-surface p-6 rounded-lg shadow-lg border border-line">
     <div class="flex items-center justify-between mb-4">
       <h2 class="text-2xl font-bold text-ink">今日任务</h2>
-      <span v-if="userStore.isLoggedIn" class="text-sm text-ink-2">
-        已完成 {{ completedCount }} / {{ tasks.length }}
-      </span>
+      <div v-if="userStore.isLoggedIn" class="flex items-center gap-3 text-sm">
+        <span class="text-accent font-bold">🔥 连续登录 {{ loginStreak }} 天</span>
+        <span class="text-ink-2">已完成 {{ completedCount }} / {{ tasks.length }}</span>
+      </div>
     </div>
 
     <div v-if="userStore.isLoggedIn" class="space-y-3">
@@ -79,6 +99,46 @@ function claim(taskId: string) {
             :disabled="!task.complete"
             :class="{ 'opacity-45 cursor-not-allowed': !task.complete }"
             @click="claim(task.id)"
+          >
+            {{ task.complete ? '领取' : '进行中' }}
+          </button>
+        </div>
+      </div>
+
+      <!-- 周任务区（B1）：更高目标、更厚奖励，weekKey 跨周归零 -->
+      <div class="flex items-center justify-between pt-4 mt-2 border-t border-line">
+        <h3 class="text-lg font-bold text-ink">本周任务</h3>
+        <span class="text-sm text-ink-2">已完成 {{ weeklyCompletedCount }} / {{ weeklyTasks.length }}</span>
+      </div>
+
+      <div
+        v-for="task in weeklyTasks"
+        :key="task.id"
+        class="bg-surface-2 rounded-lg p-4 flex items-center gap-4"
+      >
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center gap-2">
+            <p class="font-bold text-ink truncate">{{ task.title }}</p>
+            <span class="text-xs text-accent shrink-0">奖励：{{ task.rewardText }}</span>
+          </div>
+          <p class="text-sm text-ink-2 mt-0.5">{{ task.description }}</p>
+          <div class="mt-2 w-full bg-surface rounded-full h-2 border border-line overflow-hidden">
+            <div
+              class="bg-accent h-full rounded-full transition-all duration-500"
+              :style="{ width: Math.min(100, (task.current / task.target) * 100) + '%' }"
+            ></div>
+          </div>
+          <p class="text-xs text-ink-2 mt-1">{{ Math.min(task.current, task.target) }} / {{ task.target }}</p>
+        </div>
+
+        <div class="shrink-0">
+          <span v-if="task.claimed" class="text-sm font-bold text-ink-2">已领取</span>
+          <button
+            v-else
+            class="btn-primary text-sm px-4 py-2"
+            :disabled="!task.complete"
+            :class="{ 'opacity-45 cursor-not-allowed': !task.complete }"
+            @click="claimWeekly(task.id)"
           >
             {{ task.complete ? '领取' : '进行中' }}
           </button>

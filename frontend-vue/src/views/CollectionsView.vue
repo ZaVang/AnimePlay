@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref, computed, watch } from 'vue';
 import { useRouter } from 'vue-router';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
+import { useAchievementsStore } from '@/stores/achievements';
+import { useAchievementsReadStore } from '@/stores/achievementsRead';
 import type { AnimeCard as AnimeCardType, CharacterCard as CharacterCardType, Rarity } from '@/types/card';
 import CardDetailModal from '@/components/CardDetailModal.vue';
 import DeckManager from '@/components/decks/DeckManager.vue';
@@ -11,14 +13,24 @@ import CharacterCard from '@/components/CharacterCard.vue';
 import VirtualGrid from '@/components/VirtualGrid.vue';
 import CodexPanel from '@/components/CodexPanel.vue';
 import AchievementsPanel from '@/components/AchievementsPanel.vue';
+import AnimeTimeline from '@/components/AnimeTimeline.vue';
 import ShareCard from '@/components/ShareCard.vue';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
+const achievementsStore = useAchievementsStore();
+const achievementsReadStore = useAchievementsReadStore();
 const router = useRouter();
 
 // --- STATE for UI ---
-const activeTab = ref<'anime' | 'character' | 'decks' | 'codex' | 'achievements'>('anime');
+const activeTab = ref<'anime' | 'character' | 'decks' | 'codex' | 'achievements' | 'timeline'>('anime');
+
+// B3：切到成就墙即把当前解锁数标记为已读 → 导航红点即时消失（设备级 localStorage）。
+watch(activeTab, tab => {
+  if (tab === 'achievements') {
+    achievementsReadStore.markRead(achievementsStore.unlocked.length);
+  }
+}, { immediate: true });
 const selectedCard = ref<AnimeCardType | CharacterCardType | null>(null);
 const selectedCardType = ref<'anime' | 'character'>('anime');
 const rarityOrder: Rarity[] = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
@@ -165,6 +177,7 @@ const filteredCharacterCards = computed(() => {
           <a href="#" @click.prevent="activeTab = 'anime'" :class="['collection-tab', { 'active': activeTab === 'anime' }]">动画收藏</a>
           <a href="#" @click.prevent="activeTab = 'character'" :class="['collection-tab', { 'active': activeTab === 'character' }]">角色收藏</a>
           <a href="#" @click.prevent="activeTab = 'codex'" :class="['collection-tab', { 'active': activeTab === 'codex' }]">图鉴</a>
+          <a href="#" @click.prevent="activeTab = 'timeline'" :class="['collection-tab', { 'active': activeTab === 'timeline' }]">年表</a>
           <a href="#" @click.prevent="activeTab = 'achievements'" :class="['collection-tab', { 'active': activeTab === 'achievements' }]">成就</a>
           <a href="#" @click.prevent="activeTab = 'decks'" :class="['collection-tab', { 'active': activeTab === 'decks' }]">我的卡组</a>
         </nav>
@@ -273,6 +286,11 @@ const filteredCharacterCards = computed(() => {
         <!-- Codex (图鉴完成度 + 里程碑) -->
         <div v-else-if="activeTab === 'codex'">
             <CodexPanel />
+        </div>
+
+        <!-- Timeline (番剧年表) -->
+        <div v-else-if="activeTab === 'timeline'">
+            <AnimeTimeline />
         </div>
 
         <!-- Achievements (成就墙) -->

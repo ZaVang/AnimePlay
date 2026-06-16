@@ -90,6 +90,13 @@ describe('v1 → v2 迁移', () => {
     expect(v2.codexMilestones).toEqual([]);
     expect(v2.achievements).toEqual([]);
   });
+
+  it('v7 新键：daily 补 weekDate / weeklyProgress / weeklyClaimed / loginStreak 缺省', () => {
+    expect(v2.daily.weekDate).toBe('');
+    expect(v2.daily.weeklyProgress).toEqual({});
+    expect(v2.daily.weeklyClaimed).toEqual([]);
+    expect(v2.daily.loginStreak).toBe(0);
+  });
 });
 
 describe('v2 存档过迁移层', () => {
@@ -127,21 +134,71 @@ describe('v2 存档过迁移层', () => {
     expect(migrate({ version: 5 }).saveVersion).toBe(0);
   });
 
-  it('v6 存档的 daily / codexMilestones / achievements 原样保留', () => {
+  it('v6 存档的 daily（无 v7 字段）保留日字段 + 补周/连签缺省', () => {
     const out = migrate({
       version: 6,
       daily: { date: '2026-6-16', progress: { daily_gacha: 1 }, claimed: ['daily_gacha'], lastLoginDate: '2026-6-16' },
       codexMilestones: ['char_owned_50', 'anime_ur_complete'],
       achievements: ['ach_first_ur', 'ach_first_win'],
     });
-    expect(out.daily).toEqual({ date: '2026-6-16', progress: { daily_gacha: 1 }, claimed: ['daily_gacha'], lastLoginDate: '2026-6-16' });
+    // v6 → v7：日字段原样保留，周任务/连签四字段补缺省
+    expect(out.daily).toEqual({
+      date: '2026-6-16',
+      progress: { daily_gacha: 1 },
+      claimed: ['daily_gacha'],
+      lastLoginDate: '2026-6-16',
+      weekDate: '',
+      weeklyProgress: {},
+      weeklyClaimed: [],
+      loginStreak: 0,
+    });
     expect(out.codexMilestones).toEqual(['char_owned_50', 'anime_ur_complete']);
     expect(out.achievements).toEqual(['ach_first_ur', 'ach_first_win']);
   });
 
-  it('v6 daily 局部损坏时按字段补默认', () => {
-    const out = migrate({ version: 6, daily: { date: '2026-6-16' }, codexMilestones: 'oops', achievements: null });
-    expect(out.daily).toEqual({ date: '2026-6-16', progress: {}, claimed: [], lastLoginDate: '' });
+  it('v7 存档的 daily（含周任务/连签）原样保留', () => {
+    const out = migrate({
+      version: 7,
+      daily: {
+        date: '2026-6-16',
+        progress: { daily_gacha: 1 },
+        claimed: ['daily_gacha'],
+        lastLoginDate: '2026-6-16',
+        weekDate: '2026-W25',
+        weeklyProgress: { weekly_gacha: 12 },
+        weeklyClaimed: ['weekly_battle'],
+        loginStreak: 9,
+      },
+    });
+    expect(out.daily).toEqual({
+      date: '2026-6-16',
+      progress: { daily_gacha: 1 },
+      claimed: ['daily_gacha'],
+      lastLoginDate: '2026-6-16',
+      weekDate: '2026-W25',
+      weeklyProgress: { weekly_gacha: 12 },
+      weeklyClaimed: ['weekly_battle'],
+      loginStreak: 9,
+    });
+  });
+
+  it('v7 daily 局部损坏时按字段补默认（含周/连签字段）', () => {
+    const out = migrate({
+      version: 7,
+      daily: { date: '2026-6-16', weeklyProgress: 'oops', weeklyClaimed: null, loginStreak: 'x' },
+      codexMilestones: 'oops',
+      achievements: null,
+    });
+    expect(out.daily).toEqual({
+      date: '2026-6-16',
+      progress: {},
+      claimed: [],
+      lastLoginDate: '',
+      weekDate: '',
+      weeklyProgress: {},
+      weeklyClaimed: [],
+      loginStreak: 0,
+    });
     expect(out.codexMilestones).toEqual([]);
     expect(out.achievements).toEqual([]);
   });

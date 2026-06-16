@@ -1,16 +1,48 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 import { RouterLink, RouterView } from 'vue-router';
 import { useUserStore } from './stores/userStore';
 import { useGameDataStore } from './stores/gameDataStore';
 import { useThemeStore } from './stores/theme';
 import { useOnboardingStore } from './stores/onboarding';
+import { useDailyStore } from './stores/daily';
+import { useCodexStore } from './stores/codex';
+import { useAchievementsStore } from './stores/achievements';
+import { useAchievementsReadStore } from './stores/achievementsRead';
+import { DAILY_TASKS, WEEKLY_TASKS } from './config/dailyTasks';
 import OnboardingGuide from './components/OnboardingGuide.vue';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
 const onboardingStore = useOnboardingStore();
+const dailyStore = useDailyStore();
+const codexStore = useCodexStore();
+const achievementsStore = useAchievementsStore();
+const achievementsReadStore = useAchievementsReadStore();
 useThemeStore(); // 初始化皮肤（实例化即应用设备缓存的皮肤）
+
+// --- B3：跨系统红点信号（纯派生，领取/查看后即时消失） ---
+
+/** 主页红点：有任一日/周任务做满未领，或今日登录奖励可领。 */
+const homeHasSignal = computed(() => {
+  if (!userStore.isLoggedIn) return false;
+  const todayKey = (() => {
+    const d = new Date();
+    return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+  })();
+  const loginClaimable = dailyStore.lastLoginDate !== todayKey;
+  const dailyClaimable = DAILY_TASKS.some(t => dailyStore.isComplete(t.id) && !dailyStore.isClaimed(t.id));
+  const weeklyClaimable = WEEKLY_TASKS.some(t => dailyStore.isWeeklyComplete(t.id) && !dailyStore.isWeeklyClaimed(t.id));
+  return loginClaimable || dailyClaimable || weeklyClaimable;
+});
+
+/** 卡牌收藏红点：有图鉴里程碑达成未领，或成就有新解锁未读。 */
+const collectionsHasSignal = computed(() => {
+  if (!userStore.isLoggedIn) return false;
+  const milestoneClaimable = codexStore.claimableMilestones.length > 0;
+  const achievementUnread = achievementsReadStore.hasUnread(achievementsStore.unlocked.length);
+  return milestoneClaimable || achievementUnread;
+});
 const usernameInput = ref('');
 const passwordInput = ref('');
 const loginError = ref('');
@@ -127,9 +159,19 @@ onMounted(() => {
         <nav class="w-48 p-4 pt-6 border-r border-line bg-header/60">
 
             <ul class="space-y-2">
-                <li><RouterLink to="/" class="nav-link">主页</RouterLink></li>
+                <li>
+                  <RouterLink to="/" class="nav-link nav-link-dot">
+                    主页
+                    <span v-if="homeHasSignal" class="nav-dot" aria-label="有可领取的奖励"></span>
+                  </RouterLink>
+                </li>
                 <li><RouterLink to="/gacha" class="nav-link">抽卡系统</RouterLink></li>
-                <li><RouterLink to="/collections" class="nav-link">卡牌收藏</RouterLink></li>
+                <li>
+                  <RouterLink to="/collections" class="nav-link nav-link-dot">
+                    卡牌收藏
+                    <span v-if="collectionsHasSignal" class="nav-dot" aria-label="有新解锁或可领取"></span>
+                  </RouterLink>
+                </li>
                 <li><RouterLink to="/battle" class="nav-link">宅理论战</RouterLink></li>
                 <li><RouterLink to="/squad-battle" class="nav-link">小队战斗</RouterLink></li>
                 <li><RouterLink to="/nurture" class="nav-link">角色养成</RouterLink></li>
@@ -210,6 +252,21 @@ onMounted(() => {
     color: rgb(var(--c-on-accent));
     font-weight: bold;
     box-shadow: var(--sk-glow-accent);
+}
+
+/* B3：带红点的导航项——让 .nav-dot 相对定位锚到右侧 */
+.nav-link-dot {
+    position: relative;
+}
+.nav-dot {
+    position: absolute;
+    top: 0.45rem;
+    right: 0.6rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+    background-color: rgb(var(--c-danger));
+    box-shadow: 0 0 0 2px rgb(var(--c-header));
 }
 
 /* Logo 链接始终保持原样 */

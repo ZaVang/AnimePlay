@@ -132,6 +132,24 @@ grep -rn "debug=True" backend/server.py api/index.py
 
 ---
 
+## 🔁 Evolution 第 4 轮（backlog 推进，tier1 off，2026-06-16）
+
+> 推进 reviewer 前三轮提出但未做的 3 个 backlog 项（用户选定，声优收集跨栈项暂缓）。tier1 off：本节 `[ ]` 即需求源，目标驱动停。
+
+- [x] **B1：周任务 + 连续登录递增**
+  - 目标：扩 `stores/daily.ts`——加每周任务（weekKey 跨周重置，2-3 条如本周赢 5 场/抽 20 张/通塔 1 层）+ 连续登录天数 `loginStreak`（按 lastLoginDate 昨日判定递增、断签归 1）+ 递增登录奖励（第 N 天给更多）。静态定义放 config。升存档 **v6→v7**（DailySave 扩字段，schema/migrations/装配器三处同改 + 迁移 + 测试，只追加不破坏 v1~v6 断言）。
+  - 验收：周任务跨周重置/做满领奖、连签递增与断签归 1、登录奖励随连签变化、进存档 v7 跨重开保真、特征测试。
+- [x] **B2：番剧年表时间轴**
+  - 目标：CollectionsView 加「年表」tab——把已拥有动画卡按放送年（`date` 字段，复用 evo-2 已展示的真实数据）分组成可视化时间轴（X 轴年份 1993→2025，每年拥有数/完成度）。纯派生、零后端、零存档。
+  - 验收：年表按年正确分组展示拥有番剧、空态友好、纯派生（不新存字段）、颜色语义类、type-check/build 通过。
+- [x] **B3：跨系统红点提示**
+  - 目标：`App.vue` 侧边导航对「有奖可领/有新内容」的模块加红点角标——主页（每日任务可领/登录奖励可领）、卡牌收藏（图鉴里程碑达成未领 / 成就有新解锁未读）。daily/codex 可领态纯派生；成就「已读」态用 localStorage（设备级，仿 onboarding，不进存档），访问成就 tab 即标已读。
+  - 验收：对应模块有奖可领/新解锁时亮红点、领取/查看后红点消失、成就已读用 localStorage 不升 schema、颜色语义类、type-check/build 通过。
+
+**第 4 轮验收命令**：`cd frontend-vue && npm run type-check`（0 错）/ `npm run test`（≥354 全绿 + 新增）/ `npm run build`（通过）。
+
+---
+
 ## 📦 Backlog（决策门控，**本轮未激活**，勿当作 `[ ]` 执行任务）
 
 > 以下是 FUTURE.md S11/S12 的拆分，**仅作路线参考**。它们是「演进/终点」方向，FUTURE.md 明确标注

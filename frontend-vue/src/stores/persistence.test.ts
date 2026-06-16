@@ -88,6 +88,11 @@ function populateAllDomains() {
   daily.progress = { daily_gacha: 1 };
   daily.claimed = ['daily_gacha'];
   daily.lastLoginDate = TODAY_KEY;
+  // B1：周任务 / 连签（用「本周」周键，使 deserialize 的 ensureThisWeek 不判为跨周清零）
+  daily.weekDate = WEEK_KEY;
+  daily.weeklyProgress = { weekly_gacha: 5 };
+  daily.weeklyClaimed = ['weekly_battle'];
+  daily.loginStreak = 4;
   useCodexStore().claimedMilestones = ['char_owned_50'];
   useAchievementsStore().unlocked = ['ach_first_ur'];
 }
@@ -96,6 +101,20 @@ function populateAllDomains() {
 const TODAY_KEY = (() => {
   const d = new Date();
   return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+})();
+
+/** 与 daily store 同款 ISO 周键（YYYY-Www）。 */
+const WEEK_KEY = (() => {
+  const date = new Date();
+  const d = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  const day = (d.getDay() + 6) % 7;
+  d.setDate(d.getDate() - day + 3);
+  const isoYear = d.getFullYear();
+  const firstThursday = new Date(isoYear, 0, 4);
+  const firstDay = (firstThursday.getDay() + 6) % 7;
+  firstThursday.setDate(firstThursday.getDate() - firstDay + 3);
+  const weekNo = 1 + Math.round((d.getTime() - firstThursday.getTime()) / (7 * 24 * 60 * 60 * 1000));
+  return `${isoYear}-W${String(weekNo).padStart(2, '0')}`;
 })();
 
 describe('buildPayload ⇄ applyPayload 往返', () => {
@@ -150,6 +169,11 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
     expect(daily.progress).toEqual({ daily_gacha: 1 });
     expect(daily.claimed).toEqual(['daily_gacha']);
     expect(daily.lastLoginDate).toBe(TODAY_KEY);
+    // B1：周任务 / 连签经一轮往返保真
+    expect(daily.weekDate).toBe(WEEK_KEY);
+    expect(daily.weeklyProgress).toEqual({ weekly_gacha: 5 });
+    expect(daily.weeklyClaimed).toEqual(['weekly_battle']);
+    expect(daily.loginStreak).toBe(4);
     expect(useCodexStore().claimedMilestones).toEqual(['char_owned_50']);
     expect(useAchievementsStore().unlocked).toEqual(['ach_first_ur']);
   });

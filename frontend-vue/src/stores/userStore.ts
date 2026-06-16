@@ -411,6 +411,11 @@ export const useUserStore = defineStore('user', () => {
       if (useDailyStore().claim(taskId)) saveToServer();
     },
 
+    // daily（B1）：领取周任务奖励（领域 store 自己不存档）
+    claimWeeklyTask: (taskId: string) => {
+      if (useDailyStore().claimWeekly(taskId)) saveToServer();
+    },
+
     // codex（evolution-2）：图鉴定向解锁（花知识点入库一张心仪卡）
     unlockCodexCard,
     // codex（evolution-1）：领取图鉴里程碑奖励 + 联动「收藏家」成就

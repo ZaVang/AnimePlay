@@ -67,7 +67,10 @@ function migrateTowerProgress(raw: any) {
   };
 }
 
-/** v6：每日任务/登录，字段级缺省兜底（缺失/损坏 → createDefaultDaily()）。 */
+/**
+ * v6：每日任务/登录，字段级缺省兜底（缺失/损坏 → createDefaultDaily()）。
+ * v7：补 weekDate/weeklyProgress/weeklyClaimed/loginStreak（旧 v6 档无此四字段 → 缺省）。
+ */
 function migrateDaily(raw: any): DailySave {
   const defaults = createDefaultDaily();
   if (!raw || typeof raw !== 'object') return defaults;
@@ -76,6 +79,12 @@ function migrateDaily(raw: any): DailySave {
     progress: raw.progress && typeof raw.progress === 'object' ? raw.progress : defaults.progress,
     claimed: Array.isArray(raw.claimed) ? raw.claimed : defaults.claimed,
     lastLoginDate: typeof raw.lastLoginDate === 'string' ? raw.lastLoginDate : defaults.lastLoginDate,
+    // v6 → v7：周任务 + 连签（旧档缺省）
+    weekDate: typeof raw.weekDate === 'string' ? raw.weekDate : defaults.weekDate,
+    weeklyProgress:
+      raw.weeklyProgress && typeof raw.weeklyProgress === 'object' ? raw.weeklyProgress : defaults.weeklyProgress,
+    weeklyClaimed: Array.isArray(raw.weeklyClaimed) ? raw.weeklyClaimed : defaults.weeklyClaimed,
+    loginStreak: typeof raw.loginStreak === 'number' ? raw.loginStreak : defaults.loginStreak,
   };
 }
 
