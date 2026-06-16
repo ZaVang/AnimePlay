@@ -6,6 +6,7 @@ import { useCollectionStore } from '@/stores/collection';
 import { useCodexStore } from '@/stores/codex';
 import { useProfileStore } from '@/stores/profile';
 import { CODEX_MILESTONES } from '@/config/codexMilestones';
+import { getCodexUnlockPrice } from '@/config/codexUnlock';
 import type { AnimeCard as AnimeCardType, Rarity } from '@/types/card';
 import VirtualGrid from '@/components/VirtualGrid.vue';
 
@@ -78,6 +79,37 @@ function imageSrc(card: { id: number }): string {
 
 function claimMilestone(id: string) {
   userStore.claimCodexMilestone(id);
+}
+
+// --- 定向解锁（evolution-2 / E2-T1）：灰位未拥有卡花知识点直接入库 ---
+
+/** 玩家当前知识点（解锁出口的预算）。 */
+const knowledgePoints = computed(() => profile.core.knowledgePoints);
+
+type CodexGridCard = AnimeCardType & { owned: boolean };
+
+/** 某卡的定向解锁价（按稀有度取）。 */
+function unlockPrice(card: { rarity: Rarity }): number {
+  return getCodexUnlockPrice(card.rarity);
+}
+
+/** 余额是否够解锁该卡。 */
+function canAfford(card: { rarity: Rarity }): boolean {
+  return knowledgePoints.value >= unlockPrice(card);
+}
+
+/** 点击灰位卡 → 确认（显示价格）→ 调门面解锁。已拥有的卡不触发。 */
+function handleUnlock(card: CodexGridCard) {
+  if (card.owned) return;
+  const price = unlockPrice(card);
+  if (!canAfford(card)) {
+    alert(`知识点不足，解锁 [${card.rarity}] ${card.name} 需 ${price} 知识点（你当前有 ${knowledgePoints.value}）。`);
+    return;
+  }
+  if (!confirm(`花费 ${price} 知识点定向解锁 [${card.rarity}] ${card.name}？\n你当前有 ${knowledgePoints.value} 知识点。`)) {
+    return;
+  }
+  userStore.unlockCodexCard(card.id, codexDomain.value);
 }
 </script>
 
@@ -163,7 +195,10 @@ function claimMilestone(id: string) {
 
       <!-- Full grid with gray-out for unowned (VirtualGrid) -->
       <div class="bg-surface rounded-lg p-5 border border-line">
-        <h4 class="font-bold text-ink text-lg mb-3">图鉴一览（灰位为未拥有）</h4>
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <h4 class="font-bold text-ink text-lg">图鉴一览（点击灰位卡可花知识点解锁）</h4>
+          <span class="text-sm text-ink-2">我的知识点：<span class="font-bold text-accent">{{ knowledgePoints }}</span></span>
+        </div>
         <VirtualGrid
           :items="codexCards"
           :item-height="VIRTUAL_GRID_CONFIG.itemHeight"
@@ -174,7 +209,12 @@ function claimMilestone(id: string) {
           <template #default="{ item }">
             <div
               class="bg-surface rounded-lg shadow-md overflow-hidden relative h-full"
-              :class="{ 'opacity-40 grayscale': !(item as AnimeCardType & { owned: boolean }).owned }"
+              :class="[
+                !(item as CodexGridCard).owned ? 'opacity-40 grayscale' : '',
+                !(item as CodexGridCard).owned ? 'cursor-pointer hover:opacity-60 transition-opacity' : '',
+              ]"
+              :title="!(item as CodexGridCard).owned ? `花 ${unlockPrice(item)} 知识点解锁` : ''"
+              @click="handleUnlock(item as CodexGridCard)"
             >
               <img
                 loading="lazy"
@@ -186,10 +226,14 @@ function claimMilestone(id: string) {
                 {{ item.rarity }}
               </div>
               <div
-                v-if="!(item as AnimeCardType & { owned: boolean }).owned"
-                class="absolute inset-0 flex items-center justify-center"
+                v-if="!(item as CodexGridCard).owned"
+                class="absolute inset-0 flex flex-col items-center justify-center gap-1"
               >
                 <span class="text-ink-2 text-xs font-bold bg-surface/80 px-2 py-1 rounded">未拥有</span>
+                <span
+                  class="text-xs font-bold px-2 py-0.5 rounded bg-surface/85"
+                  :class="canAfford(item) ? 'text-accent' : 'text-ink-2'"
+                >🔓 {{ unlockPrice(item) }} 知识点</span>
               </div>
               <div class="p-2">
                 <p class="text-xs text-center font-bold truncate text-ink" :title="item.name">{{ item.name }}</p>

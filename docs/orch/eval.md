@@ -1,142 +1,134 @@
-# Evaluator 报告 — Evolution 第 1 轮（E1-T1/T2/T3）
+# QA Evaluation — Evolution 第 2 轮（E2-T1/T2）
 
-> QA Evaluator 独立验证。不信 Generator 自报，亲自重跑全部验收命令 + 抽查代码。
-> 验证时间：2026-06-16。tier1 on：本决策为**信息性**（给下一轮 Planner），不直接终止循环。
+> Evaluator 独立验证。原则：不信 Generator 自报，亲自重跑验收命令 + 抽查源码。
+> tier1 on：本决策仅信息性，不终止循环。
+> 评估时间：2026-06-16。
 
----
+## 1. Checkbox 确认（docs/SPRINT.md）
 
-## 1. Checkbox 状态（docs/SPRINT.md「Evolution 第 1 轮」段）
+- E2-T1 图鉴定向解锁（经济闭环）→ `[x]`（SPRINT.md:106）✓
+- E2-T2 真实评分/放送年可视化（差异化）→ `[x]`（SPRINT.md:109）✓
 
-| 任务 | 行 | 状态 |
-|---|---|---|
-| E1-T1 每日任务 + 每日登录奖励 | L88 | `[x]` ✅ |
-| E1-T2 图鉴/收集完成度 + 里程碑 | L91 | `[x]` ✅ |
-| E1-T3 成就系统 | L94 | `[x]` ✅ |
+两项均已勾，符合预期。
 
-三项全部勾掉，与合同要求一致。
+## 2. 验收命令重跑（亲自，frontend-vue/ 下）真实输出
 
----
-
-## 2. 验收命令重跑结果（亲自跑，真实输出）
-
-| # | 命令（frontend-vue/ 下）| 结果 | 真实输出摘录 |
+| 命令 | 期望 | 实测 | 结论 |
 |---|---|---|---|
-| 1 | `npm run type-check` | ✅ PASS | `vue-tsc --build`，退出码 0，无任何错误/额外输出 |
-| 2 | `npm run test` | ✅ PASS | `Test Files 28 passed (28)` / `Tests 336 passed (336)`，退出码 0，Duration 3.88s |
-| 3 | `npm run build` | ✅ PASS | `✓ built in 8.80s`，退出码 0，产物正常 |
+| `npm run type-check` | 0 错 | `vue-tsc --build`，无输出，退出 0 | PASS |
+| `npm run test` | ≥336（自报 340） | **Test Files 29 passed / Tests 340 passed**，Duration 4.11s | PASS |
+| `npm run build` | 成功 | `✓ 291 modules transformed`，`✓ built in 7.32s`，无错误 | PASS |
 
-三条全绿。测试数 336 ≥ 合同下限（≥310 全绿 + 新增）。
+三条验收命令全绿。test 340 与自报一致。
 
----
+## 3. 自报 vs 实测对比
 
-## 3. Generator 自报 vs 实测对比
-
-| 指标 | gen_status 自报 | 我的实测 | 一致？ |
-|---|---|---|---|
-| type-check | 0 错 | 0 错 | ✅ 一致 |
-| 测试数 | 336 passed (28 files) | 336 passed (28 files) | ✅ 一致 |
-| build | `✓ built`（自报 10.66s）| `✓ built in 8.80s` | ✅ 一致（耗时机器差异，不计） |
-| 新测试文件 | daily/codex/achievements 三个 | 实存，用例数 10/6/7 = 23 | ✅ 一致 |
-| 成就条数 | 18 | `grep id:'ach_'` = 18 | ✅ 一致 |
-| 每日任务条数 | 4 | `grep id:'daily_'` = 4 | ✅ 一致 |
-
-**无夸大、无造假。** 自报数字逐项落地。浏览器闭环部分无法复验（无后端实跑），但代码侧已交叉印证埋点链真实存在。
-
----
-
-## 4. 代码抽查结果（亲自 Read 核实，逐项判定）
-
-### 4.1 三个新 store 独立 + userStore 未被塞领域逻辑 — ✅ 属实
-- `stores/daily.ts`（157 行）/ `stores/codex.ts`（132 行）/ `stores/achievements.ts`（132 行）均存在，是自包含领域 store，各带 serialize/deserialize/reset 三件套。
-- `daily.ts` 自带 `todayKey()`（复制 shop 模式，未横向 import）、`ensureToday()` 读时跨天归零、`markProgress/claim/claimLoginReward`。
-- `codex.ts` 完成度为 computed 纯派生，只存 `claimedMilestones: string[]`。
-- `achievements.ts` 只存 `unlocked: string[]`，stats 会话级 reactive（不进档），`check()` 事件驱动幂等。
-- userStore 仅在**编排函数加调用行**（markProgress/check/claimLoginReward/claim），新增 `withNurtureProgress` 包装器与 `claimDailyTask`/`claimCodexMilestone` 门面——均为薄编排，无规则下沉。
-
-### 4.2 6 个玩法成功点埋点 — ✅ 全部命中，对战在 battleFlow（无漏）
-| 成功点 | 位置 | 埋点 |
+| 自报 | 实测 | 是否夸大 |
 |---|---|---|
-| 抽卡 | userStore.ts:143-144 | `daily.markProgress('gacha')` + `ach.check('gacha', {rarities})` |
-| 收观看 | userStore.ts:354-355 | 返回值守卫内 `markProgress('watch')` + `check('watch')` |
-| 养成互动 | userStore.ts:288-290（withNurtureProgress 包 3 入口）| `markProgress('nurture')` + `check('nurture', {characterMaxLevel})` |
-| 猜对 | userStore.ts:257（+ 262 猜错 resetGuessStreak）| `check('guess')` |
-| 爬塔 | userStore.ts:412 | 返回值守卫内 `check('tower', {floor})` |
-| **对战胜利** | **battleFlow.ts:127-129** | `outcome.winner === 'playerA'` 块内 `markProgress('battleWin')` + `check('battleWin')` |
+| type-check 0 错 | 0 错 | 属实 |
+| test 340 passed（29 files，基线 336 → 340，+4 unlockCodex 测试） | 340 passed / 29 files | 属实 |
+| build 通过，291 modules | 291 modules，built ok | 属实 |
+| 新增 codexUnlock.ts + unlockCodex.test.ts；改 4 源文件；schema/迁移/装配器未动 | git status 完全印证（?? 两新文件，M 四源文件 + 文档，schema 三件套未在改动列表） | 属实 |
 
-对战埋点确在 `battleFlow.endGame` 的胜利分支（scout 强调的唯一例外），**没漏**。
+**无夸大、无缩水。** 自报「PASSED / test 340」与实测逐项吻合。
 
-### 4.3 schema v5→v6 三处同改 + 测试只追加 — ✅ 属实
-- `schema.ts`：`SAVE_VERSION = 6`，新增 `DailySave` 接口 + SavePayload 末尾三键（daily/codexMilestones/achievements）+ `createDefaultDaily()` 工厂 + 顶部块注释。
-- `migrations.ts`：新增 `migrateDaily()` 字段级兜底，migrate() 末尾加三键（codexMilestones/achievements 数组守卫）。既有 v1~v5 迁移逻辑一字未动。
-- `persistence.ts`：import 三个新 store；buildPayload/applyPayload/resetAllDomains 各加三行装配。
-- `migrations.test.ts`：diff 只追加 3 个 v6 用例（缺省补默认 / v6 原样保留 / 局部损坏字段兜底），唯一 `-` 行是 import 行扩展（非断言改动），既有断言未改。
-- `persistence.test.ts`：diff 只追加（三域往返断言 + 「payload 全键列表」加三键 + TODAY_KEY 辅助）。用 `TODAY_KEY` 塞值避免 deserialize 的 ensureToday 跨天清零——处理正确。
+## 4. 代码抽查（亲自 Read，逐项属实判定）
 
-### 4.4 图鉴完成度纯派生 + 不硬编码 665 — ✅ 属实
-- `CodexPanel.vue:38` 用 `gameDataStore.allAnimeCards` / `allCharacterCards`；完成度走 `codex.animeCompletion/characterCompletion`（computed）。
-- `codex.ts` `completionFor()` 分母 = `allCards.length`，owned 用 `collection.getXxxCardCount(id) > 0` 判定。
-- **全仓 `grep 665` 在 src/ 命中 4 处，均为注释/AI 配置/技能数据 id，CodexPanel 与 codex.ts 零硬编码 665。**
+### 4.1 定向解锁经济平衡（config/codexUnlock.ts）— 属实，守住原则
 
-### 4.5 颜色铁律 — ✅ 合规（一处 text-white 是合法例外，非违规）
-- `grep "text-white\|bg-\${"`：DailyTasksPanel / AchievementsPanel **零命中**。CodexPanel 命中 **1 处**：
-  - `CodexPanel.vue:185` `text-white bg-black/60` —— 这是**卡图右上角稀有度角标的压片白字**（白字压在 `bg-black/60` 半透明深色 badge 上，且整体浮在卡片图片上）。这正是 CLAUDE.md 明列的允许例外：「图片压片白字是仅有的固定色例外」。**判定：合规，不算违规。**
-  - 「未拥有」灰位遮罩用 `text-ink-2` / `bg-surface/80`（语义色），灰位用 `opacity-40 grayscale`（非颜色类）。
-- 无任何 `bg-${...}` 动态色类拼接。
+定价表 `CODEX_UNLOCK_PRICES`：N 50 / R 200 / SR 600 / SSR 2000 / HR 5000 / **UR 12000**。
 
-### 4.6 engine 纯净 — ✅ 属实
-- `grep "defineStore|from 'pinia'|new Date()|useProfileStore|markProgress"` 扫 `engine/`：**零命中**。日期/进度/成就判定全在 stores 层，engine 未被塞 Pinia/Date 副作用。
+- **UR 远贵**：12000 是次高档 HR(5000) 的 2.4x，最高档 ✓
+- **阶梯递增**：50 → 200 → 600 → 2000 → 5000 → 12000，严格单调递增 ✓
+- **明显高于分解回收**（核对 gameConfig.ts dismantleValue 实值，非取信自报）：
+  - 回收实值：N=10(L230) / R=25(L222) / SR=100(L206) / SSR=50(L214) / UR=200(L198)
+  - 解锁 vs 回收倍率：N 5x、R 8x、SR 6x、SSR 40x、UR **60x**
+  - 每档均显著高于回收，UR 尤甚（60 倍）→ **绝不架空抽卡** ✓
+  - 注：项目既有回收价 SSR(50) < SR(100)（因 SSR 概率高于 SR），属历史设定，与本轮无关。
 
----
+### 4.2 userStore.unlockCodexCard 编排（userStore.ts:251-280）— 属实，关键安全闭环成立
+
+逐行核验：
+1. 登录校验（L252 `!profile.isLoggedIn` → return）✓
+2. 卡存在校验（L258 `!card` → return）✓
+3. **已拥有则拒**（L263-269：`getAnimeCardCount/getCharacterCardCount > 0` → addLog + return，绝不重复入库）✓
+4. **关键安全——余额不足绝不发卡**：L271 `if (!profile.spend('knowledgePoints', price))` 返 false 时立即 `return { ok:false }`（L273）。`collection.addCard` 在 L275，**spend 失败的执行流根本到不了 addCard**。完全正确 ✓
+5. spend 语义复核（profile.ts:61-66）：`if (core[currency] < amount) return false`——余额不足不变更余额、返 false。链条闭环，**无「余额不足仍发卡」漏洞** ✓
+6. 成功路径：spend 成功 → addCard → addLog → **saveToServer()**（门面统一存档，不在领域 store 调存档）✓
+7. 完成度纯派生（addCard 后 codex.ts 自动 +1），无手动联动，无新 schema 字段 ✓
+
+诚实化决策属实：自报移除了 `achievements.check('codex')` 空联动（唯一 codex 成就 condition 认 milestoneId，定向解锁场景永不触发）。代码中确无该 no-op 调用，符合 CLAUDE.md「不 ship 宣告效果但不执行的代码」。
+
+### 4.3 解锁不破坏抽卡经济 — 属实
+
+gen_status 称「回收 UR200、解锁 UR12000」——核对 gameConfig.ts:198 dismantleValue 确为 200，codexUnlock.ts UR 确为 12000。量级属实，定价远高于回收（60x），不架空抽卡。
+
+### 4.4 真实数据展示（CardDetailModal.vue 番剧资料区块）— 属实
+
+- 区块整体守卫：`v-if="hasAnimeMeta || hasCharacterMeta"`（L165），全缺不渲染 ✓
+- anime 字段：`rating_score`（L169-171）/ `rating_rank`（L174-175）/ `releaseYear`（L177，date.slice(0,4) + 长度守卫）——字段名对得上真实数据 ✓
+- character 字段：`anime_count`（L183-184）/ `popularity_score`（L186-187）/ `comprehensive_popularity`（L189-190）——对得上 ✓
+- 每字段独立 v-if 守卫（`typeof x === 'number'` / `releaseYear`），缺失不显示该行 ✓
+- 颜色语义类：text-accent / text-ink，**新区块无 text-white** ✓
+
+### 4.5 颜色违规扫描（grep "text-white" / "bg-${"）— 无违规
+
+- `bg-${` 动态拼接：**两文件零命中** ✓
+- text-white 命中 4 处，逐一确认均为规则明示的合法例外、且非本轮新增：
+  - CardDetailModal:146 — 稀有度徽章（配 `bg-gradient-to-r` 稀有度渐变），属「稀有度识别色」例外
+  - CardDetailModal:236/294 — `bg-danger text-white`（深红底白字）
+  - CodexPanel:225 — `bg-black/60` 黑底白字（图片压片），属例外
+  - 本轮新增的番剧资料区块与解锁价标签均用语义类（text-accent/text-ink/text-ink-2），无 text-white 压浅底。
+
+### 4.6 types/card.ts 显式可选字段 — 属实
+
+- AnimeCard 补：`date? / rating_score? / rating_rank? / rating_total?`（L25-29）显式类型 ✓
+- CharacterCard 补：`anime_count? / popularity_score? / comprehensive_popularity? / gender? / birthday?`（L38-43）显式类型 ✓
+- 不靠裸 any 读真实字段。BaseCard 的 `[key:string]:any`（L13）是历史既有索引签名，自报已声明未触碰，属实（这是 eslint 报的 2 处历史 no-explicit-any 之一，非本轮引入）。
+
+### 4.7 无新 schema 字段 / schema 仍 v6 — 属实
+
+- schema.ts:24 `SAVE_VERSION = 6 as const`，未升版 ✓
+- migrations.test.ts 最高分支 version 6（无 v7）✓
+- git status 中 schema.ts / migrations.ts / persistence.ts 装配器**均未出现在改动列表**——E2-T1 靠 collection 已有持久化、E2-T2 纯展示，确实未动存档协议 ✓
+
+### 4.8 CodexPanel 解锁交互守卫 — 属实
+
+- `handleUnlock`：`if (card.owned) return`（L103，owned 卡不处理）✓
+- 余额不足：alert 提示且不调 unlockCodexCard（L105-107）✓
+- 确认：confirm 显示价格 + 当前知识点（L109）✓
+- owned 卡不挂可点击态（cursor-pointer/价格标签 v-if 仅未拥有，L214/L229）✓
+- 价格颜色：`canAfford ? 'text-accent' : 'text-ink-2'`（L235）语义类 ✓
+
+### 4.9 特征测试覆盖（unlockCodex.test.ts）— 属实，三分支 + 1
+
+mock `@/infra/persistence/api` 隔离网络，4 个测试：
+1. 解锁成功：精确扣 600 + count=1 + characterCompletion.owned +1
+2. 余额不足（差 1 点）：ok:false / '知识点不足'，余额不变、未入库
+3. 已拥有：ok:false / '已拥有'，不扣费、count 仍 1
+4. 未登录：ok:false / '登录'
+
+覆盖 plan 要求的解锁成功 / 余额不足 / 已拥有三分支 + 未登录边界，断言到位。
 
 ## 5. pitfalls 合规
 
-| pitfalls 条目 | 合规 |
-|---|---|
-| engine 纯净（零 Vue/Pinia/Date/IO）| ✅ engine 零命中 |
-| 依赖只向下 | ✅ 新逻辑在 stores，组件→store→config，无反向 |
-| 存档新增字段三处同改 + 旧档缺省 + 测试只追加 | ✅ schema/migrations/persistence 全改，测试只 append |
-| 领域 store 自己不调 saveToServer | ✅ 三 store 均不触发存档，由门面统一 |
-| 颜色语义类，禁 text-white 压浅底/禁动态色类 | ✅ 唯一 text-white 是图片压片合法例外 |
-| 总数 .length 派生不硬编码 665 | ✅ 完成度全派生 |
-| userStore 已偏大，新逻辑进独立 store，成功点只加一行 | ✅ userStore 只加编排行 + 薄门面 |
+- 架构铁律：解锁编排在 userStore 门面 + collection（stores 层），未写进 engine ✓
+- 存档单一入口：解锁走门面 saveToServer，未在领域 store 调存档 ✓
+- 货币只走 spend/earn：解锁用 profile.spend，未绕过 ✓
+- 颜色规则：无 text-white 压浅底、无 bg-${} 动态拼接 ✓
+- schema 不动：v6 三件套未改 ✓
+- 不 ship 假实现：移除 codex 成就空联动，符合诚实化铁律 ✓
 
----
+## 6. 结构漂移
 
-## 6. 结构漂移核查
-
-项目无 `docs/project_structure.md` —— **跳过结构漂移核查**。新增文件（3 store + 3 component + 3 config + 3 test = 12 个）布局符合既有 stores/components/config/ 约定。
-
----
+项目无 docs/project_structure.md，**跳过结构漂移核对**。git status 文件变更与 gen_status 自报一一对应，无意外漂移。
 
 ## 7. 失败分析
 
-无失败项。三条验收命令全绿，代码抽查全部属实，无缩水/夸大/埋点漏/颜色违规/测试造假。
+无失败项。三条验收命令全绿，所有代码抽查点属实，无经济漏洞（余额不足不发卡链条闭环、定价 5-60 倍于回收不架空抽卡）、无颜色违规、无虚假 schema 升版、无 ship 假实现。
 
----
+## 8. 决策（信息性，tier1 on 不终止循环）
 
-## 8. 新发现的坑（补充 Generator 已记录的）
+**COMPLETE**
 
-Generator 已记录 4 条坑（UR 同命中 SSR 档、round-trip 与跨天清零张力、MAX_CHARACTER_LEVEL=100、data/auth 运行时目录），均属实且有价值。Evaluator 补充：
-
-- **[git 状态] evolution-1 全部改动仍未提交**（working tree dirty：12 个改动文件 + 12 个新文件）。git log 顶是 S10（204f836）+ skills 清理（3f9d99f），本轮成果未落 commit。下一轮/收口前需提交，否则有丢失风险。
-- **[测试隔离] persistence.test 依赖真实系统时钟**：用 `new Date()` 算 TODAY_KEY 塞值。当前可过，但若测试跨午夜运行（塞值时刻与 deserialize 时刻分属两天）理论上有偶发风险。概率极低，记录备查。
-
----
-
-## 9. 决策（tier1 on，仅信息性）
-
-**DECISION: COMPLETE**
-
-依据：
-- 三条验收命令亲自重跑全绿（type-check 0 错 / test 336 passed / build 成功），与 Generator 自报逐项一致，无夸大。
-- E1-T1/T2/T3 三 checkbox 全 `[x]`，功能埋点链代码侧交叉印证真实存在。
-- 代码抽查 6 大项（独立 store / 6 成功点埋点 / schema 三处同改 / 完成度纯派生 / 颜色铁律 / engine 纯净）**全部属实**。
-- 唯一 text-white 命中为图片压片合法例外，非违规。
-- pitfalls 全条合规。
-
-本轮「留存引擎」三件套（每日任务/登录、图鉴完成度/里程碑、成就系统）质量达标、诚实交付。
-
-**给下一轮 Planner 的提示**：
-1. 本轮成果尚未 commit，建议下一轮开工前先落 commit 固化。
-2. 经济「只进不出」张力仍在——daily 已以券为主缓解，但里程碑/成就仍发知识点。reviewer 🟡-4 知识点出口（商城扩展）建议下一轮正式做，对齐 plan.md 留的尾。
-3. daily 当前每类型仅 1 条任务（markProgress 已按类型遍历为多任务预留），若要丰富每日任务池，config 直接扩即可，无需改 store。
+理由：E2-T1/T2 两项 checkbox 已勾；type-check 0 错 / test 340 全绿 / build 通过，实测与自报逐项吻合无夸大；经济安全核心（余额不足绝不发卡、已拥有拒重复、spend 失败 return）代码层面成立；定价守住「UR 远贵(12000)、阶梯递增、明显高于回收(5-60x)」原则，不架空抽卡；真实数据展示字段名正确、v-if 守卫齐全、颜色语义类；types 补显式可选字段；schema 仍 v6 无多余升版；特征测试三分支 + 边界齐全。本轮交付真实、合规、无缩水。

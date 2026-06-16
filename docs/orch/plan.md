@@ -1,54 +1,46 @@
-# Iteration 1 Plan (evolution)
+# Iteration 2 Plan (evolution)
 
-> 需求来源：docs/orch/evolution-audit-report.md「Prioritized Recommendations」（Tier1 on，evolution 模式）。
-> 已读 scout.md A/B/C 段 + pitfalls.md。本计划只说 WHAT/WHY；HOW 见 scout.md B 段，Generator 自主决定。
+> 需求来源：docs/orch/evolution-audit-report.md（Round 2）「Prioritized Recommendations」。已读 scout.md A/B/C + negotiation 上轮 + pitfalls。
+> 本计划只说 WHAT/WHY + 平衡设计决策；HOW（精确落点）见 scout.md B 段。
 
-## 本轮主题：给"玩法齐全但没动机"的产品装上**留存引擎**
+## 本轮主题：让"图鉴"从只读面板进化成**全产品的价值枢纽**
 
-reviewer 核心结论：8 个玩法是孤岛，缺三样留存核心（onboarding / 每日回访 / 收集完成度）。本轮取 reviewer 明确指定的**最高 ROI 组合 🔴-1 + 🔴-2，并叠加共享埋点的 🟡-3**——三者在「现有玩法成功点埋进度检测」这一套接入模式上完全同构，一轮一并落地，边际成本最低。
+reviewer Round 2 核心：第 1 轮装了动机引擎，但图鉴还是死的、知识点出口锁死在 UP 轮换、Bangumi 真实数据（评分/放送年）100% 送达却没展示。取 reviewer 最高 ROI 组合 🔴-1 + 🟡-3，二者都以图鉴/卡详情为枢纽、复用现成 spend/addCard/纯派生、几乎不进新存档。
 
 ## 本轮任务（按依赖顺序）
 
-1. **E1-T1：每日任务 + 每日登录奖励**（reviewer 🔴-1）
-   - 目标：装上"明天为什么回来"。新建 `stores/daily.ts` 领域 store（跨天读时归零，复用 shop 的 todayKey 模式）；静态任务定义放 config；3-4 个任务全部命中现有成功点（抽卡/赢对战/收观看/养成互动）；做满给券+知识点；外加每日登录一次性发放。主页加「今日任务」面板。
-   - 依赖：无（但与 T3 共享埋点，建议同改）
-   - 验收：登录后主页显示今日任务面板 + 进度；触发对应玩法进度自增；做满可领奖（券/知识点入账）；跨天重置；每日登录奖励一次性发放且跨天再发；daily store 有 serialize/deserialize/reset + 特征测试；进存档 v6 跨「重开浏览器」保真。
+1. **E2-T1：图鉴定向解锁（经济闭环主菜）**（reviewer 🔴-1）
+   - 目标：把知识点变成"想要哪张卡点哪张"的有意义出口。CodexPanel 灰位未拥有卡可点击 → 花知识点直接解锁（addCard 入库）。对标 Marvel Snap Token Shop：是"心仪卡的长期保底出口"，不是抽卡替代品。
+   - 依赖：无（复用第 1 轮 CodexPanel + 现成 spend/addCard）
+   - **★平衡设计决策（Planner 定，Generator 按此实现）**：定价按稀有度静态表，**显著高于分解回收、UR 尤贵**，使定向解锁是"长期攒钱拿心仪卡"而非"花钱跳过抽卡"。基准档（Generator 可微调但须守住"UR 远贵、阶梯递增、明显高于回收"原则）：R 200 / SR 600 / SSR 2000 / HR 5000 / UR 12000 知识点。
+   - 验收：CodexPanel 未拥有卡可发起解锁；余额够则扣知识点 + 入收藏 + 完成度 +1 + 存档；余额不足/已拥有给提示不扣费；走 userStore 门面编排（不在领域 store 调存档）；无需新 schema 字段（collection 已持久化）；特征测试覆盖解锁成功/余额不足/已拥有三分支。
    - 来源：Evolution Reviewer 🔴-1
 
-2. **E1-T2：图鉴/收集完成度 + 里程碑奖励**（reviewer 🔴-2）
-   - 目标：把 665 张卡的补全欲变成有目标有奖励的进度轴。`CollectionsView` 加「图鉴」tab：动画/角色/各稀有度完成度进度条（X/总数，总数从数据 `.length` 派生不硬编码）；未拥有卡灰位剪影（复用 VirtualGrid）；静态里程碑阈值表，达成发奖（已领里程碑 id 进存档）。
-   - 依赖：无
-   - 验收：图鉴 tab 显示各维度完成度（拥有/总数）+ 灰位未拥有卡；达到里程碑可领一次性奖励且已领状态持久化；完成度为纯派生（不新存"拥有集合"）；进存档 v6；特征测试覆盖完成度计算与里程碑领取。
-   - 来源：Evolution Reviewer 🔴-2
-
-3. **E1-T3：成就系统**（reviewer 🟡-3，因与 T1 共享埋点纳入本轮）
-   - 目标：把散落的高光时刻变成可累积可炫耀的资产。`stores/achievements.ts` + 成就墙（弹窗或视图）；~15-20 条静态成就（首张 UR / 爬塔里程碑 / 养成满级 / 猜角色连对 / 图鉴里程碑 / 知识点累计…）在同一批成功点检测解锁，给徽章 + 一次性奖励；存"已解锁 id 数组"。
-   - 依赖：T1（共用同一批玩法成功点埋点，一次改完）
-   - 验收：达成条件解锁成就 + 发奖 + 持久化（已解锁 id 进存档 v6）；成就墙可见已解锁/未解锁；特征测试覆盖解锁判定。
+2. **E2-T2：真实评分/放送年可视化（差异化护城河）**（reviewer 🟡-3）
+   - 目标：把 Bangumi 真实元数据搬上台面——竞品物理上做不到的展示。CardDetailModal 加「番剧资料」区块：anime 卡显示真实评分（rating_score）/排名（rating_rank）/放送年（date）；character 卡显示登场作品数（anime_count）/人气（popularity_score）等。
+   - 依赖：无（数据已送达前端，纯展示）
+   - 验收：CardDetailModal 对 anime 卡显示真实评分/排名/放送年、对 character 卡显示作品数/人气；字段缺失时该行不显示（v-if 守卫）；types/card.ts 补显式可选字段（不裸读 any）；颜色语义类；type-check/build 通过。
    - 来源：Evolution Reviewer 🟡-3
 
 ## 来自 Reviewer 的改进项（本轮采纳的）
-- 🔴-1 每日任务/登录 → 本轮做（E1-T1）
-- 🔴-2 图鉴完成度 → 本轮做（E1-T2）
-- 🟡-3 成就系统 → 本轮做（E1-T3，搭车共享埋点）
-- 经济失衡（知识点只进不出）→ 部分缓解：本轮 daily/里程碑/成就都发知识点会加剧"只进"，故 daily 奖励以**券**为主、知识点为辅；知识点出口（🟡-4 商城）留到第 2 轮正式做。
+- 🔴-1 图鉴定向解锁 → 本轮做（E2-T1），定价守住"不架空抽卡"原则
+- 🟡-3 真实数据可视化 → 本轮做（E2-T2），先做 CardDetailModal 展示，"番剧年表"时间轴留余量/下轮
+- 经济闭环：E2-T1 正是产品方上轮留给本轮的"知识点出口"主题，现以图鉴为出口落地
 
 ## 相关陷阱（从 pitfalls.md / scout.md C 段筛选）
-- userStore 已偏大：新逻辑进独立领域 store，userStore/battleFlow 成功点只加一行 markProgress/check。
-- 对战埋点必须在 battleFlow.endGame（唯一不在 userStore 的成功点），别漏。
-- schema v5→v6：schema.ts + migrations.ts + persistence.ts 三处同改 + 旧档缺键补默认 + 两测试文件只追加不改既有断言（含 persistence.test 的「payload 全键列表」要加新键）。
-- 存档字段紧凑：静态定义放 config，存档只存可变状态（进度计数/已领 id 数组）。
-- 颜色语义类，禁 text-white 压浅底/禁动态色类拼接；新面板/灰位用 bg-surface/text-ink/border-line 系。
-- 总数 `.length` 派生不硬编码 665；图鉴"拥有"用 collection 计数不用 favorite。
-- 领域 store 自己不调 saveToServer；engine 纯净，日期/进度检测留 stores 层。
+- 定向解锁定价是设计要点不是实现细节：守住 UR 远贵、阶梯递增、明显高于回收（C-1）。
+- 解锁前必须判已拥有（getXxxCardCount>0 拒重复购买）；spend 返 false 不 addCard；门面负责 saveToServer。
+- BaseCard 索引签名让真实字段裸读不报错，但补显式可选字段更安全（C-2）。
+- CardDetailModal 有历史硬编码色（text-blue-600），新区块坚持语义类（C-3）。
+- 声优维度不在本轮（server.py:44 剥离 main_characters，前端无 actors 数据）。
+- schema 现 v6：本轮 2 任务不动 schema（解锁靠 collection 已有持久化、可视化纯展示）。
 
 ## 验收命令（回归 + 新增）
 ```bash
 cd frontend-vue && npm run type-check     # 0 错
-cd frontend-vue && npm run test           # 全绿，不低于 310 + 新增 store/迁移测试
+cd frontend-vue && npm run test           # 全绿，不低于 336 + 新增解锁编排测试
 cd frontend-vue && npm run build          # 生产构建通过
 ```
-（后端无改动，本轮不跑 test_security.py；S10 加固保持。）
 
 ## 通过标准
-三个任务的功能可见可用 + 进存档 v6 跨重开保真 + 三条验收命令全绿 + 颜色/架构铁律不破。
+定向解锁可用且扣费/入库/完成度联动正确、定价守平衡原则；CardDetailModal 真实数据展示正确；三条验收命令全绿；颜色/架构铁律不破。

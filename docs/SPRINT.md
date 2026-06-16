@@ -99,6 +99,21 @@ grep -rn "debug=True" backend/server.py api/index.py
 
 ---
 
+## 🔁 Evolution 第 2 轮追加任务（基于 Evolution 审计 Round 2，2026-06-16）
+
+> 主题：让"图鉴"从只读面板进化成**全产品价值枢纽**。取 reviewer 最高 ROI 组合 🔴-1 经济出口 + 🟡-3 差异化数据。
+
+- [x] **E2-T1：图鉴定向解锁（经济闭环）**
+  - 目标：CodexPanel 灰位未拥有卡可花知识点直接解锁（addCard 入库）。userStore 加 `unlockCodexCard` 编排；定价静态表（config/codexUnlock.ts），**UR 远贵、阶梯递增、明显高于回收**，不架空抽卡。
+  - 验收：解锁扣费+入库+完成度联动、余额不足/已拥有给提示不扣、走门面存档、无新 schema、三分支特征测试。
+- [x] **E2-T2：真实评分/放送年可视化（差异化）**
+  - 目标：CardDetailModal 加「番剧资料」区块——anime 显示真实评分/排名/放送年，character 显示作品数/人气；types/card.ts 补显式可选字段；字段缺失 v-if 守卫。
+  - 验收：真实数据正确展示、缺失不显示、类型干净、颜色语义类、type-check/build 通过。
+
+**第 2 轮验收命令**：`cd frontend-vue && npm run type-check`（0 错）/ `npm run test`（≥336 全绿 + 新增）/ `npm run build`（通过）。
+
+---
+
 ## 📦 Backlog（决策门控，**本轮未激活**，勿当作 `[ ]` 执行任务）
 
 > 以下是 FUTURE.md S11/S12 的拆分，**仅作路线参考**。它们是「演进/终点」方向，FUTURE.md 明确标注

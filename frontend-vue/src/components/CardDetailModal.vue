@@ -60,6 +60,40 @@ const animeEffectsDescriptions = computed(() => {
   });
 });
 
+// --- E2-T2: 番剧真实元数据（Bangumi 送达，竞品物理上拿不到） ---
+const animeMeta = computed(() => {
+  if (props.cardType !== 'anime' || !props.card) return null;
+  return props.card as AnimeCard;
+});
+
+/** 放送年：date 取前 4 位（如 "2025-04-01" → "2025"），缺失/非法返回空。 */
+const releaseYear = computed(() => {
+  const date = animeMeta.value?.date;
+  if (!date || typeof date !== 'string' || date.length < 4) return '';
+  const year = date.slice(0, 4);
+  return /^\d{4}$/.test(year) ? year : '';
+});
+
+const characterMeta = computed(() => {
+  if (props.cardType !== 'character' || !props.card) return null;
+  return props.card as CharacterCard;
+});
+
+/** anime 卡是否有任一真实资料可展示。 */
+const hasAnimeMeta = computed(() => {
+  const m = animeMeta.value;
+  return !!m && (typeof m.rating_score === 'number' || typeof m.rating_rank === 'number' || !!releaseYear.value);
+});
+
+/** character 卡是否有任一真实资料可展示。 */
+const hasCharacterMeta = computed(() => {
+  const m = characterMeta.value;
+  if (!m) return false;
+  return typeof m.anime_count === 'number'
+    || typeof m.popularity_score === 'number'
+    || typeof m.comprehensive_popularity === 'number';
+});
+
 const processedAnimeNames = computed(() => {
     if (props.cardType !== 'character' || !props.card) return [];
     const charCard = props.card as CharacterCard;
@@ -125,6 +159,37 @@ function handleDismantle() {
             <div v-if="card.description" class="prose max-w-none">
               <h3 class="font-bold text-lg mb-2">简介</h3>
               <p class="text-sm whitespace-pre-wrap">{{ card.description }}</p>
+            </div>
+
+            <!-- E2-T2: 番剧资料（Bangumi 真实元数据，缺失字段不显示该行） -->
+            <div v-if="hasAnimeMeta || hasCharacterMeta" class="mt-4 border-t pt-4">
+              <h3 class="font-bold text-lg mb-2">番剧资料</h3>
+              <!-- Anime 真实评分 / 排名 / 放送年 -->
+              <div v-if="cardType === 'anime' && animeMeta" class="text-sm space-y-2">
+                <div v-if="typeof animeMeta.rating_score === 'number'">
+                  <strong>Bangumi 评分:</strong>
+                  <span class="font-semibold text-accent">{{ animeMeta.rating_score }}</span>
+                  <span v-if="typeof animeMeta.rating_total === 'number'" class="text-ink-2"> · {{ animeMeta.rating_total }} 人评分</span>
+                </div>
+                <div v-if="typeof animeMeta.rating_rank === 'number'">
+                  <strong>排名:</strong> <span class="font-semibold text-ink">#{{ animeMeta.rating_rank }}</span>
+                </div>
+                <div v-if="releaseYear">
+                  <strong>放送年:</strong> <span class="font-semibold text-ink">{{ releaseYear }}</span>
+                </div>
+              </div>
+              <!-- Character 登场作品数 / 人气 -->
+              <div v-if="cardType === 'character' && characterMeta" class="text-sm space-y-2">
+                <div v-if="typeof characterMeta.anime_count === 'number'">
+                  <strong>登场作品数:</strong> <span class="font-semibold text-ink">{{ characterMeta.anime_count }}</span>
+                </div>
+                <div v-if="typeof characterMeta.popularity_score === 'number'">
+                  <strong>人气值:</strong> <span class="font-semibold text-accent">{{ characterMeta.popularity_score }}</span>
+                </div>
+                <div v-if="typeof characterMeta.comprehensive_popularity === 'number'">
+                  <strong>综合人气:</strong> <span class="font-semibold text-ink">{{ characterMeta.comprehensive_popularity }}</span>
+                </div>
+              </div>
             </div>
 
             <!-- NEW: Battle Information Section -->

@@ -7,6 +7,7 @@
 import { defineStore } from 'pinia';
 import { computed, reactive } from 'vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
+import { getCodexUnlockPrice } from '@/config/codexUnlock';
 import { MAX_CHARACTER_LEVEL } from '@/engine';
 import { type ShopItem } from '@/utils/gachaRotation';
 import type { CurrencyKey, Deck } from '@/types/player';
@@ -238,6 +239,46 @@ export const useUserStore = defineStore('user', () => {
     return Promise.resolve();
   }
 
+  // --- 图鉴定向解锁编排（evolution-2 / E2-T1）：花知识点直接入库一张心仪卡 ---
+
+  /**
+   * 用知识点定向解锁一张图鉴卡（CodexPanel 灰位未拥有卡可点击发起）。
+   * 编排：登录校验 → 已拥有则拒（不重复购买）→ spend('knowledgePoints', 定价)
+   * 失败给提示不发货 → collection.addCard 入库 → 日志 → codex 收藏家成就联动 → saveToServer。
+   * 完成度是纯派生（codex.ts），addCard 后自动 +1，无需新存档字段。
+   * 返回 { ok, error? } 供 UI/测试断言（不在此弹 alert，文案由调用方决定）。
+   */
+  function unlockCodexCard(cardId: number, domain: CardDomain): { ok: boolean; error?: string } {
+    if (!profile.isLoggedIn) {
+      return { ok: false, error: '请先登录！' };
+    }
+    const card = domain === 'anime'
+      ? useGameDataStore().getAnimeCardById(cardId)
+      : useGameDataStore().getCharacterCardById(cardId);
+    if (!card) {
+      profile.addLog('解锁失败，卡片不存在。', 'warning');
+      return { ok: false, error: '卡片不存在。' };
+    }
+    // 已拥有则拒（避免把定向解锁当成刷重复卡的入口）
+    const owned = domain === 'anime'
+      ? collection.getAnimeCardCount(cardId)
+      : collection.getCharacterCardCount(cardId);
+    if (owned > 0) {
+      profile.addLog(`已拥有 [${card.rarity}] ${card.name}，无需解锁。`, 'info');
+      return { ok: false, error: '已拥有该卡。' };
+    }
+    const price = getCodexUnlockPrice(card.rarity);
+    if (!profile.spend('knowledgePoints', price)) {
+      profile.addLog(`知识点不足，解锁 [${card.rarity}] ${card.name} 需 ${price} 知识点。`, 'warning');
+      return { ok: false, error: '知识点不足。' };
+    }
+    collection.addCard(cardId, domain);
+    profile.addLog(`花费 ${price} 知识点，定向解锁 [${card.rarity}] ${card.name}！`, 'success');
+    // 完成度纯派生（codex.ts）：addCard 后图鉴完成度 / 里程碑达成态自动 +1，无需在此手动联动。
+    saveToServer();
+    return { ok: true };
+  }
+
   // --- 猜角色：游戏逻辑在 guess store，这里编排经济奖励与存档（S6 接入主经济） ---
 
   function submitGuess(guess: string): { correct: boolean; message: string; knowledgeAwarded: number } {
@@ -370,6 +411,8 @@ export const useUserStore = defineStore('user', () => {
       if (useDailyStore().claim(taskId)) saveToServer();
     },
 
+    // codex（evolution-2）：图鉴定向解锁（花知识点入库一张心仪卡）
+    unlockCodexCard,
     // codex（evolution-1）：领取图鉴里程碑奖励 + 联动「收藏家」成就
     claimCodexMilestone: (milestoneId: string) => {
       if (useCodexStore().claim(milestoneId)) {
