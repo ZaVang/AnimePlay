@@ -177,28 +177,6 @@ export class InteractionSystem {
   }
 
   /**
-   * 从牌库中选择卡牌
-   */
-  async selectFromDeck(playerId: 'playerA' | 'playerB', options: CardSelectionOptions): Promise<CardSelectionResult> {
-    const playerStore = usePlayerStore();
-    const deck = playerStore[playerId].deck;
-
-    let availableCards = deck.slice(-10).reverse(); // 牌库顶 10 张（顶=数组尾，S8c 修正方向）
-    if (options.filter) {
-      availableCards = availableCards.filter(options.filter);
-    }
-
-    // TODO: 显示牌库选择UI Modal
-    const selectedCount = Math.min(options.count, availableCards.length);
-    const selected = availableCards.slice(0, selectedCount);
-    
-    return {
-      selected,
-      cancelled: false
-    };
-  }
-
-  /**
    * S8c：从任意给定卡牌列表中选择（交互式技能通用；无 UI 时退化为取前 count 张）。
    */
   async selectFromCards(cards: AnimeCard[], options: CardSelectionOptions): Promise<CardSelectionResult> {

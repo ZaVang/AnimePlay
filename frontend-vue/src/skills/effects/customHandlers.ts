@@ -70,8 +70,7 @@ const legacyHandlers: Record<string, EffectHandler> = {
     historyStore.addLog(`${name} 获得效果：下一张卡视为任意类型。`, 'info');
   },
 
-  // Halve opponent bias towards their favor (placeholder demo),
-
+  // 将对手当前的议题优势削减一半（向己方拉回）。
   BIAS_HALVE_OPP: (ctx) => {
     const gameStore = useGameStore();
     const historyStore = useHistoryStore();
