@@ -238,4 +238,33 @@ describe('每日挑战（evolution-8）', () => {
     expect(store.dcDone).toBe(true);
     expect(store.dcScore).toBe(total);
   });
+
+  it('连续天数 streak（evolution-9）：昨日完成→+1，断签→归 1，首次→1', () => {
+    const keyOf = (d: Date) => `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+    const yest = new Date(); yest.setDate(yest.getDate() - 1);
+    const yKey = keyOf(yest);
+
+    const store = useMiniGamesStore();
+    // 首次完成 → streak 1
+    store.startDailyChallenge(createSeededRng(1));
+    store.dcScore = 3; store.dcDone = true;
+    store.settleDailyChallenge();
+    expect(store.dcStreakDays).toBe(1);
+
+    // 模拟"昨日已完成"再到今日 → +1
+    store.dcLastDate = yKey; store.dcStreakDays = 3;
+    store.startDailyChallenge(createSeededRng(2));
+    store.dcScore = 5; store.dcDone = true;
+    store.settleDailyChallenge();
+    expect(store.dcStreakDays).toBe(4);
+    expect(store.dcBestStreakDays).toBe(4);
+
+    // 断签（上次是很久以前）→ 归 1，历史最长保留
+    store.dcLastDate = '2020-1-1'; store.dcStreakDays = 4; store.dcBestStreakDays = 9;
+    store.startDailyChallenge(createSeededRng(3));
+    store.dcScore = 2; store.dcDone = true;
+    store.settleDailyChallenge();
+    expect(store.dcStreakDays).toBe(1);
+    expect(store.dcBestStreakDays).toBe(9); // 历史最长保留（断签不清零 best）
+  });
 });

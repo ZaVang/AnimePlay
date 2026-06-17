@@ -106,8 +106,8 @@ describe('v1 → v2 迁移', () => {
     expect(v2.minigames.quiz).toEqual({ highScore: 0, bestStreak: 0, playCount: 0 });
   });
 
-  it('v10 新键：minigames.dailyChallenge 缺失补默认（每日挑战战绩）', () => {
-    expect(v2.minigames.dailyChallenge).toEqual({ lastDate: '', lastScore: 0, bestScore: 0 });
+  it('v10/v11 新键：minigames.dailyChallenge 缺失补默认（每日挑战战绩 + 连续天数）', () => {
+    expect(v2.minigames.dailyChallenge).toEqual({ lastDate: '', lastScore: 0, bestScore: 0, streakDays: 0, bestStreakDays: 0 });
   });
 });
 

@@ -113,6 +113,8 @@ function migrateMiniGames(raw: any): MiniGamesSave {
       lastDate: typeof dc.lastDate === 'string' ? dc.lastDate : defaults.dailyChallenge.lastDate,
       lastScore: typeof dc.lastScore === 'number' ? dc.lastScore : defaults.dailyChallenge.lastScore,
       bestScore: typeof dc.bestScore === 'number' ? dc.bestScore : defaults.dailyChallenge.bestScore,
+      streakDays: typeof dc.streakDays === 'number' ? dc.streakDays : defaults.dailyChallenge.streakDays,
+      bestStreakDays: typeof dc.bestStreakDays === 'number' ? dc.bestStreakDays : defaults.dailyChallenge.bestStreakDays,
     },
     awardDate: typeof raw.awardDate === 'string' ? raw.awardDate : defaults.awardDate,
     awardedToday: typeof raw.awardedToday === 'number' ? raw.awardedToday : defaults.awardedToday,

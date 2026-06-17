@@ -155,6 +155,8 @@ export const useMiniGamesStore = defineStore('minigames', () => {
   const dcLastDate = ref('');
   const dcLastScore = ref(0);
   const dcBestScore = ref(0);
+  const dcStreakDays = ref(0);      // v11：连续完成天数
+  const dcBestStreakDays = ref(0);
   const dcQuestions = ref<QuizQuestion[]>([]);
   const dcIndex = ref(0);
   const dcChosen = ref<number | null>(null);
@@ -365,10 +367,20 @@ export const useMiniGamesStore = defineStore('minigames', () => {
    * 结算今日挑战：更新战绩，返回应发知识点（每日仅首通发放，不占小游戏共享封顶）。
    * 今日已通关再调返回 0（alreadyDone）。
    */
+  /** 昨日的本地日期键（连续天数判定用）。 */
+  function yesterdayKey(): string {
+    const d = new Date();
+    d.setDate(d.getDate() - 1);
+    return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+  }
+
   function settleDailyChallenge(): { score: number; kpToAward: number; alreadyDone: boolean } {
     const score = dcScore.value;
     const today = todayKey();
     if (dcLastDate.value === today) return { score, kpToAward: 0, alreadyDone: true };
+    // 连续天数：昨日完成过则 +1，否则（断签/首次）归 1
+    dcStreakDays.value = dcLastDate.value === yesterdayKey() ? dcStreakDays.value + 1 : 1;
+    if (dcStreakDays.value > dcBestStreakDays.value) dcBestStreakDays.value = dcStreakDays.value;
     dcLastDate.value = today;
     dcLastScore.value = score;
     if (score > dcBestScore.value) dcBestScore.value = score;
@@ -402,6 +414,8 @@ export const useMiniGamesStore = defineStore('minigames', () => {
         lastDate: dcLastDate.value,
         lastScore: dcLastScore.value,
         bestScore: dcBestScore.value,
+        streakDays: dcStreakDays.value,
+        bestStreakDays: dcBestStreakDays.value,
       },
       awardDate: awardDate.value,
       awardedToday: awardedToday.value,
@@ -418,6 +432,8 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     dcLastDate.value = data?.dailyChallenge?.lastDate ?? '';
     dcLastScore.value = data?.dailyChallenge?.lastScore ?? 0;
     dcBestScore.value = data?.dailyChallenge?.bestScore ?? 0;
+    dcStreakDays.value = data?.dailyChallenge?.streakDays ?? 0;
+    dcBestStreakDays.value = data?.dailyChallenge?.bestStreakDays ?? 0;
     awardDate.value = data?.awardDate ?? '';
     awardedToday.value = data?.awardedToday ?? 0;
   }
@@ -432,6 +448,8 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     dcLastDate.value = '';
     dcLastScore.value = 0;
     dcBestScore.value = 0;
+    dcStreakDays.value = 0;
+    dcBestStreakDays.value = 0;
     dcQuestions.value = [];
     dcActive.value = false;
     dcDone.value = false;
@@ -456,7 +474,7 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     quizQuestion, quizChosen, quizStreak, quizPlaying, quizOver, quizLastAward,
     startQuiz, answerQuiz, nextQuestion, settleQuiz, quitQuiz,
     // 每日挑战 战绩 + 会话态 + 方法
-    dcLastDate, dcLastScore, dcBestScore, dcScore, dcChosen, dcActive, dcDone, dcLastAward, dcIndex, dcQuestions,
+    dcLastDate, dcLastScore, dcBestScore, dcStreakDays, dcBestStreakDays, dcScore, dcChosen, dcActive, dcDone, dcLastAward, dcIndex, dcQuestions,
     dcCompletedToday, dcCurrentQuestion, dcTotal,
     startDailyChallenge, answerDailyChallenge, nextDailyChallenge, settleDailyChallenge,
     serialize, deserialize, reset,

@@ -13,6 +13,7 @@
  * v8（evolution-5）：新增 minigames 域——高低牌 higherLower（highScore/bestStreak/playCount）+ 每日发奖封顶防刷（awardDate/awardedToday，跨天读时归零）。不动 v7 guess 域。
  * v9（evolution-6）：minigames 域加 quiz（番剧问答战绩）；每日封顶跨游戏共享。
  * v10（evolution-8）：minigames 域加 dailyChallenge（每日挑战，固定种子全员同题，每日一次）。
+ * v11（evolution-9）：dailyChallenge 加 streakDays/bestStreakDays（连续挑战天数，断签归 1）。
  */
 import type { PityState } from '@/engine/gacha/draw';
 import type { CharacterNurtureData } from '@/types/nurture';
@@ -25,7 +26,7 @@ import type {
   TowerProgress,
 } from '@/types/player';
 
-export const SAVE_VERSION = 10 as const;
+export const SAVE_VERSION = 11 as const;
 
 /** 商店单品的当日购买记录（跨天读取时自动视为 0）。 */
 export interface ShopPurchaseRecord {
@@ -70,7 +71,7 @@ export interface MiniGameRecord {
 /** 兼容别名（v8 时命名）。 */
 export type HigherLowerSave = MiniGameRecord;
 
-/** 每日挑战战绩（v10）：固定种子全员同题，每日一次。 */
+/** 每日挑战战绩（v10；v11 加连续天数 streak）：固定种子全员同题，每日一次。 */
 export interface DailyChallengeSave {
   /** 最近完成的日期（todayKey）；== 今日则当日已完成、不再发奖。 */
   lastDate: string;
@@ -78,6 +79,10 @@ export interface DailyChallengeSave {
   lastScore: number;
   /** 历史最高得分。 */
   bestScore: number;
+  /** v11：连续完成天数（昨日完成过则 +1，断签归 1）。 */
+  streakDays: number;
+  /** v11：历史最长连续天数。 */
+  bestStreakDays: number;
 }
 
 /**
@@ -187,7 +192,7 @@ export function createDefaultMiniGames(): MiniGamesSave {
   return {
     higherLower: { highScore: 0, bestStreak: 0, playCount: 0 },
     quiz: { highScore: 0, bestStreak: 0, playCount: 0 },
-    dailyChallenge: { lastDate: '', lastScore: 0, bestScore: 0 },
+    dailyChallenge: { lastDate: '', lastScore: 0, bestScore: 0, streakDays: 0, bestStreakDays: 0 },
     awardDate: '',
     awardedToday: 0,
   };

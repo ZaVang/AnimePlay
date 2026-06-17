@@ -47,6 +47,7 @@ function optionClass(i: number): string {
     <div v-if="!store.dcActive && !store.dcDone" class="dc-intro">
       <h3 class="text-xl font-bold text-ink mb-1">🗓️ 每日挑战</h3>
       <p class="text-sm text-ink-soft mb-1">今日 5 题，<b>全员同题</b>，每天仅一次。答对越多，奖励越高。</p>
+      <p v-if="store.dcStreakDays > 0" class="dc-streak">🔥 连续挑战 {{ store.dcStreakDays }} 天（最长 {{ store.dcBestStreakDays }} 天）</p>
       <p v-if="store.dcCompletedToday" class="dc-doneflag">✅ 今日已完成 · 得分 {{ store.dcLastScore }} / 5</p>
       <p class="text-xs text-ink-soft mb-4">历史最佳 {{ store.dcBestScore }} / 5</p>
       <button class="btn-primary" @click="start">
@@ -82,6 +83,7 @@ function optionClass(i: number): string {
       <p class="dc-result-score">得分 <b>{{ store.dcLastScore }}</b> / 5</p>
       <p v-if="store.dcLastAward > 0" class="dc-result-award">兑换 {{ store.dcLastAward }} 知识点</p>
       <p v-else class="text-xs text-ink-soft">（今日已领过奖励，明天再来~）</p>
+      <p class="dc-streak mt-1">🔥 连续挑战 {{ store.dcStreakDays }} 天（最长 {{ store.dcBestStreakDays }} 天）</p>
       <p class="text-xs text-ink-soft mt-1">历史最佳 {{ store.dcBestScore }} / 5 · 明天换新题</p>
     </div>
   </div>
@@ -90,6 +92,7 @@ function optionClass(i: number): string {
 <style scoped>
 .dc-game { width: 100%; max-width: 600px; margin: 0 auto; text-align: center; }
 .dc-doneflag { color: rgb(var(--c-accent)); font-weight: 600; font-size: 0.85rem; }
+.dc-streak { color: rgb(var(--c-accent)); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.25rem; }
 .dc-topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
 .dc-progress { font-size: 1.05rem; font-weight: 700; color: rgb(var(--c-ink)); }
 .dc-img { width: 130px; height: 130px; object-fit: cover; border-radius: var(--sk-radius, 0.75rem); margin: 0 auto 0.75rem; border: 2px solid rgb(var(--c-border-line)); }

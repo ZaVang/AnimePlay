@@ -107,6 +107,8 @@ function populateAllDomains() {
   mg.dcLastDate = TODAY_KEY;
   mg.dcLastScore = 4;
   mg.dcBestScore = 5;
+  mg.dcStreakDays = 6;
+  mg.dcBestStreakDays = 9;
   mg.awardDate = TODAY_KEY;
   mg.awardedToday = 30;
 }
@@ -201,6 +203,8 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
     expect(mg.quizPlayCount).toBe(5);
     expect(mg.dcBestScore).toBe(5);
     expect(mg.dcLastScore).toBe(4);
+    expect(mg.dcStreakDays).toBe(6);
+    expect(mg.dcBestStreakDays).toBe(9);
     expect(mg.dcCompletedToday).toBe(true);
     expect(mg.remainingDailyKp).toBe(120 - 30);
   });

@@ -32,7 +32,7 @@ const games = computed(() => [
   { id: 'guess' as GameId, icon: '🎭', title: '猜角色', desc: '像素图逐级揭晓，越早猜中分越高', best: `最高分 ${guessStore.highScore}` },
   { id: 'higherlower' as GameId, icon: '🔼', title: '高低牌', desc: '比人气/口碑/年代，连对冲榜', best: `最佳连胜 ${minigames.bestStreak}` },
   { id: 'quiz' as GameId, icon: '❓', title: '番剧问答', desc: '4 选 1 知识问答，连答冲分', best: `最佳连答 ${minigames.quizBestStreak}` },
-  { id: 'dailychallenge' as GameId, icon: '🗓️', title: '每日挑战', desc: '全员同题，每天一次，首通领奖', best: minigames.dcCompletedToday ? `今日 ✅ ${minigames.dcLastScore}/5` : `最佳 ${minigames.dcBestScore}/5` },
+  { id: 'dailychallenge' as GameId, icon: '🗓️', title: '每日挑战', desc: '全员同题，每天一次，首通领奖', best: minigames.dcStreakDays > 0 ? `🔥 连续 ${minigames.dcStreakDays} 天${minigames.dcCompletedToday ? ' · 今日✅' : ''}` : (minigames.dcCompletedToday ? `今日 ✅ ${minigames.dcLastScore}/5` : `最佳 ${minigames.dcBestScore}/5`) },
 ]);
 
 function select(id: GameId) {
