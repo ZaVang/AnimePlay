@@ -13,8 +13,9 @@
 | 宅理论战 | 卡牌辩论对战（声望/议题/技能） | [战斗系统](docs/战斗系统.md) |
 | 挑战塔 | 角色小队逐层数值战 | [挑战塔系统](docs/挑战塔系统.md) |
 | 角色养成 | 好感/属性/对话，反哺小队战 | [角色养成系统](docs/角色养成系统.md) |
-| 猜角色 | 像素化猜角色小游戏 | [猜角色游戏](docs/猜角色游戏.md) |
-| 主题 | 6 套全局配色换肤 | [主题系统](docs/主题系统.md) |
+| 🎮 小游戏 | 小游戏中心：猜角色 / 高低牌 / 番剧问答 / 每日挑战 | [小游戏系统](docs/小游戏系统.md) |
+| 留存系统 | 每日/周任务 · 连续登录 · 成就 · 图鉴完成度/里程碑/定向解锁 · 成绩卡 | [留存系统](docs/留存系统.md) |
+| 主题 | 5 套全局配色换肤 | [主题系统](docs/主题系统.md) |
 
 ## 技术架构
 
@@ -55,7 +56,7 @@ npm run dev
 
 Vite 已配置把 `/api` 和 `/data` 代理到 `:5001`，所以直接访问 http://localhost:5173 即可。
 
-> 登录无需密码：输入字母数字用户名即创建/加载存档（存为 `data/user_data/<用户名>.json`）。
+> 登录：字母数字用户名 + 密码（S10 起）。首次登录即注册（密码盐哈希存 `data/auth/credentials.json`），读写存档需登录后签发的会话 token；存档仍存 `data/user_data/<用户名>.json`。详见 [部署方案.md](docs/部署方案.md) / 审计安全章节。
 
 ## 目录结构
 
@@ -63,12 +64,13 @@ Vite 已配置把 `/api` 和 `/data` 代理到 `:5001`，所以直接访问 http
 AnimePlay/
 ├── frontend-vue/        # 前端主体（Vue 3），见其 CLAUDE.md
 │   ├── src/
+│   │   ├── engine/      # 纯游戏规则（battle/gacha/squad/skills/nurture/ai + 注入式 RNG），零 Vue/Pinia/DOM/IO（S2–S4 抽出，原 core/ 已删）
+│   │   ├── stores/      # Pinia 状态 + 薄编排（含 minigames/）
 │   │   ├── views/       # 8 个页面
 │   │   ├── components/  # UI 组件（battle/ nurture/ gacha/ ...）
-│   │   ├── stores/      # Pinia 状态
-│   │   ├── core/        # 战斗引擎（TurnManager/BattleController/...）
-│   │   ├── skills/      # 技能效果注册表
-│   │   ├── config/      # gameConfig.ts（数值配置）
+│   │   ├── skills/      # 技能运行时（执行器 + handlers 分桶）
+│   │   ├── infra/       # persistence（存档 schema/迁移/IO）
+│   │   ├── config/      # gameConfig / dailyTasks / achievements / skins ...
 │   │   └── data/        # 生成的技能数据
 ├── backend/             # Flask 数据服务 + 数据处理脚本
 │   └── bangumi_asset/   # Bangumi 数据抓取（见其 README）
