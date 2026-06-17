@@ -105,6 +105,10 @@ describe('v1 → v2 迁移', () => {
   it('v9 新键：minigames.quiz 缺失补默认（番剧问答战绩）', () => {
     expect(v2.minigames.quiz).toEqual({ highScore: 0, bestStreak: 0, playCount: 0 });
   });
+
+  it('v10 新键：minigames.dailyChallenge 缺失补默认（每日挑战战绩）', () => {
+    expect(v2.minigames.dailyChallenge).toEqual({ lastDate: '', lastScore: 0, bestScore: 0 });
+  });
 });
 
 describe('v2 存档过迁移层', () => {

@@ -340,6 +340,22 @@ export const useUserStore = defineStore('user', () => {
     return { score, streak, knowledgeAwarded: kpToAward };
   }
 
+  /** 每日挑战结算：每日首通发奖（不占小游戏共享封顶）+ 推进小游戏任务/成就 + 存档。 */
+  function settleDailyChallenge(): { score: number; knowledgeAwarded: number; alreadyDone: boolean } {
+    const minigames = useMiniGamesStore();
+    const { score, kpToAward, alreadyDone } = minigames.settleDailyChallenge();
+    if (profile.isLoggedIn && !alreadyDone) {
+      if (kpToAward > 0) {
+        profile.earn('knowledgePoints', kpToAward);
+        profile.addLog(`每日挑战完成，答对 ${score} 题，兑换 ${kpToAward} 知识点！`, 'success');
+      }
+      useDailyStore().markProgress('minigame', 1);
+      useAchievementsStore().check('minigame', { streak: score });
+      saveToServer();
+    }
+    return { score, knowledgeAwarded: kpToAward, alreadyDone };
+  }
+
   // --- 各领域委托（动作完成后统一触发存档） ---
 
   const withSave = <A extends unknown[]>(fn: (...args: A) => unknown) => (...args: A) => {
@@ -441,6 +457,7 @@ export const useUserStore = defineStore('user', () => {
     submitGuess,
     settleHigherLower,
     settleQuiz,
+    settleDailyChallenge,
 
     // daily（evolution-1）：领取每日任务奖励（领域 store 自己不存档）
     claimDailyTask: (taskId: string) => {

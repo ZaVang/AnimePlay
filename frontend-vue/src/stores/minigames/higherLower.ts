@@ -16,7 +16,7 @@
 import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
 import { useGameDataStore } from '../gameDataStore';
-import { defaultRng, type RNG } from '@/engine';
+import { defaultRng, createSeededRng, type RNG } from '@/engine';
 import type { AnimeCard, CharacterCard } from '@/types/card';
 import type { MiniGamesSave } from '@/infra/persistence';
 import { generateQuestion, isCorrect as quizIsCorrect, type QuizQuestion } from './quiz';
@@ -148,6 +148,20 @@ export const useMiniGamesStore = defineStore('minigames', () => {
   const quizOver = ref(false);
   const quizSettled = ref(false);
   const quizLastAward = ref(0);
+
+  // 每日挑战（v10）：固定种子全员同题，每日一次。战绩持久化 + 会话态。
+  const DC_QUESTION_COUNT = 5;
+  const DC_KP_PER_CORRECT = 12; // 每答对 1 题 12 知识点（满分 5×12=60），每日仅首通发放
+  const dcLastDate = ref('');
+  const dcLastScore = ref(0);
+  const dcBestScore = ref(0);
+  const dcQuestions = ref<QuizQuestion[]>([]);
+  const dcIndex = ref(0);
+  const dcChosen = ref<number | null>(null);
+  const dcScore = ref(0);
+  const dcActive = ref(false);
+  const dcDone = ref(false);
+  const dcLastAward = ref(0);
 
   const leftValue = computed(() => (left.value ? cardValue(left.value, category.value) : null));
   const rightValue = computed(() => (right.value ? cardValue(right.value, category.value) : null));
@@ -298,6 +312,71 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     quizQuestion.value = null;
   }
 
+  // --- 每日挑战（固定种子全员同题，每日一次） ---
+
+  /** 当日种子（YYYYMMDD）：全员同题、隔天换题、可回放确定。 */
+  function dateSeed(): number {
+    const d = new Date();
+    return d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate();
+  }
+  const dcCompletedToday = computed(() => dcLastDate.value === todayKey());
+  const dcCurrentQuestion = computed(() => dcQuestions.value[dcIndex.value] ?? null);
+  const dcTotal = computed(() => dcQuestions.value.length);
+
+  /** 开始今日挑战：用当日种子确定性生成 DC_QUESTION_COUNT 题（全员同题）。 */
+  function startDailyChallenge(rng: RNG = createSeededRng(dateSeed())) {
+    const { anime, characters } = quizPool();
+    const qs: QuizQuestion[] = [];
+    for (let i = 0; i < DC_QUESTION_COUNT; i++) {
+      const q = generateQuestion(anime, characters, rng);
+      if (q) qs.push(q);
+    }
+    dcQuestions.value = qs;
+    dcIndex.value = 0;
+    dcChosen.value = null;
+    dcScore.value = 0;
+    dcActive.value = qs.length > 0;
+    dcDone.value = false;
+    dcLastAward.value = 0;
+  }
+
+  /** 答当前题：揭示并计分（不前进，便于 UI 揭示）。 */
+  function answerDailyChallenge(index: number): boolean {
+    if (!dcActive.value || dcDone.value || dcChosen.value !== null || !dcCurrentQuestion.value) return false;
+    dcChosen.value = index;
+    const correct = quizIsCorrect(dcCurrentQuestion.value, index);
+    if (correct) dcScore.value += 1;
+    return correct;
+  }
+
+  /** 进入下一题；最后一题后置 dcDone（由组件随后调 settle）。 */
+  function nextDailyChallenge() {
+    if (dcDone.value) return;
+    if (dcIndex.value + 1 >= dcQuestions.value.length) {
+      dcDone.value = true;
+      dcActive.value = false;
+    } else {
+      dcIndex.value += 1;
+      dcChosen.value = null;
+    }
+  }
+
+  /**
+   * 结算今日挑战：更新战绩，返回应发知识点（每日仅首通发放，不占小游戏共享封顶）。
+   * 今日已通关再调返回 0（alreadyDone）。
+   */
+  function settleDailyChallenge(): { score: number; kpToAward: number; alreadyDone: boolean } {
+    const score = dcScore.value;
+    const today = todayKey();
+    if (dcLastDate.value === today) return { score, kpToAward: 0, alreadyDone: true };
+    dcLastDate.value = today;
+    dcLastScore.value = score;
+    if (score > dcBestScore.value) dcBestScore.value = score;
+    const kp = score * DC_KP_PER_CORRECT;
+    dcLastAward.value = kp;
+    return { score, kpToAward: kp, alreadyDone: false };
+  }
+
   function quit() {
     isPlaying.value = false;
     isGameOver.value = false;
@@ -319,6 +398,11 @@ export const useMiniGamesStore = defineStore('minigames', () => {
         bestStreak: quizBestStreak.value,
         playCount: quizPlayCount.value,
       },
+      dailyChallenge: {
+        lastDate: dcLastDate.value,
+        lastScore: dcLastScore.value,
+        bestScore: dcBestScore.value,
+      },
       awardDate: awardDate.value,
       awardedToday: awardedToday.value,
     };
@@ -331,6 +415,9 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     quizHighScore.value = data?.quiz?.highScore ?? 0;
     quizBestStreak.value = data?.quiz?.bestStreak ?? 0;
     quizPlayCount.value = data?.quiz?.playCount ?? 0;
+    dcLastDate.value = data?.dailyChallenge?.lastDate ?? '';
+    dcLastScore.value = data?.dailyChallenge?.lastScore ?? 0;
+    dcBestScore.value = data?.dailyChallenge?.bestScore ?? 0;
     awardDate.value = data?.awardDate ?? '';
     awardedToday.value = data?.awardedToday ?? 0;
   }
@@ -342,6 +429,12 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     quizHighScore.value = 0;
     quizBestStreak.value = 0;
     quizPlayCount.value = 0;
+    dcLastDate.value = '';
+    dcLastScore.value = 0;
+    dcBestScore.value = 0;
+    dcQuestions.value = [];
+    dcActive.value = false;
+    dcDone.value = false;
     awardDate.value = '';
     awardedToday.value = 0;
     quit();
@@ -362,6 +455,10 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     quizHighScore, quizBestStreak, quizPlayCount,
     quizQuestion, quizChosen, quizStreak, quizPlaying, quizOver, quizLastAward,
     startQuiz, answerQuiz, nextQuestion, settleQuiz, quitQuiz,
+    // 每日挑战 战绩 + 会话态 + 方法
+    dcLastDate, dcLastScore, dcBestScore, dcScore, dcChosen, dcActive, dcDone, dcLastAward, dcIndex, dcQuestions,
+    dcCompletedToday, dcCurrentQuestion, dcTotal,
+    startDailyChallenge, answerDailyChallenge, nextDailyChallenge, settleDailyChallenge,
     serialize, deserialize, reset,
   };
 });

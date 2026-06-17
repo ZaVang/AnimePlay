@@ -12,6 +12,7 @@
  * v7（B1）：daily 扩字段——weekDate/weeklyProgress/weeklyClaimed（周任务，weekKey 跨周归零）+ loginStreak（连续登录天数，断签归 1，递增登录奖励）。旧档迁移补缺省。
  * v8（evolution-5）：新增 minigames 域——高低牌 higherLower（highScore/bestStreak/playCount）+ 每日发奖封顶防刷（awardDate/awardedToday，跨天读时归零）。不动 v7 guess 域。
  * v9（evolution-6）：minigames 域加 quiz（番剧问答战绩）；每日封顶跨游戏共享。
+ * v10（evolution-8）：minigames 域加 dailyChallenge（每日挑战，固定种子全员同题，每日一次）。
  */
 import type { PityState } from '@/engine/gacha/draw';
 import type { CharacterNurtureData } from '@/types/nurture';
@@ -24,7 +25,7 @@ import type {
   TowerProgress,
 } from '@/types/player';
 
-export const SAVE_VERSION = 9 as const;
+export const SAVE_VERSION = 10 as const;
 
 /** 商店单品的当日购买记录（跨天读取时自动视为 0）。 */
 export interface ShopPurchaseRecord {
@@ -69,15 +70,27 @@ export interface MiniGameRecord {
 /** 兼容别名（v8 时命名）。 */
 export type HigherLowerSave = MiniGameRecord;
 
+/** 每日挑战战绩（v10）：固定种子全员同题，每日一次。 */
+export interface DailyChallengeSave {
+  /** 最近完成的日期（todayKey）；== 今日则当日已完成、不再发奖。 */
+  lastDate: string;
+  /** 最近一次完成的得分（答对题数）。 */
+  lastScore: number;
+  /** 历史最高得分。 */
+  bestScore: number;
+}
+
 /**
  * 小游戏域。各游戏战绩 + 每日发奖封顶（跨游戏共享，防刷）。
  * awardDate（todayKey：YYYY-M-D）跨天读时归零 awardedToday，仿 daily 的 ensureToday 模式。
- * v8：higherLower（高低牌）。v9：quiz（番剧问答）。
+ * v8：higherLower（高低牌）。v9：quiz（番剧问答）。v10：dailyChallenge（每日挑战）。
  */
 export interface MiniGamesSave {
   higherLower: MiniGameRecord;
   /** v9 新增：番剧问答 Quiz 战绩。 */
   quiz: MiniGameRecord;
+  /** v10 新增：每日挑战战绩（每日一次，固定种子）。 */
+  dailyChallenge: DailyChallengeSave;
   /** 当日已发奖知识点所属日期（todayKey）。 */
   awardDate: string;
   /** 当日已发放的知识点累计（达每日封顶后不再发奖，只更新战绩）。 */
@@ -174,6 +187,7 @@ export function createDefaultMiniGames(): MiniGamesSave {
   return {
     higherLower: { highScore: 0, bestStreak: 0, playCount: 0 },
     quiz: { highScore: 0, bestStreak: 0, playCount: 0 },
+    dailyChallenge: { lastDate: '', lastScore: 0, bestScore: 0 },
     awardDate: '',
     awardedToday: 0,
   };

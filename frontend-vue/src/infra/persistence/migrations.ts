@@ -105,9 +105,15 @@ function migrateMiniGames(raw: any): MiniGamesSave {
       playCount: typeof o.playCount === 'number' ? o.playCount : def.playCount,
     };
   };
+  const dc = raw.dailyChallenge && typeof raw.dailyChallenge === 'object' ? raw.dailyChallenge : {};
   return {
     higherLower: rec(raw.higherLower, defaults.higherLower),
     quiz: rec(raw.quiz, defaults.quiz),
+    dailyChallenge: {
+      lastDate: typeof dc.lastDate === 'string' ? dc.lastDate : defaults.dailyChallenge.lastDate,
+      lastScore: typeof dc.lastScore === 'number' ? dc.lastScore : defaults.dailyChallenge.lastScore,
+      bestScore: typeof dc.bestScore === 'number' ? dc.bestScore : defaults.dailyChallenge.bestScore,
+    },
     awardDate: typeof raw.awardDate === 'string' ? raw.awardDate : defaults.awardDate,
     awardedToday: typeof raw.awardedToday === 'number' ? raw.awardedToday : defaults.awardedToday,
   };

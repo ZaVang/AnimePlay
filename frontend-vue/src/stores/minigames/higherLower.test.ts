@@ -191,3 +191,51 @@ describe('store 流程 + 每日封顶经济', () => {
     expect(store.quizBestStreak).toBe(20);
   });
 });
+
+describe('每日挑战（evolution-8）', () => {
+  beforeEach(() => {
+    setActivePinia(createPinia());
+    const gds = useGameDataStore();
+    gds.allAnimeCards = Array.from({ length: 10 }, (_, i) => anime(300 + i, 5000 + i * 100, `${2000 + i}-01-01`));
+    gds.allCharacterCards = Array.from({ length: 10 }, (_, i) => char(400 + i, 100 + i * 50));
+  });
+
+  it('固定种子全员同题：同一种子生成相同题组（确定性）', () => {
+    const store = useMiniGamesStore();
+    store.startDailyChallenge(createSeededRng(20260617));
+    const first = JSON.parse(JSON.stringify(store.dcQuestions));
+    store.startDailyChallenge(createSeededRng(20260617));
+    const second = JSON.parse(JSON.stringify(store.dcQuestions));
+    expect(second).toEqual(first);
+    expect(store.dcTotal).toBe(5);
+  });
+
+  it('每日一次：首通发奖（每题 12），同日再结算 alreadyDone 不重复发奖', () => {
+    const store = useMiniGamesStore();
+    store.startDailyChallenge(createSeededRng(1));
+    store.dcScore = 4;
+    store.dcDone = true;
+    const first = store.settleDailyChallenge();
+    expect(first.alreadyDone).toBe(false);
+    expect(first.kpToAward).toBe(4 * 12);
+    expect(store.dcBestScore).toBe(4);
+    expect(store.dcLastScore).toBe(4);
+    const second = store.settleDailyChallenge();
+    expect(second.alreadyDone).toBe(true);
+    expect(second.kpToAward).toBe(0);
+  });
+
+  it('答题流程：answer 计分、next 推进、末题置 dcDone', () => {
+    const store = useMiniGamesStore();
+    store.startDailyChallenge(createSeededRng(7));
+    const total = store.dcTotal;
+    expect(total).toBeGreaterThan(0);
+    for (let i = 0; i < total; i++) {
+      const q = store.dcCurrentQuestion!;
+      store.answerDailyChallenge(q.correctIndex);
+      store.nextDailyChallenge();
+    }
+    expect(store.dcDone).toBe(true);
+    expect(store.dcScore).toBe(total);
+  });
+});
