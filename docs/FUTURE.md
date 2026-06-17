@@ -54,8 +54,9 @@ S-roadmap 是「重构 + 上线前置」主线；下面是在 S10 之上由产�
 | Evo-4 | backlog 推进（tier1 off） | 周任务+连续登录递增（存档 v6→v7）· 番剧年表时间轴 · 跨系统红点 | `a72b305` |
 | Evo-5 | 小游戏中心 + 高低牌（5轮的第1轮） | 统一「🎮 小游戏」Hub（/minigames，猜角色迁入）+ 高低牌 Higher/Lower（存档 v7→v8） | `9f1613b` |
 | Evo-6 | 番剧问答 Quiz（5轮的第2轮） | Quiz 4类真实数据派生题（存档 v8→v9）；小游戏硬性交付达成（Hub 内 3 游戏）+ 共享每日封顶 | `f91b34f` |
+| Evo-7 | 小游戏焊进留存（5轮的第3轮） | 小游戏接每日/周任务（minigame 类型）+ 成就 + 红点联动（零架构改动） | `84833ee` |
 
-产品进化成熟度（reviewer 评分）6.0 → 7.0 → 7.5 → 8.0。测试 305 → **392**。存档协议 **v9**。**进行中**：小游戏扩展 5 轮 evolution（第 1-2 轮已交付 Hub+高低牌+Quiz；第 3-5 轮为开放新功能探索）。**剩余 backlog**：按声优收集维度（跨栈，需后端吐 `角色id→声优` 映射，`main_characters[].actors` 被 server.py 剥离）。
+产品进化成熟度（reviewer 评分）6.0 → 7.0 → 7.5 → 8.0。测试 305 → **395**。存档协议 **v9**。**进行中**：小游戏扩展 5 轮 evolution（**第 1-3 轮已交付**：Hub+高低牌+Quiz+留存焊接；**第 4-5 轮待做**——reviewer 已选定 🔴「小游戏每日挑战」（mulberry32(YYYYMMDD) 固定种子全员同题，纯前端）作下一项，详见 `docs/orch/evolution-audit-report.md`）。**剩余 backlog**：按声优收集维度（跨栈，需后端吐 `角色id→声优` 映射，`main_characters[].actors` 被 server.py 剥离）。
 
 ---
 
