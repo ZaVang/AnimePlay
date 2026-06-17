@@ -190,44 +190,36 @@ def assign_cost_with_distribution(items: List[dict]) -> None:
 
 def compute_integer_points(items: List[dict]) -> None:
     """
-    基于“费用模板 + 整数偏移 + 护栏”的规则，计算并写回整数 points。
-    - S0 = 2*cost + 1
-    - 稀有度整数偏移 + 热度（极小） + 评分分层（同费同稀有度内，top30%:+1 / mid:0 / bottom30%:-1）
-    - clamp 到 [2*cost+CLAMP_LOW, 2*cost+CLAMP_HIGH]
+    费用模板 + 评分分层 + 护栏，计算并写回整数 points。
+
+    2026-06 调平：强度按**评分**在同费段内铺满护栏 [2c-1, 2c+2]，**不与稀有度挂钩**
+    （稀有度保持纯收藏维度，不造成 pay-to-win）。
+      - 同 cost 内按 rating_score 降序，四分位映射偏移 +2 / +1 / 0 / -1；
+      - clamp 到 [2*cost+CLAMP_LOW, 2*cost+CLAMP_HIGH]。
+    目的：打破原实现「几乎全部 = 2c+2」的确定性直线——那会让基础净差恒为偶数、
+    与档位奇数断点(±1/±5)错位、同费必平、强度由费用差独霸。铺开后同费有强度取舍、
+    基础净差可出现奇数、5 档粒度真正可达。
     """
-    # 分组：同费 + 同稀有度
-    groups: Dict[Tuple[int, str], List[dict]] = defaultdict(list)
+    by_cost: Dict[int, List[dict]] = defaultdict(list)
     for it in items:
         c = int(it.get("cost", 1) or 1)
-        r = it.get("rarity", "R")
-        groups[(c, r)].append(it)
+        by_cost[c].append(it)
 
-    def tier_offset(score_list: List[float], s: float) -> int:
-        if not score_list:
-            return 0
-        sorted_scores = sorted(score_list)
-        n = len(sorted_scores)
-        q30 = sorted_scores[int(max(0, math.floor(n * 0.3) - 1))] if n > 0 else s
-        q70 = sorted_scores[int(max(0, math.floor(n * 0.7) - 1))] if n > 0 else s
-        if s >= q70:
-            return 1
-        if s <= q30:
-            return -1
-        return 0
+    # 四分位偏移：top 25% → +2(=2c+2) / 次 → +1 / 再次 → 0 / bottom 25% → -1(=2c-1)
+    quartile_offset = [CLAMP_HIGH, 1, 0, CLAMP_LOW]
 
-    for (cost, rarity), group in groups.items():
-        scores = [g.get("rating_score", 0.0) for g in group]
-        for it in group:
-            S0 = 2 * cost + 1
-            rarity_bonus = RARITY_INT_BONUS.get(rarity, 0)
-            total = it.get("rating_total", 0) or 0
-            hot_bonus = min(1, int(math.log10(total + 1) * 0.3)) if total > 0 else 0
-            t_offset = tier_offset(scores, it.get("rating_score", 0.0))
-            S = S0 + rarity_bonus + hot_bonus + t_offset
-            low = 2 * cost + CLAMP_LOW
-            high = 2 * cost + CLAMP_HIGH
-            S = max(low, min(high, S))
-            it["points"] = int(S)
+    for cost, group in by_cost.items():
+        # 评分高 → 强度高；同分用 id 稳定排序，保证可复现
+        ranked = sorted(
+            group, key=lambda x: (x.get("rating_score", 0.0), x.get("id", 0)), reverse=True
+        )
+        n = len(ranked)
+        low = 2 * cost + CLAMP_LOW
+        high = 2 * cost + CLAMP_HIGH
+        for i, it in enumerate(ranked):
+            q = (i * 4) // n if n > 0 else 0  # 0..3 四分位
+            S = 2 * cost + quartile_offset[q]
+            it["points"] = int(max(low, min(high, S)))
 
 
 def process_anime():
