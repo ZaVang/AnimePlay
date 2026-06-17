@@ -438,20 +438,19 @@ async function resolveClash(clashInfo: ClashInfo) {
     else extraDefender += amount;
   });
 
-  // 2. 最终强度（卡面 + 光环 + 持续效果 + S8c 条件修正），交给 engine 结算
-  //    注意：奖励基于不含 beforeResolve 临时加成的强度计算（沿袭原行为），
-  //    临时加成只影响展示强度。
+  // 2. 最终强度（卡面 + 光环 + 持续效果 + S8c 条件修正 + beforeResolve 临时加成），交给 engine 结算。
+  //    2026-06 修正：beforeResolve 临时加成现**计入奖励档位**。原实现只把它加进展示强度、
+  //    不参与 rewards，导致 学霸气质/圆环理/运动天赋/牺牲觉悟 等「+N强度」被动不影响胜负
+  //    （描述≠行为）。现在 engine 拿到的就是含临时加成的最终强度，展示与判定一致。
   const baseStrengths = applyClashStrengthMods(
     clashInfo,
     sideStrength(clashInfo.attackingCard, clashInfo.attackerId),
     sideStrength(clashInfo.defendingCard, clashInfo.defenderId),
   );
   const clashResult = engineResolveClash(clashInfo, {
-    attacker: baseStrengths.atk,
-    defender: baseStrengths.def,
+    attacker: baseStrengths.atk + extraAttacker,
+    defender: baseStrengths.def + extraDefender,
   });
-  clashResult.attackerStrength += extraAttacker;
-  clashResult.defenderStrength += extraDefender;
   const { rewards } = clashResult;
 
   // S8b：结算后消费一次性强度加成（「下张卡牌+N强度」随本次对撞用掉）
