@@ -5,7 +5,7 @@
  */
 import type { ClashInfo } from '@/types/battle';
 
-type StrengthCategory =
+export type StrengthCategory =
   | 'attacker_crush'
   | 'attacker_advantage'
   | 'draw'
@@ -18,13 +18,23 @@ export interface RewardResult {
   topicBiasChange: number;
 }
 
-function getStrengthCategory(diff: number): StrengthCategory {
+/** 强度差落入的档位（≥5 攻方压倒 / 1-4 攻方优势 / 0 平 / -1~-4 守方优势 / ≤-5 守方压倒）。 */
+export function getStrengthCategory(diff: number): StrengthCategory {
   if (diff >= 5) return 'attacker_crush';
   if (diff >= 1) return 'attacker_advantage';
   if (diff === 0) return 'draw';
   if (diff >= -4) return 'defender_advantage';
   return 'defender_crush';
 }
+
+/** 档位的玩家可读中文标签（按攻/守方标注，对撞区展示用）。 */
+export const STRENGTH_CATEGORY_LABEL: Record<StrengthCategory, string> = {
+  attacker_crush: '攻方压倒性优势',
+  attacker_advantage: '攻方优势',
+  draw: '势均力敌',
+  defender_advantage: '守方优势',
+  defender_crush: '守方压倒性优势',
+};
 
 export function calculateRewards(clash: ClashInfo): RewardResult {
   // 统一按最终强度计算（若未出卡，defenderStrength 为 0）

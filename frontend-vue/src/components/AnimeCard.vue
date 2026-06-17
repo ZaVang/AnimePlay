@@ -11,6 +11,7 @@ const props = defineProps<{
   isDuplicate?: boolean;
   isInDeck?: boolean;
   showCost?: boolean;
+  showStrength?: boolean;
 }>();
 
 const userStore = useUserStore();
@@ -61,6 +62,11 @@ function toggleFavorite(event: MouseEvent) {
     <!-- Cost Gem -->
     <div v-if="anime.cost > 0 && showCost" class="cost-gem">
       {{ anime.cost }}
+    </div>
+
+    <!-- Strength Gem（对撞比的就是这个数；与左上蓝色费用宝石区分） -->
+    <div v-if="showStrength" class="strength-gem" title="强度：对撞时双方比的就是这个数（与费用无关）">
+      ⚔{{ anime.points ?? 0 }}
     </div>
 
     <div class="relative">
@@ -134,6 +140,29 @@ function toggleFavorite(event: MouseEvent) {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  border: 3px solid white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+}
+
+/* 强度宝石：放左下角、暖红色，与左上蓝色费用宝石形成「费用/强度」视觉区分 */
+.strength-gem {
+  position: absolute;
+  bottom: -8px;
+  left: -8px;
+  min-width: 40px;
+  height: 40px;
+  padding: 0 8px;
+  gap: 1px;
+  background-color: #dc2626;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
   border: 3px solid white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

@@ -240,6 +240,16 @@ export class PersistentEffectTracker {
     return Array.from(this.bonuses.values()).filter(b => b.playerId === playerId);
   }
 
+  /** 该玩家当前生效的限制（key 形如 `${playerId}_${type}`，拆出 type 供 UI 枚举展示）。 */
+  getActiveRestrictions(playerId: PlayerId): { type: string; data: unknown; duration: number }[] {
+    const prefix = `${playerId}_`;
+    const out: { type: string; data: unknown; duration: number }[] = [];
+    for (const [key, r] of this.restrictions.entries()) {
+      if (key.startsWith(prefix)) out.push({ type: key.slice(prefix.length), data: r.data, duration: r.duration });
+    }
+    return out;
+  }
+
   clearAll() {
     this.effects.clear();
     this.bonuses.clear();

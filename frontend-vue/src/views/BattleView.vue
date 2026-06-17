@@ -64,6 +64,14 @@ onMounted(() => {
     battlePhase.value = 'battle';
   }
 
+  // 首次进入宅理论战自动弹一次规则详解（设备级标志，不进存档）——提升唯一教学入口的触达率
+  try {
+    if (!localStorage.getItem('battle-rules-seen')) {
+      showRulesModal.value = true;
+      localStorage.setItem('battle-rules-seen', '1');
+    }
+  } catch { /* localStorage 不可用时静默跳过 */ }
+
   // Set up interaction system (use nextTick to ensure component is mounted)
   nextTick(() => {
     if (interactionManager.value) {

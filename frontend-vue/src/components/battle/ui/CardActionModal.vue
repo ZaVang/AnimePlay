@@ -33,7 +33,7 @@ const forcedFriendly = computed(() => persistentEffects.getForcedAction('playerA
         {{ isDefensePhase ? '要如何回应？' : '要如何出牌？' }}
       </h3>
       <div class="card-display mb-6">
-        <AnimeCard :anime="card" :show-cost="true" />
+        <AnimeCard :anime="card" :show-cost="true" :show-strength="true" />
       </div>
       <div class="action-buttons">
         <!-- Defense Phase Buttons -->

@@ -74,7 +74,7 @@ function handlePlayCard(style: '友好安利' | '辛辣点评' | '赞同' | '反
       @contextmenu.prevent="onCardRightClick(card)"
     >
       <!-- Using the main AnimeCard component and showing cost -->
-      <AnimeCard v-if="!isOpponent" :anime="card" :show-cost="true" />
+      <AnimeCard v-if="!isOpponent" :anime="card" :show-cost="true" :show-strength="true" />
       <div v-else class="card-back"></div>
     </div>
 
