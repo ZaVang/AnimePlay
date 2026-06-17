@@ -9,7 +9,7 @@ import type { AnimeCard } from '@/types/card';
 const card = (points: number): AnimeCard => ({ points }) as unknown as AnimeCard;
 
 describe('resolveClash（不传强度 → 回退卡面点数）', () => {
-  it('7 vs 3 辛辣+反驳：轻微优势 → 防守方 -6 / 议题 +2', () => {
+  it('7 vs 3 辛辣+反驳：轻微优势 → 攻方 -1 / 防守方 -6 / 议题 +1（2026-06 调平）', () => {
     const clash: ClashInfo = {
       attackerId: 'playerA',
       defenderId: 'playerB',
@@ -22,9 +22,9 @@ describe('resolveClash（不传强度 → 回退卡面点数）', () => {
     expect(r.attackerStrength).toBe(7);
     expect(r.defenderStrength).toBe(3);
     expect(r.rewards).toEqual({
-      attackerReputationChange: 0,
+      attackerReputationChange: -1,
       defenderReputationChange: -6,
-      topicBiasChange: 2,
+      topicBiasChange: 1,
     });
   });
 

@@ -39,11 +39,11 @@ const tables: Array<{ name: string; style: Style; rows: Row[] }> = [
     name: '辛辣点评 + 赞同',
     style: { attackStyle: '辛辣点评', defenseStyle: '赞同' },
     rows: [
-      [5, 0, -6, 3],
-      [3, 0, -5, 2],
-      [0, 0, 0, 1],
+      [5, -1, -6, 2],
+      [3, -1, -5, 1],
+      [0, 0, 0, 0],
       [-3, -5, 0, 0],
-      [-5, -6, 0, 1],
+      [-5, -6, 0, 0],
     ],
   },
   {
@@ -53,19 +53,19 @@ const tables: Array<{ name: string; style: Style; rows: Row[] }> = [
       [5, 1, -5, 2],
       [3, 0, -4, 1],
       [0, -1, 1, 0],
-      [-3, -2, 0, 0],
-      [-5, -3, 0, 0],
+      [-3, -4, 0, 0],
+      [-5, -5, 0, 0],
     ],
   },
   {
     name: '辛辣点评 + 反驳',
     style: { attackStyle: '辛辣点评', defenseStyle: '反驳' },
     rows: [
-      [5, 0, -7, 3],
-      [3, 0, -6, 2],
+      [5, -1, -7, 2],
+      [3, -1, -6, 1],
       [0, 0, 0, 0],
-      [-3, -4, 0, 0],
-      [-5, -5, 0, 0],
+      [-3, -6, 0, 0],
+      [-5, -7, 0, 0],
     ],
   },
 ];
@@ -101,7 +101,7 @@ describe('强度差分档边界', () => {
 describe('议题偏向方向', () => {
   it('攻击方为 playerB 时议题偏向取反（负方向）', () => {
     const r = calculateRewards(clash(5, { attackStyle: '辛辣点评', defenseStyle: '赞同' }, 'playerB'));
-    expect(r.topicBiasChange).toBe(-3);
+    expect(r.topicBiasChange).toBe(-2);
   });
 });
 

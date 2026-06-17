@@ -15,9 +15,10 @@ export const INITIAL_REPUTATION = 30;
 /** 议题偏向胜利阈值（±）。 */
 export const TOPIC_BIAS_LIMIT = 10;
 
-/** 最大 TP = 2 + (回合数 - 1)，双方同步，无上限（文档与 UI 曾误称 10 上限）。 */
+/** 最大 TP = 2 + (回合数 - 1)，双方同步；2026-06 调平：软上限 10（遏制后期 TP 通胀致多卡轰炸）。 */
+export const MAX_TP_CAP = 10;
 export function maxTpForTurn(turn: number): number {
-  return 2 + (turn - 1);
+  return Math.min(MAX_TP_CAP, 2 + (turn - 1));
 }
 
 export type VictoryReason = 'reputation' | 'topic_bias' | 'final_decision' | 'draw' | 'concede';

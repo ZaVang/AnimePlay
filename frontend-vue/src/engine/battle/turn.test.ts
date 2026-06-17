@@ -12,12 +12,12 @@ import {
 } from './turn';
 
 describe('maxTpForTurn', () => {
-  it('第 1 回合 2 点，逐回合 +1，无上限（第 12 回合 13 点）', () => {
+  it('第 1 回合 2 点，逐回合 +1，软上限 10（第 9 回合起封顶）', () => {
     expect(maxTpForTurn(1)).toBe(2);
     expect(maxTpForTurn(2)).toBe(3);
     expect(maxTpForTurn(9)).toBe(10);
-    expect(maxTpForTurn(10)).toBe(11); // 文档曾误称 10 上限——规则上没有
-    expect(maxTpForTurn(12)).toBe(13);
+    expect(maxTpForTurn(10)).toBe(10); // 2026-06 调平：软上限 10
+    expect(maxTpForTurn(12)).toBe(10);
   });
 });
 

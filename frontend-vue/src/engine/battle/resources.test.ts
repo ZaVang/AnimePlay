@@ -121,4 +121,9 @@ describe('TP', () => {
     expect(restoreTpForNewTurn(player({ tp: 0, maxTp: 2 }), 1)).toEqual({ newTp: 2, newMaxTp: 2 });
     expect(restoreTpForNewTurn(player({ tp: 0, maxTp: 5 }), 6)).toEqual({ newTp: 6, newMaxTp: 6 });
   });
+
+  it('restoreTpForNewTurn：软上限 10（后期不再无限增长）', () => {
+    expect(restoreTpForNewTurn(player({ tp: 0, maxTp: 10 }), 12)).toEqual({ newTp: 10, newMaxTp: 10 });
+    expect(restoreTpForNewTurn(player({ tp: 0, maxTp: 9 }), 11)).toEqual({ newTp: 10, newMaxTp: 10 });
+  });
 });

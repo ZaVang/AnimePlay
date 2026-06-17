@@ -4,13 +4,14 @@
  */
 import type { PlayerState } from '@/types';
 import type { RNG } from '../rng';
+import { MAX_TP_CAP } from './turn';
 
 /** 手牌上限：超过后抽牌中止。 */
 export const MAX_HAND_SIZE = 10;
 
-/** 回合开始时回复 TP：第 1 回合用初始 maxTp，之后每回合 +1，回满。 */
+/** 回合开始时回复 TP：第 1 回合用初始 maxTp，之后每回合 +1，回满；软上限 MAX_TP_CAP（2026-06 调平）。 */
 export function restoreTpForNewTurn(player: PlayerState, turn: number): { newTp: number; newMaxTp: number } {
-  const newMaxTp = turn > 1 ? player.maxTp + 1 : player.maxTp;
+  const newMaxTp = Math.min(MAX_TP_CAP, turn > 1 ? player.maxTp + 1 : player.maxTp);
   return { newTp: newMaxTp, newMaxTp };
 }
 

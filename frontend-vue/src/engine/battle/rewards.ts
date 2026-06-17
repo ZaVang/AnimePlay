@@ -55,33 +55,35 @@ export function calculateRewards(clash: ClashInfo): RewardResult {
         case 'defender_advantage': result = { attackerReputationChange: -3, defenderReputationChange: 0, topicBiasChange: 0 }; break;
         case 'defender_crush':     result = { attackerReputationChange: -4, defenderReputationChange: 0, topicBiasChange: 0 }; break;
       }
-    } else { // 辛辣点评
+    } else { // 辛辣点评（2026-06 调平：赢的档攻方自损 -1、议题 -1；平局不再白给议题 → 高伤高风险，非免费更优）
       switch (category) {
-        case 'attacker_crush':     result = { attackerReputationChange: 0, defenderReputationChange: -6, topicBiasChange: 3 * biasDirection }; break;
-        case 'attacker_advantage': result = { attackerReputationChange: 0, defenderReputationChange: -5, topicBiasChange: 2 * biasDirection }; break;
-        case 'draw':               result = { attackerReputationChange: 0, defenderReputationChange: 0, topicBiasChange: 1 * biasDirection }; break;
+        case 'attacker_crush':     result = { attackerReputationChange: -1, defenderReputationChange: -6, topicBiasChange: 2 * biasDirection }; break;
+        case 'attacker_advantage': result = { attackerReputationChange: -1, defenderReputationChange: -5, topicBiasChange: 1 * biasDirection }; break;
+        case 'draw':               result = { attackerReputationChange: 0, defenderReputationChange: 0, topicBiasChange: 0 }; break;
         case 'defender_advantage': result = { attackerReputationChange: -5, defenderReputationChange: 0, topicBiasChange: 0 }; break;
-        case 'defender_crush':     result = { attackerReputationChange: -6, defenderReputationChange: 0, topicBiasChange: 1 * biasDirection }; break;
+        case 'defender_crush':     result = { attackerReputationChange: -6, defenderReputationChange: 0, topicBiasChange: 0 }; break;
       }
     }
   }
   // --- 防御方：反驳 ---
+  // 2026-06 调平：反驳=「真反击」——守方占优档让攻方亏得比赞同更多（之前反而更少，方向反了）；
+  // 攻方占优档守方多挨（反驳赌输）。攻方辛辣同样赢档自损 -1、议题 -1。
   else if (clash.defenseStyle === '反驳') {
     if (clash.attackStyle === '友好安利') {
       switch (category) {
         case 'attacker_crush':     result = { attackerReputationChange: 1, defenderReputationChange: -5, topicBiasChange: 2 * biasDirection }; break;
         case 'attacker_advantage': result = { attackerReputationChange: 0, defenderReputationChange: -4, topicBiasChange: 1 * biasDirection }; break;
         case 'draw':               result = { attackerReputationChange: -1, defenderReputationChange: 1, topicBiasChange: 0 }; break;
-        case 'defender_advantage': result = { attackerReputationChange: -2, defenderReputationChange: 0, topicBiasChange: 0 }; break;
-        case 'defender_crush':     result = { attackerReputationChange: -3, defenderReputationChange: 0, topicBiasChange: 0 }; break;
+        case 'defender_advantage': result = { attackerReputationChange: -4, defenderReputationChange: 0, topicBiasChange: 0 }; break;
+        case 'defender_crush':     result = { attackerReputationChange: -5, defenderReputationChange: 0, topicBiasChange: 0 }; break;
       }
     } else { // 辛辣点评
       switch (category) {
-        case 'attacker_crush':     result = { attackerReputationChange: 0, defenderReputationChange: -7, topicBiasChange: 3 * biasDirection }; break;
-        case 'attacker_advantage': result = { attackerReputationChange: 0, defenderReputationChange: -6, topicBiasChange: 2 * biasDirection }; break;
+        case 'attacker_crush':     result = { attackerReputationChange: -1, defenderReputationChange: -7, topicBiasChange: 2 * biasDirection }; break;
+        case 'attacker_advantage': result = { attackerReputationChange: -1, defenderReputationChange: -6, topicBiasChange: 1 * biasDirection }; break;
         case 'draw':               result = { attackerReputationChange: 0, defenderReputationChange: 0, topicBiasChange: 0 }; break;
-        case 'defender_advantage': result = { attackerReputationChange: -4, defenderReputationChange: 0, topicBiasChange: 0 }; break;
-        case 'defender_crush':     result = { attackerReputationChange: -5, defenderReputationChange: 0, topicBiasChange: 0 }; break;
+        case 'defender_advantage': result = { attackerReputationChange: -6, defenderReputationChange: 0, topicBiasChange: 0 }; break;
+        case 'defender_crush':     result = { attackerReputationChange: -7, defenderReputationChange: 0, topicBiasChange: 0 }; break;
       }
     }
   }
