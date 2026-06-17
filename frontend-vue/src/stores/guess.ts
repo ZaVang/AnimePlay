@@ -112,12 +112,6 @@ export const useGuessStore = defineStore('guess', () => {
     return `/data/images/character/${currentCharacter.value.id}.jpg`;
   }
 
-  // 获取原始图片 URL（备用）
-  function getOriginalImageUrl(): string {
-    if (!currentCharacter.value) return '';
-    return '';
-  }
-
   // 根据稀有度随机选择角色
   function selectRandomCharacter(): CharacterCard | null {
     const characters = gameDataStore.allCharacterCards;
@@ -285,7 +279,6 @@ export const useGuessStore = defineStore('guess', () => {
 
     // 方法
     getCharacterImageUrl,
-    getOriginalImageUrl,
     startNewGame,
     guessCharacter,
     serialize,

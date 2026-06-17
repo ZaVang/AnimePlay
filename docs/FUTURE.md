@@ -301,10 +301,10 @@ S-roadmap 是「重构 + 上线前置」主线；下面是在 S10 之上由产�
 
 不依赖任何 Sprint，想做就做：
 
-- [ ] `text-white` 泛白修复（S7 的一项，可提前）
-- [ ] 后端 `debug=True` 关掉（一行）
-- [ ] `index.html` 标题
-- [ ] 清死代码 / `console.log`（也在 S1/S6）
+- [x] `text-white` 泛白修复 —— 随 S7 完成（172 处 → 语义文字色）
+- [x] 后端 `debug=True` 关掉 —— 随 S10 完成（经 `FLASK_DEBUG` 门控，默认 False）
+- [x] `index.html` 标题 —— 随 S7 完成（「动画宅的自我修养 · AnimePlay」+ lang=zh-CN）
+- [x] 清死代码 / `console.log` —— 随 S1/S6 完成（console.log 实调用 103 → 0）；零散死代码持续清理（evo-9 后清 `getOriginalImageUrl`）
 
 ---
 
