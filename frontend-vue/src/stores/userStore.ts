@@ -322,6 +322,19 @@ export const useUserStore = defineStore('user', () => {
     return { score, streak, knowledgeAwarded: kpToAward };
   }
 
+  function settleQuiz(): { score: number; streak: number; knowledgeAwarded: number } {
+    const minigames = useMiniGamesStore();
+    const { score, streak, kpToAward } = minigames.settleQuiz();
+    if (profile.isLoggedIn) {
+      if (kpToAward > 0) {
+        profile.earn('knowledgePoints', kpToAward);
+        profile.addLog(`番剧问答答对 ${streak} 题，兑换 ${kpToAward} 知识点！`, 'success');
+      }
+      saveToServer();
+    }
+    return { score, streak, knowledgeAwarded: kpToAward };
+  }
+
   // --- 各领域委托（动作完成后统一触发存档） ---
 
   const withSave = <A extends unknown[]>(fn: (...args: A) => unknown) => (...args: A) => {
@@ -422,6 +435,7 @@ export const useUserStore = defineStore('user', () => {
     // guess（S6 接入经济）
     submitGuess,
     settleHigherLower,
+    settleQuiz,
 
     // daily（evolution-1）：领取每日任务奖励（领域 store 自己不存档）
     claimDailyTask: (taskId: string) => {

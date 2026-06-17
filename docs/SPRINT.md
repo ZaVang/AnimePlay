@@ -159,7 +159,7 @@ grep -rn "debug=True" backend/server.py api/index.py
 ### 🔒 硬性交付（standing constraint，Planner 每轮检查直到满足）
 - [x] **统一小游戏中心**：新建小游戏 Hub（建议路由 `/minigames`，导航项「🎮 小游戏」**取代**现有「🎭 猜角色」；`/guess` 保留为重定向兼容）。Hub 是游戏选择器 + 渲染选中的小游戏；现有 `GuessCharacter.vue`（501 行）原样迁入不重写。 ← **第 5 轮完成**（MiniGamesView + /minigames + /guess redirect + 导航换「🎮 小游戏」+ 猜角色原样迁入）
 - [x] **新小游戏 #1**（前 2 轮内）：从下方菜单选一个真实现，进 Hub，接经济（猜对/达标走 `profile.earn` 给知识点，仿 `submitGuess`）+ 最高分持久化（存档协议同改三处或并入 guess 域）。 ← **第 5 轮完成 = 高低牌 Higher/Lower**（角色人气/番剧口碑/番剧年代三维度，连胜里程碑发奖+每日封顶，存档 v8 minigames 域）
-- [ ] **新小游戏 #2**（前 2 轮内）：再选一个，进 Hub，同样接经济 + 持久化。**至此 Hub 内 ≥3 个游戏（猜角色 + 2 新）= 硬性交付达成。**
+- [x] **新小游戏 #2**（前 2 轮内）：再选一个，进 Hub，同样接经济 + 持久化。**至此 Hub 内 ≥3 个游戏（猜角色 + 2 新）= 硬性交付达成。** ← **第 6 轮完成 = 番剧问答 Quiz**（4 类真实数据派生题，连答里程碑发奖，与高低牌共享每日封顶，存档 v9 minigames.quiz）。**硬性交付达成：Hub 内 3 游戏（猜角色 + 高低牌 + 问答）。**
 
 ### 🍱 接地可行的小游戏菜单（Reviewer 可提新创意，但这些已验证数据/技术可行，纯前端零后端）
 - **高低牌 Higher/Lower**：给两张卡，猜谁评分/人气/放送更高/更早（用真实 `rating_score`/`popularity_score`/`date`）。连对计 streak，错即结算。极易上瘾、复用真实数据、零图片依赖。

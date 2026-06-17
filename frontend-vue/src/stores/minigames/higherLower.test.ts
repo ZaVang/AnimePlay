@@ -148,15 +148,46 @@ describe('store 流程 + 每日封顶经济', () => {
     expect(store.playCount).toBe(1);    // 不重复 +1
   });
 
-  it('serialize/deserialize 往返保真', () => {
+  it('Quiz 与高低牌共享每日封顶（同一 awardedToday 账户）', () => {
+    const store = useMiniGamesStore();
+    // 高低牌先吃掉 30 额度
+    store.startGame('charPopularity', createSeededRng(1));
+    store.streak = 10; // streakReward=30
+    expect(store.settle().kpToAward).toBe(30);
+    // Quiz 同日超长连答 → 只剩 120-30=90 额度
+    store.quizStreak = 50; // streakReward(50)=150
+    const q = store.settleQuiz();
+    expect(q.score).toBe(150);
+    expect(q.kpToAward).toBe(HL_DAILY_KP_CAP - 30);
+    expect(store.quizBestStreak).toBe(50);
+    expect(store.remainingDailyKp).toBe(0);
+  });
+
+  it('settleQuiz 幂等：重复调用不重复记账/发奖', () => {
+    const store = useMiniGamesStore();
+    store.quizStreak = 5; // streakReward=15
+    const first = store.settleQuiz();
+    expect(first.kpToAward).toBe(15);
+    expect(store.quizPlayCount).toBe(1);
+    const second = store.settleQuiz();
+    expect(second.kpToAward).toBe(0);
+    expect(store.quizPlayCount).toBe(1);
+  });
+
+  it('serialize/deserialize 往返保真（含 quiz）', () => {
     const store = useMiniGamesStore();
     store.streak = 15;
     store.settle();
+    store.quizStreak = 20;
+    store.settleQuiz();
     const snap = store.serialize();
     store.reset();
     expect(store.highScore).toBe(0);
+    expect(store.quizHighScore).toBe(0);
     store.deserialize(snap);
     expect(store.highScore).toBe(snap.higherLower.highScore);
     expect(store.bestStreak).toBe(15);
+    expect(store.quizHighScore).toBe(snap.quiz.highScore);
+    expect(store.quizBestStreak).toBe(20);
   });
 });

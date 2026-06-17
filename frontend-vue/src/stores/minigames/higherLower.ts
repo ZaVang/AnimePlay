@@ -19,6 +19,7 @@ import { useGameDataStore } from '../gameDataStore';
 import { defaultRng, type RNG } from '@/engine';
 import type { AnimeCard, CharacterCard } from '@/types/card';
 import type { MiniGamesSave } from '@/infra/persistence';
+import { generateQuestion, isCorrect as quizIsCorrect, type QuizQuestion } from './quiz';
 
 export type HLCategoryId = 'charPopularity' | 'animeRatingTotal' | 'animeYear';
 export type HLGuess = 'higher' | 'lower';
@@ -136,6 +137,18 @@ export const useMiniGamesStore = defineStore('minigames', () => {
   const settled = ref(false);       // 本局是否已结算（幂等保护，开新局清零）
   const lastAward = ref(0);         // 上一局结算实发知识点（UI 展示）
 
+  // 番剧问答 Quiz（v9）：战绩持久化 + 会话态。每日封顶与高低牌共享（grantAward）。
+  const quizHighScore = ref(0);
+  const quizBestStreak = ref(0);
+  const quizPlayCount = ref(0);
+  const quizQuestion = ref<QuizQuestion | null>(null);
+  const quizChosen = ref<number | null>(null);   // 已选下标（揭示态）
+  const quizStreak = ref(0);
+  const quizPlaying = ref(false);
+  const quizOver = ref(false);
+  const quizSettled = ref(false);
+  const quizLastAward = ref(0);
+
   const leftValue = computed(() => (left.value ? cardValue(left.value, category.value) : null));
   const rightValue = computed(() => (right.value ? cardValue(right.value, category.value) : null));
   const remainingDailyKp = computed(() => {
@@ -199,13 +212,8 @@ export const useMiniGamesStore = defineStore('minigames', () => {
    * 结算本局：更新战绩 + 每日封顶记账，返回本次应发知识点（由 userStore earn）。
    * 幂等保护：每局只结算一次（settled 标志，重复调用返回零奖励、不重复记账）。
    */
-  function settle(): { score: number; streak: number; kpToAward: number } {
-    if (settled.value) return { score: streakReward(streak.value), streak: streak.value, kpToAward: 0 };
-    settled.value = true;
-    const finalStreak = streak.value;
-    const score = streakReward(finalStreak);
-
-    // 跨天归零每日封顶
+  /** 共享发奖：按当日封顶裁剪并记账，返回实发知识点（高低牌/Quiz 共用同一每日上限）。 */
+  function grantAward(score: number): number {
     const today = todayKey();
     if (awardDate.value !== today) {
       awardDate.value = today;
@@ -213,6 +221,15 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     }
     const kp = cappedAward(score, awardedToday.value);
     awardedToday.value += kp;
+    return kp;
+  }
+
+  function settle(): { score: number; streak: number; kpToAward: number } {
+    if (settled.value) return { score: streakReward(streak.value), streak: streak.value, kpToAward: 0 };
+    settled.value = true;
+    const finalStreak = streak.value;
+    const score = streakReward(finalStreak);
+    const kp = grantAward(score);
 
     playCount.value += 1;
     if (finalStreak > bestStreak.value) bestStreak.value = finalStreak;
@@ -220,6 +237,65 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     lastAward.value = kp;
     isPlaying.value = false;
     return { score, streak: finalStreak, kpToAward: kp };
+  }
+
+  // --- 番剧问答 Quiz ---
+
+  function quizPool() {
+    const data = useGameDataStore();
+    return { anime: data.allAnimeCards, characters: data.allCharacterCards };
+  }
+
+  /** 开新一局 Quiz（出第一题）。 */
+  function startQuiz(rng: RNG = defaultRng) {
+    const { anime, characters } = quizPool();
+    quizQuestion.value = generateQuestion(anime, characters, rng);
+    quizChosen.value = null;
+    quizStreak.value = 0;
+    quizPlaying.value = !!quizQuestion.value;
+    quizOver.value = false;
+    quizSettled.value = false;
+    quizLastAward.value = 0;
+  }
+
+  /** 答题：揭示并判定。对 → streak+1（由组件随后调 nextQuestion）；错 → quizOver。 */
+  function answerQuiz(index: number): boolean {
+    if (!quizPlaying.value || quizOver.value || quizChosen.value !== null || !quizQuestion.value) return false;
+    quizChosen.value = index;
+    const correct = quizIsCorrect(quizQuestion.value, index);
+    if (correct) quizStreak.value += 1;
+    else quizOver.value = true;
+    return correct;
+  }
+
+  /** 答对后出下一题。 */
+  function nextQuestion(rng: RNG = defaultRng) {
+    if (quizOver.value) return;
+    const { anime, characters } = quizPool();
+    quizQuestion.value = generateQuestion(anime, characters, rng);
+    quizChosen.value = null;
+    if (!quizQuestion.value) quizOver.value = true;
+  }
+
+  /** 结算 Quiz：更新战绩 + 共享每日封顶发奖。幂等。 */
+  function settleQuiz(): { score: number; streak: number; kpToAward: number } {
+    const finalStreak = quizStreak.value;
+    const score = streakReward(finalStreak);
+    if (quizSettled.value) return { score, streak: finalStreak, kpToAward: 0 };
+    quizSettled.value = true;
+    const kp = grantAward(score);
+    quizPlayCount.value += 1;
+    if (finalStreak > quizBestStreak.value) quizBestStreak.value = finalStreak;
+    if (score > quizHighScore.value) quizHighScore.value = score;
+    quizLastAward.value = kp;
+    quizPlaying.value = false;
+    return { score, streak: finalStreak, kpToAward: kp };
+  }
+
+  function quitQuiz() {
+    quizPlaying.value = false;
+    quizOver.value = false;
+    quizQuestion.value = null;
   }
 
   function quit() {
@@ -238,6 +314,11 @@ export const useMiniGamesStore = defineStore('minigames', () => {
         bestStreak: bestStreak.value,
         playCount: playCount.value,
       },
+      quiz: {
+        highScore: quizHighScore.value,
+        bestStreak: quizBestStreak.value,
+        playCount: quizPlayCount.value,
+      },
       awardDate: awardDate.value,
       awardedToday: awardedToday.value,
     };
@@ -247,6 +328,9 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     highScore.value = data?.higherLower?.highScore ?? 0;
     bestStreak.value = data?.higherLower?.bestStreak ?? 0;
     playCount.value = data?.higherLower?.playCount ?? 0;
+    quizHighScore.value = data?.quiz?.highScore ?? 0;
+    quizBestStreak.value = data?.quiz?.bestStreak ?? 0;
+    quizPlayCount.value = data?.quiz?.playCount ?? 0;
     awardDate.value = data?.awardDate ?? '';
     awardedToday.value = data?.awardedToday ?? 0;
   }
@@ -255,9 +339,13 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     highScore.value = 0;
     bestStreak.value = 0;
     playCount.value = 0;
+    quizHighScore.value = 0;
+    quizBestStreak.value = 0;
+    quizPlayCount.value = 0;
     awardDate.value = '';
     awardedToday.value = 0;
     quit();
+    quitQuiz();
   }
 
   return {
@@ -268,8 +356,12 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     // 对局态
     category, left, right, revealRight, lastCorrect, streak, isPlaying, isGameOver, lastAward,
     leftValue, rightValue,
-    // 方法
+    // 高低牌方法
     startGame, guess, nextRound, settle, quit,
+    // Quiz 战绩 + 会话态 + 方法
+    quizHighScore, quizBestStreak, quizPlayCount,
+    quizQuestion, quizChosen, quizStreak, quizPlaying, quizOver, quizLastAward,
+    startQuiz, answerQuiz, nextQuestion, settleQuiz, quitQuiz,
     serialize, deserialize, reset,
   };
 });

@@ -91,19 +91,23 @@ function migrateDaily(raw: any): DailySave {
 }
 
 /**
- * v8：小游戏域，字段级缺省兜底（旧档无 minigames 键 → createDefaultMiniGames()）。
- * higherLower 三项数值缺失各自回落 0；防刷字段（awardDate/awardedToday）缺失回落默认。
+ * v8/v9：小游戏域，字段级缺省兜底（旧档无 minigames 键 → createDefaultMiniGames()）。
+ * 各游戏战绩三项数值缺失各自回落 0；防刷字段缺失回落默认；v9 旧档无 quiz → 默认空态。
  */
 function migrateMiniGames(raw: any): MiniGamesSave {
   const defaults = createDefaultMiniGames();
   if (!raw || typeof raw !== 'object') return defaults;
-  const hl = raw.higherLower && typeof raw.higherLower === 'object' ? raw.higherLower : {};
+  const rec = (src: any, def: { highScore: number; bestStreak: number; playCount: number }) => {
+    const o = src && typeof src === 'object' ? src : {};
+    return {
+      highScore: typeof o.highScore === 'number' ? o.highScore : def.highScore,
+      bestStreak: typeof o.bestStreak === 'number' ? o.bestStreak : def.bestStreak,
+      playCount: typeof o.playCount === 'number' ? o.playCount : def.playCount,
+    };
+  };
   return {
-    higherLower: {
-      highScore: typeof hl.highScore === 'number' ? hl.highScore : defaults.higherLower.highScore,
-      bestStreak: typeof hl.bestStreak === 'number' ? hl.bestStreak : defaults.higherLower.bestStreak,
-      playCount: typeof hl.playCount === 'number' ? hl.playCount : defaults.higherLower.playCount,
-    },
+    higherLower: rec(raw.higherLower, defaults.higherLower),
+    quiz: rec(raw.quiz, defaults.quiz),
     awardDate: typeof raw.awardDate === 'string' ? raw.awardDate : defaults.awardDate,
     awardedToday: typeof raw.awardedToday === 'number' ? raw.awardedToday : defaults.awardedToday,
   };

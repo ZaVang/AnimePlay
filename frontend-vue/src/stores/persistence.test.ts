@@ -101,6 +101,9 @@ function populateAllDomains() {
   mg.highScore = 45;
   mg.bestStreak = 12;
   mg.playCount = 3;
+  mg.quizHighScore = 60;
+  mg.quizBestStreak = 8;
+  mg.quizPlayCount = 5;
   mg.awardDate = TODAY_KEY;
   mg.awardedToday = 30;
 }
@@ -190,6 +193,9 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
     expect(mg.highScore).toBe(45);
     expect(mg.bestStreak).toBe(12);
     expect(mg.playCount).toBe(3);
+    expect(mg.quizHighScore).toBe(60);
+    expect(mg.quizBestStreak).toBe(8);
+    expect(mg.quizPlayCount).toBe(5);
     expect(mg.remainingDailyKp).toBe(120 - 30);
   });
 

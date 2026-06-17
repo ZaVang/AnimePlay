@@ -7,10 +7,11 @@
 import { ref, computed } from 'vue';
 import GuessCharacter from '@/components/GuessCharacter.vue';
 import HigherLowerGame from '@/components/HigherLowerGame.vue';
+import QuizGame from '@/components/QuizGame.vue';
 import { useGuessStore } from '@/stores/guess';
 import { useMiniGamesStore } from '@/stores/minigames/higherLower';
 
-type GameId = 'guess' | 'higherlower';
+type GameId = 'guess' | 'higherlower' | 'quiz';
 const LS_KEY = 'animeplay-last-minigame';
 
 const guessStore = useGuessStore();
@@ -19,7 +20,7 @@ const minigames = useMiniGamesStore();
 function loadLast(): GameId {
   try {
     const v = localStorage.getItem(LS_KEY);
-    if (v === 'guess' || v === 'higherlower') return v;
+    if (v === 'guess' || v === 'higherlower' || v === 'quiz') return v;
   } catch { /* localStorage 不可用时回落默认 */ }
   return 'guess';
 }
@@ -29,6 +30,7 @@ const activeGame = ref<GameId>(loadLast());
 const games = computed(() => [
   { id: 'guess' as GameId, icon: '🎭', title: '猜角色', desc: '像素图逐级揭晓，越早猜中分越高', best: `最高分 ${guessStore.highScore}` },
   { id: 'higherlower' as GameId, icon: '🔼', title: '高低牌', desc: '比人气/口碑/年代，连对冲榜', best: `最佳连胜 ${minigames.bestStreak}` },
+  { id: 'quiz' as GameId, icon: '❓', title: '番剧问答', desc: '4 选 1 知识问答，连答冲分', best: `最佳连答 ${minigames.quizBestStreak}` },
 ]);
 
 function select(id: GameId) {
@@ -64,6 +66,7 @@ function select(id: GameId) {
     <div class="mg-stage">
       <GuessCharacter v-if="activeGame === 'guess'" />
       <HigherLowerGame v-else-if="activeGame === 'higherlower'" />
+      <QuizGame v-else-if="activeGame === 'quiz'" />
     </div>
   </div>
 </template>

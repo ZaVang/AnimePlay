@@ -101,6 +101,10 @@ describe('v1 → v2 迁移', () => {
   it('v8 新键：minigames 缺失补默认（高低牌战绩 + 每日封顶记账）', () => {
     expect(v2.minigames).toEqual(createDefaultMiniGames());
   });
+
+  it('v9 新键：minigames.quiz 缺失补默认（番剧问答战绩）', () => {
+    expect(v2.minigames.quiz).toEqual({ highScore: 0, bestStreak: 0, playCount: 0 });
+  });
 });
 
 describe('v2 存档过迁移层', () => {
