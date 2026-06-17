@@ -159,7 +159,8 @@ function backToMenu() {
 }
 .hl-card.hl-correct { border-color: rgb(var(--c-success, 34 197 94)); }
 .hl-card.hl-wrong { border-color: rgb(var(--c-danger)); }
-.hl-img { width: 100%; aspect-ratio: 3/4; object-fit: cover; border-radius: 0.5rem; background: rgb(var(--c-surface-2, var(--c-surface))); }
+/* 等比缩放进固定 3:4 矩形，不裁剪（contain），留白居中——角色/番剧图尺寸不一也整齐 */
+.hl-img { width: 100%; aspect-ratio: 3/4; object-fit: contain; border-radius: 0.5rem; background: rgb(var(--c-surface-2, var(--c-surface)) / 0.6); }
 .hl-name { font-weight: 700; color: rgb(var(--c-ink)); margin-top: 0.5rem; font-size: 0.95rem; min-height: 1.4em; }
 .hl-metric { font-size: 0.72rem; color: rgb(var(--c-ink-soft)); margin-top: 0.25rem; }
 .hl-value { font-size: 1.5rem; font-weight: 800; color: rgb(var(--c-accent)); min-height: 1.5em; }

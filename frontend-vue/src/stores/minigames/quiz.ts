@@ -13,8 +13,12 @@ export interface QuizQuestion {
   prompt: string;
   options: string[];      // 4 个选项文本
   correctIndex: number;   // 正确选项下标
-  /** 题目主体图片（角色/番剧），有则 UI 展示。 */
+  /** 题目主体图片（单主体题：角色/番剧），有则 UI 展示。 */
   subjectImage?: string;
+  /** 各选项缩略图（与 options 平行；比较类题如"谁评分/人气最高"用），null = 该项无图。 */
+  optionImages?: (string | null)[];
+  /** 答后解析（如"《X》于 2013 年放送"），揭示时展示。 */
+  explanation?: string;
 }
 
 interface QuizPools {
@@ -62,6 +66,7 @@ function genCharacterAnime(pools: QuizPools, rng: RNG): QuizQuestion | null {
     options,
     correctIndex: options.indexOf(correct),
     subjectImage: `/data/images/character/${subject.id}.jpg`,
+    explanation: `「${subject.name}」出自《${correct}》。`,
   };
 }
 
@@ -86,6 +91,7 @@ function genAnimeYear(pools: QuizPools, rng: RNG): QuizQuestion | null {
     options,
     correctIndex: options.indexOf(String(correct)),
     subjectImage: `/data/images/anime/${subject.id}.jpg`,
+    explanation: `《${subject.name}》于 ${correct} 年放送。`,
   };
 }
 
@@ -101,6 +107,8 @@ function genHighestRated(pools: QuizPools, rng: RNG): QuizQuestion | null {
     prompt: '下列哪部番剧的 Bangumi 评分最高？',
     options,
     correctIndex: options.indexOf(best.name),
+    optionImages: four.map(a => `/data/images/anime/${a.id}.jpg`),
+    explanation: `《${best.name}》评分最高（${best.rating_score}）。`,
   };
 }
 
@@ -116,6 +124,8 @@ function genMostPopularChar(pools: QuizPools, rng: RNG): QuizQuestion | null {
     prompt: '下列哪个角色的人气最高？',
     options,
     correctIndex: options.indexOf(best.name),
+    optionImages: four.map(c => `/data/images/character/${c.id}.jpg`),
+    explanation: `${best.name} 人气最高（人气值 ${best.popularity_score}）。`,
   };
 }
 

@@ -7,6 +7,7 @@
 import { ref, computed, onUnmounted } from 'vue';
 import { useMiniGamesStore } from '@/stores/minigames/higherLower';
 import { useUserStore } from '@/stores/userStore';
+import QuizQuestionView from './QuizQuestionView.vue';
 
 const store = useMiniGamesStore();
 const userStore = useUserStore();
@@ -28,16 +29,7 @@ function choose(i: number) {
     store.nextDailyChallenge();
     if (store.dcDone) userStore.settleDailyChallenge(); // 每日首通发奖（幂等）
     busy.value = false;
-  }, 1000);
-}
-
-function optionClass(i: number): string {
-  if (store.dcChosen === null) return '';
-  const q = store.dcCurrentQuestion;
-  if (!q) return '';
-  if (i === q.correctIndex) return 'dc-opt-correct';
-  if (i === store.dcChosen) return 'dc-opt-wrong';
-  return 'dc-opt-dim';
+  }, 1500); // 留时间看揭示与解析
 }
 </script>
 
@@ -61,20 +53,13 @@ function optionClass(i: number): string {
         <span class="dc-progress">第 {{ progress }} 题</span>
         <span class="text-xs text-ink-soft">答对 {{ store.dcScore }}</span>
       </div>
-      <template v-if="store.dcCurrentQuestion">
-        <img v-if="store.dcCurrentQuestion.subjectImage" :src="store.dcCurrentQuestion.subjectImage" alt="题目图片" class="dc-img" />
-        <p class="dc-prompt">{{ store.dcCurrentQuestion.prompt }}</p>
-        <div class="dc-options">
-          <button
-            v-for="(opt, i) in store.dcCurrentQuestion.options"
-            :key="i"
-            class="dc-opt"
-            :class="optionClass(i)"
-            :disabled="busy || store.dcChosen !== null"
-            @click="choose(i)"
-          >{{ opt }}</button>
-        </div>
-      </template>
+      <QuizQuestionView
+        v-if="store.dcCurrentQuestion"
+        :question="store.dcCurrentQuestion"
+        :chosen="store.dcChosen"
+        :disabled="busy || store.dcChosen !== null"
+        @choose="choose"
+      />
     </div>
 
     <!-- 完成 -->
@@ -95,19 +80,6 @@ function optionClass(i: number): string {
 .dc-streak { color: rgb(var(--c-accent)); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.25rem; }
 .dc-topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
 .dc-progress { font-size: 1.05rem; font-weight: 700; color: rgb(var(--c-ink)); }
-.dc-img { width: 130px; height: 130px; object-fit: cover; border-radius: var(--sk-radius, 0.75rem); margin: 0 auto 0.75rem; border: 2px solid rgb(var(--c-border-line)); }
-.dc-prompt { font-size: 1.1rem; font-weight: 700; color: rgb(var(--c-ink)); margin-bottom: 1rem; }
-.dc-options { display: grid; gap: 0.65rem; }
-.dc-opt {
-  padding: 0.75rem 1rem; border: 1.5px solid rgb(var(--c-border-line)); border-radius: var(--sk-radius, 0.6rem);
-  background: rgb(var(--c-surface)); color: rgb(var(--c-ink)); font-weight: 600; cursor: pointer;
-  transition: border-color .12s, background .12s;
-}
-.dc-opt:hover:not(:disabled) { border-color: rgb(var(--c-accent)); }
-.dc-opt:disabled { cursor: default; }
-.dc-opt-correct { border-color: rgb(var(--c-success, 34 197 94)); background: rgb(var(--c-success, 34 197 94) / 0.12); }
-.dc-opt-wrong { border-color: rgb(var(--c-danger)); background: rgb(var(--c-danger) / 0.12); }
-.dc-opt-dim { opacity: 0.55; }
 .dc-result { margin-top: 1rem; }
 .dc-result-title { font-size: 1.2rem; font-weight: 700; color: rgb(var(--c-accent)); }
 .dc-result-score { color: rgb(var(--c-ink)); margin-top: 0.5rem; font-size: 1.05rem; }

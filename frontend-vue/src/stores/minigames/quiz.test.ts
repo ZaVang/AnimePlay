@@ -49,6 +49,29 @@ describe('generateQuestion', () => {
     expect(q!.type).toBe('animeYear');
     assertValid(q!);
     expect(q!.options.every(o => /^\d{4}$/.test(o))).toBe(true);
+    // 番剧题带主体图 + 年代解析
+    expect(q!.subjectImage).toContain('/data/images/anime/');
+    expect(q!.explanation).toContain('年放送');
+  });
+
+  it('比较类题（最高评分）：每个选项带番剧缩略图 + 解析', () => {
+    // 只支持 highestRated：anime 有 rating_score 无 date，角色池空
+    const ratedOnly = Array.from({ length: 6 }, (_, i) => anime(400 + i, `评分番${i}`, undefined, 7 + i * 0.2));
+    const q = generateQuestion(ratedOnly, [], createSeededRng(11));
+    expect(q).not.toBeNull();
+    expect(q!.type).toBe('highestRated');
+    expect(q!.optionImages).toHaveLength(4);
+    expect(q!.optionImages!.every(u => typeof u === 'string' && (u as string).includes('/data/images/anime/'))).toBe(true);
+    expect(q!.explanation).toBeTruthy();
+  });
+
+  it('比较类题（最高人气）：每个选项带角色缩略图', () => {
+    // 只支持 mostPopularChar：角色有 popularity 无 anime_names，番剧池空
+    const popOnly = Array.from({ length: 6 }, (_, i) => char(500 + i, `人气角${i}`, undefined, 100 + i * 50));
+    const q = generateQuestion([], popOnly, createSeededRng(13));
+    expect(q).not.toBeNull();
+    expect(q!.type).toBe('mostPopularChar');
+    expect(q!.optionImages!.every(u => typeof u === 'string' && (u as string).includes('/data/images/character/'))).toBe(true);
   });
 
   it('数据不足（空池）返回 null', () => {

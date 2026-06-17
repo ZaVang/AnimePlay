@@ -7,6 +7,7 @@ import { ref, computed, onUnmounted } from 'vue';
 import { useMiniGamesStore } from '@/stores/minigames/higherLower';
 import { useUserStore } from '@/stores/userStore';
 import { streakReward } from '@/stores/minigames/higherLower';
+import QuizQuestionView from './QuizQuestionView.vue';
 
 const store = useMiniGamesStore();
 const userStore = useUserStore();
@@ -32,16 +33,7 @@ function choose(i: number) {
       userStore.settleQuiz();
       busy.value = false;
     }
-  }, 1000);
-}
-
-function optionClass(i: number): string {
-  if (store.quizChosen === null) return '';
-  const q = store.quizQuestion;
-  if (!q) return '';
-  if (i === q.correctIndex) return 'quiz-opt-correct';
-  if (i === store.quizChosen) return 'quiz-opt-wrong';
-  return 'quiz-opt-dim';
+  }, 1500); // 留时间看揭示与解析
 }
 
 function playAgain() { start(); }
@@ -69,27 +61,13 @@ function backToMenu() { store.quitQuiz(); }
         <span class="text-xs text-ink-soft">最佳 {{ store.quizBestStreak }}</span>
       </div>
 
-      <template v-if="store.quizQuestion">
-        <img
-          v-if="store.quizQuestion.subjectImage"
-          :src="store.quizQuestion.subjectImage"
-          alt="题目图片"
-          class="quiz-subject-img"
-        />
-        <p class="quiz-prompt">{{ store.quizQuestion.prompt }}</p>
-        <div class="quiz-options">
-          <button
-            v-for="(opt, i) in store.quizQuestion.options"
-            :key="i"
-            class="quiz-opt"
-            :class="optionClass(i)"
-            :disabled="busy || store.quizChosen !== null"
-            @click="choose(i)"
-          >
-            {{ opt }}
-          </button>
-        </div>
-      </template>
+      <QuizQuestionView
+        v-if="store.quizQuestion"
+        :question="store.quizQuestion"
+        :chosen="store.quizChosen"
+        :disabled="busy || store.quizChosen !== null"
+        @choose="choose"
+      />
 
       <div v-if="store.quizOver" class="quiz-over">
         <p class="quiz-over-title">答错了！</p>
@@ -111,19 +89,6 @@ function backToMenu() { store.quitQuiz(); }
 .quiz-topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
 .quiz-streak { font-size: 1.1rem; color: rgb(var(--c-ink)); }
 .quiz-streak b { color: rgb(var(--c-accent)); }
-.quiz-subject-img { width: 140px; height: 140px; object-fit: cover; border-radius: var(--sk-radius, 0.75rem); margin: 0 auto 0.75rem; border: 2px solid rgb(var(--c-border-line)); }
-.quiz-prompt { font-size: 1.1rem; font-weight: 700; color: rgb(var(--c-ink)); margin-bottom: 1rem; }
-.quiz-options { display: grid; gap: 0.65rem; }
-.quiz-opt {
-  padding: 0.75rem 1rem; border: 1.5px solid rgb(var(--c-border-line)); border-radius: var(--sk-radius, 0.6rem);
-  background: rgb(var(--c-surface)); color: rgb(var(--c-ink)); font-weight: 600; cursor: pointer;
-  transition: border-color .12s, background .12s;
-}
-.quiz-opt:hover:not(:disabled) { border-color: rgb(var(--c-accent)); }
-.quiz-opt:disabled { cursor: default; }
-.quiz-opt-correct { border-color: rgb(var(--c-success, 34 197 94)); background: rgb(var(--c-success, 34 197 94) / 0.12); }
-.quiz-opt-wrong { border-color: rgb(var(--c-danger)); background: rgb(var(--c-danger) / 0.12); }
-.quiz-opt-dim { opacity: 0.55; }
 .quiz-over { margin-top: 1.25rem; }
 .quiz-over-title { font-size: 1.1rem; font-weight: 700; color: rgb(var(--c-danger)); }
 .quiz-over-streak { color: rgb(var(--c-ink)); margin-top: 0.25rem; }
