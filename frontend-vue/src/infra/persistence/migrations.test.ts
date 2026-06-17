@@ -4,7 +4,7 @@
  */
 import { describe, it, expect } from 'vitest';
 import { migrate } from './migrations';
-import { SAVE_VERSION, createDefaultDaily, createDefaultPresetSquads, createDefaultTowerProgress } from './schema';
+import { SAVE_VERSION, createDefaultDaily, createDefaultMiniGames, createDefaultPresetSquads, createDefaultTowerProgress } from './schema';
 
 /** 模拟 S5 之前服务器上的真实 v1 存档形态。 */
 function buildV1Payload() {
@@ -96,6 +96,10 @@ describe('v1 → v2 迁移', () => {
     expect(v2.daily.weeklyProgress).toEqual({});
     expect(v2.daily.weeklyClaimed).toEqual([]);
     expect(v2.daily.loginStreak).toBe(0);
+  });
+
+  it('v8 新键：minigames 缺失补默认（高低牌战绩 + 每日封顶记账）', () => {
+    expect(v2.minigames).toEqual(createDefaultMiniGames());
   });
 });
 

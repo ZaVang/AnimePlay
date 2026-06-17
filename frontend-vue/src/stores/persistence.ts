@@ -18,6 +18,7 @@ import { useThemeStore } from './theme';
 import { useDailyStore } from './daily';
 import { useCodexStore } from './codex';
 import { useAchievementsStore } from './achievements';
+import { useMiniGamesStore } from './minigames/higherLower';
 
 // 乐观并发基线（S10-T3）：loadFromServer 后设为服务端的 saveVersion（新用户 0），
 // buildPayload 带上它，pushUserSave 成功后更新为后端返回的权威新值。
@@ -62,6 +63,7 @@ export function buildPayload(): SavePayload {
     daily: useDailyStore().serialize(),
     codexMilestones: useCodexStore().serialize(),
     achievements: useAchievementsStore().serialize(),
+    minigames: useMiniGamesStore().serialize(),
   };
 }
 
@@ -97,6 +99,7 @@ export function applyPayload(payload: SavePayload) {
   useDailyStore().deserialize(payload.daily);
   useCodexStore().deserialize(payload.codexMilestones);
   useAchievementsStore().deserialize(payload.achievements);
+  useMiniGamesStore().deserialize(payload.minigames);
   // 皮肤随账号走：账号存档覆盖设备缓存（登出/重置不回滚皮肤，见 resetAllDomains）
   useThemeStore().applyFromSave(payload.appearance.skinId);
 }
@@ -115,6 +118,7 @@ export function resetAllDomains() {
   useDailyStore().reset();
   useCodexStore().reset();
   useAchievementsStore().reset();
+  useMiniGamesStore().reset();
   // 注意：皮肤是设备/账号双层偏好，登出或新建账号不强制回滚到默认皮肤。
 }
 

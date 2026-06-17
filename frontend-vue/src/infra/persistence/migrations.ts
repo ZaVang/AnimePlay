@@ -9,9 +9,11 @@ import {
   SAVE_VERSION,
   createDefaultAppearance,
   createDefaultDaily,
+  createDefaultMiniGames,
   createDefaultPresetSquads,
   createDefaultTowerProgress,
   type DailySave,
+  type MiniGamesSave,
   type SavePayload,
   type SerializedPlayerState,
 } from './schema';
@@ -88,6 +90,25 @@ function migrateDaily(raw: any): DailySave {
   };
 }
 
+/**
+ * v8：小游戏域，字段级缺省兜底（旧档无 minigames 键 → createDefaultMiniGames()）。
+ * higherLower 三项数值缺失各自回落 0；防刷字段（awardDate/awardedToday）缺失回落默认。
+ */
+function migrateMiniGames(raw: any): MiniGamesSave {
+  const defaults = createDefaultMiniGames();
+  if (!raw || typeof raw !== 'object') return defaults;
+  const hl = raw.higherLower && typeof raw.higherLower === 'object' ? raw.higherLower : {};
+  return {
+    higherLower: {
+      highScore: typeof hl.highScore === 'number' ? hl.highScore : defaults.higherLower.highScore,
+      bestStreak: typeof hl.bestStreak === 'number' ? hl.bestStreak : defaults.higherLower.bestStreak,
+      playCount: typeof hl.playCount === 'number' ? hl.playCount : defaults.higherLower.playCount,
+    },
+    awardDate: typeof raw.awardDate === 'string' ? raw.awardDate : defaults.awardDate,
+    awardedToday: typeof raw.awardedToday === 'number' ? raw.awardedToday : defaults.awardedToday,
+  };
+}
+
 /** 任意原始存档 → 当前版本 payload。历史版本之外的形态按"尽力恢复 + 默认兜底"处理。 */
 export function migrate(raw: unknown): SavePayload {
   const payload = (raw ?? {}) as any;
@@ -123,5 +144,7 @@ export function migrate(raw: unknown): SavePayload {
     daily: migrateDaily(payload.daily),
     codexMilestones: Array.isArray(payload.codexMilestones) ? payload.codexMilestones : [],
     achievements: Array.isArray(payload.achievements) ? payload.achievements : [],
+    // v7 → v8：小游戏域（旧档无此键 → 默认空态）
+    minigames: migrateMiniGames(payload.minigames),
   };
 }

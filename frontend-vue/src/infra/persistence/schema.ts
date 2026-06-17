@@ -10,6 +10,7 @@
  *   saveVersion 由后端权威维护（POST 返回新值），前端只是携带基线，旧档迁移默认 0。
  * v6（evolution-1）：补入 daily（每日任务进度+日期+登录领取标记）/ codexMilestones（已领里程碑 id）/ achievements（已解锁 id）。
  * v7（B1）：daily 扩字段——weekDate/weeklyProgress/weeklyClaimed（周任务，weekKey 跨周归零）+ loginStreak（连续登录天数，断签归 1，递增登录奖励）。旧档迁移补缺省。
+ * v8（evolution-5）：新增 minigames 域——高低牌 higherLower（highScore/bestStreak/playCount）+ 每日发奖封顶防刷（awardDate/awardedToday，跨天读时归零）。不动 v7 guess 域。
  */
 import type { PityState } from '@/engine/gacha/draw';
 import type { CharacterNurtureData } from '@/types/nurture';
@@ -22,7 +23,7 @@ import type {
   TowerProgress,
 } from '@/types/player';
 
-export const SAVE_VERSION = 7 as const;
+export const SAVE_VERSION = 8 as const;
 
 /** 商店单品的当日购买记录（跨天读取时自动视为 0）。 */
 export interface ShopPurchaseRecord {
@@ -52,6 +53,28 @@ export interface DailySave {
 
 export interface GuessGameSave {
   highScore: number;
+}
+
+/** 单个高低牌游戏的持久化战绩。 */
+export interface HigherLowerSave {
+  /** 历史最高单局得分（streak 折算的里程碑得分）。 */
+  highScore: number;
+  /** 历史最佳连胜（最长 streak）。 */
+  bestStreak: number;
+  /** 累计游玩局数。 */
+  playCount: number;
+}
+
+/**
+ * 小游戏域（v8）。高低牌战绩 + 每日发奖封顶（防一局连对刷爆知识点）。
+ * awardDate（todayKey：YYYY-M-D）跨天读时归零 awardedToday，仿 daily 的 ensureToday 模式。
+ */
+export interface MiniGamesSave {
+  higherLower: HigherLowerSave;
+  /** 当日已发奖知识点所属日期（todayKey）。 */
+  awardDate: string;
+  /** 当日已发放的知识点累计（达每日封顶后不再发奖，只更新 bestStreak）。 */
+  awardedToday: number;
 }
 
 /** 外观装扮（v4）。皮肤 id 对应 config/skins.ts 注册表；未知 id 由应用层回落默认。 */
@@ -105,6 +128,8 @@ export interface SavePayload {
   codexMilestones: string[];
   /** v6 新增：已解锁成就 id。 */
   achievements: string[];
+  /** v8 新增：小游戏域（高低牌战绩 + 每日发奖封顶）。 */
+  minigames: MiniGamesSave;
 }
 
 /** 兼容别名（S5 时代命名）。 */
@@ -134,6 +159,15 @@ export function createDefaultDaily(): DailySave {
     weeklyProgress: {},
     weeklyClaimed: [],
     loginStreak: 0,
+  };
+}
+
+/** v8：小游戏域默认空态（新档/旧档迁移补默认）。 */
+export function createDefaultMiniGames(): MiniGamesSave {
+  return {
+    higherLower: { highScore: 0, bestStreak: 0, playCount: 0 },
+    awardDate: '',
+    awardedToday: 0,
   };
 }
 

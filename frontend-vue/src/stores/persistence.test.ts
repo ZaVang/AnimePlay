@@ -27,6 +27,7 @@ import { usePveStore } from './pve';
 import { useGachaStore } from './gachaStore';
 import { useShopStore } from './shop';
 import { useGuessStore } from './guess';
+import { useMiniGamesStore } from './minigames/higherLower';
 import { useThemeStore } from './theme';
 import { useDailyStore } from './daily';
 import { useCodexStore } from './codex';
@@ -95,6 +96,13 @@ function populateAllDomains() {
   daily.loginStreak = 4;
   useCodexStore().claimedMilestones = ['char_owned_50'];
   useAchievementsStore().unlocked = ['ach_first_ur'];
+  // evolution-5：小游戏域（高低牌战绩 + 每日封顶记账）
+  const mg = useMiniGamesStore();
+  mg.highScore = 45;
+  mg.bestStreak = 12;
+  mg.playCount = 3;
+  mg.awardDate = TODAY_KEY;
+  mg.awardedToday = 30;
 }
 
 /** 与 daily store 同款本地日期键（YYYY-M-D）。 */
@@ -176,6 +184,13 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
     expect(daily.loginStreak).toBe(4);
     expect(useCodexStore().claimedMilestones).toEqual(['char_owned_50']);
     expect(useAchievementsStore().unlocked).toEqual(['ach_first_ur']);
+
+    // evolution-5 新增域：小游戏（高低牌战绩 + 封顶记账）经一轮往返保真
+    const mg = useMiniGamesStore();
+    expect(mg.highScore).toBe(45);
+    expect(mg.bestStreak).toBe(12);
+    expect(mg.playCount).toBe(3);
+    expect(mg.remainingDailyKp).toBe(120 - 30);
   });
 
   it('payload 带版本号与全部 schema 键', () => {
@@ -188,7 +203,7 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
       'animeHistory', 'characterHistory', 'favoriteAnime', 'favoriteCharacters',
       'characterNurtureData', 'presetSquads', 'towerProgress',
       'shopPurchases', 'guess', 'appearance',
-      'daily', 'codexMilestones', 'achievements',
+      'daily', 'codexMilestones', 'achievements', 'minigames',
     ]) {
       expect(payload).toHaveProperty(key);
     }

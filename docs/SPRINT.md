@@ -150,6 +150,37 @@ grep -rn "debug=True" backend/server.py api/index.py
 
 ---
 
+## 🎮 Evolution 第 5–9 轮（小游戏扩展 + 持续进化，`--mode evolution --max-iter 5 --tier1 on`，2026-06-17）
+
+> 用户指令：用 `/product-loop` 跑 **5 轮 evolution**，探索新功能。**硬性交付（贯穿全程，前 2 轮务必完成）**：
+> 把小游戏做成一个**统一的「🎮 小游戏」Tab/中心**，**把现有「🎭 猜角色」迁进去**，并**至少再扩展 2 个类似猜角色的小游戏**。
+> tier1 on：Evolution Reviewer 每轮探索新功能（含竞品研究），Planner 选定，Generator 实装，Evaluator 独立验收，**跑满 5 轮**。
+
+### 🔒 硬性交付（standing constraint，Planner 每轮检查直到满足）
+- [x] **统一小游戏中心**：新建小游戏 Hub（建议路由 `/minigames`，导航项「🎮 小游戏」**取代**现有「🎭 猜角色」；`/guess` 保留为重定向兼容）。Hub 是游戏选择器 + 渲染选中的小游戏；现有 `GuessCharacter.vue`（501 行）原样迁入不重写。 ← **第 5 轮完成**（MiniGamesView + /minigames + /guess redirect + 导航换「🎮 小游戏」+ 猜角色原样迁入）
+- [x] **新小游戏 #1**（前 2 轮内）：从下方菜单选一个真实现，进 Hub，接经济（猜对/达标走 `profile.earn` 给知识点，仿 `submitGuess`）+ 最高分持久化（存档协议同改三处或并入 guess 域）。 ← **第 5 轮完成 = 高低牌 Higher/Lower**（角色人气/番剧口碑/番剧年代三维度，连胜里程碑发奖+每日封顶，存档 v8 minigames 域）
+- [ ] **新小游戏 #2**（前 2 轮内）：再选一个，进 Hub，同样接经济 + 持久化。**至此 Hub 内 ≥3 个游戏（猜角色 + 2 新）= 硬性交付达成。**
+
+### 🍱 接地可行的小游戏菜单（Reviewer 可提新创意，但这些已验证数据/技术可行，纯前端零后端）
+- **高低牌 Higher/Lower**：给两张卡，猜谁评分/人气/放送更高/更早（用真实 `rating_score`/`popularity_score`/`date`）。连对计 streak，错即结算。极易上瘾、复用真实数据、零图片依赖。
+- **番剧问答 Quiz**：4 选 1 选择题（「X 角色出自哪部番剧」「这部番剧哪年放送」「下列谁评分最高」），题库从真实数据派生。
+- **猜番剧（剪影/像素）**：复刻猜角色的像素化机制，但猜动画封面（`/data/images/anime/{id}.jpg`）。与猜角色对称，组件可大量复用。
+- **记忆翻牌 Memory Match**：番剧封面配对翻牌，计时/步数计分。视觉型，复用卡图。
+- **年代排序**：拖 4 张番剧按放送年排序（用 `date`）。复用 evo-4 年表的数据思路。
+
+### 🧭 轮次意图（Planner 可据 Reviewer 报告调整，但硬性交付优先）
+- **第 5 轮**：小游戏 Hub 地基 + 猜角色迁入 + 新游戏 #1（建议高低牌）。
+- **第 6 轮**：新游戏 #2（Reviewer 选定）。**硬性交付达成。**
+- **第 7–9 轮**：Evolution Reviewer 自由探索更广的新功能并实装——可以是更多小游戏、小游戏与每日任务/成就的联动（如「每日小游戏挑战」）、小游戏积分榜/统计、或别的产品进化方向。每轮取最高 ROI。
+
+### 通用约束（全 5 轮）
+- 架构铁律不破：engine 纯净、依赖只向下、颜色语义类（禁 text-white 压浅底/禁动态色类）。游戏逻辑放 store/纯函数，可注入 RNG 更佳（便于测试）；现有 guess 在 store 内 `Math.random` 是既有先例，新游戏纯逻辑尽量抽纯函数 + 注入 RNG 并配特征测试。
+- 经济安全：奖励只走 `profile.earn`；别造可刷分无上限的经济漏洞（设每日上限或递减，仿猜角色 score÷2）。
+- 存档：新游戏最高分/统计若要持久化，按既有「三处同改 + 迁移 + 测试」升 schema（现 v7）。设备级 UI 偏好用 localStorage。
+- 验收命令（每轮）：`cd frontend-vue && npm run type-check`（0 错）/ `npm run test`（全绿 + 新增）/ `npm run build`（通过）。截图工具在本环境失效，UI 验证靠 type-check/build + 运行期 DOM eval（live 起服务后 `preview_eval` 读 innerText）。
+
+---
+
 ## 📦 Backlog（决策门控，**本轮未激活**，勿当作 `[ ]` 执行任务）
 
 > 以下是 FUTURE.md S11/S12 的拆分，**仅作路线参考**。它们是「演进/终点」方向，FUTURE.md 明确标注

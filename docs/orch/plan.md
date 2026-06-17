@@ -1,41 +1,48 @@
-# Iteration 4 Plan (evolution backlog, tier1 off)
+# Iteration 5 Plan (evolution R1/5 — 小游戏 Hub + 高低牌)
 
-> 需求来源：docs/SPRINT.md「Evolution 第 4 轮」3 个 `[ ]`（reviewer 前三轮提出未做、用户选定）。tier1 off 无审计报告无 negotiation。已读 scout.md A/B/C + pitfalls。
+> 需求源：`docs/orch/evolution-audit-report.md` 🔴 建议 + `docs/orch/scout.md`（Scout 实测数据纠偏）+ SPRINT 硬性交付。tier1 on。
+> **本轮范围 = Hub + 猜角色迁入 + 新游戏 #1（高低牌）**。游戏 #2 = 下一轮（第 6 轮）。
 
 ## 本轮任务（按依赖顺序）
 
-1. **B1：周任务 + 连续登录递增**（唯一动存档项）
-   - 目标：留存纵深。扩 daily.ts 加每周任务（weekKey 跨周重置，2-3 条命中现有玩法成功点）+ 连续登录天数 loginStreak（昨日判定递增、断签归 1）+ 递增登录奖励。静态定义进 config。升存档 v6→v7。
+1. **MG-T1：统一小游戏 Hub + 猜角色迁入**
+   - 目标：新建 `views/MiniGamesView.vue`（路由 `/minigames`），导航「🎮 小游戏」**取代**「🎭 猜角色」，`/guess` 改 redirect 到 `/minigames`。Hub 用 CollectionsView 同款 `activeTab` 样板做游戏选择器；选中「猜角色」→ 原样渲染 `<GuessCharacter />`（**不改其内部**）。上次选的游戏存 localStorage（设备级，不进存档）。
    - 依赖：无
-   - 验收：周任务跨周重置/做满领奖、连签递增与断签归 1、登录奖励随连签变化、进存档 v7 跨重开保真、特征测试（周任务跨周 + 连签递增/断签）。
-   - 来源：Evolution Reviewer（Round 3 🟡-2）
+   - 验收：导航点「🎮 小游戏」进 Hub；Hub 能在「猜角色」与「高低牌」间切换；猜角色玩法照旧（开始/猜测/计分/兑换知识点）；`/guess` 自动跳 `/minigames`；type-check/build 通过。
+   - 来源：Evolution Reviewer 🔴-1
 
-2. **B2：番剧年表时间轴**（纯前端差异化）
-   - 目标：CollectionsView 加「年表」tab，已拥有动画按放送年（date）分组成可视化时间轴。纯派生、零后端、零存档。
-   - 依赖：无（复用 evo-2 已展示的 date 数据）
-   - 验收：按年正确分组展示拥有番剧、空态友好、纯派生不新存字段、颜色语义类、type-check/build 通过。
-   - 来源：Evolution Reviewer（💡 差异化）
+2. **MG-T2：新游戏 #1 = 高低牌 Higher/Lower**
+   - 目标：给两张同类卡，猜右边某维度比左边「更高/更早」。**维度按卡类型分桶（Scout 实测铁律）**：角色模式用 `popularity_score`（13–4050）；番剧模式用 `rating_rank`（1–1983，零平局，"排名更靠前"）或 `date`（"谁更早放送"）。连对累 streak，猜错即结算。纯逻辑（选卡/比维度/判定/计分）抽 `stores/minigames/higherLower.ts` 纯函数 + **注入 RNG**（仿 `engine/gacha/draw.ts` 的 rng 用法）+ 特征测试（种子断言）。store 编排层喂 `Math.random`（猜角色先例）。
+   - 依赖：MG-T1（要进 Hub）、MG-T3（最高分/连胜要持久化）
+   - 验收：能玩满一局（出两卡→选高/低→对则 streak+1 继续，错则结算）；维度分桶正确（角色 popularity / 番剧 rating_rank|date，不混用）；平局判用户友好（判对或跳同值卡）；bestStreak/最高分记录并持久化；经济达标发奖且**有每日封顶防刷**；特征测试覆盖判定+计分+平局分支。
+   - 来源：Evolution Reviewer 🔴-2（经 Scout 数据纠偏：弃 rating_score，番剧用 rating_rank/date，角色用 popularity_score）
 
-3. **B3：跨系统红点提示**（纯前端体验）
-   - 目标：App.vue 侧边导航对主页（每日任务/登录奖励可领）、卡牌收藏（图鉴里程碑达成未领 / 成就新解锁未读）加红点。daily/codex 可领态纯派生；成就「已读」用 localStorage（不升 schema）。
-   - 依赖：B1（主页红点含每日/登录信号，B1 落地后信号更全；但 B3 可独立做）
-   - 验收：有奖可领/新解锁时亮红点、领取/查看后消失、成就已读用 localStorage 不升 schema、颜色语义类、type-check/build 通过。
-   - 来源：Evolution Reviewer（Round 3 🟢-4）
+3. **MG-T3：存档 v7→v8 新增 minigames 域 + 经济防刷**
+   - 目标：升 `SAVE_VERSION` 7→8，新增 `minigames` 域（存高低牌 `highScore`/`bestStreak`/`playCount` + 当日已发奖计数与日期用于防刷）。**不动 v7 的 `guess` 域**（其往返断言锁在 migrations.test）。经济：高低牌按 streak 里程碑发知识点（走 `profile.earn`），当日产出封顶（仿 `daily.ts` 的 todayKey 跨天归零）。结算埋点仿 `userStore.submitGuess`（领域逻辑→profile.earn→saveToServer）。
+   - 依赖：无（但 T2 依赖它）
+   - 验收：v7 旧档迁移加载补 minigames 缺省、v8 往返保真、不破坏 v1~v7 既有断言；每日发奖封顶生效（超额只记 bestStreak 不发知识点）；迁移+往返+防刷特征测试全绿。
+   - 来源：Evolution Reviewer 🔴-4 + Scout B5
 
-## 相关陷阱（从 pitfalls.md / scout.md C 段）
-- B1 升 schema v7 照 evo-1 的 v5→v6 三处同改 + 迁移 + 测试模式（schema/migrations/装配器），旧档 v1~v6 缺省补齐，**只追加不破坏既有断言**。
-- markProgress 已按 type 遍历 DAILY_TASKS，让它也遍历 WEEKLY_TASKS → 6 个埋点一行不用改（最省）。
-- B3 成就已读用 localStorage（设备级，仿 onboarding try/catch），**别给成就加存档字段**；vitest node 环境无 localStorage，测试需 memory stub（仿 onboarding.test）。
-- B2 纯派生不新存字段；date 缺失/非标准做守卫（归"未知年"或跳过）。
-- 颜色语义类，禁 text-white 压浅底；CollectionsView 已有历史 bg-danger text-white 别学。
-- 发奖走 profile.earn 不用 addExp；领域 store 不调 saveToServer（门面负责）。
+## 来自 Reviewer 的改进项（本轮采纳的）
+- 小游戏 Hub + 猜角色迁入（🔴-1）→ MG-T1
+- 高低牌作为新游戏 #1（🔴-2）→ MG-T2（**按 Scout 实测改维度选型**）
+- schema v8 minigames 域（🔴-4）→ MG-T3
+- 每日封顶防刷（Technical Health）→ MG-T3
 
-## 验收命令
+## 相关陷阱（从 pitfalls.md / scout.md）
+- **维度必须按卡类型分桶**：角色无 rating_rank/date，番剧无 popularity_score；裸 rating_score 仅 20 distinct 不可用。选卡按维度过滤 undefined（防御性）。
+- 版本是 **v7→v8**（不是文档某些地方写的 v6）；不动 guess 域。
+- engine 纯净：高低牌纯逻辑放 `stores/minigames/`，注入 RNG，不进 engine、不在纯函数里 Math.random。
+- 经济只走 `profile.earn`；streak 可以很长 → **必须里程碑发奖 + 每日封顶**，否则一局连对刷爆知识点。
+- 颜色语义类，禁 text-white 压浅底/禁动态色类；上次选的游戏用 localStorage 不进存档。
+- GuessCharacter.vue 原样迁入，别改内部；GuessView.vue 删前确认仅 router 引用。
+
+## 验收命令（从 SPRINT 复制）
 ```bash
 cd frontend-vue && npm run type-check     # 0 错
-cd frontend-vue && npm run test           # 全绿，不低于 354 + 新增
+cd frontend-vue && npm run test           # 全绿 + 新增（不低于 372）
 cd frontend-vue && npm run build          # 生产构建通过
 ```
 
 ## 通过标准
-3 项功能可见可用；B1 进存档 v7 跨重开保真；红点/年表正确；三条验收命令全绿；架构/颜色铁律不破。三项全 [x] 且验收全过 → Evaluator 输出 DECISION: COMPLETE。
+Hub 可用且猜角色迁入正常、高低牌可玩且维度分桶正确、经济防刷生效、存档 v8 跨重开保真、三条验收命令全绿、架构/颜色铁律不破。SPRINT「统一小游戏中心」+「新小游戏 #1」两个硬性 checkbox 勾掉（游戏 #2 留下轮）。

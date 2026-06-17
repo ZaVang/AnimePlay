@@ -21,6 +21,7 @@ import { useNurtureStore } from './nurture';
 import { usePveStore } from './pve';
 import { useShopStore } from './shop';
 import { useGuessStore } from './guess';
+import { useMiniGamesStore } from './minigames/higherLower';
 import { useThemeStore } from './theme';
 import { useDailyStore } from './daily';
 import { useCodexStore } from './codex';
@@ -306,6 +307,21 @@ export const useUserStore = defineStore('user', () => {
     return { ...result, knowledgeAwarded };
   }
 
+  // --- 高低牌：游戏逻辑在 minigames store，这里编排经济（每日封顶在 store）与存档 ---
+
+  function settleHigherLower(): { score: number; streak: number; knowledgeAwarded: number } {
+    const minigames = useMiniGamesStore();
+    const { score, streak, kpToAward } = minigames.settle();
+    if (profile.isLoggedIn) {
+      if (kpToAward > 0) {
+        profile.earn('knowledgePoints', kpToAward);
+        profile.addLog(`高低牌 ${streak} 连胜，兑换 ${kpToAward} 知识点！`, 'success');
+      }
+      saveToServer(); // 最高分/连胜/局数/封顶记账更新
+    }
+    return { score, streak, knowledgeAwarded: kpToAward };
+  }
+
   // --- 各领域委托（动作完成后统一触发存档） ---
 
   const withSave = <A extends unknown[]>(fn: (...args: A) => unknown) => (...args: A) => {
@@ -405,6 +421,7 @@ export const useUserStore = defineStore('user', () => {
 
     // guess（S6 接入经济）
     submitGuess,
+    settleHigherLower,
 
     // daily（evolution-1）：领取每日任务奖励（领域 store 自己不存档）
     claimDailyTask: (taskId: string) => {

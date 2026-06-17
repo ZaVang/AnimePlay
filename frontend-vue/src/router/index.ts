@@ -40,9 +40,14 @@ const router = createRouter({
       component: () => import('../views/SettingsView.vue')
     },
     {
+      path: '/minigames',
+      name: 'minigames',
+      component: () => import('../views/MiniGamesView.vue')
+    },
+    {
+      // 小游戏统一进 /minigames Hub；旧 /guess 链接重定向兼容
       path: '/guess',
-      name: 'guess',
-      component: () => import('../views/GuessView.vue')
+      redirect: '/minigames'
     }
   ]
 })
