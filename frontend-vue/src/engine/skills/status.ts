@@ -106,6 +106,11 @@ export class StatusEffectTracker {
     return true;
   }
 
+  /** 非消费查询：预判强度时用（不能动一次性标记，否则会提前消费掉义体强化）。 */
+  hasAuraSuppression(playerId: PlayerId): boolean {
+    return this.auraSuppressed.has(playerId);
+  }
+
   // ===== S8c：技能无效化（沉默威严） =====
 
   /** 标记某玩家的下一个技能将被无效化。 */

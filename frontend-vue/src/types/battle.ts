@@ -46,6 +46,12 @@ export interface ClashInfo {
   // Optional fields for after the clash is resolved
   attackerStrength?: number;
   defenderStrength?: number;
+  /** 结算后由 battleFlow.setClash 并入（声望/议题增减）；供 UI 结算浮字与 afterResolve 被动读取。 */
+  rewards?: {
+    attackerReputationChange: number;
+    defenderReputationChange: number;
+    topicBiasChange: number;
+  };
 }
 
 export type BattleLogType = 'event' | 'clash' | 'damage' | 'info';

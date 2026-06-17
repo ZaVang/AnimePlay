@@ -4,6 +4,8 @@ import AnimeCard from '@/components/AnimeCard.vue'; // Use the standard AnimeCar
 import { useGameStore } from '@/stores/battle';
 import { persistentEffects } from '@/skills/systems';
 import { playerCardCost } from '@/skills/effects/costModifiers';
+import { previewSideStrength } from '@/skills/strengthPreview';
+import { getStrengthCategory, STRENGTH_CATEGORY_LABEL } from '@/engine/battle/rewards';
 import { computed } from 'vue';
 
 const props = defineProps<{
@@ -24,6 +26,22 @@ const isDefensePhase = computed(() => gameStore.phase === 'defense');
 const effCost = computed(() => playerCardCost('playerA', props.card));
 // S8a：被强制友好安利时禁用辛辣点评（battleFlow 同口径钳制兜底）
 const forcedFriendly = computed(() => persistentEffects.getForcedAction('playerA') === 'friendly_only');
+
+// 防御阶段出牌前预判：用这张牌防御时，你的强度 vs 已亮明的攻方强度 → 净差与档位
+// （结算按「攻方强度 − 守方强度」分档；预览不含对撞期专属修正，仅作预判）
+const defensePrediction = computed(() => {
+  const c = gameStore.clashInfo;
+  if (!isDefensePhase.value || !c?.attackingCard) return null;
+  const opp = previewSideStrength(c.attackerId, c.attackingCard).total;
+  const you = previewSideStrength(c.defenderId ?? 'playerA', props.card).total;
+  const atkDiff = opp - you;
+  const cat = getStrengthCategory(atkDiff);
+  const tone = cat === 'draw' ? 'neutral' : cat.startsWith('attacker') ? 'bad' : 'good';
+  return { you, opp, atkDiff, label: STRENGTH_CATEGORY_LABEL[cat], tone };
+});
+function signed(n: number): string {
+  return n > 0 ? `+${n}` : `${n}`;
+}
 </script>
 
 <template>
@@ -34,6 +52,10 @@ const forcedFriendly = computed(() => persistentEffects.getForcedAction('playerA
       </h3>
       <div class="card-display mb-6">
         <AnimeCard :anime="card" :show-cost="true" :show-strength="true" />
+      </div>
+      <div v-if="defensePrediction" class="defense-prediction" :class="`tone-${defensePrediction.tone}`">
+        <div class="dp-line">你 {{ defensePrediction.you }} · 对手 {{ defensePrediction.opp }}</div>
+        <div class="dp-tier">预估 净差 {{ signed(defensePrediction.atkDiff) }} · {{ defensePrediction.label }}</div>
       </div>
       <div class="action-buttons">
         <!-- Defense Phase Buttons -->
@@ -99,6 +121,24 @@ const forcedFriendly = computed(() => persistentEffects.getForcedAction('playerA
   display: flex;
   justify-content: space-around;
   gap: 1rem;
+}
+.defense-prediction {
+  @apply mb-4 text-center text-sm rounded-lg py-2 px-3 border;
+}
+.defense-prediction .dp-line {
+  @apply text-ink-2;
+}
+.defense-prediction .dp-tier {
+  @apply font-bold mt-0.5;
+}
+.defense-prediction.tone-good {
+  @apply bg-accent-soft border-accent/40 text-accent;
+}
+.defense-prediction.tone-bad {
+  @apply bg-danger/10 border-danger/40 text-danger;
+}
+.defense-prediction.tone-neutral {
+  @apply bg-surface-2 border-line text-ink-2;
 }
 .btn-primary, .btn-secondary {
   @apply font-bold py-2 px-4 rounded-lg w-full transition-colors;
