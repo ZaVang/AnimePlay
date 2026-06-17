@@ -189,21 +189,48 @@ grep -rn "debug=True" backend/server.py api/index.py
 
 ### S11 — React 视图迁移（演进，前置依赖：S2–S5 的 engine 已干净 ✅）
 
-子任务草拆（待 `/think` 细化）：
-1. React 应用骨架，直接复用 `engine / types / config / data / infra`（零改动复用率是验收点）。
-2. 状态层重写：Pinia → Zustand / Jotai（仍是「薄编排」，不把规则写回视图层）。
-3. `views` / `components` 按 8 个模块逐页用 React 重写。
-4. 对照功能逐页验收（与 Vue 版行为对齐）。
-- **决策门**：状态库选型（Zustand vs Jotai）、路由方案、构建工具、是否双栈并存过渡。
+> 拆分粒度已细化（满足 `/goal` 的「每一任务拆分到 SPRINT」）；**仍为决策门控、未激活**——激活前需 `/think` 敲定下列「决策门」，再把选定方案的任务搬到上面活动区。
+
+- [ ] **S11-T1｜React 骨架 + 共享层零改动复用验证**
+  - 目标：Vite + React + TS 新应用（建议 `frontend-react/` 与 Vue 版并存），`@/` 别名指到现有 `engine / types / config / data / infra`，证明这四层**零改动**能在 React 构建下编译运行。
+  - 验收：React 应用启动；`import` engine 纯函数（如 `battleCalculator`/`gacha/draw`）+ types + config 无需改动即编译；一个 smoke 路由渲染主数据。
+- [ ] **S11-T2｜状态层移植（Pinia → Zustand/Jotai，薄编排）**
+  - 目标：领域 store 改用选定状态库重写为「薄编排」，规则仍只在 engine，不回写视图层。先移植 `profile + collection`（含 `spend/earn` 唯一货币入口）打样。
+  - 验收：打样领域行为与 Vue 版一致（货币/收藏增删的特征测试通过）；store 不含规则逻辑。
+- [ ] **S11-T3｜持久化层复用 + React 适配**
+  - 目标：`infra/persistence`（schema/migrations/api）原样复用；写 React 侧装配器（对应现 `stores/persistence.ts`，含保存串行合并 + 乐观并发 saveVersion）。
+  - 验收：存档 v9 往返保真（buildPayload⇄applyPayload 对照测试）；与现后端鉴权（S10 token）打通。
+- [ ] **S11-T4｜8 模块逐页 React 重写**
+  - 目标：Home/Gacha/Collections/Battle/SquadBattle/Nurture/MiniGames/Settings 八页按域逐个 React 化（皮肤令牌系统 `assets/skins.css` 复用，data-skin 切换）。
+  - 验收：**逐页**与 Vue 版功能对齐（每页一条走查清单）；颜色铁律（语义类/禁 text-white 压浅底）延续。
+- [ ] **S11-T5｜App 壳 + 路由 + 启动门控 + onboarding**
+  - 目标：React Router（或 TanStack Router）+ App 数据门控（仿 S9 非阻塞挂载 + 30s 超时 + 失败重试）+ onboarding/红点等设备级 localStorage 状态迁移。
+  - 验收：启动 API 恰 2 次（无双拉）；路由懒加载；首登 onboarding 与红点行为一致。
+- [ ] **S11-T6｜对照验收 + engine 复用率统计**
+  - 目标：React 版与 Vue 版功能逐页验收对齐；统计 engine/types/config/data/infra 的复用率。
+  - 验收：**功能对齐；engine 复用率 > 50%**（FUTURE.md 的 Exit）；生产构建通过；测试不低于现 395 的等价覆盖。
+- **决策门（`/think` 先定）**：① 状态库 Zustand vs Jotai；② 路由 React Router vs TanStack Router；③ 双栈并存渐进迁移 vs 大爆炸切换；④ 组件方案（纯 Tailwind vs headless 库）；⑤ 拖拽密集 UI（卡组/战斗）的 React 实现（dnd-kit 等）。
 
 ### S12 — 权威后端 & 多人/PvP/排行榜（终点）
 
-子任务草拆（待 `/think` 细化）：
-1. `engine` 提升为前后端共享包（monorepo）。
-2. Node 权威服务端（战斗/抽卡服务端计算，客户端预测）。
-3. 排行榜（战绩/收集进度）。
-4. PvP 匹配 + 对战。
-- **决策门**：数据库选型、匹配机制、客户端预测/回滚策略、反作弊（RNG 服务端权威——S1 起 engine 已做 RNG 可注入正是为此铺路）。
+> 拆分粒度已细化；**决策门控、未激活**。前置依赖 S10（鉴权/原子写已就绪）+ engine 的 RNG 可注入（S1 起为服务端权威铺路）。
+
+- [ ] **S12-T1｜engine monorepo 化（前后端共享包）**
+  - 目标：`engine`（+ types/config/data 必要部分）抽成独立包，pnpm/turbo workspace，前端与 Node 服务端共同消费同一份规则。
+  - 验收：engine 作为包被 Node 服务 import 并跑通一个纯函数（如 `resolveClash`）；前端改为依赖该包后测试仍全绿。
+- [ ] **S12-T2｜Node 权威服务端骨架（服务端结算 + 客户端预测）**
+  - 目标：Node 服务端权威结算战斗/抽卡（用服务端种子 RNG），客户端预测 + 对账；复用 S10 的鉴权/会话概念。
+  - 验收：一场宅理论战由服务端权威结算，客户端预测后与服务端结果对账一致；抽卡保底状态服务端权威。
+- [ ] **S12-T3｜存档迁移到数据库**
+  - 目标：用户/存档从 `data/user_data/*.json` 迁到数据库；保留 schema 版本化迁移路径（现 v9）。
+  - 验收：存档读写走 DB；现有文件存档可迁入；鉴权 token 仍生效；并发保护（乐观 saveVersion）在 DB 层成立。
+- [ ] **S12-T4｜排行榜（战绩/收集进度）**
+  - 目标：服务端聚合战绩与收集完成度，排行榜 API + 前端榜单页。
+  - 验收：榜单按战绩/收集正确排名；分页/刷新；数据来自服务端权威记录（防客户端伪造）。
+- [ ] **S12-T5｜PvP 匹配 + 对战**
+  - 目标：匹配队列 + 实时对战同步（服务端权威结算，反作弊靠服务端 RNG），交互技 PvP 时改对端决策（S8c 已预留 ctx.rng 注入点）。
+  - 验收：两客户端匹配成功并完成一场同步对战；断线/超时兜底；结果服务端权威。
+- **决策门（`/think` 先定）**：① 数据库选型（Postgres/SQLite/KV）；② 实时传输（WebSocket/SSE/轮询）；③ 匹配机制（简单队列 vs ELO）；④ 预测-回滚策略；⑤ 部署架构（与 S10 部署方案衔接）。
 
 ---
 *创建于 2026-06-16，由 `/goal` 把 FUTURE.md 剩余任务拆分而来。活动 sprint 完成后更新 FUTURE.md 对应勾选与进度总览。*
