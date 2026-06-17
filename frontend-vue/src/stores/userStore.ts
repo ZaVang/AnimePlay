@@ -317,6 +317,9 @@ export const useUserStore = defineStore('user', () => {
         profile.earn('knowledgePoints', kpToAward);
         profile.addLog(`高低牌 ${streak} 连胜，兑换 ${kpToAward} 知识点！`, 'success');
       }
+      // 留存埋点（evolution-7）：小游戏每日/周任务 + 成就（焊接小游戏进留存引擎）
+      useDailyStore().markProgress('minigame', 1);
+      useAchievementsStore().check('minigame', { streak });
       saveToServer(); // 最高分/连胜/局数/封顶记账更新
     }
     return { score, streak, knowledgeAwarded: kpToAward };
@@ -330,6 +333,8 @@ export const useUserStore = defineStore('user', () => {
         profile.earn('knowledgePoints', kpToAward);
         profile.addLog(`番剧问答答对 ${streak} 题，兑换 ${kpToAward} 知识点！`, 'success');
       }
+      useDailyStore().markProgress('minigame', 1);
+      useAchievementsStore().check('minigame', { streak });
       saveToServer();
     }
     return { score, streak, knowledgeAwarded: kpToAward };

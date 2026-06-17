@@ -271,4 +271,12 @@ describe('序列化往返', () => {
     expect(daily.weeklyProgressOf('weekly_gacha')).toBe(0);
     expect(daily.loginStreak).toBe(0);
   });
+
+  it('minigame 埋点同时推进日/周小游戏任务（evolution-7 焊接）', () => {
+    freezeDate(2026, 6, 17);
+    const daily = useDailyStore();
+    daily.markProgress('minigame', 1);
+    expect(daily.isComplete('daily_minigame')).toBe(true);
+    expect(daily.weeklyProgressOf('weekly_minigame')).toBe(1);
+  });
 });

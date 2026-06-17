@@ -6,7 +6,7 @@
 import type { CurrencyKey } from '@/types/player';
 
 /** 任务进度的事件类型 —— 与埋点处 markProgress(taskType) 的参数一一对应。 */
-export type DailyTaskType = 'gacha' | 'battleWin' | 'watch' | 'nurture';
+export type DailyTaskType = 'gacha' | 'battleWin' | 'watch' | 'nurture' | 'minigame';
 
 export interface DailyReward {
   currency: CurrencyKey;
@@ -58,6 +58,14 @@ export const DAILY_TASKS: DailyTaskDef[] = [
     target: 1,
     rewards: [{ currency: 'knowledgePoints', amount: 30 }],
   },
+  {
+    id: 'daily_minigame',
+    type: 'minigame',
+    title: '小试身手',
+    description: '玩 1 局小游戏',
+    target: 1,
+    rewards: [{ currency: 'knowledgePoints', amount: 30 }],
+  },
 ];
 
 /** 每日登录奖励（一次性，跨天再发）。 */
@@ -94,6 +102,14 @@ export const WEEKLY_TASKS: DailyTaskDef[] = [
     title: '追番周计划',
     description: '本周收取 7 次观看奖励',
     target: 7,
+    rewards: [{ currency: 'knowledgePoints', amount: 200 }],
+  },
+  {
+    id: 'weekly_minigame',
+    type: 'minigame',
+    title: '小游戏达人',
+    description: '本周玩 10 局小游戏',
+    target: 10,
     rewards: [{ currency: 'knowledgePoints', amount: 200 }],
   },
 ];

@@ -22,7 +22,8 @@ export type AchievementEvent =
   | 'nurture'
   | 'guess'
   | 'tower'
-  | 'codex';
+  | 'codex'
+  | 'minigame';
 
 export interface AchievementDef {
   id: string;
@@ -49,6 +50,7 @@ export interface AchievementStats {
   guessStreak: number;
   guessTotal: number;
   maxTowerFloor: number;
+  minigameTotal: number;
 }
 
 export interface AchievementPayload {
@@ -57,6 +59,8 @@ export interface AchievementPayload {
   milestoneId?: string;
   /** 角色满级（养成）—— nurture 互动后由 store 计算后传入。 */
   characterMaxLevel?: boolean;
+  /** 小游戏本局连胜（minigame 事件）—— 高低牌/Quiz 结算时传入。 */
+  streak?: number;
 }
 
 export const ACHIEVEMENTS: AchievementDef[] = [
@@ -80,6 +84,10 @@ export const ACHIEVEMENTS: AchievementDef[] = [
   { id: 'ach_guess_1', event: 'guess', title: '慧眼初开', description: '猜对第一个角色', badge: '🔍', reward: { currency: 'knowledgePoints', amount: 30 }, condition: (s) => s.guessTotal >= 1 },
   { id: 'ach_guess_streak_5', event: 'guess', title: '火眼金睛', description: '连续猜对 5 个角色', badge: '🎯', reward: { currency: 'knowledgePoints', amount: 100 }, condition: (s) => s.guessStreak >= 5 },
   { id: 'ach_guess_50', event: 'guess', title: '识人无数', description: '累计猜对 50 个角色', badge: '🧠', reward: { currency: 'characterGachaTickets', amount: 3 }, condition: (s) => s.guessTotal >= 50 },
+
+  { id: 'ach_minigame_1', event: 'minigame', title: '小游戏初体验', description: '玩第一局小游戏', badge: '🎮', reward: { currency: 'knowledgePoints', amount: 30 }, condition: (s) => s.minigameTotal >= 1 },
+  { id: 'ach_minigame_streak_10', event: 'minigame', title: '势如破竹', description: '小游戏单局连胜达到 10', badge: '🔥', reward: { currency: 'knowledgePoints', amount: 100 }, condition: (_s, p) => (p?.streak ?? 0) >= 10 },
+  { id: 'ach_minigame_20', event: 'minigame', title: '小游戏常客', description: '累计玩 20 局小游戏', badge: '🕹️', reward: { currency: 'animeGachaTickets', amount: 2 }, condition: (s) => s.minigameTotal >= 20 },
   // 爬塔
   { id: 'ach_tower_5', event: 'tower', title: '登塔者', description: '通过挑战塔第 5 层', badge: '🗼', reward: { currency: 'knowledgePoints', amount: 50 }, condition: (s) => s.maxTowerFloor >= 5 },
   { id: 'ach_tower_20', event: 'tower', title: '登峰造极', description: '通过挑战塔第 20 层', badge: '🏔️', reward: { currency: 'animeGachaTickets', amount: 3 }, condition: (s) => s.maxTowerFloor >= 20 },

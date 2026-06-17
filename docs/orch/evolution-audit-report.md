@@ -1,296 +1,229 @@
-# AnimePlay 进化审计报告 — Evolution Round 5（小游戏扩展第 1 轮）
+# AnimePlay — Evolution Audit Report
 
-> Reviewer 视角：产品策略师，不是 QA。本轮服务用户的明确方向——把小游戏做成**统一的「🎮 小游戏」中心**，**把现有「🎭 猜角色」迁进去**，并**至少再扩展 2 个休闲小游戏**。
-> 日期：2026-06-17 ｜ 全局迭代 5 / Evolution 第 1 轮（5 轮 run）｜ 报告是本轮 Scout/Planner 的需求源。
+> Evolution Reviewer（产品策略师）· 第 3 轮（5 轮 evolution 之 R3，全局迭代 7）· 2026-06-17
+> 范围：硬性交付（小游戏 Hub 内 3 游戏）已达成后的**开放新功能探索**——探索什么能让产品更黏、更值得回访、更有差异化与传播力。
+> 方法：读 SPRINT.md + negotiation.md + 全量扫小游戏 Hub / minigames store / daily store / achievements store / userStore 编排 / RNG 引擎；竞品研究 5 路（Wordle / GeoGuessr / Duolingo / AnimeQuiz.net / AniDoku）。验收基线：`npm run test` 392 全绿、`type-check` 0 错。
 
 ---
 
 ## Executive Summary
 
-**产品进化成熟度：8.0 / 10**
+**产品进化成熟度：8.0 / 10**（维持上轮基线——本轮是探索轮，未减分但也未自动加分；下面指出的联动空白若补上可冲 8.5+）。
 
-AnimePlay 已经不是 demo，也不是原型——它是一个**功能密度极高的早期成熟产品**：8 大玩法、完整经济闭环（券/知识点/抽卡保底/商店限购）、留存引擎（每日+周任务、连续登录递增、成就、图鉴里程碑、跨系统红点）、新人 onboarding、可分享 Wrapped 成绩卡、5 套皮肤、305+ 特征测试与干净的 engine 分层。绝大多数早期产品死在"没东西玩"，AnimePlay 死不了——它东西多到需要导航。
+AnimePlay 已经是一个**功能罕见地齐全的早期产品**：8 大玩法 + 一整套留存引擎（每日/周任务、连续登录递增、图鉴完成度、里程碑、成就墙、onboarding、Wrapped 成绩卡、番剧年表、跨系统红点）+ 统一「🎮 小游戏」Hub（猜角色 / 高低牌 / 番剧问答 3 游戏）+ S1-S10 重构加固。这个完整度远超绝大多数同类 demo。
 
-但正因为如此，**当前最大的进化机会恰恰在用户指定的方向：小游戏**。原因有三个层次：
+**但本轮审计发现一个刺眼的结构性断点，它正是本轮最大的机会**：
 
-1. **结构性孤岛**：唯一的休闲小游戏「猜角色」是个**顶级路由孤儿**（`/guess`，导航项「🎭 猜角色」）。它和产品其余部分的留存机器（每日任务、成就、红点、积分榜）**几乎零联动**——猜对只触发 1 个成就检测点和知识点兑换，**没有进每日任务、没有进周任务、没有红点、没有积分榜、没有每日挑战**。它是一座功能完整但与大陆断开的岛。
+> **小游戏 Hub 是一座孤岛。** 它接了经济（`profile.earn` + 每日封顶 120 KP），但**完全没有接入留存引擎**——`settleHigherLower` / `settleQuiz` 不调 `daily.markProgress`、daily/weekly 任务里**根本没有"玩小游戏"这个任务类型**（`DailyTaskType` 只有 `gacha|battleWin|watch|nurture`）、achievements 的 `guess` 事件只盖猜角色、**高低牌和 Quiz 一个成就都没有**。换句话说：产品花大力气造了「每天回来玩」的引擎（任务/连签/红点），又花大力气造了「最上瘾的玩法形态」（休闲小游戏），**却没把这两者焊在一起**。
 
-2. **品类错配**：猜角色是产品里**唯一一个"5 分钟回访、随手能玩、可炫耀"的轻量循环**，而恰恰是这种循环（Wordle/Higher-Lower 式）在 2020 年后成为留存与口碑传播的最强引擎。产品有完整的重度玩法（对战/养成/塔），却只有 1 个轻度循环，且没把它做成"每日回访的理由"。
+四维度核心发现：
 
-3. **数据金矿没开采**：产品手握 250 部番剧的真实 `rating_score`/`rating_rank`/`date` + 665 个角色的真实 `popularity_score`/`anime_count`——这是一座专门为休闲 quiz/Higher-Lower/排序游戏量身打造的数据矿，目前**只被猜角色用了一张图片**。
+| 维度 | 评价 | 一句话 |
+|---|---|---|
+| **核心完整性** | 🟡 有明显缺口 | 小游戏与留存引擎脱节；小游戏缺「每天有理由回来」的钩子（无每日挑战、无每日任务联动、无小游戏成就、无历史最佳/统计展示） |
+| **竞争差距** | 🔴 缺一个品类桌上赌注 | 直接同类竞品（AnimeQuiz.net / AniDoku）**已把"每日挑战 + 全员同题 + streak + 分享"做成动画品类标配**，AnimePlay 有全部底层能力（种子 RNG、题生成、Wrapped 出图）却没拼出这个形态 |
+| **功能深度** | 🟢 底子厚但浅尝 | 3 个小游戏各自只有"开局→连胜→结算"单循环；缺统计仪表盘、缺个性化、缺把"真实数据"这个独特资产端到端用透 |
+| **差异化** | 🟢 资产独特，待引爆 | "Bangumi 真实数据 + 抽卡收集 + 小游戏"的组合竞品做不出；最强口碑点 = 把每日挑战成绩做成可分享卡（Wrapped 基建已在） |
 
-**结论与本轮主张**：把"猜角色"从孤岛升级成「🎮 小游戏中心」（Hub），是一笔确定性极高的高 ROI 投资——它把现有资产（猜角色组件、真实数据、经济/任务/成就/红点系统）重新组合，几乎不需要新的底层能力。本轮硬性交付（Hub + 猜角色迁入 + ≥2 新游戏）方向完全正确，下文给出**具体选型与可落地设计**。
+**本轮最该做的事（高 ROI、纯前端、ROI 倒挂的低垂果实）**：
+**① 小游戏每日挑战（Wordle 式全员同题，固定种子）+ ② 把它焊进留存引擎（每日任务"完成今日挑战"+ 小游戏 streak + 小游戏成就 + 红点）。** 这两件事共用同一套底层能力，是一个连贯的功能包，且每一块基建都已在位（`mulberry32` 种子 RNG、`generateQuestion` 注入 RNG、`daily.markProgress` 遍历机制、`achievements.check` 事件机制、`App.vue` 红点机制、`ShareCard` Canvas 出图）。详见 Prioritized Recommendations 的 🔴。
 
 ---
 
 ## Phase 1：核心完整性
 
-### 1.1 小游戏当前循环分析（能做什么 / 缺什么）
+### 当前核心循环分析
 
-**现状（读 `stores/guess.ts` / `components/GuessCharacter.vue` / `views/GuessView.vue` / `router/index.ts` / `App.vue` 确认）**：
+小游戏 Hub 的循环目前是闭环的、但**很浅、且与产品其余部分隔离**：
 
-- **唯一游戏**：猜角色。4 阶段像素化（8→16→32→原图），模糊匹配（繁简/大小写/双向 includes），按稀有度发基础分，按尝试次数衰减倍率（×1 / ×0.75 / ×0.5 / ×0.25），`score/2` 兑换知识点。
-- **经济**：走 `userStore.submitGuess` → `profile.earn('knowledgePoints', floor(score/2))`，已正确接入主经济唯一入口（不绕过 spend/earn）。**经济防刷靠 score÷2 衰减**——没有每日上限，但单局产出小（最高 UR 100 分 → 50 知识点），刷分性价比低。
-- **持久化**：仅 `highScore` 进存档（schema v7 的 `guess: { highScore }`）。`gameRecords`（对局历史）是会话态，刷新即丢。
-- **联动**：仅 `useAchievementsStore().check('guess')` 一处。
+```
+进 Hub → 选游戏（猜角色/高低牌/Quiz）→ 一局（连胜滚动）→ 错即结算 → profile.earn 知识点（每日封顶 120 共享）→ 更新 highScore/bestStreak/playCount → 再来一局
+```
 
-**核心循环是闭环的，但它是一个"孤立的闭环"**——玩完一局，对产品其它系统没有任何涟漪。
+闭环是真的（结算幂等、封顶防刷、最高分持久化 v9、注入 RNG + 特征测试，工程质量很高）。但循环的**外沿全是断的**：
 
-### 1.2 缺失的关键环节（Hub 化要补的）
+### 缺失的关键环节（按影响排序）
 
-| 缺口 | 现状 | 影响 |
-|---|---|---|
-| **统一入口** | 猜角色是顶级路由，未来每加一个游戏就要加一个顶级导航项 | 导航爆炸；游戏之间无归属感；无"小游戏"这个产品概念 |
-| **游戏选择器 / Hub** | 无 | 玩家没有"小游戏厅"心智；新游戏没有展示位 |
-| **每日挑战** | 无（每局随机种子，无"今天的题"） | 失去 Wordle/Higher-Lower 最强的回访钩子 |
-| **连胜 streak 持久化** | 猜角色无 streak 概念；成就内有 guess streak 但猜错即清且不持久 | 失去"维持连胜"的心流驱动 |
-| **积分榜 / 历史统计** | `gameRecords` 会话态、刷新即丢；无累计游玩数/胜率/各游戏最高分汇总 | 玩家看不到自己的"成长"，无炫耀资本 |
-| **进每日/周任务** | 猜角色不触发 `markProgress` | 玩小游戏不算"今日任务"，错失把小游戏纳入留存机器的机会 |
-| **红点信号** | 小游戏导航项无红点 | 玩家不知道"今天有新挑战可玩" |
-| **空状态 / 新人引导** | 猜角色有自己的空态，但 Hub 级空态/引导缺失 | 新玩家不知道有几个游戏可玩 |
+**1. 🔴 小游戏完全不进留存引擎（最大断点）**
 
-### 1.3 边界与空状态
+证据（源码级）：
+- `userStore.settleHigherLower`（`stores/userStore.ts:312`）和 `settleQuiz`（:325）只做 `profile.earn` + `saveToServer`，**没有任何 `daily.markProgress(...)` 调用**。
+- `config/dailyTasks.ts` 的 `DailyTaskType = 'gacha' | 'battleWin' | 'watch' | 'nurture'`——**没有 `minigame` 类型**，4 条日任务 + 3 条周任务里没有任何一条和小游戏有关。
+- `config/achievements.ts` 的 `AchievementEvent` 有 `guess`（只盖猜角色），**高低牌和 Quiz 没有对应 event，连一个成就都拿不到**。`submitGuess`（:299）调了 `achievements.check('guess')`，但 `settleHigherLower`/`settleQuiz` 一个 check 都没调。
 
-猜角色本身的空态/错误态做得不错（数据加载态、图片加载失败占位、未开始 CTA）。**Hub 级别**需要新建：游戏选择卡片（每张展示游戏名/图标/最高分/今日是否已玩），以及"今日推荐"或"每日挑战"入口。
+后果：玩家在 Hub 里玩得再起劲，每日任务面板纹丝不动、成就墙不亮、红点不响、连签不受益。**留存引擎对小游戏完全无感**——这是把两套现成的好系统隔开了，修复成本极低、收益极高。
 
----
+**2. 🔴 没有"每天回来玩"的钩子（缺每日挑战）**
 
-## Phase 2：竞争差距（休闲小游戏品类研究）
+现在 Hub 的每一局都是即时随机的，**玩一百局和玩一局没有结构差异**——没有"今天的题"这个概念。竞品全部都有（见 Phase 2）。这是小游戏品类**最核心的回访驱动**：一个有限的、每天刷新的、全员相同的挑战，配 streak 和分享。AnimePlay 缺这一块。
 
-研究了 4 类与本产品最相关的休闲小游戏品类，提炼"让小游戏黏性高、可分享、可日常回访"的设计要素。
+**3. 🟡 小游戏没有历史展示/统计**
 
-### 2.1 Higher / Lower 类（playhigherlower.com、AO3dle、各类 "X-dle"）
+`highScore`/`bestStreak`/`playCount` 都存了（v9），但 Hub 选择器只在卡片角落显示一行"最佳连胜 N"。玩家看不到：我玩了多少局、各游戏分别表现如何、今天 vs 历史、我擅长哪类题。`guess.ts` 甚至有完整的 `gameRecords[]`（对局历史）但**会话态、不持久化、UI 几乎不展示**——造了又没用。
 
-- **核心循环**：给两项，猜下一项数值更高/更低，**连对累积 streak**，错一次即结算。极简、极易上瘾。
-- **关键设计**：① **每日挑战**——午夜刷新，**全员同一套题/同一随机种子**，"你今天连对几个"可直接和朋友比；② **endless 无尽模式**——和自己的最高 streak 比；③ **leaderboard**——账号保存分数登榜。
-- **对本产品的启示**：这是**最接地、最易上瘾、最适配真实数据**的品类（用 `popularity_score`/`rating_rank`/`date`）。**"每日同种子挑战"是产品目前完全缺失的桌上赌注**。
+**4. 🟡 空状态/引导薄**
 
-来源：[playhigherlower.com](https://playhigherlower.com/)、[playhigherlower.com/daily](https://playhigherlower.com/daily)、[AO3dle Daily](https://ao3dle.com/blog/ao3dle-daily-higher-lower-game/)
+`MiniGamesView` 直接平铺 3 张游戏卡，没有"今天玩什么"的入口引导，新玩家不知道从哪开始。onboarding 系统（`stores/onboarding.ts`）已存在但未覆盖小游戏 Hub。
 
-### 2.2 Wordle 式每日挑战
+### 边界与健壮性（值得肯定）
 
-- **founder 原话**：限制"每天一题"是病毒式爆发的**突破点**——**稀缺性**把"玩"变成"仪式"，可 savored、可 finishable。
-- **可分享性**：所有人猜同一个词，**分享的是过程（emoji 网格）不只是结果**——这是爆炸式传播的核心。
-- **难度甜区**：研究表明挑战难度**高于玩家当前水平约 4–6%** 时心流最深，Wordle 几乎精准命中。
-- **心理满足**：自主性（autonomy）+ 归属感（belongingness）——分享成绩让人感到与社群连接。
-- **对本产品的启示**：① **每日挑战必须"全员同题"**（用日期当种子，纯前端可做，零后端）；② **结果要可分享**——产品已有 Canvas Wrapped 成绩卡的先例（`E3-T2`），小游戏成绩同款可做"今日战绩卡"；③ 难度要可控（Higher-Lower 用数值差距大小天然分档）。
-
-来源：[CNBC: 心理学](https://www.cnbc.com/2022/02/15/bite-sized-fun-the-psychology-behind-your-sudden-wordle-obsession.html)、[MoEngage: 留存](https://www.moengage.com/blog/wordle-viral-growth-story/)、[CBS: 为何流行](https://www.cbsnews.com/minnesota/news/what-is-wordle/)
-
-### 2.3 Sporcle / 番剧 Quiz
-
-- 全球最大 quiz 社区有大量 "Guess the Anime / Guess the Anime Character" quiz，长期高人气，证明**番剧猜谜本身有稳定需求**。
-- 形态：限时/不限时、看单张角色图猜番剧、看番剧猜角色。
-- **对本产品的启示**：本产品已有"看角色猜角色"，**对称地缺"看番剧封面猜番剧"和"4 选 1 知识 quiz"**——而产品有 250 部番剧的真实元数据，题库可全自动派生，零人工出题成本。
-
-来源：[Sporcle: Guess the Anime Character](https://www.sporcle.com/games/beeginey/guess-the-anime-character)、[Sporcle: Anime by a Single Character](https://www.sporcle.com/games/Schicky/anime-by-character-slideshow)、[Sporcle anime tag](https://www.sporcle.com/games/tags/anime)
-
-### 2.4 HoYoLAB / Genshin 网页活动 + 每日签到
-
-- **机制**：游戏厂商在主游戏之外做**网页小活动/网页小游戏**，玩完发**游戏内货币**（原石/星琼）+ **每日签到**领奖。轻量网页活动是引流主游戏、维持日活的工具。
-- **对本产品的启示**：本产品已经有"每日登录奖励 + 连续登录递增"（`B1`）——**这套签到机器现成，只需把"玩 1 局小游戏"接进每日任务、把"今日挑战完成"接进红点**，就能复用现成留存基建，让小游戏成为日活引擎的一部分。
-
-来源：[HoYoLAB 每日签到 Wiki](https://genshin-impact.fandom.com/wiki/HoYoLAB_Community_Daily_Check-In)、[Game8 签到指南](https://game8.co/games/Genshin-Impact/archives/321404)
-
-### 2.5 记忆翻牌 / 配对
-
-- 经典、零学习成本、视觉型；计时/步数计分；"和自己记录比"。Steam/网页/Scratch 都有大量番剧版本，证明视觉配对 + 番剧封面是稳定组合。
-- **对本产品的启示**：复用 665 张角色图/250 张番剧封面，纯前端、零数据派生成本，是 Hub 里的"轻松向"补充。
-
-来源：[Anime - Match The Memory (Steam)](https://store.steampowered.com/app/1428290/Anime__Match_The_Memory/)、[Match The Memory: Anime](https://matchthememory.com/Stephens-anime)
-
-### 2.6 本产品缺的"桌上赌注"（table stakes）小结
-
-竞品普遍有、本产品没有的：**① 每日挑战（全员同种子）｜② 连胜 streak 持久化 + 历史最高｜③ 积分榜/累计统计｜④ 可分享成绩｜⑤ 多个轻量游戏组成的"游戏厅"**。这五项正是本轮 Hub 化要补齐的核心。
+工程侧边界处理很扎实：`pickRound` 保证两值不等无平局歧义、`cappedAward` 防刷封顶、`settle` 幂等保护、卡池耗尽收尾（`nextRound` 的 `!newRight → isGameOver`）、组件 `onUnmounted` 清 timer。这部分不用动。
 
 ---
 
-## Phase 3：功能深度（小游戏中心怎么有深度）
+## Phase 2：竞争差距
 
-把小游戏从"1 个孤岛"做成"有深度的中心"，深度来自三层叠加：
+研究了 5 个产品。**关键发现：有两个直接同类竞品（动画品类）已经把"每日挑战"做成桌上赌注，而 AnimePlay 拥有全部底层能力却没做。**
 
-### 3.1 横向深度：多游戏组成游戏厅
+### 竞品功能对比
 
-Hub = 游戏选择器 + 渲染选中游戏。每个游戏是可插拔模块（统一接口：`id / 名称 / 图标 / 组件 / 最高分读取 / 是否已接每日挑战`）。第一批 3 个（猜角色 + 2 新），结构上为第 7–9 轮继续加游戏留好插槽。
+| 功能 | Wordle | GeoGuessr Daily | Duolingo | **AnimeQuiz.net** | **AniDoku** | **AnimePlay** |
+|---|---|---|---|---|---|---|
+| 每日挑战（全员同题、午夜刷新） | ✅ 核心 | ✅ 五地点同图 | — | ✅ 3 题/天 | ✅ 每日 3×3 | ❌ **缺** |
+| 每日 streak（连续天数，断签归零） | ✅ | ✅（用户呼声高） | ✅ 留存第一引擎 | ✅ | ✅ | 🟡 有"登录连签"但小游戏无独立 streak |
+| 成绩可分享（emoji/卡片，剧透安全） | ✅ 病毒核心 | ✅ 比分 | — | ✅ share your score | ✅ | 🟡 有 Wrapped 但不含每日挑战 |
+| 排行榜/全球对比 | 朋友圈式 | ✅ 全球榜 | ✅ 周联赛 | 🟡 全球榜 | ✅ 全球/好友榜 | ❌ 缺（无后端，本地化变体可做） |
+| 当日成绩回看/统计仪表盘 | ✅ Stats | ✅ 结果页 | ✅ | 🟡 | ✅ 跟踪并对比 | ❌ 缺 |
+| 任务/成就/经济联动 | — | — | ✅ XP 串起一切 | ✅ 奖励系统 | ✅ 成就 | 🟡 经济有、任务/成就**断开** |
 
-### 3.2 纵向深度：每个游戏的"再玩一次"驱动
+**来源**：[Wordle 心理学（ChoiceHacking）](https://www.choicehacking.com/2022/01/31/how-wordle-uses-psychology/)、[GeoGuessr Daily Challenge](https://www.geoguessr.com/daily-challenges)、[Duolingo 游戏化案例（Trophy.so）](https://trophy.so/blog/duolingo-gamification-case-study)、[AnimeQuiz.net 每日挑战](https://www.animequiz.net/)、[AniDoku 每日动画 trivia](https://anidoku.com/)。
 
-- **endless / streak 模式**：和自己的历史最高比（Higher-Lower 天生适配）。
-- **每日挑战模式**：用日期做种子，全员同题，**每个游戏每天一把**，完成进红点/任务，**可分享今日战绩**。这是"每天打开"的核心钩子。
-- **难度甜区**：Higher-Lower 通过数值差距控制难度（差距越小越难）；Quiz 通过干扰项相近度控制；猜番剧/猜角色已有 4 阶段像素化天然分档。
+### 本产品缺少的标配功能（桌上赌注）
 
-### 3.3 系统深度：接入产品现有留存机器（最高 ROI，几乎零新基建）
+1. **每日挑战（全员同题）** —— 同品类两个竞品都有，是动画 quiz 品类的标配。AnimePlay 缺。
+2. **小游戏维度的连续 streak** —— Duolingo 数据：7+ 天 streak 用户留存是无 streak 用户的 **2.4 倍**；streak wager 让 D14 留存 +14%。AnimePlay 有"登录连签"，但**小游戏本身没有 streak 概念**。
+3. **统一指标把系统串起来** —— Duolingo 的洞察："XP 作为共享货币，完成一课同时推进 streak、联赛、成就。"AnimePlay 的"知识点"已经是这个共享货币，但**小游戏的产出没有喂给任务/成就**，没把这条价值链接通。
 
-产品**已经有**一整套留存基建，小游戏只需"接线"即可获得系统级深度：
+### 竞品反馈中的机会点
 
-| 现有系统 | 接线方式 | 文件锚点 |
+- GeoGuessr 用户在 Canny 上**反复请求**"Daily Challenge Streak leaderboard"和"How'd I do（当日成绩回看）"——说明**当日成绩回看 + streak 展示**是高频痛点，做了就是顺民意。
+- Wordle 的病毒性核心是**emoji 成绩分享（剧透安全）**——把当日挑战做成不剧透答案的成绩卡（🟩🟨⬛ 式）是被验证过的传播引擎。AnimePlay 的 `ShareCard` Canvas 基建已在，差一个"每日挑战版"。
+
+---
+
+## Phase 3：功能深度
+
+### 现有系统深度评估
+
+| 系统 | 深度 | 浅在哪 / 可深挖 |
 |---|---|---|
-| **每日/周任务** | 新增任务类型 `minigame`（"今日玩 1 局小游戏" / "本周玩 10 局"），在 Hub 提交结算处 `markProgress('minigame', 1)` | `config/dailyTasks.ts` 加 `DailyTaskType` + 任务定义；埋点仿 `userStore.submitGuess` |
-| **成就系统** | 加小游戏成就（首胜/连胜 10/各游戏满分/每日挑战连续 7 天） | `stores/achievements.ts` `check('guess')` 已有先例，扩 `check('minigame', {...})` |
-| **跨系统红点** | 小游戏导航项加红点：今日挑战未玩/有新游戏 | `App.vue` 已有 `homeHasSignal`/`collectionsHasSignal` 派生红点先例，加 `minigamesHasSignal` |
-| **积分/统计** | Hub 顶部展示各游戏最高分 + 累计游玩数 + 今日挑战连胜 | 存档扩 `minigames` 域（见 Technical Health） |
-| **可分享成绩卡** | 每日挑战完成生成 Canvas 战绩卡 | `E3-T2` Wrapped 成绩卡的 `toBlob+a.download` 模式可复用 |
-| **经济** | 猜对/达标走 `profile.earn`，设每日上限或递减防刷 | `submitGuess` 模式直接复制 |
+| 小游戏 | 🟡 浅尝 | 每个游戏只有"单局连胜"一个循环。可深挖：每日挑战模式、难度选择、限时模式、连胜里程碑可视化、各游戏统计 |
+| 收集/图鉴 | 🟢 已较深 | evo-1/2 已做完成度/里程碑/定向解锁/年表，是产品最深的系统 |
+| 真实数据资产 | 🟡 用了一半 | `rating_score`/`popularity_score`/`date` 在 CardDetailModal、高低牌、Quiz、年表都用了，但**没有一个"以数据为主角"的探索/对比视图**（如"番剧 Tier List""我的收藏数据画像"） |
+| 统计仪表盘 | ❌ 缺 | 全产品没有一个"我的数据中心"——把抽卡数、对战胜率、小游戏战绩、收集完成度、连签天数聚到一处。这是 power-user 的回访理由 |
 
-**这一层是本报告最强的论点**：小游戏中心的"深度"几乎不需要新造系统——产品在 Evo 1–4 已经把任务/成就/红点/分享/经济全造好了，**小游戏只是这些系统的新接入点**。这让 Hub 化的 ROI 异常高。
+### 可能的 power-user 路径
+
+1. **每日挑战的"专家模式"**：普通挑战固定题数，专家挑战连续到错为止（无限题、计 streak），喂给独立的专家 streak 成就。
+2. **统计仪表盘（"我的数据画像"）**：聚合所有系统的数字（已经全部存在 store / 存档里，纯派生即可），是把"完整产品"感知到的最低成本方式。
+3. **小游戏维度切换的深化**：高低牌目前 3 维度（角色人气/番剧口碑/番剧年代），可加"混合模式"或"难度（缩小数值差距 = 更难）"。
+
+### 集成/协作/自定义
+
+纯前端约束下，"协作/排行榜"需要后端（S12 路线）。但有一个**纯前端的伪社交**很值：**每日挑战的分享卡**——把"我今天 X 连胜，击败了昨天的我 / 我的历史最佳"做成可下载图，是零后端的口碑传播（Wordle 模式）。
 
 ---
 
 ## Phase 4：差异化与 Wow Factor
 
-### 4.1 小游戏提案（≥4 个，按"可行性 + 趣味 + ROI"排序）
+### "如果能 XXX 就太酷了"（≥3 个提案，不限本轮）
 
-> 数据已验证（读 `data/selected_anime` / `data/selected_character`）：250 番剧（`rating_score` 7.1–9.2 中位 7.8，`rating_rank` 1–250，`date` 1993–2025）；665 角色（`popularity_score` 13–4050 中位 286，`anime_count` 1–8）。**关键洞察：`rating_score` 区间太窄（几乎都 7–9），单独用它做 Higher-Lower 接近抛硬币、不好玩；`popularity_score`、`rating_rank`、`date` 区间宽，才是好维度。**
+**💡 提案 A：小游戏每日挑战「今日番剧脑力赛」（最该做、最能传播）**
+> 每天一道固定挑战：当日固定种子（`mulberry32(dateSeed)`）生成一组题（如 5 题混合：3 题 Quiz + 2 局高低牌），**全世界玩家同题**，每人**一天一次**（Wordle 式稀缺性）。完成后出一张**剧透安全的成绩卡**（🟩🟩🟨⬛⬛ 式逐题对错 + 今日 streak + "击败历史最佳"），一键下载分享。
+> **为什么酷**：把 Wordle 最被验证的留存三件套（稀缺性 + streak + 剧透安全分享）原样移植到动画品类，而 AnimePlay 拥有 Wordle 没有的资产——真实番剧/角色数据和图片。**这是本轮最强的口碑传播点**，且每块基建都已在位。
 
----
+**💡 提案 B：「我的动画数据画像」统计仪表盘**
+> 一个聚合页：抽卡总数 / UR 数 / 对战胜率 / 小游戏三项战绩 / 收集完成度雷达图 / 连签天数 / 我最爱的放送年代（从已拥有番剧的 `date` 派生）。纯派生、零后端、零新存档字段。
+> **为什么酷**：让玩家第一次"看见自己的全貌"，是 power-user 回访理由，也是二次分享素材。数据全部已存在，是 ROI 极高的"把现成数字摆出来"。
 
-#### 提案 #1 ★ 高低牌 Higher / Lower（**强烈推荐为新游戏 #1**）
+**💡 提案 C：「番剧 Tier List / 数据擂台」**
+> 用真实 `rating_score`/`popularity_score` 让玩家把自己拥有的卡排进 Tier，或看"我的收藏 vs 全站平均"的数据对比。把独特数据资产做成一个独立的探索玩法。
+> **为什么酷**：竞品（纯 quiz 类）做不出——它们没有"你拥有的收藏"这一层。这是抽卡收集 + 真实数据交叉出的独特方向。
 
-- **一句话玩法**：屏幕给两张卡，左边亮数值，猜右边的"人气/排名/放送年"比左边**更高还是更低**，连对累积 streak，错一次结算。
-- **用什么数据**：
-  - **角色模式**：`popularity_score`（13–4050，区间宽、辨识度高，**首选维度**）。
-  - **番剧模式**：`rating_rank`（1–250，排名越小越强，反直觉更刺激）或 `date`（放送年，谁更早）。
-  - **避坑**：不要用裸 `rating_score`（7.1–9.2 太挤，体验差）。如要用评分，应展示"谁排名更前"而非"谁分更高"。
-- **计分与经济**：streak 即分数；每达成里程碑（5/10/20 连对）走 `profile.earn` 发知识点，**设每日产出上限**（如每日前 3 局计入经济，超出只记 streak 不发奖），防无限刷。
-- **为什么好玩**：① 极易上瘾（竞品验证）；② **零图片依赖**（纯数值，加载快、稳，不怕图挂）；③ 完美适配真实数据，**别的番剧游戏抄不到本产品这套 Bangumi 真实人气/排名数据**——天然差异化；④ 最适合做"每日挑战 + 全员同种子"。
-- **复杂度**：**低**。纯逻辑（取卡、比数值、判对错、累 streak）可抽纯函数 + 注入 RNG 配特征测试；UI 比猜角色简单（无 Canvas 像素化）。
+### 口碑传播点分析
 
-#### 提案 #2 ★ 番剧问答 Quiz（4 选 1）（**推荐为新游戏 #2 候选 A**）
+用户会因为什么把产品推荐给朋友？排序：
+1. **每日挑战成绩卡（提案 A）** —— 最强。剧透安全 + 每日新鲜 + "你也来挑战今天的题"是天然的对战邀请。Wordle/AnimeQuiz.net 已验证。
+2. **数据画像（提案 B）** —— 中。"晒成就/晒数据"型传播，一次性强、复发弱。
+3. 现有 Wrapped 成绩卡 —— 已有，但是"年度总结"型，频次低；每日挑战卡补上了"高频分享"这一格。
 
-- **一句话玩法**：4 选 1 选择题，每局 N 题，答对得分、答错或超时结束。题型从真实数据全自动派生：
-  - "下列角色谁出自《X》？"（用 `anime_names`/`anime_ids`）
-  - "《X》是哪一年放送的？"（用 `date`，干扰项 ±2 年）
-  - "下列番剧哪部 Bangumi 排名最高？"（用 `rating_rank`）
-  - "下列角色谁人气最高？"（用 `popularity_score`）
-- **用什么数据**：全部真实字段，**题库零人工成本、可无限生成**。
-- **计分与经济**：连对加分、每题倒计时加成；过关走 `profile.earn`，每日上限同上。
-- **为什么好玩**：① 知识型成就感（宅知识自测）；② Sporcle 验证番剧 quiz 长期有需求；③ 题型多样、可做"每日 5 题"挑战。
-- **复杂度**：**中**。题目生成器是纯函数（给数据 + RNG → 题目 + 干扰项），需注意干扰项去重/合理性；UI 简单（4 个按钮）。
+### 值得删掉或简化的东西（≥1）
 
-#### 提案 #3 ★ 猜番剧（剪影 / 像素）（**推荐为新游戏 #2 候选 B，与猜角色对称、复用率最高**）
-
-- **一句话玩法**：复刻猜角色机制，但猜的是**番剧封面**（`/data/images/anime/{id}.jpg`），4 阶段像素化逐步清晰，输入番剧名模糊匹配。
-- **用什么数据**：番剧 `name`/`original_name` + 封面图 + 稀有度（发分逻辑可直接套猜角色）。
-- **计分与经济**：与猜角色完全对称，`submitGuess` 逻辑可泛化复用。
-- **为什么好玩**：与猜角色形成"角色 / 番剧"对子，玩家有"全都玩一遍"的收集欲。
-- **复杂度**：**低–中**。`GuessCharacter.vue` 的 Canvas 像素化逻辑可抽成共享 composable，两个游戏共用——**这是迁入 Hub 时顺手做的最佳重构**。
-
-#### 提案 #4 年代排序 Timeline（**Nice-to-have / 第 6–7 轮**）
-
-- **一句话玩法**：给 4 张番剧卡，拖拽按**放送年**从早到晚排序，全对得分。
-- **用什么数据**：`date`（1993–2025，区间宽，适合排序）。复用 `B2` 年表的数据思路。
-- **计分与经济**：全对/部分对计分；过关走 `profile.earn`。
-- **为什么好玩**：考"番剧史"知识，和 Higher-Lower 互补（一个二选、一个全排）。
-- **复杂度**：**中**。拖拽排序交互 + 移动端适配要小心（产品当前桌面优先）。
-
-#### 提案 #5 记忆翻牌 Memory Match（**Nice-to-have / 视觉向补充**）
-
-- **一句话玩法**：番剧封面配对翻牌，计时/步数计分。
-- **用什么数据**：番剧/角色封面图。
-- **复杂度**：**中**。纯前端、零数据派生，但与"宅知识"调性弱关联，优先级低于 #1–#3。
-
-### 4.2 哪个最能"用了回不去"
-
-**高低牌 + 每日挑战（同种子）**。理由：① 它把产品**独有的 Bangumi 真实人气/排名数据**变成游戏机制，这是任何竞品都复制不了的护城河；② Higher-Lower 是被反复验证的成瘾循环；③ "每天一把、全员同题、连对几个发朋友圈"直接命中 Wordle 的病毒式传播公式。**单独看，高低牌是本轮 ROI 最高、最该第一个做的新游戏。**
-
-### 4.3 可分享 / 口碑传播点
-
-- **今日挑战战绩卡**：每日挑战完成生成 Canvas 图（"我今天高低牌连对 14 个 / 番剧 Quiz 满分"），复用 `E3-T2` 的 `toBlob+a.download`。这是把小游戏变成传播喇叭的关键——**用户会因为"晒今日 streak"而把产品带出去**。
-- **"全员同题"对比**：朋友间天然产生"你今天几个？我 12"的对话——这是 Wordle 传播的核心机制，纯前端用日期种子即可实现。
-
-### 4.4 值得删掉 / 简化的东西（≥1）
-
-- **猜角色的会话态 `gameRecords`（对局历史列表）**：当前刷新即丢、占用组件大量篇幅，价值低（玩家更在意"最高分/连胜/今日挑战结果"而非逐局流水）。迁入 Hub 时**建议砍掉逐局历史 UI**，替换为 Hub 级的"各游戏最高分 + 今日挑战状态"汇总卡——信息密度更高、更值得持久化。
-- **`stores/guess.ts` 里 `getOriginalImageUrl()` 是死代码**（永远返回 `''`），迁移时顺手清理。
+- **🗑️ `guess.ts` 的 `gameRecords[]` + `getOriginalImageUrl()` 死代码**：`gameRecords` 维护了完整对局历史却几乎不展示、不持久化（会话态），是"造了没用"；`getOriginalImageUrl()` 永远返回 `''`（:116-119）是纯死代码。要么把 `gameRecords` 接进统计仪表盘（提案 B）让它有意义，要么删掉减负。**建议：在做提案 B 时把它接通；否则删。**（negotiation.md 上轮已记此为可清死代码，本轮再次确认。）
+- **简化**：Hub 选择器卡片底部那行"最佳连胜 N"信息密度太低，可换成"今日挑战入口 + 是否已完成"更有回访拉力。
 
 ---
 
-## Technical Health（小游戏 Hub 的架构落点）
+## Technical Health（附带）
 
-> 不是全面审计，只关注"功能越堆越多时哪些会成瓶颈"+ 落点建议（别破 engine 纯净 / 依赖只向下）。
+整体健康度高（392 测试全绿、type-check 0 错、build 通过、架构铁律未破）。本轮新功能视角下的几点：
 
-### 架构落点建议
-
-1. **Hub 路由**：新建 `/minigames`（`views/MiniGamesView.vue` 作 Hub 容器 = 游戏选择器 + 渲染选中游戏）。导航项「🎮 小游戏」**取代**「🎭 猜角色」；`/guess` 保留为 `redirect: '/minigames'` 兼容（router 改 1 处即可）。`GuessCharacter.vue`（501 行）**原样迁入不重写**，作为 Hub 的一个子游戏。
-
-2. **新游戏纯逻辑放哪**：
-   - **猜角色**已有先例：逻辑在 `stores/guess.ts`，`Math.random` 在 store 内（既有先例）。
-   - **新游戏**：纯判定逻辑（高低牌比大小、Quiz 出题与判分、年代排序校验）**尽量抽成纯函数 + 注入 RNG + 特征测试**，符合架构铁律。建议放 `stores/minigames/`（如 `higherLower.ts` 的纯函数部分）而非污染 `engine/`——engine 当前定位是"对战/抽卡/养成规则"，小游戏逻辑更像 store 编排层。
-   - **Canvas 像素化**（猜角色 + 猜番剧共用）抽成共享 composable（如 `composables/usePixelate.ts`），避免两个游戏各写一份。
-
-3. **经济防刷（重点）**：
-   - 奖励**只走 `profile.earn`**（唯一货币入口，别绕过）。
-   - 每个游戏设**每日产出上限或递减**：仿猜角色 `score÷2`，再加"每日前 N 局计经济、超出只记分不发奖"或"当日累计产出封顶"。高低牌尤其要防——streak 可以很长，发奖必须按里程碑且封顶，否则一局连对 50 个能刷爆知识点。
-   - 每日挑战的"全员同种子"用**日期字符串做 seed**（不依赖后端），但**每日挑战的发奖必须每天只发一次**（仿登录奖励的 `lastLoginDate` 模式，存"上次完成的日期"）。
-
-4. **持久化（升 schema v7 → v8）**：
-   - 新增 `minigames` 域：各游戏 `highScore`/`bestStreak` + `dailyChallenge` 完成日期 + 累计游玩数。**按既有"三处同改 + 迁移 + 测试"**：`infra/persistence/schema.ts`（加 `MiniGamesSave` 接口 + `createDefaultMiniGames()`）/ `migrations.ts`（旧档补缺省）/ `stores/persistence.ts`（装配器）。
-   - **建议保留现有 `guess: { highScore }` 不动、新游戏单开域**（迁移更安全，不动 v7 既有断言）。设备级 UI 偏好（如"上次选的游戏"）用 localStorage，不升 schema。
-
-5. **颜色 / 样式铁律**：新组件一律语义类（`bg-surface`/`text-ink`/`accent`），按钮用 `.btn-*`，禁 `text-white` 压浅底、禁动态色类拼接。稀有度色是既有固定色例外（注意猜角色现用了 `rarityColors` 内联 hex + 一处 `text-white` 压稀有度底，属图片压片白字类例外，可沿用）。
-
-6. **不会成为瓶颈的点**：数据量小（250+665），纯前端计算无性能问题；无 N+1；测试基建成熟（305+ 特征测试，纯函数易测）。**唯一要盯的**是 Canvas 像素化在两个游戏间的复用别复制粘贴，以及每日挑战种子逻辑的时区一致性（复用 `daily.ts` 已验证的 `todayKey`/`weekKey`）。
+- **架构扩展性**：留存引擎的扩展模式非常干净——`daily.markProgress` 遍历任务表、`achievements.check` 按 event 分发，**加一个 `minigame` 任务类型 / 一组小游戏成就只需改 config + 加埋点调用，零架构改动**。这是上一轮设计留下的红利，本轮直接吃。
+- **每日挑战的纯前端可行性已确认**：`engine/rng.ts` 的 `mulberry32(seed)` + `createSeededRng` 已在位；`generateQuestion`（quiz.ts）和 `pickRound`（higherLower.ts）**都已注入 RNG**——喂当日日期派生的种子即可"全员同题"，零后端、零数据改动。这是本轮 ROI 最高的技术前提。
+- **存档扩展成本可控**：每日挑战的 streak / 已完成日期需持久化 → 按既有"三处同改 + 迁移 + 测试"升 v9→v10（minigames 域加 `dailyChallenge` 子域）。模式成熟、风险低。
+- **性能**：无新瓶颈。每日挑战是一次性小批量取卡，远小于已虚拟化的 665 项列表。
+- **测试**：纯逻辑（种子→题集生成、streak 推进、断签归零）应抽纯函数 + 注入 RNG + 特征测试，与现有 `higherLower.test.ts` / `quiz.test.ts` 同款。注意 streak 跨天/断签判定建议复用 `daily.ts` 的 `parseLocalKey` + `toDateString` 比对模式（已验证的连签逻辑），避免重造时区 bug。
+- **死代码**：`guess.ts:116` `getOriginalImageUrl` 永返空串；`gameRecords[]` 维护未用（见 Phase 4）。
 
 ---
 
 ## Prioritized Recommendations
 
-> 标注是否服务**硬性交付**（统一小游戏 Tab + 猜角色迁入 + ≥2 新游戏）。
+> 每条标：实现复杂度 · 数据可行性 · 是否纯前端。
 
-### 🔴 Critical（缺失的标配 / 阻止硬性交付达成）
+### 🔴 Critical — 本轮（第 7 轮）最该做的 1-2 个高 ROI 纯前端功能
 
-- **🔴-1 小游戏 Hub 地基 + 猜角色迁入**【**硬性交付**】
-  新建 `/minigames` + `MiniGamesView.vue`（游戏选择器卡片 + 渲染选中游戏）；导航「🎮 小游戏」**取代**「🎭 猜角色」；`/guess` 改 `redirect`。`GuessCharacter.vue` 原样迁入作为子游戏。Hub 顶部展示各游戏最高分。**这是本轮一切的地基。**
+**🔴-1：小游戏「每日挑战」（Wordle 式全员同题 + 小游戏 streak）**
+- **是什么**：Hub 顶部加"今日挑战"入口。点开 = 当日固定种子（`mulberry32` 喂 `YYYYMMDD` 派生 seed）生成一组固定题（建议 **5 题混合：3 题 Quiz + 2 局高低牌**，复用现成 `generateQuestion`/`pickRound`），**每人每天一次**。完成后：记当日得分、维护**小游戏 streak**（昨日完成→+1，断签→归 1，复用 `daily.ts` 连签判定模式）、出**剧透安全成绩卡**（逐题 🟩🟨⬛ + streak + "今日得分/历史最佳"，复用 `ShareCard` Canvas 基建）。
+- **为什么是它**：① 同品类两个直接竞品（AnimeQuiz.net/AniDoku）已把它做成桌上赌注，AnimePlay 缺；② 所有基建已在位（种子 RNG、注入式题生成、Canvas 出图）；③ 它是"每天回来"的最强结构性钩子（稀缺性 + streak 损失厌恶）；④ 成绩卡是本产品最强口碑点。
+- **复杂度**：中（一个 `stores/minigames/dailyChallenge.ts` 纯逻辑 + 注入 RNG + 一个 Hub 内挑战视图 + 成绩卡复用 ShareCard；升存档 v9→v10 加 `dailyChallenge` 子域）。
+- **数据可行性**：✅ 完全够（题全部从现成 `generateQuestion`/`pickRound` 派生，零新数据）。
+- **纯前端**：✅ 100%（午夜刷新 = 本地日期种子；"全员同题"靠确定性种子，无需后端同步）。
 
-- **🔴-2 新游戏 #1 = 高低牌 Higher / Lower**【**硬性交付**】
-  角色 `popularity_score` / 番剧 `rating_rank` / `date` 三维度（**不用裸 rating_score**）；连对 streak，错即结算；纯函数 + 注入 RNG + 特征测试。接经济（里程碑发知识点，**每日封顶防刷**）+ 持久化 `bestStreak`。**ROI 最高、最该第一个做、最强差异化（独有真实数据）。**
+**🔴-2：把小游戏焊进留存引擎（每日任务 + 成就联动）—— 与 🔴-1 是一个功能包**
+- **是什么**（三个零架构改动的小改）：
+  1. **每日任务加"玩小游戏"类型**：`config/dailyTasks.ts` 的 `DailyTaskType` 加 `minigame`，加 1 条日任务（如"完成 1 次每日挑战"或"玩 1 局小游戏"）+ 可选 1 条周任务；在 `settleHigherLower`/`settleQuiz`/每日挑战完成处调 `daily.markProgress('minigame')`（埋点机制现成，`markProgress` 自动遍历日/周任务）。
+  2. **小游戏成就**：`config/achievements.ts` 的 `AchievementEvent` 加 `minigame`，加一组成就（如"高低牌 10 连胜""Quiz 答对 50 题""每日挑战连续 7 天"），在结算处调 `achievements.check('minigame', {...})`（`check` 机制现成）。
+  3. **红点**：`App.vue` 给「🎮 小游戏」导航加红点——"今日挑战未完成"或"有小游戏成就可领"（红点机制现成，纯派生）。
+- **为什么是它**：这是把两套现成好系统焊起来，**单位投入的留存收益是全产品最高的**——填的是 Phase 1 指出的最大结构性断点。Duolingo 的核心洞察就是"共享指标把 streak/任务/成就串起来"。
+- **复杂度**：低（改 2 个 config + 加 ~3 处埋点调用 + 1 处红点派生；无新 store、无架构改动）。
+- **数据可行性**：✅（纯 config + 埋点）。
+- **纯前端**：✅ 100%。
 
-- **🔴-3 新游戏 #2 = 番剧 Quiz（4 选 1）或 猜番剧（剪影）二选一**【**硬性交付**】
-  - 选 **Quiz**：知识型、题库自动派生、与猜角色调性差异大（推荐，丰富 Hub 玩法谱）。
-  - 选 **猜番剧**：与猜角色对称、Canvas 复用率最高、复杂度最低（保守稳妥）。
-  - **Planner 决策建议**：若本轮想"省力稳交付"选猜番剧（复用猜角色）；若想"玩法多样性"选 Quiz。**至此 Hub 内 ≥3 游戏，硬性交付达成。**
+> **本轮选型建议**：🔴-1 + 🔴-2 作为**一个连贯功能包**交付——每日挑战是"骨"，留存联动是"焊点"。两者共用同一批基建，分开做反而割裂。若工作量需取舍：**先 🔴-2（半天级、零风险、立刻让小游戏对留存引擎可见），再 🔴-1（每日挑战，本轮核心 wow）**。
 
-- **🔴-4 存档升 v8：新增 `minigames` 域**【服务硬性交付】
-  各游戏 `highScore`/`bestStreak` + 累计游玩数持久化。三处同改 + 迁移 + 测试，**不动 v7 既有 `guess` 字段与断言**（新游戏单开域更安全）。
+### 🟡 Important
 
-### 🟡 Important（显著提升完整度）
+**🟡-3：小游戏统计 / "我的数据画像"仪表盘**
+- Hub 内或独立页聚合三游戏 highScore/bestStreak/playCount + 每日挑战 streak + 历史。顺带把 `guess.ts` 的 `gameRecords` 接通（持久化或至少会话内展示），消化死代码。
+- 复杂度：中 · 数据可行性 ✅（全部已存在）· 纯前端 ✅。可作第 8 轮主项。
 
-- **🟡-1 每日挑战（全员同种子）**【强化硬性交付的留存价值】
-  用日期做 seed，每个游戏每天一把全员同题；完成发"每日挑战"奖励（每天仅一次，仿 `lastLoginDate`）。**这是 Wordle/Higher-Lower 最强回访钩子，建议第 5–6 轮内至少给高低牌做。**
+**🟡-4：每日挑战成绩卡独立化（口碑放大）**
+- 若 🔴-1 先做了简版成绩展示，本项把它升级成精致的剧透安全分享卡（Wordle emoji 网格风 + 品牌色）。
+- 复杂度：低-中（复用 ShareCard）· 数据 ✅ · 纯前端 ✅。
 
-- **🟡-2 小游戏接入每日/周任务**【复用现成留存机器】
-  `config/dailyTasks.ts` 加任务类型 `minigame`（"今日玩 1 局小游戏" / "本周玩 10 局"）；Hub 结算处 `markProgress('minigame', 1)`。让小游戏成为日活引擎的一环。
+### 🟢 Nice-to-have
 
-- **🟡-3 小游戏导航红点**【复用现成红点系统】
-  `App.vue` 加 `minigamesHasSignal`（今日挑战未玩则亮）。仿 `homeHasSignal` 纯派生。
+**🟢-5：每日挑战"专家模式"** —— 连续到错为止，独立 streak + 专家成就。复杂度低（复用现有连胜逻辑）· 纯前端 ✅。
+**🟢-6：高低牌难度/混合维度** —— 缩小数值差距 = 更难，或多维度混合。复杂度低 · 纯前端 ✅。
+**🟢-7：清死代码** —— `getOriginalImageUrl`（永返空串）删除；`gameRecords` 若 🟡-3 不接通则删。复杂度极低。
 
-### 🟢 Nice-to-have（power-user / 体验优化）
+### 💡 Feature Idea（backlog，差异化创新）
 
-- **🟢-1 小游戏成就**：首胜 / 连胜 10 / 各游戏满分 / 每日挑战连续 7 天。扩 `achievements.ts` `check('minigame', {...})`。
-- **🟢-2 砍逐局历史 UI + 清死代码**：迁移时删猜角色会话态 `gameRecords` 列表 UI（替换为 Hub 汇总卡）、清 `guess.ts` 的 `getOriginalImageUrl()` 死代码。
-- **🟢-3 Canvas 像素化抽共享 composable**：猜角色 + 猜番剧共用 `usePixelate.ts`，避免复制粘贴。
-- **🟢-4 endless 与 daily 双模式切换**：每个游戏给"无尽（刷新最高）/ 每日挑战（同种子）"两个模式入口。
-
-### 💡 Feature Idea（差异化创新，入 backlog，第 7–9 轮）
-
-- **💡-1 可分享"今日战绩卡"**：每日挑战完成生成 Canvas 图（"高低牌连对 14 / Quiz 满分"），复用 `E3-T2` 的 `toBlob+a.download`。**口碑传播喇叭**——用户晒 streak 把产品带出去。
-- **💡-2 小游戏积分榜（前置 S12 后端）**：当前纯前端只能做"自己 vs 历史最高"。真正的全服排行榜需 S12 权威后端，**先在前端做好 bestStreak/统计的本地结构，为后端登榜铺路**。
-- **💡-3 年代排序 Timeline + 记忆翻牌**：作为 Hub 第 4、5 个游戏，丰富玩法谱（提案 #4/#5）。
-- **💡-4 "数据驱动" Higher-Lower 新维度**：随产品演进可扩展更多对比维（如 `anime_count` 登场作品数、`comprehensive_popularity`），保持高低牌长期新鲜。
-- **💡-5 每日挑战连续完成奖励**：仿连续登录递增，"连续 N 天完成每日挑战"给递增奖励，把小游戏纳入连签经济。
-
----
-
-## 给 Scout / Planner 的一句话
-
-本轮方向毫无争议——**先做 🔴-1（Hub + 猜角色迁入）+ 🔴-2（高低牌）+ 🔴-3（Quiz 或猜番剧）达成硬性交付**，🔴-4 存档随之升 v8。**高低牌是本轮 ROI 最高、差异化最强（独有 Bangumi 真实数据）的新游戏，应优先。** 🟡-1/🟡-2/🟡-3（每日挑战 + 任务 + 红点）把小游戏接入产品现成的留存机器，是"几乎零新基建、纯接线"的高 ROI 跟进项，能在第 6 轮内顺手完成。
+**💡-A：番剧 Tier List / 数据擂台** —— 用真实评分/人气让玩家排 Tier、对比"我的收藏 vs 全站平均"。竞品做不出（它们没有"你的收藏"层）。纯前端 ✅。
+**💡-B：每日挑战本地"幽灵榜"** —— 无后端也能做的伪排行：记录设备上历史每日得分，挑战时显示"昨天的你 / 你的历史最佳"作为对手（GeoGuessr "How'd I do" 的本地版）。纯前端 ✅。
+**💡-C：声优维度收集** —— 已知需后端吐 `角色id→声优` 映射（`main_characters[].actors` 被 server.py 剥离），跨栈项，维持暂缓。**非纯前端**。
 
 ---
 
-## Sources（竞品 / 品类研究）
+## 给 Scout / Planner 的接地提示
 
-- Higher/Lower 每日挑战与 streak：[playhigherlower.com](https://playhigherlower.com/) ｜ [/daily](https://playhigherlower.com/daily) ｜ [AO3dle Daily](https://ao3dle.com/blog/ao3dle-daily-higher-lower-game/)
-- Wordle 留存/分享/心理：[CNBC](https://www.cnbc.com/2022/02/15/bite-sized-fun-the-psychology-behind-your-sudden-wordle-obsession.html) ｜ [MoEngage](https://www.moengage.com/blog/wordle-viral-growth-story/) ｜ [CBS News](https://www.cbsnews.com/minnesota/news/what-is-wordle/)
-- 番剧 Quiz 品类：[Sporcle: Guess the Anime Character](https://www.sporcle.com/games/beeginey/guess-the-anime-character) ｜ [Sporcle: Anime by a Single Character](https://www.sporcle.com/games/Schicky/anime-by-character-slideshow) ｜ [Sporcle anime tag](https://www.sporcle.com/games/tags/anime)
-- HoYoLAB 网页活动 / 每日签到：[Fandom Wiki](https://genshin-impact.fandom.com/wiki/HoYoLAB_Community_Daily_Check-In) ｜ [Game8](https://game8.co/games/Genshin-Impact/archives/321404)
-- 记忆翻牌：[Anime - Match The Memory (Steam)](https://store.steampowered.com/app/1428290/Anime__Match_The_Memory/) ｜ [Match The Memory: Anime](https://matchthememory.com/Stephens-anime)
+- **每日挑战种子**：用 `mulberry32(dateNum)` 其中 `dateNum` 从 `YYYYMMDD` 派生（如 `20260617`）。`createSeededRng` 已导出（`engine/rng.ts:64`），`generateQuestion`/`pickRound` 已接受 `RNG` 参数 —— 直接喂种子化 RNG 即"全员同题"，零改动。
+- **streak 断签判定**：复用 `daily.ts` 的 `parseLocalKey` + `new Date().toDateString()` / 昨日 `toDateString()` 比对模式（已验证、已测），不要重造。
+- **联动埋点落点**：`userStore.settleHigherLower`（:312）/ `settleQuiz`（:325）/ 新每日挑战结算处加 `useDailyStore().markProgress('minigame')` + `useAchievementsStore().check('minigame', payload)`，与 `submitGuess`（:299 已有 `check('guess')`）同款。
+- **存档**：升 v9→v10，minigames 域加 `dailyChallenge: { lastPlayedDate, streak, bestStreak, history? }`；三处同改（schema / migrations / 装配器）+ 迁移缺省 + 往返测试，不破坏 v1~v9 断言。
+- **config 扩展零架构成本**：`DailyTaskType` 加 `'minigame'`、`AchievementEvent` 加 `'minigame'` 后，`markProgress` 的遍历和 `check` 的 event 分发自动覆盖——这是上一轮设计留下的红利。
+
+---
+
+*Reviewer 结论：本轮不是"再加一个小游戏"，而是**把已造好的两座金矿（留存引擎 + 小游戏 Hub）用一条隧道（每日挑战 + 联动埋点）打通**。这是全产品当前 ROI 最高、最纯前端、最有传播潜力的一步。建议 🔴-1 + 🔴-2 作为第 7 轮的连贯功能包。*

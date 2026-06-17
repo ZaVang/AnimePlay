@@ -24,6 +24,7 @@ function createInitialStats(): AchievementStats {
     guessStreak: 0,
     guessTotal: 0,
     maxTowerFloor: 0,
+    minigameTotal: 0,
   };
 }
 
@@ -66,6 +67,10 @@ export const useAchievementsStore = defineStore('achievements', () => {
         break;
       case 'codex':
         // 无累计计数，靠 payload.milestoneId 触发。
+        break;
+      case 'minigame':
+        // 每结算一局 +1；本局连胜走 payload.streak 直接判定。
+        stats.minigameTotal += 1;
         break;
     }
   }

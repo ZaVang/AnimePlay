@@ -11,6 +11,21 @@ beforeEach(() => {
   useProfileStore().currentUser = 'tester';
 });
 
+describe('小游戏成就（evolution-7 焊接）', () => {
+  it('首局解锁初体验；本局连胜≥10 解锁势如破竹', () => {
+    const ach = useAchievementsStore();
+    const u = ach.check('minigame', { streak: 10 });
+    expect(u).toContain('ach_minigame_1');
+    expect(u).toContain('ach_minigame_streak_10');
+  });
+  it('低连胜不解锁连胜成就', () => {
+    const ach = useAchievementsStore();
+    const u = ach.check('minigame', { streak: 2 });
+    expect(u).toContain('ach_minigame_1');
+    expect(u).not.toContain('ach_minigame_streak_10');
+  });
+});
+
 describe('事件驱动解锁', () => {
   it('抽到 UR 解锁「欧皇降临」并发奖（UR 同时满足 SSR 档成就）', () => {
     const ach = useAchievementsStore();
