@@ -1,3 +1,6 @@
 Flask==2.3.2
+# Werkzeug 必须钉在 Flask 2.3.x 兼容范围（Werkzeug 3.x 移除 __version__ 等，与 2.3.2 不兼容）；
+# 不钉则 pip 拉最新 3.x 致 Vercel serverless 构建/运行炸。与 backend/requirements.txt 对齐。
+Werkzeug==2.3.8
 flask-cors==4.0.0
 flask-compress==1.24
