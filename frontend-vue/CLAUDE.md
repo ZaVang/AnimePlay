@@ -62,7 +62,8 @@ Vue 3 + TypeScript + Pinia + TailwindCSS, built with Vite.
 The 2026-06 audit (`docs/项目审计报告-2026-06-12.md`) found these — be aware so you don't build on broken ground:
 
 - ~~core → stores reverse dependencies + 3 circular deps~~ **已在 S2-S4 解决**：规则全部入 `engine/`（lint 闸禁止向上依赖），不要再往 engine 里写 store import。
-- ~~半数技能是播报式假实现~~ **已在 S8a/b/c 解决**：88 条播报占位全部真实现或按可实现机制重设计（约 20 条描述已同步设计文档），播报表与播报机制整体删除。不要再造任何「描述≠行为」的技能——必须真实现并带特征测试。
+- ~~半数技能是播报式假实现~~ **已在 S8a/b/c + 2026-06 复审解决**：88 条播报占位真实现、播报表机制整体删除。**2026-06 全量复审**（132 技能 × 注册表交叉比对）确认 effectId **零未注册**，但仍查出 9 条「描述≠行为」残留——3 高危：`圣剑解放`/`精灵加护` 缺失的强度加成只在日志播报未落地、`魔法指导` 写入全仓无消费端的 `card_type_override`；6 中低危为描述过度宣称/粒度偏差。已全部补真或对齐：行为补真改 handler，描述对齐改 `docs/UR角色技能设计.md` 后重生成（轮回记忆经核实实战可用，clash.rewards 在 afterResolve 已填，无需改）。主动技「使用」按钮 `:disabled` 现也校验 `isSkillImplemented`，未实装技能不再空耗 TP。不要再造任何「描述≠行为」的技能——必须真实现 + 行为与描述一致 + 特征测试。
+- ~~抽卡技能静默失效（牌库抽空后所有抽牌无效且无提示）~~ **已在 2026-06 解决**：`engine/battle/resources.ts` `drawCards` 牌库不足时把弃牌堆洗回牌库续抽 + 改为「能抽几张抽几张」（注入 rng），真空时 store 层发通知。原实现 `deck.length < count` 整次静默作废、且弃牌堆从不重洗（`shuffleDeck` 只在开局调一次）→ 牌库单调递减到 0 后所有抽牌技能永久静默失效却照扣 TP/冷却。
 - ~~Economy has no transaction entry~~ **已在 S5 解决**：`profile.spend()/earn()` 是唯一货币入口，8 处组件直改已清零。不要再绕过它改货币。
 - ~~Save protocol gaps（presetSquads/towerProgress 刷新即丢）~~ **已在 S5 解决**：存档协议 v2 + 迁移。注意：后端写文件仍非原子（S10 加固），前端已做保存串行合并兜底。
 - ~~Battle no result screen~~ **已在 S6 解决**：结算面板 + matchRewards 奖励入账（engine/battle/matchRewards.ts）。

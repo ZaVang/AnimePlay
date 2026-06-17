@@ -61,7 +61,8 @@ const canRotate = computed(() => {
               <button
                 v-if="isMainDebater"
                 @click="emit('useSkill', skill)"
-                :disabled="!SkillSystem.canUseSkill(playerId, skill)"
+                :disabled="!isSkillImplemented(skill) || !SkillSystem.canUseSkill(playerId, skill)"
+                :title="!isSkillImplemented(skill) ? '该技能尚未实装，无法使用（避免空耗 TP）' : ''"
                 class="btn-use-skill"
               >
                 使用

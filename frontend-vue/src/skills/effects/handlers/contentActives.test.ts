@@ -234,4 +234,33 @@ describe('legacy 主动技 S8c 补真抽查', () => {
     persistentEffects.consumeOneShotBonuses('playerB', 'strength', ['日常']);
     expect(persistentEffects.getStrengthBonus('playerB', ['日常'])).toBe(0);
   });
+
+  it('圣剑解放：奇幻/战斗+4强度 + 己方声望-3（补真：原 +4 强度只播报未落地）', async () => {
+    const playerStore = usePlayerStore();
+    playerStore.playerA.reputation = 20;
+    await cast('珂朵莉_诺塔_瑟尼欧里斯_圣剑解放');
+    expect(persistentEffects.getStrengthBonus('playerA', ['奇幻'])).toBe(4);
+    expect(persistentEffects.getStrengthBonus('playerA', ['战斗'])).toBe(4);
+    expect(persistentEffects.getStrengthBonus('playerA', ['日常'])).toBe(0);
+    expect(playerStore.playerA.reputation).toBe(17);
+  });
+
+  it('精灵加护：双方声望+3 + 己方奇幻+1强度（补真：原奇幻+1只播报未落地）', async () => {
+    const playerStore = usePlayerStore();
+    playerStore.playerA.reputation = 20;
+    playerStore.playerB.reputation = 20;
+    await cast('艾米莉娅_精灵加护');
+    expect(playerStore.playerA.reputation).toBe(23);
+    expect(playerStore.playerB.reputation).toBe(23);
+    expect(persistentEffects.getStrengthBonus('playerA', ['奇幻'])).toBe(1);
+    expect(persistentEffects.getStrengthBonus('playerA', ['战斗'])).toBe(0);
+  });
+
+  it('魔法指导：选中手牌被真实标记 __treatedAsAnyType（替代原零消费的 card_type_override）', async () => {
+    const playerStore = usePlayerStore();
+    playerStore.playerA.hand = [animeCard(1, ['奇幻']), animeCard(2, ['战斗'])];
+    await cast('洛琪希_米格路迪亚_格雷拉特_魔法指导'); // 无 UI 时 selectFromHand 取 hand[0]
+    expect((playerStore.playerA.hand[0] as { __treatedAsAnyType?: boolean }).__treatedAsAnyType).toBe(true);
+    expect((playerStore.playerA.hand[1] as { __treatedAsAnyType?: boolean }).__treatedAsAnyType).toBeUndefined();
+  });
 });

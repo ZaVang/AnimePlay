@@ -149,8 +149,14 @@ export const usePlayerStore = defineStore('players', {
     // Draw cards for a specific player
     drawCards(playerId: 'playerA' | 'playerB', count: number) {
       const player = this[playerId];
-      const newState = resources.drawCards(player, count);
+      const before = player.hand.length;
+      const newState = resources.drawCards(player, count, defaultRng);
       this[playerId] = { ...this[playerId], ...newState };
+      // 牌库+弃牌堆都空、确实一张没抽到时给出提示（避免「扣了费却静默不抽」）
+      if (count > 0 && this[playerId].hand.length === before) {
+        useGameStore().addNotification('牌库已空，无牌可抽', 'warning');
+        useHistoryStore().addLog(`${this[playerId].name} 的牌库与弃牌堆均已空，无法抽牌。`, 'info');
+      }
     },
 
     // Discard a card from hand

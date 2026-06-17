@@ -36,10 +36,25 @@ describe('drawCards', () => {
     expect(r.deck.map(c => c.id)).toEqual([1]);
   });
 
-  it('牌库不足 count 张时整次抽牌不发生（原行为）', () => {
+  it('牌库不足 count 张时「能抽几张抽几张」，不再整次静默作废', () => {
     const p = player({ deck: [card(1)] });
     const r = drawCards(p, 2);
-    expect(r).toBe(p); // 状态原样返回
+    expect(r.hand.map(c => c.id)).toEqual([1]);
+    expect(r.deck).toEqual([]);
+  });
+
+  it('牌库抽空时把弃牌堆洗回牌库续抽（传 rng 洗牌，不丢牌）', () => {
+    const p = player({ deck: [card(1)], discardPile: [card(2), card(3)] });
+    const r = drawCards(p, 3, createSeededRng(42));
+    expect(r.hand.map(c => c.id).sort((a, b) => a - b)).toEqual([1, 2, 3]);
+    expect(r.discardPile).toEqual([]);
+    expect(r.deck).toEqual([]);
+  });
+
+  it('牌库与弃牌堆都空时抽 0 张（不报错、不死循环）', () => {
+    const p = player({ deck: [], discardPile: [] });
+    const r = drawCards(p, 2);
+    expect(r.hand).toEqual([]);
   });
 
   it('手牌到达上限 10 张后中止', () => {

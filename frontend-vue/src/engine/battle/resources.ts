@@ -35,19 +35,26 @@ export function gainTp(player: PlayerState, amount: number): number {
 
 /**
  * 从牌库抽 count 张到手牌。
- * 牌库不足 count 张时整次抽牌不发生（保持原行为）；抽牌中手牌到达上限则中止。
+ * - 牌库抽空时把弃牌堆洗回牌库续抽（传入 rng 则洗牌，否则按原顺序续上）；
+ * - 牌库 + 弃牌堆都空时停止——「能抽几张抽几张」，不再「不足 count 就整次静默作废」；
+ * - 抽牌中手牌到达上限 MAX_HAND_SIZE 则中止。
+ * 实际抽到张数由调用方按 hand 长度差判断（牌真抽空时据此提示）。
  */
-export function drawCards(player: PlayerState, count: number): PlayerState {
-  if (player.deck.length < count) return player;
-
+export function drawCards(player: PlayerState, count: number, rng?: RNG): PlayerState {
   const deck = [...player.deck];
   const hand = [...player.hand];
+  let discardPile = [...player.discardPile];
   for (let i = 0; i < count; i++) {
     if (hand.length >= MAX_HAND_SIZE) break;
+    if (deck.length === 0) {
+      if (discardPile.length === 0) break; // 牌库与弃牌堆都空，无牌可抽
+      deck.push(...(rng ? rng.shuffle(discardPile) : discardPile));
+      discardPile = [];
+    }
     const card = deck.pop();
     if (card) hand.push(card);
   }
-  return { ...player, deck, hand };
+  return { ...player, deck, hand, discardPile };
 }
 
 /** 从手牌弃一张到弃牌堆；找不到该卡时状态原样返回。 */

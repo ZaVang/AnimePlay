@@ -225,11 +225,10 @@ const legacyHandlers: Record<string, EffectHandler> = {
     const historyStore = useHistoryStore();
     const gameStore = useGameStore();
     const interactionSystem = InteractionSystem.getInstance();
-    const persistentSystem = persistentEffects;
-    
+
     const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
     historyStore.addLog(`${name} 进行魔法指导：选择一张手牌视为任意类型。`, 'info');
-    
+
     // 选择己方一张手牌
     try {
       const result = await interactionSystem.selectFromHand(ctx.playerId, {
@@ -239,17 +238,15 @@ const legacyHandlers: Record<string, EffectHandler> = {
         title: '魔法指导',
         description: '选择一张手牌，本回合打出时可视为任意类型'
       });
-      
+
       if (!result.cancelled && result.selected.length > 0) {
-        // 标记选中的卡牌本回合视为万能类型（这里需要进一步的系统支持）
+        // 补真：直接给选中的卡牌打上「任意类型」标志——engine/battle/strength.ts 的
+        // auraStrengthBonus 真实消费 __treatedAsAnyType（与芙莉莲_魔法精通同机制）。
+        // 原写入的 card_type_override 持续效果全仓无消费端，类型覆盖永不生效。
+        const picked = result.selected[0] as typeof result.selected[0] & { __treatedAsAnyType?: boolean };
+        picked.__treatedAsAnyType = true;
         gameStore.addNotification('魔法指导：手牌已强化为万能类型', 'info');
-        persistentSystem.addEffect({
-          playerId: ctx.playerId,
-          type: 'card_type_override',
-          duration: 1,
-          data: { cardId: result.selected[0].id, newType: 'any' },
-          description: '魔法指导：卡牌视为任意类型'
-        });
+        historyStore.addLog(`${name} 的魔法指导：[${result.selected[0].name}] 本回合视为任意类型。`, 'info');
       }
     } catch (error) {
       console.warn('Card selection not available:', error);
@@ -478,9 +475,11 @@ const legacyHandlers: Record<string, EffectHandler> = {
     const opponentId = ctx.playerId === 'playerA' ? 'playerB' : 'playerA';
     
     // 双方声望各+3，己方奇幻类卡牌本回合+1强度
+    // （补真：原仅加声望、奇幻+1强度只在日志播报未落地；现真实施加加成）
     playerStore.changeReputation(ctx.playerId, 3);
     playerStore.changeReputation(opponentId, 3);
-    
+    persistentEffects.addCardTypeStrengthBonus(ctx.playerId, '奇幻', 1, 1);
+
     const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
     historyStore.addLog(`${name} 获得精灵加护：双方声望+3，奇幻卡牌+1强度。`, 'info');
   },
@@ -543,10 +542,13 @@ const legacyHandlers: Record<string, EffectHandler> = {
   '珂朵莉_诺塔_瑟尼欧里斯_圣剑解放': (ctx) => {
     const playerStore = usePlayerStore();
     const historyStore = useHistoryStore();
-    
+
     // 本回合奇幻和战斗类卡牌+4强度，但己方声望-3
+    // （补真：原仅扣声望、+4强度只在日志播报未落地 → 退化成纯负面技；现真实施加加成）
+    persistentEffects.addCardTypeStrengthBonus(ctx.playerId, '奇幻', 4, 1);
+    persistentEffects.addCardTypeStrengthBonus(ctx.playerId, '战斗', 4, 1);
     playerStore.changeReputation(ctx.playerId, -3);
-    
+
     const name = ctx.playerId === 'playerA' ? playerStore.playerA.name : playerStore.playerB.name;
     historyStore.addLog(`${name} 圣剑解放：奇幻/战斗卡牌+4强度，代价声望-3。`, 'info');
   },
