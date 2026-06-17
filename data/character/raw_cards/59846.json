@@ -1,0 +1,76 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/16/59846_crt_5PYvw.jpg?r=1726452509",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d6/16/59846_crt_5PYvw.jpg?r=1726452509",
+        "large": "https://lain.bgm.tv/pic/crt/l/d6/16/59846_crt_5PYvw.jpg?r=1726452509",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/16/59846_crt_5PYvw.jpg?r=1726452509"
+    },
+    "summary": "夏休みを忘れた少女\r\n\r\n身長：155cm\r\n体重：39kg\r\n3サイズ：B81 W56 H83\r\n趣味：料理\r\n好物：スイカバー\r\n座右の銘：明日には明日の風を吹く\r\n原画：Na-Ga\r\nCV：小原好美\r\n\r\nクールで、人見知りをする島の少女。\r\n親しいのは肉親である祖父ぐらいで、島では孤立している。\r\n\r\n一人でいる期間が長かったせいで人との付き合い方がわからず、時に人の心を考えないことも言ってしまうこともある。\r\n\r\n島の外れなどで海を眺めている事が多い。\r\n\r\n「私にあまりかまわないほうがいいよ」",
+    "name": "鳴瀬しろは",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鸣濑白羽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "鷹原 しろは"
+                },
+                {
+                    "k": "日文名",
+                    "v": "鳴瀬 しろは"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なるせ しろは"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Naruse Shiroha"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月8日"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "体重",
+            "value": "39kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B81/W56/H83"
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        }
+    ],
+    "stat": {
+        "comments": 194,
+        "collects": 784
+    },
+    "id": 59846,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        363957
+    ]
+}

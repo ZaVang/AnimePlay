@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/90/106398_crt_TIx8s.jpg?r=1645130947",
+        "grid": "https://lain.bgm.tv/pic/crt/g/92/90/106398_crt_TIx8s.jpg?r=1645130947",
+        "large": "https://lain.bgm.tv/pic/crt/l/92/90/106398_crt_TIx8s.jpg?r=1645130947",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/90/106398_crt_TIx8s.jpg?r=1645130947"
+    },
+    "summary": "藤野と同級生の不登校生。四コマ漫画を連載する藤野に、秘かに憧れを抱いているが、実は隠れた画力の持ち主。",
+    "name": "京本",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "京本"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Kyomoto"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 24,
+        "collects": 70
+    },
+    "id": 106398,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        480441
+    ]
+}

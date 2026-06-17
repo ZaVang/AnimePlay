@@ -1,0 +1,55 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/27/167827_crt_dtI9L.jpg?r=1748422081",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ee/27/167827_crt_dtI9L.jpg?r=1748422081",
+        "large": "https://lain.bgm.tv/pic/crt/l/ee/27/167827_crt_dtI9L.jpg?r=1748422081",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/27/167827_crt_dtI9L.jpg?r=1748422081"
+    },
+    "summary": "玛秋驾驶的神秘最新型MS，作为博美拉尼亚的所属机体参与军团战。\r\n\r\nマチュが操縦する謎の最新鋭モビルスーツ。ポメラニアンズの所属機としてクランバトルに参加する。",
+    "name": "gMS-Ω GQuuuuuuX",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "夸克斯高达"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ガンダム·クアクス"
+                },
+                {
+                    "v": "吉夸克斯"
+                },
+                {
+                    "k": "编号",
+                    "v": "gMS-Ω"
+                },
+                {
+                    "k": "英文名",
+                    "v": "GUNDAM Kwucks"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ジークアクス"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 51,
+        "collects": 20
+    },
+    "id": 167827,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        526816
+    ]
+}

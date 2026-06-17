@@ -1,0 +1,89 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/b9/133285_crt_sqqFJ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ad/b9/133285_crt_sqqFJ.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ad/b9/133285_crt_sqqFJ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/b9/133285_crt_sqqFJ.jpg"
+    },
+    "summary": "「にゃむち」の愛称で人気上昇中の美容系動画投稿者。メイク動画がメインだが、「ドラムを叩いてみた」などのやってみた系など様々なジャンルに挑戦している。両利きでドラムの叩き方が派手で特殊。\r\n\r\n[mask]Ave Mujica Dr.\r\n\r\n「にゃむち」の愛称で活動中の動画投稿者。メイク動画などの美容系をメインに投稿しているが、仕事の幅を広げるべく様々なジャンルに挑戦している。両利きで、ドラムの叩き方に華がある。[/mask]",
+    "name": "祐天寺にゃむ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "祐天寺若麦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "アモーリス"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "祐天寺喵梦"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Amoris"
+                },
+                {
+                    "k": "日文名",
+                    "v": "祐天寺 にゃむ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ゆうてんじ にゃむ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yūtenji Nyamu"
+                },
+                {
+                    "k": "昵称",
+                    "v": "にゃむち"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月1日"
+        },
+        {
+            "key": "身高",
+            "value": "164cm"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "官网（It's MyGO!!!!!）",
+                    "v": "https://anime.bang-dream.com/mygo/character/nyamu/"
+                },
+                {
+                    "k": "官网（Ave Mujica）",
+                    "v": "https://anime.bang-dream.com/avemujica/character/nyamu/"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 320,
+        "collects": 181
+    },
+    "id": 133285,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        454684
+    ]
+}

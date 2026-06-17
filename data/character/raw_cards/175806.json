@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/11/175806_crt_0hOUU.jpg?r=1747324468",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c4/11/175806_crt_0hOUU.jpg?r=1747324468",
+        "large": "https://lain.bgm.tv/pic/crt/l/c4/11/175806_crt_0hOUU.jpg?r=1747324468",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/11/175806_crt_0hOUU.jpg?r=1747324468"
+    },
+    "summary": "",
+    "name": "ネロ(人型)",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "尼洛（人形态）"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 1
+    },
+    "id": 175806,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        506677
+    ]
+}

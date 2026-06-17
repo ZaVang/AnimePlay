@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/f7/112712_crt_MPGqI.jpg?r=1721877192",
+        "grid": "https://lain.bgm.tv/pic/crt/g/32/f7/112712_crt_MPGqI.jpg?r=1721877192",
+        "large": "https://lain.bgm.tv/pic/crt/l/32/f7/112712_crt_MPGqI.jpg?r=1721877192",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/f7/112712_crt_MPGqI.jpg?r=1721877192"
+    },
+    "summary": "元傭兵の異端審問官。常にけだるげな態度をとっている。",
+    "name": "ノヴァク",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "诺瓦克"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 36,
+        "collects": 19
+    },
+    "id": 112712,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        389156
+    ]
+}

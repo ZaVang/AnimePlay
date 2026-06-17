@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/07/74254_crt_kf0IM.jpg?r=1577368955",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cf/07/74254_crt_kf0IM.jpg?r=1577368955",
+        "large": "https://lain.bgm.tv/pic/crt/l/cf/07/74254_crt_kf0IM.jpg?r=1577368955",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/07/74254_crt_kf0IM.jpg?r=1577368955"
+    },
+    "summary": "高2（17歳）\r\n都市にあるエリート育成校、通称アカデミーに在籍していたが、ある事情から休学。祖母の暮らす海辺の町へと移り住んだ。\r\n幼い頃に事故で母と右足を失っており、そのトラウマから暗く静かな場所にいると発作に襲われる。\r\n高価なロボット義足を買うため、海洋地質学者だった祖母の潜水艇で海に沈んだ遺産をサルベージしようとする。",
+    "name": "斑鳩夏生",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "斑鸠夏生"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いかるが なつき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ikaruga Natsuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 19,
+        "collects": 14
+    },
+    "id": 74254,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        397604
+    ]
+}

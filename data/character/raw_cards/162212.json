@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/16/162212_crt_b1Est.jpg?r=1722327439",
+        "grid": "https://lain.bgm.tv/pic/crt/g/82/16/162212_crt_b1Est.jpg?r=1722327439",
+        "large": "https://lain.bgm.tv/pic/crt/l/82/16/162212_crt_b1Est.jpg?r=1722327439",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/16/162212_crt_b1Est.jpg?r=1722327439"
+    },
+    "summary": "エブリマートのアルバイト。見た目も言動もチャラく、一見いい加減なようだが、情に厚く面倒見のいい兄貴的な一面もある。ひょんなことから常宏と出会って以降は、何かと気に掛け世話を焼くようになる。",
+    "name": "躑躅森貴明",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "踯躅森贵明"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "躑躅森 貴明"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "つつじもり たかあき"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 34,
+        "collects": 26
+    },
+    "id": 162212,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        505895
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/b1/109778_crt_2tauv.jpg?r=1743949535",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3a/b1/109778_crt_2tauv.jpg?r=1743949535",
+        "large": "https://lain.bgm.tv/pic/crt/l/3a/b1/109778_crt_2tauv.jpg?r=1743949535",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/b1/109778_crt_2tauv.jpg?r=1743949535"
+    },
+    "summary": "モニカの使い魔。\r\n黒猫の姿をしているが人語を理解し、しゃべることもできる。\r\nモニカが辛そうにしているときは、肉球を触らせ、癒してあげることも。\r\nモニカ以外の人間の名前を覚えるのは苦手。\r\nただし、人間が書いた小説を読むことが好きで、小説家ダスティン・ギュンターの大ファン。",
+    "name": "ネロ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "尼洛"
+        },
+        {
+            "key": "别名",
+            "value": []
+        }
+    ],
+    "stat": {
+        "comments": 16,
+        "collects": 23
+    },
+    "id": 109778,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        506677
+    ]
+}

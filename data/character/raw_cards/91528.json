@@ -1,0 +1,81 @@
+{
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/63/91528_crt_r6D2w.jpg?r=1614066898",
+        "grid": "https://lain.bgm.tv/pic/crt/g/53/63/91528_crt_r6D2w.jpg?r=1614066898",
+        "large": "https://lain.bgm.tv/pic/crt/l/53/63/91528_crt_r6D2w.jpg?r=1614066898",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/63/91528_crt_r6D2w.jpg?r=1614066898"
+    },
+    "summary": "愛想のない言動で冷たく受け取られがちだが、心根は優しい女性。\r\n自分は何をすべきなのか、何のために存在しているのかを、常に自分に問いかけている。\r\n\r\n言行不讨好人，常常给人一种冷淡的印象，但本性其实很温柔的女性。\r\n她一直在不断询问自己应该做什么？为何而存在？\r\n\r\n名字来源为韩国女团偶像。英文版名字为Gina.",
+    "name": "ジナ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "吉娜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Gina"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ジナ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ジナ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Jina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月15日"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://d-mebius.com/gnosias"
+        },
+        {
+            "key": "识别年龄",
+            "value": "21"
+        },
+        {
+            "key": "出身地",
+            "value": "地球"
+        },
+        {
+            "key": "职业",
+            "value": "航宙管制员"
+        }
+    ],
+    "stat": {
+        "comments": 18,
+        "collects": 72
+    },
+    "id": 91528,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        526448
+    ]
+}

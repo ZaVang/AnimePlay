@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/5a/153904_crt_TBT77.jpg?r=1710305729",
+        "grid": "https://lain.bgm.tv/pic/crt/g/70/5a/153904_crt_TBT77.jpg?r=1710305729",
+        "large": "https://lain.bgm.tv/pic/crt/l/70/5a/153904_crt_TBT77.jpg?r=1710305729",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/5a/153904_crt_TBT77.jpg?r=1710305729"
+    },
+    "summary": "シカ部部員。虎視虎子の妹にして大のシスコン。\r\n姉との時間を邪魔するものは全員敵という危険思想をもっているメンヘラ。",
+    "name": "虎視餡子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "虎视馅子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "虎視 餡子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こし あんこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Koshi Anko"
+                },
+                {
+                    "k": "昵称",
+                    "v": "あんこ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 11,
+        "collects": 34
+    },
+    "id": 153904,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        484761
+    ]
+}

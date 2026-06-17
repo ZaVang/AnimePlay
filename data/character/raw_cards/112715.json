@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/1c/112715_crt_Y5mF5.jpg?r=1725507203",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cd/1c/112715_crt_Y5mF5.jpg?r=1725507203",
+        "large": "https://lain.bgm.tv/pic/crt/l/cd/1c/112715_crt_Y5mF5.jpg?r=1725507203",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/1c/112715_crt_Y5mF5.jpg?r=1725507203"
+    },
+    "summary": "修道士。「人生を特別にする瞬間」を求め、教会の規律に従うことなく純粋に「知」を追求した結果、眼を焼かれ田舎村に左遷された。知識量、計算力など並外れた頭脳をもつ。右目に眼帯をしている。",
+    "name": "バデーニ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "巴德尼"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 29
+    },
+    "id": 112715,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        389156
+    ]
+}

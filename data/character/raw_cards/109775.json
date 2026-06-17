@@ -1,0 +1,82 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6d/71/109775_crt_MIxmI.jpg?r=1753887970",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6d/71/109775_crt_MIxmI.jpg?r=1753887970",
+        "large": "https://lain.bgm.tv/pic/crt/l/6d/71/109775_crt_MIxmI.jpg?r=1753887970",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6d/71/109775_crt_MIxmI.jpg?r=1753887970"
+    },
+    "summary": "王国の最高峰の魔術師・七賢人に史上最年少で選ばれた少女。二つ名は〈沈黙の魔女〉。\r\n魔術に必須とされる詠唱を省略した【無詠唱魔術】を扱うことができる唯一無二の魔術師。\r\n魔術と数学をこよなく愛し、本と書類に囲まれながら、山奥の小屋に引きこもっている。\r\n極度の人見知りで一般常識にも疎い。\r\nモニカ・ノートンと名を変え、第二王子護衛のためセレンディア学園に潜入する。",
+    "name": "モニカ・エヴァレット",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莫妮卡·艾瓦雷特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "假名",
+                    "v": "モニカ・ノートン（莫妮卡·诺顿）"
+                },
+                {
+                    "k": "曾用名",
+                    "v": "モニカ・レイン（莫妮卡·雷因）"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Monica Everett"
+                },
+                {
+                    "k": "日文名",
+                    "v": "モニカ・エヴァレット"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "もにか えゔぁれっと"
+                },
+                {
+                    "k": "称号",
+                    "v": "沈黙の魔女"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月1号（冬招月初週一日）"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "公式サイト",
+                    "v": "https://silentwitch.net/character/#01"
+                }
+            ]
+        },
+        {
+            "key": "就读学校",
+            "value": "ミネルヴァ魔術学院/セレンディア学園"
+        }
+    ],
+    "stat": {
+        "comments": 122,
+        "collects": 380
+    },
+    "id": 109775,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        506677
+    ]
+}

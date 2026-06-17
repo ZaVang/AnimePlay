@@ -1,0 +1,73 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 4,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/ca/59848_crt_YlLXl.jpg?r=1682925900",
+        "grid": "https://lain.bgm.tv/pic/crt/g/aa/ca/59848_crt_YlLXl.jpg?r=1682925900",
+        "large": "https://lain.bgm.tv/pic/crt/l/aa/ca/59848_crt_YlLXl.jpg?r=1682925900",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/ca/59848_crt_YlLXl.jpg?r=1682925900"
+    },
+    "summary": "海賊船を探すお嬢様\r\n\r\n身長：158cm\r\n体重：43kg\r\n3サイズ：B86 W56 H85\r\n趣味：ボトルシップ\r\n好物：三角形の秘密を持ったお菓子\r\n座右の銘：心に冒険を\r\n原画：Na-Ga\r\nCV：嶺内ともみ\r\n\r\n島で出会った不思議な少女。\r\nいつでも大きなスーツケースを引いている。\r\n\r\n中に何が入っているのかは絶対教えてくれない。\r\nこの島には主人公と同じくこの夏だけ滞在する。\r\n\r\n何か探しものがある様で、手には古ぼけた地図を持って島をさまよっている。\r\nその地図については「宝の地図なんだよ」と彼女は言う。\r\n\r\n「行くよ。 もう一度、海賊船のある場所まで」",
+    "name": "久島鴎",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "久岛鸥"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "久島 鴎"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くしま かもめ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kushima Kamome"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月4日"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "体重",
+            "value": "43kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B86/W56/H85"
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        }
+    ],
+    "stat": {
+        "comments": 205,
+        "collects": 678
+    },
+    "id": 59848,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        363957
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 14,
+    "birth_year": 2006,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9d/84/115179_crt_fgHSk.jpg?r=1723994081",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9d/84/115179_crt_fgHSk.jpg?r=1723994081",
+        "large": "https://lain.bgm.tv/pic/crt/l/9d/84/115179_crt_fgHSk.jpg?r=1723994081",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9d/84/115179_crt_fgHSk.jpg?r=1723994081"
+    },
+    "summary": "糊涂的魔女女孩。个性冒失，一被人夸奖马上就会得意忘形。\r\n梦想是成为能助人的出色魔女。喜欢守仁，但现在似乎还是单相思……？\r\n\r\n[简介原文]\r\nドジっ子魔女。おっちょこちょいな性格で褒められるとすぐ、調子に乗ってしまう。人を助けられる立派な魔女になるのが夢。モリヒトのことが好きだが、今はまだ片思い中…？",
+    "name": "若月ニコ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "若月妮可"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Wakatsuki Nico"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "わかつき ニコ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2006年4月14日"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "体重",
+            "value": "49kg"
+        }
+    ],
+    "stat": {
+        "comments": 78,
+        "collects": 240
+    },
+    "id": 115179,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        506672
+    ]
+}

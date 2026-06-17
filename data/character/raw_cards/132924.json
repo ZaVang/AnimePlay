@@ -1,0 +1,81 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/55/132924_crt_tDmME.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dc/55/132924_crt_tDmME.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/dc/55/132924_crt_tDmME.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/55/132924_crt_tDmME.jpg"
+    },
+    "summary": "花咲川女子学園の高校1年生。ベースの腕前はプロレベルで、サポートとして30のバンドを掛け持ちしている。立希とは同じクラスで、よくちょっかいをかけている。\r\n\r\n[mask]Ave Mujica Ba.\r\n\r\n花咲川女子学園の高校1年生。初華、立希とは同じクラス。ベースの腕前はプロと遜色がなく、サポートとして30のバンドを掛け持つ。Ave Mujicaではメンバーのスケジュール調整など、裏方の作業をきっちりこなしている。[/mask]",
+    "name": "八幡海鈴",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "八幡海铃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ティモリス"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Timoris"
+                },
+                {
+                    "k": "日文名",
+                    "v": "八幡 海鈴"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やはた うみり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yahata Umiri"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月7日"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "官网（It's MyGO!!!!!）",
+                    "v": "https://anime.bang-dream.com/mygo/character/umiri/"
+                },
+                {
+                    "k": "官网（Ave Mujica）",
+                    "v": "https://anime.bang-dream.com/avemujica/character/umiri/"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 171,
+        "collects": 265
+    },
+    "id": 132924,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        454684
+    ]
+}

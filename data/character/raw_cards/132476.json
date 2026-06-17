@@ -1,0 +1,81 @@
+{
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 14,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ae/84/132476_crt_HI5Do.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ae/84/132476_crt_HI5Do.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ae/84/132476_crt_HI5Do.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ae/84/132476_crt_HI5Do.jpg"
+    },
+    "summary": "羽丘女子学園の高校1年生。元CRYCHICのメンバーで作曲とキーボードを担当していた。よく学校の音楽室でピアノを弾いている。\r\n\r\n[mask]Ave Mujica Key.\r\n\r\n羽丘女子学園の高校1年生。豊川グループの令嬢であり、気品のある言葉遣いで話す。メンバー全員の人生を預かる覚悟でAve Mujicaを結成した。Ave Mujicaの世界観を守るべく、心血を注ぐ。[/mask]",
+    "name": "豊川祥子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "丰川祥子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "オブリビオニス"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Oblivionis"
+                },
+                {
+                    "k": "日文名",
+                    "v": "豊川 祥子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "とがわ さきこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Togawa Sakiko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月14日"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "官网（It's MyGO!!!!!）",
+                    "v": "https://anime.bang-dream.com/mygo/character/sakiko/"
+                },
+                {
+                    "k": "官网（Ave Mujica）",
+                    "v": "https://anime.bang-dream.com/avemujica/character/sakiko/"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 925,
+        "collects": 748
+    },
+    "id": 132476,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        454684
+    ]
+}

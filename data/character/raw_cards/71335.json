@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/9e/71335_crt_k8c38.jpg?r=1670404416",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5c/9e/71335_crt_k8c38.jpg?r=1670404416",
+        "large": "https://lain.bgm.tv/pic/crt/l/5c/9e/71335_crt_k8c38.jpg?r=1670404416",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/9e/71335_crt_k8c38.jpg?r=1670404416"
+    },
+    "summary": "本作主角，16岁。性格轻浮，背负着父亲生前向黑社会欠下的巨额债务，绝望时偶遇受伤的链锯恶魔（波奇塔）并以救他为条件和其达成契约，为还钱开始替黑社会当恶魔猎人。每天过着吃垃圾、睡地板和被黑社会奴役的生活，可谓人生一片黑暗。为早日还清债款还变卖掉了自己的多个器官。\r\n\r\n『チェンソーの悪魔』ポチタと共にデビルハンターとして暮らす。\r\n親が遺した借金返済のため、デビルハンターとして働いていた。\r\nしかし、裏切りに遭い殺されてしまう。\r\nそして、ポチタと契約し、\r\n悪魔の心臓 を持つもの『 チェンソーマン 』となる。",
+    "name": "デンジ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "电次"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "淀治"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 83,
+        "collects": 172
+    },
+    "id": 71335,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        470660
+    ]
+}

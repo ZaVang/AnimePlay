@@ -1,0 +1,59 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/9b/162156_crt_tS4oC.jpg?r=1741526778",
+        "grid": "https://lain.bgm.tv/pic/crt/g/29/9b/162156_crt_tS4oC.jpg?r=1741526778",
+        "large": "https://lain.bgm.tv/pic/crt/l/29/9b/162156_crt_tS4oC.jpg?r=1741526778",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/9b/162156_crt_tS4oC.jpg?r=1741526778"
+    },
+    "summary": "ハッピーを広めるため\r\n地球に来たハッピー星人。\r\n見た目がタコに似ているため、\r\nしずかにはタコピーと呼ばれている。\r\n無垢すぎるが故に、\r\nずれた言動をすることもしばしば。",
+    "name": "タコピー",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "章鱼哔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "本名",
+                    "v": "んうえいぬkf"
+                },
+                {
+                    "v": "章鱼噼"
+                },
+                {
+                    "v": "章鱼P"
+                },
+                {
+                    "k": "日文名",
+                    "v": "タコピー"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たこぴー"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takopī"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 81,
+        "collects": 66
+    },
+    "id": 162156,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        527620
+    ]
+}

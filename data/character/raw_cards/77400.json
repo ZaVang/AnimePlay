@@ -1,0 +1,57 @@
+{
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 14,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/cb/77400_crt_w4H33.jpg?r=1753888054",
+        "grid": "https://lain.bgm.tv/pic/crt/g/29/cb/77400_crt_w4H33.jpg?r=1753888054",
+        "large": "https://lain.bgm.tv/pic/crt/l/29/cb/77400_crt_w4H33.jpg?r=1753888054",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/cb/77400_crt_w4H33.jpg?r=1753888054"
+    },
+    "summary": "お嬢様のような雰囲気を醸し出しているが、実際は喜怒哀楽が豊かで勉強が苦手な普通の女子高生。",
+    "name": "和田",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "和田"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "和田"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "わだ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Wada"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月14日"
+        }
+    ],
+    "stat": {
+        "comments": 96,
+        "collects": 322
+    },
+    "id": 77400,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        528438
+    ]
+}

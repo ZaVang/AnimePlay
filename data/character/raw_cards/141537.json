@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/5b/141537_crt_i0i7v.jpg?r=1766295086",
+        "grid": "https://lain.bgm.tv/pic/crt/g/06/5b/141537_crt_i0i7v.jpg?r=1766295086",
+        "large": "https://lain.bgm.tv/pic/crt/l/06/5b/141537_crt_i0i7v.jpg?r=1766295086",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/5b/141537_crt_i0i7v.jpg?r=1766295086"
+    },
+    "summary": "天真爛漫な「逃若党」の怪力娘。\r\n普段は時行のお世話係や武芸の稽古役を務めるが、\r\n少し甘やかしすぎる節がある。\r\n主君を守り支えられるような強い女性に憧れている。\r\n日頃から弧次郎と切磋琢磨し合っており、\r\n戦場での二人の息はピッタリ。\r\n音楽や舞踊など多彩な芸も習得しているらしい。",
+    "name": "亜也子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "亚也子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "本名",
+                    "v": "望月亜也子"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "ayako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://nigewaka.run/chara/ayako/"
+        }
+    ],
+    "stat": {
+        "comments": 56,
+        "collects": 119
+    },
+    "id": 141537,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        424573
+    ]
+}

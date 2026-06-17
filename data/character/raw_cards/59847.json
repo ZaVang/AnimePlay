@@ -1,0 +1,73 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 20,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/e9/59847_crt_1BrIm.jpg?r=1726452108",
+        "grid": "https://lain.bgm.tv/pic/crt/g/44/e9/59847_crt_1BrIm.jpg?r=1726452108",
+        "large": "https://lain.bgm.tv/pic/crt/l/44/e9/59847_crt_1BrIm.jpg?r=1726452108",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/e9/59847_crt_1BrIm.jpg?r=1726452108"
+    },
+    "summary": "島の伝承を追う少女\r\n\r\n身長：160cm\r\n体重：46kg\r\n3サイズ：B85 W59 H86\r\n趣味：昼寝\r\n好物：かき氷\r\n座右の銘：果報は寝て待つ\r\n原画：和泉つばす\r\nCV：高森奈津美\r\n\r\n男女分け隔て無く友達感覚で接してくる島の少女。\r\n島の駄菓子屋でバイトをしていて、老若男女問わず慕われている。\r\n\r\n野生のキツネ(?)を連れている。\r\n\r\nよく島のいろいろな場所で眠っている姿を見るが、島民には日常茶飯事らしい。\r\n\r\n「とにかく、あたしが寝てても放っておいて」",
+    "name": "空門蒼",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "空门苍"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "空門 蒼"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "そらかど あお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sorakado Ao"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月20日"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "46kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B85/W59/H86"
+        },
+        {
+            "key": "年龄",
+            "value": "16岁"
+        }
+    ],
+    "stat": {
+        "comments": 164,
+        "collects": 625
+    },
+    "id": 59847,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        363957
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/76/7a/139814_crt_pFbn3.jpg?r=1766295198",
+        "grid": "https://lain.bgm.tv/pic/crt/g/76/7a/139814_crt_pFbn3.jpg?r=1766295198",
+        "large": "https://lain.bgm.tv/pic/crt/l/76/7a/139814_crt_pFbn3.jpg?r=1766295198",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/76/7a/139814_crt_pFbn3.jpg?r=1766295198"
+    },
+    "summary": "諏訪大社の巫女であり、鎌倉奪還を目指す\r\n時行の郎党「逃若党」の優秀な執事。\r\nお家全般を取り仕切り、頼重を「父様」と呼び慕うなど\r\n基本的に品行方正だが、\r\n時折周囲を驚かせるような言動をとることも。\r\n頼重ほどではないが神力を操る秘術を使うことができる。\r\n洞察力にも優れているため、戦いでは後方支援を\r\n担当しながら、頼重の名代も務める。",
+    "name": "雫",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しずく"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "shizuku"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://nigewaka.run/chara/shizuku/"
+        }
+    ],
+    "stat": {
+        "comments": 89,
+        "collects": 248
+    },
+    "id": 139814,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        424573
+    ]
+}

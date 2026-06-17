@@ -1,0 +1,69 @@
+{
+    "birth_mon": 11,
+    "gender": null,
+    "birth_day": 29,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/bf/91527_crt_qSWoQ.jpg?r=1614066905",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b2/bf/91527_crt_qSWoQ.jpg?r=1614066905",
+        "large": "https://lain.bgm.tv/pic/crt/l/b2/bf/91527_crt_qSWoQ.jpg?r=1614066905",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/bf/91527_crt_qSWoQ.jpg?r=1614066905"
+    },
+    "summary": "多少険のある物言いと、華美な装束が特徴的な汎性。\r\n論理的思考能力が極めて高く、情報がそろった瞬間にグノーシアを摘発する。\r\n\r\n以略带锋芒的说话方式和华丽的服装为特征的泛性角色。\r\n逻辑思考能力极为出色，一旦情报凑齐，便会在瞬间揪出 Gnosia。\r\n\r\n名字来源为世界语的智慧/理性一词racio，英文版名字为Raqio.",
+    "name": "ラキオ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "拉琪奥"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Raqio"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Racio"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "汎"
+        },
+        {
+            "key": "生日",
+            "value": "11月29日"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://d-mebius.com/gnosias"
+        },
+        {
+            "key": "识别年龄",
+            "value": "18"
+        },
+        {
+            "key": "出身地",
+            "value": "グリーゼ船団国家"
+        }
+    ],
+    "stat": {
+        "comments": 37,
+        "collects": 31
+    },
+    "id": 91527,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        526448
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/50/71/106397_crt_5AZwT.jpg?r=1645130872",
+        "grid": "https://lain.bgm.tv/pic/crt/g/50/71/106397_crt_5AZwT.jpg?r=1645130872",
+        "large": "https://lain.bgm.tv/pic/crt/l/50/71/106397_crt_5AZwT.jpg?r=1645130872",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/50/71/106397_crt_5AZwT.jpg?r=1645130872"
+    },
+    "summary": "学年新聞で四コマ漫画を連載している小学四年生。クラスメートからも絶賛され、漫画には自信を持っている。",
+    "name": "藤野歩",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藤野步"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "藤野キョウ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fujino Ayumu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 42
+    },
+    "id": 106397,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        480441
+    ]
+}

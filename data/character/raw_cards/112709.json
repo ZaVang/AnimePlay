@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/46/112709_crt_KLXXw.jpg?r=1721877180",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0f/46/112709_crt_KLXXw.jpg?r=1721877180",
+        "large": "https://lain.bgm.tv/pic/crt/l/0f/46/112709_crt_KLXXw.jpg?r=1721877180",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/46/112709_crt_KLXXw.jpg?r=1721877180"
+    },
+    "summary": "本作の主人公の一人。12歳で大学に進級し、神学を専攻する予定だった神童。ある日、フベルトと出会い、地動説の美しさに魅入られる。",
+    "name": "ラファウ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "拉法尔"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 32,
+        "collects": 41
+    },
+    "id": 112709,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        389156
+    ]
+}

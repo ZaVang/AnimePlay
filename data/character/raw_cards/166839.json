@@ -1,0 +1,57 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 30,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/0c/166839_crt_2Krz5.jpg?r=1741015359",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e8/0c/166839_crt_2Krz5.jpg?r=1741015359",
+        "large": "https://lain.bgm.tv/pic/crt/l/e8/0c/166839_crt_2Krz5.jpg?r=1741015359",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/0c/166839_crt_2Krz5.jpg?r=1741015359"
+    },
+    "summary": "元気いっぱいだけど周りの目が気になってしまう女子。\r\n自分とは反対に誰に対してもブレない谷に憧れているが、普通に接することが出来ず、いつもダル絡みしてしまう。",
+    "name": "鈴木みゆ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "铃木实优"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "すずき みゆ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月30日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        }
+    ],
+    "stat": {
+        "comments": 53,
+        "collects": 111
+    },
+    "id": 166839,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        525565
+    ]
+}

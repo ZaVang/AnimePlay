@@ -1,0 +1,73 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 12,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/68/91530_crt_0o7ko.jpg?r=1614066984",
+        "grid": "https://lain.bgm.tv/pic/crt/g/37/68/91530_crt_0o7ko.jpg?r=1614066984",
+        "large": "https://lain.bgm.tv/pic/crt/l/37/68/91530_crt_0o7ko.jpg?r=1614066984",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/68/91530_crt_0o7ko.jpg?r=1614066984"
+    },
+    "summary": "柔らかで丁寧な態度で皆と接する優しいお姉さん。\r\n宇宙船内の管理を任されているらしく、皆が快適に過ごせるよう気を配っている。\r\n\r\n以柔和、细致的态度与众人相处的温柔姐姐。\r\n似乎负责管理宇宙船内的事务，为了让大家都能舒适地生活而处处留心。\r\n\r\n名字来源为拉丁语的「星」。",
+    "name": "ステラ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "史戴拉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Stella"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ステラ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ステラ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月12日"
+        },
+        {
+            "key": "身高",
+            "value": "171cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://d-mebius.com/gnosias"
+        },
+        {
+            "key": "识别年龄",
+            "value": "26"
+        },
+        {
+            "key": "出身地",
+            "value": "非公開"
+        }
+    ],
+    "stat": {
+        "comments": 11,
+        "collects": 46
+    },
+    "id": 91530,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        526448
+    ]
+}

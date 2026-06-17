@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/cb/153902_crt_tAYMJ.jpg?r=1710305676",
+        "grid": "https://lain.bgm.tv/pic/crt/g/df/cb/153902_crt_tAYMJ.jpg?r=1710305676",
+        "large": "https://lain.bgm.tv/pic/crt/l/df/cb/153902_crt_tAYMJ.jpg?r=1710305676",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/cb/153902_crt_tAYMJ.jpg?r=1710305676"
+    },
+    "summary": "シカ部所属のシカ。\r\n都立日野南高校に転校してきた、ツノの生えた謎多き女の子。好物はシカせんべい。",
+    "name": "鹿乃子のこ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鹿乃子乃子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "鹿乃子 のこ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しかのこ のこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shikanoko Noko"
+                },
+                {
+                    "k": "昵称",
+                    "v": "のこたん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 37,
+        "collects": 57
+    },
+    "id": 153902,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        484761
+    ]
+}

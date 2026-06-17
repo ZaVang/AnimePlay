@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/99/162157_crt_nFNmp.jpg?r=1754315600",
+        "grid": "https://lain.bgm.tv/pic/crt/g/21/99/162157_crt_nFNmp.jpg?r=1754315600",
+        "large": "https://lain.bgm.tv/pic/crt/l/21/99/162157_crt_nFNmp.jpg?r=1754315600",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/99/162157_crt_nFNmp.jpg?r=1754315600"
+    },
+    "summary": "タコピーが出会った人間の女の子。\r\nお腹を空かせていたタコピーを\r\n助けたことで、仲良くなる。\r\nめったに笑わないが、ペットの\r\nチャッピーの前では笑顔を見せる。",
+    "name": "久世しずか",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "久世静香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "久世静"
+                },
+                {
+                    "k": "日文名",
+                    "v": "久世 しずか"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くぜ しずか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kuze Shizuka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 141,
+        "collects": 144
+    },
+    "id": 162157,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        527620
+    ]
+}

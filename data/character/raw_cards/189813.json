@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ef/3e/189813_crt_5vuz4.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ef/3e/189813_crt_5vuz4.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ef/3e/189813_crt_5vuz4.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ef/3e/189813_crt_5vuz4.jpg"
+    },
+    "summary": "月からやってきた謎の少女。\r\n楽しいことを求めて、仮想空間『ツクヨミ』でライバー(配信者)活動を始めてみることに。\r\n元気いっぱいで破天荒。彩葉のことが大好き。",
+    "name": "かぐや",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "辉夜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "辉耀"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kaguya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 113,
+        "collects": 469
+    },
+    "id": 189813,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        604826
+    ]
+}

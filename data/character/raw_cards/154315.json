@@ -1,0 +1,53 @@
+{
+    "birth_mon": 3,
+    "gender": "male",
+    "birth_day": 14,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/1c/154315_crt_v4gcC.jpg?r=1711117910",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d0/1c/154315_crt_v4gcC.jpg?r=1711117910",
+        "large": "https://lain.bgm.tv/pic/crt/l/d0/1c/154315_crt_v4gcC.jpg?r=1711117910",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/1c/154315_crt_v4gcC.jpg?r=1711117910"
+    },
+    "summary": "映画『滅びゆく物語』の主人公。伝説の勇者。18歳。\r\n光の国出身。勇者の家系に生まれ、代々受け継いできたキングブレイブソードを武器に、幼い頃から戦いの訓練を受けてきた。両親はすでに死亡し家族はいない。ヴォイド討伐のため各国の精鋭を集めたナインソルジャーの中心的存在。\r\n自分の使命はソウルフューチャーを守ることだと信じ、戦う以外のことをあまりしたことがない。真面目。若い女の子の集団が苦手。",
+    "name": "ルーク・ブレイブハート",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "卢克·布雷布哈特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Luke Braveheart"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ルーク・ブレイブハート"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月14日"
+        }
+    ],
+    "stat": {
+        "comments": 25,
+        "collects": 29
+    },
+    "id": 154315,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        486039
+    ]
+}

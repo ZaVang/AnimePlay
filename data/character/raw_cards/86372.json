@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/d3/86372_crt_LvVjO.jpg?r=1636269674",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0e/d3/86372_crt_LvVjO.jpg?r=1636269674",
+        "large": "https://lain.bgm.tv/pic/crt/l/0e/d3/86372_crt_LvVjO.jpg?r=1636269674",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/d3/86372_crt_LvVjO.jpg?r=1636269674"
+    },
+    "summary": "他是崭新科技时代的领路先驱，将自己毕生精力奉献给了人类的进步。他是寻求人性启迪的理想主义者，信奉着唯有光荣进化才能实现人类全部的潜能。在钢铁与科学的加持之下，维克托狂热地追求着自己理想中的光明未来。",
+    "name": "Viktor",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "维克托"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "維克特"
+                },
+                {
+                    "k": "昵称",
+                    "v": "机械先驱"
+                },
+                {
+                    "k": "繁体昵称",
+                    "v": "機械使徒"
+                }
+            ]
+        },
+        {
+            "key": "职业",
+            "value": "法师"
+        },
+        {
+            "key": "所在地区",
+            "value": "佐恩"
+        }
+    ],
+    "stat": {
+        "comments": 16,
+        "collects": 17
+    },
+    "id": 86372,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        358801
+    ]
+}

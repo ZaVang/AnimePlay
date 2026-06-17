@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/50/153905_crt_gB81g.jpg?r=1710305750",
+        "grid": "https://lain.bgm.tv/pic/crt/g/55/50/153905_crt_gB81g.jpg?r=1710305750",
+        "large": "https://lain.bgm.tv/pic/crt/l/55/50/153905_crt_gB81g.jpg?r=1710305750",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/50/153905_crt_gB81g.jpg?r=1710305750"
+    },
+    "summary": "シカ部所属のシカ見習い（ヒト以上シカ未満）\r\n鹿乃子のこにあこがれ、シカになるべくシカ部に入部した。\r\nシカ部では主にごはんを食べたり田んぼ作りに勤しんでいる。",
+    "name": "馬車芽めめ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "马车芽芽芽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "馬車芽 めめ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ばしゃめ めめ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Bashame Meme"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ばしゃめ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 24,
+        "collects": 32
+    },
+    "id": 153905,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        484761
+    ]
+}

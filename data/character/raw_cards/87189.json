@@ -1,0 +1,60 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/07/87189_crt_MPt6f.jpg?r=1605567324",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d4/07/87189_crt_MPt6f.jpg?r=1605567324",
+        "large": "https://lain.bgm.tv/pic/crt/l/d4/07/87189_crt_MPt6f.jpg?r=1605567324",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/07/87189_crt_MPt6f.jpg?r=1605567324"
+    },
+    "summary": "凄まじい力を持つ十二鬼月・上弦の参。\r\n練り上げられた武と共に、強者に対しての敬意を持つ。",
+    "name": "猗窩座",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "猗窝座"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "狛治（はくじ）"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "上弦之三"
+                },
+                {
+                    "k": "日文名",
+                    "v": "上弦の参"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あかざ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Akaza"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 38,
+        "collects": 33
+    },
+    "id": 87189,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        501958
+    ]
+}

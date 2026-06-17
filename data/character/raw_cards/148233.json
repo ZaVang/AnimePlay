@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/ff/148233_crt_VGCK2.jpg?r=1766294982",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dd/ff/148233_crt_VGCK2.jpg?r=1766294982",
+        "large": "https://lain.bgm.tv/pic/crt/l/dd/ff/148233_crt_VGCK2.jpg?r=1766294982",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/ff/148233_crt_VGCK2.jpg?r=1766294982"
+    },
+    "summary": "大人に引けを取らない剣術の腕を持つ「逃若党」の剣士。\r\n血気盛んで物怖じしない性格。\r\n戦いでは周囲の状況を観察・分析しつつ、仲間への気配りや鼓舞も欠かさない。\r\n時行とは主従関係ながらも良き友人のように接している。\r\n個性が強すぎる「逃若党」の中では比較的常識人なため、\r\nツッコミ役になることが多い。",
+    "name": "弧次郎",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "弧次郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "こじろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kojirou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://nigewaka.run/chara/kojiro/"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 18
+    },
+    "id": 148233,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        424573
+    ]
+}

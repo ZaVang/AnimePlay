@@ -1,0 +1,57 @@
+{
+    "birth_mon": 12,
+    "gender": "male",
+    "birth_day": 24,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/c5/152266_crt_ONzbM.jpg?r=1773141378",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c7/c5/152266_crt_ONzbM.jpg?r=1773141378",
+        "large": "https://lain.bgm.tv/pic/crt/l/c7/c5/152266_crt_ONzbM.jpg?r=1773141378",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/c5/152266_crt_ONzbM.jpg?r=1773141378"
+    },
+    "summary": "リガーデン魔法学院6年生。魔法が使えない“無能者”として入学した異端な学生。そのせいで同級生たちから蔑まれているが、実は誰よりも強い力と卓越した剣技を持つ“戦士”。魔法の実技では単位が習得できないため、筆記と実習で単位を稼いでいる。エルファリアと幼い頃に交わした約束を守るため、“至高の五杖”を目指している。",
+    "name": "ウィル・セルフォルト",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "威尔·赛尔佛特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "威尔·塞尔弗特"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Will Serfort"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "12月24日"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        }
+    ],
+    "stat": {
+        "comments": 27,
+        "collects": 21
+    },
+    "id": 152266,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        479477
+    ]
+}

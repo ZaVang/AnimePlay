@@ -1,0 +1,65 @@
+{
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 26,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/47/107703_crt_RPYPP.jpg?r=1730807297",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ed/47/107703_crt_RPYPP.jpg?r=1730807297",
+        "large": "https://lain.bgm.tv/pic/crt/l/ed/47/107703_crt_RPYPP.jpg?r=1730807297",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/47/107703_crt_RPYPP.jpg?r=1730807297"
+    },
+    "summary": "本作女主角之一，荣明学园高中2年级生，篮球部社员。\r\n是女子篮球的明星选手，兼具实力外貌与良好性格，具有相当的知名度并备受关注。\r\n升上二年级后家人搬到国外居住，但她自己却因为还想要继续打球而留在了日本，并寄住在母亲的熟人猪股家。",
+    "name": "鹿野千夏",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鹿野千夏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "鹿野 千夏"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かの ちなつ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kano Chinatsu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月26日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        }
+    ],
+    "stat": {
+        "comments": 94,
+        "collects": 219
+    },
+    "id": 107703,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        460306
+    ]
+}

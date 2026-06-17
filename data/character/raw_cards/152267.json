@@ -1,0 +1,57 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 24,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/37/152267_crt_G4A2S.jpg?r=1773141545",
+        "grid": "https://lain.bgm.tv/pic/crt/g/df/37/152267_crt_G4A2S.jpg?r=1773141545",
+        "large": "https://lain.bgm.tv/pic/crt/l/df/37/152267_crt_G4A2S.jpg?r=1773141545",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/37/152267_crt_G4A2S.jpg?r=1773141545"
+    },
+    "summary": "至高の五杖のひとり、別名 “深窓の氷姫”。ウィルとは共に孤児院で育った幼なじみ。類稀なる魔法の才能を持っていたことから、最年少で至高の五杖となった。ほぼすべての水、氷属性の魔法を操る天才。至高の五杖となった今も、塔の窓からいつもウィルを見守っている。聖女として崇められているが、実は……？",
+    "name": "エルファリア・アルヴィス・セルフォルト",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "爱尔法利亚·亚尔维斯·赛尔佛特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "艾尔菲利亚·阿尔薇丝·塞尔弗特"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Elfaria Albis Serfort"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月24日"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        }
+    ],
+    "stat": {
+        "comments": 54,
+        "collects": 148
+    },
+    "id": 152267,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        479477
+    ]
+}

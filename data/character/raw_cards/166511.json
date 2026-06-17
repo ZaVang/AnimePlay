@@ -1,0 +1,61 @@
+{
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/99/166511_crt_HtsTt.jpg?r=1741267329",
+        "grid": "https://lain.bgm.tv/pic/crt/g/da/99/166511_crt_HtsTt.jpg?r=1741267329",
+        "large": "https://lain.bgm.tv/pic/crt/l/da/99/166511_crt_HtsTt.jpg?r=1741267329",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/99/166511_crt_HtsTt.jpg?r=1741267329"
+    },
+    "summary": "桜心女学園の姉妹校・黒百合女学園に通う高校二年生。\r\n超絶テクのギタリストとして界隈で名を馳せており、 凄腕バンドからスカウトされるも断り続けている。\r\n音羽とは幼馴染の関係。",
+    "name": "白矢環",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "白矢环"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "白矢 環"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しらや たまき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shiraya Tamaki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月8日"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 16
+    },
+    "id": 166511,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        504678
+    ]
+}

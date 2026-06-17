@@ -1,0 +1,65 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/c3/91524_crt_3Q001.jpg?r=1614066482",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f2/c3/91524_crt_3Q001.jpg?r=1614066482",
+        "large": "https://lain.bgm.tv/pic/crt/l/f2/c3/91524_crt_3Q001.jpg?r=1614066482",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/c3/91524_crt_3Q001.jpg?r=1614066482"
+    },
+    "summary": "おどけた態度で場をにぎわそうとする、どこかつかめない性格の持ち主。\r\n彼女の言動の何が嘘で何が本当なのか、判別するのはきわめて困難だろ。\r\n\r\n总是以嬉笑打闹的态度试图活跃气氛，是个让人难以捉摸的角色。\r\n她说的话哪些是真哪些是假，恐怕几乎无法分辨。\r\n\r\n名字来源为魅魔（サキュバス，Succubus）。",
+    "name": "SQ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "SQ"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "SQ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月1日"
+        },
+        {
+            "key": "身高",
+            "value": "161cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://d-mebius.com/gnosias"
+        },
+        {
+            "key": "识别年龄",
+            "value": "24"
+        },
+        {
+            "key": "出身地",
+            "value": "リ・リウ小惑星帯"
+        }
+    ],
+    "stat": {
+        "comments": 51,
+        "collects": 111
+    },
+    "id": 91524,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        526448
+    ]
+}

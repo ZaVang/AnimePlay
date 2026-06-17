@@ -22800,5 +22800,3324 @@
     "blood_type": null,
     "height": null,
     "comprehensive_popularity": 109
+  },
+  {
+    "id": 189813,
+    "name": "辉夜",
+    "original_name": "かぐや",
+    "rarity": "HR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/ef/3e/189813_crt_5vuz4.jpg",
+    "anime_ids": [
+      604826
+    ],
+    "anime_names": [
+      "超时空辉夜姬！"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "月からやってきた謎の少女。\r\n楽しいことを求めて、仮想空間『ツクヨミ』でライバー(配信者)活動を始めてみることに。\r\n元気いっぱいで破天荒。彩葉のことが大好き。",
+    "stats": {
+      "comments": 113,
+      "collects": 469
+    },
+    "type": "character",
+    "popularity_score": 695,
+    "battle_stats": {
+      "hp": 1025,
+      "atk": 102,
+      "def": 102,
+      "sp": 102,
+      "spd": 102
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 869
+  },
+  {
+    "id": 189814,
+    "name": "酒寄彩叶",
+    "original_name": "酒寄彩葉",
+    "rarity": "HR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/c1/ed/189814_crt_ER5bb.jpg",
+    "anime_ids": [
+      604826
+    ],
+    "anime_names": [
+      "超时空辉夜姬！"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "5月11日",
+    "description": "17歳の女子高生。\r\nかぐやのプロデューサーとして、『ツクヨミ』でのライバー活動を手伝うことに。あだ名は『いろP』。\r\n『ツクヨミ』のトップライバーである月見ヤチヨを推している。",
+    "stats": {
+      "comments": 318,
+      "collects": 653
+    },
+    "type": "character",
+    "popularity_score": 1289,
+    "battle_stats": {
+      "hp": 1041,
+      "atk": 104,
+      "def": 104,
+      "sp": 104,
+      "spd": 104
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 1053
+  },
+  {
+    "id": 189815,
+    "name": "月见八千代",
+    "original_name": "月見ヤチヨ",
+    "rarity": "HR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/92/88/189815_crt_NnNyo.jpg",
+    "anime_ids": [
+      604826
+    ],
+    "anime_names": [
+      "超时空辉夜姬！"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "仮想空間『ツクヨミ』の管理人、兼トップライバー。\r\n歌って踊って分身もできる8000歳(という設定)の、ミステリアスなAI。\r\n誰もが自由に創作活動をする『ツクヨミ』の空間が大好きで、今日もみんなの活動をそっと見守っている。",
+    "stats": {
+      "comments": 126,
+      "collects": 406
+    },
+    "type": "character",
+    "popularity_score": 658,
+    "battle_stats": {
+      "hp": 1010,
+      "atk": 101,
+      "def": 101,
+      "sp": 101,
+      "spd": 101
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 806
+  },
+  {
+    "id": 132476,
+    "name": "丰川祥子",
+    "original_name": "豊川祥子",
+    "rarity": "HR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/ae/84/132476_crt_HI5Do.jpg",
+    "anime_ids": [
+      454684
+    ],
+    "anime_names": [
+      "BanG Dream! Ave Mujica"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "2月14日",
+    "description": "羽丘女子学園の高校1年生。元CRYCHICのメンバーで作曲とキーボードを担当していた。よく学校の音楽室でピアノを弾いている。\r\n\r\n[mask]Ave Mujica Key.\r\n\r\n羽丘女子学園の高校1年生。豊川グループの令嬢であり、気品のある言葉遣いで話す。メンバー全員の人生を預かる覚悟でAve Mujicaを結成した。Ave Mujicaの世界観を守るべく、心血を注ぐ。[/mask]",
+    "stats": {
+      "comments": 925,
+      "collects": 748
+    },
+    "type": "character",
+    "popularity_score": 2598,
+    "battle_stats": {
+      "hp": 1092,
+      "atk": 109,
+      "def": 109,
+      "sp": 109,
+      "spd": 109
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 848
+  },
+  {
+    "id": 132477,
+    "name": "若叶睦",
+    "original_name": "若葉睦",
+    "rarity": "HR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/24/fc/132477_crt_9Ce8S.jpg",
+    "anime_ids": [
+      454684
+    ],
+    "anime_names": [
+      "BanG Dream! Ave Mujica"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "1月14日",
+    "description": "月ノ森女子学園の高校1年生。元CRYCHICのメンバーでギターを担当していた。感情表現が乏しく、基本的には無口。父は人気お笑い芸人の若葉、母は女優の森みなみ。\r\n\r\n[mask]Ave Mujica Gt.\r\n\r\n月ノ森女子学園の高校1年生。そよとは同じクラス。感情が表に出づらく、口下手だが、彼女なりに他人を気遣う一面も。父は人気お笑い芸人の若葉で、母は女優の森みなみ。また、祥子とは幼馴染である。...",
+    "stats": {
+      "comments": 515,
+      "collects": 771
+    },
+    "type": "character",
+    "popularity_score": 1801,
+    "battle_stats": {
+      "hp": 1059,
+      "atk": 105,
+      "def": 105,
+      "sp": 105,
+      "spd": 105
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 871
+  },
+  {
+    "id": 132479,
+    "name": "三角初华",
+    "original_name": "三角初華",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/4a/21/132479_crt_yfRfH.jpg",
+    "anime_ids": [
+      454684
+    ],
+    "anime_names": [
+      "BanG Dream! Ave Mujica"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "6月26日",
+    "description": "[mask]真名：三角初音\r\n纯假名：みすみ はつね\r\n罗马字：Hatsune Misumi[/mask]\r\n\r\n花咲川女子学園の高校1年生。海鈴、立希とは同じクラス。アイドルユニット「sumimi」のギター。sumimiの楽曲の作詞作曲は初華が担当している。クールな佇まいが人気。星を見ることが好き。\r\n[mask]祥子とは幼いころからの知り合いで、バンドへの勧誘に二つ返事で応えた。Ave Muj...",
+    "stats": {
+      "comments": 520,
+      "collects": 361
+    },
+    "type": "character",
+    "popularity_score": 1401,
+    "battle_stats": {
+      "hp": 624,
+      "atk": 72,
+      "def": 67,
+      "sp": 78,
+      "spd": 62
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 461
+  },
+  {
+    "id": 132924,
+    "name": "八幡海铃",
+    "original_name": "八幡海鈴",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/dc/55/132924_crt_tDmME.jpg",
+    "anime_ids": [
+      454684
+    ],
+    "anime_names": [
+      "BanG Dream! Ave Mujica"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "4月7日",
+    "description": "花咲川女子学園の高校1年生。ベースの腕前はプロレベルで、サポートとして30のバンドを掛け持ちしている。立希とは同じクラスで、よくちょっかいをかけている。\r\n\r\n[mask]Ave Mujica Ba.\r\n\r\n花咲川女子学園の高校1年生。初華、立希とは同じクラス。ベースの腕前はプロと遜色がなく、サポートとして30のバンドを掛け持つ。Ave Mujicaではメンバーのスケジュール調整など、裏方の作業を...",
+    "stats": {
+      "comments": 171,
+      "collects": 265
+    },
+    "type": "character",
+    "popularity_score": 607,
+    "battle_stats": {
+      "hp": 608,
+      "atk": 70,
+      "def": 65,
+      "sp": 76,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 365
+  },
+  {
+    "id": 133285,
+    "name": "祐天寺若麦",
+    "original_name": "祐天寺にゃむ",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/ad/b9/133285_crt_sqqFJ.jpg",
+    "anime_ids": [
+      454684
+    ],
+    "anime_names": [
+      "BanG Dream! Ave Mujica"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "6月1日",
+    "description": "「にゃむち」の愛称で人気上昇中の美容系動画投稿者。メイク動画がメインだが、「ドラムを叩いてみた」などのやってみた系など様々なジャンルに挑戦している。両利きでドラムの叩き方が派手で特殊。\r\n\r\n[mask]Ave Mujica Dr.\r\n\r\n「にゃむち」の愛称で活動中の動画投稿者。メイク動画などの美容系をメインに投稿しているが、仕事の幅を広げるべく様々なジャンルに挑戦している。両利きで、ドラムの叩き...",
+    "stats": {
+      "comments": 320,
+      "collects": 181
+    },
+    "type": "character",
+    "popularity_score": 821,
+    "battle_stats": {
+      "hp": 403,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 281
+  },
+  {
+    "id": 97301,
+    "name": "久世政近",
+    "original_name": "久世政近",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/f3/78/97301_crt_WXIsz.jpg",
+    "anime_ids": [
+      424883
+    ],
+    "anime_names": [
+      "不时轻声地以俄语遮羞的邻座艾莉同学"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "4月9日",
+    "description": "アーリャと隣の席の男子。アニメを観るべく夜更かしをしているため、いつも授業中に寝ているやる気のない劣等生。そんな不真面目な様子を、いつもアーリャに咎められている。幼少期にロシア語を話す少女に初恋をしたことがきっかけで、ロシア語を習得した（そのことをアーリャは知らない）。",
+    "stats": {
+      "comments": 22,
+      "collects": 15
+    },
+    "type": "character",
+    "popularity_score": 59,
+    "battle_stats": {
+      "hp": 401,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 115
+  },
+  {
+    "id": 97302,
+    "name": "艾莉莎·米哈伊罗夫纳·九条",
+    "original_name": "アリサ・ミハイロヴナ・九条",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/8c/f1/97302_crt_zt1zr.jpg",
+    "anime_ids": [
+      424883
+    ],
+    "anime_names": [
+      "不时轻声地以俄语遮羞的邻座艾莉同学"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "11月7日",
+    "description": "容姿端麗成績優秀で、周囲からは「孤高のお姫様」と称される優等生。\r\n中学三年時に征嶺学園に転入し、現在は高等部生徒会で会計を務めている。ロシア人の父と日本人の母、一つ年上の姉の四人家族。ある出来事を機に隣の席の政近に興味を抱き、彼には分からないと思っているロシア語で時々からかっている。",
+    "stats": {
+      "comments": 172,
+      "collects": 360
+    },
+    "type": "character",
+    "popularity_score": 704,
+    "battle_stats": {
+      "hp": 615,
+      "atk": 71,
+      "def": 66,
+      "sp": 76,
+      "spd": 61
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 460
+  },
+  {
+    "id": 59846,
+    "name": "鸣濑白羽",
+    "original_name": "鳴瀬しろは",
+    "rarity": "HR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/d6/16/59846_crt_5PYvw.jpg?r=1726452509",
+    "anime_ids": [
+      363957
+    ],
+    "anime_names": [
+      "夏日口袋"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "6月8日",
+    "description": "夏休みを忘れた少女\r\n\r\n身長：155cm\r\n体重：39kg\r\n3サイズ：B81 W56 H83\r\n趣味：料理\r\n好物：スイカバー\r\n座右の銘：明日には明日の風を吹く\r\n原画：Na-Ga\r\nCV：小原好美\r\n\r\nクールで、人見知りをする島の少女。\r\n親しいのは肉親である祖父ぐらいで、島では孤立している。\r\n\r\n一人でいる期間が長かったせいで人との付き合い方がわからず、時に人の心を考えないことも言っ...",
+    "stats": {
+      "comments": 194,
+      "collects": 784
+    },
+    "type": "character",
+    "popularity_score": 1172,
+    "battle_stats": {
+      "hp": 1016,
+      "atk": 101,
+      "def": 101,
+      "sp": 101,
+      "spd": 101
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 984
+  },
+  {
+    "id": 59847,
+    "name": "空门苍",
+    "original_name": "空門蒼",
+    "rarity": "HR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/44/e9/59847_crt_1BrIm.jpg?r=1726452108",
+    "anime_ids": [
+      363957
+    ],
+    "anime_names": [
+      "夏日口袋"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "9月20日",
+    "description": "島の伝承を追う少女\r\n\r\n身長：160cm\r\n体重：46kg\r\n3サイズ：B85 W59 H86\r\n趣味：昼寝\r\n好物：かき氷\r\n座右の銘：果報は寝て待つ\r\n原画：和泉つばす\r\nCV：高森奈津美\r\n\r\n男女分け隔て無く友達感覚で接してくる島の少女。\r\n島の駄菓子屋でバイトをしていて、老若男女問わず慕われている。\r\n\r\n野生のキツネ(?)を連れている。\r\n\r\nよく島のいろいろな場所で眠っている姿を見...",
+    "stats": {
+      "comments": 164,
+      "collects": 625
+    },
+    "type": "character",
+    "popularity_score": 953,
+    "battle_stats": {
+      "hp": 1020,
+      "atk": 102,
+      "def": 102,
+      "sp": 102,
+      "spd": 102
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 825
+  },
+  {
+    "id": 59848,
+    "name": "久岛鸥",
+    "original_name": "久島鴎",
+    "rarity": "HR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/aa/ca/59848_crt_YlLXl.jpg?r=1682925900",
+    "anime_ids": [
+      363957
+    ],
+    "anime_names": [
+      "夏日口袋"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "4月4日",
+    "description": "海賊船を探すお嬢様\r\n\r\n身長：158cm\r\n体重：43kg\r\n3サイズ：B86 W56 H85\r\n趣味：ボトルシップ\r\n好物：三角形の秘密を持ったお菓子\r\n座右の銘：心に冒険を\r\n原画：Na-Ga\r\nCV：嶺内ともみ\r\n\r\n島で出会った不思議な少女。\r\nいつでも大きなスーツケースを引いている。\r\n\r\n中に何が入っているのかは絶対教えてくれない。\r\nこの島には主人公と同じくこの夏だけ滞在する。\r\n...",
+    "stats": {
+      "comments": 205,
+      "collects": 678
+    },
+    "type": "character",
+    "popularity_score": 1088,
+    "battle_stats": {
+      "hp": 1006,
+      "atk": 100,
+      "def": 100,
+      "sp": 100,
+      "spd": 100
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 878
+  },
+  {
+    "id": 59849,
+    "name": "䌷文德斯",
+    "original_name": "紬ヴェンダース",
+    "rarity": "SSR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/c5/5c/59849_crt_OekBv.jpg?r=1726452140",
+    "anime_ids": [
+      363957
+    ],
+    "anime_names": [
+      "夏日口袋"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "8月31日",
+    "description": "自分探しの少女\r\n\r\n身長：152cm\r\n体重：38kg\r\n3サイズ：B78 W56 H80\r\n趣味：ぬいぐるみ集め\r\n好物：わたあめ\r\n座右の銘：私は私を探しています\r\n原画：永山ゆうのん\r\nCV：岩井映美里\r\n\r\n島の灯台の近くに現れる少女。\r\n真面目で素直なドイツ系ハーフで、夏休みを利用して『やりたいこと探し』をしている。\r\n\r\n海に流れ着いたゴミなどを掃除しては、まだ使える物を見つけ大事に...",
+    "stats": {
+      "comments": 200,
+      "collects": 468
+    },
+    "type": "character",
+    "popularity_score": 868,
+    "battle_stats": {
+      "hp": 873,
+      "atk": 92,
+      "def": 82,
+      "sp": 97,
+      "spd": 87
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 668
+  },
+  {
+    "id": 61419,
+    "name": "加藤羽未",
+    "original_name": "加藤うみ",
+    "rarity": "SSR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/8c/96/61419_crt_tHS5A.jpg?r=1726458548",
+    "anime_ids": [
+      363957
+    ],
+    "anime_names": [
+      "夏日口袋"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "9月1日",
+    "description": "原画：Na-Ga\r\nCV：田中あいみ",
+    "stats": {
+      "comments": 176,
+      "collects": 398
+    },
+    "type": "character",
+    "popularity_score": 750,
+    "battle_stats": {
+      "hp": 856,
+      "atk": 90,
+      "def": 80,
+      "sp": 95,
+      "spd": 85
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 598
+  },
+  {
+    "id": 71335,
+    "name": "电次",
+    "original_name": "デンジ",
+    "rarity": "SSR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/5c/9e/71335_crt_k8c38.jpg?r=1670404416",
+    "anime_ids": [
+      470660
+    ],
+    "anime_names": [
+      "剧场版 链锯人 蕾塞篇"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "本作主角，16岁。性格轻浮，背负着父亲生前向黑社会欠下的巨额债务，绝望时偶遇受伤的链锯恶魔（波奇塔）并以救他为条件和其达成契约，为还钱开始替黑社会当恶魔猎人。每天过着吃垃圾、睡地板和被黑社会奴役的生活，可谓人生一片黑暗。为早日还清债款还变卖掉了自己的多个器官。\r\n\r\n『チェンソーの悪魔』ポチタと共にデビルハンターとして暮らす。\r\n親が遺した借金返済のため、デビルハンターとして働いていた。\r\nしかし...",
+    "stats": {
+      "comments": 83,
+      "collects": 172
+    },
+    "type": "character",
+    "popularity_score": 338,
+    "battle_stats": {
+      "hp": 856,
+      "atk": 90,
+      "def": 80,
+      "sp": 95,
+      "spd": 85
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 672
+  },
+  {
+    "id": 71989,
+    "name": "蕾塞",
+    "original_name": "レゼ",
+    "rarity": "UR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/7d/7a/71989_crt_zPL8Q.jpg?r=1742737307",
+    "anime_ids": [
+      470660
+    ],
+    "anime_names": [
+      "剧场版 链锯人 蕾塞篇"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "电次在雨天遇到的紫发少女，主动邀请电次跟她单独约会。",
+    "stats": {
+      "comments": 212,
+      "collects": 773
+    },
+    "type": "character",
+    "popularity_score": 1197,
+    "battle_stats": {
+      "hp": 1243,
+      "atk": 124,
+      "def": 124,
+      "sp": 124,
+      "spd": 124
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 1273
+  },
+  {
+    "id": 1227,
+    "name": "吉尔伽美什",
+    "original_name": "ギルガメッシュ",
+    "rarity": "HR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/db/ca/1227_crt_Dq9kZ.jpg?r=1498989532",
+    "anime_ids": [
+      443831
+    ],
+    "anime_names": [
+      "Fate/strange Fake"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "号称拥有最强宝具的Servant，将其他所有人都蔑称为“杂种”的傲慢的王者。其真身乃是人类最古老的英灵——英雄王吉尔伽美什。",
+    "stats": {
+      "comments": 133,
+      "collects": 524
+    },
+    "type": "character",
+    "popularity_score": 790,
+    "battle_stats": {
+      "hp": 1034,
+      "atk": 103,
+      "def": 103,
+      "sp": 103,
+      "spd": 103
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 824
+  },
+  {
+    "id": 29849,
+    "name": "恩奇都",
+    "original_name": "エルキドゥ",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/7d/45/29849_crt_ZK416.jpg?r=1520326762",
+    "anime_ids": [
+      443831
+    ],
+    "anime_names": [
+      "Fate/strange Fake"
+    ],
+    "anime_count": 1,
+    "gender": null,
+    "birthday": "未知",
+    "description": "安定的语调，温和的举止，却具备了难以想象超强战斗能力的“拥有意识的宝具”。曾被英雄王吉尔伽美什誉为最强之人，连接天与地之锁。既是由众神之手所造的人偶，亦是自然与调和一体化的大地分身。作为英雄王唯一的友人，曾与其经历许多冒险，获得人之心之后，却最终以人偶之躯归于尘土的可悲兵器。\r\n吉尔伽美什史诗中描述的最古老英雄之一。由诸神创造而出的兵器。原本是诸神创造而出的“能变形成任何东西的粘土工艺品”。能根据...",
+    "stats": {
+      "comments": 37,
+      "collects": 152
+    },
+    "type": "character",
+    "popularity_score": 226,
+    "battle_stats": {
+      "hp": 601,
+      "atk": 70,
+      "def": 65,
+      "sp": 75,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 452
+  },
+  {
+    "id": 38176,
+    "name": "理查一世",
+    "original_name": "リチャードⅠ世",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/60/83/38176_crt_ZGC1o.jpg?r=1735656221",
+    "anime_ids": [
+      443831
+    ],
+    "anime_names": [
+      "Fate/strange Fake"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "スノーフィールドの聖杯戦争において召喚されたセイバー。赤毛混じりの金髪で荘厳な装束に身を包んだ、アーサー王に憧れを抱く勇猛果敢の獅子心王。",
+    "stats": {
+      "comments": 30,
+      "collects": 60
+    },
+    "type": "character",
+    "popularity_score": 120,
+    "battle_stats": {
+      "hp": 603,
+      "atk": 70,
+      "def": 65,
+      "sp": 75,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 360
+  },
+  {
+    "id": 38178,
+    "name": "无名暗杀者",
+    "original_name": "名も無きアサシン",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/88/be/38178_crt_E7EW5.jpg",
+    "anime_ids": [
+      443831
+    ],
+    "anime_names": [
+      "Fate/strange Fake"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "スノーフィールドの聖杯戦争において召喚されたアサシン。召喚されるや否やマスターであるジェスターを殺害、以降は自らの教義に背く聖杯戦争の儀式そのものを壊すことを目的に行動する。",
+    "stats": {
+      "comments": 31,
+      "collects": 110
+    },
+    "type": "character",
+    "popularity_score": 172,
+    "battle_stats": {
+      "hp": 602,
+      "atk": 70,
+      "def": 65,
+      "sp": 75,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 410
+  },
+  {
+    "id": 38180,
+    "name": "阿尔喀德斯",
+    "original_name": "アルケイデス",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/41/80/38180_crt_l439z.jpg",
+    "anime_ids": [
+      443831
+    ],
+    "anime_names": [
+      "Fate/strange Fake"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "真なるアーチャーとして召喚されたサーヴァント。バズディロットの手により在り方を歪められた、アヴェンジャーとも呼ぶべき英霊。「人」として神々を否定せんと、その力を妄執を振るう。",
+    "stats": {
+      "comments": 12,
+      "collects": 10
+    },
+    "type": "character",
+    "popularity_score": 34,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 310
+  },
+  {
+    "id": 162156,
+    "name": "章鱼哔",
+    "original_name": "タコピー",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/29/9b/162156_crt_tS4oC.jpg?r=1741526778",
+    "anime_ids": [
+      527620
+    ],
+    "anime_names": [
+      "章鱼哔的原罪"
+    ],
+    "anime_count": 1,
+    "gender": null,
+    "birthday": "未知",
+    "description": "ハッピーを広めるため\r\n地球に来たハッピー星人。\r\n見た目がタコに似ているため、\r\nしずかにはタコピーと呼ばれている。\r\n無垢すぎるが故に、\r\nずれた言動をすることもしばしば。",
+    "stats": {
+      "comments": 81,
+      "collects": 66
+    },
+    "type": "character",
+    "popularity_score": 228,
+    "battle_stats": {
+      "hp": 404,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 266
+  },
+  {
+    "id": 162157,
+    "name": "久世静香",
+    "original_name": "久世しずか",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/21/99/162157_crt_nFNmp.jpg?r=1754315600",
+    "anime_ids": [
+      527620
+    ],
+    "anime_names": [
+      "章鱼哔的原罪"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "タコピーが出会った人間の女の子。\r\nお腹を空かせていたタコピーを\r\n助けたことで、仲良くなる。\r\nめったに笑わないが、ペットの\r\nチャッピーの前では笑顔を見せる。",
+    "stats": {
+      "comments": 141,
+      "collects": 144
+    },
+    "type": "character",
+    "popularity_score": 426,
+    "battle_stats": {
+      "hp": 601,
+      "atk": 70,
+      "def": 65,
+      "sp": 75,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 344
+  },
+  {
+    "id": 162158,
+    "name": "云母坂真理奈",
+    "original_name": "雲母坂まりな",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/19/fa/162158_crt_564Ir.jpg?r=1741527029",
+    "anime_ids": [
+      527620
+    ],
+    "anime_names": [
+      "章鱼哔的原罪"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "しずかのクラスメイト。\r\n明るく友達も多いが、\r\nしずかにだけは強く当たる。\r\n必要以上に敵対視するのには\r\n深い理由があるようで･･･。",
+    "stats": {
+      "comments": 292,
+      "collects": 93
+    },
+    "type": "character",
+    "popularity_score": 677,
+    "battle_stats": {
+      "hp": 410,
+      "atk": 51,
+      "def": 46,
+      "sp": 56,
+      "spd": 51
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 293
+  },
+  {
+    "id": 162159,
+    "name": "东直树",
+    "original_name": "東直樹",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/e0/79/162159_crt_8F6Bk.jpg?r=1741527031",
+    "anime_ids": [
+      527620
+    ],
+    "anime_names": [
+      "章鱼哔的原罪"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "しずかのクラスメイト。\r\nクラスで学級委員長を\r\n務めている優等生。\r\n何かとしずかを気にかけている。",
+    "stats": {
+      "comments": 45,
+      "collects": 14
+    },
+    "type": "character",
+    "popularity_score": 104,
+    "battle_stats": {
+      "hp": 401,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 214
+  },
+  {
+    "id": 106397,
+    "name": "藤野步",
+    "original_name": "藤野歩",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/50/71/106397_crt_5AZwT.jpg?r=1645130872",
+    "anime_ids": [
+      480441
+    ],
+    "anime_names": [
+      "蓦然回首"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "学年新聞で四コマ漫画を連載している小学四年生。クラスメートからも絶賛され、漫画には自信を持っている。",
+    "stats": {
+      "comments": 14,
+      "collects": 42
+    },
+    "type": "character",
+    "popularity_score": 70,
+    "battle_stats": {
+      "hp": 601,
+      "atk": 70,
+      "def": 65,
+      "sp": 75,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 442
+  },
+  {
+    "id": 106398,
+    "name": "京本",
+    "original_name": "京本",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/92/90/106398_crt_TIx8s.jpg?r=1645130947",
+    "anime_ids": [
+      480441
+    ],
+    "anime_names": [
+      "蓦然回首"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "藤野と同級生の不登校生。四コマ漫画を連載する藤野に、秘かに憧れを抱いているが、実は隠れた画力の持ち主。",
+    "stats": {
+      "comments": 24,
+      "collects": 70
+    },
+    "type": "character",
+    "popularity_score": 118,
+    "battle_stats": {
+      "hp": 601,
+      "atk": 70,
+      "def": 65,
+      "sp": 75,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 470
+  },
+  {
+    "id": 109775,
+    "name": "莫妮卡·艾瓦雷特",
+    "original_name": "モニカ・エヴァレット",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/6d/71/109775_crt_MIxmI.jpg?r=1753887970",
+    "anime_ids": [
+      506677
+    ],
+    "anime_names": [
+      "Silent Witch 沉默魔女的秘密"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "12月1日",
+    "description": "王国の最高峰の魔術師・七賢人に史上最年少で選ばれた少女。二つ名は〈沈黙の魔女〉。\r\n魔術に必須とされる詠唱を省略した【無詠唱魔術】を扱うことができる唯一無二の魔術師。\r\n魔術と数学をこよなく愛し、本と書類に囲まれながら、山奥の小屋に引きこもっている。\r\n極度の人見知りで一般常識にも疎い。\r\nモニカ・ノートンと名を変え、第二王子護衛のためセレンディア学園に潜入する。",
+    "stats": {
+      "comments": 122,
+      "collects": 380
+    },
+    "type": "character",
+    "popularity_score": 624,
+    "battle_stats": {
+      "hp": 614,
+      "atk": 71,
+      "def": 66,
+      "sp": 76,
+      "spd": 61
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 480
+  },
+  {
+    "id": 109778,
+    "name": "尼洛",
+    "original_name": "ネロ",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/3a/b1/109778_crt_2tauv.jpg?r=1743949535",
+    "anime_ids": [
+      506677
+    ],
+    "anime_names": [
+      "Silent Witch 沉默魔女的秘密"
+    ],
+    "anime_count": 1,
+    "gender": null,
+    "birthday": "未知",
+    "description": "モニカの使い魔。\r\n黒猫の姿をしているが人語を理解し、しゃべることもできる。\r\nモニカが辛そうにしているときは、肉球を触らせ、癒してあげることも。\r\nモニカ以外の人間の名前を覚えるのは苦手。\r\nただし、人間が書いた小説を読むことが好きで、小説家ダスティン・ギュンターの大ファン。",
+    "stats": {
+      "comments": 16,
+      "collects": 23
+    },
+    "type": "character",
+    "popularity_score": 55,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 123
+  },
+  {
+    "id": 175806,
+    "name": "尼洛（人形态）",
+    "original_name": "ネロ(人型)",
+    "rarity": "N",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/c4/11/175806_crt_0hOUU.jpg?r=1747324468",
+    "anime_ids": [
+      506677
+    ],
+    "anime_names": [
+      "Silent Witch 沉默魔女的秘密"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "",
+    "stats": {
+      "comments": 1,
+      "collects": 1
+    },
+    "type": "character",
+    "popularity_score": 3,
+    "battle_stats": {
+      "hp": 250,
+      "atk": 30,
+      "def": 30,
+      "sp": 30,
+      "spd": 30
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 101
+  },
+  {
+    "id": 157751,
+    "name": "䌷凛太郎",
+    "original_name": "紬凛太郎",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/3e/72/157751_crt_R8Rus.jpg?r=1742622900",
+    "anime_ids": [
+      513345
+    ],
+    "anime_names": [
+      "薰香花朵凛然绽放"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "1月28日",
+    "description": "長身・金髪・強面・物静か。\r\nそんな見た目から周囲に「不良」「怖い人」と言われている。\r\n実家はケーキ屋で、たまに手伝いをしている。",
+    "stats": {
+      "comments": 32,
+      "collects": 26
+    },
+    "type": "character",
+    "popularity_score": 90,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 226
+  },
+  {
+    "id": 157752,
+    "name": "和栗薰子",
+    "original_name": "和栗薫子",
+    "rarity": "SSR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/5f/77/157752_crt_8ThAH.jpg?r=1755412425",
+    "anime_ids": [
+      513345
+    ],
+    "anime_names": [
+      "薰香花朵凛然绽放"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "7月22日",
+    "description": "食べることが大好きで、\r\n月に１～2回程度、凛太郎の実家のケーキ屋を利用している。\r\n何事にもまっすぐな性格。",
+    "stats": {
+      "comments": 116,
+      "collects": 348
+    },
+    "type": "character",
+    "popularity_score": 580,
+    "battle_stats": {
+      "hp": 873,
+      "atk": 92,
+      "def": 82,
+      "sp": 97,
+      "spd": 87
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 548
+  },
+  {
+    "id": 115179,
+    "name": "若月妮可",
+    "original_name": "若月ニコ",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/9d/84/115179_crt_fgHSk.jpg?r=1723994081",
+    "anime_ids": [
+      506672
+    ],
+    "anime_names": [
+      "魔女与使魔"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "4月14日",
+    "description": "糊涂的魔女女孩。个性冒失，一被人夸奖马上就会得意忘形。\r\n梦想是成为能助人的出色魔女。喜欢守仁，但现在似乎还是单相思……？\r\n\r\n[简介原文]\r\nドジっ子魔女。おっちょこちょいな性格で褒められるとすぐ、調子に乗ってしまう。人を助けられる立派な魔女になるのが夢。モリヒトのことが好きだが、今はまだ片思い中…？",
+    "stats": {
+      "comments": 78,
+      "collects": 240
+    },
+    "type": "character",
+    "popularity_score": 396,
+    "battle_stats": {
+      "hp": 603,
+      "atk": 70,
+      "def": 65,
+      "sp": 75,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 440
+  },
+  {
+    "id": 115180,
+    "name": "乙木守仁",
+    "original_name": "乙木守仁",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/3a/cd/115180_crt_lZMk3.jpg?r=1738602387",
+    "anime_ids": [
+      506672
+    ],
+    "anime_names": [
+      "魔女与使魔"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "10月7日",
+    "description": "鬼的后裔，力量强大、个性沉着。自从妮可过来后麻烦就源源不断。\r\n和妮可是儿时玩伴，妮可称呼他为「MOI」\r\n\r\n[简介原文]\r\n鬼の末裔で、力が強く真面目でクールな性格。ニコが来てからは、トラブル続き。ニコとは幼馴染で、“モイちゃん”と呼ばれている。",
+    "stats": {
+      "comments": 21,
+      "collects": 34
+    },
+    "type": "character",
+    "popularity_score": 76,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 234
+  },
+  {
+    "id": 115181,
+    "name": "风祭监志",
+    "original_name": "風祭監志",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/53/a1/115181_crt_2B9HV.jpg?r=1738602325",
+    "anime_ids": [
+      506672
+    ],
+    "anime_names": [
+      "魔女与使魔"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "11月5日",
+    "description": "天狗。因为种族间的问题而将守仁视为敌人。\r\n重情义、社交能力高，不论和谁都能在转眼间打成一片。\r\n\r\n[简介原文]\r\n天狗。種族間の問題で、モリヒトを敵対視している。人情に厚くコミュ力も高いため誰とでもすぐに仲良くなれる。",
+    "stats": {
+      "comments": 14,
+      "collects": 26
+    },
+    "type": "character",
+    "popularity_score": 54,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 226
+  },
+  {
+    "id": 115182,
+    "name": "真神圭护",
+    "original_name": "真神圭護",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/df/81/115182_crt_YZjlK.jpg?r=1738602281",
+    "anime_ids": [
+      506672
+    ],
+    "anime_names": [
+      "魔女与使魔"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "1月3日",
+    "description": "因为守仁「和自己很像」而主动搭话，并和他成为朋友的强者。\r\n套用守仁的说法，是个「次元化混蛋」。在Youtube上介绍各种自己在意的东西。\r\n\r\n[简介原文]\r\nモリヒトが“自分に似ている”という理由から話しかけ、友達になったツワモノ。モリヒト曰く、サブカルクソ野郎。YouTubeで自分が気になった様々なものを紹介している。",
+    "stats": {
+      "comments": 26,
+      "collects": 26
+    },
+    "type": "character",
+    "popularity_score": 78,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 226
+  },
+  {
+    "id": 115184,
+    "name": "雾生见晴",
+    "original_name": "霧生見晴",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/7a/4b/115184_crt_9fNBF.jpg?r=1750582020",
+    "anime_ids": [
+      506672
+    ],
+    "anime_names": [
+      "魔女与使魔"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "2月21日",
+    "description": "吸ニコの母の古い知り合い．霧生家の一人息子。コウモリの使い魔であり、吸血鬼。血ではなく生気を吸う“吸魂”を必要とする。",
+    "stats": {
+      "comments": 16,
+      "collects": 14
+    },
+    "type": "character",
+    "popularity_score": 46,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 214
+  },
+  {
+    "id": 166838,
+    "name": "谷悠介",
+    "original_name": "谷悠介",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/44/1c/166838_crt_9jj4H.jpg?r=1741015358",
+    "anime_ids": [
+      525565
+    ],
+    "anime_names": [
+      "相反的你和我"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "11月1日",
+    "description": "物静かだけど自分の意見をはっきり言える男子。\r\nいつも軽いノリで話しかけてくる鈴木に対して、素っ気なくも思える返答を繰り返していたのだが……。",
+    "stats": {
+      "comments": 28,
+      "collects": 23
+    },
+    "type": "character",
+    "popularity_score": 79,
+    "battle_stats": {
+      "hp": 602,
+      "atk": 70,
+      "def": 65,
+      "sp": 75,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 423
+  },
+  {
+    "id": 166839,
+    "name": "铃木实优",
+    "original_name": "鈴木みゆ",
+    "rarity": "SSR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/e8/0c/166839_crt_2Krz5.jpg?r=1741015359",
+    "anime_ids": [
+      525565
+    ],
+    "anime_names": [
+      "相反的你和我"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "3月30日",
+    "description": "元気いっぱいだけど周りの目が気になってしまう女子。\r\n自分とは反対に誰に対してもブレない谷に憧れているが、普通に接することが出来ず、いつもダル絡みしてしまう。",
+    "stats": {
+      "comments": 53,
+      "collects": 111
+    },
+    "type": "character",
+    "popularity_score": 217,
+    "battle_stats": {
+      "hp": 850,
+      "atk": 90,
+      "def": 80,
+      "sp": 95,
+      "spd": 85
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 511
+  },
+  {
+    "id": 167824,
+    "name": "天手·让叶",
+    "original_name": "アマテ・ユズリハ",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/03/da/167824_crt_l8rrw.jpg?r=1781181067",
+    "anime_ids": [
+      526816
+    ],
+    "anime_names": [
+      "机动战士高达 GQuuuuuuX"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "原名天手·让叶，是高中女生。在殖民卫星里过着和平的日常生活，却总是有种不真实的感觉。以邂逅尼娅安为契机，成为了《GQuuuuuuX》的驾驶员，并且参加了《军团战》。\r\n\r\n本名、アマテ・ユズリハ。女子高生。平穏なコロニー暮らしの日常を、どこか偽物のように感じていた。ニャアンと出会ったことをきっかけに、《GQuuuuuuXジークアクス》のパイロットとなり《クランバトル》に参加する。",
+    "stats": {
+      "comments": 194,
+      "collects": 300
+    },
+    "type": "character",
+    "popularity_score": 688,
+    "battle_stats": {
+      "hp": 617,
+      "atk": 71,
+      "def": 66,
+      "sp": 77,
+      "spd": 61
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 400
+  },
+  {
+    "id": 167825,
+    "name": "尼娅安",
+    "original_name": "ニャアン",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/b1/f0/167825_crt_J199b.jpg?r=1781181124",
+    "anime_ids": [
+      526816
+    ],
+    "anime_names": [
+      "机动战士高达 GQuuuuuuX"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "从事走私的少女。当故乡成了战场，自己沦为难民时，年幼的她无暇确认家人的生死，只能只身搭乘小型MS逃离。幸运的是她被太空船给救起，来到了玛秋居住的殖民卫星。她的首要任务是生存下去。\r\n\r\n非合法な運び屋をしている少女。故郷が戦場となり難民となった時、幼い彼女は家族の安否を確認する暇もなく、単身プチ・モビルスーツでコロニーを脱出。運よく船に拾われてマチュの住むコロニーに来た。最優先事項は生き抜くことで...",
+    "stats": {
+      "comments": 146,
+      "collects": 135
+    },
+    "type": "character",
+    "popularity_score": 427,
+    "battle_stats": {
+      "hp": 402,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 235
+  },
+  {
+    "id": 167826,
+    "name": "修司·伊藤",
+    "original_name": "シュウジ・イトウ",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/d9/58/167826_crt_GzXrn.jpg?r=1781181136",
+    "anime_ids": [
+      526816
+    ],
+    "anime_names": [
+      "机动战士高达 GQuuuuuuX"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "出现在玛秋和尼娅安面前的神秘少年。在各个殖民卫星的外墙上涂鸦，因此被军警通缉。他为了某个目的，同时也为了钱而参加《军团战》。而后成了玛秋的伙伴。\r\n\r\nマチュとニャアンの前に現れた不思議な少年。あちこちのコロニーの外壁にグラフィティを描き、軍警から指名手配されている。ある目的のため、お金を稼ぐために《クランバトル》に参加。マチュのマヴとなる。",
+    "stats": {
+      "comments": 119,
+      "collects": 40
+    },
+    "type": "character",
+    "popularity_score": 278,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 140
+  },
+  {
+    "id": 167827,
+    "name": "夸克斯高达",
+    "original_name": "gMS-Ω GQuuuuuuX",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/ee/27/167827_crt_dtI9L.jpg?r=1748422081",
+    "anime_ids": [
+      526816
+    ],
+    "anime_names": [
+      "机动战士高达 GQuuuuuuX"
+    ],
+    "anime_count": 1,
+    "gender": null,
+    "birthday": "未知",
+    "description": "玛秋驾驶的神秘最新型MS，作为博美拉尼亚的所属机体参与军团战。\r\n\r\nマチュが操縦する謎の最新鋭モビルスーツ。ポメラニアンズの所属機としてクランバトルに参加する。",
+    "stats": {
+      "comments": 51,
+      "collects": 20
+    },
+    "type": "character",
+    "popularity_score": 122,
+    "battle_stats": {
+      "hp": 401,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 120
+  },
+  {
+    "id": 183514,
+    "name": "高代槙生",
+    "original_name": "高代槙生",
+    "rarity": "SSR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/f2/90/183514_crt_XKZ6S.jpg",
+    "anime_ids": [
+      493016
+    ],
+    "anime_names": [
+      "异国日记"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "少女小説家。\r\n姉夫婦が交通事故で亡くなり、遺児となった姪の田汲朝を引き取る。\r\n人見知り。",
+    "stats": {
+      "comments": 49,
+      "collects": 111
+    },
+    "type": "character",
+    "popularity_score": 209,
+    "battle_stats": {
+      "hp": 856,
+      "atk": 90,
+      "def": 80,
+      "sp": 95,
+      "spd": 85
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 611
+  },
+  {
+    "id": 183515,
+    "name": "田汲朝",
+    "original_name": "田汲朝",
+    "rarity": "SSR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/c2/8f/183515_crt_ddZF7.jpg",
+    "anime_ids": [
+      493016
+    ],
+    "anime_names": [
+      "异国日记"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "9月4日",
+    "description": "交通事故で両親を亡くし、叔母である槙生の家に身を寄せる。\r\n人懐っこく素直な性格。",
+    "stats": {
+      "comments": 29,
+      "collects": 90
+    },
+    "type": "character",
+    "popularity_score": 148,
+    "battle_stats": {
+      "hp": 850,
+      "atk": 90,
+      "def": 80,
+      "sp": 95,
+      "spd": 85
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 590
+  },
+  {
+    "id": 150623,
+    "name": "小鸠常悟朗",
+    "original_name": "小鳩常悟朗",
+    "rarity": "N",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/8f/16/150623_crt_7xiao.jpg?r=1724765519",
+    "anime_ids": [
+      513018
+    ],
+    "anime_names": [],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "船戸高校１年。\r\n“知恵働き”と称する優れた推理力を持ちながら、小市民ともいうべき普通の生活に憧れている。\r\n中学のある時期から小佐内さんとは助け合う“互恵関係”でいることを約束している。",
+    "stats": {
+      "comments": 46,
+      "collects": 22
+    },
+    "type": "character",
+    "popularity_score": 114,
+    "battle_stats": {
+      "hp": 250,
+      "atk": 30,
+      "def": 30,
+      "sp": 30,
+      "spd": 30
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 22
+  },
+  {
+    "id": 150624,
+    "name": "小佐内由纪",
+    "original_name": "小佐内ゆき",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/1a/22/150624_crt_suCuN.jpg?r=1724765521",
+    "anime_ids": [
+      513018
+    ],
+    "anime_names": [],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "船戸高校１年。\r\n鋭い洞察力と行動力がありつつも、過去の失敗から小鳩くんと同じように小市民であることを目指している。\r\n甘いものに目がなく、放課後はしばしば街のスイーツショップに繰り出している。",
+    "stats": {
+      "comments": 209,
+      "collects": 452
+    },
+    "type": "character",
+    "popularity_score": 870,
+    "battle_stats": {
+      "hp": 625,
+      "atk": 72,
+      "def": 67,
+      "sp": 78,
+      "spd": 62
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 452
+  },
+  {
+    "id": 107702,
+    "name": "猪股大喜",
+    "original_name": "猪股大喜",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/21/8f/107702_crt_FfMEf.jpg?r=1700406573",
+    "anime_ids": [
+      460306
+    ],
+    "anime_names": [
+      "青之箱"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "1月15日",
+    "description": "本作主角，荣明学园高中1年级生，羽毛球部社员（短篇中是排球部部员）。性格开朗直爽。\r\n对总是能在同一个体育馆见到的鹿野千夏学姐抱有好感，之后因缘际会下与对方同住，并逐渐拉近两人之间的距离。\r\n喜欢羽毛球，原因是喜欢独自一人背负场上局势的紧张感。社团活动上的目标是取得全国高等学校综合体育大会的参赛权。",
+    "stats": {
+      "comments": 45,
+      "collects": 29
+    },
+    "type": "character",
+    "popularity_score": 119,
+    "battle_stats": {
+      "hp": 401,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 129
+  },
+  {
+    "id": 107703,
+    "name": "鹿野千夏",
+    "original_name": "鹿野千夏",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/ed/47/107703_crt_RPYPP.jpg?r=1730807297",
+    "anime_ids": [
+      460306
+    ],
+    "anime_names": [
+      "青之箱"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "8月26日",
+    "description": "本作女主角之一，荣明学园高中2年级生，篮球部社员。\r\n是女子篮球的明星选手，兼具实力外貌与良好性格，具有相当的知名度并备受关注。\r\n升上二年级后家人搬到国外居住，但她自己却因为还想要继续打球而留在了日本，并寄住在母亲的熟人猪股家。",
+    "stats": {
+      "comments": 94,
+      "collects": 219
+    },
+    "type": "character",
+    "popularity_score": 407,
+    "battle_stats": {
+      "hp": 407,
+      "atk": 50,
+      "def": 45,
+      "sp": 56,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 319
+  },
+  {
+    "id": 107704,
+    "name": "蝶野雏",
+    "original_name": "蝶野雛",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/a0/3b/107704_crt_7BoQI.jpg?r=1702703720",
+    "anime_ids": [
+      460306
+    ],
+    "anime_names": [
+      "青之箱"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "3月2日",
+    "description": "本作女主角之一，荣明学园高中1年级生，韵律体操部社员。\r\n与大喜、笠原国中三年都同班故彼此熟识，喜欢捉弄大喜、以此取乐。\r\n父亲是前日本体操选手代表，本身也是体操界的明星选手。",
+    "stats": {
+      "comments": 189,
+      "collects": 390
+    },
+    "type": "character",
+    "popularity_score": 768,
+    "battle_stats": {
+      "hp": 609,
+      "atk": 71,
+      "def": 66,
+      "sp": 76,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 490
+  },
+  {
+    "id": 153902,
+    "name": "鹿乃子乃子",
+    "original_name": "鹿乃子のこ",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/df/cb/153902_crt_tAYMJ.jpg?r=1710305676",
+    "anime_ids": [
+      484761
+    ],
+    "anime_names": [
+      "鹿乃子乃子乃子虎视眈眈"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "シカ部所属のシカ。\r\n都立日野南高校に転校してきた、ツノの生えた謎多き女の子。好物はシカせんべい。",
+    "stats": {
+      "comments": 37,
+      "collects": 57
+    },
+    "type": "character",
+    "popularity_score": 131,
+    "battle_stats": {
+      "hp": 402,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 157
+  },
+  {
+    "id": 153903,
+    "name": "虎视虎子",
+    "original_name": "虎視虎子",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/69/47/153903_crt_1h1sE.jpg?r=1710305705",
+    "anime_ids": [
+      484761
+    ],
+    "anime_names": [
+      "鹿乃子乃子乃子虎视眈眈"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "都立日野南高校 生徒会会長 兼シカ部 部長。\r\n成績優秀で、近所でも評判が良い優等生。\r\nだが元ヤンである。",
+    "stats": {
+      "comments": 48,
+      "collects": 74
+    },
+    "type": "character",
+    "popularity_score": 170,
+    "battle_stats": {
+      "hp": 401,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 174
+  },
+  {
+    "id": 153904,
+    "name": "虎视馅子",
+    "original_name": "虎視餡子",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/70/5a/153904_crt_TBT77.jpg?r=1710305729",
+    "anime_ids": [
+      484761
+    ],
+    "anime_names": [
+      "鹿乃子乃子乃子虎视眈眈"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "シカ部部員。虎視虎子の妹にして大のシスコン。\r\n姉との時間を邪魔するものは全員敵という危険思想をもっているメンヘラ。",
+    "stats": {
+      "comments": 11,
+      "collects": 34
+    },
+    "type": "character",
+    "popularity_score": 56,
+    "battle_stats": {
+      "hp": 401,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 134
+  },
+  {
+    "id": 153905,
+    "name": "马车芽芽芽",
+    "original_name": "馬車芽めめ",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/55/50/153905_crt_gB81g.jpg?r=1710305750",
+    "anime_ids": [
+      484761
+    ],
+    "anime_names": [
+      "鹿乃子乃子乃子虎视眈眈"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "シカ部所属のシカ見習い（ヒト以上シカ未満）\r\n鹿乃子のこにあこがれ、シカになるべくシカ部に入部した。\r\nシカ部では主にごはんを食べたり田んぼ作りに勤しんでいる。",
+    "stats": {
+      "comments": 24,
+      "collects": 32
+    },
+    "type": "character",
+    "popularity_score": 80,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 132
+  },
+  {
+    "id": 91523,
+    "name": "塞思",
+    "original_name": "セツ",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/ab/0b/91523_crt_voqqV.jpg?r=1614066391",
+    "anime_ids": [
+      526448
+    ],
+    "anime_names": [
+      "古诺希亚"
+    ],
+    "anime_count": 1,
+    "gender": null,
+    "birthday": "4月24日",
+    "description": "汎宇宙軍所属の軍人として、船内に侵入したグノーシアの排除を先頭に立って揮する。\r\n状況が分からずとまどう主人公を優しく導いてくれる。\r\n\r\n泛宇宙军所属的军人，率先采取行动指挥排除入侵飞船的Gnosia。引导着对于状况还不明晰的主角。\r\n\r\n名字来源是基督教*诺斯底主义分支（Gnosis）中“指引开悟者“。\r\n*基督教会认为诺斯底主义为异端，但是开发者座谈会上将诺斯底主义称作基督教分支。",
+    "stats": {
+      "comments": 46,
+      "collects": 156
+    },
+    "type": "character",
+    "popularity_score": 248,
+    "battle_stats": {
+      "hp": 600,
+      "atk": 70,
+      "def": 65,
+      "sp": 75,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 456
+  },
+  {
+    "id": 91524,
+    "name": "SQ",
+    "original_name": "SQ",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/f2/c3/91524_crt_3Q001.jpg?r=1614066482",
+    "anime_ids": [
+      526448
+    ],
+    "anime_names": [
+      "古诺希亚"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "4月1日",
+    "description": "おどけた態度で場をにぎわそうとする、どこかつかめない性格の持ち主。\r\n彼女の言動の何が嘘で何が本当なのか、判別するのはきわめて困難だろ。\r\n\r\n总是以嬉笑打闹的态度试图活跃气氛，是个让人难以捉摸的角色。\r\n她说的话哪些是真哪些是假，恐怕几乎无法分辨。\r\n\r\n名字来源为魅魔（サキュバス，Succubus）。",
+    "stats": {
+      "comments": 51,
+      "collects": 111
+    },
+    "type": "character",
+    "popularity_score": 213,
+    "battle_stats": {
+      "hp": 603,
+      "atk": 70,
+      "def": 65,
+      "sp": 75,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 411
+  },
+  {
+    "id": 91527,
+    "name": "拉琪奥",
+    "original_name": "ラキオ",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/b2/bf/91527_crt_qSWoQ.jpg?r=1614066905",
+    "anime_ids": [
+      526448
+    ],
+    "anime_names": [
+      "古诺希亚"
+    ],
+    "anime_count": 1,
+    "gender": null,
+    "birthday": "11月29日",
+    "description": "多少険のある物言いと、華美な装束が特徴的な汎性。\r\n論理的思考能力が極めて高く、情報がそろった瞬間にグノーシアを摘発する。\r\n\r\n以略带锋芒的说话方式和华丽的服装为特征的泛性角色。\r\n逻辑思考能力极为出色，一旦情报凑齐，便会在瞬间揪出 Gnosia。\r\n\r\n名字来源为世界语的智慧/理性一词racio，英文版名字为Raqio.",
+    "stats": {
+      "comments": 37,
+      "collects": 31
+    },
+    "type": "character",
+    "popularity_score": 105,
+    "battle_stats": {
+      "hp": 401,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 331
+  },
+  {
+    "id": 91528,
+    "name": "吉娜",
+    "original_name": "ジナ",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/53/63/91528_crt_r6D2w.jpg?r=1614066898",
+    "anime_ids": [
+      526448
+    ],
+    "anime_names": [
+      "古诺希亚"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "1月15日",
+    "description": "愛想のない言動で冷たく受け取られがちだが、心根は優しい女性。\r\n自分は何をすべきなのか、何のために存在しているのかを、常に自分に問いかけている。\r\n\r\n言行不讨好人，常常给人一种冷淡的印象，但本性其实很温柔的女性。\r\n她一直在不断询问自己应该做什么？为何而存在？\r\n\r\n名字来源为韩国女团偶像。英文版名字为Gina.",
+    "stats": {
+      "comments": 18,
+      "collects": 72
+    },
+    "type": "character",
+    "popularity_score": 108,
+    "battle_stats": {
+      "hp": 601,
+      "atk": 70,
+      "def": 65,
+      "sp": 75,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 372
+  },
+  {
+    "id": 91530,
+    "name": "史戴拉",
+    "original_name": "ステラ",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/37/68/91530_crt_0o7ko.jpg?r=1614066984",
+    "anime_ids": [
+      526448
+    ],
+    "anime_names": [
+      "古诺希亚"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "11月12日",
+    "description": "柔らかで丁寧な態度で皆と接する優しいお姉さん。\r\n宇宙船内の管理を任されているらしく、皆が快適に過ごせるよう気を配っている。\r\n\r\n以柔和、细致的态度与众人相处的温柔姐姐。\r\n似乎负责管理宇宙船内的事务，为了让大家都能舒适地生活而处处留心。\r\n\r\n名字来源为拉丁语的「星」。",
+    "stats": {
+      "comments": 11,
+      "collects": 46
+    },
+    "type": "character",
+    "popularity_score": 68,
+    "battle_stats": {
+      "hp": 600,
+      "atk": 70,
+      "def": 65,
+      "sp": 75,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 346
+  },
+  {
+    "id": 74254,
+    "name": "斑鸠夏生",
+    "original_name": "斑鳩夏生",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/cf/07/74254_crt_kf0IM.jpg?r=1577368955",
+    "anime_ids": [
+      397604
+    ],
+    "anime_names": [
+      "亚托莉 -我挚爱的时光-"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "高2（17歳）\r\n都市にあるエリート育成校、通称アカデミーに在籍していたが、ある事情から休学。祖母の暮らす海辺の町へと移り住んだ。\r\n幼い頃に事故で母と右足を失っており、そのトラウマから暗く静かな場所にいると発作に襲われる。\r\n高価なロボット義足を買うため、海洋地質学者だった祖母の潜水艇で海に沈んだ遺産をサルベージしようとする。",
+    "stats": {
+      "comments": 19,
+      "collects": 14
+    },
+    "type": "character",
+    "popularity_score": 52,
+    "battle_stats": {
+      "hp": 401,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 114
+  },
+  {
+    "id": 74255,
+    "name": "亚托莉",
+    "original_name": "アトリ",
+    "rarity": "HR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/bf/05/74255_crt_UBbIQ.jpg?r=1590778533",
+    "anime_ids": [
+      397604
+    ],
+    "anime_names": [
+      "亚托莉 -我挚爱的时光-"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "8月28日",
+    "description": "夏生が海底からサルベージしたロボットの少女。\r\n人間と見分けが付かないほど精巧で表情豊か。\r\n祖母の助手だったようだが、\r\n長い間海底で眠っていたため記憶を一部失っている。\r\n「マスターからもらった最後の命令を果たしたい」\r\nそう夏生に願い、欠落したメモリーを探す。\r\n好奇心旺盛。口癖は「高性能ですから！」。",
+    "stats": {
+      "comments": 120,
+      "collects": 659
+    },
+    "type": "character",
+    "popularity_score": 899,
+    "battle_stats": {
+      "hp": 1017,
+      "atk": 101,
+      "def": 101,
+      "sp": 101,
+      "spd": 101
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 759
+  },
+  {
+    "id": 166504,
+    "name": "铃之宫莉莉莎",
+    "original_name": "鈴ノ宮りりさ",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/a2/c7/166504_crt_wKnpr.jpg?r=1730897892",
+    "anime_ids": [
+      504678
+    ],
+    "anime_names": [
+      "摇滚乃是淑女的爱好"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "7月7日",
+    "description": "桜心女学園に通う高校一年生。親の再婚で、庶民から不動産王である鈴ノ宮家の娘になる。学園一のお嬢様の称号「ノーブルメイデン」を目指すべく、大好きだったロックとギターを捨て「お嬢様らしく」振舞う努力をしている。",
+    "stats": {
+      "comments": 44,
+      "collects": 55
+    },
+    "type": "character",
+    "popularity_score": 143,
+    "battle_stats": {
+      "hp": 402,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 155
+  },
+  {
+    "id": 166505,
+    "name": "黑铁音羽",
+    "original_name": "黒鉄音羽",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/ba/aa/166505_crt_W4s62.jpg?r=1730897893",
+    "anime_ids": [
+      504678
+    ],
+    "anime_names": [
+      "摇滚乃是淑女的爱好"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "4月12日",
+    "description": "桜心女学園に通う高校一年生。容姿端麗で政界の重鎮を父に持つ、学年の中で最も憧れられている存在。\r\n使われなくなった旧校舎の音楽室で一人ドラム演奏に興じている。",
+    "stats": {
+      "comments": 37,
+      "collects": 75
+    },
+    "type": "character",
+    "popularity_score": 149,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 175
+  },
+  {
+    "id": 166510,
+    "name": "院濑见蒂娜",
+    "original_name": "院瀬見ティナ",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/69/0e/166510_crt_UzZuv.jpg?r=1741267317",
+    "anime_ids": [
+      504678
+    ],
+    "anime_names": [
+      "摇滚乃是淑女的爱好"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "12月11日",
+    "description": "桜心女学園に通う高校二年生。\r\n長身かつ中性的なルックスでモデル業までこなし、その立ち居振る舞いから学園内では「桜心の王子」と呼ばれている。\r\nその反面、実は自分に自信がなく他人の望む姿を演じてしまっており、そんな自分を変えたいと思っている。",
+    "stats": {
+      "comments": 17,
+      "collects": 30
+    },
+    "type": "character",
+    "popularity_score": 64,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 130
+  },
+  {
+    "id": 166511,
+    "name": "白矢环",
+    "original_name": "白矢環",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/da/99/166511_crt_HtsTt.jpg?r=1741267329",
+    "anime_ids": [
+      504678
+    ],
+    "anime_names": [
+      "摇滚乃是淑女的爱好"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "2月8日",
+    "description": "桜心女学園の姉妹校・黒百合女学園に通う高校二年生。\r\n超絶テクのギタリストとして界隈で名を馳せており、 凄腕バンドからスカウトされるも断り続けている。\r\n音羽とは幼馴染の関係。",
+    "stats": {
+      "comments": 12,
+      "collects": 16
+    },
+    "type": "character",
+    "popularity_score": 40,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 116
+  },
+  {
+    "id": 177452,
+    "name": "摇滚淑女",
+    "original_name": "ROCK LADY",
+    "rarity": "N",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/a5/84/177452_crt_Lwdl2.jpg",
+    "anime_ids": [
+      504678
+    ],
+    "anime_names": [
+      "摇滚乃是淑女的爱好"
+    ],
+    "anime_count": 1,
+    "gender": null,
+    "birthday": "未知",
+    "description": "",
+    "stats": {
+      "comments": 4,
+      "collects": 3
+    },
+    "type": "character",
+    "popularity_score": 11,
+    "battle_stats": {
+      "hp": 250,
+      "atk": 30,
+      "def": 30,
+      "sp": 30,
+      "spd": 30
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 103
+  },
+  {
+    "id": 77400,
+    "name": "和田",
+    "original_name": "和田",
+    "rarity": "SSR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/29/cb/77400_crt_w4H33.jpg?r=1753888054",
+    "anime_ids": [
+      528438
+    ],
+    "anime_names": [
+      "明天，美食广场见。"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "1月14日",
+    "description": "お嬢様のような雰囲気を醸し出しているが、実際は喜怒哀楽が豊かで勉強が苦手な普通の女子高生。",
+    "stats": {
+      "comments": 96,
+      "collects": 322
+    },
+    "type": "character",
+    "popularity_score": 514,
+    "battle_stats": {
+      "hp": 861,
+      "atk": 91,
+      "def": 81,
+      "sp": 96,
+      "spd": 86
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 622
+  },
+  {
+    "id": 77401,
+    "name": "山本",
+    "original_name": "山本",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/f4/7e/77401_crt_Wupvm.jpg?r=1749824602",
+    "anime_ids": [
+      528438
+    ],
+    "anime_names": [
+      "明天，美食广场见。"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "10月21日",
+    "description": "ギャルのような見た目からコワモテな雰囲気を与える女子高生。だけど、努力家で弟の面倒を見るなど、実は姉らしい一面を持つ真面目な子。",
+    "stats": {
+      "comments": 35,
+      "collects": 110
+    },
+    "type": "character",
+    "popularity_score": 180,
+    "battle_stats": {
+      "hp": 603,
+      "atk": 70,
+      "def": 65,
+      "sp": 75,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 410
+  },
+  {
+    "id": 101792,
+    "name": "甘织玲奈子",
+    "original_name": "甘織れな子",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/bd/1d/101792_crt_64hj4.jpg?r=1685930970",
+    "anime_ids": [
+      524707
+    ],
+    "anime_names": [],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "3月3日",
+    "description": "「二度とぽっちなんかに戻らない！勝ち取るんだ、最高の学園生活を！」\r\n\r\n本作の主人公。高校デビューに大成功してしまった女の子。\r\n中学時代をぽっちで過ごした反動で、陽キャライフに憧れていた。\r\n念願叶ったものの、根は陰キャでコミュ障なので、 毎日あわあわして過ごしていたりする。\r\n日課は、寝る前の『おふとん大反省会』",
+    "stats": {
+      "comments": 50,
+      "collects": 124
+    },
+    "type": "character",
+    "popularity_score": 224,
+    "battle_stats": {
+      "hp": 403,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 124
+  },
+  {
+    "id": 101793,
+    "name": "王冢真唯",
+    "original_name": "王塚真唯",
+    "rarity": "N",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/3d/81/101793_crt_4LK8K.jpg?r=1685930996",
+    "anime_ids": [
+      524707
+    ],
+    "anime_names": [],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "8月31日",
+    "description": "「どうやら私は、君のことを好きになってしまったようだ」\r\n\r\nグループのリーダーで、学校のスーパースター。\r\n容姿完璧で文武無敵、性格も良く、\r\n非の打ち所のない女性。\r\nその完全無欠な振舞いから付いた異名は\r\n『ミス・パーフェクト』『スパダリ』。\r\n好きな人には甘えたいし甘えられたいタイプで、 \r\n意外にポンコツなー面も。",
+    "stats": {
+      "comments": 51,
+      "collects": 48
+    },
+    "type": "character",
+    "popularity_score": 150,
+    "battle_stats": {
+      "hp": 251,
+      "atk": 30,
+      "def": 30,
+      "sp": 30,
+      "spd": 30
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 48
+  },
+  {
+    "id": 101794,
+    "name": "濑名紫阳花",
+    "original_name": "瀬名紫陽花",
+    "rarity": "N",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/72/30/101794_crt_3tzVe.jpg?r=1685931018",
+    "anime_ids": [
+      524707
+    ],
+    "anime_names": [],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "12月12日",
+    "description": "「えー？急に褒められても笑顔ぐらいしか出ないよ？」\r\n\r\nグループのバランサー & 癒やし系。\r\nほんわかオーラを振りまく大天使。\r\n明るく優しく、\r\n誰とでも分け隔てなく付き合っている。\r\nメンバーの仰を自然に取り持ってしまうほどに、\r\n懐が深い。\r\n小さな弟がふたりいるため、 \r\n家ではお姉ちゃんとしてもがんばっている。",
+    "stats": {
+      "comments": 39,
+      "collects": 104
+    },
+    "type": "character",
+    "popularity_score": 182,
+    "battle_stats": {
+      "hp": 250,
+      "atk": 30,
+      "def": 30,
+      "sp": 30,
+      "spd": 30
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 104
+  },
+  {
+    "id": 101795,
+    "name": "琴纱月",
+    "original_name": "琴紗月",
+    "rarity": "N",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/b4/16/101795_crt_sRs4q.jpg?r=1685931055",
+    "anime_ids": [
+      524707
+    ],
+    "anime_names": [],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "7月26日",
+    "description": "「…あなたそんなに面白い感じだったかしら」\r\n\r\nグループの真唯担当。黒髪美人の文学少女。\r\n真唯とは腐れ縁の幼馴染で、彼女にいつか\r\n敗北感を味わわせてやるのが目標。\r\n一見すると無愛想で近寄りがたいが、\r\n年頃の少女らしい平凡な感性も兼ね備えている。\r\n甘織れな子には、なにか思うところがあるようだ。",
+    "stats": {
+      "comments": 14,
+      "collects": 52
+    },
+    "type": "character",
+    "popularity_score": 80,
+    "battle_stats": {
+      "hp": 250,
+      "atk": 30,
+      "def": 30,
+      "sp": 30,
+      "spd": 30
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 52
+  },
+  {
+    "id": 101796,
+    "name": "小柳香穗",
+    "original_name": "小柳香穂",
+    "rarity": "N",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/29/18/101796_crt_1Z3kN.jpg?r=1685931082",
+    "anime_ids": [
+      524707
+    ],
+    "anime_names": [],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "4月10日",
+    "description": "「あたしマイ推しだし！ほら、推しカラーも」\r\n\r\nグループのマスコット。芦ケ谷高校の妹的存在。\r\n空気に合わせて自分のキャラを切り替えて、\r\n場を作るムードメーカー。\r\n『真唯推し」と公言するほど真唯を信奉しており、\r\n真唯のカラーである黄色の小物を身に着けている。\r\n真唯が学校を休むと、へによっている。",
+    "stats": {
+      "comments": 15,
+      "collects": 36
+    },
+    "type": "character",
+    "popularity_score": 66,
+    "battle_stats": {
+      "hp": 250,
+      "atk": 30,
+      "def": 30,
+      "sp": 30,
+      "spd": 30
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 36
+  },
+  {
+    "id": 127003,
+    "name": "北条时行",
+    "original_name": "北条時行",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/21/75/127003_crt_Jw9MC.jpg?r=1728290976",
+    "anime_ids": [
+      424573
+    ],
+    "anime_names": [
+      "擅长逃跑的殿下"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "鎌倉幕府を治める執権・北条高時の息子。\r\n地位や権力といったものには関心がなく、\r\n争いごとを好まない優しい性格で、誰よりも鎌倉の平和を願っている。\r\n武芸は苦手だが、逃げ隠れの能力はずば抜けており、\r\n大人ですら容易に捕まえることができない。\r\n忠義の武士と信頼していた足利高氏の裏切りによって全てを奪われ、\r\n大切な故郷・鎌倉を取り戻すための戦いに身を投じていく。",
+    "stats": {
+      "comments": 104,
+      "collects": 160
+    },
+    "type": "character",
+    "popularity_score": 368,
+    "battle_stats": {
+      "hp": 606,
+      "atk": 70,
+      "def": 65,
+      "sp": 75,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 360
+  },
+  {
+    "id": 127004,
+    "name": "诹访赖重",
+    "original_name": "諏訪頼重",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/2e/fc/127004_crt_Ksd46.jpg?r=1697555340",
+    "anime_ids": [
+      424573
+    ],
+    "anime_names": [
+      "擅长逃跑的殿下"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "信濃国・諏訪大社の当主。\r\n人であり神でもある「現人神」と呼ばれ、\r\n民から絶大な信仰を集めている。\r\n神力を操ることができ、未来をも見ることが可能…といっても\r\nおぼろげな未来が見えるだけなのでどこか胡散臭い。\r\n滅びゆく鎌倉で時行を救い出し、諏訪で匿った。\r\n時行の逃げ上手の才を見抜き、鎌倉奪還のために厳しい試練を与えつつも、\r\n一大事にならないかハラハラしている…。",
+    "stats": {
+      "comments": 22,
+      "collects": 13
+    },
+    "type": "character",
+    "popularity_score": 57,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 213
+  },
+  {
+    "id": 139814,
+    "name": "雫",
+    "original_name": "雫",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/76/7a/139814_crt_pFbn3.jpg?r=1766295198",
+    "anime_ids": [
+      424573
+    ],
+    "anime_names": [
+      "擅长逃跑的殿下"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "諏訪大社の巫女であり、鎌倉奪還を目指す\r\n時行の郎党「逃若党」の優秀な執事。\r\nお家全般を取り仕切り、頼重を「父様」と呼び慕うなど\r\n基本的に品行方正だが、\r\n時折周囲を驚かせるような言動をとることも。\r\n頼重ほどではないが神力を操る秘術を使うことができる。\r\n洞察力にも優れているため、戦いでは後方支援を\r\n担当しながら、頼重の名代も務める。",
+    "stats": {
+      "comments": 89,
+      "collects": 248
+    },
+    "type": "character",
+    "popularity_score": 426,
+    "battle_stats": {
+      "hp": 604,
+      "atk": 70,
+      "def": 65,
+      "sp": 75,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 448
+  },
+  {
+    "id": 141537,
+    "name": "亚也子",
+    "original_name": "亜也子",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/06/5b/141537_crt_i0i7v.jpg?r=1766295086",
+    "anime_ids": [
+      424573
+    ],
+    "anime_names": [
+      "擅长逃跑的殿下"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "天真爛漫な「逃若党」の怪力娘。\r\n普段は時行のお世話係や武芸の稽古役を務めるが、\r\n少し甘やかしすぎる節がある。\r\n主君を守り支えられるような強い女性に憧れている。\r\n日頃から弧次郎と切磋琢磨し合っており、\r\n戦場での二人の息はピッタリ。\r\n音楽や舞踊など多彩な芸も習得しているらしい。",
+    "stats": {
+      "comments": 56,
+      "collects": 119
+    },
+    "type": "character",
+    "popularity_score": 231,
+    "battle_stats": {
+      "hp": 403,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 319
+  },
+  {
+    "id": 148233,
+    "name": "弧次郎",
+    "original_name": "弧次郎",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/dd/ff/148233_crt_VGCK2.jpg?r=1766294982",
+    "anime_ids": [
+      424573
+    ],
+    "anime_names": [
+      "擅长逃跑的殿下"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "大人に引けを取らない剣術の腕を持つ「逃若党」の剣士。\r\n血気盛んで物怖じしない性格。\r\n戦いでは周囲の状況を観察・分析しつつ、仲間への気配りや鼓舞も欠かさない。\r\n時行とは主従関係ながらも良き友人のように接している。\r\n個性が強すぎる「逃若党」の中では比較的常識人なため、\r\nツッコミ役になることが多い。",
+    "stats": {
+      "comments": 5,
+      "collects": 18
+    },
+    "type": "character",
+    "popularity_score": 28,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 218
+  },
+  {
+    "id": 112709,
+    "name": "拉法尔",
+    "original_name": "ラファウ",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/0f/46/112709_crt_KLXXw.jpg?r=1721877180",
+    "anime_ids": [
+      389156
+    ],
+    "anime_names": [
+      "地。 ―关于地球的运动―"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "本作の主人公の一人。12歳で大学に進級し、神学を専攻する予定だった神童。ある日、フベルトと出会い、地動説の美しさに魅入られる。",
+    "stats": {
+      "comments": 32,
+      "collects": 41
+    },
+    "type": "character",
+    "popularity_score": 105,
+    "battle_stats": {
+      "hp": 401,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 141
+  },
+  {
+    "id": 112710,
+    "name": "休伯特",
+    "original_name": "フベルト",
+    "rarity": "N",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/c8/66/112710_crt_V1tUV.jpg?r=1721877210",
+    "anime_ids": [
+      389156
+    ],
+    "anime_names": [
+      "地。 ―关于地球的运动―"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "地動説を研究し、異端者として捕まっていた学者。",
+    "stats": {
+      "comments": 6,
+      "collects": 3
+    },
+    "type": "character",
+    "popularity_score": 15,
+    "battle_stats": {
+      "hp": 250,
+      "atk": 30,
+      "def": 30,
+      "sp": 30,
+      "spd": 30
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 103
+  },
+  {
+    "id": 112712,
+    "name": "诺瓦克",
+    "original_name": "ノヴァク",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/32/f7/112712_crt_MPGqI.jpg?r=1721877192",
+    "anime_ids": [
+      389156
+    ],
+    "anime_names": [
+      "地。 ―关于地球的运动―"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "元傭兵の異端審問官。常にけだるげな態度をとっている。",
+    "stats": {
+      "comments": 36,
+      "collects": 19
+    },
+    "type": "character",
+    "popularity_score": 91,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 119
+  },
+  {
+    "id": 112713,
+    "name": "奥克齐",
+    "original_name": "オクジー",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/34/c3/112713_crt_hC3r5.jpg?r=1725507182",
+    "anime_ids": [
+      389156
+    ],
+    "anime_names": [
+      "地。 ―关于地球的运动―"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "代闘士。超ネガティブ思考。優れた視力を持つが、空を見ることを恐れている。現世に何も期待しておらず、早く天国に行きたいと願っている。",
+    "stats": {
+      "comments": 10,
+      "collects": 24
+    },
+    "type": "character",
+    "popularity_score": 44,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 124
+  },
+  {
+    "id": 112715,
+    "name": "巴德尼",
+    "original_name": "バデーニ",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/cd/1c/112715_crt_Y5mF5.jpg?r=1725507203",
+    "anime_ids": [
+      389156
+    ],
+    "anime_names": [
+      "地。 ―关于地球的运动―"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "修道士。「人生を特別にする瞬間」を求め、教会の規律に従うことなく純粋に「知」を追求した結果、眼を焼かれ田舎村に左遷された。知識量、計算力など並外れた頭脳をもつ。右目に眼帯をしている。",
+    "stats": {
+      "comments": 12,
+      "collects": 29
+    },
+    "type": "character",
+    "popularity_score": 53,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 129
+  },
+  {
+    "id": 57309,
+    "name": "富冈义勇",
+    "original_name": "冨岡義勇",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/99/b6/57309_crt_8Tehz.jpg?r=1569685012",
+    "anime_ids": [
+      501958
+    ],
+    "anime_names": [
+      "剧场版 鬼灭之刃 无限城篇 第一章 猗窝座再袭"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "2月8日",
+    "description": "水柱。\r\n冷冽的剑士，鳞泷的弟子，炭治郎的师兄。初登场19岁，现年21岁。\r\n为讨伐变成鬼的祢豆子而出现在炭治郎面前，严厉教训了炭治郎的天真想法并激起他的战斗意志。\r\n认可兄妹二人的特别之处，放弃杀祢豆子、并把炭治郎引荐到鳞泷的门下。那田蜘蛛山任务中违反队律庇护兄妹二人，与师傅鳞泷一起向当主以性命担保祢豆子不会伤害人类。不苟言笑但相当有人情味。\r\n因不善言辞，被蝴蝶指出被柱们所讨厌，但本人并没有自...",
+    "stats": {
+      "comments": 29,
+      "collects": 107
+    },
+    "type": "character",
+    "popularity_score": 165,
+    "battle_stats": {
+      "hp": 600,
+      "atk": 70,
+      "def": 65,
+      "sp": 75,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 407
+  },
+  {
+    "id": 87189,
+    "name": "猗窝座",
+    "original_name": "猗窩座",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/d4/07/87189_crt_MPt6f.jpg?r=1605567324",
+    "anime_ids": [
+      501958
+    ],
+    "anime_names": [
+      "剧场版 鬼灭之刃 无限城篇 第一章 猗窝座再袭"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "凄まじい力を持つ十二鬼月・上弦の参。\r\n練り上げられた武と共に、強者に対しての敬意を持つ。",
+    "stats": {
+      "comments": 38,
+      "collects": 33
+    },
+    "type": "character",
+    "popularity_score": 109,
+    "battle_stats": {
+      "hp": 602,
+      "atk": 70,
+      "def": 65,
+      "sp": 75,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 333
+  },
+  {
+    "id": 154314,
+    "name": "广濑夏子",
+    "original_name": "広瀬ナツ子",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/6c/b7/154314_crt_d0B1W.jpg?r=1711117748",
+    "anime_ids": [
+      486039
+    ],
+    "anime_names": [
+      "全修。"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "2月7日",
+    "description": "アニメ監督・アニメーター。22歳。\r\n好きなことには努力を惜しまない。夢中になると周りが見えなくなる。他人を信用せず、何事も全て自分でやった方が早いと思っている。思い付いたらすぐ行動するため周囲をギョッとさせることもある。コミュニケーション能力に難あり。\r\n劇場作品のコンテがあがるまで髪を切らないと願を懸けたらこんなになってしまったが、本人は気にしていない。美味しいものを食べている時は機嫌がいい。",
+    "stats": {
+      "comments": 51,
+      "collects": 68
+    },
+    "type": "character",
+    "popularity_score": 170,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 168
+  },
+  {
+    "id": 154315,
+    "name": "卢克·布雷布哈特",
+    "original_name": "ルーク・ブレイブハート",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/d0/1c/154315_crt_v4gcC.jpg?r=1711117910",
+    "anime_ids": [
+      486039
+    ],
+    "anime_names": [
+      "全修。"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "3月14日",
+    "description": "映画『滅びゆく物語』の主人公。伝説の勇者。18歳。\r\n光の国出身。勇者の家系に生まれ、代々受け継いできたキングブレイブソードを武器に、幼い頃から戦いの訓練を受けてきた。両親はすでに死亡し家族はいない。ヴォイド討伐のため各国の精鋭を集めたナインソルジャーの中心的存在。\r\n自分の使命はソウルフューチャーを守ることだと信じ、戦う以外のことをあまりしたことがない。真面目。若い女の子の集団が苦手。",
+    "stats": {
+      "comments": 25,
+      "collects": 29
+    },
+    "type": "character",
+    "popularity_score": 79,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 129
+  },
+  {
+    "id": 161950,
+    "name": "草隐里子",
+    "original_name": "草隠さとこ",
+    "rarity": "SR",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/3b/40/161950_crt_TP83K.jpg?r=1745131672",
+    "anime_ids": [
+      491569
+    ],
+    "anime_names": [
+      "忍者与杀手二人组的日常生活"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "8月8日",
+    "description": "被同伴带着逃出村子于是成为逃忍，不谙世事的女忍者。会使用能把东西变成叶子的忍术。虽然是个在战斗方面完全不行的废柴忍者，由于在村里总是负责打杂，所以擅长各种家事。\r\n\r\n[简介原文]\r\n仲間に流されるままに里を飛び出し、\r\n抜け忍となってしまった世間知らずのくノ一。\r\nモノを葉っぱに変える忍術が使える。\r\n戦闘はからっきしのポンコツ忍者だが、\r\n里では雑用ばかりしていたため家事全般は出来る。",
+    "stats": {
+      "comments": 78,
+      "collects": 159
+    },
+    "type": "character",
+    "popularity_score": 315,
+    "battle_stats": {
+      "hp": 607,
+      "atk": 70,
+      "def": 65,
+      "sp": 75,
+      "spd": 60
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 359
+  },
+  {
+    "id": 161951,
+    "name": "古贺木叶",
+    "original_name": "古賀このは",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/17/db/161951_crt_0tAPT.jpg?r=1745131675",
+    "anime_ids": [
+      491569
+    ],
+    "anime_names": [
+      "忍者与杀手二人组的日常生活"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "外表看似普通的女高中生，其实真面目是个杀手。从里子的忍术中看到好处，因而邀请里子一起从事杀手的工作。对待工作以外的事情都很散漫。「古贺木叶」只是其中一个假名，本名不详。\r\n\r\n[简介原文]\r\n一見普通の女子高生だが、その正体は殺し屋。\r\nさとこの忍術にメリットを感じ、\r\n殺し屋の仕事を一緒にしないかさとこを誘う。\r\n仕事以外ではズボラ。\r\n「古賀このは」は偽名のひとつであり、本名は不明。",
+    "stats": {
+      "comments": 147,
+      "collects": 79
+    },
+    "type": "character",
+    "popularity_score": 373,
+    "battle_stats": {
+      "hp": 405,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 279
+  },
+  {
+    "id": 162210,
+    "name": "佐佐木常宏",
+    "original_name": "佐々木常宏",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/f1/6e/162210_crt_jbMZI.jpg?r=1722327158",
+    "anime_ids": [
+      505895
+    ],
+    "anime_names": [
+      "悲喜渔生"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "元来の根暗な性格にくわえ、何をやってもうまくいかず、人生がどうでも良くなったダメ大学生。自暴自棄に陥る中で『エブリマート』の面々、そして釣りというモノと出会い、渋々ながらも付き合っていく。",
+    "stats": {
+      "comments": 24,
+      "collects": 6
+    },
+    "type": "character",
+    "popularity_score": 54,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 206
+  },
+  {
+    "id": 162211,
+    "name": "鲇川花",
+    "original_name": "鮎川ハナ",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/05/4b/162211_crt_Pwxee.jpg?r=1722327266",
+    "anime_ids": [
+      505895
+    ],
+    "anime_names": [
+      "悲喜渔生"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "エブリマートで働く高校3年生。釣り好きたちが集まるコンビニの中でも、きっての天才アングラー。誰にでも好かれる明るい性格の一方で、大の負けず嫌い。お店に勝手に釣り具コーナーを作るなど破天荒な一面も。",
+    "stats": {
+      "comments": 30,
+      "collects": 53
+    },
+    "type": "character",
+    "popularity_score": 113,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 253
+  },
+  {
+    "id": 162212,
+    "name": "踯躅森贵明",
+    "original_name": "躑躅森貴明",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/82/16/162212_crt_b1Est.jpg?r=1722327439",
+    "anime_ids": [
+      505895
+    ],
+    "anime_names": [
+      "悲喜渔生"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "未知",
+    "description": "エブリマートのアルバイト。見た目も言動もチャラく、一見いい加減なようだが、情に厚く面倒見のいい兄貴的な一面もある。ひょんなことから常宏と出会って以降は、何かと気に掛け世話を焼くようになる。",
+    "stats": {
+      "comments": 34,
+      "collects": 26
+    },
+    "type": "character",
+    "popularity_score": 94,
+    "battle_stats": {
+      "hp": 401,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 226
+  },
+  {
+    "id": 152266,
+    "name": "威尔·赛尔佛特",
+    "original_name": "ウィル・セルフォルト",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/c7/c5/152266_crt_ONzbM.jpg?r=1773141378",
+    "anime_ids": [
+      479477
+    ],
+    "anime_names": [
+      "杖与剑的魔剑谭"
+    ],
+    "anime_count": 1,
+    "gender": "male",
+    "birthday": "12月24日",
+    "description": "リガーデン魔法学院6年生。魔法が使えない“無能者”として入学した異端な学生。そのせいで同級生たちから蔑まれているが、実は誰よりも強い力と卓越した剣技を持つ“戦士”。魔法の実技では単位が習得できないため、筆記と実習で単位を稼いでいる。エルファリアと幼い頃に交わした約束を守るため、“至高の五杖”を目指している。",
+    "stats": {
+      "comments": 27,
+      "collects": 21
+    },
+    "type": "character",
+    "popularity_score": 75,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 121
+  },
+  {
+    "id": 152267,
+    "name": "爱尔法利亚·亚尔维斯·赛尔佛特",
+    "original_name": "エルファリア・アルヴィス・セルフォルト",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/df/37/152267_crt_G4A2S.jpg?r=1773141545",
+    "anime_ids": [
+      479477
+    ],
+    "anime_names": [
+      "杖与剑的魔剑谭"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "12月24日",
+    "description": "至高の五杖のひとり、別名 “深窓の氷姫”。ウィルとは共に孤児院で育った幼なじみ。類稀なる魔法の才能を持っていたことから、最年少で至高の五杖となった。ほぼすべての水、氷属性の魔法を操る天才。至高の五杖となった今も、塔の窓からいつもウィルを見守っている。聖女として崇められているが、実は……？",
+    "stats": {
+      "comments": 54,
+      "collects": 148
+    },
+    "type": "character",
+    "popularity_score": 256,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 248
+  },
+  {
+    "id": 152841,
+    "name": "珂蕾特·罗瓦尔",
+    "original_name": "コレット・ロワール",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/a4/c4/152841_crt_EE35e.jpg?r=1773141120",
+    "anime_ids": [
+      479477
+    ],
+    "anime_names": [
+      "杖与剑的魔剑谭"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "10月8日",
+    "description": "リガーデン魔法学院6年生。没落した貴族ロワール家の一人娘で、土魔法を得意とする優秀な魔導士の卵。ウィルを見下す者が多い魔法学院の中で、ウィルの唯一の友人であり味方。ウィルの努力が報われるためなら大胆な行動も厭わない。ウィルに想いを寄せており、素直に言葉を発するウィルに翻弄され赤面することもしばしば。",
+    "stats": {
+      "comments": 70,
+      "collects": 167
+    },
+    "type": "character",
+    "popularity_score": 307,
+    "battle_stats": {
+      "hp": 402,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 267
+  },
+  {
+    "id": 2231,
+    "name": "凯特琳",
+    "original_name": "Caitlyn",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/ee/ca/2231_crt_LTUQF.jpg?r=1731625919",
+    "anime_ids": [
+      358801
+    ],
+    "anime_names": [
+      "英雄联盟：双城之战 第二季"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "凯特琳被誉为皮尔特沃夫最顶尖的和平卫士，同时也是让这座城市真正摆脱地下隐秘犯罪的最有希望的人选。她经常和蔚联手执行任务，以冷静和沉着弥补自己搭档的鲁莽天性。虽然她的海克斯科技步枪独一无二，但凯特琳最强大的武器其实是她过人的智谋，总是能设下天罗地网，迎接任何傻到敢在进步之城作案的不法之徒。",
+    "stats": {
+      "comments": 15,
+      "collects": 33
+    },
+    "type": "character",
+    "popularity_score": 63,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 233
+  },
+  {
+    "id": 27151,
+    "name": "Jinx",
+    "original_name": "Jinx",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/60/67/27151_crt_LI7J8.jpg?r=1731625967",
+    "anime_ids": [
+      358801
+    ],
+    "anime_names": [
+      "英雄联盟：双城之战 第二季"
+    ],
+    "anime_count": 1,
+    "gender": "female",
+    "birthday": "未知",
+    "description": "",
+    "stats": {
+      "comments": 84,
+      "collects": 90
+    },
+    "type": "character",
+    "popularity_score": 258,
+    "battle_stats": {
+      "hp": 401,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 290
+  },
+  {
+    "id": 51925,
+    "name": "杰斯",
+    "original_name": "Jayce",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/70/62/51925_crt_flHlf.jpg?r=1637393900",
+    "anime_ids": [
+      358801
+    ],
+    "anime_names": [
+      "英雄联盟：双城之战 第二季"
+    ],
+    "anime_count": 1,
+    "gender": null,
+    "birthday": "未知",
+    "description": "杰斯是一位天才发明家，他为了守护皮尔特沃夫和这座城市对于进步的追求贡献了毕生的心血。杰斯依靠手中的海克斯科技变形锤，还有自己的力量、勇气和出众的智慧守护着他的故乡。虽然整座城市都将他视为英雄，但他却并没有处理好这样的声名。即便如此，杰斯的心之所向依旧纯良，即使是那些嫉妒他天赋的人，也会真心实意地感谢他给进步之城带来的保护。",
+    "stats": {
+      "comments": 24,
+      "collects": 14
+    },
+    "type": "character",
+    "popularity_score": 62,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 214
+  },
+  {
+    "id": 86372,
+    "name": "维克托",
+    "original_name": "Viktor",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/0e/d3/86372_crt_LvVjO.jpg?r=1636269674",
+    "anime_ids": [
+      358801
+    ],
+    "anime_names": [
+      "英雄联盟：双城之战 第二季"
+    ],
+    "anime_count": 1,
+    "gender": null,
+    "birthday": "未知",
+    "description": "他是崭新科技时代的领路先驱，将自己毕生精力奉献给了人类的进步。他是寻求人性启迪的理想主义者，信奉着唯有光荣进化才能实现人类全部的潜能。在钢铁与科学的加持之下，维克托狂热地追求着自己理想中的光明未来。",
+    "stats": {
+      "comments": 16,
+      "collects": 17
+    },
+    "type": "character",
+    "popularity_score": 49,
+    "battle_stats": {
+      "hp": 400,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 217
+  },
+  {
+    "id": 86390,
+    "name": "蔚",
+    "original_name": "Vi",
+    "rarity": "R",
+    "image_path": "https://lain.bgm.tv/pic/crt/l/93/48/86390_crt_QK31q.jpg?r=1637393879",
+    "anime_ids": [
+      358801
+    ],
+    "anime_names": [
+      "英雄联盟：双城之战 第二季"
+    ],
+    "anime_count": 1,
+    "gender": null,
+    "birthday": "未知",
+    "description": "蔚曾经是祖安黑街上的破坏分子。她性格急躁、脾气火爆、凶神恶煞，对权威满心不屑。蔚从小到大都是孤身一人，所以练就了一身生存的本能，也培养了一种恶毒刻薄的幽默感。现在，蔚与皮尔特沃夫守卫一起合作，维护着皮城的安宁。靠着她手上的一副巨型海克斯科技拳套，无论是铜墙铁壁还是心理防线都不在话下。",
+    "stats": {
+      "comments": 34,
+      "collects": 31
+    },
+    "type": "character",
+    "popularity_score": 99,
+    "battle_stats": {
+      "hp": 401,
+      "atk": 50,
+      "def": 45,
+      "sp": 55,
+      "spd": 50
+    },
+    "blood_type": null,
+    "height": null,
+    "comprehensive_popularity": 231
   }
 ]

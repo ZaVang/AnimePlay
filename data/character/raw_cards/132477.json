@@ -1,0 +1,81 @@
+{
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 14,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/fc/132477_crt_9Ce8S.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/24/fc/132477_crt_9Ce8S.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/24/fc/132477_crt_9Ce8S.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/fc/132477_crt_9Ce8S.jpg"
+    },
+    "summary": "月ノ森女子学園の高校1年生。元CRYCHICのメンバーでギターを担当していた。感情表現が乏しく、基本的には無口。父は人気お笑い芸人の若葉、母は女優の森みなみ。\r\n\r\n[mask]Ave Mujica Gt.\r\n\r\n月ノ森女子学園の高校1年生。そよとは同じクラス。感情が表に出づらく、口下手だが、彼女なりに他人を気遣う一面も。父は人気お笑い芸人の若葉で、母は女優の森みなみ。また、祥子とは幼馴染である。幼少のころからギターを弾いており、腕は確かである。[/mask]",
+    "name": "若葉睦",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "若叶睦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "モーティス"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Mortis"
+                },
+                {
+                    "k": "日文名",
+                    "v": "若葉 睦"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "わかば むつみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Wakaba Mutsumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月14日"
+        },
+        {
+            "key": "身高",
+            "value": "153cm"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "官网（It's MyGO!!!!!）",
+                    "v": "https://anime.bang-dream.com/mygo/character/mutsumi/"
+                },
+                {
+                    "k": "官网（Ave Mujica）",
+                    "v": "https://anime.bang-dream.com/avemujica/character/mutsumi/"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 515,
+        "collects": 771
+    },
+    "id": 132477,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        454684
+    ]
+}

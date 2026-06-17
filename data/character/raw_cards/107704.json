@@ -1,0 +1,61 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a0/3b/107704_crt_7BoQI.jpg?r=1702703720",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a0/3b/107704_crt_7BoQI.jpg?r=1702703720",
+        "large": "https://lain.bgm.tv/pic/crt/l/a0/3b/107704_crt_7BoQI.jpg?r=1702703720",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a0/3b/107704_crt_7BoQI.jpg?r=1702703720"
+    },
+    "summary": "本作女主角之一，荣明学园高中1年级生，韵律体操部社员。\r\n与大喜、笠原国中三年都同班故彼此熟识，喜欢捉弄大喜、以此取乐。\r\n父亲是前日本体操选手代表，本身也是体操界的明星选手。",
+    "name": "蝶野雛",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蝶野雏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "蝶野 雛"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ちょうの ひな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Chōno Hina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月2日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        }
+    ],
+    "stat": {
+        "comments": 189,
+        "collects": 390
+    },
+    "id": 107704,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        460306
+    ]
+}

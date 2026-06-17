@@ -1,0 +1,61 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 12,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/aa/166505_crt_W4s62.jpg?r=1730897893",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ba/aa/166505_crt_W4s62.jpg?r=1730897893",
+        "large": "https://lain.bgm.tv/pic/crt/l/ba/aa/166505_crt_W4s62.jpg?r=1730897893",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/aa/166505_crt_W4s62.jpg?r=1730897893"
+    },
+    "summary": "桜心女学園に通う高校一年生。容姿端麗で政界の重鎮を父に持つ、学年の中で最も憧れられている存在。\r\n使われなくなった旧校舎の音楽室で一人ドラム演奏に興じている。",
+    "name": "黒鉄音羽",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黑铁音羽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "黒鉄 音羽"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くろがね おとは"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kurogane Otoha"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月12日"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        }
+    ],
+    "stat": {
+        "comments": 37,
+        "collects": 75
+    },
+    "id": 166505,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        504678
+    ]
+}

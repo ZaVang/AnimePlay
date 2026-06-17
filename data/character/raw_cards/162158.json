@@ -1,0 +1,56 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/fa/162158_crt_564Ir.jpg?r=1741527029",
+        "grid": "https://lain.bgm.tv/pic/crt/g/19/fa/162158_crt_564Ir.jpg?r=1741527029",
+        "large": "https://lain.bgm.tv/pic/crt/l/19/fa/162158_crt_564Ir.jpg?r=1741527029",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/fa/162158_crt_564Ir.jpg?r=1741527029"
+    },
+    "summary": "しずかのクラスメイト。\r\n明るく友達も多いが、\r\nしずかにだけは強く当たる。\r\n必要以上に敵対視するのには\r\n深い理由があるようで･･･。",
+    "name": "雲母坂まりな",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "云母坂真理奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "云母坂茉莉奈"
+                },
+                {
+                    "k": "日文名",
+                    "v": "雲母坂 まりな"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きららざか まりな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kirarazaka Marina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 292,
+        "collects": 93
+    },
+    "id": 162158,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        527620
+    ]
+}

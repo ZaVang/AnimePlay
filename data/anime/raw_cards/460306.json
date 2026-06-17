@@ -1,0 +1,509 @@
+{
+    "date": "2024-10-03",
+    "platform": "TV",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/ab/e5/460306_s7Y8n.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/ab/e5/460306_s7Y8n.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/ab/e5/460306_s7Y8n.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/ab/e5/460306_s7Y8n.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/ab/e5/460306_s7Y8n.jpg"
+    },
+    "summary": "每天早上都想见到她——\r\n\r\n荣明高中是初高中一体的体育强校。猪股大喜是就读荣明高中的高一学生，也是男子羽毛球社成员。\r\n大喜喜欢上了每天晨练时见到的高二学姐鹿野千夏。\r\n千夏是女子篮球社的王牌选手，更是校内外憧憬的校花。\r\n兼顾着社团活动、恋爱、和学习，大喜忙碌的高中生活拉开了帷幕，突然有一天——\r\n\r\n\r\n[简介原文]\r\n毎朝一番に会いたい人がいる——\r\n\r\n中高一貫のスポーツ強豪校・栄明高校に入学する、男子バドミントン部の一年生・猪股大喜。\r\n大喜は毎朝、朝練で顔を合わせる一つ上の先輩、鹿野千夏に恋をする。\r\n千夏は女子バスケットボール部のエースで、校内外問わず人気の高嶺の花。\r\n部活に恋に勉強に、大喜にとって忙しい高校生活がはじまる、そんなある日――",
+    "name": "アオのハコ",
+    "name_cn": "青之箱",
+    "tags": [
+        {
+            "name": "恋爱",
+            "count": 2448,
+            "total_cont": 0
+        },
+        {
+            "name": "校园",
+            "count": 2079,
+            "total_cont": 0
+        },
+        {
+            "name": "运动",
+            "count": 1544,
+            "total_cont": 0
+        },
+        {
+            "name": "青春",
+            "count": 1411,
+            "total_cont": 0
+        },
+        {
+            "name": "2024年10月",
+            "count": 1408,
+            "total_cont": 0
+        },
+        {
+            "name": "漫画改",
+            "count": 1304,
+            "total_cont": 0
+        },
+        {
+            "name": "TV",
+            "count": 1047,
+            "total_cont": 0
+        },
+        {
+            "name": "TelecomAnimationFilm",
+            "count": 675,
+            "total_cont": 0
+        },
+        {
+            "name": "2024",
+            "count": 515,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 453,
+            "total_cont": 0
+        },
+        {
+            "name": "漫改",
+            "count": 434,
+            "total_cont": 0
+        },
+        {
+            "name": "日常",
+            "count": 344,
+            "total_cont": 0
+        },
+        {
+            "name": "CloverWorks",
+            "count": 238,
+            "total_cont": 0
+        },
+        {
+            "name": "TMS",
+            "count": 80,
+            "total_cont": 0
+        },
+        {
+            "name": "矢野雄一郎",
+            "count": 77,
+            "total_cont": 0
+        },
+        {
+            "name": "党争",
+            "count": 34,
+            "total_cont": 0
+        },
+        {
+            "name": "败犬",
+            "count": 17,
+            "total_cont": 0
+        },
+        {
+            "name": "2025年1月",
+            "count": 12,
+            "total_cont": 0
+        },
+        {
+            "name": "青之箱",
+            "count": 12,
+            "total_cont": 0
+        },
+        {
+            "name": "2024年",
+            "count": 12,
+            "total_cont": 0
+        },
+        {
+            "name": "羽毛球",
+            "count": 11,
+            "total_cont": 0
+        },
+        {
+            "name": "治愈",
+            "count": 11,
+            "total_cont": 0
+        },
+        {
+            "name": "柿原優子",
+            "count": 10,
+            "total_cont": 0
+        },
+        {
+            "name": "柿原优子",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "少年向",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "上田丽奈",
+            "count": 8,
+            "total_cont": 0
+        },
+        {
+            "name": "胃疼",
+            "count": 8,
+            "total_cont": 0
+        },
+        {
+            "name": "鬼头明里",
+            "count": 7,
+            "total_cont": 0
+        },
+        {
+            "name": "2025",
+            "count": 7,
+            "total_cont": 0
+        },
+        {
+            "name": "蓝箱",
+            "count": 7,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "青之箱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Blue Box"
+                },
+                {
+                    "v": "Ao no Hako"
+                },
+                {
+                    "k": "港",
+                    "v": "青春盒子"
+                },
+                {
+                    "k": "台",
+                    "v": "青春之箱"
+                },
+                {
+                    "v": "蓝箱"
+                },
+                {
+                    "v": "青色之箱"
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "25"
+        },
+        {
+            "key": "放送开始",
+            "value": "2024年10月3日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期四"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://aonohako-anime.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TBS系28局"
+        },
+        {
+            "key": "播放结束",
+            "value": "2025年3月27日"
+        },
+        {
+            "key": "导演",
+            "value": "矢野雄一郎"
+        },
+        {
+            "key": "其他",
+            "value": "第2话起NETFLIX一周先行"
+        },
+        {
+            "key": "Copyright",
+            "value": "©三浦糀／集英社・アオのハコ製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "三浦糀（集英社「週刊少年ジャンプ」連載）"
+        },
+        {
+            "key": "人物设定",
+            "value": "谷野美穂"
+        },
+        {
+            "key": "副人物设定",
+            "value": "小川麻衣"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "Official髭男dism（OP1）、マカロニえんぴつ（OP2） / Numa、Zingai（ED1）、江口亮、TOMOO（ED2）"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "藤原聡 （OP1）、はっとり（OP2）/ Eve（ED1）、TOMOO（ED2）"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "藤原聡（OP1）、はっとり（OP2）/ Eve（ED1）、TOMOO（ED2）"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "Official髭男dism（OP1）、 マカロニえんぴつ（OP2）/ Eve（ED1）、TOMOO（ED2）"
+        },
+        {
+            "key": "製作",
+            "value": "アオのハコ製作委員会【トムス・エンタテインメント（吉川広太郎、室伏加奈子、森下摩理恵）、集英社、TBS（渡辺信也、伊藤將彦）、東宝（山中一孝、高橋敦司）】；竹崎忠、瓶子吉久、菊野浩樹、大田圭二"
+        },
+        {
+            "key": "企画",
+            "value": "企画制作：UNLIMITED PRODUCE by TMS(トムス・エンタテインメント)"
+        },
+        {
+            "key": "总制片人",
+            "value": "鈴木隆浩、林辰朗"
+        },
+        {
+            "key": "制片人",
+            "value": "岸田拓磨、石山貴大、田中潤一朗、井上雄仁"
+        },
+        {
+            "key": "副制片人",
+            "value": "小宮諒"
+        },
+        {
+            "key": "助理制片人",
+            "value": "伊藤由貴"
+        },
+        {
+            "key": "制作统括",
+            "value": "浄園祐"
+        },
+        {
+            "key": "企画协力",
+            "value": "齊藤優、大西恒平、本田佑行、村越周、橋本拓己、内藤拓真"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "荒木哲郎(OP1)、仁科くにやす(OP2)／モギシンゴ(ED1)、田中正晃(ED2)"
+        },
+        {
+            "key": "OP・ED 演出",
+            "value": "荒木哲郎(OP1)、仁科くにやす(OP2)／モギシンゴ(ED1)、田中正晃(ED2)"
+        },
+        {
+            "key": "制作协力",
+            "value": "WIT STUDIO 山中一樹＆上松敬弘(OP1/OP2/ED2)、動画工房 小林涼(OP2)"
+        },
+        {
+            "key": "插入歌演出",
+            "value": "山田義孝"
+        },
+        {
+            "key": "IMDb",
+            "value": "tt32639706"
+        },
+        {
+            "key": "摄影监督",
+            "value": "川下裕樹 / 佐久間悠也(OP2/ED2)"
+        },
+        {
+            "key": "摄影监督助理",
+            "value": "大滝玲可"
+        },
+        {
+            "key": "创意总监",
+            "value": "モギシンゴ"
+        },
+        {
+            "key": "音乐制作",
+            "value": "トムス・ミュージック（松尾康治、西山由希子）"
+        },
+        {
+            "key": "2D 设计",
+            "value": "オルタナ工房、伊庭勝、伊庭一青、蜂谷祥平"
+        },
+        {
+            "key": "音响",
+            "value": "マジックカプセル"
+        },
+        {
+            "key": "音响制作担当",
+            "value": "田中理恵、中村俊仁"
+        },
+        {
+            "key": "美术监督",
+            "value": "藤井王之王"
+        },
+        {
+            "key": "美术监督助理",
+            "value": "齋藤緋沙子"
+        },
+        {
+            "key": "制作进行",
+            "value": "安永幸之介、尾上元哉、菊地真矢、伊庭一青、武田好乃、杉崎明日香、吉岡恭人、中村洋文、鈴木翔耶、花満英晃、太田睦菜、小栁正文、香月亮一、石神雅比古、中野綾香、原田知洋"
+        },
+        {
+            "key": "设定制作",
+            "value": "伊庭一青"
+        },
+        {
+            "key": "录音",
+            "value": "藤原淳平"
+        },
+        {
+            "key": "录音助理",
+            "value": "久保田未萌"
+        }
+    ],
+    "rating": {
+        "rank": 3657,
+        "total": 6440,
+        "count": {
+            "1": 18,
+            "2": 11,
+            "3": 25,
+            "4": 144,
+            "5": 493,
+            "6": 1698,
+            "7": 2594,
+            "8": 1131,
+            "9": 195,
+            "10": 131
+        },
+        "score": 6.8
+    },
+    "total_episodes": 25,
+    "collection": {
+        "on_hold": 1420,
+        "dropped": 1339,
+        "wish": 2757,
+        "collect": 7743,
+        "doing": 3287
+    },
+    "id": 460306,
+    "eps": 25,
+    "meta_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "运动",
+        "漫画改",
+        "少年向"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        107702,
+        107703,
+        107704
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/8f/107702_crt_FfMEf.jpg?r=1700406573",
+                "grid": "https://lain.bgm.tv/pic/crt/g/21/8f/107702_crt_FfMEf.jpg?r=1700406573",
+                "large": "https://lain.bgm.tv/pic/crt/l/21/8f/107702_crt_FfMEf.jpg?r=1700406573",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/8f/107702_crt_FfMEf.jpg?r=1700406573"
+            },
+            "name": "猪股大喜",
+            "summary": "本作主角，荣明学园高中1年级生，羽毛球部社员（短篇中是排球部部员）。性格开朗直爽。\r\n对总是能在同一个体育馆见到的鹿野千夏学姐抱有好感，之后因缘际会下与对方同住，并逐渐拉近两人之间的距离。\r\n喜欢羽毛球，原因是喜欢独自一人背负场上局势的紧张感。社团活动上的目标是取得全国高等学校综合体育大会的参赛权。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/3a/19619_prsn_booOs.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2d/3a/19619_prsn_booOs.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2d/3a/19619_prsn_booOs.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/3a/19619_prsn_booOs.jpg"
+                    },
+                    "name": "千葉翔也",
+                    "short_summary": "千叶翔也（1995年8月29日－）是日本男性声优及演员（前儿童演员），TOY'S FACTORY所属。\r\n\r\n兴趣及专长是吉他、看音乐剧。是宝冢歌剧团的粉丝。\r\n高中时期曾经加入了轻音乐部。\r\n在广播节目“千叶翔也的浪漫千层派”里提到自己崇拜的声优前辈是逢坂良太。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 19619,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 107702
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/47/107703_crt_RPYPP.jpg?r=1730807297",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ed/47/107703_crt_RPYPP.jpg?r=1730807297",
+                "large": "https://lain.bgm.tv/pic/crt/l/ed/47/107703_crt_RPYPP.jpg?r=1730807297",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/47/107703_crt_RPYPP.jpg?r=1730807297"
+            },
+            "name": "鹿野千夏",
+            "summary": "本作女主角之一，荣明学园高中2年级生，篮球部社员。\r\n是女子篮球的明星选手，兼具实力外貌与良好性格，具有相当的知名度并备受关注。\r\n升上二年级后家人搬到国外居住，但她自己却因为还想要继续打球而留在了日本，并寄住在母亲的熟人猪股家。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "large": "https://lain.bgm.tv/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801"
+                    },
+                    "name": "上田麗奈",
+                    "short_summary": "日本的女性声优，富山县出身，所属事务所为81 Produce。\r\n初中时同属演剧部的女生有声优志向者，尊敬她的上田觉得“声优肯定是很美妙的职业”，又担心“自己的性格很奇怪”，本来以美术大学为志愿的她最终在声优试音报名结束前三天才报名。\r\n2011年，在第5回81 Audition中获得准优秀奖，之后加入81 Produce。\r\n获第九届声优奖新人女声优奖。\r\n是声优组合Anisonia的成员之一。\r\n在电视动画《摸索吧！部活剧》中，一人分饰18角。\r\n绘画力极强，《摸索吧！部活剧》的试音中因为绘画好而被选中，后来也在花舞少女广播中绘画并得到采用，还担任了《骇客娃娃》第五话的Endcard。\r\n不擅长运动。\r\n在各种场合被人说“凡骨”，自己的性格也很天然。\r\n自称只要对她好，就能喜欢上那个人。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 13164,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 107703
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a0/3b/107704_crt_7BoQI.jpg?r=1702703720",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a0/3b/107704_crt_7BoQI.jpg?r=1702703720",
+                "large": "https://lain.bgm.tv/pic/crt/l/a0/3b/107704_crt_7BoQI.jpg?r=1702703720",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a0/3b/107704_crt_7BoQI.jpg?r=1702703720"
+            },
+            "name": "蝶野雛",
+            "summary": "本作女主角之一，荣明学园高中1年级生，韵律体操部社员。\r\n与大喜、笠原国中三年都同班故彼此熟识，喜欢捉弄大喜、以此取乐。\r\n父亲是前日本体操选手代表，本身也是体操界的明星选手。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/78/19339_prsn_R7laF.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a1/78/19339_prsn_R7laF.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a1/78/19339_prsn_R7laF.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/78/19339_prsn_R7laF.jpg"
+                    },
+                    "name": "鬼頭明里",
+                    "short_summary": "鬼頭明里（きとう あかり）は、日本の女性声優である。ラクーンドッグ所属。\r\nあだ名は「あかりん」。\r\n\r\n10月16日生まれ、愛知県出身、血液型B型、153cm。プロ・フィット声優養成所を経て、現事務所に2015年4月から所属。\r\n趣味は絵を描くこと、歌うこと。特技は絵を描くこと、歌うこと、湯切り。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 19339,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 107704
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/7a/71989_crt_zPL8Q.jpg?r=1742737307",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7d/7a/71989_crt_zPL8Q.jpg?r=1742737307",
+        "large": "https://lain.bgm.tv/pic/crt/l/7d/7a/71989_crt_zPL8Q.jpg?r=1742737307",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/7a/71989_crt_zPL8Q.jpg?r=1742737307"
+    },
+    "summary": "电次在雨天遇到的紫发少女，主动邀请电次跟她单独约会。",
+    "name": "レゼ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蕾塞"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "蕾潔"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "雷赛"
+                },
+                {
+                    "k": "日文名",
+                    "v": "レゼ / ボム"
+                },
+                {
+                    "k": "第三中文名",
+                    "v": "波姆"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 212,
+        "collects": 773
+    },
+    "id": 71989,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        470660
+    ]
+}

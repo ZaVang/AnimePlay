@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/ca/1227_crt_Dq9kZ.jpg?r=1498989532",
+        "grid": "https://lain.bgm.tv/pic/crt/g/db/ca/1227_crt_Dq9kZ.jpg?r=1498989532",
+        "large": "https://lain.bgm.tv/pic/crt/l/db/ca/1227_crt_Dq9kZ.jpg?r=1498989532",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/ca/1227_crt_Dq9kZ.jpg?r=1498989532"
+    },
+    "summary": "号称拥有最强宝具的Servant，将其他所有人都蔑称为“杂种”的傲慢的王者。其真身乃是人类最古老的英灵——英雄王吉尔伽美什。",
+    "name": "ギルガメッシュ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "吉尔伽美什"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Gilgamesh"
+                },
+                {
+                    "k": "昵称",
+                    "v": "金皮卡、金闪闪、金A、英雄王、AUO"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "182cm"
+        },
+        {
+            "key": "体重",
+            "value": "68kg"
+        },
+        {
+            "key": "职阶",
+            "value": "Archer アーチャー / Caster キャスター"
+        },
+        {
+            "key": "属性",
+            "value": "混沌.善（Caster时为秩序·善）"
+        }
+    ],
+    "stat": {
+        "comments": 133,
+        "collects": 524
+    },
+    "id": 1227,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        443831
+    ]
+}

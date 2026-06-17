@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/fc/127004_crt_Ksd46.jpg?r=1697555340",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2e/fc/127004_crt_Ksd46.jpg?r=1697555340",
+        "large": "https://lain.bgm.tv/pic/crt/l/2e/fc/127004_crt_Ksd46.jpg?r=1697555340",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/fc/127004_crt_Ksd46.jpg?r=1697555340"
+    },
+    "summary": "信濃国・諏訪大社の当主。\r\n人であり神でもある「現人神」と呼ばれ、\r\n民から絶大な信仰を集めている。\r\n神力を操ることができ、未来をも見ることが可能…といっても\r\nおぼろげな未来が見えるだけなのでどこか胡散臭い。\r\n滅びゆく鎌倉で時行を救い出し、諏訪で匿った。\r\n時行の逃げ上手の才を見抜き、鎌倉奪還のために厳しい試練を与えつつも、\r\n一大事にならないかハラハラしている…。",
+    "name": "諏訪頼重",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "诹访赖重"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "諏訪 頼重"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "すわ よりしげ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "yorishige"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://nigewaka.run/chara/yorishige/"
+        }
+    ],
+    "stat": {
+        "comments": 22,
+        "collects": 13
+    },
+    "id": 127004,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        424573
+    ]
+}

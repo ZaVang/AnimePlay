@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/66/112710_crt_V1tUV.jpg?r=1721877210",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c8/66/112710_crt_V1tUV.jpg?r=1721877210",
+        "large": "https://lain.bgm.tv/pic/crt/l/c8/66/112710_crt_V1tUV.jpg?r=1721877210",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/66/112710_crt_V1tUV.jpg?r=1721877210"
+    },
+    "summary": "地動説を研究し、異端者として捕まっていた学者。",
+    "name": "フベルト",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "休伯特"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 3
+    },
+    "id": 112710,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        389156
+    ]
+}

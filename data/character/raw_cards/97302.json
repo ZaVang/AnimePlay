@@ -1,0 +1,68 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/f1/97302_crt_zt1zr.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8c/f1/97302_crt_zt1zr.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/8c/f1/97302_crt_zt1zr.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/f1/97302_crt_zt1zr.jpg"
+    },
+    "summary": "容姿端麗成績優秀で、周囲からは「孤高のお姫様」と称される優等生。\r\n中学三年時に征嶺学園に転入し、現在は高等部生徒会で会計を務めている。ロシア人の父と日本人の母、一つ年上の姉の四人家族。ある出来事を機に隣の席の政近に興味を抱き、彼には分からないと思っているロシア語で時々からかっている。",
+    "name": "アリサ・ミハイロヴナ・九条",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾莉莎·米哈伊罗夫纳·九条"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "アリサ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "アリサ・ミハイロヴナ・くじょう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Alisa Mikhailovna Kujou"
+                },
+                {
+                    "k": "昵称",
+                    "v": "アーリャ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月7日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        }
+    ],
+    "stat": {
+        "comments": 172,
+        "collects": 360
+    },
+    "id": 97302,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        424883
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 11,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/ed/189814_crt_ER5bb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c1/ed/189814_crt_ER5bb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/c1/ed/189814_crt_ER5bb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/ed/189814_crt_ER5bb.jpg"
+    },
+    "summary": "17歳の女子高生。\r\nかぐやのプロデューサーとして、『ツクヨミ』でのライバー活動を手伝うことに。あだ名は『いろP』。\r\n『ツクヨミ』のトップライバーである月見ヤチヨを推している。",
+    "name": "酒寄彩葉",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "酒寄彩叶"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "さかより いろは"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakayori Iroha"
+                },
+                {
+                    "k": "昵称",
+                    "v": "いろP"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月11日"
+        }
+    ],
+    "stat": {
+        "comments": 318,
+        "collects": 653
+    },
+    "id": 189814,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        604826
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "birth_mon": 2,
+    "gender": "male",
+    "birth_day": 21,
+    "birth_year": 2008,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/4b/115184_crt_9fNBF.jpg?r=1750582020",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7a/4b/115184_crt_9fNBF.jpg?r=1750582020",
+        "large": "https://lain.bgm.tv/pic/crt/l/7a/4b/115184_crt_9fNBF.jpg?r=1750582020",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/4b/115184_crt_9fNBF.jpg?r=1750582020"
+    },
+    "summary": "吸ニコの母の古い知り合い．霧生家の一人息子。コウモリの使い魔であり、吸血鬼。血ではなく生気を吸う“吸魂”を必要とする。",
+    "name": "霧生見晴",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雾生见晴"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Miharu Kiryu"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きりゅうみはる"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ミハル"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2008年2月21日"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "体重",
+            "value": "46kg"
+        }
+    ],
+    "stat": {
+        "comments": 16,
+        "collects": 14
+    },
+    "id": 115184,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        506672
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/40/161950_crt_TP83K.jpg?r=1745131672",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3b/40/161950_crt_TP83K.jpg?r=1745131672",
+        "large": "https://lain.bgm.tv/pic/crt/l/3b/40/161950_crt_TP83K.jpg?r=1745131672",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/40/161950_crt_TP83K.jpg?r=1745131672"
+    },
+    "summary": "被同伴带着逃出村子于是成为逃忍，不谙世事的女忍者。会使用能把东西变成叶子的忍术。虽然是个在战斗方面完全不行的废柴忍者，由于在村里总是负责打杂，所以擅长各种家事。\r\n\r\n[简介原文]\r\n仲間に流されるままに里を飛び出し、\r\n抜け忍となってしまった世間知らずのくノ一。\r\nモノを葉っぱに変える忍術が使える。\r\n戦闘はからっきしのポンコツ忍者だが、\r\n里では雑用ばかりしていたため家事全般は出来る。",
+    "name": "草隠さとこ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "草隐里子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "草隠 さとこ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くさがくれ さとこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kusagakure Satoko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月8日"
+        }
+    ],
+    "stat": {
+        "comments": 78,
+        "collects": 159
+    },
+    "id": 161950,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        491569
+    ]
+}

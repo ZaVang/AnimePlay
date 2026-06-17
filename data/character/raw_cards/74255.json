@@ -1,0 +1,53 @@
+{
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 28,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/05/74255_crt_UBbIQ.jpg?r=1590778533",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bf/05/74255_crt_UBbIQ.jpg?r=1590778533",
+        "large": "https://lain.bgm.tv/pic/crt/l/bf/05/74255_crt_UBbIQ.jpg?r=1590778533",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/05/74255_crt_UBbIQ.jpg?r=1590778533"
+    },
+    "summary": "夏生が海底からサルベージしたロボットの少女。\r\n人間と見分けが付かないほど精巧で表情豊か。\r\n祖母の助手だったようだが、\r\n長い間海底で眠っていたため記憶を一部失っている。\r\n「マスターからもらった最後の命令を果たしたい」\r\nそう夏生に願い、欠落したメモリーを探す。\r\n好奇心旺盛。口癖は「高性能ですから！」。",
+    "name": "アトリ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "亚托莉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Atori"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月28日"
+        },
+        {
+            "key": "年龄",
+            "value": "？歳"
+        }
+    ],
+    "stat": {
+        "comments": 120,
+        "collects": 659
+    },
+    "id": 74255,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        397604
+    ]
+}

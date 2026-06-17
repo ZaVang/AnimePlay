@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/75/127003_crt_Jw9MC.jpg?r=1728290976",
+        "grid": "https://lain.bgm.tv/pic/crt/g/21/75/127003_crt_Jw9MC.jpg?r=1728290976",
+        "large": "https://lain.bgm.tv/pic/crt/l/21/75/127003_crt_Jw9MC.jpg?r=1728290976",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/75/127003_crt_Jw9MC.jpg?r=1728290976"
+    },
+    "summary": "鎌倉幕府を治める執権・北条高時の息子。\r\n地位や権力といったものには関心がなく、\r\n争いごとを好まない優しい性格で、誰よりも鎌倉の平和を願っている。\r\n武芸は苦手だが、逃げ隠れの能力はずば抜けており、\r\n大人ですら容易に捕まえることができない。\r\n忠義の武士と信頼していた足利高氏の裏切りによって全てを奪われ、\r\n大切な故郷・鎌倉を取り戻すための戦いに身を投じていく。",
+    "name": "北条時行",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "北条时行"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "北条 時行"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ほうじょう ときゆき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "tokiyuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://nigewaka.run/chara/tokiyuki/"
+        }
+    ],
+    "stat": {
+        "comments": 104,
+        "collects": 160
+    },
+    "id": 127003,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        424573
+    ]
+}

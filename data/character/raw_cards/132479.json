@@ -1,0 +1,78 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 26,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4a/21/132479_crt_yfRfH.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4a/21/132479_crt_yfRfH.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/4a/21/132479_crt_yfRfH.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4a/21/132479_crt_yfRfH.jpg"
+    },
+    "summary": "[mask]真名：三角初音\r\n纯假名：みすみ はつね\r\n罗马字：Hatsune Misumi[/mask]\r\n\r\n花咲川女子学園の高校1年生。海鈴、立希とは同じクラス。アイドルユニット「sumimi」のギター。sumimiの楽曲の作詞作曲は初華が担当している。クールな佇まいが人気。星を見ることが好き。\r\n[mask]祥子とは幼いころからの知り合いで、バンドへの勧誘に二つ返事で応えた。Ave Mujicaでは作詞を担当している。[/mask]",
+    "name": "三角初華",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "三角初华"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みすみ ういか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Misumi Uika"
+                },
+                {
+                    "k": "艺名",
+                    "v": "ドロリス"
+                },
+                {
+                    "k": "英文艺名",
+                    "v": "Doloris"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月26日"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "官网(Ave Mujica)",
+                    "v": "https://anime.bang-dream.com/avemujica/character/uika/"
+                },
+                {
+                    "k": "官网(It's MyGO!!!!!)",
+                    "v": "https://anime.bang-dream.com/mygo/character/uika/"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 520,
+        "collects": 361
+    },
+    "id": 132479,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        454684
+    ]
+}

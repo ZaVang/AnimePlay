@@ -1,0 +1,65 @@
+{
+    "birth_mon": 1,
+    "gender": "male",
+    "birth_day": 3,
+    "birth_year": 2007,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/81/115182_crt_YZjlK.jpg?r=1738602281",
+        "grid": "https://lain.bgm.tv/pic/crt/g/df/81/115182_crt_YZjlK.jpg?r=1738602281",
+        "large": "https://lain.bgm.tv/pic/crt/l/df/81/115182_crt_YZjlK.jpg?r=1738602281",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/81/115182_crt_YZjlK.jpg?r=1738602281"
+    },
+    "summary": "因为守仁「和自己很像」而主动搭话，并和他成为朋友的强者。\r\n套用守仁的说法，是个「次元化混蛋」。在Youtube上介绍各种自己在意的东西。\r\n\r\n[简介原文]\r\nモリヒトが“自分に似ている”という理由から話しかけ、友達になったツワモノ。モリヒト曰く、サブカルクソ野郎。YouTubeで自分が気になった様々なものを紹介している。",
+    "name": "真神圭護",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "真神圭护"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Magami Keigo"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まがみ けいご"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ケイゴ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2007年1月3日"
+        },
+        {
+            "key": "身高",
+            "value": "176cm"
+        },
+        {
+            "key": "体重",
+            "value": "62kg"
+        }
+    ],
+    "stat": {
+        "comments": 26,
+        "collects": 26
+    },
+    "id": 115182,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        506672
+    ]
+}

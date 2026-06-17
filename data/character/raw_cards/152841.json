@@ -1,0 +1,57 @@
+{
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/c4/152841_crt_EE35e.jpg?r=1773141120",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a4/c4/152841_crt_EE35e.jpg?r=1773141120",
+        "large": "https://lain.bgm.tv/pic/crt/l/a4/c4/152841_crt_EE35e.jpg?r=1773141120",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/c4/152841_crt_EE35e.jpg?r=1773141120"
+    },
+    "summary": "リガーデン魔法学院6年生。没落した貴族ロワール家の一人娘で、土魔法を得意とする優秀な魔導士の卵。ウィルを見下す者が多い魔法学院の中で、ウィルの唯一の友人であり味方。ウィルの努力が報われるためなら大胆な行動も厭わない。ウィルに想いを寄せており、素直に言葉を発するウィルに翻弄され赤面することもしばしば。",
+    "name": "コレット・ロワール",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "珂蕾特·罗瓦尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "柯蕾特·卢瓦尔"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Colette Loire"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月8日"
+        },
+        {
+            "key": "身高",
+            "value": "164cm"
+        }
+    ],
+    "stat": {
+        "comments": 70,
+        "collects": 167
+    },
+    "id": 152841,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        479477
+    ]
+}

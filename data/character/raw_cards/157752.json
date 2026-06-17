@@ -1,0 +1,72 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/77/157752_crt_8ThAH.jpg?r=1755412425",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5f/77/157752_crt_8ThAH.jpg?r=1755412425",
+        "large": "https://lain.bgm.tv/pic/crt/l/5f/77/157752_crt_8ThAH.jpg?r=1755412425",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/77/157752_crt_8ThAH.jpg?r=1755412425"
+    },
+    "summary": "食べることが大好きで、\r\n月に１～2回程度、凛太郎の実家のケーキ屋を利用している。\r\n何事にもまっすぐな性格。",
+    "name": "和栗薫子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "和栗薰子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "和栗熏子"
+                },
+                {
+                    "k": "日文名",
+                    "v": "和栗 薫子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "わぐり かおるこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Waguri Kaoruko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月22日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "148cm"
+        },
+        {
+            "key": "年龄",
+            "value": "16"
+        }
+    ],
+    "stat": {
+        "comments": 116,
+        "collects": 348
+    },
+    "id": 157752,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        513345
+    ]
+}

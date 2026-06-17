@@ -1,0 +1,81 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/be/38178_crt_E7EW5.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/88/be/38178_crt_E7EW5.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/88/be/38178_crt_E7EW5.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/be/38178_crt_E7EW5.jpg"
+    },
+    "summary": "スノーフィールドの聖杯戦争において召喚されたアサシン。召喚されるや否やマスターであるジェスターを殺害、以降は自らの教義に背く聖杯戦争の儀式そのものを壊すことを目的に行動する。",
+    "name": "名も無きアサシン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "无名暗杀者"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "真名",
+                    "v": "——（获得英灵资格时已经舍弃）"
+                },
+                {
+                    "k": "英文名",
+                    "v": "No Name Assassin"
+                },
+                {
+                    "k": "代称日文名",
+                    "v": "爛熟なる狂信者、雪轍のハサン"
+                },
+                {
+                    "k": "代称中文名",
+                    "v": "烂熟的狂信者、雪辙的哈桑"
+                },
+                {
+                    "k": "代称英文名",
+                    "v": "Fully-Matured Zealot、Hassan of the Snow Tracks"
+                },
+                {
+                    "k": "昵称",
+                    "v": "狂信子"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        },
+        {
+            "key": "体重",
+            "value": "53kg"
+        },
+        {
+            "key": "职阶",
+            "value": "Assassin"
+        },
+        {
+            "key": "属性",
+            "value": "秩序·善"
+        }
+    ],
+    "stat": {
+        "comments": 31,
+        "collects": 110
+    },
+    "id": 38178,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        443831
+    ]
+}

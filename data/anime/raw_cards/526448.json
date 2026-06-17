@@ -1,0 +1,508 @@
+{
+    "date": "2025-10-11",
+    "platform": "TV",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/17/82/526448_ssr71.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/17/82/526448_ssr71.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/17/82/526448_ssr71.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/17/82/526448_ssr71.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/17/82/526448_ssr71.jpg"
+    },
+    "summary": "故事发生在一艘漂流的太空船上。由于一种“会伪装成人类来袭击人类的未知敌人”——「古诺希亚」混入船内，互相猜疑的乘员们决定每天投票选出一名可疑人物，让其进入冷冻睡眠。\r\n如果能让所有古诺希亚全部进入冷冻睡眠则人类获胜。反之，若无法找出古诺希亚，乘员们就会遭到袭击。主人公尤里必须要做出正确的选择，与此同时，他发现自己陷入了一个时间循环中，无论做出怎样的选择，都会回到第一天。\r\n乘员们究竟能否做出正确的选择？时间循环背后隐藏的秘密是什么？随着故事发展，乘员们不为人知的真面目也逐渐浮出水面。\r\n在短暂的时间里不断重复，一瞬却仿佛永恒的故事，如今拉开帷幕。\r\n——那么，祝您旅途愉快。\r\n\r\n\r\n[简介原文]\r\n物語の舞台は漂流する宇宙船。“人間に化けて人間を襲う未知の敵”一「グノーシア」が船内に紛れこんだことを受けて、乗員たちは疑心暗鬼の中、毎日1人ずつ疑わしい者を投票で選び、コールドスリープさせることを決める。\r\nグノーシアを全てコールドスリープさせることができれば人間の勝利。逆にグノーシアを当てられなければ、乗員たちは襲われてしまう。正しい選択が求められる中、なんと主人公・ユーリは、どのような選択をしても、最初の1日目にループする事態に。\r\nはたして乗員たちは正しい選択をすることができるのか？タイムリープに隠された秘密とは？そして明らかになる、乗員たちの隠された素顔とは——？\r\nわずかな時間を繰りかえす、一瞬にして永遠のような物語が、いま、幕を開ける。\r\n——それでは、良い旅を。",
+    "name": "グノーシア",
+    "name_cn": "古诺希亚",
+    "tags": [
+        {
+            "name": "游戏改",
+            "count": 1774,
+            "total_cont": 0
+        },
+        {
+            "name": "悬疑",
+            "count": 1583,
+            "total_cont": 0
+        },
+        {
+            "name": "科幻",
+            "count": 1383,
+            "total_cont": 0
+        },
+        {
+            "name": "2025年10月",
+            "count": 1222,
+            "total_cont": 0
+        },
+        {
+            "name": "花田十辉",
+            "count": 1073,
+            "total_cont": 0
+        },
+        {
+            "name": "轮回",
+            "count": 1055,
+            "total_cont": 0
+        },
+        {
+            "name": "TV",
+            "count": 914,
+            "total_cont": 0
+        },
+        {
+            "name": "domerica",
+            "count": 575,
+            "total_cont": 0
+        },
+        {
+            "name": "2025",
+            "count": 529,
+            "total_cont": 0
+        },
+        {
+            "name": "推理",
+            "count": 523,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 464,
+            "total_cont": 0
+        },
+        {
+            "name": "Aniplex",
+            "count": 263,
+            "total_cont": 0
+        },
+        {
+            "name": "市川量也",
+            "count": 139,
+            "total_cont": 0
+        },
+        {
+            "name": "SF",
+            "count": 133,
+            "total_cont": 0
+        },
+        {
+            "name": "2025年",
+            "count": 111,
+            "total_cont": 0
+        },
+        {
+            "name": "狼人杀",
+            "count": 65,
+            "total_cont": 0
+        },
+        {
+            "name": "智斗",
+            "count": 45,
+            "total_cont": 0
+        },
+        {
+            "name": "10月",
+            "count": 30,
+            "total_cont": 0
+        },
+        {
+            "name": "藤村鼓乃美",
+            "count": 28,
+            "total_cont": 0
+        },
+        {
+            "name": "2026年1月",
+            "count": 19,
+            "total_cont": 0
+        },
+        {
+            "name": "花田十輝",
+            "count": 18,
+            "total_cont": 0
+        },
+        {
+            "name": "恋爱",
+            "count": 17,
+            "total_cont": 0
+        },
+        {
+            "name": "ドメリカ",
+            "count": 10,
+            "total_cont": 0
+        },
+        {
+            "name": "半年番",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "早见沙织",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "GAL改",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "鬼頭明里",
+            "count": 8,
+            "total_cont": 0
+        },
+        {
+            "name": "TVA",
+            "count": 7,
+            "total_cont": 0
+        },
+        {
+            "name": "游改",
+            "count": 6,
+            "total_cont": 0
+        },
+        {
+            "name": "古诺希亚",
+            "count": 6,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "古诺希亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "宇宙人狼"
+                },
+                {
+                    "v": "GNOSIA"
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "21"
+        },
+        {
+            "key": "放送开始",
+            "value": "2025年10月11日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://gnosia-anime.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX / BS11 / とちぎテレビ / 群馬テレビ"
+        },
+        {
+            "key": "其他电视台",
+            "value": "テレビ愛知 / MBS"
+        },
+        {
+            "key": "播放结束",
+            "value": "2026年3月14日"
+        },
+        {
+            "key": "导演",
+            "value": "市川量也"
+        },
+        {
+            "key": "音乐",
+            "value": "深澤秀行"
+        },
+        {
+            "key": "Copyright",
+            "value": "©Petit Depotto/Project D.Q.O."
+        },
+        {
+            "key": "原作",
+            "value": "プチデポット"
+        },
+        {
+            "key": "人物设定",
+            "value": "松浦有紗"
+        },
+        {
+            "key": "人狼监修",
+            "value": "松崎史也"
+        },
+        {
+            "key": "人物原案",
+            "value": "ことり"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "MAISONdes feat. こぼ・かなえる, 重音テト, Giga(ギガP) & TeddyLoid / 凛として時雨"
+        },
+        {
+            "key": "製作",
+            "value": "Project D.Q.O.【Aniplex（三宅将典、清水博之、高橋祐馬、鳥羽洋典、淀明子、足立和紀、清水広美、君島裕喜、岡田武士、谷池侑美、松﨑由美子）、ドメリカ、TOKYO MX（買場道雄、照井健、橋本京佳）、日本BS放送（大和田智之、東真央）、ムービック（外川明宏、三浦史）、PLAYISM（水谷俊次）、プチデポット（めづかれ、しごと、ことり、Q flavor）】"
+        },
+        {
+            "key": "企画",
+            "value": "岩上敦宏、市川量也、佐藤真紀、羽川寛、髙橋竜、川勝徹"
+        },
+        {
+            "key": "制片人",
+            "value": "川勝徹、木村吉隆"
+        },
+        {
+            "key": "助理制片人",
+            "value": "高須秋、西田文哉"
+        },
+        {
+            "key": "企画协力",
+            "value": "佐藤茂薫、月岡佑紀、佐藤顕、石橋杏果"
+        },
+        {
+            "key": "录音",
+            "value": "岡部直紀"
+        },
+        {
+            "key": "录音工作室",
+            "value": "スタジオマウス"
+        },
+        {
+            "key": "录音助理",
+            "value": "藤澤卓"
+        },
+        {
+            "key": "音响",
+            "value": "スタジオマウス；音响制作担当：石黒尚人"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "山内真治"
+        },
+        {
+            "key": "音乐监督",
+            "value": "安谷屋光生"
+        },
+        {
+            "key": "音乐制作",
+            "value": "Aniplex；音乐制作协力：ミラクル・バス"
+        },
+        {
+            "key": "CG 导演",
+            "value": "鎌田麻友美、飯田祐輝"
+        },
+        {
+            "key": "2D 设计",
+            "value": "大橋治紀、野口毬愛、大川竜之介、野津摩璃乃、谷口初音、藤田真以子"
+        }
+    ],
+    "rating": {
+        "rank": 991,
+        "total": 5306,
+        "count": {
+            "1": 13,
+            "2": 9,
+            "3": 11,
+            "4": 41,
+            "5": 112,
+            "6": 410,
+            "7": 1906,
+            "8": 2332,
+            "9": 369,
+            "10": 103
+        },
+        "score": 7.5
+    },
+    "total_episodes": 21,
+    "collection": {
+        "on_hold": 404,
+        "dropped": 291,
+        "wish": 3496,
+        "collect": 6404,
+        "doing": 4562
+    },
+    "id": 526448,
+    "eps": 21,
+    "meta_tags": [
+        "科幻",
+        "悬疑",
+        "TV",
+        "日本",
+        "游戏改"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        91523,
+        91524,
+        91527,
+        91528,
+        91530
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/0b/91523_crt_voqqV.jpg?r=1614066391",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ab/0b/91523_crt_voqqV.jpg?r=1614066391",
+                "large": "https://lain.bgm.tv/pic/crt/l/ab/0b/91523_crt_voqqV.jpg?r=1614066391",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/0b/91523_crt_voqqV.jpg?r=1614066391"
+            },
+            "name": "セツ",
+            "summary": "汎宇宙軍所属の軍人として、船内に侵入したグノーシアの排除を先頭に立って揮する。\r\n状況が分からずとまどう主人公を優しく導いてくれる。\r\n\r\n泛宇宙军所属的军人，率先采取行动指挥排除入侵飞船的Gnosia。引导着对于状况还不明晰的主角。\r\n\r\n名字来源是基督教*诺斯底主义分支（Gnosis）中“指引开悟者“。\r\n*基督教会认为诺斯底主义为异端，但是开发者座谈会上将诺斯底主义称作基督教分支。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/45/30858_prsn_9nB7N.jpg?r=1705933451",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/85/45/30858_prsn_9nB7N.jpg?r=1705933451",
+                        "large": "https://lain.bgm.tv/pic/crt/l/85/45/30858_prsn_9nB7N.jpg?r=1705933451",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/45/30858_prsn_9nB7N.jpg?r=1705933451"
+                    },
+                    "name": "長谷川育美",
+                    "short_summary": "日本女性声优。出生于栃木县。身高164cm，血型A型。所属事务所为Raccoon Dog（ラクーンドッグ）。\r\n\r\n就读两年制专科学校期间，同时在Pro Fit声优培训学校进修，并完成全部课程。\r\n\r\n2018年4月10日，宣布从Pro Fit事务所的预备成员晋升为准正式成员。2021年4月，正式升格为事务所签约声优。\r\n\r\n2021年首次担纲主演，为《86-不存在的战区-》女主角芙拉蒂蕾娜·米利杰献声，同时出演《弱势角色友崎君》主要角色七海美波。同年首次担任动画广播节目《86-不存在的战区-圣玛格诺利亚共和国第85.5区情报局》主持人。\r\n\r\n2022年4月1日，因原事务所Pro Fit于同年3月底终止经纪业务，正式转入Raccoon Dog。\r\n\r\n兴趣爱好是独自唱卡拉OK、长时间泡澡，特长为歌唱与Y字平衡动作。\r\n持有日本汉字能力检定准2级证书。\r\n公开表示憧憬的声优是入野自由与泽城美雪。\r\n立志成为声优的契机是初中一年级时沉迷《网球王子》等运动题材漫画。自述学业不佳，曾被班主任评价性格固执。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 30858,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 91523
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/c3/91524_crt_3Q001.jpg?r=1614066482",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f2/c3/91524_crt_3Q001.jpg?r=1614066482",
+                "large": "https://lain.bgm.tv/pic/crt/l/f2/c3/91524_crt_3Q001.jpg?r=1614066482",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/c3/91524_crt_3Q001.jpg?r=1614066482"
+            },
+            "name": "SQ",
+            "summary": "おどけた態度で場をにぎわそうとする、どこかつかめない性格の持ち主。\r\n彼女の言動の何が嘘で何が本当なのか、判別するのはきわめて困難だろ。\r\n\r\n总是以嬉笑打闹的态度试图活跃气氛，是个让人难以捉摸的角色。\r\n她说的话哪些是真哪些是假，恐怕几乎无法分辨。\r\n\r\n名字来源为魅魔（サキュバス，Succubus）。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/78/19339_prsn_R7laF.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a1/78/19339_prsn_R7laF.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a1/78/19339_prsn_R7laF.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/78/19339_prsn_R7laF.jpg"
+                    },
+                    "name": "鬼頭明里",
+                    "short_summary": "鬼頭明里（きとう あかり）は、日本の女性声優である。ラクーンドッグ所属。\r\nあだ名は「あかりん」。\r\n\r\n10月16日生まれ、愛知県出身、血液型B型、153cm。プロ・フィット声優養成所を経て、現事務所に2015年4月から所属。\r\n趣味は絵を描くこと、歌うこと。特技は絵を描くこと、歌うこと、湯切り。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 19339,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 91524
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/bf/91527_crt_qSWoQ.jpg?r=1614066905",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b2/bf/91527_crt_qSWoQ.jpg?r=1614066905",
+                "large": "https://lain.bgm.tv/pic/crt/l/b2/bf/91527_crt_qSWoQ.jpg?r=1614066905",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/bf/91527_crt_qSWoQ.jpg?r=1614066905"
+            },
+            "name": "ラキオ",
+            "summary": "多少険のある物言いと、華美な装束が特徴的な汎性。\r\n論理的思考能力が極めて高く、情報がそろった瞬間にグノーシアを摘発する。\r\n\r\n以略带锋芒的说话方式和华丽的服装为特征的泛性角色。\r\n逻辑思考能力极为出色，一旦情报凑齐，便会在瞬间揪出 Gnosia。\r\n\r\n名字来源为世界语的智慧/理性一词racio，英文版名字为Raqio.",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/26/14221_prsn_K1wzW.jpg?r=1725120176",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/86/26/14221_prsn_K1wzW.jpg?r=1725120176",
+                        "large": "https://lain.bgm.tv/pic/crt/l/86/26/14221_prsn_K1wzW.jpg?r=1725120176",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/26/14221_prsn_K1wzW.jpg?r=1725120176"
+                    },
+                    "name": "七海ひろき",
+                    "short_summary": "七海 ひろき（ななみ ひろき、1月16日 - ）は、元宝塚歌劇団・宙組に所属する男役。\r\n茨城県水戸市出身。県立水戸第二高校出身。身長173cm。愛称は「かい」。血液型はO型。\r\n\r\n2014年、テレビアニメ『ノブナガ・ザ・フール』のウエスギ・ケンシン役で声優に初挑戦。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 14221,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 91527
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/63/91528_crt_r6D2w.jpg?r=1614066898",
+                "grid": "https://lain.bgm.tv/pic/crt/g/53/63/91528_crt_r6D2w.jpg?r=1614066898",
+                "large": "https://lain.bgm.tv/pic/crt/l/53/63/91528_crt_r6D2w.jpg?r=1614066898",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/63/91528_crt_r6D2w.jpg?r=1614066898"
+            },
+            "name": "ジナ",
+            "summary": "愛想のない言動で冷たく受け取られがちだが、心根は優しい女性。\r\n自分は何をすべきなのか、何のために存在しているのかを、常に自分に問いかけている。\r\n\r\n言行不讨好人，常常给人一种冷淡的印象，但本性其实很温柔的女性。\r\n她一直在不断询问自己应该做什么？为何而存在？\r\n\r\n名字来源为韩国女团偶像。英文版名字为Gina.",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/b7/5766_prsn_6q644.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/b7/5766_prsn_6q644.jpg"
+                    },
+                    "name": "瀬戸麻沙美",
+                    "short_summary": "中学生2年生の時、偶然視聴したアニメ『D.Gray-man』の主人公、アレン・ウォーカー（声：小林沙苗）に魅せられ、キャラクターだけでなく演者の声優にも興味が湧き、声優を志す。高校在学中の2009年に声優事務所のオーディションを受験、翌2010年より声優活動を開始する。\r\n2010年、初めて受けたオーディションでテレビアニメ『放浪息子』（2011年）の準主人公 \"高槻よしの\" 役に抜擢される。彼女にとって初仕事の収録だったが、演技などに関して事前の指示はほとんど必要としなかったと監督のあおきえいは述べている。\r\n2011年、日本テレビ系テレビアニメ『ちはやふる』で主演（ \"綾瀬千早\" 役）とエンディング主題歌の歌唱を担当。同局系列のテレビアニメ『HUNTER×HUNTER』の \"クラピカ\" 役オーディションに参加していた瀬戸の演技が『ちはやふる』番組関係者の目に留まり、改めて \"綾瀬千早\" 役のオーディションを行ったところ満場一致で瀬戸の起用が決定した。\r\n2015年4月1日付けで、シグマ・セブンeからシグマ・セブンへ移動。\r\n2021年11月1日よりStarCrewへ移籍。あわせて公式Twitterアカウントを開設した。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 5766,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 91528
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/68/91530_crt_0o7ko.jpg?r=1614066984",
+                "grid": "https://lain.bgm.tv/pic/crt/g/37/68/91530_crt_0o7ko.jpg?r=1614066984",
+                "large": "https://lain.bgm.tv/pic/crt/l/37/68/91530_crt_0o7ko.jpg?r=1614066984",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/68/91530_crt_0o7ko.jpg?r=1614066984"
+            },
+            "name": "ステラ",
+            "summary": "柔らかで丁寧な態度で皆と接する優しいお姉さん。\r\n宇宙船内の管理を任されているらしく、皆が快適に過ごせるよう気を配っている。\r\n\r\n以柔和、细致的态度与众人相处的温柔姐姐。\r\n似乎负责管理宇宙船内的事务，为了让大家都能舒适地生活而处处留心。\r\n\r\n名字来源为拉丁语的「星」。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522"
+                    },
+                    "name": "早見沙織",
+                    "short_summary": "幼儿园、小学、初中、高中就读于白百合学园，高中时转入都内高中就读。早稻田大学毕业。\r\n在小学4年级的时候知道了“声优”这职业，决心成为声优。\r\n2004年4月，中学1年级时进入日本播音演技研究所少年声优班学习。\r\n在少年声优班第二年的2006年3月，通过I'm Enterprise的选拔考试。第一次工作是《机械女仆》的Drama CD。之后在2007年透过《桃华月惮》动画出道。\r\n清脆的声音是其特征。演技幅度很广的实力派，从幼女到花样年华的少女、文静的角色到活泼的角色、而且还能演出少年角色动物角色。演出的不同角色之间的差别很大。此外歌唱力也有公认的评价。\r\n2008年4月起，因学业缘故，每周只到日本播音演技研究所上一次课。2008年10月3日，首次主持广播节目《ラジオどっとあい 早见沙织のぽじてぃ部〜Sweetsな放课後》。\r\n2015年4月21日，以TV动画《赤发白雪姬》的片头主题歌《やさしい希望》歌手出道。\r\n2016年，在第10回声优奖中获得助演女优奖。\r\n\r\n家庭构成是父亲、母亲。还饲养着兔子。喜欢看警察题材的电视剧，在广播中透露出是电视剧《相棒》系列的FANS。\r\n从4岁开始学弹钢琴，此外还学过绘画、游泳、网球等众多东西，不过唯一持续下来的是弹钢琴，体育类的基本都持续不久。在绘画方面，据说曾在小学生时参加亚洲大赛并获得金奖。\r\n小时候开始就很喜欢唱歌，据说和母亲一起坐车的时候总是跟着车上的播放机大声地唱歌，然后母亲经常会指导她说“刚才走调了”之类的。在爵士乐歌手的母亲的推荐下在中学时就开始学习唱爵士乐。\r\n性格非常稳健，待人很有礼貌。而且在演技上具有很高的意识和才能，在声优前辈和动画制作人员中也有很高的评价。据说同事务所的间岛淳司在收录现场看到刚出道没多久时候的早见时说“看来我们事务所将来也很安泰啊”。\r\n也有天然的一面，曾把洗面奶错当牙膏拿来刷牙，还曾在收录时背后的拉链没拉上就来到录音棚。\r\n与同事务所的山本麻里安一样，因为就读的学校禁止艺术类活动而转校，在声优与学业两付重担艰难前行。\r\n与悠木碧和东山奈央公私关系良好，交往密切。日高里菜曾表示过“超喜欢早见沙织”，两人私交甚密。\r\n在广播节目中有时会模仿黑柳彻子、安东尼奥·猪木、儿玉清等。在《鹡鸰女神》的广播节目《セキレイらじお》中模仿黑柳彻子的段子，并在《鹡鸰女神》DVD第6卷的OVA里被用来作恶搞。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4895,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 91530
+        }
+    ]
+}

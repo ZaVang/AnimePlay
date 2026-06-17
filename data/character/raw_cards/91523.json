@@ -1,0 +1,81 @@
+{
+    "birth_mon": 4,
+    "gender": null,
+    "birth_day": 24,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/0b/91523_crt_voqqV.jpg?r=1614066391",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ab/0b/91523_crt_voqqV.jpg?r=1614066391",
+        "large": "https://lain.bgm.tv/pic/crt/l/ab/0b/91523_crt_voqqV.jpg?r=1614066391",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/0b/91523_crt_voqqV.jpg?r=1614066391"
+    },
+    "summary": "汎宇宙軍所属の軍人として、船内に侵入したグノーシアの排除を先頭に立って揮する。\r\n状況が分からずとまどう主人公を優しく導いてくれる。\r\n\r\n泛宇宙军所属的军人，率先采取行动指挥排除入侵飞船的Gnosia。引导着对于状况还不明晰的主角。\r\n\r\n名字来源是基督教*诺斯底主义分支（Gnosis）中“指引开悟者“。\r\n*基督教会认为诺斯底主义为异端，但是开发者座谈会上将诺斯底主义称作基督教分支。",
+    "name": "セツ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "塞思"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Setsu"
+                },
+                {
+                    "k": "日文名",
+                    "v": "セツ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "セツ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Setsu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "汎"
+        },
+        {
+            "key": "生日",
+            "value": "4月24日"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://d-mebius.com/gnosias"
+        },
+        {
+            "key": "识别年龄",
+            "value": "18"
+        },
+        {
+            "key": "出身地",
+            "value": "第52基地"
+        },
+        {
+            "key": "职业",
+            "value": "泛宇宙军特种作战部队军人"
+        }
+    ],
+    "stat": {
+        "comments": 46,
+        "collects": 156
+    },
+    "id": 91523,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        526448
+    ]
+}

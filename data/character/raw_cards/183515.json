@@ -1,0 +1,57 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 4,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/8f/183515_crt_ddZF7.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c2/8f/183515_crt_ddZF7.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/c2/8f/183515_crt_ddZF7.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/8f/183515_crt_ddZF7.jpg"
+    },
+    "summary": "交通事故で両親を亡くし、叔母である槙生の家に身を寄せる。\r\n人懐っこく素直な性格。",
+    "name": "田汲朝",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "田汲朝"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "田汲 朝"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たくみ あさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takumi Asa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月4日"
+        }
+    ],
+    "stat": {
+        "comments": 29,
+        "collects": 90
+    },
+    "id": 183515,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        493016
+    ]
+}

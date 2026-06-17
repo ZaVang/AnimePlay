@@ -1,0 +1,27 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/67/27151_crt_LI7J8.jpg?r=1731625967",
+        "grid": "https://lain.bgm.tv/pic/crt/g/60/67/27151_crt_LI7J8.jpg?r=1731625967",
+        "large": "https://lain.bgm.tv/pic/crt/l/60/67/27151_crt_LI7J8.jpg?r=1731625967",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/67/27151_crt_LI7J8.jpg?r=1731625967"
+    },
+    "summary": "",
+    "name": "Jinx",
+    "infobox": [],
+    "stat": {
+        "comments": 84,
+        "collects": 90
+    },
+    "id": 27151,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        358801
+    ]
+}

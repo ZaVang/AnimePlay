@@ -1,0 +1,73 @@
+{
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 31,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/5c/59849_crt_OekBv.jpg?r=1726452140",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c5/5c/59849_crt_OekBv.jpg?r=1726452140",
+        "large": "https://lain.bgm.tv/pic/crt/l/c5/5c/59849_crt_OekBv.jpg?r=1726452140",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/5c/59849_crt_OekBv.jpg?r=1726452140"
+    },
+    "summary": "自分探しの少女\r\n\r\n身長：152cm\r\n体重：38kg\r\n3サイズ：B78 W56 H80\r\n趣味：ぬいぐるみ集め\r\n好物：わたあめ\r\n座右の銘：私は私を探しています\r\n原画：永山ゆうのん\r\nCV：岩井映美里\r\n\r\n島の灯台の近くに現れる少女。\r\n真面目で素直なドイツ系ハーフで、夏休みを利用して『やりたいこと探し』をしている。\r\n\r\n海に流れ着いたゴミなどを掃除しては、まだ使える物を見つけ大事にする。\r\n困ったことや、言葉に困ると「むぎゅ」と呻く。\r\n\r\n異国の古い歌をよく口ずさんでいる。\r\n\r\n「探し物です。 やりたいことを探しています」",
+    "name": "紬ヴェンダース",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "䌷文德斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "紬 ヴェンダース"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "つむぎ ヴェンダース"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tsumugi Wenders"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月31日"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        },
+        {
+            "key": "体重",
+            "value": "38kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B78/W56/H80"
+        },
+        {
+            "key": "年龄",
+            "value": "16岁"
+        }
+    ],
+    "stat": {
+        "comments": 200,
+        "collects": 468
+    },
+    "id": 59849,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        363957
+    ]
+}

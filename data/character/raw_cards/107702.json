@@ -1,0 +1,61 @@
+{
+    "birth_mon": 1,
+    "gender": "male",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/8f/107702_crt_FfMEf.jpg?r=1700406573",
+        "grid": "https://lain.bgm.tv/pic/crt/g/21/8f/107702_crt_FfMEf.jpg?r=1700406573",
+        "large": "https://lain.bgm.tv/pic/crt/l/21/8f/107702_crt_FfMEf.jpg?r=1700406573",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/8f/107702_crt_FfMEf.jpg?r=1700406573"
+    },
+    "summary": "本作主角，荣明学园高中1年级生，羽毛球部社员（短篇中是排球部部员）。性格开朗直爽。\r\n对总是能在同一个体育馆见到的鹿野千夏学姐抱有好感，之后因缘际会下与对方同住，并逐渐拉近两人之间的距离。\r\n喜欢羽毛球，原因是喜欢独自一人背负场上局势的紧张感。社团活动上的目标是取得全国高等学校综合体育大会的参赛权。",
+    "name": "猪股大喜",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "猪股大喜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "猪股 大喜"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いのまた たいき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Inomata Taiki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1月15日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        }
+    ],
+    "stat": {
+        "comments": 45,
+        "collects": 29
+    },
+    "id": 107702,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        460306
+    ]
+}

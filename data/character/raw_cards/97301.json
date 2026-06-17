@@ -1,0 +1,61 @@
+{
+    "birth_mon": 4,
+    "gender": "male",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/78/97301_crt_WXIsz.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f3/78/97301_crt_WXIsz.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/f3/78/97301_crt_WXIsz.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/78/97301_crt_WXIsz.jpg"
+    },
+    "summary": "アーリャと隣の席の男子。アニメを観るべく夜更かしをしているため、いつも授業中に寝ているやる気のない劣等生。そんな不真面目な様子を、いつもアーリャに咎められている。幼少期にロシア語を話す少女に初恋をしたことがきっかけで、ロシア語を習得した（そのことをアーリャは知らない）。",
+    "name": "久世政近",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "久世政近"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "くぜ まさちか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kuze Masachika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月9日"
+        },
+        {
+            "key": "血型",
+            "value": "Ｏ"
+        },
+        {
+            "key": "身高",
+            "value": "173cm"
+        }
+    ],
+    "stat": {
+        "comments": 22,
+        "collects": 15
+    },
+    "id": 97301,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        424883
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/34/c3/112713_crt_hC3r5.jpg?r=1725507182",
+        "grid": "https://lain.bgm.tv/pic/crt/g/34/c3/112713_crt_hC3r5.jpg?r=1725507182",
+        "large": "https://lain.bgm.tv/pic/crt/l/34/c3/112713_crt_hC3r5.jpg?r=1725507182",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/34/c3/112713_crt_hC3r5.jpg?r=1725507182"
+    },
+    "summary": "代闘士。超ネガティブ思考。優れた視力を持つが、空を見ることを恐れている。現世に何も期待しておらず、早く天国に行きたいと願っている。",
+    "name": "オクジー",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "奥克齐"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 10,
+        "collects": 24
+    },
+    "id": 112713,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        389156
+    ]
+}

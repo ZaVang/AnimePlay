@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/f0/167825_crt_J199b.jpg?r=1781181124",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b1/f0/167825_crt_J199b.jpg?r=1781181124",
+        "large": "https://lain.bgm.tv/pic/crt/l/b1/f0/167825_crt_J199b.jpg?r=1781181124",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/f0/167825_crt_J199b.jpg?r=1781181124"
+    },
+    "summary": "从事走私的少女。当故乡成了战场，自己沦为难民时，年幼的她无暇确认家人的生死，只能只身搭乘小型MS逃离。幸运的是她被太空船给救起，来到了玛秋居住的殖民卫星。她的首要任务是生存下去。\r\n\r\n非合法な運び屋をしている少女。故郷が戦場となり難民となった時、幼い彼女は家族の安否を確認する暇もなく、単身プチ・モビルスーツでコロニーを脱出。運よく船に拾われてマチュの住むコロニーに来た。最優先事項は生き抜くことである。",
+    "name": "ニャアン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "尼娅安"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Nyaan"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 146,
+        "collects": 135
+    },
+    "id": 167825,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        526816
+    ]
+}

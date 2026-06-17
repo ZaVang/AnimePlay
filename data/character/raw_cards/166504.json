@@ -1,0 +1,61 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/c7/166504_crt_wKnpr.jpg?r=1730897892",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a2/c7/166504_crt_wKnpr.jpg?r=1730897892",
+        "large": "https://lain.bgm.tv/pic/crt/l/a2/c7/166504_crt_wKnpr.jpg?r=1730897892",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/c7/166504_crt_wKnpr.jpg?r=1730897892"
+    },
+    "summary": "桜心女学園に通う高校一年生。親の再婚で、庶民から不動産王である鈴ノ宮家の娘になる。学園一のお嬢様の称号「ノーブルメイデン」を目指すべく、大好きだったロックとギターを捨て「お嬢様らしく」振舞う努力をしている。",
+    "name": "鈴ノ宮りりさ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "铃之宫莉莉莎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "鈴ノ宮 りりさ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "すずのみや りりさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Suzunomiya Ririsa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月7日"
+        },
+        {
+            "key": "身高",
+            "value": "151cm"
+        }
+    ],
+    "stat": {
+        "comments": 44,
+        "collects": 55
+    },
+    "id": 166504,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        504678
+    ]
+}

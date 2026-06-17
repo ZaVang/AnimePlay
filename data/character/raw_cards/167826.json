@@ -1,0 +1,59 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/58/167826_crt_GzXrn.jpg?r=1781181136",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d9/58/167826_crt_GzXrn.jpg?r=1781181136",
+        "large": "https://lain.bgm.tv/pic/crt/l/d9/58/167826_crt_GzXrn.jpg?r=1781181136",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/58/167826_crt_GzXrn.jpg?r=1781181136"
+    },
+    "summary": "出现在玛秋和尼娅安面前的神秘少年。在各个殖民卫星的外墙上涂鸦，因此被军警通缉。他为了某个目的，同时也为了钱而参加《军团战》。而后成了玛秋的伙伴。\r\n\r\nマチュとニャアンの前に現れた不思議な少年。あちこちのコロニーの外壁にグラフィティを描き、軍警から指名手配されている。ある目的のため、お金を稼ぐために《クランバトル》に参加。マチュのマヴとなる。",
+    "name": "シュウジ・イトウ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "修司·伊藤"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "伊藤修司"
+                },
+                {
+                    "v": "修治·伊藤"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "伊藤柊二"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "Shuji Itō"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        }
+    ],
+    "stat": {
+        "comments": 119,
+        "collects": 40
+    },
+    "id": 167826,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        526816
+    ]
+}

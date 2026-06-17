@@ -1,0 +1,52 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/84/177452_crt_Lwdl2.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a5/84/177452_crt_Lwdl2.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/a5/84/177452_crt_Lwdl2.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/84/177452_crt_Lwdl2.jpg"
+    },
+    "summary": "",
+    "name": "ROCK LADY",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "摇滚淑女"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "吉他手",
+            "value": "铃之宫莉莉纱"
+        },
+        {
+            "key": "贝斯手",
+            "value": "白矢环"
+        },
+        {
+            "key": "键盘手",
+            "value": "院濑见蒂娜"
+        },
+        {
+            "key": "鼓手",
+            "value": "黑铁音羽"
+        }
+    ],
+    "stat": {
+        "comments": 4,
+        "collects": 3
+    },
+    "id": 177452,
+    "locked": false,
+    "type": 4,
+    "nsfw": false,
+    "anime_ids": [
+        504678
+    ]
+}

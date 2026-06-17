@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/db/161951_crt_0tAPT.jpg?r=1745131675",
+        "grid": "https://lain.bgm.tv/pic/crt/g/17/db/161951_crt_0tAPT.jpg?r=1745131675",
+        "large": "https://lain.bgm.tv/pic/crt/l/17/db/161951_crt_0tAPT.jpg?r=1745131675",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/db/161951_crt_0tAPT.jpg?r=1745131675"
+    },
+    "summary": "外表看似普通的女高中生，其实真面目是个杀手。从里子的忍术中看到好处，因而邀请里子一起从事杀手的工作。对待工作以外的事情都很散漫。「古贺木叶」只是其中一个假名，本名不详。\r\n\r\n[简介原文]\r\n一見普通の女子高生だが、その正体は殺し屋。\r\nさとこの忍術にメリットを感じ、\r\n殺し屋の仕事を一緒にしないかさとこを誘う。\r\n仕事以外ではズボラ。\r\n「古賀このは」は偽名のひとつであり、本名は不明。",
+    "name": "古賀このは",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "古贺木叶"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "古賀 このは"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こが このは"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Koga Konoha"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 147,
+        "collects": 79
+    },
+    "id": 161951,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        491569
+    ]
+}

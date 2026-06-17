@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/47/153903_crt_1h1sE.jpg?r=1710305705",
+        "grid": "https://lain.bgm.tv/pic/crt/g/69/47/153903_crt_1h1sE.jpg?r=1710305705",
+        "large": "https://lain.bgm.tv/pic/crt/l/69/47/153903_crt_1h1sE.jpg?r=1710305705",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/47/153903_crt_1h1sE.jpg?r=1710305705"
+    },
+    "summary": "都立日野南高校 生徒会会長 兼シカ部 部長。\r\n成績優秀で、近所でも評判が良い優等生。\r\nだが元ヤンである。",
+    "name": "虎視虎子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "虎视虎子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "虎視 虎子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こし とらこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Koshi Torako"
+                },
+                {
+                    "k": "昵称",
+                    "v": "こしたん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 48,
+        "collects": 74
+    },
+    "id": 153903,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        484761
+    ]
+}

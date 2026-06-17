@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/da/167824_crt_l8rrw.jpg?r=1781181067",
+        "grid": "https://lain.bgm.tv/pic/crt/g/03/da/167824_crt_l8rrw.jpg?r=1781181067",
+        "large": "https://lain.bgm.tv/pic/crt/l/03/da/167824_crt_l8rrw.jpg?r=1781181067",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/da/167824_crt_l8rrw.jpg?r=1781181067"
+    },
+    "summary": "原名天手·让叶，是高中女生。在殖民卫星里过着和平的日常生活，却总是有种不真实的感觉。以邂逅尼娅安为契机，成为了《GQuuuuuuX》的驾驶员，并且参加了《军团战》。\r\n\r\n本名、アマテ・ユズリハ。女子高生。平穏なコロニー暮らしの日常を、どこか偽物のように感じていた。ニャアンと出会ったことをきっかけに、《GQuuuuuuXジークアクス》のパイロットとなり《クランバトル》に参加する。",
+    "name": "アマテ・ユズリハ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "天手·让叶"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "让叶天手"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Amate Yuzuriha"
+                },
+                {
+                    "k": "昵称",
+                    "v": "玛秋"
+                },
+                {
+                    "k": "昵称",
+                    "v": "マチュ"
+                },
+                {
+                    "k": "昵称",
+                    "v": "MACHU"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "147cm"
+        }
+    ],
+    "stat": {
+        "comments": 194,
+        "collects": 300
+    },
+    "id": 167824,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        526816
+    ]
+}

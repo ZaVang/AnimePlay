@@ -1,0 +1,80 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/96/61419_crt_tHS5A.jpg?r=1726458548",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8c/96/61419_crt_tHS5A.jpg?r=1726458548",
+        "large": "https://lain.bgm.tv/pic/crt/l/8c/96/61419_crt_tHS5A.jpg?r=1726458548",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/96/61419_crt_tHS5A.jpg?r=1726458548"
+    },
+    "summary": "原画：Na-Ga\r\nCV：田中あいみ",
+    "name": "加藤うみ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "加藤羽未"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "加藤海未"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "加藤海己"
+                },
+                {
+                    "k": "日文名",
+                    "v": "加藤 うみ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かと うみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kato Umi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月1日"
+        },
+        {
+            "key": "身高",
+            "value": "130cm"
+        },
+        {
+            "key": "体重",
+            "value": "29kg"
+        },
+        {
+            "key": "BWH",
+            "value": "坡度很小/稍稍有点细/唰的一下"
+        },
+        {
+            "key": "年龄",
+            "value": "12岁"
+        }
+    ],
+    "stat": {
+        "comments": 176,
+        "collects": 398
+    },
+    "id": 61419,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        363957
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/90/183514_crt_XKZ6S.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f2/90/183514_crt_XKZ6S.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/f2/90/183514_crt_XKZ6S.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/90/183514_crt_XKZ6S.jpg"
+    },
+    "summary": "少女小説家。\r\n姉夫婦が交通事故で亡くなり、遺児となった姪の田汲朝を引き取る。\r\n人見知り。",
+    "name": "高代槙生",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高代槙生"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "高台 槙生"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こうだい まきお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kōdai Makio"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 49,
+        "collects": 111
+    },
+    "id": 183514,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        493016
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/48/86390_crt_QK31q.jpg?r=1637393879",
+        "grid": "https://lain.bgm.tv/pic/crt/g/93/48/86390_crt_QK31q.jpg?r=1637393879",
+        "large": "https://lain.bgm.tv/pic/crt/l/93/48/86390_crt_QK31q.jpg?r=1637393879",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/48/86390_crt_QK31q.jpg?r=1637393879"
+    },
+    "summary": "蔚曾经是祖安黑街上的破坏分子。她性格急躁、脾气火爆、凶神恶煞，对权威满心不屑。蔚从小到大都是孤身一人，所以练就了一身生存的本能，也培养了一种恶毒刻薄的幽默感。现在，蔚与皮尔特沃夫守卫一起合作，维护着皮城的安宁。靠着她手上的一副巨型海克斯科技拳套，无论是铜墙铁壁还是心理防线都不在话下。",
+    "name": "Vi",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蔚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "菲艾"
+                },
+                {
+                    "k": "昵称",
+                    "v": "皮城执法官"
+                },
+                {
+                    "k": "繁体昵称",
+                    "v": "鐵腕特警"
+                }
+            ]
+        },
+        {
+            "key": "职业",
+            "value": "战士 刺客"
+        },
+        {
+            "key": "所在地区",
+            "value": "佐恩"
+        }
+    ],
+    "stat": {
+        "comments": 34,
+        "collects": 31
+    },
+    "id": 86390,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        358801
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/b7/154314_crt_d0B1W.jpg?r=1711117748",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6c/b7/154314_crt_d0B1W.jpg?r=1711117748",
+        "large": "https://lain.bgm.tv/pic/crt/l/6c/b7/154314_crt_d0B1W.jpg?r=1711117748",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/b7/154314_crt_d0B1W.jpg?r=1711117748"
+    },
+    "summary": "アニメ監督・アニメーター。22歳。\r\n好きなことには努力を惜しまない。夢中になると周りが見えなくなる。他人を信用せず、何事も全て自分でやった方が早いと思っている。思い付いたらすぐ行動するため周囲をギョッとさせることもある。コミュニケーション能力に難あり。\r\n劇場作品のコンテがあがるまで髪を切らないと願を懸けたらこんなになってしまったが、本人は気にしていない。美味しいものを食べている時は機嫌がいい。",
+    "name": "広瀬ナツ子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "广濑夏子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "広瀬 ナツ子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひろせ なつこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hirose Natsuko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月7日"
+        },
+        {
+            "key": "趣味",
+            "value": "食べること"
+        },
+        {
+            "key": "初恋",
+            "value": "未経験"
+        }
+    ],
+    "stat": {
+        "comments": 51,
+        "collects": 68
+    },
+    "id": 154314,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        486039
+    ]
+}

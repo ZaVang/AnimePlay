@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/79/162159_crt_8F6Bk.jpg?r=1741527031",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e0/79/162159_crt_8F6Bk.jpg?r=1741527031",
+        "large": "https://lain.bgm.tv/pic/crt/l/e0/79/162159_crt_8F6Bk.jpg?r=1741527031",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/79/162159_crt_8F6Bk.jpg?r=1741527031"
+    },
+    "summary": "しずかのクラスメイト。\r\nクラスで学級委員長を\r\n務めている優等生。\r\n何かとしずかを気にかけている。",
+    "name": "東直樹",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "东直树"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "東 直樹"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あずま なおき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Azuma Naoki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 45,
+        "collects": 14
+    },
+    "id": 162159,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        527620
+    ]
+}
