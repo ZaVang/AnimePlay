@@ -175,7 +175,9 @@ onMounted(() => {
                 <li><RouterLink to="/battle" class="nav-link">宅理论战</RouterLink></li>
                 <li><RouterLink to="/squad-battle" class="nav-link">小队战斗</RouterLink></li>
                 <li><RouterLink to="/nurture" class="nav-link">角色养成</RouterLink></li>
+                <!-- 家园页暂不在导航展示（代码与路由保留；SD 像素素材就绪后取消注释即可恢复）
                 <li><RouterLink to="/homestead" class="nav-link">🏠 家园</RouterLink></li>
+                -->
                 <li><RouterLink to="/minigames" class="nav-link">🎮 小游戏</RouterLink></li>
                 <li><RouterLink to="/settings" class="nav-link">设置</RouterLink></li>
             </ul>
