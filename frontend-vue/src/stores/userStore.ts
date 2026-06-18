@@ -337,6 +337,17 @@ export const useUserStore = defineStore('user', () => {
     return { score, knowledgeAwarded: kpToAward, alreadyDone };
   }
 
+  // 品味画像（evolution-10）：勾选/清空「看过」的番剧，持久化（未登录时 saveToServer 静默跳过，仅会话内有效）。
+  function toggleTasteWatched(animeId: number) {
+    useMiniGamesStore().toggleTasteWatched(animeId);
+    saveToServer();
+  }
+
+  function clearTasteWatched() {
+    useMiniGamesStore().clearTasteWatched();
+    saveToServer();
+  }
+
   // --- 各领域委托（动作完成后统一触发存档） ---
 
   const withSave = <A extends unknown[]>(fn: (...args: A) => unknown) => (...args: A) => {
@@ -438,6 +449,8 @@ export const useUserStore = defineStore('user', () => {
     settleHigherLower,
     settleQuiz,
     settleDailyChallenge,
+    toggleTasteWatched,
+    clearTasteWatched,
 
     // daily（evolution-1）：领取每日任务奖励（领域 store 自己不存档）
     claimDailyTask: (taskId: string) => {

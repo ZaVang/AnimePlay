@@ -106,6 +106,7 @@ function migrateMiniGames(raw: any): MiniGamesSave {
     };
   };
   const dc = raw.dailyChallenge && typeof raw.dailyChallenge === 'object' ? raw.dailyChallenge : {};
+  const tp = raw.tasteProfile && typeof raw.tasteProfile === 'object' ? raw.tasteProfile : {};
   return {
     higherLower: rec(raw.higherLower, defaults.higherLower),
     quiz: rec(raw.quiz, defaults.quiz),
@@ -115,6 +116,12 @@ function migrateMiniGames(raw: any): MiniGamesSave {
       bestScore: typeof dc.bestScore === 'number' ? dc.bestScore : defaults.dailyChallenge.bestScore,
       streakDays: typeof dc.streakDays === 'number' ? dc.streakDays : defaults.dailyChallenge.streakDays,
       bestStreakDays: typeof dc.bestStreakDays === 'number' ? dc.bestStreakDays : defaults.dailyChallenge.bestStreakDays,
+    },
+    // v11 → v12：品味画像（旧档无此键 → 空集）。只收数字 id。
+    tasteProfile: {
+      watchedAnimeIds: Array.isArray(tp.watchedAnimeIds)
+        ? tp.watchedAnimeIds.filter((x: unknown): x is number => typeof x === 'number')
+        : defaults.tasteProfile.watchedAnimeIds,
     },
     awardDate: typeof raw.awardDate === 'string' ? raw.awardDate : defaults.awardDate,
     awardedToday: typeof raw.awardedToday === 'number' ? raw.awardedToday : defaults.awardedToday,

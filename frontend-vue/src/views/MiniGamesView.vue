@@ -9,10 +9,11 @@ import GuessCharacter from '@/components/GuessCharacter.vue';
 import HigherLowerGame from '@/components/HigherLowerGame.vue';
 import QuizGame from '@/components/QuizGame.vue';
 import DailyChallengeGame from '@/components/DailyChallengeGame.vue';
+import TasteProfileGame from '@/components/TasteProfileGame.vue';
 import { useGuessStore } from '@/stores/guess';
 import { useMiniGamesStore } from '@/stores/minigames/higherLower';
 
-type GameId = 'guess' | 'higherlower' | 'quiz' | 'dailychallenge';
+type GameId = 'guess' | 'higherlower' | 'quiz' | 'dailychallenge' | 'tasteprofile';
 const LS_KEY = 'animeplay-last-minigame';
 
 const guessStore = useGuessStore();
@@ -21,7 +22,7 @@ const minigames = useMiniGamesStore();
 function loadLast(): GameId {
   try {
     const v = localStorage.getItem(LS_KEY);
-    if (v === 'guess' || v === 'higherlower' || v === 'quiz' || v === 'dailychallenge') return v;
+    if (v === 'guess' || v === 'higherlower' || v === 'quiz' || v === 'dailychallenge' || v === 'tasteprofile') return v;
   } catch { /* localStorage 不可用时回落默认 */ }
   return 'guess';
 }
@@ -33,6 +34,7 @@ const games = computed(() => [
   { id: 'higherlower' as GameId, icon: '🔼', title: '高低牌', desc: '比人气/口碑/年代，连对冲榜', best: `最佳连胜 ${minigames.bestStreak}` },
   { id: 'quiz' as GameId, icon: '❓', title: '番剧问答', desc: '4 选 1 知识问答，连答冲分', best: `最佳连答 ${minigames.quizBestStreak}` },
   { id: 'dailychallenge' as GameId, icon: '🗓️', title: '每日挑战', desc: '全员同题，每天一次，首通领奖', best: minigames.dcStreakDays > 0 ? `🔥 连续 ${minigames.dcStreakDays} 天${minigames.dcCompletedToday ? ' · 今日✅' : ''}` : (minigames.dcCompletedToday ? `今日 ✅ ${minigames.dcLastScore}/5` : `最佳 ${minigames.dcBestScore}/5`) },
+  { id: 'tasteprofile' as GameId, icon: '📊', title: '番剧品味', desc: '勾选看过的番，生成品味画像报告', best: minigames.tasteWatchedCount > 0 ? `已记录 ${minigames.tasteWatchedCount} 部` : '尚未开始' },
 ]);
 
 function select(id: GameId) {
@@ -70,6 +72,7 @@ function select(id: GameId) {
       <HigherLowerGame v-else-if="activeGame === 'higherlower'" />
       <QuizGame v-else-if="activeGame === 'quiz'" />
       <DailyChallengeGame v-else-if="activeGame === 'dailychallenge'" />
+      <TasteProfileGame v-else-if="activeGame === 'tasteprofile'" />
     </div>
   </div>
 </template>

@@ -165,6 +165,21 @@ export const useMiniGamesStore = defineStore('minigames', () => {
   const dcDone = ref(false);
   const dcLastAward = ref(0);
 
+  // 番剧品味画像（v12）：勾选「看过」的番剧 id 集（持久化；纯收藏态，无战绩/无每日封顶）。
+  const tasteWatchedIds = ref<Set<number>>(new Set());
+  const tasteWatchedCount = computed(() => tasteWatchedIds.value.size);
+
+  /** 切换某番剧的「看过」状态。 */
+  function toggleTasteWatched(animeId: number) {
+    if (tasteWatchedIds.value.has(animeId)) tasteWatchedIds.value.delete(animeId);
+    else tasteWatchedIds.value.add(animeId);
+  }
+
+  /** 清空已看记录。 */
+  function clearTasteWatched() {
+    tasteWatchedIds.value.clear();
+  }
+
   const leftValue = computed(() => (left.value ? cardValue(left.value, category.value) : null));
   const rightValue = computed(() => (right.value ? cardValue(right.value, category.value) : null));
   const remainingDailyKp = computed(() => {
@@ -417,6 +432,7 @@ export const useMiniGamesStore = defineStore('minigames', () => {
         streakDays: dcStreakDays.value,
         bestStreakDays: dcBestStreakDays.value,
       },
+      tasteProfile: { watchedAnimeIds: [...tasteWatchedIds.value] },
       awardDate: awardDate.value,
       awardedToday: awardedToday.value,
     };
@@ -434,6 +450,7 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     dcBestScore.value = data?.dailyChallenge?.bestScore ?? 0;
     dcStreakDays.value = data?.dailyChallenge?.streakDays ?? 0;
     dcBestStreakDays.value = data?.dailyChallenge?.bestStreakDays ?? 0;
+    tasteWatchedIds.value = new Set(data?.tasteProfile?.watchedAnimeIds ?? []);
     awardDate.value = data?.awardDate ?? '';
     awardedToday.value = data?.awardedToday ?? 0;
   }
@@ -453,6 +470,7 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     dcQuestions.value = [];
     dcActive.value = false;
     dcDone.value = false;
+    tasteWatchedIds.value = new Set();
     awardDate.value = '';
     awardedToday.value = 0;
     quit();
@@ -477,6 +495,8 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     dcLastDate, dcLastScore, dcBestScore, dcStreakDays, dcBestStreakDays, dcScore, dcChosen, dcActive, dcDone, dcLastAward, dcIndex, dcQuestions,
     dcCompletedToday, dcCurrentQuestion, dcTotal,
     startDailyChallenge, answerDailyChallenge, nextDailyChallenge, settleDailyChallenge,
+    // 品味画像（v12）
+    tasteWatchedIds, tasteWatchedCount, toggleTasteWatched, clearTasteWatched,
     serialize, deserialize, reset,
   };
 });

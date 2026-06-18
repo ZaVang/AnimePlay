@@ -14,6 +14,7 @@
  * v9（evolution-6）：minigames 域加 quiz（番剧问答战绩）；每日封顶跨游戏共享。
  * v10（evolution-8）：minigames 域加 dailyChallenge（每日挑战，固定种子全员同题，每日一次）。
  * v11（evolution-9）：dailyChallenge 加 streakDays/bestStreakDays（连续挑战天数，断签归 1）。
+ * v12（evolution-10）：minigames 域加 tasteProfile（番剧品味画像——用户勾选「看过」的番剧 id 集，持久化）。
  */
 import type { PityState } from '@/engine/gacha/draw';
 import type { CharacterNurtureData } from '@/types/nurture';
@@ -26,7 +27,7 @@ import type {
   TowerProgress,
 } from '@/types/player';
 
-export const SAVE_VERSION = 11 as const;
+export const SAVE_VERSION = 12 as const;
 
 /** 商店单品的当日购买记录（跨天读取时自动视为 0）。 */
 export interface ShopPurchaseRecord {
@@ -85,10 +86,16 @@ export interface DailyChallengeSave {
   bestStreakDays: number;
 }
 
+/** 番剧品味画像（v12）：用户勾选「看过」的番剧 id 集（无战绩，纯收藏式状态）。 */
+export interface TasteProfileSave {
+  /** 已勾选「看过」的番剧 id。 */
+  watchedAnimeIds: number[];
+}
+
 /**
  * 小游戏域。各游戏战绩 + 每日发奖封顶（跨游戏共享，防刷）。
  * awardDate（todayKey：YYYY-M-D）跨天读时归零 awardedToday，仿 daily 的 ensureToday 模式。
- * v8：higherLower（高低牌）。v9：quiz（番剧问答）。v10：dailyChallenge（每日挑战）。
+ * v8：higherLower（高低牌）。v9：quiz（番剧问答）。v10：dailyChallenge（每日挑战）。v12：tasteProfile（品味画像）。
  */
 export interface MiniGamesSave {
   higherLower: MiniGameRecord;
@@ -96,6 +103,8 @@ export interface MiniGamesSave {
   quiz: MiniGameRecord;
   /** v10 新增：每日挑战战绩（每日一次，固定种子）。 */
   dailyChallenge: DailyChallengeSave;
+  /** v12 新增：番剧品味画像（已看番剧 id 集）。 */
+  tasteProfile: TasteProfileSave;
   /** 当日已发奖知识点所属日期（todayKey）。 */
   awardDate: string;
   /** 当日已发放的知识点累计（达每日封顶后不再发奖，只更新战绩）。 */
@@ -193,6 +202,7 @@ export function createDefaultMiniGames(): MiniGamesSave {
     higherLower: { highScore: 0, bestStreak: 0, playCount: 0 },
     quiz: { highScore: 0, bestStreak: 0, playCount: 0 },
     dailyChallenge: { lastDate: '', lastScore: 0, bestScore: 0, streakDays: 0, bestStreakDays: 0 },
+    tasteProfile: { watchedAnimeIds: [] },
     awardDate: '',
     awardedToday: 0,
   };
