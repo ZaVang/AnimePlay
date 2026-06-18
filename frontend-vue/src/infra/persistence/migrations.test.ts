@@ -109,6 +109,23 @@ describe('v1 → v2 迁移', () => {
   it('v10/v11 新键：minigames.dailyChallenge 缺失补默认（每日挑战战绩 + 连续天数）', () => {
     expect(v2.minigames.dailyChallenge).toEqual({ lastDate: '', lastScore: 0, bestScore: 0, streakDays: 0, bestStreakDays: 0 });
   });
+
+  it('v12 新键：minigames.tasteProfile 缺失补默认（品味画像已看番空集）', () => {
+    expect(v2.minigames.tasteProfile).toEqual({ watchedAnimeIds: [] });
+  });
+});
+
+describe('v12 minigames.tasteProfile 迁移', () => {
+  it('保留旧档已记录的已看番 id（只收数字）', () => {
+    const out = migrate({ minigames: { tasteProfile: { watchedAnimeIds: [326, 10380, 'bad', null] } } } as unknown);
+    expect(out.minigames.tasteProfile.watchedAnimeIds).toEqual([326, 10380]);
+  });
+
+  it('v11 旧档（minigames 有但无 tasteProfile）→ 空集，不丢其它战绩', () => {
+    const out = migrate({ minigames: { higherLower: { highScore: 5, bestStreak: 3, playCount: 9 } } } as unknown);
+    expect(out.minigames.tasteProfile).toEqual({ watchedAnimeIds: [] });
+    expect(out.minigames.higherLower).toEqual({ highScore: 5, bestStreak: 3, playCount: 9 });
+  });
 });
 
 describe('v2 存档过迁移层', () => {
