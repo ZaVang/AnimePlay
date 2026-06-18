@@ -31,10 +31,25 @@ const view = ref<'pick' | 'report'>('pick');
 const search = ref('');
 const onlyWatched = ref(false);
 const filterTag = ref('all');
-const filterYear = ref('all');
+const yearFrom = ref('all'); // 起始年（'all' = 不限下界）
+const yearTo = ref('all');   // 结束年（'all' = 至今/不限上界）
+type SortKey = 'name' | 'newest' | 'oldest' | 'rating';
+const pickSort = ref<SortKey>('name');
 
 const allAnime = computed(() => gameData.allAnimeCards);
 const watchedCount = computed(() => minigames.tasteWatchedCount);
+
+/** 取番剧放送年（无有效年份返回 null）。 */
+function yearOf(a: AnimeCard): number | null {
+  return typeof a.date === 'string' && /^\d{4}/.test(a.date) ? parseInt(a.date.slice(0, 4), 10) : null;
+}
+/** 按当前排序键比较两张卡。 */
+function compareBySort(a: AnimeCard, b: AnimeCard): number {
+  if (pickSort.value === 'rating') return (b.rating_score ?? 0) - (a.rating_score ?? 0) || a.name.localeCompare(b.name, 'zh-Hans-CN');
+  if (pickSort.value === 'newest') return (yearOf(b) ?? -1) - (yearOf(a) ?? -1) || a.name.localeCompare(b.name, 'zh-Hans-CN');
+  if (pickSort.value === 'oldest') return (yearOf(a) ?? 9999) - (yearOf(b) ?? 9999) || a.name.localeCompare(b.name, 'zh-Hans-CN');
+  return a.name.localeCompare(b.name, 'zh-Hans-CN');
+}
 
 /** 标签 / 年份选项严格取自库里实际数据。 */
 const allTags = computed(() => {
@@ -52,28 +67,40 @@ function isWatched(id: number): boolean {
   return minigames.tasteWatchedIds.has(id);
 }
 
-/** 选番列表：关键字 + 标签 + 年份 + 「只看已选」过滤，按名称排序。 */
+/** 选番列表：关键字 + 标签 + 年份范围 + 「只看已选」过滤，按所选排序。 */
 const pickList = computed(() => {
   const kw = search.value.trim().toLowerCase();
+  const hasYearBound = yearFrom.value !== 'all' || yearTo.value !== 'all';
   return allAnime.value
     .filter(a => {
       if (onlyWatched.value && !isWatched(a.id)) return false;
       if (kw && !a.name.toLowerCase().includes(kw)) return false;
       if (filterTag.value !== 'all' && !(a.synergy_tags ?? []).includes(filterTag.value)) return false;
-      if (filterYear.value !== 'all' && !(typeof a.date === 'string' && a.date.slice(0, 4) === filterYear.value)) return false;
+      if (hasYearBound) {
+        const y = yearOf(a);
+        if (y === null) return false;
+        if (yearFrom.value !== 'all' && y < Number(yearFrom.value)) return false;
+        if (yearTo.value !== 'all' && y > Number(yearTo.value)) return false;
+      }
       return true;
     })
     .slice()
-    .sort((a, b) => a.name.localeCompare(b.name, 'zh-Hans-CN'));
+    .sort(compareBySort);
 });
 
 const hasPickFilter = computed(
-  () => search.value.trim() !== '' || filterTag.value !== 'all' || filterYear.value !== 'all' || onlyWatched.value,
+  () =>
+    search.value.trim() !== '' ||
+    filterTag.value !== 'all' ||
+    yearFrom.value !== 'all' ||
+    yearTo.value !== 'all' ||
+    onlyWatched.value,
 );
 function clearPickFilters() {
   search.value = '';
   filterTag.value = 'all';
-  filterYear.value = 'all';
+  yearFrom.value = 'all';
+  yearTo.value = 'all';
   onlyWatched.value = false;
 }
 
@@ -101,6 +128,114 @@ function imageSrc(id: number): string {
 }
 
 const VIRTUAL_GRID_CONFIG = { itemHeight: 240, containerHeight: 540, minItemWidth: 132, gap: 14 };
+
+// --- 报告导出图片：手绘 canvas（统计头 + 已看番 n×n 缩略图，按时间/评分排序）---
+const exportSort = ref<'rating' | 'newest'>('rating');
+const exporting = ref(false);
+const exportError = ref('');
+
+function cssVar(name: string, fallback: string): string {
+  const v = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  return v ? `rgb(${v})` : fallback;
+}
+function loadImg(src: string): Promise<HTMLImageElement | null> {
+  return new Promise(res => {
+    const im = new Image();
+    im.onload = () => res(im);
+    im.onerror = () => res(null);
+    im.src = src;
+  });
+}
+
+async function exportReport() {
+  if (exporting.value) return;
+  const list = watchedAnime.value.slice().sort((a, b) =>
+    exportSort.value === 'rating'
+      ? (b.rating_score ?? 0) - (a.rating_score ?? 0) || a.name.localeCompare(b.name, 'zh-Hans-CN')
+      : (yearOf(b) ?? -1) - (yearOf(a) ?? -1) || a.name.localeCompare(b.name, 'zh-Hans-CN'),
+  );
+  if (list.length === 0) return;
+  exporting.value = true;
+  exportError.value = '';
+  try {
+    const CW = 110, CH = 154, GAP = 6, PAD = 18, DPR = 2, HEADER = 132;
+    const cols = Math.min(12, Math.ceil(Math.sqrt(list.length)));
+    const rows = Math.ceil(list.length / cols);
+    const canvasW = cols * CW + (cols - 1) * GAP + PAD * 2;
+    const canvasH = HEADER + rows * CH + (rows - 1) * GAP + PAD;
+
+    const imgs = await Promise.all(list.map(a => loadImg(thumbImageSrc('anime', a.id))));
+
+    const surface = cssVar('--c-surface', '#fff');
+    const ink = cssVar('--c-ink', '#222');
+    const ink2 = cssVar('--c-ink-2', '#666');
+    const accent = cssVar('--c-accent', '#2ba8a2');
+
+    const canvas = document.createElement('canvas');
+    canvas.width = canvasW * DPR;
+    canvas.height = canvasH * DPR;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) throw new Error('no 2d context');
+    ctx.scale(DPR, DPR);
+    ctx.imageSmoothingEnabled = true;
+    ctx.imageSmoothingQuality = 'high';
+    ctx.fillStyle = surface;
+    ctx.fillRect(0, 0, canvasW, canvasH);
+
+    // 头部：人格 + 统计 + 偏好
+    const r = report.value;
+    ctx.textBaseline = 'top';
+    ctx.fillStyle = ink;
+    ctx.font = 'bold 24px system-ui, sans-serif';
+    ctx.fillText(`${r.persona.emoji} ${r.persona.title}`, PAD, PAD);
+    ctx.fillStyle = ink2;
+    ctx.font = '14px system-ui, sans-serif';
+    ctx.fillText(r.persona.description, PAD, PAD + 34);
+    ctx.fillText(
+      `已看 ${r.count} 部 · 覆盖 ${r.coverage}% · 均分 ${r.avgRating ?? '—'} · 小众指数 ${r.nicheScore}/100`,
+      PAD, PAD + 58,
+    );
+    const tags = r.topTags.slice(0, 5).map(t => t.tag).join(' / ');
+    if (tags) {
+      ctx.fillStyle = accent;
+      ctx.fillText(`偏好题材：${tags}`, PAD, PAD + 80);
+    }
+    ctx.fillStyle = ink2;
+    ctx.font = '12px system-ui, sans-serif';
+    ctx.fillText(`已看番一览（按${exportSort.value === 'rating' ? '评分' : '年份'}排序）`, PAD, HEADER - 18);
+
+    // n×n 缩略图网格
+    list.forEach((a, i) => {
+      const cx = PAD + (i % cols) * (CW + GAP);
+      const cy = HEADER + Math.floor(i / cols) * (CH + GAP);
+      const im = imgs[i];
+      if (im) ctx.drawImage(im, cx, cy, CW, CH);
+      else { ctx.fillStyle = '#999'; ctx.fillRect(cx, cy, CW, CH); }
+      // 角标：评分或年份
+      const label = exportSort.value === 'rating' ? (a.rating_score ? `★${a.rating_score}` : '—') : String(yearOf(a) ?? '—');
+      ctx.fillStyle = 'rgba(0,0,0,0.62)';
+      ctx.fillRect(cx, cy + CH - 18, CW, 18);
+      ctx.fillStyle = '#fff';
+      ctx.font = 'bold 12px system-ui, sans-serif';
+      ctx.textBaseline = 'middle';
+      ctx.textAlign = 'center';
+      ctx.fillText(label, cx + CW / 2, cy + CH - 9);
+      ctx.textAlign = 'left';
+      ctx.textBaseline = 'top';
+    });
+
+    const a = document.createElement('a');
+    a.href = canvas.toDataURL('image/png');
+    a.download = `番剧品味-${r.persona.title}-${Date.now()}.png`;
+    a.click();
+  } catch (e) {
+    console.error('[taste export]', e);
+    exportError.value = '导出失败，请重试。';
+    setTimeout(() => { exportError.value = ''; }, 4000);
+  } finally {
+    exporting.value = false;
+  }
+}
 
 /** 评分对比文案。 */
 const ratingDeltaText = computed(() => {
@@ -137,9 +272,22 @@ const ratingDeltaText = computed(() => {
           <option value="all">所有标签</option>
           <option v-for="t in allTags" :key="t" :value="t">{{ t }}</option>
         </select>
-        <select v-model="filterYear" class="p-2 border border-line rounded-lg text-ink bg-surface">
-          <option value="all">所有年份</option>
-          <option v-for="y in allYears" :key="y" :value="y">{{ y }}</option>
+        <div class="flex items-center gap-1 text-sm text-ink-2">
+          <select v-model="yearFrom" class="p-2 border border-line rounded-lg text-ink bg-surface">
+            <option value="all">起始年</option>
+            <option v-for="y in allYears" :key="y" :value="y">{{ y }}</option>
+          </select>
+          <span>–</span>
+          <select v-model="yearTo" class="p-2 border border-line rounded-lg text-ink bg-surface">
+            <option value="all">至今</option>
+            <option v-for="y in allYears" :key="y" :value="y">{{ y }}</option>
+          </select>
+        </div>
+        <select v-model="pickSort" class="p-2 border border-line rounded-lg text-ink bg-surface">
+          <option value="name">名称排序</option>
+          <option value="newest">年份：新→旧</option>
+          <option value="oldest">年份：旧→新</option>
+          <option value="rating">评分：高→低</option>
         </select>
         <label class="flex items-center gap-1.5 text-sm text-ink-2 select-none cursor-pointer">
           <input type="checkbox" v-model="onlyWatched" /> 只看已选
@@ -179,10 +327,20 @@ const ratingDeltaText = computed(() => {
 
     <!-- 报告模式 -->
     <div v-else>
-      <div class="flex items-center justify-between mb-3">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
         <button class="btn-ghost text-sm px-3 py-2" @click="view = 'pick'">← 返回选番</button>
-        <span class="text-sm text-ink-2">基于 {{ report.count }} 部已看番剧</span>
+        <div class="flex items-center gap-2">
+          <span class="text-sm text-ink-2 mr-1">基于 {{ report.count }} 部</span>
+          <select v-model="exportSort" class="p-1.5 border border-line rounded-lg text-sm text-ink bg-surface">
+            <option value="rating">导出按评分</option>
+            <option value="newest">导出按年份</option>
+          </select>
+          <button class="btn-primary text-sm px-3 py-1.5" :disabled="exporting" @click="exportReport">
+            {{ exporting ? '导出中…' : '📷 导出图片' }}
+          </button>
+        </div>
       </div>
+      <p v-if="exportError" class="text-xs text-danger mb-2">{{ exportError }}</p>
 
       <!-- 人格标签 -->
       <div class="persona">
