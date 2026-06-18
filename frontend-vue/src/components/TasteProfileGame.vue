@@ -8,14 +8,24 @@ import { ref, computed } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { useMiniGamesStore } from '@/stores/minigames/higherLower';
+import { useCollectionStore } from '@/stores/collection';
 import { buildTasteReport, recommendFromTaste } from '@/utils/tasteProfile';
 import { thumbImageSrc, onThumbError } from '@/utils/cardImage';
 import type { AnimeCard } from '@/types/card';
 import VirtualGrid from '@/components/VirtualGrid.vue';
+import CardDetailModal from '@/components/CardDetailModal.vue';
 
 const userStore = useUserStore();
 const gameData = useGameDataStore();
 const minigames = useMiniGamesStore();
+const collection = useCollectionStore();
+
+// 右键查看详情（复用图鉴/对战的卡详情弹窗）
+const detailCard = ref<AnimeCard | null>(null);
+const detailCount = computed(() => (detailCard.value ? collection.getAnimeCardCount(detailCard.value.id) : 0));
+function openDetail(card: AnimeCard) {
+  detailCard.value = card;
+}
 
 const view = ref<'pick' | 'report'>('pick');
 const search = ref('');
@@ -143,7 +153,7 @@ const ratingDeltaText = computed(() => {
           @click="showReport"
         >生成画像 →</button>
       </div>
-      <p class="text-sm text-ink-2 mb-3">筛选出 {{ pickList.length }} / {{ allAnime.length }} 部</p>
+      <p class="text-sm text-ink-2 mb-3">筛选出 {{ pickList.length }} / {{ allAnime.length }} 部 · 左键勾选、右键看详情</p>
 
       <div v-if="pickList.length === 0" class="text-center py-10 text-ink-2">
         <p>没有符合条件的番剧。</p>
@@ -158,7 +168,7 @@ const ratingDeltaText = computed(() => {
         @item-click="toggle($event as AnimeCard)"
       >
         <template #default="{ item }">
-          <div class="pick-card" :class="{ selected: isWatched(item.id) }">
+          <div class="pick-card" :class="{ selected: isWatched(item.id) }" @contextmenu.prevent="openDetail(item as AnimeCard)">
             <img loading="lazy" decoding="async" :src="imageSrc(item.id)" @error="onThumbError" class="w-full aspect-[2/3] object-cover object-top" />
             <div v-if="isWatched(item.id)" class="pick-check">✓</div>
             <div class="pick-name" :title="item.name">{{ item.name }}</div>
@@ -267,7 +277,7 @@ const ratingDeltaText = computed(() => {
         <h4 class="block-title">🍿 猜你想看</h4>
         <p class="text-xs text-ink-2 mb-2">根据你的题材偏好推荐你还没看的番——点「看过」加入记录可让画像更准。</p>
         <div class="rec-grid">
-          <div v-for="rec in recommendations" :key="rec.anime.id" class="rec">
+          <div v-for="rec in recommendations" :key="rec.anime.id" class="rec" @contextmenu.prevent="openDetail(rec.anime)">
             <img loading="lazy" decoding="async" :src="imageSrc(rec.anime.id)" @error="onThumbError" class="rec-img" />
             <div class="rec-body">
               <div class="rec-name" :title="rec.anime.name">{{ rec.anime.name }}</div>
@@ -284,6 +294,13 @@ const ratingDeltaText = computed(() => {
         </div>
       </section>
     </div>
+
+    <CardDetailModal
+      :card="detailCard"
+      card-type="anime"
+      :count="detailCount"
+      @close="detailCard = null"
+    />
   </div>
 </template>
 

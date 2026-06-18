@@ -8,11 +8,14 @@
 import { ref, reactive, computed, watch } from 'vue';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { useMiniGamesStore } from '@/stores/minigames/higherLower';
+import { useCollectionStore } from '@/stores/collection';
 import { thumbImageSrc, onThumbError } from '@/utils/cardImage';
-import type { AnimeCard } from '@/types/card';
+import type { AnimeCard, CharacterCard, Card } from '@/types/card';
+import CardDetailModal from '@/components/CardDetailModal.vue';
 
 const gameData = useGameDataStore();
 const minigames = useMiniGamesStore();
+const collection = useCollectionStore();
 
 // 档位：从夯到拉完了；颜色是 tier 表识别色（固定色，不随皮肤——同稀有度色例外）。
 const TIERS = [
@@ -54,10 +57,23 @@ watch([boards, domain], () => {
 // --- 卡数据 ---
 const allCards = computed(() => (domain.value === 'anime' ? gameData.allAnimeCards : gameData.allCharacterCards));
 const cardById = computed(() => {
-  const m = new Map<number, { id: number; name: string; rarity: string }>();
+  const m = new Map<number, AnimeCard | CharacterCard>();
   for (const c of allCards.value) m.set(c.id, c);
   return m;
 });
+
+// 右键查看详情（复用图鉴/对战的卡详情弹窗）
+const detailCard = ref<Card | null>(null);
+const detailCount = computed(() => {
+  if (!detailCard.value) return 0;
+  return domain.value === 'anime'
+    ? collection.getAnimeCardCount(detailCard.value.id)
+    : collection.getCharacterCardCount(detailCard.value.id);
+});
+function openDetail(id: number) {
+  const c = cardById.value.get(id);
+  if (c) detailCard.value = c;
+}
 function imageSrc(id: number): string {
   return `/data/images/${domain.value}/${id}.jpg`; // 原图：导出用
 }
@@ -319,6 +335,7 @@ async function exportImage() {
             class="tier-item"
             draggable="true"
             :title="nameOf(id)"
+            @contextmenu.prevent="openDetail(id)"
             @dragstart="onDragStart(id, t.id)"
           >
             <img :src="thumbSrc(id)" loading="lazy" decoding="async" @error="onThumbError" />
@@ -347,6 +364,7 @@ async function exportImage() {
         class="tier-item"
         draggable="true"
         :title="nameOf(id)"
+        @contextmenu.prevent="openDetail(id)"
         @dragstart="onDragStart(id, 'pool')"
       >
         <img :src="imageSrc(id)" loading="lazy" decoding="async" />
@@ -386,7 +404,7 @@ async function exportImage() {
         @click="importFromTaste"
       >导入品味已看（{{ tasteImportCount }}）</button>
     </div>
-    <p class="text-xs text-ink-2 mb-2">点缩略图多选、再「导入选中」批量加入；也可直接把缩略图拖进档位（共 {{ candidates.length }} 个可选）。</p>
+    <p class="text-xs text-ink-2 mb-2">点缩略图多选、再「导入选中」批量加入；也可直接把缩略图拖进档位；右键任意卡看详情（共 {{ candidates.length }} 个可选）。</p>
     <div class="cand-strip">
       <div
         v-for="c in candidates.slice(0, 120)"
@@ -397,11 +415,19 @@ async function exportImage() {
         draggable="true"
         @dragstart="onCandDragStart(c.id)"
         @click="toggleSelect(c.id)"
+        @contextmenu.prevent="openDetail(c.id)"
       >
         <img :src="thumbSrc(c.id)" loading="lazy" decoding="async" @error="onThumbError" />
         <span v-if="selected.has(c.id)" class="cand-check">✓</span>
       </div>
     </div>
+
+    <CardDetailModal
+      :card="detailCard"
+      :card-type="domain"
+      :count="detailCount"
+      @close="detailCard = null"
+    />
   </div>
 </template>
 
