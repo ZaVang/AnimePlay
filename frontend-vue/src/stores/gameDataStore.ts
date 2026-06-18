@@ -46,9 +46,11 @@ export const useGameDataStore = defineStore('gameData', () => {
     try {
       // S9：30s 超时兜底，挂掉转入错误态由 App 提供重试
       const timeout = AbortSignal.timeout(30000);
+      // limit 取足够大值一次拉全（后端按 offset/limit 切片，默认仅 50）。
+      // 卡池随小众番扩充后已 >1000，故用 100000 上限兜底，避免角色被截断。
       const [animeResponse, characterResponse] = await Promise.all([
-        fetch('/api/all_animes?limit=1000', { signal: timeout }),
-        fetch('/api/all_characters?limit=1000', { signal: timeout })
+        fetch('/api/all_animes?limit=100000', { signal: timeout }),
+        fetch('/api/all_characters?limit=100000', { signal: timeout })
       ]);
 
       if (!animeResponse.ok) throw new Error('Failed to fetch anime cards');
