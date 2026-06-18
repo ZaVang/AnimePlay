@@ -1124,6 +1124,23 @@ export const urCharacterSkills: Skill[] = [
     type: '被动光环',
     description: '己方议题偏向>0时，每回合开始获得1TP',
     effectId: '安和昴_世渡_上手',
+  },
+  {
+    id: '蕾塞_爆弹冲击',
+    name: '爆弹冲击',
+    type: '主动技能',
+    description: '本回合己方战斗类卡牌+3强度，代价己方声望-2',
+    cost: 3,
+    cooldown: 3,
+    initialCooldown: 0,
+    effectId: '蕾塞_爆弹冲击',
+  },
+  {
+    id: '蕾塞_致命诱饵',
+    name: '致命诱饵',
+    type: '被动光环',
+    description: '己方打出战斗类卡牌时，对手下一张打出的卡牌强度-1',
+    effectId: '蕾塞_致命诱饵',
   }
 ];
 
@@ -1243,6 +1260,8 @@ export const urCharacterSkillMap: Record<number, string[]> = {
   56776: ['志摩凛_秘境营地', '志摩凛_围炉夜话'],
   // 藤原千花
   67408: ['藤原千花_千花游戏', '藤原千花_天真烂漫'],
+  // 蕾塞
+  71989: ['蕾塞_爆弹冲击', '蕾塞_致命诱饵'],
   // 芙莉莲
   86246: ['芙莉莲_魔法收集', '芙莉莲_魔法精通'],
   // 菲伦

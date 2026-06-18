@@ -54,6 +54,16 @@ function hasTag(ctx: EffectContext, tag: string): boolean {
 }
 
 export const contentPassives: Record<string, EffectHandler> = {
+  // 蕾塞（炸弹恶魔·诱敌）：打出战斗卡 → 对手下张卡牌-1强度（敌对负加成，受对方效果护盾拦截）
+  '蕾塞_致命诱饵': (ctx) => {
+    if (ctx.event !== 'onPlay' || !hasTag(ctx, '战斗')) return;
+    const opp = ctx.playerId === 'playerA' ? 'playerB' : 'playerA';
+    persistentEffects.addTemporaryBonus({
+      playerId: opp, bonusType: 'strength', amount: -1, duration: 3, oneShot: 'next-play',
+      description: '致命诱饵：下张卡牌-1强度',
+    });
+  },
+
   // ===== afterResolve：对撞结算反应 =====
 
   // 对手对己方使用「友好安利」时，己方议题偏向额外+1

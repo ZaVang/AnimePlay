@@ -184,6 +184,15 @@ describe('contentActives：17 个内容批主动技的效果写入', () => {
     expect(persistentEffects.getStrengthBonus('playerA', ['校园'])).toBe(1);
     expect(persistentEffects.getStrengthBonus('playerB', ['校园'])).toBe(0);
   });
+
+  it('蕾塞_爆弹冲击：战斗+3强度 + 己方声望-2（新增 UR）', async () => {
+    const playerStore = usePlayerStore();
+    playerStore.playerA.reputation = 20;
+    await cast('蕾塞_爆弹冲击');
+    expect(persistentEffects.getStrengthBonus('playerA', ['战斗'])).toBe(3);
+    expect(persistentEffects.getStrengthBonus('playerA', ['日常'])).toBe(0);
+    expect(playerStore.playerA.reputation).toBe(18);
+  });
 });
 
 describe('legacy 主动技 S8c 补真抽查', () => {

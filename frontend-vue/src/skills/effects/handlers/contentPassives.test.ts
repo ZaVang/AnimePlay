@@ -629,3 +629,20 @@ describe('costModifiers 条件减费', () => {
     expect(playerCardCost('playerA', animeCard(2, ['科幻'], 1))).toBe(0); // 下限 0
   });
 });
+
+describe('蕾塞（新增 UR）致命诱饵', () => {
+  beforeEach(() => {
+    setActivePinia(createPinia());
+    clearBattleSkillState();
+  });
+
+  it('打出战斗卡 → 对手下张卡牌-1强度（一次性）；非战斗卡不触发', async () => {
+    await runEffect('蕾塞_致命诱饵', { event: 'onPlay', playerId: 'playerA', role: 'attacker', card: animeCard(1, ['战斗']) });
+    expect(persistentEffects.getStrengthBonus('playerB', ['战斗'])).toBe(-1);
+    persistentEffects.consumeOneShotBonuses('playerB', 'strength', ['战斗']);
+    expect(persistentEffects.getStrengthBonus('playerB', ['战斗'])).toBe(0);
+
+    await runEffect('蕾塞_致命诱饵', { event: 'onPlay', playerId: 'playerA', role: 'attacker', card: animeCard(2, ['日常']) });
+    expect(persistentEffects.getStrengthBonus('playerB', ['日常'])).toBe(0);
+  });
+});

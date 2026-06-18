@@ -189,4 +189,13 @@ export const contentActives: Record<string, EffectHandler> = {
     useHistoryStore().addLog(`${nameOf(ctx.playerId)} 展现偶像魅力：${nameOf(opp)} 只能友好安利了，校园+1强度。`, 'event');
     useGameStore().addNotification('偶像魅力：强制对手友好安利', 'warning');
   },
+
+  /** 蕾塞（炸弹恶魔）：战斗+3强度（1回合），代价己方声望-2——高爆发带反噬。 */
+  '蕾塞_爆弹冲击': (ctx) => {
+    if (ctx.event !== 'onPlay') return;
+    persistentEffects.addCardTypeStrengthBonus(ctx.playerId, '战斗', 3, 1);
+    usePlayerStore().changeReputation(ctx.playerId, -2);
+    useHistoryStore().addLog(`${nameOf(ctx.playerId)} 引爆爆弹冲击：战斗卡牌+3强度，代价声望-2。`, 'event');
+    useGameStore().addNotification('爆弹冲击：战斗+3强度，声望-2', 'warning');
+  },
 };
