@@ -1,0 +1,66 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 5,
+    "birth_year": 2000,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5d/65/61404_crt_sb0sS.jpg?r=1573898562",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5d/65/61404_crt_sb0sS.jpg?r=1573898562",
+        "large": "https://lain.bgm.tv/pic/crt/l/5d/65/61404_crt_sb0sS.jpg?r=1573898562",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5d/65/61404_crt_sb0sS.jpg?r=1573898562"
+    },
+    "summary": "五つ子の長女。面倒見のいいお姉さんタイプの性格だが、家では面倒臭がりで部屋の掃除が苦手というズボラな一面も。女優業をしており、絶賛売り出し中。五つ子の中で最もモテる。\r\n\r\n代表颜色为黄色，喜欢的食物是咸鱼，讨厌的食物是香菇，喜欢的饮料是星冰乐，喜欢的动物是河马，喜欢的电视节目类型是戏剧，擅长学习科目为数学，每日的惯例为慢跑。喜欢有海外名人出演的电影。喜欢的地点是床。喜欢阅读小说",
+    "name": "中野一花",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "中野一花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "中野 一花"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なかの いちか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nakano Ichika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2000-05-05"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "体重",
+            "value": "五つ子全員で250kg"
+        }
+    ],
+    "stat": {
+        "comments": 35,
+        "collects": 155
+    },
+    "id": 61404,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        256114,
+        282000
+    ]
+}

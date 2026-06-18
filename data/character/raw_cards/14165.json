@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/ca/14165_crt_41ma7.jpg?r=1678852114",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a5/ca/14165_crt_41ma7.jpg?r=1678852114",
+        "large": "https://lain.bgm.tv/pic/crt/l/a5/ca/14165_crt_41ma7.jpg?r=1678852114",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/ca/14165_crt_41ma7.jpg?r=1678852114"
+    },
+    "summary": "雷真所持有的人偶。为当代名匠花柳斋得意之作<雪月花>三部作品之一的<月>之人偶，外型为黑发少女，拥有令人讶异的精致容貌。\r\n对于雷真十分依赖，有着超出主人以上的感情，经常醋劲大发，也有着略为色气的一面，只要有关雷真的话题就会特别敏感，也很容易暴走。",
+    "name": "夜々",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "夜夜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ヤヤ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yaya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 61,
+        "collects": 334
+    },
+    "id": 14165,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        61962
+    ]
+}

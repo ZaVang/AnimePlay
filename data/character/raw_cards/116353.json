@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/b7/116353_crt_ZgHg2.jpg?r=1674898296",
+        "grid": "https://lain.bgm.tv/pic/crt/g/39/b7/116353_crt_ZgHg2.jpg?r=1674898296",
+        "large": "https://lain.bgm.tv/pic/crt/l/39/b7/116353_crt_ZgHg2.jpg?r=1674898296",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/b7/116353_crt_ZgHg2.jpg?r=1674898296"
+    },
+    "summary": "Lucyna Kushinada, more commonly known as just Lucy, is a netrunner and the deuteragonist of Cyberpunk: Edgerunners.",
+    "name": "Lucy",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "露西"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Lucyna Kushinada"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ルーシー"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://cyberpunk.fandom.com/wiki/Lucyna_Kushinada"
+        }
+    ],
+    "stat": {
+        "comments": 235,
+        "collects": 1050
+    },
+    "id": 116353,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        309311
+    ]
+}

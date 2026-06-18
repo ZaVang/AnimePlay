@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/95/8328_crt_vqp0K.jpg?r=1584811397",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bc/95/8328_crt_vqp0K.jpg?r=1584811397",
+        "large": "https://lain.bgm.tv/pic/crt/l/bc/95/8328_crt_vqp0K.jpg?r=1584811397",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/95/8328_crt_vqp0K.jpg?r=1584811397"
+    },
+    "summary": "不知为何跟着直太的女高中生。17歳。跟直太的哥哥タスク在交往，但是タスク因留学而有了新恋人，所以实际上是失恋了。因此而自暴自弃，因为性格上的转变而有孤独的一面。有吸烟。",
+    "name": "サメジマ・マミ美",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鲛岛真见美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "サメジマ・マミ美"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Samejima Mamimi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 28,
+        "collects": 162
+    },
+    "id": 8328,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        822
+    ]
+}

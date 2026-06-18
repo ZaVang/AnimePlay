@@ -1,0 +1,65 @@
+{
+    "birth_mon": 1,
+    "gender": "male",
+    "birth_day": 5,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a8/7c/15936_crt_4AzA8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a8/7c/15936_crt_4AzA8.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/a8/7c/15936_crt_4AzA8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a8/7c/15936_crt_4AzA8.jpg"
+    },
+    "summary": "",
+    "name": "夜刀神狗朗",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "夜刀神狗朗"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "夜刀神 狗朗"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やとがみ くろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yatogami Kuroh"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1月5日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "178cm"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 92
+    },
+    "id": 15936,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        38069
+    ]
+}

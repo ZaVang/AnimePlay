@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/39/35609_crt_I4WjI.jpg?r=1607415730",
+        "grid": "https://lain.bgm.tv/pic/crt/g/52/39/35609_crt_I4WjI.jpg?r=1607415730",
+        "large": "https://lain.bgm.tv/pic/crt/l/52/39/35609_crt_I4WjI.jpg?r=1607415730",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/39/35609_crt_I4WjI.jpg?r=1607415730"
+    },
+    "summary": "エミリアと共に行動している精霊。灰色の体毛、まん丸の瞳にピンク色の鼻をした、手のひらに乗るサイズの二足歩行の小猫の姿をしている。",
+    "name": "パック",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "帕克"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "PACK"
+                },
+                {
+                    "k": "日文名",
+                    "v": "パック"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Pakku"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 46,
+        "collects": 90
+    },
+    "id": 35609,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        225462
+    ]
+}

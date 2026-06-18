@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/59/39616_crt_kPex5.jpg?r=1458401540",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bb/59/39616_crt_kPex5.jpg?r=1458401540",
+        "large": "https://lain.bgm.tv/pic/crt/l/bb/59/39616_crt_kPex5.jpg?r=1458401540",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/59/39616_crt_kPex5.jpg?r=1458401540"
+    },
+    "summary": "17岁，成明高等学校2年级生。自我矛盾型自称救世主。\r\n\r\n住所：吉祥寺\r\nHN：ニート神\r\n性格：\r\n虽然头发乱糟糟但还是蛮帅气的OTAKU男子。\r\n「超常科学KIRIKIRI婆娑罗」的管理人，梦想以广告联盟型博客一获千金。",
+    "name": "我聞悠太",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "我闻悠太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "我聞 悠太"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "がもん ゆうた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Gamon Yuuta"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ガモタン"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "体重",
+            "value": "56kg"
+        }
+    ],
+    "stat": {
+        "comments": 24,
+        "collects": 22
+    },
+    "id": 39616,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        203861
+    ]
+}

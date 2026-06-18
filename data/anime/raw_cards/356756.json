@@ -1,0 +1,423 @@
+{
+    "date": "2022-04-05",
+    "platform": "TV",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/93/98/356756_ro03P.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/93/98/356756_ro03P.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/93/98/356756_ro03P.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/93/98/356756_ro03P.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/93/98/356756_ro03P.jpg"
+    },
+    "summary": "　　五丈原之战中病死的诸葛孔明，以年轻之姿转生到正在举办万圣节游行的现代日本东京都涉谷，并与创作歌手月见英子相遇。于是，为了帮助英子实现她的梦想，孔明发挥他的军事才能，以军师身份在音乐界活跃。",
+    "name": "パリピ孔明",
+    "name_cn": "派对浪客诸葛孔明",
+    "tags": [
+        {
+            "name": "P.A.WORKS",
+            "count": 2598,
+            "total_cont": 0
+        },
+        {
+            "name": "音乐",
+            "count": 2395,
+            "total_cont": 0
+        },
+        {
+            "name": "搞笑",
+            "count": 2135,
+            "total_cont": 0
+        },
+        {
+            "name": "2022年4月",
+            "count": 1850,
+            "total_cont": 0
+        },
+        {
+            "name": "漫画改",
+            "count": 1695,
+            "total_cont": 0
+        },
+        {
+            "name": "穿越",
+            "count": 1586,
+            "total_cont": 0
+        },
+        {
+            "name": "TV",
+            "count": 1239,
+            "total_cont": 0
+        },
+        {
+            "name": "偶像",
+            "count": 1186,
+            "total_cont": 0
+        },
+        {
+            "name": "2022",
+            "count": 884,
+            "total_cont": 0
+        },
+        {
+            "name": "漫改",
+            "count": 811,
+            "total_cont": 0
+        },
+        {
+            "name": "三国",
+            "count": 670,
+            "total_cont": 0
+        },
+        {
+            "name": "本渡楓",
+            "count": 361,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 135,
+            "total_cont": 0
+        },
+        {
+            "name": "本間修",
+            "count": 128,
+            "total_cont": 0
+        },
+        {
+            "name": "置鮎龍太郎",
+            "count": 99,
+            "total_cont": 0
+        },
+        {
+            "name": "本间修",
+            "count": 80,
+            "total_cont": 0
+        },
+        {
+            "name": "励志",
+            "count": 41,
+            "total_cont": 0
+        },
+        {
+            "name": "日常",
+            "count": 41,
+            "total_cont": 0
+        },
+        {
+            "name": "2022年",
+            "count": 36,
+            "total_cont": 0
+        },
+        {
+            "name": "诸葛亮",
+            "count": 25,
+            "total_cont": 0
+        },
+        {
+            "name": "奇幻",
+            "count": 21,
+            "total_cont": 0
+        },
+        {
+            "name": "派对浪客诸葛孔明",
+            "count": 21,
+            "total_cont": 0
+        },
+        {
+            "name": "96猫",
+            "count": 20,
+            "total_cont": 0
+        },
+        {
+            "name": "逆穿越",
+            "count": 16,
+            "total_cont": 0
+        },
+        {
+            "name": "季番",
+            "count": 14,
+            "total_cont": 0
+        },
+        {
+            "name": "热血",
+            "count": 14,
+            "total_cont": 0
+        },
+        {
+            "name": "米内山陽子",
+            "count": 12,
+            "total_cont": 0
+        },
+        {
+            "name": "日本动画",
+            "count": 12,
+            "total_cont": 0
+        },
+        {
+            "name": "历史",
+            "count": 11,
+            "total_cont": 0
+        },
+        {
+            "name": "TVA",
+            "count": 9,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "派对浪客诸葛孔明"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Paripi Koumei"
+                },
+                {
+                    "v": "Ya Boy Kongming!"
+                },
+                {
+                    "v": "派对咖孔明"
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2022年4月5日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期二"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://paripikoumei-anime.com"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX"
+        },
+        {
+            "key": "其他电视台",
+            "value": "MBS / BS日テレ"
+        },
+        {
+            "key": "播放结束",
+            "value": "2022年6月21日"
+        },
+        {
+            "key": "导演",
+            "value": "本間修"
+        },
+        {
+            "key": "音乐",
+            "value": "彦田元気（DJ Genki）（Hifumi,inc.）"
+        },
+        {
+            "key": "Copyright",
+            "value": "© 四葉夕卜・小川亮・講談社／「パリピ孔明」製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "四葉夕卜・小川亮（講談社「ヤングマガジン」連載）"
+        },
+        {
+            "key": "人物设定",
+            "value": "関口可奈味"
+        },
+        {
+            "key": "道具设计",
+            "value": "宮岡真弓、牧野博美"
+        },
+        {
+            "key": "摄影监督",
+            "value": "富田喜允"
+        },
+        {
+            "key": "剪辑",
+            "value": "高橋歩"
+        },
+        {
+            "key": "特效",
+            "value": "村上正博"
+        },
+        {
+            "key": "製作",
+            "value": "「パリピ孔明」製作委員会（DMM.com[DMM pictures]、毎日放送、avex pictures、講談社、出品人：町隆幸、丸山博雄、大山良、高見洋平"
+        },
+        {
+            "key": "企画",
+            "value": "鶴田直一、中野伸二、勝股英夫、松本智"
+        },
+        {
+            "key": "制片人",
+            "value": "藤野麻耶、青井宏之、松村一人、伊藤洋平"
+        },
+        {
+            "key": "动画制片人",
+            "value": "辻充仁、山本輝"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "QUEENDOM / EIKO starring 96猫、诸葛孔明(CV：置鮎龍太郎)、KABE太人(CV：千葉翔也)、久遠七海 starring Lezel"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "Tarcsi Zoltan、RUCCA(日本语词) / hiroko、mitsuyuki miyake"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "Tarcsi Zoltan / mitsuyuki miyake、日比野元気、Shifo"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "M.O.R(Eurobeat Union) / 彦田元気(DJ Genki)"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "10GAUGE / 本間修"
+        },
+        {
+            "key": "OP・ED 演出",
+            "value": "中西基樹 / 本間修"
+        },
+        {
+            "key": "网络配信",
+            "value": "2022年3月31日 - 2022年6月16日（Abema）"
+        },
+        {
+            "key": "IMDb_id",
+            "value": "tt15978212"
+        }
+    ],
+    "rating": {
+        "rank": 2645,
+        "total": 11301,
+        "count": {
+            "1": 26,
+            "2": 6,
+            "3": 29,
+            "4": 100,
+            "5": 491,
+            "6": 2259,
+            "7": 5254,
+            "8": 2715,
+            "9": 261,
+            "10": 160
+        },
+        "score": 7
+    },
+    "total_episodes": 12,
+    "collection": {
+        "on_hold": 1426,
+        "dropped": 1071,
+        "wish": 1911,
+        "collect": 16701,
+        "doing": 1750
+    },
+    "id": 356756,
+    "eps": 12,
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "音乐",
+        "穿越"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        104598,
+        104599
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/5d/104598_crt_MzunK.jpg?r=1649312832",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ad/5d/104598_crt_MzunK.jpg?r=1649312832",
+                "large": "https://lain.bgm.tv/pic/crt/l/ad/5d/104598_crt_MzunK.jpg?r=1649312832",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/5d/104598_crt_MzunK.jpg?r=1649312832"
+            },
+            "name": "月見英子",
+            "summary": "渋谷のCLUB「BBラウンジ」でバイトをしながら歌手を目指す。\r\nオーディションに落ち続けLIVEでも誰にも歌を聴いてもらえず歌手の夢を諦めかけていた時、諸葛孔明と出会う。軍師となった孔明に導かれて才能を開花させていく。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/90/8817_prsn_ApFcl.jpg?r=1700718194",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2b/90/8817_prsn_ApFcl.jpg?r=1700718194",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2b/90/8817_prsn_ApFcl.jpg?r=1700718194",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/90/8817_prsn_ApFcl.jpg?r=1700718194"
+                    },
+                    "name": "96猫",
+                    "short_summary": "ニコニコ動画には歌い手としてデビュー\r\n\r\n◆ 名前の由来・・・\r\n96猫は、主が黒色が好きで、猫が好きで、黒猫が好きだから。\r\nナツメは、母親が名付けた。アニメ『学園アリス』の日向棗（CV.朴璐美）から。日向は、闇の世界では“黒ネコ”と呼ばれている。\r\n愛称は、なっちゃん。\r\n\r\n◆ 歌に於いても、生放送に於いてもフリーダムなのが特徴。\r\n高い声や低い声を様々と使い分けるが、性別は女性である。\r\n元々、歌い手名義「96猫」と生放送主名義「響希ナツメ」と使い分けていたが、2010年7月25日以降、「96猫」に名義を統一した。\r\n2012年6月5日、ニコニコミュニティレベル256達成。カンストは全ニコニコミュニティで初。\r\n同年8月8日、ファーストソロアルバム『memoReal』を発売。オリコンデイリーランキングで初登場6位を達成。\r\n同年10月13日からアニメ「探検ドリランド」の新EDテーマ曲として、WhiteFlame(黒うさP×96猫×一斗まる)の楽曲「流れ星」が",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 8817,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "large": "https://lain.bgm.tv/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617"
+                    },
+                    "name": "本渡楓",
+                    "short_summary": "日本的女性声优，爱知县名古屋市出身。I'm Enterprise所属。\r\n高中二年级进入日本播音演技研究所名古屋校就读，2015年4月进入I'm Enterprise。\r\n高中时代加入戏剧社，但因为身高矮小无法演出护士，而改以不会被外貌影响的声优为目标。\r\n交情好的声优有目前在《见习神仙 秘密的心灵》中共同演出的潘惠美、事务所的前辈小泽亚李与长绳麻理亚。\r\n对于演出婴儿的声音很有自信。\r\n2019年，获得第13回声优奖的新人女优赏。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 19560,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 104598
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/c4/104599_crt_ss622.jpg?r=1650760434",
+                "grid": "https://lain.bgm.tv/pic/crt/g/29/c4/104599_crt_ss622.jpg?r=1650760434",
+                "large": "https://lain.bgm.tv/pic/crt/l/29/c4/104599_crt_ss622.jpg?r=1650760434",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/c4/104599_crt_ss622.jpg?r=1650760434"
+            },
+            "name": "諸葛孔明",
+            "summary": "三国時代、当代きっての天才軍師。\r\n西暦234年、五丈原の戦いで死期を迎えたその瞬間、なぜか渋谷に転生してしまう。\r\n転生した渋谷で歌手を目指す「月見英子」の歌声に心奪われ、英子の軍師となり二度目の人生が幕を明ける。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/cf/3976_prsn_4eb60.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c5/cf/3976_prsn_4eb60.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/c5/cf/3976_prsn_4eb60.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/cf/3976_prsn_4eb60.jpg"
+                    },
+                    "name": "置鮎龍太郎",
+                    "short_summary": "日本の男性声優、ナレーターである。青二プロダクション所属。血液型はO型。\r\n\r\n妻は声優の前田愛。置鮎は再婚となる。前妻は声優の永澤菜教。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 3976,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 104599
+        }
+    ]
+}

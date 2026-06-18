@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/b2/102008_crt_7SkS4.jpg?r=1634981254",
+        "grid": "https://lain.bgm.tv/pic/crt/g/39/b2/102008_crt_7SkS4.jpg?r=1634981254",
+        "large": "https://lain.bgm.tv/pic/crt/l/39/b2/102008_crt_7SkS4.jpg?r=1634981254",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/b2/102008_crt_7SkS4.jpg?r=1634981254"
+    },
+    "summary": "32歳独身のおっさん。すらっとした高身長に端正な顔立ち、文武両道の才人で常に女性にモテてきた。しかしそれ故に女性の醜い部分が見えてしまいすっかり女性不信に。親友である橘だけが心の拠り所。ある合コンの帰り道に橘を介抱した際、謎の女神により異世界に飛ばされてしまう。",
+    "name": "神宮寺司",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "神宫寺司"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "じんぐうじ つかさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Jinguuji Tsukasa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 12
+    },
+    "id": 102008,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        336458
+    ]
+}

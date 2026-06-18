@@ -1,0 +1,67 @@
+{
+    "birth_mon": 10,
+    "gender": "male",
+    "birth_day": 20,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/88/53768_crt_31O7O.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/56/88/53768_crt_31O7O.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/56/88/53768_crt_31O7O.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/88/53768_crt_31O7O.jpg"
+    },
+    "summary": "本作的主人公。虽然帅气程度在男生中排第五，但不善与人交流，一直试图交更多的朋友。D班真正的王牌与幕后，以堀北铃音作为掩护隐藏了自己的实力，虽然经常暗中帮助堀北，但也会为了自己的目的让她吃苦头。为了胜利不择手段，会利用可以利用的一切资源，不管是敌方或是友方。",
+    "name": "綾小路清隆",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "绫小路清隆"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "綾小路 清隆"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あやのこうじ きよたか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ayanokouji Kiyotaka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "10月20日"
+        },
+        {
+            "key": "身高",
+            "value": "176cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://youkosozitsuryoku.com/character/"
+        }
+    ],
+    "stat": {
+        "comments": 80,
+        "collects": 179
+    },
+    "id": 53768,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        214272,
+        371546,
+        373266
+    ]
+}

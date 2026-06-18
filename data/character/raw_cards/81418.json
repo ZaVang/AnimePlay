@@ -1,0 +1,76 @@
+{
+    "birth_mon": 8,
+    "gender": "male",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/3f/81418_crt_s11h3.jpg?r=1599462534",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bb/3f/81418_crt_s11h3.jpg?r=1599462534",
+        "large": "https://lain.bgm.tv/pic/crt/l/bb/3f/81418_crt_s11h3.jpg?r=1599462534",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/3f/81418_crt_s11h3.jpg?r=1599462534"
+    },
+    "summary": "天才的なドライビングセンスを持ち、武器でもなんでも取り扱う。幼い頃から大人にいろんなものを運ばされてきた。自分の仕事に絶対的な自信を持つが、ややワーカホリック気味。\r\n口数は少ないが的確なひと言を放つ。",
+    "name": "運び屋",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "搬运工"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "8月23日"
+        },
+        {
+            "key": "年龄",
+            "value": "27岁"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "185cm"
+        },
+        {
+            "key": "体重",
+            "value": "75kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B96·W80·H95"
+        },
+        {
+            "key": "癖",
+            "value": "舌打ち"
+        },
+        {
+            "key": "好きな食べ物",
+            "value": "たこ焼き"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://www.akudama-drive.com/character/hakobiya.html"
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 6
+    },
+    "id": 81418,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        302076
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/fd/65349_crt_Sq6Qa.jpg?r=1533818252",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c4/fd/65349_crt_Sq6Qa.jpg?r=1533818252",
+        "large": "https://lain.bgm.tv/pic/crt/l/c4/fd/65349_crt_Sq6Qa.jpg?r=1533818252",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/fd/65349_crt_Sq6Qa.jpg?r=1533818252"
+    },
+    "summary": "盾の勇者。20歳のオタク大学生。『四聖武器書』を読んでいたところ、異世界に召喚される。絶大な防御力を誇るが、攻撃力はほとんどない。異世界で人間不信に陥ったことで、本来の穏やかさは消え、冷徹な人間に。",
+    "name": "岩谷尚文",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "岩谷尚文"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いわたに なおふみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Iwatani Naofumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 15,
+        "collects": 25
+    },
+    "id": 65349,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        217660
+    ]
+}

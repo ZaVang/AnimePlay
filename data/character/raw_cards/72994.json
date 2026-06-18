@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/77/72994_crt_Ba9ZW.jpg?r=1643242211",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5c/77/72994_crt_Ba9ZW.jpg?r=1643242211",
+        "large": "https://lain.bgm.tv/pic/crt/l/5c/77/72994_crt_Ba9ZW.jpg?r=1643242211",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/77/72994_crt_Ba9ZW.jpg?r=1643242211"
+    },
+    "summary": "ウェインの補佐官をつとめる少女で、幼い頃から気心の知れた仲。ウェインは彼女を『自分の心臓』と呼ぶほどに全幅の信頼を置いている。",
+    "name": "ニニム・ラーレイ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "妮妮姆·拉雷"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ニニム・ラーレイ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ninym Ralei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 34,
+        "collects": 191
+    },
+    "id": 72994,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        326868
+    ]
+}

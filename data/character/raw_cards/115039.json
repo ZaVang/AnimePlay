@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/32/115039_crt_C589V.jpg?r=1675666261",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5c/32/115039_crt_C589V.jpg?r=1675666261",
+        "large": "https://lain.bgm.tv/pic/crt/l/5c/32/115039_crt_C589V.jpg?r=1675666261",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/32/115039_crt_C589V.jpg?r=1675666261"
+    },
+    "summary": "メブキの街ギルド所属の狩人。20歳にして魔物討伐数一位の若きエース。しかし10代を訓練と仕事に費やしたため、女性との交際経験はゼロ。仕事を辞めて失われた青春を取り戻すために、後継者の育成を決意する。",
+    "name": "キクル・マダン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "基克尔·马丹"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Kikuru Madan"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 23,
+        "collects": 32
+    },
+    "id": 115039,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        373712
+    ]
+}

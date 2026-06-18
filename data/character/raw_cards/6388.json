@@ -1,0 +1,68 @@
+{
+    "id": 6388,
+    "name": "シルヴィア・ファン・ホッセン",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/80/5c/6388_crt_vNdVV.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/5c/6388_crt_vNdVV.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/5c/6388_crt_vNdVV.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/80/5c/6388_crt_vNdVV.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "希尔维娅·范·霍森"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "西尔维娅·范·霍森"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Silvia van Hossen"
+                },
+                {
+                    "k": "昵称",
+                    "v": "希尔维"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月15日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        },
+        {
+            "key": "BWH",
+            "value": "88/57/87"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 15,
+    "stat": {
+        "comments": 6,
+        "collects": 80
+    },
+    "anime_ids": [
+        1757
+    ]
+}

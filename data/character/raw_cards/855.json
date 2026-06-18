@@ -1,0 +1,77 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/c9/855_crt_Oyzoy.jpg?r=1630265513",
+        "grid": "https://lain.bgm.tv/pic/crt/g/da/c9/855_crt_Oyzoy.jpg?r=1630265513",
+        "large": "https://lain.bgm.tv/pic/crt/l/da/c9/855_crt_Oyzoy.jpg?r=1630265513",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/c9/855_crt_Oyzoy.jpg?r=1630265513"
+    },
+    "summary": "生存了八百年以上的吸血鬼，真祖的公主。\r\n \r\n《月姬》的故事开始时，Arcueid 来到远野志贵所住的城市，目的是消灭数百年来她不断追杀的一名吸血鬼。她在寻找目标时，偶然遇到了志贵；受退魔一族本能支配的志贵跟踪她回住处，以苏醒的杀人技巧和直死之魔眼瞬间将她分割成十七块。身为真祖的她虽然没死，却身受重创；本来想杀死志贵报仇，但在四周都是敌人及身体衰弱的情况下决定迫使志贵协助她。",
+    "name": "アルクェイド・ブリュンスタッド",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "爱尔奎特·布伦史坦德"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Arcueid Brunestud"
+                },
+                {
+                    "k": "中文名",
+                    "v": "真祖Arcueid"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月25日（自称）"
+        },
+        {
+            "key": "血型",
+            "value": "不明"
+        },
+        {
+            "key": "身高",
+            "value": "167cm"
+        },
+        {
+            "key": "体重",
+            "value": "52kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B88/W55/H85"
+        },
+        {
+            "key": "引用来源",
+            "value": "TYPE-MOON Wiki"
+        },
+        {
+            "key": "声优",
+            "value": "柚木凉香／生天目仁美"
+        }
+    ],
+    "stat": {
+        "comments": 97,
+        "collects": 594
+    },
+    "id": 855,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        18882
+    ]
+}

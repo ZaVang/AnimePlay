@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/7e/71337_crt_7Pcv2.jpg?r=1668454698",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5e/7e/71337_crt_7Pcv2.jpg?r=1668454698",
+        "large": "https://lain.bgm.tv/pic/crt/l/5e/7e/71337_crt_7Pcv2.jpg?r=1668454698",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/7e/71337_crt_7Pcv2.jpg?r=1668454698"
+    },
+    "summary": "电次的上司，内阁官房长官直属的恶魔猎人。性格捉摸不透，将下属称为“狗”，就算牺牲部下也无所谓，想杀她的人不在少数。\r\n\r\n公安対魔特異4課、\r\n内閣官房長官直属のデビルハンター。",
+    "name": "マキマ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "玛奇玛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "真紀真"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 211,
+        "collects": 641
+    },
+    "id": 71337,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        321885
+    ]
+}

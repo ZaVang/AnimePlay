@@ -1,0 +1,64 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/ec/22520_crt_Jz19b.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3d/ec/22520_crt_Jz19b.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/3d/ec/22520_crt_Jz19b.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/ec/22520_crt_Jz19b.jpg"
+    },
+    "summary": "和泉正宗的没有血缘关系的妹妹。因为一些原因过着基本上只有两人的同居生活。重度家里蹲，只要家里有其他人就不会从房间里出来。是以「エロマンガ先生」为笔名的插画家，喜欢画H的画",
+    "name": "和泉紗霧",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "和泉纱雾"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "エロマンガ先生"
+                },
+                {
+                    "k": "日文名",
+                    "v": "和泉 紗霧"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いずみ さぎり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Izumi Sagiri"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月10日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        }
+    ],
+    "stat": {
+        "comments": 89,
+        "collects": 682
+    },
+    "id": 22520,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        172498
+    ]
+}

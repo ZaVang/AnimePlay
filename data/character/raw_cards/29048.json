@@ -1,0 +1,125 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/ac/29048_crt_ZM4FW.jpg?r=1498989510",
+        "grid": "https://lain.bgm.tv/pic/crt/g/21/ac/29048_crt_ZM4FW.jpg?r=1498989510",
+        "large": "https://lain.bgm.tv/pic/crt/l/21/ac/29048_crt_ZM4FW.jpg?r=1498989510",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/ac/29048_crt_ZM4FW.jpg?r=1498989510"
+    },
+    "summary": "登场于Fate/Grand Order, 源于Fate/stay night最初设定的, 持有巨大盾牌的迷之少女。\r\n\r\nChaldea局的成员，玛修·基列莱特与Servant凭依融合的姿态。被称作Demi Servant。Demi Servant持有的特殊技能。能将凭依的英灵持有的技能仅仅一个继承下来，并升华为自我的流派。玛修的场合是“魔力防御”。与魔力放出同类型的技能，将魔力直接变换为防御力。如果是持有庞大魔力的英灵的话，那将会是连一个国家都能守护的神圣壁垒吧。玛修得知了凭依于自身的英灵的真名。那个骑士的名字叫加拉哈德。存在于亚瑟王传说中的圆桌骑士的一人。唯一一个入手了圣杯，随后返回了天堂的圣者。Chaldea能够用独自的方法成功完成英灵召唤，作为其基础的是作为加拉哈德召唤的触媒的“英雄们集结的场所”——也就是玛修所持有的，利用圆桌制成的盾牌。\r\n\r\n宝具简介『如今仍是遥远的理想之城』\r\n等级:B+++  种类:对恶宝具\r\nLord・Camelot\r\n英灵・加拉哈德持有的宝具。白亚之城卡美洛的中心，使用圆桌骑士们的圆桌为盾的究极的守护。强度根据使用者的精神程度，内心绝不屈服的话城壁绝对不会崩溃。 将之冠以Chaldea之名向来是由存在于玛修心底的祈愿，“守望人类的未来”而来吧。",
+    "name": "マシュ・キリエライト",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "玛修·基列莱特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "玛修·姬莉叶莱特"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Mash Kyrielight"
+                },
+                {
+                    "k": "昵称",
+                    "v": "盾娘"
+                },
+                {
+                    "k": "第二英文名",
+                    "v": "Matthew Kyrielight"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "体重",
+            "value": "46kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "游戏内"
+        },
+        {
+            "key": "画师",
+            "value": "武内崇"
+        },
+        {
+            "key": "职阶",
+            "value": "Shielder シールダー"
+        },
+        {
+            "key": "属性",
+            "value": "秩序·善"
+        },
+        {
+            "key": "筋力",
+            "value": "C"
+        },
+        {
+            "key": "耐久",
+            "value": "A"
+        },
+        {
+            "key": "敏捷",
+            "value": "D"
+        },
+        {
+            "key": "魔力",
+            "value": "B"
+        },
+        {
+            "key": "幸运",
+            "value": "C"
+        },
+        {
+            "key": "职阶技1",
+            "value": "对魔力A"
+        },
+        {
+            "key": "职阶技2",
+            "value": "骑乘A+"
+        },
+        {
+            "key": "固有技1",
+            "value": "荣光不败的雪花之壁"
+        },
+        {
+            "key": "固有技2",
+            "value": "时为朦胧的白亚之壁"
+        },
+        {
+            "key": "固有技3",
+            "value": "意为奋进的决断之盾"
+        },
+        {
+            "key": "宝具",
+            "value": "如今仍是遥远的理想之城"
+        }
+    ],
+    "stat": {
+        "comments": 97,
+        "collects": 290
+    },
+    "id": 29048,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        255526
+    ]
+}

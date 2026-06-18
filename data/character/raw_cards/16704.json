@@ -1,0 +1,74 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/16/09/16704_crt_EEaFu.jpg?r=1511248768",
+        "grid": "https://lain.bgm.tv/pic/crt/g/16/09/16704_crt_EEaFu.jpg?r=1511248768",
+        "large": "https://lain.bgm.tv/pic/crt/l/16/09/16704_crt_EEaFu.jpg?r=1511248768",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/16/09/16704_crt_EEaFu.jpg?r=1511248768"
+    },
+    "summary": "本作のヒロイン。金髪ロング。アメリカからの転校生。ギャング「ビーハイブ」のボスの娘で、アメリカ人の父と日本人の母のハーフ。ビーハイブと集英組との抗争を鎮めるため、一条楽と恋人を演じる事になってしまう。\r\n小さい頃に書いた日記帳に挟まっていた鍵を持っている。運動神経が抜群。勉強は、アメリカに住んでいたこともあり現代国語が苦手。しかし数学は得意で、楽よりも問題を早く解いた。料理は苦手。\r\n転入直後は自らの境遇もあり友人を作るのが苦手であった。しかしクラスメイト1人1人の特徴を記したノートを作成して、何とか話しかけるきっかけを作ろうとするいじらしい一面がある。このエピソードに関しては、楽も過去に同じ様なノートを作成していた経緯がある。その事を聞いてからは積極的になりクラスでも人気者になっていく。",
+    "name": "桐崎千棘",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "桐崎千棘"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Chitoge Kirisaki"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きりさき ちとげ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kirisaki Chitoge"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月7日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "160cm→162cm"
+        },
+        {
+            "key": "体重",
+            "value": "46kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        }
+    ],
+    "stat": {
+        "comments": 92,
+        "collects": 560
+    },
+    "id": 16704,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        74628,
+        114758
+    ]
+}

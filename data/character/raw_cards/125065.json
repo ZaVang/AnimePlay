@@ -1,0 +1,44 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/f8/125065_crt_HHzQ4.jpg?r=1676270237",
+        "grid": "https://lain.bgm.tv/pic/crt/g/69/f8/125065_crt_HHzQ4.jpg?r=1676270237",
+        "large": "https://lain.bgm.tv/pic/crt/l/69/f8/125065_crt_HHzQ4.jpg?r=1676270237",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/f8/125065_crt_HHzQ4.jpg?r=1676270237"
+    },
+    "summary": "前世での征人の教団の神様。異世界転生する際に征人が唯一持ってくることができた勾玉から出現した。見た目は幼いが、れっきとした神様……らしい？",
+    "name": "ミタマ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "御灵"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://kamikatsu-anime.jp/"
+        }
+    ],
+    "stat": {
+        "comments": 37,
+        "collects": 122
+    },
+    "id": 125065,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        377607
+    ]
+}

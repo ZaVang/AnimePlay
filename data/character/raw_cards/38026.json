@@ -1,0 +1,73 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/d9/38026_crt_WcheP.jpg?r=1508652248",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fa/d9/38026_crt_WcheP.jpg?r=1508652248",
+        "large": "https://lain.bgm.tv/pic/crt/l/fa/d9/38026_crt_WcheP.jpg?r=1508652248",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/d9/38026_crt_WcheP.jpg?r=1508652248"
+    },
+    "summary": "爱慕伊月的后辈作家。高中时期读了羽岛伊月的小说后，才成为小说家。出道瞬间便成为旗下第一的人气作家，不世出的天才。行动原理是100%对伊月的爱。",
+    "name": "可児那由多",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "可儿那由多"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かに なゆた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kani Nayuta"
+                },
+                {
+                    "k": "昵称",
+                    "v": "螃蟹公"
+                },
+                {
+                    "k": "本名",
+                    "v": "本田和子"
+                },
+                {
+                    "k": "本名·纯假名",
+                    "v": "ほんでんかずこ"
+                },
+                {
+                    "k": "婚后名",
+                    "v": "羽岛和子"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月10日"
+        },
+        {
+            "key": "BWH",
+            "value": "88/60/83"
+        }
+    ],
+    "stat": {
+        "comments": 57,
+        "collects": 276
+    },
+    "id": 38026,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        213076
+    ]
+}

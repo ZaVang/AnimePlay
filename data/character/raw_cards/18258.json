@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/89/a1/18258_crt_g88q1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/89/a1/18258_crt_g88q1.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/89/a1/18258_crt_g88q1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/89/a1/18258_crt_g88q1.jpg"
+    },
+    "summary": "問題児その３\r\n動物と話すことができる無口な少女。ギフトネームは\"生命の目録（ゲノム・ツリー）\"と\"ノーフォーマー\"。\"生命の目録（ゲノム・ツリー）\"は耀の父親が作ったらしく、謎に包まれている。\r\n来到箱庭的问题儿童之一。14岁。持有恩赐为‘生命目录（Genome Tree）、‘No Former，恩赐卡是祖母绿色。",
+    "name": "春日部耀",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "春日部耀"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "春日部 耀"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かすかべ よう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kasukabe You"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.sneakerbunko.jp/series/mondaiji/index.php"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 56
+    },
+    "id": 18258,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        52170
+    ]
+}

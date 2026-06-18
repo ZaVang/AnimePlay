@@ -1,0 +1,53 @@
+{
+    "birth_mon": 5,
+    "gender": "male",
+    "birth_day": 21,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/2a/149128_crt_3aB4F.jpg?r=1703419984",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e6/2a/149128_crt_3aB4F.jpg?r=1703419984",
+        "large": "https://lain.bgm.tv/pic/crt/l/e6/2a/149128_crt_3aB4F.jpg?r=1703419984",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/2a/149128_crt_3aB4F.jpg?r=1703419984"
+    },
+    "summary": "29歳、独身。岐阜県岐阜市で貧乏探偵事務所を営んでいる地味な男。あるとき異世界から転移してきたサラと出会い、なりゆきで彼女の面倒をみることになる。探偵としてのスキルは確かで、かつては大手探偵事務所のエースとして活躍していた。",
+    "name": "鏑矢惣助",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "镝矢惣助"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "鏑矢 惣助"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月21日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://www.tbs.co.jp/anime/hensara/character/chara1.html"
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 14
+    },
+    "id": 149128,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        444403
+    ]
+}

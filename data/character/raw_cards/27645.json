@@ -1,0 +1,54 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/e8/27645_crt_A4i5I.jpg?r=1555673020",
+        "grid": "https://lain.bgm.tv/pic/crt/g/86/e8/27645_crt_A4i5I.jpg?r=1555673020",
+        "large": "https://lain.bgm.tv/pic/crt/l/86/e8/27645_crt_A4i5I.jpg?r=1555673020",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/e8/27645_crt_A4i5I.jpg?r=1555673020"
+    },
+    "summary": "性格胆小而且还没什么钱，所以掉到了家畜等级的梦子的同班同学。\r\n带着新生梦子介绍学校的此处彼处的同时，就这样见证了一个个赌局…。",
+    "name": "鈴井涼太",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "铃井凉太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "鈴井 涼太"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "すずい りょうた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Suzui Ryota"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 30,
+        "collects": 9
+    },
+    "id": 27645,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        209408,
+        234778
+    ]
+}

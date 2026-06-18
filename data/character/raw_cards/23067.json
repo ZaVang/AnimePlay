@@ -1,0 +1,73 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/42/23067_crt_AolJL.jpg?r=1452102300",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ab/42/23067_crt_AolJL.jpg?r=1452102300",
+        "large": "https://lain.bgm.tv/pic/crt/l/ab/42/23067_crt_AolJL.jpg?r=1452102300",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/42/23067_crt_AolJL.jpg?r=1452102300"
+    },
+    "summary": "4月进入弗塞亚学院的插班生。\r\n乌黑亮丽的长发随风飘动，平时使用敬语交谈，是有教养人家的大小姐。行为举止带有大小姐的特征，十分优雅，也通晓合气道。\r\n不习惯与异性交往，有时会用合气道把晴彦撂倒。\r\n最喜欢吃东西，甚至能吸食怪灵，通吃“怪灵吞噬者”。\r\n但是不想吃的东西并不会吃。",
+    "name": "和泉玲奈",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "和泉玲奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "和泉 玲奈"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いずみ れいな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Izumi Reina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月3日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁"
+        },
+        {
+            "key": "所属",
+            "value": "弗塞亚学院高等部1年B组"
+        }
+    ],
+    "stat": {
+        "comments": 40,
+        "collects": 113
+    },
+    "id": 23067,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        94040
+    ]
+}

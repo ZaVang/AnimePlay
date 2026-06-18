@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/21/13177_crt_6QlXD.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/05/21/13177_crt_6QlXD.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/05/21/13177_crt_6QlXD.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/21/13177_crt_6QlXD.jpg"
+    },
+    "summary": "率领鼓吹日本独立的反抗组织“葬仪社”的年轻头领。和集一样17岁，但已是十分有势力有强大魅力的少年。",
+    "name": "恙神涯",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "恙神涯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "つつがみ がい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tsutsugami Gai"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        }
+    ],
+    "stat": {
+        "comments": 37,
+        "collects": 67
+    },
+    "id": 13177,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        18635
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/57/f1/47727_crt_sWW3H.jpg?r=1548729813",
+        "grid": "https://lain.bgm.tv/pic/crt/g/57/f1/47727_crt_sWW3H.jpg?r=1548729813",
+        "large": "https://lain.bgm.tv/pic/crt/l/57/f1/47727_crt_sWW3H.jpg?r=1548729813",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/57/f1/47727_crt_sWW3H.jpg?r=1548729813"
+    },
+    "summary": "与哥布林杀手组成搭档的人类女主角。\r\n过去，在山洞里被哥布林围困时得到了哥布林杀手的救助。\r\n心性温柔的少女，协助着鲁莽行事的哥布林杀手。",
+    "name": "女神官",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "女神官"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Priestess"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 58,
+        "collects": 261
+    },
+    "id": 47727,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        238006
+    ]
+}

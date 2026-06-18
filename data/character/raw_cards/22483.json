@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9d/61/22483_crt_XVV4s.jpg?r=1421288173",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9d/61/22483_crt_XVV4s.jpg?r=1421288173",
+        "large": "https://lain.bgm.tv/pic/crt/l/9d/61/22483_crt_XVV4s.jpg?r=1421288173",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9d/61/22483_crt_XVV4s.jpg?r=1421288173"
+    },
+    "summary": "",
+    "name": "畑耕作",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "畑耕作"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "はた　こうさく"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "hata kousaku"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 3
+    },
+    "id": 22483,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        68756
+    ]
+}

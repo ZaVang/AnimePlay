@@ -1,0 +1,71 @@
+{
+    "id": 121900,
+    "name": "画眉丸",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/cc/68/121900_crt_b8rB0.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/68/121900_crt_b8rB0.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/68/121900_crt_b8rB0.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cc/68/121900_crt_b8rB0.jpg"
+    },
+    "summary": "\"がらんの画眉丸\"として畏れられていた元石隠れ衆最強の忍。死罪人として囚われたが、愛する妻の為に仙薬を探すことに。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "画眉丸"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "がらんの画眉丸"
+                },
+                {
+                    "v": "伽蓝的画眉丸"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "がびまる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Gabimaru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1月8日"
+        },
+        {
+            "key": "身高",
+            "value": "150cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://www.jigokuraku.com/character/#shi"
+        },
+        {
+            "key": "监督官",
+            "value": "山田浅卫门佐切"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 8,
+    "stat": {
+        "comments": 9,
+        "collects": 40
+    },
+    "anime_ids": [
+        325808,
+        443446
+    ]
+}

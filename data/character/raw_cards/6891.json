@@ -1,0 +1,52 @@
+{
+    "id": 6891,
+    "name": "ユパ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fc/4b/6891_crt_fZ73A.jpg?r=1452023130",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/4b/6891_crt_fZ73A.jpg?r=1452023130",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/4b/6891_crt_fZ73A.jpg?r=1452023130",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fc/4b/6891_crt_fZ73A.jpg?r=1452023130"
+    },
+    "summary": "动画版：腐海第一剑客，娜乌西卡的剑术师傅。见识广博，富正义感。在娜乌西卡失去冷静或陷入危机时总是给予帮助。 \r\n　　原作漫画：全名“犹巴．米拉尔达”（ユパ ミラルダ）的腐海第一剑客及娜乌西卡导师，一生为找出腐海的秘密而四处旅行。在某次前往腐海调查事情时，意外结识了培吉特市王子阿斯贝鲁及土鬼玛尼族少女桂嘉，之后三人一同迈向解开整个动乱事件背后谜团的旅行。于“大海啸”事件后为了平息想刺杀库夏娜复仇的土鬼人民怒气，以身作盾保护库夏娜伤重身亡。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "犹巴·米拉尔达"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ユパ ミラルダ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yupa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 7
+    },
+    "anime_ids": [
+        295
+    ]
+}

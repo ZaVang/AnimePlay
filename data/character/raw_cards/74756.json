@@ -1,0 +1,60 @@
+{
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 20,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/d0/74756_crt_NEIUI.jpg?r=1588527421",
+        "grid": "https://lain.bgm.tv/pic/crt/g/27/d0/74756_crt_NEIUI.jpg?r=1588527421",
+        "large": "https://lain.bgm.tv/pic/crt/l/27/d0/74756_crt_NEIUI.jpg?r=1588527421",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/d0/74756_crt_NEIUI.jpg?r=1588527421"
+    },
+    "summary": "魔王に捕らわれた人間の姫。人質生活が暇なので魔王城で安眠する方法を日々模索中。安眠のためなら手段は選ばない。",
+    "name": "スヤリス姫",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "栖夜公主"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "欧罗拉·栖夜·莉丝·凯米恩"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "奥罗拉·栖夜·莉丝·凯明"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Princess Syalis"
+                },
+                {
+                    "k": "日文名",
+                    "v": "オーロラ・栖夜・リース・カイミーン"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月20日"
+        }
+    ],
+    "stat": {
+        "comments": 20,
+        "collects": 123
+    },
+    "id": 74756,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        290426
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/bc/54535_crt_q6XkX.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dd/bc/54535_crt_q6XkX.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/dd/bc/54535_crt_q6XkX.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/bc/54535_crt_q6XkX.jpg"
+    },
+    "summary": "家出少女の高校生。猫を捨てられたと勘違いして、父親を口論の末に刃物で刺してしまい、そのまま家を飛び出しギン達と生活することになる。ミユキの父は、肉親と離れ離れになった行方不明の赤ん坊（清子）捜索の担当者だった。長いホームレス生活のために、太っていた家出前より痩せた。",
+    "name": "ミユキ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "美由纪"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 14
+    },
+    "id": 54535,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        842
+    ]
+}

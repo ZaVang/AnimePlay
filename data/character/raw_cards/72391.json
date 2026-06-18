@@ -1,0 +1,61 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 17,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/a4/72391_crt_rzo6B.jpg?r=1571534471",
+        "grid": "https://lain.bgm.tv/pic/crt/g/58/a4/72391_crt_rzo6B.jpg?r=1571534471",
+        "large": "https://lain.bgm.tv/pic/crt/l/58/a4/72391_crt_rzo6B.jpg?r=1571534471",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/a4/72391_crt_rzo6B.jpg?r=1571534471"
+    },
+    "summary": "高原的魔女。过去是极为普通的社畜OL(27岁)，但却因过劳而死……。在女神的安排下，成为有着17岁面貌的不老不死魔女并转生到了异世界。在某天发现她打倒了太多史莱姆而达到Lv99，因此引发了大骚动。\r\n\r\n高原の魔女。ごく普通の社畜OL（27歳）だったが過労死……。女神の計らいで17歳の容姿を持つ不老不死の魔女として異世界に転生する。ある時、スライムを倒しすぎてレベル99になっていることが発覚。大騒ぎになってしまう。",
+    "name": "アズサ・アイザワ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "亚梓莎·埃札瓦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "相泽梓"
+                },
+                {
+                    "k": "日文名",
+                    "v": "相沢梓"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あいざわ あずさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aizawa Azusa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月17日"
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 105
+    },
+    "id": 72391,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        292969
+    ]
+}

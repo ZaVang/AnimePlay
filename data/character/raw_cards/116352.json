@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/ac/116352_crt_K2TE2.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ba/ac/116352_crt_K2TE2.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ba/ac/116352_crt_K2TE2.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/ac/116352_crt_K2TE2.jpg"
+    },
+    "summary": "",
+    "name": "David Martinez",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "大卫･马丁内斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "デイビッド･マルティネス"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 140,
+        "collects": 212
+    },
+    "id": 116352,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        309311
+    ]
+}

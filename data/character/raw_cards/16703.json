@@ -1,0 +1,74 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/f1/16703_crt_z3L5y.jpg?r=1511248926",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e9/f1/16703_crt_z3L5y.jpg?r=1511248926",
+        "large": "https://lain.bgm.tv/pic/crt/l/e9/f1/16703_crt_z3L5y.jpg?r=1511248926",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/f1/16703_crt_z3L5y.jpg?r=1511248926"
+    },
+    "summary": "本作のヒロイン。楽と千棘のクラスメイト。黒髪で、アシンメトリーな髪型も特徴である。実家は和菓子屋「おのでら」を経営している。\r\n中学の頃から楽に好意を寄せているが恋愛に対しては奥手で、言い出せないままでいる。実は両想いの上、舞子集や宮本るり等の互いの親しい友人から見てもそれがまるわかりなのだが互いの性格のせいで関係が発展しないままでいる。鍵を持っていて、小さい頃に会った思い出の男の子がいるらしい。\r\n他人を気遣う優しさを持っていて、クラス内での男子の人気も高い。料理の腕は、小咲の母曰く「仕上げ以外死ぬほど下手くそ」。",
+    "name": "小野寺小咲",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小野寺小咲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Kosaki Onodera"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おのでら こさき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Onodera Kosaki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月15日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "体重",
+            "value": "43kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        }
+    ],
+    "stat": {
+        "comments": 70,
+        "collects": 439
+    },
+    "id": 16703,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        74628,
+        114758
+    ]
+}

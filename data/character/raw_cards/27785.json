@@ -1,0 +1,61 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/be/27785_crt_uuuH8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/71/be/27785_crt_uuuH8.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/71/be/27785_crt_uuuH8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/be/27785_crt_uuuH8.jpg"
+    },
+    "summary": "",
+    "name": "寺尾昇",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "寺尾升"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Terao Noboru"
+                },
+                {
+                    "k": "日文名",
+                    "v": "寺尾 昇"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "てらお のぼる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Terao Noboru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://ja.wikipedia.org/wiki/ほしのこえ"
+        }
+    ],
+    "stat": {
+        "comments": 4,
+        "collects": 6
+    },
+    "id": 27785,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1936
+    ]
+}

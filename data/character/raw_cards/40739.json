@@ -1,0 +1,73 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/3d/40739_crt_xfFX8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6e/3d/40739_crt_xfFX8.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/6e/3d/40739_crt_xfFX8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/3d/40739_crt_xfFX8.jpg"
+    },
+    "summary": "北宇治高校2年生。使用的乐器是双簧管。\r\n出身于管乐强校南中。初中时，因为性格陰沉而没有朋友，后来被希美邀请加入管乐团。视希美为很重要的朋友。\r\n在希美退出之后，觉得管乐是与希美唯一的连系，因此继续留在管乐团孤独地练习。\r\n♪好きな色\r\n青、紺、灰\r\n♪趣味\r\n家で飼っている猫と一緒にダラダラすること\r\n♪特技\r\n音ゲー、心理戦のゲームが強い\r\n♪好きなもの\r\nソーダ味のお菓子、炭酸ジュース\r\n♪嫌いなもの\r\n電波の悪い場所",
+    "name": "鎧塚みぞれ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "铠冢霙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "铠塚霙"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "よろいづかみぞれ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yoroizuka Mizore"
+                },
+                {
+                    "k": "昵称",
+                    "v": "352（do re mi音阶的 me so re）"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月2日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        },
+        {
+            "key": "所属声部",
+            "value": "双簧管 & 大管（Oboe & Bassoon）"
+        }
+    ],
+    "stat": {
+        "comments": 187,
+        "collects": 834
+    },
+    "id": 40739,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        216371
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 24,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/96/32677_crt_Xv0Zw.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/59/96/32677_crt_Xv0Zw.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/59/96/32677_crt_Xv0Zw.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/96/32677_crt_Xv0Zw.jpg"
+    },
+    "summary": "小埋的同学，蓝色长发和闪亮的眼睛。和小埋同样成绩优秀，视小埋为竞争对手，性格十分活跃，喜欢张扬自己，但又有少许的天然，所以缺少交往的朋友。\r\n在一次游戏中心比赛时遇到了游戏中心打扮的小埋「UMR」，快赢到决赛时由於见到自己的哥哥怕被发现而逃离了，但之後和「UMR」身份的小埋相熟并相互留有联系，也因此接触到ACG文化而和哥哥有所交流。",
+    "name": "橘・シルフィンフォード",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "橘·希尔芬福特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "TSF"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Sylphinford Tachibana"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たちばな・シルフィンフォード"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tachibana Shirufinfōdo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月24日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        }
+    ],
+    "stat": {
+        "comments": 24,
+        "collects": 100
+    },
+    "id": 32677,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        120187,
+        212775
+    ]
+}

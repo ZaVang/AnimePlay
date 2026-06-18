@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/74/78543_crt_A8G68.jpg?r=1595678838",
+        "grid": "https://lain.bgm.tv/pic/crt/g/13/74/78543_crt_A8G68.jpg?r=1595678838",
+        "large": "https://lain.bgm.tv/pic/crt/l/13/74/78543_crt_A8G68.jpg?r=1595678838",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/74/78543_crt_A8G68.jpg?r=1595678838"
+    },
+    "summary": "主人公であり、受験を控えた高校3年生。\r\n幼馴染みの伊座並杏子に片想いをしている。\r\n公園でバスケをしている最中にひなと出会い、色々と振り回されつつも、ひなと高校最後の夏を過ごす。",
+    "name": "成神陽太",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "成神阳太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "なるかみ ようた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Narukami Youta"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 72,
+        "collects": 9
+    },
+    "id": 78543,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        306429
+    ]
+}

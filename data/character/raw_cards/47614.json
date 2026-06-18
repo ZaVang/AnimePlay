@@ -1,0 +1,44 @@
+{
+    "id": 47614,
+    "name": "グレン＝レーダス",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f9/da/47614_crt_aF4qp.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/da/47614_crt_aF4qp.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/da/47614_crt_aF4qp.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f9/da/47614_crt_aF4qp.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "格伦·勒达斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Glenn Radars"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 10,
+        "collects": 23
+    },
+    "anime_ids": [
+        174138
+    ]
+}

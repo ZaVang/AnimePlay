@@ -1,0 +1,61 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5d/fe/23451_crt_1ZWd9.jpg?r=1394347718",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5d/fe/23451_crt_1ZWd9.jpg?r=1394347718",
+        "large": "https://lain.bgm.tv/pic/crt/l/5d/fe/23451_crt_1ZWd9.jpg?r=1394347718",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5d/fe/23451_crt_1ZWd9.jpg?r=1394347718"
+    },
+    "summary": "美和女子学院二年级生，天童民间警备公司的社长。\r\n原为天童望族的千金，但因某件事而离家出走后自立门户。与莲太郎一样生活贫困，但还是放不下天童一族的身分。相貌可爱且身材姣好，是莲太郎的青梅竹马，也是他的爱慕对象，而她对莲太郎也有一定程度的依赖与好感。\r\n患有糖尿病，多年前父母在她面前被原肠动物吞噬后使病情恶化，现在肾脏几乎没有作用，须定期到医院调整。认为父母的死与天童家有关，为了复仇而疯狂磨练剑术，已达到“天童式拔刀术”的免许皆传，但因肾脏问题而不能长时间战斗，无法在前线活跃而待在办公室中。\r\n拥有天童民间警备公司的最强战斗力，使用的武器是天童家代代相传的妖刀“杀人刀·雪影”。",
+    "name": "天童木更",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "天童木更"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Kisara Tendo"
+                },
+                {
+                    "k": "日文名",
+                    "v": "天童 木更"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "てんどう　きさら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tendō Kisara"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "中文维基"
+        }
+    ],
+    "stat": {
+        "comments": 21,
+        "collects": 131
+    },
+    "id": 23451,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        84873
+    ]
+}

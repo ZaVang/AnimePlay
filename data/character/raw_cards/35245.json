@@ -1,0 +1,36 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a8/c9/35245_crt_AEP5s.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a8/c9/35245_crt_AEP5s.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/a8/c9/35245_crt_AEP5s.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a8/c9/35245_crt_AEP5s.jpg"
+    },
+    "summary": "故事的主角，为一名11岁就读小学四年级的女孩。\r\n性格坚毅有朝气，因母亲住院因素而在家中代理母职，负责打理大部分的家务。\r\n名字的日语原名“サツキ”（Satsuki）是日语里“皋月”（五月的别称）的念法。",
+    "name": "草壁サツキ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "草壁五月"
+        },
+        {
+            "key": "别名",
+            "value": []
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 18
+    },
+    "id": 35245,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        302
+    ]
+}

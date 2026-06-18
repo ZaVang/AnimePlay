@@ -1,0 +1,68 @@
+{
+    "birth_mon": 10,
+    "gender": "male",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": 3,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/35/8d/57750_crt_eHlyz.jpg?r=1507738169",
+        "grid": "https://lain.bgm.tv/pic/crt/g/35/8d/57750_crt_eHlyz.jpg?r=1507738169",
+        "large": "https://lain.bgm.tv/pic/crt/l/35/8d/57750_crt_eHlyz.jpg?r=1507738169",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/35/8d/57750_crt_eHlyz.jpg?r=1507738169"
+    },
+    "summary": "过去曾被称作神童，但现在却成了吊车尾驾驶员。\r\n在米斯特汀当中，烦恼着自己的容身之所。\r\nCODE\r\n\tFP40-T3NL-016\r\nBLOOD\r\n\tAB Rh(-)\r\nAdmission Date\r\n\tFeb. 2",
+    "name": "ヒロ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "广"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "CODE:016"
+                },
+                {
+                    "k": "英文名",
+                    "v": "HIRO"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "10月15日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        },
+        {
+            "key": "体重",
+            "value": "58kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://darli-fra.jp/character/"
+        }
+    ],
+    "stat": {
+        "comments": 41,
+        "collects": 62
+    },
+    "id": 57750,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        218711
+    ]
+}

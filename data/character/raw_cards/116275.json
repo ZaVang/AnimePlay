@@ -1,0 +1,80 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 21,
+    "birth_year": null,
+    "blood_type": 3,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/17/116275_crt_SuBFf.jpg?r=1666637201",
+        "grid": "https://lain.bgm.tv/pic/crt/g/92/17/116275_crt_SuBFf.jpg?r=1666637201",
+        "large": "https://lain.bgm.tv/pic/crt/l/92/17/116275_crt_SuBFf.jpg?r=1666637201",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/17/116275_crt_SuBFf.jpg?r=1666637201"
+    },
+    "summary": "ツインテールが特徴の店のエースメイド。ぶりっ子で人気だが、頭の回転が速く策士な一面もある。",
+    "name": "ゆめち",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "结梦亲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "梦千"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "柊结梦"
+                },
+                {
+                    "k": "日文名",
+                    "v": "柊結夢"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yumechi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月21日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "149cm"
+        },
+        {
+            "key": "担当カラー",
+            "value": "緑"
+        },
+        {
+            "key": "趣味/特技",
+            "value": "パズルゲーム"
+        },
+        {
+            "key": "好きな食べ物",
+            "value": "お茶漬け"
+        }
+    ],
+    "stat": {
+        "comments": 60,
+        "collects": 99
+    },
+    "id": 116275,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        389450
+    ]
+}

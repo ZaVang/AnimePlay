@@ -1,0 +1,61 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ec/b3/35279_crt_7coYv.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ec/b3/35279_crt_7coYv.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ec/b3/35279_crt_7coYv.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ec/b3/35279_crt_7coYv.jpg"
+    },
+    "summary": "本作主角，从魔力等属于魔法骑士评价标准的能力总和被评定为F级、连伐刀绝技也是被喻为最低劣的体能强化系，被认为是十年难得一见的烂学生再加上家里干涉的关系而惨遭留级、被周遭的人戏称为《落第骑士 （Worst one）》。不过魔法的才能虽然差劲，却有着极高超的剑术与体术，因在模拟战击败身为A级的史黛菈，引起不小的震惊。起初许多人都认为是凑巧，又或者是演出来的戏码，然而随着一辉多次战胜具有名气的学生骑士后，嘲笑的声浪渐渐销声匿迹，称谓也从原先带有讽刺意味的《落第骑士（Worst one）》转而被称为《无冕剑王（Another one）》。",
+    "name": "黒鉄一輝",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黑铁一辉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "黒鉄 一輝"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くろがね いっき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kurogane Ikki"
+                },
+                {
+                    "k": "昵称",
+                    "v": "落第骑士（Worst one）、无冕剑王（Another one）"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 15,
+        "collects": 33
+    },
+    "id": 35279,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        127724
+    ]
+}

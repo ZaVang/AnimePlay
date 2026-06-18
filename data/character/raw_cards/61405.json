@@ -1,0 +1,66 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 5,
+    "birth_year": 2000,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/40/61405_crt_4GzU5.jpg?r=1561385107",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6c/40/61405_crt_4GzU5.jpg?r=1561385107",
+        "large": "https://lain.bgm.tv/pic/crt/l/6c/40/61405_crt_4GzU5.jpg?r=1561385107",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/40/61405_crt_4GzU5.jpg?r=1561385107"
+    },
+    "summary": "五つ子の次女。五つ子の中で一番姉妹を大事にしているため、五つ子の輪の中に入ってくる風太郎を異分子として反発している。料理が得意で中野家の炊事を担当している。五つ子の中で最も女子力が高い。\r\n\r\n代表颜色为黑色，喜欢的食物是薄烤饼，讨厌的食物是渍物，喜欢的饮料是常温水，喜欢的动物是兔子，喜欢的电视节目类型是综艺，擅长学习科目为英语，每日的惯例为敷面膜和瑜伽，喜欢有年轻艺人出演的电影，喜欢的地点是打工的地方，喜欢阅读时尚杂志。",
+    "name": "中野二乃",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "中野二乃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "中野 二乃"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なかの にの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nakano Nino"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2000-05-05"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "体重",
+            "value": "五つ子全員で250kg"
+        }
+    ],
+    "stat": {
+        "comments": 85,
+        "collects": 367
+    },
+    "id": 61405,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        256114,
+        282000
+    ]
+}

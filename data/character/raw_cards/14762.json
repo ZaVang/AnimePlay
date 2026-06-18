@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/43/d5/14762_crt_94H5h.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/43/d5/14762_crt_94H5h.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/43/d5/14762_crt_94H5h.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/43/d5/14762_crt_94H5h.jpg"
+    },
+    "summary": "　　旦那寺的年轻住持。同时也在写小说，是个已经发表了好几册小说的小说家，尾崎敏夫的青梅竹马。\r\n　　写的小说都是关于被神所遗弃的人的神话故事《尸鬼》也是其中一篇。因其同病相怜吸引了桐敷沙子的注意，而她也因此搬到这个与世隔绝的小乡村。\r\n　　晚上时常与桐敷沙子遇见，互相交流。",
+    "name": "室井静信",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "室井静信"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "室井 静信"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "むろい せいしん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Muroi Seishin"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 44,
+        "collects": 13
+    },
+    "id": 14762,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        5653
+    ]
+}

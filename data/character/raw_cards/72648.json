@@ -1,0 +1,65 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 13,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/9f/72648_crt_BXKXY.jpg?r=1578712929",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f0/9f/72648_crt_BXKXY.jpg?r=1578712929",
+        "large": "https://lain.bgm.tv/pic/crt/l/f0/9f/72648_crt_BXKXY.jpg?r=1578712929",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/9f/72648_crt_BXKXY.jpg?r=1578712929"
+    },
+    "summary": "天文组的高中一年级生。\r\n小时候做了寻找小行星的约定以来对天文有了兴趣，在高中决心加入天文社。\r\n由于天真烂漫、一有想法就立即行动的性格，也有冒失的一面。",
+    "name": "木ノ幡みら",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "木之幡米拉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "木之幡米菈"
+                },
+                {
+                    "k": "日文名",
+                    "v": "木ノ幡 みら"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "このはた みら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Konohata Mira"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月13日"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        }
+    ],
+    "stat": {
+        "comments": 16,
+        "collects": 122
+    },
+    "id": 72648,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        276150
+    ]
+}

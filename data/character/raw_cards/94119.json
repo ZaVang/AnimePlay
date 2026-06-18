@@ -1,0 +1,60 @@
+{
+    "id": 94119,
+    "name": "リイクニ・ノンデライコ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/78/af/94119_crt_bDRB6.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/af/94119_crt_bDRB6.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/af/94119_crt_bDRB6.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/78/af/94119_crt_bDRB6.jpg"
+    },
+    "summary": "不仲な両親にないがしろにされ、熱心な宗教家の祖母に育てられた。祖母が外国系のクォーター。\r\n親族が所有する郊外の一軒家でマナと暮らしていた。しかし親族が借金をしていたせいで家が取り壊されてしまい、その後は近くの教会に身を寄せる。\r\n心の在りようを現実世界ではなく、外国系の宗教の信仰に置いており、歓楽街の路上でビラを配って布教活動を行っている他、劇中でも数度祈りを捧げるシーンがある。信心深いが、浮世離れした性格の持ち主でもあり、無防備な姿がシロツグに欲情を抱かせてしまう。良からぬ想いから自身を押し倒したシロツグを殴って気絶させてしまった際には、怒るどころか逆に自省の弁を語り、却って彼を困惑させてしまう。\r\nシロツグがロケット発射場へ向かう直前、「行ってきます」と笑顔を見せる彼を同じように笑顔で見送った。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莉可妮"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Riquinni Nonderaiko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "52kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B78・W61・H88"
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 1,
+        "collects": 4
+    },
+    "anime_ids": [
+        2046
+    ]
+}

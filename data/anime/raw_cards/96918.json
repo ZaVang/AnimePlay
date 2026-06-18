@@ -1,0 +1,463 @@
+{
+    "date": "2014-07-05",
+    "platform": "TV",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/87/95/96918_l2HJN.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/87/95/96918_l2HJN.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/87/95/96918_l2HJN.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/87/95/96918_l2HJN.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/87/95/96918_l2HJN.jpg"
+    },
+    "summary": "1972年，阿波罗17号登月计划在月球发现连接地球与火星的古代文明遗产“超空间门”。随后地球向火星派出了以雷列加利亚博士为首的调查团。在火星上发现古代火星文明的“Aldnoah”科技。伴随着火星殖民进程与科技垄断主张，火星开拓民与地球之间的摩擦越发扩大。\r\n1985年，雷列加利亚博士在火星成立“薇瑟帝国”并称帝。1986年，地球为对抗火星而组建联合政府。1999年，雷列加利亚之子，第二任皇帝基尔泽利亚对地球宣战，却在侵略期间死于因超空间门失控而摧毁月球的灾难“Heaven's fall”。2000年，火星与地球停战。\r\n2014年，已经休战十余年的地球与火星正在进行和平谈判。另一方面，基于地球与火星再战的假设，格斗技与人形战斗兵器先后进入地球的义务教育，居住于日本新芦原市的高中生界冢伊奈帆，就是成长于斯的其中之一。\r\n与此同时，薇瑟帝国公主艾瑟依拉姆·薇瑟·艾莉欧斯亚以亲善大使的身份访问地球，在其身后目送其离开的则是于地球出生而在火星上长大的少年斯雷因·特洛耶特。然而，她的游行车队随后在新芦原市遭到薇瑟帝国间谍的导弹攻击，前线的火星骑士将其视为地球的宣战公告，纷纷将停驻于地球卫星轨道的扬陆城降落地球，对世界各国展开攻击，地球与火星间的战火再次爆发。",
+    "name": "アルドノア・ゼロ",
+    "name_cn": "ALDNOAH.ZERO",
+    "tags": [
+        {
+            "name": "虚渊玄",
+            "count": 1542,
+            "total_cont": 0
+        },
+        {
+            "name": "泽野弘之",
+            "count": 1295,
+            "total_cont": 0
+        },
+        {
+            "name": "A-1Pictures",
+            "count": 1160,
+            "total_cont": 0
+        },
+        {
+            "name": "原创",
+            "count": 1013,
+            "total_cont": 0
+        },
+        {
+            "name": "2014年7月",
+            "count": 1005,
+            "total_cont": 0
+        },
+        {
+            "name": "萝卜",
+            "count": 732,
+            "total_cont": 0
+        },
+        {
+            "name": "TV",
+            "count": 698,
+            "total_cont": 0
+        },
+        {
+            "name": "科幻",
+            "count": 670,
+            "total_cont": 0
+        },
+        {
+            "name": "机战",
+            "count": 616,
+            "total_cont": 0
+        },
+        {
+            "name": "2014",
+            "count": 421,
+            "total_cont": 0
+        },
+        {
+            "name": "雨宫天",
+            "count": 278,
+            "total_cont": 0
+        },
+        {
+            "name": "TROYCA",
+            "count": 227,
+            "total_cont": 0
+        },
+        {
+            "name": "kalafina",
+            "count": 141,
+            "total_cont": 0
+        },
+        {
+            "name": "花江夏樹",
+            "count": 128,
+            "total_cont": 0
+        },
+        {
+            "name": "A-1",
+            "count": 71,
+            "total_cont": 0
+        },
+        {
+            "name": "青木英",
+            "count": 51,
+            "total_cont": 0
+        },
+        {
+            "name": "战斗",
+            "count": 46,
+            "total_cont": 0
+        },
+        {
+            "name": "あおきえい",
+            "count": 40,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 32,
+            "total_cont": 0
+        },
+        {
+            "name": "ALDNOAH.ZERO",
+            "count": 30,
+            "total_cont": 0
+        },
+        {
+            "name": "战争",
+            "count": 27,
+            "total_cont": 0
+        },
+        {
+            "name": "虚淵玄",
+            "count": 25,
+            "total_cont": 0
+        },
+        {
+            "name": "2014年",
+            "count": 24,
+            "total_cont": 0
+        },
+        {
+            "name": "澤野弘之",
+            "count": 23,
+            "total_cont": 0
+        },
+        {
+            "name": "苍井启",
+            "count": 19,
+            "total_cont": 0
+        },
+        {
+            "name": "A-1_Pictures",
+            "count": 15,
+            "total_cont": 0
+        },
+        {
+            "name": "原创动画",
+            "count": 14,
+            "total_cont": 0
+        },
+        {
+            "name": "高山カツヒコ",
+            "count": 14,
+            "total_cont": 0
+        },
+        {
+            "name": "ALDNOAH_ZERO",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "机甲",
+            "count": 11,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "ALDNOAH.ZERO"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Aldnoah Zero"
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2014年7月5日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.aldnoahzero.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX / BS11 / ABC朝日放送"
+        },
+        {
+            "key": "其他电视台",
+            "value": "AT-X"
+        },
+        {
+            "key": "播放结束",
+            "value": "2014年9月20日"
+        },
+        {
+            "key": "导演",
+            "value": "あおきえい"
+        },
+        {
+            "key": "音乐",
+            "value": "澤野弘之"
+        },
+        {
+            "key": "Copyright",
+            "value": "©Olympus Knights / Aniplex･Project AZ"
+        },
+        {
+            "key": "原作",
+            "value": "Olympus Knights"
+        },
+        {
+            "key": "系列构成",
+            "value": "高山カツヒコ"
+        },
+        {
+            "key": "人物原案",
+            "value": "志村貴子"
+        },
+        {
+            "key": "人物设定",
+            "value": "松本昌子"
+        },
+        {
+            "key": "机械设定",
+            "value": "I-IV、寺岡賢司；副机设：小川浩；机设协力：鈴木勘太、江間一隆"
+        },
+        {
+            "key": "动画制作",
+            "value": "A-1 Pictures×TROYCA"
+        },
+        {
+            "key": "企画",
+            "value": "植田益朗、孝壽尚志、尾山仁康、秋田愛一郎、沖中進、太田豊紀、でじたろう[小坂崇氣]、太布尚弘"
+        },
+        {
+            "key": "总制片人",
+            "value": "岩上敦宏、落越友則"
+        },
+        {
+            "key": "制片人",
+            "value": "黒崎静佳、小林宏之、北澤晋一郎、大和田智之、西出将之、伊藤円、でじたろう[小坂崇氣]、金庭こず恵"
+        },
+        {
+            "key": "动画制片人",
+            "value": "長野敏之、林健一"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "堀口泰史（レジェンドア）"
+        },
+        {
+            "key": "製作",
+            "value": "Project AZ（Aniplex、芳文社、TOKYO MX、日本BS放送、朝日放送[朝日放送テレビ]、MAGES.、Nitro+、ムービック）"
+        },
+        {
+            "key": "助理制片人",
+            "value": "松本美穂、亀山将宏、永山麻未、久保田尋木、堀江雄二郎、関鴻磊、中原広絵、吉田敦則"
+        },
+        {
+            "key": "美术监督",
+            "value": "伊藤聖；辅佐：金鉉洙"
+        },
+        {
+            "key": "美术设计",
+            "value": "児玉陽平、藤井祐太"
+        },
+        {
+            "key": "特效",
+            "value": "川井朝美、渡辺弘信"
+        },
+        {
+            "key": "录音",
+            "value": "根岸信洋"
+        },
+        {
+            "key": "录音助理",
+            "value": "岡田奈都美"
+        },
+        {
+            "key": "音响",
+            "value": "マジックカプセル；音响制作担当：田中理恵"
+        },
+        {
+            "key": "音效",
+            "value": "長谷川卓也、中野勝博"
+        },
+        {
+            "key": "设定制作",
+            "value": "馬川奈央、三輪なつみ、柿沼晴菜"
+        },
+        {
+            "key": "设定协力",
+            "value": "瀬島卓也（1→10 design）、堺達彦（日本デザインセンター）、宮﨑真一朗"
+        },
+        {
+            "key": "宣传",
+            "value": "太田今日子、川内丸司、中井舞衣子；宣传制片人：鈴木健太"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "あおきえい(OP) / ほしかわたかふみ(ED1-2)"
+        },
+        {
+            "key": "OP・ED 演出",
+            "value": "加藤誠(OP&ED)"
+        }
+    ],
+    "rating": {
+        "rank": 3758,
+        "total": 6297,
+        "count": {
+            "1": 56,
+            "2": 22,
+            "3": 51,
+            "4": 201,
+            "5": 462,
+            "6": 1454,
+            "7": 2420,
+            "8": 1284,
+            "9": 244,
+            "10": 103
+        },
+        "score": 6.8
+    },
+    "total_episodes": 12,
+    "collection": {
+        "on_hold": 369,
+        "dropped": 392,
+        "wish": 1440,
+        "collect": 9296,
+        "doing": 516
+    },
+    "id": 96918,
+    "eps": 12,
+    "meta_tags": [
+        "科幻",
+        "机战",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        24783,
+        24785,
+        24786
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/59/24783_crt_EEc6X.jpg?r=1399121506",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1e/59/24783_crt_EEc6X.jpg?r=1399121506",
+                "large": "https://lain.bgm.tv/pic/crt/l/1e/59/24783_crt_EEc6X.jpg?r=1399121506",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/59/24783_crt_EEc6X.jpg?r=1399121506"
+            },
+            "name": "スレイン・トロイヤード",
+            "summary": "火星に暮らす地球人。\r\n研究者の父を亡くし、火星騎士のもとに身を寄せている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/85/4965_prsn_7w6iz.jpg?r=1709906610",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/22/85/4965_prsn_7w6iz.jpg?r=1709906610",
+                        "large": "https://lain.bgm.tv/pic/crt/l/22/85/4965_prsn_7w6iz.jpg?r=1709906610",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/85/4965_prsn_7w6iz.jpg?r=1709906610"
+                    },
+                    "name": "小野賢章",
+                    "short_summary": "小野賢章（1989年10月5日－）是日本的男性演員、聲優。福岡縣出生、東京都出身。\r\n以前是劇團向日葵系列的砂岡事務所所屬。2012年9月30日退出約14年所屬的砂岡事務所。目前的事务所为Animo Produce。\r\n2013年12月，宣布将在2014年2月以黑子的篮球 第二季的片尾曲“FANTASTIC TUNE”为个人名义歌手身份出道。\r\n\r\n以哈利波特日语吹替版作为契机而成为声优。本人说过“声优只能以声音来传达事物，不过演员能用表情跟肢体动作表达出来，虽然两边都有困难的地方，不过能作为演员用身体表演也很快乐。”所以并没有特别把声优跟演员的工作区别开来，今后也不会拘泥于声音的工作，会挑战更多共种各样的工作。2014年动过声带息肉切除手术。\r\n从12岁开始的10年间，一直在为哈利波特日语版中的主角哈利·波特配音。当时本人并没有读过哈利波特原作。是因为母亲是哈利波特的大粉丝，所以被母亲劝诱去参加征选会。当确定要饰演主角时，身为哈利波特粉丝的双亲比他还高兴。名字的由来是来自于设计家安部兼章。由于当时还是小学6年级生，不太懂得要怎么表演，所以都是照着导演的指示来配音的，后期渐渐的开始能自己理解该怎么演。在配第三作“哈利波特─阿兹卡班的逃犯”时，因为正处于变声期，所以当中战斗场面的嘶吼声配得非常辛苦。一直拼命努力演出的他，也以变声期作为契机开始会思考更多关于演技的事情。\r\n\r\n2017年2月19日，有相关报道证实与同是声优的花泽香菜是恋人关系，并同居于东京港区某公寓。本人亦于2017年2月22日在个人部落格承认交往。\r\n2020年7月8日，宣布与花泽香菜结婚。\r\n2025年9月14日，宣布与花泽香菜离婚。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4965,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 24783
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/56/24785_crt_yUUB3.jpg?r=1399121556",
+                "grid": "https://lain.bgm.tv/pic/crt/g/99/56/24785_crt_yUUB3.jpg?r=1399121556",
+                "large": "https://lain.bgm.tv/pic/crt/l/99/56/24785_crt_yUUB3.jpg?r=1399121556",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/56/24785_crt_yUUB3.jpg?r=1399121556"
+            },
+            "name": "アセイラム・ヴァース・アリューシア",
+            "summary": "火星の独立国家・ヴァース帝国の皇女。\r\n火星生まれの火星育ち。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727"
+                    },
+                    "name": "雨宮天",
+                    "short_summary": "雨宫天（あまみや そら）是日本的女性声优、歌手，1993年8月28日出生于日本东京都。\r\n\r\n[b]经历[/b]\r\n1993年8月28日出生于日本东京都；因憧憬声优[url=https://bgm.tv/person/4244]泽城美雪[/url]而向往成为一名声优。\r\n在2011年举办的第2回MusicRay'n超级声优试镜中合格，2012年声优活动开始，2014年在TV动画《[url=https://bgm.tv/subject/88493]一周的朋友。[/url]》担任[url=https://bgm.tv/character/23104]藤宫香织[/url]CV,为初主役角色。\r\n2014年12月21日，与同事务所的[url=https://bgm.tv/person/13565]麻仓桃[/url]、[url=https://bgm.tv/person/13581]夏川椎菜[/url]组成声优组合“[url=https://bgm.tv/person/18492]TrySail[/url]”，并于2015年·正式开始活动。\r\n2015年第9回声优奖中获得新人女声优奖。\r\n2015年10月2日，发行自己的第一部写真集《ソライロ～青と旅する～》。\r\n2020年4月17日，开通绘画日记企划期间限定Twitter账号(现已转为永久账号)",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 12568,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 24785
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/23/24786_crt_O9ttL.jpg?r=1399121451",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7f/23/24786_crt_O9ttL.jpg?r=1399121451",
+                "large": "https://lain.bgm.tv/pic/crt/l/7f/23/24786_crt_O9ttL.jpg?r=1399121451",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/23/24786_crt_O9ttL.jpg?r=1399121451"
+            },
+            "name": "界塚伊奈帆",
+            "summary": "地球に暮らす高校生。\r\n両親を亡くして以来、軍人の姉とふたり暮らし。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084",
+                        "large": "https://lain.bgm.tv/pic/crt/l/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084"
+                    },
+                    "name": "花江夏樹",
+                    "short_summary": "花江夏树是日本的男性声优，ACROSS ENTERTAINMENT所属。\r\n「花江」是艺名，「夏樹」为本名。本名姓氏为「武田」。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 7772,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 24786
+        }
+    ]
+}

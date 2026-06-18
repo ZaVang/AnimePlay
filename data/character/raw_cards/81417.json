@@ -1,0 +1,76 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/ac/81417_crt_49yxx.jpg?r=1599461596",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fc/ac/81417_crt_49yxx.jpg?r=1599461596",
+        "large": "https://lain.bgm.tv/pic/crt/l/fc/ac/81417_crt_49yxx.jpg?r=1599461596",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/ac/81417_crt_49yxx.jpg?r=1599461596"
+    },
+    "summary": "普通の家に生まれ、普通に就職し、普通に人生を歩んでいた、ごく普通の女性。不幸が重なり、アクダマの犯罪に巻き込まれてしまう。変に落ち込まず、何があっても前向きに突き進む性格。",
+    "name": "一般人",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "一般人"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月15日"
+        },
+        {
+            "key": "年龄",
+            "value": "20岁"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "44kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B85·W64·H87"
+        },
+        {
+            "key": "癖",
+            "value": "特になし"
+        },
+        {
+            "key": "好きな食べ物",
+            "value": "ご飯全般"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://www.akudama-drive.com/character/ippanjin.html"
+        }
+    ],
+    "stat": {
+        "comments": 26,
+        "collects": 20
+    },
+    "id": 81417,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        302076
+    ]
+}

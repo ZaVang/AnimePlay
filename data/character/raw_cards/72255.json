@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/41/72255_crt_mN4nR.jpg?r=1596720337",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3c/41/72255_crt_mN4nR.jpg?r=1596720337",
+        "large": "https://lain.bgm.tv/pic/crt/l/3c/41/72255_crt_mN4nR.jpg?r=1596720337",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/41/72255_crt_mN4nR.jpg?r=1596720337"
+    },
+    "summary": "泰然にして不敵、絶対の力と自信を備え、《暴虐の魔王》と恐れられた男が転生した姿。\r\n現在の魔法技術ではその力が測りきれず、《不適合者》の烙印を押される。",
+    "name": "アノス・ヴォルディゴード",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿诺斯·波鲁迪戈乌多"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "ANOS VOLDIGOAD"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://maohgakuin.com/character/?chara=anos"
+        }
+    ],
+    "stat": {
+        "comments": 42,
+        "collects": 39
+    },
+    "id": 72255,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        292222
+    ]
+}

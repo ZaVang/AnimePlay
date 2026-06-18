@@ -1,0 +1,60 @@
+{
+    "id": 54578,
+    "name": "山田",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7a/cb/54578_crt_UOgZ5.jpg?r=1496283906",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/cb/54578_crt_UOgZ5.jpg?r=1496283906",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/cb/54578_crt_UOgZ5.jpg?r=1496283906",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7a/cb/54578_crt_UOgZ5.jpg?r=1496283906"
+    },
+    "summary": "本作女主人公，15岁、女子高中生，梦想是在上高中能交上100名炮友。\r\n自高中一年级向后晋级。虽然外表是绝世的美少女，却满脑子色情妄想。但自身却是连恋爱经验都没有的处女。在书店与邂逅小须田，认定小须田是自己的初体验对象。但却往往在关键时刻逃避，属于傲娇类型少女。虽然有着完美的面容以及身材，却对于自己的胸围不满意。\r\n学习和运动均在行，同时擅长暗记和速度，可说是才色兼备。特别是在保健体育方面非常擅长，却不太会做料理。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "山田"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "山田"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やまだ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yamada"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "164cm"
+        },
+        {
+            "key": "体重",
+            "value": "43kg"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 5,
+        "collects": 14
+    },
+    "anime_ids": [
+        4290
+    ]
+}

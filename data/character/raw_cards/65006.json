@@ -1,0 +1,65 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/84/65006_crt_cCWBo.jpg?r=1753912462",
+        "grid": "https://lain.bgm.tv/pic/crt/g/44/84/65006_crt_cCWBo.jpg?r=1753912462",
+        "large": "https://lain.bgm.tv/pic/crt/l/44/84/65006_crt_cCWBo.jpg?r=1753912462",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/84/65006_crt_cCWBo.jpg?r=1753912462"
+    },
+    "summary": "謎多き健気な中学生\r\n\r\n咲太の初恋の女性と同姓同名の少女。\r\n恥ずかしがり屋だが、しっかり者で心の優しい中学生。\r\n雨の中、捨て猫に傘をさしてあげていたところで咲太と出会う。",
+    "name": "牧之原翔子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "牧之原翔子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "まきのはら しょうこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Makinohara Shoko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月10日"
+        },
+        {
+            "key": "身高",
+            "value": "150cm"
+        },
+        {
+            "key": "学年",
+            "value": "中学1年生"
+        },
+        {
+            "key": "特技",
+            "value": "早寝早起き"
+        }
+    ],
+    "stat": {
+        "comments": 70,
+        "collects": 434
+    },
+    "id": 65006,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        260680
+    ]
+}

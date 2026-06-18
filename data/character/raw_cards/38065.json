@@ -1,0 +1,65 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 9,
+    "birth_year": 2002,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/2a/38065_crt_hjnjV.jpg?r=1517307638",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ea/2a/38065_crt_hjnjV.jpg?r=1517307638",
+        "large": "https://lain.bgm.tv/pic/crt/l/ea/2a/38065_crt_hjnjV.jpg?r=1517307638",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/2a/38065_crt_hjnjV.jpg?r=1517307638"
+    },
+    "summary": "八一的师姐，2002年9月9日出生，大阪出身，15岁，奖励会三段（故事一开始为14岁，奖励会二段）。虽然年纪比八一小，但因拜入清泷门下的时间比八一早两个星期，而成为八一的师姐。\r\n棋艺高强，对女流棋士的公式比赛保持着50场不败的战绩，被誉为“浪速的白雪姬”。女流二冠（女王、女流玉座）。\r\n虽然在幼年时的棋力比八一强，但随着八一逐渐展现其才能，为了不被对方抛下而在私下非常努力，并打算成为首位女性职业棋士。对女流棋士连战连胜，但在奖励会中却是进展缓慢，而感受到自己才能的极限。\r\n喜欢八一，但完全不会表现出来，而对这方面很迟钝的八一也只是单纯把她当成自己的师姐来看待。和爱的关系很差，也是爱当初要求八一收她为弟子时，清泷一门中唯一反对的人。",
+    "name": "空銀子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "空银子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "そら ぎんこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sora Ginko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2002年9月9日"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        },
+        {
+            "key": "师傅",
+            "value": "清泷钢介"
+        },
+        {
+            "key": "头衔",
+            "value": "女王·女流玉座"
+        }
+    ],
+    "stat": {
+        "comments": 94,
+        "collects": 522
+    },
+    "id": 38065,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        219658
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "id": 56966,
+    "name": "シア・ハウリア",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ae/e4/56966_crt_3X5Gc.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ae/e4/56966_crt_3X5Gc.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ae/e4/56966_crt_3X5Gc.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ae/e4/56966_crt_3X5Gc.jpg"
+    },
+    "summary": "本作のヒロインの一人。亜人・兎人族の一部族であるハウリアの族長の一人娘。帝国から追われて峡谷に身を潜めている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "希娅·哈乌利亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Shea Haulia"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "年龄",
+            "value": "16岁"
+        },
+        {
+            "key": "天职",
+            "value": "占术师"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 14,
+        "collects": 79
+    },
+    "anime_ids": [
+        231414
+    ]
+}

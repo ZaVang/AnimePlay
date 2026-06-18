@@ -1,0 +1,57 @@
+{
+    "birth_mon": 2,
+    "gender": "male",
+    "birth_day": 28,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/2b/37456_crt_P97Dy.jpg?r=1450372221",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c2/2b/37456_crt_P97Dy.jpg?r=1450372221",
+        "large": "https://lain.bgm.tv/pic/crt/l/c2/2b/37456_crt_P97Dy.jpg?r=1450372221",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/2b/37456_crt_P97Dy.jpg?r=1450372221"
+    },
+    "summary": "蒸汽锻冶少年，居住于以制铁与蒸汽机关的生产为产业的显金站。\r\n为了打倒“尸”，而与朋友·逞生一起研究开发独创的武器「贯筒」。虽然现阶段还是被周围的大家嘲笑的状态，不过还是等待着能够扬眉吐气的一天的来到。",
+    "name": "生駒",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "生驹"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いこま"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ikoma"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2月28日"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://kabaneri.com/character/index.html"
+        }
+    ],
+    "stat": {
+        "comments": 46,
+        "collects": 31
+    },
+    "id": 37456,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        118781
+    ]
+}

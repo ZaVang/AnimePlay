@@ -1,0 +1,59 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/94/28/19081_crt_qZfTr.jpg?r=1361669328",
+        "grid": "https://lain.bgm.tv/pic/crt/g/94/28/19081_crt_qZfTr.jpg?r=1361669328",
+        "large": "https://lain.bgm.tv/pic/crt/l/94/28/19081_crt_qZfTr.jpg?r=1361669328",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/94/28/19081_crt_qZfTr.jpg?r=1361669328"
+    },
+    "summary": "タカオが雨の日の庭園で出会った、謎めいた女性。朝からチョコレートを片手にビールを飲んでいる。声を掛けたタカオにある和歌を口にして、そこから雨の日の午前中だけの交流が始まるが……。\r\n\r\n三葉の通う学校の古典教師。映画のクレジットや小説版では「ユキちゃん先生」と記載されている。新海監督の前作『言の葉の庭』のヒロインで古典教師の雪野百香里本人である。本作で「ユキちゃん先生」が登場する2013年9月の時点で『言の葉の庭』の雪野百香里は東京在住であったが、なぜその彼女が本作で糸守にいるのかについては、パンフレットでは「観る人の想像次第」とされている。",
+    "name": "雪野百香里",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雪野百香里"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ユキちゃん先生"
+                },
+                {
+                    "v": "ユキノ"
+                },
+                {
+                    "k": "日文名",
+                    "v": "雪野 百香里"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ゆきの ゆかり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yukino Yukari"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 46,
+        "collects": 178
+    },
+    "id": 19081,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        58949
+    ]
+}

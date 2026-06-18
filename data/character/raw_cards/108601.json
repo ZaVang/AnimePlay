@@ -1,0 +1,65 @@
+{
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/7c/108601_crt_7gWF4.jpg?r=1648212728",
+        "grid": "https://lain.bgm.tv/pic/crt/g/42/7c/108601_crt_7gWF4.jpg?r=1648212728",
+        "large": "https://lain.bgm.tv/pic/crt/l/42/7c/108601_crt_7gWF4.jpg?r=1648212728",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/7c/108601_crt_7gWF4.jpg?r=1648212728"
+    },
+    "summary": "朝のクラスに転校してきた明るく元気でまっすぐな少女。\r\n家事全般が得意で、なんでもこなすオールマイティ。\r\n控えめな性格で、皆のまとめ役的な立ち位置でもある。\r\nちょっとやきもち焼きなところも。",
+    "name": "和泉沢愛生",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "和泉泽爱生"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Izumisawa Aoi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月1日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "星座",
+            "value": "天秤座"
+        },
+        {
+            "key": "兴趣/特技",
+            "value": "饰品制作"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "草莓大福"
+        }
+    ],
+    "stat": {
+        "comments": 33,
+        "collects": 46
+    },
+    "id": 108601,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        375735
+    ]
+}

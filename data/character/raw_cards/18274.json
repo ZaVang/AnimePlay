@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/10/18274_crt_awlY7.jpg?r=1594783731",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c4/10/18274_crt_awlY7.jpg?r=1594783731",
+        "large": "https://lain.bgm.tv/pic/crt/l/c4/10/18274_crt_awlY7.jpg?r=1594783731",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/10/18274_crt_awlY7.jpg?r=1594783731"
+    },
+    "summary": "本作主角，15岁，就读县立羽根山高中1年1班。以附近的国立大学医学系为目标，为了取得推甄权，从刚入学就致力于学习，成绩维持全校第一名。 双亲于国3夏天丢下自己各自和自己的恋人建立新的家庭，让他对恋爱抱持着强烈的不信任感。双亲感情还很好的时候，内心总想出锋头，常有中二病思想，成绩也只有中下程度。双亲离婚及千和出车祸后，价值观大幅改变，立志成为医生治好千和的伤。 把国中时代充满中二病思想的日记藏在动物图鉴的盒子里，结果日记被卖到中古书店后落入真凉手中，让他无法反抗真凉。 双亲离家后由姑姑冴子担任监护人，因为工作而常常不在家，家事都交给锐太处理。 人生第一次被告白的经验是10年前就读若叶幼稚园星组时被爱衣告白。",
+    "name": "季堂鋭太",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "季堂锐太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "季堂 鋭太"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きどう えいた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kidou Eita"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 8
+    },
+    "id": 18274,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        43557
+    ]
+}

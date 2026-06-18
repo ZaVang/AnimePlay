@@ -1,0 +1,81 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 4,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/1a/106372_crt_VjZ7Z.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/70/1a/106372_crt_VjZ7Z.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/70/1a/106372_crt_VjZ7Z.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/1a/106372_crt_VjZ7Z.jpg"
+    },
+    "summary": "スポーツマンシップあふれる爽やかウマ娘。\r\n寄せられる期待に応えたい一心で、困難にもひたむきに挑み続ける頑張り屋。\r\nいいところも認めて相手を立てる謙虚さも持ち合わせており、みんなから慕われている。\r\n主人公っぽいのになぜか脇役におさまりがち。\r\n***\r\n成田路（1996年4月4日~2005年11月7日）栗色\r\n公马\r\n出生地：日本（北海道沙流郡门別町）（现：沙流郡日高町）",
+    "name": "ナリタトップロード",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "成田路"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Narita Top Road"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月4日"
+        },
+        {
+            "key": "身高",
+            "value": "166cm"
+        },
+        {
+            "key": "体重",
+            "value": "理想的"
+        },
+        {
+            "key": "BWH",
+            "value": "B86・W56・H83"
+        },
+        {
+            "key": "毛色",
+            "value": "栗毛"
+        },
+        {
+            "key": "现实马主",
+            "value": "山路秀則"
+        },
+        {
+            "key": "成績(勝率)",
+            "value": "30戦8勝(26.7%)"
+        },
+        {
+            "key": "獲得賞金",
+            "value": "9億9,011万円 (中央)"
+        },
+        {
+            "key": "固有二つ名",
+            "value": "麗しのステイヤー"
+        }
+    ],
+    "stat": {
+        "comments": 45,
+        "collects": 141
+    },
+    "id": 106372,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        380448
+    ]
+}

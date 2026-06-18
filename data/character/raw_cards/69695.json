@@ -1,0 +1,65 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/64/69695_crt_f6WZZ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5e/64/69695_crt_f6WZZ.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/5e/64/69695_crt_f6WZZ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/64/69695_crt_f6WZZ.jpg"
+    },
+    "summary": "水斗の元カノ。中学時代は本だけが友達という地味で人見知りな少女だったが、美少女優等生として高校デビューに成功した。旧姓は綾井。",
+    "name": "伊理戸結女",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊理户结女"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "原名",
+                    "v": "綾井結女"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "绫井结女"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Yume Irido"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いりど ゆめ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Irido Yume"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月3日"
+        }
+    ],
+    "stat": {
+        "comments": 39,
+        "collects": 143
+    },
+    "id": 69695,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        343106
+    ]
+}

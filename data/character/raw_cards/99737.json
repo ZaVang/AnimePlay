@@ -1,0 +1,61 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 16,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/3d/99737_crt_zN1kn.jpg?r=1674103113",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0b/3d/99737_crt_zN1kn.jpg?r=1674103113",
+        "large": "https://lain.bgm.tv/pic/crt/l/0b/3d/99737_crt_zN1kn.jpg?r=1674103113",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/3d/99737_crt_zN1kn.jpg?r=1674103113"
+    },
+    "summary": "パレッティア王国王女。\r\n前世の記憶があり、魔法で空を飛ぶことに憧れている。\r\nしかし、本人は魔法を使えず、怪しげな研究を繰り返す\r\n奇行ぶりから、キテレツ王女呼ばわりされている。",
+    "name": "アニスフィア・ウィン・パレッティア",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾妮丝菲亚·温·帕雷提亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "艾妮丝"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Anisphia Wynn Palettia"
+                },
+                {
+                    "k": "昵称",
+                    "v": "アニス"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月16日"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 117,
+        "collects": 270
+    },
+    "id": 99737,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        395714
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "id": 1219,
+    "name": "姫宫千歌音",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/f4/91/1219_crt_BbW9r.jpg?r=1379530131",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/91/1219_crt_BbW9r.jpg?r=1379530131",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/91/1219_crt_BbW9r.jpg?r=1379530131",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f4/91/1219_crt_BbW9r.jpg?r=1379530131"
+    },
+    "summary": "月之巫女，乙橘学园的学生，特级优等生，长相出众，运动全能，才艺无双，学生会高级干部，简直就是完美的女性！\r\n　　善于骑马、射箭。非机战时惯用长弓，还有匕首。\r\n　　宿命的轮回决定了她对姬子的态度。外表坚强的千歌音越来越突显自己内心的脆弱。\r\n　　这个年仅16岁的女生身上背负着很多很多，她会如何选择呢？",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "姬宫千歌音"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月1日"
+        },
+        {
+            "key": "声优",
+            "value": "川澄绫子"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 10,
+    "birth_day": 1,
+    "stat": {
+        "comments": 14,
+        "collects": 64
+    },
+    "anime_ids": [
+        2451
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 13,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/10/50595_crt_iP7fq.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e6/10/50595_crt_iP7fq.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/e6/10/50595_crt_iP7fq.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/10/50595_crt_iP7fq.jpg"
+    },
+    "summary": "自称“世界最强·最快且有着最完美的美貌的天才马娘”（不过是自称）\r\n从这可以看出的，她是以自己为世界中心的超自恋第一人称僕(Boku)女孩。\r\n做什么都要争第一的性格，而且如果自己不是主角的话就会不高兴起来。\r\n她的那自我意识过剩的态度，另周围的马娘们发愣，不过同时也温和地对待着。\r\n但她的成绩·实力也确实是实实在在的。对她来说，不仅是要赢得比赛，而且是以“美丽地获胜”为信条。\r\n***\r\n好歌剧（1996年3月13日~2018年5月17日）栗色\r\n公马\r\n出生地：日本（北海道浦河町）",
+    "name": "テイエムオペラオー",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "好歌剧"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "TM Opera O"
+                },
+                {
+                    "k": "英文名",
+                    "v": "T.M. Opera O"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月13日"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "体重",
+            "value": "总是很完美（自称）"
+        },
+        {
+            "key": "BWH",
+            "value": "B76・W55・H80"
+        },
+        {
+            "key": "毛色",
+            "value": "栗毛"
+        },
+        {
+            "key": "现实马主",
+            "value": "竹園 正繼"
+        },
+        {
+            "key": "成績(勝率)",
+            "value": "26戦14勝（53.8%)"
+        },
+        {
+            "key": "獲得賞金",
+            "value": "18億3,518万円 (中央)"
+        },
+        {
+            "key": "固有二つ名",
+            "value": "世紀末覇王"
+        }
+    ],
+    "stat": {
+        "comments": 23,
+        "collects": 118
+    },
+    "id": 50595,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        380448
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/c7/77082_crt_LlV25.jpg?r=1606010909",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b9/c7/77082_crt_LlV25.jpg?r=1606010909",
+        "large": "https://lain.bgm.tv/pic/crt/l/b9/c7/77082_crt_LlV25.jpg?r=1606010909",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/c7/77082_crt_LlV25.jpg?r=1606010909"
+    },
+    "summary": "修道服を着た、“自称・全知の神”。自らをオーディンと名乗る少女。\r\n突然陽太の前に現れ、神のような予知能力を見せて、陽太たちと共に夏の日々を過ごしていく。\r\n果たしてその力はなんなのか…？",
+    "name": "佐藤ひな",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "佐藤雏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "佐藤 一夏"
+                },
+                {
+                    "k": "日文名",
+                    "v": "佐藤 ひな"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さとう ひな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Satou Hina"
+                },
+                {
+                    "k": "昵称",
+                    "v": "全知の神、オーディン"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 72,
+        "collects": 87
+    },
+    "id": 77082,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        306429
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 12,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/19/72650_crt_nmSjn.jpg?r=1579404754",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e6/19/72650_crt_nmSjn.jpg?r=1579404754",
+        "large": "https://lain.bgm.tv/pic/crt/l/e6/19/72650_crt_nmSjn.jpg?r=1579404754",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/19/72650_crt_nmSjn.jpg?r=1579404754"
+    },
+    "summary": "地质组的高中二年级生。\r\n很喜欢随性看着地图到处走。\r\n在（地学社[译注]）还是地质研究会的时候就和美景相遇，入会。\r\n仰慕着可靠的美景，很懂她。",
+    "name": "猪瀬舞",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "猪濑舞"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "猪瀬 舞"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いのせ まい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Inose Mai"
+                },
+                {
+                    "k": "昵称",
+                    "v": "イノ先輩"
+                },
+                {
+                    "k": "中文昵称",
+                    "v": "小猪前辈"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月12日"
+        },
+        {
+            "key": "身高",
+            "value": "145cm"
+        }
+    ],
+    "stat": {
+        "comments": 15,
+        "collects": 82
+    },
+    "id": 72650,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        276150
+    ]
+}

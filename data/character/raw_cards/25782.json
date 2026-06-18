@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/56/25782_crt_9zS4Q.jpg?r=1410111742",
+        "grid": "https://lain.bgm.tv/pic/crt/g/13/56/25782_crt_9zS4Q.jpg?r=1410111742",
+        "large": "https://lain.bgm.tv/pic/crt/l/13/56/25782_crt_9zS4Q.jpg?r=1410111742",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/56/25782_crt_9zS4Q.jpg?r=1410111742"
+    },
+    "summary": "頭脳明晰で常に冷静。ツエルブとともに東京で高校生として生活を始める。\r\nだが、その真の目的は謎に包まれている。",
+    "name": "ナイン",
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Nine"
+                },
+                {
+                    "k": "日文名",
+                    "v": "九重 新"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ここのえ あらた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kokonoe Arata"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 18,
+        "collects": 40
+    },
+    "id": 25782,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        100443
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/8e/28062_crt_BG2cF.jpg?r=1416309279",
+        "grid": "https://lain.bgm.tv/pic/crt/g/62/8e/28062_crt_BG2cF.jpg?r=1416309279",
+        "large": "https://lain.bgm.tv/pic/crt/l/62/8e/28062_crt_BG2cF.jpg?r=1416309279",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/8e/28062_crt_BG2cF.jpg?r=1416309279"
+    },
+    "summary": "現地オブザーバーとして徴用した地上調査員エージェント。ディンゴは通称で本名「ザリク カジワラ」。総合評価Sランクだが素行不良と判定されている。自称高所恐怖症。ディーヴァとの取引は続けているが、アウトローで奴隷になってまで生きたいと思わないと電脳パーソナリティ化は拒んでいる。",
+    "name": "ザリク・カジワラ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "扎里克·卡吉瓦拉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "dingo"
+                },
+                {
+                    "v": "ディンゴ"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "丁格"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Zarik Kajiwara"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://ja.wikipedia.org/wiki/楽園追放_-Expelled_from_Paradise-"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 22
+    },
+    "id": 28062,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        37395
+    ]
+}

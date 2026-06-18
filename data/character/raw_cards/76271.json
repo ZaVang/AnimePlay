@@ -1,0 +1,79 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/f5/76271_crt_MS5Nq.jpg?r=1600441127",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c9/f5/76271_crt_MS5Nq.jpg?r=1600441127",
+        "large": "https://lain.bgm.tv/pic/crt/l/c9/f5/76271_crt_MS5Nq.jpg?r=1600441127",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/f5/76271_crt_MS5Nq.jpg?r=1600441127"
+    },
+    "summary": "由崎星空一见钟情的女子。对星空的告白回复以“如果能到结婚的程度的话那我们就交往吧”，并在那之后拜访了星空的家。星空的妻子。总之就是超级无敌非常可爱！",
+    "name": "由崎司",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "由崎司"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "小司"
+                },
+                {
+                    "v": "月読司"
+                },
+                {
+                    "k": "日文名",
+                    "v": "由崎司"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ゆざきつかさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "yuzaki tsukasa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月3日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "154.0cm"
+        },
+        {
+            "key": "体重",
+            "value": "41kg"
+        },
+        {
+            "key": "星座",
+            "value": "白羊座"
+        }
+    ],
+    "stat": {
+        "comments": 52,
+        "collects": 254
+    },
+    "id": 76271,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        301541
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/86/73045_crt_forU3.jpg?r=1686805788",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9c/86/73045_crt_forU3.jpg?r=1686805788",
+        "large": "https://lain.bgm.tv/pic/crt/l/9c/86/73045_crt_forU3.jpg?r=1686805788",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/86/73045_crt_forU3.jpg?r=1686805788"
+    },
+    "summary": "東京からきた転校生。容姿端麗で頭脳明晰。転校初日にクラスで浮いた存在となるが、ある出来事をきっかけに、カオルと共にウラシマトンネル探索の協力関係を結ぶ。",
+    "name": "花城あんず",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "花城杏子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "花城 あんず"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はなしろ あんず"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hanashiro Anzu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 37,
+        "collects": 166
+    },
+    "id": 73045,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        362575
+    ]
+}

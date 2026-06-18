@@ -1,0 +1,66 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": 1997,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/7d/10473_crt_glsIT.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/73/7d/10473_crt_glsIT.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/73/7d/10473_crt_glsIT.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/7d/10473_crt_glsIT.jpg"
+    },
+    "summary": "《我的妹妹哪有这么可爱》（俺の妹がこんなに可爱いわけがない）男主角高坂京介的妹妹，出生于1997年,居住于千叶市,目前就读国中二年级。和平凡的哥哥相反，外表出众，在流行杂志担任模特儿赚了不少钱。不知不觉间爱上了萌系动画和美少女游戏（不分是不是限制级），喜欢逛かーずSP和アキバBlog等网志，常因此冲动购物。对旁人的眼光十分在意而不敢公开自己的兴趣而闷在心理，刚好此时装在“梅露露”盒子中的“和妹妹恋爱吧♪”被哥哥发现，虽然不是她的本意，但还是向哥哥商量该怎么办。 在京介的建议和陪同下参加了“宅女集合”的线下聚会。在参加夏Comi后回家时偶遇好友新垣绫濑，并且暴露了自己的兴趣，曾一度绝交。在京介的介入下得以和绫濑恢复关系。",
+    "name": "高坂桐乃",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高坂桐乃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "こうさかきりの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kousaka Kirino"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1997年4月8日"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "45kg"
+        },
+        {
+            "key": "BWH",
+            "value": "82/54/81"
+        }
+    ],
+    "stat": {
+        "comments": 138,
+        "collects": 562
+    },
+    "id": 10473,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        5436,
+        37898
+    ]
+}

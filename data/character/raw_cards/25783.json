@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/fd/25783_crt_cWa79.jpg?r=1410111852",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bb/fd/25783_crt_cWa79.jpg?r=1410111852",
+        "large": "https://lain.bgm.tv/pic/crt/l/bb/fd/25783_crt_cWa79.jpg?r=1410111852",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/fd/25783_crt_cWa79.jpg?r=1410111852"
+    },
+    "summary": "像孩子一样天真，非常尊敬九重新，觉得他像哥哥一样，跟他一起转学到东京，两人经常一起行动。",
+    "name": "ツエルブ",
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Twelve"
+                },
+                {
+                    "k": "日文名",
+                    "v": "久見冬二"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひさみ とうじ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hisami Tōji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 41
+    },
+    "id": 25783,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        100443
+    ]
+}

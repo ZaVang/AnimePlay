@@ -1,0 +1,93 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 14,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ff/92/101553_crt_45u3s.jpg?r=1692190989",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ff/92/101553_crt_45u3s.jpg?r=1692190989",
+        "large": "https://lain.bgm.tv/pic/crt/l/ff/92/101553_crt_45u3s.jpg?r=1692190989",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ff/92/101553_crt_45u3s.jpg?r=1692190989"
+    },
+    "summary": "魔法少女にあこがれる平凡な女の子。\r\n突然現れた謎のマスコット・ヴェナリータに悪の\r\n組織「エノルミータ」の女幹部にさせられてしまう。\r\n変身後は内に秘めたS心を解放して世界征服に謹む!?",
+    "name": "柊うてな/悪の女幹部",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "柊宇天那/恶之女干部"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Magia Böse"
+                },
+                {
+                    "v": "Magia Baiser"
+                },
+                {
+                    "v": "魔法枫糖"
+                },
+                {
+                    "v": "マジアベーゼ"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "柊舞缇娜"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Utena Hiiragi"
+                },
+                {
+                    "k": "日文名",
+                    "v": "柊 うてな"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひいらぎ うてな"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月14日"
+        },
+        {
+            "key": "身高",
+            "value": "154 cm"
+        },
+        {
+            "key": "年龄",
+            "value": "14岁"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "果冻"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "辣的东西"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://mahoako-anime.com/"
+        }
+    ],
+    "stat": {
+        "comments": 114,
+        "collects": 286
+    },
+    "id": 101553,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        424663
+    ]
+}

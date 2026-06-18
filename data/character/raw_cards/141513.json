@@ -1,0 +1,69 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 30,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/db/141513_crt_2pX1W.jpg?r=1707919785",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d4/db/141513_crt_2pX1W.jpg?r=1707919785",
+        "large": "https://lain.bgm.tv/pic/crt/l/d4/db/141513_crt_2pX1W.jpg?r=1707919785",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/db/141513_crt_2pX1W.jpg?r=1707919785"
+    },
+    "summary": "ことなかれ主義の量産型女子高生。\r\n感受性が強すぎるきらいがあり、人に心から寄り添える一方で小さなことでも傷つきやすいところがある。\r\n幼少期はイラストレーター「海月ヨル」として活動していたが、とある出来事が原因で活動休止に追い込まれる。\r\nそれゆえに特別であることにトラウマがあり、できるだけ普通であろうと日々を過ごしていた。\r\nしかし、花音との出会いがきっかけとなり、彼女の日常はまた特別へと向かっていく。",
+    "name": "光月まひる",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "光月真昼"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "光月 まひる"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こうづき まひる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kōzuki Mahiru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月30日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://yorukura-anime.com/character/"
+        }
+    ],
+    "stat": {
+        "comments": 117,
+        "collects": 138
+    },
+    "id": 141513,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        425909
+    ]
+}

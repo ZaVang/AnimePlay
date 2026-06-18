@@ -1,0 +1,57 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 19,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/b6/73191_crt_8l78L.jpg?r=1678023957",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9f/b6/73191_crt_8l78L.jpg?r=1678023957",
+        "large": "https://lain.bgm.tv/pic/crt/l/9f/b6/73191_crt_8l78L.jpg?r=1678023957",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/b6/73191_crt_8l78L.jpg?r=1678023957"
+    },
+    "summary": "水原千鹤是由宫岛礼吏创作的漫画《女朋友，借我一下》及其衍生作品的登场角色。\r\n本作女主角。[mask]本名一之濑千鹤（一ノ瀬 ちづる）。[/mask]\r\n\r\n在「Diamond」事务所担任出租女友，初登场时是新人，平均分是最高分5星，排名首位。在意自己的表现，因和也在首次租借后给予1星，平均分下降至4.7星，与和也争执。\r\n\r\n练马大学文学部一年级生，与木之下和也就读同一所大学。租住练马区的某公寓，与和也相邻。\r\n\r\n担任出租女友时，主要发型是长直配侧辫子，穿着不同款式的裙子（和也称她为「S级美少女」）。在学时穿土气的服饰，绑双麻花辫、戴眼镜。漫画设定上是「黑发」，但封面及彩页多用深棕色头发。\r\n初时对和也没有好感，只视他为顾客。其后对和也逐渐产生好感。\r\n\r\n父母离异，母亲和祖父相继去世，与祖母相依为命。向和也提及为了祖父的遗愿，参加演员训练，需要经费而从事出租女友的工作。",
+    "name": "水原千鶴",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "水原千鹤"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "みずはらちづる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mizuhara Chizuru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月19日"
+        },
+        {
+            "key": "年龄",
+            "value": "19"
+        }
+    ],
+    "stat": {
+        "comments": 106,
+        "collects": 299
+    },
+    "id": 73191,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        296076
+    ]
+}

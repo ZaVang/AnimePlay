@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/b8/15457_crt_gK3N0.jpg?r=1605741538",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2c/b8/15457_crt_gK3N0.jpg?r=1605741538",
+        "large": "https://lain.bgm.tv/pic/crt/l/2c/b8/15457_crt_gK3N0.jpg?r=1605741538",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/b8/15457_crt_gK3N0.jpg?r=1605741538"
+    },
+    "summary": "　　和阳人读同一间高中，目前1年级。短发的右侧特别绑成一束，像是尾巴一样。外表给人年幼印象，胸部也不大，瞳色有点偏蓝色，阳人觉得她有点像猫。名家筒隐的次女，在懂事前双亲就已经身故，和姐姐相依为命。讨厌自己孩子气、情绪起伏剧烈的个性，向不笑猫像许愿，希望能够丢掉真心话，愿望实现后再也无法用表情和语气表达自己的情绪。受姐姐的影响而加入儿童服务社，失去表情后暂时停止在第一线服务。\r\n\r\n　　最后决定把自己的真心话送给姐姐，并和阳人一起寻找其他不需要真心话的人。\r\n\r\n　　知道阳人有温柔的一面，加上曾经与失去表面工夫的阳人一起行动过，能够包容他的部分变态行为，但与他说话的语气很辛辣。\r\n\r\n　　擅长料理、画图与按摩，房间里有很多游戏和疆尸电影的DVD，喜欢抽鬼牌与大富豪等扑克牌游戏。\r\n\r\n　・娃娃机达人\r\n　・太鼓达人",
+    "name": "筒隠月子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "筒隐月子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "筒隠 月子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "つつかくし つきこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tsutsukakushi Tsukiko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "zh.wikipedia"
+        }
+    ],
+    "stat": {
+        "comments": 34,
+        "collects": 425
+    },
+    "id": 15457,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        45842
+    ]
+}

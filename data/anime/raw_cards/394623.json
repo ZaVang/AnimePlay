@@ -1,0 +1,520 @@
+{
+    "date": "2024-04-13",
+    "platform": "TV",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/9c/d2/394623_qErlO.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/9c/d2/394623_qErlO.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/9c/d2/394623_qErlO.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/9c/d2/394623_qErlO.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/9c/d2/394623_qErlO.jpg"
+    },
+    "summary": "这是一个怪兽如日常般威胁人类的世界。日比野卡夫卡原本立志加入“日本防卫队”，却放弃梦想，在怪兽清扫公司工作。与他一同发誓“两人一起消灭所有怪兽”的发小·亚白米娜已经成为第三部队队长大显身手，再加上遇到了想要加入防卫队的后辈·市川莱诺，以此为契机，卡夫卡再次开始追逐梦想。就在这时，一只神秘的小型怪兽让卡夫卡“变身成怪兽”获得了巨大的力量！卡夫卡被命名为“怪兽8号”，在全日本遭到追杀，但他依然没有放弃成为防卫队员的梦想，与怪兽灾害进行着抗争。",
+    "name": "怪獣8号",
+    "name_cn": "怪兽8号",
+    "tags": [
+        {
+            "name": "战斗",
+            "count": 1289,
+            "total_cont": 0
+        },
+        {
+            "name": "2024年4月",
+            "count": 1062,
+            "total_cont": 0
+        },
+        {
+            "name": "漫画改",
+            "count": 1015,
+            "total_cont": 0
+        },
+        {
+            "name": "ProductionI.G",
+            "count": 788,
+            "total_cont": 0
+        },
+        {
+            "name": "TV",
+            "count": 686,
+            "total_cont": 0
+        },
+        {
+            "name": "奇幻",
+            "count": 592,
+            "total_cont": 0
+        },
+        {
+            "name": "热血",
+            "count": 558,
+            "total_cont": 0
+        },
+        {
+            "name": "大河内一楼",
+            "count": 536,
+            "total_cont": 0
+        },
+        {
+            "name": "2024",
+            "count": 480,
+            "total_cont": 0
+        },
+        {
+            "name": "漫改",
+            "count": 428,
+            "total_cont": 0
+        },
+        {
+            "name": "Production.I.G",
+            "count": 271,
+            "total_cont": 0
+        },
+        {
+            "name": "怪兽",
+            "count": 161,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 121,
+            "total_cont": 0
+        },
+        {
+            "name": "宮繁之",
+            "count": 77,
+            "total_cont": 0
+        },
+        {
+            "name": "神谷友美",
+            "count": 69,
+            "total_cont": 0
+        },
+        {
+            "name": "搞笑",
+            "count": 49,
+            "total_cont": 0
+        },
+        {
+            "name": "少年向",
+            "count": 41,
+            "total_cont": 0
+        },
+        {
+            "name": "TMS",
+            "count": 18,
+            "total_cont": 0
+        },
+        {
+            "name": "怪兽8号",
+            "count": 17,
+            "total_cont": 0
+        },
+        {
+            "name": "宫繁之",
+            "count": 17,
+            "total_cont": 0
+        },
+        {
+            "name": "2024年",
+            "count": 15,
+            "total_cont": 0
+        },
+        {
+            "name": "科幻",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "日漫",
+            "count": 10,
+            "total_cont": 0
+        },
+        {
+            "name": "JUMP",
+            "count": 10,
+            "total_cont": 0
+        },
+        {
+            "name": "日本动画",
+            "count": 10,
+            "total_cont": 0
+        },
+        {
+            "name": "动画",
+            "count": 8,
+            "total_cont": 0
+        },
+        {
+            "name": "TVA",
+            "count": 7,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "怪兽8号"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "怪獸8號"
+                },
+                {
+                    "v": "Kaijuu 8-gou"
+                },
+                {
+                    "v": "Kaiju No.8"
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2024年4月13日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://kaiju-no8.net/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレ東系列"
+        },
+        {
+            "key": "播放结束",
+            "value": "2024年6月29日"
+        },
+        {
+            "key": "导演",
+            "value": "宮繁之、神谷友美"
+        },
+        {
+            "key": "Copyright",
+            "value": "©防衛隊第3部隊 ©松本直也／集英社"
+        },
+        {
+            "key": "原作",
+            "value": "松本直也（集英社「少年ジャンプ＋」連載）"
+        },
+        {
+            "key": "人物设定",
+            "value": "西尾鉄也"
+        },
+        {
+            "key": "设定",
+            "value": "前田真宏；设定协力：石森連"
+        },
+        {
+            "key": "怪物设计",
+            "value": "khara"
+        },
+        {
+            "key": "枪械设定",
+            "value": "髙田晃"
+        },
+        {
+            "key": "製作",
+            "value": "防衛隊第3部隊（東宝、集英社、Production I.G、Khara；山田祥子、海老原麻里、富樫里帆、桑原雅成、村上舞香）；大田圭二、瓶子吉久、植田浩史、和田丈嗣、緒方智幸"
+        },
+        {
+            "key": "执行制片人",
+            "value": "山中一孝、大好誠"
+        },
+        {
+            "key": "总制片人",
+            "value": "高橋敦司、藤尾明史"
+        },
+        {
+            "key": "企画",
+            "value": "武井克弘、林辰朗"
+        },
+        {
+            "key": "制片人",
+            "value": "柳澤俊介、橋本龍、有田武将、森廣扶美、岡島隆敏"
+        },
+        {
+            "key": "助理制片人",
+            "value": "北村啓、朴木千晴、遠藤亜美、武内萌華"
+        },
+        {
+            "key": "音乐制作",
+            "value": "日本コロムビア、東宝ミュージック"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "有馬由衣"
+        },
+        {
+            "key": "色彩设计",
+            "value": "広瀬いづみ、有澤法子(辅)"
+        },
+        {
+            "key": "美术监督",
+            "value": "木村真二、赤木寿子(辅)"
+        }
+    ],
+    "rating": {
+        "rank": 7432,
+        "total": 5531,
+        "count": {
+            "1": 28,
+            "2": 25,
+            "3": 96,
+            "4": 315,
+            "5": 915,
+            "6": 2201,
+            "7": 1490,
+            "8": 354,
+            "9": 46,
+            "10": 61
+        },
+        "score": 6.1
+    },
+    "total_episodes": 12,
+    "collection": {
+        "on_hold": 453,
+        "dropped": 1022,
+        "wish": 1196,
+        "collect": 8344,
+        "doing": 1090
+    },
+    "id": 394623,
+    "eps": 12,
+    "meta_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗",
+        "少年向"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        126799,
+        126859,
+        126860
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9b/b9/126799_crt_kxjF0.jpg?r=1705209401",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9b/b9/126799_crt_kxjF0.jpg?r=1705209401",
+                "large": "https://lain.bgm.tv/pic/crt/l/9b/b9/126799_crt_kxjF0.jpg?r=1705209401",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9b/b9/126799_crt_kxjF0.jpg?r=1705209401"
+            },
+            "name": "怪獣8号",
+            "summary": "日比野カフカが正体不明の小型怪獣に寄生され、変身した姿。他の怪獣を圧倒する凄まじい力を秘めている。防衛隊発足以来初の未討伐怪獣となり、日本中から追われる存在となる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/2f/4498_prsn_58Dz8.jpg?r=1451539257",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9f/2f/4498_prsn_58Dz8.jpg?r=1451539257",
+                        "large": "https://lain.bgm.tv/pic/crt/l/9f/2f/4498_prsn_58Dz8.jpg?r=1451539257",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/2f/4498_prsn_58Dz8.jpg?r=1451539257"
+                    },
+                    "name": "TARAKO",
+                    "short_summary": "TARAKOは、日本の声優、ナレーター、女優、シンガーソングライター、脚本家、エッセイスト。群馬県太田市出身。トルバドール音楽事務所所属。",
+                    "career": [
+                        "producer",
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4498,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/ad/32203_prsn_ma882.jpg?r=1713020534",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4f/ad/32203_prsn_ma882.jpg?r=1713020534",
+                        "large": "https://lain.bgm.tv/pic/crt/l/4f/ad/32203_prsn_ma882.jpg?r=1713020534",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/ad/32203_prsn_ma882.jpg?r=1713020534"
+                    },
+                    "name": "福西勝也",
+                    "short_summary": "福西 勝也（ふくにし まさや、2月24日 - ）は、日本の男性声優。奈良県出身。賢プロダクション所属。\r\n\r\nスクールデュオ17期アッパークラス卒業。\r\n趣味・特技は関西弁、歌、声楽、筋トレ、ボルダリング、TRPG。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 32203,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/89/79091_prsn_S9RFS.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/60/89/79091_prsn_S9RFS.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/60/89/79091_prsn_S9RFS.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/89/79091_prsn_S9RFS.jpg"
+                    },
+                    "name": "梁興昌",
+                    "short_summary": "台湾男性配音员、声音导演。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79091,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/fe/79188_prsn_cWqRq.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b3/fe/79188_prsn_cWqRq.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b3/fe/79188_prsn_cWqRq.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/fe/79188_prsn_cWqRq.jpg"
+                    },
+                    "name": "楊詩穎",
+                    "short_summary": "台湾女性配音员，师从姜瑰瑾。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79188,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 126799
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/43/126859_crt_z7DFY.jpg?r=1758991686",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6e/43/126859_crt_z7DFY.jpg?r=1758991686",
+                "large": "https://lain.bgm.tv/pic/crt/l/6e/43/126859_crt_z7DFY.jpg?r=1758991686",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/43/126859_crt_z7DFY.jpg?r=1758991686"
+            },
+            "name": "日比野カフカ",
+            "summary": "怪獣清掃専門業者「モンスタースイーパー」で働く32歳の清掃員。\r\n防衛隊員になるというかつての夢を諦めたものの、幼馴染の亜白ミナが防衛隊第3部隊隊長として脚光を浴びる姿に割り切れない思いを抱いていた。\r\nしかし防衛隊員を志す若者・市川レノとの出会いをきっかけに、再び夢を追う決意を固める。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/20/7050_prsn_k1g8H.jpg?r=1688572917",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f9/20/7050_prsn_k1g8H.jpg?r=1688572917",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f9/20/7050_prsn_k1g8H.jpg?r=1688572917",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/20/7050_prsn_k1g8H.jpg?r=1688572917"
+                    },
+                    "name": "潘めぐみ",
+                    "short_summary": "日本の声優、女優。東京都出身。アトミックモンキー所属。本名は潘 芽具実。\r\n日本大学櫻丘高等学校卒業。2012年3月に日本大学芸術学部演劇学科を卒業。声優・女優・西洋占星術師の潘恵子は実母。\r\n\r\n2008年、実写映画『櫻の園』の一般公募を経て、日本大学芸術学部演劇学科在学中に和田遙役で女優デビュー。\r\n2011年、日本テレビ系のテレビアニメ『HUNTER×HUNTER』の主人公・ゴン＝フリークス（3代目）役に抜擢され声優デビュー。オーディションでは100人を超す参加者の中からスタッフの満場一致で選ばれた。\r\n2014年、『ハピネスチャージプリキュア!』で白雪ひめ/キュアプリンセス役に起用される。共演者の中には大学の同級生でもある長谷美希が出演している。\r\n2017年、第11回声優アワードで助演女優賞を受賞する。\r\n\r\n声優としてのデビュー作である『HUNTER×HUNTER』の原作は小学生の頃に潘が初めて小遣いで買った漫画で、アニメも毎回視てグッズも持っているほどのファンであり、記者会見では感極まって涙を流した。オーディションでは主演をもらえるとは思っておらず、端役でいいから引っかかってほしい、ぐらいの期待だったという。子供の頃から好きだった作品の主演を務めるという夢のような事態に、番組開始から3年以上たった2014年時点になっても現実感を持てないことがあり「ずっと私、眠ってるんじゃ」「夢を見てるんじゃないか」と語っている。\r\nラジオ『潘めぐみ・伊瀬茉莉也の HUNTER×HUNTER HUNTER STUDIO』における愛称は『ぐみたん』である。2011年10月9日の第1回目の放送で決定した。\r\n趣味はお菓子作り。菓子以外の料理はあまり得意ではないため、克服のために料理教室に通っていた時期もある。カラオケも趣味で、いわゆるヒトカラを好む。友達とカラオケに行っても、別々に部屋を借りてそれぞれヒトカラするという。\r\n\r\n声優の潘恵子の娘であり、両親の離婚により母子家庭で育った。その頃母親の恵子は第一線で活躍していた売れっ子声優であり、母が出演していたテレビアニメを家のテレビで見ていると、台所から恵子の声が聞こえてくるのにテレビからも母親の声が聞こえてくると言う環境であったため、その光景は子供心ながらに少々異様な環境だったと感じていたようである。恵子を通して声優という職業を知り憧れもあったが、「母親が声優だから自分もなる、というのは違うんじゃないか」と思い始め、声優になりたいという願望を明かすことは長くできなかった。恵子に内緒で、金を貯めて演劇のワークショップに通っていたこともあったが、恵子を交えての高校の三者面談の席で「日芸（日本大学芸術学部）に行きたい」と発言し、この場で声優、演技の道に進みたいことを明かした。恵子からは反対はされなかったが大賛成でもなかったとのことで「道は自分で切り拓きなさい」との旨のことを言われたという。\r\nその後、アニメ『HUNTER×HUNTER』の第1作目などの作品を見るうち徐々に「母親と関係のない部分でも好きだ」とわかるようになったという。自らが主演となった第2作目のアニメ『HUNTER×HUNTER』ではゴンの母親代わりであるミトを恵子が演じており、母娘共演となった。この親子共演にあたり、恵子から自宅で演技指導を受けるという一幕があったという。2013年の映画『キャリー』の吹き替えにおいても母娘のキャラクターを実際の母娘で演じた。\r\n『HUNTER×HUNTER』で共演した永井一郎は恵子と旧知の仲であり、恵子のことについて潘に対し「あなたは、あなた。たとえ何があっても、続けていくように」と激励した。恵子はこの言葉について、「『母親のプレッシャーははねのけなさい!』ということだったのかなあ…。感慨深いものがあります」と語っている。\r\n2013年の映画『キャリー』の日本語吹き替え版では、恵子がオリジナル版の吹き替えで演じたキャリー（クロエ・グレース・モレッツ）役で出演し、さらに恵子もキャリーの母親役で出演する母娘共演となった。\r\n2014年に放送された『機動戦士ガンダム』の公式パロディアニメ『ガンダムさん』では、恵子がオリジナルで演じていたキャラクターのララァ・スンを演じ、恵子もナレーションで出演する母娘共演作となった。\r\n幼少期には、恵子が出演していた特撮テレビドラマ『燃えろ!!ロボコン』の最終話にカメオ出演している。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 7050,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/ad/32203_prsn_ma882.jpg?r=1713020534",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4f/ad/32203_prsn_ma882.jpg?r=1713020534",
+                        "large": "https://lain.bgm.tv/pic/crt/l/4f/ad/32203_prsn_ma882.jpg?r=1713020534",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/ad/32203_prsn_ma882.jpg?r=1713020534"
+                    },
+                    "name": "福西勝也",
+                    "short_summary": "福西 勝也（ふくにし まさや、2月24日 - ）は、日本の男性声優。奈良県出身。賢プロダクション所属。\r\n\r\nスクールデュオ17期アッパークラス卒業。\r\n趣味・特技は関西弁、歌、声楽、筋トレ、ボルダリング、TRPG。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 32203,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/89/79091_prsn_S9RFS.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/60/89/79091_prsn_S9RFS.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/60/89/79091_prsn_S9RFS.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/89/79091_prsn_S9RFS.jpg"
+                    },
+                    "name": "梁興昌",
+                    "short_summary": "台湾男性配音员、声音导演。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79091,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/fe/79188_prsn_cWqRq.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b3/fe/79188_prsn_cWqRq.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b3/fe/79188_prsn_cWqRq.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/fe/79188_prsn_cWqRq.jpg"
+                    },
+                    "name": "楊詩穎",
+                    "short_summary": "台湾女性配音员，师从姜瑰瑾。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79188,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 126859
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/5b/126860_crt_VVVtZ.jpg?r=1705209522",
+                "grid": "https://lain.bgm.tv/pic/crt/g/be/5b/126860_crt_VVVtZ.jpg?r=1705209522",
+                "large": "https://lain.bgm.tv/pic/crt/l/be/5b/126860_crt_VVVtZ.jpg?r=1705209522",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/5b/126860_crt_VVVtZ.jpg?r=1705209522"
+            },
+            "name": "亜白ミナ",
+            "summary": "日本防衛隊第3部隊隊長で、カフカの幼馴染。\r\n27歳の若さで数百に及ぶ怪獣を討伐しており、全隊長の中でもトップクラスの人気と実力を誇る。\r\n狙撃武器の扱いに長けており、大型怪獣の討伐を得意とする。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/b7/5766_prsn_6q644.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/b7/5766_prsn_6q644.jpg"
+                    },
+                    "name": "瀬戸麻沙美",
+                    "short_summary": "中学生2年生の時、偶然視聴したアニメ『D.Gray-man』の主人公、アレン・ウォーカー（声：小林沙苗）に魅せられ、キャラクターだけでなく演者の声優にも興味が湧き、声優を志す。高校在学中の2009年に声優事務所のオーディションを受験、翌2010年より声優活動を開始する。\r\n2010年、初めて受けたオーディションでテレビアニメ『放浪息子』（2011年）の準主人公 \"高槻よしの\" 役に抜擢される。彼女にとって初仕事の収録だったが、演技などに関して事前の指示はほとんど必要としなかったと監督のあおきえいは述べている。\r\n2011年、日本テレビ系テレビアニメ『ちはやふる』で主演（ \"綾瀬千早\" 役）とエンディング主題歌の歌唱を担当。同局系列のテレビアニメ『HUNTER×HUNTER』の \"クラピカ\" 役オーディションに参加していた瀬戸の演技が『ちはやふる』番組関係者の目に留まり、改めて \"綾瀬千早\" 役のオーディションを行ったところ満場一致で瀬戸の起用が決定した。\r\n2015年4月1日付けで、シグマ・セブンeからシグマ・セブンへ移動。\r\n2021年11月1日よりStarCrewへ移籍。あわせて公式Twitterアカウントを開設した。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 5766,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/94/79226_prsn_jOExX.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5f/94/79226_prsn_jOExX.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/5f/94/79226_prsn_jOExX.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/94/79226_prsn_jOExX.jpg"
+                    },
+                    "name": "張乃文",
+                    "short_summary": "台湾女性配音员、广播节目主持人，星座天蝎座。\r\n\r\n私立东吴大学日文系毕业，曾交换京都同志社大学。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79226,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 126860
+        }
+    ]
+}

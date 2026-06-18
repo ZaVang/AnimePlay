@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/b3/60455_crt_FD4cR.jpg?r=1516938274",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c5/b3/60455_crt_FD4cR.jpg?r=1516938274",
+        "large": "https://lain.bgm.tv/pic/crt/l/c5/b3/60455_crt_FD4cR.jpg?r=1516938274",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/b3/60455_crt_FD4cR.jpg?r=1516938274"
+    },
+    "summary": "",
+    "name": "赤血球",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "红血球（AE3803）"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "红血球"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "红细胞"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 11,
+        "collects": 64
+    },
+    "id": 60455,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        235612,
+        278815
+    ]
+}

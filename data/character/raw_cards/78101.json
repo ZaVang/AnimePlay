@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/5d/78101_crt_0MUiG.jpg?r=1611270354",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c5/5d/78101_crt_0MUiG.jpg?r=1611270354",
+        "large": "https://lain.bgm.tv/pic/crt/l/c5/5d/78101_crt_0MUiG.jpg?r=1611270354",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/5d/78101_crt_0MUiG.jpg?r=1611270354"
+    },
+    "summary": "【癒】の勇者。クラスは回復術士。\r\n村育ちの心優しい少年で、世界を救うため\r\n他の勇者とともに魔王に立ち向かう。\r\n有能な回復術士であるが、《回復》は対象が経験した\r\n苦痛と恐怖を受けなければならず、使用を躊躇している。",
+    "name": "ケヤル / ケヤルガ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "克亚路"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "克亚路加"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Kayal"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Keyaru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://kaiyari.com/character.html"
+        }
+    ],
+    "stat": {
+        "comments": 30,
+        "collects": 23
+    },
+    "id": 78101,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        295017
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/c2/56788_crt_4MS09.jpg?r=1599731656",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b2/c2/56788_crt_4MS09.jpg?r=1599731656",
+        "large": "https://lain.bgm.tv/pic/crt/l/b2/c2/56788_crt_4MS09.jpg?r=1599731656",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/c2/56788_crt_4MS09.jpg?r=1599731656"
+    },
+    "summary": "よく笑い、元気で、表情豊かな少女。膵臓の病気のため、「僕」と会った時には余命1年になっていた。病気になった自分の運命を恨まないと決めたため日記のタイトルを「闘病日記」の代わりに「共病文庫」とつける。",
+    "name": "山内桜良",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "山内樱良"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "山内 桜良"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やまうち さくら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yamauchi Sakura"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 49,
+        "collects": 212
+    },
+    "id": 56788,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        221736
+    ]
+}

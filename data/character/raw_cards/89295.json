@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/18/89295_crt_e0XJt.jpg?r=1618450183",
+        "grid": "https://lain.bgm.tv/pic/crt/g/68/18/89295_crt_e0XJt.jpg?r=1618450183",
+        "large": "https://lain.bgm.tv/pic/crt/l/68/18/89295_crt_e0XJt.jpg?r=1618450183",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/18/89295_crt_e0XJt.jpg?r=1618450183"
+    },
+    "summary": "リザードマンの男性で、爬虫類型の亜人。\r\nトカゲが人型になったような姿をしており、常人に比べて頑丈な体と厳つい外見をしている。しかし内気な性格で、周囲からも冴えない顔をしているとよく指摘される。\r\n臆病ながら根はまじめなことを二ノ宮キンジに見抜かれ、そそのかされる形で彼の仕事に協力するようになるが、何かと二ノ宮が引き起こした事態の被害を受けている。要領が悪く、自分にはなんの取り柄もないと思っているが、実は田舎育ちで野草やキノコの知識が豊富。二ノ宮が未来のアムリアから帰還したあとは、彼から事情を聞き、相変わらず流されるように彼らに協力することとなる。",
+    "name": "ワニベ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "瓦尼贝"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "鳄鱼"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Wanibe"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 6
+    },
+    "id": 89295,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        309668
+    ]
+}

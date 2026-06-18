@@ -1,0 +1,60 @@
+{
+    "id": 94117,
+    "name": "シロツグ・ラーダット",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/c2/cf/94117_crt_0hxIQ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/cf/94117_crt_0hxIQ.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/cf/94117_crt_0hxIQ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c2/cf/94117_crt_0hxIQ.jpg"
+    },
+    "summary": "宇宙軍士官第2期生で、階級は中佐（劇中で昇進し大佐）。宇宙飛行士候補。\r\n中流家庭で平凡に生まれ育つ。学業の成績に鑑み、水軍パイロットへの夢は諦め、仕方なく入った宇宙軍で漫然と過し、同僚の殉職にも無感動であった。\r\n歓楽街でリイクニから宗教勧誘のビラを受け取ったのをきっかけに宇宙戦艦パイロットへ志願し、様々な訓練やトラブルを乗り越えながら史上初の宇宙戦艦（有人人工衛星）パイロットとなる。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "希洛兹古"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Shirotsugh Lhadatt"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "171cm"
+        },
+        {
+            "key": "体重",
+            "value": "62kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "日文维基"
+        },
+        {
+            "key": "年龄",
+            "value": "21岁"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 6
+    },
+    "anime_ids": [
+        2046
+    ]
+}

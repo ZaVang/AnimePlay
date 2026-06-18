@@ -1,0 +1,58 @@
+{
+    "birth_mon": 4,
+    "gender": "male",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/9a/25976_crt_CAdl0.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d3/9a/25976_crt_CAdl0.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/d3/9a/25976_crt_CAdl0.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/9a/25976_crt_CAdl0.jpg"
+    },
+    "summary": "桐人的拍挡，桐人在这个世界中最先遇到的居民。身负砍断恶魔之树“基加斯西达”的天职。",
+    "name": "ユージオ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "尤吉欧"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "优吉欧"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Eugeo"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ユージオ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月10日"
+        }
+    ],
+    "stat": {
+        "comments": 22,
+        "collects": 73
+    },
+    "id": 25976,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        225604,
+        279457
+    ]
+}

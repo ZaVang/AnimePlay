@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/fe/70544_crt_md3YW.jpg?r=1563597156",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ed/fe/70544_crt_md3YW.jpg?r=1563597156",
+        "large": "https://lain.bgm.tv/pic/crt/l/ed/fe/70544_crt_md3YW.jpg?r=1563597156",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/fe/70544_crt_md3YW.jpg?r=1563597156"
+    },
+    "summary": "本作男主角，16岁，高一生。原本住在神津岛上，因故离家出走后来到东京，在须贺经营的事务所撰写要投稿给超自然杂志的文章。在找打工时邂逅在麦当劳打工的阳菜。",
+    "name": "森嶋帆高",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "森岛帆高"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "もりしま ほだか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Morishima Hodaka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 42,
+        "collects": 61
+    },
+    "id": 70544,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        269235
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "id": 14399,
+    "name": "神山咲夜",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/15/c8/14399_crt_SraVR.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/c8/14399_crt_SraVR.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/c8/14399_crt_SraVR.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/15/c8/14399_crt_SraVR.jpg"
+    },
+    "summary": "高校1年生、水泳部所属。\r\n雪乃の部活の後輩。奏を偏愛しており、雪乃を買収して奏の写真や持ち物を密かに集めたりと、ストーカーのような行動をしている。裏表のある性格で実は結構黒い。大手ゼネコンの社長令嬢であり、家は超が付くほどのお金持ちだが、お嬢様のために少々浮世離れしている。実家通学だが、ある目的のために「無理矢理入寮計画」を画策している。趣味はネットオークションとカヌー、奏の観察。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "神山咲夜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かみやま さくや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kamiyama Sakuya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月17日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "147cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B91/W56/H85"
+        },
+        {
+            "key": "引用来源",
+            "value": "Candy☆Boy - Wikipedia"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 8,
+    "birth_day": 17,
+    "stat": {
+        "comments": 4,
+        "collects": 26
+    },
+    "anime_ids": [
+        2829
+    ]
+}

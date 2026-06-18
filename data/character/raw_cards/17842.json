@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/fc/17842_crt_ZYIA7.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d3/fc/17842_crt_ZYIA7.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/d3/fc/17842_crt_ZYIA7.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/fc/17842_crt_ZYIA7.jpg"
+    },
+    "summary": "雨と雪の父親。本名不明（運転免許証には名前が載っているが、それが本名かどうかは不明）、作中では「彼」と呼ばれる。運転免許証記載の生年月日は昭和54年2月12日。街で運送ドライバーとして働く一方、花の大学に忍び込んで勉強していた。実は、ニホンオオカミの末裔。花との間に2人の子供を授かるが、突然事故で死去する。",
+    "name": "彼",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "他"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "おおかみおとこ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 18,
+        "collects": 12
+    },
+    "id": 17842,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        28440
+    ]
+}

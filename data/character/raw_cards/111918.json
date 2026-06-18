@@ -1,0 +1,58 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/33/111918_crt_1PK1F.jpg?r=1657925886",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c4/33/111918_crt_1PK1F.jpg?r=1657925886",
+        "large": "https://lain.bgm.tv/pic/crt/l/c4/33/111918_crt_1PK1F.jpg?r=1657925886",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/33/111918_crt_1PK1F.jpg?r=1657925886"
+    },
+    "summary": "来自水星的转学生，驾驶科2年级生。\r\n性格内向，有些不擅与人沟通。\r\n是水星所开发的MS，GUNDAM AERIAL的驾驶员。",
+    "name": "スレッタ・マーキュリー",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "斯莱塔·墨丘利"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Suletta Mercury"
+                },
+                {
+                    "k": "昵称",
+                    "v": "狸猫"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki、https://g-witch.net/prologue/character/1/"
+        },
+        {
+            "key": "MOBILE SUIT",
+            "value": "ガンダム・エアリアル"
+        }
+    ],
+    "stat": {
+        "comments": 157,
+        "collects": 110
+    },
+    "id": 111918,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        349441,
+        403238
+    ]
+}

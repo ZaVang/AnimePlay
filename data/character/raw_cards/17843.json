@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/b1/17843_crt_4e2WO.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/71/b1/17843_crt_4e2WO.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/71/b1/17843_crt_4e2WO.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/b1/17843_crt_4e2WO.jpg"
+    },
+    "summary": "おおかみこどもで、雨の姉。名前は、雪の日に生まれたことから名付けられた。お転婆で活発な性格だが、小学校生活の中で、自分のような女子がいないことを知り、淑やかに振る舞うようになる。悩んだ末に、「人間」として生きることを選ぶ。",
+    "name": "雪",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ゆき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 18,
+        "collects": 45
+    },
+    "id": 17843,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        28440
+    ]
+}

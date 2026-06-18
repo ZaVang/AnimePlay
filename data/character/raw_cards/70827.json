@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/31/81/70827_crt_m4eeq.jpg?r=1570800407",
+        "grid": "https://lain.bgm.tv/pic/crt/g/31/81/70827_crt_m4eeq.jpg?r=1570800407",
+        "large": "https://lain.bgm.tv/pic/crt/l/31/81/70827_crt_m4eeq.jpg?r=1570800407",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/31/81/70827_crt_m4eeq.jpg?r=1570800407"
+    },
+    "summary": "新米女神のリスタルテに召喚された、ありえないほど慎重な勇者。能力値は高いが、異常なまでに用心深い。",
+    "name": "竜宮院聖哉",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "龙宫院圣哉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Seiya Ryuguin"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "りゅうぐういん せいや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ryūgūin Seiya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 15,
+        "collects": 42
+    },
+    "id": 70827,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        266157
+    ]
+}

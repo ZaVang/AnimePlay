@@ -1,0 +1,74 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/39/29511_crt_bvRVj.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a6/39/29511_crt_bvRVj.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/a6/39/29511_crt_bvRVj.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/39/29511_crt_bvRVj.jpg"
+    },
+    "summary": "星之海学园高中一年生，学生会长，拥有一头漂亮的银发和蓝色眼睛的无口系美少女，是“从任意一人的视线中消失”的能力持有者。由于不近人情和处事冷漠的行为作风，遭到班级同学的孤立，但谈到喜欢的东西是会变的兴奋。和哥哥一样是摇滚乐队『ZHIEND（ジエンド）』的粉丝。",
+    "name": "友利奈緒",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "友利奈绪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "友利 奈緒"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ともり なお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tomori Nao"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "ピクシブ百科事典",
+                    "v": "https://dic.pixiv.net/a/%E5%8F%8B%E5%88%A9%E5%A5%88%E7%B7%92"
+                },
+                {
+                    "k": "公式サイト",
+                    "v": "https://charlotte-anime.jp/character/#/nao"
+                }
+            ]
+        },
+        {
+            "key": "所属",
+            "value": "星之海学园一年级（学生会长）"
+        },
+        {
+            "key": "特殊能力",
+            "value": "不可視(只能对一个人使用)"
+        }
+    ],
+    "stat": {
+        "comments": 141,
+        "collects": 1007
+    },
+    "id": 29511,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        120925
+    ]
+}

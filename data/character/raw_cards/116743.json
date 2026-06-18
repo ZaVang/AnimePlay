@@ -1,0 +1,51 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/22/116743_crt_sSz37.jpg?r=1689608845",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c0/22/116743_crt_sSz37.jpg?r=1689608845",
+        "large": "https://lain.bgm.tv/pic/crt/l/c0/22/116743_crt_sSz37.jpg?r=1689608845",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/22/116743_crt_sSz37.jpg?r=1689608845"
+    },
+    "summary": "ある日ローレンスの住む街にやってきた聖女。\r\nローレンスと共に暮らしている。街の人々に慕われており、教会で悩み相談にのることも。人前ではきちんと振る舞うが、ローレンスの前ではだらけた姿を見せる。ローレンスのことは「ローレン」と呼んでいる。",
+    "name": "セシリア",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "塞西莉亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "赛西莉亚"
+                },
+                {
+                    "v": "白圣女"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://shiroseijyo-anime.com/character/"
+        }
+    ],
+    "stat": {
+        "comments": 69,
+        "collects": 252
+    },
+    "id": 116743,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        387822
+    ]
+}

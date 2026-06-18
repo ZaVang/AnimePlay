@@ -1,0 +1,76 @@
+{
+    "id": 11130,
+    "name": "櫻井雪乃",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/7d/21/11130_crt_X2w2f.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/21/11130_crt_X2w2f.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/21/11130_crt_X2w2f.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7d/21/11130_crt_X2w2f.jpg"
+    },
+    "summary": "高校2年級，游泳部。櫻井奏的雙生姐姐。平時有點呆滯，但學業成績優異。每天都要惹怒櫻井奏一次。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "樱井雪乃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "さくらい ゆきの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakurai Yukino"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月21日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        },
+        {
+            "key": "体重",
+            "value": "55kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B85/W58/H91"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "北海道寄來的豆腐、圓圓香蕉（零食）"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 21,
+    "stat": {
+        "comments": 9,
+        "collects": 47
+    },
+    "anime_ids": [
+        2829
+    ]
+}

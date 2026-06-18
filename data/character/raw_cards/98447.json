@@ -1,0 +1,53 @@
+{
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 17,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/52/98447_crt_V1Rbi.jpg?r=1634074304",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ba/52/98447_crt_V1Rbi.jpg?r=1634074304",
+        "large": "https://lain.bgm.tv/pic/crt/l/ba/52/98447_crt_V1Rbi.jpg?r=1634074304",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/52/98447_crt_V1Rbi.jpg?r=1634074304"
+    },
+    "summary": "ある日異形な化け物たちが、唐突に“見える”ようになってしまった普通の女子高生。普通なだけあって、異形のものどもなんてフツーに恐い。気がついたら見えなくなってることを願いつつ、日々奮闘している。",
+    "name": "四谷みこ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "四谷见子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Yotsuya Miko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月17日"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        }
+    ],
+    "stat": {
+        "comments": 55,
+        "collects": 234
+    },
+    "id": 98447,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        330973
+    ]
+}

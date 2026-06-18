@@ -1,0 +1,53 @@
+{
+    "id": 15543,
+    "name": "ハスター",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/84/67/15543_crt_w3k4K.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/84/67/15543_crt_w3k4K.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/84/67/15543_crt_w3k4K.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/84/67/15543_crt_w3k4K.jpg"
+    },
+    "summary": "克苏鲁神话中的上古邪神，来自恒星昴宿增十六，掌控风之力的“无以名状者”“深空星海之主”哈斯塔；和司水的克苏鲁是死敌。\r\n奈亚子和克子的宇宙国小同学，外表娇小、绑金色长发辫；个性内向害羞，对真寻同样一见钟情。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "哈斯塔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "哈斯太"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Hastur"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ハス太"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 17,
+        "collects": 55
+    },
+    "anime_ids": [
+        58015,
+        24508
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/87/22519_crt_VjsVF.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/19/87/22519_crt_VjsVF.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/19/87/22519_crt_VjsVF.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/87/22519_crt_VjsVF.jpg"
+    },
+    "summary": "一边上高中一边从事着小说家的工作。笔名是「和泉マサムネ」。不喜欢在网络上检索自己的作品或笔名之类的信息。有个家里蹲的妹妹。",
+    "name": "和泉正宗",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "和泉正宗"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "和泉マサムネ"
+                },
+                {
+                    "k": "日文名",
+                    "v": "和泉 正宗"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いずみ まさむね"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Izumi Masamune"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 26
+    },
+    "id": 22519,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        172498
+    ]
+}

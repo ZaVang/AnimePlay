@@ -1,0 +1,97 @@
+{
+    "birth_mon": 10,
+    "gender": "male",
+    "birth_day": 16,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/45/28623_crt_yQCkv.jpg?r=1420137123",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e5/45/28623_crt_yQCkv.jpg?r=1420137123",
+        "large": "https://lain.bgm.tv/pic/crt/l/e5/45/28623_crt_yQCkv.jpg?r=1420137123",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/45/28623_crt_yQCkv.jpg?r=1420137123"
+    },
+    "summary": "8岁时母亲自杀，在差点被父亲杀死的时候被送到百夜孤儿院。融入了新家庭后遇上毁灭性的病毒爆发，此后4年一直为吸血鬼的供体。在好友米迦尔舍命相助下从地下都市桑古奈姆逃出，之后受到日本帝鬼军的保护。为了报复杀死家人的吸血鬼，选择投身战斗。视百夜米迦尔为最重要的人。实则是百夜教的人体试验体，身体里有一部分不是人类。在漫画第十三话中非人类部分暴走觉醒，企图杀死靠近的人，醒来后失去暴走期间的记忆。现为吸血鬼歼灭部队“月鬼组”一员。与柊筱娅、早乙女与一、君月士方、三宫三叶为五人小队。",
+    "name": "百夜優一郎",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "百夜优一郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "百夜 優一郎"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひゃくや ゆういちろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hyakuya yuichiro"
+                },
+                {
+                    "k": "原名",
+                    "v": "天音 優一郎"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "10月16日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "体重",
+            "value": "59kg"
+        },
+        {
+            "key": "年龄",
+            "value": "16"
+        },
+        {
+            "key": "职业",
+            "value": "军人（日本帝鬼军）"
+        },
+        {
+            "key": "上司",
+            "value": "一瀬红莲"
+        },
+        {
+            "key": "鬼咒装备",
+            "value": "阿朱罗丸"
+        },
+        {
+            "key": "阶级",
+            "value": "特别二等兵"
+        },
+        {
+            "key": "所属",
+            "value": "月鬼组（筱娅队）"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 33
+    },
+    "id": 28623,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        112151
+    ]
+}

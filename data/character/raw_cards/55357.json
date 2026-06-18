@@ -1,0 +1,65 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/57/55357_crt_OylLG.jpg?r=1514279814",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3b/57/55357_crt_OylLG.jpg?r=1514279814",
+        "large": "https://lain.bgm.tv/pic/crt/l/3b/57/55357_crt_OylLG.jpg?r=1514279814",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/57/55357_crt_OylLG.jpg?r=1514279814"
+    },
+    "summary": "妹妹角色担当。头发是茶色的短发。\r\n\r\n見た目は幼いが、実は大学生。普段は落ち着いているが、\r\n仕事になるとキラキラな妹キャラに。キッズアニメが好き。",
+    "name": "星川麻冬",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "星川麻冬"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "星川 麻冬"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ほしかわ まふゆ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hoshikawa Mafuyu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月23日"
+        },
+        {
+            "key": "身高",
+            "value": "135cm"
+        },
+        {
+            "key": "年龄",
+            "value": "21"
+        }
+    ],
+    "stat": {
+        "comments": 17,
+        "collects": 122
+    },
+    "id": 55357,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        204145
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/5c/15896_crt_46UUx.jpg?r=1565255257",
+        "grid": "https://lain.bgm.tv/pic/crt/g/78/5c/15896_crt_46UUx.jpg?r=1565255257",
+        "large": "https://lain.bgm.tv/pic/crt/l/78/5c/15896_crt_46UUx.jpg?r=1565255257",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/5c/15896_crt_46UUx.jpg?r=1565255257"
+    },
+    "summary": "",
+    "name": "竹川蛍",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "竹川萤"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "竹川 蛍"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たけかわほたる"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 34
+    },
+    "id": 15896,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        12544
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/48/69803_crt_jcBCj.jpg?r=1581686876",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b7/48/69803_crt_jcBCj.jpg?r=1581686876",
+        "large": "https://lain.bgm.tv/pic/crt/l/b7/48/69803_crt_jcBCj.jpg?r=1581686876",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/48/69803_crt_jcBCj.jpg?r=1581686876"
+    },
+    "summary": "因突然变异而诞生的能够操纵火焰的人种“燃烧者”之中的有着攻击性的集团“疯狂燃烧者”的首领。\r\n与冷静的外表相反，却操控着特殊的火焰“燃烧者烈焰”将一切燃烧殆尽。",
+    "name": "リオ・フォーティア",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "里欧·弗提亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Lio Fotia"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 78,
+        "collects": 115
+    },
+    "id": 69803,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        218713
+    ]
+}

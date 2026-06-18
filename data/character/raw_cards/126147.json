@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/64/8a/126147_crt_p1wrp.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/64/8a/126147_crt_p1wrp.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/64/8a/126147_crt_p1wrp.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/64/8a/126147_crt_p1wrp.jpg"
+    },
+    "summary": "千葉らと同じ研究所で働く研究員。DCミニの開発者であり天才科学者と称されているが非常に子供っぽい性格で、エレベーターから出るにも苦労するほどの肥満体型。\r\nDCミニを盗んだ氷室とは友人であったため、彼に対して疑問と怒りを覚えていた。同僚の千葉とは親しい仲で、気さくに「あっちゃん」と呼んでいる。",
+    "name": "時田浩作",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "时田浩作"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ときた こうさく"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 0
+    },
+    "id": 126147,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        841
+    ]
+}

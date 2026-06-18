@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/27/7908_crt_oI4h8.jpg?r=1629035242",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d5/27/7908_crt_oI4h8.jpg?r=1629035242",
+        "large": "https://lain.bgm.tv/pic/crt/l/d5/27/7908_crt_oI4h8.jpg?r=1629035242",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/27/7908_crt_oI4h8.jpg?r=1629035242"
+    },
+    "summary": "利姆露的独特技能之一。只要利姆露有什么事，他就会用只有利姆露才能听到的声音加以解说。有时还会解说一些多余的事情……",
+    "name": "大賢者",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "大贤者"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Great Sage"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "エイチアルモノ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Dai Kenja"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 26
+    },
+    "id": 7908,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        278031
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 12,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/5c/68387_crt_rzIII.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b3/5c/68387_crt_rzIII.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/b3/5c/68387_crt_rzIII.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/5c/68387_crt_rzIII.jpg"
+    },
+    "summary": "自小就被期待着实力的赛马娘。对赛事的胜利十分贪婪，每天的锻炼都不会落下。\r\n从她的言行举止中感受到的与周围非同一个级别的“觉悟”，据说是与她的出身有着关系……？\r\n***\r\n爱慕织姬（1996年3月12日~2004年10月29日）枣色\r\n公马\r\n出生地：日本（北海道早来町）",
+    "name": "アドマイヤベガ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "爱慕织姬"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Admire Vega"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月12日"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "体重",
+            "value": "无增减"
+        },
+        {
+            "key": "BWH",
+            "value": "B85・W57・H82"
+        },
+        {
+            "key": "毛色",
+            "value": "鹿毛"
+        },
+        {
+            "key": "现实马主",
+            "value": "近藤 利一"
+        },
+        {
+            "key": "成績(勝率)",
+            "value": "8戦4勝（50%）"
+        },
+        {
+            "key": "獲得賞金",
+            "value": "2億9,060万円(中央)"
+        },
+        {
+            "key": "固有二つ名",
+            "value": "煌めく一等星"
+        }
+    ],
+    "stat": {
+        "comments": 20,
+        "collects": 101
+    },
+    "id": 68387,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        380448
+    ]
+}

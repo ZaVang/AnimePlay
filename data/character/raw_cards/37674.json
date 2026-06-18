@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/2f/37674_crt_047Dt.jpg?r=1454600941",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c9/2f/37674_crt_047Dt.jpg?r=1454600941",
+        "large": "https://lain.bgm.tv/pic/crt/l/c9/2f/37674_crt_047Dt.jpg?r=1454600941",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/2f/37674_crt_047Dt.jpg?r=1454600941"
+    },
+    "summary": "年齢：17歳\r\n職業：学生\r\n性格：少し不思議ちゃんのきらいはあるものの、\r\n素直で明るく一途な性格。",
+    "name": "真咲",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "真咲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "まさき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Masaki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 21,
+        "collects": 25
+    },
+    "id": 37674,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        163046
+    ]
+}

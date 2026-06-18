@@ -1,0 +1,61 @@
+{
+    "birth_mon": 18,
+    "gender": "female",
+    "birth_day": 6,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/07/8267_crt_EK6Kb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/13/07/8267_crt_EK6Kb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/13/07/8267_crt_EK6Kb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/07/8267_crt_EK6Kb.jpg"
+    },
+    "summary": "",
+    "name": "ソフィーハッター",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "苏菲·哈特尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ソフィーハッター"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sophie Hatter"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1886年的6月中旬"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 22,
+        "collects": 53
+    },
+    "id": 8267,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        312
+    ]
+}

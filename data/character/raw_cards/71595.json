@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/92/71595_crt_sMUwV.jpg?r=1567421339",
+        "grid": "https://lain.bgm.tv/pic/crt/g/38/92/71595_crt_sMUwV.jpg?r=1567421339",
+        "large": "https://lain.bgm.tv/pic/crt/l/38/92/71595_crt_sMUwV.jpg?r=1567421339",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/92/71595_crt_sMUwV.jpg?r=1567421339"
+    },
+    "summary": "没有亲戚的少女。\r\n前来参观薇尔莉特的情况。",
+    "name": "テイラー・バートレット",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "泰勒·巴特利特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Taylor Bartlett"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "www.violet-evergarden.jp/sidestory/"
+        }
+    ],
+    "stat": {
+        "comments": 16,
+        "collects": 11
+    },
+    "id": 71595,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        280837
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/23/b9/151086_crt_v3gDB.jpg?r=1722150686",
+        "grid": "https://lain.bgm.tv/pic/crt/g/23/b9/151086_crt_v3gDB.jpg?r=1722150686",
+        "large": "https://lain.bgm.tv/pic/crt/l/23/b9/151086_crt_v3gDB.jpg?r=1722150686",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/23/b9/151086_crt_v3gDB.jpg?r=1722150686"
+    },
+    "summary": "薄幸魔法少女。けっこうな苦労人で、色々なバイトと魔法少女をかけもちしている。",
+    "name": "深森白夜",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "深森白夜"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://mahoaku-anime.com/character/?chara=02"
+        }
+    ],
+    "stat": {
+        "comments": 72,
+        "collects": 278
+    },
+    "id": 151086,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        465884
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/26/134183_crt_bXzOD.jpg?r=1690703048",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9a/26/134183_crt_bXzOD.jpg?r=1690703048",
+        "large": "https://lain.bgm.tv/pic/crt/l/9a/26/134183_crt_bXzOD.jpg?r=1690703048",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/26/134183_crt_bXzOD.jpg?r=1690703048"
+    },
+    "summary": "ミーハーで都会に憧れていてカワイイものが好き。何事にもストレートな性格で感情表現もわかりやすい。考えることは得意ではないが、五感が鋭い野生児のような直感タイプ。アニメ「練馬の国のアリス」が好き。",
+    "name": "久賀玲実",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "久贺玲实"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "久賀 玲実"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くが れいみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kuga Reimi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://shumatsu-train.com/#character"
+        }
+    ],
+    "stat": {
+        "comments": 17,
+        "collects": 27
+    },
+    "id": 134183,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        404809
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/dd/126146_crt_bLPFL.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/48/dd/126146_crt_bLPFL.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/48/dd/126146_crt_bLPFL.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/dd/126146_crt_bLPFL.jpg"
+    },
+    "summary": "千葉らが所属する研究所の所長ならびにDCミニの開発担当責任者を務める、明朗快活な白髪の男性。\r\n物語序盤でDCミニの悪用による精神攻撃を受けたことで発狂し、研究所の窓から飛び降りて大怪我を負う。昏睡状態のまま悪夢に捕らわれてしまうが、千葉（パプリカ）の活躍により無事に現実世界へ戻ることができた。覚醒後は千葉らと協力し、事件の犯人を追う。",
+    "name": "島寅太郎",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "岛寅太郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しま とらたろう"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 0
+    },
+    "id": 126146,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        841
+    ]
+}

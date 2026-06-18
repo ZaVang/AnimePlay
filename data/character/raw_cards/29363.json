@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/0a/29363_crt_WLWr5.jpg?r=1423554630",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5f/0a/29363_crt_WLWr5.jpg?r=1423554630",
+        "large": "https://lain.bgm.tv/pic/crt/l/5f/0a/29363_crt_WLWr5.jpg?r=1423554630",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/0a/29363_crt_WLWr5.jpg?r=1423554630"
+    },
+    "summary": "18岁，大学考试落榜后，在父母利用关系下进入“SAI社”工作。",
+    "name": "水柿ツカサ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "水柿司"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Tsukasa Mizugaki"
+                },
+                {
+                    "k": "日文名",
+                    "v": "水柿 ツカサ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みずがき つかさ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.plastic-memories.jp/character/"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 14
+    },
+    "id": 29363,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        114685
+    ]
+}

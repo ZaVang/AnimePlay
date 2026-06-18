@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a0/bc/16967_crt_XnOo9.jpg?r=1379608420",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a0/bc/16967_crt_XnOo9.jpg?r=1379608420",
+        "large": "https://lain.bgm.tv/pic/crt/l/a0/bc/16967_crt_XnOo9.jpg?r=1379608420",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a0/bc/16967_crt_XnOo9.jpg?r=1379608420"
+    },
+    "summary": "在直太面前突然出现的谜样少女。本名为ハルハ・ラハル。自称19岁的“宇宙人”。个性常常傍若无人。所拿的电贝斯是乐器同时也是武器，还有各式各样的用途。想利用直太来达成自己的愿望。在剧中常装扮成护士、女仆及兔女郎。左撇子。",
+    "name": "ハルハラ・ハル子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "春原晴子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Haruko Haruhara"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ハルハ・ラハル"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ベスパ女"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 32,
+        "collects": 281
+    },
+    "id": 16967,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        822
+    ]
+}

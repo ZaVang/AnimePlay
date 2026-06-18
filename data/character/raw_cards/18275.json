@@ -1,0 +1,73 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/0b/18275_crt_r4Bb9.jpg?r=1594711135",
+        "grid": "https://lain.bgm.tv/pic/crt/g/90/0b/18275_crt_r4Bb9.jpg?r=1594711135",
+        "large": "https://lain.bgm.tv/pic/crt/l/90/0b/18275_crt_r4Bb9.jpg?r=1594711135",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/0b/18275_crt_r4Bb9.jpg?r=1594711135"
+    },
+    "summary": "锐太的青梅竹马，住在锐太隔壁。15岁，就读羽根山高中1年级5班。名字发音让人联想到小狗，加上体型迷你，被取了“吉娃娃”这个绰号。 从小1开始练习剑道，曾经强到足以出席全国大赛，但在国3夏天出车祸时受了重伤，其中腰部的伤害让她无法进行激烈运动，不得不放弃剑道。 升高中后因为被锐太“青梅竹马怎么可能变成女朋友”的发言激怒，宣示要让自己变得大受男生欢迎，不过一直没有实现。锐太和真凉假装交往后，激起千和强烈的对抗心，不断于各种场面找真凉挑战，后来还被真凉怂恿加入自演乙之会。 料理技巧非常差，但本人并没有自觉，企图让锐太吃下自己亲手做的料理，但最后都变成反而是千和吃擅长料理的锐太所做的菜。 小学入学前3个月搬到锐太家隔壁，交情从当时一直持续到现在。",
+    "name": "春咲千和",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "春咲千和"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "春咲 千和"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はるさき ちわ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Harusaki Chiwa"
+                },
+                {
+                    "k": "昵称",
+                    "v": "Chiwawa，吉娃娃"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "150cm"
+        },
+        {
+            "key": "体重",
+            "value": "45kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "www.oreshura.net/character"
+        }
+    ],
+    "stat": {
+        "comments": 22,
+        "collects": 106
+    },
+    "id": 18275,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        43557
+    ]
+}

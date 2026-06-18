@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/8f/68715_crt_2w5dd.jpg?r=1610176430",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3f/8f/68715_crt_2w5dd.jpg?r=1610176430",
+        "large": "https://lain.bgm.tv/pic/crt/l/3f/8f/68715_crt_2w5dd.jpg?r=1610176430",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/8f/68715_crt_2w5dd.jpg?r=1610176430"
+    },
+    "summary": "転校生の少女。自称「人の心が読めますが、空気は読めません！」。\r\n友だち思いで愛情深く、責任感が強くて礼儀正しい美少女。\r\n基本はいつもニコニコ。物腰はお気楽、能天気で、けっこうドジも多い。だが観察力、推理力にすぐれ、「人類の敵」との戦いでは、大いに力を発揮する。",
+    "name": "柊ナナ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "柊奈奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "柊 ナナ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひいらぎ ナナ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nana Hiiragi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://munounanana.com/character/"
+        }
+    ],
+    "stat": {
+        "comments": 40,
+        "collects": 189
+    },
+    "id": 68715,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        302418
+    ]
+}

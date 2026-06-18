@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/78/66718_crt_afSls.jpg?r=1617614783",
+        "grid": "https://lain.bgm.tv/pic/crt/g/da/78/66718_crt_afSls.jpg?r=1617614783",
+        "large": "https://lain.bgm.tv/pic/crt/l/da/78/66718_crt_afSls.jpg?r=1617614783",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/78/66718_crt_afSls.jpg?r=1617614783"
+    },
+    "summary": "大手IT会社に勤める26歳サラリーマン。",
+    "name": "吉田",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "吉田"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "YOSHIDA"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "よしだ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 22,
+        "collects": 13
+    },
+    "id": 66718,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        297254
+    ]
+}

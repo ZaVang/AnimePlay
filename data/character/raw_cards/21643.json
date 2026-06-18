@@ -1,0 +1,65 @@
+{
+    "birth_mon": 4,
+    "gender": "male",
+    "birth_day": 24,
+    "birth_year": 2079,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/26/1a/21643_crt_yzo3r.jpg?r=1626030585",
+        "grid": "https://lain.bgm.tv/pic/crt/g/26/1a/21643_crt_yzo3r.jpg?r=1626030585",
+        "large": "https://lain.bgm.tv/pic/crt/l/26/1a/21643_crt_yzo3r.jpg?r=1626030585",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/26/1a/21643_crt_yzo3r.jpg?r=1626030585"
+    },
+    "summary": "本作的主角。\r\n2095年春天跟妹妹司波深雪一同入读第一高校。因为他在4月出生，与妹妹只相差了11个月，两人仍被分配在同一学年。\r\n毫无疑问是名100分的好哥哥，同时亦是名重度妹控，多次无视场合在友人面前对妹妹展露出禁断的言行。\r\n正经的外表下不时透露出腹黑个性，特别在妹妹不在场时曾多次用言语调戏其他女性朋友。\r\n个性冷漠，对妹妹之外的事情漠不关心，会毫不犹豫残酷对待意图伤害深雪的人。\r\n其实入读一高后并不如之前冷漠，也会关心身边的友人。",
+    "name": "司波達也",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "司波达也"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "司波 達也"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しば たつや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shiba Tatsuya"
+                },
+                {
+                    "k": "昵称",
+                    "v": "司波大爷"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2079年4月24日"
+        },
+        {
+            "key": "身高",
+            "value": "178cm"
+        }
+    ],
+    "stat": {
+        "comments": 42,
+        "collects": 65
+    },
+    "id": 21643,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        84872
+    ]
+}

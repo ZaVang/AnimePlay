@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/c4/104599_crt_ss622.jpg?r=1650760434",
+        "grid": "https://lain.bgm.tv/pic/crt/g/29/c4/104599_crt_ss622.jpg?r=1650760434",
+        "large": "https://lain.bgm.tv/pic/crt/l/29/c4/104599_crt_ss622.jpg?r=1650760434",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/c4/104599_crt_ss622.jpg?r=1650760434"
+    },
+    "summary": "三国時代、当代きっての天才軍師。\r\n西暦234年、五丈原の戦いで死期を迎えたその瞬間、なぜか渋谷に転生してしまう。\r\n転生した渋谷で歌手を目指す「月見英子」の歌声に心奪われ、英子の軍師となり二度目の人生が幕を明ける。",
+    "name": "諸葛孔明",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "诸葛孔明"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しょかつ こうめい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shokatsu Komei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 41,
+        "collects": 70
+    },
+    "id": 104599,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        356756
+    ]
+}

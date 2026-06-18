@@ -1,0 +1,61 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/4a/134703_crt_nOncx.jpg?r=1699789465",
+        "grid": "https://lain.bgm.tv/pic/crt/g/73/4a/134703_crt_nOncx.jpg?r=1699789465",
+        "large": "https://lain.bgm.tv/pic/crt/l/73/4a/134703_crt_nOncx.jpg?r=1699789465",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/4a/134703_crt_nOncx.jpg?r=1699789465"
+    },
+    "summary": "美少女＆美少女ゲームが大好きなイラストレーター。超人気絵師になることを夢見て美少女ゲーム制作会社で奮闘している。自室は美少女グッズでいっぱいのオタク部屋。ひょんなことからタイムリープをしてアルコールソフトで働くことに。",
+    "name": "秋里コノハ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "秋里木叶"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "秋里乐叶"
+                },
+                {
+                    "k": "日文名",
+                    "v": "秋里 コノハ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あきさと このは"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Akisato Konoha"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://16bitsensation-al.com/character/"
+        }
+    ],
+    "stat": {
+        "comments": 191,
+        "collects": 177
+    },
+    "id": 134703,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        413741
+    ]
+}

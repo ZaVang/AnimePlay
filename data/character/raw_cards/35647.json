@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/4a/35647_crt_3n99N.jpg?r=1516271217",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fb/4a/35647_crt_3n99N.jpg?r=1516271217",
+        "large": "https://lain.bgm.tv/pic/crt/l/fb/4a/35647_crt_3n99N.jpg?r=1516271217",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/4a/35647_crt_3n99N.jpg?r=1516271217"
+    },
+    "summary": "ココノツの友人。豆の双子の妹。\r\nココノツのことが気になっている。本人もココノツ同様無自覚ながら密かに駄菓子に関しては天才肌で、めんこやけん玉など、昔の遊びに関する才能は突出しており、ほたるから「サヤ師」と一目置かれている。胸は薄いが美脚。実家の喫茶店「喫茶エンドウ」を手伝っており、ほとんどの業務をこなすなど実質的なオーナーとなっている。",
+    "name": "遠藤サヤ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "远藤沙耶"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "遠藤 サヤ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "えんどう サヤ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Endou Saya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 31,
+        "collects": 139
+    },
+    "id": 35647,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        146994
+    ]
+}

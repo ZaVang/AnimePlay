@@ -1,0 +1,81 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/b6/38478_crt_qaWAI.jpg?r=1476449430",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f5/b6/38478_crt_qaWAI.jpg?r=1476449430",
+        "large": "https://lain.bgm.tv/pic/crt/l/f5/b6/38478_crt_qaWAI.jpg?r=1476449430",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/b6/38478_crt_qaWAI.jpg?r=1476449430"
+    },
+    "summary": "本作的主人公，长相可爱但个性很差的新人声优。一边上大学一边在新人声优的道路上努力奋斗着。外表可爱，却对工作和人生采取轻蔑的态度。很容易得意忘形，很容易服输。对于尽在演些路人角色的现状有着危机感。",
+    "name": "烏丸千歳",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "乌丸千岁"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "烏丸 千歳"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "からすま ちとせ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Karasuma Chitose"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ちーさま"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月15日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        },
+        {
+            "key": "星座",
+            "value": "射手座"
+        },
+        {
+            "key": "出身地",
+            "value": "东京都"
+        },
+        {
+            "key": "兴趣",
+            "value": "电影鉴赏、逛猫咖啡厅"
+        }
+    ],
+    "stat": {
+        "comments": 106,
+        "collects": 232
+    },
+    "id": 38478,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        167434
+    ]
+}

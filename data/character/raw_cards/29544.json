@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/67/29544_crt_5bffX.jpg?r=1423554474",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d7/67/29544_crt_5bffX.jpg?r=1423554474",
+        "large": "https://lain.bgm.tv/pic/crt/l/d7/67/29544_crt_5bffX.jpg?r=1423554474",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/67/29544_crt_5bffX.jpg?r=1423554474"
+    },
+    "summary": "司的前辈，17岁的女性社员。负责指导司的工作。",
+    "name": "絹島ミチル",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "绢岛满"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "絹島 ミチル"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きぬしま ミチル"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kinushima Michiru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 44
+    },
+    "id": 29544,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        114685
+    ]
+}

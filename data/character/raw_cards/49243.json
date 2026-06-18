@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/0a/49243_crt_JJ6R6.jpg?r=1481757253",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1e/0a/49243_crt_JJ6R6.jpg?r=1481757253",
+        "large": "https://lain.bgm.tv/pic/crt/l/1e/0a/49243_crt_JJ6R6.jpg?r=1481757253",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/0a/49243_crt_JJ6R6.jpg?r=1481757253"
+    },
+    "summary": "暗恋着“少女”的大学生。悄悄地进行着『尽可能进入她的眼帘』作战=“尽(进)她眼作战”。但在追求着她的同时，意外地被卷入了一个个不可思议的事件之中。",
+    "name": "先輩",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "前辈"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 20,
+        "collects": 22
+    },
+    "id": 49243,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        202240
+    ]
+}

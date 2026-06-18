@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/34/14684_crt_5k42S.jpg?r=1563687029",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fb/34/14684_crt_5k42S.jpg?r=1563687029",
+        "large": "https://lain.bgm.tv/pic/crt/l/fb/34/14684_crt_5k42S.jpg?r=1563687029",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/34/14684_crt_5k42S.jpg?r=1563687029"
+    },
+    "summary": "和索妮雅同组织的忍者。黑色长发。\r\n平常潜伏在前忍者同好会的社团教室。\r\n使用的忍术大部分是唬人把戏，但偶尔也会使用真正的忍术。",
+    "name": "呉織あぎり",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "吴织亚切"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "呉織 あぎり"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ごしき あぎり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Goshiki Agiri"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wiki(zh)"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 47
+    },
+    "id": 14684,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        20799
+    ]
+}

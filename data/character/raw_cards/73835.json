@@ -1,0 +1,57 @@
+{
+    "birth_mon": 6,
+    "gender": "male",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/56/73835_crt_5kxHz.jpg?r=1678023955",
+        "grid": "https://lain.bgm.tv/pic/crt/g/05/56/73835_crt_5kxHz.jpg?r=1678023955",
+        "large": "https://lain.bgm.tv/pic/crt/l/05/56/73835_crt_5kxHz.jpg?r=1678023955",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/56/73835_crt_5kxHz.jpg?r=1678023955"
+    },
+    "summary": "就读于练马大学经营学专业。因被前女友甩掉而伤心时，遇见了“租借女友”中“理想的女朋友”水原千鹤。",
+    "name": "木ノ下和也",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "木之下和也"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "木ノ下 和也"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きのした かずや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kinoshita Kazuya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "6月1日"
+        }
+    ],
+    "stat": {
+        "comments": 149,
+        "collects": 10
+    },
+    "id": 73835,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        296076
+    ]
+}

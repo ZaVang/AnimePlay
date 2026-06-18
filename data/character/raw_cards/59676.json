@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/73/59676_crt_c1y44.jpg?r=1541604495",
+        "grid": "https://lain.bgm.tv/pic/crt/g/29/73/59676_crt_c1y44.jpg?r=1541604495",
+        "large": "https://lain.bgm.tv/pic/crt/l/29/73/59676_crt_c1y44.jpg?r=1541604495",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/73/59676_crt_c1y44.jpg?r=1541604495"
+    },
+    "summary": "数百年の寿命を持つイオルフの少女。おとなしく見えるが芯は強い。イオルフがメザーテ軍の襲撃を受けた時、そこから偶然逃れ出て、赤ん坊のエリアルを拾う。以後、エリアルの母であろうと心に決めて、エリアルを育てていく。",
+    "name": "マキア",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "玛奇亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "玛琪雅"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Maquia"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 50,
+        "collects": 154
+    },
+    "id": 59676,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        218971
+    ]
+}

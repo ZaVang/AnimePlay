@@ -1,0 +1,83 @@
+{
+    "birth_mon": 4,
+    "gender": "male",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/7d/115898_crt_P3Hnw.jpg?r=1692546851",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a1/7d/115898_crt_P3Hnw.jpg?r=1692546851",
+        "large": "https://lain.bgm.tv/pic/crt/l/a1/7d/115898_crt_P3Hnw.jpg?r=1692546851",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/7d/115898_crt_P3Hnw.jpg?r=1692546851"
+    },
+    "summary": "否定者。\r\n能力：不死(UNDEAD/アンデッド)。自对象，强制发动型。\r\n把可能让自身接近死亡的一切事物全部否定。再生基本全自动。但经过长年的练习后可有意识地让再生速度加快或变慢。\r\n因老去也被判断为接近死亡的因素，所以外表停留在了25岁左右的样子。虽然有痛觉但据本人说「疼痛能人感知到死亡，因此才会有疼痛。而我的疼痛和你们的疼痛作用不同，我的疼痛仅是杂音」。",
+    "name": "アンディ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "安迪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ヴィクトル"
+                },
+                {
+                    "v": "Victor"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "维克托"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Andy"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "4月15日"
+        },
+        {
+            "key": "身高",
+            "value": "189cm"
+        },
+        {
+            "key": "体重",
+            "value": "不知道"
+        },
+        {
+            "key": "年龄",
+            "value": "不清楚"
+        },
+        {
+            "key": "兴趣",
+            "value": "享受流行的东西"
+        },
+        {
+            "key": "特技",
+            "value": "做什么都比别人好（在做得比别人好之前不会停）"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "芝士汉堡"
+        }
+    ],
+    "stat": {
+        "comments": 17,
+        "collects": 29
+    },
+    "id": 115898,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        397808
+    ]
+}

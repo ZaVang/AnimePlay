@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/dc/5893_crt_icg7g.jpg?r=1747104535",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f1/dc/5893_crt_icg7g.jpg?r=1747104535",
+        "large": "https://lain.bgm.tv/pic/crt/l/f1/dc/5893_crt_icg7g.jpg?r=1747104535",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/dc/5893_crt_icg7g.jpg?r=1747104535"
+    },
+    "summary": "在明治维新中对剑心影响最大的一位女子。",
+    "name": "雪代巴",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雪代巴"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "绯村巴"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ゆきしろともえ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "yukishiro tomoe"
+                },
+                {
+                    "k": "昵称",
+                    "v": "巴"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 48,
+        "collects": 311
+    },
+    "id": 5893,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1728
+    ]
+}

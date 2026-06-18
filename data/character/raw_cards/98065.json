@@ -1,0 +1,57 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cb/b0/98065_crt_5V34y.jpg?r=1634182019",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cb/b0/98065_crt_5V34y.jpg?r=1634182019",
+        "large": "https://lain.bgm.tv/pic/crt/l/cb/b0/98065_crt_5V34y.jpg?r=1634182019",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cb/b0/98065_crt_5V34y.jpg?r=1634182019"
+    },
+    "summary": "先輩がうざい後輩。（もちろん頼りにもしている。）小柄で小学生に間違えられることもあり、子ども扱いされるのを嫌う。外見とは逆に少し気が強いが、恋愛にはうとい。好きな飲み物は「おしるこ」。",
+    "name": "五十嵐双葉",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "五十岚双叶"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Futaba Igarashi"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いがらし ふたば"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月9日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://senpaiga-uzai-anime.com/character/"
+        }
+    ],
+    "stat": {
+        "comments": 34,
+        "collects": 106
+    },
+    "id": 98065,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        309670
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/3c/224_crt_wGmYu.jpg?r=1499082717",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a5/3c/224_crt_wGmYu.jpg?r=1499082717",
+        "large": "https://lain.bgm.tv/pic/crt/l/a5/3c/224_crt_wGmYu.jpg?r=1499082717",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/3c/224_crt_wGmYu.jpg?r=1499082717"
+    },
+    "summary": "平贺才人是故事的男主角，从地球的日本东京来到故事里的世界。在他被露易兹召唤出来的时候，才人正在秋叶原维修他的手提电脑。突然才人面前出现一个通往故事所在世界的入口，当他用手触摸这个空间时即被吸进去。初时，才人完全不知道发生甚么事，而且他和那里的人也语言不通。后来露易兹觉得才人很烦，试图向他施以令他沉默的魔法，虽然施咒失败，却意外地使他能够听懂对方的说话，就像能自动翻译一样；并且使露易兹那边世界的人，能够听得懂才人的语言。才人手上的印记是卢恩字母的 Gandalfr，以平假名写出来是“ガンダールヴ”发音为Gandāruvu。他的印记使他有能力随心操控所有武器，包括剑、火箭炮(正式名称为:M72反战车火箭炮)、零式战机。",
+    "name": "平賀才人",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "平贺才人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "\\",
+                    "v": "Хирага Сайто"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "才人·修瓦里埃·杜·平贺·杜·奥尔尼埃尔"
+                },
+                {
+                    "k": "日文名",
+                    "v": "平賀才人"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひらが さいと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hiraga Saito"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "172cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 54
+    },
+    "id": 224,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1880,
+        1103,
+        25823,
+        763
+    ]
+}

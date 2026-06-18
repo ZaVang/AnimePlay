@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/e7/57009_crt_e4ECq.jpg?r=1625408582",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6b/e7/57009_crt_e4ECq.jpg?r=1625408582",
+        "large": "https://lain.bgm.tv/pic/crt/l/6b/e7/57009_crt_e4ECq.jpg?r=1625408582",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/e7/57009_crt_e4ECq.jpg?r=1625408582"
+    },
+    "summary": "友人や恋人などの関わり合いを必要とせず、人間関係を自己完結する。山内桜良との交流により、人を認め、人と関わり合う努力を始める。ある日、病院で桜良の「共病文庫」を見つける。",
+    "name": "僕",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "我"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "志贺春树"
+                },
+                {
+                    "k": "日文名",
+                    "v": "志賀春樹"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しが はるき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shiga Haruki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 15,
+        "collects": 18
+    },
+    "id": 57009,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        221736
+    ]
+}

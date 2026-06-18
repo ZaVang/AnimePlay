@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d1/59/65350_crt_pmXP6.jpg?r=1548547038",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d1/59/65350_crt_pmXP6.jpg?r=1548547038",
+        "large": "https://lain.bgm.tv/pic/crt/l/d1/59/65350_crt_pmXP6.jpg?r=1548547038",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d1/59/65350_crt_pmXP6.jpg?r=1548547038"
+    },
+    "summary": "尚文が最初に買ったラクーン種と呼ばれる亜人の奴隷。真っ直ぐな性格。尚文の剣として素直に付き従っている。",
+    "name": "ラフタリア",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "拉芙塔莉雅"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 36,
+        "collects": 152
+    },
+    "id": 65350,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        217660
+    ]
+}

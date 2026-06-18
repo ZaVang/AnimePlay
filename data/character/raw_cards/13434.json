@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/72/13434_crt_UrMEa.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fe/72/13434_crt_UrMEa.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/fe/72/13434_crt_UrMEa.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/72/13434_crt_UrMEa.jpg"
+    },
+    "summary": "昴的主人。一眼看去就是个大小姐，内心里却喜欢恶作剧，最喜欢使人感到有趣的东西。被知道实质的近次郎称之为“Devil凉月”。是个S。",
+    "name": "涼月奏",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "凉月奏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "涼月 奏"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "すずつき かなで"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Suzutsuki Kanade"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 36,
+        "collects": 206
+    },
+    "id": 13434,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        10459
+    ]
+}

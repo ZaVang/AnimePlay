@@ -1,0 +1,61 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/15/14859_crt_06hMQ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/32/15/14859_crt_06hMQ.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/32/15/14859_crt_06hMQ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/15/14859_crt_06hMQ.jpg"
+    },
+    "summary": "比一诚年长的学姊，向来在校内被誉为才色兼备的完美女人，同时受男生们以及女生们的欢迎；拥有“红发的灭杀姬”的称号，亦为吉蒙里家族的二号人物与超自然研究社社长。\r\n她的哥哥是现任四魔王之一的路西法，自身为上级恶魔，Rating Game中为王，在一诚濒死时将恶魔棋子士兵放入其体内。\r\n喜欢一诚，在小说第二集最后夺走了一诚的初吻(自己同样也是初吻)。",
+    "name": "リアス・グレモリー",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莉雅丝·吉蒙里"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Rias Gremory"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月9日"
+        },
+        {
+            "key": "身高",
+            "value": "172cm"
+        },
+        {
+            "key": "体重",
+            "value": "58kg"
+        },
+        {
+            "key": "BWH",
+            "value": "99/58/90"
+        }
+    ],
+    "stat": {
+        "comments": 18,
+        "collects": 226
+    },
+    "id": 14859,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        15910
+    ]
+}

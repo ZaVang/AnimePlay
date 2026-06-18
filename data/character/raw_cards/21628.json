@@ -1,0 +1,69 @@
+{
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/bd/21628_crt_7OH7S.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a2/bd/21628_crt_7OH7S.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/a2/bd/21628_crt_7OH7S.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/bd/21628_crt_7OH7S.jpg"
+    },
+    "summary": "彩海学园高等部一年级，古城的同学。世界顶尖骇客级的计算机天才少女，作为程序员的水平高到同行无所不知“电子的女王”的称号。现被管理弦神岛的国营公司所雇佣。特别能吃，是个超越常识级别的大胃王。\r\n在古城搬到弦城市读国中不久与古城在国中时代就认识了，喜欢古城。\r\n被弦神冥驾称为“该隐（魔族之祖）的巫女”，和“第四真祖”的“敌人”有某种关系。",
+    "name": "藍羽浅葱",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蓝羽浅葱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "藍羽 浅葱"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あいば あさぎ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aiba Asagi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "電子の女帝（电子女帝／Cyber Empress）、カインの巫女（该隐的巫女／Priestess of Cain）"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月23日"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B83－W57－H82"
+        }
+    ],
+    "stat": {
+        "comments": 26,
+        "collects": 198
+    },
+    "id": 21628,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        67826
+    ]
+}

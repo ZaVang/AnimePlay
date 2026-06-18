@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/8c/63390_crt_S1Jsd.jpg?r=1529734841",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6c/8c/63390_crt_S1Jsd.jpg?r=1529734841",
+        "large": "https://lain.bgm.tv/pic/crt/l/6c/8c/63390_crt_S1Jsd.jpg?r=1529734841",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/8c/63390_crt_S1Jsd.jpg?r=1529734841"
+    },
+    "summary": "17歳の高校三年生。祖父が経営する銭湯「七橋湯」が大好きで、毎日のように手伝っている。七橋湯に居候する苦学生の主人公とは兄妹のような関係性。明るく活発的で今どきの女の子という印象だが、歴史ある街並みや文化が好きな古風な一面を持つ。",
+    "name": "七橋御乃梨",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "七桥御乃梨"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "七橋 御乃梨"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ななはし みのり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nanahashi Minori"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 11,
+        "collects": 69
+    },
+    "id": 63390,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        226507
+    ]
+}

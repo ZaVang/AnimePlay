@@ -1,0 +1,77 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 27,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/66/36544_crt_FX7R4.jpg?r=1469017890",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c7/66/36544_crt_FX7R4.jpg?r=1469017890",
+        "large": "https://lain.bgm.tv/pic/crt/l/c7/66/36544_crt_FX7R4.jpg?r=1469017890",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/66/36544_crt_FX7R4.jpg?r=1469017890"
+    },
+    "summary": "　　本作的女主角。1-A班女学生,出席编号9。留着茶色波波头的女生，人如其名有着开朗明亮的性格但讲话毒舌，曾吐槽来找出久吃饭的欧鲁麦特是少女。讲话会混带一点关西腔。因为不想要再让父母辛苦工作而立志成为英雄。\r\n　　入学考试以28分的杀敌分和45分的救助分名列全校第三。在入学考试开始前就对性格温柔的出久抱有好感，在入学考试中被出久所救，之后为报答救人的恩情主动要求将自己的杀敌分让给他，最后因救人的行为被给予45分的救助分。",
+    "name": "麗日お茶子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "丽日御茶子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "麗日 お茶子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "うららか おちゃこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Uraraka Ochako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月27日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        },
+        {
+            "key": "个性",
+            "value": "无重力"
+        },
+        {
+            "key": "招式",
+            "value": "彗星本垒打"
+        }
+    ],
+    "stat": {
+        "comments": 29,
+        "collects": 91
+    },
+    "id": 36544,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        185761
+    ]
+}

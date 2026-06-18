@@ -1,0 +1,57 @@
+{
+    "birth_mon": 12,
+    "gender": "male",
+    "birth_day": 1,
+    "birth_year": 1999,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/31/96/37241_crt_NpuRA.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/31/96/37241_crt_NpuRA.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/31/96/37241_crt_NpuRA.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/31/96/37241_crt_NpuRA.jpg"
+    },
+    "summary": "本作男主角。2016年时17岁，生活在东京市中心的东京都立神宫高等学校2年级生。放学后在意大利餐馆打工，与同事暗恋店内奥寺前辈。私下擅长素描，对建筑和美术有兴趣，也擅长打篮球。生日为12月1日。\r\n为人脾气冲动、有正义感，跟三叶交换身体的期间曾多次替她打抱不平。",
+    "name": "立花瀧",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "立花泷"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "立花 瀧"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たちばな たき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tachibana Taki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1999年12月1日"
+        }
+    ],
+    "stat": {
+        "comments": 28,
+        "collects": 132
+    },
+    "id": 37241,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        160209
+    ]
+}

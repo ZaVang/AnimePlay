@@ -1,0 +1,69 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 6,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/15/76270_crt_PPV8N.jpg?r=1675514638",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f2/15/76270_crt_PPV8N.jpg?r=1675514638",
+        "large": "https://lain.bgm.tv/pic/crt/l/f2/15/76270_crt_PPV8N.jpg?r=1675514638",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/15/76270_crt_PPV8N.jpg?r=1675514638"
+    },
+    "summary": "学习与运动全能的美少女。拥有着不符合女子高中生身份程度的家务能力。被学校里的人称为天使大人。因与家人有矛盾而选择一人独居，在与周相遇后逐渐找回了家的感觉喜欢甜食和可爱的物品。",
+    "name": "椎名真昼",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "椎名真昼"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "繁体中文名",
+                    "v": "椎名真晝"
+                },
+                {
+                    "k": "日文名",
+                    "v": "椎名 真昼"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しいな まひる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shiina Mahiru"
+                },
+                {
+                    "k": "昵称",
+                    "v": "まひるん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月6日"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        }
+    ],
+    "stat": {
+        "comments": 116,
+        "collects": 387
+    },
+    "id": 76270,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        364822
+    ]
+}

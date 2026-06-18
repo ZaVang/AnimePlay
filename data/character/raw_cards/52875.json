@@ -1,0 +1,56 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/86/52875_crt_m33Fq.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ea/86/52875_crt_m33Fq.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ea/86/52875_crt_m33Fq.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/86/52875_crt_m33Fq.jpg"
+    },
+    "summary": "大战时期的人类，十八岁时率领着近二千人的聚落作战，通哓地精语、森精语、妖精语、妖魔语及兽人语。\r\n七岁时遇上龙精种与机凯种交战，“焉龙”亚兰雷夫发射的“崩哮”因机凯种的“通行管制”而偏离目标，直接毁灭了里克的故乡，使他失去双亲，之后被克洛妮·多拉（克珑）收留。十三岁时聚落再次在天翼种和龙精种交战中被毁，因表现异常冷静而成为部落领袖。为了让部落能够继续存活，五年内命令一共四十八人为部落而牺牲生命，却因为始终无法避免牺牲感到内疚。平时隐藏自己的真心，在外忍耐著扮演虚假的自己，只有自己单独在房间时才发泄自己真实的情绪。\r\n\r\n人間たちの集落を率いる若きリーダー。\r\n集落を守るためなら、どんな犠牲も厭わずに\r\n実行する強い意志を持った少年。",
+    "name": "リク",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "里克"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "利库"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "里克·多拉"
+                },
+                {
+                    "k": "日文名",
+                    "v": "リク・ドーラ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Riku"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 89
+    },
+    "id": 52875,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        187276
+    ]
+}

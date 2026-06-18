@@ -1,0 +1,61 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 20,
+    "birth_year": 2006,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/84/6a/58159_crt_n3CCF.jpg?r=1523631379",
+        "grid": "https://lain.bgm.tv/pic/crt/g/84/6a/58159_crt_n3CCF.jpg?r=1523631379",
+        "large": "https://lain.bgm.tv/pic/crt/l/84/6a/58159_crt_n3CCF.jpg?r=1523631379",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/84/6a/58159_crt_n3CCF.jpg?r=1523631379"
+    },
+    "summary": "身長150センチに満たない小柄な女性プレイヤー。敏捷性（AGI）に優れており、スピードを活かした近距離戦を得意とする。可愛いものが大好きで、全身の装備をピンクで統一している。メインアームはP90で「ピーちゃん」と呼んでいる。",
+    "name": "レン / 小比類巻香蓮",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莲／小比类卷香莲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Llenn / Karen Kohiruimaki"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "レン / こひるいまき かれん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Llenn / Kohiruimaki Karen"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2006年4月20日"
+        },
+        {
+            "key": "身高",
+            "value": "145cm / 183cm"
+        }
+    ],
+    "stat": {
+        "comments": 36,
+        "collects": 141
+    },
+    "id": 58159,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        226750
+    ]
+}

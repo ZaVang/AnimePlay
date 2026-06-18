@@ -1,0 +1,69 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 4,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/dd/141514_crt_3q2Gb.jpg?r=1707919793",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f9/dd/141514_crt_3q2Gb.jpg?r=1707919793",
+        "large": "https://lain.bgm.tv/pic/crt/l/f9/dd/141514_crt_3q2Gb.jpg?r=1707919793",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/dd/141514_crt_3q2Gb.jpg?r=1707919793"
+    },
+    "summary": "やりたいことに一直線な元アイドル。\r\n自分の意見を強く持っており、他人の意見に流されないタイプ。\r\nかつてはアイドルグループ「サンフラワードールズ」のセンター「橘ののか」として活動していたが、ある炎上をきっかけに卒業。\r\n本当にやりたいことをするために、その道を模索し始める。\r\nその最中、自分の価値観を変えるきっかけになったクラゲの壁画の作者＝海月ヨルと出会ったことで、自分らしくできることを見つけていく。",
+    "name": "山ノ内花音",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "山之内花音"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "山ノ内 花音"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やまのうち かの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yamanouchi Kano"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月4日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://yorukura-anime.com/character/"
+        }
+    ],
+    "stat": {
+        "comments": 106,
+        "collects": 132
+    },
+    "id": 141514,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        425909
+    ]
+}

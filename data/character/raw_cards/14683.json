@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/a5/14683_crt_z4HoU.jpg?r=1563687058",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d0/a5/14683_crt_z4HoU.jpg?r=1563687058",
+        "large": "https://lain.bgm.tv/pic/crt/l/d0/a5/14683_crt_z4HoU.jpg?r=1563687058",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/a5/14683_crt_z4HoU.jpg?r=1563687058"
+    },
+    "summary": "自称索妮雅的朋友。黑色短发。\r\n天然呆角色，常想捉弄索妮雅而受到迎头痛击。\r\n偶尔会用意料之外的方式向索妮雅反击。",
+    "name": "折部やすな",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "折部安奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "折部 やすな"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おりべ やすな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Oribe Yasuna"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wiki(zh)"
+        }
+    ],
+    "stat": {
+        "comments": 26,
+        "collects": 78
+    },
+    "id": 14683,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        20799
+    ]
+}

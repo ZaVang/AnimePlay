@@ -1,0 +1,61 @@
+{
+    "birth_mon": 8,
+    "gender": "male",
+    "birth_day": 5,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/43/126859_crt_z7DFY.jpg?r=1758991686",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6e/43/126859_crt_z7DFY.jpg?r=1758991686",
+        "large": "https://lain.bgm.tv/pic/crt/l/6e/43/126859_crt_z7DFY.jpg?r=1758991686",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/43/126859_crt_z7DFY.jpg?r=1758991686"
+    },
+    "summary": "怪獣清掃専門業者「モンスタースイーパー」で働く32歳の清掃員。\r\n防衛隊員になるというかつての夢を諦めたものの、幼馴染の亜白ミナが防衛隊第3部隊隊長として脚光を浴びる姿に割り切れない思いを抱いていた。\r\nしかし防衛隊員を志す若者・市川レノとの出会いをきっかけに、再び夢を追う決意を固める。",
+    "name": "日比野カフカ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "日比野卡夫卡"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "日比野 カフカ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "KAFKA HIBINO"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "8月5日"
+        },
+        {
+            "key": "身高",
+            "value": "181cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://kaiju-no8.net/"
+        }
+    ],
+    "stat": {
+        "comments": 20,
+        "collects": 13
+    },
+    "id": 126859,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        394623
+    ]
+}

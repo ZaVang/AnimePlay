@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/98/66143_crt_zL66L.jpg?r=1537243638",
+        "grid": "https://lain.bgm.tv/pic/crt/g/45/98/66143_crt_zL66L.jpg?r=1537243638",
+        "large": "https://lain.bgm.tv/pic/crt/l/45/98/66143_crt_zL66L.jpg?r=1537243638",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/98/66143_crt_zL66L.jpg?r=1537243638"
+    },
+    "summary": "根は優しいが、一方で生意気かつ強かな一面も持つ。\r\n鬼神に襲われていた所を百鬼丸に救われて以来、共に旅をするようになる。\r\n民を虐げる侍が嫌い。",
+    "name": "どろろ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "多罗罗"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Dororo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 16,
+        "collects": 35
+    },
+    "id": 66143,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        240838
+    ]
+}

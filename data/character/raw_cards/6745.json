@@ -1,0 +1,61 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/64/6745_crt_TYL2m.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/32/64/6745_crt_TYL2m.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/32/64/6745_crt_TYL2m.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/64/6745_crt_TYL2m.jpg"
+    },
+    "summary": "人类少女，拥有“幽灵公主”的名号，与山犬神族[url=https://bgm.tv/character/175410]莫娜[/url]一族为伴，将侵略森林的人类视为敌人。\r\n外观上平时以披带着狼毛皮及挂着赤色的奇异造型面具打扮，并在脸上刺有红色图像的刺青，身配利器专门刺杀企图毁灭森林的人类。",
+    "name": "サン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小桑"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "珊珊"
+                },
+                {
+                    "k": "日文名",
+                    "v": "サン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "San"
+                },
+                {
+                    "k": "昵称",
+                    "v": "幽灵公主"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 40,
+        "collects": 152
+    },
+    "id": 6745,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        310
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/74/42276_crt_C3kl5.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/33/74/42276_crt_C3kl5.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/33/74/42276_crt_C3kl5.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/74/42276_crt_C3kl5.jpg"
+    },
+    "summary": "高校2年生。みぞれと同じ南中吹奏楽部の出身で、\r\n部長を務めていた。\r\n北宇治では1年生のときに吹奏楽部を退部している。\r\n♪好きな色\r\n紫、ピンク\r\n♪趣味\r\n写真を撮ること\r\n♪特技\r\nダンス\r\n♪好きなもの\r\n納豆、オクラ、山芋\r\n♪嫌いなもの\r\nカニカマ、はんぺん",
+    "name": "傘木希美",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伞木希美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "傘木 希美"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かさき のぞみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kasaki Nozomi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月3日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "所属声部",
+            "value": "长笛 & 短笛（Flute & Piccolo）"
+        }
+    ],
+    "stat": {
+        "comments": 148,
+        "collects": 611
+    },
+    "id": 42276,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        216371
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/61/50577_crt_i55iI.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7c/61/50577_crt_i55iI.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/7c/61/50577_crt_i55iI.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/61/50577_crt_i55iI.jpg"
+    },
+    "summary": "话不多。有着不可思议的透明感与些许忧郁气质的冰山美少女。对奔跑以外的事都没什么兴趣，全身心投入于练习之中的她，宛如就是那悲剧中的女主角。\r\n擅长于违背常识的“大逃跑法”战术，起跑后就始终不落下速度专心“逃跑”。那速度是压倒性的、只要一起跑就没有人能够追上她。无声铃鹿就像是为了赛跑而诞生的马娘。\r\n今天她也是在继续奔跑着。没有其他理由。因为、只是想跑下去而已——。\r\n***\r\n无声铃鹿（1994年5月1日~1998年11月1日）栗色\r\n公马\r\n出生地：日本（北海道平取町）",
+    "name": "サイレンススズカ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "无声铃鹿"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "無聲鈴鹿"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Silence Suzuka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月1日"
+        },
+        {
+            "key": "身高",
+            "value": "161cm"
+        },
+        {
+            "key": "体重",
+            "value": "无增减"
+        },
+        {
+            "key": "BWH",
+            "value": "B70・W53・H79"
+        },
+        {
+            "key": "毛色",
+            "value": "栗毛"
+        },
+        {
+            "key": "现实马主",
+            "value": "永井 啓弍"
+        },
+        {
+            "key": "成績(勝率)",
+            "value": "16戦9勝（56.2%）"
+        },
+        {
+            "key": "獲得賞金",
+            "value": "4億5,598万円 (中央)"
+        },
+        {
+            "key": "固有二つ名",
+            "value": "異次元の逃亡者"
+        }
+    ],
+    "stat": {
+        "comments": 51,
+        "collects": 327
+    },
+    "id": 50577,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        212003
+    ]
+}

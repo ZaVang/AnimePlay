@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/94/a1/18257_crt_oYYAL.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/94/a1/18257_crt_oYYAL.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/94/a1/18257_crt_oYYAL.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/94/a1/18257_crt_oYYAL.jpg"
+    },
+    "summary": "問題児その２\r\n美貌のお嬢さま。彼女のギフトネームは\"威光\"と呼ばれ、発した言葉で相手やギフトを操ることができる。ただし格下の相手やアイテムにしか通用しない。\r\n来到箱庭的问题儿童之一。15岁，来自194x年的日本。持有恩赐为威光，恩赐卡是酒红色。",
+    "name": "久遠飛鳥",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "久远飞鸟"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "久遠 飛鳥"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くどう あすか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kudou Asuka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.sneakerbunko.jp/series/mondaiji/index.php"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 61
+    },
+    "id": 18257,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        52170
+    ]
+}

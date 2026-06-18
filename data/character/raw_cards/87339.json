@@ -1,0 +1,44 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/f7/87339_crt_1CB6q.jpg?r=1605981630",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d8/f7/87339_crt_1CB6q.jpg?r=1605981630",
+        "large": "https://lain.bgm.tv/pic/crt/l/d8/f7/87339_crt_1CB6q.jpg?r=1605981630",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/f7/87339_crt_1CB6q.jpg?r=1605981630"
+    },
+    "summary": "血液循環により、酸素を体中に届け、二酸化炭素を肺に運搬する新米赤血球。\r\n赤血球はヘモグロビンを多く含んでいるため赤い。",
+    "name": "赤血球（AA2153）",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "红血球（AA2153）"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://saibou-black.com/character/01/"
+        }
+    ],
+    "stat": {
+        "comments": 4,
+        "collects": 8
+    },
+    "id": 87339,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        304065
+    ]
+}

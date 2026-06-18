@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/2c/66614_crt_lXPEP.jpg?r=1578439785",
+        "grid": "https://lain.bgm.tv/pic/crt/g/db/2c/66614_crt_lXPEP.jpg?r=1578439785",
+        "large": "https://lain.bgm.tv/pic/crt/l/db/2c/66614_crt_lXPEP.jpg?r=1578439785",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/2c/66614_crt_lXPEP.jpg?r=1578439785"
+    },
+    "summary": "ステッキとベレー帽がトレードマークの小柄で可愛らしい大学生。\r\n11歳の時に”怪異””妖怪”などと呼ばれる化け物たちに誘拐され、片眼と片脚を失うのと引き換えに、彼らの”知恵の神”となった。\r\nそれ以降、怪異たちから寄せられるトラブルを解決している。\r\n病院で偶然出会った九郎に一目ぼれし、付き合う機会をずっと伺っていた。",
+    "name": "岩永琴子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "岩永琴子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いわなが ことこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "iwanaga kotoko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://kyokousuiri.jp/character/"
+        }
+    ],
+    "stat": {
+        "comments": 53,
+        "collects": 391
+    },
+    "id": 66614,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        271687
+    ]
+}

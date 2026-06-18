@@ -1,0 +1,77 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 21,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/9e/23070_crt_lQ66x.jpg?r=1391407975",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b3/9e/23070_crt_lQ66x.jpg?r=1391407975",
+        "large": "https://lain.bgm.tv/pic/crt/l/b3/9e/23070_crt_lQ66x.jpg?r=1391407975",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/9e/23070_crt_lQ66x.jpg?r=1391407975"
+    },
+    "summary": "目隐团团员No.4。\r\n有着四分之一美杜莎血统的少女。\r\n在目隐团基地的一个房间内过着做假花的自宅工作生活，但是收入微妙。\r\n有着『目合』的能力，能够通过看着对方的眼睛，使对方在数分钟间无法行动。",
+    "name": "マリー / 小桜茉莉",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "茉莉 / 小樱茉莉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "茉莉"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Marry"
+                },
+                {
+                    "k": "日文名",
+                    "v": "小桜 茉莉"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こざくら まりー"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kozakura Marī"
+                },
+                {
+                    "k": "昵称",
+                    "v": "マリー"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月21日"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        },
+        {
+            "key": "体重",
+            "value": "リンゴ130個分の重さ"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 69
+    },
+    "id": 23070,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        81186
+    ]
+}

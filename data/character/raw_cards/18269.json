@@ -1,0 +1,53 @@
+{
+    "birth_mon": 10,
+    "gender": "male",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/93/18269_crt_Et4Uq.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/07/93/18269_crt_Et4Uq.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/07/93/18269_crt_Et4Uq.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/93/18269_crt_Et4Uq.jpg"
+    },
+    "summary": "玉子的同班同学，也是玉子的青梅竹马。 \r\n玉子家对面的饼类小吃店“大路屋”的少爷。 \r\n电影研究会社员，经常带着照相机。喜欢玉子。",
+    "name": "大路もち蔵",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "大路饼藏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "おおじ もちぞう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "ooji mochizou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "10月10日"
+        }
+    ],
+    "stat": {
+        "comments": 27,
+        "collects": 178
+    },
+    "id": 18269,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        90880
+    ]
+}

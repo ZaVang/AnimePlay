@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/81/15617_crt_ZJLO2.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c5/81/15617_crt_ZJLO2.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/c5/81/15617_crt_ZJLO2.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/81/15617_crt_ZJLO2.jpg"
+    },
+    "summary": "本作的男主角，县立紫阳高中1年级学生，是个非常喜爱和崇拜丧尸的人，紫两寺是他的家。因为一次的实验成功以绣球花毒炼成复活药，令复活术重现，不但令礼弥因为一次意外死亡后变成丧尸，而自身也因为复活术而逐渐变成半丧尸，自此为了让她能延续生命和实现梦想而不断努力。猫耳状的发型是其特征。",
+    "name": "降谷千紘",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "降谷千纮"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "降谷 千紘"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ふるや ちひろ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Furuya Chihiro"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 36
+    },
+    "id": 15617,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        28230
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/fe/88670_crt_SSLKs.jpg?r=1615961512",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b7/fe/88670_crt_SSLKs.jpg?r=1615961512",
+        "large": "https://lain.bgm.tv/pic/crt/l/b7/fe/88670_crt_SSLKs.jpg?r=1615961512",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/fe/88670_crt_SSLKs.jpg?r=1615961512"
+    },
+    "summary": "14歳。オッドアイが特徴的な少女。\r\n現在はとある事情で学校に通えずにいる。",
+    "name": "大戸アイ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "大户爱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "大戸 アイ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おおと アイ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ohto Ai"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月15日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://wonder-egg-priority.com/character/ai/"
+        }
+    ],
+    "stat": {
+        "comments": 91,
+        "collects": 376
+    },
+    "id": 88670,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        316607
+    ]
+}

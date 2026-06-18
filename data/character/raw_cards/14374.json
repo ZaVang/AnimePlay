@@ -1,0 +1,61 @@
+{
+    "birth_mon": 12,
+    "gender": "male",
+    "birth_day": 19,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/0f/14374_crt_xRjdb.jpg?r=1399720953",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7c/0f/14374_crt_xRjdb.jpg?r=1399720953",
+        "large": "https://lain.bgm.tv/pic/crt/l/7c/0f/14374_crt_xRjdb.jpg?r=1399720953",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/0f/14374_crt_xRjdb.jpg?r=1399720953"
+    },
+    "summary": "有九尾狐的血统。\r\n4号室的专属SS。生日12月19日。故事开始时为21岁。血型为AB型。身高为186公分。日语版中第一人称为“仆”。有洁癖。\r\n银发异瞳，右眼为蓝绿色；左眼则是琥珀色。私下时都会带著眼镜。家里产业为制药公司，进行医疗器械的研究、开发和制造。\r\n房间内贴满了大量的凛凛蝶的照片，据双炽本人言，与凛凛蝶通信后便开始收集凛凛蝶的相片（实际上是偷拍）。\r\n因与小时候的白鬼院凛凛蝶有著书信往来而受到影响与感动，而成为其SS与仆人。\r\n出现返祖现象时，头上会长出狐狸的耳朵，身穿狩衣，会长出九条尾巴，武器是日本刀。\r\n喜欢凛凛蝶。\r\n个性有点狡猾、腹黑。",
+    "name": "御狐神双熾",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "御狐神双炽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みけつかみ そうし"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Miketsukami Soushi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "12月19日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "186cm"
+        }
+    ],
+    "stat": {
+        "comments": 18,
+        "collects": 95
+    },
+    "id": 14374,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        20582
+    ]
+}

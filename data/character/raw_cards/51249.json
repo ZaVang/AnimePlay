@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/25/51249_crt_26nVV.jpg?r=1491130482",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7e/25/51249_crt_26nVV.jpg?r=1491130482",
+        "large": "https://lain.bgm.tv/pic/crt/l/7e/25/51249_crt_26nVV.jpg?r=1491130482",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/25/51249_crt_26nVV.jpg?r=1491130482"
+    },
+    "summary": "幻想系机器人动画作品“精霊機想曲フォーゲルシュバリエ”的女主人公",
+    "name": "セレジア・ユピティリア",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "瑟蕾吉娅·尤匹提莉亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "セレジア ユピティリア"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 24,
+        "collects": 63
+    },
+    "id": 51249,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        202419
+    ]
+}

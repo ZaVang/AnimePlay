@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/1f/56822_crt_ydDQ9.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c0/1f/56822_crt_ydDQ9.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/c0/1f/56822_crt_ydDQ9.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/1f/56822_crt_ydDQ9.jpg"
+    },
+    "summary": "",
+    "name": "ポプ子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "pop子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ぽぷこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Popuko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 42,
+        "collects": 90
+    },
+    "id": 56822,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        212279
+    ]
+}

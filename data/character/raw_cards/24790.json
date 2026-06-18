@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8b/60/24790_crt_Lp6Y6.jpg?r=1399125099",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8b/60/24790_crt_Lp6Y6.jpg?r=1399125099",
+        "large": "https://lain.bgm.tv/pic/crt/l/8b/60/24790_crt_Lp6Y6.jpg?r=1399125099",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8b/60/24790_crt_Lp6Y6.jpg?r=1399125099"
+    },
+    "summary": "美少女転校生。\r\nその正体は、「甘ブリ」が誇る秘書室長であり、エリート衛士。\r\nマスケット銃を常に携帯している。\r\n\r\n第3学期转入甘城高中的美少女转学生，与西也同班，有着大大的双眼与亚麻色长发，表情十分冷淡、沉静。\r\n其真实身份是红枫乐园近卫队第一卫士，本名“伊丝兹露哈·森托西雅”。\r\n身边随时带着一挺毛瑟枪“Steinberger”。\r\n受到家系的祖先河童影响，本人言“一天没洗三次澡就会有种快死掉的感觉”，也喜欢吃黄瓜。",
+    "name": "千斗いすず",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "千斗五十铃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "伊丝兹露哈·森托西雅"
+                },
+                {
+                    "k": "日文名",
+                    "v": "千斗 いすず"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "せんと いすず"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sento Isuzu"
+                },
+                {
+                    "k": "昵称",
+                    "v": "500（五十零）"
+                },
+                {
+                    "k": "本名",
+                    "v": "イースズルハ・セントルシア"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 81,
+        "collects": 605
+    },
+    "id": 24790,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        93545
+    ]
+}

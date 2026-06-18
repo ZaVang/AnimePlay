@@ -1,0 +1,52 @@
+{
+    "id": 6892,
+    "name": "アスベル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/eb/be/6892_crt_JJcRF.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/be/6892_crt_JJcRF.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/be/6892_crt_JJcRF.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/eb/be/6892_crt_JJcRF.jpg"
+    },
+    "summary": "动画版：培吉特市的王子，拉丝黛的哥哥。精通维修及操作机件，性格勇敢机灵，决心向多鲁美奇亚报仇。伏击库夏娜时为娜乌西卡所救，在腐海底部发现腐海的秘密。故事最后与娜乌西卡众人一同在风之谷生活。 \r\n　　原作漫画：因家乡遭库夏娜率领的多鲁奇美亚军摧毁；而企图复仇的培吉特市王子。在用飞行机攻击库夏娜军机时遭大量腐海昆虫狙击而被娜乌西卡拯救。与娜乌西卡从腐海离开时虽被土鬼的飞行船所拘捕，但之后协助娜乌西卡逃脱。事后在飞行船上巧遇前来侦察的犹巴，与玛尼族少女桂嘉、玛尼族上人一同逃离土鬼的飞行船。并一同南下前往土鬼诸国，企图寻找整个事件背后的秘密。在剧情最后与桂嘉相恋。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿斯贝鲁"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "アスベル"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Asbel"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 0,
+        "collects": 4
+    },
+    "anime_ids": [
+        295
+    ]
+}

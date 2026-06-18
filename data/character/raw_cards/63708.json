@@ -1,0 +1,41 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/0f/63708_crt_KaEgU.jpg?r=1530803705",
+        "grid": "https://lain.bgm.tv/pic/crt/g/93/0f/63708_crt_KaEgU.jpg?r=1530803705",
+        "large": "https://lain.bgm.tv/pic/crt/l/93/0f/63708_crt_KaEgU.jpg?r=1530803705",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/0f/63708_crt_KaEgU.jpg?r=1530803705"
+    },
+    "summary": "本名山本健太郎。 \r\n原是给人以依靠感的平头大哥，却成了偶像团体“极道少女”的正统派首领。\r\n28岁，变性前是另外2人的大哥，也是现任偶像团体的队长。",
+    "name": "山本アイリ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "山本爱理"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "山本健太郎"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 10
+    },
+    "id": 63708,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        231278
+    ]
+}

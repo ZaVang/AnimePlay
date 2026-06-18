@@ -1,0 +1,85 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/fd/50576_crt_Tuatt.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/da/fd/50576_crt_Tuatt.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/da/fd/50576_crt_Tuatt.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/fd/50576_crt_Tuatt.jpg"
+    },
+    "summary": "从北海道的乡下上京而来的元气马娘。\r\n虽然一出生就遭遇了与母亲生离死别的悲剧，幸而在养育了自己的“妈妈”与牧场人员的“叔叔”们的爱情下健康成长了。由此，有着就算遇到怎样的逆境也能够振作起来的明朗性格与积极性思考。\r\n性格温柔但稍微有些天然气质，很为朋友着想且做什么事都非常拼命。几度遭遇挫折也绝不言弃、以不屈的斗志再度站起的运动根性少女。兴奋起来的话会不小心用上家乡的北海道方言。\r\n***\r\n特别周（1995年5月2日~2018年4月27日）深枣色\r\n公马\r\n出生地：日本 (北海道門別町)",
+    "name": "スペシャルウィーク",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "特别周"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "特別週"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Special Week"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月2日"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "体重",
+            "value": "微减（赛前有点紧张）"
+        },
+        {
+            "key": "BWH",
+            "value": "B81・W56・H81"
+        },
+        {
+            "key": "毛色",
+            "value": "黒鹿毛"
+        },
+        {
+            "key": "现实马主",
+            "value": "臼田 浩義"
+        },
+        {
+            "key": "成績(勝率)",
+            "value": "17戦10勝（58.8%）"
+        },
+        {
+            "key": "獲得賞金",
+            "value": "10億9,262万円 (中央)"
+        },
+        {
+            "key": "固有二つ名",
+            "value": "日本の総大将"
+        }
+    ],
+    "stat": {
+        "comments": 75,
+        "collects": 239
+    },
+    "id": 50576,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        212003
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 13,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/70/55069_crt_JfbA3.jpg?r=1674966450",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1c/70/55069_crt_JfbA3.jpg?r=1674966450",
+        "large": "https://lain.bgm.tv/pic/crt/l/1c/70/55069_crt_JfbA3.jpg?r=1674966450",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/70/55069_crt_JfbA3.jpg?r=1674966450"
+    },
+    "summary": "学生会长兼蓝原学园的继承人，黑色长发，面容秀丽，成绩优秀。严于律己和律人，因父亲再婚的关系与柚子成为义妹并开始同居生活。\r\n在漫画17话中与柚子正式交往成为恋人。\r\n接受了柚子的戒指，内心深爱着柚子，历经坎坷……终于明白了与柚子互相喜欢着对方，与柚子互表心意后结婚。",
+    "name": "藍原芽衣",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蓝原芽衣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "藍原 芽衣"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あいはら めい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aihara Mei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月13日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "年龄",
+            "value": "16岁"
+        },
+        {
+            "key": "班级",
+            "value": "1年级A班→2年级A班（17话）→3年级（36话）"
+        }
+    ],
+    "stat": {
+        "comments": 35,
+        "collects": 119
+    },
+    "id": 55069,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        198098
+    ]
+}

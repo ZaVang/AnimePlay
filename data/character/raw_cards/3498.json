@@ -1,0 +1,79 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/4b/3498_crt_Ph2A4.jpg?r=1751451584",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ab/4b/3498_crt_Ph2A4.jpg?r=1751451584",
+        "large": "https://lain.bgm.tv/pic/crt/l/ab/4b/3498_crt_Ph2A4.jpg?r=1751451584",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/4b/3498_crt_Ph2A4.jpg?r=1751451584"
+    },
+    "summary": "高中1年级生，拥有能消除一切异能之力的右手“幻想杀手”（Imagine Breaker）。由于机器无法测量，被当作LV0的无能力者。（科学势力所重点“看护”的原石之一）因其右手，接二连三被卷入各种灾难事件。如果用守恒定律解释的话、他的好运并不是无缘无故的消失了，而是转移给别人（桃花运的原因）。常用“让我打碎这个幻想！”作为使用“幻想杀手”时的台词。其“幻想杀手”被亚雷斯塔认为阻碍自我计划的误差与意外，在保持着中立态度的同时用其右手帮助并救赎了不少角色（收入后宫），目前仍对其真实能力不明，上条当麻也开始准备去了解自己的右手（新约2结尾）目前与一方通行滨面一同面对新的敌人~",
+    "name": "上条当麻",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "上条当麻"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "上条当麻"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かみじょとうま"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kamijou Touma"
+                },
+                {
+                    "k": "昵称",
+                    "v": "上条，当麻，大妈"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1月~2月之间"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        },
+        {
+            "key": "超能力等级",
+            "value": "0"
+        },
+        {
+            "key": "技能",
+            "value": "幻想杀手、先兆预知、嘴炮、友情破颜拳"
+        },
+        {
+            "key": "星座",
+            "value": "水瓶座"
+        }
+    ],
+    "stat": {
+        "comments": 129,
+        "collects": 334
+    },
+    "id": 3498,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1014,
+        7843,
+        226540
+    ]
+}

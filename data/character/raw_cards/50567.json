@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/4d/50567_crt_2a8Yo.jpg?r=1509889371",
+        "grid": "https://lain.bgm.tv/pic/crt/g/67/4d/50567_crt_2a8Yo.jpg?r=1509889371",
+        "large": "https://lain.bgm.tv/pic/crt/l/67/4d/50567_crt_2a8Yo.jpg?r=1509889371",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/4d/50567_crt_2a8Yo.jpg?r=1509889371"
+    },
+    "summary": "天然且少女的女大学生。\r\n相当能喝酒的酒豪。喜欢“有趣的事”、同时好奇心非常旺盛，故而被卷入了一件件事件之中。",
+    "name": "黒髪の乙女",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黑发少女"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 31,
+        "collects": 148
+    },
+    "id": 50567,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        202240
+    ]
+}

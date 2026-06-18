@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/10/ef/35187_crt_m281i.jpg?r=1492703453",
+        "grid": "https://lain.bgm.tv/pic/crt/g/10/ef/35187_crt_m281i.jpg?r=1492703453",
+        "large": "https://lain.bgm.tv/pic/crt/l/10/ef/35187_crt_m281i.jpg?r=1492703453",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/10/ef/35187_crt_m281i.jpg?r=1492703453"
+    },
+    "summary": "亚可的室友，从东南亚来的身份不明的魔女。热衷于毒物，从蜘蛛和蛇之类的动物毒素到毒蘑菇之类的植物系毒素都有所研究。时常用亚可做试验，我行我素，毒舌。",
+    "name": "スーシィ・マンババラン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "苏西·曼芭芭拉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Sucy Mambavaran"
+                },
+                {
+                    "k": "日文名",
+                    "v": "スーシィ・マンババラン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sushi Manbabaran"
+                },
+                {
+                    "k": "昵称",
+                    "v": "苏西"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 43,
+        "collects": 192
+    },
+    "id": 35187,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        54675
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/5e/14329_crt_FtF8H.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/72/5e/14329_crt_FtF8H.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/72/5e/14329_crt_FtF8H.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/5e/14329_crt_FtF8H.jpg"
+    },
+    "summary": "本作女主角之一，当地神社的女巫，悠的同班同学，是个非常开朗活力十足的少女，绝大部分的时间脸上都保持着微笑，也因此有时候让人搞不懂心里在想什么。小时候和悠在神社的山林间玩过，当神主的祖父过世后代替其职位，和渚一叶是关系非常亲昵的朋友，经常当一叶拉中提琴时的听众，但每次都会睡着。有着不输给一般人的力气，运动方面也很擅长。养著一只名为“师匠”的猫。",
+    "name": "天女目瑛",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "天女目瑛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あまつめ あきら"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月3日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "153cm"
+        }
+    ],
+    "stat": {
+        "comments": 42,
+        "collects": 235
+    },
+    "id": 14329,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        7157
+    ]
+}

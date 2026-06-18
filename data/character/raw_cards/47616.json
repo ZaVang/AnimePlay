@@ -1,0 +1,52 @@
+{
+    "id": 47616,
+    "name": "ルミア＝ティンジェル",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/81/3a/47616_crt_112hi.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/3a/47616_crt_112hi.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/3a/47616_crt_112hi.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/81/3a/47616_crt_112hi.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "露米娅·汀洁尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Rumia Tingel"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月7日"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 7,
+    "birth_day": 7,
+    "stat": {
+        "comments": 23,
+        "collects": 93
+    },
+    "anime_ids": [
+        174138
+    ]
+}

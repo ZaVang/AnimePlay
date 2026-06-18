@@ -1,0 +1,73 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/70/13018_crt_3muwi.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/da/70/13018_crt_3muwi.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/da/70/13018_crt_3muwi.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/70/13018_crt_3muwi.jpg"
+    },
+    "summary": "黒の読姫の正統なる鍵守の後継者，本作の主人公。ウェズリー・ディスワードの孫。18、19歳ほどの青年。\r\n\r\n本名はヒュー・アンソニー・ディスワード(Hugh Anthony Disward)。初対面の者にはディスワード卿と呼ばれることもある。\r\n\r\n蒐書狂(ビブリオマニア)のウェズリー・ディスワードの孫。十八、九ほどの青年で、ほとんどの話に登場する。\r\n\r\n祖父の遺言で古ぼけた屋敷と『ダンタリアンの書架』を引き継ぎ、ダリアンの世話を任された。革製のフロックコートを身にまとい、帽子をかぶっている。一人称は『僕』だが、戦争中は『俺』と名乗っていた。拳銃の扱いに長けており、戦中はパイロットで撃墜王になっているとのこと。最終階級は少尉。愛用銃は、中折れ式のリボルバー。軍用の大型拳銃。\r\n\r\n書架解放時の呪文は「我は問う、汝は人なりや？（I ask of thee Art thou mankind?）」\r\n\r\nちなみに、3歳の時『ダンタリアンの書架』に迷い込んだことがあり、一晩中泣き続けていたらしい。",
+    "name": "ヒューイ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "修伊"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ヒューイ"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Huey"
+                },
+                {
+                    "k": "日文本名",
+                    "v": "ヒュー・アンソニー・ディスワード"
+                },
+                {
+                    "k": "英文本名",
+                    "v": "Hugh·Anthony·Disward"
+                },
+                {
+                    "k": "中文本名",
+                    "v": "修·安东尼·德斯沃德"
+                },
+                {
+                    "k": "称呼",
+                    "v": "ディスワード卿(ロード･ディスワード)"
+                },
+                {
+                    "k": "昵称",
+                    "v": "修伊（ヒューイ）"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "書架解放時の呪文",
+            "value": "我は問う、汝は人なりや？（I ask of thee Art thou mankind?）"
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 70
+    },
+    "id": 13018,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        14667
+    ]
+}

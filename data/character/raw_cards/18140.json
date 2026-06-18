@@ -1,0 +1,52 @@
+{
+    "id": 18140,
+    "name": "レド",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/b1/d6/18140_crt_g1J69.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/d6/18140_crt_g1J69.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/d6/18140_crt_g1J69.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b1/d6/18140_crt_g1J69.jpg"
+    },
+    "summary": "人類銀河同盟の少尉。戦闘能力は高いが、戦うこと以外を知らずに育った。そのため感情表現が苦手で誤解されることもしばしばある。戦闘中に時空のひずみに飲み込まれ、辺境の惑星・地球に漂着し人工冬眠状態だったところをガルガンティアに救われた。言葉も通じない未知の環境の中、生きるためにガルガンティアの人々と交流することを通じて、次第にその心に変化が訪れる。16才",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雷德"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Led"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "173cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.gargantia.jp/#character_0"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 17,
+        "collects": 71
+    },
+    "anime_ids": [
+        56091
+    ]
+}

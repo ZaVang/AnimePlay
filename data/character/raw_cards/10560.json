@@ -1,0 +1,60 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/3b/10560_crt_m0lId.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/05/3b/10560_crt_m0lId.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/05/3b/10560_crt_m0lId.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/3b/10560_crt_m0lId.jpg"
+    },
+    "summary": "OVA\r\n天真爛漫的學生，熱切期待中學生活。在班中認識優美，成為了好朋友。\r\n\r\nTV\r\n外觀與OVA版相同，相異之處僅於制服處。\r\n注重生活顏色，以至各種生活小節的少女。當別人遇上問題時，一直都很想透過溝通和交流協助解決，很容易為對方感到悲傷。在開學之後加入了籃球部。容易暈車。\r\n於開學典禮受優美幫助後，對其有很大興趣，又因為彩色小鳥畫冊的共同興趣而前往了優美家，但卻被加賀里刁難，並看到了優美被壓制的情況。事件解決後雙方正式成為朋友。在由宇影響下有時也會到「朝霞輔導室」。\r\n時常會夢見BLACK★ROCK SHOOTER，但並不知道其真正的暗示意思。在由宇告知下清楚表裡世界的連結，但接受不了只有殺掉裡世界的人才能解放痛苦這種事，由宇因此決定要協助穿越麻陶前往裡世界，但卻又因目睹BLACK★ROCK SHOOTER殺了形似優美的Dead Master而崩潰，後來就一直被困在Insane.BLACK★ROCK SHOOTER的身體內，這時麻陶會感受到Insane.BLACK★ROCK SHOOTER所受到的各種傷害。\r\n一度聽到Black Gold Saw體內沙耶的呼喚而產生反應，卻沒有甦醒，後來受到Strength不斷對其內心呼喚的影響下才總算甦醒，並且在體內協助壓制Insane.BLACK★ROCK SHOOTER的行動，令Insane.BLACK★ROCK SHOOTER感到不耐煩。在Strength欲犧牲自己解救由宇的情況下發出吶喊，同時瞬間自己化身為BLACK★ROCK SHOOTER回到屬於BLACK★ROCK SHOOTER的世界與Insane.BLACK★ROCK SHOOTER進行對談，並且覺悟自己不應該只是逃避痛苦的事。\r\n最終戰勝Insane.BLACK★ROCK SHOOTER，並且回歸現實體認到自己應該更多關心朋友。",
+    "name": "黒衣マト",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黑衣麻陶"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "黑衣真透"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "黑衣真兔"
+                },
+                {
+                    "k": "日文名",
+                    "v": "黒衣 マト"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くろい マト"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kuroi Mato"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 75
+    },
+    "id": 10560,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        22179
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/35/21/47609_crt_Ew90n.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/35/21/47609_crt_Ew90n.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/35/21/47609_crt_Ew90n.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/35/21/47609_crt_Ew90n.jpg"
+    },
+    "summary": "容姿端麗、成績優秀、頭脳明晰、スポーツ万能と現実の人間とは思えないスペックを誇る美少女。いわゆる「学内アイドル」だが、ゲーム部部長という顔も持つ。",
+    "name": "天道花憐",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "天道花怜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "天道 花憐"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "てんどう かれん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tendou Karen"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "BWH",
+            "value": "85/57/82"
+        }
+    ],
+    "stat": {
+        "comments": 65,
+        "collects": 213
+    },
+    "id": 47609,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        195816
+    ]
+}

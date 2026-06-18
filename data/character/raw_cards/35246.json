@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/d4/35246_crt_OCo9f.jpg?r=1723551108",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f1/d4/35246_crt_OCo9f.jpg?r=1723551108",
+        "large": "https://lain.bgm.tv/pic/crt/l/f1/d4/35246_crt_OCo9f.jpg?r=1723551108",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/d4/35246_crt_OCo9f.jpg?r=1723551108"
+    },
+    "summary": "是一位住在有矿坑的小型城镇附近的少年，本作品的男主角，于矿山中担任实习的机械工人一职。\r\n父母双亡，父亲先前是飞行冒险家，在一次使用飞行船进行飞行冒险时，不慎被低气压卷入，但却成功突入到内部并意外发现到天空之城拉普达且成功拍摄到一幅照片，因而坚称天空之城拉普达确实存在，但当时众人对他的说法存疑，导致死前都一直被当成骗子。\r\n巴斯个人深信父亲对于拉普达的所言不假并决心承继父亲的遗志，愿望是自己制造一架小型飞机来寻找传说中的天空之城拉普达，作品中有一幕有带到这一架已经完成一部分的航空器。\r\n本身个性直接且豪爽，因从事矿工的因素而身强体壮；且具有超出一般同年龄小孩的运动细胞，亦有着优秀的眼力。每天早上起床后的例行公事则为放出自家楼顶饲养的鸽子及吹奏小喇叭。\r\n在本作品的最后，和希达一同前往希达的北方故乡肯德亚山谷。",
+    "name": "パズー",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "巴斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "巴魯"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Pazu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "CV",
+            "value": "田中真弓（日）；James Van Der Beek (Disney dub)； Barbara Goodson (Magnum dub)"
+        }
+    ],
+    "stat": {
+        "comments": 17,
+        "collects": 34
+    },
+    "id": 35246,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        298
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/6f/99577_crt_wwOzv.jpg?r=1685793350",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b6/6f/99577_crt_wwOzv.jpg?r=1685793350",
+        "large": "https://lain.bgm.tv/pic/crt/l/b6/6f/99577_crt_wwOzv.jpg?r=1685793350",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/6f/99577_crt_wwOzv.jpg?r=1685793350"
+    },
+    "summary": "根絶やしにされた暗殺集団「影の一族」の生き残り。\r\n盗みを生業にしている。",
+    "name": "カゲ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "卡克"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Kage"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 12
+    },
+    "id": 99577,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        296109
+    ]
+}

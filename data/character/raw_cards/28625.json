@@ -1,0 +1,85 @@
+{
+    "birth_mon": 8,
+    "gender": "male",
+    "birth_day": 28,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/64/61/28625_crt_pLxZl.jpg?r=1420139381",
+        "grid": "https://lain.bgm.tv/pic/crt/g/64/61/28625_crt_pLxZl.jpg?r=1420139381",
+        "large": "https://lain.bgm.tv/pic/crt/l/64/61/28625_crt_pLxZl.jpg?r=1420139381",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/64/61/28625_crt_pLxZl.jpg?r=1420139381"
+    },
+    "summary": "前传小说的男主\r\n日本帝鬼军吸血鬼歼灭部队“月鬼组”的中佐。保护了逃出的优一郎并向其发出邀请。\r\n带领的五人小队成员有：花依小百合少尉、十条美十大佐、雪见时雨少尉、五士典人大佐。",
+    "name": "一瀬グレン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "一濑红莲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "一瀬 グレン"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いちのせ グレン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ichinose guren"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "8月28日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "183cm"
+        },
+        {
+            "key": "体重",
+            "value": "65kg"
+        },
+        {
+            "key": "职业",
+            "value": "军人（日本帝鬼军）"
+        },
+        {
+            "key": "鬼咒装备",
+            "value": "真昼ノ夜"
+        },
+        {
+            "key": "阶级",
+            "value": "中佐"
+        },
+        {
+            "key": "所属",
+            "value": "月鬼组（红莲队）"
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 24
+    },
+    "id": 28625,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        112151
+    ]
+}

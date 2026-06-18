@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/a6/11920_crt_y8RXf.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f7/a6/11920_crt_y8RXf.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/f7/a6/11920_crt_y8RXf.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/a6/11920_crt_y8RXf.jpg"
+    },
+    "summary": "本作の主人公。高校2年生。身長は170cmくらい。親の仕事の関係で、叔母の女々のもとで暮らすことになる。高校生活の間になるべくたくさんの「青春ポイント」を集めることを目標にしている（ただ、青春ポイントの計算はその場のノリでしているため、通算のポイントは知らない）イベント一つの最高点は5ポイント。\r\n深海魚好きで、特技は自転車のウィリー走行。少し変わったところはあるが、普通の男子高校生である。酒に弱く、数口飲んだだけで酔っ払ってしまう。\r\n前作を意識してか、モノローグにおいて幾度か「嘘だけど」という言葉を使用している。",
+    "name": "丹羽真",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "丹羽真"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "にわ まこと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Niwa Makoto"
+                },
+                {
+                    "k": "昵称",
+                    "v": "マコ君、真っち"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 38
+    },
+    "id": 11920,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        10377
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/88/78102_crt_nPbBN.jpg?r=1607763414",
+        "grid": "https://lain.bgm.tv/pic/crt/g/56/88/78102_crt_nPbBN.jpg?r=1607763414",
+        "large": "https://lain.bgm.tv/pic/crt/l/56/88/78102_crt_nPbBN.jpg?r=1607763414",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/88/78102_crt_nPbBN.jpg?r=1607763414"
+    },
+    "summary": "ジオラル王国第一王女にして、【術】の勇者。\r\nクラスは魔術師。聖母のような笑みを絶やさず、\r\n国民にも人気のあるカリスマ的な美少女だが、\r\n実際はすべてを見下すサディスト。\r\n魔術師としての実力は申し分なく、\r\n高位の魔術も使いこなす。",
+    "name": "フレア / フレイア",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "芙列雅"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "芙蕾雅"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Flare"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Furea"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://kaiyari.com/character.html"
+        }
+    ],
+    "stat": {
+        "comments": 35,
+        "collects": 140
+    },
+    "id": 78102,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        295017
+    ]
+}

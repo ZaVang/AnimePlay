@@ -1,0 +1,77 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/d9/112173_crt_LeEy6.jpg?r=1656081901",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8d/d9/112173_crt_LeEy6.jpg?r=1656081901",
+        "large": "https://lain.bgm.tv/pic/crt/l/8d/d9/112173_crt_LeEy6.jpg?r=1656081901",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/d9/112173_crt_LeEy6.jpg?r=1656081901"
+    },
+    "summary": "可愛いメイドさんになることを夢見て、秋葉原へ上京してきた女の子。\r\n自分が思い描く、憧れのメイドさんになるべく日々奮闘する。",
+    "name": "和平なごみ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "和平奈古美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "和平和美"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Wahira Nagomi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月2日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://akibamaidwar.com/"
+        },
+        {
+            "key": "担当カラー",
+            "value": "ピンク"
+        },
+        {
+            "key": "趣味/特技",
+            "value": "木登り"
+        },
+        {
+            "key": "好きな食べ物",
+            "value": "ショコラ"
+        }
+    ],
+    "stat": {
+        "comments": 99,
+        "collects": 90
+    },
+    "id": 112173,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        389450
+    ]
+}

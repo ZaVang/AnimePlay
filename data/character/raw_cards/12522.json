@@ -1,0 +1,62 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 24,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/1f/12522_crt_T7pSr.jpg?r=1427917791",
+        "grid": "https://lain.bgm.tv/pic/crt/g/53/1f/12522_crt_T7pSr.jpg?r=1427917791",
+        "large": "https://lain.bgm.tv/pic/crt/l/53/1f/12522_crt_T7pSr.jpg?r=1427917791",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/1f/12522_crt_T7pSr.jpg?r=1427917791"
+    },
+    "summary": "有着黑色头发、炯炯有神的紫瞳，有着中性长相的美人，留着长发时，部分发丝上系有淡粉色的发带。学习成绩优异，由于某些原因主动拒绝着与他人接触。性格强势毒舌，有点傲娇，从外表看上去很严肃，但其实有时候也会展现很少女的一面，喜欢羽濑川小鹰。",
+    "name": "三日月夜空",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "三日月夜空"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みかづき よぞら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mikazuki Yozora"
+                },
+                {
+                    "k": "昵称",
+                    "v": "空"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月24日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        }
+    ],
+    "stat": {
+        "comments": 39,
+        "collects": 243
+    },
+    "id": 12522,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        17883,
+        46011
+    ]
+}

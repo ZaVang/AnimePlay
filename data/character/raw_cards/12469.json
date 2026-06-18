@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2f/c6/12469_crt_wOxiy.jpg?r=1574844107",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2f/c6/12469_crt_wOxiy.jpg?r=1574844107",
+        "large": "https://lain.bgm.tv/pic/crt/l/2f/c6/12469_crt_wOxiy.jpg?r=1574844107",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2f/c6/12469_crt_wOxiy.jpg?r=1574844107"
+    },
+    "summary": "小说第5卷首度登场。在御坂妹妹中的地位最高， 是御坂网络的管理者。检体编号20001。是为了防止“妹妹们”反叛、失控而制作出来的。身体调整尚未完成，原本不该离开培养器，却因某些原因流落街头，正彷徨时遇见了一方通行。\r\n　　外表是10岁左右的小女孩。第一次登场只包着一条脏毛巾，现在则穿着合身的衣服。\r\n　　人格资料设定上，脱逃时会下意识躲避身穿白色长褂的研究员装扮人士，在处处都有电磁纪录的学园都市中，拥有能够完全躲避追踪的生存本能。 性格像一般的小孩子一样，喜欢去游乐场，对一切的新鲜事物都很感兴趣。而且还会到处乱跑，常常让寻找她的一方通行感到十分无奈。",
+    "name": "打ち止め",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "最后之作"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "最終信号"
+                },
+                {
+                    "v": "御坂20001号"
+                },
+                {
+                    "v": "御坂御坂"
+                },
+                {
+                    "v": "呆毛酱"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Last Order"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ラストオーダー"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "年龄",
+            "value": "0岁"
+        }
+    ],
+    "stat": {
+        "comments": 11,
+        "collects": 201
+    },
+    "id": 12469,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        262939
+    ]
+}

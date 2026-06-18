@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/2a/28281_crt_obTjb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c0/2a/28281_crt_obTjb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/c0/2a/28281_crt_obTjb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/2a/28281_crt_obTjb.jpg"
+    },
+    "summary": "リヴァイのゴロツキ時代の仲間の一人。",
+    "name": "ファーラン・チャーチ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "法兰·乔治"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 0,
+        "collects": 2
+    },
+    "id": 28281,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        110049
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/1f/35643_crt_csr9h.jpg?r=1516264545",
+        "grid": "https://lain.bgm.tv/pic/crt/g/da/1f/35643_crt_csr9h.jpg?r=1516264545",
+        "large": "https://lain.bgm.tv/pic/crt/l/da/1f/35643_crt_csr9h.jpg?r=1516264545",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/1f/35643_crt_csr9h.jpg?r=1516264545"
+    },
+    "summary": "高校1年生。夢は漫画家になること。父に実家の駄菓子屋を継いでほしいと願うが、本人は継ぎたくない。基本的にツッコミ役の主人公。\r\n駄菓子に対する知識は父のヨウをはるかに上回っており、ヨウが懐から取り出したココアシガレットを解説したり、地面に落ちそうになった超ひもQを無意識に食らいつくなど本人の考えとは裏腹に才能を発揮している。\r\n年頃の男子らしく女子に興味がある様子でほたるの胸の谷間を見て取り乱す、遠藤家のシャワーをほたるが借りたことに「いいなぁ」とため息を漏らす場面も。この姿に豆は「スケベ全開」と評している。\r\nあだ名はココナツ。",
+    "name": "鹿田ココノツ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鹿田九"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "鹿田 ココノツ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しかだ ココノツ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shikada Kokonotsu"
+                },
+                {
+                    "k": "昵称",
+                    "v": "椰子"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 11
+    },
+    "id": 35643,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        146994
+    ]
+}

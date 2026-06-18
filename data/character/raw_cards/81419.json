@@ -1,0 +1,81 @@
+{
+    "birth_mon": 11,
+    "gender": "male",
+    "birth_day": 29,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/37/81419_crt_KKgcY.jpg?r=1599463713",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c1/37/81419_crt_KKgcY.jpg?r=1599463713",
+        "large": "https://lain.bgm.tv/pic/crt/l/c1/37/81419_crt_KKgcY.jpg?r=1599463713",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/37/81419_crt_KKgcY.jpg?r=1599463713"
+    },
+    "summary": "“カこそすべて”という脳筋思考を地で行く戦闘バカ。強い者と戦えるならば、自分の命すら惜しまない。\r\n行動原理は単純だが、それゆえ純粋で真っ直ぐな性格をしている。",
+    "name": "喧嘩屋",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "打架人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "搞事王"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "11月29日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "200cm"
+        },
+        {
+            "key": "体重",
+            "value": "95kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B115·W90·H110"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://www.akudama-drive.com/character/kenkaya.html"
+        },
+        {
+            "key": "年龄",
+            "value": "35岁"
+        },
+        {
+            "key": "癖",
+            "value": "拳をぶつける"
+        },
+        {
+            "key": "好きな食べ物",
+            "value": "肉"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 2
+    },
+    "id": 81419,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        302076
+    ]
+}

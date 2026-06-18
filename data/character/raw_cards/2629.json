@@ -1,0 +1,66 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/ff/2629_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8c/ff/2629_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/8c/ff/2629_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/ff/2629_crt_anidb.jpg"
+    },
+    "summary": "隶属于英国清教第零圣堂区“必要之恶教会”的修女。正式名称为“Index-Librorum-Prohibitorum”（禁书目录），年龄约14-15岁，外表是12-13岁的幼儿体型。平常穿着有金色刺绣的纯白修女服。描写时经常使用纯白修女。\r\n她是使用完全记忆能力记忆了10万3000本魔道书的魔道图书馆。虽然书籍内容是一般人只要看就会发疯的危险物品，却能够改写世界的常识，企图夺取内容的人前仆后继的到来。逃亡途中从屋顶上摔下来，挂在上条房间的阳台上，在此和上条相遇。\r\n有生气时咬别人头的坏习惯（都是上条）。喜欢吃东西的食欲少女。因为必须读各种语言的魔道书，精通各种语言。反之，拿科学与机械没辄。\r\n魔法名为“Dedicatus545”（献身的羔羊守护强者的知识）。本身无法使用魔术，不过可以使用介入他人咏唱阻碍发动与效果的“强制咏唱”与抓出对手教义的矛盾之处，使对方的精神暂时受到破坏的“魔灭之声”。\r\n能够做出某种程度的自卫行为。同时能够从广大的魔道书知识中取得情报，把握局势和定订作战计划。",
+    "name": "インデックス",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "茵蒂克斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "小黄书"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Index Librorum Prohibitorum"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "indekkusu"
+                },
+                {
+                    "k": "魔法名",
+                    "v": "Dedicatus545（献身的な子羊は強者の知識を守る）"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "148cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 39,
+        "collects": 368
+    },
+    "id": 2629,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1014,
+        7843,
+        226540
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 13,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/35/73836_crt_mhhJS.jpg?r=1678023959",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ca/35/73836_crt_mhhJS.jpg?r=1678023959",
+        "large": "https://lain.bgm.tv/pic/crt/l/ca/35/73836_crt_mhhJS.jpg?r=1678023959",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/35/73836_crt_mhhJS.jpg?r=1678023959"
+    },
+    "summary": "就读于练马大学。和也的初恋女友、前女友。与和也分手后一直对他重复着谜一样的贬低。与悠闲软萌的外表相反，也有着腹黑的一面……",
+    "name": "七海麻美",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "七海麻美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "七海 麻美"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ななみ まみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nanami Mami"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月13日"
+        }
+    ],
+    "stat": {
+        "comments": 74,
+        "collects": 129
+    },
+    "id": 73836,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        296076
+    ]
+}

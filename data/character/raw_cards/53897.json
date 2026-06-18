@@ -1,0 +1,73 @@
+{
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/d7/53897_crt_DTxQ1.jpg?r=1494260522",
+        "grid": "https://lain.bgm.tv/pic/crt/g/69/d7/53897_crt_DTxQ1.jpg?r=1494260522",
+        "large": "https://lain.bgm.tv/pic/crt/l/69/d7/53897_crt_DTxQ1.jpg?r=1494260522",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/d7/53897_crt_DTxQ1.jpg?r=1494260522"
+    },
+    "summary": "明的混乱制造者。喜欢的东西是明和香蕉，每科都考0分、连九九乘法都不会的笨蛋，但是运动神经很好。她笨到连在公园玩的小学生都在替她的未来担忧，建议她不要玩乐、去读书；不过她认为只要嫁给明就不必担心未来，但因为太笨，明把她当动物（猴子）看。",
+    "name": "花畑よしこ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "花畑佳子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "花畑 よしこ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はなばたけ よしこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hanabatake Yoshiko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月1日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "48kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 43,
+        "collects": 79
+    },
+    "id": 53897,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        208450
+    ]
+}

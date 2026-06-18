@@ -1,0 +1,76 @@
+{
+    "id": 11131,
+    "name": "櫻井奏",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/65/ac/11131_crt_wZx6N.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/ac/11131_crt_wZx6N.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/ac/11131_crt_wZx6N.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/65/ac/11131_crt_wZx6N.jpg"
+    },
+    "summary": "高校2年級，美術部。櫻井雪乃的雙生妹妹。從小便對雪乃有着姐妹以上的曖昧情感。為了上學而來到東京，居住於學生宿舍。想入讀美術大學卻不想與雪乃分開，因此正在糾結中。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "樱井奏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "さくらい かなで"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakurai Kanade"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月21日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "体重",
+            "value": "57kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B83/W60/H89"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        },
+        {
+            "key": "喜愛的食物",
+            "value": "所有甜食，特別是甜甜圈和雪乃製作的意大利麵"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 6,
+    "birth_day": 21,
+    "stat": {
+        "comments": 11,
+        "collects": 51
+    },
+    "anime_ids": [
+        2829
+    ]
+}

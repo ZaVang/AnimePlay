@@ -1,0 +1,61 @@
+{
+    "birth_mon": 12,
+    "gender": "male",
+    "birth_day": 14,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/32/13829_crt_VcVmV.jpg?r=1380351422",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e6/32/13829_crt_VcVmV.jpg?r=1380351422",
+        "large": "https://lain.bgm.tv/pic/crt/l/e6/32/13829_crt_VcVmV.jpg?r=1380351422",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/32/13829_crt_VcVmV.jpg?r=1380351422"
+    },
+    "summary": "喜欢年上，有惧高症。两年前向一位女子表白后，在圣诞夜的约会，惨遭其放鸽子而对情感上存在着恐惧，增深。高二的初冬，想着今年的圣诞一定要和女孩子一起度过。\r\n喜爱小X书、游戏、漫画，放学常去GameCenter，喜欢看妹妹的少女漫。\r\n性格温厚，溺爱妹妹，性癖绅士，敢想敢做。",
+    "name": "橘純一",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "橘纯一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Junichi Tachibana"
+                },
+                {
+                    "k": "日文名",
+                    "v": "橘 純一"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たちばな じゅんいち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tachibana Junichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "12月14日"
+        }
+    ],
+    "stat": {
+        "comments": 37,
+        "collects": 26
+    },
+    "id": 13829,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        5656
+    ]
+}

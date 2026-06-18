@@ -1,0 +1,62 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 20,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/79/183099_crt_WvU45.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e0/79/183099_crt_WvU45.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/e0/79/183099_crt_WvU45.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/79/183099_crt_WvU45.jpg"
+    },
+    "summary": "就读于穗群原学园小学部的普通女孩子。银发赤眼，名字很有贵族的风格，常不在家的双亲从事神秘的工作，分明是一般宅邸，却不知为何有两位女仆在，顺便还有一个没有血缘关系的哥哥，但还是一个非常普通的小学五年级女孩子。",
+    "name": "イリヤスフィール・フォン・アインツベルン (プリズマ☆イリヤ)",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊莉雅斯菲尔·冯·爱因兹贝伦 (Prisma☆Illya)"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Illyasviel von Einzbern (Prisma☆Illya)"
+                },
+                {
+                    "k": "昵称",
+                    "v": "伊莉雅"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月20日"
+        },
+        {
+            "key": "身高",
+            "value": "133cm"
+        },
+        {
+            "key": "体重",
+            "value": "29kg"
+        }
+    ],
+    "stat": {
+        "comments": 11,
+        "collects": 60
+    },
+    "id": 183099,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        43951,
+        83402
+    ]
+}

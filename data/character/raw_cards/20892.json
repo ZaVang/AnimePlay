@@ -1,0 +1,66 @@
+{
+    "birth_mon": 7,
+    "gender": "male",
+    "birth_day": 21,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/52/20892_crt_8ae88.jpg?r=1611926447",
+        "grid": "https://lain.bgm.tv/pic/crt/g/29/52/20892_crt_8ae88.jpg?r=1611926447",
+        "large": "https://lain.bgm.tv/pic/crt/l/29/52/20892_crt_8ae88.jpg?r=1611926447",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/52/20892_crt_8ae88.jpg?r=1611926447"
+    },
+    "summary": "高中3年级学生。异界士，名濑家的长男。使用槛の能力的异界士。\r\n与美月同样监视着秋人，与秋人经常开玩笑，两人关系很好。\r\n极度的妹控，对美月非常疼爱。平时一副开玩笑的样子，但做事的时候很精干。实际上很会照顾人。\r\n文艺部的幽灵成员。",
+    "name": "名瀬博臣",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "名濑博臣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "なせ ひろおみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nase Hiroomi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "7月21日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "178cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 27,
+        "collects": 77
+    },
+    "id": 20892,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        49278,
+        118908
+    ]
+}

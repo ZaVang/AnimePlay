@@ -1,0 +1,81 @@
+{
+    "birth_mon": 5,
+    "gender": "male",
+    "birth_day": 5,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/16/35241_crt_QjBQE.jpg?r=1446950805",
+        "grid": "https://lain.bgm.tv/pic/crt/g/be/16/35241_crt_QjBQE.jpg?r=1446950805",
+        "large": "https://lain.bgm.tv/pic/crt/l/be/16/35241_crt_QjBQE.jpg?r=1446950805",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/16/35241_crt_QjBQE.jpg?r=1446950805"
+    },
+    "summary": "　　本作的主角，个性单纯耿直，但却因为无法控制自身异能而暴走，变成巨虎到处伤人，后来在武装侦探社成员的太宰治帮助下，以“人间失格”能力解除暴走，并且被邀请加入异能侦探社。因为不明的原因，被港口黑手党与海外异能组织Guild追捕中，目前和从港口黑手党脱离的泉镜花同居中。\r\n　　能力：“月下兽”，可变形为一只巨大的老虎。\r\n　　典故：出自同名小说家中岛敦(なかじま あつし)的作品《山月记》，作品改编自中国明代《古今说海》中的《人虎传》，描述一名叫做李征的进士因官场不得志，郁郁寡欢后性情否变，最终变为山中虎怪的故事。故事原篇名为《李征》出自唐代张读《宣室志》后收录于宋代李昉编著之《太平广记》中。",
+    "name": "中島敦",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "中岛敦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "中島 敦"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なかじま あつし"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nakajima Atsushi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月5日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "体重",
+            "value": "55kg"
+        },
+        {
+            "key": "年龄",
+            "value": "18"
+        },
+        {
+            "key": "喜好",
+            "value": "茶泡饭、猫、变色龙、横滨"
+        },
+        {
+            "key": "讨厌",
+            "value": "自己、以前待的孤儿院"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 31
+    },
+    "id": 35241,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        144357
+    ]
+}

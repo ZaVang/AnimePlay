@@ -1,0 +1,79 @@
+{
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/bb/21627_crt_Z4iSY.jpg?r=1576123389",
+        "grid": "https://lain.bgm.tv/pic/crt/g/04/bb/21627_crt_Z4iSY.jpg?r=1576123389",
+        "large": "https://lain.bgm.tv/pic/crt/l/04/bb/21627_crt_Z4iSY.jpg?r=1576123389",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/bb/21627_crt_Z4iSY.jpg?r=1576123389"
+    },
+    "summary": "位于彩海学园中等部三年级。14岁的见习“剑巫”，狮子王机关的下属攻魔师。使用刻印“神格振动波驱动术式”的“七式突击降魔机枪”——“雪霞狼”（将魔力无效化的能力）。不擅长诅咒和占卜，但对于剑术和灵视很擅长。\r\n之前在狮子王机关设立的神道女子学校“高神的森林\"就读。对于大城市常见的某些东西却有点陌生（比如夹娃娃机）不擅长坐飞机。\r\n名义上受组织任命负责监视和抹杀“第四真祖”，实际上被狮子王机关送来做“第四真祖”——晓古城的妻子（本人并不知情）。",
+    "name": "姫柊雪菜",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "姬柊雪菜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "剑巫"
+                },
+                {
+                    "v": "Swords Shaman"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Yukina Himeragi"
+                },
+                {
+                    "k": "日文名",
+                    "v": "姫柊 雪菜"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひめらぎ ゆきな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Himeragi Yukina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月7日"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B76-W55-H78-C60"
+        },
+        {
+            "key": "年龄",
+            "value": "14"
+        }
+    ],
+    "stat": {
+        "comments": 50,
+        "collects": 274
+    },
+    "id": 21627,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        67826
+    ]
+}

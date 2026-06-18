@@ -1,0 +1,65 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/bb/72649_crt_PZoRr.jpg?r=1578712977",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ab/bb/72649_crt_PZoRr.jpg?r=1578712977",
+        "large": "https://lain.bgm.tv/pic/crt/l/ab/bb/72649_crt_PZoRr.jpg?r=1578712977",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/bb/72649_crt_PZoRr.jpg?r=1578712977"
+    },
+    "summary": "天文组的高中一年级生。\r\n从小就对天文感兴趣，在高中加入了地学社。\r\n不擅长与人交谈、老实的性格。\r\n书包上挂着鲸的吉祥物。",
+    "name": "真中あお",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "真中蓝"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "真中苍"
+                },
+                {
+                    "k": "日文名",
+                    "v": "真中 あお"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まなか あお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Manaka Ao"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月25日"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        }
+    ],
+    "stat": {
+        "comments": 67,
+        "collects": 181
+    },
+    "id": 72649,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        276150
+    ]
+}

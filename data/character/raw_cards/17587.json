@@ -1,0 +1,65 @@
+{
+    "birth_mon": 4,
+    "gender": "male",
+    "birth_day": 17,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/3b/17587_crt_pu7Mc.jpg?r=1615704379",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e1/3b/17587_crt_pu7Mc.jpg?r=1615704379",
+        "large": "https://lain.bgm.tv/pic/crt/l/e1/3b/17587_crt_pu7Mc.jpg?r=1615704379",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/3b/17587_crt_pu7Mc.jpg?r=1615704379"
+    },
+    "summary": "在校形象阴暗。讨厌吃番茄的皮。\r\n性格看似天然但事实上却心思细腻，也是个温柔的人。体型纤细，头发梳开露出脸庞后更是与女孩子一样清秀。\r\n中学时利用别针打了九个洞（耳朵左右各四个、一个在嘴唇，嘴唇的后来好像合起来了。）、身上也有着刺青。因为不想被人发现，所以上学时都以长发和穿长袖制服来遮掩。\r\n自幼稚园起就被排挤，而到国中时更加剧烈。\r\n对朋友几乎都用敬语，但似乎在进藤面前会展现毒舌的一面。\r\n在高一时，曾经被堀主动搭话、要求一起做报告，似乎自从那时候开始就在关注著堀…\r\n曾经在堀睡觉时向其告白，并在23话后与堀交往。",
+    "name": "宮村伊澄",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宫村伊澄"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "宮村 伊澄"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みやむら いずみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Miyamura Izumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "04-17"
+        },
+        {
+            "key": "身高",
+            "value": "169cm"
+        },
+        {
+            "key": "班级",
+            "value": "3年1组"
+        }
+    ],
+    "stat": {
+        "comments": 18,
+        "collects": 116
+    },
+    "id": 17587,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        315069
+    ]
+}

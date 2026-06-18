@@ -1,0 +1,57 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": 1996,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/26/37242_crt_mDi7D.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5c/26/37242_crt_mDi7D.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/5c/26/37242_crt_mDi7D.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/26/37242_crt_mDi7D.jpg"
+    },
+    "summary": "山深い田舎町に住む女子高校生。町長である父は家を出ており、小学生の妹、祖母と３人暮らし。性格は素直だが、家系の神社の風習や、父の選挙運動などに嫌気が差している。友人たちと小さく狭い町を嘆き、東京の華やかな生活に憧れを抱いている。\r\n\r\n本作女主角。住在深山乡间小镇糸守町的岐阜县立糸守高等学校2年级生。儿时母亲二叶因病逝世，跟还是小学生的妹妹宫水四叶一起在家族世代经营的“宫水神社”担任巫女，与外祖母共同生活，身为町长的父亲则离家在外。生日为12月1日。\r\n性格直率，对神社家业和父亲的选举活动等事情感到反感。和朋友们对这狭小的城镇叹息，憧憬着东京的华丽生活。",
+    "name": "宮水三葉",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宫水三叶"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "宮水 三葉"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みやみず みつは"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Miyamizu Mitsuha"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1996年12月1日"
+        }
+    ],
+    "stat": {
+        "comments": 127,
+        "collects": 635
+    },
+    "id": 37242,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        160209
+    ]
+}

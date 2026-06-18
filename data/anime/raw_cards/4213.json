@@ -1,0 +1,436 @@
+{
+    "id": 4213,
+    "type": 2,
+    "name": "機動戦士ガンダムΖΖ",
+    "name_cn": "机动战士高达ZZ",
+    "summary": "宇宙世纪0088年，经过格利普斯战役，提坦兹（Titans）被消灭，奥古（AEUG）的实力也大大削弱。吉恩军残余部队在摄政王哈曼・坎恩的率领下趁机以“新吉恩”的名义称霸地球。\r\n在格利普斯战役中受损的奥古军宇宙战舰“阿伽马号”临时停靠在Side1的殖民卫星“香格里拉”。此地经营废品回收业务的捷度・阿西塔和朋友们盯上了阿伽马内的Z高达，准备偷出来卖钱。恰好此时与阿伽马敌对的新吉恩军巡洋舰“安多拉号”也来到了香格里拉，捷度等人被卷入了战斗。",
+    "nsfw": false,
+    "locked": false,
+    "date": "1986-03-01",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/87/2d/4213_DyKAz.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/87/2d/4213_DyKAz.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/87/2d/4213_DyKAz.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/87/2d/4213_DyKAz.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/87/2d/4213_DyKAz.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "机动战士高达ZZ"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "機動戦士ガンダムΖΖ",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "47"
+        },
+        {
+            "key": "放送开始",
+            "value": "1986年3月1日"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.gundam-zz.net/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "名古屋テレビ"
+        },
+        {
+            "key": "播放结束",
+            "value": "1987年1月31日"
+        },
+        {
+            "key": "音乐",
+            "value": "三枝成彰"
+        },
+        {
+            "key": "Copyright",
+            "value": "©1986 創通・サンライズ"
+        },
+        {
+            "key": "原作",
+            "value": "富野由悠季"
+        },
+        {
+            "key": "原案",
+            "value": "矢立肇"
+        },
+        {
+            "key": "企画",
+            "value": "日本サンライズ"
+        },
+        {
+            "key": "总导演",
+            "value": "富野由悠季"
+        },
+        {
+            "key": "人物设定",
+            "value": "北爪宏幸"
+        },
+        {
+            "key": "机械设定",
+            "value": "伸童舎、明貴美加(12-47)；メカニカルベースデザイン：小林誠、出渕裕；ノンクレジット：カトキハジメ、佐山善則、永野護、小田雅弘、浅野正彦、近藤和久、小林誠"
+        },
+        {
+            "key": "机设原案",
+            "value": "富野由悠季(アッグガイ)"
+        },
+        {
+            "key": "设定协力",
+            "value": "安彦良和、大河原邦男、藤田一己"
+        },
+        {
+            "key": "机械作画监督",
+            "value": "内田順久"
+        },
+        {
+            "key": "美术",
+            "value": "池田繁美"
+        },
+        {
+            "key": "色彩设计",
+            "value": "高島清子"
+        },
+        {
+            "key": "摄影监督",
+            "value": "斎藤秋男"
+        },
+        {
+            "key": "剪辑",
+            "value": "布施由美子(井上編集室)"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "秋元康(OP1&ED1)、売野雅勇(OP2)、井荻麟[富野由悠季](ED2)"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "芹澤廣明"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "鷺巣詩郎(OP1&ED1)、若草恵(OP2&ED2)"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "新井正人(OP1&ED1)、ひろえ純(OP2&ED2)"
+        },
+        {
+            "key": "音响监督",
+            "value": "藤野貞義"
+        },
+        {
+            "key": "制片人",
+            "value": "神谷寿一 (名古屋テレビ) 、稲垣光繁 (創通エージェンシー) 、内田健二 (日本サンライズ)"
+        },
+        {
+            "key": "制作",
+            "value": "名古屋テレビ、創通エージェンシー、日本サンライズ"
+        },
+        {
+            "key": "脚本",
+            "value": "鈴木裕美子、遠藤明吾[遠藤明範]、鎌田秀美、斧谷稔[富野由悠季]；总集篇构成：南田操"
+        },
+        {
+            "key": "分镜",
+            "value": "ケイ・コマーシャル、滝沢敏文、斧谷稔[富野由悠季]、杉島邦久、横山広行、森一浩、世良邦男[渡部英雄]、川瀬敏文、高松信司、関田修、谷田部勝義、今西隆志"
+        },
+        {
+            "key": "演出",
+            "value": "寺澤賢、杉島邦久、横山広行、関田修、平林淳、川瀬敏文、高松信司、江上潔、今西隆志"
+        },
+        {
+            "key": "作画监督",
+            "value": "北爪宏幸、山田きさらか、金山明博、恩田尚之、敷島博英、小林利充、神村幸子、小曽根正美、山下明彦"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "滝沢敏文(OP1,OP2,ED2)、斧谷稔[富野由悠季](OP2,ED1,ED2)"
+        },
+        {
+            "key": "OP・ED 演出",
+            "value": "高松信司(OP2,ED2)"
+        },
+        {
+            "key": "动画制作",
+            "value": "日本サンライズ"
+        },
+        {
+            "key": "协力",
+            "value": "河本洋一(4-47)、西中康弘(4-27)、佐山喜則[佐山善則](28-47)"
+        },
+        {
+            "key": "原画",
+            "value": "粟井重紀、石丸賢一、小田不二夫、小野浩一郎、恩田尚之、加藤洋人、熊谷浩彦、古瀬泰英、紺野智幸、坂田文彦、佐藤厚志、佐藤雅浩、重田亜津史[重田敦司]、高橋朝雄、野田康行、松本忍、池田和洋、久米一成、中村悟、松下佳弘、上野賢→上野ケン、小沢美也子、加藤義貴、金山明博、瀬沼靖治、中谷マリ、星越賢二、南全子、仲盛文、仲田美歩、松尾慎、山田浩之、山田真史、岩滝智[岩瀧智]、越智博之、関野昌弘、川元利浩、宇治光夫、江面久、神村幸子、喜多島和成、竹縄菜穂子、高木広行、福島豊明、南伸一郎、山本正文、重田智、牧野行洋、渡辺淳一、小林利充、花輪弘昌、小泉孝司、篠雅律、中野深雪、西村正典、渡辺英樹、渡辺真由美、山内英子、大上浩明[もといぎひろあき]、都築真、石田敦子、大森敦子、小曽根正美、所智一→所ともかず→ところともかず、藤田浩史、山下明彦、山下将仁、佐野浩敏、中村謙一郎、山本正和、多田幸子、大島康弘、桑原周枝、西城竜、寺沢伸介、宇佐美皓一、黄瀬和哉、佐藤敬一[さとうけいいち]、中島美子、山形厚史、山本佐和子、鎌田均、宇都宫智、寺東克己、村中博美、大平晋也、矢野淳、大野勉、佐藤英幸、青柳重美、工藤裕加、吉田恵子、渡部政勝、杉山嘉苗、今隅真一、大川弘義、南野辰也、大竹紀子、佐藤慶子、山下征二、長谷川浩司、皆川晴輝、皆川はるき、金森賢二、内藤孝一、東出太、向山裕治、安藤義信、宇治昌光、仙場隆継、鈴木直仁、市角博継、工藤千恵子、吉田英俊、釘宮洋、坪川正、西井正典、牧野田友康、溝呂木浩章、江崎稔、鈴木康之、高橋勇治、古沢英明、牧野田啓介、仙波隆綱、芥川義明、北爪宏幸、牧野竜一；OP・END作画：瀬尾康博(全话)、北爪宏幸(全话)、内田順久(全话)、越智博之(12-47)、近衛真守[羽原信義](12-47)、吉野高夫(26-47)"
+        },
+        {
+            "key": "补间动画",
+            "value": "赤坂理恵子、木下みさ子、小沢章子、川田栄三、鈴木啓奉、中川信子、野村宙、大内正彦、福岡真一、山本まゆみ、網野勇治、横野恵美子、横野えみ子、高橋ノブ子、鈴木美穂、林鳳翔、有田裕次、中尾直紀、柳下雅司、宮本忠男、高梨光、吉田忍、船津弘美、佐藤洋、松本俊一、佐藤英幸、喜久川肇、林伸昌、竹之内節子、塚田明、赤木洋、井上佳則、添田和弘、服部真奈美、岩長幸一、高橋てる子、スタジオ・マーク、ぱっく、邪魔猫クラブ、スタジオ・夢民、スタジオ・ぶーびー、アルゴシップ、スタジオ・絵夢、MAC、Stマーク#スタジオマークの意、ネオメディア、キティフィルム、みゆきプロ、スタジオ・ダブ、スタジオ・ハピー、ウォンバット、スタジオ・まっちょ、スタジオMAX"
+        }
+    ],
+    "volumes": 0,
+    "eps": 47,
+    "total_episodes": 47,
+    "rating": {
+        "rank": 2756,
+        "total": 2066,
+        "count": {
+            "one": 6,
+            "two": 3,
+            "three": 6,
+            "four": 36,
+            "five": 94,
+            "six": 439,
+            "seven": 886,
+            "eight": 493,
+            "nine": 71,
+            "ten": 32
+        },
+        "score": 7.0
+    },
+    "collection": {
+        "wish": 718,
+        "collect": 2946,
+        "doing": 333,
+        "on_hold": 212,
+        "dropped": 63
+    },
+    "tags": [
+        {
+            "name": "高达",
+            "count": 606
+        },
+        {
+            "name": "SUNRISE",
+            "count": 455
+        },
+        {
+            "name": "富野由悠季",
+            "count": 437
+        },
+        {
+            "name": "TV",
+            "count": 413
+        },
+        {
+            "name": "1986",
+            "count": 309
+        },
+        {
+            "name": "原创",
+            "count": 289
+        },
+        {
+            "name": "萝卜",
+            "count": 219
+        },
+        {
+            "name": "GUNDAM",
+            "count": 178
+        },
+        {
+            "name": "哈曼SAMA",
+            "count": 121
+        },
+        {
+            "name": "机战",
+            "count": 117
+        },
+        {
+            "name": "ZZ",
+            "count": 108
+        },
+        {
+            "name": "科幻",
+            "count": 105
+        },
+        {
+            "name": "前半搞笑",
+            "count": 88
+        },
+        {
+            "name": "日本",
+            "count": 71
+        },
+        {
+            "name": "アニメじゃない！",
+            "count": 47
+        },
+        {
+            "name": "妹控必看",
+            "count": 35
+        },
+        {
+            "name": "战争",
+            "count": 25
+        },
+        {
+            "name": "补旧番",
+            "count": 16
+        },
+        {
+            "name": "搞笑",
+            "count": 14
+        },
+        {
+            "name": "80年代",
+            "count": 13
+        },
+        {
+            "name": "战斗",
+            "count": 11
+        },
+        {
+            "name": "1986年3月",
+            "count": 9
+        },
+        {
+            "name": "北爪宏幸",
+            "count": 8
+        },
+        {
+            "name": "1980s",
+            "count": 8
+        },
+        {
+            "name": "1986年",
+            "count": 7
+        },
+        {
+            "name": "年番",
+            "count": 7
+        },
+        {
+            "name": "大波ZETA",
+            "count": 6
+        },
+        {
+            "name": "TVA",
+            "count": 6
+        },
+        {
+            "name": "UC",
+            "count": 6
+        },
+        {
+            "name": "日本动画",
+            "count": 6
+        }
+    ],
+    "meta_tags": [
+        "机战",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "series": false,
+    "main_character_ids": [
+        3704,
+        4333,
+        13286
+    ],
+    "main_characters": [
+        {
+            "id": 3704,
+            "name": "ハマーン・カーン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e6/fd/3704_crt_DGy8k.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/fd/3704_crt_DGy8k.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/fd/3704_crt_DGy8k.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e6/fd/3704_crt_DGy8k.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3940,
+                    "name": "榊原良子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/60/91/3940_prsn_nisVV.jpg?r=1586115828",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/91/3940_prsn_nisVV.jpg?r=1586115828",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/91/3940_prsn_nisVV.jpg?r=1586115828",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/60/91/3940_prsn_nisVV.jpg?r=1586115828"
+                    },
+                    "short_summary": "1981年“六神合体”中担当芙萝蕾出道。\r\n\r\n从女主角到邪恶老板，通常都是配大姊姊和老奶奶的角色，还有喜剧的角色，不论年龄。\r\n\r\n新闻节目的旁白大多是她处理，因此还特别在“NEWS STATION”担任10年以上的主要旁白。\r\n\r\n押井守爱用的主要配音演员，并在押井的作品里好几次担任重要的角色，如押井担任原作、脚本的广播剧“押井守剧场 地狱看门犬钢铁的猎犬”里担当主角。她也在“攻壳机动队”的部分重制版“攻殻机动队2.0”里替代了原版的家弓家正出演傀儡木偶。\r\n\r\n高桥留美子的“福星小子”、“相聚一刻”、“犬夜叉”等动画作品里都可以听到她这一位老牌配音演员的演出。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 4333,
+            "name": "ブライト・ノア",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6c/83/4333_crt_AvdQf.jpg?r=1781363867",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/83/4333_crt_AvdQf.jpg?r=1781363867",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/83/4333_crt_AvdQf.jpg?r=1781363867",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6c/83/4333_crt_AvdQf.jpg?r=1781363867"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3989,
+                    "name": "鈴置洋孝",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/65/16/3989_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/16/3989_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/16/3989_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/65/16/3989_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーターであり、劇団プロデューサー。\r\n\r\n愛知県名古屋市出身、東京経済大学卒業。身長166 cm、体重59kg。血液型はA型。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13286,
+            "name": "ジュドー・アーシタ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/12/72/13286_crt_t6eB5.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/72/13286_crt_t6eB5.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/72/13286_crt_t6eB5.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/12/72/13286_crt_t6eB5.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4085,
+                    "name": "矢尾一樹",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b1/1d/4085_prsn_Rp5pe.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/1d/4085_prsn_Rp5pe.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/1d/4085_prsn_Rp5pe.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b1/1d/4085_prsn_Rp5pe.jpg"
+                    },
+                    "short_summary": "日本的男性声优、演员、解说。东京俳优生活协同组合、M COMPANY、Sigma Seven（2004年5月20日 - 2009年5月）经历，2009年6月1日起Max Mix所属。\r\n认为既然这是自己选择的工作，那么声优出演18X游戏的时候都应该像工作人员一样以真名饰演，不应该写伪名。[ヤオヒラ塾 第一回]",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

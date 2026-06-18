@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/25/38323_crt_FbUSl.jpg?r=1453465684",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e8/25/38323_crt_FbUSl.jpg?r=1453465684",
+        "large": "https://lain.bgm.tv/pic/crt/l/e8/25/38323_crt_FbUSl.jpg?r=1453465684",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/25/38323_crt_FbUSl.jpg?r=1453465684"
+    },
+    "summary": "莱丁谢夫特里希国陆军军人。\r\n在兄长的要求下，成为薇尔莉特亲人般的存在。",
+    "name": "ギルベルト・ブーゲンビリア",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "基尔伯特·布甘比利亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Gilbert Bougainvillea"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "www.kyotoanimation.co.jp/books/violet/character/gilbert/"
+        }
+    ],
+    "stat": {
+        "comments": 37,
+        "collects": 40
+    },
+    "id": 38323,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        242216
+    ]
+}

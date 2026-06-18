@@ -1,0 +1,73 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4d/5d/65377_crt_GXZ6c.jpg?r=1539279381",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4d/5d/65377_crt_GXZ6c.jpg?r=1539279381",
+        "large": "https://lain.bgm.tv/pic/crt/l/4d/5d/65377_crt_GXZ6c.jpg?r=1539279381",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4d/5d/65377_crt_GXZ6c.jpg?r=1539279381"
+    },
+    "summary": "吸血鬼の少女。約360歳。町の洋館で生活している。\r\n必要なものはネットを利用したり、\r\n現代的で庶民的な生活を送っている。\r\nアニメやコミックが好き。",
+    "name": "ソフィー・トワイライト",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "索菲·特瓦伊莱特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Sophie Twilight"
+                },
+                {
+                    "k": "第二英文名",
+                    "v": "Sofy Twilight"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "苏菲·托莱特"
+                },
+                {
+                    "k": "第三中文名",
+                    "v": "索菲·暮光"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1651年11月（也许）"
+        },
+        {
+            "key": "身高",
+            "value": "151cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://comiccune.jp/news/4449/"
+        },
+        {
+            "key": "出生地",
+            "value": "英国"
+        }
+    ],
+    "stat": {
+        "comments": 50,
+        "collects": 252
+    },
+    "id": 65377,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        241158
+    ]
+}

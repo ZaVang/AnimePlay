@@ -1,0 +1,65 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/0b/12888_crt_6fG2T.jpg?r=1534940111",
+        "grid": "https://lain.bgm.tv/pic/crt/g/04/0b/12888_crt_6fG2T.jpg?r=1534940111",
+        "large": "https://lain.bgm.tv/pic/crt/l/04/0b/12888_crt_6fG2T.jpg?r=1534940111",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/0b/12888_crt_6fG2T.jpg?r=1534940111"
+    },
+    "summary": "超高中级的赌徒（超高校级のギャンブラー）\r\n　　一流的诈骗天才。能在麻将、扑克等对人的赌博中发挥才能。她把自己的一切都用谎言掩盖起来。[mask]本名安広多恵子（Yasuhiro Taeko）[/mask]",
+    "name": "セレスティア・ルーデンベルク",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "瑟雷丝蒂亚·卢登堡"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Celestia Ludenberck"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月23日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "164cm"
+        },
+        {
+            "key": "体重",
+            "value": "46kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B:80cm"
+        }
+    ],
+    "stat": {
+        "comments": 19,
+        "collects": 135
+    },
+    "id": 12888,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        56093
+    ]
+}

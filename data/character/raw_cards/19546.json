@@ -1,0 +1,74 @@
+{
+    "birth_mon": 12,
+    "gender": "male",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/b3/19546_crt_UP2v0.jpg?r=1611927735",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e5/b3/19546_crt_UP2v0.jpg?r=1611927735",
+        "large": "https://lain.bgm.tv/pic/crt/l/e5/b3/19546_crt_UP2v0.jpg?r=1611927735",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/b3/19546_crt_UP2v0.jpg?r=1611927735"
+    },
+    "summary": "",
+    "name": "リヴァイ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "利威尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "利维尔"
+                },
+                {
+                    "v": "兵长"
+                },
+                {
+                    "v": "一米六"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "里维"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Levi"
+                },
+                {
+                    "k": "出版物译名",
+                    "v": "李白"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "12月25日"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "65kg"
+        }
+    ],
+    "stat": {
+        "comments": 157,
+        "collects": 763
+    },
+    "id": 19546,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        110049
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/5a/134704_crt_G3cB5.jpg?r=1694331674",
+        "grid": "https://lain.bgm.tv/pic/crt/g/67/5a/134704_crt_G3cB5.jpg?r=1694331674",
+        "large": "https://lain.bgm.tv/pic/crt/l/67/5a/134704_crt_G3cB5.jpg?r=1694331674",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/5a/134704_crt_G3cB5.jpg?r=1694331674"
+    },
+    "summary": "アルコールソフトのプログラマー。自分の作るプログラムは完璧だと自負しており、PC98をこよなく愛する男の子。アルコールソフトの社長であるてんちょーの息子で、手伝いで美少女ゲームのプログラムをしているだけで美少女ゲームへの興味は薄い。",
+    "name": "六田守",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "六田守"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "六田 守"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ろくた まもる"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://16bitsensation-al.com/character/"
+        }
+    ],
+    "stat": {
+        "comments": 61,
+        "collects": 14
+    },
+    "id": 134704,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        413741
+    ]
+}

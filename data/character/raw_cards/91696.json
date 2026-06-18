@@ -1,0 +1,59 @@
+{
+    "birth_mon": 6,
+    "gender": null,
+    "birth_day": 19,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/a7/91696_crt_LyEMc.jpg?r=1618147524",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9f/a7/91696_crt_LyEMc.jpg?r=1618147524",
+        "large": "https://lain.bgm.tv/pic/crt/l/9f/a7/91696_crt_LyEMc.jpg?r=1618147524",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/a7/91696_crt_LyEMc.jpg?r=1618147524"
+    },
+    "summary": "史上第一台自律人型AI。\r\n作为AI的使命是“用歌声给大家带来幸福”。为了这个使命，她一直在思考什么是“用心唱歌”。\r\n重视羁绊和愿望，为人类工作的AI【歌姬】",
+    "name": "ヴィヴィ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "薇薇"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ディーヴァ"
+                },
+                {
+                    "v": "Diva"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Vivy"
+                }
+            ]
+        },
+        {
+            "key": "生日",
+            "value": "6月19日"
+        },
+        {
+            "key": "体重",
+            "value": "80kg（自称）"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 68,
+        "collects": 180
+    },
+    "id": 91696,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        325286
+    ]
+}

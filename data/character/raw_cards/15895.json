@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/c9/15895_crt_4FP4s.jpg?r=1565255276",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b1/c9/15895_crt_4FP4s.jpg?r=1565255276",
+        "large": "https://lain.bgm.tv/pic/crt/l/b1/c9/15895_crt_4FP4s.jpg?r=1565255276",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/c9/15895_crt_4FP4s.jpg?r=1565255276"
+    },
+    "summary": "",
+    "name": "ギン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "银"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 68
+    },
+    "id": 15895,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        12544
+    ]
+}

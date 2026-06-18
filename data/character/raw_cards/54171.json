@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/89/23/54171_crt_47S1F.jpg?r=1500390275",
+        "grid": "https://lain.bgm.tv/pic/crt/g/89/23/54171_crt_47S1F.jpg?r=1500390275",
+        "large": "https://lain.bgm.tv/pic/crt/l/89/23/54171_crt_47S1F.jpg?r=1500390275",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/89/23/54171_crt_47S1F.jpg?r=1500390275"
+    },
+    "summary": "2年4組\r\n吹奏楽部\r\n菅原くんから好意を示されても自分に向けられているものとは思わず、まったく気付かない。自分に自信が持てないことから恋愛を遠ざけてしまう面も…。\r\n登場作品：「雨」「君は輝いている」「全部熱のせい」「視線」「夏が始まる」",
+    "name": "高野千鶴",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高野千鹤"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "高野 千鶴"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たかの ちづる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takano Chizuru"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ちーちゃん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 19,
+        "collects": 71
+    },
+    "id": 54171,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        208754
+    ]
+}

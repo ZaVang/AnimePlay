@@ -1,0 +1,68 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/2d/31659_crt_zjzAC.jpg?r=1781364268",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b5/2d/31659_crt_zjzAC.jpg?r=1781364268",
+        "large": "https://lain.bgm.tv/pic/crt/l/b5/2d/31659_crt_zjzAC.jpg?r=1781364268",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/2d/31659_crt_zjzAC.jpg?r=1781364268"
+    },
+    "summary": "",
+    "name": "ハサウェイ・ノア",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "哈萨维·诺亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "不肖子"
+                },
+                {
+                    "v": "不孝子"
+                },
+                {
+                    "v": "Mafty Navue Erin"
+                },
+                {
+                    "v": "マフティー・ナビーユ・エリン"
+                },
+                {
+                    "v": "馬法狄·納比尤·艾林"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "哈撒韦·诺亚"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Hathaway Noa"
+                },
+                {
+                    "k": "昵称",
+                    "v": "林小德"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 68,
+        "collects": 105
+    },
+    "id": 31659,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        243429
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "birth_mon": 10,
+    "gender": "male",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ae/9f/20891_crt_t2w0t.jpg?r=1612039045",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ae/9f/20891_crt_t2w0t.jpg?r=1612039045",
+        "large": "https://lain.bgm.tv/pic/crt/l/ae/9f/20891_crt_t2w0t.jpg?r=1612039045",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ae/9f/20891_crt_t2w0t.jpg?r=1612039045"
+    },
+    "summary": "高中2年级。妖梦与人类之间出生的，不死之身（与其说不死，不如说是有着伤好的比较快的特性）。学校文艺部一员。擅长照顾他人，主要擅长吐槽大家被当做活宝。因为是半血，所以既不被妖梦也不被人类所承认，有着孤独的的一面。\r\n眼镜娘控。（对未来说）“像你这样适合戴眼镜的女生千万不能死~”",
+    "name": "神原秋人",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "神原秋人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Kanbara Akihito"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "10月7日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "171cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 77
+    },
+    "id": 20891,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        49278,
+        118908
+    ]
+}

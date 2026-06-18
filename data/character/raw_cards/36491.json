@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/6d/36491_crt_Q74Qq.jpg?r=1464323241",
+        "grid": "https://lain.bgm.tv/pic/crt/g/47/6d/36491_crt_Q74Qq.jpg?r=1464323241",
+        "large": "https://lain.bgm.tv/pic/crt/l/47/6d/36491_crt_Q74Qq.jpg?r=1464323241",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/6d/36491_crt_Q74Qq.jpg?r=1464323241"
+    },
+    "summary": "読んで字のごとく、美術部の部長。こう見えて3年生。いつも部室で寝ており、やる気がないが、年上らしいアドバイスをしてくれることも。",
+    "name": "部長",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "部长"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ぶちょう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "bucho"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.tbs.co.jp/anime/konobi/chara/bucho.html"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 13
+    },
+    "id": 36491,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        150746
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/5d/104598_crt_MzunK.jpg?r=1649312832",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ad/5d/104598_crt_MzunK.jpg?r=1649312832",
+        "large": "https://lain.bgm.tv/pic/crt/l/ad/5d/104598_crt_MzunK.jpg?r=1649312832",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/5d/104598_crt_MzunK.jpg?r=1649312832"
+    },
+    "summary": "渋谷のCLUB「BBラウンジ」でバイトをしながら歌手を目指す。\r\nオーディションに落ち続けLIVEでも誰にも歌を聴いてもらえず歌手の夢を諦めかけていた時、諸葛孔明と出会う。軍師となった孔明に導かれて才能を開花させていく。",
+    "name": "月見英子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "月见英子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "つきみ えいこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tsukimi Eiko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 152,
+        "collects": 382
+    },
+    "id": 104598,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        356756
+    ]
+}

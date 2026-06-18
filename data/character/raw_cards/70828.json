@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0c/d1/70828_crt_QJ7fF.jpg?r=1570796998",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0c/d1/70828_crt_QJ7fF.jpg?r=1570796998",
+        "large": "https://lain.bgm.tv/pic/crt/l/0c/d1/70828_crt_QJ7fF.jpg?r=1570796998",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0c/d1/70828_crt_QJ7fF.jpg?r=1570796998"
+    },
+    "summary": "治癒の能力を持った新米の女神。難度Sの世界・ゲアブランデを救うべく聖哉を召喚したが、聖哉の異常なほど慎重な性格に、いつも振り回されている。",
+    "name": "リスタルテ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莉丝妲黛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "莉丝塔"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Ristarte"
+                },
+                {
+                    "k": "昵称",
+                    "v": "リスタ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 42,
+        "collects": 141
+    },
+    "id": 70828,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        266157
+    ]
+}

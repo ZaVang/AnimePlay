@@ -1,0 +1,545 @@
+{
+    "date": "2022-10-02",
+    "platform": "TV",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/f1/fd/349441_uND33.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/f1/fd/349441_uND33.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/f1/fd/349441_uND33.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/f1/fd/349441_uND33.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/f1/fd/349441_uND33.jpg"
+    },
+    "summary": "星元122年――\r\n\r\n在众多企业扩展到宇宙并构筑巨大经济圈的时代，\r\n有一名少女自边境地区·水星转来MS产业的最大企业“贝纳里特集团”旗下所经营的“阿斯提卡西亚高等专门学园”。\r\n\r\n她名为苏莱塔·墨丘利。\r\n内心纯真的少女随着胸口鲜红的闪烁亮光逐步迈向新世界。",
+    "name": "機動戦士ガンダム 水星の魔女",
+    "name_cn": "机动战士高达 水星的魔女",
+    "tags": [
+        {
+            "name": "高达",
+            "count": 2493,
+            "total_cont": 0
+        },
+        {
+            "name": "大河内一楼",
+            "count": 2015,
+            "total_cont": 0
+        },
+        {
+            "name": "原创",
+            "count": 1999,
+            "total_cont": 0
+        },
+        {
+            "name": "SUNRISE",
+            "count": 1794,
+            "total_cont": 0
+        },
+        {
+            "name": "2022年10月",
+            "count": 1449,
+            "total_cont": 0
+        },
+        {
+            "name": "百合",
+            "count": 1332,
+            "total_cont": 0
+        },
+        {
+            "name": "机战",
+            "count": 1214,
+            "total_cont": 0
+        },
+        {
+            "name": "TV",
+            "count": 1128,
+            "total_cont": 0
+        },
+        {
+            "name": "科幻",
+            "count": 820,
+            "total_cont": 0
+        },
+        {
+            "name": "2022",
+            "count": 710,
+            "total_cont": 0
+        },
+        {
+            "name": "萝卜",
+            "count": 507,
+            "total_cont": 0
+        },
+        {
+            "name": "小林宽",
+            "count": 240,
+            "total_cont": 0
+        },
+        {
+            "name": "战斗",
+            "count": 217,
+            "total_cont": 0
+        },
+        {
+            "name": "竟然是高达！",
+            "count": 185,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 86,
+            "total_cont": 0
+        },
+        {
+            "name": "小林寛",
+            "count": 83,
+            "total_cont": 0
+        },
+        {
+            "name": "校园",
+            "count": 46,
+            "total_cont": 0
+        },
+        {
+            "name": "GUNDAM",
+            "count": 33,
+            "total_cont": 0
+        },
+        {
+            "name": "日本动画",
+            "count": 20,
+            "total_cont": 0
+        },
+        {
+            "name": "2022年",
+            "count": 20,
+            "total_cont": 0
+        },
+        {
+            "name": "轻百合",
+            "count": 17,
+            "total_cont": 0
+        },
+        {
+            "name": "无法预测的命运之舞台",
+            "count": 15,
+            "total_cont": 0
+        },
+        {
+            "name": "水星的魔女",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "动画",
+            "count": 10,
+            "total_cont": 0
+        },
+        {
+            "name": "机甲",
+            "count": 10,
+            "total_cont": 0
+        },
+        {
+            "name": "季番",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "TVA",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "恋爱",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "搞笑",
+            "count": 8,
+            "total_cont": 0
+        },
+        {
+            "name": "2020s",
+            "count": 8,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "机动战士高达 水星的魔女"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Mobile Suit Gundam: THE WITCH FROM MERCURY"
+                },
+                {
+                    "v": "Kidou Senshi Gundam: Suisei no Majo"
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2022年10月2日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": [
+                {
+                    "v": "https://g-witch.net"
+                },
+                {
+                    "v": "https://cn.gundam.info/about-gundam/series-pages/witch"
+                }
+            ]
+        },
+        {
+            "key": "播放电视台",
+            "value": "MBS／TBS系全国28局ネット"
+        },
+        {
+            "key": "播放结束",
+            "value": "2023年1月8日"
+        },
+        {
+            "key": "导演",
+            "value": "小林寛"
+        },
+        {
+            "key": "音乐",
+            "value": "大間々昂"
+        },
+        {
+            "key": "Copyright",
+            "value": "©創通・サンライズ・MBS"
+        },
+        {
+            "key": "原作",
+            "value": "矢立肇／富野由悠季"
+        },
+        {
+            "key": "系列构成",
+            "value": "大河内一楼"
+        },
+        {
+            "key": "脚本",
+            "value": "大河内一楼(1-6,10-12)、米山昂(7)、中西やすひろ(8,9)"
+        },
+        {
+            "key": "人物原案",
+            "value": "モグモ"
+        },
+        {
+            "key": "人物设定",
+            "value": "田頭真理恵（主人物设定）、戸井田珠里、高谷浩利"
+        },
+        {
+            "key": "机械设定",
+            "value": "JNTHED、海老川兼武、稲田航、形部一平、寺岡賢司、柳瀬敬之"
+        },
+        {
+            "key": "原画",
+            "value": "（主机械作画：久壽米木信弥、鈴木勘太、前田清明）"
+        },
+        {
+            "key": "副导演",
+            "value": "安藤良"
+        },
+        {
+            "key": "设定考证",
+            "value": "白土晴一"
+        },
+        {
+            "key": "科幻考证",
+            "value": "高島雄哉"
+        },
+        {
+            "key": "机械协调",
+            "value": "関西リョウジ"
+        },
+        {
+            "key": "设定协力",
+            "value": "HISADAKE"
+        },
+        {
+            "key": "道具设计",
+            "value": "絵を描くPETER、えすてぃお"
+        },
+        {
+            "key": "概念美术",
+            "value": "林絢雯"
+        },
+        {
+            "key": "技术导演",
+            "value": "宮原洋平"
+        },
+        {
+            "key": "美术设计",
+            "value": "岡田有章、森岡賢一、金平和茂、玉盛順一朗、上津康義"
+        },
+        {
+            "key": "美术监督",
+            "value": "佐藤歩"
+        },
+        {
+            "key": "色彩设计",
+            "value": "菊地和子"
+        },
+        {
+            "key": "3DCG",
+            "value": "グラフィニカ、カプセル"
+        },
+        {
+            "key": "CG 导演",
+            "value": "宮風慎一"
+        },
+        {
+            "key": "显示器图形界面",
+            "value": "カプセル、関香織、宮原洋平"
+        },
+        {
+            "key": "摄影监督",
+            "value": "小寺翔太"
+        },
+        {
+            "key": "剪辑",
+            "value": "重村建吾"
+        },
+        {
+            "key": "音响监督",
+            "value": "明田川仁"
+        },
+        {
+            "key": "音效",
+            "value": "上野励"
+        },
+        {
+            "key": "音响",
+            "value": "マジックカプセル"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "松田隼典"
+        },
+        {
+            "key": "音乐制作",
+            "value": "バンダイナムコミュージックライブ"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "Ayase（OP）／ ryo（ED）"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "Ayase（OP）／ ryo（ED）"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "Ayase（OP）／ ryo（ED）"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "YOASOBI（OP）／ シユイ（ED）"
+        },
+        {
+            "key": "企画",
+            "value": "サンライズ；（企画担当：池内謙一郎、早川春菜）"
+        },
+        {
+            "key": "执行制片人",
+            "value": "小形尚弘、田村烈、丸山博雄"
+        },
+        {
+            "key": "制片人",
+            "value": "岡本拓也、前田俊博"
+        },
+        {
+            "key": "助理制片人",
+            "value": "山下裕平、武藤誉、野澤一平；松岡晃平"
+        },
+        {
+            "key": "宣传",
+            "value": "岩﨑小丹、市川ほのか、黒岩慧大、百武揮志朗、谷紳一郎、鈴木健太"
+        },
+        {
+            "key": "制作协力",
+            "value": "ADKマーケティング・ソリューションズ"
+        },
+        {
+            "key": "製作",
+            "value": "バンダイナムコフィルムワークス、 創通、MBS(毎日放送)"
+        },
+        {
+            "key": "作画监督",
+            "value": "戸井田珠里、斉藤香、大野勉（人物作画监督）、細田沙織（人物作监协力）"
+        },
+        {
+            "key": "机械作画监督",
+            "value": "久壽米木信弥、鈴木勘太"
+        },
+        {
+            "key": "动作作画监督",
+            "value": "鈴木勘太"
+        },
+        {
+            "key": "分镜",
+            "value": "小林寛(1,5,9,11,12)、京田知己(2,10,12)、安藤良(3,12)、西澤晋(4,9)、綿田慎也(5,9,11)、江上潔(5)、齋藤昭裕(6)、大倉雅彦(7)、金澤洪充(8,11)"
+        },
+        {
+            "key": "演出",
+            "value": "安藤良(1,3,8,10,12)、南川達馬(2)、伊藤慎之助(3,12)、池野昭二(4,8)、江上潔(5)、齋藤昭裕(6,12)、吉沢俊一(7)、砂川正和(8)、鈴木吉男(8)、鳥羽聡(9,12)、綿田慎也(9,11)、孫承希(10)、松永浩太郎(10)、倉富康平(11)"
+        },
+        {
+            "key": "演出助理",
+            "value": "演出协力：綿田慎也(5)；演出助手：井上大輔(5)"
+        }
+    ],
+    "rating": {
+        "rank": 5452,
+        "total": 9007,
+        "count": {
+            "1": 86,
+            "2": 47,
+            "3": 123,
+            "4": 360,
+            "5": 865,
+            "6": 2565,
+            "7": 3388,
+            "8": 1312,
+            "9": 160,
+            "10": 101
+        },
+        "score": 6.5
+    },
+    "total_episodes": 14,
+    "collection": {
+        "on_hold": 594,
+        "dropped": 829,
+        "wish": 1660,
+        "collect": 12635,
+        "doing": 1883
+    },
+    "id": 349441,
+    "eps": 12,
+    "meta_tags": [
+        "百合",
+        "机战",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        111918,
+        111919,
+        111920
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/33/111918_crt_1PK1F.jpg?r=1657925886",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c4/33/111918_crt_1PK1F.jpg?r=1657925886",
+                "large": "https://lain.bgm.tv/pic/crt/l/c4/33/111918_crt_1PK1F.jpg?r=1657925886",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/33/111918_crt_1PK1F.jpg?r=1657925886"
+            },
+            "name": "スレッタ・マーキュリー",
+            "summary": "来自水星的转学生，驾驶科2年级生。\r\n性格内向，有些不擅与人沟通。\r\n是水星所开发的MS，GUNDAM AERIAL的驾驶员。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637",
+                        "large": "https://lain.bgm.tv/pic/crt/l/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637"
+                    },
+                    "name": "市ノ瀬加那",
+                    "short_summary": "北海道帯広工業高等学校建築科出身。\r\n札幌スクールオブミュージック&ダンス専門学校出身。2016年4月に事務所に入所。\r\n\r\n2018年1月より放送のTVアニメ『ダーリン・イン・ザ・フランキス』のイチゴ役は市ノ瀬にとって、初のメインキャストとなった。\r\n2018年10月、超!A&G+とAG-ON Premiumで配信している「ラジオどっとあい」第76代目パーソナリティーに選ばれる。\r\n2019年4月7日、Twitterを始める。\r\n\r\n趣味は一人旅、スカイウォッチング、映画鑑賞。小・中学生時代にバスケットボールをやっており、現在も特技としている。\r\n\r\n危険物取扱者丙種、プレゼンテーション作成検定3級、日本語ワープロ検定3級、情報処理技能検定2級、パソコンスピード認定3級の資格を所持している。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 31136,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 111918
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/bd/111919_crt_36ee0.jpg?r=1657925907",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f0/bd/111919_crt_36ee0.jpg?r=1657925907",
+                "large": "https://lain.bgm.tv/pic/crt/l/f0/bd/111919_crt_36ee0.jpg?r=1657925907",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/bd/111919_crt_36ee0.jpg?r=1657925907"
+            },
+            "name": "ミオリネ・レンブラン",
+            "summary": "容貌美丽，成绩出色的经营战略科2年级生。\r\n是学园理事长，贝纳里特集团总裁德林·伦布兰的独生女。\r\n对自己的父亲怀有强烈的反抗心。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "large": "https://lain.bgm.tv/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632"
+                    },
+                    "name": "Lynn",
+                    "short_summary": "日本的女性声优。アーツビジョン所属。成长于新潟县（出生地为神奈川县）。\r\n兴趣：看电影、照相、乒乓球\r\n由声优事务所ARTSVISION附属的声优养成所日本播音演技研究所，所毕业。\r\n喜欢猫科动物，最喜欢的歌手绚香，最喜欢食物拉面。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 15497,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 111919
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/ad/111920_crt_0J8Y0.jpg?r=1657925922",
+                "grid": "https://lain.bgm.tv/pic/crt/g/af/ad/111920_crt_0J8Y0.jpg?r=1657925922",
+                "large": "https://lain.bgm.tv/pic/crt/l/af/ad/111920_crt_0J8Y0.jpg?r=1657925922",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/ad/111920_crt_0J8Y0.jpg?r=1657925922"
+            },
+            "name": "グエル・ジェターク",
+            "summary": "集团内三巨头之一的杰特克公司的公子哥，驾驶科3年级生。\r\n脾气粗暴，情绪容易激动。\r\n作为杰特克宿舍的精英驾驶员，对自己的实力有着绝对的自信。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/7d/11166_prsn_zPNV2.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ab/7d/11166_prsn_zPNV2.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ab/7d/11166_prsn_zPNV2.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/7d/11166_prsn_zPNV2.jpg"
+                    },
+                    "name": "阿座上洋平",
+                    "short_summary": "阿座上洋平（1991年8月7日－），日本男性声优。出身于群马县。身高180cm。青二Production所属，青二塾东京校第31期毕业。2016年4月至9月播映的电视动画《黑骸》第一次配音主演。\r\n\r\n兴趣是电影鉴赏、打棒球。特长是打篮球。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 11166,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 111920
+        }
+    ]
+}

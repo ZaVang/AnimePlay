@@ -1,0 +1,50 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/bd/111919_crt_36ee0.jpg?r=1657925907",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f0/bd/111919_crt_36ee0.jpg?r=1657925907",
+        "large": "https://lain.bgm.tv/pic/crt/l/f0/bd/111919_crt_36ee0.jpg?r=1657925907",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/bd/111919_crt_36ee0.jpg?r=1657925907"
+    },
+    "summary": "容貌美丽，成绩出色的经营战略科2年级生。\r\n是学园理事长，贝纳里特集团总裁德林·伦布兰的独生女。\r\n对自己的父亲怀有强烈的反抗心。",
+    "name": "ミオリネ・レンブラン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "米奥莉奈·伦布兰"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Miorine Rembran"
+                },
+                {
+                    "k": "昵称",
+                    "v": "米米"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 125,
+        "collects": 222
+    },
+    "id": 111919,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        349441,
+        403238
+    ]
+}

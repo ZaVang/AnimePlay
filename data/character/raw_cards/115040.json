@@ -1,0 +1,61 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/a0/115040_crt_8OOo9.jpg?r=1675666289",
+        "grid": "https://lain.bgm.tv/pic/crt/g/13/a0/115040_crt_8OOo9.jpg?r=1675666289",
+        "large": "https://lain.bgm.tv/pic/crt/l/13/a0/115040_crt_8OOo9.jpg?r=1675666289",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/a0/115040_crt_8OOo9.jpg?r=1675666289"
+    },
+    "summary": "明るく元気で、やる気いっぱいの新米ガード。\r\nしかし武道家ゆえの（？）正々堂々な性格も災いし、\r\nスライムにすら負けてしまうポンコツっぷり。\r\nしかも魔物と絡むとなぜか必ずエロ…\r\nえらい目にあってしまうお約束体質。",
+    "name": "ヒタム・キャン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "依塔姆·翔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "依心"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hitamu Kyan"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        },
+        {
+            "key": "体重",
+            "value": "51kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B89(F)→90(G)/W60/H91(成長中)"
+        }
+    ],
+    "stat": {
+        "comments": 32,
+        "collects": 55
+    },
+    "id": 115040,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        373712
+    ]
+}

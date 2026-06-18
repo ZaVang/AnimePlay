@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/8a/21912_crt_SztIb.jpg?r=1421389614",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a7/8a/21912_crt_SztIb.jpg?r=1421389614",
+        "large": "https://lain.bgm.tv/pic/crt/l/a7/8a/21912_crt_SztIb.jpg?r=1421389614",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/8a/21912_crt_SztIb.jpg?r=1421389614"
+    },
+    "summary": "学园“五黑”之一。\r\n奏的同班同学，有着黑亮长发与秀气外表，世界级大企业UOG的千金小姐，不过一开口就会跟吵闹的小学生没两样，虽然自己被列为“五黑”之一，然而本人对此似乎毫不在意。\r\n运动全能学业顶尖，不过很怕恐怖的东西，因太过害怕而幼儿化过。",
+    "name": "遊王子謳歌",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "游王子讴歌"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Ouka Yuuouji"
+                },
+                {
+                    "k": "日文名",
+                    "v": "遊王子 謳歌"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ゆうおうじ おうか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yūōji Ōka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 94
+    },
+    "id": 21912,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        77570
+    ]
+}

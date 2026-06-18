@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/d1/72350_crt_9KY9H.jpg?r=1586708173",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9a/d1/72350_crt_9KY9H.jpg?r=1586708173",
+        "large": "https://lain.bgm.tv/pic/crt/l/9a/d1/72350_crt_9KY9H.jpg?r=1586708173",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/d1/72350_crt_9KY9H.jpg?r=1586708173"
+    },
+    "summary": "第三王子，卡塔莉娜的未婚夫，魔力属性：火。游戏中攻略对象之一。\r\n表面上英俊又谦和有礼，实则腹黑。在原本游戏中设定是“性格扭曲，因为做什么事都得心应手，所以对一切都很漠然”的角色，故事里因为转生后卡塔莉娜种种出人意表的行动，被其吸引。弱点是十分怕蛇。",
+    "name": "ジオルド・スティアート",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "吉奥路德·斯图亚特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "吉奥多·史提亚德"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Geordo Stuart"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 20
+    },
+    "id": 72350,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        264089
+    ]
+}

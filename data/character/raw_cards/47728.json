@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/31/47728_crt_v66KU.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ed/31/47728_crt_v66KU.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ed/31/47728_crt_v66KU.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/31/47728_crt_v66KU.jpg"
+    },
+    "summary": "在哥布林杀手寄居的牧场工作的人类女主角。\r\n哥布林杀手的青梅竹马，一边担心一边关注着他。\r\n角色原型是《银之匙》中的女主御影秋",
+    "name": "牛飼娘",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "牧牛妹"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Cow Girl"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 29,
+        "collects": 91
+    },
+    "id": 47728,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        238006
+    ]
+}

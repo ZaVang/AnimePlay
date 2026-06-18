@@ -1,0 +1,44 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/f5/151085_crt_K17U7.jpg?r=1711376582",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6c/f5/151085_crt_K17U7.jpg?r=1711376582",
+        "large": "https://lain.bgm.tv/pic/crt/l/6c/f5/151085_crt_K17U7.jpg?r=1711376582",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/f5/151085_crt_K17U7.jpg?r=1711376582"
+    },
+    "summary": "悶デレ悪の参謀。地上を侵略しに来た悪の組織のエリート軍人。",
+    "name": "ミラ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "米拉"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://mahoaku-anime.com/character/?chara=01"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 18
+    },
+    "id": 151085,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        465884
+    ]
+}

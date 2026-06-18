@@ -1,0 +1,56 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/4c/126825_crt_oP1S8.jpg?r=1683436670",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a9/4c/126825_crt_oP1S8.jpg?r=1683436670",
+        "large": "https://lain.bgm.tv/pic/crt/l/a9/4c/126825_crt_oP1S8.jpg?r=1683436670",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/4c/126825_crt_oP1S8.jpg?r=1683436670"
+    },
+    "summary": "怪物専門の探偵。\r\nこの世に一人しかいないと言われる”不死”で\r\n九百四十七年間生きている。\r\nある日、襲撃を受け、\r\n奪われた体を取り戻すためヨーロッパを旅することに。\r\n一人では動くことが出来ないため、\r\n普段は鳥籠に入って持ち運ばれている。",
+    "name": "輪堂鴉夜",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "轮堂鸦夜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "≪九百六十二歳の生首美少女探偵≫"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "りんどうあや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Rindo Aya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://undeadgirl.jp/"
+        }
+    ],
+    "stat": {
+        "comments": 60,
+        "collects": 100
+    },
+    "id": 126825,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        425591
+    ]
+}

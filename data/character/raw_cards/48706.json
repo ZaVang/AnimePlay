@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/ba/48706_crt_8A38b.jpg?r=1483059127",
+        "grid": "https://lain.bgm.tv/pic/crt/g/db/ba/48706_crt_8A38b.jpg?r=1483059127",
+        "large": "https://lain.bgm.tv/pic/crt/l/db/ba/48706_crt_8A38b.jpg?r=1483059127",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/ba/48706_crt_8A38b.jpg?r=1483059127"
+    },
+    "summary": "14歳の中学二年生。長野県在住。主人公の妹であり、東京で働く兄の「生活指導」という名目で夏休みを利用して兄の部屋に転がり込む。天真爛漫な性格で幼いイメージだが、案外しっかり者で家事全般も得意。兄想いで優しいが、素直になるのは少し苦手な所謂「ツンデレ」。",
+    "name": "桃原奈月",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "桃原奈月"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ももはら なつき"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 122
+    },
+    "id": 48706,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        198395
+    ]
+}

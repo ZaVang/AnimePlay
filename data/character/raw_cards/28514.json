@@ -1,0 +1,77 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 29,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/2a/28514_crt_5HHl4.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/de/2a/28514_crt_5HHl4.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/de/2a/28514_crt_5HHl4.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/2a/28514_crt_5HHl4.jpg"
+    },
+    "summary": "星華高校初の女生徒会長。\r\n男勝りで、何があっても手を抜かない性格。\r\n荒れた学校を厳しく取り締まる反面、内緒でメイド・ラテでアルバイトをするというギャップを持ち合わせている。",
+    "name": "鮎沢美咲",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鲇泽美咲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "鲇沢美咲"
+                },
+                {
+                    "k": "日文名",
+                    "v": "鮎沢 美咲"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あゆざわ みさき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ayuzawa Misaki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "09-29"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "49kg"
+        },
+        {
+            "key": "特技",
+            "value": "合気道"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 77
+    },
+    "id": 28514,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        4313
+    ]
+}

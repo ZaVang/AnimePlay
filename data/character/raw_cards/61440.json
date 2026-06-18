@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/89/61440_crt_5pV58.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/49/89/61440_crt_5pV58.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/49/89/61440_crt_5pV58.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/89/61440_crt_5pV58.jpg"
+    },
+    "summary": "小学四年生。郊外の街に両親、妹との4人暮らし。毎日の出来事をノートに記録し、本をたくさん読み、大人に負けないほどいろいろな知識を蓄えていると自負している。歯科医院に勤める“お姉さん”がたいへん気になっており、街に突如現れた“ペンギン”と“お姉さん”の研究を始める。",
+    "name": "アオヤマ君",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "青山君"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "其他名义",
+                    "v": "僕"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 31,
+        "collects": 41
+    },
+    "id": 61440,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        239270
+    ]
+}

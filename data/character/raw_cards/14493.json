@@ -1,0 +1,65 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/dc/14493_crt_66CIq.jpg?r=1720615295",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3d/dc/14493_crt_66CIq.jpg?r=1720615295",
+        "large": "https://lain.bgm.tv/pic/crt/l/3d/dc/14493_crt_66CIq.jpg?r=1720615295",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/dc/14493_crt_66CIq.jpg?r=1720615295"
+    },
+    "summary": "雙胞胎的妹妹，就讀高中一年級，學校風紀委員。留著長髮並綁著馬尾，有時又為雙馬尾，左眼下面始終貼著一個创可贴。個性我行我素並且積極，遇事冷靜。不擅長家務也不擅長喝酒，但在誘惑圭太時表現的十分積極而且大膽。",
+    "name": "住之江りこ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "住之江理香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "住之江 りこ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "すみのえ りこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Suminoe Riko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月7日"
+        },
+        {
+            "key": "身高",
+            "value": "145cm"
+        },
+        {
+            "key": "体重",
+            "value": "38.33kg"
+        }
+    ],
+    "stat": {
+        "comments": 17,
+        "collects": 113
+    },
+    "id": 14493,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        4284
+    ]
+}

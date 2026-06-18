@@ -1,0 +1,64 @@
+{
+    "id": 160606,
+    "name": "木下うたげ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3c/76/160606_crt_GPzPz.jpg?r=1750598784",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/76/160606_crt_GPzPz.jpg?r=1750598784",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/76/160606_crt_GPzPz.jpg?r=1750598784",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3c/76/160606_crt_GPzPz.jpg?r=1750598784"
+    },
+    "summary": "大人気アイドル・F/ACEの福原多聞くんをこよなく愛する高校2年生。\r\n多忙な両親にかわり双子の妹弟の面倒を見てきており、\r\n家事全般が得意。\r\n現在は多聞くんの推し活資金を貯めるため、\r\nその経験を活かしてハウスキーピングのアルバイトをしている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "木下歌夏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "木下宴"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きのした うたげ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kinoshita Utage"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月21日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 11,
+    "birth_day": 21,
+    "stat": {
+        "comments": 23,
+        "collects": 45
+    },
+    "anime_ids": [
+        498791
+    ]
+}

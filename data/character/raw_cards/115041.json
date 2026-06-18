@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/df/115041_crt_vRc1P.jpg?r=1675666307",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b5/df/115041_crt_vRc1P.jpg?r=1675666307",
+        "large": "https://lain.bgm.tv/pic/crt/l/b5/df/115041_crt_vRc1P.jpg?r=1675666307",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/df/115041_crt_vRc1P.jpg?r=1675666307"
+    },
+    "summary": "敬虔なフェニザスク教徒。若干15歳にして歴代トップクラスの才能を持つ天才白魔術師。\r\nその才能ゆえにプライドが高く生意気な態度だが、\r\nいざ実戦となるとヘタレで泣き虫な役立たずに…。",
+    "name": "メイデナ・アンジェ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "米德娜·安洁"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Maidena Ange"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "140cm"
+        },
+        {
+            "key": "体重",
+            "value": "34kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B69(AA)/W54/H77"
+        }
+    ],
+    "stat": {
+        "comments": 42,
+        "collects": 128
+    },
+    "id": 115041,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        373712
+    ]
+}

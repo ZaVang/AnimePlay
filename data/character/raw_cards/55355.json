@@ -1,0 +1,65 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 4,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9b/e5/55355_crt_HWDO8.jpg?r=1507729970",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9b/e5/55355_crt_HWDO8.jpg?r=1507729970",
+        "large": "https://lain.bgm.tv/pic/crt/l/9b/e5/55355_crt_HWDO8.jpg?r=1507729970",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9b/e5/55355_crt_HWDO8.jpg?r=1507729970"
+    },
+    "summary": "抖S角色担当。16岁。性格认真且礼貌。\r\n\r\n目つきが悪いせいで、バイトの面接に受からないと悩んでいたが、\r\n店長に誘われ「スティーレ」で働くことに。海外留学が夢。",
+    "name": "桜ノ宮苺香",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "樱之宫莓香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "桜ノ宮 苺香"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さくらのみや まいか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakuranomiya Maika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月4日"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "年龄",
+            "value": "16"
+        }
+    ],
+    "stat": {
+        "comments": 36,
+        "collects": 168
+    },
+    "id": 55355,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        204145
+    ]
+}

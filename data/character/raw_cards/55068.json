@@ -1,0 +1,77 @@
+{
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/c1/55068_crt_pZU01.jpg?r=1515405139",
+        "grid": "https://lain.bgm.tv/pic/crt/g/58/c1/55068_crt_pZU01.jpg?r=1515405139",
+        "large": "https://lain.bgm.tv/pic/crt/l/58/c1/55068_crt_pZU01.jpg?r=1515405139",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/c1/55068_crt_pZU01.jpg?r=1515405139"
+    },
+    "summary": "亲生父亲在其3岁时去世，因母亲与芽衣的父亲再婚而与芽衣成为姐妹。\r\n栗色头发，爱打扮的女高中生，实际上连恋爱都没有谈过。个性直率，转学第一天就因违反多条校规而与学生会成员对峙\r\n目睹了芽衣被雨宫老师强吻的场景后内心忐忑不安，逐渐对芽衣产生了爱慕之情\r\n在与芽衣交往后成功将戒指送给芽衣，对芽衣一片纯情。通过自己不懈的努力以及父母朋友的支持，在看到芽衣胸口那个象征与芽衣在一起的戒指，明白了芽衣爱自己的心意。终于修成正果，和芽衣结婚了，百年好合。",
+    "name": "藍原柚子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蓝原柚子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "藍原 柚子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あいはら ゆず"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aihara Yuzu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月8日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "年龄",
+            "value": "16岁"
+        },
+        {
+            "key": "旧姓",
+            "value": "小此木（おこのぎ）"
+        },
+        {
+            "key": "班级",
+            "value": "1年级A班→2年级A班（17话）→3年级A班（36话）"
+        }
+    ],
+    "stat": {
+        "comments": 30,
+        "collects": 104
+    },
+    "id": 55068,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        198098
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "birth_mon": 5,
+    "gender": "male",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": 3,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/54/20406_crt_f72Sz.jpg?r=1480000106",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2a/54/20406_crt_f72Sz.jpg?r=1480000106",
+        "large": "https://lain.bgm.tv/pic/crt/l/2a/54/20406_crt_f72Sz.jpg?r=1480000106",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/54/20406_crt_f72Sz.jpg?r=1480000106"
+    },
+    "summary": "17岁。与花火交往中。\r\n很受女生欢迎。\r\n喜欢茜小姐。",
+    "name": "粟屋麦",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "粟屋麦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あわや むぎ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Awaya Mugi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "05-10"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "171cm"
+        },
+        {
+            "key": "体重",
+            "value": "55kg"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 12
+    },
+    "id": 20406,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        174143
+    ]
+}

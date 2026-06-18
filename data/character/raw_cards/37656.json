@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/1b/37656_crt_VifGc.jpg?r=1454600966",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2a/1b/37656_crt_VifGc.jpg?r=1454600966",
+        "large": "https://lain.bgm.tv/pic/crt/l/2a/1b/37656_crt_VifGc.jpg?r=1454600966",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/1b/37656_crt_VifGc.jpg?r=1454600966"
+    },
+    "summary": "年齢：16歳\r\n職業：学生\r\n性格：成績優秀だがそれを鼻にかけず、\r\nおっとりとした人を信じやすい少年。",
+    "name": "酒井光宗",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "酒井光宗"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "酒井 光宗"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さかい みつむね"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakai Mitsumune"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 16,
+        "collects": 9
+    },
+    "id": 37656,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        163046
+    ]
+}

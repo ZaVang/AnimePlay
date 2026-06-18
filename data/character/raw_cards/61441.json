@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/1f/61441_crt_6Sn98.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f3/1f/61441_crt_6Sn98.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/f3/1f/61441_crt_6Sn98.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/1f/61441_crt_6Sn98.jpg"
+    },
+    "summary": "アオヤマ君が住む郊外の街の歯科医院に勤めるお姉さん。\r\n明るく飄々とした20代半ばの女性で、丘のように盛り上がっているおっぱいを持つ（アオヤマ君談）。アオヤマ君を「ナマイキナマイキ」と言いつつ、かわいがっている。\r\nお姉さんが放ったコーラの缶は、なぜかペンギンに変身してしまう。",
+    "name": "お姉さん",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "姐姐"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 49,
+        "collects": 129
+    },
+    "id": 61441,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        239270
+    ]
+}

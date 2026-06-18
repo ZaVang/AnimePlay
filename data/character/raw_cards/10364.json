@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/e7/10364_crt_FB7W2.jpg?r=1723551097",
+        "grid": "https://lain.bgm.tv/pic/crt/g/60/e7/10364_crt_FB7W2.jpg?r=1723551097",
+        "large": "https://lain.bgm.tv/pic/crt/l/60/e7/10364_crt_FB7W2.jpg?r=1723551097",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/e7/10364_crt_FB7W2.jpg?r=1723551097"
+    },
+    "summary": "ヒロインの10代の少女。\r\nゴンドアの谷に住んでいたが、ラピュタの力を狙うムスカらに飛行石と共に拉致される。\r\nその正体は、ラピュタの王族の末裔。\r\n継承名は「リュシータ・トエル・ウル・ラピュタ」。",
+    "name": "シータ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "希达"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "シータ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sheeta"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "CV",
+            "value": "横沢啓子（日）；Anna Paquin, Debi Derryberry（Disney dub）；Lara Cody (Magnum dub)"
+        }
+    ],
+    "stat": {
+        "comments": 15,
+        "collects": 101
+    },
+    "id": 10364,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        298
+    ]
+}

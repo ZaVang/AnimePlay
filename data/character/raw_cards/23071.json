@@ -1,0 +1,77 @@
+{
+    "birth_mon": 5,
+    "gender": "male",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/ee/23071_crt_5N44n.jpg?r=1393831562",
+        "grid": "https://lain.bgm.tv/pic/crt/g/25/ee/23071_crt_5N44n.jpg?r=1393831562",
+        "large": "https://lain.bgm.tv/pic/crt/l/25/ee/23071_crt_5N44n.jpg?r=1393831562",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/ee/23071_crt_5N44n.jpg?r=1393831562"
+    },
+    "summary": "目隐团所属的青年。有着难以捉摸并飘忽的性格，脸上一直挂着笑容。因为总开茉莉与桃的玩笑，所以常会被认为是在搭讪女生，但是在紧急时刻又值得信赖。有着『目欺』的能力，能够改变周围人对自身的认识，让旁人见到与实际不同的姿态。",
+    "name": "カノ / 鹿野修哉",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鹿野 / 鹿野修哉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Kano"
+                },
+                {
+                    "k": "日文名",
+                    "v": "鹿野 修哉"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かの しゅうや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kano Shūya"
+                },
+                {
+                    "k": "昵称",
+                    "v": "カノ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月10日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "50kg"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 39
+    },
+    "id": 23071,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        81186
+    ]
+}

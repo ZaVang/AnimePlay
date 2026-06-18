@@ -1,0 +1,61 @@
+{
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 29,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/33/35687_crt_Q7j2r.jpg?r=1703664523",
+        "grid": "https://lain.bgm.tv/pic/crt/g/de/33/35687_crt_Q7j2r.jpg?r=1703664523",
+        "large": "https://lain.bgm.tv/pic/crt/l/de/33/35687_crt_Q7j2r.jpg?r=1703664523",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/33/35687_crt_Q7j2r.jpg?r=1703664523"
+    },
+    "summary": "惠惠的朋友兼竞争对手，黑发红眼，与惠惠一样是14岁，职业是大魔法师，是红魔族族长的女儿，跟惠惠的关系好到接近百合。",
+    "name": "ゆんゆん",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "芸芸"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "悠悠"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ゆんゆん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yunyun"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月29日"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 70,
+        "collects": 352
+    },
+    "id": 35687,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        385209
+    ]
+}

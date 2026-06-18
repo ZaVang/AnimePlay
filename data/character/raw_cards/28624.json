@@ -1,0 +1,84 @@
+{
+    "birth_mon": 5,
+    "gender": "male",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/5b/28624_crt_Egkc1.jpg?r=1420139194",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bd/5b/28624_crt_Egkc1.jpg?r=1420139194",
+        "large": "https://lain.bgm.tv/pic/crt/l/bd/5b/28624_crt_Egkc1.jpg?r=1420139194",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/5b/28624_crt_Egkc1.jpg?r=1420139194"
+    },
+    "summary": "优一郎的好友，同时也是最重要的家人。小时候被父母虐待然后抛弃，进入了百夜孤儿院。为人开朗。为了让优一郎逃出，被吸血鬼重伤濒临死亡（优一郎以为其已经死亡），后喝下第三始祖克鲁鲁·采佩西的血成为吸血鬼，得到贵族地位和力量。第三话以吸血鬼的身份同费里德一起出现。第十三话与家人优重逢，企图带走优，两人离开人类和吸血鬼的世界。小优眼见同伴们被吸血鬼吸血，导致体内非人类部分觉醒。第十四话米迦尔未能阻止优的暴走，并且没法带回昏迷的优，表露出了对优加以利用的人类的憎恨。\r\n    与百夜优一郎之间有着不可磨灭的羁绊。",
+    "name": "百夜ミカエラ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "百夜米迦尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "进藤米迦尔"
+                },
+                {
+                    "k": "日文名",
+                    "v": "百夜 ミカエラ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひゃくや ミカエラ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mikaela Hyakuya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月1日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "173cm"
+        },
+        {
+            "key": "体重",
+            "value": "57kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://baike.baidu.com/item/百夜米迦尔"
+        },
+        {
+            "key": "年龄",
+            "value": "16"
+        },
+        {
+            "key": "身份",
+            "value": "吸血鬼"
+        }
+    ],
+    "stat": {
+        "comments": 17,
+        "collects": 67
+    },
+    "id": 28624,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        112151
+    ]
+}

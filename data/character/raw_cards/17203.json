@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/4d/17203_crt_SwRiz.jpg?r=1675138305",
+        "grid": "https://lain.bgm.tv/pic/crt/g/de/4d/17203_crt_SwRiz.jpg?r=1675138305",
+        "large": "https://lain.bgm.tv/pic/crt/l/de/4d/17203_crt_SwRiz.jpg?r=1675138305",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/4d/17203_crt_SwRiz.jpg?r=1675138305"
+    },
+    "summary": "外表和人类的妙龄少女几乎完全一样的魔族统治者。不擅战斗，但长于以经济学为中心的各种高深的知识（差不多是21世纪初的“地球”上的水平）。基于这些知识，她发现了人类与魔族之间的种种问题和矛盾，为了超越种族的隔阂来解决这些问题，因而向勇者求助。在人类社会中活动时以“红色学士（紅の学士）”自称，开展了改革技术和推广教育等工作。拥有巨乳的属性，不过因为以前的生活只专注于钻研学问，所以她自以为不擅长活用自己肉体的魅力，其称号为红玉之瞳。",
+    "name": "魔王",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "魔王"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Maou"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まおう"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "种族",
+            "value": "魔族  图书馆族"
+        }
+    ],
+    "stat": {
+        "comments": 18,
+        "collects": 123
+    },
+    "id": 17203,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        43197
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/ad/18256_crt_jihfk.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/71/ad/18256_crt_jihfk.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/71/ad/18256_crt_jihfk.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/ad/18256_crt_jihfk.jpg"
+    },
+    "summary": "問題児その１\r\nとにかく何でも拳で倒す、傲岸不遜な少年。彼のギフトネームは\"正体不明（コード・アンノウン）\"と呼ばれ、他人のギフトを砕くというこの世界ではありえない力を持っている。\r\n来到箱庭的问题儿童之一。17岁。持有恩赐为真相不明（Code Unknown），恩赐卡（正式名称是「拉普拉斯纸片」）是钴蓝色。",
+    "name": "逆廻十六夜",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "逆回十六夜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "逆廻 十六夜"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さかまき いざよい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakamaki Izayoi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.sneakerbunko.jp/series/mondaiji/index.php"
+        }
+    ],
+    "stat": {
+        "comments": 16,
+        "collects": 82
+    },
+    "id": 18256,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        52170
+    ]
+}

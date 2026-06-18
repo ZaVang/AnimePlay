@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/2f/14069_crt_GZElu.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/99/2f/14069_crt_GZElu.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/99/2f/14069_crt_GZElu.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/2f/14069_crt_GZElu.jpg"
+    },
+    "summary": "神秘美少女，一只眼睛总是戴著眼罩， 经常独自画画，让人感觉不可思议的存在。\r\n被遮住的左眼被称为\"苍之眼\"，能看到“眼不见为净”的东西。家里开了一家玩偶店，她就住在玩偶店的楼上。被视为“不存在”的人之一。",
+    "name": "見崎鳴",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "见崎鸣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みさき めい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Misaki Mei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 72,
+        "collects": 619
+    },
+    "id": 14069,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        20851
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "id": 18038,
+    "name": "江ノ島盾子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a4/76/18038_crt_TM9ca.jpg?r=1535009572",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/76/18038_crt_TM9ca.jpg?r=1535009572",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/76/18038_crt_TM9ca.jpg?r=1535009572",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a4/76/18038_crt_TM9ca.jpg?r=1535009572"
+    },
+    "summary": "超高校級の「ギャル」。女性向けファッション雑誌のカリスマ読者モデルとして、全国の女子高生のファッションを牽引している。\r\n\r\nいかにも「イマドキの女子高生」といった印象を与える軟派な言動が特徴だが、性格は直情的で、モノクマにも食ってかかる。\r\nボリュームのあるツインテールにウサギのヘアピンを付け、胸の露出をした制服を着こなす。手には赤い付け爪をしている。\r\n一方でホームレス生活をしたことがあるなど、すさんだ過去を持っている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "江之岛盾子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "えのしま じゅんこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Enoshima Junko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月24日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "169cm"
+        },
+        {
+            "key": "体重",
+            "value": "44kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B:80cm->90cm"
+        },
+        {
+            "key": "BMI",
+            "value": "15.7"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 3,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 24,
+    "stat": {
+        "comments": 45,
+        "collects": 142
+    },
+    "anime_ids": [
+        177092
+    ]
+}

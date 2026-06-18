@@ -1,0 +1,44 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cb/c4/101915_crt_lL0dV.jpg?r=1634741774",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cb/c4/101915_crt_lL0dV.jpg?r=1634741774",
+        "large": "https://lain.bgm.tv/pic/crt/l/cb/c4/101915_crt_lL0dV.jpg?r=1634741774",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cb/c4/101915_crt_lL0dV.jpg?r=1634741774"
+    },
+    "summary": "乙骨憂太の幼馴染。",
+    "name": "祈本里香",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "祈本里香"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://jujutsukaisen-movie.jp/news/2021_1020.html"
+        }
+    ],
+    "stat": {
+        "comments": 16,
+        "collects": 21
+    },
+    "id": 101915,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        331559
+    ]
+}

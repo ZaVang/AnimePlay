@@ -1,0 +1,53 @@
+{
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 29,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/e6/78544_crt_kAV5l.jpg?r=1605437111",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7c/e6/78544_crt_kAV5l.jpg?r=1605437111",
+        "large": "https://lain.bgm.tv/pic/crt/l/7c/e6/78544_crt_kAV5l.jpg?r=1605437111",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/e6/78544_crt_kAV5l.jpg?r=1605437111"
+    },
+    "summary": "高校3年生で、陽太の幼馴染み。\r\n趣味は野球観戦と映画鑑賞。物静かな性格で、勉強ができる。\r\n陽太の誘いを受けて、一緒に勉強をするようになる。\r\n将来の夢は、映画の音響監督になること。\r\n\r\n高中3年级，是阳太的青梅竹马。\r\n兴趣是看棒球和看电影。性格文静，成绩优秀。\r\n受到阳太的邀请，开始一起学习。\r\n将来的梦想是成为电影的音响导演。",
+    "name": "伊座並杏子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊座并杏子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いざなみ きょうこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Izanami Kyoko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月29日"
+        }
+    ],
+    "stat": {
+        "comments": 110,
+        "collects": 130
+    },
+    "id": 78544,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        306429
+    ]
+}

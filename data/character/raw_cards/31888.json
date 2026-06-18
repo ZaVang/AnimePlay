@@ -1,0 +1,65 @@
+{
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/b5/31888_crt_dUpR7.jpg?r=1437081477",
+        "grid": "https://lain.bgm.tv/pic/crt/g/98/b5/31888_crt_dUpR7.jpg?r=1437081477",
+        "large": "https://lain.bgm.tv/pic/crt/l/98/b5/31888_crt_dUpR7.jpg?r=1437081477",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/b5/31888_crt_dUpR7.jpg?r=1437081477"
+    },
+    "summary": "巡之丘学园高中3年级生。由纪的好友，活力充沛的少女。\r\n原本是田径社成员，因此拥有不错的运动能力和脚力。",
+    "name": "恵飛須沢胡桃",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "惠飞须泽胡桃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "恵飛須沢 胡桃"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "えびすざわ くるみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ebisuzawa Kurumi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "胡一铲"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月7日"
+        },
+        {
+            "key": "引用来源",
+            "value": "zh.wikipedia.org/wiki/学园孤岛"
+        }
+    ],
+    "stat": {
+        "comments": 37,
+        "collects": 191
+    },
+    "id": 31888,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        106693
+    ]
+}

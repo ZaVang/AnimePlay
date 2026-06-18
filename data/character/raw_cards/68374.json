@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/f0/68374_crt_RSL1T.jpg?r=1547477485",
+        "grid": "https://lain.bgm.tv/pic/crt/g/81/f0/68374_crt_RSL1T.jpg?r=1547477485",
+        "large": "https://lain.bgm.tv/pic/crt/l/81/f0/68374_crt_RSL1T.jpg?r=1547477485",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/f0/68374_crt_RSL1T.jpg?r=1547477485"
+    },
+    "summary": "岩永琴子の片想いの相手であり、同じ大学に通う大学院生。\r\n平凡でおとなしそうに見えるが、幼いころの奇怪な体験を経て特異体質となり、”怪異”たちから忌み嫌われ恐れられる存在に。付きまとう琴子を敬遠しつつも優しく気遣う面もあり、一緒に”怪異”が絡んだ事件に立ち向かってゆく。",
+    "name": "桜川九郎",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "樱川九郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "さくらがわ くろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "sakuragawa kurou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://kyokousuiri.jp/character/"
+        },
+        {
+            "key": "年龄",
+            "value": "24岁（初登场22）"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 32
+    },
+    "id": 68374,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        271687
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "birth_mon": 3,
+    "gender": "male",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/29/98066_crt_pJHhK.jpg?r=1627171546",
+        "grid": "https://lain.bgm.tv/pic/crt/g/67/29/98066_crt_pJHhK.jpg?r=1627171546",
+        "large": "https://lain.bgm.tv/pic/crt/l/67/29/98066_crt_pJHhK.jpg?r=1627171546",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/29/98066_crt_pJHhK.jpg?r=1627171546"
+    },
+    "summary": "後輩にうざがられている先輩。双葉の教育係的存在。社員みんなから信頼され、とても慕われている。ガサツで鈍感なところが玉に瑕。体格がよく学生時代に柔道をしていた。好きな飲み物は「緑茶」。",
+    "name": "武田晴海",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "武田晴海"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たけだ はるみ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月9日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://senpaiga-uzai-anime.com/character/"
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 17
+    },
+    "id": 98066,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        309670
+    ]
+}

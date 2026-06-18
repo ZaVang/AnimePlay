@@ -1,0 +1,68 @@
+{
+    "id": 56964,
+    "name": "南雲ハジメ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/97/0d/56964_crt_0pzoq.jpg?r=1562604746",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/97/0d/56964_crt_0pzoq.jpg?r=1562604746",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/97/0d/56964_crt_0pzoq.jpg?r=1562604746",
+        "grid": "https://lain.bgm.tv/pic/crt/g/97/0d/56964_crt_0pzoq.jpg?r=1562604746"
+    },
+    "summary": "本作の主人公。自他ともに認めるオタクでクラスや幼馴染たちにも知れ渡っている。学校のマドンナの白崎香織より親身にされていることからクラスメイトのほとんどからは敵愾心を持たれている。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "南云始"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "南云阿一"
+                },
+                {
+                    "k": "日文名",
+                    "v": "南雲 ハジメ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なぐも はじめ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nagumo Hajime"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        },
+        {
+            "key": "天职",
+            "value": "炼成师"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 17,
+        "collects": 20
+    },
+    "anime_ids": [
+        231414
+    ]
+}

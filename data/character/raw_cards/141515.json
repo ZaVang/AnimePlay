@@ -1,0 +1,73 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/93/141515_crt_5tMfp.jpg?r=1707919796",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e2/93/141515_crt_5tMfp.jpg?r=1707919796",
+        "large": "https://lain.bgm.tv/pic/crt/l/e2/93/141515_crt_5tMfp.jpg?r=1707919796",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/93/141515_crt_5tMfp.jpg?r=1707919796"
+    },
+    "summary": "まひるの幼なじみ。\r\nVtuber「竜ヶ崎ノクス」として活動しており、自分が最強の存在という己の信条を発信し続けている。\r\nすぐに何でもそつなくこなせるようになるタイプで、Vtuberとして披露している技術は全て本人のもの。\r\nだがそういったズレが彼女が周囲に馴染みきれない原因の一旦となっている。\r\nまひるが過去を気にせず語り合える唯一の存在で、大切な友人である彼女のためなら協力は惜しまない。",
+    "name": "渡瀬キウイ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "渡濑季初"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "渡濑绮羽衣"
+                },
+                {
+                    "k": "日文名",
+                    "v": "渡瀬 キウイ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "わたせ きうい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Watase Kiui"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月1日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "145cm"
+        },
+        {
+            "key": "罩杯",
+            "value": "F+"
+        }
+    ],
+    "stat": {
+        "comments": 91,
+        "collects": 95
+    },
+    "id": 141515,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        425909
+    ]
+}

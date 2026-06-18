@@ -1,0 +1,61 @@
+{
+    "birth_mon": 4,
+    "gender": "male",
+    "birth_day": 23,
+    "birth_year": 2033,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9d/2d/14651_crt_JJNnI.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9d/2d/14651_crt_JJNnI.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/9d/2d/14651_crt_JJNnI.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9d/2d/14651_crt_JJNnI.jpg"
+    },
+    "summary": "主角。2033年出生，梅乡中学国中二年级学生（头2卷时是一年级生，13岁），与千百合及拓武一起就读于二年C班。因为外表肥胖加上个性内向而被班上同学欺负。擅长游戏，特别是第一身射击游戏（FPS）。\r\n\r\n校内虚拟角色为“粉红猪(Pink Pig)”，对战虚拟角色为“Silver Crow”。",
+    "name": "有田春雪",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "有田春雪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Haruyuki Arita"
+                },
+                {
+                    "k": "日文名",
+                    "v": "有田 春雪"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "アリタ・ハルユキ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Arita Haruyuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2033年4月23日"
+        }
+    ],
+    "stat": {
+        "comments": 35,
+        "collects": 30
+    },
+    "id": 14651,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        23685
+    ]
+}

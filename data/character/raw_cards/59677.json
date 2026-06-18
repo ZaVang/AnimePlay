@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/11/24/59677_crt_l11x1.jpg?r=1553427324",
+        "grid": "https://lain.bgm.tv/pic/crt/g/11/24/59677_crt_l11x1.jpg?r=1553427324",
+        "large": "https://lain.bgm.tv/pic/crt/l/11/24/59677_crt_l11x1.jpg?r=1553427324",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/11/24/59677_crt_l11x1.jpg?r=1553427324"
+    },
+    "summary": "マキアが助けた人間の子供。流れ者の集落が賊に襲われ、エリアルだけが生き延びていた。",
+    "name": "エリアル",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾瑞尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Ariel"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 10
+    },
+    "id": 59677,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        218971
+    ]
+}

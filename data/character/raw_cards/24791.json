@@ -1,0 +1,60 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/9b/24791_crt_4Ws4e.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3b/9b/24791_crt_4Ws4e.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/3b/9b/24791_crt_4Ws4e.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/9b/24791_crt_4Ws4e.jpg"
+    },
+    "summary": "魔法の国メープルランドの王女にして「甘ブリ」の総支配人。\r\nある“呪い”をかけられている……。\r\n\r\n甘城辉煌乐园的支配者，外表看似只有14、15岁的少女，魔法国度“红枫乐园”的公主。近卫队五十铃的工作对象。\r\n因为受到魔法师“欠缺魂之力”的诅咒影响，体弱多病且眼睛失明（小说），并且身上还有“一年后身体的成长与记忆都会重来”的恶毒诅咒。\r\n唯有待在游乐园才能存活，所以为了复兴快倒闭的甘辉，使用神托选中了西也担任经理。",
+    "name": "ラティファ・フルーランザ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "拉媞珐·芙尔兰札"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "拉提法·弗卢兰萨"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "拉蒂法·芙路兰萨"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Latifah Fullanza"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ラティファ・フルーランザ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ratifa Fururanza"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 55,
+        "collects": 357
+    },
+    "id": 24791,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        93545
+    ]
+}

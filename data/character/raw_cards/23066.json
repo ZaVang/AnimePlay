@@ -1,0 +1,73 @@
+{
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 14,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/14/23066_crt_dG3Vd.jpg?r=1488606270",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7e/14/23066_crt_dG3Vd.jpg?r=1488606270",
+        "large": "https://lain.bgm.tv/pic/crt/l/7e/14/23066_crt_dG3Vd.jpg?r=1488606270",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/14/23066_crt_dG3Vd.jpg?r=1488606270"
+    },
+    "summary": "金发的混血儿，活泼的巨乳马尾美少女，两眼下的黑痣十分有魅力。\r\n相比谨慎思考谋划，更习惯直接行动起来发起攻击。\r\n这样的性格无法和任何人组队，所以同队队员就只有晴彦。\r\n使用最初和父亲学习中国拳法时将格斗技和“五行之气”组合的特殊武术与怪灵战斗。\r\n并不担心裙子的问题。",
+    "name": "川神舞",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "川神舞"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "川神 舞"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かわかみ まい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kawakami Mai"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月14日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        },
+        {
+            "key": "年龄",
+            "value": "16岁"
+        },
+        {
+            "key": "所属",
+            "value": "弗塞亚学院高等部2年A组"
+        }
+    ],
+    "stat": {
+        "comments": 56,
+        "collects": 148
+    },
+    "id": 23066,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        94040
+    ]
+}

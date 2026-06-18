@@ -1,0 +1,41 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/5e/135623_crt_n6BB6.jpg?r=1692324977",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b5/5e/135623_crt_n6BB6.jpg?r=1692324977",
+        "large": "https://lain.bgm.tv/pic/crt/l/b5/5e/135623_crt_n6BB6.jpg?r=1692324977",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/5e/135623_crt_n6BB6.jpg?r=1692324977"
+    },
+    "summary": "",
+    "name": "青サギ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "苍鹭"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "别名",
+                    "v": "サギ男"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 6
+    },
+    "id": 135623,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        228715
+    ]
+}

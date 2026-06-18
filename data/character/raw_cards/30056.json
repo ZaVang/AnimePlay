@@ -1,0 +1,78 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/14/30056_crt_JHvh3.jpg?r=1432823591",
+        "grid": "https://lain.bgm.tv/pic/crt/g/49/14/30056_crt_JHvh3.jpg?r=1432823591",
+        "large": "https://lain.bgm.tv/pic/crt/l/49/14/30056_crt_JHvh3.jpg?r=1432823591",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/14/30056_crt_JHvh3.jpg?r=1432823591"
+    },
+    "summary": "本作的主人公，高中一年级，16岁。活用“在5秒以内夺取任意对象的身体”这一能力进入精英学校阳野森高中的伪优等生。由于某个契机而转学星之海学园。\r\n\r\n[mask]实际能力为「略奪」[/mask]",
+    "name": "乙坂有宇",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "乙坂有宇"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Yuu Otosaka"
+                },
+                {
+                    "k": "日文名",
+                    "v": "乙坂 有宇"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おとさか ゆう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Otosaka Yū"
+                },
+                {
+                    "k": "外号",
+                    "v": "独眼死神（隻眼の死神）"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "公式サイト",
+                    "v": "http://charlotte-anime.jp/character/"
+                }
+            ]
+        },
+        {
+            "key": "所属",
+            "value": "星之海学园一年级（学生会所属）"
+        },
+        {
+            "key": "特殊能力",
+            "value": "夺取任意对象的身体（只有5秒的时间）"
+        }
+    ],
+    "stat": {
+        "comments": 25,
+        "collects": 88
+    },
+    "id": 30056,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        120925
+    ]
+}

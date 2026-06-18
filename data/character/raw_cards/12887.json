@@ -1,0 +1,81 @@
+{
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 6,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/9c/12887_crt_hchbB.jpg?r=1534940092",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8e/9c/12887_crt_hchbB.jpg?r=1534940092",
+        "large": "https://lain.bgm.tv/pic/crt/l/8e/9c/12887_crt_hchbB.jpg?r=1534940092",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/9c/12887_crt_hchbB.jpg?r=1534940092"
+    },
+    "summary": "　超高中级的？？？[mask]侦探[/mask]\r\n　　在汇集的学生中唯一不明自己才能的人物。非常陌生的感觉，拥有相当神秘的美少女。在不流露出的表情里是给予苗木推理多次提示的人物。　",
+    "name": "霧切響子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雾切响子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "きりぎりきょうこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kirigiri Kyouko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月6日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "167cm"
+        },
+        {
+            "key": "体重",
+            "value": "48kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B:82cm"
+        },
+        {
+            "key": "BMI",
+            "value": "17.2"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "自己的辫子"
+        },
+        {
+            "key": "讨厌的东西",
+            "value": "苦瓜、香菜"
+        }
+    ],
+    "stat": {
+        "comments": 55,
+        "collects": 638
+    },
+    "id": 12887,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        56093
+    ]
+}

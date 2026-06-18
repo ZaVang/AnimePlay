@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/65/75848_crt_Zz8ia.jpg?r=1723896278",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c0/65/75848_crt_Zz8ia.jpg?r=1723896278",
+        "large": "https://lain.bgm.tv/pic/crt/l/c0/65/75848_crt_Zz8ia.jpg?r=1723896278",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/65/75848_crt_Zz8ia.jpg?r=1723896278"
+    },
+    "summary": "主角，天生领导型人物，喜欢飙车。角色名引用自《铁人28号》的男主角。",
+    "name": "金田正太郎",
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かねだ しょうたろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shōtarō Kaneda"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 12
+    },
+    "id": 75848,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        5118
+    ]
+}

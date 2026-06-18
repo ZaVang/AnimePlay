@@ -1,0 +1,81 @@
+{
+    "birth_mon": 3,
+    "gender": "male",
+    "birth_day": 28,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/d0/23069_crt_6sqZz.jpg?r=1395209198",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c7/d0/23069_crt_6sqZz.jpg?r=1395209198",
+        "large": "https://lain.bgm.tv/pic/crt/l/c7/d0/23069_crt_6sqZz.jpg?r=1395209198",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/d0/23069_crt_6sqZz.jpg?r=1395209198"
+    },
+    "summary": "目隐团所属的青年。与木户、鹿野出身同一个孤儿院。在商店街的花店里工作，同时也做交通指挥、送报纸等各种各样的工作。是带着茉莉加入目隐团的带头人。\r\n有着流浪癖。\r\n虽然有着『目盗』的能力可以读取到对方的信息，但因本人认为这是「不经别人同意就读取了别人的信息的讨厌的能力」而感到反感，所以很少使用。",
+    "name": "セト / 瀬戸幸助",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "濑户 / 濑户幸助"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "濑户"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Seto"
+                },
+                {
+                    "k": "日文名",
+                    "v": "瀬戸 幸助"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "せと こうすけ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Seto Kōsuke"
+                },
+                {
+                    "k": "昵称",
+                    "v": "セト"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月28日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "178cm"
+        },
+        {
+            "key": "体重",
+            "value": "72kg"
+        }
+    ],
+    "stat": {
+        "comments": 4,
+        "collects": 28
+    },
+    "id": 23069,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        81186
+    ]
+}

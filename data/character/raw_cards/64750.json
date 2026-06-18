@@ -1,0 +1,60 @@
+{
+    "id": 64750,
+    "name": "橘瑠衣",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/62/8c/64750_crt_ddGJ3.jpg?r=1539251189",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/8c/64750_crt_ddGJ3.jpg?r=1539251189",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/8c/64750_crt_ddGJ3.jpg?r=1539251189",
+        "grid": "https://lain.bgm.tv/pic/crt/g/62/8c/64750_crt_ddGJ3.jpg?r=1539251189"
+    },
+    "summary": "桜川高校に通う高校2年生。\r\n無愛想で人付き合いは苦手。だが、合コンで夏生と出会い…。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "橘瑠衣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たちばな るい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tachibana Rui"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月5日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        }
+    ],
+    "gender": "female",
+    "blood_type": 1,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 5,
+    "stat": {
+        "comments": 71,
+        "collects": 280
+    },
+    "anime_ids": [
+        253628
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "id": 24785,
+    "name": "アセイラム・ヴァース・アリューシア",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/99/56/24785_crt_yUUB3.jpg?r=1399121556",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/56/24785_crt_yUUB3.jpg?r=1399121556",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/56/24785_crt_yUUB3.jpg?r=1399121556",
+        "grid": "https://lain.bgm.tv/pic/crt/g/99/56/24785_crt_yUUB3.jpg?r=1399121556"
+    },
+    "summary": "火星の独立国家・ヴァース帝国の皇女。\r\n火星生まれの火星育ち。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾瑟依拉姆·薇瑟·艾莉欧斯亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Asseylum Vers Allusia"
+                },
+                {
+                    "k": "日文名",
+                    "v": "アセイラム・ヴァース・アリューシア"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月20日"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "ja.wikipedia.org"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 9,
+    "birth_day": 20,
+    "stat": {
+        "comments": 43,
+        "collects": 78
+    },
+    "anime_ids": [
+        107835,
+        96918
+    ]
+}

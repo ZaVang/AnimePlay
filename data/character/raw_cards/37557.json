@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/93/37557_crt_WvPWN.jpg?r=1460008836",
+        "grid": "https://lain.bgm.tv/pic/crt/g/58/93/37557_crt_WvPWN.jpg?r=1460008836",
+        "large": "https://lain.bgm.tv/pic/crt/l/58/93/37557_crt_WvPWN.jpg?r=1460008836",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/93/37557_crt_WvPWN.jpg?r=1460008836"
+    },
+    "summary": "本作の主人公。前ヶ崎高校1年生。ネトゲ好きなオタクで、帰宅部。過去にネトゲ内で告白したものの、その際の出来事からトラウマを抱いている。MMORPG「レジェンダリー・エイジ（以下LA）」内でのキャラクター名は「ルシアン」。職業はアーマーナイトで、所属ギルド「アレイキャッツ」ではメイン盾として活躍している。仲間の「アコ」から告白され、ネトゲの中で彼女と結婚する。アコのプレイヤーである亜子の残念な現状を正すべく、茜や杏たちと奮闘していくが、徐々に亜子との関係も進んでいく。",
+    "name": "西村英騎／ルシアン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "西村英骑／卢西安"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "西村 英騎"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "にしむら ひでき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nishimura Hideki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 6
+    },
+    "id": 37557,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        142758
+    ]
+}

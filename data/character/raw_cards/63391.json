@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/f7/63391_crt_vYpYD.jpg?r=1538026487",
+        "grid": "https://lain.bgm.tv/pic/crt/g/70/f7/63391_crt_vYpYD.jpg?r=1538026487",
+        "large": "https://lain.bgm.tv/pic/crt/l/70/f7/63391_crt_vYpYD.jpg?r=1538026487",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/f7/63391_crt_vYpYD.jpg?r=1538026487"
+    },
+    "summary": "21歳の大学四年生。新体操の選手だったが怪我を理由に引退し、就活も上手く行かず意気消沈気味。同じマンションに住む主人公とは、変わった出会い方をして以降良き相談相手となる。控えめで人見知りな性格だが、どこか天然で、可愛い物好きという一面も。",
+    "name": "天月真白",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "天月真白"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "天月 真白"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あまつき ましろ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Amatsuki Mashiro"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 21,
+        "collects": 82
+    },
+    "id": 63391,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        226507
+    ]
+}

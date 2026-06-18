@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/cc/72257_crt_BYzNF.jpg?r=1596720542",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f1/cc/72257_crt_BYzNF.jpg?r=1596720542",
+        "large": "https://lain.bgm.tv/pic/crt/l/f1/cc/72257_crt_BYzNF.jpg?r=1596720542",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/cc/72257_crt_BYzNF.jpg?r=1596720542"
+    },
+    "summary": "ちょっぴり攻撃的で自信家、でも妹と仲間想いなミーシャの双子の姉。\r\n両の瞳に万物を自壊させる《破滅の魔眼》を宿す、通称《破滅の魔女》。",
+    "name": "サーシャ・ネクロン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莎夏·涅库罗"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "SASHA NECRON"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://maohgakuin.com/character/?chara=sasha"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 108
+    },
+    "id": 72257,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        292222
+    ]
+}

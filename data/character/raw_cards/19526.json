@@ -1,0 +1,87 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 11,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ff/0c/19526_crt_k7p3d.jpg?r=1457682230",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ff/0c/19526_crt_k7p3d.jpg?r=1457682230",
+        "large": "https://lain.bgm.tv/pic/crt/l/ff/0c/19526_crt_k7p3d.jpg?r=1457682230",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ff/0c/19526_crt_k7p3d.jpg?r=1457682230"
+    },
+    "summary": "本作女主角之一。士道的同班同学。有着纯白如雪的直发，经常面无表情如人偶般的少女。\r\n喜欢的东西是士道，讨厌的东西是精灵。\r\n成绩超群绝伦，经常是全年级的榜首。在全国性的模拟考中也曾摘得首位。另外也是运动能力全能的完美美少女。但是，除了士道以外，在别人面前几乎完全不表露出情感，被搭话也无视之，休息时间也只一个人看着书本。\r\n叫唤他人时基本上都是使用全名，在招待士道到自己的家过后即改以名字称呼之。\r\n另一方面，也是陆上自卫队对抗精灵部队──AST的成员。位阶为上士，虽然年轻但却有极高的作战能力。",
+    "name": "鳶一折紙",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鸢一折纸"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Origami Tobiichi"
+                },
+                {
+                    "k": "日文名",
+                    "v": "鳶一 折紙"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "とびいち おりがみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tobiichi Origami"
+                },
+                {
+                    "k": "昵称",
+                    "v": "Master Origami"
+                },
+                {
+                    "k": "中文昵称",
+                    "v": "折纸大师"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月11日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B75/W55/H79"
+        },
+        {
+            "key": "引用来源",
+            "value": "中文维基"
+        }
+    ],
+    "stat": {
+        "comments": 78,
+        "collects": 538
+    },
+    "id": 19526,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        49131,
+        76325,
+        228254
+    ]
+}

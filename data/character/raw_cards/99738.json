@@ -1,0 +1,61 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/0f/99738_crt_XXL0z.jpg?r=1674039757",
+        "grid": "https://lain.bgm.tv/pic/crt/g/61/0f/99738_crt_XXL0z.jpg?r=1674039757",
+        "large": "https://lain.bgm.tv/pic/crt/l/61/0f/99738_crt_XXL0z.jpg?r=1674039757",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/0f/99738_crt_XXL0z.jpg?r=1674039757"
+    },
+    "summary": "マゼンタ公爵家の令嬢。\r\n魔法のみならず、勉学、政治、武芸に至るまで完璧な天才美少女。\r\n王子アルガルドの婚約者で、次期王妃として期待されているが……",
+    "name": "ユフィリア・マゼンタ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "尤菲莉亚·玛赞塔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "尤菲"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Euphyllia Magenta"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ユフィ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月10日"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 39,
+        "collects": 213
+    },
+    "id": 99738,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        395714
+    ]
+}

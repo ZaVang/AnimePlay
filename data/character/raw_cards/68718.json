@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/bd/68718_crt_8ZUE9.jpg?r=1609449781",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8e/bd/68718_crt_8ZUE9.jpg?r=1609449781",
+        "large": "https://lain.bgm.tv/pic/crt/l/8e/bd/68718_crt_8ZUE9.jpg?r=1609449781",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/bd/68718_crt_8ZUE9.jpg?r=1609449781"
+    },
+    "summary": "ナナオやナナたちのクラスメート。小柄でふわふわした髪の女の子。ヒーリング能力の持ち主。他人の怪我をなめて、傷をいやすことができる。\r\n素直で心やさしく、おとなしめの性格。\r\nそのためクラスメートから、からかいやいじりの対象にされることも多い。",
+    "name": "犬飼ミチル",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "犬饲满"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "犬飼 ミチル"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いぬかい ミチル"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Michiru Inukai"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://munounanana.com/character/"
+        }
+    ],
+    "stat": {
+        "comments": 35,
+        "collects": 95
+    },
+    "id": 68718,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        302418
+    ]
+}

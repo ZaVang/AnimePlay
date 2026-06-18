@@ -1,0 +1,61 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/83/36695_crt_dM1f3.jpg?r=1673844405",
+        "grid": "https://lain.bgm.tv/pic/crt/g/40/83/36695_crt_dM1f3.jpg?r=1673844405",
+        "large": "https://lain.bgm.tv/pic/crt/l/40/83/36695_crt_dM1f3.jpg?r=1673844405",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/83/36695_crt_dM1f3.jpg?r=1673844405"
+    },
+    "summary": "安達垣家の家令の家系で愛姫の世話をしている。 常に愛姫の傍にいて、愛姫の相談役でもあるが、 使い走りなどの酷い扱いをされることも。 政宗からも愛姫攻略の相談を受けており、 表向きはごまかしているが実は計算高い部分もある。 政宗からは「師匠」と呼ばれている。",
+    "name": "小岩井吉乃",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小岩井吉乃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小岩井 吉乃"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こいわい よしの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Koiwai Yoshino"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月22日"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://masamune-tv.com/character/3/"
+        }
+    ],
+    "stat": {
+        "comments": 48,
+        "collects": 160
+    },
+    "id": 36695,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        185762
+    ]
+}

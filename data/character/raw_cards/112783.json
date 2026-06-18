@@ -1,0 +1,53 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 24,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1f/99/112783_crt_5IZpT.jpg?r=1680168434",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1f/99/112783_crt_5IZpT.jpg?r=1680168434",
+        "large": "https://lain.bgm.tv/pic/crt/l/1f/99/112783_crt_5IZpT.jpg?r=1680168434",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1f/99/112783_crt_5IZpT.jpg?r=1680168434"
+    },
+    "summary": "九州の静かな町で、叔母と二人で暮らす17歳の女子高校生。\r\n広大な廃墟の中、幼い自分が草原をさまよい歩く不思議な夢をよく見る。",
+    "name": "岩戸鈴芽",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "岩户铃芽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いわと すずめ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Iwato Suzume"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月24日"
+        }
+    ],
+    "stat": {
+        "comments": 107,
+        "collects": 137
+    },
+    "id": 112783,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        362577
+    ]
+}

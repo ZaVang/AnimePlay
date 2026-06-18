@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/64/c1/22485_crt_nBlnh.jpg?r=1421288234",
+        "grid": "https://lain.bgm.tv/pic/crt/g/64/c1/22485_crt_nBlnh.jpg?r=1421288234",
+        "large": "https://lain.bgm.tv/pic/crt/l/64/c1/22485_crt_nBlnh.jpg?r=1421288234",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/64/c1/22485_crt_nBlnh.jpg?r=1421288234"
+    },
+    "summary": "",
+    "name": "中沢農",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "中泽农"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "なかざわ　みのり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "nakazawa minori"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 4,
+        "collects": 36
+    },
+    "id": 22485,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        68756
+    ]
+}

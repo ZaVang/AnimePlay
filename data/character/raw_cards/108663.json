@@ -1,0 +1,82 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/64/38/108663_crt_jS7Xi.jpg?r=1694954338",
+        "grid": "https://lain.bgm.tv/pic/crt/g/64/38/108663_crt_jS7Xi.jpg?r=1694954338",
+        "large": "https://lain.bgm.tv/pic/crt/l/64/38/108663_crt_jS7Xi.jpg?r=1694954338",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/64/38/108663_crt_jS7Xi.jpg?r=1694954338"
+    },
+    "summary": "いつも笑顔で、明日より今日を楽しむ全力ガール。\r\n\r\n実は歴代最強と称されるリコリス。\r\nDAが対応しないような民間の困りごとを、楽しんで解決している。\r\n喫茶リコリコでは、自称・看板娘として明るく元気に働いている。\r\n\r\n黄色みがかった白色の髪をボブカットに切り揃えており、左サイドだけ巻き髪と赤いリボンで飾られたアシンメトリーな髪型をした少女。\r\n\r\n活発で自由奔放、明るい性格の持ち主。座右の銘は「やりたいこと最・優・先」",
+    "name": "錦木千束",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "锦木千束"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "錦木 千束"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "にしきぎ ちさと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nishikigi Chisato"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月23日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "公式サイト",
+                    "v": "https://lycoris-recoil.com/character/?chara=chisato"
+                }
+            ]
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        },
+        {
+            "key": "使用武器",
+            "value": "千束の銃(Colt M1911)、拘束用銃、非殺傷弾、Glock 17、Kel-Tec KSG"
+        }
+    ],
+    "stat": {
+        "comments": 313,
+        "collects": 884
+    },
+    "id": 108663,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        364450
+    ]
+}

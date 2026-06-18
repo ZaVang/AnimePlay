@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9b/b9/126799_crt_kxjF0.jpg?r=1705209401",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9b/b9/126799_crt_kxjF0.jpg?r=1705209401",
+        "large": "https://lain.bgm.tv/pic/crt/l/9b/b9/126799_crt_kxjF0.jpg?r=1705209401",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9b/b9/126799_crt_kxjF0.jpg?r=1705209401"
+    },
+    "summary": "日比野カフカが正体不明の小型怪獣に寄生され、変身した姿。他の怪獣を圧倒する凄まじい力を秘めている。防衛隊発足以来初の未討伐怪獣となり、日本中から追われる存在となる。",
+    "name": "怪獣8号",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "怪兽8号"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "KAIJU NUMBER EIGHT"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://kaiju-no8.net/"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 3
+    },
+    "id": 126799,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        394623
+    ]
+}

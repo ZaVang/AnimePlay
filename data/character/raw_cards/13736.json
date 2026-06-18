@@ -1,0 +1,48 @@
+{
+    "id": 13736,
+    "name": "勝田奈緒子",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/a8/54/13736_crt_kRDbR.jpg?r=1734275058",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a8/54/13736_crt_kRDbR.jpg?r=1734275058",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a8/54/13736_crt_kRDbR.jpg?r=1734275058",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a8/54/13736_crt_kRDbR.jpg?r=1734275058"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "胜田奈绪子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かつた なおこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Katsuta Naoko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 31,
+        "collects": 74
+    },
+    "anime_ids": [
+        7206
+    ]
+}

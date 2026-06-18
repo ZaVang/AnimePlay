@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ff/51/15818_crt_8s9a1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ff/51/15818_crt_8s9a1.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ff/51/15818_crt_8s9a1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ff/51/15818_crt_8s9a1.jpg"
+    },
+    "summary": "黑桐干也的前辈，与干也一样察觉到了两仪式的异常而迷恋上了她，但告白失败，从此踏上了某条难以回首的不归路。起源是进食，拥有着丰富的口水。虽然狂热地迷恋着式，但直到最后才真正发现了自己的真爱。",
+    "name": "白純里緒",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "白纯里绪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "白純 里緒"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しらずみ りお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shirazumi Rio"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        }
+    ],
+    "stat": {
+        "comments": 35,
+        "collects": 16
+    },
+    "id": 15818,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        3423
+    ]
+}

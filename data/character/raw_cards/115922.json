@@ -1,0 +1,53 @@
+{
+    "birth_mon": 2,
+    "gender": "male",
+    "birth_day": 24,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/88/115922_crt_TbE69.jpg?r=1662426158",
+        "grid": "https://lain.bgm.tv/pic/crt/g/45/88/115922_crt_TbE69.jpg?r=1662426158",
+        "large": "https://lain.bgm.tv/pic/crt/l/45/88/115922_crt_TbE69.jpg?r=1662426158",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/88/115922_crt_TbE69.jpg?r=1662426158"
+    },
+    "summary": "“災い”をもたらす扉を閉める「閉じ師」として、日本各地に現れる扉を探し 旅をしている青年。\r\n扉のある廃墟に向かう途中ですずめと出会う。",
+    "name": "宗像草太",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宗像草太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "むなかた そうた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Munakata Souta"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2月24日"
+        }
+    ],
+    "stat": {
+        "comments": 55,
+        "collects": 24
+    },
+    "id": 115922,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        362577
+    ]
+}

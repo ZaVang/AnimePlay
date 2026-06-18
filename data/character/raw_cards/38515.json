@@ -1,0 +1,77 @@
+{
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/9e/38515_crt_080YA.jpg?r=1478337499",
+        "grid": "https://lain.bgm.tv/pic/crt/g/96/9e/38515_crt_080YA.jpg?r=1478337499",
+        "large": "https://lain.bgm.tv/pic/crt/l/96/9e/38515_crt_080YA.jpg?r=1478337499",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/9e/38515_crt_080YA.jpg?r=1478337499"
+    },
+    "summary": "自视甚高系声优。虽然很受欢迎，但却总接一些有关轻改动画以及除表演以外的工作，对于这一现状感到不满。作为艺人，对于声优过分执著，经常和周围发生冲突。",
+    "name": "柴崎万葉",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "柴崎万叶"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "柴崎 万葉"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しばさき かずは"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shibasaki Kazuha"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月8日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        },
+        {
+            "key": "星座",
+            "value": "摩羯座"
+        },
+        {
+            "key": "出身地",
+            "value": "山形县"
+        },
+        {
+            "key": "兴趣",
+            "value": "自行车、拍照"
+        }
+    ],
+    "stat": {
+        "comments": 28,
+        "collects": 53
+    },
+    "id": 38515,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        167434
+    ]
+}

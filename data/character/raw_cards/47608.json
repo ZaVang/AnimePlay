@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4a/fa/47608_crt_k8r34.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4a/fa/47608_crt_k8r34.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/4a/fa/47608_crt_k8r34.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4a/fa/47608_crt_k8r34.jpg"
+    },
+    "summary": "本作男主角。音吹高中二年级生，喜爱游戏的平庸高中生，从家用机到社交游戏的全部游戏都喜欢，但水平却很差。平凡又没有特点，没有朋友的落单族，经常负面思考的巨蟹座。同时也是造成花怜日后“崩坏”的元凶。",
+    "name": "雨野景太",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雨野景太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "雨野 景太"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あまの けいた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Amano Keita"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "年龄",
+            "value": "16"
+        }
+    ],
+    "stat": {
+        "comments": 17,
+        "collects": 21
+    },
+    "id": 47608,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        195816
+    ]
+}

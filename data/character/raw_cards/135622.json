@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cb/23/135622_crt_ZSP2p.jpg?r=1692324962",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cb/23/135622_crt_ZSP2p.jpg?r=1692324962",
+        "large": "https://lain.bgm.tv/pic/crt/l/cb/23/135622_crt_ZSP2p.jpg?r=1692324962",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cb/23/135622_crt_ZSP2p.jpg?r=1692324962"
+    },
+    "summary": "",
+    "name": "牧眞人",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "牧真人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "まひと"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 17,
+        "collects": 13
+    },
+    "id": 135622,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        228715
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/8b/19937_crt_LpIyT.jpg?r=1368157830",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dc/8b/19937_crt_LpIyT.jpg?r=1368157830",
+        "large": "https://lain.bgm.tv/pic/crt/l/dc/8b/19937_crt_LpIyT.jpg?r=1368157830",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/8b/19937_crt_LpIyT.jpg?r=1368157830"
+    },
+    "summary": "",
+    "name": "堀越二郎",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "堀越二郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "堀越 二郎"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ほりこし じろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Horikoshi Jirou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 56,
+        "collects": 29
+    },
+    "id": 19937,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        56846
+    ]
+}

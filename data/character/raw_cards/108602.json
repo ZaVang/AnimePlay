@@ -1,0 +1,65 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 26,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/8c/108602_crt_mJqoo.jpg?r=1668273976",
+        "grid": "https://lain.bgm.tv/pic/crt/g/77/8c/108602_crt_mJqoo.jpg?r=1668273976",
+        "large": "https://lain.bgm.tv/pic/crt/l/77/8c/108602_crt_mJqoo.jpg?r=1668273976",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/8c/108602_crt_mJqoo.jpg?r=1668273976"
+    },
+    "summary": "来自美国的留学生。\r\n性格天真烂漫，也有笨拙任性的一面。\r\n表达爱情的方式非常直接，很容易暴走。\r\n傲娇，无法坦率地说出内心的想法。",
+    "name": "アメリア・アーヴィング",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿米莉亚·艾尔文"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Amelia Irving"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月26日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "星座",
+            "value": "白羊座"
+        },
+        {
+            "key": "兴趣/特技",
+            "value": "读书、计算"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "布丁，薄煎饼"
+        }
+    ],
+    "stat": {
+        "comments": 38,
+        "collects": 98
+    },
+    "id": 108602,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        375735
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/f0/35281_crt_EjFZd.jpg?r=1441274713",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c5/f0/35281_crt_EjFZd.jpg?r=1441274713",
+        "large": "https://lain.bgm.tv/pic/crt/l/c5/f0/35281_crt_EjFZd.jpg?r=1441274713",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/f0/35281_crt_EjFZd.jpg?r=1441274713"
+    },
+    "summary": "本作女主角，法米利昂皇国的第二公主，被喻为是十年难得一见的天才魔法骑士。为了提醒自己不能懈怠而来到日本留学就读破军学园，因在模拟战被一辉击败开始在意起一辉，是能使用自然操作系的火系魔法骑士。",
+    "name": "ステラ・ヴァーミリオン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "史黛菈·法米利昂"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Stella Vermillion"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ステラ・ヴァーミリオン"
+                },
+                {
+                    "k": "昵称",
+                    "v": "红莲皇女"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 28,
+        "collects": 144
+    },
+    "id": 35281,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        127724
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "birth_mon": 9,
+    "gender": "male",
+    "birth_day": 27,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/0d/10513_crt_hq8Hh.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/66/0d/10513_crt_hq8Hh.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/66/0d/10513_crt_hq8Hh.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/0d/10513_crt_hq8Hh.jpg"
+    },
+    "summary": "世界唯一可以使用IS的男人。\r\n女生似乎都对他有好感。\r\n专用IS：白式",
+    "name": "織斑一夏",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "织斑一夏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "織斑一夏"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おりむら いちか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "orimura ichika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "9月27日"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 15
+    },
+    "id": 10513,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        9800
+    ]
+}

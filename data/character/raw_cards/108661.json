@@ -1,0 +1,61 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8b/62/108661_crt_5i8j8.jpg?r=1658666913",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8b/62/108661_crt_5i8j8.jpg?r=1658666913",
+        "large": "https://lain.bgm.tv/pic/crt/l/8b/62/108661_crt_5i8j8.jpg?r=1658666913",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8b/62/108661_crt_5i8j8.jpg?r=1658666913"
+    },
+    "summary": "過去にシュウが在籍していた大手企業のエリート社員で、その会社の社長娘。\r\n職場では、真面目で厳格、部下思いで面倒見もよいことから慕われている。\r\nシュウが在籍していた時の先輩であり、元恋人でもある。\r\n今でも独立したシュウのことを気にかけている。\r\n\r\n大手PMC「AAA Defender Co.（トリプルエーディフェンダー）」に所属するエリートエージェント。所属するPMCの社長の娘。\r\n職場では、真面目で厳格、部下思いで面倒見もよいことから慕われている。シュウがAAAに在籍していた時の先輩であり、元恋人でもある。\r\n今でも独立したシュウのことを気にかけている。",
+    "name": "夕桐アヤノ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "夕桐绫乃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Yuugiri Ayano"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月2日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "年龄",
+            "value": "シュウより年上 （そこまで離れていないと本人談）"
+        }
+    ],
+    "stat": {
+        "comments": 77,
+        "collects": 262
+    },
+    "id": 108661,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        375817
+    ]
+}

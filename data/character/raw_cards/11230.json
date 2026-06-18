@@ -1,0 +1,138 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/09/11230_crt_6hYjH.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4c/09/11230_crt_6hYjH.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/4c/09/11230_crt_6hYjH.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/09/11230_crt_6hYjH.jpg"
+    },
+    "summary": "本名はユークリウッド・ヘルサイズ。歩はユーと呼んでいる。ユウでも可。\r\n歩の家に転がり込んでいる。\r\nいつもプレートアーマーとガントレットをしていて、決して外さない。\r\n感情を表に出さない。声も出さず、いつもメモ帳にそっけない文章を書いてコミュニケーションをする。\r\n筆談の文字は必要最低限なのだが、歩によって妄想補正がされたりする。",
+    "name": "ユークリウッド・ヘルサイズ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "优克莉伍德·海尔赛兹"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Eucliwood Hellscythe"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ユー"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "妄想优",
+            "value": "各话对应声优"
+        },
+        {
+            "key": "第一季第1话",
+            "value": "三石琴乃"
+        },
+        {
+            "key": "第一季第2话",
+            "value": "かないみか"
+        },
+        {
+            "key": "第一季第3话",
+            "value": "金田朋子"
+        },
+        {
+            "key": "第一季第4话",
+            "value": "皆口裕子"
+        },
+        {
+            "key": "第一季第5话",
+            "value": "こおろぎさとみ"
+        },
+        {
+            "key": "第一季第6话",
+            "value": "丹下樱"
+        },
+        {
+            "key": "第一季第7话",
+            "value": "松岡由貴"
+        },
+        {
+            "key": "第一季第8话",
+            "value": "日高のり子"
+        },
+        {
+            "key": "OAD第1话/第一季第13话",
+            "value": "平野文"
+        },
+        {
+            "key": "OAD第2话/第二季第0话",
+            "value": "久川綾"
+        },
+        {
+            "key": "第二季第1话",
+            "value": "井上喜久子"
+        },
+        {
+            "key": "第二季第2话",
+            "value": "南央美"
+        },
+        {
+            "key": "第二季第3话",
+            "value": "こやまきみこ"
+        },
+        {
+            "key": "第二季第4话",
+            "value": "國府田マリ子"
+        },
+        {
+            "key": "第二季第5话",
+            "value": "小桜エツコ"
+        },
+        {
+            "key": "第二季第6话",
+            "value": "横山智佐"
+        },
+        {
+            "key": "第二季第7话",
+            "value": "飯塚雅弓"
+        },
+        {
+            "key": "第二季第8话",
+            "value": "島本須美"
+        },
+        {
+            "key": "第二季第9话",
+            "value": "堀江由衣"
+        },
+        {
+            "key": "第二季第10话",
+            "value": "佐久間レイ"
+        },
+        {
+            "key": "OAD第3话/第二季第11话",
+            "value": "小林ゆう"
+        }
+    ],
+    "stat": {
+        "comments": 46,
+        "collects": 382
+    },
+    "id": 11230,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        9774,
+        18797
+    ]
+}

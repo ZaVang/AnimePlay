@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/b2/22143_crt_G6c6c.jpg?r=1707742849",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2a/b2/22143_crt_G6c6c.jpg?r=1707742849",
+        "large": "https://lain.bgm.tv/pic/crt/l/2a/b2/22143_crt_G6c6c.jpg?r=1707742849",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/b2/22143_crt_G6c6c.jpg?r=1707742849"
+    },
+    "summary": "",
+    "name": "千葉敦子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "千叶敦子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ちば あつこ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 35,
+        "collects": 87
+    },
+    "id": 22143,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        841
+    ]
+}

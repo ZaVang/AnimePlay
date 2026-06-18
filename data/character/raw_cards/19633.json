@@ -1,0 +1,61 @@
+{
+    "birth_mon": 10,
+    "gender": "male",
+    "birth_day": 14,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/c5/19633_crt_8hFNc.jpg?r=1410321853",
+        "grid": "https://lain.bgm.tv/pic/crt/g/da/c5/19633_crt_8hFNc.jpg?r=1410321853",
+        "large": "https://lain.bgm.tv/pic/crt/l/da/c5/19633_crt_8hFNc.jpg?r=1410321853",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/c5/19633_crt_8hFNc.jpg?r=1410321853"
+    },
+    "summary": "调查军团分队长→调查兵团第13任团长\r\n\r\n拥有过人的判断力以及指挥能力，行动及考虑总是想得比任何人还要深远，就连兵团里资历深的老兵也没能理解太多。可以为了墙内全人类的生存，选择舍弃100个同伴的性命，是可以舍弃最重要的东西的人，虽然看似冷酷无情，但正因如此才可以被以利威尔为首的部下们深深信赖。\r\n过去艾尔文让曾在首都地下街相当出名的流氓利威尔进入调查兵团。在得知艾伦的能力后不顾周遭反对，说服达里斯总统让艾伦进入调查兵团。\r\n角色模特儿为漫画守护者的智谋者（Ozymandias）\r\n小时候的绰号是“眉毛”。",
+    "name": "エルヴィン・スミス",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾尔文·史密斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Erwin Smith"
+                },
+                {
+                    "k": "昵称",
+                    "v": "エルヴィン 団長、艾尔文团长、眉毛"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "10月14日"
+        },
+        {
+            "key": "身高",
+            "value": "188cm"
+        },
+        {
+            "key": "体重",
+            "value": "92kg"
+        }
+    ],
+    "stat": {
+        "comments": 48,
+        "collects": 235
+    },
+    "id": 19633,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        110049
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/77/72256_crt_W9t66.jpg?r=1596720441",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0a/77/72256_crt_W9t66.jpg?r=1596720441",
+        "large": "https://lain.bgm.tv/pic/crt/l/0a/77/72256_crt_W9t66.jpg?r=1596720441",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/77/72256_crt_W9t66.jpg?r=1596720441"
+    },
+    "summary": "寡黙でおとなしいアノスの同級生で、彼の転生後最初にできた友人。\r\nサーシャの双子の妹で、一五歳の誕生日に消えるはずだったが、アノスに救われた。",
+    "name": "ミーシャ・ネクロン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "米夏·涅库罗"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "MISHA NECRON"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://maohgakuin.com/character/?chara=misha"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 112
+    },
+    "id": 72256,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        292222
+    ]
+}

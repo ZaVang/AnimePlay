@@ -1,0 +1,66 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/36/33391_crt_s38wD.jpg?r=1604343668",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b1/36/33391_crt_s38wD.jpg?r=1604343668",
+        "large": "https://lain.bgm.tv/pic/crt/l/b1/36/33391_crt_s38wD.jpg?r=1604343668",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/36/33391_crt_s38wD.jpg?r=1604343668"
+    },
+    "summary": "职位：至高无上的四十一位至尊\r\n住处：纳萨力克地下大坟墓地下第九层的房间\r\n属性：极恶↔正义值:-500\r\n种族：骷髅魔法师(Skeleton Mage)Lv15\r\n死者大魔法师(Elder Lich)Lv10\r\n死之统治者(オーバーロード overlord)Lv5\r\n职业：死灵法师(ネクロマンサー Necromancer)Lv10\r\n巅峰不死者Lv10\r\n持有：十一个世界级道具\r\n公会武器：安兹乌尔恭之杖\r\n<复活魔杖/wand of resurrection>(蘇生の短杖/ワンド・オブ・リザレクション)\r\n无限背包(インフィニティ・ハヴァサック)\r\n在网路游戏「YGGDRASIL」关闭运营的最后，依旧留在游戏中等待系统强制登出时，意外穿越至异世界的本书的主人公。现实世界当中是一名喜欢电玩的普通青年，在游戏中是一名拥有骷髅外表的最强魔法咏唱者，所属「安兹．乌尔．恭」公会。\r\n元角色名音译为“莫莫伽”。\r\n在第一卷中把自己的名字改为安兹·乌尔·恭，作为纳萨里克的象征及核心。",
+    "name": "アインズ・ウール・ゴウン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "安兹·乌尔·恭"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "铃木悟"
+                },
+                {
+                    "v": "莫莫伽"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "飞鼠"
+                },
+                {
+                    "k": "英文名",
+                    "v": "ainz ooal gown"
+                },
+                {
+                    "k": "日文名",
+                    "v": "モモンガ"
+                },
+                {
+                    "k": "昵称",
+                    "v": "拥有骷髅外表的最强魔法吟唱者"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 31,
+        "collects": 105
+    },
+    "id": 33391,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        112146,
+        211027,
+        242170,
+        335389
+    ]
+}

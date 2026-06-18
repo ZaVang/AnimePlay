@@ -1,0 +1,53 @@
+{
+    "birth_mon": 11,
+    "gender": "male",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/17/108640_crt_p1xLU.jpg?r=1648253834",
+        "grid": "https://lain.bgm.tv/pic/crt/g/78/17/108640_crt_p1xLU.jpg?r=1648253834",
+        "large": "https://lain.bgm.tv/pic/crt/l/78/17/108640_crt_p1xLU.jpg?r=1648253834",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/17/108640_crt_p1xLU.jpg?r=1648253834"
+    },
+    "summary": "一人暮らしの高校一年生。\r\nぶっきらぼうで人付き合いが苦手だが、優しく思いやりのある性格。成績はそこそこ優秀。家事が苦手で自堕落な生活を送っていた。",
+    "name": "藤宮周",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藤宫周"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ふじみや あまね"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fujimiya Amane"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "11月8日"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 15
+    },
+    "id": 108640,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        364822
+    ]
+}

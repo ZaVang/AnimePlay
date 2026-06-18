@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/dd/54534_crt_LjlRc.jpg?r=1496150508",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c5/dd/54534_crt_LjlRc.jpg?r=1496150508",
+        "large": "https://lain.bgm.tv/pic/crt/l/c5/dd/54534_crt_LjlRc.jpg?r=1496150508",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/dd/54534_crt_LjlRc.jpg?r=1496150508"
+    },
+    "summary": "元ドラァグクイーンのオカマのホームレス。彼氏と死に別れたことで生活力を失いホームレスとなる。家族に恵まれなかったため、清子の境遇に一番同情している。非常に人情深く、あえて悪者役を引き受けることもある。ホームレス生活がたたり体が弱くなっているが、その事を他の二人には隠していた。捨てられていた赤ちゃんに「清子」という名前をつける。",
+    "name": "ハナ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "哈娜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "阿花"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 11
+    },
+    "id": 54534,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        842
+    ]
+}

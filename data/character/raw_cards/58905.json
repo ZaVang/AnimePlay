@@ -1,0 +1,61 @@
+{
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/05/58905_crt_z7DB1.jpg?r=1562639914",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b5/05/58905_crt_z7DB1.jpg?r=1562639914",
+        "large": "https://lain.bgm.tv/pic/crt/l/b5/05/58905_crt_z7DB1.jpg?r=1562639914",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/05/58905_crt_z7DB1.jpg?r=1562639914"
+    },
+    "summary": "現代文・古文・漢文を得意とする通称「文学の森の眠り姫」。容姿は黒髪ロングで、モデル並みにスタイルも良いが、胸が小さいためにそれを指摘されると落ち込む。また手先がかなり不器用である。利き手は左手。授業中に居眠りをしていることが多い",
+    "name": "古橋文乃",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "古桥文乃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "古橋 文乃"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ふるはし ふみの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Furuhashi Fumino"
+                },
+                {
+                    "k": "昵称",
+                    "v": "文学森林的睡美人"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月23日"
+        }
+    ],
+    "stat": {
+        "comments": 61,
+        "collects": 245
+    },
+    "id": 58905,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        257369
+    ]
+}

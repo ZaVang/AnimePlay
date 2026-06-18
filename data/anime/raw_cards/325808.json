@@ -1,0 +1,396 @@
+{
+    "id": 325808,
+    "type": 2,
+    "name": "地獄楽",
+    "name_cn": "地狱乐",
+    "summary": "时值江户时代末期。\r\n作为脱忍被囚禁而死罪的原石隐最强忍者的“画眉丸”，听闻如果从传说中的极乐净土带回长生不老的仙药，便可以无罪释放。\r\n画眉丸为了与最爱的妻子再会，与斩首执行人“山田浅卫门佐切”一起，前往仙药所在的小岛。\r\n画眉丸和佐切在岛上登陆后，同样是寻找仙药的死罪人们拦住了他们。\r\n还有潜藏在岛上的未知生物、人造的令人毛骨悚然的石像、统领小岛的仙人们……\r\n在神秘的岛上，画眉丸果然找到了仙药，他能活着回来吗——!?",
+    "nsfw": false,
+    "locked": false,
+    "date": "2023-04-01",
+    "platform": "TV",
+    "images": {
+        "large": "https://lain.bgm.tv/pic/cover/l/e6/b1/325808_4OXIC.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/e6/b1/325808_4OXIC.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/e6/b1/325808_4OXIC.jpg",
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/e6/b1/325808_4OXIC.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/e6/b1/325808_4OXIC.jpg"
+    },
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "地狱乐"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ジゴクラク",
+                    "k": null
+                },
+                {
+                    "v": "Jigokuraku",
+                    "k": null
+                },
+                {
+                    "v": "Hell’s Paradise",
+                    "k": null
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2023年4月1日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://www.jigokuraku.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京"
+        },
+        {
+            "key": "其他电视台",
+            "value": "テレビ大阪 / テレビ愛知 / テレビせとうち / テレビ北海道 / TVQ九州放送"
+        },
+        {
+            "key": "播放结束",
+            "value": "2023年7月1日"
+        },
+        {
+            "key": "导演",
+            "value": "牧田佳織"
+        },
+        {
+            "key": "Copyright",
+            "value": "©賀来ゆうじ／集英社・ツインエンジン・MAPPA"
+        },
+        {
+            "key": "原作",
+            "value": "賀来ゆうじ（集英社ジャンプ コミックス刊）"
+        },
+        {
+            "key": "人物设定",
+            "value": "久木晃嗣"
+        },
+        {
+            "key": "原作协力",
+            "value": "少年ジャンプ＋編集部（細野修平、榊原英明、藤田恭輔）"
+        },
+        {
+            "key": "製作",
+            "value": "ツインエンジン"
+        },
+        {
+            "key": "企画",
+            "value": "山本幸治、大塚学"
+        },
+        {
+            "key": "企画协力",
+            "value": "佐藤奏太"
+        },
+        {
+            "key": "制片人",
+            "value": "石井希"
+        },
+        {
+            "key": "动画制片人",
+            "value": "川越恒"
+        },
+        {
+            "key": "助理制片人",
+            "value": "尾関花那、尾田賢太"
+        },
+        {
+            "key": "副制片人",
+            "value": "木村誠"
+        },
+        {
+            "key": "怪物设计",
+            "value": "生物设定：新妻大輔"
+        },
+        {
+            "key": "道具设计",
+            "value": "池田智志、合田麻美"
+        },
+        {
+            "key": "主动画师",
+            "value": "吉田正幸"
+        },
+        {
+            "key": "美术",
+            "value": "e-カエサル"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "トオミヨウ（ED）"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "常田大希（OP） / Uru（ED）"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "椎名林檎、常田大希（OP） / Uru（ED）"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "millennium parade × 椎名林檎（OP） / Uru（ED）"
+        },
+        {
+            "key": "总作画监督",
+            "value": "だっとくん"
+        },
+        {
+            "key": "脚本",
+            "value": "金田一明"
+        },
+        {
+            "key": "分镜",
+            "value": "牧田佳織(1,8)、赤根和樹(2)、二宮壮史(3)、若野哲也(4,10)、宮繁之(5,11)、下司泰弘(6)、吉田りさこ(7)、宍戸淳(9,12-13)、大峰輝之(13)"
+        },
+        {
+            "key": "演出",
+            "value": "牧田佳織(1,13)、下司泰弘(2,6,11,13)、山田加余仲(3)、若野哲也(4)、渡部周(5)、新谷研人(7)、山田史人(8)、山本隆太(9)、久保太郎(10)、西畑佑紀(10)、大峰輝之(12)"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "Kamata(鎌田晋平) / 牧田佳織"
+        },
+        {
+            "key": "OP・ED 演出",
+            "value": "Kamata(鎌田晋平) / 田中春香"
+        }
+    ],
+    "volumes": 0,
+    "eps": 13,
+    "total_episodes": 16,
+    "rating": {
+        "rank": 6471,
+        "total": 5834,
+        "count": {
+            "one": 13,
+            "two": 19,
+            "three": 54,
+            "four": 228,
+            "five": 725,
+            "six": 2354,
+            "seven": 1844,
+            "eight": 461,
+            "nine": 67,
+            "ten": 69
+        },
+        "score": 6.3
+    },
+    "collection": {
+        "wish": 1728,
+        "collect": 8658,
+        "doing": 1289,
+        "on_hold": 638,
+        "dropped": 1007
+    },
+    "tags": [
+        {
+            "name": "MAPPA",
+            "count": 1541
+        },
+        {
+            "name": "战斗",
+            "count": 1445
+        },
+        {
+            "name": "2023年4月",
+            "count": 1142
+        },
+        {
+            "name": "奇幻",
+            "count": 1056
+        },
+        {
+            "name": "漫改",
+            "count": 781
+        },
+        {
+            "name": "TV",
+            "count": 738
+        },
+        {
+            "name": "漫画改",
+            "count": 727
+        },
+        {
+            "name": "2023",
+            "count": 479
+        },
+        {
+            "name": "冒险",
+            "count": 414
+        },
+        {
+            "name": "和风",
+            "count": 393
+        },
+        {
+            "name": "JUMP",
+            "count": 279
+        },
+        {
+            "name": "地狱乐",
+            "count": 170
+        },
+        {
+            "name": "猎奇",
+            "count": 169
+        },
+        {
+            "name": "牧田佳織",
+            "count": 103
+        },
+        {
+            "name": "日本",
+            "count": 94
+        },
+        {
+            "name": "牧田佳织",
+            "count": 57
+        },
+        {
+            "name": "热血",
+            "count": 39
+        },
+        {
+            "name": "日本动画",
+            "count": 26
+        },
+        {
+            "name": "2023年",
+            "count": 14
+        },
+        {
+            "name": "血腥",
+            "count": 10
+        },
+        {
+            "name": "金田一明",
+            "count": 9
+        },
+        {
+            "name": "季番",
+            "count": 8
+        },
+        {
+            "name": "2020s",
+            "count": 8
+        },
+        {
+            "name": "群像",
+            "count": 8
+        },
+        {
+            "name": "TVA",
+            "count": 7
+        },
+        {
+            "name": "花守由美里",
+            "count": 7
+        },
+        {
+            "name": "2022",
+            "count": 7
+        },
+        {
+            "name": "忍者",
+            "count": 7
+        },
+        {
+            "name": "宗教",
+            "count": 6
+        },
+        {
+            "name": "小林千晃",
+            "count": 6
+        }
+    ],
+    "meta_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "series": false,
+    "main_character_ids": [
+        86630,
+        121900
+    ],
+    "main_characters": [
+        {
+            "id": 86630,
+            "name": "山田浅ェ門佐切",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ff/ab/86630_crt_p79IX.jpg?r=1681629455",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ff/ab/86630_crt_p79IX.jpg?r=1681629455",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ff/ab/86630_crt_p79IX.jpg?r=1681629455",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ff/ab/86630_crt_p79IX.jpg?r=1681629455"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10503,
+                    "name": "花守ゆみり",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0f/09/10503_prsn_J4ENO.jpg?r=1708784297",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/09/10503_prsn_J4ENO.jpg?r=1708784297",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/09/10503_prsn_J4ENO.jpg?r=1708784297",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0f/09/10503_prsn_J4ENO.jpg?r=1708784297"
+                    },
+                    "short_summary": "2022年12月末离开m&i事务所，并于2023年1月1日成为个人成立的声优事务所tomorrow jam所属\r\n出生地 日本神奈川县\r\n声优出道时间 2013年\r\n花守 ゆみり（はなもり ゆみり、1997年9月29日 - ）は、日本の女性声優。m&i所属。神奈川県出身。\r\n「第2回ぽにきゃん声たまオーディション」で審査員奨励賞を受賞しデビュー。\r\n\r\nアニメにはまりだしたのは中学2年生の時で、友人からの応援がきっかけで声優に対し興味を持ち始めたという。\r\nデビューのきっかけである「第2回ぽにきゃん声たまオーディション」では「rimyu」という名義を使用していた。\r\n2015年には、『ラジオどっとあい』第62代目パーソナリティを務めた。\r\n2016年公開の『ガラスの花と壊す世界』で劇場アニメ初出演で初主演を務め、2015年10月22日には、東京国際映画祭にて『ガラスの花と壊す世界』チームとして、石浜真史監督、石原良一プロデューサーと共にレッドカーペットを歩いた。\r\nポニーキャニオンアーティスツを経て、2017年3月まではスワロウに所属していたが、2017年4月にm&iに移籍した。\r\n\r\n趣味・特技は読書、歌う事、絵を描く事、テニス。\r\n好きな食べ物は、おつまみ系や炭酸ジュース。そこから村川梨衣にのんべぇと名前をかけて、「はなべぇ」というあだ名を付けてもらった。なお学校ではゆみりんごと呼ばれている。\r\n好きなアニメには『妖怪ウォッチ』、『イナズマイレブン』、『ダンボール戦機』、『PSYCHO-PASS』、『残響のテロル』を挙げている。\r\n仲の良い声優には、小澤亜李がいる。\r\n金田朋子の『金朋声優ラボ2』#7で共演した際に苗字は芸名であり、名前は漢字で表すのが本名であると述べている。 また、同番組において妹がいることにも触れている。\r\n自分の声を聞いた人に大切なものを届けられるような声優を目指しており、竹内順子に憧れている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 121900,
+            "name": "画眉丸",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/cc/68/121900_crt_b8rB0.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/68/121900_crt_b8rB0.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/68/121900_crt_b8rB0.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cc/68/121900_crt_b8rB0.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 32265,
+                    "name": "小林千晃",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/72/32265_prsn_BtQ9g.jpg?r=1631019139",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/72/32265_prsn_BtQ9g.jpg?r=1631019139",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/72/32265_prsn_BtQ9g.jpg?r=1631019139",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/72/32265_prsn_BtQ9g.jpg?r=1631019139"
+                    },
+                    "short_summary": "小林 千晃（こばやし ちあき、1994年6月4日 - ）は、日本の男性声優。神奈川県出身。大沢事務所所属。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

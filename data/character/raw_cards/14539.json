@@ -1,0 +1,50 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/ba/14539_crt_6yfDA.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cc/ba/14539_crt_6yfDA.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/cc/ba/14539_crt_6yfDA.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/ba/14539_crt_6yfDA.jpg"
+    },
+    "summary": "本作の主人公で、口髭をたくわえた豚人間の姿になっている男。映画パンフレットによれば、軍に戻る事を拒否して自分自身に魔法をかけたのだという。通称はイタリア語で「赤い豚（紅の豚）」という意味。1892年 - 1893年生まれの36歳。17歳の頃から飛行機を乗り回し、イタリア空軍入隊後は大尉まで昇進し、第一次世界大戦ではエース・パイロットとして活躍していた。退役した現在は、全体を艶やかに赤塗りした飛行艇サボイアS.21試作戦闘飛行艇に乗って空賊を相手にする賞金稼ぎとして生きている。一方で嵐の海に落ちた敵パイロットを助けたなどの義侠心あふれる逸話も伝わっていて、豚の姿となった今でも女性にモテる人気の飛行艇乗り。腕の良い賞金稼ぎとして荒稼ぎしている。",
+    "name": "マルコ・パゴット",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "马克/波鲁克"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Marco Pagot"
+                },
+                {
+                    "v": "ポルコ・ロッソ"
+                },
+                {
+                    "v": "Porco Rosso"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 11,
+        "collects": 28
+    },
+    "id": 14539,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        307
+    ]
+}

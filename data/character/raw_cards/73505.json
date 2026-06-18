@@ -1,0 +1,61 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 11,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/a6/73505_crt_AiPjj.jpg?r=1675515175",
+        "grid": "https://lain.bgm.tv/pic/crt/g/41/a6/73505_crt_AiPjj.jpg?r=1675515175",
+        "large": "https://lain.bgm.tv/pic/crt/l/41/a6/73505_crt_AiPjj.jpg?r=1675515175",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/a6/73505_crt_AiPjj.jpg?r=1675515175"
+    },
+    "summary": "梅普露的死党兼伙伴，做事实事求是。很照顾朋友，不忘和梅普露一起享受游戏。采取轻装陪双匕首的战斗风格，凭借惊人专注力与个人技术闪躲各种攻击。",
+    "name": "サリー / 白峯理沙",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莎莉 / 白峰理沙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Sally / Risa Shiromine"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "サリー / しろみね りさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sarī / Shiromine Risa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月11日"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        }
+    ],
+    "stat": {
+        "comments": 18,
+        "collects": 101
+    },
+    "id": 73505,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        268545
+    ]
+}

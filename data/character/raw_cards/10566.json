@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/c5/10566_crt_U97Db.jpg?r=1650334412",
+        "grid": "https://lain.bgm.tv/pic/crt/g/30/c5/10566_crt_U97Db.jpg?r=1650334412",
+        "large": "https://lain.bgm.tv/pic/crt/l/30/c5/10566_crt_U97Db.jpg?r=1650334412",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/c5/10566_crt_U97Db.jpg?r=1650334412"
+    },
+    "summary": "身材纤细、皮肤苍白、双马尾（左右长短不一）、着黑色风衣、左眼中跳动着很萌的蓝色冷焰。\r\n　　武器为用一把每秒能发射20发岩石的岩石感十足的巨炮——★ROCK CANNON，有时握着一把闪耀着寒光的剑（二者偶尔会同时装备上）。\r\n　　右侧腹部与左肋有两道深深的伤疤，背景则通常是锁链、十字架、黑白方块堆砌而成的空间。\r\n　　存在于与麻陶不同的另一个世界。\r\n\r\nOVA\r\n麻陶的裡世界化身，裡世界稱為黑岩射手。手持ROCK★CANNON，此武器可於一秒內發射20發岩石，也可轉變為一把巨劍。最後黑衣和黑岩會面將優美救出。\r\n\r\nBLACK★ROCK SHOOTER\r\n映射麻陶。主色為藍色，裡世界稱為黑岩射手。穿著風衣搭配短褲、長靴，左右綁著長短不一的雙馬尾，平日頭髮被斗篷蓋著。左眼能燃起藍色火焰。配備可按戰鬥需要，變換不同形態的日本刀、三管式重型機槍以及加農砲，加農砲可射出燃燒著藍火的黑岩。\r\n遊走於各地，為了不同的目的而與他人戰鬥，以刀斬掉對手協助對方的表人格能從此遺忘痛苦之事。\r\n一度失控化身為Insane.BLACK★ROCK SHOOTER，但在麻陶尋回自己真正的心意之後和BLACK★ROCK SHOOTER分開，最終Insane人格被消滅。\r\n\r\nInsane.BLACK★ROCK SHOOTER\r\n主色為紫色，裡世界稱為狂化黑岩射手。主要武器為長約2.5公尺的大劍，也能射出子彈輔助攻擊。在和Black Gold Saw對戰開場之時即被斬中右手，並自行將右手扯斷，身上的鎧甲與武器繫著一條鎖鍊並協助其右手接回，並且輔助使大劍能作為投擲武器使用。左眼的藍色火焰取而代之的是紫色火焰，身上多個部位也出現了類似鎧甲的裝飾。\r\n斬殺Dead Master後，伴隨麻陶的心情走火入魔，而成為狂化的BLACK★ROCK SHOOTER。不過麻陶也能夠部分影響Insane.BLACK★ROCK SHOOTER的行動。\r\n在麻陶吶喊之下被強制轉送回屬於自己的世界與BLACK★ROCK SHOOTER對談，最後被BLACK★ROCK SHOOTER以集結眾人力量的七彩巨大加農砲消滅。",
+    "name": "ブラック★ロックシューター",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黑岩射手"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "BLACK★ROCK SHOOTER"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ブラックロックシューター"
+                },
+                {
+                    "k": "昵称",
+                    "v": "B★RS、BRS"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 32,
+        "collects": 316
+    },
+    "id": 10566,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        22179
+    ]
+}

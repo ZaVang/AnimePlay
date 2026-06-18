@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/ad/133182_crt_0ZsWf.jpg?r=1689090025",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3c/ad/133182_crt_0ZsWf.jpg?r=1689090025",
+        "large": "https://lain.bgm.tv/pic/crt/l/3c/ad/133182_crt_0ZsWf.jpg?r=1689090025",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/ad/133182_crt_0ZsWf.jpg?r=1689090025"
+    },
+    "summary": "みんなと一緒に電車で、突然いなくなった親友を探しに行く。考えるよりも先に体が動く性分で、頼れるような放っておけないようなリーダー。祖父からならった柔術が得意で、身体能力にも自信をもっている。",
+    "name": "千倉静留",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "千仓静留"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "千倉 静留"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ちくら しずる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Chikura Shizuru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://shumatsu-train.com/#character"
+        }
+    ],
+    "stat": {
+        "comments": 54,
+        "collects": 64
+    },
+    "id": 133182,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        404809
+    ]
+}

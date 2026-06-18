@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/cd/27787_crt_1hhr7.jpg?r=1556790303",
+        "grid": "https://lain.bgm.tv/pic/crt/g/36/cd/27787_crt_1hhr7.jpg?r=1556790303",
+        "large": "https://lain.bgm.tv/pic/crt/l/36/cd/27787_crt_1hhr7.jpg?r=1556790303",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/cd/27787_crt_1hhr7.jpg?r=1556790303"
+    },
+    "summary": "ホテル・アドリアーノを経営する未亡人の女性実業家。歌姫でもある。これまでに三度飛行艇乗りと結婚し、全員と死別している未亡人である為、フランス語で「夫人」を意味する「マダム」で通っている。絶世の美女で、空賊を含めた数多くの飛行艇乗り達のマドンナであり、「アドリア海の飛行艇乗りは、みんなジーナに一度は恋をする」と言われている。",
+    "name": "マダム・ジーナ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "吉娜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Madame Gina"
+                },
+                {
+                    "k": "昵称",
+                    "v": "Gina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 7,
+        "collects": 27
+    },
+    "id": 27787,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        307
+    ]
+}

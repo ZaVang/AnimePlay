@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/c3/7078_crt_anidb.jpg?r=1413817061",
+        "grid": "https://lain.bgm.tv/pic/crt/g/da/c3/7078_crt_anidb.jpg?r=1413817061",
+        "large": "https://lain.bgm.tv/pic/crt/l/da/c3/7078_crt_anidb.jpg?r=1413817061",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/c3/7078_crt_anidb.jpg?r=1413817061"
+    },
+    "summary": "",
+    "name": "仔太郎",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "仔太郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "仔太郎"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kotarou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 14
+    },
+    "id": 7078,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        4014
+    ]
+}

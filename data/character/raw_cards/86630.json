@@ -1,0 +1,71 @@
+{
+    "id": 86630,
+    "name": "山田浅ェ門佐切",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/ff/ab/86630_crt_p79IX.jpg?r=1681629455",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ff/ab/86630_crt_p79IX.jpg?r=1681629455",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ff/ab/86630_crt_p79IX.jpg?r=1681629455",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ff/ab/86630_crt_p79IX.jpg?r=1681629455"
+    },
+    "summary": "斬首刑などの処刑執行を務める浪人・山田家の娘。女性ながら剣技に優れるが、殺す事の業に囚われ悩む。試一刀流十二位。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "山田浅卫门佐切"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "佐切"
+                },
+                {
+                    "v": "山田浅卫门试一刀流十二位 佐切"
+                },
+                {
+                    "k": "日文名",
+                    "v": "山田浅ェ門 佐切"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やまだあさえもん さぎり"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月16日"
+        },
+        {
+            "key": "身高",
+            "value": "172cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://www.jigokuraku.com/character/#sho"
+        },
+        {
+            "key": "负责人",
+            "value": "画眉丸"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 12,
+    "birth_day": 16,
+    "stat": {
+        "comments": 66,
+        "collects": 194
+    },
+    "anime_ids": [
+        325808,
+        443446
+    ]
+}

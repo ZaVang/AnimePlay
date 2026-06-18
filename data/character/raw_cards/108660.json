@@ -1,0 +1,61 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 30,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/d5/108660_crt_Nf3F3.jpg?r=1656841913",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a5/d5/108660_crt_Nf3F3.jpg?r=1656841913",
+        "large": "https://lain.bgm.tv/pic/crt/l/a5/d5/108660_crt_Nf3F3.jpg?r=1656841913",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/d5/108660_crt_Nf3F3.jpg?r=1656841913"
+    },
+    "summary": "ベイロンシティ内にある高校に通う女子高校生。\r\n事務所兼自宅のシュウの家に足繁く通い、仕事の雑務から私生活の面倒まで見ている。\r\n学校では品行方正でお淑やかな少女だが、シュウのこととなると性格が豹変する。\r\n特にシュウの女性関係に関しては厳しく、周りの女性を排除しようとすることも…。\r\n\r\nシュウと契約し、悪魔退治を行っている悪魔の少女。\r\n一部の人間以外には悪魔であることは知られておらず、普段は人間としてベイロンシティ内にある高校に通っている。仕事がない時でも事務所兼自宅のシュウの家に足繁く通い、仕事と私生活の両面からシュウを支えている。\r\n契約者であるシュウに対しての独占欲が強く、シュウに寄り付く女性を嫌い、排除しようとすることも…。",
+    "name": "キサラ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "木更"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Kisara"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月30日"
+        },
+        {
+            "key": "血型",
+            "value": "不明"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "年龄",
+            "value": "数百年前から生きているため不詳"
+        }
+    ],
+    "stat": {
+        "comments": 324,
+        "collects": 953
+    },
+    "id": 108660,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        375817
+    ]
+}

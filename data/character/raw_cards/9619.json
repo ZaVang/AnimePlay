@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/f6/9619_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e4/f6/9619_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/e4/f6/9619_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/f6/9619_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "霧越未麻",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雾越未麻"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "霧越未麻"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kirigoe Mima"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 21,
+        "collects": 53
+    },
+    "id": 9619,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        839
+    ]
+}

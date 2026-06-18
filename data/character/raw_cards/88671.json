@@ -1,0 +1,48 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 27,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/57/88671_crt_mk25M.jpg?r=1615546565",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d4/57/88671_crt_mk25M.jpg?r=1615546565",
+        "large": "https://lain.bgm.tv/pic/crt/l/d4/57/88671_crt_mk25M.jpg?r=1615546565",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/57/88671_crt_mk25M.jpg?r=1615546565"
+    },
+    "summary": "14歳。褐色の肌と長い三つ編みが特徴的な少女。\r\n物静かであまり多くを語らず、\r\n人と積極的に関わろうとしない。",
+    "name": "青沼ねいる",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "青沼音瑠"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月27日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://wonder-egg-priority.com/character/neiru/"
+        }
+    ],
+    "stat": {
+        "comments": 50,
+        "collects": 136
+    },
+    "id": 88671,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        316607
+    ]
+}

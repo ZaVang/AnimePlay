@@ -1,0 +1,61 @@
+{
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/66/73503_crt_vVCFG.jpg?r=1675515158",
+        "grid": "https://lain.bgm.tv/pic/crt/g/25/66/73503_crt_vVCFG.jpg?r=1675515158",
+        "large": "https://lain.bgm.tv/pic/crt/l/25/66/73503_crt_vVCFG.jpg?r=1675515158",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/66/73503_crt_vVCFG.jpg?r=1675515158"
+    },
+    "summary": "虽然是游戏新手，却因为全点防御力而成了几乎能无伤抵挡所有攻击的最硬塔盾玩家。个性纯真，能从任何角落找出乐趣，经常因为思想太跳跃而吓傻身边的人。战斗时不仅能使各种攻击形同无物，还会打出各式各样强力无比的反击。",
+    "name": "メイプル / 本条楓",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "梅普露 / 本条枫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Maple / Kaede Honjō"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "メイプル / ほんじょう かえで"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Meipuru／Honjō Kaede"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月22日"
+        },
+        {
+            "key": "身高",
+            "value": "145cm"
+        }
+    ],
+    "stat": {
+        "comments": 33,
+        "collects": 129
+    },
+    "id": 73503,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        268545
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/5c/58161_crt_Grc1R.jpg?r=1523166935",
+        "grid": "https://lain.bgm.tv/pic/crt/g/58/5c/58161_crt_Grc1R.jpg?r=1523166935",
+        "large": "https://lain.bgm.tv/pic/crt/l/58/5c/58161_crt_Grc1R.jpg?r=1523166935",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/5c/58161_crt_Grc1R.jpg?r=1523166935"
+    },
+    "summary": "ピトフーイの知り合いの男性プレイヤー。身長190センチを超える巨漢で、中距離～遠距離戦を得意とし、特に狙撃の腕に長ける。冷静で作戦立案能力にも優れており、チームの参謀役を務めている。",
+    "name": "エム / 阿僧祇豪志",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "M／阿僧祇豪志"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "M / Kōji Asōgi"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "エム / あそうぎ ごうし"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "M / Asogi Goshi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "190cm / 175cm"
+        }
+    ],
+    "stat": {
+        "comments": 17,
+        "collects": 1
+    },
+    "id": 58161,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        226750
+    ]
+}

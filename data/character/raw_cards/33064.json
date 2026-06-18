@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/49/33064_crt_gBiyB.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/02/49/33064_crt_gBiyB.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/02/49/33064_crt_gBiyB.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/49/33064_crt_gBiyB.jpg"
+    },
+    "summary": "本作のヒロイン。浩紀と拓也が密かに思いを寄せている同級生。性格は非常に明るいが、どこか儚げな少女。ヴァイオリンが弾ける。ヴェラシーラで「ユニオンの塔」まで飛ぶことを楽しみにしていたが、中学3年の夏に原因不明の睡眠障害を発症し、東京の病院（小説版では、国鉄総合病院）に入院する。以後、2人の前から姿を消す。なお、沢渡が冒頭の授業中朗読しているのは、宮沢賢治の詩集「春と修羅」に含まれる「永訣の朝」である。",
+    "name": "沢渡佐由理",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "泽渡佐由理"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "沢渡佐由理"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さわたり　さゆり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sayuri Sawatari"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://ja.wikipedia.org/wiki/雲のむこう、約束の場所"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 23
+    },
+    "id": 33064,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1707
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/ef/102007_crt_tgn6r.jpg?r=1634981418",
+        "grid": "https://lain.bgm.tv/pic/crt/g/62/ef/102007_crt_tgn6r.jpg?r=1634981418",
+        "large": "https://lain.bgm.tv/pic/crt/l/62/ef/102007_crt_tgn6r.jpg?r=1634981418",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/ef/102007_crt_tgn6r.jpg?r=1634981418"
+    },
+    "summary": "32歳独身の元おっさん美少女。身長体重すべて平均で、今まで好きになってきた女の子を親友の神宮寺に取られてきた。そんな神宮寺を早く結婚させるべく誘った合コンの帰り、女神によって美少女の姿で異世界に転生させられてしまう。その上周りの男を魅了するスキルのせいで、ゆく先々でトラブルに巻き込まれることに。",
+    "name": "橘日向",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "橘日向"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たちばな ひなた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tachibana Hinata"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男→女"
+        }
+    ],
+    "stat": {
+        "comments": 17,
+        "collects": 80
+    },
+    "id": 102007,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        336458
+    ]
+}

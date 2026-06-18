@@ -1,0 +1,52 @@
+{
+    "id": 1220,
+    "name": "大神ソウマ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/bc/12/1220_crt_iqOKB.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/12/1220_crt_iqOKB.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/12/1220_crt_iqOKB.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bc/12/1220_crt_iqOKB.jpg"
+    },
+    "summary": "大蛇集团的第七人。\r\n乙橘学园的学生\r\n同时他也是来栖川姫子的青梅竹马，从小时候就喜欢对方。\r\n本来是想在姫子生日当天表白爱意，没承想突然出现的重大事件把一切都搞乱了。\r\n身为大蛇第七人,却敢于对抗大蛇的意志,全力保护姬子",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "大神相马"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "おおがみ ソウマ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Oogami Souma"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "声优",
+            "value": "间岛淳司"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 16,
+        "collects": 14
+    },
+    "anime_ids": [
+        2451
+    ]
+}

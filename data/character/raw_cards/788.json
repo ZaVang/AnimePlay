@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/5d/788_QvxuR.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c1/5d/788_QvxuR.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/c1/5d/788_QvxuR.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/5d/788_QvxuR.jpg"
+    },
+    "summary": "17岁，东京都内久远寺院高中二年级学生，从属于物理部，性格畏缩的理科男子。原本打算在暑假里和朋友一起做网络维护来打工，不过，出乎意料的被自己憧憬的前辈筱原夏希邀请，访问其位于长野县上田市的老家。拿手的科目是数学，不过却很遗憾的失去了数学奥林匹克运动会的日本代表选手权的资格。只是他那最拿手的数学，不久以后，就将成为解决世界的危机的王牌。",
+    "name": "小磯健二",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小矶健二"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小磯 健二"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こいそ けんじ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Koiso Kenji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 13
+    },
+    "id": 788,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1905
+    ]
+}

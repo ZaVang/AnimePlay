@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/02/72351_crt_HW1lw.jpg?r=1586708284",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1d/02/72351_crt_HW1lw.jpg?r=1586708284",
+        "large": "https://lain.bgm.tv/pic/crt/l/1d/02/72351_crt_HW1lw.jpg?r=1586708284",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/02/72351_crt_HW1lw.jpg?r=1586708284"
+    },
+    "summary": "第四王子，吉奥多的双胞胎弟弟，魔力属性：水。游戏中攻略对象之一。\r\n从小总是被他人拿来与完美的吉奥多比较，导致个性有些别扭，尔后因为卡塔莉娜的影响，逐渐对吉奥多释怀。擅长演奏钢琴，有许多乐迷。",
+    "name": "アラン・スティアート",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "亚兰·斯图亚特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "亚兰·史提亚德"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Alan Stuart"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 16
+    },
+    "id": 72351,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        264089
+    ]
+}

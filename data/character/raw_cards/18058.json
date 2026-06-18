@@ -1,0 +1,53 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/6b/18058_crt_bNFT5.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/21/6b/18058_crt_bNFT5.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/21/6b/18058_crt_bNFT5.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/6b/18058_crt_bNFT5.jpg"
+    },
+    "summary": "玉子的同学。隶属于接力部。 \r\n家里从事被兔子山商店街的店铺所依赖的木匠工作。 \r\n十分在意建筑物的垂直测量。性格我行我素。",
+    "name": "牧野かんな",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "牧野神奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "まきの かんな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "makino kanna"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月7日"
+        }
+    ],
+    "stat": {
+        "comments": 31,
+        "collects": 216
+    },
+    "id": 18058,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        55113
+    ]
+}

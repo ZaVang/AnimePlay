@@ -1,0 +1,61 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/68/19565_crt_NFPpw.jpg?r=1365191139",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1b/68/19565_crt_NFPpw.jpg?r=1365191139",
+        "large": "https://lain.bgm.tv/pic/crt/l/1b/68/19565_crt_NFPpw.jpg?r=1365191139",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/68/19565_crt_NFPpw.jpg?r=1365191139"
+    },
+    "summary": "本作主角。极东人偶师名门“赤羽一族”的幸存者，为了向杀了全家人的哥哥报仇，远渡重洋来到皇家机巧学院。\r\n拥有无法对需要帮助之人坐视不管的鸡婆性格，五感敏锐，思绪灵巧，但对男女间的感情却十分迟钝。\r\n对于自身的评价极低，由于接触机巧魔术的时间太短，无法跟上学院繁重的课程，学园生活充斥着补考。\r\n刚入学后不久参与了学力测验，结果成绩为倒数第二名，因此<夜会>的登录代号被戏称为“倒数第二名”，顺位为第一百名。",
+    "name": "赤羽雷真",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "赤羽雷真"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "赤羽 雷真"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あかばね らいしん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Akabane Raishin"
+                },
+                {
+                    "k": "昵称",
+                    "v": "下から二番目（セカンドラスト） 倒数第二"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wiki&HP"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 15
+    },
+    "id": 19565,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        61962
+    ]
+}

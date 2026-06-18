@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/1f/68717_crt_7mBZ2.jpg?r=1600500310",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c9/1f/68717_crt_7mBZ2.jpg?r=1600500310",
+        "large": "https://lain.bgm.tv/pic/crt/l/c9/1f/68717_crt_7mBZ2.jpg?r=1600500310",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/1f/68717_crt_7mBZ2.jpg?r=1600500310"
+    },
+    "summary": "柊ナナと同じ日に転校してきた能力者の少年。無愛想で無遠慮。自分の能力についても簡単には明かさない、用心深い性格。謎の多い存在。\r\nナナに劣らない観察力、推理力を持ち、また非常な読書家で博識。\r\n学園で頻発するさまざまな事件の調査にたずさわるうち、ナナとは協力者であると同時にライバルのような関係になってゆく。演歌とアイドルソングが好き。友だち募集中。",
+    "name": "小野寺キョウヤ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小野寺京谷"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小野寺 キョウヤ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おのでら キョウヤ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kyoya Onodera"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://munounanana.com/character/"
+        }
+    ],
+    "stat": {
+        "comments": 10,
+        "collects": 24
+    },
+    "id": 68717,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        302418
+    ]
+}

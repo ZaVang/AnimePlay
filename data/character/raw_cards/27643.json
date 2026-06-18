@@ -1,0 +1,54 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/bb/27643_crt_QqD6a.jpg?r=1555673001",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c8/bb/27643_crt_QqD6a.jpg?r=1555673001",
+        "large": "https://lain.bgm.tv/pic/crt/l/c8/bb/27643_crt_QqD6a.jpg?r=1555673001",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/bb/27643_crt_QqD6a.jpg?r=1555673001"
+    },
+    "summary": "转校生。一眼看上去只是个容姿秀丽的美少女，但内在是一位享受于背负风险的“赌徒”。",
+    "name": "蛇喰夢子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蛇喰梦子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "蛇喰 夢子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "じゃばみ ゆめこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Jabami Yumeko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 61,
+        "collects": 356
+    },
+    "id": 27643,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        209408,
+        234778
+    ]
+}

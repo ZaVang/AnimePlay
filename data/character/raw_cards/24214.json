@@ -1,0 +1,57 @@
+{
+    "birth_mon": 1,
+    "gender": "male",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/89/e3/24214_crt_dGLNv.jpg?r=1396647768",
+        "grid": "https://lain.bgm.tv/pic/crt/g/89/e3/24214_crt_dGLNv.jpg?r=1396647768",
+        "large": "https://lain.bgm.tv/pic/crt/l/89/e3/24214_crt_dGLNv.jpg?r=1396647768",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/89/e3/24214_crt_dGLNv.jpg?r=1396647768"
+    },
+    "summary": "",
+    "name": "愛徒勇気",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "爱徒勇气"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あいと ゆうき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aito Yuuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1月1日"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 17
+    },
+    "id": 24214,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        89751
+    ]
+}

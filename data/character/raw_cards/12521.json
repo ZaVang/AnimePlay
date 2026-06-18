@@ -1,0 +1,62 @@
+{
+    "birth_mon": 7,
+    "gender": "male",
+    "birth_day": 30,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6f/72/12521_crt_Y9re4.jpg?r=1477648525",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6f/72/12521_crt_Y9re4.jpg?r=1477648525",
+        "large": "https://lain.bgm.tv/pic/crt/l/6f/72/12521_crt_Y9re4.jpg?r=1477648525",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6f/72/12521_crt_Y9re4.jpg?r=1477648525"
+    },
+    "summary": "除了料理之外基本没啥长处的高中生，最好的科目是英语。是学生和老师所畏惧的学园唯一的最强不良少年，但实际是个温柔的人，并且很善于照顾身边的人，一点也不是个不良少年。妹妹是羽濑川小鸠。",
+    "name": "羽瀬川小鷹",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "羽濑川小鹰"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "はせがわ こだか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hasegawa Kodoka"
+                },
+                {
+                    "k": "昵称",
+                    "v": "鹰"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "7月30日"
+        },
+        {
+            "key": "身高",
+            "value": "AB型"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 38
+    },
+    "id": 12521,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        17883,
+        46011
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "birth_mon": 10,
+    "gender": "male",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/11/183133_crt_iwXMW.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0d/11/183133_crt_iwXMW.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/0d/11/183133_crt_iwXMW.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/11/183133_crt_iwXMW.jpg"
+    },
+    "summary": "魔術師の総本山・時計塔に、十二人のみ存在する君主（ロード）のひとり。魔術の腕は二流ながらも、その知識は瞠目に値する。\r\n極東での『第四次聖杯戦争』に参加した、数少ない生き残り。",
+    "name": "ロード・エルメロイⅡ世",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "君主·埃尔梅罗二世"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "埃尔梅罗Ⅱ世"
+                },
+                {
+                    "k": "本名",
+                    "v": "ウェイバー・ベルベット"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "韦伯·维尔维特"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Lord El-Melloi II"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "10月3日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "186cm"
+        },
+        {
+            "key": "体重",
+            "value": "68kg"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 11
+    },
+    "id": 183133,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        267732
+    ]
+}

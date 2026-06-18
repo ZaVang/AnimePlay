@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/25/6689_crt_wqW0T.jpg?r=1475205209",
+        "grid": "https://lain.bgm.tv/pic/crt/g/41/25/6689_crt_wqW0T.jpg?r=1475205209",
+        "large": "https://lain.bgm.tv/pic/crt/l/41/25/6689_crt_wqW0T.jpg?r=1475205209",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/25/6689_crt_wqW0T.jpg?r=1475205209"
+    },
+    "summary": "",
+    "name": "セラス・ヴィクトリア",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "塞拉斯·维克多利亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "セラス・ヴィクトリア"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Seras Victoria"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 19,
+        "collects": 122
+    },
+    "id": 6689,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        493
+    ]
+}

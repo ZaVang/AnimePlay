@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/e9/10514_crt_Zs8J8.jpg?r=1728974598",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b4/e9/10514_crt_Zs8J8.jpg?r=1728974598",
+        "large": "https://lain.bgm.tv/pic/crt/l/b4/e9/10514_crt_Zs8J8.jpg?r=1728974598",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/e9/10514_crt_Zs8J8.jpg?r=1728974598"
+    },
+    "summary": "六年不见的一夏的青梅竹马。\r\n特征是长马尾。\r\n专用IS：紅椿",
+    "name": "篠ノ之箒",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "筱之之帚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "篠ノ之箒"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しののの ほうき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "shinonono houki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 16,
+        "collects": 119
+    },
+    "id": 10514,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        9800
+    ]
+}

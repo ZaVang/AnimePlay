@@ -1,0 +1,59 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6d/df/131420_crt_iiKcO.jpg?r=1686486054",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6d/df/131420_crt_iiKcO.jpg?r=1686486054",
+        "large": "https://lain.bgm.tv/pic/crt/l/6d/df/131420_crt_iiKcO.jpg?r=1686486054",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6d/df/131420_crt_iiKcO.jpg?r=1686486054"
+    },
+    "summary": "大手不動産の営業マン、24歳。\r\nアキラとは同じ大学のラグビー部だった。\r\n持ち前のコミュニケーション能力で順風満帆な\r\n社会人生活を送っていたかのように見えたが……\r\n裸芸が得意。",
+    "name": "竜崎憲一朗",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "龙崎宪一郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ケンチョ"
+                },
+                {
+                    "v": "阿宪"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "188cm"
+        },
+        {
+            "key": "年龄",
+            "value": "24歳"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://zom100.com/"
+        }
+    ],
+    "stat": {
+        "comments": 11,
+        "collects": 13
+    },
+    "id": 131420,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        414461
+    ]
+}

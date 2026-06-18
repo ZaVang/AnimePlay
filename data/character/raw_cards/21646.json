@@ -1,0 +1,65 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": 2080,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/8b/21646_crt_m3119.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ca/8b/21646_crt_m3119.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ca/8b/21646_crt_m3119.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/8b/21646_crt_m3119.jpg"
+    },
+    "summary": "本作的女主角，主角司波达也的亲妹妹。\r\n外貌出众，留着一头柔顺的黑色长发。入学后成为校内第一的美少女，被达也评为连伸手触摸都令人犹豫的美少女。\r\n因外表、魔法力、礼教都十分完美，在男女生间都很受欢迎。\r\n完美的形象下其实是名重度兄控，最爱向哥哥撒娇，也最喜欢被哥哥摸头，异于寻常的恋兄情结甚至被同属兄控的艾莉卡称为“极品兄控娘”。",
+    "name": "司波深雪",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "司波深雪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "司波 深雪"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しば みゆき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shiba Miyuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2080-03-25"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "49kg"
+        }
+    ],
+    "stat": {
+        "comments": 61,
+        "collects": 184
+    },
+    "id": 21646,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        84872
+    ]
+}

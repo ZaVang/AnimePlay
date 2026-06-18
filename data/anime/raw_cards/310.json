@@ -1,0 +1,503 @@
+{
+    "date": "1997-07-12",
+    "platform": "剧场版",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/06/eb/310_C0oq0.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/06/eb/310_C0oq0.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/06/eb/310_C0oq0.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/06/eb/310_C0oq0.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/06/eb/310_C0oq0.jpg"
+    },
+    "summary": "大和王权时期蝦夷族末代王子阿席达卡，在保卫他的村庄时被一恶魔诅咒受不治创伤。村里的巫婆劝他前往西方，寻找恶魔的来源和解除诅咒的方法。在他的旅途中，他來到山獸神森林，认识了被称为“魔法公主”的、由犬神抚养大的小桑。\r\n\r\n在這個過程中，阿席達卡发现恶魔本来是一个山猪神，但体内中了一颗铁弹后，对人类憎恨无比，变成了恶魔。铁弹是工業之城達達拉的統治者幻姬领导的穷人在铁城里制造的，为了保护自己不被贪心的封建贵族吞并，幻姬使用火器和铁弹作为武器，而为了制造火器和铁弹，她又必须从大自然中开发木头和铁矿石，由此与原始森林中的兽神交恶。\r\n\r\n阿席达卡试图在双方调停，但却越来越深地被牵入了这场冲突。",
+    "name": "もののけ姫",
+    "name_cn": "幽灵公主",
+    "tags": [
+        {
+            "name": "宫崎骏",
+            "count": 4092,
+            "total_cont": 0
+        },
+        {
+            "name": "吉卜力",
+            "count": 3122,
+            "total_cont": 0
+        },
+        {
+            "name": "剧场版",
+            "count": 2454,
+            "total_cont": 0
+        },
+        {
+            "name": "久石让",
+            "count": 1690,
+            "total_cont": 0
+        },
+        {
+            "name": "1997",
+            "count": 1232,
+            "total_cont": 0
+        },
+        {
+            "name": "幽灵公主",
+            "count": 1143,
+            "total_cont": 0
+        },
+        {
+            "name": "奇幻",
+            "count": 1109,
+            "total_cont": 0
+        },
+        {
+            "name": "原创",
+            "count": 843,
+            "total_cont": 0
+        },
+        {
+            "name": "自然主义",
+            "count": 808,
+            "total_cont": 0
+        },
+        {
+            "name": "环保系",
+            "count": 631,
+            "total_cont": 0
+        },
+        {
+            "name": "神配乐",
+            "count": 426,
+            "total_cont": 0
+        },
+        {
+            "name": "经典",
+            "count": 358,
+            "total_cont": 0
+        },
+        {
+            "name": "气势宏大",
+            "count": 311,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 264,
+            "total_cont": 0
+        },
+        {
+            "name": "宮崎駿",
+            "count": 239,
+            "total_cont": 0
+        },
+        {
+            "name": "动画电影",
+            "count": 134,
+            "total_cont": 0
+        },
+        {
+            "name": "冒险",
+            "count": 89,
+            "total_cont": 0
+        },
+        {
+            "name": "环保",
+            "count": 86,
+            "total_cont": 0
+        },
+        {
+            "name": "GHIBLI",
+            "count": 80,
+            "total_cont": 0
+        },
+        {
+            "name": "治愈",
+            "count": 45,
+            "total_cont": 0
+        },
+        {
+            "name": "电影",
+            "count": 43,
+            "total_cont": 0
+        },
+        {
+            "name": "1997年7月",
+            "count": 37,
+            "total_cont": 0
+        },
+        {
+            "name": "1997年",
+            "count": 34,
+            "total_cont": 0
+        },
+        {
+            "name": "神作",
+            "count": 31,
+            "total_cont": 0
+        },
+        {
+            "name": "スタジオジブリ",
+            "count": 30,
+            "total_cont": 0
+        },
+        {
+            "name": "自然",
+            "count": 30,
+            "total_cont": 0
+        },
+        {
+            "name": "久石譲",
+            "count": 28,
+            "total_cont": 0
+        },
+        {
+            "name": "童年",
+            "count": 26,
+            "total_cont": 0
+        },
+        {
+            "name": "映画",
+            "count": 24,
+            "total_cont": 0
+        },
+        {
+            "name": "90年代",
+            "count": 24,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "幽灵公主"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "魔法公主"
+                },
+                {
+                    "v": "山神的女儿"
+                },
+                {
+                    "v": "Princess Mononoke"
+                },
+                {
+                    "v": "Mononoke Hime"
+                }
+            ]
+        },
+        {
+            "key": "上映年度",
+            "value": "1997年7月12日"
+        },
+        {
+            "key": "片长",
+            "value": "134分钟"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://www.ghibli.jp/works/mononoke/"
+        },
+        {
+            "key": "Copyright",
+            "value": "© 1997 Hayao Miyazaki/Studio Ghibli, ND"
+        },
+        {
+            "key": "作画监督",
+            "value": "安藤雅司、高坂希太郎、近藤喜文"
+        },
+        {
+            "key": "话数",
+            "value": "1"
+        },
+        {
+            "key": "导演",
+            "value": "宮崎駿"
+        },
+        {
+            "key": "原作",
+            "value": "宮崎駿"
+        },
+        {
+            "key": "其他上映日期",
+            "value": "2025年5月1日(中国大陆4K修复版)"
+        },
+        {
+            "key": "製作",
+            "value": "氏家齊一郎、成田豊；「もののけ姫」製作委員会【徳間書店（小金井道宏、室井實、塚原昇、伊藤純子）、日本テレビ放送網（坂田信久、伊藤和明、長崎佳子、藤本鈴子、野元佳子、門屋大輔、紙谷知子）、電通（百瀬伸夫、野田考也、勝田祥三、青柳教載、福山亮一、曽我有信）、スタジオジブリ（古林繁、荒井章吉、一村晃夫、洞口朋紀、駒形正吾、藤津英子）】；製作担当：奥田誠治"
+        },
+        {
+            "key": "制作",
+            "value": "山下辰巳、藤井睦夫"
+        },
+        {
+            "key": "插入歌演出",
+            "value": "新倉芳美（新倉よしみ）、木村真紀、下成佐登子"
+        },
+        {
+            "key": "原画",
+            "value": "大塚伸治、篠原征子、森友典子、賀川愛、小西賢一、遠藤正明、清水洋、粟田務、箕輪博子、三原三千雄（三原三千夫）、大谷敦子、稲村武志、芳尾英明、二木真希子、山田憲一、笹木信作、山森英司、吉田健一、松瀬勝、桑名郁朗、松尾真理子、河口俊夫、野田武広、杉野左秩子、近藤勝也、金田伊功、Telecom Animation Film（田中敦子）"
+        },
+        {
+            "key": "动画检查",
+            "value": "舘野仁美、中村勝利、斎藤昌哉、中込利恵、小野田和由"
+        },
+        {
+            "key": "补间动画",
+            "value": "手島晶子、大村まゆみ、北島由美子、真野鈴子、坂野方子、柴田和子、倉田美鈴、沢九里、鈴木麻紀子、鈴木まり子、菊池華、鶴岡耕次郎、田村篤、野口美律、藤井香織、米林宏昌、矢地久子、山田珠美、川田学、佐光幸恵、アレキサンドラ・ワエラウフ、ダビッド・エンシナス、東誠子、山浦由加里、西戸スミエ、槇田喜代子、富沢恵子、コマサ、土岐弥生、柴田絵里子、長嶋陽子、椎名律子、岩柳恵美子、藤森まや、近藤梨恵、常木志伸、西河広美、渡辺恵子、谷平久美子、矢野守彦、古屋浩美、安達昌彦、山本まゆみ、中山大介、田辺正恵、新留理恵、松下敦子、手塚寛子、原口ちはる、Telecom Animation Film（飯盛夏子、渡邊奈津子、矢沢真由、東樹葉子、中路景子、毛利志乃舞、小高雅子、上田峰子、板垣伸、安留博子、富野昌江、式部美代子、与沢桂子、平井和子、藤倉雅代、宇田明彦）"
+        },
+        {
+            "key": "协力",
+            "value": "読売新聞社；作画协力：アニメトロトロ、OH!プロダクション、スタジオコクピット、スタジオたくらんけ、グループどんぐり"
+        },
+        {
+            "key": "美术监督",
+            "value": "山本二三、田中直哉、武重洋二、黒田聡、男鹿和雄"
+        },
+        {
+            "key": "背景美术",
+            "value": "吉田昇、春日井直美、長縄恭子、斉藤久恵、伊奈涼子、平原さやか、荒井貞幸、太田清美、谷口淳一、長田昌子、佐々木洋明、田村盛揮（田村せいき）"
+        },
+        {
+            "key": "特效",
+            "value": "谷藤薫児、橋爪朋二、村上正博、榊原豊彦、谷口久美子"
+        },
+        {
+            "key": "色彩指定",
+            "value": "井関真代、森奈緒美、守屋加奈子"
+        },
+        {
+            "key": "摄影",
+            "value": "藪田順二、高橋わたる、古城環"
+        },
+        {
+            "key": "音乐制作",
+            "value": "ワンダーシティ（山下幸郎、滝川透）、スタジオジブリ（稲城和実）"
+        },
+        {
+            "key": "3DCG",
+            "value": "菅野嘉則、百瀬義行、片塰満則、井上雅史"
+        },
+        {
+            "key": "剪辑",
+            "value": "瀬山武司；助手：水田経子、内田恵、田村眞子"
+        },
+        {
+            "key": "演出助理",
+            "value": "有冨興二、石曽根正勝"
+        },
+        {
+            "key": "配給",
+            "value": "東宝"
+        }
+    ],
+    "rating": {
+        "rank": 77,
+        "total": 12322,
+        "count": {
+            "1": 7,
+            "2": 6,
+            "3": 9,
+            "4": 31,
+            "5": 92,
+            "6": 394,
+            "7": 1729,
+            "8": 4478,
+            "9": 3765,
+            "10": 1811
+        },
+        "score": 8.4
+    },
+    "total_episodes": 1,
+    "collection": {
+        "on_hold": 209,
+        "dropped": 65,
+        "wish": 2750,
+        "collect": 19330,
+        "doing": 194
+    },
+    "id": 310,
+    "eps": 1,
+    "meta_tags": [
+        "剧场版",
+        "日本",
+        "奇幻",
+        "原创",
+        "冒险"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        6745,
+        27786
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/64/6745_crt_TYL2m.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/32/64/6745_crt_TYL2m.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/32/64/6745_crt_TYL2m.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/64/6745_crt_TYL2m.jpg"
+            },
+            "name": "サン",
+            "summary": "人类少女，拥有“幽灵公主”的名号，与山犬神族[url=https://bgm.tv/character/175410]莫娜[/url]一族为伴，将侵略森林的人类视为敌人。\r\n外观上平时以披带着狼毛皮及挂着赤色的奇异造型面具打扮，并在脸上刺有红色图像的刺青，身配利器专门刺杀企图毁灭森林的人类。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/58/4522_prsn_goeMe.jpg?r=1727800953",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8c/58/4522_prsn_goeMe.jpg?r=1727800953",
+                        "large": "https://lain.bgm.tv/pic/crt/l/8c/58/4522_prsn_goeMe.jpg?r=1727800953",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/58/4522_prsn_goeMe.jpg?r=1727800953"
+                    },
+                    "name": "石田ゆり子",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4522,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "",
+                        "grid": "",
+                        "large": "",
+                        "medium": ""
+                    },
+                    "name": "林元春",
+                    "short_summary": "香港的女配音演员，1988年加入无线电视配音组。\r\n\r\n于1979年参加第八期无线电视艺员训练班出身，但为了逃避练功夫而参加正缺人的配音组，其后亦爱上配音工作。擅长配温柔或大方得体的少女角色，亦擅长反串男童角色，有时也会尝试腹黑的角色。\r\n\r\n元春姐姐是少女变身动画的大热人选，无论是早期的美少女战士，中期是小魔女DOREMI，及现在的光之美少女系列，均有她声影。现时是《光之美少女系列》领军人物\r\n\r\n代表作有：木之本樱（百变小樱Magic咭）、穗波小玉（樱桃小丸子）、多啦美（哆啦A梦）、花带柑（我们这一家)等",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7191,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/81/17193_prsn_b893t.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f9/81/17193_prsn_b893t.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f9/81/17193_prsn_b893t.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/81/17193_prsn_b893t.jpg"
+                    },
+                    "name": "徐静蕾",
+                    "short_summary": "徐静蕾（1974年4月16日－），出生于北京，祖籍湖南，毕业于北京电影学院表演系，中国女演员、导演。与周迅、赵薇和章子怡并称为中国四大花旦。",
+                    "career": [
+                        "producer",
+                        "actor"
+                    ],
+                    "id": 17193,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/ba/79160_prsn_r1O1R.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f5/ba/79160_prsn_r1O1R.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f5/ba/79160_prsn_r1O1R.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/ba/79160_prsn_r1O1R.jpg"
+                    },
+                    "name": "林芳雪",
+                    "short_summary": "台湾女性配音员、演员、歌手。世界新闻专科学校毕业。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 79160,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/41/81504_prsn_0KEtY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e2/41/81504_prsn_0KEtY.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/e2/41/81504_prsn_0KEtY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/41/81504_prsn_0KEtY.jpg"
+                    },
+                    "name": "赵丽颖",
+                    "short_summary": "赵丽颖，1987年10月16日出生于河北省廊坊市，中国内地影视女演员。\r\n\r\n2006年，因获得雅虎搜星比赛冯小刚组冠军而进入演艺圈 ；同年，在冯小刚执导的广告片《跪族篇》中担任女主角 。2011年，因在古装剧《新还珠格格》中饰演晴儿一角而被观众认识。2013年，凭借古装剧《陆贞传奇》获得更多关注。2014年10月，在第10届金鹰电视艺术节举办的投票活动中被选为“金鹰女神” ；12月，凭借都市爱情剧《杉杉来了》获得第5届国剧盛典内地最具人气女演员奖 ；同年，成立海润传媒赵丽颖工作室。\r\n\r\n2015年，主演的仙侠剧《花千骨》打破中国内地周播剧收视纪录，而其个人则凭借该剧先后获得第6届澳门国际电视节金莲花最佳女主角奖、第6届国剧盛典最具收视号召力演员奖、第22届上海电视节白玉兰奖最佳女主角奖提名、第28届中国电视金鹰奖观众喜爱的女演员奖 。2017年，凭借电影《乘风破浪》获得第24届北京大学生电影节最受大学生欢迎女演员奖 ；同年主演的古装剧《楚乔传》成为中国内地首部在播期间网络播放量突破400亿次的电视剧 。2018年，主演的都市剧《你和我的倾城时光》和古装剧《知否知否应是绿肥红瘦》相继播出。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 81504,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 6745
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/cd/27786_crt_6gHcQ.jpg?r=1746536171",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5b/cd/27786_crt_6gHcQ.jpg?r=1746536171",
+                "large": "https://lain.bgm.tv/pic/crt/l/5b/cd/27786_crt_6gHcQ.jpg?r=1746536171",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/cd/27786_crt_6gHcQ.jpg?r=1746536171"
+            },
+            "name": "アシタカ",
+            "summary": "一个有着领导者血统、性格正直、温柔寡言、箭术优异的虾夷少年。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/9c/4532_prsn_uzghu.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b3/9c/4532_prsn_uzghu.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b3/9c/4532_prsn_uzghu.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/9c/4532_prsn_uzghu.jpg"
+                    },
+                    "name": "松田洋治",
+                    "short_summary": "日本の俳優、声優。\r\n\r\n東京都世田谷区砧生まれ。\r\n\r\nTMエンタテインメント所属。\r\n\r\n5歳上の兄はミュージカル翻訳者・駒澤大学教授の松田直行。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4532,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/8b/32637_prsn_Yjnjd.jpg?r=1718260318",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3d/8b/32637_prsn_Yjnjd.jpg?r=1718260318",
+                        "large": "https://lain.bgm.tv/pic/crt/l/3d/8b/32637_prsn_Yjnjd.jpg?r=1718260318",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/8b/32637_prsn_Yjnjd.jpg?r=1718260318"
+                    },
+                    "name": "谷江山",
+                    "short_summary": "中国男性配音演员。音色温柔清亮，跨度较广，常为少年、青年男性角色配音。\r\n\r\n毕业于成都理工大学。2015年参加四川省电影电视节《大圣归来》配音比赛，获得最佳配音奖、最具创意奖。2017年7月，参加729声工场第一期声优育成计划，12月签约729声工场。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 32637,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/eb/78964_prsn_VmVvv.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/eb/78964_prsn_VmVvv.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/eb/78964_prsn_VmVvv.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/eb/78964_prsn_VmVvv.jpg"
+                    },
+                    "name": "李勇",
+                    "short_summary": "台湾男性配音员、广播节目主持人。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 78964,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 27786
+        }
+    ]
+}

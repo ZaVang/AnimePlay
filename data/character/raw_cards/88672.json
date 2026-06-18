@@ -1,0 +1,53 @@
+{
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 18,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/35/88672_crt_f3RZv.jpg?r=1615713709",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f9/35/88672_crt_f3RZv.jpg?r=1615713709",
+        "large": "https://lain.bgm.tv/pic/crt/l/f9/35/88672_crt_f3RZv.jpg?r=1615713709",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/35/88672_crt_f3RZv.jpg?r=1615713709"
+    },
+    "summary": "14歳。金髪にピンクのメッシュが特徴的な少女。\r\n初対面の人にも物怖じしないお調子もの。",
+    "name": "川井リカ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "川井梨花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Kawai Rika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月18日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://wonder-egg-priority.com/character/rika/"
+        }
+    ],
+    "stat": {
+        "comments": 71,
+        "collects": 238
+    },
+    "id": 88672,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        316607
+    ]
+}

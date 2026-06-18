@@ -1,0 +1,69 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/9e/14492_crt_TtP0T.jpg?r=1720615113",
+        "grid": "https://lain.bgm.tv/pic/crt/g/27/9e/14492_crt_TtP0T.jpg?r=1720615113",
+        "large": "https://lain.bgm.tv/pic/crt/l/27/9e/14492_crt_TtP0T.jpg?r=1720615113",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/9e/14492_crt_TtP0T.jpg?r=1720615113"
+    },
+    "summary": "雙胞胎的姐姐，就讀高中一年級，學校學生會會长。前面的頭髮用髮夾固定。跟理香不同的是她擅長做菜，擅長喝酒，常代替母親打理家務。外表看起來像是個思念弟弟的性格，其實她的個性極易害羞又好色。",
+    "name": "住之江あこ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "住之江亚香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "住之江亞香"
+                },
+                {
+                    "k": "日文名",
+                    "v": "住之江 あこ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "すみのえ あこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Suminoe Ako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月7日"
+        },
+        {
+            "key": "身高",
+            "value": "145cm"
+        },
+        {
+            "key": "体重",
+            "value": "38.40kg"
+        }
+    ],
+    "stat": {
+        "comments": 19,
+        "collects": 97
+    },
+    "id": 14492,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        4284
+    ]
+}

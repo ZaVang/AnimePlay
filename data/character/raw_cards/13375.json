@@ -1,0 +1,57 @@
+{
+    "id": 13375,
+    "name": "ニャルラトホテプ",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/51/9c/13375_crt_tk9TR.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/9c/13375_crt_tk9TR.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/9c/13375_crt_tk9TR.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/51/9c/13375_crt_tk9TR.jpg"
+    },
+    "summary": "克苏鲁神话里登场的上古邪神，“阿撒托斯的使者”“匍匐蠕动的混沌”“无貌之神”奈亚拉托提普，司诱惑与狡诈，可以自由地变换自身容貌和性别。“奈亚拉托提普”并不是本名，而只是为了迎合地球人的语言所作的转译。\r\n实则是宇宙联合行星保护机构的公务员，查看资料时对真寻一见钟情。故在真寻面前永远都展现娇的一面；将自己的外表设定成银发、碧绿色眼睛的美少女，但其实本体千面。\r\n热爱动漫文化，对日本谚语和文化也莫名的熟悉。得意技是宇宙CQC惯用武器是“难以名状之棒状物”。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "奈亚拉托提普"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "奈亚子"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Nyarlathotep"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ニャル子"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月15日"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 4,
+    "birth_day": 15,
+    "stat": {
+        "comments": 51,
+        "collects": 445
+    },
+    "anime_ids": [
+        24508,
+        58015
+    ]
+}

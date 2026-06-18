@@ -1,0 +1,396 @@
+{
+    "date": "2019-01-08",
+    "platform": "TV",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/cd/ca/234778_BWQfd.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/cd/ca/234778_BWQfd.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/cd/ca/234778_BWQfd.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/cd/ca/234778_BWQfd.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/cd/ca/234778_BWQfd.jpg"
+    },
+    "summary": "良家子女聚集的名门学校，私立百花王学园。君临这所被赌博所支配的学园顶点的是，支配弱者的人生、甚至对政界财界都拥有影响力的绝对支配者，学生会。然而，学生会长桃喰绮罗莉，突然宣言了学生会的解散及总选举。\r\n选举的规则是一人一票。全体学生都被给予了登上学园顶点的机会。这是追求混沌与愉悦的绮罗莉一念之下带来的选举战。不止如此，与此同时新的威胁也随之而来。那就是，百喰一族——绮罗莉与梦子也位列其中的人们。蛇喰梦子以及与她有着深厚友情的铃井凉太、早乙女芽亚里、皇伊月这4人，在这次策划的总选举中，即将展开赌上各自信念的战斗。\r\n是在弱肉强食的学园中成为“饵食”，还是吃掉其他人成为生态系的“捕食者”。千钧一发的选择会使得内心无比动摇的“究极选举死斗”就此开始！",
+    "name": "賭ケグルイ××",
+    "name_cn": "狂赌之渊××",
+    "tags": [
+        {
+            "name": "MAPPA",
+            "count": 943,
+            "total_cont": 0
+        },
+        {
+            "name": "颜艺",
+            "count": 851,
+            "total_cont": 0
+        },
+        {
+            "name": "赌博",
+            "count": 775,
+            "total_cont": 0
+        },
+        {
+            "name": "2019年1月",
+            "count": 733,
+            "total_cont": 0
+        },
+        {
+            "name": "TV",
+            "count": 570,
+            "total_cont": 0
+        },
+        {
+            "name": "校园",
+            "count": 533,
+            "total_cont": 0
+        },
+        {
+            "name": "漫画改",
+            "count": 521,
+            "total_cont": 0
+        },
+        {
+            "name": "漫改",
+            "count": 485,
+            "total_cont": 0
+        },
+        {
+            "name": "狂赌之渊",
+            "count": 391,
+            "total_cont": 0
+        },
+        {
+            "name": "2019",
+            "count": 356,
+            "total_cont": 0
+        },
+        {
+            "name": "智斗",
+            "count": 349,
+            "total_cont": 0
+        },
+        {
+            "name": "百合",
+            "count": 314,
+            "total_cont": 0
+        },
+        {
+            "name": "早见沙织",
+            "count": 264,
+            "total_cont": 0
+        },
+        {
+            "name": "泽城美雪",
+            "count": 80,
+            "total_cont": 0
+        },
+        {
+            "name": "林祐一郎",
+            "count": 66,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 49,
+            "total_cont": 0
+        },
+        {
+            "name": "松田清",
+            "count": 39,
+            "total_cont": 0
+        },
+        {
+            "name": "续作",
+            "count": 38,
+            "total_cont": 0
+        },
+        {
+            "name": "小林靖子",
+            "count": 15,
+            "total_cont": 0
+        },
+        {
+            "name": "热血",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "日本动画",
+            "count": 12,
+            "total_cont": 0
+        },
+        {
+            "name": "2019年",
+            "count": 12,
+            "total_cont": 0
+        },
+        {
+            "name": "猎奇",
+            "count": 10,
+            "total_cont": 0
+        },
+        {
+            "name": "早見沙織",
+            "count": 8,
+            "total_cont": 0
+        },
+        {
+            "name": "竞技",
+            "count": 8,
+            "total_cont": 0
+        },
+        {
+            "name": "悬疑",
+            "count": 8,
+            "total_cont": 0
+        },
+        {
+            "name": "田中美海",
+            "count": 7,
+            "total_cont": 0
+        },
+        {
+            "name": "剧情",
+            "count": 7,
+            "total_cont": 0
+        },
+        {
+            "name": "季番",
+            "count": 7,
+            "total_cont": 0
+        },
+        {
+            "name": "推理",
+            "count": 6,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "狂赌之渊××"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "狂赌之渊 第二季"
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2019年1月8日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期二"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://kakegurui-anime.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "MBS"
+        },
+        {
+            "key": "其他电视台",
+            "value": "TOKYO MX / テレビ愛知 / RKB毎日放送 / BS日テレ"
+        },
+        {
+            "key": "播放结束",
+            "value": "2019年3月26日"
+        },
+        {
+            "key": "导演",
+            "value": "林祐一郎、松田清"
+        },
+        {
+            "key": "Copyright",
+            "value": "©河本ほむら・尚村透／SQUARE ENIX・「賭ケグルイ××」製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "河本ほむら・尚村透（掲載 月刊「ガンガンJOKER」スクウェア・エニックス刊）"
+        },
+        {
+            "key": "人物设定",
+            "value": "秋田学"
+        },
+        {
+            "key": "CG 导演",
+            "value": "奥納基"
+        },
+        {
+            "key": "製作",
+            "value": "｢賭ケグルイ××｣製作委員会（avex pictures、スクウェア・エニックス、MAPPA、クロックワークス、81プロデュース、電通、ムービック、フライングドッグ）"
+        },
+        {
+            "key": "企画",
+            "value": "勝股英夫、松浦克義、大塚学、武智恒雄、南沢道義、今井陽介、國枝信吾、佐々木史朗"
+        },
+        {
+            "key": "总制片人",
+            "value": "大胡寛二、丸山博雄、阿部隆二、遠藤哲哉、金庭こず恵、伊藤将生"
+        },
+        {
+            "key": "制片人",
+            "value": "今福太郎、尹楊会、小松翔太、宮城惣次、百田英生、鍋岩晶子、長谷川嘉範、福田正夫"
+        },
+        {
+            "key": "动画制片人",
+            "value": "小川崇博"
+        },
+        {
+            "key": "副制片人",
+            "value": "村上貴志、青井宏之"
+        },
+        {
+            "key": "标题设计",
+            "value": "川谷康久"
+        },
+        {
+            "key": "宣传",
+            "value": "小熊隆弘、鈴木健太、益子恵"
+        },
+        {
+            "key": "音响",
+            "value": "HALF H・P STUDIO；音响制作担当：渡辺悠介"
+        },
+        {
+            "key": "录音",
+            "value": "星野賢爾；录音工作室：スリーエススタジオ"
+        },
+        {
+            "key": "录音助理",
+            "value": "光山利央"
+        },
+        {
+            "key": "2D 设计",
+            "value": "阿部健太、大西慈、河本有沙、sankaku △"
+        },
+        {
+            "key": "设定协力",
+            "value": "加藤宏明"
+        },
+        {
+            "key": "道具设计",
+            "value": "青木里枝、安食圭、大津直、タカナシテツロウ"
+        },
+        {
+            "key": "副人物设定",
+            "value": "伊藤憲子"
+        }
+    ],
+    "rating": {
+        "rank": 3117,
+        "total": 4997,
+        "count": {
+            "1": 6,
+            "2": 6,
+            "3": 16,
+            "4": 45,
+            "5": 278,
+            "6": 1146,
+            "7": 2429,
+            "8": 865,
+            "9": 125,
+            "10": 81
+        },
+        "score": 6.9
+    },
+    "total_episodes": 12,
+    "collection": {
+        "on_hold": 353,
+        "dropped": 136,
+        "wish": 1458,
+        "collect": 8734,
+        "doing": 477
+    },
+    "id": 234778,
+    "eps": 12,
+    "meta_tags": [
+        "百合",
+        "校园",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        27643,
+        27645
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/bb/27643_crt_QqD6a.jpg?r=1555673001",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c8/bb/27643_crt_QqD6a.jpg?r=1555673001",
+                "large": "https://lain.bgm.tv/pic/crt/l/c8/bb/27643_crt_QqD6a.jpg?r=1555673001",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/bb/27643_crt_QqD6a.jpg?r=1555673001"
+            },
+            "name": "蛇喰夢子",
+            "summary": "转校生。一眼看上去只是个容姿秀丽的美少女，但内在是一位享受于背负风险的“赌徒”。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/95/4895_prsn_M2Nm0.jpg?r=1675243522"
+                    },
+                    "name": "早見沙織",
+                    "short_summary": "幼儿园、小学、初中、高中就读于白百合学园，高中时转入都内高中就读。早稻田大学毕业。\r\n在小学4年级的时候知道了“声优”这职业，决心成为声优。\r\n2004年4月，中学1年级时进入日本播音演技研究所少年声优班学习。\r\n在少年声优班第二年的2006年3月，通过I'm Enterprise的选拔考试。第一次工作是《机械女仆》的Drama CD。之后在2007年透过《桃华月惮》动画出道。\r\n清脆的声音是其特征。演技幅度很广的实力派，从幼女到花样年华的少女、文静的角色到活泼的角色、而且还能演出少年角色动物角色。演出的不同角色之间的差别很大。此外歌唱力也有公认的评价。\r\n2008年4月起，因学业缘故，每周只到日本播音演技研究所上一次课。2008年10月3日，首次主持广播节目《ラジオどっとあい 早见沙织のぽじてぃ部〜Sweetsな放课後》。\r\n2015年4月21日，以TV动画《赤发白雪姬》的片头主题歌《やさしい希望》歌手出道。\r\n2016年，在第10回声优奖中获得助演女优奖。\r\n\r\n家庭构成是父亲、母亲。还饲养着兔子。喜欢看警察题材的电视剧，在广播中透露出是电视剧《相棒》系列的FANS。\r\n从4岁开始学弹钢琴，此外还学过绘画、游泳、网球等众多东西，不过唯一持续下来的是弹钢琴，体育类的基本都持续不久。在绘画方面，据说曾在小学生时参加亚洲大赛并获得金奖。\r\n小时候开始就很喜欢唱歌，据说和母亲一起坐车的时候总是跟着车上的播放机大声地唱歌，然后母亲经常会指导她说“刚才走调了”之类的。在爵士乐歌手的母亲的推荐下在中学时就开始学习唱爵士乐。\r\n性格非常稳健，待人很有礼貌。而且在演技上具有很高的意识和才能，在声优前辈和动画制作人员中也有很高的评价。据说同事务所的间岛淳司在收录现场看到刚出道没多久时候的早见时说“看来我们事务所将来也很安泰啊”。\r\n也有天然的一面，曾把洗面奶错当牙膏拿来刷牙，还曾在收录时背后的拉链没拉上就来到录音棚。\r\n与同事务所的山本麻里安一样，因为就读的学校禁止艺术类活动而转校，在声优与学业两付重担艰难前行。\r\n与悠木碧和东山奈央公私关系良好，交往密切。日高里菜曾表示过“超喜欢早见沙织”，两人私交甚密。\r\n在广播节目中有时会模仿黑柳彻子、安东尼奥·猪木、儿玉清等。在《鹡鸰女神》的广播节目《セキレイらじお》中模仿黑柳彻子的段子，并在《鹡鸰女神》DVD第6卷的OVA里被用来作恶搞。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4895,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 27643
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/e8/27645_crt_A4i5I.jpg?r=1555673020",
+                "grid": "https://lain.bgm.tv/pic/crt/g/86/e8/27645_crt_A4i5I.jpg?r=1555673020",
+                "large": "https://lain.bgm.tv/pic/crt/l/86/e8/27645_crt_A4i5I.jpg?r=1555673020",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/e8/27645_crt_A4i5I.jpg?r=1555673020"
+            },
+            "name": "鈴井涼太",
+            "summary": "性格胆小而且还没什么钱，所以掉到了家畜等级的梦子的同班同学。\r\n带着新生梦子介绍学校的此处彼处的同时，就这样见证了一个个赌局…。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/96/24753_prsn_UuMVU.jpg?r=1470494140",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/28/96/24753_prsn_UuMVU.jpg?r=1470494140",
+                        "large": "https://lain.bgm.tv/pic/crt/l/28/96/24753_prsn_UuMVU.jpg?r=1470494140",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/96/24753_prsn_UuMVU.jpg?r=1470494140"
+                    },
+                    "name": "徳武竜也",
+                    "short_summary": "WITH LINE所属，长野县出身。\r\n趣味：散步、料理",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 24753,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 27645
+        }
+    ]
+}

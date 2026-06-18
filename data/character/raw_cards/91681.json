@@ -1,0 +1,57 @@
+{
+    "birth_mon": 5,
+    "gender": "male",
+    "birth_day": 25,
+    "birth_year": 1987,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/ec/91681_crt_3zZN5.jpg?r=1614343049",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b1/ec/91681_crt_3zZN5.jpg?r=1614343049",
+        "large": "https://lain.bgm.tv/pic/crt/l/b1/ec/91681_crt_3zZN5.jpg?r=1614343049",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/ec/91681_crt_3zZN5.jpg?r=1614343049"
+    },
+    "summary": "ゲームメーカーに勤務していた28歳。\r\n突然、10年前に時間が戻り、芸大の映像学科に進学することに。\r\nシェアハウスきたやまに下宿。\r\n抜きん出た才能はないが、今までの経験と人柄を活かし、調整役を担うことが多い。",
+    "name": "橋場恭也",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "桥场恭也"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "はしば きょうや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "KYOYA HASHIBA"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1987年5月25日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://bokurema.com/character/"
+        }
+    ],
+    "stat": {
+        "comments": 20,
+        "collects": 9
+    },
+    "id": 91681,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        296870
+    ]
+}

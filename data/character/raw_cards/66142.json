@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/77/66142_crt_e881t.jpg?r=1537243424",
+        "grid": "https://lain.bgm.tv/pic/crt/g/87/77/66142_crt_e881t.jpg?r=1537243424",
+        "large": "https://lain.bgm.tv/pic/crt/l/87/77/66142_crt_e881t.jpg?r=1537243424",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/77/66142_crt_e881t.jpg?r=1537243424"
+    },
+    "summary": "生まれる際に12体の鬼神に奪われた身体を取り戻すために旅をしている。\r\n目が見えない代わりに他者の存在を炎のような光として認識し、\r\n義手に仕込んだ刀を振るって闘う。",
+    "name": "百鬼丸",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "百鬼丸"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ひゃっきまる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hyakkimaru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 38
+    },
+    "id": 66142,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        240838
+    ]
+}

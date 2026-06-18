@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/de/28063_crt_C7PC6.jpg?r=1416309378",
+        "grid": "https://lain.bgm.tv/pic/crt/g/db/de/28063_crt_C7PC6.jpg?r=1416309378",
+        "large": "https://lain.bgm.tv/pic/crt/l/db/de/28063_crt_C7PC6.jpg?r=1416309378",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/de/28063_crt_C7PC6.jpg?r=1416309378"
+    },
+    "summary": "地上からディーヴァにハッキングをしかけているクラッカー。外宇宙探索の同志を探しているという内容のメッセージを送り続けている。\r\nジェネシスアーク号建設進行管理アプリケーションに付随する自立最適化プログラムが前身となり、アップデートの末に自我を持った人工知能。無人の探査船を出航させても存在意義を達成できないことから、メモリーでの積載が可能な人類「電脳パーソナリティ」を積むためにメッセージを送り続けていた。",
+    "name": "フロンティアセッター",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "弗隆提亚·赛格"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Frontier Setter"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "？？"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://ja.wikipedia.org/wiki/楽園追放_-Expelled_from_Paradise-"
+        }
+    ],
+    "stat": {
+        "comments": 22,
+        "collects": 38
+    },
+    "id": 28063,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        37395
+    ]
+}

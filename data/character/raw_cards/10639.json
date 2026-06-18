@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/74/10639_crt_Z9nNn.jpg?r=1537365678",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0e/74/10639_crt_Z9nNn.jpg?r=1537365678",
+        "large": "https://lain.bgm.tv/pic/crt/l/0e/74/10639_crt_Z9nNn.jpg?r=1537365678",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/74/10639_crt_Z9nNn.jpg?r=1537365678"
+    },
+    "summary": "本名不明。身高168cm。学园都市仅仅七人的等级五第一位，意即学园都市最强的超能力者。能力名“一方通行（Accelerator）”（同时也是他的代号），能力为矢量控制，只要接触到皮肤，能够自由操纵一切形式矢量（vector）的方向（平常使用反射），同时头脑也具有相当高的演算能力，其能力也依靠着演算能力而运作。但其实本质不明，还有未被发觉的秘密。因为连直射日光里的紫外线都反射，导致缺乏外部刺激使激素分泌异常。不但原本要变黑的头发和皮肤都呈现白色，瞳孔颜色也接近红色，就连体型无法分辨是男是女。与上条当麻为正反对照，在本作里是Dark Hero般的存在。\r\n\r\n“这本轻小说真厉害！2011年”人气男性角色排名第二位。",
+    "name": "一方通行",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "一方通行"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Accelerator"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "アクセラレータ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Accelerator"
+                },
+                {
+                    "k": "别称",
+                    "v": "铃科百合子"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "不明"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://zh.wikipedia.org"
+        }
+    ],
+    "stat": {
+        "comments": 88,
+        "collects": 433
+    },
+    "id": 10639,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        262939
+    ]
+}

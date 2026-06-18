@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/cd/13176_crt_P90Zr.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4f/cd/13176_crt_P90Zr.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/4f/cd/13176_crt_P90Zr.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/cd/13176_crt_P90Zr.jpg"
+    },
+    "summary": "故事的主角。就读天王洲第一高校，17岁。\r\n    对每个人都显得很冷淡，而且对同学也显得沉默拘礼，不过对他人的察言观色却很擅长。\r\n    小时候与涯相识，当时集果断、勇敢、强大，是涯憧憬的对象，两人皆心爱着真名，集在目睹真名暴走后便自我封印与她相关的记忆。\r\n    第一话与涯和祈相遇后，右腕在意外中获得了真正虚空基因组“王之能力”，其纹章与次级品有所分别。\r\n    对祈有朋友以上的好感。\r\n    比较懦弱，后加入葬仪社，但是因为使用谷寻的虚空而杀死谷寻的弟弟而拒绝使用王的能力。\r\n    后来经过鸫的原因，重新振作，召集了魂馆飒太、寒川谷寻、校条祭、草间花音、供奉院亚里沙到达羽田，之后祈被神秘少年劫走，目睹涯在自己面前被砍。\r\n    在涯的帮助下恢复封闭了关于真言的记忆，同时王的力量随记忆的恢复而升级，能在抽出虚空时让被抽取者保持清醒并能使用自身的虚空。并在涯的帮助下救出了祈。\r\n    在第十四话中成为了天王州的学生会会长。",
+    "name": "桜満集",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "樱满集"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "おうま しゅう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ouma Shu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "年龄",
+            "value": "17"
+        }
+    ],
+    "stat": {
+        "comments": 40,
+        "collects": 113
+    },
+    "id": 13176,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        18635
+    ]
+}

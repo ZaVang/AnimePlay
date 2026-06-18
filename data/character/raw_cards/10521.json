@@ -1,0 +1,68 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 24,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c6/c1/10521_crt_0KHhz.jpg?r=1728974661",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c6/c1/10521_crt_0KHhz.jpg?r=1728974661",
+        "large": "https://lain.bgm.tv/pic/crt/l/c6/c1/10521_crt_0KHhz.jpg?r=1728974661",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c6/c1/10521_crt_0KHhz.jpg?r=1728974661"
+    },
+    "summary": "英国的代表候补生。\r\n名门出生大小姐，个性非常骄傲。\r\n专用的IS：Blue Tears",
+    "name": "セシリア・オルコット",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "塞西莉娅·奥尔科特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "塞西莉亚·奥卢卡多"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "赛西莉亚"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Cecilia Alcott"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "セシリア オルコット"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Seshiria Orukotto"
+                },
+                {
+                    "k": "台湾尖端出版繁体中文翻译",
+                    "v": "西西莉亚"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月24日"
+        }
+    ],
+    "stat": {
+        "comments": 20,
+        "collects": 125
+    },
+    "id": 10521,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        9800
+    ]
+}

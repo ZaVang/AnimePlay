@@ -1,0 +1,70 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/59/8258_crt_4N4V0.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/71/59/8258_crt_4N4V0.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/71/59/8258_crt_4N4V0.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/59/8258_crt_4N4V0.jpg"
+    },
+    "summary": "本身原形为龙并可变化外表成十二岁左右的少年，因所掌管的河流在人类兴建大楼时遭填平，在无所归处情况下来到油屋成为汤婆婆的弟子，并改名为“白”，担任油屋的管理人员。\r\n曾与年幼的千寻接触过，因此在遇到误闯神灵世界的千寻便立刻知道是对方。千寻待在油屋过程中私下给予很多帮助。最终在千寻的提醒下回想起自己本名，并在千寻从油屋获得自由后，决定与汤婆婆商量不再做她的弟子。",
+    "name": "ハク",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "白"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Haku"
+                },
+                {
+                    "v": "コハク川"
+                },
+                {
+                    "v": "Spirit of the Kohaku River"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "赈早见琥珀主"
+                },
+                {
+                    "k": "日文名",
+                    "v": "饒速水小白主"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ニギハヤミコハクヌシ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nigihayami Kohakunushi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "白先生、白龙"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 20,
+        "collects": 81
+    },
+    "id": 8258,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        311
+    ]
+}

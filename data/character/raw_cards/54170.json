@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/54/64/54170_crt_67u3r.jpg?r=1500390265",
+        "grid": "https://lain.bgm.tv/pic/crt/g/54/64/54170_crt_67u3r.jpg?r=1500390265",
+        "large": "https://lain.bgm.tv/pic/crt/l/54/64/54170_crt_67u3r.jpg?r=1500390265",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/54/64/54170_crt_67u3r.jpg?r=1500390265"
+    },
+    "summary": "2年4組\r\nサッカー部\r\n想いを寄せる高野さんに勇気を出してアプローチもするが、肝心なところで引いてしまい想いは伝わらず…いい人どまりのもどかしい日々を送っている。\r\n登場作品：「雨」「君は輝いている」「全部熱のせい」「視線」「夏が始まる」",
+    "name": "菅原卓郎",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "菅原卓郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "菅原 卓郎"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "すがわら たくろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sugawara Takurou"
+                },
+                {
+                    "k": "昵称",
+                    "v": "すがやん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 4
+    },
+    "id": 54170,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        208754
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/26/3d/14760_crt_0OrHt.jpg?r=1461148528",
+        "grid": "https://lain.bgm.tv/pic/crt/g/26/3d/14760_crt_0OrHt.jpg?r=1461148528",
+        "large": "https://lain.bgm.tv/pic/crt/l/26/3d/14760_crt_0OrHt.jpg?r=1461148528",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/26/3d/14760_crt_0OrHt.jpg?r=1461148528"
+    },
+    "summary": "　　桐敷家的独生女，不能在太阳底下行走。\r\n　　是静信的小说的大粉丝，就是因为他的小说而搬来外场村。\r\n　　紫色长发，空洞的眼睛，典型的哥特系萝莉。\r\n　　自称患有SLE。经常在暗夜里穿着繁复华丽的蕾丝裙装独自活动或来找静信。通过阅读静信的小说，发现尸鬼跟自己很相像，于是喜欢称自己这种生物为\"尸鬼”。　\r\n　　小说中所有尸鬼的领袖，在很久以前被吸血鬼杀死而变成了尸鬼，多年来独自行动，通晓生存的本领。阅读静信的散文而发现了外场村，外场村一直对逝去的村民土葬，适合尸鬼的生存环境，希望以此为基地建立尸鬼的社会。",
+    "name": "桐敷沙子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "桐敷沙子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "桐敷 沙子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きりしき すなこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kirishiki Sunako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 24,
+        "collects": 44
+    },
+    "id": 14760,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        5653
+    ]
+}

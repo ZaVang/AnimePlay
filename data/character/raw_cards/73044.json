@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/87/73044_crt_hSa5p.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ee/87/73044_crt_hSa5p.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ee/87/73044_crt_hSa5p.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/87/73044_crt_hSa5p.jpg"
+    },
+    "summary": "田舎町の高校二年生。父親と二人暮らし。幼少期のある出来事がきっかけで心に葛藤を抱えている。ひょんなことから願いを叶えるというウラシマトンネルの存在を知る。",
+    "name": "塔野カオル",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "塔野薰"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "塔野 カオル"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "とうの かおる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tōno Kaoru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 21
+    },
+    "id": 73044,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        362575
+    ]
+}

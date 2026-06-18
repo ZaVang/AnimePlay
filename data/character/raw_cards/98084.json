@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ec/ab/98084_crt_NpM2c.jpg?r=1628725763",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ec/ab/98084_crt_NpM2c.jpg?r=1628725763",
+        "large": "https://lain.bgm.tv/pic/crt/l/ec/ab/98084_crt_NpM2c.jpg?r=1628725763",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ec/ab/98084_crt_NpM2c.jpg?r=1628725763"
+    },
+    "summary": "元世界最高の暗殺者。組織の裏切りで自らが暗殺された後、暗殺貴族の長男として異世界に転生する。\r\n転生の条件として女神より「勇者暗殺」の任務を与えられる。",
+    "name": "ルーグ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "卢各"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "全名",
+                    "v": "ルーグ・トウアハーデ"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Lugh"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Lugh Tuatha De"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 11,
+        "collects": 35
+    },
+    "id": 98084,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        328313
+    ]
+}

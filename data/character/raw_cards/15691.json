@@ -1,0 +1,81 @@
+{
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 6,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/57/15691_crt_79XPx.jpg?r=1498932582",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7a/57/15691_crt_79XPx.jpg?r=1498932582",
+        "large": "https://lain.bgm.tv/pic/crt/l/7a/57/15691_crt_79XPx.jpg?r=1498932582",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/57/15691_crt_79XPx.jpg?r=1498932582"
+    },
+    "summary": "筋力B 耐久B 敏捷A 魔力A 幸运C 宝具A++ \r\n对魔力：EX 启示：A 领导力：C 圣人：B \r\n宝具： \r\n主与我同在（Luminosite Eternelle）A \r\n红莲之圣女（La Pucelle）EX \r\n                                        \r\n原型为法国军事家、天主教圣人、领导法兰西逆转百年战争局势的少女英雄。作为被圣杯战争本身所召唤的英灵，有着管理圣杯战争的职责。因此，她和其他Servant不同，会继承不断重覆的圣杯战争中的记忆。 \r\n以调整者身份登场时，沉默寡言而冷静。另一方面，本性是个素朴又温顺的16岁女子。虽然将规则放在第一位，为了守护秩序而挥剑，但基本上，她重视全部参与圣杯战争的人类和英灵。 \r\n虽然担当Ruler的职介，但本身是作为潜在的Saber而存在，因此兼具两种职介的特长。一方面能够随时探知附近全部英灵的真名、存在与现况，另一方面，具有高超的对魔力。不过因为是教会的圣人，因此对魔力对于基督教神术无效。",
+    "name": "ジャンヌ・ダルク",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "贞德"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "圣女贞德"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Joan of Arc"
+                },
+                {
+                    "k": "昵称",
+                    "v": "圣女、圣处女、奥尔良少女、村姑"
+                },
+                {
+                    "k": "法语名",
+                    "v": "Jeanne d'Arc"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "儒略历1412年1月6日（现实原型生日）"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "体重",
+            "value": "44kg"
+        },
+        {
+            "key": "BWH",
+            "value": "85/59/86"
+        },
+        {
+            "key": "阵营",
+            "value": "秩序·善"
+        },
+        {
+            "key": "职阶",
+            "value": "Ruler ルーラー"
+        }
+    ],
+    "stat": {
+        "comments": 52,
+        "collects": 251
+    },
+    "id": 15691,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        204855
+    ]
+}

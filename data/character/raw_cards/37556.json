@@ -1,0 +1,61 @@
+{
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 5,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/5c/37556_crt_pRna0.jpg?r=1460008965",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cd/5c/37556_crt_pRna0.jpg?r=1460008965",
+        "large": "https://lain.bgm.tv/pic/crt/l/cd/5c/37556_crt_pRna0.jpg?r=1460008965",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/5c/37556_crt_pRna0.jpg?r=1460008965"
+    },
+    "summary": "本作のヒロイン。前ヶ崎高校1年生。LAでのキャラクター名は本名と同じ「アコ」。職業はクレリックで、ギルド「アレイキャッツ」のメンバー。仲間のルシアンに告白して夫婦となる。現実ではぼっちで学校も休みがちであり、スタイルこそ良いものの、ルシアンだと知った英騎をリアルでも「ルシアン」と呼んで夫婦でいようとするなど、ネットと現実の区別が付かない残念な美少女。家族とネトゲ部のメンバー相手には普通に話せるが、基本的にコミュ障のため、他人を避ける傾向が強い。",
+    "name": "玉置亜子／アコ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "玉置亚子／亚子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "玉置 亜子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たまき あこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tamaki Ako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月5日"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 32,
+        "collects": 144
+    },
+    "id": 37556,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        142758
+    ]
+}

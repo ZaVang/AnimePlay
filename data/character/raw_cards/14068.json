@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/fe/14068_crt_D0fF0.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3e/fe/14068_crt_D0fF0.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/3e/fe/14068_crt_D0fF0.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/fe/14068_crt_D0fF0.jpg"
+    },
+    "summary": "榊原家的独生子。15岁。中学时期的3年5月转入了夜见山北中学的3年3班。\r\n有自发性气胸的疾病。在住院期间认识了水野小姐。因为事先不瞭解班级内部状况而打破了班级要将见崎当作\"不存在\"的约定，后来也被纳入“不存在”的人之一。",
+    "name": "榊原恒一",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "榊原恒一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "さかきばら こういち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakakibara Koichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 18,
+        "collects": 42
+    },
+    "id": 14068,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        20851
+    ]
+}

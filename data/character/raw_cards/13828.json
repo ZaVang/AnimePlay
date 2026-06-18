@@ -1,0 +1,100 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/5c/13828_crt_22Ioo.jpg?r=1380386299",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a5/5c/13828_crt_22Ioo.jpg?r=1380386299",
+        "large": "https://lain.bgm.tv/pic/crt/l/a5/5c/13828_crt_22Ioo.jpg?r=1380386299",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/5c/13828_crt_22Ioo.jpg?r=1380386299"
+    },
+    "summary": "「男殺しの天然女王」\r\n\r\n有着魅惑的笑脸和完美的身材，1/4英国血统的混血儿，是位在学校被全部男孩子看上的三年级生。连续两年赢得创设祭圣诞小姐比赛，不过本人并没有注意到自己的美貌，因为以很喜欢动物以及和年纪有段差距的弟弟玩耍的感觉与男孩子接触，据说因此不断地让男孩子都神魂颠倒。\r\n本人是个好人，不过天然呆的地方也相当多。但却变成她的魅力之一。似乎不擅于煮菜的样子。",
+    "name": "森島はるか",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "森岛遥"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "森島・ラブリー・はるか"
+                },
+                {
+                    "k": "动画第一季第四集",
+                    "v": "森島・L・はるか"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "森岛·L·遥"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Haruka Lovely Morishima"
+                },
+                {
+                    "k": "日文名",
+                    "v": "森島 はるか"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "もりしま はるか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Morishima Haruka"
+                },
+                {
+                    "k": "昵称",
+                    "v": "学姐"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月22日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        },
+        {
+            "key": "喜欢",
+            "value": "动植物，可爱的人，照顾人的事情"
+        },
+        {
+            "key": "讨厌",
+            "value": "黑暗的地方（骗人），打雷，机械制品，香草味很强的东西，恐怖和血腥"
+        },
+        {
+            "key": "班级",
+            "value": "3年A组"
+        },
+        {
+            "key": "年龄",
+            "value": "18岁"
+        }
+    ],
+    "stat": {
+        "comments": 48,
+        "collects": 239
+    },
+    "id": 13828,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        5656
+    ]
+}

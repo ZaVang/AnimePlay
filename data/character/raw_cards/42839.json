@@ -1,0 +1,61 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 24,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/4d/42839_crt_1tlWh.jpg?r=1687148443",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0d/4d/42839_crt_1tlWh.jpg?r=1687148443",
+        "large": "https://lain.bgm.tv/pic/crt/l/0d/4d/42839_crt_1tlWh.jpg?r=1687148443",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/4d/42839_crt_1tlWh.jpg?r=1687148443"
+    },
+    "summary": "8年前、政宗を「豚足」呼ばわりした張本人。家は裕福で成績トップのお嬢様。男子生徒から多数の告白を受けるが、大の男嫌いで告白してくる男に酷いあだ名をつけて振るため学園内では「残虐姫」と呼ばれている。世間知らずな部分もあり世話役の吉乃に相談する事もある。",
+    "name": "安達垣愛姫",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "安达垣爱姬"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "安達垣 愛姫"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あだがき あき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Adagaki Aki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月24日"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://masamune-tv.com/character/2/"
+        }
+    ],
+    "stat": {
+        "comments": 74,
+        "collects": 209
+    },
+    "id": 42839,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        185762
+    ]
+}

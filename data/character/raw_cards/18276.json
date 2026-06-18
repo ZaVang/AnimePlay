@@ -1,0 +1,61 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/ed/18276_crt_1175Q.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/92/ed/18276_crt_1175Q.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/92/ed/18276_crt_1175Q.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/ed/18276_crt_1175Q.jpg"
+    },
+    "summary": "锐太的同学，15岁，就读羽根山高中1年级1班。在国外住9年后回到日本，银色的长发相当显眼。 被评为校内第一美女，入学后不断的被男同学告白，拒绝久了之后觉得很烦，于是找同样对谈恋爱没兴趣的锐太伪装成情侣。千和因为两人交往而敌视真凉，两人经常吵架，后来真凉为了帮千和找男朋友，找教古文的教师系谷担任顾问，成立“自我演出的乙女之会”（简称自演乙之会），担任部长一职。 老家在瑞典，家里很有钱，但真凉能自由使用的钱很少。 回日本是因为要等她的母亲。 料理技术和千和不相上下。非常喜欢《JoJo的奇妙冒险》。 讲话毒舌，尤其看到锐太和其他女生友好时会加倍毒舌。",
+    "name": "夏川真涼",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "夏川真凉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "夏川 真涼"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なつかわ ますず"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Natsukawa Masuzu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "52kg"
+        }
+    ],
+    "stat": {
+        "comments": 35,
+        "collects": 227
+    },
+    "id": 18276,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        43557
+    ]
+}

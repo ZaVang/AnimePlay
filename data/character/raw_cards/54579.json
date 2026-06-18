@@ -1,0 +1,44 @@
+{
+    "id": 54579,
+    "name": "小須田崇",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/5a/bd/54579_crt_J4t6E.jpg?r=1496284084",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5a/bd/54579_crt_J4t6E.jpg?r=1496284084",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5a/bd/54579_crt_J4t6E.jpg?r=1496284084",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5a/bd/54579_crt_J4t6E.jpg?r=1496284084"
+    },
+    "summary": "本作男主人公，长相平平，在学校并不突出。在书店与山田邂逅，却被山田认为是完美的初体验对象（在山田眼中一点个性、男人味都没有）。至今是处男，并对恋爱之类的事情很迟钝。在学校属于摄影部，在自己的房间挂有自己拍摄的岐阜城的照片。\r\n虽然是山田的初吻对象，却和山田一直没有什么太大的进展，但他似乎在慢慢成长为一个真正的男人。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小须田崇"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "こすだ たかし"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 2,
+        "collects": 1
+    },
+    "anime_ids": [
+        4290
+    ]
+}

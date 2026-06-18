@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/06/72392_crt_2OYk6.jpg?r=1571534437",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fa/06/72392_crt_2OYk6.jpg?r=1571534437",
+        "large": "https://lain.bgm.tv/pic/crt/l/fa/06/72392_crt_2OYk6.jpg?r=1571534437",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/06/72392_crt_2OYk6.jpg?r=1571534437"
+    },
+    "summary": "红龙女孩。在亚梓莎居住的南堤尔州被称为最强的魔物，但她在和亚梓莎的比试中败北。转变为少女的姿态，强行拜她为师。个性十分认真。\r\n\r\nレッドドラゴンの娘。アズサの住むナンテール州で最強のモンスターと呼ばれていたが、アズサに勝負を挑み敗北。少女の姿となって押し掛け弟子入りした。真面目で頑張り屋。",
+    "name": "ライカ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莱卡"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Raika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 10,
+        "collects": 70
+    },
+    "id": 72392,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        292969
+    ]
+}

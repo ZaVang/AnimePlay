@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/16/67106_crt_C1uU1.jpg?r=1541510463",
+        "grid": "https://lain.bgm.tv/pic/crt/g/53/16/67106_crt_C1uU1.jpg?r=1541510463",
+        "large": "https://lain.bgm.tv/pic/crt/l/53/16/67106_crt_C1uU1.jpg?r=1541510463",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/16/67106_crt_C1uU1.jpg?r=1541510463"
+    },
+    "summary": "フィロリアルと呼ばれる鳥形の魔物。高度な変身能力を持つフィロリアル・クイーンであり、背中に羽根を生やした少女の姿に変身できる。得意魔法は風。明るく元気で大飯食らい。",
+    "name": "フィーロ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "菲洛"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 26,
+        "collects": 135
+    },
+    "id": 67106,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        217660
+    ]
+}

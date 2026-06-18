@@ -1,0 +1,64 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/56/223_crt_uG2V4.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/be/56/223_crt_uG2V4.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/be/56/223_crt_uG2V4.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/56/223_crt_uG2V4.jpg"
+    },
+    "summary": "故事的女主角。有着夹杂金色的粉红长发、茶褐色的眼瞳。在特雷丝特因东北拥有领土的名门拉.瓦里艾尔公爵家的三女儿、特雷丝特因魔法学院的二年级学生。因为魔法糟糕而总是被同学取笑。她的每次施法都以失败告终，因为零成功率和零属性，她被戏称为“零之露易兹”。实际上是少见的“虚无”。",
+    "name": "ルイズ・フランソワーズ・ル・ブラン・ド・ラ・ヴァリエール",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "露易丝·法兰西斯·露·布朗·杜·拉·瓦利埃尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Louise Françoise Le Blanc de La Vallière"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ruizu Fransowāzu ru Buran do ra Variēru"
+                },
+                {
+                    "k": "昵称",
+                    "v": "钉宫四萌"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "153cm(5')"
+        },
+        {
+            "key": "BWH",
+            "value": "76/53/75"
+        }
+    ],
+    "stat": {
+        "comments": 42,
+        "collects": 417
+    },
+    "id": 223,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1880,
+        1103,
+        25823,
+        763
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/59/54172_crt_QWt7t.jpg?r=1500390301",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2c/59/54172_crt_QWt7t.jpg?r=1500390301",
+        "large": "https://lain.bgm.tv/pic/crt/l/2c/59/54172_crt_QWt7t.jpg?r=1500390301",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/59/54172_crt_QWt7t.jpg?r=1500390301"
+    },
+    "summary": "3年8組\r\n生徒会　生徒会長\r\nクールでポーカーフェイスな生徒会長。不良の梶さんに好意をもってズケズケとアプローチし、普段は見せないドSな一面で彼女をドキドキさせる。\r\n\r\n登場作品：「生徒会長の悩み」「独裁」「どうにも止まらない」「ウソ」",
+    "name": "赤木正文",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "赤木正文"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "赤木 正文"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あかぎ まさふみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Akagi Masafumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 4,
+        "collects": 8
+    },
+    "id": 54172,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        208754
+    ]
+}

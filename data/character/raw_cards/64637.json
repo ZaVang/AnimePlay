@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/a1/64637_crt_6jGT6.jpg?r=1545312253",
+        "grid": "https://lain.bgm.tv/pic/crt/g/47/a1/64637_crt_6jGT6.jpg?r=1545312253",
+        "large": "https://lain.bgm.tv/pic/crt/l/47/a1/64637_crt_6jGT6.jpg?r=1545312253",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/a1/64637_crt_6jGT6.jpg?r=1545312253"
+    },
+    "summary": "高机动救命消防队“烈焰救火队(Burning Rescue)”的新人队员，比队中的谁都要主张强烈。\r\n行事横冲直撞的肌肉笨蛋，胸中怀着“消火魂”、带着作为灭火伙伴的“缠”前往着火灾现场。",
+    "name": "ガロ・ティモス",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "加洛·提莫斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Galo Thymos"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 18,
+        "collects": 34
+    },
+    "id": 64637,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        218713
+    ]
+}

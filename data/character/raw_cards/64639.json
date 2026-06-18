@@ -1,0 +1,66 @@
+{
+    "birth_mon": 12,
+    "gender": "male",
+    "birth_day": 1,
+    "birth_year": 2002,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/84/64639_crt_LQ53Z.jpg?r=1539514861",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4b/84/64639_crt_LQ53Z.jpg?r=1539514861",
+        "large": "https://lain.bgm.tv/pic/crt/l/4b/84/64639_crt_LQ53Z.jpg?r=1539514861",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/84/64639_crt_LQ53Z.jpg?r=1539514861"
+    },
+    "summary": "",
+    "name": "内海将",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "内海将"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "うつみ しょう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Utsumi Sho"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2002年12月1日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "176cm"
+        },
+        {
+            "key": "体重",
+            "value": "78kg"
+        }
+    ],
+    "stat": {
+        "comments": 46,
+        "collects": 18
+    },
+    "id": 64639,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        218712,
+        362335
+    ]
+}

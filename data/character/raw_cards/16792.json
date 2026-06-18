@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/84/74/16792_crt_jRURz.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/84/74/16792_crt_jRURz.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/84/74/16792_crt_jRURz.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/84/74/16792_crt_jRURz.jpg"
+    },
+    "summary": "本作主人公。很普通的高中生，真廣的朋友。在所住的城市因為「黑鐵病」被毀之後，被捲入真廣與葉風復仇的戰爭。 \r\n平時看起來一副老好人樣，但在危急時刻、有所覺悟的時候，思考會異常的冷靜、並且做出正確的判斷。\r\n瞞著真廣與愛花交往。得知愛花的死訊那天相當錯愕。",
+    "name": "滝川吉野",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "泷川吉野"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たきがわ よしの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takigawa Yoshino"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 10,
+        "collects": 59
+    },
+    "id": 16792,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        39794
+    ]
+}

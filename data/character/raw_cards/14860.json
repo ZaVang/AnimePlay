@@ -1,0 +1,69 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 21,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/1e/14860_crt_XQVc5.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ba/1e/14860_crt_XQVc5.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ba/1e/14860_crt_XQVc5.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/1e/14860_crt_XQVc5.jpg"
+    },
+    "summary": "莉雅丝的部属之一，同样具有与莉雅丝齐名的身材与战斗力，但对一诚而言是个恐怖的存在，因为她是典型的施虐癖。\r\n人类与堕天使的混血，父亲是堕天使中的干部，雷的力量也是从父亲那遗传过来的，拥有“雷之巫女”的称号，但是讨厌自己是人类与堕天使的混血，喜欢一诚。\r\n可以同时使用堕天使的光之技能，但因为讨厌这个血统，所以一直不用。\r\n阶级为西洋棋中的皇后。",
+    "name": "姫島朱乃",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "姬岛朱乃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "姫島朱乃"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひめじま あけの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Himejima Akeno"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月21日"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        },
+        {
+            "key": "体重",
+            "value": "54kg"
+        },
+        {
+            "key": "BWH",
+            "value": "102/60/89"
+        }
+    ],
+    "stat": {
+        "comments": 23,
+        "collects": 189
+    },
+    "id": 14860,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        15910
+    ]
+}

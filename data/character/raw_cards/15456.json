@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5a/42/15456_crt_3U9wu.jpg?r=1605741585",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5a/42/15456_crt_3U9wu.jpg?r=1605741585",
+        "large": "https://lain.bgm.tv/pic/crt/l/5a/42/15456_crt_3U9wu.jpg?r=1605741585",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5a/42/15456_crt_3U9wu.jpg?r=1605741585"
+    },
+    "summary": "　　和阳人同校、同年级，就读2班。为了模仿某一位漫画人物而留着波浪形棕色长发。是名贫乳美少女。表情丰富，让人百看不腻，阳人觉得她有点像狗。交友不顺利而对别人不信任，在4月时转学到阳人就读的学校。对少女漫画的贵族生活十分憧憬，伪装成有钱人家千金，实际上为了假装有钱而偷偷打工。把表面工夫还给阳人后，因为喜欢动物而继续在动物和风吃茶店打工。\r\n\r\n　　在以前的学校，因为相当爱哭，又被周边的男生捧成花，因此被周边的女生恶作剧。\r\n\r\n　　喜欢阳人，常鼓起勇气邀请他，却总因为阳人只把她当朋友而失败。\r\n\r\n　　成绩不好，但还是略胜阳人。很了解动物与昆虫。",
+    "name": "小豆梓",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小豆梓"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小豆 梓"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あずき あずさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Azuki Azusa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 27,
+        "collects": 320
+    },
+    "id": 15456,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        45842
+    ]
+}

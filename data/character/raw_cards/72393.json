@@ -1,0 +1,52 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 17,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/51/72393_crt_6cwmo.jpg?r=1571534432",
+        "grid": "https://lain.bgm.tv/pic/crt/g/52/51/72393_crt_6cwmo.jpg?r=1571534432",
+        "large": "https://lain.bgm.tv/pic/crt/l/52/51/72393_crt_6cwmo.jpg?r=1571534432",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/51/72393_crt_6cwmo.jpg?r=1571534432"
+    },
+    "summary": "史莱姆妖精(姊姊)。由亚梓莎打倒的史莱姆灵魂集结而生的妖精。在同样实体化的妹妹夏露夏之前，先到了亚梓莎的身边，亲昵地称她为「妈妈」。性格率直开朗。\r\n\r\nスライムの精霊（姉）。アズサが倒したスライムの魂が集まって生まれた精霊。同様に実体化した双子の妹のシャルシャに先んじてアズサの元に押し掛け「ママ」と呼んで懐く。素直で朗らかな性格。",
+    "name": "ファルファ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "法露法"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ファルファ・アイザワ"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "法露法·埃札瓦"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月17日"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 49
+    },
+    "id": 72393,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        292969
+    ]
+}

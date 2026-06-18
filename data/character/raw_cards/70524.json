@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/84/e9/70524_crt_Q7rS6.jpg?r=1736735613",
+        "grid": "https://lain.bgm.tv/pic/crt/g/84/e9/70524_crt_Q7rS6.jpg?r=1736735613",
+        "large": "https://lain.bgm.tv/pic/crt/l/84/e9/70524_crt_Q7rS6.jpg?r=1736735613",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/84/e9/70524_crt_Q7rS6.jpg?r=1736735613"
+    },
+    "summary": "直実の同級生。",
+    "name": "一行瑠璃",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "一行瑠璃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いちぎょう るり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ichigyo Ruri"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 53,
+        "collects": 271
+    },
+    "id": 70524,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        269090
+    ]
+}

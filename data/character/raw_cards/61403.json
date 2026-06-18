@@ -1,0 +1,66 @@
+{
+    "birth_mon": 4,
+    "gender": "male",
+    "birth_day": 15,
+    "birth_year": 2000,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/52/61403_crt_DKAPp.jpg?r=1573898707",
+        "grid": "https://lain.bgm.tv/pic/crt/g/da/52/61403_crt_DKAPp.jpg?r=1573898707",
+        "large": "https://lain.bgm.tv/pic/crt/l/da/52/61403_crt_DKAPp.jpg?r=1573898707",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/52/61403_crt_DKAPp.jpg?r=1573898707"
+    },
+    "summary": "成績優秀。家が貧乏な高校２年生。家の借金返済のため、好条件の家庭教師アルバイトを引き受けたら、同級生の五つ子（落第寸前の超問題児）が生徒だった。五つ子たちの「卒業」を目指し奮闘中。人の目を気にせず我が道を行くタイプ。\r\n\r\n喜欢的食物是濑叶烹饪的料理，讨厌的食物是生鱼，喜欢的饮料是麦茶，喜欢的动物是大猩猩，每日的惯例为储蓄1圆硬币。喜欢的地点是桌子。喜欢阅读辞典",
+    "name": "上杉風太郎",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "上杉风太郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "上杉 風太郎"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "うえすぎ ふうたろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Uesugi Fūtarō"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2000-04-15"
+        },
+        {
+            "key": "身高",
+            "value": "178cm"
+        },
+        {
+            "key": "体重",
+            "value": "62kg"
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 23
+    },
+    "id": 61403,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        256114,
+        282000
+    ]
+}

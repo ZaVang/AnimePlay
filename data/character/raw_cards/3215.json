@@ -1,0 +1,70 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/a0/3215_crt_bB4Yf.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cf/a0/3215_crt_bB4Yf.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/cf/a0/3215_crt_bB4Yf.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/a0/3215_crt_bB4Yf.jpg"
+    },
+    "summary": "過去のちょっとしたきっかけから、主人公や藤村先生とは家族同然の付き合いを続けている一学年下の後輩。\r\nやや引っ込み思案なおとなしい性格をしているが、時折主人公に対して積極的になる一面も持ち合わせている。\r\n穏やかな日常の象徴で、戦いに巻き込まれる事はないのだが……？",
+    "name": "間桐桜",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "间桐樱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "まとうさくら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Matou Sakura"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月2日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "体重",
+            "value": "46kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B85/W56/H87"
+        }
+    ],
+    "stat": {
+        "comments": 243,
+        "collects": 1037
+    },
+    "id": 3215,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        109375,
+        175599
+    ]
+}

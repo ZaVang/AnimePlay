@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/e1/13432_crt_8jbjA.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5c/e1/13432_crt_8jbjA.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/5c/e1/13432_crt_8jbjA.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/e1/13432_crt_8jbjA.jpg"
+    },
+    "summary": "主人公，被称作“次郎”，五岁起受到母亲的斯巴达训练，不敢面对女人作为出气筒一样的人。因母亲及其妹妹的行为，对身体产生负面的影响，只要被女生碰到，会心跳加速，最坏的时候鼻子流着血会导致暂时性休克的女生恐惧症。此外，因他的名字-坂町“近”次郎的读音，因此小说也翻译叫“没种男的烦恼（日文chicken桑=没种先生）\r\n 从小就是她母亲和妹妹的摔跤试练场，身体就算受伤也会很快康复（拥有着被电单车撞倒也能照常回校的惊人体质）。带着眼镜，大概是因为这个学园一部分人是萌眼镜的。 \r\n去卫生间某一天，已经打开了禁断的门。面对着对坐在马桶的近卫昴大人，并目睹了昴同学穿的女生内裤，发现面前倒下的近卫昴大人原来是位女生。凉月告知了真相，并被对方得知自己有女生恐惧症，以保密昴是女性为条件，与凉月和昴同盟，主人公踏上了克服女生恐惧症的生活。",
+    "name": "坂町近次郎",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "坂町近次郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "坂町 近次郎"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さかまち きんじろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakamachi Kinjirou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 11
+    },
+    "id": 13432,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        10459
+    ]
+}

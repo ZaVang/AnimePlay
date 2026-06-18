@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/ea/31407_crt_379Yw.jpg?r=1657987609",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f3/ea/31407_crt_379Yw.jpg?r=1657987609",
+        "large": "https://lain.bgm.tv/pic/crt/l/f3/ea/31407_crt_379Yw.jpg?r=1657987609",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/ea/31407_crt_379Yw.jpg?r=1657987609"
+    },
+    "summary": "孝的青梅竹马，私立藤美学园高等部2年级，留级一年，枪术社。\r\n长枪部的学员，临时用拖把柄代替长枪，后来使用南里香家取得的M1A步枪加挂刺刀。但几乎不开枪，因为她除了射术不佳外，也认为开枪会引来更多死体，因此大部分时间只会用枪头刺刀戳击死体。",
+    "name": "宫本麗",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宫本丽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "宫本 麗"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みやもと れい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Miyamoto Rei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "164cm"
+        },
+        {
+            "key": "体重",
+            "value": "50kg"
+        },
+        {
+            "key": "BWH",
+            "value": "87-57-89"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 47
+    },
+    "id": 31407,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        5647
+    ]
+}

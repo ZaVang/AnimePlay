@@ -1,0 +1,70 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 31,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/e2/20890_crt_lZEaV.jpg?r=1612039348",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a7/e2/20890_crt_lZEaV.jpg?r=1612039348",
+        "large": "https://lain.bgm.tv/pic/crt/l/a7/e2/20890_crt_lZEaV.jpg?r=1612039348",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/e2/20890_crt_lZEaV.jpg?r=1612039348"
+    },
+    "summary": "高中1年级。有操纵血能力的家族的异界士。\r\n但是那个能力在异界士中非常特殊而被被敬而远之的存在。内心憧憬着成为普通的女孩子。\r\n在战斗中有着优秀的异能，但平时的生活却总是一团糟。\r\n爱好园艺。",
+    "name": "栗山未来",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "栗山未来"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "栗山 未来"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くりやま みらい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kuriyama Mirai"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月31日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 51,
+        "collects": 459
+    },
+    "id": 20890,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        49278,
+        118908
+    ]
+}

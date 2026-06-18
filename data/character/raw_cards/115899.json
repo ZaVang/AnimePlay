@@ -1,0 +1,73 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/d1/115899_crt_WjWjq.jpg?r=1692546854",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e2/d1/115899_crt_WjWjq.jpg?r=1692546854",
+        "large": "https://lain.bgm.tv/pic/crt/l/e2/d1/115899_crt_WjWjq.jpg?r=1692546854",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/d1/115899_crt_WjWjq.jpg?r=1692546854"
+    },
+    "summary": "否定者。\r\n能力：不幸(UNLUCK/アンラック）。他对象，强制发动型。\r\n给身体直接接触到的对象带去不幸。规模依好感度、接触方式、面积、时间等决定。\r\n但自己ー直没有完全把握清整规则。因能力在面对好感度低的敌人时会很无力，所以她很担心自己今后在做任务时是否会给安迪添麻烦。",
+    "name": "出雲風子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "出云风子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いずもふうこ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月7日"
+        },
+        {
+            "key": "身高",
+            "value": "155cm将近"
+        },
+        {
+            "key": "体重",
+            "value": "不想说"
+        },
+        {
+            "key": "年龄",
+            "value": "18"
+        },
+        {
+            "key": "兴趣",
+            "value": "少女漫画、游戏"
+        },
+        {
+            "key": "特技",
+            "value": "在人群的缝隙间穿梭"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "不放芥末的寿司"
+        }
+    ],
+    "stat": {
+        "comments": 46,
+        "collects": 68
+    },
+    "id": 115899,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        397808
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/59/99191_crt_in7BI.jpg?r=1643028653",
+        "grid": "https://lain.bgm.tv/pic/crt/g/06/59/99191_crt_in7BI.jpg?r=1643028653",
+        "large": "https://lain.bgm.tv/pic/crt/l/06/59/99191_crt_in7BI.jpg?r=1643028653",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/59/99191_crt_in7BI.jpg?r=1643028653"
+    },
+    "summary": "极其普通？的男高中生。他在高中的目标是交到“一百个朋友”。然而入学后，坐在隔壁座位的阿波连同学，让他觉得到有种距离感。",
+    "name": "ライドウ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "来堂"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "全名",
+                    "v": "来堂章太"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Raido"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://aharen-pr.com/cn/"
+        }
+    ],
+    "stat": {
+        "comments": 16,
+        "collects": 13
+    },
+    "id": 99191,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        343656
+    ]
+}

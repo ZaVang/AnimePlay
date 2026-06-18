@@ -1,0 +1,77 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/59/47912_crt_645i4.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9a/59/47912_crt_645i4.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/9a/59/47912_crt_645i4.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/59/47912_crt_645i4.jpg"
+    },
+    "summary": "人理継続保障機関(カルデア)のマスター候補の1人だが、数合わせとして呼ばれた「素人」。人類史を正すため、英霊召喚システム「フェイト」を使ってサーヴァントを召喚し、7つの聖杯探索(グランドオーダー)を巡ることになる。",
+    "name": "藤丸立香",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藤丸立香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "藤丸 立香"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ふじまる りつか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fujimaru Ritsuka"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ぐだお/ぐだ子、咕哒夫/咕哒子"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "玩家决定"
+        },
+        {
+            "key": "身高",
+            "value": "172cm（男）"
+        },
+        {
+            "key": "体重",
+            "value": "59kg（男）"
+        },
+        {
+            "key": "阵营属性",
+            "value": "中立·善"
+        },
+        {
+            "key": "声优",
+            "value": "岛崎信长/関根明良"
+        },
+        {
+            "key": "咕哒版声优",
+            "value": "金田朋子"
+        }
+    ],
+    "stat": {
+        "comments": 32,
+        "collects": 95
+    },
+    "id": 47912,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        255526
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/00/ca/29735_crt_DOnZI.jpg?r=1588168897",
+        "grid": "https://lain.bgm.tv/pic/crt/g/00/ca/29735_crt_DOnZI.jpg?r=1588168897",
+        "large": "https://lain.bgm.tv/pic/crt/l/00/ca/29735_crt_DOnZI.jpg?r=1588168897",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/00/ca/29735_crt_DOnZI.jpg?r=1588168897"
+    },
+    "summary": "Alicization篇的女主角。卢利特村村长的女儿，有着村内最高的神圣术天赋。\r\n尤吉欧与桐人的童年玩伴，三人十一岁那年的一场探险让她误触禁忌目录而被整合骑士押往央都，一度生死不明。",
+    "name": "アリス・ツーベルク／アリス・シンセシス・サーティ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "爱丽丝·滋贝鲁库／爱丽丝·辛赛西斯·萨提"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月9日"
+        }
+    ],
+    "stat": {
+        "comments": 41,
+        "collects": 269
+    },
+    "id": 29735,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        279457,
+        292238
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": 1987,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4a/63/91683_crt_SCoAT.jpg?r=1614343423",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4a/63/91683_crt_SCoAT.jpg?r=1614343423",
+        "large": "https://lain.bgm.tv/pic/crt/l/4a/63/91683_crt_SCoAT.jpg?r=1614343423",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4a/63/91683_crt_SCoAT.jpg?r=1614343423"
+    },
+    "summary": "恭也の同居人であり同回生。通称ナナコ。\r\n見た目はギャルっぽいが、意外と控えめな性格で人前に立つのが大の苦手。\r\n特に目標という目標はなく「自分探し」のために進学した。\r\n歌を歌うのが好きでよくカラオケに行く。",
+    "name": "小暮奈々子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小暮奈奈子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "こぐれ ななこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "NANAKO KOGURE"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ナナコ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1987年12月25日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://bokurema.com/character/nanako/"
+        }
+    ],
+    "stat": {
+        "comments": 19,
+        "collects": 63
+    },
+    "id": 91683,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        296870
+    ]
+}

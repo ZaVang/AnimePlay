@@ -1,0 +1,36 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/1d/61442_crt_6Hp1X.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b0/1d/61442_crt_6Hp1X.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/b0/1d/61442_crt_6Hp1X.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/1d/61442_crt_6Hp1X.jpg"
+    },
+    "summary": "アデリーペンギン。\r\n学名：ピゴスケリス・アデリアエ",
+    "name": "ペンギン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "企鹅"
+        },
+        {
+            "key": "别名",
+            "value": []
+        }
+    ],
+    "stat": {
+        "comments": 19,
+        "collects": 30
+    },
+    "id": 61442,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        239270
+    ]
+}

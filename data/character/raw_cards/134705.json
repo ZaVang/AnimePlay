@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6f/85/134705_crt_qLAMv.jpg?r=1694331721",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6f/85/134705_crt_qLAMv.jpg?r=1694331721",
+        "large": "https://lain.bgm.tv/pic/crt/l/6f/85/134705_crt_qLAMv.jpg?r=1694331721",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6f/85/134705_crt_qLAMv.jpg?r=1694331721"
+    },
+    "summary": "アルコールソフトの企画・原画・CG担当。ネコ耳帽子がトレードマークの柔和な女性。美少女ゲームに詳しく、美少女やゲーム作りに対して情熱を持っている。会社のことを考える冷静な視点を持ちながら、コノハのことも気にかけている。",
+    "name": "下田かおり",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "下田香织"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "下田 かおり"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しもだ かおり"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://16bitsensation-al.com/character/"
+        }
+    ],
+    "stat": {
+        "comments": 23,
+        "collects": 38
+    },
+    "id": 134705,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        413741
+    ]
+}

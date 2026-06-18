@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6d/ec/99190_crt_PQAa2.jpg?r=1643028638",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6d/ec/99190_crt_PQAa2.jpg?r=1643028638",
+        "large": "https://lain.bgm.tv/pic/crt/l/6d/ec/99190_crt_PQAa2.jpg?r=1643028638",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6d/ec/99190_crt_PQAa2.jpg?r=1643028638"
+    },
+    "summary": "不擅长把握与他人之间的距离的女孩子。有一天，坐在隔壁座位的来堂同学捡起了她掉在地上的橡皮，以此为契机她开始对他产生了兴趣。",
+    "name": "阿波連れいな",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿波连玲奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あはれん れいな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aharen Reina"
+                },
+                {
+                    "k": "昵称",
+                    "v": "阿霸王"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://aharen-pr.com/cn/"
+        }
+    ],
+    "stat": {
+        "comments": 30,
+        "collects": 107
+    },
+    "id": 99190,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        343656
+    ]
+}

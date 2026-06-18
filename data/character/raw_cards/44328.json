@@ -1,0 +1,69 @@
+{
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/a6/44328_crt_zKjkv.jpg?r=1485312863",
+        "grid": "https://lain.bgm.tv/pic/crt/g/da/a6/44328_crt_zKjkv.jpg?r=1485312863",
+        "large": "https://lain.bgm.tv/pic/crt/l/da/a6/44328_crt_zKjkv.jpg?r=1485312863",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/a6/44328_crt_zKjkv.jpg?r=1485312863"
+    },
+    "summary": "胡桃泽的身份是恶魔，将原本身为天使学校首席毕业生的珈百璃视作自己的竞争对手和劲敌。对于身为恶魔的“恐怖之处”很有自信，目标是成为大恶魔。",
+    "name": "胡桃沢=サタニキア=マクドウェル",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "胡桃泽·撒塔妮亚·麦克斯韦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "胡桃泽·萨塔妮亚·麦克威尔"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Satanichia McDowell Kurumizawa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月15日"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "体重",
+            "value": "46kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B85/W58/H84"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 47,
+        "collects": 268
+    },
+    "id": 44328,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        188091
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/02/57898_crt_DDg1d.jpg?r=1516519553",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0d/02/57898_crt_DDg1d.jpg?r=1516519553",
+        "large": "https://lain.bgm.tv/pic/crt/l/0d/02/57898_crt_DDg1d.jpg?r=1516519553",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/02/57898_crt_DDg1d.jpg?r=1516519553"
+    },
+    "summary": "孩子们的领袖，可靠的优等生。\r\n总是很在意青梅竹马的广。",
+    "name": "イチゴ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莓"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "CODE:015"
+                },
+                {
+                    "k": "英文名",
+                    "v": "ICHIGO"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://darli-fra.jp/character/"
+        }
+    ],
+    "stat": {
+        "comments": 234,
+        "collects": 415
+    },
+    "id": 57898,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        218711
+    ]
+}

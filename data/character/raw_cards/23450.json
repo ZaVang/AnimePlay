@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/60/23450_crt_EkkcW.jpg?r=1394509646",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fe/60/23450_crt_EkkcW.jpg?r=1394509646",
+        "large": "https://lain.bgm.tv/pic/crt/l/fe/60/23450_crt_EkkcW.jpg?r=1394509646",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/60/23450_crt_EkkcW.jpg?r=1394509646"
+    },
+    "summary": "就读小学的十岁少女，第一人称为“人家”（妾（わらわ）），莲太郎的起始者，同时也是天童民间警备公司的社员，以速度见长的兔型受诅之子，并以有着錵制的靴底的特制靴子施展踢击技进行战斗。\r\n性格活泼开朗且天真烂漫，将民警视为守护人类的伟大工作而感到自豪，喜欢莲太郎，对莲太郎如爱人般亲密，视木更为情敌。\r\n是动画《天诛少女》的粉丝。\r\n刚与莲太郎见面时呈现完全不信任任何人的状态，但在两人的朝夕相处下有了转变，而原本满心仇恨的莲太郎与木更也渐渐受到影响。",
+    "name": "藍原延珠",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蓝原延珠"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "藍原 延珠"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あいはら えんじゅ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aihara Enju"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 18,
+        "collects": 178
+    },
+    "id": 23450,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        84873
+    ]
+}

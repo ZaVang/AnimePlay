@@ -1,0 +1,49 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 29,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/38/49018_crt_KZ7b0.jpg?r=1657451567",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6e/38/49018_crt_KZ7b0.jpg?r=1657451567",
+        "large": "https://lain.bgm.tv/pic/crt/l/6e/38/49018_crt_KZ7b0.jpg?r=1657451567",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/38/49018_crt_KZ7b0.jpg?r=1657451567"
+    },
+    "summary": "《序列之争》里第一次作为AR（增强现实）偶像拥有高人气的《歌姬》。\r\n游戏中如果遭遇到她的舞台，会得到特殊的效果。",
+    "name": "ユナ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "尤娜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Yuna"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月29日"
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 48
+    },
+    "id": 49018,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        148099
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 6,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/8c/149129_crt_OSd1Z.jpg?r=1703420066",
+        "grid": "https://lain.bgm.tv/pic/crt/g/da/8c/149129_crt_OSd1Z.jpg?r=1703420066",
+        "large": "https://lain.bgm.tv/pic/crt/l/da/8c/149129_crt_OSd1Z.jpg?r=1703420066",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/8c/149129_crt_OSd1Z.jpg?r=1703420066"
+    },
+    "summary": "13歳。魔術を得意とする異世界の皇女。反乱によって祖国が滅ぼされ、《門》をくぐって現代日本に逃れてきた。探偵の鏑矢惣助に拾われ、あっという間にこちらの世界に順応して楽しい日々を送る。漫画の影響で正義の名探偵に憧れを抱く。",
+    "name": "サラ・ダ・オディン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "萨拉·达·奥丁"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "草薙沙羅"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sara da Odin"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月6日"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 86,
+        "collects": 307
+    },
+    "id": 149129,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        444403
+    ]
+}

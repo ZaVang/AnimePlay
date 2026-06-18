@@ -1,0 +1,56 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/9a/57751_crt_3E3pC.jpg?r=1507738291",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3b/9a/57751_crt_3E3pC.jpg?r=1507738291",
+        "large": "https://lain.bgm.tv/pic/crt/l/3b/9a/57751_crt_3E3pC.jpg?r=1507738291",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/9a/57751_crt_3E3pC.jpg?r=1507738291"
+    },
+    "summary": "长有红色的角的神秘少女。\r\n拥有“搭档杀手”别名的精英驾驶员。",
+    "name": "ゼロツー",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "02"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "CODE:002"
+                },
+                {
+                    "k": "英文名",
+                    "v": "ZERO TWO"
+                },
+                {
+                    "k": "绰号",
+                    "v": "パートナー殺し / 搭档杀手"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://darli-fra.jp/character/"
+        }
+    ],
+    "stat": {
+        "comments": 187,
+        "collects": 730
+    },
+    "id": 57751,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        218711
+    ]
+}

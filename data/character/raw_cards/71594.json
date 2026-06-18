@@ -1,0 +1,63 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/fa/71594_crt_CxNhx.jpg?r=1567421320",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c1/fa/71594_crt_CxNhx.jpg?r=1567421320",
+        "large": "https://lain.bgm.tv/pic/crt/l/c1/fa/71594_crt_CxNhx.jpg?r=1567421320",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/fa/71594_crt_CxNhx.jpg?r=1567421320"
+    },
+    "summary": "大贵族·约克家的女儿。对于自己的未来感到悲观。\r\n对于当教育员的薇尔莉特感到不快。",
+    "name": "イザベラ・ヨーク",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊莎贝拉·约克"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Isabella York"
+                },
+                {
+                    "v": "エイミー・バートレット"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "艾米·巴特利特"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Amy Bartlett"
+                },
+                {
+                    "k": "日文名",
+                    "v": "イザベラ・ヨーク"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "www.violet-evergarden.jp/sidestory/"
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 23
+    },
+    "id": 71594,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        280837
+    ]
+}

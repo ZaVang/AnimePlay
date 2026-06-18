@@ -1,0 +1,70 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 31,
+    "birth_year": 2001,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/6c/12702_crt_2Az63.jpg?r=1689076399",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a2/6c/12702_crt_2Az63.jpg?r=1689076399",
+        "large": "https://lain.bgm.tv/pic/crt/l/a2/6c/12702_crt_2Az63.jpg?r=1689076399",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/6c/12702_crt_2Az63.jpg?r=1689076399"
+    },
+    "summary": "福音战士新剧场版：破中的出场人物，棕色的双马尾（最初人设是紫红色头发），蓝绿色双瞳，带着红框板材眼镜，发带是A10神经连接端口。\r\n真希波是EVA五号机的适格者，战斗服绿色。后来代替明日香驾驶EVA二号机，战斗服换为粉色\r\n真希波之名，取自大日本帝国海军夕云型驱逐舰五号舰“巻波”。",
+    "name": "真希波・マリ・イラストリアス",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "真希波·玛丽·伊兰崔亚斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "真希波·真理·伊拉丝托莉雅斯"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Mari Makinami Illustrious"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まきなみ・マリ・イラストリアス"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Makinami Mari Irasutoriasu"
+                },
+                {
+                    "k": "昵称",
+                    "v": "胸の大きいいい女"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2001年3月31日(漫画14卷设定1982年)"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wikipedia(zh)"
+        }
+    ],
+    "stat": {
+        "comments": 148,
+        "collects": 333
+    },
+    "id": 12702,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        3302,
+        29883
+    ]
+}

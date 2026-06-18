@@ -1,0 +1,73 @@
+{
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": 3,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/68/13830_crt_Wnweu.jpg?r=1380386354",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fa/68/13830_crt_Wnweu.jpg?r=1380386354",
+        "large": "https://lain.bgm.tv/pic/crt/l/fa/68/13830_crt_Wnweu.jpg?r=1380386354",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/68/13830_crt_Wnweu.jpg?r=1380386354"
+    },
+    "summary": "《圣诞之吻》女主角之一。\r\n人气排名第一，称号“天下无敌的假面优等生”。2年A班的班长，创设祭实行委员，学生会长。因为文武双全，不仅在同学间，在老师间也相当有地位。也因为常常照顾别人，所以身边总是围绕着许多人。\r\n喜欢安静的地方、放学后常待在图书馆中。",
+    "name": "絢辻詞",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "绚辻词"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "絢辻 詞"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あやつじ つかさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ayatsuji Tsukasa　"
+                },
+                {
+                    "k": "昵称",
+                    "v": "班长"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月8日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "喜欢",
+            "value": "学习、考试、读书、存钱、增加自己地位的行为、自己的计划"
+        },
+        {
+            "key": "讨厌",
+            "value": "昆虫和爬虫类、固执的自己、镜子、家人、让自己品味下降的行为、妨碍自己计划的人"
+        }
+    ],
+    "stat": {
+        "comments": 116,
+        "collects": 409
+    },
+    "id": 13830,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        5656
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 6,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/00/ad/35186_crt_8iI4G.jpg?r=1492703374",
+        "grid": "https://lain.bgm.tv/pic/crt/g/00/ad/35186_crt_8iI4G.jpg?r=1492703374",
+        "large": "https://lain.bgm.tv/pic/crt/l/00/ad/35186_crt_8iI4G.jpg?r=1492703374",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/00/ad/35186_crt_8iI4G.jpg?r=1492703374"
+    },
+    "summary": "亚可的室友，来自芬兰的少女。性格温柔诚实，对于暴走状态的亚可，经常冷静地吐槽。唱歌很出色，能唱出古老的魔女歌谣召唤北欧精灵。是悲剧恋歌小说《Nightfall》的狂热读者。",
+    "name": "ロッテ・ヤンソン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "洛蒂·杨森"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Lotte Yanson"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ロッテ・ヤンソン"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月6日"
+        }
+    ],
+    "stat": {
+        "comments": 20,
+        "collects": 68
+    },
+    "id": 35186,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        54675
+    ]
+}

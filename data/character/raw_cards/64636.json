@@ -1,0 +1,66 @@
+{
+    "birth_mon": 1,
+    "gender": "male",
+    "birth_day": 8,
+    "birth_year": 2003,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/b3/64636_crt_p2pPp.jpg?r=1539514557",
+        "grid": "https://lain.bgm.tv/pic/crt/g/87/b3/64636_crt_p2pPp.jpg?r=1539514557",
+        "large": "https://lain.bgm.tv/pic/crt/l/87/b3/64636_crt_p2pPp.jpg?r=1539514557",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/b3/64636_crt_p2pPp.jpg?r=1539514557"
+    },
+    "summary": "",
+    "name": "響裕太",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "响裕太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ひびき ゆうた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hibiki Yuta"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2003年1月8日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "52kg"
+        }
+    ],
+    "stat": {
+        "comments": 63,
+        "collects": 104
+    },
+    "id": 64636,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        218712,
+        362335
+    ]
+}

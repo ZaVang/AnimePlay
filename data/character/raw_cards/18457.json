@@ -1,0 +1,60 @@
+{
+    "id": 18457,
+    "name": "墨埜谷暮羽",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/3c/c3/18457_crt_0gA3T.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/c3/18457_crt_0gA3T.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/c3/18457_crt_0gA3T.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3c/c3/18457_crt_0gA3T.jpg"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "墨野谷暮羽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "墨埜谷 暮羽"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "すみのや くれは"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Suminoya Kureha"
+                },
+                {
+                    "k": "昵称",
+                    "v": "クレハ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "年龄",
+            "value": "14岁"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 3,
+        "collects": 21
+    },
+    "anime_ids": [
+        3477
+    ]
+}

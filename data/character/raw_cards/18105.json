@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/f7/18105_crt_8GR44.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cc/f7/18105_crt_8GR44.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/cc/f7/18105_crt_8GR44.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/f7/18105_crt_8GR44.jpg"
+    },
+    "summary": "本作主角，为一名高中一年级的女学生。常以带着撩乱长发，疲倦黑眼袋的模样见人。\r\n平时的嗜好为观赏动漫，或游玩BL、GL题材取向的电子游戏，对于流行方面的事物则较不敏感。\r\n不擅长与人交涉，和其他人进行对谈时常会没来由地紧张不知所措。\r\n本人虽渴望能获得班上周遭同济的接纳及认同，但一直被冷漠忽视，因而每每皆独自一人行动。\r\n内心为了安慰时常不被他人注意的自己，而常常对于他人事物有着较反面、愤世忌俗的批评想法。",
+    "name": "黒木智子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黑木智子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "もこっち"
+                },
+                {
+                    "v": "小喪"
+                },
+                {
+                    "v": "小丧"
+                },
+                {
+                    "v": "喪女"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くろき ともこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kuroki Tomoko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月底"
+        }
+    ],
+    "stat": {
+        "comments": 47,
+        "collects": 277
+    },
+    "id": 18105,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        69214
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "birth_mon": 9,
+    "gender": null,
+    "birth_day": 6,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/9b/38025_crt_LV5kV.jpg?r=1508012150",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6b/9b/38025_crt_LV5kV.jpg?r=1508012150",
+        "large": "https://lain.bgm.tv/pic/crt/l/6b/9b/38025_crt_LV5kV.jpg?r=1508012150",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/9b/38025_crt_LV5kV.jpg?r=1508012150"
+    },
+    "summary": "伊月的义弟。[mask]（但在第一卷末透露，实际上是义妹）[/mask]\r\n\r\n伊月的继弟。是个家事万能并擅长料理的完美超人，认真勤奋的照顾着独自在外生活的哥哥。",
+    "name": "羽島千尋",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "羽岛千寻"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "はしま ちひろ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hashima Chihiro"
+                }
+            ]
+        },
+        {
+            "key": "生日",
+            "value": "9月6日"
+        }
+    ],
+    "stat": {
+        "comments": 28,
+        "collects": 69
+    },
+    "id": 38025,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        213076
+    ]
+}

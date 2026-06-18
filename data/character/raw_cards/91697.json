@@ -1,0 +1,41 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/6e/91697_crt_OWBbO.jpg?r=1614430924",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fd/6e/91697_crt_OWBbO.jpg?r=1614430924",
+        "large": "https://lain.bgm.tv/pic/crt/l/fd/6e/91697_crt_OWBbO.jpg?r=1614430924",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/6e/91697_crt_OWBbO.jpg?r=1614430924"
+    },
+    "summary": "自100年后的未来而来，降临在vivy身旁的ai。\r\n作为ai的使命是“阻止ai与人类的战争”。为了这个目标，计划和vivy一起消灭所有ai。\r\n总是一副自信过剩的样子喋喋不休，个性不似一个ai。",
+    "name": "マツモト",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "松本"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Matsumoto"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 33,
+        "collects": 29
+    },
+    "id": 91697,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        325286
+    ]
+}

@@ -1,0 +1,418 @@
+{
+    "date": "2012-04-05",
+    "platform": "TV",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/b3/f7/28230_hnla8.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/b3/f7/28230_hnla8.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/b3/f7/28230_hnla8.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/b3/f7/28230_hnla8.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/b3/f7/28230_hnla8.jpg"
+    },
+    "summary": "本作是一个以僵尸为主的搞笑恋爱故事。男主角降谷千纮因一次机缘巧合的情况下，意外令本来已死的女主角散华礼弥因复活术而成为僵尸。",
+    "name": "さんかれあ",
+    "name_cn": "散华礼弥",
+    "tags": [
+        {
+            "name": "僵尸",
+            "count": 1977,
+            "total_cont": 0
+        },
+        {
+            "name": "散华礼弥",
+            "count": 1772,
+            "total_cont": 0
+        },
+        {
+            "name": "恋爱",
+            "count": 1390,
+            "total_cont": 0
+        },
+        {
+            "name": "2012年4月",
+            "count": 1309,
+            "total_cont": 0
+        },
+        {
+            "name": "漫画改",
+            "count": 1024,
+            "total_cont": 0
+        },
+        {
+            "name": "TV",
+            "count": 983,
+            "total_cont": 0
+        },
+        {
+            "name": "studiodeen",
+            "count": 656,
+            "total_cont": 0
+        },
+        {
+            "name": "2012",
+            "count": 625,
+            "total_cont": 0
+        },
+        {
+            "name": "花泽香菜",
+            "count": 508,
+            "total_cont": 0
+        },
+        {
+            "name": "奇幻",
+            "count": 478,
+            "total_cont": 0
+        },
+        {
+            "name": "漫改",
+            "count": 364,
+            "total_cont": 0
+        },
+        {
+            "name": "今年流行僵尸么？",
+            "count": 317,
+            "total_cont": 0
+        },
+        {
+            "name": "悠木碧",
+            "count": 195,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 104,
+            "total_cont": 0
+        },
+        {
+            "name": "为了CV我来了",
+            "count": 73,
+            "total_cont": 0
+        },
+        {
+            "name": "校园",
+            "count": 59,
+            "total_cont": 0
+        },
+        {
+            "name": "内田真礼",
+            "count": 57,
+            "total_cont": 0
+        },
+        {
+            "name": "日常",
+            "count": 56,
+            "total_cont": 0
+        },
+        {
+            "name": "治愈",
+            "count": 55,
+            "total_cont": 0
+        },
+        {
+            "name": "小俣真一",
+            "count": 45,
+            "total_cont": 0
+        },
+        {
+            "name": "2012春番",
+            "count": 41,
+            "total_cont": 0
+        },
+        {
+            "name": "木村良平",
+            "count": 35,
+            "total_cont": 0
+        },
+        {
+            "name": "福圓美里",
+            "count": 34,
+            "total_cont": 0
+        },
+        {
+            "name": "萌",
+            "count": 31,
+            "total_cont": 0
+        },
+        {
+            "name": "畠山守",
+            "count": 31,
+            "total_cont": 0
+        },
+        {
+            "name": "后宫",
+            "count": 28,
+            "total_cont": 0
+        },
+        {
+            "name": "2011年4月",
+            "count": 24,
+            "total_cont": 0
+        },
+        {
+            "name": "搞笑",
+            "count": 23,
+            "total_cont": 0
+        },
+        {
+            "name": "STUDIO_DEEN",
+            "count": 23,
+            "total_cont": 0
+        },
+        {
+            "name": "2012年",
+            "count": 22,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "散华礼弥"
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2012年4月5日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期四"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.tbs.co.jp/anime/sankarea/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TBS"
+        },
+        {
+            "key": "其他电视台",
+            "value": "MBS / CBC / BSｰTBS"
+        },
+        {
+            "key": "播放结束",
+            "value": "2012年6月28日"
+        },
+        {
+            "key": "导演",
+            "value": "畠山守(小俣真一)"
+        },
+        {
+            "key": "Copyright",
+            "value": "©はっとりみつる・講談社／さんかれあ製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "はっとりみつる（「別冊少年マガジン」／講談社）"
+        },
+        {
+            "key": "人物设定",
+            "value": "坂井久太"
+        },
+        {
+            "key": "企画",
+            "value": "村上仁之、古川陽子、松下卓也、井上俊次、丹羽多聞アンドリウ、野口和紀"
+        },
+        {
+            "key": "制片人",
+            "value": "山口泰広、髙取昌史、立石謙介、櫻井優香、浦城義明、浦崎宣光"
+        },
+        {
+            "key": "製作",
+            "value": "さんかれあ製作委員会（ポニーキャニオン、講談社、ランティス、BS-TBS、スタジオディーン）、TBS"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "櫻井優香"
+        },
+        {
+            "key": "剪辑",
+            "value": "松原理恵；剪辑协力：瀬山編集室；剪辑助手：小池祐樹"
+        },
+        {
+            "key": "音效",
+            "value": "上野励；助手：宅間麻姫"
+        },
+        {
+            "key": "录音",
+            "value": "伊東光晴；录音工作室：TAVAC（タバック）"
+        },
+        {
+            "key": "录音助理",
+            "value": "新垣未希"
+        },
+        {
+            "key": "音响",
+            "value": "ダックスプロダクション；音响制作担当：高井琢磨"
+        },
+        {
+            "key": "道具作画监督",
+            "value": "岡戸智凱"
+        },
+        {
+            "key": "设定制作",
+            "value": "米岡仁司"
+        },
+        {
+            "key": "制作管理",
+            "value": "制作担当：和田薫"
+        },
+        {
+            "key": "宣传",
+            "value": "田中瑞穂、関根陽一"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "畠山守(小俣真一)"
+        },
+        {
+            "key": "OP・ED 演出",
+            "value": "畠山守(小俣真一)"
+        },
+        {
+            "key": "脚本",
+            "value": "高木登(1-3,6,12)、杉原研二(4,7,10-11)、武田浩介(5,8-9,13)"
+        },
+        {
+            "key": "分镜",
+            "value": "畠山守 [ 小俣真一 ] (1-3,6,12)、小滝礼(4)、山﨑みつえ(5,8)、小坂知(7)、西村博昭(9)、大山清和(10)、名村英敏(11,13)"
+        },
+        {
+            "key": "演出",
+            "value": "畠山守 [ 小俣真一 ] (1,13)、西村博昭(2,6,9)、久保太郎(3,11)、吉田俊司(4,8,12)、松本マサユキ(5,10)、高山秀樹(7)"
+        },
+        {
+            "key": "作画监督",
+            "value": "胡陽樹、氏家嘉宏、平川亜喜雄、瀧原美樹、金順淵、Heo Hye-Jung、髙澤美佳、門智昭、小坂知、Han Jeong I、Kim Kang Won、稲田真樹、室山祥子、山田太郎(竹井正樹)、牧内ももこ、池下博紀"
+        }
+    ],
+    "rating": {
+        "rank": 3517,
+        "total": 9865,
+        "count": {
+            "1": 6,
+            "2": 23,
+            "3": 38,
+            "4": 139,
+            "5": 655,
+            "6": 2588,
+            "7": 4374,
+            "8": 1632,
+            "9": 218,
+            "10": 192
+        },
+        "score": 6.8
+    },
+    "total_episodes": 13,
+    "collection": {
+        "on_hold": 976,
+        "dropped": 584,
+        "wish": 3017,
+        "collect": 16266,
+        "doing": 1014
+    },
+    "id": 28230,
+    "eps": 13,
+    "meta_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "奇幻",
+        "漫画改"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        15499,
+        15617
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/67/15499_crt_z9TNj.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2c/67/15499_crt_z9TNj.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/2c/67/15499_crt_z9TNj.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/67/15499_crt_z9TNj.jpg"
+            },
+            "name": "散華礼弥",
+            "summary": "私立散华女子学园学生，同时是该学园校长的女儿，在人前是个清纯又文质彬彬的女孩子，而晚上的时候会到没人的宾馆废墟，对着破井大喊来发泄心中对父母的不满。[mask]但没想到被降谷所发现，于是两人便结识为朋友。同时她对降谷独特的爱好产生了兴趣，决心要帮降谷复活小猫。\r\n喜欢降谷。[/mask]",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "large": "https://lain.bgm.tv/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463"
+                    },
+                    "name": "内田真礼",
+                    "short_summary": "内田 真礼（うちだ まあや、1989年12月27日 - ）は、日本の声優、歌手、女優、タレント。\r\nアイムエンタープライズ（事務所）、ポニーキャニオン（レコード会社）に所属。愛称は主にまややん、まれいたそ。東京都出身。血液型はA型。本名同じ。声優の内田雄馬は実弟。\r\n\r\n2025年9月30日，宣布与石川界人结婚。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 6724,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 15499
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/81/15617_crt_ZJLO2.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c5/81/15617_crt_ZJLO2.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/c5/81/15617_crt_ZJLO2.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/81/15617_crt_ZJLO2.jpg"
+            },
+            "name": "降谷千紘",
+            "summary": "本作的男主角，县立紫阳高中1年级学生，是个非常喜爱和崇拜丧尸的人，紫两寺是他的家。因为一次的实验成功以绣球花毒炼成复活药，令复活术重现，不但令礼弥因为一次意外死亡后变成丧尸，而自身也因为复活术而逐渐变成半丧尸，自此为了让她能延续生命和实现梦想而不断努力。猫耳状的发型是其特征。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/c8/4305_prsn_YSbp3.jpg?r=1489787602",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8c/c8/4305_prsn_YSbp3.jpg?r=1489787602",
+                        "large": "https://lain.bgm.tv/pic/crt/l/8c/c8/4305_prsn_YSbp3.jpg?r=1489787602",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/c8/4305_prsn_YSbp3.jpg?r=1489787602"
+                    },
+                    "name": "新谷良子",
+                    "short_summary": "日本女性声优及歌手。血型B型。隶属于Vi-vo（声优）、Lantis（歌手）。曾经隶属红屋25时。\r\n\r\n从石川县的私立星棱高等学校毕业后去东京深造，于日本工学院専门学校的戏剧演员科声优课程进修。在学校中与清水爱和坂本美里等人组成“MeeMeeMoo”，进行电台广播等活动的演出。\r\n之后在游戏‘プリズムパレット’的选拔考试中获得最优秀奖。但是该游戏制作延迟，Broccoli方面作为赔礼推荐她参加了游戏‘银河天使’的选拔考试，之后成功作为主角梅尔优‧樱叶（原本是预定由田村由香里配音）的声优完成出道。同时还主持电视节目‘ゲーマーズエクスプレス’。\r\n之后主持了众多由Broccoli赞助的电视、广播节目。另外以迷你专辑‘ピンクのバンビ’作为了歌手出道。现在以被称为“BambiPop”的音乐风格进行音乐活动。\r\n多数是担任性格开朗的少女角色，不过也出演天然呆・无口・御姐・冷酷・大小姐・母亲・动物等各种类型的角色。\r\n\r\n据本人透露，成为声优的契机是想成为美少女战士月野兔和想见到绯村剑心和相乐左之助。\r\n从中学时代就开始憧憬成为声优，高中时代虽一度隶属戏剧部，但也很快就辞退跑去了吹奏乐部。这是因为知道了“演戏最重要的是要会把握时机”而去培养节奏感。担当打击乐器。高中时代美好回忆是“在吹奏乐部很开心”。\r\n最喜欢粉红色，本人的穿着、CD封面等都经常是粉红色的。迷你裙和少女兴趣服装很多，对绝对领域也有个人的执著。但是迷你裙只有在活动上才会穿出来。喜欢的时尚品牌是“MILK”等。\r\n常去东京迪士尼度假区玩，假日时BLOG经常会写去了那里，特别中意那里的电子大游行。多数是自己一个人去玩，不过也有和真田麻美、阿澄佳奈、松来未祐、稲村优奈等人一起去。由于三森铃子声优出道前曾在东京迪士尼海洋舞台剧‘米奇梦想剧团’中担纲主演，与三森共同演出‘侦探歌剧 少女福尔摩斯’时，还因此向三森索取签名。\r\n喜欢的食物是高体?（鱼）和哈密瓜、黑咖啡、碳酸饮料，不擅长吃辣的东西（辣椒、山葵等）。\r\n初恋的人是里见浩太朗。\r\n喜欢的歌手是滨崎步、川本真琴等。\r\n兴趣与特技：蹦床和弹钢琴。\r\n久米田康治作品的FANS，因此为了能够成为配‘绝望先生’的日塔奈美的声优而很高兴。本来很期待能参加久米田的生前葬，但因为工作的关系而没有去成。\r\n在绝望先生的广播‘さよなら绝望放送’中让人看到腐女的一面，每当有这类话题时就会兴奋地大谈。\r\n银河天使関连的聚会上，把担当动画版剧本的井上敏树误会当成是黑社会的人而吓到。\r\n时刻注意保持体型，现在晚餐都以豆腐代替米饭作为主食。\r\n喜欢帕布雷斯特以水豚为原型开发的角色“カピバラさん”，房间里有大量该角色的物品。\r\n喜欢摄像，拥有数码单镜反光相机（佳能のEOS･KISS），在工作的间隔和休息时间经常拍各种景色和小东西。但比较重不方便经常带着到处跑而又去买了理光的小型数码相机。买理光的原因是“因为店员说理光的在微距摄影方面比较强”。另外在工作的空闲时间经常去车站前的家电批发店。\r\n在‘银河天使’中共演的田村ゆかり很疼她，从BLOG上也能看出两人是关系很好的亲友。和中原麻衣、田中理恵、野川樱也有亲交。从新人时代就受新谷照顾的喜多村英梨更是将她神格化，很崇拜她。而野川的昵称“さくにゃん”也是新谷命名的。另外堀江由衣也很亲密的叫她“良子たん”，招待她参加自己的LIVE演出。\r\n身材很好，这让金井美香相当中意她。这点也被浅野真澄指出。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4305,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/46/4994_prsn_RJG93.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d5/46/4994_prsn_RJG93.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d5/46/4994_prsn_RJG93.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/46/4994_prsn_RJG93.jpg"
+                    },
+                    "name": "木村良平",
+                    "short_summary": "3岁时加入向日葵剧团，中学就读不需要穿制服，甚至没有特定讲课内容和课本的私立学校\r\n\r\n2009年在电视动画《东之伊甸》中首次担当男主角泷泽朗[s]为今后Noitamina小王子拉开序幕[/s]\r\n\r\n2011年与一同主持广播节目「Kiramune Presents 江口拓也と木村良平と代永翼の キラキラ☆ビート」的江口拓也、代永翼组成音乐团体Trignal（Kiramune所属）。首张迷你专辑“Party”于2012年12月12日发行。\r\n\r\n2012年，荣获第六回声优奖男声优配角赏\r\n\r\n吸血鬼役相当多，曾在推特自称是吸血鬼声优（在和小信的电击GS里角色设定为‘好想喝酒，虽然其实是想吸血’）「BLOOD LAD」布拉德·D·布莱斯、「Servamp」Lawless、「DIABOLIK LOVERS」无神皓、DramaCD 吸血ダーリン、酔い愛、天顶游戏、明治吸血奇譚、RUNLIMIT）\r\nNoitamina[s]小王子[/s]\r\n东之伊甸 泷泽朗，坡道上的阿波罗 西见薰，ROBOTICS；NOTES 八汐海翔角色，银之匙 八轩勇吾，PSYCHO-PASS 鹿矛围桐斗，野球少年 瑞垣俊二\r\n\r\n界内界外交际广泛，经常招待朋友去家中聚会\r\n自称很怕生害羞，被日笠阳子称为「攻めシャイ」\r\n看似很随意，但其实最会看气氛（丰永）在聚会时能关注到每个人（白石凉子）\r\n恐高\r\n喜欢猫和狗推特头像是老家的猫\r\nkaji病和香菜病患者（和佐仓互称为情敌←虽然最近都被贤章打败了）",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4994,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 15617
+        }
+    ]
+}

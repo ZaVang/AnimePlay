@@ -1,0 +1,46 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/02/48708_crt_IqIIz.jpg?r=1532410347",
+        "grid": "https://lain.bgm.tv/pic/crt/g/95/02/48708_crt_IqIIz.jpg?r=1532410347",
+        "large": "https://lain.bgm.tv/pic/crt/l/95/02/48708_crt_IqIIz.jpg?r=1532410347",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/02/48708_crt_IqIIz.jpg?r=1532410347"
+    },
+    "summary": "17歳の高校三年生。北海道で暮らしていたが大学受験に集中するために上京。同じく就職のために上京した姉と二人暮らしを始める。清楚で真面目、何事にも一生懸命な正統派ヒロイン。天然で要領が悪いが、芯が強く思いがけない積極的な行動を取ることも。",
+    "name": "花坂結衣",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "花坂结衣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "はなさか ゆい"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 49,
+        "collects": 235
+    },
+    "id": 48708,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        198395,
+        226507
+    ]
+}

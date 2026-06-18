@@ -1,0 +1,61 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 17,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/5b/126860_crt_VVVtZ.jpg?r=1705209522",
+        "grid": "https://lain.bgm.tv/pic/crt/g/be/5b/126860_crt_VVVtZ.jpg?r=1705209522",
+        "large": "https://lain.bgm.tv/pic/crt/l/be/5b/126860_crt_VVVtZ.jpg?r=1705209522",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/5b/126860_crt_VVVtZ.jpg?r=1705209522"
+    },
+    "summary": "日本防衛隊第3部隊隊長で、カフカの幼馴染。\r\n27歳の若さで数百に及ぶ怪獣を討伐しており、全隊長の中でもトップクラスの人気と実力を誇る。\r\n狙撃武器の扱いに長けており、大型怪獣の討伐を得意とする。",
+    "name": "亜白ミナ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "亚白米娜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "亜白 ミナ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "MINA ASHIRO"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月17日"
+        },
+        {
+            "key": "身高",
+            "value": "169cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://kaiju-no8.net/"
+        }
+    ],
+    "stat": {
+        "comments": 11,
+        "collects": 30
+    },
+    "id": 126860,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        394623
+    ]
+}

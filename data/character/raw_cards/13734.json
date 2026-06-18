@@ -1,0 +1,43 @@
+{
+    "id": 13734,
+    "name": "大江錦太郎",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/d6/a2/13734_crt_7LNbd.jpg?r=1733555010",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/a2/13734_crt_7LNbd.jpg?r=1733555010",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/a2/13734_crt_7LNbd.jpg?r=1733555010",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d6/a2/13734_crt_7LNbd.jpg?r=1733555010"
+    },
+    "summary": "",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "大江锦太郎"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "年龄",
+            "value": "25岁"
+        }
+    ],
+    "gender": "male",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": null,
+    "birth_day": null,
+    "stat": {
+        "comments": 17,
+        "collects": 30
+    },
+    "anime_ids": [
+        7206
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/d5/11229_crt_0bC1p.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/95/d5/11229_crt_0bC1p.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/95/d5/11229_crt_0bC1p.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/d5/11229_crt_0bC1p.jpg"
+    },
+    "summary": "从天而降的魔装少女。\r\n寄住在步的家里。\r\n在魔法世界“韦莉耶”与叫作“美迦洛”的怪物战斗。\r\n傲娇。魅力点是呆毛。\r\n用电锯型魔装炼器“米斯特汀”变身。\r\n料理超好吃。",
+    "name": "ハルナ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "春奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "haruna"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "145cm"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 107
+    },
+    "id": 11229,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        9774,
+        18797
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/20/21870_crt_311mS.jpg?r=1421389675",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2c/20/21870_crt_311mS.jpg?r=1421389675",
+        "large": "https://lain.bgm.tv/pic/crt/l/2c/20/21870_crt_311mS.jpg?r=1421389675",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/20/21870_crt_311mS.jpg?r=1421389675"
+    },
+    "summary": "甘草奏的同班同学，发色略白的冷酷美少女，外表看起来是个时常口出恶言的毒舌女，实际上却是个喜欢可爱东西的文弱女孩，学园“五黑”之一。\r\n由于一紧张就会无法控制而说出过份的言语，对此时常感到后悔的她，每周会进行一次“一人反省会”，奏第一次目击时被她攻击了“能消除最近五分钟记忆的穴道”而失去了目击过程的印象。",
+    "name": "雪平ふらの",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雪平富良野"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ゆきひら ふらの"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 21,
+        "collects": 122
+    },
+    "id": 21870,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        77570
+    ]
+}

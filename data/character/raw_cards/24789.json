@@ -1,0 +1,57 @@
+{
+    "birth_mon": 8,
+    "gender": "male",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/5a/24789_crt_k6emL.jpg?r=1414330483",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6b/5a/24789_crt_k6emL.jpg?r=1414330483",
+        "large": "https://lain.bgm.tv/pic/crt/l/6b/5a/24789_crt_k6emL.jpg?r=1414330483",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/5a/24789_crt_k6emL.jpg?r=1414330483"
+    },
+    "summary": "頭脳明晰で運動神経も抜群。ルックスも上々だが、友達がいない残念ナルシスト。\r\nわけあって「甘城ブリリアントパーク」の支配人に任命される。\r\n\r\n头脑聪明、运动神经优秀、长相帅气的自恋美男子，在学校没有半个朋友。\r\n被转学生五十铃强迫带到甘城辉煌乐园，并受拉媞珐委托担任甘城辉煌乐园的经理。起初原本打算拒绝，但在看到游乐园的惨状后，决定承担拯救游乐园的责任。",
+    "name": "可児江西也",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "可儿江西也"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "可児江 西也"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かにえ せいや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kanie Seiya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "8月10日"
+        }
+    ],
+    "stat": {
+        "comments": 31,
+        "collects": 87
+    },
+    "id": 24789,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        93545
+    ]
+}

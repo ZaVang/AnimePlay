@@ -1,0 +1,63 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 19,
+    "birth_year": 1987,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/73/91682_crt_5j62i.jpg?r=1625903758",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d9/73/91682_crt_5j62i.jpg?r=1625903758",
+        "large": "https://lain.bgm.tv/pic/crt/l/d9/73/91682_crt_5j62i.jpg?r=1625903758",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/73/91682_crt_5j62i.jpg?r=1625903758"
+    },
+    "summary": "恭也の同居人であり同回生。\r\n通称シノアキ。田舎育ちのおっとり気質。\r\n絵を描くのが大好きで、のめり込むとまわりが見えなくなり、普段ののんびりした雰囲気が一変する。小柄ながら出るところは出ている。",
+    "name": "志野亜貴",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "志野亚贵"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "シノアキ"
+                },
+                {
+                    "v": "秋島シノ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しの あき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "AKI SHINO"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1987年4月19日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://bokurema.com/character/aki/"
+        }
+    ],
+    "stat": {
+        "comments": 72,
+        "collects": 176
+    },
+    "id": 91682,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        296870
+    ]
+}

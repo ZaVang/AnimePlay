@@ -1,0 +1,73 @@
+{
+    "birth_mon": 1,
+    "gender": "male",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/0f/23064_crt_puOQl.jpg?r=1452101984",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1a/0f/23064_crt_puOQl.jpg?r=1452101984",
+        "large": "https://lain.bgm.tv/pic/crt/l/1a/0f/23064_crt_puOQl.jpg?r=1452101984",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/0f/23064_crt_puOQl.jpg?r=1452101984"
+    },
+    "summary": "读过大量的书籍，能够凭借其丰富的知识储备攻克一个又一个难题，拥有如此坚强意志的同时，也因热衷于一些没用的知识而被周围的人称呼为“残念知识”。兴趣是画画，手提包里经常藏着写生簿。\r\n可以将怪灵通过绘画来进行封印，反过来也可以将画好的怪灵召唤出来进行战斗。一直带在身边的手提包是死去的母亲送的。",
+    "name": "一条晴彦",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "一条晴彦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "一条 晴彦"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いちじょう はるひこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ichijo Haruhiko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1月7日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "171cm"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁"
+        },
+        {
+            "key": "所属",
+            "value": "弗塞亚学院高等部1年A组"
+        }
+    ],
+    "stat": {
+        "comments": 11,
+        "collects": 14
+    },
+    "id": 23064,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        94040
+    ]
+}

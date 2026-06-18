@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/fe/70522_crt_w5xnk.jpg?r=1732631605",
+        "grid": "https://lain.bgm.tv/pic/crt/g/47/fe/70522_crt_w5xnk.jpg?r=1732631605",
+        "large": "https://lain.bgm.tv/pic/crt/l/47/fe/70522_crt_w5xnk.jpg?r=1732631605",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/fe/70522_crt_w5xnk.jpg?r=1732631605"
+    },
+    "summary": "京都に住む高校生で図書委員を務める。",
+    "name": "堅書直実",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "坚书直实"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かたがき なおみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Katagaki Naomi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 25
+    },
+    "id": 70522,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        269090
+    ]
+}

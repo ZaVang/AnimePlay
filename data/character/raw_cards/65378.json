@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/68/65378_crt_61iS2.jpg?r=1539459125",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6c/68/65378_crt_61iS2.jpg?r=1539459125",
+        "large": "https://lain.bgm.tv/pic/crt/l/6c/68/65378_crt_61iS2.jpg?r=1539459125",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/68/65378_crt_61iS2.jpg?r=1539459125"
+    },
+    "summary": "人形が好きな少女。\r\n森で迷子になったところをソフィーに助けられたことが縁で、彼女の家に押しかけて、半ば強引に共同生活を行うことになる。",
+    "name": "天野灯",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "天野灯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あまの あかり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Amano Akari"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        }
+    ],
+    "stat": {
+        "comments": 15,
+        "collects": 65
+    },
+    "id": 65378,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        241158
+    ]
+}

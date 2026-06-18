@@ -1,0 +1,61 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/22/31905_crt_Y5F5B.jpg?r=1438385557",
+        "grid": "https://lain.bgm.tv/pic/crt/g/18/22/31905_crt_Y5F5B.jpg?r=1438385557",
+        "large": "https://lain.bgm.tv/pic/crt/l/18/22/31905_crt_Y5F5B.jpg?r=1438385557",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/22/31905_crt_Y5F5B.jpg?r=1438385557"
+    },
+    "summary": "巡之丘学园高中2年级生。原本在购物商场避难，之后被学园生活社救出。",
+    "name": "直樹美紀",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "直树美纪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "直樹 美紀"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なおき みき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Naoki Miki"
+                },
+                {
+                    "k": "昵称",
+                    "v": "みーくん/小美"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月10日"
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 65
+    },
+    "id": 31905,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        106693
+    ]
+}

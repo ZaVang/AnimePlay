@@ -1,0 +1,61 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/d1/125870_crt_DfFwQ.jpg?r=1690991807",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6e/d1/125870_crt_DfFwQ.jpg?r=1690991807",
+        "large": "https://lain.bgm.tv/pic/crt/l/6e/d1/125870_crt_DfFwQ.jpg?r=1690991807",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/d1/125870_crt_DfFwQ.jpg?r=1690991807"
+    },
+    "summary": "外資系金融に勤める。リスクヘッジを最優先に考え論理的に行動する。「ゾンビにならないためにすべき100のこと」をリスト化し、ゾンビ・パンデミック世界を生き抜こうとする。",
+    "name": "三日月閑",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "三日月闲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Shizuka Mikazuki"
+                },
+                {
+                    "k": "日文名",
+                    "v": "シズカ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "年龄",
+            "value": "26歳"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://ja.wikipedia.org/wiki/ゾン100〜ゾンビになるまでにしたい100のこと〜"
+        }
+    ],
+    "stat": {
+        "comments": 120,
+        "collects": 152
+    },
+    "id": 125870,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        414461
+    ]
+}

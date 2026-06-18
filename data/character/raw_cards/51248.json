@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/57/65/51248_crt_d5FfD.jpg?r=1491129702",
+        "grid": "https://lain.bgm.tv/pic/crt/g/57/65/51248_crt_d5FfD.jpg?r=1491129702",
+        "large": "https://lain.bgm.tv/pic/crt/l/57/65/51248_crt_d5FfD.jpg?r=1491129702",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/57/65/51248_crt_d5FfD.jpg?r=1491129702"
+    },
+    "summary": "性格内向、柔和\r\n热爱着动画与游戏的高二学生",
+    "name": "水篠颯太",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "水筱飒太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "水篠 颯太"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みずしの そうた"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mizushino Souta"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 16,
+        "collects": 5
+    },
+    "id": 51248,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        202419
+    ]
+}

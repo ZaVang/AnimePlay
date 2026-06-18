@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/7b/36489_crt_tnC1t.jpg?r=1464323005",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a2/7b/36489_crt_tnC1t.jpg?r=1464323005",
+        "large": "https://lain.bgm.tv/pic/crt/l/a2/7b/36489_crt_tnC1t.jpg?r=1464323005",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/7b/36489_crt_tnC1t.jpg?r=1464323005"
+    },
+    "summary": "美術部で唯一まともな2年生。内巻くんの二次元趣味に呆れつつも、彼のことが気になっている。空回りしがちな振り回され系女の子。",
+    "name": "宇佐美みずき",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宇佐美瑞希"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "宇佐美 みずき"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "うさみ みずき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Usami Mizuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.tbs.co.jp/anime/konobi/chara/mizuki.html"
+        }
+    ],
+    "stat": {
+        "comments": 74,
+        "collects": 573
+    },
+    "id": 36489,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        150746
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 21,
+    "birth_year": 2009,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/16/25240_crt_5QNP1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/92/16/25240_crt_5QNP1.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/92/16/25240_crt_5QNP1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/16/25240_crt_5QNP1.jpg"
+    },
+    "summary": "幽灵子弹篇的女主角。\r\n在Gun Gale Online（GGO）中使用自己昵称为“黑卡蒂II”的狙击步枪“PGM Ultima Ratio HecateII（动画版第二话开头用FR-F2狙击步枪）”及“HK MP7冲锋枪（动画版改为Glock18C手枪）”的15岁少女，2009年出生。",
+    "name": "シノン / 朝田詩乃",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "诗乃／朝田诗乃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "诗浓"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "诗音"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Sinon"
+                },
+                {
+                    "k": "日文名",
+                    "v": "朝田 詩乃"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あさだ しの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Asada Shino"
+                },
+                {
+                    "k": "昵称",
+                    "v": "诗诺诺"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2009年8月21日"
+        }
+    ],
+    "stat": {
+        "comments": 58,
+        "collects": 481
+    },
+    "id": 25240,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        92382
+    ]
+}

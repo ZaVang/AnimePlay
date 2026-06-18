@@ -1,0 +1,41 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/2c/63710_crt_K5g1B.jpg?r=1531933894",
+        "grid": "https://lain.bgm.tv/pic/crt/g/52/2c/63710_crt_K5g1B.jpg?r=1531933894",
+        "large": "https://lain.bgm.tv/pic/crt/l/52/2c/63710_crt_K5g1B.jpg?r=1531933894",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/2c/63710_crt_K5g1B.jpg?r=1531933894"
+    },
+    "summary": "本名杉原和哉。\r\n原是烫了头发的朝气小伙子，却成了偶像团体“极道少女”中活泼可爱的千佳。\r\n21岁，变性前有络腮胡，整容后成了双马尾造型。",
+    "name": "杉原チカ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "杉原千佳"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "杉原和彦"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 8
+    },
+    "id": 63710,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        231278
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "birth_mon": 32,
+    "gender": "female",
+    "birth_day": 6,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/54/67120_crt_4PXP4.jpg?r=1555745622",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c5/54/67120_crt_4PXP4.jpg?r=1555745622",
+        "large": "https://lain.bgm.tv/pic/crt/l/c5/54/67120_crt_4PXP4.jpg?r=1555745622",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/54/67120_crt_4PXP4.jpg?r=1555745622"
+    },
+    "summary": "地方都市・ハーシェルシティの裕福な家に生まれ、ミュージシャンになりたいと願うも誰にも理解されずに過ごす孤独な少女。",
+    "name": "チューズデイ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "特丝黛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "星期二"
+                },
+                {
+                    "k": "英文名",
+                    "v": "TUESDAY"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "火星暦32年6月10日"
+        }
+    ],
+    "stat": {
+        "comments": 27,
+        "collects": 36
+    },
+    "id": 67120,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        239912
+    ]
+}

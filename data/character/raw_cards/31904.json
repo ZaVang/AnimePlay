@@ -1,0 +1,61 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 5,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/84/0a/31904_crt_XHaHz.jpg?r=1437081563",
+        "grid": "https://lain.bgm.tv/pic/crt/g/84/0a/31904_crt_XHaHz.jpg?r=1437081563",
+        "large": "https://lain.bgm.tv/pic/crt/l/84/0a/31904_crt_XHaHz.jpg?r=1437081563",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/84/0a/31904_crt_XHaHz.jpg?r=1437081563"
+    },
+    "summary": "巡之丘学园高中3年级生。个性天真活泼，是学园的气氛制造者。",
+    "name": "丈槍由紀",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "丈枪由纪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "丈槍 由紀"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たけや ゆき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takeya Yuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月5日"
+        },
+        {
+            "key": "引用来源",
+            "value": "myanimelist.net/character/94189/Yuki_Takeya"
+        }
+    ],
+    "stat": {
+        "comments": 41,
+        "collects": 154
+    },
+    "id": 31904,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        106693
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/a4/108664_crt_0ZBrr.jpg?r=1694954337",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5e/a4/108664_crt_0ZBrr.jpg?r=1694954337",
+        "large": "https://lain.bgm.tv/pic/crt/l/5e/a4/108664_crt_0ZBrr.jpg?r=1694954337",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/a4/108664_crt_0ZBrr.jpg?r=1694954337"
+    },
+    "summary": "結果主義のクールな性格の少女。\r\n非合理な行いは大嫌い、なんでも無駄なくスマートに！\r\nだけど世間知らずで、流行りに鈍感。千束に教わるアレコレに戸惑う毎日。\r\n\r\n優秀なリコリスだったが、ワケあって喫茶リコリコで働くことになる。\r\n合理的で無駄を嫌う性格で、リコリスらしくない千束に不満を感じることも。\r\nリコリコでの仕事で成果を出したいと思っている。\r\n\r\n黒いロングヘアの少女。長い髪は、リコリスの制服を着ているときはシンプルなロングヘアーのままであるものの、喫茶リコリコの制服を着るときには千束に結ぶのを手伝ってもらってツインテールに仕立てている。\r\n\r\nクールで真面目な振る舞いのなかに、強く鋭い上昇志向を秘めており、まっすぐに自身の目標に突き進んでいこうとする不器用さと熱さを持ち合わせている。",
+    "name": "井ノ上たきな",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "井之上泷奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "井上泷奈"
+                },
+                {
+                    "k": "日文名",
+                    "v": "井ノ上 たきな"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いのうえ たきな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Inoue Takina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月2日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "公式サイト",
+                    "v": "https://lycoris-recoil.com/character/?chara=takina"
+                }
+            ]
+        },
+        {
+            "key": "年龄",
+            "value": "16岁"
+        },
+        {
+            "key": "使用武器",
+            "value": "S&W M&P99L、PKM"
+        }
+    ],
+    "stat": {
+        "comments": 162,
+        "collects": 634
+    },
+    "id": 108664,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        364450
+    ]
+}

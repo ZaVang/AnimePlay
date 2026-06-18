@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/ac/12015_crt_EyEqX.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9c/ac/12015_crt_EyEqX.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/9c/ac/12015_crt_EyEqX.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/ac/12015_crt_EyEqX.jpg"
+    },
+    "summary": "少年阿尔的邻居。\r\n[mask]因担任高达NT-1的测试驾驶员回到Side6并因此遇到了巴尼。在独眼巨人小队夺取NT-1的袭击中驾驶NT-1出击，凭借特殊装甲打倒了米舍驾驶的MS-18E。圣诞节时面对巴尼的诱敌为了减少平民伤亡而追击到森林，最终NT-1被割首，巴尼战死，克里斯负伤。到最后也不知道巴尼是吉翁军以及自己的对手这一事实。[/mask]",
+    "name": "クリスチーナ・マッケンジー",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "克莉丝蒂娜·马坎基"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Christina Mackenzie"
+                },
+                {
+                    "k": "昵称",
+                    "v": "克莉丝"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 30,
+        "collects": 73
+    },
+    "id": 12015,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1015
+    ]
+}

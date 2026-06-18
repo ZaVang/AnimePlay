@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/53/10361_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/01/53/10361_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/01/53/10361_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/53/10361_crt_anidb.jpg"
+    },
+    "summary": "1912年 - 1913年生まれの17歳。ピッコロのおやじの孫娘で、飛行機設計技師。同じく技師である彼女の父親は元空軍パイロットで、大戦中はポルコと同じ部隊に所属していた。アメリカでの修行経験があり、才能はピッコロのおやじのお墨付き。本人に自覚は見られないがかなりの器量良しである描写があり。",
+    "name": "フィオ・ピッコロ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "菲儿"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "フィオ・ピッコロ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fio Piccolo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 30,
+        "collects": 90
+    },
+    "id": 10361,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        307
+    ]
+}

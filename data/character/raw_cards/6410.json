@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/32/6410_crt_K8w4o.jpg?r=1449746118",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4c/32/6410_crt_K8w4o.jpg?r=1449746118",
+        "large": "https://lain.bgm.tv/pic/crt/l/4c/32/6410_crt_K8w4o.jpg?r=1449746118",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/32/6410_crt_K8w4o.jpg?r=1449746118"
+    },
+    "summary": "13岁，夏希的表弟。阵内荣曾孙之一。总是喜欢一个人待在房间里，看起来与普通的宅男少年没有什么不同，实际却是网络格斗大赛的世界冠军。在OZ中的身份为“KING KAZMA（王者·和马）”，是拥有跨国企业赞助的超级玩家。",
+    "name": "池沢佳主馬",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "池泽佳主马"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "池沢 佳主馬"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いけざわ かずま"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ikezawa Kazuma"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 34
+    },
+    "id": 6410,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1905
+    ]
+}

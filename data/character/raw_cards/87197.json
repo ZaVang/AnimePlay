@@ -1,0 +1,52 @@
+{
+    "birth_mon": 3,
+    "gender": "male",
+    "birth_day": 7,
+    "birth_year": 2001,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4a/31/87197_crt_3K1Ym.jpg?r=1634741668",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4a/31/87197_crt_3K1Ym.jpg?r=1634741668",
+        "large": "https://lain.bgm.tv/pic/crt/l/4a/31/87197_crt_3K1Ym.jpg?r=1634741668",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4a/31/87197_crt_3K1Ym.jpg?r=1634741668"
+    },
+    "summary": "东京咒术高专二年级学生，四名特级咒术师之一，在二年级的学长姐中，是伏黑惠唯一无条件尊敬的人。",
+    "name": "乙骨憂太",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "乙骨忧太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "纯爱战士"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おっこつ ゆうた"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2001年3月7日"
+        }
+    ],
+    "stat": {
+        "comments": 62,
+        "collects": 90
+    },
+    "id": 87197,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        331559
+    ]
+}

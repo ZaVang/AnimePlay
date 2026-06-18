@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/13/205056_crt_hqVqk.jpg?r=1774182959",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c1/13/205056_crt_hqVqk.jpg?r=1774182959",
+        "large": "https://lain.bgm.tv/pic/crt/l/c1/13/205056_crt_hqVqk.jpg?r=1774182959",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/13/205056_crt_hqVqk.jpg?r=1774182959"
+    },
+    "summary": "EVA2号機に乗る「第2の少女」。\r\nドイツ出身で、プラグスーツのイメージカラーはレッド。\r\n勝ち気な性格と気持ちをストレートに反映した言動で周囲を圧倒する",
+    "name": "式波・アスカ・ラングレー",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "式波·明日香·兰格雷"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Shikinami Asuka Langley"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しきなみ・アスカ・ラングレー"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shikinami Asuka Rangurē"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "https://www.evangelion.jp/2_0/chara.html"
+                }
+            ]
+        },
+        {
+            "key": "军衔",
+            "value": "上尉"
+        }
+    ],
+    "stat": {
+        "comments": 11,
+        "collects": 34
+    },
+    "id": 205056,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        22505
+    ]
+}

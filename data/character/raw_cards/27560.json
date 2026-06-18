@@ -1,0 +1,66 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/68/27560_crt_YhgCU.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bf/68/27560_crt_YhgCU.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/bf/68/27560_crt_YhgCU.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/68/27560_crt_YhgCU.jpg"
+    },
+    "summary": "本名は十カオル。旧姓佐村（さむら）。連載開始時は25歳。かに座のO型。ごく普通の会社員である。オタクの知識はほとんどなく（たまに旦那とテレビゲームをする程度）、ネット用語にも疎い。三白眼なのを気にしているが旦那は気に入っているらしい。また金髪であるが新婚当時は黒髪(アニメでは藍色)であった。仕事が大好きであり旦那からは「労働厨」と言われたこともある。喫煙者で料理下手。\r\n--\r\n老公的妻子，在普通企业上班的OL；几乎没有阿宅的相关知识，但包容了老公的所有兴趣，简直就是天使。附带一提她比老公大两岁。",
+    "name": "カオル",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "薰"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "佐村薰、十薰"
+                },
+                {
+                    "k": "本名",
+                    "v": "十カオル"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "年龄",
+            "value": "25岁"
+        },
+        {
+            "key": "旧姓",
+            "value": "佐村（さむら）"
+        },
+        {
+            "key": "星座",
+            "value": "巨蟹座"
+        }
+    ],
+    "stat": {
+        "comments": 7,
+        "collects": 45
+    },
+    "id": 27560,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        105426,
+        121108
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/78/30057_crt_zKh6s.jpg?r=1432823753",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d9/78/30057_crt_zKh6s.jpg?r=1432823753",
+        "large": "https://lain.bgm.tv/pic/crt/l/d9/78/30057_crt_zKh6s.jpg?r=1432823753",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/78/30057_crt_zKh6s.jpg?r=1432823753"
+    },
+    "summary": "星之海学园高中一年生，学生会成员。\r\n\r\n拥有「瞬间移动」能力，但经常因此负伤住院，通过体能训练和在衣服下穿防护装备来作为安全对策，是西森柚咲的狂热粉丝。",
+    "name": "高城丈士朗",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高城丈士朗"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "高城 丈士朗"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たかじょう じょうじろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takajō Jōjirō"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "公式サイト",
+                    "v": "https://charlotte-anime.jp/character/#/jojiro"
+                }
+            ]
+        },
+        {
+            "key": "所属",
+            "value": "星之海学园一年级（学生会所属）"
+        },
+        {
+            "key": "特殊能力",
+            "value": "瞬间移动(高速移动但不能改变方向)"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 25
+    },
+    "id": 30057,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        120925
+    ]
+}

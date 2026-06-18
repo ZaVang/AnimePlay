@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/0d/88426_crt_54z4m.jpg?r=1607763682",
+        "grid": "https://lain.bgm.tv/pic/crt/g/30/0d/88426_crt_54z4m.jpg?r=1607763682",
+        "large": "https://lain.bgm.tv/pic/crt/l/30/0d/88426_crt_54z4m.jpg?r=1607763682",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/0d/88426_crt_54z4m.jpg?r=1607763682"
+    },
+    "summary": "氷狼族の少女。\r\n自由都市ラナリッタで奴隷として売買されていた。\r\n故郷を襲撃し、仲間を殺戮した人間たちに復讐心を\r\n燃やしている。誇り高く仲間思いの性格。\r\nより強くなるため、頭打ちだった戦闘能力を\r\nケヤルガに引き上げてもらう。",
+    "name": "セツナ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "刹那"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Setsuna"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://kaiyari.com/character.html"
+        }
+    ],
+    "stat": {
+        "comments": 34,
+        "collects": 120
+    },
+    "id": 88426,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        295017
+    ]
+}

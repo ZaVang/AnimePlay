@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/12/17841_crt_8k2I8.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1b/12/17841_crt_8k2I8.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/1b/12/17841_crt_8k2I8.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/12/17841_crt_8k2I8.jpg"
+    },
+    "summary": "动画中的女主角，生长在单亲家庭、高中时因为父亲身亡而独自生活。她在大学时代遇见男主角“彼”而一见钟情，后来得知他的身份后仍然与他继续生活，并生下两个“狼的孩子”雨与雪。他们一家四口后来在城市的角落过著平静的生活，但是“彼”死亡后；花便带着两个孩子远离都市，共同到田舍町的乡下生活。\r\n\r\n本作の主人公。父子家庭に育つが、高校生の時に父親を亡くし天涯孤独の身となる。東京のはずれにある国立大学の社会学部社会学科に進学。大学生の時に出会った、「彼」（おおかみおとこ）に一目惚れし、彼の正体を知った後もその想いは変わらず、二人の「おおかみこども」雪と雨を産む。「彼」の死を機に田舎へ引っ越し、二人の子供を育てることを決意する。",
+    "name": "花",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Hana"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hana"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 27,
+        "collects": 81
+    },
+    "id": 17841,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        28440
+    ]
+}

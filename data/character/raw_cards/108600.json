@@ -1,0 +1,65 @@
+{
+    "birth_mon": 10,
+    "gender": "male",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/48/108600_crt_qhb7R.jpg?r=1648212738",
+        "grid": "https://lain.bgm.tv/pic/crt/g/09/48/108600_crt_qhb7R.jpg?r=1648212738",
+        "large": "https://lain.bgm.tv/pic/crt/l/09/48/108600_crt_qhb7R.jpg?r=1648212738",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/48/108600_crt_qhb7R.jpg?r=1648212738"
+    },
+    "summary": "本作の主人公。\r\nどこにでもいる、ごくごく普通の男子高校生。\r\nしかしある日突然、５人の転校生との恋の嵐に巻き込まれることに。",
+    "name": "柏樹朝",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "柏树朝"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Kashiwagi Asahi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "10月8日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "星座",
+            "value": "天秤座"
+        },
+        {
+            "key": "兴趣/特技",
+            "value": "足球"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "香蕉"
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 11
+    },
+    "id": 108600,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        375735
+    ]
+}

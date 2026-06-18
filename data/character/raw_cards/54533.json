@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a0/89/54533_crt_J6l3J.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a0/89/54533_crt_J6l3J.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/a0/89/54533_crt_J6l3J.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a0/89/54533_crt_J6l3J.jpg"
+    },
+    "summary": "自称、元競輪選手のホームレス（本当は自転車屋の親父）。3人の中ではホームレス暦が一番長い。ギャンブルによる借金のために家族を残してホームレスになったが、大きくなっているはずの娘のために、コツコツとお金を貯めている。ギンの娘も、赤ん坊と同じ「キヨコ」という名前である。終幕近くで宝くじで巨額を当てる。",
+    "name": "ギン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "金"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 0,
+        "collects": 8
+    },
+    "id": 54533,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        842
+    ]
+}

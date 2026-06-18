@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/f6/11923_crt_B7KzQ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5f/f6/11923_crt_B7KzQ.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/5f/f6/11923_crt_B7KzQ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/f6/11923_crt_B7KzQ.jpg"
+    },
+    "summary": "真のクラスメイト。元気な天然少女。身長は150cm台後半くらいで、緩い印象を与える顔立ち。軽くパーマがかかった茶髪は、手入れをしないとすぐまっすぐになるらしい。自転車に乗るときにはヘルメットを付ける。肉類は好きでないらしく、野菜と果物しか食べない、本人いわく「フルーツスト」だが、キノコ類は嫌い。\r\n在学中のエリオに「リュウシの方が宇宙人ぽくていい」と言われたせいで、今でもその名前が定着している。本人はそれほど気に入っていないようで、その名で呼ばれると条件反射のように「リュウコやっちゅーに」という台詞が飛び出す。バスケ部に所属しているが補欠である。没個性気味なのを気にして、個性的になろうとするあまり奇怪な行動に走ることもしばしば。文化祭期間中は「やっちゅーに強化月間」を実施した。真を意識していて、エリオや前川さんなどが真と話していると嫉妬する。",
+    "name": "御船流子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "御船流子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みふね りゅうこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mifune Ryuuko"
+                },
+                {
+                    "k": "昵称",
+                    "v": "粒子(リュウシ)"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "ja.wikipedia.org"
+        }
+    ],
+    "stat": {
+        "comments": 30,
+        "collects": 153
+    },
+    "id": 11923,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        10377
+    ]
+}

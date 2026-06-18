@@ -1,0 +1,68 @@
+{
+    "id": 6389,
+    "name": "藤倉優",
+    "type": 1,
+    "images": {
+        "large": "https://lain.bgm.tv/pic/crt/l/fd/41/6389_crt_JV332.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/41/6389_crt_JV332.jpg",
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/41/6389_crt_JV332.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fd/41/6389_crt_JV332.jpg"
+    },
+    "summary": "来自孤儿院。对资助了原本快要倒闭的孤儿院的一心（哲平的外公）内心充满感激。\r\n一直侍奉有马家，现在作为哲平的专属女仆。在秀峰学园内与哲平同在2年级，且是同班同学。让哲平成为有马集团出色的继承人作为目标在身旁帮助哲平为自己的职责。平时总是很温柔，但有时也会非常严厉。总是和哲平保持一定的距离，一刻也不忘记辅助主人哲平的职责。本来就是女仆的优和之前一直是个平民的哲平，经常上演相互谦让的拉锯战。很少提及自己的身世和自己的事，对哲平的外公一心怀有感恩之情。",
+    "locked": false,
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藤仓优"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "藤倉優"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fujikura Yuu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "????-01-26"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "BWH",
+            "value": "84/58/83"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "gender": "female",
+    "blood_type": null,
+    "birth_year": null,
+    "birth_mon": 1,
+    "birth_day": 26,
+    "stat": {
+        "comments": 5,
+        "collects": 46
+    },
+    "anime_ids": [
+        1757
+    ]
+}
