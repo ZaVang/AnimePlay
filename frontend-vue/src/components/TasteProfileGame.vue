@@ -89,7 +89,7 @@ function imageSrc(id: number): string {
   return `/data/images/anime/${id}.jpg`;
 }
 
-const VIRTUAL_GRID_CONFIG = { itemHeight: 170, containerHeight: 460, minItemWidth: 96, gap: 12 };
+const VIRTUAL_GRID_CONFIG = { itemHeight: 240, containerHeight: 540, minItemWidth: 132, gap: 14 };
 
 /** 评分对比文案。 */
 const ratingDeltaText = computed(() => {
@@ -302,8 +302,8 @@ const ratingDeltaText = computed(() => {
   display: flex; align-items: center; justify-content: center;
 }
 .pick-name {
-  position: absolute; left: 0; right: 0; bottom: 0; padding: 2px 4px; font-size: 0.68rem; text-align: center;
-  color: #fff; background: rgb(0 0 0 / 0.6); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 3px 4px; font-size: 0.78rem; text-align: center;
+  color: #fff; background: rgb(0 0 0 / 0.62); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 
 /* 人格 */
@@ -352,7 +352,7 @@ const ratingDeltaText = computed(() => {
 .hl-sub { font-size: 0.7rem; color: rgb(var(--c-ink-2)); }
 
 /* 猜你想看 */
-.rec-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 0.6rem; }
+.rec-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); gap: 0.7rem; }
 .rec {
   display: flex; flex-direction: column; border-radius: 0.5rem; overflow: hidden;
   background: rgb(var(--c-surface)); border: 1px solid rgb(var(--c-line));
