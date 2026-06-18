@@ -9,7 +9,9 @@
 
   番剧 composite = W_QUALITY · pct(rating_score) + (1-W_QUALITY) · pct(rating_total)
     —— pct 为全库中位百分位（对并列稳健、对长尾不敏感），两轴各 0..1。
-  角色 没有 bangumi 评分，只能按人气：comprehensive_popularity = collects + 所属番(新稀有度)最大加成。
+  角色 没有 bangumi 评分，按 **Bangumi 角色人气分 popularity_score** 全局排名（并列用 collects、id
+    兜底）。不再用 collects+所属番加成评级——那会让小角色蹭名作（个人人气低却进高档）。
+    comprehensive_popularity 仍按新番稀有度重算，但只用于卡详情「综合人气」展示，不参与评级。
 
 分档**保持各稀有度当前数量不变**（即同样多的 UR/HR/…，只是换更合理的卡填进去），
 故抽卡概率盘面/图鉴规模不变，纯粹是「谁该是什么档」的重排。
@@ -50,15 +52,15 @@ def midrank_pct(values: List[float]):
     return pct
 
 
-def assign_by_current_counts(cards: List[dict], score_key: str) -> Dict[str, int]:
-    """按 score_key 降序，保持各稀有度**当前数量**重新填充。返回变更计数。"""
+def assign_by_current_counts(cards: List[dict], keyfn) -> Dict[str, int]:
+    """按 keyfn 降序，保持各稀有度**当前数量**重新填充。返回变更计数。"""
     counts = Counter(c["rarity"] for c in cards)
-    ranked = sorted(cards, key=lambda c: (c[score_key], c.get("id", 0)), reverse=True)
+    ranked = sorted(cards, key=keyfn, reverse=True)
     changed = 0
     i = 0
     for r in RARITY_ORDER:
         for _ in range(counts.get(r, 0)):
-            if cards is not None and i < len(ranked):
+            if i < len(ranked):
                 if ranked[i]["rarity"] != r:
                     changed += 1
                 ranked[i]["rarity"] = r
@@ -71,23 +73,29 @@ def regrade_anime(anime: List[dict]) -> None:
     pp = midrank_pct([a.get("rating_total", 0) or 0 for a in anime])
     for a in anime:
         a["_composite"] = W_QUALITY * pq(a.get("rating_score", 0) or 0) + (1 - W_QUALITY) * pp(a.get("rating_total", 0) or 0)
-    info = assign_by_current_counts(anime, "_composite")
+    info = assign_by_current_counts(anime, lambda c: (c["_composite"], c.get("id", 0)))
     for a in anime:
         del a["_composite"]
     logging.info("番剧重排：%d/%d 变更档位；保持分布 %s", info["changed"], len(anime), info["counts"])
 
 
 def regrade_characters(chars: List[dict], anime_rarity: Dict[int, str]) -> None:
-    # 角色综合人气随新番稀有度重算
+    def collects_of(c):
+        return (c.get("stats", {}) or {}).get("collects", 0) or 0
+
+    # comprehensive_popularity 随新番稀有度重算（仅供卡详情「综合人气」展示，不参与评级）
     for c in chars:
-        collects = (c.get("stats", {}) or {}).get("collects", 0) or 0
         max_bonus = 0
         for aid in c.get("anime_ids", []) or []:
             r = anime_rarity.get(aid)
             if r:
                 max_bonus = max(max_bonus, ANIME_RARITY_SCORE_BONUS.get(r, 0))
-        c["comprehensive_popularity"] = collects + max_bonus
-    info = assign_by_current_counts(chars, "comprehensive_popularity")
+        c["comprehensive_popularity"] = collects_of(c) + max_bonus
+
+    # 评级：纯角色人气 popularity_score（并列用 collects、id 兜底，避免 0 人气并列乱序）
+    info = assign_by_current_counts(
+        chars, lambda c: ((c.get("popularity_score") or 0), collects_of(c), c.get("id", 0))
+    )
     logging.info("角色重排：%d/%d 变更档位；保持分布 %s", info["changed"], len(chars), info["counts"])
 
 

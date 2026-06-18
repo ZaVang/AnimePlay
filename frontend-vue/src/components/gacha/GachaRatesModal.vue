@@ -78,6 +78,21 @@ const rates = computed(() => {
           </div>
           
           <div>
+            <h3 class="font-semibold text-ink-2 mb-2">稀有度怎么定的</h3>
+            <ul class="list-disc list-inside space-y-2 text-sm text-ink-2">
+              <li v-if="gachaType === 'anime'">
+                番剧按 <strong>「品质 × 人气」综合</strong>评级：<span class="font-bold text-accent">Bangumi 评分</span>占 65% + <span class="font-bold text-accent">评分人数</span>占 35%，全部番剧统一排名后分档——又高分、看的人又多，排得越靠前、稀有度越高。
+              </li>
+              <li v-else>
+                角色按 <strong>Bangumi 角色人气</strong>评级：越多人喜欢这个角色，稀有度越高（Bangumi 不给角色打质量分，故只看人气）。
+              </li>
+              <li>
+                稀有度只决定<strong>收集与抽卡的稀缺度</strong>，<strong class="text-accent">不影响对战强度</strong>——卡的强度由费用和单独的强度值决定，和稀有度解耦。
+              </li>
+            </ul>
+          </div>
+
+          <div>
             <h3 class="font-semibold text-ink-2 mb-2">卡池机制</h3>
             <ul class="list-disc list-inside space-y-2 text-sm text-ink-2">
               <li>
