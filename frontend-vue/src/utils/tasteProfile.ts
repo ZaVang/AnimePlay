@@ -20,6 +20,11 @@ const SOURCE_TAG_SET = new Set<string>(SOURCE_TAGS);
 const TOP_TAGS_LIMIT = 8;
 const ERA_ORDER = ['2000年前', '2000年代', '2010年代', '2020年代'] as const;
 
+/** 某番剧的「题材标签」：去重 + 剔除格式/地区噪声与来源标签。 */
+function genreTagsOf(a: AnimeCard): string[] {
+  return [...new Set(a.synergy_tags ?? [])].filter(t => !FORMAT_REGION_NOISE.has(t) && !SOURCE_TAG_SET.has(t));
+}
+
 export interface TagCount {
   tag: string;
   count: number;
@@ -174,7 +179,8 @@ export function buildTasteReport(watched: readonly AnimeCard[], allAnime: readon
   const tagCounts = new Map<string, number>();
   const sourceCounts = new Map<string, number>();
   for (const a of watched) {
-    for (const t of a.synergy_tags ?? []) {
+    // 按番去重——同一部番的重复标签只算一次。
+    for (const t of new Set(a.synergy_tags ?? [])) {
       if (SOURCE_TAG_SET.has(t)) {
         sourceCounts.set(t, (sourceCounts.get(t) ?? 0) + 1);
       } else if (!FORMAT_REGION_NOISE.has(t)) {
@@ -265,4 +271,56 @@ export function buildTasteReport(watched: readonly AnimeCard[], allAnime: readon
     highlights: { highestRated, oldest, newest, mostNiche },
   };
   return { ...base, persona: pickPersona(base) };
+}
+
+export interface AnimeRecommendation {
+  anime: AnimeCard;
+  /** 排序分（题材契合度为主，评分次之）。 */
+  score: number;
+  /** 命中的题材标签（按你的偏好强度排序，最多 3 个）——推荐理由。 */
+  reasonTags: string[];
+}
+
+/**
+ * 基于「已看番剧」的内容推荐（content-based）：
+ * 由已看番的题材标签构建偏好向量，给未看番按「命中偏好标签的强度之和」打分，
+ * 评分作次级 tiebreak。已看的不再推荐。无题材信号（空集/全无标签）时返回空。
+ *
+ * 注：候选池就是传入的 allAnime——当卡池扩充更多小众番后，推荐会自动覆盖到它们（发现性）。
+ */
+export function recommendFromTaste(
+  watched: readonly AnimeCard[],
+  allAnime: readonly AnimeCard[],
+  limit = 8,
+): AnimeRecommendation[] {
+  if (watched.length === 0) return [];
+  const watchedIds = new Set(watched.map(a => a.id));
+  const affinity = new Map<string, number>();
+  for (const a of watched) {
+    for (const t of genreTagsOf(a)) affinity.set(t, (affinity.get(t) ?? 0) + 1);
+  }
+  if (affinity.size === 0) return [];
+  const maxAff = Math.max(...affinity.values());
+
+  const scored: AnimeRecommendation[] = [];
+  for (const cand of allAnime) {
+    if (watchedIds.has(cand.id)) continue;
+    let sum = 0;
+    const matched: string[] = [];
+    for (const t of genreTagsOf(cand)) {
+      const aff = affinity.get(t);
+      if (aff) {
+        sum += aff;
+        matched.push(t);
+      }
+    }
+    if (sum <= 0) continue;
+    const rating = ratingScoreOf(cand) ?? 0;
+    // 题材契合主导（归一到偏好峰值），评分仅作 ±1 内的次级影响。
+    const score = sum / maxAff + rating / 100;
+    matched.sort((a, b) => (affinity.get(b) ?? 0) - (affinity.get(a) ?? 0) || a.localeCompare(b, 'zh-Hans-CN'));
+    scored.push({ anime: cand, score, reasonTags: matched.slice(0, 3) });
+  }
+  scored.sort((a, b) => b.score - a.score || (ratingScoreOf(b.anime) ?? 0) - (ratingScoreOf(a.anime) ?? 0));
+  return scored.slice(0, limit);
 }

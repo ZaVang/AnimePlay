@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { buildTasteReport } from './tasteProfile';
+import { buildTasteReport, recommendFromTaste } from './tasteProfile';
 import type { AnimeCard, Rarity } from '@/types/card';
 
 function anime(
@@ -118,5 +118,47 @@ describe('buildTasteReport', () => {
       { rarity: 'UR', count: 1 },
       { rarity: 'SR', count: 2 },
     ]);
+  });
+});
+
+describe('recommendFromTaste', () => {
+  it('空已看集 → 无推荐', () => {
+    expect(recommendFromTaste([], ALL)).toEqual([]);
+  });
+
+  it('按题材契合度推荐未看番，已看的不出现，带命中标签理由', () => {
+    const watched = [anime(601, { synergy_tags: ['百合', '校园'] }), anime(602, { synergy_tags: ['百合'] })];
+    const pool = [
+      ...watched,
+      anime(701, { synergy_tags: ['百合', '校园'], rating_score: 7 }), // 命中 百合+校园 → 最高
+      anime(702, { synergy_tags: ['战斗'], rating_score: 9 }),         // 无命中 → 不推荐
+      anime(703, { synergy_tags: ['校园'], rating_score: 8 }),         // 命中 校园
+    ];
+    const recs = recommendFromTaste(watched, pool, 5);
+    const ids = recs.map(r => r.anime.id);
+    expect(ids).not.toContain(601); // 已看
+    expect(ids).not.toContain(602);
+    expect(ids).not.toContain(702); // 零命中不推荐
+    expect(ids[0]).toBe(701);       // 命中两个高偏好标签，排第一
+    expect(recs[0].reasonTags).toContain('百合');
+  });
+
+  it('已看番题材无有效标签 → 无推荐', () => {
+    const watched = [anime(801, { synergy_tags: ['日本', 'TV', '漫画改'] })]; // 全是噪声/来源
+    const recs = recommendFromTaste(watched, [...watched, anime(802, { synergy_tags: ['奇幻'] })]);
+    expect(recs).toEqual([]);
+  });
+
+  it('同一部番的重复标签只算一次（理由不重复）', () => {
+    const watched = [anime(1101, { synergy_tags: ['恋爱'] })];
+    const pool = [watched[0], anime(1102, { synergy_tags: ['恋爱', '恋爱', '日常'], rating_score: 8 })];
+    const recs = recommendFromTaste(watched, pool);
+    expect(recs[0].reasonTags).toEqual(['恋爱']); // 不是 ['恋爱','恋爱']
+  });
+
+  it('limit 截断', () => {
+    const watched = [anime(901, { synergy_tags: ['奇幻'] })];
+    const pool = [watched[0], ...Array.from({ length: 10 }, (_, i) => anime(1000 + i, { synergy_tags: ['奇幻'], rating_score: 7 + i * 0.1 }))];
+    expect(recommendFromTaste(watched, pool, 3)).toHaveLength(3);
   });
 });

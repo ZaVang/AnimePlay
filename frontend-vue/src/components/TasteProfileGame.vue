@@ -8,7 +8,7 @@ import { ref, computed } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { useMiniGamesStore } from '@/stores/minigames/higherLower';
-import { buildTasteReport } from '@/utils/tasteProfile';
+import { buildTasteReport, recommendFromTaste } from '@/utils/tasteProfile';
 import type { AnimeCard } from '@/types/card';
 import VirtualGrid from '@/components/VirtualGrid.vue';
 
@@ -42,6 +42,7 @@ const pickList = computed(() => {
 
 const watchedAnime = computed<AnimeCard[]>(() => allAnime.value.filter(a => isWatched(a.id)));
 const report = computed(() => buildTasteReport(watchedAnime.value, allAnime.value));
+const recommendations = computed(() => recommendFromTaste(watchedAnime.value, allAnime.value, 8));
 
 function toggle(item: AnimeCard) {
   userStore.toggleTasteWatched(item.id);
@@ -223,6 +224,28 @@ const ratingDeltaText = computed(() => {
           </div>
         </div>
       </section>
+
+      <!-- 猜你想看（基于品味的内容推荐；点「看过」加入记录并刷新画像） -->
+      <section v-if="recommendations.length" class="block">
+        <h4 class="block-title">🍿 猜你想看</h4>
+        <p class="text-xs text-ink-2 mb-2">根据你的题材偏好推荐你还没看的番——点「看过」加入记录可让画像更准。</p>
+        <div class="rec-grid">
+          <div v-for="rec in recommendations" :key="rec.anime.id" class="rec">
+            <img loading="lazy" decoding="async" :src="imageSrc(rec.anime.id)" class="rec-img" />
+            <div class="rec-body">
+              <div class="rec-name" :title="rec.anime.name">{{ rec.anime.name }}</div>
+              <div class="rec-meta">
+                <span v-if="rec.anime.rating_score">⭐ {{ rec.anime.rating_score }}</span>
+                <span v-if="rec.anime.date">· {{ rec.anime.date.slice(0, 4) }}</span>
+              </div>
+              <div class="rec-tags">
+                <span v-for="t in rec.reasonTags" :key="t" class="rec-tag">{{ t }}</span>
+              </div>
+              <button class="rec-btn" @click="toggle(rec.anime)">+ 看过</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </template>
@@ -291,4 +314,22 @@ const ratingDeltaText = computed(() => {
 .hl-tag { font-size: 0.7rem; color: rgb(var(--c-accent)); font-weight: 700; }
 .hl-name { font-size: 0.8rem; color: rgb(var(--c-ink)); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .hl-sub { font-size: 0.7rem; color: rgb(var(--c-ink-2)); }
+
+/* 猜你想看 */
+.rec-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 0.6rem; }
+.rec {
+  display: flex; flex-direction: column; border-radius: 0.5rem; overflow: hidden;
+  background: rgb(var(--c-surface)); border: 1px solid rgb(var(--c-line));
+}
+.rec-img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; object-position: top; }
+.rec-body { padding: 0.3rem 0.35rem 0.4rem; display: flex; flex-direction: column; gap: 0.2rem; }
+.rec-name { font-size: 0.72rem; font-weight: 700; color: rgb(var(--c-ink)); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rec-meta { font-size: 0.66rem; color: rgb(var(--c-ink-2)); }
+.rec-tags { display: flex; flex-wrap: wrap; gap: 0.15rem; min-height: 1rem; }
+.rec-tag { font-size: 0.6rem; padding: 0.05rem 0.3rem; border-radius: 999px; background: rgb(var(--c-accent) / 0.14); color: rgb(var(--c-accent)); }
+.rec-btn {
+  margin-top: 0.15rem; font-size: 0.66rem; padding: 0.2rem 0; border-radius: 0.35rem;
+  background: rgb(var(--c-surface-2)); color: rgb(var(--c-ink-2)); border: 1px solid rgb(var(--c-line)); cursor: pointer;
+}
+.rec-btn:hover { background: rgb(var(--c-accent)); color: rgb(var(--c-on-accent)); border-color: rgb(var(--c-accent)); }
 </style>
