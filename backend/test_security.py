@@ -173,6 +173,24 @@ def main():
     tmp_leftovers = [n for n in os.listdir(os.path.dirname(alice_path)) if n.startswith(".tmp-")]
     check(len(tmp_leftovers) == 0, "no temp file leftovers after failed write")
 
+    print("== 邀请码门控：设了 INVITE_CODE 后，注册必须带对码，老账号登录不受影响 ==")
+    os.environ["INVITE_CODE"] = "secret-invite-2026"
+    try:
+        # 注册新号不带码 → 403
+        r = client.post("/api/auth/login", json={"username": "carol", "password": "carol-pass"})
+        check(r.status_code == 403, f"register without invite when gated → 403 (got {r.status_code})")
+        # 注册新号带错码 → 403
+        r = client.post("/api/auth/login", json={"username": "carol", "password": "carol-pass", "invite": "nope"})
+        check(r.status_code == 403, f"register with wrong invite → 403 (got {r.status_code})")
+        # 注册新号带对码 → 200
+        r = client.post("/api/auth/login", json={"username": "carol", "password": "carol-pass", "invite": "secret-invite-2026"})
+        check(r.status_code == 200 and bool(r.get_json().get("token")), f"register with correct invite → 200 (got {r.status_code})")
+        # 已有用户 alice 登录无需邀请码（门控只卡注册）
+        r = client.post("/api/auth/login", json={"username": "alice", "password": "correct-horse"})
+        check(r.status_code == 200, f"existing user login ignores invite gate → 200 (got {r.status_code})")
+    finally:
+        os.environ.pop("INVITE_CODE", None)
+
     # --- 收尾 ---
     print()
     if _failures:

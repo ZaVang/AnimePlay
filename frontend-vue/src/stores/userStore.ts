@@ -61,7 +61,7 @@ export const useUserStore = defineStore('user', () => {
    * 登录/首次注册（claim-on-first-login）。
    * 返回 { ok, error }：失败时不进入登录态（不设 currentUser、不挂 token）。
    */
-  async function login(username: string, password: string): Promise<{ ok: boolean; error?: string }> {
+  async function login(username: string, password: string, invite?: string): Promise<{ ok: boolean; error?: string }> {
     if (!username || !username.match(/^[a-zA-Z0-9]+$/)) {
       return { ok: false, error: '用户名只能包含字母和数字。' };
     }
@@ -69,7 +69,7 @@ export const useUserStore = defineStore('user', () => {
       return { ok: false, error: '请输入密码。' };
     }
     try {
-      const { token } = await loginRequest(username, password);
+      const { token } = await loginRequest(username, password, invite);
       setAuthToken(token); // token 先挂上，后续 loadFromServer 才能带鉴权头
       profile.currentUser = username;
       await loadFromServer();

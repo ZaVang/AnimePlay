@@ -64,11 +64,14 @@ def login():
     data = request.get_json(silent=True) or {}
     username = data.get("username")
     password = data.get("password")
-    token, error = auth.login_or_register(username, password)
+    invite = data.get("invite")
+    token, error = auth.login_or_register(username, password, invite)
     if error == "invalid_username":
         return jsonify({"error": "用户名只能包含字母和数字"}), 400
     if error == "invalid_password":
         return jsonify({"error": "密码不能为空"}), 400
+    if error == "bad_invite":
+        return jsonify({"error": "注册需要有效邀请码"}), 403
     if error == "bad_credentials":
         return jsonify({"error": "用户名或密码错误"}), 401
     return jsonify({"token": token, "username": username}), 200

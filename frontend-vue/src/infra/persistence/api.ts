@@ -33,12 +33,15 @@ function authHeaders(): Record<string, string> {
   return authToken ? { Authorization: `Bearer ${authToken}` } : {};
 }
 
-/** 登录/首次注册（claim-on-first-login）。失败时抛错（含状态码语义供上层区分）。 */
-export async function loginRequest(username: string, password: string): Promise<LoginResult> {
+/**
+ * 登录/首次注册（claim-on-first-login）。失败时抛错（含状态码语义供上层区分）。
+ * invite：可选邀请码——仅当服务端设了 INVITE_CODE 时，注册新号才需要；老账号登录留空即可。
+ */
+export async function loginRequest(username: string, password: string, invite?: string): Promise<LoginResult> {
   const response = await fetch('/api/auth/login', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ username, password }),
+    body: JSON.stringify({ username, password, invite }),
   });
   if (!response.ok) {
     let message = `登录失败（${response.status}）`;

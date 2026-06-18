@@ -45,6 +45,7 @@ const collectionsHasSignal = computed(() => {
 });
 const usernameInput = ref('');
 const passwordInput = ref('');
+const inviteInput = ref('');
 const loginError = ref('');
 const loggingIn = ref(false);
 
@@ -56,11 +57,17 @@ async function handleLogin() {
   }
   loggingIn.value = true;
   loginError.value = '';
-  const result = await userStore.login(usernameInput.value, passwordInput.value);
+  // 邀请码仅首次注册可能需要（服务端设了 INVITE_CODE 时）；留空则不带。
+  const result = await userStore.login(
+    usernameInput.value,
+    passwordInput.value,
+    inviteInput.value.trim() || undefined,
+  );
   loggingIn.value = false;
   if (result.ok) {
     usernameInput.value = '';
     passwordInput.value = '';
+    inviteInput.value = '';
     // E3-T1：登录成功后，未看过引导的设备弹首登引导（localStorage 设备标志，不进存档）
     onboardingStore.maybeStartGuide();
   } else {
@@ -138,12 +145,22 @@ onMounted(() => {
                               placeholder="密码"
                               class="input-control w-32"
                           />
+                          <input
+                              v-model="inviteInput"
+                              @keyup.enter="handleLogin"
+                              type="text"
+                              autocomplete="off"
+                              placeholder="邀请码"
+                              title="首次注册需要邀请码；已有账号登录可留空"
+                              class="input-control w-24"
+                          />
 
                           <button @click="handleLogin" :disabled="loggingIn" class="btn-primary">
                               {{ loggingIn ? '登录中…' : '登录' }}
                           </button>
                       </div>
 
+                      <p class="text-xs text-ink-3">首次注册需邀请码 · 已有账号可留空</p>
                       <p v-if="loginError" class="text-xs text-danger">{{ loginError }}</p>
                   </div>
                 </div>

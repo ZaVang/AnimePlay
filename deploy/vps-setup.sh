@@ -72,8 +72,11 @@ log "构建前端（npm ci && build，几分钟）"
 # --- 6. 环境变量（SECRET_KEY 一次生成并持久化）-----------------------------
 mkdir -p "$APP_DIR/data/user_data" "$APP_DIR/data/auth"
 if [ ! -f "$APP_DIR/.env" ]; then
-  log "生成 SECRET_KEY 与持久化路径 → $APP_DIR/.env"
+  log "生成 SECRET_KEY / 邀请码 / 持久化路径 → $APP_DIR/.env"
   SECRET=$(python3 -c "import secrets;print(secrets.token_urlsafe(48))")
+  # 邀请码：默认随机生成（注册新号要带它，挡无限建号）。想用好记的自定义码：
+  #   INVITE_CODE=myfriends2026 bash <(curl ...)   ——会沿用你传的值。
+  INVITE="${INVITE_CODE:-$(python3 -c 'import secrets;print(secrets.token_hex(4))')}"
   ORIGINS="http://localhost:5173"
   [ -n "$DOMAIN" ] && ORIGINS="https://$DOMAIN"
   cat > "$APP_DIR/.env" <<EOF
@@ -81,8 +84,10 @@ SECRET_KEY=$SECRET
 USER_DATA_DIR=$APP_DIR/data/user_data
 AUTH_CREDENTIALS_PATH=$APP_DIR/data/auth/credentials.json
 ALLOWED_ORIGINS=$ORIGINS
+INVITE_CODE=$INVITE
 EOF
 fi
+INVITE_CODE_VAL=$(grep '^INVITE_CODE=' "$APP_DIR/.env" | cut -d= -f2-)
 
 # --- 7. systemd 常驻服务（gunicorn 必须在 backend/ 目录跑，server.py 同目录 import auth）---
 BIND_HOST="127.0.0.1"; [ -z "$DOMAIN" ] && BIND_HOST="0.0.0.0"   # 无域名时 gunicorn 直接对外
@@ -128,5 +133,7 @@ else
   echo "   （记得控制台防火墙已放行 TCP $PORT）"
 fi
 
+echo -e "\n\033[1;35m🎟  邀请码（发给朋友才能注册新号）：$INVITE_CODE_VAL\033[0m"
+echo "    想改成好记的：编辑 $APP_DIR/.env 的 INVITE_CODE，再 systemctl restart animeplay"
 echo -e "\n维护命令：  日志 journalctl -u animeplay -f   ｜  重启 systemctl restart animeplay   ｜  更新代码后重跑本脚本即可"
 echo "存档/账号在 $APP_DIR/data/user_data 和 data/auth —— 记得定期备份这两处（无数据库，就是这些 JSON）。"

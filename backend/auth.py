@@ -118,13 +118,16 @@ def username_from_auth_header(header_value):
     return verify_token(parts[1].strip())
 
 
-def login_or_register(username, password):
+def login_or_register(username, password, invite=None):
     """登录或首次注册（claim-on-first-login）。
 
     返回 (token, error)：成功时 (token_str, None)；失败时 (None, reason)。
     - 用户名非法 → ("invalid_username")
     - 密码为空 → ("invalid_password")
     - credentials 里无此用户 → 注册（落盘哈希），签发 token
+      · 若设了环境变量 INVITE_CODE，则注册必须带对码，否则 ("bad_invite")
+      · 邀请码只卡「注册新号」这一步——已有账号登录不受影响（防无限建号，
+        而不是给每次登录加摩擦）。env 读在调用时，便于按需开关/测试隔离。
     - 有此用户 → 校验密码，对则签发 token，错则 ("bad_credentials")
     """
     if not is_valid_username(username):
@@ -137,6 +140,9 @@ def login_or_register(username, password):
 
     if stored is None:
         # claim-on-first-login：首次登录即注册
+        required_invite = os.environ.get("INVITE_CODE")
+        if required_invite and invite != required_invite:
+            return None, "bad_invite"
         credentials[username] = generate_password_hash(password)
         _save_credentials(credentials)
         return generate_token(username), None
