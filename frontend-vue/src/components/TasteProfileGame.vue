@@ -158,18 +158,78 @@ async function exportReport() {
   exporting.value = true;
   exportError.value = '';
   try {
-    const CW = 110, CH = 154, GAP = 6, PAD = 18, DPR = 2, HEADER = 132;
+    const r = report.value;
+    const PAD = 22, DPR = 2, MIN_W = 720;
+    const CW = 104, CH = 146, GAP = 6;
     const cols = Math.min(12, Math.ceil(Math.sqrt(list.length)));
-    const rows = Math.ceil(list.length / cols);
-    const canvasW = cols * CW + (cols - 1) * GAP + PAD * 2;
-    const canvasH = HEADER + rows * CH + (rows - 1) * GAP + PAD;
-
-    const imgs = await Promise.all(list.map(a => loadImg(thumbImageSrc('anime', a.id))));
+    const gridRows = Math.ceil(list.length / cols);
+    const gridW = cols * CW + (cols - 1) * GAP;
+    const canvasW = Math.max(gridW + PAD * 2, MIN_W);
+    const gridX = Math.round((canvasW - gridW) / 2);
 
     const surface = cssVar('--c-surface', '#fff');
     const ink = cssVar('--c-ink', '#222');
     const ink2 = cssVar('--c-ink-2', '#666');
     const accent = cssVar('--c-accent', '#2ba8a2');
+    const surface2 = cssVar('--c-surface-2', '#eee');
+    const trunc = (s: string, n: number) => (s.length > n ? s.slice(0, n) + '…' : s);
+
+    // 头部布局：ctx=null 仅测高，ctx 非空则绘制；两次调用序列一致以保证尺寸吻合。
+    function layoutHeader(ctx: CanvasRenderingContext2D | null): number {
+      let y = PAD;
+      const line = (text: string, font: string, color: string, dy: number) => {
+        if (ctx) { ctx.font = font; ctx.fillStyle = color; ctx.textBaseline = 'top'; ctx.textAlign = 'left'; ctx.fillText(text, PAD, y); }
+        y += dy;
+      };
+      const sectionTitle = (t: string) => line(t, 'bold 15px system-ui, sans-serif', ink, 23);
+      const bars = (items: { label: string; pct: number; count: number }[]) => {
+        const maxPct = Math.max(1, ...items.map(it => it.pct));
+        const labelW = 86, valW = 34, tx = PAD + labelW, tw = canvasW - PAD * 2 - labelW - valW;
+        for (const it of items) {
+          if (ctx) {
+            ctx.font = '13px system-ui, sans-serif'; ctx.textBaseline = 'middle';
+            ctx.fillStyle = ink2; ctx.textAlign = 'left'; ctx.fillText(trunc(it.label, 6), PAD, y + 8);
+            ctx.fillStyle = surface2; ctx.fillRect(tx, y + 3, tw, 12);
+            ctx.fillStyle = accent; ctx.fillRect(tx, y + 3, Math.max(2, (tw * it.pct) / maxPct), 12);
+            ctx.fillStyle = ink2; ctx.textAlign = 'right'; ctx.fillText(String(it.count), canvasW - PAD, y + 8);
+            ctx.textAlign = 'left'; ctx.textBaseline = 'top';
+          }
+          y += 20;
+        }
+        y += 6;
+      };
+
+      line(`${r.persona.emoji} ${r.persona.title}`, 'bold 24px system-ui, sans-serif', ink, 32);
+      line(r.persona.description, '14px system-ui, sans-serif', ink2, 24);
+      line(
+        `已看 ${r.count} 部 · 覆盖 ${r.coverage}% · 均分 ${r.avgRating ?? '—'} · 小众指数 ${r.nicheScore}/100`,
+        '13px system-ui, sans-serif', ink2, 28,
+      );
+      if (r.topTags.length) { sectionTitle('题材偏好'); bars(r.topTags.map(t => ({ label: t.tag, pct: t.pct, count: t.count }))); }
+      if (r.eras.length) { sectionTitle('年代分布'); bars(r.eras.map(e => ({ label: e.label, pct: e.pct, count: e.count }))); }
+      if (r.sourceMix.length) {
+        sectionTitle('原作来源');
+        line(r.sourceMix.map(s => `${s.source} ${s.count}`).join('   ·   '), '13px system-ui, sans-serif', ink2, 24);
+      }
+      if (r.rarityMix.length) {
+        sectionTitle('稀有度构成');
+        line(r.rarityMix.map(x => `${x.rarity} ${x.count}`).join('   ·   '), '13px system-ui, sans-serif', ink2, 24);
+      }
+      const hl = r.highlights;
+      const hlLines: string[] = [];
+      if (hl.highestRated) hlLines.push(`⭐ 最高分：${trunc(hl.highestRated.name, 16)}（${hl.highestRated.rating_score}）`);
+      if (hl.mostNiche) hlLines.push(`🔍 最小众：${trunc(hl.mostNiche.name, 16)}`);
+      if (hl.oldest) hlLines.push(`📼 最早：${trunc(hl.oldest.name, 16)}（${hl.oldest.date?.slice(0, 4)}）`);
+      if (hl.newest) hlLines.push(`🌱 最新：${trunc(hl.newest.name, 16)}（${hl.newest.date?.slice(0, 4)}）`);
+      if (hlLines.length) { sectionTitle('代表作'); for (const l of hlLines) line(l, '13px system-ui, sans-serif', ink2, 19); y += 6; }
+      line(`已看番一览（按${exportSort.value === 'rating' ? '评分' : '年份'}排序，共 ${r.count} 部）`, 'bold 15px system-ui, sans-serif', ink, 24);
+      return y;
+    }
+
+    const headerH = layoutHeader(null);
+    const canvasH = headerH + gridRows * CH + (gridRows - 1) * GAP + PAD;
+
+    const imgs = await Promise.all(list.map(a => loadImg(thumbImageSrc('anime', a.id))));
 
     const canvas = document.createElement('canvas');
     canvas.width = canvasW * DPR;
@@ -182,44 +242,23 @@ async function exportReport() {
     ctx.fillStyle = surface;
     ctx.fillRect(0, 0, canvasW, canvasH);
 
-    // 头部：人格 + 统计 + 偏好
-    const r = report.value;
-    ctx.textBaseline = 'top';
-    ctx.fillStyle = ink;
-    ctx.font = 'bold 24px system-ui, sans-serif';
-    ctx.fillText(`${r.persona.emoji} ${r.persona.title}`, PAD, PAD);
-    ctx.fillStyle = ink2;
-    ctx.font = '14px system-ui, sans-serif';
-    ctx.fillText(r.persona.description, PAD, PAD + 34);
-    ctx.fillText(
-      `已看 ${r.count} 部 · 覆盖 ${r.coverage}% · 均分 ${r.avgRating ?? '—'} · 小众指数 ${r.nicheScore}/100`,
-      PAD, PAD + 58,
-    );
-    const tags = r.topTags.slice(0, 5).map(t => t.tag).join(' / ');
-    if (tags) {
-      ctx.fillStyle = accent;
-      ctx.fillText(`偏好题材：${tags}`, PAD, PAD + 80);
-    }
-    ctx.fillStyle = ink2;
-    ctx.font = '12px system-ui, sans-serif';
-    ctx.fillText(`已看番一览（按${exportSort.value === 'rating' ? '评分' : '年份'}排序）`, PAD, HEADER - 18);
+    layoutHeader(ctx); // 真正绘制头部
 
-    // n×n 缩略图网格
+    // n×n 缩略图网格（按评分/年份排序，居中）
     list.forEach((a, i) => {
-      const cx = PAD + (i % cols) * (CW + GAP);
-      const cy = HEADER + Math.floor(i / cols) * (CH + GAP);
+      const cx = gridX + (i % cols) * (CW + GAP);
+      const cy = headerH + Math.floor(i / cols) * (CH + GAP);
       const im = imgs[i];
       if (im) ctx.drawImage(im, cx, cy, CW, CH);
       else { ctx.fillStyle = '#999'; ctx.fillRect(cx, cy, CW, CH); }
-      // 角标：评分或年份
       const label = exportSort.value === 'rating' ? (a.rating_score ? `★${a.rating_score}` : '—') : String(yearOf(a) ?? '—');
       ctx.fillStyle = 'rgba(0,0,0,0.62)';
-      ctx.fillRect(cx, cy + CH - 18, CW, 18);
+      ctx.fillRect(cx, cy + CH - 17, CW, 17);
       ctx.fillStyle = '#fff';
       ctx.font = 'bold 12px system-ui, sans-serif';
       ctx.textBaseline = 'middle';
       ctx.textAlign = 'center';
-      ctx.fillText(label, cx + CW / 2, cy + CH - 9);
+      ctx.fillText(label, cx + CW / 2, cy + CH - 8);
       ctx.textAlign = 'left';
       ctx.textBaseline = 'top';
     });
