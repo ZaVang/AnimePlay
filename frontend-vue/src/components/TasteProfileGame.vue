@@ -19,26 +19,52 @@ const minigames = useMiniGamesStore();
 const view = ref<'pick' | 'report'>('pick');
 const search = ref('');
 const onlyWatched = ref(false);
+const filterTag = ref('all');
+const filterYear = ref('all');
 
 const allAnime = computed(() => gameData.allAnimeCards);
 const watchedCount = computed(() => minigames.tasteWatchedCount);
+
+/** 标签 / 年份选项严格取自库里实际数据。 */
+const allTags = computed(() => {
+  const s = new Set<string>();
+  for (const a of allAnime.value) for (const t of a.synergy_tags ?? []) s.add(t);
+  return [...s].sort((a, b) => a.localeCompare(b, 'zh-Hans-CN'));
+});
+const allYears = computed(() => {
+  const s = new Set<string>();
+  for (const a of allAnime.value) if (typeof a.date === 'string' && /^\d{4}/.test(a.date)) s.add(a.date.slice(0, 4));
+  return [...s].sort((a, b) => Number(b) - Number(a));
+});
 
 function isWatched(id: number): boolean {
   return minigames.tasteWatchedIds.has(id);
 }
 
-/** 选番列表：关键字 + 「只看已选」过滤，按已选优先→名称排序。 */
+/** 选番列表：关键字 + 标签 + 年份 + 「只看已选」过滤，按名称排序。 */
 const pickList = computed(() => {
   const kw = search.value.trim().toLowerCase();
   return allAnime.value
     .filter(a => {
       if (onlyWatched.value && !isWatched(a.id)) return false;
       if (kw && !a.name.toLowerCase().includes(kw)) return false;
+      if (filterTag.value !== 'all' && !(a.synergy_tags ?? []).includes(filterTag.value)) return false;
+      if (filterYear.value !== 'all' && !(typeof a.date === 'string' && a.date.slice(0, 4) === filterYear.value)) return false;
       return true;
     })
     .slice()
     .sort((a, b) => a.name.localeCompare(b.name, 'zh-Hans-CN'));
 });
+
+const hasPickFilter = computed(
+  () => search.value.trim() !== '' || filterTag.value !== 'all' || filterYear.value !== 'all' || onlyWatched.value,
+);
+function clearPickFilters() {
+  search.value = '';
+  filterTag.value = 'all';
+  filterYear.value = 'all';
+  onlyWatched.value = false;
+}
 
 const watchedAnime = computed<AnimeCard[]>(() => allAnime.value.filter(a => isWatched(a.id)));
 const report = computed(() => buildTasteReport(watchedAnime.value, allAnime.value));
@@ -96,10 +122,19 @@ const ratingDeltaText = computed(() => {
           placeholder="搜番剧名称…"
           class="p-2 border border-line rounded-lg flex-grow min-w-0 text-ink bg-surface"
         />
+        <select v-model="filterTag" class="p-2 border border-line rounded-lg text-ink bg-surface">
+          <option value="all">所有标签</option>
+          <option v-for="t in allTags" :key="t" :value="t">{{ t }}</option>
+        </select>
+        <select v-model="filterYear" class="p-2 border border-line rounded-lg text-ink bg-surface">
+          <option value="all">所有年份</option>
+          <option v-for="y in allYears" :key="y" :value="y">{{ y }}</option>
+        </select>
         <label class="flex items-center gap-1.5 text-sm text-ink-2 select-none cursor-pointer">
           <input type="checkbox" v-model="onlyWatched" /> 只看已选
         </label>
-        <button v-if="watchedCount > 0" class="btn-ghost text-sm px-3 py-2" @click="clearAll">清空</button>
+        <button v-if="hasPickFilter" class="btn-ghost text-sm px-3 py-2" @click="clearPickFilters">清除筛选</button>
+        <button v-if="watchedCount > 0" class="btn-ghost text-sm px-3 py-2" @click="clearAll">清空已选</button>
         <button
           class="btn-primary text-sm px-4 py-2"
           :class="{ 'opacity-45 cursor-not-allowed': watchedCount === 0 }"
@@ -107,6 +142,7 @@ const ratingDeltaText = computed(() => {
           @click="showReport"
         >生成画像 →</button>
       </div>
+      <p class="text-sm text-ink-2 mb-3">筛选出 {{ pickList.length }} / {{ allAnime.length }} 部</p>
 
       <div v-if="pickList.length === 0" class="text-center py-10 text-ink-2">
         <p>没有符合条件的番剧。</p>

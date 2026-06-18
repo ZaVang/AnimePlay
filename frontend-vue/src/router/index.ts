@@ -45,6 +45,12 @@ const router = createRouter({
       component: () => import('../views/MiniGamesView.vue')
     },
     {
+      // 每个小游戏独立全屏页面（evolution-11）
+      path: '/minigames/:gameId',
+      name: 'minigamePlay',
+      component: () => import('../views/MiniGamePlayView.vue')
+    },
+    {
       // 小游戏统一进 /minigames Hub；旧 /guess 链接重定向兼容
       path: '/guess',
       redirect: '/minigames'

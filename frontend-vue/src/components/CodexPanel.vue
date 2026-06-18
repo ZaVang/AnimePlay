@@ -25,6 +25,7 @@ const rarityOrder: Rarity[] = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
 const search = ref('');
 const filterRarity = ref<Rarity | 'all'>('all');
 const filterTag = ref('all');
+const filterYear = ref('all');
 const filterOwned = ref<'all' | 'owned' | 'unowned'>('all');
 
 /** 动画域所有 synergy 标签（去重排序），仅用于动画图鉴的标签下拉。 */
@@ -36,11 +37,22 @@ const allAnimeTags = computed(() => {
   return Array.from(tags).sort((a, b) => a.localeCompare(b, 'zh-Hans-CN'));
 });
 
+/** 动画域所有放送年份（取自数据 date 字段，去重、降序）——选项严格来自库里实际存在的年份。 */
+const allAnimeYears = computed(() => {
+  const years = new Set<string>();
+  for (const card of gameDataStore.allAnimeCards) {
+    const d = (card as AnimeCardType).date;
+    if (typeof d === 'string' && /^\d{4}/.test(d)) years.add(d.slice(0, 4));
+  }
+  return Array.from(years).sort((a, b) => Number(b) - Number(a));
+});
+
 // 切换动画/角色子域时重置筛选，避免残留无效条件（如角色域选了动画标签）。
 watch(codexDomain, () => {
   search.value = '';
   filterRarity.value = 'all';
   filterTag.value = 'all';
+  filterYear.value = 'all';
   filterOwned.value = 'all';
 });
 
@@ -80,6 +92,11 @@ const codexCards = computed(() => {
       if (codexDomain.value === 'anime' && filterTag.value !== 'all') {
         if (!((card as AnimeCardType).synergy_tags ?? []).includes(filterTag.value)) return false;
       }
+      // 年份（仅动画域）
+      if (codexDomain.value === 'anime' && filterYear.value !== 'all') {
+        const d = (card as AnimeCardType).date;
+        if (!(typeof d === 'string' && d.slice(0, 4) === filterYear.value)) return false;
+      }
       // 拥有状态
       if (filterOwned.value === 'owned' && !card.owned) return false;
       if (filterOwned.value === 'unowned' && card.owned) return false;
@@ -105,6 +122,7 @@ const hasActiveFilter = computed(
     search.value.trim() !== '' ||
     filterRarity.value !== 'all' ||
     filterTag.value !== 'all' ||
+    filterYear.value !== 'all' ||
     filterOwned.value !== 'all',
 );
 
@@ -112,6 +130,7 @@ function clearFilters() {
   search.value = '';
   filterRarity.value = 'all';
   filterTag.value = 'all';
+  filterYear.value = 'all';
   filterOwned.value = 'all';
 }
 
@@ -282,6 +301,14 @@ function handleUnlock(card: CodexGridCard) {
           >
             <option value="all">所有标签</option>
             <option v-for="tag in allAnimeTags" :key="tag" :value="tag">{{ tag }}</option>
+          </select>
+          <select
+            v-if="codexDomain === 'anime'"
+            v-model="filterYear"
+            class="p-2 border border-line rounded-lg text-ink bg-surface"
+          >
+            <option value="all">所有年份</option>
+            <option v-for="y in allAnimeYears" :key="y" :value="y">{{ y }}</option>
           </select>
           <select v-model="filterOwned" class="p-2 border border-line rounded-lg text-ink bg-surface">
             <option value="all">全部</option>

@@ -1,102 +1,69 @@
 <script setup lang="ts">
 /**
- * 小游戏中心（evolution-5）。统一 Hub：游戏选择器 + 渲染选中的小游戏。
- * 现有「猜角色」原样迁入（GuessCharacter 组件不改），新增「高低牌」。
- * 上次选的游戏存 localStorage（设备级偏好，不进存档）。
+ * 小游戏中心 Hub（evolution-11 改版）：横向展示所有小游戏入口卡片；
+ * 点击跳转 /minigames/:gameId 独立全屏页面（不再原地下方小区域渲染）。
  */
-import { ref, computed } from 'vue';
-import GuessCharacter from '@/components/GuessCharacter.vue';
-import HigherLowerGame from '@/components/HigherLowerGame.vue';
-import QuizGame from '@/components/QuizGame.vue';
-import DailyChallengeGame from '@/components/DailyChallengeGame.vue';
-import TasteProfileGame from '@/components/TasteProfileGame.vue';
+import { computed } from 'vue';
+import { MINIGAMES, type MiniGameId } from '@/config/minigames';
 import { useGuessStore } from '@/stores/guess';
 import { useMiniGamesStore } from '@/stores/minigames/higherLower';
-
-type GameId = 'guess' | 'higherlower' | 'quiz' | 'dailychallenge' | 'tasteprofile';
-const LS_KEY = 'animeplay-last-minigame';
 
 const guessStore = useGuessStore();
 const minigames = useMiniGamesStore();
 
-function loadLast(): GameId {
-  try {
-    const v = localStorage.getItem(LS_KEY);
-    if (v === 'guess' || v === 'higherlower' || v === 'quiz' || v === 'dailychallenge' || v === 'tasteprofile') return v;
-  } catch { /* localStorage 不可用时回落默认 */ }
-  return 'guess';
-}
-
-const activeGame = ref<GameId>(loadLast());
-
-const games = computed(() => [
-  { id: 'guess' as GameId, icon: '🎭', title: '猜角色', desc: '像素图逐级揭晓，越早猜中分越高', best: `最高分 ${guessStore.highScore}` },
-  { id: 'higherlower' as GameId, icon: '🔼', title: '高低牌', desc: '比人气/口碑/年代，连对冲榜', best: `最佳连胜 ${minigames.bestStreak}` },
-  { id: 'quiz' as GameId, icon: '❓', title: '番剧问答', desc: '4 选 1 知识问答，连答冲分', best: `最佳连答 ${minigames.quizBestStreak}` },
-  { id: 'dailychallenge' as GameId, icon: '🗓️', title: '每日挑战', desc: '全员同题，每天一次，首通领奖', best: minigames.dcStreakDays > 0 ? `🔥 连续 ${minigames.dcStreakDays} 天${minigames.dcCompletedToday ? ' · 今日✅' : ''}` : (minigames.dcCompletedToday ? `今日 ✅ ${minigames.dcLastScore}/5` : `最佳 ${minigames.dcBestScore}/5`) },
-  { id: 'tasteprofile' as GameId, icon: '📊', title: '番剧品味', desc: '勾选看过的番，生成品味画像报告', best: minigames.tasteWatchedCount > 0 ? `已记录 ${minigames.tasteWatchedCount} 部` : '尚未开始' },
-]);
-
-function select(id: GameId) {
-  activeGame.value = id;
-  try { localStorage.setItem(LS_KEY, id); } catch { /* 忽略写入失败 */ }
-}
+/** 每个游戏的「最佳」一句话战绩（Hub 卡片副标）。 */
+const bestById = computed<Record<MiniGameId, string>>(() => ({
+  guess: `最高分 ${guessStore.highScore}`,
+  higherlower: `最佳连胜 ${minigames.bestStreak}`,
+  quiz: `最佳连答 ${minigames.quizBestStreak}`,
+  dailychallenge:
+    minigames.dcStreakDays > 0
+      ? `🔥 连续 ${minigames.dcStreakDays} 天${minigames.dcCompletedToday ? ' · 今日✅' : ''}`
+      : minigames.dcCompletedToday
+        ? `今日 ✅ ${minigames.dcLastScore}/5`
+        : `最佳 ${minigames.dcBestScore}/5`,
+  tasteprofile: minigames.tasteWatchedCount > 0 ? `已记录 ${minigames.tasteWatchedCount} 部` : '尚未开始',
+  tierlist: '锐评一波',
+}));
 </script>
 
 <template>
-  <div class="minigames-view">
+  <div class="minigames-hub">
     <header class="mg-header">
-      <h1 class="text-2xl font-bold text-ink">🎮 小游戏</h1>
-      <p class="text-sm text-ink-soft">用真实番剧/角色数据玩的休闲小游戏，玩有所得（兑换知识点）。</p>
+      <h1 class="text-2xl font-bold text-ink">🎮 小游戏中心</h1>
+      <p class="text-sm text-ink-2">用真实番剧/角色数据玩的休闲小游戏，玩有所得（兑换知识点）。点卡片进入。</p>
     </header>
 
-    <!-- 游戏选择器 -->
-    <div class="mg-selector">
-      <button
-        v-for="g in games"
-        :key="g.id"
-        class="mg-card"
-        :class="{ active: activeGame === g.id }"
-        @click="select(g.id)"
-      >
+    <div class="mg-row">
+      <RouterLink v-for="g in MINIGAMES" :key="g.id" :to="`/minigames/${g.id}`" class="mg-card">
         <span class="mg-icon">{{ g.icon }}</span>
         <span class="mg-title">{{ g.title }}</span>
         <span class="mg-desc">{{ g.desc }}</span>
-        <span class="mg-best">{{ g.best }}</span>
-      </button>
-    </div>
-
-    <!-- 选中游戏 -->
-    <div class="mg-stage">
-      <GuessCharacter v-if="activeGame === 'guess'" />
-      <HigherLowerGame v-else-if="activeGame === 'higherlower'" />
-      <QuizGame v-else-if="activeGame === 'quiz'" />
-      <DailyChallengeGame v-else-if="activeGame === 'dailychallenge'" />
-      <TasteProfileGame v-else-if="activeGame === 'tasteprofile'" />
+        <span class="mg-best">{{ bestById[g.id] }}</span>
+      </RouterLink>
     </div>
   </div>
 </template>
 
 <style scoped>
-.minigames-view { max-width: 920px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
-.mg-header { text-align: center; margin-bottom: 1.25rem; }
-.mg-selector { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+.minigames-hub { width: 100%; }
+.mg-header { margin-bottom: 1.5rem; }
+
+/* 横向展示：自适应列数填满整行，窄屏自动换行 */
+.mg-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1rem;
+}
 .mg-card {
-  display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.25rem;
-  padding: 1rem; border: 2px solid rgb(var(--c-border-line)); border-radius: var(--sk-radius, 0.75rem);
-  background: rgb(var(--c-surface)); cursor: pointer; transition: transform .12s, border-color .12s, box-shadow .12s;
+  display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.3rem;
+  padding: 1.25rem 1rem; border: 2px solid rgb(var(--c-line)); border-radius: var(--sk-radius, 0.75rem);
+  background: rgb(var(--c-surface)); cursor: pointer;
+  transition: transform .12s, border-color .12s, box-shadow .12s;
 }
-.mg-card:hover { transform: translateY(-2px); }
-.mg-card.active { border-color: rgb(var(--c-accent)); box-shadow: 0 0 0 1px rgb(var(--c-accent)); }
-.mg-icon { font-size: 1.75rem; }
-.mg-title { font-weight: 700; color: rgb(var(--c-ink)); }
-.mg-desc { font-size: 0.78rem; color: rgb(var(--c-ink-soft)); }
-.mg-best { font-size: 0.75rem; color: rgb(var(--c-accent)); margin-top: 0.25rem; }
-.mg-stage {
-  border: 1px solid rgb(var(--c-border-line)); border-radius: var(--sk-radius, 0.75rem);
-  background: rgb(var(--c-surface) / 0.4); padding: 1.25rem; min-height: 360px;
-}
-@media (max-width: 640px) {
-  .mg-selector { grid-template-columns: 1fr; }
-}
+.mg-card:hover { transform: translateY(-3px); border-color: rgb(var(--c-accent)); box-shadow: var(--sk-glow-accent); }
+.mg-icon { font-size: 2rem; }
+.mg-title { font-weight: 700; color: rgb(var(--c-ink)); font-size: 1.05rem; }
+.mg-desc { font-size: 0.78rem; color: rgb(var(--c-ink-2)); min-height: 2.2em; }
+.mg-best { font-size: 0.75rem; color: rgb(var(--c-accent)); margin-top: 0.15rem; font-weight: 600; }
 </style>
