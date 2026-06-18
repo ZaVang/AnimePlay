@@ -11,6 +11,7 @@ import HigherLowerGame from '@/components/HigherLowerGame.vue';
 import QuizGame from '@/components/QuizGame.vue';
 import DailyChallengeGame from '@/components/DailyChallengeGame.vue';
 import TasteProfileGame from '@/components/TasteProfileGame.vue';
+import TierListGame from '@/components/TierListGame.vue';
 
 const route = useRoute();
 const router = useRouter();
@@ -21,6 +22,7 @@ const COMPONENTS: Partial<Record<MiniGameId, unknown>> = {
   quiz: QuizGame,
   dailychallenge: DailyChallengeGame,
   tasteprofile: TasteProfileGame,
+  tierlist: TierListGame,
 };
 
 const gameId = computed(() => route.params.gameId);

@@ -18,6 +18,7 @@ export const MINIGAMES: MiniGameMeta[] = [
   { id: 'quiz', icon: '❓', title: '番剧问答', desc: '4 选 1 知识问答，连答冲分' },
   { id: 'dailychallenge', icon: '🗓️', title: '每日挑战', desc: '全员同题，每天一次，首通领奖' },
   { id: 'tasteprofile', icon: '📊', title: '番剧品味', desc: '勾选看过的番，生成品味画像报告' },
+  { id: 'tierlist', icon: '🔥', title: '锐评 Tier 表', desc: '拖拽番剧/角色分级，从夯到拉完了' },
 ];
 
 export function isMiniGameId(v: unknown): v is MiniGameId {
