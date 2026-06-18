@@ -40,6 +40,11 @@ const router = createRouter({
       component: () => import('../views/SettingsView.vue')
     },
     {
+      path: '/homestead',
+      name: 'homestead',
+      component: () => import('../views/HomesteadView.vue')
+    },
+    {
       path: '/minigames',
       name: 'minigames',
       component: () => import('../views/MiniGamesView.vue')
