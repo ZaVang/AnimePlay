@@ -9,6 +9,7 @@ import { CODEX_MILESTONES } from '@/config/codexMilestones';
 import { getCodexUnlockPrice } from '@/config/codexUnlock';
 import type { AnimeCard as AnimeCardType, CharacterCard as CharacterCardType, Rarity } from '@/types/card';
 import VirtualGrid from '@/components/VirtualGrid.vue';
+import { thumbImageSrc, onThumbError } from '@/utils/cardImage';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
@@ -156,7 +157,7 @@ const milestones = computed(() =>
 );
 
 function imageSrc(card: { id: number }): string {
-  return `/data/images/${codexDomain.value}/${card.id}.jpg`;
+  return thumbImageSrc(codexDomain.value, card.id); // 缩略图：图鉴网格用，缺失回退原图
 }
 
 function claimMilestone(id: string) {
@@ -351,6 +352,7 @@ function handleUnlock(card: CodexGridCard) {
                 loading="lazy"
                 decoding="async"
                 :src="imageSrc(item)"
+                @error="onThumbError"
                 class="w-full aspect-[2/3] object-cover object-top"
               />
               <div class="absolute top-1 right-1 px-2 py-0.5 text-xs font-bold text-white bg-black/60 rounded">

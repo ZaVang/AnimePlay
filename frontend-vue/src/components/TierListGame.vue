@@ -8,6 +8,7 @@
 import { ref, reactive, computed, watch } from 'vue';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { useMiniGamesStore } from '@/stores/minigames/higherLower';
+import { thumbImageSrc, onThumbError } from '@/utils/cardImage';
 import type { AnimeCard } from '@/types/card';
 
 const gameData = useGameDataStore();
@@ -58,7 +59,10 @@ const cardById = computed(() => {
   return m;
 });
 function imageSrc(id: number): string {
-  return `/data/images/${domain.value}/${id}.jpg`;
+  return `/data/images/${domain.value}/${id}.jpg`; // 原图：导出用
+}
+function thumbSrc(id: number): string {
+  return thumbImageSrc(domain.value, id); // 缩略图：网格显示用
 }
 function nameOf(id: number): string {
   return cardById.value.get(id)?.name ?? `#${id}`;
@@ -317,7 +321,7 @@ async function exportImage() {
             :title="nameOf(id)"
             @dragstart="onDragStart(id, t.id)"
           >
-            <img :src="imageSrc(id)" loading="lazy" decoding="async" />
+            <img :src="thumbSrc(id)" loading="lazy" decoding="async" @error="onThumbError" />
             <button class="tier-item-x" title="移出棋盘" @click="removeFromBoard(id)">×</button>
           </div>
         </div>
@@ -394,7 +398,7 @@ async function exportImage() {
         @dragstart="onCandDragStart(c.id)"
         @click="toggleSelect(c.id)"
       >
-        <img :src="imageSrc(c.id)" loading="lazy" decoding="async" />
+        <img :src="thumbSrc(c.id)" loading="lazy" decoding="async" @error="onThumbError" />
         <span v-if="selected.has(c.id)" class="cand-check">✓</span>
       </div>
     </div>

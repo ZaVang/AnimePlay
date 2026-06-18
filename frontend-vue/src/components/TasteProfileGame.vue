@@ -9,6 +9,7 @@ import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { useMiniGamesStore } from '@/stores/minigames/higherLower';
 import { buildTasteReport, recommendFromTaste } from '@/utils/tasteProfile';
+import { thumbImageSrc, onThumbError } from '@/utils/cardImage';
 import type { AnimeCard } from '@/types/card';
 import VirtualGrid from '@/components/VirtualGrid.vue';
 
@@ -86,7 +87,7 @@ function showReport() {
 }
 
 function imageSrc(id: number): string {
-  return `/data/images/anime/${id}.jpg`;
+  return thumbImageSrc('anime', id);
 }
 
 const VIRTUAL_GRID_CONFIG = { itemHeight: 240, containerHeight: 540, minItemWidth: 132, gap: 14 };
@@ -158,7 +159,7 @@ const ratingDeltaText = computed(() => {
       >
         <template #default="{ item }">
           <div class="pick-card" :class="{ selected: isWatched(item.id) }">
-            <img loading="lazy" decoding="async" :src="imageSrc(item.id)" class="w-full aspect-[2/3] object-cover object-top" />
+            <img loading="lazy" decoding="async" :src="imageSrc(item.id)" @error="onThumbError" class="w-full aspect-[2/3] object-cover object-top" />
             <div v-if="isWatched(item.id)" class="pick-check">✓</div>
             <div class="pick-name" :title="item.name">{{ item.name }}</div>
           </div>
@@ -267,7 +268,7 @@ const ratingDeltaText = computed(() => {
         <p class="text-xs text-ink-2 mb-2">根据你的题材偏好推荐你还没看的番——点「看过」加入记录可让画像更准。</p>
         <div class="rec-grid">
           <div v-for="rec in recommendations" :key="rec.anime.id" class="rec">
-            <img loading="lazy" decoding="async" :src="imageSrc(rec.anime.id)" class="rec-img" />
+            <img loading="lazy" decoding="async" :src="imageSrc(rec.anime.id)" @error="onThumbError" class="rec-img" />
             <div class="rec-body">
               <div class="rec-name" :title="rec.anime.name">{{ rec.anime.name }}</div>
               <div class="rec-meta">
