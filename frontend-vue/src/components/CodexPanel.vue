@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref, computed, watch } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { useCollectionStore } from '@/stores/collection';
@@ -7,7 +7,7 @@ import { useCodexStore } from '@/stores/codex';
 import { useProfileStore } from '@/stores/profile';
 import { CODEX_MILESTONES } from '@/config/codexMilestones';
 import { getCodexUnlockPrice } from '@/config/codexUnlock';
-import type { AnimeCard as AnimeCardType, Rarity } from '@/types/card';
+import type { AnimeCard as AnimeCardType, CharacterCard as CharacterCardType, Rarity } from '@/types/card';
 import VirtualGrid from '@/components/VirtualGrid.vue';
 
 const userStore = useUserStore();
@@ -21,6 +21,29 @@ const codexDomain = ref<'anime' | 'character'>('character');
 
 const rarityOrder: Rarity[] = ['UR', 'HR', 'SSR', 'SR', 'R', 'N'];
 
+// --- 图鉴一览筛选（关键字 / 稀有度 / 标签 / 拥有状态）---
+const search = ref('');
+const filterRarity = ref<Rarity | 'all'>('all');
+const filterTag = ref('all');
+const filterOwned = ref<'all' | 'owned' | 'unowned'>('all');
+
+/** 动画域所有 synergy 标签（去重排序），仅用于动画图鉴的标签下拉。 */
+const allAnimeTags = computed(() => {
+  const tags = new Set<string>();
+  for (const card of gameDataStore.allAnimeCards) {
+    for (const t of card.synergy_tags ?? []) tags.add(t);
+  }
+  return Array.from(tags).sort((a, b) => a.localeCompare(b, 'zh-Hans-CN'));
+});
+
+// 切换动画/角色子域时重置筛选，避免残留无效条件（如角色域选了动画标签）。
+watch(codexDomain, () => {
+  search.value = '';
+  filterRarity.value = 'all';
+  filterTag.value = 'all';
+  filterOwned.value = 'all';
+});
+
 // 虚拟化配置（与 CollectionsView 一致）
 const VIRTUAL_GRID_CONFIG = {
   itemHeight: 180,
@@ -33,16 +56,35 @@ const completion = computed(() =>
   codexDomain.value === 'anime' ? codex.animeCompletion : codex.characterCompletion,
 );
 
-/** 全量卡 + owned 标记，按稀有度→名称排序。 */
+/** 全量卡 + owned 标记，应用关键字/稀有度/标签/拥有筛选后按稀有度→名称排序。 */
 const codexCards = computed(() => {
   if (!userStore.isLoggedIn) return [];
   const allCards = codexDomain.value === 'anime' ? gameDataStore.allAnimeCards : gameDataStore.allCharacterCards;
   const getCount = codexDomain.value === 'anime' ? collection.getAnimeCardCount : collection.getCharacterCardCount;
+  const kw = search.value.trim().toLowerCase();
 
-  const withOwned = allCards.map(card => ({
-    ...card,
-    owned: getCount(card.id) > 0,
-  }));
+  const withOwned = allCards
+    .map(card => ({ ...card, owned: getCount(card.id) > 0 }))
+    .filter(card => {
+      // 关键字：名称；角色域附带按登场作品名匹配。
+      if (kw) {
+        const inName = card.name.toLowerCase().includes(kw);
+        const inAnime =
+          codexDomain.value === 'character' &&
+          ((card as CharacterCardType).anime_names ?? []).some(n => n.toLowerCase().includes(kw));
+        if (!inName && !inAnime) return false;
+      }
+      // 稀有度
+      if (filterRarity.value !== 'all' && card.rarity !== filterRarity.value) return false;
+      // 标签（仅动画域）
+      if (codexDomain.value === 'anime' && filterTag.value !== 'all') {
+        if (!((card as AnimeCardType).synergy_tags ?? []).includes(filterTag.value)) return false;
+      }
+      // 拥有状态
+      if (filterOwned.value === 'owned' && !card.owned) return false;
+      if (filterOwned.value === 'unowned' && card.owned) return false;
+      return true;
+    });
 
   return withOwned.sort((a, b) => {
     const ra = rarityOrder.indexOf(a.rarity);
@@ -51,6 +93,27 @@ const codexCards = computed(() => {
     return a.name.localeCompare(b.name, 'zh-Hans-CN');
   });
 });
+
+/** 当前域全量卡数（用于「筛选出 X / 总 Y」展示）。 */
+const codexTotalCount = computed(() =>
+  codexDomain.value === 'anime' ? gameDataStore.allAnimeCards.length : gameDataStore.allCharacterCards.length,
+);
+
+/** 是否有任一筛选条件生效（用于空态文案 + 一键清除）。 */
+const hasActiveFilter = computed(
+  () =>
+    search.value.trim() !== '' ||
+    filterRarity.value !== 'all' ||
+    filterTag.value !== 'all' ||
+    filterOwned.value !== 'all',
+);
+
+function clearFilters() {
+  search.value = '';
+  filterRarity.value = 'all';
+  filterTag.value = 'all';
+  filterOwned.value = 'all';
+}
 
 const overallPercent = computed(() => {
   const c = completion.value;
@@ -199,7 +262,48 @@ function handleUnlock(card: CodexGridCard) {
           <h4 class="font-bold text-ink text-lg">图鉴一览（点击灰位卡可花知识点解锁）</h4>
           <span class="text-sm text-ink-2">我的知识点：<span class="font-bold text-accent">{{ knowledgePoints }}</span></span>
         </div>
+
+        <!-- 筛选条：关键字 / 稀有度 / 标签（仅动画）/ 拥有状态 -->
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <input
+            type="text"
+            v-model="search"
+            :placeholder="codexDomain === 'character' ? '搜角色名或登场作品…' : '搜动画名称…'"
+            class="p-2 border border-line rounded-lg flex-grow min-w-0 text-ink bg-surface"
+          />
+          <select v-model="filterRarity" class="p-2 border border-line rounded-lg text-ink bg-surface">
+            <option value="all">所有稀有度</option>
+            <option v-for="r in rarityOrder" :key="r" :value="r">{{ r }}</option>
+          </select>
+          <select
+            v-if="codexDomain === 'anime'"
+            v-model="filterTag"
+            class="p-2 border border-line rounded-lg text-ink bg-surface"
+          >
+            <option value="all">所有标签</option>
+            <option v-for="tag in allAnimeTags" :key="tag" :value="tag">{{ tag }}</option>
+          </select>
+          <select v-model="filterOwned" class="p-2 border border-line rounded-lg text-ink bg-surface">
+            <option value="all">全部</option>
+            <option value="owned">已拥有</option>
+            <option value="unowned">未拥有</option>
+          </select>
+          <button
+            v-if="hasActiveFilter"
+            class="btn-ghost text-sm px-3 py-2"
+            @click="clearFilters"
+          >清除筛选</button>
+        </div>
+        <p class="text-sm text-ink-2 mb-3">筛选出 {{ codexCards.length }} / {{ codexTotalCount }} 张</p>
+
+        <div v-if="codexCards.length === 0" class="text-center py-12 text-ink-2">
+          <p class="font-medium">没有符合条件的卡牌。</p>
+          <button v-if="hasActiveFilter" class="btn-secondary text-sm px-3 py-1.5 mt-3" @click="clearFilters">
+            清除筛选
+          </button>
+        </div>
         <VirtualGrid
+          v-else
           :items="codexCards"
           :item-height="VIRTUAL_GRID_CONFIG.itemHeight"
           :container-height="VIRTUAL_GRID_CONFIG.containerHeight"
